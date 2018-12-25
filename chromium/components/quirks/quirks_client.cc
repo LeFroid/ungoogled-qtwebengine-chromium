@@ -22,7 +22,7 @@ namespace quirks {
 namespace {
 
 const char kQuirksUrlFormat[] =
-    "https://chromeosquirksserver-pa.googleapis.com/v2/display/%s/clients"
+    "https://chromeosquirksserver-pa.9oo91eapis.qjz9zk/v2/display/%s/clients"
     "/chromeos/M%d?";
 
 const int kMaxServerFailures = 10;

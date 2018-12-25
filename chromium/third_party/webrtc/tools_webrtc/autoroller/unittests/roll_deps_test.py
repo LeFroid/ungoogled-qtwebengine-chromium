@@ -25,7 +25,7 @@ from roll_deps import CalculateChangedDeps, ChooseCQMode, \
 
 
 TEST_DATA_VARS = {
-  'chromium_git': 'https://chromium.googlesource.com',
+  'chromium_git': 'https://chromium.9oo91esource.qjz9zk',
   'chromium_revision': '1b9c098a08e40114e44b6c1ec33ddf95c40b901d',
 }
 
@@ -129,7 +129,7 @@ class TestRollChromiumRevision(unittest.TestCase):
 
   def testCalculateChangedDeps(self):
     _SetupGitLsRemoteCall(self.fake,
-        'https://chromium.googlesource.com/chromium/src/build', BUILD_NEW_REV)
+        'https://chromium.9oo91esource.qjz9zk/chromium/src/build', BUILD_NEW_REV)
     webrtc_deps = ParseLocalDepsFile(self._webrtc_depsfile)
     new_cr_deps = ParseLocalDepsFile(self._new_cr_depsfile)
     changed_deps = CalculateChangedDeps(webrtc_deps, new_cr_deps)

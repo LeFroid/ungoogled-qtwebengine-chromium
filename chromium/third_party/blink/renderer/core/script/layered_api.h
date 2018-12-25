@@ -14,7 +14,7 @@ namespace blink {
 // Implements Layered API.
 // Spec: https://github.com/drufball/layered-apis/blob/master/spec.md
 // Implementation Design Doc:
-// https://docs.google.com/document/d/1V-WaCZQbBcQJRSYSYBb8Y6p0DOdDpiNDSmD41ui_73s/edit
+// https://docs.9oo91e.qjz9zk/document/d/1V-WaCZQbBcQJRSYSYBb8Y6p0DOdDpiNDSmD41ui_73s/edit
 namespace layered_api {
 
 // <spec

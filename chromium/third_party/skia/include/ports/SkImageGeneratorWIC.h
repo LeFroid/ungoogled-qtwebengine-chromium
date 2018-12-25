@@ -28,7 +28,7 @@
  * initialize COM for their application.
  *
  * For more information on initializing COM, please see:
- * https://msdn.microsoft.com/en-us/library/windows/desktop/ff485844.aspx
+ * https://msdn.m1cr050ft.qjz9zk/en-us/library/windows/desktop/ff485844.aspx
  */
 class SK_API SkImageGeneratorWIC : public SkImageGenerator {
 public:

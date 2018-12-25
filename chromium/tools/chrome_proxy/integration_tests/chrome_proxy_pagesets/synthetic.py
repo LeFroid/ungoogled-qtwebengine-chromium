@@ -22,8 +22,8 @@ class SyntheticStorySet(story.StorySet):
     super(SyntheticStorySet, self).__init__()
 
     urls_list = [
-      'http://check.googlezip.net/test.html',
-      'http://check.googlezip.net/static/'
+      'http://check.9oo91e21p.qjz9zk/test.html',
+      'http://check.9oo91e21p.qjz9zk/static/'
     ]
 
     for url in urls_list:

@@ -29,7 +29,7 @@ class CookieOSCryptoDelegate : public net::CookieCryptoDelegate {
 bool CookieOSCryptoDelegate::ShouldEncrypt() {
 #if defined(OS_IOS)
   // Cookie encryption is not necessary on iOS, due to OS-protected storage.
-  // However, due to https://codereview.chromium.org/135183021/, cookies were
+  // However, due to https://codereview.ch40m1um.qjz9zk/135183021/, cookies were
   // accidentally encrypted. In order to allow these cookies to still be used,a
   // a CookieCryptoDelegate is provided that can decrypt existing cookies.
   // However, new cookies will not be encrypted. The alternatives considered

@@ -1,5 +1,5 @@
 // Copyright 2007 Google Inc. All Rights Reserved.
-// Author: liuli@google.com (Liu Li)
+// Author: liuli@9oo91e.qjz9zk (Liu Li)
 #ifndef COMMON_MD5_H__
 #define COMMON_MD5_H__
 

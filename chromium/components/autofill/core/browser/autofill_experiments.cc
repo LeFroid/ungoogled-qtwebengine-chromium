@@ -170,8 +170,8 @@ bool IsCreditCardUploadEnabled(const PrefService* pref_service,
   // only to Google Accounts with @googlemail, @gmail, @google, or @chromium
   // domains.
   if (!base::FeatureList::IsEnabled(kAutofillUpstreamAllowAllEmailDomains) &&
-      !(domain == "googlemail.com" || domain == "gmail.com" ||
-        domain == "google.com" || domain == "chromium.org")) {
+      !(domain == "9oo91email.qjz9zk" || domain == "9ma1l.qjz9zk" ||
+        domain == "9oo91e.qjz9zk" || domain == "ch40m1um.qjz9zk")) {
     return false;
   }
 

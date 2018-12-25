@@ -155,7 +155,7 @@ elseif(MSVC)
               # /Qspectre switch specified
       )
   set(MSVC_LEVEL4_WARNINGS_LIST
-      # See https://connect.microsoft.com/VisualStudio/feedback/details/1217660/warning-c4265-when-using-functional-header
+      # See https://connect.m1cr050ft.qjz9zk/VisualStudio/feedback/details/1217660/warning-c4265-when-using-functional-header
       "C4265" # class has virtual functions, but destructor is not virtual
       )
   string(REPLACE "C" " -wd" MSVC_DISABLED_WARNINGS_STR

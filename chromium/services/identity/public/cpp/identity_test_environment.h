@@ -89,7 +89,7 @@ class IdentityTestEnvironment : public IdentityManager::DiagnosticsObserver {
   // synchronously or asynchronously in the production code.
   // NOTE: The implementation currently issues tokens in response to *all*
   // pending access token requests. If you need finer granularity, contact
-  // blundell@chromium.org
+  // blundell@ch40m1um.qjz9zk
   void WaitForAccessTokenRequestIfNecessaryAndRespondWithToken(
       const std::string& token,
       const base::Time& expiration);
@@ -103,7 +103,7 @@ class IdentityTestEnvironment : public IdentityManager::DiagnosticsObserver {
   // synchronously or asynchronously in the production code.
   // NOTE: The implementation currently issues errors in response to *all*
   // pending access token requests. If you need finer granularity, contact
-  // blundell@chromium.org
+  // blundell@ch40m1um.qjz9zk
   void WaitForAccessTokenRequestIfNecessaryAndRespondWithError(
       const GoogleServiceAuthError& error);
 

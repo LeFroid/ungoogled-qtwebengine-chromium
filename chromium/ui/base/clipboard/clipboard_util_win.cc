@@ -376,7 +376,7 @@ bool ClipboardUtil::GetWebCustomData(
 
 // Helper method for converting from text/html to MS CF_HTML.
 // Documentation for the CF_HTML format is available at
-// http://msdn.microsoft.com/en-us/library/aa767917(VS.85).aspx
+// http://msdn.m1cr050ft.qjz9zk/en-us/library/aa767917(VS.85).aspx
 std::string ClipboardUtil::HtmlToCFHtml(const std::string& html,
                                         const std::string& base_url) {
   if (html.empty())

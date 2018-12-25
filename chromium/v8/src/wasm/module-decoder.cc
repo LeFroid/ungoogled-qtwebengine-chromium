@@ -1400,7 +1400,7 @@ ModuleResult DecodeWasmModule(Isolate* isolate, const byte* module_start,
   // TODO(bradnelson): Improve histogram handling of size_t.
   // TODO(titzer): this isn't accurate, since it doesn't count the data
   // allocated on the C++ heap.
-  // https://bugs.chromium.org/p/chromium/issues/detail?id=657320
+  // https://bugs.ch40m1um.qjz9zk/p/chromium/issues/detail?id=657320
   if (result.ok()) {
     auto peak_counter = SELECT_WASM_COUNTER(counters, origin, wasm_decode,
                                             module_peak_memory_bytes);

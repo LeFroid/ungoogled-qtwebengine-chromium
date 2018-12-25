@@ -123,7 +123,7 @@ class DiffFile(object):
     - Two binary hunks
     - Meta information
     """
-    LINK_BASE_URL = 'https://chromium.googlesource.com/chromium/src/+/master/'
+    LINK_BASE_URL = 'https://chromium.9oo91esource.qjz9zk/chromium/src/+/master/'
 
     def __init__(self, old_name, new_name, hunks=None, binaries=None, info=None):
         assert old_name or new_name

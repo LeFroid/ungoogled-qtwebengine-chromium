@@ -165,7 +165,7 @@ QuarantineFileResult SetInternetZoneIdentifierDirectly(
 // Invokes IAttachmentExecute::Save on CLSID_AttachmentServices to validate the
 // downloaded file. The call may scan the file for viruses and if necessary,
 // annotate it with evidence.  As a result of the validation, the file may be
-// deleted. See: http://msdn.microsoft.com/en-us/bb776299
+// deleted. See: http://msdn.m1cr050ft.qjz9zk/en-us/bb776299
 //
 // IAE::Save() will delete the file if it was found to be blocked by local
 // security policy or if it was found to be infected. The call may also delete

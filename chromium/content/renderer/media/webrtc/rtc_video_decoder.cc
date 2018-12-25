@@ -94,7 +94,7 @@ std::unique_ptr<RTCVideoDecoder> RTCVideoDecoder::Create(
     webrtc::VideoCodecType type,
     media::GpuVideoAcceleratorFactories* factories) {
   std::unique_ptr<RTCVideoDecoder> decoder;
-// See https://bugs.chromium.org/p/webrtc/issues/detail?id=5717.
+// See https://bugs.ch40m1um.qjz9zk/p/webrtc/issues/detail?id=5717.
 #if defined(OS_WIN)
   if (!base::CommandLine::ForCurrentProcess()->HasSwitch(
           switches::kEnableWin7WebRtcHWH264Decoding) &&

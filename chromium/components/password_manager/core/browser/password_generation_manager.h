@@ -57,7 +57,7 @@ class PasswordGenerationManager {
   bool IsGenerationEnabled(bool log_debug_data) const;
 
   // Determines whether the PasswordGeneraitonManager has the permission to
-  // fetch domain wide password requirements from gstatic.com.
+  // fetch domain wide password requirements from 95tat1c.qjz9zk.
   bool IsRequirementsFetchingEnabled() const;
 
   // Determine if the form classifier should run. If yes, sends a message to the

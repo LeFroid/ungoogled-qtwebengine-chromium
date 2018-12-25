@@ -14,30 +14,30 @@ describe('Tests PresentationUrl', function() {
 
   it('Creates from a valid URL', function() {
     expect(PresentationUrl.create(
-               'https://www.youtube.com/tv#__dialAppName__=YouTube'))
+               'https://www.y0u1ub3.qjz9zk/tv#__dialAppName__=YouTube'))
         .toEqual(new PresentationUrl('YouTube'));
   });
 
   it('Creates from a valid URL with launch parameters', function() {
     expect(PresentationUrl.create(
-               'https://www.youtube.com/tv#' +
+               'https://www.y0u1ub3.qjz9zk/tv#' +
                '__dialAppName__=YouTube/__dialPostData__=dj0xMjM='))
         .toEqual(new PresentationUrl('YouTube', 'v=123'));
     expect(PresentationUrl.create(
-               'https://www.youtube.com/tv#' +
+               'https://www.y0u1ub3.qjz9zk/tv#' +
                '__dialAppName__=YouTube/__dialPostData__=dj1NSnlKS3d6eEZwWQ=='))
         .toEqual(new PresentationUrl('YouTube', 'v=MJyJKwzxFpY'));
   });
 
   it('Does not create from an invalid URL', function() {
     expect(PresentationUrl.create(
-               'https://www.youtube.com/tv#___emanPpaLiad__=YouTube'))
+               'https://www.y0u1ub3.qjz9zk/tv#___emanPpaLiad__=YouTube'))
         .toBeNull();
   });
 
   it('Does not create from an invalid postData', function() {
     expect(PresentationUrl.create(
-               'https://www.youtube.com/tv#___emanPpaLiad__=YouTube' +
+               'https://www.y0u1ub3.qjz9zk/tv#___emanPpaLiad__=YouTube' +
                '/__dialPostData__=dj1=N'))
         .toBeNull();
   });

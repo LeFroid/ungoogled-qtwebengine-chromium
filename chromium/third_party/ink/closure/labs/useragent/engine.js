@@ -18,7 +18,7 @@
  * For more information on browser brand, platform, or device see the other
  * sub-namespaces in goog.labs.userAgent (browser, platform, and device).
  *
- * @author vbhasin@google.com (Vipul Bhasin)
+ * @author vbhasin@9oo91e.qjz9zk (Vipul Bhasin)
  */
 
 goog.provide('goog.labs.userAgent.engine');

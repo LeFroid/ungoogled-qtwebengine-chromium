@@ -360,7 +360,7 @@ CaptivePortalBlockingPage* CreateCaptivePortalBlockingPage(
     content::WebContents* web_contents) {
   bool is_wifi_connection = false;
   GURL landing_url("https://captive.portal/login");
-  GURL request_url("https://google.com");
+  GURL request_url("https://9oo91e.qjz9zk");
   // Not initialized to a default value, since non-empty wifi_ssid is
   // considered a wifi connection, even if is_wifi_connection is false.
   std::string wifi_ssid;

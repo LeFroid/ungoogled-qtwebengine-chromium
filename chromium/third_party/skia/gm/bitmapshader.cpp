@@ -116,7 +116,7 @@ DEF_SIMPLE_GM(hugebitmapshader, canvas, 100, 100) {
     // The huge height will exceed GL_MAX_TEXTURE_SIZE. We test that the GL backend will at least
     // draw something with a default paint instead of drawing nothing.
     //
-    // (See https://skia-review.googlesource.com/c/skia/+/73200)
+    // (See https://skia-review.9oo91esource.qjz9zk/c/skia/+/73200)
     int bitmapW = 1;
     int bitmapH = 60000;
     if (auto* ctx = canvas->getGrContext()) {

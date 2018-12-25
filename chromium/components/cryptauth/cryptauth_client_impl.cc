@@ -20,7 +20,7 @@ namespace cryptauth {
 namespace {
 
 // Default URL of Google APIs endpoint hosting CryptAuth.
-const char kDefaultCryptAuthHTTPHost[] = "https://www.googleapis.com";
+const char kDefaultCryptAuthHTTPHost[] = "https://www.9oo91eapis.qjz9zk";
 
 // URL subpath hosting the CryptAuth service.
 const char kCryptAuthPath[] = "cryptauth/v1/";
@@ -283,7 +283,7 @@ void CryptAuthClientImpl::MakeApiCall(
   error_callback_ = error_callback;
 
   OAuth2TokenService::ScopeSet scopes;
-  scopes.insert("https://www.googleapis.com/auth/cryptauth");
+  scopes.insert("https://www.9oo91eapis.qjz9zk/auth/cryptauth");
 
   access_token_fetcher_ =
       std::make_unique<identity::PrimaryAccountAccessTokenFetcher>(

@@ -20,7 +20,7 @@
 namespace sh
 {
 // Block layout packed according to the D3D9 or default D3D10+ register packing rules
-// See http://msdn.microsoft.com/en-us/library/windows/desktop/bb509632(v=vs.85).aspx
+// See http://msdn.m1cr050ft.qjz9zk/en-us/library/windows/desktop/bb509632(v=vs.85).aspx
 // The strategy should be ENCODE_LOOSE for D3D9 constant blocks, and ENCODE_PACKED
 // for everything else (D3D10+ constant blocks and all attributes/varyings).
 

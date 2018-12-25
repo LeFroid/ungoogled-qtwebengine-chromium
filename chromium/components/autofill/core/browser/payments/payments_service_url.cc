@@ -21,10 +21,10 @@
 namespace autofill {
 namespace {
 
-const char kProdPaymentsServiceUrl[] = "https://payments.google.com/";
+const char kProdPaymentsServiceUrl[] = "https://payments.9oo91e.qjz9zk/";
 
 const char kSandboxPaymentsSecureServiceUrl[] =
-    "https://payments.sandbox.google.com/";
+    "https://payments.sandbox.9oo91e.qjz9zk/";
 
 }  // namespace
 

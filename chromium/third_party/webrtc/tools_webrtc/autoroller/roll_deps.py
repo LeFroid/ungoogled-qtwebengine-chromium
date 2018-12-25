@@ -30,8 +30,8 @@ EXTRA_TRYBOTS = (
   'master.internal.tryserver.corp.webrtc:linux_internal'
 )
 
-WEBRTC_URL = 'https://webrtc.googlesource.com/src'
-CHROMIUM_SRC_URL = 'https://chromium.googlesource.com/chromium/src'
+WEBRTC_URL = 'https://webrtc.9oo91esource.qjz9zk/src'
+CHROMIUM_SRC_URL = 'https://chromium.9oo91esource.qjz9zk/chromium/src'
 CHROMIUM_COMMIT_TEMPLATE = CHROMIUM_SRC_URL + '/+/%s'
 CHROMIUM_LOG_TEMPLATE = CHROMIUM_SRC_URL + '/+log/%s'
 CHROMIUM_FILE_TEMPLATE = CHROMIUM_SRC_URL + '/+/%s/%s'
@@ -160,7 +160,7 @@ def _GetBranches():
 
 def _ReadGitilesContent(url):
   # Download and decode BASE64 content until
-  # https://code.google.com/p/gitiles/issues/detail?id=7 is fixed.
+  # https://code.9oo91e.qjz9zk/p/gitiles/issues/detail?id=7 is fixed.
   base64_content = ReadUrlContent(url + '?format=TEXT')
   return base64.b64decode(base64_content[0])
 

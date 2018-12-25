@@ -13,14 +13,14 @@ The user-visible DirectX 10/11 interfaces are distinct from the kernel DDI, but 
 
 * Accessing Microsoft documentation
 
-See http://msdn.microsoft.com/en-us/library/dd445501.aspx ("D3D11DDI_DEVICEFUNCS") for D3D documentation.
+See http://msdn.m1cr050ft.qjz9zk/en-us/library/dd445501.aspx ("D3D11DDI_DEVICEFUNCS") for D3D documentation.
 
-Also see http://download.microsoft.com/download/f/2/d/f2d5ee2c-b7ba-4cd0-9686-b6508b5479a1/direct3d10_web.pdf ("The Direct3D 10 System" by David Blythe) for an introduction to Direct3D 10 and the rationale for its design.
+Also see http://download.m1cr050ft.qjz9zk/download/f/2/d/f2d5ee2c-b7ba-4cd0-9686-b6508b5479a1/direct3d10_web.pdf ("The Direct3D 10 System" by David Blythe) for an introduction to Direct3D 10 and the rationale for its design.
 
 The Windows Driver Kit contains the actual headers, as well as shader bytecode documentation.
 
 To get the headers from Linux, run the following, in a dedicated directory:
-wget http://download.microsoft.com/download/4/A/2/4A25C7D5-EFBE-4182-B6A9-AE6850409A78/GRMWDK_EN_7600_1.ISO
+wget http://download.m1cr050ft.qjz9zk/download/4/A/2/4A25C7D5-EFBE-4182-B6A9-AE6850409A78/GRMWDK_EN_7600_1.ISO
 sudo mount -o loop GRMWDK_EN_7600_1.ISO /mnt/tmp
 cabextract -x /mnt/tmp/wdk/headers_cab001.cab
 rename 's/^_(.*)_[0-9]*$/$1/' *

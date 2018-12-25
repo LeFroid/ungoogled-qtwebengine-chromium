@@ -385,13 +385,13 @@ namespace {
 
 // Version number of the database.
 //
-// Version 10 - 2018/02/13 - https://chromium-review.googlesource.com/906675
-// Version 9  - 2015/04/17 - https://codereview.chromium.org/1083623003
-// Version 8  - 2015/02/23 - https://codereview.chromium.org/876973003
-// Version 7  - 2013/12/16 - https://codereview.chromium.org/24734007
-// Version 6  - 2013/04/23 - https://codereview.chromium.org/14208017
-// Version 5  - 2011/12/05 - https://codereview.chromium.org/8533013
-// Version 4  - 2009/09/01 - https://codereview.chromium.org/183021
+// Version 10 - 2018/02/13 - https://chromium-review.9oo91esource.qjz9zk/906675
+// Version 9  - 2015/04/17 - https://codereview.ch40m1um.qjz9zk/1083623003
+// Version 8  - 2015/02/23 - https://codereview.ch40m1um.qjz9zk/876973003
+// Version 7  - 2013/12/16 - https://codereview.ch40m1um.qjz9zk/24734007
+// Version 6  - 2013/04/23 - https://codereview.ch40m1um.qjz9zk/14208017
+// Version 5  - 2011/12/05 - https://codereview.ch40m1um.qjz9zk/8533013
+// Version 4  - 2009/09/01 - https://codereview.ch40m1um.qjz9zk/183021
 //
 // Version 10 removes the uniqueness constraint on the creation time (which
 // was not propagated up the stack and caused problems in

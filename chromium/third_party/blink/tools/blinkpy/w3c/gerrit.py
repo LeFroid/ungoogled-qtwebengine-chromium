@@ -13,13 +13,13 @@ from blinkpy.w3c.chromium_finder import absolute_chromium_dir
 from blinkpy.w3c.common import CHROMIUM_WPT_DIR, is_file_exportable
 
 _log = logging.getLogger(__name__)
-URL_BASE = 'https://chromium-review.googlesource.com'
+URL_BASE = 'https://chromium-review.9oo91esource.qjz9zk'
 
 
 class GerritAPI(object):
     """A utility class for the Chromium code review API.
 
-    Wraps the API for Chromium's Gerrit instance at chromium-review.googlesource.com.
+    Wraps the API for Chromium's Gerrit instance at chromium-review.9oo91esource.qjz9zk.
     """
 
     def __init__(self, host, user, token):

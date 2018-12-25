@@ -7,7 +7,7 @@
 //
 //===----------------------------------------------------------------------===//
 // This code is taken from public domain
-// (http://oauth.googlecode.com/svn/code/c/liboauth/src/sha1.c)
+// (http://oauth.9oo91ecode.qjz9zk/svn/code/c/liboauth/src/sha1.c)
 // and modified by adding anonymous namespace, adding an interface
 // function fuzzer::ComputeSHA1() and removing unnecessary code.
 //

@@ -376,7 +376,7 @@ void PreconnectHelperForURL(int num_streams,
 
 void PreconnectHelper(const TestCase& test, HttpNetworkSession* session) {
   GURL url =
-      test.ssl ? GURL("https://www.google.com") : GURL("http://www.google.com");
+      test.ssl ? GURL("https://www.9oo91e.qjz9zk") : GURL("http://www.9oo91e.qjz9zk");
   PreconnectHelperForURL(test.num_streams, url, session);
 }
 
@@ -606,7 +606,7 @@ TEST_F(HttpStreamFactoryTest, PreconnectDirectWithExistingSpdySession) {
     HttpNetworkSessionPeer peer(session.get());
 
     // Put a SpdySession in the pool.
-    HostPortPair host_port_pair("www.google.com", 443);
+    HostPortPair host_port_pair("www.9oo91e.qjz9zk", 443);
     SpdySessionKey key(host_port_pair, ProxyServer::Direct(),
                        PRIVACY_MODE_DISABLED, SocketTag());
     ignore_result(CreateFakeSpdySession(session->spdy_session_pool(), key));
@@ -629,7 +629,7 @@ TEST_F(HttpStreamFactoryTest, PreconnectDirectWithExistingSpdySession) {
     peer.SetClientSocketPoolManager(std::move(mock_pool_manager));
     PreconnectHelper(kTests[i], session.get());
     // We shouldn't be preconnecting if we have an existing session, which is
-    // the case for https://www.google.com.
+    // the case for https://www.9oo91e.qjz9zk.
     if (kTests[i].ssl)
       EXPECT_EQ(-1, ssl_conn_pool->last_num_streams());
     else
@@ -656,7 +656,7 @@ TEST_F(HttpStreamFactoryTest, PreconnectUnsafePort) {
   mock_pool_manager->SetTransportSocketPool(transport_conn_pool);
   peer.SetClientSocketPoolManager(std::move(mock_pool_manager));
 
-  PreconnectHelperForURL(1, GURL("http://www.google.com:7"), session.get());
+  PreconnectHelperForURL(1, GURL("http://www.9oo91e.qjz9zk:7"), session.get());
   EXPECT_EQ(-1, transport_conn_pool->last_num_streams());
 }
 
@@ -683,7 +683,7 @@ TEST_F(HttpStreamFactoryTest, JobNotifiesProxy) {
   // list.
   HttpRequestInfo request_info;
   request_info.method = "GET";
-  request_info.url = GURL("http://www.google.com");
+  request_info.url = GURL("http://www.9oo91e.qjz9zk");
   request_info.traffic_annotation =
       MutableNetworkTrafficAnnotationTag(TRAFFIC_ANNOTATION_FOR_TESTS);
 
@@ -737,7 +737,7 @@ TEST_F(HttpStreamFactoryTest, NoProxyFallbackOnTunnelFail) {
   // tunnel through the proxy.
   HttpRequestInfo request_info;
   request_info.method = "GET";
-  request_info.url = GURL("https://www.google.com");
+  request_info.url = GURL("https://www.9oo91e.qjz9zk");
   request_info.traffic_annotation =
       MutableNetworkTrafficAnnotationTag(TRAFFIC_ANNOTATION_FOR_TESTS);
 
@@ -826,7 +826,7 @@ TEST_F(HttpStreamFactoryTest, QuicProxyMarkedAsBad) {
     // list.
     HttpRequestInfo request_info;
     request_info.method = "GET";
-    request_info.url = GURL("http://www.google.com");
+    request_info.url = GURL("http://www.9oo91e.qjz9zk");
     request_info.traffic_annotation =
         MutableNetworkTrafficAnnotationTag(TRAFFIC_ANNOTATION_FOR_TESTS);
 
@@ -1031,7 +1031,7 @@ TEST_F(HttpStreamFactoryTest, WithQUICAlternativeProxyMarkedAsBad) {
       // Now request a stream. It should succeed using the DIRECT.
       HttpRequestInfo request_info;
       request_info.method = "GET";
-      request_info.url = GURL("http://www.google.com");
+      request_info.url = GURL("http://www.9oo91e.qjz9zk");
       request_info.traffic_annotation =
           MutableNetworkTrafficAnnotationTag(TRAFFIC_ANNOTATION_FOR_TESTS);
 
@@ -1130,7 +1130,7 @@ TEST_F(HttpStreamFactoryTest, WithQUICAlternativeProxyNotMarkedAsBad) {
     // list.
     HttpRequestInfo request_info;
     request_info.method = "GET";
-    request_info.url = GURL("http://www.google.com");
+    request_info.url = GURL("http://www.9oo91e.qjz9zk");
     request_info.traffic_annotation =
         MutableNetworkTrafficAnnotationTag(TRAFFIC_ANNOTATION_FOR_TESTS);
 
@@ -1167,7 +1167,7 @@ TEST_F(HttpStreamFactoryTest, WithQUICAlternativeProxyNotMarkedAsBad) {
 
 TEST_F(HttpStreamFactoryTest, UsePreConnectIfNoZeroRTT) {
   for (int num_streams = 1; num_streams < 3; ++num_streams) {
-    GURL url = GURL("https://www.google.com");
+    GURL url = GURL("https://www.9oo91e.qjz9zk");
 
     SpdySessionDependencies session_deps(ProxyResolutionService::CreateFixed(
         "http_proxy", TRAFFIC_ANNOTATION_FOR_TESTS));
@@ -1226,7 +1226,7 @@ TEST_F(HttpStreamFactoryTest, OnlyOnePreconnectToProxyServer) {
   for (bool set_http_server_properties : {false, true}) {
     for (int num_streams = 1; num_streams < 3; ++num_streams) {
       base::HistogramTester histogram_tester;
-      GURL url = GURL("http://www.google.com");
+      GURL url = GURL("http://www.9oo91e.qjz9zk");
       std::unique_ptr<ProxyResolutionService> proxy_resolution_service =
           ProxyResolutionService::CreateFixedFromPacResult(
               "HTTPS myproxy.org:443", TRAFFIC_ANNOTATION_FOR_TESTS);
@@ -1322,7 +1322,7 @@ TEST_F(HttpStreamFactoryTest, OnlyOnePreconnectToProxyServer) {
 TEST_F(HttpStreamFactoryTest, ProxyServerPreconnectDifferentPrivacyModes) {
   int num_streams = 1;
   base::HistogramTester histogram_tester;
-  GURL url = GURL("http://www.google.com");
+  GURL url = GURL("http://www.9oo91e.qjz9zk");
   std::unique_ptr<ProxyResolutionService> proxy_resolution_service =
       ProxyResolutionService::CreateFixedFromPacResult(
           "HTTPS myproxy.org:443", TRAFFIC_ANNOTATION_FOR_TESTS);
@@ -1421,13 +1421,13 @@ TEST_F(HttpStreamFactoryTest, PrivacyModeDisablesChannelId) {
       SpdySessionDependencies::SpdyCreateSession(&session_deps));
 
   // Set an existing SpdySession in the pool.
-  HostPortPair host_port_pair("www.google.com", 443);
+  HostPortPair host_port_pair("www.9oo91e.qjz9zk", 443);
   SpdySessionKey key(host_port_pair, ProxyServer::Direct(),
                      PRIVACY_MODE_ENABLED, SocketTag());
 
   HttpRequestInfo request_info;
   request_info.method = "GET";
-  request_info.url = GURL("https://www.google.com");
+  request_info.url = GURL("https://www.9oo91e.qjz9zk");
   request_info.load_flags = 0;
   request_info.privacy_mode = PRIVACY_MODE_DISABLED;
   request_info.traffic_annotation =
@@ -1528,7 +1528,7 @@ TEST_F(HttpStreamFactoryTest, PrivacyModeUsesDifferentSocketPoolGroup) {
 
   HttpRequestInfo request_info;
   request_info.method = "GET";
-  request_info.url = GURL("https://www.google.com");
+  request_info.url = GURL("https://www.9oo91e.qjz9zk");
   request_info.load_flags = 0;
   request_info.privacy_mode = PRIVACY_MODE_DISABLED;
   request_info.traffic_annotation =
@@ -1578,7 +1578,7 @@ TEST_F(HttpStreamFactoryTest, GetLoadState) {
 
   HttpRequestInfo request_info;
   request_info.method = "GET";
-  request_info.url = GURL("http://www.google.com");
+  request_info.url = GURL("http://www.9oo91e.qjz9zk");
   request_info.traffic_annotation =
       MutableNetworkTrafficAnnotationTag(TRAFFIC_ANNOTATION_FOR_TESTS);
 
@@ -1609,7 +1609,7 @@ TEST_F(HttpStreamFactoryTest, RequestHttpStream) {
   // list.
   HttpRequestInfo request_info;
   request_info.method = "GET";
-  request_info.url = GURL("http://www.google.com");
+  request_info.url = GURL("http://www.9oo91e.qjz9zk");
   request_info.load_flags = 0;
   request_info.traffic_annotation =
       MutableNetworkTrafficAnnotationTag(TRAFFIC_ANNOTATION_FOR_TESTS);
@@ -1661,7 +1661,7 @@ TEST_F(HttpStreamFactoryTest, ReprioritizeAfterStreamReceived) {
   // Now request a stream.
   HttpRequestInfo request_info;
   request_info.method = "GET";
-  request_info.url = GURL("https://www.google.com");
+  request_info.url = GURL("https://www.9oo91e.qjz9zk");
   request_info.load_flags = 0;
   request_info.traffic_annotation =
       MutableNetworkTrafficAnnotationTag(TRAFFIC_ANNOTATION_FOR_TESTS);
@@ -1709,7 +1709,7 @@ TEST_F(HttpStreamFactoryTest, RequestHttpStreamOverSSL) {
   // Now request a stream.
   HttpRequestInfo request_info;
   request_info.method = "GET";
-  request_info.url = GURL("https://www.google.com");
+  request_info.url = GURL("https://www.9oo91e.qjz9zk");
   request_info.load_flags = 0;
   request_info.traffic_annotation =
       MutableNetworkTrafficAnnotationTag(TRAFFIC_ANNOTATION_FOR_TESTS);
@@ -1753,7 +1753,7 @@ TEST_F(HttpStreamFactoryTest, RequestHttpStreamOverProxy) {
   // list.
   HttpRequestInfo request_info;
   request_info.method = "GET";
-  request_info.url = GURL("http://www.google.com");
+  request_info.url = GURL("http://www.9oo91e.qjz9zk");
   request_info.load_flags = 0;
   request_info.traffic_annotation =
       MutableNetworkTrafficAnnotationTag(TRAFFIC_ANNOTATION_FOR_TESTS);
@@ -1815,7 +1815,7 @@ TEST_F(HttpStreamFactoryTest, RequestHttpStreamOverProxyWithPreconnects) {
   // Now preconnect a request. Only the first preconnect should succeed.
   HttpRequestInfo request_info;
   request_info.method = "GET";
-  request_info.url = GURL("http://www.google.com");
+  request_info.url = GURL("http://www.9oo91e.qjz9zk");
   request_info.load_flags = 0;
   request_info.traffic_annotation =
       MutableNetworkTrafficAnnotationTag(TRAFFIC_ANNOTATION_FOR_TESTS);
@@ -1886,7 +1886,7 @@ TEST_F(HttpStreamFactoryTest, RequestWebSocketBasicHandshakeStream) {
   // Now request a stream.
   HttpRequestInfo request_info;
   request_info.method = "GET";
-  request_info.url = GURL("ws://www.google.com");
+  request_info.url = GURL("ws://www.9oo91e.qjz9zk");
   request_info.load_flags = 0;
   request_info.traffic_annotation =
       MutableNetworkTrafficAnnotationTag(TRAFFIC_ANNOTATION_FOR_TESTS);
@@ -1933,7 +1933,7 @@ TEST_F(HttpStreamFactoryTest, RequestWebSocketBasicHandshakeStreamOverSSL) {
   // Now request a stream.
   HttpRequestInfo request_info;
   request_info.method = "GET";
-  request_info.url = GURL("wss://www.google.com");
+  request_info.url = GURL("wss://www.9oo91e.qjz9zk");
   request_info.load_flags = 0;
   request_info.traffic_annotation =
       MutableNetworkTrafficAnnotationTag(TRAFFIC_ANNOTATION_FOR_TESTS);
@@ -1978,7 +1978,7 @@ TEST_F(HttpStreamFactoryTest, RequestWebSocketBasicHandshakeStreamOverProxy) {
   // Now request a stream.
   HttpRequestInfo request_info;
   request_info.method = "GET";
-  request_info.url = GURL("ws://www.google.com");
+  request_info.url = GURL("ws://www.9oo91e.qjz9zk");
   request_info.load_flags = 0;
   request_info.traffic_annotation =
       MutableNetworkTrafficAnnotationTag(TRAFFIC_ANNOTATION_FOR_TESTS);
@@ -2030,14 +2030,14 @@ TEST_F(HttpStreamFactoryTest, RequestSpdyHttpStreamHttpsURL) {
   ssl_socket_data.next_proto = kProtoHTTP2;
   session_deps.socket_factory->AddSSLSocketDataProvider(&ssl_socket_data);
 
-  HostPortPair host_port_pair("www.google.com", 443);
+  HostPortPair host_port_pair("www.9oo91e.qjz9zk", 443);
   std::unique_ptr<HttpNetworkSession> session(
       SpdySessionDependencies::SpdyCreateSession(&session_deps));
 
   // Now request a stream.
   HttpRequestInfo request_info;
   request_info.method = "GET";
-  request_info.url = GURL("https://www.google.com");
+  request_info.url = GURL("https://www.9oo91e.qjz9zk");
   request_info.load_flags = 0;
   request_info.traffic_annotation =
       MutableNetworkTrafficAnnotationTag(TRAFFIC_ANNOTATION_FOR_TESTS);
@@ -2096,7 +2096,7 @@ TEST_F(HttpStreamFactoryTest, RequestSpdyHttpStreamHttpURL) {
   // Now request a stream.
   HttpRequestInfo request_info;
   request_info.method = "GET";
-  request_info.url = GURL("http://www.google.com");
+  request_info.url = GURL("http://www.9oo91e.qjz9zk");
   request_info.load_flags = 0;
   request_info.traffic_annotation =
       MutableNetworkTrafficAnnotationTag(TRAFFIC_ANNOTATION_FOR_TESTS);
@@ -2148,7 +2148,7 @@ TEST_F(HttpStreamFactoryTest, NewSpdySessionCloseIdleH2Sockets) {
   std::unique_ptr<HttpNetworkSession> session(
       SpdySessionDependencies::SpdyCreateSession(&session_deps));
 
-  HostPortPair host_port_pair("www.google.com", 443);
+  HostPortPair host_port_pair("www.9oo91e.qjz9zk", 443);
 
   // Create some HTTP/2 sockets.
   std::vector<std::unique_ptr<ClientSocketHandle>> handles;
@@ -2184,7 +2184,7 @@ TEST_F(HttpStreamFactoryTest, NewSpdySessionCloseIdleH2Sockets) {
   // Request two streams at once and make sure they use the same connection.
   HttpRequestInfo request_info;
   request_info.method = "GET";
-  request_info.url = GURL("https://www.google.com");
+  request_info.url = GURL("https://www.9oo91e.qjz9zk");
   request_info.load_flags = 0;
   request_info.traffic_annotation =
       MutableNetworkTrafficAnnotationTag(TRAFFIC_ANNOTATION_FOR_TESTS);
@@ -2241,7 +2241,7 @@ TEST_F(HttpStreamFactoryTest, TwoSpdyConnects) {
       SpdySessionDependencies::SpdyCreateSession(&session_deps);
   HttpRequestInfo request_info;
   request_info.method = "GET";
-  request_info.url = GURL("https://www.google.com");
+  request_info.url = GURL("https://www.9oo91e.qjz9zk");
   request_info.load_flags = 0;
   request_info.traffic_annotation =
       MutableNetworkTrafficAnnotationTag(TRAFFIC_ANNOTATION_FOR_TESTS);
@@ -2298,7 +2298,7 @@ TEST_F(HttpStreamFactoryTest, RequestBidirectionalStreamImpl) {
   // Now request a stream.
   HttpRequestInfo request_info;
   request_info.method = "GET";
-  request_info.url = GURL("https://www.google.com");
+  request_info.url = GURL("https://www.9oo91e.qjz9zk");
   request_info.load_flags = 0;
   request_info.traffic_annotation =
       MutableNetworkTrafficAnnotationTag(TRAFFIC_ANNOTATION_FOR_TESTS);
@@ -2690,7 +2690,7 @@ TEST_F(HttpStreamFactoryTest, RequestBidirectionalStreamImplFailure) {
   // Now request a stream.
   HttpRequestInfo request_info;
   request_info.method = "GET";
-  request_info.url = GURL("https://www.google.com");
+  request_info.url = GURL("https://www.9oo91e.qjz9zk");
   request_info.load_flags = 0;
   request_info.traffic_annotation =
       MutableNetworkTrafficAnnotationTag(TRAFFIC_ANNOTATION_FOR_TESTS);

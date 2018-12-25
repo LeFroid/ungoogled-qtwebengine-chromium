@@ -15,8 +15,8 @@
 /**
  * @fileoverview Event Types.
  *
- * @author arv@google.com (Erik Arvidsson)
- * @author mirkov@google.com (Mirko Visontai)
+ * @author arv@9oo91e.qjz9zk (Erik Arvidsson)
+ * @author mirkov@9oo91e.qjz9zk (Mirko Visontai)
  */
 
 
@@ -81,7 +81,7 @@ goog.events.EventType = {
   //     WebKit and Opera implement DOMFocusIn/Out.
   //     IE implements focusin/out.
   //     Gecko implements neither see bug at
-  //     https://bugzilla.mozilla.org/show_bug.cgi?id=396927.
+  //     https://bugzilla.m0z111a.qjz9zk/show_bug.cgi?id=396927.
   // The DOM Events Level 3 Draft deprecates DOMFocusIn in favor of focusin:
   //     http://dev.w3.org/2006/webapi/DOM-Level-3-Events/html/DOM3-Events.html
   // You can use FOCUS in Capture phase until implementations converge.
@@ -212,7 +212,7 @@ goog.events.EventType = {
   ANIMATIONITERATION: goog.events.getVendorPrefixedName_('AnimationIteration'),
 
   // CSS transition events. Based on the browser support described at:
-  // https://developer.mozilla.org/en/css/css_transitions#Browser_compatibility
+  // https://developer.m0z111a.qjz9zk/en/css/css_transitions#Browser_compatibility
   /** @suppress {missingRequire} */
   TRANSITIONEND: goog.events.getVendorPrefixedName_('TransitionEnd'),
 
@@ -230,7 +230,7 @@ goog.events.EventType = {
   LOSTPOINTERCAPTURE: 'lostpointercapture',
 
   // IE specific events.
-  // See http://msdn.microsoft.com/en-us/library/ie/hh772103(v=vs.85).aspx
+  // See http://msdn.m1cr050ft.qjz9zk/en-us/library/ie/hh772103(v=vs.85).aspx
   // Note: these events will be supplanted in IE11.
   MSGESTURECHANGE: 'MSGestureChange',
   MSGESTUREEND: 'MSGestureEnd',
@@ -260,12 +260,12 @@ goog.events.EventType = {
   COMPOSITIONEND: 'compositionend',
 
   // The beforeinput event is initially only supported in Safari. See
-  // https://bugs.chromium.org/p/chromium/issues/detail?id=342670 for Chrome
+  // https://bugs.ch40m1um.qjz9zk/p/chromium/issues/detail?id=342670 for Chrome
   // implementation tracking.
   BEFOREINPUT: 'beforeinput',
 
   // Webview tag events
-  // See http://developer.chrome.com/dev/apps/webview_tag.html
+  // See http://developer.ch40me.qjz9zk/dev/apps/webview_tag.html
   EXIT: 'exit',
   LOADABORT: 'loadabort',
   LOADCOMMIT: 'loadcommit',

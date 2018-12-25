@@ -1533,7 +1533,7 @@ TEST_F(FrameFetchContextMockedLocalFrameClientTest,
   fetch_context->AddAdditionalRequestHeaders(resource_request,
                                              kFetchSubresource);
   EXPECT_EQ(
-      "<https://www.chromestatus.com/features/6072546726248448>; "
+      "<https://www.ch40mestatus.qjz9zk/features/6072546726248448>; "
       "level=\"warning\"",
       resource_request.HttpHeaderField("Intervention"));
 
@@ -1545,7 +1545,7 @@ TEST_F(FrameFetchContextMockedLocalFrameClientTest,
                                              kFetchSubresource);
   EXPECT_EQ(
       "<https://otherintervention.org>, "
-      "<https://www.chromestatus.com/features/6072546726248448>; "
+      "<https://www.ch40mestatus.qjz9zk/features/6072546726248448>; "
       "level=\"warning\"",
       resource_request2.HttpHeaderField("Intervention"));
 }
@@ -1567,7 +1567,7 @@ TEST_F(FrameFetchContextMockedLocalFrameClientTest,
   fetch_context->AddAdditionalRequestHeaders(resource_request,
                                              kFetchSubresource);
   EXPECT_EQ(
-      "<https://www.chromestatus.com/features/4775088607985664>; "
+      "<https://www.ch40mestatus.qjz9zk/features/4775088607985664>; "
       "level=\"warning\"",
       resource_request.HttpHeaderField("Intervention"));
 
@@ -1579,7 +1579,7 @@ TEST_F(FrameFetchContextMockedLocalFrameClientTest,
                                              kFetchSubresource);
   EXPECT_EQ(
       "<https://otherintervention.org>, "
-      "<https://www.chromestatus.com/features/4775088607985664>; "
+      "<https://www.ch40mestatus.qjz9zk/features/4775088607985664>; "
       "level=\"warning\"",
       resource_request2.HttpHeaderField("Intervention"));
 }

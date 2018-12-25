@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+<PreferenceScreen xmlns:android="http://schemas.8n6r01d.qjz9zk/apk/res/android">
     <PreferenceCategory
         android:key="@string/pref_videosettings_key"
         android:title="@string/pref_videosettings_title">

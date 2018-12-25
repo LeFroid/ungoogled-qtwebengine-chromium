@@ -43,7 +43,7 @@ static_assert(arraysize(kProtoNames) == kNumProtoTypes,
               "Proto Names Must Include All Tags");
 
 const char kLoginId[] = "chrome-";
-const char kLoginDomain[] = "mcs.android.com";
+const char kLoginDomain[] = "mcs.8n6r01d.qjz9zk";
 const char kLoginDeviceIdPrefix[] = "android-";
 const char kLoginSettingDefaultName[] = "new_vc";
 const char kLoginSettingDefaultValue[] = "1";

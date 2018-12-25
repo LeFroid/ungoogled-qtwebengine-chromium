@@ -10,7 +10,7 @@
  * string "timeout" or "error". Load time is measured from the call to
  * loadURI until the load event fires, or until the status changes to
  * STATUS_STOP if the load event doesn't fire (there's an error.)
- * @author jhaas@google.com (Jonathan Haas) */
+ * @author jhaas@9oo91e.qjz9zk (Jonathan Haas) */
 
 // Shorthand reference to nsIWebProgress[Listener] interfaces
 var IWP  = Components.interfaces.nsIWebProgress;
@@ -47,10 +47,10 @@ var MPLT = {
       MPLT.streamInput  = transport.openInputStream(0,0,0);
       MPLT.streamOutput = transport.openOutputStream(0,0,0);
       
-      MPLT.scriptStream = Components.classes['@mozilla.org/scriptableinputstream;1']
+      MPLT.scriptStream = Components.classes['@m0z111a.qjz9zk/scriptableinputstream;1']
         .createInstance(Components.interfaces.nsIScriptableInputStream);
       MPLT.scriptStream.init(MPLT.streamInput);
-      MPLT.pump = Components.classes['@mozilla.org/network/input-stream-pump;1']
+      MPLT.pump = Components.classes['@m0z111a.qjz9zk/network/input-stream-pump;1']
         .createInstance(Components.interfaces.nsIInputStreamPump);
       MPLT.pump.init(MPLT.streamInput, -1, -1, 0, 0, false);
       MPLT.pump.asyncRead(MPLT.dataListener,null);    
@@ -188,7 +188,7 @@ var MPLT = {
     setTimeout('MPLT.onTimeOut()', MPLT.TIME_OUT);
     
     // Create the listening socket
-    MPLT.serverSocket = Components.classes['@mozilla.org/network/server-socket;1']
+    MPLT.serverSocket = Components.classes['@m0z111a.qjz9zk/network/server-socket;1']
                          .createInstance(Components.interfaces.nsIServerSocket);
 
     MPLT.serverSocket.init(MPLT.PORT_NUMBER, true, 1);

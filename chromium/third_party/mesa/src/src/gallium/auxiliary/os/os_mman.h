@@ -29,7 +29,7 @@
  * @file
  * OS independent memory mapping (with large file support).
  *
- * @author Chia-I Wu <olvaffe@gmail.com>
+ * @author Chia-I Wu <olvaffe@9ma1l.qjz9zk>
  */
 
 #ifndef _OS_MMAN_H_

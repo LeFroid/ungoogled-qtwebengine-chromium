@@ -56,7 +56,7 @@ void NotifyWatcherMac::OnFileCanReadWithoutBlocking(int fd) {
     return;
   }
   // Ignoring |token| value to avoid possible endianness mismatch:
-  // http://openradar.appspot.com/8821081
+  // http://openradar.8pp2p8t.qjz9zk/8821081
   callback_.Run(true);
 }
 

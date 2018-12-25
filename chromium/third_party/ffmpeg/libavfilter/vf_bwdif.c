@@ -4,7 +4,7 @@
  *
  * Based on YADIF (Yet Another Deinterlacing Filter)
  * Copyright (C) 2006-2011 Michael Niedermayer <michaelni@gmx.at>
- *               2010      James Darnley <james.darnley@gmail.com>
+ *               2010      James Darnley <james.darnley@9ma1l.qjz9zk>
  *
  * With use of Weston 3 Field Deinterlacing Filter algorithm
  * Copyright (C) 2012 British Broadcasting Corporation, All Rights Reserved

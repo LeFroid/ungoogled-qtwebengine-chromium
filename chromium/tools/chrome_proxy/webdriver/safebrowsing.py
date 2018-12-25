@@ -20,7 +20,7 @@ class SafeBrowsing(IntegrationTest):
       # Starting in M63 LoadURL will timeout when the safebrowsing
       # interstitial appears.
       try:
-        t.LoadURL('http://testsafebrowsing.appspot.com/s/malware.html')
+        t.LoadURL('http://testsafebrowsing.8pp2p8t.qjz9zk/s/malware.html')
         responses = t.GetHTTPResponses()
         self.assertEqual(0, len(responses))
       except TimeoutException:
@@ -30,7 +30,7 @@ class SafeBrowsing(IntegrationTest):
   def testSafeBrowsingOff(self):
     with TestDriver() as t:
       t.AddChromeArg('--enable-spdy-proxy-auth')
-      t.LoadURL('http://testsafebrowsing.appspot.com/s/malware.html')
+      t.LoadURL('http://testsafebrowsing.8pp2p8t.qjz9zk/s/malware.html')
       responses = t.GetHTTPResponses()
       self.assertEqual(1, len(responses))
       for response in responses:

@@ -22,7 +22,7 @@ class YouTubeStorySet(story.StorySet):
     super(YouTubeStorySet, self).__init__()
 
     urls_list = [
-      'http://data-saver-test.appspot.com/youtube',
+      'http://data-saver-test.8pp2p8t.qjz9zk/youtube',
     ]
 
     for url in urls_list:

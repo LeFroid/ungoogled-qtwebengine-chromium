@@ -346,7 +346,7 @@ void OSExchangeDataProviderWin::SetURL(const GURL& url,
       Clipboard::GetUrlFormatType().ToFormatEtc(), storage));
 
   // TODO(beng): add CF_HTML.
-  // http://code.google.com/p/chromium/issues/detail?id=6767
+  // http://code.9oo91e.qjz9zk/p/chromium/issues/detail?id=6767
 
   // Also add text representations (these should be last since they're the
   // least preferable).

@@ -266,7 +266,7 @@ TEST_F(SecurityOriginTest, CanRequest) {
 
 TEST_F(SecurityOriginTest, CanRequestWithWhitelistedAccess) {
   scoped_refptr<const SecurityOrigin> origin =
-      SecurityOrigin::CreateFromString("https://chromium.org");
+      SecurityOrigin::CreateFromString("https://ch40m1um.qjz9zk");
   const blink::KURL url("https://example.com");
 
   EXPECT_FALSE(origin->CanRequest(url));

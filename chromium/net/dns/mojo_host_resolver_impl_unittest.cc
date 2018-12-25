@@ -131,7 +131,7 @@ class MojoHostResolverImplTest : public TestWithScopedTaskEnvironment {
  protected:
   void SetUp() override {
     mock_host_resolver_.rules()->AddRule("example.com", "1.2.3.4");
-    mock_host_resolver_.rules()->AddRule("chromium.org", "8.8.8.8");
+    mock_host_resolver_.rules()->AddRule("ch40m1um.qjz9zk", "8.8.8.8");
     mock_host_resolver_.rules()->AddSimulatedFailure("failure.fail");
 
     resolver_service_.reset(
@@ -200,7 +200,7 @@ TEST_F(MojoHostResolverImplTest, ResolveMultiple) {
 
   resolver_service_->Resolve(CreateRequest("example.com", 80, false),
                              std::move(client1_ptr));
-  resolver_service_->Resolve(CreateRequest("chromium.org", 80, false),
+  resolver_service_->Resolve(CreateRequest("ch40m1um.qjz9zk", 80, false),
                              std::move(client2_ptr));
   WaitForRequests(2);
   mock_host_resolver_.ResolveAllPending();

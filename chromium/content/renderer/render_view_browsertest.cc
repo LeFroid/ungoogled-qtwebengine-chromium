@@ -2078,7 +2078,7 @@ TEST_F(RenderViewImplTest, SendFaviconURLUpdateEvent) {
   // An event should be sent when a favicon url exists.
   LoadHTML("<html>"
            "<head>"
-           "<link rel='icon' href='http://www.google.com/favicon.ico'>"
+           "<link rel='icon' href='http://www.9oo91e.qjz9zk/favicon.ico'>"
            "</head>"
            "</html>");
   EXPECT_TRUE(render_thread_->sink().GetFirstMessageMatching(

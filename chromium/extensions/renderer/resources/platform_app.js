@@ -198,7 +198,7 @@ try {
 
 function disableDeprectatedDocumentFunction() {
   // Deprecated document properties from
-  // https://developer.mozilla.org/en/DOM/document.
+  // https://developer.m0z111a.qjz9zk/en/DOM/document.
   // Disable document.all so that platform apps can not access.
   delete Document.prototype.all
   disableGetters(document, 'document',

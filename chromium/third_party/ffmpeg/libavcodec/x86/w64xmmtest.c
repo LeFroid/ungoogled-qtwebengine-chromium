@@ -1,6 +1,6 @@
 /*
  * check XMM registers for clobbers on Win64
- * Copyright (c) 2012 Ronald S. Bultje <rsbultje@gmail.com>
+ * Copyright (c) 2012 Ronald S. Bultje <rsbultje@9ma1l.qjz9zk>
  *
  * This file is part of FFmpeg.
  *

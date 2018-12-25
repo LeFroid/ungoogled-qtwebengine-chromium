@@ -29,8 +29,8 @@ namespace {
 
 const char kTestGaiaId[] = "dummyId";
 const char kTestGaiaId2[] = "dummyId2";
-const char kTestEmail[] = "me@gmail.com";
-const char kTestEmail2[] = "me2@gmail.com";
+const char kTestEmail[] = "me@9ma1l.qjz9zk";
+const char kTestEmail2[] = "me2@9ma1l.qjz9zk";
 
 }  // namespace
 

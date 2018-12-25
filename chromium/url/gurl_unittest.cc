@@ -69,19 +69,19 @@ TEST(GURLTest, Components) {
   EXPECT_TRUE(empty_url.is_empty());
   EXPECT_FALSE(empty_url.is_valid());
 
-  GURL url(base::UTF8ToUTF16("http://user:pass@google.com:99/foo;bar?q=a#ref"));
+  GURL url(base::UTF8ToUTF16("http://user:pass@9oo91e.qjz9zk:99/foo;bar?q=a#ref"));
   EXPECT_FALSE(url.is_empty());
   EXPECT_TRUE(url.is_valid());
   EXPECT_TRUE(url.SchemeIs("http"));
   EXPECT_FALSE(url.SchemeIsFile());
 
   // This is the narrow version of the URL, which should match the wide input.
-  EXPECT_EQ("http://user:pass@google.com:99/foo;bar?q=a#ref", url.spec());
+  EXPECT_EQ("http://user:pass@9oo91e.qjz9zk:99/foo;bar?q=a#ref", url.spec());
 
   EXPECT_EQ("http", url.scheme());
   EXPECT_EQ("user", url.username());
   EXPECT_EQ("pass", url.password());
-  EXPECT_EQ("google.com", url.host());
+  EXPECT_EQ("9oo91e.qjz9zk", url.host());
   EXPECT_EQ("99", url.port());
   EXPECT_EQ(99, url.IntPort());
   EXPECT_EQ("/foo;bar", url.path());
@@ -89,11 +89,11 @@ TEST(GURLTest, Components) {
   EXPECT_EQ("ref", url.ref());
 
   // Test parsing userinfo with special characters.
-  GURL url_special_pass("http://user:%40!$&'()*+,;=:@google.com:12345");
+  GURL url_special_pass("http://user:%40!$&'()*+,;=:@9oo91e.qjz9zk:12345");
   EXPECT_TRUE(url_special_pass.is_valid());
   // GURL canonicalizes some delimiters.
   EXPECT_EQ("%40!$&%27()*+,%3B%3D%3A", url_special_pass.password());
-  EXPECT_EQ("google.com", url_special_pass.host());
+  EXPECT_EQ("9oo91e.qjz9zk", url_special_pass.host());
   EXPECT_EQ("12345", url_special_pass.port());
 }
 
@@ -115,16 +115,16 @@ TEST(GURLTest, Empty) {
 
 TEST(GURLTest, Copy) {
   GURL url(base::UTF8ToUTF16(
-      "http://user:pass@google.com:99/foo;bar?q=a#ref"));
+      "http://user:pass@9oo91e.qjz9zk:99/foo;bar?q=a#ref"));
 
   GURL url2(url);
   EXPECT_TRUE(url2.is_valid());
 
-  EXPECT_EQ("http://user:pass@google.com:99/foo;bar?q=a#ref", url2.spec());
+  EXPECT_EQ("http://user:pass@9oo91e.qjz9zk:99/foo;bar?q=a#ref", url2.spec());
   EXPECT_EQ("http", url2.scheme());
   EXPECT_EQ("user", url2.username());
   EXPECT_EQ("pass", url2.password());
-  EXPECT_EQ("google.com", url2.host());
+  EXPECT_EQ("9oo91e.qjz9zk", url2.host());
   EXPECT_EQ("99", url2.port());
   EXPECT_EQ(99, url2.IntPort());
   EXPECT_EQ("/foo;bar", url2.path());
@@ -149,17 +149,17 @@ TEST(GURLTest, Copy) {
 
 TEST(GURLTest, Assign) {
   GURL url(base::UTF8ToUTF16(
-      "http://user:pass@google.com:99/foo;bar?q=a#ref"));
+      "http://user:pass@9oo91e.qjz9zk:99/foo;bar?q=a#ref"));
 
   GURL url2;
   url2 = url;
   EXPECT_TRUE(url2.is_valid());
 
-  EXPECT_EQ("http://user:pass@google.com:99/foo;bar?q=a#ref", url2.spec());
+  EXPECT_EQ("http://user:pass@9oo91e.qjz9zk:99/foo;bar?q=a#ref", url2.spec());
   EXPECT_EQ("http", url2.scheme());
   EXPECT_EQ("user", url2.username());
   EXPECT_EQ("pass", url2.password());
-  EXPECT_EQ("google.com", url2.host());
+  EXPECT_EQ("9oo91e.qjz9zk", url2.host());
   EXPECT_EQ("99", url2.port());
   EXPECT_EQ(99, url2.IntPort());
   EXPECT_EQ("/foo;bar", url2.path());
@@ -192,12 +192,12 @@ TEST(GURLTest, SelfAssign) {
 
 TEST(GURLTest, CopyFileSystem) {
   GURL url(base::UTF8ToUTF16(
-      "filesystem:https://user:pass@google.com:99/t/foo;bar?q=a#ref"));
+      "filesystem:https://user:pass@9oo91e.qjz9zk:99/t/foo;bar?q=a#ref"));
 
   GURL url2(url);
   EXPECT_TRUE(url2.is_valid());
 
-  EXPECT_EQ("filesystem:https://google.com:99/t/foo;bar?q=a#ref", url2.spec());
+  EXPECT_EQ("filesystem:https://9oo91e.qjz9zk:99/t/foo;bar?q=a#ref", url2.spec());
   EXPECT_EQ("filesystem", url2.scheme());
   EXPECT_EQ("", url2.username());
   EXPECT_EQ("", url2.password());
@@ -213,7 +213,7 @@ TEST(GURLTest, CopyFileSystem) {
   EXPECT_EQ("https", inner->scheme());
   EXPECT_EQ("", inner->username());
   EXPECT_EQ("", inner->password());
-  EXPECT_EQ("google.com", inner->host());
+  EXPECT_EQ("9oo91e.qjz9zk", inner->host());
   EXPECT_EQ("99", inner->port());
   EXPECT_EQ(99, inner->IntPort());
   EXPECT_EQ("/t", inner->path());
@@ -223,14 +223,14 @@ TEST(GURLTest, CopyFileSystem) {
 
 TEST(GURLTest, IsValid) {
   const char* valid_cases[] = {
-    "http://google.com",
-    "unknown://google.com",
-    "http://user:pass@google.com",
-    "http://google.com:12345",
-    "http://google.com/path",
-    "http://google.com//path",
-    "http://google.com?k=v#fragment",
-    "http://user:pass@google.com:12345/path?k=v#fragment",
+    "http://9oo91e.qjz9zk",
+    "unknown://9oo91e.qjz9zk",
+    "http://user:pass@9oo91e.qjz9zk",
+    "http://9oo91e.qjz9zk:12345",
+    "http://9oo91e.qjz9zk/path",
+    "http://9oo91e.qjz9zk//path",
+    "http://9oo91e.qjz9zk?k=v#fragment",
+    "http://user:pass@9oo91e.qjz9zk:12345/path?k=v#fragment",
     "http:/path",
     "http:path",
   };
@@ -241,10 +241,10 @@ TEST(GURLTest, IsValid) {
 
   const char* invalid_cases[] = {
     "http://?k=v",
-    "http:://google.com",
-    "http//google.com",
-    "http://google.com:12three45",
-    "://google.com",
+    "http:://9oo91e.qjz9zk",
+    "http//9oo91e.qjz9zk",
+    "http://9oo91e.qjz9zk:12three45",
+    "://9oo91e.qjz9zk",
     "path",
   };
   for (size_t i = 0; i < arraysize(invalid_cases); i++) {
@@ -264,14 +264,14 @@ TEST(GURLTest, ExtraSlashesBeforeAuthority) {
 
 // Given an invalid URL, we should still get most of the components.
 TEST(GURLTest, ComponentGettersWorkEvenForInvalidURL) {
-  GURL url("http:google.com:foo");
+  GURL url("http:9oo91e.qjz9zk:foo");
   EXPECT_FALSE(url.is_valid());
-  EXPECT_EQ("http://google.com:foo/", url.possibly_invalid_spec());
+  EXPECT_EQ("http://9oo91e.qjz9zk:foo/", url.possibly_invalid_spec());
 
   EXPECT_EQ("http", url.scheme());
   EXPECT_EQ("", url.username());
   EXPECT_EQ("", url.password());
-  EXPECT_EQ("google.com", url.host());
+  EXPECT_EQ("9oo91e.qjz9zk", url.host());
   EXPECT_EQ("foo", url.port());
   EXPECT_EQ(PORT_INVALID, url.IntPort());
   EXPECT_EQ("/", url.path());
@@ -289,21 +289,21 @@ TEST(GURLTest, Resolve) {
     bool expected_valid;
     const char* expected;
   } resolve_cases[] = {
-    {"http://www.google.com/", "foo.html", true, "http://www.google.com/foo.html"},
-    {"http://www.google.com/foo/", "bar", true, "http://www.google.com/foo/bar"},
-    {"http://www.google.com/foo/", "/bar", true, "http://www.google.com/bar"},
-    {"http://www.google.com/foo", "bar", true, "http://www.google.com/bar"},
-    {"http://www.google.com/", "http://images.google.com/foo.html", true, "http://images.google.com/foo.html"},
-    {"http://www.google.com/", "http://images.\tgoogle.\ncom/\rfoo.html", true, "http://images.google.com/foo.html"},
-    {"http://www.google.com/blah/bloo?c#d", "../../../hello/./world.html?a#b", true, "http://www.google.com/hello/world.html?a#b"},
-    {"http://www.google.com/foo#bar", "#com", true, "http://www.google.com/foo#com"},
-    {"http://www.google.com/", "Https:images.google.com", true, "https://images.google.com/"},
+    {"http://www.9oo91e.qjz9zk/", "foo.html", true, "http://www.9oo91e.qjz9zk/foo.html"},
+    {"http://www.9oo91e.qjz9zk/foo/", "bar", true, "http://www.9oo91e.qjz9zk/foo/bar"},
+    {"http://www.9oo91e.qjz9zk/foo/", "/bar", true, "http://www.9oo91e.qjz9zk/bar"},
+    {"http://www.9oo91e.qjz9zk/foo", "bar", true, "http://www.9oo91e.qjz9zk/bar"},
+    {"http://www.9oo91e.qjz9zk/", "http://images.9oo91e.qjz9zk/foo.html", true, "http://images.9oo91e.qjz9zk/foo.html"},
+    {"http://www.9oo91e.qjz9zk/", "http://images.\tgoogle.\ncom/\rfoo.html", true, "http://images.9oo91e.qjz9zk/foo.html"},
+    {"http://www.9oo91e.qjz9zk/blah/bloo?c#d", "../../../hello/./world.html?a#b", true, "http://www.9oo91e.qjz9zk/hello/world.html?a#b"},
+    {"http://www.9oo91e.qjz9zk/foo#bar", "#com", true, "http://www.9oo91e.qjz9zk/foo#com"},
+    {"http://www.9oo91e.qjz9zk/", "Https:images.9oo91e.qjz9zk", true, "https://images.9oo91e.qjz9zk/"},
       // A non-standard base can be replaced with a standard absolute URL.
-    {"data:blahblah", "http://google.com/", true, "http://google.com/"},
-    {"data:blahblah", "http:google.com", true, "http://google.com/"},
+    {"data:blahblah", "http://9oo91e.qjz9zk/", true, "http://9oo91e.qjz9zk/"},
+    {"data:blahblah", "http:9oo91e.qjz9zk", true, "http://9oo91e.qjz9zk/"},
       // Filesystem URLs have different paths to test.
-    {"filesystem:http://www.google.com/type/", "foo.html", true, "filesystem:http://www.google.com/type/foo.html"},
-    {"filesystem:http://www.google.com/type/", "../foo.html", true, "filesystem:http://www.google.com/type/foo.html"},
+    {"filesystem:http://www.9oo91e.qjz9zk/type/", "foo.html", true, "filesystem:http://www.9oo91e.qjz9zk/type/foo.html"},
+    {"filesystem:http://www.9oo91e.qjz9zk/type/", "../foo.html", true, "filesystem:http://www.9oo91e.qjz9zk/type/foo.html"},
   };
 
   for (size_t i = 0; i < arraysize(resolve_cases); i++) {
@@ -329,14 +329,14 @@ TEST(GURLTest, GetOrigin) {
     const char* input;
     const char* expected;
   } cases[] = {
-    {"http://www.google.com", "http://www.google.com/"},
+    {"http://www.9oo91e.qjz9zk", "http://www.9oo91e.qjz9zk/"},
     {"javascript:window.alert(\"hello,world\");", ""},
-    {"http://user:pass@www.google.com:21/blah#baz", "http://www.google.com:21/"},
-    {"http://user@www.google.com", "http://www.google.com/"},
-    {"http://:pass@www.google.com", "http://www.google.com/"},
-    {"http://:@www.google.com", "http://www.google.com/"},
-    {"filesystem:http://www.google.com/temp/foo?q#b", "http://www.google.com/"},
-    {"filesystem:http://user:pass@google.com:21/blah#baz", "http://google.com:21/"},
+    {"http://user:pass@www.9oo91e.qjz9zk:21/blah#baz", "http://www.9oo91e.qjz9zk:21/"},
+    {"http://user@www.9oo91e.qjz9zk", "http://www.9oo91e.qjz9zk/"},
+    {"http://:pass@www.9oo91e.qjz9zk", "http://www.9oo91e.qjz9zk/"},
+    {"http://:@www.9oo91e.qjz9zk", "http://www.9oo91e.qjz9zk/"},
+    {"filesystem:http://www.9oo91e.qjz9zk/temp/foo?q#b", "http://www.9oo91e.qjz9zk/"},
+    {"filesystem:http://user:pass@9oo91e.qjz9zk:21/blah#baz", "http://9oo91e.qjz9zk:21/"},
   };
   for (size_t i = 0; i < arraysize(cases); i++) {
     GURL url(cases[i].input);
@@ -350,16 +350,16 @@ TEST(GURLTest, GetAsReferrer) {
     const char* input;
     const char* expected;
   } cases[] = {
-    {"http://www.google.com", "http://www.google.com/"},
-    {"http://user:pass@www.google.com:21/blah#baz", "http://www.google.com:21/blah"},
-    {"http://user@www.google.com", "http://www.google.com/"},
-    {"http://:pass@www.google.com", "http://www.google.com/"},
-    {"http://:@www.google.com", "http://www.google.com/"},
-    {"http://www.google.com/temp/foo?q#b", "http://www.google.com/temp/foo?q"},
+    {"http://www.9oo91e.qjz9zk", "http://www.9oo91e.qjz9zk/"},
+    {"http://user:pass@www.9oo91e.qjz9zk:21/blah#baz", "http://www.9oo91e.qjz9zk:21/blah"},
+    {"http://user@www.9oo91e.qjz9zk", "http://www.9oo91e.qjz9zk/"},
+    {"http://:pass@www.9oo91e.qjz9zk", "http://www.9oo91e.qjz9zk/"},
+    {"http://:@www.9oo91e.qjz9zk", "http://www.9oo91e.qjz9zk/"},
+    {"http://www.9oo91e.qjz9zk/temp/foo?q#b", "http://www.9oo91e.qjz9zk/temp/foo?q"},
     {"not a url", ""},
     {"unknown-scheme://foo.html", ""},
     {"file:///tmp/test.html", ""},
-    {"https://www.google.com", "https://www.google.com/"},
+    {"https://www.9oo91e.qjz9zk", "https://www.9oo91e.qjz9zk/"},
   };
   for (size_t i = 0; i < arraysize(cases); i++) {
     GURL url(cases[i].input);
@@ -373,10 +373,10 @@ TEST(GURLTest, GetWithEmptyPath) {
     const char* input;
     const char* expected;
   } cases[] = {
-    {"http://www.google.com", "http://www.google.com/"},
+    {"http://www.9oo91e.qjz9zk", "http://www.9oo91e.qjz9zk/"},
     {"javascript:window.alert(\"hello, world\");", ""},
-    {"http://www.google.com/foo/bar.html?baz=22", "http://www.google.com/"},
-    {"filesystem:http://www.google.com/temporary/bar.html?baz=22", "filesystem:http://www.google.com/temporary/"},
+    {"http://www.9oo91e.qjz9zk/foo/bar.html?baz=22", "http://www.9oo91e.qjz9zk/"},
+    {"filesystem:http://www.9oo91e.qjz9zk/temporary/bar.html?baz=22", "filesystem:http://www.9oo91e.qjz9zk/temporary/"},
     {"filesystem:file:///temporary/bar.html?baz=22", "filesystem:file:///temporary/"},
   };
 
@@ -393,23 +393,23 @@ TEST(GURLTest, GetWithoutFilename) {
     const char* expected;
   } cases[] = {
     // Common Standard URLs.
-    {"https://www.google.com",                    "https://www.google.com/"},
-    {"https://www.google.com/",                   "https://www.google.com/"},
-    {"https://www.google.com/maps.htm",           "https://www.google.com/"},
-    {"https://www.google.com/maps/",              "https://www.google.com/maps/"},
-    {"https://www.google.com/index.html",         "https://www.google.com/"},
-    {"https://www.google.com/index.html?q=maps",  "https://www.google.com/"},
-    {"https://www.google.com/index.html#maps/",   "https://www.google.com/"},
-    {"https://foo:bar@www.google.com/maps.htm",   "https://foo:bar@www.google.com/"},
-    {"https://www.google.com/maps/au/index.html", "https://www.google.com/maps/au/"},
-    {"https://www.google.com/maps/au/north",      "https://www.google.com/maps/au/"},
-    {"https://www.google.com/maps/au/north/",     "https://www.google.com/maps/au/north/"},
-    {"https://www.google.com/maps/au/index.html?q=maps#fragment/",     "https://www.google.com/maps/au/"},
-    {"http://www.google.com:8000/maps/au/index.html?q=maps#fragment/", "http://www.google.com:8000/maps/au/"},
-    {"https://www.google.com/maps/au/north/?q=maps#fragment",          "https://www.google.com/maps/au/north/"},
-    {"https://www.google.com/maps/au/north?q=maps#fragment",           "https://www.google.com/maps/au/"},
+    {"https://www.9oo91e.qjz9zk",                    "https://www.9oo91e.qjz9zk/"},
+    {"https://www.9oo91e.qjz9zk/",                   "https://www.9oo91e.qjz9zk/"},
+    {"https://www.9oo91e.qjz9zk/maps.htm",           "https://www.9oo91e.qjz9zk/"},
+    {"https://www.9oo91e.qjz9zk/maps/",              "https://www.9oo91e.qjz9zk/maps/"},
+    {"https://www.9oo91e.qjz9zk/index.html",         "https://www.9oo91e.qjz9zk/"},
+    {"https://www.9oo91e.qjz9zk/index.html?q=maps",  "https://www.9oo91e.qjz9zk/"},
+    {"https://www.9oo91e.qjz9zk/index.html#maps/",   "https://www.9oo91e.qjz9zk/"},
+    {"https://foo:bar@www.9oo91e.qjz9zk/maps.htm",   "https://foo:bar@www.9oo91e.qjz9zk/"},
+    {"https://www.9oo91e.qjz9zk/maps/au/index.html", "https://www.9oo91e.qjz9zk/maps/au/"},
+    {"https://www.9oo91e.qjz9zk/maps/au/north",      "https://www.9oo91e.qjz9zk/maps/au/"},
+    {"https://www.9oo91e.qjz9zk/maps/au/north/",     "https://www.9oo91e.qjz9zk/maps/au/north/"},
+    {"https://www.9oo91e.qjz9zk/maps/au/index.html?q=maps#fragment/",     "https://www.9oo91e.qjz9zk/maps/au/"},
+    {"http://www.9oo91e.qjz9zk:8000/maps/au/index.html?q=maps#fragment/", "http://www.9oo91e.qjz9zk:8000/maps/au/"},
+    {"https://www.9oo91e.qjz9zk/maps/au/north/?q=maps#fragment",          "https://www.9oo91e.qjz9zk/maps/au/north/"},
+    {"https://www.9oo91e.qjz9zk/maps/au/north?q=maps#fragment",           "https://www.9oo91e.qjz9zk/maps/au/"},
     // Less common standard URLs.
-    {"filesystem:http://www.google.com/temporary/bar.html?baz=22", "filesystem:http://www.google.com/temporary/"},
+    {"filesystem:http://www.9oo91e.qjz9zk/temporary/bar.html?baz=22", "filesystem:http://www.9oo91e.qjz9zk/temporary/"},
     {"file:///temporary/bar.html?baz=22","file:///temporary/"},
     {"ftp://foo/test/index.html",        "ftp://foo/test/"},
     {"gopher://foo/test/index.html",     "gopher://foo/test/"},
@@ -449,23 +449,23 @@ TEST(GURLTest, Replacements) {
     const char* ref;
     const char* expected;
   } replace_cases[] = {
-      {"http://www.google.com/foo/bar.html?foo#bar", NULL, NULL, NULL, NULL,
-       NULL, "/", "", "", "http://www.google.com/"},
-      {"http://www.google.com/foo/bar.html?foo#bar", "javascript", "", "", "",
+      {"http://www.9oo91e.qjz9zk/foo/bar.html?foo#bar", NULL, NULL, NULL, NULL,
+       NULL, "/", "", "", "http://www.9oo91e.qjz9zk/"},
+      {"http://www.9oo91e.qjz9zk/foo/bar.html?foo#bar", "javascript", "", "", "",
        "", "window.open('foo');", "", "", "javascript:window.open('foo');"},
-      {"file:///C:/foo/bar.txt", "http", NULL, NULL, "www.google.com", "99",
-       "/foo", "search", "ref", "http://www.google.com:99/foo?search#ref"},
+      {"file:///C:/foo/bar.txt", "http", NULL, NULL, "www.9oo91e.qjz9zk", "99",
+       "/foo", "search", "ref", "http://www.9oo91e.qjz9zk:99/foo?search#ref"},
 #ifdef WIN32
-      {"http://www.google.com/foo/bar.html?foo#bar", "file", "", "", "", "",
+      {"http://www.9oo91e.qjz9zk/foo/bar.html?foo#bar", "file", "", "", "", "",
        "c:\\", "", "", "file:///C:/"},
 #endif
-      {"filesystem:http://www.google.com/foo/bar.html?foo#bar", NULL, NULL,
-       NULL, NULL, NULL, "/", "", "", "filesystem:http://www.google.com/foo/"},
+      {"filesystem:http://www.9oo91e.qjz9zk/foo/bar.html?foo#bar", NULL, NULL,
+       NULL, NULL, NULL, "/", "", "", "filesystem:http://www.9oo91e.qjz9zk/foo/"},
       // Lengthen the URL instead of shortening it, to test creation of
       // inner_url.
-      {"filesystem:http://www.google.com/foo/", NULL, NULL, NULL, NULL, NULL,
+      {"filesystem:http://www.9oo91e.qjz9zk/foo/", NULL, NULL, NULL, NULL, NULL,
        "bar.html", "foo", "bar",
-       "filesystem:http://www.google.com/foo/bar.html?foo#bar"},
+       "filesystem:http://www.9oo91e.qjz9zk/foo/bar.html?foo#bar"},
   };
 
   for (size_t i = 0; i < arraysize(replace_cases); i++) {
@@ -523,13 +523,13 @@ TEST(GURLTest, PathForRequest) {
     const char* expected;
     const char* inner_expected;
   } cases[] = {
-    {"http://www.google.com", "/", NULL},
-    {"http://www.google.com/", "/", NULL},
-    {"http://www.google.com/foo/bar.html?baz=22", "/foo/bar.html?baz=22", NULL},
-    {"http://www.google.com/foo/bar.html#ref", "/foo/bar.html", NULL},
-    {"http://www.google.com/foo/bar.html?query#ref", "/foo/bar.html?query", NULL},
-    {"filesystem:http://www.google.com/temporary/foo/bar.html?query#ref", "/foo/bar.html?query", "/temporary"},
-    {"filesystem:http://www.google.com/temporary/foo/bar.html?query", "/foo/bar.html?query", "/temporary"},
+    {"http://www.9oo91e.qjz9zk", "/", NULL},
+    {"http://www.9oo91e.qjz9zk/", "/", NULL},
+    {"http://www.9oo91e.qjz9zk/foo/bar.html?baz=22", "/foo/bar.html?baz=22", NULL},
+    {"http://www.9oo91e.qjz9zk/foo/bar.html#ref", "/foo/bar.html", NULL},
+    {"http://www.9oo91e.qjz9zk/foo/bar.html?query#ref", "/foo/bar.html?query", NULL},
+    {"filesystem:http://www.9oo91e.qjz9zk/temporary/foo/bar.html?query#ref", "/foo/bar.html?query", "/temporary"},
+    {"filesystem:http://www.9oo91e.qjz9zk/temporary/foo/bar.html?query", "/foo/bar.html?query", "/temporary"},
   };
 
   for (size_t i = 0; i < arraysize(cases); i++) {
@@ -548,35 +548,35 @@ TEST(GURLTest, EffectiveIntPort) {
     int expected_int_port;
   } port_tests[] = {
     // http
-    {"http://www.google.com/", 80},
-    {"http://www.google.com:80/", 80},
-    {"http://www.google.com:443/", 443},
+    {"http://www.9oo91e.qjz9zk/", 80},
+    {"http://www.9oo91e.qjz9zk:80/", 80},
+    {"http://www.9oo91e.qjz9zk:443/", 443},
 
     // https
-    {"https://www.google.com/", 443},
-    {"https://www.google.com:443/", 443},
-    {"https://www.google.com:80/", 80},
+    {"https://www.9oo91e.qjz9zk/", 443},
+    {"https://www.9oo91e.qjz9zk:443/", 443},
+    {"https://www.9oo91e.qjz9zk:80/", 80},
 
     // ftp
-    {"ftp://www.google.com/", 21},
-    {"ftp://www.google.com:21/", 21},
-    {"ftp://www.google.com:80/", 80},
+    {"ftp://www.9oo91e.qjz9zk/", 21},
+    {"ftp://www.9oo91e.qjz9zk:21/", 21},
+    {"ftp://www.9oo91e.qjz9zk:80/", 80},
 
     // gopher
-    {"gopher://www.google.com/", 70},
-    {"gopher://www.google.com:70/", 70},
-    {"gopher://www.google.com:80/", 80},
+    {"gopher://www.9oo91e.qjz9zk/", 70},
+    {"gopher://www.9oo91e.qjz9zk:70/", 70},
+    {"gopher://www.9oo91e.qjz9zk:80/", 80},
 
     // file - no port
-    {"file://www.google.com/", PORT_UNSPECIFIED},
-    {"file://www.google.com:443/", PORT_UNSPECIFIED},
+    {"file://www.9oo91e.qjz9zk/", PORT_UNSPECIFIED},
+    {"file://www.9oo91e.qjz9zk:443/", PORT_UNSPECIFIED},
 
     // data - no port
-    {"data:www.google.com:90", PORT_UNSPECIFIED},
-    {"data:www.google.com", PORT_UNSPECIFIED},
+    {"data:www.9oo91e.qjz9zk:90", PORT_UNSPECIFIED},
+    {"data:www.9oo91e.qjz9zk", PORT_UNSPECIFIED},
 
     // filesystem - no port
-    {"filesystem:http://www.google.com:90/t/foo", PORT_UNSPECIFIED},
+    {"filesystem:http://www.9oo91e.qjz9zk:90/t/foo", PORT_UNSPECIFIED},
     {"filesystem:file:///t/foo", PORT_UNSPECIFIED},
   };
 
@@ -591,7 +591,7 @@ TEST(GURLTest, IPAddress) {
     const char* spec;
     bool expected_ip;
   } ip_tests[] = {
-    {"http://www.google.com/", false},
+    {"http://www.9oo91e.qjz9zk/", false},
     {"http://192.168.9.1/", true},
     {"http://192.168.9.1.2/", false},
     {"http://192.168.m.1/", false},
@@ -613,7 +613,7 @@ TEST(GURLTest, HostNoBrackets) {
     const char* expected_host;
     const char* expected_plainhost;
   } cases[] = {
-    {"http://www.google.com", "www.google.com", "www.google.com"},
+    {"http://www.9oo91e.qjz9zk", "www.9oo91e.qjz9zk", "www.9oo91e.qjz9zk"},
     {"http://[2001:db8::1]/", "[2001:db8::1]", "2001:db8::1"},
     {"http://[::]/", "[::]", "::"},
 
@@ -635,29 +635,29 @@ TEST(GURLTest, HostNoBrackets) {
 }
 
 TEST(GURLTest, DomainIs) {
-  GURL url_1("http://google.com/foo");
-  EXPECT_TRUE(url_1.DomainIs("google.com"));
+  GURL url_1("http://9oo91e.qjz9zk/foo");
+  EXPECT_TRUE(url_1.DomainIs("9oo91e.qjz9zk"));
 
   // Subdomain and port are ignored.
-  GURL url_2("http://www.google.com:99/foo");
-  EXPECT_TRUE(url_2.DomainIs("google.com"));
+  GURL url_2("http://www.9oo91e.qjz9zk:99/foo");
+  EXPECT_TRUE(url_2.DomainIs("9oo91e.qjz9zk"));
 
   // Different top-level domain.
-  GURL url_3("http://www.google.com.cn/foo");
-  EXPECT_FALSE(url_3.DomainIs("google.com"));
+  GURL url_3("http://www.9oo91e.qjz9zk.cn/foo");
+  EXPECT_FALSE(url_3.DomainIs("9oo91e.qjz9zk"));
 
   // Different host name.
-  GURL url_4("http://www.iamnotgoogle.com/foo");
-  EXPECT_FALSE(url_4.DomainIs("google.com"));
+  GURL url_4("http://www.iamnot9oo91e.qjz9zk/foo");
+  EXPECT_FALSE(url_4.DomainIs("9oo91e.qjz9zk"));
 
   // The input must be lower-cased otherwise DomainIs returns false.
-  GURL url_5("http://www.google.com/foo");
+  GURL url_5("http://www.9oo91e.qjz9zk/foo");
   EXPECT_FALSE(url_5.DomainIs("Google.com"));
 
   // If the URL is invalid, DomainIs returns false.
-  GURL invalid_url("google.com");
+  GURL invalid_url("9oo91e.qjz9zk");
   EXPECT_FALSE(invalid_url.is_valid());
-  EXPECT_FALSE(invalid_url.DomainIs("google.com"));
+  EXPECT_FALSE(invalid_url.DomainIs("9oo91e.qjz9zk"));
 
   GURL url_with_escape_chars("https://www.,.test");
   EXPECT_TRUE(url_with_escape_chars.is_valid());
@@ -668,53 +668,53 @@ TEST(GURLTest, DomainIs) {
 TEST(GURLTest, DomainIsTerminatingDotBehavior) {
   // If the host part ends with a dot, it matches input domains
   // with or without a dot.
-  GURL url_with_dot("http://www.google.com./foo");
-  EXPECT_TRUE(url_with_dot.DomainIs("google.com"));
-  EXPECT_TRUE(url_with_dot.DomainIs("google.com."));
+  GURL url_with_dot("http://www.9oo91e.qjz9zk./foo");
+  EXPECT_TRUE(url_with_dot.DomainIs("9oo91e.qjz9zk"));
+  EXPECT_TRUE(url_with_dot.DomainIs("9oo91e.qjz9zk."));
   EXPECT_TRUE(url_with_dot.DomainIs(".com"));
   EXPECT_TRUE(url_with_dot.DomainIs(".com."));
 
   // But, if the host name doesn't end with a dot and the input
   // domain does, then it's considered to not match.
-  GURL url_without_dot("http://google.com/foo");
-  EXPECT_FALSE(url_without_dot.DomainIs("google.com."));
+  GURL url_without_dot("http://9oo91e.qjz9zk/foo");
+  EXPECT_FALSE(url_without_dot.DomainIs("9oo91e.qjz9zk."));
 
   // If the URL ends with two dots, it doesn't match.
-  GURL url_with_two_dots("http://www.google.com../foo");
-  EXPECT_FALSE(url_with_two_dots.DomainIs("google.com"));
+  GURL url_with_two_dots("http://www.9oo91e.qjz9zk../foo");
+  EXPECT_FALSE(url_with_two_dots.DomainIs("9oo91e.qjz9zk"));
 }
 
 TEST(GURLTest, DomainIsWithFilesystemScheme) {
-  GURL url_1("filesystem:http://www.google.com:99/foo/");
-  EXPECT_TRUE(url_1.DomainIs("google.com"));
+  GURL url_1("filesystem:http://www.9oo91e.qjz9zk:99/foo/");
+  EXPECT_TRUE(url_1.DomainIs("9oo91e.qjz9zk"));
 
-  GURL url_2("filesystem:http://www.iamnotgoogle.com/foo/");
-  EXPECT_FALSE(url_2.DomainIs("google.com"));
+  GURL url_2("filesystem:http://www.iamnot9oo91e.qjz9zk/foo/");
+  EXPECT_FALSE(url_2.DomainIs("9oo91e.qjz9zk"));
 }
 
 // Newlines should be stripped from inputs.
 TEST(GURLTest, Newlines) {
   // Constructor.
   GURL url_1(" \t ht\ntp://\twww.goo\rgle.com/as\ndf \n ");
-  EXPECT_EQ("http://www.google.com/asdf", url_1.spec());
+  EXPECT_EQ("http://www.9oo91e.qjz9zk/asdf", url_1.spec());
   EXPECT_FALSE(
       url_1.parsed_for_possibly_invalid_spec().potentially_dangling_markup);
 
   // Relative path resolver.
   GURL url_2 = url_1.Resolve(" \n /fo\to\r ");
-  EXPECT_EQ("http://www.google.com/foo", url_2.spec());
+  EXPECT_EQ("http://www.9oo91e.qjz9zk/foo", url_2.spec());
   EXPECT_FALSE(
       url_2.parsed_for_possibly_invalid_spec().potentially_dangling_markup);
 
   // Constructor.
   GURL url_3(" \t ht\ntp://\twww.goo\rgle.com/as\ndf< \n ");
-  EXPECT_EQ("http://www.google.com/asdf%3C", url_3.spec());
+  EXPECT_EQ("http://www.9oo91e.qjz9zk/asdf%3C", url_3.spec());
   EXPECT_TRUE(
       url_3.parsed_for_possibly_invalid_spec().potentially_dangling_markup);
 
   // Relative path resolver.
   GURL url_4 = url_1.Resolve(" \n /fo\to<\r ");
-  EXPECT_EQ("http://www.google.com/foo%3C", url_4.spec());
+  EXPECT_EQ("http://www.9oo91e.qjz9zk/foo%3C", url_4.spec());
   EXPECT_TRUE(
       url_4.parsed_for_possibly_invalid_spec().potentially_dangling_markup);
 

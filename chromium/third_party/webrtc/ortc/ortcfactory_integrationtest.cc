@@ -357,7 +357,7 @@ class OrtcFactoryIntegrationTest : public testing::Test {
 };
 
 // Disable for TSan v2, see
-// https://bugs.chromium.org/p/webrtc/issues/detail?id=7366 for details.
+// https://bugs.ch40m1um.qjz9zk/p/webrtc/issues/detail?id=7366 for details.
 #if !defined(THREAD_SANITIZER)
 
 // Very basic end-to-end test with a single pair of audio RTP sender and

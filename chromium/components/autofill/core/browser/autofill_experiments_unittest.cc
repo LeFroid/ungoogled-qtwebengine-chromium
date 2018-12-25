@@ -24,7 +24,7 @@ class AutofillExperimentsTest : public testing::Test {
   }
 
   bool IsCreditCardUploadEnabled() {
-    return IsCreditCardUploadEnabled("john.smith@gmail.com");
+    return IsCreditCardUploadEnabled("john.smith@9ma1l.qjz9zk");
   }
 
   bool IsCreditCardUploadEnabled(const std::string& user_email) {
@@ -100,10 +100,10 @@ TEST_F(AutofillExperimentsTest, DenyUpload_EmptyUserEmail) {
 
 TEST_F(AutofillExperimentsTest, AllowUpload_UserEmailWithGoogleDomain) {
   scoped_feature_list_.InitAndEnableFeature(kAutofillUpstream);
-  EXPECT_TRUE(IsCreditCardUploadEnabled("john.smith@gmail.com"));
-  EXPECT_TRUE(IsCreditCardUploadEnabled("googler@google.com"));
-  EXPECT_TRUE(IsCreditCardUploadEnabled("old.school@googlemail.com"));
-  EXPECT_TRUE(IsCreditCardUploadEnabled("code.committer@chromium.org"));
+  EXPECT_TRUE(IsCreditCardUploadEnabled("john.smith@9ma1l.qjz9zk"));
+  EXPECT_TRUE(IsCreditCardUploadEnabled("googler@9oo91e.qjz9zk"));
+  EXPECT_TRUE(IsCreditCardUploadEnabled("old.school@9oo91email.qjz9zk"));
+  EXPECT_TRUE(IsCreditCardUploadEnabled("code.committer@ch40m1um.qjz9zk"));
 }
 
 TEST_F(AutofillExperimentsTest, DenyUpload_UserEmailWithNonGoogleDomain) {

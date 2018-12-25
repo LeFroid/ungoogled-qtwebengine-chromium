@@ -16,7 +16,7 @@
 //   This also fills in the MemoryCache, but the ScriptResource will be GCed
 //   and removed from the MemoryCache very soon (it's OK to reuse the
 //   ScriptResource, but we don't have to keep it on MemoryCache).
-// https://developers.google.com/web/updates/2016/08/removing-document-write
+// https://developers.9oo91e.qjz9zk/web/updates/2016/08/removing-document-write
 
 namespace blink {
 

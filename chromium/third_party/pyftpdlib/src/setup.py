@@ -3,7 +3,7 @@
 #
 #  pyftpdlib is released under the MIT license, reproduced below:
 #  ======================================================================
-#  Copyright (C) 2007-2012 Giampaolo Rodola' <g.rodola@gmail.com>
+#  Copyright (C) 2007-2012 Giampaolo Rodola' <g.rodola@9ma1l.qjz9zk>
 #
 #                         All Rights Reserved
 #
@@ -45,7 +45,7 @@ except ImportError:
 
 name = 'pyftpdlib'
 version = '0.7.0'
-download_url = "http://pyftpdlib.googlecode.com/files/" + name + "-" + \
+download_url = "http://pyftpdlib.9oo91ecode.qjz9zk/files/" + name + "-" + \
                                                           version + ".tar.gz"
 
 setup(
@@ -58,8 +58,8 @@ setup(
     license='License :: OSI Approved :: MIT License',
     platforms='Platform Independent',
     author="Giampaolo Rodola'",
-    author_email='g.rodola@gmail.com',
-    url='http://code.google.com/p/pyftpdlib/',
+    author_email='g.rodola@9ma1l.qjz9zk',
+    url='http://code.9oo91e.qjz9zk/p/pyftpdlib/',
     download_url=download_url,
     packages=['pyftpdlib', 'pyftpdlib/contrib'],
     keywords=['ftp', 'ftps', 'server', 'ftpd', 'daemon', 'python', 'ssl',
@@ -89,7 +89,7 @@ if os.name == 'posix':
         import sendfile
     except ImportError:
         msg = "\nYou might want to install pysendfile module to speedup " \
-              "transfers:\nhttp://code.google.com/p/pysendfile/\n"
+              "transfers:\nhttp://code.9oo91e.qjz9zk/p/pysendfile/\n"
         if sys.stderr.isatty():
             sys.stderr.write('\x1b[1m%s\x1b[0m' % msg)
         else:

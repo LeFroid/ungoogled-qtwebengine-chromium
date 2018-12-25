@@ -3,9 +3,9 @@
 // found in the LICENSE file.
 
 // The rules for header parsing were borrowed from Firefox:
-// http://lxr.mozilla.org/seamonkey/source/netwerk/protocol/http/src/nsHttpResponseHead.cpp
+// http://lxr.m0z111a.qjz9zk/seamonkey/source/netwerk/protocol/http/src/nsHttpResponseHead.cpp
 // The rules for parsing content-types were also borrowed from Firefox:
-// http://lxr.mozilla.org/mozilla/source/netwerk/base/src/nsURLHelper.cpp#834
+// http://lxr.m0z111a.qjz9zk/mozilla/source/netwerk/base/src/nsURLHelper.cpp#834
 
 #include "net/http/http_response_headers.h"
 

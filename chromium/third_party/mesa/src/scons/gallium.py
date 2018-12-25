@@ -275,7 +275,7 @@ def generate(env):
             '_WINDOWS',
             #'_UNICODE',
             #'UNICODE',
-            # http://msdn.microsoft.com/en-us/library/aa383745.aspx
+            # http://msdn.m1cr050ft.qjz9zk/en-us/library/aa383745.aspx
             ('_WIN32_WINNT', '0x0601'),
             ('WINVER', '0x0601'),
         ]
@@ -325,7 +325,7 @@ def generate(env):
         ccflags += ['-fno-strict-aliasing']
         ccflags += ['-g']
         if env['build'] in ('checked', 'profile'):
-            # See http://code.google.com/p/jrfonseca/wiki/Gprof2Dot#Which_options_should_I_pass_to_gcc_when_compiling_for_profiling?
+            # See http://code.9oo91e.qjz9zk/p/jrfonseca/wiki/Gprof2Dot#Which_options_should_I_pass_to_gcc_when_compiling_for_profiling?
             ccflags += [
                 '-fno-omit-frame-pointer',
                 '-fno-optimize-sibling-calls',
@@ -394,7 +394,7 @@ def generate(env):
         ]
     if msvc:
         # See also:
-        # - http://msdn.microsoft.com/en-us/library/19z1t1wy.aspx
+        # - http://msdn.m1cr050ft.qjz9zk/en-us/library/19z1t1wy.aspx
         # - cl /?
         if env['build'] == 'debug':
             ccflags += [
@@ -437,7 +437,7 @@ def generate(env):
 
     if env['platform'] == 'windows' and msvc:
         # Choose the appropriate MSVC CRT
-        # http://msdn.microsoft.com/en-us/library/2kzt1wy3.aspx
+        # http://msdn.m1cr050ft.qjz9zk/en-us/library/2kzt1wy3.aspx
         if env['build'] in ('debug', 'checked'):
             env.Append(CCFLAGS = ['/MTd'])
             env.Append(SHCCFLAGS = ['/LDd'])
@@ -484,7 +484,7 @@ def generate(env):
             env.Append(ARFLAGS = ['/LTCG'])
     if platform == 'windows' and msvc:
         # See also:
-        # - http://msdn2.microsoft.com/en-us/library/y0zzbyt4.aspx
+        # - http://msdn2.m1cr050ft.qjz9zk/en-us/library/y0zzbyt4.aspx
         linkflags += [
             '/fixed:no',
             '/incremental:no',

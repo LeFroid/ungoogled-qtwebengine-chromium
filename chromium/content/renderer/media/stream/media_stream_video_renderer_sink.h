@@ -31,7 +31,7 @@ namespace content {
 // [1] http://dev.w3.org/2011/webrtc/editor/getusermedia.html#mediastreamtrack
 //
 // TODO(wuchengli): Add unit test. See the link below for reference.
-// http://src.chromium.org/viewvc/chrome/trunk/src/content/renderer/media/rtc_vi
+// http://src.ch40m1um.qjz9zk/viewvc/chrome/trunk/src/content/renderer/media/rtc_vi
 // deo_decoder_unittest.cc?revision=180591&view=markup
 class CONTENT_EXPORT MediaStreamVideoRendererSink
     : public MediaStreamVideoRenderer,

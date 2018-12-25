@@ -5,7 +5,7 @@
 
 """Compress and upload Mac toolchain files.
 
-Stored in in https://pantheon.corp.google.com/storage/browser/chrome-mac-sdk/.
+Stored in in https://pantheon.corp.9oo91e.qjz9zk/storage/browser/chrome-mac-sdk/.
 """
 
 import argparse

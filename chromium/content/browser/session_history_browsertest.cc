@@ -485,7 +485,7 @@ IN_PROC_BROWSER_TEST_F(SessionHistoryScrollAnchorTest,
   EXPECT_EQ("Default Title", GetTabTitle());
 }
 
-// http://code.google.com/p/chromium/issues/detail?id=56267
+// http://code.9oo91e.qjz9zk/p/chromium/issues/detail?id=56267
 IN_PROC_BROWSER_TEST_F(SessionHistoryTest, HistoryLength) {
   int length;
   ASSERT_TRUE(ExecuteScriptAndExtractInt(

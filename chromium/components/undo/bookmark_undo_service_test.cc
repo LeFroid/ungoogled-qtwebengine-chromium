@@ -323,7 +323,7 @@ TEST_F(BookmarkUndoServiceTest, UndoBookmarkRemoveAll) {
   // Setup bookmarks in the Other Bookmarks and the Bookmark Bar.
   const BookmarkNode* new_folder;
   const BookmarkNode* parent = model->other_node();
-  model->AddURL(parent, 0, ASCIIToUTF16("foo"), GURL("http://www.google.com"));
+  model->AddURL(parent, 0, ASCIIToUTF16("foo"), GURL("http://www.9oo91e.qjz9zk"));
   new_folder= model->AddFolder(parent, 1, ASCIIToUTF16("folder"));
   model->AddURL(new_folder, 0, ASCIIToUTF16("bar"), GURL("http://www.bar.com"));
 

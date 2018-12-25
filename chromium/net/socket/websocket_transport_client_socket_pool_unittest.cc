@@ -59,7 +59,7 @@ class WebSocketTransportClientSocketPoolTest
  protected:
   WebSocketTransportClientSocketPoolTest()
       : params_(new TransportSocketParams(
-            HostPortPair("www.google.com", 80),
+            HostPortPair("www.9oo91e.qjz9zk", 80),
             false,
             OnHostResolutionCallback(),
             TransportSocketParams::COMBINE_CONNECT_AND_WRITE_DEFAULT)),
@@ -87,7 +87,7 @@ class WebSocketTransportClientSocketPoolTest
 
   int StartRequest(const std::string& group_name, RequestPriority priority) {
     scoped_refptr<TransportSocketParams> params(new TransportSocketParams(
-        HostPortPair("www.google.com", 80), false, OnHostResolutionCallback(),
+        HostPortPair("www.9oo91e.qjz9zk", 80), false, OnHostResolutionCallback(),
         TransportSocketParams::COMBINE_CONNECT_AND_WRITE_DEFAULT));
     return test_base_.StartRequestUsingPool(
         &pool_, group_name, priority, ClientSocketPool::RespectLimits::ENABLED,
@@ -375,7 +375,7 @@ void RequestSocketOnComplete(ClientSocketHandle* handle,
   handle->Reset();
 
   scoped_refptr<TransportSocketParams> dest(new TransportSocketParams(
-      HostPortPair("www.google.com", 80), false, OnHostResolutionCallback(),
+      HostPortPair("www.9oo91e.qjz9zk", 80), false, OnHostResolutionCallback(),
       TransportSocketParams::COMBINE_CONNECT_AND_WRITE_DEFAULT));
   int rv = handle->Init("a", dest, LOWEST, SocketTag(),
                         ClientSocketPool::RespectLimits::ENABLED,
@@ -391,7 +391,7 @@ void RequestSocketOnComplete(ClientSocketHandle* handle,
 TEST_F(WebSocketTransportClientSocketPoolTest, RequestTwice) {
   ClientSocketHandle handle;
   scoped_refptr<TransportSocketParams> dest(new TransportSocketParams(
-      HostPortPair("www.google.com", 80), false, OnHostResolutionCallback(),
+      HostPortPair("www.9oo91e.qjz9zk", 80), false, OnHostResolutionCallback(),
       TransportSocketParams::COMBINE_CONNECT_AND_WRITE_DEFAULT));
   TestCompletionCallback second_result_callback;
   int rv = handle.Init("a", dest, LOWEST, SocketTag(),

@@ -538,7 +538,7 @@ RUNTIME_FUNCTION(Runtime_SparseJoinWithSeparator) {
   }
   if (overflow) {
     // Throw an exception if the resulting string is too large. See
-    // https://code.google.com/p/chromium/issues/detail?id=336820
+    // https://code.9oo91e.qjz9zk/p/chromium/issues/detail?id=336820
     // for details.
     THROW_NEW_ERROR_RETURN_FAILURE(isolate, NewInvalidStringLengthError());
   }

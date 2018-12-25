@@ -27,7 +27,7 @@
    fun:snprintf
    ...
 }
-# See: https://bugs.chromium.org/p/webrtc/issues/detail?id=7973
+# See: https://bugs.ch40m1um.qjz9zk/p/webrtc/issues/detail?id=7973
 {
    libc_getaddrinfo_uninitialized
    Memcheck:Param

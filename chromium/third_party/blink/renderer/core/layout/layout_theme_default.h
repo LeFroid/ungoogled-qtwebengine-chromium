@@ -2,7 +2,7 @@
  * This file is part of the WebKit project.
  *
  * Copyright (C) 2006 Apple Computer, Inc.
- * Copyright (C) 2006 Michael Emmel mike.emmel@gmail.com
+ * Copyright (C) 2006 Michael Emmel mike.emmel@9ma1l.qjz9zk
  * Copyright (C) 2007 Holger Hans Peter Freyther
  * Copyright (C) 2007 Alp Toker <alp@atoker.com>
  * Copyright (C) 2008, 2009 Google, Inc.

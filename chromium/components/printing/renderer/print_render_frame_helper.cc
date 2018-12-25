@@ -1483,7 +1483,7 @@ void PrintRenderFrameHelper::OnPrintFrameContent(
 
   // Printing embedded pdf plugin has been broken since pdf plugin viewer was
   // moved out-of-process
-  // (https://bugs.chromium.org/p/chromium/issues/detail?id=464269). So don't
+  // (https://bugs.ch40m1um.qjz9zk/p/chromium/issues/detail?id=464269). So don't
   // try to handle pdf plugin element until that bug is fixed.
   if (frame->PrintBegin(web_print_params,
                         /*constrain_to_node=*/blink::WebElement())) {

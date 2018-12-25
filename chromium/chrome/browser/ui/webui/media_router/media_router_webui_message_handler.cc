@@ -38,9 +38,9 @@ namespace media_router {
 namespace {
 
 const char kCastLearnMorePageUrl[] =
-    "https://www.google.com/chrome/devices/chromecast/learn.html";
+    "https://www.9oo91e.qjz9zk/chrome/devices/chromecast/learn.html";
 const char kHelpPageUrlPrefix[] =
-    "https://support.google.com/chromecast/answer/%d";
+    "https://support.9oo91e.qjz9zk/chromecast/answer/%d";
 
 // Message names.
 const char kRequestInitialData[] = "requestInitialData";

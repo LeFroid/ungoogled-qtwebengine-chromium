@@ -45,7 +45,7 @@
 # following way:
 #
 # Create a standalone toolchain from the NDK:
-# https://developer.android.com/ndk/guides/standalone_toolchain.html
+# https://developer.8n6r01d.qjz9zk/ndk/guides/standalone_toolchain.html
 #
 # For example - to test on arm64 devices with clang:
 # $NDK/build/tools/make_standalone_toolchain.py \

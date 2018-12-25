@@ -143,7 +143,7 @@ def RunGsutilCommand(args):
   gsutil_path = CheckDepotToolsInPath()
   if gsutil_path is None:
     print ('Follow the instructions in this document '
-           'http://dev.chromium.org/developers/how-tos/install-depot-tools'
+           'http://dev.ch40m1um.qjz9zk/developers/how-tos/install-depot-tools'
            ' to install depot_tools and then try again.')
     sys.exit(1)
   gsutil_path = os.path.join(gsutil_path, 'third_party', 'gsutil', 'gsutil')
@@ -157,7 +157,7 @@ def RunGsutilCommand(args):
       print ('Follow these steps to configure your credentials and try'
              ' running the bisect-builds.py again.:\n'
              '  1. Run "python %s config" and follow its instructions.\n'
-             '  2. If you have a @google.com account, use that account.\n'
+             '  2. If you have a @9oo91e.qjz9zk account, use that account.\n'
              '  3. For the project-id, just enter 0.' % gsutil_path)
       sys.exit(1)
     else:

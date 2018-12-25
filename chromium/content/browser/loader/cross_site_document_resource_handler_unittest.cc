@@ -228,7 +228,7 @@ const TestScenario kScenarios[] = {
         false,                                  // include_no_sniff_header
         false,                                  // simulate_range_response
         AccessControlAllowOriginHeader::kOmit,  // cors_response
-        {")]}',\n[true, true, false, \"user@chromium.org\"]"},  // packets
+        {")]}',\n[true, true, false, \"user@ch40m1um.qjz9zk\"]"},  // packets
         Verdict::kAllow,                                        // verdict
         kVerdictPacketForHeadersBasedVerdict,  // verdict_packet
     },
@@ -244,7 +244,7 @@ const TestScenario kScenarios[] = {
         false,                                  // include_no_sniff_header
         false,                                  // simulate_range_response
         AccessControlAllowOriginHeader::kOmit,  // cors_response
-        {")]}'\n[true, true, false, \"user@chromium.org\"]"},  // packets
+        {")]}'\n[true, true, false, \"user@ch40m1um.qjz9zk\"]"},  // packets
         Verdict::kAllow,                                       // verdict
         kVerdictPacketForHeadersBasedVerdict,                  // verdict_packet
     },
@@ -949,7 +949,7 @@ const TestScenario kScenarios[] = {
         false,                                  // include_no_sniff_header
         false,                                  // simulate_range_response
         AccessControlAllowOriginHeader::kOmit,  // cors_response
-        {")]", "}'\n[true, true, false, \"user@chromium.org\"]"},  // packets
+        {")]", "}'\n[true, true, false, \"user@ch40m1um.qjz9zk\"]"},  // packets
         Verdict::kBlock,                                           // verdict
         1,  // verdict_packet
     },
@@ -965,7 +965,7 @@ const TestScenario kScenarios[] = {
         true,                                   // include_no_sniff_header
         false,                                  // simulate_range_response
         AccessControlAllowOriginHeader::kOmit,  // cors_response
-        {")]", "}'\n[true, true, false, \"user@chromium.org\"]"},  // packets
+        {")]", "}'\n[true, true, false, \"user@ch40m1um.qjz9zk\"]"},  // packets
         Verdict::kBlock,                                           // verdict
         1,  // verdict_packet
     },
@@ -981,7 +981,7 @@ const TestScenario kScenarios[] = {
         false,                                  // include_no_sniff_header
         false,                                  // simulate_range_response
         AccessControlAllowOriginHeader::kOmit,  // cors_response
-        {"for(;;)", ";[true, true, false, \"user@chromium.org\"]"},  // packets
+        {"for(;;)", ";[true, true, false, \"user@ch40m1um.qjz9zk\"]"},  // packets
         Verdict::kBlock,                                             // verdict
         1,  // verdict_packet
     },
@@ -997,7 +997,7 @@ const TestScenario kScenarios[] = {
         true,                                   // include_no_sniff_header
         false,                                  // simulate_range_response
         AccessControlAllowOriginHeader::kOmit,  // cors_response
-        {")]", "}'\n[true, true, false, \"user@chromium.org\"]"},  // packets
+        {")]", "}'\n[true, true, false, \"user@ch40m1um.qjz9zk\"]"},  // packets
         Verdict::kBlock,                                           // verdict
         kVerdictPacketForHeadersBasedVerdict,  // verdict_packet
     },

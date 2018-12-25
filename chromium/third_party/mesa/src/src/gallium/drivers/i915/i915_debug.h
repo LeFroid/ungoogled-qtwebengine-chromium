@@ -26,7 +26,7 @@
  **************************************************************************/
 
 /* Authors:  Keith Whitwell <keith@tungstengraphics.com>
- *           Jakob Bornecrantz <wallbraker@gmail.com>
+ *           Jakob Bornecrantz <wallbraker@9ma1l.qjz9zk>
  */
 
 #ifndef I915_DEBUG_H

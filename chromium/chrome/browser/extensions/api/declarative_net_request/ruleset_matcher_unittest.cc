@@ -61,7 +61,7 @@ class RulesetMatcherTest : public DNRTestBase {
 // Tests a simple blocking rule.
 TEST_P(RulesetMatcherTest, ShouldBlockRequest) {
   TestRule rule = CreateGenericRule();
-  rule.condition->url_filter = std::string("google.com");
+  rule.condition->url_filter = std::string("9oo91e.qjz9zk");
 
   ASSERT_NO_FATAL_FAILURE(LoadExtensionWithRules({rule}));
 
@@ -77,7 +77,7 @@ TEST_P(RulesetMatcherTest, ShouldBlockRequest) {
                 expected_checksum, &matcher));
 
   EXPECT_TRUE(matcher->ShouldBlockRequest(
-      GURL("http://google.com"), url::Origin(),
+      GURL("http://9oo91e.qjz9zk"), url::Origin(),
       url_pattern_index::flat::ElementType_SUBDOCUMENT, true));
   EXPECT_FALSE(matcher->ShouldBlockRequest(
       GURL("http://yahoo.com"), url::Origin(),
@@ -87,7 +87,7 @@ TEST_P(RulesetMatcherTest, ShouldBlockRequest) {
 // Tests a simple redirect rule.
 TEST_P(RulesetMatcherTest, ShouldRedirectRequest) {
   TestRule rule = CreateGenericRule();
-  rule.condition->url_filter = std::string("google.com");
+  rule.condition->url_filter = std::string("9oo91e.qjz9zk");
   rule.priority = kMinValidPriority;
   rule.action->type = std::string("redirect");
   rule.action->redirect_url = std::string("http://yahoo.com");
@@ -107,7 +107,7 @@ TEST_P(RulesetMatcherTest, ShouldRedirectRequest) {
 
   GURL redirect_url;
   EXPECT_TRUE(matcher->ShouldRedirectRequest(
-      GURL("http://google.com"), url::Origin(),
+      GURL("http://9oo91e.qjz9zk"), url::Origin(),
       url_pattern_index::flat::ElementType_SUBDOCUMENT, true, &redirect_url));
   EXPECT_EQ(GURL("http://yahoo.com"), redirect_url);
 

@@ -49,9 +49,9 @@ TEST_F(DNSUtilTest, DNSDomainFromDot) {
 
   EXPECT_TRUE(DNSDomainFromDot("com", &out));
   EXPECT_EQ(out, IncludeNUL("\003com"));
-  EXPECT_TRUE(DNSDomainFromDot("google.com", &out));
+  EXPECT_TRUE(DNSDomainFromDot("9oo91e.qjz9zk", &out));
   EXPECT_EQ(out, IncludeNUL("\x006google\003com"));
-  EXPECT_TRUE(DNSDomainFromDot("www.google.com", &out));
+  EXPECT_TRUE(DNSDomainFromDot("www.9oo91e.qjz9zk", &out));
   EXPECT_EQ(out, IncludeNUL("\003www\006google\003com"));
 
   // Label is 63 chars: still valid
@@ -70,10 +70,10 @@ TEST_F(DNSUtilTest, DNSDomainFromDot) {
 
   // Zero length labels should fail, except that one trailing dot is allowed
   // (to disable suffix search):
-  EXPECT_FALSE(DNSDomainFromDot(".google.com", &out));
-  EXPECT_FALSE(DNSDomainFromDot("www..google.com", &out));
+  EXPECT_FALSE(DNSDomainFromDot(".9oo91e.qjz9zk", &out));
+  EXPECT_FALSE(DNSDomainFromDot("www..9oo91e.qjz9zk", &out));
 
-  EXPECT_TRUE(DNSDomainFromDot("www.google.com.", &out));
+  EXPECT_TRUE(DNSDomainFromDot("www.9oo91e.qjz9zk.", &out));
   EXPECT_EQ(out, IncludeNUL("\003www\006google\003com"));
 }
 

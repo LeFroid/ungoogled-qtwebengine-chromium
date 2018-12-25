@@ -61,7 +61,7 @@ TEST_F(AnchorElementMetricsTest, IsUrlIncrementedByOne) {
   EXPECT_FALSE(
       IsIncrementedByOne("http://example.com/1", "https://example.com/2"));
   EXPECT_FALSE(
-      IsIncrementedByOne("http://example.com/1", "http://google.com/2"));
+      IsIncrementedByOne("http://example.com/1", "http://9oo91e.qjz9zk/2"));
   EXPECT_FALSE(
       IsIncrementedByOne("http://example.com/p1", "http://example.com/p1"));
   EXPECT_FALSE(
@@ -76,7 +76,7 @@ TEST_F(AnchorElementMetricsTest, FinchControl) {
 
   SimRequest resource("https://example.com/", "text/html");
   LoadURL("https://example.com/");
-  resource.Complete("<a id='anchor' href='https://google.com/'>google</a>");
+  resource.Complete("<a id='anchor' href='https://9oo91e.qjz9zk/'>google</a>");
   HTMLAnchorElement* anchor_element =
       ToHTMLAnchorElement(GetDocument().getElementById("anchor"));
 

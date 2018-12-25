@@ -2,7 +2,7 @@ This folder contains clang-format scripts. The binaries will be automatically
 downloaded from Google Storage by gclient runhooks for the current platform.
 
 For a walkthrough on how to maintain these binaries:
-  https://chromium.googlesource.com/chromium/src/+/master/docs/updating_clang_format_binaries.md
+  https://chromium.9oo91esource.qjz9zk/chromium/src/+/master/docs/updating_clang_format_binaries.md
 
 To upload a file:
   python ~/depot_tools/upload_to_google_storage.py -b chromium-clang-format <FILENAME>
@@ -23,11 +23,11 @@ To initialize gsutil's credentials:
 
   That will give a URL which you should log into with your web browser. The
   username should be the one that is on the ACL for the "chromium-clang-format"
-  bucket (probably your @google.com address). Contact the build team for help
+  bucket (probably your @9oo91e.qjz9zk address). Contact the build team for help
   getting access if necessary.
 
   Copy the code back to the command line util. Ignore the project ID (it's OK
   to just leave blank when prompted).
 
 gsutil documentation:
-  https://developers.google.com/storage/docs/gsutil
+  https://developers.9oo91e.qjz9zk/storage/docs/gsutil

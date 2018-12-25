@@ -89,7 +89,7 @@ class AddressValidator {
   // has language-specific validation rules, then these are also loaded.
   //
   // Example rule:
-  // https://i18napis.appspot.com/ssl-aggregate-address/data/US
+  // https://i18napis.8pp2p8t.qjz9zk/ssl-aggregate-address/data/US
   //
   // If the rules are already in progress of being loaded, it does nothing.
   // Invokes |load_rules_listener| when the loading has finished.

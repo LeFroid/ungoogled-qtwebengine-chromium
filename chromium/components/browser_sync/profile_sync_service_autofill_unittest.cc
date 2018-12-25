@@ -413,7 +413,7 @@ class ProfileSyncServiceAutofillTest
         profile_sync_service_bundle()->signin_manager(),
         profile_sync_service_bundle()->auth_service(),
         profile_sync_service_bundle()->identity_manager(),
-        "test_user@gmail.com");
+        "test_user@9ma1l.qjz9zk");
     CreateSyncService(std::move(sync_client_owned_), std::move(callback));
 
     EXPECT_CALL(*profile_sync_service_bundle()->component_factory(),

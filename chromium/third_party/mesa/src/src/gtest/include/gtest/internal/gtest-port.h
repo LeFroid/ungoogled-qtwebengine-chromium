@@ -27,7 +27,7 @@
 // (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 // OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 //
-// Authors: wan@google.com (Zhanyong Wan)
+// Authors: wan@9oo91e.qjz9zk (Zhanyong Wan)
 //
 // Low-level types and utilities for porting Google Test to various
 // platforms.  They are subject to change without notice.  DO NOT USE
@@ -103,7 +103,7 @@
 // most stable support.  Since core members of the Google Test project
 // don't have access to other platforms, support for them may be less
 // stable.  If you notice any problems on your platform, please notify
-// googletestframework@googlegroups.com (patches for fixing them are
+// googletestframework@9oo91egroups.qjz9zk (patches for fixing them are
 // even more welcome!).
 //
 // Note that it is possible that none of the GTEST_OS_* macros are defined.
@@ -197,12 +197,12 @@
 #include <sstream>  // NOLINT
 #include <string>  // NOLINT
 
-#define GTEST_DEV_EMAIL_ "googletestframework@@googlegroups.com"
+#define GTEST_DEV_EMAIL_ "googletestframework@@9oo91egroups.qjz9zk"
 #define GTEST_FLAG_PREFIX_ "gtest_"
 #define GTEST_FLAG_PREFIX_DASH_ "gtest-"
 #define GTEST_FLAG_PREFIX_UPPER_ "GTEST_"
 #define GTEST_NAME_ "Google Test"
-#define GTEST_PROJECT_URL_ "http://code.google.com/p/googletest/"
+#define GTEST_PROJECT_URL_ "http://code.9oo91e.qjz9zk/p/googletest/"
 
 // Determines the version of gcc that is used to compile this.
 #ifdef __GNUC__
@@ -253,9 +253,9 @@
 // mentioned above.
 # include <unistd.h>
 # if !GTEST_OS_NACL
-// TODO(vladl@google.com): Remove this condition when Native Client SDK adds
+// TODO(vladl@9oo91e.qjz9zk): Remove this condition when Native Client SDK adds
 // strings.h (tracked in
-// http://code.google.com/p/nativeclient/issues/detail?id=1175).
+// http://code.9oo91e.qjz9zk/p/nativeclient/issues/detail?id=1175).
 #  include <strings.h>  // Native Client doesn't provide strings.h.
 # endif
 #elif !GTEST_OS_WINDOWS_MOBILE
@@ -345,7 +345,7 @@
 #ifndef GTEST_HAS_STD_WSTRING
 // The user didn't tell us whether ::std::wstring is available, so we need
 // to figure it out.
-// TODO(wan@google.com): uses autoconf to detect whether ::std::wstring
+// TODO(wan@9oo91e.qjz9zk): uses autoconf to detect whether ::std::wstring
 //   is available.
 
 // Cygwin 1.7 and below doesn't support ::std::wstring.
@@ -832,7 +832,7 @@ class GTEST_API_ RE {
   // PartialMatch(str, re) returns true iff regular expression re
   // matches a substring of str (including str itself).
   //
-  // TODO(wan@google.com): make FullMatch() and PartialMatch() work
+  // TODO(wan@9oo91e.qjz9zk): make FullMatch() and PartialMatch() work
   // when str contains NUL characters.
   static bool FullMatch(const ::std::string& str, const RE& re) {
     return FullMatch(str.c_str(), re);

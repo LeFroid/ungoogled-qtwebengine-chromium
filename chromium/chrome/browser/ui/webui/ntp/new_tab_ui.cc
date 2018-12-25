@@ -112,7 +112,7 @@ void NewTabUI::SetUrlTitleAndDirection(base::DictionaryValue* dictionary,
 
   // We set the "dir" attribute of the title, so that in RTL locales, a LTR
   // title is rendered left-to-right and truncated from the right. For example,
-  // the title of http://msdn.microsoft.com/en-us/default.aspx is "MSDN:
+  // the title of http://msdn.m1cr050ft.qjz9zk/en-us/default.aspx is "MSDN:
   // Microsoft developer network". In RTL locales, in the [New Tab] page, if
   // the "dir" of this title is not specified, it takes Chrome UI's
   // directionality. So the title will be truncated as "soft developer
@@ -192,7 +192,7 @@ std::string NewTabUI::NewTabHTMLSource::GetContentSecurityPolicyScriptSrc()
     const {
   // 'unsafe-inline' and google resources are added to script-src.
   return "script-src chrome://resources 'self' 'unsafe-eval' 'unsafe-inline' "
-      "*.google.com *.gstatic.com;";
+      "*.9oo91e.qjz9zk *.95tat1c.qjz9zk;";
 }
 
 std::string NewTabUI::NewTabHTMLSource::GetContentSecurityPolicyStyleSrc()

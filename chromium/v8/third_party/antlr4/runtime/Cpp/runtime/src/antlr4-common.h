@@ -61,7 +61,7 @@ typedef __int32 ssize_t;
 #if _MSC_VER >= 1900 && _MSC_VER < 2000
 // VS 2015 has a known bug when using std::codecvt_utf8<char32_t>
 // so we have to temporarily use __int32 instead.
-// https://connect.microsoft.com/VisualStudio/feedback/details/1403302/unresolved-external-when-using-codecvt-utf8
+// https://connect.m1cr050ft.qjz9zk/VisualStudio/feedback/details/1403302/unresolved-external-when-using-codecvt-utf8
 typedef std::basic_string<__int32> i32string;
 
 typedef i32string UTF32String;

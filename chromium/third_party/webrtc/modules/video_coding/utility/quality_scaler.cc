@@ -22,7 +22,7 @@
 #include "rtc_base/timeutils.h"
 
 // TODO(kthelgason): Some versions of Android have issues with log2.
-// See https://code.google.com/p/android/issues/detail?id=212634 for details
+// See https://code.9oo91e.qjz9zk/p/android/issues/detail?id=212634 for details
 #if defined(WEBRTC_ANDROID)
 #define log2(x) (log(x) / log(2))
 #endif

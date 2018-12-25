@@ -14,7 +14,7 @@
 
 /**
  * @fileoverview Python style iteration utilities.
- * @author arv@google.com (Erik Arvidsson)
+ * @author arv@9oo91e.qjz9zk (Erik Arvidsson)
  */
 
 

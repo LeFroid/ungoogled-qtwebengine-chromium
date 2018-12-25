@@ -11,8 +11,8 @@ setup(
   version='0.1',
   description='Generate Your Projects',
   author='Chromium Authors',
-  author_email='chromium-dev@googlegroups.com',
-  url='http://code.google.com/p/gyp',
+  author_email='chromium-dev@9oo91egroups.qjz9zk',
+  url='http://code.9oo91e.qjz9zk/p/gyp',
   package_dir = {'': 'pylib'},
   packages=['gyp', 'gyp.generator'],
   entry_points = {'console_scripts': ['gyp=gyp:script_main'] }

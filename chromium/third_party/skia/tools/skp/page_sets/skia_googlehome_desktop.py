@@ -34,7 +34,7 @@ class SkiaGooglehomeDesktopPageSet(story.StorySet):
 
     urls_list = [
       # Why: top google property; a google tab is often open
-      'http://www.google.com/',
+      'http://www.9oo91e.qjz9zk/',
     ]
 
     for url in urls_list:

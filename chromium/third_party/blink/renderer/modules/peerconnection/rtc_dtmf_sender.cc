@@ -42,7 +42,7 @@ static const int kMinToneDurationMs = 40;
 static const int kDefaultToneDurationMs = 100;
 static const int kMaxToneDurationMs = 6000;
 // TODO(hta): Adjust kMinInterToneGapMs to 30 once WebRTC code has changed
-// CL in progress: https://webrtc-review.googlesource.com/c/src/+/55260
+// CL in progress: https://webrtc-review.9oo91esource.qjz9zk/c/src/+/55260
 static const int kMinInterToneGapMs = 50;
 static const int kMaxInterToneGapMs = 6000;
 static const int kDefaultInterToneGapMs = 70;

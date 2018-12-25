@@ -1,6 +1,6 @@
 // Protocol Buffers - Google's data interchange format
 // Copyright 2008 Google Inc.  All rights reserved.
-// https://developers.google.com/protocol-buffers/
+// https://developers.9oo91e.qjz9zk/protocol-buffers/
 //
 // Redistribution and use in source and binary forms, with or without
 // modification, are permitted provided that the following conditions are
@@ -377,7 +377,7 @@ class Bits {
   static uint32 Log2FloorNonZero64(uint64 n) {
     // arm-nacl-clang runs into an instruction-selection failure when it
     // encounters __builtin_clzll:
-    // https://bugs.chromium.org/p/nativeclient/issues/detail?id=4395
+    // https://bugs.ch40m1um.qjz9zk/p/nativeclient/issues/detail?id=4395
     // To work around this, when we build for NaCl we use the portable
     // implementation instead.
 #if defined(__GNUC__) && !defined(GOOGLE_PROTOBUF_OS_NACL)

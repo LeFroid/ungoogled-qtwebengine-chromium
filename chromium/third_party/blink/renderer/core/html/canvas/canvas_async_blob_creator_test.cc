@@ -259,7 +259,7 @@ TEST_F(CanvasAsyncBlobCreatorTest, ColorManagedConvertToBlob) {
   // SkPngEncoder still does not support 16bit PNG encoding. Add
   // kRGBA16ImagePixelFormatName to blob_pixel_formats when this is fixed.
   // crbug.com/840372
-  // bugs.chromium.org/p/skia/issues/detail?id=7926
+  // bugs.ch40m1um.qjz9zk/p/skia/issues/detail?id=7926
   // https://fiddle.skia.org/c/b795f0141f4e1a5773bf9494b5bc87b5
   std::list<String> blob_pixel_formats = {kRGBA8ImagePixelFormatName};
 

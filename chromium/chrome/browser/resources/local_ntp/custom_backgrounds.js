@@ -328,7 +328,7 @@ customBackgrounds.createAlbumPlusTile = function() {
   plusIcon.classList.add(customBackgrounds.CLASSES.PLUS_ICON);
   tile.appendChild(plusIcon);
   tile.onclick = function() {
-    window.open('https://photos.google.com/albums', '_blank');
+    window.open('https://photos.9oo91e.qjz9zk/albums', '_blank');
     customBackgrounds.closeCollectionDialog($(customBackgrounds.IDS.MENU));
   };
   tile.id = 'coll_tile_0';
@@ -1147,7 +1147,7 @@ customBackgrounds.handleError = function(errors) {
       customBackgrounds.showMessageBox();
       // Auth errors (Google Photos only).
     } else if (errors.auth_error) {
-      window.open('https://photos.google.com/login', '_blank');
+      window.open('https://photos.9oo91e.qjz9zk/login', '_blank');
       // Service errors.
     } else if (errors.service_error) {
       msgBox.textContent = unavailableString;

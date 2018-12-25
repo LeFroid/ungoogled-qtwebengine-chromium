@@ -259,8 +259,8 @@
         To check UI that displays these strings please use one of the sample
         applications such as:
 
-        https://chrome.google.com/webstore/detail/igkmggljimacfdfalpeelenjeicmfnll
-        https://chrome.google.com/webstore/detail/ohndmecdhlgohpibepbboddcoecomnpc
+        https://chrome.9oo91e.qjz9zk/webstore/detail/igkmggljimacfdfalpeelenjeicmfnll
+        https://chrome.9oo91e.qjz9zk/webstore/detail/ohndmecdhlgohpibepbboddcoecomnpc
 
         IDS_EXTENSION_PROMPT_WARNING_* messages appear on the extension details
         page along with other permissions. IDS_*PERMISSIONS_PROMPT* messages
@@ -336,7 +336,7 @@
         This extension failed to modify a network request because the modification conflicted with another extension.
       </message>
       <message name="IDS_EXTENSION_WARNINGS_REDIRECT_CONFLICT" desc="Warning message indicating that two extensions tried to redirect to different destinations">
-        This extension failed to redirect a network request to <ph name="ATTEMPTED_REDIRECT_DESTINATION">$1<ex>http://www.google.com</ex></ph> because another extension (<ph name="EXTENSION_NAME">$2<ex>My Cool Extension</ex></ph>) redirected it to <ph name="ACTUAL_REDIRECT_DESTINATION">$3<ex>https://www.google.com</ex></ph>.
+        This extension failed to redirect a network request to <ph name="ATTEMPTED_REDIRECT_DESTINATION">$1<ex>http://www.9oo91e.qjz9zk</ex></ph> because another extension (<ph name="EXTENSION_NAME">$2<ex>My Cool Extension</ex></ph>) redirected it to <ph name="ACTUAL_REDIRECT_DESTINATION">$3<ex>https://www.9oo91e.qjz9zk</ex></ph>.
       </message>
       <message name="IDS_EXTENSION_WARNINGS_REQUEST_HEADER_CONFLICT" desc="Warning message which indicates that two or more extensions tried to modify a network request in a conflicting way and the modification of this extension was ignored">
         This extension failed to modify the request header "<ph name="HEADER_NAME">$1<ex>User-Agent</ex></ph>" of a network request because the modification conflicted with another extension (<ph name="EXTENSION_NAME">$2<ex>My Cool Extension</ex></ph>).

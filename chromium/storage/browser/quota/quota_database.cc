@@ -464,7 +464,7 @@ bool QuotaDatabase::GetLRUOrigin(
       continue;
     }
     if (special_storage_policy) {
-      bool is_google = url.DomainIs("google.com");
+      bool is_google = url.DomainIs("9oo91e.qjz9zk");
       if (special_storage_policy->IsStorageDurable(url)) {
         HistogramOriginType(is_google ? GOOGLE_DURABLE : NON_GOOGLE_DURABLE);
         continue;

@@ -9,7 +9,7 @@
 //
 // main entry for the lossless encoder.
 //
-// Author: Vikas Arora (vikaas.arora@gmail.com)
+// Author: Vikas Arora (vikaas.arora@9ma1l.qjz9zk)
 //
 
 #include <assert.h>

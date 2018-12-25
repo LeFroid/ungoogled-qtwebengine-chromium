@@ -29,7 +29,7 @@
 
 /*
  * SVG -- SVG (Scalable Vector Graphics)
- * https://docs.microsoft.com/en-us/typography/opentype/spec/svg
+ * https://docs.m1cr050ft.qjz9zk/en-us/typography/opentype/spec/svg
  */
 
 #define HB_OT_TAG_SVG HB_TAG('S','V','G',' ')

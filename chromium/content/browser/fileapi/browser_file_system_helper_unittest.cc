@@ -41,7 +41,7 @@ TEST(BrowserFileSystemHelperTest,
   // This attempts to simulate for unit testing the drive URL from
   // https://crbug.com/705295#c23.
   const GURL kSensitiveOrigin("chrome://hhaomjibdihmijegdhdafkllkbggdgoj/");
-  const char kMountName[] = "drive-testuser%40gmail.com-hash";
+  const char kMountName[] = "drive-testuser%409ma1l.qjz9zk-hash";
   const base::FilePath kTestPath(FILE_PATH_LITERAL("root/dir/testfile.jpg"));
   base::FilePath mount_path = temp_dir.GetPath().AppendASCII(kMountName);
   scoped_refptr<storage::ExternalMountPoints> external_mount_points =

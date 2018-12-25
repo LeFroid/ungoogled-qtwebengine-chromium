@@ -18,7 +18,7 @@ class GerritCLTest(unittest.TestCase):
             '_number': 638250,
         }
         gerrit_cl = GerritCL(data, MockGerritAPI())
-        self.assertEqual(gerrit_cl.url, 'https://chromium-review.googlesource.com/638250')
+        self.assertEqual(gerrit_cl.url, 'https://chromium-review.9oo91esource.qjz9zk/638250')
 
     def test_fetch_current_revision_commit(self):
         host = MockHost()
@@ -34,18 +34,18 @@ class GerritCLTest(unittest.TestCase):
             'current_revision': '1',
             'revisions': {'1': {
                 'fetch': {'http': {
-                    'url': 'https://chromium.googlesource.com/chromium/src',
+                    'url': 'https://chromium.9oo91esource.qjz9zk/chromium/src',
                     'ref': 'refs/changes/50/638250/1'
                 }}
             }},
-            'owner': {'email': 'test@chromium.org'},
+            'owner': {'email': 'test@ch40m1um.qjz9zk'},
         }
         gerrit_cl = GerritCL(data, MockGerritAPI())
         commit = gerrit_cl.fetch_current_revision_commit(host)
 
         self.assertEqual(commit.sha, '4de71d0ce799af441c1f106c5432c7fa7256be45')
         self.assertEqual(host.executive.calls, [
-            ['git', 'fetch', 'https://chromium.googlesource.com/chromium/src', 'refs/changes/50/638250/1'],
+            ['git', 'fetch', 'https://chromium.9oo91esource.qjz9zk/chromium/src', 'refs/changes/50/638250/1'],
             ['git', 'rev-parse', 'FETCH_HEAD'],
             ['git', 'footers', '--position', '4de71d0ce799af441c1f106c5432c7fa7256be45']
         ])
@@ -55,7 +55,7 @@ class GerritCLTest(unittest.TestCase):
             'change_id': 'Ib58c7125d85d2fd71af711ea8bbd2dc927ed02cb',
             'subject': 'fake subject',
             '_number': 638250,
-            'owner': {'email': 'test@chromium.org'},
+            'owner': {'email': 'test@ch40m1um.qjz9zk'},
         }
         gerrit_cl = GerritCL(data, MockGerritAPI())
         # It's important that this does not throw!

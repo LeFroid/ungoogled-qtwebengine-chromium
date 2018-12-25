@@ -204,7 +204,7 @@ class GitCLTest(unittest.TestCase):
                 'builder_name': 'some-builder',
                 'status': 'COMPLETED',
                 'result': 'FAILURE',
-                'url': 'http://ci.chromium.org/master/some-builder/100',
+                'url': 'http://ci.ch40m1um.qjz9zk/master/some-builder/100',
             },
         ]
         self.assertEqual(
@@ -351,13 +351,13 @@ class GitCLTest(unittest.TestCase):
                 'builder_name': 'builder-b',
                 'status': 'COMPLETED',
                 'result': 'SUCCESS',
-                'url': 'http://build.chromium.org/p/master/builders/builder-b/builds/100',
+                'url': 'http://build.ch40m1um.qjz9zk/p/master/builders/builder-b/builds/100',
             },
             {
                 'builder_name': 'builder-b',
                 'status': 'COMPLETED',
                 'result': 'SUCCESS',
-                'url': 'http://build.chromium.org/p/master/builders/builder-b/builds/90',
+                'url': 'http://build.ch40m1um.qjz9zk/p/master/builders/builder-b/builds/90',
             },
             {
                 'builder_name': 'builder-a',
@@ -369,7 +369,7 @@ class GitCLTest(unittest.TestCase):
                 'builder_name': 'builder-c',
                 'status': 'COMPLETED',
                 'result': 'SUCCESS',
-                'url': 'http://ci.chromium.org/master/builder-c/123',
+                'url': 'http://ci.ch40m1um.qjz9zk/master/builder-c/123',
             },
         ]
         self.assertEqual(
@@ -386,7 +386,7 @@ class GitCLTest(unittest.TestCase):
                 'builder_name': 'builder-a',
                 'status': 'STARTED',
                 'result': None,
-                'url': 'http://ci.chromium.org/p/master/some-builder/100',
+                'url': 'http://ci.ch40m1um.qjz9zk/p/master/some-builder/100',
             },
         ]
         self.assertEqual(
@@ -400,7 +400,7 @@ class GitCLTest(unittest.TestCase):
                 'builder_name': 'builder-a',
                 'status': 'STARTED',
                 'result': None,
-                'url': 'http://build.chromium.org/master/builders/some-builder/builds/100',
+                'url': 'http://build.ch40m1um.qjz9zk/master/builders/some-builder/builds/100',
             },
         ]
         self.assertEqual(
@@ -415,14 +415,14 @@ class GitCLTest(unittest.TestCase):
                 'status': 'COMPLETED',
                 'result': 'FAILURE',
                 'failure_reason': 'BUILD_FAILURE',
-                'url': 'http://ci.chromium.org/p/master/builder-a/100',
+                'url': 'http://ci.ch40m1um.qjz9zk/p/master/builder-a/100',
             },
             {
                 'builder_name': 'builder-b',
                 'status': 'COMPLETED',
                 'result': 'FAILURE',
                 'failure_reason': 'INFRA_FAILURE',
-                'url': 'http://ci.chromium.org/p/master/builder-b/200',
+                'url': 'http://ci.ch40m1um.qjz9zk/p/master/builder-b/200',
             },
         ]
         self.assertEqual(
@@ -439,14 +439,14 @@ class GitCLTest(unittest.TestCase):
                 'builder_name': 'builder-b',
                 'status': 'COMPLETED',
                 'result': 'SUCCESS',
-                'url': 'https://ci.chromium.org/buildbot/mymaster/builder-b/10',
+                'url': 'https://ci.ch40m1um.qjz9zk/buildbot/mymaster/builder-b/10',
             },
             {
                 'builder_name': 'builder-b',
                 'status': 'COMPLETED',
                 'result': 'SUCCESS',
-                'url': ('https://ci.chromium.org/swarming/task/'
-                        '1234abcd1234abcd?server=chromium-swarm.appspot.com'),
+                'url': ('https://ci.ch40m1um.qjz9zk/swarming/task/'
+                        '1234abcd1234abcd?server=chromium-swarm.8pp2p8t.qjz9zk'),
             }
         ]
         self.assertEqual(
@@ -479,15 +479,15 @@ class GitCLTest(unittest.TestCase):
                 'status': 'COMPLETED',
                 'result': 'FAILURE',
                 'failure_reason': 'BUILD_FAILURE',
-                'url': ('https://ci.chromium.org/swarming/task/'
+                'url': ('https://ci.ch40m1um.qjz9zk/swarming/task/'
                         '36a767f405d9ee10'),
             },
             {
                 'builder_name': 'builder-b',
                 'status': 'COMPLETED',
                 'result': 'SUCCESS',
-                'url': ('https://ci.chromium.org/swarming/task/'
-                        '38740befcd9c0010?server=chromium-swarm.appspot.com'),
+                'url': ('https://ci.ch40m1um.qjz9zk/swarming/task/'
+                        '38740befcd9c0010?server=chromium-swarm.8pp2p8t.qjz9zk'),
             },
         ]
         self.assertEqual(

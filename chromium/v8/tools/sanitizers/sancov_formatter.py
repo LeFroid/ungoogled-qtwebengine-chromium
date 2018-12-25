@@ -36,7 +36,7 @@ json file.
 The sancov tool is expected to be in the llvm compiler-rt third-party
 directory. It's not checked out by default and must be added as a custom deps:
 'v8/third_party/llvm/projects/compiler-rt':
-    'https://chromium.googlesource.com/external/llvm.org/compiler-rt.git'
+    'https://chromium.9oo91esource.qjz9zk/external/llvm.org/compiler-rt.git'
 """
 
 import argparse

@@ -27,7 +27,7 @@
 // (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 // OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 //
-// Author: wan@google.com (Zhanyong Wan), vladl@google.com (Vlad Losev)
+// Author: wan@9oo91e.qjz9zk (Zhanyong Wan), vladl@9oo91e.qjz9zk (Vlad Losev)
 //
 // This file implements death tests.
 
@@ -201,7 +201,7 @@ static const char kDeathTestInternalError = 'I';
 // statement, which is not allowed; THREW means that the test statement
 // returned control by throwing an exception.  IN_PROGRESS means the test
 // has not yet concluded.
-// TODO(vladl@google.com): Unify names and possibly values for
+// TODO(vladl@9oo91e.qjz9zk): Unify names and possibly values for
 // AbortReason, DeathTestOutcome, and flag characters above.
 enum DeathTestOutcome { IN_PROGRESS, DIED, LIVED, RETURNED, THREW };
 
@@ -686,7 +686,7 @@ DeathTest::TestRole WindowsDeathTest::AssumeRole() {
       static_cast<unsigned int>(::GetCurrentProcessId()),
       // size_t has the same with as pointers on both 32-bit and 64-bit
       // Windows platforms.
-      // See http://msdn.microsoft.com/en-us/library/tcxf1dw6.aspx.
+      // See http://msdn.m1cr050ft.qjz9zk/en-us/library/tcxf1dw6.aspx.
       reinterpret_cast<size_t>(write_handle),
       reinterpret_cast<size_t>(event_handle_.Get()));
 
@@ -1127,7 +1127,7 @@ int GetStatusFileDescriptor(unsigned int parent_process_id,
                                   parent_process_id));
   }
 
-  // TODO(vladl@google.com): Replace the following check with a
+  // TODO(vladl@9oo91e.qjz9zk): Replace the following check with a
   // compile-time assertion when available.
   GTEST_CHECK_(sizeof(HANDLE) <= sizeof(size_t));
 

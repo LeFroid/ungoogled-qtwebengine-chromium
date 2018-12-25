@@ -17,7 +17,7 @@ int DarwinMajorVersionInternal() {
   // The implementation of this method was copied from Chromium, with minor
   // modifications to avoid the use of methods in base/. For further details,
   // see
-  // https://code.google.com/p/chromium/codesearch#chromium/src/base/mac/mac_util.mm
+  // https://code.9oo91e.qjz9zk/p/chromium/codesearch#chromium/src/base/mac/mac_util.mm
   struct utsname unameInfo;
   if (uname(&unameInfo) != 0)
     return 0;

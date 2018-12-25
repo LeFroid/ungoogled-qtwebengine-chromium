@@ -387,7 +387,7 @@ TEST_F(RtpRtcpEndToEndTest,
 
 // This test is flaky on linux_memcheck. Disable on all linux bots until
 // flakyness has been fixed.
-// https://bugs.chromium.org/p/webrtc/issues/detail?id=7737
+// https://bugs.ch40m1um.qjz9zk/p/webrtc/issues/detail?id=7737
 #if defined(WEBRTC_LINUX)
 TEST_F(RtpRtcpEndToEndTest, DISABLED_TestFlexfecRtpStatePreservation) {
 #else

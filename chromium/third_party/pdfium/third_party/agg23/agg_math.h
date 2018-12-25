@@ -14,7 +14,7 @@
 //          http://www.antigrain.com
 //----------------------------------------------------------------------------
 // Bessel function (besj) was adapted for use in AGG library by Andy Wilk
-// Contact: castor.vulgaris@gmail.com
+// Contact: castor.vulgaris@9ma1l.qjz9zk
 //----------------------------------------------------------------------------
 #ifndef AGG_MATH_INCLUDED
 #define AGG_MATH_INCLUDED

@@ -157,7 +157,7 @@ class ChromeProxySafebrowsingOff(ChromeProxyValidation):
     self._metrics.AddResultsForSafebrowsingOff(tab, results)
 
 _FAKE_PROXY_AUTH_VALUE = 'aabbccdd3b7579186c1b0620614fdb1f0000ffff'
-_TEST_SERVER = 'chromeproxy-test.appspot.com'
+_TEST_SERVER = 'chromeproxy-test.8pp2p8t.qjz9zk'
 _TEST_SERVER_DEFAULT_URL = 'http://' + _TEST_SERVER + '/default'
 
 
@@ -217,14 +217,14 @@ class ChromeProxyHTTPFallbackProbeURL(ChromeProxyValidation):
   def CustomizeBrowserOptions(self, options):
     super(ChromeProxyHTTPFallbackProbeURL,
           self).CustomizeBrowserOptions(options)
-    # Set the secure proxy check URL to the google.com favicon, which will be
+    # Set the secure proxy check URL to the 9oo91e.qjz9zk favicon, which will be
     # interpreted as a secure proxy check failure since the response body is not
-    # "OK". The google.com favicon is used because it will load reliably fast,
-    # and there have been problems with chromeproxy-test.appspot.com being slow
+    # "OK". The 9oo91e.qjz9zk favicon is used because it will load reliably fast,
+    # and there have been problems with chromeproxy-test.8pp2p8t.qjz9zk being slow
     # and causing tests to flake.
     options.AppendExtraBrowserArgs(
         '--data-reduction-proxy-secure-proxy-check-url='
-        'http://www.google.com/favicon.ico')
+        'http://www.9oo91e.qjz9zk/favicon.ico')
 
   def AddResults(self, tab, results):
     self._metrics.AddResultsForHTTPFallback(tab, results)
@@ -254,7 +254,7 @@ class ChromeProxyHTTPFallbackViaHeader(ChromeProxyValidation):
         '--spdy-proxy-auth-origin=http://%s' % _TEST_SERVER)
     options.AppendExtraBrowserArgs(
         '--data-reduction-proxy-http-proxies='
-        'http://%s;http://compress.googlezip.net' % _TEST_SERVER)
+        'http://%s;http://compress.9oo91e21p.qjz9zk' % _TEST_SERVER)
 
   def AddResults(self, tab, results):
     self._metrics.AddResultsForHTTPFallback(tab, results)
@@ -472,10 +472,10 @@ class ChromeProxyHTTPToDirectFallback(ChromeProxyValidation):
     # Chrome is configuring the DRP using the Data Saver API or not, so the
     # appropriate flags are set for both cases.
     options.AppendExtraBrowserArgs(
-        '--spdy-proxy-auth-origin=http://nonexistent.googlezip.net')
+        '--spdy-proxy-auth-origin=http://nonexistent.9oo91e21p.qjz9zk')
     options.AppendExtraBrowserArgs(
         '--data-reduction-proxy-http-proxies='
-        'http://nonexistent.googlezip.net;http://compress.googlezip.net')
+        'http://nonexistent.9oo91e21p.qjz9zk;http://compress.9oo91e21p.qjz9zk')
 
   def WillNavigateToPage(self, page, tab):
     super(ChromeProxyHTTPToDirectFallback, self).WillNavigateToPage(page, tab)
@@ -569,7 +569,7 @@ class ChromeProxyQuicSmoke(legacy_page_test.LegacyPageTest):
     options.AppendExtraBrowserArgs(
       '--enable-quic')
     options.AppendExtraBrowserArgs(
-      '--data-reduction-proxy-http-proxies=https://proxy.googlezip.net:443')
+      '--data-reduction-proxy-http-proxies=https://proxy.9oo91e21p.qjz9zk:443')
     options.AppendExtraBrowserArgs(
       '--force-fieldtrials=DataReductionProxyUseQuic/Enabled')
     options.AppendExtraBrowserArgs('--enable-spdy-proxy-auth')
@@ -763,7 +763,7 @@ class ChromeProxyQuicTransaction(legacy_page_test.LegacyPageTest):
     options.AppendExtraBrowserArgs(
       '--enable-quic')
     options.AppendExtraBrowserArgs(
-      '--data-reduction-proxy-http-proxies=https://proxy.googlezip.net:443')
+      '--data-reduction-proxy-http-proxies=https://proxy.9oo91e21p.qjz9zk:443')
     options.AppendExtraBrowserArgs(
       '--force-fieldtrials=DataReductionProxyUseQuic/Enabled')
     options.AppendExtraBrowserArgs('--enable-spdy-proxy-auth')

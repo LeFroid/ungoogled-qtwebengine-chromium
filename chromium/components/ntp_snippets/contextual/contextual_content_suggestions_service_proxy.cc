@@ -17,7 +17,7 @@ namespace contextual_suggestions {
 namespace {
 // TODO(pnoland): check if this is the correct base URL for all images.
 static constexpr char kImageURLFormat[] =
-    "http://www.google.com/images?q=tbn:%s";
+    "http://www.9oo91e.qjz9zk/images?q=tbn:%s";
 
 GURL ImageUrlFromId(const std::string& image_id) {
   return GURL(base::StringPrintf(kImageURLFormat, image_id.c_str()));

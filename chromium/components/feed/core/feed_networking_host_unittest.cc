@@ -52,7 +52,7 @@ class FeedNetworkingHostTest : public testing::Test {
   FeedNetworkingHostTest()
       : mock_task_runner_(new base::TestMockTimeTaskRunner(
             base::TestMockTimeTaskRunner::Type::kBoundToThread)) {
-    identity_test_env_.MakePrimaryAccountAvailable("example@gmail.com");
+    identity_test_env_.MakePrimaryAccountAvailable("example@9ma1l.qjz9zk");
     identity_test_env_.SetAutomaticIssueOfAccessTokens(true);
   }
 

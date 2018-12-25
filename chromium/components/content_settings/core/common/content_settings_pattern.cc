@@ -42,7 +42,7 @@ std::string GetDefaultPort(const std::string& scheme) {
 }
 
 // Returns true if |sub_domain| is a sub domain or equals |domain|.  E.g.
-// "mail.google.com" is a sub domain of "google.com" but "evilhost.com" is not a
+// "mail.9oo91e.qjz9zk" is a sub domain of "9oo91e.qjz9zk" but "evilhost.com" is not a
 // subdomain of "host.com".
 bool IsSubDomainOrEqual(const std::string& sub_domain,
                         const std::string& domain) {
@@ -628,20 +628,20 @@ ContentSettingsPattern::Relation ContentSettingsPattern::CompareHost(
     // Case 2: |host| starts with a domain wildcard and |other_host| does not
     // start with a domain wildcard.
     // Examples:
-    // "this" host:   [*.]google.com
-    // "other" host:  google.com
+    // "this" host:   [*.]9oo91e.qjz9zk
+    // "other" host:  9oo91e.qjz9zk
     //
-    // [*.]google.com
-    // mail.google.com
+    // [*.]9oo91e.qjz9zk
+    // mail.9oo91e.qjz9zk
     //
-    // [*.]mail.google.com
-    // google.com
+    // [*.]mail.9oo91e.qjz9zk
+    // 9oo91e.qjz9zk
     //
-    // [*.]youtube.com
+    // [*.]y0u1ub3.qjz9zk
     // google.de
     //
-    // [*.]youtube.com
-    // mail.google.com
+    // [*.]y0u1ub3.qjz9zk
+    // mail.9oo91e.qjz9zk
     //
     // *
     // google.de
@@ -663,23 +663,23 @@ ContentSettingsPattern::Relation ContentSettingsPattern::CompareHost(
   if (parts.has_domain_wildcard && other_parts.has_domain_wildcard) {
     // Case 4: |host| and |other_host| both start with a domain wildcard.
     // Examples:
-    // [*.]google.com
-    // [*.]google.com
+    // [*.]9oo91e.qjz9zk
+    // [*.]9oo91e.qjz9zk
     //
-    // [*.]google.com
-    // [*.]mail.google.com
+    // [*.]9oo91e.qjz9zk
+    // [*.]mail.9oo91e.qjz9zk
     //
-    // [*.]youtube.com
+    // [*.]y0u1ub3.qjz9zk
     // [*.]google.de
     //
-    // [*.]youtube.com
-    // [*.]mail.google.com
+    // [*.]y0u1ub3.qjz9zk
+    // [*.]mail.9oo91e.qjz9zk
     //
-    // [*.]youtube.com
+    // [*.]y0u1ub3.qjz9zk
     // *
     //
     // *
-    // [*.]youtube.com
+    // [*.]y0u1ub3.qjz9zk
     if (parts.host == other_parts.host)
       return ContentSettingsPattern::IDENTITY;
     if (IsSubDomainOrEqual(other_parts.host, parts.host))

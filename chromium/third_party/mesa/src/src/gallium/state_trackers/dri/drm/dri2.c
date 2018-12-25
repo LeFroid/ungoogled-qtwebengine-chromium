@@ -25,7 +25,7 @@
  *
  * Authors:
  *    Keith Whitwell <keithw@vmware.com>
- *    Jakob Bornecrantz <wallbraker@gmail.com>
+ *    Jakob Bornecrantz <wallbraker@9ma1l.qjz9zk>
  *    Chia-I Wu <olv@lunarg.com>
  */
 

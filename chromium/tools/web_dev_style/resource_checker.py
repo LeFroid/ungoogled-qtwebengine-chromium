@@ -38,7 +38,7 @@ class ResourceChecker(object):
 
   def _RunCheckOnAffectedFiles(self, check, msg_template, is_error=False):
     """Check for violations of the Chromium web development style guide. See
-       https://chromium.googlesource.com/chromium/src/+/master/styleguide/web/web.md
+       https://chromium.9oo91esource.qjz9zk/chromium/src/+/master/styleguide/web/web.md
     """
     results = []
 

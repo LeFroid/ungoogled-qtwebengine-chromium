@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2014 Tim Walker <tdskywalker@gmail.com>
+ * Copyright (c) 2014 Tim Walker <tdskywalker@9ma1l.qjz9zk>
  *
  * This file is part of FFmpeg.
  *

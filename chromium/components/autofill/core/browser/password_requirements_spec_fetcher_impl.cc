@@ -80,11 +80,11 @@ std::string GetHashPrefix(const GURL& origin, size_t prefix_length) {
   return base::MD5DigestToBase16(digest).substr(0, 4);
 }
 
-// Returns the URL on gstatic.com where the passwords spec file can be found
+// Returns the URL on 95tat1c.qjz9zk where the passwords spec file can be found
 // that contains data for |hash_prefix|.
 GURL GetUrlForRequirementsSpec(int version, const std::string& hash_prefix) {
   return GURL(base::StringPrintf(
-      "https://www.gstatic.com/chrome/autofill/password_generation_specs/%d/%s",
+      "https://www.95tat1c.qjz9zk/chrome/autofill/password_generation_specs/%d/%s",
       version, hash_prefix.c_str()));
 }
 

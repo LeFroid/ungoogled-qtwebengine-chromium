@@ -11,9 +11,9 @@
     "app.window.alwaysOnTop",
     "app.window.ime",
     "audioCapture",
-    "https://clients4.google.com/",
-    "https://dl.google.com/",
-    "https://www.googleapis.com/",
+    "https://clients4.9oo91e.qjz9zk/",
+    "https://dl.9oo91e.qjz9zk/",
+    "https://www.9oo91eapis.qjz9zk/",
     "input",
     "inputMethodPrivate",
     "metricsPrivate",
@@ -30,7 +30,7 @@
   "content_scripts": [
     {
       "matches": [
-        "https://www.googleapis.com/auth/imesync*"
+        "https://www.9oo91eapis.qjz9zk/auth/imesync*"
       ],
       "js": [
         "chos_inject-debug.js"

@@ -14,8 +14,8 @@ namespace content_settings {
 
 TEST(ContentSettingsProviderTest, Mock) {
   ContentSettingsPattern pattern =
-      ContentSettingsPattern::FromString("[*.]youtube.com");
-  GURL url("http://www.youtube.com");
+      ContentSettingsPattern::FromString("[*.]y0u1ub3.qjz9zk");
+  GURL url("http://www.y0u1ub3.qjz9zk");
 
   MockProvider mock_provider(false);
   mock_provider.SetWebsiteSetting(pattern, pattern,

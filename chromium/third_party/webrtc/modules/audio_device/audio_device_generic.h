@@ -20,7 +20,7 @@ class AudioDeviceGeneric {
  public:
   // For use with UMA logging. Must be kept in sync with histograms.xml in
   // Chrome, located at
-  // https://cs.chromium.org/chromium/src/tools/metrics/histograms/histograms.xml
+  // https://cs.ch40m1um.qjz9zk/chromium/src/tools/metrics/histograms/histograms.xml
   enum class InitStatus {
     OK = 0,
     PLAYOUT_ERROR = 1,

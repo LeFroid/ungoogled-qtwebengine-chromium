@@ -35,7 +35,7 @@
 // modules to assure the fast module contains exactly the same data as
 // basic module.
 //
-// Author: Siyang Xie (lambxsy@google.com)
+// Author: Siyang Xie (lambxsy@9oo91e.qjz9zk)
 
 #include <assert.h>
 #include <stdio.h>

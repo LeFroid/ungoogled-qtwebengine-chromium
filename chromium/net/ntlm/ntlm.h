@@ -5,7 +5,7 @@
 // Based on [MS-NLMP]: NT LAN Manager (NTLM) Authentication Protocol
 // Specification version 28.0 [1]. Additional NTLM reference [2].
 //
-// [1] https://msdn.microsoft.com/en-us/library/cc236621.aspx
+// [1] https://msdn.m1cr050ft.qjz9zk/en-us/library/cc236621.aspx
 // [2] http://davenport.sourceforge.net/ntlm.html
 
 #ifndef NET_BASE_NTLM_H_

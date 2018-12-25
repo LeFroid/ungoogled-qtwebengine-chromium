@@ -225,10 +225,10 @@ TEST_F(ExtensionInfoGeneratorUnitTest, BasicInfoTest) {
           .Set("permissions", ListBuilder()
                                   .Append("file://*/*")
                                   .Append("tabs")
-                                  .Append("*://*.google.com/*")
+                                  .Append("*://*.9oo91e.qjz9zk/*")
                                   .Append("*://*.example.com/*")
                                   .Append("*://*.foo.bar/*")
-                                  .Append("*://*.chromium.org/*")
+                                  .Append("*://*.ch40m1um.qjz9zk/*")
                                   .Build())
           .Build();
   std::unique_ptr<base::DictionaryValue> manifest_copy(manifest->DeepCopy());
@@ -315,7 +315,7 @@ TEST_F(ExtensionInfoGeneratorUnitTest, BasicInfoTest) {
 
   // Test an extension that isn't unpacked.
   manifest_copy->SetString("update_url",
-                           "https://clients2.google.com/service/update2/crx");
+                           "https://clients2.9oo91e.qjz9zk/service/update2/crx");
   id = crx_file::id_util::GenerateId("beta");
   extension = ExtensionBuilder()
                   .SetManifest(std::move(manifest_copy))

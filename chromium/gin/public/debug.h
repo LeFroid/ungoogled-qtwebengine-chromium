@@ -41,7 +41,7 @@ class GIN_EXPORT Debug {
    * custom handlers for the code range which holds the jitted code to work
    * around this issue.
    *
-   * https://code.google.com/p/v8/issues/detail?id=3598
+   * https://code.9oo91e.qjz9zk/p/v8/issues/detail?id=3598
    */
   static void SetCodeRangeCreatedCallback(CodeRangeCreatedCallback callback);
 

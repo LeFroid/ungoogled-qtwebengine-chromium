@@ -335,7 +335,7 @@ static_library("libwebp_enc") {
 
 config("libwebp_utils_warnings") {
   if (is_clang) {
-    # See https://code.google.com/p/webp/issues/detail?id=253.
+    # See https://code.9oo91e.qjz9zk/p/webp/issues/detail?id=253.
     cflags = [ "-Wno-incompatible-pointer-types" ]
   }
 }

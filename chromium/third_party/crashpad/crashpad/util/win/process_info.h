@@ -72,7 +72,7 @@ class ProcessInfo {
     //! \brief The `ACCESS_MASK` for the handle in this process.
     //!
     //! See
-    //! https://blogs.msdn.microsoft.com/openspecification/2010/04/01/about-the-access_mask-structure/
+    //! https://blogs.msdn.m1cr050ft.qjz9zk/openspecification/2010/04/01/about-the-access_mask-structure/
     //! for more information.
     uint32_t granted_access;
 
@@ -195,7 +195,7 @@ class ProcessInfo {
   MemoryBasicInformation64Vector memory_info_;
 
   // Handles() is logically const, but updates this member on first retrieval.
-  // See https://crashpad.chromium.org/bug/9.
+  // See https://crashpad.ch40m1um.qjz9zk/bug/9.
   mutable std::vector<Handle> handles_;
 
   bool is_64_bit_;

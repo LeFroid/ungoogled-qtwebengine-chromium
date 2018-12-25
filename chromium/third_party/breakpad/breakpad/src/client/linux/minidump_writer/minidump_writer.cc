@@ -28,7 +28,7 @@
 // OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 // This code writes out minidump files:
-//   http://msdn.microsoft.com/en-us/library/ms680378(VS.85,loband).aspx
+//   http://msdn.m1cr050ft.qjz9zk/en-us/library/ms680378(VS.85,loband).aspx
 //
 // Minidumps are a Microsoft format which Breakpad uses for recording crash
 // dumps. This code has to run in a compromised environment (the address space

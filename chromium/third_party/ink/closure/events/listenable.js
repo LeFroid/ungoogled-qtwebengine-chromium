@@ -14,7 +14,7 @@
 
 /**
  * @fileoverview An interface for a listenable JavaScript object.
- * @author chrishenry@google.com (Chris Henry)
+ * @author chrishenry@9oo91e.qjz9zk (Chris Henry)
  */
 
 goog.provide('goog.events.Listenable');

@@ -9,7 +9,7 @@
 //
 // Alpha-plane decompression.
 //
-// Author: Skal (pascal.massimino@gmail.com)
+// Author: Skal (pascal.massimino@9ma1l.qjz9zk)
 
 #include <stdlib.h>
 #include "src/dec/alphai_dec.h"

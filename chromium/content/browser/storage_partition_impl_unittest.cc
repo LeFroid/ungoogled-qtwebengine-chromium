@@ -1380,7 +1380,7 @@ TEST_F(StoragePartitionImplTest, RemovePluginPrivateDataAfterDeletion) {
 TEST(StoragePartitionImplStaticTest, CreatePredicateForHostCookies) {
   GURL url("http://www.example.com/");
   GURL url2("https://www.example.com/");
-  GURL url3("https://www.google.com/");
+  GURL url3("https://www.9oo91e.qjz9zk/");
 
   net::CookieOptions options;
   CookieDeletionFilterPtr deletion_filter = CookieDeletionFilter::New();

@@ -84,7 +84,7 @@
     "lang": "en-US",
     "name": "Java(TM)",
     "url": "http://java.com/en/download/apple_manual.jsp",
-    "help_url": "https://support.google.com/chrome/?p=plugin_java",
+    "help_url": "https://support.9oo91e.qjz9zk/chrome/?p=plugin_java",
     "displayurl": true,
     "group_name_matcher": "Java*"
   },
@@ -105,7 +105,7 @@
     "lang": "en-US",
     "name": "RealPlayer",
     "url": "http://director.real.com/realplayer?type=rpsp_mac",
-    "help_url": "https://support.google.com/chrome/?p=plugin_real",
+    "help_url": "https://support.9oo91e.qjz9zk/chrome/?p=plugin_real",
     "group_name_matcher": "*RealPlayer*"
   },
   "adobe-flash-player": {
@@ -122,8 +122,8 @@
     ],
     "lang": "en-US",
     "name": "Adobe Flash Player",
-    "url": "https://support.google.com/chrome/answer/6258784",
-    "help_url": "https://support.google.com/chrome/?p=plugin_flash",
+    "url": "https://support.9oo91e.qjz9zk/chrome/answer/6258784",
+    "help_url": "https://support.9oo91e.qjz9zk/chrome/?p=plugin_flash",
     "displayurl": true,
     "group_name_matcher": "*Shockwave Flash*"
   },
@@ -141,7 +141,7 @@
     "lang": "en-US",
     "name": "Adobe Shockwave Player",
     "url": "http://fpdownload.macromedia.com/get/shockwave/default/english/macosx/latest/Shockwave_Installer_Full_64bit.dmg",
-    "help_url": "https://support.google.com/chrome/?p=plugin_shockwave",
+    "help_url": "https://support.9oo91e.qjz9zk/chrome/?p=plugin_shockwave",
     "group_name_matcher": "*Shockwave for Director*"
   },
   "apple-quicktime": {
@@ -206,7 +206,7 @@
     "lang": "en-US",
     "name": "QuickTime Player",
     "url": "http://www.apple.com/quicktime/download/",
-    "help_url": "https://support.google.com/chrome/?p=plugin_quicktime",
+    "help_url": "https://support.9oo91e.qjz9zk/chrome/?p=plugin_quicktime",
     "displayurl": true,
     "group_name_matcher": "*QuickTime Plug-in*"
   },
@@ -231,8 +231,8 @@
     ],
     "lang": "en-US",
     "name": "Flip4Mac",
-    "url": "http://www.microsoft.com/download/en/confirmation.aspx?id=9442",
-    "help_url": "https://support.google.com/chrome/?p=plugin_wmp",
+    "url": "http://www.m1cr050ft.qjz9zk/download/en/confirmation.aspx?id=9442",
+    "help_url": "https://support.9oo91e.qjz9zk/chrome/?p=plugin_wmp",
     "displayurl": true,
     "group_name_matcher": "*Flip4Mac*"
   },
@@ -250,7 +250,7 @@
     "lang": "en-US",
     "name": "DivX Web Player",
     "url": "http://www.divx.com/en/downloads/divx/mac",
-    "help_url": "https://support.google.com/chrome/?p=plugin_divx",
+    "help_url": "https://support.9oo91e.qjz9zk/chrome/?p=plugin_divx",
     "group_name_matcher": "*DivX Plus Web Player*"
   },
   "silverlight": {
@@ -262,12 +262,12 @@
       {
         "version": "5.1.30214.0",
         "status": "requires_authorization",
-        "reference": "https://support.microsoft.com/kb/2932677"
+        "reference": "https://support.m1cr050ft.qjz9zk/kb/2932677"
       }
     ],
     "lang": "en-US",
     "name": "Silverlight",
-    "url": "http://go.microsoft.com/fwlink/?LinkID=149156",
+    "url": "http://go.m1cr050ft.qjz9zk/fwlink/?LinkID=149156",
     "displayurl": true,
     "group_name_matcher": "*Silverlight*"
   },
@@ -336,7 +336,7 @@
     ],
     "lang": "en-US",
     "name": "Facebook Video Calling",
-    "url": "https://www.facebook.com/chat/video/videocalldownload.php",
+    "url": "https://www.f8c3b00k.qjz9zk/chat/video/videocalldownload.php",
     "group_name_matcher": "*Facebook Video*"
   },
   "google-earth": {
@@ -352,7 +352,7 @@
     ],
     "lang": "en-US",
     "name": "Google Earth",
-    "url": "http://www.google.com/earth/explore/products/plugin.html",
+    "url": "http://www.9oo91e.qjz9zk/earth/explore/products/plugin.html",
     "group_name_matcher": "*Google Earth*"
   }
 }

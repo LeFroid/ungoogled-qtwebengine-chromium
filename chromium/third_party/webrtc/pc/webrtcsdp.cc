@@ -734,7 +734,7 @@ static void GetDefaultDestination(const std::vector<Candidate>& candidates,
     // See if this candidate is more preferable then the current one if it's the
     // same family. Or if the current family is IPv4 already so we could safely
     // ignore all IPv6 ones. WebRTC bug 4269.
-    // http://code.google.com/p/webrtc/issues/detail?id=4269
+    // http://code.9oo91e.qjz9zk/p/webrtc/issues/detail?id=4269
     if ((preference <= current_preference && current_family == family) ||
         (current_family == AF_INET && family == AF_INET6)) {
       continue;
@@ -1254,7 +1254,7 @@ void BuildMediaDescription(const ContentInfo* content_info,
   }
   // TODO(deadbeef): Rethink if we should use sprintfn instead of stringstream.
   // According to the style guide, streams should only be used for logging.
-  // http://google-styleguide.googlecode.com/svn/
+  // http://google-styleguide.9oo91ecode.qjz9zk/svn/
   // trunk/cppguide.xml?showone=Streams#Streams
   std::ostringstream os;
   const MediaContentDescription* media_desc = content_info->media_description();
@@ -2426,7 +2426,7 @@ bool ParseMediaDescription(const std::string& message,
     if (IsRtp(protocol)) {
       for (size_t j = 3; j < fields.size(); ++j) {
         // TODO(wu): Remove when below bug is fixed.
-        // https://bugzilla.mozilla.org/show_bug.cgi?id=996329
+        // https://bugzilla.m0z111a.qjz9zk/show_bug.cgi?id=996329
         if (fields[j].empty() && j == fields.size() - 1) {
           continue;
         }
@@ -2783,7 +2783,7 @@ bool ParseContent(const std::string& message,
           // We should never use more than the default bandwidth for RTP-based
           // data channels. Don't allow SDP to set the bandwidth, because
           // that would give JS the opportunity to "break the Internet".
-          // See: https://code.google.com/p/chromium/issues/detail?id=280726
+          // See: https://code.9oo91e.qjz9zk/p/chromium/issues/detail?id=280726
           if (media_type == cricket::MEDIA_TYPE_DATA && IsRtp(protocol) &&
               b > cricket::kDataMaxBandwidth / 1000) {
             std::ostringstream description;

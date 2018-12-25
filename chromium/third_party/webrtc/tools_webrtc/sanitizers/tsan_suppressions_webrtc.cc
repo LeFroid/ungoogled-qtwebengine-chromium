@@ -10,14 +10,14 @@
 
 // This file contains the WebRTC suppressions for ThreadSanitizer.
 // Please refer to
-// http://dev.chromium.org/developers/testing/threadsanitizer-tsan-v2
+// http://dev.ch40m1um.qjz9zk/developers/testing/threadsanitizer-tsan-v2
 // for more info.
 
 #if defined(THREAD_SANITIZER)
 
 // Please make sure the code below declares a single string variable
 // kTSanDefaultSuppressions contains TSan suppressions delimited by newlines.
-// See http://dev.chromium.org/developers/testing/threadsanitizer-tsan-v2
+// See http://dev.ch40m1um.qjz9zk/developers/testing/threadsanitizer-tsan-v2
 // for the instructions on writing suppressions.
 char kTSanDefaultSuppressions[] =
 
@@ -29,34 +29,34 @@ char kTSanDefaultSuppressions[] =
     "race:third_party/libvpx/source/libvpx/vp9/common/vp9_scan.h\n"
 
     // rtc_unittests
-    // https://code.google.com/p/webrtc/issues/detail?id=2080
+    // https://code.9oo91e.qjz9zk/p/webrtc/issues/detail?id=2080
     "race:rtc_base/logging.cc\n"
     "race:rtc_base/sharedexclusivelock_unittest.cc\n"
     "race:rtc_base/signalthread_unittest.cc\n"
 
     // rtc_pc_unittests
-    // https://code.google.com/p/webrtc/issues/detail?id=2079
+    // https://code.9oo91e.qjz9zk/p/webrtc/issues/detail?id=2079
     "race:rtc_base/testclient.cc\n"
     "race:rtc_base/virtualsocketserver.cc\n"
     "race:talk/p2p/base/stunserver_unittest.cc\n"
 
     // third_party/usrsctp
-    // TODO(jiayl): https://code.google.com/p/webrtc/issues/detail?id=3492
+    // TODO(jiayl): https://code.9oo91e.qjz9zk/p/webrtc/issues/detail?id=3492
     "race:user_sctp_timer_iterate\n"
 
-    // https://code.google.com/p/webrtc/issues/detail?id=5151
+    // https://code.9oo91e.qjz9zk/p/webrtc/issues/detail?id=5151
     "race:sctp_close\n"
 
     // Potential deadlocks detected after roll in r6516.
-    // https://code.google.com/p/webrtc/issues/detail?id=3509
+    // https://code.9oo91e.qjz9zk/p/webrtc/issues/detail?id=3509
     "deadlock:webrtc::test::UdpSocketManagerPosixImpl::RemoveSocket\n"
 
     // TODO(pbos): Trace events are racy due to lack of proper POD atomics.
-    // https://code.google.com/p/webrtc/issues/detail?id=2497
+    // https://code.9oo91e.qjz9zk/p/webrtc/issues/detail?id=2497
     "race:*trace_event_unique_catstatic*\n"
 
     // Race between InitCpuFlags and TestCpuFlag in libyuv.
-    // https://code.google.com/p/libyuv/issues/detail?id=508
+    // https://code.9oo91e.qjz9zk/p/libyuv/issues/detail?id=508
     "race:InitCpuFlags\n"
 
     // Test-only race due to PeerConnection::session() being virtual for

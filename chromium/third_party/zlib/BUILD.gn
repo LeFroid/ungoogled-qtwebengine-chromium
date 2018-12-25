@@ -162,7 +162,7 @@ source_set("zlib_inflate_chunk_simd") {
       if (!is_debug) {
         # Here we trade better performance on newer/bigger ARMv8 cores
         # for less perf on ARMv7. For details, check:
-        # https://bugs.chromium.org/p/chromium/issues/detail?id=772870#c40
+        # https://bugs.ch40m1um.qjz9zk/p/chromium/issues/detail?id=772870#c40
         configs -= [ "//build/config/compiler:default_optimization" ]
         configs += [ "//build/config/compiler:optimize_speed" ]
       }

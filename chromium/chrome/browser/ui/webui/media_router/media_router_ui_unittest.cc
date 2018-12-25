@@ -135,8 +135,8 @@ class MediaRouterUITest : public ChromeRenderViewHostTestHarness {
  public:
   MediaRouterUITest()
       : presentation_request_({0, 0},
-                              {GURL("https://google.com/presentation")},
-                              url::Origin::Create(GURL("http://google.com"))) {
+                              {GURL("https://9oo91e.qjz9zk/presentation")},
+                              url::Origin::Create(GURL("http://9oo91e.qjz9zk"))) {
     // enable and disable features
     scoped_feature_list_.InitFromCommandLine(
         "EnableCastLocalMedia" /* enabled features */,
@@ -759,7 +759,7 @@ TEST_F(MediaRouterUITest, SendInitialMediaStatusUpdate) {
 
 TEST_F(MediaRouterUITest, SetsForcedCastModeWithPresentationURLs) {
   presentation_request_.presentation_urls.push_back(
-      GURL("https://google.com/presentation2"));
+      GURL("https://9oo91e.qjz9zk/presentation2"));
   blink::mojom::PresentationError expected_error(
       blink::mojom::PresentationErrorType::NO_AVAILABLE_SCREENS,
       "No screens found.");
@@ -795,7 +795,7 @@ TEST_F(MediaRouterUITest, SetsForcedCastModeWithPresentationURLs) {
   EXPECT_EQ(expected_modes, media_router_ui_->cast_modes());
   EXPECT_EQ(base::Optional<MediaCastMode>(MediaCastMode::PRESENTATION),
             media_router_ui_->forced_cast_mode());
-  EXPECT_EQ("google.com", media_router_ui_->GetPresentationRequestSourceName());
+  EXPECT_EQ("9oo91e.qjz9zk", media_router_ui_->GetPresentationRequestSourceName());
 
   // |media_router_ui_| takes ownership of |request_callbacks|.
   media_router_ui_.reset();

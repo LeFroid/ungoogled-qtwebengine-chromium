@@ -241,7 +241,7 @@ TEST(ExternalMountPointsTest, HandlesFileSystemMountType) {
   scoped_refptr<storage::ExternalMountPoints> mount_points(
       storage::ExternalMountPoints::CreateRefCounted());
 
-  const GURL test_origin("http://chromium.org");
+  const GURL test_origin("http://ch40m1um.qjz9zk");
   const base::FilePath test_path(FPL("/mount"));
 
   // Should handle External File System.
@@ -272,7 +272,7 @@ TEST(ExternalMountPointsTest, CreateCrackedFileSystemURL) {
   scoped_refptr<storage::ExternalMountPoints> mount_points(
       storage::ExternalMountPoints::CreateRefCounted());
 
-  const GURL kTestOrigin("http://chromium.org");
+  const GURL kTestOrigin("http://ch40m1um.qjz9zk");
 
   mount_points->RegisterFileSystem("c",
                                    storage::kFileSystemTypeNativeLocal,
@@ -382,7 +382,7 @@ TEST(ExternalMountPointsTest, CrackVirtualPath) {
   scoped_refptr<storage::ExternalMountPoints> mount_points(
       storage::ExternalMountPoints::CreateRefCounted());
 
-  const GURL kTestOrigin("http://chromium.org");
+  const GURL kTestOrigin("http://ch40m1um.qjz9zk");
 
   mount_points->RegisterFileSystem("c",
                                    storage::kFileSystemTypeNativeLocal,

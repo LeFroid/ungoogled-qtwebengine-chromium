@@ -181,7 +181,7 @@ struct _hb_alignof
 #endif
 
 /*
- * Borrowed from https://bugzilla.mozilla.org/show_bug.cgi?id=1215411
+ * Borrowed from https://bugzilla.m0z111a.qjz9zk/show_bug.cgi?id=1215411
  * HB_FALLTHROUGH is an annotation to suppress compiler warnings about switch
  * cases that fall through without a break or return statement. HB_FALLTHROUGH
  * is only needed on cases that have code:
@@ -205,7 +205,7 @@ struct _hb_alignof
 #elif defined(_MSC_VER)
    /*
     * MSVC's __fallthrough annotations are checked by /analyze (Code Analysis):
-    * https://msdn.microsoft.com/en-us/library/ms235402%28VS.80%29.aspx
+    * https://msdn.m1cr050ft.qjz9zk/en-us/library/ms235402%28VS.80%29.aspx
     */
 #  include <sal.h>
 #  define HB_FALLTHROUGH __fallthrough
@@ -257,14 +257,14 @@ static int errno = 0; /* Use something better? */
 #    endif
 #  elif defined(_MSC_VER) || defined(__MINGW32__)
 /* For MSVC:
- * https://msdn.microsoft.com/en-us/library/tze57ck3.aspx
- * https://msdn.microsoft.com/en-us/library/zk17ww08.aspx
+ * https://msdn.m1cr050ft.qjz9zk/en-us/library/tze57ck3.aspx
+ * https://msdn.m1cr050ft.qjz9zk/en-us/library/zk17ww08.aspx
  * mingw32 headers say atexit is safe to use in shared libraries.
  */
 #    define HB_USE_ATEXIT 1
 #  elif defined(__ANDROID__)
 /* This is available since Android NKD r8 or r8b:
- * https://issuetracker.google.com/code/p/android/issues/detail?id=6455
+ * https://issuetracker.9oo91e.qjz9zk/code/p/android/issues/detail?id=6455
  */
 #    define HB_USE_ATEXIT 1
 #  elif defined(__APPLE__)
@@ -511,7 +511,7 @@ hb_in_ranges (T u, T lo1, T hi1, T lo2, T hi2, T lo3, T hi3)
  * use posix_memalign() to allocate them.  Otherwise, can cause
  * misaligned access.
  *
- * https://bugs.chromium.org/p/chromium/issues/detail?id=860184
+ * https://bugs.ch40m1um.qjz9zk/p/chromium/issues/detail?id=860184
  */
 #if !defined(HB_VECTOR_SIZE)
 #  define HB_VECTOR_SIZE 0

@@ -20,8 +20,8 @@
  * to a different document object.  This is useful if you are working with
  * frames or multiple windows.
  *
- * @author pupius@google.com (Daniel Pupius)
- * @author arv@google.com (Erik Arvidsson)
+ * @author pupius@9oo91e.qjz9zk (Daniel Pupius)
+ * @author arv@9oo91e.qjz9zk (Erik Arvidsson)
  */
 
 
@@ -203,7 +203,7 @@ goog.dom.getElementsByTagName = function(tagName, opt_parent) {
  * Note that tag names are case sensitive in the SVG namespace, and this
  * function converts opt_tag to uppercase for comparisons. For queries in the
  * SVG namespace you should use querySelector or querySelectorAll instead.
- * https://bugzilla.mozilla.org/show_bug.cgi?id=963870
+ * https://bugzilla.m0z111a.qjz9zk/show_bug.cgi?id=963870
  * https://bugs.webkit.org/show_bug.cgi?id=83438
  *
  * @see {goog.dom.query}
@@ -825,8 +825,8 @@ goog.dom.createDom_ = function(doc, args) {
   var attributes = args[1];
 
   // Internet Explorer is dumb:
-  // name: https://msdn.microsoft.com/en-us/library/ms534184(v=vs.85).aspx
-  // type: https://msdn.microsoft.com/en-us/library/ms534700(v=vs.85).aspx
+  // name: https://msdn.m1cr050ft.qjz9zk/en-us/library/ms534184(v=vs.85).aspx
+  // type: https://msdn.m1cr050ft.qjz9zk/en-us/library/ms534700(v=vs.85).aspx
   // Also does not allow setting of 'type' attribute on 'input' or 'button'.
   if (!goog.dom.BrowserFeature.CAN_ADD_NAME_OR_TYPE_ATTRIBUTES && attributes &&
       (attributes.name || attributes.type)) {

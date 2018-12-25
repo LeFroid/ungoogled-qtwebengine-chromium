@@ -2716,7 +2716,7 @@ TEST_F(WebRtcSdpTest, DeserializeSdpWithRtpDataChannelsAndBandwidth) {
   // settings (it should never be greater than the default).
   // This should prevent someone from using unlimited data bandwidth through
   // JS and "breaking the Internet".
-  // See: https://code.google.com/p/chromium/issues/detail?id=280726
+  // See: https://code.9oo91e.qjz9zk/p/chromium/issues/detail?id=280726
   std::string sdp_with_bandwidth = kSdpString;
   sdp_with_bandwidth.append(kSdpRtpDataChannelString);
   InjectAfter("a=mid:data_content_name\r\n", "b=AS:100\r\n",
@@ -3449,7 +3449,7 @@ TEST_F(WebRtcSdpTest, SerializeBothMediaSectionAndSsrcAttributeMsid) {
 }
 
 // Regression test for heap overflow bug:
-// https://bugs.chromium.org/p/chromium/issues/detail?id=647916
+// https://bugs.ch40m1um.qjz9zk/p/chromium/issues/detail?id=647916
 TEST_F(WebRtcSdpTest, DeserializeSctpPortInVideoDescription) {
   // The issue occurs when the sctp-port attribute is found in a video
   // description. The actual heap overflow occurs when parsing the fmtp line.
@@ -3467,7 +3467,7 @@ TEST_F(WebRtcSdpTest, DeserializeSctpPortInVideoDescription) {
 }
 
 // Regression test for integer overflow bug:
-// https://bugs.chromium.org/p/chromium/issues/detail?id=648071
+// https://bugs.ch40m1um.qjz9zk/p/chromium/issues/detail?id=648071
 TEST_F(WebRtcSdpTest, DeserializeLargeBandwidthLimit) {
   // Bandwidth attribute is the max signed 32-bit int, which will get
   // multiplied by 1000 and cause int overflow if not careful.
@@ -3485,7 +3485,7 @@ TEST_F(WebRtcSdpTest, DeserializeLargeBandwidthLimit) {
 
 // Similar to the above, except that negative values are illegal, not just
 // error-prone as large values are.
-// https://bugs.chromium.org/p/chromium/issues/detail?id=675361
+// https://bugs.ch40m1um.qjz9zk/p/chromium/issues/detail?id=675361
 TEST_F(WebRtcSdpTest, DeserializingNegativeBandwidthLimitFails) {
   static const char kSdpWithNegativeBandwidth[] =
       "v=0\r\n"
@@ -3523,7 +3523,7 @@ TEST_F(WebRtcSdpTest, BandwidthLimitOfNegativeOneIgnored) {
 // Test that "ufrag"/"pwd" in the candidate line itself are ignored, and only
 // the "a=ice-ufrag"/"a=ice-pwd" attributes are used.
 // Regression test for:
-// https://bugs.chromium.org/p/chromium/issues/detail?id=681286
+// https://bugs.ch40m1um.qjz9zk/p/chromium/issues/detail?id=681286
 TEST_F(WebRtcSdpTest, IceCredentialsInCandidateStringIgnored) {
   // Important piece is "ufrag foo pwd bar".
   static const char kSdpWithIceCredentialsInCandidateString[] =
@@ -3553,7 +3553,7 @@ TEST_F(WebRtcSdpTest, IceCredentialsInCandidateStringIgnored) {
 // Test that SDP with an invalid port number in "a=candidate" lines is
 // rejected, without crashing.
 // Regression test for:
-// https://bugs.chromium.org/p/chromium/issues/detail?id=677029
+// https://bugs.ch40m1um.qjz9zk/p/chromium/issues/detail?id=677029
 TEST_F(WebRtcSdpTest, DeserializeInvalidPortInCandidateAttribute) {
   static const char kSdpWithInvalidCandidatePort[] =
       "v=0\r\n"
@@ -3574,7 +3574,7 @@ TEST_F(WebRtcSdpTest, DeserializeInvalidPortInCandidateAttribute) {
 
 // Test that "a=msid" with a missing track ID is rejected and doesn't crash.
 // Regression test for:
-// https://bugs.chromium.org/p/chromium/issues/detail?id=686405
+// https://bugs.ch40m1um.qjz9zk/p/chromium/issues/detail?id=686405
 TEST_F(WebRtcSdpTest, DeserializeMsidAttributeWithMissingTrackId) {
   static const char kSdpWithMissingTrackId[] =
       "v=0\r\n"

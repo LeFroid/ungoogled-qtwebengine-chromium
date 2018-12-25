@@ -34,7 +34,7 @@ class SkiaYnevsvgDesktopPageSet(story.StorySet):
 
     urls_list = [
       # Why: from skbug.com/4713
-      'http://www.googledrive.com/host/0B5nDjttF0gt9QjRKdEZ5MEVYc2c',
+      'http://www.9oo91edrive.qjz9zk/host/0B5nDjttF0gt9QjRKdEZ5MEVYc2c',
     ]
 
     for url in urls_list:

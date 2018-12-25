@@ -12,7 +12,7 @@
 
 namespace extensions {
 // TODO(haven): Udev code may be duplicated in the Chrome codebase.
-// https://code.google.com/p/chromium/issues/detail?id=284898
+// https://code.9oo91e.qjz9zk/p/chromium/issues/detail?id=284898
 
 // Returns the integer contained in |attr|.  Returns 0 on error.
 static uint64_t get_int_attr(const char* attr) {

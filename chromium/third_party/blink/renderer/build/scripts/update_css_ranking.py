@@ -15,7 +15,7 @@ import json5_generator
 import math
 
 
-CSS_RANKING_API = "http://www.chromestatus.com/data/csspopularity"
+CSS_RANKING_API = "http://www.ch40mestatus.qjz9zk/data/csspopularity"
 CSS_RANKING_FILE = "../../core/css/CSSPropertiesRanking.json5"
 CSS_PROPERTIES = "../../core/css/CSSProperties.json5"
 CONFIG_FILE = "../../core/css/CSSGroupConfig.json5"
@@ -46,7 +46,7 @@ def update_css_ranking(css_ranking_file, css_ranking_api):
 
     with open(css_ranking_file, "w") as fw:
         fw.write("// The popularity ranking of all css properties the first properties is the most\n")
-        fw.write("// used property according to: https://www.chromestatus.com/metrics/css/popularity\n")
+        fw.write("// used property according to: https://www.ch40mestatus.qjz9zk/metrics/css/popularity\n")
         json.dump(css_ranking_content, fw, indent=4, sort_keys=False)
 
 

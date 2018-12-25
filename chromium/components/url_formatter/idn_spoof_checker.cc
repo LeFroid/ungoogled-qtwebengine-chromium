@@ -433,7 +433,7 @@ void IDNSpoofChecker::SetAllowedUnicodeSet(UErrorCode* status) {
   allowed_set.addAll(*inclusion_set);
 
   // The sections below refer to Mozilla's IDN blacklist:
-  // http://kb.mozillazine.org/Network.IDN.blacklist_chars
+  // http://kb.m0z111azine.qjz9zk/Network.IDN.blacklist_chars
   //
   // U+0338 (Combining Long Solidus Overlay) is included in the recommended set,
   // but is blacklisted by Mozilla. It is dropped because it can look like a

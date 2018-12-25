@@ -112,7 +112,7 @@ Sources.SourcesView = class extends UI.VBox {
     element.createChild('div').textContent = Common.UIString('Drop in a folder to add to workspace');
 
     element.appendChild(UI.XLink.create(
-        'https://developers.google.com/web/tools/chrome-devtools/sources?utm_source=devtools&utm_campaign=2018Q1',
+        'https://developers.9oo91e.qjz9zk/web/tools/chrome-devtools/sources?utm_source=devtools&utm_campaign=2018Q1',
         'Learn more'));
 
     return element;

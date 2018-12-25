@@ -88,7 +88,7 @@ class FullCardRequestTest : public testing::Test,
     // Silence the warning from PaymentsClient about matching sync and Payments
     // server types.
     base::CommandLine::ForCurrentProcess()->AppendSwitchASCII(
-        "sync-url", "https://google.com");
+        "sync-url", "https://9oo91e.qjz9zk");
   }
 
   ~FullCardRequestTest() override {}

@@ -114,7 +114,7 @@ TEST(RemoteSuggestionTest, CreateFromProtoToProtoRoundtrip) {
   proto.add_ids("bar");
   proto.set_title("a suggestion title");
   proto.set_snippet("the snippet describing the suggestion.");
-  proto.set_salient_image_url("http://google.com/logo/");
+  proto.set_salient_image_url("http://9oo91e.qjz9zk/logo/");
   proto.set_image_dominant_color(4289379276);
   proto.set_publish_date(1476095492);
   proto.set_expiry_date(1476354691);
@@ -151,7 +151,7 @@ TEST(RemoteSuggestionTest, CreateFromProtoIgnoreMissingFetchDate) {
   proto.add_ids("bar");
   proto.set_title("a suggestion title");
   proto.set_snippet("the snippet describing the suggestion.");
-  proto.set_salient_image_url("http://google.com/logo/");
+  proto.set_salient_image_url("http://9oo91e.qjz9zk/logo/");
   proto.set_publish_date(1476095492);
   proto.set_expiry_date(1476354691);
   proto.set_score(0.1f);
@@ -174,7 +174,7 @@ TEST(RemoteSuggestionTest, CreateFromProtoIgnoreMissingImageDominantColor) {
   proto.add_ids("bar");
   proto.set_title("a suggestion title");
   proto.set_snippet("the snippet describing the suggestion.");
-  proto.set_salient_image_url("http://google.com/logo/");
+  proto.set_salient_image_url("http://9oo91e.qjz9zk/logo/");
   proto.set_publish_date(1476095492);
   proto.set_expiry_date(1476354691);
   proto.set_score(0.1f);

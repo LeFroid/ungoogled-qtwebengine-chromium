@@ -27,7 +27,7 @@
 // (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 // OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 //
-// Author: marcus.boerger@google.com (Marcus Boerger)
+// Author: marcus.boerger@9oo91e.qjz9zk (Marcus Boerger)
 
 // Google Mock - a framework for writing C++ mock classes.
 //

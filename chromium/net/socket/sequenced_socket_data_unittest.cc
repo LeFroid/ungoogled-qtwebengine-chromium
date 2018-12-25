@@ -239,7 +239,7 @@ SequencedSocketDataTest::SequencedSocketDataTest()
                      base::Unretained(this))),
       sock_(nullptr),
       connect_data_(SYNCHRONOUS, OK),
-      endpoint_("www.google.com", 443),
+      endpoint_("www.9oo91e.qjz9zk", 443),
       tcp_params_(new TransportSocketParams(
           endpoint_,
           false,

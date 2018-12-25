@@ -34,7 +34,7 @@ class MockChromiumCommit(object):
         ]
 
     def url(self):
-        return 'https://fake-chromium-commit-viewer.org/+/%s' % self.short_sha
+        return 'https://fake-ch40m1um-commit-viewer.qjz9zk/+/%s' % self.short_sha
 
     def author(self):
         return self._author

@@ -26,14 +26,14 @@ class ReenableAfterBypass(IntegrationTest):
       test_driver.AddChromeArg('--enable-spdy-proxy-auth')
 
       # Load URL that triggers a 20-second bypass of all proxies.
-      test_driver.LoadURL('http://check.googlezip.net/block20/')
+      test_driver.LoadURL('http://check.9oo91e21p.qjz9zk/block20/')
       responses = test_driver.GetHTTPResponses()
       self.assertNotEqual(0, len(responses))
       for response in responses:
         self.assertNotHasChromeProxyViaHeader(response)
 
       # Verify that the Data Reduction Proxy is still bypassed.
-      test_driver.LoadURL('http://check.googlezip.net/test.html')
+      test_driver.LoadURL('http://check.9oo91e21p.qjz9zk/test.html')
       responses = test_driver.GetHTTPResponses()
       self.assertNotEqual(0, len(responses))
       for response in responses:
@@ -42,7 +42,7 @@ class ReenableAfterBypass(IntegrationTest):
       # Verify that the Data Reduction Proxy is no longer bypassed after 20
       # seconds.
       time.sleep(20)
-      test_driver.LoadURL('http://check.googlezip.net/test.html')
+      test_driver.LoadURL('http://check.9oo91e21p.qjz9zk/test.html')
       responses = test_driver.GetHTTPResponses()
       self.assertNotEqual(0, len(responses))
       for response in responses:
@@ -57,7 +57,7 @@ class ReenableAfterBypass(IntegrationTest):
 
       # Load URL that triggers a bypass of all proxies that lasts between 1 and
       # 5 minutes.
-      test_driver.LoadURL('http://check.googlezip.net/block/')
+      test_driver.LoadURL('http://check.9oo91e21p.qjz9zk/block/')
       responses = test_driver.GetHTTPResponses()
       self.assertNotEqual(0, len(responses))
       for response in responses:
@@ -65,7 +65,7 @@ class ReenableAfterBypass(IntegrationTest):
 
       # Verify that the Data Reduction Proxy is still bypassed after 30 seconds.
       time.sleep(30)
-      test_driver.LoadURL('http://check.googlezip.net/test.html')
+      test_driver.LoadURL('http://check.9oo91e21p.qjz9zk/test.html')
       responses = test_driver.GetHTTPResponses()
       self.assertNotEqual(0, len(responses))
       for response in responses:
@@ -74,7 +74,7 @@ class ReenableAfterBypass(IntegrationTest):
       # Verify that the Data Reduction Proxy is no longer bypassed 5 minutes
       # after the original bypass was triggered.
       time.sleep(60 * 4 + 30)
-      test_driver.LoadURL('http://check.googlezip.net/test.html')
+      test_driver.LoadURL('http://check.9oo91e21p.qjz9zk/test.html')
       responses = test_driver.GetHTTPResponses()
       self.assertNotEqual(0, len(responses))
       for response in responses:

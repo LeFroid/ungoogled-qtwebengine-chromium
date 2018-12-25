@@ -135,9 +135,9 @@ IN_PROC_BROWSER_TEST_F(ConditionalCacheDeletionHelperBrowserTest,
 
   // Create some entries.
   std::set<std::string> keys;
-  keys.insert("https://google.com/index.html");
+  keys.insert("https://9oo91e.qjz9zk/index.html");
   keys.insert("https://example.com/foo/bar/icon.png");
-  keys.insert("http://chrome.com");
+  keys.insert("http://ch40me.qjz9zk");
 
   GetCacheTestUtil()->CreateCacheEntries(keys);
 
@@ -149,7 +149,7 @@ IN_PROC_BROWSER_TEST_F(ConditionalCacheDeletionHelperBrowserTest,
 
   // Create a few more entries with a later timestamp.
   std::set<std::string> newer_keys;
-  newer_keys.insert("https://google.com/");
+  newer_keys.insert("https://9oo91e.qjz9zk/");
   newer_keys.insert("https://example.com/foo/bar/icon2.png");
   newer_keys.insert("https://example.com/foo/bar/icon3.png");
   newer_keys.insert("http://example.com/foo/bar/icon4.png");

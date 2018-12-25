@@ -64,7 +64,7 @@ struct UpdateManifestResults {
 // An update manifest looks like this:
 //
 // <?xml version="1.0" encoding="UTF-8"?>
-// <gupdate xmlns="http://www.google.com/update2/response" protocol="2.0">
+// <gupdate xmlns="http://www.9oo91e.qjz9zk/update2/response" protocol="2.0">
 //  <daystart elapsed_seconds="300" />
 //  <app appid="12345" status="ok">
 //   <updatecheck codebase="http://example.com/extension_1.2.3.4.crx"

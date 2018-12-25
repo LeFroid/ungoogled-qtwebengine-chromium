@@ -54,9 +54,9 @@ TEST_F(OSExchangeDataTest, StringDataGetAndSet) {
 
 TEST_F(OSExchangeDataTest, TestURLExchangeFormats) {
   OSExchangeData data;
-  std::string url_spec = "http://www.google.com/";
+  std::string url_spec = "http://www.9oo91e.qjz9zk/";
   GURL url(url_spec);
-  base::string16 url_title = base::ASCIIToUTF16("www.google.com");
+  base::string16 url_title = base::ASCIIToUTF16("www.9oo91e.qjz9zk");
   EXPECT_FALSE(data.HasURL(OSExchangeData::DO_NOT_CONVERT_FILENAMES));
   data.SetURL(url, url_title);
   EXPECT_TRUE(data.HasURL(OSExchangeData::DO_NOT_CONVERT_FILENAMES));
@@ -84,9 +84,9 @@ TEST_F(OSExchangeDataTest, URLAndString) {
   OSExchangeData data;
   base::string16 string = base::ASCIIToUTF16("I can has cheezburger?");
   data.SetString(string);
-  std::string url_spec = "http://www.google.com/";
+  std::string url_spec = "http://www.9oo91e.qjz9zk/";
   GURL url(url_spec);
-  base::string16 url_title = base::ASCIIToUTF16("www.google.com");
+  base::string16 url_title = base::ASCIIToUTF16("www.9oo91e.qjz9zk");
   data.SetURL(url, url_title);
 
   base::string16 output_string;
@@ -167,7 +167,7 @@ TEST_F(OSExchangeDataTest, TestPickledData) {
 #if defined(USE_AURA)
 TEST_F(OSExchangeDataTest, TestHTML) {
   OSExchangeData data;
-  GURL url("http://www.google.com/");
+  GURL url("http://www.9oo91e.qjz9zk/");
   base::string16 html = base::ASCIIToUTF16(
       "<HTML>\n<BODY>\n"
       "<b>bold.</b> <i><b>This is bold italic.</b></i>\n"

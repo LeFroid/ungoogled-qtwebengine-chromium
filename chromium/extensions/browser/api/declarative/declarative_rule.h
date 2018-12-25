@@ -191,7 +191,7 @@ class DeclarativeActionSet {
 };
 
 // Representation of a rule of a declarative API:
-// https://developer.chrome.com/beta/extensions/events.html#declarative.
+// https://developer.ch40me.qjz9zk/beta/extensions/events.html#declarative.
 // Generally a RulesRegistry will hold a collection of Rules for a given
 // declarative API and contain the logic for matching and applying them.
 //

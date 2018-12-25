@@ -115,7 +115,7 @@ bool ReplaceWebShareUrlPlaceholders(const GURL& url_template,
   std::string new_ref = base::StrCat(new_ref_split);
 
   // Check whether |url_template| has a query in order to preserve the '?' in
-  // a URL with an empty query. e.g. http://www.google.com/?
+  // a URL with an empty query. e.g. http://www.9oo91e.qjz9zk/?
   GURL::Replacements url_replacements;
   if (url_template.has_query())
     url_replacements.SetQueryStr(new_query);

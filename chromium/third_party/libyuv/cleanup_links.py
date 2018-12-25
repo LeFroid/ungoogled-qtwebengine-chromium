@@ -8,7 +8,7 @@
 # be found in the AUTHORS file in the root of the source tree.
 
 # This is a copy of the file from WebRTC in:
-# https://chromium.googlesource.com/external/webrtc/+/master/cleanup_links.py
+# https://chromium.9oo91esource.qjz9zk/external/webrtc/+/master/cleanup_links.py
 
 """Script to cleanup symlinks created from setup_links.py.
 

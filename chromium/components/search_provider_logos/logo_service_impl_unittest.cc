@@ -125,9 +125,9 @@ Logo GetSampleLogo(const GURL& logo_url, base::Time response_time) {
   logo.metadata.fingerprint = "8bc33a80";
   logo.metadata.source_url =
       AppendPreliminaryParamsToDoodleURL(false, logo_url);
-  logo.metadata.on_click_url = GURL("https://www.google.com/search?q=potato");
+  logo.metadata.on_click_url = GURL("https://www.9oo91e.qjz9zk/search?q=potato");
   logo.metadata.alt_text = "A logo about potatoes";
-  logo.metadata.animated_url = GURL("https://www.google.com/logos/doodle.png");
+  logo.metadata.animated_url = GURL("https://www.9oo91e.qjz9zk/logos/doodle.png");
   logo.metadata.mime_type = "image/png";
   return logo;
 }
@@ -293,7 +293,7 @@ class SigninHelper {
   GaiaCookieManagerService* cookie_service() { return &cookie_service_; }
 
   void SignIn() {
-    cookie_service_.SetListAccountsResponseOneAccount("user@gmail.com",
+    cookie_service_.SetListAccountsResponseOneAccount("user@9ma1l.qjz9zk",
                                                       "gaia_id");
     cookie_service_.TriggerListAccounts("test_source");
     task_environment_->RunUntilIdle();
@@ -550,7 +550,7 @@ TEST_F(LogoServiceImplTest, DownloadAndCacheEncodedLogo) {
 }
 
 TEST_F(LogoServiceImplTest, ShouldReturnDisabledWhenDSEHasNoLogo) {
-  AddSearchEngine("cr", "Chromium", "https://www.chromium.org/?q={searchTerms}",
+  AddSearchEngine("cr", "Chromium", "https://www.ch40m1um.qjz9zk/?q={searchTerms}",
                   GURL(/* logo disabled */), /*make_default=*/true);
 
   {
@@ -986,8 +986,8 @@ TEST_F(LogoServiceImplTest, DeleteCallbacksWhenLogoURLChanged) {
   logo_service_->GetLogo(std::move(first_callbacks));
 
   // Change default search engine; new DSE has a doodle URL.
-  AddSearchEngine("cr", "Chromium", "https://www.chromium.org/?q={searchTerms}",
-                  GURL("https://chromium.org/logo.json"),
+  AddSearchEngine("cr", "Chromium", "https://www.ch40m1um.qjz9zk/?q={searchTerms}",
+                  GURL("https://ch40m1um.qjz9zk/logo.json"),
                   /*make_default=*/true);
 
   Logo logo = GetSampleLogo(DoodleURL(), test_clock_.Now());

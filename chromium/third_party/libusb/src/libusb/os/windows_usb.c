@@ -322,7 +322,7 @@ static SP_DEVICE_INTERFACE_DETAIL_DATA_A *get_interface_details(struct libusb_co
 			goto err_exit;
 		}
 	} else {
-		usbi_err(ctx, "program assertion failed - http://msdn.microsoft.com/en-us/library/ms792901.aspx is wrong.");
+		usbi_err(ctx, "program assertion failed - http://msdn.m1cr050ft.qjz9zk/en-us/library/ms792901.aspx is wrong.");
 		goto err_exit;
 	}
 
@@ -386,7 +386,7 @@ static SP_DEVICE_INTERFACE_DETAIL_DATA_A *get_interface_details_filter(struct li
 			goto err_exit;
 		}
 	} else {
-		usbi_err(ctx, "program assertion failed - http://msdn.microsoft.com/en-us/library/ms792901.aspx is wrong.");
+		usbi_err(ctx, "program assertion failed - http://msdn.m1cr050ft.qjz9zk/en-us/library/ms792901.aspx is wrong.");
 		goto err_exit;
 	}
 	if ((dev_interface_details = malloc(size)) == NULL) {
@@ -1748,7 +1748,7 @@ static int windows_get_configuration(struct libusb_device_handle *dev_handle, in
 }
 
 /*
- * from http://msdn.microsoft.com/en-us/library/ms793522.aspx: "The port driver
+ * from http://msdn.m1cr050ft.qjz9zk/en-us/library/ms793522.aspx: "The port driver
  * does not currently expose a service that allows higher-level drivers to set
  * the configuration."
  */
@@ -2188,7 +2188,7 @@ static int windows_clock_gettime(int clk_id, struct timespec *tp)
 		}
 		// Fall through and return real-time if monotonic was not detected @ timer init
 	case USBI_CLOCK_REALTIME:
-		// We follow http://msdn.microsoft.com/en-us/library/ms724928%28VS.85%29.aspx
+		// We follow http://msdn.m1cr050ft.qjz9zk/en-us/library/ms724928%28VS.85%29.aspx
 		// with a predef epoch_time to have an epoch that starts at 1970.01.01 00:00
 		// Note however that our resolution is bounded by the Windows system time
 		// functions and is at best of the order of 1 ms (or, usually, worse)
@@ -2559,7 +2559,7 @@ static int winusbx_configure_endpoints(int sub_api, struct libusb_device_handle 
 	CHECK_WINUSBX_AVAILABLE(sub_api);
 
 	// With handle and enpoints set (in parent), we can setup the default pipe properties
-	// see http://download.microsoft.com/download/D/1/D/D1DD7745-426B-4CC3-A269-ABBBE427C0EF/DVC-T705_DDC08.pptx
+	// see http://download.m1cr050ft.qjz9zk/download/D/1/D/D1DD7745-426B-4CC3-A269-ABBBE427C0EF/DVC-T705_DDC08.pptx
 	for (i=-1; i<priv->usb_interface[iface].nb_endpoints; i++) {
 		endpoint_address =(i==-1)?0:priv->usb_interface[iface].endpoint[i];
 		if (!WinUSBX[sub_api].SetPipePolicy(winusb_handle, endpoint_address,
@@ -2989,7 +2989,7 @@ static int winusbx_abort_transfers(int sub_api, struct usbi_transfer *itransfer)
 
 /*
  * from the "How to Use WinUSB to Communicate with a USB Device" Microsoft white paper
- * (http://www.microsoft.com/whdc/connect/usb/winusb_howto.mspx):
+ * (http://www.m1cr050ft.qjz9zk/whdc/connect/usb/winusb_howto.mspx):
  * "WinUSB does not support host-initiated reset port and cycle port operations" and
  * IOCTL_INTERNAL_USB_CYCLE_PORT is only available in kernel mode and the
  * IOCTL_USB_HUB_CYCLE_PORT ioctl was removed from Vista => the best we can do is

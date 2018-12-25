@@ -28,15 +28,15 @@ class ExtractComponentsTest(unittest.TestCase):
     with mock.patch('extract_components.scrape_owners', return_value={
         '.': {},
         'dummydir1': {
-            'team': 'dummy-team@chromium.org',
+            'team': 'dummy-team@ch40m1um.qjz9zk',
             'component': 'Dummy>Component',
         },
         'dummydir2': {
-            'team': 'other-dummy-team@chromium.org',
+            'team': 'other-dummy-team@ch40m1um.qjz9zk',
             'component': 'Components>Component2',
         },
         'dummydir1/innerdir1': {
-            'team': 'dummy-specialist-team@chromium.org',
+            'team': 'dummy-specialist-team@ch40m1um.qjz9zk',
             'component': 'Dummy>Component>Subcomponent'
         }
     }):
@@ -48,10 +48,10 @@ class ExtractComponentsTest(unittest.TestCase):
       del result_minus_readme['AAA-README']
       self.assertEqual(result_minus_readme, {
           'component-to-team': {
-              'Components>Component2': 'other-dummy-team@chromium.org',
-              'Dummy>Component': 'dummy-team@chromium.org',
+              'Components>Component2': 'other-dummy-team@ch40m1um.qjz9zk',
+              'Dummy>Component': 'dummy-team@ch40m1um.qjz9zk',
               'Dummy>Component>Subcomponent':
-                  'dummy-specialist-team@chromium.org'
+                  'dummy-specialist-team@ch40m1um.qjz9zk'
           },
           'dir-to-component': {
               'dummydir1': 'Dummy>Component',
@@ -64,16 +64,16 @@ class ExtractComponentsTest(unittest.TestCase):
     with mock.patch('extract_components.scrape_owners', return_value={
         '.': {},
         'dummydir1': {
-            'team': 'dummy-team@chromium.org',
+            'team': 'dummy-team@ch40m1um.qjz9zk',
             'component': 'Dummy>Component',
         },
         'dummydir2': {
-            'team': 'mac-dummy-team@chromium.org',
+            'team': 'mac-dummy-team@ch40m1um.qjz9zk',
             'component': 'Dummy>Component',
             'os': 'Mac'
         },
         'dummydir1/innerdir1': {
-            'team': 'dummy-specialist-team@chromium.org',
+            'team': 'dummy-specialist-team@ch40m1um.qjz9zk',
             'component': 'Dummy>Component>Subcomponent'
         }
     }):
@@ -85,10 +85,10 @@ class ExtractComponentsTest(unittest.TestCase):
       del result_minus_readme['AAA-README']
       self.assertEqual(result_minus_readme, {
           'component-to-team': {
-              'Dummy>Component': 'dummy-team@chromium.org',
-              'Dummy>Component(Mac)': 'mac-dummy-team@chromium.org',
+              'Dummy>Component': 'dummy-team@ch40m1um.qjz9zk',
+              'Dummy>Component(Mac)': 'mac-dummy-team@ch40m1um.qjz9zk',
               'Dummy>Component>Subcomponent':
-                  'dummy-specialist-team@chromium.org'
+                  'dummy-specialist-team@ch40m1um.qjz9zk'
           },
           'dir-to-component': {
               'dummydir1': 'Dummy>Component',
@@ -100,15 +100,15 @@ class ExtractComponentsTest(unittest.TestCase):
     with mock.patch('extract_components.scrape_owners', return_value={
         '.': {},
         'dummydir1': {
-            'team': 'dummy-team@chromium.org',
+            'team': 'dummy-team@ch40m1um.qjz9zk',
             'component': 'Dummy>Component',
         },
         'dummydir2': {
-            'team': 'other-dummy-team@chromium.org',
+            'team': 'other-dummy-team@ch40m1um.qjz9zk',
             'component': 'Dummy>Component',
         },
         'dummydir1/innerdir1': {
-            'team': 'dummy-specialist-team@chromium.org',
+            'team': 'dummy-specialist-team@ch40m1um.qjz9zk',
             'component': 'Dummy>Component>Subcomponent'
         }
     }):
@@ -124,15 +124,15 @@ class ExtractComponentsTest(unittest.TestCase):
     with mock.patch('extract_components.scrape_owners', return_value={
         '.': {},
         'dummydir1': {
-            'team': 'dummy-team@chromium.org',
+            'team': 'dummy-team@ch40m1um.qjz9zk',
             'component': 'Dummy>Component',
         },
         'dummydir2': {
-            'team': 'other-dummy-team@chromium.org',
+            'team': 'other-dummy-team@ch40m1um.qjz9zk',
             'component': 'Dummy>Component',
         },
         'dummydir1/innerdir1': {
-            'team': 'dummy-specialist-team@chromium.org',
+            'team': 'dummy-specialist-team@ch40m1um.qjz9zk',
             'component': 'Dummy>Component>Subcomponent'
         }
     }):
@@ -146,14 +146,14 @@ class ExtractComponentsTest(unittest.TestCase):
     with mock.patch('extract_components.scrape_owners', return_value={
         '.': {},
         'dummydir1': {
-            'team': 'dummy-team@chromium.org',
+            'team': 'dummy-team@ch40m1um.qjz9zk',
             'component': 'Dummy>Component',
         },
         'dummydir2': {
             'component': 'Dummy>Component',
         },
         'dummydir1/innerdir1': {
-            'team': 'dummy-specialist-team@chromium.org',
+            'team': 'dummy-specialist-team@ch40m1um.qjz9zk',
             'component': 'Dummy>Component>Subcomponent'
         }
     }):
@@ -169,14 +169,14 @@ class ExtractComponentsTest(unittest.TestCase):
     with mock.patch('extract_components.scrape_owners', return_value={
         '.': {},
         'dummydir1': {
-            'team': 'dummy-team@chromium.org',
+            'team': 'dummy-team@ch40m1um.qjz9zk',
             'component': 'Dummy>Component',
         },
         'dummydir2': {
             'component': 'Dummy>Component',
         },
         'dummydir1/innerdir1': {
-            'team': 'dummy-specialist-team@chromium.org',
+            'team': 'dummy-specialist-team@ch40m1um.qjz9zk',
             'component': 'Dummy>Component>Subcomponent'
         }
     }):
@@ -195,19 +195,19 @@ class ExtractComponentsTest(unittest.TestCase):
     # We use OrderedDict here to guarantee that mocked version of os.walk
     # returns directories in the specified order (top-down).
     with mock_file_tree(OrderedDict([
-        ('chromium/src', 'boss@chromium.org\n'),
-        ('chromium/src/dir1', 'dummy@chromium.org\n'
-                              '# TEAM: dummy-team@chromium.org\n'
+        ('chromium/src', 'boss@ch40m1um.qjz9zk\n'),
+        ('chromium/src/dir1', 'dummy@ch40m1um.qjz9zk\n'
+                              '# TEAM: dummy-team@ch40m1um.qjz9zk\n'
                               '# COMPONENT: Dummy>Component'),
-        ('chromium/src/dir2', 'dummy2@chromium.org\n'
-                              '# TEAM: other-dummy-team@chromium.org\n'
+        ('chromium/src/dir2', 'dummy2@ch40m1um.qjz9zk\n'
+                              '# TEAM: other-dummy-team@ch40m1um.qjz9zk\n'
                               '# COMPONENT: Dummy>Component2'),
-        ('chromium/src/dir1/subdir', 'dummy@chromium.org'),
+        ('chromium/src/dir1/subdir', 'dummy@ch40m1um.qjz9zk'),
         ('chromium/src/dir2/subdir', None),
         ('third_party/WebKit/LayoutTests/foo',
-             '# TEAM: dummy-team-3@chromium.org\n'),
+             '# TEAM: dummy-team-3@ch40m1um.qjz9zk\n'),
         ('third_party/WebKit/LayoutTests/bar',
-             '# TEAM: dummy-team-3@chromium.org\n'
+             '# TEAM: dummy-team-3@ch40m1um.qjz9zk\n'
              '# COMPONENT: Dummy>Component3\n'),
     ])):
       # TODO(robertocn): remove this testcase and the auxiliary function
@@ -222,9 +222,9 @@ class ExtractComponentsTest(unittest.TestCase):
       del result_minus_readme['AAA-README']
       self.assertDictEqual(result_minus_readme, {
           u'component-to-team': {
-              u'Dummy>Component': u'dummy-team@chromium.org',
-              u'Dummy>Component2': u'other-dummy-team@chromium.org',
-              u'Dummy>Component3': u'dummy-team-3@chromium.org',
+              u'Dummy>Component': u'dummy-team@ch40m1um.qjz9zk',
+              u'Dummy>Component2': u'other-dummy-team@ch40m1um.qjz9zk',
+              u'Dummy>Component3': u'dummy-team-3@ch40m1um.qjz9zk',
           },
           u'dir-to-component': {
               u'chromium/src/dir1': u'Dummy>Component',
@@ -235,18 +235,18 @@ class ExtractComponentsTest(unittest.TestCase):
           },
           u'dir-to-team': {
               u'third_party/WebKit/LayoutTests/foo':
-                  u'dummy-team-3@chromium.org',
+                  u'dummy-team-3@ch40m1um.qjz9zk',
           }})
 
   def testDisplayFile(self):
     with mock.patch('extract_components.scrape_owners', return_value={
         '.': {},
         'dummydir1': {
-            'team': 'dummy-team@chromium.org',
+            'team': 'dummy-team@ch40m1um.qjz9zk',
             'component': 'Dummy>Component',
         },
         'dummydir1/innerdir1': {
-            'team': 'dummy-specialist-team@chromium.org',
+            'team': 'dummy-specialist-team@ch40m1um.qjz9zk',
             'component': 'Dummy>Component>Subcomponent'
         }
     }):

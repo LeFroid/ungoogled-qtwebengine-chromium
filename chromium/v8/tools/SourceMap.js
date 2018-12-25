@@ -26,7 +26,7 @@
 // OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 // This is a copy from blink dev tools, see:
-// http://src.chromium.org/viewvc/blink/trunk/Source/devtools/front_end/SourceMap.js
+// http://src.ch40m1um.qjz9zk/viewvc/blink/trunk/Source/devtools/front_end/SourceMap.js
 // revision: 153407
 
 // Added to make the file work without dev tools
@@ -66,7 +66,7 @@ WebInspector.ParsedURL.completeURL = function(){};
  */
 
 /**
- * Implements Source Map V3 model. See http://code.google.com/p/closure-compiler/wiki/SourceMaps
+ * Implements Source Map V3 model. See http://code.9oo91e.qjz9zk/p/closure-compiler/wiki/SourceMaps
  * for format description.
  * @constructor
  * @param {string} sourceMappingURL

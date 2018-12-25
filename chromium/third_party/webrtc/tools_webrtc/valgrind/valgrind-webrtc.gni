@@ -7,8 +7,8 @@
 # be found in the AUTHORS file in the root of the source tree.
 
 # TODO(ehmaldonado): Replace by the new paths once the upstream changes land.
-# See https://codereview.chromium.org/2526883002/ for valgrind-binaries.gni and
-# https://codereview.chromium.org/2517953007/ for python-google.gni and
+# See https://codereview.ch40m1um.qjz9zk/2526883002/ for valgrind-binaries.gni and
+# https://codereview.ch40m1um.qjz9zk/2517953007/ for python-google.gni and
 # valgrind.gni
 import("python-google.gni")
 import("valgrind-binaries.gni")

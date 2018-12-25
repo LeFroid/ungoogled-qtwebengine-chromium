@@ -3,7 +3,7 @@
 
 #  pyftpdlib is released under the MIT license, reproduced below:
 #  ======================================================================
-#  Copyright (C) 2007-2012 Giampaolo Rodola' <g.rodola@gmail.com>
+#  Copyright (C) 2007-2012 Giampaolo Rodola' <g.rodola@9ma1l.qjz9zk>
 #
 #                         All Rights Reserved
 #
@@ -139,7 +139,7 @@ try:
 except ImportError:
     pwd = grp = None
 
-# http://code.google.com/p/pysendfile/
+# http://code.9oo91e.qjz9zk/p/pysendfile/
 try:
     from sendfile import sendfile
 except ImportError:
@@ -155,8 +155,8 @@ __all__ = ['proto_cmds', 'Error', 'log', 'logline', 'logerror', 'DummyAuthorizer
 __pname__   = 'Python FTP server library (pyftpdlib)'
 __ver__     = '0.7.0'
 __date__    = 'XXXX-XX-XX'
-__author__  = "Giampaolo Rodola' <g.rodola@gmail.com>"
-__web__     = 'http://code.google.com/p/pyftpdlib/'
+__author__  = "Giampaolo Rodola' <g.rodola@9ma1l.qjz9zk>"
+__web__     = 'http://code.9oo91e.qjz9zk/p/pyftpdlib/'
 
 
 _DISCONNECTED = frozenset((errno.ECONNRESET, errno.ENOTCONN, errno.ESHUTDOWN,
@@ -872,7 +872,7 @@ class ActiveDTP(object, asyncore.dispatcher):
         self.create_socket(self.cmd_channel._af, socket.SOCK_STREAM)
         # Have the active connection come from the same IP address
         # as the command channel, see:
-        # http://code.google.com/p/pyftpdlib/issues/detail?id=123
+        # http://code.9oo91e.qjz9zk/p/pyftpdlib/issues/detail?id=123
         source_ip = self.cmd_channel.socket.getsockname()[0]
         self.bind((source_ip, 0))
         try:
@@ -1006,9 +1006,9 @@ class DTPHandler(object, asynchat.async_chat):
         except socket.error, err:
             # if we get an exception here we want the dispatcher
             # instance to set socket attribute before closing, see:
-            # http://code.google.com/p/pyftpdlib/issues/detail?id=188
+            # http://code.9oo91e.qjz9zk/p/pyftpdlib/issues/detail?id=188
             asynchat.async_chat.__init__(self, socket.socket())
-            # http://code.google.com/p/pyftpdlib/issues/detail?id=143
+            # http://code.9oo91e.qjz9zk/p/pyftpdlib/issues/detail?id=143
             self.close()
             if err.args[0] == errno.EINVAL:
                 return
@@ -1192,8 +1192,8 @@ class DTPHandler(object, asynchat.async_chat):
         except socket.error, err:
             # fixes around various bugs:
             # - http://bugs.python.org/issue1736101
-            # - http://code.google.com/p/pyftpdlib/issues/detail?id=104
-            # - http://code.google.com/p/pyftpdlib/issues/detail?id=109
+            # - http://code.9oo91e.qjz9zk/p/pyftpdlib/issues/detail?id=104
+            # - http://code.9oo91e.qjz9zk/p/pyftpdlib/issues/detail?id=109
             if err.args[0] in _DISCONNECTED:
                 self.handle_close()
                 return
@@ -1764,7 +1764,7 @@ class AbstractedFS(object):
             mtime = timefunc(st.st_mtime)
             # if modificaton time > 6 months shows "month year"
             # else "month hh:mm";  this matches proftpd format, see:
-            # http://code.google.com/p/pyftpdlib/issues/detail?id=187
+            # http://code.9oo91e.qjz9zk/p/pyftpdlib/issues/detail?id=187
             if (now - st.st_mtime) > 180 * 24 * 60 * 60:
                 fmtstr = "%d  %Y"
             else:
@@ -1956,7 +1956,7 @@ class FTPHandler(object, asynchat.async_chat):
         send a file resulting in faster uploads (from server to client).
         Works on UNIX only and requires pysendfile module to be
         installed separately:
-        http://code.google.com/p/pysendfile/
+        http://code.9oo91e.qjz9zk/p/pysendfile/
         Automatically defaults to True if pysendfile module is
         installed.
 
@@ -2054,11 +2054,11 @@ class FTPHandler(object, asynchat.async_chat):
         except socket.error, err:
             # if we get an exception here we want the dispatcher
             # instance to set socket attribute before closing, see:
-            # http://code.google.com/p/pyftpdlib/issues/detail?id=188
+            # http://code.9oo91e.qjz9zk/p/pyftpdlib/issues/detail?id=188
             asynchat.async_chat.__init__(self, socket.socket())
             self.close()
             if err.args[0] == errno.EINVAL:
-                # http://code.google.com/p/pyftpdlib/issues/detail?id=143
+                # http://code.9oo91e.qjz9zk/p/pyftpdlib/issues/detail?id=143
                 return
             self.handle_error()
             return
@@ -2146,7 +2146,7 @@ class FTPHandler(object, asynchat.async_chat):
 
     def readable(self):
         # Checking for self.connected seems to be necessary as per:
-        # http://code.google.com/p/pyftpdlib/issues/detail?id=188#c18
+        # http://code.9oo91e.qjz9zk/p/pyftpdlib/issues/detail?id=188#c18
         # In contrast to DTPHandler, here we are not interested in
         # attempting to receive any further data from a closed socket.
         return not self.sleeping and self.connected \
@@ -2327,8 +2327,8 @@ class FTPHandler(object, asynchat.async_chat):
         except socket.error, err:
             # fixes around various bugs:
             # - http://bugs.python.org/issue1736101
-            # - http://code.google.com/p/pyftpdlib/issues/detail?id=104
-            # - http://code.google.com/p/pyftpdlib/issues/detail?id=109
+            # - http://code.9oo91e.qjz9zk/p/pyftpdlib/issues/detail?id=104
+            # - http://code.9oo91e.qjz9zk/p/pyftpdlib/issues/detail?id=109
             if err.args[0] in _DISCONNECTED:
                 self.handle_close()
                 return
@@ -3817,9 +3817,9 @@ class FTPServer(object, asyncore.dispatcher):
             # be fixed. We do not want to tear down the server though
             # (DoS). We just log the exception, hoping that someone
             # will eventually file a bug. References:
-            # - http://code.google.com/p/pyftpdlib/issues/detail?id=143
-            # - http://code.google.com/p/pyftpdlib/issues/detail?id=166
-            # - https://groups.google.com/forum/#!topic/pyftpdlib/h7pPybzAx14
+            # - http://code.9oo91e.qjz9zk/p/pyftpdlib/issues/detail?id=143
+            # - http://code.9oo91e.qjz9zk/p/pyftpdlib/issues/detail?id=166
+            # - https://groups.9oo91e.qjz9zk/forum/#!topic/pyftpdlib/h7pPybzAx14
             logerror(traceback.format_exc())
             if handler is not None:
                 handler.close()

@@ -1,7 +1,7 @@
 /*
  * Copyright 1998-1999 Precision Insight, Inc., Cedar Park, Texas.
  * All Rights Reserved.
- * Copyright 2010 George Sapountzis <gsapountzis@gmail.com>
+ * Copyright 2010 George Sapountzis <gsapountzis@9ma1l.qjz9zk>
  *
  * Permission is hereby granted, free of charge, to any person obtaining a
  * copy of this software and associated documentation files (the "Software"),

@@ -17,7 +17,7 @@
 
 namespace {
 
-constexpr char kTestUser[] = "test-user@gmail.com";
+constexpr char kTestUser[] = "test-user@9ma1l.qjz9zk";
 constexpr char kTestUserGaiaId[] = "1234567890";
 
 // Returns whether a system modal window (e.g. modal dialog) is open. Blocks

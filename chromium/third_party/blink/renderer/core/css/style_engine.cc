@@ -186,7 +186,7 @@ CSSStyleSheet& StyleEngine::EnsureInspectorStyleSheet() {
       StyleSheetContents::Create(CSSParserContext::Create(*document_));
   inspector_style_sheet_ = CSSStyleSheet::Create(contents, *document_);
   MarkDocumentDirty();
-  // TODO(futhark@chromium.org): Making the active stylesheets up-to-date here
+  // TODO(futhark@ch40m1um.qjz9zk): Making the active stylesheets up-to-date here
   // is required by some inspector tests, at least. I theory this should not be
   // necessary. Need to investigate to figure out if/why.
   UpdateActiveStyle();
@@ -288,7 +288,7 @@ void StyleEngine::WatchedSelectorsChanged() {
   DCHECK(IsMaster());
   DCHECK(global_rule_set_);
   global_rule_set_->InitWatchedSelectorsRuleSet(GetDocument());
-  // TODO(futhark@chromium.org): Should be able to use RuleSetInvalidation here.
+  // TODO(futhark@ch40m1um.qjz9zk): Should be able to use RuleSetInvalidation here.
   GetDocument().SetNeedsStyleRecalc(
       kSubtreeStyleChange, StyleChangeReasonForTracing::Create(
                                StyleChangeReason::kDeclarativeContent));

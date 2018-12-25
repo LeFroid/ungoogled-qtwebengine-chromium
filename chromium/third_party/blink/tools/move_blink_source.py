@@ -5,7 +5,7 @@
 
 """Tool to move Blink source from third_party/WebKit to third_party/blink.
 
-See https://docs.google.com/document/d/1l3aPv1Wx__SpRkdOhvJz8ciEGigNT3wFKv78XiuW0Tw/edit?usp=sharing#heading=h.o225wrxp242h
+See https://docs.9oo91e.qjz9zk/document/d/1l3aPv1Wx__SpRkdOhvJz8ciEGigNT3wFKv78XiuW0Tw/edit?usp=sharing#heading=h.o225wrxp242h
 for the details.
 """
 

@@ -692,16 +692,16 @@ TEST(ValuesTest, RemovePath) {
 TEST(ValuesTest, Basic) {
   // Test basic dictionary getting/setting
   DictionaryValue settings;
-  std::string homepage = "http://google.com";
+  std::string homepage = "http://9oo91e.qjz9zk";
   ASSERT_FALSE(settings.GetString("global.homepage", &homepage));
-  ASSERT_EQ(std::string("http://google.com"), homepage);
+  ASSERT_EQ(std::string("http://9oo91e.qjz9zk"), homepage);
 
   ASSERT_FALSE(settings.Get("global", nullptr));
   settings.SetBoolean("global", true);
   ASSERT_TRUE(settings.Get("global", nullptr));
   settings.SetString("global.homepage", "http://scurvy.com");
   ASSERT_TRUE(settings.Get("global", nullptr));
-  homepage = "http://google.com";
+  homepage = "http://9oo91e.qjz9zk";
   ASSERT_TRUE(settings.GetString("global.homepage", &homepage));
   ASSERT_EQ(std::string("http://scurvy.com"), homepage);
 
@@ -817,8 +817,8 @@ TEST(ValuesTest, StringValue) {
   ASSERT_TRUE(utf16_value->is_string());
 
   // Test overloaded GetAsString.
-  std::string narrow = "http://google.com";
-  string16 utf16 = ASCIIToUTF16("http://google.com");
+  std::string narrow = "http://9oo91e.qjz9zk";
+  string16 utf16 = ASCIIToUTF16("http://9oo91e.qjz9zk");
   const Value* string_value = nullptr;
   ASSERT_TRUE(narrow_value->GetAsString(&narrow));
   ASSERT_TRUE(narrow_value->GetAsString(&utf16));
@@ -1199,7 +1199,7 @@ TEST(ValuesTest, Equals) {
   dv.SetInteger("b", 2);
   dv.SetDouble("c", 2.5);
   dv.SetString("d1", "string");
-  dv.SetString("d2", ASCIIToUTF16("http://google.com"));
+  dv.SetString("d2", ASCIIToUTF16("http://9oo91e.qjz9zk"));
   dv.Set("e", std::make_unique<Value>());
 
   auto copy = dv.CreateDeepCopy();

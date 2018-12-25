@@ -15,8 +15,8 @@ namespace {
 const char kTitle[] = "testPageTitle";
 const char kDescription[] = "test page description";
 const char kPath[] = "/sdcard/Download/page.mhtml";
-const char kUri[] = "https://www.google.com";
-const char kReferer[] = "https://google.com";
+const char kUri[] = "https://www.9oo91e.qjz9zk";
+const char kReferer[] = "https://9oo91e.qjz9zk";
 const long kTestLength = 1024;
 const long kTestDownloadId = 42;
 const long kDefaultDownloadId = 1;

@@ -15,7 +15,7 @@ Example:
   tools/resources/find_unused_resouces.py chrome/browser/browser_resources.grd
 """
 
-__author__ = 'jamescook@chromium.org (James Cook)'
+__author__ = 'jamescook@ch40m1um.qjz9zk (James Cook)'
 
 
 import os

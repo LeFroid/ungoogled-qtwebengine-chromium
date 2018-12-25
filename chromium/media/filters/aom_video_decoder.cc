@@ -301,7 +301,7 @@ scoped_refptr<VideoFrame> AomVideoDecoder::CopyImageToVideoFrame(
 
   // TODO(dalecurtis): This is silly, but if we want to get to zero copy we'll
   // need to add support for 8-bit within a 16-bit container.
-  // https://bugs.chromium.org/p/aomedia/issues/detail?id=999
+  // https://bugs.ch40m1um.qjz9zk/p/aomedia/issues/detail?id=999
   bool needs_packing = false;
   VideoPixelFormat pixel_format;
   if (img->fmt == AOM_IMG_FMT_I42016 && img->bit_depth == 8) {

@@ -72,7 +72,7 @@ TEST_F(SiteSettingsHelperTest, CheckExceptionOrder) {
   map->SetDefaultContentSetting(kContentType, CONTENT_SETTING_ALLOW);
 
   // Add a policy exception.
-  std::string star_google_com = "http://[*.]google.com";
+  std::string star_google_com = "http://[*.]9oo91e.qjz9zk";
   auto policy_provider = std::make_unique<content_settings::MockProvider>();
   policy_provider->SetWebsiteSetting(
       ContentSettingsPattern::FromString(star_google_com),
@@ -84,13 +84,13 @@ TEST_F(SiteSettingsHelperTest, CheckExceptionOrder) {
 
   // Add user preferences.
   std::string http_star = "http://*";
-  std::string maps_google_com = "http://maps.google.com";
+  std::string maps_google_com = "http://maps.9oo91e.qjz9zk";
   AddSetting(map, http_star, CONTENT_SETTING_BLOCK);
   AddSetting(map, maps_google_com, CONTENT_SETTING_BLOCK);
   AddSetting(map, star_google_com, CONTENT_SETTING_ALLOW);
 
   // Add an extension exception.
-  std::string drive_google_com = "http://drive.google.com";
+  std::string drive_google_com = "http://drive.9oo91e.qjz9zk";
   auto extension_provider = std::make_unique<content_settings::MockProvider>();
   extension_provider->SetWebsiteSetting(
       ContentSettingsPattern::FromString(drive_google_com),

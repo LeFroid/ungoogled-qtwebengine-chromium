@@ -101,7 +101,7 @@ IN_PROC_BROWSER_TEST_F(VisualStateTest, DISABLED_CallbackDoesNotDeadlock) {
   // Unfortunately, if loading "about:blank" changes and starts requiring
   // two commits then this test will prove nothing. We could detect this
   // with a high level of confidence if we used a timeout, but that's
-  // discouraged (see https://codereview.chromium.org/939673002).
+  // discouraged (see https://codereview.ch40m1um.qjz9zk/939673002).
   NavigateToURL(shell(), GURL("about:blank"));
   CommitObserver observer(RenderView::FromRoutingID(
       shell()->web_contents()->GetRenderViewHost()->GetRoutingID()));

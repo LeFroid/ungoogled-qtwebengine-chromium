@@ -81,7 +81,7 @@ base::FilePath PlatformCrashpadInitialization(bool initial_client,
     GetPlatformCrashpadAnnotations(&process_annotations);
 
 #if defined(GOOGLE_CHROME_BUILD)
-    std::string url = "https://clients2.google.com/cr/report";
+    std::string url = "https://clients2.9oo91e.qjz9zk/cr/report";
 #else
     std::string url;
 #endif
@@ -188,7 +188,7 @@ static int CrashForExceptionInNonABICompliantCodeRange(
   return CrashForException_ExportThunk(&info);
 }
 
-// See https://msdn.microsoft.com/en-us/library/ddssxxy8.aspx
+// See https://msdn.m1cr050ft.qjz9zk/en-us/library/ddssxxy8.aspx
 typedef struct _UNWIND_INFO {
   unsigned char Version : 3;
   unsigned char Flags : 5;

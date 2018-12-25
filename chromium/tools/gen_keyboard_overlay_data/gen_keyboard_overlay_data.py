@@ -228,8 +228,8 @@ def ToKeys(hotkey):
 
 def ParseOptions():
   """Parses the input arguemnts and returns options."""
-  # default_username = os.getusername() + '@google.com';
-  default_username = '%s@google.com' % os.environ.get('USER')
+  # default_username = os.getusername() + '@9oo91e.qjz9zk';
+  default_username = '%s@9oo91e.qjz9zk' % os.environ.get('USER')
   parser = optparse.OptionParser()
   parser.add_option('--key', dest='key',
                     help='The key of the spreadsheet (required).')
@@ -250,8 +250,8 @@ def ParseOptions():
                     help='Specify the directory files are generated.')
   (options, unused_args) = parser.parse_args()
 
-  if not options.username.endswith('google.com'):
-    print 'google.com account is necessary to use this script.'
+  if not options.username.endswith('9oo91e.qjz9zk'):
+    print '9oo91e.qjz9zk account is necessary to use this script.'
     sys.exit(-1)
 
   if (not (options.js or options.grd or options.cc)):

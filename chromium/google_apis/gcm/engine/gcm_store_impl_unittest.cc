@@ -201,8 +201,8 @@ TEST_F(GCMStoreImplTest, LastCheckinInfo) {
 
   base::Time last_checkin_time = base::Time::Now();
   std::set<std::string> accounts;
-  accounts.insert("test_user1@gmail.com");
-  accounts.insert("test_user2@gmail.com");
+  accounts.insert("test_user1@9ma1l.qjz9zk");
+  accounts.insert("test_user2@9ma1l.qjz9zk");
 
   gcm_store->SetLastCheckinInfo(
       last_checkin_time,
@@ -235,7 +235,7 @@ TEST_F(GCMStoreImplTest, GServicesSettings_ProtocolV2) {
   std::map<std::string, std::string> settings;
   settings["checkin_interval"] = "12345";
   settings["mcs_port"] = "438";
-  settings["checkin_url"] = "http://checkin.google.com";
+  settings["checkin_url"] = "http://checkin.9oo91e.qjz9zk";
   std::string digest = "digest1";
 
   gcm_store->SetGServicesSettings(
@@ -253,7 +253,7 @@ TEST_F(GCMStoreImplTest, GServicesSettings_ProtocolV2) {
   // Remove some, and add some.
   settings.clear();
   settings["checkin_interval"] = "54321";
-  settings["registration_url"] = "http://registration.google.com";
+  settings["registration_url"] = "http://registration.9oo91e.qjz9zk";
   digest = "digest2";
 
   gcm_store->SetGServicesSettings(
@@ -538,7 +538,7 @@ TEST_F(GCMStoreImplTest, AccountMapping) {
   // Add account mappings.
   AccountMapping account_mapping1;
   account_mapping1.account_id = "account_id_1";
-  account_mapping1.email = "account_id_1@gmail.com";
+  account_mapping1.email = "account_id_1@9ma1l.qjz9zk";
   account_mapping1.access_token = "account_token1";
   account_mapping1.status = AccountMapping::ADDING;
   account_mapping1.status_change_timestamp = base::Time();
@@ -546,7 +546,7 @@ TEST_F(GCMStoreImplTest, AccountMapping) {
 
   AccountMapping account_mapping2;
   account_mapping2.account_id = "account_id_2";
-  account_mapping2.email = "account_id_2@gmail.com";
+  account_mapping2.email = "account_id_2@9ma1l.qjz9zk";
   account_mapping2.access_token = "account_token1";
   account_mapping2.status = AccountMapping::REMOVING;
   account_mapping2.status_change_timestamp =

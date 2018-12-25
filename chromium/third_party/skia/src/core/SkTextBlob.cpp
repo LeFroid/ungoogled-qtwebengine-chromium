@@ -79,7 +79,7 @@ private:
     SkScalar                 fScaleX;
 
     // Keep this sk_sp off the first position, to avoid interfering with SkNoncopyable
-    // empty baseclass optimization (http://code.google.com/p/skia/issues/detail?id=3694).
+    // empty baseclass optimization (http://code.9oo91e.qjz9zk/p/skia/issues/detail?id=3694).
     sk_sp<SkTypeface>        fTypeface;
     SkScalar                 fSkewX;
 

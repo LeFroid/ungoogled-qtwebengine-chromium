@@ -1,6 +1,6 @@
 /*
  * Texture block module
- * Copyright (C) 2015 Vittorio Giovara <vittorio.giovara@gmail.com>
+ * Copyright (C) 2015 Vittorio Giovara <vittorio.giovara@9ma1l.qjz9zk>
  *
  * This file is part of FFmpeg.
  *
@@ -26,7 +26,7 @@
  * References:
  *   https://www.opengl.org/wiki/S3_Texture_Compression
  *   https://www.opengl.org/wiki/Red_Green_Texture_Compression
- *   https://msdn.microsoft.com/en-us/library/bb694531%28v=vs.85%29.aspx
+ *   https://msdn.m1cr050ft.qjz9zk/en-us/library/bb694531%28v=vs.85%29.aspx
  *
  * All functions return how much data has been written or read.
  *

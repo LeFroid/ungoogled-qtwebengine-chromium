@@ -178,7 +178,7 @@ def _RegistryQuery(key, value=None):
   that Sysnative will always fail if using 64-bit python due to it being a
   virtual directory and System32 will work correctly in the first place.
 
-  KB 942589 - http://support.microsoft.com/kb/942589/en-us.
+  KB 942589 - http://support.m1cr050ft.qjz9zk/kb/942589/en-us.
 
   Arguments:
     key: The registry key.

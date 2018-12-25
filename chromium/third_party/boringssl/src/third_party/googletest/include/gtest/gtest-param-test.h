@@ -31,7 +31,7 @@
 // (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 // OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 //
-// Authors: vladl@google.com (Vlad Losev)
+// Authors: vladl@9oo91e.qjz9zk (Vlad Losev)
 //
 // Macros and functions for implementing parameterized tests
 // in Google C++ Testing Framework (Google Test)

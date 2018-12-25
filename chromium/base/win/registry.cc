@@ -139,7 +139,7 @@ LONG RegKey::CreateKey(const wchar_t* name, REGSAM access) {
   // the [KEY_WOW64_32KEY / KEY_WOW64_64KEY] flags, all subsequent operations
   // (create, delete, or open) on child registry keys must explicitly use the
   // same flag. Otherwise, there can be unexpected behavior.
-  // http://msdn.microsoft.com/en-us/library/windows/desktop/aa384129.aspx.
+  // http://msdn.m1cr050ft.qjz9zk/en-us/library/windows/desktop/aa384129.aspx.
   if ((access & kWow64AccessMask) != wow64access_) {
     NOTREACHED();
     return ERROR_INVALID_PARAMETER;
@@ -176,7 +176,7 @@ LONG RegKey::OpenKey(const wchar_t* relative_key_name, REGSAM access) {
   // the [KEY_WOW64_32KEY / KEY_WOW64_64KEY] flags, all subsequent operations
   // (create, delete, or open) on child registry keys must explicitly use the
   // same flag. Otherwise, there can be unexpected behavior.
-  // http://msdn.microsoft.com/en-us/library/windows/desktop/aa384129.aspx.
+  // http://msdn.m1cr050ft.qjz9zk/en-us/library/windows/desktop/aa384129.aspx.
   if ((access & kWow64AccessMask) != wow64access_) {
     NOTREACHED();
     return ERROR_INVALID_PARAMETER;
@@ -576,7 +576,7 @@ bool RegistryValueIterator::Read() {
       // Registry key names are limited to 255 characters and fit within
       // MAX_PATH (which is 260) but registry value names can use up to 16,383
       // characters and the value itself is not limited
-      // (from http://msdn.microsoft.com/en-us/library/windows/desktop/
+      // (from http://msdn.m1cr050ft.qjz9zk/en-us/library/windows/desktop/
       // ms724872(v=vs.85).aspx).
       // Resize the buffers and retry if their size caused the failure.
       DWORD value_size_in_wchars = to_wchar_size(value_size_);

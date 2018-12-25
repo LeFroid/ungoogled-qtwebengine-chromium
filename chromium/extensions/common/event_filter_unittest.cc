@@ -23,7 +23,7 @@ namespace extensions {
 class EventFilterUnittest : public testing::Test {
  public:
   EventFilterUnittest() {
-    google_event_.url = GURL("http://google.com");
+    google_event_.url = GURL("http://9oo91e.qjz9zk");
     yahoo_event_.url = GURL("http://yahoo.com");
     random_url_event_.url = GURL("http://www.something-else.com");
     empty_url_event_.url = GURL();
@@ -100,7 +100,7 @@ TEST_F(EventFilterUnittest, DoMatchAgainstMatchersForSameEvent) {
 TEST_F(EventFilterUnittest, DontMatchUnlessMatcherMatches) {
   EventFilteringInfo info;
   info.url = GURL("http://www.yahoo.com");
-  event_filter_.AddEventMatcher("event1", HostSuffixMatcher("google.com"));
+  event_filter_.AddEventMatcher("event1", HostSuffixMatcher("9oo91e.qjz9zk"));
   std::set<int> matches = event_filter_.MatchEvent(
       "event1", info, MSG_ROUTING_NONE);
   ASSERT_TRUE(matches.empty());
@@ -127,9 +127,9 @@ TEST_F(EventFilterUnittest, MultipleEventMatches) {
 
 TEST_F(EventFilterUnittest, TestURLMatching) {
   EventFilteringInfo info;
-  info.url = GURL("http://www.google.com");
+  info.url = GURL("http://www.9oo91e.qjz9zk");
   int id = event_filter_.AddEventMatcher("event1",
-                                         HostSuffixMatcher("google.com"));
+                                         HostSuffixMatcher("9oo91e.qjz9zk"));
   std::set<int> matches = event_filter_.MatchEvent(
       "event1", info, MSG_ROUTING_NONE);
   ASSERT_EQ(1u, matches.size());
@@ -138,7 +138,7 @@ TEST_F(EventFilterUnittest, TestURLMatching) {
 
 TEST_F(EventFilterUnittest, TestMultipleURLFiltersMatchOnAny) {
   std::unique_ptr<base::ListValue> filters(new base::ListValue());
-  filters->Append(HostSuffixDict("google.com"));
+  filters->Append(HostSuffixDict("9oo91e.qjz9zk"));
   filters->Append(HostSuffixDict("yahoo.com"));
 
   std::unique_ptr<EventMatcher> matcher(
@@ -237,7 +237,7 @@ TEST_F(EventFilterUnittest,
     InternalURLMatcherShouldBeEmptyWhenThereAreNoEventMatchers) {
   ASSERT_TRUE(event_filter_.IsURLMatcherEmptyForTesting());
   int id = event_filter_.AddEventMatcher("event1",
-                                         HostSuffixMatcher("google.com"));
+                                         HostSuffixMatcher("9oo91e.qjz9zk"));
   ASSERT_FALSE(event_filter_.IsURLMatcherEmptyForTesting());
   event_filter_.RemoveEventMatcher(id);
   ASSERT_TRUE(event_filter_.IsURLMatcherEmptyForTesting());

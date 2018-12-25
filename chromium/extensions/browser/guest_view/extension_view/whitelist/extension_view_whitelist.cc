@@ -15,7 +15,7 @@ namespace {
 
 // =============================================================================
 //
-// ADDING NEW EXTENSIONS REQUIRES APPROVAL from chrome-eng-review@google.com
+// ADDING NEW EXTENSIONS REQUIRES APPROVAL from chrome-eng-review@9oo91e.qjz9zk
 //
 // =============================================================================
 

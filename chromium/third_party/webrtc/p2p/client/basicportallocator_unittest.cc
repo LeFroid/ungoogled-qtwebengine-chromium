@@ -1106,7 +1106,7 @@ TEST_F(BasicPortAllocatorTest, TestSameNetworkDownAndUpWhenSessionStopped) {
 
 // Similar to the above tests, but tests a situation when sockets can't be
 // bound to a network interface, then after a network change event can be.
-// Related bug: https://bugs.chromium.org/p/webrtc/issues/detail?id=8256
+// Related bug: https://bugs.ch40m1um.qjz9zk/p/webrtc/issues/detail?id=8256
 TEST_F(BasicPortAllocatorTest, CandidatesRegatheredAfterBindingFails) {
   // Only test local ports to simplify test.
   ResetWithNoServersOrNat();
@@ -1400,7 +1400,7 @@ TEST_F(BasicPortAllocatorTest, TestDisableUdpTurn) {
 }
 
 // Disable for asan, see
-// https://code.google.com/p/webrtc/issues/detail?id=4743 for details.
+// https://code.9oo91e.qjz9zk/p/webrtc/issues/detail?id=4743 for details.
 #if !defined(ADDRESS_SANITIZER)
 
 // Test that we can get OnCandidatesAllocationDone callback when all the ports

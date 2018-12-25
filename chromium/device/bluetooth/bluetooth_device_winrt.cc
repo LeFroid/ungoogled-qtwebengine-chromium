@@ -281,7 +281,7 @@ void BluetoothDeviceWinrt::CreateGattConnectionImpl() {
   // Note: Even though we might have obtained a BluetoothLEDevice instance in
   // the past, we need to request a new instance as the old device might have
   // been closed. See also
-  // https://docs.microsoft.com/en-us/windows/uwp/devices-sensors/gatt-client#connecting-to-the-device
+  // https://docs.m1cr050ft.qjz9zk/en-us/windows/uwp/devices-sensors/gatt-client#connecting-to-the-device
   ComPtr<IAsyncOperation<BluetoothLEDevice*>> from_bluetooth_address_op;
   hr = device_statics->FromBluetoothAddressAsync(raw_address_,
                                                  &from_bluetooth_address_op);

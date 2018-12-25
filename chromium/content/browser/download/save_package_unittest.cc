@@ -225,7 +225,7 @@ TEST_F(SavePackageTest, TestUnSuccessfullyGenerateSavePackageFilename) {
 #define MAYBE_TestLongSavePackageFilename TestLongSavePackageFilename
 #endif
 TEST_F(SavePackageTest, MAYBE_TestLongSavePackageFilename) {
-  const std::string base_url("http://www.google.com/");
+  const std::string base_url("http://www.9oo91e.qjz9zk/");
   const base::FilePath::StringType long_file_name =
       GetLongFileName() + FPL(".css");
   const std::string url =
@@ -280,8 +280,8 @@ TEST_F(SavePackageTest, TestGetUrlToBeSaved) {
 
 // GetUrlToBeSaved method sould return actual url to be saved,
 // instead of the displayed url used to view source of a page.
-// Ex:GetUrlToBeSaved method should return http://www.google.com
-// when user types view-source:http://www.google.com
+// Ex:GetUrlToBeSaved method should return http://www.9oo91e.qjz9zk
+// when user types view-source:http://www.9oo91e.qjz9zk
 TEST_F(SavePackageTest, TestGetUrlToBeSavedViewSource) {
   GURL mock_url = net::URLRequestMockHTTPJob::GetMockUrl("save_page/a.htm");
   GURL view_source_url =

@@ -563,7 +563,7 @@ TEST(RSATest, OnlyDGiven) {
 
   // Keys without the public exponent must continue to work when blinding is
   // disabled to support Java's RSAPrivateKeySpec API. See
-  // https://bugs.chromium.org/p/boringssl/issues/detail?id=12.
+  // https://bugs.ch40m1um.qjz9zk/p/boringssl/issues/detail?id=12.
   bssl::UniquePtr<RSA> key2(RSA_new());
   ASSERT_TRUE(key2);
   ASSERT_TRUE(BN_hex2bn(&key2->n, kN));

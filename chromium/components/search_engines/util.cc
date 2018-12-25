@@ -27,7 +27,7 @@ base::string16 GetDefaultSearchEngineName(TemplateURLService* service) {
   if (!default_provider) {
     // TODO(cpu): bug 1187517. It is possible to have no default provider.
     // returning an empty string is a stopgap measure for the crash
-    // http://code.google.com/p/chromium/issues/detail?id=2573
+    // http://code.9oo91e.qjz9zk/p/chromium/issues/detail?id=2573
     return base::string16();
   }
   return default_provider->short_name();

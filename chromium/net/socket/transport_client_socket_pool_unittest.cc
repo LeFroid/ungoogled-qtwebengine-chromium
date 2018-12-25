@@ -52,7 +52,7 @@ class TransportClientSocketPoolTest : public TestWithScopedTaskEnvironment {
       : connect_backup_jobs_enabled_(
             ClientSocketPoolBaseHelper::set_connect_backup_jobs_enabled(true)),
         params_(new TransportSocketParams(
-            HostPortPair("www.google.com", 80),
+            HostPortPair("www.9oo91e.qjz9zk", 80),
             false,
             OnHostResolutionCallback(),
             TransportSocketParams::COMBINE_CONNECT_AND_WRITE_DEFAULT)),
@@ -72,13 +72,13 @@ class TransportClientSocketPoolTest : public TestWithScopedTaskEnvironment {
 
   scoped_refptr<TransportSocketParams> CreateParamsForTCPFastOpen() {
     return new TransportSocketParams(
-        HostPortPair("www.google.com", 80), false, OnHostResolutionCallback(),
+        HostPortPair("www.9oo91e.qjz9zk", 80), false, OnHostResolutionCallback(),
         TransportSocketParams::COMBINE_CONNECT_AND_WRITE_DESIRED);
   }
 
   int StartRequest(const std::string& group_name, RequestPriority priority) {
     scoped_refptr<TransportSocketParams> params(new TransportSocketParams(
-        HostPortPair("www.google.com", 80), false, OnHostResolutionCallback(),
+        HostPortPair("www.9oo91e.qjz9zk", 80), false, OnHostResolutionCallback(),
         TransportSocketParams::COMBINE_CONNECT_AND_WRITE_DEFAULT));
     return test_base_.StartRequestUsingPool(
         &pool_, group_name, priority, ClientSocketPool::RespectLimits::ENABLED,
@@ -512,7 +512,7 @@ class RequestSocketCallback : public TestCompletionCallbackBase {
       base::RunLoop(base::RunLoop::Type::kNestableTasksAllowed).RunUntilIdle();
       within_callback_ = true;
       scoped_refptr<TransportSocketParams> dest(new TransportSocketParams(
-          HostPortPair("www.google.com", 80), false, OnHostResolutionCallback(),
+          HostPortPair("www.9oo91e.qjz9zk", 80), false, OnHostResolutionCallback(),
           TransportSocketParams::COMBINE_CONNECT_AND_WRITE_DEFAULT));
       int rv = handle_->Init("a", dest, LOWEST, SocketTag(),
                              ClientSocketPool::RespectLimits::ENABLED,
@@ -532,14 +532,14 @@ TEST_F(TransportClientSocketPoolTest, RequestTwice) {
   ClientSocketHandle handle;
   RequestSocketCallback callback(&handle, &pool_);
   scoped_refptr<TransportSocketParams> dest(new TransportSocketParams(
-      HostPortPair("www.google.com", 80), false, OnHostResolutionCallback(),
+      HostPortPair("www.9oo91e.qjz9zk", 80), false, OnHostResolutionCallback(),
       TransportSocketParams::COMBINE_CONNECT_AND_WRITE_DEFAULT));
   int rv = handle.Init("a", dest, LOWEST, SocketTag(),
                        ClientSocketPool::RespectLimits::ENABLED,
                        callback.callback(), &pool_, NetLogWithSource());
   ASSERT_THAT(rv, IsError(ERR_IO_PENDING));
 
-  // The callback is going to request "www.google.com". We want it to complete
+  // The callback is going to request "www.9oo91e.qjz9zk". We want it to complete
   // synchronously this time.
   host_resolver_->set_synchronous_mode(true);
 

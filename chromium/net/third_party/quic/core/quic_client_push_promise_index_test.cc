@@ -56,7 +56,7 @@ class QuicClientPushPromiseIndexTest : public QuicTest {
             QuicSpdySessionPeer::GetNthServerInitiatedStreamId(session_, 0),
             url_) {
     request_[":path"] = "/bar";
-    request_[":authority"] = "www.google.com";
+    request_[":authority"] = "www.9oo91e.qjz9zk";
     request_[":version"] = "HTTP/1.1";
     request_[":method"] = "GET";
     request_[":scheme"] = "https";

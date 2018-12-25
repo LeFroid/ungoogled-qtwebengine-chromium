@@ -17,7 +17,7 @@ import node_common
 
 GCLIENT_SOLUTION = [
   { "name"        : "v8",
-    "url"         : "https://chromium.googlesource.com/v8/v8.git",
+    "url"         : "https://chromium.9oo91esource.qjz9zk/v8/v8.git",
     "deps_file"   : "DEPS",
     "managed"     : False,
     "custom_deps" : {

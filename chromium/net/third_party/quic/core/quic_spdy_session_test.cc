@@ -259,7 +259,7 @@ class QuicSpdySessionTestBase : public QuicTestWithParam<ParsedQuicVersion> {
         kInitialStreamFlowControlWindowForTest);
     session_.config()->SetInitialSessionFlowControlWindowToSend(
         kInitialSessionFlowControlWindowForTest);
-    headers_[":host"] = "www.google.com";
+    headers_[":host"] = "www.9oo91e.qjz9zk";
     headers_[":path"] = "/index.hml";
     headers_[":scheme"] = "http";
     headers_["cookie"] =

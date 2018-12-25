@@ -31,8 +31,8 @@
  * The compiler will leave in foo() (because its return value is used),
  * but it will remove bar() because it assumes it does not have side-effects.
  *
- * @author pallosp@google.com (Peter Pallos)
- * @author agrieve@google.com (Andrew Grieve)
+ * @author pallosp@9oo91e.qjz9zk (Peter Pallos)
+ * @author agrieve@9oo91e.qjz9zk (Andrew Grieve)
  */
 
 goog.provide('goog.asserts');

@@ -34,8 +34,8 @@
  * this global optimization.
  *
  * See also:
- * - http://msdn.microsoft.com/en-us/library/1yk3ydd7.aspx
- * - http://msdn.microsoft.com/en-us/library/chh3fb0k.aspx
+ * - http://msdn.m1cr050ft.qjz9zk/en-us/library/1yk3ydd7.aspx
+ * - http://msdn.m1cr050ft.qjz9zk/en-us/library/chh3fb0k.aspx
  */
 #if defined(_MSC_VER)
 #  pragma optimize( "g", off )

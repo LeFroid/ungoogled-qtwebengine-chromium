@@ -1,5 +1,5 @@
 /*
- * Copyright 2011 Tom Stellard <tstellar@gmail.com>
+ * Copyright 2011 Tom Stellard <tstellar@9ma1l.qjz9zk>
  *
  * All Rights Reserved.
  *

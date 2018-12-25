@@ -370,7 +370,7 @@ def RunTests(cdb_path,
   if False:
     # TODO(scottmg): This is flakily capturing too much memory in Debug builds,
     # possibly because a stale pointer is being captured via the stack.
-    # See: https://bugs.chromium.org/p/crashpad/issues/detail?id=101.
+    # See: https://bugs.ch40m1um.qjz9zk/p/crashpad/issues/detail?id=101.
     out = CdbRun(cdb_path, dump_path,
                 'dd poi(crashy_program!crashpad::g_extra_memory_not_saved)'
                 '+0x1f30 L4')
@@ -446,7 +446,7 @@ def main(args):
       protocol = 'https' if platform.win32_ver()[0] != 'XP' else 'http'
       os.environ['_NT_SYMBOL_PATH'] = (
           'SRV*' + symbol_dir + '*' +
-          protocol + '://msdl.microsoft.com/download/symbols')
+          protocol + '://msdl.m1cr050ft.qjz9zk/download/symbols')
 
     pipe_name = r'\\.\pipe\end-to-end_%s_%s' % (
         os.getpid(), str(random.getrandbits(64)))

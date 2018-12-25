@@ -155,7 +155,7 @@ bool InitNativeRegApi() {
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // - NOTE: On >= Win7, reflection support was removed.
 // -
-// https://msdn.microsoft.com/en-us/library/windows/desktop/aa384253(v=vs.85).aspx
+// https://msdn.m1cr050ft.qjz9zk/en-us/library/windows/desktop/aa384253(v=vs.85).aspx
 //
 // - 1) 32-bit / WOW64 process:
 //     a) Default access WILL be redirected to WOW64.
@@ -240,7 +240,7 @@ constexpr Node kHklmSoftwareSubtree[] = {
     // TODO(pennymac): when MS fixes compiler bug, or bots are all using clang,
     // remove the "Classes" subkeys below and replace with:
     // {L"Classes", SHARED, kClassesSubtree},
-    // https://connect.microsoft.com/VisualStudio/feedback/details/3104499
+    // https://connect.m1cr050ft.qjz9zk/VisualStudio/feedback/details/3104499
     {L"Classes\\CLSID", REDIRECTED_BEFORE},
     {L"Classes\\DirectShow", REDIRECTED_BEFORE},
     {L"Classes\\Interface", REDIRECTED_BEFORE},

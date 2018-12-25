@@ -71,7 +71,7 @@ MemoryCondition MemoryConditionObserver::CalculateNextCondition() {
       coordinator_->memory_monitor()->GetFreeMemoryUntilCriticalMB();
 
   // TODO(chrisha): Move this histogram recording to a better place when
-  // https://codereview.chromium.org/2479673002/ is landed.
+  // https://codereview.ch40m1um.qjz9zk/2479673002/ is landed.
   UMA_HISTOGRAM_MEMORY_LARGE_MB("Memory.Coordinator.FreeMemoryUntilCritical",
                                 available);
 

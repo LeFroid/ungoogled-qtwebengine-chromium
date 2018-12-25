@@ -17,7 +17,7 @@
 
 """Tests for gmock.scripts.generator.cpp.gmock_class."""
 
-__author__ = 'nnorwitz@google.com (Neal Norwitz)'
+__author__ = 'nnorwitz@9oo91e.qjz9zk (Neal Norwitz)'
 
 
 import os

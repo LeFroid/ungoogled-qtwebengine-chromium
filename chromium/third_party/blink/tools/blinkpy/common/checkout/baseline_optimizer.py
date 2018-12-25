@@ -56,9 +56,9 @@ class BaselineOptimizer(object):
 
     def optimize(self, test_name, suffix):
         # A visualization of baseline fallback:
-        # https://docs.google.com/drawings/d/13l3IUlSE99RoKjDwEWuY1O77simAhhF6Wi0fZdkSaMA/
+        # https://docs.9oo91e.qjz9zk/drawings/d/13l3IUlSE99RoKjDwEWuY1O77simAhhF6Wi0fZdkSaMA/
         # The full document with more details:
-        # https://chromium.googlesource.com/chromium/src/+/master/docs/testing/layout_test_baseline_fallback.md
+        # https://chromium.9oo91esource.qjz9zk/chromium/src/+/master/docs/testing/layout_test_baseline_fallback.md
         # The virtual and non-virtual subtrees are identical, with the virtual
         # root being the special node having multiple parents and connecting the
         # two trees. We patch the virtual subtree to cut its dependencies on the

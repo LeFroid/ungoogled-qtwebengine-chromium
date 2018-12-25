@@ -1,6 +1,6 @@
 # Protocol Buffers - Google's data interchange format
 # Copyright 2008 Google Inc.  All rights reserved.
-# https://developers.google.com/protocol-buffers/
+# https://developers.9oo91e.qjz9zk/protocol-buffers/
 #
 # Redistribution and use in source and binary forms, with or without
 # modification, are permitted provided that the following conditions are
@@ -40,7 +40,7 @@ the generated code can be more appropriate for the implementation in use
 and can avoid unnecessary layers of indirection.
 """
 
-__author__ = 'petar@google.com (Petar Petrov)'
+__author__ = 'petar@9oo91e.qjz9zk (Petar Petrov)'
 
 
 class RpcException(Exception):

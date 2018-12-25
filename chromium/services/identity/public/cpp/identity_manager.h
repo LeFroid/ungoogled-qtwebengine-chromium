@@ -76,7 +76,7 @@ class IdentityManager : public SigninManagerBase::Observer,
     // OnPrimaryAccountSet() callback is undefined. If you as a client are
     // interested in both callbacks, PrimaryAccountAccessTokenFetcher will
     // likely meet your needs. Otherwise, if this lack of ordering is
-    // problematic for your use case, please contact blundell@chromium.org.
+    // problematic for your use case, please contact blundell@ch40m1um.qjz9zk.
     virtual void OnRefreshTokenUpdatedForAccount(
         const AccountInfo& account_info,
         bool is_valid) {}
@@ -85,7 +85,7 @@ class IdentityManager : public SigninManagerBase::Observer,
     // has been removed.
     // NOTE: On a signout event, the ordering of this callback wrt the
     // OnPrimaryAccountCleared() callback is undefined.If this lack of ordering
-    // is problematic for your use case, please contact blundell@chromium.org.
+    // is problematic for your use case, please contact blundell@ch40m1um.qjz9zk.
     virtual void OnRefreshTokenRemovedForAccount(
         const AccountInfo& account_info) {}
   };

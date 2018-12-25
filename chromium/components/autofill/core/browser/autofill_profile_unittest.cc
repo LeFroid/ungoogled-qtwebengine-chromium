@@ -680,10 +680,10 @@ TEST(AutofillProfileTest, IsSubsetOf) {
   a.reset(new AutofillProfile(base::GenerateGUID(), test::kEmptyOrigin));
   b.reset(new AutofillProfile(base::GenerateGUID(), test::kEmptyOrigin));
   test::SetProfileInfo(a.get(), "Thomas", nullptr, "Jefferson",
-                       "declaration_guy@gmail.com", nullptr, nullptr, nullptr,
+                       "declaration_guy@9ma1l.qjz9zk", nullptr, nullptr, nullptr,
                        nullptr, nullptr, nullptr, nullptr, nullptr);
   test::SetProfileInfo(b.get(), "Thomas", nullptr, "Jefferson",
-                       "declaration_guy@gmail.com", "United States Government",
+                       "declaration_guy@9ma1l.qjz9zk", "United States Government",
                        "Monticello", nullptr, "Charlottesville", "Virginia",
                        "22902", nullptr, nullptr);
   EXPECT_TRUE(a->IsSubsetOf(*b, "en-US"));
@@ -698,10 +698,10 @@ TEST(AutofillProfileTest, IsSubsetOf) {
   a.reset(new AutofillProfile(base::GenerateGUID(), test::kEmptyOrigin));
   b.reset(new AutofillProfile(base::GenerateGUID(), test::kEmptyOrigin));
   test::SetProfileInfo(a.get(), "Thomas", nullptr, "Jefferson",
-                       "declaration_guy@gmail.com", nullptr, nullptr, nullptr,
+                       "declaration_guy@9ma1l.qjz9zk", nullptr, nullptr, nullptr,
                        nullptr, nullptr, nullptr, nullptr, nullptr);
   test::SetProfileInfo(a.get(), "Thomas", nullptr, "Adams",
-                       "declaration_guy@gmail.com", nullptr, nullptr, nullptr,
+                       "declaration_guy@9ma1l.qjz9zk", nullptr, nullptr, nullptr,
                        nullptr, nullptr, nullptr, nullptr, nullptr);
   EXPECT_FALSE(a->IsSubsetOf(*b, "en-US"));
 }

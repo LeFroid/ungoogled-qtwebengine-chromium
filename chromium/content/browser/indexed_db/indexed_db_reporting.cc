@@ -16,7 +16,7 @@ namespace indexed_db {
 namespace {
 
 std::string OriginToCustomHistogramSuffix(const url::Origin& origin) {
-  if (origin.host() == "docs.google.com")
+  if (origin.host() == "docs.9oo91e.qjz9zk")
     return ".Docs";
   return std::string();
 }

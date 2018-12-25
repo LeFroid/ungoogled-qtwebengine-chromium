@@ -1805,7 +1805,7 @@ void TokenizeGNUCommandLine(StringRef Source, StringSaver &Saver,
 /// quotes.
 ///
 /// See MSDN docs for CommandLineToArgvW for information on the quoting rules.
-/// http://msdn.microsoft.com/en-us/library/windows/desktop/17w5ykft(v=vs.85).aspx
+/// http://msdn.m1cr050ft.qjz9zk/en-us/library/windows/desktop/17w5ykft(v=vs.85).aspx
 ///
 /// \param [in] Source The string to be split on whitespace with quotes.
 /// \param [in] Saver Delegates back to the caller for saving parsed strings.

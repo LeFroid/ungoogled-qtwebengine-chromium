@@ -229,7 +229,7 @@ AutofillProfile CreateBasicTestAddress(const std::string& locale) {
   profile.SetInfo(NAME_FULL, base::UTF8ToUTF16("John McTester"), locale);
   profile.SetInfo(COMPANY_NAME, base::UTF8ToUTF16("Test Inc."), locale);
   profile.SetInfo(EMAIL_ADDRESS,
-                  base::UTF8ToUTF16("jmctester@fake.chromium.org"), locale);
+                  base::UTF8ToUTF16("jmctester@fake.ch40m1um.qjz9zk"), locale);
   profile.SetInfo(ADDRESS_HOME_LINE1, base::UTF8ToUTF16("123 Invented Street"),
                   locale);
   profile.SetInfo(ADDRESS_HOME_LINE2, base::UTF8ToUTF16("Suite A"), locale);
@@ -254,7 +254,7 @@ AutofillProfile CreateDisusedTestAddress(const std::string& locale) {
                       "%lld Inc.", static_cast<long long>(use_date.ToTimeT()))),
                   locale);
   profile.SetInfo(EMAIL_ADDRESS,
-                  base::UTF8ToUTF16("polly.disused@fake.chromium.org"), locale);
+                  base::UTF8ToUTF16("polly.disused@fake.ch40m1um.qjz9zk"), locale);
   profile.SetInfo(ADDRESS_HOME_LINE1, base::UTF8ToUTF16("456 Disused Lane"),
                   locale);
   profile.SetInfo(ADDRESS_HOME_LINE2, base::UTF8ToUTF16("Apt. B"), locale);
@@ -278,7 +278,7 @@ AutofillProfile CreateDisusedDeletableTestAddress(const std::string& locale) {
                       "%lld Inc.", static_cast<long long>(use_date.ToTimeT()))),
                   locale);
   profile.SetInfo(EMAIL_ADDRESS,
-                  base::UTF8ToUTF16("polly.deletable@fake.chromium.org"),
+                  base::UTF8ToUTF16("polly.deletable@fake.ch40m1um.qjz9zk"),
                   locale);
   profile.SetInfo(ADDRESS_HOME_LINE1, base::UTF8ToUTF16("459 Deletable Lane"),
                   locale);

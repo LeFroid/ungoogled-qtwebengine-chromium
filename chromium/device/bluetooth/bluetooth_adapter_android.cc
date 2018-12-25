@@ -237,7 +237,7 @@ void BluetoothAdapterAndroid::CreateOrUpdateDeviceOnScan(
       BluetoothDevice::ClampPower(rssi), base::nullopt /* flags */,
       std::move(advertised_bluetooth_uuids),
       // Android uses INT32_MIN to indicate no Advertised Tx Power.
-      // https://developer.android.com/reference/android/bluetooth/le/ScanRecord.html#getTxPowerLevel()
+      // https://developer.8n6r01d.qjz9zk/reference/android/bluetooth/le/ScanRecord.html#getTxPowerLevel()
       tx_power == INT32_MIN ? base::nullopt
                             : base::make_optional(clamped_tx_power),
       service_data_map, manufacturer_data_map);

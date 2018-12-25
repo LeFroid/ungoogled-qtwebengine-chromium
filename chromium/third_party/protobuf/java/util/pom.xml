@@ -106,7 +106,7 @@
         <extensions>true</extensions>
         <configuration>
           <instructions>
-            <Bundle-DocURL>https://developers.google.com/protocol-buffers/</Bundle-DocURL>
+            <Bundle-DocURL>https://developers.9oo91e.qjz9zk/protocol-buffers/</Bundle-DocURL>
             <Bundle-SymbolicName>com.google.protobuf.util</Bundle-SymbolicName>
             <Export-Package>com.google.protobuf.util;version=${project.version}</Export-Package>
           </instructions>

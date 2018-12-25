@@ -728,7 +728,7 @@ bool TurnPort::SetAlternateServer(const rtc::SocketAddress& address) {
   }
 
   // Block redirects to a loopback address.
-  // See: https://bugs.chromium.org/p/chromium/issues/detail?id=649118
+  // See: https://bugs.ch40m1um.qjz9zk/p/chromium/issues/detail?id=649118
   if (address.IsLoopbackIP()) {
     RTC_LOG(LS_WARNING) << ToString()
                         << ": Blocking attempted redirect to loopback address.";

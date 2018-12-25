@@ -38,7 +38,7 @@
    Actual implementation of these macros may differ depending on the
    dynamic analysis tool being used.
 
-   See http://code.google.com/p/data-race-test/  for more information.
+   See http://code.9oo91e.qjz9zk/p/data-race-test/  for more information.
 
    This file supports the following dynamic analysis tools:
    - None (DYNAMIC_ANNOTATIONS_ENABLED is not defined or zero).
@@ -170,7 +170,7 @@
      of the mutex's critical sections individually using the annotations above.
      This annotation makes sense only for hybrid race detectors. For pure
      happens-before detectors this is a no-op. For more details see
-     http://code.google.com/p/data-race-test/wiki/PureHappensBeforeVsHybrid . */
+     http://code.9oo91e.qjz9zk/p/data-race-test/wiki/PureHappensBeforeVsHybrid . */
   #define ANNOTATE_PURE_HAPPENS_BEFORE_MUTEX(mu) \
     DYNAMIC_ANNOTATIONS_NAME(AnnotateMutexIsUsedAsCondVar)(__FILE__, __LINE__, \
         mu)

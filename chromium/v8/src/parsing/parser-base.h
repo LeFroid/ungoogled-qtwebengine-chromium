@@ -4777,7 +4777,7 @@ ParserBase<Impl>::CheckAndRewriteReferenceExpression(
   }
   if (expression->IsCall() && !expression->AsCall()->is_tagged_template()) {
     // If it is a call, make it a runtime error for legacy web compatibility.
-    // Bug: https://bugs.chromium.org/p/v8/issues/detail?id=4480
+    // Bug: https://bugs.ch40m1um.qjz9zk/p/v8/issues/detail?id=4480
     // Rewrite `expr' to `expr[throw ReferenceError]'.
     impl()->CountUsage(
         is_strict(language_mode())

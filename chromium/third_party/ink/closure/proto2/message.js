@@ -14,8 +14,8 @@
 
 /**
  * @fileoverview Protocol Buffer Message base class.
- * @author jschorr@google.com (Joseph Schorr)
- * @author pallosp@google.com (Peter Pallos)
+ * @author jschorr@9oo91e.qjz9zk (Joseph Schorr)
+ * @author pallosp@9oo91e.qjz9zk (Peter Pallos)
  * @suppress {unusedPrivateMembers} For descriptor_ declaration.
  */
 

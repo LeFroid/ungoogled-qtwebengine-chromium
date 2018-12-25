@@ -29,7 +29,7 @@ import tempfile
 # 1. Check out Chromium somewhere on Linux, Mac and Windows.
 # 2. On each machine, add the experimental remote named 'wip':
 #    git remote add -f wip \
-#        https://chromium.googlesource.com/experimental/chromium/src
+#        https://chromium.9oo91esource.qjz9zk/experimental/chromium/src
 # 3. On Linux:
 #    a. sudo apt-get install libicu-dev
 #    b. git clone git://git.gnome.org/libxslt somewhere
@@ -244,7 +244,7 @@ def patch_config():
     sed_in_place('config.h', 's/#define HAVE_MKTIME 1//')
 
     sed_in_place('config.log',
-                 's/[a-z.0-9]\+\.corp\.google\.com/REDACTED/')
+                 's/[a-z.0-9]\+\.corp\.9oo91e\.qjz9zk/REDACTED/')
 
 
 def prepare_libxslt_distribution(src_path, libxslt_repo_path, temp_dir):

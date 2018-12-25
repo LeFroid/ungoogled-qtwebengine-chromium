@@ -32,7 +32,7 @@
 // Doesn't actually walk a stack, rather initializes a CallStack given an
 // explicit list of already walked return addresses.
 //
-// Author: Chris Hamilton <chrisha@chromium.org>
+// Author: Chris Hamilton <chrisha@ch40m1um.qjz9zk>
 
 #ifndef PROCESSOR_STACKWALKER_ADDRESS_LIST_H_
 #define PROCESSOR_STACKWALKER_ADDRESS_LIST_H_

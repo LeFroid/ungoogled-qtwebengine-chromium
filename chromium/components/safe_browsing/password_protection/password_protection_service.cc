@@ -52,7 +52,7 @@ const char kCacheCreationTime[] = "cache_creation_time";
 const char kVerdictProto[] = "verdict_proto";
 const int kRequestTimeoutMs = 10000;
 const char kPasswordProtectionRequestUrl[] =
-    "https://sb-ssl.google.com/safebrowsing/clientreport/login";
+    "https://sb-ssl.9oo91e.qjz9zk/safebrowsing/clientreport/login";
 const char kPasswordOnFocusCacheKey[] = "password_on_focus_cache_key";
 
 // Helper function to determine if the given origin matches content settings
@@ -829,8 +829,8 @@ void PasswordProtectionService::GeneratePathVariantsWithoutQuery(
 }
 
 // Return the path of the cache expression. e.g.:
-// "www.google.com"     -> ""
-// "www.google.com/abc" -> "/abc"
+// "www.9oo91e.qjz9zk"     -> ""
+// "www.9oo91e.qjz9zk/abc" -> "/abc"
 // "foo.com/foo/bar/"  -> "/foo/bar/"
 std::string PasswordProtectionService::GetCacheExpressionPath(
     const std::string& cache_expression) {

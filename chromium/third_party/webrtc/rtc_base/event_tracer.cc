@@ -122,7 +122,7 @@ class EventLogger final {
   }
 
   // The TraceEvent format is documented here:
-  // https://docs.google.com/document/d/1CvAClvFfyA5R-PhYUmn5OOQtYMH4h6I0nSsKchNAySU/preview
+  // https://docs.9oo91e.qjz9zk/document/d/1CvAClvFfyA5R-PhYUmn5OOQtYMH4h6I0nSsKchNAySU/preview
   void Log() {
     RTC_DCHECK(output_file_);
     static const int kLoggingIntervalMs = 100;

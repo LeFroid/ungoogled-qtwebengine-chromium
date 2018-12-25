@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2017 Ronald S. Bultje <rsbultje@gmail.com>
- * Copyright (c) 2017 Ashish Pratap Singh <ashk43712@gmail.com>
+ * Copyright (c) 2017 Ronald S. Bultje <rsbultje@9ma1l.qjz9zk>
+ * Copyright (c) 2017 Ashish Pratap Singh <ashk43712@9ma1l.qjz9zk>
  *
  * This file is part of FFmpeg.
  *

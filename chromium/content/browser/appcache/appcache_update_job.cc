@@ -513,7 +513,7 @@ void AppCacheUpdateJob::HandleUrlFetchCompleted(URLFetcher* fetcher,
       duplicate_response_ids_.push_back(entry.response_id());
 
     // TODO(michaeln): Check for <html manifest=xxx>
-    // See http://code.google.com/p/chromium/issues/detail?id=97930
+    // See http://code.9oo91e.qjz9zk/p/chromium/issues/detail?id=97930
     // if (entry.IsMaster() && !(entry.IsExplicit() || fallback || intercept))
     //   if (!manifestAttribute) skip it
 
@@ -883,7 +883,7 @@ void AppCacheUpdateJob::CheckIfManifestChanged() {
     entry = group_->newest_complete_cache()->GetEntry(manifest_url_);
   if (!entry) {
     // TODO(michaeln): This is just a bandaid to avoid a crash.
-    // http://code.google.com/p/chromium/issues/detail?id=95101
+    // http://code.9oo91e.qjz9zk/p/chromium/issues/detail?id=95101
     if (service_->storage() == storage_) {
       // Use a local variable because service_ is reset in HandleCacheFailure.
       AppCacheServiceImpl* service = service_;

@@ -23,7 +23,7 @@ const char kDeviceNamePrefix[] = "device";
 const char kPublicKeyPrefix[] = "pk";
 
 // The id of the user who the remote devices belong to.
-const char kUserId[] = "example@gmail.com";
+const char kUserId[] = "example@9ma1l.qjz9zk";
 
 // The public key of the user's local device.
 const char kUserPublicKey[] = "User public key";

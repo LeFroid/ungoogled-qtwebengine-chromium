@@ -13,7 +13,7 @@
 This script should only be run from a Chromium tarball.  It will not work in a
 regular git checkout.  In a regular git checkout, a gn binary is pulled via
 DEPS.  To build gn from source in a regular checkout, see
-https://gn.googlesource.com/gn/
+https://gn.9oo91esource.qjz9zk/gn/
 """
 
 # This script may be removed if/when gn becomes available in the standard

@@ -66,7 +66,7 @@ TEST_F(Win32Test, InvalidIPv6AddressParsing) {
   EXPECT_FALSE(IPFromString("1::2::3", &ipv6));
 
   // More than 1 run of "::"s in a longer address.
-  // See: https://bugs.chromium.org/p/webrtc/issues/detail?id=7592
+  // See: https://bugs.ch40m1um.qjz9zk/p/webrtc/issues/detail?id=7592
   EXPECT_FALSE(IPFromString("1::2::3::4::5::6::7::8", &ipv6));
 
   // Three ':'s in a row.

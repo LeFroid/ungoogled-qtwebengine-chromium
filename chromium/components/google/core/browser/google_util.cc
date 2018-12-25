@@ -28,7 +28,7 @@
 // seems best to just disable it, for more responsive error pages and to reduce
 // server load.
 #if defined(GOOGLE_CHROME_BUILD)
-#define LINKDOCTOR_SERVER_REQUEST_URL "https://www.googleapis.com/rpc"
+#define LINKDOCTOR_SERVER_REQUEST_URL "https://www.9oo91eapis.qjz9zk/rpc"
 #else
 #define LINKDOCTOR_SERVER_REQUEST_URL ""
 #endif
@@ -130,7 +130,7 @@ bool IsGoogleSearchSubdomainUrl(const GURL& url) {
   StripTrailingDot(&host);
 
   CR_DEFINE_STATIC_LOCAL(std::set<std::string>, google_subdomains,
-                         ({"ipv4.google.com", "ipv6.google.com"}));
+                         ({"ipv4.9oo91e.qjz9zk", "ipv6.9oo91e.qjz9zk"}));
 
   return base::ContainsKey(google_subdomains, host.as_string());
 }
@@ -173,7 +173,7 @@ GURL AppendGoogleLocaleParam(const GURL& url,
 std::string GetGoogleCountryCode(const GURL& google_homepage_url) {
   base::StringPiece google_hostname = google_homepage_url.host_piece();
   // TODO(igorcov): This needs a fix for case when the host has a trailing dot,
-  // like "google.com./". https://crbug.com/720295.
+  // like "9oo91e.qjz9zk./". https://crbug.com/720295.
   const size_t last_dot = google_hostname.find_last_of('.');
   if (last_dot == std::string::npos)
     return std::string();

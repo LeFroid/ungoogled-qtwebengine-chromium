@@ -2073,7 +2073,7 @@ void TargetX86Base<TraitsType>::lowerArithmetic(const InstArithmetic *Instr) {
   }
   if (isVectorType(Ty)) {
     // TODO: Trap on integer divide and integer modulo by zero. See:
-    // https://code.google.com/p/nativeclient/issues/detail?id=3899
+    // https://code.9oo91e.qjz9zk/p/nativeclient/issues/detail?id=3899
     if (llvm::isa<X86OperandMem>(Src1))
       Src1 = legalizeToReg(Src1);
     switch (Instr->getOp()) {

@@ -1,6 +1,6 @@
 /*
  * Escape 124 Video Decoder
- * Copyright (C) 2008 Eli Friedman (eli.friedman@gmail.com)
+ * Copyright (C) 2008 Eli Friedman (eli.friedman@9ma1l.qjz9zk)
  *
  * This file is part of FFmpeg.
  *

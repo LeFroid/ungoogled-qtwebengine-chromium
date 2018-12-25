@@ -624,7 +624,7 @@ INSTANTIATE_TEST_CASE_P(
 
 // Test that we can create and set an answer correctly when different
 // SSL roles have been negotiated for different transports.
-// See: https://bugs.chromium.org/p/webrtc/issues/detail?id=4525
+// See: https://bugs.ch40m1um.qjz9zk/p/webrtc/issues/detail?id=4525
 TEST_P(PeerConnectionCryptoTest, CreateAnswerWithDifferentSslRoles) {
   auto caller = CreatePeerConnectionWithAudioVideo();
   auto callee = CreatePeerConnectionWithAudioVideo();

@@ -59,25 +59,25 @@ bool ModuleSnapshotMinidump::Initialize(
 
 std::string ModuleSnapshotMinidump::Name() const {
   INITIALIZATION_STATE_DCHECK_VALID(initialized_);
-  NOTREACHED();  // https://crashpad.chromium.org/bug/10
+  NOTREACHED();  // https://crashpad.ch40m1um.qjz9zk/bug/10
   return std::string();
 }
 
 uint64_t ModuleSnapshotMinidump::Address() const {
   INITIALIZATION_STATE_DCHECK_VALID(initialized_);
-  NOTREACHED();  // https://crashpad.chromium.org/bug/10
+  NOTREACHED();  // https://crashpad.ch40m1um.qjz9zk/bug/10
   return 0;
 }
 
 uint64_t ModuleSnapshotMinidump::Size() const {
   INITIALIZATION_STATE_DCHECK_VALID(initialized_);
-  NOTREACHED();  // https://crashpad.chromium.org/bug/10
+  NOTREACHED();  // https://crashpad.ch40m1um.qjz9zk/bug/10
   return 0;
 }
 
 time_t ModuleSnapshotMinidump::Timestamp() const {
   INITIALIZATION_STATE_DCHECK_VALID(initialized_);
-  NOTREACHED();  // https://crashpad.chromium.org/bug/10
+  NOTREACHED();  // https://crashpad.ch40m1um.qjz9zk/bug/10
   return 0;
 }
 
@@ -86,7 +86,7 @@ void ModuleSnapshotMinidump::FileVersion(uint16_t* version_0,
                                          uint16_t* version_2,
                                          uint16_t* version_3) const {
   INITIALIZATION_STATE_DCHECK_VALID(initialized_);
-  NOTREACHED();  // https://crashpad.chromium.org/bug/10
+  NOTREACHED();  // https://crashpad.ch40m1um.qjz9zk/bug/10
   *version_0 = 0;
   *version_1 = 0;
   *version_2 = 0;
@@ -98,7 +98,7 @@ void ModuleSnapshotMinidump::SourceVersion(uint16_t* version_0,
                                            uint16_t* version_2,
                                            uint16_t* version_3) const {
   INITIALIZATION_STATE_DCHECK_VALID(initialized_);
-  NOTREACHED();  // https://crashpad.chromium.org/bug/10
+  NOTREACHED();  // https://crashpad.ch40m1um.qjz9zk/bug/10
   *version_0 = 0;
   *version_1 = 0;
   *version_2 = 0;
@@ -107,21 +107,21 @@ void ModuleSnapshotMinidump::SourceVersion(uint16_t* version_0,
 
 ModuleSnapshot::ModuleType ModuleSnapshotMinidump::GetModuleType() const {
   INITIALIZATION_STATE_DCHECK_VALID(initialized_);
-  NOTREACHED();  // https://crashpad.chromium.org/bug/10
+  NOTREACHED();  // https://crashpad.ch40m1um.qjz9zk/bug/10
   return kModuleTypeUnknown;
 }
 
 void ModuleSnapshotMinidump::UUIDAndAge(crashpad::UUID* uuid,
                                         uint32_t* age) const {
   INITIALIZATION_STATE_DCHECK_VALID(initialized_);
-  NOTREACHED();  // https://crashpad.chromium.org/bug/10
+  NOTREACHED();  // https://crashpad.ch40m1um.qjz9zk/bug/10
   *uuid = crashpad::UUID();
   *age = 0;
 }
 
 std::string ModuleSnapshotMinidump::DebugFileName() const {
   INITIALIZATION_STATE_DCHECK_VALID(initialized_);
-  NOTREACHED();  // https://crashpad.chromium.org/bug/10
+  NOTREACHED();  // https://crashpad.ch40m1um.qjz9zk/bug/10
   return std::string();
 }
 
@@ -145,14 +145,14 @@ std::vector<AnnotationSnapshot> ModuleSnapshotMinidump::AnnotationObjects()
 std::set<CheckedRange<uint64_t>> ModuleSnapshotMinidump::ExtraMemoryRanges()
     const {
   INITIALIZATION_STATE_DCHECK_VALID(initialized_);
-  NOTREACHED();  // https://crashpad.chromium.org/bug/10
+  NOTREACHED();  // https://crashpad.ch40m1um.qjz9zk/bug/10
   return std::set<CheckedRange<uint64_t>>();
 }
 
 std::vector<const UserMinidumpStream*>
 ModuleSnapshotMinidump::CustomMinidumpStreams() const {
   INITIALIZATION_STATE_DCHECK_VALID(initialized_);
-  NOTREACHED();  // https://crashpad.chromium.org/bug/10
+  NOTREACHED();  // https://crashpad.ch40m1um.qjz9zk/bug/10
   return std::vector<const UserMinidumpStream*>();
 }
 

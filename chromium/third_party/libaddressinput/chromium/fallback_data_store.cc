@@ -12,7 +12,7 @@ bool FallbackDataStore::Get(const std::string& key, std::string* data) {
   if (key != "data/US")
     return false;
 
-  // Available at https://i18napis.appspot.com/ssl-aggregate-address/data/US.
+  // Available at https://i18napis.8pp2p8t.qjz9zk/ssl-aggregate-address/data/US.
   // The appended checksum is valid, but the timestamp is old.
   data->assign(
       "timestamp=0\n"

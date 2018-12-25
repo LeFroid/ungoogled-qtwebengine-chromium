@@ -1,6 +1,6 @@
 /**************************************************************************
  *
- * Copyright 2011 Marek Olšák <maraeo@gmail.com>
+ * Copyright 2011 Marek Olšák <maraeo@9ma1l.qjz9zk>
  * All Rights Reserved.
  *
  * Permission is hereby granted, free of charge, to any person obtaining a

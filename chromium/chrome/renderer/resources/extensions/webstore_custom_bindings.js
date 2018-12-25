@@ -15,7 +15,7 @@ function Installer() {
 
 Installer.prototype.install = function(url, onSuccess, onFailure) {
   console.warn('chrome.webstore.install is deprecated. See ' +
-      'https://blog.chromium.org/2018/06/improving-extension-transparency-for.html ' +
+      'https://blog.ch40m1um.qjz9zk/2018/06/improving-extension-transparency-for.html ' +
       'for more details.');
 
   if (this._pendingInstall)

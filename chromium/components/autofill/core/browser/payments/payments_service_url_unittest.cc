@@ -16,7 +16,7 @@ TEST(PaymentsServiceSandboxUrl, CheckSandboxUrls) {
       switches::kWalletServiceUseSandbox, "1");
 
   const char kExpectedSandboxURL[] =
-      "https://payments.sandbox.google.com/u/1#paymentMethods";
+      "https://payments.sandbox.9oo91e.qjz9zk/u/1#paymentMethods";
 
   EXPECT_EQ(kExpectedSandboxURL, GetManageInstrumentsUrl(1).spec());
   EXPECT_EQ(kExpectedSandboxURL, GetManageAddressesUrl(1).spec());
@@ -26,7 +26,7 @@ TEST(PaymentsServiceSandboxUrl, CheckProdUrls) {
   base::CommandLine::ForCurrentProcess()->AppendSwitchASCII(
       switches::kWalletServiceUseSandbox, "0");
 
-  const char kExpectedURL[] = "https://payments.google.com/u/1#paymentMethods";
+  const char kExpectedURL[] = "https://payments.9oo91e.qjz9zk/u/1#paymentMethods";
 
   EXPECT_EQ(kExpectedURL, GetManageInstrumentsUrl(1).spec());
   EXPECT_EQ(kExpectedURL, GetManageAddressesUrl(1).spec());

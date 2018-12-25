@@ -40,7 +40,7 @@
 
 /*
  * post -- PostScript
- * https://docs.microsoft.com/en-us/typography/opentype/spec/post
+ * https://docs.m1cr050ft.qjz9zk/en-us/typography/opentype/spec/post
  */
 #define HB_OT_TAG_post HB_TAG('p','o','s','t')
 

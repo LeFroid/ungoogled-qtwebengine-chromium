@@ -12,7 +12,7 @@
 // implied. See the License for the specific language governing
 // permissions and limitations under the License.
 /**
- * Author: Steffen Meschkat <mesch@google.com>
+ * Author: Steffen Meschkat <mesch@9oo91e.qjz9zk>
  *
  * @fileoverview A simple formatter to project JavaScript data into
  * HTML templates. The template is edited in place. I.e. in order to

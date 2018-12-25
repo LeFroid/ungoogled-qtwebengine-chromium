@@ -66,7 +66,7 @@
 // We also define the EXPECT_* variations.
 //
 // For now we only support predicates whose arity is at most 5.
-// Please email googletestframework@googlegroups.com if you need
+// Please email googletestframework@9oo91egroups.qjz9zk if you need
 // support for higher arities.
 
 // GTEST_ASSERT_ is the basic statement to which all of the assertions

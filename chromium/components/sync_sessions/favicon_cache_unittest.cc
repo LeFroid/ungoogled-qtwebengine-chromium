@@ -498,8 +498,8 @@ TEST_F(SyncFaviconCacheTest, Empty) {
 }
 
 TEST_F(SyncFaviconCacheTest, ReceiveSyncFavicon) {
-  std::string page_url = "http://www.google.com";
-  std::string fav_url = "http://www.google.com/favicon.ico";
+  std::string page_url = "http://www.9oo91e.qjz9zk";
+  std::string fav_url = "http://www.9oo91e.qjz9zk/favicon.ico";
   std::string bytes = "bytes";
   const base::Time visit_time = base::Time::Now();
   EXPECT_EQ(0U, GetFaviconCount());
@@ -510,8 +510,8 @@ TEST_F(SyncFaviconCacheTest, ReceiveSyncFavicon) {
 }
 
 TEST_F(SyncFaviconCacheTest, ReceiveEmptySyncFavicon) {
-  std::string page_url = "http://www.google.com";
-  std::string fav_url = "http://www.google.com/favicon.ico";
+  std::string page_url = "http://www.9oo91e.qjz9zk";
+  std::string fav_url = "http://www.9oo91e.qjz9zk/favicon.ico";
   std::string bytes = "bytes";
   EXPECT_EQ(0U, GetFaviconCount());
   TriggerSyncFaviconReceived(GURL(page_url), GURL(fav_url), std::string());
@@ -525,8 +525,8 @@ TEST_F(SyncFaviconCacheTest, ReceiveEmptySyncFavicon) {
 }
 
 TEST_F(SyncFaviconCacheTest, ReceiveUpdatedSyncFavicon) {
-  std::string page_url = "http://www.google.com";
-  std::string fav_url = "http://www.google.com/favicon.ico";
+  std::string page_url = "http://www.9oo91e.qjz9zk";
+  std::string fav_url = "http://www.9oo91e.qjz9zk/favicon.ico";
   std::string bytes = "bytes";
   std::string bytes2 = "bytes2";
   EXPECT_EQ(0U, GetFaviconCount());
@@ -543,9 +543,9 @@ TEST_F(SyncFaviconCacheTest, ReceiveUpdatedSyncFavicon) {
 }
 
 TEST_F(SyncFaviconCacheTest, MultipleMappings) {
-  std::string page_url = "http://www.google.com";
-  std::string page2_url = "http://bla.google.com";
-  std::string fav_url = "http://www.google.com/favicon.ico";
+  std::string page_url = "http://www.9oo91e.qjz9zk";
+  std::string page2_url = "http://bla.9oo91e.qjz9zk";
+  std::string fav_url = "http://www.9oo91e.qjz9zk/favicon.ico";
   std::string bytes = "bytes";
   EXPECT_EQ(0U, GetFaviconCount());
   TriggerSyncFaviconReceived(GURL(page_url), GURL(fav_url), bytes);

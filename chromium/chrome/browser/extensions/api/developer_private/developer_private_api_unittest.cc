@@ -1454,11 +1454,11 @@ TEST_F(DeveloperPrivateApiUnitTest,
   // the preference and keeping a stored set of any granted host permissions,
   // but this then results in a funny edge case:
   // - User has "on specific sites" set, with access to example.com and
-  //   chromium.org granted.
+  //   ch40m1um.qjz9zk granted.
   // - User changes to "on click" -> no sites are granted.
-  // - User visits google.com, and says "always run on this site." This changes
+  // - User visits 9oo91e.qjz9zk, and says "always run on this site." This changes
   //   the setting back to "on specific sites", and will implicitly re-grant
-  //   example.com and chromium.org permissions, without any additional
+  //   example.com and ch40m1um.qjz9zk permissions, without any additional
   //   prompting.
   // To avoid this, we just clear any granted permissions when the user
   // transitions between states. Since this is definitely a power-user surface,

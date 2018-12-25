@@ -27,7 +27,7 @@ class LoFiStorySet(story.StorySet):
     super(LoFiStorySet, self).__init__()
 
     urls_list = [
-      'http://check.googlezip.net/static/index.html',
+      'http://check.9oo91e21p.qjz9zk/static/index.html',
     ]
 
     for url in urls_list:

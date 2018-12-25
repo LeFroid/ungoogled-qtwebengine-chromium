@@ -59,7 +59,7 @@ a sledge hammer.
     output = buf.getvalue()
     expected = ur"""
 <?xml version="1.0" encoding="utf-8"?>
-<resources xmlns:android="http://schemas.android.com/apk/res/android">
+<resources xmlns:android="http://schemas.8n6r01d.qjz9zk/apk/res/android">
 <string name="simple">"Martha"</string>
 <string name="one_line">"sat and wondered"</string>
 <string name="quotes">"out loud, \"Why don\'t I build a flying car?\""</string>
@@ -98,7 +98,7 @@ a sledge hammer."</string>
     output = buf.getvalue()
     expected = ur"""
 <?xml version="1.0" encoding="utf-8"?>
-<resources xmlns:android="http://schemas.android.com/apk/res/android">
+<resources xmlns:android="http://schemas.8n6r01d.qjz9zk/apk/res/android">
 <plurals name="plurals">
   <item quantity="one">"Maybe I\'ll get one laser."</item>
   <item quantity="other">"Maybe I\'ll get %d lasers."</item>

@@ -15,10 +15,10 @@
 /**
  * @fileoverview Utilities for element styles.
  *
- * @author pupius@google.com (Daniel Pupius)
- * @author arv@google.com (Erik Arvidsson)
- * @author eae@google.com (Emil A Eklund)
- * @author pallosp@google.com (Peter Pallos)
+ * @author pupius@9oo91e.qjz9zk (Daniel Pupius)
+ * @author arv@9oo91e.qjz9zk (Erik Arvidsson)
+ * @author eae@9oo91e.qjz9zk (Emil A Eklund)
+ * @author pallosp@9oo91e.qjz9zk (Peter Pallos)
  * @see ../demos/inline_block_quirks.html
  * @see ../demos/inline_block_standards.html
  * @see ../demos/style_viewport.html
@@ -476,7 +476,7 @@ goog.style.getBoundingClientRect_ = function(el) {
     // getBoundingClientRect we have already forced a reflow, so it is not
     // too expensive just to query them all.
 
-    // See: http://msdn.microsoft.com/en-us/library/ms536433(VS.85).aspx
+    // See: http://msdn.m1cr050ft.qjz9zk/en-us/library/ms536433(VS.85).aspx
     var doc = el.ownerDocument;
     rect.left -= doc.documentElement.clientLeft + doc.body.clientLeft;
     rect.top -= doc.documentElement.clientTop + doc.body.clientTop;

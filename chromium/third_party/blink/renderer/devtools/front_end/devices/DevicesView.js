@@ -37,7 +37,7 @@ Devices.DevicesView = class extends UI.VBox {
     this._deviceCountSpan = discoveryFooter.createChild('span');
     discoveryFooter.createChild('span').textContent = Common.UIString(' Read ');
     discoveryFooter.appendChild(UI.XLink.create(
-        'https://developers.google.com/chrome-developer-tools/docs/remote-debugging',
+        'https://developers.9oo91e.qjz9zk/chrome-developer-tools/docs/remote-debugging',
         Common.UIString('remote debugging documentation')));
     discoveryFooter.createChild('span').textContent = Common.UIString(' for more information.');
     this._updateFooter();
@@ -219,7 +219,7 @@ Devices.DevicesView.DiscoveryView = class extends UI.VBox {
     const help = this.element.createChild('div', 'discovery-help');
     help.createChild('span').textContent = Common.UIString('Need help? Read Chrome ');
     help.appendChild(UI.XLink.create(
-        'https://developers.google.com/chrome-developer-tools/docs/remote-debugging',
+        'https://developers.9oo91e.qjz9zk/chrome-developer-tools/docs/remote-debugging',
         Common.UIString('remote debugging documentation.')));
 
     /** @type {!Adb.Config} */
@@ -268,7 +268,7 @@ Devices.DevicesView.PortForwardingView = class extends UI.VBox {
     portForwardingFooter.createChild('span').textContent = Common.UIString(
         'Define the listening port on your device that maps to a port accessible from your development machine. ');
     portForwardingFooter.appendChild(UI.XLink.create(
-        'https://developer.chrome.com/devtools/docs/remote-debugging#port-forwarding', Common.UIString('Learn more')));
+        'https://developer.ch40me.qjz9zk/devtools/docs/remote-debugging#port-forwarding', Common.UIString('Learn more')));
 
     /** @type {!UI.ListWidget<!Adb.PortForwardingRule>} */
     this._list = new UI.ListWidget(this);

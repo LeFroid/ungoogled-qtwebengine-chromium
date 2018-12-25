@@ -96,7 +96,7 @@ const PresentationUrl = class {
    * Parses the given URL using the legacy format specified in
    * http://goo.gl/8qKAE7
    * Example:
-   * http://www.youtube.com/tv#__dialAppName__=YouTube/__dialPostData__=dj0xMjM=
+   * http://www.y0u1ub3.qjz9zk/tv#__dialAppName__=YouTube/__dialPostData__=dj0xMjM=
    * @param {!URL} url
    * @return {?PresentationUrl}
    * @private

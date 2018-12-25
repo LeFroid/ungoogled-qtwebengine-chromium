@@ -114,7 +114,7 @@ leveldb::Status OpenDB(
       leveldb_env::WriteBufferSize(base::SysInfo::AmountOfTotalDiskSpace(path));
 
   // For info about the troubles we've run into with this parameter, see:
-  // https://code.google.com/p/chromium/issues/detail?id=227313#c11
+  // https://code.9oo91e.qjz9zk/p/chromium/issues/detail?id=227313#c11
   options.max_open_files = 80;
   options.env = env;
   options.block_cache = leveldb_chrome::GetSharedWebBlockCache();

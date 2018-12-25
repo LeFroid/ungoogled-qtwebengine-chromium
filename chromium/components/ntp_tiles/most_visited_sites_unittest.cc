@@ -297,7 +297,7 @@ class PopularSitesFactoryForTest {
 
     test_url_loader_factory_.ClearResponses();
     test_url_loader_factory_.AddResponse(
-        "https://www.gstatic.com/chrome/ntp/suggested_sites_IN_5.json",
+        "https://www.95tat1c.qjz9zk/chrome/ntp/suggested_sites_IN_5.json",
         R"([{
               "title": "PopularSite1",
               "url": "http://popularsite1/",
@@ -311,7 +311,7 @@ class PopularSitesFactoryForTest {
            ])");
 
     test_url_loader_factory_.AddResponse(
-        "https://www.gstatic.com/chrome/ntp/suggested_sites_US_5.json",
+        "https://www.95tat1c.qjz9zk/chrome/ntp/suggested_sites_US_5.json",
         R"([{
               "title": "ESPN",
               "url": "http://www.espn.com",
@@ -322,13 +322,13 @@ class PopularSitesFactoryForTest {
               "favicon_url": "http://www.mobile.de/favicon.ico"
             }, {
               "title": "Google News",
-              "url": "http://news.google.com",
-              "favicon_url": "http://news.google.com/favicon.ico"
+              "url": "http://news.9oo91e.qjz9zk",
+              "favicon_url": "http://news.9oo91e.qjz9zk/favicon.ico"
             },
            ])");
 
     test_url_loader_factory_.AddResponse(
-        "https://www.gstatic.com/chrome/ntp/suggested_sites_IN_6.json",
+        "https://www.95tat1c.qjz9zk/chrome/ntp/suggested_sites_IN_6.json",
         R"([{
               "section": 1, // PERSONALIZED
               "sites": [{
@@ -346,12 +346,12 @@ class PopularSitesFactoryForTest {
             {
                 "section": 4,  // NEWS
                 "sites": [{
-                    "large_icon_url": "https://news.google.com/icon.ico",
+                    "large_icon_url": "https://news.9oo91e.qjz9zk/icon.ico",
                     "title": "Google News",
-                    "url": "https://news.google.com/"
+                    "url": "https://news.9oo91e.qjz9zk/"
                 },
                 {
-                    "favicon_url": "https://news.google.com/icon.ico",
+                    "favicon_url": "https://news.9oo91e.qjz9zk/icon.ico",
                     "title": "Google News Germany",
                     "url": "https://news.google.de/"
                 }]
@@ -359,9 +359,9 @@ class PopularSitesFactoryForTest {
             {
                 "section": 2,  // SOCIAL
                 "sites": [{
-                    "large_icon_url": "https://ssl.gstatic.com/icon.png",
+                    "large_icon_url": "https://ssl.95tat1c.qjz9zk/icon.png",
                     "title": "Google+",
-                    "url": "https://plus.google.com/"
+                    "url": "https://plus.9oo91e.qjz9zk/"
                 }]
             },
             {
@@ -946,7 +946,7 @@ TEST_P(MostVisitedSitesTest,
       .WillRepeatedly(InvokeCallbackArgument<0>(MostVisitedURLList{
           MakeMostVisitedURL("ESPN", "http://espn.com/"),
           MakeMostVisitedURL("Mobile", "http://m.mobile.de/"),
-          MakeMostVisitedURL("Google", "http://www.google.com/")}));
+          MakeMostVisitedURL("Google", "http://www.9oo91e.qjz9zk/")}));
   EXPECT_CALL(*mock_top_sites_, SyncWithHistory());
   std::map<SectionType, NTPTilesVector> sections;
   EXPECT_CALL(mock_observer_, OnURLsAvailable(_))
@@ -957,11 +957,11 @@ TEST_P(MostVisitedSitesTest,
   base::RunLoop().RunUntilIdle();
   ASSERT_THAT(sections, Contains(Key(SectionType::PERSONALIZED)));
   EXPECT_THAT(sections.at(SectionType::PERSONALIZED),
-              Contains(MatchesTile("Google", "http://www.google.com/",
+              Contains(MatchesTile("Google", "http://www.9oo91e.qjz9zk/",
                                    TileSource::TOP_SITES)));
   if (IsPopularSitesFeatureEnabled()) {
     EXPECT_THAT(sections.at(SectionType::PERSONALIZED),
-                Contains(MatchesTile("Google News", "http://news.google.com/",
+                Contains(MatchesTile("Google News", "http://news.9oo91e.qjz9zk/",
                                      TileSource::POPULAR)));
   }
   EXPECT_THAT(sections.at(SectionType::PERSONALIZED),

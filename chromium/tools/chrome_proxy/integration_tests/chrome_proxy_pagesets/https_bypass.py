@@ -22,7 +22,7 @@ class HTTPSBypassStorySet(story.StorySet):
     super(HTTPSBypassStorySet, self).__init__()
 
     urls_list = [
-      'https://check.googlezip.net/test.html',
+      'https://check.9oo91e21p.qjz9zk/test.html',
     ]
 
     for url in urls_list:

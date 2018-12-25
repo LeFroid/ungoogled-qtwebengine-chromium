@@ -37,7 +37,7 @@ class ReenableAfterBypassStorySet(story.StorySet):
     # Test page for "Chrome-Proxy: block=0". Loading this page should cause all
     # data reduction proxies to be bypassed for one to five minutes.
     self.AddStory(ReenableAfterBypassPage(
-        url="http://check.googlezip.net/block/",
+        url="http://check.9oo91e21p.qjz9zk/block/",
         page_set=self,
         bypass_seconds_min=60,
         bypass_seconds_max=300))

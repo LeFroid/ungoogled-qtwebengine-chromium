@@ -1,6 +1,6 @@
 /*
  * Copyright (C) 2007 Michael Niedermayer <michaelni@gmx.at>
- * Copyright (C) 2013 James Almer <jamrial@gmail.com>
+ * Copyright (C) 2013 James Almer <jamrial@9ma1l.qjz9zk>
  *
  * This file is part of FFmpeg.
  *

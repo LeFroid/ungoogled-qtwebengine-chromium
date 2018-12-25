@@ -1184,7 +1184,7 @@ TEST_P(QuicPacketCreatorTest, FlushWithExternalBuffer) {
 }
 
 // Test for error found in
-// https://bugs.chromium.org/p/chromium/issues/detail?id=859949 where a gap
+// https://bugs.ch40m1um.qjz9zk/p/chromium/issues/detail?id=859949 where a gap
 // length that crosses an IETF VarInt length boundary would cause a
 // failure. While this test is not applicable to versions other than version 99,
 // it should still work. Hence, it is not made version-specific.

@@ -340,7 +340,7 @@ const CSSValue* CSSComputedStyleDeclaration::GetPropertyCSSValue(
     // media queries and generate boxes as we might be moving to/from
     // display:none in some element in the chain of ancestors.
     //
-    // TODO(futhark@chromium.org): There is an open question what the computed
+    // TODO(futhark@ch40m1um.qjz9zk): There is an open question what the computed
     // style should be in a display:none iframe. If the property we are querying
     // is not layout dependent, we will not update the iframe layout box here.
     if (property_class.IsLayoutDependentProperty() ||

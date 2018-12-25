@@ -43,59 +43,59 @@ TEST_F(DevToolsUIBindingsTest, SanitizeFrontendURL) {
       {"chrome-devtools://devtools/?remoteBase="
        "http://example.com:1234/remote-base#hash",
        "chrome-devtools://devtools/?remoteBase="
-       "https://chrome-devtools-frontend.appspot.com/"
+       "https://chrome-devtools-frontend.8pp2p8t.qjz9zk/"
        "serve_file//#hash"},
       {"chrome-devtools://devtools/?ws=1%26evil%3dtrue",
        "chrome-devtools://devtools/?ws=1%26evil%3dtrue"},
       {"chrome-devtools://devtools/?ws=encoded-ok'",
        "chrome-devtools://devtools/?ws=encoded-ok%27"},
       {"chrome-devtools://devtools/?remoteBase="
-       "https://chrome-devtools-frontend.appspot.com/some/path/"
+       "https://chrome-devtools-frontend.8pp2p8t.qjz9zk/some/path/"
        "@123719741873/more/path.html",
        "chrome-devtools://devtools/?remoteBase="
-       "https://chrome-devtools-frontend.appspot.com/serve_file/path/"},
+       "https://chrome-devtools-frontend.8pp2p8t.qjz9zk/serve_file/path/"},
       {"chrome-devtools://devtools/?remoteBase="
-       "https://chrome-devtools-frontend.appspot.com/serve_file/"
+       "https://chrome-devtools-frontend.8pp2p8t.qjz9zk/serve_file/"
        "@123719741873/inspector.html%3FdebugFrontend%3Dfalse",
        "chrome-devtools://devtools/?remoteBase="
-       "https://chrome-devtools-frontend.appspot.com/serve_file/"
+       "https://chrome-devtools-frontend.8pp2p8t.qjz9zk/serve_file/"
        "@123719741873/"},
       {"chrome-devtools://devtools/bundled/inspector.html?"
-       "&remoteBase=https://chrome-devtools-frontend.appspot.com/serve_file/"
+       "&remoteBase=https://chrome-devtools-frontend.8pp2p8t.qjz9zk/serve_file/"
        "@b4907cc5d602ff470740b2eb6344b517edecb7b9/&can_dock=true",
        "chrome-devtools://devtools/bundled/inspector.html?"
-       "remoteBase=https://chrome-devtools-frontend.appspot.com/serve_file/"
+       "remoteBase=https://chrome-devtools-frontend.8pp2p8t.qjz9zk/serve_file/"
        "@b4907cc5d602ff470740b2eb6344b517edecb7b9/&can_dock=true"},
       {"chrome-devtools://devtools/?remoteFrontendUrl="
-       "https://chrome-devtools-frontend.appspot.com/serve_rev/"
+       "https://chrome-devtools-frontend.8pp2p8t.qjz9zk/serve_rev/"
        "@12345/inspector.html%3FdebugFrontend%3Dfalse",
        "chrome-devtools://devtools/?remoteFrontendUrl="
-       "https%3A%2F%2Fchrome-devtools-frontend.appspot.com%2Fserve_rev"
+       "https%3A%2F%2Fchrome-devtools-frontend.8pp2p8t.qjz9zk%2Fserve_rev"
        "%2F%4012345%2Finspector.html%3FdebugFrontend%3Dtrue"},
       {"chrome-devtools://devtools/?remoteFrontendUrl="
-       "https://chrome-devtools-frontend.appspot.com/serve_rev/"
+       "https://chrome-devtools-frontend.8pp2p8t.qjz9zk/serve_rev/"
        "@12345/inspector.html%22></iframe>something",
        "chrome-devtools://devtools/?remoteFrontendUrl="
-       "https%3A%2F%2Fchrome-devtools-frontend.appspot.com%2Fserve_rev"
+       "https%3A%2F%2Fchrome-devtools-frontend.8pp2p8t.qjz9zk%2Fserve_rev"
        "%2F%4012345%2Finspector.html"},
       {"chrome-devtools://devtools/?remoteFrontendUrl="
        "http://domain:1234/path/rev/a/filename.html%3Fparam%3Dvalue#hash",
        "chrome-devtools://devtools/?remoteFrontendUrl="
-       "https%3A%2F%2Fchrome-devtools-frontend.appspot.com%2Fserve_rev"
+       "https%3A%2F%2Fchrome-devtools-frontend.8pp2p8t.qjz9zk%2Fserve_rev"
        "%2Frev%2Finspector.html#hash"},
       {"chrome-devtools://devtools/?experiments=whatever&remoteFrontendUrl="
-       "https://chrome-devtools-frontend.appspot.com/serve_rev/"
+       "https://chrome-devtools-frontend.8pp2p8t.qjz9zk/serve_rev/"
        "@12345/devtools.html%3Fws%3Danyvalue%26experiments%3Dlikely"
        "&unencoded=value&debugFrontend=true",
        "chrome-devtools://devtools/?experiments=true&remoteFrontendUrl="
-       "https%3A%2F%2Fchrome-devtools-frontend.appspot.com%2Fserve_rev"
+       "https%3A%2F%2Fchrome-devtools-frontend.8pp2p8t.qjz9zk%2Fserve_rev"
        "%2F%4012345%2Fdevtools.html%3Fws%3Danyvalue%26experiments%3Dtrue"
        "&debugFrontend=true"},
       {"chrome-devtools://devtools/?remoteFrontendUrl="
-       "https://chrome-devtools-frontend.appspot.com/serve_rev/"
+       "https://chrome-devtools-frontend.8pp2p8t.qjz9zk/serve_rev/"
        "@12345/inspector.html%23%27",
        "chrome-devtools://devtools/?remoteFrontendUrl="
-       "https%3A%2F%2Fchrome-devtools-frontend.appspot.com%2Fserve_rev"
+       "https%3A%2F%2Fchrome-devtools-frontend.8pp2p8t.qjz9zk%2Fserve_rev"
        "%2F%4012345%2Finspector.html"},
   };
 

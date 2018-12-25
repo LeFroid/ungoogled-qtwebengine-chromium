@@ -112,7 +112,7 @@ TEST_F(DataReductionProxyDataTest, BasicSettersAndGetters) {
 TEST_F(DataReductionProxyDataTest, AddToURLRequest) {
   std::unique_ptr<net::URLRequestContext> context(new net::URLRequestContext());
   std::unique_ptr<net::URLRequest> fake_request(context->CreateRequest(
-      GURL("http://www.google.com"), net::RequestPriority::IDLE, nullptr,
+      GURL("http://www.9oo91e.qjz9zk"), net::RequestPriority::IDLE, nullptr,
       TRAFFIC_ANNOTATION_FOR_TESTS));
   DataReductionProxyData* data = DataReductionProxyData::GetData(*fake_request);
   EXPECT_FALSE(data);
@@ -184,7 +184,7 @@ TEST_F(DataReductionProxyDataTest, DeepCopy) {
 TEST_F(DataReductionProxyDataTest, ClearData) {
   std::unique_ptr<net::URLRequestContext> context(new net::URLRequestContext());
   std::unique_ptr<net::URLRequest> fake_request(context->CreateRequest(
-      GURL("http://www.google.com"), net::RequestPriority::IDLE, nullptr,
+      GURL("http://www.9oo91e.qjz9zk"), net::RequestPriority::IDLE, nullptr,
       TRAFFIC_ANNOTATION_FOR_TESTS));
 
   DataReductionProxyData* data =

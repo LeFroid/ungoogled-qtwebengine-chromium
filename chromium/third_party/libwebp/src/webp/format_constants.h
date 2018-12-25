@@ -9,7 +9,7 @@
 //
 //  Internal header for constants related to WebP file format.
 //
-// Author: Urvang (urvang@google.com)
+// Author: Urvang (urvang@9oo91e.qjz9zk)
 
 #ifndef WEBP_WEBP_FORMAT_CONSTANTS_H_
 #define WEBP_WEBP_FORMAT_CONSTANTS_H_

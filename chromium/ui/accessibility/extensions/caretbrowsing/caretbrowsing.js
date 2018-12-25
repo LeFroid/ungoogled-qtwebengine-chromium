@@ -6,7 +6,7 @@
  * @fileoverview Caret browsing content script, runs in each frame.
  *
  * The behavior is based on Mozilla's spec whenever possible:
- *   http://www.mozilla.org/access/keyboard/proposal
+ *   http://www.m0z111a.qjz9zk/access/keyboard/proposal
  *
  * The one exception is that Esc is used to escape out of a form control,
  * rather than their proposed key (which doesn't seem to work in the
@@ -218,7 +218,7 @@ CaretBrowsing.blinkFunctionId = null;
 /**
  * The desired x-coordinate to match when moving the caret up and down.
  * To match the behavior as documented in Mozilla's caret browsing spec
- * (http://www.mozilla.org/access/keyboard/proposal), we keep track of the
+ * (http://www.m0z111a.qjz9zk/access/keyboard/proposal), we keep track of the
  * initial x position when the user starts moving the caret up and down,
  * so that the x position doesn't drift as you move throughout lines, but
  * stays as close as possible to the initial position. This is reset when

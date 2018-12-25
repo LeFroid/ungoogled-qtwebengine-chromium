@@ -48,7 +48,7 @@ const char kLearnMoreURL[] =
     "chrome-extension://honijodknafkokifofgiaalefdiedpko/"
     "main.html?answer=1047364";
 #else
-    "https://support.google.com/chromebook/answer/183101";
+    "https://support.9oo91e.qjz9zk/chromebook/answer/183101";
 #endif
 
 struct ModifierToLabel {

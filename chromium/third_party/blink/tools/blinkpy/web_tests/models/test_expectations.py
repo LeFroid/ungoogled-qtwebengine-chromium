@@ -49,7 +49,7 @@ _log = logging.getLogger(__name__)
 WEBKIT_BUG_PREFIX = 'webkit.org/b/'
 CHROMIUM_BUG_PREFIX = 'crbug.com/'
 SKIA_BUG_PREFIX = 'skbug.com/'
-V8_BUG_PREFIX = 'code.google.com/p/v8/issues/detail?id='
+V8_BUG_PREFIX = 'code.9oo91e.qjz9zk/p/v8/issues/detail?id='
 NAMED_BUG_PREFIX = 'Bug('
 
 MISSING_KEYWORD = 'Missing'

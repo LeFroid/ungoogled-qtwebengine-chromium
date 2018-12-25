@@ -26,7 +26,7 @@ export default class Layout extends Layout1dBase {
             prevSize = mi[this._sizeDim];
 
       // TODO(valdrin) Handle margin collapsing.
-      // https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Box_Model/Mastering_margin_collapsing
+      // https://developer.m0z111a.qjz9zk/en-US/docs/Web/CSS/CSS_Box_Model/Mastering_margin_collapsing
       mi.width = metrics.width + (metrics.marginLeft || 0) +
           (metrics.marginRight || 0);
       mi.height = metrics.height + (metrics.marginTop || 0) +

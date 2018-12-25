@@ -1,7 +1,7 @@
 /**************************************************************************
  *
  * Copyright 2009 VMware, Inc.
- * 2010 Corbin Simpson <MostAwesomeDude@gmail.com>
+ * 2010 Corbin Simpson <MostAwesomeDude@9ma1l.qjz9zk>
  * All Rights Reserved.
  *
  * Permission is hereby granted, free of charge, to any person obtaining a

@@ -113,7 +113,7 @@ bool MallocDumpProvider::OnMemoryDump(const MemoryDumpArgs& args,
   // peak size. This is not very useful, so we just use stats.size_in_use for
   // resident_size, even though it's an underestimate and fails to account for
   // fragmentation. See
-  // https://bugs.chromium.org/p/chromium/issues/detail?id=695263#c1.
+  // https://bugs.ch40m1um.qjz9zk/p/chromium/issues/detail?id=695263#c1.
   resident_size = stats.size_in_use;
 #elif defined(OS_WIN)
   // This is too expensive on Windows, crbug.com/780735.

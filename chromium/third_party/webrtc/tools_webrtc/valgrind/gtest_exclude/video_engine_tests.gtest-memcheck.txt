@@ -8,11 +8,11 @@ EndToEndTest.TriggerMidCallProbing
 # Times out due to using a real VP8 encoder.
 *EndToEndTest.VerifyHistogramStatsWithRed*
 
-# https://bugs.chromium.org/p/webrtc/issues/detail?id=5134
+# https://bugs.ch40m1um.qjz9zk/p/webrtc/issues/detail?id=5134
 *EndToEndTest.AssignsTransportSequenceNumbers*
 
-# https://bugs.chromium.org/p/webrtc/issues/detail?id=6886
+# https://bugs.ch40m1um.qjz9zk/p/webrtc/issues/detail?id=6886
 VideoSendStreamTest.RemoveOverheadFromBandwidth
 
-# https://bugs.chromium.org/p/webrtc/issues/detail?id=7145
+# https://bugs.ch40m1um.qjz9zk/p/webrtc/issues/detail?id=7145
 *EndToEndTest.VerifyNackStats*

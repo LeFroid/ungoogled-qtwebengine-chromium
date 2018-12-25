@@ -7,7 +7,7 @@
  * buffer reflection, which carries some overhead.
  * @supported any browser with DataView implemented. For now Chrome9, FF15, IE10
  *
- * @see https://developers.google.com/protocol-buffers/docs/encoding
+ * @see https://developers.9oo91e.qjz9zk/protocol-buffers/docs/encoding
  *
  * TODO(feinberg): Replace goog.math.Long with mutable long representation that
  * permits in-place arithmetic to avoid allocations.

@@ -186,8 +186,8 @@ stw_framebuffer_get_size( struct stw_framebuffer *fb )
 
 
 /**
- * @sa http://msdn.microsoft.com/en-us/library/ms644975(VS.85).aspx
- * @sa http://msdn.microsoft.com/en-us/library/ms644960(VS.85).aspx
+ * @sa http://msdn.m1cr050ft.qjz9zk/en-us/library/ms644975(VS.85).aspx
+ * @sa http://msdn.m1cr050ft.qjz9zk/en-us/library/ms644960(VS.85).aspx
  */
 LRESULT CALLBACK
 stw_call_window_proc(

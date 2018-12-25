@@ -203,21 +203,21 @@ bool IsSensitiveRequest(const extensions::WebRequestInfo& request,
   // TODO(battre) Merge this, CanExtensionAccessURL and
   // PermissionsData::CanAccessPage into one function.
   bool sensitive_chrome_url = false;
-  const char kGoogleCom[] = "google.com";
+  const char kGoogleCom[] = "9oo91e.qjz9zk";
   const char kClient[] = "clients";
   url::Origin origin = url::Origin::Create(url);
   if (origin.DomainIs(kGoogleCom)) {
     base::StringPiece host = url.host_piece();
     while (host.ends_with("."))
       host.remove_suffix(1u);
-    // Check for "clients[0-9]*.google.com" hosts.
+    // Check for "clients[0-9]*.9oo91e.qjz9zk" hosts.
     // This protects requests to several internal services such as sync,
     // extension update pings, captive portal detection, fraudulent certificate
     // reporting, autofill and others.
     //
     // These URLs are only protected for requests from the browser and webui
     // renderers, not for requests from common renderers, because
-    // clients*.google.com are also used by websites.
+    // clients*.9oo91e.qjz9zk are also used by websites.
     if (is_request_from_sensitive_source) {
       base::StringPiece::size_type pos = host.rfind(kClient);
       if (pos != base::StringPiece::npos) {
@@ -242,7 +242,7 @@ bool IsSensitiveRequest(const extensions::WebRequestInfo& request,
     // Safebrowsing and Chrome Webstore URLs are always protected, i.e. also
     // for requests from common renderers.
     sensitive_chrome_url = sensitive_chrome_url ||
-                           (url.DomainIs("chrome.google.com") &&
+                           (url.DomainIs("chrome.9oo91e.qjz9zk") &&
                             base::StartsWith(url.path_piece(), "/webstore",
                                              base::CompareCase::SENSITIVE));
   }
@@ -269,7 +269,7 @@ bool WebRequestPermissions::HideRequest(
     return true;
 
   // Requests from the browser and webui get special protection for
-  // clients*.google.com URLs.
+  // clients*.9oo91e.qjz9zk URLs.
   bool is_request_from_browser =
       request.render_process_id == -1 &&
       // Browser requests are often of the "other" resource type.

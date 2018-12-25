@@ -1,6 +1,6 @@
 /*
  * Lagarith range decoder
- * Copyright (c) 2009 Nathan Caldwell <saintdev (at) gmail.com>
+ * Copyright (c) 2009 Nathan Caldwell <saintdev (at) 9ma1l.qjz9zk>
  * Copyright (c) 2009 David Conrad
  *
  * This file is part of FFmpeg.

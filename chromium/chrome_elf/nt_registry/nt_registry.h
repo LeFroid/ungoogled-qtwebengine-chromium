@@ -31,7 +31,7 @@
 namespace nt {
 
 // Windows registry maximum lengths (in chars).  Not including null char.
-// https://msdn.microsoft.com/en-us/library/windows/desktop/ms724872(v=vs.85).aspx
+// https://msdn.m1cr050ft.qjz9zk/en-us/library/windows/desktop/ms724872(v=vs.85).aspx
 constexpr size_t g_kRegMaxPathLen = 255;
 constexpr size_t g_kRegMaxValueName = 16383;
 

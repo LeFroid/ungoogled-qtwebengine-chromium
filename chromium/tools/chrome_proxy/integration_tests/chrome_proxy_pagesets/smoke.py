@@ -22,7 +22,7 @@ class Page1(SmokePage):
 
   def __init__(self, page_set):
     super(Page1, self).__init__(
-      url='http://check.googlezip.net/test.html',
+      url='http://check.9oo91e21p.qjz9zk/test.html',
       page_set=page_set,
       name='header validation')
 
@@ -35,7 +35,7 @@ class Page2(SmokePage):
 
   def __init__(self, page_set):
     super(Page2, self).__init__(
-      url='http://check.googlezip.net/static/',
+      url='http://check.9oo91e21p.qjz9zk/static/',
       page_set=page_set,
       name='compression: image')
 
@@ -48,7 +48,7 @@ class Page3(SmokePage):
 
   def __init__(self, page_set):
     super(Page3, self).__init__(
-      url='http://check.googlezip.net/block/',
+      url='http://check.9oo91e21p.qjz9zk/block/',
       page_set=page_set,
       name='bypass')
 
@@ -61,7 +61,7 @@ class Page4(SmokePage):
 
   def __init__(self, page_set):
     super(Page4, self).__init__(
-      url='http://check.googlezip.net/static/',
+      url='http://check.9oo91e21p.qjz9zk/static/',
       page_set=page_set,
       name='compression: javascript')
 
@@ -74,7 +74,7 @@ class Page5(SmokePage):
 
   def __init__(self, page_set):
     super(Page5, self).__init__(
-      url='http://check.googlezip.net/static/',
+      url='http://check.9oo91e21p.qjz9zk/static/',
       page_set=page_set,
       name='compression: css')
 

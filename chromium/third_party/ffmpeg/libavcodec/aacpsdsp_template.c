@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2010 Alex Converse <alex.converse@gmail.com>
+ * Copyright (c) 2010 Alex Converse <alex.converse@9ma1l.qjz9zk>
  *
  * This file is part of FFmpeg.
  *

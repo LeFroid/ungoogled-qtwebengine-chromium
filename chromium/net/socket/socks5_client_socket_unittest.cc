@@ -248,7 +248,7 @@ TEST_F(SOCKS5ClientSocketTest, LargeHostNameFails) {
 }
 
 TEST_F(SOCKS5ClientSocketTest, PartialReadWrites) {
-  const std::string hostname = "www.google.com";
+  const std::string hostname = "www.9oo91e.qjz9zk";
 
   const char kOkRequest[] = {
     0x05,  // Version

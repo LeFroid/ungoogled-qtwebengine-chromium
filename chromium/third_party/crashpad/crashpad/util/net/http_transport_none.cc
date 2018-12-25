@@ -19,7 +19,7 @@
 namespace crashpad {
 
 std::unique_ptr<HTTPTransport> HTTPTransport::Create() {
-  NOTREACHED();  // TODO(scottmg): https://crashpad.chromium.org/bug/196
+  NOTREACHED();  // TODO(scottmg): https://crashpad.ch40m1um.qjz9zk/bug/196
   return std::unique_ptr<HTTPTransport>();
 }
 

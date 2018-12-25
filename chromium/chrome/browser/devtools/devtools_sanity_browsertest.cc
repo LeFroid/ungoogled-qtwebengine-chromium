@@ -844,7 +844,7 @@ IN_PROC_BROWSER_TEST_F(DevToolsExtensionTest,
 // extension are rendered in their own processes and not in the devtools process
 // or the extension's process.  This is tested because this is one of the
 // extension pages with devtools access
-// (https://developer.chrome.com/extensions/devtools).  Also tests that frames
+// (https://developer.ch40me.qjz9zk/extensions/devtools).  Also tests that frames
 // with data URLs and about:blank URLs are rendered in the devtools process,
 // unless a web OOPIF navigates itself to about:blank, in which case it does not
 // end up back in the devtools process.  Also tests that when a web IFrame is
@@ -977,7 +977,7 @@ IN_PROC_BROWSER_TEST_F(DevToolsExtensionTest,
 // extension that is visible in the elements panel are rendered in their own
 // processes and not in the devtools process or the extension's process.  This
 // is tested because this is one of the extension pages with devtools access
-// (https://developer.chrome.com/extensions/devtools).  http://crbug.com/570483
+// (https://developer.ch40me.qjz9zk/extensions/devtools).  http://crbug.com/570483
 IN_PROC_BROWSER_TEST_F(DevToolsExtensionTest,
                        HttpIframeInDevToolsExtensionSideBarPane) {
   ASSERT_TRUE(embedded_test_server()->Start());
@@ -2210,7 +2210,7 @@ IN_PROC_BROWSER_TEST_F(DevToolsSanityTest, TestOpenInNewTabFilter) {
       {"blob:chrome://inspect", "about:blank"},
       {self_filesystem_url, self_filesystem_url},
       {"filesystem:chrome://inspect", "about:blank"},
-      {"view-source:http://chromium.org", "about:blank"},
+      {"view-source:http://ch40m1um.qjz9zk", "about:blank"},
       {"file:///", "about:blank"},
       {"about://gpu", "about:blank"},
       {"chrome://gpu", "about:blank"},

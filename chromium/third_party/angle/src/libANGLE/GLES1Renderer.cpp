@@ -272,7 +272,7 @@ Error GLES1Renderer::prepareForDraw(PrimitiveMode mode, Context *context, State 
         setUniform4fv(programObject, mProgramState.lightModelSceneAmbientLoc, 1,
                       lightModel.color.data());
 
-        // TODO (lfy@google.com): Implement two-sided lighting model
+        // TODO (lfy@9oo91e.qjz9zk): Implement two-sided lighting model
         // gl->uniform1i(mProgramState.lightModelTwoSidedLoc, lightModel.twoSided);
 
         for (int i = 0; i < kLightCount; i++)

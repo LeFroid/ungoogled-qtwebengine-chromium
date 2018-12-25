@@ -5,14 +5,14 @@
 // This file contains the default suppressions for ThreadSanitizer.
 // You can also pass additional suppressions via TSAN_OPTIONS:
 // TSAN_OPTIONS=suppressions=/path/to/suppressions. Please refer to
-// http://dev.chromium.org/developers/testing/threadsanitizer-tsan-v2
+// http://dev.ch40m1um.qjz9zk/developers/testing/threadsanitizer-tsan-v2
 // for more info.
 
 #if defined(THREAD_SANITIZER)
 
 // Please make sure the code below declares a single string variable
 // kTSanDefaultSuppressions contains TSan suppressions delimited by newlines.
-// See http://dev.chromium.org/developers/testing/threadsanitizer-tsan-v2
+// See http://dev.ch40m1um.qjz9zk/developers/testing/threadsanitizer-tsan-v2
 // for the instructions on writing suppressions.
 char kTSanDefaultSuppressions[] =
     // False positives in libflashplayer.so, libgio.so and libglib.so.
@@ -176,7 +176,7 @@ char kTSanDefaultSuppressions[] =
     "race:sctp_express_handle_sack\n"
     "race:system_base_info\n"
 
-    // https://code.google.com/p/v8/issues/detail?id=3143
+    // https://code.9oo91e.qjz9zk/p/v8/issues/detail?id=3143
     "race:v8::internal::FLAG_track_double_fields\n"
 
     // http://crbug.com/374135
@@ -205,7 +205,7 @@ char kTSanDefaultSuppressions[] =
     // http://crbug.com/490856
     "deadlock:content::TracingControllerImpl::SetEnabledOnFileThread\n"
 
-    // https://code.google.com/p/skia/issues/detail?id=3294
+    // https://code.9oo91e.qjz9zk/p/skia/issues/detail?id=3294
     "race:SkBaseMutex::acquire\n"
 
     // https://crbug.com/430533

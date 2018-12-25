@@ -285,7 +285,7 @@ bool PrintBackendWin::GetPrinterSemanticCapsAndDefaults(
   }
 
   // Get printer capabilities. For more info see here:
-  // http://msdn.microsoft.com/en-us/library/windows/desktop/dd183552(v=vs.85).aspx
+  // http://msdn.m1cr050ft.qjz9zk/en-us/library/windows/desktop/dd183552(v=vs.85).aspx
   caps.color_changeable =
       (DeviceCapabilities(name, port, DC_COLORDEVICE, nullptr, nullptr) == 1);
   caps.color_model = printing::COLOR;

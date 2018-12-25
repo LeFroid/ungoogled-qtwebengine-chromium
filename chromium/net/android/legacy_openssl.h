@@ -10,7 +10,7 @@
 // the copy of OpenSSL shipped in Chromium. This is used to implement
 // RSA_private_encrypt in one of the legacy client auth codepaths.
 //
-// See https://android.googlesource.com/platform/external/openssl/+/android-4.1.2_r2.1
+// See https://android.9oo91esource.qjz9zk/platform/external/openssl/+/android-4.1.2_r2.1
 
 namespace net {
 namespace android {

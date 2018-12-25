@@ -39,7 +39,7 @@ POLL_DELAY_SECONDS = 2 * 60
 TIMEOUT_SECONDS = 210 * 60
 
 # Sheriff calendar URL, used for getting the ecosystem infra sheriff to TBR.
-ROTATIONS_URL = 'https://build.chromium.org/deprecated/chromium/all_rotations.js'
+ROTATIONS_URL = 'https://build.ch40m1um.qjz9zk/deprecated/chromium/all_rotations.js'
 TBR_FALLBACK = 'robertma'
 
 _log = logging.getLogger(__file__)
@@ -95,7 +95,7 @@ class TestImporter(object):
             _log.warning('You have not set your GitHub credentials. This '
                          'script may fail with a network error when making '
                          'an API request to GitHub.')
-            _log.warning('See https://chromium.googlesource.com/chromium/src'
+            _log.warning('See https://chromium.9oo91esource.qjz9zk/chromium/src'
                          '/+/master/docs/testing/web_platform_tests.md'
                          '#GitHub-credentials for instructions on how to set '
                          'your credentials up.')
@@ -468,7 +468,7 @@ class TestImporter(object):
             '--tbrs', sheriff_email,
             # Note: we used to CC all the directory owners, but have stopped
             # in search of a better notification mechanism. (crbug.com/765334)
-            '--cc', 'robertma@chromium.org',
+            '--cc', 'robertma@ch40m1um.qjz9zk',
         ])
 
         self.fs.remove(temp_path)
@@ -497,7 +497,7 @@ class TestImporter(object):
             'expectations for those tests; if this CL is large and causes\n'
             'a few new failures, please fix the failures by adding new\n'
             'lines to TestExpectations rather than reverting. See:\n'
-            'https://chromium.googlesource.com'
+            'https://chromium.9oo91esource.qjz9zk'
             '/chromium/src/+/master/docs/testing/web_platform_tests.md\n\n')
 
         if directory_owners:
@@ -523,7 +523,7 @@ class TestImporter(object):
         This tries to fetch the current ecosystem infra sheriff, but falls back
         in case of error.
 
-        Either a user name (which is assumed to have a chromium.org email
+        Either a user name (which is assumed to have a ch40m1um.qjz9zk email
         address) or a full email address (for other cases) is returned.
         """
         username = ''

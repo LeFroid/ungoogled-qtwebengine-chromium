@@ -14,7 +14,7 @@
 
 /**
  * @fileoverview A utility class for representing two-dimensional positions.
- * @author pupius@google.com (Daniel Pupius)
+ * @author pupius@9oo91e.qjz9zk (Daniel Pupius)
  */
 
 

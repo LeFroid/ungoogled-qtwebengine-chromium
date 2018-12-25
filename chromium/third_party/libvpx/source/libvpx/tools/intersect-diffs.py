@@ -14,7 +14,7 @@ in A and prints them to stdout. This is useful to determine the hunks in B that
 are relevant to A. The resulting file can be applied with patch(1) on top of A.
 """
 
-__author__ = "jkoleszar@google.com"
+__author__ = "jkoleszar@9oo91e.qjz9zk"
 
 import sys
 

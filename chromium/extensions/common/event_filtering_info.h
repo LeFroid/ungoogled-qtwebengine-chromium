@@ -19,7 +19,7 @@ namespace extensions {
 // extension event listeners. Eg:
 //
 // chrome.someApi.onSomeEvent.addListener(cb,
-//                                        {url: [{hostSuffix: 'google.com'}],
+//                                        {url: [{hostSuffix: '9oo91e.qjz9zk'}],
 //                                         tabId: 1});
 struct EventFilteringInfo {
  public:

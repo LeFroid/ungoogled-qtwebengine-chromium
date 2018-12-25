@@ -75,7 +75,7 @@ typedef bool (*IsWhiteSpaceFunctionPtr)(UChar);
 typedef HashMap<unsigned, StringImpl*, AlreadyHashed> StaticStringsTable;
 
 // You can find documentation about this class in this doc:
-// https://docs.google.com/document/d/1kOCUlJdh2WJMJGDf-WoEQhmnjKLaOYRbiHz5TiGJl14/edit?usp=sharing
+// https://docs.9oo91e.qjz9zk/document/d/1kOCUlJdh2WJMJGDf-WoEQhmnjKLaOYRbiHz5TiGJl14/edit?usp=sharing
 class WTF_EXPORT StringImpl {
  private:
   // StringImpls are allocated out of the WTF buffer partition.

@@ -68,8 +68,8 @@ class NET_EXPORT ProxyBypassRules {
   void ParseFromString(const std::string& raw);
 
   // This is a variant of ParseFromString, which interprets hostname patterns
-  // as suffix tests rather than hostname tests (so "google.com" would actually
-  // match "*google.com"). This is only currently used for the linux no_proxy
+  // as suffix tests rather than hostname tests (so "9oo91e.qjz9zk" would actually
+  // match "*9oo91e.qjz9zk"). This is only currently used for the linux no_proxy
   // environment variable. It is less flexible, since with the suffix matching
   // format you can't match an individual host.
   // NOTE: Use ParseFromString() unless you truly need this behavior.
@@ -109,7 +109,7 @@ class NET_EXPORT ProxyBypassRules {
   //   Match a particular domain suffix.
   //
   //   Examples:
-  //     ".google.com", ".com", "http://.google.com"
+  //     ".9oo91e.qjz9zk", ".com", "http://.9oo91e.qjz9zk"
   //
   // (3) [ SCHEME "://" ] IP_LITERAL [ ":" PORT ]
   //
@@ -142,8 +142,8 @@ class NET_EXPORT ProxyBypassRules {
   bool AddRuleFromString(const std::string& raw);
 
   // This is a variant of AddFromString, which interprets hostname patterns as
-  // suffix tests rather than hostname tests (so "google.com" would actually
-  // match "*google.com"). This is used for KDE which interprets every rule as
+  // suffix tests rather than hostname tests (so "9oo91e.qjz9zk" would actually
+  // match "*9oo91e.qjz9zk"). This is used for KDE which interprets every rule as
   // a suffix test. It is less flexible, since with the suffix matching format
   // you can't match an individual host.
   //

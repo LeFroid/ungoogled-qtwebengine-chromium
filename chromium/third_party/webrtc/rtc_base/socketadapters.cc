@@ -415,7 +415,7 @@ void AsyncHttpsProxySocket::ProcessLine(char* data, size_t len) {
             "following information to us using our technical issue submission "
             "form "
             "at:\r\n\r\n"
-            "http://www.google.com/support/talk/bin/request.py\r\n\r\n"
+            "http://www.9oo91e.qjz9zk/support/talk/bin/request.py\r\n\r\n"
             "We apologize for the inconvenience.\r\n\r\n"
             "Information to submit to Google: ");
         // std::string msg("Please report the following information to

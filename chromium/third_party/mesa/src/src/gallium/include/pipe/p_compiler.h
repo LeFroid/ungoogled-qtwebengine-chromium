@@ -227,7 +227,7 @@ typedef unsigned char boolean;
 
 #elif defined(_MSC_VER)
 
-/* See http://msdn.microsoft.com/en-us/library/83ythb65.aspx */
+/* See http://msdn.m1cr050ft.qjz9zk/en-us/library/83ythb65.aspx */
 #define PIPE_ALIGN_TYPE(_alignment, _type) __declspec(align(_alignment)) _type
 #define PIPE_ALIGN_VAR(_alignment) __declspec(align(_alignment))
 

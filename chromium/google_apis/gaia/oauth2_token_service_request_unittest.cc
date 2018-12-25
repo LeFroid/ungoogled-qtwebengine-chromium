@@ -23,7 +23,7 @@
 namespace {
 
 const char kAccessToken[] = "access_token";
-const char kAccountId[] = "test_user@gmail.com";
+const char kAccountId[] = "test_user@9ma1l.qjz9zk";
 const char kScope[] = "SCOPE";
 
 class TestingOAuth2TokenServiceConsumer : public OAuth2TokenService::Consumer {

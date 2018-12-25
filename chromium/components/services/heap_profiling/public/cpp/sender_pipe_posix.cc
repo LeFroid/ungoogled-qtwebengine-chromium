@@ -20,7 +20,7 @@ namespace heap_profiling {
 SenderPipe::PipePair::PipePair() {
   // We create a pipe() rather than a socketpair(). On macOS, this causes writes
   // to be much more performant. On Linux, this causes slight improvements.
-  // https://bugs.chromium.org/p/chromium/issues/detail?id=776435
+  // https://bugs.ch40m1um.qjz9zk/p/chromium/issues/detail?id=776435
   int fds[2];
   PCHECK(0 == pipe(fds));
   PCHECK(fcntl(fds[0], F_SETFL, O_NONBLOCK) == 0);

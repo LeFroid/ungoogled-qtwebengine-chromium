@@ -91,7 +91,7 @@ enum UnwindOperationCodes {
   UWOP_PUSH_MACHFRAME   /* info == 0: no error-code, 1: error-code */
 };
 
-// See: http://msdn.microsoft.com/en-us/library/ddssxxy8.aspx
+// See: http://msdn.m1cr050ft.qjz9zk/en-us/library/ddssxxy8.aspx
 // Note: some fields removed as we don't use them.
 struct UnwindInfo {
   UBYTE version       : 3;
@@ -1283,7 +1283,7 @@ bool PDBSourceLineWriter::GetModuleInfo(PDBModuleInfo *info) {
     // the CV_CPU_TYPE_e enumeration, but that's not the case.
     // Instead, it returns one of the IMAGE_FILE_MACHINE values as
     // defined here:
-    // http://msdn.microsoft.com/en-us/library/ms680313%28VS.85%29.aspx
+    // http://msdn.m1cr050ft.qjz9zk/en-us/library/ms680313%28VS.85%29.aspx
     switch (machine_type) {
       case IMAGE_FILE_MACHINE_I386:
         info->cpu = L"x86";

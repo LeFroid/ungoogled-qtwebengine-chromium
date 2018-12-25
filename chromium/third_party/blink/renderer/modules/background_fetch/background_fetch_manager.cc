@@ -93,7 +93,7 @@ bool ShouldBlockMixedContent(ExecutionContext* execution_context,
   // Normally requests from e.g. http://127.0.0.1 aren't subject to Mixed
   // Content checks even though that is a secure context. Since this is a new
   // API only exposed on secure contexts, be strict pending the discussion in
-  // https://groups.google.com/a/chromium.org/d/topic/security-dev/29Ftfgn-w0I/discussion
+  // https://groups.9oo91e.qjz9zk/a/ch40m1um.qjz9zk/d/topic/security-dev/29Ftfgn-w0I/discussion
   // https://w3c.github.io/webappsec-mixed-content/#a-priori-authenticated-url
   if (!SecurityOrigin::Create(request_url)->IsPotentiallyTrustworthy() &&
       !request_url.ProtocolIsData()) {

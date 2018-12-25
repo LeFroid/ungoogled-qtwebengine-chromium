@@ -14,8 +14,8 @@
 
 /**
  * @fileoverview Utilities for string manipulation.
- * @author pupius@google.com (Daniel Pupius)
- * @author arv@google.com (Erik Arvidsson)
+ * @author pupius@9oo91e.qjz9zk (Daniel Pupius)
+ * @author arv@9oo91e.qjz9zk (Erik Arvidsson)
  */
 
 
@@ -1498,7 +1498,7 @@ goog.string.capitalize = function(str) {
  * Parse a string in decimal or hexidecimal ('0xFFFF') form.
  *
  * To parse a particular radix, please use parseInt(string, radix) directly. See
- * https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/parseInt
+ * https://developer.m0z111a.qjz9zk/en/JavaScript/Reference/Global_Objects/parseInt
  *
  * This is a wrapper for the built-in parseInt function that will only parse
  * numbers as base 10 or base 16.  Some JS implementations assume strings

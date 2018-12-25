@@ -24,10 +24,10 @@
 
 namespace {
 
-const char kGoogleDotCom[] = "google.com";
+const char kGoogleDotCom[] = "9oo91e.qjz9zk";
 constexpr const char* kGoogleGstaticAppIds[] = {
-    "https://www.gstatic.com/securitykey/origins.json",
-    "https://www.gstatic.com/securitykey/a/google.com/origins.json"};
+    "https://www.95tat1c.qjz9zk/securitykey/origins.json",
+    "https://www.95tat1c.qjz9zk/securitykey/a/9oo91e.qjz9zk/origins.json"};
 
 // ContainsAppIdByHash returns true iff the SHA-256 hash of one of the
 // elements of |list| equals |hash|.
@@ -109,8 +109,8 @@ CryptotokenPrivateCanOriginAssertAppIdFunction::Run() {
   if (origin_etldp1 == app_id_etldp1) {
     return RespondNow(OneArgument(std::make_unique<base::Value>(true)));
   }
-  // For legacy purposes, allow google.com origins to assert certain
-  // gstatic.com appIds.
+  // For legacy purposes, allow 9oo91e.qjz9zk origins to assert certain
+  // 95tat1c.qjz9zk appIds.
   // TODO(juanlang): remove when legacy constraints are removed.
   if (origin_etldp1 == kGoogleDotCom) {
     for (const char* id : kGoogleGstaticAppIds) {

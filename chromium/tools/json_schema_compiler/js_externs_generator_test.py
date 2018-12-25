@@ -98,7 +98,7 @@ fake_idl_expected = """// Copyright %s The Chromium Authors. All rights reserved
 // NOTE: The format of types has changed. 'FooType' is now
 //   'chrome.fakeApi.FooType'.
 // Please run the closure compiler before committing changes.
-// See https://chromium.googlesource.com/chromium/src/+/master/docs/closure_compilation.md
+// See https://chromium.9oo91esource.qjz9zk/chromium/src/+/master/docs/closure_compilation.md
 
 /** @fileoverview Externs generated from namespace: fakeApi */
 
@@ -109,7 +109,7 @@ chrome.fakeApi = {};
 
 /**
  * @enum {string}
- * @see https://developer.chrome.com/extensions/fakeApi#type-Greek
+ * @see https://developer.ch40me.qjz9zk/extensions/fakeApi#type-Greek
  */
 chrome.fakeApi.Greek = {
   ALPHA: 'ALPHA',
@@ -122,7 +122,7 @@ chrome.fakeApi.Greek = {
  * @typedef {{
  *   num: number
  * }}
- * @see https://developer.chrome.com/extensions/fakeApi#type-Bar
+ * @see https://developer.ch40me.qjz9zk/extensions/fakeApi#type-Bar
  */
 chrome.fakeApi.Bar;
 
@@ -143,43 +143,43 @@ chrome.fakeApi.Bar;
  *   plainObj: Object,
  *   arrayBuff: ArrayBuffer
  * }}
- * @see https://developer.chrome.com/extensions/fakeApi#type-Baz
+ * @see https://developer.ch40me.qjz9zk/extensions/fakeApi#type-Baz
  */
 chrome.fakeApi.Baz;
 
 /**
  * @constructor
  * @private
- * @see https://developer.chrome.com/extensions/fakeApi#type-Qux
+ * @see https://developer.ch40me.qjz9zk/extensions/fakeApi#type-Qux
  */
 chrome.fakeApi.Qux = function() {};
 
 /**
  * @type {number}
- * @see https://developer.chrome.com/extensions/fakeApi#type-notOptionalLong
+ * @see https://developer.ch40me.qjz9zk/extensions/fakeApi#type-notOptionalLong
  */
 chrome.fakeApi.Qux.prototype.notOptionalLong;
 
 /**
  * @type {(number|undefined)}
- * @see https://developer.chrome.com/extensions/fakeApi#type-optionalLong
+ * @see https://developer.ch40me.qjz9zk/extensions/fakeApi#type-optionalLong
  */
 chrome.fakeApi.Qux.prototype.optionalLong;
 
 /**
  * A map from string to number.
  * @type {Object<string, number>}
- * @see https://developer.chrome.com/extensions/fakeApi#type-dict
+ * @see https://developer.ch40me.qjz9zk/extensions/fakeApi#type-dict
  */
 chrome.fakeApi.Qux.prototype.dict;
 
 /**
- * @see https://developer.chrome.com/extensions/fakeApi#method-go
+ * @see https://developer.ch40me.qjz9zk/extensions/fakeApi#method-go
  */
 chrome.fakeApi.Qux.prototype.go = function() {};
 
 /**
- * @see https://developer.chrome.com/extensions/fakeApi#method-stop
+ * @see https://developer.ch40me.qjz9zk/extensions/fakeApi#method-stop
  */
 chrome.fakeApi.Qux.prototype.stop = function() {};
 
@@ -189,7 +189,7 @@ chrome.fakeApi.Qux.prototype.stop = function() {};
  * comment! It goes onto multiple lines!
  * @param {!chrome.fakeApi.Baz} baz The baz to use.
  * @param {function():void} callback
- * @see https://developer.chrome.com/extensions/fakeApi#method-doSomething
+ * @see https://developer.ch40me.qjz9zk/extensions/fakeApi#method-doSomething
  */
 chrome.fakeApi.doSomething = function(baz, callback) {};
 
@@ -197,27 +197,27 @@ chrome.fakeApi.doSomething = function(baz, callback) {};
  * @param {function(!chrome.fakeApi.Baz, !chrome.fakeApi.Greek):void=} callback
  *     The callback which will most assuredly in all cases be called; that is,
  *     of course, iff such a callback was provided and is not at all null.
- * @see https://developer.chrome.com/extensions/fakeApi#method-bazGreek
+ * @see https://developer.ch40me.qjz9zk/extensions/fakeApi#method-bazGreek
  */
 chrome.fakeApi.bazGreek = function(callback) {};
 
 /**
  * @return {string}
  * @deprecated Use a new method.
- * @see https://developer.chrome.com/extensions/fakeApi#method-returnString
+ * @see https://developer.ch40me.qjz9zk/extensions/fakeApi#method-returnString
  */
 chrome.fakeApi.returnString = function() {};
 
 /**
  * @param {function((!chrome.fakeApi.Qux|undefined)):void=} callback
- * @see https://developer.chrome.com/extensions/fakeApi#method-optionalParam
+ * @see https://developer.ch40me.qjz9zk/extensions/fakeApi#method-optionalParam
  */
 chrome.fakeApi.optionalParam = function(callback) {};
 
 /**
  * Fired when we realize it's a trap!
  * @type {!ChromeEvent}
- * @see https://developer.chrome.com/extensions/fakeApi#event-onTrapDetected
+ * @see https://developer.ch40me.qjz9zk/extensions/fakeApi#event-onTrapDetected
  */
 chrome.fakeApi.onTrapDetected;""" % datetime.now().year
 
@@ -257,7 +257,7 @@ fake_private_idl_expected = """// Copyright %s The Chromium Authors. All rights 
 // NOTE: The format of types has changed. 'FooType' is now
 //   'chrome.fakeApiPrivate.FooType'.
 // Please run the closure compiler before committing changes.
-// See https://chromium.googlesource.com/chromium/src/+/master/docs/closure_compilation.md
+// See https://chromium.9oo91esource.qjz9zk/chromium/src/+/master/docs/closure_compilation.md
 
 /** @fileoverview Externs generated from namespace: fakeApiPrivate */
 
@@ -372,7 +372,7 @@ fake_json_expected = """// Copyright %s The Chromium Authors. All rights reserve
 // NOTE: The format of types has changed. 'FooType' is now
 //   'chrome.fakeJson.FooType'.
 // Please run the closure compiler before committing changes.
-// See https://chromium.googlesource.com/chromium/src/+/master/docs/closure_compilation.md
+// See https://chromium.9oo91esource.qjz9zk/chromium/src/+/master/docs/closure_compilation.md
 
 /** @fileoverview Externs generated from namespace: fakeJson */
 
@@ -383,7 +383,7 @@ chrome.fakeJson = {};
 
 /**
  * @enum {string}
- * @see https://developer.chrome.com/extensions/fakeJson#type-CrazyEnum
+ * @see https://developer.ch40me.qjz9zk/extensions/fakeJson#type-CrazyEnum
  */
 chrome.fakeJson.CrazyEnum = {
   CAMEL_CASE_ENUM: 'camelCaseEnum',
@@ -409,7 +409,7 @@ chrome.fakeJson.CrazyEnum = {
  *   str: string,
  *   int: number
  * }}
- * @see https://developer.chrome.com/extensions/fakeJson#method-funcWithInlineObj
+ * @see https://developer.ch40me.qjz9zk/extensions/fakeJson#method-funcWithInlineObj
  */
 chrome.fakeJson.funcWithInlineObj = function(inlineObj, callback) {};""" % (
     datetime.now().year)

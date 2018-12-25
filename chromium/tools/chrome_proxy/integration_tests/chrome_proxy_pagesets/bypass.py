@@ -22,7 +22,7 @@ class BypassStorySet(story.StorySet):
     super(BypassStorySet, self).__init__()
 
     urls_list = [
-      'http://check.googlezip.net/block/',
+      'http://check.9oo91e21p.qjz9zk/block/',
     ]
 
     for url in urls_list:

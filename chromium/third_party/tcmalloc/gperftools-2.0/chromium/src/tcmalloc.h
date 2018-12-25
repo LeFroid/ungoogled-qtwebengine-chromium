@@ -28,7 +28,7 @@
 // OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 // ---
-// Author: Craig Silverstein <opensource@google.com>
+// Author: Craig Silverstein <opensource@9oo91e.qjz9zk>
 //
 // Some obscure memory-allocation routines may not be declared on all
 // systems.  In those cases, we'll just declare them ourselves.

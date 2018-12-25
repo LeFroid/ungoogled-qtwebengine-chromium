@@ -5,8 +5,8 @@
     "type": "git"
   },
   "author": "The Chromium Authors",
-  "license": "SEE LICENSE IN https://chromium.googlesource.com/chromium/src/+/master/LICENSE",
-  "homepage": "https://devtools.chrome.com",
+  "license": "SEE LICENSE IN https://chromium.9oo91esource.qjz9zk/chromium/src/+/master/LICENSE",
+  "homepage": "https://devtools.ch40me.qjz9zk",
   "dependencies": {
     "eslint": "4.13.1"
   }

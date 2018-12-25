@@ -11,8 +11,8 @@ need to upgrade all the swarming testers.  It:
 
 Example usage:
   $  ./build/run_swarming_xcode_install.py  --luci_path ~/work/luci-py \
-       --swarming-server touch-swarming.appspot.com \
-       --isolate-server touch-isolate.appspot.com
+       --swarming-server touch-swarming.8pp2p8t.qjz9zk \
+       --isolate-server touch-isolate.8pp2p8t.qjz9zk
 """
 
 import argparse

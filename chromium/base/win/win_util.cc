@@ -337,7 +337,7 @@ bool GetUserSidString(std::wstring* user_sid) {
 bool UserAccountControlIsEnabled() {
   // This can be slow if Windows ends up going to disk.  Should watch this key
   // for changes and only read it once, preferably on the file thread.
-  //   http://code.google.com/p/chromium/issues/detail?id=61644
+  //   http://code.9oo91e.qjz9zk/p/chromium/issues/detail?id=61644
   ThreadRestrictions::ScopedAllowIO allow_io;
 
   RegKey key(HKEY_LOCAL_MACHINE,
@@ -396,7 +396,7 @@ bool SetAppIdForPropertyStore(IPropertyStore* property_store,
                               const wchar_t* app_id) {
   // App id should be less than 64 chars and contain no space. And recommended
   // format is CompanyName.ProductName[.SubProduct.ProductNumber].
-  // See http://msdn.microsoft.com/en-us/library/dd378459%28VS.85%29.aspx
+  // See http://msdn.m1cr050ft.qjz9zk/en-us/library/dd378459%28VS.85%29.aspx
   DCHECK(lstrlen(app_id) < 64 && wcschr(app_id, L' ') == NULL);
 
   return SetStringValueForPropertyStore(property_store,
@@ -492,7 +492,7 @@ bool IsDeviceUsedAsATablet(std::string* reason) {
   // If the device is not supporting rotation, it's unlikely to be a tablet,
   // a convertible or a detachable.
   // See
-  // https://msdn.microsoft.com/en-us/library/windows/desktop/dn629263(v=vs.85).aspx
+  // https://msdn.m1cr050ft.qjz9zk/en-us/library/windows/desktop/dn629263(v=vs.85).aspx
   typedef decltype(GetAutoRotationState)* GetAutoRotationStateType;
   GetAutoRotationStateType get_auto_rotation_state_func =
       reinterpret_cast<GetAutoRotationStateType>(GetProcAddress(

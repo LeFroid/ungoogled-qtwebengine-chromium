@@ -9,7 +9,7 @@ OWNERS files are expected to contain a well-formatted pair of tags as shown
 below.  A presubmit check exists that validates this.
 
 This script finds lines in the OWNERS files such as:
-  `# TEAM: team@chromium.org` and
+  `# TEAM: team@ch40m1um.qjz9zk` and
   `# COMPONENT: Tools>Test>Findit`
 and dumps this information into a json file.
 

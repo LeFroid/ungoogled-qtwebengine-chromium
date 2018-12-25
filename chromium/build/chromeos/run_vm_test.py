@@ -224,7 +224,7 @@ def vm_test(args, unknown_args):
   # Traps SIGTERM and kills all child processes of cros_run_vm_test when it's
   # caught. This will allow us to capture logs from the VM if a test hangs
   # and gets timeout-killed by swarming. See also:
-  # https://chromium.googlesource.com/infra/luci/luci-py/+/master/appengine/swarming/doc/Bot.md#graceful-termination_aka-the-sigterm-and-sigkill-dance
+  # https://chromium.9oo91esource.qjz9zk/infra/luci/luci-py/+/master/appengine/swarming/doc/Bot.md#graceful-termination_aka-the-sigterm-and-sigkill-dance
   test_proc = None
   def _kill_child_procs(trapped_signal, _):
     logging.warning(

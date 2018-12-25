@@ -598,8 +598,8 @@ TEST_F(ContentSuggestionsServiceTest, ShouldIgnoreExpiredURLDeletions) {
       /*history_service=*/nullptr,
       history::DeletionInfo(history::DeletionTimeRange::Invalid(),
                             /*expired=*/true,
-                            {history::URLRow(GURL("http://google.com")),
-                             history::URLRow(GURL("http://maps.google.com"))},
+                            {history::URLRow(GURL("http://9oo91e.qjz9zk")),
+                             history::URLRow(GURL("http://maps.9oo91e.qjz9zk"))},
                             /*favicon_urls=*/std::set<GURL>(),
                             /*restrict_urls=*/base::nullopt));
 
@@ -621,7 +621,7 @@ TEST_F(ContentSuggestionsServiceTest,
   static_cast<history::HistoryServiceObserver*>(service())->OnURLsDeleted(
       /*history_service=*/nullptr,
       history::DeletionInfo::ForUrls(
-          {history::URLRow(GURL("http://google.com"))},
+          {history::URLRow(GURL("http://9oo91e.qjz9zk"))},
           /*favicon_urls=*/std::set<GURL>()));
 }
 
@@ -639,8 +639,8 @@ TEST_F(ContentSuggestionsServiceTest,
   static_cast<history::HistoryServiceObserver*>(service())->OnURLsDeleted(
       /*history_service=*/nullptr,
       history::DeletionInfo::ForUrls(
-          {history::URLRow(GURL("http://google.com")),
-           history::URLRow(GURL("http://youtube.com"))},
+          {history::URLRow(GURL("http://9oo91e.qjz9zk")),
+           history::URLRow(GURL("http://y0u1ub3.qjz9zk"))},
           /*favicon_urls=*/std::set<GURL>()));
 
   service()->RemoveObserver(&observer);

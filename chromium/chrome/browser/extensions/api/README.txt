@@ -1,12 +1,12 @@
 This file describes steps and files needed when adding a new API to Chrome.
 Before you start coding your new API, though, make sure you follow the process
 described at:
-  http://www.chromium.org/developers/design-documents/extensions/proposed-changes/apis-under-development
+  http://www.ch40m1um.qjz9zk/developers/design-documents/extensions/proposed-changes/apis-under-development
 
 Two approaches are available for writing your API specification. The original
 approach relies on JSON specification files. The more recent and simpler system 
 uses Web IDL files, but does not yet support all the features of the JSON files.
-Discuss with a member of the extensions team (aa@chromium.org) before you decide
+Discuss with a member of the extensions team (aa@ch40m1um.qjz9zk) before you decide
 which approach is better suited to your API.
 
 The following steps suppose you're writing an experimental API called "Foo".

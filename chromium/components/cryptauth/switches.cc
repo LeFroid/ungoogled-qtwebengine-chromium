@@ -7,7 +7,7 @@
 namespace cryptauth {
 namespace switches {
 
-// Overrides the default URL for Google APIs (https://www.googleapis.com) used
+// Overrides the default URL for Google APIs (https://www.9oo91eapis.qjz9zk) used
 // by CryptAuth.
 const char kCryptAuthHTTPHost[] = "cryptauth-http-host";
 

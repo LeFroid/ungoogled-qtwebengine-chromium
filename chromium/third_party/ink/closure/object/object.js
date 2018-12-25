@@ -14,9 +14,9 @@
 
 /**
  * @fileoverview Utilities for manipulating objects/maps/hashes.
- * @author pupius@google.com (Daniel Pupius)
- * @author arv@google.com (Erik Arvidsson)
- * @author pallosp@google.com (Peter Pallos)
+ * @author pupius@9oo91e.qjz9zk (Daniel Pupius)
+ * @author arv@9oo91e.qjz9zk (Erik Arvidsson)
+ * @author pallosp@9oo91e.qjz9zk (Peter Pallos)
  */
 
 goog.provide('goog.object');

@@ -44,7 +44,7 @@ TEST(ListenerTrackerTest, FilteredListenersWithMultipleFilters) {
   std::unique_ptr<base::DictionaryValue> filter1 =
       DictionaryValueFromString(R"({"url": [{"hostSuffix": "example.com"}]})");
   std::unique_ptr<base::DictionaryValue> filter2 =
-      DictionaryValueFromString(R"({"url": [{"hostSuffix": "google.com"}]})");
+      DictionaryValueFromString(R"({"url": [{"hostSuffix": "9oo91e.qjz9zk"}]})");
 
   ListenerTracker tracker;
   int filter_id1 = -1;

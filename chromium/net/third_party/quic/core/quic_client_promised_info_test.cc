@@ -82,7 +82,7 @@ class QuicClientPromisedInfoTest : public QuicTest {
     stream_->set_visitor(stream_visitor_.get());
 
     push_promise_[":path"] = "/bar";
-    push_promise_[":authority"] = "www.google.com";
+    push_promise_[":authority"] = "www.9oo91e.qjz9zk";
     push_promise_[":version"] = "HTTP/1.1";
     push_promise_[":method"] = "GET";
     push_promise_[":scheme"] = "https";

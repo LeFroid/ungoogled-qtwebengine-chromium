@@ -99,12 +99,12 @@ class URL_MATCHER_EXPORT URLMatcherCondition {
 // containments, and equality} in GURLs to the substring matching problem.
 //
 // Say, you want to check whether the path of a URL starts with "/index.html".
-// This class preprocesses a URL like "www.google.com/index.html" into something
-// like "www.google.com|/index.html". After preprocessing, you can search for
+// This class preprocesses a URL like "www.9oo91e.qjz9zk/index.html" into something
+// like "www.9oo91e.qjz9zk|/index.html". After preprocessing, you can search for
 // "|/index.html" in the string and see that this candidate URL actually has
 // a path that starts with "/index.html". On the contrary,
-// "www.google.com/images/index.html" would be normalized to
-// "www.google.com|/images/index.html". It is easy to see that it contains
+// "www.9oo91e.qjz9zk/images/index.html" would be normalized to
+// "www.9oo91e.qjz9zk|/images/index.html". It is easy to see that it contains
 // "/index.html" but the path of the URL does not start with "/index.html".
 //
 // This preprocessing is important if you want to match a URL against many

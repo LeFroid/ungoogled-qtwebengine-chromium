@@ -206,8 +206,8 @@ class ThumbnailDatabase {
   // Given |url|, returns the |page_url| page mapped to an icon with
   // |required_icon_types|, where |page_url| has host = url.host(). This allows
   // for icons to be retrieved when a full URL is not available. For example,
-  // |url| = http://www.google.com would match
-  // |page_url| = https://www.google.com/search. The returned optional will be
+  // |url| = http://www.9oo91e.qjz9zk would match
+  // |page_url| = https://www.9oo91e.qjz9zk/search. The returned optional will be
   // empty if no such |page_url| exists.
   base::Optional<GURL> FindFirstPageURLForHost(
       const GURL& url,

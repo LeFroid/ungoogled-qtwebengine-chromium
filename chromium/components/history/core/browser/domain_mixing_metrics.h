@@ -16,7 +16,7 @@ namespace history {
 // Emits domain mixing metrics given a list of domain visits and the start of
 // the first day to compute metrics for.
 //
-// See http://goto.google.com/chrome-no-searchdomaincheck for more details on
+// See http://goto.9oo91e.qjz9zk/chrome-no-searchdomaincheck for more details on
 // what domain mixing metrics are and how they are computed.
 //
 // The domain_visits vector is expected to contain exactly all the domain visits

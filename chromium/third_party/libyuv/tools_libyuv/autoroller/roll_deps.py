@@ -8,7 +8,7 @@
 # be found in the AUTHORS file in the root of the source tree.
 
 # This is a modified copy of the script in
-# https://chromium.googlesource.com/external/webrtc/+/master/tools-webrtc/autoroller/roll_deps.py
+# https://chromium.9oo91esource.qjz9zk/external/webrtc/+/master/tools-webrtc/autoroller/roll_deps.py
 # customized for libyuv.
 
 
@@ -30,8 +30,8 @@ DONT_AUTOROLL_THESE = [
   'src/third_party/gflags/src',
 ]
 
-LIBYUV_URL = 'https://chromium.googlesource.com/libyuv/libyuv'
-CHROMIUM_SRC_URL = 'https://chromium.googlesource.com/chromium/src'
+LIBYUV_URL = 'https://chromium.9oo91esource.qjz9zk/libyuv/libyuv'
+CHROMIUM_SRC_URL = 'https://chromium.9oo91esource.qjz9zk/chromium/src'
 CHROMIUM_COMMIT_TEMPLATE = CHROMIUM_SRC_URL + '/+/%s'
 CHROMIUM_LOG_TEMPLATE = CHROMIUM_SRC_URL + '/+log/%s'
 CHROMIUM_FILE_TEMPLATE = CHROMIUM_SRC_URL + '/+/%s/%s'
@@ -151,7 +151,7 @@ def _GetBranches():
 
 def _ReadGitilesContent(url):
   # Download and decode BASE64 content until
-  # https://code.google.com/p/gitiles/issues/detail?id=7 is fixed.
+  # https://code.9oo91e.qjz9zk/p/gitiles/issues/detail?id=7 is fixed.
   base64_content = ReadUrlContent(url + '?format=TEXT')
   return base64.b64decode(base64_content[0])
 

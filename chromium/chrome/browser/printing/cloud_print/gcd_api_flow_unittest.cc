@@ -33,7 +33,7 @@ const char kSampleConfirmResponse[] = "{}";
 
 const char kFailedConfirmResponseBadJson[] = "[]";
 
-const char kAccountId[] = "account_id@gmail.com";
+const char kAccountId[] = "account_id@9ma1l.qjz9zk";
 
 class MockDelegate : public CloudPrintApiFlowRequest {
  public:
@@ -60,7 +60,7 @@ class GCDApiFlowTest : public testing::Test {
     mock_delegate_ = delegate.get();
     EXPECT_CALL(*mock_delegate_, GetURL())
         .WillRepeatedly(Return(
-            GURL("https://www.google.com/cloudprint/confirm?token=SomeToken")));
+            GURL("https://www.9oo91e.qjz9zk/cloudprint/confirm?token=SomeToken")));
     gcd_flow_ = std::make_unique<GCDApiFlowImpl>(
         request_context_.get(), identity_test_environment_.identity_manager());
     gcd_flow_->Start(std::move(delegate));
@@ -81,7 +81,7 @@ TEST_F(GCDApiFlowTest, SuccessOAuth2) {
           "SomeToken", base::Time::Now() + base::TimeDelta::FromHours(1)));
   net::TestURLFetcher* fetcher = fetcher_factory_.GetFetcherByID(0);
 
-  EXPECT_EQ(GURL("https://www.google.com/cloudprint/confirm?token=SomeToken"),
+  EXPECT_EQ(GURL("https://www.9oo91e.qjz9zk/cloudprint/confirm?token=SomeToken"),
             fetcher->GetOriginalURL());
 
   net::HttpRequestHeaders headers;
@@ -117,7 +117,7 @@ TEST_F(GCDApiFlowTest, BadJson) {
           "SomeToken", base::Time::Now() + base::TimeDelta::FromHours(1)));
   net::TestURLFetcher* fetcher = fetcher_factory_.GetFetcherByID(0);
 
-  EXPECT_EQ(GURL("https://www.google.com/cloudprint/confirm?token=SomeToken"),
+  EXPECT_EQ(GURL("https://www.9oo91e.qjz9zk/cloudprint/confirm?token=SomeToken"),
             fetcher->GetOriginalURL());
 
   fetcher->SetResponseString(kFailedConfirmResponseBadJson);

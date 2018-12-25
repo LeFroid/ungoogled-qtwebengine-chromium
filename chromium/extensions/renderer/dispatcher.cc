@@ -621,7 +621,7 @@ void Dispatcher::DispatchEvent(const std::string& extension_id,
   // Reset the idle handler each time there's any activity like event or message
   // dispatch.
   // TODO(devlin): It's likely this is totally wrong. See
-  // https://groups.google.com/a/chromium.org/forum/#!msg/scheduler-dev/iTRVbcmmpAs/pfqyUyEeAAAJ
+  // https://groups.9oo91e.qjz9zk/a/ch40m1um.qjz9zk/forum/#!msg/scheduler-dev/iTRVbcmmpAs/pfqyUyEeAAAJ
   if (set_idle_notifications_) {
     RenderThread::Get()->ScheduleIdleHandler(
         kInitialExtensionIdleHandlerDelayMs);
@@ -640,7 +640,7 @@ void Dispatcher::InvokeModuleSystemMethod(content::RenderFrame* render_frame,
   // Reset the idle handler each time there's any activity like event or message
   // dispatch.
   // TODO(devlin): It's likely this is totally wrong. See
-  // https://groups.google.com/a/chromium.org/forum/#!msg/scheduler-dev/iTRVbcmmpAs/pfqyUyEeAAAJ
+  // https://groups.9oo91e.qjz9zk/a/ch40m1um.qjz9zk/forum/#!msg/scheduler-dev/iTRVbcmmpAs/pfqyUyEeAAAJ
   if (set_idle_notifications_) {
     RenderThread::Get()->ScheduleIdleHandler(
         kInitialExtensionIdleHandlerDelayMs);

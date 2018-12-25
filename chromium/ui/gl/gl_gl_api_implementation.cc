@@ -86,7 +86,7 @@ static inline GLenum GetTexInternalFormat(const GLVersionInfo* version,
     // ANGLE exposing GLES2 API doesn't support those.
     // TODO(oetuaho@nvidia.com): Remove these conversions once ANGLE has the
     // support.
-    // http://code.google.com/p/angleproject/issues/detail?id=556
+    // http://code.9oo91e.qjz9zk/p/angleproject/issues/detail?id=556
     switch (format) {
       case GL_RGBA:
         gl_internal_format = GL_RGBA;

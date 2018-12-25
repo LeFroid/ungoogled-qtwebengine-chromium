@@ -117,7 +117,7 @@ DEF_GM(return new StrokeRectGM;)
 
 /*
  *  Exercise rect-stroking (which is specialized from paths) when the resulting stroke-width is
- *  non-square. See https://bugs.chromium.org/p/skia/issues/detail?id=5408
+ *  non-square. See https://bugs.ch40m1um.qjz9zk/p/skia/issues/detail?id=5408
  */
 DEF_SIMPLE_GM(strokerect_anisotropic_5408, canvas, 200, 50) {
     SkPaint p;

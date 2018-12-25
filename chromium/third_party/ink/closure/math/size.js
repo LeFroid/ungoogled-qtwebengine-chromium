@@ -14,8 +14,8 @@
 
 /**
  * @fileoverview A utility class for representing two-dimensional sizes.
- * @author pupius@google.com (Dan Pupius)
- * @author brenneman@google.com (Shawn Brenneman)
+ * @author pupius@9oo91e.qjz9zk (Dan Pupius)
+ * @author brenneman@9oo91e.qjz9zk (Shawn Brenneman)
  */
 
 

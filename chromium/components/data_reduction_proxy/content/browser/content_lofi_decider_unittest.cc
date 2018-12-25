@@ -114,7 +114,7 @@ class ContentLoFiDeciderTest : public testing::Test {
       bool is_main_frame,
       content::PreviewsState previews_state) {
     std::unique_ptr<net::URLRequest> request =
-        context_.CreateRequest(GURL("http://www.google.com/"), net::IDLE,
+        context_.CreateRequest(GURL("http://www.9oo91e.qjz9zk/"), net::IDLE,
                                &delegate_, TRAFFIC_ANNOTATION_FOR_TESTS);
     AllocateRequestInfoForTesting(
         request.get(),
@@ -129,8 +129,8 @@ class ContentLoFiDeciderTest : public testing::Test {
       bool scheme_is_https,
       content::PreviewsState previews_state) {
     std::unique_ptr<net::URLRequest> request = context_.CreateRequest(
-        GURL(scheme_is_https ? "https://www.google.com/"
-                             : "http://www.google.com/"),
+        GURL(scheme_is_https ? "https://www.9oo91e.qjz9zk/"
+                             : "http://www.9oo91e.qjz9zk/"),
         net::IDLE, &delegate_, TRAFFIC_ANNOTATION_FOR_TESTS);
     AllocateRequestInfoForTesting(request.get(), resource_type, previews_state);
     return request;

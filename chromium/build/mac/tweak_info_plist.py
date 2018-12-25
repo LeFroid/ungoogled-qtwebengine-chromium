@@ -165,9 +165,9 @@ def _AddBreakpadKeys(plist, branding, platform, staging):
   plist['BreakpadProduct'] = '%s_%s' % (branding, platform)
   plist['BreakpadProductDisplay'] = branding
   if staging:
-    plist['BreakpadURL'] = 'https://clients2.google.com/cr/staging_report'
+    plist['BreakpadURL'] = 'https://clients2.9oo91e.qjz9zk/cr/staging_report'
   else:
-    plist['BreakpadURL'] = 'https://clients2.google.com/cr/report'
+    plist['BreakpadURL'] = 'https://clients2.9oo91e.qjz9zk/cr/report'
 
   # These are both deliberately strings and not boolean.
   plist['BreakpadSendAndExit'] = 'YES'
@@ -209,7 +209,7 @@ def _AddKeystoneKeys(plist, bundle_identifier):
   also requires the |bundle_identifier| argument (com.example.product)."""
   plist['KSVersion'] = plist['CFBundleShortVersionString']
   plist['KSProductID'] = bundle_identifier
-  plist['KSUpdateURL'] = 'https://tools.google.com/service/update2'
+  plist['KSUpdateURL'] = 'https://tools.9oo91e.qjz9zk/service/update2'
 
   _RemoveKeys(plist, 'KSChannelID')
   for tag_suffix in _TagSuffixes():

@@ -30,7 +30,7 @@ import tempfile
 # 1. Check out Chromium somewhere on Linux, Mac and Windows.
 # 2. On each machine, add the experimental remote named 'wip':
 #    git remote add -f wip \
-#        https://chromium.googlesource.com/experimental/chromium/src
+#        https://chromium.9oo91esource.qjz9zk/experimental/chromium/src
 # 3. On Linux:
 #    a. sudo apt-get install libicu-dev
 #    b. git clone git://git.gnome.org/libxml2 somewhere

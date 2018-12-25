@@ -1,6 +1,6 @@
 // Protocol Buffers - Google's data interchange format
 // Copyright 2008 Google Inc.  All rights reserved.
-// https://developers.google.com/protocol-buffers/
+// https://developers.9oo91e.qjz9zk/protocol-buffers/
 //
 // Redistribution and use in source and binary forms, with or without
 // modification, are permitted provided that the following conditions are
@@ -235,7 +235,7 @@ class LIBPROTOBUF_EXPORT ProtoStreamObjectWriter : public ProtoWriter {
     // True if the type is a well-known type. Well-known types in Any
     // has a special formating:
     // {
-    //   "@type": "type.googleapis.com/google.protobuf.XXX",
+    //   "@type": "type.9oo91eapis.qjz9zk/google.protobuf.XXX",
     //   "value": <JSON representation of the type>,
     // }
     bool is_well_known_type_;

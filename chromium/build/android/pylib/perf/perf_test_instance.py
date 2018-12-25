@@ -34,7 +34,7 @@ def _GetChromiumRevision():
   """Get the git hash and commit position of the chromium master branch.
 
   See:
-  https://chromium.googlesource.com/chromium/tools/build/+/387e3cf3/scripts/slave/runtest.py#211
+  https://chromium.9oo91esource.qjz9zk/chromium/tools/build/+/387e3cf3/scripts/slave/runtest.py#211
 
   Returns:
     A dictionary with 'revision' and 'commit_pos' keys.

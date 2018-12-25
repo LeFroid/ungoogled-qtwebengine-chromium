@@ -117,7 +117,7 @@
 namespace WTF {
 
 // THREADNAME_INFO comes from
-// <http://msdn.microsoft.com/en-us/library/xcb2z8hs.aspx>.
+// <http://msdn.m1cr050ft.qjz9zk/en-us/library/xcb2z8hs.aspx>.
 #pragma pack(push, 8)
 typedef struct tagTHREADNAME_INFO {
   DWORD dw_type;       // must be 0x1000

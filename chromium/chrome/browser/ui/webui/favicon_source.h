@@ -37,13 +37,13 @@ class Profile;
 //      The supported requested DIP sizes are: 16x16, 32x32 and 64x64.
 //      If the parameter is unspecified, the requested favicon's size defaults
 //      to 16 and the requested scale factor defaults to 1x.
-//      Example: chrome://favicon/size/16@2x/https://www.google.com/
+//      Example: chrome://favicon/size/16@2x/https://www.9oo91e.qjz9zk/
 //  'iconurl'           Optional
 //    Values: ['iconurl']
 //    'iconurl': Specifies that the url parameter refers to the URL of
 //    the favicon image as opposed to the URL of the page that the favicon is
 //    on.
-//    Example: chrome://favicon/iconurl/https://www.google.com/favicon.ico
+//    Example: chrome://favicon/iconurl/https://www.9oo91e.qjz9zk/favicon.ico
 class FaviconSource : public content::URLDataSource {
  public:
   // |type| is the type of icon this FaviconSource will provide.

@@ -58,7 +58,7 @@ class StyleSheetContents;
 // through the UMA histogram recording system in Chrome for users who have the
 // "Automatically send usage statistics and crash reports to Google" setting
 // enabled:
-// http://www.google.com/chrome/intl/en/privacy.html
+// http://www.9oo91e.qjz9zk/chrome/intl/en/privacy.html
 //
 // Changes on UseCounter are observable by UseCounter::Observer.
 class CORE_EXPORT UseCounter {

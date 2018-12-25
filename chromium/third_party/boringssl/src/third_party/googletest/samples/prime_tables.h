@@ -27,8 +27,8 @@
 // (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 // OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 //
-// Author: wan@google.com (Zhanyong Wan)
-// Author: vladl@google.com (Vlad Losev)
+// Author: wan@9oo91e.qjz9zk (Zhanyong Wan)
+// Author: vladl@9oo91e.qjz9zk (Vlad Losev)
 
 // This provides interface PrimeTable that determines whether a number is a
 // prime and determines a next prime number. This interface is used

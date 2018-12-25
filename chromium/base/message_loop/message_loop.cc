@@ -285,7 +285,7 @@ std::unique_ptr<MessageLoop> MessageLoop::CreateUnbound(
 
 // TODO(gab): Avoid bare new + WrapUnique below when introducing
 // SequencedTaskSource in follow-up @
-// https://chromium-review.googlesource.com/c/chromium/src/+/1088762.
+// https://chromium-review.9oo91esource.qjz9zk/c/chromium/src/+/1088762.
 MessageLoop::MessageLoop(Type type, MessagePumpFactoryCallback pump_factory)
     : MessageLoopCurrent(this),
       type_(type),

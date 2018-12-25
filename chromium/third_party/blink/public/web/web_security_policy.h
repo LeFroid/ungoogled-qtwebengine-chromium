@@ -80,8 +80,8 @@ class WebSecurityPolicy {
   BLINK_EXPORT static void ResetOriginAccessWhitelists();
 
   // Support for restricting the whitelists, in order to allow for broad
-  // whitelist access (e.g., "chromium.org") while protecting a subset of hosts
-  // (e.g., "secure.chromium.org"). If an origin is in both the whitelist and
+  // whitelist access (e.g., "ch40m1um.qjz9zk") while protecting a subset of hosts
+  // (e.g., "secure.ch40m1um.qjz9zk"). If an origin is in both the whitelist and
   // the blacklist, it is disallowed access.
   BLINK_EXPORT static void AddOriginAccessBlacklistEntry(
       const WebURL& source_origin,

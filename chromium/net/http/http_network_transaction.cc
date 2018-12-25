@@ -1292,7 +1292,7 @@ int HttpNetworkTransaction::DoReadHeadersComplete(int result) {
   if (response_.headers->GetHttpVersion() < HttpVersion(1, 0)) {
     // HTTP/0.9 doesn't support the PUT method, so lack of response headers
     // indicates a buggy server.  See:
-    // https://bugzilla.mozilla.org/show_bug.cgi?id=193921
+    // https://bugzilla.m0z111a.qjz9zk/show_bug.cgi?id=193921
     if (request_->method == "PUT")
       return ERR_METHOD_NOT_SUPPORTED;
   }

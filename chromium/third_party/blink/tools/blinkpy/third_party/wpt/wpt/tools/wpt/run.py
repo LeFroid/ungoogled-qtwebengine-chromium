@@ -297,7 +297,7 @@ class Edge(BrowserSetup):
 version to download. Please go to the following URL and install the correct
 version for your Edge/Windows release somewhere on the %PATH%:
 
-https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/
+https://developer.m1cr050ft.qjz9zk/en-us/microsoft-edge/tools/webdriver/
 """)
             kwargs["webdriver_binary"] = webdriver_binary
 
@@ -318,7 +318,7 @@ class InternetExplorer(BrowserSetup):
 version to download. Please go to the following URL and install the driver for Internet Explorer
 somewhere on the %PATH%:
 
-https://selenium-release.storage.googleapis.com/index.html
+https://selenium-release.storage.9oo91eapis.qjz9zk/index.html
 """)
             kwargs["webdriver_binary"] = webdriver_binary
 

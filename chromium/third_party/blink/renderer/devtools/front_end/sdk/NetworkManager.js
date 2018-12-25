@@ -849,7 +849,7 @@ SDK.NetworkDispatcher = class {
     if (shouldReportCorbBlocking) {
       const message = Common.UIString(
           `Cross-Origin Read Blocking (CORB) blocked cross-origin response %s with MIME type %s. ` +
-              `See https://www.chromestatus.com/feature/5629709824032768 for more details.`,
+              `See https://www.ch40mestatus.qjz9zk/feature/5629709824032768 for more details.`,
           networkRequest.url(), networkRequest.mimeType);
       this._manager.dispatchEventToListeners(
           SDK.NetworkManager.Events.MessageGenerated,

@@ -192,29 +192,29 @@ class PasswordManagerTest : public testing::Test {
 
   PasswordForm MakeSimpleForm() {
     PasswordForm form;
-    form.origin = GURL("http://www.google.com/a/LoginAuth");
-    form.action = GURL("http://www.google.com/a/Login");
+    form.origin = GURL("http://www.9oo91e.qjz9zk/a/LoginAuth");
+    form.action = GURL("http://www.9oo91e.qjz9zk/a/Login");
     form.username_element = ASCIIToUTF16("Email");
     form.password_element = ASCIIToUTF16("Passwd");
     form.username_value = ASCIIToUTF16("googleuser");
     form.password_value = ASCIIToUTF16("p4ssword");
     form.submit_element = ASCIIToUTF16("signIn");
-    form.signon_realm = "http://www.google.com";
+    form.signon_realm = "http://www.9oo91e.qjz9zk";
     form.form_data.name = ASCIIToUTF16("the-form-name");
     return form;
   }
 
   PasswordForm MakeSimpleGAIAForm() {
     PasswordForm form = MakeSimpleForm();
-    form.origin = GURL("https://accounts.google.com");
+    form.origin = GURL("https://accounts.9oo91e.qjz9zk");
     form.signon_realm = form.origin.spec();
     return form;
   }
 
   PasswordForm MakeGAIAChangePasswordForm() {
     PasswordForm form;
-    form.origin = GURL("https://accounts.google.com");
-    form.action = GURL("http://www.google.com/a/Login");
+    form.origin = GURL("https://accounts.9oo91e.qjz9zk");
+    form.action = GURL("http://www.9oo91e.qjz9zk/a/Login");
     form.username_element = ASCIIToUTF16("Email");
     form.new_password_element = ASCIIToUTF16("NewPasswd");
     form.username_value = ASCIIToUTF16("googleuser");
@@ -235,8 +235,8 @@ class PasswordManagerTest : public testing::Test {
 
   PasswordForm MakeAndroidCredential() {
     PasswordForm android_form;
-    android_form.origin = GURL("android://hash@google.com");
-    android_form.signon_realm = "android://hash@google.com";
+    android_form.origin = GURL("android://hash@9oo91e.qjz9zk");
+    android_form.signon_realm = "android://hash@9oo91e.qjz9zk";
     android_form.username_value = ASCIIToUTF16("google");
     android_form.password_value = ASCIIToUTF16("password");
     android_form.is_affiliation_based_match = true;
@@ -427,7 +427,7 @@ TEST_F(PasswordManagerTest, BestMatchFormToManager) {
   // This form is different from the on that will be submitted.
   PasswordForm no_match_form(MakeSimpleForm());
   no_match_form.form_data.name = ASCIIToUTF16("another-name");
-  no_match_form.action = GURL("http://www.google.com/somethingelse");
+  no_match_form.action = GURL("http://www.9oo91e.qjz9zk/somethingelse");
   autofill::FormFieldData field;
   field.name = ASCIIToUTF16("another-field-name");
   no_match_form.form_data.fields.push_back(field);
@@ -448,7 +448,7 @@ TEST_F(PasswordManagerTest, BestMatchFormToManager) {
   // same and change the rest.
   PasswordForm changed_form(form);
   changed_form.username_element = ASCIIToUTF16("changed-name");
-  changed_form.action = GURL("http://www.google.com/changed-action");
+  changed_form.action = GURL("http://www.9oo91e.qjz9zk/changed-action");
   OnPasswordFormSubmitted(changed_form);
   EXPECT_EQ(CalculateFormSignature(form.form_data),
             CalculateFormSignature(changed_form.form_data));
@@ -498,7 +498,7 @@ TEST_F(PasswordManagerTest, AnyMatchFormToManager) {
   field.name = ASCIIToUTF16("another-field-name");
   changed_form.form_data.fields.push_back(field);
   changed_form.username_element = ASCIIToUTF16("changed-name");
-  changed_form.action = GURL("http://www.google.com/changed-action");
+  changed_form.action = GURL("http://www.9oo91e.qjz9zk/changed-action");
   OnPasswordFormSubmitted(changed_form);
   EXPECT_NE(CalculateFormSignature(form.form_data),
             CalculateFormSignature(changed_form.form_data));
@@ -1263,8 +1263,8 @@ TEST_F(PasswordManagerTest, FillPasswordOnManyFrames_SameId) {
 
   // Two unrelated forms...
   FormData form_data;
-  form_data.origin = GURL("http://www.google.com/a/LoginAuth");
-  form_data.action = GURL("http://www.google.com/a/Login");
+  form_data.origin = GURL("http://www.9oo91e.qjz9zk/a/LoginAuth");
+  form_data.action = GURL("http://www.9oo91e.qjz9zk/a/Login");
   form_data.fields.resize(2);
   form_data.fields[0].name = ASCIIToUTF16("Email");
   form_data.fields[0].value = ASCIIToUTF16("googleuser");
@@ -1403,7 +1403,7 @@ TEST_F(PasswordManagerTest, SavingSignupForms_NoHTMLMatch) {
   PasswordForm form(MakeSimpleForm());
   observed.push_back(form);
   PasswordForm wrong_action_form(form);
-  wrong_action_form.action = GURL("http://www.google.com/other/action");
+  wrong_action_form.action = GURL("http://www.9oo91e.qjz9zk/other/action");
   observed.push_back(wrong_action_form);
 
   EXPECT_CALL(*store_, GetLogins(_, _))
@@ -1468,7 +1468,7 @@ TEST_F(PasswordManagerTest, SavingSignupForms_NoActionMatch) {
   manager()->OnPasswordFormsRendered(&driver_, observed, true);
 
   PasswordForm submitted_form(form);
-  submitted_form.action = GURL("http://www.google.com/other/action");
+  submitted_form.action = GURL("http://www.9oo91e.qjz9zk/other/action");
 
   EXPECT_CALL(client_, IsSavingAndFillingEnabledForCurrentPage())
       .WillRepeatedly(Return(true));
@@ -2389,8 +2389,8 @@ TEST_F(PasswordManagerTest, EntryToCheck_Default) {
 TEST_F(PasswordManagerTest, EntryToCheck_HTML) {
   PasswordForm html_form;
   html_form.scheme = PasswordForm::SCHEME_HTML;
-  html_form.origin = GURL("http://accounts.google.com/");
-  html_form.signon_realm = "http://accounts.google.com/";
+  html_form.origin = GURL("http://accounts.9oo91e.qjz9zk/");
+  html_form.signon_realm = "http://accounts.9oo91e.qjz9zk/";
   EXPECT_CALL(*store_, GetLogins(_, _));
   manager()->OnPasswordFormsParsed(nullptr, {html_form});
   EXPECT_EQ(PasswordManager::NavigationEntryToCheck::LAST_COMMITTED,
@@ -2402,8 +2402,8 @@ TEST_F(PasswordManagerTest, EntryToCheck_HTML) {
 TEST_F(PasswordManagerTest, EntryToCheck_HTTP_auth) {
   PasswordForm http_auth_form;
   http_auth_form.scheme = PasswordForm::SCHEME_BASIC;
-  http_auth_form.origin = GURL("http://accounts.google.com/");
-  http_auth_form.signon_realm = "http://accounts.google.com/";
+  http_auth_form.origin = GURL("http://accounts.9oo91e.qjz9zk/");
+  http_auth_form.signon_realm = "http://accounts.9oo91e.qjz9zk/";
   EXPECT_CALL(*store_, GetLogins(_, _));
   manager()->OnPasswordFormsParsed(nullptr, {http_auth_form});
   EXPECT_EQ(PasswordManager::NavigationEntryToCheck::VISIBLE,

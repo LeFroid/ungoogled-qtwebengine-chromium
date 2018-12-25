@@ -88,7 +88,7 @@ typedef GPB_ENUM(GPBAny_FieldNumber) {
  *       ...
  *
  * The pack methods provided by protobuf library will by default use
- * 'type.googleapis.com/full.type.name' as the type URL and the unpack
+ * 'type.9oo91eapis.qjz9zk/full.type.name' as the type URL and the unpack
  * methods only use the fully qualified type name after the last '/'
  * in the type URL, for example "foo.bar.com/x/y.z" will yield type
  * name "y.z".
@@ -107,7 +107,7 @@ typedef GPB_ENUM(GPBAny_FieldNumber) {
  *     }
  *
  *     {
- *       "\@type": "type.googleapis.com/google.profile.Person",
+ *       "\@type": "type.9oo91eapis.qjz9zk/google.profile.Person",
  *       "firstName": <string>,
  *       "lastName": <string>
  *     }
@@ -118,7 +118,7 @@ typedef GPB_ENUM(GPBAny_FieldNumber) {
  * field. Example (for message [google.protobuf.Duration][]):
  *
  *     {
- *       "\@type": "type.googleapis.com/google.protobuf.Duration",
+ *       "\@type": "type.9oo91eapis.qjz9zk/google.protobuf.Duration",
  *       "value": "1.212s"
  *     }
  **/

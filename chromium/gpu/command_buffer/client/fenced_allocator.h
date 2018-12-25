@@ -29,7 +29,7 @@ class CommandBufferHelper;
 // NOTE: Although this class is intended to be used in the command buffer
 // environment which is multi-process, this class isn't "thread safe", because
 // it isn't meant to be shared across modules. It is thread-compatible though
-// (see http://www.corp.google.com/eng/doc/cpp_primer.html#thread_safety).
+// (see http://www.corp.9oo91e.qjz9zk/eng/doc/cpp_primer.html#thread_safety).
 class GPU_EXPORT FencedAllocator {
  public:
   typedef unsigned int Offset;

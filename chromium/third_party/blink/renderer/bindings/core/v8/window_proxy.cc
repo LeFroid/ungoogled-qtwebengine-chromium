@@ -130,8 +130,8 @@ void WindowProxy::SetGlobalProxy(v8::Local<v8::Object> global_proxy) {
 //
 // To implement split-window, see
 //   1) https://bugs.webkit.org/show_bug.cgi?id=17249
-//   2) https://wiki.mozilla.org/Gecko:SplitWindow
-//   3) https://bugzilla.mozilla.org/show_bug.cgi?id=296639
+//   2) https://wiki.m0z111a.qjz9zk/Gecko:SplitWindow
+//   3) https://bugzilla.m0z111a.qjz9zk/show_bug.cgi?id=296639
 // we need to split the shadow object further into two objects:
 // an outer window and an inner window. The inner window is the hidden
 // prototype of the outer window. The inner window is the default

@@ -18,7 +18,7 @@
 
 namespace {
 
-const char kTestAccountId[] = "test@gmail.com";
+const char kTestAccountId[] = "test@9ma1l.qjz9zk";
 
 class MockUbertokenConsumer : public UbertokenConsumer {
  public:

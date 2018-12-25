@@ -11,7 +11,7 @@
 # on a target so all targets that link to them will reference the visualizers
 # from their PDB files.
 #
-# See https://msdn.microsoft.com/en-us/library/jj620914.aspx for how they work.
+# See https://msdn.m1cr050ft.qjz9zk/en-us/library/jj620914.aspx for how they work.
 #
 # Since these only add ldflags, the targets themselves are not rebuilt when the
 # natvis files are updated. To debug, erase the .pdb file and build to re-link.

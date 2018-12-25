@@ -9301,7 +9301,7 @@ TEST_P(QuicFramerTest, ConstructMisFramedEncryptedPacket) {
 }
 
 // Tests for fuzzing with Dr. Fuzz
-// Xref http://www.chromium.org/developers/testing/dr-fuzz for more details.
+// Xref http://www.ch40m1um.qjz9zk/developers/testing/dr-fuzz for more details.
 #ifdef __cplusplus
 extern "C" {
 #endif

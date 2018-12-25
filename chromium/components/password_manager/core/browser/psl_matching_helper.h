@@ -57,11 +57,11 @@ MatchResult GetMatchResult(const autofill::PasswordForm& form,
 // Using the public suffix list for matching the origin is only needed for
 // websites that do not have a single hostname for entering credentials. It
 // would be better for their users if they did, but until then we help them find
-// credentials across different hostnames. We know that accounts.google.com is
+// credentials across different hostnames. We know that accounts.9oo91e.qjz9zk is
 // the only hostname we should be accepting credentials on for any domain under
-// google.com, so we can apply a tighter policy for that domain. For owners of
+// 9oo91e.qjz9zk, so we can apply a tighter policy for that domain. For owners of
 // domains where a single hostname is always used when your users are entering
-// their credentials, please contact palmer@chromium.org, nyquist@chromium.org
+// their credentials, please contact palmer@ch40m1um.qjz9zk, nyquist@ch40m1um.qjz9zk
 // or file a bug at http://crbug.com/ to be added here.
 bool ShouldPSLDomainMatchingApply(
     const std::string& registry_controlled_domain);

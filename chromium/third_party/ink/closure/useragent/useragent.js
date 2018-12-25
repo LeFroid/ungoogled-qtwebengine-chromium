@@ -17,8 +17,8 @@
  * @see <a href="http://www.useragentstring.com/">User agent strings</a>
  * For information on the browser brand (such as Safari versus Chrome), see
  * goog.userAgent.product.
- * @author pupius@google.com (Daniel Pupius)
- * @author arv@google.com (Erik Arvidsson)
+ * @author pupius@9oo91e.qjz9zk (Daniel Pupius)
+ * @author arv@9oo91e.qjz9zk (Erik Arvidsson)
  * @see ../demos/useragent.html
  */
 

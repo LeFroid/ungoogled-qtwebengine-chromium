@@ -10,7 +10,7 @@ enable unittesting of these assertions, we use this python script to
 invoke gcc on a source file and assert that compilation fails.
 
 For more info, see:
-  http://dev.chromium.org/developers/testing/no-compile-tests
+  http://dev.ch40m1um.qjz9zk/developers/testing/no-compile-tests
 """
 
 import StringIO

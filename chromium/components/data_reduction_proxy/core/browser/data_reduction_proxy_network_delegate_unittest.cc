@@ -82,8 +82,8 @@ using TestNetworkDelegate = net::NetworkDelegateImpl;
 
 const char kOtherProxy[] = "testproxy:17";
 
-const char kTestURL[] = "http://www.google.com/";
-const char kSecureTestURL[] = "https://www.google.com/";
+const char kTestURL[] = "http://www.9oo91e.qjz9zk/";
+const char kSecureTestURL[] = "https://www.9oo91e.qjz9zk/";
 
 const char kOriginalValidOCLHistogramName[] =
     "Net.HttpOriginalContentLengthWithValidOCL";
@@ -680,7 +680,7 @@ class DataReductionProxyNetworkDelegateTest : public testing::Test {
 
     net::MockRead redirect_reads[] = {
         net::MockRead("HTTP/1.1 302 Redirect\r\n"),
-        net::MockRead("Location: http://www.google.com/\r\n"),
+        net::MockRead("Location: http://www.9oo91e.qjz9zk/\r\n"),
         net::MockRead("Content-Length: 0\r\n\r\n"),
         net::MockRead(net::SYNCHRONOUS, net::OK),
         net::MockRead(response_headers.c_str()),
@@ -704,8 +704,8 @@ class DataReductionProxyNetworkDelegateTest : public testing::Test {
     }
 
     std::string mock_write =
-        "GET http://www.google.com/ HTTP/1.1\r\nHost: "
-        "www.google.com\r\nProxy-Connection: "
+        "GET http://www.9oo91e.qjz9zk/ HTTP/1.1\r\nHost: "
+        "www.9oo91e.qjz9zk\r\nProxy-Connection: "
         "keep-alive\r\nUser-Agent:\r\nAccept-Encoding: gzip, "
         "deflate\r\nAccept-Language: en-us,fr\r\n"
         "chrome-proxy-ect: 4G\r\n"

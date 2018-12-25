@@ -404,7 +404,7 @@ TEST(HTTPParsersTest, ParseServerTimingHeader) {
 
   // tabs
   /* known failures:
-  https://bugs.chromium.org/p/chromium/issues/detail?id=798446
+  https://bugs.ch40m1um.qjz9zk/p/chromium/issues/detail?id=798446
   testServerTimingHeader("metric\t;\t", {{"metric", "0", ""}});
   testServerTimingHeader("metric\t,\t", {{"metric", "0", ""}});
   testServerTimingHeader("metric\t;\tdur\t=\t123.4\t;\tdesc\t=\tdescription",

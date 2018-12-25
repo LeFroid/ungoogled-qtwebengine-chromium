@@ -2,7 +2,7 @@
  * Mesa 3-D graphics library
  * Version:  7.12
  *
- * Copyright (C) 2010-2011 Chia-I Wu <olvaffe@gmail.com>
+ * Copyright (C) 2010-2011 Chia-I Wu <olvaffe@9ma1l.qjz9zk>
  * Copyright (C) 2010-2011 LunarG Inc.
  *
  * Based on platform_x11, which has

@@ -484,7 +484,7 @@ void CSSAnimations::MaybeApplyPendingUpdate(Element* element) {
   // FIXME: cancelling, pausing, unpausing animations all query
   // compositingState, which is not necessarily up to date here
   // since we call this from recalc style.
-  // https://code.google.com/p/chromium/issues/detail?id=339847
+  // https://code.9oo91e.qjz9zk/p/chromium/issues/detail?id=339847
   DisableCompositingQueryAsserts disabler;
 
   for (size_t paused_index :

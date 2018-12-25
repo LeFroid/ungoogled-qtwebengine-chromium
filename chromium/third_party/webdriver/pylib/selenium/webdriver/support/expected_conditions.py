@@ -265,7 +265,7 @@ class alert_is_present(object):
 def _find_element(driver, by):
     """ Looks up an element. Logs and re-raises WebDriverException if thrown.
     Method exists to gather data for
-    http://code.google.com/p/selenium/issues/detail?id=1800
+    http://code.9oo91e.qjz9zk/p/selenium/issues/detail?id=1800
     """
     try :
       return driver.find_element(*by)

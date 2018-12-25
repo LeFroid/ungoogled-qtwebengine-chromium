@@ -4,7 +4,7 @@
 
 // Defines InterceptionAgent, the class in charge of setting up interceptions
 // from the inside of the sandboxed process. For more details see
-// http://dev.chromium.org/developers/design-documents/sandbox .
+// http://dev.ch40m1um.qjz9zk/developers/design-documents/sandbox .
 
 #ifndef SANDBOX_SRC_INTERCEPTION_AGENT_H__
 #define SANDBOX_SRC_INTERCEPTION_AGENT_H__

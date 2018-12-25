@@ -113,7 +113,7 @@ bool LocalTestServer::LaunchPython(const base::FilePath& testserver_path) {
 
   // Pass the handle on the command-line. Although HANDLE is a
   // pointer, truncating it on 64-bit machines is okay. See
-  // http://msdn.microsoft.com/en-us/library/aa384203.aspx
+  // http://msdn.m1cr050ft.qjz9zk/en-us/library/aa384203.aspx
   //
   // "64-bit versions of Windows use 32-bit handles for
   // interoperability. When sharing a handle between 32-bit and 64-bit

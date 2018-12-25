@@ -9,7 +9,7 @@
 //
 // Spatial prediction using various filters
 //
-// Author: Urvang (urvang@google.com)
+// Author: Urvang (urvang@9oo91e.qjz9zk)
 
 #include "src/dsp/dsp.h"
 #include <assert.h>

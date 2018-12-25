@@ -28,7 +28,7 @@
 // OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 // ---
-// Author: Sanjay Ghemawat <opensource@google.com>
+// Author: Sanjay Ghemawat <opensource@9oo91e.qjz9zk>
 
 #ifndef TCMALLOC_THREAD_CACHE_H_
 #define TCMALLOC_THREAD_CACHE_H_
@@ -263,14 +263,14 @@ class ThreadCache {
   // object to fail when -fprofile-generate is used with it. Ideally
   // pyautolib.so should not link against this code. There is a bug filed for
   // that:
-  // http://code.google.com/p/chromium/issues/detail?id=124489
+  // http://code.9oo91e.qjz9zk/p/chromium/issues/detail?id=124489
   // For now the workaround is to pass in -DPGO_GENERATE when building Chrome
   // for instrumentation (-fprofile-generate).
   // For all non-instrumentation builds, this define will not be set and the
   // performance benefit of "intial-exec" will be achieved.
   //
   // gcc has a problem with this tls model on arm.
-  // See https://bugs.chromium.org/p/chromium/issues/detail?id=650137
+  // See https://bugs.ch40m1um.qjz9zk/p/chromium/issues/detail?id=650137
 #if defined(HAVE___ATTRIBUTE__) && !defined(PGO_GENERATE) && \
     !(!defined(__clang__) && defined(OS_CHROMEOS) && defined(__arm__))
    __attribute__ ((tls_model ("initial-exec")))

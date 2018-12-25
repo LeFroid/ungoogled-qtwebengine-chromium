@@ -291,7 +291,7 @@ class DataReductionProxyDelegateTest : public testing::Test {
 };
 
 TEST_F(DataReductionProxyDelegateTest, OnResolveProxy) {
-  GURL url("http://www.google.com/");
+  GURL url("http://www.9oo91e.qjz9zk/");
   params()->UseNonSecureProxiesForHttp();
 
   // Other proxy info
@@ -374,7 +374,7 @@ TEST_F(DataReductionProxyDelegateTest, OnResolveProxyWarmupURL) {
     if (test.use_warmup_url) {
       url = params::GetWarmupURL();
     } else {
-      url = GURL("http://www.google.com");
+      url = GURL("http://www.9oo91e.qjz9zk");
     }
     params()->UseNonSecureProxiesForHttp();
 

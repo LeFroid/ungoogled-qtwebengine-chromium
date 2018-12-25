@@ -1559,7 +1559,7 @@ decompose_indic (const hb_ot_shape_normalize_context_t *c,
      * The Uniscribe behavior is now documented in the newly published Sinhala
      * spec in 2012:
      *
-     *   https://docs.microsoft.com/en-us/typography/script-development/sinhala#shaping
+     *   https://docs.m1cr050ft.qjz9zk/en-us/typography/script-development/sinhala#shaping
      */
 
     const indic_shape_plan_t *indic_plan = (const indic_shape_plan_t *) c->plan->data;

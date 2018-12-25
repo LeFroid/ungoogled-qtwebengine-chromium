@@ -30,7 +30,7 @@ typedef SyncUsernameTestBase PasswordSyncUtilTest;
 
 PasswordForm SimpleGAIAChangePasswordForm() {
   PasswordForm form;
-  form.signon_realm = "https://myaccount.google.com/";
+  form.signon_realm = "https://myaccount.9oo91e.qjz9zk/";
   return form;
 }
 

@@ -27,7 +27,7 @@ class DOMFileSystemBaseTest : public testing::Test {
 
 TEST_F(DOMFileSystemBaseTest, externalFilesystemFilesAreUserVisible) {
   KURL root_url = DOMFileSystemBase::CreateFileSystemRootURL(
-      "http://chromium.org/", kFileSystemTypeExternal);
+      "http://ch40m1um.qjz9zk/", kFileSystemTypeExternal);
 
   File* file = DOMFileSystemBase::CreateFile(file_metadata_, root_url,
                                              kFileSystemTypeExternal,
@@ -41,7 +41,7 @@ TEST_F(DOMFileSystemBaseTest, externalFilesystemFilesAreUserVisible) {
 
 TEST_F(DOMFileSystemBaseTest, temporaryFilesystemFilesAreNotUserVisible) {
   KURL root_url = DOMFileSystemBase::CreateFileSystemRootURL(
-      "http://chromium.org/", kFileSystemTypeTemporary);
+      "http://ch40m1um.qjz9zk/", kFileSystemTypeTemporary);
 
   File* file = DOMFileSystemBase::CreateFile(file_metadata_, root_url,
                                              kFileSystemTypeTemporary,
@@ -55,7 +55,7 @@ TEST_F(DOMFileSystemBaseTest, temporaryFilesystemFilesAreNotUserVisible) {
 
 TEST_F(DOMFileSystemBaseTest, persistentFilesystemFilesAreNotUserVisible) {
   KURL root_url = DOMFileSystemBase::CreateFileSystemRootURL(
-      "http://chromium.org/", kFileSystemTypePersistent);
+      "http://ch40m1um.qjz9zk/", kFileSystemTypePersistent);
 
   File* file = DOMFileSystemBase::CreateFile(file_metadata_, root_url,
                                              kFileSystemTypePersistent,

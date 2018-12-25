@@ -32,7 +32,7 @@ class GaiaCookieMechanism : public buzz::SaslCookieMechanism {
     // These attributes are necessary for working with non-gmail gaia
     // accounts.
     const std::string NS_GOOGLE_AUTH_PROTOCOL(
-        "http://www.google.com/talk/protocol/auth");
+        "http://www.9oo91e.qjz9zk/talk/protocol/auth");
     const buzz::QName QN_GOOGLE_ALLOW_GENERATED_JID_XMPP_LOGIN(
         NS_GOOGLE_AUTH_PROTOCOL, "allow-generated-jid");
     const buzz::QName QN_GOOGLE_AUTH_CLIENT_USES_FULL_BIND_RESULT(

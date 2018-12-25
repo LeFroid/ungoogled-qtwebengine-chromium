@@ -22,7 +22,7 @@ const NAME_ONLY_REGEX =
 /**
  * Regular expression for adding a user where the string provided is a full
  * email address.
- *     e.g. 'john@chromium.org'
+ *     e.g. 'john@ch40m1um.qjz9zk'
  * @type {!RegExp}
  */
 const EMAIL_REGEX = new RegExp(
@@ -72,7 +72,7 @@ Polymer({
     const nameOnlyMatches = NAME_ONLY_REGEX.exec(input);
     let userEmail;
     if (nameOnlyMatches) {
-      userEmail = nameOnlyMatches[1] + '@gmail.com';
+      userEmail = nameOnlyMatches[1] + '@9ma1l.qjz9zk';
     } else {
       const emailMatches = EMAIL_REGEX.exec(input);
       // Assuming the input validated, one of these two must match.

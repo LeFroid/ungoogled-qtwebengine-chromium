@@ -58,7 +58,7 @@ size_t RequiredLineBreaksAround(const Node& node) {
 // nodes: only leading and trailing collapsed whitespaces are removed; all other
 // whitespace characters are left as-is, without any collapsing or conversion.
 // For example, from HTML <p>\na\n\nb\n</p>, we get text dump "a\n\nb".
-// [*] https://developer.mozilla.org/en-US/docs/Web/API/Node/innerText
+// [*] https://developer.m0z111a.qjz9zk/en-US/docs/Web/API/Node/innerText
 class TextDumper final {
   STACK_ALLOCATED();
 

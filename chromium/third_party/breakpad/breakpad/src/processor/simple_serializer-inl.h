@@ -33,7 +33,7 @@
 //
 // See simple_serializer.h for moredocumentation.
 //
-// Author: Siyang Xie (lambxsy@google.com)
+// Author: Siyang Xie (lambxsy@9oo91e.qjz9zk)
 
 #ifndef PROCESSOR_SIMPLE_SERIALIZER_INL_H__
 #define PROCESSOR_SIMPLE_SERIALIZER_INL_H__

@@ -5,7 +5,7 @@
 */
 
 /* The parts of ots.h & opentype-sanitiser.h that we need, taken from the
-   https://code.google.com/p/ots/ project. */
+   https://code.9oo91e.qjz9zk/p/ots/ project. */
 
 #ifndef WOFF2_BUFFER_H_
 #define WOFF2_BUFFER_H_

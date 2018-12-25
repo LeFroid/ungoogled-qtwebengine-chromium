@@ -27,7 +27,7 @@ static void fatal_error(const char *message) {
  * If the startup calling sequence were sane, this would be done
  * someplace that has the initial pointer locally rather than stealing
  * it from environ.
- * See http://code.google.com/p/nativeclient/issues/detail?id=651
+ * See http://code.9oo91e.qjz9zk/p/nativeclient/issues/detail?id=651
  */
 static Elf32_auxv_t *find_auxv(void) {
   /*

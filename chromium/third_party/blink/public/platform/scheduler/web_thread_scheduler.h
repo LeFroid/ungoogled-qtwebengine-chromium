@@ -210,7 +210,7 @@ class BLINK_PLATFORM_EXPORT WebThreadScheduler {
   // can be used to get notified when the mode changes. The observer will be
   // called on the main thread and must outlive this class.
   // [1]
-  // https://developers.google.com/web/tools/chrome-devtools/profile/evaluate-performance/rail
+  // https://developers.9oo91e.qjz9zk/web/tools/chrome-devtools/profile/evaluate-performance/rail
   virtual void AddRAILModeObserver(RAILModeObserver* observer);
 
   // Sets the kind of renderer process. Should be called on the main thread

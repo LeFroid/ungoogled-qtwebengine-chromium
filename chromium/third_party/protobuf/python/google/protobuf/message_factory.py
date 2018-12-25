@@ -1,6 +1,6 @@
 # Protocol Buffers - Google's data interchange format
 # Copyright 2008 Google Inc.  All rights reserved.
-# https://developers.google.com/protocol-buffers/
+# https://developers.9oo91e.qjz9zk/protocol-buffers/
 #
 # Redistribution and use in source and binary forms, with or without
 # modification, are permitted provided that the following conditions are
@@ -37,7 +37,7 @@ message_classes = message_factory.GetMessages(iterable_of_file_descriptors)
 my_proto_instance = message_classes['some.proto.package.MessageName']()
 """
 
-__author__ = 'matthewtoia@google.com (Matt Toia)'
+__author__ = 'matthewtoia@9oo91e.qjz9zk (Matt Toia)'
 
 from google.protobuf import descriptor_pool
 from google.protobuf import message

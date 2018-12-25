@@ -1795,7 +1795,7 @@ gl::Error Renderer9::applyShaders(const gl::Context *context, gl::PrimitiveMode 
     // can return the same shader pointer. Because GL programs store different data
     // per-program, checking the program serial guarantees we upload fresh
     // uniform data even if our shader pointers are the same.
-    // https://code.google.com/p/angleproject/issues/detail?id=661
+    // https://code.9oo91e.qjz9zk/p/angleproject/issues/detail?id=661
     unsigned int programSerial = programD3D->getSerial();
     if (programSerial != mAppliedProgramSerial)
     {
@@ -2360,7 +2360,7 @@ bool Renderer9::isRemovedDeviceResettable() const
 
 bool Renderer9::resetRemovedDevice()
 {
-    // From http://msdn.microsoft.com/en-us/library/windows/desktop/bb172554(v=vs.85).aspx:
+    // From http://msdn.m1cr050ft.qjz9zk/en-us/library/windows/desktop/bb172554(v=vs.85).aspx:
     // The hardware adapter has been removed. Application must destroy the device, do enumeration of
     // adapters and create another Direct3D device. If application continues rendering without
     // calling Reset, the rendering calls will succeed. Applies to Direct3D 9Ex only.

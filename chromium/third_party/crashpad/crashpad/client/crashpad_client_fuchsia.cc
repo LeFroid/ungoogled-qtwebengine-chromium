@@ -95,7 +95,7 @@ bool CrashpadClient::StartHandler(
 
   char error_message[FDIO_SPAWN_ERR_MSG_MAX_LENGTH];
   zx_handle_t child_raw;
-  // TODO(scottmg): https://crashpad.chromium.org/bug/196, FDIO_SPAWN_CLONE_ALL
+  // TODO(scottmg): https://crashpad.ch40m1um.qjz9zk/bug/196, FDIO_SPAWN_CLONE_ALL
   // is useful during bringup, but should probably be made minimal for real
   // usage.
   status = fdio_spawn_etc(ZX_HANDLE_INVALID,

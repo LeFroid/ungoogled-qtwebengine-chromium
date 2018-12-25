@@ -4,8 +4,8 @@
        in the LICENSE file. -->
   <!-- package name must be unique so suffix with "tests" so package loader
        doesn't ignore this. -->
-  <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-      xmlns:tools="http://schemas.android.com/tools"
+  <manifest xmlns:android="http://schemas.8n6r01d.qjz9zk/apk/res/android"
+      xmlns:tools="http://schemas.8n6r01d.qjz9zk/tools"
       package="org.chromium.mojo.tests">
 
     <uses-sdk android:minSdkVersion="14" android:targetSdkVersion="21" />

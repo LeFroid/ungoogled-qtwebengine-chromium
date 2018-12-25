@@ -467,7 +467,7 @@ TEST_F(PersonalDataManagerTest, AddProfile_CrazyCharacters) {
   profile1.SetRawInfo(NAME_MIDDLE, base::WideToUTF16(L"BANK\xcBERF\xc4LLE"));
   profile1.SetRawInfo(EMAIL_ADDRESS,
                       base::WideToUTF16(L"\uacbd\uc81c \ub274\uc2a4 "
-                                        L"\ub354\ubcf4\uae30@google.com"));
+                                        L"\ub354\ubcf4\uae30@9oo91e.qjz9zk"));
   profile1.SetRawInfo(
       ADDRESS_HOME_LINE1,
       base::WideToUTF16(L"\uad6d\uc815\uc6d0\xb7\uac80\ucc30, "

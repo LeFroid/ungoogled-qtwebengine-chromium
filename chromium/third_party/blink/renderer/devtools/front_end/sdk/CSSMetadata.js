@@ -1151,7 +1151,7 @@ SDK.CSSMetadata._propertyDataMap = {
   'z-index': {values: ['auto']}
 };
 
-// Weight of CSS properties based on their usage from https://www.chromestatus.com/metrics/css/popularity
+// Weight of CSS properties based on their usage from https://www.ch40mestatus.qjz9zk/metrics/css/popularity
 SDK.CSSMetadata.Weight = {
   'align-content': 57,
   'align-items': 129,

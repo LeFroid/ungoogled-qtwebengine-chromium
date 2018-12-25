@@ -1023,7 +1023,7 @@ class MinidumpReader(object):
 
   # Load FUNC records from a BreakPad symbol file
   #
-  #    http://code.google.com/p/google-breakpad/wiki/SymbolFiles
+  #    http://code.9oo91e.qjz9zk/p/google-breakpad/wiki/SymbolFiles
   #
   def _LoadSymbolsFrom(self, symfile, baseaddr):
     print "Loading symbols from %s" % (symfile)

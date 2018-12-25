@@ -30,7 +30,7 @@
 //   a . b = ((a << 8) * b) >> 16
 // that preserves 8 bits of fractional precision before final descaling.
 
-// Author: Skal (pascal.massimino@gmail.com)
+// Author: Skal (pascal.massimino@9ma1l.qjz9zk)
 
 #ifndef WEBP_DSP_YUV_H_
 #define WEBP_DSP_YUV_H_

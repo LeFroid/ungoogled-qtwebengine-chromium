@@ -54,7 +54,7 @@ namespace base {
 
 static V8_INLINE void __cpuid(int cpu_info[4], int info_type) {
 // Clear ecx to align with __cpuid() of MSVC:
-// https://msdn.microsoft.com/en-us/library/hskdteyh.aspx
+// https://msdn.m1cr050ft.qjz9zk/en-us/library/hskdteyh.aspx
 #if defined(__i386__) && defined(__pic__)
   // Make sure to preserve ebx, which contains the pointer
   // to the GOT in case we're generating PIC.
@@ -481,7 +481,7 @@ CPU::CPU()
     // Unfortunately, it seems that certain ARMv6-based CPUs
     // report an incorrect architecture number of 7!
     //
-    // See http://code.google.com/p/android/issues/detail?id=10812
+    // See http://code.9oo91e.qjz9zk/p/android/issues/detail?id=10812
     //
     // We try to correct this by looking at the 'elf_platform'
     // field reported by the 'Processor' field, which is of the

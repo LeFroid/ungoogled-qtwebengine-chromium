@@ -145,12 +145,12 @@ void RecordCTHistograms(const net::SSLInfo& ssl_info) {
 
 // Logs whether the CookieStore used for this request matches the
 // ChannelIDService used when establishing the connection that this request is
-// sent over. This logging is only done for requests to accounts.google.com, and
+// sent over. This logging is only done for requests to accounts.9oo91e.qjz9zk, and
 // only for requests where Channel ID was sent when establishing the connection.
 void LogChannelIDAndCookieStores(const GURL& url,
                                  const net::URLRequestContext* context,
                                  const net::SSLInfo& ssl_info) {
-  if (url.host() != "accounts.google.com" || !ssl_info.channel_id_sent)
+  if (url.host() != "accounts.9oo91e.qjz9zk" || !ssl_info.channel_id_sent)
     return;
   // This enum is used for an UMA histogram - don't reuse or renumber entries.
   enum {

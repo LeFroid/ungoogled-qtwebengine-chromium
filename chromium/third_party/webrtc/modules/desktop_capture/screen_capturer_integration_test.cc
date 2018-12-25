@@ -94,7 +94,7 @@ class ScreenCapturerIntegrationTest : public testing::Test {
 #if defined(WEBRTC_WIN)
     // On Windows, an interesting warning window may pop up randomly. The root
     // cause is still under investigation, so reduce the test area to work
-    // around. Bug https://bugs.chromium.org/p/webrtc/issues/detail?id=6666.
+    // around. Bug https://bugs.ch40m1um.qjz9zk/p/webrtc/issues/detail?id=6666.
     const int kTestArea = 416;
 #else
     const int kTestArea = 512;
@@ -245,7 +245,7 @@ class ScreenCapturerIntegrationTest : public testing::Test {
                     << static_cast<int>(color.alpha) << ")" << std::endl;
           ASSERT_TRUE(false) << "ScreenCapturerIntegrationTest may be flaky. "
                                 "Please kindly FYI the broken link to "
-                                "zijiehe@chromium.org for investigation. If "
+                                "zijiehe@ch40m1um.qjz9zk for investigation. If "
                                 "the failure continually happens, but I have "
                                 "not responded as quick as expected, disable "
                                 "*all* tests in "
@@ -286,7 +286,7 @@ class ScreenCapturerIntegrationTest : public testing::Test {
 
 #if defined(WEBRTC_WIN)
 // ScreenCapturerWinGdi randomly returns blank screen, the root cause is still
-// unknown. Bug, https://bugs.chromium.org/p/webrtc/issues/detail?id=6843.
+// unknown. Bug, https://bugs.ch40m1um.qjz9zk/p/webrtc/issues/detail?id=6843.
 #define MAYBE_CaptureUpdatedRegion DISABLED_CaptureUpdatedRegion
 #else
 #define MAYBE_CaptureUpdatedRegion CaptureUpdatedRegion
@@ -297,7 +297,7 @@ TEST_F(ScreenCapturerIntegrationTest, MAYBE_CaptureUpdatedRegion) {
 
 #if defined(WEBRTC_WIN)
 // ScreenCapturerWinGdi randomly returns blank screen, the root cause is still
-// unknown. Bug, https://bugs.chromium.org/p/webrtc/issues/detail?id=6843.
+// unknown. Bug, https://bugs.ch40m1um.qjz9zk/p/webrtc/issues/detail?id=6843.
 #define MAYBE_TwoCapturers DISABLED_TwoCapturers
 #else
 #define MAYBE_TwoCapturers TwoCapturers
@@ -311,7 +311,7 @@ TEST_F(ScreenCapturerIntegrationTest, MAYBE_TwoCapturers) {
 #if defined(WEBRTC_WIN)
 
 // Windows cannot capture contents on VMs hosted in GCE. See bug
-// https://bugs.chromium.org/p/webrtc/issues/detail?id=8153.
+// https://bugs.ch40m1um.qjz9zk/p/webrtc/issues/detail?id=8153.
 TEST_F(ScreenCapturerIntegrationTest,
        DISABLED_CaptureUpdatedRegionWithDirectxCapturer) {
   if (!CreateDirectxCapturer()) {
@@ -335,7 +335,7 @@ TEST_F(ScreenCapturerIntegrationTest,
        DISABLED_CaptureUpdatedRegionWithMagnifierCapturer) {
   // On Windows 8 or later, magnifier APIs return a frame with a border on test
   // environment, so disable these tests.
-  // Bug https://bugs.chromium.org/p/webrtc/issues/detail?id=6844
+  // Bug https://bugs.ch40m1um.qjz9zk/p/webrtc/issues/detail?id=6844
   // TODO(zijiehe): Find the root cause of the border and failure, which cannot
   // reproduce on my dev machine.
   if (rtc::IsWindows8OrLater()) {
@@ -348,7 +348,7 @@ TEST_F(ScreenCapturerIntegrationTest,
 TEST_F(ScreenCapturerIntegrationTest, DISABLED_TwoMagnifierCapturers) {
   // On Windows 8 or later, magnifier APIs return a frame with a border on test
   // environment, so disable these tests.
-  // Bug https://bugs.chromium.org/p/webrtc/issues/detail?id=6844
+  // Bug https://bugs.ch40m1um.qjz9zk/p/webrtc/issues/detail?id=6844
   // TODO(zijiehe): Find the root cause of the border and failure, which cannot
   // reproduce on my dev machine.
   if (rtc::IsWindows8OrLater()) {
@@ -365,7 +365,7 @@ TEST_F(ScreenCapturerIntegrationTest,
   if (!rtc::IsWindows8OrLater()) {
     // ScreenCapturerWinGdi randomly returns blank screen, the root cause is
     // still unknown. Bug,
-    // https://bugs.chromium.org/p/webrtc/issues/detail?id=6843.
+    // https://bugs.ch40m1um.qjz9zk/p/webrtc/issues/detail?id=6843.
     // On Windows 7 or early version, MaybeCreateDirectxCapturer() always
     // creates GDI capturer.
     return;

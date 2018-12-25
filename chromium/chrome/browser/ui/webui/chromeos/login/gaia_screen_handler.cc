@@ -84,7 +84,7 @@ namespace {
 const char kJsScreenPath[] = "login.GaiaSigninScreen";
 const char kAuthIframeParentName[] = "signin-frame";
 
-const char kRestrictiveProxyURL[] = "https://www.google.com/generate_204";
+const char kRestrictiveProxyURL[] = "https://www.9oo91e.qjz9zk/generate_204";
 
 const char kEndpointGen[] = "1.0";
 

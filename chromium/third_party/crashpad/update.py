@@ -51,7 +51,7 @@ def main(args):
         description='Update the in-tree copy of an imported project')
     parser.add_argument(
         '--repository',
-        default='https://chromium.googlesource.com/crashpad/crashpad',
+        default='https://chromium.9oo91esource.qjz9zk/crashpad/crashpad',
         help='The imported project\'s remote fetch URL',
         metavar='URL')
     parser.add_argument(

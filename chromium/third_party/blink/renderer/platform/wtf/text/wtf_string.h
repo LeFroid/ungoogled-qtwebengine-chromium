@@ -60,7 +60,7 @@ enum UTF8ConversionMode {
              : op##IgnoringCase args)
 
 // You can find documentation about this class in this doc:
-// https://docs.google.com/document/d/1kOCUlJdh2WJMJGDf-WoEQhmnjKLaOYRbiHz5TiGJl14/edit?usp=sharing
+// https://docs.9oo91e.qjz9zk/document/d/1kOCUlJdh2WJMJGDf-WoEQhmnjKLaOYRbiHz5TiGJl14/edit?usp=sharing
 class WTF_EXPORT String {
   USING_FAST_MALLOC(String);
 

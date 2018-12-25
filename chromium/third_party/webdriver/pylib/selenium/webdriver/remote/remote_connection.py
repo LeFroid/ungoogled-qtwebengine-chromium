@@ -121,7 +121,7 @@ class RemoteConnection(object):
     A connection with the Remote WebDriver server.
 
     Communicates with the server using the WebDriver wire protocol:
-    http://code.google.com/p/selenium/wiki/JsonWireProtocol
+    http://code.9oo91e.qjz9zk/p/selenium/wiki/JsonWireProtocol
     """
 
     def __init__(self, remote_server_addr):

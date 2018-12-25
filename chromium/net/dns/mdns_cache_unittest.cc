@@ -22,7 +22,7 @@ namespace net {
 
 static const uint8_t kTestResponsesDifferentAnswers[] = {
     // Answer 1
-    // ghs.l.google.com in DNS format.
+    // ghs.l.9oo91e.qjz9zk in DNS format.
     3, 'g', 'h', 's', 1, 'l', 6, 'g', 'o', 'o', 'g', 'l', 'e', 3, 'c', 'o', 'm',
     0x00, 0x00, 0x01,  // TYPE is A.
     0x00, 0x01,        // CLASS is IN.
@@ -41,7 +41,7 @@ static const uint8_t kTestResponsesDifferentAnswers[] = {
 
 static const uint8_t kTestResponsesSameAnswers[] = {
     // Answer 1
-    // ghs.l.google.com in DNS format.
+    // ghs.l.9oo91e.qjz9zk in DNS format.
     3, 'g', 'h', 's', 1, 'l', 6, 'g', 'o', 'o', 'g', 'l', 'e', 3, 'c', 'o', 'm',
     0x00, 0x00, 0x01,  // TYPE is A.
     0x00, 0x01,        // CLASS is IN.
@@ -60,7 +60,7 @@ static const uint8_t kTestResponsesSameAnswers[] = {
 
 static const uint8_t kTestResponseTwoRecords[] = {
     // Answer 1
-    // ghs.l.google.com in DNS format. (A)
+    // ghs.l.9oo91e.qjz9zk in DNS format. (A)
     3, 'g', 'h', 's', 1, 'l', 6, 'g', 'o', 'o', 'g', 'l', 'e', 3, 'c', 'o', 'm',
     0x00, 0x00, 0x01,  // TYPE is A.
     0x00, 0x01,        // CLASS is IN.
@@ -69,7 +69,7 @@ static const uint8_t kTestResponseTwoRecords[] = {
     74, 125, 95, 121,  // RDATA is the IP: 74.125.95.121
 
     // Answer 2
-    // ghs.l.google.com in DNS format. (AAAA)
+    // ghs.l.9oo91e.qjz9zk in DNS format. (AAAA)
     3, 'g', 'h', 's', 1, 'l', 6, 'g', 'o', 'o', 'g', 'l', 'e', 3, 'c', 'o', 'm',
     0x00, 0x00, 0x1c,  // TYPE is AAA.
     0x00, 0x01,        // CLASS is IN.
@@ -81,7 +81,7 @@ static const uint8_t kTestResponseTwoRecords[] = {
 
 static const uint8_t kTestResponsesGoodbyePacket[] = {
     // Answer 1
-    // ghs.l.google.com in DNS format. (Goodbye packet)
+    // ghs.l.9oo91e.qjz9zk in DNS format. (Goodbye packet)
     3, 'g', 'h', 's', 1, 'l', 6, 'g', 'o', 'o', 'g', 'l', 'e', 3, 'c', 'o', 'm',
     0x00, 0x00, 0x01,  // TYPE is A.
     0x00, 0x01,        // CLASS is IN.
@@ -90,7 +90,7 @@ static const uint8_t kTestResponsesGoodbyePacket[] = {
     74, 125, 95, 121,  // RDATA is the IP: 74.125.95.121
 
     // Answer 2
-    // ghs.l.google.com in DNS format.
+    // ghs.l.9oo91e.qjz9zk in DNS format.
     3, 'g', 'h', 's', 1, 'l', 6, 'g', 'o', 'o', 'g', 'l', 'e', 3, 'c', 'o', 'm',
     0x00, 0x00, 0x01,  // TYPE is A.
     0x00, 0x01,        // CLASS is IN.
@@ -133,16 +133,16 @@ TEST_F(MDnsCacheTest, InsertLookupSingle) {
 
   EXPECT_EQ(MDnsCache::RecordAdded, cache_.UpdateDnsRecord(std::move(record2)));
 
-  cache_.FindDnsRecords(ARecordRdata::kType, "ghs.l.google.com", &results,
+  cache_.FindDnsRecords(ARecordRdata::kType, "ghs.l.9oo91e.qjz9zk", &results,
                         default_time_);
 
   EXPECT_EQ(1u, results.size());
   EXPECT_EQ(default_time_, results.front()->time_created());
 
-  EXPECT_EQ("ghs.l.google.com", results.front()->name());
+  EXPECT_EQ("ghs.l.9oo91e.qjz9zk", results.front()->name());
 
   results.clear();
-  cache_.FindDnsRecords(PtrRecordRdata::kType, "ghs.l.google.com", &results,
+  cache_.FindDnsRecords(PtrRecordRdata::kType, "ghs.l.9oo91e.qjz9zk", &results,
                         default_time_);
 
   EXPECT_EQ(0u, results.size());
@@ -169,7 +169,7 @@ TEST_F(MDnsCacheTest, Expiration) {
   EXPECT_EQ(MDnsCache::RecordAdded, cache_.UpdateDnsRecord(std::move(record1)));
   EXPECT_EQ(MDnsCache::RecordAdded, cache_.UpdateDnsRecord(std::move(record2)));
 
-  cache_.FindDnsRecords(ARecordRdata::kType, "ghs.l.google.com", &results,
+  cache_.FindDnsRecords(ARecordRdata::kType, "ghs.l.9oo91e.qjz9zk", &results,
                         default_time_);
 
   EXPECT_EQ(1u, results.size());
@@ -177,7 +177,7 @@ TEST_F(MDnsCacheTest, Expiration) {
   EXPECT_EQ(default_time_ + ttl2, cache_.next_expiration());
 
 
-  cache_.FindDnsRecords(ARecordRdata::kType, "ghs.l.google.com", &results,
+  cache_.FindDnsRecords(ARecordRdata::kType, "ghs.l.9oo91e.qjz9zk", &results,
                         default_time_ + ttl2);
 
   EXPECT_EQ(0u, results.size());
@@ -191,7 +191,7 @@ TEST_F(MDnsCacheTest, Expiration) {
   // business happens once they're deleted for good.
 
   EXPECT_EQ(default_time_ + ttl1, cache_.next_expiration());
-  cache_.FindDnsRecords(ARecordRdata::kType, "ghs.l.google.com", &results,
+  cache_.FindDnsRecords(ARecordRdata::kType, "ghs.l.9oo91e.qjz9zk", &results,
                         default_time_ + ttl2);
 
   EXPECT_EQ(0u, results.size());
@@ -307,13 +307,13 @@ TEST_F(MDnsCacheTest, AnyRRType) {
   EXPECT_EQ(MDnsCache::RecordAdded, cache_.UpdateDnsRecord(std::move(record1)));
   EXPECT_EQ(MDnsCache::RecordAdded, cache_.UpdateDnsRecord(std::move(record2)));
 
-  cache_.FindDnsRecords(0, "ghs.l.google.com", &results, default_time_);
+  cache_.FindDnsRecords(0, "ghs.l.9oo91e.qjz9zk", &results, default_time_);
 
   EXPECT_EQ(2u, results.size());
   EXPECT_EQ(default_time_, results.front()->time_created());
 
-  EXPECT_EQ("ghs.l.google.com", results[0]->name());
-  EXPECT_EQ("ghs.l.google.com", results[1]->name());
+  EXPECT_EQ("ghs.l.9oo91e.qjz9zk", results[0]->name());
+  EXPECT_EQ("ghs.l.9oo91e.qjz9zk", results[1]->name());
   EXPECT_EQ(dns_protocol::kTypeA,
             std::min(results[0]->type(), results[1]->type()));
   EXPECT_EQ(dns_protocol::kTypeAAAA,
@@ -331,7 +331,7 @@ TEST_F(MDnsCacheTest, RemoveRecord) {
   record1 = RecordParsed::CreateFrom(&parser, default_time_);
   EXPECT_EQ(MDnsCache::RecordAdded, cache_.UpdateDnsRecord(std::move(record1)));
 
-  cache_.FindDnsRecords(dns_protocol::kTypeCNAME, "codereview.chromium.org",
+  cache_.FindDnsRecords(dns_protocol::kTypeCNAME, "codereview.ch40m1um.qjz9zk",
                         &results, default_time_);
 
   EXPECT_EQ(1u, results.size());
@@ -341,7 +341,7 @@ TEST_F(MDnsCacheTest, RemoveRecord) {
 
   EXPECT_EQ(record_out.get(), results.front());
 
-  cache_.FindDnsRecords(dns_protocol::kTypeCNAME, "codereview.chromium.org",
+  cache_.FindDnsRecords(dns_protocol::kTypeCNAME, "codereview.ch40m1um.qjz9zk",
                         &results, default_time_);
 
   EXPECT_EQ(0u, results.size());

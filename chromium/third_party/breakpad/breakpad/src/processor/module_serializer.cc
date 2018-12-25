@@ -31,7 +31,7 @@
 //
 // See module_serializer.h for documentation.
 //
-// Author: Siyang Xie (lambxsy@google.com)
+// Author: Siyang Xie (lambxsy@9oo91e.qjz9zk)
 
 #include "processor/module_serializer.h"
 

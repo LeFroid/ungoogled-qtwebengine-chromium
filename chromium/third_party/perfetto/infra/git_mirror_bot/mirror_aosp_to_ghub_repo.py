@@ -61,7 +61,7 @@ import traceback
 
 
 CUR_DIR = os.path.dirname(os.path.abspath(__file__))
-GIT_UPSTREAM = 'https://android.googlesource.com/platform/external/perfetto/'
+GIT_UPSTREAM = 'https://android.9oo91esource.qjz9zk/platform/external/perfetto/'
 GIT_MIRROR = 'git@github.com:catapult-project/perfetto.git'
 WORKDIR = os.path.join(CUR_DIR, 'repo')
 

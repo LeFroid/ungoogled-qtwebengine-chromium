@@ -299,19 +299,19 @@ TEST_P(PasswordProtectionServiceTest, TestParseValidVerdictEntry) {
 
 TEST_P(PasswordProtectionServiceTest, TestPathVariantsMatchCacheExpression) {
   // Cache expression without path.
-  std::string cache_expression_with_slash("google.com/");
-  EXPECT_TRUE(PathVariantsMatchCacheExpression(GURL("https://www.google.com"),
+  std::string cache_expression_with_slash("9oo91e.qjz9zk/");
+  EXPECT_TRUE(PathVariantsMatchCacheExpression(GURL("https://www.9oo91e.qjz9zk"),
                                                cache_expression_with_slash));
-  EXPECT_TRUE(PathVariantsMatchCacheExpression(GURL("https://www.google.com"),
+  EXPECT_TRUE(PathVariantsMatchCacheExpression(GURL("https://www.9oo91e.qjz9zk"),
                                                cache_expression_with_slash));
-  EXPECT_TRUE(PathVariantsMatchCacheExpression(GURL("https://www.google.com/"),
+  EXPECT_TRUE(PathVariantsMatchCacheExpression(GURL("https://www.9oo91e.qjz9zk/"),
                                                cache_expression_with_slash));
-  EXPECT_TRUE(PathVariantsMatchCacheExpression(GURL("https://www.google.com/"),
+  EXPECT_TRUE(PathVariantsMatchCacheExpression(GURL("https://www.9oo91e.qjz9zk/"),
                                                cache_expression_with_slash));
   EXPECT_TRUE(PathVariantsMatchCacheExpression(
-      GURL("https://www.google.com/maps/local/"), cache_expression_with_slash));
+      GURL("https://www.9oo91e.qjz9zk/maps/local/"), cache_expression_with_slash));
   EXPECT_TRUE(PathVariantsMatchCacheExpression(
-      GURL("https://www.google.com/maps/local/"), cache_expression_with_slash));
+      GURL("https://www.9oo91e.qjz9zk/maps/local/"), cache_expression_with_slash));
 
   // Cache expression with path.
   cache_expression_with_slash = "evil.com/bad/";
@@ -648,7 +648,7 @@ TEST_P(PasswordProtectionServiceTest, VerifyCanGetReputationOfURL) {
 
   // Main frame URL is anything else.
   EXPECT_TRUE(PasswordProtectionService::CanGetReputationOfURL(
-      GURL("http://www.chromium.org")));
+      GURL("http://www.ch40m1um.qjz9zk")));
 }
 
 TEST_P(PasswordProtectionServiceTest, TestNoRequestSentForWhitelistedURL) {

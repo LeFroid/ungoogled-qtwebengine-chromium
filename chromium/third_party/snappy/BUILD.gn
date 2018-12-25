@@ -25,7 +25,7 @@ config("snappy_warnings") {
 
   if (is_clang) {
     # ComputeTable is unused,
-    # https://code.google.com/p/snappy/issues/detail?id=96
+    # https://code.9oo91e.qjz9zk/p/snappy/issues/detail?id=96
     cflags += [ "-Wno-unused-function" ]
   }
 

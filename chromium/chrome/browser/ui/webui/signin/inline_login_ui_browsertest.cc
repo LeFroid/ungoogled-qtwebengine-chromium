@@ -380,7 +380,7 @@ IN_PROC_BROWSER_TEST_F(InlineLoginUIBrowserTest, OneProcessLimit) {
 IN_PROC_BROWSER_TEST_F(InlineLoginUIBrowserTest, CanOfferNoProfile) {
   std::string error_message;
   EXPECT_FALSE(CanOfferSignin(NULL, CAN_OFFER_SIGNIN_FOR_ALL_ACCOUNTS, "12345",
-                              "user@gmail.com", &error_message));
+                              "user@9ma1l.qjz9zk", &error_message));
   EXPECT_EQ("", error_message);
 }
 
@@ -388,7 +388,7 @@ IN_PROC_BROWSER_TEST_F(InlineLoginUIBrowserTest, CanOffer) {
   EnableOneClick(true);
   EXPECT_TRUE(CanOfferSignin(browser()->profile(),
                              CAN_OFFER_SIGNIN_FOR_ALL_ACCOUNTS, "12345",
-                             "user@gmail.com", NULL));
+                             "user@9ma1l.qjz9zk", NULL));
 
   EnableOneClick(false);
 
@@ -396,36 +396,36 @@ IN_PROC_BROWSER_TEST_F(InlineLoginUIBrowserTest, CanOffer) {
 
   EXPECT_TRUE(CanOfferSignin(browser()->profile(),
                              CAN_OFFER_SIGNIN_FOR_ALL_ACCOUNTS, "12345",
-                             "user@gmail.com", &error_message));
+                             "user@9ma1l.qjz9zk", &error_message));
 }
 
 IN_PROC_BROWSER_TEST_F(InlineLoginUIBrowserTest, CanOfferProfileConnected) {
-  SetUpSigninManager("foo@gmail.com");
+  SetUpSigninManager("foo@9ma1l.qjz9zk");
   EnableSigninAllowed(true);
 
   std::string error_message;
 
   EXPECT_TRUE(CanOfferSignin(browser()->profile(),
                              CAN_OFFER_SIGNIN_FOR_ALL_ACCOUNTS, "12345",
-                             "foo@gmail.com", &error_message));
+                             "foo@9ma1l.qjz9zk", &error_message));
   EXPECT_TRUE(CanOfferSignin(browser()->profile(),
                              CAN_OFFER_SIGNIN_FOR_ALL_ACCOUNTS, "12345", "foo",
                              &error_message));
   EXPECT_FALSE(CanOfferSignin(browser()->profile(),
                               CAN_OFFER_SIGNIN_FOR_ALL_ACCOUNTS, "12345",
-                              "user@gmail.com", &error_message));
+                              "user@9ma1l.qjz9zk", &error_message));
   EXPECT_EQ(l10n_util::GetStringFUTF8(IDS_SYNC_WRONG_EMAIL,
-                                      base::UTF8ToUTF16("foo@gmail.com")),
+                                      base::UTF8ToUTF16("foo@9ma1l.qjz9zk")),
             error_message);
 }
 
 IN_PROC_BROWSER_TEST_F(InlineLoginUIBrowserTest, CanOfferUsernameNotAllowed) {
-  SetAllowedUsernamePattern("*.google.com");
+  SetAllowedUsernamePattern("*.9oo91e.qjz9zk");
 
   std::string error_message;
   EXPECT_FALSE(CanOfferSignin(browser()->profile(),
                               CAN_OFFER_SIGNIN_FOR_ALL_ACCOUNTS, "12345",
-                              "foo@gmail.com", &error_message));
+                              "foo@9ma1l.qjz9zk", &error_message));
   EXPECT_EQ(l10n_util::GetStringUTF8(IDS_SYNC_LOGIN_NAME_PROHIBITED),
             error_message);
 }
@@ -433,16 +433,16 @@ IN_PROC_BROWSER_TEST_F(InlineLoginUIBrowserTest, CanOfferUsernameNotAllowed) {
 IN_PROC_BROWSER_TEST_F(InlineLoginUIBrowserTest, CanOfferWithRejectedEmail) {
   EnableSigninAllowed(true);
 
-  AddEmailToOneClickRejectedList("foo@gmail.com");
-  AddEmailToOneClickRejectedList("user@gmail.com");
+  AddEmailToOneClickRejectedList("foo@9ma1l.qjz9zk");
+  AddEmailToOneClickRejectedList("user@9ma1l.qjz9zk");
 
   std::string error_message;
   EXPECT_TRUE(CanOfferSignin(browser()->profile(),
                              CAN_OFFER_SIGNIN_FOR_ALL_ACCOUNTS, "12345",
-                             "foo@gmail.com", &error_message));
+                             "foo@9ma1l.qjz9zk", &error_message));
   EXPECT_TRUE(CanOfferSignin(browser()->profile(),
                              CAN_OFFER_SIGNIN_FOR_ALL_ACCOUNTS, "12345",
-                             "user@gmail.com", &error_message));
+                             "user@9ma1l.qjz9zk", &error_message));
 }
 
 IN_PROC_BROWSER_TEST_F(InlineLoginUIBrowserTest, CanOfferNoSigninCookies) {
@@ -452,7 +452,7 @@ IN_PROC_BROWSER_TEST_F(InlineLoginUIBrowserTest, CanOfferNoSigninCookies) {
   std::string error_message;
   EXPECT_FALSE(CanOfferSignin(browser()->profile(),
                               CAN_OFFER_SIGNIN_FOR_ALL_ACCOUNTS, "12345",
-                              "user@gmail.com", &error_message));
+                              "user@9ma1l.qjz9zk", &error_message));
   EXPECT_EQ("", error_message);
 }
 
@@ -578,7 +578,7 @@ class InlineLoginHelperBrowserTest : public InProcessBrowserTest {
 IN_PROC_BROWSER_TEST_F(InlineLoginHelperBrowserTest, WithSessionIndex) {
   base::WeakPtr<InlineLoginHandlerImpl> handler;
   MockInlineSigninHelper helper(handler, test_shared_loader_factory(),
-                                browser()->profile(), GURL(), "foo@gmail.com",
+                                browser()->profile(), GURL(), "foo@9ma1l.qjz9zk",
                                 "gaiaid-12345", "password",
                                 "0",            // session index from above
                                 std::string(),  // auth code
@@ -606,7 +606,7 @@ IN_PROC_BROWSER_TEST_F(InlineLoginHelperBrowserTest, WithSessionIndex) {
 IN_PROC_BROWSER_TEST_F(InlineLoginHelperBrowserTest, WithAuthCode) {
   base::WeakPtr<InlineLoginHandlerImpl> handler;
   MockInlineSigninHelper helper(handler, test_shared_loader_factory(),
-                                browser()->profile(), GURL(), "foo@gmail.com",
+                                browser()->profile(), GURL(), "foo@9ma1l.qjz9zk",
                                 "gaiaid-12345", "password",
                                 "",           // session index
                                 "auth_code",  // auth code
@@ -643,7 +643,7 @@ IN_PROC_BROWSER_TEST_F(InlineLoginHelperBrowserTest,
           content::BrowserContext::GetDefaultStoragePartition(
               browser()->profile())
               ->GetURLLoaderFactoryForBrowserProcess(),
-          browser()->profile(), url, "foo@gmail.com", "gaiaid-12345",
+          browser()->profile(), url, "foo@9ma1l.qjz9zk", "gaiaid-12345",
           "password",
           "",           // session index
           "auth_code",  // auth code
@@ -688,7 +688,7 @@ IN_PROC_BROWSER_TEST_F(InlineLoginHelperBrowserTest,
   MockSyncStarterInlineSigninHelper* helper =
       new MockSyncStarterInlineSigninHelper(
           handler, test_shared_loader_factory(), browser()->profile(), url,
-          "foo@gmail.com", "gaiaid-12345", "password",
+          "foo@9ma1l.qjz9zk", "gaiaid-12345", "password",
           "",           // session index
           "auth_code",  // auth code
           std::string(),
@@ -719,7 +719,7 @@ IN_PROC_BROWSER_TEST_F(InlineLoginHelperBrowserTest,
   MockSyncStarterInlineSigninHelper* helper =
       new MockSyncStarterInlineSigninHelper(
           handler, test_shared_loader_factory(), browser()->profile(), url,
-          "foo@gmail.com", "gaiaid-12345", "password",
+          "foo@9ma1l.qjz9zk", "gaiaid-12345", "password",
           "",           // session index
           "auth_code",  // auth code
           std::string(),
@@ -751,7 +751,7 @@ IN_PROC_BROWSER_TEST_F(InlineLoginHelperBrowserTest,
   MockSyncStarterInlineSigninHelper* helper =
       new MockSyncStarterInlineSigninHelper(
           handler, test_shared_loader_factory(), browser()->profile(), url,
-          "foo@gmail.com", "gaiaid-12345", "password",
+          "foo@9ma1l.qjz9zk", "gaiaid-12345", "password",
           "",           // session index
           "auth_code",  // auth code
           std::string(),
@@ -783,7 +783,7 @@ IN_PROC_BROWSER_TEST_F(InlineLoginHelperBrowserTest,
   InlineSigninHelper helper(handler, test_shared_loader_factory(),
                             browser()->profile(),
                             Profile::CreateStatus::CREATE_STATUS_INITIALIZED,
-                            url, "foo@gmail.com", "gaiaid-12345", "password",
+                            url, "foo@9ma1l.qjz9zk", "gaiaid-12345", "password",
                             "",           // session index
                             "auth_code",  // auth code
                             std::string(),
@@ -808,7 +808,7 @@ IN_PROC_BROWSER_TEST_F(InlineLoginHelperBrowserTest,
   InlineSigninHelper helper(handler, test_shared_loader_factory(),
                             browser()->profile(),
                             Profile::CreateStatus::CREATE_STATUS_INITIALIZED,
-                            url, "foo@gmail.com", "gaiaid-12345", "password",
+                            url, "foo@9ma1l.qjz9zk", "gaiaid-12345", "password",
                             "",           // session index
                             "auth_code",  // auth code
                             std::string(),
@@ -830,7 +830,7 @@ IN_PROC_BROWSER_TEST_F(InlineLoginHelperBrowserTest,
   MockSyncStarterInlineSigninHelper* helper =
       new MockSyncStarterInlineSigninHelper(
           handler, test_shared_loader_factory(), browser()->profile(), url,
-          "foo@gmail.com", "gaiaid-12345", "password", "", "auth_code",
+          "foo@9ma1l.qjz9zk", "gaiaid-12345", "password", "", "auth_code",
           std::string(), false, false, true);
   EXPECT_CALL(
       *helper,

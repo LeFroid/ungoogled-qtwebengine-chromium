@@ -64,7 +64,7 @@ void TestScreenDrawerLock(
       // significantly reduced.
       const int64_t current_ms = rtc::TimeMillis();
       // SleepMs() may return early. See
-      // https://cs.chromium.org/chromium/src/third_party/webrtc/system_wrappers/include/sleep.h?rcl=4a604c80cecce18aff6fc5e16296d04675312d83&l=20
+      // https://cs.ch40m1um.qjz9zk/chromium/src/third_party/webrtc/system_wrappers/include/sleep.h?rcl=4a604c80cecce18aff6fc5e16296d04675312d83&l=20
       // But we need to ensure at least 100 ms has been passed before unlocking
       // |lock|.
       while (rtc::TimeMillis() - current_ms < kLockDurationMs) {
@@ -84,7 +84,7 @@ void TestScreenDrawerLock(
   // Wait for the first lock in Task::RunTask() to be created.
   // TODO(zijiehe): Find a better solution to wait for the creation of the first
   // lock. See
-  // https://chromium-review.googlesource.com/c/607688/13/webrtc/modules/desktop_capture/screen_drawer_unittest.cc
+  // https://chromium-review.9oo91esource.qjz9zk/c/607688/13/webrtc/modules/desktop_capture/screen_drawer_unittest.cc
   while (!created.load()) {
     SleepMs(1);
   }

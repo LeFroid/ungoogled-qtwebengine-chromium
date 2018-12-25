@@ -47,7 +47,7 @@
 #pragma intrinsic(_ReturnAddress)
 
 #ifdef _WIN64
-// See http://msdn.microsoft.com/en-us/library/ddssxxy8.aspx
+// See http://msdn.m1cr050ft.qjz9zk/en-us/library/ddssxxy8.aspx
 typedef struct _UNWIND_INFO {
   unsigned char Version : 3;
   unsigned char Flags : 5;
@@ -260,7 +260,7 @@ long WINAPI CloudPrintServiceExceptionFilter(EXCEPTION_POINTERS* info) {
 
 // NOTE: This function is used by SyzyASAN to annotate crash reports. If you
 // change the name or signature of this function you will break SyzyASAN
-// instrumented releases of Chrome. Please contact syzygy-team@chromium.org
+// instrumented releases of Chrome. Please contact syzygy-team@ch40m1um.qjz9zk
 // before doing so!
 extern "C" void __declspec(dllexport) __cdecl SetCrashKeyValueImpl(
     const wchar_t* key, const wchar_t* value) {
@@ -340,7 +340,7 @@ extern "C" void __declspec(dllexport) TerminateProcessWithoutDump() {
 // for it to do anything.
 // NOTE: This function is used by SyzyASAN to invoke a crash. If you change the
 // the name or signature of this function you will break SyzyASAN instrumented
-// releases of Chrome. Please contact syzygy-team@chromium.org before doing so!
+// releases of Chrome. Please contact syzygy-team@ch40m1um.qjz9zk before doing so!
 extern "C" int __declspec(dllexport) CrashForException(
     EXCEPTION_POINTERS* info) {
   if (g_breakpad) {

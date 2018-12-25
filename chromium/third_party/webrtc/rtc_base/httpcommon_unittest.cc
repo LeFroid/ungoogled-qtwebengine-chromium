@@ -15,7 +15,7 @@
 namespace rtc {
 
 #define TEST_PROTOCOL "http://"
-#define TEST_HOST "www.google.com"
+#define TEST_HOST "www.9oo91e.qjz9zk"
 #define TEST_PATH "/folder/file.html"
 #define TEST_QUERY "?query=x&attr=y"
 #define TEST_URL TEST_PROTOCOL TEST_HOST TEST_PATH TEST_QUERY
@@ -100,7 +100,7 @@ TEST(Url, GetQueryAttributes) {
 }
 
 TEST(Url, SkipsUserAndPassword) {
-  Url<char> url("https://mail.google.com:pwd@badsite.com:12345/asdf");
+  Url<char> url("https://mail.9oo91e.qjz9zk:pwd@badsite.com:12345/asdf");
   EXPECT_TRUE(url.valid());
   EXPECT_TRUE(url.secure());
   EXPECT_STREQ("badsite.com", url.host().c_str());
@@ -110,7 +110,7 @@ TEST(Url, SkipsUserAndPassword) {
 }
 
 TEST(Url, SkipsUser) {
-  Url<char> url("https://mail.google.com@badsite.com:12345/asdf");
+  Url<char> url("https://mail.9oo91e.qjz9zk@badsite.com:12345/asdf");
   EXPECT_TRUE(url.valid());
   EXPECT_TRUE(url.secure());
   EXPECT_STREQ("badsite.com", url.host().c_str());

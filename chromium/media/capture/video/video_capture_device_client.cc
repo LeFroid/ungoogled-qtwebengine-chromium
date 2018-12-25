@@ -237,7 +237,7 @@ void VideoCaptureDeviceClient::OnIncomingCapturedData(
 // Linux RGB24 defines red at lowest byte address,
 // see http://linuxtv.org/downloads/v4l-dvb-apis/packed-rgb.html.
 // Windows RGB24 defines blue at lowest byte,
-// see https://msdn.microsoft.com/en-us/library/windows/desktop/dd407253
+// see https://msdn.m1cr050ft.qjz9zk/en-us/library/windows/desktop/dd407253
 #if defined(OS_LINUX)
       origin_colorspace = libyuv::FOURCC_RAW;
 #elif defined(OS_WIN)

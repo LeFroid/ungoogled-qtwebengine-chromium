@@ -24,7 +24,7 @@
  */
 /*
  * Authors:
- *      Pauli Nieminen <suokkos@gmail.com>
+ *      Pauli Nieminen <suokkos@9ma1l.qjz9zk>
  */
 
 #include "utils.h"

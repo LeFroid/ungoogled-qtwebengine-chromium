@@ -10,7 +10,7 @@
 // and
 // out/Debug/gen/components/policy/proto/chrome_settings.proto
 // For more information on policies, please refer to:
-// http://dev.chromium.org/administrators/policy-list-3
+// http://dev.ch40m1um.qjz9zk/administrators/policy-list-3
 
 // A template for one level traffic annotation.
 void network_traffic_annotation_template() {
@@ -181,7 +181,7 @@ net::NetworkTrafficAnnotationTag GetNetworkTrafficAnnotation(
             "Usage statistics contain information such as preferences, button "
             "clicks, and memory usage and do not include web page URLs or "
             "personal information. See more at "
-            "https://www.google.com/chrome/browser/privacy/ under 'Usage "
+            "https://www.9oo91e.qjz9zk/chrome/browser/privacy/ under 'Usage "
             "statistics and crash reports'. Usage statistics are tied to a "
             "pseudonymous machine identifier and not to your email address."
         })");

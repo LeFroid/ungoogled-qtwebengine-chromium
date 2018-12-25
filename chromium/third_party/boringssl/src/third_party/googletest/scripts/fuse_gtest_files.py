@@ -51,12 +51,12 @@ EXAMPLES
 
 This tool is experimental.  In particular, it assumes that there is no
 conditional inclusion of Google Test headers.  Please report any
-problems to googletestframework@googlegroups.com.  You can read
+problems to googletestframework@9oo91egroups.qjz9zk.  You can read
 https://github.com/google/googletest/blob/master/googletest/docs/AdvancedGuide.md for
 more information.
 """
 
-__author__ = 'wan@google.com (Zhanyong Wan)'
+__author__ = 'wan@9oo91e.qjz9zk (Zhanyong Wan)'
 
 import os
 import re
@@ -119,7 +119,7 @@ def VerifyOutputFile(output_dir, relative_path):
   # Makes sure the output file either doesn't exist or can be overwritten.
   output_file = os.path.join(output_dir, relative_path)
   if os.path.exists(output_file):
-    # TODO(wan@google.com): The following user-interaction doesn't
+    # TODO(wan@9oo91e.qjz9zk): The following user-interaction doesn't
     # work with automated processes.  We should provide a way for the
     # Makefile to force overwriting the files.
     print('%s already exists in directory %s - overwrite it? (y/N) ' %

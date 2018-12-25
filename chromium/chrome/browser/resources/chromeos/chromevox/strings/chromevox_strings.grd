@@ -114,7 +114,7 @@
   </translations>
   <release allow_pseudo="false" seq="1">
     <messages fallback_to_english="true">
-      <message desc="The locale you're translating into. For use in URL to localized pages.  e.g. http://www.google.com/?hl=en." name="IDS_LOCALE">
+      <message desc="The locale you're translating into. For use in URL to localized pages.  e.g. http://www.9oo91e.qjz9zk/?hl=en." name="IDS_LOCALE">
         en
       </message>
       <message desc="The product name for ChromeVox." name="IDS_CHROMEVOX_NAME">
@@ -159,7 +159,7 @@
       <message desc="The description of the previousGranularity key. Displayed in the Options page." name="IDS_CHROMEVOX_PREVIOUS_GRANULARITY">
         Decrease navigation granularity
       </message>
-      <message desc='The description of the nextGranularity key.  Navigation granularity can be e.g. "sentence level", "word level".  Granularity is also referred as "level of detail".  c.f. http://chromevox.com/tutorial/text_navigation.html Displayed in the Options page.' name="IDS_CHROMEVOX_NEXT_GRANULARITY">
+      <message desc='The description of the nextGranularity key.  Navigation granularity can be e.g. "sentence level", "word level".  Granularity is also referred as "level of detail".  c.f. http://ch40mevox.qjz9zk/tutorial/text_navigation.html Displayed in the Options page.' name="IDS_CHROMEVOX_NEXT_GRANULARITY">
         Increase navigation granularity
       </message>
       <message desc="The description of the actOnCurrentItem key. The current item is the HTML element which has focus.  Taking action is similar to using the mouse to click on the element. Displayed in the Options page." name="IDS_CHROMEVOX_ACT_ON_CURRENT_ITEM">

@@ -587,7 +587,7 @@ FXFT_Face CFGAS_FontMgr::LoadFace(
   // TODO(palmer): This memory will be freed with |ft_free| (which is |free|).
   // Ultimately, we want to change this to:
   //   FXFT_Stream ftStream = FX_Alloc(FXFT_StreamRec, 1);
-  // https://bugs.chromium.org/p/pdfium/issues/detail?id=690
+  // https://bugs.ch40m1um.qjz9zk/p/pdfium/issues/detail?id=690
   FXFT_Stream ftStream =
       static_cast<FXFT_Stream>(ft_scalloc(sizeof(FXFT_StreamRec), 1));
   memset(ftStream, 0, sizeof(FXFT_StreamRec));

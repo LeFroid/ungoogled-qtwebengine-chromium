@@ -127,7 +127,7 @@ class PaymentsClientTest : public testing::Test,
 
   void StartUnmasking() {
     if (!identity_test_env_.identity_manager()->HasPrimaryAccount())
-      identity_test_env_.MakePrimaryAccountAvailable("example@gmail.com");
+      identity_test_env_.MakePrimaryAccountAvailable("example@9ma1l.qjz9zk");
 
     PaymentsClient::UnmaskRequestDetails request_details;
     request_details.billing_customer_number = 111222333444;
@@ -139,7 +139,7 @@ class PaymentsClientTest : public testing::Test,
 
   void StartGettingUploadDetails() {
     if (!identity_test_env_.identity_manager()->HasPrimaryAccount())
-      identity_test_env_.MakePrimaryAccountAvailable("example@gmail.com");
+      identity_test_env_.MakePrimaryAccountAvailable("example@9ma1l.qjz9zk");
 
     client_->GetUploadDetails(BuildTestProfiles(), kAllDetectableValues,
                               /*pan_first_six=*/"411111",
@@ -148,7 +148,7 @@ class PaymentsClientTest : public testing::Test,
 
   void StartUploading(bool include_cvc) {
     if (!identity_test_env_.identity_manager()->HasPrimaryAccount())
-      identity_test_env_.MakePrimaryAccountAvailable("example@gmail.com");
+      identity_test_env_.MakePrimaryAccountAvailable("example@9ma1l.qjz9zk");
 
     PaymentsClient::UploadRequestDetails request_details;
     request_details.billing_customer_number = 111222333444;

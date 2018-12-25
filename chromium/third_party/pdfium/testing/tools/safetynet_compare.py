@@ -346,7 +346,7 @@ class CompareRun(object):
     PrintErr('Syncing...')
 
     cmd = ['gclient', 'config', '--unmanaged',
-           'https://pdfium.googlesource.com/pdfium.git']
+           'https://pdfium.9oo91esource.qjz9zk/pdfium.git']
     if self.args.cache_dir:
       cmd.append('--cache-dir=%s' % self.args.cache_dir)
     RunCommandPropagateErr(cmd, exit_status_on_error=1)

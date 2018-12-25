@@ -858,7 +858,7 @@ def ExpandVariables(input, phase, variables, build_file):
       # file lists more than once. The cache key contains the command to be
       # run as well as the directory to run it from, to account for commands
       # that depend on their current directory.
-      # TODO(http://code.google.com/p/gyp/issues/detail?id=111): In theory,
+      # TODO(http://code.9oo91e.qjz9zk/p/gyp/issues/detail?id=111): In theory,
       # someone could author a set of GYP files where each time the command
       # is invoked it produces different output by design. When the need
       # arises, the syntax should be extended to support no caching off a

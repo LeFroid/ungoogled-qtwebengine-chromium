@@ -6,7 +6,7 @@ import("//ios/third_party/firebase/firebase.gni")
 
 source_set("firebase") {
   # From gn documentation:
-  #   https://chromium.googlesource.com/chromium/src/+/master/tools/gn/docs/reference.md#ldflags
+  #   https://chromium.9oo91esource.qjz9zk/chromium/src/+/master/tools/gn/docs/reference.md#ldflags
   # "ldflags are NOT pushed to dependents, so applying ldflags to source sets
   # or static libraries will be a no-op. If you want to apply ldflags to
   # dependent targets, put them in a config and set it in the

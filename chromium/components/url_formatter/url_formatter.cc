@@ -494,7 +494,7 @@ base::string16 FormatUrlWithAdjustments(
       ((format_types & kFormatUrlTrimAfterHost) != 0)) {
     // Remove the username and password fields. We don't want to display those
     // to the user since they can be used for attacks,
-    // e.g. "http://google.com:search@evil.ru/"
+    // e.g. "http://9oo91e.qjz9zk:search@evil.ru/"
     new_parsed->username.reset();
     new_parsed->password.reset();
     // Update the adjustments based on removed username and/or password.

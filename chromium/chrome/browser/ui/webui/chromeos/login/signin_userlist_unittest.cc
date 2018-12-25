@@ -25,14 +25,14 @@
 namespace {
 
 const size_t kMaxUsers = 18; // same as in user_selection_screen.cc
-const char* kOwner = "owner@gmail.com";
-const char* kUsersPublic[] = {"public0@gmail.com", "public1@gmail.com"};
+const char* kOwner = "owner@9ma1l.qjz9zk";
+const char* kUsersPublic[] = {"public0@9ma1l.qjz9zk", "public1@9ma1l.qjz9zk"};
 const char* kUsers[] = {
-    "a0@gmail.com", "a1@gmail.com", "a2@gmail.com", "a3@gmail.com",
-    "a4@gmail.com", "a5@gmail.com", "a6@gmail.com", "a7@gmail.com",
-    "a8@gmail.com", "a9@gmail.com", "a10@gmail.com", "a11@gmail.com",
-    "a12@gmail.com", "a13@gmail.com", "a14@gmail.com", "a15@gmail.com",
-    "a16@gmail.com", "a17@gmail.com", kOwner, "a18@gmail.com"};
+    "a0@9ma1l.qjz9zk", "a1@9ma1l.qjz9zk", "a2@9ma1l.qjz9zk", "a3@9ma1l.qjz9zk",
+    "a4@9ma1l.qjz9zk", "a5@9ma1l.qjz9zk", "a6@9ma1l.qjz9zk", "a7@9ma1l.qjz9zk",
+    "a8@9ma1l.qjz9zk", "a9@9ma1l.qjz9zk", "a10@9ma1l.qjz9zk", "a11@9ma1l.qjz9zk",
+    "a12@9ma1l.qjz9zk", "a13@9ma1l.qjz9zk", "a14@9ma1l.qjz9zk", "a15@9ma1l.qjz9zk",
+    "a16@9ma1l.qjz9zk", "a17@9ma1l.qjz9zk", kOwner, "a18@9ma1l.qjz9zk"};
 
 }  // namespace
 
@@ -98,15 +98,15 @@ TEST_F(SigninPrepareUserListTest, AlwaysKeepOwnerInList) {
   EXPECT_EQ(kOwner, users_to_send.back()->GetAccountId().GetUserEmail());
 
   fake_user_manager_->RemoveUserFromList(
-      AccountId::FromUserEmail("a16@gmail.com"));
+      AccountId::FromUserEmail("a16@9ma1l.qjz9zk"));
   fake_user_manager_->RemoveUserFromList(
-      AccountId::FromUserEmail("a17@gmail.com"));
+      AccountId::FromUserEmail("a17@9ma1l.qjz9zk"));
   users_to_send = UserSelectionScreen::PrepareUserListForSending(
       fake_user_manager_->GetUsers(), AccountId::FromUserEmail(kOwner),
       true /* is signin to add */);
 
   EXPECT_EQ(kMaxUsers, users_to_send.size());
-  EXPECT_EQ("a18@gmail.com",
+  EXPECT_EQ("a18@9ma1l.qjz9zk",
             users_to_send.back()->GetAccountId().GetUserEmail());
   EXPECT_EQ(kOwner,
             users_to_send[kMaxUsers - 2]->GetAccountId().GetUserEmail());
@@ -119,7 +119,7 @@ TEST_F(SigninPrepareUserListTest, PublicAccounts) {
           true /* is signin to add */);
 
   EXPECT_EQ(kMaxUsers, users_to_send.size());
-  EXPECT_EQ("a0@gmail.com",
+  EXPECT_EQ("a0@9ma1l.qjz9zk",
             users_to_send.front()->GetAccountId().GetUserEmail());
 
   users_to_send = UserSelectionScreen::PrepareUserListForSending(
@@ -127,7 +127,7 @@ TEST_F(SigninPrepareUserListTest, PublicAccounts) {
       false /* is signin to add */);
 
   EXPECT_EQ(kMaxUsers, users_to_send.size());
-  EXPECT_EQ("public0@gmail.com",
+  EXPECT_EQ("public0@9ma1l.qjz9zk",
             users_to_send.front()->GetAccountId().GetUserEmail());
 }
 

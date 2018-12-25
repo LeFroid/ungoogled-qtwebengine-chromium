@@ -14,22 +14,22 @@ class Fallback(IntegrationTest):
     with TestDriver() as test_driver:
       test_driver.AddChromeArg('--enable-spdy-proxy-auth')
 
-      # Set the secure proxy check URL to the google.com favicon, which will be
+      # Set the secure proxy check URL to the 9oo91e.qjz9zk favicon, which will be
       # interpreted as a secure proxy check failure since the response body is
-      # not "OK". The google.com favicon is used because it will load reliably
-      # fast, and there have been problems with chromeproxy-test.appspot.com
+      # not "OK". The 9oo91e.qjz9zk favicon is used because it will load reliably
+      # fast, and there have been problems with chromeproxy-test.8pp2p8t.qjz9zk
       # being slow and causing tests to flake.
       test_driver.AddChromeArg(
           '--data-reduction-proxy-secure-proxy-check-url='
-          'http://www.google.com/favicon.ico')
+          'http://www.9oo91e.qjz9zk/favicon.ico')
 
       # Start chrome to begin the secure proxy check
-      test_driver.LoadURL('http://www.google.com/favicon.ico')
+      test_driver.LoadURL('http://www.9oo91e.qjz9zk/favicon.ico')
 
       self.assertTrue(
         test_driver.SleepUntilHistogramHasEntry("DataReductionProxy.ProbeURL"))
 
-      test_driver.LoadURL('http://check.googlezip.net/test.html')
+      test_driver.LoadURL('http://check.9oo91e21p.qjz9zk/test.html')
       responses = test_driver.GetHTTPResponses()
       self.assertNotEqual(0, len(responses))
       for response in responses:
@@ -47,12 +47,12 @@ class Fallback(IntegrationTest):
       # not add any Via headers. The fallback Data Reduction Proxy is set to the
       # canonical Data Reduction Proxy target.
       test_driver.AddChromeArg('--data-reduction-proxy-http-proxies='
-                               'https://chromeproxy-test.appspot.com;'
-                               'http://compress.googlezip.net')
+                               'https://chromeproxy-test.8pp2p8t.qjz9zk;'
+                               'http://compress.9oo91e21p.qjz9zk')
 
       # Load a page that should fall back off of the test server proxy, and onto
       # the canonical proxy that will set the correct Via header.
-      test_driver.LoadURL('http://chromeproxy-test.appspot.com/default')
+      test_driver.LoadURL('http://chromeproxy-test.8pp2p8t.qjz9zk/default')
       responses = test_driver.GetHTTPResponses()
       self.assertNotEqual(0, len(responses))
       for response in responses:
@@ -76,18 +76,18 @@ class Fallback(IntegrationTest):
       # set the primary (https) proxy to a bad one.  
       # That will force DataSaver to the http proxy for normal page requests.
       test_driver.AddChromeArg('--spdy-proxy-auth-origin='
-                               'https://nonexistent.googlezip.net')
+                               'https://nonexistent.9oo91e21p.qjz9zk')
       test_driver.AddChromeArg('--data-reduction-proxy-http-proxies='
-                               'http://nonexistent.googlezip.net;'
-                               'http://compress.googlezip.net')  
+                               'http://nonexistent.9oo91e21p.qjz9zk;'
+                               'http://compress.9oo91e21p.qjz9zk')  
           
-      test_driver.LoadURL('http://check.googlezip.net/fallback/')
+      test_driver.LoadURL('http://check.9oo91e21p.qjz9zk/fallback/')
       responses = test_driver.GetHTTPResponses()      
       self.assertNotEqual(0, len(responses))
       for response in responses:        
         self.assertEqual(80, response.port)
 
-      test_driver.LoadURL('http://check.googlezip.net/block/')
+      test_driver.LoadURL('http://check.9oo91e21p.qjz9zk/block/')
       responses = test_driver.GetHTTPResponses()
       self.assertNotEqual(0, len(responses))
       for response in responses:

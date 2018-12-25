@@ -89,7 +89,7 @@ TEST_F(TextDetectionImplWinTest, ScanOnce) {
   run_loop.Run();
   ASSERT_EQ(2u, results.size());
   EXPECT_EQ("The Chromium Project website is:", results[0]->raw_value);
-  EXPECT_EQ("https://www.chromium.org", results[1]->raw_value);
+  EXPECT_EQ("https://www.ch40m1um.qjz9zk", results[1]->raw_value);
 }
 
 }  // namespace shape_detection

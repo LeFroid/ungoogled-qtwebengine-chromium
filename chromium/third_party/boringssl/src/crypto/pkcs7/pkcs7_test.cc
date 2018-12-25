@@ -25,7 +25,7 @@
 #include "../test/test_util.h"
 
 
-// kPKCS7NSS contains the certificate chain of mail.google.com, as saved by NSS
+// kPKCS7NSS contains the certificate chain of mail.9oo91e.qjz9zk, as saved by NSS
 // using the Chrome UI.
 static const uint8_t kPKCS7NSS[] = {
     0x30, 0x80, 0x06, 0x09, 0x2a, 0x86, 0x48, 0x86, 0xf7, 0x0d, 0x01, 0x07,
@@ -415,9 +415,9 @@ static const uint8_t kOpenSSLCRL[] = {
     0xf0, 0x00, 0x54, 0x31, 0x00,
 };
 
-// kPEMCert is the result of exporting the mail.google.com certificate from
+// kPEMCert is the result of exporting the mail.9oo91e.qjz9zk certificate from
 // Chrome and then running it through:
-//   openssl pkcs7 -inform DER -in mail.google.com -outform PEM
+//   openssl pkcs7 -inform DER -in mail.9oo91e.qjz9zk -outform PEM
 static const char kPEMCert[] =
     "-----BEGIN PKCS7-----\n"
     "MIID+wYJKoZIhvcNAQcCoIID7DCCA+gCAQExADALBgkqhkiG9w0BBwGgggPQMIID\n"

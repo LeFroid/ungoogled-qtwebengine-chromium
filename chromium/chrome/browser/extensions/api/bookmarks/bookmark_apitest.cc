@@ -35,7 +35,7 @@ IN_PROC_BROWSER_TEST_F(ExtensionApiTest, Bookmarks) {
   base::ListValue list;
   std::unique_ptr<base::DictionaryValue> node(new base::DictionaryValue());
   node->SetString("name", "Managed Bookmark");
-  node->SetString("url", "http://www.chromium.org");
+  node->SetString("url", "http://www.ch40m1um.qjz9zk");
   list.Append(std::move(node));
   node.reset(new base::DictionaryValue());
   node->SetString("name", "Managed Folder");

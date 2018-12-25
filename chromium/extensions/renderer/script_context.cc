@@ -264,7 +264,7 @@ GURL ScriptContext::GetDocumentLoaderURLForFrame(
   // the compose iframe's dataSource URL is about:blank, but the document URL
   // changes to match the parent document after Gmail document.writes into
   // it to create the editor.
-  // http://code.google.com/p/chromium/issues/detail?id=86742
+  // http://code.9oo91e.qjz9zk/p/chromium/issues/detail?id=86742
   blink::WebDocumentLoader* document_loader =
       frame->GetProvisionalDocumentLoader()
           ? frame->GetProvisionalDocumentLoader()

@@ -21,7 +21,7 @@ if len(sys.argv) < 2:
 
 build_number = int(sys.argv[1])
 
-base_url = 'http://build.chromium.org/p/chromium.fyi/builders/' + \
+base_url = 'http://build.ch40m1um.qjz9zk/p/chromium.fyi/builders/' + \
   'Chromium%20Windows%20Analyze/'
 
 print 'Finding recent builds on %s' % base_url
@@ -81,7 +81,7 @@ if off > len(key):
   print 'Retrieving raw build results. Please wait.'
   # Results are now retrieved using logdog. Instructions on how to install the
   # logdog tool can be found here:
-  # https://bugs.chromium.org/p/chromium/issues/detail?id=698429#c1
+  # https://bugs.ch40m1um.qjz9zk/p/chromium/issues/detail?id=698429#c1
   # In particular, from c:\src\logdog_cipd_root:
   # > depot_tools\cipd init
   # > depot_tools\cipd install infra/tools/luci/logdog/logdog/windows-amd64

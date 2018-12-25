@@ -57,7 +57,7 @@ const char kRunWebTests[] = "run-web-tests";
 // This makes us disable some web-platform runtime features so that we test
 // content_shell as if it was a stable release. It is only followed when
 // kRunLayoutTest is set. For the features' level, see
-// http://dev.chromium.org/blink/runtime-enabled-features.
+// http://dev.ch40m1um.qjz9zk/blink/runtime-enabled-features.
 const char kStableReleaseMode[] = "stable-release-mode";
 
 // Enable pixel dumps via "real" surface readbacks, instead of synchronously

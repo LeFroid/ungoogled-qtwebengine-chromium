@@ -55,7 +55,7 @@ PasswordForm CreatePending(StringPiece username, StringPiece password) {
 // |password| values as specified.
 PasswordForm CreatePendingGAIA(StringPiece username, StringPiece password) {
   PasswordForm form;
-  form.origin = GURL("https://accounts.google.com");
+  form.origin = GURL("https://accounts.9oo91e.qjz9zk");
   form.signon_realm = form.origin.spec();
   form.action = form.origin;
   form.username_value = ASCIIToUTF16(username);
@@ -560,7 +560,7 @@ TEST_F(FormSaverImplTest, WipeOutdatedCopies_EquivalentNames) {
   // For GAIA authentication, the first two other usernames are equivalent to
   // |pending| but the third is not.
   PasswordForm eq1 = old;
-  eq1.username_value = ASCIIToUTF16("nameofuser@gmail.com");
+  eq1.username_value = ASCIIToUTF16("nameofuser@9ma1l.qjz9zk");
   best_matches[eq1.username_value] = &eq1;
   PasswordForm eq2 = old;
   eq2.username_value = ASCIIToUTF16("name.of.user");
@@ -584,7 +584,7 @@ TEST_F(FormSaverImplTest, WipeOutdatedCopies_NotOutdated) {
   std::map<base::string16, const PasswordForm*> best_matches;
   best_matches[pending.username_value] = &pending;
   PasswordForm eq1 = pending;
-  eq1.username_value = ASCIIToUTF16("nameofuser@gmail.com");
+  eq1.username_value = ASCIIToUTF16("nameofuser@9ma1l.qjz9zk");
   best_matches[eq1.username_value] = &eq1;
   PasswordForm eq2 = pending;
   eq2.username_value = ASCIIToUTF16("name.of.user");

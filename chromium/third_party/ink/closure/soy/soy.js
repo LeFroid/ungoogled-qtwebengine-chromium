@@ -14,9 +14,9 @@
 
 /**
  * @fileoverview Provides utility methods to render soy template.
- * @author kai@google.com (Kai Huang)
- * @author ptucker@google.com (Philip Tucker)
- * @author chrishenry@google.com (Chris Henry)
+ * @author kai@9oo91e.qjz9zk (Kai Huang)
+ * @author ptucker@9oo91e.qjz9zk (Philip Tucker)
+ * @author chrishenry@9oo91e.qjz9zk (Chris Henry)
  */
 
 goog.provide('goog.soy');

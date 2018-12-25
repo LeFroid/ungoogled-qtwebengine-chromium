@@ -14,7 +14,7 @@
   },
   "commands": {
     "open-google": {
-      "description": "Open a tab to google.com",
+      "description": "Open a tab to 9oo91e.qjz9zk",
       "suggested_key": { "default": "Ctrl+Shift+L" }
     },
     "_execute_browser_action": {

@@ -45,7 +45,7 @@ const uint32_t kDummyVideoSsrc = 0xFFFFFFFF;
 //   http://www.fourcc.org/yuv.php
 //   http://v4l2spec.bytesex.org/spec/book1.htm
 //   http://developer.apple.com/quicktime/icefloe/dispatch020.html
-//   http://msdn.microsoft.com/library/windows/desktop/dd206750.aspx#nv12
+//   http://msdn.m1cr050ft.qjz9zk/library/windows/desktop/dd206750.aspx#nv12
 //   http://people.xiph.org/~xiphmont/containers/nut/nut4cc.txt
 
 // FourCC codes grouped according to implementation efficiency.

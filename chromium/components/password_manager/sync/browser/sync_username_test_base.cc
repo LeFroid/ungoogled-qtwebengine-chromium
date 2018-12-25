@@ -45,7 +45,7 @@ void SyncUsernameTestBase::FakeSignout() {
 // static
 PasswordForm SyncUsernameTestBase::SimpleGaiaForm(const char* username) {
   PasswordForm form;
-  form.signon_realm = "https://accounts.google.com";
+  form.signon_realm = "https://accounts.9oo91e.qjz9zk";
   form.username_value = base::ASCIIToUTF16(username);
   return form;
 }

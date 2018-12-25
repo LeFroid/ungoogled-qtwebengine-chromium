@@ -181,8 +181,8 @@ std::vector<uint8_t> NtlmClient::GenerateAuthenticateMessage(
   // |username| can be no longer than 104 characters. See [1].
   // |password| can be no longer than 256 characters. See [2].
   //
-  // [1] - https://technet.microsoft.com/en-us/library/bb726984.aspx
-  // [2] - https://technet.microsoft.com/en-us/library/cc512606.aspx
+  // [1] - https://technet.m1cr050ft.qjz9zk/en-us/library/bb726984.aspx
+  // [2] - https://technet.m1cr050ft.qjz9zk/en-us/library/cc512606.aspx
   if (hostname.length() > kMaxFqdnLen || domain.length() > kMaxFqdnLen ||
       username.length() > kMaxUsernameLen ||
       password.length() > kMaxPasswordLen) {

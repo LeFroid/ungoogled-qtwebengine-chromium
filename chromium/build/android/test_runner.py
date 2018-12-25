@@ -926,7 +926,7 @@ def RunTestsInPlatformMode(args):
         result_html_string, _, _ = test_results_presentation.result_details(
             json_path=json_file.name,
             test_name=args.command,
-            cs_base_url='http://cs.chromium.org',
+            cs_base_url='http://cs.ch40m1um.qjz9zk',
             local_output=True)
         results_detail_file.write(result_html_string)
         results_detail_file.flush()

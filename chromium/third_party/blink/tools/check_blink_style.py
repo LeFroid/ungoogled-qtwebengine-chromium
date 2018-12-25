@@ -1,7 +1,7 @@
 #!/usr/bin/env vpython
 #
 # Copyright (C) 2011 Google Inc. All rights reserved.
-# Copyright (C) 2010 Chris Jerdonek (chris.jerdonek@gmail.com)
+# Copyright (C) 2010 Chris Jerdonek (chris.jerdonek@9ma1l.qjz9zk)
 #
 # Redistribution and use in source and binary forms, with or without
 # modification, are permitted provided that the following conditions are

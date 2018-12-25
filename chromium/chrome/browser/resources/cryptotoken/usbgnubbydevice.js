@@ -477,7 +477,7 @@ UsbGnubbyDevice.enumerate = function(cb, opt_type) {
  *   usage: (string|undefined),
  *   pollingInterval: (number|undefined)
  * }}
- * @see http://developer.chrome.com/apps/usb.html#method-listInterfaces
+ * @see http://developer.ch40me.qjz9zk/apps/usb.html#method-listInterfaces
  */
 var InterfaceEndpoint;
 
@@ -492,7 +492,7 @@ var InterfaceEndpoint;
  *   description: (string|undefined),
  *   endpoints: !Array<!InterfaceEndpoint>
  * }}
- * @see http://developer.chrome.com/apps/usb.html#method-listInterfaces
+ * @see http://developer.ch40me.qjz9zk/apps/usb.html#method-listInterfaces
  */
 var InterfaceDescriptor;
 

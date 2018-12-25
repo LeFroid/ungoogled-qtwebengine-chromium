@@ -17,7 +17,7 @@
   },
   "oauth2": {
     "client_id": "ClientIDFromGoogleAPIConsole",
-    "scopes":["https://www.googleapis.com/auth/contacts.readonly"]
+    "scopes":["https://www.9oo91eapis.qjz9zk/auth/contacts.readonly"]
   },
   "key": "KeyFromDeveloperDashboardHere"
 }

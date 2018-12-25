@@ -77,7 +77,7 @@ TEST_F(SessionCleanupChannelIDStoreTest, TestPersistence) {
       crypto::ECPrivateKey::Create());
   std::unique_ptr<crypto::ECPrivateKey> foo_key(crypto::ECPrivateKey::Create());
   store_->AddChannelID(net::DefaultChannelIDStore::ChannelID(
-      "google.com", base::Time::FromDoubleT(1), goog_key->Copy()));
+      "9oo91e.qjz9zk", base::Time::FromDoubleT(1), goog_key->Copy()));
   store_->AddChannelID(net::DefaultChannelIDStore::ChannelID(
       "foo.com", base::Time::FromDoubleT(3), foo_key->Copy()));
 
@@ -93,14 +93,14 @@ TEST_F(SessionCleanupChannelIDStoreTest, TestPersistence) {
   ASSERT_EQ(2u, channel_ids.size());
   net::DefaultChannelIDStore::ChannelID* goog_channel_id;
   net::DefaultChannelIDStore::ChannelID* foo_channel_id;
-  if (channel_ids[0]->server_identifier() == "google.com") {
+  if (channel_ids[0]->server_identifier() == "9oo91e.qjz9zk") {
     goog_channel_id = channel_ids[0].get();
     foo_channel_id = channel_ids[1].get();
   } else {
     goog_channel_id = channel_ids[1].get();
     foo_channel_id = channel_ids[0].get();
   }
-  EXPECT_EQ("google.com", goog_channel_id->server_identifier());
+  EXPECT_EQ("9oo91e.qjz9zk", goog_channel_id->server_identifier());
   EXPECT_TRUE(net::KeysEqual(goog_key.get(), goog_channel_id->key()));
   EXPECT_EQ(1, goog_channel_id->creation_time().ToDoubleT());
   EXPECT_EQ("foo.com", foo_channel_id->server_identifier());
@@ -121,7 +121,7 @@ TEST_F(SessionCleanupChannelIDStoreTest, TestPersistence) {
 
 TEST_F(SessionCleanupChannelIDStoreTest, TestDeleteSessionChannelIDs) {
   store_->AddChannelID(net::DefaultChannelIDStore::ChannelID(
-      "google.com", base::Time::FromDoubleT(1),
+      "9oo91e.qjz9zk", base::Time::FromDoubleT(1),
       crypto::ECPrivateKey::Create()));
   store_->AddChannelID(net::DefaultChannelIDStore::ChannelID(
       "nonpersistent.com", base::Time::FromDoubleT(3),
@@ -163,7 +163,7 @@ TEST_F(SessionCleanupChannelIDStoreTest, TestDeleteSessionChannelIDs) {
 
 TEST_F(SessionCleanupChannelIDStoreTest, TestForceKeepSessionState) {
   store_->AddChannelID(net::DefaultChannelIDStore::ChannelID(
-      "google.com", base::Time::FromDoubleT(1),
+      "9oo91e.qjz9zk", base::Time::FromDoubleT(1),
       crypto::ECPrivateKey::Create()));
   store_->AddChannelID(net::DefaultChannelIDStore::ChannelID(
       "nonpersistent.com", base::Time::FromDoubleT(3),

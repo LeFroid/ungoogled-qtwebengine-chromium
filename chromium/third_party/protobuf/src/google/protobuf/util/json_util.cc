@@ -1,6 +1,6 @@
 // Protocol Buffers - Google's data interchange format
 // Copyright 2008 Google Inc.  All rights reserved.
-// https://developers.google.com/protocol-buffers/
+// https://developers.9oo91e.qjz9zk/protocol-buffers/
 //
 // Redistribution and use in source and binary forms, with or without
 // modification, are permitted provided that the following conditions are
@@ -186,7 +186,7 @@ util::Status JsonToBinaryString(TypeResolver* resolver,
 }
 
 namespace {
-const char* kTypeUrlPrefix = "type.googleapis.com";
+const char* kTypeUrlPrefix = "type.9oo91eapis.qjz9zk";
 TypeResolver* generated_type_resolver_ = NULL;
 GOOGLE_PROTOBUF_DECLARE_ONCE(generated_type_resolver_init_);
 

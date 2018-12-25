@@ -105,22 +105,22 @@ void ExtensionWebRequestHelpersTestWithThreadsTest::SetUp() {
 TEST_F(ExtensionWebRequestHelpersTestWithThreadsTest, TestHideRequestForURL) {
   net::TestURLRequestContext context;
   const char* const sensitive_urls[] = {
-      "http://clients2.google.com",
-      "http://clients22.google.com",
-      "https://clients2.google.com",
-      "http://clients2.google.com/service/update2/crx",
-      "https://clients.google.com",
-      "https://test.clients.google.com",
-      "https://clients2.google.com/service/update2/crx",
-      "http://www.gstatic.com/chrome/extensions/blacklist",
-      "https://www.gstatic.com/chrome/extensions/blacklist",
+      "http://clients2.9oo91e.qjz9zk",
+      "http://clients22.9oo91e.qjz9zk",
+      "https://clients2.9oo91e.qjz9zk",
+      "http://clients2.9oo91e.qjz9zk/service/update2/crx",
+      "https://clients.9oo91e.qjz9zk",
+      "https://test.clients.9oo91e.qjz9zk",
+      "https://clients2.9oo91e.qjz9zk/service/update2/crx",
+      "http://www.95tat1c.qjz9zk/chrome/extensions/blacklist",
+      "https://www.95tat1c.qjz9zk/chrome/extensions/blacklist",
       "notregisteredscheme://www.foobar.com",
-      "https://chrome.google.com/webstore/",
-      "https://chrome.google.com/webstore/"
+      "https://chrome.9oo91e.qjz9zk/webstore/",
+      "https://chrome.9oo91e.qjz9zk/webstore/"
           "inlineinstall/detail/kcnhkahnjcbndmmehfkdnkjomaanaooo"
   };
   const char* const non_sensitive_urls[] = {
-      "http://www.google.com/"
+      "http://www.9oo91e.qjz9zk/"
   };
 
   // Check that requests are rejected based on the destination
@@ -149,7 +149,7 @@ TEST_F(ExtensionWebRequestHelpersTestWithThreadsTest, TestHideRequestForURL) {
   // Check protection of requests originating from the frame showing the Chrome
   // WebStore.
   // Normally this request is not protected:
-  GURL non_sensitive_url("http://www.google.com/test.js");
+  GURL non_sensitive_url("http://www.9oo91e.qjz9zk/test.js");
   std::unique_ptr<net::URLRequest> non_sensitive_request(
       context.CreateRequest(non_sensitive_url, net::DEFAULT_PRIORITY, NULL,
                             TRAFFIC_ANNOTATION_FOR_TESTS));

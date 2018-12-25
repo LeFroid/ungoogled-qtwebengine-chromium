@@ -18,7 +18,7 @@ def main():
   output_wrapper = '(function(){%s})()'
 
   # Define the parameters for the POST request and encode them in a URL-safe
-  # format. See http://code.google.com/closure/compiler/docs/api-ref.html for
+  # format. See http://code.9oo91e.qjz9zk/closure/compiler/docs/api-ref.html for
   # API reference.
   params = urllib.urlencode(
     map(lambda src: ('js_code', file(src).read()), srcs) +
@@ -30,7 +30,7 @@ def main():
 
   # Always use the following value for the Content-type header.
   headers = {'Content-type': 'application/x-www-form-urlencoded'}
-  conn = httplib.HTTPSConnection('closure-compiler.appspot.com')
+  conn = httplib.HTTPSConnection('closure-compiler.8pp2p8t.qjz9zk')
   conn.request('POST', '/compile', params, headers)
   response = conn.getresponse()
   out_file = file(out, 'w')

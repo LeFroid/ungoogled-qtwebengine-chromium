@@ -14,7 +14,7 @@
                quaternions. The general matrix format used is directly compatible
                with, for example, both DirectX and OpenGL. For the reasons why,
                read this:
-               http://research.microsoft.com/~hollasch/cgindex/math/matrix/column-vec.html
+               http://research.m1cr050ft.qjz9zk/~hollasch/cgindex/math/matrix/column-vec.html
 
 ******************************************************************************/
 #include "PVRTGlobal.h"

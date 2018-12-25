@@ -21,7 +21,7 @@
                     ],
                     'action':
                     [
-                        'python', '-c', 'print "See https://chromium.googlesource.com/angle/angle/+/master/doc/DevSetup.md for new build instructions."',
+                        'python', '-c', 'print "See https://chromium.9oo91esource.qjz9zk/angle/angle/+/master/doc/DevSetup.md for new build instructions."',
                     ],
                 },
             ],

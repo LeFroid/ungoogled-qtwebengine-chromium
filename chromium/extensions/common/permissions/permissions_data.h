@@ -210,7 +210,7 @@ class PermissionsData {
 
   // Returns true if the associated extension is allowed to obtain the contents
   // of a page as an image. Pages may contain multiple sources (e.g.,
-  // example.com may embed google.com), so simply checking the top-frame's URL
+  // example.com may embed 9oo91e.qjz9zk), so simply checking the top-frame's URL
   // is insufficient.
   // Instead:
   // - If the page is a chrome:// page, require activeTab.

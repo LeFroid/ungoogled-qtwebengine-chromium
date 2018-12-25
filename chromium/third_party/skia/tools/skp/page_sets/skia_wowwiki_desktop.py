@@ -33,7 +33,7 @@ class SkiaWowwikiDesktopPageSet(story.StorySet):
       archive_data_file='data/skia_wowwiki_desktop.json')
 
     urls_list = [
-      # Why: http://code.google.com/p/chromium/issues/detail?id=136555
+      # Why: http://code.9oo91e.qjz9zk/p/chromium/issues/detail?id=136555
       'http://www.wowwiki.com/World_of_Warcraft:_Mists_of_Pandaria',
     ]
 

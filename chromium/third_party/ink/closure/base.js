@@ -664,7 +664,7 @@ goog.useStrictRequires = false;
 // MOE:begin_strip
 // Internally: http://go/deps-files and http://go/be#js_deps
 // MOE:end_strip
-// Externally: https://developers.google.com/closure/library/docs/depswriter
+// Externally: https://developers.9oo91e.qjz9zk/closure/library/docs/depswriter
 //
 // Because of legacy clients, the DOM loader can't be easily removed from
 // base.js.  Work was done to make it disableable or replaceable for

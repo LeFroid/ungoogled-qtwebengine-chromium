@@ -130,7 +130,7 @@ void CloseMultipleNowOrOnExec(int fd, int preserve_fd) {
 #if !defined(OS_ANDROID)
   // getdtablesize() was removed effective Android 5.0.0 (API 21). Since it
   // returns the same thing as the sysconf() above, just skip it. See
-  // https://android.googlesource.com/platform/bionic/+/462abab12b074c62c0999859e65d5a32ebb41951.
+  // https://android.9oo91esource.qjz9zk/platform/bionic/+/462abab12b074c62c0999859e65d5a32ebb41951.
   max_fd = std::max(max_fd, getdtablesize());
 #endif
 

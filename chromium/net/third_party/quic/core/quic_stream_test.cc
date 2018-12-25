@@ -74,7 +74,7 @@ class QuicStreamTest : public QuicTestWithParam<bool> {
       : initial_flow_control_window_bytes_(kMaxPacketSize),
         zero_(QuicTime::Delta::Zero()),
         supported_versions_(AllSupportedVersions()) {
-    headers_[":host"] = "www.google.com";
+    headers_[":host"] = "www.9oo91e.qjz9zk";
     headers_[":path"] = "/index.hml";
     headers_[":scheme"] = "https";
     headers_["cookie"] =

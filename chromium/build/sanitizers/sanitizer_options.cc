@@ -33,7 +33,7 @@ void _sanitizer_options_link_helper() { }
 //   malloc_context_size=5 - limit the size of stack traces collected by ASan
 //     for each malloc/free by 5 frames. These stack traces tend to accumulate
 //     very fast in applications using JIT (v8 in Chrome's case), see
-//     https://code.google.com/p/address-sanitizer/issues/detail?id=177
+//     https://code.9oo91e.qjz9zk/p/address-sanitizer/issues/detail?id=177
 //   symbolize=1 - enable in-process symbolization.
 //   legacy_pthread_cond=1 - run in the libpthread 2.2.5 compatibility mode to
 //     work around libGL.so using the obsolete API, see

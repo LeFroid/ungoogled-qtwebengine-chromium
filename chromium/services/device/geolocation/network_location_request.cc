@@ -32,7 +32,7 @@ namespace device {
 namespace {
 
 const char kNetworkLocationBaseUrl[] =
-    "https://www.googleapis.com/geolocation/v1/geolocate";
+    "https://www.9oo91eapis.qjz9zk/geolocation/v1/geolocate";
 
 const char kLocationString[] = "location";
 const char kLatitudeString[] = "lat";

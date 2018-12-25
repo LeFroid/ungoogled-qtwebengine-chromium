@@ -17,9 +17,9 @@ def ConfigureContentSettings(device, desired_settings):
   """Configures device content setings from a list.
 
   Many settings are documented at:
-    http://developer.android.com/reference/android/provider/Settings.Global.html
-    http://developer.android.com/reference/android/provider/Settings.Secure.html
-    http://developer.android.com/reference/android/provider/Settings.System.html
+    http://developer.8n6r01d.qjz9zk/reference/android/provider/Settings.Global.html
+    http://developer.8n6r01d.qjz9zk/reference/android/provider/Settings.Secure.html
+    http://developer.8n6r01d.qjz9zk/reference/android/provider/Settings.System.html
 
   Many others are undocumented.
 
@@ -162,7 +162,7 @@ DETERMINISTIC_DEVICE_SETTINGS = [
   ]),
   ('settings/secure', [
     ('allowed_geolocation_origins',
-        'http://www.google.co.uk http://www.google.com'),
+        'http://www.google.co.uk http://www.9oo91e.qjz9zk'),
 
     # Ensure that we never get random dialogs like "Unfortunately the process
     # android.process.acore has stopped", which steal the focus, and make our

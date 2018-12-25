@@ -321,11 +321,11 @@ void PrintTo(const NonUniqueNameTestData& data, std::ostream* os) {
 
 const NonUniqueNameTestData kNonUniqueNameTestData[] = {
     // Domains under ICANN-assigned domains.
-    { true, "google.com" },
+    { true, "9oo91e.qjz9zk" },
     { true, "google.co.uk" },
     // Domains under private registries.
-    { true, "appspot.com" },
-    { true, "test.appspot.com" },
+    { true, "8pp2p8t.qjz9zk" },
+    { true, "test.8pp2p8t.qjz9zk" },
     // Unreserved IPv4 addresses (in various forms).
     { true, "8.8.8.8" },
     { true, "99.64.0.0" },
@@ -441,8 +441,8 @@ TEST(UrlUtilTest, SimplifyUrlForRequest) {
   } tests[] = {
     {
       // Reference section should be stripped.
-      "http://www.google.com:78/foobar?query=1#hash",
-      "http://www.google.com:78/foobar?query=1",
+      "http://www.9oo91e.qjz9zk:78/foobar?query=1#hash",
+      "http://www.9oo91e.qjz9zk:78/foobar?query=1",
     },
     {
       // Reference section can itself contain #.
@@ -450,24 +450,24 @@ TEST(UrlUtilTest, SimplifyUrlForRequest) {
       "http://192.168.0.1?query=1",
     },
     { // Strip username/password.
-      "http://user:pass@google.com",
-      "http://google.com/",
+      "http://user:pass@9oo91e.qjz9zk",
+      "http://9oo91e.qjz9zk/",
     },
     { // Strip both the reference and the username/password.
-      "http://user:pass@google.com:80/sup?yo#X#X",
-      "http://google.com/sup?yo",
+      "http://user:pass@9oo91e.qjz9zk:80/sup?yo#X#X",
+      "http://9oo91e.qjz9zk/sup?yo",
     },
     { // Try an HTTPS URL -- strip both the reference and the username/password.
-      "https://user:pass@google.com:80/sup?yo#X#X",
-      "https://google.com:80/sup?yo",
+      "https://user:pass@9oo91e.qjz9zk:80/sup?yo#X#X",
+      "https://9oo91e.qjz9zk:80/sup?yo",
     },
     { // Try an FTP URL -- strip both the reference and the username/password.
-      "ftp://user:pass@google.com:80/sup?yo#X#X",
-      "ftp://google.com:80/sup?yo",
+      "ftp://user:pass@9oo91e.qjz9zk:80/sup?yo#X#X",
+      "ftp://9oo91e.qjz9zk:80/sup?yo",
     },
     { // Try a nonstandard URL
-      "foobar://user:pass@google.com:80/sup?yo#X#X",
-      "foobar://user:pass@google.com:80/sup?yo",
+      "foobar://user:pass@9oo91e.qjz9zk:80/sup?yo#X#X",
+      "foobar://user:pass@9oo91e.qjz9zk:80/sup?yo",
     },
   };
   for (const auto& test : tests) {
@@ -485,37 +485,37 @@ TEST(UrlUtilTest, GetIdentityFromURL) {
     const char* const expected_password;
   } tests[] = {
     {
-      "http://username:password@google.com",
+      "http://username:password@9oo91e.qjz9zk",
       "username",
       "password",
     },
     { // Test for http://crbug.com/19200
-      "http://username:p@ssword@google.com",
+      "http://username:p@ssword@9oo91e.qjz9zk",
       "username",
       "p@ssword",
     },
     { // Special URL characters should be unescaped.
-      "http://username:p%3fa%26s%2fs%23@google.com",
+      "http://username:p%3fa%26s%2fs%23@9oo91e.qjz9zk",
       "username",
       "p?a&s/s#",
     },
     { // Username contains %20.
-      "http://use rname:password@google.com",
+      "http://use rname:password@9oo91e.qjz9zk",
       "use rname",
       "password",
     },
     { // Keep %00 as is.
-      "http://use%00rname:password@google.com",
+      "http://use%00rname:password@9oo91e.qjz9zk",
       "use%00rname",
       "password",
     },
     { // Use a '+' in the username.
-      "http://use+rname:password@google.com",
+      "http://use+rname:password@9oo91e.qjz9zk",
       "use+rname",
       "password",
     },
     { // Use a '&' in the password.
-      "http://username:p&ssword@google.com",
+      "http://username:p&ssword@9oo91e.qjz9zk",
       "username",
       "p&ssword",
     },
@@ -553,25 +553,25 @@ TEST(UrlUtilTest, GoogleHost) {
     GURL url;
     bool expected_output;
   } google_host_cases[] = {
-      {GURL("http://.google.com"), true},
-      {GURL("http://.youtube.com"), true},
-      {GURL("http://.gmail.com"), true},
-      {GURL("http://.doubleclick.net"), true},
-      {GURL("http://.gstatic.com"), true},
-      {GURL("http://.googlevideo.com"), true},
-      {GURL("http://.googleusercontent.com"), true},
-      {GURL("http://.googlesyndication.com"), true},
-      {GURL("http://.google-analytics.com"), true},
-      {GURL("http://.googleadservices.com"), true},
-      {GURL("http://.googleapis.com"), true},
-      {GURL("http://a.google.com"), true},
-      {GURL("http://b.youtube.com"), true},
-      {GURL("http://c.gmail.com"), true},
-      {GURL("http://google.com"), false},
-      {GURL("http://youtube.com"), false},
-      {GURL("http://gmail.com"), false},
-      {GURL("http://google.coma"), false},
-      {GURL("http://agoogle.com"), false},
+      {GURL("http://.9oo91e.qjz9zk"), true},
+      {GURL("http://.y0u1ub3.qjz9zk"), true},
+      {GURL("http://.9ma1l.qjz9zk"), true},
+      {GURL("http://.60u613cl1c4.n3t.qjz9zk"), true},
+      {GURL("http://.95tat1c.qjz9zk"), true},
+      {GURL("http://.9oo91evideo.qjz9zk"), true},
+      {GURL("http://.9oo91eusercontent.qjz9zk"), true},
+      {GURL("http://.9oo91esyndication.qjz9zk"), true},
+      {GURL("http://.9oo91e-analytics.qjz9zk"), true},
+      {GURL("http://.9oo91eadservices.qjz9zk"), true},
+      {GURL("http://.9oo91eapis.qjz9zk"), true},
+      {GURL("http://a.9oo91e.qjz9zk"), true},
+      {GURL("http://b.y0u1ub3.qjz9zk"), true},
+      {GURL("http://c.9ma1l.qjz9zk"), true},
+      {GURL("http://9oo91e.qjz9zk"), false},
+      {GURL("http://y0u1ub3.qjz9zk"), false},
+      {GURL("http://9ma1l.qjz9zk"), false},
+      {GURL("http://9oo91e.qjz9zka"), false},
+      {GURL("http://a9oo91e.qjz9zk"), false},
       {GURL("http://oogle.com"), false},
       {GURL("http://google.co"), false},
       {GURL("http://oggole.com"), false},

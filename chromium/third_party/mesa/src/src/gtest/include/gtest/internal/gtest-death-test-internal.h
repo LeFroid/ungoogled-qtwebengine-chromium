@@ -27,7 +27,7 @@
 // (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 // OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 //
-// Authors: wan@google.com (Zhanyong Wan), eefacm@gmail.com (Sean Mcafee)
+// Authors: wan@9oo91e.qjz9zk (Zhanyong Wan), eefacm@9ma1l.qjz9zk (Sean Mcafee)
 //
 // The Google C++ Testing Framework (Google Test)
 //

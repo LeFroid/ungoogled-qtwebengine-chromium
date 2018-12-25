@@ -46,7 +46,7 @@ def DownloadFilesFromGoogleStorage(path, auto_platform=True):
 
 
 # Code partially copied from
-# https://cs.chromium.org#chromium/build/scripts/common/chromium_utils.py
+# https://cs.ch40m1um.qjz9zk#chromium/build/scripts/common/chromium_utils.py
 def RemoveDirectory(*path):
   """Recursively removes a directory, even if it's marked read-only.
 

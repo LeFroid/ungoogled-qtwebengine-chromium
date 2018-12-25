@@ -865,7 +865,7 @@ void TargetMIPS32::translateO2() {
   TimerMarker T(TimerStack::TT_O2, Func);
 
   // TODO(stichnot): share passes with X86?
-  // https://code.google.com/p/nativeclient/issues/detail?id=4094
+  // https://code.9oo91e.qjz9zk/p/nativeclient/issues/detail?id=4094
   genTargetHelperCalls();
 
   unsetIfNonLeafFunc();

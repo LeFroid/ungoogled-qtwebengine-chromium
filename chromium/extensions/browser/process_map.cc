@@ -20,7 +20,7 @@ struct ProcessMap::Item {
   }
 
   // Purposely implicit constructor needed on older gcc's. See:
-  // http://codereview.chromium.org/8769022/
+  // http://codereview.ch40m1um.qjz9zk/8769022/
   explicit Item(const ProcessMap::Item& other)
       : extension_id(other.extension_id),
         process_id(other.process_id),

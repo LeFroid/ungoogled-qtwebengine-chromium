@@ -40,8 +40,8 @@
    "diagnostics",
    "metricsPrivate",
    "networkingPrivate",
-   "http://*.google.com/*",
-   "https://*.google.com/*"
+   "http://*.9oo91e.qjz9zk/*",
+   "https://*.9oo91e.qjz9zk/*"
   ],
   "app": {
     "background": {

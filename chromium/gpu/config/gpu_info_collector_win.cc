@@ -128,7 +128,7 @@ bool CollectDriverInfoD3D(const std::wstring& device_id, GPUInfo* gpu_info) {
   TRACE_EVENT0("gpu", "CollectDriverInfoD3D");
 
   // Display adapter class GUID from
-  // https://msdn.microsoft.com/en-us/library/windows/hardware/ff553426%28v=vs.85%29.aspx
+  // https://msdn.m1cr050ft.qjz9zk/en-us/library/windows/hardware/ff553426%28v=vs.85%29.aspx
   GUID display_class = {0x4d36e968,
                         0xe325,
                         0x11ce,

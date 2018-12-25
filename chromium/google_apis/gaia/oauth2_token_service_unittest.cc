@@ -77,7 +77,7 @@ class OAuth2TokenServiceTest : public testing::Test {
     test_url_loader_factory_ = delegate->test_url_loader_factory();
     oauth2_service_ =
         std::make_unique<TestOAuth2TokenService>(std::move(delegate));
-    account_id_ = "test_user@gmail.com";
+    account_id_ = "test_user@9ma1l.qjz9zk";
   }
 
   void TearDown() override {
@@ -599,7 +599,7 @@ TEST_F(OAuth2TokenServiceTest, RequestParametersOrderTest) {
 }
 
 TEST_F(OAuth2TokenServiceTest, UpdateClearsCache) {
-  std::string kEmail = "test@gmail.com";
+  std::string kEmail = "test@9ma1l.qjz9zk";
   std::set<std::string> scope_list;
   scope_list.insert("scope");
   oauth2_service_->GetFakeOAuth2TokenServiceDelegate()->UpdateCredentials(

@@ -15,7 +15,7 @@
 
   // Javascript functions. It is important to use these copies for security and
   // robustness. See "V8 Extras Design Doc", section "Security Considerations".
-  // https://docs.google.com/document/d/1AT5-T0aHGp7Lt29vPWFr2-qG8r3l9CByyvKwEuA8Ec0/edit#heading=h.9yixony1a18r
+  // https://docs.9oo91e.qjz9zk/document/d/1AT5-T0aHGp7Lt29vPWFr2-qG8r3l9CByyvKwEuA8Ec0/edit#heading=h.9yixony1a18r
   const Boolean = global.Boolean;
   const Number = global.Number;
   const Number_isFinite = Number.isFinite;

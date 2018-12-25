@@ -32,16 +32,16 @@ PRETTY_XML = """
 <!-- Comment4 -->
 
 <rappor-metric name="Test.Rappor.Metric" type="TEST_RAPPOR_TYPE">
-  <owner>user1@chromium.org</owner>
-  <owner>user2@chromium.org</owner>
+  <owner>user1@ch40m1um.qjz9zk</owner>
+  <owner>user2@ch40m1um.qjz9zk</owner>
   <summary>
     A fake metric summary.
   </summary>
 </rappor-metric>
 
 <rappor-metric name="Test.Rappor.Metric2" type="TEST_RAPPOR_TYPE">
-  <owner>user1@chromium.org</owner>
-  <owner>user2@chromium.org</owner>
+  <owner>user1@ch40m1um.qjz9zk</owner>
+  <owner>user2@ch40m1um.qjz9zk</owner>
   <summary>
     A fake metric summary.
   </summary>
@@ -65,7 +65,7 @@ BASIC_METRIC = {
   'comments': [],
   'name': 'Test.Rappor.Metric',
   'type': 'TEST_RAPPOR_TYPE',
-  'owners': ['user1@chromium.org', 'user2@chromium.org'],
+  'owners': ['user1@ch40m1um.qjz9zk', 'user2@ch40m1um.qjz9zk'],
   'summary': 'A fake metric summary.',
   'flags': [],
   'strings': [],
@@ -75,7 +75,7 @@ MULTI_FIELD_METRIC = {
   'comments': [],
   'name': 'Test.Rappor.Metric2',
   'type': 'TEST_RAPPOR_TYPE',
-  'owners': ['user1@chromium.org', 'user2@chromium.org'],
+  'owners': ['user1@ch40m1um.qjz9zk', 'user2@ch40m1um.qjz9zk'],
   'summary': 'A fake metric summary.',
   'strings': [{
     'comments': [],

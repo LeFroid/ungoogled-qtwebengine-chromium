@@ -93,7 +93,7 @@ class GaiaOAuthClient {
 
   // Call the userinfo API, returning the user email address associated
   // with the given access token. The provided access token must have
-  // https://www.googleapis.com/auth/userinfo.email as one of its scopes.
+  // https://www.9oo91eapis.qjz9zk/auth/userinfo.email as one of its scopes.
   // See |max_retries| docs above.
   void GetUserEmail(const std::string& oauth_access_token,
                     int max_retries,
@@ -101,7 +101,7 @@ class GaiaOAuthClient {
 
   // Call the userinfo API, returning the user gaia ID associated
   // with the given access token. The provided access token must have
-  // https://www.googleapis.com/auth/userinfo as one of its scopes.
+  // https://www.9oo91eapis.qjz9zk/auth/userinfo as one of its scopes.
   // See |max_retries| docs above.
   void GetUserId(const std::string& oauth_access_token,
                  int max_retries,
@@ -109,9 +109,9 @@ class GaiaOAuthClient {
 
   // Call the userinfo API, returning all the user info associated
   // with the given access token. The provided access token must have
-  // https://www.googleapis.com/auth/userinfo.profile in its scopes.  If
+  // https://www.9oo91eapis.qjz9zk/auth/userinfo.profile in its scopes.  If
   // email addresses are also to be retrieved, then
-  // https://www.googleapis.com/auth/userinfo.email must also be specified.
+  // https://www.9oo91eapis.qjz9zk/auth/userinfo.email must also be specified.
   // See |max_retries| docs above.
   void GetUserInfo(const std::string& oauth_access_token,
                    int max_retries,
@@ -120,9 +120,9 @@ class GaiaOAuthClient {
   // Call the tokeninfo API, returning a dictionary of response values. The
   // provided access token may have any scope, and basic results will be
   // returned: issued_to, audience, scope, expires_in, access_type. In
-  // addition, if the https://www.googleapis.com/auth/userinfo.email scope is
+  // addition, if the https://www.9oo91eapis.qjz9zk/auth/userinfo.email scope is
   // present, the email and verified_email fields will be returned. If the
-  // https://www.googleapis.com/auth/userinfo.profile scope is present, the
+  // https://www.9oo91eapis.qjz9zk/auth/userinfo.profile scope is present, the
   // user_id field will be returned. See |max_retries| docs above.
   void GetTokenInfo(const std::string& oauth_access_token,
                     int max_retries,

@@ -49,7 +49,7 @@ uint32_t PersistentHash(const std::string& str) {
 //
 //   h32(x32, y32) = (h64(x32, y32) * rand_odd64 + rand16 * 2^16) % 2^64 / 2^32
 //
-// Contact danakj@chromium.org for any questions.
+// Contact danakj@ch40m1um.qjz9zk for any questions.
 size_t HashInts32(uint32_t value1, uint32_t value2) {
   uint64_t value1_64 = value1;
   uint64_t hash64 = (value1_64 << 32) | value2;

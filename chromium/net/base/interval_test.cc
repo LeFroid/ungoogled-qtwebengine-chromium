@@ -6,7 +6,7 @@
 //
 // Unittest for the Interval class.
 //
-// Author: Will Neveitt (wneveitt@google.com)
+// Author: Will Neveitt (wneveitt@9oo91e.qjz9zk)
 // ----------------------------------------------------------------------
 
 #include "net/base/interval.h"

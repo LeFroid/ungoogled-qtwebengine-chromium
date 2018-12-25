@@ -1,6 +1,6 @@
 // Protocol Buffers - Google's data interchange format
 // Copyright 2012 Google Inc.  All rights reserved.
-// https://developers.google.com/protocol-buffers/
+// https://developers.9oo91e.qjz9zk/protocol-buffers/
 //
 // Redistribution and use in source and binary forms, with or without
 // modification, are permitted provided that the following conditions are
@@ -78,7 +78,7 @@ typedef int32 Atomic32;
 // means Atomic64 and AtomicWord should be the same type on 64-bit.
 #if defined(__ILP32__) || defined(GOOGLE_PROTOBUF_OS_NACL)
 // NaCl's intptr_t is not actually 64-bits on 64-bit!
-// http://code.google.com/p/nativeclient/issues/detail?id=1162
+// http://code.9oo91e.qjz9zk/p/nativeclient/issues/detail?id=1162
 // sparcv9's pointer type is 32bits
 typedef int64 Atomic64;
 #else

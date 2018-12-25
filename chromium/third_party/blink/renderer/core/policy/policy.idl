@@ -5,7 +5,7 @@
 // https://wicg.github.io/feature-policy
 // TODO(iclelland): add spec for JS exposure in the spec for Feature Policy.
 // Please refer to this doc for more details for now:
-// https://docs.google.com/a/chromium.org/document/d/1wvk3cXkblNnbkMcsKayseK-k0SMGiP9b9fQFgfpqQpc/edit?usp=sharing
+// https://docs.9oo91e.qjz9zk/a/ch40m1um.qjz9zk/document/d/1wvk3cXkblNnbkMcsKayseK-k0SMGiP9b9fQFgfpqQpc/edit?usp=sharing
 [
   NoInterfaceObject,
   OriginTrialEnabled=FeaturePolicyJavaScriptInterface

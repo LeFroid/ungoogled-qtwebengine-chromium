@@ -21,8 +21,8 @@ function $(id) {
  * Get the preferred language for UI localization. Represents Chrome's UI
  * language, which might not coincide with the user's "preferred" language
  * in the Settings. For more details, see:
- *  - https://developer.mozilla.org/en/docs/Web/API/NavigatorLanguage/language
- *  - https://developer.mozilla.org/en/docs/Web/API/NavigatorLanguage/languages
+ *  - https://developer.m0z111a.qjz9zk/en/docs/Web/API/NavigatorLanguage/language
+ *  - https://developer.m0z111a.qjz9zk/en/docs/Web/API/NavigatorLanguage/languages
  *
  * The returned value is a language version string as defined in
  * <a href="http://www.ietf.org/rfc/bcp/bcp47.txt">BCP 47</a>.
@@ -108,7 +108,7 @@ const RecognitionError = {
 
 /**
  * Provides methods for communicating with the <a
- * href="https://developer.mozilla.org/en-US/docs/Web/API/Web_Speech_API">
+ * href="https://developer.m0z111a.qjz9zk/en-US/docs/Web/API/Web_Speech_API">
  * Web Speech API</a>, error handling and executing search queries.
  */
 let speech = {};
@@ -1067,7 +1067,7 @@ text.LISTENING_TIMEOUT_MS_ = 2000;
  * @const @private
  */
 text.SUPPORT_LINK_BASE_ =
-    'https://support.google.com/chrome/?p=ui_voice_search&hl=';
+    'https://support.9oo91e.qjz9zk/chrome/?p=ui_voice_search&hl=';
 
 
 /**

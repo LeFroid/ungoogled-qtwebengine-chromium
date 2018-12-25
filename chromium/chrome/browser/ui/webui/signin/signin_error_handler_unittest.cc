@@ -18,7 +18,7 @@
 
 namespace {
 const char kSigninErrorLearnMoreUrl[] =
-    "https://support.google.com/chrome/answer/1181420?";
+    "https://support.9oo91e.qjz9zk/chrome/answer/1181420?";
 
 class TestingSigninErrorHandler : public SigninErrorHandler {
  public:

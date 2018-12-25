@@ -104,7 +104,7 @@ int ScriptRegexp::Match(const String& string,
   // being subgroups. The Array also has some random properties tacked on like
   // "index" which is the offset of the match.
   //
-  // https://developer.mozilla.org/en-US/docs/JavaScript/Reference/Global_Objects/RegExp/exec
+  // https://developer.m0z111a.qjz9zk/en-US/docs/JavaScript/Reference/Global_Objects/RegExp/exec
 
   DCHECK(!return_value.IsEmpty());
   if (!return_value->IsArray())

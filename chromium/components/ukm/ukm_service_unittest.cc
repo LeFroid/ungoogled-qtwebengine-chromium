@@ -210,7 +210,7 @@ TEST_F(UkmServiceTest, PersistAndPurge) {
   service.EnableReporting();
 
   SourceId id = GetWhitelistedSourceId(0);
-  recorder.UpdateSourceURL(id, GURL("https://google.com/foobar"));
+  recorder.UpdateSourceURL(id, GURL("https://9oo91e.qjz9zk/foobar"));
   // Should init, generate a log, and start an upload for source.
   task_runner_->RunPendingTasks();
   EXPECT_TRUE(client_.uploader()->is_uploading());
@@ -234,7 +234,7 @@ TEST_F(UkmServiceTest, Purge) {
 
   // Record some data
   auto id = GetWhitelistedSourceId(0);
-  recorder.UpdateSourceURL(id, GURL("https://google.com/foobar1"));
+  recorder.UpdateSourceURL(id, GURL("https://9oo91e.qjz9zk/foobar1"));
   TestEvent1(id).Record(&service);
 
   // Purge should delete data, so there shouldn't be anything left to upload.
@@ -254,9 +254,9 @@ TEST_F(UkmServiceTest, SourceSerialization) {
   service.EnableReporting();
 
   ukm::SourceId id = GetWhitelistedSourceId(0);
-  recorder.UpdateSourceURL(id, GURL("https://google.com/initial"));
-  recorder.UpdateSourceURL(id, GURL("https://google.com/intermediate"));
-  recorder.UpdateSourceURL(id, GURL("https://google.com/foobar"));
+  recorder.UpdateSourceURL(id, GURL("https://9oo91e.qjz9zk/initial"));
+  recorder.UpdateSourceURL(id, GURL("https://9oo91e.qjz9zk/intermediate"));
+  recorder.UpdateSourceURL(id, GURL("https://9oo91e.qjz9zk/foobar"));
 
   service.Flush();
   EXPECT_EQ(GetPersistedLogCount(), 1);
@@ -267,7 +267,7 @@ TEST_F(UkmServiceTest, SourceSerialization) {
   const Source& proto_source = proto_report.sources(0);
 
   EXPECT_EQ(id, proto_source.id());
-  EXPECT_EQ(GURL("https://google.com/foobar").spec(), proto_source.url());
+  EXPECT_EQ(GURL("https://9oo91e.qjz9zk/foobar").spec(), proto_source.url());
   EXPECT_FALSE(proto_source.has_initial_url());
 }
 
@@ -286,7 +286,7 @@ TEST_F(UkmServiceTest, AddEntryWithEmptyMetrics) {
   service.EnableReporting();
 
   ukm::SourceId id = GetWhitelistedSourceId(0);
-  recorder.UpdateSourceURL(id, GURL("https://google.com/foobar"));
+  recorder.UpdateSourceURL(id, GURL("https://9oo91e.qjz9zk/foobar"));
 
   TestEvent1(id).Record(&service);
   service.Flush();
@@ -318,7 +318,7 @@ TEST_F(UkmServiceTest, MetricsProviderTest) {
   service.EnableReporting();
 
   ukm::SourceId id = GetWhitelistedSourceId(0);
-  recorder.UpdateSourceURL(id, GURL("https://google.com/foobar"));
+  recorder.UpdateSourceURL(id, GURL("https://9oo91e.qjz9zk/foobar"));
   TestEvent1(id).Record(&service);
   service.Flush();
   EXPECT_EQ(GetPersistedLogCount(), 1);
@@ -345,13 +345,13 @@ TEST_F(UkmServiceTest, LogsRotation) {
 
   // Log rotation should generate a log.
   const ukm::SourceId id = GetWhitelistedSourceId(0);
-  recorder.UpdateSourceURL(id, GURL("https://google.com/foobar"));
+  recorder.UpdateSourceURL(id, GURL("https://9oo91e.qjz9zk/foobar"));
   task_runner_->RunPendingTasks();
   EXPECT_EQ(1, service.report_count());
   EXPECT_TRUE(client_.uploader()->is_uploading());
 
   // Rotation shouldn't generate a log due to one being pending.
-  recorder.UpdateSourceURL(id, GURL("https://google.com/foobar"));
+  recorder.UpdateSourceURL(id, GURL("https://9oo91e.qjz9zk/foobar"));
   task_runner_->RunPendingTasks();
   EXPECT_EQ(1, service.report_count());
   EXPECT_TRUE(client_.uploader()->is_uploading());
@@ -366,7 +366,7 @@ TEST_F(UkmServiceTest, LogsRotation) {
   for (int i = 3; i < 6; i++) {
     task_runner_->RunPendingTasks();
     client_.uploader()->CompleteUpload(200);
-    recorder.UpdateSourceURL(id, GURL("https://google.com/foobar"));
+    recorder.UpdateSourceURL(id, GURL("https://9oo91e.qjz9zk/foobar"));
     task_runner_->RunPendingTasks();
     EXPECT_EQ(i, service.report_count());
   }
@@ -394,7 +394,7 @@ TEST_F(UkmServiceTest, LogsUploadedOnlyWhenHavingSourcesOrEntries) {
   EXPECT_EQ(GetPersistedLogCount(), 0);
 
   ukm::SourceId id = GetWhitelistedSourceId(0);
-  recorder.UpdateSourceURL(id, GURL("https://google.com/foobar"));
+  recorder.UpdateSourceURL(id, GURL("https://9oo91e.qjz9zk/foobar"));
   // Includes a Source, so will persist.
   service.Flush();
   EXPECT_EQ(GetPersistedLogCount(), 1);
@@ -404,7 +404,7 @@ TEST_F(UkmServiceTest, LogsUploadedOnlyWhenHavingSourcesOrEntries) {
   service.Flush();
   EXPECT_EQ(GetPersistedLogCount(), 2);
 
-  recorder.UpdateSourceURL(id, GURL("https://google.com/foobar"));
+  recorder.UpdateSourceURL(id, GURL("https://9oo91e.qjz9zk/foobar"));
   TestEvent1(id).Record(&service);
   // Includes a Source and an Entry, so will persist.
   service.Flush();
@@ -442,9 +442,9 @@ TEST_F(UkmServiceTest, RecordInitialUrl) {
     service.EnableReporting();
 
     ukm::SourceId id = GetWhitelistedSourceId(0);
-    recorder.UpdateSourceURL(id, GURL("https://google.com/initial"));
-    recorder.UpdateSourceURL(id, GURL("https://google.com/intermediate"));
-    recorder.UpdateSourceURL(id, GURL("https://google.com/foobar"));
+    recorder.UpdateSourceURL(id, GURL("https://9oo91e.qjz9zk/initial"));
+    recorder.UpdateSourceURL(id, GURL("https://9oo91e.qjz9zk/intermediate"));
+    recorder.UpdateSourceURL(id, GURL("https://9oo91e.qjz9zk/foobar"));
 
     service.Flush();
     EXPECT_EQ(GetPersistedLogCount(), 1);
@@ -454,10 +454,10 @@ TEST_F(UkmServiceTest, RecordInitialUrl) {
     const Source& proto_source = proto_report.sources(0);
 
     EXPECT_EQ(id, proto_source.id());
-    EXPECT_EQ(GURL("https://google.com/foobar").spec(), proto_source.url());
+    EXPECT_EQ(GURL("https://9oo91e.qjz9zk/foobar").spec(), proto_source.url());
     EXPECT_EQ(should_record_initial_url, proto_source.has_initial_url());
     if (should_record_initial_url) {
-      EXPECT_EQ(GURL("https://google.com/initial").spec(),
+      EXPECT_EQ(GURL("https://9oo91e.qjz9zk/initial").spec(),
                 proto_source.initial_url());
     }
   }
@@ -527,7 +527,7 @@ TEST_F(UkmServiceTest, RecordSessionId) {
   service.EnableReporting();
 
   auto id = GetWhitelistedSourceId(0);
-  recorder.UpdateSourceURL(id, GURL("https://google.com/foobar"));
+  recorder.UpdateSourceURL(id, GURL("https://9oo91e.qjz9zk/foobar"));
 
   service.Flush();
   EXPECT_EQ(1, GetPersistedLogCount());
@@ -554,11 +554,11 @@ TEST_F(UkmServiceTest, SourceSize) {
   service.EnableReporting();
 
   auto id = GetWhitelistedSourceId(0);
-  recorder.UpdateSourceURL(id, GURL("https://google.com/foobar1"));
+  recorder.UpdateSourceURL(id, GURL("https://9oo91e.qjz9zk/foobar1"));
   id = GetWhitelistedSourceId(1);
-  recorder.UpdateSourceURL(id, GURL("https://google.com/foobar2"));
+  recorder.UpdateSourceURL(id, GURL("https://9oo91e.qjz9zk/foobar2"));
   id = GetWhitelistedSourceId(2);
-  recorder.UpdateSourceURL(id, GURL("https://google.com/foobar3"));
+  recorder.UpdateSourceURL(id, GURL("https://9oo91e.qjz9zk/foobar3"));
 
   service.Flush();
   EXPECT_EQ(1, GetPersistedLogCount());
@@ -580,7 +580,7 @@ TEST_F(UkmServiceTest, PurgeMidUpload) {
   service.EnableReporting();
 
   auto id = GetWhitelistedSourceId(0);
-  recorder.UpdateSourceURL(id, GURL("https://google.com/foobar1"));
+  recorder.UpdateSourceURL(id, GURL("https://9oo91e.qjz9zk/foobar1"));
   // Should init, generate a log, and start an upload.
   task_runner_->RunPendingTasks();
   EXPECT_TRUE(client_.uploader()->is_uploading());
@@ -609,7 +609,7 @@ TEST_F(UkmServiceTest, WhitelistEntryTest) {
   service.EnableReporting();
 
   auto id = GetWhitelistedSourceId(0);
-  recorder.UpdateSourceURL(id, GURL("https://google.com/foobar1"));
+  recorder.UpdateSourceURL(id, GURL("https://9oo91e.qjz9zk/foobar1"));
 
   TestEvent1(id).Record(&service);
   TestEvent2(id).Record(&service);
@@ -662,7 +662,7 @@ TEST_F(UkmServiceTest, SourceURLLength) {
 }
 
 TEST_F(UkmServiceTest, UnreferencedNonWhitelistedSources) {
-  const GURL kURL("https://google.com/foobar");
+  const GURL kURL("https://9oo91e.qjz9zk/foobar");
   for (bool restrict_to_whitelisted_source_ids : {true, false}) {
     base::FieldTrialList field_trial_list(nullptr /* entropy_provider */);
     // Set a threshold of number of Sources via Feature Params.
@@ -775,15 +775,15 @@ TEST_F(UkmServiceTest, UnreferencedNonWhitelistedSources) {
 }
 
 TEST_F(UkmServiceTest, NonWhitelistedUrls) {
-  const GURL kURL("https://google.com/foobar");
+  const GURL kURL("https://9oo91e.qjz9zk/foobar");
   struct {
     GURL url;
     bool expected_kept;
   } test_cases[] = {
-      {GURL("https://google.com/foobar"), true},
+      {GURL("https://9oo91e.qjz9zk/foobar"), true},
       // For origin-only URLs, only the origin needs to be matched.
-      {GURL("https://google.com"), true},
-      {GURL("https://google.com/foobar2"), false},
+      {GURL("https://9oo91e.qjz9zk"), true},
+      {GURL("https://9oo91e.qjz9zk/foobar2"), false},
       {GURL("https://other.com"), false},
   };
 
@@ -835,7 +835,7 @@ TEST_F(UkmServiceTest, NonWhitelistedUrls) {
 }
 
 TEST_F(UkmServiceTest, NonWhitelistedCarryoverUrls) {
-  const GURL kURL("https://google.com/foobar");
+  const GURL kURL("https://9oo91e.qjz9zk/foobar");
 
   struct {
     // Source1 is recorded during the first rotation with no entry.
@@ -850,25 +850,25 @@ TEST_F(UkmServiceTest, NonWhitelistedCarryoverUrls) {
   } test_cases[] = {
       // Recording the URL captures in the whitelist, which will also allow
       // exact matches of the same URL.
-      {GURL("https://google.com/foobar"), true,
-       GURL("https://google.com/foobar"), true},
+      {GURL("https://9oo91e.qjz9zk/foobar"), true,
+       GURL("https://9oo91e.qjz9zk/foobar"), true},
       // Capturing a full URL shouldn't allow origin matches.
-      {GURL("https://google.com/foobar"), true, GURL("https://google.com"),
+      {GURL("https://9oo91e.qjz9zk/foobar"), true, GURL("https://9oo91e.qjz9zk"),
        false},
       // Uncaptured URLs won't get matched.
-      {GURL("https://google.com/foobar"), true, GURL("https://other.com"),
+      {GURL("https://9oo91e.qjz9zk/foobar"), true, GURL("https://other.com"),
        false},
       // Origin should be capturable, and will remember the same origin.
-      {GURL("https://google.com"), true, GURL("https://google.com"), true},
+      {GURL("https://9oo91e.qjz9zk"), true, GURL("https://9oo91e.qjz9zk"), true},
       // If the origin is captured, only the origin is remembered.
-      {GURL("https://google.com"), true, GURL("https://google.com/foobar"),
+      {GURL("https://9oo91e.qjz9zk"), true, GURL("https://9oo91e.qjz9zk/foobar"),
        false},
       // Uncaptured URLs won't get matched.
-      {GURL("https://google.com"), true, GURL("https://other.com"), false},
+      {GURL("https://9oo91e.qjz9zk"), true, GURL("https://other.com"), false},
       // If the URL isn't captured in the first round, it won't capture later.
-      {GURL("https://other.com"), false, GURL("https://google.com/foobar"),
+      {GURL("https://other.com"), false, GURL("https://9oo91e.qjz9zk/foobar"),
        false},
-      {GURL("https://other.com"), false, GURL("https://google.com"), false},
+      {GURL("https://other.com"), false, GURL("https://9oo91e.qjz9zk"), false},
       // Entries shouldn't whitelist themselves.
       {GURL("https://other.com"), false, GURL("https://other.com"), false},
   };

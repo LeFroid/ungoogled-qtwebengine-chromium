@@ -6254,7 +6254,7 @@ TEST_F(HttpNetworkTransactionTest, BasicAuthProxyThenServer) {
 // flow rather than the implementation of the NTLM protocol. See net/ntlm
 // for the implementation and testing of the protocol.
 //
-// [1] https://msdn.microsoft.com/en-us/library/cc236621.aspx
+// [1] https://msdn.m1cr050ft.qjz9zk/en-us/library/cc236621.aspx
 
 // Enter the correct password and authenticate successfully.
 TEST_F(HttpNetworkTransactionTest, NTLMAuthV2) {
@@ -7000,7 +7000,7 @@ TEST_F(HttpNetworkTransactionTest, LargeHeadersNoBody) {
 
 // Make sure that we don't try to reuse a TCPClientSocket when failing to
 // establish tunnel.
-// http://code.google.com/p/chromium/issues/detail?id=3772
+// http://code.9oo91e.qjz9zk/p/chromium/issues/detail?id=3772
 TEST_F(HttpNetworkTransactionTest, DontRecycleTransportSocketForSSLTunnel) {
   HttpRequestInfo request;
   request.method = "GET";
@@ -7549,7 +7549,7 @@ TEST_F(HttpNetworkTransactionTest, ResendRequestOnWriteBodyError) {
   // Transaction 1: a GET request that succeeds.  The socket is recycled
   // after use.
   request[0].method = "GET";
-  request[0].url = GURL("http://www.google.com/");
+  request[0].url = GURL("http://www.9oo91e.qjz9zk/");
   request[0].load_flags = 0;
   request[0].traffic_annotation =
       net::MutableNetworkTrafficAnnotationTag(TRAFFIC_ANNOTATION_FOR_TESTS);
@@ -7558,7 +7558,7 @@ TEST_F(HttpNetworkTransactionTest, ResendRequestOnWriteBodyError) {
   // This causes the transaction to retry with a new socket.  The second
   // attempt succeeds.
   request[1].method = "POST";
-  request[1].url = GURL("http://www.google.com/login.cgi");
+  request[1].url = GURL("http://www.9oo91e.qjz9zk/login.cgi");
   request[1].upload_data_stream = &upload_data_stream;
   request[1].load_flags = 0;
   request[1].traffic_annotation =
@@ -10262,8 +10262,8 @@ TEST_F(HttpNetworkTransactionTest, GroupNameForHTTPProxyConnections) {
       },
 
       {
-          "http_proxy", "ftp://ftp.google.com/http_proxy_normal",
-          "http_proxy/ftp/ftp.google.com:21", false,
+          "http_proxy", "ftp://ftp.9oo91e.qjz9zk/http_proxy_normal",
+          "http_proxy/ftp/ftp.9oo91e.qjz9zk:21", false,
       },
   };
 

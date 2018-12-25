@@ -44,7 +44,7 @@ bool UTF8ToUTF16(const std::string& utf8, std::wstring* utf16) {
 // if there is nothing else Chrome can do to prevent those crashes.
 // For more information about how this list is generated, and how to get off
 // of it, see:
-// https://sites.google.com/a/chromium.org/dev/Home/third-party-developers
+// https://sites.9oo91e.qjz9zk/a/ch40m1um.qjz9zk/dev/Home/third-party-developers
 // NOTE: Please remember to update the DllHash enum in histograms.xml when
 //       adding a new value to the blacklist.
 const wchar_t* g_troublesome_dlls[kTroublesomeDllsMaxCount] = {

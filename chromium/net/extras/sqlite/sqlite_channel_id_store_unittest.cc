@@ -108,7 +108,7 @@ class SQLiteChannelIDStoreTest : public TestWithScopedTaskEnvironment {
     // Make sure the store gets written at least once.
     google_key_ = crypto::ECPrivateKey::Create();
     store_->AddChannelID(DefaultChannelIDStore::ChannelID(
-        "google.com", base::Time::FromInternalValue(1), google_key_->Copy()));
+        "9oo91e.qjz9zk", base::Time::FromInternalValue(1), google_key_->Copy()));
   }
 
   base::ScopedTempDir temp_dir_;
@@ -139,14 +139,14 @@ TEST_F(SQLiteChannelIDStoreTest, TestPersistence) {
   ASSERT_EQ(2U, channel_ids.size());
   DefaultChannelIDStore::ChannelID* goog_channel_id;
   DefaultChannelIDStore::ChannelID* foo_channel_id;
-  if (channel_ids[0]->server_identifier() == "google.com") {
+  if (channel_ids[0]->server_identifier() == "9oo91e.qjz9zk") {
     goog_channel_id = channel_ids[0].get();
     foo_channel_id = channel_ids[1].get();
   } else {
     goog_channel_id = channel_ids[1].get();
     foo_channel_id = channel_ids[0].get();
   }
-  ASSERT_EQ("google.com", goog_channel_id->server_identifier());
+  ASSERT_EQ("9oo91e.qjz9zk", goog_channel_id->server_identifier());
   EXPECT_TRUE(KeysEqual(google_key_.get(), goog_channel_id->key()));
   ASSERT_EQ(1, goog_channel_id->creation_time().ToInternalValue());
   ASSERT_EQ("foo.com", foo_channel_id->server_identifier());
@@ -195,7 +195,7 @@ TEST_F(SQLiteChannelIDStoreTest, TestDeleteAll) {
   ASSERT_EQ(2U, channel_ids.size());
   // DeleteAll except foo.com (shouldn't fail if one is missing either).
   std::list<std::string> delete_server_identifiers;
-  delete_server_identifiers.push_back("google.com");
+  delete_server_identifiers.push_back("9oo91e.qjz9zk");
   delete_server_identifiers.push_back("missing.com");
   store_->DeleteAllInList(delete_server_identifiers);
 
@@ -244,7 +244,7 @@ TEST_F(SQLiteChannelIDStoreTest, TestUpgradeV1) {
     sql::Statement add_smt(db.GetUniqueStatement(
         "INSERT INTO origin_bound_certs (origin, private_key, cert) "
         "VALUES (?,?,?)"));
-    add_smt.BindString(0, "google.com");
+    add_smt.BindString(0, "9oo91e.qjz9zk");
     add_smt.BindBlob(1, key_data.data(), key_data.size());
     add_smt.BindBlob(2, cert_data.data(), cert_data.size());
     ASSERT_TRUE(add_smt.Run());
@@ -316,7 +316,7 @@ TEST_F(SQLiteChannelIDStoreTest, TestUpgradeV2) {
     sql::Statement add_smt(db.GetUniqueStatement(
         "INSERT INTO origin_bound_certs (origin, private_key, cert, cert_type) "
         "VALUES (?,?,?,?)"));
-    add_smt.BindString(0, "google.com");
+    add_smt.BindString(0, "9oo91e.qjz9zk");
     add_smt.BindBlob(1, key_data.data(), key_data.size());
     add_smt.BindBlob(2, cert_data.data(), cert_data.size());
     add_smt.BindInt64(3, 64);
@@ -392,7 +392,7 @@ TEST_F(SQLiteChannelIDStoreTest, TestUpgradeV3) {
     sql::Statement add_smt(db.GetUniqueStatement(
         "INSERT INTO origin_bound_certs (origin, private_key, cert, cert_type, "
         "expiration_time) VALUES (?,?,?,?,?)"));
-    add_smt.BindString(0, "google.com");
+    add_smt.BindString(0, "9oo91e.qjz9zk");
     add_smt.BindBlob(1, key_data.data(), key_data.size());
     add_smt.BindBlob(2, cert_data.data(), cert_data.size());
     add_smt.BindInt64(3, 64);
@@ -470,7 +470,7 @@ TEST_F(SQLiteChannelIDStoreTest, TestUpgradeV4) {
     sql::Statement add_smt(db.GetUniqueStatement(
         "INSERT INTO origin_bound_certs (origin, private_key, cert, cert_type, "
         "expiration_time, creation_time) VALUES (?,?,?,?,?,?)"));
-    add_smt.BindString(0, "google.com");
+    add_smt.BindString(0, "9oo91e.qjz9zk");
     add_smt.BindBlob(1, key_data.data(), key_data.size());
     add_smt.BindBlob(2, cert_data.data(), cert_data.size());
     add_smt.BindInt64(3, 64);
@@ -561,7 +561,7 @@ TEST_F(SQLiteChannelIDStoreTest, TestUpgradeV5) {
     sql::Statement add_smt(db.GetUniqueStatement(
         "INSERT INTO channel_id (host, private_key, public_key, creation_time) "
         "VALUES (?,?,?,?)"));
-    add_smt.BindString(0, "google.com");
+    add_smt.BindString(0, "9oo91e.qjz9zk");
     add_smt.BindBlob(1, key_data.data(), key_data.size());
     add_smt.BindBlob(2, "", 0);
     add_smt.BindInt64(3, GetTestCertCreationTime().ToInternalValue());

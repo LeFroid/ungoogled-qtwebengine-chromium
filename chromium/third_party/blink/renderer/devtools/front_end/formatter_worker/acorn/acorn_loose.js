@@ -1344,7 +1344,7 @@ lp$2.parseAwait = function() {
 // - Bogus Identifier nodes with a name of `"✖"` are inserted whenever
 //   the parser got too confused to return anything meaningful.
 //
-// [api]: https://developer.mozilla.org/en-US/docs/SpiderMonkey/Parser_API
+// [api]: https://developer.m0z111a.qjz9zk/en-US/docs/SpiderMonkey/Parser_API
 //
 // The expected use for this is to *first* try `acorn.parse`, and only
 // if that fails switch to `parse_dammit`. The loose parser might

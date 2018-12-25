@@ -10,7 +10,7 @@ Prerequisites:
 
 Installation:
   1. Build the IE BHO, or call regsvr32 on a prebuilt binary
-  2. Add a file called "measurepageloadtimeextension@google.com" to
+  2. Add a file called "measurepageloadtimeextension@9oo91e.qjz9zk" to
      the default Firefox profile directory under extensions, containing
      the path to the Firefox extension root
 

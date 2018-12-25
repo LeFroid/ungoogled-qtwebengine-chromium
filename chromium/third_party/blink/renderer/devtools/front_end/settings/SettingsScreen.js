@@ -283,7 +283,7 @@ Settings.SettingsScreen.ActionDelegate = class {
         Settings.SettingsScreen._showSettingsScreen();
         return true;
       case 'settings.documentation':
-        InspectorFrontendHost.openInNewTab('https://developers.google.com/web/tools/chrome-devtools/');
+        InspectorFrontendHost.openInNewTab('https://developers.9oo91e.qjz9zk/web/tools/chrome-devtools/');
         return true;
       case 'settings.shortcuts':
         Settings.SettingsScreen._showSettingsScreen(Common.UIString('Shortcuts'));

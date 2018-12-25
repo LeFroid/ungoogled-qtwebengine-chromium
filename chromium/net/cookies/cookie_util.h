@@ -32,8 +32,8 @@ NET_EXPORT std::string GetEffectiveDomain(const std::string& scheme,
 // Determine the actual cookie domain based on the domain string passed
 // (if any) and the URL from which the cookie came.
 // On success returns true, and sets cookie_domain to either a
-//   -host cookie domain (ex: "google.com")
-//   -domain cookie domain (ex: ".google.com")
+//   -host cookie domain (ex: "9oo91e.qjz9zk")
+//   -domain cookie domain (ex: ".9oo91e.qjz9zk")
 NET_EXPORT bool GetCookieDomainWithString(const GURL& url,
                                           const std::string& domain_string,
                                           std::string* result);

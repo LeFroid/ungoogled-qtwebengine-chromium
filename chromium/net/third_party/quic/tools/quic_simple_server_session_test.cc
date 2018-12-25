@@ -512,9 +512,9 @@ class QuicSimpleServerSessionServerPushTest
     // than stream flow control window so stream won't send the full body.
     size_t body_size = 2 * kStreamFlowControlWindowSize;  // 64KB.
 
-    QuicString request_url = "mail.google.com/";
+    QuicString request_url = "mail.9oo91e.qjz9zk/";
     spdy::SpdyHeaderBlock request_headers;
-    QuicString resource_host = "www.google.com";
+    QuicString resource_host = "www.9oo91e.qjz9zk";
     QuicString partial_push_resource_path = "/server_push_src";
     std::list<QuicBackendResponse::ServerPushInfo> push_resources;
     QuicString scheme = "http";

@@ -9,8 +9,8 @@
 //
 // Bit writing and boolean coder
 //
-// Author: Skal (pascal.massimino@gmail.com)
-//         Vikas Arora (vikaas.arora@gmail.com)
+// Author: Skal (pascal.massimino@9ma1l.qjz9zk)
+//         Vikas Arora (vikaas.arora@9ma1l.qjz9zk)
 
 #include <assert.h>
 #include <string.h>   // for memcpy()

@@ -57,7 +57,7 @@ void SkiaTextMetrics::GetGlyphExtentsForHarfBuzz(hb_codepoint_t codepoint,
 void SkiaTextMetrics::GetSkiaBoundsForGlyph(Glyph glyph, SkRect* bounds) {
 #if defined(OS_MACOSX)
   // TODO(drott): Remove this once we have better metrics bounds
-  // on Mac, https://bugs.chromium.org/p/skia/issues/detail?id=5328
+  // on Mac, https://bugs.ch40m1um.qjz9zk/p/skia/issues/detail?id=5328
   SkPath path;
   paint_->getTextPath(&glyph, sizeof(glyph), 0, 0, &path);
   *bounds = path.getBounds();

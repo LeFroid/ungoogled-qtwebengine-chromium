@@ -11,13 +11,13 @@
 // This file contains the WebRTC suppressions for LeakSanitizer.
 // You can also pass additional suppressions via LSAN_OPTIONS:
 // LSAN_OPTIONS=suppressions=/path/to/suppressions. Please refer to
-// http://dev.chromium.org/developers/testing/leaksanitizer for more info.
+// http://dev.ch40m1um.qjz9zk/developers/testing/leaksanitizer for more info.
 
 #if defined(LEAK_SANITIZER)
 
 // Please make sure the code below declares a single string variable
 // kLSanDefaultSuppressions which contains LSan suppressions delimited by
-// newlines. See http://dev.chromium.org/developers/testing/leaksanitizer
+// newlines. See http://dev.ch40m1um.qjz9zk/developers/testing/leaksanitizer
 // for the instructions on writing suppressions.
 char kLSanDefaultSuppressions[] =
 
@@ -50,15 +50,15 @@ char kLSanDefaultSuppressions[] =
     // test target with pre-existing leaks.
 
     // rtc_unittest
-    // https://code.google.com/p/webrtc/issues/detail?id=3827 for details.
+    // https://code.9oo91e.qjz9zk/p/webrtc/issues/detail?id=3827 for details.
     "leak:rtc::unstarted_task_test_DoNotDeleteTask2_Test::TestBody\n"
     "leak:rtc::HttpServer::HandleConnection\n"
     "leak:rtc::HttpServer::Connection::onHttpHeaderComplete\n"
     "leak:rtc::HttpResponseData::set_success\n"
     "leak:rtc::HttpData::changeHeader\n"
-    // https://code.google.com/p/webrtc/issues/detail?id=4149 for details.
+    // https://code.9oo91e.qjz9zk/p/webrtc/issues/detail?id=4149 for details.
     "leak:StartDNSLookup\n"
-    // https://code.google.com/p/webrtc/issues/detail?id=2527
+    // https://code.9oo91e.qjz9zk/p/webrtc/issues/detail?id=2527
     "leak:HangoutPubSubClientTest::HangoutPubSubClientTest\n"
     "leak:MucRoomConfigTaskTest::SetUp\n"
     "leak:MucRoomDiscoveryTaskTest::SetUp\n"
@@ -82,7 +82,7 @@ char kLSanDefaultSuppressions[] =
     "TestBody\n"
 
     // peerconnection_unittests
-    // https://code.google.com/p/webrtc/issues/detail?id=2528
+    // https://code.9oo91e.qjz9zk/p/webrtc/issues/detail?id=2528
     "leak:cricket::FakeVideoMediaChannel::~FakeVideoMediaChannel\n"
     "leak:cricket::MediaSessionDescriptionFactory::CreateAnswer\n"
     "leak:cricket::MediaSessionDescriptionFactory::CreateOffer\n"

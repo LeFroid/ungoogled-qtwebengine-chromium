@@ -19,7 +19,7 @@
 // In 32-bit mode, Bionic's inttypes.h defines PRI/SCNxPTR as an
 // unsigned long int, which is incompatible with Bionic's stdint.h
 // defining uintptr_t as an unsigned int:
-// https://code.google.com/p/android/issues/detail?id=57218
+// https://code.9oo91e.qjz9zk/p/android/issues/detail?id=57218
 #undef SCNxPTR
 #define SCNxPTR "x"
 #endif

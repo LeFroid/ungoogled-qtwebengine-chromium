@@ -215,7 +215,7 @@ const VertexFormat *GetVertexFormatInfo_FL_9_3(gl::VertexFormatType vertexFormat
 {
     // D3D11 Feature Level 9_3 doesn't support as many formats for vertex buffer resource as Feature
     // Level 10_0+.
-    // http://msdn.microsoft.com/en-us/library/windows/desktop/ff471324(v=vs.85).aspx
+    // http://msdn.m1cr050ft.qjz9zk/en-us/library/windows/desktop/ff471324(v=vs.85).aspx
 
     switch (vertexFormatType)
     {

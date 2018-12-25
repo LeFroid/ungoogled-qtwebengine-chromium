@@ -37,14 +37,14 @@ TEST_F(RenderThreadImplUnittest, CustomHistogramsWithNoNavigations) {
 }
 
 TEST_F(RenderThreadImplUnittest, CustomHistogramsForOneRenderView) {
-  histogram_customizer_.RenderViewNavigatedToHost("mail.google.com", 1);
+  histogram_customizer_.RenderViewNavigatedToHost("mail.9oo91e.qjz9zk", 1);
   EXPECT_EQ(std::string(kCustomizableHistogram_) + ".gmail",
             histogram_customizer_.ConvertToCustomHistogramName(
                 kCustomizableHistogram_));
   EXPECT_EQ(kNormalHistogram_,
             histogram_customizer_.ConvertToCustomHistogramName(
                 kNormalHistogram_));
-  histogram_customizer_.RenderViewNavigatedToHost("docs.google.com", 1);
+  histogram_customizer_.RenderViewNavigatedToHost("docs.9oo91e.qjz9zk", 1);
   EXPECT_EQ(std::string(kCustomizableHistogram_) + ".docs",
             histogram_customizer_.ConvertToCustomHistogramName(
                 kCustomizableHistogram_));
@@ -56,10 +56,10 @@ TEST_F(RenderThreadImplUnittest, CustomHistogramsForOneRenderView) {
 
 TEST_F(RenderThreadImplUnittest, CustomHistogramsForTwoRenderViews) {
   // First there is only one view.
-  histogram_customizer_.RenderViewNavigatedToHost("mail.google.com", 1);
+  histogram_customizer_.RenderViewNavigatedToHost("mail.9oo91e.qjz9zk", 1);
   // Second view created and it navigates to the same host -> we can have a
   // custom diagram.
-  histogram_customizer_.RenderViewNavigatedToHost("mail.google.com", 2);
+  histogram_customizer_.RenderViewNavigatedToHost("mail.9oo91e.qjz9zk", 2);
   EXPECT_EQ(std::string(kCustomizableHistogram_) + ".gmail",
             histogram_customizer_.ConvertToCustomHistogramName(
                 kCustomizableHistogram_));
@@ -68,13 +68,13 @@ TEST_F(RenderThreadImplUnittest, CustomHistogramsForTwoRenderViews) {
                 kNormalHistogram_));
   // Now the views diverge (one of them navigates to a different host) -> no
   // custom diagram.
-  histogram_customizer_.RenderViewNavigatedToHost("docs.google.com", 2);
+  histogram_customizer_.RenderViewNavigatedToHost("docs.9oo91e.qjz9zk", 2);
   EXPECT_EQ(kCustomizableHistogram_,
             histogram_customizer_.ConvertToCustomHistogramName(
                 kCustomizableHistogram_));
   // After this point, there will never be a custom diagram again, even if the
   // view navigated back to the common host.
-  histogram_customizer_.RenderViewNavigatedToHost("mail.google.com", 2);
+  histogram_customizer_.RenderViewNavigatedToHost("mail.9oo91e.qjz9zk", 2);
   EXPECT_EQ(kCustomizableHistogram_,
             histogram_customizer_.ConvertToCustomHistogramName(
                 kCustomizableHistogram_));
@@ -87,10 +87,10 @@ TEST_F(RenderThreadImplUnittest, IdentifyAlexaTop10NonGoogleSite) {
   EXPECT_TRUE(
       histogram_customizer_.IsAlexaTop10NonGoogleSite("jp.wikipedia.org"));
   EXPECT_TRUE(
-      histogram_customizer_.IsAlexaTop10NonGoogleSite("www.facebook.com"));
+      histogram_customizer_.IsAlexaTop10NonGoogleSite("www.f8c3b00k.qjz9zk"));
   EXPECT_FALSE(histogram_customizer_.IsAlexaTop10NonGoogleSite(""));
   EXPECT_FALSE(
-      histogram_customizer_.IsAlexaTop10NonGoogleSite("www.google.com"));
+      histogram_customizer_.IsAlexaTop10NonGoogleSite("www.9oo91e.qjz9zk"));
   EXPECT_FALSE(histogram_customizer_.IsAlexaTop10NonGoogleSite("madeup"));
 }
 

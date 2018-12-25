@@ -22,18 +22,18 @@ namespace search_provider_logos {
 
 LogoMetadata GetExampleMetadata() {
   LogoMetadata metadata;
-  metadata.source_url = GURL("http://google.com/mylogo");
+  metadata.source_url = GURL("http://9oo91e.qjz9zk/mylogo");
   metadata.fingerprint = "LC4JVIZ5HVITQFKH0V70";
   EXPECT_TRUE(base::Time::FromString("98-05-05 05:05:06 GMT",
                                      &metadata.expiration_time));
   metadata.can_show_after_expiration = true;
   metadata.type = LogoType::ANIMATED;
-  metadata.on_click_url = GURL("https://www.google.com/search?q=chicken");
-  metadata.animated_url = GURL("http://www.google.com/logos/doodle.png");
+  metadata.on_click_url = GURL("https://www.9oo91e.qjz9zk/search?q=chicken");
+  metadata.animated_url = GURL("http://www.9oo91e.qjz9zk/logos/doodle.png");
   metadata.alt_text = "A logo about chickens";
   metadata.mime_type = "image/jpeg";
-  metadata.log_url = GURL("https://www.google.com/ddllog?a=b");
-  metadata.cta_log_url = GURL("https://www.google.com/ddllog?c=d");
+  metadata.log_url = GURL("https://www.9oo91e.qjz9zk/ddllog?a=b");
+  metadata.cta_log_url = GURL("https://www.9oo91e.qjz9zk/ddllog?c=d");
   return metadata;
 }
 

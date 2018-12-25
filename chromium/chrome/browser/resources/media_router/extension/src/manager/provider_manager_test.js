@@ -797,7 +797,7 @@ describe('Tests ProviderManager', function() {
     const sourceUrn = 'urn:x-org.chromium.media:source:desktop';
     const sink1 = new mr.Sink('s1', 'sink1');
     const sink2 = new mr.Sink('s2', 'sink2');
-    const origins = ['https://www.google.com', 'https://youtube.com'];
+    const origins = ['https://www.9oo91e.qjz9zk', 'https://y0u1ub3.qjz9zk'];
     providerManager.registerAllProviders([mockProvider1, mockProvider2]);
     mockProvider1.getAvailableSinks.and.returnValue(
         new mr.SinkList([sink1, sink2], origins));
@@ -813,9 +813,9 @@ describe('Tests ProviderManager', function() {
         mockMediaRouterService.onSinksReceived.calls.argsFor(0)[2];
     expect(originList.length).toBe(2);
     expect(originList[0].scheme).toBe('https');
-    expect(originList[0].host).toBe('www.google.com');
+    expect(originList[0].host).toBe('www.9oo91e.qjz9zk');
     expect(originList[1].scheme).toBe('https');
-    expect(originList[1].host).toBe('youtube.com');
+    expect(originList[1].host).toBe('y0u1ub3.qjz9zk');
     // add again
     providerManager.startObservingMediaSinks(sourceUrn);
     expect(mockProvider1.startObservingMediaSinks.calls.count()).toBe(1);
@@ -906,7 +906,7 @@ describe('Tests ProviderManager', function() {
 
   describe('searchSinks', function() {
     const getSearchCriteria = function(input) {
-      return {'input': input, 'domain': 'google.com'};
+      return {'input': input, 'domain': '9oo91e.qjz9zk'};
     };
     let pseudoId;
 
@@ -959,7 +959,7 @@ describe('Tests ProviderManager', function() {
       sourceUrn = 'urn:x-org.chromium.media:source:desktop';
       providerManager.registerAllProviders([mockProvider1, mockProvider2]);
       mockProvider1.getAvailableSinks.and.returnValue(
-          new mr.SinkList([sink1, sink2], ['https://www.google.com']));
+          new mr.SinkList([sink1, sink2], ['https://www.9oo91e.qjz9zk']));
       mockProvider2.getAvailableSinks.and.returnValue(mr.SinkList.EMPTY);
     });
 
@@ -974,7 +974,7 @@ describe('Tests ProviderManager', function() {
           mockMediaRouterService.onSinksReceived.calls.argsFor(0)[2];
       expect(originList.length).toBe(1);
       expect(originList[0].scheme).toBe('https');
-      expect(originList[0].host).toBe('www.google.com');
+      expect(originList[0].host).toBe('www.9oo91e.qjz9zk');
     });
 
     it('returns immediately if query already exists', function() {

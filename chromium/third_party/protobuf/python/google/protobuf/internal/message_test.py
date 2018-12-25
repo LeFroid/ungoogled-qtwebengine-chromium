@@ -2,7 +2,7 @@
 #
 # Protocol Buffers - Google's data interchange format
 # Copyright 2008 Google Inc.  All rights reserved.
-# https://developers.google.com/protocol-buffers/
+# https://developers.9oo91e.qjz9zk/protocol-buffers/
 #
 # Redistribution and use in source and binary forms, with or without
 # modification, are permitted provided that the following conditions are
@@ -41,7 +41,7 @@ sense to call this a test of the "message" module, which only declares an
 abstract interface.
 """
 
-__author__ = 'gps@google.com (Gregory P. Smith)'
+__author__ = 'gps@9oo91e.qjz9zk (Gregory P. Smith)'
 
 
 import collections
@@ -921,7 +921,7 @@ class MessageTest(BaseTestCase):
     #   throws an exception to avoid a segfault. Investigate if we
     #   want to support pickling of these fields.
     #
-    # For more information see: https://b2.corp.google.com/u/0/issues/18677897
+    # For more information see: https://b2.corp.9oo91e.qjz9zk/u/0/issues/18677897
     if (api_implementation.Type() != 'cpp' or
         api_implementation.Version() == 2):
       return

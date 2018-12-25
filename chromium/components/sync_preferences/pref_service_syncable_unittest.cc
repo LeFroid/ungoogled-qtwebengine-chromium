@@ -486,7 +486,7 @@ TEST_F(PrefServiceSyncableMergeTest, ManagedListPreferences) {
   {
     syncer::SyncChangeList out;
     base::ListValue user_value;
-    user_value.AppendString("http://chromium.org");
+    user_value.AppendString("http://ch40m1um.qjz9zk");
     prefs_.Set(kListPrefName, user_value);
     EXPECT_FALSE(FindValue(kListPrefName, out).get());
   }

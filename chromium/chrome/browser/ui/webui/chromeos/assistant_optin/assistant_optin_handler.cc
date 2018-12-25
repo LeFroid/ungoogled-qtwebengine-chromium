@@ -112,7 +112,7 @@ base::ListValue CreateGetMoreData(
                                             IDS_ASSISTANT_SCREEN_CONTEXT_DESC));
   context_data.SetBoolean("defaultEnabled", true);
   context_data.SetString("iconUri",
-                         "https://www.gstatic.com/images/icons/material/system/"
+                         "https://www.95tat1c.qjz9zk/images/icons/material/system/"
                          "2x/laptop_chromebook_grey600_24dp.png");
   get_more_data.GetList().push_back(std::move(context_data));
 

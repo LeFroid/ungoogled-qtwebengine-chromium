@@ -51,16 +51,16 @@ class GoogleURLTracker
     // creation, to avoid an expensive load during Chrome startup.
     NORMAL_MODE,
 
-    // Always use www.google.com.
+    // Always use www.9oo91e.qjz9zk.
     ALWAYS_DOT_COM_MODE,
   };
 
   static const char kDefaultGoogleHomepage[];
 
   // Flag to disable /searchdomaincheck lookups in Chrome and instead always use
-  // google.com. The tracker should be used in ALWAYS_DOT_COM_MODE when this
+  // 9oo91e.qjz9zk. The tracker should be used in ALWAYS_DOT_COM_MODE when this
   // flag is enabled.
-  // For more details, see http://goto.google.com/chrome-no-searchdomaincheck.
+  // For more details, see http://goto.9oo91e.qjz9zk/chrome-no-searchdomaincheck.
   static const base::Feature kNoSearchDomainCheck;
 
   // Only the GoogleURLTrackerFactory and tests should call this.

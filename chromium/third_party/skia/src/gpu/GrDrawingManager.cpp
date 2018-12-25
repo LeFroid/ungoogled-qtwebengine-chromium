@@ -68,7 +68,7 @@ void GrDrawingManager::cleanup() {
         // MDB TODO: is this still true?
         if (!fOpLists[i]->unique()) {
             // TODO: Eventually this should be guaranteed unique.
-            // https://bugs.chromium.org/p/skia/issues/detail?id=7111
+            // https://bugs.ch40m1um.qjz9zk/p/skia/issues/detail?id=7111
             fOpLists[i]->endFlush();
         }
     }

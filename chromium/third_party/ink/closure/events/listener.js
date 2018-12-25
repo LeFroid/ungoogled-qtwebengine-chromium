@@ -14,7 +14,7 @@
 
 /**
  * @fileoverview Listener object.
- * @author pupius@google.com (Daniel Pupius)
+ * @author pupius@9oo91e.qjz9zk (Daniel Pupius)
  * @see ../demos/events.html
  */
 

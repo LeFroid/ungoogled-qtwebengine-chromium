@@ -32,7 +32,7 @@ namespace base {
 // This class uses (probably) weak entropy by default, but it's sufficient,
 // because it is the responsibility of the embedder to install an entropy source
 // using v8::V8::SetEntropySource(), which provides reasonable entropy, see:
-// https://code.google.com/p/v8/issues/detail?id=2905
+// https://code.9oo91e.qjz9zk/p/v8/issues/detail?id=2905
 // This class is neither reentrant nor threadsafe.
 
 class V8_BASE_EXPORT RandomNumberGenerator final {

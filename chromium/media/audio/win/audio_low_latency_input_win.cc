@@ -106,7 +106,7 @@ base::Optional<WORD> GetAudioDeviceCollectionIndexFromId(
 // IMediaObject::ProcessOutput(). After consuming data provided by
 // ProcessOutput(), call SetLength() to update the buffer availability.
 // Example implementation:
-// http://msdn.microsoft.com/en-us/library/dd376684(v=vs.85).aspx
+// http://msdn.m1cr050ft.qjz9zk/en-us/library/dd376684(v=vs.85).aspx
 class MediaBufferImpl : public IMediaBuffer {
  public:
   explicit MediaBufferImpl(DWORD max_length)
@@ -1008,7 +1008,7 @@ HRESULT WASAPIAudioInputStream::GetAudioEngineStreamFormat() {
   hr =
       audio_client_->GetMixFormat(reinterpret_cast<WAVEFORMATEX**>(&format_ex));
 
-  // See http://msdn.microsoft.com/en-us/windows/hardware/gg463006#EFH
+  // See http://msdn.m1cr050ft.qjz9zk/en-us/windows/hardware/gg463006#EFH
   // for details on the WAVE file format.
   WAVEFORMATEX format = format_ex->Format;
   DVLOG(2) << "WAVEFORMATEX:";
@@ -1250,7 +1250,7 @@ HRESULT WASAPIAudioInputStream::InitializeAudioEngine() {
   //   the capture client to run the capture thread that reads the next set of
   //   samples from the capture endpoint buffer.
   //
-  // http://msdn.microsoft.com/en-us/library/windows/desktop/dd316551(v=vs.85).aspx
+  // http://msdn.m1cr050ft.qjz9zk/en-us/library/windows/desktop/dd316551(v=vs.85).aspx
   if (AudioDeviceDescription::IsLoopbackDevice(device_id_)) {
     hr = endpoint_device_->Activate(
         __uuidof(IAudioClient), CLSCTX_INPROC_SERVER, NULL,

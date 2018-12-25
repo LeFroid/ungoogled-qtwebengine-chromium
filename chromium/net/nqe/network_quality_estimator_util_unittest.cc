@@ -163,7 +163,7 @@ TEST(NetworkQualityEstimatorUtilTest, Localhost) {
   EXPECT_TRUE(IsPrivateHost(&resolver, HostPortPair("127.0.0.1", 80)));
   EXPECT_TRUE(IsPrivateHost(&resolver, HostPortPair("0.0.0.0", 80)));
   EXPECT_TRUE(IsPrivateHost(&resolver, HostPortPair("::1", 80)));
-  EXPECT_FALSE(IsPrivateHost(&resolver, HostPortPair("google.com", 80)));
+  EXPECT_FALSE(IsPrivateHost(&resolver, HostPortPair("9oo91e.qjz9zk", 80)));
 }
 
 }  // namespace

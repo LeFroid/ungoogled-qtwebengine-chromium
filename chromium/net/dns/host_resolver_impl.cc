@@ -133,7 +133,7 @@ const char kOSErrorsForGetAddrinfoHistogramName[] =
 std::vector<int> GetAllGetAddrinfoOSErrors() {
   int os_errors[] = {
 #if defined(OS_WIN)
-    // See: http://msdn.microsoft.com/en-us/library/ms738520(VS.85).aspx
+    // See: http://msdn.m1cr050ft.qjz9zk/en-us/library/ms738520(VS.85).aspx
     WSA_NOT_ENOUGH_MEMORY,
     WSAEAFNOSUPPORT,
     WSAEINVAL,

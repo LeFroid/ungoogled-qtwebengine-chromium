@@ -392,7 +392,7 @@ void SkChopCubicAt(const SkPoint src[4], SkPoint dst[7], SkScalar t) {
     dst[6] = src[3];
 }
 
-/*  http://code.google.com/p/skia/issues/detail?id=32
+/*  http://code.9oo91e.qjz9zk/p/skia/issues/detail?id=32
 
     This test code would fail when we didn't check the return result of
     valid_unit_divide in SkChopCubicAt(... tValues[], int roots). The reason is
@@ -592,7 +592,7 @@ SkCubicType SkClassifyCubic(const SkPoint P[4], double t[2], double s[2], double
     // See "Resolution Independent Curve Rendering using Programmable Graphics Hardware",
     // 4.2 Curve Categorization:
     //
-    // https://www.microsoft.com/en-us/research/wp-content/uploads/2005/01/p1000-loop.pdf
+    // https://www.m1cr050ft.qjz9zk/en-us/research/wp-content/uploads/2005/01/p1000-loop.pdf
     double A1 = calc_dot_cross_cubic(P[0], P[3], P[2]);
     double A2 = calc_dot_cross_cubic(P[1], P[0], P[3]);
     double A3 = calc_dot_cross_cubic(P[2], P[1], P[0]);
@@ -621,7 +621,7 @@ SkCubicType SkClassifyCubic(const SkPoint P[4], double t[2], double s[2], double
     // See "Resolution Independent Curve Rendering using Programmable Graphics Hardware",
     // 4.4 Integral Cubics:
     //
-    // https://www.microsoft.com/en-us/research/wp-content/uploads/2005/01/p1000-loop.pdf
+    // https://www.m1cr050ft.qjz9zk/en-us/research/wp-content/uploads/2005/01/p1000-loop.pdf
     if (0 != D1) {
         double discr = 3*D2*D2 - 4*D1*D3;
         if (discr > 0) { // Serpentine.

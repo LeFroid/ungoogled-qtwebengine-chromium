@@ -119,7 +119,7 @@ class CredentialsFilterTest : public SyncUsernameTestBase {
 
   CredentialsFilterTest()
       : password_manager_(&client_),
-        pending_(SimpleGaiaForm("user@gmail.com")),
+        pending_(SimpleGaiaForm("user@9ma1l.qjz9zk")),
         form_manager_(&password_manager_,
                       &client_,
                       driver_.AsWeakPtr(),
@@ -183,24 +183,24 @@ TEST_F(CredentialsFilterTest, FilterResults_AllowAll) {
       // Reauth URL, not sync username.
       {TestCase::SYNCING_PASSWORDS, SimpleGaiaForm("user@example.org"),
        "another_user@example.org",
-       "https://accounts.google.com/login?rart=123&continue=blah",
+       "https://accounts.9oo91e.qjz9zk/login?rart=123&continue=blah",
        TestCase::FORM_NOT_FILTERED, TestCase::NO_HISTOGRAM},
 
       // Reauth URL, sync username.
       {TestCase::SYNCING_PASSWORDS, SimpleGaiaForm("user@example.org"),
        "user@example.org",
-       "https://accounts.google.com/login?rart=123&continue=blah",
+       "https://accounts.9oo91e.qjz9zk/login?rart=123&continue=blah",
        TestCase::FORM_NOT_FILTERED, TestCase::NO_HISTOGRAM},
 
       // Slightly invalid reauth URL, sync username.
       {TestCase::SYNCING_PASSWORDS, SimpleGaiaForm("user@example.org"),
        "user@example.org",
-       "https://accounts.google.com/addlogin?rart",  // Missing rart value.
+       "https://accounts.9oo91e.qjz9zk/addlogin?rart",  // Missing rart value.
        TestCase::FORM_NOT_FILTERED, TestCase::NO_HISTOGRAM},
 
       // Non-reauth URL, sync username.
       {TestCase::SYNCING_PASSWORDS, SimpleGaiaForm("user@example.org"),
-       "user@example.org", "https://accounts.google.com/login?param=123",
+       "user@example.org", "https://accounts.9oo91e.qjz9zk/login?param=123",
        TestCase::FORM_NOT_FILTERED, TestCase::NO_HISTOGRAM},
 
       // Non-GAIA "reauth" URL, sync username.
@@ -227,24 +227,24 @@ TEST_F(CredentialsFilterTest, FilterResults_DisallowSyncOnReauth) {
       // Reauth URL, not sync username.
       {TestCase::SYNCING_PASSWORDS, SimpleGaiaForm("user@example.org"),
        "another_user@example.org",
-       "https://accounts.google.com/login?rart=123&continue=blah",
+       "https://accounts.9oo91e.qjz9zk/login?rart=123&continue=blah",
        TestCase::FORM_NOT_FILTERED, TestCase::HISTOGRAM_REPORTED},
 
       // Reauth URL, sync username.
       {TestCase::SYNCING_PASSWORDS, SimpleGaiaForm("user@example.org"),
        "user@example.org",
-       "https://accounts.google.com/login?rart=123&continue=blah",
+       "https://accounts.9oo91e.qjz9zk/login?rart=123&continue=blah",
        TestCase::FORM_FILTERED, TestCase::HISTOGRAM_REPORTED},
 
       // Slightly invalid reauth URL, sync username.
       {TestCase::SYNCING_PASSWORDS, SimpleGaiaForm("user@example.org"),
        "user@example.org",
-       "https://accounts.google.com/addlogin?rart",  // Missing rart value.
+       "https://accounts.9oo91e.qjz9zk/addlogin?rart",  // Missing rart value.
        TestCase::FORM_FILTERED, TestCase::HISTOGRAM_REPORTED},
 
       // Non-reauth URL, sync username.
       {TestCase::SYNCING_PASSWORDS, SimpleGaiaForm("user@example.org"),
-       "user@example.org", "https://accounts.google.com/login?param=123",
+       "user@example.org", "https://accounts.9oo91e.qjz9zk/login?param=123",
        TestCase::FORM_NOT_FILTERED, TestCase::NO_HISTOGRAM},
 
       // Non-GAIA "reauth" URL, sync username.
@@ -272,24 +272,24 @@ TEST_F(CredentialsFilterTest, FilterResults_DisallowSync) {
       // Reauth URL, not sync username.
       {TestCase::SYNCING_PASSWORDS, SimpleGaiaForm("user@example.org"),
        "another_user@example.org",
-       "https://accounts.google.com/login?rart=123&continue=blah",
+       "https://accounts.9oo91e.qjz9zk/login?rart=123&continue=blah",
        TestCase::FORM_NOT_FILTERED, TestCase::HISTOGRAM_REPORTED},
 
       // Reauth URL, sync username.
       {TestCase::SYNCING_PASSWORDS, SimpleGaiaForm("user@example.org"),
        "user@example.org",
-       "https://accounts.google.com/login?rart=123&continue=blah",
+       "https://accounts.9oo91e.qjz9zk/login?rart=123&continue=blah",
        TestCase::FORM_FILTERED, TestCase::HISTOGRAM_REPORTED},
 
       // Slightly invalid reauth URL, sync username.
       {TestCase::SYNCING_PASSWORDS, SimpleGaiaForm("user@example.org"),
        "user@example.org",
-       "https://accounts.google.com/addlogin?rart",  // Missing rart value.
+       "https://accounts.9oo91e.qjz9zk/addlogin?rart",  // Missing rart value.
        TestCase::FORM_FILTERED, TestCase::HISTOGRAM_REPORTED},
 
       // Non-reauth URL, sync username.
       {TestCase::SYNCING_PASSWORDS, SimpleGaiaForm("user@example.org"),
-       "user@example.org", "https://accounts.google.com/login?param=123",
+       "user@example.org", "https://accounts.9oo91e.qjz9zk/login?param=123",
        TestCase::FORM_FILTERED, TestCase::HISTOGRAM_REPORTED},
 
       // Non-GAIA "reauth" URL, sync username.
@@ -305,7 +305,7 @@ TEST_F(CredentialsFilterTest, FilterResults_DisallowSync) {
 }
 
 TEST_F(CredentialsFilterTest, ReportFormLoginSuccess_ExistingSyncCredentials) {
-  FakeSigninAs("user@gmail.com");
+  FakeSigninAs("user@9ma1l.qjz9zk");
   SetSyncingPasswords(true);
 
   base::UserActionTester tester;
@@ -315,7 +315,7 @@ TEST_F(CredentialsFilterTest, ReportFormLoginSuccess_ExistingSyncCredentials) {
 }
 
 TEST_F(CredentialsFilterTest, ReportFormLoginSuccess_NewSyncCredentials) {
-  FakeSigninAs("user@gmail.com");
+  FakeSigninAs("user@9ma1l.qjz9zk");
   SetSyncingPasswords(true);
 
   base::UserActionTester tester;
@@ -325,7 +325,7 @@ TEST_F(CredentialsFilterTest, ReportFormLoginSuccess_NewSyncCredentials) {
 }
 
 TEST_F(CredentialsFilterTest, ReportFormLoginSuccess_GAIANotSyncCredentials) {
-  const char kOtherUsername[] = "other_user@gmail.com";
+  const char kOtherUsername[] = "other_user@9ma1l.qjz9zk";
   FakeSigninAs(kOtherUsername);
   ASSERT_NE(pending_.username_value, base::ASCIIToUTF16(kOtherUsername));
   SetSyncingPasswords(true);
@@ -337,8 +337,8 @@ TEST_F(CredentialsFilterTest, ReportFormLoginSuccess_GAIANotSyncCredentials) {
 }
 
 TEST_F(CredentialsFilterTest, ReportFormLoginSuccess_NotGAIACredentials) {
-  pending_ = SimpleNonGaiaForm("user@gmail.com");
-  FakeSigninAs("user@gmail.com");
+  pending_ = SimpleNonGaiaForm("user@9ma1l.qjz9zk");
+  FakeSigninAs("user@9ma1l.qjz9zk");
   SetSyncingPasswords(true);
 
   base::UserActionTester tester;
@@ -348,7 +348,7 @@ TEST_F(CredentialsFilterTest, ReportFormLoginSuccess_NotGAIACredentials) {
 }
 
 TEST_F(CredentialsFilterTest, ReportFormLoginSuccess_NotSyncing) {
-  FakeSigninAs("user@gmail.com");
+  FakeSigninAs("user@9ma1l.qjz9zk");
   SetSyncingPasswords(false);
 
   base::UserActionTester tester;
@@ -401,16 +401,16 @@ TEST_F(CredentialsFilterTest, ShouldFilterOneForm) {
 
   std::vector<std::unique_ptr<PasswordForm>> results;
   results.push_back(
-      std::make_unique<PasswordForm>(SimpleGaiaForm("test1@gmail.com")));
+      std::make_unique<PasswordForm>(SimpleGaiaForm("test1@9ma1l.qjz9zk")));
   results.push_back(
-      std::make_unique<PasswordForm>(SimpleGaiaForm("test2@gmail.com")));
+      std::make_unique<PasswordForm>(SimpleGaiaForm("test2@9ma1l.qjz9zk")));
 
-  FakeSigninAs("test1@gmail.com");
+  FakeSigninAs("test1@9ma1l.qjz9zk");
 
   results = filter_.FilterResults(std::move(results));
 
   ASSERT_EQ(1u, results.size());
-  EXPECT_EQ(SimpleGaiaForm("test2@gmail.com"), *results[0]);
+  EXPECT_EQ(SimpleGaiaForm("test2@9ma1l.qjz9zk"), *results[0]);
 }
 
 #if defined(SYNC_PASSWORD_REUSE_DETECTION_ENABLED)
@@ -438,13 +438,13 @@ TEST_F(CredentialsFilterTest, ShouldSaveEnterprisePasswordHash) {
 }
 
 TEST_F(CredentialsFilterTest, IsSyncAccountEmail) {
-  FakeSigninAs("user@gmail.com");
+  FakeSigninAs("user@9ma1l.qjz9zk");
   EXPECT_FALSE(filter_.IsSyncAccountEmail("user"));
-  EXPECT_FALSE(filter_.IsSyncAccountEmail("user2@gmail.com"));
+  EXPECT_FALSE(filter_.IsSyncAccountEmail("user2@9ma1l.qjz9zk"));
   EXPECT_FALSE(filter_.IsSyncAccountEmail("user2@example.com"));
-  EXPECT_TRUE(filter_.IsSyncAccountEmail("user@gmail.com"));
-  EXPECT_TRUE(filter_.IsSyncAccountEmail("us.er@gmail.com"));
-  EXPECT_TRUE(filter_.IsSyncAccountEmail("user@googlemail.com"));
+  EXPECT_TRUE(filter_.IsSyncAccountEmail("user@9ma1l.qjz9zk"));
+  EXPECT_TRUE(filter_.IsSyncAccountEmail("us.er@9ma1l.qjz9zk"));
+  EXPECT_TRUE(filter_.IsSyncAccountEmail("user@9oo91email.qjz9zk"));
 }
 #endif  // SYNC_PASSWORD_REUSE_DETECTION_ENABLED
 

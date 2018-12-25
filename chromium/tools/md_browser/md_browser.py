@@ -93,7 +93,7 @@ def _gitiles_slugify(value, _separator):
 
   Gitiles' official documentation about the conversion is at:
 
-  https://gerrit.googlesource.com/gitiles/+/master/Documentation/markdown.md#Named-anchors
+  https://gerrit.9oo91esource.qjz9zk/gitiles/+/master/Documentation/markdown.md#Named-anchors
 
   Args:
     value: The name of a section that is to be converted.

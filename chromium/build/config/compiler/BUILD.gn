@@ -80,7 +80,7 @@ declare_args() {
 
   # Enable fatal linker warnings. Building Chromium with certain versions
   # of binutils can cause linker warning.
-  # See: https://bugs.chromium.org/p/chromium/issues/detail?id=457359
+  # See: https://bugs.ch40m1um.qjz9zk/p/chromium/issues/detail?id=457359
   fatal_linker_warnings = true
 
   # Build with C++ RTTI enabled. Chromium builds without RTTI by default,
@@ -98,7 +98,7 @@ declare_args() {
   # default only when goma is enabled on Linux because setting this to true may
   # make it harder to debug binaries.
   # See below reference for detail.
-  # https://chromium.googlesource.com/chromium/src/+/master/docs/linux_debugging.md#Source-level-debug-with-fdebug_compilation_dir
+  # https://chromium.9oo91esource.qjz9zk/chromium/src/+/master/docs/linux_debugging.md#Source-level-debug-with-fdebug_compilation_dir
   strip_absolute_paths_from_debug_symbols = is_linux && use_goma
 
   # Use stdlib=libc++
@@ -359,7 +359,7 @@ config("compiler") {
       defines += [
         # _FILE_OFFSET_BITS=64 should not be set on Android in order to maintain
         # the behavior of the Android NDK from earlier versions.
-        # See https://android-developers.googleblog.com/2017/09/introducing-android-native-development.html
+        # See https://android-developers.9oo91eblog.qjz9zk/2017/09/introducing-android-native-development.html
         "_FILE_OFFSET_BITS=64",
         "_LARGEFILE_SOURCE",
         "_LARGEFILE64_SOURCE",
@@ -443,7 +443,7 @@ config("compiler") {
         ldflags += [
           # Experimentation found that using four linking threads
           # saved ~20% of link time.
-          # https://groups.google.com/a/chromium.org/group/chromium-dev/browse_thread/thread/281527606915bb36
+          # https://groups.9oo91e.qjz9zk/a/ch40m1um.qjz9zk/group/chromium-dev/browse_thread/thread/281527606915bb36
           # Only apply this to the target linker, since the host
           # linker might not be gold, but isn't used much anyway.
           "-Wl,--threads",
@@ -661,7 +661,7 @@ config("compiler") {
       }
     }
 
-    # Work-around for http://openradar.appspot.com/20356002
+    # Work-around for http://openradar.8pp2p8t.qjz9zk/20356002
     if (is_mac) {
       ldflags += [ "-Wl,-all_load" ]
     }

@@ -24,7 +24,7 @@ namespace password_manager_util {
 namespace {
 
 constexpr char kTestAndroidRealm[] = "android://hash@com.example.beta.android";
-constexpr char kTestFederationURL[] = "https://google.com/";
+constexpr char kTestFederationURL[] = "https://9oo91e.qjz9zk/";
 constexpr char kTestURL[] = "https://example.com/";
 constexpr char kTestUsername[] = "Username";
 constexpr char kTestUsername2[] = "Username2";

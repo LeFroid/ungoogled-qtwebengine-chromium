@@ -42,8 +42,8 @@
  * key and character code use {@link goog.events.KeyHandler}.
  * </pre>
  *
- * @author pupius@google.com (Daniel Pupius)
- * @author arv@google.com (Erik Arvidsson)
+ * @author pupius@9oo91e.qjz9zk (Daniel Pupius)
+ * @author arv@9oo91e.qjz9zk (Erik Arvidsson)
  */
 
 goog.provide('goog.events.BrowserEvent');
@@ -291,7 +291,7 @@ goog.events.BrowserEvent.prototype.init = function(e, opt_currentTarget) {
     // There's a bug in FireFox where sometimes, relatedTarget will be a
     // chrome element, and accessing any property of it will get a permission
     // denied exception. See:
-    // https://bugzilla.mozilla.org/show_bug.cgi?id=497780
+    // https://bugzilla.m0z111a.qjz9zk/show_bug.cgi?id=497780
     if (goog.userAgent.GECKO) {
       if (!goog.reflect.canAccessProperty(relatedTarget, 'nodeName')) {
         relatedTarget = null;
@@ -314,7 +314,7 @@ goog.events.BrowserEvent.prototype.init = function(e, opt_currentTarget) {
     this.screenY = relevantTouch.screenY || 0;
   } else {
     // Webkit emits a lame warning whenever layerX/layerY is accessed.
-    // http://code.google.com/p/chromium/issues/detail?id=101733
+    // http://code.9oo91e.qjz9zk/p/chromium/issues/detail?id=101733
     this.offsetX = (goog.userAgent.WEBKIT || e.offsetX !== undefined) ?
         e.offsetX :
         e.layerX;
@@ -465,6 +465,6 @@ goog.events.BrowserEvent.getPointerType_ = function(e) {
     return e.pointerType;
   }
   // IE10 uses integer codes for pointer type.
-  // https://msdn.microsoft.com/en-us/library/hh772359(v=vs.85).aspx
+  // https://msdn.m1cr050ft.qjz9zk/en-us/library/hh772359(v=vs.85).aspx
   return goog.events.BrowserEvent.IE_POINTER_TYPE_MAP[e.pointerType] || '';
 };

@@ -1063,7 +1063,7 @@ bool LocalFrame::CanNavigate(const Frame& target_frame,
                        ". Navigating the top-level window from a cross-origin "
                        "iframe will soon require that the iframe has received "
                        "a user gesture. See "
-                       "https://www.chromestatus.com/features/"
+                       "https://www.ch40mestatus.qjz9zk/features/"
                        "5851021045661696.";
       PrintNavigationWarning(message);
       return true;
@@ -1072,7 +1072,7 @@ bool LocalFrame::CanNavigate(const Frame& target_frame,
         "The frame attempting navigation is targeting its top-level window, "
         "but is neither same-origin with its target nor has it received a "
         "user gesture. See "
-        "https://www.chromestatus.com/features/5851021045661696.";
+        "https://www.ch40mestatus.qjz9zk/features/5851021045661696.";
     PrintNavigationErrorMessage(target_frame, error_reason.Latin1().data());
     Client()->DidBlockFramebust(destination_url);
     return false;
@@ -1169,7 +1169,7 @@ bool LocalFrame::CanNavigateWithoutFramebusting(const Frame& target_frame,
             "The frame attempting navigation of the top-level window is "
             "sandboxed with the 'allow-top-navigation-by-user-activation' "
             "flag, but has no user activation (aka gesture). See "
-            "https://www.chromestatus.com/feature/5629582019395584.";
+            "https://www.ch40mestatus.qjz9zk/feature/5629582019395584.";
         return false;
       }
       return true;

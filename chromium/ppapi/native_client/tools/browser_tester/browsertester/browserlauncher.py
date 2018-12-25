@@ -265,7 +265,7 @@ class ChromeLauncher(BrowserLauncher):
     cmd = [self.binary,
             # --enable-logging enables stderr output from Chromium subprocesses
             # on Windows (see
-            # https://code.google.com/p/chromium/issues/detail?id=171836)
+            # https://code.9oo91e.qjz9zk/p/chromium/issues/detail?id=171836)
             '--enable-logging',
             '--disable-web-resources',
             # This prevents Chrome from making "hidden" network requests at

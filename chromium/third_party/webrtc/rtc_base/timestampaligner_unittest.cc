@@ -130,7 +130,7 @@ TEST(TimestampAlignerTest, AttenuateTimestampJitterSmallNegDrift) {
 }
 
 // 3000 ppm, 3 ms / s, is the worst observed drift, see
-// https://bugs.chromium.org/p/webrtc/issues/detail?id=5456
+// https://bugs.ch40m1um.qjz9zk/p/webrtc/issues/detail?id=5456
 TEST(TimestampAlignerTest, AttenuateTimestampJitterLargePosDrift) {
   TestTimestampFilter(0.003);
 }

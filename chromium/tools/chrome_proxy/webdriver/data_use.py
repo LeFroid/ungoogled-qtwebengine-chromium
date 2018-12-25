@@ -23,7 +23,7 @@ class DataUseAscription(IntegrationTest):
       t.AddChromeArg('--load-extension=%s' % ext_path)
 
       # Load the URL and verify the via header appears.
-      t.LoadURL('http://check.googlezip.net/test.html')
+      t.LoadURL('http://check.9oo91e21p.qjz9zk/test.html')
       responses = t.GetHTTPResponses()
       for response in responses:
         self.assertHasChromeProxyViaHeader(response)
@@ -32,7 +32,7 @@ class DataUseAscription(IntegrationTest):
       t.LoadURL('chrome-extension://pfmgfdlgomnbgkofeojodiodmgpgmkac/'
                 'detailed_data_usage.html')
       xpath = ('//span[@class=\'hostname\' and '
-               'contains(text(),\'check.googlezip.net\')]')
+               'contains(text(),\'check.9oo91e21p.qjz9zk\')]')
       js_xpath_query = ("document.evaluate(\"%s\", document, null, "
                         "XPathResult.ANY_UNORDERED_NODE_TYPE, null )"
                         ".singleNodeValue;" % xpath)

@@ -887,7 +887,7 @@ TEST_F(AcmReRegisterIsacMtTestOldApi, MAYBE_DoTest) {
 #endif
 
 // Disabling all of these tests on iOS until file support has been added.
-// See https://code.google.com/p/webrtc/issues/detail?id=4752 for details.
+// See https://code.9oo91e.qjz9zk/p/webrtc/issues/detail?id=4752 for details.
 #if !defined(WEBRTC_IOS)
 
 class AcmReceiverBitExactnessOldApi : public ::testing::Test {

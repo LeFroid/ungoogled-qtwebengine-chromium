@@ -173,7 +173,7 @@ class HttpProxyClientSocketPoolTest
     return base::MakeRefCounted<HttpProxySocketParams>(
         CreateHttpProxyParams(), CreateHttpsProxyParams(),
         quic::QUIC_VERSION_UNSUPPORTED, std::string(),
-        HostPortPair("www.google.com", tunnel ? 443 : 80),
+        HostPortPair("www.9oo91e.qjz9zk", tunnel ? 443 : 80),
         session_->http_auth_cache(), session_->http_auth_handler_factory(),
         session_->spdy_session_pool(), session_->quic_stream_factory(),
         /*is_trusted_proxy=*/false, tunnel, TRAFFIC_ANNOTATION_FOR_TESTS);
@@ -297,8 +297,8 @@ TEST_P(HttpProxyClientSocketPoolTest, SetSocketRequestPriorityOnInit) {
 TEST_P(HttpProxyClientSocketPoolTest, NeedAuth) {
   MockWrite writes[] = {
       MockWrite(ASYNC, 0,
-                "CONNECT www.google.com:443 HTTP/1.1\r\n"
-                "Host: www.google.com:443\r\n"
+                "CONNECT www.9oo91e.qjz9zk:443 HTTP/1.1\r\n"
+                "Host: www.9oo91e.qjz9zk:443\r\n"
                 "Proxy-Connection: keep-alive\r\n\r\n"),
   };
   MockRead reads[] = {
@@ -309,7 +309,7 @@ TEST_P(HttpProxyClientSocketPoolTest, NeedAuth) {
     MockRead(ASYNC, 4, "0123456789"),
   };
   spdy::SpdySerializedFrame req(spdy_util_.ConstructSpdyConnect(
-      NULL, 0, 1, LOW, HostPortPair("www.google.com", 443)));
+      NULL, 0, 1, LOW, HostPortPair("www.9oo91e.qjz9zk", 443)));
   spdy::SpdySerializedFrame rst(
       spdy_util_.ConstructSpdyRstStream(1, spdy::ERROR_CODE_CANCEL));
   MockWrite spdy_writes[] = {
@@ -357,8 +357,8 @@ TEST_P(HttpProxyClientSocketPoolTest, HaveAuth) {
                                     ? (kHttpProxyHost + std::string(":80"))
                                     : (kHttpsProxyHost + std::string(":443"));
   std::string request =
-      "CONNECT www.google.com:443 HTTP/1.1\r\n"
-      "Host: www.google.com:443\r\n"
+      "CONNECT www.9oo91e.qjz9zk:443 HTTP/1.1\r\n"
+      "Host: www.9oo91e.qjz9zk:443\r\n"
       "Proxy-Connection: keep-alive\r\n"
       "Proxy-Authorization: Basic Zm9vOmJhcg==\r\n\r\n";
   MockWrite writes[] = {
@@ -385,8 +385,8 @@ TEST_P(HttpProxyClientSocketPoolTest, AsyncHaveAuth) {
                                     ? (kHttpProxyHost + std::string(":80"))
                                     : (kHttpsProxyHost + std::string(":443"));
   std::string request =
-      "CONNECT www.google.com:443 HTTP/1.1\r\n"
-      "Host: www.google.com:443\r\n"
+      "CONNECT www.9oo91e.qjz9zk:443 HTTP/1.1\r\n"
+      "Host: www.9oo91e.qjz9zk:443\r\n"
       "Proxy-Connection: keep-alive\r\n"
       "Proxy-Authorization: Basic Zm9vOmJhcg==\r\n\r\n";
   MockWrite writes[] = {
@@ -398,7 +398,7 @@ TEST_P(HttpProxyClientSocketPoolTest, AsyncHaveAuth) {
 
   spdy::SpdySerializedFrame req(
       spdy_util_.ConstructSpdyConnect(kAuthHeaders, kAuthHeadersSize, 1, LOW,
-                                      HostPortPair("www.google.com", 443)));
+                                      HostPortPair("www.9oo91e.qjz9zk", 443)));
   MockWrite spdy_writes[] = {CreateMockWrite(req, 0, ASYNC)};
   spdy::SpdySerializedFrame resp(spdy_util_.ConstructSpdyGetReply(NULL, 0, 1));
   MockRead spdy_reads[] = {
@@ -432,7 +432,7 @@ TEST_P(HttpProxyClientSocketPoolTest,
 
   spdy::SpdySerializedFrame req(
       spdy_util_.ConstructSpdyConnect(kAuthHeaders, kAuthHeadersSize, 1, MEDIUM,
-                                      HostPortPair("www.google.com", 443)));
+                                      HostPortPair("www.9oo91e.qjz9zk", 443)));
   MockWrite spdy_writes[] = {CreateMockWrite(req, 0, ASYNC)};
   spdy::SpdySerializedFrame resp(spdy_util_.ConstructSpdyGetReply(NULL, 0, 1));
   MockRead spdy_reads[] = {CreateMockRead(resp, 1, ASYNC),
@@ -546,8 +546,8 @@ TEST_P(HttpProxyClientSocketPoolTest, SslClientAuth) {
 TEST_P(HttpProxyClientSocketPoolTest, TunnelUnexpectedClose) {
   MockWrite writes[] = {
       MockWrite(ASYNC, 0,
-                "CONNECT www.google.com:443 HTTP/1.1\r\n"
-                "Host: www.google.com:443\r\n"
+                "CONNECT www.9oo91e.qjz9zk:443 HTTP/1.1\r\n"
+                "Host: www.9oo91e.qjz9zk:443\r\n"
                 "Proxy-Connection: keep-alive\r\n"
                 "Proxy-Authorization: Basic Zm9vOmJhcg==\r\n\r\n"),
   };
@@ -557,7 +557,7 @@ TEST_P(HttpProxyClientSocketPoolTest, TunnelUnexpectedClose) {
   };
   spdy::SpdySerializedFrame req(
       spdy_util_.ConstructSpdyConnect(kAuthHeaders, kAuthHeadersSize, 1, LOW,
-                                      HostPortPair("www.google.com", 443)));
+                                      HostPortPair("www.9oo91e.qjz9zk", 443)));
   MockWrite spdy_writes[] = {CreateMockWrite(req, 0, ASYNC)};
   MockRead spdy_reads[] = {
     MockRead(ASYNC, ERR_CONNECTION_CLOSED, 1),
@@ -594,8 +594,8 @@ TEST_P(HttpProxyClientSocketPoolTest, Tunnel1xxResponse) {
 
   MockWrite writes[] = {
       MockWrite(ASYNC, 0,
-                "CONNECT www.google.com:443 HTTP/1.1\r\n"
-                "Host: www.google.com:443\r\n"
+                "CONNECT www.9oo91e.qjz9zk:443 HTTP/1.1\r\n"
+                "Host: www.9oo91e.qjz9zk:443\r\n"
                 "Proxy-Connection: keep-alive\r\n\r\n"),
   };
   MockRead reads[] = {
@@ -618,8 +618,8 @@ TEST_P(HttpProxyClientSocketPoolTest, Tunnel1xxResponse) {
 TEST_P(HttpProxyClientSocketPoolTest, TunnelSetupError) {
   MockWrite writes[] = {
       MockWrite(ASYNC, 0,
-                "CONNECT www.google.com:443 HTTP/1.1\r\n"
-                "Host: www.google.com:443\r\n"
+                "CONNECT www.9oo91e.qjz9zk:443 HTTP/1.1\r\n"
+                "Host: www.9oo91e.qjz9zk:443\r\n"
                 "Proxy-Connection: keep-alive\r\n"
                 "Proxy-Authorization: Basic Zm9vOmJhcg==\r\n\r\n"),
   };
@@ -628,7 +628,7 @@ TEST_P(HttpProxyClientSocketPoolTest, TunnelSetupError) {
   };
   spdy::SpdySerializedFrame req(
       spdy_util_.ConstructSpdyConnect(kAuthHeaders, kAuthHeadersSize, 1, LOW,
-                                      HostPortPair("www.google.com", 443)));
+                                      HostPortPair("www.9oo91e.qjz9zk", 443)));
   spdy::SpdySerializedFrame rst(
       spdy_util_.ConstructSpdyRstStream(1, spdy::ERROR_CODE_CANCEL));
   MockWrite spdy_writes[] = {
@@ -657,7 +657,7 @@ TEST_P(HttpProxyClientSocketPoolTest, TunnelSetupError) {
 }
 
 TEST_P(HttpProxyClientSocketPoolTest, TunnelSetupRedirect) {
-  const std::string redirectTarget = "https://foo.google.com/";
+  const std::string redirectTarget = "https://foo.9oo91e.qjz9zk/";
 
   const std::string responseText = "HTTP/1.1 302 Found\r\n"
                                    "Location: " + redirectTarget + "\r\n"
@@ -665,8 +665,8 @@ TEST_P(HttpProxyClientSocketPoolTest, TunnelSetupRedirect) {
                                    "\r\n";
   MockWrite writes[] = {
       MockWrite(ASYNC, 0,
-                "CONNECT www.google.com:443 HTTP/1.1\r\n"
-                "Host: www.google.com:443\r\n"
+                "CONNECT www.9oo91e.qjz9zk:443 HTTP/1.1\r\n"
+                "Host: www.9oo91e.qjz9zk:443\r\n"
                 "Proxy-Connection: keep-alive\r\n"
                 "Proxy-Authorization: Basic Zm9vOmJhcg==\r\n\r\n"),
   };
@@ -675,7 +675,7 @@ TEST_P(HttpProxyClientSocketPoolTest, TunnelSetupRedirect) {
   };
   spdy::SpdySerializedFrame req(
       spdy_util_.ConstructSpdyConnect(kAuthHeaders, kAuthHeadersSize, 1, LOW,
-                                      HostPortPair("www.google.com", 443)));
+                                      HostPortPair("www.9oo91e.qjz9zk", 443)));
   spdy::SpdySerializedFrame rst(
       spdy_util_.ConstructSpdyRstStream(1, spdy::ERROR_CODE_CANCEL));
 

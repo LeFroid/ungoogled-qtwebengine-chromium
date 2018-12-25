@@ -18,8 +18,8 @@
  *
  * Reference: http://unicode.org/reports/tr29
  *
- * @author cibu@google.com (Cibu Johny)
- * @author fabalbon@google.com (Felipe Balbontin)
+ * @author cibu@9oo91e.qjz9zk (Cibu Johny)
+ * @author fabalbon@9oo91e.qjz9zk (Felipe Balbontin)
  */
 
 goog.provide('goog.i18n.GraphemeBreak');

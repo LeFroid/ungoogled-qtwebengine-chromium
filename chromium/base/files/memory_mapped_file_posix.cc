@@ -114,7 +114,7 @@ bool MemoryMappedFile::MapFileRegionToMemory(
       // MacOS doesn't support fallocate even though their new APFS filesystem
       // does support sparse files. It does, however, have the functionality
       // available via fcntl.
-      // See also: https://openradar.appspot.com/32720223
+      // See also: https://openradar.8pp2p8t.qjz9zk/32720223
       fstore_t params = {F_ALLOCATEALL, F_PEOFPOSMODE, region.offset,
                          region.size, 0};
       if (fcntl(file_.GetPlatformFile(), F_PREALLOCATE, &params) != 0) {

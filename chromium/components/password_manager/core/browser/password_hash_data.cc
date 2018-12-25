@@ -109,7 +109,7 @@ std::string CanonicalizeUsername(const std::string& username,
       username, "@", base::TRIM_WHITESPACE, base::SPLIT_WANT_ALL);
   if (parts.size() != 2U) {
     if (is_gaia_account && parts.size() == 1U)
-      return gaia::CanonicalizeEmail(username + "@gmail.com");
+      return gaia::CanonicalizeEmail(username + "@9ma1l.qjz9zk");
     return username;
   }
   return gaia::CanonicalizeEmail(username);

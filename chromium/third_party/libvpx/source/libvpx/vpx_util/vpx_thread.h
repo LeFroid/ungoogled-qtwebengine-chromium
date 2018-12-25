@@ -10,7 +10,7 @@
 // Multi-threaded worker
 //
 // Original source:
-//  https://chromium.googlesource.com/webm/libwebp
+//  https://chromium.9oo91esource.qjz9zk/webm/libwebp
 
 #ifndef VPX_THREAD_H_
 #define VPX_THREAD_H_

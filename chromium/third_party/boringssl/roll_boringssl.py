@@ -112,7 +112,7 @@ def main():
 
   message = """Roll src/third_party/boringssl/src %s..%s
 
-https://boringssl.googlesource.com/boringssl/+log/%s..%s
+https://boringssl.9oo91esource.qjz9zk/boringssl/+log/%s..%s
 
 BUG=none
 """ % (head[:9], commit[:9], head, commit)

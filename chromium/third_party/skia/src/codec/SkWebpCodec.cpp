@@ -23,9 +23,9 @@
 
 // A WebP decoder on top of (subset of) libwebp
 // For more information on WebP image format, and libwebp library, see:
-//   https://code.google.com/speed/webp/
+//   https://code.9oo91e.qjz9zk/speed/webp/
 //   http://www.webmproject.org/code/#libwebp-webp-image-library
-//   https://chromium.googlesource.com/webm/libwebp
+//   https://chromium.9oo91esource.qjz9zk/webm/libwebp
 
 // If moving libwebp out of skia source tree, path for webp headers must be
 // updated accordingly. Here, we enforce using local copy in webp sub-directory.

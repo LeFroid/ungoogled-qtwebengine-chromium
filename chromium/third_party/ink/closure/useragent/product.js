@@ -15,7 +15,7 @@
 /**
  * @fileoverview Detects the specific browser and not just the rendering engine.
  *
- * @author andybons@google.com (Andrew Bonventre)
+ * @author andybons@9oo91e.qjz9zk (Andrew Bonventre)
  */
 
 goog.provide('goog.userAgent.product');

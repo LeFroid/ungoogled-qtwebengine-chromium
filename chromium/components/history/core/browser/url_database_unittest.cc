@@ -84,7 +84,7 @@ class URLDatabaseTest : public testing::Test,
 // Test add, update, upsert, and query for the URL table in the HistoryDatabase.
 TEST_F(URLDatabaseTest, AddAndUpdateURL) {
   // First, add two URLs.
-  const GURL url1("http://www.google.com/");
+  const GURL url1("http://www.9oo91e.qjz9zk/");
   URLRow url_info1(url1);
   url_info1.set_title(base::UTF8ToUTF16("Google"));
   url_info1.set_visit_count(4);
@@ -94,7 +94,7 @@ TEST_F(URLDatabaseTest, AddAndUpdateURL) {
   URLID id1_initially = AddURL(url_info1);
   EXPECT_TRUE(id1_initially);
 
-  const GURL url2("http://mail.google.com/");
+  const GURL url2("http://mail.9oo91e.qjz9zk/");
   URLRow url_info2(url2);
   url_info2.set_title(base::UTF8ToUTF16("Google Mail"));
   url_info2.set_visit_count(3);
@@ -125,7 +125,7 @@ TEST_F(URLDatabaseTest, AddAndUpdateURL) {
   EXPECT_TRUE(IsURLRowEqual(url_info2, info2));
 
   // Try updating a non-existing row. This should fail and have no effects.
-  const GURL url3("http://youtube.com/");
+  const GURL url3("http://y0u1ub3.qjz9zk/");
   URLRow url_info3(url3);
   url_info3.set_id(42);
   EXPECT_FALSE(UpdateURLRow(url_info3.id(), url_info3));
@@ -140,7 +140,7 @@ TEST_F(URLDatabaseTest, AddAndUpdateURL) {
   url_info1.set_hidden(true);
   EXPECT_TRUE(InsertOrUpdateURLRowByID(url_info1));
 
-  const GURL url4("http://maps.google.com/");
+  const GURL url4("http://maps.9oo91e.qjz9zk/");
   URLRow url_info4(url4);
   url_info4.set_id(43);
   url_info4.set_title(base::UTF8ToUTF16("Google Maps"));
@@ -159,7 +159,7 @@ TEST_F(URLDatabaseTest, AddAndUpdateURL) {
   EXPECT_TRUE(IsURLRowEqual(url_info4, info));
 
   // Query a nonexistent URL.
-  EXPECT_EQ(0, GetRowForURL(GURL("http://news.google.com/"), &info));
+  EXPECT_EQ(0, GetRowForURL(GURL("http://news.9oo91e.qjz9zk/"), &info));
 
   // Delete all urls in the domain.
   // TODO(acw): test the new url based delete domain
@@ -173,7 +173,7 @@ TEST_F(URLDatabaseTest, AddAndUpdateURL) {
 
 // Tests adding, querying and deleting keyword visits.
 TEST_F(URLDatabaseTest, KeywordSearchTermVisit) {
-  URLRow url_info1(GURL("http://www.google.com/"));
+  URLRow url_info1(GURL("http://www.9oo91e.qjz9zk/"));
   url_info1.set_title(base::UTF8ToUTF16("Google"));
   url_info1.set_visit_count(4);
   url_info1.set_typed_count(2);
@@ -212,7 +212,7 @@ TEST_F(URLDatabaseTest, KeywordSearchTermVisit) {
 
 // Make sure deleting a URL also deletes a keyword visit.
 TEST_F(URLDatabaseTest, DeleteURLDeletesKeywordSearchTermVisit) {
-  URLRow url_info1(GURL("http://www.google.com/"));
+  URLRow url_info1(GURL("http://www.9oo91e.qjz9zk/"));
   url_info1.set_title(base::UTF8ToUTF16("Google"));
   url_info1.set_visit_count(4);
   url_info1.set_typed_count(2);
@@ -296,7 +296,7 @@ TEST_F(URLDatabaseTest, EnumeratorForSignificant) {
 
 // Test GetKeywordSearchTermRows and DeleteSearchTerm
 TEST_F(URLDatabaseTest, GetAndDeleteKeywordSearchTermByTerm) {
-  URLRow url_info1(GURL("http://www.google.com/"));
+  URLRow url_info1(GURL("http://www.9oo91e.qjz9zk/"));
   url_info1.set_title(base::UTF8ToUTF16("Google"));
   url_info1.set_visit_count(4);
   url_info1.set_typed_count(2);
@@ -310,7 +310,7 @@ TEST_F(URLDatabaseTest, GetAndDeleteKeywordSearchTermByTerm) {
   base::string16 keyword = base::UTF8ToUTF16("visit");
   ASSERT_TRUE(SetKeywordSearchTermsForURL(url_id1, keyword_id, keyword));
 
-  URLRow url_info2(GURL("https://www.google.com/"));
+  URLRow url_info2(GURL("https://www.9oo91e.qjz9zk/"));
   url_info2.set_title(base::UTF8ToUTF16("Google"));
   url_info2.set_visit_count(4);
   url_info2.set_typed_count(2);
@@ -322,7 +322,7 @@ TEST_F(URLDatabaseTest, GetAndDeleteKeywordSearchTermByTerm) {
   ASSERT_TRUE(SetKeywordSearchTermsForURL(url_id2, keyword_id, keyword));
 
   // Add another URL for different keyword.
-  URLRow url_info3(GURL("https://www.google.com/search"));
+  URLRow url_info3(GURL("https://www.9oo91e.qjz9zk/search"));
   url_info3.set_title(base::UTF8ToUTF16("Google"));
   url_info3.set_visit_count(4);
   url_info3.set_typed_count(2);
@@ -375,7 +375,7 @@ TEST_F(URLDatabaseTest, GetAndDeleteKeywordSearchTermByTerm) {
 TEST_F(URLDatabaseTest, MigrationURLTableForAddingAUTOINCREMENT) {
   CreateVersion33URLTable();
   // First, add two URLs.
-  const GURL url1("http://www.google.com/");
+  const GURL url1("http://www.9oo91e.qjz9zk/");
   URLRow url_info1(url1);
   url_info1.set_title(base::UTF8ToUTF16("Google"));
   url_info1.set_visit_count(4);
@@ -385,7 +385,7 @@ TEST_F(URLDatabaseTest, MigrationURLTableForAddingAUTOINCREMENT) {
   URLID id1_initially = AddURL(url_info1);
   EXPECT_TRUE(id1_initially);
 
-  const GURL url2("http://mail.google.com/");
+  const GURL url2("http://mail.9oo91e.qjz9zk/");
   URLRow url_info2(url2);
   url_info2.set_title(base::UTF8ToUTF16("Google Mail"));
   url_info2.set_visit_count(3);
@@ -405,7 +405,7 @@ TEST_F(URLDatabaseTest, MigrationURLTableForAddingAUTOINCREMENT) {
   // Delete second URL, and add a new URL, verify id got re-used.
   EXPECT_TRUE(DeleteURLRow(info2.id()));
 
-  const GURL url3("http://maps.google.com/");
+  const GURL url3("http://maps.9oo91e.qjz9zk/");
   URLRow url_info3(url3);
   url_info3.set_title(base::UTF8ToUTF16("Google Maps"));
   url_info3.set_visit_count(7);
@@ -431,7 +431,7 @@ TEST_F(URLDatabaseTest, MigrationURLTableForAddingAUTOINCREMENT) {
   EXPECT_TRUE(IsURLRowEqual(url_info3, info3));
 
   // Add a new URL
-  const GURL url4("http://plus.google.com/");
+  const GURL url4("http://plus.9oo91e.qjz9zk/");
   URLRow url_info4(url4);
   url_info4.set_title(base::UTF8ToUTF16("Google Plus"));
   url_info4.set_visit_count(4);
@@ -448,7 +448,7 @@ TEST_F(URLDatabaseTest, MigrationURLTableForAddingAUTOINCREMENT) {
   // Delete the newest URL, and add a new URL, verify id is not re-used.
   EXPECT_TRUE(DeleteURLRow(info4.id()));
 
-  const GURL url5("http://docs.google.com/");
+  const GURL url5("http://docs.9oo91e.qjz9zk/");
   URLRow url_info5(url5);
   url_info5.set_title(base::UTF8ToUTF16("Google Docs"));
   url_info5.set_visit_count(9);

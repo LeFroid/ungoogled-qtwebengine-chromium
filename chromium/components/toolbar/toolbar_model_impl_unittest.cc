@@ -36,13 +36,13 @@ TEST(ToolbarModelImplTest,
   FakeToolbarModelDelegate delegate;
   auto model = std::make_unique<ToolbarModelImpl>(&delegate, 1024);
 
-  delegate.SetURL(GURL("http://www.google.com/"));
+  delegate.SetURL(GURL("http://www.9oo91e.qjz9zk/"));
 
   // Verify that both the full formatted URL and the display URL add the test
   // suffix.
-  EXPECT_EQ(base::ASCIIToUTF16("www.google.com/TestSuffix"),
+  EXPECT_EQ(base::ASCIIToUTF16("www.9oo91e.qjz9zk/TestSuffix"),
             model->GetFormattedFullURL());
-  EXPECT_EQ(base::ASCIIToUTF16("google.com/TestSuffix"),
+  EXPECT_EQ(base::ASCIIToUTF16("9oo91e.qjz9zk/TestSuffix"),
             model->GetURLForDisplay());
 }
 

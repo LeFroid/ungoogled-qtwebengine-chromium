@@ -38,7 +38,7 @@ class SkiaGmailthreadDesktopPageSet(story.StorySet):
 
     urls_list = [
       # Why: productivity, top google properties, long email thread.
-      'https://mail.google.com/mail/?shva=1#inbox/13ba91194d0b8a2e',
+      'https://mail.9oo91e.qjz9zk/mail/?shva=1#inbox/13ba91194d0b8a2e',
     ]
 
     for url in urls_list:

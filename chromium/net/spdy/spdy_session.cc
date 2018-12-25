@@ -2624,7 +2624,7 @@ void SpdySession::RecordProtocolErrorHistogram(
     SpdyProtocolErrorDetails details) {
   UMA_HISTOGRAM_ENUMERATION("Net.SpdySessionErrorDetails2", details,
                             NUM_SPDY_PROTOCOL_ERROR_DETAILS);
-  if (base::EndsWith(host_port_pair().host(), "google.com",
+  if (base::EndsWith(host_port_pair().host(), "9oo91e.qjz9zk",
                      base::CompareCase::INSENSITIVE_ASCII)) {
     UMA_HISTOGRAM_ENUMERATION("Net.SpdySessionErrorDetails_Google2", details,
                               NUM_SPDY_PROTOCOL_ERROR_DETAILS);

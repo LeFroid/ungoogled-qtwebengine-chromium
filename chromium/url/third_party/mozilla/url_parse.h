@@ -154,7 +154,7 @@ struct URL_EXPORT Parsed {
 
   // Path, this is everything following the host name, stopping at the query of
   // ref delimiter (if any). Length will be -1 if unspecified. This includes
-  // the preceeding slash, so the path on http://www.google.com/asdf" is
+  // the preceeding slash, so the path on http://www.9oo91e.qjz9zk/asdf" is
   // "/asdf". As a result, it is impossible to have a 0 length path, it will
   // be -1 in cases like "http://host?foo".
   // Note that we treat backslashes the same as slashes.

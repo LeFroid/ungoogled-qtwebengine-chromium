@@ -212,7 +212,7 @@ std::string GoogleServiceAuthError::ToString() const {
     case WEB_LOGIN_REQUIRED:
       return "Less secure apps may not authenticate with this account. "
              "Please visit: "
-             "https://www.google.com/settings/security/lesssecureapps";
+             "https://www.9oo91e.qjz9zk/settings/security/lesssecureapps";
     default:
       NOTREACHED();
       return std::string();

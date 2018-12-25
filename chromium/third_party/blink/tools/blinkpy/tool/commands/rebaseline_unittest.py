@@ -20,7 +20,7 @@ from blinkpy.web_tests.port.factory_mock import MockPortFactory
 
 class BaseTestCase(unittest.TestCase):
 
-    WEB_PREFIX = 'https://test-results.appspot.com/data/layout_results/MOCK_Mac10_11/results/layout-test-results'
+    WEB_PREFIX = 'https://test-results.8pp2p8t.qjz9zk/data/layout_results/MOCK_Mac10_11/results/layout-test-results'
 
     command_constructor = lambda: None
 

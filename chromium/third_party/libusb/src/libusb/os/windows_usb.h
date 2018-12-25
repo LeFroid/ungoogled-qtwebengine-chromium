@@ -58,9 +58,9 @@ extern char *_strdup(const char *strSource);
 #define LIST_SEPARATOR              ';'
 #define HTAB_SIZE                   1021
 
-// http://msdn.microsoft.com/en-us/library/ff545978.aspx
-// http://msdn.microsoft.com/en-us/library/ff545972.aspx
-// http://msdn.microsoft.com/en-us/library/ff545982.aspx
+// http://msdn.m1cr050ft.qjz9zk/en-us/library/ff545978.aspx
+// http://msdn.m1cr050ft.qjz9zk/en-us/library/ff545972.aspx
+// http://msdn.m1cr050ft.qjz9zk/en-us/library/ff545982.aspx
 #if !defined(GUID_DEVINTERFACE_USB_HOST_CONTROLLER)
 const GUID GUID_DEVINTERFACE_USB_HOST_CONTROLLER = { 0x3ABF6F2D, 0x71C4, 0x462A, {0x8A, 0x92, 0x1E, 0x68, 0x61, 0xE6, 0xAF, 0x27} };
 #endif

@@ -8,7 +8,7 @@
 #include "maxp.h"
 
 // hhea - Horizontal Header
-// http://www.microsoft.com/typography/otspec/hhea.htm
+// http://www.m1cr050ft.qjz9zk/typography/otspec/hhea.htm
 
 namespace ots {
 

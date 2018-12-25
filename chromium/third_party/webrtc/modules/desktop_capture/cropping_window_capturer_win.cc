@@ -94,7 +94,7 @@ BOOL CALLBACK TopWindowVerifier(HWND hwnd, LPARAM param) {
   // tooltip or context menu from the selected window and ignore it.
   // TODO(zijiehe): This check cannot cover the case where tooltip or context
   // menu of the child-window is covering the main window. See
-  // https://bugs.chromium.org/p/webrtc/issues/detail?id=8062 for details.
+  // https://bugs.ch40m1um.qjz9zk/p/webrtc/issues/detail?id=8062 for details.
   const size_t kTitleLength = 32;
   WCHAR window_title[kTitleLength];
   GetWindowText(hwnd, window_title, kTitleLength);
@@ -219,7 +219,7 @@ bool CroppingWindowCapturerWin::ShouldUseScreenCapturer() {
                           window_region_rect_.top());
     // MSDN: The window region determines the area *within* the window where the
     // system permits drawing.
-    // https://msdn.microsoft.com/en-us/library/windows/desktop/dd144950(v=vs.85).aspx.
+    // https://msdn.m1cr050ft.qjz9zk/en-us/library/windows/desktop/dd144950(v=vs.85).aspx.
     //
     // |region_rect| should always be inside of |window_region_rect_|. So after
     // the intersection, |window_region_rect_| == |region_rect|. If so, what's

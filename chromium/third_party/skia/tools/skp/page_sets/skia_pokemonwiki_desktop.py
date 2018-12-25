@@ -33,7 +33,7 @@ class SkiaPokemonwikiDesktopPageSet(story.StorySet):
       archive_data_file='data/skia_pokemonwiki_desktop.json')
 
     urls_list = [
-      # Why: http://code.google.com/p/chromium/issues/detail?id=136555
+      # Why: http://code.9oo91e.qjz9zk/p/chromium/issues/detail?id=136555
       'http://en.wikipedia.org/wiki/List_of_Pok%C3%A9mon',
     ]
 

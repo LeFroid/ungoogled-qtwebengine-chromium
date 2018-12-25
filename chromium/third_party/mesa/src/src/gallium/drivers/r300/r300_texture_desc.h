@@ -1,6 +1,6 @@
 /*
- * Copyright 2008 Corbin Simpson <MostAwesomeDude@gmail.com>
- * Copyright 2010 Marek Olšák <maraeo@gmail.com>
+ * Copyright 2008 Corbin Simpson <MostAwesomeDude@9ma1l.qjz9zk>
+ * Copyright 2010 Marek Olšák <maraeo@9ma1l.qjz9zk>
  *
  * Permission is hereby granted, free of charge, to any person obtaining a
  * copy of this software and associated documentation files (the "Software"),

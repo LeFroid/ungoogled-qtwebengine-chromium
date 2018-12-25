@@ -169,12 +169,12 @@
 
       <!-- The URL for the themes gallery. -->
       <message name="IDS_THEMES_GALLERY_URL" translateable="false">
-        https://chrome.google.com/webstore?hl=[GRITLANGCODE]&amp;category=theme
+        https://chrome.9oo91e.qjz9zk/webstore?hl=[GRITLANGCODE]&amp;category=theme
       </message>
 
       <!-- The URL for the webstore. -->
       <message name="IDS_WEBSTORE_URL" translateable="false">
-        https://chrome.google.com/webstore?hl=[GRITLANGCODE]
+        https://chrome.9oo91e.qjz9zk/webstore?hl=[GRITLANGCODE]
       </message>
 
       <!-- The URLs for Adobe Flash settings. We cannot rely on -->
@@ -191,7 +191,7 @@
       </message>
 
       <message name="IDS_SYNC_UNRECOVERABLE_ERROR_HELP_URL" translateable="false">
-        https://support.google.com/chrome/answer/1181420
+        https://support.9oo91e.qjz9zk/chrome/answer/1181420
       </message>
 
       <!-- The width for the "create application shortcuts" dialog in characters. -->
@@ -228,18 +228,18 @@
         </message>
 
         <message name="IDS_FACTORY_RESET_HELP_URL" translateable="false">
-          https://support.google.com/chromebook/answer/183084?hl=[GRITLANGCODE]
+          https://support.9oo91e.qjz9zk/chromebook/answer/183084?hl=[GRITLANGCODE]
         </message>
       </if>
 
       <!-- Links from the Clear Browsing Data dialog. -->
       <message name="IDS_SETTINGS_CLEAR_DATA_MYACTIVITY_URL_IN_DIALOG" translateable="false">
-        https://myactivity.google.com/myactivity/?utm_source=chrome_n
+        https://myactivity.9oo91e.qjz9zk/myactivity/?utm_source=chrome_n
       </message>
 
       <!-- Links on the History page. -->
       <message name="IDS_SETTINGS_CLEAR_DATA_MYACTIVITY_URL_IN_HISTORY" translateable="false">
-        https://myactivity.google.com/myactivity/?utm_source=chrome_h
+        https://myactivity.9oo91e.qjz9zk/myactivity/?utm_source=chrome_h
       </message>
 
     </messages>

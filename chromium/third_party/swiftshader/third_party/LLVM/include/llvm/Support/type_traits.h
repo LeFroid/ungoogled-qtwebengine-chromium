@@ -47,7 +47,7 @@ struct is_class
 {
   // is_class<> metafunction due to Paul Mensonides (leavings@attbi.com). For
   // more details:
-  // http://groups.google.com/groups?hl=en&selm=000001c1cc83%24e154d5e0%247772e50c%40c161550a&rnum=1
+  // http://groups.9oo91e.qjz9zk/groups?hl=en&selm=000001c1cc83%24e154d5e0%247772e50c%40c161550a&rnum=1
  public:
     enum { value = sizeof(char) == sizeof(dont_use::is_class_helper<T>(0)) };
 };

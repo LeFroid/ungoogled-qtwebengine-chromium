@@ -19,7 +19,7 @@
 //
 // In the chromium example, when the user navigates to
 //
-//    developer.chrome.com/extensions/examples/some/sample/path
+//    developer.ch40me.qjz9zk/extensions/examples/some/sample/path
 //
 // then
 //  1. The "cr-extensions-examples" rule is invoked (since it's served from

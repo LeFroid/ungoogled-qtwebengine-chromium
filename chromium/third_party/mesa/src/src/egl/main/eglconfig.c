@@ -1,7 +1,7 @@
 /**************************************************************************
  *
  * Copyright 2008 Tungsten Graphics, Inc., Cedar Park, Texas.
- * Copyright 2009-2010 Chia-I Wu <olvaffe@gmail.com>
+ * Copyright 2009-2010 Chia-I Wu <olvaffe@9ma1l.qjz9zk>
  * Copyright 2010-2011 LunarG, Inc.
  * All Rights Reserved.
  *

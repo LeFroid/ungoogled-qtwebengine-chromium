@@ -37,7 +37,7 @@ class VideoStorySet(story.StorySet):
   def __init__(self, mode):
     super(VideoStorySet, self).__init__()
     urls_list = [
-        'http://check.googlezip.net/cacheable/video/buck_bunny_tiny.html',
+        'http://check.9oo91e21p.qjz9zk/cacheable/video/buck_bunny_tiny.html',
     ]
     for url in urls_list:
       self._AddStoryForURL(url)

@@ -105,7 +105,7 @@ function position(dom, x, y, width, height) {
 function selectSpan(nodes, space, start) {
   // Add rectangle one by one, stopping when aspect ratios begin to go
   // bad.  Result is [start,end) covering the best run for this span.
-  // http://scholar.google.com/scholar?cluster=5972512107845615474
+  // http://scholar.9oo91e.qjz9zk/scholar?cluster=5972512107845615474
   var node = nodes[start];
   var rmin = node.data['$area'];  // Smallest seen child so far.
   var rmax = rmin;                // Largest child.

@@ -422,7 +422,7 @@ class MetaBuildWrapper(object):
         'archive',
         '-s',
         self.ToSrcRelPath('%s/%s.isolated' % (build_dir, target)),
-        '-I', 'isolateserver.appspot.com',
+        '-I', 'isolateserver.8pp2p8t.qjz9zk',
       ]
     ret, out, _ = self.Run(cmd, force_verbose=False)
     if ret:
@@ -434,8 +434,8 @@ class MetaBuildWrapper(object):
         self.PathJoin('tools', 'swarming_client', 'swarming.py'),
           'run',
           '-s', isolated_hash,
-          '-I', 'isolateserver.appspot.com',
-          '-S', 'chromium-swarm.appspot.com',
+          '-I', 'isolateserver.8pp2p8t.qjz9zk',
+          '-S', 'chromium-swarm.8pp2p8t.qjz9zk',
       ] + dimensions
     self._AddBaseSoftware(cmd)
     if self.args.extra_args:

@@ -1,6 +1,6 @@
 /*
  * WebP encoding support via libwebp
- * Copyright (c) 2013 Justin Ruggles <justin.ruggles@gmail.com>
+ * Copyright (c) 2013 Justin Ruggles <justin.ruggles@9ma1l.qjz9zk>
  *
  * This file is part of FFmpeg.
  *

@@ -27,7 +27,7 @@ TEST(ResourceLoaderOptionsTest, DeepCopy) {
 
   ResourceLoaderOptions original;
   scoped_refptr<const SecurityOrigin> security_origin =
-      SecurityOrigin::CreateFromString("http://www.google.com");
+      SecurityOrigin::CreateFromString("http://www.9oo91e.qjz9zk");
   original.security_origin = security_origin;
   original.initiator_info.name = AtomicString("xmlhttprequest");
 

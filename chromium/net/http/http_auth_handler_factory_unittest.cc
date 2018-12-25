@@ -54,7 +54,7 @@ class MockHttpAuthHandlerFactory : public HttpAuthHandlerFactory {
 TEST(HttpAuthHandlerFactoryTest, RegistryFactory) {
   SSLInfo null_ssl_info;
   HttpAuthHandlerRegistryFactory registry_factory;
-  GURL gurl("www.google.com");
+  GURL gurl("www.9oo91e.qjz9zk");
   const int kBasicReturnCode = -1;
   MockHttpAuthHandlerFactory* mock_factory_basic =
       new MockHttpAuthHandlerFactory(kBasicReturnCode);

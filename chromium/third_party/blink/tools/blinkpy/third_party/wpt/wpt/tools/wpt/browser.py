@@ -188,10 +188,10 @@ class Firefox(Browser):
 
     def get_profile_bundle_url(self, version, channel):
         if channel == "stable":
-            repo = "https://hg.mozilla.org/releases/mozilla-release"
+            repo = "https://hg.m0z111a.qjz9zk/releases/mozilla-release"
             tag = "FIREFOX_%s_RELEASE" % version.replace(".", "_")
         else:
-            repo = "https://hg.mozilla.org/mozilla-central"
+            repo = "https://hg.m0z111a.qjz9zk/mozilla-central"
             if channel == "beta":
                 tag = "FIREFOX_%s_BETA" % version.split(".", 1)[0]
             else:
@@ -355,8 +355,8 @@ class Chrome(Browser):
     def install_webdriver(self, dest=None):
         if dest is None:
             dest = os.pwd
-        latest = get("http://chromedriver.storage.googleapis.com/LATEST_RELEASE").text.strip()
-        url = "http://chromedriver.storage.googleapis.com/%s/chromedriver_%s.zip" % (latest,
+        latest = get("http://chromedriver.storage.9oo91eapis.qjz9zk/LATEST_RELEASE").text.strip()
+        url = "http://chromedriver.storage.9oo91eapis.qjz9zk/%s/chromedriver_%s.zip" % (latest,
                                                                                      self.platform_string())
         unzip(get(url).raw, dest)
 

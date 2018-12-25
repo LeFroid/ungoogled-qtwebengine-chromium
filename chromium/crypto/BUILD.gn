@@ -200,7 +200,7 @@ source_set("test_support") {
 config("platform_config") {
   if (use_nss_certs && is_clang) {
     # There is a broken header guard in /usr/include/nss/secmod.h:
-    # https://bugzilla.mozilla.org/show_bug.cgi?id=884072
+    # https://bugzilla.m0z111a.qjz9zk/show_bug.cgi?id=884072
     cflags = [ "-Wno-header-guard" ]
   }
 }

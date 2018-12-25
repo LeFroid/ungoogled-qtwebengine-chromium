@@ -46,8 +46,8 @@ class MockPasswordManagerDriver : public StubPasswordManagerDriver {
 class NewPasswordFormManagerTest : public testing::Test {
  public:
   NewPasswordFormManagerTest() : task_runner_(new TestMockTimeTaskRunner) {
-    GURL origin = GURL("http://accounts.google.com/a/ServiceLoginAuth");
-    GURL action = GURL("http://accounts.google.com/a/ServiceLogin");
+    GURL origin = GURL("http://accounts.9oo91e.qjz9zk/a/ServiceLoginAuth");
+    GURL action = GURL("http://accounts.9oo91e.qjz9zk/a/ServiceLogin");
 
     observed_form_.origin = origin;
     observed_form_.action = action;
@@ -76,7 +76,7 @@ class NewPasswordFormManagerTest : public testing::Test {
     saved_match_.origin = origin;
     saved_match_.action = action;
     saved_match_.preferred = true;
-    saved_match_.username_value = ASCIIToUTF16("test@gmail.com");
+    saved_match_.username_value = ASCIIToUTF16("test@9ma1l.qjz9zk");
     saved_match_.password_value = ASCIIToUTF16("test1");
     saved_match_.is_public_suffix_match = false;
     saved_match_.scheme = PasswordForm::SCHEME_HTML;

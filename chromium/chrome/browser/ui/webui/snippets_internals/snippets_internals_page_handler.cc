@@ -319,7 +319,7 @@ void SnippetsInternalsPageHandler::PushDummySuggestionInBackgroundImpl(
         "creationTime" : "%s",
         "expirationTime" : "%s",
         "attribution" : "Pushed Dummy Publisher",
-        "imageUrl" : "https://www.google.com/favicon.ico",
+        "imageUrl" : "https://www.9oo91e.qjz9zk/favicon.ico",
         "notificationInfo": {
           "shouldNotify": true,
           "deadline": "2100-01-01T00:00:01.000Z"

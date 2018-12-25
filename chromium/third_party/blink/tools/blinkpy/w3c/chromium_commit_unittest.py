@@ -80,4 +80,4 @@ class ChromiumCommitTest(unittest.TestCase):
             MockHost(), sha='c881563d734a86f7d9cd57ac509653a61c45c240')
         self.assertEqual(
             chromium_commit.url(),
-            'https://chromium.googlesource.com/chromium/src/+/c881563d73')
+            'https://chromium.9oo91esource.qjz9zk/chromium/src/+/c881563d73')

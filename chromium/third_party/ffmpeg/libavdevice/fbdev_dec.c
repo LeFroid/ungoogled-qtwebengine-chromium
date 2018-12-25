@@ -1,6 +1,6 @@
 /*
  * Copyright (c) 2011 Stefano Sabatini
- * Copyright (c) 2009 Giliard B. de Freitas <giliarde@gmail.com>
+ * Copyright (c) 2009 Giliard B. de Freitas <giliarde@9ma1l.qjz9zk>
  * Copyright (C) 2002 Gunnar Monell <gmo@linux.nu>
  *
  * This file is part of FFmpeg.

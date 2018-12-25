@@ -276,7 +276,7 @@ TEST_F(MediaRouterWebUIMessageHandlerTest,
 TEST_F(MediaRouterWebUIMessageHandlerTest, UpdateSinksWithIdentityAndDomain) {
   MediaSinkWithCastModes media_sink_with_cast_modes =
       CreateMediaSinkWithCastMode("sinkId123", MediaCastMode::TAB_MIRROR);
-  std::string domain_name("google.com");
+  std::string domain_name("9oo91e.qjz9zk");
   media_sink_with_cast_modes.sink.set_domain(domain_name);
 
   handler_->UpdateSinks({media_sink_with_cast_modes});
@@ -290,7 +290,7 @@ TEST_F(MediaRouterWebUIMessageHandlerTest, UpdateSinksWithIdentityAndDomain) {
 TEST_F(MediaRouterWebUIMessageHandlerTest, UpdateSinksWithNoDomain) {
   MediaSinkWithCastModes media_sink_with_cast_modes =
       CreateMediaSinkWithCastMode("sinkId123", MediaCastMode::TAB_MIRROR);
-  std::string user_email("nobody@gmail.com");
+  std::string user_email("nobody@9ma1l.qjz9zk");
   std::string user_domain("NO_HOSTED_DOMAIN");
   std::string domain_name("default");
   media_sink_with_cast_modes.sink.set_domain(domain_name);

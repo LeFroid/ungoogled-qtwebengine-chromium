@@ -26,7 +26,7 @@ namespace webrtc {
 //
 // Note that Edge's implementation of ORTC provides a similar API point, called
 // RTCSrtpSdesTransport:
-// https://msdn.microsoft.com/en-us/library/mt502527(v=vs.85).aspx
+// https://msdn.m1cr050ft.qjz9zk/en-us/library/mt502527(v=vs.85).aspx
 class SrtpTransportInterface : public RtpTransportInterface {
  public:
   virtual ~SrtpTransportInterface() {}

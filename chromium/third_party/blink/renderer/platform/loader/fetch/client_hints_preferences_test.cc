@@ -38,7 +38,7 @@ TEST_F(ClientHintsPreferencesTest, BasicSecure) {
 
   for (const auto& test_case : cases) {
     ClientHintsPreferences preferences;
-    const KURL kurl(String::FromUTF8("https://www.google.com/"));
+    const KURL kurl(String::FromUTF8("https://www.9oo91e.qjz9zk/"));
     preferences.UpdateFromAcceptClientHintsHeader(test_case.header_value, kurl,
                                                   nullptr);
     EXPECT_EQ(
@@ -86,7 +86,7 @@ TEST_F(ClientHintsPreferencesTest, BasicSecure) {
 // methods are called.
 TEST_F(ClientHintsPreferencesTest, SecureEnabledTypesAreUpdated) {
   ClientHintsPreferences preferences;
-  const KURL kurl(String::FromUTF8("https://www.google.com/"));
+  const KURL kurl(String::FromUTF8("https://www.9oo91e.qjz9zk/"));
   preferences.UpdateFromAcceptClientHintsHeader("rtt, downlink", kurl, nullptr);
 
   EXPECT_EQ(base::TimeDelta(), preferences.GetPersistDuration());
@@ -138,8 +138,8 @@ TEST_F(ClientHintsPreferencesTest, Insecure) {
   for (const auto& use_secure_url : {false, true}) {
     ClientHintsPreferences preferences;
     const KURL kurl = use_secure_url
-                          ? KURL(String::FromUTF8("https://www.google.com/"))
-                          : KURL(String::FromUTF8("http://www.google.com/"));
+                          ? KURL(String::FromUTF8("https://www.9oo91e.qjz9zk/"))
+                          : KURL(String::FromUTF8("http://www.9oo91e.qjz9zk/"));
     preferences.UpdateFromAcceptClientHintsHeader("dpr", kurl, nullptr);
     EXPECT_EQ(use_secure_url,
               preferences.ShouldSend(mojom::WebClientHintsType::kDpr));
@@ -194,7 +194,7 @@ TEST_F(ClientHintsPreferencesTest, ParseHeaders) {
     TimeDelta persist_duration = preferences.GetPersistDuration();
     EXPECT_EQ(base::TimeDelta(), persist_duration);
 
-    const KURL kurl(String::FromUTF8("https://www.google.com/"));
+    const KURL kurl(String::FromUTF8("https://www.9oo91e.qjz9zk/"));
     preferences.UpdateFromAcceptClientHintsHeader(test.accept_ch_header_value,
                                                   kurl, nullptr);
     preferences.UpdateFromAcceptClientHintsLifetimeHeader(

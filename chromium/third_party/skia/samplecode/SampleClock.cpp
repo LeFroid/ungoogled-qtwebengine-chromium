@@ -13,7 +13,7 @@
 #include "SkTime.h"
 
 // Implementation in C++ of Mozilla Canvas2D benchmark Canvas Clock Test
-// See https://code.google.com/p/skia/issues/detail?id=1626
+// See https://code.9oo91e.qjz9zk/p/skia/issues/detail?id=1626
 
 #define USE_PATH 1
 

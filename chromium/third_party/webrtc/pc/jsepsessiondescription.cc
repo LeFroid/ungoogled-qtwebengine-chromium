@@ -75,7 +75,7 @@ void UpdateConnectionAddress(
     // See if this candidate is more preferable then the current one if it's the
     // same family. Or if the current family is IPv4 already so we could safely
     // ignore all IPv6 ones. WebRTC bug 4269.
-    // http://code.google.com/p/webrtc/issues/detail?id=4269
+    // http://code.9oo91e.qjz9zk/p/webrtc/issues/detail?id=4269
     if ((preference <= current_preference && current_family == family) ||
         (current_family == AF_INET && family == AF_INET6)) {
       continue;

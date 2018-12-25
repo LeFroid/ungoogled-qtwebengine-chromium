@@ -381,10 +381,10 @@ TEST_F(URLRequestThrottlerManagerTest, IsHostBeingRegistered) {
   MockURLRequestThrottlerManager manager;
 
   manager.RegisterRequestUrl(GURL("http://www.example.com/"));
-  manager.RegisterRequestUrl(GURL("http://www.google.com/"));
-  manager.RegisterRequestUrl(GURL("http://www.google.com/index/0"));
-  manager.RegisterRequestUrl(GURL("http://www.google.com/index/0?code=1"));
-  manager.RegisterRequestUrl(GURL("http://www.google.com/index/0#lolsaure"));
+  manager.RegisterRequestUrl(GURL("http://www.9oo91e.qjz9zk/"));
+  manager.RegisterRequestUrl(GURL("http://www.9oo91e.qjz9zk/index/0"));
+  manager.RegisterRequestUrl(GURL("http://www.9oo91e.qjz9zk/index/0?code=1"));
+  manager.RegisterRequestUrl(GURL("http://www.9oo91e.qjz9zk/index/0#lolsaure"));
 
   EXPECT_EQ(3, manager.GetNumberOfEntries());
 }

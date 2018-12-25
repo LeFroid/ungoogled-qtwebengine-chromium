@@ -10,36 +10,36 @@ const base::FilePath::CharType kDatabaseFolder[] =
     FILE_PATH_LITERAL("NTPSnippets");
 
 const char kContentSuggestionsApiScope[] =
-    "https://www.googleapis.com/auth/chrome-content-suggestions";
+    "https://www.9oo91eapis.qjz9zk/auth/chrome-content-suggestions";
 
 const char kContentSuggestionsServer[] =
-    "https://chromefeedcontentsuggestions-pa.googleapis.com/v2/suggestions/"
+    "https://chromefeedcontentsuggestions-pa.9oo91eapis.qjz9zk/v2/suggestions/"
     "fetch";
 const char kContentSuggestionsStagingServer[] =
-    "https://staging-chromecontentsuggestions-pa.googleapis.com/v1/suggestions/"
+    "https://staging-chromecontentsuggestions-pa.9oo91eapis.qjz9zk/v1/suggestions/"
     "fetch";
 const char kContentSuggestionsAlphaServer[] =
-    "https://alpha-chromecontentsuggestions-pa.sandbox.googleapis.com/v1/"
+    "https://alpha-chromecontentsuggestions-pa.sandbox.9oo91eapis.qjz9zk/v1/"
     "suggestions/fetch";
 
 const char kPushUpdatesSubscriptionServer[] =
-    "https://chromecontentsuggestions-pa.googleapis.com/v1/suggestions/"
+    "https://chromecontentsuggestions-pa.9oo91eapis.qjz9zk/v1/suggestions/"
     "subscribe";
 const char kPushUpdatesSubscriptionStagingServer[] =
-    "https://staging-chromecontentsuggestions-pa.googleapis.com/v1/suggestions/"
+    "https://staging-chromecontentsuggestions-pa.9oo91eapis.qjz9zk/v1/suggestions/"
     "subscribe";
 const char kPushUpdatesSubscriptionAlphaServer[] =
-    "https://alpha-chromecontentsuggestions-pa.sandbox.googleapis.com/v1/"
+    "https://alpha-chromecontentsuggestions-pa.sandbox.9oo91eapis.qjz9zk/v1/"
     "suggestions/subscribe";
 
 const char kPushUpdatesUnsubscriptionServer[] =
-    "https://chromecontentsuggestions-pa.googleapis.com/v1/suggestions/"
+    "https://chromecontentsuggestions-pa.9oo91eapis.qjz9zk/v1/suggestions/"
     "unsubscribe";
 const char kPushUpdatesUnsubscriptionStagingServer[] =
-    "https://staging-chromecontentsuggestions-pa.googleapis.com/v1/suggestions/"
+    "https://staging-chromecontentsuggestions-pa.9oo91eapis.qjz9zk/v1/suggestions/"
     "unsubscribe";
 const char kPushUpdatesUnsubscriptionAlphaServer[] =
-    "https://alpha-chromecontentsuggestions-pa.sandbox.googleapis.com/v1/"
+    "https://alpha-chromecontentsuggestions-pa.sandbox.9oo91eapis.qjz9zk/v1/"
     "suggestions/unsubscribe";
 
 }  // namespace ntp_snippets

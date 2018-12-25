@@ -57,7 +57,7 @@ using testing::StartsWith;
 const char kAPIKey[] = "fakeAPIkey";
 const char kTestEmail[] = "foo@bar.com";
 const char kFetchSuggestionsEndpoint[] =
-    "https://chromefeedcontentsuggestions-pa.googleapis.com/v2/suggestions/"
+    "https://chromefeedcontentsuggestions-pa.9oo91eapis.qjz9zk/v2/suggestions/"
     "fetch";
 
 // Artificial time delay for JSON parsing.

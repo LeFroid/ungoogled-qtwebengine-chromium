@@ -3,7 +3,7 @@
 // found in the LICENSE file.
 
 /*
- * Copyright (C) 2006 Michael Emmel mike.emmel@gmail.com. All rights reserved.
+ * Copyright (C) 2006 Michael Emmel mike.emmel@9ma1l.qjz9zk. All rights reserved.
  * Copyright (C) 2008, 2009 Google Inc.
  *
  * Redistribution and use in source and binary forms, with or without

@@ -7,7 +7,7 @@ found in the LICENSE file.
 <!--
 This file is used to generate a comprehensive list of Chrome rappor metrics
 along with a detailed description for each histogram. See the design doc at
-http://www.chromium.org/developers/design-documents/rappor
+http://www.ch40m1um.qjz9zk/developers/design-documents/rappor
 for a description of rappor metrics.
 -->
 
@@ -132,7 +132,7 @@ components/rappor/rappor_parameters.h.
 <rappor-metrics>
 <rappor-metric name="Android.ExternalNavigationNotChosen"
     type="UMA_RAPPOR_TYPE">
-  <owner>mariakhomenko@chromium.org</owner>
+  <owner>mariakhomenko@ch40m1um.qjz9zk</owner>
   <summary>
     The package name of an application that was given as an alternative choice
     to handling a URL in Chrome, but wasn't chosen.
@@ -140,7 +140,7 @@ components/rappor/rappor_parameters.h.
 </rappor-metric>
 
 <rappor-metric name="Android.PageLoadDueToExternalApp" type="UMA_RAPPOR_TYPE">
-  <owner>mariakhomenko@chromium.org</owner>
+  <owner>mariakhomenko@ch40m1um.qjz9zk</owner>
   <summary>
     The package name of an application that sent an intent to Chrome. The name
     is taken from EXTRA_APPLICATION_ID passed to Chrome in the intent by the
@@ -149,7 +149,7 @@ components/rappor/rappor_parameters.h.
 </rappor-metric>
 
 <rappor-metric name="AppBanner.NativeApp.Dismissed" type="ETLD_PLUS_ONE">
-  <owner>dfalcantara@chromium.org</owner>
+  <owner>dfalcantara@ch40m1um.qjz9zk</owner>
   <summary>
     The eTLD+1 of a URL that displayed a native app banner, which was explicitly
     dismissed by the user.
@@ -157,7 +157,7 @@ components/rappor/rappor_parameters.h.
 </rappor-metric>
 
 <rappor-metric name="AppBanner.NativeApp.Installed" type="ETLD_PLUS_ONE">
-  <owner>dfalcantara@chromium.org</owner>
+  <owner>dfalcantara@ch40m1um.qjz9zk</owner>
   <summary>
     The eTLD+1 of a URL that displayed a native app banner, which resulted in
     the user installing the promoted application.
@@ -165,14 +165,14 @@ components/rappor/rappor_parameters.h.
 </rappor-metric>
 
 <rappor-metric name="AppBanner.NativeApp.Shown" type="ETLD_PLUS_ONE">
-  <owner>dfalcantara@chromium.org</owner>
+  <owner>dfalcantara@ch40m1um.qjz9zk</owner>
   <summary>
     The eTLD+1 of a URL that displayed a native app banner.
   </summary>
 </rappor-metric>
 
 <rappor-metric name="AppBanner.WebApp.Dismissed" type="ETLD_PLUS_ONE">
-  <owner>dfalcantara@chromium.org</owner>
+  <owner>dfalcantara@ch40m1um.qjz9zk</owner>
   <summary>
     The eTLD+1 of a URL that displayed a web app banner, which was explicitly
     dismissed by the user.
@@ -180,7 +180,7 @@ components/rappor/rappor_parameters.h.
 </rappor-metric>
 
 <rappor-metric name="AppBanner.WebApp.Installed" type="ETLD_PLUS_ONE">
-  <owner>dfalcantara@chromium.org</owner>
+  <owner>dfalcantara@ch40m1um.qjz9zk</owner>
   <summary>
     The eTLD+1 of a URL that displayed a web app banner, which resulted in the
     user installing the promoted application.
@@ -188,7 +188,7 @@ components/rappor/rappor_parameters.h.
 </rappor-metric>
 
 <rappor-metric name="AppBanner.WebApp.Shown" type="ETLD_PLUS_ONE">
-  <owner>dfalcantara@chromium.org</owner>
+  <owner>dfalcantara@ch40m1um.qjz9zk</owner>
   <summary>
     The eTLD+1 of a URL that displayed a web app banner.
   </summary>
@@ -199,7 +199,7 @@ components/rappor/rappor_parameters.h.
   <obsolete>
     No longer being logged.
   </obsolete>
-  <owner>mathp@chromium.org</owner>
+  <owner>mathp@ch40m1um.qjz9zk</owner>
   <summary>
     The eTLD+1 of a URL for which there was an attempted upload of a credit card
     but for which we found conflicting names between the address and the card.
@@ -211,7 +211,7 @@ components/rappor/rappor_parameters.h.
   <obsolete>
     No longer being logged.
   </obsolete>
-  <owner>mathp@chromium.org</owner>
+  <owner>mathp@ch40m1um.qjz9zk</owner>
   <summary>
     The eTLD+1 of a URL for which there was an attempted upload of a credit card
     but for which we couldn't find a recently used address to associate with it.
@@ -222,7 +222,7 @@ components/rappor/rappor_parameters.h.
   <obsolete>
     No longer being logged.
   </obsolete>
-  <owner>mathp@chromium.org</owner>
+  <owner>mathp@ch40m1um.qjz9zk</owner>
   <summary>
     The eTLD+1 of a URL for which there was an attempted upload of a credit card
     but the form data didn't contain the card CVC.
@@ -233,7 +233,7 @@ components/rappor/rappor_parameters.h.
   <obsolete>
     No longer being logged.
   </obsolete>
-  <owner>mathp@chromium.org</owner>
+  <owner>mathp@ch40m1um.qjz9zk</owner>
   <summary>
     The eTLD+1 of a URL for which there was an attempted upload of a credit card
     but for which we found no name associated with the address or the card.
@@ -245,7 +245,7 @@ components/rappor/rappor_parameters.h.
   <obsolete>
     No longer being logged.
   </obsolete>
-  <owner>mathp@chromium.org</owner>
+  <owner>mathp@ch40m1um.qjz9zk</owner>
   <summary>
     The eTLD+1 of a URL for which there was a high number of mismatches for the
     heuristic prediction of the form field types.
@@ -257,7 +257,7 @@ components/rappor/rappor_parameters.h.
   <obsolete>
     No longer being logged.
   </obsolete>
-  <owner>mathp@chromium.org</owner>
+  <owner>mathp@ch40m1um.qjz9zk</owner>
   <summary>
     The eTLD+1 of a URL for which there was a high number of mismatches for the
     server prediction of the form field types.
@@ -269,7 +269,7 @@ components/rappor/rappor_parameters.h.
   <obsolete>
     No longer being logged.
   </obsolete>
-  <owner>mathp@chromium.org</owner>
+  <owner>mathp@ch40m1um.qjz9zk</owner>
   <summary>
     The eTLD+1 of a URL for which there was a server query response for which
     the server had no data at all for at least one form.
@@ -277,16 +277,16 @@ components/rappor/rappor_parameters.h.
 </rappor-metric>
 
 <rappor-metric name="BackgroundSync.Register.Origin" type="UMA_RAPPOR_TYPE">
-  <owner>jkarlin@chromium.org</owner>
+  <owner>jkarlin@ch40m1um.qjz9zk</owner>
   <summary>
     The eTLD+1 of a URL which registered a Background Sync event.
   </summary>
 </rappor-metric>
 
 <rappor-metric name="Bluetooth.APIUsage.Origin" type="ETLD_PLUS_ONE">
-  <owner>jyasskin@chromium.org</owner>
-  <owner>ortuno@chromium.org</owner>
-  <owner>scheib@chromium.org</owner>
+  <owner>jyasskin@ch40m1um.qjz9zk</owner>
+  <owner>ortuno@ch40m1um.qjz9zk</owner>
+  <owner>scheib@ch40m1um.qjz9zk</owner>
   <summary>
     The eTLD+1 of the URL of frames using the Web Bluetooth API.
   </summary>
@@ -294,7 +294,7 @@ components/rappor/rappor_parameters.h.
 
 <rappor-metric name="BrowserActions.ServiceClient.PackageName"
     type="UMA_RAPPOR_TYPE">
-  <owner>ltian@chromium.org</owner>
+  <owner>ltian@ch40m1um.qjz9zk</owner>
   <summary>
     The package name for a client that requests for the Browser Actions context
     menu.
@@ -303,7 +303,7 @@ components/rappor/rappor_parameters.h.
 
 <rappor-metric name="BrowserActions.ServiceClient.PackageNameThirdParty"
     type="UMA_RAPPOR_TYPE">
-  <owner>ltian@chromium.org</owner>
+  <owner>ltian@ch40m1um.qjz9zk</owner>
   <summary>
     The package name for a client that requests for the Browser Actions context
     menu, excluding Google Search App.
@@ -311,8 +311,8 @@ components/rappor/rappor_parameters.h.
 </rappor-metric>
 
 <rappor-metric name="Cast.Sender.MediaFrameUrl" type="ETLD_PLUS_ONE">
-  <owner>avayvod@chromium.org</owner>
-  <owner>aberent@chromium.org</owner>
+  <owner>avayvod@ch40m1um.qjz9zk</owner>
+  <owner>aberent@ch40m1um.qjz9zk</owner>
   <summary>
     The domain and registry of the frame URL that the user is trying to cast the
     media from. Recorded every time the user casts the media.
@@ -321,7 +321,7 @@ components/rappor/rappor_parameters.h.
 
 <rappor-metric name="ContentSettings.MixedScript.DisplayedShield"
     type="ETLD_PLUS_ONE">
-  <owner>estark@chromium.org</owner>
+  <owner>estark@ch40m1um.qjz9zk</owner>
   <summary>
     The eTLD+1 of a URL that displayed a mixed script shield. Note: this does
     *not* include pages with mixed scripts where the user has already clicked
@@ -331,7 +331,7 @@ components/rappor/rappor_parameters.h.
 
 <rappor-metric name="ContentSettings.MixedScript.RanMixedScript"
     type="ETLD_PLUS_ONE">
-  <owner>estark@chromium.org</owner>
+  <owner>estark@ch40m1um.qjz9zk</owner>
   <summary>
     The eTLD+1 of a URL that when mixed script actually ran.
   </summary>
@@ -339,7 +339,7 @@ components/rappor/rappor_parameters.h.
 
 <rappor-metric name="ContentSettings.MixedScript.UserClickedAllow"
     type="ETLD_PLUS_ONE">
-  <owner>estark@chromium.org</owner>
+  <owner>estark@ch40m1um.qjz9zk</owner>
   <summary>
     The eTLD+1 of a URL where the user clicked &quot;Load unsafe scripts&quot;
     on a mixed content shield. (This results in a page refresh. Mixed scripts
@@ -349,9 +349,9 @@ components/rappor/rappor_parameters.h.
 
 <rappor-metric name="ContentSettings.PermissionActions_AudioCapture.Denied.Url"
     type="ETLD_PLUS_ONE">
-  <owner>kcarattini@chromium.org</owner>
-  <owner>miguelg@chromium.org</owner>
-  <owner>tsergeant@chromium.org</owner>
+  <owner>kcarattini@ch40m1um.qjz9zk</owner>
+  <owner>miguelg@ch40m1um.qjz9zk</owner>
+  <owner>tsergeant@ch40m1um.qjz9zk</owner>
   <summary>
     **DEPRECATED. Replaced by
     ContentSettings.PermissionActions_AudioCapture.Denied.Url2 as of M52. The
@@ -365,10 +365,10 @@ components/rappor/rappor_parameters.h.
   <obsolete>
     Removed in M64, see UMA or Permission Action Reporting data.
   </obsolete>
-  <owner>dominickn@chromium.org</owner>
-  <owner>kcarattini@chromium.org</owner>
-  <owner>miguelg@chromium.org</owner>
-  <owner>tsergeant@chromium.org</owner>
+  <owner>dominickn@ch40m1um.qjz9zk</owner>
+  <owner>kcarattini@ch40m1um.qjz9zk</owner>
+  <owner>miguelg@ch40m1um.qjz9zk</owner>
+  <owner>tsergeant@ch40m1um.qjz9zk</owner>
   <summary>
     The domain for which an AudioCapture permission prompt was Denied.
   </summary>
@@ -377,9 +377,9 @@ components/rappor/rappor_parameters.h.
 <rappor-metric
     name="ContentSettings.PermissionActions_AudioCapture.Dismissed.Url"
     type="ETLD_PLUS_ONE">
-  <owner>kcarattini@chromium.org</owner>
-  <owner>miguelg@chromium.org</owner>
-  <owner>tsergeant@chromium.org</owner>
+  <owner>kcarattini@ch40m1um.qjz9zk</owner>
+  <owner>miguelg@ch40m1um.qjz9zk</owner>
+  <owner>tsergeant@ch40m1um.qjz9zk</owner>
   <summary>
     **DEPRECATED. Replaced by
     ContentSettings.PermissionActions_AudioCapture.Dismissed.Url2 as of M52. The
@@ -393,10 +393,10 @@ components/rappor/rappor_parameters.h.
   <obsolete>
     Removed in M64, see UMA or Permission Action Reporting data.
   </obsolete>
-  <owner>dominickn@chromium.org</owner>
-  <owner>kcarattini@chromium.org</owner>
-  <owner>miguelg@chromium.org</owner>
-  <owner>tsergeant@chromium.org</owner>
+  <owner>dominickn@ch40m1um.qjz9zk</owner>
+  <owner>kcarattini@ch40m1um.qjz9zk</owner>
+  <owner>miguelg@ch40m1um.qjz9zk</owner>
+  <owner>tsergeant@ch40m1um.qjz9zk</owner>
   <summary>
     The domain for which an AudioCapture permission prompt was Dismissed.
   </summary>
@@ -405,9 +405,9 @@ components/rappor/rappor_parameters.h.
 <rappor-metric
     name="ContentSettings.PermissionActions_AudioCapture.Granted.Url"
     type="ETLD_PLUS_ONE">
-  <owner>kcarattini@chromium.org</owner>
-  <owner>miguelg@chromium.org</owner>
-  <owner>tsergeant@chromium.org</owner>
+  <owner>kcarattini@ch40m1um.qjz9zk</owner>
+  <owner>miguelg@ch40m1um.qjz9zk</owner>
+  <owner>tsergeant@ch40m1um.qjz9zk</owner>
   <summary>
     **DEPRECATED. Replaced by
     ContentSettings.PermissionActions_AudioCapture.Granted.Url2 as of M52. The
@@ -421,10 +421,10 @@ components/rappor/rappor_parameters.h.
   <obsolete>
     Removed in M64, see UMA or Permission Action Reporting data.
   </obsolete>
-  <owner>dominickn@chromium.org</owner>
-  <owner>kcarattini@chromium.org</owner>
-  <owner>miguelg@chromium.org</owner>
-  <owner>tsergeant@chromium.org</owner>
+  <owner>dominickn@ch40m1um.qjz9zk</owner>
+  <owner>kcarattini@ch40m1um.qjz9zk</owner>
+  <owner>miguelg@ch40m1um.qjz9zk</owner>
+  <owner>tsergeant@ch40m1um.qjz9zk</owner>
   <summary>
     The domain for which an AudioCapture permission prompt was accepted.
   </summary>
@@ -433,9 +433,9 @@ components/rappor/rappor_parameters.h.
 <rappor-metric
     name="ContentSettings.PermissionActions_AudioCapture.Ignored.Url"
     type="ETLD_PLUS_ONE">
-  <owner>kcarattini@chromium.org</owner>
-  <owner>miguelg@chromium.org</owner>
-  <owner>tsergeant@chromium.org</owner>
+  <owner>kcarattini@ch40m1um.qjz9zk</owner>
+  <owner>miguelg@ch40m1um.qjz9zk</owner>
+  <owner>tsergeant@ch40m1um.qjz9zk</owner>
   <summary>
     **DEPRECATED. Replaced by
     ContentSettings.PermissionActions_AudioCapture.Ignored.Url2 as of M52. The
@@ -449,10 +449,10 @@ components/rappor/rappor_parameters.h.
   <obsolete>
     Removed in M64, see UMA or Permission Action Reporting data.
   </obsolete>
-  <owner>dominickn@chromium.org</owner>
-  <owner>kcarattini@chromium.org</owner>
-  <owner>miguelg@chromium.org</owner>
-  <owner>tsergeant@chromium.org</owner>
+  <owner>dominickn@ch40m1um.qjz9zk</owner>
+  <owner>kcarattini@ch40m1um.qjz9zk</owner>
+  <owner>miguelg@ch40m1um.qjz9zk</owner>
+  <owner>tsergeant@ch40m1um.qjz9zk</owner>
   <summary>
     The domain for which an AudioCapture permission prompt was Ignored.
   </summary>
@@ -461,7 +461,7 @@ components/rappor/rappor_parameters.h.
 <rappor-metric
     name="ContentSettings.PermissionActions_AudioCapture.Revoked.Url"
     type="ETLD_PLUS_ONE">
-  <owner>tsergeant@chromium.org</owner>
+  <owner>tsergeant@ch40m1um.qjz9zk</owner>
   <summary>
     **DEPRECATED. Replaced by
     ContentSettings.PermissionActions_AudioCapture.Revoked.Url2 as of M52. The
@@ -476,8 +476,8 @@ components/rappor/rappor_parameters.h.
   <obsolete>
     Removed in M64, see UMA or Permission Action Reporting data.
   </obsolete>
-  <owner>dominickn@chromium.org</owner>
-  <owner>tsergeant@chromium.org</owner>
+  <owner>dominickn@ch40m1um.qjz9zk</owner>
+  <owner>tsergeant@ch40m1um.qjz9zk</owner>
   <summary>
     The domain for which an AudioCapture permission was revoked.
   </summary>
@@ -485,7 +485,7 @@ components/rappor/rappor_parameters.h.
 
 <rappor-metric name="ContentSettings.PermissionActions_Camera.Revoked.Url"
     type="ETLD_PLUS_ONE">
-  <owner>jialiul@chromium.org</owner>
+  <owner>jialiul@ch40m1um.qjz9zk</owner>
   <summary>
     **DEPRECATED. Renamed to
     ContentSettings.PermissionActions_VideoCapture.Revoked.Url on 2016-01-07.**
@@ -498,7 +498,7 @@ components/rappor/rappor_parameters.h.
   <obsolete>
     Removed in M64, see UMA or Permission Action Reporting data.
   </obsolete>
-  <owner>dominickn@chromium.org</owner>
+  <owner>dominickn@ch40m1um.qjz9zk</owner>
   <summary>
     The domain for which a Flash permission prompt was Denied.
   </summary>
@@ -509,7 +509,7 @@ components/rappor/rappor_parameters.h.
   <obsolete>
     Removed in M64, see UMA or Permission Action Reporting data.
   </obsolete>
-  <owner>dominickn@chromium.org</owner>
+  <owner>dominickn@ch40m1um.qjz9zk</owner>
   <summary>
     The domain for which a Flash permission prompt was Dismissed.
   </summary>
@@ -520,7 +520,7 @@ components/rappor/rappor_parameters.h.
   <obsolete>
     Removed in M64, see UMA or Permission Action Reporting data.
   </obsolete>
-  <owner>dominickn@chromium.org</owner>
+  <owner>dominickn@ch40m1um.qjz9zk</owner>
   <summary>
     The domain for which a Flash permission prompt was Granted.
   </summary>
@@ -531,7 +531,7 @@ components/rappor/rappor_parameters.h.
   <obsolete>
     Removed in M64, see UMA or Permission Action Reporting data.
   </obsolete>
-  <owner>dominickn@chromium.org</owner>
+  <owner>dominickn@ch40m1um.qjz9zk</owner>
   <summary>
     The domain for which a Flash permission prompt was Ignored.
   </summary>
@@ -539,7 +539,7 @@ components/rappor/rappor_parameters.h.
 
 <rappor-metric name="ContentSettings.PermissionActions_Geolocation.Denied.Url"
     type="ETLD_PLUS_ONE">
-  <owner>miguelg@chromium.org</owner>
+  <owner>miguelg@ch40m1um.qjz9zk</owner>
   <summary>
     **DEPRECATED. Replaced by
     ContentSettings.PermissionActions_Geolocation.Denied.Url2 as of M52. The
@@ -552,8 +552,8 @@ components/rappor/rappor_parameters.h.
   <obsolete>
     Removed in M64, see UMA or Permission Action Reporting data.
   </obsolete>
-  <owner>dominickn@chromium.org</owner>
-  <owner>miguelg@chromium.org</owner>
+  <owner>dominickn@ch40m1um.qjz9zk</owner>
+  <owner>miguelg@ch40m1um.qjz9zk</owner>
   <summary>
     The domain for which a Geolocation permission prompt was Denied.
   </summary>
@@ -562,7 +562,7 @@ components/rappor/rappor_parameters.h.
 <rappor-metric
     name="ContentSettings.PermissionActions_Geolocation.Dismissed.Url"
     type="ETLD_PLUS_ONE">
-  <owner>miguelg@chromium.org</owner>
+  <owner>miguelg@ch40m1um.qjz9zk</owner>
   <summary>
     **DEPRECATED. Replaced by
     ContentSettings.PermissionActions_Geolocation.Dismissed.Url2 as of M52. The
@@ -576,8 +576,8 @@ components/rappor/rappor_parameters.h.
   <obsolete>
     Removed in M64, see UMA or Permission Action Reporting data.
   </obsolete>
-  <owner>dominickn@chromium.org</owner>
-  <owner>miguelg@chromium.org</owner>
+  <owner>dominickn@ch40m1um.qjz9zk</owner>
+  <owner>miguelg@ch40m1um.qjz9zk</owner>
   <summary>
     The domain for which a Geolocation permission prompt was Dismissed.
   </summary>
@@ -585,7 +585,7 @@ components/rappor/rappor_parameters.h.
 
 <rappor-metric name="ContentSettings.PermissionActions_Geolocation.Granted.Url"
     type="ETLD_PLUS_ONE">
-  <owner>miguelg@chromium.org</owner>
+  <owner>miguelg@ch40m1um.qjz9zk</owner>
   <summary>
     **DEPRECATED. Replaced by
     ContentSettings.PermissionActions_Geolocation.Granted.Url2 as of M52. The
@@ -599,8 +599,8 @@ components/rappor/rappor_parameters.h.
   <obsolete>
     Removed in M64, see UMA or Permission Action Reporting data.
   </obsolete>
-  <owner>dominickn@chromium.org</owner>
-  <owner>miguelg@chromium.org</owner>
+  <owner>dominickn@ch40m1um.qjz9zk</owner>
+  <owner>miguelg@ch40m1um.qjz9zk</owner>
   <summary>
     The domain for which a Geolocation permission prompt was accepted.
   </summary>
@@ -608,7 +608,7 @@ components/rappor/rappor_parameters.h.
 
 <rappor-metric name="ContentSettings.PermissionActions_Geolocation.Ignored.Url"
     type="ETLD_PLUS_ONE">
-  <owner>miguelg@chromium.org</owner>
+  <owner>miguelg@ch40m1um.qjz9zk</owner>
   <summary>
     **DEPRECATED. Replaced by
     ContentSettings.PermissionActions_Geolocation.Ignored.Url2 as of M52. The
@@ -622,8 +622,8 @@ components/rappor/rappor_parameters.h.
   <obsolete>
     Removed in M64, see UMA or Permission Action Reporting data.
   </obsolete>
-  <owner>dominickn@chromium.org</owner>
-  <owner>miguelg@chromium.org</owner>
+  <owner>dominickn@ch40m1um.qjz9zk</owner>
+  <owner>miguelg@ch40m1um.qjz9zk</owner>
   <summary>
     The domain for which a Geolocation permission prompt was Ignored.
   </summary>
@@ -631,7 +631,7 @@ components/rappor/rappor_parameters.h.
 
 <rappor-metric name="ContentSettings.PermissionActions_Geolocation.Revoked.Url"
     type="ETLD_PLUS_ONE">
-  <owner>jialiul@chromium.org</owner>
+  <owner>jialiul@ch40m1um.qjz9zk</owner>
   <summary>
     **DEPRECATED. Replaced by
     ContentSettings.PermissionActions_Geolocation.Revoked.Url2 as of M52. The
@@ -646,8 +646,8 @@ components/rappor/rappor_parameters.h.
   <obsolete>
     Removed in M64, see UMA or Permission Action Reporting data.
   </obsolete>
-  <owner>dominickn@chromium.org</owner>
-  <owner>jialiul@chromium.org</owner>
+  <owner>dominickn@ch40m1um.qjz9zk</owner>
+  <owner>jialiul@ch40m1um.qjz9zk</owner>
   <summary>
     The domain for which a Geolocation permission was revoked.
   </summary>
@@ -655,7 +655,7 @@ components/rappor/rappor_parameters.h.
 
 <rappor-metric name="ContentSettings.PermissionActions_Mic.Revoked.Url"
     type="ETLD_PLUS_ONE">
-  <owner>jialiul@chromium.org</owner>
+  <owner>jialiul@ch40m1um.qjz9zk</owner>
   <summary>
     **DEPRECATED. Renamed to
     ContentSettings.PermissionActions_AudioCapture.Revoked.Url on 2016-01-07.**
@@ -666,7 +666,7 @@ components/rappor/rappor_parameters.h.
 <rappor-metric
     name="ContentSettings.PermissionActions_Notifications.Denied.Url"
     type="ETLD_PLUS_ONE">
-  <owner>miguelg@chromium.org</owner>
+  <owner>miguelg@ch40m1um.qjz9zk</owner>
   <summary>
     **DEPRECATED. Replaced by
     ContentSettings.PermissionActions_Notifications.Denied.Url2 as of M52. The
@@ -680,8 +680,8 @@ components/rappor/rappor_parameters.h.
   <obsolete>
     Removed in M64, see UMA or Permission Action Reporting data.
   </obsolete>
-  <owner>dominickn@chromium.org</owner>
-  <owner>jialiul@chromium.org</owner>
+  <owner>dominickn@ch40m1um.qjz9zk</owner>
+  <owner>jialiul@ch40m1um.qjz9zk</owner>
   <summary>
     The domain for which a Notification permission prompt was Denied.
   </summary>
@@ -690,7 +690,7 @@ components/rappor/rappor_parameters.h.
 <rappor-metric
     name="ContentSettings.PermissionActions_Notifications.Dismissed.Url"
     type="ETLD_PLUS_ONE">
-  <owner>miguelg@chromium.org</owner>
+  <owner>miguelg@ch40m1um.qjz9zk</owner>
   <summary>
     **DEPRECATED. Replaced by
     ContentSettings.PermissionActions_Notifications.Dismissed.Url2 as of M52.
@@ -704,8 +704,8 @@ components/rappor/rappor_parameters.h.
   <obsolete>
     Removed in M64, see UMA or Permission Action Reporting data.
   </obsolete>
-  <owner>dominickn@chromium.org</owner>
-  <owner>jialiul@chromium.org</owner>
+  <owner>dominickn@ch40m1um.qjz9zk</owner>
+  <owner>jialiul@ch40m1um.qjz9zk</owner>
   <summary>
     The domain for which a Notification permission prompt was Dismissed.
   </summary>
@@ -714,7 +714,7 @@ components/rappor/rappor_parameters.h.
 <rappor-metric
     name="ContentSettings.PermissionActions_Notifications.Granted.Url"
     type="ETLD_PLUS_ONE">
-  <owner>miguelg@chromium.org</owner>
+  <owner>miguelg@ch40m1um.qjz9zk</owner>
   <summary>
     **DEPRECATED. Replaced by
     ContentSettings.PermissionActions_Notifications.Granted.Url2 as of M52. The
@@ -728,8 +728,8 @@ components/rappor/rappor_parameters.h.
   <obsolete>
     Removed in M64, see UMA or Permission Action Reporting data.
   </obsolete>
-  <owner>dominickn@chromium.org</owner>
-  <owner>miguelg@chromium.org</owner>
+  <owner>dominickn@ch40m1um.qjz9zk</owner>
+  <owner>miguelg@ch40m1um.qjz9zk</owner>
   <summary>
     The domain for which a Notification permission prompt was accepted.
   </summary>
@@ -738,7 +738,7 @@ components/rappor/rappor_parameters.h.
 <rappor-metric
     name="ContentSettings.PermissionActions_Notifications.Ignored.Url"
     type="ETLD_PLUS_ONE">
-  <owner>miguelg@chromium.org</owner>
+  <owner>miguelg@ch40m1um.qjz9zk</owner>
   <summary>
     **DEPRECATED. Replaced by
     ContentSettings.PermissionActions_Notifications.Ignored.Url2 as of M52. The
@@ -752,8 +752,8 @@ components/rappor/rappor_parameters.h.
   <obsolete>
     Removed in M64, see UMA or Permission Action Reporting data.
   </obsolete>
-  <owner>dominickn@chromium.org</owner>
-  <owner>miguelg@chromium.org</owner>
+  <owner>dominickn@ch40m1um.qjz9zk</owner>
+  <owner>miguelg@ch40m1um.qjz9zk</owner>
   <summary>
     The domain for which a Notification permission prompt was Ignored.
   </summary>
@@ -762,7 +762,7 @@ components/rappor/rappor_parameters.h.
 <rappor-metric
     name="ContentSettings.PermissionActions_Notifications.Revoked.Url"
     type="ETLD_PLUS_ONE">
-  <owner>jialiul@chromium.org</owner>
+  <owner>jialiul@ch40m1um.qjz9zk</owner>
   <summary>
     **DEPRECATED. Replaced by
     ContentSettings.PermissionActions_Notifications.Revoked.Url2 as of M52. The
@@ -777,8 +777,8 @@ components/rappor/rappor_parameters.h.
   <obsolete>
     Removed in M64, see UMA or Permission Action Reporting data.
   </obsolete>
-  <owner>dominickn@chromium.org</owner>
-  <owner>jialiul@chromium.org</owner>
+  <owner>dominickn@ch40m1um.qjz9zk</owner>
+  <owner>jialiul@ch40m1um.qjz9zk</owner>
   <summary>
     The domain for which a Notification permission was revoked.
   </summary>
@@ -786,9 +786,9 @@ components/rappor/rappor_parameters.h.
 
 <rappor-metric name="ContentSettings.PermissionActions_VideoCapture.Denied.Url"
     type="ETLD_PLUS_ONE">
-  <owner>kcarattini@chromium.org</owner>
-  <owner>miguelg@chromium.org</owner>
-  <owner>tsergeant@chromium.org</owner>
+  <owner>kcarattini@ch40m1um.qjz9zk</owner>
+  <owner>miguelg@ch40m1um.qjz9zk</owner>
+  <owner>tsergeant@ch40m1um.qjz9zk</owner>
   <summary>
     **DEPRECATED. Replaced by
     ContentSettings.PermissionActions_VideoCapture.Denied.Url2 as of M52. The
@@ -802,10 +802,10 @@ components/rappor/rappor_parameters.h.
   <obsolete>
     Removed in M64, see UMA or Permission Action Reporting data.
   </obsolete>
-  <owner>dominickn@chromium.org</owner>
-  <owner>kcarattini@chromium.org</owner>
-  <owner>miguelg@chromium.org</owner>
-  <owner>tsergeant@chromium.org</owner>
+  <owner>dominickn@ch40m1um.qjz9zk</owner>
+  <owner>kcarattini@ch40m1um.qjz9zk</owner>
+  <owner>miguelg@ch40m1um.qjz9zk</owner>
+  <owner>tsergeant@ch40m1um.qjz9zk</owner>
   <summary>
     The domain for which a VideoCapture permission prompt was Denied.
   </summary>
@@ -814,9 +814,9 @@ components/rappor/rappor_parameters.h.
 <rappor-metric
     name="ContentSettings.PermissionActions_VideoCapture.Dismissed.Url"
     type="ETLD_PLUS_ONE">
-  <owner>kcarattini@chromium.org</owner>
-  <owner>miguelg@chromium.org</owner>
-  <owner>tsergeant@chromium.org</owner>
+  <owner>kcarattini@ch40m1um.qjz9zk</owner>
+  <owner>miguelg@ch40m1um.qjz9zk</owner>
+  <owner>tsergeant@ch40m1um.qjz9zk</owner>
   <summary>
     **DEPRECATED. Replaced by
     ContentSettings.PermissionActions_VideoCapture.Dismissed.Url2 as of M52. The
@@ -830,10 +830,10 @@ components/rappor/rappor_parameters.h.
   <obsolete>
     Removed in M64, see UMA or Permission Action Reporting data.
   </obsolete>
-  <owner>dominickn@chromium.org</owner>
-  <owner>kcarattini@chromium.org</owner>
-  <owner>miguelg@chromium.org</owner>
-  <owner>tsergeant@chromium.org</owner>
+  <owner>dominickn@ch40m1um.qjz9zk</owner>
+  <owner>kcarattini@ch40m1um.qjz9zk</owner>
+  <owner>miguelg@ch40m1um.qjz9zk</owner>
+  <owner>tsergeant@ch40m1um.qjz9zk</owner>
   <summary>
     The domain for which a VideoCapture permission prompt was Dismissed.
   </summary>
@@ -842,9 +842,9 @@ components/rappor/rappor_parameters.h.
 <rappor-metric
     name="ContentSettings.PermissionActions_VideoCapture.Granted.Url"
     type="ETLD_PLUS_ONE">
-  <owner>kcarattini@chromium.org</owner>
-  <owner>miguelg@chromium.org</owner>
-  <owner>tsergeant@chromium.org</owner>
+  <owner>kcarattini@ch40m1um.qjz9zk</owner>
+  <owner>miguelg@ch40m1um.qjz9zk</owner>
+  <owner>tsergeant@ch40m1um.qjz9zk</owner>
   <summary>
     **DEPRECATED. Replaced by
     ContentSettings.PermissionActions_VideoCapture.Granted.Url2 as of M52. The
@@ -858,10 +858,10 @@ components/rappor/rappor_parameters.h.
   <obsolete>
     Removed in M64, see UMA or Permission Action Reporting data.
   </obsolete>
-  <owner>dominickn@chromium.org</owner>
-  <owner>kcarattini@chromium.org</owner>
-  <owner>miguelg@chromium.org</owner>
-  <owner>tsergeant@chromium.org</owner>
+  <owner>dominickn@ch40m1um.qjz9zk</owner>
+  <owner>kcarattini@ch40m1um.qjz9zk</owner>
+  <owner>miguelg@ch40m1um.qjz9zk</owner>
+  <owner>tsergeant@ch40m1um.qjz9zk</owner>
   <summary>
     The domain for which a VideoCapture permission prompt was accepted.
   </summary>
@@ -870,9 +870,9 @@ components/rappor/rappor_parameters.h.
 <rappor-metric
     name="ContentSettings.PermissionActions_VideoCapture.Ignored.Url"
     type="ETLD_PLUS_ONE">
-  <owner>kcarattini@chromium.org</owner>
-  <owner>miguelg@chromium.org</owner>
-  <owner>tsergeant@chromium.org</owner>
+  <owner>kcarattini@ch40m1um.qjz9zk</owner>
+  <owner>miguelg@ch40m1um.qjz9zk</owner>
+  <owner>tsergeant@ch40m1um.qjz9zk</owner>
   <summary>
     **DEPRECATED. Replaced by
     ContentSettings.PermissionActions_VideoCapture.Ignored.Url2 as of M52. The
@@ -886,10 +886,10 @@ components/rappor/rappor_parameters.h.
   <obsolete>
     Removed in M64, see UMA or Permission Action Reporting data.
   </obsolete>
-  <owner>dominickn@chromium.org</owner>
-  <owner>kcarattini@chromium.org</owner>
-  <owner>miguelg@chromium.org</owner>
-  <owner>tsergeant@chromium.org</owner>
+  <owner>dominickn@ch40m1um.qjz9zk</owner>
+  <owner>kcarattini@ch40m1um.qjz9zk</owner>
+  <owner>miguelg@ch40m1um.qjz9zk</owner>
+  <owner>tsergeant@ch40m1um.qjz9zk</owner>
   <summary>
     The domain for which a VideoCapture permission prompt was Ignored.
   </summary>
@@ -898,7 +898,7 @@ components/rappor/rappor_parameters.h.
 <rappor-metric
     name="ContentSettings.PermissionActions_VideoCapture.Revoked.Url"
     type="ETLD_PLUS_ONE">
-  <owner>tsergeant@chromium.org</owner>
+  <owner>tsergeant@ch40m1um.qjz9zk</owner>
   <summary>
     **DEPRECATED. Replaced by
     ContentSettings.PermissionActions_VideoCapture.Revoked.Url2 as of M52. The
@@ -913,8 +913,8 @@ components/rappor/rappor_parameters.h.
   <obsolete>
     Removed in M64, see UMA or Permission Action Reporting data.
   </obsolete>
-  <owner>dominickn@chromium.org</owner>
-  <owner>tsergeant@chromium.org</owner>
+  <owner>dominickn@ch40m1um.qjz9zk</owner>
+  <owner>tsergeant@ch40m1um.qjz9zk</owner>
   <summary>
     The domain for which an VideoCapture permission was revoked.
   </summary>
@@ -922,7 +922,7 @@ components/rappor/rappor_parameters.h.
 
 <rappor-metric name="ContentSettings.PermissionRequested.Geolocation.Url"
     type="ETLD_PLUS_ONE">
-  <owner>miguelg@chromium.org</owner>
+  <owner>miguelg@ch40m1um.qjz9zk</owner>
   <summary>
     **DEPRECATED: replaced by
     ContentSettings.PermissionRequested.Geolocation.Url2 as of M52. The domain
@@ -935,8 +935,8 @@ components/rappor/rappor_parameters.h.
   <obsolete>
     Removed in M64, see UMA or Permission Action Reporting data.
   </obsolete>
-  <owner>dominickn@chromium.org</owner>
-  <owner>miguelg@chromium.org</owner>
+  <owner>dominickn@ch40m1um.qjz9zk</owner>
+  <owner>miguelg@ch40m1um.qjz9zk</owner>
   <summary>
     The domain that issues a Geolocation permission prompt.
   </summary>
@@ -944,7 +944,7 @@ components/rappor/rappor_parameters.h.
 
 <rappor-metric name="ContentSettings.PermissionRequested.Midi.Url"
     type="ETLD_PLUS_ONE">
-  <owner>toyoshim@chromium.org</owner>
+  <owner>toyoshim@ch40m1um.qjz9zk</owner>
   <summary>
     **DEPRECATED: replaced by ContentSettings.PermissionRequested.Midi.Url2 as
     of M53. The domain that requests using MIDI devices.
@@ -956,7 +956,7 @@ components/rappor/rappor_parameters.h.
   <obsolete>
     Removed in M64, see UMA or Permission Action Reporting data.
   </obsolete>
-  <owner>toyoshim@chromium.org</owner>
+  <owner>toyoshim@ch40m1um.qjz9zk</owner>
   <summary>
     The domain that requests using MIDI devices.
   </summary>
@@ -964,7 +964,7 @@ components/rappor/rappor_parameters.h.
 
 <rappor-metric name="ContentSettings.PermissionRequested.Notifications.Url"
     type="ETLD_PLUS_ONE">
-  <owner>miguelg@chromium.org</owner>
+  <owner>miguelg@ch40m1um.qjz9zk</owner>
   <summary>
     **DEPRECATED: replaced by
     ContentSettings.PermissionRequested.Notifications.Url2 as of M52. The domain
@@ -977,8 +977,8 @@ components/rappor/rappor_parameters.h.
   <obsolete>
     Removed in M64, see UMA or Permission Action Reporting data.
   </obsolete>
-  <owner>dominickn@chromium.org</owner>
-  <owner>miguelg@chromium.org</owner>
+  <owner>dominickn@ch40m1um.qjz9zk</owner>
+  <owner>miguelg@ch40m1um.qjz9zk</owner>
   <summary>
     The domain that issues a Notification permission prompt.
   </summary>
@@ -989,7 +989,7 @@ components/rappor/rappor_parameters.h.
   <obsolete>
     Removed in M64, see UMA or Permission Action Reporting data.
   </obsolete>
-  <owner>xhwang@chromium.org</owner>
+  <owner>xhwang@ch40m1um.qjz9zk</owner>
   <summary>
     The domain that issues a Protected Media Identifier permission prompt.
   </summary>
@@ -997,7 +997,7 @@ components/rappor/rappor_parameters.h.
 
 <rappor-metric name="ContentSettings.Plugins.AddedAllowException"
     type="ETLD_PLUS_ONE">
-  <owner>tommycli@chromium.org</owner>
+  <owner>tommycli@ch40m1um.qjz9zk</owner>
   <summary>
     The eTLD+1 of a URL that the user added to the ALLOW site exceptions for the
     Plugins Content Setting.
@@ -1006,7 +1006,7 @@ components/rappor/rappor_parameters.h.
 
 <rappor-metric name="CustomTabs.ServiceClient.PackageName"
     type="UMA_RAPPOR_TYPE">
-  <owner>yusufo@chromium.org</owner>
+  <owner>yusufo@ch40m1um.qjz9zk</owner>
   <summary>
     The package name for a client that has connected through the custom tabs
     service.
@@ -1015,7 +1015,7 @@ components/rappor/rappor_parameters.h.
 
 <rappor-metric name="CustomTabs.ServiceClient.PackageNameThirdParty"
     type="UMA_RAPPOR_TYPE">
-  <owner>yusufo@chromium.org</owner>
+  <owner>yusufo@ch40m1um.qjz9zk</owner>
   <summary>
     The package name for a client that has connected through the custom tabs
     service excluding Google Search App.
@@ -1023,7 +1023,7 @@ components/rappor/rappor_parameters.h.
 </rappor-metric>
 
 <rappor-metric name="DeviceSensors.DeviceMotion" type="ETLD_PLUS_ONE">
-  <owner>timvolodine@chromium.org</owner>
+  <owner>timvolodine@ch40m1um.qjz9zk</owner>
   <summary>
     The domain and registry of the URL that is using Device Motion API.
   </summary>
@@ -1031,7 +1031,7 @@ components/rappor/rappor_parameters.h.
 
 <rappor-metric name="DeviceSensors.DeviceMotionCrossOrigin"
     type="ETLD_PLUS_ONE">
-  <owner>timvolodine@chromium.org</owner>
+  <owner>timvolodine@ch40m1um.qjz9zk</owner>
   <summary>
     The domain and registry of the URL that is using Device Motion API from a
     frame with an origin different to that of the main frame.
@@ -1039,7 +1039,7 @@ components/rappor/rappor_parameters.h.
 </rappor-metric>
 
 <rappor-metric name="DeviceSensors.DeviceOrientation" type="ETLD_PLUS_ONE">
-  <owner>timvolodine@chromium.org</owner>
+  <owner>timvolodine@ch40m1um.qjz9zk</owner>
   <summary>
     The domain and registry of the URL that is using Device Orientation API.
   </summary>
@@ -1047,7 +1047,7 @@ components/rappor/rappor_parameters.h.
 
 <rappor-metric name="DeviceSensors.DeviceOrientationCrossOrigin"
     type="ETLD_PLUS_ONE">
-  <owner>timvolodine@chromium.org</owner>
+  <owner>timvolodine@ch40m1um.qjz9zk</owner>
   <summary>
     The domain and registry of the URL that is using Device Orientation API from
     a frame with an origin different to that of the main frame.
@@ -1055,14 +1055,14 @@ components/rappor/rappor_parameters.h.
 </rappor-metric>
 
 <rappor-metric name="DomDistiller.OpenPanel" type="UMA_RAPPOR_TYPE">
-  <owner>wychen@chromium.org</owner>
+  <owner>wychen@ch40m1um.qjz9zk</owner>
   <summary>
     The eTLD+1 of the frame URL where Reader Mode panel is opened by the user.
   </summary>
 </rappor-metric>
 
 <rappor-metric name="DomDistiller.PromptPanel" type="UMA_RAPPOR_TYPE">
-  <owner>wychen@chromium.org</owner>
+  <owner>wychen@ch40m1um.qjz9zk</owner>
   <summary>
     The eTLD+1 of the frame URL where Reader Mode is prompted.
   </summary>
@@ -1071,8 +1071,8 @@ components/rappor/rappor_parameters.h.
 <rappor-metric
     name="Event.Latency.ScrollBegin.Touch.TimeToScrollUpdateSwapBegin2"
     type="UMA_RAPPOR_TYPE">
-  <owner>nzolghadr@chromium.org</owner>
-  <owner>tdresser@chromium.org</owner>
+  <owner>nzolghadr@ch40m1um.qjz9zk</owner>
+  <owner>tdresser@ch40m1um.qjz9zk</owner>
   <summary>
     The eTLD+1 of the website visited, along with the time between initial
     creation of a touch event and the start of the frame swap on the GPU service
@@ -1096,8 +1096,8 @@ components/rappor/rappor_parameters.h.
 <rappor-metric
     name="Event.Latency.ScrollBegin.Wheel.TimeToScrollUpdateSwapBegin2"
     type="UMA_RAPPOR_TYPE">
-  <owner>nzolghadr@chromium.org</owner>
-  <owner>tdresser@chromium.org</owner>
+  <owner>nzolghadr@ch40m1um.qjz9zk</owner>
+  <owner>tdresser@ch40m1um.qjz9zk</owner>
   <summary>
     The eTLD+1 of the website visited, along with  the time between initial
     creation of a wheel event and the start of the frame swap on the GPU service
@@ -1121,8 +1121,8 @@ components/rappor/rappor_parameters.h.
 <rappor-metric
     name="Event.Latency.ScrollUpdate.Touch.TimeToScrollUpdateSwapBegin2"
     type="UMA_RAPPOR_TYPE">
-  <owner>nzolghadr@chromium.org</owner>
-  <owner>tdresser@chromium.org</owner>
+  <owner>nzolghadr@ch40m1um.qjz9zk</owner>
+  <owner>tdresser@ch40m1um.qjz9zk</owner>
   <summary>
     The eTLD+1 of the website visited, along with the time between the initial
     creation of a touch event and the start of the frame swap on the GPU service
@@ -1145,8 +1145,8 @@ components/rappor/rappor_parameters.h.
 <rappor-metric
     name="Event.Latency.ScrollUpdate.Wheel.TimeToScrollUpdateSwapBegin2"
     type="UMA_RAPPOR_TYPE">
-  <owner>nzolghadr@chromium.org</owner>
-  <owner>tdresser@chromium.org</owner>
+  <owner>nzolghadr@ch40m1um.qjz9zk</owner>
+  <owner>tdresser@ch40m1um.qjz9zk</owner>
   <summary>
     The eTLD+1 of the website visited, along with the time between the initial
     creation of a wheel event and the start of the frame swap on the GPU service
@@ -1168,7 +1168,7 @@ components/rappor/rappor_parameters.h.
 
 <rappor-metric name="Extensions.AffectedByIsolateExtensions"
     type="UMA_RAPPOR_TYPE">
-  <owner>nick@chromium.org</owner>
+  <owner>nick@ch40m1um.qjz9zk</owner>
   <summary>
     The ID of an extension which will trigger out-of-process iframes under
     --isolate-extensions. This metric is logged even if --isolate-extensions is
@@ -1179,14 +1179,14 @@ components/rappor/rappor_parameters.h.
 </rappor-metric>
 
 <rappor-metric name="Extensions.PossibleAdInjection2" type="ETLD_PLUS_ONE">
-  <owner>rdevlin.cronin@chromium.org</owner>
+  <owner>rdevlin.cronin@ch40m1um.qjz9zk</owner>
   <summary>
     The eTLD+1 of a URL that might be doing ad injection.
   </summary>
 </rappor-metric>
 
 <rappor-metric name="Launch.HomeScreen.Shortcut" type="ETLD_PLUS_ONE">
-  <owner>dfalcantara@chromium.org</owner>
+  <owner>dfalcantara@ch40m1um.qjz9zk</owner>
   <summary>
     The eTLD+1 of a URL that was launched from the Android Home screen into a
     tab.  This explicitly does not count relaunches via the Android Recents
@@ -1195,7 +1195,7 @@ components/rappor/rappor_parameters.h.
 </rappor-metric>
 
 <rappor-metric name="Launch.HomeScreen.Standalone" type="ETLD_PLUS_ONE">
-  <owner>dfalcantara@chromium.org</owner>
+  <owner>dfalcantara@ch40m1um.qjz9zk</owner>
   <summary>
     The eTLD+1 of a URL that was launched from the Android Home screen into a
     WebappActivity.  This explicitly does not count relaunches via the Android
@@ -1205,7 +1205,7 @@ components/rappor/rappor_parameters.h.
 
 <rappor-metric name="Launch.HomeScreenSource.AddToHomeScreen"
     type="ETLD_PLUS_ONE">
-  <owner>dominickn@chromium.org</owner>
+  <owner>dominickn@ch40m1um.qjz9zk</owner>
   <summary>
     The eTLD+1 of a URL that was launched from the Android Home screen via an
     intent added from an add to homescreen menu item. This explicitly does not
@@ -1214,7 +1214,7 @@ components/rappor/rappor_parameters.h.
 </rappor-metric>
 
 <rappor-metric name="Launch.HomeScreenSource.AppBanner" type="ETLD_PLUS_ONE">
-  <owner>dominickn@chromium.org</owner>
+  <owner>dominickn@ch40m1um.qjz9zk</owner>
   <summary>
     The eTLD+1 of a URL that was launched from the Android Home screen via an
     intent added from an app banner. This explicitly does not count relaunches
@@ -1224,7 +1224,7 @@ components/rappor/rappor_parameters.h.
 
 <rappor-metric name="Launch.HomeScreenSource.BookmarkNavigatorWidget"
     type="ETLD_PLUS_ONE">
-  <owner>aurimas@chromium.org</owner>
+  <owner>aurimas@ch40m1um.qjz9zk</owner>
   <summary>
     The eTLD+1 of a URL that was launched from the Chrome's bookmark navigator
     widget. This explicitly does not count relaunches via the Android Recents
@@ -1234,7 +1234,7 @@ components/rappor/rappor_parameters.h.
 
 <rappor-metric name="Launch.HomeScreenSource.BookmarkShortcutWidget"
     type="ETLD_PLUS_ONE">
-  <owner>aurimas@chromium.org</owner>
+  <owner>aurimas@ch40m1um.qjz9zk</owner>
   <summary>
     The eTLD+1 of a URL that was launched from the Chrome's bookmark shortcut
     widget. This explicitly does not count relaunches via the Android Recents
@@ -1243,7 +1243,7 @@ components/rappor/rappor_parameters.h.
 </rappor-metric>
 
 <rappor-metric name="Launch.HomeScreenSource.Unknown" type="ETLD_PLUS_ONE">
-  <owner>dominickn@chromium.org</owner>
+  <owner>dominickn@ch40m1um.qjz9zk</owner>
   <summary>
     The eTLD+1 of a URL that was launched from the Android Home screen via an
     intent added from an unknown source. This explicitly does not count
@@ -1253,9 +1253,9 @@ components/rappor/rappor_parameters.h.
 
 <rappor-metric name="Media.Autoplay.CrossOrigin.Allowed.ChildFrame"
     type="ETLD_PLUS_ONE">
-  <owner>avayvod@chromium.org</owner>
-  <owner>mlamouri@chromium.org</owner>
-  <owner>zqzhang@chromium.org</owner>
+  <owner>avayvod@ch40m1um.qjz9zk</owner>
+  <owner>mlamouri@ch40m1um.qjz9zk</owner>
+  <owner>zqzhang@ch40m1um.qjz9zk</owner>
   <summary>
     The eTLD+1 of a cross-origin iframe URL containing media that was allowed to
     autoplay.
@@ -1264,9 +1264,9 @@ components/rappor/rappor_parameters.h.
 
 <rappor-metric name="Media.Autoplay.CrossOrigin.Allowed.TopLevelFrame"
     type="ETLD_PLUS_ONE">
-  <owner>avayvod@chromium.org</owner>
-  <owner>mlamouri@chromium.org</owner>
-  <owner>zqzhang@chromium.org</owner>
+  <owner>avayvod@ch40m1um.qjz9zk</owner>
+  <owner>mlamouri@ch40m1um.qjz9zk</owner>
+  <owner>zqzhang@ch40m1um.qjz9zk</owner>
   <summary>
     The eTLD+1 of the top-level frame URL that has a cross-origin iframe
     containing media that was allowed to autoplay.
@@ -1275,9 +1275,9 @@ components/rappor/rappor_parameters.h.
 
 <rappor-metric name="Media.Autoplay.CrossOrigin.Blocked.ChildFrame"
     type="ETLD_PLUS_ONE">
-  <owner>avayvod@chromium.org</owner>
-  <owner>mlamouri@chromium.org</owner>
-  <owner>zqzhang@chromium.org</owner>
+  <owner>avayvod@ch40m1um.qjz9zk</owner>
+  <owner>mlamouri@ch40m1um.qjz9zk</owner>
+  <owner>zqzhang@ch40m1um.qjz9zk</owner>
   <summary>
     The eTLD+1 of a cross-origin iframe URL containing media that was blocked to
     autoplay.
@@ -1286,9 +1286,9 @@ components/rappor/rappor_parameters.h.
 
 <rappor-metric name="Media.Autoplay.CrossOrigin.Blocked.TopLevelFrame"
     type="ETLD_PLUS_ONE">
-  <owner>avayvod@chromium.org</owner>
-  <owner>mlamouri@chromium.org</owner>
-  <owner>zqzhang@chromium.org</owner>
+  <owner>avayvod@ch40m1um.qjz9zk</owner>
+  <owner>mlamouri@ch40m1um.qjz9zk</owner>
+  <owner>zqzhang@ch40m1um.qjz9zk</owner>
   <summary>
     The eTLD+1 of the top-level frame URL that has a cross-origin iframe
     containing media that was blocked to autoplay.
@@ -1298,9 +1298,9 @@ components/rappor/rappor_parameters.h.
 <rappor-metric
     name="Media.Autoplay.CrossOrigin.PlayedWithGestureAfterBlock.ChildFrame"
     type="ETLD_PLUS_ONE">
-  <owner>avayvod@chromium.org</owner>
-  <owner>mlamouri@chromium.org</owner>
-  <owner>zqzhang@chromium.org</owner>
+  <owner>avayvod@ch40m1um.qjz9zk</owner>
+  <owner>mlamouri@ch40m1um.qjz9zk</owner>
+  <owner>zqzhang@ch40m1um.qjz9zk</owner>
   <summary>
     The eTLD+1 of a cross-origin iframe URL containing media that was blocked to
     autoplay but the user plays the media by gesture at some point.
@@ -1310,9 +1310,9 @@ components/rappor/rappor_parameters.h.
 <rappor-metric
     name="Media.Autoplay.CrossOrigin.PlayedWithGestureAfterBlock.TopLevelFrame"
     type="ETLD_PLUS_ONE">
-  <owner>avayvod@chromium.org</owner>
-  <owner>mlamouri@chromium.org</owner>
-  <owner>zqzhang@chromium.org</owner>
+  <owner>avayvod@ch40m1um.qjz9zk</owner>
+  <owner>mlamouri@ch40m1um.qjz9zk</owner>
+  <owner>zqzhang@ch40m1um.qjz9zk</owner>
   <summary>
     The eTLD+1 of the top-level frame URL that has a cross-origin iframe
     containing media that was allowed to autoplay but the user plays the media
@@ -1323,9 +1323,9 @@ components/rappor/rappor_parameters.h.
 <rappor-metric
     name="Media.Autoplay.CrossOrigin.UserPausedAutoplayingVideo.ChildFrame"
     type="ETLD_PLUS_ONE">
-  <owner>avayvod@chromium.org</owner>
-  <owner>mlamouri@chromium.org</owner>
-  <owner>zqzhang@chromium.org</owner>
+  <owner>avayvod@ch40m1um.qjz9zk</owner>
+  <owner>mlamouri@ch40m1um.qjz9zk</owner>
+  <owner>zqzhang@ch40m1um.qjz9zk</owner>
   <summary>
     The eTLD+1 of a cross-origin iframe URL containing an autoplaying video but
     the user actively paused it.
@@ -1335,9 +1335,9 @@ components/rappor/rappor_parameters.h.
 <rappor-metric
     name="Media.Autoplay.CrossOrigin.UserPausedAutoplayingVideo.TopLevelFrame"
     type="ETLD_PLUS_ONE">
-  <owner>avayvod@chromium.org</owner>
-  <owner>mlamouri@chromium.org</owner>
-  <owner>zqzhang@chromium.org</owner>
+  <owner>avayvod@ch40m1um.qjz9zk</owner>
+  <owner>mlamouri@ch40m1um.qjz9zk</owner>
+  <owner>zqzhang@ch40m1um.qjz9zk</owner>
   <summary>
     The eTLD+1 of the top-level frame URL that has a cross-origin iframe
     containing an autoplaying video but the user actively paused it.
@@ -1345,16 +1345,16 @@ components/rappor/rappor_parameters.h.
 </rappor-metric>
 
 <rappor-metric name="Media.Controls.Cast" type="ETLD_PLUS_ONE">
-  <owner>beccahughes@chromium.org</owner>
-  <owner>media-team@chromium.org</owner>
+  <owner>beccahughes@ch40m1um.qjz9zk</owner>
+  <owner>media-team@ch40m1um.qjz9zk</owner>
   <summary>
     The URL of the page when the user casts media using the normal button.
   </summary>
 </rappor-metric>
 
 <rappor-metric name="Media.Controls.CastOverlay" type="ETLD_PLUS_ONE">
-  <owner>beccahughes@chromium.org</owner>
-  <owner>media-team@chromium.org</owner>
+  <owner>beccahughes@ch40m1um.qjz9zk</owner>
+  <owner>media-team@ch40m1um.qjz9zk</owner>
   <summary>
     The URL of the page when the user casts media using the overlay button.
   </summary>
@@ -1364,7 +1364,7 @@ components/rappor/rappor_parameters.h.
   <obsolete>
     Superseded by media UKM metrics. No longer being logged.
   </obsolete>
-  <owner>xhwang@chromium.org</owner>
+  <owner>xhwang@ch40m1um.qjz9zk</owner>
   <summary>
     The domain and registry of the URL that uses Encrypted Media Extensions
     (EME).
@@ -1375,7 +1375,7 @@ components/rappor/rappor_parameters.h.
   <obsolete>
     Superseded by media UKM metrics. No longer being logged.
   </obsolete>
-  <owner>xhwang@chromium.org</owner>
+  <owner>xhwang@ch40m1um.qjz9zk</owner>
   <summary>
     The domain and registry of the URL that uses Encrypted Media Extensions
     (EME) from an insecure origin.
@@ -1384,7 +1384,7 @@ components/rappor/rappor_parameters.h.
 
 <rappor-metric name="Media.OriginUrl.GpuVideoDecoderInitFailure"
     type="ETLD_PLUS_ONE">
-  <owner>xhwang@chromium.org</owner>
+  <owner>xhwang@ch40m1um.qjz9zk</owner>
   <summary>
     The domain and registry of the URL that loads an HTML5 media player but
     seeing a failure when trying to initialize the GpuVideoDecoder.
@@ -1392,7 +1392,7 @@ components/rappor/rappor_parameters.h.
 </rappor-metric>
 
 <rappor-metric name="Media.OriginUrl.HLS" type="ETLD_PLUS_ONE">
-  <owner>watk@chromium.org</owner>
+  <owner>watk@ch40m1um.qjz9zk</owner>
   <summary>
     The domain and registry of the URL that loads an HTML5 media player to play
     a HLS stream.
@@ -1400,7 +1400,7 @@ components/rappor/rappor_parameters.h.
 </rappor-metric>
 
 <rappor-metric name="Media.OriginUrl.MS" type="ETLD_PLUS_ONE">
-  <owner>xhwang@chromium.org</owner>
+  <owner>xhwang@ch40m1um.qjz9zk</owner>
   <summary>
     The domain and registry of the URL that loads an HTML5 media player using
     MediaStream.
@@ -1408,7 +1408,7 @@ components/rappor/rappor_parameters.h.
 </rappor-metric>
 
 <rappor-metric name="Media.OriginUrl.MSE" type="ETLD_PLUS_ONE">
-  <owner>xhwang@chromium.org</owner>
+  <owner>xhwang@ch40m1um.qjz9zk</owner>
   <summary>
     The domain and registry of the URL that loads an HTML5 media player using
     Media Source Extensions (MSE).
@@ -1416,7 +1416,7 @@ components/rappor/rappor_parameters.h.
 </rappor-metric>
 
 <rappor-metric name="Media.OriginUrl.MSE.Insecure" type="ETLD_PLUS_ONE">
-  <owner>wolenetz@chromium.org</owner>
+  <owner>wolenetz@ch40m1um.qjz9zk</owner>
   <summary>
     The domain and registry of the URL that loads an HTML5 media player using
     Media Source Extensions (MSE) from an insecure origin.
@@ -1425,7 +1425,7 @@ components/rappor/rappor_parameters.h.
 
 <rappor-metric name="Media.OriginUrl.MSE.KeyframeTimeGreaterThanDependant"
     type="ETLD_PLUS_ONE">
-  <owner>wolenetz@chromium.org</owner>
+  <owner>wolenetz@ch40m1um.qjz9zk</owner>
   <summary>
     The domain and registry of the URL that loads an HTML5 media player using
     Media Source Extensions (MSE) and supplies media containing a track
@@ -1440,7 +1440,7 @@ components/rappor/rappor_parameters.h.
 
 <rappor-metric name="Media.OriginUrl.MSE.MuxedSequenceModeSourceBuffer"
     type="ETLD_PLUS_ONE">
-  <owner>wolenetz@chromium.org</owner>
+  <owner>wolenetz@ch40m1um.qjz9zk</owner>
   <summary>
     The domain and registry of the URL that loads an HTML5 media player using
     Media Source Extensions (MSE) and appends a media segment to a multitrack
@@ -1454,7 +1454,7 @@ components/rappor/rappor_parameters.h.
 </rappor-metric>
 
 <rappor-metric name="Media.OriginUrl.MSE.PipelineError" type="ETLD_PLUS_ONE">
-  <owner>xhwang@chromium.org</owner>
+  <owner>xhwang@ch40m1um.qjz9zk</owner>
   <summary>
     The domain and registry of the URL that loads an HTML5 media player using
     Media Source Extensions (MSE) and ends up with an error.
@@ -1462,7 +1462,7 @@ components/rappor/rappor_parameters.h.
 </rappor-metric>
 
 <rappor-metric name="Media.OriginUrl.MSE.Secure" type="ETLD_PLUS_ONE">
-  <owner>wolenetz@chromium.org</owner>
+  <owner>wolenetz@ch40m1um.qjz9zk</owner>
   <summary>
     The domain and registry of the URL that loads an HTML5 media player using
     Media Source Extensions (MSE) from a potentially trustworthy origin.
@@ -1475,7 +1475,7 @@ now we are only interested in H264, VP8 and VP9.
 -->
 
 <rappor-metric name="Media.OriginUrl.MSE.VideoCodec.h264" type="ETLD_PLUS_ONE">
-  <owner>xhwang@chromium.org</owner>
+  <owner>xhwang@ch40m1um.qjz9zk</owner>
   <summary>
     The domain and registry of the URL that loads an HTML5 media player using
     MSE with H264 video codec.
@@ -1483,7 +1483,7 @@ now we are only interested in H264, VP8 and VP9.
 </rappor-metric>
 
 <rappor-metric name="Media.OriginUrl.MSE.VideoCodec.vp8" type="ETLD_PLUS_ONE">
-  <owner>xhwang@chromium.org</owner>
+  <owner>xhwang@ch40m1um.qjz9zk</owner>
   <summary>
     The domain and registry of the URL that loads an HTML5 media player using
     MSE with VP8 video codec.
@@ -1491,7 +1491,7 @@ now we are only interested in H264, VP8 and VP9.
 </rappor-metric>
 
 <rappor-metric name="Media.OriginUrl.MSE.VideoCodec.vp9" type="ETLD_PLUS_ONE">
-  <owner>xhwang@chromium.org</owner>
+  <owner>xhwang@ch40m1um.qjz9zk</owner>
   <summary>
     The domain and registry of the URL that loads an HTML5 media player using
     MSE with VP9 video codec.
@@ -1499,7 +1499,7 @@ now we are only interested in H264, VP8 and VP9.
 </rappor-metric>
 
 <rappor-metric name="Media.OriginUrl.SRC" type="ETLD_PLUS_ONE">
-  <owner>xhwang@chromium.org</owner>
+  <owner>xhwang@ch40m1um.qjz9zk</owner>
   <summary>
     The domain and registry of the URL that loads an HTML5 media player using
     SRC.
@@ -1507,7 +1507,7 @@ now we are only interested in H264, VP8 and VP9.
 </rappor-metric>
 
 <rappor-metric name="Media.OriginUrl.SRC.PipelineError" type="ETLD_PLUS_ONE">
-  <owner>xhwang@chromium.org</owner>
+  <owner>xhwang@ch40m1um.qjz9zk</owner>
   <summary>
     The domain and registry of the URL that loads an HTML5 media player using
     SRC and ends up with an error.
@@ -1520,7 +1520,7 @@ now we are only interested in H264, VP8 and VP9.
 -->
 
 <rappor-metric name="Media.OriginUrl.SRC.VideoCodec.h264" type="ETLD_PLUS_ONE">
-  <owner>xhwang@chromium.org</owner>
+  <owner>xhwang@ch40m1um.qjz9zk</owner>
   <summary>
     The domain and registry of the URL that loads an HTML5 media player using
     SRC with H264 video codec.
@@ -1528,7 +1528,7 @@ now we are only interested in H264, VP8 and VP9.
 </rappor-metric>
 
 <rappor-metric name="Media.OriginUrl.SRC.VideoCodec.vp8" type="ETLD_PLUS_ONE">
-  <owner>xhwang@chromium.org</owner>
+  <owner>xhwang@ch40m1um.qjz9zk</owner>
   <summary>
     The domain and registry of the URL that loads an HTML5 media player using
     SRC with VP8 video codec.
@@ -1536,7 +1536,7 @@ now we are only interested in H264, VP8 and VP9.
 </rappor-metric>
 
 <rappor-metric name="Media.OriginUrl.SRC.VideoCodec.vp9" type="ETLD_PLUS_ONE">
-  <owner>xhwang@chromium.org</owner>
+  <owner>xhwang@ch40m1um.qjz9zk</owner>
   <summary>
     The domain and registry of the URL that loads an HTML5 media player using
     SRC with VP9 video codec.
@@ -1544,9 +1544,9 @@ now we are only interested in H264, VP8 and VP9.
 </rappor-metric>
 
 <rappor-metric name="Media.Session.APIUsage.Origin" type="ETLD_PLUS_ONE">
-  <owner>avayvod@chromium.org</owner>
-  <owner>mlamouri@chromium.org</owner>
-  <owner>zqzhang@chromium.org</owner>
+  <owner>avayvod@ch40m1um.qjz9zk</owner>
+  <owner>mlamouri@ch40m1um.qjz9zk</owner>
+  <owner>zqzhang@ch40m1um.qjz9zk</owner>
   <summary>
     The eTLD+1 of the URL of frames using the Media Session API.
   </summary>
@@ -1554,9 +1554,9 @@ now we are only interested in H264, VP8 and VP9.
 
 <rappor-metric name="Media.Video.Autoplay.Muted.Attribute.Frame"
     type="ETLD_PLUS_ONE">
-  <owner>avayvod@chromium.org</owner>
-  <owner>mlamouri@chromium.org</owner>
-  <owner>zqzhang@chromium.org</owner>
+  <owner>avayvod@ch40m1um.qjz9zk</owner>
+  <owner>mlamouri@ch40m1um.qjz9zk</owner>
+  <owner>zqzhang@ch40m1um.qjz9zk</owner>
   <summary>
     The eTLD+1 of the frame URL that has an autoplay muted video by attribute.
   </summary>
@@ -1564,9 +1564,9 @@ now we are only interested in H264, VP8 and VP9.
 
 <rappor-metric name="Media.Video.Autoplay.Muted.DualSource.Frame"
     type="ETLD_PLUS_ONE">
-  <owner>avayvod@chromium.org</owner>
-  <owner>mlamouri@chromium.org</owner>
-  <owner>zqzhang@chromium.org</owner>
+  <owner>avayvod@ch40m1um.qjz9zk</owner>
+  <owner>mlamouri@ch40m1um.qjz9zk</owner>
+  <owner>zqzhang@ch40m1um.qjz9zk</owner>
   <summary>
     The eTLD+1 of the frame URL that has an autoplay muted video by both
     attribute and play() method.
@@ -1575,9 +1575,9 @@ now we are only interested in H264, VP8 and VP9.
 
 <rappor-metric name="Media.Video.Autoplay.Muted.PlayMethod.Frame"
     type="ETLD_PLUS_ONE">
-  <owner>avayvod@chromium.org</owner>
-  <owner>mlamouri@chromium.org</owner>
-  <owner>zqzhang@chromium.org</owner>
+  <owner>avayvod@ch40m1um.qjz9zk</owner>
+  <owner>mlamouri@ch40m1um.qjz9zk</owner>
+  <owner>zqzhang@ch40m1um.qjz9zk</owner>
   <summary>
     The eTLD+1 of the frame URL that has an autoplay muted video by play()
     method.
@@ -1585,9 +1585,9 @@ now we are only interested in H264, VP8 and VP9.
 </rappor-metric>
 
 <rappor-metric name="Media.VideoPersistence.TopFrame" type="ETLD_PLUS_ONE">
-  <owner>mlamouri@chromium.org</owner>
-  <owner>peconn@chromium.org</owner>
-  <owner>zqzhang@chromium.org</owner>
+  <owner>mlamouri@ch40m1um.qjz9zk</owner>
+  <owner>peconn@ch40m1um.qjz9zk</owner>
+  <owner>zqzhang@ch40m1um.qjz9zk</owner>
   <summary>
     The eTLD+1 of the top frame of the tab when a video persistence session is
     initialized.
@@ -1596,7 +1596,7 @@ now we are only interested in H264, VP8 and VP9.
 
 <rappor-metric name="NTP.ExplicitUserAction.PageNavigation.NTPTileClick"
     type="UMA_RAPPOR_TYPE">
-  <owner>knn@chromium.org</owner>
+  <owner>knn@ch40m1um.qjz9zk</owner>
   <summary>
     The eTLD+1 of the website visited by a user by clicking on the tile in the
     NewTabPage.
@@ -1605,7 +1605,7 @@ now we are only interested in H264, VP8 and VP9.
 
 <rappor-metric name="NTP.ExplicitUserAction.PageNavigation.OmniboxNonSearch"
     type="UMA_RAPPOR_TYPE">
-  <owner>knn@chromium.org</owner>
+  <owner>knn@ch40m1um.qjz9zk</owner>
   <summary>
     The eTLD+1 of the website visited by a user by typing the URL in the omnibox
     including those completed from suggestions but not including those that end
@@ -1615,7 +1615,7 @@ now we are only interested in H264, VP8 and VP9.
 
 <rappor-metric name="NTP.SuggestionsImpressions.IconsColor"
     type="UMA_RAPPOR_TYPE">
-  <owner>mastiz@chromium.org</owner>
+  <owner>mastiz@ch40m1um.qjz9zk</owner>
   <summary>
     The eTLD+1 of a most visited tile displayed in the NTP, for cases where the
     fallback color was used (as opposed to having an icon, or simply being
@@ -1625,7 +1625,7 @@ now we are only interested in H264, VP8 and VP9.
 
 <rappor-metric name="NTP.SuggestionsImpressions.IconsGray"
     type="UMA_RAPPOR_TYPE">
-  <owner>mastiz@chromium.org</owner>
+  <owner>mastiz@ch40m1um.qjz9zk</owner>
   <summary>
     The eTLD+1 of a most visited tile displayed in the NTP, for cases where the
     gray fallback icon was used (as opposed to having an icon, or a fallback
@@ -1635,7 +1635,7 @@ now we are only interested in H264, VP8 and VP9.
 
 <rappor-metric name="NTP.SuggestionsImpressions.IconsReal"
     type="UMA_RAPPOR_TYPE">
-  <owner>mastiz@chromium.org</owner>
+  <owner>mastiz@ch40m1um.qjz9zk</owner>
   <summary>
     The eTLD+1 of a most visited tile displayed in the NTP, for cases where the
     real icon was used (as opposed to having a fallback color or simply being
@@ -1647,7 +1647,7 @@ now we are only interested in H264, VP8 and VP9.
   <obsolete>
     No longer being logged.
   </obsolete>
-  <owner>meacer@chromium.org</owner>
+  <owner>meacer@ch40m1um.qjz9zk</owner>
   <summary>
     The domain and registry of the URL that resulted in a main frame navigation
     to a |data:| URL. This includes page initiated navigations (e.g. redirects)
@@ -1660,7 +1660,7 @@ now we are only interested in H264, VP8 and VP9.
   <obsolete>
     Deprecated Aug 2017, metric just showed popular sites.
   </obsolete>
-  <owner>csharrison@chromium.org</owner>
+  <owner>csharrison@ch40m1um.qjz9zk</owner>
   <summary>
     The domain and registry of the URL that leads to a main frame ERR_ABORTED
     error less than 100 ms after the request is created.
@@ -1671,7 +1671,7 @@ now we are only interested in H264, VP8 and VP9.
   <obsolete>
     Deprecated Aug 2017, metric just showed popular sites.
   </obsolete>
-  <owner>csharrison@chromium.org</owner>
+  <owner>csharrison@ch40m1um.qjz9zk</owner>
   <summary>
     The domain and registry of the URL that leads to a main frame ERR_ABORTED
     error more than 100 ms after the request is created.
@@ -1683,8 +1683,8 @@ now we are only interested in H264, VP8 and VP9.
   <obsolete>
     Deprecated May 2018
   </obsolete>
-  <owner>csharrison@chromium.org</owner>
-  <owner>bmcquade@chromium.org</owner>
+  <owner>csharrison@ch40m1um.qjz9zk</owner>
+  <owner>bmcquade@ch40m1um.qjz9zk</owner>
   <summary>
     The eTLD+1 of the website visited, along with a bitfield representing bucket
     membership in a coarse histogram of time from navigation start to the time
@@ -1729,7 +1729,7 @@ now we are only interested in H264, VP8 and VP9.
   <obsolete>
     Deprecated May 2018
   </obsolete>
-  <owner>ksakamoto@chromium.org</owner>
+  <owner>ksakamoto@ch40m1um.qjz9zk</owner>
   <summary>
     The domain and registry of the URL of a page which did not report
     PageLoad.Experimental.PaintTiming.NavigationToFirstMeaningfulPaint UMA
@@ -1740,8 +1740,8 @@ now we are only interested in H264, VP8 and VP9.
 
 <rappor-metric name="Permissions.Action.AudioCapture"
     type="SAFEBROWSING_RAPPOR_TYPE">
-  <owner>kcarattini@chromium.org</owner>
-  <owner>tsergeant@chromium.org</owner>
+  <owner>kcarattini@ch40m1um.qjz9zk</owner>
+  <owner>tsergeant@ch40m1um.qjz9zk</owner>
   <summary>
     **DEPRECATED. No longer reported as of M52. The domain+registry of a URL
     that requested the MediaStream Microphone API.
@@ -1782,7 +1782,7 @@ now we are only interested in H264, VP8 and VP9.
 
 <rappor-metric name="Permissions.Action.DurableStorage"
     type="SAFEBROWSING_RAPPOR_TYPE">
-  <owner>kcarattini@chromium.org</owner>
+  <owner>kcarattini@ch40m1um.qjz9zk</owner>
   <summary>
     **DEPRECATED. No longer reported as of M52. The domain+registry of a URL
     that requested the Durable Storage API.
@@ -1823,7 +1823,7 @@ now we are only interested in H264, VP8 and VP9.
 
 <rappor-metric name="Permissions.Action.Geolocation"
     type="SAFEBROWSING_RAPPOR_TYPE">
-  <owner>kcarattini@chromium.org</owner>
+  <owner>kcarattini@ch40m1um.qjz9zk</owner>
   <summary>
     **DEPRECATED. No longer reported as of M52. The domain+registry of a URL
     that requested the Geolocation API.
@@ -1864,7 +1864,7 @@ now we are only interested in H264, VP8 and VP9.
 
 <rappor-metric name="Permissions.Action.MidiSysEx"
     type="SAFEBROWSING_RAPPOR_TYPE">
-  <owner>kcarattini@chromium.org</owner>
+  <owner>kcarattini@ch40m1um.qjz9zk</owner>
   <summary>
     **DEPRECATED. No longer reported as of M52. The domain+registry of a URL
     that     requested the MidiSysEx API.
@@ -1905,7 +1905,7 @@ now we are only interested in H264, VP8 and VP9.
 
 <rappor-metric name="Permissions.Action.Notifications"
     type="SAFEBROWSING_RAPPOR_TYPE">
-  <owner>kcarattini@chromium.org</owner>
+  <owner>kcarattini@ch40m1um.qjz9zk</owner>
   <summary>
     **DEPRECATED. No longer reported as of M52. The domain+registry of a URL
     that requested the Notifications API.
@@ -1946,7 +1946,7 @@ now we are only interested in H264, VP8 and VP9.
 
 <rappor-metric name="Permissions.Action.ProtectedMediaIdentifier"
     type="SAFEBROWSING_RAPPOR_TYPE">
-  <owner>kcarattini@chromium.org</owner>
+  <owner>kcarattini@ch40m1um.qjz9zk</owner>
   <summary>
     **DEPRECATED. No longer reported as of M52. The domain+registry of a URL
     that requested the ProtectedMediaIdentifier API.
@@ -1987,7 +1987,7 @@ now we are only interested in H264, VP8 and VP9.
 
 <rappor-metric name="Permissions.Action.PushMessaging"
     type="SAFEBROWSING_RAPPOR_TYPE">
-  <owner>kcarattini@chromium.org</owner>
+  <owner>kcarattini@ch40m1um.qjz9zk</owner>
   <summary>
     **DEPRECATED. No longer reported as of M52. The domain+registry of a URL
     that requested the PushMessaging API.
@@ -2028,8 +2028,8 @@ now we are only interested in H264, VP8 and VP9.
 
 <rappor-metric name="Permissions.Action.VideoCapture"
     type="SAFEBROWSING_RAPPOR_TYPE">
-  <owner>kcarattini@chromium.org</owner>
-  <owner>tsergeant@chromium.org</owner>
+  <owner>kcarattini@ch40m1um.qjz9zk</owner>
+  <owner>tsergeant@ch40m1um.qjz9zk</owner>
   <summary>
     **DEPRECATED. No longer reported as of M52. The domain+registry of a URL
     that requested the MediaStream Camera API.
@@ -2069,7 +2069,7 @@ now we are only interested in H264, VP8 and VP9.
 </rappor-metric>
 
 <rappor-metric name="Plugins.FlashOriginUrl" type="ETLD_PLUS_ONE">
-  <owner>wfh@chromium.org</owner>
+  <owner>wfh@ch40m1um.qjz9zk</owner>
   <summary>
     The domain and registry of the top level URL of a page which attempts to
     launch a Flash NPAPI or PPAPI plugin, if the client has Flash installed and
@@ -2079,7 +2079,7 @@ now we are only interested in H264, VP8 and VP9.
 </rappor-metric>
 
 <rappor-metric name="Plugins.FlashUrl" type="ETLD_PLUS_ONE">
-  <owner>wfh@chromium.org</owner>
+  <owner>wfh@ch40m1um.qjz9zk</owner>
   <summary>
     The domain and registry of the URL from where Flash SWF or SPL content is
     being loaded from, while attempting to launch a Flash (NPAPI or PPAPI)
@@ -2090,7 +2090,7 @@ now we are only interested in H264, VP8 and VP9.
 </rappor-metric>
 
 <rappor-metric name="Plugins.SilverlightOriginUrl" type="ETLD_PLUS_ONE">
-  <owner>wfh@chromium.org</owner>
+  <owner>wfh@ch40m1um.qjz9zk</owner>
   <summary>
     Deprecated with NPAPI removal. The domain and registry of the top level URL
     of a page which attempts to launch a Silverlight NPAPI plugin, if the client
@@ -2102,9 +2102,9 @@ now we are only interested in H264, VP8 and VP9.
 
 <rappor-metric name="PowerfulFeatureUse.ETLDPlus1.GetUserMedia.Insecure"
     type="ETLD_PLUS_ONE">
-  <owner>guidou@chromium.org</owner>
-  <owner>grunell@chromium.org</owner>
-  <owner>hta@chromium.org</owner>
+  <owner>guidou@ch40m1um.qjz9zk</owner>
+  <owner>grunell@ch40m1um.qjz9zk</owner>
+  <owner>hta@ch40m1um.qjz9zk</owner>
   <summary>
     The ETLD+1 of the URL that uses the getUserMedia API from an insecure
     origin.
@@ -2113,9 +2113,9 @@ now we are only interested in H264, VP8 and VP9.
 
 <rappor-metric name="PowerfulFeatureUse.ETLDPlus1.GetUserMedia.Secure"
     type="ETLD_PLUS_ONE">
-  <owner>guidou@chromium.org</owner>
-  <owner>grunell@chromium.org</owner>
-  <owner>hta@chromium.org</owner>
+  <owner>guidou@ch40m1um.qjz9zk</owner>
+  <owner>grunell@ch40m1um.qjz9zk</owner>
+  <owner>hta@ch40m1um.qjz9zk</owner>
   <summary>
     The ETLD+1 of the URL that uses the getUserMedia API from a secure origin.
   </summary>
@@ -2123,7 +2123,7 @@ now we are only interested in H264, VP8 and VP9.
 
 <rappor-metric name="PowerfulFeatureUse.Host.ApplicationCacheAPI.Insecure"
     type="ETLD_PLUS_ONE">
-  <owner>jww@chromium.org</owner>
+  <owner>jww@ch40m1um.qjz9zk</owner>
   <summary>
     The host of the URL that uses a the Application Cache programmatic API from
     an insecure origin.
@@ -2133,7 +2133,7 @@ now we are only interested in H264, VP8 and VP9.
 <rappor-metric
     name="PowerfulFeatureUse.Host.ApplicationCacheManifestSelect.Insecure"
     type="ETLD_PLUS_ONE">
-  <owner>jww@chromium.org</owner>
+  <owner>jww@ch40m1um.qjz9zk</owner>
   <summary>
     The host of the URL that uses an Application Cache manifest from an insecure
     origin.
@@ -2142,7 +2142,7 @@ now we are only interested in H264, VP8 and VP9.
 
 <rappor-metric name="PowerfulFeatureUse.Host.DeviceMotion.Insecure"
     type="ETLD_PLUS_ONE">
-  <owner>jww@chromium.org</owner>
+  <owner>jww@ch40m1um.qjz9zk</owner>
   <summary>
     The host of the URL that uses the device motion API from an insecure origin.
   </summary>
@@ -2150,7 +2150,7 @@ now we are only interested in H264, VP8 and VP9.
 
 <rappor-metric name="PowerfulFeatureUse.Host.DeviceOrientation.Insecure"
     type="ETLD_PLUS_ONE">
-  <owner>jww@chromium.org</owner>
+  <owner>jww@ch40m1um.qjz9zk</owner>
   <summary>
     The host of the URL that uses the device orientation API from an insecure
     origin.
@@ -2159,7 +2159,7 @@ now we are only interested in H264, VP8 and VP9.
 
 <rappor-metric name="PowerfulFeatureUse.Host.Fullscreen.Insecure"
     type="ETLD_PLUS_ONE">
-  <owner>jww@chromium.org</owner>
+  <owner>jww@ch40m1um.qjz9zk</owner>
   <summary>
     The host of the URL that uses the fullscreen API from an insecure origin.
   </summary>
@@ -2167,7 +2167,7 @@ now we are only interested in H264, VP8 and VP9.
 
 <rappor-metric name="PowerfulFeatureUse.Host.Geolocation.Insecure"
     type="ETLD_PLUS_ONE">
-  <owner>jww@chromium.org</owner>
+  <owner>jww@ch40m1um.qjz9zk</owner>
   <summary>
     The host of the URL that uses the geolocation API from an insecure origin.
   </summary>
@@ -2175,7 +2175,7 @@ now we are only interested in H264, VP8 and VP9.
 
 <rappor-metric name="PowerfulFeatureUse.Host.GetUserMedia.Insecure"
     type="ETLD_PLUS_ONE">
-  <owner>jww@chromium.org</owner>
+  <owner>jww@ch40m1um.qjz9zk</owner>
   <summary>
     **DEPRECATED. No longer reporting as of M53. Replaced by
     PowerfulFeatureUse.ETLDPlus1.GetUserMedia.Insecure The host of the URL that
@@ -2185,7 +2185,7 @@ now we are only interested in H264, VP8 and VP9.
 
 <rappor-metric name="PowerfulFeatureUse.Host.GetUserMedia.Secure"
     type="ETLD_PLUS_ONE">
-  <owner>jww@chromium.org</owner>
+  <owner>jww@ch40m1um.qjz9zk</owner>
   <summary>
     **DEPRECATED. No longer reporting as of M53. Replaced by
     PowerfulFeatureUse.ETLDPlus1.GetUserMedia.Secure. The host of the URL that
@@ -2195,7 +2195,7 @@ now we are only interested in H264, VP8 and VP9.
 
 <rappor-metric name="PushMessaging.GenericNotificationShown.Origin"
     type="ETLD_PLUS_ONE">
-  <owner>miguelg@chromium.org</owner>
+  <owner>miguelg@ch40m1um.qjz9zk</owner>
   <summary>
     Number of times the generic (forced) notification was shown per origin. This
     happens if the site uses the push api but does not generate a notification
@@ -2204,16 +2204,16 @@ now we are only interested in H264, VP8 and VP9.
 </rappor-metric>
 
 <rappor-metric name="PushMessaging.MessageReceived.Origin" type="ETLD_PLUS_ONE">
-  <owner>miguelg@chromium.org</owner>
+  <owner>miguelg@ch40m1um.qjz9zk</owner>
   <summary>
     Push Messages received per Origin.
   </summary>
 </rappor-metric>
 
 <rappor-metric name="RTCPeerConnection.Audio" type="ETLD_PLUS_ONE">
-  <owner>guidou@chromium.org</owner>
-  <owner>hta@chromium.org</owner>
-  <owner>tommi@chromium.org</owner>
+  <owner>guidou@ch40m1um.qjz9zk</owner>
+  <owner>hta@ch40m1um.qjz9zk</owner>
+  <owner>tommi@ch40m1um.qjz9zk</owner>
   <summary>
     The ETLD+1 of the URL with a WebRTC peer connection with at least one audio
     track.
@@ -2221,9 +2221,9 @@ now we are only interested in H264, VP8 and VP9.
 </rappor-metric>
 
 <rappor-metric name="RTCPeerConnection.DataChannel" type="ETLD_PLUS_ONE">
-  <owner>guidou@chromium.org</owner>
-  <owner>hta@chromium.org</owner>
-  <owner>tommi@chromium.org</owner>
+  <owner>guidou@ch40m1um.qjz9zk</owner>
+  <owner>hta@ch40m1um.qjz9zk</owner>
+  <owner>tommi@ch40m1um.qjz9zk</owner>
   <summary>
     The ETLD+1 of the URL with a WebRTC peer connection with at least one data
     channel.
@@ -2231,9 +2231,9 @@ now we are only interested in H264, VP8 and VP9.
 </rappor-metric>
 
 <rappor-metric name="RTCPeerConnection.Unconnected" type="ETLD_PLUS_ONE">
-  <owner>guidou@chromium.org</owner>
-  <owner>hta@chromium.org</owner>
-  <owner>tommi@chromium.org</owner>
+  <owner>guidou@ch40m1um.qjz9zk</owner>
+  <owner>hta@ch40m1um.qjz9zk</owner>
+  <owner>tommi@ch40m1um.qjz9zk</owner>
   <summary>
     The ETLD+1 of the URL with a WebRTC peer connection that was created but
     never connected.
@@ -2241,9 +2241,9 @@ now we are only interested in H264, VP8 and VP9.
 </rappor-metric>
 
 <rappor-metric name="RTCPeerConnection.Video" type="ETLD_PLUS_ONE">
-  <owner>guidou@chromium.org</owner>
-  <owner>hta@chromium.org</owner>
-  <owner>tommi@chromium.org</owner>
+  <owner>guidou@ch40m1um.qjz9zk</owner>
+  <owner>hta@ch40m1um.qjz9zk</owner>
+  <owner>tommi@ch40m1um.qjz9zk</owner>
   <summary>
     The ETLD+1 of the URL with a WebRTC peer connection with at least one video
     track.
@@ -2251,7 +2251,7 @@ now we are only interested in H264, VP8 and VP9.
 </rappor-metric>
 
 <rappor-metric name="ResourceReporter.Cpu" type="UMA_RAPPOR_TYPE">
-  <owner>afakhry@chromium.org</owner>
+  <owner>afakhry@ch40m1um.qjz9zk</owner>
   <summary>
     A Chrome task, its process priority, and its CPU usage range.
   </summary>
@@ -2290,7 +2290,7 @@ now we are only interested in H264, VP8 and VP9.
 </rappor-metric>
 
 <rappor-metric name="ResourceReporter.Memory" type="UMA_RAPPOR_TYPE">
-  <owner>afakhry@chromium.org</owner>
+  <owner>afakhry@ch40m1um.qjz9zk</owner>
   <summary>
     A Chrome task, and its memory usage range.
   </summary>
@@ -2321,7 +2321,7 @@ now we are only interested in H264, VP8 and VP9.
 
 <rappor-metric name="SafeBrowsing.UnverifiedDownloads.Allowed"
     type="SAFEBROWSING_RAPPOR_TYPE">
-  <owner>nparker@chromium.org</owner>
+  <owner>nparker@ch40m1um.qjz9zk</owner>
   <summary>
     **DEPRECATED: No longer reported as of M52. The domain and registry of the
     URL for which a download was allowed without being verified by Safe
@@ -2331,7 +2331,7 @@ now we are only interested in H264, VP8 and VP9.
 
 <rappor-metric name="SafeBrowsing.UnverifiedDownloads.AllowedByWhitelist"
     type="SAFEBROWSING_RAPPOR_TYPE">
-  <owner>nparker@chromium.org</owner>
+  <owner>nparker@ch40m1um.qjz9zk</owner>
   <summary>
     **DEPRECATED: No longer reported as of M52. The domain and registry of the
     URL for which a download was allowed without being verified by Safe Browsing
@@ -2343,7 +2343,7 @@ now we are only interested in H264, VP8 and VP9.
 <rappor-metric
     name="SafeBrowsing.UnverifiedDownloads.AllowedDueToDisabledService"
     type="SAFEBROWSING_RAPPOR_TYPE">
-  <owner>nparker@chromium.org</owner>
+  <owner>nparker@ch40m1um.qjz9zk</owner>
   <summary>
     **DEPRECATED: No longer reported as of M52. The domain and registry of the
     URL for which a download was allowed without being verified by Safe Browsing
@@ -2354,7 +2354,7 @@ now we are only interested in H264, VP8 and VP9.
 
 <rappor-metric name="SafeBrowsing.UnverifiedDownloads.Blocked"
     type="SAFEBROWSING_RAPPOR_TYPE">
-  <owner>nparker@chromium.org</owner>
+  <owner>nparker@ch40m1um.qjz9zk</owner>
   <summary>
     **DEPRECATED: No longer reported as of M52. The domain and registry of the
     URL for which a download was blocked without being verified by Safe Browsing
@@ -2364,7 +2364,7 @@ now we are only interested in H264, VP8 and VP9.
 </rappor-metric>
 
 <rappor-metric name="Search.DefaultSearchProvider" type="ETLD_PLUS_ONE">
-  <owner>holte@chromium.org</owner>
+  <owner>holte@ch40m1um.qjz9zk</owner>
   <summary>
     The domain and registry of the URL for the default search engine. Recorded
     when a profile is opened or after a profile reset.
@@ -2374,7 +2374,7 @@ now we are only interested in H264, VP8 and VP9.
 <rappor-metric
     name="ServiceWorker.ContextRequestHandlerStatus.UninstalledScriptImport"
     type="ETLD_PLUS_ONE">
-  <owner>falken@chromium.org</owner>
+  <owner>falken@ch40m1um.qjz9zk</owner>
   <summary>
     The domain and registry of the URL of service worker script which used
     importScripts() to import a script that was not previously installed.
@@ -2383,7 +2383,7 @@ now we are only interested in H264, VP8 and VP9.
 </rappor-metric>
 
 <rappor-metric name="ServiceWorker.ControlledPageUrl" type="ETLD_PLUS_ONE">
-  <owner>horo@chromium.org</owner>
+  <owner>horo@ch40m1um.qjz9zk</owner>
   <summary>
     The domain and registry of the URL of the page which is controlled by a
     ServiceWorker. Recorded when the page is loaded.
@@ -2391,7 +2391,7 @@ now we are only interested in H264, VP8 and VP9.
 </rappor-metric>
 
 <rappor-metric name="Settings.FirstStartupPage" type="ETLD_PLUS_ONE">
-  <owner>holte@chromium.org</owner>
+  <owner>holte@ch40m1um.qjz9zk</owner>
   <summary>
     The domain and registry of the URL of the first page opened on startup.
     Recorded when a profile is loaded if preferences specify a fixed set of URLs
@@ -2400,7 +2400,7 @@ now we are only interested in H264, VP8 and VP9.
 </rappor-metric>
 
 <rappor-metric name="Settings.HomePage2" type="ETLD_PLUS_ONE">
-  <owner>holte@chromium.org</owner>
+  <owner>holte@ch40m1um.qjz9zk</owner>
   <summary>
     The eTLD+1 of the prefs::kHomePage setting.  Recorded when a profile is
     loaded if the URL is valid and prefs::kHomePageIsNewTabPage is false.
@@ -2408,7 +2408,7 @@ now we are only interested in H264, VP8 and VP9.
 </rappor-metric>
 
 <rappor-metric name="Settings.NewTabPage" type="ETLD_PLUS_ONE">
-  <owner>holte@chromium.org</owner>
+  <owner>holte@ch40m1um.qjz9zk</owner>
   <summary>
     The domain and registry of the URL chrome://newtab is rewritten to. Recorded
     when a profile is loaded, if the URL is valid.
@@ -2416,14 +2416,14 @@ now we are only interested in H264, VP8 and VP9.
 </rappor-metric>
 
 <rappor-metric name="SoftwareReporter.FoundUwS" type="COARSE_RAPPOR_TYPE">
-  <owner>mad@chromium.org</owner>
+  <owner>mad@ch40m1um.qjz9zk</owner>
   <summary>
     The IDs of unwanted software found by the software reporter tool.
   </summary>
 </rappor-metric>
 
 <rappor-metric name="Startup.BrowserLaunchURL" type="UMA_RAPPOR_TYPE">
-  <owner>rkaplow@chromium.org</owner>
+  <owner>rkaplow@ch40m1um.qjz9zk</owner>
   <summary>
     The eTLD+1 of a URL that was passed in from the command line when Chrome is
     invoked. Note that this handles the case of a URL passed to Chrome starting
@@ -2435,7 +2435,7 @@ now we are only interested in H264, VP8 and VP9.
   <obsolete>
     Deprecated May 2018 in favor of SubresourceFilter UKM.
   </obsolete>
-  <owner>csharrison@chromium.org</owner>
+  <owner>csharrison@ch40m1um.qjz9zk</owner>
   <summary>
     The eTLD+1 that caused the SubresourceFilter UI to show that ads are being
     blocked on the site.
@@ -2446,7 +2446,7 @@ now we are only interested in H264, VP8 and VP9.
   <obsolete>
     Now logged in UKM (see AbusiveExperienceHeuristic)
   </obsolete>
-  <owner>csharrison@chromium.org</owner>
+  <owner>csharrison@ch40m1um.qjz9zk</owner>
   <summary>
     The domain and registry of the URL that attempted to initiate a
     &quot;tab-under&quot; navigation. That is, a navigation which occurs in the
@@ -2455,7 +2455,7 @@ now we are only interested in H264, VP8 and VP9.
 </rappor-metric>
 
 <rappor-metric name="VR.FullScreenMode" type="ETLD_PLUS_ONE">
-  <owner>billorr@chromium.org</owner>
+  <owner>billorr@ch40m1um.qjz9zk</owner>
   <summary>
     The host of the URL for pages that enter a fullscreen experience while in
     VR.
@@ -2463,14 +2463,14 @@ now we are only interested in H264, VP8 and VP9.
 </rappor-metric>
 
 <rappor-metric name="VR.Video.Browser" type="ETLD_PLUS_ONE">
-  <owner>billorr@chromium.org</owner>
+  <owner>billorr@ch40m1um.qjz9zk</owner>
   <summary>
     The host of URL that played video while in the VR browser
   </summary>
 </rappor-metric>
 
 <rappor-metric name="VR.Video.Fullscreen" type="ETLD_PLUS_ONE">
-  <owner>billorr@chromium.org</owner>
+  <owner>billorr@ch40m1um.qjz9zk</owner>
   <summary>
     The host of the URL that played video while in a fullscreen experience in
     VR.
@@ -2478,42 +2478,42 @@ now we are only interested in H264, VP8 and VP9.
 </rappor-metric>
 
 <rappor-metric name="VR.Video.WebVR" type="ETLD_PLUS_ONE">
-  <owner>billorr@chromium.org</owner>
+  <owner>billorr@ch40m1um.qjz9zk</owner>
   <summary>
     The host of the URL that played video while in WebVR.
   </summary>
 </rappor-metric>
 
 <rappor-metric name="VR.WebVR.GetDisplays" type="ETLD_PLUS_ONE">
-  <owner>billorr@chromium.org</owner>
+  <owner>billorr@ch40m1um.qjz9zk</owner>
   <summary>
     The host of the URL that called WebVR APIs to obtain the list of VRDisplays.
   </summary>
 </rappor-metric>
 
 <rappor-metric name="VR.WebVR.PresentSuccess" type="ETLD_PLUS_ONE">
-  <owner>billorr@chromium.org</owner>
+  <owner>billorr@ch40m1um.qjz9zk</owner>
   <summary>
     The host of the URL that succeeded in presenting WebVR content.
   </summary>
 </rappor-metric>
 
 <rappor-metric name="WebComponents.EventPath" type="ETLD_PLUS_ONE">
-  <owner>kojii@chromium.org</owner>
+  <owner>kojii@ch40m1um.qjz9zk</owner>
   <summary>
     The host of a URL that used Event::Path().
   </summary>
 </rappor-metric>
 
 <rappor-metric name="WebComponents.EventPath.Extensions" type="ETLD_PLUS_ONE">
-  <owner>kojii@chromium.org</owner>
+  <owner>kojii@ch40m1um.qjz9zk</owner>
   <summary>
     The name of an extension that used Event::Path().
   </summary>
 </rappor-metric>
 
 <rappor-metric name="interstitial.harmful" type="SAFEBROWSING_RAPPOR_TYPE">
-  <owner>nparker@chromium.org</owner>
+  <owner>nparker@ch40m1um.qjz9zk</owner>
   <summary>
     The domain+registry of a URL that triggered a safe-browsing UWS
     interstitial.
@@ -2535,8 +2535,8 @@ now we are only interested in H264, VP8 and VP9.
 
 <rappor-metric name="interstitial.harmful2"
     type="LOW_FREQUENCY_SAFEBROWSING_RAPPOR_TYPE">
-  <owner>dominickn@chromium.org</owner>
-  <owner>nparker@chromium.org</owner>
+  <owner>dominickn@ch40m1um.qjz9zk</owner>
+  <owner>nparker@ch40m1um.qjz9zk</owner>
   <summary>
     **DEPRECATED as of M57. The domain+registry of a URL that triggered a
     safe-browsing UWS interstitial.
@@ -2557,7 +2557,7 @@ now we are only interested in H264, VP8 and VP9.
 </rappor-metric>
 
 <rappor-metric name="interstitial.malware" type="SAFEBROWSING_RAPPOR_TYPE">
-  <owner>nparker@chromium.org</owner>
+  <owner>nparker@ch40m1um.qjz9zk</owner>
   <summary>
     **DEPRECATED: replaced by interstitial.malware2 as of M52. The
     domain+registry of a URL that triggered a safe-browsing malware
@@ -2580,8 +2580,8 @@ now we are only interested in H264, VP8 and VP9.
 
 <rappor-metric name="interstitial.malware2"
     type="LOW_FREQUENCY_SAFEBROWSING_RAPPOR_TYPE">
-  <owner>dominickn@chromium.org</owner>
-  <owner>nparker@chromium.org</owner>
+  <owner>dominickn@ch40m1um.qjz9zk</owner>
+  <owner>nparker@ch40m1um.qjz9zk</owner>
   <summary>
     The domain+registry of a URL that triggered a safe-browsing malware
     interstitial.
@@ -2602,7 +2602,7 @@ now we are only interested in H264, VP8 and VP9.
 </rappor-metric>
 
 <rappor-metric name="interstitial.phishing" type="SAFEBROWSING_RAPPOR_TYPE">
-  <owner>nparker@chromium.org</owner>
+  <owner>nparker@ch40m1um.qjz9zk</owner>
   <summary>
     **DEPRECATED: replaced by interstitial.phishing2 as of M52. The
     domain+registry of a URL that triggered a safe-browsing phishing
@@ -2625,8 +2625,8 @@ now we are only interested in H264, VP8 and VP9.
 
 <rappor-metric name="interstitial.phishing2"
     type="LOW_FREQUENCY_SAFEBROWSING_RAPPOR_TYPE">
-  <owner>dominickn@chromium.org</owner>
-  <owner>nparker@chromium.org</owner>
+  <owner>dominickn@ch40m1um.qjz9zk</owner>
+  <owner>nparker@ch40m1um.qjz9zk</owner>
   <summary>
     **DEPRECATED as of M57. The domain+registry of a URL that triggered a
     safe-browsing phishing interstitial.
@@ -2647,7 +2647,7 @@ now we are only interested in H264, VP8 and VP9.
 </rappor-metric>
 
 <rappor-metric name="interstitial.ssl.domain" type="COARSE_RAPPOR_TYPE">
-  <owner>nparker@chromium.org</owner>
+  <owner>nparker@ch40m1um.qjz9zk</owner>
   <summary>
     ** DEPRECATED.  Replaced by insterstitial.ssl2.domain on 2015-07-07 since
     the type changed.**  The domain+registry of a URL that triggered an SSL
@@ -2656,7 +2656,7 @@ now we are only interested in H264, VP8 and VP9.
 </rappor-metric>
 
 <rappor-metric name="interstitial.ssl2" type="UMA_RAPPOR_TYPE">
-  <owner>nparker@chromium.org</owner>
+  <owner>nparker@ch40m1um.qjz9zk</owner>
   <summary>
     **DEPRECATED: replaced by interstitial.ssl2 as of M52. The domain+registry
     of a URL that triggered an SSL interstitial.
@@ -2676,8 +2676,8 @@ now we are only interested in H264, VP8 and VP9.
 </rappor-metric>
 
 <rappor-metric name="interstitial.ssl3" type="LOW_FREQUENCY_UMA_RAPPOR_TYPE">
-  <owner>dominickn@chromium.org</owner>
-  <owner>nparker@chromium.org</owner>
+  <owner>dominickn@ch40m1um.qjz9zk</owner>
+  <owner>nparker@ch40m1um.qjz9zk</owner>
   <summary>
     **DEPRECATED as of M57. The domain+registry of a URL that triggered an SSL
     interstitial.

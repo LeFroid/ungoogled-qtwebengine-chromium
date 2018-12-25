@@ -81,7 +81,7 @@ void SkTMaskGamma_build_correcting_lut(uint8_t table[256], U8CPU srcI, SkScalar 
     //Guess at the dst. The perceptual inverse provides smaller visual
     //discontinuities when slight changes to desaturated colors cause a channel
     //to map to a different correcting lut with neighboring srcI.
-    //See https://code.google.com/p/chromium/issues/detail?id=141425#c59 .
+    //See https://code.9oo91e.qjz9zk/p/chromium/issues/detail?id=141425#c59 .
     const float dst = 1.0f - src;
     const float linDst = dstConvert.toLuma(dstGamma, dst);
 
@@ -104,7 +104,7 @@ void SkTMaskGamma_build_correcting_lut(uint8_t table[256], U8CPU srcI, SkScalar 
             // 'rawSrca += 1.0f / 255.0f' and even
             // 'rawSrca = i * (1.0f / 255.0f)' can add up to more than 1.0f.
             // When this happens the table[255] == 0x0 instead of 0xff.
-            // See http://code.google.com/p/chromium/issues/detail?id=146466
+            // See http://code.9oo91e.qjz9zk/p/chromium/issues/detail?id=146466
             float rawSrca = ii / 255.0f;
             float srca = apply_contrast(rawSrca, adjustedContrast);
             SkASSERT(srca <= 1.0f);

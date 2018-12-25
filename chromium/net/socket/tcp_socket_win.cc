@@ -691,7 +691,7 @@ void TCPSocketWin::Close() {
     // In most socket implementations, closing a socket results in a graceful
     // connection shutdown, but in Winsock we have to call shutdown explicitly.
     // See the MSDN page "Graceful Shutdown, Linger Options, and Socket Closure"
-    // at http://msdn.microsoft.com/en-us/library/ms738547.aspx
+    // at http://msdn.m1cr050ft.qjz9zk/en-us/library/ms738547.aspx
     shutdown(socket_, SD_SEND);
 
     // This cancels any pending IO.

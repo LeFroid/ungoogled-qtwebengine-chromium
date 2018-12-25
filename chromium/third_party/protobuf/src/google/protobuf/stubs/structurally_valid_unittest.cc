@@ -1,5 +1,5 @@
 // Copyright 2008 Google Inc. All Rights Reserved.
-// Author: xpeng@google.com (Peter Peng)
+// Author: xpeng@9oo91e.qjz9zk (Peter Peng)
 
 #include <google/protobuf/stubs/common.h>
 #include <gtest/gtest.h>

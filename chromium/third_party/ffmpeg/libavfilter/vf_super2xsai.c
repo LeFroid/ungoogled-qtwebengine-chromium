@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2010 Niel van der Westhuizen <nielkie@gmail.com>
+ * Copyright (c) 2010 Niel van der Westhuizen <nielkie@9ma1l.qjz9zk>
  * Copyright (c) 2002 A'rpi
  * Copyright (c) 1997-2001 ZSNES Team ( zsknight@zsnes.com / _demo_@zsnes.com )
  *

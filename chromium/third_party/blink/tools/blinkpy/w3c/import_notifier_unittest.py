@@ -84,7 +84,7 @@ class ImportNotifierTest(unittest.TestCase):
     def test_examine_baseline_changes(self):
         self.host.filesystem.write_text_file(
             '/mock-checkout/third_party/WebKit/LayoutTests/external/wpt/foo/OWNERS',
-            'test@chromium.org'
+            'test@ch40m1um.qjz9zk'
         )
         changed_test_baselines = {'external/wpt/foo/bar.html': [
             'third_party/WebKit/LayoutTests/external/wpt/foo/bar-expected.txt',
@@ -109,7 +109,7 @@ class ImportNotifierTest(unittest.TestCase):
     def test_examine_new_test_expectations(self):
         self.host.filesystem.write_text_file(
             '/mock-checkout/third_party/WebKit/LayoutTests/external/wpt/foo/OWNERS',
-            'test@chromium.org'
+            'test@ch40m1um.qjz9zk'
         )
         test_expectations = {'external/wpt/foo/bar.html': [
             'crbug.com/12345 [ Linux ] external/wpt/foo/bar.html [ Fail ]',
@@ -150,7 +150,7 @@ class ImportNotifierTest(unittest.TestCase):
     def test_find_owned_directory_non_virtual(self):
         self.host.filesystem.write_text_file(
             '/mock-checkout/third_party/WebKit/LayoutTests/external/wpt/foo/OWNERS',
-            'test@chromium.org'
+            'test@ch40m1um.qjz9zk'
         )
         self.assertEqual(self.notifier.find_owned_directory('external/wpt/foo/bar.html'), 'external/wpt/foo')
         self.assertEqual(self.notifier.find_owned_directory('external/wpt/foo/bar/baz.html'), 'external/wpt/foo')
@@ -158,7 +158,7 @@ class ImportNotifierTest(unittest.TestCase):
     def test_find_owned_directory_virtual(self):
         self.host.filesystem.write_text_file(
             '/mock-checkout/third_party/WebKit/LayoutTests/external/wpt/foo/OWNERS',
-            'test@chromium.org'
+            'test@ch40m1um.qjz9zk'
         )
         self.assertEqual(self.notifier.find_owned_directory('virtual/gpu/external/wpt/foo/bar.html'), 'external/wpt/foo')
 
@@ -167,11 +167,11 @@ class ImportNotifierTest(unittest.TestCase):
             '/mock-checkout/third_party/WebKit/LayoutTests/external/wpt/foo/OWNERS',
             '# COMPONENT: Blink>Infra>Ecosystem\n'
             '# WPT-NOTIFY: true\n'
-            'foolip@chromium.org\n'
+            'foolip@ch40m1um.qjz9zk\n'
         )
         self.host.filesystem.write_text_file(
             '/mock-checkout/third_party/WebKit/LayoutTests/external/wpt/bar/OWNERS',
-            'test@chromium.org'
+            'test@ch40m1um.qjz9zk'
         )
         self.notifier.new_failures_by_directory = {
             'external/wpt/foo': [TestFailure(TestFailure.NEW_EXPECTATION, 'external/wpt/foo/baz.html',
@@ -184,7 +184,7 @@ class ImportNotifierTest(unittest.TestCase):
         # Only one directory has WPT-NOTIFY enabled.
         self.assertEqual(len(bugs), 1)
         # The formatting of imported commits and new failures are already tested.
-        self.assertEqual(bugs[0].body['cc'], ['foolip@chromium.org', 'robertma@chromium.org'])
+        self.assertEqual(bugs[0].body['cc'], ['foolip@ch40m1um.qjz9zk', 'robertma@ch40m1um.qjz9zk'])
         self.assertEqual(bugs[0].body['components'], ['Blink>Infra>Ecosystem'])
         self.assertEqual(bugs[0].body['summary'],
                          '[WPT] New failures introduced in external/wpt/foo by import https://crrev.com/c/12345')

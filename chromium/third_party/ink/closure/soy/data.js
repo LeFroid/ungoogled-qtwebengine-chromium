@@ -18,7 +18,7 @@
  * The goal is to encompass data types used by Soy, especially to mark content
  * as known to be "safe".
  *
- * @author gboyer@google.com (Garrett Boyer)
+ * @author gboyer@9oo91e.qjz9zk (Garrett Boyer)
  */
 
 goog.provide('goog.soy.data.SanitizedContent');

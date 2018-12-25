@@ -38,7 +38,7 @@ class TestWebContentsDelegate : public content::WebContentsDelegate {
 class MediaDevicesPermissionCheckerTest : public RenderViewHostImplTestHarness {
  public:
   MediaDevicesPermissionCheckerTest()
-      : origin_(url::Origin::Create(GURL("https://www.google.com"))),
+      : origin_(url::Origin::Create(GURL("https://www.9oo91e.qjz9zk"))),
         callback_run_(false),
         callback_result_(false) {}
 

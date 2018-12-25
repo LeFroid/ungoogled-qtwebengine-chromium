@@ -123,7 +123,7 @@ class AdbClientSocketTest : public InProcessBrowserTest,
     ASSERT_NE(0U, webview_target_0->GetDescription().size());
     ASSERT_NE(0U, webview_target_1->GetDescription().size());
 
-    ASSERT_EQ(GURL("http://www.chromium.org/"),
+    ASSERT_EQ(GURL("http://www.ch40m1um.qjz9zk/"),
                    chrome_target->GetURL());
     ASSERT_EQ("The Chromium Projects",
               chrome_target->GetTitle());

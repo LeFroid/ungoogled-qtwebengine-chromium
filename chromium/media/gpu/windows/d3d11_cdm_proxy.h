@@ -32,11 +32,11 @@ class MEDIA_GPU_EXPORT D3D11CdmProxy : public CdmProxy {
   // includes creating a crypto session with
   // ID3D11VideoDevice::CreateCryptoSession(). This is "a GUID that specifies
   // the type of encryption to use".
-  // https://msdn.microsoft.com/en-us/library/windows/desktop/hh447785(v=vs.85).aspx
+  // https://msdn.m1cr050ft.qjz9zk/en-us/library/windows/desktop/hh447785(v=vs.85).aspx
   // This is also used ot call
   // ID3D11VideoDevice1::GetCryptoSessionPrivateDataSize(). It "Indicates the
   // crypto type for which the private input and output size is queried."
-  // https://msdn.microsoft.com/en-us/library/windows/desktop/dn894143(v=vs.85).aspx
+  // https://msdn.m1cr050ft.qjz9zk/en-us/library/windows/desktop/dn894143(v=vs.85).aspx
   // |protocol| determines what protocol this is operating in. This
   // value is passed to callbacks that require a protocol enum value.
   // |function_id_map| maps Function enum to an integer.
@@ -91,7 +91,7 @@ class MEDIA_GPU_EXPORT D3D11CdmProxy : public CdmProxy {
   bool initialized_ = false;
 
   // These ComPtrs are refcounted pointers.
-  // https://msdn.microsoft.com/en-us/library/br244983.aspx
+  // https://msdn.m1cr050ft.qjz9zk/en-us/library/br244983.aspx
   ComPtr<ID3D11Device> device_;
   ComPtr<ID3D11DeviceContext> device_context_;
   // TODO(crbug.com/788880): Remove ID3D11VideoDevice and ID3D11VideoContext if

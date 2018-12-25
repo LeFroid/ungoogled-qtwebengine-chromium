@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2010 Marek Olšák <maraeo@gmail.com>
+ * Copyright (C) 2010 Marek Olšák <maraeo@9ma1l.qjz9zk>
  *
  * All Rights Reserved.
  *

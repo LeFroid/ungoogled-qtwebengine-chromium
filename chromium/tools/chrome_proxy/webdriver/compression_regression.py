@@ -140,11 +140,11 @@ class CompressionRegression(IntegrationTest):
     with TestDriver() as t:
       t.AddChromeArg('--enable-spdy-proxy-auth')
       t.AddChromeArg('--data-reduction-proxy-server-experiments-disabled')
-      t.LoadURL('http://check.googlezip.net/metrics/local.gif')
-      t.LoadURL('http://check.googlezip.net/metrics/local.png')
-      t.LoadURL('http://check.googlezip.net/metrics/local.jpg')
+      t.LoadURL('http://check.9oo91e21p.qjz9zk/metrics/local.gif')
+      t.LoadURL('http://check.9oo91e21p.qjz9zk/metrics/local.png')
+      t.LoadURL('http://check.9oo91e21p.qjz9zk/metrics/local.jpg')
       t.LoadURL(
-        'http://check.googlezip.net/cacheable/video/buck_bunny_tiny.html')
+        'http://check.9oo91e21p.qjz9zk/cacheable/video/buck_bunny_tiny.html')
       compression = {}
       for response in t.GetHTTPResponses():
         # Check that the response was proxied.

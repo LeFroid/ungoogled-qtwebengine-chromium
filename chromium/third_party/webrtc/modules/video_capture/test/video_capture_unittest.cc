@@ -190,7 +190,7 @@ class VideoCaptureTest : public testing::Test {
 
 #ifdef WEBRTC_MAC
 // Currently fails on Mac 64-bit, see
-// https://bugs.chromium.org/p/webrtc/issues/detail?id=5406
+// https://bugs.ch40m1um.qjz9zk/p/webrtc/issues/detail?id=5406
 #define MAYBE_CreateDelete DISABLED_CreateDelete
 #else
 #define MAYBE_CreateDelete CreateDelete
@@ -232,7 +232,7 @@ TEST_F(VideoCaptureTest, MAYBE_CreateDelete) {
 
 #ifdef WEBRTC_MAC
 // Currently fails on Mac 64-bit, see
-// https://bugs.chromium.org/p/webrtc/issues/detail?id=5406
+// https://bugs.ch40m1um.qjz9zk/p/webrtc/issues/detail?id=5406
 #define MAYBE_Capabilities DISABLED_Capabilities
 #else
 #define MAYBE_Capabilities Capabilities
@@ -298,7 +298,7 @@ TEST_F(VideoCaptureTest, MAYBE_Capabilities) {
 }
 
 // NOTE: flaky, crashes sometimes.
-// http://code.google.com/p/webrtc/issues/detail?id=777
+// http://code.9oo91e.qjz9zk/p/webrtc/issues/detail?id=777
 TEST_F(VideoCaptureTest, DISABLED_TestTwoCameras) {
   if (number_of_devices_ < 2) {
     printf("There are not two cameras available. Aborting test. \n");

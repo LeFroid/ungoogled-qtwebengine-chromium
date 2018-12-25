@@ -1,6 +1,6 @@
 // Protocol Buffers - Google's data interchange format
 // Copyright 2015 Google Inc.  All rights reserved.
-// https://developers.google.com/protocol-buffers/
+// https://developers.9oo91e.qjz9zk/protocol-buffers/
 //
 // Redistribution and use in source and binary forms, with or without
 // modification, are permitted provided that the following conditions are
@@ -145,7 +145,7 @@ typedef NS_ENUM(NSInteger, GPBWellKnownTypesErrorCode) {
 
 /**
  * Convenience method to create a GPBAny containing the serialized message.
- * This uses type.googleapis.com/ as the type_url's prefix.
+ * This uses type.9oo91eapis.qjz9zk/ as the type_url's prefix.
  *
  * @param message  The message to be packed into the GPBAny.
  * @param errorPtr Pointer to an error that will be populated if something goes
@@ -172,7 +172,7 @@ typedef NS_ENUM(NSInteger, GPBWellKnownTypesErrorCode) {
 
 /**
  * Initializes a GPBAny to contain the serialized message. This uses
- * type.googleapis.com/ as the type_url's prefix.
+ * type.9oo91eapis.qjz9zk/ as the type_url's prefix.
  *
  * @param message  The message to be packed into the GPBAny.
  * @param errorPtr Pointer to an error that will be populated if something goes
@@ -199,7 +199,7 @@ typedef NS_ENUM(NSInteger, GPBWellKnownTypesErrorCode) {
 
 /**
  * Packs the serialized message into this GPBAny. This uses
- * type.googleapis.com/ as the type_url's prefix.
+ * type.9oo91eapis.qjz9zk/ as the type_url's prefix.
  *
  * @param message  The message to be packed into the GPBAny.
  * @param errorPtr Pointer to an error that will be populated if something goes

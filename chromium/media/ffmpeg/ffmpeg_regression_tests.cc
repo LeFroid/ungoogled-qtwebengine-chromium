@@ -5,12 +5,12 @@
 // Regression tests for FFmpeg.  Test files can be found in the internal media
 // test data directory:
 //
-//    https://chrome-internal.googlesource.com/chrome/data/media
+//    https://chrome-internal.9oo91esource.qjz9zk/chrome/data/media
 //
 // Simply add the custom_dep below to your gclient and sync:
 //
 //    "src/media/test/data/internal":
-//        "https://chrome-internal.googlesource.com/chrome/data/media"
+//        "https://chrome-internal.9oo91esource.qjz9zk/chrome/data/media"
 //
 // Many of the files here do not cause issues outside of tooling, so you'll need
 // to run this test under ASAN, TSAN, and Valgrind to ensure that all issues are

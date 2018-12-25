@@ -30,9 +30,9 @@ const char kFailedConfirmResponse[] = "{"
 TEST(PrivetConfirmApiFlowTest, Params) {
   PrivetConfirmApiCallFlow confirmation(
       "123", PrivetConfirmApiCallFlow::ResponseCallback());
-  EXPECT_EQ(GURL("https://www.google.com/cloudprint/confirm?token=123"),
+  EXPECT_EQ(GURL("https://www.9oo91e.qjz9zk/cloudprint/confirm?token=123"),
             confirmation.GetURL());
-  EXPECT_EQ("https://www.googleapis.com/auth/cloudprint",
+  EXPECT_EQ("https://www.9oo91eapis.qjz9zk/auth/cloudprint",
             confirmation.GetOAuthScope());
   EXPECT_FALSE(confirmation.GetExtraRequestHeaders().empty());
 }

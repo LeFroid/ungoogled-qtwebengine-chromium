@@ -298,7 +298,7 @@ STDMETHODIMP TSFTextStore::GetTextExt(TsViewCookie view_cookie,
   if (start_pos == end_pos) {
     // According to MSDN document, if |acp_start| and |acp_end| are equal it is
     // OK to just return E_INVALIDARG.
-    // http://msdn.microsoft.com/en-us/library/ms538435
+    // http://msdn.m1cr050ft.qjz9zk/en-us/library/ms538435
     // But when using Pinin IME of Windows 8, this method is called with the
     // equal values of |acp_start| and |acp_end|. So we handle this condition.
     if (start_pos == 0) {

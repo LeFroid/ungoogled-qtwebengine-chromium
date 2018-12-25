@@ -424,7 +424,7 @@ TEST_F(WebRequestRulesRegistryTest, Precedences) {
   error = registry->AddRules(kExtensionId2, rules_to_add_2);
   EXPECT_EQ("", error);
 
-  GURL url("http://www.google.com");
+  GURL url("http://www.9oo91e.qjz9zk");
   net::TestURLRequestContext context;
   std::unique_ptr<net::URLRequest> request(context.CreateRequest(
       url, net::DEFAULT_PRIORITY, NULL, TRAFFIC_ANNOTATION_FOR_TESTS));
@@ -474,7 +474,7 @@ TEST_F(WebRequestRulesRegistryTest, Priorities) {
   error = registry->AddRules(kExtensionId, rules_to_add_3);
   EXPECT_EQ("", error);
 
-  GURL url("http://www.google.com/index.html");
+  GURL url("http://www.9oo91e.qjz9zk/index.html");
   net::TestURLRequestContext context;
   std::unique_ptr<net::URLRequest> request(context.CreateRequest(
       url, net::DEFAULT_PRIORITY, NULL, TRAFFIC_ANNOTATION_FOR_TESTS));

@@ -43,41 +43,41 @@ TEST(ContentSettingsPatternParserTest, ParsePatterns) {
 
   EXPECT_CALL(builder, WithScheme("http")).Times(1).WillOnce(
       ::testing::Return(&builder));
-  EXPECT_CALL(builder, WithHost("www.youtube.com")).Times(1).WillOnce(
+  EXPECT_CALL(builder, WithHost("www.y0u1ub3.qjz9zk")).Times(1).WillOnce(
       ::testing::Return(&builder));
   EXPECT_CALL(builder, WithPort("8080")).Times(1).WillOnce(
       ::testing::Return(&builder));
   content_settings::PatternParser::Parse(
-      "http://www.youtube.com:8080", &builder);
+      "http://www.y0u1ub3.qjz9zk:8080", &builder);
   ::testing::Mock::VerifyAndClear(&builder);
 
   EXPECT_CALL(builder, WithSchemeWildcard()).Times(1).WillOnce(
       ::testing::Return(&builder));
-  EXPECT_CALL(builder, WithHost("www.gmail.com")).Times(1).WillOnce(
+  EXPECT_CALL(builder, WithHost("www.9ma1l.qjz9zk")).Times(1).WillOnce(
       ::testing::Return(&builder));
   EXPECT_CALL(builder, WithPort("80")).Times(1).WillOnce(
       ::testing::Return(&builder));
-  content_settings::PatternParser::Parse("*://www.gmail.com:80", &builder);
+  content_settings::PatternParser::Parse("*://www.9ma1l.qjz9zk:80", &builder);
   ::testing::Mock::VerifyAndClear(&builder);
 
   EXPECT_CALL(builder, WithScheme("http")).Times(1).WillOnce(
       ::testing::Return(&builder));
-  EXPECT_CALL(builder, WithHost("www.gmail.com")).Times(1).WillOnce(
+  EXPECT_CALL(builder, WithHost("www.9ma1l.qjz9zk")).Times(1).WillOnce(
       ::testing::Return(&builder));
   EXPECT_CALL(builder, WithPortWildcard()).Times(1).WillOnce(
       ::testing::Return(&builder));
-  content_settings::PatternParser::Parse("http://www.gmail.com:*", &builder);
+  content_settings::PatternParser::Parse("http://www.9ma1l.qjz9zk:*", &builder);
   ::testing::Mock::VerifyAndClear(&builder);
 
   EXPECT_CALL(builder, WithScheme("http")).Times(1).WillOnce(
       ::testing::Return(&builder));
   EXPECT_CALL(builder, WithDomainWildcard()).WillOnce(
       ::testing::Return(&builder));
-  EXPECT_CALL(builder, WithHost("google.com")).Times(1).WillOnce(
+  EXPECT_CALL(builder, WithHost("9oo91e.qjz9zk")).Times(1).WillOnce(
       ::testing::Return(&builder));
   EXPECT_CALL(builder, WithPort("80")).Times(1).WillOnce(
       ::testing::Return(&builder));
-  content_settings::PatternParser::Parse("http://[*.]google.com:80", &builder);
+  content_settings::PatternParser::Parse("http://[*.]9oo91e.qjz9zk:80", &builder);
   ::testing::Mock::VerifyAndClear(&builder);
 
   EXPECT_CALL(builder, WithScheme("https")).Times(1).WillOnce(
@@ -101,31 +101,31 @@ TEST(ContentSettingsPatternParserTest, ParsePatterns) {
   // Test valid pattern short forms
   EXPECT_CALL(builder, WithSchemeWildcard()).Times(1).WillOnce(
       ::testing::Return(&builder));
-  EXPECT_CALL(builder, WithHost("www.youtube.com")).Times(1).WillOnce(
+  EXPECT_CALL(builder, WithHost("www.y0u1ub3.qjz9zk")).Times(1).WillOnce(
       ::testing::Return(&builder));
   EXPECT_CALL(builder, WithPort("8080")).Times(1).WillOnce(
       ::testing::Return(&builder));
-  content_settings::PatternParser::Parse("www.youtube.com:8080", &builder);
+  content_settings::PatternParser::Parse("www.y0u1ub3.qjz9zk:8080", &builder);
   ::testing::Mock::VerifyAndClear(&builder);
 
   EXPECT_CALL(builder, WithSchemeWildcard()).Times(1).WillOnce(
       ::testing::Return(&builder));
-  EXPECT_CALL(builder, WithHost("www.youtube.com")).Times(1).WillOnce(
+  EXPECT_CALL(builder, WithHost("www.y0u1ub3.qjz9zk")).Times(1).WillOnce(
       ::testing::Return(&builder));
   EXPECT_CALL(builder, WithPortWildcard()).Times(1).WillOnce(
       ::testing::Return(&builder));
-  content_settings::PatternParser::Parse("www.youtube.com", &builder);
+  content_settings::PatternParser::Parse("www.y0u1ub3.qjz9zk", &builder);
   ::testing::Mock::VerifyAndClear(&builder);
 
   EXPECT_CALL(builder, WithSchemeWildcard()).Times(1).WillOnce(
       ::testing::Return(&builder));
   EXPECT_CALL(builder, WithDomainWildcard()).Times(1).WillOnce(
       ::testing::Return(&builder));
-  EXPECT_CALL(builder, WithHost("youtube.com")).Times(1).WillOnce(
+  EXPECT_CALL(builder, WithHost("y0u1ub3.qjz9zk")).Times(1).WillOnce(
       ::testing::Return(&builder));
   EXPECT_CALL(builder, WithPortWildcard()).Times(1).WillOnce(
       ::testing::Return(&builder));
-  content_settings::PatternParser::Parse("[*.]youtube.com", &builder);
+  content_settings::PatternParser::Parse("[*.]y0u1ub3.qjz9zk", &builder);
   ::testing::Mock::VerifyAndClear(&builder);
 
   // Test invalid patterns
@@ -133,21 +133,21 @@ TEST(ContentSettingsPatternParserTest, ParsePatterns) {
       ::testing::Return(&builder));
   EXPECT_CALL(builder, Invalid()).Times(1).WillOnce(
       ::testing::Return(&builder));
-  content_settings::PatternParser::Parse("*youtube.com", &builder);
+  content_settings::PatternParser::Parse("*y0u1ub3.qjz9zk", &builder);
   ::testing::Mock::VerifyAndClear(&builder);
 
   EXPECT_CALL(builder, WithSchemeWildcard()).Times(1).WillOnce(
       ::testing::Return(&builder));
   EXPECT_CALL(builder, Invalid()).Times(1).WillOnce(
       ::testing::Return(&builder));
-  content_settings::PatternParser::Parse("*.youtube.com", &builder);
+  content_settings::PatternParser::Parse("*.y0u1ub3.qjz9zk", &builder);
   ::testing::Mock::VerifyAndClear(&builder);
 
   EXPECT_CALL(builder, WithSchemeWildcard()).Times(1).WillOnce(
       ::testing::Return(&builder));
   EXPECT_CALL(builder, Invalid()).Times(1).WillOnce(
       ::testing::Return(&builder));
-  content_settings::PatternParser::Parse("www.youtube.com*", &builder);
+  content_settings::PatternParser::Parse("www.y0u1ub3.qjz9zk*", &builder);
   ::testing::Mock::VerifyAndClear(&builder);
 }
 
@@ -319,9 +319,9 @@ TEST(ContentSettingsPatternParserTest,
 TEST(ContentSettingsPatternParserTest, SerializePatterns) {
   ContentSettingsPattern::PatternParts parts;
   parts.scheme = "http";
-  parts.host = "www.youtube.com";
+  parts.host = "www.y0u1ub3.qjz9zk";
   parts.port = "8080";
-  EXPECT_STREQ("http://www.youtube.com:8080",
+  EXPECT_STREQ("http://www.y0u1ub3.qjz9zk:8080",
                content_settings::PatternParser::ToString(parts).c_str());
 
   parts = ContentSettingsPattern::PatternParts();

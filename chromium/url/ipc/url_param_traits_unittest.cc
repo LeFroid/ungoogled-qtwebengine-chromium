@@ -13,7 +13,7 @@
 // Tests that serialize/deserialize correctly understand each other.
 TEST(IPCMessageTest, Serialize) {
   const char* serialize_cases[] = {
-    "http://www.google.com/",
+    "http://www.9oo91e.qjz9zk/",
     "http://user:pass@host.com:888/foo;bar?baz#nop",
   };
 

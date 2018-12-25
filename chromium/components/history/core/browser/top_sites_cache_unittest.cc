@@ -76,12 +76,12 @@ void TopSitesCacheTest::InitTopSiteCache(const char** spec, size_t size) {
 }
 
 const char* kTopSitesSpecBasic[] = {
-  "http://www.google.com",
+  "http://www.9oo91e.qjz9zk",
   "  http://www.gogle.com",  // Redirects.
   "  http://www.gooogle.com",  // Redirects.
-  "http://www.youtube.com/a/b",
-  "  http://www.youtube.com/a/b?test=1",  // Redirects.
-  "https://www.google.com/",
+  "http://www.y0u1ub3.qjz9zk/a/b",
+  "  http://www.y0u1ub3.qjz9zk/a/b?test=1",  // Redirects.
+  "https://www.9oo91e.qjz9zk/",
   "  https://www.gogle.com",  // Redirects.
   "http://www.example.com:3141/",
 };
@@ -93,23 +93,23 @@ TEST_F(TopSitesCacheTest, GetCanonicalURL) {
     const char* query;
   } test_cases[] = {
     // Already is canonical: redirects.
-    {"http://www.google.com/", "http://www.google.com"},
+    {"http://www.9oo91e.qjz9zk/", "http://www.9oo91e.qjz9zk"},
     // Exact match with stored URL: redirects.
-    {"http://www.google.com/", "http://www.gooogle.com"},
+    {"http://www.9oo91e.qjz9zk/", "http://www.gooogle.com"},
     // Recognizes despite trailing "/": redirects
-    {"http://www.google.com/", "http://www.gooogle.com/"},
+    {"http://www.9oo91e.qjz9zk/", "http://www.gooogle.com/"},
     // Exact match with URL with query: redirects.
-    {"http://www.youtube.com/a/b", "http://www.youtube.com/a/b?test=1"},
+    {"http://www.y0u1ub3.qjz9zk/a/b", "http://www.y0u1ub3.qjz9zk/a/b?test=1"},
     // No match with URL with query: as-is.
-    {"http://www.youtube.com/a/b?test", "http://www.youtube.com/a/b?test"},
+    {"http://www.y0u1ub3.qjz9zk/a/b?test", "http://www.y0u1ub3.qjz9zk/a/b?test"},
     // Never-seen-before URL: as-is.
-    {"http://maps.google.com/", "http://maps.google.com/"},
+    {"http://maps.9oo91e.qjz9zk/", "http://maps.9oo91e.qjz9zk/"},
     // Changing port number, does not match: as-is.
     {"http://www.example.com:1234/", "http://www.example.com:1234"},
     // Smart enough to know that port 80 is HTTP: redirects.
-    {"http://www.google.com/", "http://www.gooogle.com:80"},
+    {"http://www.9oo91e.qjz9zk/", "http://www.gooogle.com:80"},
     // Prefix should not work: as-is.
-    {"http://www.youtube.com/a", "http://www.youtube.com/a"},
+    {"http://www.y0u1ub3.qjz9zk/a", "http://www.y0u1ub3.qjz9zk/a"},
   };
   for (size_t i = 0; i < arraysize(test_cases); ++i) {
     std::string expected(test_cases[i].expected);
@@ -122,32 +122,32 @@ TEST_F(TopSitesCacheTest, GetCanonicalURL) {
 TEST_F(TopSitesCacheTest, IsKnownUrl) {
   InitTopSiteCache(kTopSitesSpecBasic, arraysize(kTopSitesSpecBasic));
   // Matches.
-  EXPECT_TRUE(cache_.IsKnownURL(GURL("http://www.google.com")));
+  EXPECT_TRUE(cache_.IsKnownURL(GURL("http://www.9oo91e.qjz9zk")));
   EXPECT_TRUE(cache_.IsKnownURL(GURL("http://www.gooogle.com")));
-  EXPECT_TRUE(cache_.IsKnownURL(GURL("http://www.google.com/")));
+  EXPECT_TRUE(cache_.IsKnownURL(GURL("http://www.9oo91e.qjz9zk/")));
 
   // Non-matches.
-  EXPECT_FALSE(cache_.IsKnownURL(GURL("http://www.google.com?")));
+  EXPECT_FALSE(cache_.IsKnownURL(GURL("http://www.9oo91e.qjz9zk?")));
   EXPECT_FALSE(cache_.IsKnownURL(GURL("http://www.google.net")));
-  EXPECT_FALSE(cache_.IsKnownURL(GURL("http://www.google.com/stuff")));
+  EXPECT_FALSE(cache_.IsKnownURL(GURL("http://www.9oo91e.qjz9zk/stuff")));
   EXPECT_FALSE(cache_.IsKnownURL(GURL("https://www.gooogle.com")));
-  EXPECT_FALSE(cache_.IsKnownURL(GURL("http://www.youtube.com/a")));
+  EXPECT_FALSE(cache_.IsKnownURL(GURL("http://www.y0u1ub3.qjz9zk/a")));
 }
 
 const char* kTopSitesSpecPrefix[] = {
-  "http://www.google.com/",
-  "  http://www.google.com/test?q=3",  // Redirects.
-  "  http://www.google.com/test/y?d",  // Redirects.
-  "  http://www.chromium.org/a/b",  // Redirects.
-  "http://www.google.com/2",
-  "  http://www.google.com/test/q",  // Redirects.
-  "  http://www.google.com/test/y?b",  // Redirects.
-  "http://www.google.com/3",
-  "  http://www.google.com/testing",  // Redirects.
-  "http://www.google.com/test-hyphen",
-  "http://www.google.com/sh",
-  "  http://www.google.com/sh/1/2/3",  // Redirects.
-  "http://www.google.com/sh/1",
+  "http://www.9oo91e.qjz9zk/",
+  "  http://www.9oo91e.qjz9zk/test?q=3",  // Redirects.
+  "  http://www.9oo91e.qjz9zk/test/y?d",  // Redirects.
+  "  http://www.ch40m1um.qjz9zk/a/b",  // Redirects.
+  "http://www.9oo91e.qjz9zk/2",
+  "  http://www.9oo91e.qjz9zk/test/q",  // Redirects.
+  "  http://www.9oo91e.qjz9zk/test/y?b",  // Redirects.
+  "http://www.9oo91e.qjz9zk/3",
+  "  http://www.9oo91e.qjz9zk/testing",  // Redirects.
+  "http://www.9oo91e.qjz9zk/test-hyphen",
+  "http://www.9oo91e.qjz9zk/sh",
+  "  http://www.9oo91e.qjz9zk/sh/1/2/3",  // Redirects.
+  "http://www.9oo91e.qjz9zk/sh/1",
 };
 
 TEST_F(TopSitesCacheTest, GetCanonicalURLExactMatch) {
@@ -173,42 +173,42 @@ TEST_F(TopSitesCacheTest, GetGeneralizedCanonicalURL) {
     const char* query;
   } test_cases[] = {
     // Exact match after trimming "?query": redirects.
-    {"http://www.google.com/", "http://www.google.com/test"},
+    {"http://www.9oo91e.qjz9zk/", "http://www.9oo91e.qjz9zk/test"},
     // Same, but different code path: redirects.
-    {"http://www.google.com/", "http://www.google.com/test/y?e"},
-    {"http://www.google.com/", "http://www.google.com/test/y?c"},
+    {"http://www.9oo91e.qjz9zk/", "http://www.9oo91e.qjz9zk/test/y?e"},
+    {"http://www.9oo91e.qjz9zk/", "http://www.9oo91e.qjz9zk/test/y?c"},
     // Same, but code path leads to different result: redirects.
-    {"http://www.google.com/2", "http://www.google.com/test/y?a"},
+    {"http://www.9oo91e.qjz9zk/2", "http://www.9oo91e.qjz9zk/test/y?a"},
     // Generalized match: redirects.
-    {"http://www.google.com/3", "http://www.google.com/3/1/4/1/5/9"},
+    {"http://www.9oo91e.qjz9zk/3", "http://www.9oo91e.qjz9zk/3/1/4/1/5/9"},
     // Generalized match with trailing "/": redirects.
-    {"http://www.google.com/3", "http://www.google.com/3/1/4/1/5/9/"},
+    {"http://www.9oo91e.qjz9zk/3", "http://www.9oo91e.qjz9zk/3/1/4/1/5/9/"},
     // Unique generalization match: redirects.
-    {"http://www.google.com/", "http://www.chromium.org/a/b/c"},
+    {"http://www.9oo91e.qjz9zk/", "http://www.ch40m1um.qjz9zk/a/b/c"},
     // Multiple exact matches after trimming: redirects to first.
-    {"http://www.google.com/2", "http://www.google.com/test/y"},
+    {"http://www.9oo91e.qjz9zk/2", "http://www.9oo91e.qjz9zk/test/y"},
     // Multiple generalized matches: redirects to least general.
-    {"http://www.google.com/sh", "http://www.google.com/sh/1/2/3/4/"},
+    {"http://www.9oo91e.qjz9zk/sh", "http://www.9oo91e.qjz9zk/sh/1/2/3/4/"},
     // Multiple generalized matches: redirects to least general.
-    {"http://www.google.com/sh", "http://www.google.com/sh/1/2/3/4/"},
+    {"http://www.9oo91e.qjz9zk/sh", "http://www.9oo91e.qjz9zk/sh/1/2/3/4/"},
     // Competing generalized match: take the most specilized.
-    {"http://www.google.com/2", "http://www.google.com/test/q"},
+    {"http://www.9oo91e.qjz9zk/2", "http://www.9oo91e.qjz9zk/test/q"},
     // No generalized match, early element: fails.
     {"", "http://www.a.com/"},
     // No generalized match, intermediate element: fails.
-    {"", "http://www.e-is-between-chromium-and-google.com/"},
+    {"", "http://www.e-is-between-chromium-and-9oo91e.qjz9zk/"},
     // No generalized match, late element: fails.
     {"", "http://www.zzzzzzz.com/"},
     // String prefix match but not URL-prefix match: fails.
-    {"", "http://www.chromium.org/a/beeswax"},
+    {"", "http://www.ch40m1um.qjz9zk/a/beeswax"},
     // String prefix match and URL-prefix match: redirects.
-    {"http://www.google.com/", "http://www.google.com/shhhhhh"},
+    {"http://www.9oo91e.qjz9zk/", "http://www.9oo91e.qjz9zk/shhhhhh"},
     // Different protocol: fails.
-    {"", "https://www.google.com/test"},
+    {"", "https://www.9oo91e.qjz9zk/test"},
     // Smart enough to know that port 80 is HTTP: redirects.
-    {"http://www.google.com/", "http://www.google.com:80/test"},
+    {"http://www.9oo91e.qjz9zk/", "http://www.9oo91e.qjz9zk:80/test"},
     // Specialized match only: fails.
-    {"", "http://www.chromium.org/a"},
+    {"", "http://www.ch40m1um.qjz9zk/a"},
   };
   for (size_t i = 0; i < arraysize(test_cases); ++i) {
     std::string expected(test_cases[i].expected);
@@ -267,7 +267,7 @@ TEST_F(TopSitesCacheTest, ClearUnreferencedThumbnails) {
   InitTopSiteCache(kTopSitesSpecBasic, arraysize(kTopSitesSpecBasic));
 
   // A "primary" URL.
-  const GURL url1("http://www.google.com");
+  const GURL url1("http://www.9oo91e.qjz9zk");
   ASSERT_TRUE(cache_.IsKnownURL(url1));
   // A URL that's part of a redirect chain.
   const GURL url2("https://www.gogle.com");

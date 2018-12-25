@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2007 David Smith (catfish.man@gmail.com)
+ * Copyright (C) 2007 David Smith (catfish.man@9ma1l.qjz9zk)
  * Copyright (C) 2007, 2008, 2011, 2012 Apple Inc. All rights reserved.
  *
  * This library is free software; you can redistribute it and/or

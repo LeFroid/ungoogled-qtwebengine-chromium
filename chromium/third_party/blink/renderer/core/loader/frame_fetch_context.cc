@@ -420,7 +420,7 @@ void FrameFetchContext::AddAdditionalRequestHeaders(ResourceRequest& request,
       WebURLRequest::kNoScriptOn) {
     request.AddHTTPHeaderField(
         "Intervention",
-        "<https://www.chromestatus.com/features/4775088607985664>; "
+        "<https://www.ch40mestatus.qjz9zk/features/4775088607985664>; "
         "level=\"warning\"");
   }
 
@@ -428,7 +428,7 @@ void FrameFetchContext::AddAdditionalRequestHeaders(ResourceRequest& request,
       WebURLRequest::kClientLoFiOn) {
     request.AddHTTPHeaderField(
         "Intervention",
-        "<https://www.chromestatus.com/features/6072546726248448>; "
+        "<https://www.ch40mestatus.qjz9zk/features/6072546726248448>; "
         "level=\"warning\"");
   }
 }

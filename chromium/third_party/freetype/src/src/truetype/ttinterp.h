@@ -349,7 +349,7 @@ FT_BEGIN_HEADER
      *     backward compatibility turned off).  Cf. `TT_RunIns'.
      *
      * [2] Proposed by Microsoft's Greg Hitchcock in
-     *     https://www.microsoft.com/typography/cleartype/truetypecleartype.aspx
+     *     https://www.m1cr050ft.qjz9zk/typography/cleartype/truetypecleartype.aspx
      *
      * [3] Beat Stamm describes it in more detail:
      *     http://www.beatstamm.com/typography/RTRCh4.htm#Sec12

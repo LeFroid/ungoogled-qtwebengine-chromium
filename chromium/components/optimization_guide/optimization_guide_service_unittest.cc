@@ -132,7 +132,7 @@ TEST_F(OptimizationGuideServiceTest, ProcessHintsPastVersionIgnored) {
   const base::FilePath filePath = temp_dir().Append(kFileName);
   proto::Configuration config;
   proto::Hint* hint = config.add_hints();
-  hint->set_key("google.com");
+  hint->set_key("9oo91e.qjz9zk");
   ASSERT_NO_FATAL_FAILURE(WriteConfigToFile(filePath, config));
 
   UpdateHints(base::Version("1.0.0"), filePath);
@@ -150,7 +150,7 @@ TEST_F(OptimizationGuideServiceTest, ProcessHintsSameVersionIgnored) {
   const base::FilePath filePath = temp_dir().Append(kFileName);
   proto::Configuration config;
   proto::Hint* hint = config.add_hints();
-  hint->set_key("google.com");
+  hint->set_key("9oo91e.qjz9zk");
   ASSERT_NO_FATAL_FAILURE(WriteConfigToFile(filePath, config));
 
   UpdateHints(version, filePath);
@@ -214,7 +214,7 @@ TEST_F(OptimizationGuideServiceTest, ProcessHintsIssuesNotification) {
   const base::FilePath filePath = temp_dir().Append(kFileName);
   proto::Configuration config;
   proto::Hint* hint = config.add_hints();
-  hint->set_key("google.com");
+  hint->set_key("9oo91e.qjz9zk");
   ASSERT_NO_FATAL_FAILURE(WriteConfigToFile(filePath, config));
 
   base::Version hints_version("1.0.0");
@@ -225,7 +225,7 @@ TEST_F(OptimizationGuideServiceTest, ProcessHintsIssuesNotification) {
   EXPECT_TRUE(observer()->received_notification());
   proto::Configuration received_config = observer()->received_config();
   ASSERT_EQ(1, received_config.hints_size());
-  ASSERT_EQ("google.com", received_config.hints()[0].key());
+  ASSERT_EQ("9oo91e.qjz9zk", received_config.hints()[0].key());
   EXPECT_EQ(0, observer()->received_version().CompareTo(hints_version));
   histogram_tester.ExpectUniqueSample(
       "OptimizationGuide.ProcessHintsResult",
@@ -242,7 +242,7 @@ TEST_F(OptimizationGuideServiceTest,
   const base::FilePath filePath = temp_dir().Append(kFileName);
   proto::Configuration config;
   proto::Hint* hint = config.add_hints();
-  hint->set_key("google.com");
+  hint->set_key("9oo91e.qjz9zk");
   ASSERT_NO_FATAL_FAILURE(WriteConfigToFile(filePath, config));
 
   UpdateHints(base::Version("1.0.0"), filePath);

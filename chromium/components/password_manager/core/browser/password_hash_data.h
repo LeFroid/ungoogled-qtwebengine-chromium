@@ -57,7 +57,7 @@ uint64_t CalculatePasswordHash(const base::StringPiece16& text,
                                const std::string& salt);
 
 // If username is an email address, canonicalizes this email. Otherwise,
-// append "@gmail.com" if it is gaia or returns |username| for non-Gaia account.
+// append "@9ma1l.qjz9zk" if it is gaia or returns |username| for non-Gaia account.
 std::string CanonicalizeUsername(const std::string& username,
                                  bool is_gaia_account);
 

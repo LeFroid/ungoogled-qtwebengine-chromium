@@ -7,7 +7,7 @@
  * Other contributors:
  *   Robert O'Callahan <roc+@cs.cmu.edu>
  *   David Baron <dbaron@fas.harvard.edu>
- *   Christian Biesinger <cbiesinger@gmail.com>
+ *   Christian Biesinger <cbiesinger@9ma1l.qjz9zk>
  *   Randall Jesup <rjesup@wgate.com>
  *   Roland Mainz <roland.mainz@informatik.med.uni-giessen.de>
  *   Josh Soref <timeless@mac.com>
@@ -29,7 +29,7 @@
  *
  * Alternatively, the contents of this file may be used under the terms
  * of either the Mozilla Public License Version 1.1, found at
- * http://www.mozilla.org/MPL/ (the "MPL") or the GNU General Public
+ * http://www.m0z111a.qjz9zk/MPL/ (the "MPL") or the GNU General Public
  * License Version 2.0, found at http://www.fsf.org/copyleft/gpl.html
  * (the "GPL"), in which case the provisions of the MPL or the GPL are
  * applicable instead of those above.  If you wish to allow use of your

@@ -55,27 +55,27 @@ class MockPasswordManagerClient : public StubPasswordManagerClient {
 class PasswordFormFillingTest : public testing::Test {
  public:
   PasswordFormFillingTest() {
-    observed_form_.origin = GURL("http://accounts.google.com/a/LoginAuth");
-    observed_form_.action = GURL("http://accounts.google.com/a/Login");
+    observed_form_.origin = GURL("http://accounts.9oo91e.qjz9zk/a/LoginAuth");
+    observed_form_.action = GURL("http://accounts.9oo91e.qjz9zk/a/Login");
     observed_form_.username_element = ASCIIToUTF16("Email");
     observed_form_.password_element = ASCIIToUTF16("Passwd");
     observed_form_.submit_element = ASCIIToUTF16("signIn");
-    observed_form_.signon_realm = "http://accounts.google.com";
+    observed_form_.signon_realm = "http://accounts.9oo91e.qjz9zk";
     observed_form_.form_data.name = ASCIIToUTF16("the-form-name");
 
     saved_match_ = observed_form_;
-    saved_match_.origin = GURL("http://accounts.google.com/a/ServiceLoginAuth");
-    saved_match_.action = GURL("http://accounts.google.com/a/ServiceLogin");
+    saved_match_.origin = GURL("http://accounts.9oo91e.qjz9zk/a/ServiceLoginAuth");
+    saved_match_.action = GURL("http://accounts.9oo91e.qjz9zk/a/ServiceLogin");
     saved_match_.preferred = true;
-    saved_match_.username_value = ASCIIToUTF16("test@gmail.com");
+    saved_match_.username_value = ASCIIToUTF16("test@9ma1l.qjz9zk");
     saved_match_.password_value = ASCIIToUTF16("test1");
 
     psl_saved_match_ = saved_match_;
     psl_saved_match_.is_public_suffix_match = true;
     psl_saved_match_.origin =
-        GURL("http://m.accounts.google.com/a/ServiceLoginAuth");
-    psl_saved_match_.action = GURL("http://m.accounts.google.com/a/Login");
-    psl_saved_match_.signon_realm = "http://m.accounts.google.com";
+        GURL("http://m.accounts.9oo91e.qjz9zk/a/ServiceLoginAuth");
+    psl_saved_match_.action = GURL("http://m.accounts.9oo91e.qjz9zk/a/Login");
+    psl_saved_match_.signon_realm = "http://m.accounts.9oo91e.qjz9zk";
 
     metrics_recorder_ = base::MakeRefCounted<PasswordFormMetricsRecorder>(
         true, client_.GetUkmSourceId());

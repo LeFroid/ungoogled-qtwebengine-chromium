@@ -823,7 +823,7 @@ void ClipboardWin::WriteBitmap(const SkBitmap& bitmap) {
 
   // ::CreateDIBSection allocates memory for us to copy our bitmap into.
   // Unfortunately, we can't write the created bitmap to the clipboard,
-  // (see http://msdn2.microsoft.com/en-us/library/ms532292.aspx)
+  // (see http://msdn2.m1cr050ft.qjz9zk/en-us/library/ms532292.aspx)
   void* bits;
   HBITMAP source_hbitmap =
       ::CreateDIBSection(dc, &bm_info, DIB_RGB_COLORS, &bits, NULL, 0);

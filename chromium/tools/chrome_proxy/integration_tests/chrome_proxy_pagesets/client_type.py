@@ -35,42 +35,42 @@ class ClientTypeStorySet(story.StorySet):
     # of the following pages, since there's no way to get the client type value
     # from a request that was bypassed.
     self.AddStory(ClientTypePage(
-        url='http://check.googlezip.net/test.html',
+        url='http://check.9oo91e21p.qjz9zk/test.html',
         page_set=self,
         bypass_for_client_type='none'))
 
     # Page that should cause a bypass for android chrome clients.
     self.AddStory(ClientTypePage(
-        url='http://check.googlezip.net/chrome-proxy-header/c_android/',
+        url='http://check.9oo91e21p.qjz9zk/chrome-proxy-header/c_android/',
         page_set=self,
         bypass_for_client_type='android'))
 
     # Page that should cause a bypass for android webview clients.
     self.AddStory(ClientTypePage(
-        url='http://check.googlezip.net/chrome-proxy-header/c_webview/',
+        url='http://check.9oo91e21p.qjz9zk/chrome-proxy-header/c_webview/',
         page_set=self,
         bypass_for_client_type='webview'))
 
     # Page that should cause a bypass for iOS clients.
     self.AddStory(ClientTypePage(
-        url='http://check.googlezip.net/chrome-proxy-header/c_ios/',
+        url='http://check.9oo91e21p.qjz9zk/chrome-proxy-header/c_ios/',
         page_set=self,
         bypass_for_client_type='ios'))
 
     # Page that should cause a bypass for Linux clients.
     self.AddStory(ClientTypePage(
-        url='http://check.googlezip.net/chrome-proxy-header/c_linux/',
+        url='http://check.9oo91e21p.qjz9zk/chrome-proxy-header/c_linux/',
         page_set=self,
         bypass_for_client_type='linux'))
 
     # Page that should cause a bypass for Windows clients.
     self.AddStory(ClientTypePage(
-        url='http://check.googlezip.net/chrome-proxy-header/c_win/',
+        url='http://check.9oo91e21p.qjz9zk/chrome-proxy-header/c_win/',
         page_set=self,
         bypass_for_client_type='win'))
 
     # Page that should cause a bypass for ChromeOS clients.
     self.AddStory(ClientTypePage(
-        url='http://check.googlezip.net/chrome-proxy-header/c_chromeos/',
+        url='http://check.9oo91e21p.qjz9zk/chrome-proxy-header/c_chromeos/',
         page_set=self,
         bypass_for_client_type='chromeos'))

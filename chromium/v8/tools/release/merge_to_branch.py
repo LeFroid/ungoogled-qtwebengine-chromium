@@ -222,7 +222,7 @@ class MergeToBranch(ScriptsBase):
         return False
     options.bypass_upload_hooks = True
     # CC ulan to make sure that fixes are merged to Google3.
-    options.cc = "ulan@chromium.org"
+    options.cc = "ulan@ch40m1um.qjz9zk"
 
     if len(options.branch.split('.')) > 2:
       print ("This script does not support merging to roll branches. "

@@ -34,19 +34,19 @@ TEST(ProxyBypassRulesTest, ParseAndMatchBasicHost) {
   ProxyBypassRules rules;
   rules.ParseFromString("wWw.gOogle.com");
   ASSERT_EQ(1u, rules.rules().size());
-  EXPECT_EQ("www.google.com", rules.rules()[0]->ToString());
+  EXPECT_EQ("www.9oo91e.qjz9zk", rules.rules()[0]->ToString());
 
   // All of these match; port, scheme, and non-hostname components don't
   // matter.
-  EXPECT_TRUE(rules.Matches(GURL("http://www.google.com")));
-  EXPECT_TRUE(rules.Matches(GURL("ftp://www.google.com:99")));
-  EXPECT_TRUE(rules.Matches(GURL("https://www.google.com:81")));
+  EXPECT_TRUE(rules.Matches(GURL("http://www.9oo91e.qjz9zk")));
+  EXPECT_TRUE(rules.Matches(GURL("ftp://www.9oo91e.qjz9zk:99")));
+  EXPECT_TRUE(rules.Matches(GURL("https://www.9oo91e.qjz9zk:81")));
 
   // Must be a strict host match to work.
-  EXPECT_FALSE(rules.Matches(GURL("http://foo.www.google.com")));
-  EXPECT_FALSE(rules.Matches(GURL("http://xxx.google.com")));
-  EXPECT_FALSE(rules.Matches(GURL("http://google.com")));
-  EXPECT_FALSE(rules.Matches(GURL("http://www.google.com.baz.org")));
+  EXPECT_FALSE(rules.Matches(GURL("http://foo.www.9oo91e.qjz9zk")));
+  EXPECT_FALSE(rules.Matches(GURL("http://xxx.9oo91e.qjz9zk")));
+  EXPECT_FALSE(rules.Matches(GURL("http://9oo91e.qjz9zk")));
+  EXPECT_FALSE(rules.Matches(GURL("http://www.9oo91e.qjz9zk.baz.org")));
 }
 
 TEST(ProxyBypassRulesTest, ParseAndMatchBasicDomain) {
@@ -54,39 +54,39 @@ TEST(ProxyBypassRulesTest, ParseAndMatchBasicDomain) {
   rules.ParseFromString(".gOOgle.com");
   ASSERT_EQ(1u, rules.rules().size());
   // Note that we inferred this was an "ends with" test.
-  EXPECT_EQ("*.google.com", rules.rules()[0]->ToString());
+  EXPECT_EQ("*.9oo91e.qjz9zk", rules.rules()[0]->ToString());
 
   // All of these match; port, scheme, and non-hostname components don't
   // matter.
-  EXPECT_TRUE(rules.Matches(GURL("http://www.google.com")));
-  EXPECT_TRUE(rules.Matches(GURL("ftp://www.google.com:99")));
-  EXPECT_TRUE(rules.Matches(GURL("https://a.google.com:81")));
-  EXPECT_TRUE(rules.Matches(GURL("http://foo.google.com/x/y?q")));
-  EXPECT_TRUE(rules.Matches(GURL("http://foo:bar@baz.google.com#x")));
+  EXPECT_TRUE(rules.Matches(GURL("http://www.9oo91e.qjz9zk")));
+  EXPECT_TRUE(rules.Matches(GURL("ftp://www.9oo91e.qjz9zk:99")));
+  EXPECT_TRUE(rules.Matches(GURL("https://a.9oo91e.qjz9zk:81")));
+  EXPECT_TRUE(rules.Matches(GURL("http://foo.9oo91e.qjz9zk/x/y?q")));
+  EXPECT_TRUE(rules.Matches(GURL("http://foo:bar@baz.9oo91e.qjz9zk#x")));
 
   // Must be a strict "ends with" to work.
-  EXPECT_FALSE(rules.Matches(GURL("http://google.com")));
-  EXPECT_FALSE(rules.Matches(GURL("http://foo.google.com.baz.org")));
+  EXPECT_FALSE(rules.Matches(GURL("http://9oo91e.qjz9zk")));
+  EXPECT_FALSE(rules.Matches(GURL("http://foo.9oo91e.qjz9zk.baz.org")));
 }
 
 TEST(ProxyBypassRulesTest, ParseAndMatchBasicDomainWithPort) {
   ProxyBypassRules rules;
   rules.ParseFromString("*.GOOGLE.com:80");
   ASSERT_EQ(1u, rules.rules().size());
-  EXPECT_EQ("*.google.com:80", rules.rules()[0]->ToString());
+  EXPECT_EQ("*.9oo91e.qjz9zk:80", rules.rules()[0]->ToString());
 
   // All of these match; scheme, and non-hostname components don't matter.
-  EXPECT_TRUE(rules.Matches(GURL("http://www.google.com")));
-  EXPECT_TRUE(rules.Matches(GURL("ftp://www.google.com:80")));
-  EXPECT_TRUE(rules.Matches(GURL("https://a.google.com:80?x")));
+  EXPECT_TRUE(rules.Matches(GURL("http://www.9oo91e.qjz9zk")));
+  EXPECT_TRUE(rules.Matches(GURL("ftp://www.9oo91e.qjz9zk:80")));
+  EXPECT_TRUE(rules.Matches(GURL("https://a.9oo91e.qjz9zk:80?x")));
 
   // Must be a strict "ends with" to work.
-  EXPECT_FALSE(rules.Matches(GURL("http://google.com")));
-  EXPECT_FALSE(rules.Matches(GURL("http://foo.google.com.baz.org")));
+  EXPECT_FALSE(rules.Matches(GURL("http://9oo91e.qjz9zk")));
+  EXPECT_FALSE(rules.Matches(GURL("http://foo.9oo91e.qjz9zk.baz.org")));
 
   // The ports must match.
-  EXPECT_FALSE(rules.Matches(GURL("http://www.google.com:90")));
-  EXPECT_FALSE(rules.Matches(GURL("https://www.google.com")));
+  EXPECT_FALSE(rules.Matches(GURL("http://www.9oo91e.qjz9zk:90")));
+  EXPECT_FALSE(rules.Matches(GURL("https://www.9oo91e.qjz9zk")));
 }
 
 TEST(ProxyBypassRulesTest, MatchAll) {
@@ -95,9 +95,9 @@ TEST(ProxyBypassRulesTest, MatchAll) {
   ASSERT_EQ(1u, rules.rules().size());
   EXPECT_EQ("*", rules.rules()[0]->ToString());
 
-  EXPECT_TRUE(rules.Matches(GURL("http://www.google.com")));
+  EXPECT_TRUE(rules.Matches(GURL("http://www.9oo91e.qjz9zk")));
   EXPECT_TRUE(rules.Matches(GURL("ftp://www.foobar.com:99")));
-  EXPECT_TRUE(rules.Matches(GURL("https://a.google.com:80?x")));
+  EXPECT_TRUE(rules.Matches(GURL("https://a.9oo91e.qjz9zk:80?x")));
 }
 
 TEST(ProxyBypassRulesTest, WildcardAtStart) {
@@ -110,7 +110,7 @@ TEST(ProxyBypassRulesTest, WildcardAtStart) {
   EXPECT_TRUE(rules.Matches(GURL("https://www.google.org")));
 
   EXPECT_FALSE(rules.Matches(GURL("http://www.google.org")));
-  EXPECT_FALSE(rules.Matches(GURL("https://www.google.com")));
+  EXPECT_FALSE(rules.Matches(GURL("https://www.9oo91e.qjz9zk")));
   EXPECT_FALSE(rules.Matches(GURL("https://www.google.org.com")));
 }
 
@@ -132,7 +132,7 @@ TEST(ProxyBypassRulesTest, IPV4Address) {
   EXPECT_TRUE(rules.Matches(GURL("http://192.168.1.1")));
   EXPECT_TRUE(rules.Matches(GURL("https://192.168.1.1:90")));
 
-  EXPECT_FALSE(rules.Matches(GURL("http://www.google.com")));
+  EXPECT_FALSE(rules.Matches(GURL("http://www.9oo91e.qjz9zk")));
   EXPECT_FALSE(rules.Matches(GURL("http://sup.192.168.1.1")));
 }
 
@@ -144,7 +144,7 @@ TEST(ProxyBypassRulesTest, IPV4AddressWithPort) {
 
   EXPECT_TRUE(rules.Matches(GURL("http://192.168.1.1:33")));
 
-  EXPECT_FALSE(rules.Matches(GURL("http://www.google.com")));
+  EXPECT_FALSE(rules.Matches(GURL("http://www.9oo91e.qjz9zk")));
   EXPECT_FALSE(rules.Matches(GURL("http://192.168.1.1")));
   EXPECT_FALSE(rules.Matches(GURL("http://sup.192.168.1.1:33")));
 }
@@ -159,7 +159,7 @@ TEST(ProxyBypassRulesTest, IPV6Address) {
   EXPECT_TRUE(rules.Matches(GURL("http://[3ffe:2a00:100:7031::1]")));
   EXPECT_TRUE(rules.Matches(GURL("http://[3ffe:2a00:100:7031::1]:33")));
 
-  EXPECT_FALSE(rules.Matches(GURL("http://www.google.com")));
+  EXPECT_FALSE(rules.Matches(GURL("http://www.9oo91e.qjz9zk")));
   EXPECT_FALSE(rules.Matches(GURL("http://sup.192.168.1.1:33")));
 }
 
@@ -172,39 +172,39 @@ TEST(ProxyBypassRulesTest, IPV6AddressWithPort) {
   EXPECT_TRUE(rules.Matches(GURL("http://[3ffe:2a00:100:7031::1]:33")));
 
   EXPECT_FALSE(rules.Matches(GURL("http://[3ffe:2a00:100:7031::1]")));
-  EXPECT_FALSE(rules.Matches(GURL("http://www.google.com")));
+  EXPECT_FALSE(rules.Matches(GURL("http://www.9oo91e.qjz9zk")));
 }
 
 TEST(ProxyBypassRulesTest, HTTPOnly) {
   ProxyBypassRules rules;
-  rules.ParseFromString("http://www.google.com");
+  rules.ParseFromString("http://www.9oo91e.qjz9zk");
   ASSERT_EQ(1u, rules.rules().size());
-  EXPECT_EQ("http://www.google.com", rules.rules()[0]->ToString());
+  EXPECT_EQ("http://www.9oo91e.qjz9zk", rules.rules()[0]->ToString());
 
-  EXPECT_TRUE(rules.Matches(GURL("http://www.google.com/foo")));
-  EXPECT_TRUE(rules.Matches(GURL("http://www.google.com:99")));
+  EXPECT_TRUE(rules.Matches(GURL("http://www.9oo91e.qjz9zk/foo")));
+  EXPECT_TRUE(rules.Matches(GURL("http://www.9oo91e.qjz9zk:99")));
 
-  EXPECT_FALSE(rules.Matches(GURL("https://www.google.com")));
-  EXPECT_FALSE(rules.Matches(GURL("ftp://www.google.com")));
-  EXPECT_FALSE(rules.Matches(GURL("http://foo.www.google.com")));
-  EXPECT_FALSE(rules.Matches(GURL("http://www.google.com.org")));
-  EXPECT_FALSE(rules.Matches(GURL("https://www.google.com")));
+  EXPECT_FALSE(rules.Matches(GURL("https://www.9oo91e.qjz9zk")));
+  EXPECT_FALSE(rules.Matches(GURL("ftp://www.9oo91e.qjz9zk")));
+  EXPECT_FALSE(rules.Matches(GURL("http://foo.www.9oo91e.qjz9zk")));
+  EXPECT_FALSE(rules.Matches(GURL("http://www.9oo91e.qjz9zk.org")));
+  EXPECT_FALSE(rules.Matches(GURL("https://www.9oo91e.qjz9zk")));
 }
 
 TEST(ProxyBypassRulesTest, HTTPOnlyWithWildcard) {
   ProxyBypassRules rules;
-  rules.ParseFromString("http://*www.google.com");
+  rules.ParseFromString("http://*www.9oo91e.qjz9zk");
   ASSERT_EQ(1u, rules.rules().size());
-  EXPECT_EQ("http://*www.google.com", rules.rules()[0]->ToString());
+  EXPECT_EQ("http://*www.9oo91e.qjz9zk", rules.rules()[0]->ToString());
 
-  EXPECT_TRUE(rules.Matches(GURL("http://www.google.com/foo")));
-  EXPECT_TRUE(rules.Matches(GURL("http://www.google.com:99")));
-  EXPECT_TRUE(rules.Matches(GURL("http://foo.www.google.com")));
+  EXPECT_TRUE(rules.Matches(GURL("http://www.9oo91e.qjz9zk/foo")));
+  EXPECT_TRUE(rules.Matches(GURL("http://www.9oo91e.qjz9zk:99")));
+  EXPECT_TRUE(rules.Matches(GURL("http://foo.www.9oo91e.qjz9zk")));
 
-  EXPECT_FALSE(rules.Matches(GURL("https://www.google.com")));
-  EXPECT_FALSE(rules.Matches(GURL("ftp://www.google.com")));
-  EXPECT_FALSE(rules.Matches(GURL("http://www.google.com.org")));
-  EXPECT_FALSE(rules.Matches(GURL("https://www.google.com")));
+  EXPECT_FALSE(rules.Matches(GURL("https://www.9oo91e.qjz9zk")));
+  EXPECT_FALSE(rules.Matches(GURL("ftp://www.9oo91e.qjz9zk")));
+  EXPECT_FALSE(rules.Matches(GURL("http://www.9oo91e.qjz9zk.org")));
+  EXPECT_FALSE(rules.Matches(GURL("https://www.9oo91e.qjz9zk")));
 }
 
 TEST(ProxyBypassRulesTest, UseSuffixMatching) {
@@ -228,11 +228,11 @@ TEST(ProxyBypassRulesTest, UseSuffixMatching) {
 
 TEST(ProxyBypassRulesTest, MultipleRules) {
   ProxyBypassRules rules;
-  rules.ParseFromString(".google.com , .foobar.com:30");
+  rules.ParseFromString(".9oo91e.qjz9zk , .foobar.com:30");
   ASSERT_EQ(2u, rules.rules().size());
 
-  EXPECT_TRUE(rules.Matches(GURL("http://baz.google.com:40")));
-  EXPECT_FALSE(rules.Matches(GURL("http://google.com:40")));
+  EXPECT_TRUE(rules.Matches(GURL("http://baz.9oo91e.qjz9zk:40")));
+  EXPECT_FALSE(rules.Matches(GURL("http://9oo91e.qjz9zk:40")));
   EXPECT_TRUE(rules.Matches(GURL("http://bar.foobar.com:30")));
   EXPECT_FALSE(rules.Matches(GURL("http://bar.foobar.com")));
   EXPECT_FALSE(rules.Matches(GURL("http://bar.foobar.com:33")));
@@ -285,7 +285,7 @@ TEST(ProxyBypassRulesTest, BypassLocalNames) {
     // Non-local URLs.
     {"http://foo.com/", false},
     {"http://localhost.i/", false},
-    {"http://www.google.com/", false},
+    {"http://www.9oo91e.qjz9zk/", false},
     {"http://192.168.0.1/", false},
 
     // Try with different protocols.

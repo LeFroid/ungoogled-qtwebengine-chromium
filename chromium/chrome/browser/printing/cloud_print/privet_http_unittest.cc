@@ -47,7 +47,7 @@ const char kSampleInfoResponse[] =
          "version": "1.0",
          "name": "Common printer",
          "description": "Printer connected through Chrome connector",
-         "url": "https://www.google.com/cloudprint",
+         "url": "https://www.9oo91e.qjz9zk/cloudprint",
          "type": [ "printer" ],
          "id": "",
          "device_state": "idle",
@@ -57,9 +57,9 @@ const char kSampleInfoResponse[] =
          "serial_number": "1111-22222-33333-4444",
          "firmware": "24.0.1312.52",
          "uptime": 600,
-         "setup_url": "http://support.google.com/",
-         "support_url": "http://support.google.com/cloudprint/?hl=en",
-         "update_url": "http://support.google.com/cloudprint/?hl=en",
+         "setup_url": "http://support.9oo91e.qjz9zk/",
+         "support_url": "http://support.9oo91e.qjz9zk/cloudprint/?hl=en",
+         "update_url": "http://support.9oo91e.qjz9zk/cloudprint/?hl=en",
          "x-privet-token": "SampleTokenForTesting",
          "api": [
            "/privet/accesstoken",
@@ -73,7 +73,7 @@ const char kSampleInfoResponseRegistered[] =
          "version": "1.0",
          "name": "Common printer",
          "description": "Printer connected through Chrome connector",
-         "url": "https://www.google.com/cloudprint",
+         "url": "https://www.9oo91e.qjz9zk/cloudprint",
          "type": [ "printer" ],
          "id": "MyDeviceID",
          "device_state": "idle",
@@ -83,9 +83,9 @@ const char kSampleInfoResponseRegistered[] =
          "serial_number": "1111-22222-33333-4444",
          "firmware": "24.0.1312.52",
          "uptime": 600,
-         "setup_url": "http://support.google.com/",
-         "support_url": "http://support.google.com/cloudprint/?hl=en",
-         "update_url": "http://support.google.com/cloudprint/?hl=en",
+         "setup_url": "http://support.9oo91e.qjz9zk/",
+         "support_url": "http://support.9oo91e.qjz9zk/cloudprint/?hl=en",
+         "update_url": "http://support.9oo91e.qjz9zk/cloudprint/?hl=en",
          "x-privet-token": "SampleTokenForTesting",
          "api": [
            "/privet/accesstoken",
@@ -96,21 +96,21 @@ const char kSampleInfoResponseRegistered[] =
 
 const char kSampleRegisterStartResponse[] =
     R"({
-         "user": "example@google.com",
+         "user": "example@9oo91e.qjz9zk",
          "action": "start"
        })";
 
 const char kSampleRegisterGetClaimTokenResponse[] =
     R"({
          "action": "getClaimToken",
-         "user": "example@google.com",
+         "user": "example@9oo91e.qjz9zk",
          "token": "MySampleToken",
          "claim_url": "https://domain.com/SoMeUrL"
        })";
 
 const char kSampleRegisterCompleteResponse[] =
     R"({
-         "user": "example@google.com",
+         "user": "example@9oo91e.qjz9zk",
          "action": "complete",
          "device_id": "MyDeviceID"
        })";
@@ -128,7 +128,7 @@ const char kSampleInfoResponseBadJson[] = "{";
 
 const char kSampleRegisterCancelResponse[] =
     R"({
-         "user": "example@google.com",
+         "user": "example@9oo91e.qjz9zk",
          "action": "cancel"
        })";
 
@@ -149,7 +149,7 @@ const char kSampleInfoResponseWithCreatejob[] =
          "version": "1.0",
          "name": "Common printer",
          "description": "Printer connected through Chrome connector",
-         "url": "https://www.google.com/cloudprint",
+         "url": "https://www.9oo91e.qjz9zk/cloudprint",
          "type": [ "printer" ],
          "id": "",
          "device_state": "idle",
@@ -159,9 +159,9 @@ const char kSampleInfoResponseWithCreatejob[] =
          "serial_number": "1111-22222-33333-4444",
          "firmware": "24.0.1312.52",
          "uptime": 600,
-         "setup_url": "http://support.google.com/",
-         "support_url": "http://support.google.com/cloudprint/?hl=en",
-         "update_url": "http://support.google.com/cloudprint/?hl=en",
+         "setup_url": "http://support.9oo91e.qjz9zk/",
+         "support_url": "http://support.9oo91e.qjz9zk/cloudprint/?hl=en",
+         "update_url": "http://support.9oo91e.qjz9zk/cloudprint/?hl=en",
          "x-privet-token": "SampleTokenForTesting",
          "api": [
            "/privet/accesstoken",
@@ -519,7 +519,7 @@ class PrivetRegisterTest : public PrivetHTTPTest {
     info_operation_ = privet_client_->CreateInfoOperation(
         info_callback_.callback());
     register_operation_ =
-        privet_client_->CreateRegisterOperation("example@google.com",
+        privet_client_->CreateRegisterOperation("example@9oo91e.qjz9zk",
                                                 &register_delegate_);
   }
 
@@ -560,7 +560,7 @@ TEST_P(PrivetRegisterTest, RegisterSuccessSimple) {
 
   EXPECT_TRUE(
       SuccessfulResponseToURL(GetUrl("/privet/register?"
-                                     "action=start&user=example%40google.com"),
+                                     "action=start&user=example%409oo91e.qjz9zk"),
                               kSampleRegisterStartResponse));
 
   EXPECT_CALL(register_delegate_, OnPrivetRegisterClaimTokenInternal(
@@ -569,14 +569,14 @@ TEST_P(PrivetRegisterTest, RegisterSuccessSimple) {
 
   EXPECT_TRUE(SuccessfulResponseToURL(
       GetUrl("/privet/register?"
-             "action=getClaimToken&user=example%40google.com"),
+             "action=getClaimToken&user=example%409oo91e.qjz9zk"),
       kSampleRegisterGetClaimTokenResponse));
 
   register_operation_->CompleteRegistration();
 
   EXPECT_TRUE(SuccessfulResponseToURL(
       GetUrl("/privet/register?"
-             "action=complete&user=example%40google.com"),
+             "action=complete&user=example%409oo91e.qjz9zk"),
       kSampleRegisterCompleteResponse));
 
   EXPECT_CALL(register_delegate_, OnPrivetRegisterDoneInternal(
@@ -594,12 +594,12 @@ TEST_P(PrivetRegisterTest, RegisterXSRFFailure) {
 
   EXPECT_TRUE(
       SuccessfulResponseToURL(GetUrl("/privet/register?"
-                                     "action=start&user=example%40google.com"),
+                                     "action=start&user=example%409oo91e.qjz9zk"),
                               kSampleRegisterStartResponse));
 
   EXPECT_TRUE(SuccessfulResponseToURL(
       GetUrl("/privet/register?"
-             "action=getClaimToken&user=example%40google.com"),
+             "action=getClaimToken&user=example%409oo91e.qjz9zk"),
       kSampleXPrivetErrorResponse));
 
   EXPECT_TRUE(
@@ -610,7 +610,7 @@ TEST_P(PrivetRegisterTest, RegisterXSRFFailure) {
 
   EXPECT_TRUE(SuccessfulResponseToURL(
       GetUrl("/privet/register?"
-             "action=getClaimToken&user=example%40google.com"),
+             "action=getClaimToken&user=example%409oo91e.qjz9zk"),
       kSampleRegisterGetClaimTokenResponse));
 }
 
@@ -622,7 +622,7 @@ TEST_P(PrivetRegisterTest, TransientFailure) {
 
   EXPECT_TRUE(
       SuccessfulResponseToURL(GetUrl("/privet/register?"
-                                     "action=start&user=example%40google.com"),
+                                     "action=start&user=example%409oo91e.qjz9zk"),
                               kSampleRegisterErrorTransient));
 
   EXPECT_CALL(fetcher_delegate_, OnRequestStart(0));
@@ -633,7 +633,7 @@ TEST_P(PrivetRegisterTest, TransientFailure) {
 
   EXPECT_TRUE(
       SuccessfulResponseToURL(GetUrl("/privet/register?"
-                                     "action=start&user=example%40google.com"),
+                                     "action=start&user=example%409oo91e.qjz9zk"),
                               kSampleRegisterStartResponse));
 }
 
@@ -645,7 +645,7 @@ TEST_P(PrivetRegisterTest, PermanentFailure) {
 
   EXPECT_TRUE(
       SuccessfulResponseToURL(GetUrl("/privet/register?"
-                                     "action=start&user=example%40google.com"),
+                                     "action=start&user=example%409oo91e.qjz9zk"),
                               kSampleRegisterStartResponse));
 
   EXPECT_CALL(register_delegate_,
@@ -656,7 +656,7 @@ TEST_P(PrivetRegisterTest, PermanentFailure) {
 
   EXPECT_TRUE(SuccessfulResponseToURL(
       GetUrl("/privet/register?"
-             "action=getClaimToken&user=example%40google.com"),
+             "action=getClaimToken&user=example%409oo91e.qjz9zk"),
       kSampleRegisterErrorPermanent));
 }
 
@@ -681,14 +681,14 @@ TEST_P(PrivetRegisterTest, RegisterCancel) {
 
   EXPECT_TRUE(
       SuccessfulResponseToURL(GetUrl("/privet/register?"
-                                     "action=start&user=example%40google.com"),
+                                     "action=start&user=example%409oo91e.qjz9zk"),
                               kSampleRegisterStartResponse));
 
   register_operation_->Cancel();
 
   EXPECT_TRUE(
       SuccessfulResponseToURL(GetUrl("/privet/register?"
-                                     "action=cancel&user=example%40google.com"),
+                                     "action=cancel&user=example%409oo91e.qjz9zk"),
                               kSampleRegisterCancelResponse));
 
   // Must keep mocks alive for 3 seconds so the cancelation object can be
@@ -833,7 +833,7 @@ INSTANTIATE_TEST_CASE_P(PrivetTests,
                         ValuesIn(kTestParams));
 
 TEST_P(PrivetLocalPrintTest, SuccessfulLocalPrint) {
-  local_print_operation_->SetUsername("sample@gmail.com");
+  local_print_operation_->SetUsername("sample@9ma1l.qjz9zk");
   local_print_operation_->SetJobname("Sample job name");
   local_print_operation_->SetData(RefCountedBytesFromString(
       "Sample print data"));
@@ -850,13 +850,13 @@ TEST_P(PrivetLocalPrintTest, SuccessfulLocalPrint) {
 
   EXPECT_TRUE(SuccessfulResponseToURLAndData(
       GetUrl("/privet/printer/submitdoc?"
-             "client_name=Chrome&user_name=sample%40gmail.com&"
+             "client_name=Chrome&user_name=sample%409ma1l.qjz9zk&"
              "job_name=Sample+job+name"),
       "Sample print data", kSampleLocalPrintResponse));
 }
 
 TEST_P(PrivetLocalPrintTest, SuccessfulLocalPrintWithAnyMimetype) {
-  local_print_operation_->SetUsername("sample@gmail.com");
+  local_print_operation_->SetUsername("sample@9ma1l.qjz9zk");
   local_print_operation_->SetJobname("Sample job name");
   local_print_operation_->SetData(
       RefCountedBytesFromString("Sample print data"));
@@ -874,13 +874,13 @@ TEST_P(PrivetLocalPrintTest, SuccessfulLocalPrintWithAnyMimetype) {
 
   EXPECT_TRUE(SuccessfulResponseToURLAndData(
       GetUrl("/privet/printer/submitdoc?"
-             "client_name=Chrome&user_name=sample%40gmail.com&"
+             "client_name=Chrome&user_name=sample%409ma1l.qjz9zk&"
              "job_name=Sample+job+name"),
       "Sample print data", kSampleLocalPrintResponse));
 }
 
 TEST_P(PrivetLocalPrintTest, SuccessfulPWGLocalPrint) {
-  local_print_operation_->SetUsername("sample@gmail.com");
+  local_print_operation_->SetUsername("sample@9ma1l.qjz9zk");
   local_print_operation_->SetJobname("Sample job name");
   local_print_operation_->SetData(RefCountedBytesFromString("foobar"));
   local_print_operation_->SetCapabilities(kSampleCapabilitiesResponsePWGOnly);
@@ -896,7 +896,7 @@ TEST_P(PrivetLocalPrintTest, SuccessfulPWGLocalPrint) {
 
   EXPECT_TRUE(SuccessfulResponseToURLAndFileData(
       GetUrl("/privet/printer/submitdoc?"
-             "client_name=Chrome&user_name=sample%40gmail.com"
+             "client_name=Chrome&user_name=sample%409ma1l.qjz9zk"
              "&job_name=Sample+job+name"),
       "foobar", kSampleLocalPrintResponse));
 
@@ -910,7 +910,7 @@ TEST_P(PrivetLocalPrintTest, SuccessfulPWGLocalPrint) {
 }
 
 TEST_P(PrivetLocalPrintTest, SuccessfulPWGLocalPrintDuplex) {
-  local_print_operation_->SetUsername("sample@gmail.com");
+  local_print_operation_->SetUsername("sample@9ma1l.qjz9zk");
   local_print_operation_->SetJobname("Sample job name");
   local_print_operation_->SetData(RefCountedBytesFromString("foobar"));
   local_print_operation_->SetTicket(kSampleCJTDuplex);
@@ -932,7 +932,7 @@ TEST_P(PrivetLocalPrintTest, SuccessfulPWGLocalPrintDuplex) {
 
   EXPECT_TRUE(SuccessfulResponseToURLAndFileData(
       GetUrl("/privet/printer/submitdoc?"
-             "client_name=Chrome&user_name=sample%40gmail.com"
+             "client_name=Chrome&user_name=sample%409ma1l.qjz9zk"
              "&job_name=Sample+job+name&job_id=1234"),
       "foobar", kSampleLocalPrintResponse));
 
@@ -946,7 +946,7 @@ TEST_P(PrivetLocalPrintTest, SuccessfulPWGLocalPrintDuplex) {
 }
 
 TEST_P(PrivetLocalPrintTest, SuccessfulPWGLocalPrintMono) {
-  local_print_operation_->SetUsername("sample@gmail.com");
+  local_print_operation_->SetUsername("sample@9ma1l.qjz9zk");
   local_print_operation_->SetJobname("Sample job name");
   local_print_operation_->SetData(RefCountedBytesFromString("foobar"));
   local_print_operation_->SetTicket(kSampleCJTMono);
@@ -968,7 +968,7 @@ TEST_P(PrivetLocalPrintTest, SuccessfulPWGLocalPrintMono) {
 
   EXPECT_TRUE(SuccessfulResponseToURLAndFileData(
       GetUrl("/privet/printer/submitdoc?"
-             "client_name=Chrome&user_name=sample%40gmail.com"
+             "client_name=Chrome&user_name=sample%409ma1l.qjz9zk"
              "&job_name=Sample+job+name&job_id=1234"),
       "foobar", kSampleLocalPrintResponse));
 
@@ -982,7 +982,7 @@ TEST_P(PrivetLocalPrintTest, SuccessfulPWGLocalPrintMono) {
 }
 
 TEST_P(PrivetLocalPrintTest, SuccessfulPWGLocalPrintMonoToGRAY8Printer) {
-  local_print_operation_->SetUsername("sample@gmail.com");
+  local_print_operation_->SetUsername("sample@9ma1l.qjz9zk");
   local_print_operation_->SetJobname("Sample job name");
   local_print_operation_->SetData(RefCountedBytesFromString("foobar"));
   local_print_operation_->SetTicket(kSampleCJTMono);
@@ -1004,7 +1004,7 @@ TEST_P(PrivetLocalPrintTest, SuccessfulPWGLocalPrintMonoToGRAY8Printer) {
 
   EXPECT_TRUE(SuccessfulResponseToURLAndFileData(
       GetUrl("/privet/printer/submitdoc?"
-             "client_name=Chrome&user_name=sample%40gmail.com"
+             "client_name=Chrome&user_name=sample%409ma1l.qjz9zk"
              "&job_name=Sample+job+name&job_id=1234"),
       "foobar", kSampleLocalPrintResponse));
 
@@ -1018,7 +1018,7 @@ TEST_P(PrivetLocalPrintTest, SuccessfulPWGLocalPrintMonoToGRAY8Printer) {
 }
 
 TEST_P(PrivetLocalPrintTest, SuccessfulLocalPrintWithCreatejob) {
-  local_print_operation_->SetUsername("sample@gmail.com");
+  local_print_operation_->SetUsername("sample@9ma1l.qjz9zk");
   local_print_operation_->SetJobname("Sample job name");
   local_print_operation_->SetTicket(kSampleCJT);
   local_print_operation_->SetData(
@@ -1040,13 +1040,13 @@ TEST_P(PrivetLocalPrintTest, SuccessfulLocalPrintWithCreatejob) {
 
   EXPECT_TRUE(SuccessfulResponseToURLAndData(
       GetUrl("/privet/printer/submitdoc?"
-             "client_name=Chrome&user_name=sample%40gmail.com&"
+             "client_name=Chrome&user_name=sample%409ma1l.qjz9zk&"
              "job_name=Sample+job+name&job_id=1234"),
       "Sample print data", kSampleLocalPrintResponse));
 }
 
 TEST_P(PrivetLocalPrintTest, SuccessfulLocalPrintWithOverlongName) {
-  local_print_operation_->SetUsername("sample@gmail.com");
+  local_print_operation_->SetUsername("sample@9ma1l.qjz9zk");
   local_print_operation_->SetJobname(
       "123456789:123456789:123456789:123456789:123456789:123456789:123456789:");
   local_print_operation_->SetTicket(kSampleCJT);
@@ -1069,14 +1069,14 @@ TEST_P(PrivetLocalPrintTest, SuccessfulLocalPrintWithOverlongName) {
 
   EXPECT_TRUE(SuccessfulResponseToURLAndData(
       GetUrl("/privet/printer/submitdoc?"
-             "client_name=Chrome&user_name=sample%40gmail.com&"
+             "client_name=Chrome&user_name=sample%409ma1l.qjz9zk&"
              "job_name=123456789%3A123456789%3A123456789%3A1...123456789"
              "%3A123456789%3A123456789%3A&job_id=1234"),
       "Sample print data", kSampleLocalPrintResponse));
 }
 
 TEST_P(PrivetLocalPrintTest, PDFPrintInvalidDocumentTypeRetry) {
-  local_print_operation_->SetUsername("sample@gmail.com");
+  local_print_operation_->SetUsername("sample@9ma1l.qjz9zk");
   local_print_operation_->SetJobname("Sample job name");
   local_print_operation_->SetTicket(kSampleCJT);
   local_print_operation_->SetCapabilities(kSampleCapabilitiesResponse);
@@ -1095,7 +1095,7 @@ TEST_P(PrivetLocalPrintTest, PDFPrintInvalidDocumentTypeRetry) {
 
   EXPECT_TRUE(SuccessfulResponseToURLAndData(
       GetUrl("/privet/printer/submitdoc?"
-             "client_name=Chrome&user_name=sample%40gmail.com&"
+             "client_name=Chrome&user_name=sample%409ma1l.qjz9zk&"
              "job_name=Sample+job+name&job_id=1234"),
       "sample_data", kSampleInvalidDocumentTypeResponse));
 
@@ -1103,13 +1103,13 @@ TEST_P(PrivetLocalPrintTest, PDFPrintInvalidDocumentTypeRetry) {
 
   EXPECT_TRUE(SuccessfulResponseToURLAndFileData(
       GetUrl("/privet/printer/submitdoc?"
-             "client_name=Chrome&user_name=sample%40gmail.com&"
+             "client_name=Chrome&user_name=sample%409ma1l.qjz9zk&"
              "job_name=Sample+job+name&job_id=1234"),
       "sample_data", kSampleLocalPrintResponse));
 }
 
 TEST_P(PrivetLocalPrintTest, LocalPrintRetryOnInvalidJobID) {
-  local_print_operation_->SetUsername("sample@gmail.com");
+  local_print_operation_->SetUsername("sample@9ma1l.qjz9zk");
   local_print_operation_->SetJobname("Sample job name");
   local_print_operation_->SetTicket(kSampleCJT);
   local_print_operation_->SetCapabilities(kSampleCapabilitiesResponse);
@@ -1129,7 +1129,7 @@ TEST_P(PrivetLocalPrintTest, LocalPrintRetryOnInvalidJobID) {
 
   EXPECT_TRUE(SuccessfulResponseToURLAndData(
       GetUrl("/privet/printer/submitdoc?"
-             "client_name=Chrome&user_name=sample%40gmail.com&"
+             "client_name=Chrome&user_name=sample%409ma1l.qjz9zk&"
              "job_name=Sample+job+name&job_id=1234"),
       "Sample print data", kSampleErrorResponsePrinterBusy));
 

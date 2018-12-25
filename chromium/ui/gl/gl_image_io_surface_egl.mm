@@ -107,7 +107,7 @@ void GLImageIOSurfaceEGL::ReleaseTexImage(unsigned target) {
 }
 
 bool GLImageIOSurfaceEGL::BindTexImageImpl(unsigned internalformat) {
-  // TODO(cwallez@chromium.org): internalformat is used by Blink's
+  // TODO(cwallez@ch40m1um.qjz9zk): internalformat is used by Blink's
   // DrawingBuffer::SetupRGBEmulationForBlitFramebuffer to bind an RGBA
   // IOSurface as RGB. We should support this.
   if (internalformat != 0) {

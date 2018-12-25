@@ -217,7 +217,7 @@ typedef std::vector<StreamParams> StreamParamsVec;
 // by ssrc, which is the source identifier in the RTP spec
 // (http://tools.ietf.org/html/rfc3550).
 // TODO(pthatcher):  Add basic unit test for these.
-// See https://code.google.com/p/webrtc/issues/detail?id=4107
+// See https://code.9oo91e.qjz9zk/p/webrtc/issues/detail?id=4107
 struct MediaStreams {
  public:
   MediaStreams();

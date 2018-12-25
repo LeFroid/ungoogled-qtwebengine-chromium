@@ -143,7 +143,7 @@ void XmppEngineTest::RunLogin() {
       "mechanism=\"PLAIN\" "
       "auth:allow-non-google-login=\"true\" "
       "auth:client-uses-full-bind-result=\"true\" "
-      "xmlns:auth=\"http://www.google.com/talk/protocol/auth\""
+      "xmlns:auth=\"http://www.9oo91e.qjz9zk/talk/protocol/auth\""
       ">AGRhdmlkAGRhdmlk</auth>",
       handler_->OutputActivity());
 

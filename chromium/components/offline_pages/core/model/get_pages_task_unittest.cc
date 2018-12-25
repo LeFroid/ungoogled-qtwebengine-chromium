@@ -165,9 +165,9 @@ TEST_F(GetPagesTaskTest, GetPagesByRequestOrigin) {
 }
 
 TEST_F(GetPagesTaskTest, GetPagesByUrl) {
-  static const GURL kUrl1("http://cs.chromium.org");
-  static const GURL kUrl1Frag("http://cs.chromium.org#frag1");
-  static const GURL kUrl2("http://chrome.google.com");
+  static const GURL kUrl1("http://cs.ch40m1um.qjz9zk");
+  static const GURL kUrl1Frag("http://cs.ch40m1um.qjz9zk#frag1");
+  static const GURL kUrl2("http://chrome.9oo91e.qjz9zk");
   generator()->SetNamespace(kTestNamespace);
   generator()->SetUrl(kUrl1);
   OfflinePageItem item_1 = generator()->CreateItem();

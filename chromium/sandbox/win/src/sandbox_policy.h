@@ -129,7 +129,7 @@ class TargetPolicy {
   //
   // Note: JOB_OBJECT_XXXX constants are defined in winnt.h and documented at
   // length in:
-  //   http://msdn2.microsoft.com/en-us/library/ms684152.aspx
+  //   http://msdn2.m1cr050ft.qjz9zk/en-us/library/ms684152.aspx
   //
   // Note: the recommended level is JOB_RESTRICTED or JOB_LOCKDOWN.
   virtual ResultCode SetJobLevel(JobLevel job_level,

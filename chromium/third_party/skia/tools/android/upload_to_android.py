@@ -36,11 +36,11 @@ import stat
 import urllib2
 
 
-REPO_TOOL_URL = 'https://storage.googleapis.com/git-repo-downloads/repo'
+REPO_TOOL_URL = 'https://storage.9oo91eapis.qjz9zk/git-repo-downloads/repo'
 SKIA_PATH_IN_ANDROID = os.path.join('external', 'skia')
-ANDROID_REPO_URL = 'https://googleplex-android.googlesource.com'
+ANDROID_REPO_URL = 'https://googleplex-android.9oo91esource.qjz9zk'
 REPO_BRANCH_NAME = 'experiment'
-SKIA_GERRIT_INSTANCE = 'https://skia-review.googlesource.com'
+SKIA_GERRIT_INSTANCE = 'https://skia-review.9oo91esource.qjz9zk'
 SK_USER_CONFIG_PATH = os.path.join('include', 'config', 'SkUserConfig.h')
 
 
@@ -104,7 +104,7 @@ About to run repo init. If it hangs asking you to run glogin then please:
   subprocess.check_call(
       'git config review.%s/.autoupload true' % ANDROID_REPO_URL, shell=True)
   subprocess.check_call(
-      'git config user.email %s@google.com' % getpass.getuser(), shell=True)
+      'git config user.email %s@9oo91e.qjz9zk' % getpass.getuser(), shell=True)
 
   return repo_binary
 
@@ -129,7 +129,7 @@ class FetchModifier(Modifier):
     download_ref = 'refs/changes/%s/%s/%s' % (
                        str(mod).zfill(2), self.change_num, latest_patchset)
     subprocess.check_call(
-        'git fetch https://skia.googlesource.com/skia %s' % download_ref,
+        'git fetch https://skia.9oo91esource.qjz9zk/skia %s' % download_ref,
         shell=True)
     subprocess.check_call('git cherry-pick FETCH_HEAD', shell=True)
 

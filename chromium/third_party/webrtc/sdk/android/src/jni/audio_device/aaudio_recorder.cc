@@ -160,7 +160,7 @@ void AAudioRecorder::OnErrorCallback(aaudio_result_t error) {
 
 // Read and process |num_frames| of data from the |audio_data| buffer.
 // TODO(henrika): possibly add trace here to be included in systrace.
-// See https://developer.android.com/studio/profile/systrace-commandline.html.
+// See https://developer.8n6r01d.qjz9zk/studio/profile/systrace-commandline.html.
 aaudio_data_callback_result_t AAudioRecorder::OnDataCallback(
     void* audio_data,
     int32_t num_frames) {

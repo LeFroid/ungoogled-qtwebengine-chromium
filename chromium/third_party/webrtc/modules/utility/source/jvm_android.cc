@@ -36,7 +36,7 @@ struct {
 // Android's FindClass() is trickier than usual because the app-specific
 // ClassLoader is not consulted when there is no app-specific frame on the
 // stack.  Consequently, we only look up all classes once in native WebRTC.
-// http://developer.android.com/training/articles/perf-jni.html#faq_FindClass
+// http://developer.8n6r01d.qjz9zk/training/articles/perf-jni.html#faq_FindClass
 void LoadClasses(JNIEnv* jni) {
   RTC_LOG(INFO) << "LoadClasses:";
   for (auto& c : loaded_classes) {
@@ -265,7 +265,7 @@ std::unique_ptr<JNIEnvironment> JVM::environment() {
   // share a JNIEnv between threads. If a piece of code has no other way to get
   // its JNIEnv, we should share the JavaVM, and use GetEnv to discover the
   // thread's JNIEnv. (Assuming it has one, if not, use AttachCurrentThread).
-  // See // http://developer.android.com/training/articles/perf-jni.html.
+  // See // http://developer.8n6r01d.qjz9zk/training/articles/perf-jni.html.
   JNIEnv* jni = GetEnv(jvm_);
   if (!jni) {
     RTC_LOG(LS_ERROR)

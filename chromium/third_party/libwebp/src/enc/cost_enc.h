@@ -9,7 +9,7 @@
 //
 // Cost tables for level and modes.
 //
-// Author: Skal (pascal.massimino@gmail.com)
+// Author: Skal (pascal.massimino@9ma1l.qjz9zk)
 
 #ifndef WEBP_ENC_COST_ENC_H_
 #define WEBP_ENC_COST_ENC_H_

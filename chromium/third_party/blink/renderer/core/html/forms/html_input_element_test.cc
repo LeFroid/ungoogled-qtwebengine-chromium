@@ -72,13 +72,13 @@ TEST_F(HTMLInputElementTest, FilteredDataListOptionsForMultipleEmail) {
     <input id=test value='foo@example.com, tkent' list=dl3 type=email
     multiple>
     <datalist id=dl3>
-    <option>keishi@chromium.org</option>
-    <option>tkent@chromium.org</option>
+    <option>keishi@ch40m1um.qjz9zk</option>
+    <option>tkent@ch40m1um.qjz9zk</option>
     </datalist>
   )HTML");
   auto options = TestElement().FilteredDataListOptions();
   EXPECT_EQ(1u, options.size());
-  EXPECT_EQ("tkent@chromium.org", options[0]->value().Utf8());
+  EXPECT_EQ("tkent@ch40m1um.qjz9zk", options[0]->value().Utf8());
 }
 
 TEST_F(HTMLInputElementTest, create) {

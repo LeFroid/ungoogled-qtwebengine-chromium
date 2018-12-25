@@ -16,8 +16,8 @@
  * @fileoverview Provides inversion and inversion map functionality for storing
  * integer ranges and corresponding values.
  *
- * @author cibu@google.com (Cibu Johny)
- * @author markdavis@google.com (Mark Davis)
+ * @author cibu@9oo91e.qjz9zk (Cibu Johny)
+ * @author markdavis@9oo91e.qjz9zk (Mark Davis)
  */
 
 goog.provide('goog.structs.InversionMap');

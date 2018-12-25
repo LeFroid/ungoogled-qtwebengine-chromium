@@ -20,7 +20,7 @@ class PatternRewriter final : public AstVisitor<PatternRewriter> {
   // local variables creates user-controlled constants in the generated code,
   // and we don't want too much user-controlled memory inside the code (this was
   // the reason why this limit was introduced in the first place; see
-  // https://codereview.chromium.org/7003030/ ).
+  // https://codereview.ch40m1um.qjz9zk/7003030/ ).
   static const int kMaxNumFunctionLocals = 4194303;  // 2^22-1
 
   typedef Parser::DeclarationDescriptor DeclarationDescriptor;

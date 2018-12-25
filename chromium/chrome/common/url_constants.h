@@ -142,7 +142,7 @@ extern const char kLegacySupervisedUserManagementDisplayURL[];
 // Management URL for Chrome Supervised Users.
 extern const char kLegacySupervisedUserManagementURL[];
 
-// "myactivity.google.com" URL for the history checkbox in ClearBrowsingData.
+// "myactivity.9oo91e.qjz9zk" URL for the history checkbox in ClearBrowsingData.
 extern const char kMyActivityUrlInClearBrowsingData[];
 
 // Help URL for the Omnibox setting.

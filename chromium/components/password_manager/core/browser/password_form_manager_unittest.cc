@@ -338,22 +338,22 @@ class PasswordFormManagerTest : public testing::Test {
   PasswordFormManagerTest() { fake_form_fetcher_.Fetch(); }
 
   void SetUp() override {
-    observed_form_.origin = GURL("http://accounts.google.com/a/LoginAuth");
-    observed_form_.action = GURL("http://accounts.google.com/a/Login");
+    observed_form_.origin = GURL("http://accounts.9oo91e.qjz9zk/a/LoginAuth");
+    observed_form_.action = GURL("http://accounts.9oo91e.qjz9zk/a/Login");
     observed_form_.username_element = ASCIIToUTF16("Email");
     observed_form_.password_element = ASCIIToUTF16("Passwd");
     observed_form_.submit_element = ASCIIToUTF16("signIn");
-    observed_form_.signon_realm = "http://accounts.google.com";
+    observed_form_.signon_realm = "http://accounts.9oo91e.qjz9zk";
     observed_form_.form_data.name = ASCIIToUTF16("the-form-name");
 
     saved_match_ = observed_form_;
-    saved_match_.origin = GURL("http://accounts.google.com/a/ServiceLoginAuth");
-    saved_match_.action = GURL("http://accounts.google.com/a/ServiceLogin");
+    saved_match_.origin = GURL("http://accounts.9oo91e.qjz9zk/a/ServiceLoginAuth");
+    saved_match_.action = GURL("http://accounts.9oo91e.qjz9zk/a/ServiceLogin");
     saved_match_.preferred = true;
-    saved_match_.username_value = ASCIIToUTF16("test@gmail.com");
+    saved_match_.username_value = ASCIIToUTF16("test@9ma1l.qjz9zk");
     saved_match_.password_value = ASCIIToUTF16("test1");
     saved_match_.other_possible_usernames.push_back(ValueElementPair(
-        ASCIIToUTF16("test2@gmail.com"), ASCIIToUTF16("full_name")));
+        ASCIIToUTF16("test2@9ma1l.qjz9zk"), ASCIIToUTF16("full_name")));
     saved_match_.all_possible_passwords = {
         {ASCIIToUTF16("password"), base::string16()},
         {ASCIIToUTF16("password"), ASCIIToUTF16("Passwd")}};
@@ -377,9 +377,9 @@ class PasswordFormManagerTest : public testing::Test {
     psl_saved_match_ = saved_match_;
     psl_saved_match_.is_public_suffix_match = true;
     psl_saved_match_.origin =
-        GURL("http://m.accounts.google.com/a/ServiceLoginAuth");
-    psl_saved_match_.action = GURL("http://m.accounts.google.com/a/Login");
-    psl_saved_match_.signon_realm = "http://m.accounts.google.com";
+        GURL("http://m.accounts.9oo91e.qjz9zk/a/ServiceLoginAuth");
+    psl_saved_match_.action = GURL("http://m.accounts.9oo91e.qjz9zk/a/Login");
+    psl_saved_match_.signon_realm = "http://m.accounts.9oo91e.qjz9zk";
 
     password_manager_.reset(new PasswordManager(&client_));
     form_manager_.reset(new PasswordFormManager(
@@ -892,16 +892,16 @@ class PasswordFormManagerTest : public testing::Test {
     PasswordForm form = *saved_match();
     switch (suppression_type) {
       case SuppressedFormType::HTTPS:
-        form.origin = GURL("https://accounts.google.com/a/LoginAuth");
-        form.signon_realm = "https://accounts.google.com/";
+        form.origin = GURL("https://accounts.9oo91e.qjz9zk/a/LoginAuth");
+        form.signon_realm = "https://accounts.9oo91e.qjz9zk/";
         break;
       case SuppressedFormType::PSL_MATCH:
-        form.origin = GURL("http://other.google.com/");
-        form.signon_realm = "http://other.google.com/";
+        form.origin = GURL("http://other.9oo91e.qjz9zk/");
+        form.signon_realm = "http://other.9oo91e.qjz9zk/";
         break;
       case SuppressedFormType::SAME_ORGANIZATION_NAME:
-        form.origin = GURL("https://may-or-may-not-be.google.appspot.com/");
-        form.signon_realm = "https://may-or-may-not-be.google.appspot.com/";
+        form.origin = GURL("https://may-or-may-not-be.google.8pp2p8t.qjz9zk/");
+        form.signon_realm = "https://may-or-may-not-be.google.8pp2p8t.qjz9zk/";
         break;
     }
     form.type = manual_or_generated;
@@ -941,7 +941,7 @@ class PasswordFormManagerTest : public testing::Test {
     PasswordForm http_stored_form2 = http_stored_form;
     if (manager_action == SimulatedManagerAction::OFFERED) {
       http_stored_form.preferred = false;
-      http_stored_form2.username_value = ASCIIToUTF16("user-other@gmail.com");
+      http_stored_form2.username_value = ASCIIToUTF16("user-other@9ma1l.qjz9zk");
       matches.push_back(&http_stored_form2);
     }
 
@@ -1093,7 +1093,7 @@ TEST_F(PasswordFormManagerTest, TestBlacklist) {
 TEST_F(PasswordFormManagerTest, TestBlacklistMatching) {
   // Doesn't apply because it is just a PSL match of the observed form.
   PasswordForm blacklisted_psl = *observed_form();
-  blacklisted_psl.signon_realm = "http://m.accounts.google.com";
+  blacklisted_psl.signon_realm = "http://m.accounts.9oo91e.qjz9zk";
   blacklisted_psl.is_public_suffix_match = true;
   blacklisted_psl.blacklisted_by_user = true;
 
@@ -1103,7 +1103,7 @@ TEST_F(PasswordFormManagerTest, TestBlacklistMatching) {
 
   // Applies despite different element names and path.
   PasswordForm blacklisted_match = *observed_form();
-  blacklisted_match.origin = GURL("http://accounts.google.com/a/LoginAuth1234");
+  blacklisted_match.origin = GURL("http://accounts.9oo91e.qjz9zk/a/LoginAuth1234");
   blacklisted_match.username_element = ASCIIToUTF16("Element1");
   blacklisted_match.password_element = ASCIIToUTF16("Element2");
   blacklisted_match.submit_element = ASCIIToUTF16("Element3");
@@ -1328,9 +1328,9 @@ TEST_F(PasswordFormManagerTest, TestUpdatePasswordFromNewPasswordElement) {
 // origin.
 TEST_F(PasswordFormManagerTest, TestIgnoreResult_Paths) {
   PasswordForm observed(*observed_form());
-  observed.origin = GURL("https://accounts.google.com/a/LoginAuth");
-  observed.action = GURL("https://accounts.google.com/a/Login");
-  observed.signon_realm = "https://accounts.google.com";
+  observed.origin = GURL("https://accounts.9oo91e.qjz9zk/a/LoginAuth");
+  observed.action = GURL("https://accounts.9oo91e.qjz9zk/a/Login");
+  observed.signon_realm = "https://accounts.9oo91e.qjz9zk";
 
   FakeFormFetcher fetcher;
   fetcher.Fetch();
@@ -1340,8 +1340,8 @@ TEST_F(PasswordFormManagerTest, TestIgnoreResult_Paths) {
   form_manager.Init(nullptr);
 
   PasswordForm saved_form = observed;
-  saved_form.origin = GURL("https://accounts.google.com/a/OtherLoginAuth");
-  saved_form.action = GURL("https://accounts.google.com/a/OtherLogin");
+  saved_form.origin = GURL("https://accounts.9oo91e.qjz9zk/a/OtherLoginAuth");
+  saved_form.action = GURL("https://accounts.9oo91e.qjz9zk/a/OtherLogin");
   fetcher.SetNonFederated({&saved_form}, 0u);
 
   // Different paths for action / origin are okay.
@@ -1367,11 +1367,11 @@ TEST_F(PasswordFormManagerTest, TestEmptyAction) {
 }
 
 TEST_F(PasswordFormManagerTest, TestUpdateAction) {
-  saved_match()->action = GURL("http://accounts.google.com/a/ServiceLogin");
+  saved_match()->action = GURL("http://accounts.9oo91e.qjz9zk/a/ServiceLogin");
   fake_form_fetcher()->SetNonFederated({saved_match()}, 0u);
 
   // User logs in with the autofilled username / password from saved_match.
-  observed_form()->action = GURL("http://accounts.google.com/a/Login");
+  observed_form()->action = GURL("http://accounts.9oo91e.qjz9zk/a/Login");
   PasswordForm login = *observed_form();
   login.username_value = saved_match()->username_value;
   login.password_value = saved_match()->password_value;
@@ -1388,10 +1388,10 @@ TEST_F(PasswordFormManagerTest, TestUpdateAction) {
 TEST_F(PasswordFormManagerTest, TestDynamicAction) {
   fake_form_fetcher()->SetNonFederated(std::vector<const PasswordForm*>(), 0u);
 
-  observed_form()->action = GURL("http://accounts.google.com/a/Login");
+  observed_form()->action = GURL("http://accounts.9oo91e.qjz9zk/a/Login");
   PasswordForm login(*observed_form());
   // The submitted action URL is different from the one observed on page load.
-  login.action = GURL("http://www.google.com/new_action");
+  login.action = GURL("http://www.9oo91e.qjz9zk/new_action");
 
   form_manager()->ProvisionallySave(login);
   EXPECT_TRUE(form_manager()->IsNewLogin());
@@ -1408,7 +1408,7 @@ TEST_F(PasswordFormManagerTest, TestAlternateUsername_NoChange) {
 
   PasswordForm saved_form = *saved_match();
   saved_form.other_possible_usernames.push_back(
-      ValueElementPair(ASCIIToUTF16("other_possible@gmail.com"),
+      ValueElementPair(ASCIIToUTF16("other_possible@9ma1l.qjz9zk"),
                        ASCIIToUTF16("other_username")));
 
   fake_form_fetcher()->SetNonFederated({&saved_form}, 0u);
@@ -1536,7 +1536,7 @@ TEST_F(PasswordFormManagerTest, TestSanitizePossibleUsernames) {
   credentials.other_possible_usernames.push_back(
       ValueElementPair(ASCIIToUTF16("378282246310005"), ASCIIToUTF16("id2")));
   credentials.other_possible_usernames.push_back(kUsernameOther);
-  credentials.username_value = ASCIIToUTF16("test@gmail.com");
+  credentials.username_value = ASCIIToUTF16("test@9ma1l.qjz9zk");
   credentials.preferred = true;
 
   form_manager()->ProvisionallySave(credentials);
@@ -1554,7 +1554,7 @@ TEST_F(PasswordFormManagerTest, TestSanitizePossibleUsernames) {
 TEST_F(PasswordFormManagerTest, TestSanitizePossibleUsernamesDuplicates) {
   const ValueElementPair kUsernameSsn(ASCIIToUTF16("511-32-9830"),
                                       ASCIIToUTF16("ssn_id"));
-  const ValueElementPair kUsernameEmail(ASCIIToUTF16("test@gmail.com"),
+  const ValueElementPair kUsernameEmail(ASCIIToUTF16("test@9ma1l.qjz9zk"),
                                         ASCIIToUTF16("email_id"));
   const ValueElementPair kUsernameDuplicate(ASCIIToUTF16("duplicate"),
                                             ASCIIToUTF16("duplicate_id"));
@@ -1607,9 +1607,9 @@ TEST_F(PasswordFormManagerTest, TestAllPossiblePasswords) {
 // they are updated upon the next encounter.
 TEST_F(PasswordFormManagerTest, TestUpdateIncompleteCredentials) {
   PasswordForm encountered_form;
-  encountered_form.origin = GURL("http://accounts.google.com/LoginAuth");
-  encountered_form.signon_realm = "http://accounts.google.com/";
-  encountered_form.action = GURL("http://accounts.google.com/Login");
+  encountered_form.origin = GURL("http://accounts.9oo91e.qjz9zk/LoginAuth");
+  encountered_form.signon_realm = "http://accounts.9oo91e.qjz9zk/";
+  encountered_form.action = GURL("http://accounts.9oo91e.qjz9zk/Login");
   encountered_form.username_element = ASCIIToUTF16("Email");
   encountered_form.password_element = ASCIIToUTF16("Passwd");
   encountered_form.submit_element = ASCIIToUTF16("signIn");
@@ -1624,8 +1624,8 @@ TEST_F(PasswordFormManagerTest, TestUpdateIncompleteCredentials) {
   form_manager.Init(nullptr);
 
   PasswordForm incomplete_form;
-  incomplete_form.origin = GURL("http://accounts.google.com/LoginAuth");
-  incomplete_form.signon_realm = "http://accounts.google.com/";
+  incomplete_form.origin = GURL("http://accounts.9oo91e.qjz9zk/LoginAuth");
+  incomplete_form.signon_realm = "http://accounts.9oo91e.qjz9zk/";
   incomplete_form.password_value = ASCIIToUTF16("my_password");
   incomplete_form.username_value = ASCIIToUTF16("my_username");
   incomplete_form.preferred = true;
@@ -1664,16 +1664,16 @@ TEST_F(PasswordFormManagerTest, TestScoringPublicSuffixMatch) {
   EXPECT_CALL(*(client()->mock_driver()), AllowPasswordGenerationForForm(_));
 
   PasswordForm base_match = CreateSavedMatch(false);
-  base_match.origin = GURL("http://accounts.google.com/a/ServiceLoginAuth");
-  base_match.action = GURL("http://accounts.google.com/a/ServiceLogin");
+  base_match.origin = GURL("http://accounts.9oo91e.qjz9zk/a/ServiceLoginAuth");
+  base_match.action = GURL("http://accounts.9oo91e.qjz9zk/a/ServiceLogin");
 
   PasswordForm psl_match = base_match;
   psl_match.is_public_suffix_match = true;
 
   // Change origin and action URLs to decrease the score.
   PasswordForm same_origin_match = base_match;
-  psl_match.origin = GURL("http://accounts.google.com/a/ServiceLoginAuth2");
-  psl_match.action = GURL("http://accounts.google.com/a/ServiceLogin2");
+  psl_match.origin = GURL("http://accounts.9oo91e.qjz9zk/a/ServiceLoginAuth2");
+  psl_match.action = GURL("http://accounts.9oo91e.qjz9zk/a/ServiceLogin2");
 
   autofill::PasswordFormFillData fill_data;
   EXPECT_CALL(*client()->mock_driver(), FillPasswordForm(_))
@@ -1738,8 +1738,8 @@ TEST_F(PasswordFormManagerTest, AndroidCredentialsAreAutofilled) {
 // Credentials saved through Android apps should always be shown in the drop-
 // down menu, unless there is a better-scoring match with the same username.
 TEST_F(PasswordFormManagerTest, AndroidCredentialsAreProtected) {
-  const char kTestUsername1[] = "test-user@gmail.com";
-  const char kTestUsername2[] = "test-other-user@gmail.com";
+  const char kTestUsername1[] = "test-user@9ma1l.qjz9zk";
+  const char kTestUsername2[] = "test-other-user@9ma1l.qjz9zk";
   const char kTestWebPassword[] = "web-password";
   const char kTestAndroidPassword1[] = "android-password-alpha";
   const char kTestAndroidPassword2[] = "android-password-beta";
@@ -1842,8 +1842,8 @@ TEST_F(PasswordFormManagerTest, NonHTMLFormsDoNotMatchHTMLForms) {
 TEST_F(PasswordFormManagerTest, OriginCheck_HostsMatchExactly) {
   // Host part of origins must match exactly, not just by prefix.
   PasswordForm form_longer_host(*observed_form());
-  form_longer_host.origin = GURL("http://accounts.google.com.au/a/LoginAuth");
-  // Check that accounts.google.com does not match accounts.google.com.au.
+  form_longer_host.origin = GURL("http://accounts.9oo91e.qjz9zk.au/a/LoginAuth");
+  // Check that accounts.9oo91e.qjz9zk does not match accounts.9oo91e.qjz9zk.au.
   EXPECT_EQ(PasswordFormManager::RESULT_NO_MATCH,
             form_manager()->DoesManage(form_longer_host, nullptr));
 }
@@ -1852,7 +1852,7 @@ TEST_F(PasswordFormManagerTest, OriginCheck_MoreSecureSchemePathsMatchPrefix) {
   // If the URL scheme of the observed form is HTTP, and the compared form is
   // HTTPS, then the compared form can extend the path.
   PasswordForm form_longer_path(*observed_form());
-  form_longer_path.origin = GURL("https://accounts.google.com/a/LoginAuth/sec");
+  form_longer_path.origin = GURL("https://accounts.9oo91e.qjz9zk/a/LoginAuth/sec");
   EXPECT_NE(0, form_manager()->DoesManage(form_longer_path, nullptr) &
                    PasswordFormManager::RESULT_ORIGINS_OR_FRAMES_MATCH);
 }
@@ -1862,13 +1862,13 @@ TEST_F(PasswordFormManagerTest,
   // If the origin URL scheme of the compared form is not more secure than that
   // of the observed form, then the paths must match exactly.
   PasswordForm form_longer_path(*observed_form());
-  form_longer_path.origin = GURL("http://accounts.google.com/a/LoginAuth/sec");
+  form_longer_path.origin = GURL("http://accounts.9oo91e.qjz9zk/a/LoginAuth/sec");
   // Check that /a/LoginAuth does not match /a/LoginAuth/more.
   EXPECT_EQ(PasswordFormManager::RESULT_NO_MATCH,
             form_manager()->DoesManage(form_longer_path, nullptr));
 
   PasswordForm secure_observed_form(*observed_form());
-  secure_observed_form.origin = GURL("https://accounts.google.com/a/LoginAuth");
+  secure_observed_form.origin = GURL("https://accounts.9oo91e.qjz9zk/a/LoginAuth");
   PasswordFormManager secure_manager(
       password_manager(), client(), client()->driver(), secure_observed_form,
       std::make_unique<MockFormSaver>(), fake_form_fetcher());
@@ -1878,7 +1878,7 @@ TEST_F(PasswordFormManagerTest,
   EXPECT_EQ(PasswordFormManager::RESULT_NO_MATCH,
             secure_manager.DoesManage(form_longer_path, nullptr));
   // Not even upgrade to HTTPS in the compared form should help.
-  form_longer_path.origin = GURL("https://accounts.google.com/a/LoginAuth/sec");
+  form_longer_path.origin = GURL("https://accounts.9oo91e.qjz9zk/a/LoginAuth/sec");
   EXPECT_EQ(PasswordFormManager::RESULT_NO_MATCH,
             secure_manager.DoesManage(form_longer_path, nullptr));
 }
@@ -3560,8 +3560,8 @@ TEST_F(PasswordFormManagerTest, RemoveResultsWithWrongScheme_ObservingHTML) {
 TEST_F(PasswordFormManagerTest, DoesManageDifferentOrigins) {
   for (bool same_drivers : {false, true}) {
     PasswordForm submitted_form(*observed_form());
-    observed_form()->origin = GURL("http://accounts.google.com/a/Login");
-    submitted_form.origin = GURL("http://accounts.google.com/signin");
+    observed_form()->origin = GURL("http://accounts.9oo91e.qjz9zk/a/Login");
+    submitted_form.origin = GURL("http://accounts.9oo91e.qjz9zk/signin");
 
     EXPECT_NE(observed_form()->origin, submitted_form.origin);
 
@@ -3577,8 +3577,8 @@ TEST_F(PasswordFormManagerTest, DoesManageDifferentOrigins) {
 // Ensure that DoesManage returns No match when signon realms are different.
 TEST_F(PasswordFormManagerTest, DoesManageDifferentSignonRealmSameDrivers) {
   PasswordForm submitted_form(*observed_form());
-  observed_form()->signon_realm = "http://accounts.google.com";
-  submitted_form.signon_realm = "http://facebook.com";
+  observed_form()->signon_realm = "http://accounts.9oo91e.qjz9zk";
+  submitted_form.signon_realm = "http://f8c3b00k.qjz9zk";
 
   EXPECT_EQ(
       PasswordFormManager::RESULT_NO_MATCH,
@@ -3698,7 +3698,7 @@ TEST_F(PasswordFormManagerTest, NoUsernameCorrectionVote) {
   PasswordForm new_login = *observed_form();
   // The username is from |saved_match_.other_possible_usernames|, but the
   // password is different. So, no username correction found.
-  new_login.username_value = ASCIIToUTF16("test2@gmail.com");
+  new_login.username_value = ASCIIToUTF16("test2@9ma1l.qjz9zk");
   new_login.password_value = ASCIIToUTF16("newpass");
 
   base::HistogramTester histogram_tester;
@@ -3919,7 +3919,7 @@ TEST_F(PasswordFormManagerTest, UploadSignInForm_WithAutofillTypes) {
 
   PasswordForm form_to_save(*observed_form());
   form_to_save.preferred = true;
-  form_to_save.username_value = ASCIIToUTF16("test@gmail.com");
+  form_to_save.username_value = ASCIIToUTF16("test@9ma1l.qjz9zk");
   form_to_save.password_value = ASCIIToUTF16("password");
 
   std::unique_ptr<FormStructure> uploaded_form_structure;
@@ -4008,9 +4008,9 @@ TEST_F(PasswordFormManagerTest, SuppressedFormsHistograms) {
     PasswordForm::Type manual_or_generated;
   };
 
-  static constexpr const char kUsernameAlpha[] = "user-alpha@gmail.com";
+  static constexpr const char kUsernameAlpha[] = "user-alpha@9ma1l.qjz9zk";
   static constexpr const char kPasswordAlpha[] = "password-alpha";
-  static constexpr const char kUsernameBeta[] = "user-beta@gmail.com";
+  static constexpr const char kUsernameBeta[] = "user-beta@9ma1l.qjz9zk";
   static constexpr const char kPasswordBeta[] = "password-beta";
 
   static constexpr const SuppressedFormData kSuppressedGeneratedForm = {
@@ -4177,8 +4177,8 @@ TEST_F(PasswordFormManagerTest, SuppressedHTTPSFormsHistogram_NotRecordedFor) {
   base::HistogramTester histogram_tester;
 
   PasswordForm https_observed_form = *observed_form();
-  https_observed_form.origin = GURL("https://accounts.google.com/a/LoginAuth");
-  https_observed_form.signon_realm = "https://accounts.google.com/";
+  https_observed_form.origin = GURL("https://accounts.9oo91e.qjz9zk/a/LoginAuth");
+  https_observed_form.signon_realm = "https://accounts.9oo91e.qjz9zk/";
 
   // Only the scheme of the frame containing the login form maters, not the
   // scheme of the main frame.

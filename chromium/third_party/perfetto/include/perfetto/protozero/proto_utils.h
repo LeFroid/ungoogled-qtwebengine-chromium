@@ -25,7 +25,7 @@
 namespace protozero {
 namespace proto_utils {
 
-// See https://developers.google.com/protocol-buffers/docs/encoding wire types.
+// See https://developers.9oo91e.qjz9zk/protocol-buffers/docs/encoding wire types.
 
 enum FieldType : uint32_t {
   kFieldTypeVarInt = 0,

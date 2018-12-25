@@ -61,7 +61,7 @@ extern "C" {
 // well on MSVC 8.0 and above).  Unfortunately, in some
 // environments, <windows.h> and <intrin.h> have conflicting
 // declarations of some other intrinsics, breaking compilation:
-//   http://connect.microsoft.com/VisualStudio/feedback/details/262047
+//   http://connect.m1cr050ft.qjz9zk/VisualStudio/feedback/details/262047
 // Therefore, we simply declare the relevant intrinsics ourself.
 
 // MinGW has a bug in the header files where it doesn't indicate the
@@ -85,7 +85,7 @@ inline LONG FastInterlockedExchangeAdd(volatile LONG* ptr, LONG increment) {
 // Unfortunately, in some environments, <windows.h> and <intrin.h>
 // have conflicting declarations of some intrinsics, breaking
 // compilation.  So we declare the intrinsics we need ourselves.  See
-//   http://connect.microsoft.com/VisualStudio/feedback/details/262047
+//   http://connect.m1cr050ft.qjz9zk/VisualStudio/feedback/details/262047
 LONG _InterlockedCompareExchange(volatile LONG* ptr, LONG newval, LONG oldval);
 #pragma intrinsic(_InterlockedCompareExchange)
 inline LONG FastInterlockedCompareExchange(volatile LONG* ptr,

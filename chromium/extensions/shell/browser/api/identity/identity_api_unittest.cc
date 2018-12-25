@@ -63,9 +63,9 @@ class IdentityApiTest : public ApiUnitTest {
   void SetUp() override {
     ApiUnitTest::SetUp();
     DictionaryBuilder oauth2;
-    oauth2.Set("client_id", "123456.apps.googleusercontent.com")
+    oauth2.Set("client_id", "123456.apps.9oo91eusercontent.qjz9zk")
         .Set("scopes", ListBuilder()
-                           .Append("https://www.googleapis.com/auth/drive")
+                           .Append("https://www.9oo91eapis.qjz9zk/auth/drive")
                            .Build());
     // Create an extension with OAuth2 scopes.
     set_extension(ExtensionBuilder("Test")
@@ -90,7 +90,7 @@ TEST_F(IdentityApiTest, GetAuthToken) {
   MockShellOAuth2TokenService token_service;
 
   // Simulate a refresh token being set.
-  token_service.SetRefreshToken("larry@google.com", "refresh-token");
+  token_service.SetRefreshToken("larry@9oo91e.qjz9zk", "refresh-token");
 
   // RunFunctionAndReturnValue takes ownership.
   IdentityGetAuthTokenFunction* function = new IdentityGetAuthTokenFunction;

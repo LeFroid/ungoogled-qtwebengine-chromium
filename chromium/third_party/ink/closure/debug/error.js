@@ -19,7 +19,7 @@
  * You should never need to throw goog.debug.Error(msg) directly, Error(msg) is
  * sufficient.
  *
- * @author pupius@google.com (Daniel Pupius)
+ * @author pupius@9oo91e.qjz9zk (Daniel Pupius)
  */
 
 goog.provide('goog.debug.Error');

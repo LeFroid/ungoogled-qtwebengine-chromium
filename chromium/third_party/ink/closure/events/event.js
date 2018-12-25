@@ -15,7 +15,7 @@
 /**
  * @fileoverview A base class for event objects.
  *
- * @author pupius@google.com (Daniel Pupius)
+ * @author pupius@9oo91e.qjz9zk (Daniel Pupius)
  */
 
 
@@ -54,7 +54,7 @@ goog.events.EventLike;
  * @param {string|!goog.events.EventId} type Event Type.
  * @param {Object=} opt_target Reference to the object that is the target of
  *     this event. It has to implement the {@code EventTarget} interface
- *     declared at {@link http://developer.mozilla.org/en/DOM/EventTarget}.
+ *     declared at {@link http://developer.m0z111a.qjz9zk/en/DOM/EventTarget}.
  * @constructor
  */
 goog.events.Event = function(type, opt_target) {

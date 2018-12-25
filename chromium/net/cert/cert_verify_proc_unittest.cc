@@ -762,14 +762,14 @@ TEST_P(CertVerifyProcInternalTest, GoogleDigiNotarTest) {
 
   CertVerifyResult verify_result;
   int flags = CertVerifier::VERIFY_REV_CHECKING_ENABLED;
-  int error = Verify(cert_chain.get(), "mail.google.com", flags, NULL,
+  int error = Verify(cert_chain.get(), "mail.9oo91e.qjz9zk", flags, NULL,
                      CertificateList(), &verify_result);
   EXPECT_NE(OK, error);
 
   // Now turn off revocation checking.  Certificate verification should still
   // fail.
   flags = 0;
-  error = Verify(cert_chain.get(), "mail.google.com", flags, NULL,
+  error = Verify(cert_chain.get(), "mail.9oo91e.qjz9zk", flags, NULL,
                  CertificateList(), &verify_result);
   EXPECT_NE(OK, error);
 }
@@ -1497,7 +1497,7 @@ TEST(CertVerifyProcTest, IntranetHostsRejected) {
 
 // Tests that certificates issued by Symantec's legacy infrastructure
 // are rejected according to the policies outlined in
-// https://security.googleblog.com/2017/09/chromes-plan-to-distrust-symantec.html
+// https://security.9oo91eblog.qjz9zk/2017/09/chromes-plan-to-distrust-symantec.html
 // unless the caller has explicitly disabled that enforcement.
 TEST(CertVerifyProcTest, SymantecCertsRejected) {
   constexpr SHA256HashValue kSymantecHashValue = {

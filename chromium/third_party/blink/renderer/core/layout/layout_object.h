@@ -2358,7 +2358,7 @@ class CORE_EXPORT LayoutObject : public ImageResourceObserver,
     // increase. Our measurements indicate that the size of LayoutObject and
     // subsequent classes do not impact memory or speed in a significant
     // manner. This is based on growing LayoutObject in
-    // https://codereview.chromium.org/44673003 and subsequent relaxations
+    // https://codereview.ch40m1um.qjz9zk/44673003 and subsequent relaxations
     // of the memory constraints on layout objects.
     LayoutObjectBitfields(Node* node)
         : self_needs_layout_(false),

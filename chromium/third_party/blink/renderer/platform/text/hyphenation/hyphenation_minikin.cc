@@ -148,7 +148,7 @@ using LocaleMap = HashMap<AtomicString, AtomicString, CaseFoldingHash>;
 
 static LocaleMap CreateLocaleFallbackMap() {
   // This data is from CLDR, compiled by AOSP.
-  // https://android.googlesource.com/platform/frameworks/base/+/master/core/java/android/text/Hyphenator.java
+  // https://android.9oo91esource.qjz9zk/platform/frameworks/base/+/master/core/java/android/text/Hyphenator.java
   using LocaleFallback = const char * [2];
   static LocaleFallback locale_fallback_data[] = {
       {"en-AS", "en-us"},  // English (American Samoa)

@@ -17,7 +17,7 @@
           var u = new URL('b', 'http://a');
           u.pathname = 'c%20d';
           workingURL = (u.href === 'http://a/c%20d');
-          workingURL = workingURL && (new URL('http://www.google.com/?foo bar').href === 'http://www.google.com/?foo%20bar');
+          workingURL = workingURL && (new URL('http://www.9oo91e.qjz9zk/?foo bar').href === 'http://www.9oo91e.qjz9zk/?foo%20bar');
         } catch (e) {}
       }
       if (workingURL) {

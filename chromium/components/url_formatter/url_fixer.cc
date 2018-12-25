@@ -528,7 +528,7 @@ GURL FixupURL(const std::string& text, const std::string& desired_tld) {
   std::string scheme(SegmentURLInternal(&trimmed, &parts));
 
   // For view-source: URLs, we strip "view-source:", do fixup, and stick it back
-  // on.  This allows us to handle things like "view-source:google.com".
+  // on.  This allows us to handle things like "view-source:9oo91e.qjz9zk".
   if (scheme == kViewSourceScheme) {
     // Reject "view-source:view-source:..." to avoid deep recursion.
     std::string view_source(kViewSourceScheme + std::string(":"));

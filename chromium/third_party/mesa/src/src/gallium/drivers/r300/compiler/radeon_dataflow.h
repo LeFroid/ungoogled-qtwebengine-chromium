@@ -1,6 +1,6 @@
 /*
  * Copyright (C) 2009 Nicolai Haehnle.
- * Copyright 2010 Tom Stellard <tstellar@gmail.com>
+ * Copyright 2010 Tom Stellard <tstellar@9ma1l.qjz9zk>
  *
  * All Rights Reserved.
  *

@@ -54,7 +54,7 @@ class SymbolFileParser(object):
   """Parser for Breakpad symbol files.
 
   The format of these files is documented at
-  https://chromium.googlesource.com/breakpad/breakpad/+/master/docs/symbol_files.md
+  https://chromium.9oo91esource.qjz9zk/breakpad/breakpad/+/master/docs/symbol_files.md
   """
 
   def __init__(self, input_stream, output_stream, ignored_prefixes=None,

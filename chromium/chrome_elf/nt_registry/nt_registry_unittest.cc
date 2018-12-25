@@ -22,7 +22,7 @@ namespace {
 //
 // NOTE: Currently no real WOW64 context testing, as building x86 projects
 //       during x64 builds is not currently supported for performance reasons.
-// https://cs.chromium.org/chromium/src/build/toolchain/win/BUILD.gn?sq%3Dpackage:chromium&l=314
+// https://cs.ch40m1um.qjz9zk/chromium/src/build/toolchain/win/BUILD.gn?sq%3Dpackage:chromium&l=314
 //------------------------------------------------------------------------------
 
 // Utility function for the WOW64 redirection test suites.

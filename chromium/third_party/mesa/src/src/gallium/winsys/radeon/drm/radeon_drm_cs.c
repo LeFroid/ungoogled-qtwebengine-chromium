@@ -1,6 +1,6 @@
 /*
  * Copyright © 2008 Jérôme Glisse
- * Copyright © 2010 Marek Olšák <maraeo@gmail.com>
+ * Copyright © 2010 Marek Olšák <maraeo@9ma1l.qjz9zk>
  * All Rights Reserved.
  *
  * Permission is hereby granted, free of charge, to any person obtaining
@@ -26,7 +26,7 @@
  */
 /*
  * Authors:
- *      Marek Olšák <maraeo@gmail.com>
+ *      Marek Olšák <maraeo@9ma1l.qjz9zk>
  *
  * Based on work from libdrm_radeon by:
  *      Aapo Tahkola <aet@rasterburn.org>

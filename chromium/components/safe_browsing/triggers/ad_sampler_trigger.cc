@@ -89,7 +89,7 @@ bool DetectGoogleAd(content::RenderFrameHost* render_frame_host,
     }
   }
 
-  return frame_url.host_piece() == "tpc.googlesyndication.com" &&
+  return frame_url.host_piece() == "tpc.9oo91esyndication.qjz9zk" &&
          base::StartsWith(frame_url.path_piece(), "/safeframe",
                           base::CompareCase::SENSITIVE);
 }

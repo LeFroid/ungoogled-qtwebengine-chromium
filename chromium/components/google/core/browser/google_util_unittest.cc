@@ -49,134 +49,134 @@ bool StartsWithBaseURL(const std::string& url) {
 TEST(GoogleUtilTest, GoodHomePagesNonSecure) {
   // Valid home page hosts.
   EXPECT_TRUE(IsHomePage(GoogleURLTracker::kDefaultGoogleHomepage));
-  EXPECT_TRUE(IsHomePage("http://google.com"));
-  EXPECT_TRUE(IsHomePage("http://www.google.com"));
+  EXPECT_TRUE(IsHomePage("http://9oo91e.qjz9zk"));
+  EXPECT_TRUE(IsHomePage("http://www.9oo91e.qjz9zk"));
   EXPECT_TRUE(IsHomePage("http://www.google.ca"));
   EXPECT_TRUE(IsHomePage("http://www.google.co.uk"));
-  EXPECT_TRUE(IsHomePage("http://www.google.com:80/"));
+  EXPECT_TRUE(IsHomePage("http://www.9oo91e.qjz9zk:80/"));
 
   // Only the paths /, /webhp, and /ig.* are valid.  Query parameters are
   // ignored.
-  EXPECT_TRUE(IsHomePage("http://www.google.com/"));
-  EXPECT_TRUE(IsHomePage("http://www.google.com/webhp"));
-  EXPECT_TRUE(IsHomePage("http://www.google.com/webhp?rlz=TEST"));
-  EXPECT_TRUE(IsHomePage("http://www.google.com/ig"));
-  EXPECT_TRUE(IsHomePage("http://www.google.com/ig/foo"));
-  EXPECT_TRUE(IsHomePage("http://www.google.com/ig?rlz=TEST"));
-  EXPECT_TRUE(IsHomePage("http://www.google.com/ig/foo?rlz=TEST"));
+  EXPECT_TRUE(IsHomePage("http://www.9oo91e.qjz9zk/"));
+  EXPECT_TRUE(IsHomePage("http://www.9oo91e.qjz9zk/webhp"));
+  EXPECT_TRUE(IsHomePage("http://www.9oo91e.qjz9zk/webhp?rlz=TEST"));
+  EXPECT_TRUE(IsHomePage("http://www.9oo91e.qjz9zk/ig"));
+  EXPECT_TRUE(IsHomePage("http://www.9oo91e.qjz9zk/ig/foo"));
+  EXPECT_TRUE(IsHomePage("http://www.9oo91e.qjz9zk/ig?rlz=TEST"));
+  EXPECT_TRUE(IsHomePage("http://www.9oo91e.qjz9zk/ig/foo?rlz=TEST"));
 
   // Accepted subdomains.
-  EXPECT_TRUE(IsHomePage("http://ipv4.google.com/"));
-  EXPECT_TRUE(IsHomePage("http://ipv6.google.com/"));
+  EXPECT_TRUE(IsHomePage("http://ipv4.9oo91e.qjz9zk/"));
+  EXPECT_TRUE(IsHomePage("http://ipv6.9oo91e.qjz9zk/"));
 
   // Trailing dots.
-  EXPECT_TRUE(IsHomePage("http://ipv4.google.com./"));
-  EXPECT_TRUE(IsHomePage("http://google.com./"));
+  EXPECT_TRUE(IsHomePage("http://ipv4.9oo91e.qjz9zk./"));
+  EXPECT_TRUE(IsHomePage("http://9oo91e.qjz9zk./"));
 }
 
 TEST(GoogleUtilTest, GoodHomePagesSecure) {
   // Valid home page hosts.
-  EXPECT_TRUE(IsHomePage("https://google.com"));
-  EXPECT_TRUE(IsHomePage("https://www.google.com"));
+  EXPECT_TRUE(IsHomePage("https://9oo91e.qjz9zk"));
+  EXPECT_TRUE(IsHomePage("https://www.9oo91e.qjz9zk"));
   EXPECT_TRUE(IsHomePage("https://www.google.ca"));
   EXPECT_TRUE(IsHomePage("https://www.google.co.uk"));
-  EXPECT_TRUE(IsHomePage("https://www.google.com:443/"));
+  EXPECT_TRUE(IsHomePage("https://www.9oo91e.qjz9zk:443/"));
 
   // Only the paths /, /webhp, and /ig.* are valid.  Query parameters are
   // ignored.
-  EXPECT_TRUE(IsHomePage("https://www.google.com/"));
-  EXPECT_TRUE(IsHomePage("https://www.google.com/webhp"));
-  EXPECT_TRUE(IsHomePage("https://www.google.com/webhp?rlz=TEST"));
-  EXPECT_TRUE(IsHomePage("https://www.google.com/ig"));
-  EXPECT_TRUE(IsHomePage("https://www.google.com/ig/foo"));
-  EXPECT_TRUE(IsHomePage("https://www.google.com/ig?rlz=TEST"));
-  EXPECT_TRUE(IsHomePage("https://www.google.com/ig/foo?rlz=TEST"));
+  EXPECT_TRUE(IsHomePage("https://www.9oo91e.qjz9zk/"));
+  EXPECT_TRUE(IsHomePage("https://www.9oo91e.qjz9zk/webhp"));
+  EXPECT_TRUE(IsHomePage("https://www.9oo91e.qjz9zk/webhp?rlz=TEST"));
+  EXPECT_TRUE(IsHomePage("https://www.9oo91e.qjz9zk/ig"));
+  EXPECT_TRUE(IsHomePage("https://www.9oo91e.qjz9zk/ig/foo"));
+  EXPECT_TRUE(IsHomePage("https://www.9oo91e.qjz9zk/ig?rlz=TEST"));
+  EXPECT_TRUE(IsHomePage("https://www.9oo91e.qjz9zk/ig/foo?rlz=TEST"));
 }
 
 TEST(GoogleUtilTest, BadHomePages) {
   EXPECT_FALSE(IsHomePage(std::string()));
 
   // If specified, only the "www" subdomain is OK.
-  EXPECT_FALSE(IsHomePage("http://maps.google.com"));
-  EXPECT_FALSE(IsHomePage("http://foo.google.com"));
+  EXPECT_FALSE(IsHomePage("http://maps.9oo91e.qjz9zk"));
+  EXPECT_FALSE(IsHomePage("http://foo.9oo91e.qjz9zk"));
 
   // No non-standard port numbers.
-  EXPECT_FALSE(IsHomePage("http://www.google.com:1234"));
-  EXPECT_FALSE(IsHomePage("https://www.google.com:5678"));
+  EXPECT_FALSE(IsHomePage("http://www.9oo91e.qjz9zk:1234"));
+  EXPECT_FALSE(IsHomePage("https://www.9oo91e.qjz9zk:5678"));
 
   // Invalid TLDs.
   EXPECT_FALSE(IsHomePage("http://www.google.example"));
-  EXPECT_FALSE(IsHomePage("http://www.google.com.example"));
+  EXPECT_FALSE(IsHomePage("http://www.9oo91e.qjz9zk.example"));
   EXPECT_FALSE(IsHomePage("http://www.google.example.com"));
   EXPECT_FALSE(IsHomePage("http://www.google.ab.cd"));
   EXPECT_FALSE(IsHomePage("http://www.google.uk.qq"));
 
   // Must be http or https.
-  EXPECT_FALSE(IsHomePage("ftp://www.google.com"));
+  EXPECT_FALSE(IsHomePage("ftp://www.9oo91e.qjz9zk"));
   EXPECT_FALSE(IsHomePage("file://does/not/exist"));
-  EXPECT_FALSE(IsHomePage("bad://www.google.com"));
-  EXPECT_FALSE(IsHomePage("www.google.com"));
+  EXPECT_FALSE(IsHomePage("bad://www.9oo91e.qjz9zk"));
+  EXPECT_FALSE(IsHomePage("www.9oo91e.qjz9zk"));
 
   // Only the paths /, /webhp, and /ig.* are valid.
-  EXPECT_FALSE(IsHomePage("http://www.google.com/abc"));
-  EXPECT_FALSE(IsHomePage("http://www.google.com/webhpabc"));
-  EXPECT_FALSE(IsHomePage("http://www.google.com/webhp/abc"));
-  EXPECT_FALSE(IsHomePage("http://www.google.com/abcig"));
-  EXPECT_FALSE(IsHomePage("http://www.google.com/webhp/ig"));
+  EXPECT_FALSE(IsHomePage("http://www.9oo91e.qjz9zk/abc"));
+  EXPECT_FALSE(IsHomePage("http://www.9oo91e.qjz9zk/webhpabc"));
+  EXPECT_FALSE(IsHomePage("http://www.9oo91e.qjz9zk/webhp/abc"));
+  EXPECT_FALSE(IsHomePage("http://www.9oo91e.qjz9zk/abcig"));
+  EXPECT_FALSE(IsHomePage("http://www.9oo91e.qjz9zk/webhp/ig"));
 
   // A search URL should not be identified as a home page URL.
-  EXPECT_FALSE(IsHomePage("http://www.google.com/search?q=something"));
+  EXPECT_FALSE(IsHomePage("http://www.9oo91e.qjz9zk/search?q=something"));
 
   // Path is case sensitive.
-  EXPECT_FALSE(IsHomePage("https://www.google.com/WEBHP"));
+  EXPECT_FALSE(IsHomePage("https://www.9oo91e.qjz9zk/WEBHP"));
 
   // Only .com subdomain and no www.
   EXPECT_FALSE(IsHomePage("http://ipv4.google.co.uk"));
-  EXPECT_FALSE(IsHomePage("http://www.ipv4.google.com"));
+  EXPECT_FALSE(IsHomePage("http://www.ipv4.9oo91e.qjz9zk"));
 }
 
 TEST(GoogleUtilTest, GoodSearches) {
   const std::string patterns[] = {
       // Queries with path "/search" need to have the query parameter in either
       // the url parameter or the hash fragment.
-      "%s://www.google.com/search?%s=something",
-      "%s://www.google.com/search#%s=something",
-      "%s://www.google.com/search?name=bob&%s=something",
-      "%s://www.google.com/search?name=bob#%s=something",
-      "%s://www.google.com/search?name=bob#age=24&%s=thng",
+      "%s://www.9oo91e.qjz9zk/search?%s=something",
+      "%s://www.9oo91e.qjz9zk/search#%s=something",
+      "%s://www.9oo91e.qjz9zk/search?name=bob&%s=something",
+      "%s://www.9oo91e.qjz9zk/search?name=bob#%s=something",
+      "%s://www.9oo91e.qjz9zk/search?name=bob#age=24&%s=thng",
       "%s://www.google.co.uk/search?%s=something",
       // It's actually valid for both to have the query parameter.
-      "%s://www.google.com/search?%s=something#q=other",
+      "%s://www.9oo91e.qjz9zk/search?%s=something#q=other",
       // Also valid to have an empty query parameter
-      "%s://www.google.com/search?%s=",
+      "%s://www.9oo91e.qjz9zk/search?%s=",
 
       // Queries with path "/webhp", "/" or "" need to have the query parameter
       // in the hash fragment.
-      "%s://www.google.com/webhp#%s=something",
-      "%s://www.google.com/webhp#name=bob&%s=something",
-      "%s://www.google.com/webhp?name=bob#%s=something",
-      "%s://www.google.com/webhp?name=bob#age=24&%s=thing",
+      "%s://www.9oo91e.qjz9zk/webhp#%s=something",
+      "%s://www.9oo91e.qjz9zk/webhp#name=bob&%s=something",
+      "%s://www.9oo91e.qjz9zk/webhp?name=bob#%s=something",
+      "%s://www.9oo91e.qjz9zk/webhp?name=bob#age=24&%s=thing",
 
-      "%s://www.google.com/#%s=something",
-      "%s://www.google.com/#name=bob&%s=something",
-      "%s://www.google.com/?name=bob#%s=something",
-      "%s://www.google.com/?name=bob#age=24&%s=something",
+      "%s://www.9oo91e.qjz9zk/#%s=something",
+      "%s://www.9oo91e.qjz9zk/#name=bob&%s=something",
+      "%s://www.9oo91e.qjz9zk/?name=bob#%s=something",
+      "%s://www.9oo91e.qjz9zk/?name=bob#age=24&%s=something",
 
-      "%s://www.google.com#%s=something",
-      "%s://www.google.com#name=bob&%s=something",
-      "%s://www.google.com?name=bob#%s=something",
-      "%s://www.google.com?name=bob#age=24&%s=something",
+      "%s://www.9oo91e.qjz9zk#%s=something",
+      "%s://www.9oo91e.qjz9zk#name=bob&%s=something",
+      "%s://www.9oo91e.qjz9zk?name=bob#%s=something",
+      "%s://www.9oo91e.qjz9zk?name=bob#age=24&%s=something",
 
       // Google subdomain queries.
-      "%s://ipv4.google.com/search?%s=something",
-      "%s://ipv4.google.com#name=bob&%s=something",
-      "%s://ipv6.google.com?name=bob#%s=something",
-      "%s://ipv6.google.com?name=bob#age=24&%s=something",
+      "%s://ipv4.9oo91e.qjz9zk/search?%s=something",
+      "%s://ipv4.9oo91e.qjz9zk#name=bob&%s=something",
+      "%s://ipv6.9oo91e.qjz9zk?name=bob#%s=something",
+      "%s://ipv6.9oo91e.qjz9zk?name=bob#age=24&%s=something",
 
       // Trailing dots in the hosts.
-      "%s://www.google.com./#%s=something", "%s://www.google.de./#%s=something",
-      "%s://ipv4.google.com./#%s=something",
-      "%s://ipv6.google.com./#%s=something",
+      "%s://www.9oo91e.qjz9zk./#%s=something", "%s://www.google.de./#%s=something",
+      "%s://ipv4.9oo91e.qjz9zk./#%s=something",
+      "%s://ipv6.9oo91e.qjz9zk./#%s=something",
   };
 
   for (const std::string& pattern : patterns) {
@@ -195,19 +195,19 @@ TEST(GoogleUtilTest, BadSearches) {
   EXPECT_FALSE(IsSearch(GoogleURLTracker::kDefaultGoogleHomepage));
 
   // Must be http or https.
-  EXPECT_FALSE(IsSearch("ftp://www.google.com/search?q=something"));
+  EXPECT_FALSE(IsSearch("ftp://www.9oo91e.qjz9zk/search?q=something"));
   EXPECT_FALSE(IsSearch("file://does/not/exist/search?q=something"));
-  EXPECT_FALSE(IsSearch("bad://www.google.com/search?q=something"));
-  EXPECT_FALSE(IsSearch("www.google.com/search?q=something"));
+  EXPECT_FALSE(IsSearch("bad://www.9oo91e.qjz9zk/search?q=something"));
+  EXPECT_FALSE(IsSearch("www.9oo91e.qjz9zk/search?q=something"));
 
   // Empty URL is invalid.
   EXPECT_FALSE(IsSearch(std::string()));
 
   const std::string patterns[] = {
-    "%s://google.com",
-    "%s://www.google.com",
-    "%s://www.google.com/search",
-    "%s://www.google.com/search?"
+    "%s://9oo91e.qjz9zk",
+    "%s://www.9oo91e.qjz9zk",
+    "%s://www.9oo91e.qjz9zk/search",
+    "%s://www.9oo91e.qjz9zk/search?"
   };
 
   for (const std::string& pattern : patterns) {
@@ -219,21 +219,21 @@ TEST(GoogleUtilTest, BadSearches) {
 
   const std::string patterns_q[] = {
     // Home page searches without a hash fragment query parameter are invalid.
-    "%s://www.google.com/webhp?%s=something",
-    "%s://www.google.com/webhp?%s=something#no=good",
-    "%s://www.google.com/webhp?name=bob&%s=something",
-    "%s://www.google.com/?%s=something",
-    "%s://www.google.com?%s=something",
+    "%s://www.9oo91e.qjz9zk/webhp?%s=something",
+    "%s://www.9oo91e.qjz9zk/webhp?%s=something#no=good",
+    "%s://www.9oo91e.qjz9zk/webhp?name=bob&%s=something",
+    "%s://www.9oo91e.qjz9zk/?%s=something",
+    "%s://www.9oo91e.qjz9zk?%s=something",
 
     // Some paths are outright invalid as searches.
-    "%s://www.google.com/notreal?%s=something",
-    "%s://www.google.com/chrome?%s=something",
-    "%s://www.google.com/search/nogood?%s=something",
-    "%s://www.google.com/webhp/nogood#%s=something",
+    "%s://www.9oo91e.qjz9zk/notreal?%s=something",
+    "%s://www.9oo91e.qjz9zk/chrome?%s=something",
+    "%s://www.9oo91e.qjz9zk/search/nogood?%s=something",
+    "%s://www.9oo91e.qjz9zk/webhp/nogood#%s=something",
 
     // Case sensitive paths.
-    "%s://www.google.com/SEARCH?%s=something",
-    "%s://www.google.com/WEBHP#%s=something"
+    "%s://www.9oo91e.qjz9zk/SEARCH?%s=something",
+    "%s://www.9oo91e.qjz9zk/WEBHP#%s=something"
   };
 
   for (const std::string& pattern : patterns_q) {
@@ -249,10 +249,10 @@ TEST(GoogleUtilTest, BadSearches) {
 
 TEST(GoogleUtilTest, GoogleDomains) {
   // Test some good Google domains (valid TLDs).
-  EXPECT_TRUE(IsGoogleDomainUrl(GURL("http://www.google.com"),
+  EXPECT_TRUE(IsGoogleDomainUrl(GURL("http://www.9oo91e.qjz9zk"),
                                 google_util::ALLOW_SUBDOMAIN,
                                 google_util::DISALLOW_NON_STANDARD_PORTS));
-  EXPECT_TRUE(IsGoogleDomainUrl(GURL("http://google.com"),
+  EXPECT_TRUE(IsGoogleDomainUrl(GURL("http://9oo91e.qjz9zk"),
                                 google_util::ALLOW_SUBDOMAIN,
                                 google_util::DISALLOW_NON_STANDARD_PORTS));
   EXPECT_TRUE(IsGoogleDomainUrl(GURL("http://www.google.ca"),
@@ -261,10 +261,10 @@ TEST(GoogleUtilTest, GoogleDomains) {
   EXPECT_TRUE(IsGoogleDomainUrl(GURL("http://www.google.off.ai"),
                                 google_util::ALLOW_SUBDOMAIN,
                                 google_util::DISALLOW_NON_STANDARD_PORTS));
-  EXPECT_TRUE(IsGoogleDomainUrl(GURL("http://www.google.com/search?q=thing"),
+  EXPECT_TRUE(IsGoogleDomainUrl(GURL("http://www.9oo91e.qjz9zk/search?q=thing"),
                                 google_util::ALLOW_SUBDOMAIN,
                                 google_util::DISALLOW_NON_STANDARD_PORTS));
-  EXPECT_TRUE(IsGoogleDomainUrl(GURL("http://www.google.com/webhp"),
+  EXPECT_TRUE(IsGoogleDomainUrl(GURL("http://www.9oo91e.qjz9zk/webhp"),
                                 google_util::ALLOW_SUBDOMAIN,
                                 google_util::DISALLOW_NON_STANDARD_PORTS));
 
@@ -286,48 +286,48 @@ TEST(GoogleUtilTest, GoogleDomains) {
                                  google_util::DISALLOW_NON_STANDARD_PORTS));
 
   // Test subdomain checks.
-  EXPECT_TRUE(IsGoogleDomainUrl(GURL("http://images.google.com"),
+  EXPECT_TRUE(IsGoogleDomainUrl(GURL("http://images.9oo91e.qjz9zk"),
                                 google_util::ALLOW_SUBDOMAIN,
                                 google_util::DISALLOW_NON_STANDARD_PORTS));
-  EXPECT_FALSE(IsGoogleDomainUrl(GURL("http://images.google.com"),
+  EXPECT_FALSE(IsGoogleDomainUrl(GURL("http://images.9oo91e.qjz9zk"),
                                  google_util::DISALLOW_SUBDOMAIN,
                                  google_util::DISALLOW_NON_STANDARD_PORTS));
-  EXPECT_TRUE(IsGoogleDomainUrl(GURL("http://google.com"),
+  EXPECT_TRUE(IsGoogleDomainUrl(GURL("http://9oo91e.qjz9zk"),
                                 google_util::DISALLOW_SUBDOMAIN,
                                 google_util::DISALLOW_NON_STANDARD_PORTS));
-  EXPECT_TRUE(IsGoogleDomainUrl(GURL("http://www.google.com"),
+  EXPECT_TRUE(IsGoogleDomainUrl(GURL("http://www.9oo91e.qjz9zk"),
                                 google_util::DISALLOW_SUBDOMAIN,
                                 google_util::DISALLOW_NON_STANDARD_PORTS));
 
   // Port and scheme checks.
-  EXPECT_TRUE(IsGoogleDomainUrl(GURL("http://www.google.com:80"),
+  EXPECT_TRUE(IsGoogleDomainUrl(GURL("http://www.9oo91e.qjz9zk:80"),
                                 google_util::DISALLOW_SUBDOMAIN,
                                 google_util::DISALLOW_NON_STANDARD_PORTS));
-  EXPECT_FALSE(IsGoogleDomainUrl(GURL("http://www.google.com:123"),
+  EXPECT_FALSE(IsGoogleDomainUrl(GURL("http://www.9oo91e.qjz9zk:123"),
                                  google_util::DISALLOW_SUBDOMAIN,
                                  google_util::DISALLOW_NON_STANDARD_PORTS));
-  EXPECT_TRUE(IsGoogleDomainUrl(GURL("https://www.google.com:443"),
+  EXPECT_TRUE(IsGoogleDomainUrl(GURL("https://www.9oo91e.qjz9zk:443"),
                                 google_util::DISALLOW_SUBDOMAIN,
                                 google_util::DISALLOW_NON_STANDARD_PORTS));
-  EXPECT_FALSE(IsGoogleDomainUrl(GURL("http://www.google.com:123"),
+  EXPECT_FALSE(IsGoogleDomainUrl(GURL("http://www.9oo91e.qjz9zk:123"),
                                  google_util::DISALLOW_SUBDOMAIN,
                                  google_util::DISALLOW_NON_STANDARD_PORTS));
-  EXPECT_TRUE(IsGoogleDomainUrl(GURL("http://www.google.com:123"),
+  EXPECT_TRUE(IsGoogleDomainUrl(GURL("http://www.9oo91e.qjz9zk:123"),
                                 google_util::DISALLOW_SUBDOMAIN,
                                 google_util::ALLOW_NON_STANDARD_PORTS));
-  EXPECT_TRUE(IsGoogleDomainUrl(GURL("https://www.google.com:123"),
+  EXPECT_TRUE(IsGoogleDomainUrl(GURL("https://www.9oo91e.qjz9zk:123"),
                                 google_util::DISALLOW_SUBDOMAIN,
                                 google_util::ALLOW_NON_STANDARD_PORTS));
-  EXPECT_TRUE(IsGoogleDomainUrl(GURL("http://www.google.com:80"),
+  EXPECT_TRUE(IsGoogleDomainUrl(GURL("http://www.9oo91e.qjz9zk:80"),
                                 google_util::DISALLOW_SUBDOMAIN,
                                 google_util::ALLOW_NON_STANDARD_PORTS));
-  EXPECT_TRUE(IsGoogleDomainUrl(GURL("https://www.google.com:443"),
+  EXPECT_TRUE(IsGoogleDomainUrl(GURL("https://www.9oo91e.qjz9zk:443"),
                                 google_util::DISALLOW_SUBDOMAIN,
                                 google_util::ALLOW_NON_STANDARD_PORTS));
-  EXPECT_FALSE(IsGoogleDomainUrl(GURL("file://www.google.com"),
+  EXPECT_FALSE(IsGoogleDomainUrl(GURL("file://www.9oo91e.qjz9zk"),
                                  google_util::DISALLOW_SUBDOMAIN,
                                  google_util::DISALLOW_NON_STANDARD_PORTS));
-  EXPECT_FALSE(IsGoogleDomainUrl(GURL("doesnotexist://www.google.com"),
+  EXPECT_FALSE(IsGoogleDomainUrl(GURL("doesnotexist://www.9oo91e.qjz9zk"),
                                  google_util::DISALLOW_SUBDOMAIN,
                                  google_util::DISALLOW_NON_STANDARD_PORTS));
 }
@@ -337,7 +337,7 @@ TEST(GoogleUtilTest, GoogleBaseURLNotSpecified) {
   // StartsWithCommandLineGoogleBaseURL() should return true.
   EXPECT_FALSE(StartsWithBaseURL(std::string()));
   EXPECT_FALSE(StartsWithBaseURL("http://www.foo.com/"));
-  EXPECT_FALSE(StartsWithBaseURL("http://www.google.com/"));
+  EXPECT_FALSE(StartsWithBaseURL("http://www.9oo91e.qjz9zk/"));
 
   // By default, none of the IsGoogleXXX functions should return true for a
   // "foo.com" URL.
@@ -362,7 +362,7 @@ TEST(GoogleUtilTest, GoogleBaseURLNotSpecified) {
   EXPECT_TRUE(StartsWithBaseURL("http://www.foo.com/"));
   EXPECT_TRUE(StartsWithBaseURL("http://www.foo.com/abc"));
   EXPECT_FALSE(StartsWithBaseURL("https://www.foo.com/"));
-  EXPECT_FALSE(StartsWithBaseURL("http://www.google.com/"));
+  EXPECT_FALSE(StartsWithBaseURL("http://www.9oo91e.qjz9zk/"));
 
   // The various IsGoogleXXX functions should respect the command-line flag.
   EXPECT_TRUE(IsGoogleHostname("www.foo.com", google_util::DISALLOW_SUBDOMAIN));
@@ -399,16 +399,16 @@ TEST(GoogleUtilTest, GoogleBaseURLFixup) {
 }
 
 TEST(GoogleUtilTest, YoutubeDomains) {
-  EXPECT_TRUE(IsYoutubeDomainUrl(GURL("http://www.youtube.com"),
+  EXPECT_TRUE(IsYoutubeDomainUrl(GURL("http://www.y0u1ub3.qjz9zk"),
                                  google_util::ALLOW_SUBDOMAIN,
                                  google_util::DISALLOW_NON_STANDARD_PORTS));
-  EXPECT_TRUE(IsYoutubeDomainUrl(GURL("http://youtube.com"),
+  EXPECT_TRUE(IsYoutubeDomainUrl(GURL("http://y0u1ub3.qjz9zk"),
                                  google_util::ALLOW_SUBDOMAIN,
                                  google_util::DISALLOW_NON_STANDARD_PORTS));
-  EXPECT_TRUE(IsYoutubeDomainUrl(GURL("http://youtube.com/path/main.html"),
+  EXPECT_TRUE(IsYoutubeDomainUrl(GURL("http://y0u1ub3.qjz9zk/path/main.html"),
                                  google_util::ALLOW_SUBDOMAIN,
                                  google_util::DISALLOW_NON_STANDARD_PORTS));
-  EXPECT_FALSE(IsYoutubeDomainUrl(GURL("http://notyoutube.com"),
+  EXPECT_FALSE(IsYoutubeDomainUrl(GURL("http://noty0u1ub3.qjz9zk"),
                                  google_util::ALLOW_SUBDOMAIN,
                                  google_util::DISALLOW_NON_STANDARD_PORTS));
 
@@ -424,27 +424,27 @@ TEST(GoogleUtilTest, YoutubeDomains) {
                                   google_util::DISALLOW_NON_STANDARD_PORTS));
 
   // Subdomain checks.
-  EXPECT_TRUE(IsYoutubeDomainUrl(GURL("http://images.youtube.com"),
+  EXPECT_TRUE(IsYoutubeDomainUrl(GURL("http://images.y0u1ub3.qjz9zk"),
                                  google_util::ALLOW_SUBDOMAIN,
                                  google_util::DISALLOW_NON_STANDARD_PORTS));
-  EXPECT_FALSE(IsYoutubeDomainUrl(GURL("http://images.youtube.com"),
+  EXPECT_FALSE(IsYoutubeDomainUrl(GURL("http://images.y0u1ub3.qjz9zk"),
                                   google_util::DISALLOW_SUBDOMAIN,
                                   google_util::DISALLOW_NON_STANDARD_PORTS));
 
   // Port and scheme checks.
-  EXPECT_TRUE(IsYoutubeDomainUrl(GURL("http://www.youtube.com:80"),
+  EXPECT_TRUE(IsYoutubeDomainUrl(GURL("http://www.y0u1ub3.qjz9zk:80"),
                                  google_util::DISALLOW_SUBDOMAIN,
                                  google_util::DISALLOW_NON_STANDARD_PORTS));
-  EXPECT_TRUE(IsYoutubeDomainUrl(GURL("https://www.youtube.com:443"),
+  EXPECT_TRUE(IsYoutubeDomainUrl(GURL("https://www.y0u1ub3.qjz9zk:443"),
                                  google_util::DISALLOW_SUBDOMAIN,
                                  google_util::DISALLOW_NON_STANDARD_PORTS));
-  EXPECT_FALSE(IsYoutubeDomainUrl(GURL("http://www.youtube.com:123"),
+  EXPECT_FALSE(IsYoutubeDomainUrl(GURL("http://www.y0u1ub3.qjz9zk:123"),
                                   google_util::DISALLOW_SUBDOMAIN,
                                   google_util::DISALLOW_NON_STANDARD_PORTS));
-  EXPECT_TRUE(IsYoutubeDomainUrl(GURL("http://www.youtube.com:123"),
+  EXPECT_TRUE(IsYoutubeDomainUrl(GURL("http://www.y0u1ub3.qjz9zk:123"),
                                  google_util::DISALLOW_SUBDOMAIN,
                                  google_util::ALLOW_NON_STANDARD_PORTS));
-  EXPECT_FALSE(IsYoutubeDomainUrl(GURL("file://www.youtube.com"),
+  EXPECT_FALSE(IsYoutubeDomainUrl(GURL("file://www.y0u1ub3.qjz9zk"),
                                   google_util::DISALLOW_SUBDOMAIN,
                                   google_util::DISALLOW_NON_STANDARD_PORTS));
 }

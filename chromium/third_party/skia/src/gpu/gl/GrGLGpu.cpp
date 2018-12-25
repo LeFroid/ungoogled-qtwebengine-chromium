@@ -2551,7 +2551,7 @@ void GrGLGpu::flushBlend(const GrXferProcessor::BlendInfo& blendInfo, const GrSw
             GL_CALL(Disable(GR_GL_BLEND));
 
             // Workaround for the ARM KHR_blend_equation_advanced blacklist issue
-            // https://code.google.com/p/skia/issues/detail?id=3943
+            // https://code.9oo91e.qjz9zk/p/skia/issues/detail?id=3943
             if (kARM_GrGLVendor == this->ctxInfo().vendor() &&
                 GrBlendEquationIsAdvanced(fHWBlendState.fEquation)) {
                 SkASSERT(this->caps()->advancedBlendEquationSupport());

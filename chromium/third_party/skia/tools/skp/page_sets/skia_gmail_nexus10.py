@@ -37,7 +37,7 @@ class SkiaGmailNexus10PageSet(story.StorySet):
 
     urls_list = [
       # Why: productivity, top google properties
-      'https://mail.google.com/mail/',
+      'https://mail.9oo91e.qjz9zk/mail/',
     ]
 
     for url in urls_list:

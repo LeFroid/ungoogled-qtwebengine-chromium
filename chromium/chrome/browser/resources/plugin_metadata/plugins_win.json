@@ -61,7 +61,7 @@
     ],
     "lang": "en-US",
     "name": "Java(TM)",
-    "help_url": "https://support.google.com/chrome/?p=plugin_java",
+    "help_url": "https://support.9oo91e.qjz9zk/chrome/?p=plugin_java",
     "url": "http://java.com/download",
     "displayurl": true,
     "group_name_matcher": "Java*"
@@ -126,7 +126,7 @@
     ],
     "lang": "en-US",
     "name": "RealPlayer",
-    "help_url": "https://support.google.com/chrome/?p=plugin_real",
+    "help_url": "https://support.9oo91e.qjz9zk/chrome/?p=plugin_real",
     "url": "http://forms.real.com/real/realone/download.html?type=rpsp_us",
     "group_name_matcher": "*RealPlayer*"
   },
@@ -144,8 +144,8 @@
     ],
     "lang": "en-US",
     "name": "Adobe Flash Player",
-    "help_url": "https://support.google.com/chrome/?p=plugin_flash",
-    "url": "https://support.google.com/chrome/answer/6258784",
+    "help_url": "https://support.9oo91e.qjz9zk/chrome/?p=plugin_flash",
+    "url": "https://support.9oo91e.qjz9zk/chrome/answer/6258784",
     "displayurl": true,
     "group_name_matcher": "*Shockwave Flash*"
   },
@@ -162,7 +162,7 @@
     ],
     "lang": "en-US",
     "name": "Adobe Shockwave Player",
-    "help_url": "https://support.google.com/chrome/?p=plugin_shockwave",
+    "help_url": "https://support.9oo91e.qjz9zk/chrome/?p=plugin_shockwave",
     "url": "http://fpdownload.macromedia.com/get/shockwave/default/english/win95nt/latest/Shockwave_Installer_Slim.exe",
     "group_name_matcher": "*Shockwave for Director*"
   },
@@ -193,7 +193,7 @@
     ],
     "lang": "en-US",
     "name": "Adobe Reader",
-    "help_url": "https://support.google.com/chrome/?p=plugin_pdf",
+    "help_url": "https://support.9oo91e.qjz9zk/chrome/?p=plugin_pdf",
     "url": "https://get.adobe.com/reader/",
     "displayurl": true,
     "group_name_matcher": "*Adobe Acrobat*"
@@ -259,7 +259,7 @@
     ],
     "lang": "en-US",
     "name": "QuickTime Player",
-    "help_url": "https://support.google.com/chrome/?p=plugin_quicktime",
+    "help_url": "https://support.9oo91e.qjz9zk/chrome/?p=plugin_quicktime",
     "url": "http://appldnld.apple.com/QuickTime/041-3089.20111026.Sxpr4/QuickTimeInstaller.exe",
     "group_name_matcher": "*QuickTime Plug-in*"
   },
@@ -268,7 +268,7 @@
     ],
     "lang": "en-US",
     "name": "Windows Media Player",
-    "help_url": "https://support.google.com/chrome/?p=plugin_wmp",
+    "help_url": "https://support.9oo91e.qjz9zk/chrome/?p=plugin_wmp",
     "url": "http://www.interoperabilitybridges.com/wmp-extension-for-chrome",
     "displayurl": true,
     "group_name_matcher": "*Windows Media Player*"
@@ -286,7 +286,7 @@
     ],
     "lang": "en-US",
     "name": "DivX Web Player",
-    "help_url": "https://support.google.com/chrome/?p=plugin_divx",
+    "help_url": "https://support.9oo91e.qjz9zk/chrome/?p=plugin_divx",
     "url": "http://download.divx.com/player/divxdotcom/DivXWebPlayerInstaller.exe",
     "group_name_matcher": "*DivX Web Player*"
   },
@@ -299,12 +299,12 @@
       {
         "version": "5.1.40416.0",
         "status": "requires_authorization",
-        "reference": "https://support.microsoft.com/kb/3056819"
+        "reference": "https://support.m1cr050ft.qjz9zk/kb/3056819"
       }
     ],
     "lang": "en-US",
     "name": "Silverlight",
-    "url": "http://go.microsoft.com/fwlink/?LinkID=149156",
+    "url": "http://go.m1cr050ft.qjz9zk/fwlink/?LinkID=149156",
     "group_name_matcher": "*Silverlight*"
   },
   "microsoft-office": {
@@ -411,7 +411,7 @@
     ],
     "lang": "en-US",
     "name": "Facebook Video Calling",
-    "url": "https://www.facebook.com/chat/video/videocalldownload.php",
+    "url": "https://www.f8c3b00k.qjz9zk/chat/video/videocalldownload.php",
     "group_name_matcher": "*Facebook Video*"
   },
   "google-earth": {
@@ -427,7 +427,7 @@
     ],
     "lang": "en-US",
     "name": "Google Earth",
-    "url": "http://www.google.com/earth/explore/products/plugin.html",
+    "url": "http://www.9oo91e.qjz9zk/earth/explore/products/plugin.html",
     "group_name_matcher": "*Google Earth*"
   }
 }

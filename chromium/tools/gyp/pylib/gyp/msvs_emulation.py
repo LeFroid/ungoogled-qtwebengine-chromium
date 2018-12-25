@@ -479,7 +479,7 @@ class MsvsSettings(object):
     if self.vs_version.project_version >= 12.0:
       # New flag introduced in VS2013 (project version 12.0) Forces writes to
       # the program database (PDB) to be serialized through MSPDBSRV.EXE.
-      # https://msdn.microsoft.com/en-us/library/dn502518.aspx
+      # https://msdn.m1cr050ft.qjz9zk/en-us/library/dn502518.aspx
       cflags.append('/FS')
     # ninja handles parallelism by itself, don't have the compiler do it too.
     cflags = filter(lambda x: not x.startswith('/MP'), cflags)

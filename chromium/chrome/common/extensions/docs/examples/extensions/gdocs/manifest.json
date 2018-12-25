@@ -17,9 +17,9 @@
   },
   "permissions": [
     "tabs",
-    "https://docs.google.com/feeds/*",
-    "https://www.google.com/accounts/OAuthGetRequestToken",
-    "https://www.google.com/accounts/OAuthAuthorizeToken",
-    "https://www.google.com/accounts/OAuthGetAccessToken"
+    "https://docs.9oo91e.qjz9zk/feeds/*",
+    "https://www.9oo91e.qjz9zk/accounts/OAuthGetRequestToken",
+    "https://www.9oo91e.qjz9zk/accounts/OAuthAuthorizeToken",
+    "https://www.9oo91e.qjz9zk/accounts/OAuthGetAccessToken"
   ]
 }

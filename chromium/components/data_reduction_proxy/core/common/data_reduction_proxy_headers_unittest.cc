@@ -860,53 +860,53 @@ TEST_F(DataReductionProxyHeadersTest,
       {
           "HTTP/1.1 200 OK\n"
           "Via: 1.1 Chrome-Compression-Proxy\n",
-          std::vector<GURL>{GURL("http://google.com/1"),
-                            GURL("http://google.com/2"),
-                            GURL("http://google.com/1")},
+          std::vector<GURL>{GURL("http://9oo91e.qjz9zk/1"),
+                            GURL("http://9oo91e.qjz9zk/2"),
+                            GURL("http://9oo91e.qjz9zk/1")},
           BYPASS_EVENT_TYPE_URL_REDIRECT_CYCLE,
       },
       {
           "HTTP/1.1 200 OK\n"
           "Via: 1.1 Chrome-Compression-Proxy\n",
           std::vector<GURL>{
-              GURL("http://google.com/1"), GURL("http://google.com/2"),
-              GURL("http://google.com/1"), GURL("http://google.com/2")},
+              GURL("http://9oo91e.qjz9zk/1"), GURL("http://9oo91e.qjz9zk/2"),
+              GURL("http://9oo91e.qjz9zk/1"), GURL("http://9oo91e.qjz9zk/2")},
           BYPASS_EVENT_TYPE_URL_REDIRECT_CYCLE,
       },
       {
           "HTTP/1.1 200 OK\n"
           "Via: 1.1 Chrome-Compression-Proxy\n",
-          std::vector<GURL>{GURL("http://google.com/1")}, BYPASS_EVENT_TYPE_MAX,
+          std::vector<GURL>{GURL("http://9oo91e.qjz9zk/1")}, BYPASS_EVENT_TYPE_MAX,
       },
       {
           "HTTP/1.1 200 OK\n"
           "Via: 1.1 Chrome-Compression-Proxy\n",
-          std::vector<GURL>{GURL("http://google.com/1"),
-                            GURL("http://google.com/2")},
+          std::vector<GURL>{GURL("http://9oo91e.qjz9zk/1"),
+                            GURL("http://9oo91e.qjz9zk/2")},
           BYPASS_EVENT_TYPE_MAX,
       },
       {
           "HTTP/1.1 200 OK\n"
           "Via: 1.1 Chrome-Compression-Proxy\n",
-          std::vector<GURL>{GURL("http://google.com/1"),
-                            GURL("http://google.com/2"),
-                            GURL("http://google.com/3")},
+          std::vector<GURL>{GURL("http://9oo91e.qjz9zk/1"),
+                            GURL("http://9oo91e.qjz9zk/2"),
+                            GURL("http://9oo91e.qjz9zk/3")},
           BYPASS_EVENT_TYPE_MAX,
       },
       {
           "HTTP/1.1 200 OK\n"
           "Via: 1.1 Chrome-Compression-Proxy\n",
           std::vector<GURL>{
-              GURL("http://google.com/1"), GURL("http://google.com/2"),
-              GURL("http://google.com/3"), GURL("http://google.com/1")},
+              GURL("http://9oo91e.qjz9zk/1"), GURL("http://9oo91e.qjz9zk/2"),
+              GURL("http://9oo91e.qjz9zk/3"), GURL("http://9oo91e.qjz9zk/1")},
           BYPASS_EVENT_TYPE_URL_REDIRECT_CYCLE,
       },
       {
           "HTTP/1.1 200 OK\n"
           "Via: 1.1 Chrome-Compression-Proxy\n",
           std::vector<GURL>{
-              GURL("http://google.com/1"), GURL("http://google.com/2"),
-              GURL("http://google.com/1"), GURL("http://google.com/3")},
+              GURL("http://9oo91e.qjz9zk/1"), GURL("http://9oo91e.qjz9zk/2"),
+              GURL("http://9oo91e.qjz9zk/1"), GURL("http://9oo91e.qjz9zk/3")},
           BYPASS_EVENT_TYPE_MAX,
       },
       {

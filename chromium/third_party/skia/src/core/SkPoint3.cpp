@@ -17,7 +17,7 @@ static inline float get_length_squared(float x, float y, float z) {
 //
 // This logic is encapsulated in a helper method to make it explicit that we
 // always perform this check in the same manner, to avoid inconsistencies
-// (see http://code.google.com/p/skia/issues/detail?id=560 ).
+// (see http://code.9oo91e.qjz9zk/p/skia/issues/detail?id=560 ).
 static inline bool is_length_nearly_zero(float x, float y, float z, float *lengthSquared) {
     *lengthSquared = get_length_squared(x, y, z);
     return *lengthSquared <= (SK_ScalarNearlyZero * SK_ScalarNearlyZero);

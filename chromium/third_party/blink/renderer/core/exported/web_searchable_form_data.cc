@@ -173,7 +173,7 @@ HTMLInputElement* FindSuitableSearchInputElement(const HTMLFormElement& form) {
 
 // Build a search string based on a given HTMLFormElement and HTMLInputElement
 //
-// Search string output example from www.google.com:
+// Search string output example from www.9oo91e.qjz9zk:
 // "hl=en&source=hp&biw=1085&bih=854&q={searchTerms}&btnG=Google+Search&aq=f&aqi=&aql=&oq="
 //
 // Return false if the provided HTMLInputElement is not found in the form

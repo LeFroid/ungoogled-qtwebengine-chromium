@@ -1,5 +1,5 @@
 /*
- * $Id: indexbox_manager.h 897 2011-08-28 21:43:57Z Kaori.Hagihara@gmail.com $
+ * $Id: indexbox_manager.h 897 2011-08-28 21:43:57Z Kaori.Hagihara@9ma1l.qjz9zk $
  *
  * Copyright (c) 2002-2014, Universite catholique de Louvain (UCL), Belgium
  * Copyright (c) 2002-2014, Professor Benoit Macq

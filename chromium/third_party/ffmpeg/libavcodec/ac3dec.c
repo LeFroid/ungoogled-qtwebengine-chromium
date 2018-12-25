@@ -4,8 +4,8 @@
  * E-AC-3 support was added as part of Google Summer of Code 2007.
  *
  * Copyright (c) 2006 Kartikey Mahendra BHATT (bhattkm at gmail dot com)
- * Copyright (c) 2007-2008 Bartlomiej Wolowiec <bartek.wolowiec@gmail.com>
- * Copyright (c) 2007 Justin Ruggles <justin.ruggles@gmail.com>
+ * Copyright (c) 2007-2008 Bartlomiej Wolowiec <bartek.wolowiec@9ma1l.qjz9zk>
+ * Copyright (c) 2007 Justin Ruggles <justin.ruggles@9ma1l.qjz9zk>
  *
  * This file is part of FFmpeg.
  *

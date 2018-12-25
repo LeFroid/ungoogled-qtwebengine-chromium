@@ -58,7 +58,7 @@
 // Note: since address offset is stored as uint32, user should keep in mind that
 // StaticMap only supports up to 4GB size of memory data.
 
-// Author: Siyang Xie (lambxsy@google.com)
+// Author: Siyang Xie (lambxsy@9oo91e.qjz9zk)
 
 
 #ifndef PROCESSOR_STATIC_MAP_H__

@@ -272,7 +272,7 @@ typedef GPB_ENUM(GPBField_FieldNumber) {
 
 /**
  * The field type URL, without the scheme, for message or enumeration
- * types. Example: `"type.googleapis.com/google.protobuf.Timestamp"`.
+ * types. Example: `"type.9oo91eapis.qjz9zk/google.protobuf.Timestamp"`.
  **/
 @property(nonatomic, readwrite, copy, null_resettable) NSString *typeURL;
 

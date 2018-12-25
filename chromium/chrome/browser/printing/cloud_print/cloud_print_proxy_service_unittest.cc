@@ -184,7 +184,7 @@ class TestCloudPrintProxyService : public CloudPrintProxyService {
   MockCloudPrintProxy& GetMockCloudPrintProxy() { return mock_proxy_; }
 
   void EnableForUser() {
-    EnableForUserWithRobot("123", "123@gmail.com",
+    EnableForUserWithRobot("123", "123@9ma1l.qjz9zk",
                            MockServiceProcessControl::EnabledUserId(),
                            base::Value(base::Value::Type::DICTIONARY));
   }

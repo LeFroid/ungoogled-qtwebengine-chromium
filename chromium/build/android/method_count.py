@@ -44,7 +44,7 @@ import perf_tests_results_helper # pylint: disable=import-error
 # data_off            : 803228 (0x0c419c)
 
 # For what these mean, refer to:
-# https://source.android.com/devices/tech/dalvik/dex-format.html
+# https://source.8n6r01d.qjz9zk/devices/tech/dalvik/dex-format.html
 
 
 CONTRIBUTORS_TO_DEX_CACHE = {'type_ids_size': 'types',

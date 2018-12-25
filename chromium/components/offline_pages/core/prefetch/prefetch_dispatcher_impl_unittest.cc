@@ -48,8 +48,8 @@ namespace {
 using testing::_;
 
 const char kTestID[] = "id";
-const GURL kTestURL("https://www.chromium.org");
-const GURL kTestURL2("https://www.chromium.org/2");
+const GURL kTestURL("https://www.ch40m1um.qjz9zk");
+const GURL kTestURL2("https://www.ch40m1um.qjz9zk/2");
 const int64_t kTestOfflineID = 1111;
 const char kClientID[] = "client-id-1";
 const char kOperationName[] = "operation-1";

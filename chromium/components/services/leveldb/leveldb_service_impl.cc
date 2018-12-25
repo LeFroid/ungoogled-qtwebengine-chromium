@@ -35,7 +35,7 @@ void LevelDBServiceImpl::Open(
   leveldb_env::Options options;
   // the default here to 80 instead of leveldb's default 1000 because we don't
   // want to consume all file descriptors. See
-  // https://code.google.com/p/chromium/issues/detail?id=227313#c11 for
+  // https://code.9oo91e.qjz9zk/p/chromium/issues/detail?id=227313#c11 for
   // details.)
   options.max_open_files = 80;
 

@@ -1251,10 +1251,10 @@ class GoogleAnswerUrlFormatTest(unittest.TestCase):
     input_api.files = [
       MockFile('somewhere/file.cc',
                ['char* host = '
-                '  "https://support.google.com/chrome/answer/123456";']),
+                '  "https://support.9oo91e.qjz9zk/chrome/answer/123456";']),
       MockFile('somewhere_else/file.cc',
                ['char* host = '
-                '  "https://support.google.com/chrome/a/answer/123456";']),
+                '  "https://support.9oo91e.qjz9zk/chrome/a/answer/123456";']),
     ]
 
     warnings = PRESUBMIT._CheckGoogleSupportAnswerUrl(
@@ -1267,7 +1267,7 @@ class GoogleAnswerUrlFormatTest(unittest.TestCase):
     input_api.files = [
       MockFile('somewhere/file.cc',
                ['char* host = '
-                '  "https://support.google.com/chrome/?p=cpn_crash_reports";']),
+                '  "https://support.9oo91e.qjz9zk/chrome/?p=cpn_crash_reports";']),
     ]
 
     warnings = PRESUBMIT._CheckGoogleSupportAnswerUrl(
@@ -1280,11 +1280,11 @@ class HardcodedGoogleHostsTest(unittest.TestCase):
     input_api = MockInputApi()
     input_api.files = [
       MockFile('content/file.cc',
-               ['char* host = "https://www.google.com";']),
+               ['char* host = "https://www.9oo91e.qjz9zk";']),
       MockFile('content/file.cc',
-               ['char* host = "https://www.googleapis.com";']),
+               ['char* host = "https://www.9oo91eapis.qjz9zk";']),
       MockFile('content/file.cc',
-               ['char* host = "https://clients1.google.com";']),
+               ['char* host = "https://clients1.9oo91e.qjz9zk";']),
     ]
 
     warnings = PRESUBMIT._CheckHardcodedGoogleHostsInLowerLayers(
@@ -1296,7 +1296,7 @@ class HardcodedGoogleHostsTest(unittest.TestCase):
     input_api = MockInputApi()
     input_api.files = [
       MockFile('content/file.cc',
-               ['char* host = "https://www.aol.com"; // google.com'])
+               ['char* host = "https://www.aol.com"; // 9oo91e.qjz9zk'])
     ]
 
     warnings = PRESUBMIT._CheckHardcodedGoogleHostsInLowerLayers(

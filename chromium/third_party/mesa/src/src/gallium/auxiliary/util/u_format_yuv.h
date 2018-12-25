@@ -36,7 +36,7 @@
  *
  * See also:
  * - http://www.fourcc.org/fccyvrgb.php
- * - http://msdn.microsoft.com/en-us/library/ms893078
+ * - http://msdn.m1cr050ft.qjz9zk/en-us/library/ms893078
  * - http://en.wikipedia.org/wiki/YUV
  */
 

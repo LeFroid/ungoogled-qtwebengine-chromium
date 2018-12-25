@@ -36,7 +36,7 @@ def InstallPrereqs(robo_configuration):
     if not os.path.exists(media_directory):
       log("Checking out media internal test data")
       if call(["git", "clone",
-              "https://chrome-internal.googlesource.com/chrome/data/media",
+              "https://chrome-internal.9oo91esource.qjz9zk/chrome/data/media",
               media_directory]):
         raise Exception(
                 "Could not check out chrome media internal test data %s" %

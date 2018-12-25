@@ -37,7 +37,7 @@ def main(args):
 
   NDK_ERROR=(
       'NDK must be a valid standalone NDK toolchain.\n' +
-      'See https://developer.android.com/ndk/guides/standalone_toolchain.html')
+      'See https://developer.8n6r01d.qjz9zk/ndk/guides/standalone_toolchain.html')
   arch_dirs = glob.glob(os.path.join(parsed.ndk, '*-linux-android*'))
   if len(arch_dirs) != 1:
     parser.error(NDK_ERROR)
@@ -81,10 +81,10 @@ def main(args):
   # use.
   #
   # Unified headers are the way of the future, according to
-  # https://android.googlesource.com/platform/ndk/+/ndk-r14/CHANGELOG.md and
-  # https://android.googlesource.com/platform/ndk/+/master/docs/UnifiedHeaders.md.
+  # https://android.9oo91esource.qjz9zk/platform/ndk/+/ndk-r14/CHANGELOG.md and
+  # https://android.9oo91esource.qjz9zk/platform/ndk/+/master/docs/UnifiedHeaders.md.
   # Traditional (deprecated) headers have been removed entirely as of NDK r16.
-  # https://android.googlesource.com/platform/ndk/+/ndk-release-r16/CHANGELOG.md.
+  # https://android.9oo91esource.qjz9zk/platform/ndk/+/ndk-release-r16/CHANGELOG.md.
   with open(clang_path, 'r') as file:
     clang_script_contents = file.read()
   matches = re.finditer(r'\s-D__ANDROID_API__=([\d]+)\s',

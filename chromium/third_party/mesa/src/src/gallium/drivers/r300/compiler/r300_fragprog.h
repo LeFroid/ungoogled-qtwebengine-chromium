@@ -28,7 +28,7 @@
 /*
  * Authors:
  *   Ben Skeggs <darktama@iinet.net.au>
- *   Jerome Glisse <j.glisse@gmail.com>
+ *   Jerome Glisse <j.glisse@9ma1l.qjz9zk>
  */
 #ifndef __R300_FRAGPROG_H_
 #define __R300_FRAGPROG_H_

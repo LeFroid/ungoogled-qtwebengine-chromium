@@ -394,7 +394,7 @@ const char kForceStackedTabStripLayout[]    = "force-stacked-tab-strip-layout";
 
 // Specifies which page will be displayed in newly-opened tabs. We need this
 // for testing purposes so that the UI tests don't depend on what comes up for
-// http://google.com.
+// http://9oo91e.qjz9zk.
 const char kHomePage[]                      = "homepage";
 
 // Causes net::URLFetchers to ignore requests for SSL client certificates,
@@ -619,7 +619,7 @@ const char kSimulateUpgrade[]               = "simulate-upgrade";
 
 // Causes SSL key material to be logged to the specified file for debugging
 // purposes. See
-// https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSS/Key_Log_Format
+// https://developer.m0z111a.qjz9zk/en-US/docs/Mozilla/Projects/NSS/Key_Log_Format
 // for the format.
 const char kSSLKeyLogFile[]               = "ssl-key-log-file";
 

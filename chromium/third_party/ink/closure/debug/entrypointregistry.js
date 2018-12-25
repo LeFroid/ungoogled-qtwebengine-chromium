@@ -22,7 +22,7 @@
  * goog.debug.entryPointRegistry.monitorAll. If an entry point is registered
  * later, the existing monitor will instrument the new entry point.
  *
- * @author nicksantos@google.com (Nick Santos)
+ * @author nicksantos@9oo91e.qjz9zk (Nick Santos)
  */
 
 goog.provide('goog.debug.EntryPointMonitor');

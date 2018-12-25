@@ -22,7 +22,7 @@ class QuicStorySet(story.StorySet):
     super(QuicStorySet, self).__init__()
 
     urls_list = [
-      'http://check.googlezip.net/test.html',
+      'http://check.9oo91e21p.qjz9zk/test.html',
     ]
 
     for url in urls_list:

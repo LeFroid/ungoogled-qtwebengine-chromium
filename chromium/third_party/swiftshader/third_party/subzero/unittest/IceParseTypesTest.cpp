@@ -70,7 +70,7 @@ TEST(NaClParseTypesTest, BadFloatTypeDefinition) {
 }
 
 // Show what happens when the count record value is way too big.
-// See: https://code.google.com/p/nativeclient/issues/detail?id=4195
+// See: https://code.9oo91e.qjz9zk/p/nativeclient/issues/detail?id=4195
 TEST(NaClParseTypesTest, BadTypeCountRecord) {
   // Index for "count 2;".
   const uint64_t CountRecordIndex = 2;

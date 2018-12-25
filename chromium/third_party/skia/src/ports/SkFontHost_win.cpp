@@ -830,7 +830,7 @@ uint16_t SkScalerContext_GDI::generateCharToGlyph(SkUnichar utf32) {
         SCRIPT_CONTROL sc;
         memset(&sc, 0, sizeof(sc));
         // Add extra item to SCRIPT_ITEM to work around a bug (now documented).
-        // https://bugzilla.mozilla.org/show_bug.cgi?id=366643
+        // https://bugzilla.m0z111a.qjz9zk/show_bug.cgi?id=366643
         SCRIPT_ITEM si[maxItems + 1];
         int numItems;
         HRZM(ScriptItemize(utf16, numWCHAR, maxItems, &sc, nullptr, si, &numItems),
@@ -2011,7 +2011,7 @@ static uint16_t nonBmpCharToGlyph(HDC hdc, SCRIPT_CACHE* scriptCache, const WCHA
     SCRIPT_CONTROL scriptControl;
     memset(&scriptControl, 0, sizeof(scriptControl));
     // Add extra item to SCRIPT_ITEM to work around a bug (now documented).
-    // https://bugzilla.mozilla.org/show_bug.cgi?id=366643
+    // https://bugzilla.m0z111a.qjz9zk/show_bug.cgi?id=366643
     SCRIPT_ITEM si[maxItems + 1];
     int numItems;
     HRZM(ScriptItemize(utf16, numWCHAR, maxItems, &scriptControl, nullptr, si, &numItems),

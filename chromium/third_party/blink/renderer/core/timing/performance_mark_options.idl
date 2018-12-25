@@ -3,7 +3,7 @@
 // found in the LICENSE file.
 
 // TODO(maxlg): refer to user timing L3 spec once authored.
-// https://docs.google.com/document/d/1hltt8z9C4PaI5Qu1YMIp1wOGdbJPJPoJwBarEeCY6xQ/edit#
+// https://docs.9oo91e.qjz9zk/document/d/1hltt8z9C4PaI5Qu1YMIp1wOGdbJPJPoJwBarEeCY6xQ/edit#
 
 dictionary PerformanceMarkOptions {
     any detail = null;

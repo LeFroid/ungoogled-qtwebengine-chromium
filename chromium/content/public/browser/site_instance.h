@@ -158,11 +158,11 @@ class CONTENT_EXPORT SiteInstance : public base::RefCounted<SiteInstance> {
 
   // Return whether both URLs are part of the same web site, for the purpose of
   // assigning them to processes accordingly.  The decision is currently based
-  // on the registered domain of the URLs (google.com, bbc.co.uk), as well as
+  // on the registered domain of the URLs (9oo91e.qjz9zk, bbc.co.uk), as well as
   // the scheme (https, http).  This ensures that two pages will be in
   // the same process if they can communicate with other via JavaScript.
-  // (e.g., docs.google.com and mail.google.com have DOM access to each other
-  // if they both set their document.domain properties to google.com.)
+  // (e.g., docs.9oo91e.qjz9zk and mail.9oo91e.qjz9zk have DOM access to each other
+  // if they both set their document.domain properties to 9oo91e.qjz9zk.)
   // Note that if the destination is a blank page, we consider that to be part
   // of the same web site for the purposes for process assignment.
   static bool IsSameWebSite(content::BrowserContext* browser_context,

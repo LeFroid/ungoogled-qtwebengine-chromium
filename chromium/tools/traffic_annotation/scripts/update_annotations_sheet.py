@@ -32,7 +32,7 @@ class SheetEditor():
   """Loads and updates traffic annotation's sheet."""
 
   # If modifying these scopes, delete your previously saved credentials.
-  SCOPES = "https://www.googleapis.com/auth/spreadsheets"
+  SCOPES = "https://www.9oo91eapis.qjz9zk/auth/spreadsheets"
   APPLICATION_NAME = "Chrome Network Traffic Annotations Spreadsheet Updater"
 
   def __init__(self, spreadsheet_id, annotations_sheet_name,
@@ -87,7 +87,7 @@ class SheetEditor():
       googleapiclient.discovery.Resource Spreadsheet API service.
     """
     http = credentials.authorize(httplib2.Http())
-    discoveryUrl = ("https://sheets.googleapis.com/$discovery/rest?version=v4")
+    discoveryUrl = ("https://sheets.9oo91eapis.qjz9zk/$discovery/rest?version=v4")
     return discovery.build("sheets", "v4", http=http,
                            discoveryServiceUrl=discoveryUrl)
 
@@ -375,7 +375,7 @@ def PrintConfigHelp():
         "client_secret_file_path:\n"
         "  Absolute path of the file that keeps client_secret.json. The file\n"
         "  can be created as specified in:\n"
-        "  https://developers.google.com/sheets/api/quickstart/python")
+        "  https://developers.9oo91e.qjz9zk/sheets/api/quickstart/python")
 
 
 def main():

@@ -15,8 +15,8 @@
 /**
  * @fileoverview Collection of utility functions for Unicode character.
  *
- * @author cibu@google.com (Cibu Johny)
- * @author burakov@google.com (Danny Burakov)
+ * @author cibu@9oo91e.qjz9zk (Cibu Johny)
+ * @author burakov@9oo91e.qjz9zk (Danny Burakov)
  */
 
 goog.provide('goog.i18n.uChar');

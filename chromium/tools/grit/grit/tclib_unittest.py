@@ -87,7 +87,7 @@ class TclibUnittest(unittest.TestCase):
       '--------------\r\n'
       'Full documentation and installation instructions are in the \r\n'
       'administrative guide, and also online at \r\n'
-      'http://desktop.google.com/enterprise/adminguide.html.\r\n'
+      'http://desktop.9oo91e.qjz9zk/enterprise/adminguide.html.\r\n'
       '\r\n'
       '\r\n'
       '------------------------\r\n'

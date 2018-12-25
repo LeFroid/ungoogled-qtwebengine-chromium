@@ -39,8 +39,8 @@ class URLPatternSet {
   // Creates an intersection result where result has every element that is
   // contained by both |set1| and |set2|. This is different than
   // CreateIntersection(), which does string comparisons. For example, the
-  // semantic intersection of ("http://*.google.com/*") and
-  // ("http://google.com/*") is ("http://google.com/*"), but the result from
+  // semantic intersection of ("http://*.9oo91e.qjz9zk/*") and
+  // ("http://9oo91e.qjz9zk/*") is ("http://9oo91e.qjz9zk/*"), but the result from
   // CreateIntersection() would be ().
   // TODO(devlin): This is weird. We probably want to use mostly
   // CreateSemanticIntersection().

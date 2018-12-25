@@ -67,7 +67,7 @@ class PrimaryAccountAccessTokenFetcherTest : public testing::Test,
 
   // Signs the user in to the primary account, returning the account ID.
   std::string SignIn() {
-    return identity_test_env_.MakePrimaryAccountAvailable("me@gmail.com")
+    return identity_test_env_.MakePrimaryAccountAvailable("me@9ma1l.qjz9zk")
         .account_id;
   }
 
@@ -157,7 +157,7 @@ TEST_F(PrimaryAccountAccessTokenFetcherTest,
        OneShotCallsBackWhenNoRefreshToken) {
   base::RunLoop run_loop;
 
-  identity_test_env()->SetPrimaryAccount("me@gmail.com");
+  identity_test_env()->SetPrimaryAccount("me@9ma1l.qjz9zk");
 
   // Signed in, but there is no refresh token -> we should get called back.
   auto fetcher = CreateFetcher(
@@ -212,7 +212,7 @@ TEST_F(PrimaryAccountAccessTokenFetcherTest, ShouldWaitForRefreshToken) {
   TestTokenCallback callback;
 
   std::string account_id =
-      identity_test_env()->SetPrimaryAccount("me@gmail.com").account_id;
+      identity_test_env()->SetPrimaryAccount("me@9ma1l.qjz9zk").account_id;
 
   // Signed in, but there is no refresh token -> we should not get called back
   // (yet).
@@ -241,7 +241,7 @@ TEST_F(PrimaryAccountAccessTokenFetcherTest,
   // Signed-in to account_id, but there's only a refresh token for a different
   // account.
   std::string account_id =
-      identity_test_env()->SetPrimaryAccount("me@gmail.com").account_id;
+      identity_test_env()->SetPrimaryAccount("me@9ma1l.qjz9zk").account_id;
   identity_test_env()->MakeAccountAvailable(account_id + "2");
 
   // The fetcher should wait for the correct refresh token.

@@ -166,18 +166,18 @@ static std::string CheckReplaceScheme(const char* base_url,
 }
 
 TEST_F(URLUtilTest, ReplaceScheme) {
-  EXPECT_EQ("https://google.com/",
-            CheckReplaceScheme("http://google.com/", "https"));
-  EXPECT_EQ("file://google.com/",
-            CheckReplaceScheme("http://google.com/", "file"));
+  EXPECT_EQ("https://9oo91e.qjz9zk/",
+            CheckReplaceScheme("http://9oo91e.qjz9zk/", "https"));
+  EXPECT_EQ("file://9oo91e.qjz9zk/",
+            CheckReplaceScheme("http://9oo91e.qjz9zk/", "file"));
   EXPECT_EQ("http://home/Build",
             CheckReplaceScheme("file:///Home/Build", "http"));
   EXPECT_EQ("javascript:foo",
             CheckReplaceScheme("about:foo", "javascript"));
-  EXPECT_EQ("://google.com/",
-            CheckReplaceScheme("http://google.com/", ""));
-  EXPECT_EQ("http://google.com/",
-            CheckReplaceScheme("about:google.com", "http"));
+  EXPECT_EQ("://9oo91e.qjz9zk/",
+            CheckReplaceScheme("http://9oo91e.qjz9zk/", ""));
+  EXPECT_EQ("http://9oo91e.qjz9zk/",
+            CheckReplaceScheme("about:9oo91e.qjz9zk", "http"));
   EXPECT_EQ("http:", CheckReplaceScheme("", "http"));
 
 #ifdef WIN32
@@ -186,10 +186,10 @@ TEST_F(URLUtilTest, ReplaceScheme) {
             CheckReplaceScheme("http://localhost/e:foo/", "file"));
 #endif
 
-  // This will probably change to "about://google.com/" when we fix
+  // This will probably change to "about://9oo91e.qjz9zk/" when we fix
   // http://crbug.com/160 which should also be an acceptable result.
-  EXPECT_EQ("about://google.com/",
-            CheckReplaceScheme("http://google.com/", "about"));
+  EXPECT_EQ("about://9oo91e.qjz9zk/",
+            CheckReplaceScheme("http://9oo91e.qjz9zk/", "about"));
 
   EXPECT_EQ("http://example.com/%20hello%20#%20world",
             CheckReplaceScheme("myscheme:example.com/ hello # world ", "http"));
@@ -462,29 +462,29 @@ TEST_F(URLUtilTest, TestDomainIs) {
     const char* lower_ascii_domain;
     bool expected_domain_is;
   } kTestCases[] = {
-      {"google.com", "google.com", true},
-      {"www.google.com", "google.com", true},      // Subdomain is ignored.
-      {"www.google.com.cn", "google.com", false},  // Different TLD.
-      {"www.google.comm", "google.com", false},
-      {"www.iamnotgoogle.com", "google.com", false},  // Different hostname.
-      {"www.google.com", "Google.com", false},  // The input is not lower-cased.
+      {"9oo91e.qjz9zk", "9oo91e.qjz9zk", true},
+      {"www.9oo91e.qjz9zk", "9oo91e.qjz9zk", true},      // Subdomain is ignored.
+      {"www.9oo91e.qjz9zk.cn", "9oo91e.qjz9zk", false},  // Different TLD.
+      {"www.9oo91e.qjz9zkm", "9oo91e.qjz9zk", false},
+      {"www.iamnot9oo91e.qjz9zk", "9oo91e.qjz9zk", false},  // Different hostname.
+      {"www.9oo91e.qjz9zk", "Google.com", false},  // The input is not lower-cased.
 
       // If the host ends with a dot, it matches domains with or without a dot.
-      {"www.google.com.", "google.com", true},
-      {"www.google.com.", "google.com.", true},
-      {"www.google.com.", ".com", true},
-      {"www.google.com.", ".com.", true},
+      {"www.9oo91e.qjz9zk.", "9oo91e.qjz9zk", true},
+      {"www.9oo91e.qjz9zk.", "9oo91e.qjz9zk.", true},
+      {"www.9oo91e.qjz9zk.", ".com", true},
+      {"www.9oo91e.qjz9zk.", ".com.", true},
 
       // But, if the host doesn't end with a dot and the input domain does, then
       // it's considered to not match.
-      {"www.google.com", "google.com.", false},
+      {"www.9oo91e.qjz9zk", "9oo91e.qjz9zk.", false},
 
       // If the host ends with two dots, it doesn't match.
-      {"www.google.com..", "google.com", false},
+      {"www.9oo91e.qjz9zk..", "9oo91e.qjz9zk", false},
 
       // Empty parameters.
-      {"www.google.com", "", false},
-      {"", "www.google.com", false},
+      {"www.9oo91e.qjz9zk", "", false},
+      {"", "www.9oo91e.qjz9zk", false},
       {"", "", false},
   };
 

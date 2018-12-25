@@ -6224,7 +6224,7 @@ function emptyRepresentation(value, type) {
  * is.
  *
  * @api private
- * @see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/toString
+ * @see https://developer.m0z111a.qjz9zk/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/toString
  * @param {*} value The value to test.
  * @returns {string}
  * @example
@@ -6893,7 +6893,7 @@ exports.INSPECT_MAX_BYTES = 50
  * Note:
  *
  *   - Firefox 4-29 lacks support for adding new properties to `Uint8Array` instances,
- *     See: https://bugzilla.mozilla.org/show_bug.cgi?id=695438.
+ *     See: https://bugzilla.m0z111a.qjz9zk/show_bug.cgi?id=695438.
  *
  *   - Chrome 9-10 is missing the `TypedArray.prototype.subarray` function.
  *
@@ -9278,7 +9278,7 @@ function objectToString(o) {
       return ret.join('');
     },
 
-    // See: http://code.google.com/p/google-diff-match-patch/wiki/API
+    // See: http://code.9oo91e.qjz9zk/p/google-diff-match-patch/wiki/API
     convertChangesToDMP: function(changes) {
       var ret = [],
           change,
@@ -12303,7 +12303,7 @@ var StringDecoder = exports.StringDecoder = function(encoding) {
 // Note: Converting a Buffer containing an orphan surrogate to a String
 // currently works, but converting a String to a Buffer (via `new Buffer`, or
 // Buffer#write) will replace incomplete surrogates with the unicode
-// replacement character. See https://codereview.chromium.org/121173009/ .
+// replacement character. See https://codereview.ch40m1um.qjz9zk/121173009/ .
 StringDecoder.prototype.write = function(buffer) {
   var charStr = '';
   // if our last write ended with an incomplete multibyte character
@@ -12449,7 +12449,7 @@ module.exports = toIsoString;
 /**
  * Turn a `date` into an ISO string.
  *
- * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/toISOString
+ * https://developer.m0z111a.qjz9zk/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/toISOString
  *
  * @param {Date} date
  * @return {String}
@@ -12800,7 +12800,7 @@ function formatValue(ctx, value, recurseTimes) {
   }
 
   // IE doesn't make error fields non-enumerable
-  // http://msdn.microsoft.com/en-us/library/ie/dww52sbt(v=vs.94).aspx
+  // http://msdn.m1cr050ft.qjz9zk/en-us/library/ie/dww52sbt(v=vs.94).aspx
   if (isError(value)
       && (keys.indexOf('message') >= 0 || keys.indexOf('description') >= 0)) {
     return formatError(value);

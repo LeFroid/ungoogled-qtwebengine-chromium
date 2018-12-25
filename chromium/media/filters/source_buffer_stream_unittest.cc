@@ -3589,7 +3589,7 @@ TEST_P(SourceBufferStreamTest, SetExplicitDuration_EdgeCase) {
 TEST_P(SourceBufferStreamTest, SetExplicitDuration_EdgeCase2) {
   // This test requires specific relative proportions for fudge room, append
   // size, and duration truncation amounts. See details at:
-  // https://codereview.chromium.org/2385423002
+  // https://codereview.ch40m1um.qjz9zk/2385423002
 
   // Append buffers with first buffer establishing max_inter_buffer_distance
   // of 5 ms. This translates to a fudge room (2 x max_interbuffer_distance) of
@@ -3614,7 +3614,7 @@ TEST_P(SourceBufferStreamTest, SetExplicitDuration_EdgeCase2) {
 TEST_P(SourceBufferStreamTest, RemoveWithinFudgeRoom) {
   // This test requires specific relative proportions for fudge room, append
   // size, and removal amounts. See details at:
-  // https://codereview.chromium.org/2385423002
+  // https://codereview.ch40m1um.qjz9zk/2385423002
 
   // Append buffers with first buffer establishing max_inter_buffer_distance
   // of 5 ms. This translates to a fudge room (2 x max_interbuffer_distance) of
@@ -5342,7 +5342,7 @@ TEST_P(SourceBufferStreamTest, GCFromFrontThenExplicitRemoveFromMiddleToEnd) {
 
 TEST_P(SourceBufferStreamTest, BFrames_WithoutEditList) {
   // Simulates B-frame content where MP4 edit lists are not used to shift PTS so
-  // it matches DTS. From acolwell@chromium.org in https://crbug.com/398130
+  // it matches DTS. From acolwell@ch40m1um.qjz9zk in https://crbug.com/398130
   Seek(0);
 
   if (buffering_api_ == BufferingApi::kLegacyByDts) {

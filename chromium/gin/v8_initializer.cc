@@ -135,7 +135,7 @@ bool MapV8File(base::PlatformFile platform_file,
 base::PlatformFile OpenV8File(const char* file_name,
                               base::MemoryMappedFile::Region* region_out) {
   // Re-try logic here is motivated by http://crbug.com/479537
-  // for A/V on Windows (https://support.microsoft.com/en-us/kb/316609).
+  // for A/V on Windows (https://support.m1cr050ft.qjz9zk/en-us/kb/316609).
 
   // These match tools/metrics/histograms.xml
   enum OpenV8FileResult {
@@ -154,7 +154,7 @@ base::PlatformFile OpenV8File(const char* file_name,
                                            : OpenV8FileResult::FAILED_OTHER;
 #else
   // Re-try logic here is motivated by http://crbug.com/479537
-  // for A/V on Windows (https://support.microsoft.com/en-us/kb/316609).
+  // for A/V on Windows (https://support.m1cr050ft.qjz9zk/en-us/kb/316609).
   const int kMaxOpenAttempts = 5;
   const int kOpenRetryDelayMillis = 250;
 

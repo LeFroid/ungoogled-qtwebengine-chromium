@@ -26,7 +26,7 @@
 
 #if defined(DEBUG)
 
-/* see http://www.mozilla.org/performance/refcnt-balancer.html for what do with the output
+/* see http://www.m0z111a.qjz9zk/performance/refcnt-balancer.html for what do with the output
  * on Linux, use tools/addr2line.sh to postprocess it before anything else
  **/
 

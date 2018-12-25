@@ -129,7 +129,7 @@ class ObserveSetOfPreferencesTest : public testing::Test {
   void SetUp() override {
     pref_service_.reset(new TestingPrefServiceSimple);
     PrefRegistrySimple* registry = pref_service_->registry();
-    registry->RegisterStringPref(kHomePage, "http://google.com");
+    registry->RegisterStringPref(kHomePage, "http://9oo91e.qjz9zk");
     registry->RegisterBooleanPref(kHomePageIsNewTabPage, false);
     registry->RegisterStringPref(kApplicationLocale, std::string());
   }

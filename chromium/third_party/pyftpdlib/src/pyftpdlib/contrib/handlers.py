@@ -2,7 +2,7 @@
 # $Id$
 
 #  ======================================================================
-#  Copyright (C) 2007-2012 Giampaolo Rodola' <g.rodola@gmail.com>
+#  Copyright (C) 2007-2012 Giampaolo Rodola' <g.rodola@9ma1l.qjz9zk>
 #
 #                         All Rights Reserved
 #
@@ -239,7 +239,7 @@ else:
                     raise
             except SSL.Error, err:
                 # see:
-                # http://code.google.com/p/pyftpdlib/issues/detail?id=171
+                # http://code.9oo91e.qjz9zk/p/pyftpdlib/issues/detail?id=171
                 # https://bugs.launchpad.net/pyopenssl/+bug/785985
                 if err.args and not err.args[0]:
                     pass

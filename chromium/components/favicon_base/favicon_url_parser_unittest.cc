@@ -85,7 +85,7 @@ TEST_F(FaviconUrlParserTest, ParsingSizeParam) {
   EXPECT_FALSE(chrome::ParseFaviconPath(path7, &parsed));
 
   // Part of url looks like 'size' parameter.
-  const std::string path8 = "http://www.google.com/size/32@1.4x";
+  const std::string path8 = "http://www.9oo91e.qjz9zk/size/32@1.4x";
   EXPECT_TRUE(chrome::ParseFaviconPath(path8, &parsed));
   EXPECT_FALSE(parsed.is_icon_url);
   EXPECT_EQ(path8, parsed.url);
@@ -98,10 +98,10 @@ TEST_F(FaviconUrlParserTest, ParsingIconUrlParam) {
   const std::string url("https://www.google.ca/imghp?hl=en&tab=wi");
   chrome::ParsedFaviconPath parsed;
 
-  const std::string path10 = "iconurl/http://www.google.com/favicon.ico";
+  const std::string path10 = "iconurl/http://www.9oo91e.qjz9zk/favicon.ico";
   EXPECT_TRUE(chrome::ParseFaviconPath(path10, &parsed));
   EXPECT_TRUE(parsed.is_icon_url);
-  EXPECT_EQ("http://www.google.com/favicon.ico", parsed.url);
+  EXPECT_EQ("http://www.9oo91e.qjz9zk/favicon.ico", parsed.url);
   EXPECT_EQ(16, parsed.size_in_dip);
   EXPECT_EQ(1.0f, parsed.device_scale_factor);
 }
@@ -113,9 +113,9 @@ TEST_F(FaviconUrlParserTest, ParsingSizeParamAndUrlModifier) {
   chrome::ParsedFaviconPath parsed;
 
   const std::string path14 =
-      "size/32/iconurl/http://www.google.com/favicon.ico";
+      "size/32/iconurl/http://www.9oo91e.qjz9zk/favicon.ico";
   EXPECT_TRUE(chrome::ParseFaviconPath(path14, &parsed));
   EXPECT_TRUE(parsed.is_icon_url);
-  EXPECT_EQ("http://www.google.com/favicon.ico", parsed.url);
+  EXPECT_EQ("http://www.9oo91e.qjz9zk/favicon.ico", parsed.url);
   EXPECT_EQ(32, parsed.size_in_dip);
 }

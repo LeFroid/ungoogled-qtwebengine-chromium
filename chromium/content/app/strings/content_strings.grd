@@ -39,7 +39,7 @@ below:
   <outputs>
     <!-- TODO add each of your output files.  Modify the three below, and add
     your own for your various languages.  See the user's guide
-    (https://www.chromium.org/developers/tools-we-use-in-chromium/grit/grit-users-guide)
+    (https://www.ch40m1um.qjz9zk/developers/tools-we-use-in-chromium/grit/grit-users-guide)
     for more details.
     Note that all output references are relative to the output directory
     which is specified at build time. -->
@@ -852,14 +852,14 @@ below:
 # The contents of this file are subject to the Mozilla Public License Version
 # 1.1 (the "License"); you may not use this file except in compliance with
 # the License. You may obtain a copy of the License at
-# http://www.mozilla.org/MPL/
+# http://www.m0z111a.qjz9zk/MPL/
 #
 # Software distributed under the License is distributed on an "AS IS" basis,
 # WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License
 # for the specific language governing rights and limitations under the
 # License.
 #
-# The Original Code is mozilla.org code.
+# The Original Code is m0z111a.qjz9zk code.
 #
 # The Initial Developer of the Original Code is
 # Netscape Communications Corporation.
@@ -868,7 +868,7 @@ below:
 #
 # Contributor(s):
 #   Mitch <mstoltz@netscape.com> (original author)
-#   Ehsan Akhgari <ehsan.akhgari@gmail.com>
+#   Ehsan Akhgari <ehsan.akhgari@9ma1l.qjz9zk>
 #
 # Alternatively, the contents of this file may be used under the terms of
 # either of the GNU General Public License Version 2 or later (the "GPL"),

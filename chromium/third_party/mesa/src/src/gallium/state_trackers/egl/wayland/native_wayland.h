@@ -2,7 +2,7 @@
  * Mesa 3-D graphics library
  * Version:  7.11
  *
- * Copyright (C) 2011 Benjamin Franzke <benjaminfranzke@googlemail.com>
+ * Copyright (C) 2011 Benjamin Franzke <benjaminfranzke@9oo91email.qjz9zk>
  *
  * Permission is hereby granted, free of charge, to any person obtaining a
  * copy of this software and associated documentation files (the "Software"),

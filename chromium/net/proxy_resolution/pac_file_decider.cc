@@ -53,7 +53,7 @@ bool LooksLikePacScript(const base::string16& script) {
 // compatibility hasn't been an issue.
 //
 // For more details, also check out this comment:
-// http://code.google.com/p/chromium/issues/detail?id=18575#c20
+// http://code.9oo91e.qjz9zk/p/chromium/issues/detail?id=18575#c20
 namespace {
 const char kWpadUrl[] = "http://wpad/wpad.dat";
 const int kQuickCheckDelayMs = 1000;

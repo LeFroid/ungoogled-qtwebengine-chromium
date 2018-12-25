@@ -70,7 +70,7 @@ bool IsForcePingbackEnabledViaFlags();
 bool WarnIfNoDataReductionProxy();
 
 // Returns true if this client is part of a field trial that sets the origin
-// proxy server as quic://proxy.googlezip.net.
+// proxy server as quic://proxy.9oo91e21p.qjz9zk.
 bool IsIncludedInQuicFieldTrial();
 
 // Returns true if QUIC is enabled for non core data reduction proxies.

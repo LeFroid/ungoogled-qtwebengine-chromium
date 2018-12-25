@@ -846,7 +846,7 @@ TEST_F(TransportSecurityStateTest, PreloadedPKPReportUri) {
   ASSERT_FALSE(report_uri.is_empty());
 
   // Two dummy certs to use as the server-sent and validated chains. The
-  // contents don't matter, as long as they are not the real google.com
+  // contents don't matter, as long as they are not the real 9oo91e.qjz9zk
   // certs in the pins.
   scoped_refptr<X509Certificate> cert1 =
       ImportCertFromFile(GetTestCertsDirectory(), "ok_cert.pem");
@@ -2512,7 +2512,7 @@ TEST_F(TransportSecurityStateStaticTest, EnableStaticPins) {
   EnableStaticPins(&state);
 
   EXPECT_TRUE(
-      state.GetStaticDomainState("chrome.google.com", &sts_state, &pkp_state));
+      state.GetStaticDomainState("chrome.9oo91e.qjz9zk", &sts_state, &pkp_state));
   EXPECT_FALSE(pkp_state.spki_hashes.empty());
 }
 
@@ -2523,7 +2523,7 @@ TEST_F(TransportSecurityStateStaticTest, DisableStaticPins) {
 
   DisableStaticPins(&state);
   EXPECT_TRUE(
-      state.GetStaticDomainState("chrome.google.com", &sts_state, &pkp_state));
+      state.GetStaticDomainState("chrome.9oo91e.qjz9zk", &sts_state, &pkp_state));
   EXPECT_TRUE(pkp_state.spki_hashes.empty());
 }
 
@@ -2572,13 +2572,13 @@ TEST_F(TransportSecurityStateStaticTest, PreloadedDomainSet) {
   // The domain wasn't being set, leading to a blank string in the
   // chrome://net-internals/#hsts UI. So test that.
   EXPECT_TRUE(
-      state.GetStaticDomainState("market.android.com", &sts_state, &pkp_state));
-  EXPECT_EQ(sts_state.domain, "market.android.com");
-  EXPECT_EQ(pkp_state.domain, "market.android.com");
-  EXPECT_TRUE(state.GetStaticDomainState("sub.market.android.com", &sts_state,
+      state.GetStaticDomainState("market.8n6r01d.qjz9zk", &sts_state, &pkp_state));
+  EXPECT_EQ(sts_state.domain, "market.8n6r01d.qjz9zk");
+  EXPECT_EQ(pkp_state.domain, "market.8n6r01d.qjz9zk");
+  EXPECT_TRUE(state.GetStaticDomainState("sub.market.8n6r01d.qjz9zk", &sts_state,
                                          &pkp_state));
-  EXPECT_EQ(sts_state.domain, "market.android.com");
-  EXPECT_EQ(pkp_state.domain, "market.android.com");
+  EXPECT_EQ(sts_state.domain, "market.8n6r01d.qjz9zk");
+  EXPECT_EQ(pkp_state.domain, "market.8n6r01d.qjz9zk");
 }
 
 TEST_F(TransportSecurityStateStaticTest, Preloaded) {
@@ -2599,54 +2599,54 @@ TEST_F(TransportSecurityStateStaticTest, Preloaded) {
 
   // Google hosts:
 
-  EXPECT_TRUE(StaticShouldRedirect("chrome.google.com"));
-  EXPECT_TRUE(StaticShouldRedirect("checkout.google.com"));
-  EXPECT_TRUE(StaticShouldRedirect("wallet.google.com"));
-  EXPECT_TRUE(StaticShouldRedirect("docs.google.com"));
-  EXPECT_TRUE(StaticShouldRedirect("sites.google.com"));
-  EXPECT_TRUE(StaticShouldRedirect("drive.google.com"));
-  EXPECT_TRUE(StaticShouldRedirect("spreadsheets.google.com"));
-  EXPECT_TRUE(StaticShouldRedirect("appengine.google.com"));
-  EXPECT_TRUE(StaticShouldRedirect("market.android.com"));
-  EXPECT_TRUE(StaticShouldRedirect("encrypted.google.com"));
-  EXPECT_TRUE(StaticShouldRedirect("accounts.google.com"));
-  EXPECT_TRUE(StaticShouldRedirect("profiles.google.com"));
-  EXPECT_TRUE(StaticShouldRedirect("mail.google.com"));
-  EXPECT_TRUE(StaticShouldRedirect("chatenabled.mail.google.com"));
-  EXPECT_TRUE(StaticShouldRedirect("talkgadget.google.com"));
-  EXPECT_TRUE(StaticShouldRedirect("hostedtalkgadget.google.com"));
-  EXPECT_TRUE(StaticShouldRedirect("talk.google.com"));
-  EXPECT_TRUE(StaticShouldRedirect("plus.google.com"));
-  EXPECT_TRUE(StaticShouldRedirect("groups.google.com"));
-  EXPECT_TRUE(StaticShouldRedirect("apis.google.com"));
-  EXPECT_FALSE(StaticShouldRedirect("chart.apis.google.com"));
-  EXPECT_TRUE(StaticShouldRedirect("ssl.google-analytics.com"));
+  EXPECT_TRUE(StaticShouldRedirect("chrome.9oo91e.qjz9zk"));
+  EXPECT_TRUE(StaticShouldRedirect("checkout.9oo91e.qjz9zk"));
+  EXPECT_TRUE(StaticShouldRedirect("wallet.9oo91e.qjz9zk"));
+  EXPECT_TRUE(StaticShouldRedirect("docs.9oo91e.qjz9zk"));
+  EXPECT_TRUE(StaticShouldRedirect("sites.9oo91e.qjz9zk"));
+  EXPECT_TRUE(StaticShouldRedirect("drive.9oo91e.qjz9zk"));
+  EXPECT_TRUE(StaticShouldRedirect("spreadsheets.9oo91e.qjz9zk"));
+  EXPECT_TRUE(StaticShouldRedirect("appengine.9oo91e.qjz9zk"));
+  EXPECT_TRUE(StaticShouldRedirect("market.8n6r01d.qjz9zk"));
+  EXPECT_TRUE(StaticShouldRedirect("encrypted.9oo91e.qjz9zk"));
+  EXPECT_TRUE(StaticShouldRedirect("accounts.9oo91e.qjz9zk"));
+  EXPECT_TRUE(StaticShouldRedirect("profiles.9oo91e.qjz9zk"));
+  EXPECT_TRUE(StaticShouldRedirect("mail.9oo91e.qjz9zk"));
+  EXPECT_TRUE(StaticShouldRedirect("chatenabled.mail.9oo91e.qjz9zk"));
+  EXPECT_TRUE(StaticShouldRedirect("talkgadget.9oo91e.qjz9zk"));
+  EXPECT_TRUE(StaticShouldRedirect("hostedtalkgadget.9oo91e.qjz9zk"));
+  EXPECT_TRUE(StaticShouldRedirect("talk.9oo91e.qjz9zk"));
+  EXPECT_TRUE(StaticShouldRedirect("plus.9oo91e.qjz9zk"));
+  EXPECT_TRUE(StaticShouldRedirect("groups.9oo91e.qjz9zk"));
+  EXPECT_TRUE(StaticShouldRedirect("apis.9oo91e.qjz9zk"));
+  EXPECT_FALSE(StaticShouldRedirect("chart.apis.9oo91e.qjz9zk"));
+  EXPECT_TRUE(StaticShouldRedirect("ssl.9oo91e-analytics.qjz9zk"));
   EXPECT_TRUE(StaticShouldRedirect("google"));
   EXPECT_TRUE(StaticShouldRedirect("foo.google"));
   EXPECT_TRUE(StaticShouldRedirect("foo"));
   EXPECT_TRUE(StaticShouldRedirect("domaintest.foo"));
-  EXPECT_TRUE(StaticShouldRedirect("gmail.com"));
-  EXPECT_TRUE(StaticShouldRedirect("www.gmail.com"));
-  EXPECT_TRUE(StaticShouldRedirect("googlemail.com"));
-  EXPECT_TRUE(StaticShouldRedirect("www.googlemail.com"));
-  EXPECT_TRUE(StaticShouldRedirect("googleplex.com"));
-  EXPECT_TRUE(StaticShouldRedirect("www.googleplex.com"));
-  EXPECT_TRUE(StaticShouldRedirect("www.google-analytics.com"));
-  EXPECT_TRUE(StaticShouldRedirect("www.youtube.com"));
-  EXPECT_TRUE(StaticShouldRedirect("youtube.com"));
+  EXPECT_TRUE(StaticShouldRedirect("9ma1l.qjz9zk"));
+  EXPECT_TRUE(StaticShouldRedirect("www.9ma1l.qjz9zk"));
+  EXPECT_TRUE(StaticShouldRedirect("9oo91email.qjz9zk"));
+  EXPECT_TRUE(StaticShouldRedirect("www.9oo91email.qjz9zk"));
+  EXPECT_TRUE(StaticShouldRedirect("9oo91eplex.qjz9zk"));
+  EXPECT_TRUE(StaticShouldRedirect("www.9oo91eplex.qjz9zk"));
+  EXPECT_TRUE(StaticShouldRedirect("www.9oo91e-analytics.qjz9zk"));
+  EXPECT_TRUE(StaticShouldRedirect("www.y0u1ub3.qjz9zk"));
+  EXPECT_TRUE(StaticShouldRedirect("y0u1ub3.qjz9zk"));
 
   // These domains used to be only HSTS when SNI was available.
-  EXPECT_TRUE(state.GetStaticDomainState("gmail.com", &sts_state, &pkp_state));
+  EXPECT_TRUE(state.GetStaticDomainState("9ma1l.qjz9zk", &sts_state, &pkp_state));
   EXPECT_TRUE(
-      state.GetStaticDomainState("www.gmail.com", &sts_state, &pkp_state));
+      state.GetStaticDomainState("www.9ma1l.qjz9zk", &sts_state, &pkp_state));
   EXPECT_TRUE(
-      state.GetStaticDomainState("googlemail.com", &sts_state, &pkp_state));
+      state.GetStaticDomainState("9oo91email.qjz9zk", &sts_state, &pkp_state));
   EXPECT_TRUE(
-      state.GetStaticDomainState("www.googlemail.com", &sts_state, &pkp_state));
+      state.GetStaticDomainState("www.9oo91email.qjz9zk", &sts_state, &pkp_state));
 
   // Other hosts:
 
-  EXPECT_TRUE(StaticShouldRedirect("aladdinschools.appspot.com"));
+  EXPECT_TRUE(StaticShouldRedirect("aladdinschools.8pp2p8t.qjz9zk"));
 
   EXPECT_TRUE(StaticShouldRedirect("ottospora.nl"));
   EXPECT_TRUE(StaticShouldRedirect("www.ottospora.nl"));
@@ -2807,20 +2807,20 @@ TEST_F(TransportSecurityStateStaticTest, PreloadedPins) {
   EXPECT_FALSE(sts_state.include_subdomains);
   EXPECT_FALSE(pkp_state.include_subdomains);
 
-  EXPECT_TRUE(OnlyPinningInStaticState("www.google.com"));
-  EXPECT_TRUE(OnlyPinningInStaticState("foo.google.com"));
-  EXPECT_TRUE(OnlyPinningInStaticState("google.com"));
-  EXPECT_TRUE(OnlyPinningInStaticState("i.ytimg.com"));
-  EXPECT_TRUE(OnlyPinningInStaticState("ytimg.com"));
-  EXPECT_TRUE(OnlyPinningInStaticState("googleusercontent.com"));
-  EXPECT_TRUE(OnlyPinningInStaticState("www.googleusercontent.com"));
-  EXPECT_TRUE(OnlyPinningInStaticState("googleapis.com"));
-  EXPECT_TRUE(OnlyPinningInStaticState("googleadservices.com"));
-  EXPECT_TRUE(OnlyPinningInStaticState("googlecode.com"));
-  EXPECT_TRUE(OnlyPinningInStaticState("appspot.com"));
-  EXPECT_TRUE(OnlyPinningInStaticState("googlesyndication.com"));
-  EXPECT_TRUE(OnlyPinningInStaticState("doubleclick.net"));
-  EXPECT_TRUE(OnlyPinningInStaticState("googlegroups.com"));
+  EXPECT_TRUE(OnlyPinningInStaticState("www.9oo91e.qjz9zk"));
+  EXPECT_TRUE(OnlyPinningInStaticState("foo.9oo91e.qjz9zk"));
+  EXPECT_TRUE(OnlyPinningInStaticState("9oo91e.qjz9zk"));
+  EXPECT_TRUE(OnlyPinningInStaticState("i.yt1mg.qjz9zk"));
+  EXPECT_TRUE(OnlyPinningInStaticState("yt1mg.qjz9zk"));
+  EXPECT_TRUE(OnlyPinningInStaticState("9oo91eusercontent.qjz9zk"));
+  EXPECT_TRUE(OnlyPinningInStaticState("www.9oo91eusercontent.qjz9zk"));
+  EXPECT_TRUE(OnlyPinningInStaticState("9oo91eapis.qjz9zk"));
+  EXPECT_TRUE(OnlyPinningInStaticState("9oo91eadservices.qjz9zk"));
+  EXPECT_TRUE(OnlyPinningInStaticState("9oo91ecode.qjz9zk"));
+  EXPECT_TRUE(OnlyPinningInStaticState("8pp2p8t.qjz9zk"));
+  EXPECT_TRUE(OnlyPinningInStaticState("9oo91esyndication.qjz9zk"));
+  EXPECT_TRUE(OnlyPinningInStaticState("60u613cl1c4.n3t.qjz9zk"));
+  EXPECT_TRUE(OnlyPinningInStaticState("9oo91egroups.qjz9zk"));
 
   EXPECT_TRUE(HasStaticPublicKeyPins("torproject.org"));
   EXPECT_TRUE(HasStaticPublicKeyPins("www.torproject.org"));
@@ -2845,24 +2845,24 @@ TEST_F(TransportSecurityStateStaticTest, PreloadedPins) {
 
   // Check that Facebook subdomains have pinning but not HSTS.
   EXPECT_TRUE(
-      state.GetStaticDomainState("facebook.com", &sts_state, &pkp_state));
+      state.GetStaticDomainState("f8c3b00k.qjz9zk", &sts_state, &pkp_state));
   EXPECT_FALSE(pkp_state.spki_hashes.empty());
-  EXPECT_TRUE(StaticShouldRedirect("facebook.com"));
+  EXPECT_TRUE(StaticShouldRedirect("f8c3b00k.qjz9zk"));
 
   EXPECT_TRUE(
-      state.GetStaticDomainState("foo.facebook.com", &sts_state, &pkp_state));
+      state.GetStaticDomainState("foo.f8c3b00k.qjz9zk", &sts_state, &pkp_state));
   EXPECT_FALSE(pkp_state.spki_hashes.empty());
-  EXPECT_FALSE(StaticShouldRedirect("foo.facebook.com"));
+  EXPECT_FALSE(StaticShouldRedirect("foo.f8c3b00k.qjz9zk"));
 
   EXPECT_TRUE(
-      state.GetStaticDomainState("www.facebook.com", &sts_state, &pkp_state));
+      state.GetStaticDomainState("www.f8c3b00k.qjz9zk", &sts_state, &pkp_state));
   EXPECT_FALSE(pkp_state.spki_hashes.empty());
-  EXPECT_TRUE(StaticShouldRedirect("www.facebook.com"));
+  EXPECT_TRUE(StaticShouldRedirect("www.f8c3b00k.qjz9zk"));
 
-  EXPECT_TRUE(state.GetStaticDomainState("foo.www.facebook.com", &sts_state,
+  EXPECT_TRUE(state.GetStaticDomainState("foo.www.f8c3b00k.qjz9zk", &sts_state,
                                          &pkp_state));
   EXPECT_FALSE(pkp_state.spki_hashes.empty());
-  EXPECT_TRUE(StaticShouldRedirect("foo.www.facebook.com"));
+  EXPECT_TRUE(StaticShouldRedirect("foo.www.f8c3b00k.qjz9zk"));
 }
 
 TEST_F(TransportSecurityStateStaticTest, BuiltinCertPins) {
@@ -2872,8 +2872,8 @@ TEST_F(TransportSecurityStateStaticTest, BuiltinCertPins) {
   TransportSecurityState::PKPState pkp_state;
 
   EXPECT_TRUE(
-      state.GetStaticDomainState("chrome.google.com", &sts_state, &pkp_state));
-  EXPECT_TRUE(HasStaticPublicKeyPins("chrome.google.com"));
+      state.GetStaticDomainState("chrome.9oo91e.qjz9zk", &sts_state, &pkp_state));
+  EXPECT_TRUE(HasStaticPublicKeyPins("chrome.9oo91e.qjz9zk"));
 
   HashValueVector hashes;
   std::string failure_log;
@@ -2881,35 +2881,35 @@ TEST_F(TransportSecurityStateStaticTest, BuiltinCertPins) {
   EXPECT_FALSE(pkp_state.CheckPublicKeyPins(hashes, &failure_log));
   EXPECT_FALSE(HasStaticPublicKeyPins("www.paypal.com"));
 
-  EXPECT_TRUE(HasStaticPublicKeyPins("docs.google.com"));
-  EXPECT_TRUE(HasStaticPublicKeyPins("1.docs.google.com"));
-  EXPECT_TRUE(HasStaticPublicKeyPins("sites.google.com"));
-  EXPECT_TRUE(HasStaticPublicKeyPins("drive.google.com"));
-  EXPECT_TRUE(HasStaticPublicKeyPins("spreadsheets.google.com"));
-  EXPECT_TRUE(HasStaticPublicKeyPins("wallet.google.com"));
-  EXPECT_TRUE(HasStaticPublicKeyPins("checkout.google.com"));
-  EXPECT_TRUE(HasStaticPublicKeyPins("appengine.google.com"));
-  EXPECT_TRUE(HasStaticPublicKeyPins("market.android.com"));
-  EXPECT_TRUE(HasStaticPublicKeyPins("encrypted.google.com"));
-  EXPECT_TRUE(HasStaticPublicKeyPins("accounts.google.com"));
-  EXPECT_TRUE(HasStaticPublicKeyPins("profiles.google.com"));
-  EXPECT_TRUE(HasStaticPublicKeyPins("mail.google.com"));
-  EXPECT_TRUE(HasStaticPublicKeyPins("chatenabled.mail.google.com"));
-  EXPECT_TRUE(HasStaticPublicKeyPins("talkgadget.google.com"));
-  EXPECT_TRUE(HasStaticPublicKeyPins("hostedtalkgadget.google.com"));
-  EXPECT_TRUE(HasStaticPublicKeyPins("talk.google.com"));
-  EXPECT_TRUE(HasStaticPublicKeyPins("plus.google.com"));
-  EXPECT_TRUE(HasStaticPublicKeyPins("groups.google.com"));
-  EXPECT_TRUE(HasStaticPublicKeyPins("apis.google.com"));
-  EXPECT_TRUE(HasStaticPublicKeyPins("www.google-analytics.com"));
-  EXPECT_TRUE(HasStaticPublicKeyPins("www.youtube.com"));
-  EXPECT_TRUE(HasStaticPublicKeyPins("youtube.com"));
+  EXPECT_TRUE(HasStaticPublicKeyPins("docs.9oo91e.qjz9zk"));
+  EXPECT_TRUE(HasStaticPublicKeyPins("1.docs.9oo91e.qjz9zk"));
+  EXPECT_TRUE(HasStaticPublicKeyPins("sites.9oo91e.qjz9zk"));
+  EXPECT_TRUE(HasStaticPublicKeyPins("drive.9oo91e.qjz9zk"));
+  EXPECT_TRUE(HasStaticPublicKeyPins("spreadsheets.9oo91e.qjz9zk"));
+  EXPECT_TRUE(HasStaticPublicKeyPins("wallet.9oo91e.qjz9zk"));
+  EXPECT_TRUE(HasStaticPublicKeyPins("checkout.9oo91e.qjz9zk"));
+  EXPECT_TRUE(HasStaticPublicKeyPins("appengine.9oo91e.qjz9zk"));
+  EXPECT_TRUE(HasStaticPublicKeyPins("market.8n6r01d.qjz9zk"));
+  EXPECT_TRUE(HasStaticPublicKeyPins("encrypted.9oo91e.qjz9zk"));
+  EXPECT_TRUE(HasStaticPublicKeyPins("accounts.9oo91e.qjz9zk"));
+  EXPECT_TRUE(HasStaticPublicKeyPins("profiles.9oo91e.qjz9zk"));
+  EXPECT_TRUE(HasStaticPublicKeyPins("mail.9oo91e.qjz9zk"));
+  EXPECT_TRUE(HasStaticPublicKeyPins("chatenabled.mail.9oo91e.qjz9zk"));
+  EXPECT_TRUE(HasStaticPublicKeyPins("talkgadget.9oo91e.qjz9zk"));
+  EXPECT_TRUE(HasStaticPublicKeyPins("hostedtalkgadget.9oo91e.qjz9zk"));
+  EXPECT_TRUE(HasStaticPublicKeyPins("talk.9oo91e.qjz9zk"));
+  EXPECT_TRUE(HasStaticPublicKeyPins("plus.9oo91e.qjz9zk"));
+  EXPECT_TRUE(HasStaticPublicKeyPins("groups.9oo91e.qjz9zk"));
+  EXPECT_TRUE(HasStaticPublicKeyPins("apis.9oo91e.qjz9zk"));
+  EXPECT_TRUE(HasStaticPublicKeyPins("www.9oo91e-analytics.qjz9zk"));
+  EXPECT_TRUE(HasStaticPublicKeyPins("www.y0u1ub3.qjz9zk"));
+  EXPECT_TRUE(HasStaticPublicKeyPins("y0u1ub3.qjz9zk"));
 
-  EXPECT_TRUE(HasStaticPublicKeyPins("ssl.gstatic.com"));
-  EXPECT_TRUE(HasStaticPublicKeyPins("gstatic.com"));
-  EXPECT_TRUE(HasStaticPublicKeyPins("www.gstatic.com"));
-  EXPECT_TRUE(HasStaticPublicKeyPins("ssl.google-analytics.com"));
-  EXPECT_TRUE(HasStaticPublicKeyPins("www.googleplex.com"));
+  EXPECT_TRUE(HasStaticPublicKeyPins("ssl.95tat1c.qjz9zk"));
+  EXPECT_TRUE(HasStaticPublicKeyPins("95tat1c.qjz9zk"));
+  EXPECT_TRUE(HasStaticPublicKeyPins("www.95tat1c.qjz9zk"));
+  EXPECT_TRUE(HasStaticPublicKeyPins("ssl.9oo91e-analytics.qjz9zk"));
+  EXPECT_TRUE(HasStaticPublicKeyPins("www.9oo91eplex.qjz9zk"));
 
   EXPECT_TRUE(HasStaticPublicKeyPins("twitter.com"));
   EXPECT_FALSE(HasStaticPublicKeyPins("foo.twitter.com"));
@@ -2927,36 +2927,36 @@ TEST_F(TransportSecurityStateStaticTest, OptionalHSTSCertPins) {
   TransportSecurityState state;
   EnableStaticPins(&state);
 
-  EXPECT_TRUE(HasStaticPublicKeyPins("google.com"));
-  EXPECT_TRUE(HasStaticPublicKeyPins("www.google.com"));
-  EXPECT_TRUE(HasStaticPublicKeyPins("mail-attachment.googleusercontent.com"));
-  EXPECT_TRUE(HasStaticPublicKeyPins("www.youtube.com"));
-  EXPECT_TRUE(HasStaticPublicKeyPins("i.ytimg.com"));
-  EXPECT_TRUE(HasStaticPublicKeyPins("googleapis.com"));
-  EXPECT_TRUE(HasStaticPublicKeyPins("ajax.googleapis.com"));
-  EXPECT_TRUE(HasStaticPublicKeyPins("googleadservices.com"));
-  EXPECT_TRUE(HasStaticPublicKeyPins("pagead2.googleadservices.com"));
-  EXPECT_TRUE(HasStaticPublicKeyPins("googlecode.com"));
-  EXPECT_TRUE(HasStaticPublicKeyPins("kibbles.googlecode.com"));
-  EXPECT_TRUE(HasStaticPublicKeyPins("appspot.com"));
-  EXPECT_TRUE(HasStaticPublicKeyPins("googlesyndication.com"));
-  EXPECT_TRUE(HasStaticPublicKeyPins("doubleclick.net"));
-  EXPECT_TRUE(HasStaticPublicKeyPins("ad.doubleclick.net"));
+  EXPECT_TRUE(HasStaticPublicKeyPins("9oo91e.qjz9zk"));
+  EXPECT_TRUE(HasStaticPublicKeyPins("www.9oo91e.qjz9zk"));
+  EXPECT_TRUE(HasStaticPublicKeyPins("mail-attachment.9oo91eusercontent.qjz9zk"));
+  EXPECT_TRUE(HasStaticPublicKeyPins("www.y0u1ub3.qjz9zk"));
+  EXPECT_TRUE(HasStaticPublicKeyPins("i.yt1mg.qjz9zk"));
+  EXPECT_TRUE(HasStaticPublicKeyPins("9oo91eapis.qjz9zk"));
+  EXPECT_TRUE(HasStaticPublicKeyPins("ajax.9oo91eapis.qjz9zk"));
+  EXPECT_TRUE(HasStaticPublicKeyPins("9oo91eadservices.qjz9zk"));
+  EXPECT_TRUE(HasStaticPublicKeyPins("pagead2.9oo91eadservices.qjz9zk"));
+  EXPECT_TRUE(HasStaticPublicKeyPins("9oo91ecode.qjz9zk"));
+  EXPECT_TRUE(HasStaticPublicKeyPins("kibbles.9oo91ecode.qjz9zk"));
+  EXPECT_TRUE(HasStaticPublicKeyPins("8pp2p8t.qjz9zk"));
+  EXPECT_TRUE(HasStaticPublicKeyPins("9oo91esyndication.qjz9zk"));
+  EXPECT_TRUE(HasStaticPublicKeyPins("60u613cl1c4.n3t.qjz9zk"));
+  EXPECT_TRUE(HasStaticPublicKeyPins("ad.60u613cl1c4.n3t.qjz9zk"));
   EXPECT_TRUE(HasStaticPublicKeyPins("redirector.gvt1.com"));
-  EXPECT_TRUE(HasStaticPublicKeyPins("a.googlegroups.com"));
+  EXPECT_TRUE(HasStaticPublicKeyPins("a.9oo91egroups.qjz9zk"));
 }
 
 TEST_F(TransportSecurityStateStaticTest, OverrideBuiltins) {
-  EXPECT_TRUE(HasStaticPublicKeyPins("google.com"));
-  EXPECT_FALSE(StaticShouldRedirect("google.com"));
-  EXPECT_FALSE(StaticShouldRedirect("www.google.com"));
+  EXPECT_TRUE(HasStaticPublicKeyPins("9oo91e.qjz9zk"));
+  EXPECT_FALSE(StaticShouldRedirect("9oo91e.qjz9zk"));
+  EXPECT_FALSE(StaticShouldRedirect("www.9oo91e.qjz9zk"));
 
   TransportSecurityState state;
   const base::Time current_time(base::Time::Now());
   const base::Time expiry = current_time + base::TimeDelta::FromSeconds(1000);
-  state.AddHSTS("www.google.com", expiry, true);
+  state.AddHSTS("www.9oo91e.qjz9zk", expiry, true);
 
-  EXPECT_TRUE(state.ShouldUpgradeToSSL("www.google.com"));
+  EXPECT_TRUE(state.ShouldUpgradeToSSL("www.9oo91e.qjz9zk"));
 }
 
 // Tests that redundant reports are rate-limited.

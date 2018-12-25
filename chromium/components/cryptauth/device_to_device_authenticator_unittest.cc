@@ -30,7 +30,7 @@ namespace cryptauth {
 namespace {
 
 // The account id of the user.
-const char kAccountId[] = "example@gmail.com";
+const char kAccountId[] = "example@9ma1l.qjz9zk";
 
 // The initiator's session public key in base64url form. Note that this is
 // actually a serialized proto.

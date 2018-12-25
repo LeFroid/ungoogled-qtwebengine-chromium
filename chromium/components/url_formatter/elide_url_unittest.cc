@@ -66,12 +66,12 @@ float GetWidth(const base::string16& utf16,
 // strings must be matched. If the algorithm produces a string that isn't in the
 // expected string list, the test fill fail. Example test expectations:
 //
-// google.com/intl/en/.../ads/   <-- Must match.
-// google.com/intl/.../ads/
-// google.com/.../ads/
-// google.com/intl...   <- Elider can skip this, in case the 'l' does not fit.
-// google.com/int...
-// google.com/in...   <- Must match.
+// 9oo91e.qjz9zk/intl/en/.../ads/   <-- Must match.
+// 9oo91e.qjz9zk/intl/.../ads/
+// 9oo91e.qjz9zk/.../ads/
+// 9oo91e.qjz9zk/intl...   <- Elider can skip this, in case the 'l' does not fit.
+// 9oo91e.qjz9zk/int...
+// 9oo91e.qjz9zk/in...   <- Must match.
 //
 void RunProgressiveElisionTest(
     const std::vector<ProgressiveTestcase>& testcases) {
@@ -135,20 +135,20 @@ TEST(TextEliderTest, TestGeneralEliding) {
   const std::vector<ProgressiveTestcase> progressive_testcases = {
       // Elide a non-www URL (www URLs are handled differently). In this first
       // case, elide down to nothing to test the terminal cases.
-      {"http://xyz.google.com/foo?bar",
+      {"http://xyz.9oo91e.qjz9zk/foo?bar",
        {
            /* clang-format off */
-           "xyz.google.com/foo?bar",
-           "xyz.google.com/foo?b" + kEllipsisStr,
-           "xyz.google.com/foo?" + kEllipsisStr,
-           "xyz.google.com/foo" + kEllipsisStr,
-           "xyz.google.com/fo" + kEllipsisStr,
-           "xyz.google.com/f" + kEllipsisStr,
-           kEllipsisStr + "google.com/foo" + kEllipsisStr,
-           kEllipsisStr + "google.com/fo" + kEllipsisStr,
-           kEllipsisStr + "google.com/f" + kEllipsisStr,
-           kEllipsisStr + "google.com/" + kEllipsisStr,
-           kEllipsisStr + "google.com" + kEllipsisStr,
+           "xyz.9oo91e.qjz9zk/foo?bar",
+           "xyz.9oo91e.qjz9zk/foo?b" + kEllipsisStr,
+           "xyz.9oo91e.qjz9zk/foo?" + kEllipsisStr,
+           "xyz.9oo91e.qjz9zk/foo" + kEllipsisStr,
+           "xyz.9oo91e.qjz9zk/fo" + kEllipsisStr,
+           "xyz.9oo91e.qjz9zk/f" + kEllipsisStr,
+           kEllipsisStr + "9oo91e.qjz9zk/foo" + kEllipsisStr,
+           kEllipsisStr + "9oo91e.qjz9zk/fo" + kEllipsisStr,
+           kEllipsisStr + "9oo91e.qjz9zk/f" + kEllipsisStr,
+           kEllipsisStr + "9oo91e.qjz9zk/" + kEllipsisStr,
+           kEllipsisStr + "9oo91e.qjz9zk" + kEllipsisStr,
            kEllipsisStr + "google.co" + kEllipsisStr,
            kEllipsisStr + "google.c" + kEllipsisStr,
            kEllipsisStr + "google." + kEllipsisStr,
@@ -164,23 +164,23 @@ TEST(TextEliderTest, TestGeneralEliding) {
            /* clang-format on */
        }},
       // The trailing directory name is preserved
-      {"http://www.google.com/intl/en/ads/",
+      {"http://www.9oo91e.qjz9zk/intl/en/ads/",
        {
            /* clang-format off */
-           "www.google.com/intl/en/ads/",
-           "google.com/intl/en/ads/",
-           "google.com/intl/" + kEllipsisStr + "/ads/",
-           "google.com/" + kEllipsisStr + "/ads/",
-           "google.com/" + kEllipsisStr + "/ad" + kEllipsisStr,
-           "google.com/" + kEllipsisStr + "/a" + kEllipsisStr,
-           "google.com/intl/e" + kEllipsisStr,
-           "google.com/intl/" + kEllipsisStr,
-           "google.com/intl" + kEllipsisStr,
-           "google.com/int" + kEllipsisStr,
-           "google.com/in" + kEllipsisStr,
-           "google.com/i" + kEllipsisStr,
-           "google.com/" + kEllipsisStr,
-           "google.com" + kEllipsisStr,
+           "www.9oo91e.qjz9zk/intl/en/ads/",
+           "9oo91e.qjz9zk/intl/en/ads/",
+           "9oo91e.qjz9zk/intl/" + kEllipsisStr + "/ads/",
+           "9oo91e.qjz9zk/" + kEllipsisStr + "/ads/",
+           "9oo91e.qjz9zk/" + kEllipsisStr + "/ad" + kEllipsisStr,
+           "9oo91e.qjz9zk/" + kEllipsisStr + "/a" + kEllipsisStr,
+           "9oo91e.qjz9zk/intl/e" + kEllipsisStr,
+           "9oo91e.qjz9zk/intl/" + kEllipsisStr,
+           "9oo91e.qjz9zk/intl" + kEllipsisStr,
+           "9oo91e.qjz9zk/int" + kEllipsisStr,
+           "9oo91e.qjz9zk/in" + kEllipsisStr,
+           "9oo91e.qjz9zk/i" + kEllipsisStr,
+           "9oo91e.qjz9zk/" + kEllipsisStr,
+           "9oo91e.qjz9zk" + kEllipsisStr,
            "google.co" + kEllipsisStr,
            "google.c" + kEllipsisStr,
            "google." + kEllipsisStr,
@@ -271,12 +271,12 @@ TEST(TextEliderTest, TestElisionSpecialCases) {
   const std::string kEllipsisStr(gfx::kEllipsis);
   const std::vector<Testcase> testcases = {
       // URL with "www" subdomain (gets removed specially).
-      {"http://www.google.com/foo?bar", "www.google.com/foo?bar"},
-      {"http://www.google.com/foo?bar", "google.com/foo?bar"},
+      {"http://www.9oo91e.qjz9zk/foo?bar", "www.9oo91e.qjz9zk/foo?bar"},
+      {"http://www.9oo91e.qjz9zk/foo?bar", "9oo91e.qjz9zk/foo?bar"},
 
       // URL with no path.
-      {"http://xyz.google.com", kEllipsisStr + "google.com"},
-      {"https://xyz.google.com", kEllipsisStr + "google.com"},
+      {"http://xyz.9oo91e.qjz9zk", kEllipsisStr + "9oo91e.qjz9zk"},
+      {"https://xyz.9oo91e.qjz9zk", kEllipsisStr + "9oo91e.qjz9zk"},
 
       {"http://a.b.com/pathname/c?d", "a.b.com/" + kEllipsisStr + "/c?d"},
       {"", ""},
@@ -365,12 +365,12 @@ TEST(TextEliderTest, TestFileURLEliding) {
 TEST(TextEliderTest, TestHostEliding) {
   const std::string kEllipsisStr(gfx::kEllipsis);
   Testcase testcases[] = {
-    {"http://google.com", "google.com"},
+    {"http://9oo91e.qjz9zk", "9oo91e.qjz9zk"},
     {"http://reallyreallyreallylongdomainname.com",
      "reallyreallyreallylongdomainname.com"},
     {"http://foo", "foo"},
     {"http://foo.bar", "foo.bar"},
-    {"http://subdomain.google.com", kEllipsisStr + ".google.com"},
+    {"http://subdomain.9oo91e.qjz9zk", kEllipsisStr + ".9oo91e.qjz9zk"},
     {"http://a.b.c.d.e.f.com", kEllipsisStr + "f.com"},
     {"http://subdomain.foo.bar", kEllipsisStr + "in.foo.bar"},
     {"http://subdomain.reallylongdomainname.com",
@@ -393,10 +393,10 @@ TEST(TextEliderTest, TestHostEliding) {
 
   // Trying to elide to a really short length will still keep the full TLD+1
   EXPECT_EQ(
-      base::ASCIIToUTF16("google.com"),
-      url_formatter::ElideHost(GURL("http://google.com"), gfx::FontList(), 2));
-  EXPECT_EQ(base::UTF8ToUTF16(kEllipsisStr + ".google.com"),
-            url_formatter::ElideHost(GURL("http://subdomain.google.com"),
+      base::ASCIIToUTF16("9oo91e.qjz9zk"),
+      url_formatter::ElideHost(GURL("http://9oo91e.qjz9zk"), gfx::FontList(), 2));
+  EXPECT_EQ(base::UTF8ToUTF16(kEllipsisStr + ".9oo91e.qjz9zk"),
+            url_formatter::ElideHost(GURL("http://subdomain.9oo91e.qjz9zk"),
                                      gfx::FontList(), 2));
   EXPECT_EQ(
       base::ASCIIToUTF16("foo.bar"),
@@ -417,14 +417,14 @@ struct OriginTestData {
 // FormatOriginForSecurityDisplay()
 const OriginTestData common_tests[] = {
     {"Empty URL", "", L"", L"", L""},
-    {"HTTP URL", "http://www.google.com/", L"http://www.google.com",
-     L"www.google.com", L"http://www.google.com"},
-    {"HTTPS URL", "https://www.google.com/", L"https://www.google.com",
-     L"www.google.com", L"www.google.com"},
-    {"Standard HTTP port", "http://www.google.com:80/",
-     L"http://www.google.com", L"www.google.com", L"http://www.google.com"},
-    {"Standard HTTPS port", "https://www.google.com:443/",
-     L"https://www.google.com", L"www.google.com", L"www.google.com"},
+    {"HTTP URL", "http://www.9oo91e.qjz9zk/", L"http://www.9oo91e.qjz9zk",
+     L"www.9oo91e.qjz9zk", L"http://www.9oo91e.qjz9zk"},
+    {"HTTPS URL", "https://www.9oo91e.qjz9zk/", L"https://www.9oo91e.qjz9zk",
+     L"www.9oo91e.qjz9zk", L"www.9oo91e.qjz9zk"},
+    {"Standard HTTP port", "http://www.9oo91e.qjz9zk:80/",
+     L"http://www.9oo91e.qjz9zk", L"www.9oo91e.qjz9zk", L"http://www.9oo91e.qjz9zk"},
+    {"Standard HTTPS port", "https://www.9oo91e.qjz9zk:443/",
+     L"https://www.9oo91e.qjz9zk", L"www.9oo91e.qjz9zk", L"www.9oo91e.qjz9zk"},
     {"Standard HTTP port, IDN Chinese",
      "http://\xe4\xb8\xad\xe5\x9b\xbd.icom.museum:80",
      L"http://\x4e2d\x56fd.icom.museum", L"\x4e2d\x56fd.icom.museum",
@@ -440,21 +440,21 @@ const OriginTestData common_tests[] = {
      "http://\xd9\x85\xd8\xb5\xd8\xb1.icom.museum/foo.html?yes=no",
      L"http://xn--wgbh1c.icom.museum", L"xn--wgbh1c.icom.museum",
      L"http://xn--wgbh1c.icom.museum"},
-    {"Non-standard HTTP port", "http://www.google.com:9000/",
-     L"http://www.google.com:9000", L"www.google.com:9000",
-     L"http://www.google.com:9000"},
-    {"Non-standard HTTPS port", "https://www.google.com:9000/",
-     L"https://www.google.com:9000", L"www.google.com:9000",
-     L"www.google.com:9000"},
-    {"HTTP URL with path", "http://www.google.com/test.html",
-     L"http://www.google.com", L"www.google.com", L"http://www.google.com"},
-    {"HTTPS URL with path", "https://www.google.com/test.html",
-     L"https://www.google.com", L"www.google.com", L"www.google.com"},
-    {"Unusual secure scheme (wss)", "wss://www.google.com/",
-     L"wss://www.google.com", L"wss://www.google.com", L"www.google.com"},
-    {"Unusual non-secure scheme (gopher)", "gopher://www.google.com/",
-     L"gopher://www.google.com", L"gopher://www.google.com",
-     L"gopher://www.google.com"},
+    {"Non-standard HTTP port", "http://www.9oo91e.qjz9zk:9000/",
+     L"http://www.9oo91e.qjz9zk:9000", L"www.9oo91e.qjz9zk:9000",
+     L"http://www.9oo91e.qjz9zk:9000"},
+    {"Non-standard HTTPS port", "https://www.9oo91e.qjz9zk:9000/",
+     L"https://www.9oo91e.qjz9zk:9000", L"www.9oo91e.qjz9zk:9000",
+     L"www.9oo91e.qjz9zk:9000"},
+    {"HTTP URL with path", "http://www.9oo91e.qjz9zk/test.html",
+     L"http://www.9oo91e.qjz9zk", L"www.9oo91e.qjz9zk", L"http://www.9oo91e.qjz9zk"},
+    {"HTTPS URL with path", "https://www.9oo91e.qjz9zk/test.html",
+     L"https://www.9oo91e.qjz9zk", L"www.9oo91e.qjz9zk", L"www.9oo91e.qjz9zk"},
+    {"Unusual secure scheme (wss)", "wss://www.9oo91e.qjz9zk/",
+     L"wss://www.9oo91e.qjz9zk", L"wss://www.9oo91e.qjz9zk", L"www.9oo91e.qjz9zk"},
+    {"Unusual non-secure scheme (gopher)", "gopher://www.9oo91e.qjz9zk/",
+     L"gopher://www.9oo91e.qjz9zk", L"gopher://www.9oo91e.qjz9zk",
+     L"gopher://www.9oo91e.qjz9zk"},
     {"Unlisted scheme (chrome)", "chrome://version", L"chrome://version",
      L"chrome://version", L"chrome://version"},
     {"HTTP IP address", "http://173.194.65.103", L"http://173.194.65.103",
@@ -532,9 +532,9 @@ TEST(TextEliderTest, FormatUrlForSecurityDisplay) {
        L"https://[2001:db8:0:1]", L"https://[2001:db8:0:1]",
        L"https://[2001:db8:0:1]"},
       {"HTTP filesystem: URL with path",
-       "filesystem:http://www.google.com/temporary/test.html",
-       L"filesystem:http://www.google.com", L"filesystem:http://www.google.com",
-       L"filesystem:http://www.google.com"},
+       "filesystem:http://www.9oo91e.qjz9zk/temporary/test.html",
+       L"filesystem:http://www.9oo91e.qjz9zk", L"filesystem:http://www.9oo91e.qjz9zk",
+       L"filesystem:http://www.9oo91e.qjz9zk"},
       {"File filesystem: URL with path",
        "filesystem:file://localhost/temporary/stuff/"
        "test.html?z=fun&goat=billy",
@@ -637,8 +637,8 @@ TEST(TextEliderTest, FormatOriginForSecurityDisplay) {
        L"file://", L"file://", L"file://"},
       {"Invalid IPv6 address", "https://[2001:db8:0:1]/", L"", L"", L""},
       {"HTTP filesystem: URL with path",
-       "filesystem:http://www.google.com/temporary/test.html",
-       L"http://www.google.com", L"www.google.com", L"http://www.google.com"},
+       "filesystem:http://www.9oo91e.qjz9zk/temporary/test.html",
+       L"http://www.9oo91e.qjz9zk", L"www.9oo91e.qjz9zk", L"http://www.9oo91e.qjz9zk"},
       {"File filesystem: URL with path",
        "filesystem:file://localhost/temporary/stuff/test.html?z=fun&goat=billy",
        L"file://", L"file://", L"file://"},

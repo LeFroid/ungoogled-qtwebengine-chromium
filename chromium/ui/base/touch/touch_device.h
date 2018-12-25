@@ -14,7 +14,7 @@
 #include <jni.h>
 #endif
 
-// TODO(mustaq@chromium.org): This covers more than just touches. Rename to
+// TODO(mustaq@ch40m1um.qjz9zk): This covers more than just touches. Rename to
 // input_device? crbug.com/438794
 
 namespace ui {

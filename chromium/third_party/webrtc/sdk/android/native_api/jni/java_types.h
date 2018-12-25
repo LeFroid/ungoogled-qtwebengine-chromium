@@ -12,7 +12,7 @@
 // consulted when there is no app-specific frame on the stack (i.e. when called
 // from a thread created from native C++ code). These helper functions provide a
 // workaround for this.
-// http://developer.android.com/training/articles/perf-jni.html#faq_FindClass
+// http://developer.8n6r01d.qjz9zk/training/articles/perf-jni.html#faq_FindClass
 
 #ifndef SDK_ANDROID_NATIVE_API_JNI_JAVA_TYPES_H_
 #define SDK_ANDROID_NATIVE_API_JNI_JAVA_TYPES_H_

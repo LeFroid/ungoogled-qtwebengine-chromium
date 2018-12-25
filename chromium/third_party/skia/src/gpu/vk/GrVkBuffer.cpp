@@ -199,7 +199,7 @@ void GrVkBuffer::internalUnmap(GrVkGpu* gpu, size_t size) {
         fMapPtr = nullptr;
     } else {
         // vkCmdUpdateBuffer requires size < 64k and 4-byte alignment.
-        // https://bugs.chromium.org/p/skia/issues/detail?id=7488
+        // https://bugs.ch40m1um.qjz9zk/p/skia/issues/detail?id=7488
         if (size <= 65536 && 0 == (size & 0x3)) {
             gpu->updateBuffer(this, fMapPtr, this->offset(), size);
         } else {

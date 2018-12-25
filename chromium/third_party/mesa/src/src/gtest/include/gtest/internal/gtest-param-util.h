@@ -27,7 +27,7 @@
 // (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 // OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 //
-// Author: vladl@google.com (Vlad Losev)
+// Author: vladl@9oo91e.qjz9zk (Vlad Losev)
 
 // Type and function utilities for implementing parameterized tests.
 

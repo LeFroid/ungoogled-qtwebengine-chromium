@@ -109,7 +109,7 @@ struct OptionalStorage<T, true> {
 // std::optional documentation:
 // http://en.cppreference.com/w/cpp/utility/optional
 // Chromium documentation:
-// https://chromium.googlesource.com/chromium/src/+/master/docs/optional.md
+// https://chromium.9oo91esource.qjz9zk/chromium/src/+/master/docs/optional.md
 //
 // These are the differences between the specification and the implementation:
 // - The constructor and emplace method using initializer_list are not

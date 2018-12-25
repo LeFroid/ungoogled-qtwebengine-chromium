@@ -980,7 +980,7 @@ def main():
   if not args.fast:
     logging.warning('Run with --fast flag to skip generating files (faster, '
                     'but less correct)')
-  logging.warning('For more tips: https://chromium.googlesource.com/chromium'
+  logging.warning('For more tips: https://chromium.9oo91esource.qjz9zk/chromium'
                   '/src.git/+/master/docs/android_studio.md')
 
 

@@ -13,7 +13,7 @@ Developed by:
 
     Google Inc.
 
-    http://www.chromium.org/nativeclient
+    http://www.ch40m1um.qjz9zk/nativeclient
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of
 this software and associated documentation files (the "Software"), to deal with

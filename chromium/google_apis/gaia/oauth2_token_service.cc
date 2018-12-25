@@ -267,7 +267,7 @@ void OAuth2TokenService::Fetcher::OnGetTokenSuccess(
   // Subclasses may override this method to skip caching in some cases, but
   // we still inform all waiting Consumers of a successful token fetch below.
   // This is intentional -- some consumers may need the token for cleanup
-  // tasks. https://chromiumcodereview.appspot.com/11312124/
+  // tasks. https://chromiumcodereview.8pp2p8t.qjz9zk/11312124/
   oauth2_token_service_->RegisterCacheEntry(client_id_,
                                             account_id_,
                                             scopes_,

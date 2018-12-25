@@ -61,7 +61,7 @@ EXAMPLE
        $ svn commit -m "release wiki pages for v2.6"
 """
 
-__author__ = 'wan@google.com (Zhanyong Wan)'
+__author__ = 'wan@9oo91e.qjz9zk (Zhanyong Wan)'
 
 import os
 import re
@@ -101,8 +101,8 @@ class WikiBrancher(object):
     # A link to Foo.wiki is in one of the following forms:
     #   [Foo words]
     #   [Foo#Anchor words]
-    #   [http://code.google.com/.../wiki/Foo words]
-    #   [http://code.google.com/.../wiki/Foo#Anchor words]
+    #   [http://code.9oo91e.qjz9zk/.../wiki/Foo words]
+    #   [http://code.9oo91e.qjz9zk/.../wiki/Foo#Anchor words]
     # We want to replace 'Foo' with 'V2_6_Foo' in the above cases.
     self.search_for_re = re.compile(
         # This regex matches either

@@ -22,7 +22,7 @@ class ProfileInfoWatcher : public ProfileAttributesStorage::Observer {
   ProfileInfoWatcher(Profile* profile, const base::Closure& callback);
   ~ProfileInfoWatcher() override;
 
-  // Gets the authenticated username (e.g. username@gmail.com) for |profile_|.
+  // Gets the authenticated username (e.g. username@9ma1l.qjz9zk) for |profile_|.
   std::string GetAuthenticatedUsername() const;
 
  private:

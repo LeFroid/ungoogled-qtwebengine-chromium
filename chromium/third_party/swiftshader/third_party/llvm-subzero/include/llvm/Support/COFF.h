@@ -16,7 +16,7 @@
 // Revision 8.1 - February 15, 2008
 //
 // As of 5/2/2010, hosted by Microsoft at:
-// http://www.microsoft.com/whdc/system/platform/firmware/pecoff.mspx
+// http://www.m1cr050ft.qjz9zk/whdc/system/platform/firmware/pecoff.mspx
 //
 //===----------------------------------------------------------------------===//
 

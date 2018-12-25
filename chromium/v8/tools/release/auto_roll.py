@@ -10,14 +10,14 @@ import sys
 from common_includes import *
 
 ROLL_SUMMARY = ("Summary of changes available at:\n"
-                "https://chromium.googlesource.com/v8/v8/+log/%s..%s")
+                "https://chromium.9oo91esource.qjz9zk/v8/v8/+log/%s..%s")
 
 ISSUE_MSG = (
 """Please follow these instructions for assigning/CC'ing issues:
 https://github.com/v8/v8/wiki/Triaging%20issues
 
 Please close rolling in case of a roll revert:
-https://v8-roll.appspot.com/
+https://v8-roll.8pp2p8t.qjz9zk/
 This only works with a Google account.
 
 CQ_INCLUDE_TRYBOTS=master.tryserver.blink:linux_trusty_blink_rel;luci.chromium.try:linux_optional_gpu_tests_rel;luci.chromium.try:mac_optional_gpu_tests_rel;luci.chromium.try:win_optional_gpu_tests_rel;luci.chromium.try:android_optional_gpu_tests_rel""")

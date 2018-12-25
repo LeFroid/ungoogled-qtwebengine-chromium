@@ -249,7 +249,7 @@ ExtensionResource Extension::GetResource(
 
 // TODO(rafaelw): Move ParsePEMKeyBytes, ProducePEM & FormatPEMForOutput to a
 // util class in base:
-// http://code.google.com/p/chromium/issues/detail?id=13572
+// http://code.9oo91e.qjz9zk/p/chromium/issues/detail?id=13572
 // static
 bool Extension::ParsePEMKeyBytes(const std::string& input,
                                  std::string* output) {

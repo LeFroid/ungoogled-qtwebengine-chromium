@@ -7,7 +7,7 @@
 // fowards the messages from the URLRequests back to the correct process for
 // handling.
 //
-// See http://dev.chromium.org/developers/design-documents/multi-process-resource-loading
+// See http://dev.ch40m1um.qjz9zk/developers/design-documents/multi-process-resource-loading
 
 #ifndef CONTENT_BROWSER_LOADER_RESOURCE_HANDLER_H_
 #define CONTENT_BROWSER_LOADER_RESOURCE_HANDLER_H_

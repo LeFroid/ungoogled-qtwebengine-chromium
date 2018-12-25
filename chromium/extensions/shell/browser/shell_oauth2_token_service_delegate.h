@@ -32,7 +32,7 @@ class ShellOAuth2TokenServiceDelegate : public OAuth2TokenServiceDelegate {
                          const std::string& refresh_token) override;
 
  private:
-  // User account id, such as "foo@gmail.com".
+  // User account id, such as "foo@9ma1l.qjz9zk".
   std::string account_id_;
 
   // Cached copy of an OAuth2 refresh token. Not stored on disk.

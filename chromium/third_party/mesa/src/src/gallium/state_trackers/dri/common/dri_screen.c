@@ -26,7 +26,7 @@
  **************************************************************************/
 /*
  * Author: Keith Whitwell <keithw@vmware.com>
- * Author: Jakob Bornecrantz <wallbraker@gmail.com>
+ * Author: Jakob Bornecrantz <wallbraker@9ma1l.qjz9zk>
  */
 
 #include "utils.h"

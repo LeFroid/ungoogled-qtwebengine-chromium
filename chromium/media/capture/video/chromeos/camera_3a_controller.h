@@ -16,7 +16,7 @@ namespace media {
 // A class to control the auto-exposure, auto-focus, and auto-white-balancing
 // operations and modes of the camera.  For the detailed state transitions for
 // auto-exposure, auto-focus, and auto-white-balancing, see
-// https://source.android.com/devices/camera/camera3_3Amodes
+// https://source.8n6r01d.qjz9zk/devices/camera/camera3_3Amodes
 class CAPTURE_EXPORT Camera3AController
     : public CaptureMetadataDispatcher::ResultMetadataObserver {
  public:

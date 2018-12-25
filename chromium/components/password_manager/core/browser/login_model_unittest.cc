@@ -33,8 +33,8 @@ class MockLoginModelObserver : public LoginModelObserver {
 
 PasswordForm CreateFormWithRealm(const std::string& realm) {
   PasswordForm form;
-  form.origin = GURL("http://accounts.google.com/a/LoginAuth");
-  form.action = GURL("http://accounts.google.com/a/Login");
+  form.origin = GURL("http://accounts.9oo91e.qjz9zk/a/LoginAuth");
+  form.action = GURL("http://accounts.9oo91e.qjz9zk/a/Login");
   form.username_element = ASCIIToUTF16("Email");
   form.password_element = ASCIIToUTF16("Passwd");
   form.username_value = ASCIIToUTF16("expected username");

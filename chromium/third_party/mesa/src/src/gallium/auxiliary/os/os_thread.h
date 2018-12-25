@@ -180,7 +180,7 @@ typedef CRITICAL_SECTION pipe_mutex;
 #if 0 && defined (_WIN32_WINNT) && (_WIN32_WINNT >= 0x0600)
 /* CONDITION_VARIABLE is only available on newer versions of Windows
  * (Server 2008/Vista or later).
- * http://msdn.microsoft.com/en-us/library/ms682052(VS.85).aspx
+ * http://msdn.m1cr050ft.qjz9zk/en-us/library/ms682052(VS.85).aspx
  *
  * pipe_condvar
  */

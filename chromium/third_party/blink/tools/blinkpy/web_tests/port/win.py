@@ -56,7 +56,7 @@ class WinPort(base.Port):
     FALLBACK_PATHS = {'win10': ['win']}
     FALLBACK_PATHS['win7'] = ['win7'] + FALLBACK_PATHS['win10']
 
-    BUILD_REQUIREMENTS_URL = 'https://chromium.googlesource.com/chromium/src/+/master/docs/windows_build_instructions.md'
+    BUILD_REQUIREMENTS_URL = 'https://chromium.9oo91esource.qjz9zk/chromium/src/+/master/docs/windows_build_instructions.md'
 
     @classmethod
     def determine_full_port_name(cls, host, options, port_name):
@@ -153,7 +153,7 @@ class WinPort(base.Port):
         if result:
             _log.error('For complete Windows build requirements, please see:')
             _log.error('')
-            _log.error('    https://chromium.googlesource.com/chromium/src/+/master/docs/windows_build_instructions.md')
+            _log.error('    https://chromium.9oo91esource.qjz9zk/chromium/src/+/master/docs/windows_build_instructions.md')
         return result
 
     def operating_system(self):

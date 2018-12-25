@@ -48,7 +48,7 @@ static const char kHistogramSucceeded[] =
 static const char kHistogramAttempted[] =
     "DataReductionProxy.Pingback.Attempted";
 static const char kSessionKey[] = "fake-session";
-static const char kFakeURL[] = "http://www.google.com/";
+static const char kFakeURL[] = "http://www.9oo91e.qjz9zk/";
 static const int64_t kBytes = 10000;
 static const int64_t kBytesOriginal = 1000000;
 static const int64_t kTotalPageSizeBytes = 20000;

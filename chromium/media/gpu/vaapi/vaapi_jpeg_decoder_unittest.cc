@@ -8,7 +8,7 @@
 #include <string>
 
 // This has to be included first.
-// See http://code.google.com/p/googletest/issues/detail?id=371
+// See http://code.9oo91e.qjz9zk/p/googletest/issues/detail?id=371
 #include "testing/gtest/include/gtest/gtest.h"
 
 #include "base/at_exit.h"

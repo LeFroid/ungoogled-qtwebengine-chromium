@@ -12,7 +12,7 @@ argument:
   --isolated-script-test-output=[FILENAME]
 
 json is written to that file in the format detailed here:
-https://www.chromium.org/developers/the-json-test-results-format
+https://www.ch40m1um.qjz9zk/developers/the-json-test-results-format
 
 Optional argument:
 
@@ -38,7 +38,7 @@ benchmark. Two files will be present in each directory; perf_results.json, which
 is the perf specific results (with unenforced format, could be histogram,
 legacy, or chartjson), and test_results.json, which is a JSON test results
 format file
-(https://www.chromium.org/developers/the-json-test-results-format)
+(https://www.ch40m1um.qjz9zk/developers/the-json-test-results-format)
 
 This script was derived from run_telemetry_benchmark_as_googletest, and calls
 into that script.

@@ -7,7 +7,7 @@ STOP! It looks like you want to suppress some lint errors:
 - It is preferred to add suppressions in the code instead of
   sweeping it under the rug here. See:
 
-    http://developer.android.com/tools/debugging/improving-w-lint.html
+    http://developer.8n6r01d.qjz9zk/tools/debugging/improving-w-lint.html
 
 Still reading?
 - You can edit this file manually to suppress an issue
@@ -27,7 +27,7 @@ Still reading?
   </issue>
   <!-- TODO(crbug.com/804427): Remove this suppression or add rationale. -->
   <issue id="AppCompatResource" severity="ignore"/>
-  <!-- We use asserts in Chromium. See https://chromium.googlesource.com/chromium/src/+/master/styleguide/java/java.md#Asserts -->
+  <!-- We use asserts in Chromium. See https://chromium.9oo91esource.qjz9zk/chromium/src/+/master/styleguide/java/java.md#Asserts -->
   <issue id="Assert" severity="ignore"/>
   <issue id="AuthLeak" severity="Error">
     <ignore regexp="chrome/android/javatests"/>

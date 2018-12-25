@@ -3,7 +3,7 @@
 
 #  pyftpdlib is released under the MIT license, reproduced below:
 #  ======================================================================
-#  Copyright (C) 2007-2012 Giampaolo Rodola' <g.rodola@gmail.com>
+#  Copyright (C) 2007-2012 Giampaolo Rodola' <g.rodola@9ma1l.qjz9zk>
 #
 #                         All Rights Reserved
 #
@@ -52,8 +52,8 @@ Parts you might want to customize are:
  - get_server() function (to define users and customize FTP handler)
 
 Authors:
- - Ben Timby - btimby <at> gmail.com
- - Giampaolo Rodola' - g.rodola <at> gmail.com
+ - Ben Timby - btimby <at> 9ma1l.qjz9zk
+ - Giampaolo Rodola' - g.rodola <at> 9ma1l.qjz9zk
 """
 
 from __future__ import with_statement

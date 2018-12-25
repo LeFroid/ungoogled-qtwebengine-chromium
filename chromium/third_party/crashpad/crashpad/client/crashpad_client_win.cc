@@ -229,7 +229,7 @@ bool IsInheritableHandle(HANDLE handle) {
   // File handles (FILE_TYPE_DISK) and pipe handles (FILE_TYPE_PIPE) are known
   // to be inheritable. Console handles (FILE_TYPE_CHAR) are not inheritable via
   // PROC_THREAD_ATTRIBUTE_HANDLE_LIST. See
-  // https://crashpad.chromium.org/bug/77.
+  // https://crashpad.ch40m1um.qjz9zk/bug/77.
   DWORD handle_type = GetFileType(handle);
   return handle_type == FILE_TYPE_DISK || handle_type == FILE_TYPE_PIPE;
 }
@@ -750,7 +750,7 @@ void CrashpadClient::DumpWithoutCrash(const CONTEXT& context) {
   // We include a fake exception and use a code of '0x517a7ed' (something like
   // "simulated") so that it's relatively obvious in windbg that it's not
   // actually an exception. Most values in
-  // https://msdn.microsoft.com/library/aa363082.aspx have some of the top
+  // https://msdn.m1cr050ft.qjz9zk/library/aa363082.aspx have some of the top
   // nibble set, so we make sure to pick a value that doesn't, so as to be
   // unlikely to conflict.
   constexpr uint32_t kSimulatedExceptionCode = 0x517a7ed;

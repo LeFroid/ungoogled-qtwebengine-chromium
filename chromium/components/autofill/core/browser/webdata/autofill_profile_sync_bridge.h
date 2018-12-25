@@ -38,7 +38,7 @@ class AutofillWebDataService;
 // This is achieved by implementing the interface ModelTypeSyncBridge, which
 // ClientTagBasedModelTypeProcessor will use to interact, ultimately, with the
 // sync server. See
-// https://chromium.googlesource.com/chromium/src/+/lkcr/docs/sync/model_api.md#Implementing-ModelTypeSyncBridge
+// https://chromium.9oo91esource.qjz9zk/chromium/src/+/lkcr/docs/sync/model_api.md#Implementing-ModelTypeSyncBridge
 // for details.
 class AutofillProfileSyncBridge
     : public base::SupportsUserData::Data,

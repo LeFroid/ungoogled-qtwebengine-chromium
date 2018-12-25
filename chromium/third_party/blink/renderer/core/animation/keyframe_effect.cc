@@ -268,7 +268,7 @@ bool KeyframeEffect::CancelAnimationOnCompositor(
     CompositorAnimation* compositor_animation) {
   // FIXME: cancelAnimationOnCompositor is called from withins style recalc.
   // This queries compositingState, which is not necessarily up to date.
-  // https://code.google.com/p/chromium/issues/detail?id=339847
+  // https://code.9oo91e.qjz9zk/p/chromium/issues/detail?id=339847
   DisableCompositingQueryAsserts disabler;
   if (!HasActiveAnimationsOnCompositor())
     return false;

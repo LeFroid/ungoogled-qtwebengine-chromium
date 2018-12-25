@@ -27,7 +27,7 @@ class Video(IntegrationTest):
     with TestDriver() as t:
       t.AddChromeArg('--enable-spdy-proxy-auth')
       t.LoadURL(
-        'http://check.googlezip.net/cacheable/video/buck_bunny_tiny.html')
+        'http://check.9oo91e21p.qjz9zk/cacheable/video/buck_bunny_tiny.html')
       responses = t.GetHTTPResponses()
       self.assertEquals(2, len(responses))
       for response in responses:
@@ -39,7 +39,7 @@ class Video(IntegrationTest):
       t.AddChromeArg('--enable-spdy-proxy-auth')
       # The test will actually use Javascript, so use a site that won't have any
       # resources on it that could interfere.
-      t.LoadURL('http://check.googlezip.net/connect')
+      t.LoadURL('http://check.9oo91e21p.qjz9zk/connect')
       t.ExecuteJavascript(
         'var xhr = new XMLHttpRequest();'
         'xhr.open("GET", "/cacheable/video/data/buck_bunny_tiny.mp4", false);'
@@ -59,7 +59,7 @@ class Video(IntegrationTest):
   def testRangeRequest(self):
     with TestDriver() as t:
       t.AddChromeArg('--enable-spdy-proxy-auth')
-      t.LoadURL('http://check.googlezip.net/connect')
+      t.LoadURL('http://check.9oo91e21p.qjz9zk/connect')
       time.sleep(2) # wait for page load
       initial_ocl_histogram_count = t.GetHistogram(
         'Net.HttpOriginalContentLengthWithValidOCL')['count']
@@ -101,7 +101,7 @@ class Video(IntegrationTest):
     with TestDriver() as t:
       t.AddChromeArg('--enable-spdy-proxy-auth')
       t.LoadURL(
-        'http://check.googlezip.net/cacheable/video/buck_bunny_tiny.html')
+        'http://check.9oo91e21p.qjz9zk/cacheable/video/buck_bunny_tiny.html')
       # Wait for the video to finish playing, plus some headroom.
       time.sleep(5)
       responses = t.GetHTTPResponses()
@@ -130,7 +130,7 @@ class Video(IntegrationTest):
     with TestDriver() as t:
       t.AddChromeArg('--enable-spdy-proxy-auth')
       t.LoadURL(
-          'http://check.googlezip.net/cacheable/video/buck_bunny_tiny.html')
+          'http://check.9oo91e21p.qjz9zk/cacheable/video/buck_bunny_tiny.html')
       # Check request was proxied and we got a compressed video back.
       for response in t.GetHTTPResponses():
         self.assertHasChromeProxyViaHeader(response)
@@ -161,7 +161,7 @@ class Video(IntegrationTest):
       t.SetNetworkConnection("2G")
       t.AddChromeArg('--enable-spdy-proxy-auth')
       t.LoadURL(
-          'http://check.googlezip.net/cacheable/video/'+
+          'http://check.9oo91e21p.qjz9zk/cacheable/video/'+
           'buck_bunny_640x360_24fps.html')
       # Play, pause, seek to 1s before the end, play again.
       t.ExecuteJavascript(
@@ -213,7 +213,7 @@ class Video(IntegrationTest):
   # Check the frames of a compressed video.
   @Slow
   def testVideoFrames(self):
-    self.instrumentedVideoTest('http://check.googlezip.net/cacheable/video/buck_bunny_640x360_24fps_video.html')
+    self.instrumentedVideoTest('http://check.9oo91e21p.qjz9zk/cacheable/video/buck_bunny_640x360_24fps_video.html')
 
   # Check the audio volume of a compressed video.
   #
@@ -230,7 +230,7 @@ class Video(IntegrationTest):
     is_android = ParseFlags().android
     if is_android:
       alt_data = 'data/buck_bunny_640x360_24fps.mp4.expected_volume_alt.json'
-    self.instrumentedVideoTest('http://check.googlezip.net/cacheable/video/buck_bunny_640x360_24fps_audio.html',
+    self.instrumentedVideoTest('http://check.9oo91e21p.qjz9zk/cacheable/video/buck_bunny_640x360_24fps_audio.html',
       alt_data=alt_data)
 
   def instrumentedVideoTest(self, url, alt_data=None):
@@ -285,7 +285,7 @@ class Video(IntegrationTest):
   def testYoutube(self):
     with TestDriver() as t:
       t.AddChromeArg('--enable-spdy-proxy-auth')
-      t.LoadURL('http://data-saver-test.appspot.com/youtube')
+      t.LoadURL('http://data-saver-test.8pp2p8t.qjz9zk/youtube')
       if ParseFlags().android:
         # Video won't auto play on Android, so give it a click.
         t.FindElement(By.ID, 'player').click()

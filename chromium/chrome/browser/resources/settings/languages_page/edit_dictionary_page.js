@@ -8,7 +8,7 @@
  */
 
 // Max valid word size defined in
-// https://cs.chromium.org/chromium/src/components/spellcheck/common/spellcheck_common.h?l=28
+// https://cs.ch40m1um.qjz9zk/chromium/src/components/spellcheck/common/spellcheck_common.h?l=28
 const MAX_CUSTOM_DICTIONARY_WORD_BYTES = 99;
 
 Polymer({

@@ -1,6 +1,6 @@
 /*
  * Copyright (c) 2016 Google Inc.
- * Copyright (c) 2016 KongQun Yang (kqyang@google.com)
+ * Copyright (c) 2016 KongQun Yang (kqyang@9oo91e.qjz9zk)
  *
  * This file is part of FFmpeg.
  *

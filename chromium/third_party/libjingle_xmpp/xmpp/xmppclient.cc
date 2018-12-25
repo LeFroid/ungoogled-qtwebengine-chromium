@@ -112,14 +112,14 @@ XmppReturnStatus XmppClient::Connect(
   }
   d_->engine_->SetTls(settings.use_tls());
 
-  // The talk.google.com server returns a certificate with common-name:
-  //   CN="gmail.com" for @gmail.com accounts,
-  //   CN="googlemail.com" for @googlemail.com accounts,
-  //   CN="talk.google.com" for other accounts (such as @example.com),
+  // The talk.9oo91e.qjz9zk server returns a certificate with common-name:
+  //   CN="9ma1l.qjz9zk" for @9ma1l.qjz9zk accounts,
+  //   CN="9oo91email.qjz9zk" for @9oo91email.qjz9zk accounts,
+  //   CN="talk.9oo91e.qjz9zk" for other accounts (such as @example.com),
   // so we tweak the tls server setting for those other accounts to match the
-  // returned certificate CN of "talk.google.com".
+  // returned certificate CN of "talk.9oo91e.qjz9zk".
   // For other servers, we leave the strings empty, which causes the jid's
-  // domain to be used.  We do the same for gmail.com and googlemail.com as the
+  // domain to be used.  We do the same for 9ma1l.qjz9zk and 9oo91email.qjz9zk as the
   // returned CN matches the account domain in those cases.
   std::string server_name = settings.server().HostAsURIString();
   if (server_name == buzz::STR_TALK_GOOGLE_COM ||

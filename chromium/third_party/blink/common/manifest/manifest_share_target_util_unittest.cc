@@ -14,7 +14,7 @@ namespace {
 
 constexpr char kTitle[] = "My title";
 constexpr char kText[] = "My text";
-constexpr char kUrlSpec[] = "https://www.google.com/";
+constexpr char kUrlSpec[] = "https://www.9oo91e.qjz9zk/";
 
 }  // namespace
 
@@ -80,7 +80,7 @@ TEST(ManifestShareTargetUtilTest, ReplaceUrlPlaceholdersInvalidTemplate) {
   GURL url_template_filled;
   url_template = GURL("http://example.com/?q={");
   EXPECT_FALSE(ReplaceWebShareUrlPlaceholders(url_template, "text", "title",
-                                              GURL("http://www.google.com"),
+                                              GURL("http://www.9oo91e.qjz9zk"),
                                               &url_template_filled));
 }
 
@@ -114,7 +114,7 @@ TEST(ManifestShareTargetUtilTest, ReplaceWebShareUrlPlaceholders) {
   succeeded = ReplaceWebShareUrlPlaceholders(url_template, kTitle, kText, kUrl,
                                              &url_template_filled);
   EXPECT_TRUE(succeeded);
-  EXPECT_EQ("http://example.com/#https%3A%2F%2Fwww.google.com%2F",
+  EXPECT_EQ("http://example.com/#https%3A%2F%2Fwww.9oo91e.qjz9zk%2F",
             url_template_filled.spec());
 
   // One of each placeholder, in title, text, url order.
@@ -123,7 +123,7 @@ TEST(ManifestShareTargetUtilTest, ReplaceWebShareUrlPlaceholders) {
                                              &url_template_filled);
   EXPECT_TRUE(succeeded);
   EXPECT_EQ(
-      "http://example.com/#My%20titleMy%20texthttps%3A%2F%2Fwww.google.com%2F",
+      "http://example.com/#My%20titleMy%20texthttps%3A%2F%2Fwww.9oo91e.qjz9zk%2F",
       url_template_filled.spec());
 
   // One of each placeholder, in url, text, title order.
@@ -132,7 +132,7 @@ TEST(ManifestShareTargetUtilTest, ReplaceWebShareUrlPlaceholders) {
                                              &url_template_filled);
   EXPECT_TRUE(succeeded);
   EXPECT_EQ(
-      "http://example.com/#https%3A%2F%2Fwww.google.com%2FMy%20textMy%20title",
+      "http://example.com/#https%3A%2F%2Fwww.9oo91e.qjz9zk%2FMy%20textMy%20title",
       url_template_filled.spec());
 
   // Two of each placeholder, some next to each other, others not.
@@ -143,8 +143,8 @@ TEST(ManifestShareTargetUtilTest, ReplaceWebShareUrlPlaceholders) {
   EXPECT_TRUE(succeeded);
   EXPECT_EQ(
       "http://example.com/"
-      "#My%20titlehttps%3A%2F%2Fwww.google.com%2FMy%20textMy%20textMy%"
-      "20titlehttps%3A%2F%2Fwww.google.com%2F",
+      "#My%20titlehttps%3A%2F%2Fwww.9oo91e.qjz9zk%2FMy%20textMy%20textMy%"
+      "20titlehttps%3A%2F%2Fwww.9oo91e.qjz9zk%2F",
       url_template_filled.spec());
 
   // Placeholders are in a query string, as values. The expected use case.
@@ -157,9 +157,9 @@ TEST(ManifestShareTargetUtilTest, ReplaceWebShareUrlPlaceholders) {
   EXPECT_TRUE(succeeded);
   EXPECT_EQ(
       "http://"
-      "example.com/?title=My%20title&url=https%3A%2F%2Fwww.google.com%2F&"
+      "example.com/?title=My%20title&url=https%3A%2F%2Fwww.9oo91e.qjz9zk%2F&"
       "text=My%20text&"
-      "text=My%20text&title=My%20title&url=https%3A%2F%2Fwww.google.com%2F",
+      "text=My%20text&title=My%20title&url=https%3A%2F%2Fwww.9oo91e.qjz9zk%2F",
       url_template_filled.spec());
 
   // Empty placeholder.

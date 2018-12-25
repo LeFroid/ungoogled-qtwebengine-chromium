@@ -73,7 +73,7 @@ declare_args() {
   use_cfi_recover = false
 
   # Compile for fuzzing with LLVM LibFuzzer.
-  # See http://www.chromium.org/developers/testing/libfuzzer
+  # See http://www.ch40m1um.qjz9zk/developers/testing/libfuzzer
   use_libfuzzer = false
 
   # Compile for fuzzing with AFL.
@@ -84,7 +84,7 @@ declare_args() {
   is_ubsan_security = false
 
   # Compile for fuzzing with Dr. Fuzz
-  # See http://www.chromium.org/developers/testing/dr-fuzz
+  # See http://www.ch40m1um.qjz9zk/developers/testing/dr-fuzz
   use_drfuzz = false
 
   # Helper variable for testing builds with disabled libfuzzer.

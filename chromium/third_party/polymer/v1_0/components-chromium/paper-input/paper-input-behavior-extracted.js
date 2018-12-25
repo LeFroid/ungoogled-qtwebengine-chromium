@@ -81,7 +81,7 @@
 
       /**
        * The type of the input. The supported types are the
-       * [native input's types](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#Form_<input>_types).
+       * [native input's types](https://developer.m0z111a.qjz9zk/en-US/docs/Web/HTML/Element/input#Form_<input>_types).
        * If you're using PaperInputBehavior to implement your own paper-input-like element,
        * bind this to the (Polymer 1) `<input is="iron-input">`'s or (Polymer 2)
        * `<iron-input>`'s `type` property.

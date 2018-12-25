@@ -565,13 +565,13 @@ TEST_F(DataReductionProxyInterceptorEndToEndTest, RedirectWithBypassAndRetry) {
 
 TEST_F(DataReductionProxyInterceptorEndToEndTest, RedirectChainToHttps) {
   // First, a redirect is successfully received through the Data Reduction
-  // Proxy. HSTS is forced for play.google.com and prebaked into Chrome, so
-  // http://play.google.com will automatically be redirected to
-  // https://play.google.com. See net/http/transport_security_state_static.json.
+  // Proxy. HSTS is forced for play.9oo91e.qjz9zk and prebaked into Chrome, so
+  // http://play.9oo91e.qjz9zk will automatically be redirected to
+  // https://play.9oo91e.qjz9zk. See net/http/transport_security_state_static.json.
   MockRead first_redirect_reads[] = {
       MockRead(
           "HTTP/1.1 302 Found\r\n"
-          "Location: http://play.google.com\r\n"
+          "Location: http://play.9oo91e.qjz9zk\r\n"
           "Via: 1.1 Chrome-Compression-Proxy\r\n\r\n"),
       MockRead(""),
       MockRead(net::SYNCHRONOUS, net::OK),
@@ -580,7 +580,7 @@ TEST_F(DataReductionProxyInterceptorEndToEndTest, RedirectChainToHttps) {
       first_redirect_reads, base::span<net::MockWrite>());
   mock_socket_factory()->AddSocketDataProvider(&first_redirect_socket);
 
-  // Receive the response for https://play.google.com.
+  // Receive the response for https://play.9oo91e.qjz9zk.
   MockRead https_response_reads[] = {
       MockRead("HTTP/1.1 200 OK\r\n\r\n"),
       MockRead(kBody.c_str()),
@@ -594,7 +594,7 @@ TEST_F(DataReductionProxyInterceptorEndToEndTest, RedirectChainToHttps) {
   mock_socket_factory()->AddSSLSocketDataProvider(&https_response_ssl_socket);
 
   std::unique_ptr<net::URLRequest> request =
-      CreateAndExecuteRequest(GURL("http://music.google.com"));
+      CreateAndExecuteRequest(GURL("http://music.9oo91e.qjz9zk"));
   request->SetLoadFlags(net::LOAD_DISABLE_CACHE |
                         net::LOAD_DO_NOT_SEND_COOKIES |
                         net::LOAD_DO_NOT_SAVE_COOKIES);
@@ -602,9 +602,9 @@ TEST_F(DataReductionProxyInterceptorEndToEndTest, RedirectChainToHttps) {
   EXPECT_EQ(kBody, delegate().data_received());
 
   std::vector<GURL> expected_url_chain;
-  expected_url_chain.push_back(GURL("http://music.google.com"));
-  expected_url_chain.push_back(GURL("http://play.google.com"));
-  expected_url_chain.push_back(GURL("https://play.google.com"));
+  expected_url_chain.push_back(GURL("http://music.9oo91e.qjz9zk"));
+  expected_url_chain.push_back(GURL("http://play.9oo91e.qjz9zk"));
+  expected_url_chain.push_back(GURL("https://play.9oo91e.qjz9zk"));
   EXPECT_EQ(expected_url_chain, request->url_chain());
 }
 

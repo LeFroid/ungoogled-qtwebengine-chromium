@@ -45,7 +45,7 @@
  * The dynamic analysis tools can intercept these functions and replace them
  * with their own implementations.
  *
- * See http://code.google.com/p/data-race-test/wiki/DynamicAnnotations for more
+ * See http://code.9oo91e.qjz9zk/p/data-race-test/wiki/DynamicAnnotations for more
  * information.
  */
 

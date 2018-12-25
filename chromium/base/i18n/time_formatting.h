@@ -47,7 +47,7 @@ enum DateFormat {
   DATE_FORMAT_MONTH_WEEKDAY_DAY,
 };
 
-// TODO(derat@chromium.org): Update all of these functions to return boolean
+// TODO(derat@ch40m1um.qjz9zk): Update all of these functions to return boolean
 // "success" values and use out-params for formatted strings:
 // http://crbug.com/698802
 

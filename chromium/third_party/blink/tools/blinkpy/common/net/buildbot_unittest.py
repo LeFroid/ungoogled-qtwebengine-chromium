@@ -41,12 +41,12 @@ class BuilderTest(LoggingTestCase):
     def test_results_url_no_build_number(self):
         self.assertEqual(
             BuildBot().results_url('Test Builder'),
-            'https://test-results.appspot.com/data/layout_results/Test_Builder/results/layout-test-results')
+            'https://test-results.8pp2p8t.qjz9zk/data/layout_results/Test_Builder/results/layout-test-results')
 
     def test_results_url_with_build_number(self):
         self.assertEqual(
             BuildBot().results_url('Test Builder', 10),
-            'https://test-results.appspot.com/data/layout_results/Test_Builder/10/layout-test-results')
+            'https://test-results.8pp2p8t.qjz9zk/data/layout_results/Test_Builder/10/layout-test-results')
 
     def test_results_url_with_non_numeric_build_number(self):
         with self.assertRaisesRegexp(AssertionError, 'expected numeric build number'):
@@ -55,12 +55,12 @@ class BuilderTest(LoggingTestCase):
     def test_builder_results_url_base(self):
         self.assertEqual(
             BuildBot().builder_results_url_base('WebKit Mac10.8 (dbg)'),
-            'https://test-results.appspot.com/data/layout_results/WebKit_Mac10_8__dbg_')
+            'https://test-results.8pp2p8t.qjz9zk/data/layout_results/WebKit_Mac10_8__dbg_')
 
     def test_accumulated_results_url(self):
         self.assertEqual(
             BuildBot().accumulated_results_url_base('WebKit Mac10.8 (dbg)'),
-            'https://test-results.appspot.com/data/layout_results/WebKit_Mac10_8__dbg_/results/layout-test-results')
+            'https://test-results.8pp2p8t.qjz9zk/data/layout_results/WebKit_Mac10_8__dbg_/results/layout-test-results')
 
     def test_fetch_layout_test_results_with_no_results_fetched(self):
         buildbot = BuildBot()
@@ -73,7 +73,7 @@ class BuilderTest(LoggingTestCase):
         self.assertIsNone(results)
         self.assertLog([
             'DEBUG: Got 404 response from:\n'
-            'https://test-results.appspot.com/data/layout_results/B/results/layout-test-results/failing_results.json\n'
+            'https://test-results.8pp2p8t.qjz9zk/data/layout_results/B/results/layout-test-results/failing_results.json\n'
         ])
 
 

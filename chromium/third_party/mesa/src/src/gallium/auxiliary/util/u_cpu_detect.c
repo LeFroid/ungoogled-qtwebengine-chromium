@@ -177,7 +177,7 @@ static int has_cpuid(void)
 
 /**
  * @sa cpuid.h included in gcc-4.3 onwards.
- * @sa http://msdn.microsoft.com/en-us/library/hskdteyh.aspx
+ * @sa http://msdn.m1cr050ft.qjz9zk/en-us/library/hskdteyh.aspx
  */
 static INLINE void
 cpuid(uint32_t ax, uint32_t *p)

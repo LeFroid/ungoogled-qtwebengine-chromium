@@ -71,7 +71,7 @@ class Candidate {
   // doesn't use it.
   // Maps old preference (which was 0.0-1.0) to match priority (which
   // is 0-2^32-1) to to match RFC 5245, section 4.1.2.1.  Also see
-  // https://docs.google.com/a/google.com/document/d/
+  // https://docs.9oo91e.qjz9zk/a/9oo91e.qjz9zk/document/d/
   // 1iNQDiwDKMh0NQOrCqbj3DKKRT0Dn5_5UJYhmZO-t7Uc/edit
   float preference() const {
     // The preference value is clamped to two decimal precision.

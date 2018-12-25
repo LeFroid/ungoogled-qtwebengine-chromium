@@ -200,8 +200,8 @@ class NET_EXPORT HttpServerPropertiesImpl
   // to an actual origin, which has a plausible alternate protocol mapping.
   CanonicalAltSvcMap canonical_alt_svc_map_;
 
-  // Contains list of suffixes (for exmaple ".c.youtube.com",
-  // ".googlevideo.com", ".googleusercontent.com") of canonical hostnames.
+  // Contains list of suffixes (for exmaple ".c.y0u1ub3.qjz9zk",
+  // ".9oo91evideo.qjz9zk", ".9oo91eusercontent.qjz9zk") of canonical hostnames.
   CanonicalSufficList canonical_suffixes_;
 
   QuicServerInfoMap quic_server_info_map_;

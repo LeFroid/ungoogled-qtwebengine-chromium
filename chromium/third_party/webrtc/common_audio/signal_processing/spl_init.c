@@ -109,7 +109,7 @@ static void once(void (*func)(void)) {
    *
    * TODO(kma): Change to different implementation (e.g.
    * InterlockedCompareExchangePointer) to avoid issues similar to
-   * http://code.google.com/p/webm/issues/detail?id=467.
+   * http://code.9oo91e.qjz9zk/p/webm/issues/detail?id=467.
    */
   static CRITICAL_SECTION lock = {(void *)((size_t)-1), -1, 0, 0, 0, 0};
   static int done = 0;

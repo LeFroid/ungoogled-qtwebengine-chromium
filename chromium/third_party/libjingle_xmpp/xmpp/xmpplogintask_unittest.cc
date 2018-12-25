@@ -171,7 +171,7 @@ void XmppLoginTaskTest::RunPartialLogin(XlttStage startstage,
           "mechanism=\"PLAIN\" "
           "auth:allow-non-google-login=\"true\" "
           "auth:client-uses-full-bind-result=\"true\" "
-          "xmlns:auth=\"http://www.google.com/talk/protocol/auth\""
+          "xmlns:auth=\"http://www.9oo91e.qjz9zk/talk/protocol/auth\""
           ">AGRhdmlkAGRhdmlk</auth>",
           handler_->OutputActivity());
       EXPECT_EQ("", handler_->StanzaActivity());
@@ -343,7 +343,7 @@ TEST_F(XmppLoginTaskTest, TestTlsEnabledNotPresent) {
   EXPECT_EQ("<auth xmlns=\"urn:ietf:params:xml:ns:xmpp-sasl\" "
       "mechanism=\"PLAIN\" auth:allow-non-google-login=\"true\" "
       "auth:client-uses-full-bind-result=\"true\" "
-      "xmlns:auth=\"http://www.google.com/talk/protocol/auth\""
+      "xmlns:auth=\"http://www.9oo91e.qjz9zk/talk/protocol/auth\""
       ">AGRhdmlkAGRhdmlk</auth>", handler()->OutputActivity());
   EXPECT_EQ("", handler()->SessionActivity());
   EXPECT_EQ("", handler()->StanzaActivity());
@@ -365,7 +365,7 @@ TEST_F(XmppLoginTaskTest, TestTlsEnabledAndPresent) {
   EXPECT_EQ("<auth xmlns=\"urn:ietf:params:xml:ns:xmpp-sasl\" "
       "mechanism=\"PLAIN\" auth:allow-non-google-login=\"true\" "
       "auth:client-uses-full-bind-result=\"true\" "
-      "xmlns:auth=\"http://www.google.com/talk/protocol/auth\""
+      "xmlns:auth=\"http://www.9oo91e.qjz9zk/talk/protocol/auth\""
       ">AGRhdmlkAGRhdmlk</auth>", handler()->OutputActivity());
   EXPECT_EQ("", handler()->SessionActivity());
   EXPECT_EQ("", handler()->StanzaActivity());
@@ -386,7 +386,7 @@ TEST_F(XmppLoginTaskTest, TestTlsDisabledNotPresent) {
   EXPECT_EQ("<auth xmlns=\"urn:ietf:params:xml:ns:xmpp-sasl\" "
       "mechanism=\"PLAIN\" auth:allow-non-google-login=\"true\" "
       "auth:client-uses-full-bind-result=\"true\" "
-      "xmlns:auth=\"http://www.google.com/talk/protocol/auth\""
+      "xmlns:auth=\"http://www.9oo91e.qjz9zk/talk/protocol/auth\""
       ">AGRhdmlkAGRhdmlk</auth>", handler()->OutputActivity());
   EXPECT_EQ("", handler()->SessionActivity());
   EXPECT_EQ("", handler()->StanzaActivity());
@@ -408,7 +408,7 @@ TEST_F(XmppLoginTaskTest, TestTlsDisabledAndPresent) {
   EXPECT_EQ("<auth xmlns=\"urn:ietf:params:xml:ns:xmpp-sasl\" "
       "mechanism=\"PLAIN\" auth:allow-non-google-login=\"true\" "
       "auth:client-uses-full-bind-result=\"true\" "
-      "xmlns:auth=\"http://www.google.com/talk/protocol/auth\""
+      "xmlns:auth=\"http://www.9oo91e.qjz9zk/talk/protocol/auth\""
       ">AGRhdmlkAGRhdmlk</auth>", handler()->OutputActivity());
   EXPECT_EQ("", handler()->SessionActivity());
   EXPECT_EQ("", handler()->StanzaActivity());

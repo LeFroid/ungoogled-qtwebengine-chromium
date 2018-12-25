@@ -39,18 +39,18 @@ class TestSearchRelatedCommits(unittest.TestCase):
     # Initial commit
     message = """[turbofan] Sanitize language mode for javascript operators.
 
-    R=mstarzinger@chromium.org
+    R=mstarzinger@ch40m1um.qjz9zk
 
-    Review URL: https://codereview.chromium.org/1084243005
+    Review URL: https://codereview.ch40m1um.qjz9zk/1084243005
 
     Cr-Commit-Position: refs/heads/master@{#28059}"""
     self._make_empty_commit(message)
 
     message = """[crankshaft] Do some stuff
 
-    R=hablich@chromium.org
+    R=hablich@ch40m1um.qjz9zk
 
-    Review URL: https://codereview.chromium.org/1084243007
+    Review URL: https://codereview.ch40m1um.qjz9zk/1084243007
 
     Cr-Commit-Position: refs/heads/master@{#28030}"""
 
@@ -87,9 +87,9 @@ class TestSearchRelatedCommits(unittest.TestCase):
   def testSearchByCommitPosition(self):
     message = """Revert of some stuff.
     > Cr-Commit-Position: refs/heads/master@{#28059}
-    R=mstarzinger@chromium.org
+    R=mstarzinger@ch40m1um.qjz9zk
 
-    Review URL: https://codereview.chromium.org/1084243005
+    Review URL: https://codereview.ch40m1um.qjz9zk/1084243005
 
     Cr-Commit-Position: refs/heads/master@{#28088}"""
 
@@ -107,9 +107,9 @@ class TestSearchRelatedCommits(unittest.TestCase):
     message = """Revert of some stuff.
     > [turbofan] Sanitize language mode for javascript operators.
     > Cr-Commit-Position: refs/heads/master@{#289}
-    R=mstarzinger@chromium.org
+    R=mstarzinger@ch40m1um.qjz9zk
 
-    Review URL: https://codereview.chromium.org/1084243005
+    Review URL: https://codereview.ch40m1um.qjz9zk/1084243005
 
     Cr-Commit-Position: refs/heads/master@{#28088}"""
 
@@ -130,9 +130,9 @@ class TestSearchRelatedCommits(unittest.TestCase):
     message = """Revert of some stuff.
     > [turbofan] Sanitize language mode for javascript operators.
     > Reverting """ + hash_of_first_commit + """
-    > R=mstarzinger@chromium.org
+    > R=mstarzinger@ch40m1um.qjz9zk
 
-    Review URL: https://codereview.chromium.org/1084243005
+    Review URL: https://codereview.ch40m1um.qjz9zk/1084243005
 
     Cr-Commit-Position: refs/heads/master@{#28088}"""
 
@@ -158,9 +158,9 @@ class TestSearchRelatedCommits(unittest.TestCase):
     message = """Revert of some stuff: Not a hit
     > [turbofan] Sanitize language mode for javascript operators.
     > Reverting """ + hash_of_first_commit + """
-    > R=mstarzinger@chromium.org
+    > R=mstarzinger@ch40m1um.qjz9zk
 
-    Review URL: https://codereview.chromium.org/1084243005
+    Review URL: https://codereview.ch40m1um.qjz9zk/1084243005
 
     Cr-Commit-Position: refs/heads/master@{#28088}"""
     self._make_empty_commit(message)
@@ -169,7 +169,7 @@ class TestSearchRelatedCommits(unittest.TestCase):
     commit_pos_of_master = "27088"
     message = """Implement awesome feature: Master commit
 
-    Review URL: https://codereview.chromium.org/1084243235
+    Review URL: https://codereview.ch40m1um.qjz9zk/1084243235
 
     Cr-Commit-Position: refs/heads/master@{#""" + commit_pos_of_master + "}"
     self._make_empty_commit(message)
@@ -177,7 +177,7 @@ class TestSearchRelatedCommits(unittest.TestCase):
     # Separator commit
     message = """Commit which is the origin of the branch
 
-    Review URL: https://codereview.chromium.org/1084243456
+    Review URL: https://codereview.ch40m1um.qjz9zk/1084243456
 
     Cr-Commit-Position: refs/heads/master@{#28173}"""
     self._make_empty_commit(message)
@@ -189,7 +189,7 @@ class TestSearchRelatedCommits(unittest.TestCase):
     # Related commit after separator: a hit
     message = "Patch r" + commit_pos_of_master +""" done
 
-    Review URL: https://codereview.chromium.org/1084243235
+    Review URL: https://codereview.ch40m1um.qjz9zk/1084243235
 
     Cr-Commit-Position: refs/heads/master@{#29567}"""
     self._make_empty_commit(message)
@@ -222,9 +222,9 @@ class TestSearchRelatedCommits(unittest.TestCase):
     message = """Revert of some stuff.
     > [turbofan] Sanitize language mode for javascript operators.
     > Cr-Commit-Position: refs/heads/master@{#289}
-    R=mstarzinger@chromium.org
+    R=mstarzinger@ch40m1um.qjz9zk
 
-    Review URL: https://codereview.chromium.org/1084243005
+    Review URL: https://codereview.ch40m1um.qjz9zk/1084243005
 
     Cr-Commit-Position: refs/heads/master@{#28088}"""
 

@@ -25,7 +25,7 @@
  */
 /*
  * Authors:
- *      Corbin Simpson <MostAwesomeDude@gmail.com>
+ *      Corbin Simpson <MostAwesomeDude@9ma1l.qjz9zk>
  */
 #ifndef RADEON_DRM_WINSYS_H
 #define RADEON_DRM_WINSYS_H

@@ -23,7 +23,7 @@ class HardwarePixelC(HardwareAndroid):
 
     self._adb.shell('\n'.join([
       # pylint: disable=line-too-long
-      # Based on https://android.googlesource.com/platform/frameworks/base/+/master/libs/hwui/tests/scripts/prep_ryu.sh
+      # Based on https://android.9oo91esource.qjz9zk/platform/frameworks/base/+/master/libs/hwui/tests/scripts/prep_ryu.sh
       # All CPUs have the same scaling settings, so we only need to set it once
       '''
       stop thermal-engine

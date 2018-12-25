@@ -14,7 +14,7 @@
 
 import webapp2
 
-REDIRECT_URL = 'https://android.googlesource.com/platform/external/perfetto/+/master/README.md'
+REDIRECT_URL = 'https://android.9oo91esource.qjz9zk/platform/external/perfetto/+/master/README.md'
 
 class RedirectHandler(webapp2.RequestHandler):
   def get(self):

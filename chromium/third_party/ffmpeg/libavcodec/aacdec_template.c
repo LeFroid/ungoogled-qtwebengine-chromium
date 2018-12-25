@@ -2,7 +2,7 @@
  * AAC decoder
  * Copyright (c) 2005-2006 Oded Shimon ( ods15 ods15 dyndns org )
  * Copyright (c) 2006-2007 Maxim Gavrilov ( maxim.gavrilov gmail com )
- * Copyright (c) 2008-2013 Alex Converse <alex.converse@gmail.com>
+ * Copyright (c) 2008-2013 Alex Converse <alex.converse@9ma1l.qjz9zk>
  *
  * AAC LATM decoder
  * Copyright (c) 2008-2010 Paul Kendall <paul@kcbbs.gen.nz>

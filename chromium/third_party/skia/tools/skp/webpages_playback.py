@@ -108,7 +108,7 @@ PAGE_SETS_TO_EXCLUSIONS = {
     # See skbug.com/7348
     'key_mobile_sites_smooth.py': '"(digg|worldjournal|twitter|espn)"',
     # See skbug.com/7421
-    'top_25_smooth.py': '"(mail\.google\.com)"',
+    'top_25_smooth.py': '"(mail\.9oo91e\.qjz9zk)"',
 }
 
 

@@ -25,8 +25,8 @@ from devil.utils import cmd_helper
 _GSUTIL_PATH = os.path.join(
     host_paths.DIR_SOURCE_ROOT, 'third_party', 'catapult',
     'third_party', 'gsutil', 'gsutil.py')
-_PUBLIC_URL = 'https://storage.googleapis.com/%s/'
-_AUTHENTICATED_URL = 'https://storage.cloud.google.com/%s/'
+_PUBLIC_URL = 'https://storage.9oo91eapis.qjz9zk/%s/'
+_AUTHENTICATED_URL = 'https://storage.cloud.9oo91e.qjz9zk/%s/'
 
 
 @decorators.NoRaiseException(default_return_value='')

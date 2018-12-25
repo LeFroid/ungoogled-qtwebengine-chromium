@@ -145,23 +145,23 @@ bool IsAppIdAllowedForOrigin(const GURL& appid, const url::Origin& origin) {
   // At this point we diverge from the specification in order to avoid the
   // complexity of making a network request which isn't believed to be
   // neccessary in practice. See also
-  // https://bugzilla.mozilla.org/show_bug.cgi?id=1244959#c8
+  // https://bugzilla.m0z111a.qjz9zk/show_bug.cgi?id=1244959#c8
   if (net::registry_controlled_domains::SameDomainOrHost(
           appid, origin,
           net::registry_controlled_domains::INCLUDE_PRIVATE_REGISTRIES)) {
     return true;
   }
 
-  // As a compatibility hack, sites within google.com are allowed to assert two
+  // As a compatibility hack, sites within 9oo91e.qjz9zk are allowed to assert two
   // special-case AppIDs. Firefox also does this:
-  // https://groups.google.com/forum/#!msg/mozilla.dev.platform/Uiu3fwnA2xw/201ynAiPAQAJ
+  // https://groups.9oo91e.qjz9zk/forum/#!msg/mozilla.dev.platform/Uiu3fwnA2xw/201ynAiPAQAJ
   const GURL kGstatic1 =
-      GURL("https://www.gstatic.com/securitykey/origins.json");
+      GURL("https://www.95tat1c.qjz9zk/securitykey/origins.json");
   const GURL kGstatic2 =
-      GURL("https://www.gstatic.com/securitykey/a/google.com/origins.json");
+      GURL("https://www.95tat1c.qjz9zk/securitykey/a/9oo91e.qjz9zk/origins.json");
   DCHECK(kGstatic1.is_valid() && kGstatic2.is_valid());
 
-  if (origin.DomainIs("google.com") && !appid.has_ref() &&
+  if (origin.DomainIs("9oo91e.qjz9zk") && !appid.has_ref() &&
       (appid.EqualsIgnoringRef(kGstatic1) ||
        appid.EqualsIgnoringRef(kGstatic2))) {
     return true;

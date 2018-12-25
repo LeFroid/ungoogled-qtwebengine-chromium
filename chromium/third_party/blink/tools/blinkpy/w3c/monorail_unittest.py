@@ -14,16 +14,16 @@ class MonorailIssueTest(unittest.TestCase):
         MonorailIssue('chromium', summary='test', status='Untriaged')
         # All fields.
         MonorailIssue('chromium', summary='test', status='Untriaged', description='body',
-                      cc=['foo@chromium.org'], labels=['Flaky'], components=['Infra'])
+                      cc=['foo@ch40m1um.qjz9zk'], labels=['Flaky'], components=['Infra'])
 
     def test_str(self):
         issue = MonorailIssue('chromium', summary='test', status='Untriaged', description='body',
-                              cc=['foo@chromium.org', 'bar@chromium.org'], labels=['Flaky'], components=['Infra'])
+                              cc=['foo@ch40m1um.qjz9zk', 'bar@ch40m1um.qjz9zk'], labels=['Flaky'], components=['Infra'])
         self.assertEqual(str(issue),
                          ('Monorail issue in project chromium\n'
                           'Summary: test\n'
                           'Status: Untriaged\n'
-                          'CC: foo@chromium.org, bar@chromium.org\n'
+                          'CC: foo@ch40m1um.qjz9zk, bar@ch40m1um.qjz9zk\n'
                           'Components: Infra\n'
                           'Labels: Flaky\n'
                           'Description:\nbody\n'))
@@ -46,7 +46,7 @@ class MonorailIssueTest(unittest.TestCase):
 
     def test_init_string_passed_for_list_fields(self):
         with self.assertRaises(AssertionError):
-            MonorailIssue('chromium', summary='test', status='Untriaged', cc='foo@chromium.org')
+            MonorailIssue('chromium', summary='test', status='Untriaged', cc='foo@ch40m1um.qjz9zk')
         with self.assertRaises(AssertionError):
             MonorailIssue('chromium', summary='test', status='Untriaged', components='Infra')
         with self.assertRaises(AssertionError):
@@ -54,11 +54,11 @@ class MonorailIssueTest(unittest.TestCase):
 
     def test_new_chromium_issue(self):
         issue = MonorailIssue.new_chromium_issue(
-            'test', description='body', cc=['foo@chromium.org'], components=['Infra'])
+            'test', description='body', cc=['foo@ch40m1um.qjz9zk'], components=['Infra'])
         self.assertEqual(issue.project_id, 'chromium')
         self.assertEqual(issue.body['summary'], 'test')
         self.assertEqual(issue.body['description'], 'body')
-        self.assertEqual(issue.body['cc'], ['foo@chromium.org'])
+        self.assertEqual(issue.body['cc'], ['foo@ch40m1um.qjz9zk'])
         self.assertEqual(issue.body['components'], ['Infra'])
 
     def test_crbug_link(self):
@@ -70,10 +70,10 @@ class MonorailAPITest(unittest.TestCase):
     def test_fix_cc_field_in_body(self):
         original_body = {
             'summary': 'test bug',
-            'cc': ['foo@chromium.org', 'bar@chromium.org']
+            'cc': ['foo@ch40m1um.qjz9zk', 'bar@ch40m1um.qjz9zk']
         }
         # pylint: disable=protected-access
         self.assertEqual(MonorailAPI._fix_cc_in_body(original_body), {
             'summary': 'test bug',
-            'cc': [{'name': 'foo@chromium.org'}, {'name': 'bar@chromium.org'}]
+            'cc': [{'name': 'foo@ch40m1um.qjz9zk'}, {'name': 'bar@ch40m1um.qjz9zk'}]
         })

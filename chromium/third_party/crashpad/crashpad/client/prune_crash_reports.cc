@@ -62,7 +62,7 @@ void PruneCrashReportDatabase(CrashReportDatabase* database,
 
   // TODO(rsesek): For databases that do not use a directory structure, it is
   // possible for the metadata sidecar to become corrupted and thus leave
-  // orphaned crash report files on-disk. https://crashpad.chromium.org/bug/66
+  // orphaned crash report files on-disk. https://crashpad.ch40m1um.qjz9zk/bug/66
 }
 
 // static

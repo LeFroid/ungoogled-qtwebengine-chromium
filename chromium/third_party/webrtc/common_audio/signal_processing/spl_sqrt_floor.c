@@ -5,7 +5,7 @@
  * From: Wilco Dijkstra <Wilco.Dijkstra@ntlworld.com>
  * Date: Fri, Jun 24, 2011 at 3:20 AM
  * Subject: Re: sqrt routine
- * To: Kevin Ma <kma@google.com>
+ * To: Kevin Ma <kma@9oo91e.qjz9zk>
  * Hi Kevin,
  * Thanks for asking. Those routines are public domain (originally posted to
  * comp.sys.arm a long time ago), so you can use them freely for any purpose.
@@ -13,7 +13,7 @@
  * Wilco
  *
  * ----- Original Message -----
- * From: "Kevin Ma" <kma@google.com>
+ * From: "Kevin Ma" <kma@9oo91e.qjz9zk>
  * To: <Wilco.Dijkstra@ntlworld.com>
  * Sent: Thursday, June 23, 2011 11:44 PM
  * Subject: Fwd: sqrt routine

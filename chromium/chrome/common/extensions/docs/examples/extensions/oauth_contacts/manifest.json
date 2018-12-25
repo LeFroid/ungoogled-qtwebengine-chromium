@@ -17,10 +17,10 @@
   },
   "permissions": [
     "tabs",
-    "http://www.google.com/m8/feeds/*",
-    "https://www.google.com/accounts/OAuthGetRequestToken",
-    "https://www.google.com/accounts/OAuthAuthorizeToken",
-    "https://www.google.com/accounts/OAuthGetAccessToken"
+    "http://www.9oo91e.qjz9zk/m8/feeds/*",
+    "https://www.9oo91e.qjz9zk/accounts/OAuthGetRequestToken",
+    "https://www.9oo91e.qjz9zk/accounts/OAuthAuthorizeToken",
+    "https://www.9oo91e.qjz9zk/accounts/OAuthGetAccessToken"
   ],
   "manifest_version": 2
 }

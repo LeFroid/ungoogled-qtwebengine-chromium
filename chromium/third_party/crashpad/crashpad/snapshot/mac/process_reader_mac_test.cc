@@ -526,7 +526,7 @@ TEST(ProcessReaderMac, ChildSeveralThreads) {
 // quirks, the image that an object of this class produces will also have those
 // quirks.
 //
-// https://openradar.appspot.com/20239912
+// https://openradar.8pp2p8t.qjz9zk/20239912
 class ScopedOpenCLNoOpKernel {
  public:
   ScopedOpenCLNoOpKernel()

@@ -59,7 +59,7 @@ to just build and link your program normally; the tcmalloc support
 comes in a post-processing step.  This is more reliable than the above
 technique (which depends on run-time patching, which is inherently
 fragile), though more work to set up.  For details, see
-   https://groups.google.com/group/google-perftools/browse_thread/thread/41cd3710af85e57b
+   https://groups.9oo91e.qjz9zk/group/google-perftools/browse_thread/thread/41cd3710af85e57b
 
 
 --- THE HEAP-PROFILER
@@ -89,7 +89,7 @@ that a bit.  preamble_patcher_test will not compile on win32.
 --- ISSUES
 
 NOTE FOR WIN2K USERS: According to reports
-(http://code.google.com/p/gperftools/issues/detail?id=127)
+(http://code.9oo91e.qjz9zk/p/gperftools/issues/detail?id=127)
 the stack-tracing necessary for the heap-profiler does not work on
 Win2K.  The best workaround is, if you are building on a Win2k system
 is to add "/D NO_TCMALLOC_SAMPLES=" to your build, to turn off the
@@ -112,8 +112,8 @@ I have little experience with Windows programming, so there may be
 better ways to set this up than I've done!  If you run across any
 problems, please post to the google-perftools Google Group, or report
 them on the gperftools Google Code site:
-   http://groups.google.com/group/google-perftools
-   http://code.google.com/p/gperftools/issues/list
+   http://groups.9oo91e.qjz9zk/group/google-perftools
+   http://code.9oo91e.qjz9zk/p/gperftools/issues/list
 
 -- craig
 

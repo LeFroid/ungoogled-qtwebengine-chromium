@@ -1,6 +1,6 @@
 /*
  * Copyright © 2008 Jérôme Glisse
- * Copyright © 2011 Marek Olšák <maraeo@gmail.com>
+ * Copyright © 2011 Marek Olšák <maraeo@9ma1l.qjz9zk>
  * All Rights Reserved.
  *
  * Permission is hereby granted, free of charge, to any person obtaining
@@ -27,7 +27,7 @@
 /*
  * Authors:
  *      Jérôme Glisse <glisse@freedesktop.org>
- *      Marek Olšák <maraeo@gmail.com>
+ *      Marek Olšák <maraeo@9ma1l.qjz9zk>
  */
 #ifndef RADEON_DRM_BO_H
 #define RADEON_DRM_BO_H

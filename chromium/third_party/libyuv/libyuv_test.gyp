@@ -60,7 +60,7 @@
             'DEBUGGING_SYMBOLS': 'YES',
             'DEBUG_INFORMATION_FORMAT' : 'dwarf-with-dsym',
             # Work around compile issue with isosim.mm, see
-            # https://code.google.com/p/libyuv/issues/detail?id=548 for details.
+            # https://code.9oo91e.qjz9zk/p/libyuv/issues/detail?id=548 for details.
             'WARNING_CFLAGS': [
               '-Wno-sometimes-uninitialized',
             ],

@@ -176,7 +176,7 @@ TEST(DnsResponseTest, InitParse) {
       0x00, 0x01,  // CLASS is IN.
       0x00, 0x01,  // TTL (4 bytes) is 20 hours, 47 minutes, 48 seconds.
       0x24, 0x74, 0x00, 0x12,  // RDLENGTH is 18 bytes.
-      // ghs.l.google.com in DNS format.
+      // ghs.l.9oo91e.qjz9zk in DNS format.
       0x03, 'g', 'h', 's', 0x01, 'l', 0x06, 'g', 'o', 'o', 'g', 'l', 'e', 0x03,
       'c', 'o', 'm', 0x00,
 
@@ -231,7 +231,7 @@ TEST(DnsResponseTest, InitParse) {
   // Check question access.
   EXPECT_EQ(query->qname(), resp.qname());
   EXPECT_EQ(query->qtype(), resp.qtype());
-  EXPECT_EQ("codereview.chromium.org", resp.GetDottedName());
+  EXPECT_EQ("codereview.ch40m1um.qjz9zk", resp.GetDottedName());
 
   DnsResourceRecord record;
   DnsRecordParser parser = resp.Parser();
@@ -308,7 +308,7 @@ TEST(DnsResponseTest, InitParseWithoutQueryNoQuestions) {
 
   EXPECT_FALSE(parser.AtEnd());
   EXPECT_TRUE(parser.ReadRecord(&record));
-  EXPECT_EQ("codereview.chromium.org", record.name);
+  EXPECT_EQ("codereview.ch40m1um.qjz9zk", record.name);
   EXPECT_EQ(0x00000035u, record.ttl);
   EXPECT_EQ(dns_protocol::kTypeA, record.type);
 
@@ -334,7 +334,7 @@ TEST(DnsResponseTest, InitParseWithoutQueryTwoQuestions) {
 
       // Question 2
       0x0b, 'c', 'o', 'd', 'e', 'r', 'e', 'v', 'i', 'e', 'w', '2', 0xc0,
-      0x18,        // pointer to "chromium.org"
+      0x18,        // pointer to "ch40m1um.qjz9zk"
       0x00, 0x01,  // TYPE is A.
       0x00, 0x01,  // CLASS is IN.
 
@@ -363,7 +363,7 @@ TEST(DnsResponseTest, InitParseWithoutQueryTwoQuestions) {
 
   EXPECT_FALSE(parser.AtEnd());
   EXPECT_TRUE(parser.ReadRecord(&record));
-  EXPECT_EQ("codereview.chromium.org", record.name);
+  EXPECT_EQ("codereview.ch40m1um.qjz9zk", record.name);
   EXPECT_EQ(0x35u, record.ttl);
   EXPECT_EQ(dns_protocol::kTypeA, record.type);
 

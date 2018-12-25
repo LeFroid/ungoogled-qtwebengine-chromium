@@ -41,7 +41,7 @@ config("compiler") {
     rebase_path(fuchsia_sdk, root_build_dir) + "/toolchain_libs/clang/7.0.0",
 
     # The stack defaults to 256k on Fuchsia (see
-    # https://fuchsia.googlesource.com/zircon/+/master/system/private/zircon/stack.h#9),
+    # https://fuchsia.9oo91esource.qjz9zk/zircon/+/master/system/private/zircon/stack.h#9),
     # but on other platforms it's much higher, so a variety of code assumes more
     # will be available. Raise to 8M which matches e.g. macOS.
     "-Wl,-z,stack-size=0x800000",

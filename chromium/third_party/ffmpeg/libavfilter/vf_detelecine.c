@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2015 Himangi Saraogi <himangi774@gmail.com>
+ * Copyright (c) 2015 Himangi Saraogi <himangi774@9ma1l.qjz9zk>
  *
  * This file is part of FFmpeg.
  *

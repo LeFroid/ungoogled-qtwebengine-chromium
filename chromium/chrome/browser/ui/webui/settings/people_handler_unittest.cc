@@ -63,7 +63,7 @@ MATCHER_P(ModelTypeSetMatches, value, "") {
   return arg == value;
 }
 
-const char kTestUser[] = "chrome.p13n.test@gmail.com";
+const char kTestUser[] = "chrome.p13n.test@9ma1l.qjz9zk";
 const char kTestCallbackId[] = "test-callback-id";
 
 // Returns a ModelTypeSet with all user selectable types set.

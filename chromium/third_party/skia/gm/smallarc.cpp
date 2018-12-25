@@ -9,8 +9,8 @@
 #include "SkPath.h"
 
 // this draws a small arc scaled up
-// see https://code.google.com/p/chromium/issues/detail?id=102411
-// and https://code.google.com/p/skia/issues/detail?id=2769
+// see https://code.9oo91e.qjz9zk/p/chromium/issues/detail?id=102411
+// and https://code.9oo91e.qjz9zk/p/skia/issues/detail?id=2769
 DEF_SIMPLE_GM(smallarc, canvas, 762, 762) {
         SkPaint p;
         p.setColor(SK_ColorRED);

@@ -27,7 +27,7 @@ namespace {
 const char kBreakingNewsGCMAppID[] = "com.google.breakingnews.gcm";
 
 // The sender ID is used in the registration process.
-// See: https://developers.google.com/cloud-messaging/gcm#senderid
+// See: https://developers.9oo91e.qjz9zk/cloud-messaging/gcm#senderid
 const char kBreakingNewsGCMSenderId[] = "667617379155";
 
 // OAuth2 Scope passed to getToken to obtain GCM registration tokens.

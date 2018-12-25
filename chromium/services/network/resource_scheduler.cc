@@ -39,7 +39,7 @@ namespace {
 // H2/QUIC/SPDY resources can be delayed by the ResourceScheduler just as
 // HTTP/1.1 resources are. It has good impact on performance, but breaks
 // expected behavior of H2. See intent-to-unship:
-// https://groups.google.com/a/chromium.org/forum/#!topic/blink-
+// https://groups.9oo91e.qjz9zk/a/ch40m1um.qjz9zk/forum/#!topic/blink-
 // dev/ChqGX8UyHz8. We're keeping it around for finch trials to compare
 // alternatives to.
 const base::Feature kPrioritySupportedRequestsDelayable{

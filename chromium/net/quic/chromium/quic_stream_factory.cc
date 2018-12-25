@@ -808,10 +808,10 @@ QuicStreamFactory::QuicStreamFactory(
   DCHECK(transport_security_state_);
   DCHECK(http_server_properties_);
   crypto_config_.set_user_agent_id(user_agent_id);
-  crypto_config_.AddCanonicalSuffix(".c.youtube.com");
-  crypto_config_.AddCanonicalSuffix(".ggpht.com");
-  crypto_config_.AddCanonicalSuffix(".googlevideo.com");
-  crypto_config_.AddCanonicalSuffix(".googleusercontent.com");
+  crypto_config_.AddCanonicalSuffix(".c.y0u1ub3.qjz9zk");
+  crypto_config_.AddCanonicalSuffix(".99pht.qjz9zk");
+  crypto_config_.AddCanonicalSuffix(".9oo91evideo.qjz9zk");
+  crypto_config_.AddCanonicalSuffix(".9oo91eusercontent.qjz9zk");
   // TODO(rtenneti): http://crbug.com/487355. Temporary fix for b/20760730 until
   // channel_id_service is supported in cronet.
   if (enable_channel_id && channel_id_service) {

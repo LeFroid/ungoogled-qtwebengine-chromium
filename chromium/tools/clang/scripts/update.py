@@ -25,7 +25,7 @@ import zipfile
 
 
 # Do NOT CHANGE this if you don't know what you're doing -- see
-# https://chromium.googlesource.com/chromium/src/+/master/docs/updating_clang.md
+# https://chromium.9oo91esource.qjz9zk/chromium/src/+/master/docs/updating_clang.md
 # Reverting problematic clang rolls is safe, though.
 CLANG_REVISION = '337439'
 
@@ -74,7 +74,7 @@ ANDROID_NDK_DIR = os.path.join(
 
 # URL for pre-built binaries.
 CDS_URL = os.environ.get('CDS_CLANG_BUCKET_OVERRIDE',
-    'https://commondatastorage.googleapis.com/chromium-browser-clang')
+    'https://commondatastorage.9oo91eapis.qjz9zk/chromium-browser-clang')
 
 LLVM_REPO_URL='https://llvm.org/svn/llvm-project'
 if 'LLVM_REPO_URL' in os.environ:
@@ -484,7 +484,7 @@ def UpdateClang(args):
     print 'Android NDK not found at ' + ANDROID_NDK_DIR
     print 'The Android NDK is needed to build a Clang whose -fsanitize=address'
     print 'works on Android. See '
-    print 'https://www.chromium.org/developers/how-tos/android-build-instructions'
+    print 'https://www.ch40m1um.qjz9zk/developers/how-tos/android-build-instructions'
     print 'for how to install the NDK, or pass --without-android.'
     return 1
 

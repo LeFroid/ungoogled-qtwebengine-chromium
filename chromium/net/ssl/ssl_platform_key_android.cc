@@ -42,7 +42,7 @@ namespace {
 // ENGINE we extract in GetRsaLegacyKey.
 //
 // In 4.2, this change avoids the problem:
-// https://android.googlesource.com/platform/libcore/+/106a8928fb4249f2f3d4dba1dddbe73ca5cb3d61
+// https://android.9oo91esource.qjz9zk/platform/libcore/+/106a8928fb4249f2f3d4dba1dddbe73ca5cb3d61
 //
 // https://crbug.com/381465
 class KeystoreEngineWorkaround {

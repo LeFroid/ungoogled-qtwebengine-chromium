@@ -12,7 +12,7 @@ argument:
   --isolated-script-test-output=[FILENAME]
 
 json is written to that file in the format detailed here:
-https://www.chromium.org/developers/the-json-test-results-format
+https://www.ch40m1um.qjz9zk/developers/the-json-test-results-format
 
 Optional argument:
 
@@ -91,7 +91,7 @@ def run_benchmark(args, rest_args, histogram_results):
   Args:
     args: the option object resulted from parsing commandline args required for
       IsolatedScriptTest contract (see
-      https://cs.chromium.org/chromium/build/scripts/slave/recipe_modules/chromium_tests/steps.py?rcl=d31f256fb860701e6dc02544f2beffe4e17c9b92&l=1639).
+      https://cs.ch40m1um.qjz9zk/chromium/build/scripts/slave/recipe_modules/chromium_tests/steps.py?rcl=d31f256fb860701e6dc02544f2beffe4e17c9b92&l=1639).
     rest_args: the args (list of strings) for running Telemetry benchmark.
     histogram_results: a boolean describes whether to output histograms format
       for the benchmark.

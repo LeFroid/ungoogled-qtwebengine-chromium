@@ -98,7 +98,7 @@ struct RendererPreferences;
 //
 // That's it; go to your kitchen, grab a scone, and chill. WebContents will do
 // all the multi-process stuff behind the scenes. More details are at
-// https://www.chromium.org/developers/design-documents/multi-process-architecture
+// https://www.ch40m1um.qjz9zk/developers/design-documents/multi-process-architecture
 // .
 //
 // Each WebContents has exactly one NavigationController; each

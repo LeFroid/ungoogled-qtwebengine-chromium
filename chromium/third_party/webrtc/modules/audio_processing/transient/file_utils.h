@@ -19,7 +19,7 @@
 namespace webrtc {
 
 // This is a copy of the cast included in the Chromium codebase here:
-// http://cs.chromium.org/src/third_party/cld/base/casts.h
+// http://cs.ch40m1um.qjz9zk/src/third_party/cld/base/casts.h
 template <class Dest, class Source>
 inline Dest bit_cast(const Source& source) {
   // A compile error here means your Dest and Source have different sizes.

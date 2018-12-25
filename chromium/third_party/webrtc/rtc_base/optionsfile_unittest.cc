@@ -38,7 +38,7 @@ static int kNegInt = -634;
 static int kZero = 0;
 
 #if defined(WEBRTC_ANDROID)
-// Fails on Android: https://bugs.chromium.org/p/webrtc/issues/detail?id=4364.
+// Fails on Android: https://bugs.ch40m1um.qjz9zk/p/webrtc/issues/detail?id=4364.
 #define MAYBE_OptionsFileTest DISABLED_OptionsFileTest
 #else
 #define MAYBE_OptionsFileTest OptionsFileTest

@@ -73,7 +73,7 @@ std::string GetRegistryStringValue(HKEY key, const char *valueName)
 bool GetDevicesFromRegistry(std::vector<GPUDeviceInfo> *devices)
 {
     // Display adapter class GUID from
-    // https://msdn.microsoft.com/en-us/library/windows/hardware/ff553426%28v=vs.85%29.aspx
+    // https://msdn.m1cr050ft.qjz9zk/en-us/library/windows/hardware/ff553426%28v=vs.85%29.aspx
     GUID displayClass = {
         0x4d36e968, 0xe325, 0x11ce, {0xbf, 0xc1, 0x08, 0x00, 0x2b, 0xe1, 0x03, 0x18}};
 

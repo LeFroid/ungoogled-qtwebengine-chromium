@@ -24,7 +24,7 @@ class LoFi(IntegrationTest):
       test_driver.AddChromeArg('--data-reduction-proxy-server-experiments-'
                                'disabled')
 
-      test_driver.LoadURL('http://check.googlezip.net/static/index.html')
+      test_driver.LoadURL('http://check.9oo91e21p.qjz9zk/static/index.html')
 
       lofi_responses = 0
       for response in test_driver.GetHTTPResponses():
@@ -61,7 +61,7 @@ class LoFi(IntegrationTest):
       test_driver.AddChromeArg('--force-fieldtrials=NetworkQualityEstimator/'
                                'Enabled')
 
-      test_driver.LoadURL('http://check.googlezip.net/static/index.html')
+      test_driver.LoadURL('http://check.9oo91e21p.qjz9zk/static/index.html')
 
       lofi_responses = 0
       for response in test_driver.GetHTTPResponses():
@@ -96,7 +96,7 @@ class LoFi(IntegrationTest):
       test_driver.AddChromeArg('--force-fieldtrials=NetworkQualityEstimator/'
                                'Enabled')
 
-      test_driver.LoadURL('http://check.googlezip.net/static/index.html')
+      test_driver.LoadURL('http://check.9oo91e21p.qjz9zk/static/index.html')
 
       lofi_responses = 0
       for response in test_driver.GetHTTPResponses():
@@ -133,7 +133,7 @@ class LoFi(IntegrationTest):
       test_driver.AddChromeArg('--force-fieldtrials=NetworkQualityEstimator/'
                                'Enabled')
 
-      test_driver.LoadURL('http://check.googlezip.net/static/index.html')
+      test_driver.LoadURL('http://check.9oo91e21p.qjz9zk/static/index.html')
 
       lofi_responses = 0
       for response in test_driver.GetHTTPResponses():
@@ -172,7 +172,7 @@ class LoFi(IntegrationTest):
       test_driver.AddChromeArg('--force-fieldtrials=NetworkQualityEstimator/'
                                'Enabled')
 
-      test_driver.LoadURL('http://check.googlezip.net/static/index.html')
+      test_driver.LoadURL('http://check.9oo91e21p.qjz9zk/static/index.html')
 
       lofi_responses = 0
       for response in test_driver.GetHTTPResponses():
@@ -214,7 +214,7 @@ class LoFi(IntegrationTest):
       test_driver.AddChromeArg('--force-fieldtrials=NetworkQualityEstimator/'
                                'Enabled')
 
-      test_driver.LoadURL('http://check.googlezip.net/static/index.html')
+      test_driver.LoadURL('http://check.9oo91e21p.qjz9zk/static/index.html')
 
       non_lofi_responses = 0
       for response in test_driver.GetHTTPResponses():
@@ -262,7 +262,7 @@ class LoFi(IntegrationTest):
       test_driver.AddChromeArg('--data-reduction-proxy-server-experiments-'
                                'disabled')
 
-      test_driver.LoadURL('http://check.googlezip.net/cacheable/test.html')
+      test_driver.LoadURL('http://check.9oo91e21p.qjz9zk/cacheable/test.html')
 
       lofi_responses = 0
       for response in test_driver.GetHTTPResponses():
@@ -279,7 +279,7 @@ class LoFi(IntegrationTest):
       # Second page load with the chrome proxy off.
       test_driver._StopDriver()
       test_driver.RemoveChromeArg('--enable-spdy-proxy-auth')
-      test_driver.LoadURL('http://check.googlezip.net/cacheable/test.html')
+      test_driver.LoadURL('http://check.9oo91e21p.qjz9zk/cacheable/test.html')
 
       responses = 0
       for response in test_driver.GetHTTPResponses():
@@ -299,7 +299,7 @@ class LoFi(IntegrationTest):
       test_driver.AddChromeArg('--enable-spdy-proxy-auth')
       test_driver.RemoveChromeArg('--data-reduction-proxy-lo-fi=always-on')
       test_driver.AddChromeArg('--data-reduction-proxy-lo-fi=disabled')
-      test_driver.LoadURL('http://check.googlezip.net/cacheable/test.html')
+      test_driver.LoadURL('http://check.9oo91e21p.qjz9zk/cacheable/test.html')
 
       responses = 0
       for response in test_driver.GetHTTPResponses():
@@ -347,7 +347,7 @@ class LoFi(IntegrationTest):
       test_driver.AddChromeArg('--force-fieldtrials=NetworkQualityEstimator/'
                                'Enabled')
 
-      test_driver.LoadURL('http://check.googlezip.net/cacheable/test.html')
+      test_driver.LoadURL('http://check.9oo91e21p.qjz9zk/cacheable/test.html')
 
       lofi_responses = 0
       for response in test_driver.GetHTTPResponses():
@@ -364,7 +364,7 @@ class LoFi(IntegrationTest):
       # Second page load with the chrome proxy off.
       test_driver._StopDriver()
       test_driver.RemoveChromeArg('--enable-spdy-proxy-auth')
-      test_driver.LoadURL('http://check.googlezip.net/cacheable/test.html')
+      test_driver.LoadURL('http://check.9oo91e21p.qjz9zk/cacheable/test.html')
 
       responses = 0
       for response in test_driver.GetHTTPResponses():
@@ -386,7 +386,7 @@ class LoFi(IntegrationTest):
                                   'DataReductionProxyDecidesTransform')
       test_driver.AddChromeArg('--disable-features='
                                'DataReductionProxyDecidesTransform')
-      test_driver.LoadURL('http://check.googlezip.net/cacheable/test.html')
+      test_driver.LoadURL('http://check.9oo91e21p.qjz9zk/cacheable/test.html')
 
       responses = 0
       for response in test_driver.GetHTTPResponses():
@@ -423,7 +423,7 @@ class LoFi(IntegrationTest):
       test_driver.AddChromeArg('--force-fieldtrials=NetworkQualityEstimator/'
                                'Enabled')
 
-      test_driver.LoadURL('http://check.googlezip.net/static/index.html')
+      test_driver.LoadURL('http://check.9oo91e21p.qjz9zk/static/index.html')
 
       lofi_responses = 0
       for response in test_driver.GetHTTPResponses():
@@ -458,7 +458,7 @@ class LoFi(IntegrationTest):
           '--force-fieldtrials=NetworkQualityEstimator/Enabled/'
           'PreviewsClientLoFi/Enabled')
 
-      test_driver.LoadURL('https://check.googlezip.net/static/index.html')
+      test_driver.LoadURL('https://check.9oo91e21p.qjz9zk/static/index.html')
 
       intervention_headers = 0
       for response in test_driver.GetHTTPResponses():
@@ -493,7 +493,7 @@ class LoFi(IntegrationTest):
 
       # Fetch a non-SSL page with multiple images on it, such that the images
       # are fetched through the Data Reduction Proxy.
-      test_driver.LoadURL('http://check.googlezip.net/static/index.html')
+      test_driver.LoadURL('http://check.9oo91e21p.qjz9zk/static/index.html')
 
       image_response_count = 0
       for response in test_driver.GetHTTPResponses():

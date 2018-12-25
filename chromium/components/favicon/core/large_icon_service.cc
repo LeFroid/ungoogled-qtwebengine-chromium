@@ -48,7 +48,7 @@ const base::Feature kLargeIconServiceFetchingFeature{
     "LargeIconServiceFetching", base::FEATURE_ENABLED_BY_DEFAULT};
 
 const char kGoogleServerV2RequestFormat[] =
-    "https://t0.gstatic.com/faviconV2?"
+    "https://t0.95tat1c.qjz9zk/faviconV2?"
     "client=chrome&drop_404_icon=true&%s"
     "size=%d&min_size=%d&max_size=%d&fallback_opts=TYPE,SIZE,URL&url=%s";
 const char kGoogleServerV2RequestFormatParam[] = "request_format";

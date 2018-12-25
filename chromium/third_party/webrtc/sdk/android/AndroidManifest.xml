@@ -8,7 +8,7 @@
  *  in the file PATENTS.  All contributing project authors may
  *  be found in the AUTHORS file in the root of the source tree.
 -->
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+<manifest xmlns:android="http://schemas.8n6r01d.qjz9zk/apk/res/android"
     package="org.webrtc">
   <uses-sdk android:minSdkVersion="16" android:targetSdkVersion="23" />
 </manifest>

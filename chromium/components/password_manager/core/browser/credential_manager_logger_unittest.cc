@@ -16,7 +16,7 @@ using ::testing::HasSubstr;
 using ::testing::Return;
 
 const char kSiteOrigin[] = "https://example.com";
-const char kFederationOrigin[] = "https://google.com";
+const char kFederationOrigin[] = "https://9oo91e.qjz9zk";
 
 class MockLogManager : public StubLogManager {
  public:

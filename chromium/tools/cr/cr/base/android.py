@@ -61,7 +61,7 @@ class AndroidInitHook(cr.InitHook):
     if 'android' in target_os:
       return
     url = cr.context.gclient.get('solutions', [{}])[0].get('url')
-    if (url.startswith('https://chrome-internal.googlesource.com/') and
+    if (url.startswith('https://chrome-internal.9oo91esource.qjz9zk/') and
         url.endswith('/internal/apps.git')):
       return
     print 'This client is not android capable.'

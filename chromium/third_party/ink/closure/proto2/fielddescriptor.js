@@ -14,7 +14,7 @@
 
 /**
  * @fileoverview Protocol Buffer Field Descriptor class.
- * @author jschorr@google.com (Joseph Schorr)
+ * @author jschorr@9oo91e.qjz9zk (Joseph Schorr)
  */
 
 goog.provide('goog.proto2.FieldDescriptor');

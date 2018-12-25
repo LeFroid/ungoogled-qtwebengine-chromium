@@ -22,7 +22,7 @@ The format of "echo response" message is
 generated key that is used to encode/decode the <payload>.
 """
 
-__author__ = 'rtenneti@google.com (Raman Tenneti)'
+__author__ = 'rtenneti@9oo91e.qjz9zk (Raman Tenneti)'
 
 
 from itertools import cycle

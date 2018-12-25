@@ -66,30 +66,30 @@ class OwnersFileTagsTest(unittest.TestCase):
 
   def testScrapeOwners(self):
     with mock_file_tree({
-        'src': 'boss@chromium.org\n',
+        'src': 'boss@ch40m1um.qjz9zk\n',
         'src/dummydir1':
-            'dummy@chromium.org\n'
-            '# TEAM: dummy-team@chromium.org\n'
+            'dummy@ch40m1um.qjz9zk\n'
+            '# TEAM: dummy-team@ch40m1um.qjz9zk\n'
             '# COMPONENT: Dummy>Component\n',
         'src/dummydir1/innerdir1':
-            'dummy@chromium.org\n'
-            '# TEAM: dummy-specialist-team@chromium.org\n',
+            'dummy@ch40m1um.qjz9zk\n'
+            '# TEAM: dummy-specialist-team@ch40m1um.qjz9zk\n',
         'src/dummydir1/innerdir2':
-            'dummy@chromium.org\n'
+            'dummy@ch40m1um.qjz9zk\n'
             '# COMPONENT: Dummy>Component>Subcomponent\n',
         'src/dummydir1/innerdir3':
-            'dummy@chromium.org\n'
+            'dummy@ch40m1um.qjz9zk\n'
              '# OS: Mac\n'
     }):
       scraped_data = owners_file_tags.scrape_owners('src', False)
       self.assertEqual({
           '.': {},
           'dummydir1': {
-              'team': 'dummy-team@chromium.org',
+              'team': 'dummy-team@ch40m1um.qjz9zk',
               'component': 'Dummy>Component',
           },
           'dummydir1/innerdir1': {
-              'team': 'dummy-specialist-team@chromium.org',
+              'team': 'dummy-specialist-team@ch40m1um.qjz9zk',
           },
           'dummydir1/innerdir2': {
               'component': 'Dummy>Component>Subcomponent'
@@ -101,30 +101,30 @@ class OwnersFileTagsTest(unittest.TestCase):
 
   def testScrapeOwnersWithSubdirectories(self):
     with mock_file_tree(OrderedDict([
-        ('src', 'boss@chromium.org\n'),
+        ('src', 'boss@ch40m1um.qjz9zk\n'),
         ('src/dummydir1',
-         'dummy@chromium.org\n'
-         '# TEAM: dummy-team@chromium.org\n'
+         'dummy@ch40m1um.qjz9zk\n'
+         '# TEAM: dummy-team@ch40m1um.qjz9zk\n'
          '# COMPONENT: Dummy>Component\n'),
         ('src/dummydir1/innerdir1',
-         'dummy@chromium.org\n'
-         '# TEAM: dummy-specialist-team@chromium.org\n'),
+         'dummy@ch40m1um.qjz9zk\n'
+         '# TEAM: dummy-specialist-team@ch40m1um.qjz9zk\n'),
         ('src/dummydir1/innerdir2',
-         'dummy@chromium.org\n'
+         'dummy@ch40m1um.qjz9zk\n'
          '# COMPONENT: Dummy>Component>Subcomponent\n'),
         ('src/dummydir1/innerdir3',
-         'dummy@chromium.org\n# OS: Mac\n'),
+         'dummy@ch40m1um.qjz9zk\n# OS: Mac\n'),
         ('src/dummydir1/innerdir4', None),
     ])):
       scraped_data = owners_file_tags.scrape_owners('src', True)
       self.assertEqual({
           '.': {},
           'dummydir1': {
-              'team': 'dummy-team@chromium.org',
+              'team': 'dummy-team@ch40m1um.qjz9zk',
               'component': 'Dummy>Component',
           },
           'dummydir1/innerdir1': {
-              'team': 'dummy-specialist-team@chromium.org',
+              'team': 'dummy-specialist-team@ch40m1um.qjz9zk',
           },
           'dummydir1/innerdir2': {
               'component': 'Dummy>Component>Subcomponent'
@@ -133,7 +133,7 @@ class OwnersFileTagsTest(unittest.TestCase):
               'os': 'Mac'
           },
           'dummydir1/innerdir4': {
-              'team': 'dummy-team@chromium.org',
+              'team': 'dummy-team@ch40m1um.qjz9zk',
               'component': 'Dummy>Component',
           },
       }, scraped_data )

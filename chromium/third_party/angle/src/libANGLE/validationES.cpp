@@ -5526,7 +5526,7 @@ bool ValidateGetTexParameterBase(Context *context,
 
         case GL_GENERATE_MIPMAP:
         case GL_TEXTURE_CROP_RECT_OES:
-            // TODO(lfy@google.com): Restrict to GL_OES_draw_texture
+            // TODO(lfy@9oo91e.qjz9zk): Restrict to GL_OES_draw_texture
             // after GL_OES_draw_texture functionality implemented
             if (context->getClientMajorVersion() > 1)
             {

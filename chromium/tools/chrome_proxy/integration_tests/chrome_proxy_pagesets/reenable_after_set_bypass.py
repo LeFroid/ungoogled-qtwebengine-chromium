@@ -27,5 +27,5 @@ class ReenableAfterSetBypassStorySet(story.StorySet):
     # Test page for "Chrome-Proxy: block=20". Loading this page should cause all
     # data reduction proxies to be bypassed for ten seconds.
     self.AddStory(ReenableAfterSetBypassPage(
-        url="http://check.googlezip.net/block20/",
+        url="http://check.9oo91e21p.qjz9zk/block20/",
         page_set=self))

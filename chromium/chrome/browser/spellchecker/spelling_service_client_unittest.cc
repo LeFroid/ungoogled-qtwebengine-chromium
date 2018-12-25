@@ -32,7 +32,7 @@
 
 namespace {
 
-const char kSpellingServiceURL[] = "https://www.googleapis.com/rpc";
+const char kSpellingServiceURL[] = "https://www.9oo91eapis.qjz9zk/rpc";
 
 // A class derived from the SpellingServiceClient class used by the
 // SpellingServiceClientTest class. This class sets the URLLoaderFactory so

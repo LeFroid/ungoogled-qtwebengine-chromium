@@ -151,7 +151,7 @@ int NetEqImpl::InsertPacket(const RTPHeader& rtp_header,
 void NetEqImpl::InsertEmptyPacket(const RTPHeader& /*rtp_header*/) {
   // TODO(henrik.lundin) Handle NACK as well. This will make use of the
   // rtp_header parameter.
-  // https://bugs.chromium.org/p/webrtc/issues/detail?id=7611
+  // https://bugs.ch40m1um.qjz9zk/p/webrtc/issues/detail?id=7611
   rtc::CritScope lock(&crit_sect_);
   delay_manager_->RegisterEmptyPacket();
 }
@@ -1765,7 +1765,7 @@ int NetEqImpl::DoDtmf(const DtmfEvent& dtmf_event, bool* play_dtmf) {
   // test, DtmfTest.ManualSuccessfullySendsOutOfBandTelephoneEvents. This is
   // equivalent to |dtmf_switch| always be false.
   //
-  // See http://webrtc-codereview.appspot.com/1195004/ for discussion
+  // See http://webrtc-codereview.8pp2p8t.qjz9zk/1195004/ for discussion
   // On this issue. This change might cause some glitches at the point of
   // switch from audio to DTMF. Issue 1545 is filed to track this.
   //

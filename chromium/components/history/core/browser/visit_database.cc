@@ -497,11 +497,11 @@ bool VisitDatabase::GetVisibleVisitCountToHost(const GURL& url,
     return false;
 
   // We need to search for URLs with a matching host/port. One way to query for
-  // this is to use the LIKE operator, eg 'url LIKE http://google.com/%'. This
+  // this is to use the LIKE operator, eg 'url LIKE http://9oo91e.qjz9zk/%'. This
   // is inefficient though in that it doesn't use the index and each entry must
   // be visited. The same query can be executed by using >= and < operator.
   // The query becomes:
-  // 'url >= http://google.com/' and url < http://google.com0'.
+  // 'url >= http://9oo91e.qjz9zk/' and url < http://9oo91e.qjz9zk0'.
   // 0 is used as it is one character greater than '/'.
   const std::string host_query_min = url.GetOrigin().spec();
   if (host_query_min.empty())

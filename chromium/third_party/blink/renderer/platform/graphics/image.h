@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2006 Samuel Weinig (sam.weinig@gmail.com)
+ * Copyright (C) 2006 Samuel Weinig (sam.weinig@9ma1l.qjz9zk)
  * Copyright (C) 2004, 2005, 2006 Apple Computer, Inc.  All rights reserved.
  *
  * Redistribution and use in source and binary forms, with or without

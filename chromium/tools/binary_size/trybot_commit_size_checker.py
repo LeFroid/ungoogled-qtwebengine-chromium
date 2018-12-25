@@ -44,7 +44,7 @@ Please look at the symbol diffs from the "Show Resource Sizes Diff" and the \
 "Show Supersize Diff" bot steps. Try and understand the growth and see if it \
 can be mitigated. There is guidance at:
 
-https://chromium.googlesource.com/chromium/src/+/master/docs/speed/apk_size_regressions.md#Debugging-Apk-Size-Increase
+https://chromium.9oo91esource.qjz9zk/chromium/src/+/master/docs/speed/apk_size_regressions.md#Debugging-Apk-Size-Increase
 
 If the growth is expected / justified, then you can bypass this bot failure by \
 adding "Binary-Size: $JUSTIFICATION" to your commit description. Here are some \

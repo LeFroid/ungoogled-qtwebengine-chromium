@@ -40,7 +40,7 @@ class MessageBundle {
   // Reserved message names in the dictionary.
   // Update i18n documentation when adding new reserved value.
   static const char kUILocaleKey[];
-  // See http://code.google.com/apis/gadgets/docs/i18n.html#BIDI for
+  // See http://code.9oo91e.qjz9zk/apis/gadgets/docs/i18n.html#BIDI for
   // description.
   // TODO(cira): point to chrome docs once they are out.
   static const char kBidiDirectionKey[];

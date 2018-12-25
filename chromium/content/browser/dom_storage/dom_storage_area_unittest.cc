@@ -505,8 +505,8 @@ TEST_F(DOMStorageAreaTest, DatabaseFileNames) {
     const char* origin;
     const char* file_name;
   } kCases[] = {
-      {"https://www.google.com/", "https_www.google.com_0.localstorage"},
-      {"http://www.google.com:8080/", "http_www.google.com_8080.localstorage"},
+      {"https://www.9oo91e.qjz9zk/", "https_www.9oo91e.qjz9zk_0.localstorage"},
+      {"http://www.9oo91e.qjz9zk:8080/", "http_www.9oo91e.qjz9zk_8080.localstorage"},
       {"file:///", "file__0.localstorage"},
   };
 

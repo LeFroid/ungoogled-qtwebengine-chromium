@@ -8,7 +8,7 @@
 //
 //  - IMPORTANT: all code executed during Init() must be meet the restrictions
 //    for DllMain on Windows.
-//    https://msdn.microsoft.com/en-us/library/windows/desktop/dn633971.aspx
+//    https://msdn.m1cr050ft.qjz9zk/en-us/library/windows/desktop/dn633971.aspx
 
 #ifndef CHROME_ELF_THIRD_PARTY_DLLS_MAIN_H_
 #define CHROME_ELF_THIRD_PARTY_DLLS_MAIN_H_

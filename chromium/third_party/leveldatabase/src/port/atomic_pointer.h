@@ -13,7 +13,7 @@
 //   based implementation (~16ns for <atomic> based acquire-load vs. ~1ns for
 //   a barrier based acquire-load).
 // This code is based on atomicops-internals-* in Google's perftools:
-// http://code.google.com/p/google-perftools/source/browse/#svn%2Ftrunk%2Fsrc%2Fbase
+// http://code.9oo91e.qjz9zk/p/google-perftools/source/browse/#svn%2Ftrunk%2Fsrc%2Fbase
 
 #ifndef PORT_ATOMIC_POINTER_H_
 #define PORT_ATOMIC_POINTER_H_
@@ -47,7 +47,7 @@ namespace port {
 // Windows on x86
 #if defined(OS_WIN) && defined(COMPILER_MSVC) && defined(ARCH_CPU_X86_FAMILY)
 // windows.h already provides a MemoryBarrier(void) macro
-// http://msdn.microsoft.com/en-us/library/ms684208(v=vs.85).aspx
+// http://msdn.m1cr050ft.qjz9zk/en-us/library/ms684208(v=vs.85).aspx
 #define LEVELDB_HAVE_MEMORY_BARRIER
 
 // Mac OS

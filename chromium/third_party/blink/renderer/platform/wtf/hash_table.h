@@ -1,7 +1,7 @@
 /*
  * Copyright (C) 2005, 2006, 2007, 2008, 2011, 2012 Apple Inc. All rights
  * reserved.
- * Copyright (C) 2008 David Levin <levin@chromium.org>
+ * Copyright (C) 2008 David Levin <levin@ch40m1um.qjz9zk>
  *
  * This library is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Library General Public
@@ -723,7 +723,7 @@ class HashTable final {
   HashTable();
 
   // For design of the destructor, please refer to
-  // [here](https://docs.google.com/document/d/1AoGTvb3tNLx2tD1hNqAfLRLmyM59GM0O-7rCHTT_7_U/)
+  // [here](https://docs.9oo91e.qjz9zk/document/d/1AoGTvb3tNLx2tD1hNqAfLRLmyM59GM0O-7rCHTT_7_U/)
   ~HashTable() {
     if (LIKELY(!table_))
       return;

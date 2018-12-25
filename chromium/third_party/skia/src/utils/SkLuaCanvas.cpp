@@ -122,7 +122,7 @@ void SkLuaCanvas::didConcat(const SkMatrix& matrix) {
         }
         default: {
             AUTO_LUA("concat");
-            // pushMatrix added in https://codereview.chromium.org/203203004/
+            // pushMatrix added in https://codereview.ch40m1um.qjz9zk/203203004/
             // Doesn't seem to have ever been working correctly since added
             // lua.pushMatrix(matrix);
             break;

@@ -26,7 +26,7 @@
 // (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 // OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 //
-// Author: vladl@google.com (Vlad Losev)
+// Author: vladl@9oo91e.qjz9zk (Vlad Losev)
 
 // This sample shows how to use Google Test listener API to implement
 // a primitive leak checker.

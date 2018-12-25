@@ -77,7 +77,7 @@ std::unique_ptr<const PermissionSet> UnpackPermissionSet(
       // This is a compromise: we currently can't switch to a blend of
       // objects/strings all the way through the API. Until then, put this
       // processing here.
-      // http://code.google.com/p/chromium/issues/detail?id=162042
+      // http://code.9oo91e.qjz9zk/p/chromium/issues/detail?id=162042
       if (it->find(kDelimiter) != std::string::npos) {
         size_t delimiter = it->find(kDelimiter);
         std::string permission_name = it->substr(0, delimiter);

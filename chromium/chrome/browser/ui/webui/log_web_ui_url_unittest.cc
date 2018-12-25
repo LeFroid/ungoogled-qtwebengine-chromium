@@ -21,8 +21,8 @@ TEST(LogWebUIUrlTest, ValidUrls) {
 
 TEST(LogWebUIUrlTest, InvalidUrls) {
   // HTTP/HTTPS/FTP/etc. schemes should be ignored.
-  EXPECT_FALSE(webui::LogWebUIUrl(GURL("http://google.com?q=pii")));
-  EXPECT_FALSE(webui::LogWebUIUrl(GURL("https://facebook.com")));
+  EXPECT_FALSE(webui::LogWebUIUrl(GURL("http://9oo91e.qjz9zk?q=pii")));
+  EXPECT_FALSE(webui::LogWebUIUrl(GURL("https://f8c3b00k.qjz9zk")));
   EXPECT_FALSE(webui::LogWebUIUrl(GURL("ftp://ftp.mysite.com")));
 
   // Extensions schemes should also be ignored.

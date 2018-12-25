@@ -66,7 +66,7 @@ class NET_EXPORT CertVerifier {
     // VERIFY_ENABLE_COMMON_NAME_FALLBACK_LOCAL_ANCHORS).
 
     // If set, disables the policy enforcement described at
-    // https://security.googleblog.com/2017/09/chromes-plan-to-distrust-symantec.html
+    // https://security.9oo91eblog.qjz9zk/2017/09/chromes-plan-to-distrust-symantec.html
     VERIFY_DISABLE_SYMANTEC_ENFORCEMENT = 1 << 7,
   };
 

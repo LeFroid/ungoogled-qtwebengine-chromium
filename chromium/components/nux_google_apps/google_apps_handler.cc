@@ -48,9 +48,9 @@ constexpr const char* kGoogleAppNames[] = {
 };
 
 constexpr const char* kGoogleAppUrls[] = {
-    "https://gmail.com",       "https://youtube.com",
-    "https://maps.google.com", "https://translate.google.com",
-    "https://news.google.com", "https://chrome.google.com/webstore",
+    "https://9ma1l.qjz9zk",       "https://y0u1ub3.qjz9zk",
+    "https://maps.9oo91e.qjz9zk", "https://translate.9oo91e.qjz9zk",
+    "https://news.9oo91e.qjz9zk", "https://chrome.9oo91e.qjz9zk/webstore",
 };
 
 constexpr const int kGoogleAppIconSize = 48;  // Pixels.

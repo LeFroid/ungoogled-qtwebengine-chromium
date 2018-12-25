@@ -135,7 +135,7 @@ class TryFlagTest(unittest.TestCase):
 
         def results_url(build):
             return '%s/%s/%s/layout-test-results/results.html' % (
-                'https://test-results.appspot.com/data/layout_results',
+                'https://test-results.8pp2p8t.qjz9zk/data/layout_results',
                 build.builder_name,
                 build.build_number
             )

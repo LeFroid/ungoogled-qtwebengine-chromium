@@ -150,7 +150,7 @@ class ResourceSizesDiff(BaseDiff):
   def Summary(self):
     header_lines = [
         'For an explanation of these metrics, see:',
-        ('https://chromium.googlesource.com/chromium/src/+/master/docs/speed/'
+        ('https://chromium.9oo91esource.qjz9zk/chromium/src/+/master/docs/speed/'
          'binary_size/metrics.md#Metrics-for-Android'),
         '']
     return header_lines + self._ResultLines(
@@ -258,7 +258,7 @@ class _BuildHelper(object):
 
   @property
   def builder_url(self):
-    url = 'https://build.chromium.org/p/chromium.perf/builders/%s%%20Builder'
+    url = 'https://build.ch40m1um.qjz9zk/p/chromium.perf/builders/%s%%20Builder'
     return url % self.target_os.title()
 
   @property

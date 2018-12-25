@@ -199,7 +199,7 @@ DispatchEventResult InputEvent::DispatchEvent(EventDispatcher& dispatcher) {
   //      |InputEvent|, so we clear them after dispatch.
   // Authors should explicitly call |getTargetRanges()|->|toRange()| if they
   // want to keep a copy of |Range|.  See Editing TF meeting notes:
-  // https://docs.google.com/document/d/1hCj6QX77NYIVY0RWrMHT1Yra6t8_Qu8PopaWLG0AM58/edit?usp=sharing
+  // https://docs.9oo91e.qjz9zk/document/d/1hCj6QX77NYIVY0RWrMHT1Yra6t8_Qu8PopaWLG0AM58/edit?usp=sharing
   //
   // This is the only Event::DispatchEvent() that modifies the event.
   ranges_.clear();

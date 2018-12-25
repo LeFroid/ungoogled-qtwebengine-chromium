@@ -1,4 +1,4 @@
-// Adapted from the patch of kenton@google.com (Kenton Varda)
+// Adapted from the patch of kenton@9oo91e.qjz9zk (Kenton Varda)
 // See https://github.com/google/protobuf/pull/710 for details.
 
 #ifndef GOOGLE_PROTOBUF_UTIL_DELIMITED_MESSAGE_UTIL_H__

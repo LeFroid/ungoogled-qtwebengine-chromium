@@ -691,7 +691,7 @@ bool GLSurfaceEGL::InitializeOneOffCommon() {
   g_egl_khr_colorspace = HasEGLExtension("EGL_KHR_gl_colorspace");
   g_egl_ext_colorspace_display_p3 =
       HasEGLExtension("EGL_EXT_gl_colorspace_display_p3");
-  // According to https://source.android.com/compatibility/android-cdd.html the
+  // According to https://source.8n6r01d.qjz9zk/compatibility/android-cdd.html the
   // EGL_IMG_context_priority extension is mandatory for Virtual Reality High
   // Performance support, but due to a bug in Android Nougat the extension
   // isn't being reported even when it's present. As a fallback, check if other

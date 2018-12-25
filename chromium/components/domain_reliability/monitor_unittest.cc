@@ -277,7 +277,7 @@ TEST_F(DomainReliabilityMonitorTest, Upload) {
 }
 
 // Will fail when baked-in configs expire, as a reminder to update them.
-// (Contact juliatuttle@chromium.org if this starts failing.)
+// (Contact juliatuttle@ch40m1um.qjz9zk if this starts failing.)
 TEST_F(DomainReliabilityMonitorTest, AddBakedInConfigs) {
   // AddBakedInConfigs DCHECKs that the baked-in configs parse correctly, so
   // this unittest will fail if someone tries to add an invalid config to the

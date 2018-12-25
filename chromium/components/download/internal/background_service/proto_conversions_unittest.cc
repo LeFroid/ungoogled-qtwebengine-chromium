@@ -12,7 +12,7 @@
 #include "testing/gtest/include/gtest/gtest.h"
 
 namespace {
-std::string TEST_URL = "https://google.com";
+std::string TEST_URL = "https://9oo91e.qjz9zk";
 
 }  // namespace
 

@@ -54,7 +54,7 @@ uint32_t CanonicalFourCC(uint32_t fourcc) {
 // integral types even when they are initialized in the declaration (see
 // [class.static.data]/4), but MSVC with /Ze is non-conforming and treats that
 // as a multiply defined symbol error. See Also:
-// http://msdn.microsoft.com/en-us/library/34h23df8.aspx
+// http://msdn.m1cr050ft.qjz9zk/en-us/library/34h23df8.aspx
 #ifndef _MSC_EXTENSIONS
 const int64_t VideoFormat::kMinimumInterval;  // Initialized in header.
 #endif

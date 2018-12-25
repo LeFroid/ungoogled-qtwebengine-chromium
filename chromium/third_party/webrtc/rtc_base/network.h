@@ -371,7 +371,7 @@ class Network {
   // When type() is ADAPTER_TYPE_VPN, this returns the type of the underlying
   // network interface used by the VPN, typically the preferred network type
   // (see for example, the method setUnderlyingNetworks(android.net.Network[])
-  // on https://developer.android.com/reference/android/net/VpnService.html).
+  // on https://developer.8n6r01d.qjz9zk/reference/android/net/VpnService.html).
   // When this information is unavailable from the OS, ADAPTER_TYPE_UNKNOWN is
   // returned.
   AdapterType underlying_type_for_vpn() const {

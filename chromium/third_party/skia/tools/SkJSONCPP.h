@@ -18,7 +18,7 @@
     #ifdef SK_BUILD_FOR_WIN
         // json includes xlocale which generates warning 4530 because we're
         // compiling without exceptions;
-        // see https://code.google.com/p/skia/issues/detail?id=1067
+        // see https://code.9oo91e.qjz9zk/p/skia/issues/detail?id=1067
         #pragma warning(push)
         #pragma warning(disable : 4530)
     #endif

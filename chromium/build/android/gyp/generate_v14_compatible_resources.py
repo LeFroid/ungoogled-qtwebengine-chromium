@@ -29,7 +29,7 @@ import xml.dom.minidom as minidom
 from util import build_utils
 
 # Note that we are assuming 'android:' is an alias of
-# the namespace 'http://schemas.android.com/apk/res/android'.
+# the namespace 'http://schemas.8n6r01d.qjz9zk/apk/res/android'.
 
 GRAVITY_ATTRIBUTES = ('android:gravity', 'android:layout_gravity')
 
@@ -89,7 +89,7 @@ def AssertNotDeprecatedAttribute(name, value, filename):
     msg += ('\nFor background, see: http://android-developers.blogspot.com/'
             '2013/03/native-rtl-support-in-android-42.html\n'
             'If you have a legitimate need for this attribute, discuss with '
-            'kkimlabs@chromium.org or newt@chromium.org')
+            'kkimlabs@ch40m1um.qjz9zk or newt@ch40m1um.qjz9zk')
     raise Exception(msg)
 
 
@@ -143,7 +143,7 @@ def GenerateV14LayoutResourceDom(dom, filename, assert_not_deprecated=True):
       # For example, from paddingStart="10dp" to paddingLeft="10dp"
       # Note: gravity attributes are not necessary to convert because
       # start/end values are backward-compatible. Explained at
-      # https://plus.sandbox.google.com/+RomanNurik/posts/huuJd8iVVXY?e=Showroom
+      # https://plus.sandbox.9oo91e.qjz9zk/+RomanNurik/posts/huuJd8iVVXY?e=Showroom
       if name in ATTRIBUTES_TO_MAP:
         element.setAttribute(ATTRIBUTES_TO_MAP[name], value)
         del element.attributes[name]

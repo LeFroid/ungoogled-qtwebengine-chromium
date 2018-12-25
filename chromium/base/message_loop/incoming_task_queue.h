@@ -27,7 +27,7 @@ class BASE_EXPORT IncomingTaskQueue
     : public RefCountedThreadSafe<IncomingTaskQueue> {
  public:
   // TODO(gab): Move this to SequencedTaskSource::Observer in
-  // https://chromium-review.googlesource.com/c/chromium/src/+/1088762.
+  // https://chromium-review.9oo91esource.qjz9zk/c/chromium/src/+/1088762.
   class Observer {
    public:
     virtual ~Observer() = default;

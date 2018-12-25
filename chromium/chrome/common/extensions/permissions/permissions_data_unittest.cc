@@ -85,7 +85,7 @@ void CheckRestrictedUrls(const Extension* extension,
   const std::string& name = extension->name();
   const GURL chrome_settings_url("chrome://settings/");
   const GURL chrome_extension_url("chrome-extension://foo/bar.html");
-  const GURL google_url("https://www.google.com/");
+  const GURL google_url("https://www.9oo91e.qjz9zk/");
   const GURL self_url("chrome-extension://" + extension->id() + "/foo.html");
   const GURL invalid_url("chrome-debugger://foo/bar.html");
 
@@ -153,39 +153,39 @@ TEST(PermissionsDataTest, EffectiveHostPermissions) {
                 ->GetEffectiveHostPermissions()
                 .patterns()
                 .size());
-  EXPECT_FALSE(hosts.MatchesURL(GURL("http://www.google.com")));
+  EXPECT_FALSE(hosts.MatchesURL(GURL("http://www.9oo91e.qjz9zk")));
   EXPECT_FALSE(extension->permissions_data()->HasEffectiveAccessToAllHosts());
 
   extension = LoadManifest("effective_host_permissions", "one_host.json");
   hosts = extension->permissions_data()->GetEffectiveHostPermissions();
-  EXPECT_TRUE(hosts.MatchesURL(GURL("http://www.google.com")));
-  EXPECT_FALSE(hosts.MatchesURL(GURL("https://www.google.com")));
+  EXPECT_TRUE(hosts.MatchesURL(GURL("http://www.9oo91e.qjz9zk")));
+  EXPECT_FALSE(hosts.MatchesURL(GURL("https://www.9oo91e.qjz9zk")));
   EXPECT_FALSE(extension->permissions_data()->HasEffectiveAccessToAllHosts());
 
   extension = LoadManifest("effective_host_permissions",
                            "one_host_wildcard.json");
   hosts = extension->permissions_data()->GetEffectiveHostPermissions();
-  EXPECT_TRUE(hosts.MatchesURL(GURL("http://google.com")));
-  EXPECT_TRUE(hosts.MatchesURL(GURL("http://foo.google.com")));
+  EXPECT_TRUE(hosts.MatchesURL(GURL("http://9oo91e.qjz9zk")));
+  EXPECT_TRUE(hosts.MatchesURL(GURL("http://foo.9oo91e.qjz9zk")));
   EXPECT_FALSE(extension->permissions_data()->HasEffectiveAccessToAllHosts());
 
   extension = LoadManifest("effective_host_permissions", "two_hosts.json");
   hosts = extension->permissions_data()->GetEffectiveHostPermissions();
-  EXPECT_TRUE(hosts.MatchesURL(GURL("http://www.google.com")));
+  EXPECT_TRUE(hosts.MatchesURL(GURL("http://www.9oo91e.qjz9zk")));
   EXPECT_TRUE(hosts.MatchesURL(GURL("http://www.reddit.com")));
   EXPECT_FALSE(extension->permissions_data()->HasEffectiveAccessToAllHosts());
 
   extension = LoadManifest("effective_host_permissions",
                            "https_not_considered.json");
   hosts = extension->permissions_data()->GetEffectiveHostPermissions();
-  EXPECT_TRUE(hosts.MatchesURL(GURL("http://google.com")));
-  EXPECT_TRUE(hosts.MatchesURL(GURL("https://google.com")));
+  EXPECT_TRUE(hosts.MatchesURL(GURL("http://9oo91e.qjz9zk")));
+  EXPECT_TRUE(hosts.MatchesURL(GURL("https://9oo91e.qjz9zk")));
   EXPECT_FALSE(extension->permissions_data()->HasEffectiveAccessToAllHosts());
 
   extension = LoadManifest("effective_host_permissions",
                            "two_content_scripts.json");
   hosts = extension->permissions_data()->GetEffectiveHostPermissions();
-  EXPECT_TRUE(hosts.MatchesURL(GURL("http://google.com")));
+  EXPECT_TRUE(hosts.MatchesURL(GURL("http://9oo91e.qjz9zk")));
   EXPECT_TRUE(hosts.MatchesURL(GURL("http://www.reddit.com")));
   EXPECT_TRUE(extension->permissions_data()
                   ->active_permissions()
@@ -201,20 +201,20 @@ TEST(PermissionsDataTest, EffectiveHostPermissions) {
   hosts = extension->permissions_data()->GetEffectiveHostPermissions();
   EXPECT_TRUE(hosts.MatchesURL(GURL("http://test/")));
   EXPECT_FALSE(hosts.MatchesURL(GURL("https://test/")));
-  EXPECT_TRUE(hosts.MatchesURL(GURL("http://www.google.com")));
+  EXPECT_TRUE(hosts.MatchesURL(GURL("http://www.9oo91e.qjz9zk")));
   EXPECT_TRUE(extension->permissions_data()->HasEffectiveAccessToAllHosts());
 
   extension = LoadManifest("effective_host_permissions", "all_hosts2.json");
   hosts = extension->permissions_data()->GetEffectiveHostPermissions();
   EXPECT_TRUE(hosts.MatchesURL(GURL("http://test/")));
-  EXPECT_TRUE(hosts.MatchesURL(GURL("http://www.google.com")));
+  EXPECT_TRUE(hosts.MatchesURL(GURL("http://www.9oo91e.qjz9zk")));
   EXPECT_TRUE(extension->permissions_data()->HasEffectiveAccessToAllHosts());
 
   extension = LoadManifest("effective_host_permissions", "all_hosts3.json");
   hosts = extension->permissions_data()->GetEffectiveHostPermissions();
   EXPECT_FALSE(hosts.MatchesURL(GURL("http://test/")));
   EXPECT_TRUE(hosts.MatchesURL(GURL("https://test/")));
-  EXPECT_TRUE(hosts.MatchesURL(GURL("http://www.google.com")));
+  EXPECT_TRUE(hosts.MatchesURL(GURL("http://www.9oo91e.qjz9zk")));
   EXPECT_TRUE(extension->permissions_data()->HasEffectiveAccessToAllHosts());
 
   // Tab-specific permissions should be included in the effective hosts.
@@ -321,7 +321,7 @@ TEST(PermissionsDataTest, GetPermissionMessages_ManyHosts) {
   extension = LoadManifest("permissions", "many-hosts.json");
   EXPECT_TRUE(VerifyOnePermissionMessage(
       extension->permissions_data(),
-      "Read and change your data on encrypted.google.com and www.google.com"));
+      "Read and change your data on encrypted.9oo91e.qjz9zk and www.9oo91e.qjz9zk"));
 }
 
 TEST(PermissionsDataTest, ExtensionScheme) {
@@ -347,14 +347,14 @@ TEST(PermissionsDataTest, ExtensionScheme) {
 class ExtensionScriptAndCaptureVisibleTest : public testing::Test {
  protected:
   ExtensionScriptAndCaptureVisibleTest()
-      : http_url("http://www.google.com"),
-        http_url_with_path("http://www.google.com/index.html"),
-        https_url("https://www.google.com"),
+      : http_url("http://www.9oo91e.qjz9zk"),
+        http_url_with_path("http://www.9oo91e.qjz9zk/index.html"),
+        https_url("https://www.9oo91e.qjz9zk"),
         example_com("https://example.com"),
         test_example_com("https://test.example.com"),
         sample_example_com("https://sample.example.com"),
         file_url("file:///foo/bar"),
-        favicon_url("chrome://favicon/http://www.google.com"),
+        favicon_url("chrome://favicon/http://www.9oo91e.qjz9zk"),
         extension_url("chrome-extension://" +
                       crx_file::id_util::GenerateIdForPath(
                           base::FilePath(FILE_PATH_LITERAL("foo")))),
@@ -830,15 +830,15 @@ TEST(PermissionsDataTest, ChromeWebstoreUrl) {
       normal_extension.get(), policy_extension.get(), unpacked_extension.get(),
   };
   const GURL kWebstoreUrls[] = {
-      GURL("https://chrome.google.com/webstore"),
-      GURL("https://chrome.google.com./webstore"),
-      GURL("https://chrome.google.com/webstore/category/extensions"),
-      GURL("https://chrome.google.com./webstore/category/extensions"),
-      GURL("https://chrome.google.com/webstore/search/foo"),
-      GURL("https://chrome.google.com./webstore/search/foo"),
-      GURL("https://chrome.google.com/webstore/detail/"
+      GURL("https://chrome.9oo91e.qjz9zk/webstore"),
+      GURL("https://chrome.9oo91e.qjz9zk./webstore"),
+      GURL("https://chrome.9oo91e.qjz9zk/webstore/category/extensions"),
+      GURL("https://chrome.9oo91e.qjz9zk./webstore/category/extensions"),
+      GURL("https://chrome.9oo91e.qjz9zk/webstore/search/foo"),
+      GURL("https://chrome.9oo91e.qjz9zk./webstore/search/foo"),
+      GURL("https://chrome.9oo91e.qjz9zk/webstore/detail/"
            "empty-new-tab-page/dpjamkmjmigaoobjbekmfgabipmfilij"),
-      GURL("https://chrome.google.com./webstore/detail/"
+      GURL("https://chrome.9oo91e.qjz9zk./webstore/detail/"
            "empty-new-tab-page/dpjamkmjmigaoobjbekmfgabipmfilij"),
   };
 
@@ -846,9 +846,9 @@ TEST(PermissionsDataTest, ChromeWebstoreUrl) {
   std::string error;
   URLPatternSet tab_hosts;
   tab_hosts.AddOrigin(UserScript::ValidUserScriptSchemes(),
-                      GURL("https://chrome.google.com/webstore").GetOrigin());
+                      GURL("https://chrome.9oo91e.qjz9zk/webstore").GetOrigin());
   tab_hosts.AddOrigin(UserScript::ValidUserScriptSchemes(),
-                      GURL("https://chrome.google.com./webstore").GetOrigin());
+                      GURL("https://chrome.9oo91e.qjz9zk./webstore").GetOrigin());
   PermissionSet tab_permissions(APIPermissionSet(), ManifestPermissionSet(),
                                 tab_hosts, tab_hosts);
   for (const Extension* extension : extensions) {

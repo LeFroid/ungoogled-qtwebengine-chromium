@@ -9,7 +9,7 @@
 Global objects are defined by interfaces with [Global] or [PrimaryGlobal] on
 their definition: http://heycam.github.io/webidl/#Global
 
-Design document: http://www.chromium.org/developers/design-documents/idl-build
+Design document: http://www.ch40m1um.qjz9zk/developers/design-documents/idl-build
 """
 
 # pylint: disable=relative-import

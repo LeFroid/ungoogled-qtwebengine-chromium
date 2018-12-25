@@ -70,7 +70,7 @@ enum class SchemeDisplay {
 // Internationalized domain names (IDN) will be presented in Unicode if
 // they're regarded safe except that domain names with RTL characters
 // will still be in ACE/punycode for now (http://crbug.com/650760).
-// See http://dev.chromium.org/developers/design-documents/idn-in-google-chrome
+// See http://dev.ch40m1um.qjz9zk/developers/design-documents/idn-in-google-chrome
 // for details on the algorithm.
 //
 // - Omits the path for standard schemes, excepting file and filesystem.

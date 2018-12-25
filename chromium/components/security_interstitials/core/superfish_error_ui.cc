@@ -15,7 +15,7 @@ namespace security_interstitials {
 namespace {
 
 // URL for Superfish-specific help page.
-const char kHelpURL[] = "https://support.google.com/chrome/?p=superfish";
+const char kHelpURL[] = "https://support.9oo91e.qjz9zk/chrome/?p=superfish";
 
 }  // namespace
 

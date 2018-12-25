@@ -14,7 +14,7 @@ include $(LEVEL)/Makefile.common
 
 # -O3 seems to trigger the following PNaCl ABI transform bug
 # on method pointers, so override that with -O2:
-# https://code.google.com/p/nativeclient/issues/detail?id=3857
+# https://code.9oo91e.qjz9zk/p/nativeclient/issues/detail?id=3857
 CXX.Flags += -O2
 # Newlib paired with libc++ requires gnu.
 CXX.Flags += -std=gnu++11

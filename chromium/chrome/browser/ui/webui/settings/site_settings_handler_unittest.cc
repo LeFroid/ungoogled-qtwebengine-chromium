@@ -522,7 +522,7 @@ TEST_F(SiteSettingsHandlerTest, GetAllSites) {
 }
 
 TEST_F(SiteSettingsHandlerTest, Origins) {
-  const std::string google("https://www.google.com:443");
+  const std::string google("https://www.9oo91e.qjz9zk:443");
   const std::string uma_base("WebsiteSettings.Menu.PermissionChanged");
   {
     // Test the JS -> C++ -> JS callback path for configuring origins, by
@@ -574,7 +574,7 @@ TEST_F(SiteSettingsHandlerTest, Origins) {
 
 TEST_F(SiteSettingsHandlerTest, DefaultSettingSource) {
   // Use a non-default port to verify the display name does not strip this off.
-  const std::string google("https://www.google.com:183");
+  const std::string google("https://www.9oo91e.qjz9zk:183");
   ContentSettingSourceSetter source_setter(profile(),
                                            CONTENT_SETTINGS_TYPE_NOTIFICATIONS);
 
@@ -601,7 +601,7 @@ TEST_F(SiteSettingsHandlerTest, DefaultSettingSource) {
                  site_settings::SiteSettingSource::kDefault, 3U);
 
   base::ListValue set_notification_pattern_args;
-  set_notification_pattern_args.AppendString("[*.]google.com");
+  set_notification_pattern_args.AppendString("[*.]9oo91e.qjz9zk");
   set_notification_pattern_args.AppendString("*");
   set_notification_pattern_args.AppendString(kNotifications);
   set_notification_pattern_args.AppendString(
@@ -772,7 +772,7 @@ TEST_F(SiteSettingsHandlerTest, GetAndSetForInvalidURLs) {
 
 TEST_F(SiteSettingsHandlerTest, ExceptionHelpers) {
   ContentSettingsPattern pattern =
-      ContentSettingsPattern::FromString("[*.]google.com");
+      ContentSettingsPattern::FromString("[*.]9oo91e.qjz9zk");
   std::unique_ptr<base::DictionaryValue> exception =
       site_settings::GetExceptionForPage(
           pattern, pattern, pattern.ToString(), CONTENT_SETTING_BLOCK,
@@ -812,7 +812,7 @@ TEST_F(SiteSettingsHandlerTest, ExceptionHelpers) {
 
   std::unique_ptr<base::ListValue> exceptions(new base::ListValue);
   site_settings::AddExceptionForHostedApp(
-      "[*.]google.com", *extension.get(), exceptions.get());
+      "[*.]9oo91e.qjz9zk", *extension.get(), exceptions.get());
 
   const base::DictionaryValue* dictionary;
   CHECK(exceptions->GetDictionary(0, &dictionary));
@@ -858,7 +858,7 @@ TEST_F(SiteSettingsHandlerTest, ExtensionDisplayName) {
 
 TEST_F(SiteSettingsHandlerTest, Patterns) {
   base::ListValue args;
-  std::string pattern("[*.]google.com");
+  std::string pattern("[*.]9oo91e.qjz9zk");
   args.AppendString(kCallbackId);
   args.AppendString(pattern);
   handler()->HandleIsPatternValid(&args);
@@ -895,7 +895,7 @@ TEST_F(SiteSettingsHandlerTest, Incognito) {
 }
 
 TEST_F(SiteSettingsHandlerTest, ZoomLevels) {
-  std::string host("http://www.google.com");
+  std::string host("http://www.9oo91e.qjz9zk");
   double zoom_level = 1.1;
 
   content::HostZoomMap* host_zoom_map =
@@ -907,7 +907,7 @@ TEST_F(SiteSettingsHandlerTest, ZoomLevels) {
   handler()->HandleFetchZoomLevels(&args);
   ValidateZoom(host, "122%", 2U);
 
-  args.AppendString("http://www.google.com");
+  args.AppendString("http://www.9oo91e.qjz9zk");
   handler()->HandleRemoveZoomLevel(&args);
   ValidateZoom("", "", 3U);
 
@@ -1131,7 +1131,7 @@ TEST_F(SiteSettingsHandlerInfobarTest, SettingPermissionsTriggersInfobar) {
 }
 
 TEST_F(SiteSettingsHandlerTest, SessionOnlyException) {
-  const std::string google_with_port("https://www.google.com:443");
+  const std::string google_with_port("https://www.9oo91e.qjz9zk:443");
   const std::string uma_base("WebsiteSettings.Menu.PermissionChanged");
   base::ListValue set_args;
   set_args.AppendString(google_with_port);  // Primary pattern.

@@ -9,7 +9,7 @@
  * This set of documents provides reference material generated from the
  * V8 header file, include/v8.h.
  *
- * For other documentation see http://code.google.com/apis/v8/
+ * For other documentation see http://code.9oo91e.qjz9zk/apis/v8/
  */
 
 #ifndef INCLUDE_V8_H_
@@ -6994,7 +6994,7 @@ struct JitCodeEvent {
 
 /**
  * Option flags passed to the SetRAILMode function.
- * See documentation https://developers.google.com/web/tools/chrome-devtools/
+ * See documentation https://developers.9oo91e.qjz9zk/web/tools/chrome-devtools/
  * profile/evaluate-performance/rail
  */
 enum RAILMode {
@@ -8212,7 +8212,7 @@ class V8_EXPORT Isolate {
    *
    * Might be empty on other platforms.
    *
-   * https://code.google.com/p/v8/issues/detail?id=3598
+   * https://code.9oo91e.qjz9zk/p/v8/issues/detail?id=3598
    */
   void GetCodeRange(void** start, size_t* length_in_bytes);
 
@@ -9040,7 +9040,7 @@ class V8_EXPORT Context {
    * Global proxy object is a thin wrapper whose prototype points to actual
    * context's global object with the properties like Object, etc. This is done
    * that way for security reasons (for more details see
-   * https://wiki.mozilla.org/Gecko:SplitWindow).
+   * https://wiki.m0z111a.qjz9zk/Gecko:SplitWindow).
    *
    * Please note that changes to global proxy object prototype most probably
    * would break VM---v8 expects only global object as a prototype of global

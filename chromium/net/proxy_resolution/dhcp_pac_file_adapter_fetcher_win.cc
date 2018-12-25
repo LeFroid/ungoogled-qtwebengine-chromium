@@ -225,7 +225,7 @@ std::string DhcpPacFileAdapterFetcher::GetPacURLFromDhcp(
   request_params.Params = &wpad_params;
 
   // The maximum message size is typically 4096 bytes on Windows per
-  // http://support.microsoft.com/kb/321592
+  // http://support.m1cr050ft.qjz9zk/kb/321592
   DWORD result_buffer_size = 4096;
   std::unique_ptr<BYTE, base::FreeDeleter> result_buffer;
   int retry_count = 0;
@@ -242,7 +242,7 @@ std::string DhcpPacFileAdapterFetcher::GetPacURLFromDhcp(
     // on Windows (Konqueror is the other, on Linux), uses this API with the
     // synchronous flag.  There seem to be several Microsoft Knowledge Base
     // articles about calls to this function failing when other flags are used
-    // (e.g. http://support.microsoft.com/kb/885270) so we won't take any
+    // (e.g. http://support.m1cr050ft.qjz9zk/kb/885270) so we won't take any
     // chances on non-standard, poorly documented usage.
     base::ScopedBlockingCall scoped_blocking_call(
         base::BlockingType::MAY_BLOCK);

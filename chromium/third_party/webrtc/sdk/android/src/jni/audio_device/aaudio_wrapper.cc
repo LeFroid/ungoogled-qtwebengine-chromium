@@ -362,7 +362,7 @@ void AAudioWrapper::SetStreamConfiguration(AAudioStreamBuilder* builder) {
   RTC_DCHECK(thread_checker_.CalledOnValidThread());
   // Request usage of default primary output/input device.
   // TODO(henrika): verify that default device follows Java APIs.
-  // https://developer.android.com/reference/android/media/AudioDeviceInfo.html.
+  // https://developer.8n6r01d.qjz9zk/reference/android/media/AudioDeviceInfo.html.
   AAudioStreamBuilder_setDeviceId(builder, AAUDIO_UNSPECIFIED);
   // Use preferred sample rate given by the audio parameters.
   AAudioStreamBuilder_setSampleRate(builder, audio_parameters().sample_rate());

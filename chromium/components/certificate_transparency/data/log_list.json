@@ -3,47 +3,47 @@
   {
    "description": "Google 'Argon2018' log",
    "key": "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAE0gBVBa3VR7QZu82V+ynXWD14JM3ORp37MtRxTmACJV5ZPtfUA7htQ2hofuigZQs+bnFZkje+qejxoyvk2Q1VaA==",
-   "url": "ct.googleapis.com/logs/argon2018/",
+   "url": "ct.9oo91eapis.qjz9zk/logs/argon2018/",
    "maximum_merge_delay": 86400,
    "operated_by": [
     0
    ],
-   "dns_api_endpoint": "argon2018.ct.googleapis.com"
+   "dns_api_endpoint": "argon2018.ct.9oo91eapis.qjz9zk"
   },
   {
    "description": "Google 'Argon2019' log",
    "key": "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEI3MQm+HzXvaYa2mVlhB4zknbtAT8cSxakmBoJcBKGqGwYS0bhxSpuvABM1kdBTDpQhXnVdcq+LSiukXJRpGHVg==",
-   "url": "ct.googleapis.com/logs/argon2019/",
+   "url": "ct.9oo91eapis.qjz9zk/logs/argon2019/",
    "maximum_merge_delay": 86400,
    "operated_by": [
     0
    ],
-   "dns_api_endpoint": "argon2019.ct.googleapis.com"
+   "dns_api_endpoint": "argon2019.ct.9oo91eapis.qjz9zk"
   },
   {
    "description": "Google 'Argon2020' log",
    "key": "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAE6Tx2p1yKY4015NyIYvdrk36es0uAc1zA4PQ+TGRY+3ZjUTIYY9Wyu+3q/147JG4vNVKLtDWarZwVqGkg6lAYzA==",
-   "url": "ct.googleapis.com/logs/argon2020/",
+   "url": "ct.9oo91eapis.qjz9zk/logs/argon2020/",
    "maximum_merge_delay": 86400,
    "operated_by": [
     0
    ],
-   "dns_api_endpoint": "argon2020.ct.googleapis.com"
+   "dns_api_endpoint": "argon2020.ct.9oo91eapis.qjz9zk"
   },
   {
    "description": "Google 'Argon2021' log",
    "key": "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAETeBmZOrzZKo4xYktx9gI2chEce3cw/tbr5xkoQlmhB18aKfsxD+MnILgGNl0FOm0eYGilFVi85wLRIOhK8lxKw==",
-   "url": "ct.googleapis.com/logs/argon2021/",
+   "url": "ct.9oo91eapis.qjz9zk/logs/argon2021/",
    "maximum_merge_delay": 86400,
    "operated_by": [
     0
    ],
-   "dns_api_endpoint": "argon2021.ct.googleapis.com"
+   "dns_api_endpoint": "argon2021.ct.9oo91eapis.qjz9zk"
   },
   {
    "description": "Google 'Aviator' log",
    "key": "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAE1/TMabLkDpCjiupacAlP7xNi0I1JYP8bQFAHDG1xhtolSY1l4QgNRzRrvSe8liE+NPWHdjGxfx3JhTsN9x8/6Q==",
-   "url": "ct.googleapis.com/aviator/",
+   "url": "ct.9oo91eapis.qjz9zk/aviator/",
    "maximum_merge_delay": 86400,
    "operated_by": [
     0
@@ -54,47 +54,47 @@
     "sha256_root_hash": "LcGcZRsm+LGYmrlyC5LXhV1T6OD8iH5dNlb0sEJl9bA=",
     "tree_head_signature": "BAMASDBGAiEA/M0Nvt77aNe+9eYbKsv6rRpTzFTKa5CGqb56ea4hnt8CIQCJDE7pL6xgAewMd5i3G1lrBWgFooT2kd3+zliEz5Rw8w=="
    },
-   "dns_api_endpoint": "aviator.ct.googleapis.com"
+   "dns_api_endpoint": "aviator.ct.9oo91eapis.qjz9zk"
   },
   {
    "description": "Google 'Icarus' log",
    "key": "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAETtK8v7MICve56qTHHDhhBOuV4IlUaESxZryCfk9QbG9co/CqPvTsgPDbCpp6oFtyAHwlDhnvr7JijXRD9Cb2FA==",
-   "url": "ct.googleapis.com/icarus/",
+   "url": "ct.9oo91eapis.qjz9zk/icarus/",
    "maximum_merge_delay": 86400,
    "operated_by": [
     0
    ],
-   "dns_api_endpoint": "icarus.ct.googleapis.com"
+   "dns_api_endpoint": "icarus.ct.9oo91eapis.qjz9zk"
   },
   {
    "description": "Google 'Pilot' log",
    "key": "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEfahLEimAoz2t01p3uMziiLOl/fHTDM0YDOhBRuiBARsV4UvxG2LdNgoIGLrtCzWE0J5APC2em4JlvR8EEEFMoA==",
-   "url": "ct.googleapis.com/pilot/",
+   "url": "ct.9oo91eapis.qjz9zk/pilot/",
    "maximum_merge_delay": 86400,
    "operated_by": [
     0
    ],
-   "dns_api_endpoint": "pilot.ct.googleapis.com"
+   "dns_api_endpoint": "pilot.ct.9oo91eapis.qjz9zk"
   },
   {
    "description": "Google 'Rocketeer' log",
    "key": "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEIFsYyDzBi7MxCAC/oJBXK7dHjG+1aLCOkHjpoHPqTyghLpzA9BYbqvnV16mAw04vUjyYASVGJCUoI3ctBcJAeg==",
-   "url": "ct.googleapis.com/rocketeer/",
+   "url": "ct.9oo91eapis.qjz9zk/rocketeer/",
    "maximum_merge_delay": 86400,
    "operated_by": [
     0
    ],
-   "dns_api_endpoint": "rocketeer.ct.googleapis.com"
+   "dns_api_endpoint": "rocketeer.ct.9oo91eapis.qjz9zk"
   },
   {
    "description": "Google 'Skydiver' log",
    "key": "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEEmyGDvYXsRJsNyXSrYc9DjHsIa2xzb4UR7ZxVoV6mrc9iZB7xjI6+NrOiwH+P/xxkRmOFG6Jel20q37hTh58rA==",
-   "url": "ct.googleapis.com/skydiver/",
+   "url": "ct.9oo91eapis.qjz9zk/skydiver/",
    "maximum_merge_delay": 86400,
    "operated_by": [
     0
    ],
-   "dns_api_endpoint": "skydiver.ct.googleapis.com"
+   "dns_api_endpoint": "skydiver.ct.9oo91eapis.qjz9zk"
   },
   {
    "description": "Cloudflare 'Nimbus2018' Log",
@@ -104,7 +104,7 @@
    "operated_by": [
     1
    ],
-   "dns_api_endpoint": "cloudflare-nimbus2018.ct.googleapis.com"
+   "dns_api_endpoint": "cloudflare-nimbus2018.ct.9oo91eapis.qjz9zk"
   },
   {
    "description": "Cloudflare 'Nimbus2019' Log",
@@ -114,7 +114,7 @@
    "operated_by": [
     1
    ],
-   "dns_api_endpoint": "cloudflare-nimbus2019.ct.googleapis.com"
+   "dns_api_endpoint": "cloudflare-nimbus2019.ct.9oo91eapis.qjz9zk"
   },
   {
    "description": "Cloudflare 'Nimbus2020' Log",
@@ -124,7 +124,7 @@
    "operated_by": [
     1
    ],
-   "dns_api_endpoint": "cloudflare-nimbus2020.ct.googleapis.com"
+   "dns_api_endpoint": "cloudflare-nimbus2020.ct.9oo91eapis.qjz9zk"
   },
   {
    "description": "Cloudflare 'Nimbus2021' Log",
@@ -134,7 +134,7 @@
    "operated_by": [
     1
    ],
-   "dns_api_endpoint": "cloudflare-nimbus2021.ct.googleapis.com"
+   "dns_api_endpoint": "cloudflare-nimbus2021.ct.9oo91eapis.qjz9zk"
   },
   {
    "description": "DigiCert Log Server",
@@ -144,7 +144,7 @@
    "operated_by": [
     2
    ],
-   "dns_api_endpoint": "digicert.ct.googleapis.com"
+   "dns_api_endpoint": "digicert.ct.9oo91eapis.qjz9zk"
   },
   {
    "description": "DigiCert Log Server 2",
@@ -154,7 +154,7 @@
    "operated_by": [
     2
    ],
-   "dns_api_endpoint": "digicert2.ct.googleapis.com"
+   "dns_api_endpoint": "digicert2.ct.9oo91eapis.qjz9zk"
   },
   {
    "description": "DigiCert Yeti2018 Log",
@@ -164,7 +164,7 @@
    "operated_by": [
     2
    ],
-   "dns_api_endpoint": "digicert-yeti2018.ct.googleapis.com"
+   "dns_api_endpoint": "digicert-yeti2018.ct.9oo91eapis.qjz9zk"
   },
   {
    "description": "DigiCert Yeti2019 Log",
@@ -174,7 +174,7 @@
    "operated_by": [
     2
    ],
-   "dns_api_endpoint": "digicert-yeti2019.ct.googleapis.com"
+   "dns_api_endpoint": "digicert-yeti2019.ct.9oo91eapis.qjz9zk"
   },
   {
    "description": "DigiCert Yeti2020 Log",
@@ -184,7 +184,7 @@
    "operated_by": [
     2
    ],
-   "dns_api_endpoint": "digicert-yeti2020.ct.googleapis.com"
+   "dns_api_endpoint": "digicert-yeti2020.ct.9oo91eapis.qjz9zk"
   },
   {
    "description": "DigiCert Yeti2021 Log",
@@ -194,7 +194,7 @@
    "operated_by": [
     2
    ],
-   "dns_api_endpoint": "digicert-yeti2021.ct.googleapis.com"
+   "dns_api_endpoint": "digicert-yeti2021.ct.9oo91eapis.qjz9zk"
   },
   {
    "description": "DigiCert Yeti2022 Log",
@@ -204,7 +204,7 @@
    "operated_by": [
     2
    ],
-   "dns_api_endpoint": "digicert-yeti2022.ct.googleapis.com"
+   "dns_api_endpoint": "digicert-yeti2022.ct.9oo91eapis.qjz9zk"
   },
   {
    "description": "Symantec log",
@@ -214,7 +214,7 @@
    "operated_by": [
     2
    ],
-   "dns_api_endpoint": "symantec.ct.googleapis.com"
+   "dns_api_endpoint": "symantec.ct.9oo91eapis.qjz9zk"
   },
   {
    "description": "Symantec 'Vega' log",
@@ -224,7 +224,7 @@
    "operated_by": [
     2
    ],
-   "dns_api_endpoint": "symantec-vega.ct.googleapis.com"
+   "dns_api_endpoint": "symantec-vega.ct.9oo91eapis.qjz9zk"
   },
   {
    "description": "Symantec 'Sirius' log",
@@ -234,7 +234,7 @@
    "operated_by": [
     2
    ],
-   "dns_api_endpoint": "symantec-sirius.ct.googleapis.com"
+   "dns_api_endpoint": "symantec-sirius.ct.9oo91eapis.qjz9zk"
   },
   {
    "description": "Certly.IO log",
@@ -245,7 +245,7 @@
     3
    ],
    "disqualified_at": 1460678400,
-   "dns_api_endpoint": "certly.ct.googleapis.com"
+   "dns_api_endpoint": "certly.ct.9oo91eapis.qjz9zk"
   },
   {
    "description": "Izenpe log",
@@ -256,7 +256,7 @@
     4
    ],
    "disqualified_at": 1464566400,
-   "dns_api_endpoint": "izenpe1.ct.googleapis.com"
+   "dns_api_endpoint": "izenpe1.ct.9oo91eapis.qjz9zk"
   },
   {
    "description": "WoSign log",
@@ -267,7 +267,7 @@
     5
    ],
    "disqualified_at": 1518479999,
-   "dns_api_endpoint": "wosign1.ct.googleapis.com"
+   "dns_api_endpoint": "wosign1.ct.9oo91eapis.qjz9zk"
   },
   {
    "description": "Venafi log",
@@ -278,7 +278,7 @@
     6
    ],
    "disqualified_at": 1488307346,
-   "dns_api_endpoint": "venafi.ct.googleapis.com"
+   "dns_api_endpoint": "venafi.ct.9oo91eapis.qjz9zk"
   },
   {
    "description": "Venafi Gen2 CT log",
@@ -288,7 +288,7 @@
    "operated_by": [
     6
    ],
-   "dns_api_endpoint": "venafi2.ct.googleapis.com"
+   "dns_api_endpoint": "venafi2.ct.9oo91eapis.qjz9zk"
   },
   {
    "description": "CNNIC CT log",
@@ -298,7 +298,7 @@
    "operated_by": [
     7
    ],
-   "dns_api_endpoint": "cnnic.ct.googleapis.com"
+   "dns_api_endpoint": "cnnic.ct.9oo91eapis.qjz9zk"
   },
   {
    "description": "StartCom log",
@@ -309,7 +309,7 @@
     8
    ],
    "disqualified_at": 1518479999,
-   "dns_api_endpoint": "startcom1.ct.googleapis.com"
+   "dns_api_endpoint": "startcom1.ct.9oo91eapis.qjz9zk"
   },
   {
    "description": "Comodo 'Sabre' CT log",
@@ -319,7 +319,7 @@
    "operated_by": [
     9
    ],
-   "dns_api_endpoint": "comodo-sabre.ct.googleapis.com"
+   "dns_api_endpoint": "comodo-sabre.ct.9oo91eapis.qjz9zk"
   },
   {
    "description": "Comodo 'Mammoth' CT log",
@@ -329,7 +329,7 @@
    "operated_by": [
     9
    ],
-   "dns_api_endpoint": "comodo-mammoth.ct.googleapis.com"
+   "dns_api_endpoint": "comodo-mammoth.ct.9oo91eapis.qjz9zk"
   }
  ],
  "operators": [

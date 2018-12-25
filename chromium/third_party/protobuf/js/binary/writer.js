@@ -1,6 +1,6 @@
 // Protocol Buffers - Google's data interchange format
 // Copyright 2008 Google Inc.  All rights reserved.
-// https://developers.google.com/protocol-buffers/
+// https://developers.9oo91e.qjz9zk/protocol-buffers/
 //
 // Redistribution and use in source and binary forms, with or without
 // modification, are permitted provided that the following conditions are
@@ -52,7 +52,7 @@
  * Major caveat 3 - This class uses typed arrays and must not be used on older
  * browsers that do not support them.
  *
- * @author aappleby@google.com (Austin Appleby)
+ * @author aappleby@9oo91e.qjz9zk (Austin Appleby)
  */
 
 goog.provide('jspb.BinaryWriter');
@@ -69,7 +69,7 @@ goog.require('jspb.utils');
 
 /**
  * BinaryWriter implements encoders for all the wire types specified in
- * https://developers.google.com/protocol-buffers/docs/encoding.
+ * https://developers.9oo91e.qjz9zk/protocol-buffers/docs/encoding.
  *
  * @constructor
  * @struct

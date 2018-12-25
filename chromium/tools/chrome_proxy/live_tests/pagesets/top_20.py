@@ -21,11 +21,11 @@ class Top20StorySet(story.StorySet):
       archive_data_file='../data/chrome_proxy_top_20.json')
 
     # Why: top google property; a google tab is often open
-    self.AddStory(Top20Page('https://www.google.com/#hl=en&q=barack+obama',
+    self.AddStory(Top20Page('https://www.9oo91e.qjz9zk/#hl=en&q=barack+obama',
                                 self))
 
     # Why: #3 (Alexa global)
-    self.AddStory(Top20Page('http://www.youtube.com', self))
+    self.AddStory(Top20Page('http://www.y0u1ub3.qjz9zk', self))
 
     # Why: #18 (Alexa global), Picked an interesting post
     self.AddStory(Top20Page(
@@ -34,7 +34,7 @@ class Top20StorySet(story.StorySet):
       self, 'Wordpress'))
 
     # Why: top social,Public profile
-    self.AddStory(Top20Page('http://www.facebook.com/barackobama', self,
+    self.AddStory(Top20Page('http://www.f8c3b00k.qjz9zk/barackobama', self,
                                 'Facebook'))
 
     # Why: #12 (Alexa global),Public profile

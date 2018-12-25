@@ -26,7 +26,7 @@ namespace {
 // detachable/convertible laptop, it tells if the device has an accessible
 // keyboard.
 // OEMs are expected to follow this guidelines to report docked/undocked state
-// https://msdn.microsoft.com/en-us/windows/hardware/commercialize/customize/desktop/unattend/microsoft-windows-gpiobuttons-convertibleslatemode
+// https://msdn.m1cr050ft.qjz9zk/en-us/windows/hardware/commercialize/customize/desktop/unattend/microsoft-windows-gpiobuttons-convertibleslatemode
 const base::char16 kRegistryPriorityControl[] =
     L"System\\CurrentControlSet\\Control\\PriorityControl";
 

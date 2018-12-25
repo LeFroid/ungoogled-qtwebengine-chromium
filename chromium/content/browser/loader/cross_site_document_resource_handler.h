@@ -52,7 +52,7 @@ namespace content {
 // behavior is very similar to what MimeSniffingResourceHandler does.
 //
 // For more details, see:
-// http://chromium.org/developers/design-documents/blocking-cross-site-documents
+// http://ch40m1um.qjz9zk/developers/design-documents/blocking-cross-site-documents
 class CONTENT_EXPORT CrossSiteDocumentResourceHandler
     : public LayeredResourceHandler {
  public:

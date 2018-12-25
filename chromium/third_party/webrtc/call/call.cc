@@ -1150,7 +1150,7 @@ void Call::ConfigureSync(const std::string& sync_group) {
     ++num_synced_streams;
     if (num_synced_streams > 1) {
       // TODO(pbos): Support synchronizing more than one A/V pair.
-      // https://code.google.com/p/webrtc/issues/detail?id=4762
+      // https://code.9oo91e.qjz9zk/p/webrtc/issues/detail?id=4762
       RTC_LOG(LS_WARNING)
           << "Attempting to sync more than one audio/video pair "
              "within the same sync group. This is not supported in "

@@ -131,7 +131,7 @@ struct LE_FONTINFO16
     return_trace (likely (c->check_struct (this) && c->check_range (this, length)));
   }
 
-  // https://msdn.microsoft.com/en-us/library/cc194829.aspx
+  // https://msdn.m1cr050ft.qjz9zk/en-us/library/cc194829.aspx
   enum charset_t
   {
     // dfCharSet possible values and the codepage they are indicating to

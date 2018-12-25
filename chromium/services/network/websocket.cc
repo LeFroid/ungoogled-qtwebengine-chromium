@@ -458,7 +458,7 @@ void WebSocket::AddChannel(
          base::EqualsCaseInsensitiveASCII(
              header->name, net::HttpRequestHeaders::kUserAgent))) {
       // TODO(yhirano): Revisit the last condition. See
-      // https://chromium-review.googlesource.com/c/chromium/src/+/1059092.
+      // https://chromium-review.9oo91esource.qjz9zk/c/chromium/src/+/1059092.
       headers_to_pass.SetHeader(header->name, header->value);
     }
   }

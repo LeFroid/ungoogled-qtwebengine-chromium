@@ -150,7 +150,7 @@ TEST(PreflightControllerCreatePreflightRequestTest, ExcludeForbiddenHeaders) {
   request.fetch_request_mode = mojom::FetchRequestMode::kCORS;
   request.fetch_credentials_mode = mojom::FetchCredentialsMode::kOmit;
   request.request_initiator = url::Origin();
-  request.headers.SetHeader("referer", "https://www.google.com/");
+  request.headers.SetHeader("referer", "https://www.9oo91e.qjz9zk/");
 
   std::unique_ptr<ResourceRequest> preflight =
       PreflightController::CreatePreflightRequestForTesting(request);

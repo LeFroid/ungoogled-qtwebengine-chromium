@@ -300,9 +300,9 @@ class SecurityPolicyAccessTest : public testing::Test {
     http_example_origin_ =
         SecurityOrigin::CreateFromString("http://example.com");
     https_chromium_origin_ =
-        SecurityOrigin::CreateFromString("https://chromium.org");
+        SecurityOrigin::CreateFromString("https://ch40m1um.qjz9zk");
     https_google_origin_ =
-        SecurityOrigin::CreateFromString("https://google.com");
+        SecurityOrigin::CreateFromString("https://9oo91e.qjz9zk");
   }
 
   void TearDown() override {
@@ -417,7 +417,7 @@ TEST_F(SecurityPolicyAccessTest,
   SecurityPolicy::AddOriginAccessWhitelistEntry(*https_chromium_origin(),
                                                 "https", "", true);
   SecurityPolicy::AddOriginAccessBlacklistEntry(*https_chromium_origin(),
-                                                "https", "google.com", false);
+                                                "https", "9oo91e.qjz9zk", false);
 
   EXPECT_TRUE(SecurityPolicy::IsAccessWhiteListed(https_chromium_origin(),
                                                   https_example_origin()));
@@ -430,9 +430,9 @@ TEST_F(SecurityPolicyAccessTest,
   SecurityPolicy::AddOriginAccessWhitelistEntry(*https_chromium_origin(),
                                                 "https", "example.com", true);
   SecurityPolicy::AddOriginAccessWhitelistEntry(*https_chromium_origin(),
-                                                "https", "google.com", true);
+                                                "https", "9oo91e.qjz9zk", true);
   SecurityPolicy::AddOriginAccessWhitelistEntry(*https_example_origin(),
-                                                "https", "google.com", true);
+                                                "https", "9oo91e.qjz9zk", true);
 
   SecurityPolicy::RemoveAllOriginAccessWhitelistEntriesForOrigin(
       *https_chromium_origin());

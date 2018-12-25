@@ -214,7 +214,7 @@ void AppendStringToBuffer(std::vector<uint8_t>* data,
 // not needed when uploading from a PBO and for compressed formats which the
 // client sends untouched. This class handles resetting and restoring the unpack
 // state.
-// TODO(cwallez@chromium.org) it would be nicer to handle the resetting /
+// TODO(cwallez@ch40m1um.qjz9zk) it would be nicer to handle the resetting /
 // restoring on the client side.
 class ScopedUnpackStateButAlignmentReset {
  public:

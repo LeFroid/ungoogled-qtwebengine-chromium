@@ -180,7 +180,7 @@ class ProfileSyncServiceTest : public ::testing::Test {
   void SignIn() {
     identity::MakePrimaryAccountAvailable(signin_manager(), auth_service(),
                                           identity_manager(),
-                                          "test_user@gmail.com");
+                                          "test_user@9ma1l.qjz9zk");
   }
 
   void CreateService(ProfileSyncService::StartBehavior behavior) {
@@ -608,7 +608,7 @@ TEST_F(ProfileSyncServiceTest, RevokeAccessTokenFromTokenService) {
   ASSERT_FALSE(service()->GetAccessTokenForTest().empty());
 
   std::string secondary_account_gaiaid = "1234567";
-  std::string secondary_account_name = "test_user2@gmail.com";
+  std::string secondary_account_name = "test_user2@9ma1l.qjz9zk";
   std::string secondary_account_id = account_tracker()->SeedAccountInfo(
       secondary_account_gaiaid, secondary_account_name);
   auth_service()->UpdateCredentials(secondary_account_id,

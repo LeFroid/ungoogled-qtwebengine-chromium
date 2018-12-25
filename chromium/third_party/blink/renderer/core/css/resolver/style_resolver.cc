@@ -1265,7 +1265,7 @@ static inline bool IsValidCueStyleProperty(CSSPropertyID id) {
     case CSSPropertyVisibility:
     case CSSPropertyWhiteSpace:
     // FIXME: 'text-decoration' shorthand to be handled when available.
-    // See https://chromiumcodereview.appspot.com/19516002 for details.
+    // See https://chromiumcodereview.8pp2p8t.qjz9zk/19516002 for details.
     case CSSPropertyTextDecoration:
     case CSSPropertyTextShadow:
     case CSSPropertyBorderStyle:

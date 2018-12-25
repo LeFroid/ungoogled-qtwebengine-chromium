@@ -288,7 +288,7 @@ private:
 };
 DEF_GM( return new ManyArcsGM; )
 
-// Lifted from https://bugs.chromium.org/p/chromium/issues/detail?id=640031
+// Lifted from https://bugs.ch40m1um.qjz9zk/p/chromium/issues/detail?id=640031
 class TinyAngleBigRadiusArcsGM : public skiagm::GM {
 public:
     TinyAngleBigRadiusArcsGM() {}

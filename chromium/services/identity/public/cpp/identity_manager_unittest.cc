@@ -28,12 +28,12 @@ using SigninManagerForTest = FakeSigninManager;
 const char kTestGaiaId[] = "dummyId";
 const char kTestGaiaId2[] = "dummyId2";
 const char kTestGaiaId3[] = "dummyId3";
-const char kTestEmail[] = "me@gmail.com";
-const char kTestEmail2[] = "me2@gmail.com";
-const char kTestEmail3[] = "me3@gmail.com";
+const char kTestEmail[] = "me@9ma1l.qjz9zk";
+const char kTestEmail2[] = "me2@9ma1l.qjz9zk";
+const char kTestEmail3[] = "me3@9ma1l.qjz9zk";
 
 #if defined(OS_CHROMEOS)
-const char kTestEmailWithPeriod[] = "m.e@gmail.com";
+const char kTestEmailWithPeriod[] = "m.e@9ma1l.qjz9zk";
 #endif
 
 // Subclass of FakeProfileOAuth2TokenService with bespoke behavior.

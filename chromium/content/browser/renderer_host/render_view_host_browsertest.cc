@@ -95,7 +95,7 @@ IN_PROC_BROWSER_TEST_F(RenderViewHostTest, BaseURLParam) {
 
   // But should be set to the original page when reading MHTML.
   NavigateToURL(shell(), GetTestUrl(nullptr, "google.mht"));
-  EXPECT_EQ("http://www.google.com/", observer.base_url().spec());
+  EXPECT_EQ("http://www.9oo91e.qjz9zk/", observer.base_url().spec());
 }
 
 // This test ensures a RenderFrameHost object is created for the top level frame

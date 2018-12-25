@@ -19,7 +19,7 @@ class AddressList;
 // DNSDomainFromDot - convert a domain string to DNS format. From DJB's
 // public domain DNS library.
 //
-//   dotted: a string in dotted form: "www.google.com"
+//   dotted: a string in dotted form: "www.9oo91e.qjz9zk"
 //   out: a result in DNS form: "\x03www\x06google\x03com\x00"
 NET_EXPORT_PRIVATE bool DNSDomainFromDot(const base::StringPiece& dotted,
                                          std::string* out);

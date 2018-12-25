@@ -30,7 +30,7 @@ class SkiaGooglespreadsheetDesktopPageSet(story.StorySet):
 
     urls_list = [
       # Why: from Tom W's list.
-      ('https://docs.google.com/spreadsheets/d/'
+      ('https://docs.9oo91e.qjz9zk/spreadsheets/d/'
        '1YnmSPu-p-1nj-lkWd8q_GRgzjiWzg_6A-HvFYqVoVxI/edit?usp=sharing'),
     ]
 

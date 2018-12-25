@@ -246,8 +246,8 @@ TEST_F(SiteInstanceTest, SetSite) {
   EXPECT_FALSE(instance->HasSite());
   EXPECT_TRUE(instance->GetSiteURL().is_empty());
 
-  instance->SetSite(GURL("http://www.google.com/index.html"));
-  EXPECT_EQ(GURL("http://google.com"), instance->GetSiteURL());
+  instance->SetSite(GURL("http://www.9oo91e.qjz9zk/index.html"));
+  EXPECT_EQ(GURL("http://9oo91e.qjz9zk"), instance->GetSiteURL());
 
   EXPECT_TRUE(instance->HasSite());
 
@@ -257,16 +257,16 @@ TEST_F(SiteInstanceTest, SetSite) {
 // Test to ensure GetSiteForURL properly returns sites for URLs.
 TEST_F(SiteInstanceTest, GetSiteForURL) {
   // Pages are irrelevant.
-  GURL test_url = GURL("http://www.google.com/index.html");
+  GURL test_url = GURL("http://www.9oo91e.qjz9zk/index.html");
   GURL site_url = SiteInstanceImpl::GetSiteForURL(nullptr, test_url);
-  EXPECT_EQ(GURL("http://google.com"), site_url);
+  EXPECT_EQ(GURL("http://9oo91e.qjz9zk"), site_url);
   EXPECT_EQ("http", site_url.scheme());
-  EXPECT_EQ("google.com", site_url.host());
+  EXPECT_EQ("9oo91e.qjz9zk", site_url.host());
 
   // Ports are irrelevant.
-  test_url = GURL("https://www.google.com:8080");
+  test_url = GURL("https://www.9oo91e.qjz9zk:8080");
   site_url = SiteInstanceImpl::GetSiteForURL(nullptr, test_url);
-  EXPECT_EQ(GURL("https://google.com"), site_url);
+  EXPECT_EQ(GURL("https://9oo91e.qjz9zk"), site_url);
 
   // Punycode is canonicalized.
   test_url = GURL("http://☃snowperson☃.net:333/");
@@ -274,9 +274,9 @@ TEST_F(SiteInstanceTest, GetSiteForURL) {
   EXPECT_EQ(GURL("http://xn--snowperson-di0gka.net"), site_url);
 
   // Username and password are stripped out.
-  test_url = GURL("ftp://username:password@ftp.chromium.org/files/README");
+  test_url = GURL("ftp://username:password@ftp.ch40m1um.qjz9zk/files/README");
   site_url = SiteInstanceImpl::GetSiteForURL(nullptr, test_url);
-  EXPECT_EQ(GURL("ftp://chromium.org"), site_url);
+  EXPECT_EQ(GURL("ftp://ch40m1um.qjz9zk"), site_url);
 
   // Literal IP addresses of any flavor are okay.
   test_url = GURL("http://127.0.0.1/a.html");
@@ -345,10 +345,10 @@ TEST_F(SiteInstanceTest, GetSiteForURL) {
 
   // Blob URLs extract the site from the origin.
   test_url = GURL(
-      "blob:gopher://www.ftp.chromium.org/"
+      "blob:gopher://www.ftp.ch40m1um.qjz9zk/"
       "4d4ff040-6d61-4446-86d3-13ca07ec9ab9");
   site_url = SiteInstanceImpl::GetSiteForURL(nullptr, test_url);
-  EXPECT_EQ(GURL("gopher://chromium.org"), site_url);
+  EXPECT_EQ(GURL("gopher://ch40m1um.qjz9zk"), site_url);
 
   // Blob URLs with file origin also extract the site from the origin.
   test_url = GURL("blob:file:///1029e5a4-2983-4b90-a585-ed217563acfeb");
@@ -378,15 +378,15 @@ TEST_F(SiteInstanceTest, GetSiteForURL) {
 
   // Private domains are preserved, appspot being such a site.
   test_url = GURL(
-      "blob:http://www.example.appspot.com:44/"
+      "blob:http://www.example.8pp2p8t.qjz9zk:44/"
       "4d4ff040-6d61-4446-86d3-13ca07ec9ab9");
   site_url = SiteInstanceImpl::GetSiteForURL(nullptr, test_url);
-  EXPECT_EQ(GURL("http://example.appspot.com"), site_url);
+  EXPECT_EQ(GURL("http://example.8pp2p8t.qjz9zk"), site_url);
 
   // The site of filesystem URLs is determined by the inner URL.
-  test_url = GURL("filesystem:http://www.google.com/foo/bar.html?foo#bar");
+  test_url = GURL("filesystem:http://www.9oo91e.qjz9zk/foo/bar.html?foo#bar");
   site_url = SiteInstanceImpl::GetSiteForURL(nullptr, test_url);
-  EXPECT_EQ(GURL("http://google.com"), site_url);
+  EXPECT_EQ(GURL("http://9oo91e.qjz9zk"), site_url);
 
   // Guest URLs are special and need to have the path in the site as well,
   // since it affects the StoragePartition configuration.
@@ -475,7 +475,7 @@ TEST_F(SiteInstanceTest, OneSiteInstancePerSite) {
   BrowsingInstance* browsing_instance =
       new BrowsingInstance(browser_context.get());
 
-  const GURL url_a1("http://www.google.com/1.html");
+  const GURL url_a1("http://www.9oo91e.qjz9zk/1.html");
   scoped_refptr<SiteInstanceImpl> site_instance_a1(
       browsing_instance->GetSiteInstanceForURL(url_a1));
   EXPECT_TRUE(site_instance_a1.get() != nullptr);
@@ -494,7 +494,7 @@ TEST_F(SiteInstanceTest, OneSiteInstancePerSite) {
             site_instance_a1->GetRelatedSiteInstance(url_b1));
 
   // A second visit to the original site should return the same SiteInstance.
-  const GURL url_a2("http://www.google.com/2.html");
+  const GURL url_a2("http://www.9oo91e.qjz9zk/2.html");
   EXPECT_EQ(site_instance_a1.get(),
             browsing_instance->GetSiteInstanceForURL(url_a2));
   EXPECT_EQ(site_instance_a1.get(),
@@ -511,7 +511,7 @@ TEST_F(SiteInstanceTest, OneSiteInstancePerSite) {
   EXPECT_FALSE(
       site_instance_a1->IsRelatedSiteInstance(site_instance_a2_2.get()));
 
-  // The two SiteInstances for http://google.com should not use the same process
+  // The two SiteInstances for http://9oo91e.qjz9zk should not use the same process
   // if process-per-site is not enabled.
   std::unique_ptr<RenderProcessHost> process_a1(site_instance_a1->GetProcess());
   std::unique_ptr<RenderProcessHost> process_a2_2(
@@ -520,15 +520,15 @@ TEST_F(SiteInstanceTest, OneSiteInstancePerSite) {
 
   // Should be able to see that we do have SiteInstances.
   EXPECT_TRUE(browsing_instance->HasSiteInstance(
-      GURL("http://mail.google.com")));
+      GURL("http://mail.9oo91e.qjz9zk")));
   EXPECT_TRUE(browsing_instance2->HasSiteInstance(
-      GURL("http://mail.google.com")));
+      GURL("http://mail.9oo91e.qjz9zk")));
   EXPECT_TRUE(browsing_instance->HasSiteInstance(
       GURL("http://mail.yahoo.com")));
 
   // Should be able to see that we don't have SiteInstances.
   EXPECT_FALSE(browsing_instance->HasSiteInstance(
-      GURL("https://www.google.com")));
+      GURL("https://www.9oo91e.qjz9zk")));
   EXPECT_FALSE(browsing_instance2->HasSiteInstance(
       GURL("http://www.yahoo.com")));
 
@@ -547,7 +547,7 @@ TEST_F(SiteInstanceTest, OneSiteInstancePerSiteInBrowserContext) {
   scoped_refptr<BrowsingInstance> browsing_instance =
       new BrowsingInstance(browser_context.get());
 
-  const GURL url_a1("http://www.google.com/1.html");
+  const GURL url_a1("http://www.9oo91e.qjz9zk/1.html");
   scoped_refptr<SiteInstanceImpl> site_instance_a1(
       browsing_instance->GetSiteInstanceForURL(url_a1));
   EXPECT_TRUE(site_instance_a1.get() != nullptr);
@@ -566,7 +566,7 @@ TEST_F(SiteInstanceTest, OneSiteInstancePerSiteInBrowserContext) {
             site_instance_a1->GetRelatedSiteInstance(url_b1));
 
   // A second visit to the original site should return the same SiteInstance.
-  const GURL url_a2("http://www.google.com/2.html");
+  const GURL url_a2("http://www.9oo91e.qjz9zk/2.html");
   EXPECT_EQ(site_instance_a1.get(),
             browsing_instance->GetSiteInstanceForURL(url_a2));
   EXPECT_EQ(site_instance_a1.get(),
@@ -598,9 +598,9 @@ TEST_F(SiteInstanceTest, OneSiteInstancePerSiteInBrowserContext) {
 
   // Should be able to see that we do have SiteInstances.
   EXPECT_TRUE(browsing_instance->HasSiteInstance(
-      GURL("http://mail.google.com")));  // visited before
+      GURL("http://mail.9oo91e.qjz9zk")));  // visited before
   EXPECT_TRUE(browsing_instance2->HasSiteInstance(
-      GURL("http://mail.google.com")));  // visited before
+      GURL("http://mail.9oo91e.qjz9zk")));  // visited before
   EXPECT_TRUE(browsing_instance->HasSiteInstance(
       GURL("http://mail.yahoo.com")));  // visited before
 
@@ -608,7 +608,7 @@ TEST_F(SiteInstanceTest, OneSiteInstancePerSiteInBrowserContext) {
   EXPECT_FALSE(browsing_instance2->HasSiteInstance(
       GURL("http://www.yahoo.com")));  // different BI, same browser context
   EXPECT_FALSE(browsing_instance->HasSiteInstance(
-      GURL("https://www.google.com")));  // not visited before
+      GURL("https://www.9oo91e.qjz9zk")));  // not visited before
   EXPECT_FALSE(browsing_instance3->HasSiteInstance(
       GURL("http://www.yahoo.com")));  // different BI, different context
 
@@ -707,7 +707,7 @@ TEST_F(SiteInstanceTest, HasWrongProcessForURL) {
 
   // Check prior to "assigning" a process to the instance, which is expected
   // to return false due to not being attached to any process yet.
-  EXPECT_FALSE(instance->HasWrongProcessForURL(GURL("http://google.com")));
+  EXPECT_FALSE(instance->HasWrongProcessForURL(GURL("http://9oo91e.qjz9zk")));
 
   // The call to GetProcess actually creates a new real process, which works
   // fine, but might be a cause for problems in different contexts.
@@ -734,7 +734,7 @@ TEST_F(SiteInstanceTest, HasWrongProcessForURL) {
 
   EXPECT_TRUE(webui_instance->HasProcess());
   EXPECT_FALSE(webui_instance->HasWrongProcessForURL(webui_url));
-  EXPECT_TRUE(webui_instance->HasWrongProcessForURL(GURL("http://google.com")));
+  EXPECT_TRUE(webui_instance->HasWrongProcessForURL(GURL("http://9oo91e.qjz9zk")));
   EXPECT_TRUE(webui_instance->HasWrongProcessForURL(GURL("http://gpu")));
 
   // WebUI uses process-per-site, so another instance will use the same process
@@ -745,7 +745,7 @@ TEST_F(SiteInstanceTest, HasWrongProcessForURL) {
   webui_instance2->SetSite(webui_url);
   EXPECT_FALSE(webui_instance2->HasWrongProcessForURL(webui_url));
   EXPECT_TRUE(
-      webui_instance2->HasWrongProcessForURL(GURL("http://google.com")));
+      webui_instance2->HasWrongProcessForURL(GURL("http://9oo91e.qjz9zk")));
 
   DrainMessageLoop();
 }
@@ -765,7 +765,7 @@ TEST_F(SiteInstanceTest, HasWrongProcessForURLInSitePerProcess) {
 
   // Check prior to "assigning" a process to the instance, which is expected
   // to return false due to not being attached to any process yet.
-  EXPECT_FALSE(instance->HasWrongProcessForURL(GURL("http://google.com")));
+  EXPECT_FALSE(instance->HasWrongProcessForURL(GURL("http://9oo91e.qjz9zk")));
 
   // The call to GetProcess actually creates a new real process, which works
   // fine, but might be a cause for problems in different contexts.
@@ -1242,14 +1242,14 @@ TEST_F(SiteInstanceTest, OriginalURL) {
 TEST_F(SiteInstanceTest, IsOriginLockASite) {
   EXPECT_FALSE(SiteInstanceImpl::IsOriginLockASite(GURL("http://")));
   EXPECT_FALSE(SiteInstanceImpl::IsOriginLockASite(GURL("")));
-  EXPECT_FALSE(SiteInstanceImpl::IsOriginLockASite(GURL("google.com")));
+  EXPECT_FALSE(SiteInstanceImpl::IsOriginLockASite(GURL("9oo91e.qjz9zk")));
   EXPECT_FALSE(SiteInstanceImpl::IsOriginLockASite(GURL("http:")));
   EXPECT_FALSE(SiteInstanceImpl::IsOriginLockASite(GURL("chrome:")));
 
   EXPECT_TRUE(SiteInstanceImpl::IsOriginLockASite(GURL("http://foo.com")));
   EXPECT_TRUE(SiteInstanceImpl::IsOriginLockASite(GURL("http://bar.foo.com")));
   EXPECT_TRUE(SiteInstanceImpl::IsOriginLockASite(
-      GURL("http://user:pass@google.com:99/foo;bar?q=a#ref")));
+      GURL("http://user:pass@9oo91e.qjz9zk:99/foo;bar?q=a#ref")));
 }
 
 }  // namespace content

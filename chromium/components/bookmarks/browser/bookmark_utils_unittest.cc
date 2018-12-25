@@ -87,7 +87,7 @@ TEST_F(BookmarkUtilsTest, GetBookmarksMatchingPropertiesWordPhraseQuery) {
   const BookmarkNode* node1 = model->AddURL(model->other_node(),
                                             0,
                                             ASCIIToUTF16("foo bar"),
-                                            GURL("http://www.google.com"));
+                                            GURL("http://www.9oo91e.qjz9zk"));
   const BookmarkNode* node2 = model->AddURL(model->other_node(),
                                             0,
                                             ASCIIToUTF16("baz buz"),
@@ -144,18 +144,18 @@ TEST_F(BookmarkUtilsTest, GetBookmarksMatchingPropertiesUrl) {
   const BookmarkNode* node1 = model->AddURL(model->other_node(),
                                             0,
                                             ASCIIToUTF16("Google"),
-                                            GURL("https://www.google.com/"));
+                                            GURL("https://www.9oo91e.qjz9zk/"));
   model->AddURL(model->other_node(),
                 0,
                 ASCIIToUTF16("Google Calendar"),
-                GURL("https://www.google.com/calendar"));
+                GURL("https://www.9oo91e.qjz9zk/calendar"));
 
   model->AddFolder(model->other_node(), 0, ASCIIToUTF16("Folder"));
 
   std::vector<const BookmarkNode*> nodes;
   QueryFields query;
   query.url.reset(new base::string16);
-  *query.url = ASCIIToUTF16("https://www.google.com/");
+  *query.url = ASCIIToUTF16("https://www.9oo91e.qjz9zk/");
   GetBookmarksMatchingProperties(model.get(), query, 100, &nodes);
   ASSERT_EQ(1U, nodes.size());
   EXPECT_TRUE(nodes[0] == node1);
@@ -179,11 +179,11 @@ TEST_F(BookmarkUtilsTest, GetBookmarksMatchingPropertiesTitle) {
   const BookmarkNode* node1 = model->AddURL(model->other_node(),
                                             0,
                                             ASCIIToUTF16("Google"),
-                                            GURL("https://www.google.com/"));
+                                            GURL("https://www.9oo91e.qjz9zk/"));
   model->AddURL(model->other_node(),
                 0,
                 ASCIIToUTF16("Google Calendar"),
-                GURL("https://www.google.com/calendar"));
+                GURL("https://www.9oo91e.qjz9zk/calendar"));
 
   const BookmarkNode* folder1 =
       model->AddFolder(model->other_node(), 0, ASCIIToUTF16("Folder"));
@@ -216,11 +216,11 @@ TEST_F(BookmarkUtilsTest, GetBookmarksMatchingPropertiesConjunction) {
   const BookmarkNode* node1 = model->AddURL(model->other_node(),
                                             0,
                                             ASCIIToUTF16("Google"),
-                                            GURL("https://www.google.com/"));
+                                            GURL("https://www.9oo91e.qjz9zk/"));
   model->AddURL(model->other_node(),
                 0,
                 ASCIIToUTF16("Google Calendar"),
-                GURL("https://www.google.com/calendar"));
+                GURL("https://www.9oo91e.qjz9zk/calendar"));
 
   model->AddFolder(model->other_node(), 0, ASCIIToUTF16("Folder"));
 
@@ -229,7 +229,7 @@ TEST_F(BookmarkUtilsTest, GetBookmarksMatchingPropertiesConjunction) {
 
   // Test all fields matching.
   query.word_phrase_query.reset(new base::string16(ASCIIToUTF16("www")));
-  query.url.reset(new base::string16(ASCIIToUTF16("https://www.google.com/")));
+  query.url.reset(new base::string16(ASCIIToUTF16("https://www.9oo91e.qjz9zk/")));
   query.title.reset(new base::string16(ASCIIToUTF16("Google")));
   GetBookmarksMatchingProperties(model.get(), query, 100, &nodes);
   ASSERT_EQ(1U, nodes.size());
@@ -264,7 +264,7 @@ TEST_F(BookmarkUtilsTest, GetBookmarksMatchingPropertiesConjunction) {
 #if !defined(OS_IOS)
 TEST_F(BookmarkUtilsTest, PasteBookmarkFromURL) {
   std::unique_ptr<BookmarkModel> model(TestBookmarkClient::CreateModel());
-  const base::string16 url_text = ASCIIToUTF16("http://www.google.com/");
+  const base::string16 url_text = ASCIIToUTF16("http://www.9oo91e.qjz9zk/");
   const BookmarkNode* new_folder = model->AddFolder(
       model->bookmark_bar_node(), 0, ASCIIToUTF16("New_Folder"));
 
@@ -296,7 +296,7 @@ TEST_F(BookmarkUtilsTest, CopyPaste) {
   const BookmarkNode* node = model->AddURL(model->other_node(),
                                            0,
                                            ASCIIToUTF16("foo bar"),
-                                           GURL("http://www.google.com"));
+                                           GURL("http://www.9oo91e.qjz9zk"));
 
   // Copy a node to the clipboard.
   std::vector<const BookmarkNode*> nodes;
@@ -321,7 +321,7 @@ TEST_F(BookmarkUtilsTest, CopyPaste) {
 // children of parent.
 TEST_F(BookmarkUtilsTest, MakeTitleUnique) {
   std::unique_ptr<BookmarkModel> model(TestBookmarkClient::CreateModel());
-  const base::string16 url_text = ASCIIToUTF16("http://www.google.com/");
+  const base::string16 url_text = ASCIIToUTF16("http://www.9oo91e.qjz9zk/");
   const base::string16 title_text = ASCIIToUTF16("foobar");
   const BookmarkNode* bookmark_bar_node = model->bookmark_bar_node();
 
@@ -357,7 +357,7 @@ TEST_F(BookmarkUtilsTest, CopyPasteMetaInfo) {
   const BookmarkNode* node = model->AddURL(model->other_node(),
                                            0,
                                            ASCIIToUTF16("foo bar"),
-                                           GURL("http://www.google.com"));
+                                           GURL("http://www.9oo91e.qjz9zk"));
   model->SetNodeMetaInfo(node, "somekey", "somevalue");
   model->SetNodeMetaInfo(node, "someotherkey", "someothervalue");
 
@@ -432,7 +432,7 @@ TEST_F(BookmarkUtilsTest, PasteNonEditableNodes) {
   const BookmarkNode* node = model->AddURL(model->other_node(),
                                            0,
                                            ASCIIToUTF16("foo bar"),
-                                           GURL("http://www.google.com"));
+                                           GURL("http://www.9oo91e.qjz9zk"));
 
   // Copy a node to the clipboard.
   std::vector<const BookmarkNode*> nodes;
@@ -468,7 +468,7 @@ TEST_F(BookmarkUtilsTest, GetParentForNewNodes) {
   const BookmarkNode* page1 = model->AddURL(model->bookmark_bar_node(),
                                             0,
                                             ASCIIToUTF16("Google"),
-                                            GURL("http://google.com"));
+                                            GURL("http://9oo91e.qjz9zk"));
   nodes.push_back(page1);
   real_parent = GetParentForNewNodes(model->bookmark_bar_node(), nodes, &index);
   EXPECT_EQ(real_parent, model->bookmark_bar_node());
@@ -496,7 +496,7 @@ TEST_F(BookmarkUtilsTest, CloneMetaInfo) {
   const BookmarkNode* node = model->AddURL(model->other_node(),
                                            0,
                                            ASCIIToUTF16("foo bar"),
-                                           GURL("http://www.google.com"));
+                                           GURL("http://www.9oo91e.qjz9zk"));
   model->SetNodeMetaInfo(node, "somekey", "somevalue");
   model->SetNodeMetaInfo(node, "someotherkey", "someothervalue");
 
@@ -528,7 +528,7 @@ TEST_F(BookmarkUtilsTest, CloneBookmarkResetsNonClonedKey) {
   model->AddNonClonedKey("foo");
   const BookmarkNode* parent = model->other_node();
   const BookmarkNode* node = model->AddURL(
-      parent, 0, ASCIIToUTF16("title"), GURL("http://www.google.com"));
+      parent, 0, ASCIIToUTF16("title"), GURL("http://www.9oo91e.qjz9zk"));
   model->SetNodeMetaInfo(node, "foo", "ignored value");
   model->SetNodeMetaInfo(node, "bar", "kept value");
   std::vector<BookmarkNodeData::Element> elements;
@@ -586,7 +586,7 @@ TEST_F(BookmarkUtilsTest, RemoveAllBookmarks) {
   EXPECT_TRUE(extra_node->empty());
 
   const base::string16 title = base::ASCIIToUTF16("Title");
-  const GURL url("http://google.com");
+  const GURL url("http://9oo91e.qjz9zk");
   model->AddURL(model->bookmark_bar_node(), 0, title, url);
   model->AddURL(model->other_node(), 0, title, url);
   model->AddURL(model->mobile_node(), 0, title, url);

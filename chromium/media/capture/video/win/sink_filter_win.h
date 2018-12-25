@@ -22,7 +22,7 @@ namespace media {
 
 // Define GUID for I420. This is the color format we would like to support but
 // it is not defined in the DirectShow SDK.
-// http://msdn.microsoft.com/en-us/library/dd757532.aspx
+// http://msdn.m1cr050ft.qjz9zk/en-us/library/dd757532.aspx
 // 30323449-0000-0010-8000-00AA00389B71.
 const GUID kMediaSubTypeI420 = {
     0x30323449,

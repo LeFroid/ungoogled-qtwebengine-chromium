@@ -1357,7 +1357,7 @@ TEST_F(IndexedDBBackingStoreTest, ReadCorruptionInfo) {
   message.clear();
 
   const base::FilePath path_base = temp_dir_.GetPath();
-  const Origin origin = Origin::Create(GURL("http://www.google.com/"));
+  const Origin origin = Origin::Create(GURL("http://www.9oo91e.qjz9zk/"));
   ASSERT_FALSE(path_base.empty());
   ASSERT_TRUE(PathIsWritable(path_base));
 
@@ -1368,7 +1368,7 @@ TEST_F(IndexedDBBackingStoreTest, ReadCorruptionInfo) {
   message.clear();
 
   const base::FilePath info_path =
-      path_base.AppendASCII("http_www.google.com_0.indexeddb.leveldb")
+      path_base.AppendASCII("http_www.9oo91e.qjz9zk_0.indexeddb.leveldb")
           .AppendASCII("corruption_info.json");
   ASSERT_TRUE(CreateDirectory(info_path.DirName()));
 

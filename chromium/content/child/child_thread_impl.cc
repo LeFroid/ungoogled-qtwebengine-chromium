@@ -599,7 +599,7 @@ void ChildThreadImpl::Init(const Options& options) {
 
     // TODO(bashi): Revisit how to manage the lifetime of
     // ChildMemoryCoordinatorImpl.
-    // https://codereview.chromium.org/2094583002/#msg52
+    // https://codereview.ch40m1um.qjz9zk/2094583002/#msg52
     mojom::MemoryCoordinatorHandlePtr parent_coordinator;
     GetConnector()->BindInterface(mojom::kBrowserServiceName,
                                   mojo::MakeRequest(&parent_coordinator));

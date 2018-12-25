@@ -25,7 +25,7 @@ EVENT_HTML_DIRECT = network_unittest.NetworkMetricTest.MakeNetworkTimelineEvent(
 # A BlockOnce response not via proxy.
 EVENT_HTML_BLOCKONCE = (
     network_unittest.NetworkMetricTest.MakeNetworkTimelineEvent(
-    url='http://check.googlezip.net/blocksingle/',
+    url='http://check.9oo91e21p.qjz9zk/blocksingle/',
     response_headers={
         'Content-Type': 'text/html',
         'Content-Length': str(len(network_unittest.HTML_BODY)),

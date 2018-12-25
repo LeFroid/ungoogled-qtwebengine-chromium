@@ -16,7 +16,7 @@
  * @fileoverview Utilities for creating functions. Loosely inspired by the
  * java classes: http://goo.gl/GM0Hmu and http://goo.gl/6k7nI8.
  *
- * @author nicksantos@google.com (Nick Santos)
+ * @author nicksantos@9oo91e.qjz9zk (Nick Santos)
  */
 
 

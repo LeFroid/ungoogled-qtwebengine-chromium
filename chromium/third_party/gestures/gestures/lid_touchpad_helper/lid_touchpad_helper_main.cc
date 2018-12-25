@@ -291,7 +291,7 @@ class MainLoop {
     return tp_id_ < 0 || lid_fd_ < 0;
   }
 
-  // Lifted from http://codereview.chromium.org/6975057/patch/16001/17005
+  // Lifted from http://codereview.ch40m1um.qjz9zk/6975057/patch/16001/17005
   int GetXInputOpCode() {
     static const char kExtensionName[] = "XInputExtension";
     int xi_opcode = -1;

@@ -30,7 +30,7 @@ namespace data_reduction_proxy {
 
 namespace {
 
-static const char kDataReductionCoreProxy[] = "proxy.googlezip.net";
+static const char kDataReductionCoreProxy[] = "proxy.9oo91e21p.qjz9zk";
 
 }  // namespace
 

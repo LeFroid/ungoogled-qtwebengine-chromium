@@ -401,7 +401,7 @@ class DnsHTTPAttempt : public DnsAttempt, public URLRequest::Delegate {
           data: "The domain name that is being requested"
           destination: OTHER
           destination_other: "The user configured DNS over HTTPS server, which"
-                             "may be dns.google.com"
+                             "may be dns.9oo91e.qjz9zk"
         }
         policy {
           cookies_allowed: NO

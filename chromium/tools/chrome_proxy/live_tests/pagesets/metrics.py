@@ -20,7 +20,7 @@ class MetricsStorySet(story.StorySet):
     super(MetricsStorySet, self).__init__()
 
     urls_list = [
-      'http://check.googlezip.net/metrics/',
+      'http://check.9oo91e21p.qjz9zk/metrics/',
     ]
 
     for url in urls_list:

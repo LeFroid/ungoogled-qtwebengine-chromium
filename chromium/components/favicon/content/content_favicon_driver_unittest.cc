@@ -35,8 +35,8 @@ class ContentFaviconDriverTest : public content::RenderViewHostTestHarness {
   const std::vector<gfx::Size> kEmptyIconSizes;
   const std::vector<SkBitmap> kEmptyIcons;
   const std::vector<favicon_base::FaviconRawBitmapResult> kEmptyRawBitmapResult;
-  const GURL kPageURL = GURL("http://www.google.com/");
-  const GURL kIconURL = GURL("http://www.google.com/favicon.ico");
+  const GURL kPageURL = GURL("http://www.9oo91e.qjz9zk/");
+  const GURL kIconURL = GURL("http://www.9oo91e.qjz9zk/favicon.ico");
 
   ContentFaviconDriverTest() {
     ON_CALL(favicon_service_, UpdateFaviconMappingsAndFetch(_, _, _, _, _, _))
@@ -119,7 +119,7 @@ TEST_F(ContentFaviconDriverTest, ShouldNotRequestRepeatedlyIfUnavailable) {
 }
 
 TEST_F(ContentFaviconDriverTest, ShouldDownloadSecondIfFirstUnavailable) {
-  const GURL kOtherIconURL = GURL("http://www.google.com/other-favicon.ico");
+  const GURL kOtherIconURL = GURL("http://www.9oo91e.qjz9zk/other-favicon.ico");
   ON_CALL(favicon_service_, WasUnableToDownloadFavicon(kIconURL))
       .WillByDefault(Return(true));
   // Mimic a page load.

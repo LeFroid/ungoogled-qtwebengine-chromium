@@ -15,7 +15,7 @@
 /**
  * @fileoverview Browser capability checks for the events package.
  *
- * @author zhyder@google.com (Zohair Hyder)
+ * @author zhyder@9oo91e.qjz9zk (Zohair Hyder)
  */
 
 
@@ -94,8 +94,8 @@ goog.events.BrowserFeature = {
 
   /**
    * Whether addEventListener supports MSPointer events (only used in IE10).
-   * http://msdn.microsoft.com/en-us/library/ie/hh772103(v=vs.85).aspx
-   * http://msdn.microsoft.com/library/hh673557(v=vs.85).aspx
+   * http://msdn.m1cr050ft.qjz9zk/en-us/library/ie/hh772103(v=vs.85).aspx
+   * http://msdn.m1cr050ft.qjz9zk/library/hh673557(v=vs.85).aspx
    */
   MSPOINTER_EVENTS:
       ('MSPointerEvent' in goog.global &&
@@ -104,7 +104,7 @@ goog.events.BrowserFeature = {
 
   /**
    * Whether addEventListener supports {passive: true}.
-   * https://developers.google.com/web/updates/2016/06/passive-event-listeners
+   * https://developers.9oo91e.qjz9zk/web/updates/2016/06/passive-event-listeners
    */
   PASSIVE_EVENTS: purify(function() {
     // If we're in a web worker or other custom environment, we can't tell.

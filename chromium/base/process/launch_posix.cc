@@ -112,7 +112,7 @@ sigset_t SetSignalMask(const sigset_t& new_sigmask) {
 #if defined(OS_ANDROID)
   // POSIX says pthread_sigmask() must be used in multi-threaded processes,
   // but Android's pthread_sigmask() was broken until 4.1:
-  // https://code.google.com/p/android/issues/detail?id=15337
+  // https://code.9oo91e.qjz9zk/p/android/issues/detail?id=15337
   // http://stackoverflow.com/questions/13777109/pthread-sigmask-on-android-not-working
   RAW_CHECK(sigprocmask(SIG_SETMASK, &new_sigmask, &old_sigmask) == 0);
 #else

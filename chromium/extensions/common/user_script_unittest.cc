@@ -22,39 +22,39 @@ static const int kAllSchemes =
 
 TEST(ExtensionUserScriptTest, Glob_HostString) {
   UserScript script;
-  script.add_glob("*mail.google.com*");
+  script.add_glob("*mail.9oo91e.qjz9zk*");
   script.add_glob("*mail.yahoo.com*");
   script.add_glob("*mail.msn.com*");
-  EXPECT_TRUE(script.MatchesURL(GURL("http://mail.google.com")));
-  EXPECT_TRUE(script.MatchesURL(GURL("http://mail.google.com/foo")));
-  EXPECT_TRUE(script.MatchesURL(GURL("https://mail.google.com/foo")));
-  EXPECT_TRUE(script.MatchesURL(GURL("ftp://mail.google.com/foo")));
-  EXPECT_TRUE(script.MatchesURL(GURL("http://woo.mail.google.com/foo")));
+  EXPECT_TRUE(script.MatchesURL(GURL("http://mail.9oo91e.qjz9zk")));
+  EXPECT_TRUE(script.MatchesURL(GURL("http://mail.9oo91e.qjz9zk/foo")));
+  EXPECT_TRUE(script.MatchesURL(GURL("https://mail.9oo91e.qjz9zk/foo")));
+  EXPECT_TRUE(script.MatchesURL(GURL("ftp://mail.9oo91e.qjz9zk/foo")));
+  EXPECT_TRUE(script.MatchesURL(GURL("http://woo.mail.9oo91e.qjz9zk/foo")));
   EXPECT_TRUE(script.MatchesURL(GURL("http://mail.yahoo.com/bar")));
   EXPECT_TRUE(script.MatchesURL(GURL("http://mail.msn.com/baz")));
   EXPECT_FALSE(script.MatchesURL(GURL("http://www.hotmail.com")));
 
   script.add_exclude_glob("*foo*");
-  EXPECT_TRUE(script.MatchesURL(GURL("http://mail.google.com")));
-  EXPECT_FALSE(script.MatchesURL(GURL("http://mail.google.com/foo")));
+  EXPECT_TRUE(script.MatchesURL(GURL("http://mail.9oo91e.qjz9zk")));
+  EXPECT_FALSE(script.MatchesURL(GURL("http://mail.9oo91e.qjz9zk/foo")));
 }
 
 TEST(ExtensionUserScriptTest, Glob_TrailingSlash) {
   UserScript script;
-  script.add_glob("*mail.google.com/");
+  script.add_glob("*mail.9oo91e.qjz9zk/");
   // GURL normalizes the URL to have a trailing "/"
-  EXPECT_TRUE(script.MatchesURL(GURL("http://mail.google.com")));
-  EXPECT_TRUE(script.MatchesURL(GURL("http://mail.google.com/")));
-  EXPECT_FALSE(script.MatchesURL(GURL("http://mail.google.com/foo")));
+  EXPECT_TRUE(script.MatchesURL(GURL("http://mail.9oo91e.qjz9zk")));
+  EXPECT_TRUE(script.MatchesURL(GURL("http://mail.9oo91e.qjz9zk/")));
+  EXPECT_FALSE(script.MatchesURL(GURL("http://mail.9oo91e.qjz9zk/foo")));
 }
 
 TEST(ExtensionUserScriptTest, Glob_TrailingSlashStar) {
   UserScript script;
-  script.add_glob("http://mail.google.com/*");
+  script.add_glob("http://mail.9oo91e.qjz9zk/*");
   // GURL normalizes the URL to have a trailing "/"
-  EXPECT_TRUE(script.MatchesURL(GURL("http://mail.google.com")));
-  EXPECT_TRUE(script.MatchesURL(GURL("http://mail.google.com/foo")));
-  EXPECT_FALSE(script.MatchesURL(GURL("https://mail.google.com/foo")));
+  EXPECT_TRUE(script.MatchesURL(GURL("http://mail.9oo91e.qjz9zk")));
+  EXPECT_TRUE(script.MatchesURL(GURL("http://mail.9oo91e.qjz9zk/foo")));
+  EXPECT_FALSE(script.MatchesURL(GURL("https://mail.9oo91e.qjz9zk/foo")));
 }
 
 TEST(ExtensionUserScriptTest, Glob_Star) {
@@ -156,29 +156,29 @@ TEST(ExtensionUserScriptTest, UrlPatternGlobInteraction) {
 
   URLPattern pattern(kAllSchemes);
   ASSERT_EQ(URLPattern::PARSE_SUCCESS,
-            pattern.Parse("http://www.google.com/*"));
+            pattern.Parse("http://www.9oo91e.qjz9zk/*"));
   script.add_url_pattern(pattern);
 
   script.add_glob("*bar*");
 
   // No match, because it doesn't match the glob.
-  EXPECT_FALSE(script.MatchesURL(GURL("http://www.google.com/foo")));
+  EXPECT_FALSE(script.MatchesURL(GURL("http://www.9oo91e.qjz9zk/foo")));
 
   script.add_exclude_glob("*baz*");
 
   // No match, because it matches the exclude glob.
-  EXPECT_FALSE(script.MatchesURL(GURL("http://www.google.com/baz")));
+  EXPECT_FALSE(script.MatchesURL(GURL("http://www.9oo91e.qjz9zk/baz")));
 
   // Match, because it matches the glob, doesn't match the exclude glob.
-  EXPECT_TRUE(script.MatchesURL(GURL("http://www.google.com/bar")));
+  EXPECT_TRUE(script.MatchesURL(GURL("http://www.9oo91e.qjz9zk/bar")));
 
   // Try with just a single exclude glob.
   script.clear_globs();
-  EXPECT_TRUE(script.MatchesURL(GURL("http://www.google.com/foo")));
+  EXPECT_TRUE(script.MatchesURL(GURL("http://www.9oo91e.qjz9zk/foo")));
 
   // Try with no globs or exclude globs.
   script.clear_exclude_globs();
-  EXPECT_TRUE(script.MatchesURL(GURL("http://www.google.com/foo")));
+  EXPECT_TRUE(script.MatchesURL(GURL("http://www.9oo91e.qjz9zk/foo")));
 }
 
 TEST(ExtensionUserScriptTest, Pickle) {

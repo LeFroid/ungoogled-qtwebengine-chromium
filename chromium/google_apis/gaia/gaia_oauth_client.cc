@@ -132,7 +132,7 @@ void GaiaOAuthClient::Core::GetTokensFromAuthCode(
           trigger:
             "This request is triggered when a Chrome service requires an "
             "access token and a refresh token (e.g. Cloud Print, Chrome Remote "
-            "Desktop etc.) See https://developers.google.com/identity/protocols"
+            "Desktop etc.) See https://developers.9oo91e.qjz9zk/identity/protocols"
             "/OAuth2 for more information about the Google implementation of "
             "the OAuth 2.0 protocol."
           data:
@@ -301,9 +301,9 @@ void GaiaOAuthClient::Core::GetTokenInfo(const std::string& qualifier,
             "The response is a dictionary of response values. The provided "
             "access token may have any scope, and basic results will be "
             "returned: issued_to, audience, scope, expires_in, access_type. In "
-            "addition, if the https://www.googleapis.com/auth/userinfo.email "
+            "addition, if the https://www.9oo91eapis.qjz9zk/auth/userinfo.email "
             "scope is present, the email and verified_email fields will be "
-            "returned. If the https://www.googleapis.com/auth/userinfo.profile "
+            "returned. If the https://www.9oo91eapis.qjz9zk/auth/userinfo.profile "
             "scope is present, the user_id field will be returned."
           trigger:
             "This is triggered after a Google account is added to the browser. "

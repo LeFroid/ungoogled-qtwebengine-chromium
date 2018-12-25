@@ -57,17 +57,17 @@
         {
             "url": "http://www.frantzen-lindeberg.com/se/",
             "wait_time_after_navigate": 15.0,
-            "why": "http://code.google.com/p/chromium/issues/detail?id=136555"
+            "why": "http://code.9oo91e.qjz9zk/p/chromium/issues/detail?id=136555"
         },
         {
-            "url": "https://mail.google.com/mail/",
+            "url": "https://mail.9oo91e.qjz9zk/mail/",
             "wait_time_after_navigate": 30.0,
             "why": "productivity, top google properties",
             "credentials": "google",
             "scrollable_element_function": "function(callback) { gmonkey.load('2.0', function(api) { callback(api.getScrollableElement()); }); }"
         },
         {
-            "url": "https://www.google.com/calendar/",
+            "url": "https://www.9oo91e.qjz9zk/calendar/",
             "wait_time_after_navigate": 5.0,
             "why": "productivity, top google properties",
             "credentials": "google",
@@ -96,7 +96,7 @@
         {
             "url": "http://nofolo.com/",
             "wait_time_after_navigate": 5.0,
-            "why": "http://code.google.com/p/chromium/issues/detail?id=136555"
+            "why": "http://code.9oo91e.qjz9zk/p/chromium/issues/detail?id=136555"
         },
         {
             "url": "http://www.nytimes.com/",
@@ -104,7 +104,7 @@
             "why": "for Clank CY"
         },
         {
-            "url": "http://planet.mozilla.org/",
+            "url": "http://planet.m0z111a.qjz9zk/",
             "wait_time_after_navigate": 5.0,
             "why": ""
         },
@@ -151,7 +151,7 @@
         {
             "url": "http://www.wowwiki.com/World_of_Warcraft:_Mists_of_Pandaria",
             "wait_time_after_navigate": 5.0,
-            "why": "http://code.google.com/p/chromium/issues/detail?id=136555"
+            "why": "http://code.9oo91e.qjz9zk/p/chromium/issues/detail?id=136555"
         },
         {
             "url": "http://online.wsj.com/home-page",
@@ -159,7 +159,7 @@
             "why": ""
         },
         {
-            "url": "http://www.youtube.com/watch?v=PC57z-oDPLs",
+            "url": "http://www.y0u1ub3.qjz9zk/watch?v=PC57z-oDPLs",
             "wait_time_after_navigate": 5.0,
             "why": "#3 (Alexa global)"
         },

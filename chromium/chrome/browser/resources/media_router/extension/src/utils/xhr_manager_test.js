@@ -11,7 +11,7 @@ describe('XhrManager Tests', function() {
   const MAX_REQUESTS = 5;
   const DEFAULT_TIMEOUT = 10;
   const DEFAULT_ATTEMPTS = 3;
-  const SEND_URL = 'https://www.google.com';
+  const SEND_URL = 'https://www.9oo91e.qjz9zk';
   const BODY = 'body';
 
   let mockXhr;

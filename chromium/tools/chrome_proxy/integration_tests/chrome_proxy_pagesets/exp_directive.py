@@ -22,7 +22,7 @@ class ExpDirectiveStorySet(story.StorySet):
     super(ExpDirectiveStorySet, self).__init__()
 
     urls_list = [
-      'http://check.googlezip.net/exp/',
+      'http://check.9oo91e21p.qjz9zk/exp/',
     ]
 
     for url in urls_list:

@@ -743,7 +743,7 @@ TEST_F(SSLClientSocketPoolTest, IPPooling) {
     AddressList addresses;
   } test_hosts[] = {
     { "www.webkit.org",    "192.0.2.33,192.168.0.1,192.168.0.5" },
-    { "code.google.com",   "192.168.0.2,192.168.0.3,192.168.0.5" },
+    { "code.9oo91e.qjz9zk",   "192.168.0.2,192.168.0.3,192.168.0.5" },
     { "js.webkit.org",     "192.168.0.4,192.168.0.1,192.0.2.33" },
   };
 

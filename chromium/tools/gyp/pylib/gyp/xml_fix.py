@@ -4,7 +4,7 @@
 
 """Applies a fix to CR LF TAB handling in xml.dom.
 
-Fixes this: http://code.google.com/p/chromium/issues/detail?id=76293
+Fixes this: http://code.9oo91e.qjz9zk/p/chromium/issues/detail?id=76293
 Working around this: http://bugs.python.org/issue5752
 TODO(bradnelson): Consider dropping this when we drop XP support.
 """

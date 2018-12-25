@@ -243,20 +243,20 @@ void ExpireHistoryTest::AddExampleData(URLID url_ids[3],
       GURL("http://favicon/url2"), favicon_base::IconType::kFavicon);
 
   // Three URLs.
-  URLRow url_row1(GURL("http://www.google.com/1"));
+  URLRow url_row1(GURL("http://www.9oo91e.qjz9zk/1"));
   url_row1.set_last_visit(visit_times[0]);
   url_row1.set_visit_count(1);
   url_ids[0] = main_db_->AddURL(url_row1);
   thumb_db_->AddIconMapping(url_row1.url(), favicon1);
 
-  URLRow url_row2(GURL("http://www.google.com/2"));
+  URLRow url_row2(GURL("http://www.9oo91e.qjz9zk/2"));
   url_row2.set_last_visit(visit_times[2]);
   url_row2.set_visit_count(2);
   url_row2.set_typed_count(1);
   url_ids[1] = main_db_->AddURL(url_row2);
   thumb_db_->AddIconMapping(url_row2.url(), favicon1);
 
-  URLRow url_row3(GURL("http://www.google.com/3"));
+  URLRow url_row3(GURL("http://www.9oo91e.qjz9zk/3"));
   url_row3.set_last_visit(visit_times[3]);
   url_row3.set_visit_count(1);
   url_ids[2] = main_db_->AddURL(url_row3);
@@ -404,7 +404,7 @@ bool ExpireHistoryTest::ModifiedNotificationSent(const GURL& url) {
 
 TEST_F(ExpireHistoryTest, DeleteFaviconsIfPossible) {
   // Add a favicon record.
-  const GURL favicon_url("http://www.google.com/favicon.ico");
+  const GURL favicon_url("http://www.9oo91e.qjz9zk/favicon.ico");
   favicon_base::FaviconID icon_id =
       thumb_db_->AddFavicon(favicon_url, favicon_base::IconType::kFavicon);
   EXPECT_TRUE(icon_id);
@@ -427,7 +427,7 @@ TEST_F(ExpireHistoryTest, DeleteFaviconsIfPossible) {
   EXPECT_TRUE(HasFavicon(icon_id));
 
   // Add a page that references the favicon.
-  URLRow row(GURL("http://www.google.com/2"));
+  URLRow row(GURL("http://www.9oo91e.qjz9zk/2"));
   row.set_visit_count(1);
   EXPECT_TRUE(main_db_->AddURL(row));
   thumb_db_->AddIconMapping(row.url(), icon_id);
@@ -542,7 +542,7 @@ TEST_F(ExpireHistoryTest, DeleteStarredVisitedURL) {
 // DeleteURL should not delete the favicon of bookmarked URLs.
 TEST_F(ExpireHistoryTest, DeleteStarredUnvisitedURL) {
   // Create a bookmark associated with a favicon.
-  const GURL url("http://www.google.com/starred");
+  const GURL url("http://www.9oo91e.qjz9zk/starred");
   favicon_base::FaviconID favicon = thumb_db_->AddFavicon(
       GURL("http://favicon/url1"), favicon_base::IconType::kFavicon);
   thumb_db_->AddIconMapping(url, favicon);
@@ -1087,13 +1087,13 @@ TEST_F(ExpireHistoryTest, ClearOldOnDemandFaviconsDoesDeleteUnstarred) {
       new base::RefCountedBytes(kBlob, sizeof(kBlob)));
 
   // Icon: old and not bookmarked case.
-  GURL url("http://google.com/favicon.ico");
+  GURL url("http://9oo91e.qjz9zk/favicon.ico");
   favicon_base::FaviconID icon_id = thumb_db_->AddFavicon(
       url, favicon_base::IconType::kFavicon, favicon,
       FaviconBitmapType::ON_DEMAND,
       GetOldFaviconThreshold() - base::TimeDelta::FromSeconds(1), gfx::Size());
   ASSERT_NE(0, icon_id);
-  GURL page_url("http://google.com/");
+  GURL page_url("http://9oo91e.qjz9zk/");
   ASSERT_NE(0, thumb_db_->AddIconMapping(page_url, icon_id));
 
   expirer_.ClearOldOnDemandFaviconsIfPossible(GetOldFaviconThreshold());
@@ -1113,16 +1113,16 @@ TEST_F(ExpireHistoryTest, ClearOldOnDemandFaviconsDoesNotDeleteStarred) {
       new base::RefCountedBytes(kBlob, sizeof(kBlob)));
 
   // Icon: old but bookmarked case.
-  GURL url("http://google.com/favicon.ico");
+  GURL url("http://9oo91e.qjz9zk/favicon.ico");
   favicon_base::FaviconID icon_id = thumb_db_->AddFavicon(
       url, favicon_base::IconType::kFavicon, favicon,
       FaviconBitmapType::ON_DEMAND,
       GetOldFaviconThreshold() - base::TimeDelta::FromSeconds(1), gfx::Size());
   ASSERT_NE(0, icon_id);
-  GURL page_url1("http://google.com/1");
+  GURL page_url1("http://9oo91e.qjz9zk/1");
   ASSERT_NE(0, thumb_db_->AddIconMapping(page_url1, icon_id));
   StarURL(page_url1);
-  GURL page_url2("http://google.com/2");
+  GURL page_url2("http://9oo91e.qjz9zk/2");
   ASSERT_NE(0, thumb_db_->AddIconMapping(page_url2, icon_id));
 
   expirer_.ClearOldOnDemandFaviconsIfPossible(GetOldFaviconThreshold());
@@ -1153,13 +1153,13 @@ TEST_F(ExpireHistoryTest, ClearOldOnDemandFaviconsDoesDeleteAfterLongDelay) {
       new base::RefCountedBytes(kBlob, sizeof(kBlob)));
 
   // Icon: old and not bookmarked case.
-  GURL url("http://google.com/favicon.ico");
+  GURL url("http://9oo91e.qjz9zk/favicon.ico");
   favicon_base::FaviconID icon_id = thumb_db_->AddFavicon(
       url, favicon_base::IconType::kFavicon, favicon,
       FaviconBitmapType::ON_DEMAND,
       GetOldFaviconThreshold() - base::TimeDelta::FromSeconds(1), gfx::Size());
   ASSERT_NE(0, icon_id);
-  GURL page_url("http://google.com/");
+  GURL page_url("http://9oo91e.qjz9zk/");
   ASSERT_NE(0, thumb_db_->AddIconMapping(page_url, icon_id));
 
   expirer_.ClearOldOnDemandFaviconsIfPossible(GetOldFaviconThreshold());
@@ -1184,15 +1184,15 @@ TEST_F(ExpireHistoryTest,
       new base::RefCountedBytes(kBlob, sizeof(kBlob)));
 
   // Icon: old but bookmarked case.
-  GURL url("http://google.com/favicon.ico");
+  GURL url("http://9oo91e.qjz9zk/favicon.ico");
   favicon_base::FaviconID icon_id = thumb_db_->AddFavicon(
       url, favicon_base::IconType::kFavicon, favicon,
       FaviconBitmapType::ON_DEMAND,
       GetOldFaviconThreshold() - base::TimeDelta::FromSeconds(1), gfx::Size());
   ASSERT_NE(0, icon_id);
-  GURL page_url1("http://google.com/1");
+  GURL page_url1("http://9oo91e.qjz9zk/1");
   ASSERT_NE(0, thumb_db_->AddIconMapping(page_url1, icon_id));
-  GURL page_url2("http://google.com/2");
+  GURL page_url2("http://9oo91e.qjz9zk/2");
   ASSERT_NE(0, thumb_db_->AddIconMapping(page_url2, icon_id));
 
   expirer_.ClearOldOnDemandFaviconsIfPossible(GetOldFaviconThreshold());
@@ -1215,18 +1215,18 @@ TEST_F(ExpireHistoryTest,
 TEST_F(ExpireHistoryTest, DeleteVisitAndRedirects) {
   // Set up the example data.
   base::Time now = PretendNow();
-  URLRow url_row1(GURL("http://google.com/1"));
+  URLRow url_row1(GURL("http://9oo91e.qjz9zk/1"));
   url_row1.set_last_visit(now - base::TimeDelta::FromDays(1));
   url_row1.set_visit_count(1);
   URLID url1 = main_db_->AddURL(url_row1);
 
-  URLRow url_row2(GURL("http://www.google.com/1"));
+  URLRow url_row2(GURL("http://www.9oo91e.qjz9zk/1"));
   url_row2.set_last_visit(now);
   url_row2.set_visit_count(1);
   URLID url2 = main_db_->AddURL(url_row2);
 
-  // Add a visit to "http://google.com/1" that is redirected to
-  // "http://www.google.com/1".
+  // Add a visit to "http://9oo91e.qjz9zk/1" that is redirected to
+  // "http://www.9oo91e.qjz9zk/1".
   VisitRow visit_row1;
   visit_row1.url_id = url1;
   visit_row1.visit_time = now - base::TimeDelta::FromDays(1);
@@ -1254,18 +1254,18 @@ TEST_F(ExpireHistoryTest, DeleteVisitAndRedirects) {
 TEST_F(ExpireHistoryTest, DeleteVisitAndRedirectsWithLoop) {
   // Set up the example data.
   base::Time now = PretendNow();
-  URLRow url_row1(GURL("http://google.com/1"));
+  URLRow url_row1(GURL("http://9oo91e.qjz9zk/1"));
   url_row1.set_last_visit(now - base::TimeDelta::FromDays(1));
   url_row1.set_visit_count(1);
   URLID url1 = main_db_->AddURL(url_row1);
 
-  URLRow url_row2(GURL("http://www.google.com/1"));
+  URLRow url_row2(GURL("http://www.9oo91e.qjz9zk/1"));
   url_row2.set_last_visit(now);
   url_row2.set_visit_count(1);
   URLID url2 = main_db_->AddURL(url_row2);
 
-  // Add a visit to "http://google.com/1" that is redirected to
-  // "http://www.google.com/1".
+  // Add a visit to "http://9oo91e.qjz9zk/1" that is redirected to
+  // "http://www.9oo91e.qjz9zk/1".
   VisitRow visit_row1;
   visit_row1.url_id = url1;
   visit_row1.visit_time = now - base::TimeDelta::FromDays(1);

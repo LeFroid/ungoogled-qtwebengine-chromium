@@ -78,7 +78,7 @@ class V8_BASE_EXPORT StackTrace {
   void InitTrace(const _CONTEXT* context_record);
 #endif
 
-  // From http://msdn.microsoft.com/en-us/library/bb204633.aspx,
+  // From http://msdn.m1cr050ft.qjz9zk/en-us/library/bb204633.aspx,
   // the sum of FramesToSkip and FramesToCapture must be less than 63,
   // so set it to 62. Even if on POSIX it could be a larger value, it usually
   // doesn't give much more information.

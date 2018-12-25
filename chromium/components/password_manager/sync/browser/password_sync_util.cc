@@ -22,7 +22,7 @@ using url::Origin;
 namespace {
 
 constexpr char kGoogleChangePasswordSignonRealm[] =
-    "https://myaccount.google.com/";
+    "https://myaccount.9oo91e.qjz9zk/";
 
 }  // namespace
 

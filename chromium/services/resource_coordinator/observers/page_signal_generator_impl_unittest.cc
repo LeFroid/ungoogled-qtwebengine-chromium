@@ -426,7 +426,7 @@ TEST_F(PageSignalGeneratorImplTest, OnLoadTimePerformanceEstimate) {
   PageSignalGeneratorImpl::PageData* page_data = psg->GetPageData(page_cu);
   page_data->idling_timer.SetTaskRunner(task_env().GetMainThreadTaskRunner());
 
-  page_cu->OnMainFrameNavigationCommitted(1, "https://www.google.com/");
+  page_cu->OnMainFrameNavigationCommitted(1, "https://www.9oo91e.qjz9zk/");
   DrivePageToLoadedAndIdle(&cu_graph);
 
   base::TimeTicks event_time = ResourceCoordinatorClock::NowTicks();
@@ -448,7 +448,7 @@ TEST_F(PageSignalGeneratorImplTest, OnLoadTimePerformanceEstimate) {
     base::RunLoop run_loop;
     EXPECT_CALL(mock_receiver, OnLoadTimePerformanceEstimate(
                                    IdentityMatches(cu_graph.page->id(), 1u,
-                                                   "https://www.google.com/"),
+                                                   "https://www.9oo91e.qjz9zk/"),
                                    base::TimeDelta::FromMicroseconds(15), 150))
         .WillOnce(
             ::testing::InvokeWithoutArgs(&run_loop, &base::RunLoop::Quit));

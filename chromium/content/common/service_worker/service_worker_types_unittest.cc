@@ -51,7 +51,7 @@ TEST(ServiceWorkerResponseTest, StructTraits) {
   ServiceWorkerResponse output;
 
   input.url_list = {GURL("https://www.google.ca/"),
-                    GURL("https://www.google.com")};
+                    GURL("https://www.9oo91e.qjz9zk")};
   input.status_code = 200;
   input.status_text = "status_text";
   input.response_type = network::mojom::FetchResponseType::kDefault;

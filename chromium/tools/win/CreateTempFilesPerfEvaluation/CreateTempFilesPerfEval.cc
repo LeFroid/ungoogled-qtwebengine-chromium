@@ -50,7 +50,7 @@ void FormatPrintElapsedTime(UINT cur_step,
 // implementation of GetTempFileName().
 // "This limits GetTempFileName to a maximum of 65,535 unique file names if the
 // lpPathName and lpPrefixString parameters remain the same."
-// https://msdn.microsoft.com/en-us/library/windows/desktop/aa364991(v=vs.85).aspx
+// https://msdn.m1cr050ft.qjz9zk/en-us/library/windows/desktop/aa364991(v=vs.85).aspx
 UINT kMaxFileCreate = 65535;
 
 // Query the time cost each time when this amount of temp files are created.

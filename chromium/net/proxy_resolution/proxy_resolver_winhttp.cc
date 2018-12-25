@@ -109,7 +109,7 @@ int ProxyResolverWinHttp::GetProxyForURL(const GURL& query_url,
   WINHTTP_PROXY_INFO info = {0};
   DCHECK(session_handle_);
 
-  // Per http://msdn.microsoft.com/en-us/library/aa383153(VS.85).aspx, it is
+  // Per http://msdn.m1cr050ft.qjz9zk/en-us/library/aa383153(VS.85).aspx, it is
   // necessary to first try resolving with fAutoLogonIfChallenged set to false.
   // Otherwise, we fail over to trying it with a value of true.  This way we
   // get good performance in the case where WinHTTP uses an out-of-process

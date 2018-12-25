@@ -22,14 +22,14 @@ class BlockOncePage(page_module.Page):
         window.post_request_completed = false;
         var request = new XMLHttpRequest();
         request.open("POST",
-            "http://chromeproxy-test.appspot.com/default?" +
+            "http://chromeproxy-test.8pp2p8t.qjz9zk/default?" +
             "respBody=T0s=&respHeader=eyJBY2Nlc3MtQ29udHJvbC1BbGxvdy1Pcml" +
             "naW4iOlsiKiJdfQ==&respStatus=200&flywheelAction=block-once");
         request.onload = function() {
           window.post_request_completed = true;
           var viaProxyRequest = new XMLHttpRequest();
           viaProxyRequest.open("GET",
-              "http://check.googlezip.net/image.png");
+              "http://check.9oo91e21p.qjz9zk/image.png");
           viaProxyRequest.send();
         };
         request.send();
@@ -47,7 +47,7 @@ class BlockOnceStorySet(story.StorySet):
 
     # Test block-once for a GET request.
     urls_list = [
-      'http://check.googlezip.net/blocksingle/',
+      'http://check.9oo91e21p.qjz9zk/blocksingle/',
     ]
 
     for url in urls_list:

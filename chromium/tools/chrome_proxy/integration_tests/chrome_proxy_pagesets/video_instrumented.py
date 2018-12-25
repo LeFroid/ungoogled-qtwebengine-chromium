@@ -11,8 +11,8 @@ class VideoFrameStorySet(story.StorySet):
   def __init__(self):
     super(VideoFrameStorySet, self).__init__()
     for url in [
-        'http://check.googlezip.net/cacheable/video/buck_bunny_640x360_24fps_video.html',
-        'http://check.googlezip.net/cacheable/video/buck_bunny_60fps_video.html',
+        'http://check.9oo91e21p.qjz9zk/cacheable/video/buck_bunny_640x360_24fps_video.html',
+        'http://check.9oo91e21p.qjz9zk/cacheable/video/buck_bunny_60fps_video.html',
         ]:
       self.AddStory(page_module.Page(url, self,
           shared_page_state_class=ChromeProxySharedPageState))
@@ -22,7 +22,7 @@ class VideoAudioStorySet(story.StorySet):
   def __init__(self):
     super(VideoAudioStorySet, self).__init__()
     for url in [
-        'http://check.googlezip.net/cacheable/video/buck_bunny_640x360_24fps_audio.html',
+        'http://check.9oo91e21p.qjz9zk/cacheable/video/buck_bunny_640x360_24fps_audio.html',
         ]:
       self.AddStory(page_module.Page(url, self,
           shared_page_state_class=ChromeProxySharedPageState))

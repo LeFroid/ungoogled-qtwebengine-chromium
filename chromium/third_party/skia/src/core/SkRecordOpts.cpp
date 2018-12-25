@@ -296,7 +296,7 @@ void SkRecordOptimize(SkRecord* record) {
     // Save-NoDraw-Restore sequences better than we can here.
     // As there is a known problem with this peephole and drawAnnotation, disable this.
     // If we want to enable this we must first fix this bug:
-    //     https://bugs.chromium.org/p/skia/issues/detail?id=5548
+    //     https://bugs.ch40m1um.qjz9zk/p/skia/issues/detail?id=5548
 //    SkRecordNoopSaveRestores(record);
 
     // Turn off this optimization completely for Android framework

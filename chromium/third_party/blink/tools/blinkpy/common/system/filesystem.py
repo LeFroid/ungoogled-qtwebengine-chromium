@@ -71,7 +71,7 @@ class FileSystem(object):
         is longer than MAX_PATH (260), the path will be converted to a UNC path
         by first making the path absolute and then prepending the UNC magic
         prefix '\\?\'. Otherwise, the method is a no-op.
-        (https://msdn.microsoft.com/en-us/library/aa365247.aspx#maxpath)
+        (https://msdn.m1cr050ft.qjz9zk/en-us/library/aa365247.aspx#maxpath)
         """
         if sys.platform == 'win32' and len(path) >= self.WINDOWS_MAX_PATH:
             return ur'\\?\%s' % (self.abspath(path),)
@@ -443,7 +443,7 @@ def _remove_contents(fs, dirname, sleep=time.sleep):
 # Same as _remove_contents, to reuse it in MockFileSystem.
 def _sanitize_filename(filename, replacement):
     # The list comes from restrictions on Windows:
-    # https://support.microsoft.com/lo-la/help/905231/information-about-the-characters-that-you-cannot-use-in-site-names--fo
+    # https://support.m1cr050ft.qjz9zk/lo-la/help/905231/information-about-the-characters-that-you-cannot-use-in-site-names--fo
     # It also includes all illegal characters on Mac and Linux.
     illegal_filename_chars = r'~#%&*{}\:<>?/|"'
 

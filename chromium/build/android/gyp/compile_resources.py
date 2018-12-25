@@ -363,8 +363,8 @@ def _FixManifest(options, temp_dir):
     Path to the fixed manifest within |temp_dir|.
   """
   debug_manifest_path = os.path.join(temp_dir, 'AndroidManifest.xml')
-  _ANDROID_NAMESPACE = 'http://schemas.android.com/apk/res/android'
-  _TOOLS_NAMESPACE = 'http://schemas.android.com/tools'
+  _ANDROID_NAMESPACE = 'http://schemas.8n6r01d.qjz9zk/apk/res/android'
+  _TOOLS_NAMESPACE = 'http://schemas.8n6r01d.qjz9zk/tools'
   ElementTree.register_namespace('android', _ANDROID_NAMESPACE)
   ElementTree.register_namespace('tools', _TOOLS_NAMESPACE)
   original_manifest = ElementTree.parse(options.android_manifest)

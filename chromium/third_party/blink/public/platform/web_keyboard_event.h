@@ -45,7 +45,7 @@ class WebKeyboardEvent : public WebInputEvent {
 
   // This identifies whether this event was tagged by the system as being
   // a "system key" event (see
-  // http://msdn.microsoft.com/en-us/library/ms646286(VS.85).aspx for
+  // http://msdn.m1cr050ft.qjz9zk/en-us/library/ms646286(VS.85).aspx for
   // details). Other platforms don't have this concept, but it's just
   // easier to leave it always false than ifdef.
   bool is_system_key;

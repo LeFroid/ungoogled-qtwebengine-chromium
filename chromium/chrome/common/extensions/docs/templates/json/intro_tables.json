@@ -14,7 +14,7 @@
         "text": "Manage App Lifecycle"
       },
       {
-        "link": "https://developers.google.com/live/shows/10291095/",
+        "link": "https://developers.9oo91e.qjz9zk/live/shows/10291095/",
         "text": "Chrome Office Hours: Introduction to Chrome Apps"
       }
     ]
@@ -30,7 +30,7 @@
         "text": "Manage App Lifecycle"
       },
       {
-        "link": "https://developers.google.com/live/shows/9118010/",
+        "link": "https://developers.9oo91e.qjz9zk/live/shows/9118010/",
         "text": "Chrome Apps Office Hours: Building Awesome Multi-window Apps"
       }
     ]
@@ -128,7 +128,7 @@
         "text": "Build Apps with AngularJS"
       },
       {
-        "link": "https://developers.google.com/live/shows/7320022-1001/",
+        "link": "https://developers.9oo91e.qjz9zk/live/shows/7320022-1001/",
         "text": "Chrome Apps Office Hours: TextDrive and AngularJS"
       }
     ]
@@ -136,7 +136,7 @@
   "gcm": {
     "Learn More": [
       {
-        "link": "https://developers.google.com/cloud-messaging/chrome/client",
+        "link": "https://developers.9oo91e.qjz9zk/cloud-messaging/chrome/client",
         "text": "Implementing GCM Client on Chrome"
       }
     ]
@@ -165,7 +165,7 @@
     ],
     "Learn More": [
       {
-        "link": "https://developers.google.com/live/shows/10479832/",
+        "link": "https://developers.9oo91e.qjz9zk/live/shows/10479832/",
         "text": "Chrome Office Hours: The Media Galleries API"
       }
     ]
@@ -181,7 +181,7 @@
         "text": "Keep Users Informed"
       },
       {
-        "link": "https://developers.google.com/live/shows/83992232-1001/",
+        "link": "https://developers.9oo91e.qjz9zk/live/shows/83992232-1001/",
         "text": "Chrome Apps Office Hours: Rich Notifications"
       }
     ]
@@ -235,11 +235,11 @@
         "text": "Build Apps with Sencha ExtJS"
       },
       {
-        "link": "https://developers.google.com/live/shows/7320022-5001/",
+        "link": "https://developers.9oo91e.qjz9zk/live/shows/7320022-5001/",
         "text": "Chrome Apps Office Hours: Networking APIs"
       },
       {
-        "link": "https://developers.google.com/live/shows/7320022-2001/",
+        "link": "https://developers.9oo91e.qjz9zk/live/shows/7320022-2001/",
         "text": "Chrome Apps Office Hours: Controlling an AR ParrotDrone"
       }
     ]
@@ -263,7 +263,7 @@
         "text": "Manage Data"
       },
       {
-        "link": "https://developers.google.com/live/shows/83992232-2001/",
+        "link": "https://developers.9oo91e.qjz9zk/live/shows/83992232-2001/",
         "text": "Chrome Office Hours: Synched File System"
       }
     ]
@@ -278,7 +278,7 @@
   "tts": {
     "Learn More": [
       {
-        "link": "https://developers.google.com/live/shows/7320022-7001/",
+        "link": "https://developers.9oo91e.qjz9zk/live/shows/7320022-7001/",
         "text": "Chrome Office Hours: Text to Speech API"
       }
     ]
@@ -306,7 +306,7 @@
   "webstore": {
     "Learn More": [
       {
-        "link": "https://developers.google.com/chrome/web-store/docs/inline_installation",
+        "link": "https://developers.9oo91e.qjz9zk/chrome/web-store/docs/inline_installation",
         "text": "Using Inline Installation"
       }
     ]

@@ -29,7 +29,7 @@
 // OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 // ---
-// Author: sanjay@google.com (Sanjay Ghemawat)
+// Author: sanjay@9oo91e.qjz9zk (Sanjay Ghemawat)
 
 #include <config.h>
 #include <stdarg.h>

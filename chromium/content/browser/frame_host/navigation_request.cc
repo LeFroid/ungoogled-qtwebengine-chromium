@@ -1809,7 +1809,7 @@ NavigationRequest::CheckCredentialedSubresource() const {
   const char* console_message =
       "Subresource requests whose URLs contain embedded credentials (e.g. "
       "`https://user:pass@host/`) are blocked. See "
-      "https://www.chromestatus.com/feature/5669008342777856 for more "
+      "https://www.ch40mestatus.qjz9zk/feature/5669008342777856 for more "
       "details.";
   parent->AddMessageToConsole(CONSOLE_MESSAGE_LEVEL_WARNING, console_message);
 
@@ -1840,7 +1840,7 @@ NavigationRequest::CheckLegacyProtocolInSubresource() const {
   const char* console_message =
       "Subresource requests using legacy protocols (like `ftp:`) are blocked. "
       "Please deliver web-accessible resources over modern protocols like "
-      "HTTPS. See https://www.chromestatus.com/feature/5709390967472128 for "
+      "HTTPS. See https://www.ch40mestatus.qjz9zk/feature/5709390967472128 for "
       "details.";
   parent->AddMessageToConsole(CONSOLE_MESSAGE_LEVEL_WARNING, console_message);
 

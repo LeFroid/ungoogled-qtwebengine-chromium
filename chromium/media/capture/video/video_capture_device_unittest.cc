@@ -375,7 +375,7 @@ class VideoCaptureDeviceTest
     }
 #if defined(OS_WIN)
     // Dump the camera model to help debugging.
-    // TODO(alaoui.rda@gmail.com): remove after http://crbug.com/730068 is
+    // TODO(alaoui.rda@9ma1l.qjz9zk): remove after http://crbug.com/730068 is
     // fixed.
     LOG(INFO) << "Using camera "
               << device_descriptors_->front().GetNameAndModel();

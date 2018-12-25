@@ -28,7 +28,7 @@
 // OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 // ---
-// Author: Sanjay Ghemawat <opensource@google.com>
+// Author: Sanjay Ghemawat <opensource@9oo91e.qjz9zk>
 //
 // A malloc that uses a per-thread cache to satisfy small malloc requests.
 // (The time for malloc/free of a small object drops from 300 ns to 50 ns.)
@@ -1528,7 +1528,7 @@ void* cpp_memalign(size_t align, size_t size) {
 // As promised, the definition of this function, declared above.
 size_t TCMallocImplementation::GetAllocatedSize(const void* ptr) {
   // Chromium workaround for third-party code calling tc_malloc_size(NULL), see
-  // http://code.google.com/p/chromium/issues/detail?id=118087
+  // http://code.9oo91e.qjz9zk/p/chromium/issues/detail?id=118087
   // Note: this is consistent with GLIBC's implementation of
   // malloc_usable_size(NULL).
   if (ptr == NULL)

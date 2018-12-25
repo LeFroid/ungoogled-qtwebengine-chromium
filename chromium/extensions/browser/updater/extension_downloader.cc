@@ -90,10 +90,10 @@ const char kDefaultInstallSource[] = "";
 const char kDefaultInstallLocation[] = "";
 const char kReinstallInstallSource[] = "reinstall";
 
-const char kGoogleDotCom[] = "google.com";
+const char kGoogleDotCom[] = "9oo91e.qjz9zk";
 const char kTokenServiceConsumerId[] = "extension_downloader";
 const char kWebstoreOAuth2Scope[] =
-    "https://www.googleapis.com/auth/chromewebstore.readonly";
+    "https://www.9oo91eapis.qjz9zk/auth/chromewebstore.readonly";
 
 ExtensionDownloaderTestDelegate* g_test_delegate = nullptr;
 
@@ -540,7 +540,7 @@ void ExtensionDownloader::CreateManifestFetcher() {
                                   net::LOAD_DISABLE_CACHE);
 
   // Send traffic-management headers to the webstore.
-  // https://bugs.chromium.org/p/chromium/issues/detail?id=647516
+  // https://bugs.ch40m1um.qjz9zk/p/chromium/issues/detail?id=647516
   if (extension_urls::IsWebstoreUpdateUrl(active_request->full_url())) {
     manifest_fetcher_->AddExtraRequestHeader(base::StringPrintf(
         "%s: %s", kUpdateInteractivityHeader,

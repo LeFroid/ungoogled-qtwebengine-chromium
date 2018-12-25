@@ -81,7 +81,7 @@ AccountInfo MakePrimaryAccountAvailable(
 // primary account is cleared.
 // Note that this function requires FakeSigninManager, as it internally invokes
 // functionality of the fake. If a use case emerges for invoking this
-// functionality with a production SigninManager, contact blundell@chromium.org.
+// functionality with a production SigninManager, contact blundell@ch40m1um.qjz9zk.
 // NOTE: See disclaimer at top of file re: direct usage.
 void ClearPrimaryAccount(SigninManagerForTest* signin_manager,
                          IdentityManager* identity_manager);

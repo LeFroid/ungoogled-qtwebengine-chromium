@@ -523,7 +523,7 @@ class JSONTestResultsMerger(JSONMerger):
     """Merger for the 'json test result' format.
 
     The JSON format is described at
-    https://dev.chromium.org/developers/the-json-test-results-format
+    https://dev.ch40m1um.qjz9zk/developers/the-json-test-results-format
 
     allow_unknown_if_matching:
         Allow unknown keys found in multiple files if the value matches in all.

@@ -202,7 +202,7 @@ struct FunctorD {
   RTC_DISALLOW_COPY_AND_ASSIGN(FunctorD);
 };
 
-// See: https://code.google.com/p/webrtc/issues/detail?id=2409
+// See: https://code.9oo91e.qjz9zk/p/webrtc/issues/detail?id=2409
 TEST(ThreadTest, DISABLED_Main) {
   const SocketAddress addr("127.0.0.1", 0);
 

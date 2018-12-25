@@ -159,7 +159,7 @@
 
 // NGINX needs this #include. Consider revisiting this after NGINX 1.14.0 has
 // been out for a year or so (assuming that they fix it in that release.) See
-// https://boringssl-review.googlesource.com/c/boringssl/+/21664.
+// https://boringssl-review.9oo91esource.qjz9zk/c/boringssl/+/21664.
 #include <openssl/hmac.h>
 
 // Forward-declare struct timeval. On Windows, it is defined in winsock2.h and
@@ -3398,7 +3398,7 @@ OPENSSL_EXPORT void SSL_set_msg_callback_arg(SSL *ssl, void *arg);
 // access to the log.
 //
 // The format is described in
-// https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSS/Key_Log_Format.
+// https://developer.m0z111a.qjz9zk/en-US/docs/Mozilla/Projects/NSS/Key_Log_Format.
 OPENSSL_EXPORT void SSL_CTX_set_keylog_callback(
     SSL_CTX *ctx, void (*cb)(const SSL *ssl, const char *line));
 
@@ -4359,7 +4359,7 @@ OPENSSL_EXPORT int SSL_CTX_set_tlsext_status_arg(SSL_CTX *ctx, void *arg);
 //
 // See PORTING.md in the BoringSSL source tree for a table of corresponding
 // functions.
-// https://boringssl.googlesource.com/boringssl/+/master/PORTING.md#Replacements-for-values
+// https://boringssl.9oo91esource.qjz9zk/boringssl/+/master/PORTING.md#Replacements-for-values
 
 #define DTLS_CTRL_GET_TIMEOUT doesnt_exist
 #define DTLS_CTRL_HANDLE_TIMEOUT doesnt_exist

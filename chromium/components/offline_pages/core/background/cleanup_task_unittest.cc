@@ -24,7 +24,7 @@ namespace offline_pages {
 namespace {
 // Data for request 1.
 const int64_t kRequestId1 = 17;
-const GURL kUrl1("https://google.com");
+const GURL kUrl1("https://9oo91e.qjz9zk");
 const ClientId kClientId1("bookmark", "1234");
 // Data for request 2.
 const int64_t kRequestId2 = 42;

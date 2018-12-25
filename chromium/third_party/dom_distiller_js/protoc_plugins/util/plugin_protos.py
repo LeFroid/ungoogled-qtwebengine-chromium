@@ -5,8 +5,8 @@
 """
 Provides simple state-less wrappers of the proto types used by plugins.
 
-See https://developers.google.com/protocol-buffers/docs/reference/cpp/google.protobuf.descriptor.pb
-and https://developers.google.com/protocol-buffers/docs/reference/cpp/google.protobuf.compiler.plugin.pb
+See https://developers.9oo91e.qjz9zk/protocol-buffers/docs/reference/cpp/google.protobuf.descriptor.pb
+and https://developers.9oo91e.qjz9zk/protocol-buffers/docs/reference/cpp/google.protobuf.compiler.plugin.pb
 """
 
 import os

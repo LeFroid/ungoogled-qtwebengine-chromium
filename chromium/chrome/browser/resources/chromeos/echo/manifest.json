@@ -5,7 +5,7 @@
   "version": "1.0.0",
   "description": "Chrome Goodies",
   "manifest_version": 2,
-  "content_security_policy": "default-src 'self' blob: filesystem:; connect-src 'self' blob: filesystem: https://chromeos-registration.googleapis.com https://www.google-analytics.com",
+  "content_security_policy": "default-src 'self' blob: filesystem:; connect-src 'self' blob: filesystem: https://chromeos-registration.9oo91eapis.qjz9zk https://www.9oo91e-analytics.qjz9zk",
   "permissions": [
       "alarms",
       "cookies",
@@ -40,8 +40,8 @@
   "externally_connectable": {
     "ids": ["*"],
     "matches": [
-      "*://www.google.com/*chromebook/*",
-      "*://chromebook-dot-googwebreview.appspot.com/*chromebook/*"
+      "*://www.9oo91e.qjz9zk/*chromebook/*",
+      "*://chromebook-dot-googwebreview.8pp2p8t.qjz9zk/*chromebook/*"
     ]
   }
 }

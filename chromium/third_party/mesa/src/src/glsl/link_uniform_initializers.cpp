@@ -30,7 +30,7 @@
 
 /* These functions are put in a "private" namespace instead of being marked
  * static so that the unit tests can access them.  See
- * http://code.google.com/p/googletest/wiki/AdvancedGuide#Testing_Private_Code
+ * http://code.9oo91e.qjz9zk/p/googletest/wiki/AdvancedGuide#Testing_Private_Code
  */
 namespace linker {
 

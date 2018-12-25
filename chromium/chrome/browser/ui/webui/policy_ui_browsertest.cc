@@ -477,8 +477,8 @@ IN_PROC_BROWSER_TEST_F(PolicyUITest, SendPolicyValues) {
   expected_values[policy::key::kRestoreOnStartupURLs] = "aaa,bbb,ccc";
   values.Set(policy::key::kHomepageLocation, policy::POLICY_LEVEL_MANDATORY,
              policy::POLICY_SCOPE_MACHINE, policy::POLICY_SOURCE_CLOUD,
-             std::make_unique<base::Value>("http://google.com"), nullptr);
-  expected_values[policy::key::kHomepageLocation] = "http://google.com";
+             std::make_unique<base::Value>("http://9oo91e.qjz9zk"), nullptr);
+  expected_values[policy::key::kHomepageLocation] = "http://9oo91e.qjz9zk";
   values.Set(policy::key::kRestoreOnStartup, policy::POLICY_LEVEL_RECOMMENDED,
              policy::POLICY_SCOPE_USER, policy::POLICY_SOURCE_CLOUD,
              std::make_unique<base::Value>(4), nullptr);

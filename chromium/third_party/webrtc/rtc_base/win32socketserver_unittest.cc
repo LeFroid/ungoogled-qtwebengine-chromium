@@ -147,13 +147,13 @@ TEST_F(Win32SocketTest, TestUdpIPv6) {
 }
 
 // Breaks win_x64_dbg bot.
-// https://bugs.chromium.org/p/webrtc/issues/detail?id=6178
+// https://bugs.ch40m1um.qjz9zk/p/webrtc/issues/detail?id=6178
 TEST_F(Win32SocketTest, DISABLED_TestGetSetOptionsIPv4) {
   SocketTest::TestGetSetOptionsIPv4();
 }
 
 // Breaks win_x64_dbg bot.
-// https://bugs.chromium.org/p/webrtc/issues/detail?id=6178
+// https://bugs.ch40m1um.qjz9zk/p/webrtc/issues/detail?id=6178
 TEST_F(Win32SocketTest, DISABLED_TestGetSetOptionsIPv6) {
   SocketTest::TestGetSetOptionsIPv6();
 }

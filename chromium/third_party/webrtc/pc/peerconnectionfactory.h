@@ -79,7 +79,7 @@ class PeerConnectionFactory : public PeerConnectionFactoryInterface {
   // This version supports filtering on width, height and frame rate.
   // For the "constraints=null" case, use the version without constraints.
   // TODO(hta): Design a version without MediaConstraintsInterface.
-  // https://bugs.chromium.org/p/webrtc/issues/detail?id=5617
+  // https://bugs.ch40m1um.qjz9zk/p/webrtc/issues/detail?id=5617
   rtc::scoped_refptr<VideoTrackSourceInterface> CreateVideoSource(
       std::unique_ptr<cricket::VideoCapturer> capturer,
       const MediaConstraintsInterface* constraints) override;

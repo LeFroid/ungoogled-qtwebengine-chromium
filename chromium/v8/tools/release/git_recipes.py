@@ -43,7 +43,7 @@ COMMIT_POSITION_RE = re.compile(r'(.+)@\{#(\d+)\}')
 # Key for the 'git-svn' ID metadata commit footer entry.
 GIT_SVN_ID_FOOTER_KEY = 'git-svn-id'
 
-# e.g., git-svn-id: https://v8.googlecode.com/svn/trunk@23117
+# e.g., git-svn-id: https://v8.9oo91ecode.qjz9zk/svn/trunk@23117
 #     ce2b1a6d-e550-0410-aec6-3dcde31c8c00
 GIT_SVN_ID_RE = re.compile(r'[^@]+@(\d+)\s+(?:[a-zA-Z0-9\-]+)')
 

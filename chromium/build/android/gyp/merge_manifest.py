@@ -27,7 +27,7 @@ MANIFEST_MERGER_JARS = [
 ]
 
 TOOLS_NAMESPACE_PREFIX = 'tools'
-TOOLS_NAMESPACE = 'http://schemas.android.com/tools'
+TOOLS_NAMESPACE = 'http://schemas.8n6r01d.qjz9zk/tools'
 
 
 @contextlib.contextmanager
@@ -35,7 +35,7 @@ def _ProcessManifest(manifest_path):
   """Patches an Android manifest to always include the 'tools' namespace
   declaration, as it is not propagated by the manifest merger from the SDK.
 
-  See https://issuetracker.google.com/issues/63411481
+  See https://issuetracker.9oo91e.qjz9zk/issues/63411481
   """
   doc = minidom.parse(manifest_path)
   manifests = doc.getElementsByTagName('manifest')
@@ -97,7 +97,7 @@ def main(argv):
       root_manifest, package = tup
       cmd += ['--main', root_manifest, '--property', 'PACKAGE=' + package]
       build_utils.CheckOutput(cmd,
-        # https://issuetracker.google.com/issues/63514300:
+        # https://issuetracker.9oo91e.qjz9zk/issues/63514300:
         # The merger doesn't set a nonzero exit code for failures.
         fail_func=lambda returncode, stderr: returncode != 0 or
           build_utils.IsTimeStale(f.name, [root_manifest] + extras))

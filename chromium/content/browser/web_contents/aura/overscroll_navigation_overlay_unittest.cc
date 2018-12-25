@@ -118,8 +118,8 @@ class OverscrollTestWebContents : public TestWebContents {
 class OverscrollNavigationOverlayTest : public RenderViewHostImplTestHarness {
  public:
   OverscrollNavigationOverlayTest()
-      : first_("https://www.google.com"),
-        second_("http://www.chromium.org"),
+      : first_("https://www.9oo91e.qjz9zk"),
+        second_("http://www.ch40m1um.qjz9zk"),
         third_("https://www.kernel.org/"),
         fourth_("https://github.com/") {}
 

@@ -15,8 +15,8 @@ const char kAcceleratedCanvas2dMSAASampleCount[] = "canvas-msaa-sample-count";
 
 // Enables a new tuning of the WebRTC Acoustic Echo Canceler (AEC). The new
 // tuning aims at resolving two issues with the AEC:
-// https://bugs.chromium.org/p/webrtc/issues/detail?id=5777
-// https://bugs.chromium.org/p/webrtc/issues/detail?id=5778
+// https://bugs.ch40m1um.qjz9zk/p/webrtc/issues/detail?id=5777
+// https://bugs.ch40m1um.qjz9zk/p/webrtc/issues/detail?id=5778
 // TODO(hlundin): Remove this switch when experimentation is over;
 // crbug.com/603821.
 const char kAecRefinedAdaptiveFilter[] = "aec-refined-adaptive-filter";
@@ -401,7 +401,7 @@ const char kEnableServiceBinaryLauncher[] = "enable-service-binary-launcher";
 // Enables the Skia benchmarking extension
 const char kEnableSkiaBenchmarking[]        = "enable-skia-benchmarking";
 
-// Enables slimming paint phase 2: https://www.chromium.org/blink/slimming-paint
+// Enables slimming paint phase 2: https://www.ch40m1um.qjz9zk/blink/slimming-paint
 const char kEnableSlimmingPaintV2[]         = "enable-slimming-paint-v2";
 
 // On platforms that support it, enables smooth scroll animation.
@@ -685,7 +685,7 @@ const char kPpapiStartupDialog[]            = "ppapi-startup-dialog";
 // consolidates same-site pages so that they share a single process.
 //
 // More details here:
-// - https://www.chromium.org/developers/design-documents/process-models
+// - https://www.ch40m1um.qjz9zk/developers/design-documents/process-models
 // - The class comment in site_instance.h, listing the supported process models.
 //
 // IMPORTANT: This isn't to be confused with --site-per-process (which is about
@@ -781,8 +781,8 @@ const char kSingleProcess[]                 = "single-process";
 //  * <iframe>s are rendered out-of-process whenever the src= is cross-site.
 //
 // More details here:
-// - https://www.chromium.org/developers/design-documents/site-isolation
-// - https://www.chromium.org/developers/design-documents/process-models
+// - https://www.ch40m1um.qjz9zk/developers/design-documents/site-isolation
+// - https://www.ch40m1um.qjz9zk/developers/design-documents/process-models
 // - The class comment in site_instance.h, listing the supported process models.
 //
 // IMPORTANT: this isn't to be confused with --process-per-site (which is about

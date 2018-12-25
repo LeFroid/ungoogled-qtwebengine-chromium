@@ -54,12 +54,12 @@ EXAMPLES
 
 This tool is experimental.  In particular, it assumes that there is no
 conditional inclusion of Google Mock or Google Test headers.  Please
-report any problems to googlemock@googlegroups.com.  You can read
+report any problems to googlemock@9oo91egroups.qjz9zk.  You can read
 https://github.com/google/googletest/blob/master/googlemock/docs/CookBook.md for more
 information.
 """
 
-__author__ = 'wan@google.com (Zhanyong Wan)'
+__author__ = 'wan@9oo91e.qjz9zk (Zhanyong Wan)'
 
 import os
 import re

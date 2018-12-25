@@ -33,35 +33,35 @@
     "webview",
     "storage",
     "unlimitedStorage",
-    "https://*.ytimg.com/*",
-    "https://www.google.com/*",
-    "https://support.google.com/*",
-    "https://commondatastorage.googleapis.com/*",
-    "https://storage.googleapis.com/*",
-    "https://www.google-analytics.com/"
+    "https://*.yt1mg.qjz9zk/*",
+    "https://www.9oo91e.qjz9zk/*",
+    "https://support.9oo91e.qjz9zk/*",
+    "https://commondatastorage.9oo91eapis.qjz9zk/*",
+    "https://storage.9oo91eapis.qjz9zk/*",
+    "https://www.9oo91e-analytics.qjz9zk/"
   ],
   "oauth2": {
-    "client_id": "929143421683.apps.googleusercontent.com",
+    "client_id": "929143421683.apps.9oo91eusercontent.qjz9zk",
     "scopes": [
-        "https://www.googleapis.com/auth/supportcontent",
-        "https://www.googleapis.com/auth/cases",
-        "https://www.googleapis.com/auth/cases.readonly",
-        "https://www.googleapis.com/auth/pixelbook.email.preferences",
-        "https://www.google.com/accounts/OAuthLogin"
+        "https://www.9oo91eapis.qjz9zk/auth/supportcontent",
+        "https://www.9oo91eapis.qjz9zk/auth/cases",
+        "https://www.9oo91eapis.qjz9zk/auth/cases.readonly",
+        "https://www.9oo91eapis.qjz9zk/auth/pixelbook.email.preferences",
+        "https://www.9oo91e.qjz9zk/accounts/OAuthLogin"
     ]
   },
   "display_in_new_tab_page": false,
   "url_handlers": {
     "view_answer": {
       "matches": [
-        "https://support.google.com/chromeos-gethelp/answer/*"
+        "https://support.9oo91e.qjz9zk/chromeos-gethelp/answer/*"
       ],
       "title": "Open Help Article"
     },
     "home": {
       "matches": [
-        "https://support.google.com/chromeos-gethelp",
-        "https://support.google.com/chromeos-gethelp/"
+        "https://support.9oo91e.qjz9zk/chromeos-gethelp",
+        "https://support.9oo91e.qjz9zk/chromeos-gethelp/"
       ],
       "title": "Open Help"
     }

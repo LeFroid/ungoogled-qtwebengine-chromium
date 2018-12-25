@@ -467,9 +467,9 @@ void HttpServerPropertiesManager::UpdateCacheFromPrefs() {
     //
     //   "http_server_properties": {
     //      "servers": {
-    //         "0-edge-chat.facebook.com:443" : {...},
-    //         "0.client-channel.google.com:443" : {...},
-    //         "yt3.ggpht.com:80" : {...},
+    //         "0-edge-chat.f8c3b00k.qjz9zk:443" : {...},
+    //         "0.client-channel.9oo91e.qjz9zk:443" : {...},
+    //         "yt3.99pht.qjz9zk:80" : {...},
     //         ...
     //      }, ...
     // },
@@ -484,9 +484,9 @@ void HttpServerPropertiesManager::UpdateCacheFromPrefs() {
     //
     // "http_server_properties": {
     //      "servers": [
-    //          {"yt3.ggpht.com:443" : {...}},
-    //          {"0.client-channel.google.com:443" : {...}},
-    //          {"0-edge-chat.facebook.com:80" : {...}},
+    //          {"yt3.99pht.qjz9zk:443" : {...}},
+    //          {"0.client-channel.9oo91e.qjz9zk:443" : {...}},
+    //          {"0-edge-chat.f8c3b00k.qjz9zk:80" : {...}},
     //          ...
     //      ], ...
     // },
@@ -497,9 +497,9 @@ void HttpServerPropertiesManager::UpdateCacheFromPrefs() {
     //
     // "http_server_properties": {
     //      "servers": [
-    //          {"https://yt3.ggpht.com" : {...}},
-    //          {"http://0.client-channel.google.com:443" : {...}},
-    //          {"http://0-edge-chat.facebook.com" : {...}},
+    //          {"https://yt3.99pht.qjz9zk" : {...}},
+    //          {"http://0.client-channel.9oo91e.qjz9zk:443" : {...}},
+    //          {"http://0-edge-chat.f8c3b00k.qjz9zk" : {...}},
     //          ...
     //      ], ...
     // },

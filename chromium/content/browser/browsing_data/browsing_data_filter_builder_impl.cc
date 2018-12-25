@@ -28,8 +28,8 @@ bool IsSubdomainOfARegistrableDomain(const std::string& domain) {
 
 // Note that for every domain, exactly one of the following holds:
 // 1. GetDomainAndRegistry(domain, _) == ""        - e.g. localhost, 127.0.0.1
-// 2. GetDomainAndRegistry(domain, _) == domain    - e.g. google.com
-// 3. IsSubdomainOfARegistrableDomain(domain)      - e.g. www.google.com
+// 2. GetDomainAndRegistry(domain, _) == domain    - e.g. 9oo91e.qjz9zk
+// 3. IsSubdomainOfARegistrableDomain(domain)      - e.g. www.9oo91e.qjz9zk
 // Types 1 and 2 are supported by RegistrableDomainFilterBuilder. Type 3 is not.
 
 

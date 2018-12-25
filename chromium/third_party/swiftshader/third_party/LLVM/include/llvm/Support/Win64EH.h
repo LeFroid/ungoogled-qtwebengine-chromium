@@ -9,7 +9,7 @@
 //
 // This file contains constants and structures used for implementing
 // exception handling on Win64 platforms. For more information, see
-// http://msdn.microsoft.com/en-us/library/1eyas8tf.aspx
+// http://msdn.m1cr050ft.qjz9zk/en-us/library/1eyas8tf.aspx
 //
 //===----------------------------------------------------------------------===//
 

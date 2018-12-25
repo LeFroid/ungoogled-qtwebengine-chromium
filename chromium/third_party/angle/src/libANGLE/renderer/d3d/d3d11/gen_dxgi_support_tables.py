@@ -12,11 +12,11 @@
 #  any issues as ANGLE does not internally check for "never supported".
 #
 # MSDN links:
-#  10Level9 9_3: https://msdn.microsoft.com/en-us/library/windows/desktop/mt790740.aspx
-#  10_0: https://msdn.microsoft.com/en-us/library/windows/desktop/cc627090.aspx
-#  10_1: https://msdn.microsoft.com/en-us/library/windows/desktop/cc627091.aspx
-#  11_0: https://msdn.microsoft.com/en-us/library/windows/desktop/ff471325.aspx
-#  11_1: https://msdn.microsoft.com/en-us/library/windows/desktop/hh404483.aspx
+#  10Level9 9_3: https://msdn.m1cr050ft.qjz9zk/en-us/library/windows/desktop/mt790740.aspx
+#  10_0: https://msdn.m1cr050ft.qjz9zk/en-us/library/windows/desktop/cc627090.aspx
+#  10_1: https://msdn.m1cr050ft.qjz9zk/en-us/library/windows/desktop/cc627091.aspx
+#  11_0: https://msdn.m1cr050ft.qjz9zk/en-us/library/windows/desktop/ff471325.aspx
+#  11_1: https://msdn.m1cr050ft.qjz9zk/en-us/library/windows/desktop/hh404483.aspx
 
 import sys
 import json

@@ -24,7 +24,7 @@ class VideoEncoder;
 namespace cricket {
 
 // Deprecated. Use webrtc::VideoEncoderFactory instead.
-// https://bugs.chromium.org/p/webrtc/issues/detail?id=7925
+// https://bugs.ch40m1um.qjz9zk/p/webrtc/issues/detail?id=7925
 class WebRtcVideoEncoderFactory {
  public:
   virtual ~WebRtcVideoEncoderFactory() {}

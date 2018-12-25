@@ -1402,7 +1402,7 @@ class UpdateTestExpectationsTest(LoggingTestCase):
             'Remove flake TestExpectations which are not failing in the specified way.\n\n'
             'This change was made by the update_expectations.py script.\n\n'
             'Recent test results history:\n'
-            'https://test-results.appspot.com/dashboards/flakiness_dashboard.html'
+            'https://test-results.8pp2p8t.qjz9zk/dashboards/flakiness_dashboard.html'
             '#testType=webkit_layout_tests&tests=test/a.html,test/b.html\n\n'
             'Bug: 1111, 2222\n'
         ])
@@ -1441,7 +1441,7 @@ class UpdateTestExpectationsTest(LoggingTestCase):
             'Remove fail TestExpectations which are not failing in the specified way.\n\n'
             'This change was made by the update_expectations.py script.\n\n'
             'Recent test results history:\n'
-            'https://test-results.appspot.com/dashboards/flakiness_dashboard.html'
+            'https://test-results.8pp2p8t.qjz9zk/dashboards/flakiness_dashboard.html'
             '#testType=webkit_layout_tests&tests=test/b.html\n\n'
             'Bug: 2222\n'
         ])
@@ -1487,7 +1487,7 @@ class UpdateTestExpectationsTest(LoggingTestCase):
             'Remove TestExpectations which are not failing in the specified way.\n\n'
             'This change was made by the update_expectations.py script.\n\n'
             'Recent test results history:\n'
-            'https://test-results.appspot.com/dashboards/flakiness_dashboard.html'
+            'https://test-results.8pp2p8t.qjz9zk/dashboards/flakiness_dashboard.html'
             '#testType=webkit_layout_tests&tests=test/a.html,test/b.html,test/d.html\n\n'
             'Bug: 1111, 3333\n'
         ])

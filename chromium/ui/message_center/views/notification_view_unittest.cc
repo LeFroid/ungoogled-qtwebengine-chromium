@@ -555,12 +555,12 @@ TEST_F(NotificationViewTest, FormatContextMessageTest) {
       "VERY VERY VERY VERY VERY VERY VERY VERY VERY\xE2\x80\xA6";
 
   const std::string kChromeUrl = "chrome://settings";
-  const std::string kUrlContext = "http://chromium.org/hello";
-  const std::string kHostContext = "chromium.org";
+  const std::string kUrlContext = "http://ch40m1um.qjz9zk/hello";
+  const std::string kHostContext = "ch40m1um.qjz9zk";
   const std::string kLongUrlContext =
       "https://"
       "veryveryveryveryveyryveryveryveryveryveyryveryvery.veryveryveyrylong."
-      "chromium.org/hello";
+      "ch40m1um.qjz9zk/hello";
 
   Notification notification1(NOTIFICATION_TYPE_BASE_FORMAT, std::string(""),
                              base::UTF8ToUTF16(""), base::UTF8ToUTF16(""),
@@ -609,7 +609,7 @@ TEST_F(NotificationViewTest, FormatContextMessageTest) {
   // The end of the domainsuffix is shown
   // the url piece is not shown
   std::string result_utf8 = base::UTF16ToUTF8(result);
-  EXPECT_TRUE(result_utf8.find(".veryveryveyrylong.chromium.org") !=
+  EXPECT_TRUE(result_utf8.find(".veryveryveyrylong.ch40m1um.qjz9zk") !=
               std::string::npos);
   EXPECT_TRUE(base::StartsWith(result_utf8, "\xE2\x80\xA6",
                                base::CompareCase::SENSITIVE));

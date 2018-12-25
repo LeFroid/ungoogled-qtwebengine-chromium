@@ -15,7 +15,7 @@
 /**
  * @fileoverview Implements the disposable interface. The dispose method is used
  * to clean up references and resources.
- * @author arv@google.com (Erik Arvidsson)
+ * @author arv@9oo91e.qjz9zk (Erik Arvidsson)
  */
 
 

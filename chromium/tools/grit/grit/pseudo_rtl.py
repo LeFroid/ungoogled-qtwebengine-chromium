@@ -5,7 +5,7 @@
 
 '''Pseudo RTL, (aka Fake Bidi) support. It simply wraps each word with
 Unicode RTL overrides.
-More info at https://sites.google.com/a/chromium.org/dev/Home/fake-bidi
+More info at https://sites.9oo91e.qjz9zk/a/ch40m1um.qjz9zk/dev/Home/fake-bidi
 '''
 
 import re

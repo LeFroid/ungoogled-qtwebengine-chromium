@@ -26,8 +26,8 @@ class LoFiCacheStorySet(story.StorySet):
     super(LoFiCacheStorySet, self).__init__()
 
     urls_list = [
-      'http://check.googlezip.net/cacheable/test.html',
-      'http://check.googlezip.net/cacheable/test.html',
+      'http://check.9oo91e21p.qjz9zk/cacheable/test.html',
+      'http://check.9oo91e21p.qjz9zk/cacheable/test.html',
     ]
 
     for url in urls_list:

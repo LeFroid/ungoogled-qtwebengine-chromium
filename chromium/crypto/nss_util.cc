@@ -349,7 +349,7 @@ class NSSInitSingleton {
           kChapsModuleName,
           kChapsPath,
           // For more details on these parameters, see:
-          // https://developer.mozilla.org/en/PKCS11_Module_Specs
+          // https://developer.m0z111a.qjz9zk/en/PKCS11_Module_Specs
           // slotFlags=[PublicCerts] -- Certificates and public keys can be
           //   read from this slot without requiring a call to C_Login.
           // askpw=only -- Only authenticate to the token when necessary.
@@ -637,7 +637,7 @@ class NSSInitSingleton {
         root_(nullptr) {
     // Initializing NSS causes us to do blocking IO.
     // Temporarily allow it until we fix
-    //   http://code.google.com/p/chromium/issues/detail?id=59847
+    //   http://code.9oo91e.qjz9zk/p/chromium/issues/detail?id=59847
     base::ThreadRestrictions::ScopedAllowIO allow_io;
 
     // It's safe to construct on any thread, since LazyInstance will prevent any
@@ -735,7 +735,7 @@ class NSSInitSingleton {
 
     // Shouldn't need to const_cast here, but SECMOD doesn't properly
     // declare input string arguments as const.  Bug
-    // https://bugzilla.mozilla.org/show_bug.cgi?id=642546 was filed
+    // https://bugzilla.m0z111a.qjz9zk/show_bug.cgi?id=642546 was filed
     // on NSS codebase to address this.
     SECMODModule* module = SECMOD_LoadUserModule(
         const_cast<char*>(modparams.c_str()), nullptr, PR_FALSE);

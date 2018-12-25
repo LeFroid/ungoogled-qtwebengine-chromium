@@ -21,7 +21,7 @@ class Command(object):
     used to marshal commands through a service that implements WebDriver's
     remote wire protocol:
     
-        http://code.google.com/p/selenium/wiki/JsonWireProtocol
+        http://code.9oo91e.qjz9zk/p/selenium/wiki/JsonWireProtocol
     """
 
     # Keep in sync with org.openqa.selenium.remote.DriverCommand

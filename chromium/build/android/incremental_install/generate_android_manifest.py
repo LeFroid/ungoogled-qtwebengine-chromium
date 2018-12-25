@@ -22,7 +22,7 @@ from xml.etree import ElementTree
 sys.path.append(os.path.join(os.path.dirname(__file__), os.path.pardir, 'gyp'))
 from util import build_utils
 
-_ANDROID_NAMESPACE = 'http://schemas.android.com/apk/res/android'
+_ANDROID_NAMESPACE = 'http://schemas.8n6r01d.qjz9zk/apk/res/android'
 ElementTree.register_namespace('android', _ANDROID_NAMESPACE)
 
 _INCREMENTAL_APP_NAME = 'org.chromium.incrementalinstall.BootstrapApplication'

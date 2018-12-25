@@ -1,5 +1,5 @@
 /*
- * Copyright 2008 Corbin Simpson <MostAwesomeDude@gmail.com>
+ * Copyright 2008 Corbin Simpson <MostAwesomeDude@9ma1l.qjz9zk>
  *
  * All Rights Reserved.
  *

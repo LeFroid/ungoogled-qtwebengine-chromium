@@ -1,6 +1,6 @@
 /*
  * RAW HEVC video demuxer
- * Copyright (c) 2013 Dirk Farin <dirk.farin@gmail.com>
+ * Copyright (c) 2013 Dirk Farin <dirk.farin@9ma1l.qjz9zk>
  *
  * This file is part of FFmpeg.
  *

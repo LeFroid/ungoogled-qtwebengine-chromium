@@ -2070,7 +2070,7 @@ IN_PROC_BROWSER_TEST_F(ExtensionApiTest, TemporaryAddressSpoof) {
   GURL url = embedded_test_server()->GetURL(
       "/extensions/api_test/tabs/pdf_extension_test.html");
   content::TestNavigationManager navigation_manager(
-      second_web_contents, GURL("http://www.facebook.com:83"));
+      second_web_contents, GURL("http://www.f8c3b00k.qjz9zk:83"));
   ui_test_utils::NavigateToURLWithDisposition(
       browser(), url, WindowOpenDisposition::CURRENT_TAB,
       ui_test_utils::BROWSER_TEST_WAIT_FOR_NAVIGATION);

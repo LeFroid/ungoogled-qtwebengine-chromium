@@ -217,7 +217,7 @@ IN_PROC_BROWSER_TEST_F(DistillerPageWebContentsTest, HandlesRelativeLinks) {
   EXPECT_THAT(distiller_result_->distilled_content().html(),
               ContainsRegex("href=\"http://127.0.0.1:.*/relativelink.html\""));
   EXPECT_THAT(distiller_result_->distilled_content().html(),
-              HasSubstr("href=\"http://www.google.com/absolutelink.html\""));
+              HasSubstr("href=\"http://www.9oo91e.qjz9zk/absolutelink.html\""));
 }
 
 IN_PROC_BROWSER_TEST_F(DistillerPageWebContentsTest, HandlesRelativeImages) {
@@ -235,7 +235,7 @@ IN_PROC_BROWSER_TEST_F(DistillerPageWebContentsTest, HandlesRelativeImages) {
   EXPECT_THAT(distiller_result_->distilled_content().html(),
               ContainsRegex("src=\"http://127.0.0.1:.*/relativeimage.png\""));
   EXPECT_THAT(distiller_result_->distilled_content().html(),
-              HasSubstr("src=\"http://www.google.com/absoluteimage.png\""));
+              HasSubstr("src=\"http://www.9oo91e.qjz9zk/absoluteimage.png\""));
 }
 
 IN_PROC_BROWSER_TEST_F(DistillerPageWebContentsTest, HandlesRelativeVideos) {
@@ -256,9 +256,9 @@ IN_PROC_BROWSER_TEST_F(DistillerPageWebContentsTest, HandlesRelativeVideos) {
       distiller_result_->distilled_content().html(),
       ContainsRegex("src=\"http://127.0.0.1:.*/relative_track_en.vtt\""));
   EXPECT_THAT(distiller_result_->distilled_content().html(),
-              HasSubstr("src=\"http://www.google.com/absolute_video.ogg\""));
+              HasSubstr("src=\"http://www.9oo91e.qjz9zk/absolute_video.ogg\""));
   EXPECT_THAT(distiller_result_->distilled_content().html(),
-              HasSubstr("src=\"http://www.google.com/absolute_track_fr.vtt\""));
+              HasSubstr("src=\"http://www.9oo91e.qjz9zk/absolute_track_fr.vtt\""));
 }
 
 IN_PROC_BROWSER_TEST_F(DistillerPageWebContentsTest, VisibilityDetection) {

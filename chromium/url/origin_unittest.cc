@@ -320,29 +320,29 @@ TEST(OriginTest, DomainIs) {
     const char* lower_ascii_domain;
     bool expected_domain_is;
   } kTestCases[] = {
-      {"http://google.com/foo", "google.com", true},
-      {"http://www.google.com:99/foo", "google.com", true},
-      {"http://www.google.com.cn/foo", "google.com", false},
-      {"http://www.google.comm", "google.com", false},
-      {"http://www.iamnotgoogle.com/foo", "google.com", false},
-      {"http://www.google.com/foo", "Google.com", false},
+      {"http://9oo91e.qjz9zk/foo", "9oo91e.qjz9zk", true},
+      {"http://www.9oo91e.qjz9zk:99/foo", "9oo91e.qjz9zk", true},
+      {"http://www.9oo91e.qjz9zk.cn/foo", "9oo91e.qjz9zk", false},
+      {"http://www.9oo91e.qjz9zkm", "9oo91e.qjz9zk", false},
+      {"http://www.iamnot9oo91e.qjz9zk/foo", "9oo91e.qjz9zk", false},
+      {"http://www.9oo91e.qjz9zk/foo", "Google.com", false},
 
       // If the host ends with a dot, it matches domains with or without a dot.
-      {"http://www.google.com./foo", "google.com", true},
-      {"http://www.google.com./foo", "google.com.", true},
-      {"http://www.google.com./foo", ".com", true},
-      {"http://www.google.com./foo", ".com.", true},
+      {"http://www.9oo91e.qjz9zk./foo", "9oo91e.qjz9zk", true},
+      {"http://www.9oo91e.qjz9zk./foo", "9oo91e.qjz9zk.", true},
+      {"http://www.9oo91e.qjz9zk./foo", ".com", true},
+      {"http://www.9oo91e.qjz9zk./foo", ".com.", true},
 
       // But, if the host doesn't end with a dot and the input domain does, then
       // it's considered to not match.
-      {"http://google.com/foo", "google.com.", false},
+      {"http://9oo91e.qjz9zk/foo", "9oo91e.qjz9zk.", false},
 
       // If the host ends with two dots, it doesn't match.
-      {"http://www.google.com../foo", "google.com", false},
+      {"http://www.9oo91e.qjz9zk../foo", "9oo91e.qjz9zk", false},
 
       // Filesystem scheme.
-      {"filesystem:http://www.google.com:99/foo/", "google.com", true},
-      {"filesystem:http://www.iamnotgoogle.com/foo/", "google.com", false},
+      {"filesystem:http://www.9oo91e.qjz9zk:99/foo/", "9oo91e.qjz9zk", true},
+      {"filesystem:http://www.iamnot9oo91e.qjz9zk/foo/", "9oo91e.qjz9zk", false},
 
       // File scheme.
       {"file:///home/user/text.txt", "", false},
@@ -362,9 +362,9 @@ TEST(OriginTest, DomainIs) {
   }
 
   // If the URL is invalid, DomainIs returns false.
-  GURL invalid_url("google.com");
+  GURL invalid_url("9oo91e.qjz9zk");
   ASSERT_FALSE(invalid_url.is_valid());
-  EXPECT_FALSE(url::Origin::Create(invalid_url).DomainIs("google.com"));
+  EXPECT_FALSE(url::Origin::Create(invalid_url).DomainIs("9oo91e.qjz9zk"));
 
   // Unique origins.
   EXPECT_FALSE(url::Origin().DomainIs(""));

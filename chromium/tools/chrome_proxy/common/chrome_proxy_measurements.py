@@ -10,7 +10,7 @@ from telemetry.core import exceptions
 from telemetry.page import legacy_page_test
 
 
-def WaitForViaHeader(tab, url="http://check.googlezip.net/test.html"):
+def WaitForViaHeader(tab, url="http://check.9oo91e21p.qjz9zk/test.html"):
   """Wait until responses start coming back with the Chrome Proxy via header.
 
   Poll |url| in |tab| until the Chrome Proxy via header is present in a

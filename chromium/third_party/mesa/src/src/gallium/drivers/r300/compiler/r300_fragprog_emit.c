@@ -33,7 +33,7 @@
  *
  * \author Ben Skeggs <darktama@iinet.net.au>
  *
- * \author Jerome Glisse <j.glisse@gmail.com>
+ * \author Jerome Glisse <j.glisse@9ma1l.qjz9zk>
  */
 
 #include "r300_fragprog.h"

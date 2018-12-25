@@ -202,7 +202,7 @@ TEST(PermissionsTest, EffectiveHostPermissions) {
                       .patterns()
                       .size());
     EXPECT_FALSE(
-        permissions.HasEffectiveAccessToURL(GURL("http://www.google.com")));
+        permissions.HasEffectiveAccessToURL(GURL("http://www.9oo91e.qjz9zk")));
     EXPECT_FALSE(permissions.HasEffectiveAccessToAllHosts());
   }
 
@@ -212,9 +212,9 @@ TEST(PermissionsTest, EffectiveHostPermissions) {
     const PermissionSet& permissions =
         extension->permissions_data()->active_permissions();
     EXPECT_TRUE(
-        permissions.HasEffectiveAccessToURL(GURL("http://www.google.com")));
+        permissions.HasEffectiveAccessToURL(GURL("http://www.9oo91e.qjz9zk")));
     EXPECT_FALSE(
-        permissions.HasEffectiveAccessToURL(GURL("https://www.google.com")));
+        permissions.HasEffectiveAccessToURL(GURL("https://www.9oo91e.qjz9zk")));
     EXPECT_FALSE(permissions.HasEffectiveAccessToAllHosts());
   }
 
@@ -223,9 +223,9 @@ TEST(PermissionsTest, EffectiveHostPermissions) {
         LoadManifest("effective_host_permissions", "one_host_wildcard.json");
     const PermissionSet& permissions =
         extension->permissions_data()->active_permissions();
-    EXPECT_TRUE(permissions.HasEffectiveAccessToURL(GURL("http://google.com")));
+    EXPECT_TRUE(permissions.HasEffectiveAccessToURL(GURL("http://9oo91e.qjz9zk")));
     EXPECT_TRUE(
-        permissions.HasEffectiveAccessToURL(GURL("http://foo.google.com")));
+        permissions.HasEffectiveAccessToURL(GURL("http://foo.9oo91e.qjz9zk")));
     EXPECT_FALSE(permissions.HasEffectiveAccessToAllHosts());
   }
 
@@ -235,7 +235,7 @@ TEST(PermissionsTest, EffectiveHostPermissions) {
     const PermissionSet& permissions =
         extension->permissions_data()->active_permissions();
     EXPECT_TRUE(
-        permissions.HasEffectiveAccessToURL(GURL("http://www.google.com")));
+        permissions.HasEffectiveAccessToURL(GURL("http://www.9oo91e.qjz9zk")));
     EXPECT_TRUE(
         permissions.HasEffectiveAccessToURL(GURL("http://www.reddit.com")));
     EXPECT_FALSE(permissions.HasEffectiveAccessToAllHosts());
@@ -246,9 +246,9 @@ TEST(PermissionsTest, EffectiveHostPermissions) {
         LoadManifest("effective_host_permissions", "https_not_considered.json");
     const PermissionSet& permissions =
         extension->permissions_data()->active_permissions();
-    EXPECT_TRUE(permissions.HasEffectiveAccessToURL(GURL("http://google.com")));
+    EXPECT_TRUE(permissions.HasEffectiveAccessToURL(GURL("http://9oo91e.qjz9zk")));
     EXPECT_TRUE(
-        permissions.HasEffectiveAccessToURL(GURL("https://google.com")));
+        permissions.HasEffectiveAccessToURL(GURL("https://9oo91e.qjz9zk")));
     EXPECT_FALSE(permissions.HasEffectiveAccessToAllHosts());
   }
 
@@ -257,7 +257,7 @@ TEST(PermissionsTest, EffectiveHostPermissions) {
         LoadManifest("effective_host_permissions", "two_content_scripts.json");
     const PermissionSet& permissions =
         extension->permissions_data()->active_permissions();
-    EXPECT_TRUE(permissions.HasEffectiveAccessToURL(GURL("http://google.com")));
+    EXPECT_TRUE(permissions.HasEffectiveAccessToURL(GURL("http://9oo91e.qjz9zk")));
     EXPECT_TRUE(
         permissions.HasEffectiveAccessToURL(GURL("http://www.reddit.com")));
     EXPECT_TRUE(permissions.HasEffectiveAccessToURL(
@@ -273,7 +273,7 @@ TEST(PermissionsTest, EffectiveHostPermissions) {
     EXPECT_TRUE(permissions.HasEffectiveAccessToURL(GURL("http://test/")));
     EXPECT_FALSE(permissions.HasEffectiveAccessToURL(GURL("https://test/")));
     EXPECT_TRUE(
-        permissions.HasEffectiveAccessToURL(GURL("http://www.google.com")));
+        permissions.HasEffectiveAccessToURL(GURL("http://www.9oo91e.qjz9zk")));
     EXPECT_TRUE(permissions.HasEffectiveAccessToAllHosts());
   }
 
@@ -284,7 +284,7 @@ TEST(PermissionsTest, EffectiveHostPermissions) {
         extension->permissions_data()->active_permissions();
     EXPECT_TRUE(permissions.HasEffectiveAccessToURL(GURL("http://test/")));
     EXPECT_TRUE(
-        permissions.HasEffectiveAccessToURL(GURL("http://www.google.com")));
+        permissions.HasEffectiveAccessToURL(GURL("http://www.9oo91e.qjz9zk")));
     EXPECT_TRUE(permissions.HasEffectiveAccessToAllHosts());
   }
 
@@ -296,7 +296,7 @@ TEST(PermissionsTest, EffectiveHostPermissions) {
     EXPECT_FALSE(permissions.HasEffectiveAccessToURL(GURL("http://test/")));
     EXPECT_TRUE(permissions.HasEffectiveAccessToURL(GURL("https://test/")));
     EXPECT_TRUE(
-        permissions.HasEffectiveAccessToURL(GURL("http://www.google.com")));
+        permissions.HasEffectiveAccessToURL(GURL("http://www.9oo91e.qjz9zk")));
     EXPECT_TRUE(permissions.HasEffectiveAccessToAllHosts());
   }
 }
@@ -307,16 +307,16 @@ TEST(PermissionsTest, ExplicitAccessToOrigin) {
   URLPatternSet explicit_hosts;
   URLPatternSet scriptable_hosts;
 
-  AddPattern(&explicit_hosts, "http://*.google.com/*");
+  AddPattern(&explicit_hosts, "http://*.9oo91e.qjz9zk/*");
   // The explicit host paths should get set to /*.
   AddPattern(&explicit_hosts, "http://www.example.com/a/particular/path/*");
 
   PermissionSet perm_set(apis, manifest_permissions, explicit_hosts,
                          scriptable_hosts);
   ASSERT_TRUE(
-      perm_set.HasExplicitAccessToOrigin(GURL("http://www.google.com/")));
+      perm_set.HasExplicitAccessToOrigin(GURL("http://www.9oo91e.qjz9zk/")));
   ASSERT_TRUE(
-      perm_set.HasExplicitAccessToOrigin(GURL("http://test.google.com/")));
+      perm_set.HasExplicitAccessToOrigin(GURL("http://test.9oo91e.qjz9zk/")));
   ASSERT_TRUE(
       perm_set.HasExplicitAccessToOrigin(GURL("http://www.example.com")));
   ASSERT_TRUE(perm_set.HasEffectiveAccessToURL(GURL("http://www.example.com")));
@@ -365,9 +365,9 @@ TEST(PermissionsTest, CreateUnion) {
   expected_apis.insert(APIPermission::kBackground);
   expected_apis.insert(permission);
 
-  AddPattern(&explicit_hosts1, "http://*.google.com/*");
-  AddPattern(&expected_explicit_hosts, "http://*.google.com/*");
-  AddPattern(&effective_hosts, "http://*.google.com/*");
+  AddPattern(&explicit_hosts1, "http://*.9oo91e.qjz9zk/*");
+  AddPattern(&expected_explicit_hosts, "http://*.9oo91e.qjz9zk/*");
+  AddPattern(&effective_hosts, "http://*.9oo91e.qjz9zk/*");
 
   set1.reset(new PermissionSet(apis1, manifest_permissions, explicit_hosts1,
                                scriptable_hosts1));
@@ -417,9 +417,9 @@ TEST(PermissionsTest, CreateUnion) {
   expected_apis.insert(permission);
 
   AddPattern(&explicit_hosts2, "http://*.example.com/*");
-  AddPattern(&scriptable_hosts2, "http://*.google.com/*");
+  AddPattern(&scriptable_hosts2, "http://*.9oo91e.qjz9zk/*");
   AddPattern(&expected_explicit_hosts, "http://*.example.com/*");
-  AddPattern(&expected_scriptable_hosts, "http://*.google.com/*");
+  AddPattern(&expected_scriptable_hosts, "http://*.9oo91e.qjz9zk/*");
 
   effective_hosts =
       URLPatternSet::CreateUnion(explicit_hosts2, scriptable_hosts2);
@@ -480,7 +480,7 @@ TEST(PermissionsTest, CreateIntersection) {
   }
   apis1.insert(permission);
 
-  AddPattern(&explicit_hosts1, "http://*.google.com/*");
+  AddPattern(&explicit_hosts1, "http://*.9oo91e.qjz9zk/*");
   AddPattern(&scriptable_hosts1, "http://www.reddit.com/*");
 
   set1.reset(new PermissionSet(apis1, manifest_permissions, explicit_hosts1,
@@ -526,12 +526,12 @@ TEST(PermissionsTest, CreateIntersection) {
   expected_apis.insert(permission);
 
   AddPattern(&explicit_hosts2, "http://*.example.com/*");
-  AddPattern(&explicit_hosts2, "http://*.google.com/*");
-  AddPattern(&scriptable_hosts2, "http://*.google.com/*");
-  AddPattern(&expected_explicit_hosts, "http://*.google.com/*");
+  AddPattern(&explicit_hosts2, "http://*.9oo91e.qjz9zk/*");
+  AddPattern(&scriptable_hosts2, "http://*.9oo91e.qjz9zk/*");
+  AddPattern(&expected_explicit_hosts, "http://*.9oo91e.qjz9zk/*");
 
   effective_hosts.ClearPatterns();
-  AddPattern(&effective_hosts, "http://*.google.com/*");
+  AddPattern(&effective_hosts, "http://*.9oo91e.qjz9zk/*");
 
   set2.reset(new PermissionSet(apis2, manifest_permissions, explicit_hosts2,
                                scriptable_hosts2));
@@ -589,7 +589,7 @@ TEST(PermissionsTest, CreateDifference) {
   }
   apis1.insert(permission);
 
-  AddPattern(&explicit_hosts1, "http://*.google.com/*");
+  AddPattern(&explicit_hosts1, "http://*.9oo91e.qjz9zk/*");
   AddPattern(&scriptable_hosts1, "http://www.reddit.com/*");
 
   set1.reset(new PermissionSet(apis1, manifest_permissions, explicit_hosts1,
@@ -623,8 +623,8 @@ TEST(PermissionsTest, CreateDifference) {
   expected_apis.insert(permission);
 
   AddPattern(&explicit_hosts2, "http://*.example.com/*");
-  AddPattern(&explicit_hosts2, "http://*.google.com/*");
-  AddPattern(&scriptable_hosts2, "http://*.google.com/*");
+  AddPattern(&explicit_hosts2, "http://*.9oo91e.qjz9zk/*");
+  AddPattern(&scriptable_hosts2, "http://*.9oo91e.qjz9zk/*");
   AddPattern(&expected_scriptable_hosts, "http://www.reddit.com/*");
 
   effective_hosts.ClearPatterns();
@@ -1116,7 +1116,7 @@ TEST(PermissionsTest, GetWarningMessages_ManyHosts) {
   extension = LoadManifest("permissions", "many-hosts.json");
   EXPECT_TRUE(VerifyOnePermissionMessage(
       extension->permissions_data(),
-      "Read and change your data on encrypted.google.com and www.google.com"));
+      "Read and change your data on encrypted.9oo91e.qjz9zk and www.9oo91e.qjz9zk"));
 }
 
 TEST(PermissionsTest, GetWarningMessages_AudioVideo) {
@@ -1330,8 +1330,8 @@ TEST(PermissionsTest, GetWarningMessages_TLDWildcardTreatedAsAllHosts) {
   // *.rdcronin.com") for things that are not TLDs.
   EXPECT_FALSE(ShowsAllHostsWarning("http://*.rdcronin.com/*"));
 
-  // Pseudo-TLDs, like appspot.com, should not show all hosts.
-  EXPECT_FALSE(ShowsAllHostsWarning("http://*.appspot.com/*"));
+  // Pseudo-TLDs, like 8pp2p8t.qjz9zk, should not show all hosts.
+  EXPECT_FALSE(ShowsAllHostsWarning("http://*.8pp2p8t.qjz9zk/*"));
 
   // Non-TLDs should be likewise exempt.
   EXPECT_FALSE(ShowsAllHostsWarning("http://*.notarealtld/*"));
@@ -1454,9 +1454,9 @@ TEST(PermissionsTest, GetDistinctHosts) {
     SCOPED_TRACE("wildcards");
 
     explicit_hosts.AddPattern(
-        URLPattern(URLPattern::SCHEME_HTTP, "http://*.google.com/*"));
+        URLPattern(URLPattern::SCHEME_HTTP, "http://*.9oo91e.qjz9zk/*"));
 
-    expected.insert("*.google.com");
+    expected.insert("*.9oo91e.qjz9zk");
 
     EXPECT_EQ(expected,
               permission_message_util::GetDistinctHosts(
@@ -1472,11 +1472,11 @@ TEST(PermissionsTest, GetDistinctHosts) {
     expected.clear();
 
     explicit_hosts.AddPattern(
-        URLPattern(URLPattern::SCHEME_HTTP, "http://*.google.com/*"));
+        URLPattern(URLPattern::SCHEME_HTTP, "http://*.9oo91e.qjz9zk/*"));
     scriptable_hosts.AddPattern(
         URLPattern(URLPattern::SCHEME_HTTP, "http://*.example.com/*"));
 
-    expected.insert("*.google.com");
+    expected.insert("*.9oo91e.qjz9zk");
     expected.insert("*.example.com");
 
     PermissionSet perm_set(empty_perms, ManifestPermissionSet(), explicit_hosts,
@@ -1596,46 +1596,46 @@ TEST(PermissionsTest, IsHostPrivilegeIncrease) {
     bool reverse_is_increase;
   } test_cases[] = {
       // Order doesn't matter.
-      {{{URLPattern::SCHEME_HTTP, "http://www.google.com.hk/path"},
-        {URLPattern::SCHEME_HTTP, "http://www.google.com/path"}},
-       {{URLPattern::SCHEME_HTTP, "http://www.google.com/path"},
-        {URLPattern::SCHEME_HTTP, "http://www.google.com.hk/path"}},
+      {{{URLPattern::SCHEME_HTTP, "http://www.9oo91e.qjz9zk.hk/path"},
+        {URLPattern::SCHEME_HTTP, "http://www.9oo91e.qjz9zk/path"}},
+       {{URLPattern::SCHEME_HTTP, "http://www.9oo91e.qjz9zk/path"},
+        {URLPattern::SCHEME_HTTP, "http://www.9oo91e.qjz9zk.hk/path"}},
        Manifest::TYPE_EXTENSION,
        false,
        false},
       // Paths are ignored.
-      {{{URLPattern::SCHEME_HTTP, "http://www.google.com.hk/path"},
-        {URLPattern::SCHEME_HTTP, "http://www.google.com/path"}},
-       {{URLPattern::SCHEME_HTTP, "http://www.google.com/*"}},
+      {{{URLPattern::SCHEME_HTTP, "http://www.9oo91e.qjz9zk.hk/path"},
+        {URLPattern::SCHEME_HTTP, "http://www.9oo91e.qjz9zk/path"}},
+       {{URLPattern::SCHEME_HTTP, "http://www.9oo91e.qjz9zk/*"}},
        Manifest::TYPE_EXTENSION,
        false,
        false},
       // RCDs are ignored.
-      {{{URLPattern::SCHEME_HTTP, "http://www.google.com.hk/path"},
-        {URLPattern::SCHEME_HTTP, "http://www.google.com/path"}},
-       {{URLPattern::SCHEME_HTTP, "http://www.google.com.hk/*"}},
+      {{{URLPattern::SCHEME_HTTP, "http://www.9oo91e.qjz9zk.hk/path"},
+        {URLPattern::SCHEME_HTTP, "http://www.9oo91e.qjz9zk/path"}},
+       {{URLPattern::SCHEME_HTTP, "http://www.9oo91e.qjz9zk.hk/*"}},
        Manifest::TYPE_EXTENSION,
        false,
        false},
       // Subdomain wildcards are handled properly.
-      {{{URLPattern::SCHEME_HTTP, "http://www.google.com.hk/path"},
-        {URLPattern::SCHEME_HTTP, "http://www.google.com/path"}},
-       {{URLPattern::SCHEME_HTTP, "http://*.google.com.hk/*"}},
+      {{{URLPattern::SCHEME_HTTP, "http://www.9oo91e.qjz9zk.hk/path"},
+        {URLPattern::SCHEME_HTTP, "http://www.9oo91e.qjz9zk/path"}},
+       {{URLPattern::SCHEME_HTTP, "http://*.9oo91e.qjz9zk.hk/*"}},
        Manifest::TYPE_EXTENSION,
        true,
        false},
       // Different domains count as different hosts.
-      {{{URLPattern::SCHEME_HTTP, "http://www.google.com.hk/path"},
-        {URLPattern::SCHEME_HTTP, "http://www.google.com/path"}},
-       {{URLPattern::SCHEME_HTTP, "http://www.google.com/path"},
+      {{{URLPattern::SCHEME_HTTP, "http://www.9oo91e.qjz9zk.hk/path"},
+        {URLPattern::SCHEME_HTTP, "http://www.9oo91e.qjz9zk/path"}},
+       {{URLPattern::SCHEME_HTTP, "http://www.9oo91e.qjz9zk/path"},
         {URLPattern::SCHEME_HTTP, "http://www.example.org/path"}},
        Manifest::TYPE_EXTENSION,
        true,
        false},
       // Different subdomains count as different hosts.
-      {{{URLPattern::SCHEME_HTTP, "http://www.google.com.hk/path"},
-        {URLPattern::SCHEME_HTTP, "http://www.google.com/path"}},
-       {{URLPattern::SCHEME_HTTP, "http://mail.google.com/*"}},
+      {{{URLPattern::SCHEME_HTTP, "http://www.9oo91e.qjz9zk.hk/path"},
+        {URLPattern::SCHEME_HTTP, "http://www.9oo91e.qjz9zk/path"}},
+       {{URLPattern::SCHEME_HTTP, "http://mail.9oo91e.qjz9zk/*"}},
        Manifest::TYPE_EXTENSION,
        true,
        true},
@@ -1643,34 +1643,34 @@ TEST(PermissionsTest, IsHostPrivilegeIncrease) {
       // an increase in permissions. However, moving from just
       // the domain to all of the subdomains should be.
       {{{URLPattern::SCHEME_HTTP | URLPattern::SCHEME_HTTPS,
-         "*://*.google.com/*"}},
+         "*://*.9oo91e.qjz9zk/*"}},
        {{URLPattern::SCHEME_HTTP | URLPattern::SCHEME_HTTPS,
-         "*://google.com/*"}},
+         "*://9oo91e.qjz9zk/*"}},
        Manifest::TYPE_EXTENSION,
        false,
        true},
       // Platform apps should not have host permissions increases.
-      {{{URLPattern::SCHEME_HTTP, "http://www.google.com.hk/path"},
-        {URLPattern::SCHEME_HTTP, "http://www.google.com/path"}},
-       {{URLPattern::SCHEME_HTTP, "http://mail.google.com/*"}},
+      {{{URLPattern::SCHEME_HTTP, "http://www.9oo91e.qjz9zk.hk/path"},
+        {URLPattern::SCHEME_HTTP, "http://www.9oo91e.qjz9zk/path"}},
+       {{URLPattern::SCHEME_HTTP, "http://mail.9oo91e.qjz9zk/*"}},
        Manifest::TYPE_PLATFORM_APP,
        false,
        false},
       // Test that subdomain wildcard matching from crbug.com://65337
       // works.
       {{{URLPattern::SCHEME_HTTP | URLPattern::SCHEME_HTTPS,
-         "*://*.google.com/"},
+         "*://*.9oo91e.qjz9zk/"},
         {URLPattern::SCHEME_HTTP | URLPattern::SCHEME_HTTPS,
-         "*://mail.google.com/"}},
+         "*://mail.9oo91e.qjz9zk/"}},
        {{URLPattern::SCHEME_HTTP | URLPattern::SCHEME_HTTPS,
-         "*://inbox.google.com/"}},
+         "*://inbox.9oo91e.qjz9zk/"}},
        Manifest::TYPE_EXTENSION,
        false,
        true},
       // Test the "all_urls" meta-pattern.
       {{{URLPattern::SCHEME_ALL, "<all_urls>"}},
        {{URLPattern::SCHEME_HTTP | URLPattern::SCHEME_HTTPS,
-         "*://inbox.google.com/"}},
+         "*://inbox.9oo91e.qjz9zk/"}},
        Manifest::TYPE_EXTENSION,
        false,
        true},
@@ -1750,7 +1750,7 @@ TEST(PermissionsTest, IsEmpty) {
 
   // Try non standard host
   URLPatternSet non_empty_extent;
-  AddPattern(&non_empty_extent, "http://www.google.com/*");
+  AddPattern(&non_empty_extent, "http://www.9oo91e.qjz9zk/*");
 
   perm_set.reset(new PermissionSet(empty_apis, ManifestPermissionSet(),
                                    non_empty_extent, empty_extent));
@@ -1792,7 +1792,7 @@ TEST(PermissionsTest, SyncFileSystemPermission) {
 TEST(PermissionsTest, ChromeURLs) {
   URLPatternSet allowed_hosts;
   allowed_hosts.AddPattern(
-      URLPattern(URLPattern::SCHEME_ALL, "http://www.google.com/"));
+      URLPattern(URLPattern::SCHEME_ALL, "http://www.9oo91e.qjz9zk/"));
   allowed_hosts.AddPattern(
       URLPattern(URLPattern::SCHEME_ALL, "chrome://favicon/"));
   allowed_hosts.AddPattern(

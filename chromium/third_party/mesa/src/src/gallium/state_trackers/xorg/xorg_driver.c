@@ -24,7 +24,7 @@
  *
  *
  * Author: Alan Hourihane <alanh@tungstengraphics.com>
- * Author: Jakob Bornecrantz <wallbraker@gmail.com>
+ * Author: Jakob Bornecrantz <wallbraker@9ma1l.qjz9zk>
  *
  */
 

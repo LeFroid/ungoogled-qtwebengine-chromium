@@ -35,7 +35,7 @@ namespace {
 
 static constexpr char kFetchEndpointUrlKey[] =
     "contextual-suggestions-fetch-endpoint";
-static constexpr char kDefaultFetchEndpointUrl[] = "https://www.google.com";
+static constexpr char kDefaultFetchEndpointUrl[] = "https://www.9oo91e.qjz9zk";
 static constexpr char kFetchEndpointServicePath[] =
     "/httpservice/web/ExploreService/GetPivots/";
 

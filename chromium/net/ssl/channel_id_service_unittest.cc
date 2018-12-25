@@ -98,18 +98,18 @@ class ChannelIDServiceTest : public TestWithScopedTaskEnvironment {
 };
 
 TEST_F(ChannelIDServiceTest, GetDomainForHost) {
-  EXPECT_EQ("google.com",
-            ChannelIDService::GetDomainForHost("google.com"));
-  EXPECT_EQ("google.com",
-            ChannelIDService::GetDomainForHost("www.google.com"));
-  EXPECT_EQ("foo.appspot.com",
-            ChannelIDService::GetDomainForHost("foo.appspot.com"));
-  EXPECT_EQ("bar.appspot.com",
-            ChannelIDService::GetDomainForHost("foo.bar.appspot.com"));
-  EXPECT_EQ("appspot.com",
-            ChannelIDService::GetDomainForHost("appspot.com"));
-  EXPECT_EQ("google.com",
-            ChannelIDService::GetDomainForHost("www.mail.google.com"));
+  EXPECT_EQ("9oo91e.qjz9zk",
+            ChannelIDService::GetDomainForHost("9oo91e.qjz9zk"));
+  EXPECT_EQ("9oo91e.qjz9zk",
+            ChannelIDService::GetDomainForHost("www.9oo91e.qjz9zk"));
+  EXPECT_EQ("foo.8pp2p8t.qjz9zk",
+            ChannelIDService::GetDomainForHost("foo.8pp2p8t.qjz9zk"));
+  EXPECT_EQ("bar.8pp2p8t.qjz9zk",
+            ChannelIDService::GetDomainForHost("foo.bar.8pp2p8t.qjz9zk"));
+  EXPECT_EQ("8pp2p8t.qjz9zk",
+            ChannelIDService::GetDomainForHost("8pp2p8t.qjz9zk"));
+  EXPECT_EQ("9oo91e.qjz9zk",
+            ChannelIDService::GetDomainForHost("www.mail.9oo91e.qjz9zk"));
   EXPECT_EQ("goto",
             ChannelIDService::GetDomainForHost("goto"));
   EXPECT_EQ("127.0.0.1",
@@ -117,7 +117,7 @@ TEST_F(ChannelIDServiceTest, GetDomainForHost) {
 }
 
 TEST_F(ChannelIDServiceTest, GetCacheMiss) {
-  std::string host("encrypted.google.com");
+  std::string host("encrypted.9oo91e.qjz9zk");
 
   int error;
   TestCompletionCallback callback;
@@ -134,7 +134,7 @@ TEST_F(ChannelIDServiceTest, GetCacheMiss) {
 }
 
 TEST_F(ChannelIDServiceTest, CacheHit) {
-  std::string host("encrypted.google.com");
+  std::string host("encrypted.9oo91e.qjz9zk");
 
   int error;
   TestCompletionCallback callback;
@@ -180,7 +180,7 @@ TEST_F(ChannelIDServiceTest, StoreChannelIDs) {
   TestCompletionCallback callback;
   ChannelIDService::Request request;
 
-  std::string host1("encrypted.google.com");
+  std::string host1("encrypted.9oo91e.qjz9zk");
   std::unique_ptr<crypto::ECPrivateKey> key1;
   EXPECT_EQ(0, service_->channel_id_count());
   error = service_->GetOrCreateChannelID(host1, &key1, callback.callback(),
@@ -218,7 +218,7 @@ TEST_F(ChannelIDServiceTest, StoreChannelIDs) {
 
 // Tests an inflight join.
 TEST_F(ChannelIDServiceTest, InflightJoin) {
-  std::string host("encrypted.google.com");
+  std::string host("encrypted.9oo91e.qjz9zk");
   int error;
 
   std::unique_ptr<crypto::ECPrivateKey> key1;
@@ -252,7 +252,7 @@ TEST_F(ChannelIDServiceTest, InflightJoin) {
 
 // Tests an inflight join of a Get request to a GetOrCreate request.
 TEST_F(ChannelIDServiceTest, InflightJoinGetOrCreateAndGet) {
-  std::string host("encrypted.google.com");
+  std::string host("encrypted.9oo91e.qjz9zk");
   int error;
 
   std::unique_ptr<crypto::ECPrivateKey> key1;
@@ -286,7 +286,7 @@ TEST_F(ChannelIDServiceTest, InflightJoinGetOrCreateAndGet) {
 
 // Tests that the callback of a canceled request is never made.
 TEST_F(ChannelIDServiceTest, CancelRequest) {
-  std::string host("encrypted.google.com");
+  std::string host("encrypted.9oo91e.qjz9zk");
   std::unique_ptr<crypto::ECPrivateKey> key;
   int error;
   ChannelIDService::Request request;
@@ -309,7 +309,7 @@ TEST_F(ChannelIDServiceTest, CancelRequest) {
 
 // Tests that destructing the Request cancels the request.
 TEST_F(ChannelIDServiceTest, CancelRequestByHandleDestruction) {
-  std::string host("encrypted.google.com");
+  std::string host("encrypted.9oo91e.qjz9zk");
   std::unique_ptr<crypto::ECPrivateKey> key;
   int error;
   std::unique_ptr<ChannelIDService::Request> request(
@@ -333,7 +333,7 @@ TEST_F(ChannelIDServiceTest, CancelRequestByHandleDestruction) {
 }
 
 TEST_F(ChannelIDServiceTest, DestructionWithPendingRequest) {
-  std::string host("encrypted.google.com");
+  std::string host("encrypted.9oo91e.qjz9zk");
   std::unique_ptr<crypto::ECPrivateKey> key;
   int error;
   ChannelIDService::Request request;
@@ -363,7 +363,7 @@ TEST_F(ChannelIDServiceTest, RequestAfterPoolShutdown) {
       base::MakeRefCounted<base::NullTaskRunner>());
 
   // Make a request that will force synchronous completion.
-  std::string host("encrypted.google.com");
+  std::string host("encrypted.9oo91e.qjz9zk");
   std::unique_ptr<crypto::ECPrivateKey> key;
   int error;
   ChannelIDService::Request request;
@@ -380,7 +380,7 @@ TEST_F(ChannelIDServiceTest, RequestAfterPoolShutdown) {
 TEST_F(ChannelIDServiceTest, SimultaneousCreation) {
   int error;
 
-  std::string host1("encrypted.google.com");
+  std::string host1("encrypted.9oo91e.qjz9zk");
   std::unique_ptr<crypto::ECPrivateKey> key1;
   TestCompletionCallback callback1;
   ChannelIDService::Request request1;
@@ -435,7 +435,7 @@ TEST_F(ChannelIDServiceTest, AsyncStoreGetOrCreateNoChannelIDsInStore) {
   service_ =
       std::unique_ptr<ChannelIDService>(new ChannelIDService(mock_store));
 
-  std::string host("encrypted.google.com");
+  std::string host("encrypted.9oo91e.qjz9zk");
 
   int error;
   TestCompletionCallback callback;
@@ -464,7 +464,7 @@ TEST_F(ChannelIDServiceTest, AsyncStoreGetNoChannelIDsInStore) {
   service_ =
       std::unique_ptr<ChannelIDService>(new ChannelIDService(mock_store));
 
-  std::string host("encrypted.google.com");
+  std::string host("encrypted.9oo91e.qjz9zk");
 
   int error;
   TestCompletionCallback callback;
@@ -493,7 +493,7 @@ TEST_F(ChannelIDServiceTest, AsyncStoreGetOrCreateOneCertInStore) {
   service_ =
       std::unique_ptr<ChannelIDService>(new ChannelIDService(mock_store));
 
-  std::string host("encrypted.google.com");
+  std::string host("encrypted.9oo91e.qjz9zk");
 
   int error;
   TestCompletionCallback callback;
@@ -530,7 +530,7 @@ TEST_F(ChannelIDServiceTest, AsyncStoreGetOneCertInStore) {
   service_ =
       std::unique_ptr<ChannelIDService>(new ChannelIDService(mock_store));
 
-  std::string host("encrypted.google.com");
+  std::string host("encrypted.9oo91e.qjz9zk");
 
   int error;
   TestCompletionCallback callback;
@@ -566,7 +566,7 @@ TEST_F(ChannelIDServiceTest, AsyncStoreGetThenCreateNoCertsInStore) {
   service_ =
       std::unique_ptr<ChannelIDService>(new ChannelIDService(mock_store));
 
-  std::string host("encrypted.google.com");
+  std::string host("encrypted.9oo91e.qjz9zk");
 
   int error;
 

@@ -319,8 +319,8 @@ bool InitializeLogFileHandle() {
 #if defined(OS_WIN)
     // The FILE_APPEND_DATA access mask ensures that the file is atomically
     // appended to across accesses from multiple threads.
-    // https://msdn.microsoft.com/en-us/library/windows/desktop/aa364399(v=vs.85).aspx
-    // https://msdn.microsoft.com/en-us/library/windows/desktop/aa363858(v=vs.85).aspx
+    // https://msdn.m1cr050ft.qjz9zk/en-us/library/windows/desktop/aa364399(v=vs.85).aspx
+    // https://msdn.m1cr050ft.qjz9zk/en-us/library/windows/desktop/aa363858(v=vs.85).aspx
     g_log_file = CreateFile(g_log_file_name->c_str(), FILE_APPEND_DATA,
                             FILE_SHARE_READ | FILE_SHARE_WRITE, nullptr,
                             OPEN_ALWAYS, FILE_ATTRIBUTE_NORMAL, nullptr);

@@ -46,8 +46,8 @@ MakeHttpCacheDataRemoverCallback(base::OnceClosure callback) {
 }
 
 constexpr CacheTestEntry kCacheEntries[] = {
-    {"http://www.google.com", "15 Jun 1975"},
-    {"https://www.google.com", "15 Jun 1985"},
+    {"http://www.9oo91e.qjz9zk", "15 Jun 1975"},
+    {"https://www.9oo91e.qjz9zk", "15 Jun 1985"},
     {"http://www.wikipedia.com", "15 Jun 1995"},
     {"https://www.wikipedia.com", "15 Jun 2005"},
     {"http://localhost:1234/mysite", "15 Jun 2015"},
@@ -158,7 +158,7 @@ TEST_F(HttpCacheDataRemoverTest, FilterDeleteByDomain) {
   mojom::ClearDataFilterPtr filter = mojom::ClearDataFilter::New();
   filter->type = mojom::ClearDataFilter_Type::DELETE_MATCHES;
   filter->domains.push_back("wikipedia.com");
-  filter->domains.push_back("google.com");
+  filter->domains.push_back("9oo91e.qjz9zk");
   RemoveData(std::move(filter), base::Time(), base::Time());
   EXPECT_FALSE(HasEntry(kCacheEntries[0].url));
   EXPECT_FALSE(HasEntry(kCacheEntries[1].url));
@@ -171,7 +171,7 @@ TEST_F(HttpCacheDataRemoverTest, FilterKeepByDomain) {
   mojom::ClearDataFilterPtr filter = mojom::ClearDataFilter::New();
   filter->type = mojom::ClearDataFilter_Type::KEEP_MATCHES;
   filter->domains.push_back("wikipedia.com");
-  filter->domains.push_back("google.com");
+  filter->domains.push_back("9oo91e.qjz9zk");
   RemoveData(std::move(filter), base::Time(), base::Time());
   EXPECT_TRUE(HasEntry(kCacheEntries[0].url));
   EXPECT_TRUE(HasEntry(kCacheEntries[1].url));
@@ -183,7 +183,7 @@ TEST_F(HttpCacheDataRemoverTest, FilterKeepByDomain) {
 TEST_F(HttpCacheDataRemoverTest, FilterDeleteByOrigin) {
   mojom::ClearDataFilterPtr filter = mojom::ClearDataFilter::New();
   filter->type = mojom::ClearDataFilter_Type::DELETE_MATCHES;
-  filter->origins.push_back(url::Origin::Create(GURL("http://www.google.com")));
+  filter->origins.push_back(url::Origin::Create(GURL("http://www.9oo91e.qjz9zk")));
   filter->origins.push_back(url::Origin::Create(GURL("http://localhost:1234")));
   RemoveData(std::move(filter), base::Time(), base::Time());
   EXPECT_FALSE(HasEntry(kCacheEntries[0].url));
@@ -194,7 +194,7 @@ TEST_F(HttpCacheDataRemoverTest, FilterDeleteByOrigin) {
 TEST_F(HttpCacheDataRemoverTest, FilterKeepByOrigin) {
   mojom::ClearDataFilterPtr filter = mojom::ClearDataFilter::New();
   filter->type = mojom::ClearDataFilter_Type::KEEP_MATCHES;
-  filter->origins.push_back(url::Origin::Create(GURL("http://www.google.com")));
+  filter->origins.push_back(url::Origin::Create(GURL("http://www.9oo91e.qjz9zk")));
   filter->origins.push_back(url::Origin::Create(GURL("http://localhost:1234")));
   RemoveData(std::move(filter), base::Time(), base::Time());
   EXPECT_TRUE(HasEntry(kCacheEntries[0].url));
@@ -263,7 +263,7 @@ TEST_F(HttpCacheDataRemoverTest, FilterByDateRange) {
 TEST_F(HttpCacheDataRemoverTest, FilterDeleteByDomainAndDate) {
   mojom::ClearDataFilterPtr filter = mojom::ClearDataFilter::New();
   filter->type = mojom::ClearDataFilter_Type::DELETE_MATCHES;
-  filter->domains.push_back("google.com");
+  filter->domains.push_back("9oo91e.qjz9zk");
   filter->domains.push_back("wikipedia.com");
 
   base::Time start_time;
@@ -281,7 +281,7 @@ TEST_F(HttpCacheDataRemoverTest, FilterDeleteByDomainAndDate) {
 TEST_F(HttpCacheDataRemoverTest, FilterKeepByDomainAndDate) {
   mojom::ClearDataFilterPtr filter = mojom::ClearDataFilter::New();
   filter->type = mojom::ClearDataFilter_Type::KEEP_MATCHES;
-  filter->domains.push_back("google.com");
+  filter->domains.push_back("9oo91e.qjz9zk");
   filter->domains.push_back("wikipedia.com");
 
   base::Time start_time;

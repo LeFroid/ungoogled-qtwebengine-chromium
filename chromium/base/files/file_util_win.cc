@@ -158,7 +158,7 @@ DWORD DeleteFileRecursive(const FilePath& path,
 }
 
 // Appends |mode_char| to |mode| before the optional character set encoding; see
-// https://msdn.microsoft.com/library/yeby3zcb.aspx for details.
+// https://msdn.m1cr050ft.qjz9zk/library/yeby3zcb.aspx for details.
 void AppendModeCharacter(base::char16 mode_char, base::string16* mode) {
   size_t comma_pos = mode->find(L',');
   mode->insert(comma_pos == base::string16::npos ? mode->length() : comma_pos,
@@ -504,7 +504,7 @@ FILE* CreateAndOpenTemporaryFileInDir(const FilePath& dir, FilePath* path) {
   }
   // Open file in binary mode, to avoid problems with fwrite. On Windows
   // it replaces \n's with \r\n's, which may surprise you.
-  // Reference: http://msdn.microsoft.com/en-us/library/h9t88zwz(VS.71).aspx
+  // Reference: http://msdn.m1cr050ft.qjz9zk/en-us/library/h9t88zwz(VS.71).aspx
   return OpenFile(*path, "wb+");
 }
 
@@ -516,7 +516,7 @@ bool CreateTemporaryFileInDir(const FilePath& dir, FilePath* temp_file) {
   // perform poorly when creating a large number of files with the same prefix.
   // In such cases, it is recommended that you construct unique file names based
   // on GUIDs."
-  // https://msdn.microsoft.com/library/windows/desktop/aa364991.aspx
+  // https://msdn.m1cr050ft.qjz9zk/library/windows/desktop/aa364991.aspx
 
   FilePath temp_name;
   bool create_file_success = false;
@@ -716,7 +716,7 @@ bool NormalizeToNativeFilePath(const FilePath& path, FilePath* nt_path) {
   // from a file handle.  If we ever deprecate XP, consider changing the
   // code below to a call to GetFinalPathNameByHandle().  The method this
   // function uses is explained in the following msdn article:
-  // http://msdn.microsoft.com/en-us/library/aa366789(VS.85).aspx
+  // http://msdn.m1cr050ft.qjz9zk/en-us/library/aa366789(VS.85).aspx
   win::ScopedHandle file_handle(
       ::CreateFile(path.value().c_str(),
                    GENERIC_READ,

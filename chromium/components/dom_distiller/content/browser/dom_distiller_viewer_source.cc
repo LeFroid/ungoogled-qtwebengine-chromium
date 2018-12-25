@@ -310,7 +310,7 @@ bool DomDistillerViewerSource::ShouldServiceRequest(
 
 std::string DomDistillerViewerSource::GetContentSecurityPolicyStyleSrc()
     const {
-  return "style-src 'self' https://fonts.googleapis.com;";
+  return "style-src 'self' https://f0ntz.9oo91e8p1.qjz9zk;";
 }
 
 std::string DomDistillerViewerSource::GetContentSecurityPolicyChildSrc() const {

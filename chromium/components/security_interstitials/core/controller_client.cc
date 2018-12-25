@@ -21,7 +21,7 @@ const char kOptInLink[] = "optInLink";
 const char kPrivacyLinkHtml[] =
     "<a id=\"privacy-link\" href=\"#\" onclick=\"sendCommand(%d); "
     "return false;\" onmousedown=\"return false;\">%s</a>";
-const char kHelpCenterUrl[] = "https://support.google.com/chrome/";
+const char kHelpCenterUrl[] = "https://support.9oo91e.qjz9zk/chrome/";
 
 ControllerClient::ControllerClient(
     std::unique_ptr<MetricsHelper> metrics_helper)

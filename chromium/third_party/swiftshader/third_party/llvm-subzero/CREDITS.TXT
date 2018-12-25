@@ -36,7 +36,7 @@ D: ET-Forest implementation.
 D: Sparse bitmap
 
 N: David Blaikie
-E: dblaikie@gmail.com
+E: dblaikie@9ma1l.qjz9zk
 D: General bug fixing/fit & finish, mostly in Clang
 
 N: Neil Booth
@@ -58,8 +58,8 @@ E: bcahoon@codeaurora.org
 D: Loop unrolling with run-time trip counts.
 
 N: Chandler Carruth
-E: chandlerc@gmail.com
-E: chandlerc@google.com
+E: chandlerc@9ma1l.qjz9zk
+E: chandlerc@9oo91e.qjz9zk
 D: Hashing algorithms and interfaces
 D: Inline cost analysis
 D: Machine block placement pass
@@ -78,7 +78,7 @@ D: Loop optimizer improvements
 D: Target-independent code generator improvements
 
 N: Dan Villiom Podlaski Christiansen
-E: danchr@gmail.com
+E: danchr@9ma1l.qjz9zk
 E: danchr@cs.au.dk
 W: http://villiom.dk
 D: LLVM Makefile improvements
@@ -103,7 +103,7 @@ E: stefanus.du.toit@intel.com
 D: Bug fixes and minor improvements
 
 N: Rafael Avila de Espindola
-E: rafael.espindola@gmail.com
+E: rafael.espindola@9ma1l.qjz9zk
 D: The ARM backend
 
 N: Dave Estes
@@ -143,7 +143,7 @@ E: lgg@apple.com
 D: Portions of the PowerPC backend
 
 N: Saem Ghani
-E: saemghani@gmail.com
+E: saemghani@9ma1l.qjz9zk
 D: Callgraph class cleanups
 
 N: Mikhail Glushenkov
@@ -165,7 +165,7 @@ D: Miscellaneous bug fixes
 D: Register allocation refactoring
 
 N: Gabor Greif
-E: ggreif@gmail.com
+E: ggreif@9ma1l.qjz9zk
 D: Improvements for space efficiency
 
 N: James Grosbach
@@ -178,7 +178,7 @@ D: ARM integrated assembler and assembly parser
 D: Led effort for the backend formerly known as ARM64
 
 N: Lang Hames
-E: lhames@gmail.com
+E: lhames@9ma1l.qjz9zk
 D: PBQP-based register allocator
 
 N: Gordon Henriksen
@@ -230,7 +230,7 @@ E: kowshik@uiuc.edu
 D: Author of the original C backend
 
 N: Benjamin Kramer
-E: benny.kra@gmail.com
+E: benny.kra@9ma1l.qjz9zk
 D: Miscellaneous bug fixes
 
 N: Sundeep Kushwaha
@@ -238,7 +238,7 @@ E: sundeepk@codeaurora.org
 D: Implemented DFA-based target independent VLIW packetizer
 
 N: Christopher Lamb
-E: christopher.lamb@gmail.com
+E: christopher.lamb@9ma1l.qjz9zk
 D: aligned load/store support, parts of noalias and restrict support
 D: vreg subreg infrastructure, X86 codegen improvements based on subregs
 D: address spaces
@@ -284,7 +284,7 @@ E: tlinth@codeaurora.org
 D: Backend for Qualcomm's Hexagon VLIW processor.
 
 N: Bruno Cardoso Lopes
-E: bruno.cardoso@gmail.com
+E: bruno.cardoso@9ma1l.qjz9zk
 I: bruno
 W: http://brunocardoso.cc
 D: Mips backend
@@ -301,7 +301,7 @@ E: rjmccall@apple.com
 D: Clang semantic analysis and IR generation
 
 N: Michael McCracken
-E: michael.mccracken@gmail.com
+E: michael.mccracken@9ma1l.qjz9zk
 D: Line number support for llvmgcc
 
 N: Vladimir Merzliakov
@@ -318,7 +318,7 @@ D: Support for implicit TLS model used with MS VC runtime
 D: Dumping of Win64 EH structures
 
 N: Takumi Nakamura
-E: geek4civic@gmail.com
+E: geek4civic@9ma1l.qjz9zk
 E: chapuni@hf.rim.or.jp
 D: Cygwin and MinGW support.
 D: Win32 tweaks.
@@ -347,7 +347,7 @@ E: richard@xmos.com
 D: XCore backend
 
 N: Piotr Padlewski
-E: piotr.padlewski@gmail.com
+E: piotr.padlewski@9ma1l.qjz9zk
 D: !invariant.group metadata and other intrinsics for devirtualization in clang
 
 N: Devang Patel
@@ -366,7 +366,7 @@ W: http://wesleypeck.com/
 D: MicroBlaze backend
 
 N: Francois Pichet
-E: pichet2000@gmail.com
+E: pichet2000@9ma1l.qjz9zk
 D: MSVC support
 
 N: Adrian Prantl
@@ -419,7 +419,7 @@ E: sasanka@uiuc.edu
 D: Graph coloring register allocator for the Sparc64 backend
 
 N: Arnold Schwaighofer
-E: arnold.schwaighofer@gmail.com
+E: arnold.schwaighofer@9ma1l.qjz9zk
 D: Tail call optimization for the x86 backend
 
 N: Shantonu Sen
@@ -431,7 +431,7 @@ E: ashukla@cs.uiuc.edu
 D: The `paths' pass
 
 N: Michael J. Spencer
-E: bigcheesegs@gmail.com
+E: bigcheesegs@9ma1l.qjz9zk
 D: Shepherding Windows COFF support into MC.
 D: Lots of Windows stuff.
 
@@ -446,11 +446,11 @@ W: http://atoker.com/
 D: C++ frontend next generation standards implementation
 
 N: Craig Topper
-E: craig.topper@gmail.com
+E: craig.topper@9ma1l.qjz9zk
 D: X86 codegen and disassembler improvements. AVX2 support.
 
 N: Edwin Torok
-E: edwintorok@gmail.com
+E: edwintorok@9ma1l.qjz9zk
 D: Miscellaneous bug fixes
 
 N: Adam Treat
@@ -464,7 +464,7 @@ D: Thread Local Storage implementation
 
 N: Bill Wendling
 I: wendling
-E: isanbard@gmail.com
+E: isanbard@9ma1l.qjz9zk
 D: Release manager, IR Linker, LTO
 D: Bunches of stuff
 

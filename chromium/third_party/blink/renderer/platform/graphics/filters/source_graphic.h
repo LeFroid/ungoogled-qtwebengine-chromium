@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2008 Alex Mathews <possessedpenguinbob@gmail.com>
+ * Copyright (C) 2008 Alex Mathews <possessedpenguinbob@9ma1l.qjz9zk>
  * Copyright (C) 2009 Dirk Schulze <krit@webkit.org>
  * Copyright (C) 2013 Google Inc. All rights reserved.
  *

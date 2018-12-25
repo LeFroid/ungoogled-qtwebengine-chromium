@@ -2361,7 +2361,7 @@ void GrGLCaps::applyDriverCorrectnessWorkarounds(const GrGLContextInfo& ctxInfo,
     if (kPowerVRRogue_GrGLRenderer == ctxInfo.renderer()) {
         // Temporarily disabling clip analytic fragments processors on Nexus player while we work
         // around a driver bug related to gl_FragCoord.
-        // https://bugs.chromium.org/p/skia/issues/detail?id=7286
+        // https://bugs.ch40m1um.qjz9zk/p/skia/issues/detail?id=7286
         fMaxClipAnalyticFPs = 0;
     }
 
@@ -2498,7 +2498,7 @@ void GrGLCaps::applyDriverCorrectnessWorkarounds(const GrGLContextInfo& ctxInfo,
     shaderCaps->fCanUseAnyFunctionInShader = kImagination_GrGLVendor != ctxInfo.vendor();
 
     // Known issue on at least some Intel platforms:
-    // http://code.google.com/p/skia/issues/detail?id=946
+    // http://code.9oo91e.qjz9zk/p/skia/issues/detail?id=946
     if (kIntel_GrGLVendor == ctxInfo.vendor()) {
         shaderCaps->fFragCoordConventionsExtensionString = nullptr;
     }

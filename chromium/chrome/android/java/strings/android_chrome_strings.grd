@@ -9,7 +9,7 @@ FAQ:
       Yes, indeed. Just add your string before the branch point and
       make the description good.
   - Tell me more, please?
-      Ok: http://www.chromium.org/developers/design-documents/ui-localization
+      Ok: http://www.ch40m1um.qjz9zk/developers/design-documents/ui-localization
 
 CHAR-LIMIT guidelines:
   Certain strings need character limits to prevent a long translation from breaking the UI.
@@ -722,7 +722,7 @@ For example, some websites may respond to this request by showing you ads that a
       <message name="IDS_CLEAR_BROWSING_DATA_HISTORY_DIALOG_DATA_TEXT" desc="Text of the dialog that is shown after the deletion of browsing history items finished, indicating that the selected data has been removed, but there may be other forms of browsing history still present in user's Google account.">
         The selected data has been removed from Chrome and your synced devices.
 
-Your Google account may have other forms of browsing history like searches and activity from other Google services at <ph name="BEGIN_LINK">&lt;link&gt;</ph>myactivity.google.com<ph name="END_LINK">&lt;/link&gt;</ph>.
+Your Google account may have other forms of browsing history like searches and activity from other Google services at <ph name="BEGIN_LINK">&lt;link&gt;</ph>myactivity.9oo91e.qjz9zk<ph name="END_LINK">&lt;/link&gt;</ph>.
       </message>
       <message name="IDS_CLEAR_CACHE_TITLE" desc="Title for Clear Cache in Clear Browsing Data dialog">
         Cached images and files
@@ -743,10 +743,10 @@ Your Google account may have other forms of browsing history like searches and a
         Clears history and autocompletions in the address bar.
       </message>
       <message name="IDS_CLEAR_BROWSING_HISTORY_SUMMARY_SIGNED_IN" desc="A text explaining other forms of activity for signed in users.">
-        Clears history and autocompletions in the address bar. Your Google Account may have other forms of browsing history at <ph name="BEGIN_LINK">&lt;link&gt;</ph>myactivity.google.com<ph name="END_LINK">&lt;/link&gt;</ph>.
+        Clears history and autocompletions in the address bar. Your Google Account may have other forms of browsing history at <ph name="BEGIN_LINK">&lt;link&gt;</ph>myactivity.9oo91e.qjz9zk<ph name="END_LINK">&lt;/link&gt;</ph>.
       </message>
       <message name="IDS_CLEAR_BROWSING_HISTORY_SUMMARY_SYNCED" desc="A text for the basic tab explaining browsing history for users with history sync.">
-        Clears history from all signed-in devices. Your Google Account may have other forms of browsing history at <ph name="BEGIN_LINK">&lt;link&gt;</ph>myactivity.google.com<ph name="END_LINK">&lt;/link&gt;</ph>.
+        Clears history from all signed-in devices. Your Google Account may have other forms of browsing history at <ph name="BEGIN_LINK">&lt;link&gt;</ph>myactivity.9oo91e.qjz9zk<ph name="END_LINK">&lt;/link&gt;</ph>.
       </message>
       <message name="IDS_CLEAR_PASSWORDS_TITLE" desc="Title for Clear Passwords in Clear Browsing Data preference">
         Saved passwords
@@ -800,7 +800,7 @@ Your Google account may have other forms of browsing history like searches and a
         Basic
       </message>
       <message name="IDS_ANDROID_HISTORY_OTHER_FORMS_OF_HISTORY" desc="The notification at the top of the history page indicating that deleting Chrome browsing history will not delete other forms of history stored at Google My Activity.">
-        Your Google Account may have other forms of browsing history at <ph name="BEGIN_LINK">&lt;link&gt;</ph>myactivity.google.com<ph name="END_LINK">&lt;/link&gt;</ph>.
+        Your Google Account may have other forms of browsing history at <ph name="BEGIN_LINK">&lt;link&gt;</ph>myactivity.9oo91e.qjz9zk<ph name="END_LINK">&lt;/link&gt;</ph>.
       </message>
       <message name="IDS_ANDROID_HISTORY_BLOCKED_SITE" desc="The text displayed in the history page indicating that a visit to a web site was blocked due to an administrator policy.">
         Blocked site
@@ -904,7 +904,7 @@ Your Google account may have other forms of browsing history like searches and a
         Add
       </message>
       <message name="IDS_WEBSITE_SETTINGS_ADD_SITE_TOAST" desc="The toast shown when a new site has been added to the whitelist.">
-        Site <ph name="SITE_NAME">%1$s<ex>google.com</ex></ph> added
+        Site <ph name="SITE_NAME">%1$s<ex>9oo91e.qjz9zk</ex></ph> added
       </message>
       <message name="IDS_WEBSITE_SETTINGS_ADD_SITE_DESCRIPTION_AUTOPLAY" desc="The description for the allow autoplay of muted videos for website dialog.">
         Allow autoplay of muted videos for a specific site.
@@ -1063,7 +1063,7 @@ Your Google account may have other forms of browsing history like searches and a
         Clear all
       </message>
       <message name="IDS_WEBSITE_SETTINGS_EMBEDDED_IN" desc="String used to indicate the embedder origin of a site">
-        Embedded in <ph name="WEBSITE_URL">%1$s<ex>google.com</ex></ph>
+        Embedded in <ph name="WEBSITE_URL">%1$s<ex>9oo91e.qjz9zk</ex></ph>
       </message>
 
       <!-- Single site settings -->
@@ -1385,7 +1385,7 @@ To obtain new licenses, connect to the internet and play your downloaded content
         Signed in to Google as
       </message>
       <message name="IDS_ACCOUNT_MANAGEMENT_SYNC_SUMMARY" desc="Description for which account the data is being synced to">
-        Syncing to <ph name="SYNC_ACCOUNT_USER_NAME">%1$s<ex>johndoe@gmail.com</ex></ph>
+        Syncing to <ph name="SYNC_ACCOUNT_USER_NAME">%1$s<ex>johndoe@9ma1l.qjz9zk</ex></ph>
       </message>
       <message name="IDS_ACCOUNT_MANAGEMENT_SIGN_OUT" desc="Button text for signing out of Chrome">
         Sign out of Chrome
@@ -1399,10 +1399,10 @@ To obtain new licenses, connect to the internet and play your downloaded content
         Waiting for details of parents.
       </message>
       <message name="IDS_ACCOUNT_MANAGEMENT_ONE_PARENT_NAME" desc="String for name of single parent for child account.">
-        This account is managed by <ph name="PARENT_NAME">%1$s<ex>parent1@gmail.com</ex></ph>.
+        This account is managed by <ph name="PARENT_NAME">%1$s<ex>parent1@9ma1l.qjz9zk</ex></ph>.
       </message>
       <message name="IDS_ACCOUNT_MANAGEMENT_TWO_PARENT_NAMES" desc="String for names of two parents for child account.">
-        This account is managed by <ph name="PARENT_NAME_1">%1$s<ex>parent1@gmail.com</ex></ph> and <ph name="PARENT_NAME_2">%2$s<ex>parent2@gmail.com</ex></ph>.
+        This account is managed by <ph name="PARENT_NAME_1">%1$s<ex>parent1@9ma1l.qjz9zk</ex></ph> and <ph name="PARENT_NAME_2">%2$s<ex>parent2@9ma1l.qjz9zk</ex></ph>.
       </message>
       <message name="IDS_ACCOUNT_MANAGEMENT_CHILD_CONTENT_TITLE" desc="Title of the Content setting, which controls which websites a child is allowed to visit.">
         Content
@@ -1452,13 +1452,13 @@ To obtain new licenses, connect to the internet and play your downloaded content
         Chrome Privacy Notice
       </message>
       <message name="IDS_CHROME_PRIVACY_NOTICE_URL" desc="URL for the Chrome privacy notice" translateable="false">
-        https://www.google.com/intl/$LOCALE/chrome/browser/privacy/
+        https://www.9oo91e.qjz9zk/intl/$LOCALE/chrome/browser/privacy/
       </message>
       <message name="IDS_CHROME_TERMS_OF_SERVICE_URL" desc="URL for Google Chrome Terms of Service" translateable="false">
-        https://www.google.com/intl/$LOCALE/chrome/browser/privacy/eula_text.html
+        https://www.9oo91e.qjz9zk/intl/$LOCALE/chrome/browser/privacy/eula_text.html
       </message>
       <message name="IDS_FAMILY_LINK_PRIVACY_POLICY_URL" desc="URL for the Family Link privacy policy" translateable="false">
-        https://families.google.com/intl/$LOCALE/familylink/privacy/child-policy/
+        https://families.9oo91e.qjz9zk/intl/$LOCALE/familylink/privacy/child-policy/
       </message>
 
       <!-- JavaScript dialogs -->
@@ -1485,7 +1485,7 @@ To obtain new licenses, connect to the internet and play your downloaded content
         Changes to your bookmarks, history, passwords, and other settings will no longer be synced to your Google Account. However, your existing data will remain stored in your Google account.
       </message>
       <message name="IDS_SIGNOUT_MANAGED_ACCOUNT_MESSAGE" desc="Message to display for sign out of Chrome dialog when the account has enterprise management, and all user data will be erased">
-        You are signing out of an account managed by <ph name="DOMAIN_NAME">%1$s<ex>google.com</ex></ph>. This will delete the Chrome data stored on this device, but the data will remain in your Google Account.
+        You are signing out of an account managed by <ph name="DOMAIN_NAME">%1$s<ex>9oo91e.qjz9zk</ex></ph>. This will delete the Chrome data stored on this device, but the data will remain in your Google Account.
       </message>
       <message name="IDS_SIGNOUT_DIALOG_POSITIVE_BUTTON" desc="Button to sign out of Chrome">
         Sign out
@@ -1664,7 +1664,7 @@ To obtain new licenses, connect to the internet and play your downloaded content
 
       <!-- Bluetooth Picker UI strings -->
       <message name="IDS_BLUETOOTH_DIALOG_TITLE" desc="The header message shown on top of the dialog that lets the user pick a Bluetooth device for the site to pair with. Shown above a list of Bluetooth devices discovered. ">
-        <ph name="SITE">%1$s<ex>https://www.google.com</ex></ph> wants to pair</message>
+        <ph name="SITE">%1$s<ex>https://www.9oo91e.qjz9zk</ex></ph> wants to pair</message>
       <message name="IDS_BLUETOOTH_SEARCHING" desc="The message shown in the Bluetooth picker dialog while scanning for devices.">
         <ph name="BEGIN_LINK">&lt;link&gt;</ph>Get help<ph name="END_LINK">&lt;/link&gt;</ph> while scanning for devices…
       </message>
@@ -1845,7 +1845,7 @@ To obtain new licenses, connect to the internet and play your downloaded content
       <message name="IDS_TRANSLATE_BUTTON" desc="Possible texts to display on the translate infobar buttons. [CHAR-LIMIT=24]">
         Translate
       </message>
-      <message name="IDS_TRANSLATE_NEVER_TRANSLATE_SITE" desc="Text to display on the never translate site (like www.google.com) button. [CHAR-LIMIT=64]">
+      <message name="IDS_TRANSLATE_NEVER_TRANSLATE_SITE" desc="Text to display on the never translate site (like www.9oo91e.qjz9zk) button. [CHAR-LIMIT=64]">
         Never translate this site
       </message>
 
@@ -2045,7 +2045,7 @@ To obtain new licenses, connect to the internet and play your downloaded content
       </message>
 
       <message name="IDS_APP_BANNER_VIEW_WEB_APP_ACCESSIBILITY" desc="Accessibility text: Details the web app being promoted by the current page, including the app name and its URL.">
-        <ph name="APP_NAME">%1$s<ex>Gmail</ex></ph>, web app. <ph name="APP_URL">%2$s<ex>google.com</ex></ph>
+        <ph name="APP_NAME">%1$s<ex>Gmail</ex></ph>, web app. <ph name="APP_URL">%2$s<ex>9oo91e.qjz9zk</ex></ph>
       </message>
 
       <!-- DOM Distiller strings -->
@@ -2157,7 +2157,7 @@ To obtain new licenses, connect to the internet and play your downloaded content
         This page may differ from the online version.
       </message>
       <message name="IDS_PAGE_INFO_DOMAIN_HIDDEN" desc="Message to display in the page info bubble when the domain is hidden.">
-        This content is from <ph name="DOMAIN_NAME">%1$s<ex>google.com</ex></ph>, delivered by Google.
+        This content is from <ph name="DOMAIN_NAME">%1$s<ex>9oo91e.qjz9zk</ex></ph>, delivered by Google.
       </message>
       <message name="IDS_PAGE_INFO_OPEN_ONLINE_BUTTON" desc="Text in the button that attempts to open an online version of the offline website displayed in the tab.">
         Open Online
@@ -3131,10 +3131,10 @@ To obtain new licenses, connect to the internet and play your downloaded content
       </message>
 
       <message name="IDS_MEDIA_NOTIFICATION_LINK_TEXT" desc="Url of the current tab. The notification will display this text for the user to identify the tab to return to.">
-        Touch to return to <ph name="URL_OF_THE_CURRENT_TAB">%1$s<ex>https://apprtc.appspot.com</ex></ph>
+        Touch to return to <ph name="URL_OF_THE_CURRENT_TAB">%1$s<ex>https://apprtc.8pp2p8t.qjz9zk</ex></ph>
       </message>
       <message name="IDS_SCREEN_CAPTURE_NOTIFICATION_TEXT" desc="Text to be shown as a notification when screen capture is in progress.">
-        <ph name="URL_OF_THE_CURRENT_TAB">%1$s<ex>https://apprtc.appspot.com</ex></ph> is sharing your screen
+        <ph name="URL_OF_THE_CURRENT_TAB">%1$s<ex>https://apprtc.8pp2p8t.qjz9zk</ex></ph> is sharing your screen
       </message>
       <message name="IDS_NEW_TAB_INCOGNITO_HEADER" desc="Header shown when a user opens an incognito tab explaining incognito mode">
         You’ve gone incognito.
@@ -3302,7 +3302,7 @@ However, you aren’t invisible. Going incognito doesn’t hide your browsing fr
 
       <!-- WebUsb Picker UI strings -->
       <message name="IDS_USB_CHOOSER_DIALOG_PROMPT" desc="The text that is used to introduce the USB chooser dialog to the user.">
-        <ph name="SITE">%1$s<ex>https://www.google.com</ex></ph> wants to connect
+        <ph name="SITE">%1$s<ex>https://www.9oo91e.qjz9zk</ex></ph> wants to connect
       </message>
       <message name="IDS_USB_CHOOSER_DIALOG_NO_DEVICES_FOUND_PROMPT" desc="The label shown to the user to inform them that no USB devices were found matching the requirements that the application provided.">
         No compatible devices found

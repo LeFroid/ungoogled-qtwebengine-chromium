@@ -667,28 +667,28 @@ TEST(HttpUtilTest, RequestUrlSanitize) {
     const char* const expected_spec;
   } tests[] = {
     { // Check that #hash is removed.
-      "http://www.google.com:78/foobar?query=1#hash",
-      "http://www.google.com:78/foobar?query=1",
+      "http://www.9oo91e.qjz9zk:78/foobar?query=1#hash",
+      "http://www.9oo91e.qjz9zk:78/foobar?query=1",
     },
     { // The reference may itself contain # -- strip all of it.
       "http://192.168.0.1?query=1#hash#10#11#13#14",
       "http://192.168.0.1/?query=1",
     },
     { // Strip username/password.
-      "http://user:pass@google.com",
-      "http://google.com/",
+      "http://user:pass@9oo91e.qjz9zk",
+      "http://9oo91e.qjz9zk/",
     },
     { // https scheme
-      "https://www.google.com:78/foobar?query=1#hash",
-      "https://www.google.com:78/foobar?query=1",
+      "https://www.9oo91e.qjz9zk:78/foobar?query=1#hash",
+      "https://www.9oo91e.qjz9zk:78/foobar?query=1",
     },
     { // WebSocket's ws scheme
-      "ws://www.google.com:78/foobar?query=1#hash",
-      "ws://www.google.com:78/foobar?query=1",
+      "ws://www.9oo91e.qjz9zk:78/foobar?query=1#hash",
+      "ws://www.9oo91e.qjz9zk:78/foobar?query=1",
     },
     { // WebSocket's wss scheme
-      "wss://www.google.com:78/foobar?query=1#hash",
-      "wss://www.google.com:78/foobar?query=1",
+      "wss://www.9oo91e.qjz9zk:78/foobar?query=1#hash",
+      "wss://www.9oo91e.qjz9zk:78/foobar?query=1",
     }
   };
   for (size_t i = 0; i < arraysize(tests); ++i) {
@@ -703,8 +703,8 @@ TEST(HttpUtilTest, RequestUrlSanitize) {
 
 // Test SpecForRequest() for "ftp" scheme.
 TEST(HttpUtilTest, SpecForRequestForUrlWithFtpScheme) {
-  GURL ftp_url("ftp://user:pass@google.com/pub/chromium/");
-  EXPECT_EQ("ftp://google.com/pub/chromium/",
+  GURL ftp_url("ftp://user:pass@9oo91e.qjz9zk/pub/chromium/");
+  EXPECT_EQ("ftp://9oo91e.qjz9zk/pub/chromium/",
             HttpUtil::SpecForRequest(ftp_url));
 }
 

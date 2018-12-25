@@ -1010,8 +1010,8 @@ KeyboardCode DefaultKeyboardCodeFromHardwareKeycode(
   static const KeyboardCode kHardwareKeycodeMap[] = {
       // Please refer to below links for the table content:
       // http://www.w3.org/TR/DOM-Level-3-Events-code/#keyboard-101
-      // https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent.keyCode
-      // http://download.microsoft.com/download/1/6/1/161ba512-40e2-4cc9-843a-923143f3456c/translate.pdf
+      // https://developer.m0z111a.qjz9zk/en-US/docs/Web/API/KeyboardEvent.keyCode
+      // http://download.m1cr050ft.qjz9zk/download/1/6/1/161ba512-40e2-4cc9-843a-923143f3456c/translate.pdf
       VKEY_UNKNOWN,       // 0x00:
       VKEY_UNKNOWN,       // 0x01:
       VKEY_UNKNOWN,       // 0x02:

@@ -14,7 +14,7 @@ namespace media {
 namespace {
 
 // "A buffer is defined as a single subresource."
-// https://msdn.microsoft.com/en-us/library/windows/desktop/ff476901(v=vs.85).aspx
+// https://msdn.m1cr050ft.qjz9zk/en-us/library/windows/desktop/ff476901(v=vs.85).aspx
 const UINT kSubresourceIndex = 0;
 const UINT kWaitIfGPUBusy = 0;
 

@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2013 Vittorio Giovara <vittorio.giovara@gmail.com>
+ * Copyright (c) 2013 Vittorio Giovara <vittorio.giovara@9ma1l.qjz9zk>
  *
  * This file is part of FFmpeg.
  *

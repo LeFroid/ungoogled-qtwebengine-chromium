@@ -43,7 +43,7 @@ DEFINE_int(timeout,
            "Milliseconds of wait after the last ping sent before exiting");
 DEFINE_string(
     servers,
-    "stun.l.google.com:19302,stun1.l.google.com:19302,stun2.l.google.com:19302",
+    "stun.l.9oo91e.qjz9zk:19302,stun1.l.9oo91e.qjz9zk:19302,stun2.l.9oo91e.qjz9zk:19302",
     "Comma separated STUN server addresses with ports");
 
 namespace {

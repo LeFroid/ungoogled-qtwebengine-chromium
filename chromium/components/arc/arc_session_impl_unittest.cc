@@ -29,7 +29,7 @@
 namespace arc {
 namespace {
 
-constexpr char kFakeGmail[] = "user@gmail.com";
+constexpr char kFakeGmail[] = "user@9ma1l.qjz9zk";
 constexpr char kFakeGmailGaiaId[] = "1234567890";
 constexpr char kDefaultLocale[] = "en-US";
 

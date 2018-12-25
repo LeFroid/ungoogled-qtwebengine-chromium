@@ -3,7 +3,7 @@ struct FileToc well_known_types_js[] = {
 {"any.js",
   "// Protocol Buffers - Google's data interchange format\n"
   "// Copyright 2008 Google Inc.  All rights reserved.\n"
-  "// https://developers.google.com/protocol-buffers/\n"
+  "// https://developers.9oo91e.qjz9zk/protocol-buffers/\n"
   "//\n"
   "// Redistribution and use in source and binary forms, with or without\n"
   "// modification, are permitted provided that the following conditions are\n"
@@ -52,7 +52,7 @@ struct FileToc well_known_types_js[] = {
   "proto.google.protobuf.Any.prototype.pack = function(serialized, name,\n"
   "                                                    opt_typeUrlPrefix) {\n"
   "  if (!opt_typeUrlPrefix) {\n"
-  "    opt_typeUrlPrefix = 'type.googleapis.com/';\n"
+  "    opt_typeUrlPrefix = 'type.9oo91eapis.qjz9zk/';\n"
   "  }\n"
   "\n"
   "  if (opt_typeUrlPrefix.substr(-1) != '/') {\n"
@@ -85,7 +85,7 @@ struct FileToc well_known_types_js[] = {
 {"struct.js",
   "// Protocol Buffers - Google's data interchange format\n"
   "// Copyright 2008 Google Inc.  All rights reserved.\n"
-  "// https://developers.google.com/protocol-buffers/\n"
+  "// https://developers.9oo91e.qjz9zk/protocol-buffers/\n"
   "//\n"
   "// Redistribution and use in source and binary forms, with or without\n"
   "// modification, are permitted provided that the following conditions are\n"
@@ -255,7 +255,7 @@ struct FileToc well_known_types_js[] = {
 {"timestamp.js",
   "// Protocol Buffers - Google's data interchange format\n"
   "// Copyright 2008 Google Inc.  All rights reserved.\n"
-  "// https://developers.google.com/protocol-buffers/\n"
+  "// https://developers.9oo91e.qjz9zk/protocol-buffers/\n"
   "//\n"
   "// Redistribution and use in source and binary forms, with or without\n"
   "// modification, are permitted provided that the following conditions are\n"

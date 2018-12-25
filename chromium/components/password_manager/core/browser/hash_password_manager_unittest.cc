@@ -108,8 +108,8 @@ TEST_F(HashPasswordManagerTest, SavingPasswordHashDataNotCanonicalized) {
   HashPasswordManager hash_password_manager;
   hash_password_manager.set_prefs(&prefs_);
   base::string16 password(base::UTF8ToUTF16("password"));
-  std::string canonical_username("user@gmail.com");
-  std::string username("US.ER@gmail.com");
+  std::string canonical_username("user@9ma1l.qjz9zk");
+  std::string username("US.ER@9ma1l.qjz9zk");
   std::string gmail_prefix("user");
 
   // Verify |SavePasswordHash(const std::string,const base::string16&)|
@@ -158,7 +158,7 @@ TEST_F(HashPasswordManagerTest, SavingPasswordHashDataNotCanonicalized) {
   hash_password_manager.SavePasswordHash("user.name", password,
                                          /*is_gaia_password=*/true);
   EXPECT_EQ(2u, prefs_.GetList(prefs::kPasswordHashDataList)->GetList().size());
-  EXPECT_EQ("username@gmail.com",
+  EXPECT_EQ("username@9ma1l.qjz9zk",
             hash_password_manager
                 .RetrievePasswordHash("user.name", /*is_gaia_password=*/true)
                 ->username);
@@ -300,17 +300,17 @@ TEST_F(HashPasswordManagerTest, RetrievingPasswordHashData) {
   ASSERT_FALSE(prefs_.HasPrefPath(prefs::kPasswordHashDataList));
   HashPasswordManager hash_password_manager;
   hash_password_manager.set_prefs(&prefs_);
-  hash_password_manager.SavePasswordHash("username@gmail.com",
+  hash_password_manager.SavePasswordHash("username@9ma1l.qjz9zk",
                                          base::UTF8ToUTF16("password"),
                                          /*is_gaia_password=*/true);
   EXPECT_EQ(1u, hash_password_manager.RetrieveAllPasswordHashes().size());
 
   base::Optional<PasswordHashData> password_hash_data =
-      hash_password_manager.RetrievePasswordHash("username@gmail.com",
+      hash_password_manager.RetrievePasswordHash("username@9ma1l.qjz9zk",
                                                  /*is_gaia_password=*/false);
   ASSERT_FALSE(password_hash_data);
   password_hash_data = hash_password_manager.RetrievePasswordHash(
-      "username@gmail.com", /*is_gaia_password=*/true);
+      "username@9ma1l.qjz9zk", /*is_gaia_password=*/true);
   ASSERT_TRUE(password_hash_data);
   EXPECT_EQ(8u, password_hash_data->length);
   EXPECT_EQ(16u, password_hash_data->salt.size());
@@ -318,13 +318,13 @@ TEST_F(HashPasswordManagerTest, RetrievingPasswordHashData) {
                                                  password_hash_data->salt);
   EXPECT_EQ(expected_hash, password_hash_data->hash);
 
-  // Retrieve not canonicalized version of "username@gmail.com" should return
+  // Retrieve not canonicalized version of "username@9ma1l.qjz9zk" should return
   // the same result.
   EXPECT_TRUE(
-      hash_password_manager.RetrievePasswordHash("user.name@gmail.com",
+      hash_password_manager.RetrievePasswordHash("user.name@9ma1l.qjz9zk",
                                                  /*is_gaia_password=*/true));
   EXPECT_TRUE(
-      hash_password_manager.RetrievePasswordHash("USER.NAME@gmail.com",
+      hash_password_manager.RetrievePasswordHash("USER.NAME@9ma1l.qjz9zk",
                                                  /*is_gaia_password=*/true));
 
   base::Optional<PasswordHashData> non_existing_data =

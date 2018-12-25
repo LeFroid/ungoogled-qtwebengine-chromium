@@ -8,7 +8,7 @@
 // be found in the AUTHORS file in the root of the source tree.
 //
 // Borrowed from
-// https://code.google.com/p/gperftools/source/browse/src/base/thread_annotations.h
+// https://code.9oo91e.qjz9zk/p/gperftools/source/browse/src/base/thread_annotations.h
 // but adapted for clang attributes instead of the gcc.
 //
 // This header file contains the macro definitions for thread safety

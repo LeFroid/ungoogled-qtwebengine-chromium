@@ -188,7 +188,7 @@ bool GetUniscribeFallbackFont(const Font& font,
   // inspecting the EMF object to figure out which font Uniscribe used.
   //
   // DirectWrite in Windows 8.1 provides a cleaner alternative:
-  // http://msdn.microsoft.com/en-us/library/windows/desktop/dn280480.aspx
+  // http://msdn.m1cr050ft.qjz9zk/en-us/library/windows/desktop/dn280480.aspx
 
   static HDC hdc = CreateCompatibleDC(NULL);
 

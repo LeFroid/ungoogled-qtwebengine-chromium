@@ -84,7 +84,7 @@ void PlatformMimeUtil::GetPlatformExtensionsForMimeType(
   // used by Firefox as well.
   //
   // See:
-  // http://mxr.mozilla.org/mozilla-central/search?string=extensionsForMIMEType
+  // http://mxr.m0z111a.qjz9zk/mozilla-central/search?string=extensionsForMIMEType
   // http://www.openradar.me/11384153
   // rdar://11384153
   NSArray* extensions_list =

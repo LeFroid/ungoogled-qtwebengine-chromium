@@ -9,7 +9,7 @@ This file is used to generate a comprehensive list of Chrome UKM metrics
 along with a detailed description for each metric.
 
 See the following doc for details on how to add entries to this file:
-https://chromium.googlesource.com/chromium/src.git/+/master/services/metrics/ukm_api.md
+https://chromium.9oo91esource.qjz9zk/chromium/src.git/+/master/services/metrics/ukm_api.md
 
 Events may be marked with the attribute singular="True" to indicate that
 the event will only occur once per source, and multiple entries will just
@@ -31,7 +31,7 @@ be describing additional metrics about the same event.
 </event>
 
 <event name="Autofill.CardUploadDecision">
-  <owner>sebsg@chromium.org</owner>
+  <owner>sebsg@ch40m1um.qjz9zk</owner>
   <metric name="UploadDecision">
     <summary>
       Whether the upload was proposed to the user or the reasons why it was not.
@@ -41,7 +41,7 @@ be describing additional metrics about the same event.
 </event>
 
 <event name="Autofill.DeveloperEngagement">
-  <owner>jiahuiguo@google.com</owner>
+  <owner>jiahuiguo@9oo91e.qjz9zk</owner>
   <summary>
     Recorded when we parse a form to log whether developer has used autocomplete
     markup or UPI-VPA hints. The value is a bitmask of
@@ -70,7 +70,7 @@ be describing additional metrics about the same event.
 </event>
 
 <event name="Autofill.FieldFillStatus">
-  <owner>rogerm@chromium.org</owner>
+  <owner>rogerm@ch40m1um.qjz9zk</owner>
   <summary>
     Recorded when Chrome validates field type predictions (on submit, on leaving
     a form, on receiving a form with autocomplete attributes).
@@ -118,7 +118,7 @@ be describing additional metrics about the same event.
 </event>
 
 <event name="Autofill.FieldTypeValidation">
-  <owner>rogerm@chromium.org</owner>
+  <owner>rogerm@ch40m1um.qjz9zk</owner>
   <summary>
     Recorded when Chrome validates field type predictions (on submit, on leaving
     a form, on receiving a form with autocomplete attributes).
@@ -162,7 +162,7 @@ be describing additional metrics about the same event.
 </event>
 
 <event name="Autofill.HiddenRepresentationalFieldSkipDecision">
-  <owner>parastoog@chromium.org</owner>
+  <owner>parastoog@ch40m1um.qjz9zk</owner>
   <summary>
     Recorded while trying to fill or preview a hidden or a representational
     field.
@@ -223,7 +223,7 @@ be describing additional metrics about the same event.
 </event>
 
 <event name="Autofill.RepeatedServerTypePredictionRationalized">
-  <owner>parastoog@chromium.org</owner>
+  <owner>parastoog@ch40m1um.qjz9zk</owner>
   <summary>
     Recorded when a field type predicted by server is rationalized because of
     repetition.
@@ -285,7 +285,7 @@ be describing additional metrics about the same event.
 </event>
 
 <event name="Autofill.FormSubmitted">
-  <owner>jiahuiguo@google.com</owner>
+  <owner>jiahuiguo@9oo91e.qjz9zk</owner>
   <summary>
     Recorded when user submits a form.
   </summary>
@@ -320,7 +320,7 @@ be describing additional metrics about the same event.
 </event>
 
 <event name="Autofill.InteractedWithForm">
-  <owner>jiahuiguo@google.com</owner>
+  <owner>jiahuiguo@9oo91e.qjz9zk</owner>
   <summary>
     Recorded when we parse a form to log form metadata and autofill settings
     that apply to all subsequent events for this form.
@@ -354,7 +354,7 @@ be describing additional metrics about the same event.
 </event>
 
 <event name="Autofill.SelectedMaskedServerCard">
-  <owner>jiahuiguo@google.com</owner>
+  <owner>jiahuiguo@9oo91e.qjz9zk</owner>
   <metric name="MillisecondsSinceFormParsed">
     <summary>
       Time since form parse.
@@ -363,7 +363,7 @@ be describing additional metrics about the same event.
 </event>
 
 <event name="Autofill.SuggestionFilled">
-  <owner>jiahuiguo@google.com</owner>
+  <owner>jiahuiguo@9oo91e.qjz9zk</owner>
   <summary>
     Recorded when user selects a suggestion and we fill the form with that
     suggestion.
@@ -397,7 +397,7 @@ be describing additional metrics about the same event.
 </event>
 
 <event name="Autofill.SuggestionsShown">
-  <owner>jiahuiguo@google.com</owner>
+  <owner>jiahuiguo@9oo91e.qjz9zk</owner>
   <summary>
     Recorded when a suggestion is shown to user.
   </summary>
@@ -436,7 +436,7 @@ be describing additional metrics about the same event.
 </event>
 
 <event name="Autofill.TextFieldDidChange">
-  <owner>jiahuiguo@google.com</owner>
+  <owner>jiahuiguo@9oo91e.qjz9zk</owner>
   <summary>
     Recorded when user edits a text field. The text field may have been
     autofilled.
@@ -497,7 +497,7 @@ be describing additional metrics about the same event.
 </event>
 
 <event name="Blink.UpdateTime">
-  <owner>vmpstr@chromium.org</owner>
+  <owner>vmpstr@ch40m1um.qjz9zk</owner>
   <summary>
     Metrics that measure various update times in Blink. This includes paint,
     compositing, and layout update times. The metrics are recorded once per
@@ -566,7 +566,7 @@ be describing additional metrics about the same event.
 </event>
 
 <event name="Blink.UseCounter">
-  <owner>loonybear@chromium.org</owner>
+  <owner>loonybear@ch40m1um.qjz9zk</owner>
   <summary>
     Collects data for a subset of UseCounter features. When UMA UseCounter data
     shows a behaviour that is rare but too common to blindly change. This metric
@@ -581,7 +581,7 @@ be describing additional metrics about the same event.
 </event>
 
 <event name="BloatedRenderer">
-  <owner>ulan@chromium.org</owner>
+  <owner>ulan@ch40m1um.qjz9zk</owner>
   <summary>
     Metrics related to a bloated renderer that is close to out-of-memory. They
     are recorded only if the renderer process has a single page.
@@ -610,7 +610,7 @@ be describing additional metrics about the same event.
 </event>
 
 <event name="Compositor.UserInteraction">
-  <owner>khushalsagar@chromium.org</owner>
+  <owner>khushalsagar@ch40m1um.qjz9zk</owner>
   <summary>
     Metrics related to user interaction handled by the compositor. This includes
     user gestures like scrolling, pinch-zoom and page-scale animations triggered
@@ -645,7 +645,7 @@ be describing additional metrics about the same event.
 </event>
 
 <event name="Compositor.Rendering">
-  <owner>khushalsagar@chromium.org</owner>
+  <owner>khushalsagar@ch40m1um.qjz9zk</owner>
   <summary>
     Metrics related to rendering in the compositor.
   </summary>
@@ -657,7 +657,7 @@ be describing additional metrics about the same event.
 </event>
 
 <event name="ContextualSearch">
-  <owner>donnd@chromium.org</owner>
+  <owner>donnd@ch40m1um.qjz9zk</owner>
   <summary>
     Metrics related to a Contextual Search Tap event on a page, for use with
     Ranker.  These metrics are recorded each time the user triggers the
@@ -883,10 +883,10 @@ be describing additional metrics about the same event.
 </event>
 
 <event name="ContextualSuggestions">
-  <owner>donnd@chromium.org</owner>
-  <owner>fgorski@chromium.org</owner>
-  <owner>twellington@chromium.org</owner>
-  <owner>zea@chromium.org</owner>
+  <owner>donnd@ch40m1um.qjz9zk</owner>
+  <owner>fgorski@ch40m1um.qjz9zk</owner>
+  <owner>twellington@ch40m1um.qjz9zk</owner>
+  <owner>zea@ch40m1um.qjz9zk</owner>
   <summary>
     Metrics related to Contextual Suggestions shown in the Chrome Assistive
     Surface, aka EoC shown in CAS.  These metrics are recorded each time the
@@ -946,8 +946,8 @@ be describing additional metrics about the same event.
 </event>
 
 <event name="CPUUsageMeasurement">
-  <owner>chrisha@chromium.org</owner>
-  <owner>siggi@chromium.org</owner>
+  <owner>chrisha@ch40m1um.qjz9zk</owner>
+  <owner>siggi@ch40m1um.qjz9zk</owner>
   <summary>
     A CPU usage measurement that corresponds to a tick in a CPU usage
     time-series. There is also some metadata stored to determine how faithful
@@ -993,7 +993,7 @@ be describing additional metrics about the same event.
 </event>
 
 <event name="DocumentCreated">
-  <owner>beccahughes@chromium.org</owner>
+  <owner>beccahughes@ch40m1um.qjz9zk</owner>
   <summary>
     Recorded when a Document object is created and records the source ID of the
     navigation and whether the document was in the main frame. This can be used
@@ -1018,8 +1018,8 @@ be describing additional metrics about the same event.
 </event>
 
 <event name="Document.OutliveTimeAfterShutdown">
-  <owner>hajimehoshi@chromium.org</owner>
-  <owner>keishi@chromium.org</owner>
+  <owner>hajimehoshi@ch40m1um.qjz9zk</owner>
+  <owner>keishi@ch40m1um.qjz9zk</owner>
   <summary>
     Recorded when a Document object survives certain number of garbage
     collections after detached. It is expected that regular Document objects are
@@ -1036,8 +1036,8 @@ be describing additional metrics about the same event.
 </event>
 
 <event name="Download.Started">
-  <owner>jming@chromium.org</owner>
-  <owner>xingliu@chromium.org</owner>
+  <owner>jming@ch40m1um.qjz9zk</owner>
+  <owner>xingliu@ch40m1um.qjz9zk</owner>
   <summary>
     Metrics taken when a download begins. It has one Download.Ended and none to
     multiple Download.Interrupted/Download.Resumed events associated with it.
@@ -1061,8 +1061,8 @@ be describing additional metrics about the same event.
 </event>
 
 <event name="Download.Completed">
-  <owner>jming@chromium.org</owner>
-  <owner>xingliu@chromium.org</owner>
+  <owner>jming@ch40m1um.qjz9zk</owner>
+  <owner>xingliu@ch40m1um.qjz9zk</owner>
   <summary>
     Metrics taken when a download completes. Its parent event is
     Download.Started.
@@ -1093,8 +1093,8 @@ be describing additional metrics about the same event.
 </event>
 
 <event name="Download.Interrupted">
-  <owner>jming@chromium.org</owner>
-  <owner>xingliu@chromium.org</owner>
+  <owner>jming@ch40m1um.qjz9zk</owner>
+  <owner>xingliu@ch40m1um.qjz9zk</owner>
   <summary>
     Metrics taken when a download is interrupted. Its parent event is
     Download.Started.
@@ -1138,8 +1138,8 @@ be describing additional metrics about the same event.
 </event>
 
 <event name="Download.Resumed">
-  <owner>jming@chromium.org</owner>
-  <owner>xingliu@chromium.org</owner>
+  <owner>jming@ch40m1um.qjz9zk</owner>
+  <owner>xingliu@ch40m1um.qjz9zk</owner>
   <summary>
     Metrics taken when a download is resumed. Its parent event is
     Download.Started.
@@ -1164,7 +1164,7 @@ be describing additional metrics about the same event.
 </event>
 
 <event name="Event.ScrollUpdate.Touch">
-  <owner>nzolghadr@chromium.org</owner>
+  <owner>nzolghadr@ch40m1um.qjz9zk</owner>
   <summary>
     Metrics related to a scroll action caused by the generated ScrollUpdate
     gesture event.
@@ -1192,7 +1192,7 @@ be describing additional metrics about the same event.
 </event>
 
 <event name="Event.ScrollBegin.Touch">
-  <owner>nzolghadr@chromium.org</owner>
+  <owner>nzolghadr@ch40m1um.qjz9zk</owner>
   <summary>
     Metrics related to first scroll action caused by the generated ScrollUpdate
     gesture event.
@@ -1222,8 +1222,8 @@ be describing additional metrics about the same event.
 </event>
 
 <event name="Event.ScrollUpdate.Wheel">
-  <owner>nzolghadr@chromium.org</owner>
-  <owner>tdresser@chromium.org</owner>
+  <owner>nzolghadr@ch40m1um.qjz9zk</owner>
+  <owner>tdresser@ch40m1um.qjz9zk</owner>
   <summary>
     Metrics related to a scroll action caused by the generated ScrollUpdate
     gesture event.
@@ -1252,7 +1252,7 @@ be describing additional metrics about the same event.
 </event>
 
 <event name="Event.ScrollBegin.Wheel">
-  <owner>nzolghadr@chromium.org</owner>
+  <owner>nzolghadr@ch40m1um.qjz9zk</owner>
   <summary>
     Metrics related to first scroll action caused by the generated ScrollUpdate
     gesture event.
@@ -1282,7 +1282,7 @@ be describing additional metrics about the same event.
 </event>
 
 <event name="Intervention.DocumentWrite.ScriptBlock" singular="True">
-  <owner>bmcquade@chromium.org</owner>
+  <owner>bmcquade@ch40m1um.qjz9zk</owner>
   <summary>
     Recorded for page loads where the document.write script block intervention
     could apply.
@@ -1310,8 +1310,8 @@ be describing additional metrics about the same event.
 </event>
 
 <event name="Layout.DisplayCutout.StateChanged">
-  <owner>beccahughes@chromium.org</owner>
-  <owner>media-dev@chromium.org</owner>
+  <owner>beccahughes@ch40m1um.qjz9zk</owner>
+  <owner>media-dev@ch40m1um.qjz9zk</owner>
   <summary>
     Recorded every time the ViewportFit that is supplied by a frame changes or
     the fullscreen state of a frame or its parent WebContents changes.
@@ -1357,8 +1357,8 @@ be describing additional metrics about the same event.
 </event>
 
 <event name="LocalNetworkRequests">
-  <owner>uthakore@chromium.org</owner>
-  <owner>invernizzi@chromium.org</owner>
+  <owner>uthakore@ch40m1um.qjz9zk</owner>
+  <owner>invernizzi@ch40m1um.qjz9zk</owner>
   <summary>
     Metrics that describe the resource request behavior of pages for which
     navigation successfully commits. A separate entry is generated for every
@@ -1404,8 +1404,8 @@ be describing additional metrics about the same event.
 </event>
 
 <event name="Media.Autoplay.Attempt">
-  <owner>mlamouri@chromium.org</owner>
-  <owner>media-dev@chromium.org</owner>
+  <owner>mlamouri@ch40m1um.qjz9zk</owner>
+  <owner>media-dev@ch40m1um.qjz9zk</owner>
   <summary>
     Event recorded when there is an attempt to autoplay (ie. no user gesture).
     It will be recorded regardless of the result of this attempt.
@@ -1454,8 +1454,8 @@ be describing additional metrics about the same event.
 </event>
 
 <event name="Media.Autoplay.AudioContext">
-  <owner>mlamouri@chromium.org</owner>
-  <owner>media-dev@chromium.org</owner>
+  <owner>mlamouri@ch40m1um.qjz9zk</owner>
+  <owner>media-dev@ch40m1um.qjz9zk</owner>
   <summary>
     Records the AudioContext autoplay information.
   </summary>
@@ -1481,8 +1481,8 @@ be describing additional metrics about the same event.
 </event>
 
 <event name="Media.Autoplay.Muted.UnmuteAction">
-  <owner>mlamouri@chromium.org</owner>
-  <owner>media-dev@chromium.org</owner>
+  <owner>mlamouri@ch40m1um.qjz9zk</owner>
+  <owner>media-dev@ch40m1um.qjz9zk</owner>
   <summary>
     Event recorded when there is an attempt to unmute an media that was
     autoplaying following the rules of autoplay muted.
@@ -1503,8 +1503,8 @@ be describing additional metrics about the same event.
 </event>
 
 <event name="Media.Engagement.ShortPlaybackIgnored">
-  <owner>beccahughes@chromium.org</owner>
-  <owner>media-dev@chromium.org</owner>
+  <owner>beccahughes@ch40m1um.qjz9zk</owner>
+  <owner>media-dev@ch40m1um.qjz9zk</owner>
   <summary>
     The Media Engagement index stores the number of significant media playbacks
     per origin and the number of audible players. From that we calculate a Media
@@ -1519,8 +1519,8 @@ be describing additional metrics about the same event.
 </event>
 
 <event name="Media.Engagement.SessionFinished">
-  <owner>beccahughes@chromium.org</owner>
-  <owner>media-dev@chromium.org</owner>
+  <owner>beccahughes@ch40m1um.qjz9zk</owner>
+  <owner>media-dev@ch40m1um.qjz9zk</owner>
   <summary>
     The Media Engagement index stores the number of significant media playbacks
     per origin and the number of visits. From that we calculate a Media
@@ -1614,8 +1614,8 @@ be describing additional metrics about the same event.
 </event>
 
 <event name="Media.SiteMuted" singular="True">
-  <owner>steimel@chromium.org</owner>
-  <owner>media-dev@chromium.org</owner>
+  <owner>steimel@ch40m1um.qjz9zk</owner>
+  <owner>media-dev@ch40m1um.qjz9zk</owner>
   <summary>
     Event recorded when a website tries to play audio but is muted by the sound
     content setting.
@@ -1632,7 +1632,7 @@ be describing additional metrics about the same event.
   <obsolete>
     Deprecated 8/2017 in favor Media.BasicPlayback
   </obsolete>
-  <owner>dalecurtis@chromium.org</owner>
+  <owner>dalecurtis@ch40m1um.qjz9zk</owner>
   <summary>
     Watch time is defined as the amount of elapsed media time for audio+video
     media aggregated per player instance. A minimum of 7 seconds of unmuted,
@@ -1680,8 +1680,8 @@ be describing additional metrics about the same event.
 </event>
 
 <event name="Media.WebMediaPlayerState">
-  <owner>dalecurtis@chromium.org</owner>
-  <owner>media-dev@chromium.org</owner>
+  <owner>dalecurtis@ch40m1um.qjz9zk</owner>
+  <owner>media-dev@ch40m1um.qjz9zk</owner>
   <summary>
     Final state of WebMediaPlayerImpl instance. Records only immutable playback
     properties. Contains a PlaybackID which links to Media.BasicPlayback events.
@@ -1740,8 +1740,8 @@ be describing additional metrics about the same event.
 </event>
 
 <event name="Media.BasicPlayback">
-  <owner>dalecurtis@chromium.org</owner>
-  <owner>media-dev@chromium.org</owner>
+  <owner>dalecurtis@ch40m1um.qjz9zk</owner>
+  <owner>media-dev@ch40m1um.qjz9zk</owner>
   <summary>
     Core metrics associated with a media playback through WebMediaPlayerImpl.
     Reported at the time of WatchTimeRecorder destruction or render process
@@ -1913,8 +1913,8 @@ be describing additional metrics about the same event.
 </event>
 
 <event name="Media.VideoDecodePerfRecord">
-  <owner>chcunningham@chromium.org</owner>
-  <owner>media-dev@chromium.org</owner>
+  <owner>chcunningham@ch40m1um.qjz9zk</owner>
+  <owner>media-dev@ch40m1um.qjz9zk</owner>
   <summary>
     A record of decoding performance metrics from a video playback with the
     given stream characteristics (profile, resolution, fps). Also includes what
@@ -2022,8 +2022,8 @@ be describing additional metrics about the same event.
 </event>
 
 <event name="Memory.Experimental">
-  <owner>erikchen@chromium.org</owner>
-  <owner>ssid@chromium.org</owner>
+  <owner>erikchen@ch40m1um.qjz9zk</owner>
+  <owner>ssid@ch40m1um.qjz9zk</owner>
   <summary>
     Metrics associated with memory consumption, in MB.
   </summary>
@@ -2344,7 +2344,7 @@ be describing additional metrics about the same event.
 </event>
 
 <event name="OfflinePages.SavePageRequested">
-  <owner>petewil@chromium.org</owner>
+  <owner>petewil@ch40m1um.qjz9zk</owner>
   <metric name="RequestedFromForeground">
     <summary>
       Metrics that measure which URLs the user is requesting offline page copies
@@ -2355,8 +2355,8 @@ be describing additional metrics about the same event.
 </event>
 
 <event name="PageDomainInfo">
-  <owner>uthakore@chromium.org</owner>
-  <owner>invernizzi@chromium.org</owner>
+  <owner>uthakore@ch40m1um.qjz9zk</owner>
+  <owner>invernizzi@ch40m1um.qjz9zk</owner>
   <summary>
     Metrics that describe the domain of pages that successfully commit. One
     event is generated per page load that commits. Currently associated with
@@ -2374,7 +2374,7 @@ be describing additional metrics about the same event.
 </event>
 
 <event name="PageLoad" singular="True">
-  <owner>bmcquade@chromium.org</owner>
+  <owner>bmcquade@ch40m1um.qjz9zk</owner>
   <summary>
     Core metrics associated with web page loads.
   </summary>
@@ -2448,7 +2448,7 @@ be describing additional metrics about the same event.
     </summary>
   </metric>
   <metric name="Net.DownstreamKbpsEstimate.OnNavigationStart">
-    <owner>tbansal@chromium.org</owner>
+    <owner>tbansal@ch40m1um.qjz9zk</owner>
     <summary>
       The downstream throughput (in kilobits per second) for this page load, at
       the time the navigation for this page load was initiated.
@@ -2536,7 +2536,7 @@ be describing additional metrics about the same event.
 </event>
 
 <event name="PageLoadCapping" singular="True">
-  <owner>ryansturm@chromium.org</owner>
+  <owner>ryansturm@ch40m1um.qjz9zk</owner>
   <summary>
     Metrics related to PageLoadCapping that are recorded using the same UKM IDs
     as PageLoad.
@@ -2551,23 +2551,23 @@ be describing additional metrics about the same event.
 </event>
 
 <event name="PageLoad.FromGoogleSearch" singular="True">
-  <owner>bmcquade@chromium.org</owner>
-  <owner>mushan@chromium.org</owner>
+  <owner>bmcquade@ch40m1um.qjz9zk</owner>
+  <owner>mushan@ch40m1um.qjz9zk</owner>
   <summary>
     Recorded for page loads that were navigated to via Google Search.
   </summary>
 </event>
 
 <event name="PageLoad.ServiceWorkerControlled" singular="True">
-  <owner>bmcquade@chromium.org</owner>
-  <owner>falken@chromium.org</owner>
+  <owner>bmcquade@ch40m1um.qjz9zk</owner>
+  <owner>falken@ch40m1um.qjz9zk</owner>
   <summary>
     Recorded for page loads controlled by a service worker.
   </summary>
 </event>
 
 <event name="PasswordForm">
-  <owner>battre@chromium.org</owner>
+  <owner>battre@ch40m1um.qjz9zk</owner>
   <summary>
     Metrics about password forms on websites and the user's interactions with
     them. A separate event is generated for each password form discovered on a
@@ -2832,7 +2832,7 @@ be describing additional metrics about the same event.
 </event>
 
 <event name="PageWithPassword">
-  <owner>battre@chromium.org</owner>
+  <owner>battre@ch40m1um.qjz9zk</owner>
   <summary>
     Metrics about websites that contain password forms and the user's
     interactions with them. No events are created for pages that don't contain
@@ -2863,7 +2863,7 @@ be describing additional metrics about the same event.
 </event>
 
 <event name="PaymentRequest.CheckoutEvents">
-  <owner>sebsg@chromium.org</owner>
+  <owner>sebsg@ch40m1um.qjz9zk</owner>
   <metric name="CompletionStatus">
     <summary>
       How the Payment Request ended. Values defined in the CompletionStatus enum
@@ -2880,7 +2880,7 @@ be describing additional metrics about the same event.
 </event>
 
 <event name="Permission">
-  <owner>timloh@chromium.org</owner>
+  <owner>timloh@ch40m1um.qjz9zk</owner>
   <summary>
     Metrics for when a user's permission actions. Currently we only log when a
     permission prompt is resolved. Grouped (microphone+camera) permission
@@ -2924,14 +2924,14 @@ be describing additional metrics about the same event.
 </event>
 
 <event name="Plugins.FlashInstance">
-  <owner>tommycli@chromium.org</owner>
+  <owner>tommycli@ch40m1um.qjz9zk</owner>
   <summary>
     Recorded when a Flash object instance is created.
   </summary>
 </event>
 
 <event name="Previews" singular="True">
-  <owner>ryansturm@chromium.org</owner>
+  <owner>ryansturm@ch40m1um.qjz9zk</owner>
   <summary>
     Previews related metrics associated with a page load. See
     //componenets/previews/.
@@ -2980,8 +2980,8 @@ be describing additional metrics about the same event.
 </event>
 
 <event name="ResponsivenessMeasurement">
-  <owner>npm@chromium.org</owner>
-  <owner>tdresser@chromium.org</owner>
+  <owner>npm@ch40m1um.qjz9zk</owner>
+  <owner>tdresser@ch40m1um.qjz9zk</owner>
   <summary>
     Responsiveness metrics recorded once every 5 seconds.
   </summary>
@@ -2996,7 +2996,7 @@ be describing additional metrics about the same event.
 </event>
 
 <event name="RendererSchedulerTask">
-  <owner>altimin@chromium.org</owner>
+  <owner>altimin@ch40m1um.qjz9zk</owner>
   <summary>
     Sampled task from the renderer main thread. Sample rate is controlled
     dynamically. See
@@ -3069,7 +3069,7 @@ be describing additional metrics about the same event.
 </event>
 
 <event name="Pepper.Broker" singular="True">
-  <owner>raymes@chromium.org</owner>
+  <owner>raymes@ch40m1um.qjz9zk</owner>
   <summary>
     Event recorded when a flash instance connects to the broker, resulting in a
     channel being opened to the broker process.
@@ -3077,8 +3077,8 @@ be describing additional metrics about the same event.
 </event>
 
 <event name="Popup.Closed">
-  <owner>csharrison@chromium.org</owner>
-  <owner>jkarlin@chromium.org</owner>
+  <owner>csharrison@ch40m1um.qjz9zk</owner>
+  <owner>jkarlin@ch40m1um.qjz9zk</owner>
   <summary>
     A popup window was closed.
   </summary>
@@ -3097,7 +3097,7 @@ be describing additional metrics about the same event.
 </event>
 
 <event name="ScreenBrightness">
-  <owner>pdyson@chromium.org</owner>
+  <owner>pdyson@ch40m1um.qjz9zk</owner>
   <summary>
     Collects metrics periodically and on screen brightness change.
   </summary>
@@ -3276,8 +3276,8 @@ be describing additional metrics about the same event.
 </event>
 
 <event name="Security.SiteEngagement">
-  <owner>cthomp@chromium.org</owner>
-  <owner>enamelites@google.com</owner>
+  <owner>cthomp@ch40m1um.qjz9zk</owner>
+  <owner>enamelites@9oo91e.qjz9zk</owner>
   <summary>
     Site engagement score behavior for a page with a given Security Level.
   </summary>
@@ -3311,8 +3311,8 @@ be describing additional metrics about the same event.
 </event>
 
 <event name="SiteIsolation.XSD.Browser.Blocked">
-  <owner>creis@chromium.org</owner>
-  <owner>chrome-site-isolation@google.com</owner>
+  <owner>creis@ch40m1um.qjz9zk</owner>
+  <owner>chrome-site-isolation@9oo91e.qjz9zk</owner>
   <summary>
     Resource request response was blocked by the cross-site document blocking
     logic in the browser process.
@@ -3349,8 +3349,8 @@ be describing additional metrics about the same event.
 </event>
 
 <event name="SubresourceFilter" singular="True">
-  <owner>bmcquade@chromium.org</owner>
-  <owner>csharrison@chromium.org</owner>
+  <owner>bmcquade@ch40m1um.qjz9zk</owner>
+  <owner>csharrison@ch40m1um.qjz9zk</owner>
   <summary>
     Recorded for page loads where subresource filtering policy was evaluated.
   </summary>
@@ -3373,7 +3373,7 @@ be describing additional metrics about the same event.
 </event>
 
 <event name="Tab.RendererOOM">
-  <owner>ssid@chromium.org</owner>
+  <owner>ssid@ch40m1um.qjz9zk</owner>
   <summary>
     Metrics about renderer OOM, recorded for each detected OOM of renderer
     process.
@@ -3388,7 +3388,7 @@ be describing additional metrics about the same event.
 </event>
 
 <event name="Translate">
-  <owner>hamelphi@chromium.org</owner>
+  <owner>hamelphi@ch40m1um.qjz9zk</owner>
   <summary>
     Metrics related to a Translate event. These metrics are described in
     TranslateEventProto.
@@ -3405,8 +3405,8 @@ be describing additional metrics about the same event.
 </event>
 
 <event name="TabManager.Background.FirstAlertFired">
-  <owner>chrisha@chromium.org</owner>
-  <owner>lpy@chromium.org</owner>
+  <owner>chrisha@ch40m1um.qjz9zk</owner>
+  <owner>lpy@ch40m1um.qjz9zk</owner>
   <summary>
     Collects the duration in MS from when the tab is backgrounded to when a
     JavaScript alert is fired. Only recorded when the tab is in the background.
@@ -3424,8 +3424,8 @@ be describing additional metrics about the same event.
 </event>
 
 <event name="TabManager.Background.FirstAudioStarts">
-  <owner>chrisha@chromium.org</owner>
-  <owner>lpy@chromium.org</owner>
+  <owner>chrisha@ch40m1um.qjz9zk</owner>
+  <owner>lpy@ch40m1um.qjz9zk</owner>
   <summary>
     Collects the duration in MS from when the tab is backgrounded to when audio
     starts to play. Only recorded when the tab is in the background.
@@ -3444,8 +3444,8 @@ be describing additional metrics about the same event.
 </event>
 
 <event name="TabManager.Background.FirstFaviconUpdated">
-  <owner>chrisha@chromium.org</owner>
-  <owner>lpy@chromium.org</owner>
+  <owner>chrisha@ch40m1um.qjz9zk</owner>
+  <owner>lpy@ch40m1um.qjz9zk</owner>
   <summary>
     Collects the duration in MS from when the tab is backgrounded to when the
     favicon is updated. Only recorded when the tab is in the background.
@@ -3459,8 +3459,8 @@ be describing additional metrics about the same event.
 </event>
 
 <event name="TabManager.Background.FirstNonPersistentNotificationCreated">
-  <owner>chrisha@chromium.org</owner>
-  <owner>lpy@chromium.org</owner>
+  <owner>chrisha@ch40m1um.qjz9zk</owner>
+  <owner>lpy@ch40m1um.qjz9zk</owner>
   <summary/>
   <metric name="IsMainFrame">
     <summary>
@@ -3476,8 +3476,8 @@ be describing additional metrics about the same event.
 </event>
 
 <event name="TabManager.Background.FirstTitleUpdated">
-  <owner>chrisha@chromium.org</owner>
-  <owner>lpy@chromium.org</owner>
+  <owner>chrisha@ch40m1um.qjz9zk</owner>
+  <owner>lpy@ch40m1um.qjz9zk</owner>
   <summary>
     Collects the duration in MS from when the tab is backgrounded to when the
     title is updated. Only recorded when the tab is in the background.
@@ -3491,7 +3491,7 @@ be describing additional metrics about the same event.
 </event>
 
 <event name="TabManager.Background.ForegroundedOrClosed">
-  <owner>chrisha@chromium.org</owner>
+  <owner>chrisha@ch40m1um.qjz9zk</owner>
   <summary>
     Collects the duration in MS from when the tab is backgrounded to when it is
     brought to foreground or closed.
@@ -3532,7 +3532,7 @@ be describing additional metrics about the same event.
 
 <event
     name="TabManager.BackgroundTabOpening.ForegroundTab.ExpectedTaskQueueingDurationInfo">
-  <owner>chrisha@chromium.org</owner>
+  <owner>chrisha@ch40m1um.qjz9zk</owner>
   <summary>
     Collects the expected queueing duration of tasks and metadata for the
     foreground tab during a background tab opening session (the duration of time
@@ -3582,8 +3582,8 @@ be describing additional metrics about the same event.
 </event>
 
 <event name="TabManager.LifecycleStateChange">
-  <owner>chrisha@chromium.org</owner>
-  <owner>fdoray@chromium.org</owner>
+  <owner>chrisha@ch40m1um.qjz9zk</owner>
+  <owner>fdoray@ch40m1um.qjz9zk</owner>
   <summary>
     Collects information about when and why a lifecycle state change was
     attempted, and information about the outcome of the attempt.
@@ -3787,7 +3787,7 @@ be describing additional metrics about the same event.
 </event>
 
 <event name="TabManager.WindowMetrics">
-  <owner>michaelpg@chromium.org</owner>
+  <owner>michaelpg@ch40m1um.qjz9zk</owner>
   <summary>
     Collects information about a browser or app window to associate with the
     TabManager.TabMetrics entries for tabs in that window.
@@ -3826,7 +3826,7 @@ be describing additional metrics about the same event.
 
 <event name="TabManager.Experimental.BackgroundTabOpening.TabSwitchLoadStopped"
     singular="True">
-  <owner>zhenw@chromium.org</owner>
+  <owner>zhenw@ch40m1um.qjz9zk</owner>
   <summary>
     Collects data when a tab is switched to from another tab and then finishes
     loading in the foreground during a background tab opening session (the
@@ -3877,7 +3877,7 @@ be describing additional metrics about the same event.
 
 <event name="TabManager.Experimental.SessionRestore.ForegroundTab.PageLoad"
     singular="True">
-  <owner>zhenw@chromium.org</owner>
+  <owner>zhenw@ch40m1um.qjz9zk</owner>
   <summary>
     Collects the tab counts for the foreground tab page load during session
     restore. The event is not recorded when the session overlaps with background
@@ -3897,7 +3897,7 @@ be describing additional metrics about the same event.
 
 <event name="TabManager.Experimental.SessionRestore.TabSwitchLoadStopped"
     singular="True">
-  <owner>zhenw@chromium.org</owner>
+  <owner>zhenw@ch40m1um.qjz9zk</owner>
   <summary>
     Collects data when a tab is switched to from another tab and then finishes
     loading in the foreground during session restore The event is only recorded
@@ -3940,7 +3940,7 @@ be describing additional metrics about the same event.
 
 <event
     name="TabManager.SessionRestore.ForegroundTab.ExpectedTaskQueueingDurationInfo">
-  <owner>zhenw@chromium.org</owner>
+  <owner>zhenw@ch40m1um.qjz9zk</owner>
   <summary>
     Collects the expected queueing duration of tasks and metadata for the
     foreground tab during session restore. The event is not recorded when the
@@ -3981,7 +3981,7 @@ be describing additional metrics about the same event.
 </event>
 
 <event name="TabManager.TabLifetime" singular="True">
-  <owner>chrisha@chromium.org</owner>
+  <owner>chrisha@ch40m1um.qjz9zk</owner>
   <summary>
     Collected when a tab is closed, at most once per source.
   </summary>
@@ -3995,14 +3995,14 @@ be describing additional metrics about the same event.
 </event>
 
 <event name="TrustedWebActivity.Open" singular="True">
-  <owner>peconn@chromium.org</owner>
+  <owner>peconn@ch40m1um.qjz9zk</owner>
   <summary>
     Collected when a page is opened in a Trusted Web Activity.
   </summary>
 </event>
 
 <event name="UserActivity">
-  <owner>jiameng@chromium.org</owner>
+  <owner>jiameng@ch40m1um.qjz9zk</owner>
   <summary>
     Collects user activity events after staying idle for a short period of time.
   </summary>
@@ -4205,7 +4205,7 @@ be describing additional metrics about the same event.
 </event>
 
 <event name="UserActivityId">
-  <owner>jiameng@chromium.org</owner>
+  <owner>jiameng@ch40m1um.qjz9zk</owner>
   <summary>
     Records an activity that happened while a page was open.
   </summary>
@@ -4256,7 +4256,7 @@ be describing additional metrics about the same event.
 </event>
 
 <event name="TabManager.TabMetrics">
-  <owner>michaelpg@chromium.org</owner>
+  <owner>michaelpg@ch40m1um.qjz9zk</owner>
   <summary>
     Collects tab information for a tab after navigations, activations and close
     events.
@@ -4365,7 +4365,7 @@ be describing additional metrics about the same event.
 </event>
 
 <event name="XR.WebXR" singular="True">
-  <owner>billorr@chromium.org</owner>
+  <owner>billorr@ch40m1um.qjz9zk</owner>
   <metric name="DidGetGamepads">
     <summary>
       Boolean value that indicates that the Gamepad API was used on a WebXR
@@ -4412,7 +4412,7 @@ be describing additional metrics about the same event.
 </event>
 
 <event name="XR.PageSession" singular="True">
-  <owner>offenwanger@chromium.org</owner>
+  <owner>offenwanger@ch40m1um.qjz9zk</owner>
   <summary>
     Records properties of page use in XR, including VR browsing and WebXR
     presentation.
@@ -4459,7 +4459,7 @@ be describing additional metrics about the same event.
 </event>
 
 <event name="XR.WebXR.PresentationSession">
-  <owner>offenwanger@chromium.org</owner>
+  <owner>offenwanger@ch40m1um.qjz9zk</owner>
   <summary>
     Records data for a presentation session, where WebXR is running an exclusive
     presentation to some device.
@@ -4487,7 +4487,7 @@ be describing additional metrics about the same event.
 </event>
 
 <event name="VirtualKeyboard.Open">
-  <owner>shend@chromium.org</owner>
+  <owner>shend@ch40m1um.qjz9zk</owner>
   <summary>
     Collects the used input types with the Virtual Keyboard.
   </summary>

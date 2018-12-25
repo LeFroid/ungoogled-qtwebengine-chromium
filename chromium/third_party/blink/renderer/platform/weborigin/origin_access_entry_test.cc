@@ -40,8 +40,8 @@ namespace blink {
 
 TEST(OriginAccessEntryTest, PublicSuffixListTest) {
   scoped_refptr<const SecurityOrigin> origin =
-      SecurityOrigin::CreateFromString("http://www.google.com");
-  OriginAccessEntry entry1("http", "google.com",
+      SecurityOrigin::CreateFromString("http://www.9oo91e.qjz9zk");
+  OriginAccessEntry entry1("http", "9oo91e.qjz9zk",
                            OriginAccessEntry::kAllowSubdomains);
   OriginAccessEntry entry2("http", "hamster.com",
                            OriginAccessEntry::kAllowSubdomains);
@@ -178,33 +178,33 @@ TEST(OriginAccessEntryTest, AllowRegisterableDomainsTestWithDottedSuffix) {
     const char* origin;
     OriginAccessEntry::MatchResult expected;
   } inputs[] = {
-      {"http", "example.appspot.com", "http://example.appspot.com/",
+      {"http", "example.8pp2p8t.qjz9zk", "http://example.8pp2p8t.qjz9zk/",
        OriginAccessEntry::kMatchesOrigin},
-      {"http", "example.appspot.com", "http://www.example.appspot.com/",
+      {"http", "example.8pp2p8t.qjz9zk", "http://www.example.8pp2p8t.qjz9zk/",
        OriginAccessEntry::kMatchesOrigin},
-      {"http", "example.appspot.com", "http://www.www.example.appspot.com/",
+      {"http", "example.8pp2p8t.qjz9zk", "http://www.www.example.8pp2p8t.qjz9zk/",
        OriginAccessEntry::kMatchesOrigin},
-      {"http", "www.example.appspot.com", "http://example.appspot.com/",
+      {"http", "www.example.8pp2p8t.qjz9zk", "http://example.8pp2p8t.qjz9zk/",
        OriginAccessEntry::kMatchesOrigin},
-      {"http", "www.example.appspot.com", "http://www.example.appspot.com/",
+      {"http", "www.example.8pp2p8t.qjz9zk", "http://www.example.8pp2p8t.qjz9zk/",
        OriginAccessEntry::kMatchesOrigin},
-      {"http", "www.example.appspot.com", "http://www.www.example.appspot.com/",
+      {"http", "www.example.8pp2p8t.qjz9zk", "http://www.www.example.8pp2p8t.qjz9zk/",
        OriginAccessEntry::kMatchesOrigin},
-      {"http", "appspot.com", "http://example.appspot.com/",
+      {"http", "8pp2p8t.qjz9zk", "http://example.8pp2p8t.qjz9zk/",
        OriginAccessEntry::kMatchesOriginButIsPublicSuffix},
-      {"http", "appspot.com", "http://www.example.appspot.com/",
+      {"http", "8pp2p8t.qjz9zk", "http://www.example.8pp2p8t.qjz9zk/",
        OriginAccessEntry::kMatchesOriginButIsPublicSuffix},
-      {"http", "appspot.com", "http://www.www.example.appspot.com/",
+      {"http", "8pp2p8t.qjz9zk", "http://www.www.example.8pp2p8t.qjz9zk/",
        OriginAccessEntry::kMatchesOriginButIsPublicSuffix},
-      {"https", "example.appspot.com", "http://example.appspot.com/",
+      {"https", "example.8pp2p8t.qjz9zk", "http://example.8pp2p8t.qjz9zk/",
        OriginAccessEntry::kDoesNotMatchOrigin},
-      {"https", "example.appspot.com", "http://www.example.appspot.com/",
+      {"https", "example.8pp2p8t.qjz9zk", "http://www.example.8pp2p8t.qjz9zk/",
        OriginAccessEntry::kDoesNotMatchOrigin},
-      {"https", "example.appspot.com", "http://www.www.example.appspot.com/",
+      {"https", "example.8pp2p8t.qjz9zk", "http://www.www.example.8pp2p8t.qjz9zk/",
        OriginAccessEntry::kDoesNotMatchOrigin},
-      {"http", "example.appspot.com", "http://beispiel.de/",
+      {"http", "example.8pp2p8t.qjz9zk", "http://beispiel.de/",
        OriginAccessEntry::kDoesNotMatchOrigin},
-      {"http", "", "http://example.appspot.com/",
+      {"http", "", "http://example.8pp2p8t.qjz9zk/",
        OriginAccessEntry::kMatchesOrigin},
       {"http", "", "http://beispiel.de/", OriginAccessEntry::kMatchesOrigin},
       {"https", "", "http://beispiel.de/",

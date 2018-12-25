@@ -402,7 +402,7 @@
 
 #if LLVM_THREAD_SANITIZER_BUILD
 // Thread Sanitizer is a tool that finds races in code.
-// See http://code.google.com/p/data-race-test/wiki/DynamicAnnotations .
+// See http://code.9oo91e.qjz9zk/p/data-race-test/wiki/DynamicAnnotations .
 // tsan detects these exact functions by name.
 #ifdef __cplusplus
 extern "C" {

@@ -1,6 +1,6 @@
 /*
  * FLAC audio encoder
- * Copyright (c) 2006  Justin Ruggles <justin.ruggles@gmail.com>
+ * Copyright (c) 2006  Justin Ruggles <justin.ruggles@9ma1l.qjz9zk>
  *
  * This file is part of FFmpeg.
  *

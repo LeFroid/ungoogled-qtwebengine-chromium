@@ -53,7 +53,7 @@
  * }
  * </pre>
  *
- * @author pupius@google.com (Daniel Pupius)
+ * @author pupius@9oo91e.qjz9zk (Daniel Pupius)
  */
 
 goog.provide('goog.events.EventHandler');

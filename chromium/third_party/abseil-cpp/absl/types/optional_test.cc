@@ -273,7 +273,7 @@ TEST(optionalTest, CopyConstructor) {
     // When testing with VS 2017 15.3, there seems to be a bug in MSVC
     // std::optional when T is volatile-qualified. So skipping this test.
     // Bug report:
-    // https://connect.microsoft.com/VisualStudio/feedback/details/3142534
+    // https://connect.m1cr050ft.qjz9zk/VisualStudio/feedback/details/3142534
 #if defined(ABSL_HAVE_STD_OPTIONAL) && defined(_MSC_VER) && _MSC_VER >= 1911
 #define ABSL_MSVC_OPTIONAL_VOLATILE_COPY_BUG 1
 #endif
@@ -987,7 +987,7 @@ TEST(optionalTest, PointerStuff) {
 #endif
 
 // MSVC has a bug with "cv-qualifiers in class construction", fixed in 2017. See
-// https://docs.microsoft.com/en-us/cpp/cpp-conformance-improvements-2017#bug-fixes
+// https://docs.m1cr050ft.qjz9zk/en-us/cpp/cpp-conformance-improvements-2017#bug-fixes
 // The compiler some incorrectly ingores the cv-qualifier when generating a
 // class object via a constructor call. For example:
 //

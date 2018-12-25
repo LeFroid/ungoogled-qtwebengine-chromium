@@ -22,7 +22,7 @@
  * DEALINGS IN THE SOFTWARE.
  *
  * Authors:
- *    Benjamin Franzke <benjaminfranzke@googlemail.com>
+ *    Benjamin Franzke <benjaminfranzke@9oo91email.qjz9zk>
  */
 
 #define _BSD_SOURCE

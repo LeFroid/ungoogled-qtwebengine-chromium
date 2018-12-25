@@ -9,8 +9,8 @@
 //
 // main entry for the decoder
 //
-// Authors: Vikas Arora (vikaas.arora@gmail.com)
-//          Jyrki Alakuijala (jyrki@google.com)
+// Authors: Vikas Arora (vikaas.arora@9ma1l.qjz9zk)
+//          Jyrki Alakuijala (jyrki@9oo91e.qjz9zk)
 
 #include <stdlib.h>
 

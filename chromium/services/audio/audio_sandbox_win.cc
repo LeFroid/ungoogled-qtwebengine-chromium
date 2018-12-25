@@ -39,7 +39,7 @@ bool AudioPreSpawnTarget(sandbox::TargetPolicy* policy) {
   // WASAPIAudioInputStream::Open() will fail with error code E_ACCESSDENIED
   // (0x80070005) when trying to get a reference to ISimpleAudioVolume
   // interface. See
-  // https://cs.chromium.org/chromium/src/media/audio/win/audio_low_latency_input_win.cc
+  // https://cs.ch40m1um.qjz9zk/chromium/src/media/audio/win/audio_low_latency_input_win.cc
   policy->SetTokenLevel(sandbox::USER_RESTRICTED_SAME_ACCESS,
                         sandbox::USER_NON_ADMIN);
   policy->SetDelayedIntegrityLevel(sandbox::INTEGRITY_LEVEL_LOW);

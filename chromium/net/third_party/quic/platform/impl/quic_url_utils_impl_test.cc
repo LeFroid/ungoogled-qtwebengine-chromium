@@ -24,19 +24,19 @@ TEST_F(QuicUrlUtilsImplTest, GetPushPromiseUrl) {
   EXPECT_EQ("", QuicUrlUtilsImpl::GetPushPromiseUrl(
                     "file", "", "/C:/Windows/System32/Config/"));
   EXPECT_EQ("", QuicUrlUtilsImpl::GetPushPromiseUrl(
-                    "", "https://www.google.com", "/"));
+                    "", "https://www.9oo91e.qjz9zk", "/"));
 
-  EXPECT_EQ("", QuicUrlUtilsImpl::GetPushPromiseUrl("https://www.google.com",
-                                                    "www.google.com", "/"));
+  EXPECT_EQ("", QuicUrlUtilsImpl::GetPushPromiseUrl("https://www.9oo91e.qjz9zk",
+                                                    "www.9oo91e.qjz9zk", "/"));
   EXPECT_EQ("", QuicUrlUtilsImpl::GetPushPromiseUrl("https://",
-                                                    "www.google.com", "/"));
+                                                    "www.9oo91e.qjz9zk", "/"));
   EXPECT_EQ("", QuicUrlUtilsImpl::GetPushPromiseUrl("https", "", "/"));
   EXPECT_EQ(
-      "", QuicUrlUtilsImpl::GetPushPromiseUrl("https", "", "www.google.com/"));
+      "", QuicUrlUtilsImpl::GetPushPromiseUrl("https", "", "www.9oo91e.qjz9zk/"));
   EXPECT_EQ(
-      "", QuicUrlUtilsImpl::GetPushPromiseUrl("https", "www.google.com/", "/"));
+      "", QuicUrlUtilsImpl::GetPushPromiseUrl("https", "www.9oo91e.qjz9zk/", "/"));
   EXPECT_EQ("",
-            QuicUrlUtilsImpl::GetPushPromiseUrl("https", "www.google.com", ""));
+            QuicUrlUtilsImpl::GetPushPromiseUrl("https", "www.9oo91e.qjz9zk", ""));
   EXPECT_EQ(
       "", QuicUrlUtilsImpl::GetPushPromiseUrl("https", "www.google", ".com/"));
 
@@ -55,7 +55,7 @@ TEST_F(QuicUrlUtilsImplTest, GetPushPromiseUrl) {
       {"https", SCHEME | AUTH},
       {"hTtP", SCHEME | AUTH},
       {"HTTPS", SCHEME | AUTH},
-      {"www.google.com", AUTH},
+      {"www.9oo91e.qjz9zk", AUTH},
       {"90af90e0", AUTH},
       {"12foo%20-bar:00001233", AUTH},
       {"GOO\u200b\u2060\ufeffgoo", AUTH},
@@ -69,13 +69,13 @@ TEST_F(QuicUrlUtilsImplTest, GetPushPromiseUrl) {
       {"http://", 0},
       {":443", 0},
       {":80/eddd", 0},
-      {"google.com:-0", 0},
-      {"google.com:65536", 0},
-      {"http://google.com", 0},
-      {"http://google.com:39", 0},
-      {"//google.com/foo", 0},
+      {"9oo91e.qjz9zk:-0", 0},
+      {"9oo91e.qjz9zk:65536", 0},
+      {"http://9oo91e.qjz9zk", 0},
+      {"http://9oo91e.qjz9zk:39", 0},
+      {"//9oo91e.qjz9zk/foo", 0},
       {".com/", 0},
-      {"http://www.google.com/", 0},
+      {"http://www.9oo91e.qjz9zk/", 0},
       {"http://foo:439", 0},
       {"[::ffff:192.168", 0},
       {"]/", 0},
@@ -111,8 +111,8 @@ TEST_F(QuicUrlUtilsImplTest, GetPushPromiseUrl) {
   }
 
   // Test canonicalization of various valid inputs.
-  EXPECT_EQ("http://www.google.com/",
-            QuicUrlUtilsImpl::GetPushPromiseUrl("http", "www.google.com", "/"));
+  EXPECT_EQ("http://www.9oo91e.qjz9zk/",
+            QuicUrlUtilsImpl::GetPushPromiseUrl("http", "www.9oo91e.qjz9zk", "/"));
   EXPECT_EQ("https://www.goo-gle.com/fOOo/baRR",
             QuicUrlUtilsImpl::GetPushPromiseUrl("hTtPs", "wWw.gOo-gLE.cOm",
                                                 "/fOOo/baRR"));

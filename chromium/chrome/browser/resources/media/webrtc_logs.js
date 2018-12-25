@@ -76,7 +76,7 @@ function updateWebRtcLogsList(uploads, version) {
         template: 'Defect report from user',
         comment: commentLines.join('\n'),
       };
-      var href = 'http://code.google.com/p/chromium/issues/entry';
+      var href = 'http://code.9oo91e.qjz9zk/p/chromium/issues/entry';
       for (var param in params) {
         href = appendParam(href, param, params[param]);
       }

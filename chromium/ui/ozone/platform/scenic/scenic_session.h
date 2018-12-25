@@ -49,7 +49,7 @@ class ScenicSession : public fuchsia::ui::scenic::SessionListener {
   ~ScenicSession() override;
 
   // Following functions enqueue various Scenic commands. See
-  // https://fuchsia.googlesource.com/garnet/+/master/public/lib/ui/gfx/fidl/commands.fidl
+  // https://fuchsia.9oo91esource.qjz9zk/garnet/+/master/public/lib/ui/gfx/fidl/commands.fidl
   // for descriptions of the commands and the fields. Create*() methods return
   // ID of the created resource. Resource IDs are only valid within context of
   // the session.
@@ -74,7 +74,7 @@ class ScenicSession : public fuchsia::ui::scenic::SessionListener {
 
   // Enqueue acquire or release fences for the next Present() call. See
   // Scenic documentation for description on how these should be used:
-  // https://fuchsia.googlesource.com/garnet/+/master/public/lib/ui/scenic/fidl/session.fidl
+  // https://fuchsia.9oo91esource.qjz9zk/garnet/+/master/public/lib/ui/scenic/fidl/session.fidl
   void AddAcquireFence(zx::event fence);
   void AddReleaseFence(zx::event fence);
 

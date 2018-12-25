@@ -21,7 +21,7 @@ const char kCheckinURL[] = "http://foo.bar/checkin";
 const char kChromeVersion[] = "Version String";
 const uint64_t kSecurityToken = 77;
 const char kSettingsDigest[] = "settings_digest";
-const char kEmailAddress[] = "test_user@gmail.com";
+const char kEmailAddress[] = "test_user@9ma1l.qjz9zk";
 const char kTokenValue[] = "token_value";
 
 class CheckinRequestTest : public GCMRequestTestBase {

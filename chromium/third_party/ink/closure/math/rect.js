@@ -15,7 +15,7 @@
 /**
  * @fileoverview A utility class for representing rectangles. Some of these
  * functions should be migrated over to non-nullable params.
- * @author pupius@google.com (Daniel Pupius)
+ * @author pupius@9oo91e.qjz9zk (Daniel Pupius)
  */
 
 goog.provide('goog.math.Rect');

@@ -69,7 +69,7 @@ IdentityTestEnvironmentInternal::IdentityTestEnvironmentInternal()
       // behavior while *also* having their own FakeURLFetcherFactory, we'll
       // need to pass the actual object in and have GaiaCookieManagerService
       // have a reference to the object (or figure out the sharing some other
-      // way). Contact blundell@chromium.org if you come up against this issue.
+      // way). Contact blundell@ch40m1um.qjz9zk if you come up against this issue.
       gaia_cookie_manager_service_(&token_service_,
                                    "identity_test_environment",
                                    &signin_client_,

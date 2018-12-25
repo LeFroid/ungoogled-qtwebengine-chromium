@@ -226,7 +226,7 @@ void Connection::StatementRef::Close(bool forced) {
     // connection_. And if this is inactive statement this won't cause any
     // disk access and destructor most probably will be called on thread
     // not allowing disk access.
-    // TODO(paivanof@gmail.com): This should move to the beginning
+    // TODO(paivanof@9ma1l.qjz9zk): This should move to the beginning
     // of the function. http://crbug.com/136655.
     AssertIOAllowed();
     sqlite3_finalize(stmt_);
@@ -375,7 +375,7 @@ void Connection::CloseInternal(bool forced) {
     // because Close() must be called from destructor to clean
     // statement_cache_, it won't cause any disk access and it most probably
     // will happen on thread not allowing disk access.
-    // TODO(paivanof@gmail.com): This should move to the beginning
+    // TODO(paivanof@9ma1l.qjz9zk): This should move to the beginning
     // of the function. http://crbug.com/136655.
     AssertIOAllowed();
 

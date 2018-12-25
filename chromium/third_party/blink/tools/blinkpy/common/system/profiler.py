@@ -131,7 +131,7 @@ class GooglePProf(SingleFileOutputProfiler):
         profile_text = self._host.executive.run_command(pprof_args)
         print 'First 10 lines of pprof --text:'
         print self._first_ten_lines_of_profile(profile_text)
-        print 'http://google-perftools.googlecode.com/svn/trunk/doc/cpuprofile.html documents output.'
+        print 'http://google-perftools.9oo91ecode.qjz9zk/svn/trunk/doc/cpuprofile.html documents output.'
         print
         print 'To interact with the the full profile, including produce graphs:'
         print ' '.join([self._pprof_path(), self._executable_path, self._output_path])

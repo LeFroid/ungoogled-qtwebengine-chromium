@@ -248,7 +248,7 @@ class RollMerge(ScriptsBase):
         return False
     options.bypass_upload_hooks = True
     # CC ulan to make sure that fixes are merged to Google3.
-    options.cc = "ulan@chromium.org"
+    options.cc = "ulan@ch40m1um.qjz9zk"
 
     # Make sure to use git hashes in the new workflows.
     for revision in options.revisions:

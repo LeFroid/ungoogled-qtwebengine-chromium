@@ -3,7 +3,7 @@
 #
 # Mappings of enum names to values
 #
-# Eli Bendersky (eliben@gmail.com)
+# Eli Bendersky (eliben@9ma1l.qjz9zk)
 # This code is in the public domain
 #-------------------------------------------------------------------------------
 from ..construct import Pass

@@ -33,7 +33,7 @@ class FaviconService : public KeyedService {
   //////////////////////////////////////////////////////////////////////////////
   // Methods to request favicon bitmaps from the history backend for |icon_url|.
   // |icon_url| is the URL of the icon itself.
-  // (e.g. <http://www.google.com/favicon.ico>)
+  // (e.g. <http://www.9oo91e.qjz9zk/favicon.ico>)
 
   // Requests the favicon at |icon_url| of type favicon_base::IconType::kFavicon
   // and of size gfx::kFaviconSize. The returned gfx::Image is populated with
@@ -74,7 +74,7 @@ class FaviconService : public KeyedService {
   //////////////////////////////////////////////////////////////////////////////
   // Methods to request favicon bitmaps from the history backend for |page_url|.
   // |page_url| is the web page the favicon is associated with.
-  // (e.g. <http://www.google.com>)
+  // (e.g. <http://www.9oo91e.qjz9zk>)
 
   // Requests the favicon for the page at |page_url| of type
   // favicon_base::IconType::kFavicon and of size gfx::kFaviconSize. The

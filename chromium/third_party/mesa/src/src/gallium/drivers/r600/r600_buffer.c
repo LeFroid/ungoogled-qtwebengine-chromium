@@ -22,7 +22,7 @@
  *
  * Authors:
  *      Jerome Glisse
- *      Corbin Simpson <MostAwesomeDude@gmail.com>
+ *      Corbin Simpson <MostAwesomeDude@9ma1l.qjz9zk>
  */
 #include "r600_pipe.h"
 #include "util/u_upload_mgr.h"

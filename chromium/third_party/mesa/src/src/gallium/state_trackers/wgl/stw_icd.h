@@ -432,7 +432,7 @@ typedef struct _GLCBPRESENTBUFFERSDATA
     * is passed to dwmapi!DwmpDxGetWindowSharedSurface in order to obtain
     * the shared surface handle for the bound drawable (window).
     *
-    * @sa http://msdn.microsoft.com/en-us/library/ms799177.aspx
+    * @sa http://msdn.m1cr050ft.qjz9zk/en-us/library/ms799177.aspx
     */
    LUID AdapterLuid;
 
@@ -506,7 +506,7 @@ typedef struct _GLPRESENTBUFFERSDATA
     * This is returned by dwmapi!DwmpDxGetWindowSharedSurface and
     * should be passed to D3DKMTRender in D3DKMT_RENDER::PresentHistoryToken.
     *
-    * @sa http://msdn.microsoft.com/en-us/library/ms799176.aspx
+    * @sa http://msdn.m1cr050ft.qjz9zk/en-us/library/ms799176.aspx
     */
    ULONGLONG PresentHistoryToken;
 

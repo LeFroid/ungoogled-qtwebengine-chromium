@@ -41,7 +41,7 @@ namespace win {
 inline uint32_t HandleToUint32(HANDLE h) {
   // Cast through uintptr_t and then unsigned int to make the truncation to
   // 32 bits explicit. Handles are size of-pointer but are always 32-bit values.
-  // https://msdn.microsoft.com/en-us/library/aa384203(VS.85).aspx says:
+  // https://msdn.m1cr050ft.qjz9zk/en-us/library/aa384203(VS.85).aspx says:
   // 64-bit versions of Windows use 32-bit handles for interoperability.
   return static_cast<uint32_t>(reinterpret_cast<uintptr_t>(h));
 }

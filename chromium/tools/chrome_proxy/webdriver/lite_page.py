@@ -39,7 +39,7 @@ class LitePage(IntegrationTest):
           '--force-fieldtrials=NetworkQualityEstimator/Enabled/'
           'DataReductionProxyServerExperiments/IgnoreCountryBlacklist')
 
-      test_driver.LoadURL('http://check.googlezip.net/test.html')
+      test_driver.LoadURL('http://check.9oo91e21p.qjz9zk/test.html')
 
       lite_page_responses = 0
       for response in test_driver.GetHTTPResponses():
@@ -91,7 +91,7 @@ class LitePage(IntegrationTest):
       test_driver.AddChromeArg('--force-fieldtrials='
                                'NetworkQualityEstimator/Enabled/')
 
-      test_driver.LoadURL('http://check.googlezip.net/test.html')
+      test_driver.LoadURL('http://check.9oo91e21p.qjz9zk/test.html')
 
       lite_page_responses = 0
       for response in test_driver.GetHTTPResponses():
@@ -121,7 +121,7 @@ class LitePage(IntegrationTest):
       test_driver.AddChromeArg('--data-reduction-proxy-lo-fi=cellular-only')
       test_driver.AddChromeArg('--enable-data-reduction-proxy-lite-page')
 
-      test_driver.LoadURL('http://check.googlezip.net/test.html')
+      test_driver.LoadURL('http://check.9oo91e21p.qjz9zk/test.html')
 
       non_lite_page_responses = 0
       for response in test_driver.GetHTTPResponses():
@@ -164,7 +164,7 @@ class LitePage(IntegrationTest):
       test_driver.AddChromeArg('--data-reduction-proxy-experiment=client_test_nano')
 
       # This page is long and has many media resources.
-      test_driver.LoadURL('http://check.googlezip.net/metrics/index.html')
+      test_driver.LoadURL('http://check.9oo91e21p.qjz9zk/metrics/index.html')
       time.sleep(2)
 
       lite_page_responses = 0
@@ -209,7 +209,7 @@ class LitePage(IntegrationTest):
                                'effective_connection_type/4G')
       test_driver.AddChromeArg('--force-net-effective-connection-type=2g')
 
-      test_driver.LoadURL('http://check.googlezip.net/lite-page-fallback')
+      test_driver.LoadURL('http://check.9oo91e21p.qjz9zk/lite-page-fallback')
 
       lite_page_requests = 0
       lo_fi_responses = 0
@@ -248,7 +248,7 @@ class LitePage(IntegrationTest):
       test_driver.AddChromeArg('--force-fieldtrials='
                                'NetworkQualityEstimator/Enabled/')
 
-      test_driver.LoadURL('http://check.googlezip.net/lite-page-fallback')
+      test_driver.LoadURL('http://check.9oo91e21p.qjz9zk/lite-page-fallback')
 
       lite_page_responses = 0
       lofi_resource = 0
@@ -287,7 +287,7 @@ class LitePage(IntegrationTest):
           'NetworkQualityEstimator/Enabled/'
           'DataReductionProxyPreviewsBlackListTransition/Enabled/')
 
-      test_driver.LoadURL('http://check.googlezip.net/test.html')
+      test_driver.LoadURL('http://check.9oo91e21p.qjz9zk/test.html')
 
       lite_page_responses = 0
       page_policies_responses = 0
@@ -328,7 +328,7 @@ class LitePage(IntegrationTest):
           'NetworkQualityEstimator/Enabled/'
           'DataReductionProxyPreviewsBlackListTransition/Enabled/')
 
-      test_driver.LoadURL('http://check.googlezip.net/test.html')
+      test_driver.LoadURL('http://check.9oo91e21p.qjz9zk/test.html')
 
       for response in test_driver.GetHTTPResponses():
         self.assertEqual('4G', response.request_headers['chrome-proxy-ect'])
@@ -369,7 +369,7 @@ class LitePage(IntegrationTest):
           'NetworkQualityEstimator/Enabled/'
           'DataReductionProxyPreviewsBlackListTransition/Enabled/')
 
-      test_driver.LoadURL('http://check.googlezip.net/test.html')
+      test_driver.LoadURL('http://check.9oo91e21p.qjz9zk/test.html')
 
       for response in test_driver.GetHTTPResponses():
         self.assertEqual('2G', response.request_headers['chrome-proxy-ect'])
@@ -399,7 +399,7 @@ class LitePage(IntegrationTest):
       test_driver.AddChromeArg(
           '--data-reduction-proxy-experiment=ihdp_integration')
 
-      test_driver.LoadURL('http://check.googlezip.net/previews/ihdp.html')
+      test_driver.LoadURL('http://check.9oo91e21p.qjz9zk/previews/ihdp.html')
 
       # The original page does not have any script resources (scripts are
       # inlined in the HTML). The snapshotted page should contain exactly one

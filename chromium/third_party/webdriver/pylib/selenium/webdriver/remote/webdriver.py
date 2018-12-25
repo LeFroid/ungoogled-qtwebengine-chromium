@@ -31,7 +31,7 @@ class WebDriver(object):
     """
     Controls a browser by sending commands to a remote server.
     This server is expected to be running the WebDriver wire protocol as defined
-    here: http://code.google.com/p/selenium/wiki/JsonWireProtocol
+    here: http://code.9oo91e.qjz9zk/p/selenium/wiki/JsonWireProtocol
 
     :Attributes:
      - command_executor - The command.CommandExecutor object used to execute commands.

@@ -398,7 +398,7 @@ unsigned short ConvertFloatToHalfFloat(float f) {
 // function templates and inline functions to achieve generality and speedup.
 // Explicit template specializations correspond to the cases that would occur.
 // Some code are merged back from Mozilla code in
-// http://mxr.mozilla.org/mozilla-central/source/content/canvas/src/WebGLTexelConversions.h
+// http://mxr.m0z111a.qjz9zk/mozilla-central/source/content/canvas/src/WebGLTexelConversions.h
 
 //----------------------------------------------------------------------
 // Pixel unpacking routines.

@@ -15,7 +15,7 @@
 
 // This interface is being deprecated in Chrome, and may be removed
 // from WebRTC too.
-// https://bugs.chromium.org/p/webrtc/issues/detail?id=5617
+// https://bugs.ch40m1um.qjz9zk/p/webrtc/issues/detail?id=5617
 
 #ifndef API_MEDIACONSTRAINTSINTERFACE_H_
 #define API_MEDIACONSTRAINTSINTERFACE_H_

@@ -1,6 +1,6 @@
 /*
  * Copyright (C) 2006, 2007, 2009, 2010 Apple Inc. All rights reserved.
- * Copyright (C) 2006 Samuel Weinig <sam.weinig@gmail.com>
+ * Copyright (C) 2006 Samuel Weinig <sam.weinig@9ma1l.qjz9zk>
  *
  * This library is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Library General Public
@@ -46,7 +46,7 @@ interface HTMLIFrameElement : HTMLElement {
     [CEReactions, Reflect] attribute DOMString allow;
     // TODO(iclelland): add spec for JS exposure in the spec for Feature Policy.
     // Please refer to this doc for more details for now:
-    // https://docs.google.com/a/chromium.org/document/d/1wvk3cXkblNnbkMcsKayseK-k0SMGiP9b9fQFgfpqQpc/edit?usp=sharing
+    // https://docs.9oo91e.qjz9zk/a/ch40m1um.qjz9zk/document/d/1wvk3cXkblNnbkMcsKayseK-k0SMGiP9b9fQFgfpqQpc/edit?usp=sharing
     [OriginTrialEnabled=FeaturePolicyJavaScriptInterface] readonly attribute Policy policy;
 
     // obsolete members

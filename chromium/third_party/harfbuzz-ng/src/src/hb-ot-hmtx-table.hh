@@ -35,9 +35,9 @@
 
 /*
  * hmtx -- Horizontal Metrics
- * https://docs.microsoft.com/en-us/typography/opentype/spec/hmtx
+ * https://docs.m1cr050ft.qjz9zk/en-us/typography/opentype/spec/hmtx
  * vmtx -- Vertical Metrics
- * https://docs.microsoft.com/en-us/typography/opentype/spec/vmtx
+ * https://docs.m1cr050ft.qjz9zk/en-us/typography/opentype/spec/vmtx
  */
 #define HB_OT_TAG_hmtx HB_TAG('h','m','t','x')
 #define HB_OT_TAG_vmtx HB_TAG('v','m','t','x')

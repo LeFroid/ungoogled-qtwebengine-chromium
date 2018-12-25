@@ -33,7 +33,7 @@ D: ET-Forest implementation.
 D: Sparse bitmap
 
 N: David Blaikie
-E: dblaikie@gmail.com
+E: dblaikie@9ma1l.qjz9zk
 D: General bug fixing/fit & finish, mostly in Clang
 
 N: Neil Booth
@@ -51,7 +51,7 @@ E: buschard@uiuc.edu
 D: The `mem2reg' pass - promotes values stored in memory to registers
 
 N: Chandler Carruth
-E: chandlerc@gmail.com
+E: chandlerc@9ma1l.qjz9zk
 D: LinkTimeOptimizer for Linux, via binutils integration, and C API
 
 N: Casey Carter
@@ -67,7 +67,7 @@ D: Loop optimizer improvements
 D: Target-independent code generator improvements
 
 N: Dan Villiom Podlaski Christiansen
-E: danchr@gmail.com
+E: danchr@9ma1l.qjz9zk
 E: danchr@cs.au.dk
 W: http://villiom.dk
 D: LLVM Makefile improvements
@@ -88,7 +88,7 @@ E: stefanus.dutoit@rapidmind.com
 D: Bug fixes and minor improvements
 
 N: Rafael Avila de Espindola
-E: rafael.espindola@gmail.com
+E: rafael.espindola@9ma1l.qjz9zk
 D: The ARM backend
 
 N: Alkis Evlogimenos
@@ -115,7 +115,7 @@ N: Louis Gerbarg
 D: Portions of the PowerPC backend
 
 N: Saem Ghani
-E: saemghani@gmail.com
+E: saemghani@9ma1l.qjz9zk
 D: Callgraph class cleanups
 
 N: Mikhail Glushenkov
@@ -136,7 +136,7 @@ D: Miscellaneous bug fixes
 D: Register allocation refactoring
 
 N: Gabor Greif
-E: ggreif@gmail.com
+E: ggreif@9ma1l.qjz9zk
 D: Improvements for space efficiency
 
 N: James Grosbach
@@ -145,7 +145,7 @@ D: SjLj exception handling support
 D: General fixes and improvements for the ARM back-end
 
 N: Lang Hames
-E: lhames@gmail.com
+E: lhames@9ma1l.qjz9zk
 D: PBQP-based register allocator
 
 N: Gordon Henriksen
@@ -197,11 +197,11 @@ E: kowshik@uiuc.edu
 D: Author of the original C backend
 
 N: Benjamin Kramer
-E: benny.kra@gmail.com
+E: benny.kra@9ma1l.qjz9zk
 D: Miscellaneous bug fixes
 
 N: Christopher Lamb
-E: christopher.lamb@gmail.com
+E: christopher.lamb@9ma1l.qjz9zk
 D: aligned load/store support, parts of noalias and restrict support
 D: vreg subreg infrastructure, X86 codegen improvements based on subregs
 D: address spaces
@@ -236,7 +236,7 @@ E: nicholas@mxc.ca
 D: PredicateSimplifier pass
 
 N: Bruno Cardoso Lopes
-E: bruno.cardoso@gmail.com
+E: bruno.cardoso@9ma1l.qjz9zk
 W: http://www.brunocardoso.org
 D: The Mips backend
 
@@ -250,7 +250,7 @@ E: rjmccall@apple.com
 D: Clang semantic analysis and IR generation
 
 N: Michael McCracken
-E: michael.mccracken@gmail.com
+E: michael.mccracken@9ma1l.qjz9zk
 D: Line number support for llvmgcc
 
 N: Vladimir Merzliakov
@@ -262,7 +262,7 @@ E: scottm@aero.org
 D: Added STI Cell SPU backend.
 
 N: Takumi Nakamura
-E: geek4civic@gmail.com
+E: geek4civic@9ma1l.qjz9zk
 E: chapuni@hf.rim.or.jp
 D: Cygwin and MinGW support.
 S: Yokohama, Japan
@@ -296,7 +296,7 @@ D: GCC PCH Integration (llvm-gcc), llvm-gcc improvements
 D: Optimizer improvements, Loop Index Split
 
 N: Sandeep Patel
-E: deeppatel1987@gmail.com
+E: deeppatel1987@9ma1l.qjz9zk
 D: ARM calling conventions rewrite, hard float support
 
 N: Wesley Peck
@@ -305,7 +305,7 @@ W: http://wesleypeck.com/
 D: MicroBlaze backend
 
 N: Francois Pichet
-E: pichet2000@gmail.com
+E: pichet2000@9ma1l.qjz9zk
 D: MSVC support
 
 N: Vladimir Prus
@@ -329,7 +329,7 @@ E: sasanka@uiuc.edu
 D: Graph coloring register allocator for the Sparc64 backend
 
 N: Arnold Schwaighofer
-E: arnold.schwaighofer@gmail.com
+E: arnold.schwaighofer@9ma1l.qjz9zk
 D: Tail call optimization for the x86 backend
 
 N: Shantonu Sen
@@ -341,7 +341,7 @@ E: ashukla@cs.uiuc.edu
 D: The `paths' pass
 
 N: Michael J. Spencer
-E: bigcheesegs@gmail.com
+E: bigcheesegs@9ma1l.qjz9zk
 D: Shepherding Windows COFF support into MC.
 D: Lots of Windows stuff.
 
@@ -351,7 +351,7 @@ W: http://reidspencer.com/
 D: Lots of stuff, see: http://wiki.llvm.org/index.php/User:Reid
 
 N: Edwin Torok
-E: edwintorok@gmail.com
+E: edwintorok@9ma1l.qjz9zk
 D: Miscellaneous bug fixes
 
 N: Adam Treat

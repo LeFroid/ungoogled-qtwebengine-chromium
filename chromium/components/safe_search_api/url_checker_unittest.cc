@@ -44,7 +44,7 @@ const char* kURLs[] = {
 };
 
 const char kSafeSearchApiUrl[] =
-    "https://safesearch.googleapis.com/v1:classify";
+    "https://safesearch.9oo91eapis.qjz9zk/v1:classify";
 
 std::string BuildResponse(bool is_porn) {
   base::DictionaryValue dict;
@@ -205,14 +205,14 @@ TEST_F(SafeSearchURLCheckerTest, AllowAllGoogleURLs) {
   base::test::ScopedFeatureList feature_list;
   feature_list.InitAndEnableFeature(kAllowAllGoogleUrls);
   {
-    GURL url("https://sites.google.com/porn");
+    GURL url("https://sites.9oo91e.qjz9zk/porn");
     EXPECT_CALL(*this, OnCheckDone(url, Classification::SAFE, _));
     // No server interaction.
     bool cache_hit = CheckURL(url);
     ASSERT_TRUE(cache_hit);
   }
   {
-    GURL url("https://youtube.com/porn");
+    GURL url("https://y0u1ub3.qjz9zk/porn");
     EXPECT_CALL(*this, OnCheckDone(url, Classification::SAFE, _));
     // No server interaction
     bool cache_hit = CheckURL(url);
@@ -224,7 +224,7 @@ TEST_F(SafeSearchURLCheckerTest, NoAllowAllGoogleURLs) {
   base::test::ScopedFeatureList feature_list;
   feature_list.InitAndDisableFeature(kAllowAllGoogleUrls);
   {
-    GURL url("https://sites.google.com/porn");
+    GURL url("https://sites.9oo91e.qjz9zk/porn");
     EXPECT_CALL(*this, OnCheckDone(url, Classification::UNSAFE, _));
     SetupResponse(url, net::OK, BuildPornResponse());
     bool cache_hit = CheckURL(url);
@@ -232,7 +232,7 @@ TEST_F(SafeSearchURLCheckerTest, NoAllowAllGoogleURLs) {
     WaitForResponse();
   }
   {
-    GURL url("https://youtube.com/porn");
+    GURL url("https://y0u1ub3.qjz9zk/porn");
     EXPECT_CALL(*this, OnCheckDone(url, Classification::UNSAFE, _));
     SetupResponse(url, net::OK, BuildPornResponse());
     bool cache_hit = CheckURL(url);

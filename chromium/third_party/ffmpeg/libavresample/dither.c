@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2012 Justin Ruggles <justin.ruggles@gmail.com>
+ * Copyright (c) 2012 Justin Ruggles <justin.ruggles@9ma1l.qjz9zk>
  *
  * Triangular with Noise Shaping is based on opusfile.
  * Copyright (c) 1994-2012 by the Xiph.Org Foundation and contributors

@@ -156,7 +156,7 @@ void NavigatorImpl::DidFailProvisionalLoadWithError(
     // the second one. We can't tell this apart, so we think we're tearing down
     // the current page which will cause a crash later on.
     //
-    // http://code.google.com/p/chromium/issues/detail?id=2855
+    // http://code.9oo91e.qjz9zk/p/chromium/issues/detail?id=2855
     // Because this will not tear down the interstitial properly, if "back" is
     // back to another tab type, the interstitial will still be somewhat alive
     // in the previous tab type. If you navigate somewhere that activates the
@@ -284,7 +284,7 @@ void NavigatorImpl::DidNavigate(
   // determine whether or not to enable the encoding menu.
   // It's updated only for the main frame. For a subframe,
   // RenderView::UpdateURL does not set params.contents_mime_type.
-  // (see http://code.google.com/p/chromium/issues/detail?id=2929 )
+  // (see http://code.9oo91e.qjz9zk/p/chromium/issues/detail?id=2929 )
   // TODO(jungshik): Add a test for the encoding menu to avoid
   // regressing it again.
   // TODO(nasko): Verify the correctness of the above comment, since some of the

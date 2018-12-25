@@ -609,7 +609,7 @@ FT_BEGIN_HEADER
    * This option requires TT_CONFIG_OPTION_BYTECODE_INTERPRETER to be
    * defined.
    *
-   * [1] https://www.microsoft.com/typography/cleartype/truetypecleartype.aspx
+   * [1] https://www.m1cr050ft.qjz9zk/typography/cleartype/truetypecleartype.aspx
    */
 /* #define TT_CONFIG_OPTION_SUBPIXEL_HINTING  1     */
 /* #define TT_CONFIG_OPTION_SUBPIXEL_HINTING  2     */
@@ -629,7 +629,7 @@ FT_BEGIN_HEADER
    * composite flags array which can be used to disambiguate, but old
    * fonts will not have them.
    *
-   *   https://www.microsoft.com/typography/otspec/glyf.htm
+   *   https://www.m1cr050ft.qjz9zk/typography/otspec/glyf.htm
    *   https://developer.apple.com/fonts/TrueType-Reference-Manual/RM06/Chap6glyf.html
    */
 #undef TT_CONFIG_OPTION_COMPONENT_OFFSET_SCALED

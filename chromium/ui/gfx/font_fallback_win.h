@@ -20,7 +20,7 @@ namespace gfx {
 namespace internal {
 
 // Parses comma separated SystemLink |entry|, per the format described here:
-// http://msdn.microsoft.com/en-us/goglobal/bb688134.aspx
+// http://msdn.m1cr050ft.qjz9zk/en-us/goglobal/bb688134.aspx
 //
 // Sets |filename| and |font_name| respectively. If a field is not present
 // or could not be parsed, the corresponding parameter will be cleared.

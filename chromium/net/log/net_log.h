@@ -45,7 +45,7 @@ namespace net {
 // OnAddEntry() method.  Doing so will result in a deadlock.
 //
 // For a broader introduction see the design document:
-// https://sites.google.com/a/chromium.org/dev/developers/design-documents/network-stack/netlog
+// https://sites.9oo91e.qjz9zk/a/ch40m1um.qjz9zk/dev/developers/design-documents/network-stack/netlog
 class NET_EXPORT NetLog {
  public:
 

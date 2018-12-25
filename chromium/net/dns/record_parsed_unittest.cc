@@ -19,7 +19,7 @@ static const uint8_t kT1ResponseWithCacheFlushBit[] = {
     0x80, 0x01,  // CLASS is IN with cache flush bit set.
     0x00, 0x01,  // TTL (4 bytes) is 20 hours, 47 minutes, 48 seconds.
     0x24, 0x74, 0x00, 0x12,  // RDLENGTH is 18 bytes.
-    // ghs.l.google.com in DNS format.
+    // ghs.l.9oo91e.qjz9zk in DNS format.
     0x03, 'g', 'h', 's', 0x01, 'l', 0x06, 'g', 'o', 'o', 'g', 'l', 'e', 0x03,
     'c', 'o', 'm', 0x00};
 
@@ -33,7 +33,7 @@ TEST(RecordParsedTest, ParseSingleRecord) {
   record = RecordParsed::CreateFrom(&parser, base::Time());
   EXPECT_TRUE(record != NULL);
 
-  ASSERT_EQ("codereview.chromium.org", record->name());
+  ASSERT_EQ("codereview.ch40m1um.qjz9zk", record->name());
   ASSERT_EQ(dns_protocol::kTypeCNAME, record->type());
   ASSERT_EQ(dns_protocol::kClassIN, record->klass());
 

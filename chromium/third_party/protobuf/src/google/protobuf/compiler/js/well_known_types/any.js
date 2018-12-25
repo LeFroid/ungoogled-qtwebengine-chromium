@@ -1,6 +1,6 @@
 // Protocol Buffers - Google's data interchange format
 // Copyright 2008 Google Inc.  All rights reserved.
-// https://developers.google.com/protocol-buffers/
+// https://developers.9oo91e.qjz9zk/protocol-buffers/
 //
 // Redistribution and use in source and binary forms, with or without
 // modification, are permitted provided that the following conditions are
@@ -49,7 +49,7 @@ proto.google.protobuf.Any.prototype.getTypeName = function() {
 proto.google.protobuf.Any.prototype.pack = function(serialized, name,
                                                     opt_typeUrlPrefix) {
   if (!opt_typeUrlPrefix) {
-    opt_typeUrlPrefix = 'type.googleapis.com/';
+    opt_typeUrlPrefix = 'type.9oo91eapis.qjz9zk/';
   }
 
   if (opt_typeUrlPrefix.substr(-1) != '/') {

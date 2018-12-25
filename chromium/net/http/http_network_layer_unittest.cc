@@ -71,7 +71,7 @@ class HttpNetworkLayerTest : public PlatformTest,
     TestCompletionCallback callback;
 
     HttpRequestInfo request_info;
-    request_info.url = GURL("http://www.google.com/");
+    request_info.url = GURL("http://www.9oo91e.qjz9zk/");
     request_info.method = method;
     request_info.load_flags = LOAD_NORMAL;
     request_info.traffic_annotation =
@@ -146,8 +146,8 @@ class HttpNetworkLayerTest : public PlatformTest,
         (method == "HEAD" || method == "PUT" || method == "POST") ?
         "Content-Length: 0\r\n\r\n" : "\r\n";
     std::string request =
-        base::StringPrintf("%s http://www.google.com/ HTTP/1.1\r\n"
-                           "Host: www.google.com\r\n"
+        base::StringPrintf("%s http://www.9oo91e.qjz9zk/ HTTP/1.1\r\n"
+                           "Host: www.9oo91e.qjz9zk\r\n"
                            "Proxy-Connection: keep-alive\r\n"
                            "%s", method.c_str(), trailer.c_str());
 
@@ -199,8 +199,8 @@ class HttpNetworkLayerTest : public PlatformTest,
       MockRead(SYNCHRONOUS, OK),
     };
     MockWrite data_writes[] = {
-      MockWrite("GET http://www.google.com/ HTTP/1.1\r\n"
-                "Host: www.google.com\r\n"
+      MockWrite("GET http://www.9oo91e.qjz9zk/ HTTP/1.1\r\n"
+                "Host: www.9oo91e.qjz9zk\r\n"
                 "Proxy-Connection: keep-alive\r\n\r\n"),
     };
     StaticSocketDataProvider data1(data_reads, data_writes);
@@ -215,7 +215,7 @@ class HttpNetworkLayerTest : public PlatformTest,
     };
     MockWrite data_writes2[] = {
       MockWrite("GET / HTTP/1.1\r\n"
-                "Host: www.google.com\r\n"
+                "Host: www.9oo91e.qjz9zk\r\n"
                 "Connection: keep-alive\r\n\r\n"),
     };
     StaticSocketDataProvider data2(data_reads2, data_writes2);
@@ -245,8 +245,8 @@ class HttpNetworkLayerTest : public PlatformTest,
       MockRead(SYNCHRONOUS, OK),
     };
     MockWrite data_writes[] = {
-      MockWrite("GET http://www.google.com/ HTTP/1.1\r\n"
-                "Host: www.google.com\r\n"
+      MockWrite("GET http://www.9oo91e.qjz9zk/ HTTP/1.1\r\n"
+                "Host: www.9oo91e.qjz9zk\r\n"
                 "Proxy-Connection: keep-alive\r\n\r\n"),
     };
     StaticSocketDataProvider data1(data_reads, data_writes);
@@ -313,7 +313,7 @@ TEST_F(HttpNetworkLayerTest, GET) {
   };
   MockWrite data_writes[] = {
     MockWrite("GET / HTTP/1.1\r\n"
-              "Host: www.google.com\r\n"
+              "Host: www.9oo91e.qjz9zk\r\n"
               "Connection: keep-alive\r\n"
               "User-Agent: Foo/1.0\r\n\r\n"),
   };
@@ -323,7 +323,7 @@ TEST_F(HttpNetworkLayerTest, GET) {
   TestCompletionCallback callback;
 
   HttpRequestInfo request_info;
-  request_info.url = GURL("http://www.google.com/");
+  request_info.url = GURL("http://www.9oo91e.qjz9zk/");
   request_info.method = "GET";
   request_info.extra_headers.SetHeader(HttpRequestHeaders::kUserAgent,
                                        "Foo/1.0");
@@ -353,7 +353,7 @@ TEST_F(HttpNetworkLayerTest, NetworkVerified) {
   };
   MockWrite data_writes[] = {
     MockWrite("GET / HTTP/1.1\r\n"
-              "Host: www.google.com\r\n"
+              "Host: www.9oo91e.qjz9zk\r\n"
               "Connection: keep-alive\r\n"
               "User-Agent: Foo/1.0\r\n\r\n"),
   };
@@ -363,7 +363,7 @@ TEST_F(HttpNetworkLayerTest, NetworkVerified) {
   TestCompletionCallback callback;
 
   HttpRequestInfo request_info;
-  request_info.url = GURL("http://www.google.com/");
+  request_info.url = GURL("http://www.9oo91e.qjz9zk/");
   request_info.method = "GET";
   request_info.extra_headers.SetHeader(HttpRequestHeaders::kUserAgent,
                                        "Foo/1.0");
@@ -387,7 +387,7 @@ TEST_F(HttpNetworkLayerTest, NetworkUnVerified) {
   };
   MockWrite data_writes[] = {
     MockWrite("GET / HTTP/1.1\r\n"
-              "Host: www.google.com\r\n"
+              "Host: www.9oo91e.qjz9zk\r\n"
               "Connection: keep-alive\r\n"
               "User-Agent: Foo/1.0\r\n\r\n"),
   };
@@ -397,7 +397,7 @@ TEST_F(HttpNetworkLayerTest, NetworkUnVerified) {
   TestCompletionCallback callback;
 
   HttpRequestInfo request_info;
-  request_info.url = GURL("http://www.google.com/");
+  request_info.url = GURL("http://www.9oo91e.qjz9zk/");
   request_info.method = "GET";
   request_info.extra_headers.SetHeader(HttpRequestHeaders::kUserAgent,
                                        "Foo/1.0");

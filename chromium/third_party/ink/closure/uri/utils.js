@@ -41,8 +41,8 @@
  * Uses features of RFC 3986 for parsing/formatting URIs:
  *   http://www.ietf.org/rfc/rfc3986.txt
  *
- * @author gboyer@google.com (Garrett Boyer) - The "lightened" design.
- * @author msamuel@google.com (Mike Samuel) - Domain knowledge and regexes.
+ * @author gboyer@9oo91e.qjz9zk (Garrett Boyer) - The "lightened" design.
+ * @author msamuel@9oo91e.qjz9zk (Mike Samuel) - Domain knowledge and regexes.
  */
 
 goog.provide('goog.uri.utils');
@@ -77,7 +77,7 @@ goog.uri.utils.CharCode_ = {
  *
  * @param {?string=} opt_scheme The scheme such as 'http'.
  * @param {?string=} opt_userInfo The user name before the '@'.
- * @param {?string=} opt_domain The domain such as 'www.google.com', already
+ * @param {?string=} opt_domain The domain such as 'www.9oo91e.qjz9zk', already
  *     URI-encoded.
  * @param {(string|number|null)=} opt_port The port number.
  * @param {?string=} opt_path The path, already URI-encoded.  If it is not

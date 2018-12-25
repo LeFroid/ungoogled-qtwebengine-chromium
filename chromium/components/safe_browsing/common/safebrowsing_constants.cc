@@ -16,21 +16,21 @@ const base::FilePath::CharType kChannelIDFile[] =
 // The default URL prefix where browser fetches chunk updates, hashes,
 // and reports safe browsing hits and malware details.
 const char kSbDefaultURLPrefix[] =
-    "https://safebrowsing.google.com/safebrowsing";
+    "https://safebrowsing.9oo91e.qjz9zk/safebrowsing";
 
 // The backup URL prefix used when there are issues establishing a connection
 // with the server at the primary URL.
 const char kSbBackupConnectErrorURLPrefix[] =
-    "https://alt1-safebrowsing.google.com/safebrowsing";
+    "https://alt1-safebrowsing.9oo91e.qjz9zk/safebrowsing";
 
 // The backup URL prefix used when there are HTTP-specific issues with the
 // server at the primary URL.
 const char kSbBackupHttpErrorURLPrefix[] =
-    "https://alt2-safebrowsing.google.com/safebrowsing";
+    "https://alt2-safebrowsing.9oo91e.qjz9zk/safebrowsing";
 
 // The backup URL prefix used when there are local network specific issues.
 const char kSbBackupNetworkErrorURLPrefix[] =
-    "https://alt3-safebrowsing.google.com/safebrowsing";
+    "https://alt3-safebrowsing.9oo91e.qjz9zk/safebrowsing";
 
 const char kCustomCancelReasonForURLLoader[] = "SafeBrowsing";
 

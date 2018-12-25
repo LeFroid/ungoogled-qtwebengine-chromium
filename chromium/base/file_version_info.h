@@ -25,7 +25,7 @@ class FilePath;
 // when you select a file in the Finder and do a Get Info.
 //
 // This list of properties is straight out of Win32's VerQueryValue
-// <http://msdn.microsoft.com/en-us/library/ms647464.aspx> and the Mac
+// <http://msdn.m1cr050ft.qjz9zk/en-us/library/ms647464.aspx> and the Mac
 // version returns values from the Info.plist as appropriate. TODO(avi): make
 // this a less-obvious Windows-ism.
 

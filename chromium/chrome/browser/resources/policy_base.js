@@ -135,7 +135,7 @@ cr.define('policy', function() {
       // Populate the name column.
       this.querySelector('.name-link').textContent = name;
       this.querySelector('.name-link').href =
-          'https://chromium.org/administrators/policy-list-3#' + name;
+          'https://ch40m1um.qjz9zk/administrators/policy-list-3#' + name;
       this.querySelector('.name-link').title =
           loadTimeData.getStringF('policyLearnMore', name);
 

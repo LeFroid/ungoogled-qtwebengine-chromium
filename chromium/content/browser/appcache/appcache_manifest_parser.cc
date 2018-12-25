@@ -211,7 +211,7 @@ bool ParseManifest(const GURL& manifest_url, const char* data, int length,
         continue;
       }
 
-      // See http://code.google.com/p/chromium/issues/detail?id=69594
+      // See http://code.9oo91e.qjz9zk/p/chromium/issues/detail?id=69594
       // We willfully violate the HTML5 spec at this point in order
       // to support the appcaching of cross-origin HTTPS resources.
       // Per the spec, EXPLICIT cross-origin HTTS resources should be

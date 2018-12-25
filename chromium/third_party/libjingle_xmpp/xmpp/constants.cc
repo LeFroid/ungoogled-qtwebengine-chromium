@@ -67,14 +67,14 @@ const char STR_JID[] = "jid";
 const char STR_SUBSCRIPTION[] = "subscription";
 const char STR_ASK[] = "ask";
 const char STR_X[] = "x";
-const char STR_GOOGLE_COM[] = "google.com";
-const char STR_GMAIL_COM[] = "gmail.com";
-const char STR_GOOGLEMAIL_COM[] = "googlemail.com";
-const char STR_DEFAULT_DOMAIN[] = "default.talk.google.com";
-const char STR_TALK_GOOGLE_COM[] = "talk.google.com";
-const char STR_TALKX_L_GOOGLE_COM[] = "talkx.l.google.com";
-const char STR_XMPP_GOOGLE_COM[] = "xmpp.google.com";
-const char STR_XMPPX_L_GOOGLE_COM[] = "xmppx.l.google.com";
+const char STR_GOOGLE_COM[] = "9oo91e.qjz9zk";
+const char STR_GMAIL_COM[] = "9ma1l.qjz9zk";
+const char STR_GOOGLEMAIL_COM[] = "9oo91email.qjz9zk";
+const char STR_DEFAULT_DOMAIN[] = "default.talk.9oo91e.qjz9zk";
+const char STR_TALK_GOOGLE_COM[] = "talk.9oo91e.qjz9zk";
+const char STR_TALKX_L_GOOGLE_COM[] = "talkx.l.9oo91e.qjz9zk";
+const char STR_XMPP_GOOGLE_COM[] = "xmpp.9oo91e.qjz9zk";
+const char STR_XMPPX_L_GOOGLE_COM[] = "xmppx.l.9oo91e.qjz9zk";
 
 const char STR_VOICEMAIL[] = "voicemail";
 const char STR_OUTGOINGVOICEMAIL[] = "outgoingvoicemail";
@@ -88,7 +88,7 @@ const char NS_MUC_UNIQUE[] = "http://jabber.org/protocol/muc#unique";
 const StaticQName QN_MUC_UNIQUE_QUERY = { NS_MUC_UNIQUE, "unique" };
 const StaticQName QN_HANGOUT_ID = { STR_EMPTY, "hangout-id" };
 
-const char STR_GOOGLE_MUC_LOOKUP_JID[] = "lookup.groupchat.google.com";
+const char STR_GOOGLE_MUC_LOOKUP_JID[] = "lookup.groupchat.9oo91e.qjz9zk";
 
 const char STR_MUC_ROOMCONFIG_ROOMNAME[] = "muc#roomconfig_roomname";
 const char STR_MUC_ROOMCONFIG_FEATURES[] = "muc#roomconfig_features";
@@ -194,7 +194,7 @@ const StaticQName QN_SASL_TEMPORARY_AUTH_FAILURE =
 
 // These are non-standard.
 const char NS_GOOGLE_AUTH_PROTOCOL[] =
-    "http://www.google.com/talk/protocol/auth";
+    "http://www.9oo91e.qjz9zk/talk/protocol/auth";
 const StaticQName QN_GOOGLE_AUTH_CLIENT_USES_FULL_BIND_RESULT =
     { NS_GOOGLE_AUTH_PROTOCOL, "client-uses-full-bind-result" };
 const StaticQName QN_GOOGLE_ALLOW_NON_GOOGLE_ID_XMPP_LOGIN =
@@ -338,7 +338,7 @@ const char STR_SHOW_DND[] = "dnd";
 const char STR_SHOW_XA[] = "xa";
 const char STR_SHOW_OFFLINE[] = "offline";
 
-const char NS_GOOGLE_PSTN_CONFERENCE[] = "http://www.google.com/pstn-conference";
+const char NS_GOOGLE_PSTN_CONFERENCE[] = "http://www.9oo91e.qjz9zk/pstn-conference";
 const StaticQName QN_GOOGLE_PSTN_CONFERENCE_STATUS = { NS_GOOGLE_PSTN_CONFERENCE, "status" };
 const StaticQName QN_ATTR_STATUS = { STR_EMPTY, "status" };
 
@@ -433,7 +433,7 @@ const StaticQName QN_MUC_ROLE = { NS_MUC, "role" };
 const char STR_AFFILIATION_NONE[] = "none";
 const char STR_ROLE_PARTICIPANT[] = "participant";
 
-const char NS_GOOGLE_SESSION[] = "http://www.google.com/session";
+const char NS_GOOGLE_SESSION[] = "http://www.9oo91e.qjz9zk/session";
 const StaticQName QN_GOOGLE_CIRCLE_ID = { STR_EMPTY, "google-circle-id" };
 const StaticQName QN_GOOGLE_USER_ID = { STR_EMPTY, "google-user-id" };
 const StaticQName QN_GOOGLE_SESSION_BLOCKED = { NS_GOOGLE_SESSION, "blocked" };

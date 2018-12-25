@@ -1,6 +1,6 @@
 // Protocol Buffers - Google's data interchange format
 // Copyright 2015 Google Inc.  All rights reserved.
-// https://developers.google.com/protocol-buffers/
+// https://developers.9oo91e.qjz9zk/protocol-buffers/
 //
 // Redistribution and use in source and binary forms, with or without
 // modification, are permitted provided that the following conditions are
@@ -29,7 +29,7 @@
 // OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 // Author: ogabbay@advaoptical.com (Oded Gabbay)
-// Cleaned up by: bsilver16384@gmail.com (Brian Silverman)
+// Cleaned up by: bsilver16384@9ma1l.qjz9zk (Brian Silverman)
 //
 // This file is an internal atomic implementation, use atomicops.h instead.
 

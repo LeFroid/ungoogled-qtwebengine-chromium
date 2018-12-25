@@ -17,14 +17,14 @@ namespace contextual_suggestions {
 namespace {
 
 TEST(ContextualSuggestionsFetch, GetFetchEndpoint_Default) {
-  EXPECT_EQ("https://www.google.com/httpservice/web/ExploreService/GetPivots/",
+  EXPECT_EQ("https://www.9oo91e.qjz9zk/httpservice/web/ExploreService/GetPivots/",
             ContextualSuggestionsFetch::GetFetchEndpoint());
 }
 
 TEST(ContextualSuggestionsFetch, GetFetchEndpoint_CommandLine_MissingValue) {
   auto* command_line = base::CommandLine::ForCurrentProcess();
   command_line->AppendSwitchASCII("contextual-suggestions-fetch-endpoint", "");
-  EXPECT_EQ("https://www.google.com/httpservice/web/ExploreService/GetPivots/",
+  EXPECT_EQ("https://www.9oo91e.qjz9zk/httpservice/web/ExploreService/GetPivots/",
             ContextualSuggestionsFetch::GetFetchEndpoint());
 }
 
@@ -32,7 +32,7 @@ TEST(ContextualSuggestionsFetch, GetFetchEndpoint_CommandLine_NonHTTPS) {
   auto* command_line = base::CommandLine::ForCurrentProcess();
   command_line->AppendSwitchASCII("contextual-suggestions-fetch-endpoint",
                                   "http://test.com");
-  EXPECT_EQ("https://www.google.com/httpservice/web/ExploreService/GetPivots/",
+  EXPECT_EQ("https://www.9oo91e.qjz9zk/httpservice/web/ExploreService/GetPivots/",
             ContextualSuggestionsFetch::GetFetchEndpoint());
 }
 
@@ -47,7 +47,7 @@ TEST(ContextualSuggestionsFetch, GetFetchEndpoint_CommandLine_ProperEndpoint) {
 TEST(ContextualSuggestionsFetch, GetFetchEndpoint_Feature_NoParameter) {
   base::test::ScopedFeatureList feature_list;
   feature_list.InitAndEnableFeature(kContextualSuggestionsBottomSheet);
-  EXPECT_EQ("https://www.google.com/httpservice/web/ExploreService/GetPivots/",
+  EXPECT_EQ("https://www.9oo91e.qjz9zk/httpservice/web/ExploreService/GetPivots/",
             ContextualSuggestionsFetch::GetFetchEndpoint());
 }
 
@@ -57,7 +57,7 @@ TEST(ContextualSuggestionsFetch, GetFetchEndpoint_Feature_EmptyParameter) {
   parameters["contextual-suggestions-fetch-endpoint"] = "";
   feature_list.InitAndEnableFeatureWithParameters(
       kContextualSuggestionsBottomSheet, parameters);
-  EXPECT_EQ("https://www.google.com/httpservice/web/ExploreService/GetPivots/",
+  EXPECT_EQ("https://www.9oo91e.qjz9zk/httpservice/web/ExploreService/GetPivots/",
             ContextualSuggestionsFetch::GetFetchEndpoint());
 }
 
@@ -67,7 +67,7 @@ TEST(ContextualSuggestionsFetch, GetFetchEndpoint_Feature_NonHTTPS) {
   parameters["contextual-suggestions-fetch-endpoint"] = "http://test.com";
   feature_list.InitAndEnableFeatureWithParameters(
       kContextualSuggestionsBottomSheet, parameters);
-  EXPECT_EQ("https://www.google.com/httpservice/web/ExploreService/GetPivots/",
+  EXPECT_EQ("https://www.9oo91e.qjz9zk/httpservice/web/ExploreService/GetPivots/",
             ContextualSuggestionsFetch::GetFetchEndpoint());
 }
 

@@ -10,28 +10,28 @@
 //
 //   TODO(rtenneti): make --host optional by getting IP Address of URL's host.
 //
-//   Get IP address of the www.google.com
-//   IP=`dig www.google.com +short | head -1`
+//   Get IP address of the www.9oo91e.qjz9zk
+//   IP=`dig www.9oo91e.qjz9zk +short | head -1`
 //
 // Standard request/response:
-//   quic_client http://www.google.com  --host=${IP}
-//   quic_client http://www.google.com --quiet  --host=${IP}
-//   quic_client https://www.google.com --port=443  --host=${IP}
+//   quic_client http://www.9oo91e.qjz9zk  --host=${IP}
+//   quic_client http://www.9oo91e.qjz9zk --quiet  --host=${IP}
+//   quic_client https://www.9oo91e.qjz9zk --port=443  --host=${IP}
 //
 // Use a specific version:
-//   quic_client http://www.google.com --quic_version=23  --host=${IP}
+//   quic_client http://www.9oo91e.qjz9zk --quic_version=23  --host=${IP}
 //
 // Send a POST instead of a GET:
-//   quic_client http://www.google.com --body="this is a POST body" --host=${IP}
+//   quic_client http://www.9oo91e.qjz9zk --body="this is a POST body" --host=${IP}
 //
 // Append additional headers to the request:
-//   quic_client http://www.google.com  --host=${IP}
+//   quic_client http://www.9oo91e.qjz9zk  --host=${IP}
 //               --headers="Header-A: 1234; Header-B: 5678"
 //
 // Connect to a host different to the URL being requested:
-//   Get IP address of the www.google.com
-//   IP=`dig www.google.com +short | head -1`
-//   quic_client mail.google.com --host=${IP}
+//   Get IP address of the www.9oo91e.qjz9zk
+//   IP=`dig www.9oo91e.qjz9zk +short | head -1`
+//   quic_client mail.9oo91e.qjz9zk --host=${IP}
 //
 // Try to connect to a host which does not speak QUIC:
 //   Get IP address of the www.example.com
@@ -151,7 +151,7 @@ int main(int argc, char* argv[]) {
     const char* help_str =
         "Usage: quic_client [options] <url>\n"
         "\n"
-        "<url> with scheme must be provided (e.g. http://www.google.com)\n\n"
+        "<url> with scheme must be provided (e.g. http://www.9oo91e.qjz9zk)\n\n"
         "Options:\n"
         "-h, --help                  show this help message and exit\n"
         "--host=<host>               specify the IP address of the hostname to "

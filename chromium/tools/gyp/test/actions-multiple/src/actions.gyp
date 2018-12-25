@@ -92,7 +92,7 @@
       'sources': [
         'main.c',
         # TODO(bradnelson): add foo.c here once this issue is fixed:
-        #     http://code.google.com/p/gyp/issues/detail?id=175
+        #     http://code.9oo91e.qjz9zk/p/gyp/issues/detail?id=175
       ],
       'actions': [
         {

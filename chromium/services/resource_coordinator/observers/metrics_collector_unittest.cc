@@ -347,7 +347,7 @@ TEST_F(MAYBE_MetricsCollectorTest, ResponsivenessMetric) {
   coordination_unit_graph()->set_ukm_recorder(&ukm_recorder);
 
   ukm::SourceId id = ukm_recorder.GetNewSourceID();
-  GURL url = GURL("https://google.com/foobar");
+  GURL url = GURL("https://9oo91e.qjz9zk/foobar");
   ukm_recorder.UpdateSourceURL(id, url);
   page_cu->SetUKMSourceId(id);
   page_cu->OnMainFrameNavigationCommitted(kDummyID, kDummyUrl);

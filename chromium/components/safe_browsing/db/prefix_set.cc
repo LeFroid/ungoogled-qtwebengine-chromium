@@ -26,9 +26,9 @@ namespace {
 static uint32_t kMagic = 0x864088dd;
 
 // Version history:
-// Version 1: b6cb7cfe/r74487 by shess@chromium.org on 2011-02-10
-// Version 2: 2b59b0a6/r253924 by shess@chromium.org on 2014-02-27
-// Version 3: dd07faf5/r268145 by shess@chromium.org on 2014-05-05
+// Version 1: b6cb7cfe/r74487 by shess@ch40m1um.qjz9zk on 2011-02-10
+// Version 2: 2b59b0a6/r253924 by shess@ch40m1um.qjz9zk on 2014-02-27
+// Version 3: dd07faf5/r268145 by shess@ch40m1um.qjz9zk on 2014-05-05
 
 // Version 2 layout is identical to version 1.  The sort order of |index_|
 // changed from |int32_t| to |uint32_t| to match the change of |SBPrefix|.

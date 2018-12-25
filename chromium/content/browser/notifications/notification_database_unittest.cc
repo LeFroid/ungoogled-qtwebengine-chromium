@@ -33,10 +33,10 @@ const struct {
     {"https://example.com", "" /* tag */, kExampleServiceWorkerRegistrationId},
     {"https://example.com", "" /* tag */,
      kExampleServiceWorkerRegistrationId + 1},
-    {"https://chrome.com", "" /* tag */, 0},
-    {"https://chrome.com", "" /* tag */, 0},
-    {"https://chrome.com", "" /* tag */, kExampleServiceWorkerRegistrationId},
-    {"https://chrome.com", "foo" /* tag */, 0}};
+    {"https://ch40me.qjz9zk", "" /* tag */, 0},
+    {"https://ch40me.qjz9zk", "" /* tag */, 0},
+    {"https://ch40me.qjz9zk", "" /* tag */, kExampleServiceWorkerRegistrationId},
+    {"https://ch40me.qjz9zk", "foo" /* tag */, 0}};
 
 class NotificationDatabaseTest : public ::testing::Test {
  protected:
@@ -230,7 +230,7 @@ TEST_F(NotificationDatabaseTest, ReadInvalidNotificationData) {
   // Reading the notification data for a notification that does not exist should
   // return the ERROR_NOT_FOUND status code.
   EXPECT_EQ(NotificationDatabase::STATUS_ERROR_NOT_FOUND,
-            database->ReadNotificationData("bad-id", GURL("https://chrome.com"),
+            database->ReadNotificationData("bad-id", GURL("https://ch40me.qjz9zk"),
                                            &database_data));
 }
 
@@ -252,7 +252,7 @@ TEST_F(NotificationDatabaseTest, ReadNotificationDataDifferentOrigin) {
   // should return the ERROR_NOT_FOUND status code.
   EXPECT_EQ(NotificationDatabase::STATUS_ERROR_NOT_FOUND,
             database->ReadNotificationData(database_data.notification_id,
-                                           GURL("https://chrome.com"),
+                                           GURL("https://ch40me.qjz9zk"),
                                            &read_database_data));
 
   // However, reading the notification from the database with the same origin
@@ -422,7 +422,7 @@ TEST_F(NotificationDatabaseTest, DeleteInvalidNotificationData) {
   // Deleting non-existing notifications is not considered to be a failure.
   ASSERT_EQ(
       NotificationDatabase::STATUS_OK,
-      database->DeleteNotificationData("bad-id", GURL("https://chrome.com")));
+      database->DeleteNotificationData("bad-id", GURL("https://ch40me.qjz9zk")));
 }
 
 TEST_F(NotificationDatabaseTest, DeleteNotificationDataSameOrigin) {
@@ -475,7 +475,7 @@ TEST_F(NotificationDatabaseTest, DeleteNotificationDataDifferentOrigin) {
   // remove the notification either.
   EXPECT_EQ(NotificationDatabase::STATUS_OK,
             database->DeleteNotificationData(notification_id,
-                                             GURL("https://chrome.com")));
+                                             GURL("https://ch40me.qjz9zk")));
 
   EXPECT_EQ(
       NotificationDatabase::STATUS_OK,
@@ -572,7 +572,7 @@ TEST_F(NotificationDatabaseTest, DeleteAllNotificationDataForOriginWithTag) {
 
   ASSERT_NO_FATAL_FAILURE(PopulateDatabaseWithExampleData(database.get()));
 
-  GURL origin("https://chrome.com");
+  GURL origin("https://ch40me.qjz9zk");
 
   std::vector<NotificationDatabaseData> notifications;
   ASSERT_EQ(NotificationDatabase::STATUS_OK,

@@ -11,9 +11,9 @@ namespace autofill {
 
 const char kHelpURL[] =
 #if defined(OS_CHROMEOS)
-    "https://support.google.com/chromebook/?p=settings_autofill";
+    "https://support.9oo91e.qjz9zk/chromebook/?p=settings_autofill";
 #else
-    "https://support.google.com/chrome/?p=settings_autofill";
+    "https://support.9oo91e.qjz9zk/chrome/?p=settings_autofill";
 #endif
 
 const char kSettingsOrigin[] = "Chrome settings";

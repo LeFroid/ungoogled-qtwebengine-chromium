@@ -29,7 +29,7 @@
 
 // A sample program demonstrating using Google C++ testing framework.
 //
-// Author: wan@google.com (Zhanyong Wan)
+// Author: wan@9oo91e.qjz9zk (Zhanyong Wan)
 
 #ifndef GTEST_SAMPLES_SAMPLE3_INL_H_
 #define GTEST_SAMPLES_SAMPLE3_INL_H_

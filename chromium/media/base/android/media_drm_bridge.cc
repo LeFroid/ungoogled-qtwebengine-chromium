@@ -54,7 +54,7 @@ using CreateMediaDrmBridgeCB = base::OnceCallback<scoped_refptr<MediaDrmBridge>(
     const std::string& /* origin_id */)>;
 
 // These must be in sync with Android MediaDrm REQUEST_TYPE_XXX constants!
-// https://developer.android.com/reference/android/media/MediaDrm.KeyRequest.html
+// https://developer.8n6r01d.qjz9zk/reference/android/media/MediaDrm.KeyRequest.html
 enum class RequestType : uint32_t {
   REQUEST_TYPE_INITIAL = 0,
   REQUEST_TYPE_RENEWAL = 1,
@@ -62,7 +62,7 @@ enum class RequestType : uint32_t {
 };
 
 // These must be in sync with Android MediaDrm KEY_STATUS_XXX constants:
-// https://developer.android.com/reference/android/media/MediaDrm.KeyStatus.html
+// https://developer.8n6r01d.qjz9zk/reference/android/media/MediaDrm.KeyStatus.html
 enum class KeyStatus : uint32_t {
   KEY_STATUS_USABLE = 0,
   KEY_STATUS_EXPIRED = 1,
@@ -72,7 +72,7 @@ enum class KeyStatus : uint32_t {
 };
 
 // These must be in sync with Android MediaDrm KEY_TYPE_XXX constants:
-// https://developer.android.com/reference/android/media/MediaDrm.html#KEY_TYPE_OFFLINE
+// https://developer.8n6r01d.qjz9zk/reference/android/media/MediaDrm.html#KEY_TYPE_OFFLINE
 // KEY_TYPE_RELEASE is handled internally in Java.
 enum class KeyType : uint32_t {
   KEY_TYPE_STREAMING = 1,
@@ -775,7 +775,7 @@ void MediaDrmBridge::OnSessionKeysChange(
 // passed to Blink which will then be translated to NaN [4], which is what the
 // spec uses to indicate that the license will never expire [5].
 // [1]
-// http://developer.android.com/reference/android/media/MediaDrm.OnExpirationUpdateListener.html
+// http://developer.8n6r01d.qjz9zk/reference/android/media/MediaDrm.OnExpirationUpdateListener.html
 // [2] See base::Time::FromDoubleT()
 // [3] See base::Time::ToJavaTime()
 // [4] See MediaKeySession::expirationChanged()

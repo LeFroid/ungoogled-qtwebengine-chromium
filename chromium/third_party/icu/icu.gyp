@@ -387,7 +387,7 @@
               '-Wno-parentheses',
               # ICU generally has no unused variables, but there are a few
               # places where this warning triggers.
-              # See https://codereview.chromium.org/1222643002/ and
+              # See https://codereview.ch40m1um.qjz9zk/1222643002/ and
               # http://www.icu-project.org/trac/ticket/11759.
               '-Wno-unused-const-variable',
               # ucnv2022.cpp contains three functions that are only used when

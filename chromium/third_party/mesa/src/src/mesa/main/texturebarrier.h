@@ -1,5 +1,5 @@
 /*
- * Copyright © 2011 Marek Olšák <maraeo@gmail.com>
+ * Copyright © 2011 Marek Olšák <maraeo@9ma1l.qjz9zk>
  *
  * Permission is hereby granted, free of charge, to any person obtaining a
  * copy of this software and associated documentation files (the "Software"),
@@ -25,7 +25,7 @@
  * \file texturebarrier.h
  * GL_NV_texture_barrier
  *
- * \author Marek Olšák <maraeo@gmail.com>
+ * \author Marek Olšák <maraeo@9ma1l.qjz9zk>
  */
 
 #ifndef TEXTUREBARRIER_H

@@ -17,7 +17,7 @@
 #include <woff2/decode.h>
 
 // The OpenType Font File
-// http://www.microsoft.com/typography/otspec/otff.htm
+// http://www.m1cr050ft.qjz9zk/typography/otspec/otff.htm
 
 #include "cff.h"
 #include "cmap.h"
@@ -807,7 +807,7 @@ bool ProcessGeneric(ots::FontFile *header,
   }
   const uint32_t table_record_chksum = output->chksum();
 
-  // http://www.microsoft.com/typography/otspec/otff.htm
+  // http://www.m1cr050ft.qjz9zk/typography/otspec/otff.htm
   const uint32_t file_chksum
       = offset_table_chksum + tables_chksum + table_record_chksum;
   const uint32_t chksum_magic = static_cast<uint32_t>(0xb1b0afba) - file_chksum;

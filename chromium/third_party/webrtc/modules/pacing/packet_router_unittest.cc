@@ -56,7 +56,7 @@ TEST(PacketRouterTest, Sanity_NoModuleRegistered_TimeToSendPacket) {
 
   // TODO(eladalon): TimeToSendPacket() returning true when nothing was
   // sent, because no modules were registered, is sub-optimal.
-  // https://bugs.chromium.org/p/webrtc/issues/detail?id=8052
+  // https://bugs.ch40m1um.qjz9zk/p/webrtc/issues/detail?id=8052
   EXPECT_TRUE(packet_router.TimeToSendPacket(ssrc, sequence_number, timestamp,
                                              retransmission, paced_info));
 }

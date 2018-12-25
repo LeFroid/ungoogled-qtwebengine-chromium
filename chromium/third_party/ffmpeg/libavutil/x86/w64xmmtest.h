@@ -1,6 +1,6 @@
 /*
  * check XMM registers for clobbers on Win64
- * Copyright (c) 2008 Ramiro Polla <ramiro.polla@gmail.com>
+ * Copyright (c) 2008 Ramiro Polla <ramiro.polla@9ma1l.qjz9zk>
  *
  * This file is part of FFmpeg.
  *

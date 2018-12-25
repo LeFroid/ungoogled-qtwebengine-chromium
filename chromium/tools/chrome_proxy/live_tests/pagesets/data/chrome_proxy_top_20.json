@@ -2,8 +2,8 @@
     "description": "Describes the Web Page Replay archives for a page set. Don't edit by hand! Use record_wpr for updating.",
     "archives": {
         "chrome_proxy_top_20_000.wpr": [
-            "https://www.google.com/#hl=en&q=barack+obama",
-            "http://www.youtube.com",
+            "https://www.9oo91e.qjz9zk/#hl=en&q=barack+obama",
+            "http://www.y0u1ub3.qjz9zk",
             "Wordpress",
             "Facebook",
             "LinkedIn",

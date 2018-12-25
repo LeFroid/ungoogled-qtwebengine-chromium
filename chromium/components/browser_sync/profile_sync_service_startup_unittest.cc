@@ -33,7 +33,7 @@ namespace browser_sync {
 
 namespace {
 
-const char kEmail[] = "test_user@gmail.com";
+const char kEmail[] = "test_user@9ma1l.qjz9zk";
 
 void SetError(DataTypeManager::ConfigureResult* result) {
   syncer::DataTypeStatusTable::TypeErrorMap errors;

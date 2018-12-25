@@ -23,7 +23,7 @@ namespace cricket {
 // outlive the returned encoder.
 // TODO(magjed): This helper function will be deleted once
 // cricket::WebRtcVideoEncoderFactory is deprecated, see
-// https://bugs.chromium.org/p/webrtc/issues/detail?id=7925 for more info.
+// https://bugs.ch40m1um.qjz9zk/p/webrtc/issues/detail?id=7925 for more info.
 std::unique_ptr<webrtc::VideoEncoder> CreateScopedVideoEncoder(
     cricket::WebRtcVideoEncoderFactory* factory,
     const VideoCodec& codec);

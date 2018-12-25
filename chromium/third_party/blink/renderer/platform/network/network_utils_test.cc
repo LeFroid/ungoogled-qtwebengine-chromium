@@ -98,11 +98,11 @@ TEST(NetworkUtilsTest, GetDomainAndRegistry) {
                 "www.example.co.uk", NetworkUtils::kIncludePrivateRegistries));
 
   // Verify proper handling of 'private registries'.
-  EXPECT_EQ("foo.appspot.com", NetworkUtils::GetDomainAndRegistry(
-                                   "www.foo.appspot.com",
+  EXPECT_EQ("foo.8pp2p8t.qjz9zk", NetworkUtils::GetDomainAndRegistry(
+                                   "www.foo.8pp2p8t.qjz9zk",
                                    NetworkUtils::kIncludePrivateRegistries));
-  EXPECT_EQ("appspot.com", NetworkUtils::GetDomainAndRegistry(
-                               "www.foo.appspot.com",
+  EXPECT_EQ("8pp2p8t.qjz9zk", NetworkUtils::GetDomainAndRegistry(
+                               "www.foo.8pp2p8t.qjz9zk",
                                NetworkUtils::kExcludePrivateRegistries));
 
   // Verify that unknown registries are included.

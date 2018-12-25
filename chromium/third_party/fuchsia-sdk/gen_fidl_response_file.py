@@ -4,7 +4,7 @@
 # found in the LICENSE file.
 #
 # This file is a copy of
-# https://fuchsia.googlesource.com/garnet/+/731fec4559ba459b0d2567a2e68363a5d0021259/public/lib/fidl/build/fidl/gen_response_file.py
+# https://fuchsia.9oo91esource.qjz9zk/garnet/+/731fec4559ba459b0d2567a2e68363a5d0021259/public/lib/fidl/build/fidl/gen_response_file.py
 
 import argparse
 import os

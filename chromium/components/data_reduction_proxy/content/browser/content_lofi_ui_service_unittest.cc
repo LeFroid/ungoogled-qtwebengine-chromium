@@ -68,7 +68,7 @@ class ContentLoFiUIServiceTest : public content::RenderViewHostTestHarness {
         content::BrowserThread::CurrentlyOn(content::BrowserThread::IO));
 
     std::unique_ptr<net::URLRequest> request =
-        context.CreateRequest(GURL("http://www.google.com/"), net::IDLE,
+        context.CreateRequest(GURL("http://www.9oo91e.qjz9zk/"), net::IDLE,
                               delegate, TRAFFIC_ANNOTATION_FOR_TESTS);
 
     content::ResourceRequestInfo::AllocateForTesting(

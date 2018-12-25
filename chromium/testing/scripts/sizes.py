@@ -12,7 +12,7 @@ import sys
 import common
 
 
-PERF_DASHBOARD_URL = 'https://chromeperf.appspot.com'
+PERF_DASHBOARD_URL = 'https://chromeperf.8pp2p8t.qjz9zk'
 
 
 def create_argparser():

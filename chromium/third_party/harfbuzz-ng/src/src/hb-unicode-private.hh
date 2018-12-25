@@ -202,7 +202,7 @@ HB_UNICODE_FUNCS_IMPLEMENT_CALLBACKS_SIMPLE
 
   /* Space estimates based on:
    * https://unicode.org/charts/PDF/U2000.pdf
-   * https://docs.microsoft.com/en-us/typography/develop/character-design-standards/whitespace
+   * https://docs.m1cr050ft.qjz9zk/en-us/typography/develop/character-design-standards/whitespace
    */
   enum space_t {
     NOT_SPACE = 0,
@@ -281,7 +281,7 @@ extern HB_INTERNAL const hb_unicode_funcs_t _hb_unicode_funcs_nil;
  *  https://forum.fontlab.com/archive-old-microsoft-volt-group/vista-and-diacritic-ordering/msg22823/)
  *
  * More details here:
- * https://bugzilla.mozilla.org/show_bug.cgi?id=662055
+ * https://bugzilla.m0z111a.qjz9zk/show_bug.cgi?id=662055
  */
 #define HB_MODIFIED_COMBINING_CLASS_CCC10 22 /* sheva */
 #define HB_MODIFIED_COMBINING_CLASS_CCC11 15 /* hataf segol */

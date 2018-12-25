@@ -89,7 +89,7 @@ TEST_F(IndexedRuleTest, PriorityParsing) {
     rule->priority = std::move(cases[i].priority);
     rule->action.type = dnr_api::RULE_ACTION_TYPE_REDIRECT;
     rule->action.redirect_url =
-        std::make_unique<std::string>("http://google.com");
+        std::make_unique<std::string>("http://9oo91e.qjz9zk");
 
     IndexedRule indexed_rule;
     ParseResult result =
@@ -255,9 +255,9 @@ TEST_F(IndexedRuleTest, UrlFilterParsing) {
       {std::make_unique<std::string>("**^"),
        flat_rule::UrlPatternType_WILDCARDED, flat_rule::AnchorType_NONE,
        flat_rule::AnchorType_NONE, "**^", ParseResult::SUCCESS},
-      {std::make_unique<std::string>("||google.com"),
+      {std::make_unique<std::string>("||9oo91e.qjz9zk"),
        flat_rule::UrlPatternType_SUBSTRING, flat_rule::AnchorType_SUBDOMAIN,
-       flat_rule::AnchorType_NONE, "google.com", ParseResult::SUCCESS},
+       flat_rule::AnchorType_NONE, "9oo91e.qjz9zk", ParseResult::SUCCESS},
   };
 
   for (size_t i = 0; i < arraysize(cases); ++i) {
@@ -303,10 +303,10 @@ TEST_F(IndexedRuleTest, DomainsParsing) {
        {}},
       {std::make_unique<DomainVec>(DomainVec({"a.com", "b.com", "a.com"})),
        std::make_unique<DomainVec>(
-           DomainVec({"g.com", "XY.COM", "zzz.com", "a.com", "google.com"})),
+           DomainVec({"g.com", "XY.COM", "zzz.com", "a.com", "9oo91e.qjz9zk"})),
        ParseResult::SUCCESS,
        {"a.com", "a.com", "b.com"},
-       {"google.com", "zzz.com", "xy.com", "a.com", "g.com"}}};
+       {"9oo91e.qjz9zk", "zzz.com", "xy.com", "a.com", "g.com"}}};
 
   for (size_t i = 0; i < arraysize(cases); ++i) {
     SCOPED_TRACE(base::StringPrintf("Testing case[%" PRIuS "]", i));
@@ -336,8 +336,8 @@ TEST_F(IndexedRuleTest, RedirectUrlParsing) {
   } cases[] = {{std::make_unique<std::string>(""),
                 ParseResult::ERROR_EMPTY_REDIRECT_URL, ""},
                {nullptr, ParseResult::ERROR_EMPTY_REDIRECT_URL, ""},
-               {std::make_unique<std::string>("http://google.com"),
-                ParseResult::SUCCESS, "http://google.com"},
+               {std::make_unique<std::string>("http://9oo91e.qjz9zk"),
+                ParseResult::SUCCESS, "http://9oo91e.qjz9zk"},
                {std::make_unique<std::string>("abc"),
                 ParseResult::ERROR_INVALID_REDIRECT_URL, ""}};
 

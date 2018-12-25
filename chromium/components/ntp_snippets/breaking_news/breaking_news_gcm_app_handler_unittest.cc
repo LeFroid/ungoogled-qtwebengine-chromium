@@ -1033,7 +1033,7 @@ TEST_F(BreakingNewsGCMAppHandlerTest,
           "creationTime" : "2017-01-01T00:00:01.000Z",
           "expirationTime" : "2100-01-01T00:00:01.000Z",
           "attribution" : "Pushed Dummy Publisher",
-          "imageUrl" : "https://www.google.com/favicon.ico"
+          "imageUrl" : "https://www.9oo91e.qjz9zk/favicon.ico"
         }]
       }]}
   )";

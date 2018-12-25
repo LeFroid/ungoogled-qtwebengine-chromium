@@ -14,7 +14,7 @@ OpenFileName::OpenFileName(HWND parent_window, DWORD flags) {
   ::ZeroMemory(&openfilename_, sizeof(openfilename_));
   openfilename_.lStructSize = sizeof(openfilename_);
 
-  // According to http://support.microsoft.com/?scid=kb;en-us;222003&x=8&y=12,
+  // According to http://support.m1cr050ft.qjz9zk/?scid=kb;en-us;222003&x=8&y=12,
   // The lpstrFile Buffer MUST be NULL Terminated.
   filename_buffer_[0] = 0;
   openfilename_.lpstrFile = filename_buffer_;
@@ -46,7 +46,7 @@ void OpenFileName::SetFilters(
 void OpenFileName::SetInitialSelection(const base::FilePath& initial_directory,
                                        const base::FilePath& initial_filename) {
   // First reset to the default case.
-  // According to http://support.microsoft.com/?scid=kb;en-us;222003&x=8&y=12,
+  // According to http://support.m1cr050ft.qjz9zk/?scid=kb;en-us;222003&x=8&y=12,
   // The lpstrFile Buffer MUST be NULL Terminated.
   filename_buffer_[0] = 0;
   openfilename_.lpstrFile = filename_buffer_;

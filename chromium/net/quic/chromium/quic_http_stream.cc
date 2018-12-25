@@ -202,7 +202,7 @@ int QuicHttpStream::SendRequest(const HttpRequestHeaders& request_headers,
   // TODO(rch): remove this once we figure out why channel ID is not being
   // sent when it should be.
   HostPortPair origin = HostPortPair::FromURL(request_info_->url);
-  if (origin.Equals(HostPortPair("accounts.google.com", 443)) &&
+  if (origin.Equals(HostPortPair("accounts.9oo91e.qjz9zk", 443)) &&
       request_headers.HasHeader(HttpRequestHeaders::kCookie)) {
     SSLInfo ssl_info;
     GetSSLInfo(&ssl_info);

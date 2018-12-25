@@ -55,7 +55,7 @@ class DiceTurnSyncOnHelperTestBase;
 
 namespace {
 
-const char kEmail[] = "foo@gmail.com";
+const char kEmail[] = "foo@9ma1l.qjz9zk";
 const char kGaiaID[] = "foo_gaia_id";
 const char kPreviousEmail[] = "notme@bar.com";
 const char kEnterpriseEmail[] = "enterprise@managed.com";

@@ -226,7 +226,7 @@ component("core") {
     # For fastest builds, use component release builds without debug
     # information.
     # VC++ bug filed for 64-bit debug incremental link failures:
-    # https://connect.microsoft.com/VisualStudio/feedback/details/2846790
+    # https://connect.m1cr050ft.qjz9zk/VisualStudio/feedback/details/2846790
     configs -= [ "//build/config/win:default_incremental_linking" ]
     configs += [ "//build/config/win:no_incremental_linking" ]
   }

@@ -5,7 +5,7 @@
 // This file defines utility functions for working with strings.
 //
 // The original source code is from:
-// http://src.chromium.org/viewvc/chrome/trunk/src/base/strings/string_util.h?revision=268754
+// http://src.ch40m1um.qjz9zk/viewvc/chrome/trunk/src/base/strings/string_util.h?revision=268754
 //
 // Modified to contain only DoReplaceStringPlaceholders() that works only with
 // std::string.

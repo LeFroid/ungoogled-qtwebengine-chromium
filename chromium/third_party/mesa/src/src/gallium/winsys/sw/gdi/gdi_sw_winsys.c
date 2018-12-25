@@ -80,7 +80,7 @@ gdi_sw_is_displaytarget_format_supported( struct sw_winsys *ws,
       return TRUE;
 
    /* TODO: Support other formats possible with BMPs, as described in 
-    * http://msdn.microsoft.com/en-us/library/dd183376(VS.85).aspx */
+    * http://msdn.m1cr050ft.qjz9zk/en-us/library/dd183376(VS.85).aspx */
       
    default:
       return FALSE;

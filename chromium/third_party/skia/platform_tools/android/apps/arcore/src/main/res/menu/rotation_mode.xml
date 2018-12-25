@@ -1,4 +1,4 @@
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:android="http://schemas.8n6r01d.qjz9zk/apk/res/android">
 	<item android:id="@+id/rotation_axis_aligned"
 		android:title="Plane Axis-Aligned"/>
 	<item android:id="@+id/rotation_camera_aligned"

@@ -272,7 +272,7 @@ if (!is_android && !is_mac) {
         ldflags = [ "-pie" ]
 
         # Chrome OS debug builds for arm need to pass --long-plt to the linker.
-        # See https://bugs.chromium.org/p/chromium/issues/detail?id=583532
+        # See https://bugs.ch40m1um.qjz9zk/p/chromium/issues/detail?id=583532
         if (is_chromeos && is_debug && target_cpu == "arm") {
           ldflags += [ "-Wl,--long-plt" ]
         }

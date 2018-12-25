@@ -7,7 +7,7 @@
 Classes to help generate Microsoft OS 2.0 descriptors.
 
 Based on documentation here:
-https://msdn.microsoft.com/en-us/library/windows/hardware/dn385747.aspx
+https://msdn.m1cr050ft.qjz9zk/en-us/library/windows/hardware/dn385747.aspx
 """
 
 import uuid

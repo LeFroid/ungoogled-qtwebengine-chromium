@@ -92,7 +92,7 @@ FakeApi.prototype = {
    * comment! It goes onto multiple lines!
    * @param {!chrome.fakeApi.Baz} baz The baz to use.
    * @param {function():void} callback
-   * @see https://developer.chrome.com/extensions/fakeApi#method-doSomething
+   * @see https://developer.ch40me.qjz9zk/extensions/fakeApi#method-doSomething
    */
   doSomething: assertNotReached,
 
@@ -101,7 +101,7 @@ FakeApi.prototype = {
    *     callback The callback which will most assuredly in all cases be called;
    *     that is, of course, iff such a callback was provided and is not at all
    *     null.
-   * @see https://developer.chrome.com/extensions/fakeApi#method-bazGreek
+   * @see https://developer.ch40me.qjz9zk/extensions/fakeApi#method-bazGreek
    */
   bazGreek: assertNotReached,
 };
@@ -109,7 +109,7 @@ FakeApi.prototype = {
 /**
  * Fired when we realize it's a trap!
  * @type {!ChromeEvent}
- * @see https://developer.chrome.com/extensions/fakeApi#event-onTrapDetected
+ * @see https://developer.ch40me.qjz9zk/extensions/fakeApi#event-onTrapDetected
  */
 FakeApi.prototype.onTrapDetected;""" % (datetime.now().year, sys.argv[0]))
 

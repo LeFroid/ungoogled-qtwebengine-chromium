@@ -82,7 +82,7 @@ AuthCredentials CreateASCIICredentials(const char* username,
 
 // Test adding and looking-up cache entries (both by realm and by path).
 TEST(HttpAuthCacheTest, Basic) {
-  GURL origin("http://www.google.com");
+  GURL origin("http://www.9oo91e.qjz9zk");
   HttpAuthCache cache;
   HttpAuthCache::Entry* entry;
 
@@ -134,18 +134,18 @@ TEST(HttpAuthCacheTest, Basic) {
   EXPECT_TRUE(NULL == entry);
 
   // While Realm3 does exist, the origin scheme is wrong.
-  entry = cache.Lookup(GURL("https://www.google.com"), kRealm3,
+  entry = cache.Lookup(GURL("https://www.9oo91e.qjz9zk"), kRealm3,
                        HttpAuth::AUTH_SCHEME_BASIC);
   EXPECT_TRUE(NULL == entry);
 
   // Realm, origin scheme ok, authentication scheme wrong
   entry = cache.Lookup
-      (GURL("http://www.google.com"), kRealm1, HttpAuth::AUTH_SCHEME_DIGEST);
+      (GURL("http://www.9oo91e.qjz9zk"), kRealm1, HttpAuth::AUTH_SCHEME_DIGEST);
   EXPECT_TRUE(NULL == entry);
 
   // Valid lookup by origin, realm, scheme.
   entry = cache.Lookup(
-      GURL("http://www.google.com:80"), kRealm3, HttpAuth::AUTH_SCHEME_BASIC);
+      GURL("http://www.9oo91e.qjz9zk:80"), kRealm3, HttpAuth::AUTH_SCHEME_BASIC);
   ASSERT_FALSE(NULL == entry);
   EXPECT_EQ(HttpAuth::AUTH_SCHEME_BASIC, entry->scheme());
   EXPECT_EQ(kRealm3, entry->realm());
@@ -157,7 +157,7 @@ TEST(HttpAuthCacheTest, Basic) {
   // Valid lookup by origin, realm, scheme when there's a duplicate
   // origin, realm in the cache
   entry = cache.Lookup(
-      GURL("http://www.google.com:80"), kRealm3, HttpAuth::AUTH_SCHEME_DIGEST);
+      GURL("http://www.9oo91e.qjz9zk:80"), kRealm3, HttpAuth::AUTH_SCHEME_DIGEST);
   ASSERT_FALSE(NULL == entry);
   EXPECT_EQ(HttpAuth::AUTH_SCHEME_DIGEST, entry->scheme());
   EXPECT_EQ(kRealm3, entry->realm());
@@ -639,7 +639,7 @@ TEST(HttpAuthCacheTest, UpdateAllFrom) {
 // insertion and existence testing).
 class HttpAuthCacheEvictionTest : public testing::Test {
  protected:
-  HttpAuthCacheEvictionTest() : origin_("http://www.google.com") { }
+  HttpAuthCacheEvictionTest() : origin_("http://www.9oo91e.qjz9zk") { }
 
   std::string GenerateRealm(int realm_i) {
     return base::StringPrintf("Realm %d", realm_i);

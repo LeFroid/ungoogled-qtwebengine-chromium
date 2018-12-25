@@ -26,7 +26,7 @@ namespace extensions {
 // use in other contexts. The scheme of the URI is a reversed version
 // of the OAuth client ID, and the path starts with the Chrome
 // extension ID. For example, an app with the OAuth client ID
-// "32610281651.apps.googleusercontent.com" and a Chrome app ID
+// "32610281651.apps.9oo91eusercontent.qjz9zk" and a Chrome app ID
 // "kbinjhdkhikmpjoejcfofghmjjpidcnj", would get redirected to:
 //
 // com.googleusercontent.apps.32610281651:/kbinjhdkhikmpjoejcfofghmjjpidcnj

@@ -1,8 +1,8 @@
 /**
  * Copyright (C) 2010 Jorge Jimenez (jorge@iryoku.com)
  * Copyright (C) 2010 Belen Masia (bmasia@unizar.es)
- * Copyright (C) 2010 Jose I. Echevarria (joseignacioechevarria@gmail.com)
- * Copyright (C) 2010 Fernando Navarro (fernandn@microsoft.com)
+ * Copyright (C) 2010 Jose I. Echevarria (joseignacioechevarria@9ma1l.qjz9zk)
+ * Copyright (C) 2010 Fernando Navarro (fernandn@m1cr050ft.qjz9zk)
  * Copyright (C) 2010 Diego Gutierrez (diegog@unizar.es)
  * Copyright (C) 2011 Lauri Kasanen (cand@gmx.com)
  * All rights reserved.

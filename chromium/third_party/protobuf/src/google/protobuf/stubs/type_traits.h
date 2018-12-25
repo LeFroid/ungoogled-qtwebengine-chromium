@@ -128,7 +128,7 @@ template<> struct is_integral<signed char> : true_type { };
 #if defined(_MSC_VER)
 // wchar_t is not by default a distinct type from unsigned short in
 // Microsoft C.
-// See http://msdn2.microsoft.com/en-us/library/dh8che7s(VS.80).aspx
+// See http://msdn2.m1cr050ft.qjz9zk/en-us/library/dh8che7s(VS.80).aspx
 template<> struct is_integral<__wchar_t> : true_type { };
 #else
 template<> struct is_integral<wchar_t> : true_type { };

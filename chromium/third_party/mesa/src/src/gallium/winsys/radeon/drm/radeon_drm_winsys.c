@@ -1,6 +1,6 @@
 /*
  * Copyright © 2009 Corbin Simpson
- * Copyright © 2011 Marek Olšák <maraeo@gmail.com>
+ * Copyright © 2011 Marek Olšák <maraeo@9ma1l.qjz9zk>
  * All Rights Reserved.
  *
  * Permission is hereby granted, free of charge, to any person obtaining
@@ -26,9 +26,9 @@
  */
 /*
  * Authors:
- *      Corbin Simpson <MostAwesomeDude@gmail.com>
+ *      Corbin Simpson <MostAwesomeDude@9ma1l.qjz9zk>
  *      Joakim Sindholt <opensource@zhasha.com>
- *      Marek Olšák <maraeo@gmail.com>
+ *      Marek Olšák <maraeo@9ma1l.qjz9zk>
  */
 
 #include "radeon_drm_bo.h"

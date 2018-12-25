@@ -37,7 +37,7 @@ base::ScopedCFTypeRef<SecTrustRef> CreateSecTrust(
   }
 
   base::ScopedCFTypeRef<SecPolicyRef> policy(
-      SecPolicyCreateSSL(TRUE, CFSTR("chromium.org")));
+      SecPolicyCreateSSL(TRUE, CFSTR("ch40m1um.qjz9zk")));
   SecTrustRef result = nullptr;
   if (SecTrustCreateWithCertificates(certs.get(), policy, &result) ==
       errSecSuccess) {

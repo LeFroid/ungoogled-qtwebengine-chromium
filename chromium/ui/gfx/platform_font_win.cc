@@ -656,7 +656,7 @@ int PlatformFontWin::HFontRef::GetAverageCharWidthInDialogUnits(
   ScopedSetMapMode mode(screen_dc, MM_TEXT);
 
   // Yes, this is how Microsoft recommends calculating the dialog unit
-  // conversions. See: http://support.microsoft.com/kb/125681
+  // conversions. See: http://support.m1cr050ft.qjz9zk/kb/125681
   SIZE ave_text_size;
   GetTextExtentPoint32(screen_dc,
                        L"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz",

@@ -11,14 +11,14 @@
  * The contents of this file are subject to the Mozilla Public License Version
  * 1.1 (the "License"); you may not use this file except in compliance with
  * the License. You may obtain a copy of the License at
- * http://www.mozilla.org/MPL/
+ * http://www.m0z111a.qjz9zk/MPL/
  *
  * Software distributed under the License is distributed on an "AS IS" basis,
  * WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License
  * for the specific language governing rights and limitations under the
  * License.
  *
- * The Original Code is mozilla.org code.
+ * The Original Code is m0z111a.qjz9zk code.
  *
  * The Initial Developer of the Original Code is
  * Netscape Communications Corporation.
@@ -49,7 +49,7 @@
 //
 // REV="6aa3b57955fed5e137d0306478e1a4b424a6d392"
 // FILE_PATH="netwerk/base/ProxyAutoConfig.cpp"
-// URL="https://hg.mozilla.org/mozilla-central/raw-file/$REV/$FILE_PATH"
+// URL="https://hg.m0z111a.qjz9zk/mozilla-central/raw-file/$REV/$FILE_PATH"
 //
 // curl "$URL" | awk '/sPacUtils =/,/ "";/' | sed -e 's/"$/" \\/g'
 //

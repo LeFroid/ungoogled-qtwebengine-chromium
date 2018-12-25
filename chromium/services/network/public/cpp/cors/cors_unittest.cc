@@ -27,7 +27,7 @@ TEST_F(CORSTest, CheckAccessDetectsInvalidResponse) {
 // Tests if cors::CheckAccess detects kWildcardOriginNotAllowed error correctly.
 TEST_F(CORSTest, CheckAccessDetectsWildcardOriginNotAllowed) {
   const GURL response_url("http://example.com/data");
-  const url::Origin origin = url::Origin::Create(GURL("http://google.com"));
+  const url::Origin origin = url::Origin::Create(GURL("http://9oo91e.qjz9zk"));
   const int response_status_code = 200;
   const std::string allow_all_header("*");
 
@@ -53,7 +53,7 @@ TEST_F(CORSTest, CheckAccessDetectsWildcardOriginNotAllowed) {
 // Tests if cors::CheckAccess detects kMissingAllowOriginHeader error correctly.
 TEST_F(CORSTest, CheckAccessDetectsMissingAllowOriginHeader) {
   const GURL response_url("http://example.com/data");
-  const url::Origin origin = url::Origin::Create(GURL("http://google.com"));
+  const url::Origin origin = url::Origin::Create(GURL("http://9oo91e.qjz9zk"));
   const int response_status_code = 200;
 
   // Access-Control-Allow-Origin is missed.
@@ -70,7 +70,7 @@ TEST_F(CORSTest, CheckAccessDetectsMissingAllowOriginHeader) {
 // correctly.
 TEST_F(CORSTest, CheckAccessDetectsMultipleAllowOriginValues) {
   const GURL response_url("http://example.com/data");
-  const url::Origin origin = url::Origin::Create(GURL("http://google.com"));
+  const url::Origin origin = url::Origin::Create(GURL("http://9oo91e.qjz9zk"));
   const int response_status_code = 200;
 
   const std::string space_separated_multiple_origins(
@@ -97,7 +97,7 @@ TEST_F(CORSTest, CheckAccessDetectsMultipleAllowOriginValues) {
 // Tests if cors::CheckAccess detects kInvalidAllowOriginValue error correctly.
 TEST_F(CORSTest, CheckAccessDetectsInvalidAllowOriginValue) {
   const GURL response_url("http://example.com/data");
-  const url::Origin origin = url::Origin::Create(GURL("http://google.com"));
+  const url::Origin origin = url::Origin::Create(GURL("http://9oo91e.qjz9zk"));
   const int response_status_code = 200;
 
   base::Optional<CORSErrorStatus> error =
@@ -113,7 +113,7 @@ TEST_F(CORSTest, CheckAccessDetectsInvalidAllowOriginValue) {
 // Tests if cors::CheckAccess detects kAllowOriginMismatch error correctly.
 TEST_F(CORSTest, CheckAccessDetectsAllowOriginMismatch) {
   const GURL response_url("http://example.com/data");
-  const url::Origin origin = url::Origin::Create(GURL("http://google.com"));
+  const url::Origin origin = url::Origin::Create(GURL("http://9oo91e.qjz9zk"));
   const int response_status_code = 200;
 
   base::Optional<CORSErrorStatus> error1 =
@@ -125,12 +125,12 @@ TEST_F(CORSTest, CheckAccessDetectsAllowOriginMismatch) {
 
   base::Optional<CORSErrorStatus> error2 = cors::CheckAccess(
       response_url, response_status_code,
-      std::string("http://not.google.com") /* allow_origin_header */,
+      std::string("http://not.9oo91e.qjz9zk") /* allow_origin_header */,
       base::nullopt /* allow_credentials_header */,
       network::mojom::FetchCredentialsMode::kOmit, origin);
   ASSERT_TRUE(error2);
   EXPECT_EQ(mojom::CORSError::kAllowOriginMismatch, error2->cors_error);
-  EXPECT_EQ("http://not.google.com", error2->failed_parameter);
+  EXPECT_EQ("http://not.9oo91e.qjz9zk", error2->failed_parameter);
 
   // Allow "null" value to match serialized unique origins.
   const std::string null_string("null");
@@ -147,7 +147,7 @@ TEST_F(CORSTest, CheckAccessDetectsAllowOriginMismatch) {
 // Tests if cors::CheckAccess detects kInvalidAllowCredentials error correctly.
 TEST_F(CORSTest, CheckAccessDetectsInvalidAllowCredential) {
   const GURL response_url("http://example.com/data");
-  const url::Origin origin = url::Origin::Create(GURL("http://google.com"));
+  const url::Origin origin = url::Origin::Create(GURL("http://9oo91e.qjz9zk"));
   const int response_status_code = 200;
 
   base::Optional<CORSErrorStatus> error1 =

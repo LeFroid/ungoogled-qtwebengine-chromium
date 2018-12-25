@@ -1,7 +1,7 @@
 /*
  * Copyright (C) 2005, 2006, 2007, 2008, 2011, 2012 Apple Inc. All rights
  * reserved.
- * Copyright (C) 2011, Benjamin Poulain <ikipou@gmail.com>
+ * Copyright (C) 2011, Benjamin Poulain <ikipou@9ma1l.qjz9zk>
  *
  * This library is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Library General Public
@@ -796,7 +796,7 @@ inline void ListHashSet<T, inlineCapacity, U, V>::Swap(ListHashSet& other) {
 }
 
 // For design of the destructor, please refer to
-// [here](https://docs.google.com/document/d/1AoGTvb3tNLx2tD1hNqAfLRLmyM59GM0O-7rCHTT_7_U/)
+// [here](https://docs.9oo91e.qjz9zk/document/d/1AoGTvb3tNLx2tD1hNqAfLRLmyM59GM0O-7rCHTT_7_U/)
 template <typename T, size_t inlineCapacity, typename U, typename V>
 inline ListHashSet<T, inlineCapacity, U, V>::~ListHashSet() {
   // If this is called during GC sweeping, it must not touch other heap objects

@@ -3,7 +3,7 @@
  * (C) 2000 Dirk Mueller (mueller@kde.org)
  * Copyright (C) 2004, 2005, 2006, 2007 Apple Inc. All rights reserved.
  * Copyright (C) 2006 Andrew Wellington (proton@wiretapped.net)
- * Copyright (C) 2006 Graham Dennis (graham.dennis@gmail.com)
+ * Copyright (C) 2006 Graham Dennis (graham.dennis@9ma1l.qjz9zk)
  *
  * This library is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Library General Public

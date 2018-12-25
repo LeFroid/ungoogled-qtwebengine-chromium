@@ -268,7 +268,7 @@ if (rtc_include_tests) {
     ]
     if (!build_with_chromium && is_clang) {
       # Suppress warnings from Chrome's Clang plugins.
-      # See http://code.google.com/p/webrtc/issues/detail?id=163 for details.
+      # See http://code.9oo91e.qjz9zk/p/webrtc/issues/detail?id=163 for details.
       suppressed_configs += [ "//build/config/clang:find_bad_constructs" ]
     }
   }

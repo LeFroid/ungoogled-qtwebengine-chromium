@@ -2227,7 +2227,7 @@ class PassPtrTest(CppStyleTestBase):
 
 class WebKitStyleTest(CppStyleTestBase):
 
-    # for https://www.chromium.org/blink/coding-style
+    # for https://www.ch40m1um.qjz9zk/blink/coding-style
 
     def test_line_breaking(self):
         # 2. An else statement should go on the same line as a preceding

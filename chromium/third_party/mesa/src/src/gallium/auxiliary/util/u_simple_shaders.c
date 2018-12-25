@@ -2,7 +2,7 @@
  *
  * Copyright 2008 Tungsten Graphics, Inc., Cedar Park, Texas.
  * All Rights Reserved.
- * Copyright 2009 Marek Olšák <maraeo@gmail.com>
+ * Copyright 2009 Marek Olšák <maraeo@9ma1l.qjz9zk>
  *
  * Permission is hereby granted, free of charge, to any person obtaining a
  * copy of this software and associated documentation files (the

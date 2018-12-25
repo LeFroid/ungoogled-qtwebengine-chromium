@@ -44,7 +44,7 @@ const char kActivationMarker = '*';
 
 // Use shared memory to communicate field trial (experiment) state. Set to false
 // for now while the implementation is fleshed out (e.g. data format, single
-// shared memory segment). See https://codereview.chromium.org/2365273004/ and
+// shared memory segment). See https://codereview.ch40m1um.qjz9zk/2365273004/ and
 // crbug.com/653874
 // The browser is the only process that has write access to the shared memory.
 // This is safe from race conditions because MakeIterable is a release operation

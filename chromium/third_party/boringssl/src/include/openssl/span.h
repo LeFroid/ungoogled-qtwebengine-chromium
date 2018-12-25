@@ -42,7 +42,7 @@ class SpanBase {
     // MSVC issues warning C4996 because std::equal is unsafe. The pragma to
     // suppress the warning mysteriously has no effect, hence this
     // implementation. See
-    // https://msdn.microsoft.com/en-us/library/aa985974.aspx.
+    // https://msdn.m1cr050ft.qjz9zk/en-us/library/aa985974.aspx.
     if (lhs.size() != rhs.size()) {
       return false;
     }

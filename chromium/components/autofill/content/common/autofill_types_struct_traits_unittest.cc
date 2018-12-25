@@ -72,7 +72,7 @@ void CreateTestPasswordForm(PasswordForm* form) {
   form->submit_element = base::ASCIIToUTF16("test_submit");
   form->username_element = base::ASCIIToUTF16("username");
   form->username_marked_by_site = true;
-  form->username_value = base::ASCIIToUTF16("test@gmail.com");
+  form->username_value = base::ASCIIToUTF16("test@9ma1l.qjz9zk");
   form->other_possible_usernames.push_back(ValueElementPair(
       base::ASCIIToUTF16("Jerry_1"), base::ASCIIToUTF16("id1")));
   form->other_possible_usernames.push_back(ValueElementPair(
@@ -101,7 +101,7 @@ void CreateTestPasswordForm(PasswordForm* form) {
       PasswordForm::GenerationUploadStatus::POSITIVE_SIGNAL_SENT;
   form->display_name = base::ASCIIToUTF16("test display name");
   form->icon_url = GURL("https://foo.com/icon.png");
-  form->federation_origin = url::Origin::Create(GURL("http://wwww.google.com"));
+  form->federation_origin = url::Origin::Create(GURL("http://wwww.9oo91e.qjz9zk"));
   form->skip_zero_click = false;
   form->layout = PasswordForm::Layout::LAYOUT_LOGIN_AND_SIGNUP;
   form->was_parsed_using_autofill_predictions = false;

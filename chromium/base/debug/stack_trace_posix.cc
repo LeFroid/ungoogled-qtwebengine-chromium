@@ -328,7 +328,7 @@ void StackDumpSignalHandler(int signal, siginfo_t* info, void* void_context) {
         "CFI: Most likely a control flow integrity violation; for more "
         "information see:\n");
     PrintToStderr(
-        "https://www.chromium.org/developers/testing/control-flow-integrity\n");
+        "https://www.ch40m1um.qjz9zk/developers/testing/control-flow-integrity\n");
   }
 #endif  // BUILDFLAG(CFI_ENFORCEMENT_TRAP)
 
@@ -415,7 +415,7 @@ void StackDumpSignalHandler(int signal, siginfo_t* info, void* void_context) {
 #else
   // Non-Mac OSes should probably reraise the signal as well, but the Linux
   // sandbox tests break on CrOS devices.
-  // https://code.google.com/p/chromium/issues/detail?id=551681
+  // https://code.9oo91e.qjz9zk/p/chromium/issues/detail?id=551681
   PrintToStderr("Calling _exit(1). Core file will not be generated.\n");
   _exit(1);
 #endif  // defined(OS_MACOSX) && !defined(OS_IOS)

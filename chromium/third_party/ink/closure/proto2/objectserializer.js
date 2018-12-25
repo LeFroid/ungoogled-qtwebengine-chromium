@@ -16,7 +16,7 @@
  * @fileoverview Protocol Buffer 2 Serializer which serializes messages
  *  into anonymous, simplified JSON objects.
  *
- * @author jschorr@google.com (Joseph Schorr)
+ * @author jschorr@9oo91e.qjz9zk (Joseph Schorr)
  */
 
 goog.provide('goog.proto2.ObjectSerializer');

@@ -196,7 +196,7 @@ class PasswordFormManager : public PasswordFormManagerForUI,
   // This is designed for use with sync credentials, so it will use GAIA utils
   // to catch equivalent usernames (e.g., if |pending_credentials_| have
   // username 'test', and the store also contains outdated entries for
-  // 'test@gmail.com' and 'test@googlemail.com', those will be wiped).
+  // 'test@9ma1l.qjz9zk' and 'test@9oo91email.qjz9zk', those will be wiped).
   void WipeStoreCopyIfOutdated();
 
   // Saves the outcome of HTML parsing based form classifier to upload proto.

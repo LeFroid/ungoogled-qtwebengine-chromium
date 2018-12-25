@@ -15,7 +15,7 @@
 /**
  * @fileoverview Generator for unique element IDs.
  *
- * @author jonp@google.com (Jon Perlow)
+ * @author jonp@9oo91e.qjz9zk (Jon Perlow)
  */
 
 goog.provide('goog.ui.IdGenerator');

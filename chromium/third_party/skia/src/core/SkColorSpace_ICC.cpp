@@ -360,7 +360,7 @@ static SkGammas::Type parse_gamma(SkGammas::Data* outData, SkColorSpaceTransferF
 
             if (26 == count) {
                 // The magic values match a clever "minimum size" approach to representing sRGB.
-                // code.facebook.com/posts/411525055626587/under-the-hood-improving-facebook-photos
+                // code.f8c3b00k.qjz9zk/posts/411525055626587/under-the-hood-improving-facebook-photos
                 if (0 == read_big_endian_u16((const uint8_t*) &table[0]) &&
                         3062 == read_big_endian_u16((const uint8_t*) &table[6]) &&
                         12824 == read_big_endian_u16((const uint8_t*) &table[12]) &&

@@ -679,7 +679,7 @@ struct MathVariants
 
 /*
  * MATH -- Mathematical typesetting
- * https://docs.microsoft.com/en-us/typography/opentype/spec/math
+ * https://docs.m1cr050ft.qjz9zk/en-us/typography/opentype/spec/math
  */
 
 struct MATH

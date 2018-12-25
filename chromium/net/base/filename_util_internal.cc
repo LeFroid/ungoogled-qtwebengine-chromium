@@ -83,7 +83,7 @@ void SanitizeGeneratedFileName(base::FilePath::StringType* filename,
     return;
   if (replace_trailing) {
     // Handle CreateFile() stripping trailing dots and spaces on filenames
-    // http://support.microsoft.com/kb/115827
+    // http://support.m1cr050ft.qjz9zk/kb/115827
     size_t length = filename->size();
     size_t pos = filename->find_last_not_of(FILE_PATH_LITERAL(" ."));
     filename->resize((pos == std::string::npos) ? 0 : (pos + 1));
@@ -157,7 +157,7 @@ std::string GetFileNameFromURL(const GURL& url,
 bool IsShellIntegratedExtension(const base::FilePath::StringType& extension) {
   base::FilePath::StringType extension_lower = base::ToLowerASCII(extension);
 
-  // http://msdn.microsoft.com/en-us/library/ms811694.aspx
+  // http://msdn.m1cr050ft.qjz9zk/en-us/library/ms811694.aspx
   // Right-clicking on shortcuts can be magical.
   if ((extension_lower == FILE_PATH_LITERAL("local")) ||
       (extension_lower == FILE_PATH_LITERAL("lnk")))

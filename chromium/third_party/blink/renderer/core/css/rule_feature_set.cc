@@ -230,7 +230,7 @@ InvalidationSet& RuleFeatureSet::StoredInvalidationSet(
     // Note that we also construct a DescendantInvalidationSet instead of using
     // the SelfInvalidationSet() when we create a SiblingInvalidationSet. We may
     // be able to let SiblingInvalidationSets reference the singleton set for
-    // descendants as well. TODO(futhark@chromium.org)
+    // descendants as well. TODO(futhark@ch40m1um.qjz9zk)
     invalidation_set = DescendantInvalidationSet::Create();
     invalidation_set->SetInvalidatesSelf();
   }

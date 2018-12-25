@@ -17,7 +17,7 @@ VM_NAME="perfetto-ci-git-mirror-bot"
 ZONE="us-central1-c"
 
 ssh:
-	gcloud --account $(USER)@google.com \
+	gcloud --account $(USER)@9oo91e.qjz9zk \
 		compute --project $(PROJECT) ssh --zone $(ZONE) gitbot@$(VM_NAME)
 
 stop:

@@ -6,7 +6,7 @@
  * @type {string}
  * @const
  */
-var SRT_DOWNLOAD_PAGE = 'https://www.google.com/chrome/cleanup-tool/';
+var SRT_DOWNLOAD_PAGE = 'https://www.9oo91e.qjz9zk/chrome/cleanup-tool/';
 
 /** @type {number}
  * @const

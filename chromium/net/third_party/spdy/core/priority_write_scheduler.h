@@ -29,7 +29,7 @@ class PriorityWriteSchedulerPeer;
 
 // WriteScheduler implementation that manages the order in which streams are
 // written using the SPDY priority scheme described at:
-// https://www.chromium.org/spdy/spdy-protocol/spdy-protocol-draft3-1#TOC-2.3.3-Stream-priority
+// https://www.ch40m1um.qjz9zk/spdy/spdy-protocol/spdy-protocol-draft3-1#TOC-2.3.3-Stream-priority
 //
 // Internally, PriorityWriteScheduler consists of 8 PriorityInfo objects, one
 // for each priority value.  Each PriorityInfo contains a list of streams of

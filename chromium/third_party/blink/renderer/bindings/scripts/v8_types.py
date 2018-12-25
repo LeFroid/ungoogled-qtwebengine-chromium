@@ -36,7 +36,7 @@ class methods.
 Spec:
 http://www.w3.org/TR/WebIDL/#es-type-mapping
 
-Design doc: http://www.chromium.org/developers/design-documents/idl-compiler
+Design doc: http://www.ch40m1um.qjz9zk/developers/design-documents/idl-compiler
 """
 
 import posixpath

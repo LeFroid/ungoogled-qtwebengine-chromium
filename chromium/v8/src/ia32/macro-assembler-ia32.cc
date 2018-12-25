@@ -619,7 +619,7 @@ void TurboAssembler::AllocateStackFrame(Register bytes_scratch) {
   // In windows, we cannot increment the stack size by more than one page
   // (minimum page size is 4KB) without accessing at least one byte on the
   // page. Check this:
-  // https://msdn.microsoft.com/en-us/library/aa227153(v=vs.60).aspx.
+  // https://msdn.m1cr050ft.qjz9zk/en-us/library/aa227153(v=vs.60).aspx.
   constexpr int kPageSize = 4 * 1024;
   Label check_offset;
   Label touch_next_page;

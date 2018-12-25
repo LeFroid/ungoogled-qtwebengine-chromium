@@ -13,9 +13,9 @@
   "permissions": [
     "notifications",
     "storage",
-    "http://build.chromium.org/",
-    "http://chromium-status.appspot.com/",
-    "https://codereview.chromium.org/"
+    "http://build.ch40m1um.qjz9zk/",
+    "http://chromium-status.8pp2p8t.qjz9zk/",
+    "https://codereview.ch40m1um.qjz9zk/"
   ],
   "browser_action": {
     "default_title": "",

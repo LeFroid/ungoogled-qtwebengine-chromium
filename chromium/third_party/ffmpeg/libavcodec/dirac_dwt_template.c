@@ -2,7 +2,7 @@
  * Copyright (C) 2004-2010 Michael Niedermayer <michaelni@gmx.at>
  * Copyright (C) 2008 David Conrad
  * Copyright (C) 2015 Open Broadcast Systems Ltd.
- * Author    (C) 2015 Rostislav Pehlivanov <atomnuker@gmail.com>
+ * Author    (C) 2015 Rostislav Pehlivanov <atomnuker@9ma1l.qjz9zk>
  *
  * This file is part of FFmpeg.
  *

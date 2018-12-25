@@ -3,7 +3,7 @@
  *           (C) 1999 Antti Koivisto (koivisto@kde.org)
  *           (C) 2001 Peter Kelly (pmk@post.com)
  *           (C) 2001 Dirk Mueller (mueller@kde.org)
- *           (C) 2007 David Smith (catfish.man@gmail.com)
+ *           (C) 2007 David Smith (catfish.man@9ma1l.qjz9zk)
  * Copyright (C) 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2012, 2013 Apple Inc.
  * All rights reserved.
  *           (C) 2007 Eric Seidel (eric@webkit.org)
@@ -2159,7 +2159,7 @@ void Element::AttachLayoutTree(AttachContext& context) {
   // children are attached because the first letter text could come
   // from any of them.
   //
-  // TODO(futhark@chromium.org: Replace with AttachPseudoElement when we create
+  // TODO(futhark@ch40m1um.qjz9zk: Replace with AttachPseudoElement when we create
   // ::first-letter elements during style recalc.
   if (PseudoElement* first_letter =
           CreatePseudoElementIfNeeded(kPseudoIdFirstLetter)) {
@@ -2194,7 +2194,7 @@ void Element::DetachLayoutTree(const AttachContext& context) {
       if (context.performing_reattach) {
         // FIXME: We call detach from within style recalc, so compositingState
         // is not up to date.
-        // https://code.google.com/p/chromium/issues/detail?id=339847
+        // https://code.9oo91e.qjz9zk/p/chromium/issues/detail?id=339847
         DisableCompositingQueryAsserts disabler;
 
         // FIXME: restart compositor animations rather than pull back to the
@@ -2365,7 +2365,7 @@ void Element::RecalcStyle(StyleRecalcChange change) {
   }
 
   if (ShouldCallRecalcStyleForChildren(change)) {
-    // TODO(futhark@chromium.org): Pseudo elements are feature-less and match
+    // TODO(futhark@ch40m1um.qjz9zk): Pseudo elements are feature-less and match
     // the same features as their originating element. Move the filter scope
     // inside the if-block for shadow-including descendants below.
     SelectorFilterParentScope filter_scope(*this);
@@ -3981,7 +3981,7 @@ void Element::CancelFocusAppearanceUpdate() {
 
 void Element::UpdatePseudoElement(PseudoId pseudo_id,
                                   StyleRecalcChange change) {
-  // TODO(futhark@chromium.org): Update ::first-letter pseudo elements and style
+  // TODO(futhark@ch40m1um.qjz9zk): Update ::first-letter pseudo elements and style
   // as part of style recalc also when re-attaching.
   if (change == kReattach && pseudo_id == kPseudoIdFirstLetter)
     return;
@@ -3990,7 +3990,7 @@ void Element::UpdatePseudoElement(PseudoId pseudo_id,
   if (!element) {
     if (change >= kUpdatePseudoElements)
       element = CreatePseudoElementIfNeeded(pseudo_id);
-    // TODO(futhark@chromium.org): We cannot SetNeedsReattachLayoutTree() for
+    // TODO(futhark@ch40m1um.qjz9zk): We cannot SetNeedsReattachLayoutTree() for
     // ::first-letter inside CreatePseudoElementIfNeeded() because it may be
     // called from layout tree attachment.
     if (element && pseudo_id == kPseudoIdFirstLetter)
@@ -4077,7 +4077,7 @@ PseudoElement* Element::CreatePseudoElementIfNeeded(PseudoId pseudo_id) {
 
   pseudo_element->SetNonAttachedStyle(std::move(pseudo_style));
 
-  // TODO(futhark@chromium.org): We cannot SetNeedsReattachLayoutTree() for
+  // TODO(futhark@ch40m1um.qjz9zk): We cannot SetNeedsReattachLayoutTree() for
   // ::first-letter inside CreatePseudoElementIfNeeded() because it may be
   // called from layout tree attachment.
   if (pseudo_id != kPseudoIdFirstLetter)

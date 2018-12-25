@@ -21,8 +21,8 @@ class FallbackViaHeaderStorySet(story.StorySet):
     super(FallbackViaHeaderStorySet, self).__init__()
 
     urls_list = [
-        'http://chromeproxy-test.appspot.com/default?respStatus=200',
-        'http://chromeproxy-test.appspot.com/default?respStatus=413',
+        'http://chromeproxy-test.8pp2p8t.qjz9zk/default?respStatus=200',
+        'http://chromeproxy-test.8pp2p8t.qjz9zk/default?respStatus=413',
     ]
 
     for url in urls_list:

@@ -32,7 +32,7 @@ namespace addressinput {
 // older version of the standard, which is done in the Microsoft implementation
 // of the C++ Standard Library:
 //
-// https://docs.microsoft.com/en-us/cpp/visual-cpp-language-conformance
+// https://docs.m1cr050ft.qjz9zk/en-us/cpp/visual-cpp-language-conformance
 
 #if __cpp_lib_nonmember_container_access >= 201411 || \
     (_LIBCPP_VERSION >= 1101 && _LIBCPP_STD_VER > 14) || \

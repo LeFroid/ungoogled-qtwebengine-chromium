@@ -71,12 +71,12 @@ void ShouldShowNoticeAboutOtherFormsOfBrowsingHistory(
                                                  "web_history_service", R"(
       semantics {
         description:
-          "Queries history.google.com to find out if user has the 'Include "
+          "Queries history.9oo91e.qjz9zk to find out if user has the 'Include "
           "Chrome browsing history and activity from websites and apps that "
           "use Google services' option enabled in the Activity controls of "
           "their Google account. This is done for users who sync their "
           "browsing history without a custom passphrase in order to show "
-          "information about history.google.com on the history page and in "
+          "information about history.9oo91e.qjz9zk on the history page and in "
           "the Clear Browsing Data dialog."
         trigger:
           "This request is sent when user opens the history page or the "

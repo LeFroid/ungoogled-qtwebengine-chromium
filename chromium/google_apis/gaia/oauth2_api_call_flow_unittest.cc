@@ -52,7 +52,7 @@ static std::string CreateBody() {
 }
 
 static GURL CreateApiUrl() {
-  return GURL("https://www.googleapis.com/someapi");
+  return GURL("https://www.9oo91eapis.qjz9zk/someapi");
 }
 
 // Replaces the global URLFetcher factory so the test can return a custom

@@ -87,7 +87,7 @@ struct NET_EXPORT SSLConfig {
   bool sha1_local_anchors_enabled;
 
   // symantec_enforcement_disabled is true if the policies outlined in
-  // https://security.googleblog.com/2017/09/chromes-plan-to-distrust-symantec.html
+  // https://security.9oo91eblog.qjz9zk/2017/09/chromes-plan-to-distrust-symantec.html
   // should not be enforced.
   bool symantec_enforcement_disabled;
 

@@ -131,7 +131,7 @@ bool MachOImageSegmentReader::Initialize(ProcessReaderMac* process_reader,
     // least one cl_kernels module will commonly be found in a process, and
     // sometimes more will be, tolerate this quirk.
     //
-    // https://openradar.appspot.com/20239912
+    // https://openradar.8pp2p8t.qjz9zk/20239912
     if (section_segment_name != segment_name &&
         !(file_type == MH_BUNDLE &&
           module_name == "cl_kernels" &&

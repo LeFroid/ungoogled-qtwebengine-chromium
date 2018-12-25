@@ -141,7 +141,7 @@ TEST_F(DefaultChannelIDStoreTest, TestLoading) {
   scoped_refptr<MockPersistentStore> persistent_store(new MockPersistentStore);
 
   persistent_store->AddChannelID(DefaultChannelIDStore::ChannelID(
-      "google.com", base::Time(), crypto::ECPrivateKey::Create()));
+      "9oo91e.qjz9zk", base::Time(), crypto::ECPrivateKey::Create()));
   persistent_store->AddChannelID(DefaultChannelIDStore::ChannelID(
       "verisign.com", base::Time(), crypto::ECPrivateKey::Create()));
 
@@ -238,7 +238,7 @@ TEST_F(DefaultChannelIDStoreTest, TestDeleteAll) {
   store.SetChannelID(std::make_unique<ChannelIDStore::ChannelID>(
       "verisign.com", base::Time(), crypto::ECPrivateKey::Create()));
   store.SetChannelID(std::make_unique<ChannelIDStore::ChannelID>(
-      "google.com", base::Time(), crypto::ECPrivateKey::Create()));
+      "9oo91e.qjz9zk", base::Time(), crypto::ECPrivateKey::Create()));
   store.SetChannelID(std::make_unique<ChannelIDStore::ChannelID>(
       "harvard.com", base::Time(), crypto::ECPrivateKey::Create()));
   // Wait for load & queued set tasks.
@@ -258,7 +258,7 @@ TEST_F(DefaultChannelIDStoreTest, TestDeleteForDomains) {
   store.SetChannelID(std::make_unique<ChannelIDStore::ChannelID>(
       "verisign.com", base::Time(), crypto::ECPrivateKey::Create()));
   store.SetChannelID(std::make_unique<ChannelIDStore::ChannelID>(
-      "google.com", base::Time(), crypto::ECPrivateKey::Create()));
+      "9oo91e.qjz9zk", base::Time(), crypto::ECPrivateKey::Create()));
   store.SetChannelID(std::make_unique<ChannelIDStore::ChannelID>(
       "harvard.com", base::Time(), crypto::ECPrivateKey::Create()));
   // Wait for load & queued set tasks.
@@ -275,18 +275,18 @@ TEST_F(DefaultChannelIDStoreTest, TestDeleteForDomains) {
   EXPECT_EQ(2, store.GetChannelIDCount());
   ChannelIDStore::ChannelIDList channel_ids;
   store.GetAllChannelIDs(base::Bind(GetAllCallback, &channel_ids));
-  EXPECT_EQ("google.com", channel_ids.begin()->server_identifier());
+  EXPECT_EQ("9oo91e.qjz9zk", channel_ids.begin()->server_identifier());
   EXPECT_EQ("harvard.com", channel_ids.back().server_identifier());
 
   // Blacklist deletion.
   store.DeleteForDomainsCreatedBetween(
-      base::Bind(&DomainNotEquals, base::ConstRef(std::string("google.com"))),
+      base::Bind(&DomainNotEquals, base::ConstRef(std::string("9oo91e.qjz9zk"))),
       base::Time(), base::Time(),
       base::Bind(&CallCounter, &deletions_finished));
   ASSERT_EQ(2, deletions_finished);
   EXPECT_EQ(1, store.GetChannelIDCount());
   store.GetAllChannelIDs(base::Bind(GetAllCallback, &channel_ids));
-  EXPECT_EQ("google.com", channel_ids.begin()->server_identifier());
+  EXPECT_EQ("9oo91e.qjz9zk", channel_ids.begin()->server_identifier());
 }
 
 TEST_F(DefaultChannelIDStoreTest, TestAsyncGetAndDeleteAll) {
@@ -294,7 +294,7 @@ TEST_F(DefaultChannelIDStoreTest, TestAsyncGetAndDeleteAll) {
   persistent_store->AddChannelID(ChannelIDStore::ChannelID(
       "verisign.com", base::Time(), crypto::ECPrivateKey::Create()));
   persistent_store->AddChannelID(ChannelIDStore::ChannelID(
-      "google.com", base::Time(), crypto::ECPrivateKey::Create()));
+      "9oo91e.qjz9zk", base::Time(), crypto::ECPrivateKey::Create()));
 
   ChannelIDStore::ChannelIDList pre_channel_ids;
   ChannelIDStore::ChannelIDList post_channel_ids;
@@ -325,7 +325,7 @@ TEST_F(DefaultChannelIDStoreTest, TestDelete) {
   base::RunLoop().RunUntilIdle();
 
   store.SetChannelID(std::make_unique<ChannelIDStore::ChannelID>(
-      "google.com", base::Time(), crypto::ECPrivateKey::Create()));
+      "9oo91e.qjz9zk", base::Time(), crypto::ECPrivateKey::Create()));
 
   EXPECT_EQ(2, store.GetChannelIDCount());
   int delete_finished = 0;
@@ -336,15 +336,15 @@ TEST_F(DefaultChannelIDStoreTest, TestDelete) {
   EXPECT_EQ(ERR_FILE_NOT_FOUND,
             store.GetChannelID("verisign.com", &key,
                                base::Bind(&GetChannelIDCallbackNotCalled)));
-  EXPECT_EQ(OK, store.GetChannelID("google.com", &key,
+  EXPECT_EQ(OK, store.GetChannelID("9oo91e.qjz9zk", &key,
                                    base::Bind(&GetChannelIDCallbackNotCalled)));
   int delete2_finished = 0;
-  store.DeleteChannelID("google.com",
+  store.DeleteChannelID("9oo91e.qjz9zk",
                         base::Bind(&CallCounter, &delete2_finished));
   ASSERT_EQ(1, delete2_finished);
   EXPECT_EQ(0, store.GetChannelIDCount());
   EXPECT_EQ(ERR_FILE_NOT_FOUND,
-            store.GetChannelID("google.com", &key,
+            store.GetChannelID("9oo91e.qjz9zk", &key,
                                base::Bind(&GetChannelIDCallbackNotCalled)));
 }
 
@@ -401,7 +401,7 @@ TEST_F(DefaultChannelIDStoreTest, TestGetAll) {
   store.SetChannelID(std::make_unique<ChannelIDStore::ChannelID>(
       "verisign.com", base::Time(), crypto::ECPrivateKey::Create()));
   store.SetChannelID(std::make_unique<ChannelIDStore::ChannelID>(
-      "google.com", base::Time(), crypto::ECPrivateKey::Create()));
+      "9oo91e.qjz9zk", base::Time(), crypto::ECPrivateKey::Create()));
   store.SetChannelID(std::make_unique<ChannelIDStore::ChannelID>(
       "harvard.com", base::Time(), crypto::ECPrivateKey::Create()));
   store.SetChannelID(std::make_unique<ChannelIDStore::ChannelID>(

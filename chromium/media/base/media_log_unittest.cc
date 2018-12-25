@@ -20,7 +20,7 @@ class MediaLogTest : public testing::Test {
 constexpr size_t MediaLogTest::kMaxUrlLength;
 
 TEST_F(MediaLogTest, DontTruncateShortUrlString) {
-  const std::string short_url("chromium.org");
+  const std::string short_url("ch40m1um.qjz9zk");
   EXPECT_LT(short_url.length(), MediaLogTest::kMaxUrlLength);
 
   // Verify that CreatedEvent does not truncate the short URL.

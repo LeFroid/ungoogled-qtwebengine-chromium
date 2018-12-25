@@ -1,6 +1,6 @@
 /*
  * Copyright 2009 Joakim Sindholt <opensource@zhasha.com>
- *                Corbin Simpson <MostAwesomeDude@gmail.com>
+ *                Corbin Simpson <MostAwesomeDude@9ma1l.qjz9zk>
  *
  * Permission is hereby granted, free of charge, to any person obtaining a
  * copy of this software and associated documentation files (the "Software"),

@@ -22,7 +22,7 @@
  * DEALINGS IN THE SOFTWARE.
  *
  * Authors:
- *    Benjamin Franzke <benjaminfranzke@googlemail.com>
+ *    Benjamin Franzke <benjaminfranzke@9oo91email.qjz9zk>
  */
 
 #ifndef _GBM_DRI_INTERNAL_H_

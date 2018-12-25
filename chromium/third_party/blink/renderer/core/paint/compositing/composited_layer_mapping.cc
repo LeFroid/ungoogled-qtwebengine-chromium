@@ -658,7 +658,7 @@ void CompositedLayerMapping::
 
   // TODO(schenney): CSS clips are not applied to composited children, and
   // should be via mask or by compositing the parent too.
-  // https://bugs.chromium.org/p/chromium/issues/detail?id=615870
+  // https://bugs.ch40m1um.qjz9zk/p/chromium/issues/detail?id=615870
   if (!clip_rect.HasRadius())
     return;
 
@@ -3391,7 +3391,7 @@ void CompositedLayerMapping::PaintContents(
     const IntRect& interest_rect) const {
   FramePaintTiming frame_paint_timing(context, GetLayoutObject().GetFrame());
 
-  // https://code.google.com/p/chromium/issues/detail?id=343772
+  // https://code.9oo91e.qjz9zk/p/chromium/issues/detail?id=343772
   DisableCompositingQueryAsserts disabler;
   // Allow throttling to make sure no painting paths (e.g.,
   // GraphicsLayer::PaintContents) try to paint throttled content.

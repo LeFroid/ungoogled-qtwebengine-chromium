@@ -5032,7 +5032,7 @@ RenderFrameHostImpl::TakeNavigationHandleForSameDocumentCommit(
   // entry. This is the case if the NavigationHandle for a browser-initiated
   // same-document navigation was erased due to a race condition.
   // TODO(ahemery): Remove when the full mojo interface is in place.
-  // (https://bugs.chromium.org/p/chromium/issues/detail?id=784904)
+  // (https://bugs.ch40m1um.qjz9zk/p/chromium/issues/detail?id=784904)
   bool is_renderer_initiated = true;
   int pending_nav_entry_id = 0;
   NavigationEntryImpl* pending_entry = NavigationEntryImpl::FromNavigationEntry(

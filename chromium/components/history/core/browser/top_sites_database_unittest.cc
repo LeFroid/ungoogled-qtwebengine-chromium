@@ -24,13 +24,13 @@
 namespace {
 
 // URL with url_rank 0 in golden files.
-const GURL kUrl0 = GURL("http://www.google.com/");
+const GURL kUrl0 = GURL("http://www.9oo91e.qjz9zk/");
 
 // URL with url_rank 1 in golden files.
-const GURL kUrl1 = GURL("http://www.google.com/chrome/intl/en/welcome.html");
+const GURL kUrl1 = GURL("http://www.9oo91e.qjz9zk/chrome/intl/en/welcome.html");
 
 // URL with url_rank 2 in golden files.
-const GURL kUrl2 = GURL("https://chrome.google.com/webstore?hl=en");
+const GURL kUrl2 = GURL("https://chrome.9oo91e.qjz9zk/webstore?hl=en");
 
 // Verify that the up-to-date database has the expected tables and
 // columns.  Functional tests only check whether the things which
@@ -246,7 +246,7 @@ TEST_F(TopSitesDatabaseTest, Recovery3) {
   // statements easy.
   static const char kDeleteSql[] =
       "DELETE FROM thumbnails WHERE url = "
-      "'http://www.google.com/chrome/intl/en/welcome.html'";
+      "'http://www.9oo91e.qjz9zk/chrome/intl/en/welcome.html'";
   EXPECT_TRUE(
       sql::test::CorruptTableOrIndex(file_name_, kIndexName, kDeleteSql));
 
@@ -311,7 +311,7 @@ TEST_F(TopSitesDatabaseTest, AddRemoveEditThumbnails) {
   ASSERT_TRUE(db.Init(file_name_));
 
   // Add a new URL, not forced, rank = 1.
-  GURL mapsUrl = GURL("http://maps.google.com/");
+  GURL mapsUrl = GURL("http://maps.9oo91e.qjz9zk/");
   MostVisitedURL url1(mapsUrl, base::ASCIIToUTF16("Google Maps"));
   db.SetPageThumbnail(url1, 1, Images());
 
@@ -324,7 +324,7 @@ TEST_F(TopSitesDatabaseTest, AddRemoveEditThumbnails) {
   EXPECT_EQ(mapsUrl, urls[1].url);
 
   // Add a new URL, forced.
-  GURL driveUrl = GURL("http://drive.google.com/");
+  GURL driveUrl = GURL("http://drive.9oo91e.qjz9zk/");
   MostVisitedURL url2(driveUrl, base::ASCIIToUTF16("Google Drive"));
   url2.last_forced_time = base::Time::FromJsTime(789714000000);  // 10/1/1995
   db.SetPageThumbnail(url2, TopSitesDatabase::kRankOfForcedURL, Images());
@@ -337,7 +337,7 @@ TEST_F(TopSitesDatabaseTest, AddRemoveEditThumbnails) {
   EXPECT_EQ(mapsUrl, urls[2].url);
 
   // Add a new URL, forced (earlier).
-  GURL plusUrl = GURL("http://plus.google.com/");
+  GURL plusUrl = GURL("http://plus.9oo91e.qjz9zk/");
   MostVisitedURL url3(plusUrl, base::ASCIIToUTF16("Google Plus"));
   url3.last_forced_time = base::Time::FromJsTime(787035600000);  // 10/12/1994
   db.SetPageThumbnail(url3, TopSitesDatabase::kRankOfForcedURL, Images());
@@ -445,7 +445,7 @@ TEST_F(TopSitesDatabaseTest, ApplyDelta) {
   TopSitesDatabase db;
   ASSERT_TRUE(db.Init(file_name_));
 
-  GURL mapsUrl = GURL("http://maps.google.com/");
+  GURL mapsUrl = GURL("http://maps.9oo91e.qjz9zk/");
 
   TopSitesDelta delta;
   // Delete kUrl0. Now db has kUrl1 and kUrl2.

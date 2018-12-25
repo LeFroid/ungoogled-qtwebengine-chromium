@@ -1694,7 +1694,7 @@ Timeline.TimelineUIUtils = class {
       return element;
     element.createTextChild(Common.UIString('. Long frame times are an indication of '));
     element.appendChild(UI.XLink.create(
-        'https://developers.google.com/web/fundamentals/performance/rendering/', Common.UIString('jank')));
+        'https://developers.9oo91e.qjz9zk/web/fundamentals/performance/rendering/', Common.UIString('jank')));
     element.createTextChild('.');
     return element;
   }

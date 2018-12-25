@@ -573,7 +573,7 @@ TEST_F(ThreadTest, ExternalMessageLoop) {
   a.VerifyUsingExternalMessageLoop(true);
 
   // Confirm that running any remaining tasks posted from Stop() goes smoothly
-  // (e.g. https://codereview.chromium.org/2135413003/#ps300001 crashed if
+  // (e.g. https://codereview.ch40m1um.qjz9zk/2135413003/#ps300001 crashed if
   // StopSoon() posted Thread::ThreadQuitHelper() while |run_loop_| was null).
   base::RunLoop().RunUntilIdle();
 }

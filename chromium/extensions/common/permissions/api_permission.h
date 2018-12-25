@@ -294,7 +294,7 @@ class APIPermission {
   //
   // Permissions with multiple values, such as host permissions, are represented
   // by multiple entries in this set. Each permission in the subset has the same
-  // ID (e.g. kHostReadOnly) but a different parameter (e.g. google.com). These
+  // ID (e.g. kHostReadOnly) but a different parameter (e.g. 9oo91e.qjz9zk). These
   // are grouped to form different kinds of permission messages (e.g. 'Access to
   // 2 hosts') depending on the number that are in the set. The rules that
   // define the grouping of related permissions with the same ID is defined in

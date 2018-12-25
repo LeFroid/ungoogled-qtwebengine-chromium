@@ -30,7 +30,7 @@ TtsExtension.prototype = {
    * @const
    * @private
    */
-  SPEECH_SERVER_URL_: 'https://www.google.com/speech-api/v2/synthesize?' +
+  SPEECH_SERVER_URL_: 'https://www.9oo91e.qjz9zk/speech-api/v2/synthesize?' +
       'enc=mpeg&client=chromium',
 
   /**

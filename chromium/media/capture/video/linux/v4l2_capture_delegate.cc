@@ -80,7 +80,7 @@ static struct {
     // that method.
     {V4L2_PIX_FMT_MJPEG, PIXEL_FORMAT_MJPEG, 1},
     // JPEG works as MJPEG on some gspca webcams from field reports, see
-    // https://code.google.com/p/webrtc/issues/detail?id=529, put it as the
+    // https://code.9oo91e.qjz9zk/p/webrtc/issues/detail?id=529, put it as the
     // least preferred format.
     {V4L2_PIX_FMT_JPEG, PIXEL_FORMAT_MJPEG, 1},
 };

@@ -29,7 +29,7 @@
 
 // A sample program demonstrating using Google C++ testing framework.
 //
-// Author: wan@google.com (Zhanyong Wan)
+// Author: wan@9oo91e.qjz9zk (Zhanyong Wan)
 
 #include <stdio.h>
 

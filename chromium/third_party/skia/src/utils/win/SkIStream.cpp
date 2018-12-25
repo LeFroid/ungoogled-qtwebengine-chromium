@@ -176,7 +176,7 @@ HRESULT STDMETHODCALLTYPE SkIStream::Seek(LARGE_INTEGER liDistanceToMove
             hr = E_FAIL;
         } else {
             // FIXME: Should not depend on getLength.
-            // See https://code.google.com/p/skia/issues/detail?id=1570
+            // See https://code.9oo91e.qjz9zk/p/skia/issues/detail?id=1570
             size_t skip = static_cast<size_t>(this->fSkStream->getLength() +
                                               liDistanceToMove.QuadPart);
             size_t skipped = this->fSkStream->skip(skip);
@@ -206,7 +206,7 @@ HRESULT STDMETHODCALLTYPE SkIStream::Stat(STATSTG* pStatstg
     }
     pStatstg->pwcsName = nullptr;
     // FIXME: Should not depend on getLength
-    // See https://code.google.com/p/skia/issues/detail?id=1570
+    // See https://code.9oo91e.qjz9zk/p/skia/issues/detail?id=1570
     pStatstg->cbSize.QuadPart = this->fSkStream->getLength();
     pStatstg->clsid = CLSID_NULL;
     pStatstg->type = STGTY_STREAM;

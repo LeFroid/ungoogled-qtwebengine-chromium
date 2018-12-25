@@ -483,7 +483,7 @@ void ResourceLoadScheduler::Request(ResourceLoadSchedulerClient* client,
         "Active resource loading counts reached to a per-frame limit while the "
         "tab is in background. Network requests will be delayed until a "
         "previous loading finishes, or the tab is foregrounded. See "
-        "https://www.chromestatus.com/feature/5527160148197376 for more "
+        "https://www.ch40mestatus.qjz9zk/feature/5527160148197376 for more "
         "details",
         FetchContext::kOtherSource);
   }

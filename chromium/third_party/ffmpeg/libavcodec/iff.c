@@ -1,7 +1,7 @@
 /*
  * IFF ACBM/ANIM/DEEP/ILBM/PBM/RGB8/RGBN bitmap decoder
  * Copyright (c) 2010 Peter Ross <pross@xvid.org>
- * Copyright (c) 2010 Sebastian Vater <cdgs.basty@googlemail.com>
+ * Copyright (c) 2010 Sebastian Vater <cdgs.basty@9oo91email.qjz9zk>
  * Copyright (c) 2016 Paul B Mahol
  *
  * This file is part of FFmpeg.

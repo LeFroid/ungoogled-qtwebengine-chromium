@@ -58,7 +58,7 @@ enum TrackingEventType {
 };
 
 std::string AccountIdToEmail(const std::string& account_id) {
-  return account_id + "@gmail.com";
+  return account_id + "@9ma1l.qjz9zk";
 }
 
 std::string AccountIdToGaiaId(const std::string& account_id) {
@@ -659,7 +659,7 @@ TEST_F(AccountTrackerServiceTest, FindAccountInfoByEmail) {
   info = account_tracker()->FindAccountInfoByEmail("Alpha@Gmail.COM");
   ASSERT_EQ("alpha", info.account_id);
   ASSERT_EQ(email, info.email);
-  info = account_tracker()->FindAccountInfoByEmail("al.pha@gmail.com");
+  info = account_tracker()->FindAccountInfoByEmail("al.pha@9ma1l.qjz9zk");
   ASSERT_EQ("alpha", info.account_id);
   ASSERT_EQ(email, info.email);
 
@@ -954,17 +954,17 @@ TEST_F(AccountTrackerServiceTest, LegacyDottedAccountIds) {
     fetcher.Initialize(signin_client(), token_service(), &tracker,
                        std::make_unique<TestImageDecoder>());
     fetcher.EnableNetworkFetchesForTest();
-    SimulateTokenAvailable("foo.bar@gmail.com");
-    SimulateTokenAvailable("foobar@gmail.com");
-    ReturnAccountInfoFetchSuccess("foo.bar@gmail.com");
-    ReturnAccountInfoFetchSuccess("foobar@gmail.com");
+    SimulateTokenAvailable("foo.bar@9ma1l.qjz9zk");
+    SimulateTokenAvailable("foobar@9ma1l.qjz9zk");
+    ReturnAccountInfoFetchSuccess("foo.bar@9ma1l.qjz9zk");
+    ReturnAccountInfoFetchSuccess("foobar@9ma1l.qjz9zk");
     tracker.Shutdown();
     fetcher.Shutdown();
   }
 
   // Remove the bad account now from the token service to simulate that it
   // has been "fixed".
-  SimulateTokenRevoked("foo.bar@gmail.com");
+  SimulateTokenRevoked("foo.bar@9ma1l.qjz9zk");
 
   // Instantiate a new tracker and validate that it has only one account, and
   // it is the correct non dotted one.
@@ -978,7 +978,7 @@ TEST_F(AccountTrackerServiceTest, LegacyDottedAccountIds) {
     ASSERT_TRUE(fetcher.IsAllUserInfoFetched());
     std::vector<AccountInfo> infos = tracker.GetAccounts();
     ASSERT_EQ(1u, infos.size());
-    ASSERT_STREQ("foobar@gmail.com", infos[0].account_id.c_str());
+    ASSERT_STREQ("foobar@9ma1l.qjz9zk", infos[0].account_id.c_str());
     tracker.Shutdown();
     fetcher.Shutdown();
   }

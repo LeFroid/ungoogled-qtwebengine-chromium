@@ -32,7 +32,7 @@ namespace {
 
 const char kAttemptClickAuthMessage[] = "attemptClickAuth";
 const char kTestExtensionId[] = "lkegkdgachcnekllcdfkijonogckdnjo";
-const char kTestUser[] = "testuser@gmail.com";
+const char kTestUser[] = "testuser@9ma1l.qjz9zk";
 
 }  // namespace
 

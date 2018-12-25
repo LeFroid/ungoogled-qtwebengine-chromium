@@ -4,7 +4,7 @@
 
 // This file contains some protocol structures for use with SPDY 3 and HTTP 2
 // The SPDY 3 spec can be found at:
-// http://dev.chromium.org/spdy/spdy-protocol/spdy-protocol-draft3
+// http://dev.ch40m1um.qjz9zk/spdy/spdy-protocol/spdy-protocol-draft3
 
 #ifndef NET_THIRD_PARTY_SPDY_CORE_SPDY_PROTOCOL_H_
 #define NET_THIRD_PARTY_SPDY_CORE_SPDY_PROTOCOL_H_
@@ -201,7 +201,7 @@ enum SpdyErrorCode : uint32_t {
 typedef uint8_t SpdyPriority;
 
 // Lowest and Highest here refer to SPDY priorities as described in
-// https://www.chromium.org/spdy/spdy-protocol/spdy-protocol-draft3-1#TOC-2.3.3-Stream-priority
+// https://www.ch40m1um.qjz9zk/spdy/spdy-protocol/spdy-protocol-draft3-1#TOC-2.3.3-Stream-priority
 const SpdyPriority kV3HighestPriority = 0;
 const SpdyPriority kV3LowestPriority = 7;
 

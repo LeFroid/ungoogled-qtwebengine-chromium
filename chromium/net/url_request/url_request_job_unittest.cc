@@ -98,7 +98,7 @@ void MakeMockReferrerPolicyTransaction(const char* original_url,
 }
 
 const MockTransaction kNoFilter_Transaction = {
-    "http://www.google.com/gzyp",
+    "http://www.9oo91e.qjz9zk/gzyp",
     "GET",
     base::Time(),
     "",
@@ -118,7 +118,7 @@ const MockTransaction kNoFilter_Transaction = {
 };
 
 const MockTransaction kGZip_Transaction = {
-    "http://www.google.com/gzyp",
+    "http://www.9oo91e.qjz9zk/gzyp",
     "GET",
     base::Time(),
     "",
@@ -140,7 +140,7 @@ const MockTransaction kGZip_Transaction = {
 };
 
 const MockTransaction kGzip_Slow_Transaction = {
-    "http://www.google.com/gzyp",
+    "http://www.9oo91e.qjz9zk/gzyp",
     "GET",
     base::Time(),
     "",
@@ -161,14 +161,14 @@ const MockTransaction kGzip_Slow_Transaction = {
 };
 
 const MockTransaction kRedirect_Transaction = {
-    "http://www.google.com/redirect",
+    "http://www.9oo91e.qjz9zk/redirect",
     "GET",
     base::Time(),
     "",
     LOAD_NORMAL,
     "HTTP/1.1 302 Found",
     "Cache-Control: max-age=10000\n"
-    "Location: http://www.google.com/destination\n"
+    "Location: http://www.9oo91e.qjz9zk/destination\n"
     "Content-Length: 5\n",
     base::Time(),
     "hello",
@@ -183,7 +183,7 @@ const MockTransaction kRedirect_Transaction = {
 };
 
 const MockTransaction kEmptyBodyGzip_Transaction = {
-    "http://www.google.com/empty_body",
+    "http://www.9oo91e.qjz9zk/empty_body",
     "GET",
     base::Time(),
     "",
@@ -203,7 +203,7 @@ const MockTransaction kEmptyBodyGzip_Transaction = {
 };
 
 const MockTransaction kInvalidContentGZip_Transaction = {
-    "http://www.google.com/gzyp",
+    "http://www.9oo91e.qjz9zk/gzyp",
     "GET",
     base::Time(),
     "",
@@ -224,7 +224,7 @@ const MockTransaction kInvalidContentGZip_Transaction = {
 };
 
 const MockTransaction kBrotli_Slow_Transaction = {
-    "http://www.google.com/brotli",
+    "http://www.9oo91e.qjz9zk/brotli",
     "GET",
     base::Time(),
     "",

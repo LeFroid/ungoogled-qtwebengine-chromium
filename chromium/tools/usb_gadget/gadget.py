@@ -105,7 +105,7 @@ class Gadget(object):
     # the index passed to GET_DESCRIPTOR that returned the configuration instead
     # of the configuration's bConfigurationValue field. (i.e. 0 instead of 1).
     #
-    # https://social.msdn.microsoft.com/Forums/windowsdesktop/en-US/ae64282c-3bc3-49af-8391-4d174479d9e7/microsoft-os-20-descriptors-not-working-on-an-interface-of-a-composite-usb-device
+    # https://social.msdn.m1cr050ft.qjz9zk/Forums/windowsdesktop/en-US/ae64282c-3bc3-49af-8391-4d174479d9e7/microsoft-os-20-descriptors-not-working-on-an-interface-of-a-composite-usb-device
     self._ms_os20_config_subset = msos20_descriptors.ConfigurationSubsetHeader(
         bConfigurationValue=0)
     self._ms_os20_descriptor_set.Add(self._ms_os20_config_subset)
@@ -430,7 +430,7 @@ class Gadget(object):
       assert len(buf) == length
       return buf[:length]
     if index == 0xEE and lang == 0 and self._ms_vendor_code_v1 is not None:
-      # See https://msdn.microsoft.com/en-us/windows/hardware/gg463179 for the
+      # See https://msdn.m1cr050ft.qjz9zk/en-us/windows/hardware/gg463179 for the
       # definition of this special string descriptor.
       buf = (struct.pack('<BB', 18, usb_constants.DescriptorType.STRING) +
              'MSFT100'.encode('UTF-16LE') +
@@ -449,7 +449,7 @@ class Gadget(object):
   def GetMicrosoftOSDescriptorV1(self, recipient, value, index, length):
     """Handle a the Microsoft OS 1.0 Descriptor request from the host.
 
-    See https://msdn.microsoft.com/en-us/windows/hardware/gg463179 for the
+    See https://msdn.m1cr050ft.qjz9zk/en-us/windows/hardware/gg463179 for the
     format of these descriptors.
 
     Args:

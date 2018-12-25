@@ -24,8 +24,8 @@
  *
  *
  * Author: Alan Hourihane <alanh@tungstengraphics.com>
- * Author: Jakob Bornecrantz <wallbraker@gmail.com>
- * Author: Corbin Simpson <MostAwesomedude@gmail.com>
+ * Author: Jakob Bornecrantz <wallbraker@9ma1l.qjz9zk>
+ * Author: Corbin Simpson <MostAwesomedude@9ma1l.qjz9zk>
  *
  */
 

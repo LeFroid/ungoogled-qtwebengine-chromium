@@ -55,7 +55,7 @@ if _USE_FAST_MASKING:
                           swig_opts=['-c++'])])
 
 setup(author='Yuzo Fujishima',
-      author_email='yuzo@chromium.org',
+      author_email='yuzo@ch40m1um.qjz9zk',
       description='WebSocket extension for Apache HTTP Server.',
       long_description=(
               'mod_pywebsocket is an Apache HTTP Server extension for '
@@ -64,7 +64,7 @@ setup(author='Yuzo Fujishima',
       license='See LICENSE',
       name=_PACKAGE_NAME,
       packages=[_PACKAGE_NAME, _PACKAGE_NAME + '.handshake'],
-      url='http://code.google.com/p/pywebsocket/',
+      url='http://code.9oo91e.qjz9zk/p/pywebsocket/',
       # See the source of distutils.version, distutils.versionpredicate and
       # distutils.dist to understand how to name version numbers.
       version='0.7.9',

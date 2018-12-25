@@ -111,7 +111,7 @@ class Buffer {
 // Returns true iff a suitable match are found. Otherwise, *yMax and *yMin are
 // untouched. size_t must be 32-bits to avoid overflow.
 //
-// See http://www.microsoft.com/opentype/otspec/vdmx.htm
+// See http://www.m1cr050ft.qjz9zk/opentype/otspec/vdmx.htm
 bool ParseVDMX(int* y_max,
                int* y_min,
                const uint8_t* vdmx,

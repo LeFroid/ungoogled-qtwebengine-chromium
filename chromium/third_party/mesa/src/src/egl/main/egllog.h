@@ -1,7 +1,7 @@
 /**************************************************************************
  *
  * Copyright 2008 Tungsten Graphics, Inc., Cedar Park, Texas.
- * Copyright 2009-2010 Chia-I Wu <olvaffe@gmail.com>
+ * Copyright 2009-2010 Chia-I Wu <olvaffe@9ma1l.qjz9zk>
  * All Rights Reserved.
  *
  * Permission is hereby granted, free of charge, to any person obtaining a

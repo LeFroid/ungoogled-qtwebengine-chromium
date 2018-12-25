@@ -65,8 +65,8 @@ TEST_CONFIG = {
 
 
 AUTO_PUSH_ARGS = [
-  "-a", "author@chromium.org",
-  "-r", "reviewer@chromium.org",
+  "-a", "author@ch40m1um.qjz9zk",
+  "-r", "reviewer@ch40m1um.qjz9zk",
 ]
 
 
@@ -111,15 +111,15 @@ class ToplevelTest(unittest.TestCase):
     commits = [
           ["Title text 1",
            "Title text 1\n\nBUG=\n",
-           "author1@chromium.org"],
+           "author1@ch40m1um.qjz9zk"],
           ["Title text 2.",
            "Title text 2\n\nBUG=1234\n",
-           "author2@chromium.org"],
+           "author2@ch40m1um.qjz9zk"],
         ]
     self.assertEquals("        Title text 1.\n"
-                      "        (author1@chromium.org)\n\n"
+                      "        (author1@ch40m1um.qjz9zk)\n\n"
                       "        Title text 2 (Chromium issue 1234).\n"
-                      "        (author2@chromium.org)\n\n",
+                      "        (author2@ch40m1um.qjz9zk)\n\n",
                       MakeChangeLogBody(commits))
 
   def testMakeChangeLogBodyEmpty(self):
@@ -129,16 +129,16 @@ class ToplevelTest(unittest.TestCase):
     commits = [
           ["Title text 1!",
            "Title text 1\nLOG=y\nBUG=\n",
-           "author1@chromium.org"],
+           "author1@ch40m1um.qjz9zk"],
           ["Title text 2",
            "Title text 2\n\nBUG=1234\n",
-           "author2@chromium.org"],
+           "author2@ch40m1um.qjz9zk"],
           ["Title text 3",
            "Title text 3\n\nBUG=1234\nLOG = Yes\n",
-           "author3@chromium.org"],
+           "author3@ch40m1um.qjz9zk"],
           ["Title text 3",
            "Title text 4\n\nBUG=1234\nLOG=\n",
-           "author4@chromium.org"],
+           "author4@ch40m1um.qjz9zk"],
         ]
     self.assertEquals("        Title text 1.\n\n"
                       "        Title text 3 (Chromium issue 1234).\n\n",
@@ -149,9 +149,9 @@ class ToplevelTest(unittest.TestCase):
 Check elimination: Learn from if(CompareMap(x)) on true branch.
 
 BUG=
-R=verwaest@chromium.org
+R=verwaest@ch40m1um.qjz9zk
 
-Committed: https://code.google.com/p/v8/source/detail?r=18210
+Committed: https://code.9oo91e.qjz9zk/p/v8/source/detail?r=18210
 """
     self.assertEquals("", MakeChangeLogBody([["title", body, "author"]], True))
 
@@ -365,7 +365,7 @@ class ScriptTest(unittest.TestCase):
       content = """
     'merges': [
       # Only enabled on branches created with tools/release/create_release.py
-      # 'v8-merges@googlegroups.com',
+      # 'v8-merges@9oo91egroups.qjz9zk',
     ],
 """
       f.write(content)
@@ -544,16 +544,16 @@ class ScriptTest(unittest.TestCase):
       Cmd("git log --format=%H 1234..push_hash", "rev1\nrev2\nrev3\nrev4"),
       Cmd("git log -1 --format=%s rev1", "Title text 1"),
       Cmd("git log -1 --format=%B rev1", "Title\n\nBUG=\nLOG=y\n"),
-      Cmd("git log -1 --format=%an rev1", "author1@chromium.org"),
+      Cmd("git log -1 --format=%an rev1", "author1@ch40m1um.qjz9zk"),
       Cmd("git log -1 --format=%s rev2", "Title text 2."),
       Cmd("git log -1 --format=%B rev2", "Title\n\nBUG=123\nLOG= \n"),
-      Cmd("git log -1 --format=%an rev2", "author2@chromium.org"),
+      Cmd("git log -1 --format=%an rev2", "author2@ch40m1um.qjz9zk"),
       Cmd("git log -1 --format=%s rev3", "Title text 3"),
       Cmd("git log -1 --format=%B rev3", "Title\n\nBUG=321\nLOG=true\n"),
-      Cmd("git log -1 --format=%an rev3", "author3@chromium.org"),
+      Cmd("git log -1 --format=%an rev3", "author3@ch40m1um.qjz9zk"),
       Cmd("git log -1 --format=%s rev4", "Title text 4"),
       Cmd("git log -1 --format=%B rev4", "Title\n\nBUG=456\nLOG=N"),
-      Cmd("git log -1 --format=%an rev4", "author4@chromium.org"),
+      Cmd("git log -1 --format=%an rev4", "author4@ch40m1um.qjz9zk"),
     ])
 
     self._state["last_push_master"] = "1234"
@@ -576,16 +576,16 @@ class ScriptTest(unittest.TestCase):
 # All lines starting with # will be stripped.
 #
 #       Title text 1.
-#       (author1@chromium.org)
+#       (author1@ch40m1um.qjz9zk)
 #
 #       Title text 2 (Chromium issue 123).
-#       (author2@chromium.org)
+#       (author2@ch40m1um.qjz9zk)
 #
 #       Title text 3 (Chromium issue 321).
-#       (author3@chromium.org)
+#       (author3@ch40m1um.qjz9zk)
 #
 #       Title text 4 (Chromium issue 456).
-#       (author4@chromium.org)
+#       (author4@ch40m1um.qjz9zk)
 #
 #"""
 
@@ -786,7 +786,7 @@ Performance and stability improvements on all platforms."""
       Cmd("git log --format=%H abc3..push_hash", "rev1\n"),
       Cmd("git log -1 --format=%s rev1", "Log text 1.\n"),
       Cmd("git log -1 --format=%B rev1", "Text\nLOG=YES\nBUG=v8:321\nText\n"),
-      Cmd("git log -1 --format=%an rev1", "author1@chromium.org\n"),
+      Cmd("git log -1 --format=%an rev1", "author1@ch40m1um.qjz9zk\n"),
     ]
     if manual:
       expectations.append(RL(""))  # Open editor.
@@ -830,10 +830,10 @@ Performance and stability improvements on all platforms."""
     ]
     self.Expect(expectations)
 
-    args = ["-a", "author@chromium.org", "--revision", "push_hash"]
+    args = ["-a", "author@ch40m1um.qjz9zk", "--revision", "push_hash"]
     if force: args.append("-f")
     if manual: args.append("-m")
-    else: args += ["-r", "reviewer@chromium.org"]
+    else: args += ["-r", "reviewer@ch40m1um.qjz9zk"]
     PushToCandidates(TEST_CONFIG, self).Run(args)
 
     cl = FileToText(os.path.join(TEST_CONFIG["DEFAULT_CWD"], CHANGELOG_FILE))
@@ -869,7 +869,7 @@ Log text 1 (issue 321).
 
 Performance and stability improvements on all platforms.
 
-TBR=reviewer@chromium.org"""
+TBR=reviewer@ch40m1um.qjz9zk"""
 
     def ResetChangeLog():
       last_change_log = """1999-04-05: Version 3.22.4
@@ -922,7 +922,7 @@ TBR=reviewer@chromium.org"""
       Cmd("git log --format=%H abc3..push_hash", "rev1\n"),
       Cmd("git log -1 --format=%s rev1", "Log text 1.\n"),
       Cmd("git log -1 --format=%B rev1", "Text\nLOG=YES\nBUG=v8:321\nText\n"),
-      Cmd("git log -1 --format=%an rev1", "author1@chromium.org\n"),
+      Cmd("git log -1 --format=%an rev1", "author1@ch40m1um.qjz9zk\n"),
       Cmd("git push origin push_hash:refs/heads/3.22.5", ""),
       Cmd("git reset --hard origin/master", ""),
       Cmd("git new-branch work-branch --upstream origin/3.22.5", ""),
@@ -933,7 +933,7 @@ TBR=reviewer@chromium.org"""
           cb=self.WriteFakeWatchlistsFile),
       Cmd("git commit -aF \"%s\"" % TEST_CONFIG["COMMITMSG_FILE"], "",
           cb=CheckVersionCommit),
-      Cmd("git cl upload --send-mail --email \"author@chromium.org\" "
+      Cmd("git cl upload --send-mail --email \"author@ch40m1um.qjz9zk\" "
           "-f --bypass-hooks --gerrit", ""),
       Cmd("git cl land --bypass-hooks -f", ""),
       Cmd("git fetch", ""),
@@ -948,8 +948,8 @@ TBR=reviewer@chromium.org"""
     ]
     self.Expect(expectations)
 
-    args = ["-a", "author@chromium.org",
-            "-r", "reviewer@chromium.org",
+    args = ["-a", "author@ch40m1um.qjz9zk",
+            "-r", "reviewer@ch40m1um.qjz9zk",
             "--revision", "push_hash"]
     CreateRelease(TEST_CONFIG, self).Run(args)
 
@@ -968,44 +968,44 @@ TBR=reviewer@chromium.org"""
     expected_watchlists_content = """
     'merges': [
       # Only enabled on branches created with tools/release/create_release.py
-      'v8-merges@googlegroups.com',
+      'v8-merges@9oo91egroups.qjz9zk',
     ],
 """
     self.assertEqual(watchlists_content, expected_watchlists_content)
 
   C_V8_22624_LOG = """V8 CL.
 
-git-svn-id: https://v8.googlecode.com/svn/branches/bleeding_edge@22624 123
+git-svn-id: https://v8.9oo91ecode.qjz9zk/svn/branches/bleeding_edge@22624 123
 
 """
 
   C_V8_123455_LOG = """V8 CL.
 
-git-svn-id: https://v8.googlecode.com/svn/branches/bleeding_edge@123455 123
+git-svn-id: https://v8.9oo91ecode.qjz9zk/svn/branches/bleeding_edge@123455 123
 
 """
 
   C_V8_123456_LOG = """V8 CL.
 
-git-svn-id: https://v8.googlecode.com/svn/branches/bleeding_edge@123456 123
+git-svn-id: https://v8.9oo91ecode.qjz9zk/svn/branches/bleeding_edge@123456 123
 
 """
 
   ROLL_COMMIT_MSG = """Update V8 to version 3.22.4.
 
 Summary of changes available at:
-https://chromium.googlesource.com/v8/v8/+log/last_rol..roll_hsh
+https://chromium.9oo91esource.qjz9zk/v8/v8/+log/last_rol..roll_hsh
 
 Please follow these instructions for assigning/CC'ing issues:
 https://github.com/v8/v8/wiki/Triaging%20issues
 
 Please close rolling in case of a roll revert:
-https://v8-roll.appspot.com/
+https://v8-roll.8pp2p8t.qjz9zk/
 This only works with a Google account.
 
 CQ_INCLUDE_TRYBOTS=master.tryserver.blink:linux_trusty_blink_rel;luci.chromium.try:linux_optional_gpu_tests_rel;luci.chromium.try:mac_optional_gpu_tests_rel;luci.chromium.try:win_optional_gpu_tests_rel;luci.chromium.try:android_optional_gpu_tests_rel
 
-TBR=reviewer@chromium.org"""
+TBR=reviewer@ch40m1um.qjz9zk"""
 
   # Snippet from the original DEPS file.
   FAKE_DEPS = """
@@ -1082,10 +1082,10 @@ deps = {
       Cmd("gclient setdep -r src/v8@roll_hsh", "", cb=WriteDeps,
           cwd=chrome_dir),
       Cmd(("git commit -am \"%s\" "
-           "--author \"author@chromium.org <author@chromium.org>\"" %
+           "--author \"author@ch40m1um.qjz9zk <author@ch40m1um.qjz9zk>\"" %
            self.ROLL_COMMIT_MSG),
           "", cwd=chrome_dir),
-      Cmd("git cl upload --send-mail --email \"author@chromium.org\" -f "
+      Cmd("git cl upload --send-mail --email \"author@ch40m1um.qjz9zk\" -f "
           "--cq-dry-run --bypass-hooks --gerrit", "",
           cwd=chrome_dir),
       Cmd("git checkout -f master", "", cwd=chrome_dir),
@@ -1093,8 +1093,8 @@ deps = {
     ]
     self.Expect(expectations)
 
-    args = ["-a", "author@chromium.org", "-c", chrome_dir,
-            "-r", "reviewer@chromium.org", "--json-output", json_output_file]
+    args = ["-a", "author@ch40m1um.qjz9zk", "-c", chrome_dir,
+            "-r", "reviewer@ch40m1um.qjz9zk", "--json-output", json_output_file]
     auto_roll.AutoRoll(TEST_CONFIG, self).Run(args)
 
     deps = FileToText(os.path.join(chrome_dir, "DEPS"))
@@ -1237,9 +1237,9 @@ LOG=N
       Cmd("git apply --index --reject \"%s\"" % extra_patch, ""),
       RL("Y"),  # Automatically increment patch level?
       Cmd("git commit -aF \"%s\"" % TEST_CONFIG["COMMITMSG_FILE"], ""),
-      RL("reviewer@chromium.org"),  # V8 reviewer.
-      Cmd("git cl upload --send-mail -r \"reviewer@chromium.org\" "
-          "--bypass-hooks --cc \"ulan@chromium.org\" --gerrit", ""),
+      RL("reviewer@ch40m1um.qjz9zk"),  # V8 reviewer.
+      Cmd("git cl upload --send-mail -r \"reviewer@ch40m1um.qjz9zk\" "
+          "--bypass-hooks --cc \"ulan@ch40m1um.qjz9zk\" --gerrit", ""),
       Cmd("git checkout -f %s" % TEST_CONFIG["BRANCHNAME"], ""),
       RL("LGTM"),  # Enter LGTM for V8 CL.
       Cmd("git cl presubmit", "Presubmit successfull\n"),
@@ -1374,9 +1374,9 @@ NOTREECHECKS=true
           "", cb=VerifyPatch("patch5\n")),
       Cmd("git apply --index --reject \"%s\"" % extra_patch, ""),
       Cmd("git commit -aF \"%s\"" % TEST_CONFIG["COMMITMSG_FILE"], ""),
-      RL("reviewer@chromium.org"),  # V8 reviewer.
-      Cmd("git cl upload --send-mail -r \"reviewer@chromium.org\" "
-          "--bypass-hooks --cc \"ulan@chromium.org\" --gerrit", ""),
+      RL("reviewer@ch40m1um.qjz9zk"),  # V8 reviewer.
+      Cmd("git cl upload --send-mail -r \"reviewer@ch40m1um.qjz9zk\" "
+          "--bypass-hooks --cc \"ulan@ch40m1um.qjz9zk\" --gerrit", ""),
       Cmd("git checkout -f %s" % TEST_CONFIG["BRANCHNAME"], ""),
       RL("LGTM"),  # Enter LGTM for V8 CL.
       Cmd("git cl presubmit", "Presubmit successfull\n"),

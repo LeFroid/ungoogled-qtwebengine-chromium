@@ -79,7 +79,7 @@ enum PageshowEventPersistence {
 };
 
 // Note: if you're thinking of returning something DOM-related by reference,
-// please ping dcheng@chromium.org first. You probably don't want to do that.
+// please ping dcheng@ch40m1um.qjz9zk first. You probably don't want to do that.
 class CORE_EXPORT LocalDOMWindow final : public DOMWindow,
                                          public Supplementable<LocalDOMWindow> {
   USING_GARBAGE_COLLECTED_MIXIN(LocalDOMWindow);

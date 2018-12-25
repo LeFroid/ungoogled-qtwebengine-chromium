@@ -73,7 +73,7 @@ uint32_t SystemSnapshotFuchsia::CPURevision() const {
 #if defined(ARCH_CPU_X86_64)
   return cpuid_.Revision();
 #else
-  NOTREACHED();  // TODO(scottmg): https://crashpad.chromium.org/bug/196.
+  NOTREACHED();  // TODO(scottmg): https://crashpad.ch40m1um.qjz9zk/bug/196.
   return 0;
 #endif
 }
@@ -88,7 +88,7 @@ std::string SystemSnapshotFuchsia::CPUVendor() const {
 #if defined(ARCH_CPU_X86_64)
   return cpuid_.Vendor();
 #else
-  NOTREACHED();  // TODO(scottmg): https://crashpad.chromium.org/bug/196.
+  NOTREACHED();  // TODO(scottmg): https://crashpad.ch40m1um.qjz9zk/bug/196.
   return std::string();
 #endif
 }
@@ -96,7 +96,7 @@ std::string SystemSnapshotFuchsia::CPUVendor() const {
 void SystemSnapshotFuchsia::CPUFrequency(uint64_t* current_hz,
                                          uint64_t* max_hz) const {
   INITIALIZATION_STATE_DCHECK_VALID(initialized_);
-  // TODO(scottmg): https://crashpad.chromium.org/bug/196.
+  // TODO(scottmg): https://crashpad.ch40m1um.qjz9zk/bug/196.
   *current_hz = 0;
   *max_hz = 0;
 }
@@ -106,7 +106,7 @@ uint32_t SystemSnapshotFuchsia::CPUX86Signature() const {
 #if defined(ARCH_CPU_X86_64)
   return cpuid_.Signature();
 #else
-  NOTREACHED();  // TODO(scottmg): https://crashpad.chromium.org/bug/196.
+  NOTREACHED();  // TODO(scottmg): https://crashpad.ch40m1um.qjz9zk/bug/196.
   return 0;
 #endif
 }
@@ -116,7 +116,7 @@ uint64_t SystemSnapshotFuchsia::CPUX86Features() const {
 #if defined(ARCH_CPU_X86_64)
   return cpuid_.Features();
 #else
-  NOTREACHED();  // TODO(scottmg): https://crashpad.chromium.org/bug/196.
+  NOTREACHED();  // TODO(scottmg): https://crashpad.ch40m1um.qjz9zk/bug/196.
   return 0;
 #endif
 }
@@ -126,7 +126,7 @@ uint64_t SystemSnapshotFuchsia::CPUX86ExtendedFeatures() const {
 #if defined(ARCH_CPU_X86_64)
   return cpuid_.ExtendedFeatures();
 #else
-  NOTREACHED();  // TODO(scottmg): https://crashpad.chromium.org/bug/196.
+  NOTREACHED();  // TODO(scottmg): https://crashpad.ch40m1um.qjz9zk/bug/196.
   return 0;
 #endif
 }
@@ -135,7 +135,7 @@ uint32_t SystemSnapshotFuchsia::CPUX86Leaf7Features() const {
 #if defined(ARCH_CPU_X86_64)
   return cpuid_.Leaf7Features();
 #else
-  NOTREACHED();  // TODO(scottmg): https://crashpad.chromium.org/bug/196.
+  NOTREACHED();  // TODO(scottmg): https://crashpad.ch40m1um.qjz9zk/bug/196.
   return 0;
 #endif
 }
@@ -145,7 +145,7 @@ bool SystemSnapshotFuchsia::CPUX86SupportsDAZ() const {
 #if defined(ARCH_CPU_X86_64)
   return cpuid_.SupportsDAZ();
 #else
-  NOTREACHED();  // TODO(scottmg): https://crashpad.chromium.org/bug/196.
+  NOTREACHED();  // TODO(scottmg): https://crashpad.ch40m1um.qjz9zk/bug/196.
   return false;
 #endif
 }
@@ -166,7 +166,7 @@ void SystemSnapshotFuchsia::OSVersion(int* major,
                                       int* bugfix,
                                       std::string* build) const {
   INITIALIZATION_STATE_DCHECK_VALID(initialized_);
-  // TODO(scottmg): https://crashpad.chromium.org/bug/196. There's no version
+  // TODO(scottmg): https://crashpad.ch40m1um.qjz9zk/bug/196. There's no version
   // available to be reported yet.
   *major = 0;
   *minor = 0;
@@ -181,7 +181,7 @@ std::string SystemSnapshotFuchsia::OSVersionFull() const {
 
 std::string SystemSnapshotFuchsia::MachineDescription() const {
   INITIALIZATION_STATE_DCHECK_VALID(initialized_);
-  // TODO(scottmg): https://crashpad.chromium.org/bug/196. Not yet available,
+  // TODO(scottmg): https://crashpad.ch40m1um.qjz9zk/bug/196. Not yet available,
   // upstream ZX-1775.
   return std::string();
 }
@@ -191,7 +191,7 @@ bool SystemSnapshotFuchsia::NXEnabled() const {
 #if defined(ARCH_CPU_X86_64)
   return cpuid_.NXEnabled();
 #else
-  NOTREACHED();  // TODO(scottmg): https://crashpad.chromium.org/bug/196.
+  NOTREACHED();  // TODO(scottmg): https://crashpad.ch40m1um.qjz9zk/bug/196.
   return false;
 #endif
 }

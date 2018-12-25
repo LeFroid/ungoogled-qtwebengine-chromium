@@ -30,7 +30,7 @@ using base::win::ScopedHString;
 void TextDetectionImpl::Create(mojom::TextDetectionRequest request) {
   // OcrEngine class is only available in Win 10 onwards (v10.0.10240.0) that
   // documents in
-  // https://docs.microsoft.com/en-us/uwp/api/windows.media.ocr.ocrengine.
+  // https://docs.m1cr050ft.qjz9zk/en-us/uwp/api/windows.media.ocr.ocrengine.
   if (base::win::GetVersion() < base::win::VERSION_WIN10) {
     DVLOG(1) << "Optical character recognition not supported before Windows 10";
     return;

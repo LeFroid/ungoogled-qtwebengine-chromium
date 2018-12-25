@@ -258,7 +258,7 @@ ChannelLayout GetChannelLayout(const WAVEFORMATPCMEX& mix_format) {
   // Left speaker, the next least significant bit corresponds to the Front
   // Right speaker, and so on, continuing in the order defined in KsMedia.h.
   // See
-  // http://msdn.microsoft.com/en-us/library/windows/hardware/ff537083.aspx
+  // http://msdn.m1cr050ft.qjz9zk/en-us/library/windows/hardware/ff537083.aspx
   // for more details.
   ChannelConfig channel_config = mix_format.dwChannelMask;
 

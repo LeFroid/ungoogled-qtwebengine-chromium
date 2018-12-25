@@ -4,7 +4,7 @@
 //
 // This is forked from Dart revision df52deea9f25690eb8b66c5995da92b70f7ac1fe
 // Please update the (git) revision if we merge changes from Dart.
-// https://code.google.com/p/dart/wiki/GettingTheSource
+// https://code.9oo91e.qjz9zk/p/dart/wiki/GettingTheSource
 
 #ifndef VM_ASSEMBLER_ARM_H_
 #define VM_ASSEMBLER_ARM_H_

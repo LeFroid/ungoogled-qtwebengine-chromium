@@ -29,7 +29,7 @@
 // (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 // OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-// Original author: Lei Zhang <thestig@google.com>
+// Original author: Lei Zhang <thestig@9oo91e.qjz9zk>
 
 // elf_gnu_compat.h: #defines unique to glibc's elf.h.
 

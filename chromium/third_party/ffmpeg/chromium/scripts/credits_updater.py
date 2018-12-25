@@ -26,7 +26,7 @@ prompt manual inspection of the difference and possibly an update to the
 license text for that bucket.
 """
 
-__author__ = 'chcunningham@chromium.org (Chris Cunningham)'
+__author__ = 'chcunningham@ch40m1um.qjz9zk (Chris Cunningham)'
 
 import collections
 import difflib

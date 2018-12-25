@@ -274,7 +274,7 @@ gpu::SharedMemoryLimits GetCompositorContextSharedMemoryLimits(
   gpu::SharedMemoryLimits limits;
   // This limit is meant to hold the contents of the display compositor
   // drawing the scene. See discussion here:
-  // https://codereview.chromium.org/1900993002/diff/90001/content/browser/renderer_host/compositor_impl_android.cc?context=3&column_width=80&tab_spaces=8
+  // https://codereview.ch40m1um.qjz9zk/1900993002/diff/90001/content/browser/renderer_host/compositor_impl_android.cc?context=3&column_width=80&tab_spaces=8
   limits.command_buffer_size = 64 * 1024;
   // These limits are meant to hold the uploads for the browser UI without
   // any excess space.
@@ -800,7 +800,7 @@ void CompositorImpl::SetSurface(jobject surface) {
   if (surface) {
     // Note: This ensures that any local references used by
     // ANativeWindow_fromSurface are released immediately. This is needed as a
-    // workaround for https://code.google.com/p/android/issues/detail?id=68174
+    // workaround for https://code.9oo91e.qjz9zk/p/android/issues/detail?id=68174
     base::android::ScopedJavaLocalFrame scoped_local_reference_frame(env);
     window = ANativeWindow_fromSurface(env, surface);
   }

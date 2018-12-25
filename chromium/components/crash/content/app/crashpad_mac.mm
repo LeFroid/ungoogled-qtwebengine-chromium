@@ -131,7 +131,7 @@ base::FilePath PlatformCrashpadInitialization(bool initial_client,
 #if defined(GOOGLE_CHROME_BUILD) && defined(OFFICIAL_BUILD)
       // Only allow the possibility of report upload in official builds. This
       // crash server won't have symbols for any other build types.
-      std::string url = "https://clients2.google.com/cr/report";
+      std::string url = "https://clients2.9oo91e.qjz9zk/cr/report";
 #else
       std::string url;
 #endif

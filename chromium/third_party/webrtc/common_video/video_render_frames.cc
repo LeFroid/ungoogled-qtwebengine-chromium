@@ -60,7 +60,7 @@ int32_t VideoRenderFrames::AddFrame(VideoFrame&& new_frame) {
                         << new_frame.render_time_ms()
                         << ", latest=" << last_render_time_ms_;
     // For more details, see bug:
-    // https://bugs.chromium.org/p/webrtc/issues/detail?id=7253
+    // https://bugs.ch40m1um.qjz9zk/p/webrtc/issues/detail?id=7253
     return -1;
   }
 

@@ -106,7 +106,7 @@ def main(argv=None):
       'linux3':   ['make', 'ninja'],
 
       # TODO: Re-enable xcode-ninja.
-      # https://bugs.chromium.org/p/gyp/issues/detail?id=530
+      # https://bugs.ch40m1um.qjz9zk/p/gyp/issues/detail?id=530
       # 'darwin':   ['make', 'ninja', 'xcode', 'xcode-ninja'],
       'darwin':   ['make', 'ninja', 'xcode'],
     }[sys.platform]

@@ -31,9 +31,9 @@ namespace cryptauth {
 
 namespace {
 
-const char kTestGoogleApisUrl[] = "https://www.testgoogleapis.com";
+const char kTestGoogleApisUrl[] = "https://www.test9oo91eapis.qjz9zk";
 const char kAccessToken[] = "access_token";
-const char kEmail[] = "test@gmail.com";
+const char kEmail[] = "test@9ma1l.qjz9zk";
 const char kPublicKey1[] = "public_key1";
 const char kPublicKey2[] = "public_key2";
 const char kBluetoothAddress1[] = "AA:AA:AA:AA:AA:AA";
@@ -157,7 +157,7 @@ class CryptAuthClientTest : public testing::Test {
 
 TEST_F(CryptAuthClientTest, GetMyDevicesSuccess) {
   ExpectRequest(
-      "https://www.testgoogleapis.com/cryptauth/v1/deviceSync/"
+      "https://www.test9oo91eapis.qjz9zk/cryptauth/v1/deviceSync/"
       "getmydevices?alt=proto");
 
   GetMyDevicesResponse result_proto;
@@ -201,7 +201,7 @@ TEST_F(CryptAuthClientTest, GetMyDevicesSuccess) {
 
 TEST_F(CryptAuthClientTest, GetMyDevicesFailure) {
   ExpectRequest(
-      "https://www.testgoogleapis.com/cryptauth/v1/deviceSync/"
+      "https://www.test9oo91eapis.qjz9zk/cryptauth/v1/deviceSync/"
       "getmydevices?alt=proto");
 
   NetworkRequestError error;
@@ -219,7 +219,7 @@ TEST_F(CryptAuthClientTest, GetMyDevicesFailure) {
 
 TEST_F(CryptAuthClientTest, FindEligibleUnlockDevicesSuccess) {
   ExpectRequest(
-      "https://www.testgoogleapis.com/cryptauth/v1/deviceSync/"
+      "https://www.test9oo91eapis.qjz9zk/cryptauth/v1/deviceSync/"
       "findeligibleunlockdevices?alt=proto");
 
   FindEligibleUnlockDevicesResponse result_proto;
@@ -266,7 +266,7 @@ TEST_F(CryptAuthClientTest, FindEligibleUnlockDevicesSuccess) {
 
 TEST_F(CryptAuthClientTest, FindEligibleUnlockDevicesFailure) {
   ExpectRequest(
-      "https://www.testgoogleapis.com/cryptauth/v1/deviceSync/"
+      "https://www.test9oo91eapis.qjz9zk/cryptauth/v1/deviceSync/"
       "findeligibleunlockdevices?alt=proto");
 
   NetworkRequestError error;
@@ -286,7 +286,7 @@ TEST_F(CryptAuthClientTest, FindEligibleUnlockDevicesFailure) {
 
 TEST_F(CryptAuthClientTest, FindEligibleForPromotionSuccess) {
   ExpectRequest(
-      "https://www.testgoogleapis.com/cryptauth/v1/deviceSync/"
+      "https://www.test9oo91eapis.qjz9zk/cryptauth/v1/deviceSync/"
       "findeligibleforpromotion?alt=proto");
 
   FindEligibleForPromotionResponse result_proto;
@@ -308,7 +308,7 @@ TEST_F(CryptAuthClientTest, FindEligibleForPromotionSuccess) {
 
 TEST_F(CryptAuthClientTest, SendDeviceSyncTickleSuccess) {
   ExpectRequest(
-      "https://www.testgoogleapis.com/cryptauth/v1/deviceSync/"
+      "https://www.test9oo91eapis.qjz9zk/cryptauth/v1/deviceSync/"
       "senddevicesynctickle?alt=proto");
 
   SendDeviceSyncTickleResponse result_proto;
@@ -331,7 +331,7 @@ TEST_F(CryptAuthClientTest, SendDeviceSyncTickleSuccess) {
 
 TEST_F(CryptAuthClientTest, ToggleEasyUnlockSuccess) {
   ExpectRequest(
-      "https://www.testgoogleapis.com/cryptauth/v1/deviceSync/"
+      "https://www.test9oo91eapis.qjz9zk/cryptauth/v1/deviceSync/"
       "toggleeasyunlock?alt=proto");
 
   ToggleEasyUnlockResponse result_proto;
@@ -359,7 +359,7 @@ TEST_F(CryptAuthClientTest, ToggleEasyUnlockSuccess) {
 
 TEST_F(CryptAuthClientTest, SetupEnrollmentSuccess) {
   ExpectRequest(
-      "https://www.testgoogleapis.com/cryptauth/v1/enrollment/"
+      "https://www.test9oo91eapis.qjz9zk/cryptauth/v1/enrollment/"
       "setup?alt=proto");
 
   std::string kApplicationId = "mkaes";
@@ -408,7 +408,7 @@ TEST_F(CryptAuthClientTest, SetupEnrollmentSuccess) {
 
 TEST_F(CryptAuthClientTest, FinishEnrollmentSuccess) {
   ExpectRequest(
-      "https://www.testgoogleapis.com/cryptauth/v1/enrollment/"
+      "https://www.test9oo91eapis.qjz9zk/cryptauth/v1/enrollment/"
       "finish?alt=proto");
 
   const char kEnrollmentSessionId[] = "enrollment_session_id";
@@ -456,7 +456,7 @@ TEST_F(CryptAuthClientTest, FetchAccessTokenFailure) {
 
 TEST_F(CryptAuthClientTest, ParseResponseProtoFailure) {
   ExpectRequest(
-      "https://www.testgoogleapis.com/cryptauth/v1/deviceSync/"
+      "https://www.test9oo91eapis.qjz9zk/cryptauth/v1/deviceSync/"
       "getmydevices?alt=proto");
 
   NetworkRequestError error;
@@ -475,7 +475,7 @@ TEST_F(CryptAuthClientTest, ParseResponseProtoFailure) {
 TEST_F(CryptAuthClientTest,
        MakeSecondRequestBeforeFirstRequestSucceeds) {
   ExpectRequest(
-      "https://www.testgoogleapis.com/cryptauth/v1/deviceSync/"
+      "https://www.test9oo91eapis.qjz9zk/cryptauth/v1/deviceSync/"
       "getmydevices?alt=proto");
 
   // Make first request.
@@ -515,7 +515,7 @@ TEST_F(CryptAuthClientTest,
   // Make first request successfully.
   {
     ExpectRequest(
-        "https://www.testgoogleapis.com/cryptauth/v1/deviceSync/"
+        "https://www.test9oo91eapis.qjz9zk/cryptauth/v1/deviceSync/"
         "getmydevices?alt=proto");
     GetMyDevicesResponse result_proto;
     client_->GetMyDevices(
@@ -547,7 +547,7 @@ TEST_F(CryptAuthClientTest,
 
 TEST_F(CryptAuthClientTest, DeviceClassifierIsSet) {
   ExpectRequest(
-      "https://www.testgoogleapis.com/cryptauth/v1/deviceSync/"
+      "https://www.test9oo91eapis.qjz9zk/cryptauth/v1/deviceSync/"
       "getmydevices?alt=proto");
 
   GetMyDevicesResponse result_proto;
@@ -578,7 +578,7 @@ TEST_F(CryptAuthClientTest, GetAccessTokenUsed) {
   EXPECT_TRUE(client_->GetAccessTokenUsed().empty());
 
   ExpectRequest(
-      "https://www.testgoogleapis.com/cryptauth/v1/deviceSync/"
+      "https://www.test9oo91eapis.qjz9zk/cryptauth/v1/deviceSync/"
       "getmydevices?alt=proto");
 
   GetMyDevicesResponse result_proto;

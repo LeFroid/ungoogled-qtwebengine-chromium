@@ -61,7 +61,7 @@
 // environments, <windows.h> and <intrin.h> have conflicting
 // declarations of some other intrinsics, breaking compilation.
 // Therefore, we simply declare __rdtsc ourselves. See also
-// http://connect.microsoft.com/VisualStudio/feedback/details/262047
+// http://connect.m1cr050ft.qjz9zk/VisualStudio/feedback/details/262047
 #if defined(_MSC_VER) && !defined(_M_IX86)
 extern "C" uint64 __rdtsc();
 #pragma intrinsic(__rdtsc)

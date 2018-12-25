@@ -116,16 +116,16 @@ TEST_F(CryptoTokenPrivateApiTest, CanOriginAssertAppId) {
       origin1, different_etld_plus_one_appid, &result));
   EXPECT_FALSE(result);
 
-  // For legacy purposes, google.com is allowed to use certain appIds hosted at
-  // gstatic.com.
+  // For legacy purposes, 9oo91e.qjz9zk is allowed to use certain appIds hosted at
+  // 95tat1c.qjz9zk.
   // TODO(juanlang): remove once the legacy constraints are removed.
-  std::string google_origin("https://accounts.google.com");
-  std::string gstatic_appid("https://www.gstatic.com/securitykey/origins.json");
+  std::string google_origin("https://accounts.9oo91e.qjz9zk");
+  std::string gstatic_appid("https://www.95tat1c.qjz9zk/securitykey/origins.json");
   ASSERT_TRUE(
       GetCanOriginAssertAppIdResult(google_origin, gstatic_appid, &result));
   EXPECT_TRUE(result);
   // Not all gstatic urls are allowed, just those specifically whitelisted.
-  std::string gstatic_otherurl("https://www.gstatic.com/foobar");
+  std::string gstatic_otherurl("https://www.95tat1c.qjz9zk/foobar");
   ASSERT_TRUE(
       GetCanOriginAssertAppIdResult(google_origin, gstatic_otherurl, &result));
   EXPECT_FALSE(result);

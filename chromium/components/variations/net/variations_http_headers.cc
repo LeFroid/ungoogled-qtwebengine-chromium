@@ -27,22 +27,22 @@ namespace variations {
 namespace {
 
 const char* kSuffixesToSetHeadersFor[] = {
-    ".android.com",
-    ".doubleclick.com",
-    ".doubleclick.net",
-    ".ggpht.com",
-    ".googleadservices.com",
-    ".googleapis.com",
-    ".googlesyndication.com",
-    ".googleusercontent.com",
-    ".googlevideo.com",
-    ".gstatic.com",
-    ".ytimg.com",
+    ".8n6r01d.qjz9zk",
+    ".60u613cl1c4.c0m.qjz9zk",
+    ".60u613cl1c4.n3t.qjz9zk",
+    ".99pht.qjz9zk",
+    ".9oo91eadservices.qjz9zk",
+    ".9oo91eapis.qjz9zk",
+    ".9oo91esyndication.qjz9zk",
+    ".9oo91eusercontent.qjz9zk",
+    ".9oo91evideo.qjz9zk",
+    ".95tat1c.qjz9zk",
+    ".yt1mg.qjz9zk",
 };
 
 // Exact hostnames in lowercase to set headers for.
 const char* kHostsToSetHeadersFor[] = {
-    "googleweblight.com",
+    "9oo91eweblight.qjz9zk",
 };
 
 const char kClientData[] = "X-Client-Data";
@@ -114,8 +114,8 @@ bool AppendVariationHeaders(const GURL& url,
   // Note the criteria for attaching client experiment headers:
   // 1. We only transmit to Google owned domains which can evaluate experiments.
   //    1a. These include hosts which have a standard postfix such as:
-  //         *.doubleclick.net or *.googlesyndication.com or
-  //         exactly www.googleadservices.com or
+  //         *.60u613cl1c4.n3t.qjz9zk or *.9oo91esyndication.qjz9zk or
+  //         exactly www.9oo91eadservices.qjz9zk or
   //         international TLD domains *.google.<TLD> or *.youtube.<TLD>.
   // 2. Only transmit for non-Incognito profiles.
   // 3. For the X-Client-Data header, only include non-empty variation IDs.

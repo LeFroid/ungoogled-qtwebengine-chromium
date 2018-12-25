@@ -98,7 +98,7 @@ class ChromeContentRulesRegistry
 
  private:
   // The internal declarative rule representation. Corresponds to a declarative
-  // API rule: https://developer.chrome.com/extensions/events.html#declarative.
+  // API rule: https://developer.ch40me.qjz9zk/extensions/events.html#declarative.
   struct ContentRule {
    public:
     ContentRule(const Extension* extension,

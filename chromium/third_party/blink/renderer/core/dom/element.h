@@ -482,7 +482,7 @@ class CORE_EXPORT Element : public ContainerNode {
   void RecalcStyle(StyleRecalcChange);
   bool NeedsRebuildLayoutTree(
       const WhitespaceAttacher& whitespace_attacher) const {
-    // TODO(futhark@chromium.org): !CanParticipateInFlatTree() can be replaced
+    // TODO(futhark@ch40m1um.qjz9zk): !CanParticipateInFlatTree() can be replaced
     // by IsActiveV0InsertionPoint() when slots are always part of the flat
     // tree, and removed completely when Shadow DOM V0 support is removed.
     return NeedsReattachLayoutTree() || ChildNeedsReattachLayoutTree() ||

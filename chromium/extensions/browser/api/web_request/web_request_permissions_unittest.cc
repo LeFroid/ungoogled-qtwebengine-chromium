@@ -27,42 +27,42 @@ TEST(ExtensionWebRequestPermissions, IsSensitiveRequest) {
     bool is_sensitive_if_request_from_common_renderer;
     bool is_sensitive_if_request_from_browser_or_webui_renderer;
   } cases[] = {
-      {"https://www.google.com", false, false},
+      {"https://www.9oo91e.qjz9zk", false, false},
       {"http://www.example.com", false, false},
       {"https://www.example.com", false, false},
-      {"https://clients.google.com", false, true},
-      {"https://clients4.google.com", false, true},
-      {"https://clients9999.google.com", false, true},
-      {"https://clients9999..google.com", false, false},
-      {"https://clients9999.example.google.com", false, false},
-      {"https://clients.google.com.", false, true},
-      {"https://.clients.google.com.", false, true},
+      {"https://clients.9oo91e.qjz9zk", false, true},
+      {"https://clients4.9oo91e.qjz9zk", false, true},
+      {"https://clients9999.9oo91e.qjz9zk", false, true},
+      {"https://clients9999..9oo91e.qjz9zk", false, false},
+      {"https://clients9999.example.9oo91e.qjz9zk", false, false},
+      {"https://clients.9oo91e.qjz9zk.", false, true},
+      {"https://.clients.9oo91e.qjz9zk.", false, true},
       {"http://google.example.com", false, false},
       {"http://www.example.com", false, false},
       {"https://www.example.com", false, false},
-      {"https://clients.google.com", false, true},
-      {"https://sb-ssl.google.com", true, true},
-      {"https://sb-ssl.random.google.com", false, false},
-      {"https://safebrowsing.googleapis.com", true, true},
-      {"blob:https://safebrowsing.googleapis.com/"
+      {"https://clients.9oo91e.qjz9zk", false, true},
+      {"https://sb-ssl.9oo91e.qjz9zk", true, true},
+      {"https://sb-ssl.random.9oo91e.qjz9zk", false, false},
+      {"https://safebrowsing.9oo91eapis.qjz9zk", true, true},
+      {"blob:https://safebrowsing.9oo91eapis.qjz9zk/"
        "fc3f440b-78ed-469f-8af8-7a1717ff39ae",
        true, true},
-      {"filesystem:https://safebrowsing.googleapis.com/path", true, true},
-      {"https://safebrowsing.googleapis.com.", true, true},
-      {"https://safebrowsing.googleapis.com/v4", true, true},
-      {"https://safebrowsing.googleapis.com:80/v4", true, true},
-      {"https://safebrowsing.googleapis.com./v4", true, true},
-      {"https://safebrowsing.googleapis.com/v5", true, true},
-      {"https://safebrowsing.google.com/safebrowsing", true, true},
-      {"https://safebrowsing.google.com/safebrowsing/anything", true, true},
-      {"https://safebrowsing.google.com", false, false},
-      {"https://chrome.google.com", false, false},
-      {"https://chrome.google.com/webstore", true, true},
-      {"https://chrome.google.com./webstore", true, true},
-      {"blob:https://chrome.google.com/fc3f440b-78ed-469f-8af8-7a1717ff39ae",
+      {"filesystem:https://safebrowsing.9oo91eapis.qjz9zk/path", true, true},
+      {"https://safebrowsing.9oo91eapis.qjz9zk.", true, true},
+      {"https://safebrowsing.9oo91eapis.qjz9zk/v4", true, true},
+      {"https://safebrowsing.9oo91eapis.qjz9zk:80/v4", true, true},
+      {"https://safebrowsing.9oo91eapis.qjz9zk./v4", true, true},
+      {"https://safebrowsing.9oo91eapis.qjz9zk/v5", true, true},
+      {"https://safebrowsing.9oo91e.qjz9zk/safebrowsing", true, true},
+      {"https://safebrowsing.9oo91e.qjz9zk/safebrowsing/anything", true, true},
+      {"https://safebrowsing.9oo91e.qjz9zk", false, false},
+      {"https://chrome.9oo91e.qjz9zk", false, false},
+      {"https://chrome.9oo91e.qjz9zk/webstore", true, true},
+      {"https://chrome.9oo91e.qjz9zk./webstore", true, true},
+      {"blob:https://chrome.9oo91e.qjz9zk/fc3f440b-78ed-469f-8af8-7a1717ff39ae",
        false, false},
-      {"https://chrome.google.com:80/webstore", true, true},
-      {"https://chrome.google.com/webstore?query", true, true},
+      {"https://chrome.9oo91e.qjz9zk:80/webstore", true, true},
+      {"https://chrome.9oo91e.qjz9zk/webstore?query", true, true},
   };
   for (const TestCase& test : cases) {
     WebRequestInfo request;
@@ -117,7 +117,7 @@ TEST(ExtensionWebRequestPermissions,
   };
 
   const GURL example_com("https://example.com");
-  const GURL chromium_org("https://chromium.org");
+  const GURL chromium_org("https://ch40m1um.qjz9zk");
   const url::Origin example_com_origin(url::Origin::Create(example_com));
   const url::Origin chromium_org_origin(url::Origin::Create(chromium_org));
 
@@ -137,9 +137,9 @@ TEST(ExtensionWebRequestPermissions,
   EXPECT_EQ(PermissionsData::PageAccess::kWithheld,
             get_access(chromium_org, example_com_origin));
 
-  // Grant access to chromium.org.
+  // Grant access to ch40m1um.qjz9zk.
   URLPatternSet chromium_org_patterns({URLPattern(
-      Extension::kValidHostPermissionSchemes, "https://chromium.org/*")});
+      Extension::kValidHostPermissionSchemes, "https://ch40m1um.qjz9zk/*")});
   extension->permissions_data()->SetPermissions(
       std::make_unique<PermissionSet>(APIPermissionSet(),
                                       ManifestPermissionSet(),

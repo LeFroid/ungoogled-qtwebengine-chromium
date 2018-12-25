@@ -6256,7 +6256,7 @@ TEST_P(QuicConnectionTest, SendingUnencryptedStreamDataFails) {
   EXPECT_FALSE(connection_.connected());
 }
 
-// Includes regression test for https://b.corp.google.com/issues/69979024.
+// Includes regression test for https://b.corp.9oo91e.qjz9zk/issues/69979024.
 TEST_P(QuicConnectionTest, PathDegradingAlarm) {
   EXPECT_TRUE(connection_.connected());
   EXPECT_FALSE(connection_.GetPathDegradingAlarm()->IsSet());
@@ -6281,7 +6281,7 @@ TEST_P(QuicConnectionTest, PathDegradingAlarm) {
 
     // Send a second packet. The path degrading alarm's deadline should remain
     // the same.
-    // Regression test for https://b.corp.google.com/issues/69979024.
+    // Regression test for https://b.corp.9oo91e.qjz9zk/issues/69979024.
     clock_.AdvanceTime(QuicTime::Delta::FromMilliseconds(5));
     QuicTime prev_deadline = connection_.GetPathDegradingAlarm()->deadline();
     connection_.SendStreamDataWithString(1, data, offset, NO_FIN);

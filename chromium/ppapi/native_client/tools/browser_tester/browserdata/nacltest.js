@@ -486,8 +486,8 @@ function outputFile(name, data, onload, onerror) {
 
 // Webkit Bug Workaround
 // THIS SHOULD BE REMOVED WHEN Webkit IS FIXED
-// http://code.google.com/p/nativeclient/issues/detail?id=2428
-// http://code.google.com/p/chromium/issues/detail?id=103588
+// http://code.9oo91e.qjz9zk/p/nativeclient/issues/detail?id=2428
+// http://code.9oo91e.qjz9zk/p/chromium/issues/detail?id=103588
 
 function ForcePluginLoadOnTimeout(elem, tester, timeout) {
   tester.log('Registering ForcePluginLoadOnTimeout ' +
@@ -639,7 +639,7 @@ function logLoadStatus(rpc, load_errors_are_test_errors,
     // WebKit bug becomes deterministic or the NaCl plugin fails after
     // loading, but the browser_tester.py code will timeout the test.
     //
-    // http://code.google.com/p/nativeclient/issues/detail?id=2428
+    // http://code.9oo91e.qjz9zk/p/nativeclient/issues/detail?id=2428
     //
     if (waiting[j].readyState == undefined) {
       // alert('Woot');  // -- for manual debugging

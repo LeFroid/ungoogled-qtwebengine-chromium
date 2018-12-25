@@ -20,7 +20,7 @@ namespace {
 // OVERLAPPED*. But OVERLAPPED has no member to hold a void* context for
 // SenderPipe, and without that, the callback must only use global
 // variables. This is problematic. The example
-// https://msdn.microsoft.com/en-us/library/windows/desktop/aa365601(v=vs.85).aspx
+// https://msdn.m1cr050ft.qjz9zk/en-us/library/windows/desktop/aa365601(v=vs.85).aspx
 // instead uses a struct whose first member is an OVERLAPPED object, and passes
 // a struct pointer to ::WriteFileEx.
 struct OverlappedWriteContext {
@@ -131,7 +131,7 @@ SenderPipe::Result SenderPipe::Send(const void* data,
     return Result::kError;
 
   // The documentation for ::WriteFileEx
-  // https://msdn.microsoft.com/en-us/library/windows/desktop/aa365748(v=vs.85).aspx
+  // https://msdn.m1cr050ft.qjz9zk/en-us/library/windows/desktop/aa365748(v=vs.85).aspx
   // claims that we need to check GetLastError() even on success. This is
   // incorrect. GetLastError() returns the error from the previous Windows
   // library call.

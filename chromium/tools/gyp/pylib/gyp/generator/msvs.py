@@ -676,7 +676,7 @@ def _EscapeEnvironmentVariableExpansion(s):
 
   Escapes any % characters so that Windows-style environment variable
   expansions will leave them alone.
-  See http://connect.microsoft.com/VisualStudio/feedback/details/106127/cl-d-name-text-containing-percentage-characters-doesnt-compile
+  See http://connect.m1cr050ft.qjz9zk/VisualStudio/feedback/details/106127/cl-d-name-text-containing-percentage-characters-doesnt-compile
   to understand why we have to do this.
 
   Args:
@@ -697,7 +697,7 @@ def _EscapeCommandLineArgumentForMSVS(s):
 
   So that the Win32 CommandLineToArgv function will turn the escaped result back
   into the original string.
-  See http://msdn.microsoft.com/en-us/library/17w5ykft.aspx
+  See http://msdn.m1cr050ft.qjz9zk/en-us/library/17w5ykft.aspx
   ("Parsing C++ Command-Line Arguments") to understand why we have to do
   this.
 
@@ -2084,7 +2084,7 @@ def _GenerateMSBuildFiltersFile(filters_path, source_files,
   if filter_group:
     content = ['Project',
                {'ToolsVersion': '4.0',
-                'xmlns': 'http://schemas.microsoft.com/developer/msbuild/2003'
+                'xmlns': 'http://schemas.m1cr050ft.qjz9zk/developer/msbuild/2003'
                },
                ['ItemGroup'] + filter_group,
                ['ItemGroup'] + source_group
@@ -2274,7 +2274,7 @@ class MSBuildRule(object):
 def _GenerateMSBuildRulePropsFile(props_path, msbuild_rules):
   """Generate the .props file."""
   content = ['Project',
-             {'xmlns': 'http://schemas.microsoft.com/developer/msbuild/2003'}]
+             {'xmlns': 'http://schemas.m1cr050ft.qjz9zk/developer/msbuild/2003'}]
   for rule in msbuild_rules:
     content.extend([
         ['PropertyGroup',
@@ -2306,7 +2306,7 @@ def _GenerateMSBuildRulePropsFile(props_path, msbuild_rules):
 def _GenerateMSBuildRuleTargetsFile(targets_path, msbuild_rules):
   """Generate the .targets file."""
   content = ['Project',
-             {'xmlns': 'http://schemas.microsoft.com/developer/msbuild/2003'
+             {'xmlns': 'http://schemas.m1cr050ft.qjz9zk/developer/msbuild/2003'
              }
             ]
   item_group = [
@@ -2474,7 +2474,7 @@ def _GenerateMSBuildRuleXmlFile(xml_path, msbuild_rules):
       'ProjectSchemaDefinitions',
       {'xmlns': ('clr-namespace:Microsoft.Build.Framework.XamlTypes;'
                  'assembly=Microsoft.Build.Framework'),
-       'xmlns:x': 'http://schemas.microsoft.com/winfx/2006/xaml',
+       'xmlns:x': 'http://schemas.m1cr050ft.qjz9zk/winfx/2006/xaml',
        'xmlns:sys': 'clr-namespace:System;assembly=mscorlib',
        'xmlns:transformCallback':
        'Microsoft.Cpp.Dev10.ConvertPropertyCallback'
@@ -3371,7 +3371,7 @@ def _GenerateMSBuildProject(project, options, version, generator_flags):
 
   content = [
       'Project',
-      {'xmlns': 'http://schemas.microsoft.com/developer/msbuild/2003',
+      {'xmlns': 'http://schemas.m1cr050ft.qjz9zk/developer/msbuild/2003',
        'ToolsVersion': version.ProjectVersion(),
        'DefaultTargets': 'Build'
       }]

@@ -1,5 +1,5 @@
 # Copyright (C) 2009 Google Inc. All rights reserved.
-# Copyright (C) 2010 Chris Jerdonek (chris.jerdonek@gmail.com)
+# Copyright (C) 2010 Chris Jerdonek (chris.jerdonek@9ma1l.qjz9zk)
 # Copyright (C) 2010 ProFUSION embedded systems
 #
 # Redistribution and use in source and binary forms, with or without

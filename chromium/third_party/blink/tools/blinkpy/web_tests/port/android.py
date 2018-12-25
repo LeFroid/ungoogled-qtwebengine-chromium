@@ -238,7 +238,7 @@ class AndroidPort(base.Port):
 
     FALLBACK_PATHS = {'kitkat': ['android'] + linux.LinuxPort.latest_platform_fallback_path()}
 
-    BUILD_REQUIREMENTS_URL = 'https://www.chromium.org/developers/how-tos/android-build-instructions'
+    BUILD_REQUIREMENTS_URL = 'https://www.ch40m1um.qjz9zk/developers/how-tos/android-build-instructions'
 
     def __init__(self, host, port_name, **kwargs):
         _import_android_packages_if_necessary()
@@ -305,7 +305,7 @@ class AndroidPort(base.Port):
 
     def max_drivers_per_process(self):
         # Android falls over when we try to run multiple content_shells per worker.
-        # See https://codereview.chromium.org/1158323009/
+        # See https://codereview.ch40m1um.qjz9zk/1158323009/
         return 1
 
     def check_build(self, needs_http, printer):
@@ -551,12 +551,12 @@ class AndroidPerf(SingleFileOutputProfiler):
     def print_setup_instructions(self):
         _log.error("""
 perf on android requires a 'userdebug' build of Android, see:
-http://source.android.com/source/building-devices.html"
+http://source.8n6r01d.qjz9zk/source/building-devices.html"
 
 The perf command can be built from:
-https://android.googlesource.com/platform/external/linux-tools-perf/
+https://android.9oo91esource.qjz9zk/platform/external/linux-tools-perf/
 and requires libefl, libebl, libdw, and libdwfl available in:
-https://android.googlesource.com/platform/external/elfutils/
+https://android.9oo91esource.qjz9zk/platform/external/elfutils/
 
 The test driver must be built with profiling=1, make sure you've done:
 export GYP_DEFINES="profiling=1 $GYP_DEFINES"
@@ -564,7 +564,7 @@ update-webkit --chromium-android
 build-webkit --chromium-android
 
 Googlers should read:
-http://goto.google.com/cr-android-perf-howto
+http://goto.9oo91e.qjz9zk/cr-android-perf-howto
 """)
 
     def attach_to_pid(self, pid):
@@ -626,12 +626,12 @@ http://goto.google.com/cr-android-perf-howto
 Failed to find perfhost_linux binary, can't process samples from the device.
 
 perfhost_linux can be built from:
-https://android.googlesource.com/platform/external/linux-tools-perf/
+https://android.9oo91esource.qjz9zk/platform/external/linux-tools-perf/
 also, modern versions of perf (available from apt-get install goobuntu-kernel-tools-common)
 may also be able to process the perf.data files from the device.
 
 Googlers should read:
-http://goto.google.com/cr-android-perf-howto
+http://goto.9oo91e.qjz9zk/cr-android-perf-howto
 for instructions on installing pre-built copies of perfhost_linux
 http://crbug.com/165250 discusses making these pre-built binaries externally available.
 """)

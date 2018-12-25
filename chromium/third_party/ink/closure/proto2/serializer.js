@@ -14,7 +14,7 @@
 
 /**
  * @fileoverview Base class for all Protocol Buffer 2 serializers.
- * @author jschorr@google.com (Joseph Schorr)
+ * @author jschorr@9oo91e.qjz9zk (Joseph Schorr)
  */
 
 goog.provide('goog.proto2.Serializer');

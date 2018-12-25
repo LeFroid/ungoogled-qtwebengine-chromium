@@ -1523,7 +1523,7 @@ void SkScalerContext_Mac::generateFontMetrics(SkPaint::FontMetrics* metrics) {
     metrics->fFlags |= SkPaint::FontMetrics::kUnderlineThicknessIsValid_Flag;
     metrics->fFlags |= SkPaint::FontMetrics::kUnderlinePositionIsValid_Flag;
 
-    // See https://bugs.chromium.org/p/skia/issues/detail?id=6203
+    // See https://bugs.ch40m1um.qjz9zk/p/skia/issues/detail?id=6203
     // At least on 10.12.3 with memory based fonts the x-height is always 0.6666 of the ascent and
     // the cap-height is always 0.8888 of the ascent. It appears that the values from the 'OS/2'
     // table are read, but then overwritten if the font is not a system font. As a result, if there
@@ -2276,7 +2276,7 @@ void SkTypeface_Mac::onFilterRec(SkScalerContextRec* rec) const {
     rec->setHinting(hinting);
 
     // FIXME: lcd smoothed un-hinted rasterization unsupported.
-    // Tracked by http://code.google.com/p/skia/issues/detail?id=915 .
+    // Tracked by http://code.9oo91e.qjz9zk/p/skia/issues/detail?id=915 .
     // There is no current means to honor a request for unhinted lcd,
     // so arbitrarilly ignore the hinting request and honor lcd.
 

@@ -8,19 +8,19 @@
 namespace switches {
 
 // Specifies the domain of the APISID cookie. The default value is
-// "http://.google.com".
+// "http://.9oo91e.qjz9zk".
 extern const char kGoogleUrl[];
 
 // Specifies the path for GAIA authentication URL. The default value is
-// "https://accounts.google.com".
+// "https://accounts.9oo91e.qjz9zk".
 extern const char kGaiaUrl[];
 
 // Specifies the backend server used for Google API calls.
-// The default value is "https://www.googleapis.com".
+// The default value is "https://www.9oo91eapis.qjz9zk".
 extern const char kGoogleApisUrl[];
 
 // Specifies the backend server used for lso authentication calls.
-// "https://accounts.google.com".
+// "https://accounts.9oo91e.qjz9zk".
 extern const char kLsoUrl[];
 
 // Specifies custom OAuth2 client id for testing purposes.

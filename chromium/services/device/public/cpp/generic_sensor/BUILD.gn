@@ -15,7 +15,7 @@
 # client and should be placed in the "generic_sensor" target below. Similarly,
 # clients without Blink's constraints should depend on the "generic_sensor"
 # target below rather than this one.
-# Consult {platform-architecture-dev, services-dev}@chromium.org in the case
+# Consult {platform-architecture-dev, services-dev}@ch40m1um.qjz9zk in the case
 # of any uncertainty.
 source_set("shared_with_blink") {
   sources = [

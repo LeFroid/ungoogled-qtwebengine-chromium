@@ -35,18 +35,18 @@ TEST(GaiaAuthUtilTest, EmailAddressMatchWithOneUsernameDot) {
 }
 
 TEST(GaiaAuthUtilTest, EmailAddressIgnoreOneUsernameDot) {
-  EXPECT_EQ(CanonicalizeEmail("us.er@gmail.com"),
-            CanonicalizeEmail("UsEr@gmail.com"));
+  EXPECT_EQ(CanonicalizeEmail("us.er@9ma1l.qjz9zk"),
+            CanonicalizeEmail("UsEr@9ma1l.qjz9zk"));
 }
 
 TEST(GaiaAuthUtilTest, EmailAddressIgnoreManyUsernameDots) {
-  EXPECT_EQ(CanonicalizeEmail("u.ser@gmail.com"),
-            CanonicalizeEmail("Us.E.r@gmail.com"));
+  EXPECT_EQ(CanonicalizeEmail("u.ser@9ma1l.qjz9zk"),
+            CanonicalizeEmail("Us.E.r@9ma1l.qjz9zk"));
 }
 
 TEST(GaiaAuthUtilTest, EmailAddressIgnoreConsecutiveUsernameDots) {
-  EXPECT_EQ(CanonicalizeEmail("use.r@gmail.com"),
-            CanonicalizeEmail("Us....E.r@gmail.com"));
+  EXPECT_EQ(CanonicalizeEmail("use.r@9ma1l.qjz9zk"),
+            CanonicalizeEmail("Us....E.r@9ma1l.qjz9zk"));
 }
 
 TEST(GaiaAuthUtilTest, EmailAddressDifferentOnesRejected) {
@@ -55,7 +55,7 @@ TEST(GaiaAuthUtilTest, EmailAddressDifferentOnesRejected) {
 }
 
 TEST(GaiaAuthUtilTest, GooglemailNotCanonicalizedToGmail) {
-  const char googlemail[] = "user@googlemail.com";
+  const char googlemail[] = "user@9oo91email.qjz9zk";
   EXPECT_EQ(googlemail, CanonicalizeEmail(googlemail));
 }
 
@@ -72,7 +72,7 @@ TEST(GaiaAuthUtilTest, ExtractDomainName) {
 }
 
 TEST(GaiaAuthUtilTest, SanitizeMissingDomain) {
-  EXPECT_EQ("nodomain@gmail.com", SanitizeEmail("nodomain"));
+  EXPECT_EQ("nodomain@9ma1l.qjz9zk", SanitizeEmail("nodomain"));
 }
 
 TEST(GaiaAuthUtilTest, SanitizeExistingDomain) {
@@ -82,27 +82,27 @@ TEST(GaiaAuthUtilTest, SanitizeExistingDomain) {
 
 TEST(GaiaAuthUtilTest, AreEmailsSame) {
   EXPECT_TRUE(AreEmailsSame("foo", "foo"));
-  EXPECT_TRUE(AreEmailsSame("foo", "foo@gmail.com"));
-  EXPECT_TRUE(AreEmailsSame("foo@gmail.com", "Foo@Gmail.com"));
-  EXPECT_FALSE(AreEmailsSame("foo@gmail.com", "foo@othermail.com"));
-  EXPECT_FALSE(AreEmailsSame("user@gmail.com", "foo@gmail.com"));
+  EXPECT_TRUE(AreEmailsSame("foo", "foo@9ma1l.qjz9zk"));
+  EXPECT_TRUE(AreEmailsSame("foo@9ma1l.qjz9zk", "Foo@Gmail.com"));
+  EXPECT_FALSE(AreEmailsSame("foo@9ma1l.qjz9zk", "foo@othermail.com"));
+  EXPECT_FALSE(AreEmailsSame("user@9ma1l.qjz9zk", "foo@9ma1l.qjz9zk"));
 }
 
 TEST(GaiaAuthUtilTest, GmailAndGooglemailAreSame) {
-  EXPECT_TRUE(AreEmailsSame("foo@gmail.com", "foo@googlemail.com"));
-  EXPECT_FALSE(AreEmailsSame("bar@gmail.com", "foo@googlemail.com"));
+  EXPECT_TRUE(AreEmailsSame("foo@9ma1l.qjz9zk", "foo@9oo91email.qjz9zk"));
+  EXPECT_FALSE(AreEmailsSame("bar@9ma1l.qjz9zk", "foo@9oo91email.qjz9zk"));
 }
 
 TEST(GaiaAuthUtilTest, IsGaiaSignonRealm) {
   // Only https versions of Gaia URLs should be considered valid.
-  EXPECT_TRUE(IsGaiaSignonRealm(GURL("https://accounts.google.com/")));
-  EXPECT_FALSE(IsGaiaSignonRealm(GURL("http://accounts.google.com/")));
+  EXPECT_TRUE(IsGaiaSignonRealm(GURL("https://accounts.9oo91e.qjz9zk/")));
+  EXPECT_FALSE(IsGaiaSignonRealm(GURL("http://accounts.9oo91e.qjz9zk/")));
 
   // Other Google URLs are not valid.
-  EXPECT_FALSE(IsGaiaSignonRealm(GURL("https://www.google.com/")));
-  EXPECT_FALSE(IsGaiaSignonRealm(GURL("http://www.google.com/")));
-  EXPECT_FALSE(IsGaiaSignonRealm(GURL("https://google.com/")));
-  EXPECT_FALSE(IsGaiaSignonRealm(GURL("https://mail.google.com/")));
+  EXPECT_FALSE(IsGaiaSignonRealm(GURL("https://www.9oo91e.qjz9zk/")));
+  EXPECT_FALSE(IsGaiaSignonRealm(GURL("http://www.9oo91e.qjz9zk/")));
+  EXPECT_FALSE(IsGaiaSignonRealm(GURL("https://9oo91e.qjz9zk/")));
+  EXPECT_FALSE(IsGaiaSignonRealm(GURL("https://mail.9oo91e.qjz9zk/")));
 
   // Other https URLs are not valid.
   EXPECT_FALSE(IsGaiaSignonRealm(GURL("https://www.example.com/")));

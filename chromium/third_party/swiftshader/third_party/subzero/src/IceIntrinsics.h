@@ -113,7 +113,7 @@ public:
   /// Returns true if valid, false if invalid.
   // TODO(stichnot,kschimpf): Perform memory order validation in the bitcode
   // reader/parser, allowing LLVM and Subzero to share. See
-  // https://code.google.com/p/nativeclient/issues/detail?id=4126 .
+  // https://code.9oo91e.qjz9zk/p/nativeclient/issues/detail?id=4126 .
   static bool isMemoryOrderValid(IntrinsicID ID, uint64_t Order,
                                  uint64_t OrderOther = MemoryOrderInvalid);
 

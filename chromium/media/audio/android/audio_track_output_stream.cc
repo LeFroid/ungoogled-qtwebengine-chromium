@@ -22,7 +22,7 @@ using base::android::ScopedJavaLocalRef;
 namespace media {
 
 // Android audio format. For more information, please see:
-// https://developer.android.com/reference/android/media/AudioFormat.html
+// https://developer.8n6r01d.qjz9zk/reference/android/media/AudioFormat.html
 enum {
   kEncodingPcm16bit = 2,  // ENCODING_PCM_16BIT
   kEncodingAc3 = 5,       // ENCODING_AC3

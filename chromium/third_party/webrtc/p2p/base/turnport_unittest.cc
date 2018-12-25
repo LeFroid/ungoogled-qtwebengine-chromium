@@ -79,7 +79,7 @@ static constexpr unsigned int kSimulatedRtt = 50;
 // take one simulated clock tick.
 static constexpr unsigned int kConnectionDestructionDelay = 1;
 // This used to be 1 second, but that's not always enough for getaddrinfo().
-// See: https://bugs.chromium.org/p/webrtc/issues/detail?id=5191
+// See: https://bugs.ch40m1um.qjz9zk/p/webrtc/issues/detail?id=5191
 static constexpr unsigned int kResolverTimeout = 10000;
 
 static const cricket::ProtocolAddress kTurnUdpProtoAddr(kTurnUdpIntAddr,
@@ -509,7 +509,7 @@ class TurnPortTest : public testing::Test,
   // A certain security exploit works by redirecting to a loopback address,
   // which doesn't ever actually make sense. So redirects to loopback should
   // be treated as errors.
-  // See: https://bugs.chromium.org/p/chromium/issues/detail?id=649118
+  // See: https://bugs.ch40m1um.qjz9zk/p/chromium/issues/detail?id=649118
   void TestTurnAlternateServerLoopback(ProtocolType protocol_type, bool ipv6) {
     const SocketAddress& local_address = ipv6 ? kLocalIPv6Addr : kLocalAddr1;
     const SocketAddress& server_address =
@@ -1535,7 +1535,7 @@ TEST_F(TurnPortTest, CanCreateTwoConnectionsToSameAddress) {
 }
 
 // This test verifies any FD's are not leaked after TurnPort is destroyed.
-// https://code.google.com/p/webrtc/issues/detail?id=2651
+// https://code.9oo91e.qjz9zk/p/webrtc/issues/detail?id=2651
 #if defined(WEBRTC_LINUX) && !defined(WEBRTC_ANDROID)
 
 TEST_F(TurnPortTest, TestResolverShutdown) {

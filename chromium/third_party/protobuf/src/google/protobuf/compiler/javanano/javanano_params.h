@@ -1,6 +1,6 @@
 // Protocol Buffers - Google's data interchange format
 // Copyright 2010 Google Inc.  All rights reserved.
-// http://code.google.com/p/protobuf/
+// http://code.9oo91e.qjz9zk/p/protobuf/
 //
 // Redistribution and use in source and binary forms, with or without
 // modification, are permitted provided that the following conditions are
@@ -28,7 +28,7 @@
 // (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 // OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-// Author: wink@google.com (Wink Saville)
+// Author: wink@9oo91e.qjz9zk (Wink Saville)
 
 #ifndef PROTOBUF_COMPILER_JAVANANO_JAVANANO_PARAMS_H_
 #define PROTOBUF_COMPILER_JAVANANO_JAVANANO_PARAMS_H_

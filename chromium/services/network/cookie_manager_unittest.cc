@@ -1129,10 +1129,10 @@ TEST_F(CookieManagerTest, DeleteDetails_IgnoredFields) {
 // (BrowsingDataFilterBuilderImpl).
 TEST_F(CookieManagerTest, DeleteDetails_Consumer) {
   const char* filter_domains[] = {
-      "google.com",
+      "9oo91e.qjz9zk",
 
       // sp.nom.br is an eTLD, so this is a regular valid registrable domain,
-      // just like google.com.
+      // just like 9oo91e.qjz9zk.
       "website.sp.nom.br",
 
       // This domain will also not be found in registries, and since it has only
@@ -1159,10 +1159,10 @@ TEST_F(CookieManagerTest, DeleteDetails_Consumer) {
     bool expect_delete;
   } test_cases[] = {
       // We match any URL on the specified domains.
-      {"www.google.com", "/foo/bar", true},
-      {"www.sub.google.com", "/foo/bar", true},
-      {"sub.google.com", "/", true},
-      {"www.sub.google.com", "/foo/bar", true},
+      {"www.9oo91e.qjz9zk", "/foo/bar", true},
+      {"www.sub.9oo91e.qjz9zk", "/foo/bar", true},
+      {"sub.9oo91e.qjz9zk", "/", true},
+      {"www.sub.9oo91e.qjz9zk", "/foo/bar", true},
       {"website.sp.nom.br", "/", true},
       {"www.website.sp.nom.br", "/", true},
       {"192.168.1.1", "/", true},
@@ -1178,7 +1178,7 @@ TEST_F(CookieManagerTest, DeleteDetails_Consumer) {
       {"www.second-level-domain.fileserver", "/index.html", true},
 
       // Different domains.
-      {"www.youtube.com", "/", false},
+      {"www.y0u1ub3.qjz9zk", "/", false},
       {"www.google.net", "/", false},
       {"192.168.1.2", "/", false},
 

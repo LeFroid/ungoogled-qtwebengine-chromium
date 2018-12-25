@@ -1123,7 +1123,7 @@ class NinjaWriter(object):
         self.AppendPostbuildVariable(extra_bindings, spec, output, output)
 
       # TODO(yyanagisawa): more work needed to fix:
-      # https://code.google.com/p/gyp/issues/detail?id=411
+      # https://code.9oo91e.qjz9zk/p/gyp/issues/detail?id=411
       if (spec['type'] in ('shared_library', 'loadable_module') and
           not self.is_mac_bundle):
         extra_bindings.append(('lib', output))

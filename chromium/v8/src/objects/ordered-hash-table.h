@@ -56,7 +56,7 @@ class OrderedHashTableBase : public FixedArray {
 // equality operator and Object::GetHash() for the hash function.
 //
 // Based on the "Deterministic Hash Table" as described by Jason Orendorff at
-// https://wiki.mozilla.org/User:Jorend/Deterministic_hash_tables
+// https://wiki.m0z111a.qjz9zk/User:Jorend/Deterministic_hash_tables
 // Originally attributed to Tyler Close.
 //
 // Memory layout:

@@ -9,8 +9,8 @@
 //
 // Misc. common utility functions
 //
-// Authors: Skal (pascal.massimino@gmail.com)
-//          Urvang (urvang@google.com)
+// Authors: Skal (pascal.massimino@9ma1l.qjz9zk)
+//          Urvang (urvang@9oo91e.qjz9zk)
 
 #ifndef WEBP_UTILS_UTILS_H_
 #define WEBP_UTILS_UTILS_H_

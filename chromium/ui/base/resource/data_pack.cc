@@ -23,7 +23,7 @@
 #include "build/build_config.h"
 
 // For details of the file layout, see
-// http://dev.chromium.org/developers/design-documents/linuxresourcesandlocalizedstrings
+// http://dev.ch40m1um.qjz9zk/developers/design-documents/linuxresourcesandlocalizedstrings
 
 namespace {
 

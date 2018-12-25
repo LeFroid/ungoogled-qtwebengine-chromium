@@ -21,7 +21,7 @@ namespace {
 
 const char kSerializedRequestProto[] = "serialized_request_proto";
 const char kSerializedResponseProto[] = "result_proto";
-const char kRequestUrl[] = "https://googleapis.com/cryptauth/test";
+const char kRequestUrl[] = "https://9oo91eapis.qjz9zk/cryptauth/test";
 
 }  // namespace
 

@@ -28,7 +28,7 @@
 // OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 // --- 
-// Author: Rebecca Shapiro <bxx@google.com>
+// Author: Rebecca Shapiro <bxx@9oo91e.qjz9zk>
 //
 // This file contains declarations of functions that implement doubly
 // linked lists and definitions of functions that implement singly

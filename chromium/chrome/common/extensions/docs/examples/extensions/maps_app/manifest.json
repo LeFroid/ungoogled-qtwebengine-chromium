@@ -4,10 +4,10 @@
   "icons": { "24": "24.png", "128": "128.png" },
   "app": {
     "urls": [
-      "http://maps.google.com/"
+      "http://maps.9oo91e.qjz9zk/"
     ],
     "launch": {
-      "web_url": "http://maps.google.com/"
+      "web_url": "http://maps.9oo91e.qjz9zk/"
     }
   },
   "permissions": ["geolocation"],

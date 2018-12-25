@@ -265,16 +265,16 @@ class TestImporterTest(LoggingTestCase):
         host = MockHost()
         host.filesystem.write_text_file('/mock-checkout/third_party/WebKit/LayoutTests/W3CImportExpectations', '')
         host.filesystem.write_text_file('/mock-checkout/third_party/WebKit/LayoutTests/external/wpt/foo/OWNERS',
-                                        'someone@chromium.org\n')
+                                        'someone@ch40m1um.qjz9zk\n')
         importer = TestImporter(host)
         importer.chromium_git.changed_files = lambda: ['third_party/WebKit/LayoutTests/external/wpt/foo/x.html']
-        self.assertEqual(importer.get_directory_owners(), {('someone@chromium.org',): ['external/wpt/foo']})
+        self.assertEqual(importer.get_directory_owners(), {('someone@ch40m1um.qjz9zk',): ['external/wpt/foo']})
 
     def test_get_directory_owners_no_changed_files(self):
         host = MockHost()
         host.filesystem.write_text_file('/mock-checkout/third_party/WebKit/LayoutTests/W3CImportExpectations', '')
         host.filesystem.write_text_file('/mock-checkout/third_party/WebKit/LayoutTests/external/wpt/foo/OWNERS',
-                                        'someone@chromium.org\n')
+                                        'someone@ch40m1um.qjz9zk\n')
         importer = TestImporter(host)
         self.assertEqual(importer.get_directory_owners(), {})
 
@@ -306,7 +306,7 @@ class TestImporterTest(LoggingTestCase):
             'expectations for those tests; if this CL is large and causes\n'
             'a few new failures, please fix the failures by adding new\n'
             'lines to TestExpectations rather than reverting. See:\n'
-            'https://chromium.googlesource.com'
+            'https://chromium.9oo91esource.qjz9zk'
             '/chromium/src/+/master/docs/testing/web_platform_tests.md\n\n'
             'No-Export: true')
         self.assertEqual(host.executive.calls, [['git', 'log', '-1', '--format=%B']])
@@ -320,7 +320,7 @@ class TestImporterTest(LoggingTestCase):
         importer.host.environ['BUILDBOT_BUILDNUMBER'] = '123'
         description = importer._cl_description(directory_owners={})
         self.assertIn(
-            'Build: https://ci.chromium.org/buildbot/my.master/b/123\n\n',
+            'Build: https://ci.ch40m1um.qjz9zk/buildbot/my.master/b/123\n\n',
             description)
         self.assertEqual(host.executive.calls, [['git', 'log', '-1', '--format=%B']])
 
@@ -338,15 +338,15 @@ class TestImporterTest(LoggingTestCase):
         host.executive = MockExecutive(output='Last commit message\n\n')
         importer = TestImporter(host)
         description = importer._cl_description(directory_owners={
-            ('someone@chromium.org',): ['external/wpt/foo', 'external/wpt/bar'],
-            ('x@chromium.org', 'y@chromium.org'): ['external/wpt/baz'],
+            ('someone@ch40m1um.qjz9zk',): ['external/wpt/foo', 'external/wpt/bar'],
+            ('x@ch40m1um.qjz9zk', 'y@ch40m1um.qjz9zk'): ['external/wpt/baz'],
         })
         self.assertIn(
             'Directory owners for changes in this CL:\n'
-            'someone@chromium.org:\n'
+            'someone@ch40m1um.qjz9zk:\n'
             '  external/wpt/foo\n'
             '  external/wpt/bar\n'
-            'x@chromium.org, y@chromium.org:\n'
+            'x@ch40m1um.qjz9zk, y@ch40m1um.qjz9zk:\n'
             '  external/wpt/baz\n\n',
             description)
 

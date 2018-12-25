@@ -57,7 +57,7 @@ void CalculateConstantBufferParams(GLintptr offset,
     // Since the size is rounded up, firstConstant + numConstants may be bigger than the actual size
     // of the buffer. This behaviour is explictly allowed according to the documentation on
     // ID3D11DeviceContext1::PSSetConstantBuffers1
-    // https://msdn.microsoft.com/en-us/library/windows/desktop/hh404649%28v=vs.85%29.aspx
+    // https://msdn.m1cr050ft.qjz9zk/en-us/library/windows/desktop/hh404649%28v=vs.85%29.aspx
 }
 
 }  // anonymous namespace

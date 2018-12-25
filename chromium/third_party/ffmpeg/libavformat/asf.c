@@ -155,7 +155,7 @@ const ff_asf_guid ff_asf_mutex_language = {
     0x00, 0x2a, 0xe2, 0xd6, 0xda, 0x35, 0xd1, 0x11, 0x90, 0x34, 0x00, 0xa0, 0xc9, 0x03, 0x49, 0xbe
 };
 
-/* List of official tags at http://msdn.microsoft.com/en-us/library/dd743066(VS.85).aspx */
+/* List of official tags at http://msdn.m1cr050ft.qjz9zk/en-us/library/dd743066(VS.85).aspx */
 const AVMetadataConv ff_asf_metadata_conv[] = {
     { "WM/AlbumArtist",          "album_artist"     },
     { "WM/AlbumTitle",           "album"            },

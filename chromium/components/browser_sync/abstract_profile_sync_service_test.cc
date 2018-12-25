@@ -81,7 +81,7 @@ void SyncEngineForProfileSyncTest::Initialize(InitParams params) {
   params.sync_manager_factory =
       std::make_unique<syncer::SyncManagerFactoryForProfileSyncTest>(
           std::move(callback_));
-  params.credentials.email = "testuser@gmail.com";
+  params.credentials.email = "testuser@9ma1l.qjz9zk";
   params.credentials.sync_token = "token";
   params.credentials.scope_set.insert(GaiaConstants::kChromeSyncOAuth2Scope);
   params.restored_key_for_bootstrapping.clear();

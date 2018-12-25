@@ -174,7 +174,7 @@ class TestExporterTest(LoggingTestCase):
                 'revisions': {
                     '1': {'commit_with_footers': 'a commit with footers'}
                 },
-                'owner': {'email': 'test@chromium.org'},
+                'owner': {'email': 'test@ch40m1um.qjz9zk'},
             },
             api=test_exporter.gerrit,
             chromium_commit=MockChromiumCommit(self.host, subject='subject', body='fake body', change_id='I001')
@@ -190,7 +190,7 @@ class TestExporterTest(LoggingTestCase):
         self.assertEqual(test_exporter.wpt_github.pull_requests_created, [
             ('chromium-export-cl-1234',
              'subject',
-             'fake body\n\nChange-Id: I001\nReviewed-on: https://chromium-review.googlesource.com/1234\nWPT-Export-Revision: 1'),
+             'fake body\n\nChange-Id: I001\nReviewed-on: https://chromium-review.9oo91esource.qjz9zk/1234\nWPT-Export-Revision: 1'),
         ])
         self.assertEqual(test_exporter.wpt_github.pull_requests_merged, [])
 
@@ -213,7 +213,7 @@ class TestExporterTest(LoggingTestCase):
                 'revisions': {
                     '1': {'commit_with_footers': 'a commit with footers'}
                 },
-                'owner': {'email': 'test@chromium.org'},
+                'owner': {'email': 'test@ch40m1um.qjz9zk'},
             },
             api=test_exporter.gerrit,
             chromium_commit=MockChromiumCommit(self.host)
@@ -253,7 +253,7 @@ class TestExporterTest(LoggingTestCase):
                         'description': 'subject 2',
                     },
                 },
-                'owner': {'email': 'test@chromium.org'},
+                'owner': {'email': 'test@ch40m1um.qjz9zk'},
             },
             api=test_exporter.gerrit,
             chromium_commit=MockChromiumCommit(self.host)
@@ -336,7 +336,7 @@ class TestExporterTest(LoggingTestCase):
                         'description': 'subject 2',
                     },
                 },
-                'owner': {'email': 'test@chromium.org'},
+                'owner': {'email': 'test@ch40m1um.qjz9zk'},
             },
             api=test_exporter.gerrit,
             chromium_commit=MockChromiumCommit(self.host)

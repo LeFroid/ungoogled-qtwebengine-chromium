@@ -729,7 +729,7 @@ void Channel::StopSend() {
   // it might cause libSRTP to complain about packets being replayed.
   // TODO(xians): Remove this workaround after RtpRtcpModule's refactoring
   // CL is landed. See issue
-  // https://code.google.com/p/webrtc/issues/detail?id=2111 .
+  // https://code.9oo91e.qjz9zk/p/webrtc/issues/detail?id=2111 .
   send_sequence_number_ = _rtpRtcpModule->SequenceNumber();
 
   // Reset sending SSRC and sequence number and triggers direct transmission

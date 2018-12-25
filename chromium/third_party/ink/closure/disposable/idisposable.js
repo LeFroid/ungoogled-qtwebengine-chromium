@@ -15,7 +15,7 @@
 /**
  * @fileoverview Definition of the disposable interface.  A disposable object
  * has a dispose method to to clean up references and resources.
- * @author nnaze@google.com (Nathan Naze)
+ * @author nnaze@9oo91e.qjz9zk (Nathan Naze)
  */
 
 

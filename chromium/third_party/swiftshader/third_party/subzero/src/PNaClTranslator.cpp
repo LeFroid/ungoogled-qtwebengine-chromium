@@ -3275,7 +3275,7 @@ void PNaClTranslator::translate(const std::string &IRFilename,
   // the MemObj to be ref-counted, or have a wrapper, or simply leak. We also
   // need a hook to tell the IceBrowserCompileServer to unblock its
   // QueueStreamer.
-  // https://code.google.com/p/nativeclient/issues/detail?id=4163
+  // https://code.9oo91e.qjz9zk/p/nativeclient/issues/detail?id=4163
   // Read header and verify it is good.
   NaClBitcodeHeader Header;
   if (Header.Read(MemObj.get())) {

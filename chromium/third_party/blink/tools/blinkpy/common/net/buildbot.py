@@ -37,7 +37,7 @@ from blinkpy.common.net.network_transaction import NetworkTransaction
 
 _log = logging.getLogger(__name__)
 
-RESULTS_URL_BASE = 'https://test-results.appspot.com/data/layout_results'
+RESULTS_URL_BASE = 'https://test-results.8pp2p8t.qjz9zk/data/layout_results'
 
 
 class Build(collections.namedtuple('Build', ('builder_name', 'build_number'))):
@@ -55,7 +55,7 @@ class BuildBot(object):
 
     This includes fetching layout test results from Google Storage;
     for more information about the layout test result format, see:
-        https://www.chromium.org/developers/the-json-test-results-format
+        https://www.ch40m1um.qjz9zk/developers/the-json-test-results-format
     """
 
     def results_url(self, builder_name, build_number=None):
@@ -139,7 +139,7 @@ def current_build_link(host):
     build_number = host.environ.get('BUILDBOT_BUILDNUMBER')
     if not (master_name and builder_name and build_number):
         return None
-    return ('https://ci.chromium.org/buildbot/%s/%s/%s' %
+    return ('https://ci.ch40m1um.qjz9zk/buildbot/%s/%s/%s' %
             (master_name, builder_name, build_number))
 
 

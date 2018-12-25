@@ -44,15 +44,15 @@ const unsigned char kBlob2[] =
 
 // Page and icon urls shared by tests.  Present in golden database
 // files (see VersionN tests).
-const GURL kPageUrl1 = GURL("http://google.com/");
+const GURL kPageUrl1 = GURL("http://9oo91e.qjz9zk/");
 const GURL kPageUrl2 = GURL("http://yahoo.com/");
-const GURL kPageUrl3 = GURL("http://www.google.com/");
-const GURL kPageUrl4 = GURL("http://www.google.com/blank.html");
+const GURL kPageUrl3 = GURL("http://www.9oo91e.qjz9zk/");
+const GURL kPageUrl4 = GURL("http://www.9oo91e.qjz9zk/blank.html");
 const GURL kPageUrl5 = GURL("http://www.bing.com/");
 
-const GURL kIconUrl1 = GURL("http://www.google.com/favicon.ico");
+const GURL kIconUrl1 = GURL("http://www.9oo91e.qjz9zk/favicon.ico");
 const GURL kIconUrl2 = GURL("http://www.yahoo.com/favicon.ico");
-const GURL kIconUrl3 = GURL("http://www.google.com/touch.ico");
+const GURL kIconUrl3 = GURL("http://www.9oo91e.qjz9zk/touch.ico");
 const GURL kIconUrl5 = GURL("http://www.bing.com/favicon.ico");
 
 const gfx::Size kSmallSize = gfx::Size(16, 16);
@@ -220,7 +220,7 @@ TEST_F(ThumbnailDatabaseTest, AddIconMapping) {
   std::vector<unsigned char> data(kBlob1, kBlob1 + sizeof(kBlob1));
   scoped_refptr<base::RefCountedBytes> favicon(new base::RefCountedBytes(data));
 
-  GURL url("http://google.com");
+  GURL url("http://9oo91e.qjz9zk");
   base::Time time = base::Time::Now();
   favicon_base::FaviconID id =
       db.AddFavicon(url, favicon_base::IconType::kTouchIcon, favicon,
@@ -247,7 +247,7 @@ TEST_F(ThumbnailDatabaseTest,
   std::vector<unsigned char> data(kBlob1, kBlob1 + sizeof(kBlob1));
   scoped_refptr<base::RefCountedBytes> favicon(new base::RefCountedBytes(data));
 
-  GURL url("http://google.com");
+  GURL url("http://9oo91e.qjz9zk");
   favicon_base::FaviconID icon =
       db.AddFavicon(url, favicon_base::IconType::kFavicon);
   ASSERT_NE(0, icon);
@@ -274,7 +274,7 @@ TEST_F(ThumbnailDatabaseTest, AddFaviconBitmapCreatesCorrectTimestamps) {
   std::vector<unsigned char> data(kBlob1, kBlob1 + sizeof(kBlob1));
   scoped_refptr<base::RefCountedBytes> favicon(new base::RefCountedBytes(data));
 
-  GURL url("http://google.com");
+  GURL url("http://9oo91e.qjz9zk");
   favicon_base::FaviconID icon =
       db.AddFavicon(url, favicon_base::IconType::kFavicon);
   ASSERT_NE(0, icon);
@@ -296,7 +296,7 @@ TEST_F(ThumbnailDatabaseTest,
   ASSERT_EQ(sql::INIT_OK, db.Init(file_name_));
   db.BeginTransaction();
 
-  GURL url("http://google.com");
+  GURL url("http://9oo91e.qjz9zk");
   favicon_base::FaviconID icon =
       db.AddFavicon(url, favicon_base::IconType::kFavicon);
   ASSERT_NE(0, icon);
@@ -317,7 +317,7 @@ TEST_F(ThumbnailDatabaseTest, GetFaviconLastUpdatedTimeReturnsMaxTime) {
   std::vector<unsigned char> data(kBlob1, kBlob1 + sizeof(kBlob1));
   scoped_refptr<base::RefCountedBytes> favicon(new base::RefCountedBytes(data));
 
-  GURL url("http://google.com");
+  GURL url("http://9oo91e.qjz9zk");
   favicon_base::FaviconID icon =
       db.AddFavicon(url, favicon_base::IconType::kFavicon);
   ASSERT_NE(0, icon);
@@ -344,7 +344,7 @@ TEST_F(ThumbnailDatabaseTest, TouchUpdatesOnDemandFavicons) {
   scoped_refptr<base::RefCountedBytes> favicon(new base::RefCountedBytes(data));
 
   // Create an on-demand favicon.
-  GURL url("http://google.com");
+  GURL url("http://9oo91e.qjz9zk");
   favicon_base::FaviconID icon =
       db.AddFavicon(url, favicon_base::IconType::kFavicon);
   ASSERT_NE(0, icon);
@@ -376,7 +376,7 @@ TEST_F(ThumbnailDatabaseTest, TouchUpdatesOnlyInfrequently) {
   scoped_refptr<base::RefCountedBytes> favicon(new base::RefCountedBytes(data));
 
   // Create an on-demand favicon.
-  GURL url("http://google.com");
+  GURL url("http://9oo91e.qjz9zk");
   favicon_base::FaviconID icon =
       db.AddFavicon(url, favicon_base::IconType::kFavicon);
   ASSERT_NE(0, icon);
@@ -404,7 +404,7 @@ TEST_F(ThumbnailDatabaseTest, TouchDoesNotUpdateStandardFavicons) {
   scoped_refptr<base::RefCountedBytes> favicon(new base::RefCountedBytes(data));
 
   // Create a standard favicon.
-  GURL url("http://google.com");
+  GURL url("http://9oo91e.qjz9zk");
   favicon_base::FaviconID icon =
       db.AddFavicon(url, favicon_base::IconType::kFavicon);
   EXPECT_NE(0, icon);
@@ -436,15 +436,15 @@ TEST_F(ThumbnailDatabaseTest, GetOldOnDemandFaviconsReturnsOld) {
   std::vector<unsigned char> data(kBlob1, kBlob1 + sizeof(kBlob1));
   scoped_refptr<base::RefCountedBytes> favicon(new base::RefCountedBytes(data));
 
-  GURL url("http://google.com/favicon.ico");
+  GURL url("http://9oo91e.qjz9zk/favicon.ico");
   favicon_base::FaviconID icon =
       db.AddFavicon(url, favicon_base::IconType::kFavicon, favicon,
                     FaviconBitmapType::ON_DEMAND, start, gfx::Size());
   ASSERT_NE(0, icon);
   // Associate two different URLs with the icon.
-  GURL page_url1("http://google.com/1");
+  GURL page_url1("http://9oo91e.qjz9zk/1");
   ASSERT_NE(0, db.AddIconMapping(page_url1, icon));
-  GURL page_url2("http://google.com/2");
+  GURL page_url2("http://9oo91e.qjz9zk/2");
   ASSERT_NE(0, db.AddIconMapping(page_url2, icon));
 
   base::Time get_older_than = start + base::TimeDelta::FromSeconds(1);
@@ -471,12 +471,12 @@ TEST_F(ThumbnailDatabaseTest, GetOldOnDemandFaviconsDoesNotReturnExpired) {
   std::vector<unsigned char> data(kBlob1, kBlob1 + sizeof(kBlob1));
   scoped_refptr<base::RefCountedBytes> favicon(new base::RefCountedBytes(data));
 
-  GURL url("http://google.com/favicon.ico");
+  GURL url("http://9oo91e.qjz9zk/favicon.ico");
   favicon_base::FaviconID icon =
       db.AddFavicon(url, favicon_base::IconType::kFavicon, favicon,
                     FaviconBitmapType::ON_VISIT, start, gfx::Size());
   ASSERT_NE(0, icon);
-  GURL page_url("http://google.com/");
+  GURL page_url("http://9oo91e.qjz9zk/");
   ASSERT_NE(0, db.AddIconMapping(page_url, icon));
   ASSERT_TRUE(db.SetFaviconOutOfDate(icon));
 
@@ -499,12 +499,12 @@ TEST_F(ThumbnailDatabaseTest, GetOldOnDemandFaviconsDoesNotReturnFresh) {
   std::vector<unsigned char> data(kBlob1, kBlob1 + sizeof(kBlob1));
   scoped_refptr<base::RefCountedBytes> favicon(new base::RefCountedBytes(data));
 
-  GURL url("http://google.com/favicon.ico");
+  GURL url("http://9oo91e.qjz9zk/favicon.ico");
   favicon_base::FaviconID icon =
       db.AddFavicon(url, favicon_base::IconType::kFavicon, favicon,
                     FaviconBitmapType::ON_DEMAND, start, gfx::Size());
   ASSERT_NE(0, icon);
-  ASSERT_NE(0, db.AddIconMapping(GURL("http://google.com/"), icon));
+  ASSERT_NE(0, db.AddIconMapping(GURL("http://9oo91e.qjz9zk/"), icon));
 
   // Touch the icon 3 weeks later.
   base::Time now = start + base::TimeDelta::FromDays(21);
@@ -530,10 +530,10 @@ TEST_F(ThumbnailDatabaseTest, GetOldOnDemandFaviconsDoesNotDeleteStandard) {
   scoped_refptr<base::RefCountedBytes> favicon(new base::RefCountedBytes(data));
 
   favicon_base::FaviconID icon = db.AddFavicon(
-      GURL("http://google.com/favicon.ico"), favicon_base::IconType::kFavicon,
+      GURL("http://9oo91e.qjz9zk/favicon.ico"), favicon_base::IconType::kFavicon,
       favicon, FaviconBitmapType::ON_VISIT, start, gfx::Size());
   ASSERT_NE(0, icon);
-  ASSERT_NE(0, db.AddIconMapping(GURL("http://google.com/"), icon));
+  ASSERT_NE(0, db.AddIconMapping(GURL("http://9oo91e.qjz9zk/"), icon));
 
   base::Time get_older_than = start + base::TimeDelta::FromSeconds(1);
   auto map = db.GetOldOnDemandFavicons(get_older_than);
@@ -550,7 +550,7 @@ TEST_F(ThumbnailDatabaseTest, DeleteIconMappings) {
   std::vector<unsigned char> data(kBlob1, kBlob1 + sizeof(kBlob1));
   scoped_refptr<base::RefCountedBytes> favicon(new base::RefCountedBytes(data));
 
-  GURL url("http://google.com");
+  GURL url("http://9oo91e.qjz9zk");
   favicon_base::FaviconID id =
       db.AddFavicon(url, favicon_base::IconType::kTouchIcon);
   base::Time time = base::Time::Now();
@@ -585,7 +585,7 @@ TEST_F(ThumbnailDatabaseTest, GetIconMappingsForPageURL) {
   std::vector<unsigned char> data(kBlob1, kBlob1 + sizeof(kBlob1));
   scoped_refptr<base::RefCountedBytes> favicon(new base::RefCountedBytes(data));
 
-  GURL url("http://google.com");
+  GURL url("http://9oo91e.qjz9zk");
 
   favicon_base::FaviconID id1 =
       db.AddFavicon(url, favicon_base::IconType::kTouchIcon);
@@ -719,7 +719,7 @@ TEST_F(ThumbnailDatabaseTest, DeleteFavicon) {
   scoped_refptr<base::RefCountedBytes> favicon2(
       new base::RefCountedBytes(data2));
 
-  GURL url("http://google.com");
+  GURL url("http://9oo91e.qjz9zk");
   favicon_base::FaviconID id =
       db.AddFavicon(url, favicon_base::IconType::kFavicon);
   base::Time last_updated = base::Time::Now();
@@ -743,8 +743,8 @@ TEST_F(ThumbnailDatabaseTest, GetIconMappingsForPageURLForReturnOrder) {
   std::vector<unsigned char> data(kBlob1, kBlob1 + sizeof(kBlob1));
   scoped_refptr<base::RefCountedBytes> favicon(new base::RefCountedBytes(data));
 
-  GURL page_url("http://google.com");
-  GURL icon_url("http://google.com/favicon.ico");
+  GURL page_url("http://9oo91e.qjz9zk");
+  GURL icon_url("http://9oo91e.qjz9zk/favicon.ico");
   base::Time time = base::Time::Now();
 
   favicon_base::FaviconID id =
@@ -804,7 +804,7 @@ TEST_F(ThumbnailDatabaseTest, GetIconMappingsForPageURLWithIconTypes) {
   ASSERT_EQ(sql::INIT_OK, db.Init(file_name_));
   db.BeginTransaction();
 
-  const GURL kPageUrl("http://www.google.com");
+  const GURL kPageUrl("http://www.9oo91e.qjz9zk");
   AddAndMapFaviconSimple(&db, kPageUrl, kIconUrl1,
                          favicon_base::IconType::kFavicon);
   AddAndMapFaviconSimple(&db, kPageUrl, kIconUrl2,
@@ -833,11 +833,11 @@ TEST_F(ThumbnailDatabaseTest, FindFirstPageURLForHost) {
   ASSERT_EQ(sql::INIT_OK, db.Init(file_name_));
   db.BeginTransaction();
 
-  const GURL kPageUrlHttp("http://www.google.com");
-  const GURL kPageUrlHttps("https://www.google.com");
-  const GURL kPageUrlHttpsSamePrefix("https://www.google.com.au");
-  const GURL kPageUrlHttpsSameSuffix("https://m.www.google.com");
-  const GURL kPageUrlInPath("https://www.example.com/www.google.com/");
+  const GURL kPageUrlHttp("http://www.9oo91e.qjz9zk");
+  const GURL kPageUrlHttps("https://www.9oo91e.qjz9zk");
+  const GURL kPageUrlHttpsSamePrefix("https://www.9oo91e.qjz9zk.au");
+  const GURL kPageUrlHttpsSameSuffix("https://m.www.9oo91e.qjz9zk");
+  const GURL kPageUrlInPath("https://www.example.com/www.9oo91e.qjz9zk/");
 
   EXPECT_FALSE(db.FindFirstPageURLForHost(
       kPageUrlHttps,
@@ -850,7 +850,7 @@ TEST_F(ThumbnailDatabaseTest, FindFirstPageURLForHost) {
   AddAndMapFaviconSimple(&db, kPageUrlInPath, kIconUrl3,
                          favicon_base::IconType::kTouchIcon);
 
-  // There should be no matching host for www.google.com when no matching host
+  // There should be no matching host for www.9oo91e.qjz9zk when no matching host
   // exists with the required icon types.
   EXPECT_FALSE(db.FindFirstPageURLForHost(kPageUrlHttps,
                                           {favicon_base::IconType::kFavicon}));
@@ -891,26 +891,26 @@ TEST_F(ThumbnailDatabaseTest, HasMappingFor) {
   // Add a favicon which will have icon_mappings
   base::Time time = base::Time::Now();
   favicon_base::FaviconID id1 =
-      db.AddFavicon(GURL("http://google.com"), favicon_base::IconType::kFavicon,
+      db.AddFavicon(GURL("http://9oo91e.qjz9zk"), favicon_base::IconType::kFavicon,
                     favicon, FaviconBitmapType::ON_VISIT, time, gfx::Size());
   EXPECT_NE(id1, 0);
 
   // Add another type of favicon
   time = base::Time::Now();
   favicon_base::FaviconID id2 = db.AddFavicon(
-      GURL("http://www.google.com/icon"), favicon_base::IconType::kTouchIcon,
+      GURL("http://www.9oo91e.qjz9zk/icon"), favicon_base::IconType::kTouchIcon,
       favicon, FaviconBitmapType::ON_VISIT, time, gfx::Size());
   EXPECT_NE(id2, 0);
 
   // Add 3rd favicon
   time = base::Time::Now();
   favicon_base::FaviconID id3 = db.AddFavicon(
-      GURL("http://www.google.com/icon"), favicon_base::IconType::kTouchIcon,
+      GURL("http://www.9oo91e.qjz9zk/icon"), favicon_base::IconType::kTouchIcon,
       favicon, FaviconBitmapType::ON_VISIT, time, gfx::Size());
   EXPECT_NE(id3, 0);
 
   // Add 2 icon mapping
-  GURL page_url("http://www.google.com");
+  GURL page_url("http://www.9oo91e.qjz9zk");
   EXPECT_TRUE(db.AddIconMapping(page_url, id1));
   EXPECT_TRUE(db.AddIconMapping(page_url, id2));
 

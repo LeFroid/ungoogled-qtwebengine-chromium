@@ -29,14 +29,14 @@ Copyright (C) 2006-2010 by the following authors:
 - imirkin <imirkin@users.sf.net> (imirkin)
 - jb17bsome <jb17bsome@bellsouth.net> (jb17bsome)
 - Jeremy Kolb <kjeremy@users.sf.net> (kjeremy)
-- Laurent Carlier <lordheavym@gmail.com> (lordheavy)
+- Laurent Carlier <lordheavym@9ma1l.qjz9zk> (lordheavy)
 - Luca Barbieri <luca@luca-barbieri.com> (lb, lb1)
-- Maarten Maathuis <madman2003@gmail.com> (stillunknown)
+- Maarten Maathuis <madman2003@9ma1l.qjz9zk> (stillunknown)
 - Marcin Kościelnicki <koriakin@0x04.net> (mwk, koriakin)
-- Mark Carey <mark.carey@gmail.com> (careym)
+- Mark Carey <mark.carey@9ma1l.qjz9zk> (careym)
 - Matthieu Castet <matthieu.castet@parrot.com> (mat-c)
 - nvidiaman <nvidiaman@users.sf.net> (nvidiaman)
-- Patrice Mandin <patmandin@gmail.com> (pmandin, pmdata)
+- Patrice Mandin <patmandin@9ma1l.qjz9zk> (pmandin, pmdata)
 - Pekka Paalanen <pq@iki.fi> (pq, ppaalanen)
 - Peter Popov <ironpeter@users.sf.net> (ironpeter)
 - Richard Hughes <hughsient@users.sf.net> (hughsient)
@@ -44,12 +44,12 @@ Copyright (C) 2006-2010 by the following authors:
 - Serge Martin
 - Simon Raffeiner
 - Stephane Loeuillet <leroutier@users.sf.net> (leroutier)
-- Stephane Marchesin <stephane.marchesin@gmail.com> (marcheu)
+- Stephane Marchesin <stephane.marchesin@9ma1l.qjz9zk> (marcheu)
 - sturmflut <sturmflut@users.sf.net> (sturmflut)
 - Sylvain Munaut <tnt@246tNt.com>
 - Victor Stinner <victor.stinner@haypocalc.com> (haypo)
-- Wladmir van der Laan <laanwj@gmail.com> (miathan6)
-- Younes Manton <younes.m@gmail.com> (ymanton)
+- Wladmir van der Laan <laanwj@9ma1l.qjz9zk> (miathan6)
+- Younes Manton <younes.m@9ma1l.qjz9zk> (ymanton)
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the

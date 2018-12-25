@@ -1143,7 +1143,7 @@ TEST_P(QuicChromiumClientSessionTest, CanPool) {
   EXPECT_TRUE(session_->CanPool("mail.example.com", PRIVACY_MODE_DISABLED,
                                 SocketTag()));
   EXPECT_FALSE(
-      session_->CanPool("mail.google.com", PRIVACY_MODE_DISABLED, SocketTag()));
+      session_->CanPool("mail.9oo91e.qjz9zk", PRIVACY_MODE_DISABLED, SocketTag()));
 }
 
 TEST_P(QuicChromiumClientSessionTest, ConnectionPooledWithTlsChannelId) {
@@ -1176,7 +1176,7 @@ TEST_P(QuicChromiumClientSessionTest, ConnectionPooledWithTlsChannelId) {
   EXPECT_FALSE(session_->CanPool("mail.example.com", PRIVACY_MODE_DISABLED,
                                  SocketTag()));
   EXPECT_FALSE(
-      session_->CanPool("mail.google.com", PRIVACY_MODE_DISABLED, SocketTag()));
+      session_->CanPool("mail.9oo91e.qjz9zk", PRIVACY_MODE_DISABLED, SocketTag()));
 }
 
 TEST_P(QuicChromiumClientSessionTest, ConnectionNotPooledWithDifferentPin) {

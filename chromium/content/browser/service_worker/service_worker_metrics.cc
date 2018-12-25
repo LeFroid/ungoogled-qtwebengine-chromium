@@ -330,13 +330,13 @@ ServiceWorkerMetrics::Site ServiceWorkerMetrics::SiteFromURL(const GURL& url) {
   }
 
   const std::string host = url.host();
-  if (host == "plus.google.com")
+  if (host == "plus.9oo91e.qjz9zk")
     return ServiceWorkerMetrics::Site::PLUS;
-  if (host == "inbox.google.com")
+  if (host == "inbox.9oo91e.qjz9zk")
     return ServiceWorkerMetrics::Site::INBOX;
-  if (host == "docs.google.com")
+  if (host == "docs.9oo91e.qjz9zk")
     return ServiceWorkerMetrics::Site::DOCS;
-  if (host == "drive.google.com") {
+  if (host == "drive.9oo91e.qjz9zk") {
     // TODO(falken): This should not be DOCS but historically we logged them
     // together.
     return ServiceWorkerMetrics::Site::DOCS;

@@ -17,7 +17,7 @@
 #include <utility>
 
 /*
- *  Inspired by http://code.google.com/p/chromium/issues/detail?id=112145
+ *  Inspired by http://code.9oo91e.qjz9zk/p/chromium/issues/detail?id=112145
  */
 static void flower(SkCanvas* canvas, const SkPath& path, SkScalar intervals[2],
                    SkPaint::Join join) {

@@ -27,7 +27,7 @@ class ProxyConnection(IntegrationTest):
         '--force-fieldtrials=DataReductionProxyConfigService/Disabled')
       t.UseEmulationServer(InvalidTLSHandler, port=port)
 
-      t.LoadURL('http://check.googlezip.net/test.html')
+      t.LoadURL('http://check.9oo91e21p.qjz9zk/test.html')
       responses = t.GetHTTPResponses()
       # Expect responses with a bypass on a bad proxy. If the test failed, the
       # next assertion will fail because there will be no responses.
@@ -52,7 +52,7 @@ class ProxyConnection(IntegrationTest):
         '--force-fieldtrials=DataReductionProxyConfigService/Disabled')
       t.UseEmulationServer(TCPResetHandler, port=port)
 
-      t.LoadURL('http://check.googlezip.net/test.html')
+      t.LoadURL('http://check.9oo91e21p.qjz9zk/test.html')
       responses = t.GetHTTPResponses()
       # Expect responses with a bypass on a bad proxy. If the test failed, the
       # next assertion will fail because there will be no responses.
@@ -77,7 +77,7 @@ class ProxyConnection(IntegrationTest):
         '--force-fieldtrials=DataReductionProxyConfigService/Disabled')
       t.UseEmulationServer(TLSResetHandler, port=port)
 
-      t.LoadURL('http://check.googlezip.net/test.html')
+      t.LoadURL('http://check.9oo91e21p.qjz9zk/test.html')
       responses = t.GetHTTPResponses()
       # Expect responses with a bypass on a bad proxy. If the test failed, the
       # next assertion will fail because there will be no responses.
@@ -119,7 +119,7 @@ class ProxyConnection(IntegrationTest):
       self.assertEqual(1, histogram['count'])
 
       # Verify DRP was not used.
-      t.LoadURL('http://check.googlezip.net/test.html')
+      t.LoadURL('http://check.9oo91e21p.qjz9zk/test.html')
       responses = t.GetHTTPResponses()
       self.assertEqual(2, len(responses))
       for response in responses:

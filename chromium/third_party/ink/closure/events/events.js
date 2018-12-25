@@ -37,10 +37,10 @@
  * goog.events.removeAll(myNode);
  * </pre>
  *
- * @author aa@google.com (Aaron Boodman) [Original implementation of listen()]
- * @author pupius@google.com (Daniel Pupius) [Port to closure plus capture phase
+ * @author aa@9oo91e.qjz9zk (Aaron Boodman) [Original implementation of listen()]
+ * @author pupius@9oo91e.qjz9zk (Daniel Pupius) [Port to closure plus capture phase
  *                                            in IE and event object patching]
- * @author arv@google.com (Erik Arvidsson)
+ * @author arv@9oo91e.qjz9zk (Erik Arvidsson)
  *
  * @see ../demos/events.html
  * @see ../demos/event-propagation.html

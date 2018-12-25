@@ -135,7 +135,7 @@ Audits2.StartView = class extends UI.Widget {
 
     const learnMoreLink = fragment.$('learn-more');
     learnMoreLink.addEventListener(
-        'click', () => InspectorFrontendHost.openInNewTab('https://developers.google.com/web/tools/lighthouse/'));
+        'click', () => InspectorFrontendHost.openInNewTab('https://developers.9oo91e.qjz9zk/web/tools/lighthouse/'));
 
     this._populateFormControls(fragment);
     this.contentElement.appendChild(fragment.element());

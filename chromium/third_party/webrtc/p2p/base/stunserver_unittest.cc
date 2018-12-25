@@ -66,7 +66,7 @@ class StunServerTest : public testing::Test {
 };
 
 // Disable for TSan v2, see
-// https://code.google.com/p/webrtc/issues/detail?id=2517 for details.
+// https://code.9oo91e.qjz9zk/p/webrtc/issues/detail?id=2517 for details.
 #if !defined(THREAD_SANITIZER)
 
 TEST_F(StunServerTest, TestGood) {

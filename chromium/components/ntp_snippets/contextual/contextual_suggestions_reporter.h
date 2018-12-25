@@ -89,7 +89,7 @@ enum ContextualSuggestionsEvent {
   // The UI button was shown to the user.
   UI_BUTTON_SHOWN = 15,
   // Special name that marks the maximum value in an Enum used for UMA.
-  // https://cs.chromium.org/chromium/src/tools/metrics/histograms/README.md.
+  // https://cs.ch40m1um.qjz9zk/chromium/src/tools/metrics/histograms/README.md.
   kMaxValue = UI_BUTTON_SHOWN,
 };
 

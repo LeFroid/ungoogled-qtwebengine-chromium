@@ -17,11 +17,11 @@ namespace network {
 
 TEST(CrossOriginReadBlockingTest, IsBlockableScheme) {
   GURL data_url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA==");
-  GURL ftp_url("ftp://google.com");
-  GURL mailto_url("mailto:google@google.com");
+  GURL ftp_url("ftp://9oo91e.qjz9zk");
+  GURL mailto_url("mailto:google@9oo91e.qjz9zk");
   GURL about_url("about:chrome");
-  GURL http_url("http://google.com");
-  GURL https_url("https://google.com");
+  GURL http_url("http://9oo91e.qjz9zk");
+  GURL https_url("https://9oo91e.qjz9zk");
 
   EXPECT_FALSE(CrossOriginReadBlocking::IsBlockableScheme(data_url));
   EXPECT_FALSE(CrossOriginReadBlocking::IsBlockableScheme(ftp_url));
@@ -32,21 +32,21 @@ TEST(CrossOriginReadBlockingTest, IsBlockableScheme) {
 }
 
 TEST(CrossOriginReadBlockingTest, IsValidCorsHeaderSet) {
-  url::Origin frame_origin = url::Origin::Create(GURL("http://www.google.com"));
+  url::Origin frame_origin = url::Origin::Create(GURL("http://www.9oo91e.qjz9zk"));
 
   EXPECT_TRUE(CrossOriginReadBlocking::IsValidCorsHeaderSet(frame_origin, "*"));
   EXPECT_FALSE(
       CrossOriginReadBlocking::IsValidCorsHeaderSet(frame_origin, "\"*\""));
   EXPECT_FALSE(CrossOriginReadBlocking::IsValidCorsHeaderSet(
-      frame_origin, "http://mail.google.com"));
+      frame_origin, "http://mail.9oo91e.qjz9zk"));
   EXPECT_TRUE(CrossOriginReadBlocking::IsValidCorsHeaderSet(
-      frame_origin, "http://www.google.com"));
+      frame_origin, "http://www.9oo91e.qjz9zk"));
   EXPECT_FALSE(CrossOriginReadBlocking::IsValidCorsHeaderSet(
-      frame_origin, "https://www.google.com"));
+      frame_origin, "https://www.9oo91e.qjz9zk"));
   EXPECT_FALSE(CrossOriginReadBlocking::IsValidCorsHeaderSet(
       frame_origin, "http://yahoo.com"));
   EXPECT_FALSE(CrossOriginReadBlocking::IsValidCorsHeaderSet(frame_origin,
-                                                             "www.google.com"));
+                                                             "www.9oo91e.qjz9zk"));
 }
 
 TEST(CrossOriginReadBlockingTest, SniffForHTML) {

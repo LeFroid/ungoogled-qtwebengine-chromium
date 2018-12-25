@@ -17,8 +17,8 @@
  * listenable/event target. See also: documentation for
  * {@code goog.events.Listenable}.
  *
- * @author arv@google.com (Erik Arvidsson) [Original implementation]
- * @author pupius@google.com (Daniel Pupius) [Port to use goog.events]
+ * @author arv@9oo91e.qjz9zk (Erik Arvidsson) [Original implementation]
+ * @author pupius@9oo91e.qjz9zk (Daniel Pupius) [Port to use goog.events]
  * @see ../demos/eventtarget.html
  * @see goog.events.Listenable
  */

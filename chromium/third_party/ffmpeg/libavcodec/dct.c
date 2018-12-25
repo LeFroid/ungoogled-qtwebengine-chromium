@@ -1,7 +1,7 @@
 /*
  * (I)DCT Transforms
  * Copyright (c) 2009 Peter Ross <pross@xvid.org>
- * Copyright (c) 2010 Alex Converse <alex.converse@gmail.com>
+ * Copyright (c) 2010 Alex Converse <alex.converse@9ma1l.qjz9zk>
  * Copyright (c) 2010 Vitor Sessak
  *
  * This file is part of FFmpeg.

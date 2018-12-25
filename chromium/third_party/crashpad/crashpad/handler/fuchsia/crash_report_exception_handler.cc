@@ -65,7 +65,7 @@ CrashReportExceptionHandler::~CrashReportExceptionHandler() {}
 bool CrashReportExceptionHandler::HandleException(uint64_t process_id,
                                                   uint64_t thread_id) {
   // TODO(scottmg): This function needs to be instrumented with metrics calls,
-  // https://crashpad.chromium.org/bug/230.
+  // https://crashpad.ch40m1um.qjz9zk/bug/230.
 
   base::ScopedZxHandle process(GetProcessFromKoid(process_id));
   if (!process.is_valid()) {

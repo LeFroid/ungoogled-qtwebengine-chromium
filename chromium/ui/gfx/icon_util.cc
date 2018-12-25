@@ -142,7 +142,7 @@ bool ConvertImageFamilyToBitmaps(
 // corresponding dimensions appear in this array, so it is important to keep
 // this array sorted. Also note that the maximum icon image size we can handle
 // is 256 by 256. See:
-// http://msdn.microsoft.com/en-us/library/windows/desktop/aa511280.aspx#size
+// http://msdn.m1cr050ft.qjz9zk/en-us/library/windows/desktop/aa511280.aspx#size
 const int IconUtil::kIconDimensions[] = {
   8,    // Recommended by the MSDN as a nice to have icon size.
   10,   // Used by the Shell (e.g. for shortcuts).
@@ -569,12 +569,12 @@ void IconUtil::InitializeBitmapHeader(BITMAPV5HEADER* header, int width,
 
   // Use the system color space.  The default value is LCS_CALIBRATED_RGB, which
   // causes us to crash if we don't specify the approprite gammas, etc.  See
-  // <http://msdn.microsoft.com/en-us/library/ms536531(VS.85).aspx> and
+  // <http://msdn.m1cr050ft.qjz9zk/en-us/library/ms536531(VS.85).aspx> and
   // <http://b/1283121>.
   header->bV5CSType = LCS_WINDOWS_COLOR_SPACE;
 
   // Use a valid value for bV5Intent as 0 is not a valid one.
-  // <http://msdn.microsoft.com/en-us/library/dd183381(VS.85).aspx>
+  // <http://msdn.m1cr050ft.qjz9zk/en-us/library/dd183381(VS.85).aspx>
   header->bV5Intent = LCS_GM_IMAGES;
 }
 

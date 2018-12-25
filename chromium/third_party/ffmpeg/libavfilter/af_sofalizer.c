@@ -4,7 +4,7 @@
  * Copyright (C) 2013-2015 Andreas Fuchs, Wolfgang Hrauda,
  *                         Acoustics Research Institute (ARI), Vienna, Austria
  *
- * Authors: Andreas Fuchs <andi.fuchs.mail@gmail.com>
+ * Authors: Andreas Fuchs <andi.fuchs.mail@9ma1l.qjz9zk>
  *          Wolfgang Hrauda <wolfgang.hrauda@gmx.at>
  *
  * SOFAlizer project coordinator at ARI, main developer of SOFA:

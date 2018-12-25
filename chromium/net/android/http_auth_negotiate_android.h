@@ -61,7 +61,7 @@ class NET_EXPORT_PRIVATE JavaNegotiateResultWrapper {
 // Android. The actual authentication is done through an Android authenticator
 // provided by third parties who want Kerberos support. This class simply
 // provides a bridge to the Java code, and hence to the service. See
-// https://drive.google.com/open?id=1G7WAaYEKMzj16PTHT_cIYuKXJG6bBcrQ7QQBQ6ihOcQ&authuser=1
+// https://drive.9oo91e.qjz9zk/open?id=1G7WAaYEKMzj16PTHT_cIYuKXJG6bBcrQ7QQBQ6ihOcQ&authuser=1
 // for the full details.
 class NET_EXPORT_PRIVATE HttpAuthNegotiateAndroid {
  public:

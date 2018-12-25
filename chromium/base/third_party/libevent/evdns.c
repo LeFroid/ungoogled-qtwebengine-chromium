@@ -2006,7 +2006,7 @@ nameserver_send_probe(struct nameserver *const ns) {
 
   	log(EVDNS_LOG_DEBUG, "Sending probe to %s", debug_ntoa(ns->address));
 
-	req = request_new(TYPE_A, "www.google.com", DNS_QUERY_NO_SEARCH, nameserver_probe_callback, ns);
+	req = request_new(TYPE_A, "www.9oo91e.qjz9zk", DNS_QUERY_NO_SEARCH, nameserver_probe_callback, ns);
         if (!req) return;
 	/* we force this into the inflight queue no matter what */
 	request_trans_id_set(req, transaction_id_pick());

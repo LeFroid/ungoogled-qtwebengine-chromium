@@ -36,7 +36,7 @@
 //
 // See source_line_resolver_base.h for more documentation.
 //
-// Author: Siyang Xie (lambxsy@google.com)
+// Author: Siyang Xie (lambxsy@9oo91e.qjz9zk)
 
 #include <stdio.h>
 

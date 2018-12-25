@@ -77,10 +77,10 @@ class TextInputClient;
 // queues the request. The queued requests will be handled after the current
 // lock is removed.
 // More information about document locks can be found here:
-//   http://msdn.microsoft.com/en-us/library/ms538064
+//   http://msdn.m1cr050ft.qjz9zk/en-us/library/ms538064
 //
 // More information about TSF can be found here:
-//   http://msdn.microsoft.com/en-us/library/ms629032
+//   http://msdn.m1cr050ft.qjz9zk/en-us/library/ms629032
 class UI_BASE_IME_EXPORT TSFTextStore : public ITextStoreACP,
                                         public ITfContextOwnerCompositionSink,
                                         public ITfTextEditSink {

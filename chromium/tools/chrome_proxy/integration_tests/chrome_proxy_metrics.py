@@ -670,7 +670,7 @@ class ChromeProxyMetric(network_metrics.NetworkMetric):
     tab.ClearCache(force=True)
     before_metrics = ChromeProxyMetric()
     before_metrics.Start(results.current_page, tab)
-    tab.Navigate('http://chromeproxy-test.appspot.com/default')
+    tab.Navigate('http://chromeproxy-test.8pp2p8t.qjz9zk/default')
     tab.WaitForJavaScriptCondition(
         'performance.timing.loadEventStart', timeout=10)
     before_metrics.Stop(results.current_page, tab)
@@ -696,7 +696,7 @@ class ChromeProxyMetric(network_metrics.NetworkMetric):
     tab.ClearCache(force=True)
     after_metrics = ChromeProxyMetric()
     after_metrics.Start(results.current_page, tab)
-    tab.Navigate('http://chromeproxy-test.appspot.com/default')
+    tab.Navigate('http://chromeproxy-test.8pp2p8t.qjz9zk/default')
     tab.WaitForJavaScriptCondition(
         'performance.timing.loadEventStart', timeout=10)
     after_metrics.Stop(results.current_page, tab)
@@ -747,7 +747,7 @@ class ChromeProxyMetric(network_metrics.NetworkMetric):
     tab.ClearCache(force=True)
     before_metrics = ChromeProxyMetric()
     before_metrics.Start(results.current_page, tab)
-    tab.Navigate('http://chromeproxy-test.appspot.com/default')
+    tab.Navigate('http://chromeproxy-test.8pp2p8t.qjz9zk/default')
     tab.WaitForJavaScriptCondition(
         'performance.timing.loadEventStart', timeout=10)
     before_metrics.Stop(results.current_page, tab)
@@ -775,7 +775,7 @@ class ChromeProxyMetric(network_metrics.NetworkMetric):
     tab.ClearCache(force=True)
     after_metrics = ChromeProxyMetric()
     after_metrics.Start(results.current_page, tab)
-    tab.Navigate('http://chromeproxy-test.appspot.com/default')
+    tab.Navigate('http://chromeproxy-test.8pp2p8t.qjz9zk/default')
     tab.WaitForJavaScriptCondition(
         'performance.timing.loadEventStart', timeout=10)
     after_metrics.Stop(results.current_page, tab)
@@ -827,7 +827,7 @@ class ChromeProxyMetric(network_metrics.NetworkMetric):
 
   def AddResultsForPingback(self, tab, results):
     # Force the pingback by loading a new page.
-    tab.Navigate('http://check.googlezip.net/test.html')
+    tab.Navigate('http://check.9oo91e21p.qjz9zk/test.html')
     histogram_type = histogram_util.BROWSER_HISTOGRAM
     # This histogram should be synchronously created when the Navigate occurs.
     attempted = histogram_util.GetHistogramSum(
@@ -904,7 +904,7 @@ class ChromeProxyMetric(network_metrics.NetworkMetric):
     # is used for the next request. Give 1 second extra headroom for the QUIC
     # connection to be established.
     time.sleep(1)
-    tab.Navigate('http://check.googlezip.net/test.html')
+    tab.Navigate('http://check.9oo91e21p.qjz9zk/test.html')
 
     proxy_usage_histogram_json = histogram_util.GetHistogram(histogram_type,
         'Net.QuicAlternativeProxy.Usage',
@@ -1094,7 +1094,7 @@ class ChromeProxyInstrumentedVideoMetric(Metric):
 # Returns whether |url| is a block-once test URL. Data Reduction Proxy has been
 # configured to always return block-once for these URLs.
 def IsTestUrlForBlockOnce(url):
-  return (url == 'http://check.googlezip.net/blocksingle/' or
-      url == ('http://chromeproxy-test.appspot.com/default?respBody=T0s='
+  return (url == 'http://check.9oo91e21p.qjz9zk/blocksingle/' or
+      url == ('http://chromeproxy-test.8pp2p8t.qjz9zk/default?respBody=T0s='
               '&respHeader=eyJBY2Nlc3MtQ29udHJvbC1BbGxvdy1PcmlnaW4iOlsiKiJ'
               'dfQ==&respStatus=200&flywheelAction=block-once'))

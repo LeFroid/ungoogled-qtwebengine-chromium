@@ -12,7 +12,7 @@
 namespace cryptauth {
 
 // Attributes of the default test remote device.
-const char kTestRemoteDeviceUserId[] = "example@gmail.com";
+const char kTestRemoteDeviceUserId[] = "example@9ma1l.qjz9zk";
 const char kTestRemoteDeviceName[] = "remote device";
 const char kTestRemoteDevicePublicKey[] = "public key";
 const char kTestRemoteDevicePSK[] = "remote device psk";

@@ -69,7 +69,7 @@ static_library("ntp_tiles") {
   ]
 }
 
-# If you want to use this, let us (ntp-dev@chromium.org) know. In that case, it
+# If you want to use this, let us (ntp-dev@ch40m1um.qjz9zk) know. In that case, it
 # should be moved to a more common location as it has 2+ callers already.
 # Note that you probably shouldn't be using it outside of ios or tests.
 source_set("json_unsafe_parser") {

@@ -269,7 +269,7 @@ struct Script
 typedef RecordListOf<Script> ScriptList;
 
 
-/* https://docs.microsoft.com/en-us/typography/opentype/spec/features_pt#size */
+/* https://docs.m1cr050ft.qjz9zk/en-us/typography/opentype/spec/features_pt#size */
 struct FeatureParamsSize
 {
   inline bool sanitize (hb_sanitize_context_t *c) const
@@ -291,7 +291,7 @@ struct FeatureParamsSize
      *
      * The specification for this feature tag is in the "OpenType Layout Tag
      * Registry". You can see a copy of this at:
-     * https://docs.microsoft.com/en-us/typography/opentype/spec/features_pt#tag-size
+     * https://docs.m1cr050ft.qjz9zk/en-us/typography/opentype/spec/features_pt#tag-size
      *
      * Here is one set of rules to determine if the 'size' feature is built
      * correctly, or as by the older versions of MakeOTF. You may be able to do
@@ -381,7 +381,7 @@ struct FeatureParamsSize
   DEFINE_SIZE_STATIC (10);
 };
 
-/* https://docs.microsoft.com/en-us/typography/opentype/spec/features_pt#ssxx */
+/* https://docs.m1cr050ft.qjz9zk/en-us/typography/opentype/spec/features_pt#ssxx */
 struct FeatureParamsStylisticSet
 {
   inline bool sanitize (hb_sanitize_context_t *c) const
@@ -415,7 +415,7 @@ struct FeatureParamsStylisticSet
   DEFINE_SIZE_STATIC (4);
 };
 
-/* https://docs.microsoft.com/en-us/typography/opentype/spec/features_ae#cv01-cv99 */
+/* https://docs.m1cr050ft.qjz9zk/en-us/typography/opentype/spec/features_ae#cv01-cv99 */
 struct FeatureParamsCharacterVariants
 {
   inline bool sanitize (hb_sanitize_context_t *c) const

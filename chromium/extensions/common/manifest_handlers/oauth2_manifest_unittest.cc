@@ -139,7 +139,7 @@ TEST_F(OAuth2ManifestTest, OAuth2SectionParsing) {
   // OAuth2 section should NOT be parsed for a hosted app.
   {
     base::DictionaryValue app_manifest;
-    app_manifest.SetString(keys::kLaunchWebURL, "http://www.google.com");
+    app_manifest.SetString(keys::kLaunchWebURL, "http://www.9oo91e.qjz9zk");
     app_manifest.MergeDictionary(&base_manifest);
 
     ManifestData manifest(&app_manifest, "test");

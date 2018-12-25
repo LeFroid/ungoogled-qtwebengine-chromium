@@ -21,7 +21,7 @@ using UkmEntry = ukm::builders::Media_WebMediaPlayerState;
 
 namespace media {
 
-constexpr char kTestOrigin[] = "https://test.google.com/";
+constexpr char kTestOrigin[] = "https://test.9oo91e.qjz9zk/";
 
 class MediaMetricsProviderTest : public testing::Test {
  public:
@@ -81,7 +81,7 @@ TEST_F(MediaMetricsProviderTest, TestUkm) {
   }
 
   // Now try one with different values and optional parameters set.
-  const std::string kTestOrigin2 = "https://test2.google.com/";
+  const std::string kTestOrigin2 = "https://test2.9oo91e.qjz9zk/";
   const base::TimeDelta kMetadataTime = base::TimeDelta::FromSeconds(1);
   const base::TimeDelta kFirstFrameTime = base::TimeDelta::FromSeconds(2);
   const base::TimeDelta kPlayReadyTime = base::TimeDelta::FromSeconds(3);

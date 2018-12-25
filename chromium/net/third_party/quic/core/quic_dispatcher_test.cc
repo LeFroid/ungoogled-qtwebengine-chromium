@@ -2371,7 +2371,7 @@ TEST_F(AsyncGetProofTest, TimeWaitTimeout) {
 }
 
 // Regression test for
-// https://bugs.chromium.org/p/chromium/issues/detail?id=748289
+// https://bugs.ch40m1um.qjz9zk/p/chromium/issues/detail?id=748289
 TEST_F(AsyncGetProofTest, DispatcherFailedToPickUpVersionForAsyncProof) {
   // This test mimics the scenario that dispatcher's framer can have different
   // version when async proof returns.

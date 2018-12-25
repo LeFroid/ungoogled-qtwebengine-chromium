@@ -14,8 +14,8 @@
 
 /**
  * @fileoverview Utility functions for supporting Bidi issues.
- * @author shanjian@google.com (Shanjian Li)
- * @author dougfelt@google.com (Doug Felt)
+ * @author shanjian@9oo91e.qjz9zk (Shanjian Li)
+ * @author dougfelt@9oo91e.qjz9zk (Doug Felt)
  */
 
 

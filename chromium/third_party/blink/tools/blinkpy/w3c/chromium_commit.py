@@ -122,4 +122,4 @@ class ChromiumCommit(object):
 
     def url(self):
         """Returns a URL to view more information about this commit."""
-        return 'https://chromium.googlesource.com/chromium/src/+/%s' % self.short_sha
+        return 'https://chromium.9oo91esource.qjz9zk/chromium/src/+/%s' % self.short_sha

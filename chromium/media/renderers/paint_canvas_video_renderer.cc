@@ -191,7 +191,7 @@ sk_sp<SkImage> NewSkImageFromVideoFrameNative(VideoFrame* video_frame,
   if (mailbox_holder.texture_target != GL_TEXTURE_2D) {
     // TODO(dcastagna): At the moment Skia doesn't support targets different
     // than GL_TEXTURE_2D.  Avoid this copy once
-    // https://code.google.com/p/skia/issues/detail?id=3868 is addressed.
+    // https://code.9oo91e.qjz9zk/p/skia/issues/detail?id=3868 is addressed.
     gl->GenTextures(1, &source_texture);
     DCHECK(source_texture);
     gl->BindTexture(GL_TEXTURE_2D, source_texture);

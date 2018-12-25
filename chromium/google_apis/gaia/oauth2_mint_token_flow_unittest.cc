@@ -47,7 +47,7 @@ static const char kValidIssueAdviceResponse[] =
     "    \"oauthClient\": {"
     "      \"name\": \"Test app\","
     "      \"iconUri\": \"\","
-    "      \"developerEmail\": \"munjal@chromium.org\""
+    "      \"developerEmail\": \"munjal@ch40m1um.qjz9zk\""
     "    },"
     "    \"scopes\": ["
     "      {"
@@ -69,7 +69,7 @@ static const char kIssueAdviceResponseNoDescription[] =
     "    \"oauthClient\": {"
     "      \"name\": \"Test app\","
     "      \"iconUri\": \"\","
-    "      \"developerEmail\": \"munjal@chromium.org\""
+    "      \"developerEmail\": \"munjal@ch40m1um.qjz9zk\""
     "    },"
     "    \"scopes\": ["
     "      {"
@@ -90,7 +90,7 @@ static const char kIssueAdviceResponseNoDetail[] =
     "    \"oauthClient\": {"
     "      \"name\": \"Test app\","
     "      \"iconUri\": \"\","
-    "      \"developerEmail\": \"munjal@chromium.org\""
+    "      \"developerEmail\": \"munjal@ch40m1um.qjz9zk\""
     "    },"
     "    \"scopes\": ["
     "      {"
@@ -300,49 +300,49 @@ TEST_F(OAuth2MintTokenFlowTest, ParseIssueAdviceResponse) {
 
 TEST_F(OAuth2MintTokenFlowTest, ProcessApiCallSuccess) {
   {  // No body.
-    TestURLFetcher url_fetcher(1, GURL("http://www.google.com"), NULL);
+    TestURLFetcher url_fetcher(1, GURL("http://www.9oo91e.qjz9zk"), NULL);
     url_fetcher.SetResponseString(std::string());
     CreateFlow(OAuth2MintTokenFlow::MODE_MINT_TOKEN_NO_FORCE);
     EXPECT_CALL(delegate_, OnMintTokenFailure(_));
     flow_->ProcessApiCallSuccess(&url_fetcher);
   }
   {  // Bad json.
-    TestURLFetcher url_fetcher(1, GURL("http://www.google.com"), NULL);
+    TestURLFetcher url_fetcher(1, GURL("http://www.9oo91e.qjz9zk"), NULL);
     url_fetcher.SetResponseString("foo");
     CreateFlow(OAuth2MintTokenFlow::MODE_MINT_TOKEN_NO_FORCE);
     EXPECT_CALL(delegate_, OnMintTokenFailure(_));
     flow_->ProcessApiCallSuccess(&url_fetcher);
   }
   {  // Valid json: no access token.
-    TestURLFetcher url_fetcher(1, GURL("http://www.google.com"), NULL);
+    TestURLFetcher url_fetcher(1, GURL("http://www.9oo91e.qjz9zk"), NULL);
     url_fetcher.SetResponseString(kTokenResponseNoAccessToken);
     CreateFlow(OAuth2MintTokenFlow::MODE_MINT_TOKEN_NO_FORCE);
     EXPECT_CALL(delegate_, OnMintTokenFailure(_));
     flow_->ProcessApiCallSuccess(&url_fetcher);
   }
   {  // Valid json: good token response.
-    TestURLFetcher url_fetcher(1, GURL("http://www.google.com"), NULL);
+    TestURLFetcher url_fetcher(1, GURL("http://www.9oo91e.qjz9zk"), NULL);
     url_fetcher.SetResponseString(kValidTokenResponse);
     CreateFlow(OAuth2MintTokenFlow::MODE_MINT_TOKEN_NO_FORCE);
     EXPECT_CALL(delegate_, OnMintTokenSuccess("at1", 3600));
     flow_->ProcessApiCallSuccess(&url_fetcher);
   }
   {  // Valid json: no description.
-    TestURLFetcher url_fetcher(1, GURL("http://www.google.com"), NULL);
+    TestURLFetcher url_fetcher(1, GURL("http://www.9oo91e.qjz9zk"), NULL);
     url_fetcher.SetResponseString(kIssueAdviceResponseNoDescription);
     CreateFlow(OAuth2MintTokenFlow::MODE_ISSUE_ADVICE);
     EXPECT_CALL(delegate_, OnMintTokenFailure(_));
     flow_->ProcessApiCallSuccess(&url_fetcher);
   }
   {  // Valid json: no detail.
-    TestURLFetcher url_fetcher(1, GURL("http://www.google.com"), NULL);
+    TestURLFetcher url_fetcher(1, GURL("http://www.9oo91e.qjz9zk"), NULL);
     url_fetcher.SetResponseString(kIssueAdviceResponseNoDetail);
     CreateFlow(OAuth2MintTokenFlow::MODE_ISSUE_ADVICE);
     EXPECT_CALL(delegate_, OnMintTokenFailure(_));
     flow_->ProcessApiCallSuccess(&url_fetcher);
   }
   {  // Valid json: good issue advice response.
-    TestURLFetcher url_fetcher(1, GURL("http://www.google.com"), NULL);
+    TestURLFetcher url_fetcher(1, GURL("http://www.9oo91e.qjz9zk"), NULL);
     url_fetcher.SetResponseString(kValidIssueAdviceResponse);
     CreateFlow(OAuth2MintTokenFlow::MODE_ISSUE_ADVICE);
     IssueAdviceInfo ia(CreateIssueAdvice());
@@ -353,14 +353,14 @@ TEST_F(OAuth2MintTokenFlowTest, ProcessApiCallSuccess) {
 
 TEST_F(OAuth2MintTokenFlowTest, ProcessApiCallFailure) {
   {  // Null delegate should work fine.
-    TestURLFetcher url_fetcher(1, GURL("http://www.google.com"), NULL);
+    TestURLFetcher url_fetcher(1, GURL("http://www.9oo91e.qjz9zk"), NULL);
     url_fetcher.set_status(URLRequestStatus::FromError(net::ERR_FAILED));
     CreateFlow(NULL, OAuth2MintTokenFlow::MODE_MINT_TOKEN_NO_FORCE, "");
     flow_->ProcessApiCallFailure(&url_fetcher);
   }
 
   {  // Non-null delegate.
-    TestURLFetcher url_fetcher(1, GURL("http://www.google.com"), NULL);
+    TestURLFetcher url_fetcher(1, GURL("http://www.9oo91e.qjz9zk"), NULL);
     url_fetcher.set_status(URLRequestStatus::FromError(net::ERR_FAILED));
     CreateFlow(OAuth2MintTokenFlow::MODE_MINT_TOKEN_NO_FORCE);
     EXPECT_CALL(delegate_, OnMintTokenFailure(_));

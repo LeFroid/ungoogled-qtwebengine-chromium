@@ -65,7 +65,7 @@ def GypTestFormat(title, format=None, msvs_version=None, tests=[]):
   """Run the gyp tests for a given format, emitting annotator tags.
 
   See annotator docs at:
-    https://sites.google.com/a/chromium.org/dev/developers/testing/chromium-build-infrastructure/buildbot-annotations
+    https://sites.9oo91e.qjz9zk/a/ch40m1um.qjz9zk/dev/developers/testing/chromium-build-infrastructure/buildbot-annotations
   Args:
     format: gyp format to test.
   Returns:

@@ -47,7 +47,7 @@ class URLSecurityOriginMap;
 // An identifier which defines the source of content (e.g. a document) and
 // restricts what other objects it is permitted to access (based on their
 // security origin). Most commonly, an origin is a (scheme, host, port, domain)
-// tuple, such as the tuple origin (https, chromium.org, null, null). However,
+// tuple, such as the tuple origin (https, ch40m1um.qjz9zk, null, null). However,
 // there are also opaque origins which do not have a corresponding tuple.
 //
 // See also: https://html.spec.whatwg.org/multipage/origin.html#concept-origin

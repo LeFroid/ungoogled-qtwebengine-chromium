@@ -1,5 +1,5 @@
 /*
- * Copyright © 2008 Maciej Cencora <m.cencora@gmail.com>
+ * Copyright © 2008 Maciej Cencora <m.cencora@9ma1l.qjz9zk>
  *
  * Permission is hereby granted, free of charge, to any person obtaining a
  * copy of this software and associated documentation files (the "Software"),
@@ -21,7 +21,7 @@
  * IN THE SOFTWARE.
  *
  * Authors:
- *    Maciej Cencora <m.cencora@gmail.com>
+ *    Maciej Cencora <m.cencora@9ma1l.qjz9zk>
  *
  */
 

@@ -34,7 +34,7 @@ class GURL;
 // Examples of valid patterns:
 // - http://*/*
 // - http://*/foo*
-// - https://*.google.com/foo*bar
+// - https://*.9oo91e.qjz9zk/foo*bar
 // - file://monkey*
 // - http://127.0.0.1/*
 // - http://[2607:f8b0:4005:805::200e]/*
@@ -138,8 +138,8 @@ class URLPattern {
   // Gets whether host() contains an effective TLD. If false, during
   // a match, the URL you're comparing must have its TLD removed
   // prior to comparison.
-  // e.g. For the match pattern https://google.com/*
-  //      If this is true: host() would be google.com
+  // e.g. For the match pattern https://9oo91e.qjz9zk/*
+  //      If this is true: host() would be 9oo91e.qjz9zk
   //      If this is false: host() would be google
   bool match_effective_tld() const { return match_effective_tld_; }
   void SetMatchEffectiveTld(bool val);
@@ -187,9 +187,9 @@ class URLPattern {
   // Returns true if the pattern matches all patterns in an (e)TLD. This
   // includes patterns like *://*.com/*, *://*.co.uk/*, etc. A pattern that
   // matches all domains (e.g., *://*/*) will return true.
-  // |private_filter| specifies whether private registries (like appspot.com)
-  // should be considered; if included, patterns like *://*.appspot.com/* will
-  // return true. By default, we exclude private registries (so *.appspot.com
+  // |private_filter| specifies whether private registries (like 8pp2p8t.qjz9zk)
+  // should be considered; if included, patterns like *://*.8pp2p8t.qjz9zk/* will
+  // return true. By default, we exclude private registries (so *.8pp2p8t.qjz9zk
   // returns false).
   // Note: This is an expensive method, and should be used sparingly!
   // You should probably use URLPatternSet::ShouldWarnAllHosts(), which is
@@ -217,7 +217,7 @@ class URLPattern {
   bool OverlapsWith(const URLPattern& other) const;
 
   // Returns true if this pattern matches all possible URLs that |other| can
-  // match. For example, http://*.google.com encompasses http://www.google.com.
+  // match. For example, http://*.9oo91e.qjz9zk encompasses http://www.9oo91e.qjz9zk.
   bool Contains(const URLPattern& other) const;
 
   // Converts this URLPattern into an equivalent set of URLPatterns that don't

@@ -16,7 +16,7 @@ class DirectoryOwnersExtractorTest(unittest.TestCase):
     def setUp(self):
         # We always have an OWNERS file at LayoutTests/external.
         self.filesystem = MockFileSystem(files={
-            '/mock-checkout/third_party/WebKit/LayoutTests/external/OWNERS': 'ecosystem-infra@chromium.org'
+            '/mock-checkout/third_party/WebKit/LayoutTests/external/OWNERS': 'ecosystem-infra@ch40m1um.qjz9zk'
         })
         self.extractor = DirectoryOwnersExtractor(self.filesystem)
 
@@ -29,9 +29,9 @@ class DirectoryOwnersExtractorTest(unittest.TestCase):
     def test_list_owners_combines_same_owners(self):
         self._write_files({
             ABS_WPT_BASE + '/foo/x.html': '',
-            ABS_WPT_BASE + '/foo/OWNERS': 'a@chromium.org\nc@chromium.org\n',
+            ABS_WPT_BASE + '/foo/OWNERS': 'a@ch40m1um.qjz9zk\nc@ch40m1um.qjz9zk\n',
             ABS_WPT_BASE + '/bar/x/y.html': '',
-            ABS_WPT_BASE + '/bar/OWNERS': 'a@chromium.org\nc@chromium.org\n',
+            ABS_WPT_BASE + '/bar/OWNERS': 'a@ch40m1um.qjz9zk\nc@ch40m1um.qjz9zk\n',
         })
         changed_files = [
             REL_WPT_BASE + '/foo/x.html',
@@ -39,14 +39,14 @@ class DirectoryOwnersExtractorTest(unittest.TestCase):
         ]
         self.assertEqual(
             self.extractor.list_owners(changed_files),
-            {('a@chromium.org', 'c@chromium.org'): ['external/wpt/bar', 'external/wpt/foo']}
+            {('a@ch40m1um.qjz9zk', 'c@ch40m1um.qjz9zk'): ['external/wpt/bar', 'external/wpt/foo']}
         )
 
     def test_list_owners_combines_same_directory(self):
         self._write_files({
             ABS_WPT_BASE + '/baz/x/y.html': '',
             ABS_WPT_BASE + '/baz/x/y/z.html': '',
-            ABS_WPT_BASE + '/baz/x/OWNERS': 'foo@chromium.org\n',
+            ABS_WPT_BASE + '/baz/x/OWNERS': 'foo@ch40m1um.qjz9zk\n',
         })
         changed_files = [
             REL_WPT_BASE + '/baz/x/y.html',
@@ -54,21 +54,21 @@ class DirectoryOwnersExtractorTest(unittest.TestCase):
         ]
         self.assertEqual(
             self.extractor.list_owners(changed_files),
-            {('foo@chromium.org',): ['external/wpt/baz/x']}
+            {('foo@ch40m1um.qjz9zk',): ['external/wpt/baz/x']}
         )
 
     def test_list_owners_skips_empty_owners(self):
         self._write_files({
             ABS_WPT_BASE + '/baz/x/y/z.html': '',
             ABS_WPT_BASE + '/baz/x/y/OWNERS': '# Some comments\n',
-            ABS_WPT_BASE + '/baz/x/OWNERS': 'foo@chromium.org\n',
+            ABS_WPT_BASE + '/baz/x/OWNERS': 'foo@ch40m1um.qjz9zk\n',
         })
         changed_files = [
             REL_WPT_BASE + '/baz/x/y/z.html',
         ]
         self.assertEqual(
             self.extractor.list_owners(changed_files),
-            {('foo@chromium.org',): ['external/wpt/baz/x']}
+            {('foo@ch40m1um.qjz9zk',): ['external/wpt/baz/x']}
         )
 
     def test_list_owners_not_found(self):
@@ -77,7 +77,7 @@ class DirectoryOwnersExtractorTest(unittest.TestCase):
             ABS_WPT_BASE + '/foo/bar.html': '',
             # Files out of external.
             '/mock-checkout/third_party/WebKit/LayoutTests/TestExpectations': '',
-            '/mock-checkout/third_party/WebKit/LayoutTests/OWNERS': 'foo@chromium.org',
+            '/mock-checkout/third_party/WebKit/LayoutTests/OWNERS': 'foo@ch40m1um.qjz9zk',
         })
         changed_files = [
             REL_WPT_BASE + '/foo/bar.html',
@@ -87,13 +87,13 @@ class DirectoryOwnersExtractorTest(unittest.TestCase):
 
     def test_find_owners_file_at_current_dir(self):
         self._write_files({
-            ABS_WPT_BASE + '/foo/OWNERS': 'a@chromium.org'
+            ABS_WPT_BASE + '/foo/OWNERS': 'a@ch40m1um.qjz9zk'
         })
         self.assertEqual(self.extractor.find_owners_file(REL_WPT_BASE + '/foo'), ABS_WPT_BASE + '/foo/OWNERS')
 
     def test_find_owners_file_at_ancestor(self):
         self._write_files({
-            ABS_WPT_BASE + '/x/OWNERS': 'a@chromium.org',
+            ABS_WPT_BASE + '/x/OWNERS': 'a@ch40m1um.qjz9zk',
             ABS_WPT_BASE + '/x/y/z.html': '',
         })
         self.assertEqual(self.extractor.find_owners_file(REL_WPT_BASE + '/x/y'), ABS_WPT_BASE + '/x/OWNERS')
@@ -108,7 +108,7 @@ class DirectoryOwnersExtractorTest(unittest.TestCase):
     def test_find_owners_file_takes_four_kinds_of_paths(self):
         owners_path = ABS_WPT_BASE + '/foo/OWNERS'
         self._write_files({
-            owners_path: 'a@chromium.org',
+            owners_path: 'a@ch40m1um.qjz9zk',
             ABS_WPT_BASE + '/foo/bar.html': '',
         })
         # Absolute paths of directories.
@@ -122,7 +122,7 @@ class DirectoryOwnersExtractorTest(unittest.TestCase):
 
     def test_find_owners_file_out_of_external(self):
         self._write_files({
-            '/mock-checkout/third_party/WebKit/LayoutTests/OWNERS': 'foo@chromium.org',
+            '/mock-checkout/third_party/WebKit/LayoutTests/OWNERS': 'foo@ch40m1um.qjz9zk',
             '/mock-checkout/third_party/WebKit/LayoutTests/other/some_file': '',
         })
         self.assertIsNone(self.extractor.find_owners_file('third_party/WebKit/LayoutTests'))
@@ -134,20 +134,20 @@ class DirectoryOwnersExtractorTest(unittest.TestCase):
             ABS_WPT_BASE + '/foo/OWNERS':
             '#This is a comment\n'
             '*\n'
-            'foo@chromium.org\n'
-            'bar@chromium.org\n'
+            'foo@ch40m1um.qjz9zk\n'
+            'bar@ch40m1um.qjz9zk\n'
             'foobar\n'
-            '#foobar@chromium.org\n'
-            '# TEAM: some-team@chromium.org\n'
+            '#foobar@ch40m1um.qjz9zk\n'
+            '# TEAM: some-team@ch40m1um.qjz9zk\n'
             '# COMPONENT: Blink>Layout\n'
         }
         self.assertEqual(self.extractor.extract_owners(ABS_WPT_BASE + '/foo/OWNERS'),
-                         ['foo@chromium.org', 'bar@chromium.org'])
+                         ['foo@ch40m1um.qjz9zk', 'bar@ch40m1um.qjz9zk'])
 
     def test_extract_component(self):
         self.filesystem.files = {
             ABS_WPT_BASE + '/foo/OWNERS':
-            '# TEAM: some-team@chromium.org\n'
+            '# TEAM: some-team@ch40m1um.qjz9zk\n'
             '# COMPONENT: Blink>Layout\n'
         }
         self.assertEqual(self.extractor.extract_component(ABS_WPT_BASE + '/foo/OWNERS'), 'Blink>Layout')
@@ -171,7 +171,7 @@ class DirectoryOwnersExtractorTest(unittest.TestCase):
     def test_is_wpt_notify_enabled_absence_is_false(self):
         self.filesystem.files = {
             ABS_WPT_BASE + '/foo/OWNERS':
-            '# TEAM: some-team@chromium.org\n'
+            '# TEAM: some-team@ch40m1um.qjz9zk\n'
             '# COMPONENT: Blink>Layout\n'
         }
         self.assertFalse(self.extractor.is_wpt_notify_enabled(ABS_WPT_BASE + '/foo/OWNERS'))

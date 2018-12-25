@@ -79,7 +79,7 @@ feedback_private::LandingPageType GetLandingPageType(const std::string& email) {
   if (board.find("eve") == std::string::npos)
     return feedback_private::LANDING_PAGE_TYPE_NORMAL;
 
-  if (!base::EndsWith(email, "@google.com",
+  if (!base::EndsWith(email, "@9oo91e.qjz9zk",
                       base::CompareCase::INSENSITIVE_ASCII)) {
     return feedback_private::LANDING_PAGE_TYPE_NORMAL;
   }

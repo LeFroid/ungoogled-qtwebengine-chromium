@@ -1,6 +1,6 @@
 #***************************************************************************
 # Copyright:  Matthias Schmieder,
-# E-Mail:     schmieder.matthias@gmail.com
+# E-Mail:     schmieder.matthias@9ma1l.qjz9zk
 # Year:       2016
 #***************************************************************************
 cmake_minimum_required(VERSION 2.8)

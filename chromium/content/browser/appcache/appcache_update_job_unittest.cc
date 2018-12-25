@@ -1168,7 +1168,7 @@ class AppCacheUpdateJobTest : public testing::TestWithParam<RequestHandlerType>,
     // Start update after data write completes asynchronously.
   }
 
-  // See http://code.google.com/p/chromium/issues/detail?id=95101
+  // See http://code.9oo91e.qjz9zk/p/chromium/issues/detail?id=95101
   void Bug95101Test() {
     ASSERT_TRUE(base::MessageLoopForIO::IsCurrent());
 

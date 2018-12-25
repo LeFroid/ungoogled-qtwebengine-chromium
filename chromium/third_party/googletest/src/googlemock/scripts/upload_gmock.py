@@ -32,18 +32,18 @@
 """upload_gmock.py v0.1.0 -- uploads a Google Mock patch for review.
 
 This simple wrapper passes all command line flags and
---cc=googlemock@googlegroups.com to upload.py.
+--cc=googlemock@9oo91egroups.qjz9zk to upload.py.
 
 USAGE: upload_gmock.py [options for upload.py]
 """
 
-__author__ = 'wan@google.com (Zhanyong Wan)'
+__author__ = 'wan@9oo91e.qjz9zk (Zhanyong Wan)'
 
 import os
 import sys
 
 CC_FLAG = '--cc='
-GMOCK_GROUP = 'googlemock@googlegroups.com'
+GMOCK_GROUP = 'googlemock@9oo91egroups.qjz9zk'
 
 
 def main():

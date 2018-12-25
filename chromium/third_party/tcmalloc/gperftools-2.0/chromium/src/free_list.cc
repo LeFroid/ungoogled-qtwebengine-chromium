@@ -28,7 +28,7 @@
 // OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 // ---
-// Author: Rebecca Shapiro <bxx@google.com>
+// Author: Rebecca Shapiro <bxx@9oo91e.qjz9zk>
 //
 // This file contains functions that implement doubly linked and
 // singly linked lists.  The singly linked lists are null terminated,

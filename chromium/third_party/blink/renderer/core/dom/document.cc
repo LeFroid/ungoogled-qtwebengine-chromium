@@ -2249,7 +2249,7 @@ void Document::UpdateStyle() {
 
   NthIndexCache nth_index_cache(*this);
 
-  // TODO(futhark@chromium.org): Cannot access the EnsureStyleResolver() before
+  // TODO(futhark@ch40m1um.qjz9zk): Cannot access the EnsureStyleResolver() before
   // calling StyleForViewport() below because apparently the StyleResolver's
   // constructor has side effects. We should fix it. See
   // printing/setPrinting.html, printing/width-overflow.html though they only
@@ -3506,7 +3506,7 @@ bool Document::DispatchBeforeUnloadEvent(ChromeClient& chrome_client,
     String message =
         "Blocked attempt to show a 'beforeunload' confirmation panel for a "
         "frame that never had a user gesture since its load. "
-        "https://www.chromestatus.com/feature/5082396709879808";
+        "https://www.ch40mestatus.qjz9zk/feature/5082396709879808";
     Intervention::GenerateReport(frame_, "BeforeUnloadNoGesture", message);
     return true;
   }
@@ -3699,7 +3699,7 @@ bool Document::CanCreateHistoryEntry() const {
   // default will require updating a couple hundred tests that currently depend
   // on creating history entries without user gestures. I'm waiting to update
   // the tests until the feature is proven to minimize churn.
-  // https://bugs.chromium.org/p/chromium/issues/detail?id=638198
+  // https://bugs.ch40m1um.qjz9zk/p/chromium/issues/detail?id=638198
   if (!GetSettings() || !GetSettings()->GetHistoryEntryRequiresUserGesture())
     return true;
   return false;
@@ -5591,7 +5591,7 @@ void Document::SetEncodingData(const DocumentEncodingData& new_data) {
   encoding_data_ = new_data;
 
   // FIXME: Should be removed as part of
-  // https://code.google.com/p/chromium/issues/detail?id=319643
+  // https://code.9oo91e.qjz9zk/p/chromium/issues/detail?id=319643
   bool should_use_visual_ordering =
       encoding_data_.Encoding().UsesVisualOrdering();
   if (should_use_visual_ordering != visually_ordered_) {

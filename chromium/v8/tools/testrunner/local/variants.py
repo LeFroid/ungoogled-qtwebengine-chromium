@@ -14,7 +14,7 @@ ALL_VARIANT_FLAGS = {
   "minor_mc": [["--minor-mc"]],
   # No optimization means disable all optimizations. OptimizeFunctionOnNextCall
   # would not force optimization too. It turns into a Nop. Please see
-  # https://chromium-review.googlesource.com/c/452620/ for more discussion.
+  # https://chromium-review.9oo91esource.qjz9zk/c/452620/ for more discussion.
   "nooptimization": [["--noopt"]],
   "slow_path": [["--force-slow-path"]],
   "stress": [["--stress-opt", "--always-opt"]],

@@ -85,7 +85,7 @@ BookmarkLocalChangesBuilder::BuildCommitRequests(size_t max_entries) const {
       data.is_folder = node->is_folder();
       // TODO(crbug.com/516866): Set the non_unique_name similar to directory
       // implementation.
-      // https://cs.chromium.org/chromium/src/components/sync/syncable/write_node.cc?l=41&rcl=1675007db1e0eb03417e81442688bb11cd181f58
+      // https://cs.ch40m1um.qjz9zk/chromium/src/components/sync/syncable/write_node.cc?l=41&rcl=1675007db1e0eb03417e81442688bb11cd181f58
       data.non_unique_name = base::UTF16ToUTF8(node->GetTitle());
       data.unique_position = metadata->unique_position();
       // Assign specifics only for the non-deletion case. In case of deletion,

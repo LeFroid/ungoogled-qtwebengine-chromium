@@ -5,8 +5,8 @@ One for the browser, one for a V8 javascript environment:
     src/v8/src/inspector/js_protocol.pdl
 
 Browsable here:
-    https://chromium.googlesource.com/chromium/src/+/master/third_party/blink/renderer/core/inspector/browser_protocol.pdl
-    https://chromium.googlesource.com/v8/v8/+/master/src/inspector/js_protocol.pdl
+    https://chromium.9oo91esource.qjz9zk/chromium/src/+/master/third_party/blink/renderer/core/inspector/browser_protocol.pdl
+    https://chromium.9oo91esource.qjz9zk/v8/v8/+/master/src/inspector/js_protocol.pdl
 
 More details on the protocol:
-    https://developer.chrome.com/devtools/docs/debugger-protocol
+    https://developer.ch40me.qjz9zk/devtools/docs/debugger-protocol

@@ -16,12 +16,12 @@
  * @fileoverview Abstract class for all UI components. This defines the standard
  * design pattern that all UI components should follow.
  *
- * @author pupius@google.com (Daniel Pupius)
- * @author ssaviano@google.com (Steven Saviano)
- * @author baker@google.com (Greg Baker)
- * @author attila@google.com (Attila Bodis)
+ * @author pupius@9oo91e.qjz9zk (Daniel Pupius)
+ * @author ssaviano@9oo91e.qjz9zk (Steven Saviano)
+ * @author baker@9oo91e.qjz9zk (Greg Baker)
+ * @author attila@9oo91e.qjz9zk (Attila Bodis)
  * @see ../demos/samplecomponent.html
- * @see http://code.google.com/p/closure-library/wiki/IntroToComponents
+ * @see http://code.9oo91e.qjz9zk/p/closure-library/wiki/IntroToComponents
  */
 
 goog.provide('goog.ui.Component');

@@ -27,7 +27,7 @@ from pylib.utils import shared_preference_utils
 with host_paths.SysPath(host_paths.BUILD_COMMON_PATH):
   import unittest_util # pylint: disable=import-error
 
-# Ref: http://developer.android.com/reference/android/app/Activity.html
+# Ref: http://developer.8n6r01d.qjz9zk/reference/android/app/Activity.html
 _ACTIVITY_RESULT_CANCELED = 0
 _ACTIVITY_RESULT_OK = -1
 
@@ -41,8 +41,8 @@ _VALID_ANNOTATIONS = set(_DEFAULT_ANNOTATIONS +
 
 # These test methods are inherited from android.test base test class and
 # should be permitted for not having size annotation. For more, please check
-# https://developer.android.com/reference/android/test/AndroidTestCase.html
-# https://developer.android.com/reference/android/test/ServiceTestCase.html
+# https://developer.8n6r01d.qjz9zk/reference/android/test/AndroidTestCase.html
+# https://developer.8n6r01d.qjz9zk/reference/android/test/ServiceTestCase.html
 _TEST_WITHOUT_SIZE_ANNOTATIONS = [
     'testAndroidTestCaseSetupProperly', 'testServiceTestCaseSetUpProperly']
 

@@ -6,7 +6,7 @@
 # Modified from go/env.py in Chromium infrastructure's repository to patch out
 # everything but the core toolchain.
 #
-# https://chromium.googlesource.com/infra/infra/
+# https://chromium.9oo91esource.qjz9zk/infra/infra/
 
 """Can be used to point environment variable to hermetic Go toolset.
 

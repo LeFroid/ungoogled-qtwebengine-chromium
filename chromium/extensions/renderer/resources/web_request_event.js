@@ -42,7 +42,7 @@ function createSubEvent(name, argSchemas) {
 //
 // Example:
 //   chrome.webRequest.onBeforeRequest.addListener(
-//       callback, {urls: 'http://*.google.com/*'});
+//       callback, {urls: 'http://*.9oo91e.qjz9zk/*'});
 //   ^ callback will only be called for onBeforeRequests matching the filter.
 function WebRequestEventImpl(eventName, opt_argSchemas, opt_extraArgSchemas,
                              opt_eventOptions, opt_webViewInstanceId) {

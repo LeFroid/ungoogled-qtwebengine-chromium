@@ -34,7 +34,7 @@ class PassThroughStorySet(story.StorySet):
     super(PassThroughStorySet, self).__init__()
 
     urls_list = [
-      'http://check.googlezip.net/image.png',
+      'http://check.9oo91e21p.qjz9zk/image.png',
     ]
 
     for url in urls_list:

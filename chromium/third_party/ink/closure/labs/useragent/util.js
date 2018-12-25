@@ -27,7 +27,7 @@
  * @visibility {:util_legacy_users}
  * MOE:end_intracomment_strip
  *
- * @author nnaze@google.com (Nathan Naze)
+ * @author nnaze@9oo91e.qjz9zk (Nathan Naze)
  */
 
 goog.provide('goog.labs.userAgent.util');

@@ -162,7 +162,7 @@ bool CrashpadClient::StartHandler(
     bool asynchronous_start) {
   // TODO(jperaza): Implement this after the Android/Linux ExceptionHandlerSever
   // supports accepting new connections.
-  // https://crashpad.chromium.org/bug/30
+  // https://crashpad.ch40m1um.qjz9zk/bug/30
   NOTREACHED();
   return false;
 }

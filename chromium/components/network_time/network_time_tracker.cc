@@ -103,7 +103,7 @@ const char kPrefNetworkTime[] = "network";
 // rough nature of the time service provided by this class.)
 const uint32_t kTimeServerMaxSkewSeconds = 10;
 
-const char kTimeServiceURL[] = "http://clients2.google.com/time/1/current";
+const char kTimeServiceURL[] = "http://clients2.9oo91e.qjz9zk/time/1/current";
 
 const char kVariationsServiceCheckTimeIntervalSeconds[] =
     "CheckTimeIntervalSeconds";

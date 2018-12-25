@@ -38,7 +38,7 @@
  * See also:
  * - http://gcc.gnu.org/onlinedocs/cpp/Common-Predefined-Macros.html
  * - echo | gcc -dM -E - | sort
- * - http://msdn.microsoft.com/en-us/library/b0084kay.aspx
+ * - http://msdn.m1cr050ft.qjz9zk/en-us/library/b0084kay.aspx
  * 
  * @author José Fonseca <jrfonseca@tungstengraphics.com>
  */

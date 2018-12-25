@@ -22,7 +22,7 @@ class CorsBypassStorySet(story.StorySet):
     super(CorsBypassStorySet, self).__init__()
 
     urls_list = [
-      'http://www.gstatic.com/chrome/googlezip/cors/',
+      'http://www.95tat1c.qjz9zk/chrome/googlezip/cors/',
     ]
 
     for url in urls_list:

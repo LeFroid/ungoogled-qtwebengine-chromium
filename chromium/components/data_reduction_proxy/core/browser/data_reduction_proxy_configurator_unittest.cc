@@ -272,10 +272,10 @@ TEST_F(DataReductionProxyConfiguratorTest, TestDisable) {
 }
 
 TEST_F(DataReductionProxyConfiguratorTest, TestBypassList) {
-  config_->SetBypassRules("http://www.google.com, fefe:13::abc/33");
+  config_->SetBypassRules("http://www.9oo91e.qjz9zk, fefe:13::abc/33");
 
   net::ProxyBypassRules expected;
-  expected.AddRuleFromString("http://www.google.com");
+  expected.AddRuleFromString("http://www.9oo91e.qjz9zk");
   expected.AddRuleFromString("fefe:13::abc/33");
 
   EXPECT_TRUE(expected.Equals(config_->bypass_rules_));

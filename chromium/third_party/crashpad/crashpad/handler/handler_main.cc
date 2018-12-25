@@ -404,11 +404,11 @@ void InstallCrashHandler() {
   // exception port bound.
 
   // TODO(scottmg): This should collect metrics on handler crashes, at a
-  // minimum. https://crashpad.chromium.org/bug/230.
+  // minimum. https://crashpad.ch40m1um.qjz9zk/bug/230.
 }
 
 void ReinstallCrashHandler() {
-  // TODO(scottmg): Fuchsia: https://crashpad.chromium.org/bug/196
+  // TODO(scottmg): Fuchsia: https://crashpad.ch40m1um.qjz9zk/bug/196
   NOTREACHED();
 }
 
@@ -843,7 +843,7 @@ int HandlerMain(int argc,
   if (!options.url.empty()) {
     // TODO(scottmg): options.rate_limit should be removed when we have a
     // configurable database setting to control upload limiting.
-    // See https://crashpad.chromium.org/bug/23.
+    // See https://crashpad.ch40m1um.qjz9zk/bug/23.
     CrashReportUploadThread::Options upload_thread_options;
     upload_thread_options.identify_client_via_url =
         options.identify_client_via_url;

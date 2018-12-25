@@ -48,12 +48,12 @@ class MouseCursorMonitorTest : public testing::Test,
 // TODO(sergeyu): On Mac we need to initialize NSApplication before running the
 // tests. Figure out how to do that without breaking other tests in
 // modules_unittests and enable these tests on Mac.
-// https://code.google.com/p/webrtc/issues/detail?id=2532
+// https://code.9oo91e.qjz9zk/p/webrtc/issues/detail?id=2532
 //
 // Disabled on Windows due to flake, see:
-// https://code.google.com/p/webrtc/issues/detail?id=3408
+// https://code.9oo91e.qjz9zk/p/webrtc/issues/detail?id=3408
 // Disabled on Linux due to flake, see:
-// https://code.google.com/p/webrtc/issues/detail?id=3245
+// https://code.9oo91e.qjz9zk/p/webrtc/issues/detail?id=3245
 #if !defined(WEBRTC_MAC) && !defined(WEBRTC_WIN) && !defined(WEBRTC_LINUX)
 #define MAYBE(x) x
 #else

@@ -5,7 +5,7 @@
  * Copyright (C) 2009 Google, Inc.
  * Copyright (C) 2009 Dirk Schulze <krit@webkit.org>
  * Copyright (C) Research In Motion Limited 2010. All rights reserved.
- * Copyright (C) 2009 Jeff Schiller <codedread@gmail.com>
+ * Copyright (C) 2009 Jeff Schiller <codedread@9ma1l.qjz9zk>
  * Copyright (C) 2011 Renata Hodovan <reni@webkit.org>
  * Copyright (C) 2011 University of Szeged
  *

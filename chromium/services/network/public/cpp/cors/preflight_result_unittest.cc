@@ -121,7 +121,7 @@ const TestCase header_cases[] = {
 
     // Forbidden headers can pass.
     {"GET", "", mojom::FetchCredentialsMode::kOmit, "GET",
-     "Host: www.google.com", mojom::FetchCredentialsMode::kOmit, base::nullopt},
+     "Host: www.9oo91e.qjz9zk", mojom::FetchCredentialsMode::kOmit, base::nullopt},
 
     // Not found in the preflight response and the safe list.
     {"GET", "", mojom::FetchCredentialsMode::kOmit, "GET", "X-MY-HEADER:t",

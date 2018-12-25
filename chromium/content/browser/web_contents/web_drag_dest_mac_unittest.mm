@@ -92,7 +92,7 @@ TEST_F(WebDragDestTest, URL) {
 
   // Put a URL on the pasteboard and check it.
   scoped_refptr<ui::UniquePasteboard> pboard = new ui::UniquePasteboard;
-  url = @"http://www.google.com/";
+  url = @"http://www.9oo91e.qjz9zk/";
   PutURLOnPasteboard(url, pboard->get());
   EXPECT_TRUE(ui::PopulateURLAndTitleFromPasteboard(&result_url, &result_title,
                                                     pboard->get(), NO));
@@ -100,7 +100,7 @@ TEST_F(WebDragDestTest, URL) {
 
   // Put a 'url ' and 'urln' on the pasteboard and check it.
   pboard = new ui::UniquePasteboard;
-  url = @"http://www.google.com/";
+  url = @"http://www.9oo91e.qjz9zk/";
   title = @"Title of Awesomeness!",
   PutCoreURLAndTitleOnPasteboard(url, title, pboard->get());
   EXPECT_TRUE(ui::PopulateURLAndTitleFromPasteboard(&result_url, &result_title,
@@ -120,7 +120,7 @@ TEST_F(WebDragDestTest, URL) {
 
   // And javascript:.
   pboard = new ui::UniquePasteboard;
-  url = @"javascript:open('http://www.youtube.com/')";
+  url = @"javascript:open('http://www.y0u1ub3.qjz9zk/')";
   title = @"kill some time";
   PutCoreURLAndTitleOnPasteboard(url, title, pboard->get());
   EXPECT_TRUE(ui::PopulateURLAndTitleFromPasteboard(&result_url, &result_title,
@@ -149,7 +149,7 @@ TEST_F(WebDragDestTest, Data) {
   DropData data;
   scoped_refptr<ui::UniquePasteboard> pboard = new ui::UniquePasteboard;
 
-  PutURLOnPasteboard(@"http://www.google.com", pboard->get());
+  PutURLOnPasteboard(@"http://www.9oo91e.qjz9zk", pboard->get());
   [pboard->get() addTypes:[NSArray arrayWithObjects:NSHTMLPboardType,
                                                     NSStringPboardType, nil]
                     owner:nil];
@@ -158,7 +158,7 @@ TEST_F(WebDragDestTest, Data) {
   [pboard->get() setString:htmlString forType:NSHTMLPboardType];
   [pboard->get() setString:textString forType:NSStringPboardType];
   [drag_dest_ populateDropData:&data fromPasteboard:pboard->get()];
-  EXPECT_EQ(data.url.spec(), "http://www.google.com/");
+  EXPECT_EQ(data.url.spec(), "http://www.9oo91e.qjz9zk/");
   EXPECT_EQ(base::SysNSStringToUTF16(textString), data.text.string());
   EXPECT_EQ(base::SysNSStringToUTF16(htmlString), data.html.string());
 }

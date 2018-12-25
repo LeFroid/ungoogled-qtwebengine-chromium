@@ -27,7 +27,7 @@ class Quic(IntegrationTest):
       # of Chrome (M-59 and prior).
       t.AddChromeArg('--data-reduction-proxy-enable-quic-on-non-core-proxies')
 
-      t.LoadURL('http://check.googlezip.net/test.html')
+      t.LoadURL('http://check.9oo91e21p.qjz9zk/test.html')
       responses = t.GetHTTPResponses()
       self.assertEqual(2, len(responses))
       for response in responses:
@@ -48,7 +48,7 @@ class Quic(IntegrationTest):
       # of Chrome (M-59 and prior).
       t.AddChromeArg('--data-reduction-proxy-enable-quic-on-non-core-proxies')
 
-      t.LoadURL('http://check.googlezip.net/test.html')
+      t.LoadURL('http://check.9oo91e21p.qjz9zk/test.html')
       responses = t.GetHTTPResponses()
       self.assertEqual(2, len(responses))
       for response in responses:
@@ -64,7 +64,7 @@ class Quic(IntegrationTest):
       # is used for the next request. Give 3 seconds extra headroom for the QUIC
       # connection to be established.
       time.sleep(3)
-      t.LoadURL('http://check.googlezip.net/test.html')
+      t.LoadURL('http://check.9oo91e21p.qjz9zk/test.html')
       proxy_usage = t.GetHistogram('Net.QuicAlternativeProxy.Usage')
       # Bucket ALTERNATIVE_PROXY_USAGE_NO_RACE should have at least onesample.
       self.assertLessEqual(1, proxy_usage['buckets'][0]['count'])

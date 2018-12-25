@@ -3,7 +3,7 @@
  *
  * Copyright (C) 2014 Intel Corporation.
  *
- * Contact: Alexander Kanavin <alex.kanavin@gmail.com>
+ * Contact: Alexander Kanavin <alex.kanavin@9ma1l.qjz9zk>
  *
  * This library is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Lesser General Public

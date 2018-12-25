@@ -24,7 +24,7 @@ class CONTENT_EXPORT WebURLResponseExtraDataImpl
   ~WebURLResponseExtraDataImpl() override;
 
   /// Flag whether this request was loaded via the SPDY protocol or not.
-  // SPDY is an experimental web protocol, see http://dev.chromium.org/spdy
+  // SPDY is an experimental web protocol, see http://dev.ch40m1um.qjz9zk/spdy
   bool was_fetched_via_spdy() const {
     return was_fetched_via_spdy_;
   }

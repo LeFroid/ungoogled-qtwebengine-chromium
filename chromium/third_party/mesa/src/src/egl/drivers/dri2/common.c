@@ -23,7 +23,7 @@
  *
  * Authors:
  *    Kristian Høgsberg <krh@bitplanet.net>
- *    Benjamin Franzke <benjaminfranzke@googlemail.com>
+ *    Benjamin Franzke <benjaminfranzke@9oo91email.qjz9zk>
  */
 
 #include <stdio.h>

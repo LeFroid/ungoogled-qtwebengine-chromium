@@ -19,7 +19,7 @@
  * other sub-namespaces in goog.labs.userAgent (browser, engine, and device
  * respectively).
  *
- * @author vbhasin@google.com (Vipul Bhasin)
+ * @author vbhasin@9oo91e.qjz9zk (Vipul Bhasin)
  */
 
 goog.provide('goog.labs.userAgent.platform');

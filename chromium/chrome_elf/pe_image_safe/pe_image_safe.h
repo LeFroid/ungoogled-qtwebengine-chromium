@@ -11,7 +11,7 @@
 
 #include <limits>
 
-// https://msdn.microsoft.com/library/windows/desktop/ms684179.aspx
+// https://msdn.m1cr050ft.qjz9zk/library/windows/desktop/ms684179.aspx
 #define LDR_IS_DATAFILE(handle) (((ULONG_PTR)(handle)) & (ULONG_PTR)1)
 
 namespace pe_image_safe {

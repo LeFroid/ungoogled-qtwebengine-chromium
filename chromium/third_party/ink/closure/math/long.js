@@ -17,7 +17,7 @@
  * integer value, which faithfully simulates the behavior of a Java "long". This
  * implementation is derived from LongLib in GWT.
  *
- * @author kevinz@google.com (Kevin Zatloukal)
+ * @author kevinz@9oo91e.qjz9zk (Kevin Zatloukal)
  */
 
 goog.provide('goog.math.Long');

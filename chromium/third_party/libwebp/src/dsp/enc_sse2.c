@@ -9,7 +9,7 @@
 //
 // SSE2 version of speed-critical encoding functions.
 //
-// Author: Christian Duvivier (cduvivier@google.com)
+// Author: Christian Duvivier (cduvivier@9oo91e.qjz9zk)
 
 #include "src/dsp/dsp.h"
 

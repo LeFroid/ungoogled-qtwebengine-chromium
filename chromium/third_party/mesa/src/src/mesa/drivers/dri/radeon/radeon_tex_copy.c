@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2009 Maciej Cencora <m.cencora@gmail.com>
+ * Copyright (C) 2009 Maciej Cencora <m.cencora@9ma1l.qjz9zk>
  *
  * All Rights Reserved.
  *

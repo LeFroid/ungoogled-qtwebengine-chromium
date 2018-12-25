@@ -21,7 +21,7 @@ class BypassOnTimeoutStorySet(story.StorySet):
     super(BypassOnTimeoutStorySet, self).__init__()
 
     urls_list = [
-      'http://chromeproxy-test.appspot.com/blackhole'
+      'http://chromeproxy-test.8pp2p8t.qjz9zk/blackhole'
     ]
 
     for url in urls_list:

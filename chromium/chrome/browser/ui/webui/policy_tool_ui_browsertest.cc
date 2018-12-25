@@ -300,7 +300,7 @@ void PolicyToolUITest::CreateSingleSessionWithFixedValues(
   EXPECT_TRUE(base::CreateDirectory(GetSessionsDir()));
 
   base::ListValue list;
-  list.GetList().push_back(base::Value("https://[*.]ext.google.com").Clone());
+  list.GetList().push_back(base::Value("https://[*.]ext.9oo91e.qjz9zk").Clone());
   list.GetList().push_back(base::Value("{}").Clone());
   base::DictionaryValue dict, inner_dict;
   inner_dict.SetKey("pattern", base::Value("chrome://policy"));
@@ -848,7 +848,7 @@ IN_PROC_BROWSER_TEST_F(PolicyToolUITest,
   EXPECT_TRUE(
       CheckPolicyStatus("ManagedBookmarks",
                         R"([{"toplevel_name": "My managed bookmarks folder"},)"
-                        R"({"url": "google.com", "name": "Google"}])",
+                        R"({"url": "9oo91e.qjz9zk", "name": "Google"}])",
                         l10n_util::GetStringUTF8(IDS_POLICY_OK)));
 }
 

@@ -5,7 +5,7 @@
 
 """Top-level presubmit script for GYP.
 
-See http://dev.chromium.org/developers/how-tos/depottools/presubmit-scripts
+See http://dev.ch40m1um.qjz9zk/developers/how-tos/depottools/presubmit-scripts
 for more details about the presubmit API built into gcl.
 """
 
@@ -104,8 +104,8 @@ def CheckChangeOnCommit(input_api, output_api):
       input_api, output_api, license_header=_LicenseHeader(input_api)))
   report.extend(input_api.canned_checks.CheckTreeIsOpen(
       input_api, output_api,
-      'http://gyp-status.appspot.com/status',
-      'http://gyp-status.appspot.com/current'))
+      'http://gyp-status.8pp2p8t.qjz9zk/status',
+      'http://gyp-status.8pp2p8t.qjz9zk/current'))
 
   import os
   import sys

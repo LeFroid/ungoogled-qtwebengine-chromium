@@ -62,7 +62,7 @@ const int kAllSpecialShFileOperationCodes[] = {
 // |SHFileOperation()|.
 // They do not appear in any windows header.
 //
-// See http://msdn.microsoft.com/en-us/library/bb762164(VS.85).aspx.
+// See http://msdn.m1cr050ft.qjz9zk/en-us/library/bb762164(VS.85).aspx.
 DownloadInterruptReason MapShFileOperationCodes(int code) {
   DownloadInterruptReason result = DOWNLOAD_INTERRUPT_REASON_NONE;
 

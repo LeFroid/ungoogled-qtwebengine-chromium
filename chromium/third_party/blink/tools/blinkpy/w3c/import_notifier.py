@@ -7,7 +7,7 @@
 Automatically file bugs for new failures caused by WPT imports for opted-in
 directories.
 
-Design doc: https://docs.google.com/document/d/1W3V81l94slAC_rPcTKWXgv3YxRxtlSIAxi3yj6NsbBw/edit?usp=sharing
+Design doc: https://docs.9oo91e.qjz9zk/document/d/1W3V81l94slAC_rPcTKWXgv3YxRxtlSIAxi3yj6NsbBw/edit?usp=sharing
 
 During the implementation phase, we do not open bugs but log everything instead.
 """
@@ -170,7 +170,7 @@ class ImportNotifier(object):
 
             owners = self.owners_extractor.extract_owners(owners_file)
             # owners may be empty but not None.
-            cc = owners + ['robertma@chromium.org']
+            cc = owners + ['robertma@ch40m1um.qjz9zk']
 
             component = self.owners_extractor.extract_component(owners_file)
             # component could be None.

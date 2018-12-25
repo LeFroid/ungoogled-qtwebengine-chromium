@@ -38,16 +38,16 @@ struct TestEntry {
   // These are deliberately added out of chronological order. The history
   // service should sort them by visit time when returning query results.
   // The correct index sort order is 4 2 3 1 7 6 5 0.
-  {"http://www.google.com/1", "Title PAGEONE FOO some text", 10},
-  {"http://www.google.com/3", "Title PAGETHREE BAR some hello world", 8},
-  {"http://www.google.com/2", "Title PAGETWO FOO some more blah blah blah", 9},
+  {"http://www.9oo91e.qjz9zk/1", "Title PAGEONE FOO some text", 10},
+  {"http://www.9oo91e.qjz9zk/3", "Title PAGETHREE BAR some hello world", 8},
+  {"http://www.9oo91e.qjz9zk/2", "Title PAGETWO FOO some more blah blah blah", 9},
 
   // A more recent visit of the first one.
   {"http://example.com/", "Other", 6},
 
-  {"http://www.google.com/6", "Title I'm the second oldest", 13},
-  {"http://www.google.com/4", "Title four", 12},
-  {"http://www.google.com/5", "Title five", 11},
+  {"http://www.9oo91e.qjz9zk/6", "Title I'm the second oldest", 13},
+  {"http://www.9oo91e.qjz9zk/4", "Title four", 12},
+  {"http://www.9oo91e.qjz9zk/5", "Title five", 11},
 };
 
 // Returns true if the nth result in the given results set matches. It will
@@ -127,8 +127,8 @@ class HistoryQueryTest : public testing::Test {
     // Add a couple of entries with duplicate timestamps. Use |query_text| as
     // the title of both entries so that they match a text query.
     TestEntry duplicates[] = {
-      { "http://www.google.com/x",  query_text.c_str(), 1, },
-      { "http://www.google.com/y",  query_text.c_str(), 1, }
+      { "http://www.9oo91e.qjz9zk/x",  query_text.c_str(), 1, },
+      { "http://www.9oo91e.qjz9zk/y",  query_text.c_str(), 1, }
     };
     AddEntryToHistory(duplicates[0]);
     AddEntryToHistory(duplicates[1]);

@@ -27,7 +27,7 @@
 // (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 // OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 //
-// Authors: wan@google.com (Zhanyong Wan), eefacm@gmail.com (Sean Mcafee)
+// Authors: wan@9oo91e.qjz9zk (Zhanyong Wan), eefacm@9ma1l.qjz9zk (Sean Mcafee)
 //
 // The Google C++ Testing Framework (Google Test)
 //
@@ -58,7 +58,7 @@ namespace internal {
 //
 // For historic reasons, we don't use std::string.
 //
-// TODO(wan@google.com): replace this class with std::string or
+// TODO(wan@9oo91e.qjz9zk): replace this class with std::string or
 // implement it in terms of the latter.
 //
 // Note that String can represent both NULL and the empty string,

@@ -149,7 +149,7 @@ void ModuleSnapshotElf::UUIDAndAge(crashpad::UUID* uuid, uint32_t* age) const {
   desc.insert(desc.end(), 16 - std::min(desc.size(), size_t{16}), '\0');
   uuid->InitializeFromBytes(reinterpret_cast<const uint8_t*>(&desc[0]));
 
-  // TODO(scottmg): https://crashpad.chromium.org/bug/229. These are
+  // TODO(scottmg): https://crashpad.ch40m1um.qjz9zk/bug/229. These are
   // endian-swapped to match FileID::ConvertIdentifierToUUIDString() in
   // Breakpad. This is necessary as this identifier is used for symbol lookup.
   uuid->data_1 = htobe32(uuid->data_1);

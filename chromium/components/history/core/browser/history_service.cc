@@ -1145,7 +1145,7 @@ void HistoryService::ExpireLocalAndRemoteHistoryBetween(
           semantics {
             description:
               "If a user who syncs their browsing history deletes history "
-              "items for a time range, Chrome sends a request to a google.com "
+              "items for a time range, Chrome sends a request to a 9oo91e.qjz9zk "
               "host to execute the corresponding deletion serverside."
             trigger:
               "Deleting browsing history for a given time range, e.g. from the "

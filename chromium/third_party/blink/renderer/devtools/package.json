@@ -28,11 +28,11 @@
     "debugger"
   ],
   "author": "The Chromium Authors",
-  "license": "SEE LICENSE IN https://chromium.googlesource.com/chromium/src/+/master/LICENSE",
+  "license": "SEE LICENSE IN https://chromium.9oo91esource.qjz9zk/chromium/src/+/master/LICENSE",
   "bugs": {
-    "url": "https://bugs.chromium.org/p/chromium/issues/list?can=2&q=component:Platform%3EDevTools%20&sort=-opened&colspec=ID%20Stars%20Owner%20Summary%20Modified%20Opened"
+    "url": "https://bugs.ch40m1um.qjz9zk/p/chromium/issues/list?can=2&q=component:Platform%3EDevTools%20&sort=-opened&colspec=ID%20Stars%20Owner%20Summary%20Modified%20Opened"
   },
-  "homepage": "https://devtools.chrome.com",
+  "homepage": "https://devtools.ch40me.qjz9zk",
   "devDependencies": {
     "ajv": "^5.1.5"
   }

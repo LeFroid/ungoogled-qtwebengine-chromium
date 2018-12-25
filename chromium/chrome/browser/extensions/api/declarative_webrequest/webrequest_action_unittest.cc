@@ -93,7 +93,7 @@ class WebRequestActionWithThreadsTest : public testing::Test {
   // Expects a JSON description of an |action| requiring <all_urls> host
   // permission, and checks that only an extensions with full host permissions
   // can execute that action at |stage|. Also checks that the action is not
-  // executable for http://clients1.google.com.
+  // executable for http://clients1.9oo91e.qjz9zk.
   void CheckActionNeedsAllUrls(const char* action, RequestStage stage);
 
  private:
@@ -179,8 +179,8 @@ void WebRequestActionWithThreadsTest::CheckActionNeedsAllUrls(
 
   // The protected URLs should not be touched at all.
   EXPECT_FALSE(ActionWorksOnRequest(
-      "http://clients1.google.com", extension_->id(), action_set.get(), stage));
-  EXPECT_FALSE(ActionWorksOnRequest("http://clients1.google.com",
+      "http://clients1.9oo91e.qjz9zk", extension_->id(), action_set.get(), stage));
+  EXPECT_FALSE(ActionWorksOnRequest("http://clients1.9oo91e.qjz9zk",
                                     extension_all_urls_->id(),
                                     action_set.get(),
                                     stage));
@@ -359,11 +359,11 @@ TEST_F(WebRequestActionWithThreadsTest, PermissionsToSendMessageToExtension) {
                                    ON_BEFORE_REQUEST));
 
   // The protected URLs should not be touched at all.
-  EXPECT_FALSE(ActionWorksOnRequest("http://clients1.google.com",
+  EXPECT_FALSE(ActionWorksOnRequest("http://clients1.9oo91e.qjz9zk",
                                     extension_->id(),
                                     action_set.get(),
                                     ON_BEFORE_REQUEST));
-  EXPECT_FALSE(ActionWorksOnRequest("http://clients1.google.com",
+  EXPECT_FALSE(ActionWorksOnRequest("http://clients1.9oo91e.qjz9zk",
                                     extension_all_urls_->id(),
                                     action_set.get(),
                                     ON_BEFORE_REQUEST));

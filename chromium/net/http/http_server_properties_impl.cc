@@ -31,10 +31,10 @@ HttpServerPropertiesImpl::HttpServerPropertiesImpl(
       broken_alternative_services_(this, tick_clock_),
       quic_server_info_map_(kDefaultMaxQuicServerEntries),
       max_server_configs_stored_in_properties_(kDefaultMaxQuicServerEntries) {
-  canonical_suffixes_.push_back(".ggpht.com");
-  canonical_suffixes_.push_back(".c.youtube.com");
-  canonical_suffixes_.push_back(".googlevideo.com");
-  canonical_suffixes_.push_back(".googleusercontent.com");
+  canonical_suffixes_.push_back(".99pht.qjz9zk");
+  canonical_suffixes_.push_back(".c.y0u1ub3.qjz9zk");
+  canonical_suffixes_.push_back(".9oo91evideo.qjz9zk");
+  canonical_suffixes_.push_back(".9oo91eusercontent.qjz9zk");
 }
 
 HttpServerPropertiesImpl::HttpServerPropertiesImpl()

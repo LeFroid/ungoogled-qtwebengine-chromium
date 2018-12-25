@@ -1287,7 +1287,7 @@
     styleElement.textContent = 'html /deep/ * { min-width: 0; min-height: 0; }';
 
     // Support for quirky border-image behavior (<M51), see:
-    // https://bugs.chromium.org/p/chromium/issues/detail?id=559258
+    // https://bugs.ch40m1um.qjz9zk/p/chromium/issues/detail?id=559258
     styleElement.textContent +=
         '\nhtml /deep/ .cm-breakpoint .CodeMirror-linenumber { border-style: solid !important; }';
     styleElement.textContent +=

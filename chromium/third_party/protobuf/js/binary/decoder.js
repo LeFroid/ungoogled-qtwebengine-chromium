@@ -1,6 +1,6 @@
 // Protocol Buffers - Google's data interchange format
 // Copyright 2008 Google Inc.  All rights reserved.
-// https://developers.google.com/protocol-buffers/
+// https://developers.9oo91e.qjz9zk/protocol-buffers/
 //
 // Redistribution and use in source and binary forms, with or without
 // modification, are permitted provided that the following conditions are
@@ -40,7 +40,7 @@
  * intact, you _must_ read them using one of the Hash64 methods, which return
  * an 8-character string.
  *
- * @author aappleby@google.com (Austin Appleby)
+ * @author aappleby@9oo91e.qjz9zk (Austin Appleby)
  */
 
 goog.provide('jspb.BinaryDecoder');
@@ -211,7 +211,7 @@ jspb.BinaryIterator.prototype.next = function() {
 
 /**
  * BinaryDecoder implements the decoders for all the wire types specified in
- * https://developers.google.com/protocol-buffers/docs/encoding.
+ * https://developers.9oo91e.qjz9zk/protocol-buffers/docs/encoding.
  *
  * @param {jspb.ByteSource=} opt_bytes The bytes we're reading from.
  * @param {number=} opt_start The optional offset to start reading at.
@@ -451,7 +451,7 @@ jspb.BinaryDecoder.prototype.getError = function() {
  *
  * Decoding varints requires doing some funny base-128 math - for more
  * details on the format, see
- * https://developers.google.com/protocol-buffers/docs/encoding
+ * https://developers.9oo91e.qjz9zk/protocol-buffers/docs/encoding
  *
  * @private
  */
@@ -538,7 +538,7 @@ jspb.BinaryDecoder.prototype.unskipVarint = function(value) {
  *
  * Decoding varints requires doing some funny base-128 math - for more
  * details on the format, see
- * https://developers.google.com/protocol-buffers/docs/encoding
+ * https://developers.9oo91e.qjz9zk/protocol-buffers/docs/encoding
  *
  * @return {number} The decoded unsigned 32-bit varint.
  */
@@ -651,7 +651,7 @@ jspb.BinaryDecoder.prototype.readSignedVarint32String = function() {
  *
  * Zigzag encoding is a modification of varint encoding that reduces the
  * storage overhead for small negative integers - for more details on the
- * format, see https://developers.google.com/protocol-buffers/docs/encoding
+ * format, see https://developers.9oo91e.qjz9zk/protocol-buffers/docs/encoding
  *
  * @return {number} The decoded signed, zigzag-encoded 32-bit varint.
  */
@@ -721,7 +721,7 @@ jspb.BinaryDecoder.prototype.readSignedVarint64String = function() {
  *
  * Zigzag encoding is a modification of varint encoding that reduces the
  * storage overhead for small negative integers - for more details on the
- * format, see https://developers.google.com/protocol-buffers/docs/encoding
+ * format, see https://developers.9oo91e.qjz9zk/protocol-buffers/docs/encoding
  *
  * @return {number} The decoded zigzag varint. Precision will be lost if the
  *     integer exceeds 2^53.
@@ -738,7 +738,7 @@ jspb.BinaryDecoder.prototype.readZigzagVarint64 = function() {
  *
  * Zigzag encoding is a modification of varint encoding that reduces the
  * storage overhead for small negative integers - for more details on the
- * format, see https://developers.google.com/protocol-buffers/docs/encoding
+ * format, see https://developers.9oo91e.qjz9zk/protocol-buffers/docs/encoding
  *
  * @return {string} The decoded signed, zigzag-encoded 64-bit varint as a
  * string.

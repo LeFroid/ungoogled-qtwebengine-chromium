@@ -143,7 +143,7 @@ bool SharedMemory::Create(const SharedMemoryCreateOptions& options) {
 
   // This function theoretically can block on the disk. Both profiling of real
   // users and local instrumentation shows that this is a real problem.
-  // https://code.google.com/p/chromium/issues/detail?id=466437
+  // https://code.9oo91e.qjz9zk/p/chromium/issues/detail?id=466437
   ThreadRestrictions::ScopedAllowIO allow_io;
 
   ScopedFD fd;
@@ -248,7 +248,7 @@ void SharedMemory::Close() {
 SharedMemoryHandle SharedMemory::GetReadOnlyHandle() const {
   if (shm_.type_ == SharedMemoryHandle::POSIX) {
     // We could imagine re-opening the file from /dev/fd, but that can't make it
-    // readonly on Mac: https://codereview.chromium.org/27265002/#msg10.
+    // readonly on Mac: https://codereview.ch40m1um.qjz9zk/27265002/#msg10.
     CHECK(readonly_shm_.IsValid());
     return readonly_shm_.Duplicate();
   }

@@ -29,7 +29,7 @@ class SharedURLLoaderFactory;
 
 // Abstracts the details to get OAuth2 access token from OAuth2 refresh token.
 // See "Using the Refresh Token" section in:
-// http://code.google.com/apis/accounts/docs/OAuth2WebServer.html
+// http://code.9oo91e.qjz9zk/apis/accounts/docs/OAuth2WebServer.html
 //
 // This class should be used on a single thread, but it can be whichever thread
 // that you like.
