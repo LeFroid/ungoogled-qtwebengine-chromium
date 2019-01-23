@@ -133,6 +133,30 @@ void Generate_JSBuiltinsConstructStubHelper(MacroAssembler* masm) {
   __ ret(0);
 }
 
+void Generate_StackOverflowCheck(MacroAssembler* masm, Register num_args,
+                                 Register scratch, Label* stack_overflow,
+                                 bool include_receiver = false) {
+  // Check the stack for overflow. We are not trying to catch
+  // interruptions (e.g. debug break and preemption) here, so the "real stack
+  // limit" is checked.
+  ExternalReference real_stack_limit =
+      ExternalReference::address_of_real_stack_limit(masm->isolate());
+  // Compute the space that is left as a negative number in scratch. If
+  // we already overflowed, this will be a positive number.
+  __ mov(scratch, Operand::StaticVariable(real_stack_limit));
+  __ sub(scratch, esp);
+  // Add the size of the arguments.
+  static_assert(kPointerSize == 4,
+                "The next instruction assumes kPointerSize == 4");
+  __ lea(scratch, Operand(scratch, num_args, times_4, 0));
+  if (include_receiver) {
+    __ add(scratch, Immediate(kPointerSize));
+  }
+  // See if we overflowed, i.e. scratch is positive.
+  __ cmp(scratch, Immediate(0));
+  __ j(greater, stack_overflow);  // Signed comparison.
+}
+
 }  // namespace
 
 // The construct stub for ES5 constructor functions and ES6 class constructors.
@@ -221,6 +245,21 @@ void Builtins::Generate_JSConstructStubGeneric(MacroAssembler* masm) {
 
     // Set up pointer to last argument.
     __ lea(ebx, Operand(ebp, StandardFrameConstants::kCallerSPOffset));
+
+    // Check if we have enough stack space to push all arguments.
+    // Argument count in eax. Clobbers ecx.
+    Label enough_stack_space, stack_overflow;
+    Generate_StackOverflowCheck(masm, eax, ecx, &stack_overflow);
+    __ jmp(&enough_stack_space);
+
+    __ bind(&stack_overflow);
+    // Restore context from the frame.
+    __ mov(esi, Operand(ebp, ConstructFrameConstants::kContextOffset));
+    __ CallRuntime(Runtime::kThrowStackOverflow);
+    // This should be unreachable.
+    __ int3();
+
+    __ bind(&enough_stack_space);
 
     // Copy arguments and receiver to the expression stack.
     Label loop, entry;
@@ -318,32 +357,6 @@ void Builtins::Generate_ConstructedNonConstructable(MacroAssembler* masm) {
   __ CallRuntime(Runtime::kThrowConstructedNonConstructable);
 }
 
-static void Generate_StackOverflowCheck(MacroAssembler* masm, Register num_args,
-                                        Register scratch1, Register scratch2,
-                                        Label* stack_overflow,
-                                        bool include_receiver = false) {
-  // Check the stack for overflow. We are not trying to catch
-  // interruptions (e.g. debug break and preemption) here, so the "real stack
-  // limit" is checked.
-  ExternalReference real_stack_limit =
-      ExternalReference::address_of_real_stack_limit(masm->isolate());
-  __ mov(scratch1, Operand::StaticVariable(real_stack_limit));
-  // Make scratch2 the space we have left. The stack might already be overflowed
-  // here which will cause scratch2 to become negative.
-  __ mov(scratch2, esp);
-  __ sub(scratch2, scratch1);
-  // Make scratch1 the space we need for the array when it is unrolled onto the
-  // stack.
-  __ mov(scratch1, num_args);
-  if (include_receiver) {
-    __ add(scratch1, Immediate(1));
-  }
-  __ shl(scratch1, kPointerSizeLog2);
-  // Check if the arguments will overflow the stack.
-  __ cmp(scratch2, scratch1);
-  __ j(less_equal, stack_overflow);  // Signed comparison.
-}
-
 static void Generate_JSEntryTrampolineHelper(MacroAssembler* masm,
                                              bool is_construct) {
   ProfileEntryHookStub::MaybeCallEntryHook(masm);
@@ -368,9 +381,9 @@ static void Generate_JSEntryTrampolineHelper(MacroAssembler* masm,
     __ mov(ebx, Operand(ebx, EntryFrameConstants::kArgvOffset));
 
     // Check if we have enough stack space to push all arguments.
-    // Argument count in eax. Clobbers ecx and edx.
+    // Argument count in eax. Clobbers ecx.
     Label enough_stack_space, stack_overflow;
-    Generate_StackOverflowCheck(masm, eax, ecx, edx, &stack_overflow);
+    Generate_StackOverflowCheck(masm, eax, ecx, &stack_overflow);
     __ jmp(&enough_stack_space);
 
     __ bind(&stack_overflow);
@@ -958,7 +971,7 @@ void Builtins::Generate_InterpreterPushArgsThenCallImpl(
   // to perform a stack check. So push it onto the stack temporarily. This
   // might cause stack overflow, but it will be detected by the check.
   __ Push(edi);
-  Generate_StackOverflowCheck(masm, ecx, edx, edi, &stack_overflow);
+  Generate_StackOverflowCheck(masm, ecx, edx, &stack_overflow);
   __ Pop(edi);
 
   // Pop return address to allow tail-call after pushing arguments.
@@ -1030,13 +1043,11 @@ void Generate_InterpreterPushZeroAndArgsAndReturnAddress(
   // | return addr |            | receiver slot |
 
   // Check for stack overflow before we increment the stack pointer.
-  Generate_StackOverflowCheck(masm, num_args, scratch1, scratch2,
-                              stack_overflow, true);
+  Generate_StackOverflowCheck(masm, num_args, scratch1, stack_overflow, true);
 
-  // Step 1 - Update the stack pointer. scratch1 already contains the required
-  // increment to the stack. i.e. num_args + 1 stack slots. This is computed in
-  // Generate_StackOverflowCheck.
+  // Step 1 - Update the stack pointer.
 
+  __ lea(scratch1, Operand(num_args, times_4, kPointerSize));
   __ AllocateStackFrame(scratch1);
 
   // Step 2 move return_address and slots above it to the correct locations.
@@ -2227,7 +2238,7 @@ void Builtins::Generate_ArgumentsAdaptorTrampoline(MacroAssembler* masm) {
     EnterArgumentsAdaptorFrame(masm);
     // edi is used as a scratch register. It should be restored from the frame
     // when needed.
-    Generate_StackOverflowCheck(masm, ebx, ecx, edi, &stack_overflow);
+    Generate_StackOverflowCheck(masm, ebx, ecx, &stack_overflow);
 
     // Copy receiver and all expected arguments.
     const int offset = StandardFrameConstants::kCallerSPOffset;
@@ -2250,7 +2261,7 @@ void Builtins::Generate_ArgumentsAdaptorTrampoline(MacroAssembler* masm) {
     EnterArgumentsAdaptorFrame(masm);
     // edi is used as a scratch register. It should be restored from the frame
     // when needed.
-    Generate_StackOverflowCheck(masm, ebx, ecx, edi, &stack_overflow);
+    Generate_StackOverflowCheck(masm, ebx, ecx, &stack_overflow);
 
     // Remember expected arguments in ecx.
     __ mov(ecx, ebx);
