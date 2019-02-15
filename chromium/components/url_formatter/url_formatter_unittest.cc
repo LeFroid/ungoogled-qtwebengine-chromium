@@ -381,6 +381,9 @@ const IDNTestCase idn_cases[] = {
     // музей (museum in Russian) has characters without a Latin-look-alike.
     {"xn--e1adhj9a.com", L"\x043c\x0443\x0437\x0435\x0439.com", true},
 
+    // ѕсоԗе.com is Cyrillic with Latin lookalikes.
+    {"xn--e1ari3f61c.com", L"\x0455\x0441\x043e\x0517\x0435.com", false},
+
     // Combining Diacritic marks after a script other than Latin-Greek-Cyrillic
     {"xn--rsa2568fvxya.com", L"\xd55c\x0301\xae00.com", false},  // 한́글.com
     {"xn--rsa0336bjom.com", L"\x6f22\x0307\x5b57.com", false},   // 漢̇字.com
@@ -416,6 +419,35 @@ const IDNTestCase idn_cases[] = {
      L"\x0456\x0455\x04cf\x043a\x0440\x0445"
      L"123.com",
      false},
+
+    // 'o2.com', '28.com', '39.com', '43.com', '89.com', 'oo.com' and 'qq.com'
+    // are all explicitly added to the test domain list to aid testing of
+    // Latin-lookalikes that are numerics in other character sets and similar
+    // edge cases.
+    //
+    // Bengali:
+    {"xn--07be.com", L"\x09e6\x09e8.com", false},
+    {"xn--27be.com", L"\x09e8\x09ea.com", false},
+    {"xn--77ba.com", L"\x09ed\x09ed.com", false},
+    // Gurmukhi:
+    {"xn--qcce.com", L"\x0a68\x0a6a.com", false},
+    {"xn--occe.com", L"\x0a66\x0a68.com", false},
+    {"xn--rccd.com", L"\x0a6b\x0a69.com", false},
+    {"xn--pcca.com", L"\x0a67\x0a67.com", false},
+    // Telugu:
+    {"xn--drcb.com", L"\x0c69\x0c68.com", false},
+    // Devanagari:
+    {"xn--d4be.com", L"\x0966\x0968.com", false},
+    // Kannada:
+    {"xn--yucg.com", L"\x0ce6\x0ce9.com", false},
+    {"xn--yuco.com", L"\x0ce6\x0ced.com", false},
+    // Oriya:
+    {"xn--1jcf.com", L"\x0b6b\x0b68.com", false},
+    {"xn--zjca.com", L"\x0b66\x0b66.com", false},
+    // Gujarati:
+    {"xn--cgce.com", L"\x0ae6\x0ae8.com", false},
+    {"xn--fgci.com", L"\x0ae9\x0aed.com", false},
+    {"xn--dgca.com", L"\x0ae7\x0ae7.com", false},
 
     // wmhtb.com
     {"xn--l1acpvx.com", L"\x0448\x043c\x043d\x0442\x044c.com", false},
@@ -561,6 +593,11 @@ const IDNTestCase idn_cases[] = {
      L"12\u0993"
      L"4567890.com",
      false},
+    // 12ਤ4567890.com
+    {"xn--124567890-hfu.com",
+     L"12\u0a24"
+     L"4567890.com",
+     false},
     // 12ဒ4567890.com
     {"xn--124567890-6s6a.com",
      L"12\x1012"
@@ -596,6 +633,8 @@ const IDNTestCase idn_cases[] = {
      L"12345678\x0b68"
      L"0.com",
      false},
+    // 123456789ଠ.com
+    {"xn--http://123456789-v01b.com", L"http://123456789\x0b20.com", false},
     // 123456789ꓳ.com
     {"xn--123456789-tx75a.com", L"123456789\xa4f3.com", false},
 
