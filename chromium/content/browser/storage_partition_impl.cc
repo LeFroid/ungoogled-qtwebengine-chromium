@@ -589,7 +589,7 @@ std::unique_ptr<StoragePartitionImpl> StoragePartitionImpl::Create(
       partition_path, in_memory, context->GetSpecialStoragePolicy(),
       quota_manager_proxy.get());
 
-  partition->dom_storage_context_ = new DOMStorageContextWrapper(
+  partition->dom_storage_context_ = DOMStorageContextWrapper::Create(
       BrowserContext::GetConnectorFor(context),
       in_memory ? base::FilePath() : context->GetPath(),
       relative_partition_path, context->GetSpecialStoragePolicy());
@@ -848,6 +848,7 @@ void StoragePartitionImpl::OpenSessionStorage(
     blink::mojom::SessionStorageNamespaceRequest request) {
   int process_id = bindings_.dispatch_context();
   dom_storage_context_->OpenSessionStorage(process_id, namespace_id,
+                                           bindings_.GetBadMessageCallback(),
                                            std::move(request));
 }
 
