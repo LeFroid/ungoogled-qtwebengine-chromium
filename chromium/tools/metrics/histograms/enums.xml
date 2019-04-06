@@ -19464,6 +19464,7 @@ Called by update_net_error_codes.py.-->
   <int value="2513" label="V8RTCPeerConnection_AddTransceiver_Method"/>
   <int value="2514" label="V8RTCRtpTransceiver_Direction_AttributeGetter"/>
   <int value="2515" label="V8RTCRtpTransceiver_Direction_AttributeSetter"/>
+  <int value="2649" label="OpenerNavigationDownloadCrossOriginNoGesture"/>
 </enum>
 
 <enum name="FeedbackSource">
@@ -32115,6 +32116,17 @@ Called by update_use_counter_css.py.-->
   <int value="0" label="None">Did not scroll</int>
   <int value="1" label="Forward">Scrolled forward</int>
   <int value="2" label="Back">Scrolled back</int>
+</enum>
+
+<enum name="NavigationDownloadPolicy">
+  <int value="0" label="Allowed"/>
+  <int value="1" label="Disallowed (view-source)"/>
+  <int value="2" label="Disallowed (interstitial)"/>
+  <int value="3" label="Allowed (opener)"/>
+  <int value="4" label="Allowed (no gesture)"/>
+  <int value="5" label="Allowed (x-origin)"/>
+  <int value="6" label="Allowed (no gesture and x-origin)"/>
+  <int value="7" label="Disallowed (sandbox)"/>
 </enum>
 
 <enum name="NavigationInterceptResult">

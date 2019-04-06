@@ -101,7 +101,7 @@ class TransferCacheSerializeHelperImpl
   }
 
   void CreateEntryInternal(const cc::ClientTransferCacheEntry& entry) final {
-    size_t size = entry.SerializedSize();
+    uint32_t size = entry.SerializedSize();
     void* data = support_->MapTransferCacheEntry(size);
     if (!data)
       return;
@@ -128,18 +128,18 @@ class TransferCacheSerializeHelperImpl
 // Helper to copy PaintOps to the GPU service over the transfer buffer.
 class PaintOpSerializer {
  public:
-  PaintOpSerializer(size_t initial_size,
+  PaintOpSerializer(uint32_t initial_size,
                     RasterImplementation* ri,
                     cc::DecodeStashingImageProvider* stashing_image_provider,
                     cc::TransferCacheSerializeHelper* transfer_cache_helper,
                     ClientFontManager* font_manager)
       : ri_(ri),
-        buffer_(static_cast<char*>(ri_->MapRasterCHROMIUM(initial_size))),
         stashing_image_provider_(stashing_image_provider),
         transfer_cache_helper_(transfer_cache_helper),
-        font_manager_(font_manager),
-        free_bytes_(buffer_ ? initial_size : 0) {}
-
+        font_manager_(font_manager) {
+    buffer_ =
+        static_cast<char*>(ri_->MapRasterCHROMIUM(initial_size, &free_bytes_));
+  }
   ~PaintOpSerializer() {
     // Need to call SendSerializedData;
     DCHECK(!written_bytes_);
@@ -152,15 +152,15 @@ class PaintOpSerializer {
     size_t size = op->Serialize(buffer_ + written_bytes_, free_bytes_, options);
     if (!size) {
       SendSerializedData();
-      buffer_ = static_cast<char*>(ri_->MapRasterCHROMIUM(kBlockAlloc));
+      buffer_ =
+          static_cast<char*>(ri_->MapRasterCHROMIUM(kBlockAlloc, &free_bytes_));
       if (!buffer_) {
-        free_bytes_ = 0;
         return 0;
       }
-      free_bytes_ = kBlockAlloc;
       size = op->Serialize(buffer_ + written_bytes_, free_bytes_, options);
     }
     DCHECK_LE(size, free_bytes_);
+    DCHECK(base::CheckAdd<uint32_t>(written_bytes_, size).IsValid());
 
     written_bytes_ += size;
     free_bytes_ -= size;
@@ -193,8 +193,8 @@ class PaintOpSerializer {
   cc::TransferCacheSerializeHelper* const transfer_cache_helper_;
   ClientFontManager* font_manager_;
 
-  size_t written_bytes_ = 0;
-  size_t free_bytes_ = 0;
+  uint32_t written_bytes_ = 0;
+  uint32_t free_bytes_ = 0;
 
   DISALLOW_COPY_AND_ASSIGN(PaintOpSerializer);
 };
@@ -401,7 +401,7 @@ bool RasterImplementation::ThreadsafeDiscardableTextureIsDeletedForTracing(
   return false;
 }
 
-void* RasterImplementation::MapTransferCacheEntry(size_t serialized_size) {
+void* RasterImplementation::MapTransferCacheEntry(uint32_t serialized_size) {
   return transfer_cache_.MapEntry(mapped_memory_.get(), serialized_size);
 }
 
@@ -992,7 +992,9 @@ void RasterImplementation::DestroyImageCHROMIUM(GLuint image_id) {
   CheckGLError();
 }
 
-void* RasterImplementation::MapRasterCHROMIUM(GLsizeiptr size) {
+void* RasterImplementation::MapRasterCHROMIUM(uint32_t size,
+                                              uint32_t* size_allocated) {
+  *size_allocated = 0u;
   if (size < 0) {
     SetGLError(GL_INVALID_VALUE, "glMapRasterCHROMIUM", "negative size");
     return nullptr;
@@ -1007,10 +1009,11 @@ void* RasterImplementation::MapRasterCHROMIUM(GLsizeiptr size) {
     raster_mapped_buffer_ = base::nullopt;
     return nullptr;
   }
+  *size_allocated = raster_mapped_buffer_->size();
   return raster_mapped_buffer_->address();
 }
 
-void* RasterImplementation::MapFontBuffer(size_t size) {
+void* RasterImplementation::MapFontBuffer(uint32_t size) {
   if (size < 0) {
     SetGLError(GL_INVALID_VALUE, "glMapFontBufferCHROMIUM", "negative size");
     return nullptr;
@@ -1025,11 +1028,6 @@ void* RasterImplementation::MapFontBuffer(size_t size) {
                "mapped font buffer with no raster buffer");
     return nullptr;
   }
-  if (size > std::numeric_limits<uint32_t>::max()) {
-    SetGLError(GL_INVALID_OPERATION, "glMapFontBufferCHROMIUM",
-               "trying to map too large font buffer");
-    return nullptr;
-  }
 
   font_mapped_buffer_.emplace(size, helper_, mapped_memory_.get());
   if (!font_mapped_buffer_->valid()) {
@@ -1040,7 +1038,7 @@ void* RasterImplementation::MapFontBuffer(size_t size) {
   return font_mapped_buffer_->address();
 }
 
-void RasterImplementation::UnmapRasterCHROMIUM(GLsizeiptr written_size) {
+void RasterImplementation::UnmapRasterCHROMIUM(uint32_t written_size) {
   if (written_size < 0) {
     SetGLError(GL_INVALID_VALUE, "glUnmapRasterCHROMIUM",
                "negative written_size");
@@ -1058,9 +1056,9 @@ void RasterImplementation::UnmapRasterCHROMIUM(GLsizeiptr written_size) {
   }
   raster_mapped_buffer_->Shrink(written_size);
 
-  GLuint font_shm_id = 0u;
-  GLuint font_shm_offset = 0u;
-  GLsizeiptr font_shm_size = 0u;
+  uint32_t font_shm_id = 0u;
+  uint32_t font_shm_offset = 0u;
+  uint32_t font_shm_size = 0u;
   if (font_mapped_buffer_) {
     font_shm_id = font_mapped_buffer_->shm_id();
     font_shm_offset = font_mapped_buffer_->offset();
@@ -1187,8 +1185,8 @@ void RasterImplementation::RasterCHROMIUM(const cc::DisplayItemList* list,
 
   // TODO(enne): Tune these numbers
   // TODO(enne): Convert these types here and in transfer buffer to be size_t.
-  static constexpr unsigned int kMinAlloc = 16 * 1024;
-  unsigned int free_size = std::max(GetTransferBufferFreeSize(), kMinAlloc);
+  static constexpr uint32_t kMinAlloc = 16 * 1024;
+  uint32_t free_size = std::max(GetTransferBufferFreeSize(), kMinAlloc);
 
   // This section duplicates RasterSource::PlaybackToCanvas setup preamble.
   cc::PaintOpBufferSerializer::Preamble preamble;

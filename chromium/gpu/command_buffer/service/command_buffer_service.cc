@@ -22,15 +22,15 @@ namespace {
 
 class MemoryBufferBacking : public BufferBacking {
  public:
-  explicit MemoryBufferBacking(size_t size)
+  explicit MemoryBufferBacking(uint32_t size)
       : memory_(new char[size]), size_(size) {}
   ~MemoryBufferBacking() override = default;
   void* GetMemory() const override { return memory_.get(); }
-  size_t GetSize() const override { return size_; }
+  uint32_t GetSize() const override { return size_; }
 
  private:
   std::unique_ptr<char[]> memory_;
-  size_t size_;
+  uint32_t size_;
   DISALLOW_COPY_AND_ASSIGN(MemoryBufferBacking);
 };
 
@@ -124,7 +124,7 @@ void CommandBufferService::SetGetBuffer(int32_t transfer_buffer_id) {
   // This means ring_buffer_ can be NULL.
   ring_buffer_ = GetTransferBuffer(transfer_buffer_id);
   if (ring_buffer_) {
-    int32_t size = ring_buffer_->size();
+    uint32_t size = ring_buffer_->size();
     volatile void* memory = ring_buffer_->memory();
     // check proper alignments.
     DCHECK_EQ(
@@ -163,7 +163,7 @@ void CommandBufferService::SetReleaseCount(uint64_t release_count) {
   UpdateState();
 }
 
-scoped_refptr<Buffer> CommandBufferService::CreateTransferBuffer(size_t size,
+scoped_refptr<Buffer> CommandBufferService::CreateTransferBuffer(uint32_t size,
                                                                  int32_t* id) {
   static int32_t next_id = 1;
   *id = next_id++;
@@ -189,7 +189,7 @@ bool CommandBufferService::RegisterTransferBuffer(
 }
 
 scoped_refptr<Buffer> CommandBufferService::CreateTransferBufferWithId(
-    size_t size,
+    uint32_t size,
     int32_t id) {
   if (!RegisterTransferBuffer(id,
                               std::make_unique<MemoryBufferBacking>(size))) {

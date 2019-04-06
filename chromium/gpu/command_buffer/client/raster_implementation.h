@@ -150,7 +150,7 @@ class RASTER_EXPORT RasterImplementation : public RasterInterface,
       uint32_t texture_id) override;
   bool ThreadsafeDiscardableTextureIsDeletedForTracing(
       uint32_t texture_id) override;
-  void* MapTransferCacheEntry(size_t serialized_size) override;
+  void* MapTransferCacheEntry(uint32_t serialized_size) override;
   void UnmapAndCreateTransferCacheEntry(uint32_t type, uint32_t id) override;
   bool ThreadsafeLockTransferCacheEntry(uint32_t type, uint32_t id) override;
   void UnlockTransferCacheEntries(
@@ -163,11 +163,13 @@ class RASTER_EXPORT RasterImplementation : public RasterInterface,
                                  GLenum pname,
                                  GLuint64* params);
 
-  void* MapRasterCHROMIUM(GLsizeiptr size);
-  void UnmapRasterCHROMIUM(GLsizeiptr written_size);
+  // Try to map a transfer buffer of |size|.  Will return a pointer to a
+  // buffer of |size_allocated|, which will be equal to or lesser than |size|.
+  void* MapRasterCHROMIUM(uint32_t size, uint32_t* size_allocated);
+  void UnmapRasterCHROMIUM(uint32_t written_size);
 
   // ClientFontManager::Client implementation.
-  void* MapFontBuffer(size_t size) override;
+  void* MapFontBuffer(uint32_t size) override;
 
  private:
   friend class RasterImplementationTest;

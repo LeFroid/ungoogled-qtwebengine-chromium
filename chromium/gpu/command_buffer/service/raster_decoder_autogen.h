@@ -20,7 +20,7 @@ error::Error RasterDecoderImpl::HandleDeleteTexturesImmediate(
           cmd_data);
   GLsizei n = static_cast<GLsizei>(c.n);
   uint32_t data_size;
-  if (!gles2::SafeMultiplyUint32(n, sizeof(GLuint), &data_size)) {
+  if (!base::CheckMul(n, sizeof(GLuint)).AssignIfValid(&data_size)) {
     return error::kOutOfBounds;
   }
   volatile const GLuint* textures =
@@ -102,7 +102,7 @@ error::Error RasterDecoderImpl::HandleGenQueriesEXTImmediate(
           cmd_data);
   GLsizei n = static_cast<GLsizei>(c.n);
   uint32_t data_size;
-  if (!gles2::SafeMultiplyUint32(n, sizeof(GLuint), &data_size)) {
+  if (!base::CheckMul(n, sizeof(GLuint)).AssignIfValid(&data_size)) {
     return error::kOutOfBounds;
   }
   volatile GLuint* queries = gles2::GetImmediateDataAs<volatile GLuint*>(
@@ -128,7 +128,7 @@ error::Error RasterDecoderImpl::HandleDeleteQueriesEXTImmediate(
           cmd_data);
   GLsizei n = static_cast<GLsizei>(c.n);
   uint32_t data_size;
-  if (!gles2::SafeMultiplyUint32(n, sizeof(GLuint), &data_size)) {
+  if (!base::CheckMul(n, sizeof(GLuint)).AssignIfValid(&data_size)) {
     return error::kOutOfBounds;
   }
   volatile const GLuint* queries =
@@ -241,20 +241,10 @@ error::Error RasterDecoderImpl::HandleRasterCHROMIUM(
 
   GLuint raster_shm_id = static_cast<GLuint>(c.raster_shm_id);
   GLuint raster_shm_offset = static_cast<GLuint>(c.raster_shm_offset);
-  GLsizeiptr raster_shm_size = static_cast<GLsizeiptr>(c.raster_shm_size);
+  GLuint raster_shm_size = static_cast<GLuint>(c.raster_shm_size);
   GLuint font_shm_id = static_cast<GLuint>(c.font_shm_id);
   GLuint font_shm_offset = static_cast<GLuint>(c.font_shm_offset);
-  GLsizeiptr font_shm_size = static_cast<GLsizeiptr>(c.font_shm_size);
-  if (raster_shm_size < 0) {
-    LOCAL_SET_GL_ERROR(GL_INVALID_VALUE, "glRasterCHROMIUM",
-                       "raster_shm_size < 0");
-    return error::kNoError;
-  }
-  if (font_shm_size < 0) {
-    LOCAL_SET_GL_ERROR(GL_INVALID_VALUE, "glRasterCHROMIUM",
-                       "font_shm_size < 0");
-    return error::kNoError;
-  }
+  GLuint font_shm_size = static_cast<GLuint>(c.font_shm_size);
   DoRasterCHROMIUM(raster_shm_id, raster_shm_offset, raster_shm_size,
                    font_shm_id, font_shm_offset, font_shm_size);
   return error::kNoError;

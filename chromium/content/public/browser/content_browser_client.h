@@ -48,6 +48,7 @@
 #include "storage/browser/quota/quota_manager.h"
 #include "third_party/blink/public/common/associated_interfaces/associated_interface_registry.h"
 #include "third_party/blink/public/mojom/page/page_visibility_state.mojom.h"
+#include "third_party/blink/public/platform/web_feature.mojom.h"
 #include "third_party/blink/public/web/window_features.mojom.h"
 #include "ui/base/page_transition_types.h"
 #include "ui/base/window_open_disposition.h"
@@ -1284,6 +1285,12 @@ class CONTENT_EXPORT ContentBrowserClient {
   // default implementation provides nullptr OverlayWindow.
   virtual std::unique_ptr<OverlayWindow> CreateWindowForPictureInPicture(
       PictureInPictureWindowController* controller);
+
+  // Browser-side API to log blink UseCounters for events that don't occur in
+  // the renderer.
+  virtual void LogWebFeatureForCurrentPage(
+      content::RenderFrameHost* render_frame_host,
+      blink::mojom::WebFeature feature) {}
 };
 
 }  // namespace content

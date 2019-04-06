@@ -657,10 +657,10 @@ class RasterDecoderImpl final : public RasterDecoder,
                              const volatile GLbyte* key);
   void DoRasterCHROMIUM(GLuint raster_shm_id,
                         GLuint raster_shm_offset,
-                        GLsizeiptr raster_shm_size,
+                        GLuint raster_shm_size,
                         GLuint font_shm_id,
                         GLuint font_shm_offset,
-                        GLsizeiptr font_shm_size);
+                        GLuint font_shm_size);
   void DoEndRasterCHROMIUM();
   void DoCreateTransferCacheEntryINTERNAL(GLuint entry_type,
                                           GLuint entry_id,
@@ -2568,7 +2568,7 @@ void RasterDecoderImpl::DoTexStorage2D(GLuint client_id,
   // For testing only. Allows us to stress the ability to respond to OOM errors.
   uint32_t num_pixels;
   if (workarounds().simulate_out_of_memory_on_large_textures &&
-      (!gles2::SafeMultiplyUint32(width, height, &num_pixels) ||
+      (!base::CheckMul(width, height).AssignIfValid(&num_pixels) ||
        (num_pixels >= 4096 * 4096))) {
     LOCAL_SET_GL_ERROR(GL_OUT_OF_MEMORY, "glTexStorage2D",
                        "synthetic out of memory");
@@ -2695,8 +2695,8 @@ void RasterDecoderImpl::DoCopySubTexture(GLuint source_id,
     // See: https://crbug.com/586476
     int32_t max_x;
     int32_t max_y;
-    if (!gles2::SafeAddInt32(x, width, &max_x) ||
-        !gles2::SafeAddInt32(y, height, &max_y) || x < 0 || y < 0 ||
+    if (!base::CheckAdd(x, width).AssignIfValid(&max_x) ||
+        !base::CheckAdd(y, height).AssignIfValid(&max_y) || x < 0 || y < 0 ||
         max_x > source_width || max_y > source_height) {
       LOCAL_SET_GL_ERROR(GL_INVALID_VALUE, "glCopySubTexture",
                          "source texture bad dimensions");
@@ -3103,10 +3103,10 @@ scoped_refptr<Buffer> RasterDecoderImpl::GetShmBuffer(uint32_t shm_id) {
 
 void RasterDecoderImpl::DoRasterCHROMIUM(GLuint raster_shm_id,
                                          GLuint raster_shm_offset,
-                                         GLsizeiptr raster_shm_size,
+                                         GLuint raster_shm_size,
                                          GLuint font_shm_id,
                                          GLuint font_shm_offset,
-                                         GLsizeiptr font_shm_size) {
+                                         GLuint font_shm_size) {
   TRACE_EVENT1("gpu", "RasterDecoderImpl::DoRasterCHROMIUM", "raster_id",
                ++raster_chromium_id_);
 

@@ -491,8 +491,10 @@ WebURLRequest CreateURLRequestForNavigation(
 }
 
 CommonNavigationParams MakeCommonNavigationParams(
+    const WebSecurityOrigin& current_origin,
     const blink::WebLocalFrameClient::NavigationPolicyInfo& info,
-    int load_flags) {
+    int load_flags,
+    bool prevent_sandboxed_download) {
   Referrer referrer(
       GURL(info.url_request.HttpHeaderField(WebString::FromUTF8("Referer"))
                .Latin1()),
@@ -528,9 +530,14 @@ CommonNavigationParams MakeCommonNavigationParams(
   const RequestExtraData* extra_data =
       static_cast<RequestExtraData*>(info.url_request.GetExtraData());
   DCHECK(extra_data);
+  NavigationDownloadPolicy download_policy =
+      prevent_sandboxed_download
+          ? NavigationDownloadPolicy::kDisallowSandbox
+          : RenderFrameImpl::GetOpenerDownloadPolicy(
+                info.is_opener_navigation, info.url_request, current_origin);
   return CommonNavigationParams(
       info.url_request.Url(), referrer, extra_data->transition_type(),
-      navigation_type, true, info.replaces_current_history_item, GURL(), GURL(),
+      navigation_type, download_policy, info.replaces_current_history_item, GURL(), GURL(),
       static_cast<PreviewsState>(info.url_request.GetPreviewsState()),
       base::TimeTicks::Now(), info.url_request.HttpMethod().Latin1(),
       GetRequestBodyForWebURLRequest(info.url_request), source_location,
@@ -1405,6 +1412,24 @@ blink::WebFrame* RenderFrameImpl::ResolveOpener(int opener_frame_routing_id) {
     return opener_frame->GetWebFrame();
 
   return nullptr;
+}
+
+// static
+NavigationDownloadPolicy RenderFrameImpl::GetOpenerDownloadPolicy(
+    bool is_opener_navigation,
+    const blink::WebURLRequest& request,
+    const WebSecurityOrigin& current_origin) {
+  if (!is_opener_navigation)
+    return NavigationDownloadPolicy::kAllow;
+  bool gesture = request.HasUserGesture();
+  bool cross_origin = !request.RequestorOrigin().CanAccess(current_origin);
+  if (!gesture && cross_origin)
+    return NavigationDownloadPolicy::kAllowOpenerCrossOriginNoGesture;
+  if (!gesture)
+    return NavigationDownloadPolicy::kAllowOpenerNoGesture;
+  if (cross_origin)
+    return NavigationDownloadPolicy::kAllowOpenerCrossOrigin;
+  return NavigationDownloadPolicy::kAllowOpener;
 }
 
 blink::WebURL RenderFrameImpl::OverrideFlashEmbedWithHTML(
@@ -4883,8 +4908,8 @@ void RenderFrameImpl::WillSendRequest(blink::WebURLRequest& request) {
   extra_data->set_requested_with(requested_with);
   extra_data->set_render_frame_id(routing_id_);
   extra_data->set_is_main_frame(!parent);
-  extra_data->set_allow_download(
-      navigation_state->common_params().allow_download);
+  extra_data->set_allow_download(IsNavigationDownloadAllowed(
+      navigation_state->common_params().download_policy));
   extra_data->set_transition_type(transition_type);
   extra_data->set_navigation_response_override(std::move(response_override));
   bool is_for_no_state_prefetch =
@@ -6573,6 +6598,9 @@ void RenderFrameImpl::OpenURL(const NavigationPolicyInfo& info,
 
   if (is_history_navigation_in_new_child)
     params.is_history_navigation_in_new_child = true;
+  params.download_policy = RenderFrameImpl::GetOpenerDownloadPolicy(
+      info.is_opener_navigation, info.url_request,
+      frame_->GetSecurityOrigin());
 
   Send(new FrameHostMsg_OpenURL(routing_id_, params));
 }
@@ -6927,7 +6955,12 @@ void RenderFrameImpl::BeginNavigation(const NavigationPolicyInfo& info) {
     BindNavigationClient(mojo::MakeRequest(&navigation_client_info));
     navigation_state->set_navigation_client(std::move(navigation_client_impl_));
   }
-  GetFrameHost()->BeginNavigation(MakeCommonNavigationParams(info, load_flags),
+  bool prevent_sandboxed_download =
+      (frame_->EffectiveSandboxFlags() & blink::WebSandboxFlags::kDownloads) !=
+          blink::WebSandboxFlags::kNone &&
+      info.blocking_downloads_in_sandbox_enabled;
+
+  GetFrameHost()->BeginNavigation(MakeCommonNavigationParams(frame_->GetSecurityOrigin(), info, load_flags, prevent_sandboxed_download),
                                   std::move(begin_navigation_params),
                                   std::move(blob_url_token),
                                   std::move(navigation_client_info));

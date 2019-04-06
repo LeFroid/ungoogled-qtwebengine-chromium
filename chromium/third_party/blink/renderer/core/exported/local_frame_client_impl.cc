@@ -518,6 +518,8 @@ NavigationPolicy LocalFrameClientImpl::DecidePolicyForNavigation(
       web_document_loader ? web_document_loader->GetExtraData() : nullptr;
   navigation_info.replaces_current_history_item = replaces_current_history_item;
   navigation_info.is_client_redirect = is_client_redirect;
+  navigation_info.blocking_downloads_in_sandbox_enabled =
+      RuntimeEnabledFeatures::BlockingDownloadsInSandboxEnabled();
   navigation_info.triggering_event_info = triggering_event_info;
   navigation_info.should_check_main_world_content_security_policy =
       should_check_main_world_content_security_policy ==
@@ -548,6 +550,11 @@ NavigationPolicy LocalFrameClientImpl::DecidePolicyForNavigation(
 
   if (form)
     navigation_info.form = WebFormElement(form);
+
+  navigation_info.is_opener_navigation =
+      origin_document && origin_document->GetFrame() &&
+      origin_document->GetFrame()->Client()->Opener() ==
+          ToCoreFrame(web_frame_);
 
   // The frame has navigated either by itself or by the action of the
   // |origin_document| when it is defined. |source_location| represents the
