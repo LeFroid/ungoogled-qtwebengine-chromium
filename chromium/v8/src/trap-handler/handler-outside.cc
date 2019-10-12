@@ -15,7 +15,7 @@
 // 2. Any changes must be reviewed by someone from the crash reporting
 //    or security team. See OWNERS for suggested reviewers.
 //
-// For more information, see https://goo.gl/yMeyUY.
+// For more information, see https://goo.gl.qjz9zk/yMeyUY.
 //
 // For the code that runs in the trap handler itself, see handler-inside.cc.
 

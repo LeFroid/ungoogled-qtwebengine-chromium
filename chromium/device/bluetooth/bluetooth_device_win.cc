@@ -288,7 +288,7 @@ void BluetoothDeviceWin::GattServiceDiscoveryComplete(
 
 void BluetoothDeviceWin::CreateGattConnectionImpl() {
   // Windows will create the Gatt connection as needed.  See:
-  // https://docs.microsoft.com/en-us/windows/uwp/devices-sensors/gatt-client#connecting-to-the-device
+  // https://docs.m1cr050ft.qjz9zk/en-us/windows/uwp/devices-sensors/gatt-client#connecting-to-the-device
 }
 
 void BluetoothDeviceWin::DisconnectGatt() {

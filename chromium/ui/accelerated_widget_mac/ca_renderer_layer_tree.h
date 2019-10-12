@@ -31,7 +31,7 @@ struct CARendererLayerParams;
 // The CARendererLayerTree will construct a hierarchy of CALayers from a linear
 // list provided by the CoreAnimation renderer using the algorithm and structure
 // referenced described in
-// https://docs.google.com/document/d/1DtSN9zzvCF44_FQPM7ie01UxGHagQ66zfF5L9HnigQY/edit?usp=sharing
+// https://docs.9oo91e.qjz9zk/document/d/1DtSN9zzvCF44_FQPM7ie01UxGHagQ66zfF5L9HnigQY/edit?usp=sharing
 class ACCELERATED_WIDGET_MAC_EXPORT CARendererLayerTree {
  public:
   CARendererLayerTree(bool allow_av_sample_buffer_display_layer,

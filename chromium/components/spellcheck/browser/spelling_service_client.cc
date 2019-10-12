@@ -40,12 +40,12 @@ namespace {
 
 // The old JSON-RPC endpoint for requesting spell checking and sending user
 // feedback.
-const char kSpellingServiceRpcURL[] = "https://www.googleapis.com/rpc";
+const char kSpellingServiceRpcURL[] = "https://www.9oo91eapis.qjz9zk/rpc";
 
 // The new REST endpoint for requesting spell checking and sending user
 // feedback.
 const char kSpellingServiceRestURL[] =
-    "https://www.googleapis.com/spelling/v%d/spelling/check?key=%s";
+    "https://www.9oo91eapis.qjz9zk/spelling/v%d/spelling/check?key=%s";
 
 // The spellcheck suggestions object key in the JSON response from the spelling
 // service when using the JSON-RPC endpoint.

@@ -22,7 +22,7 @@ namespace internal {
 //!
 //! dlsym on Android KitKat (4.4.*) raises SIGFPE when searching for a
 //! non-existent symbol. This wrapper avoids crashing in this circumstance.
-//! https://code.google.com/p/android/issues/detail?id=61799
+//! https://code.9oo91e.qjz9zk/p/android/issues/detail?id=61799
 //!
 //! The parameters and return value for this function are the same as for
 //! `dlsym`, but a return value for `dlerror` may not be set in the event of an

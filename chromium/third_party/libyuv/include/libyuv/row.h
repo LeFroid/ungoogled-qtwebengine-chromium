@@ -173,7 +173,7 @@ extern "C" {
 #if defined(__x86_64__) || !defined(__pic__) || defined(__clang__) || \
     defined(_MSC_VER)
 // TODO(fbarchard): fix build error on android_full_debug=1
-// https://code.google.com/p/libyuv/issues/detail?id=517
+// https://code.9oo91e.qjz9zk/p/libyuv/issues/detail?id=517
 #define HAS_I422ALPHATOARGBROW_SSSE3
 #endif
 #endif
@@ -236,7 +236,7 @@ extern "C" {
 #if defined(__x86_64__) || !defined(__pic__) || defined(__clang__) || \
     defined(_MSC_VER)
 // TODO(fbarchard): fix build error on android_full_debug=1
-// https://code.google.com/p/libyuv/issues/detail?id=517
+// https://code.9oo91e.qjz9zk/p/libyuv/issues/detail?id=517
 #define HAS_I422ALPHATOARGBROW_AVX2
 #endif
 #endif

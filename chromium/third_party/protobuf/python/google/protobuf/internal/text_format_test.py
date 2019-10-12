@@ -3,7 +3,7 @@
 #
 # Protocol Buffers - Google's data interchange format
 # Copyright 2008 Google Inc.  All rights reserved.
-# https://developers.google.com/protocol-buffers/
+# https://developers.9oo91e.qjz9zk/protocol-buffers/
 #
 # Redistribution and use in source and binary forms, with or without
 # modification, are permitted provided that the following conditions are
@@ -33,7 +33,7 @@
 
 """Test for google.protobuf.text_format."""
 
-__author__ = 'kenton@google.com (Kenton Varda)'
+__author__ = 'kenton@9oo91e.qjz9zk (Kenton Varda)'
 
 
 import math
@@ -763,7 +763,7 @@ class Proto2Tests(TextFormatBase):
   def testExtensionInsideAnyMessage(self):
     message = test_extend_any.TestAny()
     text = ('value {\n'
-            '  [type.googleapis.com/google.protobuf.internal.TestAny] {\n'
+            '  [type.9oo91eapis.qjz9zk/google.protobuf.internal.TestAny] {\n'
             '    [google.protobuf.internal.TestAnyExtension1.extension1] {\n'
             '      i: 10\n'
             '    }\n'
@@ -1121,7 +1121,7 @@ class Proto3Tests(unittest.TestCase):
         text_format.MessageToString(message,
                                     descriptor_pool=descriptor_pool.Default()),
         'any_value {\n'
-        '  [type.googleapis.com/protobuf_unittest.OneString] {\n'
+        '  [type.9oo91eapis.qjz9zk/protobuf_unittest.OneString] {\n'
         '    data: "string"\n'
         '  }\n'
         '}\n')
@@ -1144,12 +1144,12 @@ class Proto3Tests(unittest.TestCase):
     self.assertEqual(
         text_format.MessageToString(message),
         'repeated_any_value {\n'
-        '  [type.googleapis.com/protobuf_unittest.OneString] {\n'
+        '  [type.9oo91eapis.qjz9zk/protobuf_unittest.OneString] {\n'
         '    data: "string0"\n'
         '  }\n'
         '}\n'
         'repeated_any_value {\n'
-        '  [type.googleapis.com/protobuf_unittest.OneString] {\n'
+        '  [type.9oo91eapis.qjz9zk/protobuf_unittest.OneString] {\n'
         '    data: "string1"\n'
         '  }\n'
         '}\n')
@@ -1163,7 +1163,7 @@ class Proto3Tests(unittest.TestCase):
     self.assertEqual(
         text_format.MessageToString(message, descriptor_pool=empty_pool),
         'any_value {\n'
-        '  type_url: "type.googleapis.com/protobuf_unittest.OneString"\n'
+        '  type_url: "type.9oo91eapis.qjz9zk/protobuf_unittest.OneString"\n'
         '  value: "\\n\\006string"\n'
         '}\n')
 
@@ -1176,7 +1176,7 @@ class Proto3Tests(unittest.TestCase):
         text_format.MessageToString(message,
                                     pointy_brackets=True),
         'any_value <\n'
-        '  [type.googleapis.com/protobuf_unittest.OneString] <\n'
+        '  [type.9oo91eapis.qjz9zk/protobuf_unittest.OneString] <\n'
         '    data: "string"\n'
         '  >\n'
         '>\n')
@@ -1190,7 +1190,7 @@ class Proto3Tests(unittest.TestCase):
         text_format.MessageToString(message,
                                     as_one_line=True),
         'any_value {'
-        ' [type.googleapis.com/protobuf_unittest.OneString]'
+        ' [type.9oo91eapis.qjz9zk/protobuf_unittest.OneString]'
         ' { data: "string" } '
         '}')
 
@@ -1205,7 +1205,7 @@ class Proto3Tests(unittest.TestCase):
                                     pointy_brackets=True,
                                     descriptor_pool=descriptor_pool.Default()),
         'any_value <'
-        ' [type.googleapis.com/protobuf_unittest.OneString]'
+        ' [type.9oo91eapis.qjz9zk/protobuf_unittest.OneString]'
         ' < data: "string" > '
         '>')
 
@@ -1220,7 +1220,7 @@ class Proto3Tests(unittest.TestCase):
   def testMergeExpandedAny(self):
     message = any_test_pb2.TestAny()
     text = ('any_value {\n'
-            '  [type.googleapis.com/protobuf_unittest.OneString] {\n'
+            '  [type.9oo91eapis.qjz9zk/protobuf_unittest.OneString] {\n'
             '    data: "string"\n'
             '  }\n'
             '}\n')
@@ -1237,12 +1237,12 @@ class Proto3Tests(unittest.TestCase):
   def testMergeExpandedAnyRepeated(self):
     message = any_test_pb2.TestAny()
     text = ('repeated_any_value {\n'
-            '  [type.googleapis.com/protobuf_unittest.OneString] {\n'
+            '  [type.9oo91eapis.qjz9zk/protobuf_unittest.OneString] {\n'
             '    data: "string0"\n'
             '  }\n'
             '}\n'
             'repeated_any_value {\n'
-            '  [type.googleapis.com/protobuf_unittest.OneString] {\n'
+            '  [type.9oo91eapis.qjz9zk/protobuf_unittest.OneString] {\n'
             '    data: "string1"\n'
             '  }\n'
             '}\n')
@@ -1256,7 +1256,7 @@ class Proto3Tests(unittest.TestCase):
   def testMergeExpandedAnyPointyBrackets(self):
     message = any_test_pb2.TestAny()
     text = ('any_value {\n'
-            '  [type.googleapis.com/protobuf_unittest.OneString] <\n'
+            '  [type.9oo91eapis.qjz9zk/protobuf_unittest.OneString] <\n'
             '    data: "string"\n'
             '  >\n'
             '}\n')
@@ -1280,7 +1280,7 @@ class Proto3Tests(unittest.TestCase):
   def testMergeExpandedAnyDescriptorPoolMissingType(self):
     message = any_test_pb2.TestAny()
     text = ('any_value {\n'
-            '  [type.googleapis.com/protobuf_unittest.OneString] {\n'
+            '  [type.9oo91eapis.qjz9zk/protobuf_unittest.OneString] {\n'
             '    data: "string"\n'
             '  }\n'
             '}\n')
@@ -1293,7 +1293,7 @@ class Proto3Tests(unittest.TestCase):
 
   def testMergeUnexpandedAny(self):
     text = ('any_value {\n'
-            '  type_url: "type.googleapis.com/protobuf_unittest.OneString"\n'
+            '  type_url: "type.9oo91eapis.qjz9zk/protobuf_unittest.OneString"\n'
             '  value: "\\n\\006string"\n'
             '}\n')
     message = any_test_pb2.TestAny()
@@ -1305,7 +1305,7 @@ class Proto3Tests(unittest.TestCase):
   def testMergeMissingAnyEndToken(self):
     message = any_test_pb2.TestAny()
     text = ('any_value {\n'
-            '  [type.googleapis.com/protobuf_unittest.OneString] {\n'
+            '  [type.9oo91eapis.qjz9zk/protobuf_unittest.OneString] {\n'
             '    data: "string"\n')
     with self.assertRaises(text_format.ParseError) as e:
       text_format.Merge(text, message)

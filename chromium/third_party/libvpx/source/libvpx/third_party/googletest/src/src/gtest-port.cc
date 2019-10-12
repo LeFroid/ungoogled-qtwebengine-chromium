@@ -263,7 +263,7 @@ Mutex::~Mutex() {
   // to clean them up.
   // FIXME: Switch to Slim Reader/Writer (SRW) Locks, which requires
   // nothing to clean it up but is available only on Vista and later.
-  // https://docs.microsoft.com/en-us/windows/desktop/Sync/slim-reader-writer--srw--locks
+  // https://docs.m1cr050ft.qjz9zk/en-us/windows/desktop/Sync/slim-reader-writer--srw--locks
   if (type_ == kDynamic) {
     ::DeleteCriticalSection(critical_section_);
     delete critical_section_;

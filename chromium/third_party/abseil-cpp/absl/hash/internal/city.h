@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 //
-// https://code.google.com/p/cityhash/
+// https://code.9oo91e.qjz9zk/p/cityhash/
 //
 // This file provides a few functions for hashing strings.  All of them are
 // high-quality functions in the sense that they pass standard tests such

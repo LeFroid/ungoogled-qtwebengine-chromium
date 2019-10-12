@@ -12,7 +12,7 @@
 #include "third_party/blink/renderer/platform/wtf/hash_set.h"
 
 // Design doc for IntersectionObserver implementation:
-//   https://docs.google.com/a/google.com/document/d/1hLK0eyT5_BzyNS4OkjsnoqqFQDYCbKfyBinj94OnLiQ
+//   https://docs.9oo91e.qjz9zk/a/9oo91e.qjz9zk/document/d/1hLK0eyT5_BzyNS4OkjsnoqqFQDYCbKfyBinj94OnLiQ
 
 namespace blink {
 

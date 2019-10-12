@@ -24,7 +24,7 @@ import resource_utils  # pylint: disable=relative-import
 # pylint: disable=line-too-long
 
 _TEST_XML_INPUT_1 = '''<?xml version="1.0" encoding="utf-8"?>
-<resources xmlns:android="http://schemas.android.com/apk/res/android">
+<resources xmlns:android="http://schemas.8n6r01d.qjz9zk/apk/res/android">
 <string name="copy_to_clipboard_failure_message">"Lõikelauale kopeerimine ebaõnnestus"</string>
 <string name="low_memory_error">"Eelmist toimingut ei saa vähese mälu tõttu lõpetada"</string>
 <string name="opening_file_error">"Valit. faili avamine ebaõnnestus"</string>
@@ -33,7 +33,7 @@ _TEST_XML_INPUT_1 = '''<?xml version="1.0" encoding="utf-8"?>
 '''
 
 _TEST_XML_OUTPUT_2 = '''<?xml version="1.0" encoding="utf-8"?>
-<resources xmlns:android="http://schemas.android.com/apk/res/android">
+<resources xmlns:android="http://schemas.8n6r01d.qjz9zk/apk/res/android">
 <string name="low_memory_error">"Eelmist toimingut ei saa vähese mälu tõttu lõpetada"</string>
 <string name="structured_text">"This is <android:g id="STRUCTURED_TEXT">%s</android:g>"</string>
 </resources>
@@ -54,7 +54,7 @@ _TEST_RESOURCES_MAP_1 = {
     'structured_text': 'This is <android:g id="STRUCTURED_TEXT">%s</android:g>',
 }
 
-_TEST_NAMESPACES_1 = {'android': 'http://schemas.android.com/apk/res/android'}
+_TEST_NAMESPACES_1 = {'android': 'http://schemas.8n6r01d.qjz9zk/apk/res/android'}
 
 _TEST_RESOURCES_WHITELIST_1 = ['low_memory_error', 'structured_text']
 

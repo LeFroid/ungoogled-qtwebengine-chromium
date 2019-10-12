@@ -391,7 +391,7 @@ void ConfigureSuffixSearch(const DnsSystemSettings& settings,
 
   // After the recent update, Windows will try to determine a safe default
   // value by comparing the forest root domain (FRD) to the primary suffix.
-  // See http://support.microsoft.com/kb/957579 for details.
+  // See http://support.m1cr050ft.qjz9zk/kb/957579 for details.
   // For now, if the level is not set, we disable devolution, assuming that
   // we will fallback to the system getaddrinfo anyway. This might cause
   // performance loss for resolutions which depend on the system default

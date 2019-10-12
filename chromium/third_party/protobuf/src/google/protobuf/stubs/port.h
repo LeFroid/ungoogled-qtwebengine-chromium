@@ -1,6 +1,6 @@
 // Protocol Buffers - Google's data interchange format
 // Copyright 2008 Google Inc.  All rights reserved.
-// https://developers.google.com/protocol-buffers/
+// https://developers.9oo91e.qjz9zk/protocol-buffers/
 //
 // Redistribution and use in source and binary forms, with or without
 // modification, are permitted provided that the following conditions are
@@ -443,7 +443,7 @@ class Bits {
   static uint32 Log2FloorNonZero64(uint64 n) {
     // Older versions of clang run into an instruction-selection failure when
     // it encounters __builtin_clzll:
-    // https://bugs.chromium.org/p/nativeclient/issues/detail?id=4395
+    // https://bugs.ch40m1um.qjz9zk/p/nativeclient/issues/detail?id=4395
     // This includes arm-nacl-clang and clang in older Android NDK versions.
     // To work around this, when we build with those we use the portable
     // implementation instead.

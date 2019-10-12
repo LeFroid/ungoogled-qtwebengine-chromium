@@ -635,7 +635,7 @@ TEST_F(RtcpSenderTest, SendTmmbn) {
 // to make much sense to send an empty TMMBN, since there is no place
 // to put an actual limit here. It's just information that no limit
 // is set, which is kind of the starting assumption.
-// See http://code.google.com/p/webrtc/issues/detail?id=468 for one
+// See http://code.9oo91e.qjz9zk/p/webrtc/issues/detail?id=468 for one
 // situation where this caused confusion.
 TEST_F(RtcpSenderTest, SendsTmmbnIfSetAndEmpty) {
   rtcp_sender_->SetRTCPStatus(RtcpMode::kCompound);

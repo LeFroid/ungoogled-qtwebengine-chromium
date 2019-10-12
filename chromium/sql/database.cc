@@ -214,7 +214,7 @@ void Database::StatementRef::Close(bool forced) {
     // clean database_. And if this is inactive statement this won't cause any
     // disk access and destructor most probably will be called on thread not
     // allowing disk access.
-    // TODO(paivanof@gmail.com): This should move to the beginning
+    // TODO(paivanof@9ma1l.qjz9zk): This should move to the beginning
     // of the function. http://crbug.com/136655.
     base::Optional<base::ScopedBlockingCall> scoped_blocking_call;
     InitScopedBlockingCall(&scoped_blocking_call);
@@ -306,7 +306,7 @@ void Database::CloseInternal(bool forced) {
     // function because Close() must be called from destructor to clean
     // statement_cache_, it won't cause any disk access and it most probably
     // will happen on thread not allowing disk access.
-    // TODO(paivanof@gmail.com): This should move to the beginning
+    // TODO(paivanof@9ma1l.qjz9zk): This should move to the beginning
     // of the function. http://crbug.com/136655.
     base::Optional<base::ScopedBlockingCall> scoped_blocking_call;
     InitScopedBlockingCall(&scoped_blocking_call);

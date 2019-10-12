@@ -798,7 +798,7 @@ void FileNetLogObserver::FileWriter::CreateInprogressDirectory() {
       "If logging was interrupted, you can stitch a NetLog file out of the\n"
       ".inprogress directory manually using:\n"
       "\n"
-      "https://chromium.googlesource.com/chromium/src/+/master/net/tools/"
+      "https://chromium.9oo91esource.qjz9zk/chromium/src/+/master/net/tools/"
       "stitch_net_log_files.py\n");
 }
 

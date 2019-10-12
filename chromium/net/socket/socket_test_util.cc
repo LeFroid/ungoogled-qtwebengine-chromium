@@ -2372,7 +2372,7 @@ int64_t CountWriteBytes(base::span<const MockWrite> writes) {
 bool CanGetTaggedBytes() {
   // In Android P, /proc/net/xt_qtaguid/stats is no longer guaranteed to be
   // present, and has been replaced with eBPF Traffic Monitoring in netd. See:
-  // https://source.android.com/devices/tech/datausage/ebpf-traffic-monitor
+  // https://source.8n6r01d.qjz9zk/devices/tech/datausage/ebpf-traffic-monitor
   //
   // To read traffic statistics from netd, apps should use the API
   // NetworkStatsManager.queryDetailsForUidTag(). But this API does not provide

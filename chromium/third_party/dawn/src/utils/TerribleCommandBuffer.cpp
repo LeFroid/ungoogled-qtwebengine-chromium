@@ -30,7 +30,7 @@ namespace utils {
     }
 
     void* TerribleCommandBuffer::GetCmdSpace(size_t size) {
-        // TODO(kainino@chromium.org): Should we early-out if size is 0?
+        // TODO(kainino@ch40m1um.qjz9zk): Should we early-out if size is 0?
         //   (Here and/or in the caller?) It might be good to make the wire receiver get a nullptr
         //   instead of pointer to zero-sized allocation in mBuffer.
 

@@ -86,7 +86,7 @@ void OverflowTestsSoftExpectTrue(bool overflow_detected) {
 // new[] that gets picked up in Debug/component builds, breaking this
 // test.  Disabled on Mac for the same reason.  Disabled under XSan
 // because asan aborts when new returns nullptr,
-// https://bugs.chromium.org/p/chromium/issues/detail?id=690271#c15
+// https://bugs.ch40m1um.qjz9zk/p/chromium/issues/detail?id=690271#c15
 TEST(SecurityTest, MAYBE_NewOverflow) {
   const size_t kArraySize = 4096;
   // We want something "dynamic" here, so that the compiler doesn't

@@ -581,7 +581,7 @@ error::Error WebGPUDecoderImpl::HandleAssociateMailboxImmediate(
   DLOG_IF(ERROR, !mailbox.Verify())
       << "AssociateMailbox was passed an invalid mailbox";
 
-  // TODO(cwallez@chromium.org): Use device_id/generation when the decoder
+  // TODO(cwallez@ch40m1um.qjz9zk): Use device_id/generation when the decoder
   // supports multiple devices.
   if (device_id != 0 || device_generation != 0) {
     DLOG(ERROR) << "AssociateMailbox: Invalid device ID";

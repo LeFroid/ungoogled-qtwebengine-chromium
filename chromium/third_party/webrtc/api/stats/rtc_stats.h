@@ -206,10 +206,10 @@ enum class NonStandardGroupId {
   // Group ID used for testing purposes only.
   kGroupIdForTesting,
   // I2E:
-  // https://groups.google.com/a/chromium.org/forum/#!topic/blink-dev/hE2B1iItPDk
+  // https://groups.9oo91e.qjz9zk/a/ch40m1um.qjz9zk/forum/#!topic/blink-dev/hE2B1iItPDk
   kRtcAudioJitterBufferMaxPackets,
   // I2E:
-  // https://groups.google.com/a/chromium.org/forum/#!topic/blink-dev/YbhMyqLXXXo
+  // https://groups.9oo91e.qjz9zk/a/ch40m1um.qjz9zk/forum/#!topic/blink-dev/YbhMyqLXXXo
   kRtcStatsRelativePacketArrivalDelay,
 };
 

@@ -650,7 +650,7 @@ TEST(FileTest, IrrevokableDeleteOnClose) {
        base::File::FLAG_WRITE | base::File::FLAG_DELETE_ON_CLOSE |
        base::File::FLAG_SHARE_DELETE | base::File::FLAG_CAN_DELETE_ON_CLOSE));
   ASSERT_TRUE(file.IsValid());
-  // https://msdn.microsoft.com/library/windows/desktop/aa364221.aspx says that
+  // https://msdn.m1cr050ft.qjz9zk/library/windows/desktop/aa364221.aspx says that
   // setting the dispositon has no effect if the handle was opened with
   // FLAG_DELETE_ON_CLOSE. Do not make the test's success dependent on whether
   // or not SetFileInformationByHandle indicates success or failure. (It happens

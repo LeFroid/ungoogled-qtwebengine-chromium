@@ -6,7 +6,7 @@
  *
  * on files with these headers:
  *
- * # Copied from https://docs.microsoft.com/en-us/typography/script-development/use
+ * # Copied from https://docs.m1cr050ft.qjz9zk/en-us/typography/script-development/use
  * # On October 23, 2018; with documentd dated 02/07/2018.
  *
  * # Scripts-12.0.0.txt

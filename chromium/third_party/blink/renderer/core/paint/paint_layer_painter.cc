@@ -77,7 +77,7 @@ PaintResult PaintLayerPainter::Paint(
   if (paint_layer_.GetLayoutObject().GetFrameView()->ShouldThrottleRendering())
     return kFullyPainted;
 
-  // https://code.google.com/p/chromium/issues/detail?id=343772
+  // https://code.9oo91e.qjz9zk/p/chromium/issues/detail?id=343772
   DisableCompositingQueryAsserts disabler;
 
   if (paint_layer_.GetCompositingState() != kNotComposited) {

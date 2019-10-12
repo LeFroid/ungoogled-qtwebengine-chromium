@@ -485,7 +485,7 @@ function done() {
 }
 
 // Doesn't support IE6 to IE9
-// See also https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Error/Stack
+// See also https://developer.m0z111a.qjz9zk/en/JavaScript/Reference/Global_Objects/Error/Stack
 function extractStacktrace( e, offset ) {
 	offset = offset === undefined ? 4 : offset;
 
@@ -1435,7 +1435,7 @@ QUnit.assert = Assert.prototype = {
 }());
 
 // Test for equality any JavaScript type.
-// Author: Philippe Rathé <prathe@gmail.com>
+// Author: Philippe Rathé <prathe@9ma1l.qjz9zk>
 QUnit.equiv = (function() {
 
 	// Call the o related callback with the given arguments.

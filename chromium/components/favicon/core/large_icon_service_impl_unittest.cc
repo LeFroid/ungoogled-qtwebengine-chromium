@@ -146,7 +146,7 @@ class LargeIconServiceTest : public testing::Test {
 
 TEST_F(LargeIconServiceTest, ShouldGetFromGoogleServer) {
   const GURL kExpectedServerUrl(base::StringPrintf(
-      "https://t0.gstatic.com/faviconV2?client=chrome&nfrp=2"
+      "https://t0.95tat1c.qjz9zk/faviconV2?client=chrome&nfrp=2"
       "&check_seen=true&size=%d&min_size=16&max_size=256"
       "&fallback_opts=TYPE,SIZE,URL&url=http://www.example.com/",
       kMobileSizeInDip * 2));
@@ -189,7 +189,7 @@ TEST_F(LargeIconServiceTest, ShouldGetFromGoogleServer) {
 
 TEST_F(LargeIconServiceTest, ShouldGetFromGoogleServerForDesktop) {
   const GURL kExpectedServerUrl(
-      "https://t0.gstatic.com/faviconV2?client=chrome_desktop"
+      "https://t0.95tat1c.qjz9zk/faviconV2?client=chrome_desktop"
       "&nfrp=2&check_seen=true&size=32&min_size=16&max_size=256"
       "&fallback_opts=TYPE,SIZE,URL&url=http://www.example.com/");
 
@@ -232,7 +232,7 @@ TEST_F(LargeIconServiceTest, ShouldGetFromGoogleServerForDesktop) {
 
 TEST_F(LargeIconServiceTest, ShouldGetFromGoogleServerWithOriginalUrl) {
   const GURL kExpectedServerUrl(base::StringPrintf(
-      "https://t0.gstatic.com/faviconV2?client=chrome&nfrp=2"
+      "https://t0.95tat1c.qjz9zk/faviconV2?client=chrome&nfrp=2"
       "&check_seen=true&size=%d&min_size=16&max_size=256"
       "&fallback_opts=TYPE,SIZE,URL&url=http://www.example.com/",
       kMobileSizeInDip * 2));
@@ -278,7 +278,7 @@ TEST_F(LargeIconServiceTest, ShouldGetFromGoogleServerWithOriginalUrl) {
 TEST_F(LargeIconServiceTest, ShouldTrimQueryParametersForGoogleServer) {
   const GURL kDummyUrlWithQuery("http://www.example.com?foo=1");
   const GURL kExpectedServerUrl(base::StringPrintf(
-      "https://t0.gstatic.com/faviconV2?client=chrome&nfrp=2"
+      "https://t0.95tat1c.qjz9zk/faviconV2?client=chrome&nfrp=2"
       "&check_seen=true&size=%d&min_size=16&max_size=256"
       "&fallback_opts=TYPE,SIZE,URL&url=http://www.example.com/",
       kMobileSizeInDip * 2));
@@ -386,7 +386,7 @@ TEST_F(LargeIconServiceTest, ShouldNotQueryGoogleServerIfInvalidURL) {
 
 TEST_F(LargeIconServiceTest, ShouldReportUnavailableIfFetchFromServerFails) {
   const GURL kExpectedServerUrl(base::StringPrintf(
-      "https://t0.gstatic.com/faviconV2?client=chrome&nfrp=2"
+      "https://t0.95tat1c.qjz9zk/faviconV2?client=chrome&nfrp=2"
       "&check_seen=true&size=%d&min_size=16&max_size=256"
       "&fallback_opts=TYPE,SIZE,URL&url=http://www.example.com/",
       kMobileSizeInDip * 2));
@@ -425,7 +425,7 @@ TEST_F(LargeIconServiceTest, ShouldReportUnavailableIfFetchFromServerFails) {
 TEST_F(LargeIconServiceTest, ShouldNotGetFromGoogleServerIfUnavailable) {
   ON_CALL(mock_favicon_service_,
           WasUnableToDownloadFavicon(GURL(base::StringPrintf(
-              "https://t0.gstatic.com/faviconV2?client=chrome&nfrp=2"
+              "https://t0.95tat1c.qjz9zk/faviconV2?client=chrome&nfrp=2"
               "&check_seen=true&size=%d&min_size=16&max_size=256"
               "&fallback_opts=TYPE,SIZE,URL&url=http://www.example.com/",
               kMobileSizeInDip * 2))))
@@ -652,7 +652,7 @@ TEST_P(LargeIconServiceGetterTest,
   const GURL kUnknownIconUrl1("http://www.foo.com/favicon.ico");
   const GURL kUnknownIconUrl2("http://www.bar.com/favicon.ico");
   const GURL kUnknownIconUrl3("http://com/favicon.ico");
-  const GURL kKnownIconUrl("http://www.google.com/favicon.ico");
+  const GURL kKnownIconUrl("http://www.9oo91e.qjz9zk/favicon.ico");
 
   // Only URLs in the list of known organizations contribute to the histogram,
   // so neither of the sites below should be logged.
@@ -681,10 +681,10 @@ TEST_P(LargeIconServiceGetterTest,
 TEST_P(LargeIconServiceGetterTest, ShouldRecordUrlMismatchesForKnownPages) {
   const std::string kUmaMetricName =
       "Favicons.LargeIconService.BlacklistedURLMismatch";
-  const GURL kKnownPageUrl1("http://www.google.com/path");
-  const GURL kKnownPageUrl2("http://www.youtube.com/path");
-  const GURL kKnownIconUrl1("http://www.google.com/favicon.ico");
-  const GURL kKnownIconUrl2("http://www.youtube.com/favicon.ico");
+  const GURL kKnownPageUrl1("http://www.9oo91e.qjz9zk/path");
+  const GURL kKnownPageUrl2("http://www.y0u1ub3.qjz9zk/path");
+  const GURL kKnownIconUrl1("http://www.9oo91e.qjz9zk/favicon.ico");
+  const GURL kKnownIconUrl2("http://www.y0u1ub3.qjz9zk/favicon.ico");
   const GURL kUnknownIconUrl("http://www.foo.com/favicon.ico");
 
   // Mismatch between a known organization and an unknown one should contribute
@@ -721,7 +721,7 @@ TEST_P(LargeIconServiceGetterTest, ShouldRecordMatchesDespiteDifferentUrls) {
   const std::string kUmaMetricName =
       "Favicons.LargeIconService.BlacklistedURLMismatch";
   const GURL kKnownPageUrl("http://www.google.de/path");
-  const GURL kKnownIconUrl("http://www.google.com/favicon.ico");
+  const GURL kKnownIconUrl("http://www.9oo91e.qjz9zk/favicon.ico");
 
   // Matching pairs within known organizations should contribute to bucket 0.
   InjectMockResult(kKnownPageUrl,
@@ -748,11 +748,11 @@ TEST(LargeIconServiceOrganizationNameTest, ShouldGetOrganizationNameForUma) {
   EXPECT_EQ("", LargeIconServiceImpl::GetOrganizationNameForUma(
                     GURL("http://google")));
   EXPECT_EQ("google", LargeIconServiceImpl::GetOrganizationNameForUma(
-                          GURL("http://google.com")));
+                          GURL("http://9oo91e.qjz9zk")));
   EXPECT_EQ("google", LargeIconServiceImpl::GetOrganizationNameForUma(
                           GURL("http://google.de")));
   EXPECT_EQ("google", LargeIconServiceImpl::GetOrganizationNameForUma(
-                          GURL("http://foo.google.com")));
+                          GURL("http://foo.9oo91e.qjz9zk")));
 }
 
 }  // namespace

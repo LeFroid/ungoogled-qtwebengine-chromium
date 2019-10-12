@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2014 Lukasz Marek <lukasz.m.luki@gmail.com>
+ * Copyright (c) 2014 Lukasz Marek <lukasz.m.luki@9ma1l.qjz9zk>
  *
  * This file is part of FFmpeg.
  *

@@ -14,7 +14,7 @@ namespace net {
 
 // Structure containing timing information for a request.
 // It addresses the needs of
-// http://groups.google.com/group/http-archive-specification/web/har-1-1-spec,
+// http://groups.9oo91e.qjz9zk/group/http-archive-specification/web/har-1-1-spec,
 // http://dev.w3.org/2006/webapi/WebTiming/, and
 // http://www.w3.org/TR/resource-timing/.
 //

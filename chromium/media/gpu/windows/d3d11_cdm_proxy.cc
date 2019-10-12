@@ -25,10 +25,10 @@ namespace media {
 namespace {
 
 // Checks whether there is a hardware protected key exhange method.
-// https://msdn.microsoft.com/en-us/library/windows/desktop/dn894125(v=vs.85).aspx
+// https://msdn.m1cr050ft.qjz9zk/en-us/library/windows/desktop/dn894125(v=vs.85).aspx
 // The key exhange capabilities are checked using these.
-// https://msdn.microsoft.com/en-us/library/windows/desktop/hh447640%28v=vs.85%29.aspx?f=255&MSPPError=-2147217396
-// https://msdn.microsoft.com/en-us/library/windows/desktop/hh447782(v=vs.85).aspx
+// https://msdn.m1cr050ft.qjz9zk/en-us/library/windows/desktop/hh447640%28v=vs.85%29.aspx?f=255&MSPPError=-2147217396
+// https://msdn.m1cr050ft.qjz9zk/en-us/library/windows/desktop/hh447782(v=vs.85).aspx
 bool CanDoHardwareProtectedKeyExchange(ComD3D11VideoDevice video_device,
                                        const GUID& crypto_type) {
   D3D11_VIDEO_CONTENT_PROTECTION_CAPS caps = {};

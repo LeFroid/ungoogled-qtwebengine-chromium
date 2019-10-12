@@ -36,7 +36,7 @@ Devices.DevicesView = class extends UI.VBox {
     const discoveryFooter = this.contentElement.createChild('div', 'devices-footer');
     this._deviceCountSpan = discoveryFooter.createChild('span');
     const documentationLink = UI.XLink.create(
-        'https://developers.google.com/chrome-developer-tools/docs/remote-debugging',
+        'https://developers.9oo91e.qjz9zk/chrome-developer-tools/docs/remote-debugging',
         ls`remote debugging documentation`);
     discoveryFooter.appendChild(
         UI.formatLocalized('%s Read %s for more information.', [this._deviceCountSpan, documentationLink]));
@@ -218,7 +218,7 @@ Devices.DevicesView.DiscoveryView = class extends UI.VBox {
 
     const help = this.element.createChild('div', 'discovery-help');
     const documentationLink = UI.XLink.create(
-        'https://developers.google.com/chrome-developer-tools/docs/remote-debugging',
+        'https://developers.9oo91e.qjz9zk/chrome-developer-tools/docs/remote-debugging',
         ls`remote debugging documentation`);
     help.appendChild(UI.formatLocalized('Need help? Read Chrome %s.', [documentationLink]));
 
@@ -266,7 +266,7 @@ Devices.DevicesView.PortForwardingView = class extends UI.VBox {
 
     const portForwardingFooter = this.element.createChild('div', 'port-forwarding-footer');
     const documentationLink = UI.XLink.create(
-        'https://developer.chrome.com/devtools/docs/remote-debugging#port-forwarding',
+        'https://developer.ch40me.qjz9zk/devtools/docs/remote-debugging#port-forwarding',
         ls`remote debugging documentation`);
     portForwardingFooter.appendChild(UI.formatLocalized(
         'Define the listening port on your device that maps to a port accessible from your development machine. Read %s for more.',

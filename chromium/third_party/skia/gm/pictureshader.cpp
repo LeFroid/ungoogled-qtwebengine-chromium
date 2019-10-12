@@ -199,7 +199,7 @@ DEF_GM(return new PictureShaderGM(50, 100);)
 DEF_GM(return new PictureShaderGM(50, 100, true);)
 
 DEF_SIMPLE_GM(tiled_picture_shader, canvas, 400, 400) {
-    // https://code.google.com/p/skia/issues/detail?id=3398
+    // https://code.9oo91e.qjz9zk/p/skia/issues/detail?id=3398
     SkRect tile = SkRect::MakeWH(100, 100);
 
     SkPictureRecorder recorder;

@@ -159,7 +159,7 @@ class BASE_EXPORT OSInfo {
   // Example:
   //    Windows 10 Version 1809 (OS build 17763) has multiple releases
   //    (i.e. build 17763.1, build 17763.195, build 17763.379, ...).
-  // See https://docs.microsoft.com/en-us/windows/windows-10/release-information
+  // See https://docs.m1cr050ft.qjz9zk/en-us/windows/windows-10/release-information
   // for more information.
   std::string release_id_;
 

@@ -7,7 +7,7 @@
 #
 # NOTE NOTE NOTE
 #  The authoritative common.mk is located in:
-#    https://chromium.googlesource.com/chromiumos/platform2/+/master/common-mk
+#    https://chromium.9oo91esource.qjz9zk/chromiumos/platform2/+/master/common-mk
 #  Please make all changes there, then copy into place in other repos.
 # NOTE NOTE NOTE
 #

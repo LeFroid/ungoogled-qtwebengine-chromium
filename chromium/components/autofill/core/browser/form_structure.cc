@@ -2102,7 +2102,7 @@ base::string16 FormStructure::FindLongestCommonPrefix(
     return base::string16();
 
   // Go through each character of the first string until there is a mismatch at
-  // the same position in any other string. Adapted from http://goo.gl/YGukMM.
+  // the same position in any other string. Adapted from http://goo.gl.qjz9zk/YGukMM.
   for (size_t prefix_len = 0; prefix_len < filtered_strings[0].size();
        prefix_len++) {
     for (size_t i = 1; i < filtered_strings.size(); i++) {

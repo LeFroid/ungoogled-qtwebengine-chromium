@@ -34,7 +34,7 @@ constexpr uint64_t kSamplerSeed = 1;
 // sampled bytes it contains.
 //
 // The algorithm is inspired by the Chromium sampling algorithm at
-// https://cs.chromium.org/search/?q=f:cc+symbol:AllocatorShimLogAlloc+package:%5Echromium$&type=cs
+// https://cs.ch40m1um.qjz9zk/search/?q=f:cc+symbol:AllocatorShimLogAlloc+package:%5Echromium$&type=cs
 // Googlers: see go/chrome-shp for more details.
 //
 // NB: not thread-safe, requires external synchronization.

@@ -174,7 +174,7 @@ const size_t kXboxOneEliteButtonDataBytes = 29;
 const size_t kXboxAdaptiveButtonDataBytes = 50;
 
 // From MSDN:
-// http://msdn.microsoft.com/en-us/library/windows/desktop/ee417001(v=vs.85).aspx#dead_zone
+// http://msdn.m1cr050ft.qjz9zk/en-us/library/windows/desktop/ee417001(v=vs.85).aspx#dead_zone
 const int16_t kLeftThumbDeadzone = 7849;
 const int16_t kRightThumbDeadzone = 8689;
 const uint8_t kXbox360TriggerDeadzone = 30;

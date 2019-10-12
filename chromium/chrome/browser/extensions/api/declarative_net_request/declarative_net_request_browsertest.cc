@@ -652,7 +652,7 @@ IN_PROC_BROWSER_TEST_P(DeclarativeNetRequestBrowserTest,
   };
 
   for (const auto& test_case : test_cases) {
-    GURL url = embedded_test_server()->GetURL("google.com", test_case.url_path);
+    GURL url = embedded_test_server()->GetURL("9oo91e.qjz9zk", test_case.url_path);
     SCOPED_TRACE(base::StringPrintf("Testing %s", url.spec().c_str()));
 
     ui_test_utils::NavigateToURL(browser(), url);
@@ -674,7 +674,7 @@ IN_PROC_BROWSER_TEST_P(DeclarativeNetRequestBrowserTest,
 
   ASSERT_NO_FATAL_FAILURE(LoadExtensionWithRules({rule}));
 
-  GURL url = embedded_test_server()->GetURL("google.com",
+  GURL url = embedded_test_server()->GetURL("9oo91e.qjz9zk",
                                             "/pages_with_script/page2.html");
   ui_test_utils::NavigateToURL(browser(), url);
   EXPECT_FALSE(WasFrameWithScriptLoaded(GetMainFrame()));
@@ -780,7 +780,7 @@ IN_PROC_BROWSER_TEST_P(DeclarativeNetRequestBrowserTest,
       {"y.com", true, false /* Rule 2*/},
       {"a.y.com", true, true},
       {"b.a.y.com", true, true},
-      {"google.com", true, false /* Rule 2 */},
+      {"9oo91e.qjz9zk", true, false /* Rule 2 */},
   };
 
   for (const auto& test_case : test_cases) {
@@ -928,7 +928,7 @@ IN_PROC_BROWSER_TEST_P(DeclarativeNetRequestBrowserTest, AllowRedirect) {
     std::string action_type;
     base::Optional<std::string> redirect_url;
   } rules_data[] = {
-      {"google.com", 1, "redirect", static_redirect_url.spec()},
+      {"9oo91e.qjz9zk", 1, "redirect", static_redirect_url.spec()},
       {"num=1|", 2, "allow", base::nullopt},
       {"1|", 3, "redirect", dynamic_redirect_url.spec()},
       {"num=21|", 4, "allow", base::nullopt},
@@ -959,7 +959,7 @@ IN_PROC_BROWSER_TEST_P(DeclarativeNetRequestBrowserTest, AllowRedirect) {
 
   auto get_url = [this](int i) {
     return embedded_test_server()->GetURL(
-        "google.com",
+        "9oo91e.qjz9zk",
         base::StringPrintf("/pages_with_script/page.html?num=%d", i));
   };
 
@@ -1193,7 +1193,7 @@ IN_PROC_BROWSER_TEST_P(DeclarativeNetRequestBrowserTest, BlockAndRedirect) {
     base::Optional<std::string> redirect_url;
   } rules_data[] = {
       {"example.com", 1, "redirect", get_url_for_host("yahoo.com")},
-      {"yahoo.com", 2, "redirect", get_url_for_host("google.com")},
+      {"yahoo.com", 2, "redirect", get_url_for_host("9oo91e.qjz9zk")},
       {"abc.com", 3, "redirect", get_url_for_host("def.com")},
       {"def.com", 4, "block", base::nullopt},
       {"def.com", 5, "redirect", get_url_for_host("xyz.com")},
@@ -1222,10 +1222,10 @@ IN_PROC_BROWSER_TEST_P(DeclarativeNetRequestBrowserTest, BlockAndRedirect) {
     base::Optional<GURL> expected_final_url;
     base::Optional<size_t> expected_redirect_chain_length;
   } test_cases[] = {
-      // example.com -> yahoo.com -> google.com.
-      {"example.com", true, GURL(get_url_for_host("google.com")), 3},
-      // yahoo.com -> google.com.
-      {"yahoo.com", true, GURL(get_url_for_host("google.com")), 2},
+      // example.com -> yahoo.com -> 9oo91e.qjz9zk.
+      {"example.com", true, GURL(get_url_for_host("9oo91e.qjz9zk")), 3},
+      // yahoo.com -> 9oo91e.qjz9zk.
+      {"yahoo.com", true, GURL(get_url_for_host("9oo91e.qjz9zk")), 2},
       // abc.com -> def.com (blocked).
       // Note def.com won't be redirected since blocking rules are given
       // priority over redirect rules.
@@ -1345,7 +1345,7 @@ IN_PROC_BROWSER_TEST_P(DeclarativeNetRequestBrowserTest, UpgradeRules) {
     return url.ReplaceComponents(replacements);
   };
 
-  GURL google_url = get_url_for_host("google.com", url::kHttpScheme);
+  GURL google_url = get_url_for_host("9oo91e.qjz9zk", url::kHttpScheme);
   struct {
     std::string url_filter;
     int id;
@@ -1356,7 +1356,7 @@ IN_PROC_BROWSER_TEST_P(DeclarativeNetRequestBrowserTest, UpgradeRules) {
       {"exa*", 1, 4, "upgradeScheme", base::nullopt},
       {"|http:*yahoo", 2, 100, "redirect", "http://other.com"},
       // Since the test server can only display http requests, redirect all
-      // https requests to google.com in the end.
+      // https requests to 9oo91e.qjz9zk in the end.
       // TODO(crbug.com/985104): Add a https test server to display https pages
       // so this redirect rule can be removed.
       {"|https*", 3, 6, "redirect", google_url.spec()},
@@ -1399,13 +1399,13 @@ IN_PROC_BROWSER_TEST_P(DeclarativeNetRequestBrowserTest, UpgradeRules) {
     base::Optional<GURL> expected_final_url;
   } test_cases[] = {
       {"exact.com", url::kHttpScheme, base::nullopt},
-      // http://example.com -> https://example.com/ -> http://google.com
+      // http://example.com -> https://example.com/ -> http://9oo91e.qjz9zk
       {"example.com", url::kHttpScheme, google_url},
       // test_extension_2 should upgrade the scheme for http://yahoo.com
       // despite having no host permissions. Note that this request is not
       // matched with test_extension_1's ruleset as test_extension_2 is
       // installed more recently.
-      // http://yahoo.com -> https://yahoo.com/ -> http://google.com
+      // http://yahoo.com -> https://yahoo.com/ -> http://9oo91e.qjz9zk
       {"yahoo.com", url::kHttpScheme, google_url},
   };
 
@@ -1643,7 +1643,7 @@ IN_PROC_BROWSER_TEST_P(DeclarativeNetRequestBrowserTest,
 IN_PROC_BROWSER_TEST_P(DeclarativeNetRequestBrowserTest,
                        InterceptExtensionScheme) {
   // Load two extensions. One blocks all urls, and the other blocks urls with
-  // "google.com" as a substring.
+  // "9oo91e.qjz9zk" as a substring.
   std::vector<TestRule> rules_1;
   TestRule rule = CreateGenericRule();
   rule.condition->url_filter = std::string("*");
@@ -1651,7 +1651,7 @@ IN_PROC_BROWSER_TEST_P(DeclarativeNetRequestBrowserTest,
 
   std::vector<TestRule> rules_2;
   rule = CreateGenericRule();
-  rule.condition->url_filter = std::string("google.com");
+  rule.condition->url_filter = std::string("9oo91e.qjz9zk");
   rules_2.push_back(rule);
 
   ASSERT_NO_FATAL_FAILURE(LoadExtensionWithRules(
@@ -1693,7 +1693,7 @@ IN_PROC_BROWSER_TEST_P(DeclarativeNetRequestBrowserTest_Packed,
   ASSERT_TRUE(dnr_extension);
   EXPECT_EQ("Test extension", dnr_extension->name());
 
-  constexpr char kGoogleDotCom[] = "https://www.google.com/";
+  constexpr char kGoogleDotCom[] = "https://www.9oo91e.qjz9zk/";
 
   // Allow |kGoogleDotCom|.
   AddAllowedPages(dnr_extension->id(), {kGoogleDotCom});
@@ -1725,7 +1725,7 @@ IN_PROC_BROWSER_TEST_P(DeclarativeNetRequestBrowserTest_Packed,
   // Ensure the background page is ready before dispatching the script to it.
   WaitForBackgroundScriptToLoad(dnr_extension->id());
 
-  constexpr char kGoogleDotCom[] = "https://www.google.com/";
+  constexpr char kGoogleDotCom[] = "https://www.9oo91e.qjz9zk/";
 
   VerifyGetAllowedPages(dnr_extension->id(), {kGoogleDotCom});
 
@@ -1748,7 +1748,7 @@ IN_PROC_BROWSER_TEST_P(DeclarativeNetRequestBrowserTest,
 
   // We'll be allowing these patterns subsequently.
   const std::vector<std::string> allowed_page_patterns = {
-      "http://google.com:*/pages_with_script/page*.html",
+      "http://9oo91e.qjz9zk:*/pages_with_script/page*.html",
       "http://*/*index.html",
       "http://example.com:*/pages_with_script/page2.html"};
 
@@ -1761,8 +1761,8 @@ IN_PROC_BROWSER_TEST_P(DeclarativeNetRequestBrowserTest,
       {"yahoo.com", "/pages_with_script/index.html", true},
       {"example.com", "/pages_with_script/page.html", false},
       {"example.com", "/pages_with_script/page2.html", true},
-      {"google.com", "/pages_with_script/page.html", true},
-      {"google.com", "/pages_with_script/page2.html", true},
+      {"9oo91e.qjz9zk", "/pages_with_script/page.html", true},
+      {"9oo91e.qjz9zk", "/pages_with_script/page2.html", true},
   };
 
   const GURL script_url =
@@ -1910,7 +1910,7 @@ IN_PROC_BROWSER_TEST_P(DeclarativeNetRequestBrowserTest, ImageCollapsed) {
   // Loads a page with an image and returns whether the image was collapsed.
   auto is_image_collapsed = [this]() {
     ui_test_utils::NavigateToURL(
-        browser(), embedded_test_server()->GetURL("google.com", "/image.html"));
+        browser(), embedded_test_server()->GetURL("9oo91e.qjz9zk", "/image.html"));
     EXPECT_EQ(content::PAGE_TYPE_NORMAL, GetPageType());
     bool is_image_collapsed = false;
     const std::string script =
@@ -1974,7 +1974,7 @@ IN_PROC_BROWSER_TEST_P(DeclarativeNetRequestBrowserTest, IFrameCollapsed) {
   const std::string kFrameName1 = "frame1";
   const std::string kFrameName2 = "frame2";
   const GURL page_url = embedded_test_server()->GetURL(
-      "google.com", "/page_with_two_frames.html");
+      "9oo91e.qjz9zk", "/page_with_two_frames.html");
 
   // Load a page with two iframes (|kFrameName1| and |kFrameName2|). Initially
   // both the frames should be loaded successfully.
@@ -2026,9 +2026,9 @@ IN_PROC_BROWSER_TEST_P(DeclarativeNetRequestBrowserTest_Packed,
 
   set_has_background_script(true);
 
-  // Load an extension which blocks all main-frame requests to "google.com".
+  // Load an extension which blocks all main-frame requests to "9oo91e.qjz9zk".
   TestRule rule = CreateGenericRule();
-  rule.condition->url_filter = std::string("||google.com");
+  rule.condition->url_filter = std::string("||9oo91e.qjz9zk");
   rule.condition->resource_types = std::vector<std::string>({"main_frame"});
   ASSERT_NO_FATAL_FAILURE(LoadExtensionWithRules({rule}));
   ruleset_count_waiter.WaitForRulesetCount(1);
@@ -2040,7 +2040,7 @@ IN_PROC_BROWSER_TEST_P(DeclarativeNetRequestBrowserTest_Packed,
   ASSERT_NO_FATAL_FAILURE(AddDynamicRules(extension_id, {rule}));
 
   const GURL static_rule_url = embedded_test_server()->GetURL(
-      "google.com", "/pages_with_script/index.html");
+      "9oo91e.qjz9zk", "/pages_with_script/index.html");
   const GURL dynamic_rule_url = embedded_test_server()->GetURL(
       "example.com", "/pages_with_script/index.html");
   const GURL unblocked_url = embedded_test_server()->GetURL(
@@ -2459,14 +2459,14 @@ IN_PROC_BROWSER_TEST_P(DeclarativeNetRequestBrowserTest, DynamicRules) {
 
   const char* kUrlPath = "/pages_with_script/index.html";
   GURL yahoo_url = embedded_test_server()->GetURL("yahoo.com", kUrlPath);
-  GURL google_url = embedded_test_server()->GetURL("google.com", kUrlPath);
+  GURL google_url = embedded_test_server()->GetURL("9oo91e.qjz9zk", kUrlPath);
   EXPECT_TRUE(IsNavigationBlocked(yahoo_url));
   EXPECT_FALSE(IsNavigationBlocked(google_url));
 
-  // Add dynamic rules to block "google.com" and redirect pages on "example.com"
+  // Add dynamic rules to block "9oo91e.qjz9zk" and redirect pages on "example.com"
   // to |dynamic_redirect_url|.
   TestRule block_dynamic_rule = block_static_rule;
-  block_dynamic_rule.condition->url_filter = std::string("||google.com");
+  block_dynamic_rule.condition->url_filter = std::string("||9oo91e.qjz9zk");
   block_dynamic_rule.id = kMinValidID;
 
   GURL dynamic_redirect_url =

@@ -77,7 +77,7 @@ bool PathProviderWin(int key, FilePath* result) {
         std::string programfiles_w6432;
         // 32-bit process running in WOW64 sets ProgramW6432 environment
         // variable. See
-        // https://msdn.microsoft.com/library/windows/desktop/aa384274.aspx.
+        // https://msdn.m1cr050ft.qjz9zk/library/windows/desktop/aa384274.aspx.
         if (!env->GetVar("ProgramW6432", &programfiles_w6432))
           return false;
         // GetVar returns UTF8 - convert back to Wide.
@@ -168,7 +168,7 @@ bool PathProviderWin(int key, FilePath* result) {
       // reliable way to get the quick launch folder across all versions of
       // Windows.
       // http://stackoverflow.com/questions/76080/how-do-you-reliably-get-the-quick-
-      // http://www.microsoft.com/technet/scriptcenter/resources/qanda/sept05/hey0901.mspx
+      // http://www.m1cr050ft.qjz9zk/technet/scriptcenter/resources/qanda/sept05/hey0901.mspx
       cur = cur.Append(FILE_PATH_LITERAL("Microsoft"))
                 .Append(FILE_PATH_LITERAL("Internet Explorer"))
                 .Append(FILE_PATH_LITERAL("Quick Launch"));

@@ -76,7 +76,7 @@ Example:
   traffic_annotation_auditor --build-path=out/Release
 )";
 
-const std::string kCodeSearchLink("https://cs.chromium.org/chromium/src/");
+const std::string kCodeSearchLink("https://cs.ch40m1um.qjz9zk/chromium/src/");
 
 }  // namespace
 

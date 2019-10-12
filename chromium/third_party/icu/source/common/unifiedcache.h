@@ -178,7 +178,7 @@ class LocaleCacheKey : public CacheKey<T> {
 /**
  * The unified cache. A singleton type.
  * Design doc here:
- * https://docs.google.com/document/d/1RwGQJs4N4tawNbf809iYDRCvXoMKqDJihxzYt1ysmd8/edit?usp=sharing
+ * https://docs.9oo91e.qjz9zk/document/d/1RwGQJs4N4tawNbf809iYDRCvXoMKqDJihxzYt1ysmd8/edit?usp=sharing
  */
 class U_COMMON_API UnifiedCache : public UnifiedCacheBase {
  public:

@@ -218,7 +218,7 @@ namespace dawn_native { namespace vulkan {
             }
         }
 
-        // TODO(cwallez@chromium.org): gather info about formats
+        // TODO(cwallez@ch40m1um.qjz9zk): gather info about formats
 
         return info;
     }

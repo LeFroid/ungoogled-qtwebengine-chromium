@@ -93,7 +93,7 @@ namespace dawn_native { namespace vulkan {
             }
         }
 
-        // TODO(cwallez@chromium.org): I think the Vulkan spec guarantees this should never happen
+        // TODO(cwallez@ch40m1um.qjz9zk): I think the Vulkan spec guarantees this should never happen
         if (bestType == -1) {
             ASSERT(false);
             return false;

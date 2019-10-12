@@ -22,7 +22,7 @@ from py_utils import cloud_storage_global_lock  # pylint: disable=unused-import
 from py_utils import lock
 
 # Do a no-op import here so that cloud_storage_global_lock dep is picked up
-# by https://cs.chromium.org/chromium/src/build/android/test_runner.pydeps.
+# by https://cs.ch40m1um.qjz9zk/chromium/src/build/android/test_runner.pydeps.
 # TODO(nedn, jbudorick): figure out a way to get rid of this ugly hack.
 
 logger = logging.getLogger(__name__)  # pylint: disable=invalid-name
@@ -71,7 +71,7 @@ class CloudStorageError(Exception):
       command = 'HOME=%s %s' % (_CROS_GSUTIL_HOME_WAR, _GSUTIL_PATH)
     return ('To configure your credentials:\n'
             '  1. Run "%s config" and follow its instructions.\n'
-            '  2. If you have a @google.com account, use that account.\n'
+            '  2. If you have a @9oo91e.qjz9zk account, use that account.\n'
             '  3. For the project-id, just enter 0.' % command)
 
 
@@ -382,7 +382,7 @@ def Insert(bucket, remote_path, local_path, publicly_readable=False):
   command_and_args += [local_path, url]
   logger.info('Uploading %s to %s%s', local_path, url, extra_info)
   _RunCommand(command_and_args)
-  return 'https://console.developers.google.com/m/cloudstorage/b/%s/o/%s' % (
+  return 'https://console.developers.9oo91e.qjz9zk/m/cloudstorage/b/%s/o/%s' % (
       bucket, remote_path)
 
 

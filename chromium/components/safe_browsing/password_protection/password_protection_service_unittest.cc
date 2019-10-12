@@ -694,7 +694,7 @@ TEST_P(PasswordProtectionServiceTest, VerifyCanGetReputationOfURL) {
 
   // Main frame URL is anything else.
   EXPECT_TRUE(PasswordProtectionService::CanGetReputationOfURL(
-      GURL("http://www.chromium.org")));
+      GURL("http://www.ch40m1um.qjz9zk")));
 }
 
 TEST_P(PasswordProtectionServiceTest, TestNoRequestSentForWhitelistedURL) {

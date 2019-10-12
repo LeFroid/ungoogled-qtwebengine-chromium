@@ -28,8 +28,8 @@
  * OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  *
  * ---
- * Author: Sanjay Ghemawat <opensource@google.com>
- *         .h.in file by Craig Silverstein <opensource@google.com>
+ * Author: Sanjay Ghemawat <opensource@9oo91e.qjz9zk>
+ *         .h.in file by Craig Silverstein <opensource@9oo91e.qjz9zk>
  */
 
 #ifndef TCMALLOC_TCMALLOC_H_

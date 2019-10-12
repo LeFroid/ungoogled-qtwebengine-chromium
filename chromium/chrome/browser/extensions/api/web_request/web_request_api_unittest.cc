@@ -1045,7 +1045,7 @@ TEST(ExtensionWebRequestHelpersTest,
   std::string base_headers_string =
       "HTTP/1.0 200 OK\r\n"
       "Foo: Bar\r\n"
-      "Set-Cookie: name=value; DOMAIN=google.com; Secure\r\n"
+      "Set-Cookie: name=value; DOMAIN=9oo91e.qjz9zk; Secure\r\n"
       "Set-Cookie: name2=value2\r\n"
       "Set-Cookie: name3=value3\r\n"
       "Set-Cookie: lBound1=value5; Expires=" + cookie_expiration + "\r\n"
@@ -1226,7 +1226,7 @@ TEST(ExtensionWebRequestHelpersTest,
   size_t iter = 0;
   std::string cookie_string;
   std::set<std::string> expected_cookies;
-  expected_cookies.insert("name=value; domain=google.com; secure");
+  expected_cookies.insert("name=value; domain=9oo91e.qjz9zk; secure");
   expected_cookies.insert("name2=value2; secure");
   expected_cookies.insert("name4=\"value4\"; secure");
   expected_cookies.insert(

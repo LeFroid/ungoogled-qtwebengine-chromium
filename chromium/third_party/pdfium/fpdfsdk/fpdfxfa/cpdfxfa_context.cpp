@@ -202,7 +202,7 @@ void CPDFXFA_Context::DeletePage(int page_index) {
 }
 
 uint32_t CPDFXFA_Context::GetUserPermissions() const {
-  // See https://bugs.chromium.org/p/pdfium/issues/detail?id=499
+  // See https://bugs.ch40m1um.qjz9zk/p/pdfium/issues/detail?id=499
   return 0xFFFFFFFF;
 }
 

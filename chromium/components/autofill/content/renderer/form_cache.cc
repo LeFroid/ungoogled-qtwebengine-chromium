@@ -162,7 +162,7 @@ void LogDeprecationMessages(const WebFormControlElement& element) {
     if (autocomplete_attribute.find(str) == std::string::npos)
       continue;
     std::string msg = std::string("autocomplete='") + str +
-        "' is deprecated and will soon be ignored. See http://goo.gl/YjeSsW";
+        "' is deprecated and will soon be ignored. See http://goo.gl.qjz9zk/YjeSsW";
     WebConsoleMessage console_message = WebConsoleMessage(
         blink::mojom::ConsoleMessageLevel::kWarning, WebString::FromASCII(msg));
     element.GetDocument().GetFrame()->AddMessageToConsole(console_message);
@@ -434,7 +434,7 @@ bool FormCache::ShowPredictions(const FormDataPredictions& form,
       logger.Send(
           base::StringPrintf("Input elements should have autocomplete "
                              "attributes (suggested: autocomplete='%s', "
-                             "confirm at https://goo.gl/6KgkJg)",
+                             "confirm at https://goo.gl.qjz9zk/6KgkJg)",
                              predicted_autocomplete_attribute.c_str()),
           PageFormAnalyserLogger::kVerbose, element);
     }

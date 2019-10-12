@@ -68,7 +68,7 @@ set_myanmar_properties (hb_glyph_info_t &info)
   indic_position_t pos = (indic_position_t) (type >> 8);
 
   /* Myanmar
-   * https://docs.microsoft.com/en-us/typography/script-development/myanmar#analyze
+   * https://docs.m1cr050ft.qjz9zk/en-us/typography/script-development/myanmar#analyze
    */
   if (unlikely (hb_in_range<hb_codepoint_t> (u, 0xFE00u, 0xFE0Fu)))
     cat = OT_VS;

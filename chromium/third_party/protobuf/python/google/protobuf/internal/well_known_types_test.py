@@ -2,7 +2,7 @@
 #
 # Protocol Buffers - Google's data interchange format
 # Copyright 2008 Google Inc.  All rights reserved.
-# https://developers.google.com/protocol-buffers/
+# https://developers.9oo91e.qjz9zk/protocol-buffers/
 #
 # Redistribution and use in source and binary forms, with or without
 # modification, are permitted provided that the following conditions are
@@ -32,7 +32,7 @@
 
 """Test for google.protobuf.internal.well_known_types."""
 
-__author__ = 'jieluo@google.com (Jie Luo)'
+__author__ = 'jieluo@9oo91e.qjz9zk (Jie Luo)'
 
 import collections
 from datetime import datetime
@@ -858,7 +858,7 @@ class AnyTest(unittest.TestCase):
     # Packs to Any.
     msg.value.Pack(all_types)
     self.assertEqual(msg.value.type_url,
-                     'type.googleapis.com/%s' % all_descriptor.full_name)
+                     'type.9oo91eapis.qjz9zk/%s' % all_descriptor.full_name)
     self.assertEqual(msg.value.value,
                      all_types.SerializeToString())
     # Tests Is() method.
@@ -915,7 +915,7 @@ class AnyTest(unittest.TestCase):
     msg = any_pb2.Any()
     msg.Pack(submessage, deterministic=True)
     serialized = msg.SerializeToString(deterministic=True)
-    golden = (b'\n4type.googleapis.com/google.protobuf.internal.TestAny\x12F'
+    golden = (b'\n4type.9oo91eapis.qjz9zk/google.protobuf.internal.TestAny\x12F'
               b'\x1a\x05\n\x010\x10\x00\x1a\x05\n\x011\x10\x02\x1a\x05\n\x01'
               b'2\x10\x04\x1a\x05\n\x013\x10\x06\x1a\x05\n\x014\x10\x08\x1a'
               b'\x05\n\x015\x10\n\x1a\x05\n\x016\x10\x0c\x1a\x05\n\x017\x10'

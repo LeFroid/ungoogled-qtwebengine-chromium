@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Deployment xmlns="http://schemas.microsoft.com/windowsphone/2014/deployment" AppPlatformVersion="8.1">
+<Deployment xmlns="http://schemas.m1cr050ft.qjz9zk/windowsphone/2014/deployment" AppPlatformVersion="8.1">
   <DefaultLanguage xmlns="" code="en-US" />
   <App xmlns="" ProductID="{5424cf29-908e-417e-93f3-f1cd81e5372c}" Title="CodecApp" RuntimeType="Silverlight" Version="1.0.0.0" Genre="apps.normal" Author="CodecApp author" Description="Sample description" Publisher="CodecApp" PublisherID="{cb9bed24-05fd-451a-8736-6dad92946a6e}">
     <IconPath IsRelative="true" IsResource="false">Assets\ApplicationIcon.png</IconPath>

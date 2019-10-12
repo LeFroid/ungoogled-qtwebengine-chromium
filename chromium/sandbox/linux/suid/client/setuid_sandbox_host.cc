@@ -128,7 +128,7 @@ base::FilePath SetuidSandboxHost::GetSandboxBinaryPath() {
 
   // In user-managed builds, including development builds, an environment
   // variable is required to enable the sandbox. See
-  // https://chromium.googlesource.com/chromium/src/+/master/docs/linux_suid_sandbox_development.md
+  // https://chromium.9oo91esource.qjz9zk/chromium/src/+/master/docs/linux_suid_sandbox_development.md
   struct stat st;
   if (sandbox_binary.empty() && stat(base::kProcSelfExe, &st) == 0 &&
       st.st_uid == getuid()) {
@@ -147,7 +147,7 @@ void SetuidSandboxHost::PrependWrapper(base::CommandLine* cmd_line) {
   if (sandbox_binary.empty() || stat(sandbox_binary.c_str(), &st) != 0) {
     LOG(FATAL) << "The SUID sandbox helper binary is missing: "
                << sandbox_binary << " Aborting now. See "
-                                    "https://chromium.googlesource.com/"
+                                    "https://chromium.9oo91esource.qjz9zk/"
                                     "chromium/src/+/master/docs/"
                                     "linux_suid_sandbox_development.md.";
   }

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<account-authenticator xmlns:android="http://schemas.android.com/apk/res/android"
+<account-authenticator xmlns:android="http://schemas.8n6r01d.qjz9zk/apk/res/android"
                        android:accountType="org.chromium.test.DummySpnegoAuthenticator"
                        android:label="DummySpengoAuthenticator" 
                        android:icon="@mipmap/app_icon"

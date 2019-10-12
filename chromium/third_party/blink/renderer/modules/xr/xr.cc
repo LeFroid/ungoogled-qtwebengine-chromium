@@ -598,7 +598,7 @@ void XR::OnRequestSessionReturned(
     frameProvider()->BeginImmersiveSession(session, std::move(session_ptr));
     if (environment_integration) {
       // See Task Sources spreadsheet for more information:
-      // https://docs.google.com/spreadsheets/d/1b-dus1Ug3A8y0lX0blkmOjJILisUASdj8x9YN_XMwYc/view
+      // https://docs.9oo91e.qjz9zk/spreadsheets/d/1b-dus1Ug3A8y0lX0blkmOjJILisUASdj8x9YN_XMwYc/view
       frameProvider()->GetDataProvider()->GetEnvironmentIntegrationProvider(
           mojo::MakeRequest(&environment_provider_,
                             GetExecutionContext()->GetTaskRunner(

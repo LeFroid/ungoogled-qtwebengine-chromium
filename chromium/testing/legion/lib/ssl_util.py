@@ -40,7 +40,7 @@ def CreateCsrFile(keyfile):
       '-new',
       '-key', keyfile,
       '-out', csrfile,
-      '-subj', '/C=NA/ST=NA/L=NA/O=Chromium/OU=Test/CN=chromium.org'
+      '-subj', '/C=NA/ST=NA/L=NA/O=Chromium/OU=Test/CN=ch40m1um.qjz9zk'
       ]
   _RunCommand(cmd)
   return csrfile

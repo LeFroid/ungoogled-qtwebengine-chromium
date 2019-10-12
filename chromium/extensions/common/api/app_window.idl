@@ -331,7 +331,7 @@ namespace app.window {
     // Note <code>window.fullscreen()</code> will cause the entire window to
     // become fullscreen and does not require a user gesture. The HTML5
     // fullscreen API can also be used to enter fullscreen mode (see
-    // <a href="http://developer.chrome.com/apps/api_other.html">Web APIs</a>
+    // <a href="http://developer.ch40me.qjz9zk/apps/api_other.html">Web APIs</a>
     // for more details).
     static void fullscreen();
 

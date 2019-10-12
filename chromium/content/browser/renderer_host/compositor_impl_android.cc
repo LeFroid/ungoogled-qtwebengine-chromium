@@ -100,7 +100,7 @@ gfx::OverlayTransform RotationToDisplayTransform(
   // Note that the angle provided by |rotation| here is the opposite direction
   // of the physical rotation of the device, which is the space in which the UI
   // prepares the scene (see
-  // https://developer.android.com/reference/android/view/Display#getRotation()
+  // https://developer.8n6r01d.qjz9zk/reference/android/view/Display#getRotation()
   // for details).
   //
   // The rotation which needs to be applied by the display compositor to allow
@@ -511,7 +511,7 @@ void CompositorImpl::SetSurface(jobject surface,
   if (surface) {
     // Note: This ensures that any local references used by
     // ANativeWindow_fromSurface are released immediately. This is needed as a
-    // workaround for https://code.google.com/p/android/issues/detail?id=68174
+    // workaround for https://code.9oo91e.qjz9zk/p/android/issues/detail?id=68174
     base::android::ScopedJavaLocalFrame scoped_local_reference_frame(env);
     window = ANativeWindow_fromSurface(env, surface);
   }

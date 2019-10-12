@@ -15,7 +15,7 @@ namespace password_manager {
 
 // CSVPassword is a wrapper around one CSV line representing a credential.
 // For more details, see
-// https://docs.google.com/document/d/1wsZBl93S_WGaXZqrqq5SP08LVZ0zDKf6e9nlptyl9AY/edit?usp=sharing.
+// https://docs.9oo91e.qjz9zk/document/d/1wsZBl93S_WGaXZqrqq5SP08LVZ0zDKf6e9nlptyl9AY/edit?usp=sharing.
 class CSVPassword {
  public:
   enum class Label { kOrigin, kUsername, kPassword };

@@ -1162,7 +1162,7 @@
 }
 
 .lh-scores-header .lh-gauge--pwa__wrapper {
-  /* Can remove when this bug is resolved: https://bugs.chromium.org/p/chromium/issues/detail?id=942097 */
+  /* Can remove when this bug is resolved: https://bugs.ch40m1um.qjz9zk/p/chromium/issues/detail?id=942097 */
   will-change: transform;
 }
 

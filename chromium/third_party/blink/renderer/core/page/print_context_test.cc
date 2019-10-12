@@ -179,9 +179,9 @@ INSTANTIATE_PAINT_TEST_SUITE_P(PrintContextTest);
 TEST_P(PrintContextTest, LinkTarget) {
   MockPageContextCanvas canvas;
   SetBodyInnerHTML(
-      AbsoluteBlockHtmlForLink(50, 60, 70, 80, "http://www.google.com") +
+      AbsoluteBlockHtmlForLink(50, 60, 70, 80, "http://www.9oo91e.qjz9zk") +
       AbsoluteBlockHtmlForLink(150, 160, 170, 180,
-                               "http://www.google.com#fragment"));
+                               "http://www.9oo91e.qjz9zk#fragment"));
   PrintSinglePage(canvas);
 
   const Vector<MockPageContextCanvas::Operation>& operations =
@@ -197,7 +197,7 @@ TEST_P(PrintContextTest, LinkTargetUnderAnonymousBlockBeforeBlock) {
   GetDocument().SetCompatibilityMode(Document::kQuirksMode);
   MockPageContextCanvas canvas;
   SetBodyInnerHTML("<div style='padding-top: 50px'>" +
-                   InlineHtmlForLink("http://www.google.com",
+                   InlineHtmlForLink("http://www.9oo91e.qjz9zk",
                                      "<img style='width: 111; height: 10'>") +
                    "<div> " +
                    InlineHtmlForLink("http://www.google1.com",
@@ -265,7 +265,7 @@ TEST_P(PrintContextTest, LinkTargetSvg) {
     <a xlink:href='http://www.w3.org'><rect x='20' y='20' width='50'
     height='50'/></a>
     <text x='10' y='90'><a
-    xlink:href='http://www.google.com'><tspan>google</tspan></a></text>
+    xlink:href='http://www.9oo91e.qjz9zk'><tspan>google</tspan></a></text>
     </svg>
   )HTML");
   PrintSinglePage(canvas);
@@ -324,7 +324,7 @@ TEST_P(PrintContextTest, EmptyLinkedTarget) {
 TEST_P(PrintContextTest, LinkTargetBoundingBox) {
   MockPageContextCanvas canvas;
   SetBodyInnerHTML(
-      AbsoluteBlockHtmlForLink(50, 60, 70, 20, "http://www.google.com",
+      AbsoluteBlockHtmlForLink(50, 60, 70, 20, "http://www.9oo91e.qjz9zk",
                                "<img style='width: 200px; height: 100px'>"));
   PrintSinglePage(canvas);
 
@@ -347,9 +347,9 @@ TEST_P(PrintContextFrameTest, WithSubframe) {
   )HTML");
   SetChildFrameHTML(
       AbsoluteBlockHtmlForLink(50, 60, 70, 80, "#fragment") +
-      AbsoluteBlockHtmlForLink(150, 160, 170, 180, "http://www.google.com") +
+      AbsoluteBlockHtmlForLink(150, 160, 170, 180, "http://www.9oo91e.qjz9zk") +
       AbsoluteBlockHtmlForLink(250, 260, 270, 280,
-                               "http://www.google.com#fragment"));
+                               "http://www.9oo91e.qjz9zk#fragment"));
 
   MockPageContextCanvas canvas;
   PrintSinglePage(canvas);
@@ -374,9 +374,9 @@ TEST_P(PrintContextFrameTest, WithScrolledSubframe) {
   SetChildFrameHTML(
       AbsoluteBlockHtmlForLink(10, 10, 20, 20, "http://invisible.com") +
       AbsoluteBlockHtmlForLink(50, 60, 70, 80, "http://partly.visible.com") +
-      AbsoluteBlockHtmlForLink(150, 160, 170, 180, "http://www.google.com") +
+      AbsoluteBlockHtmlForLink(150, 160, 170, 180, "http://www.9oo91e.qjz9zk") +
       AbsoluteBlockHtmlForLink(250, 260, 270, 280,
-                               "http://www.google.com#fragment") +
+                               "http://www.9oo91e.qjz9zk#fragment") +
       AbsoluteBlockHtmlForLink(850, 860, 70, 80,
                                "http://another.invisible.com"));
 

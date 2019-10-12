@@ -50,11 +50,11 @@ void RunTest(VisitTracker* tracker, VisitToTest* test, int test_count) {
 TEST(VisitTracker, SimpleTransitions) {
   VisitToTest test_simple[] = {
       // Started here:
-      {1, 1, "http://www.google.com/", 1, "", 0},
+      {1, 1, "http://www.9oo91e.qjz9zk/", 1, "", 0},
       // Clicked a link:
-      {1, 2, "http://images.google.com/", 2, "http://www.google.com/", 1},
+      {1, 2, "http://images.9oo91e.qjz9zk/", 2, "http://www.9oo91e.qjz9zk/", 1},
       // Went back, then clicked a link:
-      {1, 3, "http://video.google.com/", 3, "http://www.google.com/", 1},
+      {1, 3, "http://video.9oo91e.qjz9zk/", 3, "http://www.9oo91e.qjz9zk/", 1},
   };
 
   VisitTracker tracker;
@@ -76,7 +76,7 @@ TEST(VisitTracker, Frames) {
       // ...and then the second subframe somewhere else
       {1, 3, "http://fud.com/", 5, "http://foo.com/ad2.html", 3},
       // ...and then the main frame somewhere else.
-      {1, 4, "http://www.google.com/", 6, "http://foo.com/", 1},
+      {1, 4, "http://www.9oo91e.qjz9zk/", 6, "http://foo.com/", 1},
   };
 
   VisitTracker tracker;
@@ -97,8 +97,8 @@ TEST(VisitTracker, MultiProcess) {
     {1, 2, "http://bar.com/",           5, "http://foo.com/ad.html", 3},
     {2, 2, "http://bar.com/",           6, "http://foo.com/ad.html", 4},
     // Main frame is navigated:
-    {1, 3, "http://www.google.com/",    7, "http://foo.com/",        1},
-    {2, 3, "http://www.google.com/",    8, "http://foo.com/",        2},
+    {1, 3, "http://www.9oo91e.qjz9zk/",    7, "http://foo.com/",        1},
+    {2, 3, "http://www.9oo91e.qjz9zk/",    8, "http://foo.com/",        2},
   };
 
   VisitTracker tracker;
@@ -109,8 +109,8 @@ TEST(VisitTracker, MultiProcess) {
 TEST(VisitTracker, ProcessRemove) {
   // Simple navigation from one process.
   VisitToTest part1[] = {
-      {1, 1, "http://www.google.com/", 1, "", 0},
-      {1, 2, "http://images.google.com/", 2, "http://www.google.com/", 1},
+      {1, 1, "http://www.9oo91e.qjz9zk/", 1, "", 0},
+      {1, 2, "http://images.9oo91e.qjz9zk/", 2, "http://www.9oo91e.qjz9zk/", 1},
   };
 
   VisitTracker tracker;
@@ -122,7 +122,7 @@ TEST(VisitTracker, ProcessRemove) {
   // Simple navigation from a new process with the same ID, it should not find
   // a referrer.
   VisitToTest part2[] = {
-      {1, 1, "http://images.google.com/", 2, "http://www.google.com/", 0},
+      {1, 1, "http://images.9oo91e.qjz9zk/", 2, "http://www.9oo91e.qjz9zk/", 0},
   };
   RunTest(&tracker, part2, base::size(part2));
 }

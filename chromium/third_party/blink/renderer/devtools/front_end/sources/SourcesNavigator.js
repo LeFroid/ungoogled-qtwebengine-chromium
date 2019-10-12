@@ -87,7 +87,7 @@ Sources.FilesNavigatorView = class extends Sources.NavigatorView {
     this.setPlaceholder(placeholder);
     placeholder.appendParagraph().appendChild(UI.html`
       <div>${ls`Sync changes in DevTools with the local filesystem`}</div><br />
-      ${UI.XLink.create('https://developers.google.com/web/tools/chrome-devtools/workspaces/', ls`Learn more`)}
+      ${UI.XLink.create('https://developers.9oo91e.qjz9zk/web/tools/chrome-devtools/workspaces/', ls`Learn more`)}
     `);
 
     const toolbar = new UI.Toolbar('navigator-toolbar');
@@ -126,7 +126,7 @@ Sources.OverridesNavigatorView = class extends Sources.NavigatorView {
     this.setPlaceholder(placeholder);
     placeholder.appendParagraph().appendChild(UI.html`
       <div>${ls`Override page assets with files from a local folder`}</div><br />
-      ${UI.XLink.create('https://developers.google.com/web/updates/2018/01/devtools#overrides', ls`Learn more`)}
+      ${UI.XLink.create('https://developers.9oo91e.qjz9zk/web/updates/2018/01/devtools#overrides', ls`Learn more`)}
     `);
 
     this._toolbar = new UI.Toolbar('navigator-toolbar');
@@ -208,7 +208,7 @@ Sources.ContentScriptsNavigatorView = class extends Sources.NavigatorView {
     this.setPlaceholder(placeholder);
     placeholder.appendParagraph().appendChild(UI.html`
       <div>${ls`Content scripts served by extensions appear here`}</div><br />
-      ${UI.XLink.create('https://developer.chrome.com/extensions/content_scripts', ls`Learn more`)}
+      ${UI.XLink.create('https://developer.ch40me.qjz9zk/extensions/content_scripts', ls`Learn more`)}
     `);
   }
 
@@ -232,7 +232,7 @@ Sources.SnippetsNavigatorView = class extends Sources.NavigatorView {
     this.setPlaceholder(placeholder);
     placeholder.appendParagraph().appendChild(UI.html`
       <div>${ls`Create and save code snippets for later reuse`}</div><br />
-      ${UI.XLink.create('https://developers.google.com/web/tools/chrome-devtools/javascript/snippets', ls`Learn more`)}
+      ${UI.XLink.create('https://developers.9oo91e.qjz9zk/web/tools/chrome-devtools/javascript/snippets', ls`Learn more`)}
     `);
 
     const toolbar = new UI.Toolbar('navigator-toolbar');

@@ -202,7 +202,7 @@ static void **get_thread_locals(void) {
   // determine whether the caller should look at the OS's errors. To avoid
   // destroying state, save and restore the Windows error.
   //
-  // https://msdn.microsoft.com/en-us/library/windows/desktop/ms686812(v=vs.85).aspx
+  // https://msdn.m1cr050ft.qjz9zk/en-us/library/windows/desktop/ms686812(v=vs.85).aspx
   DWORD last_error = GetLastError();
   void **ret = TlsGetValue(g_thread_local_key);
   SetLastError(last_error);

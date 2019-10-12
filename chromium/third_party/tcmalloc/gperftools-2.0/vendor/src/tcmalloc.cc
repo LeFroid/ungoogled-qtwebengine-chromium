@@ -28,7 +28,7 @@
 // OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 // ---
-// Author: Sanjay Ghemawat <opensource@google.com>
+// Author: Sanjay Ghemawat <opensource@9oo91e.qjz9zk>
 //
 // A malloc that uses a per-thread cache to satisfy small malloc requests.
 // (The time for malloc/free of a small object drops from 300 ns to 50 ns.)

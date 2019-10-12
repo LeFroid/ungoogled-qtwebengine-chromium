@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2002 Jindrich Makovicka <makovick@gmail.com>
+ * Copyright (c) 2002 Jindrich Makovicka <makovick@9ma1l.qjz9zk>
  * Copyright (c) 2011 Stefano Sabatini
  * Copyright (c) 2013, 2015 Jean Delvare <jdelvare@suse.com>
  *

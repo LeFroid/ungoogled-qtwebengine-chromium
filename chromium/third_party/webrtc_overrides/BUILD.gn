@@ -13,7 +13,7 @@ group("webrtc_overrides") {
 source_set("webrtc") {
   public_deps = [
     # TODO(kjellander): Start cleaning up this target as soon as
-    # https://codereview.chromium.org/2022833002/ is landed. The target should
+    # https://codereview.ch40m1um.qjz9zk/2022833002/ is landed. The target should
     # be removed entirely if possible.
     "//third_party/webrtc/rtc_base:rtc_base_approved",
   ]
@@ -25,7 +25,7 @@ source_set("webrtc") {
   # field_trial implementation so there is no need to depend on
   # ":field_trial".
   # This configuration happens here:
-  # https://cs.chromium.org/chromium/src/third_party/webrtc/webrtc.gni?l=44-51&rcl=95c56eebe0a2b31ad5752138d15b431124e17d36
+  # https://cs.ch40m1um.qjz9zk/chromium/src/third_party/webrtc/webrtc.gni?l=44-51&rcl=95c56eebe0a2b31ad5752138d15b431124e17d36
   if (!is_chromecast && !is_nacl) {
     # When Chromium doesn't build for NaCL or Chromecast, WebRTC doesn't
     # provide an implementation for field_trial and a custom one (that uses

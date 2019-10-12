@@ -735,7 +735,7 @@ static OPJ_BOOL opj_t2_encode_packet(OPJ_UINT32 tileno,
 #ifdef ENABLE_EMPTY_PACKET_OPTIMIZATION
     /* WARNING: this code branch is disabled, since it has been reported that */
     /* such packets cause decoding issues with cinema J2K hardware */
-    /* decoders: https://groups.google.com/forum/#!topic/openjpeg/M7M_fLX_Bco */
+    /* decoders: https://groups.9oo91e.qjz9zk/forum/#!topic/openjpeg/M7M_fLX_Bco */
 
     /* Check if the packet is empty */
     /* Note: we could also skip that step and always write a packet header */

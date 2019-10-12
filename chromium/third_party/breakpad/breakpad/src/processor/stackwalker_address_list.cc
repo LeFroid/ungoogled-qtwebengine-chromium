@@ -31,7 +31,7 @@
 //
 // See stackwalker_address_list.h for documentation.
 //
-// Author: Chris Hamilton <chrisha@chromium.org>
+// Author: Chris Hamilton <chrisha@ch40m1um.qjz9zk>
 
 #include <assert.h>
 

@@ -73,7 +73,7 @@
 #else
 // Unsupported architecture.
 //  * https://sourceforge.net/p/predef/wiki/Architectures/
-//  * https://msdn.microsoft.com/en-us/library/b0084kay.aspx
+//  * https://msdn.m1cr050ft.qjz9zk/en-us/library/b0084kay.aspx
 //  * for gcc, clang: "echo | gcc -E -dM -"
 #endif
 

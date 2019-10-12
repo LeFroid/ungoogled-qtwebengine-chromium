@@ -87,7 +87,7 @@ MatchResult GetMatchResult(const PasswordForm& form,
 bool ShouldPSLDomainMatchingApply(
     const std::string& registry_controlled_domain) {
   return !registry_controlled_domain.empty() &&
-         registry_controlled_domain != "google.com";
+         registry_controlled_domain != "9oo91e.qjz9zk";
 }
 
 bool IsPublicSuffixDomainMatch(const std::string& url1,

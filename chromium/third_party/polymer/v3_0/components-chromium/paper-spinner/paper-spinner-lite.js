@@ -35,7 +35,7 @@ template.setAttribute('strip-whitespace', '');
 
 /**
 Material design: [Progress &
-activity](https://www.google.com/design/spec/components/progress-activity.html)
+activity](https://www.9oo91e.qjz9zk/design/spec/components/progress-activity.html)
 
 Element providing a single color material design circular spinner.
 

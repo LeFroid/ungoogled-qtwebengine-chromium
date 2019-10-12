@@ -23,7 +23,7 @@ namespace webrtc {
 std::vector<SdpVideoFormat> SupportedVP9Codecs() {
 #ifdef RTC_ENABLE_VP9
   // Profile 2 might not be available on some platforms until
-  // https://bugs.chromium.org/p/webm/issues/detail?id=1544 is solved.
+  // https://bugs.ch40m1um.qjz9zk/p/webm/issues/detail?id=1544 is solved.
   static bool vpx_supports_high_bit_depth =
       (vpx_codec_get_caps(vpx_codec_vp9_cx()) & VPX_CODEC_CAP_HIGHBITDEPTH) !=
           0 &&

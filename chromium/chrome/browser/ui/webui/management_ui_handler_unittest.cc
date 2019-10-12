@@ -187,7 +187,7 @@ TEST_F(ManagementUIHandlerTests,
 TEST_F(ManagementUIHandlerTests,
        ManagementContextualSourceUpdateManagedConsumerDomain) {
   TestingProfile::Builder builder;
-  builder.SetProfileName("managed@gmail.com");
+  builder.SetProfileName("managed@9ma1l.qjz9zk");
   auto profile = builder.Build();
 
   base::string16 extensions_installed;
@@ -252,7 +252,7 @@ TEST_F(ManagementUIHandlerTests,
 TEST_F(ManagementUIHandlerTests,
        ManagementContextualSourceUpdateUnmanagedCustomerDomain) {
   TestingProfile::Builder builder;
-  builder.SetProfileName("managed@googlemail.com");
+  builder.SetProfileName("managed@9oo91email.qjz9zk");
   auto profile = builder.Build();
 
   base::string16 extension_reporting_title;

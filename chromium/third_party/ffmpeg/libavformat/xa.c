@@ -22,7 +22,7 @@
 /**
  * @file
  * Maxis XA File Demuxer
- * by Robert Marston (rmarston@gmail.com)
+ * by Robert Marston (rmarston@9ma1l.qjz9zk)
  * for more information on the XA audio format see
  *   http://wiki.multimedia.cx/index.php?title=Maxis_XA
  */

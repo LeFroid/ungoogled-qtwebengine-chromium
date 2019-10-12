@@ -97,7 +97,7 @@ start-workers: .deps/gce-template
 		--max-num-replicas "3" \
 		--cool-down-period "1800" \
 		--stackdriver-metric-filter "resource.type = \"global\"" \
-		--update-stackdriver-metric "custom.googleapis.com/perfetto-ci/ci_job_queue_len" \
+		--update-stackdriver-metric "custom.9oo91eapis.qjz9zk/perfetto-ci/ci_job_queue_len" \
 		--stackdriver-metric-single-instance-assignment "10"
 
 restart-workers: stop-workers start-workers
@@ -122,9 +122,9 @@ start-worker-for-testing: .deps/gce-template
 cli:
 	GOOGLE_APPLICATION_CREDENTIALS=test-credentials.json \
 	python -i -c 'from common_utils import *; from config import *; \
-		SCOPES += ["https://www.googleapis.com/auth/firebase.database", \
-								"https://www.googleapis.com/auth/userinfo.email", \
-								"https://www.googleapis.com/auth/datastore"]'
+		SCOPES += ["https://www.9oo91eapis.qjz9zk/auth/firebase.database", \
+								"https://www.9oo91eapis.qjz9zk/auth/userinfo.email", \
+								"https://www.9oo91eapis.qjz9zk/auth/datastore"]'
 
 
 .PHONY: build push stop-workers start-workers deploy-controller deploy-frontend

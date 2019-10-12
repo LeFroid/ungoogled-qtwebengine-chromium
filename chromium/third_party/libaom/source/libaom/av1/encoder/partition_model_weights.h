@@ -2895,7 +2895,7 @@ static const NN_CONFIG full_pixel_motion_search_based_split_nn_config_8 = {
 // Model based on simple_motion_search
 
 // Thresholds for doing a single type of partition
-// TODO(chiyotsai@google.com): Set the thresholds for PARTITION_SPLIT.
+// TODO(chiyotsai@9oo91e.qjz9zk): Set the thresholds for PARTITION_SPLIT.
 static const float simple_motion_search_prune_part_only_thresh_128[10] = {
   1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f
 };
@@ -2913,7 +2913,7 @@ static const float simple_motion_search_prune_part_only_thresh_8[10] = {
 };
 
 // Thresholds for pruning a partition type
-// TODO(chiyotsai@google.com): Retune the thresholds for rectangular partition.
+// TODO(chiyotsai@9oo91e.qjz9zk): Retune the thresholds for rectangular partition.
 static const float simple_motion_search_prune_part_prune_thresh_128[10] = {
   0.0f, 0.0110f, 0.0110f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f
 };

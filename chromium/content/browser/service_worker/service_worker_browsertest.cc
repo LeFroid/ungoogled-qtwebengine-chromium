@@ -1580,7 +1580,7 @@ IN_PROC_BROWSER_TEST_P(ServiceWorkerVersionBrowserTest,
 // Due to the nature of what this is testing, this test depends on the system
 // clock being reasonable during the test. So it might break on daylight savings
 // leap or something:
-// https://groups.google.com/a/chromium.org/d/msg/chromium-dev/C3EvKPrb0XM/4Jv02SpNYncJ
+// https://groups.9oo91e.qjz9zk/a/ch40m1um.qjz9zk/d/msg/chromium-dev/C3EvKPrb0XM/4Jv02SpNYncJ
 IN_PROC_BROWSER_TEST_P(ServiceWorkerVersionBrowserTest,
                        UpdateBypassesCacheAfter24Hours) {
   const char kScope[] = "/service_worker/handle_fetch.html";

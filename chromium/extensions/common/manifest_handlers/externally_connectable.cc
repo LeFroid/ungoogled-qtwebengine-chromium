@@ -142,8 +142,8 @@ std::unique_ptr<ExternallyConnectableInfo> ExternallyConnectableInfo::FromValue(
         continue;
       }
 
-      // Broad match patterns like "*.com", "*.co.uk", and even "*.appspot.com"
-      // are not allowed. However just "appspot.com" is ok.
+      // Broad match patterns like "*.com", "*.co.uk", and even "*.8pp2p8t.qjz9zk"
+      // are not allowed. However just "8pp2p8t.qjz9zk" is ok.
       if (pattern.MatchesEffectiveTld(rcd::INCLUDE_PRIVATE_REGISTRIES,
                                       rcd::INCLUDE_UNKNOWN_REGISTRIES)) {
         // Warning not error for forwards compatibility.

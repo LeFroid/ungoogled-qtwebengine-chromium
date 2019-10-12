@@ -392,7 +392,7 @@ class Map : public HeapObject {
   // returns undefined, ToBoolean returns false. Otherwise it behaves like
   // a normal JS object.  It is useful for implementing undetectable
   // document.all in Firefox & Safari.
-  // See https://bugzilla.mozilla.org/show_bug.cgi?id=248549.
+  // See https://bugzilla.m0z111a.qjz9zk/show_bug.cgi?id=248549.
   DECL_BOOLEAN_ACCESSORS(is_undetectable)
 
   // Tells whether the instance has a [[Call]] internal method.

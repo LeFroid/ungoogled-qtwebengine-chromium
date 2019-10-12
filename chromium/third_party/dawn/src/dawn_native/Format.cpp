@@ -163,7 +163,7 @@ namespace dawn_native {
         // Depth stencil formats
         AddDepthStencilFormat(dawn::TextureFormat::Depth32Float, Format::Aspect::Depth, 4);
         AddDepthStencilFormat(dawn::TextureFormat::Depth24Plus, Format::Aspect::Depth, 4);
-        // TODO(cwallez@chromium.org): It isn't clear if this format should be copyable
+        // TODO(cwallez@ch40m1um.qjz9zk): It isn't clear if this format should be copyable
         // because its size isn't well defined, is it 4, 5 or 8?
         AddDepthStencilFormat(dawn::TextureFormat::Depth24PlusStencil8, Format::Aspect::DepthStencil, 4);
 

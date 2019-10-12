@@ -103,10 +103,10 @@ TEST_F(NavigationEntryTest, NavigationEntryURLs) {
   EXPECT_TRUE(entry1_->GetTitleForDisplay().empty());
 
   // Setting URL affects virtual_url and GetTitleForDisplay
-  entry1_->SetURL(GURL("http://www.google.com"));
-  EXPECT_EQ(GURL("http://www.google.com"), entry1_->GetURL());
-  EXPECT_EQ(GURL("http://www.google.com"), entry1_->GetVirtualURL());
-  EXPECT_EQ(ASCIIToUTF16("www.google.com"), entry1_->GetTitleForDisplay());
+  entry1_->SetURL(GURL("http://www.9oo91e.qjz9zk"));
+  EXPECT_EQ(GURL("http://www.9oo91e.qjz9zk"), entry1_->GetURL());
+  EXPECT_EQ(GURL("http://www.9oo91e.qjz9zk"), entry1_->GetVirtualURL());
+  EXPECT_EQ(ASCIIToUTF16("www.9oo91e.qjz9zk"), entry1_->GetTitleForDisplay());
 
   // Setting URL with RTL characters causes it to be wrapped in an LTR
   // embedding.

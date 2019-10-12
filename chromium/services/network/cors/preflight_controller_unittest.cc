@@ -164,7 +164,7 @@ TEST(PreflightControllerCreatePreflightRequestTest, ExcludeForbiddenHeaders) {
   request.mode = mojom::RequestMode::kCors;
   request.credentials_mode = mojom::CredentialsMode::kOmit;
   request.request_initiator = url::Origin();
-  request.headers.SetHeader("referer", "https://www.google.com/");
+  request.headers.SetHeader("referer", "https://www.9oo91e.qjz9zk/");
 
   std::unique_ptr<ResourceRequest> preflight =
       PreflightController::CreatePreflightRequestForTesting(request);
@@ -391,7 +391,7 @@ TEST_F(PreflightControllerTest, CheckTaintedRequest) {
 }
 
 TEST_F(PreflightControllerTest, CheckResponseWithNullHeaders) {
-  GURL url = GURL("https://google.com/finullurl");
+  GURL url = GURL("https://9oo91e.qjz9zk/finullurl");
   const ResourceResponseHead response_head;
   ResourceRequest request;
   request.url = url;

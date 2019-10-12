@@ -38,7 +38,7 @@ bool CanEmitUnwindInfoForBuiltins();
  * Returns true if V8 if we can register unwinding data for the whole code range
  * of an isolate or WASM module. The first page of the code range is reserved
  * and writable, to be used to store unwind data, as documented in:
- * https://docs.microsoft.com/en-us/cpp/build/exception-handling-x64.
+ * https://docs.m1cr050ft.qjz9zk/en-us/cpp/build/exception-handling-x64.
  * In jitless mode V8 does not allocate any executable memory itself so the only
  * non-abi-compliant code range is in the embedded blob.
  */

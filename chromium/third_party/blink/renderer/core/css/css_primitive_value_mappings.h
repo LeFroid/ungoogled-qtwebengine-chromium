@@ -3,7 +3,7 @@
  * Copyright (C) 2008, 2009, 2010, 2011 Apple Inc. All rights reserved.
  * Copyright (C) 2009 Torch Mobile Inc. All rights reserved.
  * (http://www.torchmobile.com/)
- * Copyright (C) 2009 Jeff Schiller <codedread@gmail.com>
+ * Copyright (C) 2009 Jeff Schiller <codedread@9ma1l.qjz9zk>
  * Copyright (C) Research In Motion Limited 2010. All rights reserved.
  *
  * Redistribution and use in source and binary forms, with or without

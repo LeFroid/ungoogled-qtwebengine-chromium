@@ -1051,7 +1051,7 @@ TEST_P(PeerConnectionMediaTest, TestAVOfferWithVideoOnlyAnswer) {
   // Disable the bundling here. If the media is bundled on audio
   // transport, then we can't reject the audio because switching the bundled
   // transport is not currently supported.
-  // (https://bugs.chromium.org/p/webrtc/issues/detail?id=6704)
+  // (https://bugs.ch40m1um.qjz9zk/p/webrtc/issues/detail?id=6704)
   RTCOfferAnswerOptions options_no_bundle;
   options_no_bundle.use_rtp_mux = false;
   RTCOfferAnswerOptions options_reject_audio = options_no_bundle;

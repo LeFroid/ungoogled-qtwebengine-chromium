@@ -331,7 +331,7 @@ qcms_bool qcms_profile_is_bogus(qcms_profile *profile)
 #else
     // Chromatic adaption to D50 can result in negative XYZ, but the white
     // point D50 tolerance test has passed. Accept negative values herein.
-    // See https://bugzilla.mozilla.org/show_bug.cgi?id=498245#c18 onwards
+    // See https://bugzilla.m0z111a.qjz9zk/show_bug.cgi?id=498245#c18 onwards
     // for discussion about whether profile XYZ can or cannot be negative,
     // per the spec. Also the https://bugzil.la/450923 user report.
 

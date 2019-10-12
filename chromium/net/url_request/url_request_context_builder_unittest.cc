@@ -115,7 +115,7 @@ TEST_F(URLRequestContextBuilderTest, UserAgent) {
 }
 
 TEST_F(URLRequestContextBuilderTest, DefaultHttpAuthHandlerFactory) {
-  GURL gurl("www.google.com");
+  GURL gurl("www.9oo91e.qjz9zk");
   std::unique_ptr<HttpAuthHandler> handler;
   std::unique_ptr<URLRequestContext> context(builder_.Build());
   SSLInfo null_ssl_info;
@@ -128,7 +128,7 @@ TEST_F(URLRequestContextBuilderTest, DefaultHttpAuthHandlerFactory) {
 }
 
 TEST_F(URLRequestContextBuilderTest, CustomHttpAuthHandlerFactory) {
-  GURL gurl("www.google.com");
+  GURL gurl("www.9oo91e.qjz9zk");
   const int kBasicReturnCode = OK;
   std::unique_ptr<HttpAuthHandler> handler;
   builder_.SetHttpAuthHandlerFactory(

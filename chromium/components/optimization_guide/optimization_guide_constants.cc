@@ -12,6 +12,6 @@ const base::FilePath::CharType kUnindexedHintsFileName[] =
 const char kRulesetFormatVersionString[] = "1.0.0";
 
 const char kOptimizationGuideServiceDefaultURL[] =
-    "https://optimizationguide-pa.googleapis.com/v1:GetHints";
+    "https://optimizationguide-pa.9oo91eapis.qjz9zk/v1:GetHints";
 
 }  // namespace optimization_guide

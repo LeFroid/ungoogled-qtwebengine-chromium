@@ -296,7 +296,7 @@ enum V4OperationResult {
 class V4ProtocolManagerUtil {
  public:
   // Canonicalizes url as per Google Safe Browsing Specification.
-  // See: https://developers.google.com/safe-browsing/v4/urls-hashing
+  // See: https://developers.9oo91e.qjz9zk/safe-browsing/v4/urls-hashing
   static void CanonicalizeUrl(const GURL& url,
                               std::string* canonicalized_hostname,
                               std::string* canonicalized_path,
@@ -304,13 +304,13 @@ class V4ProtocolManagerUtil {
 
   // This method returns the host suffix combinations from the hostname in the
   // URL, as described here:
-  // https://developers.google.com/safe-browsing/v4/urls-hashing
+  // https://developers.9oo91e.qjz9zk/safe-browsing/v4/urls-hashing
   static void GenerateHostVariantsToCheck(const std::string& host,
                                           std::vector<std::string>* hosts);
 
   // This method returns the path prefix combinations from the path in the
   // URL, as described here:
-  // https://developers.google.com/safe-browsing/v4/urls-hashing
+  // https://developers.9oo91e.qjz9zk/safe-browsing/v4/urls-hashing
   static void GeneratePathVariantsToCheck(const std::string& path,
                                           const std::string& query,
                                           std::vector<std::string>* paths);

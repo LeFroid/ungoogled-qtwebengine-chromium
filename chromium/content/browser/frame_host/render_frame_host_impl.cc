@@ -7355,8 +7355,8 @@ void RenderFrameHostImpl::AddSameSiteCookieDeprecationMessage(
         "cross-site requests if they are set with `SameSite=None` and "
         "`Secure`. You can review cookies in developer tools under "
         "Application>Storage>Cookies and see more details at "
-        "https://www.chromestatus.com/feature/5088147346030592 and "
-        "https://www.chromestatus.com/feature/5633521622188032.";
+        "https://www.ch40mestatus.qjz9zk/feature/5088147346030592 and "
+        "https://www.ch40mestatus.qjz9zk/feature/5633521622188032.";
   }
   if (status == net::CanonicalCookie::CookieInclusionStatus::
                     EXCLUDE_SAMESITE_NONE_INSECURE) {
@@ -7372,7 +7372,7 @@ void RenderFrameHostImpl::AddSameSiteCookieDeprecationMessage(
         "`SameSite=None` if they are also marked `Secure`. You "
         "can review cookies in developer tools under "
         "Application>Storage>Cookies and see more details at "
-        "https://www.chromestatus.com/feature/5633521622188032.";
+        "https://www.ch40mestatus.qjz9zk/feature/5633521622188032.";
   }
 
   if (deprecation_message.empty())

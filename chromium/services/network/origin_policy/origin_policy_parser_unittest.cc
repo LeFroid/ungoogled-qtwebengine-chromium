@@ -155,25 +155,25 @@ TEST(OriginPolicyParser, CSPDispositionAbsent) {
 
 TEST(OriginPolicyParser, FeatureOne) {
   auto policy_contents = OriginPolicyParser::Parse(R"(
-      { "feature-policy": ["geolocation 'self' http://maps.google.com"] } )");
+      { "feature-policy": ["geolocation 'self' http://maps.9oo91e.qjz9zk"] } )");
   ASSERT_EQ(1U, policy_contents->features.size());
-  ASSERT_EQ("geolocation 'self' http://maps.google.com",
+  ASSERT_EQ("geolocation 'self' http://maps.9oo91e.qjz9zk",
             policy_contents->features[0]);
 }
 
 TEST(OriginPolicyParser, FeatureTwo) {
   auto policy_contents = OriginPolicyParser::Parse(R"(
-      { "feature-policy": ["geolocation 'self' http://maps.google.com",
+      { "feature-policy": ["geolocation 'self' http://maps.9oo91e.qjz9zk",
                      "camera https://example.com"]} )");
   ASSERT_EQ(2U, policy_contents->features.size());
-  ASSERT_EQ("geolocation 'self' http://maps.google.com",
+  ASSERT_EQ("geolocation 'self' http://maps.9oo91e.qjz9zk",
             policy_contents->features[0]);
   ASSERT_EQ("camera https://example.com", policy_contents->features[1]);
 }
 
 TEST(OriginPolicyParser, FeatureTwoPolicies) {
   auto policy_contents = OriginPolicyParser::Parse(R"(
-      { "feature-policy": ["geolocation 'self' http://maps.google.com"],
+      { "feature-policy": ["geolocation 'self' http://maps.9oo91e.qjz9zk"],
         "feature-policy": ["camera https://example.com"] } )");
 
   // TODO(vogelheim): Determine whether this is the correct behaviour.
@@ -182,7 +182,7 @@ TEST(OriginPolicyParser, FeatureTwoPolicies) {
 
 TEST(OriginPolicyParser, FeatureComma) {
   auto policy_contents = OriginPolicyParser::Parse(R"(
-      { "feature-policy": ["geolocation 'self' http://maps.google.com, camera https://example.com"]} )");
+      { "feature-policy": ["geolocation 'self' http://maps.9oo91e.qjz9zk, camera https://example.com"]} )");
 
   // TODO: Determine what to do with this case !
   ASSERT_EQ(1U, policy_contents->features.size());

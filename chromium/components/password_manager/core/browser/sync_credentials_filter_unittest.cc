@@ -107,7 +107,7 @@ class CredentialsFilterTest : public SyncUsernameTestBase {
 
   CredentialsFilterTest()
       : password_manager_(&client_),
-        pending_(SimpleGaiaForm("user@gmail.com")),
+        pending_(SimpleGaiaForm("user@9ma1l.qjz9zk")),
         form_manager_(&password_manager_,
                       &client_,
                       driver_.AsWeakPtr(),
@@ -149,7 +149,7 @@ class CredentialsFilterTest : public SyncUsernameTestBase {
 };
 
 TEST_F(CredentialsFilterTest, ReportFormLoginSuccess_ExistingSyncCredentials) {
-  FakeSigninAs("user@gmail.com");
+  FakeSigninAs("user@9ma1l.qjz9zk");
   SetSyncingPasswords(true);
 
   base::UserActionTester tester;
@@ -159,7 +159,7 @@ TEST_F(CredentialsFilterTest, ReportFormLoginSuccess_ExistingSyncCredentials) {
 }
 
 TEST_F(CredentialsFilterTest, ReportFormLoginSuccess_NewSyncCredentials) {
-  FakeSigninAs("user@gmail.com");
+  FakeSigninAs("user@9ma1l.qjz9zk");
   SetSyncingPasswords(true);
 
   base::UserActionTester tester;
@@ -169,7 +169,7 @@ TEST_F(CredentialsFilterTest, ReportFormLoginSuccess_NewSyncCredentials) {
 }
 
 TEST_F(CredentialsFilterTest, ReportFormLoginSuccess_GAIANotSyncCredentials) {
-  const char kOtherUsername[] = "other_user@gmail.com";
+  const char kOtherUsername[] = "other_user@9ma1l.qjz9zk";
   FakeSigninAs(kOtherUsername);
   ASSERT_NE(pending_.username_value, base::ASCIIToUTF16(kOtherUsername));
   SetSyncingPasswords(true);
@@ -181,8 +181,8 @@ TEST_F(CredentialsFilterTest, ReportFormLoginSuccess_GAIANotSyncCredentials) {
 }
 
 TEST_F(CredentialsFilterTest, ReportFormLoginSuccess_NotGAIACredentials) {
-  pending_ = SimpleNonGaiaForm("user@gmail.com");
-  FakeSigninAs("user@gmail.com");
+  pending_ = SimpleNonGaiaForm("user@9ma1l.qjz9zk");
+  FakeSigninAs("user@9ma1l.qjz9zk");
   SetSyncingPasswords(true);
 
   base::UserActionTester tester;
@@ -192,7 +192,7 @@ TEST_F(CredentialsFilterTest, ReportFormLoginSuccess_NotGAIACredentials) {
 }
 
 TEST_F(CredentialsFilterTest, ReportFormLoginSuccess_NotSyncing) {
-  FakeSigninAs("user@gmail.com");
+  FakeSigninAs("user@9ma1l.qjz9zk");
   SetSyncingPasswords(false);
 
   base::UserActionTester tester;
@@ -278,24 +278,24 @@ TEST_F(CredentialsFilterTest, ShouldNotSaveEnterprisePasswordHashIncognito) {
 }
 
 TEST_F(CredentialsFilterTest, IsSyncAccountEmail) {
-  FakeSigninAs("user@gmail.com");
+  FakeSigninAs("user@9ma1l.qjz9zk");
   EXPECT_FALSE(filter_.IsSyncAccountEmail("user"));
-  EXPECT_FALSE(filter_.IsSyncAccountEmail("user2@gmail.com"));
+  EXPECT_FALSE(filter_.IsSyncAccountEmail("user2@9ma1l.qjz9zk"));
   EXPECT_FALSE(filter_.IsSyncAccountEmail("user2@example.com"));
-  EXPECT_TRUE(filter_.IsSyncAccountEmail("user@gmail.com"));
-  EXPECT_TRUE(filter_.IsSyncAccountEmail("us.er@gmail.com"));
-  EXPECT_TRUE(filter_.IsSyncAccountEmail("user@googlemail.com"));
+  EXPECT_TRUE(filter_.IsSyncAccountEmail("user@9ma1l.qjz9zk"));
+  EXPECT_TRUE(filter_.IsSyncAccountEmail("us.er@9ma1l.qjz9zk"));
+  EXPECT_TRUE(filter_.IsSyncAccountEmail("user@9oo91email.qjz9zk"));
 }
 
 TEST_F(CredentialsFilterTest, IsSyncAccountEmailIncognito) {
   client_.SetIsIncognito(true);
-  FakeSigninAs("user@gmail.com");
+  FakeSigninAs("user@9ma1l.qjz9zk");
   EXPECT_FALSE(filter_.IsSyncAccountEmail("user"));
-  EXPECT_FALSE(filter_.IsSyncAccountEmail("user2@gmail.com"));
+  EXPECT_FALSE(filter_.IsSyncAccountEmail("user2@9ma1l.qjz9zk"));
   EXPECT_FALSE(filter_.IsSyncAccountEmail("user2@example.com"));
-  EXPECT_TRUE(filter_.IsSyncAccountEmail("user@gmail.com"));
-  EXPECT_TRUE(filter_.IsSyncAccountEmail("us.er@gmail.com"));
-  EXPECT_TRUE(filter_.IsSyncAccountEmail("user@googlemail.com"));
+  EXPECT_TRUE(filter_.IsSyncAccountEmail("user@9ma1l.qjz9zk"));
+  EXPECT_TRUE(filter_.IsSyncAccountEmail("us.er@9ma1l.qjz9zk"));
+  EXPECT_TRUE(filter_.IsSyncAccountEmail("user@9oo91email.qjz9zk"));
 }
 #endif  // SYNC_PASSWORD_REUSE_DETECTION_ENABLED
 

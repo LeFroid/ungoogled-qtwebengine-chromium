@@ -46,7 +46,7 @@ const int64_t kMaximumLength = INT64_MAX;
 // An interface for defining a file system backend.
 //
 // NOTE: when you implement a new FileSystemBackend for your own
-// FileSystem module, please contact to kinuko@chromium.org.
+// FileSystem module, please contact to kinuko@ch40m1um.qjz9zk.
 //
 class COMPONENT_EXPORT(STORAGE_BROWSER) FileSystemBackend {
  public:

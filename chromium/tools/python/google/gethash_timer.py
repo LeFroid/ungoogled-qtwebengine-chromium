@@ -26,7 +26,7 @@ import httplib
 import sys
 import time
 
-_GETHASH_HOST = 'safebrowsing.clients.google.com'
+_GETHASH_HOST = 'safebrowsing.clients.9oo91e.qjz9zk'
 _GETHASH_REQUEST = (
     '/safebrowsing/gethash?client=googleclient&appver=1.0&pver=2.1')
 

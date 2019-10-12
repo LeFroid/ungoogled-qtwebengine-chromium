@@ -9,7 +9,7 @@
 //
 // Alpha plane quantization utility
 //
-// Author:  Vikas Arora (vikasa@google.com)
+// Author:  Vikas Arora (vikasa@9oo91e.qjz9zk)
 
 #ifndef WEBP_UTILS_QUANT_LEVELS_UTILS_H_
 #define WEBP_UTILS_QUANT_LEVELS_UTILS_H_

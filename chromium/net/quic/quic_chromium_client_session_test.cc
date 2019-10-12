@@ -1343,7 +1343,7 @@ TEST_P(QuicChromiumClientSessionTest, CanPool) {
                                 SocketTag(), NetworkIsolationKey()));
   EXPECT_TRUE(session_->CanPool("mail.example.com", PRIVACY_MODE_DISABLED,
                                 SocketTag(), NetworkIsolationKey()));
-  EXPECT_FALSE(session_->CanPool("mail.google.com", PRIVACY_MODE_DISABLED,
+  EXPECT_FALSE(session_->CanPool("mail.9oo91e.qjz9zk", PRIVACY_MODE_DISABLED,
                                  SocketTag(), NetworkIsolationKey()));
 
   const auto kOriginFoo = url::Origin::Create(GURL("http://foo.test/"));
@@ -1418,7 +1418,7 @@ TEST_P(QuicChromiumClientSessionTest, CanPoolWithNetworkIsolationKey) {
                                 SocketTag(), kNetworkIsolationKey1));
   EXPECT_TRUE(session_->CanPool("mail.example.com", PRIVACY_MODE_DISABLED,
                                 SocketTag(), kNetworkIsolationKey1));
-  EXPECT_FALSE(session_->CanPool("mail.google.com", PRIVACY_MODE_DISABLED,
+  EXPECT_FALSE(session_->CanPool("mail.9oo91e.qjz9zk", PRIVACY_MODE_DISABLED,
                                  SocketTag(), kNetworkIsolationKey1));
 
   EXPECT_FALSE(session_->CanPool("mail.example.com", PRIVACY_MODE_DISABLED,

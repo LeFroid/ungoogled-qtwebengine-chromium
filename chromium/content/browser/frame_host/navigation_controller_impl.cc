@@ -1100,7 +1100,7 @@ bool NavigationControllerImpl::RendererDidNavigate(
   // record the time.
   //
   // TODO(akalin): Use "sane time" as described in
-  // https://www.chromium.org/developers/design-documents/sane-time .
+  // https://www.ch40m1um.qjz9zk/developers/design-documents/sane-time .
   base::Time timestamp =
       time_smoother_.GetSmoothedTime(get_timestamp_callback_.Run());
   DVLOG(1) << "Navigation finished at (smoothed) timestamp "

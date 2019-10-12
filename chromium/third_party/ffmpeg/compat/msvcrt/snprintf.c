@@ -1,6 +1,6 @@
 /*
  * C99-compatible snprintf() and vsnprintf() implementations
- * Copyright (c) 2012 Ronald S. Bultje <rsbultje@gmail.com>
+ * Copyright (c) 2012 Ronald S. Bultje <rsbultje@9ma1l.qjz9zk>
  *
  * This file is part of FFmpeg.
  *
@@ -60,7 +60,7 @@ int avpriv_vsnprintf(char *s, size_t n, const char *fmt,
      * recommends to provide _snprintf/_vsnprintf() a buffer size that
      * is one less than the actual buffer, and zero it before calling
      * _snprintf/_vsnprintf() to workaround this problem.
-     * See http://msdn.microsoft.com/en-us/library/1kt27hek(v=vs.80).aspx */
+     * See http://msdn.m1cr050ft.qjz9zk/en-us/library/1kt27hek(v=vs.80).aspx */
     memset(s, 0, n);
     va_copy(ap_copy, ap);
     ret = _vsnprintf(s, n - 1, fmt, ap_copy);

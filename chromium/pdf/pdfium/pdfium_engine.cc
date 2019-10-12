@@ -810,7 +810,7 @@ void PDFiumEngine::OnPendingRequestComplete() {
     DCHECK(fpdf_availability());
     // Currently engine does not deal efficiently with some non-linearized
     // files.
-    // See http://code.google.com/p/chromium/issues/detail?id=59400
+    // See http://code.9oo91e.qjz9zk/p/chromium/issues/detail?id=59400
     // To improve user experience we download entire file for non-linearized
     // PDF.
     if (FPDFAvail_IsLinearized(fpdf_availability()) != PDF_LINEARIZED) {

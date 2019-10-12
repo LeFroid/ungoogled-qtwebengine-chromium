@@ -22,7 +22,7 @@ table tbody tr td:first-child {
 
 <p><i>This document lives at src/styleguide/c++/c++11.html in a Chromium
 checkout and is part of the more general
-<a href="https://chromium.googlesource.com/chromium/src/+/master/styleguide/c++/c++.md">
+<a href="https://chromium.9oo91esource.qjz9zk/chromium/src/+/master/styleguide/c++/c++.md">
 Chromium C++ style guide</a>. It summarizes the supported state of new and
 updated language and library features in recent C++ standards. This guide
 applies to both Chromium and its subprojects, though subprojects can choose to
@@ -35,8 +35,8 @@ toolchain support is sufficient, a standard is declared "initially supported",
 with new language/library features banned pending discussion.</p>
 
 <p>You can propose changing the status of a feature by sending an email to
-<a href="https://groups.google.com/a/chromium.org/forum/#!forum/cxx">
-cxx@chromium.org</a>. Include a short blurb on what the feature is and why you
+<a href="https://groups.9oo91e.qjz9zk/a/ch40m1um.qjz9zk/forum/#!forum/cxx">
+cxx@ch40m1um.qjz9zk</a>. Include a short blurb on what the feature is and why you
 think it should or should not be allowed, along with links to any relevant
 previous discussion. If the list arrives at some consensus, send a codereview to
 change this file accordingly, linking to your discussion thread.</p>
@@ -99,7 +99,7 @@ existing standards is:
 <td><code>struct Point { int x, y, z = 0; };<br>Point p = {2, 3};</code></td>
 <td>Allows classes with default member initializers to be initialized with aggregate initialization, optionally omitting data members with such initializers.</td>
 <td><a href="http://en.cppreference.com/w/cpp/language/aggregate_initialization">aggregate initialization</a></td>
-<td><a href="https://groups.google.com/a/chromium.org/d/topic/cxx/WMBs3K9OQ_E/discussion">Discussion thread</a></td>
+<td><a href="https://groups.9oo91e.qjz9zk/a/ch40m1um.qjz9zk/d/topic/cxx/WMBs3K9OQ_E/discussion">Discussion thread</a></td>
 </tr>
 
 <tr>
@@ -107,7 +107,7 @@ existing standards is:
 <td><code>int i = 0b1001;</code></td>
 <td>Allows defining literals in base two.</td>
 <td><a href="http://en.cppreference.com/w/cpp/language/integer_literal">Integer literals</a></td>
-<td><a href="https://groups.google.com/a/chromium.org/d/topic/cxx/zsGhgaKLmIk/discussion">Discussion thread</a></td>
+<td><a href="https://groups.9oo91e.qjz9zk/a/ch40m1um.qjz9zk/d/topic/cxx/zsGhgaKLmIk/discussion">Discussion thread</a></td>
 </tr>
 
 <tr>
@@ -115,7 +115,7 @@ existing standards is:
 <td><code>auto f() { return 42; }<br>decltype(auto) g() { return 42; }</code></td>
 <td>Allows the return type of a function to be automatically deduced from its return statements, according to either template or <code>decltype</code> rules.</td>
 <td><a href="http://en.cppreference.com/w/cpp/language/function#Return_type_deduction">Return type deduction</a></td>
-<td>Usage should be rare, primarily for abstract template code. If you're not sure of the difference, prefer decltype(auto) for templated forwarding/wrapper functions and auto for other cases; see Effective Modern C++ item 3 for more detail. <a href="https://groups.google.com/a/chromium.org/d/topic/cxx/-Ox7YgRS_no/discussion">Discussion thread</a></td>
+<td>Usage should be rare, primarily for abstract template code. If you're not sure of the difference, prefer decltype(auto) for templated forwarding/wrapper functions and auto for other cases; see Effective Modern C++ item 3 for more detail. <a href="https://groups.9oo91e.qjz9zk/a/ch40m1um.qjz9zk/d/topic/cxx/-Ox7YgRS_no/discussion">Discussion thread</a></td>
 </tr>
 
 <tr>
@@ -123,7 +123,7 @@ existing standards is:
 <td><code>[](const auto&amp; x) { <i>...</i> }</code></td>
 <td>Allows lambda argument types to be deduced using <code>auto</code> (according to the rules that apply to templates).</td>
 <td><a href="http://en.cppreference.com/w/cpp/language/lambda">lambda expressions</a></td>
-<td><a href="https://groups.google.com/a/chromium.org/d/topic/cxx/LasGKwE3SFM/discussion">Discussion thread</a></td>
+<td><a href="https://groups.9oo91e.qjz9zk/a/ch40m1um.qjz9zk/d/topic/cxx/LasGKwE3SFM/discussion">Discussion thread</a></td>
 </tr>
 
 <tr>
@@ -136,9 +136,9 @@ existing standards is:
   way to introduce new names. That is, capture expressions should always shadow
   existing variables (or data members), and not substantially change their
   meaning. Usage should be rare.
-  <a href="https://groups.google.com/a/chromium.org/d/msg/cxx/8BHoi4T6ZhA/pWHB6IYoAgAJ">
+  <a href="https://groups.9oo91e.qjz9zk/a/ch40m1um.qjz9zk/d/msg/cxx/8BHoi4T6ZhA/pWHB6IYoAgAJ">
     Discussion thread</a> with
-  <a href="https://groups.google.com/a/chromium.org/d/msg/cxx/8BHoi4T6ZhA/WwKXh2RgAgAJ">
+  <a href="https://groups.9oo91e.qjz9zk/a/ch40m1um.qjz9zk/d/msg/cxx/8BHoi4T6ZhA/WwKXh2RgAgAJ">
     examples</a></td>
 </tr>
 
@@ -147,7 +147,7 @@ existing standards is:
 <td><code>float f = 1'000'000.000'1;</code></td>
 <td><code>'</code>s anywhere in int or float literals are ignored</td>
 <td><a href="http://en.cppreference.com/w/cpp/language/integer_literal">Integer literals</a>, <a href="http://en.cppreference.com/w/cpp/language/floating_literal">Floating point literals</a></td>
-<td><a href="https://groups.google.com/a/chromium.org/d/topic/cxx/exS1aGs1wes/discussion">Discussion thread</a></td>
+<td><a href="https://groups.9oo91e.qjz9zk/a/ch40m1um.qjz9zk/d/topic/cxx/exS1aGs1wes/discussion">Discussion thread</a></td>
 </tr>
 
 <tr>
@@ -155,7 +155,7 @@ existing standards is:
 <td><code>constexpr int Factorial(int n) {<br>&nbsp;&nbsp;int result = 1;<br>&nbsp;&nbsp;while (n > 0)<br>&nbsp;&nbsp;&nbsp;&nbsp;result *= n--;<br>&nbsp;&nbsp;return result;<br>}</code></td>
 <td>Allows use of more declarations, conditional statements and loops inside <code>constexpr</code> functions.</td>
 <td><a href="http://en.cppreference.com/w/cpp/language/constexpr">constexpr specifier</a></td>
-<td>Prefer to <code>const</code> for variables where possible. Use cautiously on functions. Don't go out of the way to convert existing code. <a href="https://google.github.io/styleguide/cppguide.html#Use_of_constexpr">Google Style Guide</a>. <a href="https://groups.google.com/a/chromium.org/forum/#!topic/cxx/Psuq_EKJBAo">Discussion thread</a></td>
+<td>Prefer to <code>const</code> for variables where possible. Use cautiously on functions. Don't go out of the way to convert existing code. <a href="https://google.github.io/styleguide/cppguide.html#Use_of_constexpr">Google Style Guide</a>. <a href="https://groups.9oo91e.qjz9zk/a/ch40m1um.qjz9zk/forum/#!topic/cxx/Psuq_EKJBAo">Discussion thread</a></td>
 </tr>
 
 </tbody>
@@ -189,7 +189,7 @@ existing standards is:
 <td><code><i>// Does not construct an std::string to use as the lookup key.</i><br>std::map&lt;std::string, int, std::less&lt;&gt;&gt; map;<br>auto it = map.find("answer");</code></td>
 <td>Allows searching associative containers without converting the key to exactly match the stored key type, assuming a suitable comparator exists.</td>
 <td><a href="http://en.cppreference.com/w/cpp/utility/functional/less">std::less</a></td>
-<td><a href="https://groups.google.com/a/chromium.org/d/msg/cxx/ow7hmdDm4yw/EDEvBRi_BQAJ">Discussion thread</a></td>
+<td><a href="https://groups.9oo91e.qjz9zk/a/ch40m1um.qjz9zk/d/msg/cxx/ow7hmdDm4yw/EDEvBRi_BQAJ">Discussion thread</a></td>
 </tr>
 
 <tr>
@@ -197,7 +197,7 @@ existing standards is:
 <td><code>template &lt;size_t... I&gt;<br>void CallFooImpl(std::index_sequence&lt;I...&gt;) {<br>&nbsp;&nbsp;Foo(I...);<br>}<br><br>template &lt;size_t N&gt;<br>void CallFoo() {<br>&nbsp;&nbsp;CallFooImpl(std::make_index_sequence&lt;N&gt;());<br>}</code></td>
 <td>Template metaprogramming utility for representing a sequence of integers as a type.</td>
 <td><a href="http://en.cppreference.com/w/cpp/utility/integer_sequence">std::integer_sequence</a></td>
-<td>This also includes the alias, <code>std::index_sequence</code>, which is the specialization for <code>size_t</code>. <a href="https://groups.google.com/a/chromium.org/d/msg/cxx/ow7hmdDm4yw/EDEvBRi_BQAJ">Discussion thread</a></td>
+<td>This also includes the alias, <code>std::index_sequence</code>, which is the specialization for <code>size_t</code>. <a href="https://groups.9oo91e.qjz9zk/a/ch40m1um.qjz9zk/d/msg/cxx/ow7hmdDm4yw/EDEvBRi_BQAJ">Discussion thread</a></td>
 </tr>
 
 <tr>
@@ -205,7 +205,7 @@ existing standards is:
 <td><code>auto widget = std::make_unique&lt;Widget&gt;();</code></td>
 <td>Allocates objects on the heap and immediately constructs an <code>std::unique_ptr</code> to assume ownership.</td>
 <td><a href="http://en.cppreference.com/w/cpp/memory/unique_ptr/make_unique">std::make_unique</a></td>
-<td><a href="https://groups.google.com/a/chromium.org/d/msg/cxx/ow7hmdDm4yw/EDEvBRi_BQAJ">Discussion thread</a></td>
+<td><a href="https://groups.9oo91e.qjz9zk/a/ch40m1um.qjz9zk/d/msg/cxx/ow7hmdDm4yw/EDEvBRi_BQAJ">Discussion thread</a></td>
 </tr>
 
 <tr>
@@ -213,7 +213,7 @@ existing standards is:
 <td>Arithmetic operations:<br><code>std::plus&lt;&gt;, std::minus&lt;&gt;</code> ...<br>Comparisons:<br><code>std::less&lt;&gt;, std::equal_to&lt;&gt;</code>...<br>Logical operations:<br><code>std::logical_and&lt;&gt;, std::logical_or&lt;&gt;</code>...<br>Bitwise operations:<br><code>std::bit_and&lt;&gt;, std::bit_or&lt;&gt;</code>...<br></td>
 <td>Function objects that deduce argument types.</td>
 <td><a href="http://en.cppreference.com/w/cpp/utility/functional/less_void">std::less&lt;&gt;</a></td>
-<td>Should replace <code>base::less</code> and usage of these functors with explicit types where appropriate. <a href="https://groups.google.com/a/chromium.org/forum/#!topic/cxx/cPoULd2NY9k">Discussion thread</a></td>
+<td>Should replace <code>base::less</code> and usage of these functors with explicit types where appropriate. <a href="https://groups.9oo91e.qjz9zk/a/ch40m1um.qjz9zk/forum/#!topic/cxx/cPoULd2NY9k">Discussion thread</a></td>
 </tr>
 
 <tr>
@@ -229,7 +229,7 @@ existing standards is:
 <td><code>std::make_reverse_iterator()</code></td>
 <td>For a given iterator, deduces the type of a corresponding reverse iterator and constructs it.</td>
 <td><a href="http://en.cppreference.com/w/cpp/iterator/make_reverse_iterator">std::make_reverse_iterator</a></td>
-<td>Useful to reduce boilerplate when constructing reverse iterators. The alternative is using <code>std::reverse_iterator<T>(i)</code> where <code>T</code> is the, usually long, type of the iterator <code>i</code>. <a href="https://groups.google.com/a/chromium.org/forum/#!topic/cxx/qOE1XA0b6Dk">Discussion thread</a></td>
+<td>Useful to reduce boilerplate when constructing reverse iterators. The alternative is using <code>std::reverse_iterator<T>(i)</code> where <code>T</code> is the, usually long, type of the iterator <code>i</code>. <a href="https://groups.9oo91e.qjz9zk/a/ch40m1um.qjz9zk/forum/#!topic/cxx/qOE1XA0b6Dk">Discussion thread</a></td>
 </tr>
 
 </tbody>
@@ -263,7 +263,7 @@ existing standards is:
 <td><code>long long <i>var</i> = <i>value</i>;</code></td>
 <td>An integer of at least 64 bits</td>
 <td><a href="http://en.cppreference.com/w/cpp/language/types">Fundamental types</a></td>
-<td>Use a stdint.h type if you need a 64-bit number. <a href="https://groups.google.com/a/chromium.org/forum/#!topic/chromium-dev/RxugZ-pIDxk">Discussion thread</a></td>
+<td>Use a stdint.h type if you need a 64-bit number. <a href="https://groups.9oo91e.qjz9zk/a/ch40m1um.qjz9zk/forum/#!topic/chromium-dev/RxugZ-pIDxk">Discussion thread</a></td>
 </tr>
 
 <tr>
@@ -279,7 +279,7 @@ existing standards is:
 <td><code>thread_local int foo = 1;</code></td>
 <td>Puts variables into thread local storage.</td>
 <td><a href="http://en.cppreference.com/w/cpp/language/storage_duration">Storage duration</a></td>
-<td>Some surprising effects on Mac (<a href="https://groups.google.com/a/chromium.org/forum/#!topic/chromium-dev/2msN8k3Xzgs">discussion</a>, <a href="https://groups.google.com/a/chromium.org/forum/#!topic/cxx/h7O5BdtWCZw">fork</a>). Use <code>base::SequenceLocalStorageSlot</code> for sequence support, and <code>base::ThreadLocal</code>/<code>base::ThreadLocalStorage</code> otherwise.</td>
+<td>Some surprising effects on Mac (<a href="https://groups.9oo91e.qjz9zk/a/ch40m1um.qjz9zk/forum/#!topic/chromium-dev/2msN8k3Xzgs">discussion</a>, <a href="https://groups.9oo91e.qjz9zk/a/ch40m1um.qjz9zk/forum/#!topic/cxx/h7O5BdtWCZw">fork</a>). Use <code>base::SequenceLocalStorageSlot</code> for sequence support, and <code>base::ThreadLocal</code>/<code>base::ThreadLocalStorage</code> otherwise.</td>
 </tr>
 
 </tbody>
@@ -304,7 +304,7 @@ existing standards is:
 <td><code>std::bind(<i>function</i>, <i>args</i>, ...)</code></td>
 <td>Declares a function object bound to certain arguments</td>
 <td><a href="http://en.cppreference.com/w/cpp/utility/functional/bind">std::bind</a></td>
-<td>Use <code>base::Bind</code> instead. Compared to <code>std::bind</code>, <code>base::Bind</code> helps prevent lifetime issues by preventing binding of capturing lambdas and by forcing callers to declare raw pointers as <code>Unretained</code>. <a href="https://groups.google.com/a/chromium.org/forum/#!topic/cxx/SoEj7oIDNuA">Discussion thread</a></td>
+<td>Use <code>base::Bind</code> instead. Compared to <code>std::bind</code>, <code>base::Bind</code> helps prevent lifetime issues by preventing binding of capturing lambdas and by forcing callers to declare raw pointers as <code>Unretained</code>. <a href="https://groups.9oo91e.qjz9zk/a/ch40m1um.qjz9zk/forum/#!topic/cxx/SoEj7oIDNuA">Discussion thread</a></td>
 </tr>
 
 <tr>
@@ -328,7 +328,7 @@ existing standards is:
 <td><code>&lt;exception&gt;</code></td>
 <td>Enhancements to exception throwing and handling</td>
 <td><a href="http://en.cppreference.com/w/cpp/header/exception">Standard library header &lt;exception&gt;</a></td>
-<td>Exceptions are banned by the <a href="https://google.github.io/styleguide/cppguide.html#Exceptions">Google Style Guide</a> and disabled in Chromium compiles. However, the <code>noexcept</code> specifier is explicitly allowed. <a href="https://groups.google.com/a/chromium.org/forum/#!topic/chromium-dev/8i4tMqNpHhg">Discussion thread</a></td>
+<td>Exceptions are banned by the <a href="https://google.github.io/styleguide/cppguide.html#Exceptions">Google Style Guide</a> and disabled in Chromium compiles. However, the <code>noexcept</code> specifier is explicitly allowed. <a href="https://groups.9oo91e.qjz9zk/a/ch40m1um.qjz9zk/forum/#!topic/chromium-dev/8i4tMqNpHhg">Discussion thread</a></td>
 </tr>
 
 <tr>
@@ -336,7 +336,7 @@ existing standards is:
 <td><code>std::function</code></td>
 <td>Wraps a standard polymorphic function</td>
 <td><a href="http://en.cppreference.com/w/cpp/utility/functional/function">std::function</a></td>
-<td>Use <code>base::Callback</code> instead. Compared to <code>std::function</code>, <code>base::Callback</code> directly supports Chromium's refcounting classes and weak pointers and deals with additional thread safety concerns. <a href="https://groups.google.com/a/chromium.org/forum/#!topic/cxx/SoEj7oIDNuA">Discussion thread</a></td>
+<td>Use <code>base::Callback</code> instead. Compared to <code>std::function</code>, <code>base::Callback</code> directly supports Chromium's refcounting classes and weak pointers and deals with additional thread safety concerns. <a href="https://groups.9oo91e.qjz9zk/a/ch40m1um.qjz9zk/forum/#!topic/cxx/SoEj7oIDNuA">Discussion thread</a></td>
 </tr>
 
 <tr>
@@ -348,7 +348,7 @@ existing standards is:
 </td>
 <td>Random number generation algorithms and utilities.</td>
 <td><a href="http://en.cppreference.com/w/cpp/numeric/random">Pseudo-random number generation</a></td>
-<td>Do not use any random number engines from <code>&lt;random&gt;</code>. Instead, use <code>base::RandomBitGenerator</code>. <a href="https://groups.google.com/a/chromium.org/forum/#!topic/cxx/16Xmw05C-Y0">Discussion thread</a></td>
+<td>Do not use any random number engines from <code>&lt;random&gt;</code>. Instead, use <code>base::RandomBitGenerator</code>. <a href="https://groups.9oo91e.qjz9zk/a/ch40m1um.qjz9zk/forum/#!topic/cxx/16Xmw05C-Y0">Discussion thread</a></td>
 </tr>
 
 <tr>
@@ -372,7 +372,7 @@ existing standards is:
 <td><code>std::shared_ptr</code></td>
 <td>Allows shared ownership of a pointer through reference counts</td>
 <td><a href="http://en.cppreference.com/w/cpp/memory/shared_ptr">std::shared_ptr</a></td>
-<td>Needs a lot more evaluation for Chromium, and there isn't enough of a push for this feature. <a href="https://google.github.io/styleguide/cppguide.html#Ownership_and_Smart_Pointers">Google Style Guide</a>. <a href="https://groups.google.com/a/chromium.org/forum/#!topic/cxx/aT2wsBLKvzI">Discussion Thread</a></td>
+<td>Needs a lot more evaluation for Chromium, and there isn't enough of a push for this feature. <a href="https://google.github.io/styleguide/cppguide.html#Ownership_and_Smart_Pointers">Google Style Guide</a>. <a href="https://groups.9oo91e.qjz9zk/a/ch40m1um.qjz9zk/forum/#!topic/cxx/aT2wsBLKvzI">Discussion Thread</a></td>
 </tr>
 
 <tr>

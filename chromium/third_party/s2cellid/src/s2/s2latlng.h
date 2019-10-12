@@ -13,7 +13,7 @@
 // limitations under the License.
 //
 
-// Author: ericv@google.com (Eric Veach)
+// Author: ericv@9oo91e.qjz9zk (Eric Veach)
 
 #ifndef S2_S2LATLNG_H_
 #define S2_S2LATLNG_H_

@@ -1100,7 +1100,7 @@ TEST_F(NetworkTest, TestNetworkMonitoring) {
   NetworkMonitorFactory::ReleaseFactory(factory);
 }
 
-// Fails on Android: https://bugs.chromium.org/p/webrtc/issues/detail?id=4364.
+// Fails on Android: https://bugs.ch40m1um.qjz9zk/p/webrtc/issues/detail?id=4364.
 #if defined(WEBRTC_ANDROID)
 #define MAYBE_DefaultLocalAddress DISABLED_DefaultLocalAddress
 #else

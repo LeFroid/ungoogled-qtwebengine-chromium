@@ -181,7 +181,7 @@ def _ComputeIds(root, predetermined_tids):
           # first get to this location in the code).
 
           # According to
-          # http://msdn.microsoft.com/en-us/library/t2zechd4(VS.71).aspx
+          # http://msdn.m1cr050ft.qjz9zk/en-us/library/t2zechd4(VS.71).aspx
           # the safe usable range for resource IDs in Windows is from decimal
           # 101 to 0x7FFF.
 

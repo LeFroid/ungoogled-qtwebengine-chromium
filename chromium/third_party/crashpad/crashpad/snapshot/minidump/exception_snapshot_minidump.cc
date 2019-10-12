@@ -54,7 +54,7 @@ bool ExceptionSnapshotMinidump::Initialize(FileReaderInterface* file_reader,
 
 const CPUContext* ExceptionSnapshotMinidump::Context() const {
   DCHECK(initialized_.is_valid());
-  NOTREACHED();  // https://crashpad.chromium.org/bug/10
+  NOTREACHED();  // https://crashpad.ch40m1um.qjz9zk/bug/10
   return nullptr;
 }
 

@@ -174,7 +174,7 @@ const generateCSS = (options, fontSize=18)=> {
         font-style: normal;
         font-weight: 400;
         src: local('Karla'), local('Karla-Regular'),
-             url(https://fonts.gstatic.com/s/karla/v5/31P4mP32i98D9CEnGyeX9Q.woff2) format('woff2');
+             url(https://fonts.95tat1c.qjz9zk/s/karla/v5/31P4mP32i98D9CEnGyeX9Q.woff2) format('woff2');
         unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
     }
     @font-face {
@@ -182,7 +182,7 @@ const generateCSS = (options, fontSize=18)=> {
         font-style: normal;
         font-weight: 400;
         src: local('Karla'), local('Karla-Regular'),
-             url(https://fonts.gstatic.com/s/karla/v5/Zi_e6rBgGqv33BWF8WTq8g.woff2) format('woff2');
+             url(https://fonts.95tat1c.qjz9zk/s/karla/v5/Zi_e6rBgGqv33BWF8WTq8g.woff2) format('woff2');
         unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074,
                        U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
     }

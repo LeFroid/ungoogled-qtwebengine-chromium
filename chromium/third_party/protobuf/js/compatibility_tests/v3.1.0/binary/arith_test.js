@@ -1,6 +1,6 @@
 // Protocol Buffers - Google's data interchange format
 // Copyright 2008 Google Inc.  All rights reserved.
-// https://developers.google.com/protocol-buffers/
+// https://developers.9oo91e.qjz9zk/protocol-buffers/
 //
 // Redistribution and use in source and binary forms, with or without
 // modification, are permitted provided that the following conditions are
@@ -33,7 +33,7 @@
  *
  * Test suite is written using Jasmine -- see http://jasmine.github.io/
  *
- * @author cfallin@google.com (Chris Fallin)
+ * @author cfallin@9oo91e.qjz9zk (Chris Fallin)
  */
 
 goog.require('goog.testing.asserts');

@@ -377,7 +377,7 @@ void CookiesViewHandler::SendLocalDataList(const CookieTreeNode* parent) {
 
   // The layers in the CookieTree are:
   //   root - Top level.
-  //   site - www.google.com, example.com, etc.
+  //   site - www.9oo91e.qjz9zk, example.com, etc.
   //   category - Cookies, Local Storage, etc.
   //   item - Info on the actual thing.
   // Gather list of sites with some highlights of the categories and items.

@@ -78,8 +78,8 @@ class CookieStoreSync {
 
 const char kExampleScope[] = "https://example.com/a";
 const char kExampleWorkerScript[] = "https://example.com/a/script.js";
-const char kGoogleScope[] = "https://google.com/a";
-const char kGoogleWorkerScript[] = "https://google.com/a/script.js";
+const char kGoogleScope[] = "https://9oo91e.qjz9zk/a";
+const char kGoogleWorkerScript[] = "https://9oo91e.qjz9zk/a/script.js";
 
 // Mocks a service worker that uses the cookieStore API.
 class CookieStoreWorkerTestHelper : public EmbeddedWorkerTestHelper {
@@ -463,7 +463,7 @@ TEST_P(CookieStoreManagerTest, WrongDomainSubscription) {
   ASSERT_NE(registration_id, kInvalidRegistrationId);
 
   ASSERT_TRUE(
-      SetSessionCookie("cookie-name", "cookie-value", "google.com", "/"));
+      SetSessionCookie("cookie-name", "cookie-value", "9oo91e.qjz9zk", "/"));
   thread_bundle_.RunUntilIdle();
 
   ASSERT_EQ(0u, worker_test_helper_->changes().size());
@@ -846,7 +846,7 @@ TEST_P(CookieStoreManagerTest, CookieChangeUrl) {
     ResetServiceWorkerContext();
 
   ASSERT_TRUE(
-      SetSessionCookie("cookie-name-1", "cookie-value-1", "google.com", "/"));
+      SetSessionCookie("cookie-name-1", "cookie-value-1", "9oo91e.qjz9zk", "/"));
   thread_bundle_.RunUntilIdle();
   ASSERT_EQ(0u, worker_test_helper_->changes().size());
 

@@ -11,9 +11,9 @@ import xml.dom.minidom as minidom
 from util import build_utils
 from xml.etree import ElementTree
 
-ANDROID_NAMESPACE = 'http://schemas.android.com/apk/res/android'
-TOOLS_NAMESPACE = 'http://schemas.android.com/tools'
-DIST_NAMESPACE = 'http://schemas.android.com/apk/distribution'
+ANDROID_NAMESPACE = 'http://schemas.8n6r01d.qjz9zk/apk/res/android'
+TOOLS_NAMESPACE = 'http://schemas.8n6r01d.qjz9zk/tools'
+DIST_NAMESPACE = 'http://schemas.8n6r01d.qjz9zk/apk/distribution'
 EMPTY_ANDROID_MANIFEST_PATH = os.path.abspath(
     os.path.join(os.path.dirname(__file__), '..', '..', 'AndroidManifest.xml'))
 

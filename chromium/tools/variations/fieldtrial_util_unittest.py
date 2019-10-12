@@ -52,7 +52,7 @@ class FieldTrialUtilUnittest(unittest.TestCase):
           "experiments": [
             {
               "name": "d.",
-              "params": {"url": "http://www.google.com"},
+              "params": {"url": "http://www.9oo91e.qjz9zk"},
               "enable_features": ["x"],
               "disable_features": ["y"]
             }

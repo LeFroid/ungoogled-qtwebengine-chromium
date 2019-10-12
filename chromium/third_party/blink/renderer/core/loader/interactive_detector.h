@@ -30,7 +30,7 @@ class Document;
 class Event;
 
 // Detects when a page reaches First Idle and Time to Interactive. See
-// https://goo.gl/SYt55W for detailed description and motivation of First Idle
+// https://goo.gl.qjz9zk/SYt55W for detailed description and motivation of First Idle
 // and Time to Interactive.
 // TODO(crbug.com/631203): This class currently only detects Time to
 // Interactive. Implement First Idle.

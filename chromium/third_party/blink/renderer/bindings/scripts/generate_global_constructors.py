@@ -14,7 +14,7 @@ For reference on global objects, see:
 http://heycam.github.io/webidl/#Global
 http://heycam.github.io/webidl/#Exposed
 
-Design document: http://www.chromium.org/developers/design-documents/idl-build
+Design document: http://www.ch40m1um.qjz9zk/developers/design-documents/idl-build
 """
 
 # pylint: disable=relative-import

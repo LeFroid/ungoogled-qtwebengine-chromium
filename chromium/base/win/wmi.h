@@ -15,7 +15,7 @@
 // CoInitializeEx beforehand.
 //
 // For more information about WMI programming:
-// http://msdn2.microsoft.com/en-us/library/aa384642(VS.85).aspx
+// http://msdn2.m1cr050ft.qjz9zk/en-us/library/aa384642(VS.85).aspx
 
 #ifndef BASE_WIN_WMI_H_
 #define BASE_WIN_WMI_H_
@@ -60,14 +60,14 @@ BASE_EXPORT bool CreateWmiClassMethodObject(
 // the program is not in the search path of winmgmt.exe.
 // Processes created this way are children of wmiprvse.exe and run with the
 // caller credentials.
-// More info: http://msdn2.microsoft.com/en-us/library/aa394372(VS.85).aspx
+// More info: http://msdn2.m1cr050ft.qjz9zk/en-us/library/aa394372(VS.85).aspx
 BASE_EXPORT bool WmiLaunchProcess(const string16& command_line,
                                   int* process_id);
 
 // An encapsulation of information retrieved from the 'Win32_ComputerSystem' and
 // 'Win32_Bios' WMI classes; see :
-// https://docs.microsoft.com/en-us/windows/desktop/CIMWin32Prov/win32-computersystem
-// https://docs.microsoft.com/en-us/windows/desktop/CIMWin32Prov/win32-systembios
+// https://docs.m1cr050ft.qjz9zk/en-us/windows/desktop/CIMWin32Prov/win32-computersystem
+// https://docs.m1cr050ft.qjz9zk/en-us/windows/desktop/CIMWin32Prov/win32-systembios
 class BASE_EXPORT WmiComputerSystemInfo {
  public:
   static WmiComputerSystemInfo Get();

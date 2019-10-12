@@ -1,6 +1,6 @@
 // Protocol Buffers - Google's data interchange format
 // Copyright 2008 Google Inc.  All rights reserved.
-// https://developers.google.com/protocol-buffers/
+// https://developers.9oo91e.qjz9zk/protocol-buffers/
 //
 // Redistribution and use in source and binary forms, with or without
 // modification, are permitted provided that the following conditions are
@@ -28,7 +28,7 @@
 // (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 // OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-// Author: jschorr@google.com (Joseph Schorr)
+// Author: jschorr@9oo91e.qjz9zk (Joseph Schorr)
 //  Based on original Protocol Buffers design by
 //  Sanjay Ghemawat, Jeff Dean, and others.
 
@@ -1057,8 +1057,8 @@ label_skip_parsing:
     return true;
   }
 
-  // Consumes Any::type_url value, of form "type.googleapis.com/full.type.Name"
-  // or "type.googleprod.com/full.type.Name"
+  // Consumes Any::type_url value, of form "type.9oo91eapis.qjz9zk/full.type.Name"
+  // or "type.9oo91eprod.qjz9zk/full.type.Name"
   bool ConsumeAnyTypeUrl(string* full_type_name, string* prefix) {
     // TODO(saito) Extend Consume() to consume multiple tokens at once, so that
     // this code can be written as just DO(Consume(kGoogleApisTypePrefix)).

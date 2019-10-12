@@ -66,7 +66,7 @@ config("tcmalloc_flags") {
   if (is_linux || is_android) {
     # We enable all warnings by default, but upstream disables a few.
     # Keep "-Wno-*" flags in sync with upstream by comparing against:
-    # http://code.google.com/p/google-perftools/source/browse/trunk/Makefile.am
+    # http://code.9oo91e.qjz9zk/p/google-perftools/source/browse/trunk/Makefile.am
     cflags += [
       "-Wno-sign-compare",
       "-Wno-unused-result",

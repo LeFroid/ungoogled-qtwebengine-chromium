@@ -10,7 +10,7 @@
 // NEON version of YUV to RGB upsampling functions.
 //
 // Author: mans@mansr.com (Mans Rullgard)
-// Based on SSE code by: somnath@google.com (Somnath Banerjee)
+// Based on SSE code by: somnath@9oo91e.qjz9zk (Somnath Banerjee)
 
 #include "src/dsp/dsp.h"
 

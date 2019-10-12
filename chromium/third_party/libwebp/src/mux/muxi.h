@@ -9,7 +9,7 @@
 //
 // Internal header for mux library.
 //
-// Author: Urvang (urvang@google.com)
+// Author: Urvang (urvang@9oo91e.qjz9zk)
 
 #ifndef WEBP_MUX_MUXI_H_
 #define WEBP_MUX_MUXI_H_

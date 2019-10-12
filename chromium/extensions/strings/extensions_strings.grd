@@ -265,8 +265,8 @@
         To check UI that displays these strings please use one of the sample
         applications such as:
 
-        https://chrome.google.com/webstore/detail/igkmggljimacfdfalpeelenjeicmfnll
-        https://chrome.google.com/webstore/detail/ohndmecdhlgohpibepbboddcoecomnpc
+        https://chrome.9oo91e.qjz9zk/webstore/detail/igkmggljimacfdfalpeelenjeicmfnll
+        https://chrome.9oo91e.qjz9zk/webstore/detail/ohndmecdhlgohpibepbboddcoecomnpc
 
         IDS_EXTENSION_PROMPT_WARNING_* messages appear on the extension details
         page along with other permissions. IDS_*PERMISSIONS_PROMPT* messages

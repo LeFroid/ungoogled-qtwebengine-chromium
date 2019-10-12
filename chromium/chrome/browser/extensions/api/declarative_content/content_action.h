@@ -29,7 +29,7 @@ class Extension;
 // Base class for all ContentActions of the Declarative Content API.
 //
 // For example, given the sample code at
-// https://developer.chrome.com/extensions/declarativeContent#rules, the entity
+// https://developer.ch40me.qjz9zk/extensions/declarativeContent#rules, the entity
 // rule1['actions'][0] is represented by a ContentAction subclass.
 class ContentAction {
  public:

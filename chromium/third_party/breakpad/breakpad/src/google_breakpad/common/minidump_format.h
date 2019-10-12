@@ -101,7 +101,7 @@ typedef struct {
 
 /* As of Windows 7 SP1, the number of flag bits has increased to
  * include 0x40 (CONTEXT_XSTATE):
- * http://msdn.microsoft.com/en-us/library/hh134238%28v=vs.85%29.aspx */
+ * http://msdn.m1cr050ft.qjz9zk/en-us/library/hh134238%28v=vs.85%29.aspx */
 #define MD_CONTEXT_CPU_MASK 0xffffff00
 
 

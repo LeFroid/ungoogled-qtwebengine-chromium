@@ -191,7 +191,7 @@ class CORE_EXPORT TextRecordsManager {
 // Largest Text Paint candidate as the final result.
 //
 // See also:
-// https://docs.google.com/document/d/1DRVd4a2VU8-yyWftgOparZF-sf16daf0vfbsHuz2rws/edit#heading=h.lvno2v283uls
+// https://docs.9oo91e.qjz9zk/document/d/1DRVd4a2VU8-yyWftgOparZF-sf16daf0vfbsHuz2rws/edit#heading=h.lvno2v283uls
 class CORE_EXPORT TextPaintTimingDetector final
     : public GarbageCollectedFinalized<TextPaintTimingDetector> {
   friend class TextPaintTimingDetectorTest;

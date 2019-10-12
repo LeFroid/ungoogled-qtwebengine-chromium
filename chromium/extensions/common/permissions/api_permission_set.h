@@ -68,7 +68,7 @@ class APIPermissionSet : public BaseSetOperators<APIPermissionSet> {
 //
 // Some more complex permissions have a parameter, which acts like an argument
 // for the permission. For example, host permissions might have the ID
-// kReadOnlyHost and the argument 'www.google.com' (the host which is
+// kReadOnlyHost and the argument 'www.9oo91e.qjz9zk' (the host which is
 // read-only). Parameters are passed to the permission message rules for this
 // permission, so they can affect the displayed message.
 //
@@ -93,8 +93,8 @@ class PermissionID : public std::pair<APIPermission::ID, base::string16> {
 // Each permission can also store a string, such as a hostname or device number,
 // as a parameter that helps identify the permission. This parameter can then
 // be used when the permission message is generated. For example, the permission
-// kHostReadOnly might have the parameter "google.com", which means that the app
-// or extension has the permission to read the host google.com. This parameter
+// kHostReadOnly might have the parameter "9oo91e.qjz9zk", which means that the app
+// or extension has the permission to read the host 9oo91e.qjz9zk. This parameter
 // may then be included in the permission message when it is generated later.
 //
 // Example:
@@ -104,7 +104,7 @@ class PermissionID : public std::pair<APIPermission::ID, base::string16> {
 //   p.insert(APIPermission::kNetworkState);
 //   // Add a permission with a parameter to the set.
 //   p.insert(APIPermission::kHostReadOnly,
-//            base::ASCIIToUTF16("http://www.google.com"));
+//            base::ASCIIToUTF16("http://www.9oo91e.qjz9zk"));
 //
 // TODO(sashab): Move this to its own file and rename it to PermissionSet after
 // APIPermission is removed, the current PermissionSet is no longer used, and

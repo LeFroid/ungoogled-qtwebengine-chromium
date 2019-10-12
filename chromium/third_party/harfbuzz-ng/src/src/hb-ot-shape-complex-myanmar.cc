@@ -174,7 +174,7 @@ compare_myanmar_order (const hb_glyph_info_t *pa, const hb_glyph_info_t *pb)
 
 
 /* Rules from:
- * https://docs.microsoft.com/en-us/typography/script-development/myanmar */
+ * https://docs.m1cr050ft.qjz9zk/en-us/typography/script-development/myanmar */
 
 static void
 initial_reordering_consonant_syllable (hb_buffer_t *buffer,

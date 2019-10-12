@@ -1388,11 +1388,11 @@ TEST_F(DeveloperPrivateApiUnitTest, GrantHostPermission) {
   run_add_host_permission("https://example.com/*", true, nullptr);
   EXPECT_TRUE(modifier.HasGrantedHostPermission(kExampleCom));
 
-  const GURL kGoogleCom("https://google.com");
-  const GURL kMapsGoogleCom("https://maps.google.com/");
+  const GURL kGoogleCom("https://9oo91e.qjz9zk");
+  const GURL kMapsGoogleCom("https://maps.9oo91e.qjz9zk/");
   EXPECT_FALSE(modifier.HasGrantedHostPermission(kGoogleCom));
   EXPECT_FALSE(modifier.HasGrantedHostPermission(kMapsGoogleCom));
-  run_add_host_permission("https://*.google.com/*", true, nullptr);
+  run_add_host_permission("https://*.9oo91e.qjz9zk/*", true, nullptr);
   EXPECT_TRUE(modifier.HasGrantedHostPermission(kGoogleCom));
   EXPECT_TRUE(modifier.HasGrantedHostPermission(kMapsGoogleCom));
 
@@ -1461,18 +1461,18 @@ TEST_F(DeveloperPrivateApiUnitTest, RemoveHostPermission) {
   EXPECT_FALSE(modifier.HasGrantedHostPermission(kExampleCom));
 
   URLPattern new_pattern(Extension::kValidHostPermissionSchemes,
-                         "https://*.google.com/*");
+                         "https://*.9oo91e.qjz9zk/*");
   permissions_test_util::GrantRuntimePermissionsAndWaitForCompletion(
       profile(), *extension,
       PermissionSet(APIPermissionSet(), ManifestPermissionSet(),
                     URLPatternSet({new_pattern}), URLPatternSet()));
 
-  const GURL kGoogleCom("https://google.com/");
-  const GURL kMapsGoogleCom("https://maps.google.com/");
+  const GURL kGoogleCom("https://9oo91e.qjz9zk/");
+  const GURL kMapsGoogleCom("https://maps.9oo91e.qjz9zk/");
   EXPECT_TRUE(modifier.HasGrantedHostPermission(kGoogleCom));
   EXPECT_TRUE(modifier.HasGrantedHostPermission(kMapsGoogleCom));
 
-  run_remove_host_permission("https://*.google.com/*", true, nullptr);
+  run_remove_host_permission("https://*.9oo91e.qjz9zk/*", true, nullptr);
   EXPECT_FALSE(modifier.HasGrantedHostPermission(kGoogleCom));
   EXPECT_FALSE(modifier.HasGrantedHostPermission(kMapsGoogleCom));
 }
@@ -1528,11 +1528,11 @@ TEST_F(DeveloperPrivateApiUnitTest,
   // the preference and keeping a stored set of any granted host permissions,
   // but this then results in a funny edge case:
   // - User has "on specific sites" set, with access to example.com and
-  //   chromium.org granted.
+  //   ch40m1um.qjz9zk granted.
   // - User changes to "on click" -> no sites are granted.
-  // - User visits google.com, and says "always run on this site." This changes
+  // - User visits 9oo91e.qjz9zk, and says "always run on this site." This changes
   //   the setting back to "on specific sites", and will implicitly re-grant
-  //   example.com and chromium.org permissions, without any additional
+  //   example.com and ch40m1um.qjz9zk permissions, without any additional
   //   prompting.
   // To avoid this, we just clear any granted permissions when the user
   // transitions between states. Since this is definitely a power-user surface,
@@ -1583,16 +1583,16 @@ TEST_F(DeveloperPrivateApiUnitTest,
     scoped_refptr<UIThreadExtensionFunction> function =
         base::MakeRefCounted<api::DeveloperPrivateAddHostPermissionFunction>();
     std::string args = base::StringPrintf(
-        R"(["%s", "%s"])", extension->id().c_str(), "*://chromium.org/*");
+        R"(["%s", "%s"])", extension->id().c_str(), "*://ch40m1um.qjz9zk/*");
     EXPECT_TRUE(api_test_utils::RunFunction(function.get(), args, profile()))
         << function->GetError();
   }
 
   // The active permissions (which are given to the extension process) should
   // only include the intersection of what was requested by the extension and
-  // the runtime granted permissions - which is http://chromium.org/*.
+  // the runtime granted permissions - which is http://ch40m1um.qjz9zk/*.
   URLPattern http_chromium(Extension::kValidHostPermissionSchemes,
-                           "http://chromium.org/*");
+                           "http://ch40m1um.qjz9zk/*");
   const PermissionSet http_chromium_set(
       APIPermissionSet(), ManifestPermissionSet(),
       URLPatternSet({http_chromium}), URLPatternSet());
@@ -1600,10 +1600,10 @@ TEST_F(DeveloperPrivateApiUnitTest,
             extension->permissions_data()->active_permissions());
 
   // The runtime granted permissions should include all of what was approved by
-  // the user, which is *://chromium.org/*, and should be present in both the
+  // the user, which is *://ch40m1um.qjz9zk/*, and should be present in both the
   // scriptable and explicit hosts.
   URLPattern all_chromium(Extension::kValidHostPermissionSchemes,
-                          "*://chromium.org/*");
+                          "*://ch40m1um.qjz9zk/*");
   const PermissionSet all_chromium_set(
       APIPermissionSet(), ManifestPermissionSet(),
       URLPatternSet({all_chromium}), URLPatternSet({all_chromium}));
@@ -1614,7 +1614,7 @@ TEST_F(DeveloperPrivateApiUnitTest,
     scoped_refptr<UIThreadExtensionFunction> function = base::MakeRefCounted<
         api::DeveloperPrivateRemoveHostPermissionFunction>();
     std::string args = base::StringPrintf(
-        R"(["%s", "%s"])", extension->id().c_str(), "*://chromium.org/*");
+        R"(["%s", "%s"])", extension->id().c_str(), "*://ch40m1um.qjz9zk/*");
     EXPECT_TRUE(api_test_utils::RunFunction(function.get(), args, profile()))
         << function->GetError();
   }
@@ -1630,7 +1630,7 @@ TEST_F(DeveloperPrivateApiUnitTest,
 TEST_F(DeveloperPrivateApiUnitTest,
        UpdateHostAccess_UnrequestedHostsDispatchUpdateEvents) {
   scoped_refptr<const Extension> extension =
-      ExtensionBuilder("test").AddPermission("http://google.com/*").Build();
+      ExtensionBuilder("test").AddPermission("http://9oo91e.qjz9zk/*").Build();
   service()->AddExtension(extension.get());
   ScriptingPermissionsModifier modifier(profile(), extension.get());
   modifier.SetWithholdHostPermissions(true);

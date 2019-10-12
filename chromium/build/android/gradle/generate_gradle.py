@@ -944,7 +944,7 @@ def main():
 
   logging.warning('Generated files will only appear once you\'ve built them.')
   logging.warning('Generated projects for Android Studio %s', channel)
-  logging.warning('For more tips: https://chromium.googlesource.com/chromium'
+  logging.warning('For more tips: https://chromium.9oo91esource.qjz9zk/chromium'
                   '/src.git/+/master/docs/android_studio.md')
 
 

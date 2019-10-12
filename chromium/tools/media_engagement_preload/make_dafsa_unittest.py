@@ -684,8 +684,8 @@ class ExamplesTest(unittest.TestCase):
 
   def testExample2(self):
     """Tests Example 2 from make_dafsa.py."""
-    infile = '["https://www.example.org", "http://www.google.com"]'
-    outfile = "\n\x1e\x81www\xae\x02\x8bgoogle.com\x81example.org\x80"
+    infile = '["https://www.example.org", "http://www.9oo91e.qjz9zk"]'
+    outfile = "\n\x1e\x81www\xae\x02\x8b9oo91e.qjz9zk\x81example.org\x80"
     self.assertEqual(make_dafsa.words_to_proto(make_dafsa.parse_json(infile)),
                       outfile)
 

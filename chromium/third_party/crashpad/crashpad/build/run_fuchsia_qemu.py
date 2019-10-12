@@ -58,7 +58,7 @@ def _CheckForTun():
   if returncode != 0:
     print('To use QEMU with networking on Linux, configure TUN/TAP. See:',
           file=sys.stderr)
-    print('  https://fuchsia.googlesource.com/zircon/+/HEAD/docs/qemu.md#enabling-networking-under-qemu-x86_64-only',
+    print('  https://fuchsia.9oo91esource.qjz9zk/zircon/+/HEAD/docs/qemu.md#enabling-networking-under-qemu-x86_64-only',
           file=sys.stderr)
     return 2
   return 0

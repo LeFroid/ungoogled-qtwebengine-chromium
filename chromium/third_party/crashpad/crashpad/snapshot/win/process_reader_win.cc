@@ -323,7 +323,7 @@ void ProcessReaderWin::ReadThreadData(bool is_64_reading_32) {
 
     // TODO(scottmg): I believe we could reverse engineer the PriorityClass from
     // the Priority, BasePriority, and
-    // https://msdn.microsoft.com/library/ms685100.aspx. MinidumpThreadWriter
+    // https://msdn.m1cr050ft.qjz9zk/library/ms685100.aspx. MinidumpThreadWriter
     // doesn't handle it yet in any case, so investigate both of those at the
     // same time if it's useful.
     thread.priority_class = NORMAL_PRIORITY_CLASS;
@@ -352,7 +352,7 @@ void ProcessReaderWin::ReadThreadData(bool is_64_reading_32) {
       WinVMAddress limit = 0;
       // If we're reading a WOW64 process, then the TIB we just retrieved is the
       // x64 one. The first word of the x64 TIB points at the x86 TIB. See
-      // https://msdn.microsoft.com/library/dn424783.aspx.
+      // https://msdn.m1cr050ft.qjz9zk/library/dn424783.aspx.
       if (is_64_reading_32) {
         process_types::NT_TIB<process_types::internal::Traits32> tib32;
         thread.teb_address = tib.Wow64Teb;

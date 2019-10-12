@@ -377,58 +377,58 @@ TEST_F(PasswordFormConversionUtilsTest, HTMLDetector_DeveloperGroupAttributes) {
   } cases[] = {
       // There are both field name and id.
       {{"username", "id", "johnsmith"},
-       {"email", "id", "js@google.com"},
+       {"email", "id", "js@9oo91e.qjz9zk"},
        "username",
        "johnsmith"},
       // there is no field id.
       {{"username", "", "johnsmith"},
-       {"email", "", "js@google.com"},
+       {"email", "", "js@9oo91e.qjz9zk"},
        "username",
        "johnsmith"},
       // Upper or mixed case shouldn't matter.
       {{"uSeRnAmE", "id", "johnsmith"},
-       {"email", "id", "js@google.com"},
+       {"email", "id", "js@9oo91e.qjz9zk"},
        "uSeRnAmE",
        "johnsmith"},
       // Check removal of special characters.
       {{"u1_s2-e3~r4/n5(a)6m#e", "", "johnsmith"},
-       {"email", "", "js@google.com"},
+       {"email", "", "js@9oo91e.qjz9zk"},
        "u1_s2-e3~r4/n5(a)6m#e",
        "johnsmith"},
       // Check guard between field name and field id.
       {{"us", "ername", "johnsmith"},
-       {"email", "", "js@google.com"},
+       {"email", "", "js@9oo91e.qjz9zk"},
        "email",
-       "js@google.com"},
+       "js@9oo91e.qjz9zk"},
       // Check removal of fields with latin negative words in developer group.
-      {{"email", "", "js@google.com"},
+      {{"email", "", "js@9oo91e.qjz9zk"},
        {"fake_username", "", "johnsmith"},
        "email",
-       "js@google.com"},
-      {{"email", "mail", "js@google.com"},
+       "js@9oo91e.qjz9zk"},
+      {{"email", "mail", "js@9oo91e.qjz9zk"},
        {"user_name", "fullname", "johnsmith"},
        "email",
-       "js@google.com"},
+       "js@9oo91e.qjz9zk"},
       // Identify latin translations of "username".
       {{"benutzername", "", "johnsmith"},
-       {"email", "", "js@google.com"},
+       {"email", "", "js@9oo91e.qjz9zk"},
        "benutzername",
        "johnsmith"},
       // Identify latin translations of "user".
       {{"utilizator", "", "johnsmith"},
-       {"email", "", "js@google.com"},
+       {"email", "", "js@9oo91e.qjz9zk"},
        "utilizator",
        "johnsmith"},
       // Identify technical words.
       {{"loginid", "", "johnsmith"},
-       {"email", "", "js@google.com"},
+       {"email", "", "js@9oo91e.qjz9zk"},
        "loginid",
        "johnsmith"},
       // Identify weak words.
       {{"usrname", "", "johnsmith"},
-       {"email", "", "js@google.com"},
+       {"email", "", "js@9oo91e.qjz9zk"},
        "email",
-       "js@google.com"},
+       "js@9oo91e.qjz9zk"},
       // If a word matches in maximum 2 fields, it is accepted.
       // First encounter is selected as username.
       {{"username", "", "johnsmith"},
@@ -524,64 +524,64 @@ TEST_F(PasswordFormConversionUtilsTest, HTMLDetector_UserGroupAttributes) {
   } cases[] = {
       // Label information will decide username.
       {{"name1", "id1", "johnsmith", "Username:"},
-       {"name2", "id2", "js@google.com", "Email:"},
+       {"name2", "id2", "js@9oo91e.qjz9zk", "Email:"},
        "name1",
        "johnsmith"},
       // Placeholder information will decide username.
-      {{"name1", "id1", "js@google.com", "Email:"},
+      {{"name1", "id1", "js@9oo91e.qjz9zk", "Email:"},
        {"name2", "id2", "johnsmith", "Username:"},
        "name2",
        "johnsmith"},
       // Check removal of special characters.
       {{"name1", "id1", "johnsmith", "U s er n a m e:"},
-       {"name2", "id2", "js@google.com", "Email:"},
+       {"name2", "id2", "js@9oo91e.qjz9zk", "Email:"},
        "name1",
        "johnsmith"},
       // Check removal of fields with latin negative words in user group.
       {{"name1", "id1", "johnsmith", "Username password:"},
-       {"name2", "id2", "js@google.com", "Email:"},
+       {"name2", "id2", "js@9oo91e.qjz9zk", "Email:"},
        "name2",
-       "js@google.com"},
+       "js@9oo91e.qjz9zk"},
       // Check removal of fields with non-latin negative words in user group.
-      {{"name1", "id1", "js@google.com", "Email:"},
+      {{"name1", "id1", "js@9oo91e.qjz9zk", "Email:"},
        {"name2", "id2", "johnsmith", "የይለፍቃልየይለፍቃል:"},
        "name1",
-       "js@google.com"},
+       "js@9oo91e.qjz9zk"},
       // Identify latin translations of "username".
       {{"name1", "id1", "johnsmith", "Username:"},
-       {"name2", "id2", "js@google.com", "Email:"},
+       {"name2", "id2", "js@9oo91e.qjz9zk", "Email:"},
        "name1",
        "johnsmith"},
       // Identify non-latin translations of "username".
       {{"name1", "id1", "johnsmith", "用户名:"},
-       {"name2", "id2", "js@google.com", "Email:"},
+       {"name2", "id2", "js@9oo91e.qjz9zk", "Email:"},
        "name1",
        "johnsmith"},
       // Identify latin translations of "user".
       {{"name1", "id1", "johnsmith", "Wosuta:"},
-       {"name2", "id2", "js@google.com", "Email:"},
+       {"name2", "id2", "js@9oo91e.qjz9zk", "Email:"},
        "name1",
        "johnsmith"},
       // Identify non-latin translations of "user".
       {{"name1", "id1", "johnsmith", "истифода:"},
-       {"name2", "id2", "js@google.com", "Email:"},
+       {"name2", "id2", "js@9oo91e.qjz9zk", "Email:"},
        "name1",
        "johnsmith"},
       // Identify weak words.
       {{"name1", "id1", "johnsmith", "Insert your login details:"},
-       {"name2", "id2", "js@google.com", "Insert your email:"},
+       {"name2", "id2", "js@9oo91e.qjz9zk", "Insert your email:"},
        "name1",
        "johnsmith"},
       // Check user group priority, compared to developer group.
       // User group should have higher priority than developer group.
-      {{"email", "", "js@google.com", "Username:"},
+      {{"email", "", "js@9oo91e.qjz9zk", "Username:"},
        {"username", "", "johnsmith", "Email:"},
        "email",
-       "js@google.com"},
+       "js@9oo91e.qjz9zk"},
       // Check treatment for short dictionary words. "uid" has higher priority,
       // but its occurrence is ignored because it is a part of another word.
       {{"name1", "", "johnsmith", "Insert your id:"},
-       {"name2", "uidentical", "js@google.com", "Insert something:"},
+       {"name2", "uidentical", "js@9oo91e.qjz9zk", "Insert something:"},
        "name1",
        "johnsmith"}};
 
@@ -703,7 +703,7 @@ TEST_F(PasswordFormConversionUtilsTest, HTMLDetectorCache_SkipSomePredictions) {
 
   PasswordFormBuilder builder(kTestFormActionURL);
   builder.AddTextField("username", "12345", nullptr);
-  builder.AddTextField("email", "smith@google.com", nullptr);
+  builder.AddTextField("email", "smith@9oo91e.qjz9zk", nullptr);
   builder.AddTextField("id", "12345", nullptr);
   builder.AddPasswordField("password", "secret", nullptr);
   builder.AddSubmitButton("submit");
@@ -2041,57 +2041,57 @@ TEST_F(PasswordFormConversionUtilsTest, IsGaiaReauthFormIgnored) {
        false},
       // A common password form, even if it appears on a GAIA reauth url,
       // is parsed successfully.
-      {"https://accounts.google.com",
+      {"https://accounts.9oo91e.qjz9zk",
        {TestCase::KeyValue(), TestCase::KeyValue()},
        false},
       // Not a transactional reauth.
-      {"https://accounts.google.com",
-       {TestCase::KeyValue("continue", "https://passwords.google.com/settings"),
+      {"https://accounts.9oo91e.qjz9zk",
+       {TestCase::KeyValue("continue", "https://passwords.9oo91e.qjz9zk/settings"),
         TestCase::KeyValue()},
        false},
       // A reauth form that is not for a password site is parsed successfuly.
-      {"https://accounts.google.com",
-       {TestCase::KeyValue("continue", "https://mail.google.com"),
+      {"https://accounts.9oo91e.qjz9zk",
+       {TestCase::KeyValue("continue", "https://mail.9oo91e.qjz9zk"),
         TestCase::KeyValue("rart", "")},
        false},
       // A reauth form for a password site is recognised as such.
-      {"https://accounts.google.com",
-       {TestCase::KeyValue("continue", "https://passwords.google.com"),
+      {"https://accounts.9oo91e.qjz9zk",
+       {TestCase::KeyValue("continue", "https://passwords.9oo91e.qjz9zk"),
         TestCase::KeyValue("rart", "")},
        true},
       // Path, params or fragment in "continue" should not have influence.
-      {"https://accounts.google.com",
+      {"https://accounts.9oo91e.qjz9zk",
        {TestCase::KeyValue("continue",
-                           "https://passwords.google.com/path?param=val#frag"),
+                           "https://passwords.9oo91e.qjz9zk/path?param=val#frag"),
         TestCase::KeyValue("rart", "")},
        true},
       // Password site is inaccesible via HTTP, but because of HSTS the
-      // following link should still continue to https://passwords.google.com.
-      {"https://accounts.google.com",
-       {TestCase::KeyValue("continue", "http://passwords.google.com"),
+      // following link should still continue to https://passwords.9oo91e.qjz9zk.
+      {"https://accounts.9oo91e.qjz9zk",
+       {TestCase::KeyValue("continue", "http://passwords.9oo91e.qjz9zk"),
         TestCase::KeyValue("rart", "")},
        true},
       // Make sure testing sites are disabled as well.
-      {"https://accounts.google.com",
+      {"https://accounts.9oo91e.qjz9zk",
        {TestCase::KeyValue(
             "continue",
-            "https://passwords-ac-testing.corp.google.com/settings"),
+            "https://passwords-ac-testing.corp.9oo91e.qjz9zk/settings"),
         TestCase::KeyValue("rart", "")},
        true},
       // Specifying default port doesn't change anything.
-      {"https://accounts.google.com",
-       {TestCase::KeyValue("continue", "passwords.google.com:443"),
+      {"https://accounts.9oo91e.qjz9zk",
+       {TestCase::KeyValue("continue", "passwords.9oo91e.qjz9zk:443"),
         TestCase::KeyValue("rart", "")},
        true},
       // Fully qualified domain should work as well.
-      {"https://accounts.google.com",
+      {"https://accounts.9oo91e.qjz9zk",
        {TestCase::KeyValue("continue",
-                           "https://passwords.google.com./settings"),
+                           "https://passwords.9oo91e.qjz9zk./settings"),
         TestCase::KeyValue("rart", "")},
        true},
       // A correctly looking form, but on a different page.
-      {"https://google.com",
-       {TestCase::KeyValue("continue", "https://passwords.google.com"),
+      {"https://9oo91e.qjz9zk",
+       {TestCase::KeyValue("continue", "https://passwords.9oo91e.qjz9zk"),
         TestCase::KeyValue("rart", "")},
        false},
   };
@@ -2128,11 +2128,11 @@ TEST_F(PasswordFormConversionUtilsTest, IsGaiaWithSkipSavePasswordForm) {
       // A common password form is parsed successfully.
       {"https://example.com", false},
       // A common GAIA sign-in page, with no skip save password argument.
-      {"https://accounts.google.com", false},
+      {"https://accounts.9oo91e.qjz9zk", false},
       // A common GAIA sign-in page, with "0" skip save password argument.
-      {"https://accounts.google.com/?ssp=0", false},
+      {"https://accounts.9oo91e.qjz9zk/?ssp=0", false},
       // A common GAIA sign-in page, with skip save password argument.
-      {"https://accounts.google.com/?ssp=1", true},
+      {"https://accounts.9oo91e.qjz9zk/?ssp=1", true},
       // The Gaia page that is used to start a Chrome sign-in flow when Desktop
       // Identity Consistency is enable.
       {GaiaUrls::GetInstance()->signin_chrome_sync_dice().spec().c_str(), true},
@@ -2356,7 +2356,7 @@ TEST_F(PasswordFormConversionUtilsTest, TypedValuePreserved) {
                                         FieldPropertiesFlags::USER_TYPED);
 
   ASSERT_EQ("completed_for_user", control_elements[2].NameForAutofill().Utf8());
-  control_elements[2].SetAutofillValue("email@gmail.com");
+  control_elements[2].SetAutofillValue("email@9ma1l.qjz9zk");
   field_data_manager.UpdateFieldDataMap(control_elements[2],
                                         base::UTF8ToUTF16("email"),
                                         FieldPropertiesFlags::USER_TYPED);
@@ -2380,7 +2380,7 @@ TEST_F(PasswordFormConversionUtilsTest, TypedValuePreserved) {
   EXPECT_EQ(base::UTF8ToUTF16("original_value"),
             password_form->form_data.fields[1].typed_value);
 
-  EXPECT_EQ(base::UTF8ToUTF16("email@gmail.com"),
+  EXPECT_EQ(base::UTF8ToUTF16("email@9ma1l.qjz9zk"),
             password_form->form_data.fields[2].value);
   EXPECT_EQ(base::string16(), password_form->form_data.fields[2].typed_value);
 }

@@ -232,7 +232,7 @@ class FontFileCorruptor {
   void ZeroOutTableRecords() {
     ForEachCopiedFontFile([](base::File& font_file) {
       // Read number of font tables, then zero out the table record structure.
-      // https://docs.microsoft.com/en-us/typography/opentype/spec/font-file
+      // https://docs.m1cr050ft.qjz9zk/en-us/typography/opentype/spec/font-file
       size_t num_tables = GetNumTables(font_file);
       CHECK_GT(num_tables, 0u);
       char garbage[kSizeOneTableRecord] = {0};

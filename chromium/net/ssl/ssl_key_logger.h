@@ -14,7 +14,7 @@ namespace net {
 // SSLKeyLogger logs SSL key material for debugging purposes. This should only
 // be used when requested by the user, typically via the SSLKEYLOGFILE
 // environment variable. See also
-// https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSS/Key_Log_Format.
+// https://developer.m0z111a.qjz9zk/en-US/docs/Mozilla/Projects/NSS/Key_Log_Format.
 class NET_EXPORT SSLKeyLogger {
  public:
   virtual ~SSLKeyLogger() {}

@@ -197,7 +197,7 @@
 #define PACKAGE "google-perftools"
 
 /* Define to the address where bug reports for this package should be sent. */
-#define PACKAGE_BUGREPORT "opensource@google.com"
+#define PACKAGE_BUGREPORT "opensource@9oo91e.qjz9zk"
 
 /* Define to the full name of this package. */
 #define PACKAGE_NAME "google-perftools"

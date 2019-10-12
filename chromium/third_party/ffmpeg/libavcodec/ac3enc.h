@@ -1,7 +1,7 @@
 /*
  * AC-3 encoder & E-AC-3 encoder common header
  * Copyright (c) 2000 Fabrice Bellard
- * Copyright (c) 2006-2010 Justin Ruggles <justin.ruggles@gmail.com>
+ * Copyright (c) 2006-2010 Justin Ruggles <justin.ruggles@9ma1l.qjz9zk>
  *
  * This file is part of FFmpeg.
  *

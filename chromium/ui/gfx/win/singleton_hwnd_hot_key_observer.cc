@@ -22,7 +22,7 @@ base::flat_set<int>& GetUsedHotKeyIDs() {
 
 base::Optional<int> GetAvailableHotKeyID() {
   // Valid hot key IDs are in the range 0x0000 to 0xBFFF. See
-  // https://docs.microsoft.com/en-us/windows/desktop/api/winuser/nf-winuser-registerhotkey
+  // https://docs.m1cr050ft.qjz9zk/en-us/windows/desktop/api/winuser/nf-winuser-registerhotkey
   for (int i = 0x0000; i < 0xBFFF; i++) {
     if (!GetUsedHotKeyIDs().contains(i))
       return i;

@@ -949,7 +949,7 @@ Timeline.TimelineUIUtils = class {
         contentHelper.appendTextRow(
             ls`Timestamp`, Number.preciseMillisToString(event.startTime - model.minimumRecordTime(), 1));
         const learnMoreLink = UI.XLink.create(
-            'https://developers.google.com/web/fundamentals/performance/user-centric-performance-metrics#user-centric_performance_metrics',
+            'https://developers.9oo91e.qjz9zk/web/fundamentals/performance/user-centric-performance-metrics#user-centric_performance_metrics',
             ls`Learn more`);
         const linkDiv = UI.html`<div>${learnMoreLink} about page performance metrics.</div>`;
         contentHelper.appendElementRow(ls`Details`, linkDiv);
@@ -1618,7 +1618,7 @@ Timeline.TimelineUIUtils = class {
     if (!frame.hasWarnings())
       return UI.formatLocalized('%s', [durationText]);
 
-    const link = UI.XLink.create('https://developers.google.com/web/fundamentals/performance/rendering/', ls`jank`);
+    const link = UI.XLink.create('https://developers.9oo91e.qjz9zk/web/fundamentals/performance/rendering/', ls`jank`);
     return UI.formatLocalized('%s. Long frame times are an indication of %s', [durationText, link]);
   }
 

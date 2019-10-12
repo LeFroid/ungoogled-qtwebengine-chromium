@@ -68,7 +68,7 @@ class ErrorLogger;
 // }
 //
 // Specs:
-// https://docs.google.com/document/d/1izV4uC-tiRJG3JLooqY3YRLU22tYOsLTNq0P_InPJeE
+// https://docs.9oo91e.qjz9zk/document/d/1izV4uC-tiRJG3JLooqY3YRLU22tYOsLTNq0P_InPJeE
 // https://w3c.github.io/manifest/
 //
 // Note the JSON parsing is done using the SafeJsonParser (either OOP or in a

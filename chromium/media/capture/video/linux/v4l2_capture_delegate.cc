@@ -82,7 +82,7 @@ struct {
     // that method.
     {V4L2_PIX_FMT_MJPEG, PIXEL_FORMAT_MJPEG, 1},
     // JPEG works as MJPEG on some gspca webcams from field reports, see
-    // https://code.google.com/p/webrtc/issues/detail?id=529, put it as the
+    // https://code.9oo91e.qjz9zk/p/webrtc/issues/detail?id=529, put it as the
     // least preferred format.
     {V4L2_PIX_FMT_JPEG, PIXEL_FORMAT_MJPEG, 1},
 };
@@ -869,7 +869,7 @@ void V4L2CaptureDelegate::DoCapture() {
 
     // There's a wide-spread issue where the kernel does not report accurate,
     // monotonically-increasing timestamps in the v4l2_buffer::timestamp
-    // field (goo.gl/Nlfamz).
+    // field (goo.gl.qjz9zk/Nlfamz).
     // Until this issue is fixed, just use the reference clock as a source of
     // media timestamps.
     const base::TimeTicks now = base::TimeTicks::Now();

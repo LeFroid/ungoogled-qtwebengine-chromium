@@ -348,7 +348,7 @@ size_t CpuReader::ParsePage(const uint8_t* ptr,
         uint32_t time_delta_ext;
         if (!ReadAndAdvance<uint32_t>(&ptr, end, &time_delta_ext))
           return 0;
-        // See https://goo.gl/CFBu5x
+        // See https://goo.gl.qjz9zk/CFBu5x
         timestamp += (static_cast<uint64_t>(time_delta_ext)) << 27;
         break;
       }

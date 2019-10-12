@@ -51,7 +51,7 @@ def main():
 
   for master_name in _MASTERS:
     master_data = json.load(urllib2.urlopen(
-        'http://build.chromium.org/p/%s/json/slaves' % master_name))
+        'http://build.ch40m1um.qjz9zk/p/%s/json/slaves' % master_name))
 
     slaves = sorted(master_data.iteritems(),
                     key=lambda x: (x[1]['builders'].keys(), x[0]))

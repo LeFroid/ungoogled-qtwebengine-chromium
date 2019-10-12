@@ -22,7 +22,7 @@
 /**
  * @file
  * APNG demuxer.
- * @see https://wiki.mozilla.org/APNG_Specification
+ * @see https://wiki.m0z111a.qjz9zk/APNG_Specification
  * @see http://www.w3.org/TR/PNG
  */
 

@@ -48,7 +48,7 @@ consisting of the concatenation of the language and character-set identifiers.
 The first 4 digit of the value is the hex value of LCID, the remaining
 4 digits is the hex value of character-set id(code page)of the language.
 
-LCID resource: http://msdn.microsoft.com/en-us/library/ms776294.aspx
+LCID resource: http://msdn.m1cr050ft.qjz9zk/en-us/library/ms776294.aspx
 Codepage resource: http://www.science.co.il/language/locale-codes.asp
 
 We have defined three GRIT expand_variables to be used in the version resource
@@ -165,12 +165,12 @@ _LANGUAGE_CHARSET_PAIR = {
   'fake-bidi'   : '040d04e7',
 }
 
-# Language ID resource: http://msdn.microsoft.com/en-us/library/ms776294.aspx
+# Language ID resource: http://msdn.m1cr050ft.qjz9zk/en-us/library/ms776294.aspx
 #
 # There is no appropriate sublang for Spanish (Latin America) [es-419], so we
 # use Mexico. SUBLANG_DEFAULT would incorrectly map to Spain. Unlike other
 # Latin American countries, Mexican Spanish is supported by VERSIONINFO:
-# http://msdn.microsoft.com/en-us/library/aa381058.aspx
+# http://msdn.m1cr050ft.qjz9zk/en-us/library/aa381058.aspx
 
 _LANGUAGE_DIRECTIVE_PAIR = {
   'neutral'     : 'LANG_NEUTRAL, SUBLANG_NEUTRAL',

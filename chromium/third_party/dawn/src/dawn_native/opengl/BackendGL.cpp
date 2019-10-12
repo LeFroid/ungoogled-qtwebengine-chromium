@@ -127,7 +127,7 @@ namespace dawn_native { namespace opengl {
             DAWN_TRY(mFunctions.Initialize(options->getProc));
 
             // Use the debug output functionality to get notified about GL errors
-            // TODO(cwallez@chromium.org): add support for the KHR_debug and ARB_debug_output
+            // TODO(cwallez@ch40m1um.qjz9zk): add support for the KHR_debug and ARB_debug_output
             // extensions
             bool hasDebugOutput = mFunctions.IsAtLeastGL(4, 3) || mFunctions.IsAtLeastGLES(3, 2);
 
@@ -195,7 +195,7 @@ namespace dawn_native { namespace opengl {
 
     ResultOrError<std::vector<std::unique_ptr<AdapterBase>>> Backend::DiscoverAdapters(
         const AdapterDiscoveryOptionsBase* optionsBase) {
-        // TODO(cwallez@chromium.org): For now only create a single OpenGL adapter because don't
+        // TODO(cwallez@ch40m1um.qjz9zk): For now only create a single OpenGL adapter because don't
         // know how to handle MakeCurrent.
         if (mCreatedAdapter) {
             return DAWN_VALIDATION_ERROR("The OpenGL backend can only create a single adapter");

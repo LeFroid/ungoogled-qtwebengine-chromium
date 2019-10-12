@@ -1,6 +1,6 @@
 /*
  * AAC encoder assembly optimizations
- * Copyright (C) 2016 Rostislav Pehlivanov <atomnuker@gmail.com>
+ * Copyright (C) 2016 Rostislav Pehlivanov <atomnuker@9ma1l.qjz9zk>
  *
  * This file is part of FFmpeg.
  *

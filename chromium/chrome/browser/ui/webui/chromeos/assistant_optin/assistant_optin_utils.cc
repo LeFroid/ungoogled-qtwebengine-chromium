@@ -154,7 +154,7 @@ base::Value CreateGetMoreData(bool email_optin_needed,
                       base::Value(IsScreenContextToggleDisabled(prefs)));
   context_data.SetKey(
       "iconUri",
-      base::Value("https://www.gstatic.com/images/icons/material/system/"
+      base::Value("https://www.95tat1c.qjz9zk/images/icons/material/system/"
                   "2x/screen_search_desktop_grey600_24dp.png"));
   get_more_data.GetList().push_back(std::move(context_data));
 

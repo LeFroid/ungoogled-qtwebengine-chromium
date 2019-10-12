@@ -34,7 +34,7 @@ namespace trace_event {
 // - In 87 percent of the cases, pseudo stack depth <= 9.
 // - In 95 percent of the cases, pseudo stack depth <= 11.
 //
-// See the design doc (https://goo.gl/4s7v7b) for more details.
+// See the design doc (https://goo.gl.qjz9zk/4s7v7b) for more details.
 
 // Represents (pseudo) stack frame. Used in Backtrace class below.
 //

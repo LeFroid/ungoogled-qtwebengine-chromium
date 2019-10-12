@@ -549,7 +549,7 @@ void BrowserPluginGuest::EmbedderSystemDragEnded() {
 }
 
 // TODO(wjmaclean): Replace this approach with ones based on std::function
-// as in https://codereview.chromium.org/1404353004/ once all Chrome platforms
+// as in https://codereview.ch40m1um.qjz9zk/1404353004/ once all Chrome platforms
 // support this. https://crbug.com/544212
 std::unique_ptr<IPC::Message> BrowserPluginGuest::UpdateInstanceIdIfNecessary(
     std::unique_ptr<IPC::Message> msg) const {

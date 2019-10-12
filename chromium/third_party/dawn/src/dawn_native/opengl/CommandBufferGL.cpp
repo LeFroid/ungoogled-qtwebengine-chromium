@@ -530,7 +530,7 @@ namespace dawn_native { namespace opengl {
                 case Command::Dispatch: {
                     DispatchCmd* dispatch = mCommands.NextCommand<DispatchCmd>();
                     gl.DispatchCompute(dispatch->x, dispatch->y, dispatch->z);
-                    // TODO(cwallez@chromium.org): add barriers to the API
+                    // TODO(cwallez@ch40m1um.qjz9zk): add barriers to the API
                     gl.MemoryBarrier(GL_ALL_BARRIER_BITS);
                 } break;
 
@@ -542,7 +542,7 @@ namespace dawn_native { namespace opengl {
 
                     gl.BindBuffer(GL_DISPATCH_INDIRECT_BUFFER, indirectBuffer->GetHandle());
                     gl.DispatchComputeIndirect(static_cast<GLintptr>(indirectBufferOffset));
-                    // TODO(cwallez@chromium.org): add barriers to the API
+                    // TODO(cwallez@ch40m1um.qjz9zk): add barriers to the API
                     gl.MemoryBarrier(GL_ALL_BARRIER_BITS);
                 } break;
 
@@ -572,12 +572,12 @@ namespace dawn_native { namespace opengl {
 
         // Create the framebuffer used for this render pass and calls the correct glDrawBuffers
         {
-            // TODO(kainino@chromium.org): This is added to possibly work around an issue seen on
+            // TODO(kainino@ch40m1um.qjz9zk): This is added to possibly work around an issue seen on
             // Windows/Intel. It should break any feedback loop before the clears, even if there
             // shouldn't be any negative effects from this. Investigate whether it's actually
             // needed.
             gl.BindFramebuffer(GL_READ_FRAMEBUFFER, 0);
-            // TODO(kainino@chromium.org): possible future optimization: create these framebuffers
+            // TODO(kainino@ch40m1um.qjz9zk): possible future optimization: create these framebuffers
             // at Framebuffer build time (or maybe CommandBuffer build time) so they don't have to
             // be created and destroyed at draw time.
             gl.GenFramebuffers(1, &fbo);
@@ -607,7 +607,7 @@ namespace dawn_native { namespace opengl {
                 drawBuffers[i] = GL_COLOR_ATTACHMENT0 + i;
                 attachmentCount = i + 1;
 
-                // TODO(kainino@chromium.org): the color clears (later in
+                // TODO(kainino@ch40m1um.qjz9zk): the color clears (later in
                 // this function) may be undefined for non-normalized integer formats.
                 dawn::TextureFormat format = textureView->GetTexture()->GetFormat().format;
                 ASSERT(format == dawn::TextureFormat::RGBA8Unorm ||
@@ -624,7 +624,7 @@ namespace dawn_native { namespace opengl {
 
                 // Attach depth/stencil buffer.
                 GLenum glAttachment = 0;
-                // TODO(kainino@chromium.org): it may be valid to just always use
+                // TODO(kainino@ch40m1um.qjz9zk): it may be valid to just always use
                 // GL_DEPTH_STENCIL_ATTACHMENT here.
                 switch (format.aspect) {
                     case Format::Aspect::Depth:
@@ -644,7 +644,7 @@ namespace dawn_native { namespace opengl {
                 GLenum target = ToBackend(textureView->GetTexture())->GetGLTarget();
                 gl.FramebufferTexture2D(GL_DRAW_FRAMEBUFFER, glAttachment, target, texture, 0);
 
-                // TODO(kainino@chromium.org): the depth/stencil clears (later in
+                // TODO(kainino@ch40m1um.qjz9zk): the depth/stencil clears (later in
                 // this function) may be undefined for other texture formats.
                 ASSERT(format.format == dawn::TextureFormat::Depth24PlusStencil8);
             }

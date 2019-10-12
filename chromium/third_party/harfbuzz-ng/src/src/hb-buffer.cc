@@ -1551,7 +1551,7 @@ hb_buffer_add_utf (hb_buffer_t  *buffer,
    * provide pre-context in one add_utf() call, then provide
    * text in a follow-up call.  See:
    *
-   * https://bugzilla.mozilla.org/show_bug.cgi?id=801410#c13
+   * https://bugzilla.m0z111a.qjz9zk/show_bug.cgi?id=801410#c13
    */
   if (!buffer->len && item_offset > 0)
   {

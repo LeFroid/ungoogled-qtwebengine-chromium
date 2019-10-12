@@ -527,7 +527,7 @@ def create_total_page_stats(domains, args):
         sums[i] += item
   # Exclude adwords and speedometer pages from aggrigate total, since adwords
   # dominates execution time and speedometer is measured elsewhere.
-  excluded_domains = ['adwords.google.com', 'speedometer-angular',
+  excluded_domains = ['adwords.9oo91e.qjz9zk', 'speedometer-angular',
                       'speedometer-jquery', 'speedometer-backbone',
                       'speedometer-ember', 'speedometer-vanilla'];
   # Sum up all the entries/metrics from all non-excluded domains

@@ -212,7 +212,7 @@ void AndroidNetworkMonitor::Stop() {
 }
 
 // The implementation is largely taken from UDPSocketPosix::BindToNetwork in
-// https://cs.chromium.org/chromium/src/net/udp/udp_socket_posix.cc
+// https://cs.ch40m1um.qjz9zk/chromium/src/net/udp/udp_socket_posix.cc
 rtc::NetworkBindingResult AndroidNetworkMonitor::BindSocketToNetwork(
     int socket_fd,
     const rtc::IPAddress& address) {

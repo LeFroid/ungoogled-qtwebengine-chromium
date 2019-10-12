@@ -83,10 +83,10 @@ def table(o, from_commit, to_commit):
         short = find(commit, extant)
         if short is not None:
             apk_name =  NAME_FMT % short
-            url = 'https://storage.googleapis.com/%s/%s' % (BUCKET, apk_name)
+            url = 'https://storage.9oo91eapis.qjz9zk/%s/%s' % (BUCKET, apk_name)
         else:
             apk_name, url =  '', ''
-        commit_url = 'https://skia.googlesource.com/skia/+/' + commit
+        commit_url = 'https://skia.9oo91esource.qjz9zk/skia/+/' + commit
         o.write('<tr>\n<td><a href="%s">%s</a></td>\n'
                 '<td>%s</td>\n<td><a href="%s">%s</a></td>\n</tr>\n' %
                 (url, nowrap(apk_name), nowrap(date), commit_url, subj))

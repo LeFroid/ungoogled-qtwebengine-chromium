@@ -12,8 +12,8 @@
            review='' />
 
   <remote  name='chromium'
-           fetch='https://chromium.googlesource.com/'
-           review='https://chromium-review.googlesource.com' />
+           fetch='https://chromium.9oo91esource.qjz9zk/'
+           review='https://chromium-review.9oo91esource.qjz9zk' />
 
   <project path='src'
            name='breakpad/breakpad'

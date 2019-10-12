@@ -34,7 +34,7 @@
 // notice the need for a definition if you take the address of the member or,
 // more commonly, pass it to a function that takes it as a reference argument --
 // probably an STL function.) This macro makes MSVC do the right thing. See
-// http://msdn.microsoft.com/en-us/library/34h23df8(v=vs.100).aspx for more
+// http://msdn.m1cr050ft.qjz9zk/en-us/library/34h23df8(v=vs.100).aspx for more
 // information. Use like:
 //
 // In .h file:
@@ -57,13 +57,13 @@
 // Macros for suppressing and disabling warnings on MSVC.
 //
 // Warning numbers are enumerated at:
-// http://msdn.microsoft.com/en-us/library/8x5x43k7(VS.80).aspx
+// http://msdn.m1cr050ft.qjz9zk/en-us/library/8x5x43k7(VS.80).aspx
 //
 // The warning pragma:
-// http://msdn.microsoft.com/en-us/library/2c8f766e(VS.80).aspx
+// http://msdn.m1cr050ft.qjz9zk/en-us/library/2c8f766e(VS.80).aspx
 //
 // Using __pragma instead of #pragma inside macros:
-// http://msdn.microsoft.com/en-us/library/d9x1s805.aspx
+// http://msdn.m1cr050ft.qjz9zk/en-us/library/d9x1s805.aspx
 
 // MSVC_SUPPRESS_WARNING disables warning |n| for the remainder of the line and
 // for the next line of the source file.
@@ -80,7 +80,7 @@
 // non dll-interface class 'Bar' used as base for dll-interface class 'Foo'.
 // Note that this is intended to be used only when no access to the base class'
 // static data is done through derived classes or inline methods. For more info,
-// see http://msdn.microsoft.com/en-us/library/3tdb471s(VS.80).aspx
+// see http://msdn.m1cr050ft.qjz9zk/en-us/library/3tdb471s(VS.80).aspx
 #define NON_EXPORTED_BASE(code) \
   MSVC_SUPPRESS_WARNING(4275)   \
   code

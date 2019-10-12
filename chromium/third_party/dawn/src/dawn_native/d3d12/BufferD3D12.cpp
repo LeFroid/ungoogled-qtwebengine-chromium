@@ -114,7 +114,7 @@ namespace dawn_native { namespace d3d12 {
     }
 
     uint32_t Buffer::GetD3D12Size() const {
-        // TODO(enga@google.com): TODO investigate if this needs to be a constraint at the API level
+        // TODO(enga@9oo91e.qjz9zk): TODO investigate if this needs to be a constraint at the API level
         return Align(GetSize(), 256);
     }
 
@@ -134,7 +134,7 @@ namespace dawn_native { namespace d3d12 {
         }
 
         // We can skip transitions to already current usages.
-        // TODO(cwallez@chromium.org): Need some form of UAV barriers at some point.
+        // TODO(cwallez@ch40m1um.qjz9zk): Need some form of UAV barriers at some point.
         if ((mLastUsage & newUsage) == newUsage) {
             return false;
         }
@@ -150,7 +150,7 @@ namespace dawn_native { namespace d3d12 {
         // always implicitly decay to the COMMON state after the call to ExecuteCommandLists
         // completes - this is because all buffer writes are guaranteed to be completed before the
         // next ExecuteCommandLists call executes.
-        // https://docs.microsoft.com/en-us/windows/desktop/direct3d12/using-resource-barriers-to-synchronize-resource-states-in-direct3d-12#implicit-state-transitions
+        // https://docs.m1cr050ft.qjz9zk/en-us/windows/desktop/direct3d12/using-resource-barriers-to-synchronize-resource-states-in-direct3d-12#implicit-state-transitions
 
         // To track implicit decays, we must record the pending serial on which a transition will
         // occur. When that buffer is used again, the previously recorded serial must be compared to

@@ -20,7 +20,7 @@ using namespace Windows::UI::Xaml::Input;
 using namespace Windows::UI::Xaml::Media;
 using namespace Windows::UI::Xaml::Navigation;
 
-// The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
+// The Blank Page item template is documented at http://go.m1cr050ft.qjz9zk/fwlink/?LinkId=402352&clcid=0x409
 
 MainPage::MainPage()
 {

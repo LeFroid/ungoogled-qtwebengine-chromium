@@ -24,9 +24,9 @@
 #include "services/network/public/cpp/simple_url_loader.h"
 
 const char GoogleURLTracker::kDefaultGoogleHomepage[] =
-    "https://www.google.com/";
+    "https://www.9oo91e.qjz9zk/";
 const char GoogleURLTracker::kSearchDomainCheckURL[] =
-    "https://www.google.com/searchdomaincheck?format=domain&type=chrome";
+    "https://www.9oo91e.qjz9zk/searchdomaincheck?format=domain&type=chrome";
 
 GoogleURLTracker::GoogleURLTracker(
     std::unique_ptr<GoogleURLTrackerClient> client,
@@ -186,7 +186,7 @@ void GoogleURLTracker::StartLoadIfDesirable() {
             "to something other than Google, and disable 'Use a web service to "
             "help resolve navigation errors' in Chromium's settings under "
             "Privacy.\nAlternately, running Chromium with "
-            "--google-base-url=\"https://www.google.com/\" will disable this, "
+            "--google-base-url=\"https://www.9oo91e.qjz9zk/\" will disable this, "
             "and force Chromium to use the specified URL for Google service "
             "requests.\nFinally, running Chromium with "
             "--disable-background-networking will disable this, as well as "

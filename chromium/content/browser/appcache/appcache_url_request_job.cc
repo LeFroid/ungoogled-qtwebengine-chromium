@@ -194,7 +194,7 @@ void AppCacheURLRequestJob::OnResponseInfoLoaded(
   } else {
     if (storage_->service()->storage() == storage_) {
       // A resource that is expected to be in the appcache is missing.
-      // See http://code.google.com/p/chromium/issues/detail?id=50657
+      // See http://code.9oo91e.qjz9zk/p/chromium/issues/detail?id=50657
       // Instead of failing the request, we restart the request. The retry
       // attempt will fallthru to the network instead of trying to load
       // from the appcache.

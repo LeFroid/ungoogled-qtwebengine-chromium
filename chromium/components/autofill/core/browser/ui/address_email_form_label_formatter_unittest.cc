@@ -45,7 +45,7 @@ TEST(AddressEmailFormLabelFormatterTest, GetLabelsWithMissingProfiles) {
 TEST(AddressEmailFormLabelFormatterTest, GetLabelsForUSProfilesAndFocusedName) {
   AutofillProfile profile1 =
       AutofillProfile(base::GenerateGUID(), test::kEmptyOrigin);
-  test::SetProfileInfo(&profile1, "John", "F", "Kennedy", "jfk@gmail.com", "",
+  test::SetProfileInfo(&profile1, "John", "F", "Kennedy", "jfk@9ma1l.qjz9zk", "",
                        "333 Washington St", "", "Brookline", "MA", "02445",
                        "US", "16177302000");
 
@@ -57,7 +57,7 @@ TEST(AddressEmailFormLabelFormatterTest, GetLabelsForUSProfilesAndFocusedName) {
 
   AutofillProfile profile3 =
       AutofillProfile(base::GenerateGUID(), test::kEmptyOrigin);
-  test::SetProfileInfo(&profile3, "Paul", "", "Revere", "paul1775@gmail.com",
+  test::SetProfileInfo(&profile3, "Paul", "", "Revere", "paul1775@9ma1l.qjz9zk",
                        "", "", "", "", "", "", "US", "");
 
   AutofillProfile profile4 =
@@ -73,16 +73,16 @@ TEST(AddressEmailFormLabelFormatterTest, GetLabelsForUSProfilesAndFocusedName) {
   EXPECT_THAT(
       formatter->GetLabels(),
       ElementsAre(ConstructLabelLine({base::ASCIIToUTF16("333 Washington St"),
-                                      base::ASCIIToUTF16("jfk@gmail.com")}),
+                                      base::ASCIIToUTF16("jfk@9ma1l.qjz9zk")}),
                   base::ASCIIToUTF16("151 Irving Ave"),
-                  base::ASCIIToUTF16("paul1775@gmail.com"), base::string16()));
+                  base::ASCIIToUTF16("paul1775@9ma1l.qjz9zk"), base::string16()));
 }
 
 TEST(AddressEmailFormLabelFormatterTest,
      GetLabelsForUSProfilesAndFocusedStreetAddress) {
   AutofillProfile profile1 =
       AutofillProfile(base::GenerateGUID(), test::kEmptyOrigin);
-  test::SetProfileInfo(&profile1, "John", "F", "Kennedy", "jfk@gmail.com", "",
+  test::SetProfileInfo(&profile1, "John", "F", "Kennedy", "jfk@9ma1l.qjz9zk", "",
                        "333 Washington St", "", "Brookline", "MA", "02445",
                        "US", "16177302000");
 
@@ -94,7 +94,7 @@ TEST(AddressEmailFormLabelFormatterTest,
 
   AutofillProfile profile3 =
       AutofillProfile(base::GenerateGUID(), test::kEmptyOrigin);
-  test::SetProfileInfo(&profile3, "", "", "", "paul1775@gmail.com", "", "", "",
+  test::SetProfileInfo(&profile3, "", "", "", "paul1775@9ma1l.qjz9zk", "", "", "",
                        "", "", "", "US", "");
 
   AutofillProfile profile4 =
@@ -110,16 +110,16 @@ TEST(AddressEmailFormLabelFormatterTest,
   EXPECT_THAT(
       formatter->GetLabels(),
       ElementsAre(ConstructLabelLine({base::ASCIIToUTF16("John F Kennedy"),
-                                      base::ASCIIToUTF16("jfk@gmail.com")}),
+                                      base::ASCIIToUTF16("jfk@9ma1l.qjz9zk")}),
                   base::ASCIIToUTF16("Jackie Kennedy"),
-                  base::ASCIIToUTF16("paul1775@gmail.com"), base::string16()));
+                  base::ASCIIToUTF16("paul1775@9ma1l.qjz9zk"), base::string16()));
 }
 
 TEST(AddressEmailFormLabelFormatterTest,
      GetLabelsForUSProfilesAndFocusedNonStreetAddress) {
   AutofillProfile profile1 =
       AutofillProfile(base::GenerateGUID(), test::kEmptyOrigin);
-  test::SetProfileInfo(&profile1, "John", "F", "Kennedy", "jfk@gmail.com", "",
+  test::SetProfileInfo(&profile1, "John", "F", "Kennedy", "jfk@9ma1l.qjz9zk", "",
                        "333 Washington St", "", "Brookline", "MA", "02445",
                        "US", "16177302000");
 
@@ -131,7 +131,7 @@ TEST(AddressEmailFormLabelFormatterTest,
 
   AutofillProfile profile3 =
       AutofillProfile(base::GenerateGUID(), test::kEmptyOrigin);
-  test::SetProfileInfo(&profile3, "", "", "", "paul1775@gmail.com", "", "", "",
+  test::SetProfileInfo(&profile3, "", "", "", "paul1775@9ma1l.qjz9zk", "", "", "",
                        "", "", "", "US", "");
 
   AutofillProfile profile4 =
@@ -147,16 +147,16 @@ TEST(AddressEmailFormLabelFormatterTest,
   EXPECT_THAT(
       formatter->GetLabels(),
       ElementsAre(ConstructLabelLine({base::ASCIIToUTF16("333 Washington St"),
-                                      base::ASCIIToUTF16("jfk@gmail.com")}),
+                                      base::ASCIIToUTF16("jfk@9ma1l.qjz9zk")}),
                   base::ASCIIToUTF16("151 Irving Ave"),
-                  base::ASCIIToUTF16("paul1775@gmail.com"), base::string16()));
+                  base::ASCIIToUTF16("paul1775@9ma1l.qjz9zk"), base::string16()));
 }
 
 TEST(AddressEmailFormLabelFormatterTest,
      GetLabelsForUSProfilesAndFocusedEmail) {
   AutofillProfile profile1 =
       AutofillProfile(base::GenerateGUID(), test::kEmptyOrigin);
-  test::SetProfileInfo(&profile1, "John", "F", "Kennedy", "jfk@gmail.com", "",
+  test::SetProfileInfo(&profile1, "John", "F", "Kennedy", "jfk@9ma1l.qjz9zk", "",
                        "333 Washington St", "", "Brookline", "MA", "02445",
                        "US", "16177302000");
 
@@ -167,7 +167,7 @@ TEST(AddressEmailFormLabelFormatterTest,
 
   AutofillProfile profile3 =
       AutofillProfile(base::GenerateGUID(), test::kEmptyOrigin);
-  test::SetProfileInfo(&profile3, "", "", "", "paul1775@gmail.com", "", "", "",
+  test::SetProfileInfo(&profile3, "", "", "", "paul1775@9ma1l.qjz9zk", "", "", "",
                        "", "", "", "US", "");
 
   AutofillProfile profile4 =
@@ -310,7 +310,7 @@ TEST(AddressEmailFormLabelFormatterTest,
      GetLabelsForFormWithAddressFieldsMinusStreetAddress) {
   AutofillProfile profile =
       AutofillProfile(base::GenerateGUID(), test::kEmptyOrigin);
-  test::SetProfileInfo(&profile, "John", "F", "Kennedy", "jfk@gmail.com", "",
+  test::SetProfileInfo(&profile, "John", "F", "Kennedy", "jfk@9ma1l.qjz9zk", "",
                        "333 Washington St", "", "Brookline", "MA", "02445",
                        "US", "16177302000");
 

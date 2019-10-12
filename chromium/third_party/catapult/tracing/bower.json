@@ -3,8 +3,8 @@
   "version": "0.0.0",
   "homepage": "http://google.github.io/trace-viewer",
   "authors": [
-    "Nat Duca <nduca@chromium.org>",
-    "dan sinclair <dsinclair@chromium.org>"
+    "Nat Duca <nduca@ch40m1um.qjz9zk>",
+    "dan sinclair <dsinclair@ch40m1um.qjz9zk>"
   ],
   "description": "TraceViewer for chrome://tracing and Android Systrace",
   "license": "BSD",

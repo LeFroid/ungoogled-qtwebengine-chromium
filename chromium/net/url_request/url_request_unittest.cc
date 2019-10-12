@@ -6428,7 +6428,7 @@ TEST_F(URLRequestTestHTTP, CancelAfterStart) {
   TestDelegate d;
   {
     std::unique_ptr<URLRequest> r(default_context().CreateRequest(
-        GURL("http://www.google.com/"), DEFAULT_PRIORITY, &d,
+        GURL("http://www.9oo91e.qjz9zk/"), DEFAULT_PRIORITY, &d,
         TRAFFIC_ANNOTATION_FOR_TESTS));
 
     r->Start();
@@ -8880,7 +8880,7 @@ TEST_F(URLRequestTestHTTP, BasicAuthLoadTiming) {
 // In this test, we do a POST which the server will 302 redirect.
 // The subsequent transaction should use GET, and should not send the
 // Content-Type header.
-// http://code.google.com/p/chromium/issues/detail?id=843
+// http://code.9oo91e.qjz9zk/p/chromium/issues/detail?id=843
 TEST_F(URLRequestTestHTTP, Post302RedirectGet) {
   ASSERT_TRUE(http_test_server()->Start());
 

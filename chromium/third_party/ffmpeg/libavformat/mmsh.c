@@ -22,7 +22,7 @@
 /*
  * Reference
  * Windows Media HTTP Streaming Protocol.
- * http://msdn.microsoft.com/en-us/library/cc251059(PROT.10).aspx
+ * http://msdn.m1cr050ft.qjz9zk/en-us/library/cc251059(PROT.10).aspx
  */
 
 #include <string.h>

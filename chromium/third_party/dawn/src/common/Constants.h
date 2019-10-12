@@ -18,7 +18,7 @@
 #include <cstdint>
 
 static constexpr uint32_t kMaxBindGroups = 4u;
-// TODO(cwallez@chromium.org): investigate bindgroup limits
+// TODO(cwallez@ch40m1um.qjz9zk): investigate bindgroup limits
 static constexpr uint32_t kMaxBindingsPerGroup = 16u;
 static constexpr uint32_t kMaxVertexAttributes = 16u;
 // Vulkan has a standalone limit named maxVertexInputAttributeOffset (2047u at least) for vertex

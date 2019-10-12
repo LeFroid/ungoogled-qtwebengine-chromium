@@ -39,7 +39,7 @@ static unsigned char good_quality_max_mesh_pct[MAX_MESH_SPEED + 1] = {
   50, 50, 25, 15, 5, 1
 };
 
-// TODO(huisu@google.com): These settings are pretty relaxed, tune them for
+// TODO(huisu@9oo91e.qjz9zk): These settings are pretty relaxed, tune them for
 // each speed setting
 static MESH_PATTERN intrabc_mesh_patterns[MAX_MESH_SPEED + 1][MAX_MESH_STEP] = {
   { { 256, 1 }, { 256, 1 }, { 0, 0 }, { 0, 0 } },
@@ -115,7 +115,7 @@ static void set_good_speed_feature_framesize_dependent(
     sf->use_square_partition_only_threshold = BLOCK_64X64;
   }
 
-  // TODO(huisu@google.com): train models for 720P and above.
+  // TODO(huisu@9oo91e.qjz9zk): train models for 720P and above.
   if (!is_720p_or_larger) {
     sf->ml_partition_search_breakout_thresh[0] = 200;  // BLOCK_8X8
     sf->ml_partition_search_breakout_thresh[1] = 250;  // BLOCK_16X16
@@ -148,7 +148,7 @@ static void set_good_speed_feature_framesize_dependent(
     } else if (is_480p_or_larger) {
       sf->use_square_partition_only_threshold = BLOCK_32X32;
     } else {
-      // TODO(chiyotsai@google.com): Setting the threshold to BLOCK_16X16 incurs
+      // TODO(chiyotsai@9oo91e.qjz9zk): Setting the threshold to BLOCK_16X16 incurs
       // a large loss (about 0.584%). Try increasing the threshold on boosted
       // frame and see if it improves the performance.
       sf->use_square_partition_only_threshold = BLOCK_32X32;

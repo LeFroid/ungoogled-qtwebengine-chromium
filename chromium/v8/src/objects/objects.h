@@ -262,7 +262,7 @@ ShouldThrow GetShouldThrow(Isolate* isolate, Maybe<ShouldThrow> should_throw);
 // allocation of the C++ vtable.
 // There must only be a single data member in Object: the Address ptr,
 // containing the tagged heap pointer that this Object instance refers to.
-// For a design overview, see https://goo.gl/Ph4CGz.
+// For a design overview, see https://goo.gl.qjz9zk/Ph4CGz.
 class Object : public TaggedImpl<HeapObjectReferenceType::STRONG, Address> {
  public:
   constexpr Object() : TaggedImpl(kNullAddress) {}

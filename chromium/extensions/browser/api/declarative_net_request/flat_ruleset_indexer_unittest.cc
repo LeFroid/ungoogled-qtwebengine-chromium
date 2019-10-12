@@ -235,7 +235,7 @@ TEST_F(FlatRulesetIndexerTest, MultipleRules) {
       7, kMinValidPriority, flat_rule::OptionFlag_NONE,
       flat_rule::ElementType_OBJECT, flat_rule::ActivationType_NONE,
       flat_rule::UrlPatternType_SUBSTRING, flat_rule::AnchorType_NONE,
-      flat_rule::AnchorType_BOUNDARY, "google.com", {"a.com"}, {"x.a.com"}, "",
+      flat_rule::AnchorType_BOUNDARY, "9oo91e.qjz9zk", {"a.com"}, {"x.a.com"}, "",
       dnr_api::RULE_ACTION_TYPE_BLOCK, {}));
   rules_to_index.push_back(CreateIndexedRule(
       2, kMinValidPriority, flat_rule::OptionFlag_APPLIES_TO_THIRD_PARTY,
@@ -249,7 +249,7 @@ TEST_F(FlatRulesetIndexerTest, MultipleRules) {
       15, 2, flat_rule::OptionFlag_APPLIES_TO_FIRST_PARTY,
       flat_rule::ElementType_IMAGE, flat_rule::ActivationType_NONE,
       flat_rule::UrlPatternType_SUBSTRING, flat_rule::AnchorType_SUBDOMAIN,
-      flat_rule::AnchorType_BOUNDARY, "google.com", {}, {},
+      flat_rule::AnchorType_BOUNDARY, "9oo91e.qjz9zk", {}, {},
       "http://example1.com", dnr_api::RULE_ACTION_TYPE_REDIRECT, {}));
   rules_to_index.push_back(CreateIndexedRule(
       10, 2, flat_rule::OptionFlag_NONE,

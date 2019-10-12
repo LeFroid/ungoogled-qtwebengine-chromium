@@ -27,7 +27,7 @@
 // (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 // OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 //
-// Authors: Dan Egnor (egnor@google.com)
+// Authors: Dan Egnor (egnor@9oo91e.qjz9zk)
 //
 // A "smart" pointer type with reference tracking.  Every pointer to a
 // particular object is kept on a circular linked list.  When the last pointer
@@ -62,7 +62,7 @@
 //       raw pointer (e.g. via get()) concurrently, and
 //     - it's safe to write to two linked_ptrs that point to the same
 //       shared object concurrently.
-// TODO(wan@google.com): rename this to safe_linked_ptr to avoid
+// TODO(wan@9oo91e.qjz9zk): rename this to safe_linked_ptr to avoid
 // confusion with normal linked_ptr.
 
 #ifndef GTEST_INCLUDE_GTEST_INTERNAL_GTEST_LINKED_PTR_H_

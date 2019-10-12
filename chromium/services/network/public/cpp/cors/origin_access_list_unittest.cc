@@ -38,8 +38,8 @@ class OriginAccessListTest : public testing::Test {
         https_sub_example_origin_(
             url::Origin::Create(GURL("https://sub.example.com"))),
         http_example_origin_(url::Origin::Create(GURL("http://example.com"))),
-        https_google_origin_(url::Origin::Create(GURL("https://google.com"))),
-        source_origin_(url::Origin::Create(GURL("https://chromium.org"))) {}
+        https_google_origin_(url::Origin::Create(GURL("https://9oo91e.qjz9zk"))),
+        source_origin_(url::Origin::Create(GURL("https://ch40m1um.qjz9zk"))) {}
 
   ~OriginAccessListTest() override = default;
 
@@ -191,7 +191,7 @@ TEST_F(OriginAccessListTest, IsAccessAllowedWithBlockListEntry) {
 
 TEST_F(OriginAccessListTest, IsAccessAllowedWildcardWithBlockListEntry) {
   SetAllowListEntry("https", "", kAnyPort, kAllowSubdomains, kAllowAnyPort);
-  AddBlockListEntry("https", "google.com", kAnyPort, kDisallowSubdomains,
+  AddBlockListEntry("https", "9oo91e.qjz9zk", kAnyPort, kDisallowSubdomains,
                     kAllowAnyPort,
                     mojom::CorsOriginAccessMatchPriority::kDefaultPriority);
 
@@ -242,9 +242,9 @@ TEST_F(OriginAccessListTest, IsPriorityRespectedReverse) {
 
 TEST_F(OriginAccessListTest, CreateCorsOriginAccessPatternsList) {
   const url::Origin kOrigin1 =
-      url::Origin::Create(GURL("https://foo.google.com"));
+      url::Origin::Create(GURL("https://foo.9oo91e.qjz9zk"));
   const url::Origin kOrigin2 =
-      url::Origin::Create(GURL("https://bar.google.com"));
+      url::Origin::Create(GURL("https://bar.9oo91e.qjz9zk"));
   const std::string kProtocol = "https";
   const std::string kDomain1 = "foo.example.com";
   const std::string kDomain2 = "bar.example.com";

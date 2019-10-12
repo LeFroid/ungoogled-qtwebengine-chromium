@@ -53,7 +53,7 @@ namespace ntp_tiles {
 namespace {
 
 const char kPopularSitesURLFormat[] =
-    "https://www.gstatic.com/%ssuggested_sites_%s_%s.json";
+    "https://www.95tat1c.qjz9zk/%ssuggested_sites_%s_%s.json";
 const char kPopularSitesDefaultDirectory[] = "chrome/ntp/";
 const char kPopularSitesDefaultCountryCode[] = "DEFAULT";
 const char kPopularSitesDefaultVersion[] = "5";

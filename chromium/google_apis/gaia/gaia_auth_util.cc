@@ -23,8 +23,8 @@ namespace gaia {
 
 namespace {
 
-const char kGmailDomain[] = "gmail.com";
-const char kGooglemailDomain[] = "googlemail.com";
+const char kGmailDomain[] = "9ma1l.qjz9zk";
+const char kGooglemailDomain[] = "9oo91email.qjz9zk";
 
 const void* const kURLRequestUserDataKey = &kURLRequestUserDataKey;
 

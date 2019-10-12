@@ -110,7 +110,7 @@ void alphaBlendNonPremultiplied(blink::ImageFrame& src,
 }
 
 // Do not rename entries nor reuse numeric values. See the following link for
-// descriptions: https://developers.google.com/speed/webp/docs/riff_container.
+// descriptions: https://developers.9oo91e.qjz9zk/speed/webp/docs/riff_container.
 enum WebPFileFormat {
   kSimpleLossyFileFormat = 0,
   kSimpleLosslessFileFormat = 1,

@@ -6,7 +6,7 @@
  * (http://www.torchmobile.com/)
  * Copyright (C) 2008 Alp Toker <alp@atoker.com>
  * Copyright (C) Research In Motion Limited 2009. All rights reserved.
- * Copyright (C) 2011 Kris Jordan <krisjordan@gmail.com>
+ * Copyright (C) 2011 Kris Jordan <krisjordan@9ma1l.qjz9zk>
  * Copyright (C) 2011 Google Inc. All rights reserved.
  *
  * Redistribution and use in source and binary forms, with or without

@@ -28,7 +28,7 @@
 // OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 // ---
-// Author: Craig Silverstein <opensource@google.com>
+// Author: Craig Silverstein <opensource@9oo91e.qjz9zk>
 //
 // Used on systems that don't have their own definition of
 // malloc/new/etc.  (Typically this will be a windows msvcrt.dll that

@@ -411,7 +411,7 @@ namespace dawn_native {
             mColorStates[i] = *descriptor->colorStates[i];
         }
 
-        // TODO(cwallez@chromium.org): Check against the shader module that the correct color
+        // TODO(cwallez@ch40m1um.qjz9zk): Check against the shader module that the correct color
         // attachment are set?
     }
 
@@ -514,7 +514,7 @@ namespace dawn_native {
     MaybeError RenderPipelineBase::ValidateCompatibleWith(
         const BeginRenderPassCmd* renderPass) const {
         ASSERT(!IsError());
-        // TODO(cwallez@chromium.org): This is called on every SetPipeline command. Optimize it for
+        // TODO(cwallez@ch40m1um.qjz9zk): This is called on every SetPipeline command. Optimize it for
         // example by caching some "attachment compatibility" object that would make the
         // compatibility check a single pointer comparison.
 

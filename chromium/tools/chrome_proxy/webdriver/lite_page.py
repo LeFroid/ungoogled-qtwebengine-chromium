@@ -33,7 +33,7 @@ class LitePage(IntegrationTest):
       test_driver.AddChromeArg('--enable-spdy-proxy-auth')
       test_driver.AddChromeArg('--force-effective-connection-type=2G')
 
-      test_driver.LoadURL('http://check.googlezip.net/test.html')
+      test_driver.LoadURL('http://check.9oo91e21p.qjz9zk/test.html')
 
       lite_page_responses = 0
       checked_chrome_proxy_header = False
@@ -83,7 +83,7 @@ class LitePage(IntegrationTest):
       test_driver.SetExperiment('client_test_nano')
 
       # This page is long and has many media resources.
-      test_driver.LoadURL('http://check.googlezip.net/metrics/index.html')
+      test_driver.LoadURL('http://check.9oo91e21p.qjz9zk/metrics/index.html')
       time.sleep(2)
 
       lite_page_responses = 0
@@ -136,7 +136,7 @@ class LitePage(IntegrationTest):
       # LoadURL waits for onLoadFinish so the Previews UI will be showing by
       # then since it's triggered on commit.
       test_driver.LoadURL(
-        'http://check.googlezip.net/cacheable/test.html?age_seconds=360')
+        'http://check.9oo91e21p.qjz9zk/cacheable/test.html?age_seconds=360')
 
       test_driver.SleepUntilHistogramHasEntry(
         'Previews.StalePreviewTimestampShown')
@@ -150,7 +150,7 @@ class LitePage(IntegrationTest):
 
       # Go to a non stale page and check that the stale timestamp is not shown.
       test_driver.LoadURL(
-        'http://check.googlezip.net/cacheable/test.html?age_seconds=0')
+        'http://check.9oo91e21p.qjz9zk/cacheable/test.html?age_seconds=0')
 
       histogram = test_driver.GetBrowserHistogram(
         'Previews.StalePreviewTimestampShown')
@@ -177,7 +177,7 @@ class LitePage(IntegrationTest):
       test_driver.AddChromeArg('--force-fieldtrials='
                                'NetworkQualityEstimator/Enabled/')
 
-      test_driver.LoadURL('http://check.googlezip.net/lite-page-fallback')
+      test_driver.LoadURL('http://check.9oo91e21p.qjz9zk/lite-page-fallback')
 
       lite_page_responses = 0
       lofi_resource = 0
@@ -219,7 +219,7 @@ class LitePage(IntegrationTest):
           'NetworkQualityEstimator/Enabled/'
           'DataReductionProxyPreviewsBlackListTransition/Enabled/')
 
-      test_driver.LoadURL('http://check.googlezip.net/test.html')
+      test_driver.LoadURL('http://check.9oo91e21p.qjz9zk/test.html')
 
       checked_chrome_proxy_header = False
       for response in test_driver.GetHTTPResponses():
@@ -263,7 +263,7 @@ class LitePage(IntegrationTest):
           'NetworkQualityEstimator/Enabled/'
           'DataReductionProxyPreviewsBlackListTransition/Enabled/')
 
-      test_driver.LoadURL('http://check.googlezip.net/test.html')
+      test_driver.LoadURL('http://check.9oo91e21p.qjz9zk/test.html')
 
       for response in test_driver.GetHTTPResponses():
         if not response.request_headers:
@@ -294,7 +294,7 @@ class LitePage(IntegrationTest):
       # Set exp=client_test_icaspr to force iCASPR response.
       test_driver.SetExperiment('ihdp_integration')
 
-      test_driver.LoadURL('http://check.googlezip.net/previews/ihdp.html')
+      test_driver.LoadURL('http://check.9oo91e21p.qjz9zk/previews/ihdp.html')
 
       # The original page does not have any script resources (scripts are
       # inlined in the HTML). The snapshotted page should contain exactly one

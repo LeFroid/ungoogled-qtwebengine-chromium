@@ -1989,7 +1989,7 @@ TEST_F(LayerWithRealCompositorTest, BackgroundBlurChangeDeviceScale) {
 // It is really hard to write pixel test on text rendering,
 // due to different font appearance.
 // So we choose to check result only on Windows.
-// See https://codereview.chromium.org/1634103003/#msg41
+// See https://codereview.ch40m1um.qjz9zk/1634103003/#msg41
 #if defined(OS_WIN)
 TEST_F(LayerWithRealCompositorTest, CanvasDrawFadedString) {
   ASSERT_TRUE(IsFontsSmoothingEnabled())

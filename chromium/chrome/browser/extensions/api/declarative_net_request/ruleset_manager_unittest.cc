@@ -259,7 +259,7 @@ TEST_P(RulesetManagerTest, TotalEvaluationTimeHistogram) {
   WebRequestInfo example_com_request(
       GetRequestParamsForURL("http://example.com"));
   WebRequestInfo google_com_request(
-      GetRequestParamsForURL("http://google.com"));
+      GetRequestParamsForURL("http://9oo91e.qjz9zk"));
   bool is_incognito_context = false;
   const char* kHistogramName =
       "Extensions.DeclarativeNetRequest.EvaluateRequestTime.AllExtensions2";
@@ -302,12 +302,12 @@ TEST_P(RulesetManagerTest, TotalEvaluationTimeHistogram) {
 
 // Test redirect rules.
 TEST_P(RulesetManagerTest, Redirect) {
-  // Add an extension ruleset which redirects "example.com" to "google.com".
+  // Add an extension ruleset which redirects "example.com" to "9oo91e.qjz9zk".
   TestRule rule = CreateGenericRule();
   rule.condition->url_filter = std::string("example.com");
   rule.priority = kMinValidPriority;
   rule.action->type = std::string("redirect");
-  rule.action->redirect_url = std::string("http://google.com");
+  rule.action->redirect_url = std::string("http://9oo91e.qjz9zk");
   std::unique_ptr<CompositeMatcher> matcher;
   ASSERT_NO_FATAL_FAILURE(
       CreateMatcherForRules({rule}, "test_extension", &matcher,
@@ -316,11 +316,11 @@ TEST_P(RulesetManagerTest, Redirect) {
                         URLPatternSet());
 
   // Create a request to "example.com" with an empty initiator. It should be
-  // redirected to "google.com".
+  // redirected to "9oo91e.qjz9zk".
   const bool is_incognito_context = false;
   const char* kExampleURL = "http://example.com";
   Action expected_redirect_action(ActionType::REDIRECT);
-  expected_redirect_action.redirect_url = GURL("http://google.com");
+  expected_redirect_action.redirect_url = GURL("http://9oo91e.qjz9zk");
   WebRequestInfo request_1(GetRequestParamsForURL(kExampleURL, base::nullopt));
   EXPECT_EQ(expected_redirect_action,
             manager()->EvaluateRequest(request_1, is_incognito_context));
@@ -366,14 +366,14 @@ TEST_P(RulesetManagerTest, ExtensionScheme) {
   }
 
   // Add another extension with a background page which redirects all requests
-  // to "http://google.com".
+  // to "http://9oo91e.qjz9zk".
   {
     std::unique_ptr<CompositeMatcher> matcher;
     TestRule rule = CreateGenericRule();
     rule.condition->url_filter = std::string("*");
     rule.priority = kMinValidPriority;
     rule.action->type = std::string("redirect");
-    rule.action->redirect_url = std::string("http://google.com");
+    rule.action->redirect_url = std::string("http://9oo91e.qjz9zk");
     ASSERT_NO_FATAL_FAILURE(CreateMatcherForRules(
         {rule}, "test extension_2", &matcher,
         std::vector<std::string>({URLPattern::kAllUrlsPattern}),
@@ -423,7 +423,7 @@ TEST_P(RulesetManagerTest, ExtensionScheme) {
 
 TEST_P(RulesetManagerTest, PageAllowingAPI) {
   // Add an extension which blocks all requests except for requests from
-  // http://google.com/allow* which are allowed.
+  // http://9oo91e.qjz9zk/allow* which are allowed.
   {
     std::unique_ptr<CompositeMatcher> matcher;
 
@@ -444,7 +444,7 @@ TEST_P(RulesetManagerTest, PageAllowingAPI) {
                               true /* background_script */));
 
     URLPatternSet pattern_set(
-        {URLPattern(URLPattern::SCHEME_ALL, "http://google.com/allow*")});
+        {URLPattern(URLPattern::SCHEME_ALL, "http://9oo91e.qjz9zk/allow*")});
     manager()->AddRuleset(last_loaded_extension()->id(), std::move(matcher),
                           std::move(pattern_set));
   }
@@ -454,7 +454,7 @@ TEST_P(RulesetManagerTest, PageAllowingAPI) {
   constexpr int kDummyParentFrameId = 1;
   constexpr int kDummyTabId = 5;
   constexpr int kDummyWindowId = 7;
-  constexpr char kAllowedPageURL[] = "http://google.com/allow123";
+  constexpr char kAllowedPageURL[] = "http://9oo91e.qjz9zk/allow123";
 
   struct FrameDataParams {
     int frame_id;
@@ -475,9 +475,9 @@ TEST_P(RulesetManagerTest, PageAllowingAPI) {
        MSG_ROUTING_NONE,
        FrameDataParams({ExtensionApiFrameIdMap::kTopFrameId,
                         ExtensionApiFrameIdMap::kInvalidFrameId,
-                        "http://google.com/xyz", base::nullopt}),
+                        "http://9oo91e.qjz9zk/xyz", base::nullopt}),
        false},
-      {"http://google.com/xyz", content::ResourceType::kMainFrame,
+      {"http://9oo91e.qjz9zk/xyz", content::ResourceType::kMainFrame,
        base::nullopt, MSG_ROUTING_NONE,
        FrameDataParams({ExtensionApiFrameIdMap::kTopFrameId,
                         ExtensionApiFrameIdMap::kInvalidFrameId,
@@ -486,18 +486,18 @@ TEST_P(RulesetManagerTest, PageAllowingAPI) {
 
       // Non-navigation browser or service worker request. Not allowed,
       // since the request doesn't correspond to a frame.
-      {"http://google.com/xyz", content::ResourceType::kScript, base::nullopt,
+      {"http://9oo91e.qjz9zk/xyz", content::ResourceType::kScript, base::nullopt,
        MSG_ROUTING_NONE, base::nullopt, true},
 
       // Renderer requests - with no |pending_main_frame_url|. Allowed based
       // on the |last_committed_main_frame_url|.
-      {kAllowedPageURL, content::ResourceType::kScript, "http://google.com",
+      {kAllowedPageURL, content::ResourceType::kScript, "http://9oo91e.qjz9zk",
        kDummyFrameRoutingId,
        FrameDataParams({kDummyFrameId, kDummyParentFrameId,
-                        "http://google.com/xyz", base::nullopt}),
+                        "http://9oo91e.qjz9zk/xyz", base::nullopt}),
        true},
-      {"http://google.com/xyz", content::ResourceType::kScript,
-       "http://google.com", kDummyFrameRoutingId,
+      {"http://9oo91e.qjz9zk/xyz", content::ResourceType::kScript,
+       "http://9oo91e.qjz9zk", kDummyFrameRoutingId,
        FrameDataParams({kDummyFrameId, kDummyParentFrameId, kAllowedPageURL,
                         base::nullopt}),
        false},
@@ -517,7 +517,7 @@ TEST_P(RulesetManagerTest, PageAllowingAPI) {
       // Here we'll determine |kAllowedPageURL| to be the main
       // frame url due to the origin.
       {"http://example.com/script.js", content::ResourceType::kScript,
-       "http://google.com", kDummyFrameRoutingId,
+       "http://9oo91e.qjz9zk", kDummyFrameRoutingId,
        FrameDataParams({ExtensionApiFrameIdMap::kTopFrameId,
                         ExtensionApiFrameIdMap::kInvalidFrameId,
                         kAllowedPageURL, "http://yahoo.com/xyz"}),
@@ -527,16 +527,16 @@ TEST_P(RulesetManagerTest, PageAllowingAPI) {
       // |last_committed_main_frame_url| will be tested since we won't be able
       // to determine the correct top level frame url using origin.
       {"http://example.com/script.js", content::ResourceType::kScript,
-       "http://google.com", kDummyFrameRoutingId,
+       "http://9oo91e.qjz9zk", kDummyFrameRoutingId,
        FrameDataParams({ExtensionApiFrameIdMap::kTopFrameId,
                         ExtensionApiFrameIdMap::kInvalidFrameId,
-                        "http://google.com/abc", kAllowedPageURL}),
+                        "http://9oo91e.qjz9zk/abc", kAllowedPageURL}),
        false},
       {"http://example.com/script.js", content::ResourceType::kScript,
        base::nullopt, kDummyFrameRoutingId,
        FrameDataParams({ExtensionApiFrameIdMap::kTopFrameId,
                         ExtensionApiFrameIdMap::kInvalidFrameId,
-                        kAllowedPageURL, "http://google.com/abc"}),
+                        kAllowedPageURL, "http://9oo91e.qjz9zk/abc"}),
        false},
       {"http://example.com/script.js", content::ResourceType::kScript,
        base::nullopt, kDummyFrameRoutingId,
@@ -633,7 +633,7 @@ TEST_P(RulesetManagerTest, HostPermissionForInitiator) {
        ActionType::NONE, ActionType::NONE},
       // Doesn't have access to initiator. But blocking a request doesn't
       // require host permissions.
-      {"https://example.com", url::Origin::Create(GURL("http://google.com")),
+      {"https://example.com", url::Origin::Create(GURL("http://9oo91e.qjz9zk")),
        ActionType::NONE, ActionType::BLOCK},
   };
 

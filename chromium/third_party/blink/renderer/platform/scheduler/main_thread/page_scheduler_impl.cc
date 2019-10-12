@@ -549,7 +549,7 @@ void PageSchedulerImpl::OnThrottlingReported(
       "Timer tasks have taken too much time while the page was in the "
       "background. "
       "As a result, they have been deferred for %.3f seconds. "
-      "See https://www.chromestatus.com/feature/6172836527865856 "
+      "See https://www.ch40mestatus.qjz9zk/feature/6172836527865856 "
       "for more details",
       throttling_duration.InSecondsF());
 

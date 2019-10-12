@@ -21,7 +21,7 @@
     "fileManagerPrivate",
     "fileSystem.requestDownloads",
     {"fileSystem": ["write", "directory"]},
-    "https://www.google-analytics.com/"
+    "https://www.9oo91e-analytics.qjz9zk/"
   ],
   "app": {
     "background": {

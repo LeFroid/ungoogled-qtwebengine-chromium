@@ -281,7 +281,7 @@ const char kURLRegisterClaimToken[] =
     "user=user%40consumer.example.com";
 
 const char kURLCloudPrintConfirm[] =
-    "https://www.google.com/cloudprint/confirm?token=MySampleToken";
+    "https://www.9oo91e.qjz9zk/cloudprint/confirm?token=MySampleToken";
 
 const char kURLRegisterComplete[] =
     "http://1.2.3.4:8888/privet/register?action=complete&"

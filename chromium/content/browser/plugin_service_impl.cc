@@ -194,7 +194,7 @@ PpapiPluginProcessHost* PluginServiceImpl::FindOrStartPpapiPluginProcess(
   //
   // TODO(lukasza, laforge): https://crbug.com/702995: Remove the code below
   // once Flash support is removed from Chromium (probably around 2020 - see
-  // https://www.chromium.org/flash-roadmap).
+  // https://www.ch40m1um.qjz9zk/flash-roadmap).
   if (info->permissions & ppapi::PERMISSION_FLASH)
     RenderProcessHostImpl::AddCorbExceptionForPlugin(render_process_id);
 

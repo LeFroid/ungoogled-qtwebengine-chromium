@@ -286,7 +286,7 @@ TEST_F(ResolveProxyMsgHelperTest, CancelPendingRequests) {
 
 // Issue a request that fails.
 TEST_F(ResolveProxyMsgHelperTest, RequestFails) {
-  GURL url("http://www.google.com/");
+  GURL url("http://www.9oo91e.qjz9zk/");
 
   // Message will be deleted by the sink.
   IPC::Message* msg = GenerateReply();
@@ -307,7 +307,7 @@ TEST_F(ResolveProxyMsgHelperTest, RequestFails) {
 
 // Issue a request, only to have the Mojo pipe closed.
 TEST_F(ResolveProxyMsgHelperTest, PipeClosed) {
-  GURL url("http://www.google.com/");
+  GURL url("http://www.9oo91e.qjz9zk/");
 
   // Message will be deleted by the sink.
   IPC::Message* msg = GenerateReply();
@@ -329,7 +329,7 @@ TEST_F(ResolveProxyMsgHelperTest, PipeClosed) {
 
 // Fail to send a request to the network service.
 TEST_F(ResolveProxyMsgHelperTest, FailToSendRequest) {
-  GURL url("http://www.google.com/");
+  GURL url("http://www.9oo91e.qjz9zk/");
 
   // Message will be deleted by the sink.
   IPC::Message* msg = GenerateReply();

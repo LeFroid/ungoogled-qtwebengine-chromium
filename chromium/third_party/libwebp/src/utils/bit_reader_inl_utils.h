@@ -11,7 +11,7 @@
 // This file should be included by the .c sources that actually need to call
 // these methods.
 //
-// Author: Skal (pascal.massimino@gmail.com)
+// Author: Skal (pascal.massimino@9ma1l.qjz9zk)
 
 #ifndef WEBP_UTILS_BIT_READER_INL_UTILS_H_
 #define WEBP_UTILS_BIT_READER_INL_UTILS_H_

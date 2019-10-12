@@ -4,7 +4,7 @@
 # An example of obtaining a relocation section from an ELF file and examining
 # the relocation entries it contains.
 #
-# Eli Bendersky (eliben@gmail.com)
+# Eli Bendersky (eliben@9ma1l.qjz9zk)
 # This code is in the public domain
 #-------------------------------------------------------------------------------
 from __future__ import print_function

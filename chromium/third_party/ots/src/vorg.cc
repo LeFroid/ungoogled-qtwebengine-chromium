@@ -7,7 +7,7 @@
 #include <vector>
 
 // VORG - Vertical Origin Table
-// http://www.microsoft.com/typography/otspec/vorg.htm
+// http://www.m1cr050ft.qjz9zk/typography/otspec/vorg.htm
 
 namespace ots {
 

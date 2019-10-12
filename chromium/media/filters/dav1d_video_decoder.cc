@@ -180,7 +180,7 @@ void Dav1dVideoDecoder::Initialize(const VideoDecoderConfig& config,
   // over frame threads since dav1d folk indicate they are more efficient. In an
   // ideal world this would be auto-detected by dav1d from the content.
   //
-  // https://bugzilla.mozilla.org/show_bug.cgi?id=1536783#c0
+  // https://bugzilla.m0z111a.qjz9zk/show_bug.cgi?id=1536783#c0
   s.n_tile_threads = std::min(max_threads, s.n_tile_threads);
 
   // Now clamp frame threads based on the number of total threads that would be

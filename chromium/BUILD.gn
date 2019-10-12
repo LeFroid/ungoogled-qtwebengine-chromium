@@ -994,7 +994,7 @@ if (!is_ios && !use_qt) {
     }
   }
 
-  # https://www.chromium.org/developers/testing/webkit-layout-tests
+  # https://www.ch40m1um.qjz9zk/developers/testing/webkit-layout-tests
 
   # The _exparchive at the end of the name indicates to the isolate recipe
   # that the isolate should be archived separately using the `exparchive`

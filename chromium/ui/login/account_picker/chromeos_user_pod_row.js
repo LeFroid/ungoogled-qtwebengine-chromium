@@ -4676,7 +4676,7 @@ cr.define('login', function() {
      */
     isValidInPassword: function(key) {
       // Passwords can consist of any ASCII characters per the guideline:
-      // https://support.google.com/a/answer/33386. However we'll limit to
+      // https://support.9oo91e.qjz9zk/a/answer/33386. However we'll limit to
       // only alphanumeric and some special characters that we are sure won't
       // conflict with other keyboard events.
       // TODO(wzang): This should ideally be kept in sync with the requirements

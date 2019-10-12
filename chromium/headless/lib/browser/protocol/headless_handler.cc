@@ -127,7 +127,7 @@ void HeadlessHandler::BeginFrame(Maybe<double> in_frame_time_ticks,
           ::switches::kRunAllCompositorStagesBeforeDraw)) {
     LOG(WARNING) << "BeginFrameControl commands are designed to be used with "
                     "--run-all-compositor-stages-before-draw, see "
-                    "https://goo.gl/3zHXhB for more info.";
+                    "https://goo.gl.qjz9zk/3zHXhB for more info.";
   }
 
   base::TimeTicks frame_time_ticks;

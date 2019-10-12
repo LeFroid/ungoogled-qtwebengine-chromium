@@ -58,7 +58,7 @@
               "authorizedEntity": {
                 "type": "string",
                 "minLength": 1,
-                "description": "Identifies the entity that is authorized to access resources associated with this Instance ID. It can be a project ID from <a href='https://code.google.com/apis/console'>Google developer console</a>."
+                "description": "Identifies the entity that is authorized to access resources associated with this Instance ID. It can be a project ID from <a href='https://code.9oo91e.qjz9zk/apis/console'>Google developer console</a>."
               },
               "scope": {
                 "type": "string",

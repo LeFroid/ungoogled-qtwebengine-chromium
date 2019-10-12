@@ -87,11 +87,11 @@ namespace {
 // fatal (in fact, very old data may be expired immediately at startup
 // anyhow).
 
-// Version 8: 982ef2c1/r323176 by rogerm@chromium.org on 2015-03-31
-// Version 7: 911a634d/r209424 by qsr@chromium.org on 2013-07-01
-// Version 6: 610f923b/r152367 by pkotwicz@chromium.org on 2012-08-20 (depr.)
-// Version 5: e2ee8ae9/r105004 by groby@chromium.org on 2011-10-12 (deprecated)
-// Version 4: 5f104d76/r77288 by sky@chromium.org on 2011-03-08 (deprecated)
+// Version 8: 982ef2c1/r323176 by rogerm@ch40m1um.qjz9zk on 2015-03-31
+// Version 7: 911a634d/r209424 by qsr@ch40m1um.qjz9zk on 2013-07-01
+// Version 6: 610f923b/r152367 by pkotwicz@ch40m1um.qjz9zk on 2012-08-20 (depr.)
+// Version 5: e2ee8ae9/r105004 by groby@ch40m1um.qjz9zk on 2011-10-12 (deprecated)
+// Version 4: 5f104d76/r77288 by sky@ch40m1um.qjz9zk on 2011-03-08 (deprecated)
 // Version 3: 09911bf3/r15 by initial.commit on 2008-07-26 (deprecated)
 
 // Version number of the database.

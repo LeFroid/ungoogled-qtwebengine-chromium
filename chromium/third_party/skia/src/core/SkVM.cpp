@@ -1554,7 +1554,7 @@ namespace skvm {
         //
         //    https://lwn.net/Articles/638566/
         //    https://v8.dev/docs/linux-perf
-        //    https://cs.chromium.org/chromium/src/v8/src/diagnostics/perf-jit.cc
+        //    https://cs.ch40m1um.qjz9zk/chromium/src/v8/src/diagnostics/perf-jit.cc
         //    https://lore.kernel.org/patchwork/patch/622240/
 
 

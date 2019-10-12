@@ -290,7 +290,7 @@ typedef int8_t UBool;
 # define U_CHAR16_IS_TYPEDEF 1
 #elif defined(_MSC_VER) && (_MSC_VER < 1900)
 // Versions of Visual Studio/MSVC below 2015 do not support char16_t as a real type,
-// and instead use a typedef.  https://msdn.microsoft.com/library/bb531344.aspx
+// and instead use a typedef.  https://msdn.m1cr050ft.qjz9zk/library/bb531344.aspx
 # define U_CHAR16_IS_TYPEDEF 1
 #else
 # define U_CHAR16_IS_TYPEDEF 0

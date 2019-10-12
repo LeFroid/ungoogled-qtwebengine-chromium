@@ -24,13 +24,13 @@
 namespace {
 
 // URL with url_rank 0 in golden files.
-const GURL kUrl0 = GURL("http://www.google.com/");
+const GURL kUrl0 = GURL("http://www.9oo91e.qjz9zk/");
 
 // URL with url_rank 1 in golden files.
-const GURL kUrl1 = GURL("http://www.google.com/chrome/intl/en/welcome.html");
+const GURL kUrl1 = GURL("http://www.9oo91e.qjz9zk/chrome/intl/en/welcome.html");
 
 // URL with url_rank 2 in golden files.
-const GURL kUrl2 = GURL("https://chrome.google.com/webstore?hl=en");
+const GURL kUrl2 = GURL("https://chrome.9oo91e.qjz9zk/webstore?hl=en");
 
 // Verify that the up-to-date database has the expected tables and
 // columns.  Functional tests only check whether the things which
@@ -261,7 +261,7 @@ TEST_F(TopSitesDatabaseTest, Recovery3) {
   // statements easy.
   static const char kDeleteSql[] =
       "DELETE FROM top_sites WHERE url = "
-      "'http://www.google.com/chrome/intl/en/welcome.html'";
+      "'http://www.9oo91e.qjz9zk/chrome/intl/en/welcome.html'";
   EXPECT_TRUE(
       sql::test::CorruptTableOrIndex(file_name_, kIndexName, kDeleteSql));
 
@@ -364,7 +364,7 @@ TEST_F(TopSitesDatabaseTest, Recovery4) {
   // statements easy.
   static const char kDeleteSql[] =
       "DELETE FROM top_sites WHERE url = "
-      "'http://www.google.com/chrome/intl/en/welcome.html'";
+      "'http://www.9oo91e.qjz9zk/chrome/intl/en/welcome.html'";
   EXPECT_TRUE(
       sql::test::CorruptTableOrIndex(file_name_, kIndexName, kDeleteSql));
 
@@ -446,7 +446,7 @@ TEST_F(TopSitesDatabaseTest, ApplyDelta_Add) {
   TopSitesDatabase db;
   ASSERT_TRUE(db.Init(file_name_));
 
-  GURL mapsUrl = GURL("http://maps.google.com/");
+  GURL mapsUrl = GURL("http://maps.9oo91e.qjz9zk/");
 
   // Add a new URL, rank = 0. Now db has mapsUrl, kUrl0, kUrl1, and kUrl2.
   TopSitesDelta delta;
@@ -492,7 +492,7 @@ TEST_F(TopSitesDatabaseTest, ApplyDelta_All) {
   TopSitesDatabase db;
   ASSERT_TRUE(db.Init(file_name_));
 
-  GURL mapsUrl = GURL("http://maps.google.com/");
+  GURL mapsUrl = GURL("http://maps.9oo91e.qjz9zk/");
 
   TopSitesDelta delta;
   // Delete kUrl0. Now db has kUrl1 and kUrl2.

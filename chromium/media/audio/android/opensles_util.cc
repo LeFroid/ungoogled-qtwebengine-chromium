@@ -16,8 +16,8 @@ namespace media {
   (SL_ANDROID_SPEAKER_5DOT1 | SL_SPEAKER_SIDE_LEFT | SL_SPEAKER_SIDE_RIGHT)
 
 // Ported from:
-// https://android.googlesource.com/platform/frameworks/wilhelm/+/refs/heads/master/src/android/channels.h
-// https://android.googlesource.com/platform/frameworks/wilhelm/+/refs/heads/master/src/android/channels.c
+// https://android.9oo91esource.qjz9zk/platform/frameworks/wilhelm/+/refs/heads/master/src/android/channels.h
+// https://android.9oo91esource.qjz9zk/platform/frameworks/wilhelm/+/refs/heads/master/src/android/channels.c
 SLuint32 ChannelCountToSLESChannelMask(int channel_count) {
   if (channel_count > 2) {
     LOG(WARNING) << "Guessing channel layout for " << channel_count

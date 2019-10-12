@@ -16,7 +16,7 @@
 #include "vpx/vpx_integer.h"
 #include "vpx_ports/mem.h"
 
-// TODO(chiyotsai@google.com): Refactor the code here. Currently this is pretty
+// TODO(chiyotsai@9oo91e.qjz9zk): Refactor the code here. Currently this is pretty
 // hacky and awful to read. Note that there is a filter_x[3] == 128 check in
 // HIGHBD_FUN_CONV_2D to avoid seg fault due to the fact that the c function
 // assumes the filter is always 8 tap.
@@ -24,7 +24,7 @@ typedef void filter8_1dfunction(const uint8_t *src_ptr, ptrdiff_t src_pitch,
                                 uint8_t *output_ptr, ptrdiff_t out_pitch,
                                 uint32_t output_height, const int16_t *filter);
 
-// TODO(chiyotsai@google.com): Remove the is_avg argument to the MACROS once we
+// TODO(chiyotsai@9oo91e.qjz9zk): Remove the is_avg argument to the MACROS once we
 // have 4-tap vert avg filter.
 #define FUN_CONV_1D(name, offset, step_q4, dir, src_start, avg, opt, is_avg) \
   void vpx_convolve8_##name##_##opt(                                         \

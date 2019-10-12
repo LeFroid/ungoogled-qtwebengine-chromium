@@ -193,7 +193,7 @@ class MODULES_EXPORT Geolocation final
 
   // Record whether the origin trying to access Geolocation would be allowed
   // to access a feature that can only be accessed by secure origins.
-  // See https://goo.gl/Y0ZkNV
+  // See https://goo.gl.qjz9zk/Y0ZkNV
   void RecordOriginTypeAccess() const;
 
   void OnPositionUpdated(device::mojom::blink::GeopositionPtr);

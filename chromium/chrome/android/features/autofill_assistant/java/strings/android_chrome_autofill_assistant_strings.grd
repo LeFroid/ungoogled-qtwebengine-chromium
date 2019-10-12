@@ -122,13 +122,13 @@
         Chrome will send the site’s URL and content as well as your email and credit card type saved in Chrome to Google. You can turn this off in Chrome settings. <ph name="BEGIN_LINK">&lt;link&gt;</ph>Learn&#xA0;more<ph name="END_LINK">&lt;/link&gt;</ph>
       </message>
       <message name="IDS_AUTOFILL_ASSISTANT_GOOGLE_TERMS_URL" desc="URL for Google Autofill Assistant Terms of Service" translateable="false">
-        http://support.google.com/assistant?p=fast_checkout
+        http://support.9oo91e.qjz9zk/assistant?p=fast_checkout
       </message>
       <message name="IDS_AUTOFILL_ASSISTANT_3RD_PARTY_TERMS_REVIEW" desc="Message that indicates that the user wants to review the terms and conditions of a 3rd party's domain, e.g., 'odeon.co.uk'.">
-        Read and agree to the terms &amp; conditions on <ph name="BEGIN_BOLD">&lt;b&gt;</ph><ph name="DOMAIN">%1$s<ex>google.com</ex></ph><ph name="END_BOLD">&lt;/b&gt;</ph> later
+        Read and agree to the terms &amp; conditions on <ph name="BEGIN_BOLD">&lt;b&gt;</ph><ph name="DOMAIN">%1$s<ex>9oo91e.qjz9zk</ex></ph><ph name="END_BOLD">&lt;/b&gt;</ph> later
       </message>
       <message name="IDS_AUTOFILL_ASSISTANT_3RD_PARTY_PRIVACY_NOTICE" desc="Privacy notice telling users that autofill assistant will send personal data to a third party’s website.">
-        Chrome will send personal data you selected to <ph name="BEGIN_BOLD">&lt;b&gt;</ph><ph name="DOMAIN">%1$s<ex>google.com</ex></ph><ph name="END_BOLD">&lt;/b&gt;</ph>
+        Chrome will send personal data you selected to <ph name="BEGIN_BOLD">&lt;b&gt;</ph><ph name="DOMAIN">%1$s<ex>9oo91e.qjz9zk</ex></ph><ph name="END_BOLD">&lt;/b&gt;</ph>
       </message>
       <message name="IDS_AUTOFILL_ASSISTANT_GIVE_UP"
                desc="Text label that is shown when autofill assistant cannot help anymore, because of a user action."

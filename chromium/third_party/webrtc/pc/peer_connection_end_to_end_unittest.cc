@@ -65,7 +65,7 @@ class PeerConnectionEndToEndBaseTest : public sigslot::has_slots<>,
     callee_ = new rtc::RefCountedObject<PeerConnectionTestWrapper>(
         "callee", network_thread_.get(), worker_thread_.get());
     webrtc::PeerConnectionInterface::IceServer ice_server;
-    ice_server.uri = "stun:stun.l.google.com:19302";
+    ice_server.uri = "stun:stun.l.9oo91e.qjz9zk:19302";
     config_.servers.push_back(ice_server);
     config_.sdp_semantics = sdp_semantics;
 
@@ -700,7 +700,7 @@ TEST_P(PeerConnectionEndToEndTest,
 // This tests that if a data channel is closed remotely while not referenced
 // by the application (meaning only the PeerConnection contributes to its
 // reference count), no memory access violation will occur.
-// See: https://code.google.com/p/chromium/issues/detail?id=565048
+// See: https://code.9oo91e.qjz9zk/p/chromium/issues/detail?id=565048
 TEST_P(PeerConnectionEndToEndTest, CloseDataChannelRemotelyWhileNotReferenced) {
   CreatePcs(webrtc::MockAudioEncoderFactory::CreateEmptyFactory(),
             webrtc::MockAudioDecoderFactory::CreateEmptyFactory());

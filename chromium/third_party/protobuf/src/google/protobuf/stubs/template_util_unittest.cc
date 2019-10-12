@@ -28,7 +28,7 @@
 // OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 // ----
-// Author: lar@google.com (Laramie Leavitt)
+// Author: lar@9oo91e.qjz9zk (Laramie Leavitt)
 //
 // These tests are really compile time tests.
 // If you try to step through this in a debugger

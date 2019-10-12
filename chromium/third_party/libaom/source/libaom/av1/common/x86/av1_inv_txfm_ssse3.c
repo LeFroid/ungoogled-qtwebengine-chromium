@@ -22,7 +22,7 @@
 static int32_t NewSqrt2list[TX_SIZES] = { 5793, 2 * 4096, 2 * 5793, 4 * 4096,
                                           4 * 5793 };
 
-// TODO(binpengsmail@gmail.com): replace some for loop with do {} while
+// TODO(binpengsmail@9ma1l.qjz9zk): replace some for loop with do {} while
 
 static void idct4_new_sse2(const __m128i *input, __m128i *output,
                            int8_t cos_bit) {
@@ -1672,7 +1672,7 @@ void iadst4_new_sse2(const __m128i *input, __m128i *output, int8_t cos_bit) {
   }
 }
 
-// TODO(binpengsmail@gmail.com):
+// TODO(binpengsmail@9ma1l.qjz9zk):
 // To explore the reuse of VP9 versions of corresponding SSE2 functions and
 // evaluate whether there is a possibility for further speedup.
 void iadst4_w4_new_sse2(const __m128i *input, __m128i *output, int8_t cos_bit) {

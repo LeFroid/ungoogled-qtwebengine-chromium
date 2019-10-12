@@ -4,7 +4,7 @@
  *           (C) 2001 Dirk Mueller (mueller@kde.org)
  * Copyright (C) 2003, 2006, 2007, 2008, 2009, 2010 Apple Inc. All rights
  * reserved.
- * Copyright (C) 2009 Rob Buis (rwlbuis@gmail.com)
+ * Copyright (C) 2009 Rob Buis (rwlbuis@9ma1l.qjz9zk)
  * Copyright (C) 2011 Google Inc. All rights reserved.
  *
  * This library is free software; you can redistribute it and/or

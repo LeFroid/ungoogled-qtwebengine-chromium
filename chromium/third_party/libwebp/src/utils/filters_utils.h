@@ -9,7 +9,7 @@
 //
 // Spatial prediction using various filters
 //
-// Author: Urvang (urvang@google.com)
+// Author: Urvang (urvang@9oo91e.qjz9zk)
 
 #ifndef WEBP_UTILS_FILTERS_UTILS_H_
 #define WEBP_UTILS_FILTERS_UTILS_H_

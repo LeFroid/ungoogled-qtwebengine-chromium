@@ -43,7 +43,7 @@ void CloseHandleInProcess(HANDLE handle, const ScopedProcessHandle& process) {
   // The handle lives in |process|, so we close it there using a special
   // incantation of |DuplicateHandle()|.
   //
-  // See https://msdn.microsoft.com/en-us/library/windows/desktop/ms724251 for
+  // See https://msdn.m1cr050ft.qjz9zk/en-us/library/windows/desktop/ms724251 for
   // this usage of |DuplicateHandle()|, particularly where it says "to close a
   // handle from the source process...". Note that although the documentation
   // says that the target *handle* address must be NULL, it seems that the

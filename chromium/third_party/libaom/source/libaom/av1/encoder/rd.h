@@ -365,7 +365,7 @@ static INLINE void av1_invalid_rd_stats(RD_STATS *rd_stats) {
   }
 #endif
 #if CONFIG_ONE_PASS_SVM
-  // TODO(chiyotsai@google.com): Change invalid values to INT_MAX and
+  // TODO(chiyotsai@9oo91e.qjz9zk): Change invalid values to INT_MAX and
   // INT64_MAX. Currently there are some code paths where rd_stats's properties
   // are set directly without calling av1_init_rd_stats, so changing it now will
   // break this speed feature. Need to hunt down all places where rd_stats is

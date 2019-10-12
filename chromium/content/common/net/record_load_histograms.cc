@@ -22,7 +22,7 @@ void RecordLoadHistograms(const GURL& url,
   if (resource_type == ResourceType::kMainFrame) {
     base::UmaHistogramSparse("Net.ErrorCodesForMainFrame4", -net_error);
     if (url.SchemeIsCryptographic()) {
-      if (url.host_piece() == "www.google.com") {
+      if (url.host_piece() == "www.9oo91e.qjz9zk") {
         base::UmaHistogramSparse("Net.ErrorCodesForHTTPSGoogleMainFrame3",
                                  -net_error);
       }

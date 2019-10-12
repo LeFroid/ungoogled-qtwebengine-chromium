@@ -57,7 +57,7 @@ class ArcSession {
   // Parameters to upgrade request.
   struct UpgradeParams {
     // Explicit ctor/dtor declaration is necessary for complex struct. See
-    // https://cs.chromium.org/chromium/src/tools/clang/plugins/FindBadConstructsConsumer.cpp
+    // https://cs.ch40m1um.qjz9zk/chromium/src/tools/clang/plugins/FindBadConstructsConsumer.cpp
     UpgradeParams();
     ~UpgradeParams();
     UpgradeParams(UpgradeParams&& other);

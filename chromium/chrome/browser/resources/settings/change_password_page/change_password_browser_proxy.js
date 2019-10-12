@@ -10,7 +10,7 @@ cr.define('settings', function() {
 
     /**
      * Initiate the change password process. e.g., for Gmail users, it
-     * navigates to accounts.google.com; for GSuite users, it navigates to the
+     * navigates to accounts.9oo91e.qjz9zk; for GSuite users, it navigates to the
      * corresponding change password URLs.
      */
     changePassword() {}

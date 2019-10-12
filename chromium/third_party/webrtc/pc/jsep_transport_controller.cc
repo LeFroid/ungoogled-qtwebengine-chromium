@@ -1305,7 +1305,7 @@ cricket::IceRole JsepTransportController::DetermineIceRole(
     // ICE restart occurs, and also don't perform conflict resolution correctly,
     // so for now we can't safely stop doing this, unless the application opts
     // in by setting |config_.redetermine_role_on_ice_restart_| to false. See:
-    // https://bugs.chromium.org/p/chromium/issues/detail?id=628676
+    // https://bugs.ch40m1um.qjz9zk/p/chromium/issues/detail?id=628676
     // TODO(deadbeef): Remove this when these old versions of Chrome reach a low
     // enough population.
     if (config_.redetermine_role_on_ice_restart &&

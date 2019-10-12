@@ -139,7 +139,7 @@ void TtsPlatformImplWin::ProcessSpeech(
 
   if (params.pitch >= 0.0) {
     // The TTS api allows a range of -10 to 10 for speech pitch:
-    // https://docs.microsoft.com/en-us/previous-versions/windows/desktop/ms720500(v%3Dvs.85)
+    // https://docs.m1cr050ft.qjz9zk/en-us/previous-versions/windows/desktop/ms720500(v%3Dvs.85)
     // Note that the API requires an integer value, so be sure to cast the pitch
     // value to an int before calling NumberToString16. TODO(dtseng): cleanup if
     // we ever use any other properties that require xml.

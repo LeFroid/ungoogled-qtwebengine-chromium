@@ -22,7 +22,7 @@
 /**
  * @file
  * @brief Windows Media Audio Voice compatible decoder
- * @author Ronald S. Bultje <rsbultje@gmail.com>
+ * @author Ronald S. Bultje <rsbultje@9ma1l.qjz9zk>
  */
 
 #include <math.h>

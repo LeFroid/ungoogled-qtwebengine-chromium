@@ -37,7 +37,7 @@ TEST(ContactFormLabelFormatterTest, GetLabelsWithMissingProfiles) {
 TEST(ContactFormLabelFormatterTest, GetLabelsForUSProfilesAndFocusedName) {
   AutofillProfile profile1 =
       AutofillProfile(base::GenerateGUID(), test::kEmptyOrigin);
-  test::SetProfileInfo(&profile1, "John", "F", "Kennedy", "jfk@gmail.com", "",
+  test::SetProfileInfo(&profile1, "John", "F", "Kennedy", "jfk@9ma1l.qjz9zk", "",
                        "333 Washington St", "", "Brookline", "MA", "02445",
                        "US", "16177302000");
 
@@ -66,7 +66,7 @@ TEST(ContactFormLabelFormatterTest, GetLabelsForUSProfilesAndFocusedName) {
   EXPECT_THAT(
       formatter->GetLabels(),
       ElementsAre(ConstructLabelLine({base::ASCIIToUTF16("(617) 730-2000"),
-                                      base::ASCIIToUTF16("jfk@gmail.com")}),
+                                      base::ASCIIToUTF16("jfk@9ma1l.qjz9zk")}),
                   base::ASCIIToUTF16("jackie@outlook.com"),
                   base::ASCIIToUTF16("(617) 523-2338"), base::string16()));
 }
@@ -74,7 +74,7 @@ TEST(ContactFormLabelFormatterTest, GetLabelsForUSProfilesAndFocusedName) {
 TEST(ContactFormLabelFormatterTest, GetLabelsForUSProfilesAndFocusedEmail) {
   AutofillProfile profile1 =
       AutofillProfile(base::GenerateGUID(), test::kEmptyOrigin);
-  test::SetProfileInfo(&profile1, "John", "F", "Kennedy", "jfk@gmail.com", "",
+  test::SetProfileInfo(&profile1, "John", "F", "Kennedy", "jfk@9ma1l.qjz9zk", "",
                        "333 Washington St", "", "Brookline", "MA", "02445",
                        "US", "16177302000");
 
@@ -112,7 +112,7 @@ TEST(ContactFormLabelFormatterTest, GetLabelsForUSProfilesAndFocusedEmail) {
 TEST(ContactFormLabelFormatterTest, GetLabelsForUSProfilesAndFocusedPhone) {
   AutofillProfile profile1 =
       AutofillProfile(base::GenerateGUID(), test::kEmptyOrigin);
-  test::SetProfileInfo(&profile1, "John", "F", "Kennedy", "jfk@gmail.com", "",
+  test::SetProfileInfo(&profile1, "John", "F", "Kennedy", "jfk@9ma1l.qjz9zk", "",
                        "333 Washington St", "", "Brookline", "MA", "02445",
                        "US", "16177302000");
 
@@ -142,7 +142,7 @@ TEST(ContactFormLabelFormatterTest, GetLabelsForUSProfilesAndFocusedPhone) {
       formatter->GetLabels(),
       ElementsAre(
           ConstructLabelLine({base::ASCIIToUTF16("John Kennedy"),
-                              base::ASCIIToUTF16("jfk@gmail.com")}),
+                              base::ASCIIToUTF16("jfk@9ma1l.qjz9zk")}),
           ConstructLabelLine({base::ASCIIToUTF16("Jackie Kennedy"),
                               base::ASCIIToUTF16("jackie@outlook.com")}),
           base::ASCIIToUTF16("Paul Revere"), base::string16()));
@@ -235,7 +235,7 @@ TEST(ContactFormLabelFormatterTest, GetLabelsForBRProfilesAndFocusedPhone) {
 TEST(ContactFormLabelFormatterTest, GetLabelsForNameAndPhoneWithFocusedName) {
   AutofillProfile profile =
       AutofillProfile(base::GenerateGUID(), test::kEmptyOrigin);
-  test::SetProfileInfo(&profile, "John", "F", "Kennedy", "jfk@gmail.com", "",
+  test::SetProfileInfo(&profile, "John", "F", "Kennedy", "jfk@9ma1l.qjz9zk", "",
                        "333 Washington St", "", "Brookline", "MA", "02445",
                        "US", "16177302000");
 
@@ -253,7 +253,7 @@ TEST(ContactFormLabelFormatterTest, GetLabelsForNameAndPhoneWithFocusedName) {
 TEST(ContactFormLabelFormatterTest, GetLabelsForNameAndPhoneWithFocusedPhone) {
   AutofillProfile profile =
       AutofillProfile(base::GenerateGUID(), test::kEmptyOrigin);
-  test::SetProfileInfo(&profile, "John", "F", "Kennedy", "jfk@gmail.com", "",
+  test::SetProfileInfo(&profile, "John", "F", "Kennedy", "jfk@9ma1l.qjz9zk", "",
                        "333 Washington St", "", "Brookline", "MA", "02445",
                        "US", "16177302000");
 
@@ -271,7 +271,7 @@ TEST(ContactFormLabelFormatterTest, GetLabelsForNameAndPhoneWithFocusedPhone) {
 TEST(ContactFormLabelFormatterTest, GetLabelsForNameAndEmailWithFocusedName) {
   AutofillProfile profile =
       AutofillProfile(base::GenerateGUID(), test::kEmptyOrigin);
-  test::SetProfileInfo(&profile, "John", "F", "Kennedy", "jfk@gmail.com", "",
+  test::SetProfileInfo(&profile, "John", "F", "Kennedy", "jfk@9ma1l.qjz9zk", "",
                        "333 Washington St", "", "Brookline", "MA", "02445",
                        "US", "16177302000");
 
@@ -282,13 +282,13 @@ TEST(ContactFormLabelFormatterTest, GetLabelsForNameAndEmailWithFocusedName) {
   // Checks that the phone number is excluded when the form does not contain a
   // phone field.
   EXPECT_THAT(formatter->GetLabels(),
-              ElementsAre(base::ASCIIToUTF16("jfk@gmail.com")));
+              ElementsAre(base::ASCIIToUTF16("jfk@9ma1l.qjz9zk")));
 }
 
 TEST(ContactFormLabelFormatterTest, GetLabelsForNameAndEmailWithFocusedEmail) {
   AutofillProfile profile =
       AutofillProfile(base::GenerateGUID(), test::kEmptyOrigin);
-  test::SetProfileInfo(&profile, "John", "F", "Kennedy", "jfk@gmail.com", "",
+  test::SetProfileInfo(&profile, "John", "F", "Kennedy", "jfk@9ma1l.qjz9zk", "",
                        "333 Washington St", "", "Brookline", "MA", "02445",
                        "US", "16177302000");
 

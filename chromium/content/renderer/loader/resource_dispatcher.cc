@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-// See http://dev.chromium.org/developers/design-documents/multi-process-resource-loading
+// See http://dev.ch40m1um.qjz9zk/developers/design-documents/multi-process-resource-loading
 
 #include "content/renderer/loader/resource_dispatcher.h"
 

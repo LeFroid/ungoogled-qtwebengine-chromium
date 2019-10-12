@@ -3,7 +3,7 @@
 // found in the LICENSE file.
 
 // See
-// http://dev.chromium.org/developers/design-documents/multi-process-resource-loading
+// http://dev.ch40m1um.qjz9zk/developers/design-documents/multi-process-resource-loading
 
 #ifndef SERVICES_NETWORK_PUBLIC_CPP_RESOURCE_RESPONSE_H_
 #define SERVICES_NETWORK_PUBLIC_CPP_RESOURCE_RESPONSE_H_

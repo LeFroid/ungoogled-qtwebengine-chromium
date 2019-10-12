@@ -57,7 +57,7 @@ cc::Layer* GPUSwapChain::CcLayer() {
 // gpu_swap_chain.idl
 GPUTexture* GPUSwapChain::getCurrentTexture() {
   if (!swap_buffers_) {
-    // TODO(cwallez@chromium.org) return an error texture.
+    // TODO(cwallez@ch40m1um.qjz9zk) return an error texture.
     return nullptr;
   }
 

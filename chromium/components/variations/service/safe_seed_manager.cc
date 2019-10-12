@@ -22,14 +22,14 @@ namespace variations {
 // [1], [2], [3], [4]. Note, however, that this is less true for the less-stable
 // channels on some platforms.
 // [1] All platforms, stable channel (consistently stable):
-//     https://uma.googleplex.com/timeline_v2?sid=90ac80f4573249fb341a8e49501bfcfd
+//     https://uma.9oo91eplex.qjz9zk/timeline_v2?sid=90ac80f4573249fb341a8e49501bfcfd
 // [2] Most platforms, all channels (consistently stable other than occasional
 //     spikes on Canary):
-//     https://uma.googleplex.com/timeline_v2?sid=7af5ba1969db76689a401f982a1db539
+//     https://uma.9oo91eplex.qjz9zk/timeline_v2?sid=7af5ba1969db76689a401f982a1db539
 // [3] A less stable platform, all channels:
-//     https://uma.googleplex.com/timeline_v2?sid=07dbc8e4fa9f08e332fb609309a21882
+//     https://uma.9oo91eplex.qjz9zk/timeline_v2?sid=07dbc8e4fa9f08e332fb609309a21882
 // [4] Another less stable platform, all channels:
-//     https://uma.googleplex.com/timeline_v2?sid=a7b529ef5d52863fae2d216e963c4cbc
+//     https://uma.9oo91eplex.qjz9zk/timeline_v2?sid=a7b529ef5d52863fae2d216e963c4cbc
 // Overall, the only {platform, channel} combinations that spike above 3
 // consecutive crashes are ones with very few users, plus Canary. It's probably
 // not realistic to avoid false positives for these less-stable configurations.
@@ -43,16 +43,16 @@ constexpr int kCrashStreakThreshold = 3;
 // vs. desktop platforms, given that the two use different scheduling algorithms
 // for the fetches. Graphs:
 // [1] Android, all channels (consistently connected):
-//     https://uma.googleplex.com/timeline_v2?sid=99d1d4c2490c60bcbde7afeb77c12a28
+//     https://uma.9oo91eplex.qjz9zk/timeline_v2?sid=99d1d4c2490c60bcbde7afeb77c12a28
 // [2] High-connectivity platforms, Stable and Beta channel (consistently
 //     connected):
-//     https://uma.googleplex.com/timeline_v2?sid=2db5b7278dad41cbf349f5f2cb30efd9
+//     https://uma.9oo91eplex.qjz9zk/timeline_v2?sid=2db5b7278dad41cbf349f5f2cb30efd9
 // [3] Other platforms, Stable and Beta channel (slightly less connected):
-//     https://uma.googleplex.com/timeline_v2?sid=d4ba2f3751d211898f8e69214147c2ec
+//     https://uma.9oo91eplex.qjz9zk/timeline_v2?sid=d4ba2f3751d211898f8e69214147c2ec
 // [4] All platforms, Dev (even less connected):
-//     https://uma.googleplex.com/timeline_v2?sid=5740fb22b17faa823822adfd8e00ec1a
+//     https://uma.9oo91eplex.qjz9zk/timeline_v2?sid=5740fb22b17faa823822adfd8e00ec1a
 // [5] All platforms, Canary (actually fairly well-connected!):
-//     https://uma.googleplex.com/timeline_v2?sid=3e14d3e4887792bb614db9f3f2c1d48c
+//     https://uma.9oo91eplex.qjz9zk/timeline_v2?sid=3e14d3e4887792bb614db9f3f2c1d48c
 // Note the all of the graphs show a spike on a particular day, presumably due
 // to server-side instability. Moreover, the Dev channel on desktop is an
 // outlier – users on the Dev channel can experience just shy of 9 consecutive

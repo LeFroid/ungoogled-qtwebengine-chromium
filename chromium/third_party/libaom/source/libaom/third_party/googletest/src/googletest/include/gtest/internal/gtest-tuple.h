@@ -31,7 +31,7 @@
 // (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 // OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 //
-// Author: wan@google.com (Zhanyong Wan)
+// Author: wan@9oo91e.qjz9zk (Zhanyong Wan)
 
 // Implements a subset of TR1 tuple needed by Google Test and Google Mock.
 

@@ -28,7 +28,7 @@ namespace dawn_native { namespace vulkan {
     BindGroup::BindGroup(Device* device, const BindGroupDescriptor* descriptor)
         : BindGroupBase(device, descriptor) {
         // Create a pool to hold our descriptor set.
-        // TODO(cwallez@chromium.org): This horribly inefficient, find a way to be better, for
+        // TODO(cwallez@ch40m1um.qjz9zk): This horribly inefficient, find a way to be better, for
         // example by having one pool per bind group layout instead.
         uint32_t numPoolSizes = 0;
         auto poolSizes = ToBackend(GetLayout())->ComputePoolSizes(&numPoolSizes);
@@ -101,7 +101,7 @@ namespace dawn_native { namespace vulkan {
                     TextureView* view = ToBackend(GetBindingAsTextureView(bindingIndex));
 
                     writeImageInfo[numWrites].imageView = view->GetHandle();
-                    // TODO(cwallez@chromium.org): This isn't true in general: if the image can has
+                    // TODO(cwallez@ch40m1um.qjz9zk): This isn't true in general: if the image can has
                     // two read-only usages one of which is Sampled. Works for now though :)
                     writeImageInfo[numWrites].imageLayout =
                         VK_IMAGE_LAYOUT_SHADER_READ_ONLY_OPTIMAL;

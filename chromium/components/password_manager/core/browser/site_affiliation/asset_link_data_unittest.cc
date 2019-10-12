@@ -84,7 +84,7 @@ TEST(AssetLinkData, HandleURLsPermission) {
   "relation": ["delegate_permission/common.handle_all_urls"],
   "target": {
     "namespace": "web",
-    "site": "https://www.google.com"
+    "site": "https://www.9oo91e.qjz9zk"
   }
   },{
   "relation": ["delegate_permission/common.handle_all_urls"],
@@ -106,7 +106,7 @@ TEST(AssetLinkData, BrokenRelation) {
   "relation": "delegate_permission/common.get_login_creds",
   "target": {
     "namespace": "web",
-    "site": "https://www.google.com"
+    "site": "https://www.9oo91e.qjz9zk"
   }
   }])";
   AssetLinkData data;
@@ -121,7 +121,7 @@ TEST(AssetLinkData, GetLoginCredsPermission) {
   "relation": ["delegate_permission/common.get_login_creds"],
   "target": {
     "namespace": "web",
-    "site": "https://www.google.com"
+    "site": "https://www.9oo91e.qjz9zk"
   }
   },{
   "relation": ["delegate_permission/common.get_login_creds"],
@@ -148,7 +148,7 @@ TEST(AssetLinkData, GetLoginCredsPermission) {
   EXPECT_TRUE(data.Parse(json));
   EXPECT_THAT(data.includes(), IsEmpty());
   EXPECT_THAT(data.targets(),
-              UnorderedElementsAre(GURL("https://www.google.com"),
+              UnorderedElementsAre(GURL("https://www.9oo91e.qjz9zk"),
                                    GURL("https://www.google.ru")));
 }
 
@@ -158,7 +158,7 @@ TEST(AssetLinkData, MultiplePermissions) {
   "relation": ["something","delegate_permission/common.get_login_creds"],
   "target": {
     "namespace": "web",
-    "site": "https://www.google.com"
+    "site": "https://www.9oo91e.qjz9zk"
   }
   },{
   "relation": ["delegate_permission/common.get_login_creds",
@@ -185,7 +185,7 @@ TEST(AssetLinkData, MultiplePermissions) {
   AssetLinkData data;
   EXPECT_TRUE(data.Parse(json));
   EXPECT_THAT(data.includes(), IsEmpty());
-  EXPECT_THAT(data.targets(), ElementsAre(GURL("https://www.google.com"),
+  EXPECT_THAT(data.targets(), ElementsAre(GURL("https://www.9oo91e.qjz9zk"),
                                           GURL("https://www.google.ru")));
 }
 
@@ -195,7 +195,7 @@ TEST(AssetLinkData, MixedStatements) {
   "relation": ["delegate_permission/common.get_login_creds"],
   "target": {
     "namespace": "web",
-    "site": "https://www.google.com"
+    "site": "https://www.9oo91e.qjz9zk"
   }
   },{
   "relation": ["unknown", "unknown"],
@@ -218,7 +218,7 @@ TEST(AssetLinkData, MixedStatements) {
   AssetLinkData data;
   EXPECT_TRUE(data.Parse(json));
   EXPECT_THAT(data.includes(), ElementsAre(GURL("https://go/assetlinks.json")));
-  EXPECT_THAT(data.targets(), ElementsAre(GURL("https://www.google.com"),
+  EXPECT_THAT(data.targets(), ElementsAre(GURL("https://www.9oo91e.qjz9zk"),
                                           GURL("https://www.google.de")));
 }
 

@@ -149,7 +149,7 @@ class ResourceSizesDiff(BaseDiff):
     footer_lines = [
         '',
         'For an explanation of these metrics, see:',
-        ('https://chromium.googlesource.com/chromium/src/+/master/docs/speed/'
+        ('https://chromium.9oo91esource.qjz9zk/chromium/src/+/master/docs/speed/'
          'binary_size/metrics.md#Metrics-for-Android')]
     return self._ResultLines(
         include_sections=ResourceSizesDiff._SUMMARY_SECTIONS) + footer_lines

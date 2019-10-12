@@ -586,7 +586,7 @@ TEST_F(PreviewsOptimizationGuideTest, IsWhitelistedWithoutHints) {
   PreviewsUserData user_data(kDefaultPageId);
   net::EffectiveConnectionType ect_threshold;
   EXPECT_FALSE(MaybeLoadOptimizationHintsAndCheckIsWhitelisted(
-      &user_data, GURL("https://m.facebook.com"), PreviewsType::NOSCRIPT,
+      &user_data, GURL("https://m.f8c3b00k.qjz9zk"), PreviewsType::NOSCRIPT,
       &ect_threshold));
 }
 
@@ -830,7 +830,7 @@ TEST_F(PreviewsOptimizationGuideTest,
   // Add first hint.
   optimization_guide::proto::Configuration config;
   optimization_guide::proto::Hint* hint1 = config.add_hints();
-  hint1->set_key("facebook.com");
+  hint1->set_key("f8c3b00k.qjz9zk");
   hint1->set_key_representation(optimization_guide::proto::HOST_SUFFIX);
   optimization_guide::proto::PageHint* page_hint1 = hint1->add_page_hints();
   page_hint1->set_page_pattern("*");
@@ -874,14 +874,14 @@ TEST_F(PreviewsOptimizationGuideTest,
   net::EffectiveConnectionType ect_threshold;
   // Twitter and Facebook should be whitelisted but not Google.
   EXPECT_TRUE(MaybeLoadOptimizationHintsAndCheckIsWhitelisted(
-      &user_data, GURL("https://m.facebook.com"),
+      &user_data, GURL("https://m.f8c3b00k.qjz9zk"),
       PreviewsType::RESOURCE_LOADING_HINTS, &ect_threshold));
   EXPECT_EQ(net::EFFECTIVE_CONNECTION_TYPE_2G, ect_threshold);
   EXPECT_TRUE(MaybeLoadOptimizationHintsAndCheckIsWhitelisted(
       &user_data, GURL("https://m.twitter.com/example"),
       PreviewsType::RESOURCE_LOADING_HINTS, &ect_threshold));
   EXPECT_FALSE(MaybeLoadOptimizationHintsAndCheckIsWhitelisted(
-      &user_data, GURL("https://google.com"),
+      &user_data, GURL("https://9oo91e.qjz9zk"),
       PreviewsType::RESOURCE_LOADING_HINTS, &ect_threshold));
 }
 
@@ -896,7 +896,7 @@ TEST_F(
   // Add first hint.
   optimization_guide::proto::Configuration config;
   optimization_guide::proto::Hint* hint1 = config.add_hints();
-  hint1->set_key("facebook.com");
+  hint1->set_key("f8c3b00k.qjz9zk");
   hint1->set_key_representation(optimization_guide::proto::HOST_SUFFIX);
   optimization_guide::proto::PageHint* page_hint1 = hint1->add_page_hints();
   page_hint1->set_page_pattern("*");
@@ -938,16 +938,16 @@ TEST_F(
   net::EffectiveConnectionType ect_threshold;
   // Twitter and Facebook should be whitelisted but not Google.
   EXPECT_TRUE(MaybeLoadOptimizationHintsAndCheckIsWhitelisted(
-      &user_data, GURL("https://m.facebook.com"), PreviewsType::NOSCRIPT,
+      &user_data, GURL("https://m.f8c3b00k.qjz9zk"), PreviewsType::NOSCRIPT,
       &ect_threshold));
   EXPECT_TRUE(MaybeLoadOptimizationHintsAndCheckIsWhitelisted(
-      &user_data, GURL("https://m.facebook.com/example.html"),
+      &user_data, GURL("https://m.f8c3b00k.qjz9zk/example.html"),
       PreviewsType::NOSCRIPT, &ect_threshold));
   EXPECT_TRUE(MaybeLoadOptimizationHintsAndCheckIsWhitelisted(
       &user_data, GURL("https://m.twitter.com/example"),
       PreviewsType::RESOURCE_LOADING_HINTS, &ect_threshold));
   EXPECT_FALSE(MaybeLoadOptimizationHintsAndCheckIsWhitelisted(
-      &user_data, GURL("https://google.com"),
+      &user_data, GURL("https://9oo91e.qjz9zk"),
       PreviewsType::RESOURCE_LOADING_HINTS, &ect_threshold));
 }
 
@@ -1030,7 +1030,7 @@ void PreviewsOptimizationGuideTest::DoExperimentFlagTest(
   // depending on test configuration. The other is never marked experimental.
   optimization_guide::proto::Configuration config;
   optimization_guide::proto::Hint* hint1 = config.add_hints();
-  hint1->set_key("facebook.com");
+  hint1->set_key("f8c3b00k.qjz9zk");
   hint1->set_key_representation(optimization_guide::proto::HOST_SUFFIX);
   optimization_guide::proto::PageHint* page_hint1 = hint1->add_page_hints();
   page_hint1->set_page_pattern("*");
@@ -1069,7 +1069,7 @@ void PreviewsOptimizationGuideTest::DoExperimentFlagTest(
   // Check to ensure the optimization under test (facebook noscript) is either
   // enabled or disabled, depending on what the caller told us to expect.
   EXPECT_EQ(expect_enabled, MaybeLoadOptimizationHintsAndCheckIsWhitelisted(
-                                &user_data, GURL("https://m.facebook.com"),
+                                &user_data, GURL("https://m.f8c3b00k.qjz9zk"),
                                 PreviewsType::NOSCRIPT, &ect_threshold));
   EXPECT_EQ(net::EFFECTIVE_CONNECTION_TYPE_2G, ect_threshold);
 
@@ -1077,7 +1077,7 @@ void PreviewsOptimizationGuideTest::DoExperimentFlagTest(
   ect_threshold = net::EFFECTIVE_CONNECTION_TYPE_UNKNOWN;
   EXPECT_EQ(!expect_enabled,
             MaybeLoadOptimizationHintsAndCheckIsWhitelisted(
-                &user_data, GURL("https://m.facebook.com"),
+                &user_data, GURL("https://m.f8c3b00k.qjz9zk"),
                 PreviewsType::RESOURCE_LOADING_HINTS, &ect_threshold));
   EXPECT_EQ(net::EFFECTIVE_CONNECTION_TYPE_2G, ect_threshold);
   // Twitter's NOSCRIPT should always be enabled; RESOURCE_LOADING_HINTS is not
@@ -1090,7 +1090,7 @@ void PreviewsOptimizationGuideTest::DoExperimentFlagTest(
   // Google (which is not configured at all) should always have both NOSCRIPT
   // and RESOURCE_LOADING_HINTS disabled.
   EXPECT_FALSE(MaybeLoadOptimizationHintsAndCheckIsWhitelisted(
-      &user_data, GURL("https://google.com"), PreviewsType::NOSCRIPT,
+      &user_data, GURL("https://9oo91e.qjz9zk"), PreviewsType::NOSCRIPT,
       &ect_threshold));
 }
 
@@ -1155,7 +1155,7 @@ TEST_F(PreviewsOptimizationGuideTest, EnsureExperimentsDisabledByDefault) {
 TEST_F(PreviewsOptimizationGuideTest, ProcessHintsUnsupportedKeyRepIsIgnored) {
   optimization_guide::proto::Configuration config;
   optimization_guide::proto::Hint* hint = config.add_hints();
-  hint->set_key("facebook.com");
+  hint->set_key("f8c3b00k.qjz9zk");
   hint->set_key_representation(
       optimization_guide::proto::REPRESENTATION_UNSPECIFIED);
   optimization_guide::proto::PageHint* page_hint = hint->add_page_hints();
@@ -1168,7 +1168,7 @@ TEST_F(PreviewsOptimizationGuideTest, ProcessHintsUnsupportedKeyRepIsIgnored) {
   PreviewsUserData user_data(kDefaultPageId);
   net::EffectiveConnectionType ect_threshold;
   EXPECT_FALSE(MaybeLoadOptimizationHintsAndCheckIsWhitelisted(
-      &user_data, GURL("https://m.facebook.com"), PreviewsType::NOSCRIPT,
+      &user_data, GURL("https://m.f8c3b00k.qjz9zk"), PreviewsType::NOSCRIPT,
       &ect_threshold));
 }
 
@@ -1176,7 +1176,7 @@ TEST_F(PreviewsOptimizationGuideTest,
        ProcessHintsUnsupportedOptimizationIsIgnored) {
   optimization_guide::proto::Configuration config;
   optimization_guide::proto::Hint* hint = config.add_hints();
-  hint->set_key("facebook.com");
+  hint->set_key("f8c3b00k.qjz9zk");
   hint->set_key_representation(optimization_guide::proto::HOST_SUFFIX);
   optimization_guide::proto::PageHint* page_hint1 = hint->add_page_hints();
   page_hint1->set_page_pattern("*");
@@ -1190,7 +1190,7 @@ TEST_F(PreviewsOptimizationGuideTest,
   PreviewsUserData user_data(kDefaultPageId);
   net::EffectiveConnectionType ect_threshold;
   EXPECT_FALSE(MaybeLoadOptimizationHintsAndCheckIsWhitelisted(
-      &user_data, GURL("https://m.facebook.com"), PreviewsType::NOSCRIPT,
+      &user_data, GURL("https://m.f8c3b00k.qjz9zk"), PreviewsType::NOSCRIPT,
       &ect_threshold));
 }
 
@@ -1203,7 +1203,7 @@ TEST_F(PreviewsOptimizationGuideTest, ProcessHintsWithExistingSentinel) {
   // Create valid config.
   optimization_guide::proto::Configuration config;
   optimization_guide::proto::Hint* hint1 = config.add_hints();
-  hint1->set_key("facebook.com");
+  hint1->set_key("f8c3b00k.qjz9zk");
   hint1->set_key_representation(optimization_guide::proto::HOST_SUFFIX);
   optimization_guide::proto::PageHint* page_hint1 = hint1->add_page_hints();
   page_hint1->set_page_pattern("*");
@@ -1222,7 +1222,7 @@ TEST_F(PreviewsOptimizationGuideTest, ProcessHintsWithExistingSentinel) {
   PreviewsUserData user_data(kDefaultPageId);
   net::EffectiveConnectionType ect_threshold;
   EXPECT_FALSE(MaybeLoadOptimizationHintsAndCheckIsWhitelisted(
-      &user_data, GURL("https://m.facebook.com"), PreviewsType::NOSCRIPT,
+      &user_data, GURL("https://m.f8c3b00k.qjz9zk"), PreviewsType::NOSCRIPT,
       &ect_threshold));
   EXPECT_TRUE(base::PathExists(sentinel_path));
   histogram_tester.ExpectUniqueSample(
@@ -1235,7 +1235,7 @@ TEST_F(PreviewsOptimizationGuideTest, ProcessHintsWithExistingSentinel) {
   ProcessHints(config, "3.0.0");
 
   EXPECT_TRUE(MaybeLoadOptimizationHintsAndCheckIsWhitelisted(
-      &user_data, GURL("https://m.facebook.com"), PreviewsType::NOSCRIPT,
+      &user_data, GURL("https://m.f8c3b00k.qjz9zk"), PreviewsType::NOSCRIPT,
       &ect_threshold));
   EXPECT_EQ(net::EFFECTIVE_CONNECTION_TYPE_2G, ect_threshold);
   EXPECT_FALSE(base::PathExists(sentinel_path));
@@ -1255,7 +1255,7 @@ TEST_F(PreviewsOptimizationGuideTest, ProcessHintsWithInvalidSentinelFile) {
   // Create valid config.
   optimization_guide::proto::Configuration config;
   optimization_guide::proto::Hint* hint1 = config.add_hints();
-  hint1->set_key("facebook.com");
+  hint1->set_key("f8c3b00k.qjz9zk");
   hint1->set_key_representation(optimization_guide::proto::HOST_SUFFIX);
   optimization_guide::proto::PageHint* page_hint1 = hint1->add_page_hints();
   page_hint1->set_page_pattern("*");
@@ -1275,7 +1275,7 @@ TEST_F(PreviewsOptimizationGuideTest, ProcessHintsWithInvalidSentinelFile) {
   PreviewsUserData user_data(kDefaultPageId);
   net::EffectiveConnectionType ect_threshold;
   EXPECT_FALSE(MaybeLoadOptimizationHintsAndCheckIsWhitelisted(
-      &user_data, GURL("https://m.facebook.com"), PreviewsType::NOSCRIPT,
+      &user_data, GURL("https://m.f8c3b00k.qjz9zk"), PreviewsType::NOSCRIPT,
       &ect_threshold));
   EXPECT_FALSE(base::PathExists(sentinel_path));
   histogram_tester.ExpectUniqueSample(
@@ -1288,7 +1288,7 @@ TEST_F(PreviewsOptimizationGuideTest, ProcessHintsWithInvalidSentinelFile) {
   ProcessHints(config, "2.0.0");
 
   EXPECT_TRUE(MaybeLoadOptimizationHintsAndCheckIsWhitelisted(
-      &user_data, GURL("https://m.facebook.com"), PreviewsType::NOSCRIPT,
+      &user_data, GURL("https://m.f8c3b00k.qjz9zk"), PreviewsType::NOSCRIPT,
       &ect_threshold));
   EXPECT_FALSE(base::PathExists(sentinel_path));
   histogram_tester.ExpectBucketCount(
@@ -1306,7 +1306,7 @@ TEST_F(PreviewsOptimizationGuideTest, SkipHintProcessingForSameConfigVersion) {
 
   optimization_guide::proto::Configuration config1;
   optimization_guide::proto::Hint* hint1 = config1.add_hints();
-  hint1->set_key("facebook.com");
+  hint1->set_key("f8c3b00k.qjz9zk");
   hint1->set_key_representation(optimization_guide::proto::HOST_SUFFIX);
   optimization_guide::proto::PageHint* page_hint1 = hint1->add_page_hints();
   page_hint1->set_page_pattern("*");
@@ -1316,7 +1316,7 @@ TEST_F(PreviewsOptimizationGuideTest, SkipHintProcessingForSameConfigVersion) {
 
   optimization_guide::proto::Configuration config2;
   optimization_guide::proto::Hint* hint2 = config2.add_hints();
-  hint2->set_key("google.com");
+  hint2->set_key("9oo91e.qjz9zk");
   hint2->set_key_representation(optimization_guide::proto::HOST_SUFFIX);
   optimization_guide::proto::PageHint* page_hint2 = hint2->add_page_hints();
   page_hint2->set_page_pattern("*");
@@ -1331,10 +1331,10 @@ TEST_F(PreviewsOptimizationGuideTest, SkipHintProcessingForSameConfigVersion) {
   ProcessHints(config1, "2.0.0");
 
   EXPECT_TRUE(MaybeLoadOptimizationHintsAndCheckIsWhitelisted(
-      &user_data, GURL("https://m.facebook.com"), PreviewsType::NOSCRIPT,
+      &user_data, GURL("https://m.f8c3b00k.qjz9zk"), PreviewsType::NOSCRIPT,
       &ect_threshold));
   EXPECT_FALSE(MaybeLoadOptimizationHintsAndCheckIsWhitelisted(
-      &user_data, GURL("https://m.google.com"), PreviewsType::NOSCRIPT,
+      &user_data, GURL("https://m.9oo91e.qjz9zk"), PreviewsType::NOSCRIPT,
       &ect_threshold));
   histogram_tester.ExpectUniqueSample(
       "OptimizationGuide.ProcessHintsResult",
@@ -1347,10 +1347,10 @@ TEST_F(PreviewsOptimizationGuideTest, SkipHintProcessingForSameConfigVersion) {
   ProcessHints(config2, "2.0.0");
 
   EXPECT_TRUE(MaybeLoadOptimizationHintsAndCheckIsWhitelisted(
-      &user_data, GURL("https://m.facebook.com"), PreviewsType::NOSCRIPT,
+      &user_data, GURL("https://m.f8c3b00k.qjz9zk"), PreviewsType::NOSCRIPT,
       &ect_threshold));
   EXPECT_FALSE(MaybeLoadOptimizationHintsAndCheckIsWhitelisted(
-      &user_data, GURL("https://m.google.com"), PreviewsType::NOSCRIPT,
+      &user_data, GURL("https://m.9oo91e.qjz9zk"), PreviewsType::NOSCRIPT,
       &ect_threshold));
   histogram_tester.ExpectBucketCount(
       "OptimizationGuide.ProcessHintsResult",
@@ -1368,7 +1368,7 @@ TEST_F(PreviewsOptimizationGuideTest,
 
   optimization_guide::proto::Configuration config1;
   optimization_guide::proto::Hint* hint1 = config1.add_hints();
-  hint1->set_key("facebook.com");
+  hint1->set_key("f8c3b00k.qjz9zk");
   hint1->set_key_representation(optimization_guide::proto::HOST_SUFFIX);
   optimization_guide::proto::PageHint* page_hint1 = hint1->add_page_hints();
   page_hint1->set_page_pattern("*");
@@ -1378,7 +1378,7 @@ TEST_F(PreviewsOptimizationGuideTest,
 
   optimization_guide::proto::Configuration config2;
   optimization_guide::proto::Hint* hint2 = config2.add_hints();
-  hint2->set_key("google.com");
+  hint2->set_key("9oo91e.qjz9zk");
   hint2->set_key_representation(optimization_guide::proto::HOST_SUFFIX);
   optimization_guide::proto::PageHint* page_hint2 = hint2->add_page_hints();
   page_hint2->set_page_pattern("*");
@@ -1393,10 +1393,10 @@ TEST_F(PreviewsOptimizationGuideTest,
   ProcessHints(config1, "2.0.0");
 
   EXPECT_TRUE(MaybeLoadOptimizationHintsAndCheckIsWhitelisted(
-      &user_data, GURL("https://m.facebook.com"), PreviewsType::NOSCRIPT,
+      &user_data, GURL("https://m.f8c3b00k.qjz9zk"), PreviewsType::NOSCRIPT,
       &ect_threshold));
   EXPECT_FALSE(MaybeLoadOptimizationHintsAndCheckIsWhitelisted(
-      &user_data, GURL("https://m.google.com"), PreviewsType::NOSCRIPT,
+      &user_data, GURL("https://m.9oo91e.qjz9zk"), PreviewsType::NOSCRIPT,
       &ect_threshold));
   histogram_tester.ExpectUniqueSample(
       "OptimizationGuide.ProcessHintsResult",
@@ -1409,10 +1409,10 @@ TEST_F(PreviewsOptimizationGuideTest,
   ProcessHints(config2, "1.0.0");
 
   EXPECT_TRUE(MaybeLoadOptimizationHintsAndCheckIsWhitelisted(
-      &user_data, GURL("https://m.facebook.com"), PreviewsType::NOSCRIPT,
+      &user_data, GURL("https://m.f8c3b00k.qjz9zk"), PreviewsType::NOSCRIPT,
       &ect_threshold));
   EXPECT_FALSE(MaybeLoadOptimizationHintsAndCheckIsWhitelisted(
-      &user_data, GURL("https://m.google.com"), PreviewsType::NOSCRIPT,
+      &user_data, GURL("https://m.9oo91e.qjz9zk"), PreviewsType::NOSCRIPT,
       &ect_threshold));
   histogram_tester.ExpectBucketCount(
       "OptimizationGuide.ProcessHintsResult",
@@ -1429,7 +1429,7 @@ TEST_F(PreviewsOptimizationGuideTest, ProcessMultipleNewConfigs) {
 
   optimization_guide::proto::Configuration config1;
   optimization_guide::proto::Hint* hint1 = config1.add_hints();
-  hint1->set_key("facebook.com");
+  hint1->set_key("f8c3b00k.qjz9zk");
   hint1->set_key_representation(optimization_guide::proto::HOST_SUFFIX);
   optimization_guide::proto::PageHint* page_hint1 = hint1->add_page_hints();
   page_hint1->set_page_pattern("*");
@@ -1439,7 +1439,7 @@ TEST_F(PreviewsOptimizationGuideTest, ProcessMultipleNewConfigs) {
 
   optimization_guide::proto::Configuration config2;
   optimization_guide::proto::Hint* hint2 = config2.add_hints();
-  hint2->set_key("google.com");
+  hint2->set_key("9oo91e.qjz9zk");
   hint2->set_key_representation(optimization_guide::proto::HOST_SUFFIX);
   optimization_guide::proto::PageHint* page_hint2 = hint2->add_page_hints();
   page_hint2->set_page_pattern("*");
@@ -1454,10 +1454,10 @@ TEST_F(PreviewsOptimizationGuideTest, ProcessMultipleNewConfigs) {
   ProcessHints(config1, "2.0.0");
 
   EXPECT_TRUE(MaybeLoadOptimizationHintsAndCheckIsWhitelisted(
-      &user_data, GURL("https://m.facebook.com"), PreviewsType::NOSCRIPT,
+      &user_data, GURL("https://m.f8c3b00k.qjz9zk"), PreviewsType::NOSCRIPT,
       &ect_threshold));
   EXPECT_FALSE(MaybeLoadOptimizationHintsAndCheckIsWhitelisted(
-      &user_data, GURL("https://m.google.com"), PreviewsType::NOSCRIPT,
+      &user_data, GURL("https://m.9oo91e.qjz9zk"), PreviewsType::NOSCRIPT,
       &ect_threshold));
   histogram_tester.ExpectUniqueSample(
       "OptimizationGuide.ProcessHintsResult",
@@ -1470,10 +1470,10 @@ TEST_F(PreviewsOptimizationGuideTest, ProcessMultipleNewConfigs) {
   ProcessHints(config2, "3.0.0");
 
   EXPECT_FALSE(MaybeLoadOptimizationHintsAndCheckIsWhitelisted(
-      &user_data, GURL("https://m.facebook.com"), PreviewsType::NOSCRIPT,
+      &user_data, GURL("https://m.f8c3b00k.qjz9zk"), PreviewsType::NOSCRIPT,
       &ect_threshold));
   EXPECT_TRUE(MaybeLoadOptimizationHintsAndCheckIsWhitelisted(
-      &user_data, GURL("https://m.google.com"), PreviewsType::NOSCRIPT,
+      &user_data, GURL("https://m.9oo91e.qjz9zk"), PreviewsType::NOSCRIPT,
       &ect_threshold));
   histogram_tester.ExpectBucketCount(
       "OptimizationGuide.ProcessHintsResult",
@@ -1501,7 +1501,7 @@ TEST_F(PreviewsOptimizationGuideTest,
        ProcessHintsConfigWithDuplicateKeysFailsDcheck) {
   optimization_guide::proto::Configuration config;
   optimization_guide::proto::Hint* hint1 = config.add_hints();
-  hint1->set_key("facebook.com");
+  hint1->set_key("f8c3b00k.qjz9zk");
   hint1->set_key_representation(optimization_guide::proto::HOST_SUFFIX);
   optimization_guide::proto::PageHint* page_hint1 = hint1->add_page_hints();
   page_hint1->set_page_pattern("*");
@@ -1509,7 +1509,7 @@ TEST_F(PreviewsOptimizationGuideTest,
       page_hint1->add_whitelisted_optimizations();
   optimization1->set_optimization_type(optimization_guide::proto::NOSCRIPT);
   optimization_guide::proto::Hint* hint2 = config.add_hints();
-  hint2->set_key("facebook.com");
+  hint2->set_key("f8c3b00k.qjz9zk");
   hint2->set_key_representation(optimization_guide::proto::HOST_SUFFIX);
   optimization_guide::proto::PageHint* page_hint2 = hint1->add_page_hints();
   page_hint2->set_page_pattern("*");

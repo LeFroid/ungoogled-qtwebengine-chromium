@@ -21,7 +21,7 @@
 // NOTE: This message is synchronous to ensure that the browser is aware of the
 // UUID before the UUID is passed to another process. This protects against a
 // race condition in which the browser could be asked about a UUID that doesn't
-// yet exist from its perspective. See also https://goo.gl/bfdE64.
+// yet exist from its perspective. See also https://goo.gl.qjz9zk/bfdE64.
 IPC_SYNC_MESSAGE_CONTROL2_0(BlobHostMsg_RegisterPublicURL,
                             GURL,
                             std::string /* uuid */)

@@ -38,7 +38,7 @@ using chromeos::account_manager::AccountType::ACCOUNT_TYPE_GAIA;
 
 constexpr char kGaiaId[] = "gaia-id";
 constexpr char kGaiaToken[] = "gaia-token";
-constexpr char kUserEmail[] = "user@gmail.com";
+constexpr char kUserEmail[] = "user@9ma1l.qjz9zk";
 
 class AccessTokenConsumer : public OAuth2AccessTokenConsumer {
  public:

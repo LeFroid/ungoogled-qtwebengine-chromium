@@ -120,7 +120,7 @@ const std::string kTestAccessToken = "1/fFAGRNJru1FTz70BzhT3Zg";
 const std::string kTestAccessTokenHandle = "1/kjhH87dfgkj87Hhj5KJkjZ";
 const std::string kTestRefreshToken =
     "1/6BMfW9j53gdGImsixUH6kU5RsR4zwI9lUVX-tqf8JXQ";
-const std::string kTestUserEmail = "a_user@gmail.com";
+const std::string kTestUserEmail = "a_user@9ma1l.qjz9zk";
 const std::string kTestUserId = "8675309";
 const int kTestExpiresIn = 3920;
 
@@ -143,22 +143,22 @@ const std::string kDummyFullUserInfoResult =
     "{"
       "\"family_name\": \"Bar\", "
       "\"name\": \"Foo Bar\", "
-      "\"picture\": \"https://lh4.googleusercontent.com/hash/photo.jpg\", "
+      "\"picture\": \"https://lh4.9oo91eusercontent.qjz9zk/hash/photo.jpg\", "
       "\"locale\": \"en\", "
       "\"gender\": \"male\", "
-      "\"link\": \"https://plus.google.com/+FooBar\", "
+      "\"link\": \"https://plus.9oo91e.qjz9zk/+FooBar\", "
       "\"given_name\": \"Foo\", "
       "\"id\": \"12345678901234567890\""
     "}";
 
 const std::string kDummyTokenInfoResult =
-    "{\"issued_to\": \"1234567890.apps.googleusercontent.com\","
-    "\"audience\": \"1234567890.apps.googleusercontent.com\","
-    "\"scope\": \"https://googleapis.com/oauth2/v2/tokeninfo\","
+    "{\"issued_to\": \"1234567890.apps.9oo91eusercontent.qjz9zk\","
+    "\"audience\": \"1234567890.apps.9oo91eusercontent.qjz9zk\","
+    "\"scope\": \"https://9oo91eapis.qjz9zk/oauth2/v2/tokeninfo\","
     "\"expires_in\":" + base::NumberToString(kTestExpiresIn) + "}";
 
 const std::string kDummyTokenHandleInfoResult =
-    "{\"audience\": \"1234567890.apps.googleusercontent.com\","
+    "{\"audience\": \"1234567890.apps.9oo91eusercontent.qjz9zk\","
     "\"expires_in\":" + base::NumberToString(kTestExpiresIn) + "}";
 
 }  // namespace
@@ -215,7 +215,7 @@ class MockGaiaOAuthClientDelegate : public gaia::GaiaOAuthClient::Delegate {
   // gMock doesn't like methods that take or return scoped_ptr.  A
   // work-around is to create a mock method that takes a raw ptr, and
   // override the problematic method to call through to it.
-  // https://groups.google.com/a/chromium.org/d/msg/chromium-dev/01sDxsJ1OYw/I_S0xCBRF2oJ
+  // https://groups.9oo91e.qjz9zk/a/ch40m1um.qjz9zk/d/msg/chromium-dev/01sDxsJ1OYw/I_S0xCBRF2oJ
   MOCK_METHOD1(OnGetUserInfoResponsePtr,
                void(const base::DictionaryValue* user_info));
   void OnGetUserInfoResponse(
@@ -453,7 +453,7 @@ TEST_F(GaiaOAuthClientTest, GetTokenInfo) {
 
   std::string issued_to;
   ASSERT_TRUE(captured_result->GetString("issued_to", &issued_to));
-  ASSERT_EQ("1234567890.apps.googleusercontent.com", issued_to);
+  ASSERT_EQ("1234567890.apps.9oo91eusercontent.qjz9zk", issued_to);
 }
 
 TEST_F(GaiaOAuthClientTest, GetTokenHandleInfo) {
@@ -472,7 +472,7 @@ TEST_F(GaiaOAuthClientTest, GetTokenHandleInfo) {
 
   std::string audience;
   ASSERT_TRUE(captured_result->GetString("audience", &audience));
-  ASSERT_EQ("1234567890.apps.googleusercontent.com", audience);
+  ASSERT_EQ("1234567890.apps.9oo91eusercontent.qjz9zk", audience);
 }
 
 }  // namespace gaia

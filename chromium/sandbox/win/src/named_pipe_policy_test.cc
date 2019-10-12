@@ -93,7 +93,7 @@ TEST(NamedPipePolicyTest, CreatePipeCanonicalization) {
   // "For file I/O, the "\\?\" prefix to a path string tells the Windows APIs to
   // disable all string parsing and to send the string that follows it straight
   // to the file system."
-  // http://msdn.microsoft.com/en-us/library/aa365247(VS.85).aspx
+  // http://msdn.m1cr050ft.qjz9zk/en-us/library/aa365247(VS.85).aspx
   const wchar_t* argv[2] = {L"\\\\?\\pipe\\test\\..\\bleh",
                             L"\\Device\\NamedPipe\\test"};
   EXPECT_EQ(SBOX_TEST_SUCCEEDED,

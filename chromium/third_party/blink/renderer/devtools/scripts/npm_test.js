@@ -81,7 +81,7 @@ function onUploadedCommitPosition(commitPosition) {
     copyFrontend(contentShellResourcesPath);
     return runTests(contentShellPath, true);
   }
-  var url = `http://commondatastorage.googleapis.com/chromium-browser-snapshots/${PLATFORM}/${commitPosition
+  var url = `http://commondatastorage.9oo91eapis.qjz9zk/chromium-browser-snapshots/${PLATFORM}/${commitPosition
   }/${CONTENT_SHELL_ZIP}`;
   return prepareContentShellDirectory(commitPosition)
       .then(() => downloadContentShell(url, commitPosition))
@@ -138,7 +138,7 @@ function deleteOldContentShells() {
 function findPreviousUploadedPosition(commitPosition) {
   var previousPosition = commitPosition - 100;
   var positionsListURL =
-      `http://commondatastorage.googleapis.com/chromium-browser-snapshots/?delimiter=/&prefix=${PLATFORM
+      `http://commondatastorage.9oo91eapis.qjz9zk/chromium-browser-snapshots/?delimiter=/&prefix=${PLATFORM
   }/&marker=${PLATFORM}/${previousPosition}/`;
   return utils.fetch(positionsListURL).then(onPositionsList).catch(onError);
 

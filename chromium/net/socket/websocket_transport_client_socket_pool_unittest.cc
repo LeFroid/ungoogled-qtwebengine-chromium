@@ -64,7 +64,7 @@ class WebSocketTransportClientSocketPoolTest
     : public TestWithScopedTaskEnvironment {
  protected:
   WebSocketTransportClientSocketPoolTest()
-      : group_id_(HostPortPair("www.google.com", 80),
+      : group_id_(HostPortPair("www.9oo91e.qjz9zk", 80),
                   ClientSocketPool::SocketType::kHttp,
                   PrivacyMode::PRIVACY_MODE_DISABLED),
         params_(ClientSocketPool::SocketParams::CreateForHttpForTesting()),

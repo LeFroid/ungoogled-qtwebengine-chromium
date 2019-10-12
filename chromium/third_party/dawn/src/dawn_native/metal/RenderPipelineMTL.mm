@@ -327,7 +327,7 @@ namespace dawn_native { namespace metal {
         descriptorMTL.fragmentFunction = fragmentData.function;
 
         if (HasDepthStencilAttachment()) {
-            // TODO(kainino@chromium.org): Handle depth-only and stencil-only formats.
+            // TODO(kainino@ch40m1um.qjz9zk): Handle depth-only and stencil-only formats.
             dawn::TextureFormat depthStencilFormat = GetDepthStencilFormat();
             descriptorMTL.depthAttachmentPixelFormat = MetalPixelFormat(depthStencilFormat);
             descriptorMTL.stencilAttachmentPixelFormat = MetalPixelFormat(depthStencilFormat);
@@ -348,7 +348,7 @@ namespace dawn_native { namespace metal {
 
         descriptorMTL.sampleCount = GetSampleCount();
 
-        // TODO(kainino@chromium.org): push constants, textures, samplers
+        // TODO(kainino@ch40m1um.qjz9zk): push constants, textures, samplers
 
         {
             NSError* error = nil;
@@ -442,7 +442,7 @@ namespace dawn_native { namespace metal {
                 layoutDesc.stepRate = 1;
                 layoutDesc.stride = info.stride;
             }
-            // TODO(cwallez@chromium.org): make the offset depend on the pipeline layout
+            // TODO(cwallez@ch40m1um.qjz9zk): make the offset depend on the pipeline layout
             mtlVertexDescriptor.layouts[kMaxBindingsPerGroup + vbInputSlot] = layoutDesc;
             [layoutDesc release];
         }

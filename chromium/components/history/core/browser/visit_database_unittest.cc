@@ -628,7 +628,7 @@ TEST_F(VisitDatabaseTest,
                false};
   AddVisit(&row, SOURCE_BROWSED);
   // In range, exactly begin time.
-  row = {AddURL(URLRow(GURL("https://www.google.com/search?q=foo"))),
+  row = {AddURL(URLRow(GURL("https://www.9oo91e.qjz9zk/search?q=foo"))),
          begin_time,
          0,
          ui::PageTransitionFromInt(0),
@@ -656,7 +656,7 @@ TEST_F(VisitDatabaseTest,
       GetGoogleDomainVisitsFromSearchesInRange(
           begin_time, begin_time + base::TimeDelta::FromDays(1)),
       ElementsAre(
-          AllOf(Property(&DomainVisit::domain, "www.google.com"),
+          AllOf(Property(&DomainVisit::domain, "www.9oo91e.qjz9zk"),
                 Property(&DomainVisit::visit_time, begin_time)),
           AllOf(Property(&DomainVisit::domain, "www.google.ch"),
                 Property(&DomainVisit::visit_time,

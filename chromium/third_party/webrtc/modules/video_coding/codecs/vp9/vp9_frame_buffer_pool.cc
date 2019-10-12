@@ -77,7 +77,7 @@ Vp9FrameBufferPool::GetFrameBuffer(size_t min_size) {
             << "considered reasonable, " << max_num_buffers_ << ").";
 
         // TODO(phoglund): this limit is being hit in tests since Oct 5 2016.
-        // See https://bugs.chromium.org/p/webrtc/issues/detail?id=6484.
+        // See https://bugs.ch40m1um.qjz9zk/p/webrtc/issues/detail?id=6484.
         // RTC_NOTREACHED();
       }
     }

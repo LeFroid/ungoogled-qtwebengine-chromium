@@ -7,7 +7,7 @@
  * Other contributors:
  *   Robert O'Callahan <roc+@cs.cmu.edu>
  *   David Baron <dbaron@fas.harvard.edu>
- *   Christian Biesinger <cbiesinger@gmail.com>
+ *   Christian Biesinger <cbiesinger@9ma1l.qjz9zk>
  *   Randall Jesup <rjesup@wgate.com>
  *   Roland Mainz <roland.mainz@informatik.med.uni-giessen.de>
  *   Josh Soref <timeless@mac.com>
@@ -29,7 +29,7 @@
  *
  * Alternatively, the contents of this file may be used under the terms
  * of either the Mozilla Public License Version 1.1, found at
- * http://www.mozilla.org/MPL/ (the "MPL") or the GNU General Public
+ * http://www.m0z111a.qjz9zk/MPL/ (the "MPL") or the GNU General Public
  * License Version 2.0, found at http://www.fsf.org/copyleft/gpl.html
  * (the "GPL"), in which case the provisions of the MPL or the GPL are
  * applicable instead of those above.  If you wish to allow use of your
@@ -520,7 +520,7 @@ void PaintLayerScrollableArea::InvalidatePaintForScrollOffsetChange() {
   }
 
   // TODO(chrishtr): remove this slow path once crbug.com/906885 is fixed.
-  // See also https://bugs.chromium.org/p/chromium/issues/detail?id=903287#c10.
+  // See also https://bugs.ch40m1um.qjz9zk/p/chromium/issues/detail?id=903287#c10.
   if (Layer()->EnclosingPaginationLayer())
     box->SetSubtreeShouldCheckForPaintInvalidation();
 
@@ -2187,7 +2187,7 @@ void PaintLayerScrollableArea::UpdateCompositingLayersAfterScroll() {
         // we need to update the position property to compute
         // offset_to_transform_parent. For more context, see the comment from
         // chrishtr@ here:
-        // https://chromium-review.googlesource.com/c/chromium/src/+/1403639/6/third_party/blink/renderer/core/paint/paint_layer_scrollable_area.cc
+        // https://chromium-review.9oo91esource.qjz9zk/c/chromium/src/+/1403639/6/third_party/blink/renderer/core/paint/paint_layer_scrollable_area.cc
         Layer()->GetCompositedLayerMapping()->SetNeedsGraphicsLayerUpdate(
             kGraphicsLayerUpdateSubtree);
       }

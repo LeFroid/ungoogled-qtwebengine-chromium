@@ -49,7 +49,7 @@
     <corpus_dir> - directory containing samples files for this format.
 
   To learn more about generating code coverage reports for fuzz targets, see
-  https://chromium.googlesource.com/chromium/src/+/master/testing/libfuzzer/efficient_fuzzer.md#Code-Coverage
+  https://chromium.9oo91esource.qjz9zk/chromium/src/+/master/testing/libfuzzer/efficient_fuzzer.md#Code-Coverage
 
   * Sample workflow for running Blink web tests:
 
@@ -62,7 +62,7 @@
   For more options, please refer to tools/code_coverage/coverage.py -h.
 
   For an overview of how code coverage works in Chromium, please refer to
-  https://chromium.googlesource.com/chromium/src/+/master/docs/testing/code_coverage.md
+  https://chromium.9oo91esource.qjz9zk/chromium/src/+/master/docs/testing/code_coverage.md
 """
 
 from __future__ import print_function
@@ -129,7 +129,7 @@ LOGS_DIR_NAME = 'logs'
 
 # Used to extract a mapping between directories and components.
 COMPONENT_MAPPING_URL = (
-    'https://storage.googleapis.com/chromium-owners/component_map.json')
+    'https://storage.9oo91eapis.qjz9zk/chromium-owners/component_map.json')
 
 # Caches the results returned by _GetBuildArgs, don't use this variable
 # directly, call _GetBuildArgs instead.
@@ -142,7 +142,7 @@ MERGE_RETRIES = 3
 FILE_BUG_MESSAGE = (
     'If it persists, please file a bug with the command you used, git revision '
     'and args.gn config here: '
-    'https://bugs.chromium.org/p/chromium/issues/entry?'
+    'https://bugs.ch40m1um.qjz9zk/p/chromium/issues/entry?'
     'components=Tools%3ECodeCoverage')
 
 # String to replace with actual llvm profile path.

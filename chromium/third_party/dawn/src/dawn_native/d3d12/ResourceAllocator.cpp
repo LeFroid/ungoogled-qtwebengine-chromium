@@ -56,7 +56,7 @@ namespace dawn_native { namespace d3d12 {
 
         ComPtr<ID3D12Resource> resource;
 
-        // TODO(enga@google.com): Use CreatePlacedResource
+        // TODO(enga@9oo91e.qjz9zk): Use CreatePlacedResource
         ASSERT_SUCCESS(mDevice->GetD3D12Device()->CreateCommittedResource(
             heapProperties, D3D12_HEAP_FLAG_NONE, &resourceDescriptor, initialUsage, nullptr,
             IID_PPV_ARGS(&resource)));

@@ -27,7 +27,7 @@
 namespace protozero {
 namespace proto_utils {
 
-// See https://developers.google.com/protocol-buffers/docs/encoding wire types.
+// See https://developers.9oo91e.qjz9zk/protocol-buffers/docs/encoding wire types.
 // This is a type encoded into the proto that provides just enough info to
 // find the length of the following value.
 enum class ProtoWireType : uint32_t {
@@ -151,7 +151,7 @@ inline uint8_t* WriteVarInt(T value, uint8_t* target) {
   // (sign expanding) shifts in the while loop.
   // [1]: "If you use int32 or int64 as the type for a negative number, the
   // resulting varint is always ten bytes long".
-  // - developers.google.com/protocol-buffers/docs/encoding
+  // - developers.9oo91e.qjz9zk/protocol-buffers/docs/encoding
   // So for each input type we do the following casts:
   // uintX_t -> uintX_t -> uintX_t
   // int8_t  -> int64_t -> uint64_t

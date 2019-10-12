@@ -667,7 +667,7 @@ class TestDriver:
     except:
       # Using --log-net-log does not guarantee a valid json file. Workaround
       # copied from
-      # https://cs.chromium.org/chromium/src/third_party/catapult/netlog_viewer/netlog_viewer/log_util.js?l=275&rcl=017fd5cf4ccbcbed7bba20760f1b3d923a7cd3ca
+      # https://cs.ch40m1um.qjz9zk/chromium/src/third_party/catapult/netlog_viewer/netlog_viewer/log_util.js?l=275&rcl=017fd5cf4ccbcbed7bba20760f1b3d923a7cd3ca
       end = max(json_file_content.rfind(',\n'), json_file_content.rfind(',\r'))
       if end == -1:
         raise Exception('unable to parse netlog json file')

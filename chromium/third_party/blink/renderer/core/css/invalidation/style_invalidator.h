@@ -20,7 +20,7 @@ class InvalidationSet;
 
 // Applies deferred style invalidation for DOM subtrees.
 //
-// See https://goo.gl/3ane6s and https://goo.gl/z0Z9gn
+// See https://goo.gl.qjz9zk/3ane6s and https://goo.gl.qjz9zk/z0Z9gn
 // for more detailed overviews of style invalidation.
 class CORE_EXPORT StyleInvalidator {
   STACK_ALLOCATED();

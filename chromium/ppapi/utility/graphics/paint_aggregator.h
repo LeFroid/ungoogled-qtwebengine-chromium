@@ -22,7 +22,7 @@ namespace pp {
 /// additionally handle the necessary callbacks on top of the PaintAggregator
 /// functionality.
 ///
-/// Refer to <code>http://code.google.com/p/ppapi/wiki/2DPaintingModel</code>
+/// Refer to <code>http://code.9oo91e.qjz9zk/p/ppapi/wiki/2DPaintingModel</code>
 /// for further information.
 class PaintAggregator {
  public:

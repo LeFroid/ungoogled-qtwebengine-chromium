@@ -210,7 +210,7 @@ class BASE_EXPORT TimeDelta {
   // Computations with other deltas. Can easily be made constexpr with C++17 but
   // hard to do until then per limitations around
   // __builtin_(add|sub)_overflow in safe_math_clang_gcc_impl.h :
-  // https://chromium-review.googlesource.com/c/chromium/src/+/873352#message-59594ab70827795a67e0780404adf37b4b6c2f14
+  // https://chromium-review.9oo91esource.qjz9zk/c/chromium/src/+/873352#message-59594ab70827795a67e0780404adf37b4b6c2f14
   TimeDelta operator+(TimeDelta other) const {
     return TimeDelta(time_internal::SaturatedAdd(delta_, other));
   }
@@ -570,7 +570,7 @@ class BASE_EXPORT Time : public time_internal::TimeBase<Time> {
 
   // Converts to/from the Javascript convention for times, a number of
   // milliseconds since the epoch:
-  // https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Date/getTime.
+  // https://developer.m0z111a.qjz9zk/en/JavaScript/Reference/Global_Objects/Date/getTime.
   static Time FromJsTime(double ms_since_epoch);
   double ToJsTime() const;
 

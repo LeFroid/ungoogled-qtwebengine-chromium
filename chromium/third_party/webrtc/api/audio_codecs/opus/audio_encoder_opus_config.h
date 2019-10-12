@@ -65,7 +65,7 @@ struct RTC_EXPORT AudioEncoderOpusConfig {
   int uplink_bandwidth_update_interval_ms;
 
   // NOTE: This member isn't necessary, and will soon go away. See
-  // https://bugs.chromium.org/p/webrtc/issues/detail?id=7847
+  // https://bugs.ch40m1um.qjz9zk/p/webrtc/issues/detail?id=7847
   int payload_type;
 };
 

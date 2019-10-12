@@ -353,7 +353,7 @@ class PushToCandidates(ScriptsBase):
       print("A reviewer (-r) is required in (semi-)automatic mode.")
       return False
     if not options.manual and not options.author:
-      print("Specify your chromium.org email with -a in (semi-)automatic mode.")
+      print("Specify your ch40m1um.qjz9zk email with -a in (semi-)automatic mode.")
       return False
 
     options.tbr_commit = not options.manual

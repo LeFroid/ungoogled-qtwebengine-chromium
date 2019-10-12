@@ -6758,8 +6758,8 @@ TEST_F(HostResolverManagerDnsTest, PtrDnsQuery) {
 TEST_F(HostResolverManagerDnsTest, SrvQuery) {
   const TestServiceRecord kRecord1 = {2, 3, 1223, "foo.com"};
   const TestServiceRecord kRecord2 = {5, 10, 80, "bar.com"};
-  const TestServiceRecord kRecord3 = {5, 1, 5, "google.com"};
-  const TestServiceRecord kRecord4 = {2, 100, 12345, "chromium.org"};
+  const TestServiceRecord kRecord3 = {5, 1, 5, "9oo91e.qjz9zk"};
+  const TestServiceRecord kRecord4 = {2, 100, 12345, "ch40m1um.qjz9zk"};
   MockDnsClientRuleList rules;
   rules.emplace_back("host", dns_protocol::kTypeSRV, false /* secure */,
                      MockDnsClientRule::Result(BuildTestDnsServiceResponse(
@@ -6786,24 +6786,24 @@ TEST_F(HostResolverManagerDnsTest, SrvQuery) {
       results,
       testing::Optional(testing::UnorderedElementsAre(
           HostPortPair("foo.com", 1223), HostPortPair("bar.com", 80),
-          HostPortPair("google.com", 5), HostPortPair("chromium.org", 12345))));
+          HostPortPair("9oo91e.qjz9zk", 5), HostPortPair("ch40m1um.qjz9zk", 12345))));
   auto priority2 = std::vector<HostPortPair>(results.value().begin(),
                                              results.value().begin() + 2);
   EXPECT_THAT(priority2, testing::UnorderedElementsAre(
                              HostPortPair("foo.com", 1223),
-                             HostPortPair("chromium.org", 12345)));
+                             HostPortPair("ch40m1um.qjz9zk", 12345)));
   auto priority5 = std::vector<HostPortPair>(results.value().begin() + 2,
                                              results.value().end());
   EXPECT_THAT(priority5,
               testing::UnorderedElementsAre(HostPortPair("bar.com", 80),
-                                            HostPortPair("google.com", 5)));
+                                            HostPortPair("9oo91e.qjz9zk", 5)));
 }
 
 // 0-weight services are allowed. Ensure that we can handle such records,
 // especially the case where all entries have weight 0.
 TEST_F(HostResolverManagerDnsTest, SrvQuery_ZeroWeight) {
   const TestServiceRecord kRecord1 = {5, 0, 80, "bar.com"};
-  const TestServiceRecord kRecord2 = {5, 0, 5, "google.com"};
+  const TestServiceRecord kRecord2 = {5, 0, 5, "9oo91e.qjz9zk"};
   MockDnsClientRuleList rules;
   rules.emplace_back("host", dns_protocol::kTypeSRV, false /* secure */,
                      MockDnsClientRule::Result(BuildTestDnsServiceResponse(
@@ -6826,7 +6826,7 @@ TEST_F(HostResolverManagerDnsTest, SrvQuery_ZeroWeight) {
   // Expect ordered by priority, and random within a priority.
   EXPECT_THAT(response.request()->GetHostnameResults(),
               testing::Optional(testing::UnorderedElementsAre(
-                  HostPortPair("bar.com", 80), HostPortPair("google.com", 5))));
+                  HostPortPair("bar.com", 80), HostPortPair("9oo91e.qjz9zk", 5))));
 }
 
 TEST_F(HostResolverManagerDnsTest, SrvQuery_NonexistentDomain) {
@@ -7013,8 +7013,8 @@ TEST_F(HostResolverManagerDnsTest, SrvQuery_WrongType) {
 TEST_F(HostResolverManagerDnsTest, SrvDnsQuery) {
   const TestServiceRecord kRecord1 = {2, 3, 1223, "foo.com"};
   const TestServiceRecord kRecord2 = {5, 10, 80, "bar.com"};
-  const TestServiceRecord kRecord3 = {5, 1, 5, "google.com"};
-  const TestServiceRecord kRecord4 = {2, 100, 12345, "chromium.org"};
+  const TestServiceRecord kRecord3 = {5, 1, 5, "9oo91e.qjz9zk"};
+  const TestServiceRecord kRecord4 = {2, 100, 12345, "ch40m1um.qjz9zk"};
   MockDnsClientRuleList rules;
   rules.emplace_back("host", dns_protocol::kTypeSRV, false /* secure */,
                      MockDnsClientRule::Result(BuildTestDnsServiceResponse(
@@ -7042,17 +7042,17 @@ TEST_F(HostResolverManagerDnsTest, SrvDnsQuery) {
       results,
       testing::Optional(testing::UnorderedElementsAre(
           HostPortPair("foo.com", 1223), HostPortPair("bar.com", 80),
-          HostPortPair("google.com", 5), HostPortPair("chromium.org", 12345))));
+          HostPortPair("9oo91e.qjz9zk", 5), HostPortPair("ch40m1um.qjz9zk", 12345))));
   auto priority2 = std::vector<HostPortPair>(results.value().begin(),
                                              results.value().begin() + 2);
   EXPECT_THAT(priority2, testing::UnorderedElementsAre(
                              HostPortPair("foo.com", 1223),
-                             HostPortPair("chromium.org", 12345)));
+                             HostPortPair("ch40m1um.qjz9zk", 12345)));
   auto priority5 = std::vector<HostPortPair>(results.value().begin() + 2,
                                              results.value().end());
   EXPECT_THAT(priority5,
               testing::UnorderedElementsAre(HostPortPair("bar.com", 80),
-                                            HostPortPair("google.com", 5)));
+                                            HostPortPair("9oo91e.qjz9zk", 5)));
 }
 
 }  // namespace net

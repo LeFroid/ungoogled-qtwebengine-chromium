@@ -124,7 +124,7 @@ bool CheckDuplicateEntries(const TransportSecurityStateEntries& entries) {
 bool CheckNoopEntries(const TransportSecurityStateEntries& entries) {
   for (const auto& entry : entries) {
     if (!entry->force_https && entry->pinset.empty() && !entry->expect_ct) {
-      if (entry->hostname == "learn.doubleclick.net") {
+      if (entry->hostname == "learn.double" "click." "net") {
         // This entry is deliberately used as an exclusion.
         continue;
       }

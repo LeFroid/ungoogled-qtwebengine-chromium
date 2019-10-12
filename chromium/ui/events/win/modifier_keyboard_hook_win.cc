@@ -81,8 +81,8 @@ constexpr DWORD kSynthesizedControlScanCodeForAltGr = 0x021D;
 
 // {Get|Set}KeyboardState() receives an array with 256 elements.  This is
 // described in MSDN but no constant exists for this value.  Function reference:
-// https://docs.microsoft.com/en-us/windows/desktop/api/winuser/nf-winuser-getkeyboardstate
-// https://docs.microsoft.com/en-us/windows/desktop/api/winuser/nf-winuser-setkeyboardstate
+// https://docs.m1cr050ft.qjz9zk/en-us/windows/desktop/api/winuser/nf-winuser-getkeyboardstate
+// https://docs.m1cr050ft.qjz9zk/en-us/windows/desktop/api/winuser/nf-winuser-setkeyboardstate
 constexpr int kKeyboardStateArraySize = 256;
 
 // Used for setting and testing the bits in the KeyboardState array.

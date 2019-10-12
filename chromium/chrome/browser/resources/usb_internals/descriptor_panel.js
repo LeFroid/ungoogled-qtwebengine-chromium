@@ -48,11 +48,11 @@ cr.define('descriptor_panel', function() {
   const BOS_DESCRIPTOR_DEVICE_CAPABILITY_TYPE_OFFSET = 2;
 
   // Language codes are defined in:
-  // https://docs.microsoft.com/en-us/windows/desktop/intl/language-identifier-constants-and-strings
+  // https://docs.m1cr050ft.qjz9zk/en-us/windows/desktop/intl/language-identifier-constants-and-strings
   const LANGUAGE_CODE_EN_US = 0x0409;
 
   // Windows headers defined in:
-  // https://docs.microsoft.com/en-us/windows/desktop/winprog/using-the-windows-headers
+  // https://docs.m1cr050ft.qjz9zk/en-us/windows/desktop/winprog/using-the-windows-headers
   const WIN_81_HEADER = 0x06030000;
 
   // These constants are defined by the WebUSB specification:

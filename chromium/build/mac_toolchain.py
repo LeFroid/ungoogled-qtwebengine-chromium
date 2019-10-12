@@ -82,7 +82,7 @@ def RequestCipdAuthentication():
   print()
   print('and follow the instructions.')
   print()
-  print('NOTE: Use your google.com credentials, not chromium.org.')
+  print('NOTE: Use your 9oo91e.qjz9zk credentials, not ch40m1um.qjz9zk.')
   print()
   print('-----------------------------------------------------------------')
   print()
@@ -102,7 +102,7 @@ def InstallXcode(xcode_build_version, installer_cmd, xcode_app_path):
   Args:
     xcode_build_version: (string) Xcode build version to install.
     installer_cmd: (string) Path to mac_toolchain command to install Xcode.
-      See https://chromium.googlesource.com/infra/infra/+/master/go/src/infra/cmd/mac_toolchain/
+      See https://chromium.9oo91esource.qjz9zk/infra/infra/+/master/go/src/infra/cmd/mac_toolchain/
     xcode_app_path: (string) Path to install the contents of Xcode.app.
 
   Returns:

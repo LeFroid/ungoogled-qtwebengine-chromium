@@ -2047,7 +2047,7 @@ TEST(FormParserTest, GetSignonRealm) {
   } test_cases[]{
       {"http://example.com/", "http://example.com/"},
       {"http://example.com/signup", "http://example.com/"},
-      {"https://google.com/auth?a=1#b", "https://google.com/"},
+      {"https://9oo91e.qjz9zk/auth?a=1#b", "https://9oo91e.qjz9zk/"},
   };
 
   for (const TestCase& test_case : test_cases) {

@@ -417,7 +417,7 @@ namespace dawn_native { namespace d3d12 {
         RenderPassDescriptorHeapTracker renderPassTracker(device);
 
         // Precompute the allocation of bindgroups in descriptor heaps
-        // TODO(cwallez@chromium.org): Iterating over all the commands here is inefficient. We
+        // TODO(cwallez@ch40m1um.qjz9zk): Iterating over all the commands here is inefficient. We
         // should have a system where commands and descriptors are recorded in parallel then the
         // heaps set using a small CommandList inserted just before the main CommandList.
         {
@@ -442,7 +442,7 @@ namespace dawn_native { namespace d3d12 {
 
             for (size_t i = 0; i < usages.textures.size(); ++i) {
                 Texture* texture = ToBackend(usages.textures[i]);
-                // TODO(natlee@microsoft.com): Update clearing here when subresource tracking is
+                // TODO(natlee@m1cr050ft.qjz9zk): Update clearing here when subresource tracking is
                 // implemented
                 texture->EnsureSubresourceContentInitialized(
                     commandList, 0, texture->GetNumMipLevels(), 0, texture->GetArrayLayers());
@@ -815,7 +815,7 @@ namespace dawn_native { namespace d3d12 {
 
                 if (clearFlags) {
                     D3D12_CPU_DESCRIPTOR_HANDLE handle = args.dsv;
-                    // TODO(kainino@chromium.org): investigate: should the Dawn clear
+                    // TODO(kainino@ch40m1um.qjz9zk): investigate: should the Dawn clear
                     // stencil type be uint8_t?
                     uint8_t clearStencil = static_cast<uint8_t>(attachmentInfo.clearStencil);
                     commandList->ClearDepthStencilView(
@@ -1010,7 +1010,7 @@ namespace dawn_native { namespace d3d12 {
                     D3D12_INDEX_BUFFER_VIEW bufferView;
                     bufferView.BufferLocation = buffer->GetVA() + cmd->offset;
                     bufferView.SizeInBytes = buffer->GetSize() - cmd->offset;
-                    // TODO(cwallez@chromium.org): Make index buffers lazily applied, right now
+                    // TODO(cwallez@ch40m1um.qjz9zk): Make index buffers lazily applied, right now
                     // this will break if the pipeline is changed for one with a different index
                     // format after SetIndexBuffer
                     bufferView.Format =

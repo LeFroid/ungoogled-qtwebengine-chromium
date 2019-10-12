@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2012 Koji Ishii <kojiishi@gmail.com>
+ * Copyright (C) 2012 Koji Ishii <kojiishi@9ma1l.qjz9zk>
  *
  * Redistribution and use in source and binary forms, with or without
  * modification, are permitted provided that the following conditions

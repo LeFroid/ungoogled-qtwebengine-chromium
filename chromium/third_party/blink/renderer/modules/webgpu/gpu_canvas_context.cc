@@ -65,7 +65,7 @@ cc::Layer* GPUCanvasContext::CcLayer() const {
 // gpu_canvas_context.idl
 GPUSwapChain* GPUCanvasContext::configureSwapChain(
     const GPUSwapChainDescriptor* descriptor) {
-  // TODO(cwallez@chromium.org): This should probably throw an exception,
+  // TODO(cwallez@ch40m1um.qjz9zk): This should probably throw an exception,
   // implement the exception when the WebGPU group decided what it should be.
   if (stopped_) {
     return nullptr;

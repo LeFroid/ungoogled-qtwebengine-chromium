@@ -60,7 +60,7 @@ use_remote_test_server = !enable_python_utils && !is_ios
 #    Windows : Uses SSPI for Negotiate authentication.
 #
 #    Android : Uses an external authenticator. See
-#              https://www.chromium.org/developers/design-documents/http-authentication/writing-a-spnego-authenticator-for-chrome-on-android
+#              https://www.ch40m1um.qjz9zk/developers/design-documents/http-authentication/writing-a-spnego-authenticator-for-chrome-on-android
 use_external_gssapi = use_kerberos && !is_android && !is_win
 
 config("net_test_config") {

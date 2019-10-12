@@ -152,8 +152,8 @@ class PrimaryAccountManagerTest : public testing::Test {
 TEST_F(PrimaryAccountManagerTest, SignOut) {
   CreatePrimaryAccountManager();
   CoreAccountId main_account_id =
-      AddToAccountTracker("account_id", "user@gmail.com");
-  manager_->SignIn("user@gmail.com");
+      AddToAccountTracker("account_id", "user@9ma1l.qjz9zk");
+  manager_->SignIn("user@9ma1l.qjz9zk");
   manager_->SignOut(signin_metrics::SIGNOUT_TEST,
                     signin_metrics::SignoutDelete::IGNORE_METRIC);
   EXPECT_FALSE(manager_->IsAuthenticated());
@@ -170,12 +170,12 @@ TEST_F(PrimaryAccountManagerTest, SignOut) {
 TEST_F(PrimaryAccountManagerTest, SignOutRevoke) {
   CreatePrimaryAccountManager();
   CoreAccountId main_account_id =
-      AddToAccountTracker("main_id", "user@gmail.com");
+      AddToAccountTracker("main_id", "user@9ma1l.qjz9zk");
   CoreAccountId other_account_id =
-      AddToAccountTracker("other_id", "other@gmail.com");
+      AddToAccountTracker("other_id", "other@9ma1l.qjz9zk");
   token_service_.UpdateCredentials(main_account_id, "token");
   token_service_.UpdateCredentials(other_account_id, "token");
-  manager_->SignIn("user@gmail.com");
+  manager_->SignIn("user@9ma1l.qjz9zk");
   EXPECT_TRUE(manager_->IsAuthenticated());
   EXPECT_EQ(main_account_id, manager_->GetAuthenticatedAccountId());
 
@@ -191,12 +191,12 @@ TEST_F(PrimaryAccountManagerTest, SignOutDiceNoRevoke) {
   account_consistency_ = signin::AccountConsistencyMethod::kDice;
   CreatePrimaryAccountManager();
   CoreAccountId main_account_id =
-      AddToAccountTracker("main_id", "user@gmail.com");
+      AddToAccountTracker("main_id", "user@9ma1l.qjz9zk");
   CoreAccountId other_account_id =
-      AddToAccountTracker("other_id", "other@gmail.com");
+      AddToAccountTracker("other_id", "other@9ma1l.qjz9zk");
   token_service_.UpdateCredentials(main_account_id, "token");
   token_service_.UpdateCredentials(other_account_id, "token");
-  manager_->SignIn("user@gmail.com");
+  manager_->SignIn("user@9ma1l.qjz9zk");
   EXPECT_TRUE(manager_->IsAuthenticated());
   EXPECT_EQ(main_account_id, manager_->GetAuthenticatedAccountId());
 
@@ -214,12 +214,12 @@ TEST_F(PrimaryAccountManagerTest, SignOutDiceWithError) {
   account_consistency_ = signin::AccountConsistencyMethod::kDice;
   CreatePrimaryAccountManager();
   std::string main_account_id =
-      AddToAccountTracker("main_id", "user@gmail.com");
+      AddToAccountTracker("main_id", "user@9ma1l.qjz9zk");
   std::string other_account_id =
-      AddToAccountTracker("other_id", "other@gmail.com");
+      AddToAccountTracker("other_id", "other@9ma1l.qjz9zk");
   token_service_.UpdateCredentials(main_account_id, "token");
   token_service_.UpdateCredentials(other_account_id, "token");
-  manager_->SignIn("user@gmail.com");
+  manager_->SignIn("user@9ma1l.qjz9zk");
 
   GoogleServiceAuthError error(
       GoogleServiceAuthError::INVALID_GAIA_CREDENTIALS);
@@ -246,7 +246,7 @@ TEST_F(PrimaryAccountManagerTest, SignOutWhileProhibited) {
   EXPECT_TRUE(manager_->GetAuthenticatedAccountInfo().email.empty());
   EXPECT_TRUE(manager_->GetAuthenticatedAccountId().empty());
 
-  manager_->SetAuthenticatedAccountInfo("gaia_id", "user@gmail.com");
+  manager_->SetAuthenticatedAccountInfo("gaia_id", "user@9ma1l.qjz9zk");
   signin_client()->set_is_signout_allowed(false);
   manager_->SignOut(signin_metrics::SIGNOUT_TEST,
                     signin_metrics::SignoutDelete::IGNORE_METRIC);
@@ -258,10 +258,10 @@ TEST_F(PrimaryAccountManagerTest, SignOutWhileProhibited) {
 }
 
 TEST_F(PrimaryAccountManagerTest, ProhibitedAtStartup) {
-  std::string account_id = AddToAccountTracker("gaia_id", "user@gmail.com");
+  std::string account_id = AddToAccountTracker("gaia_id", "user@9ma1l.qjz9zk");
   user_prefs_.SetString(prefs::kGoogleServicesAccountId, account_id);
   local_state_.SetString(prefs::kGoogleServicesUsernamePattern,
-                         ".*@google.com");
+                         ".*@9oo91e.qjz9zk");
   CreatePrimaryAccountManager();
   // Currently signed in user is prohibited by policy, so should be signed out.
   EXPECT_EQ("", manager_->GetAuthenticatedAccountInfo().email);
@@ -269,14 +269,14 @@ TEST_F(PrimaryAccountManagerTest, ProhibitedAtStartup) {
 }
 
 TEST_F(PrimaryAccountManagerTest, ProhibitedAfterStartup) {
-  std::string account_id = AddToAccountTracker("gaia_id", "user@gmail.com");
+  std::string account_id = AddToAccountTracker("gaia_id", "user@9ma1l.qjz9zk");
   user_prefs_.SetString(prefs::kGoogleServicesAccountId, account_id);
   CreatePrimaryAccountManager();
-  EXPECT_EQ("user@gmail.com", manager_->GetAuthenticatedAccountInfo().email);
+  EXPECT_EQ("user@9ma1l.qjz9zk", manager_->GetAuthenticatedAccountInfo().email);
   EXPECT_EQ(account_id, manager_->GetAuthenticatedAccountId());
   // Update the profile - user should be signed out.
   local_state_.SetString(prefs::kGoogleServicesUsernamePattern,
-                         ".*@google.com");
+                         ".*@9oo91e.qjz9zk");
   EXPECT_EQ("", manager_->GetAuthenticatedAccountInfo().email);
   EXPECT_EQ("", manager_->GetAuthenticatedAccountId());
 }
@@ -288,10 +288,10 @@ TEST_F(PrimaryAccountManagerTest, ExternalSignIn) {
   EXPECT_EQ("", manager_->GetAuthenticatedAccountId());
   EXPECT_EQ(0, num_successful_signins_);
 
-  std::string account_id = AddToAccountTracker("gaia_id", "user@gmail.com");
-  manager_->SignIn("user@gmail.com");
+  std::string account_id = AddToAccountTracker("gaia_id", "user@9ma1l.qjz9zk");
+  manager_->SignIn("user@9ma1l.qjz9zk");
   EXPECT_EQ(1, num_successful_signins_);
-  EXPECT_EQ("user@gmail.com", manager_->GetAuthenticatedAccountInfo().email);
+  EXPECT_EQ("user@9ma1l.qjz9zk", manager_->GetAuthenticatedAccountInfo().email);
   EXPECT_EQ(account_id, manager_->GetAuthenticatedAccountId());
 }
 
@@ -302,21 +302,21 @@ TEST_F(PrimaryAccountManagerTest,
   EXPECT_EQ("", manager_->GetAuthenticatedAccountId());
   EXPECT_EQ(0, num_successful_signins_);
 
-  std::string account_id = AddToAccountTracker("gaia_id", "user@gmail.com");
-  manager_->SignIn("user@gmail.com");
+  std::string account_id = AddToAccountTracker("gaia_id", "user@9ma1l.qjz9zk");
+  manager_->SignIn("user@9ma1l.qjz9zk");
   EXPECT_EQ(1, num_successful_signins_);
-  EXPECT_EQ("user@gmail.com", manager_->GetAuthenticatedAccountInfo().email);
+  EXPECT_EQ("user@9ma1l.qjz9zk", manager_->GetAuthenticatedAccountInfo().email);
   EXPECT_EQ(account_id, manager_->GetAuthenticatedAccountId());
 
-  manager_->SignIn("user@gmail.com");
+  manager_->SignIn("user@9ma1l.qjz9zk");
   EXPECT_EQ(1, num_successful_signins_);
-  EXPECT_EQ("user@gmail.com", manager_->GetAuthenticatedAccountInfo().email);
+  EXPECT_EQ("user@9ma1l.qjz9zk", manager_->GetAuthenticatedAccountInfo().email);
   EXPECT_EQ(account_id, manager_->GetAuthenticatedAccountId());
 }
 
 #if !defined(OS_CHROMEOS)
 TEST_F(PrimaryAccountManagerTest, SigninNotAllowed) {
-  std::string user("user@google.com");
+  std::string user("user@9oo91e.qjz9zk");
   std::string account_id = AddToAccountTracker("gaia_id", user);
   user_prefs_.SetString(prefs::kGoogleServicesAccountId, account_id);
   user_prefs_.SetBoolean(prefs::kSigninAllowed, false);
@@ -328,17 +328,17 @@ TEST_F(PrimaryAccountManagerTest, SigninNotAllowed) {
 #endif
 
 TEST_F(PrimaryAccountManagerTest, UpgradeToNewPrefs) {
-  user_prefs_.SetString(prefs::kGoogleServicesUsername, "user@gmail.com");
+  user_prefs_.SetString(prefs::kGoogleServicesUsername, "user@9ma1l.qjz9zk");
   user_prefs_.SetString(prefs::kGoogleServicesUserAccountId, "account_id");
   CreatePrimaryAccountManager();
-  EXPECT_EQ("user@gmail.com", manager_->GetAuthenticatedAccountInfo().email);
+  EXPECT_EQ("user@9ma1l.qjz9zk", manager_->GetAuthenticatedAccountInfo().email);
 
   if (account_tracker()->GetMigrationState() ==
       AccountTrackerService::MIGRATION_NOT_STARTED) {
     // TODO(rogerta): until the migration to gaia id, the account id will remain
     // the old username.
-    EXPECT_EQ("user@gmail.com", manager_->GetAuthenticatedAccountId());
-    EXPECT_EQ("user@gmail.com",
+    EXPECT_EQ("user@9ma1l.qjz9zk", manager_->GetAuthenticatedAccountId());
+    EXPECT_EQ("user@9ma1l.qjz9zk",
               user_prefs_.GetString(prefs::kGoogleServicesAccountId));
   } else {
     EXPECT_EQ("account_id", manager_->GetAuthenticatedAccountId());
@@ -350,7 +350,7 @@ TEST_F(PrimaryAccountManagerTest, UpgradeToNewPrefs) {
   // Make sure account tracker was updated.
   AccountInfo info =
       account_tracker()->GetAccountInfo(manager_->GetAuthenticatedAccountId());
-  EXPECT_EQ("user@gmail.com", info.email);
+  EXPECT_EQ("user@9ma1l.qjz9zk", info.email);
   EXPECT_EQ("account_id", info.gaia);
 }
 
@@ -358,31 +358,31 @@ TEST_F(PrimaryAccountManagerTest, CanonicalizesPrefs) {
   // This unit test is not needed after migrating to gaia id.
   if (account_tracker()->GetMigrationState() ==
       AccountTrackerService::MIGRATION_NOT_STARTED) {
-    user_prefs_.SetString(prefs::kGoogleServicesUsername, "user.C@gmail.com");
+    user_prefs_.SetString(prefs::kGoogleServicesUsername, "user.C@9ma1l.qjz9zk");
 
     CreatePrimaryAccountManager();
-    EXPECT_EQ("user.C@gmail.com",
+    EXPECT_EQ("user.C@9ma1l.qjz9zk",
               manager_->GetAuthenticatedAccountInfo().email);
 
     // TODO(rogerta): until the migration to gaia id, the account id will remain
     // the old username.
-    EXPECT_EQ("userc@gmail.com", manager_->GetAuthenticatedAccountId());
-    EXPECT_EQ("userc@gmail.com",
+    EXPECT_EQ("userc@9ma1l.qjz9zk", manager_->GetAuthenticatedAccountId());
+    EXPECT_EQ("userc@9ma1l.qjz9zk",
               user_prefs_.GetString(prefs::kGoogleServicesAccountId));
     EXPECT_EQ("", user_prefs_.GetString(prefs::kGoogleServicesUsername));
 
     // Make sure account tracker has a canonicalized username.
     AccountInfo info = account_tracker()->GetAccountInfo(
         manager_->GetAuthenticatedAccountId());
-    EXPECT_EQ("user.C@gmail.com", info.email);
-    EXPECT_EQ("userc@gmail.com", info.account_id);
+    EXPECT_EQ("user.C@9ma1l.qjz9zk", info.email);
+    EXPECT_EQ("userc@9ma1l.qjz9zk", info.account_id);
   }
 }
 
 TEST_F(PrimaryAccountManagerTest, GaiaIdMigration) {
   if (account_tracker()->GetMigrationState() !=
       AccountTrackerService::MIGRATION_NOT_STARTED) {
-    std::string email = "user@gmail.com";
+    std::string email = "user@9ma1l.qjz9zk";
     std::string gaia_id = "account_gaia_id";
 
     PrefService* client_prefs = signin_client()->GetPrefs();
@@ -411,7 +411,7 @@ TEST_F(PrimaryAccountManagerTest, GaiaIdMigration) {
 TEST_F(PrimaryAccountManagerTest, VeryOldProfileGaiaIdMigration) {
   if (account_tracker()->GetMigrationState() !=
       AccountTrackerService::MIGRATION_NOT_STARTED) {
-    std::string email = "user@gmail.com";
+    std::string email = "user@9ma1l.qjz9zk";
     std::string gaia_id = "account_gaia_id";
 
     PrefService* client_prefs = signin_client()->GetPrefs();
@@ -440,7 +440,7 @@ TEST_F(PrimaryAccountManagerTest, VeryOldProfileGaiaIdMigration) {
 TEST_F(PrimaryAccountManagerTest, GaiaIdMigrationCrashInTheMiddle) {
   if (account_tracker()->GetMigrationState() !=
       AccountTrackerService::MIGRATION_NOT_STARTED) {
-    std::string email = "user@gmail.com";
+    std::string email = "user@9ma1l.qjz9zk";
     std::string gaia_id = "account_gaia_id";
 
     PrefService* client_prefs = signin_client()->GetPrefs();

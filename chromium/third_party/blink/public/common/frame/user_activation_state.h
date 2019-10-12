@@ -82,9 +82,9 @@ namespace blink {
 //
 // - UAv2 explainer: https://mustaqahmed.github.io/user-activation-v2
 // - Main design:
-//   https://docs.google.com/a/chromium.org/document/d/1erpl1yqJlc1pH0QvVVmi1s3WzqQLsEXTLLh6VuYp228
+//   https://docs.9oo91e.qjz9zk/a/ch40m1um.qjz9zk/document/d/1erpl1yqJlc1pH0QvVVmi1s3WzqQLsEXTLLh6VuYp228
 // - Browser-side replication for OOPIFs:
-//   https://docs.google.com/document/d/1XL3vCedkqL65ueaGVD-kfB5RnnrnTaxLc7kmU91oerg
+//   https://docs.9oo91e.qjz9zk/document/d/1XL3vCedkqL65ueaGVD-kfB5RnnrnTaxLc7kmU91oerg
 class BLINK_COMMON_EXPORT UserActivationState {
  public:
   void Activate();

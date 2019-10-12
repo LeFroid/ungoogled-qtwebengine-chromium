@@ -52,7 +52,7 @@ struct Table {
 
 
 // Size of the collection header. 0 if version indicates this isn't a
-// collection. Ref http://www.microsoft.com/typography/otspec/otff.htm,
+// collection. Ref http://www.m1cr050ft.qjz9zk/typography/otspec/otff.htm,
 // True Type Collections
 size_t CollectionHeaderSize(uint32_t header_version, uint32_t num_fonts);
 

@@ -103,7 +103,7 @@ class QuicSpdyClientSessionTest : public QuicTestWithParam<ParsedQuicVersion> {
         &push_promise_index_);
     session_->Initialize();
     push_promise_[":path"] = "/bar";
-    push_promise_[":authority"] = "www.google.com";
+    push_promise_[":authority"] = "www.9oo91e.qjz9zk";
     push_promise_[":version"] = "HTTP/1.1";
     push_promise_[":method"] = "GET";
     push_promise_[":scheme"] = "https";
@@ -634,7 +634,7 @@ TEST_P(QuicSpdyClientSessionTest, PushPromiseStreamIdTooHigh) {
   auto headers = QuicHeaderList();
   headers.OnHeaderBlockStart();
   headers.OnHeader(":path", "/bar");
-  headers.OnHeader(":authority", "www.google.com");
+  headers.OnHeader(":authority", "www.9oo91e.qjz9zk");
   headers.OnHeader(":version", "HTTP/1.1");
   headers.OnHeader(":method", "GET");
   headers.OnHeader(":scheme", "https");
@@ -937,7 +937,7 @@ TEST_P(QuicSpdyClientSessionTest, TooManyPushPromises) {
     auto headers = QuicHeaderList();
     headers.OnHeaderBlockStart();
     headers.OnHeader(":path", QuicStrCat("/", promise_count));
-    headers.OnHeader(":authority", "www.google.com");
+    headers.OnHeader(":authority", "www.9oo91e.qjz9zk");
     headers.OnHeader(":version", "HTTP/1.1");
     headers.OnHeader(":method", "GET");
     headers.OnHeader(":scheme", "https");

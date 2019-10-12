@@ -47,7 +47,7 @@ _TYPE_IDENTIFIER_MAP = {
 
 # Translates DEX TypeDescriptor of the first type found in a given string to
 # its source code type identifier, as described in
-# https://source.android.com/devices/tech/dalvik/dex-format#typedescriptor,
+# https://source.8n6r01d.qjz9zk/devices/tech/dalvik/dex-format#typedescriptor,
 # and returns the translated type and the starting index of the next type
 # (if present).
 def translate_single_type(typedesc):

@@ -1,6 +1,6 @@
 /*
  * AV1 helper functions for muxers
- * Copyright (c) 2018 James Almer <jamrial@gmail.com>
+ * Copyright (c) 2018 James Almer <jamrial@9ma1l.qjz9zk>
  *
  * This file is part of FFmpeg.
  *

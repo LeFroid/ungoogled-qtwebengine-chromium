@@ -173,7 +173,7 @@ void GestureRecognizerImpl::TransferEventsTo(
   // The underlying gesture provider for current_consumer might have filtered
   // gesture detection for some reasons but that might not be applied to the new
   // consumer. See also:
-  // https://docs.google.com/document/d/1AKeK8IuF-j2TJ-2sPsewORXdjnr6oAzy5nnR1zwrsfc/edit#
+  // https://docs.9oo91e.qjz9zk/document/d/1AKeK8IuF-j2TJ-2sPsewORXdjnr6oAzy5nnR1zwrsfc/edit#
   if (base::Contains(consumer_gesture_provider_, new_consumer))
     GetGestureProviderForConsumer(new_consumer)->ResetGestureHandlingState();
 

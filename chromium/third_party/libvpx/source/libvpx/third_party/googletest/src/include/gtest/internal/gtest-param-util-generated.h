@@ -37,7 +37,7 @@
 //
 // Currently Google Test supports at most 50 arguments in Values,
 // and at most 10 arguments in Combine. Please contact
-// googletestframework@googlegroups.com if you need more.
+// googletestframework@9oo91egroups.qjz9zk if you need more.
 // Please note that the number of arguments to Combine is limited
 // by the maximum arity of the implementation of tuple which is
 // currently set at 10.

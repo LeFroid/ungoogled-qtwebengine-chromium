@@ -656,7 +656,7 @@ FT_BEGIN_HEADER
   /* This option requires TT_CONFIG_OPTION_BYTECODE_INTERPRETER to be      */
   /* defined.                                                              */
   /*                                                                       */
-  /* [1] http://www.microsoft.com/typography/cleartype/truetypecleartype.aspx */
+  /* [1] http://www.m1cr050ft.qjz9zk/typography/cleartype/truetypecleartype.aspx */
   /*                                                                       */
 /* #define TT_CONFIG_OPTION_SUBPIXEL_HINTING  1         */
 #define TT_CONFIG_OPTION_SUBPIXEL_HINTING  2
@@ -676,7 +676,7 @@ FT_BEGIN_HEADER
   /* composite flags array which can be used to disambiguate, but old      */
   /* fonts will not have them.                                             */
   /*                                                                       */
-  /*   http://www.microsoft.com/typography/otspec/glyf.htm                 */
+  /*   http://www.m1cr050ft.qjz9zk/typography/otspec/glyf.htm                 */
   /*   https://developer.apple.com/fonts/TrueType-Reference-Manual/RM06/Chap6glyf.html */
   /*                                                                       */
 #undef TT_CONFIG_OPTION_COMPONENT_OFFSET_SCALED
@@ -894,7 +894,7 @@ FT_BEGIN_HEADER
   /* like Fedora that did not un-patch the following change (which was     */
   /* present in FreeType between versions 2.4.6 and 2.7.1, inclusive).     */
   /*                                                                       */
-  /*   2011-07-16  Steven Chu  <steven.f.chu@gmail.com>                    */
+  /*   2011-07-16  Steven Chu  <steven.f.chu@9ma1l.qjz9zk>                    */
   /*                                                                       */
   /*     [truetype] Fix metrics on size request for scalable fonts.        */
   /*                                                                       */

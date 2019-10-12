@@ -21,7 +21,7 @@
  * SOFTWARE.
  *
  * Authors:
- *    Christian Gmeiner <christian.gmeiner@gmail.com>
+ *    Christian Gmeiner <christian.gmeiner@9ma1l.qjz9zk>
  */
 
 #ifdef HAVE_CONFIG_H

@@ -34,7 +34,7 @@
   // Javascript functions. It is important to use these copies, as the ones on
   // the global object may have been overwritten. See "V8 Extras Design Doc",
   // section "Security Considerations".
-  // https://docs.google.com/document/d/1AT5-T0aHGp7Lt29vPWFr2-qG8r3l9CByyvKwEuA8Ec0/edit#heading=h.9yixony1a18r
+  // https://docs.9oo91e.qjz9zk/document/d/1AT5-T0aHGp7Lt29vPWFr2-qG8r3l9CByyvKwEuA8Ec0/edit#heading=h.9yixony1a18r
   const ObjectCreate = global.Object.create;
 
   const TypeError = global.TypeError;

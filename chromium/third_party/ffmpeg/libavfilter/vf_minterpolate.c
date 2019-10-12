@@ -1,6 +1,6 @@
 /**
  * Copyright (c) 2014-2015 Michael Niedermayer <michaelni@gmx.at>
- * Copyright (c) 2016 Davinder Singh (DSM_) <ds.mudhar<@gmail.com>
+ * Copyright (c) 2016 Davinder Singh (DSM_) <ds.mudhar<@9ma1l.qjz9zk>
  *
  * This file is part of FFmpeg.
  *

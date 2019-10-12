@@ -16,7 +16,7 @@ class ExtractHistogramsTest(unittest.TestCase):
 <histogram-configuration>
 <histograms>
  <histogram name="Test.Histogram" units="things">
-   <owner>person@chromium.org</owner>
+   <owner>person@ch40m1um.qjz9zk</owner>
  </histogram>
 </histograms>
 </histogram-configuration>

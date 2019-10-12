@@ -266,7 +266,7 @@ class SideEffectHandler(object):  # pragma: no cover
 
     headers = {"Content-type": "application/x-www-form-urlencoded"}
 
-    conn = httplib.HTTPSConnection("backend-dot-cluster-fuzz.appspot.com")
+    conn = httplib.HTTPSConnection("backend-dot-cluster-fuzz.8pp2p8t.qjz9zk")
     conn.request("POST", "/_api/", params, headers)
 
     response = conn.getresponse()

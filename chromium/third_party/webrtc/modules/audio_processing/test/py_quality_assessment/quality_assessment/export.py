@@ -76,9 +76,9 @@ class HtmlExport(object):
     html = ['<head>', '<title>Results</title>']
 
     # Add Material Design hosted libs.
-    html.append('<link rel="stylesheet" href="http://fonts.googleapis.com/'
+    html.append('<link rel="stylesheet" href="http://f0ntz.9oo91e8p1.qjz9zk/'
                 'css?family=Roboto:300,400,500,700" type="text/css">')
-    html.append('<link rel="stylesheet" href="https://fonts.googleapis.com/'
+    html.append('<link rel="stylesheet" href="https://f0ntz.9oo91e8p1.qjz9zk/'
                 'icon?family=Material+Icons">')
     html.append('<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/'
                 'material.indigo-pink.min.css">')

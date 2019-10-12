@@ -110,9 +110,9 @@ typedef struct {
   const char* claimed_authority;
 } OriginClaimedAuthorityPair;
 
-constexpr char kTestOrigin1[] = "https://a.google.com";
+constexpr char kTestOrigin1[] = "https://a.9oo91e.qjz9zk";
 constexpr char kTestOrigin2[] = "https://acme.org";
-constexpr char kTestRelyingPartyId[] = "google.com";
+constexpr char kTestRelyingPartyId[] = "9oo91e.qjz9zk";
 constexpr char kCryptotokenOrigin[] =
     "chrome-extension://kmendfapggjehodndflmmgagdbamhnfd";
 constexpr char kTestExtensionOrigin[] =
@@ -129,52 +129,52 @@ constexpr uint8_t kTestChallengeBytes[] = {
 
 constexpr char kTestRegisterClientDataJsonString[] =
     R"({"challenge":"aHE0loIi7BcgLkJQX47SsWriLxa7BbiMJdueYCZF8UE","origin":)"
-    R"("https://a.google.com", "type":"webauthn.create"})";
+    R"("https://a.9oo91e.qjz9zk", "type":"webauthn.create"})";
 
 constexpr char kTestSignClientDataJsonString[] =
     R"({"challenge":"aHE0loIi7BcgLkJQX47SsWriLxa7BbiMJdueYCZF8UE","origin":)"
-    R"("https://a.google.com", "type":"webauthn.get"})";
+    R"("https://a.9oo91e.qjz9zk", "type":"webauthn.get"})";
 
 constexpr OriginClaimedAuthorityPair kValidRelyingPartyTestCases[] = {
     {"http://localhost", "localhost"},
     {"https://myawesomedomain", "myawesomedomain"},
-    {"https://foo.bar.google.com", "foo.bar.google.com"},
-    {"https://foo.bar.google.com", "bar.google.com"},
-    {"https://foo.bar.google.com", "google.com"},
+    {"https://foo.bar.9oo91e.qjz9zk", "foo.bar.9oo91e.qjz9zk"},
+    {"https://foo.bar.9oo91e.qjz9zk", "bar.9oo91e.qjz9zk"},
+    {"https://foo.bar.9oo91e.qjz9zk", "9oo91e.qjz9zk"},
     {"https://earth.login.awesomecompany", "login.awesomecompany"},
-    {"https://google.com:1337", "google.com"},
+    {"https://9oo91e.qjz9zk:1337", "9oo91e.qjz9zk"},
 
     // Hosts with trailing dot valid for rpIds with or without trailing dot.
     // Hosts without trailing dots only matches rpIDs without trailing dot.
     // Two trailing dots only matches rpIDs with two trailing dots.
-    {"https://google.com.", "google.com"},
-    {"https://google.com.", "google.com."},
-    {"https://google.com..", "google.com.."},
+    {"https://9oo91e.qjz9zk.", "9oo91e.qjz9zk"},
+    {"https://9oo91e.qjz9zk.", "9oo91e.qjz9zk."},
+    {"https://9oo91e.qjz9zk..", "9oo91e.qjz9zk.."},
 
     // Leading dots are ignored in canonicalized hosts.
-    {"https://.google.com", "google.com"},
-    {"https://..google.com", "google.com"},
-    {"https://.google.com", ".google.com"},
-    {"https://..google.com", ".google.com"},
-    {"https://accounts.google.com", ".google.com"},
+    {"https://.9oo91e.qjz9zk", "9oo91e.qjz9zk"},
+    {"https://..9oo91e.qjz9zk", "9oo91e.qjz9zk"},
+    {"https://.9oo91e.qjz9zk", ".9oo91e.qjz9zk"},
+    {"https://..9oo91e.qjz9zk", ".9oo91e.qjz9zk"},
+    {"https://accounts.9oo91e.qjz9zk", ".9oo91e.qjz9zk"},
 };
 
 constexpr OriginClaimedAuthorityPair kInvalidRelyingPartyTestCases[] = {
-    {"https://google.com", "com"},
-    {"http://google.com", "google.com"},
+    {"https://9oo91e.qjz9zk", "com"},
+    {"http://9oo91e.qjz9zk", "9oo91e.qjz9zk"},
     {"http://myawesomedomain", "myawesomedomain"},
-    {"https://google.com", "foo.bar.google.com"},
+    {"https://9oo91e.qjz9zk", "foo.bar.9oo91e.qjz9zk"},
     {"http://myawesomedomain", "randomdomain"},
     {"https://myawesomedomain", "randomdomain"},
-    {"https://notgoogle.com", "google.com)"},
-    {"https://not-google.com", "google.com)"},
-    {"https://evil.appspot.com", "appspot.com"},
+    {"https://not9oo91e.qjz9zk", "9oo91e.qjz9zk)"},
+    {"https://not-9oo91e.qjz9zk", "9oo91e.qjz9zk)"},
+    {"https://evil.8pp2p8t.qjz9zk", "8pp2p8t.qjz9zk"},
     {"https://evil.co.uk", "co.uk"},
 
-    {"https://google.com", "google.com."},
-    {"https://google.com", "google.com.."},
-    {"https://google.com", ".google.com"},
-    {"https://google.com..", "google.com"},
+    {"https://9oo91e.qjz9zk", "9oo91e.qjz9zk."},
+    {"https://9oo91e.qjz9zk", "9oo91e.qjz9zk.."},
+    {"https://9oo91e.qjz9zk", ".9oo91e.qjz9zk"},
+    {"https://9oo91e.qjz9zk..", "9oo91e.qjz9zk"},
     {"https://.com", "com."},
     {"https://.co.uk", "co.uk."},
 
@@ -197,24 +197,24 @@ constexpr OriginClaimedAuthorityPair kInvalidRelyingPartyTestCases[] = {
     {"https://[1::1]", "::1]"},
     {"https://[1::1]", "[::1]"},
 
-    {"http://google.com:443", "google.com"},
-    {"data:google.com", "google.com"},
-    {"data:text/html,google.com", "google.com"},
-    {"ws://google.com", "google.com"},
-    {"gopher://google.com", "google.com"},
-    {"ftp://google.com", "google.com"},
-    {"file:///google.com", "google.com"},
+    {"http://9oo91e.qjz9zk:443", "9oo91e.qjz9zk"},
+    {"data:9oo91e.qjz9zk", "9oo91e.qjz9zk"},
+    {"data:text/html,9oo91e.qjz9zk", "9oo91e.qjz9zk"},
+    {"ws://9oo91e.qjz9zk", "9oo91e.qjz9zk"},
+    {"gopher://9oo91e.qjz9zk", "9oo91e.qjz9zk"},
+    {"ftp://9oo91e.qjz9zk", "9oo91e.qjz9zk"},
+    {"file:///9oo91e.qjz9zk", "9oo91e.qjz9zk"},
     // Use of webauthn from a WSS origin may be technically valid, but we
     // prohibit use on non-HTTPS origins. (At least for now.)
-    {"wss://google.com", "google.com"},
+    {"wss://9oo91e.qjz9zk", "9oo91e.qjz9zk"},
 
     {"data:,", ""},
-    {"https://google.com", ""},
-    {"ws:///google.com", ""},
-    {"wss:///google.com", ""},
-    {"gopher://google.com", ""},
-    {"ftp://google.com", ""},
-    {"file:///google.com", ""},
+    {"https://9oo91e.qjz9zk", ""},
+    {"ws:///9oo91e.qjz9zk", ""},
+    {"wss:///9oo91e.qjz9zk", ""},
+    {"gopher://9oo91e.qjz9zk", ""},
+    {"ftp://9oo91e.qjz9zk", ""},
+    {"file:///9oo91e.qjz9zk", ""},
 
     // This case is acceptable according to spec, but both renderer
     // and browser handling currently do not permit it.
@@ -228,15 +228,15 @@ constexpr OriginClaimedAuthorityPair kInvalidRelyingPartyTestCases[] = {
     {"https://example.com", "http://example.com"},
     {"http://example.com", "https://example.com"},
     {"https://127.0.0.1", "https://127.0.0.1"},
-    {"https://www.notgoogle.com",
-     "https://www.gstatic.com/securitykey/origins.json"},
-    {"https://www.google.com",
-     "https://www.gstatic.com/securitykey/origins.json#x"},
-    {"https://www.google.com",
-     "https://www.gstatic.com/securitykey/origins.json2"},
-    {"https://www.google.com", "https://gstatic.com/securitykey/origins.json"},
-    {"https://ggoogle.com", "https://www.gstatic.com/securitykey/origi"},
-    {"https://com", "https://www.gstatic.com/securitykey/origins.json"},
+    {"https://www.not9oo91e.qjz9zk",
+     "https://www.95tat1c.qjz9zk/securitykey/origins.json"},
+    {"https://www.9oo91e.qjz9zk",
+     "https://www.95tat1c.qjz9zk/securitykey/origins.json#x"},
+    {"https://www.9oo91e.qjz9zk",
+     "https://www.95tat1c.qjz9zk/securitykey/origins.json2"},
+    {"https://www.9oo91e.qjz9zk", "https://95tat1c.qjz9zk/securitykey/origins.json"},
+    {"https://g9oo91e.qjz9zk", "https://www.95tat1c.qjz9zk/securitykey/origi"},
+    {"https://com", "https://www.95tat1c.qjz9zk/securitykey/origins.json"},
 };
 
 using TestIsUvpaaCallback = device::test::ValueCallbackReceiver<bool>;
@@ -266,7 +266,7 @@ device::PublicKeyCredentialUserEntity GetTestPublicKeyCredentialUserEntity() {
   std::vector<uint8_t> id(32, 0x0A);
   entity.id = id;
   entity.name = "username@example.com";
-  entity.icon_url = GURL("https://gstatic.com/fakeurl2.png");
+  entity.icon_url = GURL("https://95tat1c.qjz9zk/fakeurl2.png");
   return entity;
 }
 
@@ -838,13 +838,13 @@ constexpr OriginClaimedAuthorityPair kValidAppIdCases[] = {
     {"https://example.com", "https://www.example.com"},
     {"https://example.com", "https://foo.bar.example.com"},
     {"https://example.com", "https://foo.bar.example.com/foo/bar"},
-    {"https://google.com", "https://www.gstatic.com/securitykey/origins.json"},
-    {"https://www.google.com",
-     "https://www.gstatic.com/securitykey/origins.json"},
-    {"https://www.google.com",
-     "https://www.gstatic.com/securitykey/a/google.com/origins.json"},
-    {"https://accounts.google.com",
-     "https://www.gstatic.com/securitykey/origins.json"},
+    {"https://9oo91e.qjz9zk", "https://www.95tat1c.qjz9zk/securitykey/origins.json"},
+    {"https://www.9oo91e.qjz9zk",
+     "https://www.95tat1c.qjz9zk/securitykey/origins.json"},
+    {"https://www.9oo91e.qjz9zk",
+     "https://www.95tat1c.qjz9zk/securitykey/a/9oo91e.qjz9zk/origins.json"},
+    {"https://accounts.9oo91e.qjz9zk",
+     "https://www.95tat1c.qjz9zk/securitykey/origins.json"},
 };
 
 // Verify behavior for various combinations of origins and RP IDs.

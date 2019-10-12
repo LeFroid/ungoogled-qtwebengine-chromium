@@ -40,22 +40,22 @@ namespace history {
 namespace {
 
 const char kHistoryOAuthScope[] =
-    "https://www.googleapis.com/auth/chromesync";
+    "https://www.9oo91eapis.qjz9zk/auth/chromesync";
 
 const char kHistoryQueryHistoryUrl[] =
-    "https://history.google.com/history/api/lookup?client=chrome";
+    "https://history.9oo91e.qjz9zk/history/api/lookup?client=chrome";
 
 const char kHistoryDeleteHistoryUrl[] =
-    "https://history.google.com/history/api/delete?client=chrome";
+    "https://history.9oo91e.qjz9zk/history/api/delete?client=chrome";
 
 const char kHistoryAudioHistoryUrl[] =
-    "https://history.google.com/history/api/lookup?client=audio";
+    "https://history.9oo91e.qjz9zk/history/api/lookup?client=audio";
 
 const char kHistoryAudioHistoryChangeUrl[] =
-    "https://history.google.com/history/api/change";
+    "https://history.9oo91e.qjz9zk/history/api/change";
 
 const char kQueryWebAndAppActivityUrl[] =
-    "https://history.google.com/history/api/lookup?client=web_app";
+    "https://history.9oo91e.qjz9zk/history/api/lookup?client=web_app";
 
 const char kQueryOtherFormsOfBrowsingHistoryUrlSuffix[] = "/historystatus";
 
@@ -293,7 +293,7 @@ GURL GetQueryUrl(const base::string16& text_query,
 
   // Take |begin_time|, |end_time|, and |max_count| from the original query
   // options, and convert them to the equivalent URL parameters. Note that
-  // QueryOptions uses exclusive |end_time| while the history.google.com API
+  // QueryOptions uses exclusive |end_time| while the history.9oo91e.qjz9zk API
   // uses it inclusively, so we subtract 1us during conversion.
 
   base::Time end_time =

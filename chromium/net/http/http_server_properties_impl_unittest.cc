@@ -110,18 +110,18 @@ typedef HttpServerPropertiesImplTest SpdyServerPropertiesTest;
 
 TEST_F(SpdyServerPropertiesTest, SetWithSchemeHostPort) {
   // Check spdy servers are correctly set with SchemeHostPort key.
-  url::SchemeHostPort https_www_server("https", "www.google.com", 443);
-  url::SchemeHostPort http_photo_server("http", "photos.google.com", 80);
+  url::SchemeHostPort https_www_server("https", "www.9oo91e.qjz9zk", 443);
+  url::SchemeHostPort http_photo_server("http", "photos.9oo91e.qjz9zk", 80);
   // Servers with port equal to default port in scheme will drop port components
   // when calling Serialize().
   std::string spdy_server_g = https_www_server.Serialize();
   std::string spdy_server_p = http_photo_server.Serialize();
 
-  url::SchemeHostPort http_google_server("http", "www.google.com", 443);
-  url::SchemeHostPort https_photos_server("https", "photos.google.com", 443);
-  url::SchemeHostPort valid_google_server((GURL("https://www.google.com")));
+  url::SchemeHostPort http_google_server("http", "www.9oo91e.qjz9zk", 443);
+  url::SchemeHostPort https_photos_server("https", "photos.9oo91e.qjz9zk", 443);
+  url::SchemeHostPort valid_google_server((GURL("https://www.9oo91e.qjz9zk")));
 
-  // Initializing https://www.google.com:443 and https://photos.google.com:443
+  // Initializing https://www.9oo91e.qjz9zk:443 and https://photos.9oo91e.qjz9zk:443
   // as spdy servers.
   std::unique_ptr<SpdyServersMap> spdy_servers1 =
       std::make_unique<SpdyServersMap>();
@@ -136,16 +136,16 @@ TEST_F(SpdyServerPropertiesTest, SetWithSchemeHostPort) {
 }
 
 TEST_F(SpdyServerPropertiesTest, Set) {
-  url::SchemeHostPort spdy_server_google("https", "www.google.com", 443);
+  url::SchemeHostPort spdy_server_google("https", "www.9oo91e.qjz9zk", 443);
   std::string spdy_server_g = spdy_server_google.Serialize();
 
-  url::SchemeHostPort spdy_server_photos("https", "photos.google.com", 443);
+  url::SchemeHostPort spdy_server_photos("https", "photos.9oo91e.qjz9zk", 443);
   std::string spdy_server_p = spdy_server_photos.Serialize();
 
-  url::SchemeHostPort spdy_server_docs("https", "docs.google.com", 443);
+  url::SchemeHostPort spdy_server_docs("https", "docs.9oo91e.qjz9zk", 443);
   std::string spdy_server_d = spdy_server_docs.Serialize();
 
-  url::SchemeHostPort spdy_server_mail("https", "mail.google.com", 443);
+  url::SchemeHostPort spdy_server_mail("https", "mail.9oo91e.qjz9zk", 443);
   std::string spdy_server_m = spdy_server_mail.Serialize();
 
   // Check by initializing empty spdy servers.
@@ -154,7 +154,7 @@ TEST_F(SpdyServerPropertiesTest, Set) {
   impl_.SetSpdyServers(std::move(spdy_servers));
   EXPECT_FALSE(impl_.SupportsRequestPriority(spdy_server_google));
 
-  // Check by initializing www.google.com:443 and photos.google.com:443 as spdy
+  // Check by initializing www.9oo91e.qjz9zk:443 and photos.9oo91e.qjz9zk:443 as spdy
   // servers.
   std::unique_ptr<SpdyServersMap> spdy_servers1 =
       std::make_unique<SpdyServersMap>();
@@ -174,7 +174,7 @@ TEST_F(SpdyServerPropertiesTest, Set) {
   EXPECT_EQ(spdy_server_g, it->first);
   EXPECT_TRUE(it->second);
 
-  // Check by initializing mail.google.com:443 and docs.google.com:443 as spdy
+  // Check by initializing mail.9oo91e.qjz9zk:443 and docs.9oo91e.qjz9zk:443 as spdy
   // servers.
   std::unique_ptr<SpdyServersMap> spdy_servers2 =
       std::make_unique<SpdyServersMap>();
@@ -243,23 +243,23 @@ TEST_F(SpdyServerPropertiesTest, SupportsRequestPriorityTest) {
   url::SchemeHostPort spdy_server_empty("https", std::string(), 443);
   EXPECT_FALSE(impl_.SupportsRequestPriority(spdy_server_empty));
 
-  // Add www.google.com:443 as supporting SPDY.
-  url::SchemeHostPort spdy_server_google("https", "www.google.com", 443);
+  // Add www.9oo91e.qjz9zk:443 as supporting SPDY.
+  url::SchemeHostPort spdy_server_google("https", "www.9oo91e.qjz9zk", 443);
   impl_.SetSupportsSpdy(spdy_server_google, true);
   EXPECT_TRUE(impl_.SupportsRequestPriority(spdy_server_google));
 
-  // Add mail.google.com:443 as not supporting SPDY.
-  url::SchemeHostPort spdy_server_mail("https", "mail.google.com", 443);
+  // Add mail.9oo91e.qjz9zk:443 as not supporting SPDY.
+  url::SchemeHostPort spdy_server_mail("https", "mail.9oo91e.qjz9zk", 443);
   EXPECT_FALSE(impl_.SupportsRequestPriority(spdy_server_mail));
 
-  // Add docs.google.com:443 as supporting SPDY.
-  url::SchemeHostPort spdy_server_docs("https", "docs.google.com", 443);
+  // Add docs.9oo91e.qjz9zk:443 as supporting SPDY.
+  url::SchemeHostPort spdy_server_docs("https", "docs.9oo91e.qjz9zk", 443);
   impl_.SetSupportsSpdy(spdy_server_docs, true);
   EXPECT_TRUE(impl_.SupportsRequestPriority(spdy_server_docs));
 
-  // Add www.youtube.com:443 as supporting QUIC.
-  url::SchemeHostPort youtube_server("https", "www.youtube.com", 443);
-  const AlternativeService alternative_service1(kProtoQUIC, "www.youtube.com",
+  // Add www.y0u1ub3.qjz9zk:443 as supporting QUIC.
+  url::SchemeHostPort youtube_server("https", "www.y0u1ub3.qjz9zk", 443);
+  const AlternativeService alternative_service1(kProtoQUIC, "www.y0u1ub3.qjz9zk",
                                                 443);
   SetAlternativeService(youtube_server, alternative_service1);
   EXPECT_TRUE(impl_.SupportsRequestPriority(youtube_server));
@@ -280,10 +280,10 @@ TEST_F(SpdyServerPropertiesTest, SupportsRequestPriorityTest) {
 }
 
 TEST_F(SpdyServerPropertiesTest, Clear) {
-  // Add www.google.com:443 and mail.google.com:443 as supporting SPDY.
-  url::SchemeHostPort spdy_server_google("https", "www.google.com", 443);
+  // Add www.9oo91e.qjz9zk:443 and mail.9oo91e.qjz9zk:443 as supporting SPDY.
+  url::SchemeHostPort spdy_server_google("https", "www.9oo91e.qjz9zk", 443);
   impl_.SetSupportsSpdy(spdy_server_google, true);
-  url::SchemeHostPort spdy_server_mail("https", "mail.google.com", 443);
+  url::SchemeHostPort spdy_server_mail("https", "mail.9oo91e.qjz9zk", 443);
   impl_.SetSupportsSpdy(spdy_server_mail, true);
 
   EXPECT_TRUE(impl_.SupportsRequestPriority(spdy_server_google));
@@ -307,19 +307,19 @@ TEST_F(SpdyServerPropertiesTest, Clear) {
 }
 
 TEST_F(SpdyServerPropertiesTest, MRUOfSpdyServersMap) {
-  url::SchemeHostPort spdy_server_google("https", "www.google.com", 443);
+  url::SchemeHostPort spdy_server_google("https", "www.9oo91e.qjz9zk", 443);
   std::string spdy_server_g = spdy_server_google.Serialize();
-  url::SchemeHostPort spdy_server_mail("https", "mail.google.com", 443);
+  url::SchemeHostPort spdy_server_mail("https", "mail.9oo91e.qjz9zk", 443);
   std::string spdy_server_m = spdy_server_mail.Serialize();
 
-  // Add www.google.com:443 as supporting SPDY.
+  // Add www.9oo91e.qjz9zk:443 as supporting SPDY.
   impl_.SetSupportsSpdy(spdy_server_google, true);
   ASSERT_EQ(1u, impl_.spdy_servers_map().size());
   auto it = impl_.spdy_servers_map().begin();
   ASSERT_EQ(spdy_server_g, it->first);
 
-  // Add mail.google.com:443 as supporting SPDY. Verify mail.google.com:443 and
-  // www.google.com:443 are in the list.
+  // Add mail.9oo91e.qjz9zk:443 as supporting SPDY. Verify mail.9oo91e.qjz9zk:443 and
+  // www.9oo91e.qjz9zk:443 are in the list.
   impl_.SetSupportsSpdy(spdy_server_mail, true);
   ASSERT_EQ(2u, impl_.spdy_servers_map().size());
   it = impl_.spdy_servers_map().begin();
@@ -327,7 +327,7 @@ TEST_F(SpdyServerPropertiesTest, MRUOfSpdyServersMap) {
   ++it;
   ASSERT_EQ(spdy_server_g, it->first);
 
-  // Get www.google.com:443. It should become the most-recently-used server.
+  // Get www.9oo91e.qjz9zk:443. It should become the most-recently-used server.
   EXPECT_TRUE(impl_.SupportsRequestPriority(spdy_server_google));
   ASSERT_EQ(2u, impl_.spdy_servers_map().size());
   it = impl_.spdy_servers_map().begin();
@@ -529,8 +529,8 @@ TEST_F(AlternateProtocolServerPropertiesTest, EmptyVector) {
 
 // Regression test for https://crbug.com/516486 for the canonical host case.
 TEST_F(AlternateProtocolServerPropertiesTest, EmptyVectorForCanonical) {
-  url::SchemeHostPort server("https", "foo.c.youtube.com", 443);
-  url::SchemeHostPort canonical_server("https", "bar.c.youtube.com", 443);
+  url::SchemeHostPort server("https", "foo.c.y0u1ub3.qjz9zk", 443);
+  url::SchemeHostPort canonical_server("https", "bar.c.y0u1ub3.qjz9zk", 443);
   const AlternativeService alternative_service(kProtoHTTP2, "", 443);
   base::Time expiration = test_clock_.Now() - base::TimeDelta::FromDays(1);
   const AlternativeServiceInfo alternative_service_info =
@@ -564,8 +564,8 @@ TEST_F(AlternateProtocolServerPropertiesTest, EmptyVectorForCanonical) {
 }
 
 TEST_F(AlternateProtocolServerPropertiesTest, ClearServerWithCanonical) {
-  url::SchemeHostPort server("https", "foo.c.youtube.com", 443);
-  url::SchemeHostPort canonical_server("https", "bar.c.youtube.com", 443);
+  url::SchemeHostPort server("https", "foo.c.y0u1ub3.qjz9zk", 443);
+  url::SchemeHostPort canonical_server("https", "bar.c.y0u1ub3.qjz9zk", 443);
   const AlternativeService alternative_service(kProtoQUIC, "", 443);
   base::Time expiration = test_clock_.Now() + base::TimeDelta::FromDays(1);
   const AlternativeServiceInfo alternative_service_info =
@@ -774,11 +774,11 @@ TEST_F(AlternateProtocolServerPropertiesTest, MaxAgeCanonical) {
       AlternativeServiceInfo::CreateHttp2AlternativeServiceInfo(
           alternative_service2, now + one_day));
 
-  url::SchemeHostPort canonical_server("https", "bar.c.youtube.com", 443);
+  url::SchemeHostPort canonical_server("https", "bar.c.y0u1ub3.qjz9zk", 443);
   impl_.SetAlternativeServices(canonical_server,
                                alternative_service_info_vector);
 
-  url::SchemeHostPort test_server("https", "foo.c.youtube.com", 443);
+  url::SchemeHostPort test_server("https", "foo.c.y0u1ub3.qjz9zk", 443);
   AlternativeServiceInfoVector alternative_service_info_vector2 =
       impl_.GetAlternativeServiceInfos(test_server);
   ASSERT_EQ(1u, alternative_service_info_vector2.size());
@@ -854,10 +854,10 @@ TEST_F(AlternateProtocolServerPropertiesTest, ClearAlternativeServices) {
 // particular, an alternative service mapped to an origin shadows alternative
 // services of canonical hosts.
 TEST_F(AlternateProtocolServerPropertiesTest, BrokenShadowsCanonical) {
-  url::SchemeHostPort test_server("https", "foo.c.youtube.com", 443);
-  url::SchemeHostPort canonical_server("https", "bar.c.youtube.com", 443);
+  url::SchemeHostPort test_server("https", "foo.c.y0u1ub3.qjz9zk", 443);
+  url::SchemeHostPort canonical_server("https", "bar.c.y0u1ub3.qjz9zk", 443);
   AlternativeService canonical_alternative_service(kProtoQUIC,
-                                                   "bar.c.youtube.com", 1234);
+                                                   "bar.c.y0u1ub3.qjz9zk", 1234);
   SetAlternativeService(canonical_server, canonical_alternative_service);
   AlternativeServiceInfoVector alternative_service_info_vector =
       impl_.GetAlternativeServiceInfos(test_server);
@@ -974,15 +974,15 @@ TEST_F(AlternateProtocolServerPropertiesTest, OnDefaultNetworkChanged) {
 }
 
 TEST_F(AlternateProtocolServerPropertiesTest, Canonical) {
-  url::SchemeHostPort test_server("https", "foo.c.youtube.com", 443);
+  url::SchemeHostPort test_server("https", "foo.c.y0u1ub3.qjz9zk", 443);
   EXPECT_FALSE(HasAlternativeService(test_server));
 
-  url::SchemeHostPort canonical_server("https", "bar.c.youtube.com", 443);
+  url::SchemeHostPort canonical_server("https", "bar.c.y0u1ub3.qjz9zk", 443);
   EXPECT_FALSE(HasAlternativeService(canonical_server));
 
   AlternativeServiceInfoVector alternative_service_info_vector;
   const AlternativeService canonical_alternative_service1(
-      kProtoQUIC, "bar.c.youtube.com", 1234);
+      kProtoQUIC, "bar.c.y0u1ub3.qjz9zk", 1234);
   base::Time expiration = test_clock_.Now() + base::TimeDelta::FromDays(1);
   alternative_service_info_vector.push_back(
       AlternativeServiceInfo::CreateQuicAlternativeServiceInfo(
@@ -1014,16 +1014,16 @@ TEST_F(AlternateProtocolServerPropertiesTest, Canonical) {
             alternative_service_info_vector2[1].alternative_service().port);
 
   // Verify the canonical suffix.
-  EXPECT_EQ(".c.youtube.com", *impl_.GetCanonicalSuffix(test_server.host()));
-  EXPECT_EQ(".c.youtube.com",
+  EXPECT_EQ(".c.y0u1ub3.qjz9zk", *impl_.GetCanonicalSuffix(test_server.host()));
+  EXPECT_EQ(".c.y0u1ub3.qjz9zk",
             *impl_.GetCanonicalSuffix(canonical_server.host()));
 }
 
 TEST_F(AlternateProtocolServerPropertiesTest, ClearCanonical) {
-  url::SchemeHostPort test_server("https", "foo.c.youtube.com", 443);
-  url::SchemeHostPort canonical_server("https", "bar.c.youtube.com", 443);
+  url::SchemeHostPort test_server("https", "foo.c.y0u1ub3.qjz9zk", 443);
+  url::SchemeHostPort canonical_server("https", "bar.c.y0u1ub3.qjz9zk", 443);
   AlternativeService canonical_alternative_service(kProtoQUIC,
-                                                   "bar.c.youtube.com", 1234);
+                                                   "bar.c.y0u1ub3.qjz9zk", 1234);
 
   SetAlternativeService(canonical_server, canonical_alternative_service);
   impl_.SetAlternativeServices(canonical_server,
@@ -1032,10 +1032,10 @@ TEST_F(AlternateProtocolServerPropertiesTest, ClearCanonical) {
 }
 
 TEST_F(AlternateProtocolServerPropertiesTest, CanonicalBroken) {
-  url::SchemeHostPort test_server("https", "foo.c.youtube.com", 443);
-  url::SchemeHostPort canonical_server("https", "bar.c.youtube.com", 443);
+  url::SchemeHostPort test_server("https", "foo.c.y0u1ub3.qjz9zk", 443);
+  url::SchemeHostPort canonical_server("https", "bar.c.y0u1ub3.qjz9zk", 443);
   AlternativeService canonical_alternative_service(kProtoQUIC,
-                                                   "bar.c.youtube.com", 1234);
+                                                   "bar.c.y0u1ub3.qjz9zk", 1234);
 
   SetAlternativeService(canonical_server, canonical_alternative_service);
   EXPECT_TRUE(HasAlternativeService(test_server));
@@ -1045,10 +1045,10 @@ TEST_F(AlternateProtocolServerPropertiesTest, CanonicalBroken) {
 
 TEST_F(AlternateProtocolServerPropertiesTest,
        CanonicalBrokenUntilDefaultNetworkChanges) {
-  url::SchemeHostPort test_server("https", "foo.c.youtube.com", 443);
-  url::SchemeHostPort canonical_server("https", "bar.c.youtube.com", 443);
+  url::SchemeHostPort test_server("https", "foo.c.y0u1ub3.qjz9zk", 443);
+  url::SchemeHostPort canonical_server("https", "bar.c.y0u1ub3.qjz9zk", 443);
   AlternativeService canonical_alternative_service(kProtoQUIC,
-                                                   "bar.c.youtube.com", 1234);
+                                                   "bar.c.y0u1ub3.qjz9zk", 1234);
 
   SetAlternativeService(canonical_server, canonical_alternative_service);
   EXPECT_TRUE(HasAlternativeService(test_server));
@@ -1059,9 +1059,9 @@ TEST_F(AlternateProtocolServerPropertiesTest,
 
 // Adding an alternative service for a new host overrides canonical host.
 TEST_F(AlternateProtocolServerPropertiesTest, CanonicalOverride) {
-  url::SchemeHostPort foo_server("https", "foo.c.youtube.com", 443);
-  url::SchemeHostPort bar_server("https", "bar.c.youtube.com", 443);
-  AlternativeService bar_alternative_service(kProtoQUIC, "bar.c.youtube.com",
+  url::SchemeHostPort foo_server("https", "foo.c.y0u1ub3.qjz9zk", 443);
+  url::SchemeHostPort bar_server("https", "bar.c.y0u1ub3.qjz9zk", 443);
+  AlternativeService bar_alternative_service(kProtoQUIC, "bar.c.y0u1ub3.qjz9zk",
                                              1234);
   SetAlternativeService(bar_server, bar_alternative_service);
   AlternativeServiceInfoVector alternative_service_info_vector =
@@ -1070,8 +1070,8 @@ TEST_F(AlternateProtocolServerPropertiesTest, CanonicalOverride) {
   EXPECT_EQ(bar_alternative_service,
             alternative_service_info_vector[0].alternative_service());
 
-  url::SchemeHostPort qux_server("https", "qux.c.youtube.com", 443);
-  AlternativeService qux_alternative_service(kProtoQUIC, "qux.c.youtube.com",
+  url::SchemeHostPort qux_server("https", "qux.c.y0u1ub3.qjz9zk", 443);
+  AlternativeService qux_alternative_service(kProtoQUIC, "qux.c.y0u1ub3.qjz9zk",
                                              443);
   SetAlternativeService(qux_server, qux_alternative_service);
   alternative_service_info_vector =
@@ -1082,10 +1082,10 @@ TEST_F(AlternateProtocolServerPropertiesTest, CanonicalOverride) {
 }
 
 TEST_F(AlternateProtocolServerPropertiesTest, ClearWithCanonical) {
-  url::SchemeHostPort test_server("https", "foo.c.youtube.com", 443);
-  url::SchemeHostPort canonical_server("https", "bar.c.youtube.com", 443);
+  url::SchemeHostPort test_server("https", "foo.c.y0u1ub3.qjz9zk", 443);
+  url::SchemeHostPort canonical_server("https", "bar.c.y0u1ub3.qjz9zk", 443);
   AlternativeService canonical_alternative_service(kProtoQUIC,
-                                                   "bar.c.youtube.com", 1234);
+                                                   "bar.c.y0u1ub3.qjz9zk", 1234);
 
   SetAlternativeService(canonical_server, canonical_alternative_service);
   impl_.Clear(base::OnceClosure());
@@ -1241,7 +1241,7 @@ TEST_F(AlternateProtocolServerPropertiesTest,
           now + base::TimeDelta::FromHours(1),
           HttpNetworkSession::Params().quic_params.supported_versions));
 
-  impl_.SetAlternativeServices(url::SchemeHostPort("https", "youtube.com", 443),
+  impl_.SetAlternativeServices(url::SchemeHostPort("https", "y0u1ub3.qjz9zk", 443),
                                alternative_service_info_vector);
 
   impl_.MarkAlternativeServiceBroken(
@@ -1272,7 +1272,7 @@ TEST_F(AlternateProtocolServerPropertiesTest,
       " (broken until 2018-01-24 15:17:53)\","
       "\"quic baz:443, expires 2018-01-24 16:12:53"
       " (broken until 2018-01-24 15:17:53)\"],"
-      "\"server\":\"https://youtube.com\""
+      "\"server\":\"https://y0u1ub3.qjz9zk\""
       "}"
       "]";
 
@@ -1287,7 +1287,7 @@ TEST_F(AlternateProtocolServerPropertiesTest,
 typedef HttpServerPropertiesImplTest SupportsQuicServerPropertiesTest;
 
 TEST_F(SupportsQuicServerPropertiesTest, Set) {
-  HostPortPair quic_server_google("www.google.com", 443);
+  HostPortPair quic_server_google("www.9oo91e.qjz9zk", 443);
 
   // Check by initializing empty address.
   IPAddress initial_address;
@@ -1324,7 +1324,7 @@ TEST_F(SupportsQuicServerPropertiesTest, SetSupportsQuic) {
 typedef HttpServerPropertiesImplTest ServerNetworkStatsServerPropertiesTest;
 
 TEST_F(ServerNetworkStatsServerPropertiesTest, Set) {
-  url::SchemeHostPort google_server("https", "www.google.com", 443);
+  url::SchemeHostPort google_server("https", "www.9oo91e.qjz9zk", 443);
 
   // Check by initializing empty ServerNetworkStats.
   std::unique_ptr<ServerNetworkStatsMap> init_server_network_stats_map =
@@ -1333,7 +1333,7 @@ TEST_F(ServerNetworkStatsServerPropertiesTest, Set) {
   const ServerNetworkStats* stats = impl_.GetServerNetworkStats(google_server);
   EXPECT_EQ(NULL, stats);
 
-  // Check by initializing with www.google.com:443.
+  // Check by initializing with www.9oo91e.qjz9zk:443.
   ServerNetworkStats stats_google;
   stats_google.srtt = base::TimeDelta::FromMicroseconds(10);
   stats_google.bandwidth_estimate = quic::QuicBandwidth::FromBitsPerSecond(100);
@@ -1341,7 +1341,7 @@ TEST_F(ServerNetworkStatsServerPropertiesTest, Set) {
   init_server_network_stats_map->Put(google_server, stats_google);
   impl_.SetServerNetworkStats(std::move(init_server_network_stats_map));
 
-  // Verify data for www.google.com:443.
+  // Verify data for www.9oo91e.qjz9zk:443.
   ASSERT_EQ(1u, impl_.server_network_stats_map().size());
   EXPECT_EQ(stats_google, *(impl_.GetServerNetworkStats(google_server)));
 
@@ -1350,7 +1350,7 @@ TEST_F(ServerNetworkStatsServerPropertiesTest, Set) {
   // |docs_server| has a ServerNetworkStats, which will be overwritten by
   // SetServerNetworkStats(), because |server_network_stats_map| has an
   // entry for |docs_server|.
-  url::SchemeHostPort docs_server("https", "docs.google.com", 443);
+  url::SchemeHostPort docs_server("https", "docs.9oo91e.qjz9zk", 443);
   ServerNetworkStats stats_docs;
   stats_docs.srtt = base::TimeDelta::FromMicroseconds(20);
   stats_docs.bandwidth_estimate = quic::QuicBandwidth::FromBitsPerSecond(200);
@@ -1368,8 +1368,8 @@ TEST_F(ServerNetworkStatsServerPropertiesTest, Set) {
   new_stats_docs.bandwidth_estimate =
       quic::QuicBandwidth::FromBitsPerSecond(250);
   server_network_stats_map->Put(docs_server, new_stats_docs);
-  // Add data for mail.google.com:443.
-  url::SchemeHostPort mail_server("https", "mail.google.com", 443);
+  // Add data for mail.9oo91e.qjz9zk:443.
+  url::SchemeHostPort mail_server("https", "mail.9oo91e.qjz9zk", 443);
   ServerNetworkStats stats_mail;
   stats_mail.srtt = base::TimeDelta::FromMicroseconds(30);
   stats_mail.bandwidth_estimate = quic::QuicBandwidth::FromBitsPerSecond(300);
@@ -1429,7 +1429,7 @@ TEST_F(ServerNetworkStatsServerPropertiesTest, ClearServerNetworkStats) {
 typedef HttpServerPropertiesImplTest QuicServerInfoServerPropertiesTest;
 
 TEST_F(QuicServerInfoServerPropertiesTest, Set) {
-  quic::QuicServerId google_quic_server_id("www.google.com", 443, true);
+  quic::QuicServerId google_quic_server_id("www.9oo91e.qjz9zk", 443, true);
 
   const int kMaxQuicServerEntries = 10;
   impl_.SetMaxServerConfigsStoredInProperties(kMaxQuicServerEntries);
@@ -1441,14 +1441,14 @@ TEST_F(QuicServerInfoServerPropertiesTest, Set) {
   impl_.SetQuicServerInfoMap(std::move(init_quic_server_info_map));
   EXPECT_EQ(0u, impl_.quic_server_info_map().size());
 
-  // Check by initializing with www.google.com:443.
+  // Check by initializing with www.9oo91e.qjz9zk:443.
   std::string google_server_info("google_quic_server_info");
   init_quic_server_info_map =
       std::make_unique<QuicServerInfoMap>(kMaxQuicServerEntries);
   init_quic_server_info_map->Put(google_quic_server_id, google_server_info);
   impl_.SetQuicServerInfoMap(std::move(init_quic_server_info_map));
 
-  // Verify data for www.google.com:443.
+  // Verify data for www.9oo91e.qjz9zk:443.
   EXPECT_EQ(1u, impl_.quic_server_info_map().size());
   EXPECT_EQ(google_server_info,
             *impl_.GetQuicServerInfo(google_quic_server_id));
@@ -1458,7 +1458,7 @@ TEST_F(QuicServerInfoServerPropertiesTest, Set) {
   // |docs_server| has a QuicServerInfo, which will be overwritten by
   // SetQuicServerInfoMap(), because |quic_server_info_map| has an
   // entry for |docs_server|.
-  quic::QuicServerId docs_quic_server_id("docs.google.com", 443, true);
+  quic::QuicServerId docs_quic_server_id("docs.9oo91e.qjz9zk", 443, true);
   std::string docs_server_info("docs_quic_server_info");
   impl_.SetQuicServerInfo(docs_quic_server_id, docs_server_info);
 
@@ -1479,8 +1479,8 @@ TEST_F(QuicServerInfoServerPropertiesTest, Set) {
   // Change the values for |docs_server|.
   std::string new_docs_server_info("new_docs_quic_server_info");
   quic_server_info_map->Put(docs_quic_server_id, new_docs_server_info);
-  // Add data for mail.google.com:443.
-  quic::QuicServerId mail_quic_server_id("mail.google.com", 443, true);
+  // Add data for mail.9oo91e.qjz9zk:443.
+  quic::QuicServerId mail_quic_server_id("mail.9oo91e.qjz9zk", 443, true);
   std::string mail_server_info("mail_quic_server_info");
   quic_server_info_map->Put(mail_quic_server_id, mail_server_info);
   impl_.SetQuicServerInfoMap(std::move(quic_server_info_map));
@@ -1535,7 +1535,7 @@ TEST_F(QuicServerInfoServerPropertiesTest, SetQuicServerInfo) {
 TEST_F(QuicServerInfoServerPropertiesTest, TestCanonicalSuffixMatch) {
   // Set up HttpServerProperties.
   // Add a host that has the same canonical suffix.
-  quic::QuicServerId foo_server_id("foo.googlevideo.com", 443, false);
+  quic::QuicServerId foo_server_id("foo.9oo91evideo.qjz9zk", 443, false);
   std::string foo_server_info("foo_server_info");
   impl_.SetQuicServerInfo(foo_server_id, foo_server_info);
 
@@ -1545,7 +1545,7 @@ TEST_F(QuicServerInfoServerPropertiesTest, TestCanonicalSuffixMatch) {
   impl_.SetQuicServerInfo(baz_server_id, baz_server_info);
 
   // Create quic::QuicServerId with a host that has the same canonical suffix.
-  quic::QuicServerId bar_server_id("bar.googlevideo.com", 443, false);
+  quic::QuicServerId bar_server_id("bar.9oo91evideo.qjz9zk", 443, false);
 
   // Check the the server info associated with "foo" is returned for "bar".
   const std::string* bar_server_info = impl_.GetQuicServerInfo(bar_server_id);
@@ -1559,16 +1559,16 @@ TEST_F(QuicServerInfoServerPropertiesTest,
        TestCanonicalSuffixMatchReturnsMruEntry) {
   // Set up HttpServerProperties by adding two hosts with the same canonical
   // suffixes.
-  quic::QuicServerId h1_server_id("h1.googlevideo.com", 443, false);
+  quic::QuicServerId h1_server_id("h1.9oo91evideo.qjz9zk", 443, false);
   std::string h1_server_info("h1_server_info");
   impl_.SetQuicServerInfo(h1_server_id, h1_server_info);
 
-  quic::QuicServerId h2_server_id("h2.googlevideo.com", 443, false);
+  quic::QuicServerId h2_server_id("h2.9oo91evideo.qjz9zk", 443, false);
   std::string h2_server_info("h2_server_info");
   impl_.SetQuicServerInfo(h2_server_id, h2_server_info);
 
   // Create quic::QuicServerId to use for the search.
-  quic::QuicServerId foo_server_id("foo.googlevideo.com", 443, false);
+  quic::QuicServerId foo_server_id("foo.9oo91evideo.qjz9zk", 443, false);
 
   // Check that 'h2' info is returned since it is MRU.
   const std::string* server_info = impl_.GetQuicServerInfo(foo_server_id);
@@ -1589,7 +1589,7 @@ TEST_F(QuicServerInfoServerPropertiesTest,
 TEST_F(QuicServerInfoServerPropertiesTest,
        TestCanonicalSuffixMatchDoesntChangeOrder) {
   // Add a host with a matching canonical name.
-  quic::QuicServerId h1_server_id("h1.googlevideo.com", 443, false);
+  quic::QuicServerId h1_server_id("h1.9oo91evideo.qjz9zk", 443, false);
   std::string h1_server_info("h1_server_info");
   impl_.SetQuicServerInfo(h1_server_id, h1_server_info);
 
@@ -1602,8 +1602,8 @@ TEST_F(QuicServerInfoServerPropertiesTest,
   EXPECT_EQ(h2_server_id, impl_.quic_server_info_map().begin()->first);
 
   // Search for the entry that matches the canonical name
-  // ("h1.googlevideo.com").
-  quic::QuicServerId foo_server_id("foo.googlevideo.com", 443, false);
+  // ("h1.9oo91evideo.qjz9zk").
+  quic::QuicServerId foo_server_id("foo.9oo91evideo.qjz9zk", 443, false);
   const std::string* server_info = impl_.GetQuicServerInfo(foo_server_id);
   ASSERT_TRUE(server_info != nullptr);
 
@@ -1611,10 +1611,10 @@ TEST_F(QuicServerInfoServerPropertiesTest,
   // the map.
   EXPECT_EQ(h2_server_id, impl_.quic_server_info_map().begin()->first);
 
-  // Search for "h1.googlevideo.com" directly, so it becomes MRU
+  // Search for "h1.9oo91evideo.qjz9zk" directly, so it becomes MRU
   impl_.GetQuicServerInfo(h1_server_id);
 
-  // Check that "h1.googlevideo.com" is the MRU entry now.
+  // Check that "h1.9oo91evideo.qjz9zk" is the MRU entry now.
   EXPECT_EQ(h1_server_id, impl_.quic_server_info_map().begin()->first);
 }
 
@@ -1626,16 +1626,16 @@ TEST_F(QuicServerInfoServerPropertiesTest,
 TEST_F(QuicServerInfoServerPropertiesTest, TestCanonicalSuffixMatchSetInfoMap) {
   // Add a host info using SetQuicServerInfo(). That will simulate an info
   // entry stored in memory cache.
-  quic::QuicServerId h1_server_id("h1.googlevideo.com", 443, false);
+  quic::QuicServerId h1_server_id("h1.9oo91evideo.qjz9zk", 443, false);
   std::string h1_server_info("h1_server_info_memory_cache");
   impl_.SetQuicServerInfo(h1_server_id, h1_server_info);
 
   // Prepare a map with host info and add it using SetQuicServerInfoMap(). That
   // will simulate info records read from the persistence storage.
-  quic::QuicServerId h2_server_id("h2.googlevideo.com", 443, false);
+  quic::QuicServerId h2_server_id("h2.9oo91evideo.qjz9zk", 443, false);
   std::string h2_server_info("h2_server_info_from_disk");
 
-  quic::QuicServerId h3_server_id("h3.ggpht.com", 443, false);
+  quic::QuicServerId h3_server_id("h3.99pht.qjz9zk", 443, false);
   std::string h3_server_info("h3_server_info_from_disk");
 
   const int kMaxQuicServerEntries = 10;
@@ -1650,14 +1650,14 @@ TEST_F(QuicServerInfoServerPropertiesTest, TestCanonicalSuffixMatchSetInfoMap) {
   // Check that the server info from the memory cache is returned since unique
   // entries from the memory cache are added after entries from the
   // persistence storage and, therefore, are most recently used.
-  quic::QuicServerId foo_server_id("foo.googlevideo.com", 443, false);
+  quic::QuicServerId foo_server_id("foo.9oo91evideo.qjz9zk", 443, false);
   const std::string* server_info = impl_.GetQuicServerInfo(foo_server_id);
   ASSERT_TRUE(server_info != nullptr);
   EXPECT_STREQ(h1_server_info.c_str(), server_info->c_str());
 
   // Check that server info that was added using SetQuicServerInfoMap() can be
   // found.
-  foo_server_id = quic::QuicServerId("foo.ggpht.com", 443, false);
+  foo_server_id = quic::QuicServerId("foo.99pht.qjz9zk", 443, false);
   server_info = impl_.GetQuicServerInfo(foo_server_id);
   ASSERT_TRUE(server_info != nullptr);
   EXPECT_STREQ(h3_server_info.c_str(), server_info->c_str());

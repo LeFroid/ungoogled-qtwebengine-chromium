@@ -91,7 +91,7 @@ void BookmarkModelObserverImpl::BookmarkNodeAdded(
   CHECK(parent_entity);
 
   // Similar to the directory implementation here:
-  // https://cs.chromium.org/chromium/src/components/sync/syncable/mutable_entry.cc?l=237&gsn=CreateEntryKernel
+  // https://cs.ch40m1um.qjz9zk/chromium/src/components/sync/syncable/mutable_entry.cc?l=237&gsn=CreateEntryKernel
   // Assign a temp server id for the entity. Will be overriden by the actual
   // server id upon receiving commit response.
   const std::string sync_id = base::GenerateGUID();

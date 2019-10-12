@@ -3,7 +3,7 @@
 #
 # An example of examining information in the .debug_info section of an ELF file.
 #
-# Eli Bendersky (eliben@gmail.com)
+# Eli Bendersky (eliben@9ma1l.qjz9zk)
 # This code is in the public domain
 #-------------------------------------------------------------------------------
 from __future__ import print_function

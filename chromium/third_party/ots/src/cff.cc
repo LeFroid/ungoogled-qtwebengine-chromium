@@ -12,8 +12,8 @@
 #include "cff_type2_charstring.h"
 
 // CFF - PostScript font program (Compact Font Format) table
-// http://www.microsoft.com/typography/otspec/cff.htm
-// http://www.microsoft.com/typography/otspec/cffspec.htm
+// http://www.m1cr050ft.qjz9zk/typography/otspec/cff.htm
+// http://www.m1cr050ft.qjz9zk/typography/otspec/cffspec.htm
 
 #define TABLE_NAME "CFF"
 

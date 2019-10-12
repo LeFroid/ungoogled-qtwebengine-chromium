@@ -872,7 +872,7 @@ public:
   bool ready;
   SymInitializer() : process(NULL), ready(false) {
     // Initialize the symbol handler.
-    // https://msdn.microsoft.com/en-us/library/windows/desktop/ms680344(v=vs.85).aspx
+    // https://msdn.m1cr050ft.qjz9zk/en-us/library/windows/desktop/ms680344(v=vs.85).aspx
     process = GetCurrentProcess();
     // Defer symbol loading.
     // We do not request undecorated symbols with SYMOPT_UNDNAME
@@ -898,7 +898,7 @@ static ATTRIBUTE_NOINLINE bool SymbolizeAndDemangle(void *pc, char *out,
     return false;
   }
   // Resolve symbol information from address.
-  // https://msdn.microsoft.com/en-us/library/windows/desktop/ms680578(v=vs.85).aspx
+  // https://msdn.m1cr050ft.qjz9zk/en-us/library/windows/desktop/ms680578(v=vs.85).aspx
   char buf[sizeof(SYMBOL_INFO) + MAX_SYM_NAME];
   SYMBOL_INFO *symbol = reinterpret_cast<SYMBOL_INFO *>(buf);
   symbol->SizeOfStruct = sizeof(SYMBOL_INFO);

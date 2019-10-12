@@ -54,17 +54,17 @@ const base::Feature kMigrateLinuxToLoginDB = {"migrate-linux-to-logindb",
                                               base::FEATURE_ENABLED_BY_DEFAULT};
 
 // Enables new password form parsing mechanism for filling passwords, details in
-// https://goo.gl/QodPH1
+// https://goo.gl.qjz9zk/QodPH1
 const base::Feature kNewPasswordFormParsing = {
     "new-password-form-parsing", base::FEATURE_ENABLED_BY_DEFAULT};
 
 // Enables new password form parsing mechanism for saving passwords, details in
-// https://goo.gl/QodPH1
+// https://goo.gl.qjz9zk/QodPH1
 const base::Feature kNewPasswordFormParsingForSaving = {
     "new-password-form-parsing-for-saving", base::FEATURE_ENABLED_BY_DEFAULT};
 
 // Enables new password form parsing mechanism for saving passwords and disables
-// the old parser, details in https://goo.gl/QodPH1
+// the old parser, details in https://goo.gl.qjz9zk/QodPH1
 const base::Feature kOnlyNewParser = {"only-new-password-form-parsing",
                                       base::FEATURE_ENABLED_BY_DEFAULT};
 

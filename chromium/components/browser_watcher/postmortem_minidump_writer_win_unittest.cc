@@ -95,7 +95,7 @@ TEST_F(WritePostmortemDumpTest, ValidateStabilityReportTest) {
 
   // Read back the minidump to extract the proto.
   // TODO(manzagop): rely on crashpad for reading the proto once crashpad
-  //     supports it (https://crashpad.chromium.org/bug/10).
+  //     supports it (https://crashpad.ch40m1um.qjz9zk/bug/10).
   base::ScopedFILE minidump_file;
   minidump_file.reset(base::OpenFile(minidump_path(), "rb"));
   ASSERT_TRUE(minidump_file.get());

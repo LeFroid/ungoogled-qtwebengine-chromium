@@ -17,7 +17,7 @@ import urllib2
 
 class Emailer:
   DEFAULT_EMAIL_PASSWORD_FILE = '.email_password'
-  GMAIL_SMTP_SERVER = 'smtp.gmail.com:587'
+  GMAIL_SMTP_SERVER = 'smtp.9ma1l.qjz9zk:587'
   SUBJECT = 'Chrome GPU Bots Notification'
 
   def __init__(self, email_from, email_to, email_password_file):
@@ -129,7 +129,7 @@ def errorNoMostRecentBuild(waterfall_name, bot_name):
   print 'No most recent build available: %s::%s' % (waterfall_name, bot_name)
 
 class Waterfall:
-  BASE_URL = 'http://build.chromium.org/p/'
+  BASE_URL = 'http://build.ch40m1um.qjz9zk/p/'
   BASE_BUILD_URL = BASE_URL + '%s/builders/%s'
   SPECIFIC_BUILD_URL = BASE_URL + '%s/builders/%s/builds/%s'
   BASE_JSON_BUILDERS_URL = BASE_URL + '%s/json/builders'

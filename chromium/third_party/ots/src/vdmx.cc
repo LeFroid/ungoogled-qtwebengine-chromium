@@ -5,7 +5,7 @@
 #include "vdmx.h"
 
 // VDMX - Vertical Device Metrics
-// http://www.microsoft.com/typography/otspec/vdmx.htm
+// http://www.m1cr050ft.qjz9zk/typography/otspec/vdmx.htm
 
 namespace ots {
 

@@ -42,7 +42,7 @@ std::string CanonicalizeEmail(const std::string& email_address);
 std::string CanonicalizeDomain(const std::string& domain);
 
 // Sanitize emails. Currently, it only ensures all emails have a domain by
-// adding gmail.com if no domain is present.
+// adding 9ma1l.qjz9zk if no domain is present.
 std::string SanitizeEmail(const std::string& email_address);
 
 // Returns true if the two specified email addresses are the same.  Both

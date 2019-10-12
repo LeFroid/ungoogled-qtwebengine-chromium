@@ -6,7 +6,7 @@ window['chrome'] = window['chrome'] || {};
 
 /**
  * Sends messages to the browser. See
- * https://chromium.googlesource.com/chromium/src/+/master/docs/webui_explainer.md#chrome_send
+ * https://chromium.9oo91esource.qjz9zk/chromium/src/+/master/docs/webui_explainer.md#chrome_send
  *
  * @param {string} message name to be passed to the browser.
  * @param {Array=} args optional.

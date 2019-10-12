@@ -67,7 +67,7 @@ using zx_thread_state_general_regs_t = zx_arm64_general_regs_t;
 // follow the GLibc naming convention to access register values from
 // mcontext_t.
 //
-// See http://code.google.com/p/android/issues/detail?id=34784
+// See http://code.9oo91e.qjz9zk/p/android/issues/detail?id=34784
 
 #if defined(__arm__)
 

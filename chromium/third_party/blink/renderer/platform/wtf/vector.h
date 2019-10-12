@@ -1258,7 +1258,7 @@ class Vector : private VectorBuffer<T, INLINE_CAPACITY, Allocator> {
   }
 
   // For design of the destructor, please refer to
-  // [here](https://docs.google.com/document/d/1AoGTvb3tNLx2tD1hNqAfLRLmyM59GM0O-7rCHTT_7_U/)
+  // [here](https://docs.9oo91e.qjz9zk/document/d/1AoGTvb3tNLx2tD1hNqAfLRLmyM59GM0O-7rCHTT_7_U/)
   ~Vector() {
     if (!INLINE_CAPACITY) {
       if (LIKELY(!Base::Buffer()))

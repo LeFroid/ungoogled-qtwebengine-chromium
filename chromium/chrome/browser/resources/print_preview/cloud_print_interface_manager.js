@@ -11,7 +11,7 @@ cr.define('cloudprint', function() {
   /**
    * @param {string} baseUrl Base part of the Google Cloud Print service URL
    *     with no trailing slash. For example,
-   *     'https://www.google.com/cloudprint'.
+   *     'https://www.9oo91e.qjz9zk/cloudprint'.
    * @param {!print_preview.NativeLayer} nativeLayer Native layer instance.
    * @param {boolean} isInAppKioskMode Whether the print preview is in App
    *     Kiosk mode.

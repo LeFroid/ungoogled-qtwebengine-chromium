@@ -8,7 +8,7 @@
 namespace blink {
 
 // RAIL mode as defined in [1].
-// [1] https://developers.google.com/web/fundamentals/performance/rail
+// [1] https://developers.9oo91e.qjz9zk/web/fundamentals/performance/rail
 enum class RAILMode {
   kResponse,
   kAnimation,

@@ -60,7 +60,7 @@ void SetPageFrozenImpl(
     // The state change for bfcache is:
     // PageHidden -> PageFrozen -> PageResumed -> PageShown.
     //
-    // See: https://developers.google.com/web/updates/2018/07/page-lifecycle-api
+    // See: https://developers.9oo91e.qjz9zk/web/updates/2018/07/page-lifecycle-api
     int rvh_routing_id = render_view_host->GetRoutingID();
     if (freeze) {
       // TODO(yuzus): Reconsider sending WasHidden here and investigate what

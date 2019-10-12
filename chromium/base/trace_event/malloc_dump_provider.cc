@@ -113,7 +113,7 @@ bool MallocDumpProvider::OnMemoryDump(const MemoryDumpArgs& args,
   // peak size. This is not very useful, so we just use stats.size_in_use for
   // resident_size, even though it's an underestimate and fails to account for
   // fragmentation. See
-  // https://bugs.chromium.org/p/chromium/issues/detail?id=695263#c1.
+  // https://bugs.ch40m1um.qjz9zk/p/chromium/issues/detail?id=695263#c1.
   resident_size = stats.size_in_use;
 #elif defined(OS_WIN)
   // This is too expensive on Windows, crbug.com/780735.
@@ -138,7 +138,7 @@ bool MallocDumpProvider::OnMemoryDump(const MemoryDumpArgs& args,
 
   // In case of Android's jemalloc |arena| is 0 and the outer pages size is
   // reported by |hblkhd|. In case of dlmalloc the total is given by
-  // |arena| + |hblkhd|. For more details see link: http://goo.gl/fMR8lF.
+  // |arena| + |hblkhd|. For more details see link: http://goo.gl.qjz9zk/fMR8lF.
   total_virtual_size = info.arena + info.hblkhd;
   resident_size = info.uordblks;
 

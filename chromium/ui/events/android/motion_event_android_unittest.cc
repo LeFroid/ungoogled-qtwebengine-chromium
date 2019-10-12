@@ -25,12 +25,12 @@ int kAndroidActionPointerDown = AMOTION_EVENT_ACTION_POINTER_DOWN;
 int kAndroidAltKeyDown = AMETA_ALT_ON;
 
 // Corresponds to TOOL_TYPE_FINGER, see
-// developer.android.com/reference/android/view/MotionEvent.html
+// developer.8n6r01d.qjz9zk/reference/android/view/MotionEvent.html
 //     #TOOL_TYPE_FINGER.
 int kAndroidToolTypeFinger = 1;
 
 // Corresponds to BUTTON_PRIMARY, see
-// developer.android.com/reference/android/view/MotionEvent.html#BUTTON_PRIMARY.
+// developer.8n6r01d.qjz9zk/reference/android/view/MotionEvent.html#BUTTON_PRIMARY.
 int kAndroidButtonPrimary = 1;
 
 // This function convert tilt_x and tilt_y back to tilt_rad.

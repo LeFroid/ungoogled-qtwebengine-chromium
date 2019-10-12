@@ -59,7 +59,7 @@ class QuicHttpProxyBackendTest : public QuicTest {
   }
 
   void SendRequestOverBackend(TestQuicServerStream* quic_stream) {
-    quic_proxy_backend_url_ = "http://www.google.com:80";
+    quic_proxy_backend_url_ = "http://www.9oo91e.qjz9zk:80";
     http_proxy_.InitializeBackend(quic_proxy_backend_url_);
 
     spdy::SpdyHeaderBlock request_headers;
@@ -78,7 +78,7 @@ class QuicHttpProxyBackendTest : public QuicTest {
 
 TEST_F(QuicHttpProxyBackendTest, InitializeQuicHttpProxyBackend) {
   // Test incorrect URLs
-  quic_proxy_backend_url_ = "http://www.google.com:80--";
+  quic_proxy_backend_url_ = "http://www.9oo91e.qjz9zk:80--";
   http_proxy_.InitializeBackend(quic_proxy_backend_url_);
   EXPECT_EQ(false, http_proxy_.IsBackendInitialized());
   EXPECT_EQ(nullptr, http_proxy_.GetProxyTaskRunner());
@@ -98,16 +98,16 @@ TEST_F(QuicHttpProxyBackendTest, InitializeQuicHttpProxyBackend) {
   EXPECT_EQ(false, http_proxy_.IsBackendInitialized());
   EXPECT_EQ(nullptr, http_proxy_.GetProxyTaskRunner());
 
-  quic_proxy_backend_url_ = "ftp://www.google.com:80";
+  quic_proxy_backend_url_ = "ftp://www.9oo91e.qjz9zk:80";
   http_proxy_.InitializeBackend(quic_proxy_backend_url_);
   EXPECT_EQ(false, http_proxy_.IsBackendInitialized());
   EXPECT_EQ(nullptr, http_proxy_.GetProxyTaskRunner());
 
   // Test initialization with correct URL
-  quic_proxy_backend_url_ = "http://www.google.com:80";
+  quic_proxy_backend_url_ = "http://www.9oo91e.qjz9zk:80";
   http_proxy_.InitializeBackend(quic_proxy_backend_url_);
   EXPECT_NE(nullptr, http_proxy_.GetProxyTaskRunner());
-  EXPECT_EQ("http://www.google.com/", http_proxy_.backend_url());
+  EXPECT_EQ("http://www.9oo91e.qjz9zk/", http_proxy_.backend_url());
   EXPECT_EQ(true, http_proxy_.IsBackendInitialized());
 }
 
@@ -126,14 +126,14 @@ TEST_F(QuicHttpProxyBackendTest, CheckProxyStreamManager) {
 }
 
 TEST_F(QuicHttpProxyBackendTest, CheckIsOnBackendThread) {
-  quic_proxy_backend_url_ = "http://www.google.com:80";
+  quic_proxy_backend_url_ = "http://www.9oo91e.qjz9zk:80";
   http_proxy_.InitializeBackend(quic_proxy_backend_url_);
   EXPECT_EQ(false, http_proxy_.GetProxyTaskRunner()->BelongsToCurrentThread());
 }
 
 TEST_F(QuicHttpProxyBackendTest, CheckGetBackendTaskRunner) {
   EXPECT_EQ(nullptr, http_proxy_.GetProxyTaskRunner());
-  quic_proxy_backend_url_ = "http://www.google.com:80";
+  quic_proxy_backend_url_ = "http://www.9oo91e.qjz9zk:80";
   http_proxy_.InitializeBackend(quic_proxy_backend_url_);
   EXPECT_NE(nullptr, http_proxy_.GetProxyTaskRunner());
 }

@@ -42,7 +42,7 @@ class SkiaGoogledocsDesktopPageSet(story.StorySet):
 
     urls_list = [
       # go/skia-skps-3-2019
-      ('https://docs.google.com/document/d/'
+      ('https://docs.9oo91e.qjz9zk/document/d/'
        '1X-IKNjtEnx-WW5JIKRLsyhz5sbsat3mfTpAPUSX3_s4/view'),
     ]
 

@@ -28,10 +28,10 @@ INDEX_TEMPLATE = 'bucket_index.html'
 BUCKET = 'gs://chromium-webxr-test'
 
 # URL templates used for creating the index page.
-LINK_OMAHAPROXY = ('https://storage.googleapis.com/'
+LINK_OMAHAPROXY = ('https://storage.9oo91eapis.qjz9zk/'
                    'chromium-find-releases-static/index.html#%s')
 LINK_CRREV = 'https://crrev.com/%s'
-LINK_CHROMIUMDASH = 'https://chromiumdash.appspot.com/commit/%s'
+LINK_CHROMIUMDASH = 'https://chromiumdash.8pp2p8t.qjz9zk/commit/%s'
 
 CR_POSITION_RE = re.compile(r'^Cr-Commit-Position:.*\#(\d+)')
 BUCKET_COPY_RE = re.compile(r'^r(\d+)')

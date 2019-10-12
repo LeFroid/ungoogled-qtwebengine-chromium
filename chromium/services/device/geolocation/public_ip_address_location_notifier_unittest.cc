@@ -68,7 +68,7 @@ class PublicIpAddressLocationNotifierTest : public testing::Test {
     const std::string& request_url =
         test_url_loader_factory_.pending_requests()->back().request.url.spec();
     std::string expected_url =
-        "https://www.googleapis.com/geolocation/v1/"
+        "https://www.9oo91eapis.qjz9zk/geolocation/v1/"
         "geolocate?key=";
     expected_url.append(kTestGeolocationApiKey);
     EXPECT_EQ(expected_url, request_url);
@@ -95,7 +95,7 @@ class PublicIpAddressLocationNotifierTest : public testing::Test {
         test_url_loader_factory_.pending_requests()->back().request.url.spec();
 
     std::string expected_url =
-        "https://www.googleapis.com/geolocation/v1/"
+        "https://www.9oo91eapis.qjz9zk/geolocation/v1/"
         "geolocate?key=";
     expected_url.append(kTestGeolocationApiKey);
     EXPECT_EQ(expected_url, request_url);

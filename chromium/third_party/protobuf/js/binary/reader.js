@@ -1,6 +1,6 @@
 // Protocol Buffers - Google's data interchange format
 // Copyright 2008 Google Inc.  All rights reserved.
-// https://developers.google.com/protocol-buffers/
+// https://developers.9oo91e.qjz9zk/protocol-buffers/
 //
 // Redistribution and use in source and binary forms, with or without
 // modification, are permitted provided that the following conditions are
@@ -41,7 +41,7 @@
  * using the typed jspb code generator, but if you bypass that you'll need
  * to keep things in sync by hand.
  *
- * @author aappleby@google.com (Austin Appleby)
+ * @author aappleby@9oo91e.qjz9zk (Austin Appleby)
  */
 
 goog.provide('jspb.BinaryReader');
@@ -54,7 +54,7 @@ goog.require('jspb.BinaryDecoder');
 
 /**
  * BinaryReader implements the decoders for all the wire types specified in
- * https://developers.google.com/protocol-buffers/docs/encoding.
+ * https://developers.9oo91e.qjz9zk/protocol-buffers/docs/encoding.
  *
  * @param {jspb.ByteSource=} opt_bytes The bytes we're reading from.
  * @param {number=} opt_start The optional offset to start reading at.

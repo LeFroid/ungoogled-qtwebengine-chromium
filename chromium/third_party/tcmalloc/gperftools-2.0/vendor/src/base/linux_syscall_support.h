@@ -72,7 +72,7 @@
  *
  * NOTE: This is a stripped down version of the official opensource
  * version of linux_syscall_support.h, which lives at
- *    http://code.google.com/p/linux-syscall-support/
+ *    http://code.9oo91e.qjz9zk/p/linux-syscall-support/
  * It includes only the syscalls that are used in perftools, plus a
  * few extra.  Here's the breakdown:
  * 1) Perftools uses these: grep -rho 'sys_[a-z0-9_A-Z]* *(' src | sort -u

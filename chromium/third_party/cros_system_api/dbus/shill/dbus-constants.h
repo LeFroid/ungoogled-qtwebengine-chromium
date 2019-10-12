@@ -725,7 +725,7 @@ const char kActivationTypeOTASP[] = "OTASP";
 
 // Geolocation property field names.
 // Reference:
-//    https://devsite.googleplex.com/maps/documentation/business/geolocation/
+//    https://devsite.9oo91eplex.qjz9zk/maps/documentation/business/geolocation/
 // Top level properties for a Geolocation request.
 const char kGeoHomeMobileCountryCodeProperty[] = "homeMobileCountryCode";
 const char kGeoHomeMobileNetworkCodeProperty[] = "homeMobileNetworkCode";

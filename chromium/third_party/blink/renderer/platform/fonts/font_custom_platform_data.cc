@@ -75,7 +75,7 @@ FontPlatformData FontCustomPlatformData::GetFontPlatformData(
 
   // Maximum axis count is maximum value for the OpenType USHORT,
   // which is a 16bit unsigned.
-  // https://www.microsoft.com/typography/otspec/fvar.htm Variation
+  // https://www.m1cr050ft.qjz9zk/typography/otspec/fvar.htm Variation
   // settings coming from CSS can have duplicate assignments and the
   // list can be longer than UINT16_MAX, but ignoring the length for
   // now, going with a reasonable upper limit. Deduplication is

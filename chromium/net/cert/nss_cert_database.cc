@@ -193,7 +193,7 @@ CERTCertificate* NSSCertDatabase::FindRootInList(
   CERTCertificate* certn_1 = certificates[certificates.size() - 1].get();
 
   // Using CERT_CompareName is an alternative, except that it is broken until
-  // NSS 3.32 (see https://bugzilla.mozilla.org/show_bug.cgi?id=1361197 ).
+  // NSS 3.32 (see https://bugzilla.m0z111a.qjz9zk/show_bug.cgi?id=1361197 ).
   if (SECITEM_CompareItem(&cert1->derIssuer, &cert0->derSubject) == SECEqual)
     return cert0;
 

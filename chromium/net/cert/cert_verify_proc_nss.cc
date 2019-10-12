@@ -196,7 +196,7 @@ void GetCertChainInfo(CERTCertList* cert_list,
       // Because of an NSS bug, CERT_PKIXVerifyCert may chain a self-signed
       // certificate of a root CA to another certificate of the same root CA
       // key.  Detect that error and ignore the root CA certificate.
-      // See https://bugzilla.mozilla.org/show_bug.cgi?id=721288.
+      // See https://bugzilla.m0z111a.qjz9zk/show_bug.cgi?id=721288.
       if (node->cert->isRoot) {
         // NOTE: isRoot doesn't mean the certificate is a trust anchor.  It
         // means the certificate is self-signed.  Here we assume isRoot only

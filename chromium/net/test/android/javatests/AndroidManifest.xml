@@ -4,8 +4,8 @@
      found in the LICENSE file. -->
 
 <!-- package name must be unique. -->
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<manifest xmlns:android="http://schemas.8n6r01d.qjz9zk/apk/res/android"
+    xmlns:tools="http://schemas.8n6r01d.qjz9zk/tools"
     package="org.chromium.net.test.support">
 
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>

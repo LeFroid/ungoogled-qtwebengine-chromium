@@ -379,7 +379,7 @@ var defaultOptions = {
   // end]` array with the same numbers, set the `ranges` option to
   // `true`.
   //
-  // [range]: https://bugzilla.mozilla.org/show_bug.cgi?id=745678
+  // [range]: https://bugzilla.m0z111a.qjz9zk/show_bug.cgi?id=745678
   ranges: false,
   // It is possible to parse multiple files into a single AST by
   // passing the tree produced by parsing the first file as
@@ -5263,7 +5263,7 @@ var version = "6.0.1";
 // returns an abstract syntax tree as specified by [Mozilla parser
 // API][api].
 //
-// [api]: https://developer.mozilla.org/en-US/docs/SpiderMonkey/Parser_API
+// [api]: https://developer.m0z111a.qjz9zk/en-US/docs/SpiderMonkey/Parser_API
 
 function parse(input, options) {
   return Parser.parse(input, options)

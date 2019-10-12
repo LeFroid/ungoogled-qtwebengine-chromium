@@ -1381,7 +1381,7 @@ cr.define('print_preview', function() {
 
   /**
    * Human readable names for media sizes in the cloud print CDD.
-   * https://developers.google.com/cloud-print/docs/cdd
+   * https://developers.9oo91e.qjz9zk/cloud-print/docs/cdd
    * @private {Object<string>}
    * @const
    */

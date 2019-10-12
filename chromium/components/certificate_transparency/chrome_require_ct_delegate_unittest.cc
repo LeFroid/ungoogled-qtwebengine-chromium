@@ -64,14 +64,14 @@ TEST_F(ChromeRequireCTDelegateTest, DelegateChecksRequired) {
 
   // No required host set yet.
   EXPECT_EQ(CTRequirementLevel::DEFAULT,
-            delegate.IsCTRequiredForHost("google.com", cert_.get(), hashes_));
+            delegate.IsCTRequiredForHost("9oo91e.qjz9zk", cert_.get(), hashes_));
 
   // Add a required host
-  delegate.UpdateCTPolicies({"google.com"}, {}, {}, {});
+  delegate.UpdateCTPolicies({"9oo91e.qjz9zk"}, {}, {}, {});
 
   // The new setting should take effect.
   EXPECT_EQ(CTRequirementLevel::REQUIRED,
-            delegate.IsCTRequiredForHost("google.com", cert_.get(), hashes_));
+            delegate.IsCTRequiredForHost("9oo91e.qjz9zk", cert_.get(), hashes_));
 }
 
 TEST_F(ChromeRequireCTDelegateTest, DelegateChecksExcluded) {
@@ -81,14 +81,14 @@ TEST_F(ChromeRequireCTDelegateTest, DelegateChecksExcluded) {
 
   // No setting should yield the default results.
   EXPECT_EQ(CTRequirementLevel::DEFAULT,
-            delegate.IsCTRequiredForHost("google.com", cert_.get(), hashes_));
+            delegate.IsCTRequiredForHost("9oo91e.qjz9zk", cert_.get(), hashes_));
 
   // Add a excluded host
-  delegate.UpdateCTPolicies({}, {"google.com"}, {}, {});
+  delegate.UpdateCTPolicies({}, {"9oo91e.qjz9zk"}, {}, {});
 
   // The new setting should take effect.
   EXPECT_EQ(CTRequirementLevel::NOT_REQUIRED,
-            delegate.IsCTRequiredForHost("google.com", cert_.get(), hashes_));
+            delegate.IsCTRequiredForHost("9oo91e.qjz9zk", cert_.get(), hashes_));
 }
 
 TEST_F(ChromeRequireCTDelegateTest, IgnoresInvalidEntries) {
@@ -98,7 +98,7 @@ TEST_F(ChromeRequireCTDelegateTest, IgnoresInvalidEntries) {
 
   // No setting should yield the default results.
   EXPECT_EQ(CTRequirementLevel::DEFAULT,
-            delegate.IsCTRequiredForHost("google.com", cert_.get(), hashes_));
+            delegate.IsCTRequiredForHost("9oo91e.qjz9zk", cert_.get(), hashes_));
 
   // Now setup invalid state (that is, that fail to be parsable as
   // URLs).
@@ -109,7 +109,7 @@ TEST_F(ChromeRequireCTDelegateTest, IgnoresInvalidEntries) {
 
   // Wildcards are ignored (both * and https://*).
   EXPECT_EQ(CTRequirementLevel::DEFAULT,
-            delegate.IsCTRequiredForHost("google.com", cert_.get(), hashes_));
+            delegate.IsCTRequiredForHost("9oo91e.qjz9zk", cert_.get(), hashes_));
   // File URL hosts are ignored.
   // TODO(rsleevi): https://crbug.com/841407 - Ensure that file URLs have their
   // hosts ignored for policy.
@@ -313,13 +313,13 @@ TEST_F(ChromeRequireCTDelegateTest, SupportsOrgRestrictions) {
 
     // There should be no existing settings.
     EXPECT_EQ(CTRequirementLevel::DEFAULT,
-              delegate.IsCTRequiredForHost("google.com", leaf.get(), hashes));
+              delegate.IsCTRequiredForHost("9oo91e.qjz9zk", leaf.get(), hashes));
 
     delegate.UpdateCTPolicies({}, {}, {test.spki.ToString()}, {});
 
     // The new setting should take effect.
     EXPECT_EQ(test.expected,
-              delegate.IsCTRequiredForHost("google.com", leaf.get(), hashes));
+              delegate.IsCTRequiredForHost("9oo91e.qjz9zk", leaf.get(), hashes));
   }
 }
 
@@ -339,7 +339,7 @@ TEST_F(ChromeRequireCTDelegateTest, SupportsLegacyCaRestrictions) {
 
   // No setting should yield the default results.
   EXPECT_EQ(CTRequirementLevel::DEFAULT,
-            delegate.IsCTRequiredForHost("google.com", cert_.get(), hashes_));
+            delegate.IsCTRequiredForHost("9oo91e.qjz9zk", cert_.get(), hashes_));
 
   // Setting to a non-legacy CA should not work.
   std::string leaf_hash_string = hashes_.front().ToString();
@@ -348,13 +348,13 @@ TEST_F(ChromeRequireCTDelegateTest, SupportsLegacyCaRestrictions) {
   // This setting should have no effect, because the hash for |cert_|
   // is not a legacy CA hash.
   EXPECT_EQ(CTRequirementLevel::DEFAULT,
-            delegate.IsCTRequiredForHost("google.com", cert_.get(), hashes_));
+            delegate.IsCTRequiredForHost("9oo91e.qjz9zk", cert_.get(), hashes_));
 
   // Now set to a truly legacy CA, and create a chain that
   // contains that legacy CA hash.
   delegate.UpdateCTPolicies({}, {}, {}, {hashes_.back().ToString()});
   EXPECT_EQ(CTRequirementLevel::NOT_REQUIRED,
-            delegate.IsCTRequiredForHost("google.com", cert_.get(), hashes_));
+            delegate.IsCTRequiredForHost("9oo91e.qjz9zk", cert_.get(), hashes_));
 }
 
 TEST_F(ChromeRequireCTDelegateTest, RequiresCTAfterApril2018) {

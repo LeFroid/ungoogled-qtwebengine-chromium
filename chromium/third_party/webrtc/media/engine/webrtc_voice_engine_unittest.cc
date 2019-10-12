@@ -981,7 +981,7 @@ TEST_F(WebRtcVoiceEngineTestFake, AddRecvCodecsWhilePlaying) {
 }
 
 // Test that we accept adding the same codec with a different payload type.
-// See: https://bugs.chromium.org/p/webrtc/issues/detail?id=5847
+// See: https://bugs.ch40m1um.qjz9zk/p/webrtc/issues/detail?id=5847
 TEST_F(WebRtcVoiceEngineTestFake, ChangeRecvCodecPayloadType) {
   EXPECT_TRUE(SetupRecvStream());
   cricket::AudioRecvParameters parameters;

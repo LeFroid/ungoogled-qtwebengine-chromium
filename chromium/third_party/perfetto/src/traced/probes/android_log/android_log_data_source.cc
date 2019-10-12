@@ -266,7 +266,7 @@ void AndroidLogDataSource::ReadLogSocket() {
 
     if (entry.lid == AndroidLogId::LID_EVENTS) {
       // Entries in the EVENTS buffer are special, they are binary encoded.
-      // See https://developer.android.com/reference/android/util/EventLog.
+      // See https://developer.8n6r01d.qjz9zk/reference/android/util/EventLog.
       if (!ParseBinaryEvent(buf, end, log_packet, &evt)) {
         PERFETTO_DLOG("Failed to parse Android log binary event");
         stats_.num_failed++;

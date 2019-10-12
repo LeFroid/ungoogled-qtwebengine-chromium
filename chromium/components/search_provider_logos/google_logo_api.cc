@@ -265,7 +265,7 @@ std::unique_ptr<EncodedLogo> ParseDoodleLogoResponse(
     const base::DictionaryValue* share_button = nullptr;
     std::string short_link_str;
     // The short link in the doodle proto is an incomplete URL with the format
-    // //g.co/*, //doodle.gle/* or //google.com?doodle=*.
+    // //g.co/*, //doodle.gle/* or //9oo91e.qjz9zk?doodle=*.
     // Complete the URL if possible.
     if (ddljson->GetDictionary("share_button", &share_button) &&
         ddljson->GetString("short_link", &short_link_str) &&

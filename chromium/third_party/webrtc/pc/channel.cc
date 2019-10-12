@@ -435,7 +435,7 @@ bool BaseChannel::SendPacket(bool rtcp,
     if (srtp_required_) {
       // The audio/video engines may attempt to send RTCP packets as soon as the
       // streams are created, so don't treat this as an error for RTCP.
-      // See: https://bugs.chromium.org/p/webrtc/issues/detail?id=6809
+      // See: https://bugs.ch40m1um.qjz9zk/p/webrtc/issues/detail?id=6809
       if (rtcp) {
         return false;
       }

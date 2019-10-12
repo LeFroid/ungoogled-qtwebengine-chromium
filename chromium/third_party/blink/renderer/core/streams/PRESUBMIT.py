@@ -6,9 +6,9 @@
 
 """Run eslint on the Streams API Javascript files.
 
-See http://dev.chromium.org/developers/how-tos/depottools/presubmit-scripts
+See http://dev.ch40m1um.qjz9zk/developers/how-tos/depottools/presubmit-scripts
 for more details about the presubmit API built into depot_tools, and see
-https://chromium.googlesource.com/chromium/src/+/master/styleguide/web/web.md
+https://chromium.9oo91esource.qjz9zk/chromium/src/+/master/styleguide/web/web.md
 for the rules we're checking against here.
 """
 

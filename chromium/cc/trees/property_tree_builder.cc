@@ -962,7 +962,7 @@ RenderSurfaceReason ComputeRenderSurfaceReason(const MutatorHost& mutator_host,
   // TODO(rosca): to be optimized - create separate rendering surface only when
   // the blending descendants might have access to the content behind this layer
   // (layer has transparent background or descendants overflow).
-  // https://code.google.com/p/chromium/issues/detail?id=301738
+  // https://code.9oo91e.qjz9zk/p/chromium/issues/detail?id=301738
   if (IsRootForIsolatedGroup(layer)) {
     return RenderSurfaceReason::kRootOrIsolatedGroup;
   }

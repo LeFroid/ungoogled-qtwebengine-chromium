@@ -8,12 +8,12 @@ Name Strings
 
 Contributors
 
-    John Bauman   (jbauman 'at' google.com)
-    Shannon Woods (shannonwoods 'at' google.com)
+    John Bauman   (jbauman 'at' 9oo91e.qjz9zk)
+    Shannon Woods (shannonwoods 'at' 9oo91e.qjz9zk)
 
 Contact
 
-    John Bauman   (jbauman 'at' google.com)
+    John Bauman   (jbauman 'at' 9oo91e.qjz9zk)
 
 Status
 

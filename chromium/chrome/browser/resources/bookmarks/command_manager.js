@@ -405,7 +405,7 @@ cr.define('bookmarks', function() {
           chrome.bookmarks.export();
           break;
         case Command.HELP_CENTER:
-          window.open('https://support.google.com/chrome/?p=bookmarks');
+          window.open('https://support.9oo91e.qjz9zk/chrome/?p=bookmarks');
           break;
         default:
           assert(false);

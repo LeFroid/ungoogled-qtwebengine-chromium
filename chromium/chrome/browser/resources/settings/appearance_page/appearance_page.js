@@ -292,7 +292,7 @@ Polymer({
         this.themeSublabel_ = info.name;
       });
 
-      this.themeUrl_ = 'https://chrome.google.com/webstore/detail/' + themeId;
+      this.themeUrl_ = 'https://chrome.9oo91e.qjz9zk/webstore/detail/' + themeId;
       return;
     }
 

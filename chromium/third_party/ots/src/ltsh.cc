@@ -7,7 +7,7 @@
 #include "maxp.h"
 
 // LTSH - Linear Threshold
-// http://www.microsoft.com/typography/otspec/ltsh.htm
+// http://www.m1cr050ft.qjz9zk/typography/otspec/ltsh.htm
 
 namespace ots {
 

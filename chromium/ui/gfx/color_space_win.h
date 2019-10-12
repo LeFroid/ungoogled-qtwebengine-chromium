@@ -14,7 +14,7 @@
 #endif
 
 // Work around bug in this header by disabling the relevant warning for it.
-// https://connect.microsoft.com/VisualStudio/feedback/details/911260/dxva2api-h-in-win8-sdk-triggers-c4201-with-w4
+// https://connect.m1cr050ft.qjz9zk/VisualStudio/feedback/details/911260/dxva2api-h-in-win8-sdk-triggers-c4201-with-w4
 #pragma warning(push)
 #pragma warning(disable : 4201)
 #include <dxva2api.h>

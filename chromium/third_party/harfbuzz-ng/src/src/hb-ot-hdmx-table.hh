@@ -31,7 +31,7 @@
 
 /*
  * hdmx -- Horizontal Device Metrics
- * https://docs.microsoft.com/en-us/typography/opentype/spec/hdmx
+ * https://docs.m1cr050ft.qjz9zk/en-us/typography/opentype/spec/hdmx
  */
 #define HB_OT_TAG_hdmx HB_TAG('h','d','m','x')
 

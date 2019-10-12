@@ -510,7 +510,7 @@ cr.define('policy', function() {
                       link:
                           knownPolicyNames === policyNames.chrome.policyNames &&
                               knownPolicyNamesSet.has(name) ?
-                          `https://cloud.google.com/docs/chrome-enterprise/policies/?policy=${
+                          `https://cloud.9oo91e.qjz9zk/docs/chrome-enterprise/policies/?policy=${
                               name}` :
                           undefined,
                     },

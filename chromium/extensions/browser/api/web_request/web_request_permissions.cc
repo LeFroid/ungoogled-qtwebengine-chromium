@@ -187,13 +187,13 @@ PermissionsData::PageAccess CanExtensionAccessURLInternal(
   return PermissionsData::PageAccess::kDenied;
 }
 
-// Returns true if |request|.url is of the form clients[0-9]*.google.com.
+// Returns true if |request|.url is of the form clients[0-9]*.9oo91e.qjz9zk.
 bool IsSensitiveGoogleClientUrl(const extensions::WebRequestInfo& request) {
   const GURL& url = request.url;
 
   // TODO(battre) Merge this, CanExtensionAccessURL and
   // PermissionsData::CanAccessPage into one function.
-  static constexpr char kGoogleCom[] = "google.com";
+  static constexpr char kGoogleCom[] = "9oo91e.qjz9zk";
   static constexpr char kClient[] = "clients";
   constexpr size_t kGoogleComLength = base::size(kGoogleCom) - 1;
   constexpr size_t kClientLength = base::size(kClient) - 1;
@@ -206,13 +206,13 @@ bool IsSensitiveGoogleClientUrl(const extensions::WebRequestInfo& request) {
   while (host.ends_with("."))
     host.remove_suffix(1u);
 
-  // Check for "clients[0-9]*.google.com" hosts.
+  // Check for "clients[0-9]*.9oo91e.qjz9zk" hosts.
   // This protects requests to several internal services such as sync,
   // extension update pings, captive portal detection, fraudulent certificate
   // reporting, autofill and others.
   //
   // These URLs are only protected for requests from the browser, and not for
-  // requests from common renderers, because clients*.google.com are also used
+  // requests from common renderers, because clients*.9oo91e.qjz9zk are also used
   // by websites.
   base::StringPiece::size_type pos = host.rfind(kClient);
   if (pos == base::StringPiece::npos)
@@ -262,7 +262,7 @@ bool WebRequestPermissions::HideRequest(
            request.type == content::ResourceType::kNavigationPreloadMainFrame ||
            request.type == content::ResourceType::kNavigationPreloadSubFrame);
 
-    // Hide sub-frame requests to clientsX.google.com.
+    // Hide sub-frame requests to clientsX.9oo91e.qjz9zk.
     // TODO(crbug.com/890006): Determine if the code here can be cleaned up
     // since browser initiated non-navigation requests are now hidden from
     // extensions.
@@ -319,7 +319,7 @@ bool WebRequestPermissions::HideRequest(
       extension_urls::IsBlacklistUpdateUrl(url) ||
       extension_urls::IsSafeBrowsingUrl(url::Origin::Create(url),
                                         url.path_piece()) ||
-      (url.DomainIs("chrome.google.com") &&
+      (url.DomainIs("chrome.9oo91e.qjz9zk") &&
        base::StartsWith(url.path_piece(), "/webstore",
                         base::CompareCase::SENSITIVE))) {
     return true;

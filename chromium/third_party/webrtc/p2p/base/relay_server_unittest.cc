@@ -474,7 +474,7 @@ TEST_F(RelayServerTest, TestSendRaw) {
 }
 
 // Verify that a binding expires properly, and rejects send requests.
-// Flaky, see https://code.google.com/p/webrtc/issues/detail?id=4134
+// Flaky, see https://code.9oo91e.qjz9zk/p/webrtc/issues/detail?id=4134
 TEST_F(RelayServerTest, DISABLED_TestExpiration) {
   Allocate();
   Bind();

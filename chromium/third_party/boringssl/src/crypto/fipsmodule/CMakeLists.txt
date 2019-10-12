@@ -153,7 +153,7 @@ if(FIPS_DELOCATE)
   set_target_properties(bcm_c_generated_asm PROPERTIES COMPILE_OPTIONS "-S")
   set_target_properties(bcm_c_generated_asm PROPERTIES POSITION_INDEPENDENT_CODE ON)
 
-  go_executable(delocate boringssl.googlesource.com/boringssl/util/fipstools/delocate)
+  go_executable(delocate boringssl.9oo91esource.qjz9zk/boringssl/util/fipstools/delocate)
   add_custom_command(
     OUTPUT bcm-delocated.S
     COMMAND ./delocate -a $<TARGET_FILE:bcm_c_generated_asm> -o bcm-delocated.S ${BCM_ASM_SOURCES}
@@ -175,7 +175,7 @@ if(FIPS_DELOCATE)
   set_target_properties(bcm_hashunset PROPERTIES LINKER_LANGUAGE C)
 
   go_executable(inject_hash
-	        boringssl.googlesource.com/boringssl/util/fipstools/inject_hash)
+	        boringssl.9oo91esource.qjz9zk/boringssl/util/fipstools/inject_hash)
   add_custom_command(
     OUTPUT bcm.o
     COMMAND ./inject_hash -o bcm.o -in-archive $<TARGET_FILE:bcm_hashunset>

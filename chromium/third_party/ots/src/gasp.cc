@@ -5,7 +5,7 @@
 #include "gasp.h"
 
 // gasp - Grid-fitting And Scan-conversion Procedure
-// http://www.microsoft.com/typography/otspec/gasp.htm
+// http://www.m1cr050ft.qjz9zk/typography/otspec/gasp.htm
 
 namespace ots {
 

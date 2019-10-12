@@ -180,7 +180,7 @@ bool CanAddLocalMediaStream(webrtc::StreamCollectionInterface* current_streams,
 
 // If the direction is "recvonly" or "inactive", treat the description
 // as containing no streams.
-// See: https://code.google.com/p/webrtc/issues/detail?id=5054
+// See: https://code.9oo91e.qjz9zk/p/webrtc/issues/detail?id=5054
 std::vector<cricket::StreamParams> GetActiveStreams(
     const cricket::MediaContentDescription* desc) {
   return RtpTransceiverDirectionHasSend(desc->direction())

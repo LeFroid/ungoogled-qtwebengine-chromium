@@ -16,7 +16,7 @@
 //
 // You may be tempted to change this code to unlock the mutex before calling
 // std::condition_variable::notify_[one,all]. Please read
-// https://issuetracker.google.com/issues/133135427 before making this sort of
+// https://issuetracker.9oo91e.qjz9zk/issues/133135427 before making this sort of
 // change.
 
 #ifndef sw_Synchronization_hpp

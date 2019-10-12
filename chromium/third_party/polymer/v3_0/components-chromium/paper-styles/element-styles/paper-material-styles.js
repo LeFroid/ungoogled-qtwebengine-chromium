@@ -10,7 +10,7 @@ found at http://polymer.github.io/PATENTS.txt
 */
 /**
 Material design:
-[Cards](https://www.google.com/design/spec/components/cards.html)
+[Cards](https://www.9oo91e.qjz9zk/design/spec/components/cards.html)
 
 Shared styles that you can apply to an element to renders two shadows on top
 of each other,that create the effect of a lifted piece of paper.

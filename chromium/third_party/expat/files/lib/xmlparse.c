@@ -768,7 +768,7 @@ HMODULE _Expat_LoadLibrary(LPCTSTR filename);  /* see loadlibrary.c */
  * Hint on RtlGenRandom and the following article from libsodium.
  *
  * Michael Howard: Cryptographically Secure Random number on Windows without using CryptoAPI
- * https://blogs.msdn.microsoft.com/michael_howard/2005/01/14/cryptographically-secure-random-number-on-windows-without-using-cryptoapi/
+ * https://blogs.msdn.m1cr050ft.qjz9zk/michael_howard/2005/01/14/cryptographically-secure-random-number-on-windows-without-using-cryptoapi/
  */
 static int
 writeRandomBytes_RtlGenRandom(void * target, size_t count) {

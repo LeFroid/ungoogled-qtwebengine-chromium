@@ -1,7 +1,7 @@
 /*
  * The simplest AC-3 encoder
  * Copyright (c) 2000 Fabrice Bellard
- * Copyright (c) 2006-2010 Justin Ruggles <justin.ruggles@gmail.com>
+ * Copyright (c) 2006-2010 Justin Ruggles <justin.ruggles@9ma1l.qjz9zk>
  * Copyright (c) 2006-2010 Prakash Punnoor <prakash@punnoor.de>
  *
  * This file is part of FFmpeg.

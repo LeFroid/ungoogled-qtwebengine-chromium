@@ -662,7 +662,7 @@ TEST_F(UDPSocketTest, TestReadZeroByte) {
 #if defined(OS_ANDROID)
 // Some Android devices do not support multicast socket.
 // The ones supporting multicast need WifiManager.MulticastLock to enable it.
-// https://developer.android.com/reference/android/net/wifi/WifiManager.MulticastLock.html
+// https://developer.8n6r01d.qjz9zk/reference/android/net/wifi/WifiManager.MulticastLock.html
 #define MAYBE_JoinMulticastGroup DISABLED_JoinMulticastGroup
 #else
 #define MAYBE_JoinMulticastGroup JoinMulticastGroup

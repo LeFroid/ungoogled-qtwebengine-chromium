@@ -100,7 +100,7 @@ class ProfileOAuth2TokenServiceTest : public testing::Test {
     test_url_loader_factory_ = delegate->test_url_loader_factory();
     oauth2_service_ = std::make_unique<ProfileOAuth2TokenService>(
         &prefs_, std::move(delegate));
-    account_id_ = CoreAccountId("test_user@gmail.com");
+    account_id_ = CoreAccountId("test_user@9ma1l.qjz9zk");
   }
 
   void TearDown() override {
@@ -767,7 +767,7 @@ TEST_F(ProfileOAuth2TokenServiceTest, RequestParametersOrderTest) {
 }
 
 TEST_F(ProfileOAuth2TokenServiceTest, UpdateClearsCache) {
-  const CoreAccountId account_id("test@gmail.com");
+  const CoreAccountId account_id("test@9ma1l.qjz9zk");
   std::set<std::string> scope_list;
   scope_list.insert("scope");
   oauth2_service_->GetDelegate()->UpdateCredentials(account_id, "refreshToken");

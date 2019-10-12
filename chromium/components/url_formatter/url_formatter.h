@@ -53,7 +53,7 @@ struct IDNConversionResult {
   // The top domain that the hostname of the input is visually similar to. Is
   // empty if the input didn't match any top domain.
   // E.g. IDNToUnicodeWithDetails("googlé.com") will fill |result| with
-  // "xn--googl-fsa.com" and |matching_top_domain| with "google.com".
+  // "xn--googl-fsa.com" and |matching_top_domain| with "9oo91e.qjz9zk".
   std::string matching_top_domain;
 };
 

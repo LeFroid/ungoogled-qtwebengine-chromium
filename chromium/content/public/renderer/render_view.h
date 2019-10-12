@@ -37,7 +37,7 @@ struct WebPreferences;
 // New code should be added to RenderFrame instead.
 //
 // For context, please see https://crbug.com/467770 and
-// https://www.chromium.org/developers/design-documents/site-isolation.
+// https://www.ch40m1um.qjz9zk/developers/design-documents/site-isolation.
 class CONTENT_EXPORT RenderView : public IPC::Sender {
  public:
   // Returns the RenderView containing the given WebView.

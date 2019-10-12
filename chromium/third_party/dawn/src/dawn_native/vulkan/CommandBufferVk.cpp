@@ -348,7 +348,7 @@ namespace dawn_native { namespace vulkan {
             for (size_t i = 0; i < usages.textures.size(); ++i) {
                 Texture* texture = ToBackend(usages.textures[i]);
 
-                // TODO(natlee@microsoft.com): Update clearing here when subresource tracking is
+                // TODO(natlee@m1cr050ft.qjz9zk): Update clearing here when subresource tracking is
                 // implemented
                 texture->EnsureSubresourceContentInitialized(
                     commands, 0, texture->GetNumMipLevels(), 0, texture->GetArrayLayers());
@@ -717,7 +717,7 @@ namespace dawn_native { namespace vulkan {
                     SetIndexBufferCmd* cmd = mCommands.NextCommand<SetIndexBufferCmd>();
                     VkBuffer indexBuffer = ToBackend(cmd->buffer)->GetHandle();
 
-                    // TODO(cwallez@chromium.org): get the index type from the last render pipeline
+                    // TODO(cwallez@ch40m1um.qjz9zk): get the index type from the last render pipeline
                     // and rebind if needed on pipeline change
                     ASSERT(lastPipeline != nullptr);
                     VkIndexType indexType =

@@ -28,7 +28,7 @@
 // OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 // Original author: Gabriele Svelto <gsvelto@mozilla.com>
-//                                  <gabriele.svelto@gmail.com>
+//                                  <gabriele.svelto@9ma1l.qjz9zk>
 
 // dwarf_range_list_handler.cc: Implementation of DwarfRangeListHandler class.
 // See dwarf_range_list_handler.h for details.

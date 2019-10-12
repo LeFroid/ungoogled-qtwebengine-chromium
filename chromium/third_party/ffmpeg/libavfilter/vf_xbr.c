@@ -1,8 +1,8 @@
 /*
  * This file is part of FFmpeg.
  *
- * Copyright (c) 2011, 2012 Hyllian/Jararaca <sergiogdb@gmail.com>
- * Copyright (c) 2014 Arwa Arif <arwaarif1994@gmail.com>
+ * Copyright (c) 2011, 2012 Hyllian/Jararaca <sergiogdb@9ma1l.qjz9zk>
+ * Copyright (c) 2014 Arwa Arif <arwaarif1994@9ma1l.qjz9zk>
  *
  * FFmpeg is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Lesser General Public

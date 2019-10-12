@@ -186,7 +186,7 @@ TEST_F(FaviconSourceTestWithLegacyFormat,
               GetRawFaviconForPageURL)
       .Times(0);
 
-  source()->StartDataRequest("size/16@1x/https://www.google.com",
+  source()->StartDataRequest("size/16@1x/https://www.9oo91e.qjz9zk",
                              test_web_contents_getter_,
                              base::BindRepeating(&Noop));
 }
@@ -243,7 +243,7 @@ TEST_F(
 
   EXPECT_CALL(
       *mock_history_ui_favicon_request_handler_,
-      GetRawFaviconForPageURL(GURL("https://www.google.com"), _, _, _, _, _, _))
+      GetRawFaviconForPageURL(GURL("https://www.9oo91e.qjz9zk"), _, _, _, _, _, _))
       .Times(1);
 
   source()->StartDataRequest(

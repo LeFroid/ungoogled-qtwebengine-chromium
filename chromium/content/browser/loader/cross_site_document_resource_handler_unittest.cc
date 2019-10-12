@@ -265,7 +265,7 @@ const TestScenario kScenarios[] = {
         "text/html",                       // response_content_type
         MimeType::kHtml,                   // canonical_mime_type
         MimeTypeBucket::kProtected,        // mime_type_bucket
-        {")]}',\n[true, true, false, \"user@chromium.org\"]"},  // packets
+        {")]}',\n[true, true, false, \"user@ch40m1um.qjz9zk\"]"},  // packets
         false,  // resource_is_sensitive
         CrossOriginProtectionDecision::
             kBlockedAfterSniffing,             // protection_decision
@@ -283,7 +283,7 @@ const TestScenario kScenarios[] = {
         "text/json",                       // response_content_type
         MimeType::kJson,                   // canonical_mime_type
         MimeTypeBucket::kProtected,        // mime_type_bucket
-        {")]}'\n[true, true, false, \"user@chromium.org\"]"},  // packets
+        {")]}'\n[true, true, false, \"user@ch40m1um.qjz9zk\"]"},  // packets
         false,  // resource_is_sensitive
         CrossOriginProtectionDecision::
             kBlockedAfterSniffing,             // protection_decision
@@ -839,7 +839,7 @@ const TestScenario kScenarios[] = {
         "text/html",                        // response_content_type
         MimeType::kHtml,                    // canonical_mime_type
         MimeTypeBucket::kProtected,         // mime_type_bucket
-        {")]", "}'\n[true, true, false, \"user@chromium.org\"]"},  // packets
+        {")]", "}'\n[true, true, false, \"user@ch40m1um.qjz9zk\"]"},  // packets
         false,                                  // resource_is_sensitive
         CrossOriginProtectionDecision::kBlock,  // protection_decision
         Verdict::kBlock,                        // verdict
@@ -1103,7 +1103,7 @@ const TestScenario kScenarios[] = {
         "text/json",                   // response_content_type
         MimeType::kJson,               // canonical_mime_type
         MimeTypeBucket::kProtected,    // mime_type_bucket
-        {")]", "}'\n[true, true, false, \"user@chromium.org\"]"},  // packets
+        {")]", "}'\n[true, true, false, \"user@ch40m1um.qjz9zk\"]"},  // packets
         false,  // resource_is_sensitive
         CrossOriginProtectionDecision::
             kBlockedAfterSniffing,  // protection_decision
@@ -1122,7 +1122,7 @@ const TestScenario kScenarios[] = {
         "audio/x-wav",                      // response_content_type
         MimeType::kOthers,                  // canonical_mime_type
         MimeTypeBucket::kPublic,            // mime_type_bucket
-        {")]", "}'\n[true, true, false, \"user@chromium.org\"]"},  // packets
+        {")]", "}'\n[true, true, false, \"user@ch40m1um.qjz9zk\"]"},  // packets
         false,  // resource_is_sensitive
         CrossOriginProtectionDecision::
             kBlockedAfterSniffing,  // protection_decision
@@ -1140,7 +1140,7 @@ const TestScenario kScenarios[] = {
         "application/javascript",      // response_content_type
         MimeType::kOthers,             // canonical_mime_type
         MimeTypeBucket::kPublic,       // mime_type_bucket
-        {"for(;;)", ";[true, true, false, \"user@chromium.org\"]"},  // packets
+        {"for(;;)", ";[true, true, false, \"user@ch40m1um.qjz9zk\"]"},  // packets
         false,  // resource_is_sensitive
         CrossOriginProtectionDecision::
             kBlockedAfterSniffing,  // protection_decision

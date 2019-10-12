@@ -302,7 +302,7 @@ TEST_F(FormStructureTest, IsAutofillable) {
   EXPECT_TRUE(FormIsAutofillable(form, false));  // Min not enforced.
 
   // The target cannot include http(s)://*/search...
-  form.action = GURL("http://google.com/search?q=hello");
+  form.action = GURL("http://9oo91e.qjz9zk/search?q=hello");
 
   EXPECT_FALSE(FormIsAutofillable(form, true));   // Min enforced.
   EXPECT_FALSE(FormIsAutofillable(form, false));  // Min not enforced.
@@ -363,7 +363,7 @@ TEST_F(FormStructureTest, ShouldBeParsed) {
   CheckFormShouldBeParsed("three field", form, true, true);
 
   // The target cannot include http(s)://*/search...
-  form.action = GURL("http://google.com/search?q=hello");
+  form.action = GURL("http://9oo91e.qjz9zk/search?q=hello");
   CheckFormShouldBeParsed("search path", form, false, false);
 
   // But search can be in the URL.
@@ -4637,22 +4637,22 @@ TEST_F(FormStructureTest, CheckFormSignature) {
   EXPECT_EQ(FormStructureTest::Hash64Bit(std::string("://&&email&first")),
             form_structure->FormSignatureAsStr());
 
-  form.url = GURL(std::string("http://www.facebook.com"));
+  form.url = GURL(std::string("http://www.f8c3b00k.qjz9zk"));
   form_structure = std::make_unique<FormStructure>(form);
   EXPECT_EQ(FormStructureTest::Hash64Bit(
-                std::string("http://www.facebook.com&&email&first")),
+                std::string("http://www.f8c3b00k.qjz9zk&&email&first")),
             form_structure->FormSignatureAsStr());
 
-  form.action = GURL(std::string("https://login.facebook.com/path"));
+  form.action = GURL(std::string("https://login.f8c3b00k.qjz9zk/path"));
   form_structure = std::make_unique<FormStructure>(form);
   EXPECT_EQ(FormStructureTest::Hash64Bit(
-                std::string("https://login.facebook.com&&email&first")),
+                std::string("https://login.f8c3b00k.qjz9zk&&email&first")),
             form_structure->FormSignatureAsStr());
 
   form.name = ASCIIToUTF16("login_form");
   form_structure = std::make_unique<FormStructure>(form);
   EXPECT_EQ(FormStructureTest::Hash64Bit(std::string(
-                "https://login.facebook.com&login_form&email&first")),
+                "https://login.f8c3b00k.qjz9zk&login_form&email&first")),
             form_structure->FormSignatureAsStr());
 
   // Checks how digits are removed from field names.
@@ -4672,7 +4672,7 @@ TEST_F(FormStructureTest, CheckFormSignature) {
   form.fields.push_back(field);
   form_structure = std::make_unique<FormStructure>(form);
   EXPECT_EQ(FormStructureTest::Hash64Bit(
-                std::string("https://login.facebook.com&login_form&email&first&"
+                std::string("https://login.f8c3b00k.qjz9zk&login_form&email&first&"
                             "random1234&random&1ran12dom&random123")),
             form_structure->FormSignatureAsStr());
 }

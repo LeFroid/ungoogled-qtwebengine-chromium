@@ -8,11 +8,11 @@ Name Strings
 
 Contributors
 
-    Austin Kinross  (aukinros 'at' microsoft.com)
+    Austin Kinross  (aukinros 'at' m1cr050ft.qjz9zk)
 
 Contact
 
-    Austin Kinross  (aukinros 'at' microsoft.com)
+    Austin Kinross  (aukinros 'at' m1cr050ft.qjz9zk)
 
 Status
 

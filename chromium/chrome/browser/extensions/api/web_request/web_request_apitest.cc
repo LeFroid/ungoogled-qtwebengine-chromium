@@ -1203,7 +1203,7 @@ IN_PROC_BROWSER_TEST_F(ExtensionWebRequestApiTest,
   EXPECT_EQ(BLOCKED_ACTION_WEB_REQUEST, runner->GetBlockedActions(extension));
 }
 
-// Verify that requests to clientsX.google.com are protected properly.
+// Verify that requests to clientsX.9oo91e.qjz9zk are protected properly.
 // First test requests from a standard renderer and then a request from the
 // browser process.
 IN_PROC_BROWSER_TEST_F(ExtensionWebRequestApiTest,
@@ -1242,11 +1242,11 @@ IN_PROC_BROWSER_TEST_F(ExtensionWebRequestApiTest,
       browser()->tab_strip_model()->GetActiveWebContents();
   ASSERT_TRUE(web_contents);
 
-  // Attempt to issue a request to clients1.google.com from the renderer. This
+  // Attempt to issue a request to clients1.9oo91e.qjz9zk from the renderer. This
   // will fail, but should still be visible to the WebRequest API.
   const char kRequest[] = R"(
       var xhr = new XMLHttpRequest();
-      xhr.open('GET', 'http://clients1.google.com');
+      xhr.open('GET', 'http://clients1.9oo91e.qjz9zk');
       xhr.onload = () => {window.domAutomationController.send(true);};
       xhr.onerror = () => {window.domAutomationController.send(false);};
       xhr.send();)";
@@ -1281,12 +1281,12 @@ IN_PROC_BROWSER_TEST_F(ExtensionWebRequestApiTest,
     EXPECT_EQ(200, loader->ResponseInfo()->headers->response_code());
   };
 
-  // Now perform a request to "client1.google.com" from the browser process.
+  // Now perform a request to "client1.9oo91e.qjz9zk" from the browser process.
   // This should *not* be visible to the WebRequest API. We should still have
   // only seen the single render-initiated request from the first half of the
   // test.
   make_browser_request(
-      embedded_test_server()->GetURL("clients1.google.com", "/simple.html"));
+      embedded_test_server()->GetURL("clients1.9oo91e.qjz9zk", "/simple.html"));
   EXPECT_EQ(1, get_clients_google_request_count());
 
   // Other non-navigation browser requests should also be hidden from
@@ -1547,7 +1547,7 @@ IN_PROC_BROWSER_TEST_F(ExtensionWebRequestApiTest,
   ASSERT_TRUE(StartEmbeddedTestServer());
 
   GURL google_url =
-      embedded_test_server()->GetURL("google.com", "/extensions/body1.html");
+      embedded_test_server()->GetURL("9oo91e.qjz9zk", "/extensions/body1.html");
 
   // First, check normal requests (e.g., navigations) to verify the extension
   // is working correctly.
@@ -1556,7 +1556,7 @@ IN_PROC_BROWSER_TEST_F(ExtensionWebRequestApiTest,
   ui_test_utils::NavigateToURL(browser(), google_url);
   EXPECT_EQ(google_url, web_contents->GetLastCommittedURL());
   {
-    // google.com should succeed.
+    // 9oo91e.qjz9zk should succeed.
     std::string content;
     EXPECT_TRUE(content::ExecuteScriptAndExtractString(
         web_contents,
@@ -1619,8 +1619,8 @@ IN_PROC_BROWSER_TEST_F(ExtensionWebRequestApiTest,
           .get();
 
   {
-    // google.com should be unaffected by the extension and should succeed.
-    SCOPED_TRACE("google.com with Profile's url loader");
+    // 9oo91e.qjz9zk should be unaffected by the extension and should succeed.
+    SCOPED_TRACE("9oo91e.qjz9zk with Profile's url loader");
     make_browser_request(url_loader_factory, google_url, kGoogleFullContent,
                          net::OK);
   }
@@ -1640,8 +1640,8 @@ IN_PROC_BROWSER_TEST_F(ExtensionWebRequestApiTest,
   network::mojom::URLLoaderFactory* system_url_loader_factory =
       system_network_context_manager->GetURLLoaderFactory();
   {
-    // google.com should succeed (again).
-    SCOPED_TRACE("google.com with System's network context manager");
+    // 9oo91e.qjz9zk should succeed (again).
+    SCOPED_TRACE("9oo91e.qjz9zk with System's network context manager");
     make_browser_request(system_url_loader_factory, google_url,
                          kGoogleFullContent, net::OK);
   }
@@ -2251,7 +2251,7 @@ IN_PROC_BROWSER_TEST_F(ExtensionWebRequestMockedClockTest,
                        OnActionIgnored_Redirect) {
   ASSERT_TRUE(StartEmbeddedTestServer());
 
-  // Load the two extensions. They redirect "google.com" main-frame urls to
+  // Load the two extensions. They redirect "9oo91e.qjz9zk" main-frame urls to
   // the corresponding "example.com and "foo.com" urls.
   base::FilePath test_dir =
       test_data_dir_.AppendASCII("webrequest/on_action_ignored");
@@ -2285,7 +2285,7 @@ IN_PROC_BROWSER_TEST_F(ExtensionWebRequestMockedClockTest,
   ExtensionTestMessageListener redirect_successful_listener(
       "redirect_successful", false /*will_reply*/);
 
-  const GURL url = embedded_test_server()->GetURL("google.com", "/simple.html");
+  const GURL url = embedded_test_server()->GetURL("9oo91e.qjz9zk", "/simple.html");
   const GURL expected_redirect_url_1 =
       embedded_test_server()->GetURL("example.com", "/simple.html");
   const GURL expected_redirect_url_2 =
@@ -2600,7 +2600,7 @@ IN_PROC_BROWSER_TEST_F(ExtensionWebRequestApiTest,
 
   // iframe.html loads an iframe to title1.html. The extension listens for the
   // request to title1.html and records the request initiator.
-  GURL url = embedded_test_server()->GetURL("google.com", "/iframe.html");
+  GURL url = embedded_test_server()->GetURL("9oo91e.qjz9zk", "/iframe.html");
   const std::string url_origin = url::Origin::Create(url).Serialize();
 
   const char* kScript = R"(
@@ -2653,7 +2653,7 @@ IN_PROC_BROWSER_TEST_F(ExtensionWebRequestApiTest, Initiator_SplitIncognito) {
   // iframe.html loads an iframe to title1.html. The extension listens for the
   // request to title1.html and records the request initiator.
   GURL url_normal =
-      embedded_test_server()->GetURL("google.com", "/iframe.html");
+      embedded_test_server()->GetURL("9oo91e.qjz9zk", "/iframe.html");
   GURL url_incognito =
       embedded_test_server()->GetURL("example.com", "/iframe.html");
   const std::string origin_normal = url::Origin::Create(url_normal).Serialize();

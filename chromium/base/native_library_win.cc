@@ -58,7 +58,7 @@ bool AreSearchFlagsAvailable() {
   // GetProcAddress to get the address of the AddDllDirectory,
   // RemoveDllDirectory, or SetDefaultDllDirectories function. If GetProcAddress
   // succeeds, the LOAD_LIBRARY_SEARCH_* flags can be used with LoadLibraryEx.
-  // https://msdn.microsoft.com/en-us/library/windows/desktop/ms684179(v=vs.85).aspx
+  // https://msdn.m1cr050ft.qjz9zk/en-us/library/windows/desktop/ms684179(v=vs.85).aspx
   // The LOAD_LIBRARY_SEARCH_* flags are used in the LoadNativeLibraryHelper
   // method.
   static const auto add_dll_dir_func =

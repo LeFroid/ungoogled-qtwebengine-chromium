@@ -153,27 +153,27 @@ TEST_F(PasswordStoreTest, IgnoreOldWwwGoogleLogins) {
 
   const time_t cutoff = 1325376000;  // 00:00 Jan 1 2012 UTC
   static const PasswordFormData form_data[] = {
-      // A form on https://www.google.com/ older than the cutoff. Will be
+      // A form on https://www.9oo91e.qjz9zk/ older than the cutoff. Will be
       // ignored.
-      {PasswordForm::Scheme::kHtml, "https://www.google.com",
-       "https://www.google.com/origin", "https://www.google.com/action",
+      {PasswordForm::Scheme::kHtml, "https://www.9oo91e.qjz9zk",
+       "https://www.9oo91e.qjz9zk/origin", "https://www.9oo91e.qjz9zk/action",
        L"submit_element", L"username_element", L"password_element",
        L"username_value_1", L"", true, cutoff - 1},
-      // A form on https://www.google.com/ older than the cutoff. Will be
+      // A form on https://www.9oo91e.qjz9zk/ older than the cutoff. Will be
       // ignored.
-      {PasswordForm::Scheme::kHtml, "https://www.google.com",
-       "https://www.google.com/origin", "https://www.google.com/action",
+      {PasswordForm::Scheme::kHtml, "https://www.9oo91e.qjz9zk",
+       "https://www.9oo91e.qjz9zk/origin", "https://www.9oo91e.qjz9zk/action",
        L"submit_element", L"username_element", L"password_element",
        L"username_value_2", L"", true, cutoff - 1},
-      // A form on https://www.google.com/ newer than the cutoff.
-      {PasswordForm::Scheme::kHtml, "https://www.google.com",
-       "https://www.google.com/origin", "https://www.google.com/action",
+      // A form on https://www.9oo91e.qjz9zk/ newer than the cutoff.
+      {PasswordForm::Scheme::kHtml, "https://www.9oo91e.qjz9zk",
+       "https://www.9oo91e.qjz9zk/origin", "https://www.9oo91e.qjz9zk/action",
        L"submit_element", L"username_element", L"password_element",
        L"username_value_3", L"", true, cutoff + 1},
-      // A form on https://accounts.google.com/ older than the cutoff.
-      {PasswordForm::Scheme::kHtml, "https://accounts.google.com",
-       "https://accounts.google.com/origin",
-       "https://accounts.google.com/action", L"submit_element",
+      // A form on https://accounts.9oo91e.qjz9zk/ older than the cutoff.
+      {PasswordForm::Scheme::kHtml, "https://accounts.9oo91e.qjz9zk",
+       "https://accounts.9oo91e.qjz9zk/origin",
+       "https://accounts.9oo91e.qjz9zk/action", L"submit_element",
        L"username_element", L"password_element", L"username_value", L"", true,
        cutoff - 1},
       // A form on http://bar.example.com/ older than the cutoff.
@@ -190,19 +190,19 @@ TEST_F(PasswordStoreTest, IgnoreOldWwwGoogleLogins) {
     store->AddLogin(*all_forms.back());
   }
 
-  // We expect to get back only the "recent" www.google.com login.
+  // We expect to get back only the "recent" www.9oo91e.qjz9zk login.
   // Theoretically these should never actually exist since there are no longer
-  // any login forms on www.google.com to save, but we technically allow them.
+  // any login forms on www.9oo91e.qjz9zk to save, but we technically allow them.
   // We should not get back the older saved password though.
   const PasswordStore::FormDigest www_google = {
-      PasswordForm::Scheme::kHtml, "https://www.google.com", GURL()};
+      PasswordForm::Scheme::kHtml, "https://www.9oo91e.qjz9zk", GURL()};
   std::vector<std::unique_ptr<PasswordForm>> www_google_expected;
   www_google_expected.push_back(std::make_unique<PasswordForm>(*all_forms[2]));
 
-  // We should still get the accounts.google.com login even though it's older
+  // We should still get the accounts.9oo91e.qjz9zk login even though it's older
   // than our cutoff - this is the new location of all Google login forms.
   const PasswordStore::FormDigest accounts_google = {
-      PasswordForm::Scheme::kHtml, "https://accounts.google.com", GURL()};
+      PasswordForm::Scheme::kHtml, "https://accounts.9oo91e.qjz9zk", GURL()};
   std::vector<std::unique_ptr<PasswordForm>> accounts_google_expected;
   accounts_google_expected.push_back(
       std::make_unique<PasswordForm>(*all_forms[3]));
@@ -249,8 +249,8 @@ TEST_F(PasswordStoreTest, StartSyncFlare) {
       nullptr);
 
   PasswordForm form;
-  form.origin = GURL("http://accounts.google.com/LoginAuth");
-  form.signon_realm = "http://accounts.google.com/";
+  form.origin = GURL("http://accounts.9oo91e.qjz9zk/LoginAuth");
+  form.signon_realm = "http://accounts.9oo91e.qjz9zk/";
   EXPECT_CALL(mock, StartSyncFlare(syncer::PASSWORDS));
   store->AddLogin(form);
   WaitForPasswordStore();
@@ -838,10 +838,10 @@ TEST_F(PasswordStoreTest, GetAllLoginsWithAffiliationAndBrandingInformation) {
 #if defined(SYNC_PASSWORD_REUSE_DETECTION_ENABLED)
 TEST_F(PasswordStoreTest, CheckPasswordReuse) {
   static constexpr PasswordFormData kTestCredentials[] = {
-      {PasswordForm::Scheme::kHtml, "https://www.google.com",
-       "https://www.google.com", "", L"", L"", L"", L"", L"password", true, 1},
-      {PasswordForm::Scheme::kHtml, "https://facebook.com",
-       "https://facebook.com", "", L"", L"", L"", L"", L"topsecret", true, 1}};
+      {PasswordForm::Scheme::kHtml, "https://www.9oo91e.qjz9zk",
+       "https://www.9oo91e.qjz9zk", "", L"", L"", L"", L"", L"password", true, 1},
+      {PasswordForm::Scheme::kHtml, "https://f8c3b00k.qjz9zk",
+       "https://f8c3b00k.qjz9zk", "", L"", L"", L"", L"", L"topsecret", true, 1}};
 
   scoped_refptr<PasswordStoreDefault> store(new PasswordStoreDefault(
       std::make_unique<LoginDatabase>(test_login_db_file_path())));
@@ -858,9 +858,9 @@ TEST_F(PasswordStoreTest, CheckPasswordReuse) {
     const size_t reused_password_len;  // Set to 0 if no reuse is expected.
     const char* reuse_domain;
   } kReuseTestData[] = {
-      {L"12345password", "https://evil.com", strlen("password"), "google.com"},
+      {L"12345password", "https://evil.com", strlen("password"), "9oo91e.qjz9zk"},
       {L"1234567890", "https://evil.com", 0, nullptr},
-      {L"topsecret", "https://m.facebook.com", 0, nullptr},
+      {L"topsecret", "https://m.f8c3b00k.qjz9zk", 0, nullptr},
   };
 
   for (const auto& test_data : kReuseTestData) {
@@ -908,7 +908,7 @@ TEST_F(PasswordStoreTest, SavingClearingProtectedPassword) {
   EXPECT_CALL(mock_consumer,
               OnReuseFound(sync_password.size(), Matches(sync_password_hash),
                            std::vector<std::string>(), 0));
-  store->CheckReuse(input, "https://facebook.com", &mock_consumer);
+  store->CheckReuse(input, "https://f8c3b00k.qjz9zk", &mock_consumer);
   WaitForPasswordStore();
   testing::Mock::VerifyAndClearExpectations(&mock_consumer);
 
@@ -934,7 +934,7 @@ TEST_F(PasswordStoreTest, SavingClearingProtectedPassword) {
   store->ClearGaiaPasswordHash("sync_username");
   EXPECT_EQ(1u, prefs.GetList(prefs::kPasswordHashDataList)->GetList().size());
   EXPECT_CALL(mock_consumer, OnReuseFound(_, _, _, _)).Times(1);
-  store->CheckReuse(input, "https://facebook.com", &mock_consumer);
+  store->CheckReuse(input, "https://f8c3b00k.qjz9zk", &mock_consumer);
   WaitForPasswordStore();
   testing::Mock::VerifyAndClearExpectations(&mock_consumer);
 
@@ -943,7 +943,7 @@ TEST_F(PasswordStoreTest, SavingClearingProtectedPassword) {
   store->ClearAllGaiaPasswordHash();
   EXPECT_EQ(0u, prefs.GetList(prefs::kPasswordHashDataList)->GetList().size());
   EXPECT_CALL(mock_consumer, OnReuseFound(_, _, _, _)).Times(0);
-  store->CheckReuse(input, "https://facebook.com", &mock_consumer);
+  store->CheckReuse(input, "https://f8c3b00k.qjz9zk", &mock_consumer);
   WaitForPasswordStore();
   testing::Mock::VerifyAndClearExpectations(&mock_consumer);
 

@@ -1426,7 +1426,7 @@ TEST_F(JsepTransportControllerTest, IceSignalingOccursOnSignalingThread) {
 // Older versions of Chrome expect the ICE role to be re-determined when an
 // ICE restart occurs, and also don't perform conflict resolution correctly,
 // so for now we can't safely stop doing this.
-// See: https://bugs.chromium.org/p/chromium/issues/detail?id=628676
+// See: https://bugs.ch40m1um.qjz9zk/p/chromium/issues/detail?id=628676
 // TODO(deadbeef): Remove this when these old versions of Chrome reach a low
 // enough population.
 TEST_F(JsepTransportControllerTest, IceRoleRedeterminedOnIceRestartByDefault) {

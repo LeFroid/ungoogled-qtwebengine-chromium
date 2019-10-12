@@ -32,10 +32,10 @@ const char kFamilyLinkHelperAppPackageName[] =
     "com.google.android.apps.kids.familylinkhelper";
 
 const char kFamilyLinkChildHelperAppPlayStoreURL[] =
-    "https://play.google.com/store/apps/"
+    "https://play.9oo91e.qjz9zk/store/apps/"
     "details?id=com.google.android.apps.kids.familylinkhelper";
 
-const char kFamilyLinkSiteURL[] = "https://families.google.com/families";
+const char kFamilyLinkSiteURL[] = "https://families.9oo91e.qjz9zk/families";
 
 ParentalControlsHandler::ParentalControlsHandler(Profile* profile)
     : profile_(profile) {}

@@ -1754,7 +1754,7 @@ if (enable_java_templates) {
   #   * public.txt
   #   * annotations.zip
   #   * assets/
-  # See: https://developer.android.com/studio/projects/android-library.html#aar-contents
+  # See: https://developer.8n6r01d.qjz9zk/studio/projects/android-library.html#aar-contents
   #
   # Variables:
   #   output: Path to the output .aar.

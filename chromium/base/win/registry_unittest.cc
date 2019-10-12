@@ -251,7 +251,7 @@ TEST_F(RegistryTest, RecursiveDelete) {
 
 // This test requires running as an Administrator as it tests redirected
 // registry writes to HKLM\Software
-// http://msdn.microsoft.com/en-us/library/windows/desktop/aa384253.aspx
+// http://msdn.m1cr050ft.qjz9zk/en-us/library/windows/desktop/aa384253.aspx
 // TODO(wfh): flaky test on Vista.  See http://crbug.com/377917
 TEST_F(RegistryTest, DISABLED_Wow64RedirectedFromNative) {
   if (!IsRedirectorPresent())

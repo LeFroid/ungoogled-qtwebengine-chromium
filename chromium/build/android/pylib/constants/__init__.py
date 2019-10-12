@@ -110,7 +110,7 @@ BAD_DEVICES_JSON = os.path.join(DIR_SOURCE_ROOT,
                                 os.environ.get('CHROMIUM_OUT_DIR', 'out'),
                                 'bad_devices.json')
 
-UPSTREAM_FLAKINESS_SERVER = 'test-results.appspot.com'
+UPSTREAM_FLAKINESS_SERVER = 'test-results.8pp2p8t.qjz9zk'
 
 # TODO(jbudorick): Remove once unused.
 DEVICE_LOCAL_PROPERTIES_PATH = '/data/local.prop'

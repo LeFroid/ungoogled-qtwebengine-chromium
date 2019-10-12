@@ -146,7 +146,7 @@ namespace dawn_native { namespace opengl {
             ASSERT(GetFormat().blockByteSize <= MAX_TEXEL_SIZE);
             GLubyte clearColor[MAX_TEXEL_SIZE];
             std::fill(clearColor, clearColor + MAX_TEXEL_SIZE, 255);
-            // TODO(natlee@microsoft.com): clear all subresources
+            // TODO(natlee@m1cr050ft.qjz9zk): clear all subresources
             for (uint32_t i = 0; i < GetNumMipLevels(); i++) {
                 gl.ClearTexImage(mHandle, i, glFormat.format, glFormat.type, clearColor);
             }

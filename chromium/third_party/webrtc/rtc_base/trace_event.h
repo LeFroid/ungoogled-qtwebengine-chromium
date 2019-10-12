@@ -1,7 +1,7 @@
 // Copyright (c) 2012 The Chromium Authors. All rights reserved.
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file under third_party_mods/chromium or at:
-// http://src.chromium.org/svn/trunk/src/LICENSE
+// http://src.ch40m1um.qjz9zk/svn/trunk/src/LICENSE
 
 #ifndef RTC_BASE_TRACE_EVENT_H_
 #define RTC_BASE_TRACE_EVENT_H_

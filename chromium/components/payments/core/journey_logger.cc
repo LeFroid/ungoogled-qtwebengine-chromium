@@ -91,7 +91,7 @@ JourneyLogger::~JourneyLogger() {
   // has_recorded_ is false in cases that the page gets closed. To see more
   // details about this case please check sample crash link from
   // dumpWithoutCrash:
-  // https://crash.corp.google.com/browse?q=reportid=%27c1268a7104b25de2%27
+  // https://crash.corp.9oo91e.qjz9zk/browse?q=reportid=%27c1268a7104b25de2%27
   UMA_HISTOGRAM_BOOLEAN("PaymentRequest.JourneyLoggerHasRecorded",
                         has_recorded_);
 }

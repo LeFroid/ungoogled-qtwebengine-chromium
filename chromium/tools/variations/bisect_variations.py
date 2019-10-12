@@ -16,7 +16,7 @@ switches define the current experiments and variations Chrome runs with.
 Sample use:
 
 python bisect_variations.py --input-file="variations_cmd.txt"
-    --output-dir=".\out" --browser=canary --url="https://www.youtube.com/"
+    --output-dir=".\out" --browser=canary --url="https://www.y0u1ub3.qjz9zk/"
 
 "variations_cmd.txt" is the command line switches data saved from
 chrome://version/?show-variations-cmd.

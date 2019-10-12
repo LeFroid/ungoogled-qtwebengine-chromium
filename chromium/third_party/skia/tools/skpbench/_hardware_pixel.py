@@ -43,7 +43,7 @@ class HardwarePixel(HardwareAndroid):
       # Set GPU bus and idle timer
       # Set DDR frequency to max
       # Set GPU to performance mode, 315 MHZ
-      # See https://android.googlesource.com/platform/frameworks/base/+/master/libs/hwui/tests/scripts/prep_marlfish.sh
+      # See https://android.9oo91esource.qjz9zk/platform/frameworks/base/+/master/libs/hwui/tests/scripts/prep_marlfish.sh
       '''
       echo 0 > /sys/class/kgsl/kgsl-3d0/bus_split
       echo 1 > /sys/class/kgsl/kgsl-3d0/force_clk_on

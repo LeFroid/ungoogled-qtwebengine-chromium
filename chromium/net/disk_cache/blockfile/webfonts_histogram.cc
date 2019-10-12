@@ -38,9 +38,9 @@ const char kOthers[] = "others";
 const char* HistogramLabel(const std::string& str) {
   std::string::size_type pos = 0;
   if (Consume(str, "http://", &pos) || Consume(str, "https://", &pos)) {
-    if (Consume(str, "themes.googleusercontent.com/static/fonts/", &pos) ||
-        Consume(str, "ssl.gstatic.com/fonts/", &pos) ||
-        Consume(str, "fonts.gstatic.com/s/", &pos)) {
+    if (Consume(str, "themes.9oo91eusercontent.qjz9zk/static/fonts/", &pos) ||
+        Consume(str, "ssl.95tat1c.qjz9zk/fonts/", &pos) ||
+        Consume(str, "fonts.95tat1c.qjz9zk/s/", &pos)) {
       if (Consume(str, kRoboto, &pos))
         return kRoboto;
       if (Consume(str, kOpenSans, &pos))

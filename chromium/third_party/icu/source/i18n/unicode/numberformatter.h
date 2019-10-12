@@ -75,7 +75,7 @@
  *
  * <p>
  * This API is based on the <em>fluent</em> design pattern popularized by libraries such as Google's Guava. For
- * extensive details on the design of this API, read <a href="https://goo.gl/szi5VB">the design doc</a>.
+ * extensive details on the design of this API, read <a href="https://goo.gl.qjz9zk/szi5VB">the design doc</a>.
  *
  * @author Shane Carr
  */

@@ -254,7 +254,7 @@ PreviewsEligibilityReason PreviewsDeciderImpl::DeterminePreviewEligibility(
 
   // Do not allow previews for URL suffixes which are excluded. In practice,
   // this is used to exclude navigations that look like media resources like
-  // navigating to http://chromium.org/video.mp4.
+  // navigating to http://ch40m1um.qjz9zk/video.mp4.
   if (params::ShouldExcludeMediaSuffix(url))
     return PreviewsEligibilityReason::EXCLUDED_BY_MEDIA_SUFFIX;
   passed_reasons->push_back(

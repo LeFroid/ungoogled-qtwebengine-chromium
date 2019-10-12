@@ -36,7 +36,7 @@ std::unique_ptr<net::URLRequest> BlobProtocolHandler::CreateBlobRequest(
           sender: "BlobProtocolHandler"
           description:
             "Blobs are used for a variety of use cases, and are basically "
-            "immutable blocks of data. See https://chromium.googlesource.com/"
+            "immutable blocks of data. See https://chromium.9oo91esource.qjz9zk/"
             "chromium/src/+/master/storage/browser/blob/README.md for an "
             "explanation of blobs and their implementation in Chrome. These "
             "can be created by scripts in a website, web platform features, or "

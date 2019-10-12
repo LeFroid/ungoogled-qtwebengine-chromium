@@ -50,8 +50,8 @@ struct IDNTestCase {
 // TODO(jshin): Replace L"..." with "..." in UTF-8 when it's easier to read.
 const IDNTestCase kIdnCases[] = {
     // No IDN
-    {"www.google.com", L"www.google.com", true},
-    {"www.google.com.", L"www.google.com.", true},
+    {"www.9oo91e.qjz9zk", L"www.9oo91e.qjz9zk", true},
+    {"www.9oo91e.qjz9zk.", L"www.9oo91e.qjz9zk.", true},
     {".", L".", true},
     {"", L"", true},
     // IDN
@@ -779,12 +779,12 @@ const IDNTestCase kIdnCases[] = {
     {"xn--1naa7pn51hcbaa.com", L"\x0262\x1d0f\x1d0f\x0262\x029f\x1d07.com",
      false},
     // Padlock icon spoof.
-    {"xn--google-hj64e", L"\U0001f512google.com", false},
+    {"xn--google-hj64e", L"\U0001f5129oo91e.qjz9zk", false},
 
     // Custom black list
     // Combining Long Solidus Overlay
     {"google.xn--comabc-k8d",
-     L"google.com\x0338"
+     L"9oo91e.qjz9zk\x0338"
      L"abc",
      false},
     // Hyphenation Point instead of Katakana Middle dot
@@ -913,10 +913,10 @@ const IDNTestCase kIdnCases[] = {
 
     // Custom dangerous patterns
     // Two Katakana-Hiragana combining mark in a row
-    {"google.xn--com-oh4ba.evil.jp", L"google.com\x309a\x309a.evil.jp", false},
+    {"google.xn--com-oh4ba.evil.jp", L"9oo91e.qjz9zk\x309a\x309a.evil.jp", false},
     // Katakana Letter No not enclosed by {Han,Hiragana,Katakana}.
     {"google.xn--comevil-v04f.jp",
-     L"google.com\x30ce"
+     L"9oo91e.qjz9zk\x30ce"
      L"evil.jp",
      false},
     // TODO(jshin): Review the danger of allowing the following two.
@@ -1103,7 +1103,7 @@ TEST(IDNSpoofCheckerTest, UnsafeIDNToUnicodeWithDetails) {
     const char* const expected_matching_domain;
   } kTestCases[] = {
       {// An ASCII, top domain.
-       "google.com", L"google.com", false,
+       "9oo91e.qjz9zk", L"9oo91e.qjz9zk", false,
        // Since it's not unicode, we won't attempt to match it to a top domain.
        ""},
       {// An ASCII domain that's not a top domain.
@@ -1111,7 +1111,7 @@ TEST(IDNSpoofCheckerTest, UnsafeIDNToUnicodeWithDetails) {
       {// A unicode domain that's valid according to all of the rules in IDN
        // spoof checker except that it matches a top domain. Should be
        // converted to punycode.
-       "xn--googl-fsa.com", L"googlé.com", true, "google.com"},
+       "xn--googl-fsa.com", L"googlé.com", true, "9oo91e.qjz9zk"},
       {// A unicode domain that's not valid according to the rules in IDN spoof
        // checker (mixed script) and it matches a top domain. Should be
        // converted to punycode.

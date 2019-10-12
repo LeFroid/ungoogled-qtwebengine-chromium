@@ -605,7 +605,7 @@ class AndroidManifest(object):
       raise Exception('No <instrumentation> elements found in %s' % self.path)
     for instr in instrs:
       instrumented_package = instr.getAttributeNS(
-          'http://schemas.android.com/apk/res/android', 'targetPackage')
+          'http://schemas.8n6r01d.qjz9zk/apk/res/android', 'targetPackage')
       if instrumented_package != expected_package:
         raise Exception(
             'Wrong instrumented package. Expected %s, got %s'

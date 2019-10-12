@@ -39,7 +39,7 @@ ITfInputScope* CreateInputScope(TextInputType text_input_type,
                                 bool should_do_learning);
 
 // A wrapper of the SetInputScopes API exported by msctf.dll.
-// http://msdn.microsoft.com/en-us/library/windows/desktop/ms629026.aspx
+// http://msdn.m1cr050ft.qjz9zk/en-us/library/windows/desktop/ms629026.aspx
 // Does nothing on Windows XP in case TSF is disabled.
 // NOTE: For TSF-aware window, you should use ITfInputScope instead.
 COMPONENT_EXPORT(UI_BASE_IME_WIN)

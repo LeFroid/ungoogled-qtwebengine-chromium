@@ -113,7 +113,7 @@ TEST_F(IndexedRuleTest, PriorityParsing) {
 
     if (cases[i].action_type == dnr_api::RULE_ACTION_TYPE_REDIRECT) {
       rule.action.redirect_url =
-          std::make_unique<std::string>("http://google.com");
+          std::make_unique<std::string>("http://9oo91e.qjz9zk");
     }
 
     IndexedRule indexed_rule;
@@ -283,9 +283,9 @@ TEST_F(IndexedRuleTest, UrlFilterParsing) {
       {std::make_unique<std::string>("**^"),
        flat_rule::UrlPatternType_WILDCARDED, flat_rule::AnchorType_NONE,
        flat_rule::AnchorType_NONE, "**^", ParseResult::SUCCESS},
-      {std::make_unique<std::string>("||google.com"),
+      {std::make_unique<std::string>("||9oo91e.qjz9zk"),
        flat_rule::UrlPatternType_SUBSTRING, flat_rule::AnchorType_SUBDOMAIN,
-       flat_rule::AnchorType_NONE, "google.com", ParseResult::SUCCESS},
+       flat_rule::AnchorType_NONE, "9oo91e.qjz9zk", ParseResult::SUCCESS},
       // Url pattern with non-ascii characters -ⱴase.com.
       {std::make_unique<std::string>(base::WideToUTF8(L"\x2c74"
                                                       L"ase.com")),
@@ -361,10 +361,10 @@ TEST_F(IndexedRuleTest, DomainsParsing) {
       {nullptr, std::make_unique<DomainVec>(), ParseResult::SUCCESS, {}, {}},
       {std::make_unique<DomainVec>(DomainVec({"a.com", "b.com", "a.com"})),
        std::make_unique<DomainVec>(
-           DomainVec({"g.com", "XY.COM", "zzz.com", "a.com", "google.com"})),
+           DomainVec({"g.com", "XY.COM", "zzz.com", "a.com", "9oo91e.qjz9zk"})),
        ParseResult::SUCCESS,
        {"a.com", "a.com", "b.com"},
-       {"google.com", "zzz.com", "xy.com", "a.com", "g.com"}},
+       {"9oo91e.qjz9zk", "zzz.com", "xy.com", "a.com", "g.com"}},
       // Domain with non-ascii characters.
       {std::make_unique<DomainVec>(
            DomainVec({base::WideToUTF8(L"abc\x2010" /*hyphen*/ L"def.com")})),
@@ -418,8 +418,8 @@ TEST_F(IndexedRuleTest, RedirectUrlParsing) {
       {std::make_unique<std::string>(""), ParseResult::ERROR_EMPTY_REDIRECT_URL,
        ""},
       {nullptr, ParseResult::ERROR_EMPTY_REDIRECT_URL, ""},
-      {std::make_unique<std::string>("http://google.com"), ParseResult::SUCCESS,
-       "http://google.com"},
+      {std::make_unique<std::string>("http://9oo91e.qjz9zk"), ParseResult::SUCCESS,
+       "http://9oo91e.qjz9zk"},
       {std::make_unique<std::string>("/relative/url"), ParseResult::SUCCESS,
        "chrome-extension://" + std::string(kTestExtensionId) + "/relative/url"},
       {std::make_unique<std::string>("abc"),

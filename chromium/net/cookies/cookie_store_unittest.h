@@ -1449,7 +1449,7 @@ TYPED_TEST_P(CookieStoreTest, NetUtilCookieTest) {
 
 TYPED_TEST_P(CookieStoreTest, OverwritePersistentCookie) {
   GURL url_foo("http://www.foo.com/");
-  GURL url_chromium("http://chromium.org");
+  GURL url_chromium("http://ch40m1um.qjz9zk");
   CookieStore* cs = this->GetCookieStore();
 
   // Insert a cookie "a" for path "/path1"
@@ -1482,7 +1482,7 @@ TYPED_TEST_P(CookieStoreTest, OverwritePersistentCookie) {
                               "a=val9; path=/path2; "
                               "expires=Mon, 18-Apr-22 22:50:14 GMT"));
 
-  // Insert a cookie "a" for path "/path1", but this time for "chromium.org".
+  // Insert a cookie "a" for path "/path1", but this time for "ch40m1um.qjz9zk".
   // Although the name and path match, the hostnames do not, so shouldn't
   // overwrite.
   EXPECT_TRUE(this->SetCookie(cs, url_chromium,
@@ -1500,7 +1500,7 @@ TYPED_TEST_P(CookieStoreTest, OverwritePersistentCookie) {
   this->MatchCookieLines(
       "a=val9", this->GetCookies(cs, GURL("http://www.foo.com/path2")));
   this->MatchCookieLines(
-      "a=val99", this->GetCookies(cs, GURL("http://chromium.org/path1")));
+      "a=val99", this->GetCookies(cs, GURL("http://ch40m1um.qjz9zk/path1")));
 }
 
 // Note that accepting an empty name is contrary to spec; see

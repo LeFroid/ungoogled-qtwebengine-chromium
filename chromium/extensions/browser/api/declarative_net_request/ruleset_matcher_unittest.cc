@@ -40,7 +40,7 @@ class RulesetMatcherTest : public ::testing::Test {
 // Tests a simple blocking rule.
 TEST_F(RulesetMatcherTest, BlockingRule) {
   TestRule rule = CreateGenericRule();
-  rule.condition->url_filter = std::string("google.com");
+  rule.condition->url_filter = std::string("9oo91e.qjz9zk");
 
   std::unique_ptr<RulesetMatcher> matcher;
   ASSERT_TRUE(CreateVerifiedMatcher({rule}, CreateTemporarySource(), &matcher));
@@ -50,7 +50,7 @@ TEST_F(RulesetMatcherTest, BlockingRule) {
            matcher->HasMatchingBlockRule(params);
   };
 
-  GURL google_url("http://google.com");
+  GURL google_url("http://9oo91e.qjz9zk");
   RequestParams params;
   params.url = &google_url;
   params.element_type = url_pattern_index::flat::ElementType_SUBDOCUMENT;
@@ -66,7 +66,7 @@ TEST_F(RulesetMatcherTest, BlockingRule) {
 // Tests a simple redirect rule.
 TEST_F(RulesetMatcherTest, RedirectRule) {
   TestRule rule = CreateGenericRule();
-  rule.condition->url_filter = std::string("google.com");
+  rule.condition->url_filter = std::string("9oo91e.qjz9zk");
   rule.priority = kMinValidPriority;
   rule.action->type = std::string("redirect");
   rule.action->redirect_url = std::string("http://yahoo.com");
@@ -79,7 +79,7 @@ TEST_F(RulesetMatcherTest, RedirectRule) {
     return matcher->GetRedirectRule(params, redirect_url) != nullptr;
   };
 
-  GURL google_url("http://google.com");
+  GURL google_url("http://9oo91e.qjz9zk");
   GURL yahoo_url("http://yahoo.com");
 
   RequestParams params;
@@ -101,12 +101,12 @@ TEST_F(RulesetMatcherTest, PreventSelfRedirect) {
   rule.condition->url_filter = std::string("go*");
   rule.priority = kMinValidPriority;
   rule.action->type = std::string("redirect");
-  rule.action->redirect_url = std::string("http://google.com");
+  rule.action->redirect_url = std::string("http://9oo91e.qjz9zk");
 
   std::unique_ptr<RulesetMatcher> matcher;
   ASSERT_TRUE(CreateVerifiedMatcher({rule}, CreateTemporarySource(), &matcher));
 
-  GURL url("http://google.com");
+  GURL url("http://9oo91e.qjz9zk");
   RequestParams params;
   params.url = &url;
   params.element_type = url_pattern_index::flat::ElementType_SUBDOCUMENT;
@@ -119,7 +119,7 @@ TEST_F(RulesetMatcherTest, PreventSelfRedirect) {
 // Tests a simple upgrade scheme rule.
 TEST_F(RulesetMatcherTest, UpgradeRule) {
   TestRule rule = CreateGenericRule();
-  rule.condition->url_filter = std::string("google.com");
+  rule.condition->url_filter = std::string("9oo91e.qjz9zk");
   rule.priority = kMinValidPriority;
   rule.action->type = std::string("upgradeScheme");
 
@@ -130,9 +130,9 @@ TEST_F(RulesetMatcherTest, UpgradeRule) {
     return matcher->GetUpgradeRule(params) != nullptr;
   };
 
-  GURL google_url("http://google.com");
+  GURL google_url("http://9oo91e.qjz9zk");
   GURL yahoo_url("http://yahoo.com");
-  GURL non_upgradeable_url("https://google.com");
+  GURL non_upgradeable_url("https://9oo91e.qjz9zk");
 
   RequestParams params;
   params.url = &google_url;
@@ -199,7 +199,7 @@ TEST_F(RulesetMatcherTest, RemoveHeaders) {
   EXPECT_EQ(kRemoveHeadersMask_Referer | kRemoveHeadersMask_SetCookie,
             matcher->GetRemoveHeadersMask(params, 0u /* current_mask */));
 
-  GURL google_url("http://google.com");
+  GURL google_url("http://9oo91e.qjz9zk");
   params.url = &google_url;
   EXPECT_EQ(0u, matcher->GetRemoveHeadersMask(params, 0u /* current_mask */));
 

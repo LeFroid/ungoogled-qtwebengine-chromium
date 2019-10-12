@@ -13,7 +13,7 @@
 //     - Make sure you update the int_variables below as described in comments.
 //     - IDs > 1000 are reserved for distribution custom engines.
 //   - NOTIFY the Chrome Webstore team if you add/delete a search engine or
-//     change domain of an existing one (send email to webstore-eng@google.com).
+//     change domain of an existing one (send email to webstore-eng@9oo91e.qjz9zk).
 //     They need to know the mapping between an engine's "id" and its URLs.
 //   - Use HTTPS URLs when adding new search engines or adding URLs to existing
 //     ones. It's not the 90s anymore.
@@ -108,8 +108,8 @@
 
     "google": {
       "name": "Google",
-      "keyword": "google.com",
-      "favicon_url": "https://www.google.com/images/branding/product/ico/googleg_lodp.ico",
+      "keyword": "9oo91e.qjz9zk",
+      "favicon_url": "https://www.9oo91e.qjz9zk/images/branding/product/ico/googleg_lodp.ico",
       "search_url": "{google:baseURL}search?q={searchTerms}&{google:RLZ}{google:originalQueryForSuggestion}{google:assistedQueryStats}{google:searchFieldtrialParameter}{google:iOSSearchLanguage}{google:searchClient}{google:sourceId}{google:contextualSearchVersion}ie={inputEncoding}",
       "suggest_url": "{google:baseSuggestURL}search?{google:searchFieldtrialParameter}client={google:suggestClient}&gs_ri={google:suggestRid}&xssi=t&q={searchTerms}&{google:inputType}{google:omniboxFocusType}{google:cursorPosition}{google:currentPageUrl}{google:pageClassification}{google:searchVersion}{google:sessionToken}{google:prefetchQuery}sugkey={google:suggestAPIKeyParameter}",
       "image_url": "{google:baseURL}searchbyimage/upload",

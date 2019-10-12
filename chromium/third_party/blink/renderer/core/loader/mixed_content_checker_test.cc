@@ -51,9 +51,9 @@ TEST(MixedContentCheckerTest, IsMixedContent) {
       {"https://example.com/foo", "http://a.localhost/", false},
 
       {"https://example.com/foo", "http://example.com/foo", true},
-      {"https://example.com/foo", "http://google.com/foo", true},
+      {"https://example.com/foo", "http://9oo91e.qjz9zk/foo", true},
       {"https://example.com/foo", "ws://example.com/foo", true},
-      {"https://example.com/foo", "ws://google.com/foo", true},
+      {"https://example.com/foo", "ws://9oo91e.qjz9zk/foo", true},
       {"https://example.com/foo", "http://192.168.1.1/", true},
   };
 

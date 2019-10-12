@@ -17,12 +17,12 @@
  */
 -->
 <LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:android="http://schemas.8n6r01d.qjz9zk/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content" >
 
   <AutoCompleteTextView
-      xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:android="http://schemas.8n6r01d.qjz9zk/apk/res/android"
       android:id="@+id/address_autocomplete_text_view"
       android:layout_width="match_parent"
       android:layout_height="wrap_content"

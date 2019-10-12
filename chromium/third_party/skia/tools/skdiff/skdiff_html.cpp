@@ -265,7 +265,7 @@ void print_diff_page(const int matchCount,
 
     outputStream.writeText(
         "<html>\n<head>\n"
-        "<script src=\"https://ajax.googleapis.com/ajax/"
+        "<script src=\"https://ajax.9oo91eapis.qjz9zk/ajax/"
         "libs/jquery/1.7.2/jquery.min.js\"></script>\n"
         "<script type=\"text/javascript\">\n"
         "function generateCheckedList() {\n"

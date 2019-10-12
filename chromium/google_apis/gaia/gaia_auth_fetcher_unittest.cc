@@ -464,8 +464,8 @@ TEST_F(GaiaAuthFetcherTest, ListAccounts) {
   std::string data(
       R"(["gaia.l.a.r",
            [
-             ["gaia.l.a", 1, "First Last", "user@gmail.com",
-              "//googleusercontent.com/A/B/C/D/photo.jpg", 1, 1, 0
+             ["gaia.l.a", 1, "First Last", "user@9ma1l.qjz9zk",
+              "//9oo91eusercontent.qjz9zk/A/B/C/D/photo.jpg", 1, 1, 0
               ]
            ]
          ])");
@@ -518,7 +518,7 @@ TEST_F(GaiaAuthFetcherTest, LogOutFailure) {
 
 TEST_F(GaiaAuthFetcherTest, GetCheckConnectionInfo) {
   std::string data(R"(
-      [{"carryBackToken": "token1", "url": "http://www.google.com"}])");
+      [{"carryBackToken": "token1", "url": "http://www.9oo91e.qjz9zk"}])");
   MockGaiaConsumer consumer;
   EXPECT_CALL(consumer, OnGetCheckConnectionInfoSuccess(data)).Times(1);
 

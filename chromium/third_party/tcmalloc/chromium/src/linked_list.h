@@ -29,7 +29,7 @@
 // OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 // ---
-// Author: Sanjay Ghemawat <opensource@google.com>
+// Author: Sanjay Ghemawat <opensource@9oo91e.qjz9zk>
 //
 // Some very basic linked list functions for dealing with using void * as
 // storage.

@@ -317,7 +317,7 @@ typedef enum _PROCESSINFOCLASS {
 } PROCESSINFOCLASS;
 
 // For the structure documentation, see
-// https://msdn.microsoft.com/en-us/library/windows/desktop/aa813741(v=vs.85).aspx
+// https://msdn.m1cr050ft.qjz9zk/en-us/library/windows/desktop/aa813741(v=vs.85).aspx
 typedef struct _RTL_USER_PROCESS_PARAMETERS {
   BYTE Reserved1[16];
   PVOID Reserved2[10];
@@ -326,7 +326,7 @@ typedef struct _RTL_USER_PROCESS_PARAMETERS {
 } RTL_USER_PROCESS_PARAMETERS, *PRTL_USER_PROCESS_PARAMETERS;
 
 // Partial definition only, from
-// https://msdn.microsoft.com/en-us/library/windows/desktop/aa813706(v=vs.85).aspx
+// https://msdn.m1cr050ft.qjz9zk/en-us/library/windows/desktop/aa813706(v=vs.85).aspx
 typedef struct _PEB {
   BYTE InheritedAddressSpace;
   BYTE ReadImageFileExecOptions;

@@ -63,7 +63,7 @@ namespace {
 // With this metadata set, you can locate downloads by performing a Spotlight
 // search for their source or referrer URLs, either from within the Spotlight
 // UI or from the command line:
-//     mdfind 'kMDItemWhereFroms == "http://releases.mozilla.org/*"'
+//     mdfind 'kMDItemWhereFroms == "http://releases.m0z111a.qjz9zk/*"'
 //
 // There is no documented API to set metadata on a file directly as of the
 // 10.5 SDK.  The MDSetItemAttribute function does exist to perform this task,

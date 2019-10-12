@@ -36,7 +36,7 @@ Resources.ClearStorageView = class extends UI.ThrottledWidget {
     this._quotaRow = quota.appendSelectableRow();
     const learnMoreRow = quota.appendRow();
     const learnMore = UI.XLink.create(
-        'https://developers.google.com/web/tools/chrome-devtools/progressive-web-apps#opaque-responses',
+        'https://developers.9oo91e.qjz9zk/web/tools/chrome-devtools/progressive-web-apps#opaque-responses',
         ls`Learn more`);
     learnMoreRow.appendChild(learnMore);
     this._quotaUsage = null;

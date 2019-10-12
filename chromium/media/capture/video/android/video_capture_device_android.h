@@ -37,7 +37,7 @@ class CAPTURE_EXPORT VideoCaptureDeviceAndroid : public VideoCaptureDevice {
   // GENERATED_JAVA_ENUM_PACKAGE: org.chromium.media
   enum AndroidImageFormat {
     // Android graphics ImageFormat mapping, see reference in:
-    // http://developer.android.com/reference/android/graphics/ImageFormat.html
+    // http://developer.8n6r01d.qjz9zk/reference/android/graphics/ImageFormat.html
     ANDROID_IMAGE_FORMAT_NV21 = 17,
     ANDROID_IMAGE_FORMAT_YUV_420_888 = 35,
     ANDROID_IMAGE_FORMAT_YV12 = 842094169,

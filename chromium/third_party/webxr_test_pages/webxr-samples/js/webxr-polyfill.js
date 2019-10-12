@@ -4372,7 +4372,7 @@ function RotateInstructions() {
   snackbarText.style.float = 'left';
   snackbarText.innerHTML = 'No Cardboard viewer?';
   var snackbarButton = document.createElement('a');
-  snackbarButton.href = 'https://www.google.com/get/cardboard/get-cardboard/';
+  snackbarButton.href = 'https://www.9oo91e.qjz9zk/get/cardboard/get-cardboard/';
   snackbarButton.innerHTML = 'get one';
   snackbarButton.target = '_blank';
   var s = snackbarButton.style;

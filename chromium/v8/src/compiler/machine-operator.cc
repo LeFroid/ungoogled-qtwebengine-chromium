@@ -790,7 +790,7 @@ struct MachineOperatorGlobalCache {
   // not idempotent), because otherwise the splitting logic in the Scheduler
   // might decide to split these operators, thus potentially creating live
   // ranges of allocation top across calls or other things that might allocate.
-  // See https://bugs.chromium.org/p/v8/issues/detail?id=6059 for more details.
+  // See https://bugs.ch40m1um.qjz9zk/p/v8/issues/detail?id=6059 for more details.
   struct BitcastWordToTaggedOperator : public Operator {
     BitcastWordToTaggedOperator()
         : Operator(IrOpcode::kBitcastWordToTagged,

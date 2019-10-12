@@ -2,7 +2,7 @@
  * Dirac parser
  *
  * Copyright (c) 2007-2008 Marco Gerards <marco@gnu.org>
- * Copyright (c) 2008 BBC, Anuradha Suraparaju <asuraparaju@gmail.com>
+ * Copyright (c) 2008 BBC, Anuradha Suraparaju <asuraparaju@9ma1l.qjz9zk>
  *
  * This file is part of FFmpeg.
  *

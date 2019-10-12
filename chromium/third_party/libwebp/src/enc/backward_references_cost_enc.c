@@ -11,7 +11,7 @@
 // The algorithm is similar to the Zopfli compression algorithm but tailored to
 // images.
 //
-// Author: Vincent Rabaud (vrabaud@google.com)
+// Author: Vincent Rabaud (vrabaud@9oo91e.qjz9zk)
 //
 
 #include <assert.h>

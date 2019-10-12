@@ -43,7 +43,7 @@ class CreditCard;
 // The sync server generates the data, and the client can only download it. No
 // data upload is possible. Chrome generates the corresponding metadata locally
 // and uses the sync server to propagate the metadata to the other instances of
-// Chrome. See the design doc at https://goo.gl/LS2y6M for more details.
+// Chrome. See the design doc at https://goo.gl.qjz9zk/LS2y6M for more details.
 class AutofillWalletMetadataSyncableService
     : public base::SupportsUserData::Data,
       public syncer::SyncableService,

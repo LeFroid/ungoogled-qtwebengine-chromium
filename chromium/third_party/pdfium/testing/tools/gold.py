@@ -27,7 +27,7 @@ def _ParseKeyValuePairs(kv_str):
 # The expected format for the json is:
 # {
 #   "commit": {
-#     "author": "John Doe (jdoe@chromium.org)",
+#     "author": "John Doe (jdoe@ch40m1um.qjz9zk)",
 #     "commit_time": 1510598123,
 #     "hash": "cee39e6e90c219cc91f2c94a912a06977f4461a0"
 #   },

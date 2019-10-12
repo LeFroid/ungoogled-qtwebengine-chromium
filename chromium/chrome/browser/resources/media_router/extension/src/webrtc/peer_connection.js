@@ -222,7 +222,7 @@ mr.webrtc.PeerConnection = class {
    */
   getPeerConnectionConfig_(turnCreds) {
     const server = {};
-    server['url'] = 'stun:stun.l.google.com:19302';
+    server['url'] = 'stun:stun.l.9oo91e.qjz9zk:19302';
     const config = {};
     config['iceServers'] = [server].concat(turnCreds);
     return /** @type {!RTCConfiguration} */ (config);

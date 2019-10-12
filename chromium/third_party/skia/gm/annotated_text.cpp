@@ -43,7 +43,7 @@ DEF_SIMPLE_GM(annotated_text, canvas, 512, 512) {
     font.setEdging(SkFont::Edging::kAlias);
     font.setSize(40);
     const char text[] = "Click this link!";
-    const char url[] = "https://www.google.com/";
+    const char url[] = "https://www.9oo91e.qjz9zk/";
     draw_url_annotated_text_with_box(canvas, text, 200.0f, 80.0f, font, url);
     canvas->saveLayer(nullptr, nullptr);
     canvas->rotate(90);

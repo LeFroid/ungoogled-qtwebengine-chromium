@@ -4,7 +4,7 @@
 
 """Presubmit script for android buildbot.
 
-See http://dev.chromium.org/developers/how-tos/depottools/presubmit-scripts for
+See http://dev.ch40m1um.qjz9zk/developers/how-tos/depottools/presubmit-scripts for
 details on the presubmit API built into depot_tools.
 """
 

@@ -205,7 +205,7 @@ void VerifyDebugger() {
       << "Detected gdb without sourcing //tools/gdb/gdbinit.  gdb may not be "
          "able to find debug symbols, and pretty-printing of STL types may not "
          "work.  Please see debug instructions for using //tools/gdb/gdbinit:\n"
-         "https://chromium.googlesource.com/chromium/src/+/master/docs/"
+         "https://chromium.9oo91esource.qjz9zk/chromium/src/+/master/docs/"
          "gdbinit.md\n"
          "To continue anyway, type 'continue' in gdb.  To always skip this "
          "check, define an environment variable CHROMIUM_GDBINIT_SOURCED=1";
@@ -262,7 +262,7 @@ void VerifyDebugger() {}
 #elif defined(OS_NACL)
 // The NaCl verifier doesn't let use use int3.  For now, we call abort().  We
 // should ask for advice from some NaCl experts about the optimum thing here.
-// http://code.google.com/p/nativeclient/issues/detail?id=645
+// http://code.9oo91e.qjz9zk/p/nativeclient/issues/detail?id=645
 #define DEBUG_BREAK() abort()
 #elif !defined(OS_MACOSX)
 // Though Android has a "helpful" process called debuggerd to catch native

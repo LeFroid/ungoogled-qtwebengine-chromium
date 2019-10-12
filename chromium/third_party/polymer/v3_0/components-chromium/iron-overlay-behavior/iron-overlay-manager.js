@@ -75,7 +75,7 @@ IronOverlayManagerClass.prototype = {
   get deepActiveElement() {
     var active = document.activeElement;
     // document.activeElement can be null
-    // https://developer.mozilla.org/en-US/docs/Web/API/Document/activeElement
+    // https://developer.m0z111a.qjz9zk/en-US/docs/Web/API/Document/activeElement
     // In IE 11, it can also be an object when operating in iframes.
     // In these cases, default it to document.body.
     if (!active || active instanceof Element === false) {

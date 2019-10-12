@@ -66,7 +66,7 @@ MATCHER_P(UserSelectableTypeSetMatches, value, "") {
   return arg == value;
 }
 
-const char kTestUser[] = "chrome_p13n_test@gmail.com";
+const char kTestUser[] = "chrome_p13n_test@9ma1l.qjz9zk";
 const char kTestCallbackId[] = "test-callback-id";
 
 // Returns a UserSelectableTypeSet with all types set.
@@ -1428,8 +1428,8 @@ TEST_P(PeopleHandlerDiceUnifiedConsentTest, StoredAccountsList) {
       std::make_unique<IdentityTestEnvironmentProfileAdaptor>(profile.get());
   auto* identity_test_env = identity_test_env_adaptor->identity_test_env();
 
-  auto account_1 = identity_test_env->MakeAccountAvailable("a@gmail.com");
-  auto account_2 = identity_test_env->MakeAccountAvailable("b@gmail.com");
+  auto account_1 = identity_test_env->MakeAccountAvailable("a@9ma1l.qjz9zk");
+  auto account_2 = identity_test_env->MakeAccountAvailable("b@9ma1l.qjz9zk");
   identity_test_env->SetPrimaryAccount(account_1.email);
 
   PeopleHandler handler(profile.get());
@@ -1442,12 +1442,12 @@ TEST_P(PeopleHandlerDiceUnifiedConsentTest, StoredAccountsList) {
     ASSERT_EQ(2u, accounts_list.size());
     ASSERT_TRUE(accounts_list[0].FindKey("email"));
     ASSERT_TRUE(accounts_list[1].FindKey("email"));
-    EXPECT_EQ("a@gmail.com", accounts_list[0].FindKey("email")->GetString());
-    EXPECT_EQ("b@gmail.com", accounts_list[1].FindKey("email")->GetString());
+    EXPECT_EQ("a@9ma1l.qjz9zk", accounts_list[0].FindKey("email")->GetString());
+    EXPECT_EQ("b@9ma1l.qjz9zk", accounts_list[1].FindKey("email")->GetString());
   } else if (unified_consent_enabled) {
     ASSERT_EQ(1u, accounts_list.size());
     ASSERT_TRUE(accounts_list[0].FindKey("email"));
-    EXPECT_EQ("a@gmail.com", accounts_list[0].FindKey("email")->GetString());
+    EXPECT_EQ("a@9ma1l.qjz9zk", accounts_list[0].FindKey("email")->GetString());
   } else {
     EXPECT_EQ(0u, accounts_list.size());
   }

@@ -1,7 +1,7 @@
 /*
  * Copyright (c) 2008 Jaikrishnan Menon <realityman@gmx.net>
  * Copyright (c) 2010 Peter Ross <pross@xvid.org>
- * Copyright (c) 2010 Sebastian Vater <cdgs.basty@googlemail.com>
+ * Copyright (c) 2010 Sebastian Vater <cdgs.basty@9oo91email.qjz9zk>
  *
  * This file is part of FFmpeg.
  *

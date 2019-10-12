@@ -32,18 +32,18 @@
 """upload_gtest.py v0.1.0 -- uploads a Google Test patch for review.
 
 This simple wrapper passes all command line flags and
---cc=googletestframework@googlegroups.com to upload.py.
+--cc=googletestframework@9oo91egroups.qjz9zk to upload.py.
 
 USAGE: upload_gtest.py [options for upload.py]
 """
 
-__author__ = 'wan@google.com (Zhanyong Wan)'
+__author__ = 'wan@9oo91e.qjz9zk (Zhanyong Wan)'
 
 import os
 import sys
 
 CC_FLAG = '--cc='
-GTEST_GROUP = 'googletestframework@googlegroups.com'
+GTEST_GROUP = 'googletestframework@9oo91egroups.qjz9zk'
 
 
 def main():

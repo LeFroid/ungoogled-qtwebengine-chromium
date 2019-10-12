@@ -263,14 +263,14 @@ bool IsDirectory(const char *filename)
 bool IsDebuggerAttached()
 {
     // This could have a fuller implementation.
-    // See https://cs.chromium.org/chromium/src/base/debug/debugger_posix.cc
+    // See https://cs.ch40m1um.qjz9zk/chromium/src/base/debug/debugger_posix.cc
     return false;
 }
 
 void BreakDebugger()
 {
     // This could have a fuller implementation.
-    // See https://cs.chromium.org/chromium/src/base/debug/debugger_posix.cc
+    // See https://cs.ch40m1um.qjz9zk/chromium/src/base/debug/debugger_posix.cc
     abort();
 }
 }  // namespace angle

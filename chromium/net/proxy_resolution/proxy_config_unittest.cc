@@ -73,12 +73,12 @@ TEST(ProxyConfigTest, Equals) {
 
   // Test |ProxyConfig::bypass_rules|.
 
-  config2.proxy_rules().bypass_rules.AddRuleFromString("*.google.com");
+  config2.proxy_rules().bypass_rules.AddRuleFromString("*.9oo91e.qjz9zk");
 
   EXPECT_FALSE(config1.Equals(config2));
   EXPECT_FALSE(config2.Equals(config1));
 
-  config1.proxy_rules().bypass_rules.AddRuleFromString("*.google.com");
+  config1.proxy_rules().bypass_rules.AddRuleFromString("*.9oo91e.qjz9zk");
 
   EXPECT_TRUE(config1.Equals(config2));
   EXPECT_TRUE(config2.Equals(config1));
@@ -415,8 +415,8 @@ TEST_F(ProxyConfigWebSocketTest, IgnoresFtpProxy) {
 
 TEST_F(ProxyConfigWebSocketTest, ObeysBypassRules) {
   ParseFromString("http=proxy:3128 ; https=sslproxy:3128");
-  rules_.bypass_rules.AddRuleFromString(".chromium.org");
-  Apply(GURL("wss://codereview.chromium.org/feed"));
+  rules_.bypass_rules.AddRuleFromString(".ch40m1um.qjz9zk");
+  Apply(GURL("wss://codereview.ch40m1um.qjz9zk/feed"));
   EXPECT_EQ("DIRECT", ToPacString());
 }
 

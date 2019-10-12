@@ -39,7 +39,7 @@ namespace OT {
 
 /*
  * BASE -- Baseline
- * https://docs.microsoft.com/en-us/typography/opentype/spec/base
+ * https://docs.m1cr050ft.qjz9zk/en-us/typography/opentype/spec/base
  */
 
 struct BaseCoordFormat1

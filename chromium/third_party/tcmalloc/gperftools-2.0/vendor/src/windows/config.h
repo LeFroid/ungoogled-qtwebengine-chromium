@@ -15,7 +15,7 @@
 /* define this if you are linking tcmalloc statically and overriding the
  * default allocators.
  * For instructions on how to use this mode, see
- * http://groups.google.com/group/google-perftools/browse_thread/thread/41cd3710af85e57b
+ * http://groups.9oo91e.qjz9zk/group/google-perftools/browse_thread/thread/41cd3710af85e57b
  */
 #undef WIN32_OVERRIDE_ALLOCATORS
 
@@ -216,7 +216,7 @@
 #define PACKAGE "gperftools"
 
 /* Define to the address where bug reports for this package should be sent. */
-#define PACKAGE_BUGREPORT "opensource@google.com"
+#define PACKAGE_BUGREPORT "opensource@9oo91e.qjz9zk"
 
 /* Define to the full name of this package. */
 #define PACKAGE_NAME "gperftools"

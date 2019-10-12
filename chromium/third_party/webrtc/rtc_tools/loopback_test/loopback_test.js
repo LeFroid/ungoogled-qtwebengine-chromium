@@ -53,7 +53,7 @@ function LoopbackTest(
 
   // FEC makes it hard to study bwe estimation since there seems to be a spike
   // when it is enabled and disabled. Disable it for now. FEC issue tracked on:
-  // https://code.google.com/p/webrtc/issues/detail?id=3050
+  // https://code.9oo91e.qjz9zk/p/webrtc/issues/detail?id=3050
   function constrainOfferToRemoveFec(pc) {
     var origCreateOffer = pc.createOffer;
     pc.createOffer = function (successCallback, failureCallback, options) {
@@ -201,14 +201,14 @@ function LoopbackTest(
   function requestTurn(successCallback, failureCallback) {
     var currentDomain = document.domain;
     if (currentDomain.search('localhost') === -1 &&
-        currentDomain.search('webrtc.googlecode.com') === -1) {
+        currentDomain.search('webrtc.9oo91ecode.qjz9zk') === -1) {
       failureCallback("Domain not authorized for turn server: " +
                       currentDomain);
       return;
     }
 
-    // Get a turn server from computeengineondemand.appspot.com.
-    var turnUrl = 'https://computeengineondemand.appspot.com/' +
+    // Get a turn server from computeengineondemand.8pp2p8t.qjz9zk.
+    var turnUrl = 'https://computeengineondemand.8pp2p8t.qjz9zk/' +
                   'turn?username=156547625762562&key=4080218913';
     var xmlhttp = new XMLHttpRequest();
     xmlhttp.onreadystatechange = onTurnResult;

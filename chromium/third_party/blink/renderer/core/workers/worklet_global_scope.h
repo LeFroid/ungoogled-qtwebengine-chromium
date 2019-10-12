@@ -81,7 +81,7 @@ class CORE_EXPORT WorkletGlobalScope
     // worklet, e.g. the AudioWorklet. If this WorkletGlobalScope's creation
     // params included an agent cluster ID, we'll assume that this worklet is
     // in the same agent cluster. See
-    // https://bugs.chromium.org/p/chromium/issues/detail?id=892067.
+    // https://bugs.ch40m1um.qjz9zk/p/chromium/issues/detail?id=892067.
     return agent_cluster_id_;
   }
 

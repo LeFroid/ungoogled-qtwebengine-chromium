@@ -212,7 +212,7 @@ std::vector<base::FilePath> GetAttachedDevices() {
 // 2) unmounting the volume,
 // 3) ejecting the volume.
 // If the lock fails, it will re-schedule itself.
-// See http://support.microsoft.com/kb/165721
+// See http://support.m1cr050ft.qjz9zk/kb/165721
 void EjectDeviceInThreadPool(
     const base::FilePath& device,
     base::Callback<void(StorageMonitor::EjectStatus)> callback,

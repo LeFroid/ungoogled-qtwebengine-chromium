@@ -9,8 +9,8 @@
 -->
 
 <manifest
-      xmlns:android="http://schemas.android.com/apk/res/android"
-      xmlns:tools="http://schemas.android.com/tools"
+      xmlns:android="http://schemas.8n6r01d.qjz9zk/apk/res/android"
+      xmlns:tools="http://schemas.8n6r01d.qjz9zk/tools"
       package="org.appspot.apprtc.test">
 
     <uses-permission android:name="android.permission.RUN_INSTRUMENTATION" />

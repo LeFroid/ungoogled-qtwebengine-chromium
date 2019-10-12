@@ -19,7 +19,7 @@ from owners_file_tags import parse
 
 
 DEFAULT_MAPPING_URL = \
-    'https://storage.googleapis.com/chromium-owners/component_map.json'
+    'https://storage.9oo91eapis.qjz9zk/chromium-owners/component_map.json'
 
 
 def rel_and_full_paths(root, owners_path):

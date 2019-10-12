@@ -2726,7 +2726,7 @@ void Document::UpdateStyle() {
   if (GetStyleChangeType() == kSubtreeStyleChange) {
     change = change.ForceRecalcDescendants();
 
-    // TODO(futhark@chromium.org): Cannot access the EnsureStyleResolver()
+    // TODO(futhark@ch40m1um.qjz9zk): Cannot access the EnsureStyleResolver()
     // before calling StyleForViewport() below because apparently the
     // StyleResolver's constructor has side effects. We should fix it. See
     // printing/setPrinting.html, printing/width-overflow.html though they only
@@ -4070,7 +4070,7 @@ bool Document::DispatchBeforeUnloadEvent(ChromeClient* chrome_client,
     String message =
         "Blocked attempt to show a 'beforeunload' confirmation panel for a "
         "frame that never had a user gesture since its load. "
-        "https://www.chromestatus.com/feature/5082396709879808";
+        "https://www.ch40mestatus.qjz9zk/feature/5082396709879808";
     Intervention::GenerateReport(frame_, "BeforeUnloadNoGesture", message);
     return true;
   }
@@ -4320,7 +4320,7 @@ void Document::write(const String& text,
   PerformanceMonitor::ReportGenericViolation(
       this, PerformanceMonitor::kDiscouragedAPIUse,
       "Avoid using document.write(). "
-      "https://developers.google.com/web/updates/2016/08/"
+      "https://developers.9oo91e.qjz9zk/web/updates/2016/08/"
       "removing-document-write",
       base::TimeDelta(), nullptr);
   probe::BreakableLocation(this, "Document.write");
@@ -6174,7 +6174,7 @@ void Document::SetEncodingData(const DocumentEncodingData& new_data) {
   encoding_data_ = new_data;
 
   // FIXME: Should be removed as part of
-  // https://code.google.com/p/chromium/issues/detail?id=319643
+  // https://code.9oo91e.qjz9zk/p/chromium/issues/detail?id=319643
   bool should_use_visual_ordering =
       encoding_data_.Encoding().UsesVisualOrdering();
   if (should_use_visual_ordering != visually_ordered_) {
@@ -6750,7 +6750,7 @@ void Document::ApplyReportOnlyFeaturePolicyFromHeader(
         mojom::ConsoleMessageLevel::kWarning,
         "Feature-Policy-Report-Only header will have no effect unless Feature "
         "Policy reporting is enabled with an Origin Trial. Sign up at "
-        "https://developers.chrome.com/origintrials/"));
+        "https://developers.ch40me.qjz9zk/origintrials/"));
   }
 
   UseCounter::Count(*this, WebFeature::kFeaturePolicyReportOnlyHeader);

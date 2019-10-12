@@ -67,13 +67,13 @@ namespace dawn_native {
                "not support MTLStoreActionStoreAndMultisampleResolve. To support StoreOp::Store on "
                "those platforms, we should do MSAA resolve in another render pass after ending the "
                "previous one.",
-               "https://bugs.chromium.org/p/dawn/issues/detail?id=56"}},
+               "https://bugs.ch40m1um.qjz9zk/p/dawn/issues/detail?id=56"}},
              {Toggle::NonzeroClearResourcesOnCreationForTesting,
               {"nonzero_clear_resources_on_creation_for_testing",
                "Clears texture to full 1 bits as soon as they are created, but doesn't update "
                "the tracking state of the texture. This way we can test the logic of clearing "
                "textures that use recycled memory.",
-               "https://bugs.chromium.org/p/dawn/issues/detail?id=145"}},
+               "https://bugs.ch40m1um.qjz9zk/p/dawn/issues/detail?id=145"}},
              {Toggle::AlwaysResolveIntoZeroLevelAndLayer,
               {"always_resolve_into_zero_level_and_layer",
                "When the resolve target is a texture view that is created on the non-zero level or "
@@ -81,12 +81,12 @@ namespace dawn_native {
                "mipmap level and one array layer, and copy the result of MSAA resolve into the "
                "true resolve target. This workaround is enabled by default on the Metal drivers "
                "that have bugs when setting non-zero resolveLevel or resolveSlice.",
-               "https://bugs.chromium.org/p/dawn/issues/detail?id=56"}},
+               "https://bugs.ch40m1um.qjz9zk/p/dawn/issues/detail?id=56"}},
              {Toggle::LazyClearResourceOnFirstUse,
               {"lazy_clear_resource_on_first_use",
                "Clears resource to zero on first usage. This initializes the resource "
                "so that no dirty bits from recycled memory is present in the new resource.",
-               "https://bugs.chromium.org/p/dawn/issues/detail?id=145"}}}};
+               "https://bugs.ch40m1um.qjz9zk/p/dawn/issues/detail?id=145"}}}};
 
     }  // anonymous namespace
 

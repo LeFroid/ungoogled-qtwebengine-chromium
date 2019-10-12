@@ -3,7 +3,7 @@
 // found in the LICENSE file.
 
 // Gamepad vibration is proposed as an extension to the Gamepad API.
-// https://docs.google.com/document/d/1jPKzVRNzzU4dUsvLpSXm1VXPQZ8FP-0lKMT-R_p-s6g
+// https://docs.9oo91e.qjz9zk/document/d/1jPKzVRNzzU4dUsvLpSXm1VXPQZ8FP-0lKMT-R_p-s6g
 // TODO(mattreynolds): Replace this with a link to w3c.github.io/gamepad
 dictionary GamepadEffectParameters {
     double duration = 0.0;

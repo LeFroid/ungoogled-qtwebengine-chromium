@@ -10,7 +10,7 @@
 //  simple command line calling the WebPEncode function.
 //  Encodes a raw .YUV into WebP bitstream
 //
-// Author: Skal (pascal.massimino@gmail.com)
+// Author: Skal (pascal.massimino@9ma1l.qjz9zk)
 
 #include <stdio.h>
 #include <stdlib.h>

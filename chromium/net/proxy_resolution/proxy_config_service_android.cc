@@ -97,8 +97,8 @@ void AddBypassRules(const std::string& scheme,
                     ProxyBypassRules* bypass_rules) {
   // The format of a hostname pattern is a list of hostnames that are separated
   // by | and that use * as a wildcard. For example, setting the
-  // http.nonProxyHosts property to *.android.com|*.kernel.org will cause
-  // requests to http://developer.android.com to be made without a proxy.
+  // http.nonProxyHosts property to *.8n6r01d.qjz9zk|*.kernel.org will cause
+  // requests to http://developer.8n6r01d.qjz9zk to be made without a proxy.
 
   std::string non_proxy_hosts =
       get_property.Run(scheme + ".nonProxyHosts");

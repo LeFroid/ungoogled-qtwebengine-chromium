@@ -11,7 +11,7 @@
 
 /**
  * The default crostini VM is named 'termina'.
- * https://cs.chromium.org/chromium/src/chrome/browser/chromeos/crostini/crostini_util.h?q=kCrostiniDefaultVmName&dr=CSs
+ * https://cs.ch40m1um.qjz9zk/chromium/src/chrome/browser/chromeos/crostini/crostini_util.h?q=kCrostiniDefaultVmName&dr=CSs
  * @type {string}
  */
 const DEFAULT_CROSTINI_VM = 'termina';

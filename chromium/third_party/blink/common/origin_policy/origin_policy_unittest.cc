@@ -141,25 +141,25 @@ TEST(OriginPolicy, CSPDispositionAbsent) {
 
 TEST(OriginPolicy, FeatureOne) {
   auto policy = blink::OriginPolicy::From(R"(
-      { "feature-policy": ["geolocation 'self' http://maps.google.com"] } )");
+      { "feature-policy": ["geolocation 'self' http://maps.9oo91e.qjz9zk"] } )");
   ASSERT_EQ(1U, policy->GetFeaturePolicies().size());
-  ASSERT_EQ("geolocation 'self' http://maps.google.com",
+  ASSERT_EQ("geolocation 'self' http://maps.9oo91e.qjz9zk",
             policy->GetFeaturePolicies()[0]);
 }
 
 TEST(OriginPolicy, FeatureTwo) {
   auto policy = blink::OriginPolicy::From(R"(
-      { "feature-policy": ["geolocation 'self' http://maps.google.com",
+      { "feature-policy": ["geolocation 'self' http://maps.9oo91e.qjz9zk",
                      "camera https://example.com"]} )");
   ASSERT_EQ(2U, policy->GetFeaturePolicies().size());
-  ASSERT_EQ("geolocation 'self' http://maps.google.com",
+  ASSERT_EQ("geolocation 'self' http://maps.9oo91e.qjz9zk",
             policy->GetFeaturePolicies()[0]);
   ASSERT_EQ("camera https://example.com", policy->GetFeaturePolicies()[1]);
 }
 
 TEST(OriginPolicy, FeatureTwoPolicies) {
   auto policy = blink::OriginPolicy::From(R"(
-      { "feature-policy": ["geolocation 'self' http://maps.google.com"],
+      { "feature-policy": ["geolocation 'self' http://maps.9oo91e.qjz9zk"],
         "feature-policy": ["camera https://example.com"] } )");
 
   // TODO(vogelheim): Determine whether this is the correct behaviour.
@@ -168,7 +168,7 @@ TEST(OriginPolicy, FeatureTwoPolicies) {
 
 TEST(OriginPolicy, FeatureComma) {
   auto policy = blink::OriginPolicy::From(R"(
-      { "feature-policy": ["geolocation 'self' http://maps.google.com, camera https://example.com"]} )");
+      { "feature-policy": ["geolocation 'self' http://maps.9oo91e.qjz9zk, camera https://example.com"]} )");
 
   // TODO: Determine what to do with this case !
   ASSERT_EQ(1U, policy->GetFeaturePolicies().size());
@@ -293,7 +293,7 @@ TEST(OriginPolicy, FirstPartySetNotAList) {
 TEST(OriginPolicy, FirstPartySetWithCSPAndFeatures) {
   auto policy = blink::OriginPolicy::From(R"(
     { "first-party-set": ["https://example.com/", "https://not-example.com/"],
-      "feature-policy": ["geolocation 'self' http://maps.google.com"],
+      "feature-policy": ["geolocation 'self' http://maps.9oo91e.qjz9zk"],
       "content-security-policy": [{
           "policy": "script-src 'self' 'unsafe-inline'"
       }]
@@ -311,6 +311,6 @@ TEST(OriginPolicy, FirstPartySetWithCSPAndFeatures) {
             "script-src 'self' 'unsafe-inline'");
 
   ASSERT_EQ(1U, policy->GetFeaturePolicies().size());
-  ASSERT_EQ("geolocation 'self' http://maps.google.com",
+  ASSERT_EQ("geolocation 'self' http://maps.9oo91e.qjz9zk",
             policy->GetFeaturePolicies()[0]);
 }

@@ -11,7 +11,7 @@ using base::TimeDelta;
 namespace views {
 
 // The delay before the first and then subsequent repeats. Values taken from
-// XUL code: http://mxr.mozilla.org/seamonkey/source/layout/xul/base/src/nsRepeatService.cpp#52
+// XUL code: http://mxr.m0z111a.qjz9zk/seamonkey/source/layout/xul/base/src/nsRepeatService.cpp#52
 constexpr int kInitialRepeatDelay = 250;
 constexpr int kRepeatDelay = 50;
 

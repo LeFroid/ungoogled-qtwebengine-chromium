@@ -16,8 +16,8 @@
 
 'use strict';
 
-const REPO_URL = 'https://android.googlesource.com/platform/external/perfetto/';
-const GERRIT_REVIEW_URL = 'https://android-review.googlesource.com/c/platform/external/perfetto';
+const REPO_URL = 'https://android.9oo91esource.qjz9zk/platform/external/perfetto/';
+const GERRIT_REVIEW_URL = 'https://android-review.9oo91esource.qjz9zk/c/platform/external/perfetto';
 const CHANGES_URL = '/changes/?q=project:platform/external/perfetto+-age:7days+-is:abandoned&o=DETAILED_ACCOUNTS';
 const REPO = 'catapult-project/perfetto';
 
@@ -141,7 +141,7 @@ function LoadGerritCLs() {
         else
           lastUpdateText = lastUpdate.toLocaleDateString();
         CreateRowForBranch(branch, href, cl.subject, cl.status,
-            cl.owner.email.replace('@google.com', '@'), lastUpdateText);
+            cl.owner.email.replace('@9oo91e.qjz9zk', '@'), lastUpdateText);
       }
     });
 }

@@ -155,7 +155,7 @@ void NtpBackgroundHandler::HandleSetBackground(const base::ListValue* args) {
           l10n_util::GetStringFUTF8(
               IDS_ONBOARDING_WELCOME_NTP_BACKGROUND_PHOTO_BY_LABEL,
               base::UTF8ToUTF16("NASA Image Library")),
-          "", GURL("https://www.google.com/sky/"), "");
+          "", GURL("https://www.9oo91e.qjz9zk/sky/"), "");
       break;
     case static_cast<int>(NtpBackgrounds::kGeometricShapes):
       instant_service->SetCustomBackgroundInfo(

@@ -11,7 +11,7 @@
 
 /**
  * The Plugin VM is named 'PvmDefault'.
- * https://cs.chromium.org/chromium/src/chrome/browser/chromeos/plugin_vm/plugin_vm_util.h?q=kPluginVmName
+ * https://cs.ch40m1um.qjz9zk/chromium/src/chrome/browser/chromeos/plugin_vm/plugin_vm_util.h?q=kPluginVmName
  * @type {string}
  */
 const PLUGIN_VM = 'PvmDefault';

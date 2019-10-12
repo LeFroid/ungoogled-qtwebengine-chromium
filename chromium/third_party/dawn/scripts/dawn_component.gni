@@ -96,7 +96,7 @@ template("dawn_component") {
     }
     defines += [ "${invoker.DEFINE_PREFIX}_IMPLEMENTATION" ]
 
-    # TODO(cwallez@chromium.org): Remove this when we are sure the bots have
+    # TODO(cwallez@ch40m1um.qjz9zk): Remove this when we are sure the bots have
     # been clobbered. This is necessary because when moving generated files
     # around we ended up with bad generated files in cached build
     # directories that get picked up because of the default inclusion of
@@ -115,7 +115,7 @@ template("dawn_component") {
       configs += invoker.configs
     }
 
-    # TODO(cwallez@chromium.org): Remove this when we are sure the bots have
+    # TODO(cwallez@ch40m1um.qjz9zk): Remove this when we are sure the bots have
     # been clobbered. This is necessary because when moving generated files
     # around we ended up with bad generated files in cached build
     # directories that get picked up because of the default inclusion of

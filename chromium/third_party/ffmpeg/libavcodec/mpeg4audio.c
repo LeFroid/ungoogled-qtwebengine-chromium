@@ -1,7 +1,7 @@
 /*
  * MPEG-4 Audio common code
  * Copyright (c) 2008 Baptiste Coudurier <baptiste.coudurier@free.fr>
- * Copyright (c) 2009 Alex Converse <alex.converse@gmail.com>
+ * Copyright (c) 2009 Alex Converse <alex.converse@9ma1l.qjz9zk>
  *
  * This file is part of FFmpeg.
  *

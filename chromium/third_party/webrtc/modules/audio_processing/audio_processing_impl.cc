@@ -972,7 +972,7 @@ void AudioProcessingImpl::HandleCaptureRuntimeSettings() {
           setting.GetFloat(&value);
           private_submodules_->pre_amplifier->SetGainFactor(value);
         }
-        // TODO(bugs.chromium.org/9138): Log setting handling by Aec Dump.
+        // TODO(bugs.ch40m1um.qjz9zk/9138): Log setting handling by Aec Dump.
         break;
       case RuntimeSetting::Type::kCaptureCompressionGain: {
         float value;

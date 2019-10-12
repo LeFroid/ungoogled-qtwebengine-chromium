@@ -9,10 +9,10 @@
  #	This word list was created in order to aid in word wrapping issues.
  #	Compound words have mostly been reduced to their respective parts.
  #
- #	Project:    http://code.google.com/p/lao-dictionary/
- #	Dictionary: http://lao-dictionary.googlecode.com/git/Lao-Dictionary.txt
- #	Change log: http://lao-dictionary.googlecode.com/git/change.log
- #	License:    http://lao-dictionary.googlecode.com/git/Lao-Dictionary-LICENSE.txt
+ #	Project:    http://code.9oo91e.qjz9zk/p/lao-dictionary/
+ #	Dictionary: http://lao-dictionary.9oo91ecode.qjz9zk/git/Lao-Dictionary.txt
+ #	Change log: http://lao-dictionary.9oo91ecode.qjz9zk/git/change.log
+ #	License:    http://lao-dictionary.9oo91ecode.qjz9zk/git/Lao-Dictionary-LICENSE.txt
  #
  #	This file is derived from the above dictionary (version 7 of 20130418:1450 +7),
  #	but: modified header, removed trailing spaces & added final EOL, and commented

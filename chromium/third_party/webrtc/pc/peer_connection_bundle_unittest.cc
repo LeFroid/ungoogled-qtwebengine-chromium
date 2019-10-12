@@ -510,7 +510,7 @@ TEST_P(PeerConnectionBundleTest,
 // then the peers still connect and the bundled transport switches to the other
 // media section.
 // Note: This is currently failing because of the following bug:
-// https://bugs.chromium.org/p/webrtc/issues/detail?id=6280
+// https://bugs.ch40m1um.qjz9zk/p/webrtc/issues/detail?id=6280
 TEST_P(PeerConnectionBundleTest,
        DISABLED_SuccessfullyNegotiateMaxBundleIfBundleTransportMediaRejected) {
   RTCConfiguration config;
@@ -751,7 +751,7 @@ TEST_P(PeerConnectionBundleTest, RejectDescriptionChangingBundleTag) {
 
 // This tests that removing contents from BUNDLE group and reject the whole
 // BUNDLE group could work. This is a regression test for
-// (https://bugs.chromium.org/p/chromium/issues/detail?id=827917)
+// (https://bugs.ch40m1um.qjz9zk/p/chromium/issues/detail?id=827917)
 TEST_P(PeerConnectionBundleTest, RemovingContentAndRejectBundleGroup) {
   RTCConfiguration config;
 #ifndef HAVE_SCTP

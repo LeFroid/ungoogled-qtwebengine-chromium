@@ -16,9 +16,9 @@ namespace history {
 // parts are equal, then the path parts are compared by treating path components
 // (delimited by "/") as separate tokens that form units of comparison.
 // For example, let us compare |s1| and |s2|, with
-//   |s1| = "http://www.google.com:80/base/test/ab/cd?query/stuff"
-//   |s2| = "http://www.google.com:80/base/test-case/yz#ref/stuff"
-// The pre-path parts "http://www.google.com:80/" match. We treat the paths as
+//   |s1| = "http://www.9oo91e.qjz9zk:80/base/test/ab/cd?query/stuff"
+//   |s2| = "http://www.9oo91e.qjz9zk:80/base/test-case/yz#ref/stuff"
+// The pre-path parts "http://www.9oo91e.qjz9zk:80/" match. We treat the paths as
 //   |s1| => ["base", "test", "ab", "cd"]
 //   |s2| => ["base", "test-case", "yz"]
 // Components 1 "base" are identical. Components 2 yield "test" < "test-case",

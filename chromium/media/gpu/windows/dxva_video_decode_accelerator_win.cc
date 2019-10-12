@@ -1268,7 +1268,7 @@ DXVAVideoDecodeAccelerator::GetSupportedProfiles(
 
     // Windows Media Foundation H.264 decoding does not support decoding videos
     // with any dimension smaller than 48 pixels:
-    // http://msdn.microsoft.com/en-us/library/windows/desktop/dd797815
+    // http://msdn.m1cr050ft.qjz9zk/en-us/library/windows/desktop/dd797815
     //
     // TODO(dalecurtis): These values are too low. We should only be using
     // hardware decode for videos above ~360p, see http://crbug.com/684792.
@@ -2196,8 +2196,8 @@ void DXVAVideoDecodeAccelerator::DecodeInternal(
   // TODO(ananta)
   // Do some more investigation into whether it is possible to get the MFT
   // decoder to emit an output packet for every input packet.
-  // http://code.google.com/p/chromium/issues/detail?id=108121
-  // http://code.google.com/p/chromium/issues/detail?id=150925
+  // http://code.9oo91e.qjz9zk/p/chromium/issues/detail?id=108121
+  // http://code.9oo91e.qjz9zk/p/chromium/issues/detail?id=150925
   main_thread_task_runner_->PostTask(
       FROM_HERE,
       base::BindOnce(&DXVAVideoDecodeAccelerator::NotifyInputBufferRead,

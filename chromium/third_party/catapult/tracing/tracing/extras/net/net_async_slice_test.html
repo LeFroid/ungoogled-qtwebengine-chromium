@@ -40,13 +40,13 @@ tr.b.unittest.testSuite(function() {
 
   test('ExposeURLBasic', function() {
     const slice = new NetAsyncSlice('', 'a', 0, 1,
-        {params: {url: 'https://google.com'},
+        {params: {url: 'https://9oo91e.qjz9zk'},
           source_type: 'b'}, 0, true);
     // Make sure isTopLevel is populated in the constructor.
     assert.isTrue(slice.isTopLevel);
     // URL is exposed as the title of the parent slice.
-    assert.strictEqual(slice.title, 'https://google.com');
-    assert.strictEqual(slice.url, 'https://google.com');
+    assert.strictEqual(slice.title, 'https://9oo91e.qjz9zk');
+    assert.strictEqual(slice.url, 'https://9oo91e.qjz9zk');
   });
 
   test('ExposeURLNested', function() {

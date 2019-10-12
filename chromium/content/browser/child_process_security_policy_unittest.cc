@@ -265,26 +265,26 @@ TEST_F(ChildProcessSecurityPolicyTest, StandardSchemesTest) {
   p->Add(kRendererID, browser_context());
 
   // Safe to request, redirect or commit.
-  EXPECT_TRUE(p->CanRequestURL(kRendererID, GURL("http://www.google.com/")));
+  EXPECT_TRUE(p->CanRequestURL(kRendererID, GURL("http://www.9oo91e.qjz9zk/")));
   EXPECT_TRUE(p->CanRequestURL(kRendererID, GURL("https://www.paypal.com/")));
   EXPECT_TRUE(p->CanRequestURL(kRendererID, GURL("ftp://ftp.gnu.org/")));
   EXPECT_TRUE(p->CanRequestURL(kRendererID, GURL("data:text/html,<b>Hi</b>")));
   EXPECT_TRUE(p->CanRequestURL(
       kRendererID, GURL("filesystem:http://localhost/temporary/a.gif")));
-  EXPECT_TRUE(p->CanRedirectToURL(GURL("http://www.google.com/")));
+  EXPECT_TRUE(p->CanRedirectToURL(GURL("http://www.9oo91e.qjz9zk/")));
   EXPECT_TRUE(p->CanRedirectToURL(GURL("https://www.paypal.com/")));
   EXPECT_TRUE(p->CanRedirectToURL(GURL("ftp://ftp.gnu.org/")));
   EXPECT_TRUE(p->CanRedirectToURL(GURL("data:text/html,<b>Hi</b>")));
   EXPECT_TRUE(
       p->CanRedirectToURL(GURL("filesystem:http://localhost/temporary/a.gif")));
-  EXPECT_TRUE(p->CanCommitURL(kRendererID, GURL("http://www.google.com/")));
+  EXPECT_TRUE(p->CanCommitURL(kRendererID, GURL("http://www.9oo91e.qjz9zk/")));
   EXPECT_TRUE(p->CanCommitURL(kRendererID, GURL("https://www.paypal.com/")));
   EXPECT_TRUE(p->CanCommitURL(kRendererID, GURL("ftp://ftp.gnu.org/")));
   EXPECT_TRUE(p->CanCommitURL(kRendererID, GURL("data:text/html,<b>Hi</b>")));
   EXPECT_TRUE(p->CanCommitURL(
       kRendererID, GURL("filesystem:http://localhost/temporary/a.gif")));
   EXPECT_TRUE(
-      p->CanSetAsOriginHeader(kRendererID, GURL("http://www.google.com/")));
+      p->CanSetAsOriginHeader(kRendererID, GURL("http://www.9oo91e.qjz9zk/")));
   EXPECT_TRUE(
       p->CanSetAsOriginHeader(kRendererID, GURL("https://www.paypal.com/")));
   EXPECT_TRUE(p->CanSetAsOriginHeader(kRendererID, GURL("ftp://ftp.gnu.org/")));
@@ -298,20 +298,20 @@ TEST_F(ChildProcessSecurityPolicyTest, StandardSchemesTest) {
                                 GURL("file:///etc/passwd")));
   EXPECT_FALSE(p->CanRequestURL(kRendererID, GetWebUIURL("foo/bar")));
   EXPECT_FALSE(p->CanRequestURL(kRendererID,
-                                GURL("view-source:http://www.google.com/")));
+                                GURL("view-source:http://www.9oo91e.qjz9zk/")));
   EXPECT_TRUE(p->CanRedirectToURL(GURL("file:///etc/passwd")));
   EXPECT_TRUE(p->CanRedirectToURL(GetWebUIURL("foo/bar")));
-  EXPECT_FALSE(p->CanRedirectToURL(GURL("view-source:http://www.google.com/")));
+  EXPECT_FALSE(p->CanRedirectToURL(GURL("view-source:http://www.9oo91e.qjz9zk/")));
   EXPECT_FALSE(p->CanCommitURL(kRendererID,
                                 GURL("file:///etc/passwd")));
   EXPECT_FALSE(p->CanCommitURL(kRendererID, GetWebUIURL("foo/bar")));
   EXPECT_FALSE(
-      p->CanCommitURL(kRendererID, GURL("view-source:http://www.google.com/")));
+      p->CanCommitURL(kRendererID, GURL("view-source:http://www.9oo91e.qjz9zk/")));
   EXPECT_FALSE(
       p->CanSetAsOriginHeader(kRendererID, GURL("file:///etc/passwd")));
   EXPECT_FALSE(p->CanSetAsOriginHeader(kRendererID, GetWebUIURL("foo/bar")));
   EXPECT_FALSE(p->CanSetAsOriginHeader(
-      kRendererID, GURL("view-source:http://www.google.com/")));
+      kRendererID, GURL("view-source:http://www.9oo91e.qjz9zk/")));
   EXPECT_FALSE(p->CanRedirectToURL(GURL(kUnreachableWebDataURL)));
   EXPECT_FALSE(p->CanCommitURL(kRendererID, GURL(kUnreachableWebDataURL)));
 
@@ -544,39 +544,39 @@ TEST_F(ChildProcessSecurityPolicyTest, ViewSource) {
 
   // Child processes cannot request view source URLs.
   EXPECT_FALSE(p->CanRequestURL(kRendererID,
-                                GURL("view-source:http://www.google.com/")));
+                                GURL("view-source:http://www.9oo91e.qjz9zk/")));
   EXPECT_FALSE(p->CanRequestURL(kRendererID,
                                 GURL("view-source:file:///etc/passwd")));
   EXPECT_FALSE(p->CanRequestURL(kRendererID, GURL("file:///etc/passwd")));
   EXPECT_FALSE(p->CanRequestURL(
-      kRendererID, GURL("view-source:view-source:http://www.google.com/")));
+      kRendererID, GURL("view-source:view-source:http://www.9oo91e.qjz9zk/")));
 
   // Child processes cannot be redirected to view source URLs.
-  EXPECT_FALSE(p->CanRedirectToURL(GURL("view-source:http://www.google.com/")));
+  EXPECT_FALSE(p->CanRedirectToURL(GURL("view-source:http://www.9oo91e.qjz9zk/")));
   EXPECT_FALSE(p->CanRedirectToURL(GURL("view-source:file:///etc/passwd")));
   EXPECT_TRUE(p->CanRedirectToURL(GURL("file:///etc/passwd")));
   EXPECT_FALSE(p->CanRedirectToURL(
-      GURL("view-source:view-source:http://www.google.com/")));
+      GURL("view-source:view-source:http://www.9oo91e.qjz9zk/")));
 
   // View source URLs don't actually commit; the renderer is put into view
   // source mode, and the inner URL commits.
   EXPECT_FALSE(p->CanCommitURL(kRendererID,
-                               GURL("view-source:http://www.google.com/")));
+                               GURL("view-source:http://www.9oo91e.qjz9zk/")));
   EXPECT_FALSE(p->CanCommitURL(kRendererID,
                                GURL("view-source:file:///etc/passwd")));
   EXPECT_FALSE(p->CanCommitURL(kRendererID, GURL("file:///etc/passwd")));
   EXPECT_FALSE(p->CanCommitURL(
-      kRendererID, GURL("view-source:view-source:http://www.google.com/")));
+      kRendererID, GURL("view-source:view-source:http://www.9oo91e.qjz9zk/")));
 
   // View source URLs should not be setable as origin headers
   EXPECT_FALSE(p->CanSetAsOriginHeader(
-      kRendererID, GURL("view-source:http://www.google.com/")));
+      kRendererID, GURL("view-source:http://www.9oo91e.qjz9zk/")));
   EXPECT_FALSE(p->CanSetAsOriginHeader(kRendererID,
                                        GURL("view-source:file:///etc/passwd")));
   EXPECT_FALSE(
       p->CanSetAsOriginHeader(kRendererID, GURL("file:///etc/passwd")));
   EXPECT_FALSE(p->CanSetAsOriginHeader(
-      kRendererID, GURL("view-source:view-source:http://www.google.com/")));
+      kRendererID, GURL("view-source:view-source:http://www.9oo91e.qjz9zk/")));
 
   p->GrantCommitURL(kRendererID, GURL("view-source:file:///etc/passwd"));
   EXPECT_FALSE(p->CanRequestURL(kRendererID, GURL("file:///etc/passwd")));
@@ -962,7 +962,7 @@ TEST_F(ChildProcessSecurityPolicyTest, CanServiceWebUIBindings) {
   ChildProcessSecurityPolicyImpl* p =
       ChildProcessSecurityPolicyImpl::GetInstance();
 
-  const GURL url(GetWebUIURL("thumb/http://www.google.com/"));
+  const GURL url(GetWebUIURL("thumb/http://www.9oo91e.qjz9zk/"));
   const GURL other_url(GetWebUIURL("not-thumb/"));
   const url::Origin origin = url::Origin::Create(url);
   {

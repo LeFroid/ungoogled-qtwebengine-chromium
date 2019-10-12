@@ -70,7 +70,7 @@ TEST(ExtensionProxyApiHelpers, CreatePACScriptFromDataURL) {
   ASSERT_TRUE(CreatePACScriptFromDataURL(kSamplePacScriptAsDataUrl2, &out));
   EXPECT_EQ(kSamplePacScript, out);
 
-  EXPECT_FALSE(CreatePACScriptFromDataURL("http://www.google.com", &out));
+  EXPECT_FALSE(CreatePACScriptFromDataURL("http://www.9oo91e.qjz9zk", &out));
 }
 
 TEST(ExtensionProxyApiHelpers, GetProxyModeFromExtensionPref) {

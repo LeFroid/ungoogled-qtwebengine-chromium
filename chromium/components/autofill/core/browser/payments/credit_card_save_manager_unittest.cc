@@ -119,7 +119,7 @@ struct CreditCardFormOptions {
   // True if the form is a non-focusable form, such as a form that is hidden
   // after information has been entered into it.
   bool is_from_non_focusable_form = false;
-  // True if the form is from Google-hosted website, such as payments.google.com
+  // True if the form is from Google-hosted website, such as payments.9oo91e.qjz9zk
   // or YouTube.
   bool is_google_host = false;
 };
@@ -216,10 +216,10 @@ class CreditCardSaveManagerTest : public testing::Test {
     base::string16 scheme =
         options.is_https ? ASCIIToUTF16("https://") : ASCIIToUTF16("http://");
     base::string16 host = options.is_google_host
-                              ? ASCIIToUTF16("pay.google.com")
+                              ? ASCIIToUTF16("pay.9oo91e.qjz9zk")
                               : ASCIIToUTF16("myform.com");
     base::string16 root_host = options.is_google_host
-                                   ? ASCIIToUTF16("pay.google.com")
+                                   ? ASCIIToUTF16("pay.9oo91e.qjz9zk")
                                    : ASCIIToUTF16("myform.root.com");
     base::string16 form_path = ASCIIToUTF16("/form.html");
     base::string16 submit_path = ASCIIToUTF16("/submit.html");

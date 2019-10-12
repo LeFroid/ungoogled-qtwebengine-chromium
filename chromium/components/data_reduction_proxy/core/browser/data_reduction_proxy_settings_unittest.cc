@@ -151,7 +151,7 @@ TEST(DataReductionProxySettingsStandaloneTest, TestEndToEndSecureProxyCheck) {
       "", net::ERR_ABORTED, true,
     },
     // The secure proxy check shouldn't attempt to follow the redirect.
-    { "HTTP/1.1 302 Found\r\nLocation: http://www.google.com/\r\n\r\n",
+    { "HTTP/1.1 302 Found\r\nLocation: http://www.9oo91e.qjz9zk/\r\n\r\n",
       "", net::OK, true,
     },
   };

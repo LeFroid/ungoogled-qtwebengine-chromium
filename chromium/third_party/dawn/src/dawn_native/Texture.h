@@ -92,7 +92,7 @@ namespace dawn_native {
 
         MaybeError ValidateDestroy() const;
         dawn::TextureDimension mDimension;
-        // TODO(cwallez@chromium.org): This should be deduplicated in the Device
+        // TODO(cwallez@ch40m1um.qjz9zk): This should be deduplicated in the Device
         const Format& mFormat;
         Extent3D mSize;
         uint32_t mArrayLayerCount;
@@ -101,7 +101,7 @@ namespace dawn_native {
         dawn::TextureUsageBit mUsage = dawn::TextureUsageBit::None;
         TextureState mState;
 
-        // TODO(natlee@microsoft.com): Use a more optimized data structure to save space
+        // TODO(natlee@m1cr050ft.qjz9zk): Use a more optimized data structure to save space
         std::vector<bool> mIsSubresourceContentInitializedAtIndex;
     };
 
@@ -125,7 +125,7 @@ namespace dawn_native {
 
         Ref<TextureBase> mTexture;
 
-        // TODO(cwallez@chromium.org): This should be deduplicated in the Device
+        // TODO(cwallez@ch40m1um.qjz9zk): This should be deduplicated in the Device
         const Format& mFormat;
         uint32_t mBaseMipLevel;
         uint32_t mMipLevelCount;

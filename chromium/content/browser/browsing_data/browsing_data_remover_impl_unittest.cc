@@ -1303,7 +1303,7 @@ TEST_F(BrowsingDataRemoverImplTest, RemoveReportingCache) {
       ->GetURLRequestContext()
       ->set_reporting_service(reporting_service.get());
 
-  GURL domain("https://google.com");
+  GURL domain("https://9oo91e.qjz9zk");
   reporting_cache->SetEndpointForTesting(url::Origin::Create(domain), "group",
                                          domain, net::OriginSubdomains::DEFAULT,
                                          base::Time::Max(), 1 /* priority */,
@@ -1335,7 +1335,7 @@ TEST_F(BrowsingDataRemoverImplTest, RemoveReportingCache_SpecificOrigins) {
       ->GetURLRequestContext()
       ->set_reporting_service(reporting_service.get());
 
-  GURL domain1("https://google.com");
+  GURL domain1("https://9oo91e.qjz9zk");
   reporting_cache->SetEndpointForTesting(
       url::Origin::Create(domain1), "group", domain1,
       net::OriginSubdomains::DEFAULT, base::Time::Max(), 1 /* priority */,
@@ -1360,7 +1360,7 @@ TEST_F(BrowsingDataRemoverImplTest, RemoveReportingCache_SpecificOrigins) {
 
   std::unique_ptr<BrowsingDataFilterBuilder> filter_builder(
       BrowsingDataFilterBuilder::Create(BrowsingDataFilterBuilder::WHITELIST));
-  filter_builder->AddRegisterableDomain("google.com");
+  filter_builder->AddRegisterableDomain("9oo91e.qjz9zk");
   filter_builder->AddRegisterableDomain("host3.com");
   BlockUntilOriginDataRemoved(base::Time(), base::Time::Max(),
                               BrowsingDataRemover::DATA_TYPE_COOKIES,
@@ -1401,7 +1401,7 @@ TEST_F(BrowsingDataRemoverImplTest, RemoveNetworkErrorLogging) {
       ->GetURLRequestContext()
       ->set_network_error_logging_service(logging_service.get());
 
-  GURL domain("https://google.com");
+  GURL domain("https://9oo91e.qjz9zk");
   logging_service->OnHeader(url::Origin::Create(domain),
                             net::IPAddress(192, 168, 0, 1),
                             "{\"report_to\":\"group\",\"max_age\":86400}");
@@ -1442,7 +1442,7 @@ TEST_F(BrowsingDataRemoverImplTest,
       ->GetURLRequestContext()
       ->set_network_error_logging_service(logging_service.get());
 
-  GURL domain("https://google.com");
+  GURL domain("https://9oo91e.qjz9zk");
   logging_service->OnHeader(url::Origin::Create(domain),
                             net::IPAddress(192, 168, 0, 1),
                             "{\"report_to\":\"group\",\"max_age\":86400}");
@@ -1469,7 +1469,7 @@ TEST_F(BrowsingDataRemoverImplTest, RemoveNetworkErrorLogging_SpecificOrigins) {
       ->GetURLRequestContext()
       ->set_network_error_logging_service(logging_service.get());
 
-  GURL domain1("https://google.com");
+  GURL domain1("https://9oo91e.qjz9zk");
   logging_service->OnHeader(url::Origin::Create(domain1),
                             net::IPAddress(192, 168, 0, 1),
                             "{\"report_to\":\"group\",\"max_age\":86400}");
@@ -1493,7 +1493,7 @@ TEST_F(BrowsingDataRemoverImplTest, RemoveNetworkErrorLogging_SpecificOrigins) {
 
   std::unique_ptr<BrowsingDataFilterBuilder> filter_builder(
       BrowsingDataFilterBuilder::Create(BrowsingDataFilterBuilder::WHITELIST));
-  filter_builder->AddRegisterableDomain("google.com");
+  filter_builder->AddRegisterableDomain("9oo91e.qjz9zk");
   filter_builder->AddRegisterableDomain("host3.com");
   BlockUntilOriginDataRemoved(base::Time(), base::Time::Max(),
                               BrowsingDataRemover::DATA_TYPE_COOKIES,

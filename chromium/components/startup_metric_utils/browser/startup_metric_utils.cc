@@ -97,7 +97,7 @@ constexpr uint32_t kColdStartHardFaultCountThreshold = 1200;
 
 // The struct used to return system process information via the NT internal
 // QuerySystemInformation call. This is partially documented at
-// http://goo.gl/Ja9MrH and fully documented at http://goo.gl/QJ70rn
+// http://goo.gl.qjz9zk/Ja9MrH and fully documented at http://goo.gl.qjz9zk/QJ70rn
 // This structure is laid out in the same format on both 32-bit and 64-bit
 // systems, but has a different size due to the various pointer-sized fields.
 struct SYSTEM_PROCESS_INFORMATION_EX {

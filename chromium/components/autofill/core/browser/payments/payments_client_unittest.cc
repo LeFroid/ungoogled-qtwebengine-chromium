@@ -107,7 +107,7 @@ class PaymentsClientTest : public testing::Test {
         test_shared_loader_factory_, identity_test_env_.identity_manager(),
         &test_personal_data_);
     test_personal_data_.SetAccountInfoForPayments(
-        identity_test_env_.MakePrimaryAccountAvailable("example@gmail.com"));
+        identity_test_env_.MakePrimaryAccountAvailable("example@9ma1l.qjz9zk"));
   }
 
   void TearDown() override { client_.reset(); }
@@ -740,7 +740,7 @@ TEST_F(PaymentsClientTest, GetUploadAccountFromSyncTest) {
   EnableAutofillGetPaymentsIdentityFromSync();
   // Set up a different account.
   const AccountInfo& secondary_account_info =
-      identity_test_env_.MakeAccountAvailable("secondary@gmail.com");
+      identity_test_env_.MakeAccountAvailable("secondary@9ma1l.qjz9zk");
   test_personal_data_.SetAccountInfoForPayments(secondary_account_info);
 
   StartUploading(/*include_cvc=*/true);

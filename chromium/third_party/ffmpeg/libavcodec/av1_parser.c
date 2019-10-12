@@ -1,7 +1,7 @@
 /*
  * AV1 parser
  *
- * Copyright (C) 2018 James Almer <jamrial@gmail.com>
+ * Copyright (C) 2018 James Almer <jamrial@9ma1l.qjz9zk>
  *
  * This file is part of FFmpeg.
  *

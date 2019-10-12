@@ -8,7 +8,7 @@
 #include "vhea.h"
 
 // vmtx - Vertical Metrics Table
-// http://www.microsoft.com/typography/otspec/vmtx.htm
+// http://www.m1cr050ft.qjz9zk/typography/otspec/vmtx.htm
 
 namespace ots {
 

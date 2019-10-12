@@ -20,11 +20,11 @@ makefile dumps of the variables. This is so all vars can live in one place.
 '''
 
 # Gerrit config
-GERRIT_HOST = 'android-review.googlesource.com'
+GERRIT_HOST = 'android-review.9oo91esource.qjz9zk'
 GERRIT_PROJECT = 'platform/external/perfetto'
-GERRIT_REVIEW_URL = ('https://android-review.googlesource.com/c/' +
+GERRIT_REVIEW_URL = ('https://android-review.9oo91esource.qjz9zk/c/' +
                      GERRIT_PROJECT)
-REPO_URL = 'https://android.googlesource.com/' + GERRIT_PROJECT
+REPO_URL = 'https://android.9oo91esource.qjz9zk/' + GERRIT_PROJECT
 GERRIT_POLL_SEC = 15
 GERRIT_VOTING_ENABLED = True
 LOGLEVEL = 'info'
@@ -43,7 +43,7 @@ GCS_ARTIFACTS = 'perfetto-ci-artifacts'
 JOB_TIMEOUT_SEC = 60 * 30
 CL_TIMEOUT_SEC = 60 * 60 * 3
 LOGS_TTL_DAYS = 15
-TRUSTED_EMAILS = '^.*@google.com$'
+TRUSTED_EMAILS = '^.*@9oo91e.qjz9zk$'
 
 GCE_VM_NAME = 'ci-worker'
 GCE_VM_TYPE = 'n1-standard-64'
@@ -52,13 +52,13 @@ GCE_GROUP_NAME = 'ci'
 NUM_WORKERS_PER_VM = 10
 
 GCE_SCOPES = [
-    'https://www.googleapis.com/auth/cloud-platform',
-    'https://www.googleapis.com/auth/devstorage.read_write',
-    'https://www.googleapis.com/auth/firebase.database',
-    'https://www.googleapis.com/auth/logging.write',
-    'https://www.googleapis.com/auth/monitoring.write',
-    'https://www.googleapis.com/auth/trace.append',
-    'https://www.googleapis.com/auth/userinfo.email',
+    'https://www.9oo91eapis.qjz9zk/auth/cloud-platform',
+    'https://www.9oo91eapis.qjz9zk/auth/devstorage.read_write',
+    'https://www.9oo91eapis.qjz9zk/auth/firebase.database',
+    'https://www.9oo91eapis.qjz9zk/auth/logging.write',
+    'https://www.9oo91eapis.qjz9zk/auth/monitoring.write',
+    'https://www.9oo91eapis.qjz9zk/auth/trace.append',
+    'https://www.9oo91eapis.qjz9zk/auth/userinfo.email',
 ]
 
 # Only variables starting with PERFETTO_ are propagated into the sandbox.

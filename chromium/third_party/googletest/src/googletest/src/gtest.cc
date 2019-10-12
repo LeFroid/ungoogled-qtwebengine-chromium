@@ -567,7 +567,7 @@ int UnitTestOptions::GTestShouldProcessSEH(DWORD exception_code) {
   //      apparently).
   //
   // SEH exception code for C++ exceptions.
-  // (see http://support.microsoft.com/kb/185294 for more information).
+  // (see http://support.m1cr050ft.qjz9zk/kb/185294 for more information).
   const DWORD kCxxExceptionCode = 0xe06d7363;
 
   bool should_handle = true;

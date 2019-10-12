@@ -28,7 +28,7 @@
 
 """Shared utilities for writing scripts for Google Test/Mock."""
 
-__author__ = 'wan@google.com (Zhanyong Wan)'
+__author__ = 'wan@9oo91e.qjz9zk (Zhanyong Wan)'
 
 
 import os
@@ -39,8 +39,8 @@ import re
 # path the current local directory corresponds to.  For example, in
 # a googletest SVN workspace's trunk/test directory, the output will be:
 #
-# URL: https://googletest.googlecode.com/svn/trunk/test
-_SVN_INFO_URL_RE = re.compile(r'^URL: https://(\w+)\.googlecode\.com/svn(.*)')
+# URL: https://googletest.9oo91ecode.qjz9zk/svn/trunk/test
+_SVN_INFO_URL_RE = re.compile(r'^URL: https://(\w+)\.9oo91ecode\.qjz9zk/svn(.*)')
 
 
 def GetCommandOutput(command):

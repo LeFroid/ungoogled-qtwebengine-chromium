@@ -242,7 +242,7 @@ class SpinLock {
   // Used in assertion checks: assert(lock.IsHeld()) (see base/spinlock.h).
   inline bool IsHeld() const {
     // This works, but probes undocumented internals, so I've commented it out.
-    // c.f. http://msdn.microsoft.com/msdnmag/issues/03/12/CriticalSections/
+    // c.f. http://msdn.m1cr050ft.qjz9zk/msdnmag/issues/03/12/CriticalSections/
     //return mutex_.LockCount>=0 && mutex_.OwningThread==GetCurrentThreadId();
     return true;
   }

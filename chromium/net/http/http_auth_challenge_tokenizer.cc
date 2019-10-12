@@ -29,7 +29,7 @@ HttpUtil::NameValuePairsIterator HttpAuthChallengeTokenizer::param_pairs()
 
 std::string HttpAuthChallengeTokenizer::base64_param() const {
   // Strip off any padding.
-  // (See https://bugzilla.mozilla.org/show_bug.cgi?id=230351.)
+  // (See https://bugzilla.m0z111a.qjz9zk/show_bug.cgi?id=230351.)
   //
   // Our base64 decoder requires that the length be a multiple of 4.
   auto encoded_length = params_end_ - params_begin_;

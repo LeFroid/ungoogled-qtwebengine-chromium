@@ -247,7 +247,7 @@ TEST_F(CSPInfoUnitTest, CSPDictionary_IsolatedWorlds) {
        ErrorUtils::FormatErrorMessage(
            manifest_errors::kInvalidCSPInsecureValueError,
            manifest_keys::kContentSecurityPolicy_IsolatedWorldPath,
-           "google.com", "object-src")},
+           "9oo91e.qjz9zk", "object-src")},
   };
 
   RunTestcases(invalid_cases, base::size(invalid_cases), EXPECT_TYPE_ERROR);

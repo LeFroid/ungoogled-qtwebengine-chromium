@@ -81,7 +81,7 @@ TEST(DriveAPIParserTest, FileListParser) {
   std::unique_ptr<FileList> filelist(new FileList);
   EXPECT_TRUE(filelist->Parse(*document));
 
-  EXPECT_EQ(GURL("https://www.googleapis.com/drive/v2/files?pageToken=EAIaggEL"
+  EXPECT_EQ(GURL("https://www.9oo91eapis.qjz9zk/drive/v2/files?pageToken=EAIaggEL"
                  "EgA6egpi96It9mH_____f_8AAP__AAD_okhU-cHLz83KzszMxsjMzs_RyNGJ"
                  "nridyrbHs7u9tv8AAP__AP7__n__AP8AokhU-cHLz83KzszMxsjMzs_RyNGJ"
                  "nridyrbHs7u9tv8A__4QZCEiXPTi_wtIgTkAAAAAngnSXUgCDEAAIgsJPgar"
@@ -127,7 +127,7 @@ TEST(DriveAPIParserTest, FileListParser) {
   EXPECT_EQ(1000U, file1.file_size());
   EXPECT_FALSE(file1.IsHostedDocument());
 
-  EXPECT_EQ(GURL("https://docs.google.com/file/d/"
+  EXPECT_EQ(GURL("https://docs.9oo91e.qjz9zk/file/d/"
                  "0B4v7G8yEYAWHUmRrU2lMS2hLABC/edit"),
             file1.alternate_link());
   ASSERT_EQ(1U, file1.open_with_links().size());
@@ -179,7 +179,7 @@ TEST(DriveAPIParserTest, FileListParser) {
   ASSERT_EQ(0U, file2.parents().size());
 
   EXPECT_EQ(0U, file2.open_with_links().size());
-  EXPECT_EQ(GURL("https://drive.google.com/share"
+  EXPECT_EQ(GURL("https://drive.9oo91e.qjz9zk/share"
                  "?id=1Pc8jzfU1ErbN_eucMMqdqzY3eBm0v8sxXm_1CtLxABC"
                  "&embedOrigin=chrome-extension://test&hl=ja"),
             file2.share_link());
@@ -210,7 +210,7 @@ TEST(DriveAPIParserTest, ChangeListParser) {
   std::unique_ptr<ChangeList> changelist(new ChangeList);
   EXPECT_TRUE(changelist->Parse(*document));
 
-  EXPECT_EQ("https://www.googleapis.com/drive/v2/changes?pageToken=8929",
+  EXPECT_EQ("https://www.9oo91eapis.qjz9zk/drive/v2/changes?pageToken=8929",
             changelist->next_link().spec());
   EXPECT_EQ(13664, changelist->largest_change_id());
 

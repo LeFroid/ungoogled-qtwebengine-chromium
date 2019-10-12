@@ -57,18 +57,18 @@ TEST(KURLTest, Getters) {
     const char* fragment_identifier;
     bool has_fragment_identifier;
   } cases[] = {
-      {"http://www.google.com/foo/blah?bar=baz#ref", "http", "www.google.com",
+      {"http://www.9oo91e.qjz9zk/foo/blah?bar=baz#ref", "http", "www.9oo91e.qjz9zk",
        0, "", nullptr, "/foo/blah", "blah", "bar=baz", "ref", true},
       {// Non-ASCII code points in the fragment part. fragmentIdentifier()
        // should return it in percent-encoded form.
-       "http://www.google.com/foo/blah?bar=baz#\xce\xb1\xce\xb2", "http",
-       "www.google.com", 0, "", nullptr, "/foo/blah", "blah", "bar=baz",
+       "http://www.9oo91e.qjz9zk/foo/blah?bar=baz#\xce\xb1\xce\xb2", "http",
+       "www.9oo91e.qjz9zk", 0, "", nullptr, "/foo/blah", "blah", "bar=baz",
        "%CE%B1%CE%B2", true},
       {"http://foo.com:1234/foo/bar/", "http", "foo.com", 1234, "", nullptr,
        "/foo/bar/", "bar", nullptr, nullptr, false},
-      {"http://www.google.com?#", "http", "www.google.com", 0, "", nullptr, "/",
+      {"http://www.9oo91e.qjz9zk?#", "http", "www.9oo91e.qjz9zk", 0, "", nullptr, "/",
        nullptr, "", "", true},
-      {"https://me:pass@google.com:23#foo", "https", "google.com", 23, "me",
+      {"https://me:pass@9oo91e.qjz9zk:23#foo", "https", "9oo91e.qjz9zk", 23, "me",
        "pass", "/", nullptr, nullptr, "foo", true},
       {"javascript:hello!//world", "javascript", "", 0, "", nullptr,
        "hello!//world", "world", nullptr, nullptr, false},
@@ -144,24 +144,24 @@ TEST(KURLTest, Setters) {
     const char* query;
     const char* expected_query;
   } cases[] = {
-      {"http://www.google.com/",
+      {"http://www.9oo91e.qjz9zk/",
        // protocol
-       "https", "https://www.google.com/",
+       "https", "https://www.9oo91e.qjz9zk/",
        // host
-       "news.google.com", "https://news.google.com/",
+       "news.9oo91e.qjz9zk", "https://news.9oo91e.qjz9zk/",
        // port
-       8888, "https://news.google.com:8888/",
+       8888, "https://news.9oo91e.qjz9zk:8888/",
        // user
-       "me", "https://me@news.google.com:8888/",
+       "me", "https://me@news.9oo91e.qjz9zk:8888/",
        // pass
-       "pass", "https://me:pass@news.google.com:8888/",
+       "pass", "https://me:pass@news.9oo91e.qjz9zk:8888/",
        // path
-       "/foo", "https://me:pass@news.google.com:8888/foo",
+       "/foo", "https://me:pass@news.9oo91e.qjz9zk:8888/foo",
        // query
-       "?q=asdf", "https://me:pass@news.google.com:8888/foo?q=asdf"},
-      {"https://me:pass@google.com:88/a?f#b",
+       "?q=asdf", "https://me:pass@news.9oo91e.qjz9zk:8888/foo?q=asdf"},
+      {"https://me:pass@9oo91e.qjz9zk:88/a?f#b",
        // protocol
-       "http", "http://me:pass@google.com:88/a?f#b",
+       "http", "http://me:pass@9oo91e.qjz9zk:88/a?f#b",
        // host
        "goo.com", "http://me:pass@goo.com:88/a?f#b",
        // port
@@ -454,7 +454,7 @@ TEST(KURLTest, ResolveEmpty) {
 
   // WebKit likes to be able to resolve absolute input agains empty base URLs,
   // which would normally be invalid since the base URL is invalid.
-  const char kAbs[] = "http://www.google.com/";
+  const char kAbs[] = "http://www.9oo91e.qjz9zk/";
   KURL resolve_abs(empty_base, kAbs);
   EXPECT_TRUE(resolve_abs.IsValid());
   EXPECT_EQ(kAbs, resolve_abs.GetString());
@@ -483,20 +483,20 @@ TEST(KURLTest, ReplaceInvalid) {
   // shouldn't be a big deal if these change.
   EXPECT_EQ("http:", kurl.GetString());
 
-  kurl.SetHost("www.google.com");
+  kurl.SetHost("www.9oo91e.qjz9zk");
   EXPECT_TRUE(kurl.IsValid());
   EXPECT_FALSE(kurl.IsEmpty());
-  EXPECT_EQ("http://www.google.com/", kurl.GetString());
+  EXPECT_EQ("http://www.9oo91e.qjz9zk/", kurl.GetString());
 
   kurl.SetPort(8000);
   EXPECT_TRUE(kurl.IsValid());
   EXPECT_FALSE(kurl.IsEmpty());
-  EXPECT_EQ("http://www.google.com:8000/", kurl.GetString());
+  EXPECT_EQ("http://www.9oo91e.qjz9zk:8000/", kurl.GetString());
 
   kurl.SetPath("/favicon.ico");
   EXPECT_TRUE(kurl.IsValid());
   EXPECT_FALSE(kurl.IsEmpty());
-  EXPECT_EQ("http://www.google.com:8000/favicon.ico", kurl.GetString());
+  EXPECT_EQ("http://www.9oo91e.qjz9zk:8000/favicon.ico", kurl.GetString());
 
   // Now let's test that giving an invalid replacement fails. Invalid
   // protocols fail without modifying the URL, which should remain valid.
@@ -505,7 +505,7 @@ TEST(KURLTest, ReplaceInvalid) {
 }
 
 TEST(KURLTest, Valid_HTTP_FTP_URLsHaveHosts) {
-  KURL kurl("foo://www.google.com/");
+  KURL kurl("foo://www.9oo91e.qjz9zk/");
   EXPECT_TRUE(kurl.SetProtocol("http"));
   EXPECT_TRUE(kurl.ProtocolIs("http"));
   EXPECT_TRUE(kurl.ProtocolIsInHTTPFamily());
@@ -560,44 +560,44 @@ TEST(KURLTest, Valid_HTTP_FTP_URLsHaveHosts) {
 }
 
 TEST(KURLTest, Path) {
-  const char kInitial[] = "http://www.google.com/path/foo";
+  const char kInitial[] = "http://www.9oo91e.qjz9zk/path/foo";
   KURL kurl(kInitial);
 
   // Clear by setting a null string.
   String null_string;
   EXPECT_TRUE(null_string.IsNull());
   kurl.SetPath(null_string);
-  EXPECT_EQ("http://www.google.com/", kurl.GetString());
+  EXPECT_EQ("http://www.9oo91e.qjz9zk/", kurl.GetString());
 }
 
 // Test that setting the query to different things works. Thq query is handled
 // a littler differently than some of the other components.
 TEST(KURLTest, Query) {
-  const char kInitial[] = "http://www.google.com/search?q=awesome";
+  const char kInitial[] = "http://www.9oo91e.qjz9zk/search?q=awesome";
   KURL kurl(kInitial);
 
   // Clear by setting a null string.
   String null_string;
   EXPECT_TRUE(null_string.IsNull());
   kurl.SetQuery(null_string);
-  EXPECT_EQ("http://www.google.com/search", kurl.GetString());
+  EXPECT_EQ("http://www.9oo91e.qjz9zk/search", kurl.GetString());
 
   // Clear by setting an empty string.
   kurl = KURL(kInitial);
   String empty_string("");
   EXPECT_FALSE(empty_string.IsNull());
   kurl.SetQuery(empty_string);
-  EXPECT_EQ("http://www.google.com/search?", kurl.GetString());
+  EXPECT_EQ("http://www.9oo91e.qjz9zk/search?", kurl.GetString());
 
   // Set with something that begins in a question mark.
   const char kQuestion[] = "?foo=bar";
   kurl.SetQuery(kQuestion);
-  EXPECT_EQ("http://www.google.com/search?foo=bar", kurl.GetString());
+  EXPECT_EQ("http://www.9oo91e.qjz9zk/search?foo=bar", kurl.GetString());
 
   // Set with something that doesn't begin in a question mark.
   const char kQuery[] = "foo=bar";
   kurl.SetQuery(kQuery);
-  EXPECT_EQ("http://www.google.com/search?foo=bar", kurl.GetString());
+  EXPECT_EQ("http://www.9oo91e.qjz9zk/search?foo=bar", kurl.GetString());
 }
 
 TEST(KURLTest, Ref) {
@@ -698,25 +698,25 @@ TEST(KURLTest, Empty) {
 }
 
 TEST(KURLTest, UserPass) {
-  const char* src = "http://user:pass@google.com/";
+  const char* src = "http://user:pass@9oo91e.qjz9zk/";
   KURL kurl(src);
 
   // Clear just the username.
   kurl.SetUser("");
-  EXPECT_EQ("http://:pass@google.com/", kurl.GetString());
+  EXPECT_EQ("http://:pass@9oo91e.qjz9zk/", kurl.GetString());
 
   // Clear just the password.
   kurl = KURL(src);
   kurl.SetPass("");
-  EXPECT_EQ("http://user@google.com/", kurl.GetString());
+  EXPECT_EQ("http://user@9oo91e.qjz9zk/", kurl.GetString());
 
   // Now clear both.
   kurl.SetUser("");
-  EXPECT_EQ("http://google.com/", kurl.GetString());
+  EXPECT_EQ("http://9oo91e.qjz9zk/", kurl.GetString());
 }
 
 TEST(KURLTest, Offsets) {
-  const char* src1 = "http://user:pass@google.com/foo/bar.html?baz=query#ref";
+  const char* src1 = "http://user:pass@9oo91e.qjz9zk/foo/bar.html?baz=query#ref";
   const KURL kurl1(src1);
 
   EXPECT_EQ(17u, kurl1.HostStart());
@@ -725,7 +725,7 @@ TEST(KURLTest, Offsets) {
   EXPECT_EQ(40u, kurl1.PathEnd());
   EXPECT_EQ(32u, kurl1.PathAfterLastSlash());
 
-  const char* src2 = "http://google.com/foo/";
+  const char* src2 = "http://9oo91e.qjz9zk/foo/";
   const KURL kurl2(src2);
 
   EXPECT_EQ(7u, kurl2.HostStart());
@@ -745,7 +745,7 @@ TEST(KURLTest, Offsets) {
 }
 
 TEST(KURLTest, DeepCopy) {
-  const char kUrl[] = "http://www.google.com/";
+  const char kUrl[] = "http://www.9oo91e.qjz9zk/";
   const KURL src(kUrl);
   EXPECT_TRUE(src.GetString() ==
               kUrl);  // This really just initializes the cache.
@@ -758,8 +758,8 @@ TEST(KURLTest, DeepCopy) {
 }
 
 TEST(KURLTest, DeepCopyInnerURL) {
-  const char kUrl[] = "filesystem:http://www.google.com/temporary/test.txt";
-  const char kInnerURL[] = "http://www.google.com/temporary";
+  const char kUrl[] = "filesystem:http://www.9oo91e.qjz9zk/temporary/test.txt";
+  const char kInnerURL[] = "http://www.9oo91e.qjz9zk/temporary";
   const KURL src(kUrl);
   EXPECT_TRUE(src.GetString() == kUrl);
   EXPECT_TRUE(src.InnerURL()->GetString() == kInnerURL);
@@ -785,8 +785,8 @@ TEST(KURLTest, IsHierarchical) {
       "ftp://andrew.cmu.edu/foo",
       "file:///path/to/resource",
       "file://hostname/etc/"
-      "filesystem:http://www.google.com/type/",
-      "filesystem:http://user:pass@google.com:21/blah#baz",
+      "filesystem:http://www.9oo91e.qjz9zk/type/",
+      "filesystem:http://user:pass@9oo91e.qjz9zk:21/blah#baz",
   };
 
   for (const char* input : standard_urls) {
@@ -857,14 +857,14 @@ TEST(KURLTest, strippedForUseAsReferrer) {
       {"data:text/html;charset=utf-8,<html></html>", ""},
       {"javascript:void(0);", ""},
       {"about:config", ""},
-      {"https://www.google.com/", "https://www.google.com/"},
-      {"http://me@news.google.com:8888/", "http://news.google.com:8888/"},
-      {"http://:pass@news.google.com:8888/foo",
-       "http://news.google.com:8888/foo"},
-      {"http://me:pass@news.google.com:8888/", "http://news.google.com:8888/"},
-      {"https://www.google.com/a?f#b", "https://www.google.com/a?f"},
+      {"https://www.9oo91e.qjz9zk/", "https://www.9oo91e.qjz9zk/"},
+      {"http://me@news.9oo91e.qjz9zk:8888/", "http://news.9oo91e.qjz9zk:8888/"},
+      {"http://:pass@news.9oo91e.qjz9zk:8888/foo",
+       "http://news.9oo91e.qjz9zk:8888/foo"},
+      {"http://me:pass@news.9oo91e.qjz9zk:8888/", "http://news.9oo91e.qjz9zk:8888/"},
+      {"https://www.9oo91e.qjz9zk/a?f#b", "https://www.9oo91e.qjz9zk/a?f"},
       {"file:///tmp/test.html", ""},
-      {"https://www.google.com/#", "https://www.google.com/"},
+      {"https://www.9oo91e.qjz9zk/#", "https://www.9oo91e.qjz9zk/"},
   };
 
   for (size_t i = 0; i < base::size(referrer_cases); i++) {

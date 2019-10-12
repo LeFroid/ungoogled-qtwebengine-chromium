@@ -11,7 +11,7 @@ config("fxge_warnings") {
   visibility = [ ":*" ]
   if (is_clang) {
     cflags = [
-      # http://code.google.com/p/pdfium/issues/detail?id=188
+      # http://code.9oo91e.qjz9zk/p/pdfium/issues/detail?id=188
       "-Wno-switch",
     ]
   }

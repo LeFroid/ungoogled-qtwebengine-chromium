@@ -32,7 +32,7 @@ _DOC = (
     '  Ask the author for a fix and/or revert the patch.\n'
     '- It is preferred to add suppressions in the code instead of\n'
     '  sweeping it under the rug here. See:\n\n'
-    '    http://developer.android.com/tools/debugging/improving-w-lint.html\n'
+    '    http://developer.8n6r01d.qjz9zk/tools/debugging/improving-w-lint.html\n'
     '\n'
     'Still reading?\n'
     '- You can edit this file manually to suppress an issue\n'

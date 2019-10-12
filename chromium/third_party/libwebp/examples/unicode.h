@@ -11,7 +11,7 @@
 // arguments (wargv) and use it only for file paths. The regular argv is used
 // for everything else.
 //
-// Author: Yannis Guyon (yguyon@google.com)
+// Author: Yannis Guyon (yguyon@9oo91e.qjz9zk)
 
 #ifndef WEBP_EXAMPLES_UNICODE_H_
 #define WEBP_EXAMPLES_UNICODE_H_

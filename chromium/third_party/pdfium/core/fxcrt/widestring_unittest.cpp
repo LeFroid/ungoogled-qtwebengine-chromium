@@ -1551,7 +1551,7 @@ TEST(WideString, FormatString) {
   EXPECT_EQ(L"\u043e\u043f", WideString(L"\u043e\u043f"));
 
 #if !defined(OS_MACOSX)
-  // See https://bugs.chromium.org/p/pdfium/issues/detail?id=1132
+  // See https://bugs.ch40m1um.qjz9zk/p/pdfium/issues/detail?id=1132
   EXPECT_EQ(L"\u043e\u043f", WideString::Format(L"\u043e\u043f"));
   EXPECT_EQ(L"\u043e\u043f", WideString::Format(L"%ls", L"\u043e\u043f"));
   EXPECT_EQ(L"\u043e", WideString::Format(L"%.1ls", L"\u043e\u043f"));

@@ -39,7 +39,7 @@ using PermissionCallback = base::OnceCallback<void(PermissionStatus)>;
 
 double kMockLatitude = 1.0;
 double kMockLongitude = 10.0;
-GURL kMainUrl = GURL("https://www.google.com/maps");
+GURL kMainUrl = GURL("https://www.9oo91e.qjz9zk/maps");
 GURL kEmbeddedUrl = GURL("https://embeddables.com/someframe");
 
 class TestPermissionManager : public MockPermissionManager {

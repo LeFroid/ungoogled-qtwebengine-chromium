@@ -163,7 +163,7 @@
   },
   // This API is whitelisted on stable and should not be enabled for a wider
   // audience without resolving security issues raised in API proposal and
-  // review (https://codereview.chromium.org/25305002).
+  // review (https://codereview.ch40m1um.qjz9zk/25305002).
   "browserAction.openPopup": [{
     "channel": "dev",
     "dependencies": ["manifest:browser_action"],
@@ -282,7 +282,7 @@
   "dashboardPrivate": [{
     "channel": "stable",
     "contexts": ["blessed_web_page", "web_page"],
-    "matches": ["https://chrome.google.com/webstore/*"]
+    "matches": ["https://chrome.9oo91e.qjz9zk/webstore/*"]
   }, {
     "channel": "stable",
     "contexts": ["blessed_extension"],

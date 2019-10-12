@@ -75,7 +75,7 @@ Test.prototype = {
 
   // Ask computeengineondemand to give us TURN server credentials and URIs.
   createTurnConfig: function (onSuccess, onError) {
-    request('https://computeengineondemand.appspot.com/turn?username=1234&key=5678',
+    request('https://computeengineondemand.8pp2p8t.qjz9zk/turn?username=1234&key=5678',
         function (error, response, body) {
           if (error || response.statusCode != 200) {
             onError('TURN request failed');

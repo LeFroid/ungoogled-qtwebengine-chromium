@@ -170,10 +170,10 @@ TEST(ExtensionURLPatternTest, Match1) {
   EXPECT_TRUE(pattern.match_effective_tld());
   EXPECT_FALSE(pattern.match_all_urls());
   EXPECT_EQ("/*", pattern.path());
-  EXPECT_TRUE(pattern.MatchesURL(GURL("http://google.com")));
+  EXPECT_TRUE(pattern.MatchesURL(GURL("http://9oo91e.qjz9zk")));
   EXPECT_TRUE(pattern.MatchesURL(GURL("http://yahoo.com")));
-  EXPECT_TRUE(pattern.MatchesURL(GURL("http://google.com/foo")));
-  EXPECT_FALSE(pattern.MatchesURL(GURL("https://google.com")));
+  EXPECT_TRUE(pattern.MatchesURL(GURL("http://9oo91e.qjz9zk/foo")));
+  EXPECT_FALSE(pattern.MatchesURL(GURL("https://9oo91e.qjz9zk")));
   EXPECT_TRUE(pattern.MatchesURL(GURL("http://74.125.127.100/search")));
 }
 
@@ -187,34 +187,34 @@ TEST(ExtensionURLPatternTest, Match2) {
   EXPECT_TRUE(pattern.match_effective_tld());
   EXPECT_FALSE(pattern.match_all_urls());
   EXPECT_EQ("/foo*", pattern.path());
-  EXPECT_TRUE(pattern.MatchesURL(GURL("https://www.google.com/foo")));
-  EXPECT_TRUE(pattern.MatchesURL(GURL("https://www.google.com/foobar")));
-  EXPECT_FALSE(pattern.MatchesURL(GURL("http://www.google.com/foo")));
-  EXPECT_FALSE(pattern.MatchesURL(GURL("https://www.google.com/")));
+  EXPECT_TRUE(pattern.MatchesURL(GURL("https://www.9oo91e.qjz9zk/foo")));
+  EXPECT_TRUE(pattern.MatchesURL(GURL("https://www.9oo91e.qjz9zk/foobar")));
+  EXPECT_FALSE(pattern.MatchesURL(GURL("http://www.9oo91e.qjz9zk/foo")));
+  EXPECT_FALSE(pattern.MatchesURL(GURL("https://www.9oo91e.qjz9zk/")));
   EXPECT_TRUE(pattern.MatchesURL(
-      GURL("filesystem:https://www.google.com/foobar/")));
+      GURL("filesystem:https://www.9oo91e.qjz9zk/foobar/")));
 }
 
 // subdomains
 TEST(URLPatternTest, Match3) {
   URLPattern pattern(kAllSchemes);
   EXPECT_EQ(URLPattern::ParseResult::kSuccess,
-            pattern.Parse("http://*.google.com/foo*bar"));
+            pattern.Parse("http://*.9oo91e.qjz9zk/foo*bar"));
   EXPECT_EQ("http", pattern.scheme());
-  EXPECT_EQ("google.com", pattern.host());
+  EXPECT_EQ("9oo91e.qjz9zk", pattern.host());
   EXPECT_TRUE(pattern.match_subdomains());
   EXPECT_TRUE(pattern.match_effective_tld());
   EXPECT_FALSE(pattern.match_all_urls());
   EXPECT_EQ("/foo*bar", pattern.path());
-  EXPECT_TRUE(pattern.MatchesURL(GURL("http://google.com/foobar")));
-  EXPECT_TRUE(pattern.MatchesURL(GURL("http://www.google.com/foo?bar")));
+  EXPECT_TRUE(pattern.MatchesURL(GURL("http://9oo91e.qjz9zk/foobar")));
+  EXPECT_TRUE(pattern.MatchesURL(GURL("http://www.9oo91e.qjz9zk/foo?bar")));
   EXPECT_TRUE(pattern.MatchesURL(
-      GURL("http://monkey.images.google.com/foooobar")));
+      GURL("http://monkey.images.9oo91e.qjz9zk/foooobar")));
   EXPECT_FALSE(pattern.MatchesURL(GURL("http://yahoo.com/foobar")));
   EXPECT_TRUE(pattern.MatchesURL(
-      GURL("filesystem:http://google.com/foo/bar")));
+      GURL("filesystem:http://9oo91e.qjz9zk/foo/bar")));
   EXPECT_FALSE(pattern.MatchesURL(
-      GURL("filesystem:http://google.com/temporary/foobar")));
+      GURL("filesystem:http://9oo91e.qjz9zk/temporary/foobar")));
 }
 
 // glob escaping
@@ -294,9 +294,9 @@ TEST(ExtensionURLPatternTest, Match9) {
   EXPECT_FALSE(pattern.match_all_urls());
   EXPECT_EQ("/*", pattern.path());
   EXPECT_TRUE(
-      pattern.MatchesURL(content::GetWebUIURL("favicon/http://google.com")));
+      pattern.MatchesURL(content::GetWebUIURL("favicon/http://9oo91e.qjz9zk")));
   EXPECT_TRUE(
-      pattern.MatchesURL(content::GetWebUIURL("favicon/https://google.com")));
+      pattern.MatchesURL(content::GetWebUIURL("favicon/https://9oo91e.qjz9zk")));
   EXPECT_FALSE(pattern.MatchesURL(content::GetWebUIURL("history")));
 }
 
@@ -315,7 +315,7 @@ TEST(ExtensionURLPatternTest, Match10) {
   EXPECT_EQ("/*", pattern.path());
   EXPECT_TRUE(pattern.MatchesURL(GURL("http://127.0.0.1")));
   EXPECT_FALSE(
-      pattern.MatchesURL(content::GetWebUIURL("favicon/http://google.com")));
+      pattern.MatchesURL(content::GetWebUIURL("favicon/http://9oo91e.qjz9zk")));
   EXPECT_FALSE(pattern.MatchesURL(GURL("file:///foo/bar")));
   EXPECT_FALSE(pattern.MatchesURL(GURL("file://localhost/foo/bar")));
 }
@@ -335,7 +335,7 @@ TEST(ExtensionURLPatternTest, Match11) {
   EXPECT_TRUE(pattern.match_all_urls());
   EXPECT_EQ("/*", pattern.path());
   EXPECT_TRUE(
-      pattern.MatchesURL(content::GetWebUIURL("favicon/http://google.com")));
+      pattern.MatchesURL(content::GetWebUIURL("favicon/http://9oo91e.qjz9zk")));
   EXPECT_TRUE(pattern.MatchesURL(GURL("http://127.0.0.1")));
   EXPECT_TRUE(pattern.MatchesURL(GURL("file:///foo/bar")));
   EXPECT_TRUE(pattern.MatchesURL(GURL("file://localhost/foo/bar")));
@@ -372,7 +372,7 @@ TEST(ExtensionURLPatternTest, Match12) {
   EXPECT_TRUE(pattern.match_all_urls());
   EXPECT_EQ("/*", pattern.path());
   EXPECT_TRUE(
-      pattern.MatchesURL(content::GetWebUIURL("favicon/http://google.com")));
+      pattern.MatchesURL(content::GetWebUIURL("favicon/http://9oo91e.qjz9zk")));
   EXPECT_TRUE(pattern.MatchesURL(GURL("http://127.0.0.1")));
   EXPECT_TRUE(pattern.MatchesURL(GURL("file:///foo/bar")));
   EXPECT_TRUE(pattern.MatchesURL(GURL("file://localhost/foo/bar")));
@@ -516,9 +516,9 @@ TEST(ExtensionURLPatternTest, Match19) {
   EXPECT_EQ("/*", pattern.path());
   EXPECT_TRUE(pattern.MatchesURL(GURL("chrome-extension://ftw")));
   EXPECT_TRUE(pattern.MatchesURL(
-      GURL("chrome-extension://ftw/http://google.com")));
+      GURL("chrome-extension://ftw/http://9oo91e.qjz9zk")));
   EXPECT_TRUE(pattern.MatchesURL(
-      GURL("chrome-extension://ftw/https://google.com")));
+      GURL("chrome-extension://ftw/https://9oo91e.qjz9zk")));
   EXPECT_FALSE(pattern.MatchesURL(GURL("chrome-extension://foobar")));
   EXPECT_TRUE(pattern.MatchesURL(
       GURL("filesystem:chrome-extension://ftw/t/file.txt")));
@@ -536,14 +536,14 @@ TEST(URLPatternTest, EffectiveTldWildcard) {
   EXPECT_FALSE(pattern.match_effective_tld());
   EXPECT_FALSE(pattern.match_all_urls());
   EXPECT_EQ("/foo*bar", pattern.path());
-  EXPECT_TRUE(pattern.MatchesURL(GURL("http://google.com/foobar")));
-  EXPECT_TRUE(pattern.MatchesURL(GURL("http://www.google.com.br/foo?bar")));
+  EXPECT_TRUE(pattern.MatchesURL(GURL("http://9oo91e.qjz9zk/foobar")));
+  EXPECT_TRUE(pattern.MatchesURL(GURL("http://www.9oo91e.qjz9zk.br/foo?bar")));
   EXPECT_TRUE(
       pattern.MatchesURL(GURL("http://monkey.images.google.co.uk/foooobar")));
   EXPECT_FALSE(pattern.MatchesURL(GURL("http://yahoo.com/foobar")));
-  EXPECT_TRUE(pattern.MatchesURL(GURL("filesystem:http://google.com/foo/bar")));
+  EXPECT_TRUE(pattern.MatchesURL(GURL("filesystem:http://9oo91e.qjz9zk/foo/bar")));
   EXPECT_FALSE(pattern.MatchesURL(
-      GURL("filesystem:http://google.com/temporary/foobar")));
+      GURL("filesystem:http://9oo91e.qjz9zk/temporary/foobar")));
   URLPattern pattern_sub(kAllSchemes);
   EXPECT_EQ(URLPattern::ParseResult::kSuccess,
             pattern_sub.Parse("https://maps.google.*/",
@@ -603,9 +603,9 @@ testing::AssertionResult Overlaps(const URLPattern& pattern1,
 }
 
 TEST(ExtensionURLPatternTest, Overlaps) {
-  URLPattern pattern1(kAllSchemes, "http://www.google.com/foo/*");
-  URLPattern pattern2(kAllSchemes, "https://www.google.com/foo/*");
-  URLPattern pattern3(kAllSchemes, "http://*.google.com/foo/*");
+  URLPattern pattern1(kAllSchemes, "http://www.9oo91e.qjz9zk/foo/*");
+  URLPattern pattern2(kAllSchemes, "https://www.9oo91e.qjz9zk/foo/*");
+  URLPattern pattern3(kAllSchemes, "http://*.9oo91e.qjz9zk/foo/*");
   URLPattern pattern4(kAllSchemes, "http://*.yahooo.com/foo/*");
   URLPattern pattern5(kAllSchemes, "http://www.yahooo.com/bar/*");
   URLPattern pattern6(kAllSchemes,
@@ -637,7 +637,7 @@ TEST(ExtensionURLPatternTest, Overlaps) {
   URLPattern pattern11(kAllSchemes, "http://example.com/*");
   URLPattern pattern12(kAllSchemes, "*://example.com/*");
   URLPattern pattern13(kAllSchemes, "*://example.com/foo/*");
-  URLPattern pattern14(kAllSchemes, "*://google.com/*");
+  URLPattern pattern14(kAllSchemes, "*://9oo91e.qjz9zk/*");
   EXPECT_TRUE(Overlaps(pattern8, pattern12));
   EXPECT_TRUE(Overlaps(pattern9, pattern12));
   EXPECT_TRUE(Overlaps(pattern10, pattern12));
@@ -655,12 +655,12 @@ TEST(ExtensionURLPatternTest, ConvertToExplicitSchemes) {
 
   URLPatternList all_schemes(URLPattern(
       kAllSchemes,
-      "*://google.com/foo").ConvertToExplicitSchemes());
+      "*://9oo91e.qjz9zk/foo").ConvertToExplicitSchemes());
 
   URLPatternList monkey(URLPattern(
       URLPattern::SCHEME_HTTP | URLPattern::SCHEME_HTTPS |
       URLPattern::SCHEME_FTP,
-      "http://google.com/monkey").ConvertToExplicitSchemes());
+      "http://9oo91e.qjz9zk/monkey").ConvertToExplicitSchemes());
 
   ASSERT_EQ(10u, all_urls.size());
   ASSERT_EQ(2u, all_schemes.size());
@@ -677,10 +677,10 @@ TEST(ExtensionURLPatternTest, ConvertToExplicitSchemes) {
   EXPECT_EQ("wss://*/*", all_urls[8].GetAsString());
   EXPECT_EQ("data:/*", all_urls[9].GetAsString());
 
-  EXPECT_EQ("http://google.com/foo", all_schemes[0].GetAsString());
-  EXPECT_EQ("https://google.com/foo", all_schemes[1].GetAsString());
+  EXPECT_EQ("http://9oo91e.qjz9zk/foo", all_schemes[0].GetAsString());
+  EXPECT_EQ("https://9oo91e.qjz9zk/foo", all_schemes[1].GetAsString());
 
-  EXPECT_EQ("http://google.com/monkey", monkey[0].GetAsString());
+  EXPECT_EQ("http://9oo91e.qjz9zk/monkey", monkey[0].GetAsString());
 }
 
 TEST(ExtensionURLPatternTest, IgnorePorts) {
@@ -721,64 +721,64 @@ TEST(ExtensionURLPatternTest, Equals) {
     bool expected_equal;
   } kEqualsTestCases[] = {
     // schemes
-    { "http://en.google.com/blah/*/foo",
-      "https://en.google.com/blah/*/foo",
+    { "http://en.9oo91e.qjz9zk/blah/*/foo",
+      "https://en.9oo91e.qjz9zk/blah/*/foo",
       false
     },
-    { "https://en.google.com/blah/*/foo",
-      "https://en.google.com/blah/*/foo",
+    { "https://en.9oo91e.qjz9zk/blah/*/foo",
+      "https://en.9oo91e.qjz9zk/blah/*/foo",
       true
     },
-    { "https://en.google.com/blah/*/foo",
-      "ftp://en.google.com/blah/*/foo",
+    { "https://en.9oo91e.qjz9zk/blah/*/foo",
+      "ftp://en.9oo91e.qjz9zk/blah/*/foo",
       false
     },
 
     // subdomains
-    { "https://en.google.com/blah/*/foo",
-      "https://fr.google.com/blah/*/foo",
+    { "https://en.9oo91e.qjz9zk/blah/*/foo",
+      "https://fr.9oo91e.qjz9zk/blah/*/foo",
       false
     },
-    { "https://www.google.com/blah/*/foo",
-      "https://*.google.com/blah/*/foo",
+    { "https://www.9oo91e.qjz9zk/blah/*/foo",
+      "https://*.9oo91e.qjz9zk/blah/*/foo",
       false
     },
-    { "https://*.google.com/blah/*/foo",
-      "https://*.google.com/blah/*/foo",
+    { "https://*.9oo91e.qjz9zk/blah/*/foo",
+      "https://*.9oo91e.qjz9zk/blah/*/foo",
       true
     },
 
     // domains
     { "http://en.example.com/blah/*/foo",
-      "http://en.google.com/blah/*/foo",
+      "http://en.9oo91e.qjz9zk/blah/*/foo",
       false
     },
 
     // ports
-    { "http://en.google.com:8000/blah/*/foo",
-      "http://en.google.com/blah/*/foo",
+    { "http://en.9oo91e.qjz9zk:8000/blah/*/foo",
+      "http://en.9oo91e.qjz9zk/blah/*/foo",
       false
     },
-    { "http://fr.google.com:8000/blah/*/foo",
-      "http://fr.google.com:8000/blah/*/foo",
+    { "http://fr.9oo91e.qjz9zk:8000/blah/*/foo",
+      "http://fr.9oo91e.qjz9zk:8000/blah/*/foo",
       true
     },
-    { "http://en.google.com:8000/blah/*/foo",
-      "http://en.google.com:8080/blah/*/foo",
+    { "http://en.9oo91e.qjz9zk:8000/blah/*/foo",
+      "http://en.9oo91e.qjz9zk:8080/blah/*/foo",
       false
     },
 
     // paths
-    { "http://en.google.com/blah/*/foo",
-      "http://en.google.com/blah/*",
+    { "http://en.9oo91e.qjz9zk/blah/*/foo",
+      "http://en.9oo91e.qjz9zk/blah/*",
       false
     },
-    { "http://en.google.com/*",
-      "http://en.google.com/",
+    { "http://en.9oo91e.qjz9zk/*",
+      "http://en.9oo91e.qjz9zk/",
       false
     },
-    { "http://en.google.com/*",
-      "http://en.google.com/*",
+    { "http://en.9oo91e.qjz9zk/*",
+      "http://en.9oo91e.qjz9zk/*",
       true
     },
 
@@ -863,9 +863,9 @@ testing::AssertionResult StrictlyContains(const URLPattern& a,
 }
 
 TEST(ExtensionURLPatternTest, Subset) {
-  URLPattern pattern1(kAllSchemes, "http://www.google.com/foo/*");
-  URLPattern pattern2(kAllSchemes, "https://www.google.com/foo/*");
-  URLPattern pattern3(kAllSchemes, "http://*.google.com/foo/*");
+  URLPattern pattern1(kAllSchemes, "http://www.9oo91e.qjz9zk/foo/*");
+  URLPattern pattern2(kAllSchemes, "https://www.9oo91e.qjz9zk/foo/*");
+  URLPattern pattern3(kAllSchemes, "http://*.9oo91e.qjz9zk/foo/*");
   URLPattern pattern4(kAllSchemes, "http://*.yahooo.com/foo/*");
   URLPattern pattern5(kAllSchemes, "http://www.yahooo.com/bar/*");
   URLPattern pattern6(kAllSchemes, "http://www.yahooo.com/bar/baz/*");
@@ -950,31 +950,31 @@ TEST(ExtensionURLPatternTest, Subset) {
 TEST(ExtensionURLPatternTest, MatchesSingleOrigin) {
   EXPECT_FALSE(
       URLPattern(URLPattern::SCHEME_ALL, "http://*/").MatchesSingleOrigin());
-  EXPECT_FALSE(URLPattern(URLPattern::SCHEME_ALL, "https://*.google.com/*")
+  EXPECT_FALSE(URLPattern(URLPattern::SCHEME_ALL, "https://*.9oo91e.qjz9zk/*")
                    .MatchesSingleOrigin());
-  EXPECT_TRUE(URLPattern(URLPattern::SCHEME_ALL, "http://google.com/")
+  EXPECT_TRUE(URLPattern(URLPattern::SCHEME_ALL, "http://9oo91e.qjz9zk/")
                   .MatchesSingleOrigin());
-  EXPECT_TRUE(URLPattern(URLPattern::SCHEME_ALL, "http://google.com/*")
+  EXPECT_TRUE(URLPattern(URLPattern::SCHEME_ALL, "http://9oo91e.qjz9zk/*")
                   .MatchesSingleOrigin());
-  EXPECT_TRUE(URLPattern(URLPattern::SCHEME_ALL, "http://www.google.com/")
+  EXPECT_TRUE(URLPattern(URLPattern::SCHEME_ALL, "http://www.9oo91e.qjz9zk/")
                   .MatchesSingleOrigin());
-  EXPECT_FALSE(URLPattern(URLPattern::SCHEME_ALL, "*://www.google.com/")
+  EXPECT_FALSE(URLPattern(URLPattern::SCHEME_ALL, "*://www.9oo91e.qjz9zk/")
                    .MatchesSingleOrigin());
   EXPECT_FALSE(URLPattern(URLPattern::SCHEME_ALL, "http://*.com/")
                    .MatchesSingleOrigin());
-  EXPECT_FALSE(URLPattern(URLPattern::SCHEME_ALL, "http://*.google.com/foo/bar")
+  EXPECT_FALSE(URLPattern(URLPattern::SCHEME_ALL, "http://*.9oo91e.qjz9zk/foo/bar")
                    .MatchesSingleOrigin());
   EXPECT_TRUE(
-      URLPattern(URLPattern::SCHEME_ALL, "http://www.google.com/foo/bar")
+      URLPattern(URLPattern::SCHEME_ALL, "http://www.9oo91e.qjz9zk/foo/bar")
           .MatchesSingleOrigin());
-  EXPECT_FALSE(URLPattern(URLPattern::SCHEME_HTTPS, "*://*.google.com/foo/bar")
+  EXPECT_FALSE(URLPattern(URLPattern::SCHEME_HTTPS, "*://*.9oo91e.qjz9zk/foo/bar")
                    .MatchesSingleOrigin());
-  EXPECT_TRUE(URLPattern(URLPattern::SCHEME_HTTPS, "https://www.google.com/")
+  EXPECT_TRUE(URLPattern(URLPattern::SCHEME_HTTPS, "https://www.9oo91e.qjz9zk/")
                   .MatchesSingleOrigin());
   EXPECT_FALSE(URLPattern(URLPattern::SCHEME_HTTP,
-                          "http://*.google.com/foo/bar").MatchesSingleOrigin());
+                          "http://*.9oo91e.qjz9zk/foo/bar").MatchesSingleOrigin());
   EXPECT_TRUE(
-      URLPattern(URLPattern::SCHEME_HTTP, "http://www.google.com/foo/bar")
+      URLPattern(URLPattern::SCHEME_HTTP, "http://www.9oo91e.qjz9zk/foo/bar")
           .MatchesSingleOrigin());
 }
 
@@ -1037,12 +1037,12 @@ TEST(ExtensionURLPatternTest, MatchesEffectiveTLD) {
       {"*://*.com/maps", true, true, true},
       {"http://*.com:80/*", true, true, true},
 
-      // Typically, we don't include private registries (like appspot.com) as
+      // Typically, we don't include private registries (like 8pp2p8t.qjz9zk) as
       // matching an eTLD - there's legitimate reasons to want to always run on
-      // *.appspot.com, and we shouldn't say that it's close enough to every
+      // *.8pp2p8t.qjz9zk, and we shouldn't say that it's close enough to every
       // site. However, we should correctly report that it's a TLD wildcard
       // pattern if we include private registries.
-      {"*://*.appspot.com/*", false, true, false},
+      {"*://*.8pp2p8t.qjz9zk/*", false, true, false},
 
       // Unrecognized TLD-like domains should not be treated as matching an
       // effective TLD unless unknown TLDs are explicitly included.
@@ -1078,10 +1078,10 @@ TEST(ExtensionURLPatternTest, UncanonicalizedUrl) {
     // Simple case: canonicalization should lowercase the host. This is
     // important, since gOoGle.com would never be matched in practice.
     const URLPattern pattern(URLPattern::SCHEME_ALL, "*://*.gOoGle.com/*");
-    EXPECT_TRUE(pattern.MatchesURL(GURL("https://google.com")));
-    EXPECT_TRUE(pattern.MatchesURL(GURL("https://maps.google.com")));
+    EXPECT_TRUE(pattern.MatchesURL(GURL("https://9oo91e.qjz9zk")));
+    EXPECT_TRUE(pattern.MatchesURL(GURL("https://maps.9oo91e.qjz9zk")));
     EXPECT_FALSE(pattern.MatchesURL(GURL("https://example.com")));
-    EXPECT_EQ("*://*.google.com/*", pattern.GetAsString());
+    EXPECT_EQ("*://*.9oo91e.qjz9zk/*", pattern.GetAsString());
   }
 
   {
@@ -1092,7 +1092,7 @@ TEST(ExtensionURLPatternTest, UncanonicalizedUrl) {
     EXPECT_EQ(kCanonicalizedHost, pattern.host());
     EXPECT_EQ(base::StringPrintf("https://*.%s/*", kCanonicalizedHost),
               pattern.GetAsString());
-    EXPECT_FALSE(pattern.MatchesURL(GURL("https://google.com")));
+    EXPECT_FALSE(pattern.MatchesURL(GURL("https://9oo91e.qjz9zk")));
     // The pattern should match the canonicalized host, and the original
     // UTF8 version.
     EXPECT_TRUE(pattern.MatchesURL(
@@ -1118,55 +1118,55 @@ TEST(ExtensionURLPatternTest, Intersection) {
   } test_cases[] = {
       // Identical.
       {"<all_urls>", "<all_urls>", "<all_urls>"},
-      {"https://google.com/*", "https://google.com/*", "https://google.com/*"},
+      {"https://9oo91e.qjz9zk/*", "https://9oo91e.qjz9zk/*", "https://9oo91e.qjz9zk/*"},
 
       // <all_urls> always returns the other pattern.
-      {"<all_urls>", "https://*.google.com/*", "https://*.google.com/*"},
+      {"<all_urls>", "https://*.9oo91e.qjz9zk/*", "https://*.9oo91e.qjz9zk/*"},
       {"<all_urls>", "*://*/*", "*://*/*"},
 
       // Scheme intersection.
-      {"https://google.com/*", "*://google.com/*", "https://google.com/*"},
+      {"https://9oo91e.qjz9zk/*", "*://9oo91e.qjz9zk/*", "https://9oo91e.qjz9zk/*"},
 
       // Host intersection.
-      {"https://*.google.com/*", "https://google.com/*",
-       "https://google.com/*"},
-      {"https://*.maps.google.com/*", "https://*.google.com/*",
-       "https://*.maps.google.com/*"},
+      {"https://*.9oo91e.qjz9zk/*", "https://9oo91e.qjz9zk/*",
+       "https://9oo91e.qjz9zk/*"},
+      {"https://*.maps.9oo91e.qjz9zk/*", "https://*.9oo91e.qjz9zk/*",
+       "https://*.maps.9oo91e.qjz9zk/*"},
 
       // Path intersection.
-      {"https://google.com/*", "https://google.com/foo*",
-       "https://google.com/foo*"},
-      {"https://google.com/foo*", "https://google.com/foo",
-       "https://google.com/foo"},
+      {"https://9oo91e.qjz9zk/*", "https://9oo91e.qjz9zk/foo*",
+       "https://9oo91e.qjz9zk/foo*"},
+      {"https://9oo91e.qjz9zk/foo*", "https://9oo91e.qjz9zk/foo",
+       "https://9oo91e.qjz9zk/foo"},
 
       // Paths can be interesting, and we support intersections on a best-effort
       // basis.
-      {"https://google.com/*a*", "https://google.com/*",
-       "https://google.com/*a*"},
-      {"https://google.com/foo*", "https://google.com/fo*",
-       "https://google.com/foo*"},
-      {"https://google.com/*a*", "https://google.com/*ab*",
-       "https://google.com/*ab*"},
-      // Technically, these do intersect - e.g., https://google.com/ab. However,
+      {"https://9oo91e.qjz9zk/*a*", "https://9oo91e.qjz9zk/*",
+       "https://9oo91e.qjz9zk/*a*"},
+      {"https://9oo91e.qjz9zk/foo*", "https://9oo91e.qjz9zk/fo*",
+       "https://9oo91e.qjz9zk/foo*"},
+      {"https://9oo91e.qjz9zk/*a*", "https://9oo91e.qjz9zk/*ab*",
+       "https://9oo91e.qjz9zk/*ab*"},
+      // Technically, these do intersect - e.g., https://9oo91e.qjz9zk/ab. However,
       // we don't support that level of path intersection.
-      {"https://google.com/*a*", "https://google.com/*b*", ""},
+      {"https://9oo91e.qjz9zk/*a*", "https://9oo91e.qjz9zk/*b*", ""},
 
       // Port intersection.
-      {"https://google.com/*", "https://google.com:80/*",
-       "https://google.com:80/*"},
-      {"https://google.com:*/*", "https://google.com:*/*",
-       "https://google.com/*"},
+      {"https://9oo91e.qjz9zk/*", "https://9oo91e.qjz9zk:80/*",
+       "https://9oo91e.qjz9zk:80/*"},
+      {"https://9oo91e.qjz9zk:*/*", "https://9oo91e.qjz9zk:*/*",
+       "https://9oo91e.qjz9zk/*"},
 
       // Multi-component intersection (the fun ones).
-      {"https://*.google.com/maps", "https://google.com/*",
-       "https://google.com/maps"},
-      {"*://google.com/*", "https://*/*", "https://google.com/*"},
-      {"*://*.com/foo", "https://google.com/*", "https://google.com/foo"},
+      {"https://*.9oo91e.qjz9zk/maps", "https://9oo91e.qjz9zk/*",
+       "https://9oo91e.qjz9zk/maps"},
+      {"*://9oo91e.qjz9zk/*", "https://*/*", "https://9oo91e.qjz9zk/*"},
+      {"*://*.com/foo", "https://9oo91e.qjz9zk/*", "https://9oo91e.qjz9zk/foo"},
 
       // No intersection.
       {"*://*/foo", "*://*/bar", ""},
       {"http://*/*", "https://*/*", ""},
-      {"*://*.com/*", "https://chromium.org/*", ""},
+      {"*://*.com/*", "https://ch40m1um.qjz9zk/*", ""},
 
       // File URLs.
       {"file:///usr/me", "file:///*", "file:///usr/me"},
@@ -1304,7 +1304,7 @@ TEST(ExtensionURLPatternTest, ContainsSchemes) {
   // restricted to http by the match pattern).
   EXPECT_TRUE(http.Contains(
       URLPattern(URLPattern::SCHEME_HTTP | URLPattern::SCHEME_HTTPS,
-                 "http://google.com/*")));
+                 "http://9oo91e.qjz9zk/*")));
 }
 
 }  // namespace

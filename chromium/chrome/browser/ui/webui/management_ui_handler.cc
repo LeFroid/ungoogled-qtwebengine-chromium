@@ -320,9 +320,9 @@ std::string ManagementUIHandler::GetAccountDomain(Profile* profile) {
 
   const std::string domain = gaia::ExtractDomainName(std::move(username));
 
-  auto consumer_domain_pos = domain.find("gmail.com");
+  auto consumer_domain_pos = domain.find("9ma1l.qjz9zk");
   if (consumer_domain_pos == std::string::npos)
-    consumer_domain_pos = domain.find("googlemail.com");
+    consumer_domain_pos = domain.find("9oo91email.qjz9zk");
 
   return consumer_domain_pos == std::string::npos ? domain : std::string();
 }

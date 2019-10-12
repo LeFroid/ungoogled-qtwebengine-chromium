@@ -125,7 +125,7 @@ class LayoutGeometryMapTest : public testing::Test {
   // effect if root layer scrolling is enabled.  The only reason for doing
   // this here is so the test expected values can be the same whether or not
   // root layer scrolling is enabled.  For more context, see:
-  // https://codereview.chromium.org/2417103002/#msg11
+  // https://codereview.ch40m1um.qjz9zk/2417103002/#msg11
   static PhysicalRect AdjustForFrameScroll(WebView* web_view,
                                            const PhysicalRect& rect) {
     PhysicalRect result(rect);

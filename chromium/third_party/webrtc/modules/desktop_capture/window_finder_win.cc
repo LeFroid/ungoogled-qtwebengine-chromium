@@ -26,7 +26,7 @@ WindowId WindowFinderWin::GetWindowUnderPoint(DesktopVector point) {
   }
 
   // The difference between GA_ROOTOWNER and GA_ROOT can be found at
-  // https://groups.google.com/a/chromium.org/forum/#!topic/chromium-dev/Hirr_DkuZdw.
+  // https://groups.9oo91e.qjz9zk/a/ch40m1um.qjz9zk/forum/#!topic/chromium-dev/Hirr_DkuZdw.
   // In short, we should use GA_ROOT, since we only care about the root window
   // but not the owner.
   window = GetAncestor(window, GA_ROOT);

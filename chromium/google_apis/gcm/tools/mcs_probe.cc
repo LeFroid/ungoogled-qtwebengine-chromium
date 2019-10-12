@@ -97,7 +97,7 @@ const net::BackoffEntry::Policy kDefaultBackoffPolicy = {
 const char kChromeVersion[] = "Chrome MCS Probe";
 
 // The default server to communicate with.
-const char kMCSServerHost[] = "mtalk.google.com";
+const char kMCSServerHost[] = "mtalk.9oo91e.qjz9zk";
 const uint16_t kMCSServerPort = 5228;
 
 // Command line switches.

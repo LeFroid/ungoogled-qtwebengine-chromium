@@ -115,7 +115,7 @@ namespace dawn_native {
         bool mAlphaToCoverageEnabled;
 
         // Stage information
-        // TODO(cwallez@chromium.org): Store a crypto hash of the modules instead.
+        // TODO(cwallez@ch40m1um.qjz9zk): Store a crypto hash of the modules instead.
         Ref<ShaderModuleBase> mVertexModule;
         std::string mVertexEntryPoint;
         Ref<ShaderModuleBase> mFragmentModule;

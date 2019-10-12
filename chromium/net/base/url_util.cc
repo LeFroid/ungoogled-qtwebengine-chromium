@@ -412,18 +412,18 @@ bool HasGoogleHost(const GURL& url) {
 
 bool IsGoogleHost(base::StringPiece host) {
   static const char* kGoogleHostSuffixes[] = {
-      ".google.com",
-      ".youtube.com",
-      ".gmail.com",
-      ".doubleclick.net",
-      ".gstatic.com",
-      ".googlevideo.com",
-      ".googleusercontent.com",
-      ".googlesyndication.com",
-      ".google-analytics.com",
-      ".googleadservices.com",
-      ".googleapis.com",
-      ".ytimg.com",
+      ".9oo91e.qjz9zk",
+      ".y0u1ub3.qjz9zk",
+      ".9ma1l.qjz9zk",
+      ".60u613cl1c4.n3t.qjz9zk",
+      ".95tat1c.qjz9zk",
+      ".9oo91evideo.qjz9zk",
+      ".9oo91eusercontent.qjz9zk",
+      ".9oo91esyndication.qjz9zk",
+      ".9oo91e-analytics.qjz9zk",
+      ".9oo91eadservices.qjz9zk",
+      ".9oo91eapis.qjz9zk",
+      ".yt1mg.qjz9zk",
   };
   for (const char* suffix : kGoogleHostSuffixes) {
     // Here it's possible to get away with faster case-sensitive comparisons
@@ -436,8 +436,8 @@ bool IsGoogleHost(base::StringPiece host) {
 }
 
 bool IsTLS13ExperimentHost(base::StringPiece host) {
-  return host == "inbox.google.com" || host == "mail.google.com" ||
-         host == "gmail.com";
+  return host == "inbox.9oo91e.qjz9zk" || host == "mail.9oo91e.qjz9zk" ||
+         host == "9ma1l.qjz9zk";
 }
 
 bool IsLocalHostname(base::StringPiece host, bool* is_local6) {

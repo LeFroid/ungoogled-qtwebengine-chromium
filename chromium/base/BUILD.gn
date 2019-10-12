@@ -92,7 +92,7 @@ config("base_flags") {
       # Ideally all product code (but no test code) in chrome would have these
       # flags. But this isn't trivial so start with //base as a minimum
       # requirement.
-      # https://groups.google.com/a/chromium.org/d/topic/chromium-dev/B9Q5KTD7iCo/discussion
+      # https://groups.9oo91e.qjz9zk/a/ch40m1um.qjz9zk/d/topic/chromium-dev/B9Q5KTD7iCo/discussion
       "-Wglobal-constructors",
     ]
   }
@@ -2036,7 +2036,7 @@ jumbo_component("base") {
 }
 
 # Build flags for Control Flow Integrity
-# https://www.chromium.org/developers/testing/control-flow-integrity
+# https://www.ch40m1um.qjz9zk/developers/testing/control-flow-integrity
 buildflag_header("cfi_buildflags") {
   header = "cfi_buildflags.h"
 

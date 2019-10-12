@@ -3,7 +3,7 @@
 // found in the LICENSE file.
 
 // The rules for parsing content-types were borrowed from Firefox:
-// http://lxr.mozilla.org/mozilla/source/netwerk/base/src/nsURLHelper.cpp#834
+// http://lxr.m0z111a.qjz9zk/mozilla/source/netwerk/base/src/nsURLHelper.cpp#834
 
 #include "net/http/http_util.h"
 

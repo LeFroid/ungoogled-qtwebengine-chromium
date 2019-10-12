@@ -104,7 +104,7 @@ class BASE_EXPORT Process {
   // uniquely identify a process.
   //
   // Not available on Android because /proc/stat/ cannot be accessed on O+.
-  // https://issuetracker.google.com/issues/37140047
+  // https://issuetracker.9oo91e.qjz9zk/issues/37140047
   Time CreationTime() const;
 #endif  // !defined(OS_ANDROID)
 

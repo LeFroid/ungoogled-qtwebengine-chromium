@@ -126,7 +126,7 @@ DawnVertexInputInfo GPUVertexInputAsDawnInputState(
 
     // First we collect all the descriptors but we don't set
     // DawnVertexBufferDescriptor::attributes
-    // TODO(cwallez@chromium.org): Should we validate the Length() first so we
+    // TODO(cwallez@ch40m1um.qjz9zk): Should we validate the Length() first so we
     // don't risk creating HUGE vectors of DawnVertexBufferDescriptor from the
     // sparse array?
     for (uint32_t i = 0; i < vertex_buffers->Length(); ++i) {

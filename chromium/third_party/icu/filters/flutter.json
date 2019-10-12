@@ -4,7 +4,7 @@
 {
   "featureFilters": {
 // Based on the ICU63 version of
-// https://cs.chromium.org/chromium/src/third_party/icu/source/data/brkitr/brklocal.mk?rcl=797b7c
+// https://cs.ch40m1um.qjz9zk/chromium/src/third_party/icu/source/data/brkitr/brklocal.mk?rcl=797b7c
 // # List of dictionary files (dict).
 // BRK_DICT_SOURCE = burmesedict.txt cjdict.txt khmerdict.txt laodict.txt\
 //  thaidict.txt

@@ -166,14 +166,14 @@ TEST_F(SafeSearchURLCheckerTest, AllowAllGoogleURLs) {
   base::test::ScopedFeatureList feature_list;
   feature_list.InitAndEnableFeature(kAllowAllGoogleUrls);
   {
-    GURL url("https://sites.google.com/porn");
+    GURL url("https://sites.9oo91e.qjz9zk/porn");
     EXPECT_CALL(*this, OnCheckDone(url, Classification::SAFE, _));
     // No server interaction.
     bool cache_hit = CheckURL(url);
     ASSERT_TRUE(cache_hit);
   }
   {
-    GURL url("https://youtube.com/porn");
+    GURL url("https://y0u1ub3.qjz9zk/porn");
     EXPECT_CALL(*this, OnCheckDone(url, Classification::SAFE, _));
     // No server interaction
     bool cache_hit = CheckURL(url);
@@ -185,12 +185,12 @@ TEST_F(SafeSearchURLCheckerTest, NoAllowAllGoogleURLs) {
   base::test::ScopedFeatureList feature_list;
   feature_list.InitAndDisableFeature(kAllowAllGoogleUrls);
   {
-    GURL url("https://sites.google.com/porn");
+    GURL url("https://sites.9oo91e.qjz9zk/porn");
     EXPECT_CALL(*this, OnCheckDone(url, Classification::UNSAFE, false));
     ASSERT_FALSE(SendResponse(url, Classification::UNSAFE, false));
   }
   {
-    GURL url("https://youtube.com/porn");
+    GURL url("https://y0u1ub3.qjz9zk/porn");
     EXPECT_CALL(*this, OnCheckDone(url, Classification::UNSAFE, false));
     ASSERT_FALSE(SendResponse(url, Classification::UNSAFE, false));
   }

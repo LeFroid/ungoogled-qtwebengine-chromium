@@ -122,7 +122,7 @@ void* GetStackStart() {
   // pthread_getattr_np can fail for the main thread. In this case
   // just like NaCl we rely on the __libc_stack_end to give us
   // the start of the stack.
-  // See https://code.google.com/p/nativeclient/issues/detail?id=3431.
+  // See https://code.9oo91e.qjz9zk/p/nativeclient/issues/detail?id=3431.
   return __libc_stack_end;
 #else
   NOTREACHED();

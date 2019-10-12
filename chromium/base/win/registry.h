@@ -162,7 +162,7 @@ class BASE_EXPORT RegistryValueIterator {
   // KEY_WOW64_32KEY or KEY_WOW64_64KEY, or 0.
   // Note: |wow64access| should be the same access used to open |root_key|
   // previously, or a predefined key (e.g. HKEY_LOCAL_MACHINE).
-  // See http://msdn.microsoft.com/en-us/library/windows/desktop/aa384129.aspx.
+  // See http://msdn.m1cr050ft.qjz9zk/en-us/library/windows/desktop/aa384129.aspx.
   RegistryValueIterator(HKEY root_key,
                         const char16* folder_key,
                         REGSAM wow64access);
@@ -215,7 +215,7 @@ class BASE_EXPORT RegistryKeyIterator {
   // KEY_WOW64_32KEY or KEY_WOW64_64KEY, or 0.
   // Note: |wow64access| should be the same access used to open |root_key|
   // previously, or a predefined key (e.g. HKEY_LOCAL_MACHINE).
-  // See http://msdn.microsoft.com/en-us/library/windows/desktop/aa384129.aspx.
+  // See http://msdn.m1cr050ft.qjz9zk/en-us/library/windows/desktop/aa384129.aspx.
   RegistryKeyIterator(HKEY root_key,
                       const char16* folder_key,
                       REGSAM wow64access);

@@ -54,7 +54,7 @@ const char kIncognitoPushUnsupportedMessage[] =
     "websites.";
 
 // These UMA methods are called from the IO and/or UI threads. Racey but ok, see
-// https://groups.google.com/a/chromium.org/d/msg/chromium-dev/FNzZRJtN2aw/Aw0CWAXJJ1kJ
+// https://groups.9oo91e.qjz9zk/a/ch40m1um.qjz9zk/d/msg/chromium-dev/FNzZRJtN2aw/Aw0CWAXJJ1kJ
 void RecordRegistrationStatus(blink::mojom::PushRegistrationStatus status) {
   DCHECK(BrowserThread::CurrentlyOn(BrowserThread::IO) ||
          BrowserThread::CurrentlyOn(BrowserThread::UI));

@@ -295,11 +295,11 @@ void ProtocolHandlerRegistry::InstallDefaultsForChromeOS() {
   AddPredefinedHandler(
       ProtocolHandler::CreateProtocolHandler(
           "mailto",
-          GURL("https://mail.google.com/mail/?extsrc=mailto&amp;url=%s")));
+          GURL("https://mail.9oo91e.qjz9zk/mail/?extsrc=mailto&amp;url=%s")));
   AddPredefinedHandler(
       ProtocolHandler::CreateProtocolHandler(
           "webcal",
-          GURL("https://www.google.com/calendar/render?cid=%s")));
+          GURL("https://www.9oo91e.qjz9zk/calendar/render?cid=%s")));
 #else
   NOTREACHED();  // this method should only ever be called in chromeos.
 #endif

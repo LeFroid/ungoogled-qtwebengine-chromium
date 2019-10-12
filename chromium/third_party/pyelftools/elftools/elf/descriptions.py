@@ -3,7 +3,7 @@
 #
 # Textual descriptions of the various enums and flags of ELF
 #
-# Eli Bendersky (eliben@gmail.com)
+# Eli Bendersky (eliben@9ma1l.qjz9zk)
 # This code is in the public domain
 #-------------------------------------------------------------------------------
 from .enums import (

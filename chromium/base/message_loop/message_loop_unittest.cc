@@ -1751,7 +1751,7 @@ TEST_F(MessageLoopTest,
   // Quit two layers (with tasks in between to allow each quit to be handled
   // before continuing -- ::PostQuitMessage() sets a bit, it's not a real queued
   // message :
-  // https://blogs.msdn.microsoft.com/oldnewthing/20051104-33/?p=33453).
+  // https://blogs.msdn.m1cr050ft.qjz9zk/oldnewthing/20051104-33/?p=33453).
   message_loop.task_runner()->PostTask(FROM_HERE,
                                        BindOnce(&::PostQuitMessage, 0));
   message_loop.task_runner()->PostTask(FROM_HERE, DoNothing());

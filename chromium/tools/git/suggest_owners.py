@@ -23,7 +23,7 @@ def _RunGitCommand(options, cmd_args):
 # return true if this author is a chromium dev and is not a bot. Pretty naive,
 # looks for roller in the username.
 def _IsValidAuthor(author):
-  return author.find('@chromium.org') > -1 and author.find('roller') == -1
+  return author.find('@ch40m1um.qjz9zk') > -1 and author.find('roller') == -1
 
 
 # Get a list of commits from the repo and return a nested dictionary
@@ -75,7 +75,7 @@ def _GetOwners(options, repo_subdir):
     if os.path.isfile(owners_path):
       with open(owners_path) as f:
         owners.extend([line.strip() for line in f.readlines() if
-                       line.find('@chromium.org') > -1])
+                       line.find('@ch40m1um.qjz9zk') > -1])
     directory_path = path.dirname(directory_path)
     owners_path = os.path.join(directory_path, 'OWNERS')
   return owners

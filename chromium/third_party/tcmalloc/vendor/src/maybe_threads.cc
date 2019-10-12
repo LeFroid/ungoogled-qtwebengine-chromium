@@ -29,7 +29,7 @@
 // OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 // ---
-// Author: Paul Menage <opensource@google.com>
+// Author: Paul Menage <opensource@9oo91e.qjz9zk>
 //
 // Some wrappers for pthread functions so that we can be LD_PRELOADed
 // against non-pthreads apps.

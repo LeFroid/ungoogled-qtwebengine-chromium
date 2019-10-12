@@ -15,7 +15,7 @@
 namespace feedback_util {
 namespace {
 
-constexpr char kAtGoogleDotCom[] = "@google.com";
+constexpr char kAtGoogleDotCom[] = "@9oo91e.qjz9zk";
 
 }  // namespace
 

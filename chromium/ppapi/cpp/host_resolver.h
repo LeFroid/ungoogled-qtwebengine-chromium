@@ -22,7 +22,7 @@ class InstanceHandle;
 /// Permissions: In order to run <code>Resolve()</code>, apps permission
 /// <code>socket</code> with subrule <code>resolve-host</code> is required.
 /// For more details about network communication permissions, please see:
-/// http://developer.chrome.com/apps/app_network.html
+/// http://developer.ch40me.qjz9zk/apps/app_network.html
 class HostResolver : public Resource {
  public:
   /// Default constructor for creating an is_null() <code>HostResolver</code>

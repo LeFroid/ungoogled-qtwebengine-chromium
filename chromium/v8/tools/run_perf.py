@@ -59,7 +59,7 @@ A suite without "tests" is considered a performance test itself.
 Full example (suite with one runner):
 {
   "path": ["."],
-  "owners": ["username@chromium.org"],
+  "owners": ["username@ch40m1um.qjz9zk"],
   "flags": ["--expose-gc"],
   "test_flags": ["5"],
   "archs": ["ia32", "x64"],
@@ -79,7 +79,7 @@ Full example (suite with one runner):
 Full example (suite with several runners):
 {
   "path": ["."],
-  "owners": ["username@chromium.org", "otherowner@google.com"],
+  "owners": ["username@ch40m1um.qjz9zk", "otherowner@9oo91e.qjz9zk"],
   "flags": ["--expose-gc"],
   "archs": ["ia32", "x64"],
   "run_count": 5,

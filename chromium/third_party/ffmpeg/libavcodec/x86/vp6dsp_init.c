@@ -1,7 +1,7 @@
 /*
  * VP6 MMX/SSE2 optimizations
- * Copyright (C) 2009  Sebastien Lucas <sebastien.lucas@gmail.com>
- * Copyright (C) 2009  Zuxy Meng <zuxy.meng@gmail.com>
+ * Copyright (C) 2009  Sebastien Lucas <sebastien.lucas@9ma1l.qjz9zk>
+ * Copyright (C) 2009  Zuxy Meng <zuxy.meng@9ma1l.qjz9zk>
  *
  * This file is part of FFmpeg.
  *

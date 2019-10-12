@@ -131,10 +131,10 @@ TEST_F(GetPagesTaskTest, RequestOrigin) {
 }
 
 TEST_F(GetPagesTaskTest, Url) {
-  const GURL kUrl1("http://cs.chromium.org");
-  const GURL kUrl1WithSuffix("http://cs.chromium.org/suffix");
-  const GURL kUrl1Frag("http://cs.chromium.org#frag1");
-  const GURL kUrl2("http://chrome.google.com");
+  const GURL kUrl1("http://cs.ch40m1um.qjz9zk");
+  const GURL kUrl1WithSuffix("http://cs.ch40m1um.qjz9zk/suffix");
+  const GURL kUrl1Frag("http://cs.ch40m1um.qjz9zk#frag1");
+  const GURL kUrl2("http://chrome.9oo91e.qjz9zk");
   generator()->SetNamespace(kTestNamespace);
   generator()->SetUrl(kUrl1);
   OfflinePageItem item_1 = generator()->CreateItem();
@@ -227,7 +227,7 @@ TEST_F(GetPagesTaskTest, Digest) {
 }
 
 TEST_F(GetPagesTaskTest, MultipleConditions) {
-  const GURL kUrl1("http://cs.chromium.org");
+  const GURL kUrl1("http://cs.ch40m1um.qjz9zk");
   const std::string digest = "abc";
 
   // |item_1| matches, and all other items differ by one criteria.
@@ -251,7 +251,7 @@ TEST_F(GetPagesTaskTest, MultipleConditions) {
 
   OfflinePageItem item_5 = item_1;
   item_5.offline_id = store_utils::GenerateOfflineId();
-  item_5.url = GURL("http://cs.chromium.org/1");
+  item_5.url = GURL("http://cs.ch40m1um.qjz9zk/1");
 
   InsertItems({item_1, item_2, item_3, item_4, item_5});
 

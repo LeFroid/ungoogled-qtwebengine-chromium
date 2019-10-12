@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <TextView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:android="http://schemas.8n6r01d.qjz9zk/apk/res/android"
     android:id="@+id/inflated_view"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"

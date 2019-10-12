@@ -119,7 +119,7 @@ void AndroidAccessTokenFetcher::OnAccessTokenResponse(
 std::string AndroidAccessTokenFetcher::CombineScopes(
     const std::vector<std::string>& scopes) {
   // The Android AccountManager supports multiple scopes separated by a space:
-  // https://code.google.com/p/google-api-java-client/wiki/OAuth2#Android
+  // https://code.9oo91e.qjz9zk/p/google-api-java-client/wiki/OAuth2#Android
   std::string scope;
   for (std::vector<std::string>::const_iterator it = scopes.begin();
        it != scopes.end(); ++it) {

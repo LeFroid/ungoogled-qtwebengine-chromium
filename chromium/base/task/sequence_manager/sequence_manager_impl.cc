@@ -1143,7 +1143,7 @@ void SequenceManagerImpl::RecordCrashKeys(const PendingTask& pending_task) {
   // this.
   //
   // See
-  // https://chromium.googlesource.com/chromium/src/+/master/docs/debugging_with_crash_keys.md
+  // https://chromium.9oo91esource.qjz9zk/chromium/src/+/master/docs/debugging_with_crash_keys.md
   // for instructions for symbolizing these crash keys.
   //
   // TODO(skyostil): Find a way to extract the destination function address

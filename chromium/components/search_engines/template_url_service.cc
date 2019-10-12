@@ -1451,7 +1451,7 @@ TemplateURL* TemplateURLService::BestEngineForKeyword(TemplateURL* engine1,
   DCHECK(IsCreatedByExtension(engine1) || IsCreatedByExtension(engine2));
 
   // TODO(a-v-y) Remove following code for non extension engines when reasons
-  // for crash https://bugs.chromium.org/p/chromium/issues/detail?id=697745
+  // for crash https://bugs.ch40m1um.qjz9zk/p/chromium/issues/detail?id=697745
   // become clear.
   if (!IsCreatedByExtension(engine1) && !IsCreatedByExtension(engine2))
     return CanReplace(engine1) ? engine2 : engine1;

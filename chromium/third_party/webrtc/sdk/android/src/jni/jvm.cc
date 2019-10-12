@@ -51,7 +51,7 @@ static void ThreadDestructor(void* prev_jni_ptr) {
   // This function only runs on threads where |g_jni_ptr| is non-NULL, meaning
   // we were responsible for originally attaching the thread, so are responsible
   // for detaching it now.  However, because some JVM implementations (notably
-  // Oracle's http://goo.gl/eHApYT) also use the pthread_key_create mechanism,
+  // Oracle's http://goo.gl.qjz9zk/eHApYT) also use the pthread_key_create mechanism,
   // the JVMs accounting info for this thread may already be wiped out by the
   // time this is called. Thus it may appear we are already detached even though
   // it was our responsibility to detach!  Oh well.

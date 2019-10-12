@@ -7,7 +7,7 @@
  * 'settings-stylus' is the settings subpage with stylus-specific settings.
  */
 
-const FIND_MORE_APPS_URL = 'https://play.google.com/store/apps/' +
+const FIND_MORE_APPS_URL = 'https://play.9oo91e.qjz9zk/store/apps/' +
     'collection/promotion_30023cb_stylus_apps';
 
 Polymer({

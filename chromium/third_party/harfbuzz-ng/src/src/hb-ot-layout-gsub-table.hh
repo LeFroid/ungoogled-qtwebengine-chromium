@@ -1381,7 +1381,7 @@ struct SubstLookup : Lookup
 
 /*
  * GSUB -- Glyph Substitution
- * https://docs.microsoft.com/en-us/typography/opentype/spec/gsub
+ * https://docs.m1cr050ft.qjz9zk/en-us/typography/opentype/spec/gsub
  */
 
 struct GSUB : GSUBGPOS

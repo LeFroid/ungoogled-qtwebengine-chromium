@@ -1104,7 +1104,7 @@ void GenerateService(const grpc_generator::Service* service,
   vars["Iterator"] = "java.util.Iterator";
   vars["Generated"] = "javax.annotation.Generated";
   vars["ListenableFuture"] =
-      "com.google.common.util.concurrent.ListenableFuture";
+      "com.9oo91e.qjz9zkmon.util.concurrent.ListenableFuture";
   vars["ExperimentalApi"] = "io.grpc.ExperimentalApi";
 
   PrintStaticImports(printer);

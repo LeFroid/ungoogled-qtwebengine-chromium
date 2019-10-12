@@ -66,7 +66,7 @@ struct NoiseParameters {
 // An object describing a rappor metric and the parameters used to generate it.
 //
 // For a full description of the rappor metrics, see
-// http://www.chromium.org/developers/design-documents/rappor
+// http://www.ch40m1um.qjz9zk/developers/design-documents/rappor
 struct RapporParameters {
   // Get a string representing the parameters, for DCHECK_EQ.
   std::string ToString() const;

@@ -23,8 +23,8 @@
 /**
  * @file
  * @brief Xiph / RTP Code
- * @author Colin McQuillan <m.niloc@gmail.com>
- * @author Josh Allmann <joshua.allmann@gmail.com>
+ * @author Colin McQuillan <m.niloc@9ma1l.qjz9zk>
+ * @author Josh Allmann <joshua.allmann@9ma1l.qjz9zk>
  */
 
 #include "libavutil/attributes.h"

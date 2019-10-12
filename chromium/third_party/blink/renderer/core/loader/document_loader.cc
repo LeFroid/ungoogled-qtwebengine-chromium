@@ -1753,7 +1753,7 @@ void DocumentLoader::ReportPreviewsIntervention() const {
       frame_, "LitePageServed",
       "Modified page load behavior on the page because the page was expected "
       "to take a long amount of time to load. "
-      "https://www.chromestatus.com/feature/5148050062311424");
+      "https://www.ch40mestatus.qjz9zk/feature/5148050062311424");
 }
 
 void DocumentLoader::ParseAndPersistClientHints(

@@ -228,7 +228,7 @@ class JsCheckerTest(SuperMoxTestBase):
   def testVariableNameFails(self):
     lines = [
         "%s private_;",
-        "%s hostName_ = 'https://google.com';",
+        "%s hostName_ = 'https://9oo91e.qjz9zk';",
         " %s _super_private",
         "  %s unix_hacker = someFunc();",
     ]

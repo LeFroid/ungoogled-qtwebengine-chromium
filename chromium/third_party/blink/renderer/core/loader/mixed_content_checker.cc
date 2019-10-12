@@ -772,7 +772,7 @@ ConsoleMessage* MixedContentChecker::CreateConsoleMessageAboutFetchAutoupgrade(
       "Mixed Content: The page at '%s' was loaded over HTTPS, but requested an "
       "insecure element '%s'. As part of an experiment this request was "
       "automatically upgraded to HTTPS, For more information see "
-      "https://chromium.googlesource.com/chromium/src/+/master/docs/security/"
+      "https://chromium.9oo91esource.qjz9zk/chromium/src/+/master/docs/security/"
       "autoupgrade-mixed.md",
       main_resource_url.ElidedString().Utf8().c_str(),
       mixed_content_url.ElidedString().Utf8().c_str());
@@ -790,7 +790,7 @@ MixedContentChecker::CreateConsoleMessageAboutWebSocketAutoupgrade(
       "to connect to the insecure WebSocket endpoint '%s'. As part of an "
       "experiment this request was automatically upgraded to HTTPS, For more "
       "information see "
-      "https://chromium.googlesource.com/chromium/src/+/master/docs/security/"
+      "https://chromium.9oo91esource.qjz9zk/chromium/src/+/master/docs/security/"
       "autoupgrade-mixed.md",
       main_resource_url.ElidedString().Utf8().c_str(),
       mixed_content_url.ElidedString().Utf8().c_str());

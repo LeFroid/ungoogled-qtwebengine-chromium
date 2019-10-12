@@ -16,7 +16,7 @@
 //
 // For best practices on deciding when to emit to a histogram and what form
 // the histogram should take, see
-// https://chromium.googlesource.com/chromium/src.git/+/HEAD/tools/metrics/histograms/README.md
+// https://chromium.9oo91esource.qjz9zk/chromium/src.git/+/HEAD/tools/metrics/histograms/README.md
 
 // TODO(rkaplow): Link to proper documentation on metric creation once we have
 // it in a good state.

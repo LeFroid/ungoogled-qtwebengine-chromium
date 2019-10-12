@@ -104,9 +104,9 @@ class PageStateSerializationTest : public testing::Test {
  public:
   void PopulateFrameState(ExplodedFrameState* frame_state) {
     // Invent some data for the various fields.
-    frame_state->url_string = base::UTF8ToUTF16("http://dev.chromium.org/");
+    frame_state->url_string = base::UTF8ToUTF16("http://dev.ch40m1um.qjz9zk/");
     frame_state->referrer =
-        base::UTF8ToUTF16("https://www.google.com/search?q=dev.chromium.org");
+        base::UTF8ToUTF16("https://www.9oo91e.qjz9zk/search?q=dev.ch40m1um.qjz9zk");
     frame_state->referrer_policy = network::mojom::ReferrerPolicy::kAlways;
     frame_state->target = base::UTF8ToUTF16("foo");
     frame_state->state_object = base::nullopt;
@@ -114,7 +114,7 @@ class PageStateSerializationTest : public testing::Test {
     frame_state->document_state.push_back(base::UTF8ToUTF16("q"));
     frame_state->document_state.push_back(base::UTF8ToUTF16("text"));
     frame_state->document_state.push_back(
-        base::UTF8ToUTF16("dev.chromium.org"));
+        base::UTF8ToUTF16("dev.ch40m1um.qjz9zk"));
     frame_state->scroll_restoration_type =
         blink::kWebHistoryScrollRestorationManual;
     frame_state->visual_viewport_scroll_offset = gfx::PointF(10, 15);
@@ -148,8 +148,8 @@ class PageStateSerializationTest : public testing::Test {
   void PopulateFrameStateForBackwardsCompatTest(
       ExplodedFrameState* frame_state,
       bool is_child) {
-    frame_state->url_string = base::UTF8ToUTF16("http://chromium.org/");
-    frame_state->referrer = base::UTF8ToUTF16("http://google.com/");
+    frame_state->url_string = base::UTF8ToUTF16("http://ch40m1um.qjz9zk/");
+    frame_state->referrer = base::UTF8ToUTF16("http://9oo91e.qjz9zk/");
     frame_state->referrer_policy = network::mojom::ReferrerPolicy::kDefault;
     if (!is_child)
       frame_state->target = base::UTF8ToUTF16("target");
@@ -562,7 +562,7 @@ TEST_F(PageStateSerializationTest, BackwardsCompat_ReferencedFiles) {
 
 TEST_F(PageStateSerializationTest, BackwardsCompat_UrlString) {
   ExplodedPageState state;
-  state.top.url_string = base::ASCIIToUTF16("http://chromium.org");
+  state.top.url_string = base::ASCIIToUTF16("http://ch40m1um.qjz9zk");
 
   ExplodedPageState saved_state;
   ReadBackwardsCompatPageState("url_string", 26, &saved_state);
@@ -571,7 +571,7 @@ TEST_F(PageStateSerializationTest, BackwardsCompat_UrlString) {
 
 TEST_F(PageStateSerializationTest, BackwardsCompat_Referrer) {
   ExplodedPageState state;
-  state.top.referrer = base::ASCIIToUTF16("http://www.google.com");
+  state.top.referrer = base::ASCIIToUTF16("http://www.9oo91e.qjz9zk");
 
   ExplodedPageState saved_state;
   ReadBackwardsCompatPageState("referrer", 26, &saved_state);
@@ -580,7 +580,7 @@ TEST_F(PageStateSerializationTest, BackwardsCompat_Referrer) {
 
 TEST_F(PageStateSerializationTest, BackwardsCompat_Target) {
   ExplodedPageState state;
-  state.top.target = base::ASCIIToUTF16("http://www.google.com");
+  state.top.target = base::ASCIIToUTF16("http://www.9oo91e.qjz9zk");
 
   ExplodedPageState saved_state;
   ReadBackwardsCompatPageState("target", 26, &saved_state);

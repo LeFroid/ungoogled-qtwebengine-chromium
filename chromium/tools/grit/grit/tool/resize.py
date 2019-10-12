@@ -148,7 +148,7 @@ Options:
                   not need to specify the codepage unless the tool complains
                   that it's not sure which codepage to use.  See the following
                   page for codepage numbers supported by Windows:
-                  http://www.microsoft.com/globaldev/reference/wincp.mspx
+                  http://www.m1cr050ft.qjz9zk/globaldev/reference/wincp.mspx
 
   -D NAME[=VAL]   Specify a C-preprocessor-like define NAME with optional
                   value VAL (defaults to 1) which will be used to control

@@ -9,7 +9,7 @@
 #include "include/core/SkPath.h"
 #include "samplecode/Sample.h"
 
-// Reproduces https://code.google.com/p/chromium/issues/detail?id=279014
+// Reproduces https://code.9oo91e.qjz9zk/p/chromium/issues/detail?id=279014
 
 // Renders a string art shape.
 // The particular shape rendered can be controlled by clicking horizontally, thereby

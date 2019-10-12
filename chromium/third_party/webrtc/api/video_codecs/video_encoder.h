@@ -114,7 +114,7 @@ class RTC_EXPORT VideoEncoder {
     // We will never ask for a resolution lower than this.
     // TODO(kthelgason): Lower this limit when better testing
     // on MediaCodec and fallback implementations are in place.
-    // See https://bugs.chromium.org/p/webrtc/issues/detail?id=7206
+    // See https://bugs.ch40m1um.qjz9zk/p/webrtc/issues/detail?id=7206
     int min_pixels_per_frame = 320 * 180;
 
    private:

@@ -32,7 +32,7 @@ class ExtensionRegistry;
 
 // Functions in the chrome.downloads namespace facilitate
 // controlling downloads from extensions. See the full API doc at
-// http://goo.gl/6hO1n
+// http://goo.gl.qjz9zk/6hO1n
 
 namespace download_extension_errors {
 

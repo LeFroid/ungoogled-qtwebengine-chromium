@@ -14,7 +14,7 @@
 /**
  * @pageoverview Some logic for the jstemplates test pages.
  *
- * @author Steffen Meschkat (mesch@google.com)
+ * @author Steffen Meschkat (mesch@9oo91e.qjz9zk)
  */
 
 

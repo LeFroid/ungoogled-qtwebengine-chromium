@@ -29,7 +29,7 @@ bool RegisterUnwindInfoForExceptionHandlingOnly() {
 
 /*
  * From Windows SDK ehdata.h, which does not compile with Clang.
- * See https://msdn.microsoft.com/en-us/library/ddssxxy8.aspx.
+ * See https://msdn.m1cr050ft.qjz9zk/en-us/library/ddssxxy8.aspx.
  */
 union UNWIND_CODE {
   struct {

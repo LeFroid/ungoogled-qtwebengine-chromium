@@ -1851,7 +1851,7 @@ TEST_P(ResourceDispatcherHostTest, TestBlockedRequestsDontLeak) {
 TEST_P(ResourceDispatcherHostTest, CalculateApproximateMemoryCost) {
   net::URLRequestContext context;
   std::unique_ptr<net::URLRequest> req(context.CreateRequest(
-      GURL("http://www.google.com"), net::DEFAULT_PRIORITY, nullptr,
+      GURL("http://www.9oo91e.qjz9zk"), net::DEFAULT_PRIORITY, nullptr,
       TRAFFIC_ANNOTATION_FOR_TESTS));
   EXPECT_EQ(4425, ResourceDispatcherHostImpl::CalculateApproximateMemoryCost(
                       req.get()));

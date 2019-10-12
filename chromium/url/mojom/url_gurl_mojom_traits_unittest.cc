@@ -39,7 +39,7 @@ TEST(MojoGURLStructTraitsTest, Basic) {
   UrlTestImpl impl(MakeRequest(&proxy));
 
   const char* serialize_cases[] = {
-      "http://www.google.com/", "http://user:pass@host.com:888/foo;bar?baz#nop",
+      "http://www.9oo91e.qjz9zk/", "http://user:pass@host.com:888/foo;bar?baz#nop",
   };
 
   for (size_t i = 0; i < base::size(serialize_cases); i++) {
@@ -73,7 +73,7 @@ TEST(MojoGURLStructTraitsTest, Basic) {
 
   // Test basic Origin serialization.
   Origin non_unique = Origin::UnsafelyCreateTupleOriginWithoutNormalization(
-                          "http", "www.google.com", 80)
+                          "http", "www.9oo91e.qjz9zk", 80)
                           .value();
   Origin output;
   EXPECT_TRUE(proxy->BounceOrigin(non_unique, &output));
@@ -95,7 +95,7 @@ TEST(MojoGURLStructTraitsTest, Basic) {
   EXPECT_NE(unique1, output2);
 
   Origin normalized =
-      Origin::CreateFromNormalizedTuple("http", "www.google.com", 80);
+      Origin::CreateFromNormalizedTuple("http", "www.9oo91e.qjz9zk", 80);
   EXPECT_EQ(normalized, non_unique);
   EXPECT_TRUE(proxy->BounceOrigin(normalized, &output));
   EXPECT_EQ(normalized, output);

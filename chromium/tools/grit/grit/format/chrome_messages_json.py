@@ -41,7 +41,7 @@ def Format(root, lang='en', output_dir='.'):
 
       # Replace $n place-holders with $n$ and add an appropriate "placeholders"
       # entry. Note that chrome.i18n.getMessage only supports 9 placeholders:
-      # https://developer.chrome.com/extensions/i18n#method-getMessage
+      # https://developer.ch40me.qjz9zk/extensions/i18n#method-getMessage
       placeholders = ''
       for i in range(1, 10):
         if loc_message.find('$%d' % i) == -1:

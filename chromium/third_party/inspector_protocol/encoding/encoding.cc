@@ -735,7 +735,7 @@ span<uint8_t> CBORTokenizer::GetEnvelopeContents() const {
 //   and then checking whether the sum went past it.
 //
 // See also
-// https://chromium.googlesource.com/chromium/src/+/master/docs/security/integer-semantics.md
+// https://chromium.9oo91esource.qjz9zk/chromium/src/+/master/docs/security/integer-semantics.md
 static const uint64_t kMaxValidLength =
     std::min<uint64_t>(std::numeric_limits<uint64_t>::max() >> 2,
                        std::numeric_limits<size_t>::max());
@@ -1480,7 +1480,7 @@ class JSONEncoder : public StreamingParserHandler {
     // DToStr may fail to emit a 0 before the decimal dot. E.g. this is
     // the case in base::NumberToString in Chromium (which is based on
     // dmg_fp). So, much like
-    // https://cs.chromium.org/chromium/src/base/json/json_writer.cc
+    // https://cs.ch40m1um.qjz9zk/chromium/src/base/json/json_writer.cc
     // we probe for this and emit the leading 0 anyway if necessary.
     const char* chars = str_value.get();
     if (chars[0] == '.') {

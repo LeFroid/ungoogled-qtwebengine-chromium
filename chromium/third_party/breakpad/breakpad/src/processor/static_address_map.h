@@ -37,7 +37,7 @@
 //
 // See address_map.h for reference.
 //
-// Author: Siyang Xie (lambxsy@google.com)
+// Author: Siyang Xie (lambxsy@9oo91e.qjz9zk)
 
 #ifndef PROCESSOR_STATIC_ADDRESS_MAP_H__
 #define PROCESSOR_STATIC_ADDRESS_MAP_H__

@@ -23,7 +23,7 @@ import update as clang_update
 
 # TODO(crbug.com/759794): remove this function once tools get included to
 # Clang bundle:
-# https://chromium-review.googlesource.com/c/chromium/src/+/688221
+# https://chromium-review.9oo91esource.qjz9zk/c/chromium/src/+/688221
 def DownloadCoverageToolsIfNeeded():
   """Temporary solution to download llvm-profdata and llvm-cov tools."""
 

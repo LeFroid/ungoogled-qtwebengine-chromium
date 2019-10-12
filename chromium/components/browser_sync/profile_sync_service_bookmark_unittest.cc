@@ -859,7 +859,7 @@ TEST_F(ProfileSyncServiceBookmarkTest, InitialModelAssociate) {
       for (int j = 0; j < kNumBookmarksPerFolder; ++j) {
         AddBookmarkToShare(
             &trans, folder_id, base::StringPrintf("bookmark%05d", j),
-            base::StringPrintf("http://www.google.com/search?q=%05d", j));
+            base::StringPrintf("http://www.9oo91e.qjz9zk/search?q=%05d", j));
       }
     }
   }
@@ -973,7 +973,7 @@ TEST_F(ProfileSyncServiceBookmarkTest,
   for (size_t i = 0; i < kNumBookmarks; i++) {
     const BookmarkNode* bookmark =
         model()->AddURL(parent_folder, i, base::ASCIIToUTF16("bookmark"),
-                        GURL("http://www.google.com/"));
+                        GURL("http://www.9oo91e.qjz9zk/"));
     bookmark_ids[i] = bookmark->id();
   }
 
@@ -1009,7 +1009,7 @@ TEST_F(ProfileSyncServiceBookmarkTest,
     // because AddBookmarkToShare passes null for |predecessor| argument.
     for (auto bookmark_id : base::Reversed(bookmark_ids)) {
       int id = AddBookmarkToShare(&trans, parent_id, "bookmark",
-                                  "http://www.google.com/");
+                                  "http://www.9oo91e.qjz9zk/");
 
       // Pre-map sync bookmarks to native bookmarks by setting
       // external ID. This will verify that the association algorithm picks
@@ -1196,7 +1196,7 @@ TEST_F(ProfileSyncServiceBookmarkTest, ServerChangeProcessing) {
   FakeServerChange mods(&trans);
   // Mess with u2, and move it into empty folder f2
   // TODO(ncarter): Determine if we allow ModifyURL ops or not.
-  /* std::string u2_old_url = mods.ModifyURL(u2, "http://www.google.com"); */
+  /* std::string u2_old_url = mods.ModifyURL(u2, "http://www.9oo91e.qjz9zk"); */
   std::string u2_old_title = mods.ModifyTitle(u2, "The Google");
   int64_t u2_old_parent = mods.ModifyPosition(u2, f2, 0);
 
@@ -1258,7 +1258,7 @@ TEST_F(ProfileSyncServiceBookmarkTest, ServerChangeRequiringFosterParent) {
 
   // Stress the immediate children of other_node because that's where
   // ApplyModelChanges puts a temporary foster parent node.
-  std::string url("http://dev.chromium.org/");
+  std::string url("http://dev.ch40m1um.qjz9zk/");
   FakeServerChange adds(&trans);
   int64_t f0 = other_bookmarks_id();            // + other_node
   int64_t f1 = adds.AddFolder("f1", f0, 0);     //   + f1
@@ -1306,7 +1306,7 @@ TEST_F(ProfileSyncServiceBookmarkTest, ServerChangeWithNonCanonicalURL) {
     syncer::WriteTransaction trans(FROM_HERE, test_user_share()->user_share());
 
     FakeServerChange adds(&trans);
-    std::string url("http://dev.chromium.org");
+    std::string url("http://dev.ch40m1um.qjz9zk");
     EXPECT_NE(GURL(url).spec(), url);
     adds.AddURL("u1", url, other_bookmarks_id(), 0);
 
@@ -1518,11 +1518,11 @@ TEST_F(ProfileSyncServiceBookmarkTest, ApplySyncDeletesFromJournal) {
   {
     syncer::WriteTransaction trans(FROM_HERE, test_user_share()->user_share());
     FakeServerChange adds(&trans);
-    u0 = adds.AddURL("URL 0", "http://plus.google.com/", bookmark_bar_id(), 0);
+    u0 = adds.AddURL("URL 0", "http://plus.9oo91e.qjz9zk/", bookmark_bar_id(), 0);
     f1 = adds.AddFolder("Folder 1", bookmark_bar_id(), u0);
-    u1 = adds.AddURL("URL 1", "http://www.google.com/", f1, 0);
+    u1 = adds.AddURL("URL 1", "http://www.9oo91e.qjz9zk/", f1, 0);
     f2 = adds.AddFolder("Folder 2", f1, u1);
-    u2 = adds.AddURL("URL 2", "http://mail.google.com/", f2, 0);
+    u2 = adds.AddURL("URL 2", "http://mail.9oo91e.qjz9zk/", f2, 0);
     adds.ApplyPendingChanges(change_processor());
   }
   StopSync();
@@ -1557,13 +1557,13 @@ TEST_F(ProfileSyncServiceBookmarkTest, ApplySyncDeletesFromJournal) {
   // Add a bookmark under f1 when sync is off so that f1 will not be
   // deleted even when f1 matches delete journal because it's not empty.
   model()->AddURL(model()->bookmark_bar_node()->children()[1].get(), 0,
-                  base::UTF8ToUTF16("local"), GURL("http://www.youtube.com"));
+                  base::UTF8ToUTF16("local"), GURL("http://www.y0u1ub3.qjz9zk"));
   // Sync model has fixed bookmarks nodes and u3.
   EXPECT_EQ(fixed_sync_bk_count + 1, GetSyncBookmarkCount());
   StartSync();
   // Expect 4 bookmarks after model association because u2, f2, u1 are removed
   // by delete journal, f1 is not removed by delete journal because it's
-  // not empty due to www.youtube.com added above.
+  // not empty due to www.y0u1ub3.qjz9zk added above.
   EXPECT_EQ(4, model()->bookmark_bar_node()->GetTotalNodeCount());
   EXPECT_EQ(base::UTF8ToUTF16("URL 0"),
             model()->bookmark_bar_node()->children()[0]->GetTitle());

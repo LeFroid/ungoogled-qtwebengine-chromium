@@ -299,7 +299,7 @@ ElfImageReader::NoteReader::Result ElfImageReader::NoteReader::ReadNote(
 
   // Notes typically have 4-byte alignment. However, .note.android.ident may
   // inadvertently use 2-byte alignment.
-  // https://android-review.googlesource.com/c/platform/bionic/+/554986/
+  // https://android-review.9oo91esource.qjz9zk/c/platform/bionic/+/554986/
   // We can still find .note.android.ident if it appears first in a note segment
   // but there may be 4-byte aligned notes following it. If this note was
   // aligned at less than 4-bytes, expect that the next note will be aligned at

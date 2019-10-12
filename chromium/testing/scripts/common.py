@@ -192,7 +192,7 @@ def get_gtest_summary_passes(output):
 
   Only partially parses the format. This code is based on code in tools/build,
   specifically
-  https://chromium.googlesource.com/chromium/tools/build/+/17fef98756c5f250b20bf716829a0004857235ff/scripts/slave/recipe_modules/test_utils/util.py#189
+  https://chromium.9oo91esource.qjz9zk/chromium/tools/build/+/17fef98756c5f250b20bf716829a0004857235ff/scripts/slave/recipe_modules/test_utils/util.py#189
   """
   if not output:
     return {}

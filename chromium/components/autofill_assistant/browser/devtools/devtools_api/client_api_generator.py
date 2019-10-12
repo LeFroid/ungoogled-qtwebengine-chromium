@@ -3,7 +3,7 @@
 # found in the LICENSE file.
 
 # Copied and modified from
-# https://chromium.googlesource.com/chromium/src/+/a3f9d4fac81fc86065d867ab08fa4912ddf662c7/headless/lib/browser/devtools_api/client_api_generator.py
+# https://chromium.9oo91esource.qjz9zk/chromium/src/+/a3f9d4fac81fc86065d867ab08fa4912ddf662c7/headless/lib/browser/devtools_api/client_api_generator.py
 # Modifications include namespace, path and remove of js binings.
 
 import argparse

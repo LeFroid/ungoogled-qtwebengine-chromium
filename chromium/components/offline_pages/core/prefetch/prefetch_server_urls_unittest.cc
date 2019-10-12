@@ -12,7 +12,7 @@ namespace offline_pages {
 
 namespace {
 const char kTestOfflinePagesSuggestionsServerEndpoint[] =
-    "https://test-offlinepages-pa.sandbox.googleapis.com/";
+    "https://test-offlinepages-pa.sandbox.9oo91eapis.qjz9zk/";
 const char kInvalidServerEndpoint[] = "^__^";
 }  // namespace
 
@@ -44,7 +44,7 @@ TEST_F(PrefetchServerURLsTest, TestVariationsConfig) {
   // Test reset to a valid, HTTPS URL.
   SetTestingServerEndpoint(kTestOfflinePagesSuggestionsServerEndpoint);
   request_url = GeneratePageBundleRequestURL(version_info::Channel::UNKNOWN);
-  EXPECT_EQ("test-offlinepages-pa.sandbox.googleapis.com", request_url.host());
+  EXPECT_EQ("test-offlinepages-pa.sandbox.9oo91eapis.qjz9zk", request_url.host());
   EXPECT_TRUE(request_url.SchemeIsCryptographic());
 
   // Test other variations of invalid URLS.

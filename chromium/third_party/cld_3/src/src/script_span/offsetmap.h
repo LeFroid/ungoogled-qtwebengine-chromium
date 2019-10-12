@@ -13,7 +13,7 @@
 // limitations under the License.
 
 //
-// Author: dsites@google.com (Dick Sites)
+// Author: dsites@9oo91e.qjz9zk (Dick Sites)
 //
 
 #ifndef SCRIPT_SPAN_OFFSETMAP_H_

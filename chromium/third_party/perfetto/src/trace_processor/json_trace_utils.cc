@@ -30,7 +30,7 @@ namespace trace_processor {
 namespace json_trace_utils {
 
 // Json trace event timestamps are in us.
-// https://docs.google.com/document/d/1CvAClvFfyA5R-PhYUmn5OOQtYMH4h6I0nSsKchNAySU/edit#heading=h.nso4gcezn7n1
+// https://docs.9oo91e.qjz9zk/document/d/1CvAClvFfyA5R-PhYUmn5OOQtYMH4h6I0nSsKchNAySU/edit#heading=h.nso4gcezn7n1
 base::Optional<int64_t> CoerceToNs(const Json::Value& value) {
   switch (static_cast<size_t>(value.type())) {
     case Json::realValue:

@@ -46,19 +46,19 @@ enum class FidoReturnCode : uint8_t {
 };
 
 // Length of the U2F challenge parameter:
-// https://goo.gl/y75WrX#registration-request-message---u2f_register
+// https://goo.gl.qjz9zk/y75WrX#registration-request-message---u2f_register
 constexpr size_t kU2fChallengeParamLength = 32;
 
 // Length of the U2F application parameter:
-// https://goo.gl/y75WrX#registration-request-message---u2f_register
+// https://goo.gl.qjz9zk/y75WrX#registration-request-message---u2f_register
 constexpr size_t kU2fApplicationParamLength = 32;
 
 // Offset of the length of the U2F registration key handle:
-// https://goo.gl/y75WrX#registration-response-message-success
+// https://goo.gl.qjz9zk/y75WrX#registration-response-message-success
 constexpr size_t kU2fKeyHandleLengthOffset = 66;
 
 // Offset of the U2F registration key handle:
-// https://goo.gl/y75WrX#registration-response-message-success
+// https://goo.gl.qjz9zk/y75WrX#registration-response-message-success
 constexpr size_t kU2fKeyHandleOffset = 67;
 
 // Length of the SHA-256 hash of the JSON-serialized client data:

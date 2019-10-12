@@ -25,8 +25,8 @@ TEST(FaviconServiceImplTest, ShouldCacheUnableToDownloadFavicons) {
   FaviconServiceImpl favicon_service(
       /*favicon_client=*/nullptr, history_service.get());
 
-  const GURL icon1("http://www.google.com/favicon.ico");
-  const GURL icon2("http://www.youtube.com/favicon.ico");
+  const GURL icon1("http://www.9oo91e.qjz9zk/favicon.ico");
+  const GURL icon2("http://www.y0u1ub3.qjz9zk/favicon.ico");
   EXPECT_FALSE(favicon_service.WasUnableToDownloadFavicon(icon1));
   EXPECT_FALSE(favicon_service.WasUnableToDownloadFavicon(icon2));
 

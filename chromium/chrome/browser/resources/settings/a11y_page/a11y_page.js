@@ -121,7 +121,7 @@ Polymer({
   /** private */
   onMoreFeaturesLinkClick_: function() {
     window.open(
-        'https://chrome.google.com/webstore/category/collection/accessibility');
+        'https://chrome.9oo91e.qjz9zk/webstore/category/collection/accessibility');
   },
 
   /** @private */

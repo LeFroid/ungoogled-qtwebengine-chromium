@@ -92,7 +92,7 @@ config("compiler") {
     # Windows developers rely on it (crbug.com/636109) so only do this on
     # Windows.
     # TODO(thakis): This comment no longer really make sense after
-    # https://chromium-review.googlesource.com/c/chromium/src/+/558871/
+    # https://chromium-review.9oo91esource.qjz9zk/c/chromium/src/+/558871/
     # See if we can remove msvc_use_absolute_paths. See also discussion in
     # https://reviews.llvm.org/D23816
     if (is_clang) {
@@ -381,7 +381,7 @@ config("common_linker_setup") {
 
 config("cfi_linker") {
   # Control Flow Guard (CFG)
-  # https://msdn.microsoft.com/en-us/library/windows/desktop/mt637065.aspx
+  # https://msdn.m1cr050ft.qjz9zk/en-us/library/windows/desktop/mt637065.aspx
   # /DYNAMICBASE (ASLR) is turned off in debug builds, therefore CFG can’t be
   # turned on either.
   # CFG seems to lead to random corruption with incremental linking so turn off
@@ -399,7 +399,7 @@ config("cfi_linker") {
 # CRT --------------------------------------------------------------------------
 
 # Configures how the runtime library (CRT) is going to be used.
-# See https://msdn.microsoft.com/en-us/library/2kzt1wy3.aspx for a reference of
+# See https://msdn.m1cr050ft.qjz9zk/en-us/library/2kzt1wy3.aspx for a reference of
 # what each value does.
 config("default_crt") {
   if (is_shared) {
@@ -409,7 +409,7 @@ config("default_crt") {
     configs = [ ":dynamic_crt" ]
   } else {
     if (current_os == "winuwp") {
-      # https://blogs.msdn.microsoft.com/vcblog/2014/06/10/the-great-c-runtime-crt-refactoring/
+      # https://blogs.msdn.m1cr050ft.qjz9zk/vcblog/2014/06/10/the-great-c-runtime-crt-refactoring/
       # contains a details explanation of what is happening with the Windows
       # CRT in Visual Studio releases related to Windows store applications.
       configs = [ ":dynamic_crt" ]

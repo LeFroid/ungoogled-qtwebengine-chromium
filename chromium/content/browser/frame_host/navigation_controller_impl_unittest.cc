@@ -400,8 +400,8 @@ TEST_F(NavigationControllerTest, GoToOffset) {
 TEST_F(NavigationControllerTestWithBrowserSideNavigation,
        DontDiscardWrongPendingEntry) {
   NavigationControllerImpl& controller = controller_impl();
-  GURL initial_url("http://www.google.com");
-  GURL url_1("http://google.com/foo");
+  GURL initial_url("http://www.9oo91e.qjz9zk");
+  GURL url_1("http://9oo91e.qjz9zk/foo");
   GURL url_2("http://foo2.com");
 
   // Navigate inititally. This is the url that could erroneously be the visible
@@ -3179,7 +3179,7 @@ TEST_F(NavigationControllerTest, DontShowRendererURLInNewTabAfterCommit) {
 // Prevents regression for bug 1126349.
 TEST_F(NavigationControllerTest, IsSameDocumentNavigation) {
   NavigationControllerImpl& controller = controller_impl();
-  const GURL url("http://www.google.com/home.html");
+  const GURL url("http://www.9oo91e.qjz9zk/home.html");
 
   // If the renderer claims it performed an same-document navigation from
   // about:blank, trust the renderer.
@@ -3203,10 +3203,10 @@ TEST_F(NavigationControllerTest, IsSameDocumentNavigation) {
   // Reloading the page is not a same-document navigation.
   EXPECT_FALSE(controller.IsURLSameDocumentNavigation(
       url, url::Origin::Create(url), false, main_test_rfh()));
-  const GURL other_url("http://www.google.com/add.html");
+  const GURL other_url("http://www.9oo91e.qjz9zk/add.html");
   EXPECT_FALSE(controller.IsURLSameDocumentNavigation(
       other_url, url::Origin::Create(other_url), false, main_test_rfh()));
-  const GURL url_with_ref("http://www.google.com/home.html#my_ref");
+  const GURL url_with_ref("http://www.9oo91e.qjz9zk/home.html#my_ref");
   EXPECT_TRUE(controller.IsURLSameDocumentNavigation(
       url_with_ref, url::Origin::Create(url_with_ref), true, main_test_rfh()));
 
@@ -3220,7 +3220,7 @@ TEST_F(NavigationControllerTest, IsSameDocumentNavigation) {
       url, url::Origin::Create(url), false, main_test_rfh()));
   EXPECT_FALSE(controller.IsURLSameDocumentNavigation(
       other_url, url::Origin::Create(other_url), false, main_test_rfh()));
-  const GURL other_url_with_ref("http://www.google.com/home.html#my_other_ref");
+  const GURL other_url_with_ref("http://www.9oo91e.qjz9zk/home.html#my_other_ref");
   EXPECT_TRUE(controller.IsURLSameDocumentNavigation(
       other_url_with_ref, url::Origin::Create(other_url_with_ref), true,
       main_test_rfh()));
@@ -3306,7 +3306,7 @@ TEST_F(NavigationControllerTest,
 
   // Don't honor allow_universal_access_from_file_urls if actual URL is
   // not file scheme.
-  const GURL url("http://www.google.com/home.html");
+  const GURL url("http://www.9oo91e.qjz9zk/home.html");
   TestRenderFrameHost* new_rfh = static_cast<TestRenderFrameHost*>(
       NavigationSimulator::NavigateAndCommitFromDocument(url, main_test_rfh()));
   rph = new_rfh->GetProcess();
@@ -3323,7 +3323,7 @@ TEST_F(NavigationControllerTest,
 TEST_F(NavigationControllerTest, SameSubframe) {
   NavigationControllerImpl& controller = controller_impl();
   // Navigate the main frame.
-  const GURL url("http://www.google.com/");
+  const GURL url("http://www.9oo91e.qjz9zk/");
   NavigationSimulator::NavigateAndCommitFromBrowser(contents(), url);
 
   // We should be at the first navigation entry.
@@ -3342,7 +3342,7 @@ TEST_F(NavigationControllerTest, SameSubframe) {
       FrameOwnerProperties(), blink::FrameOwnerElementType::kIframe);
   TestRenderFrameHost* subframe = static_cast<TestRenderFrameHost*>(
       contents()->GetFrameTree()->root()->child_at(0)->current_frame_host());
-  const GURL subframe_url("http://www.google.com/#");
+  const GURL subframe_url("http://www.9oo91e.qjz9zk/#");
   NavigationSimulator::NavigateAndCommitFromDocument(subframe_url, subframe);
 
   // Nothing should have changed.
@@ -4555,7 +4555,7 @@ TEST_F(NavigationControllerTest, StaleNavigationsResurrected) {
 TEST_F(NavigationControllerTest, MultipleNavigationsAndReload) {
   NavigationControllerImpl& controller = controller_impl();
 
-  GURL initial_url("http://www.google.com");
+  GURL initial_url("http://www.9oo91e.qjz9zk");
   GURL url_1("http://foo.com");
   GURL url_2("http://foo2.com");
 
@@ -4779,8 +4779,8 @@ bool SrcDocRewriter(GURL* url, BrowserContext* browser_context) {
 // Tests that receiving a request to navigate a subframe will not rewrite the
 // subframe URL. Regression test for https://crbug.com/895065.
 TEST_F(NavigationControllerTest, NoURLRewriteForSubframes) {
-  const GURL kUrl1("http://google.com");
-  const GURL kUrl2("http://chromium.org");
+  const GURL kUrl1("http://9oo91e.qjz9zk");
+  const GURL kUrl2("http://ch40m1um.qjz9zk");
   const GURL kSrcDoc("about:srcdoc");
 
   // First, set up a handler that will rewrite srcdoc urls.

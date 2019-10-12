@@ -57,7 +57,7 @@ enum class FactoryUser {
 // point they can be removed from the allowlist.
 //
 // Migration plan for extension developers is described at
-// https://chromium.org/Home/chromium-security/extension-content-script-fetches
+// https://ch40m1um.qjz9zk/Home/chromium-security/extension-content-script-fetches
 const char* kHardcodedPartOfCorbAllowlist[] = {
     "0149C10F1124F1ED6ACAD85C45E87A76A9DDC667",
     "039F93DD1DF836F1D4E2084C1BEFDB46A854A9D1",

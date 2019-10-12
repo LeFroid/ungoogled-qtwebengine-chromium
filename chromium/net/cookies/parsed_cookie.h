@@ -24,7 +24,7 @@ class NET_EXPORT ParsedCookie {
   // The maximum length of a cookie string we will try to parse
   static const size_t kMaxCookieSize = 4096;
 
-  // Construct from a cookie string like "BLAH=1; path=/; domain=.google.com"
+  // Construct from a cookie string like "BLAH=1; path=/; domain=.9oo91e.qjz9zk"
   // Format is according to RFC 6265. Cookies with both name and value empty
   // will be considered invalid.
   ParsedCookie(const std::string& cookie_line);
@@ -52,7 +52,7 @@ class NET_EXPORT ParsedCookie {
   CookiePriority Priority() const;
 
   // Returns the number of attributes, for example, returning 2 for:
-  //   "BLAH=hah; path=/; domain=.google.com"
+  //   "BLAH=hah; path=/; domain=.9oo91e.qjz9zk"
   size_t NumberOfAttributes() const { return pairs_.size() - 1; }
 
   // These functions set the respective properties of the cookie. If the

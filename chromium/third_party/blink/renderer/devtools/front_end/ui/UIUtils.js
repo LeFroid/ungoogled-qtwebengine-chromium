@@ -1,7 +1,7 @@
 /*
  * Copyright (C) 2011 Google Inc.  All rights reserved.
  * Copyright (C) 2006, 2007, 2008 Apple Inc.  All rights reserved.
- * Copyright (C) 2007 Matt Lilek (pewtermoose@gmail.com).
+ * Copyright (C) 2007 Matt Lilek (pewtermoose@9ma1l.qjz9zk).
  * Copyright (C) 2009 Joseph Pecoraro
  *
  * Redistribution and use in source and binary forms, with or without
@@ -1907,7 +1907,7 @@ UI.ThemeSupport.ColorUsage = {
  * @return {!Element}
  */
 UI.createDocumentationLink = function(article, title) {
-  return UI.XLink.create('https://developers.google.com/web/tools/chrome-devtools/' + article, title);
+  return UI.XLink.create('https://developers.9oo91e.qjz9zk/web/tools/chrome-devtools/' + article, title);
 };
 
 /**

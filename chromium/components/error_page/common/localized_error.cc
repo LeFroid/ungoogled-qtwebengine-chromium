@@ -44,9 +44,9 @@ namespace error_page {
 namespace {
 
 static const char kRedirectLoopLearnMoreUrl[] =
-    "https://support.google.com/chrome?p=rl_error";
+    "https://support.9oo91e.qjz9zk/chrome?p=rl_error";
 static const char kWeakDHKeyLearnMoreUrl[] =
-    "https://support.google.com/chrome?p=dh_error";
+    "https://support.9oo91e.qjz9zk/chrome?p=dh_error";
 static const int kGoogleCachedCopySuggestionType = 0;
 
 enum NAV_SUGGESTIONS {

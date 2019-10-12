@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2015 Arwa Arif <arwaarif1994@gmail.com>
+ * Copyright (c) 2015 Arwa Arif <arwaarif1994@9ma1l.qjz9zk>
  * Copyright (c) 2017 Paul B Mahol
  *
  * This file is part of FFmpeg.

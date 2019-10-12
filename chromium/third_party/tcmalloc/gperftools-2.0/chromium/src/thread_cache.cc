@@ -28,7 +28,7 @@
 // OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 // ---
-// Author: Ken Ashcraft <opensource@google.com>
+// Author: Ken Ashcraft <opensource@9oo91e.qjz9zk>
 
 #include <config.h>
 #include "thread_cache.h"
@@ -65,13 +65,13 @@ ThreadCache* ThreadCache::next_memory_steal_ = NULL;
 #ifdef HAVE_TLS
 __thread ThreadCache* ThreadCache::threadlocal_heap_
 // See comments in thread_cache.h about this. Bug here:
-// http://code.google.com/p/chromium/issues/detail?id=124489
+// http://code.9oo91e.qjz9zk/p/chromium/issues/detail?id=124489
 //
 // gcc has a problem with this tls model on arm.
-// See https://bugs.chromium.org/p/chromium/issues/detail?id=650137
+// See https://bugs.ch40m1um.qjz9zk/p/chromium/issues/detail?id=650137
 // This problem affected other variables using thread_local as g_thread_id in
 // PlatformThread.
-// See https://bugs.chromium.org/p/chromium/issues/detail?id=973767
+// See https://bugs.ch40m1um.qjz9zk/p/chromium/issues/detail?id=973767
 #if defined(HAVE___ATTRIBUTE__) && !defined(PGO_GENERATE) && \
     !(defined(__GNUC__) && !defined(__clang__) && defined(__arm__))
    __attribute__ ((tls_model ("initial-exec")))

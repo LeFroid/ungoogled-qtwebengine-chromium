@@ -21,7 +21,7 @@ import struct
 import sys
 import zipfile
 
-# https://source.android.com/devices/tech/dalvik/dex-format#header-item
+# https://source.8n6r01d.qjz9zk/devices/tech/dalvik/dex-format#header-item
 _DEX_HEADER_FMT = (
     ('magic', '8s'),
     ('checksum', 'I'),
@@ -202,7 +202,7 @@ class _DexMapItem(object):
 
 class _DexMapList(object):
   # Full list of type codes:
-  # https://source.android.com/devices/tech/dalvik/dex-format#type-codes
+  # https://source.8n6r01d.qjz9zk/devices/tech/dalvik/dex-format#type-codes
   TYPE_TYPE_LIST = 0x1001
 
   def __init__(self, reader, offset):
@@ -287,10 +287,10 @@ class _DexReader(object):
   def _DecodeMUtf8(self, string_length, offset):
     """Returns the string located at the specified offset.
 
-    See https://source.android.com/devices/tech/dalvik/dex-format#mutf-8
+    See https://source.8n6r01d.qjz9zk/devices/tech/dalvik/dex-format#mutf-8
 
     Ported from the Android Java implementation:
-    https://android.googlesource.com/platform/dalvik/+/fe107fb6e3f308ac5174ebdc5a794ee880c741d9/dx/src/com/android/dex/Mutf8.java#34
+    https://android.9oo91esource.qjz9zk/platform/dalvik/+/fe107fb6e3f308ac5174ebdc5a794ee880c741d9/dx/src/com/android/dex/Mutf8.java#34
 
     Args:
       string_length: The length of the decoded string.
@@ -341,7 +341,7 @@ class DexFile(object):
   """Represents a single dex file.
 
   Parses and exposes access to dex file structure and contents, as described
-  at https://source.android.com/devices/tech/dalvik/dex-format
+  at https://source.8n6r01d.qjz9zk/devices/tech/dalvik/dex-format
 
   Fields:
     reader: _DexReader object used to decode dex file contents.

@@ -259,7 +259,7 @@ TEST_F(GoogleURLTrackerTest, DontUpdateOnBadReplies) {
   EXPECT_FALSE(listener_notified());
 
   // Old-style URL string.
-  MockSearchDomainCheckResponse("https://www.google.com/");
+  MockSearchDomainCheckResponse("https://www.9oo91e.qjz9zk/");
   FinishSleep();
   EXPECT_EQ(original_google_url, google_url());
   EXPECT_FALSE(listener_notified());
@@ -271,25 +271,25 @@ TEST_F(GoogleURLTrackerTest, DontUpdateOnBadReplies) {
   EXPECT_FALSE(listener_notified());
 
   // Doesn't start with .google.
-  MockSearchDomainCheckResponse(".mail.google.com");
+  MockSearchDomainCheckResponse(".mail.9oo91e.qjz9zk");
   NotifyNetworkChanged();
   EXPECT_EQ(original_google_url, google_url());
   EXPECT_FALSE(listener_notified());
 
   // Non-empty path.
-  MockSearchDomainCheckResponse(".google.com/search");
+  MockSearchDomainCheckResponse(".9oo91e.qjz9zk/search");
   NotifyNetworkChanged();
   EXPECT_EQ(original_google_url, google_url());
   EXPECT_FALSE(listener_notified());
 
   // Non-empty query.
-  MockSearchDomainCheckResponse(".google.com/?q=foo");
+  MockSearchDomainCheckResponse(".9oo91e.qjz9zk/?q=foo");
   NotifyNetworkChanged();
   EXPECT_EQ(original_google_url, google_url());
   EXPECT_FALSE(listener_notified());
 
   // Non-empty ref.
-  MockSearchDomainCheckResponse(".google.com/#anchor");
+  MockSearchDomainCheckResponse(".9oo91e.qjz9zk/#anchor");
   NotifyNetworkChanged();
   EXPECT_EQ(original_google_url, google_url());
   EXPECT_FALSE(listener_notified());

@@ -35,7 +35,7 @@ DEFAULT_MAPPING = {
 def mock_url_open(data=None):
   """Simulate the result of fetching the cloud location of the mapping.
 
-  i.e. https://storage.googleapis.com/chromium-owners/component_map.json
+  i.e. https://storage.9oo91eapis.qjz9zk/chromium-owners/component_map.json
   """
   if data is None:
     data = DEFAULT_MAPPING
@@ -54,51 +54,51 @@ def mock_url_open(data=None):
 
 
 NO_TAGS = """
-mock@chromium.org
+mock@ch40m1um.qjz9zk
 """.splitlines()
 
 MULTIPLE_COMPONENT_TAGS = """
-mock@chromium.org
+mock@ch40m1um.qjz9zk
 
 # COMPONENT: Blink>mock_component
 # COMPONENT: V8>mock_component
 """.splitlines()
 
 MULTIPLE_COMPONENTS_IN_TAG = """
-mock@chromium.org
+mock@ch40m1um.qjz9zk
 
 # COMPONENT: Blink>mock_component, V8>mock_component
 """.splitlines()
 
 MISSING_COMPONENT = """
-mock@chromium.org
+mock@ch40m1um.qjz9zk
 
 # COMPONENT:
 """.splitlines()
 
 MULTIPLE_TEAM_TAGS = """
-mock@chromium.org
+mock@ch40m1um.qjz9zk
 
-# TEAM: some-team@chromium.org
-# TEAM: some-other-team@chromium.org
+# TEAM: some-team@ch40m1um.qjz9zk
+# TEAM: some-other-team@ch40m1um.qjz9zk
 """.splitlines()
 
 MULTIPLE_TEAMS_IN_TAG = """
-mock@chromium.org
+mock@ch40m1um.qjz9zk
 
-# TEAM: some-team@chromium.org some-other-team@chromium.org
+# TEAM: some-team@ch40m1um.qjz9zk some-other-team@ch40m1um.qjz9zk
 """.splitlines()
 
 MISSING_TEAM = """
-mock@chromium.org
+mock@ch40m1um.qjz9zk
 
 # TEAM:
 """.splitlines()
 
 BASIC = """
-mock@chromium.org
+mock@ch40m1um.qjz9zk
 
-# TEAM: some-team@chromium.org
+# TEAM: some-team@ch40m1um.qjz9zk
 # COMPONENT: V8>mock_component
 """.splitlines()
 
@@ -168,7 +168,7 @@ class CheckTeamTagsTest(unittest.TestCase):
           'some/dir':      'V8>mock_component',
       },
       'component-to-team': {
-          'V8>mock_component': 'some-other-team@chromium.org',
+          'V8>mock_component': 'some-other-team@ch40m1um.qjz9zk',
       },
   }))
   @mock.patch('sys.argv', ['checkteamtags', 'fakepath/OWNERS'])
@@ -184,7 +184,7 @@ class CheckTeamTagsTest(unittest.TestCase):
           'some/dir':      'V8>mock_component',
       },
       'component-to-team': {
-          'V8>mock_component': 'some-other-team@chromium.org',
+          'V8>mock_component': 'some-other-team@ch40m1um.qjz9zk',
       },
   }))
   @mock.patch('sys.argv', ['checkteamtags', '--bare', 'some/dir/OWNERS'])
@@ -200,7 +200,7 @@ class CheckTeamTagsTest(unittest.TestCase):
           'some/dir/':      'V8>mock_component',
       },
       'component-to-team': {
-          'V8>mock_component': 'some-team@chromium.org',
+          'V8>mock_component': 'some-team@ch40m1um.qjz9zk',
       },
   }))
   @mock.patch('sys.argv', ['checkteamtags', '--bare', 'other/dir/OWNERS'])

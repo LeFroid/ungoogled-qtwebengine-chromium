@@ -6,15 +6,15 @@
 """Dromaeo benchmark automation script.
 
 Script runs dromaeo tests in browsers specified by --browser switch and saves
-results to a spreadsheet on docs.google.com.
+results to a spreadsheet on docs.9oo91e.qjz9zk.
 
 Prerequisites:
 1. Install Google Data APIs Python Client Library from
-   http://code.google.com/p/gdata-python-client.
+   http://code.9oo91e.qjz9zk/p/gdata-python-client.
 2. Checkout Dromaeo benchmark from
-   http://src.chromium.org/svn/trunk/src/chrome/test/data/dromaeo and provide
+   http://src.ch40m1um.qjz9zk/svn/trunk/src/chrome/test/data/dromaeo and provide
    local path to it in --dromaeo_home switch.
-3. Create a spreadsheet at http://docs.google.com and specify its name in
+3. Create a spreadsheet at http://docs.9oo91e.qjz9zk and specify its name in
    --spreadsheet switch
 
 Benchmark results are presented in the following format:
@@ -30,7 +30,7 @@ Example usage:
 dromaeo_benchmark_runner.py -b "E:\chromium\src\chrome\Release\chrome.exe"
     -b "C:\Program Files (x86)\Safari\safari.exe"
     -b "C:\Program Files (x86)\Opera 10.50 pre-alpha\opera.exe" -n 1
-    -d "E:\chromium\src\chrome\test\data\dromaeo" -f dom -e example@gmail.com
+    -d "E:\chromium\src\chrome\test\data\dromaeo" -f dom -e example@9ma1l.qjz9zk
 
 """
 

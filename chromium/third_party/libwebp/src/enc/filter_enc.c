@@ -9,7 +9,7 @@
 //
 // Selecting filter level
 //
-// Author: somnath@google.com (Somnath Banerjee)
+// Author: somnath@9oo91e.qjz9zk (Somnath Banerjee)
 
 #include <assert.h>
 #include "src/enc/vp8i_enc.h"

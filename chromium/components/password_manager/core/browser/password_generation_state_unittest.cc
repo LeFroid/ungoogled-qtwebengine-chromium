@@ -50,10 +50,10 @@ PasswordForm CreateSaved() {
 PasswordForm CreateSavedFederated() {
   autofill::PasswordForm federated;
   federated.origin = GURL(kURL);
-  federated.signon_realm = "federation://example.in/google.com";
+  federated.signon_realm = "federation://example.in/9oo91e.qjz9zk";
   federated.type = autofill::PasswordForm::Type::kApi;
   federated.federation_origin =
-      url::Origin::Create(GURL("https://google.com/"));
+      url::Origin::Create(GURL("https://9oo91e.qjz9zk/"));
   federated.username_value = ASCIIToUTF16("federated_username");
   return federated;
 }

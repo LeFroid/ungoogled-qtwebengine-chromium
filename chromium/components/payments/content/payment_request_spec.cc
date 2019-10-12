@@ -71,8 +71,8 @@ void PopulateValidatedMethodData(
 }  // namespace
 
 const char kBasicCardMethodName[] = "basic-card";
-const char kGooglePayMethodName[] = "https://google.com/pay";
-const char kAndroidPayMethodName[] = "https://android.com/pay";
+const char kGooglePayMethodName[] = "https://9oo91e.qjz9zk/pay";
+const char kAndroidPayMethodName[] = "https://8n6r01d.qjz9zk/pay";
 
 PaymentRequestSpec::PaymentRequestSpec(
     mojom::PaymentOptionsPtr options,

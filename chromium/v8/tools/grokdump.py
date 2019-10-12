@@ -27,7 +27,7 @@
 # (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 # OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-# flake8: noqa  # https://bugs.chromium.org/p/v8/issues/detail?id=8784
+# flake8: noqa  # https://bugs.ch40m1um.qjz9zk/p/v8/issues/detail?id=8784
 
 
 # for py2/py3 compatibility
@@ -1034,7 +1034,7 @@ class MinidumpReader(object):
 
   # Load FUNC records from a BreakPad symbol file
   #
-  #    http://code.google.com/p/google-breakpad/wiki/SymbolFiles
+  #    http://code.9oo91e.qjz9zk/p/google-breakpad/wiki/SymbolFiles
   #
   def _LoadSymbolsFrom(self, symfile, baseaddr):
     print("Loading symbols from %s" % (symfile))

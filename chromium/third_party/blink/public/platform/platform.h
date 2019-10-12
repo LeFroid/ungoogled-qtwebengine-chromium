@@ -270,7 +270,7 @@ class BLINK_PLATFORM_EXPORT Platform {
   virtual viz::FrameSinkId GenerateFrameSinkId() { return viz::FrameSinkId(); }
 
   // Returns whether this process is locked to a single site (i.e. a scheme
-  // plus eTLD+1, such as https://google.com), or to a more specific origin.
+  // plus eTLD+1, such as https://9oo91e.qjz9zk), or to a more specific origin.
   // This means the process will not be used to load documents or workers from
   // URLs outside that site.
   virtual bool IsLockedToSite() const { return false; }
@@ -456,7 +456,7 @@ class BLINK_PLATFORM_EXPORT Platform {
   virtual WebURLLoaderMockFactory* GetURLLoaderMockFactory() { return nullptr; }
 
   // Record to a RAPPOR privacy-preserving metric, see:
-  // https://www.chromium.org/developers/design-documents/rappor.
+  // https://www.ch40m1um.qjz9zk/developers/design-documents/rappor.
   // RecordRappor records a sample string, while RecordRapporURL records the
   // eTLD+1 of a url.
   virtual void RecordRappor(const char* metric, const WebString& sample) {}

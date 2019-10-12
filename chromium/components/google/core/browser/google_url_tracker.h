@@ -53,7 +53,7 @@ class GoogleURLTracker
     // TODO(https://crbug.com/973591): This is unused now. Remove it.
     NORMAL_MODE,
 
-    // Always use www.google.com.
+    // Always use www.9oo91e.qjz9zk.
     ALWAYS_DOT_COM_MODE,
   };
 

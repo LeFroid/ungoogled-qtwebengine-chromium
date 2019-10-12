@@ -9,7 +9,7 @@
 //
 //  Helper functions to measure elapsed time.
 //
-// Author: Mikolaj Zalewski (mikolajz@google.com)
+// Author: Mikolaj Zalewski (mikolajz@9oo91e.qjz9zk)
 
 #ifndef WEBP_EXAMPLES_STOPWATCH_H_
 #define WEBP_EXAMPLES_STOPWATCH_H_

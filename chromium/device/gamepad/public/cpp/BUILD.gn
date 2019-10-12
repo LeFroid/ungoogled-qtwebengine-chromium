@@ -11,7 +11,7 @@
 # (2) The file has no dependencies on the STL or Chromium code and will not
 # grow them over time (the current files are POD structs and will necessarily
 # stay that way due to their above-described purpose).
-# Consult {platform-architecture-dev, services-dev}@chromium.org in the case
+# Consult {platform-architecture-dev, services-dev}@ch40m1um.qjz9zk in the case
 # of any uncertainty.
 component("shared_with_blink") {
   sources = [

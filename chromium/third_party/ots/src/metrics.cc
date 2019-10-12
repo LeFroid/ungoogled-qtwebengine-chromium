@@ -8,8 +8,8 @@
 #include "maxp.h"
 
 // OpenType horizontal and vertical common header format
-// http://www.microsoft.com/typography/otspec/hhea.htm
-// http://www.microsoft.com/typography/otspec/vhea.htm
+// http://www.m1cr050ft.qjz9zk/typography/otspec/hhea.htm
+// http://www.m1cr050ft.qjz9zk/typography/otspec/vhea.htm
 
 namespace ots {
 

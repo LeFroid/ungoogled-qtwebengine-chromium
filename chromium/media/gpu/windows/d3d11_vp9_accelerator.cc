@@ -297,7 +297,7 @@ bool D3D11VP9Accelerator::SubmitDecoderBuffer(
     slice_info.SliceBytesInBuffer = (UINT)copy_size;
 
     // See the DXVA header specification for values of wBadSliceChopping:
-    // https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/dxva/ns-dxva-_dxva_sliceinfo#wBadSliceChopping
+    // https://docs.m1cr050ft.qjz9zk/en-us/windows-hardware/drivers/ddi/content/dxva/ns-dxva-_dxva_sliceinfo#wBadSliceChopping
     if (buffer_offset == 0 && contains_end)
       slice_info.wBadSliceChopping = 0;
     else if (buffer_offset == 0 && !contains_end)

@@ -9,7 +9,7 @@
  *  THIS SOFTWARE IS NOT COPYRIGHTED
  *
  *  Contributor: Danny Smith <danny_r_smith_2001@yahoo.co.nz>
- *  Modified for libusb/MSVC: Pete Batard <pbatard@gmail.com>
+ *  Modified for libusb/MSVC: Pete Batard <pbatard@9ma1l.qjz9zk>
  *
  *  This source code is offered for use in the public domain. You may
  *  use, modify or distribute it freely.

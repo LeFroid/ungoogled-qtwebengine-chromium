@@ -9,7 +9,7 @@ entity equivalents.
 See <https://pythonhosted.org/Markdown/extensions/smarty.html>
 for documentation.
 
-Author: 2013, Dmitry Shachnev <mitya57@gmail.com>
+Author: 2013, Dmitry Shachnev <mitya57@9ma1l.qjz9zk>
 
 All changes Copyright 2013-2014 The Python Markdown Project
 

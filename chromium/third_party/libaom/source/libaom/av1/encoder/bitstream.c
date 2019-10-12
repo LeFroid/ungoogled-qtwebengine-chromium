@@ -2968,7 +2968,7 @@ static void write_uncompressed_header_obu(AV1_COMP *cpi,
 #endif  // FRAME_REFS_SHORT_SIGNALING
 
       if (frame_refs_short_signaling) {
-        // NOTE(zoeliu@google.com):
+        // NOTE(zoeliu@9oo91e.qjz9zk):
         //   An example solution for encoder-side implementation on frame refs
         //   short signaling, which is only turned on when the encoder side
         //   decision on ref frames is identical to that at the decoder side.

@@ -188,7 +188,7 @@ namespace content {
 namespace {
 
 const int kMinimumDelayBetweenLoadingUpdatesMS = 100;
-const char kDotGoogleDotCom[] = ".google.com";
+const char kDotGoogleDotCom[] = ".9oo91e.qjz9zk";
 
 base::LazyInstance<std::vector<
     WebContentsImpl::FriendWrapper::CreatedCallback>>::DestructorAtExit
@@ -6116,7 +6116,7 @@ void WebContentsImpl::UpdateTitle(RenderFrameHost* render_frame_host,
     return;
 
   // TODO(evan): make use of title_direction.
-  // http://code.google.com/p/chromium/issues/detail?id=27094
+  // http://code.9oo91e.qjz9zk/p/chromium/issues/detail?id=27094
   UpdateTitleForEntry(entry, title);
 }
 

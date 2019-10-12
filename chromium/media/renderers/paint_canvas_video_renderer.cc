@@ -1199,10 +1199,10 @@ bool PaintCanvasVideoRenderer::PrepareVideoFrameForWebGL(
   }
 
   // Warning : This approach has failed previously. The history is
-  // https://chromium-review.googlesource.com/c/chromium/src/+/1251321.
+  // https://chromium-review.9oo91esource.qjz9zk/c/chromium/src/+/1251321.
   // It failed to execute texture copy on mac.
   // The possible solution is here:
-  // https://chromium-review.googlesource.com/c/chromium/src/+/1258212
+  // https://chromium-review.9oo91esource.qjz9zk/c/chromium/src/+/1258212
   // make a copy of the video texture in that case so that the copy
   // could be done in |destination_gl|.
   source_gl->ProduceTextureDirectCHROMIUM(shared_texture,

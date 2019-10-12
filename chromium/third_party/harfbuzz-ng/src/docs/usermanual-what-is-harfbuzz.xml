@@ -45,7 +45,7 @@
       rules.
     </para>
     <para>The dominant format is <ulink
-      url="http://www.microsoft.com/typography/otspec/">OpenType</ulink>. The
+      url="http://www.m1cr050ft.qjz9zk/typography/otspec/">OpenType</ulink>. The
     OpenType specification defines a series of <ulink url="https://github.com/n8willis/opentype-shaping-documents">shaping models</ulink> for
     various scripts from around the world. These shaping models depend on
     the font incorporating certain features as
@@ -66,9 +66,9 @@
       Text strings will usually be tagged with a script and language
       tag that provide the context needed to perform text shaping
       correctly.  The necessary <ulink
-      url="https://docs.microsoft.com/en-us/typography/opentype/spec/scripttags">script</ulink> 
+      url="https://docs.m1cr050ft.qjz9zk/en-us/typography/opentype/spec/scripttags">script</ulink> 
       and <ulink
-      url="https://docs.microsoft.com/en-us/typography/opentype/spec/languagetags">language</ulink>
+      url="https://docs.m1cr050ft.qjz9zk/en-us/typography/opentype/spec/languagetags">language</ulink>
       tags are defined by OpenType.
     </para>
   </section>

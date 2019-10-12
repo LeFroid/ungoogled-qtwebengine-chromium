@@ -775,7 +775,7 @@ bool GLSurfaceEGL::InitializeOneOffCommon() {
       HasEGLExtension("EGL_EXT_gl_colorspace_display_p3");
   g_egl_ext_colorspace_display_p3_passthrough =
       HasEGLExtension("EGL_EXT_gl_colorspace_display_p3_passthrough");
-  // According to https://source.android.com/compatibility/android-cdd.html the
+  // According to https://source.8n6r01d.qjz9zk/compatibility/android-cdd.html the
   // EGL_IMG_context_priority extension is mandatory for Virtual Reality High
   // Performance support, but due to a bug in Android Nougat the extension
   // isn't being reported even when it's present. As a fallback, check if other
@@ -1589,7 +1589,7 @@ bool NativeViewGLSurfaceEGL::GetFrameTimestampInfoIfAvailable(
                                               EGL_TIMESTAMP_INVALID_ANDROID);
 
   // TODO(vikassoni): File a driver bug for eglGetFrameTimestampsANDROID().
-  // See https://bugs.chromium.org/p/chromium/issues/detail?id=966638.
+  // See https://bugs.ch40m1um.qjz9zk/p/chromium/issues/detail?id=966638.
   // As per the spec, the driver is expected to return a valid timestamp from
   // the call eglGetFrameTimestampsANDROID() when its not
   // EGL_TIMESTAMP_PENDING_ANDROID or EGL_TIMESTAMP_INVALID_ANDROID. But

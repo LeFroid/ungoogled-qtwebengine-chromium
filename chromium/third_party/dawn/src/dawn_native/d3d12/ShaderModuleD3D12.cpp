@@ -44,7 +44,7 @@ namespace dawn_native { namespace d3d12 {
         options_hlsl.shader_model = 51;
         // PointCoord and PointSize are not supported in HLSL
         // TODO (hao.x.li@intel.com): The point_coord_compat and point_size_compat are
-        // required temporarily for https://bugs.chromium.org/p/dawn/issues/detail?id=146,
+        // required temporarily for https://bugs.ch40m1um.qjz9zk/p/dawn/issues/detail?id=146,
         // but should be removed once WebGPU requires there is no gl_PointSize builtin.
         // See https://github.com/gpuweb/gpuweb/issues/332
         options_hlsl.point_coord_compat = true;

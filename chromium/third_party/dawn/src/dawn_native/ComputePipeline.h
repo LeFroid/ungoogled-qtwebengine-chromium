@@ -44,7 +44,7 @@ namespace dawn_native {
       private:
         ComputePipelineBase(DeviceBase* device, ObjectBase::ErrorTag tag);
 
-        // TODO(cwallez@chromium.org): Store a crypto hash of the module instead.
+        // TODO(cwallez@ch40m1um.qjz9zk): Store a crypto hash of the module instead.
         Ref<ShaderModuleBase> mModule;
         std::string mEntryPoint;
         bool mIsBlueprint = false;

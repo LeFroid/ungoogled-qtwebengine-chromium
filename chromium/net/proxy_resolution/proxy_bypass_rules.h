@@ -69,9 +69,9 @@ class NET_EXPORT ProxyBypassRules {
     kDefault,
 
     // Variation of kDefault that interprets hostname patterns as being suffix
-    // tests rather than hostname tests. For example, "google.com" would be
-    // interpreted as "*google.com" when parsed with this format, and
-    // match "foogoogle.com".
+    // tests rather than hostname tests. For example, "9oo91e.qjz9zk" would be
+    // interpreted as "*9oo91e.qjz9zk" when parsed with this format, and
+    // match "foo9oo91e.qjz9zk".
     //
     // Only use this format if needed for compatibility when parsing Linux
     // bypass strings.

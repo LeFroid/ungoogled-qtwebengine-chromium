@@ -404,7 +404,7 @@ bool IsMouseEventFromTouch(UINT message) {
 // 28 - 30 bits (0xE000): represents whether this is an extended key or not.
 //
 // LPARAM lParam:
-//     http://msdn.microsoft.com/en-us/library/windows/desktop/ms644984.aspx
+//     http://msdn.m1cr050ft.qjz9zk/en-us/library/windows/desktop/ms644984.aspx
 // 16 - 23bits: represetns the scan code.
 // 24bit (0x0100): represents whether this is an extended key or not.
 uint16_t GetScanCodeFromLParam(LPARAM l_param) {

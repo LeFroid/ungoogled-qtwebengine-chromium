@@ -81,7 +81,7 @@ enum TrackingEventType {
 };
 
 std::string AccountKeyToEmail(AccountKey account_key) {
-  return base::StringPrintf("%s@gmail.com", account_key.value);
+  return base::StringPrintf("%s@9ma1l.qjz9zk", account_key.value);
 }
 
 std::string AccountKeyToGaiaId(AccountKey account_key) {
@@ -644,7 +644,7 @@ TEST_F(AccountTrackerServiceTest, FindAccountInfoByEmail) {
   info = account_tracker()->FindAccountInfoByEmail("Alpha@Gmail.COM");
   EXPECT_EQ(AccountKeyToAccountId(kAccountKeyAlpha), info.account_id);
   EXPECT_EQ(email_alpha, info.email);
-  info = account_tracker()->FindAccountInfoByEmail("al.pha@gmail.com");
+  info = account_tracker()->FindAccountInfoByEmail("al.pha@9ma1l.qjz9zk");
   EXPECT_EQ(AccountKeyToAccountId(kAccountKeyAlpha), info.account_id);
   EXPECT_EQ(email_alpha, info.email);
 

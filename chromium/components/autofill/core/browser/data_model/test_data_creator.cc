@@ -83,7 +83,7 @@ AutofillProfile TestDataCreator::CreateBasicTestAddress() {
   profile.SetInfo(NAME_FULL, base::UTF8ToUTF16("John McTester"), app_locale_);
   profile.SetInfo(COMPANY_NAME, base::UTF8ToUTF16("Test Inc."), app_locale_);
   profile.SetInfo(EMAIL_ADDRESS,
-                  base::UTF8ToUTF16("jmctester@fake.chromium.org"),
+                  base::UTF8ToUTF16("jmctester@fake.ch40m1um.qjz9zk"),
                   app_locale_);
   profile.SetInfo(ADDRESS_HOME_LINE1, base::UTF8ToUTF16("123 Invented Street"),
                   app_locale_);
@@ -112,7 +112,7 @@ AutofillProfile TestDataCreator::CreateDisusedTestAddress() {
                       use_date.ToDeltaSinceWindowsEpoch().InMicroseconds())),
                   app_locale_);
   profile.SetInfo(EMAIL_ADDRESS,
-                  base::UTF8ToUTF16("polly.disused@fake.chromium.org"),
+                  base::UTF8ToUTF16("polly.disused@fake.ch40m1um.qjz9zk"),
                   app_locale_);
   profile.SetInfo(ADDRESS_HOME_LINE1, base::UTF8ToUTF16("456 Disused Lane"),
                   app_locale_);
@@ -138,7 +138,7 @@ AutofillProfile TestDataCreator::CreateDisusedDeletableTestAddress() {
                       use_date.ToDeltaSinceWindowsEpoch().InMicroseconds())),
                   app_locale_);
   profile.SetInfo(EMAIL_ADDRESS,
-                  base::UTF8ToUTF16("polly.deletable@fake.chromium.org"),
+                  base::UTF8ToUTF16("polly.deletable@fake.ch40m1um.qjz9zk"),
                   app_locale_);
   profile.SetInfo(ADDRESS_HOME_LINE1, base::UTF8ToUTF16("459 Deletable Lane"),
                   app_locale_);

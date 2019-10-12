@@ -18,7 +18,7 @@
 
 namespace {
 
-constexpr char kTestAccountId[] = "test_user@gmail.com";
+constexpr char kTestAccountId[] = "test_user@9ma1l.qjz9zk";
 
 class FakeOAuth2AccessTokenManagerDelegate
     : public OAuth2AccessTokenManager::Delegate {

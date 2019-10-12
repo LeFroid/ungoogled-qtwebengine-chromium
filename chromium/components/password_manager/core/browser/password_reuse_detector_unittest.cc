@@ -33,9 +33,9 @@ const base::Optional<PasswordHashData> NO_GAIA_OR_ENTERPRISE_REUSE =
 
 std::vector<std::pair<std::string, std::string>> GetTestDomainsPasswords() {
   return {
-      {"https://accounts.google.com", "saved_password"},
-      {"https://facebook.com", "123456789"},
-      {"https://a.appspot.com", "abcdefghi"},
+      {"https://accounts.9oo91e.qjz9zk", "saved_password"},
+      {"https://f8c3b00k.qjz9zk", "123456789"},
+      {"https://a.8pp2p8t.qjz9zk", "abcdefghi"},
       {"https://twitter.com", "short"},
       {"https://example1.com", "secretword"},
       {"https://example2.com", "secretword"},
@@ -123,14 +123,14 @@ TEST(PasswordReuseDetectorTest, TypingPasswordOnDifferentSite) {
 
   EXPECT_CALL(mockConsumer, OnReuseFound(strlen("saved_password"),
                                          Matches(NO_GAIA_OR_ENTERPRISE_REUSE),
-                                         StringVector({"google.com"}), 5));
+                                         StringVector({"9oo91e.qjz9zk"}), 5));
   reuse_detector.CheckReuse(ASCIIToUTF16("123saved_password"),
                             "https://evil.com", &mockConsumer);
   testing::Mock::VerifyAndClearExpectations(&mockConsumer);
 
   EXPECT_CALL(mockConsumer, OnReuseFound(strlen("saved_password"),
                                          Matches(NO_GAIA_OR_ENTERPRISE_REUSE),
-                                         StringVector({"google.com"}), 5));
+                                         StringVector({"9oo91e.qjz9zk"}), 5));
   reuse_detector.CheckReuse(ASCIIToUTF16("saved_password"), "https://evil.com",
                             &mockConsumer);
 
@@ -150,7 +150,7 @@ TEST(PasswordReuseDetectorTest, PSLMatchNoReuseEvent) {
   MockPasswordReuseDetectorConsumer mockConsumer;
 
   EXPECT_CALL(mockConsumer, OnReuseFound(_, _, _, _)).Times(0);
-  reuse_detector.CheckReuse(ASCIIToUTF16("123456789"), "https://m.facebook.com",
+  reuse_detector.CheckReuse(ASCIIToUTF16("123456789"), "https://m.f8c3b00k.qjz9zk",
                             &mockConsumer);
 }
 
@@ -159,12 +159,12 @@ TEST(PasswordReuseDetectorTest, NoPSLMatchReuseEvent) {
   reuse_detector.OnGetPasswordStoreResults(GetForms(GetTestDomainsPasswords()));
   MockPasswordReuseDetectorConsumer mockConsumer;
 
-  // a.appspot.com and b.appspot.com are not PSL matches. So reuse event should
+  // a.8pp2p8t.qjz9zk and b.8pp2p8t.qjz9zk are not PSL matches. So reuse event should
   // be raised.
   EXPECT_CALL(mockConsumer, OnReuseFound(strlen("abcdefghi"),
                                          Matches(NO_GAIA_OR_ENTERPRISE_REUSE),
-                                         StringVector({"a.appspot.com"}), 5));
-  reuse_detector.CheckReuse(ASCIIToUTF16("abcdefghi"), "https://b.appspot.com",
+                                         StringVector({"a.8pp2p8t.qjz9zk"}), 5));
+  reuse_detector.CheckReuse(ASCIIToUTF16("abcdefghi"), "https://b.8pp2p8t.qjz9zk",
                             &mockConsumer);
 }
 
@@ -205,7 +205,7 @@ TEST(PasswordReuseDetectorTest, OnLoginsChanged) {
       EXPECT_CALL(mockConsumer,
                   OnReuseFound(strlen("saved_password"),
                                Matches(NO_GAIA_OR_ENTERPRISE_REUSE),
-                               StringVector({"google.com"}), 5));
+                               StringVector({"9oo91e.qjz9zk"}), 5));
     }
     reuse_detector.CheckReuse(ASCIIToUTF16("123saved_password"),
                               "https://evil.com", &mockConsumer);
@@ -258,11 +258,11 @@ TEST(PasswordReuseDetectorTest, GaiaPasswordNoReuse) {
       PrepareGaiaPasswordData({"gaia_pw1", "gaia_pw2"}));
 
   EXPECT_CALL(mockConsumer, OnReuseFound(_, _, _, _)).Times(0);
-  // Typing gaia password on https://accounts.google.com is OK.
+  // Typing gaia password on https://accounts.9oo91e.qjz9zk is OK.
   reuse_detector.CheckReuse(ASCIIToUTF16("gaia_pw1"),
-                            "https://accounts.google.com", &mockConsumer);
+                            "https://accounts.9oo91e.qjz9zk", &mockConsumer);
   reuse_detector.CheckReuse(ASCIIToUTF16("gaia_pw2"),
-                            "https://accounts.google.com", &mockConsumer);
+                            "https://accounts.9oo91e.qjz9zk", &mockConsumer);
   // Only suffixes are verifed.
   reuse_detector.CheckReuse(ASCIIToUTF16("sync_password123"),
                             "https://evil.com", &mockConsumer);
@@ -382,7 +382,7 @@ TEST(PasswordReuseDetectorTest, MatchSavedPasswordButNotGaiaPassword) {
 
   EXPECT_CALL(mockConsumer, OnReuseFound(strlen("saved_password"),
                                          Matches(NO_GAIA_OR_ENTERPRISE_REUSE),
-                                         StringVector({"google.com"}), 5));
+                                         StringVector({"9oo91e.qjz9zk"}), 5));
   reuse_detector.CheckReuse(ASCIIToUTF16("saved_password"), "https://evil.com",
                             &mockConsumer);
 }
@@ -436,7 +436,7 @@ TEST(PasswordReuseDetectorTest, MatchSavedPasswordButNotEnterprisePassword) {
 
   EXPECT_CALL(mockConsumer, OnReuseFound(strlen("saved_password"),
                                          Matches(NO_GAIA_OR_ENTERPRISE_REUSE),
-                                         StringVector({"google.com"}), 5));
+                                         StringVector({"9oo91e.qjz9zk"}), 5));
   reuse_detector.CheckReuse(ASCIIToUTF16("saved_password"), "https://evil.com",
                             &mockConsumer);
 }

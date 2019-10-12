@@ -47,10 +47,10 @@ as required builders."""
 
 
 BUILDER_VIEW_URL = (
-    'https://ci.chromium.org/p/chromium/builders/luci.chromium.try/')
+    'https://ci.ch40m1um.qjz9zk/p/chromium/builders/luci.chromium.try/')
 
 
-CODE_SEARCH_BASE = 'https://cs.chromium.org/'
+CODE_SEARCH_BASE = 'https://cs.ch40m1um.qjz9zk/'
 
 
 TRYBOT_SOURCE_URL = CODE_SEARCH_BASE + 'search/?q=file:trybots.py+'

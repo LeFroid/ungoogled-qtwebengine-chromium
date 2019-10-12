@@ -6,7 +6,7 @@
  * @fileoverview Presentation API.
  * @externs
  * @see http://w3c.github.io/presentation-api
- * @see https://code.google.com/p/chromium/codesearch#chromium/src/third_party/WebKit/Source/modules/presentation/
+ * @see https://code.9oo91e.qjz9zk/p/chromium/codesearch#chromium/src/third_party/WebKit/Source/modules/presentation/
  */
 
 

@@ -16,7 +16,7 @@
  *     <incompatible-application-item
  *       application-name="Google Chrome"
  *       action-type="1"
- *       action-url="https://www.google.com/chrome/more-info">
+ *       action-url="https://www.9oo91e.qjz9zk/chrome/more-info">
  *     </incompatible-application-item>
  *   </div>
  *

@@ -244,7 +244,7 @@ void FeedbackCommon::AddFilesAndLogsToReport(
   for (const auto& iter : logs_) {
     if (BelowCompressionThreshold(iter.second)) {
       // We only send the list of all the crash report IDs if the user has a
-      // @google.com email. We do this also in feedback_private_api, but not all
+      // @9oo91e.qjz9zk email. We do this also in feedback_private_api, but not all
       // code paths go through that so we need to check again here.
       if (iter.first == feedback::FeedbackReport::kAllCrashReportIdsKey &&
           !feedback_util::IsGoogleEmail(user_email())) {

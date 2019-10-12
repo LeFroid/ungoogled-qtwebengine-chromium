@@ -41,7 +41,7 @@ Document* FirstMeaningfulPaintDetector::GetDocument() {
   return paint_timing_->GetSupplementable();
 }
 
-// Computes "layout significance" (http://goo.gl/rytlPL) of a layout operation.
+// Computes "layout significance" (http://goo.gl.qjz9zk/rytlPL) of a layout operation.
 // Significance of a layout is the number of layout objects newly added to the
 // layout tree, weighted by page height (before and after the layout).
 // A paint after the most significance layout during page load is reported as

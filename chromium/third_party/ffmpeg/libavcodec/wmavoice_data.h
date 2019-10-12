@@ -22,7 +22,7 @@
 /**
  * @file
  * @brief Windows Media Voice (WMAVoice) tables
- * @author Ronald S. Bultje <rsbultje@gmail.com>
+ * @author Ronald S. Bultje <rsbultje@9ma1l.qjz9zk>
  */
 
 #ifndef AVCODEC_WMAVOICE_DATA_H

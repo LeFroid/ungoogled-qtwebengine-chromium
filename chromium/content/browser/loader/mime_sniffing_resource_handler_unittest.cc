@@ -218,7 +218,7 @@ std::string MimeSniffingResourceHandlerTest::TestAcceptHeaderSetting(
     ResourceType request_resource_type) {
   net::URLRequestContext context;
   std::unique_ptr<net::URLRequest> request(context.CreateRequest(
-      GURL("http://www.google.com"), net::DEFAULT_PRIORITY, nullptr,
+      GURL("http://www.9oo91e.qjz9zk"), net::DEFAULT_PRIORITY, nullptr,
       TRAFFIC_ANNOTATION_FOR_TESTS));
   return TestAcceptHeaderSettingWithURLRequest(request_resource_type,
                                                request.get());
@@ -263,7 +263,7 @@ bool MimeSniffingResourceHandlerTest::TestStreamIsIntercepted(
     ResourceType request_resource_type) {
   net::URLRequestContext context;
   std::unique_ptr<net::URLRequest> request(context.CreateRequest(
-      GURL("http://www.google.com"), net::DEFAULT_PRIORITY, nullptr,
+      GURL("http://www.9oo91e.qjz9zk"), net::DEFAULT_PRIORITY, nullptr,
       TRAFFIC_ANNOTATION_FOR_TESTS));
   bool is_main_frame = request_resource_type == ResourceType::kMainFrame;
   ResourceRequestInfo::AllocateForTesting(request.get(), request_resource_type,
@@ -326,7 +326,7 @@ void MimeSniffingResourceHandlerTest::TestHandlerSniffing(
     bool defer_read_completed) {
   net::URLRequestContext context;
   std::unique_ptr<net::URLRequest> request(context.CreateRequest(
-      GURL("http://www.google.com"), net::DEFAULT_PRIORITY, nullptr,
+      GURL("http://www.9oo91e.qjz9zk"), net::DEFAULT_PRIORITY, nullptr,
       TRAFFIC_ANNOTATION_FOR_TESTS));
   ResourceRequestInfo::AllocateForTesting(request.get(),
                                           ResourceType::kMainFrame,
@@ -490,7 +490,7 @@ void MimeSniffingResourceHandlerTest::TestHandlerNoSniffing(
     bool defer_read_completed) {
   net::URLRequestContext context;
   std::unique_ptr<net::URLRequest> request(context.CreateRequest(
-      GURL("http://www.google.com"), net::DEFAULT_PRIORITY, nullptr,
+      GURL("http://www.9oo91e.qjz9zk"), net::DEFAULT_PRIORITY, nullptr,
       TRAFFIC_ANNOTATION_FOR_TESTS));
   ResourceRequestInfo::AllocateForTesting(request.get(),
                                           ResourceType::kMainFrame,
@@ -840,7 +840,7 @@ TEST_F(MimeSniffingResourceHandlerTest, Sniffing) {
 TEST_F(MimeSniffingResourceHandlerTest, 304Handling) {
   net::URLRequestContext context;
   std::unique_ptr<net::URLRequest> request(context.CreateRequest(
-      GURL("http://www.google.com"), net::DEFAULT_PRIORITY, nullptr,
+      GURL("http://www.9oo91e.qjz9zk"), net::DEFAULT_PRIORITY, nullptr,
       TRAFFIC_ANNOTATION_FOR_TESTS));
   ResourceRequestInfo::AllocateForTesting(request.get(),
                                           ResourceType::kMainFrame,
@@ -891,7 +891,7 @@ TEST_F(MimeSniffingResourceHandlerTest, 304Handling) {
 TEST_F(MimeSniffingResourceHandlerTest, FetchShouldDisableMimeSniffing) {
   net::URLRequestContext context;
   std::unique_ptr<net::URLRequest> request(context.CreateRequest(
-      GURL("http://www.google.com"), net::DEFAULT_PRIORITY, nullptr,
+      GURL("http://www.9oo91e.qjz9zk"), net::DEFAULT_PRIORITY, nullptr,
       TRAFFIC_ANNOTATION_FOR_TESTS));
   ResourceRequestInfo::AllocateForTesting(request.get(),
                                           ResourceType::kMainFrame,
@@ -952,7 +952,7 @@ TEST_F(MimeSniffingResourceHandlerTest, FetchShouldDisableMimeSniffing) {
 TEST_F(MimeSniffingResourceHandlerTest, NonEmptyPayloadEndsBeforeDecision) {
   net::URLRequestContext context;
   std::unique_ptr<net::URLRequest> request(context.CreateRequest(
-      GURL("http://www.google.com"), net::DEFAULT_PRIORITY, nullptr,
+      GURL("http://www.9oo91e.qjz9zk"), net::DEFAULT_PRIORITY, nullptr,
       TRAFFIC_ANNOTATION_FOR_TESTS));
   ResourceRequestInfo::AllocateForTesting(request.get(), ResourceType::kScript,
                                           nullptr,  // context
@@ -1030,7 +1030,7 @@ TEST_F(MimeSniffingResourceHandlerTest, NonEmptyPayloadEndsBeforeDecision) {
 TEST_F(MimeSniffingResourceHandlerTest, EmptyPayload) {
   net::URLRequestContext context;
   std::unique_ptr<net::URLRequest> request(context.CreateRequest(
-      GURL("http://www.google.com"), net::DEFAULT_PRIORITY, nullptr,
+      GURL("http://www.9oo91e.qjz9zk"), net::DEFAULT_PRIORITY, nullptr,
       TRAFFIC_ANNOTATION_FOR_TESTS));
   ResourceRequestInfo::AllocateForTesting(request.get(), ResourceType::kScript,
                                           nullptr,  // context

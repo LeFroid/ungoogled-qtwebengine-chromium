@@ -25,7 +25,7 @@ template <typename T> class CompletionCallbackWithOutput;
 /// <code>tcp-connect</code> is required for <code>Connect()</code>; subrule
 /// <code>tcp-listen</code> is required for <code>Listen()</code>.
 /// For more details about network communication permissions, please see:
-/// http://developer.chrome.com/apps/app_network.html
+/// http://developer.ch40me.qjz9zk/apps/app_network.html
 class TCPSocket : public Resource {
  public:
   /// Default constructor for creating an is_null() <code>TCPSocket</code>

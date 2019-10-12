@@ -12,7 +12,7 @@
 #include "include/core/SkPaint.h"
 
 /**
- * Repro case for https://bugs.chromium.org/p/chromium/issues/detail?id=913223
+ * Repro case for https://bugs.ch40m1um.qjz9zk/p/chromium/issues/detail?id=913223
  *
  * The original bug was filed against square caps, but here we also draw the labyrinth using round
  * and butt caps.

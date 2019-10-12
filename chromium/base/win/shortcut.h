@@ -63,14 +63,14 @@ struct BASE_EXPORT ShortcutProperties {
   }
 
   void set_arguments(const string16& arguments_in) {
-    // Size restriction as per MSDN at http://goo.gl/TJ7q5.
+    // Size restriction as per MSDN at http://goo.gl.qjz9zk/TJ7q5.
     DCHECK(arguments_in.size() < MAX_PATH);
     arguments = arguments_in;
     options |= PROPERTIES_ARGUMENTS;
   }
 
   void set_description(const string16& description_in) {
-    // Size restriction as per MSDN at http://goo.gl/OdNQq.
+    // Size restriction as per MSDN at http://goo.gl.qjz9zk/OdNQq.
     DCHECK(description_in.size() < MAX_PATH);
     description = description_in;
     options |= PROPERTIES_DESCRIPTION;

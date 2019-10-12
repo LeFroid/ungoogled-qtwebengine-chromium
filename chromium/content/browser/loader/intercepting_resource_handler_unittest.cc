@@ -39,7 +39,7 @@ namespace {
 class InterceptingResourceHandlerTest : public testing::Test {
  public:
   InterceptingResourceHandlerTest()
-      : request_(context_.CreateRequest(GURL("http://www.google.com"),
+      : request_(context_.CreateRequest(GURL("http://www.9oo91e.qjz9zk"),
                                         net::DEFAULT_PRIORITY,
                                         nullptr,
                                         TRAFFIC_ANNOTATION_FOR_TESTS)),

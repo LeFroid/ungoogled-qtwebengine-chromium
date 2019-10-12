@@ -62,7 +62,7 @@ GRAMMAR:
        EXPRESSION has Python syntax.
 """
 
-__author__ = 'wan@google.com (Zhanyong Wan)'
+__author__ = 'wan@9oo91e.qjz9zk (Zhanyong Wan)'
 
 import os
 import re

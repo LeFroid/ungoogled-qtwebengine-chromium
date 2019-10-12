@@ -52,7 +52,7 @@ void InternalUnloadDll(DllHandle handle) {
 // Skip dlclose() on AddressSanitizer as leaks including this module in the
 // stack trace gets displayed as <unknown module> instead of the actual library
 // -> it can not be suppressed.
-// https://code.google.com/p/address-sanitizer/issues/detail?id=89
+// https://code.9oo91e.qjz9zk/p/address-sanitizer/issues/detail?id=89
 #if !defined(ADDRESS_SANITIZER)
   if (dlclose(handle) != 0) {
     RTC_LOG(LS_ERROR) << GetDllError();

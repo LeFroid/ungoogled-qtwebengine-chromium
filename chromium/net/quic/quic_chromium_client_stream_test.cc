@@ -179,7 +179,7 @@ class QuicChromiumClientStreamTest
   }
 
   void InitializeHeaders() {
-    headers_[":host"] = "www.google.com";
+    headers_[":host"] = "www.9oo91e.qjz9zk";
     headers_[":path"] = "/index.hml";
     headers_[":scheme"] = "https";
     headers_["cookie"] =

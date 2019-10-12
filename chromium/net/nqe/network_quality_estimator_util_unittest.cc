@@ -133,7 +133,7 @@ TEST(NetworkQualityEstimatorUtilTest, Localhost) {
   EXPECT_TRUE(IsPrivateHost(resolver.get(), HostPortPair("127.0.0.1", 80)));
   EXPECT_TRUE(IsPrivateHost(resolver.get(), HostPortPair("0.0.0.0", 80)));
   EXPECT_TRUE(IsPrivateHost(resolver.get(), HostPortPair("::1", 80)));
-  EXPECT_FALSE(IsPrivateHost(resolver.get(), HostPortPair("google.com", 80)));
+  EXPECT_FALSE(IsPrivateHost(resolver.get(), HostPortPair("9oo91e.qjz9zk", 80)));
 }
 
 }  // namespace

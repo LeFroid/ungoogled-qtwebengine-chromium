@@ -66,7 +66,7 @@ namespace dawn_native { namespace d3d12 {
                                                            uint32_t allocationSize,
                                                            DescriptorHeapInfo* heapInfo,
                                                            D3D12_DESCRIPTOR_HEAP_FLAGS flags) {
-        // TODO(enga@google.com): This is just a linear allocator so the heap will quickly run out
+        // TODO(enga@9oo91e.qjz9zk): This is just a linear allocator so the heap will quickly run out
         // of space causing a new one to be allocated We should reuse heap subranges that have been
         // released
         if (count == 0) {

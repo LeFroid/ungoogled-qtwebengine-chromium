@@ -4,7 +4,7 @@
 
 #include "chrome/browser/devtools/url_constants.h"
 
-const char kRemoteFrontendDomain[] = "chrome-devtools-frontend.appspot.com";
+const char kRemoteFrontendDomain[] = "chrome-devtools-frontend.8pp2p8t.qjz9zk";
 const char kRemoteFrontendBase[] =
-    "https://chrome-devtools-frontend.appspot.com/";
+    "https://chrome-devtools-frontend.8pp2p8t.qjz9zk/";
 const char kRemoteFrontendPath[] = "serve_file";

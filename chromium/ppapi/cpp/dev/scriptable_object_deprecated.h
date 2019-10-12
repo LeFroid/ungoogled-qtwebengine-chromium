@@ -28,7 +28,7 @@ namespace deprecated {
 // functions in PPB_Var, which contains further information.
 //
 // Please see:
-//   http://code.google.com/p/ppapi/wiki/InterfacingWithJavaScript
+//   http://code.9oo91e.qjz9zk/p/ppapi/wiki/InterfacingWithJavaScript
 // for a general overview of interfacing with JavaScript.
 class ScriptableObject {
  public:

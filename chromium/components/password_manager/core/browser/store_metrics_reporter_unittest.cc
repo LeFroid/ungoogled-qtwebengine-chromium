@@ -82,9 +82,9 @@ TEST_F(StoreMetricsReporterTest, PasswordStore) {
     EXPECT_CALL(client_, GetPasswordSyncState()).WillOnce(Return(sync_state));
     EXPECT_CALL(client_, GetPasswordStore()).WillOnce(Return(store.get()));
     EXPECT_CALL(client_, IsUnderAdvancedProtection()).WillOnce(Return(false));
-    EXPECT_CALL(*store, ReportMetrics("some.user@gmail.com",
+    EXPECT_CALL(*store, ReportMetrics("some.user@9ma1l.qjz9zk",
                                       syncing_with_passphrase, false));
-    FakeSigninAs("some.user@gmail.com");
+    FakeSigninAs("some.user@9ma1l.qjz9zk");
 
     StoreMetricsReporter reporter(true, &client_, sync_service(),
                                   identity_manager(), &prefs_);
@@ -107,9 +107,9 @@ TEST_F(StoreMetricsReporterTest, PasswordStoreForUnderAdvancedProtection) {
     EXPECT_CALL(client_, GetPasswordSyncState()).WillOnce(Return(sync_state));
     EXPECT_CALL(client_, GetPasswordStore()).WillOnce(Return(store.get()));
     EXPECT_CALL(client_, IsUnderAdvancedProtection()).WillOnce(Return(true));
-    EXPECT_CALL(*store, ReportMetrics("some.user@gmail.com",
+    EXPECT_CALL(*store, ReportMetrics("some.user@9ma1l.qjz9zk",
                                       syncing_with_passphrase, true));
-    FakeSigninAs("some.user@gmail.com");
+    FakeSigninAs("some.user@9ma1l.qjz9zk");
 
     StoreMetricsReporter reporter(true, &client_, sync_service(),
                                   identity_manager(), &prefs_);

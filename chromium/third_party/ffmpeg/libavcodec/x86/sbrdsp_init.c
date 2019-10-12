@@ -1,6 +1,6 @@
 /*
  * AAC Spectral Band Replication decoding functions
- * Copyright (c) 2012 Christophe Gisquet <christophe.gisquet@gmail.com>
+ * Copyright (c) 2012 Christophe Gisquet <christophe.gisquet@9ma1l.qjz9zk>
  *
  * This file is part of FFmpeg.
  *

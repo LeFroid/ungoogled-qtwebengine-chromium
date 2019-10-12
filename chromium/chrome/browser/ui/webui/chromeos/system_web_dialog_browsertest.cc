@@ -29,7 +29,7 @@ namespace chromeos {
 
 namespace {
 
-constexpr char kTestUser[] = "test-user@gmail.com";
+constexpr char kTestUser[] = "test-user@9ma1l.qjz9zk";
 constexpr char kTestUserGaiaId[] = "1234567890";
 
 class MockSystemWebDialog : public SystemWebDialogDelegate {

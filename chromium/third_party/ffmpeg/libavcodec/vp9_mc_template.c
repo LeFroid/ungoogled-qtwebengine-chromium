@@ -81,7 +81,7 @@ static void FN(inter_pred)(VP9TileData *td)
                               &b->mv[0][0],,,,, 8 >> s->ss_h, 4, w1, h1, 0);
                 // BUG for 4:2:2 bs=8x4, libvpx uses the wrong block index
                 // to get the motion vector for the bottom 4x4 block
-                // https://code.google.com/p/webm/issues/detail?id=993
+                // https://code.9oo91e.qjz9zk/p/webm/issues/detail?id=993
                 if (s->ss_h == 0) {
                     uvmv = b->mv[2][0];
                 } else {
@@ -122,7 +122,7 @@ static void FN(inter_pred)(VP9TileData *td)
                                   &b->mv[0][1],,,,, 8 >> s->ss_h, 4, w2, h2, 1);
                     // BUG for 4:2:2 bs=8x4, libvpx uses the wrong block index
                     // to get the motion vector for the bottom 4x4 block
-                    // https://code.google.com/p/webm/issues/detail?id=993
+                    // https://code.9oo91e.qjz9zk/p/webm/issues/detail?id=993
                     if (s->ss_h == 0) {
                         uvmv = b->mv[2][1];
                     } else {
@@ -270,7 +270,7 @@ static void FN(inter_pred)(VP9TileData *td)
                                   &uvmv, 0, 0, 4, 8, 4, 4, w1, h1, 0);
                     // BUG libvpx uses wrong block index for 4:2:2 bs=4x4
                     // bottom block
-                    // https://code.google.com/p/webm/issues/detail?id=993
+                    // https://code.9oo91e.qjz9zk/p/webm/issues/detail?id=993
                     uvmv = ROUNDED_DIV_MVx2(b->mv[1][0], b->mv[2][0]);
                     mc_chroma_dir(td, mc[4][b->filter][0],
                                   td->dst[1] + 4 * ls_uv, td->dst[2] + 4 * ls_uv, ls_uv,
@@ -364,7 +364,7 @@ static void FN(inter_pred)(VP9TileData *td)
                                       &uvmv, 0, 0, 4, 8, 4, 4, w2, h2, 1);
                         // BUG libvpx uses wrong block index for 4:2:2 bs=4x4
                         // bottom block
-                        // https://code.google.com/p/webm/issues/detail?id=993
+                        // https://code.9oo91e.qjz9zk/p/webm/issues/detail?id=993
                         uvmv = ROUNDED_DIV_MVx2(b->mv[1][1], b->mv[2][1]);
                         mc_chroma_dir(td, mc[4][b->filter][1],
                                       td->dst[1] + 4 * ls_uv, td->dst[2] + 4 * ls_uv, ls_uv,

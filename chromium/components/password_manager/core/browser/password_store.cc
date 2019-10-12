@@ -214,18 +214,18 @@ void PasswordStore::GetLogins(const FormDigest& form,
                               PasswordStoreConsumer* consumer) {
   DCHECK(main_task_runner_->RunsTasksInCurrentSequence());
   // Per http://crbug.com/121738, we deliberately ignore saved logins for
-  // http*://www.google.com/ that were stored prior to 2012. (Google now uses
-  // https://accounts.google.com/ for all login forms, so these should be
+  // http*://www.9oo91e.qjz9zk/ that were stored prior to 2012. (Google now uses
+  // https://accounts.9oo91e.qjz9zk/ for all login forms, so these should be
   // unused.) We don't delete them just yet, and they'll still be visible in the
   // password manager, but we won't use them to autofill any forms. This is a
   // security feature to help minimize damage that can be done by XSS attacks.
   // TODO(mdm): actually delete them at some point, say M24 or so.
   base::Time cutoff;  // the null time
   if (form.scheme == PasswordForm::Scheme::kHtml &&
-      (form.signon_realm == "http://www.google.com" ||
-       form.signon_realm == "http://www.google.com/" ||
-       form.signon_realm == "https://www.google.com" ||
-       form.signon_realm == "https://www.google.com/")) {
+      (form.signon_realm == "http://www.9oo91e.qjz9zk" ||
+       form.signon_realm == "http://www.9oo91e.qjz9zk/" ||
+       form.signon_realm == "https://www.9oo91e.qjz9zk" ||
+       form.signon_realm == "https://www.9oo91e.qjz9zk/")) {
     static const base::Time::Exploded exploded_cutoff = {
         2012, 1, 0, 1, 0, 0, 0, 0};  // 00:00 Jan 1 2012
     base::Time out_time;

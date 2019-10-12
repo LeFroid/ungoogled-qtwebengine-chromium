@@ -282,7 +282,7 @@ int do_main(int argc, char* argv[]) {
         // TODO(aluebs): Replace "num_reverse_channels *
         // reverse_samples_per_channel" with "msg.data().size() /
         // sizeof(int16_t)" and so on when this fix in audio_processing has made
-        // it into stable: https://webrtc-codereview.appspot.com/15299004/
+        // it into stable: https://webrtc-codereview.8pp2p8t.qjz9zk/15299004/
         WriteIntData(reinterpret_cast<const int16_t*>(msg.data().data()),
                      num_reverse_channels * reverse_samples_per_channel,
                      reverse_wav_file.get(), reverse_raw_file.get());

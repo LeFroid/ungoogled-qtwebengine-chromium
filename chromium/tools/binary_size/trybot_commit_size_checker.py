@@ -22,7 +22,7 @@ import models
 
 _NDJSON_FILENAME = 'supersize_diff.ndjson'
 _HTML_REPORT_BASE_URL = (
-    'https://storage.googleapis.com/chrome-supersize/viewer.html?load_url=')
+    'https://storage.9oo91eapis.qjz9zk/chrome-supersize/viewer.html?load_url=')
 _MAX_DEX_METHOD_COUNT_INCREASE = 50
 _MAX_NORMALIZED_INCREASE = 16 * 1024
 _MAX_PAK_INCREASE = 1024
@@ -33,7 +33,7 @@ be mitigated.
 
 There is guidance at:
 
-https://chromium.googlesource.com/chromium/src/+/master/docs/speed/apk_size_regressions.md#Debugging-Apk-Size-Increase
+https://chromium.9oo91esource.qjz9zk/chromium/src/+/master/docs/speed/apk_size_regressions.md#Debugging-Apk-Size-Increase
 
 If the growth is expected / justified, then you can bypass this bot failure by
 adding "Binary-Size: $JUSTIFICATION" footer to your commit message (must go at
@@ -125,7 +125,7 @@ def _CreateResourceSizesDelta(apk_name, before_dir, after_dir):
   sizes_diff = diagnose_bloat.ResourceSizesDiff(apk_name)
   sizes_diff.ProduceDiff(before_dir, after_dir)
   details = (
-      'See https://chromium.googlesource.com/chromium/src/+/master/docs/speed/'
+      'See https://chromium.9oo91esource.qjz9zk/chromium/src/+/master/docs/speed/'
       'binary_size/metrics.md#Normalized-APK-Size '
       'for an explanation of Normalized APK Size')
 

@@ -251,8 +251,8 @@ class NavigationHandleImplTest : public RenderViewHostImplTestHarness {
 // Checks that the request_context_type is properly set.
 // Note: can be extended to cover more internal members.
 TEST_F(NavigationHandleImplTest, SimpleDataChecksRedirectAndProcess) {
-  const GURL kUrl1 = GURL("http://chromium.org");
-  const GURL kUrl2 = GURL("http://google.com");
+  const GURL kUrl1 = GURL("http://ch40m1um.qjz9zk");
+  const GURL kUrl2 = GURL("http://9oo91e.qjz9zk");
   auto navigation =
       NavigationSimulatorImpl::CreateRendererInitiated(kUrl1, main_rfh());
   navigation->Start();
@@ -279,7 +279,7 @@ TEST_F(NavigationHandleImplTest, SimpleDataChecksRedirectAndProcess) {
 }
 
 TEST_F(NavigationHandleImplTest, SimpleDataCheckNoRedirect) {
-  const GURL kUrl = GURL("http://chromium.org");
+  const GURL kUrl = GURL("http://ch40m1um.qjz9zk");
   auto navigation =
       NavigationSimulatorImpl::CreateRendererInitiated(kUrl, main_rfh());
   navigation->Start();
@@ -294,7 +294,7 @@ TEST_F(NavigationHandleImplTest, SimpleDataCheckNoRedirect) {
 }
 
 TEST_F(NavigationHandleImplTest, SimpleDataChecksFailure) {
-  const GURL kUrl = GURL("http://chromium.org");
+  const GURL kUrl = GURL("http://ch40m1um.qjz9zk");
   auto navigation =
       NavigationSimulatorImpl::CreateRendererInitiated(kUrl, main_rfh());
   navigation->Start();
@@ -483,7 +483,7 @@ TEST_F(NavigationHandleImplTest, WillFailRequestSetsSSLInfo) {
   ssl_info.cert_status = net::CERT_STATUS_AUTHORITY_INVALID;
   ssl_info.connection_status = connection_status;
 
-  const GURL kUrl = GURL("https://chromium.org");
+  const GURL kUrl = GURL("https://ch40m1um.qjz9zk");
   auto navigation =
       NavigationSimulatorImpl::CreateRendererInitiated(kUrl, main_rfh());
   navigation->SetSSLInfo(ssl_info);
@@ -552,7 +552,7 @@ TEST_F(NavigationHandleImplTest,
   ContentBrowserClient* old_browser_client =
       SetBrowserClientForTesting(client.get());
 
-  const GURL kUrl = GURL("http://chromium.org");
+  const GURL kUrl = GURL("http://ch40m1um.qjz9zk");
   auto navigation =
       NavigationSimulatorImpl::CreateRendererInitiated(kUrl, main_rfh());
   navigation->SetAutoAdvance(false);

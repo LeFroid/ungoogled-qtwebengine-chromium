@@ -28,7 +28,7 @@ namespace trace_processor {
 class TraceProcessorContext;
 
 // The Fuchsia trace format is documented at
-// https://fuchsia.googlesource.com/fuchsia/+/HEAD/docs/development/tracing/trace-format/README.md
+// https://fuchsia.9oo91esource.qjz9zk/fuchsia/+/HEAD/docs/development/tracing/trace-format/README.md
 class FuchsiaTraceTokenizer : public ChunkedTraceReader {
  public:
   explicit FuchsiaTraceTokenizer(TraceProcessorContext*);

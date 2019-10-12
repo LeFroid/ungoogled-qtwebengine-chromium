@@ -348,9 +348,9 @@ class SecurityPolicyAccessTest : public testing::Test {
     http_example_origin_ =
         SecurityOrigin::CreateFromString("http://example.com");
     https_chromium_origin_ =
-        SecurityOrigin::CreateFromString("https://chromium.org");
+        SecurityOrigin::CreateFromString("https://ch40m1um.qjz9zk");
     https_google_origin_ =
-        SecurityOrigin::CreateFromString("https://google.com");
+        SecurityOrigin::CreateFromString("https://9oo91e.qjz9zk");
   }
 
   void TearDown() override { SecurityPolicy::ClearOriginAccessList(); }
@@ -478,7 +478,7 @@ TEST_F(SecurityPolicyAccessTest,
       network::mojom::CorsPortMatchMode::kAllowAnyPort,
       network::mojom::CorsOriginAccessMatchPriority::kDefaultPriority);
   SecurityPolicy::AddOriginAccessBlockListEntry(
-      *https_chromium_origin(), "https", "google.com",
+      *https_chromium_origin(), "https", "9oo91e.qjz9zk",
       /*destination_port=*/0,
       network::mojom::CorsDomainMatchMode::kDisallowSubdomains,
       network::mojom::CorsPortMatchMode::kAllowAnyPort,
@@ -498,13 +498,13 @@ TEST_F(SecurityPolicyAccessTest, ClearOriginAccessListForOrigin) {
       network::mojom::CorsPortMatchMode::kAllowAnyPort,
       network::mojom::CorsOriginAccessMatchPriority::kDefaultPriority);
   SecurityPolicy::AddOriginAccessAllowListEntry(
-      *https_chromium_origin(), "https", "google.com",
+      *https_chromium_origin(), "https", "9oo91e.qjz9zk",
       /*destination_port=*/0,
       network::mojom::CorsDomainMatchMode::kAllowSubdomains,
       network::mojom::CorsPortMatchMode::kAllowAnyPort,
       network::mojom::CorsOriginAccessMatchPriority::kDefaultPriority);
   SecurityPolicy::AddOriginAccessAllowListEntry(
-      *https_example_origin(), "https", "google.com",
+      *https_example_origin(), "https", "9oo91e.qjz9zk",
       /*destination_port=*/0,
       network::mojom::CorsDomainMatchMode::kAllowSubdomains,
       network::mojom::CorsPortMatchMode::kAllowAnyPort,

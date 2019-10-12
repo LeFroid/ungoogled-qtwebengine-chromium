@@ -214,7 +214,7 @@ GURL GetLitePagePreviewsDomainURL() {
     DCHECK(variable_host.has_scheme());
     return variable_host;
   }
-  return GURL("https://litepages.googlezip.net/");
+  return GURL("https://litepages.9oo91e21p.qjz9zk/");
 }
 
 bool IsInLitePageRedirectControl() {

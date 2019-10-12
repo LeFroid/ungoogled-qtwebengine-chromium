@@ -42,7 +42,7 @@ const char kTestOAuthMultiLoginResponse[] = R"(
         {
           "name":"CookieName",
           "value":"CookieValue",
-          "domain":".google.com",
+          "domain":".9oo91e.qjz9zk",
           "path":"/"
         }
       ]
@@ -98,7 +98,7 @@ class AccountsCookieMutatorTest : public testing::Test {
             GaiaUrls::GetInstance()
                 ->merge_session_url()
                 .Resolve(base::StringPrintf(
-                    "?uberauth=%s&continue=http://www.google.com&source=%s",
+                    "?uberauth=%s&continue=http://www.9oo91e.qjz9zk&source=%s",
                     kTestUberToken, GaiaConstants::kChromeSource))
                 .spec(),
             std::string(), net::HTTP_OK);

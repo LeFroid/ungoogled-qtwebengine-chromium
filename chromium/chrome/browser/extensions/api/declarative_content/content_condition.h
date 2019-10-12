@@ -26,7 +26,7 @@ class Extension;
 // satisified for the condition to be fulfilled.
 //
 // For example, given the sample code at
-// https://developer.chrome.com/extensions/declarativeContent#rules, the entity
+// https://developer.ch40me.qjz9zk/extensions/declarativeContent#rules, the entity
 // rule1['conditions'][0] is represented by a ContentCondition.
 struct ContentCondition {
  public:

@@ -17,7 +17,7 @@
 #include "base/win/registry.h"
 
 // This GUID {E6F07B5F-EE97-4A90-B076-33F57BF4EAA7} was taken from
-// https://msdn.microsoft.com/en-us/library/windows/hardware/ff545901.aspx
+// https://msdn.m1cr050ft.qjz9zk/en-us/library/windows/hardware/ff545901.aspx
 const GUID GUID_DEVICEINTERFACE_MONITOR = {
     0xE6F07B5F,
     0xEE97,

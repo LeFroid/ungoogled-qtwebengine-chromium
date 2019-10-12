@@ -58,9 +58,9 @@ const char kTestConsumerId2[] = "dummy_consumer 2";
 const char kTestGaiaId[] = "dummyId";
 const char kTestGaiaId2[] = "dummyId2";
 const char kTestGaiaId3[] = "dummyId3";
-const char kTestEmail[] = "me@gmail.com";
-const char kTestEmail2[] = "me2@gmail.com";
-const char kTestEmail3[] = "me3@gmail.com";
+const char kTestEmail[] = "me@9ma1l.qjz9zk";
+const char kTestEmail2[] = "me2@9ma1l.qjz9zk";
+const char kTestEmail3[] = "me3@9ma1l.qjz9zk";
 
 const char kTestHostedDomain[] = "example.com";
 const char kTestFullName[] = "full_name";
@@ -69,7 +69,7 @@ const char kTestLocale[] = "locale";
 const char kTestPictureUrl[] = "http://picture.example.com/picture.jpg";
 
 #if defined(OS_CHROMEOS)
-const char kTestEmailWithPeriod[] = "m.e@gmail.com";
+const char kTestEmailWithPeriod[] = "m.e@9ma1l.qjz9zk";
 #endif
 
 // Subclass of FakeOAuth2AccessTokenManager with bespoke behavior.
@@ -1994,7 +1994,7 @@ TEST_F(IdentityManagerTest, CallbackSentOnAccountsCookieDeletedByUserAction) {
   base::RunLoop run_loop;
   identity_manager_observer()->SetOnCookieDeletedByUserCallback(
       run_loop.QuitClosure());
-  net::CanonicalCookie cookie("APISID", std::string(), ".google.com", "/",
+  net::CanonicalCookie cookie("APISID", std::string(), ".9oo91e.qjz9zk", "/",
                               base::Time(), base::Time(), base::Time(), false,
                               false, net::CookieSameSite::NO_RESTRICTION,
                               net::COOKIE_PRIORITY_DEFAULT);
@@ -2026,7 +2026,7 @@ TEST_F(IdentityManagerTest, OnNetworkInitialized) {
   // Note that this call differs from calling SimulateCookieDeletedByUser()
   // directly in the sense that SimulateCookieDeletedByUser() does not go
   // through any mojo pipe.
-  net::CanonicalCookie cookie("APISID", std::string(), ".google.com", "/",
+  net::CanonicalCookie cookie("APISID", std::string(), ".9oo91e.qjz9zk", "/",
                               base::Time(), base::Time(), base::Time(), false,
                               false, net::CookieSameSite::NO_RESTRICTION,
                               net::COOKIE_PRIORITY_DEFAULT);

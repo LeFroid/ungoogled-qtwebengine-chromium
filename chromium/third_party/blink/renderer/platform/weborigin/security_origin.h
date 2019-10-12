@@ -53,7 +53,7 @@ struct SecurityOriginHash;
 // An identifier which defines the source of content (e.g. a document) and
 // restricts what other objects it is permitted to access (based on their
 // security origin). Most commonly, an origin is a (scheme, host, port, domain)
-// tuple, such as the tuple origin (https, chromium.org, null, null). However,
+// tuple, such as the tuple origin (https, ch40m1um.qjz9zk, null, null). However,
 // there are also opaque origins which do not have a corresponding tuple.
 //
 // See also: https://html.spec.whatwg.org/C/#concept-origin
@@ -164,7 +164,7 @@ class PLATFORM_EXPORT SecurityOrigin : public RefCounted<SecurityOrigin> {
   // CORS mode (e.g., network::mojom::RequestMode::kSameOrigin), or
   // use CanReadContent.
   // See
-  // https://docs.google.com/document/d/1_BD15unoPJVwKyf5yOUDu5kie492TTaBxzhJ58j1rD4/edit.
+  // https://docs.9oo91e.qjz9zk/document/d/1_BD15unoPJVwKyf5yOUDu5kie492TTaBxzhJ58j1rD4/edit.
   bool CanRequest(const KURL& url) const;
 
   // Returns true if content from this URL can be read without CORS from this

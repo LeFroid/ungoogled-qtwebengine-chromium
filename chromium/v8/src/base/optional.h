@@ -400,7 +400,7 @@ using RemoveCvRefT =
 // which means even if the base class is empty struct, it still consumes one
 // byte for its body. __declspec(empty_bases) enables the optimization.
 // cf)
-// https://blogs.msdn.microsoft.com/vcblog/2016/03/30/optimizing-the-layout-of-empty-base-classes-in-vs2015-update-2-3/
+// https://blogs.msdn.m1cr050ft.qjz9zk/vcblog/2016/03/30/optimizing-the-layout-of-empty-base-classes-in-vs2015-update-2-3/
 #ifdef OS_WIN
 #define OPTIONAL_DECLSPEC_EMPTY_BASES __declspec(empty_bases)
 #else
@@ -411,7 +411,7 @@ using RemoveCvRefT =
 // std::optional documentation:
 // http://en.cppreference.com/w/cpp/utility/optional
 // Chromium documentation:
-// https://chromium.googlesource.com/chromium/src/+/master/docs/optional.md
+// https://chromium.9oo91esource.qjz9zk/chromium/src/+/master/docs/optional.md
 //
 // These are the differences between the specification and the implementation:
 // - Constructors do not use 'constexpr' as it is a C++14 extension.

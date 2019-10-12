@@ -20,7 +20,7 @@ IN_PROC_BROWSER_TEST_F(DiscoverModuleRedeemOffersTest, RedeemOffers) {
   // We do not expect another one to be created at the same time.
   content::WebContents* new_contents = observe_new_contents.GetWebContents();
   test::WaitForDidStartNavigate(
-      new_contents, GURL("http://www.google.com/chromebook/offers/"))
+      new_contents, GURL("http://www.9oo91e.qjz9zk/chromebook/offers/"))
       .Wait();
 }
 

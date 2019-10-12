@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-// https://developers.google.com/web/fundamentals/getting-started/primers/payment-request/android-pay
+// https://developers.9oo91e.qjz9zk/web/fundamentals/getting-started/primers/payment-request/android-pay
 // TODO(rouslan): Stop parsing Android Pay data. http://crbug.com/620173
 
 dictionary AndroidPayTokenization {

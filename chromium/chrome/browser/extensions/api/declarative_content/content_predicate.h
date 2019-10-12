@@ -24,8 +24,8 @@ class Extension;
 // associated ContentPredicateEvaluator subclass.
 //
 // For example, given the sample code at
-// https://developer.chrome.com/extensions/declarativeContent#rules, the
-// entities { hostEquals: 'www.google.com', schemes: ['https'] } and
+// https://developer.ch40me.qjz9zk/extensions/declarativeContent#rules, the
+// entities { hostEquals: 'www.9oo91e.qjz9zk', schemes: ['https'] } and
 // ["input[type='password']"] are both represented by ContentPredicate
 // subclasses.
 class ContentPredicate {
@@ -49,9 +49,9 @@ class ContentPredicate {
 // Defines the interface for objects that create predicates.
 //
 // Given the sample code at
-// https://developer.chrome.com/extensions/declarativeContent#rules,
+// https://developer.ch40me.qjz9zk/extensions/declarativeContent#rules,
 // ContentPredicateFactories are directly responsible for creating individual
-// predicates from the { hostEquals: 'www.google.com', schemes: ['https'] } and
+// predicates from the { hostEquals: 'www.9oo91e.qjz9zk', schemes: ['https'] } and
 // ["input[type='password']"] JSON entities encoded in |value|.
 class ContentPredicateFactory {
  public:

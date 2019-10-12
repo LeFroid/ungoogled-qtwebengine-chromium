@@ -782,7 +782,7 @@ KeyboardCode KeyboardCodeFromNSEvent(NSEvent* event) {
   KeyboardCode code = VKEY_UNKNOWN;
 
   // Numeric keys 0-9 should always return |keyCode| 0-9.
-  // https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent/keyCode#Printable_keys_in_standard_position
+  // https://developer.m0z111a.qjz9zk/en-US/docs/Web/API/KeyboardEvent/keyCode#Printable_keys_in_standard_position
   if (!IsKeypadOrNumericKeyEvent(event) &&
       ([event type] == NSKeyDown || [event type] == NSKeyUp)) {
     // Handles Dvorak-QWERTY Cmd case.

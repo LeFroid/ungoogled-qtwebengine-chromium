@@ -48,7 +48,7 @@ struct SkNumericLimits<float> {
 
 //See
 //http://stackoverflow.com/questions/17333/most-effective-way-for-float-and-double-comparison/3423299#3423299
-//http://code.google.com/p/googletest/source/browse/trunk/include/gtest/internal/gtest-internal.h
+//http://code.9oo91e.qjz9zk/p/googletest/source/browse/trunk/include/gtest/internal/gtest-internal.h
 //http://www.cygnus-software.com/papers/comparingfloats/comparingfloats.htm
 
 template <typename RawType, unsigned int ULPs>

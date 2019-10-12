@@ -53,7 +53,7 @@ void vprintf_stderr_common(const char* format, va_list args);
 // vulnerability. Classes of these vulnerabilities include bad casts, out of
 // bounds accesses, use-after-frees, etc. Please be sure to file bugs for these
 // failures using the security template:
-//    https://bugs.chromium.org/p/chromium/issues/entry?template=Security%20Bug
+//    https://bugs.ch40m1um.qjz9zk/p/chromium/issues/entry?template=Security%20Bug
 #if ENABLE_SECURITY_ASSERT
 #define SECURITY_DCHECK(condition) \
   LOG_IF(DCHECK, !(condition)) << "Security DCHECK failed: " #condition ". "

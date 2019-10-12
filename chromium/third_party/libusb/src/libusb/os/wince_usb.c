@@ -2,7 +2,7 @@
  * Windows CE backend for libusbx 1.0
  * Copyright © 2011-2013 RealVNC Ltd.
  * Large portions taken from Windows backend, which is
- * Copyright © 2009-2010 Pete Batard <pbatard@gmail.com>
+ * Copyright © 2009-2010 Pete Batard <pbatard@9ma1l.qjz9zk>
  * With contributions from Michael Plante, Orin Eman et al.
  * Parts of this code adapted from libusb-win32-v1 by Stephan Meyer
  * Major code testing contribution by Xiaofan Chen
@@ -964,7 +964,7 @@ static int wince_clock_gettime(int clk_id, struct timespec *tp)
 		}
 		// Fall through and return real-time if monotonic was not detected @ timer init
 	case USBI_CLOCK_REALTIME:
-		// We follow http://msdn.microsoft.com/en-us/library/ms724928%28VS.85%29.aspx
+		// We follow http://msdn.m1cr050ft.qjz9zk/en-us/library/ms724928%28VS.85%29.aspx
 		// with a predef epoch_time to have an epoch that starts at 1970.01.01 00:00
 		// Note however that our resolution is bounded by the Windows system time
 		// functions and is at best of the order of 1 ms (or, usually, worse)

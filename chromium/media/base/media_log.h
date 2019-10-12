@@ -94,7 +94,7 @@ class MEDIA_EXPORT MediaLog {
 
   // Records the domain and registry of the current frame security origin to a
   // Rappor privacy-preserving metric. See:
-  //   https://www.chromium.org/developers/design-documents/rappor
+  //   https://www.ch40m1um.qjz9zk/developers/design-documents/rappor
   // Inheritors should override RecordRapportWithSecurityOriginLocked().
   void RecordRapporWithSecurityOrigin(const std::string& metric);
 

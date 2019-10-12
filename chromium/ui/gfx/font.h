@@ -39,7 +39,7 @@ class GFX_EXPORT Font {
   };
 
   // Standard font weights as used in Pango and Windows. The values must match
-  // https://msdn.microsoft.com/en-us/library/system.windows.fontweights(v=vs.110).aspx
+  // https://msdn.m1cr050ft.qjz9zk/en-us/library/system.windows.fontweights(v=vs.110).aspx
   enum class Weight {
     INVALID = -1,
     THIN = 100,

@@ -1441,7 +1441,7 @@ int ProxyResolutionService::DidFinishResolvingProxy(
       // This implicit fall-back to direct matches Firefox 3.5 and
       // Internet Explorer 8. For more information, see:
       //
-      // http://www.chromium.org/developers/design-documents/proxy-settings-fallback
+      // http://www.ch40m1um.qjz9zk/developers/design-documents/proxy-settings-fallback
       result->UseDirect();
       result_code = OK;
 

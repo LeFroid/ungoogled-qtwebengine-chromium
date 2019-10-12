@@ -78,7 +78,7 @@ bool PKCS8ToBLOBForCAPI(const std::string& pkcs8, std::vector<uint8_t>* blob) {
   const RSA* rsa = EVP_PKEY_get0_RSA(key.get());
 
   // See
-  // https://msdn.microsoft.com/en-us/library/windows/desktop/aa375601(v=vs.85).aspx
+  // https://msdn.m1cr050ft.qjz9zk/en-us/library/windows/desktop/aa375601(v=vs.85).aspx
   PUBLICKEYSTRUC header = {0};
   header.bType = PRIVATEKEYBLOB;
   header.bVersion = 2;
@@ -135,7 +135,7 @@ bool PKCS8ToBLOBForCNG(const std::string& pkcs8,
 
   if (EVP_PKEY_id(key.get()) == EVP_PKEY_RSA) {
     // See
-    // https://msdn.microsoft.com/en-us/library/windows/desktop/aa375531(v=vs.85).aspx.
+    // https://msdn.m1cr050ft.qjz9zk/en-us/library/windows/desktop/aa375531(v=vs.85).aspx.
     const RSA* rsa = EVP_PKEY_get0_RSA(key.get());
     BCRYPT_RSAKEY_BLOB header = {0};
     header.Magic = BCRYPT_RSAFULLPRIVATE_MAGIC;
@@ -171,7 +171,7 @@ bool PKCS8ToBLOBForCNG(const std::string& pkcs8,
 
   if (EVP_PKEY_id(key.get()) == EVP_PKEY_EC) {
     // See
-    // https://msdn.microsoft.com/en-us/library/windows/desktop/aa375520(v=vs.85).aspx.
+    // https://msdn.m1cr050ft.qjz9zk/en-us/library/windows/desktop/aa375520(v=vs.85).aspx.
     const EC_KEY* ec_key = EVP_PKEY_get0_EC_KEY(key.get());
     const EC_GROUP* group = EC_KEY_get0_group(ec_key);
     bssl::UniquePtr<BIGNUM> x(BN_new());
@@ -242,7 +242,7 @@ TEST_P(SSLPlatformKeyCNGTest, KeyMatches) {
   // key name is not supplied (via the pParameterList parameter for the BLOB
   // types we use), the Microsoft Software KSP will treat the key as ephemeral.
   //
-  // https://msdn.microsoft.com/en-us/library/windows/desktop/aa376276(v=vs.85).aspx
+  // https://msdn.m1cr050ft.qjz9zk/en-us/library/windows/desktop/aa376276(v=vs.85).aspx
   NCRYPT_PROV_HANDLE prov;
   SECURITY_STATUS status =
       NCryptOpenStorageProvider(&prov, MS_KEY_STORAGE_PROVIDER, 0);

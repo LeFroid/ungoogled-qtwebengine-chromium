@@ -32,10 +32,10 @@ namespace {
 
 const char kWarningUnmuteFailed[] =
     "Unmuting failed and the element was paused instead because the user "
-    "didn't interact with the document before. https://goo.gl/xX8pDD";
+    "didn't interact with the document before. https://goo.gl.qjz9zk/xX8pDD";
 const char kErrorAutoplayFuncUnified[] =
     "play() failed because the user didn't interact with the document first. "
-    "https://goo.gl/xX8pDD";
+    "https://goo.gl.qjz9zk/xX8pDD";
 const char kErrorAutoplayFuncMobile[] =
     "play() can only be initiated by a user gesture.";
 

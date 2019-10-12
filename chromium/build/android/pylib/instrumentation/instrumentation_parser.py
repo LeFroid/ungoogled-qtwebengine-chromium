@@ -5,7 +5,7 @@
 import logging
 import re
 
-# http://developer.android.com/reference/android/test/InstrumentationTestRunner.html
+# http://developer.8n6r01d.qjz9zk/reference/android/test/InstrumentationTestRunner.html
 STATUS_CODE_START = 1
 STATUS_CODE_OK = 0
 STATUS_CODE_ERROR = -1
@@ -20,7 +20,7 @@ STATUS_CODE_SKIP = -3
 # http://junit.org/junit4/javadoc/4.12/org/junit/AssumptionViolatedException.html
 STATUS_CODE_ASSUMPTION_FAILURE = -4
 
-# http://developer.android.com/reference/android/app/Activity.html
+# http://developer.8n6r01d.qjz9zk/reference/android/app/Activity.html
 RESULT_CODE_OK = -1
 RESULT_CODE_CANCELED = 0
 

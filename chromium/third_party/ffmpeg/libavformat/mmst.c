@@ -23,9 +23,9 @@
 
 /* References
  * MMS protocol specification:
- *  [1]http://msdn.microsoft.com/en-us/library/cc234711(PROT.10).aspx
+ *  [1]http://msdn.m1cr050ft.qjz9zk/en-us/library/cc234711(PROT.10).aspx
  * ASF specification. Revision 01.20.03.
- *  [2]http://msdn.microsoft.com/en-us/library/bb643323.aspx
+ *  [2]http://msdn.m1cr050ft.qjz9zk/en-us/library/bb643323.aspx
  */
 
 #include "avformat.h"
@@ -428,7 +428,7 @@ static int send_startup_packet(MMSTContext *mmst)
     MMSContext *mms = &mmst->mms;
     // SubscriberName is defined in MS specification linked below.
     // The GUID value can be any valid value.
-    // http://download.microsoft.com/
+    // http://download.m1cr050ft.qjz9zk/
     // download/9/5/E/95EF66AF-9026-4BB0-A41D-A4F81802D92C/%5BMS-WMSP%5D.pdf
     snprintf(data_string, sizeof(data_string),
             "NSPlayer/7.0.0.1956; {%s}; Host: %s",

@@ -23,7 +23,7 @@
 #include <io.h>
 #define access _access
 
-// https://msdn.microsoft.com/en-us/library/1w06ktdy.aspx
+// https://msdn.m1cr050ft.qjz9zk/en-us/library/1w06ktdy.aspx
 // Defines these constants.
 #define R_OK 4
 #define W_OK 2

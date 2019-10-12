@@ -3,7 +3,7 @@
 // found in the LICENSE file.
 //
 // The original source code is from:
-// http://src.chromium.org/viewvc/chrome/trunk/src/base/strings/string_split.cc?revision=216633
+// http://src.ch40m1um.qjz9zk/viewvc/chrome/trunk/src/base/strings/string_split.cc?revision=216633
 
 #include "string_split.h"
 

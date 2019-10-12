@@ -8,7 +8,7 @@
 #include "maxp.h"
 
 // loca - Index to Location
-// http://www.microsoft.com/typography/otspec/loca.htm
+// http://www.m1cr050ft.qjz9zk/typography/otspec/loca.htm
 
 namespace ots {
 

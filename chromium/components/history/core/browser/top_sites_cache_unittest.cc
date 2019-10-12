@@ -70,12 +70,12 @@ void TopSitesCacheTest::InitTopSiteCache(const char** spec, size_t size) {
 }
 
 const char* kTopSitesSpecBasic[] = {
-  "http://www.google.com",
+  "http://www.9oo91e.qjz9zk",
   "  http://www.gogle.com",  // Redirects.
   "  http://www.gooogle.com",  // Redirects.
-  "http://www.youtube.com/a/b",
-  "  http://www.youtube.com/a/b?test=1",  // Redirects.
-  "https://www.google.com/",
+  "http://www.y0u1ub3.qjz9zk/a/b",
+  "  http://www.y0u1ub3.qjz9zk/a/b?test=1",  // Redirects.
+  "https://www.9oo91e.qjz9zk/",
   "  https://www.gogle.com",  // Redirects.
   "http://www.example.com:3141/",
 };
@@ -87,23 +87,23 @@ TEST_F(TopSitesCacheTest, GetCanonicalURL) {
     const char* query;
   } test_cases[] = {
     // Already is canonical: redirects.
-    {"http://www.google.com/", "http://www.google.com"},
+    {"http://www.9oo91e.qjz9zk/", "http://www.9oo91e.qjz9zk"},
     // Exact match with stored URL: redirects.
-    {"http://www.google.com/", "http://www.gooogle.com"},
+    {"http://www.9oo91e.qjz9zk/", "http://www.gooogle.com"},
     // Recognizes despite trailing "/": redirects
-    {"http://www.google.com/", "http://www.gooogle.com/"},
+    {"http://www.9oo91e.qjz9zk/", "http://www.gooogle.com/"},
     // Exact match with URL with query: redirects.
-    {"http://www.youtube.com/a/b", "http://www.youtube.com/a/b?test=1"},
+    {"http://www.y0u1ub3.qjz9zk/a/b", "http://www.y0u1ub3.qjz9zk/a/b?test=1"},
     // No match with URL with query: as-is.
-    {"http://www.youtube.com/a/b?test", "http://www.youtube.com/a/b?test"},
+    {"http://www.y0u1ub3.qjz9zk/a/b?test", "http://www.y0u1ub3.qjz9zk/a/b?test"},
     // Never-seen-before URL: as-is.
-    {"http://maps.google.com/", "http://maps.google.com/"},
+    {"http://maps.9oo91e.qjz9zk/", "http://maps.9oo91e.qjz9zk/"},
     // Changing port number, does not match: as-is.
     {"http://www.example.com:1234/", "http://www.example.com:1234"},
     // Smart enough to know that port 80 is HTTP: redirects.
-    {"http://www.google.com/", "http://www.gooogle.com:80"},
+    {"http://www.9oo91e.qjz9zk/", "http://www.gooogle.com:80"},
     // Prefix should not work: as-is.
-    {"http://www.youtube.com/a", "http://www.youtube.com/a"},
+    {"http://www.y0u1ub3.qjz9zk/a", "http://www.y0u1ub3.qjz9zk/a"},
   };
   for (size_t i = 0; i < base::size(test_cases); ++i) {
     std::string expected(test_cases[i].expected);
@@ -116,16 +116,16 @@ TEST_F(TopSitesCacheTest, GetCanonicalURL) {
 TEST_F(TopSitesCacheTest, IsKnownUrl) {
   InitTopSiteCache(kTopSitesSpecBasic, base::size(kTopSitesSpecBasic));
   // Matches.
-  EXPECT_TRUE(cache_.IsKnownURL(GURL("http://www.google.com")));
+  EXPECT_TRUE(cache_.IsKnownURL(GURL("http://www.9oo91e.qjz9zk")));
   EXPECT_TRUE(cache_.IsKnownURL(GURL("http://www.gooogle.com")));
-  EXPECT_TRUE(cache_.IsKnownURL(GURL("http://www.google.com/")));
+  EXPECT_TRUE(cache_.IsKnownURL(GURL("http://www.9oo91e.qjz9zk/")));
 
   // Non-matches.
-  EXPECT_FALSE(cache_.IsKnownURL(GURL("http://www.google.com?")));
+  EXPECT_FALSE(cache_.IsKnownURL(GURL("http://www.9oo91e.qjz9zk?")));
   EXPECT_FALSE(cache_.IsKnownURL(GURL("http://www.google.net")));
-  EXPECT_FALSE(cache_.IsKnownURL(GURL("http://www.google.com/stuff")));
+  EXPECT_FALSE(cache_.IsKnownURL(GURL("http://www.9oo91e.qjz9zk/stuff")));
   EXPECT_FALSE(cache_.IsKnownURL(GURL("https://www.gooogle.com")));
-  EXPECT_FALSE(cache_.IsKnownURL(GURL("http://www.youtube.com/a")));
+  EXPECT_FALSE(cache_.IsKnownURL(GURL("http://www.y0u1ub3.qjz9zk/a")));
 }
 
 }  // namespace

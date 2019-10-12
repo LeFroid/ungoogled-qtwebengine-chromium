@@ -28,7 +28,7 @@ class Quic(IntegrationTest):
       # of Chrome (M-59 and prior).
       t.AddChromeArg('--data-reduction-proxy-enable-quic-on-non-core-proxies')
 
-      t.LoadURL('http://check.googlezip.net/test.html')
+      t.LoadURL('http://check.9oo91e21p.qjz9zk/test.html')
       responses = t.GetHTTPResponses()
       self.assertEqual(2, len(responses))
       for response in responses:
@@ -50,7 +50,7 @@ class Quic(IntegrationTest):
       # of Chrome (M-59 and prior).
       t.AddChromeArg('--data-reduction-proxy-enable-quic-on-non-core-proxies')
 
-      t.LoadURL('http://check.googlezip.net/test.html')
+      t.LoadURL('http://check.9oo91e21p.qjz9zk/test.html')
       responses = t.GetHTTPResponses()
       self.assertEqual(2, len(responses))
       for response in responses:

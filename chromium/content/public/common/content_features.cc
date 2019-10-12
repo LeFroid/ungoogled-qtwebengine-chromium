@@ -11,7 +11,7 @@ namespace features {
 // All features in alphabetical order.
 
 // Enables the allowActivationDelegation attribute on iframes.
-// https://www.chromestatus.com/features/6025124331388928
+// https://www.ch40mestatus.qjz9zk/features/6025124331388928
 //
 // TODO(mustaq): Deprecated, see kUserActivationPostMessageTransfer.
 const base::Feature kAllowActivationDelegationAttr{
@@ -19,7 +19,7 @@ const base::Feature kAllowActivationDelegationAttr{
 
 // Enables content-initiated, main frame navigations to data URLs.
 // TODO(meacer): Remove when the deprecation is complete.
-//               https://www.chromestatus.com/feature/5669602927312896
+//               https://www.ch40mestatus.qjz9zk/feature/5669602927312896
 const base::Feature kAllowContentInitiatedDataUrlNavigations{
     "AllowContentInitiatedDataUrlNavigations",
     base::FEATURE_DISABLED_BY_DEFAULT};
@@ -494,17 +494,17 @@ const base::Feature kSignedExchangePrefetchCacheForNavigations{
     base::FEATURE_DISABLED_BY_DEFAULT};
 
 // Signed Exchange Reporting for distributors
-// https://www.chromestatus.com/features/5687904902840320
+// https://www.ch40mestatus.qjz9zk/features/5687904902840320
 const base::Feature kSignedExchangeReportingForDistributors{
     "SignedExchangeReportingForDistributors", base::FEATURE_ENABLED_BY_DEFAULT};
 
 // Subresource prefetching+loading via Signed HTTP Exchange
-// https://www.chromestatus.com/features/5126805474246656
+// https://www.ch40mestatus.qjz9zk/features/5126805474246656
 const base::Feature kSignedExchangeSubresourcePrefetch{
     "SignedExchangeSubresourcePrefetch", base::FEATURE_DISABLED_BY_DEFAULT};
 
 // Origin-Signed HTTP Exchanges (for WebPackage Loading)
-// https://www.chromestatus.com/features/5745285984681984
+// https://www.ch40mestatus.qjz9zk/features/5745285984681984
 const base::Feature kSignedHTTPExchange{"SignedHTTPExchange",
                                         base::FEATURE_ENABLED_BY_DEFAULT};
 
@@ -525,7 +525,7 @@ const base::Feature kSpareRendererForSitePerProcess{
     "SpareRendererForSitePerProcess", base::FEATURE_ENABLED_BY_DEFAULT};
 
 // Enables StaleWhileRevalidate support.
-// https://www.chromestatus.com/features/5050913014153216
+// https://www.ch40mestatus.qjz9zk/features/5050913014153216
 const base::Feature kStaleWhileRevalidate{"StaleWhileRevalidate",
                                           base::FEATURE_ENABLED_BY_DEFAULT};
 

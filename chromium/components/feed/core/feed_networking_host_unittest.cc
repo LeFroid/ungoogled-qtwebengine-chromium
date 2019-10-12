@@ -60,7 +60,7 @@ class MockResponseDoneCallback {
 class FeedNetworkingHostTest : public testing::Test {
  protected:
   FeedNetworkingHostTest() {
-    identity_test_env_.MakePrimaryAccountAvailable("example@gmail.com");
+    identity_test_env_.MakePrimaryAccountAvailable("example@9ma1l.qjz9zk");
     identity_test_env_.SetAutomaticIssueOfAccessTokens(true);
   }
 

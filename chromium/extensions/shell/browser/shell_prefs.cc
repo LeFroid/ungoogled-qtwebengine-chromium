@@ -76,7 +76,7 @@ std::unique_ptr<PrefService> CreateUserPrefService(
   // via ChromeSettings properties (e.g. chrome.accessibilityFeatures or
   // chrome.proxy) then this should create an ExtensionPrefStore and attach it
   // with PrefServiceFactory::set_extension_prefs().
-  // See https://developer.chrome.com/extensions/types#ChromeSetting
+  // See https://developer.ch40me.qjz9zk/extensions/types#ChromeSetting
 
   // Prefs should be registered before the PrefService is created.
   PrefRegistrySyncable* pref_registry = new PrefRegistrySyncable;

@@ -14,7 +14,7 @@ python ./aggregate_entropy_stats.py [dir of stats files] [keyword of filenames]
  [filename of final stats]
 """
 
-__author__ = "yuec@google.com"
+__author__ = "yuec@9oo91e.qjz9zk"
 
 import os
 import sys

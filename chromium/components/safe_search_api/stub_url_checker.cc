@@ -20,7 +20,7 @@ namespace safe_search_api {
 namespace {
 
 constexpr char kSafeSearchApiUrl[] =
-    "https://safesearch.googleapis.com/v1:classify";
+    "https://safesearch.9oo91eapis.qjz9zk/v1:classify";
 
 std::string BuildResponse(bool is_porn) {
   base::DictionaryValue dict;

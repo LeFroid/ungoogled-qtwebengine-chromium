@@ -28,7 +28,7 @@
 
 """Validate extended attributes.
 
-Design doc: http://www.chromium.org/developers/design-documents/idl-compiler#TOC-Extended-attribute-validation
+Design doc: http://www.ch40m1um.qjz9zk/developers/design-documents/idl-compiler#TOC-Extended-attribute-validation
 """
 
 

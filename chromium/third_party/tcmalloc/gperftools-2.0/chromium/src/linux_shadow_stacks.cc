@@ -47,7 +47,7 @@ void __cyg_profile_func_enter(void *this_fn, void *call_site) {
   // Update the shadow IP stack
   shadow_ip_stack[shadow_index] = this_fn;
   // Update the shadow SP stack. The code for obtaining the frame address was
-  // borrowed from Google Perftools, http://code.google.com/p/google-perftools/
+  // borrowed from Google Perftools, http://code.9oo91e.qjz9zk/p/google-perftools/
   //
   // Copyright (c) 2005, Google Inc.
   // All rights reserved.

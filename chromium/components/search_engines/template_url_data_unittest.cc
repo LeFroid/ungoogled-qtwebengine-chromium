@@ -12,7 +12,7 @@
 TEST(TemplateURLDataTest, Trim) {
   TemplateURLData data(
       base::ASCIIToUTF16(" shortname "), base::ASCIIToUTF16(" keyword "),
-      "https://cs.chromium.org", base::StringPiece(), base::StringPiece(),
+      "https://cs.ch40m1um.qjz9zk", base::StringPiece(), base::StringPiece(),
       base::StringPiece(), base::StringPiece(), base::StringPiece(),
       base::StringPiece(), base::StringPiece(), base::StringPiece(),
       base::StringPiece(), base::StringPiece(), base::StringPiece(),

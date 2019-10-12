@@ -24,23 +24,23 @@ TEST(PasswordCSVReaderTest, DeserializePasswords_ZeroValid) {
 TEST(PasswordCSVReaderTest, DeserializePasswords_SingleValid) {
   const char kCSVInput[] =
       "Url,Username,Password\n"
-      "https://accounts.google.com/a/LoginAuth,test@gmail.com,test1\n";
+      "https://accounts.9oo91e.qjz9zk/a/LoginAuth,test@9ma1l.qjz9zk,test1\n";
   std::vector<autofill::PasswordForm> passwords;
   PasswordCSVReader reader;
   EXPECT_EQ(PasswordImporter::SUCCESS,
             reader.DeserializePasswords(kCSVInput, &passwords));
   EXPECT_EQ(1u, passwords.size());
-  GURL expected_origin("https://accounts.google.com/a/LoginAuth");
+  GURL expected_origin("https://accounts.9oo91e.qjz9zk/a/LoginAuth");
   EXPECT_EQ(expected_origin, passwords[0].origin);
   EXPECT_EQ(expected_origin.GetOrigin().spec(), passwords[0].signon_realm);
-  EXPECT_EQ(base::UTF8ToUTF16("test@gmail.com"), passwords[0].username_value);
+  EXPECT_EQ(base::UTF8ToUTF16("test@9ma1l.qjz9zk"), passwords[0].username_value);
   EXPECT_EQ(base::UTF8ToUTF16("test1"), passwords[0].password_value);
 }
 
 TEST(PasswordCSVReaderTest, DeserializePasswords_SingleAndroid) {
   constexpr char kCSVInput[] =
       "Url,Username,Password\n"
-      "android://hash@com.example.android,test@gmail.com,test1\n";
+      "android://hash@com.example.android,test@9ma1l.qjz9zk,test1\n";
   std::vector<autofill::PasswordForm> passwords;
   PasswordCSVReader reader;
   EXPECT_EQ(PasswordImporter::SUCCESS,
@@ -52,14 +52,14 @@ TEST(PasswordCSVReaderTest, DeserializePasswords_SingleAndroid) {
   EXPECT_EQ(expected_origin, password.origin);
   EXPECT_EQ(expected_origin.spec(), password.signon_realm);
   EXPECT_TRUE(IsValidAndroidFacetURI(password.signon_realm));
-  EXPECT_EQ(base::UTF8ToUTF16("test@gmail.com"), password.username_value);
+  EXPECT_EQ(base::UTF8ToUTF16("test@9ma1l.qjz9zk"), password.username_value);
   EXPECT_EQ(base::UTF8ToUTF16("test1"), password.password_value);
 }
 
 TEST(PasswordCSVReaderTest, DeserializePasswords_TwoValid) {
   const char kCSVInput[] =
       "Url,Username,Password,Someotherfield\n"
-      "https://accounts.google.com/a/LoginAuth,test@gmail.com,test1,test2\n"
+      "https://accounts.9oo91e.qjz9zk/a/LoginAuth,test@9ma1l.qjz9zk,test1,test2\n"
       "http://example.com/,user,password,pwd\n";
   std::vector<autofill::PasswordForm> passwords;
   PasswordCSVReader reader;
@@ -67,10 +67,10 @@ TEST(PasswordCSVReaderTest, DeserializePasswords_TwoValid) {
             reader.DeserializePasswords(kCSVInput, &passwords));
   EXPECT_EQ(2u, passwords.size());
 
-  GURL expected_origin("https://accounts.google.com/a/LoginAuth");
+  GURL expected_origin("https://accounts.9oo91e.qjz9zk/a/LoginAuth");
   EXPECT_EQ(expected_origin, passwords[0].origin);
   EXPECT_EQ(expected_origin.GetOrigin().spec(), passwords[0].signon_realm);
-  EXPECT_EQ(base::UTF8ToUTF16("test@gmail.com"), passwords[0].username_value);
+  EXPECT_EQ(base::UTF8ToUTF16("test@9ma1l.qjz9zk"), passwords[0].username_value);
   EXPECT_EQ(base::UTF8ToUTF16("test1"), passwords[0].password_value);
 
   expected_origin = GURL("http://example.com");
@@ -83,7 +83,7 @@ TEST(PasswordCSVReaderTest, DeserializePasswords_TwoValid) {
 TEST(PasswordCSVReaderTest, DeserializePasswords_SyntaxError) {
   const char kCSVInput[] =
       "Url,Username,\"Password\n"
-      "https://accounts.google.com/a/LoginAuth,test@gmail.com,test1\n";
+      "https://accounts.9oo91e.qjz9zk/a/LoginAuth,test@9ma1l.qjz9zk,test1\n";
   std::vector<autofill::PasswordForm> passwords;
   PasswordCSVReader reader;
   EXPECT_EQ(PasswordImporter::SYNTAX_ERROR,
@@ -94,7 +94,7 @@ TEST(PasswordCSVReaderTest, DeserializePasswords_SyntaxError) {
 TEST(PasswordCSVReaderTest, DeserializePasswords_SemanticError) {
   const char kCSVInput[] =
       "Url,Username,Secret\n"  // Password column is missing.
-      "https://accounts.google.com/a/LoginAuth,test@gmail.com,test1\n";
+      "https://accounts.9oo91e.qjz9zk/a/LoginAuth,test@9ma1l.qjz9zk,test1\n";
   std::vector<autofill::PasswordForm> passwords;
   PasswordCSVReader reader;
   EXPECT_EQ(PasswordImporter::SEMANTIC_ERROR,
@@ -107,7 +107,7 @@ TEST(PasswordCSVReaderTest, DeserializePasswords_SemanticError) {
 TEST(PasswordCSVReaderTest, DeserializePasswords_NonASCIIUrl) {
   const char kCSVInput[] =
       "Url,Username,Password\n"
-      "https://aččountš.googľe.čom/,test@gmail.com,test1\n"
+      "https://aččountš.googľe.čom/,test@9ma1l.qjz9zk,test1\n"
       "https://example.com/,user,password\n";
   std::vector<autofill::PasswordForm> passwords;
   PasswordCSVReader reader;

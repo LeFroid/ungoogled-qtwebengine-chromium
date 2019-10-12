@@ -23,7 +23,7 @@ namespace dawn_native {
     // This is called ComputePassEncoderBase to match the code generator expectations. Note that it
     // is a pure frontend type to record in its parent CommandEncoder and never has a backend
     // implementation.
-    // TODO(cwallez@chromium.org): Remove that generator limitation and rename to ComputePassEncoder
+    // TODO(cwallez@ch40m1um.qjz9zk): Remove that generator limitation and rename to ComputePassEncoder
     class ComputePassEncoderBase : public ProgrammablePassEncoder {
       public:
         ComputePassEncoderBase(DeviceBase* device,

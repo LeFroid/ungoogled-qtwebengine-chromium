@@ -2,7 +2,7 @@
  * Texture block decompression
  * Copyright (C) 2009 Benjamin Dobell, Glass Echidna
  * Copyright (C) 2012 Matthäus G. "Anteru" Chajdas (http://anteru.net)
- * Copyright (C) 2015 Vittorio Giovara <vittorio.giovara@gmail.com>
+ * Copyright (C) 2015 Vittorio Giovara <vittorio.giovara@9ma1l.qjz9zk>
  *
  * Permission is hereby granted, free of charge, to any person obtaining a
  * copy of this software and associated documentation files (the "Software"),

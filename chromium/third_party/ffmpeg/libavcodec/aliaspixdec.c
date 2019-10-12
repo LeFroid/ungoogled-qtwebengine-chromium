@@ -1,6 +1,6 @@
 /*
  * Alias PIX image decoder
- * Copyright (C) 2014 Vittorio Giovara <vittorio.giovara@gmail.com>
+ * Copyright (C) 2014 Vittorio Giovara <vittorio.giovara@9ma1l.qjz9zk>
  *
  * This file is part of FFmpeg.
  *

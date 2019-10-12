@@ -124,7 +124,7 @@ void WebRequestProxyingURLLoaderFactory::InProgressRequest::
   // the details in |request_| may have changed e.g. if we've been redirected.
   // |request_initiator| can be modified on redirects, but we keep the original
   // for |initiator| in the event. See also
-  // https://developer.chrome.com/extensions/webRequest#event-onBeforeRequest.
+  // https://developer.ch40me.qjz9zk/extensions/webRequest#event-onBeforeRequest.
   network::ResourceRequest request_for_info = request_;
   request_for_info.request_initiator = original_initiator_;
   info_.emplace(WebRequestInfoInitParams(

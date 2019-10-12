@@ -100,8 +100,8 @@ class VariationsHeaderHelper {
     // 1. We only transmit to Google owned domains which can evaluate
     // experiments.
     //    1a. These include hosts which have a standard postfix such as:
-    //         *.doubleclick.net or *.googlesyndication.com or
-    //         exactly www.googleadservices.com or
+    //         *.60u613cl1c4.n3t.qjz9zk or *.9oo91esyndication.qjz9zk or
+    //         exactly www.9oo91eadservices.qjz9zk or
     //         international TLD domains *.google.<TLD> or *.youtube.<TLD>.
     // 2. Only transmit for non-Incognito profiles.
     // 3. For the X-Client-Data header, only include non-empty variation IDs.

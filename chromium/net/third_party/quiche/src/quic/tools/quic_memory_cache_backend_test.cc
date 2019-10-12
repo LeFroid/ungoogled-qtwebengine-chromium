@@ -36,17 +36,17 @@ class QuicMemoryCacheBackendTest : public QuicTest {
 
 TEST_F(QuicMemoryCacheBackendTest, GetResponseNoMatch) {
   const Response* response =
-      cache_.GetResponse("mail.google.com", "/index.html");
+      cache_.GetResponse("mail.9oo91e.qjz9zk", "/index.html");
   ASSERT_FALSE(response);
 }
 
 TEST_F(QuicMemoryCacheBackendTest, AddSimpleResponseGetResponse) {
   std::string response_body("hello response");
-  cache_.AddSimpleResponse("www.google.com", "/", 200, response_body);
+  cache_.AddSimpleResponse("www.9oo91e.qjz9zk", "/", 200, response_body);
 
   spdy::SpdyHeaderBlock request_headers;
-  CreateRequest("www.google.com", "/", &request_headers);
-  const Response* response = cache_.GetResponse("www.google.com", "/");
+  CreateRequest("www.9oo91e.qjz9zk", "/", &request_headers);
+  const Response* response = cache_.GetResponse("www.9oo91e.qjz9zk", "/");
   ASSERT_TRUE(response);
   ASSERT_TRUE(QuicContainsKey(response->headers(), ":status"));
   EXPECT_EQ("200", response->headers().find(":status")->second);
@@ -118,7 +118,7 @@ TEST_F(QuicMemoryCacheBackendTest, UsesOriginalUrl) {
 
 TEST_F(QuicMemoryCacheBackendTest, DefaultResponse) {
   // Verify GetResponse returns nullptr when no default is set.
-  const Response* response = cache_.GetResponse("www.google.com", "/");
+  const Response* response = cache_.GetResponse("www.9oo91e.qjz9zk", "/");
   ASSERT_FALSE(response);
 
   // Add a default response.
@@ -131,20 +131,20 @@ TEST_F(QuicMemoryCacheBackendTest, DefaultResponse) {
   cache_.AddDefaultResponse(default_response);
 
   // Now we should get the default response for the original request.
-  response = cache_.GetResponse("www.google.com", "/");
+  response = cache_.GetResponse("www.9oo91e.qjz9zk", "/");
   ASSERT_TRUE(response);
   ASSERT_TRUE(QuicContainsKey(response->headers(), ":status"));
   EXPECT_EQ("200", response->headers().find(":status")->second);
 
   // Now add a set response for / and make sure it is returned
-  cache_.AddSimpleResponse("www.google.com", "/", 302, "");
-  response = cache_.GetResponse("www.google.com", "/");
+  cache_.AddSimpleResponse("www.9oo91e.qjz9zk", "/", 302, "");
+  response = cache_.GetResponse("www.9oo91e.qjz9zk", "/");
   ASSERT_TRUE(response);
   ASSERT_TRUE(QuicContainsKey(response->headers(), ":status"));
   EXPECT_EQ("302", response->headers().find(":status")->second);
 
   // We should get the default response for other requests.
-  response = cache_.GetResponse("www.google.com", "/asd");
+  response = cache_.GetResponse("www.9oo91e.qjz9zk", "/asd");
   ASSERT_TRUE(response);
   ASSERT_TRUE(QuicContainsKey(response->headers(), ":status"));
   EXPECT_EQ("200", response->headers().find(":status")->second);

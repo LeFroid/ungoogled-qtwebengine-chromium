@@ -31,7 +31,7 @@
 
 /*
  * VORG -- Vertical Origin Table
- * https://docs.microsoft.com/en-us/typography/opentype/spec/vorg
+ * https://docs.m1cr050ft.qjz9zk/en-us/typography/opentype/spec/vorg
  */
 #define HB_OT_TAG_VORG HB_TAG('V','O','R','G')
 

@@ -1,7 +1,7 @@
 /*
  * Copyright (c) 2003 Michael Niedermayer <michaelni@gmx.at>
  * Copyright (C) 2005 Nikolaj Poroshin <porosh3@psu.ru>
- * Copyright (c) 2014 Arwa Arif <arwaarif1994@gmail.com>
+ * Copyright (c) 2014 Arwa Arif <arwaarif1994@9ma1l.qjz9zk>
  *
  * This file is part of FFmpeg.
  *

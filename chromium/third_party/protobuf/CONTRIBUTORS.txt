@@ -2,86 +2,86 @@ This file contains a list of people who have made large contributions
 to the public version of Protocol Buffers.
 
 Original Protocol Buffers design and implementation:
-  Sanjay Ghemawat <sanjay@google.com>
-  Jeff Dean <jeff@google.com>
-  Daniel Dulitz <daniel@google.com>
+  Sanjay Ghemawat <sanjay@9oo91e.qjz9zk>
+  Jeff Dean <jeff@9oo91e.qjz9zk>
+  Daniel Dulitz <daniel@9oo91e.qjz9zk>
   Craig Silverstein
-  Paul Haahr <haahr@google.com>
-  Corey Anderson <corin@google.com>
+  Paul Haahr <haahr@9oo91e.qjz9zk>
+  Corey Anderson <corin@9oo91e.qjz9zk>
   (and many others)
 
 Proto2 C++ and Java primary author:
-  Kenton Varda <kenton@google.com>
+  Kenton Varda <kenton@9oo91e.qjz9zk>
 
 Proto2 Python primary authors:
-  Will Robinson <robinson@google.com>
-  Petar Petrov <petar@google.com>
+  Will Robinson <robinson@9oo91e.qjz9zk>
+  Petar Petrov <petar@9oo91e.qjz9zk>
 
 Java Nano primary authors:
-  Brian Duff <bduff@google.com>
-  Tom Chao <chaot@google.com>
-  Max Cai <maxtroy@google.com>
-  Ulas Kirazci <ulas@google.com>
+  Brian Duff <bduff@9oo91e.qjz9zk>
+  Tom Chao <chaot@9oo91e.qjz9zk>
+  Max Cai <maxtroy@9oo91e.qjz9zk>
+  Ulas Kirazci <ulas@9oo91e.qjz9zk>
 
 Large code contributions:
-  Jason Hsueh <jasonh@google.com>
-  Joseph Schorr <jschorr@google.com>
-  Wenbo Zhu <wenboz@google.com>
+  Jason Hsueh <jasonh@9oo91e.qjz9zk>
+  Joseph Schorr <jschorr@9oo91e.qjz9zk>
+  Wenbo Zhu <wenboz@9oo91e.qjz9zk>
 
 Large quantity of code reviews:
-  Scott Bruce <sbruce@google.com>
+  Scott Bruce <sbruce@9oo91e.qjz9zk>
   Frank Yellin
-  Neal Norwitz <nnorwitz@google.com>
-  Jeffrey Yasskin <jyasskin@google.com>
-  Ambrose Feinstein <ambrose@google.com>
+  Neal Norwitz <nnorwitz@9oo91e.qjz9zk>
+  Jeffrey Yasskin <jyasskin@9oo91e.qjz9zk>
+  Ambrose Feinstein <ambrose@9oo91e.qjz9zk>
 
 Documentation:
-  Lisa Carey <lcarey@google.com>
+  Lisa Carey <lcarey@9oo91e.qjz9zk>
 
 Maven packaging:
-  Gregory Kick <gak@google.com>
+  Gregory Kick <gak@9oo91e.qjz9zk>
 
 Patch contributors:
-  Kevin Ko <kevin.s.ko@gmail.com>
+  Kevin Ko <kevin.s.ko@9ma1l.qjz9zk>
     * Small patch to handle trailing slashes in --proto_path flag.
   Johan Euphrosine <proppy@aminche.com>
     * Small patch to fix Python CallMethod().
   Ulrich Kunitz <kune@deine-taler.de>
     * Small optimizations to Python serialization.
-  Leandro Lucarella <llucax@gmail.com>
+  Leandro Lucarella <llucax@9ma1l.qjz9zk>
     * VI syntax highlighting tweaks.
     * Fix compiler to not make output executable.
-  Dilip Joseph <dilip.antony.joseph@gmail.com>
+  Dilip Joseph <dilip.antony.joseph@9ma1l.qjz9zk>
     * Heuristic detection of sub-messages when printing unknown fields in
       text format.
-  Brian Atkinson <nairb774@gmail.com>
+  Brian Atkinson <nairb774@9ma1l.qjz9zk>
     * Added @Override annotation to generated Java code where appropriate.
   Vincent Choinière <Choiniere.Vincent@hydro.qc.ca>
     * Tru64 support.
-  Monty Taylor <monty.taylor@gmail.com>
+  Monty Taylor <monty.taylor@9ma1l.qjz9zk>
     * Solaris 10 + Sun Studio fixes.
-  Alek Storm <alek.storm@gmail.com>
+  Alek Storm <alek.storm@9ma1l.qjz9zk>
     * Slicing support for repeated scalar fields for the Python API.
-  Oleg Smolsky <oleg.smolsky@gmail.com>
+  Oleg Smolsky <oleg.smolsky@9ma1l.qjz9zk>
     * MS Visual Studio error format option.
     * Detect unordered_map in stl_hash.m4.
-  Brian Olson <brianolson@google.com>
+  Brian Olson <brianolson@9oo91e.qjz9zk>
     * gzip/zlib I/O support.
   Michael Poole <mdpoole@troilus.org>
     * Fixed warnings about generated constructors not explicitly initializing
       all fields (only present with certain compiler settings).
     * Added generation of field number constants.
-  Wink Saville <wink@google.com>
+  Wink Saville <wink@9oo91e.qjz9zk>
     * Fixed initialization ordering problem in logging code.
   Will Pierce <willp@nuclei.com>
     * Small patch improving performance of in Python serialization.
   Alexandre Vassalotti <alexandre@peadrop.com>
     * Emacs mode for Protocol Buffers (editors/protobuf-mode.el).
-  Scott Stafford <scott.stafford@gmail.com>
+  Scott Stafford <scott.stafford@9ma1l.qjz9zk>
     * Added Swap(), SwapElements(), and RemoveLast() to Reflection interface.
   Alexander Melnikov <alm@sibmail.ru>
     * HPUX support.
-  Oliver Jowett <oliver.jowett@gmail.com>
+  Oliver Jowett <oliver.jowett@9ma1l.qjz9zk>
     * Detect whether zlib is new enough in configure script.
     * Fixes for Solaris 10 32/64-bit confusion.
   Evan Jones <evanj@mit.edu>
@@ -90,9 +90,9 @@ Patch contributors:
       once per string per serialization call.
     * Clean up some Java warnings.
     * Fix bug with permanent callbacks that delete themselves when run.
-  Michael Kucharski <m.kucharski@gmail.com>
+  Michael Kucharski <m.kucharski@9ma1l.qjz9zk>
     * Added CodedInputStream.getTotalBytesRead().
-  Kacper Kowalik <xarthisius.kk@gmail.com>
+  Kacper Kowalik <xarthisius.kk@9ma1l.qjz9zk>
     * Fixed m4/acx_pthread.m4 problem for some Linux distributions.
   William Orr <will@worrbase.com>
     * Fixed detection of sched_yield on Solaris.

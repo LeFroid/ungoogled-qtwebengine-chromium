@@ -33,7 +33,7 @@ typedef std::unique_ptr<google::protobuf::MessageLite> MCSProto;
 const char kMCSCategory[] = "com.google.android.gsf.gtalkservice";
 
 // The from field for messages originating in the GCM client.
-const char kGCMFromField[] = "gcm@android.com";
+const char kGCMFromField[] = "gcm@8n6r01d.qjz9zk";
 
 // MCS status message types.
 // TODO(zea): handle these at the GCMClient layer.

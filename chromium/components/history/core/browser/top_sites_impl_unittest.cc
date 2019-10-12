@@ -44,7 +44,7 @@ namespace {
 
 const char kApplicationScheme[] = "application";
 const char kPrepopulatedPageURL[] =
-    "http://www.google.com/int/chrome/welcome.html";
+    "http://www.9oo91e.qjz9zk/int/chrome/welcome.html";
 
 // Returns whether |url| can be added to history.
 bool MockCanAddURLToHistory(const GURL& url) {
@@ -311,11 +311,11 @@ void AppendMostVisitedURLwithTitle(const GURL& url,
 // Tests GetCanonicalURL.
 TEST_F(TopSitesImplTest, GetCanonicalURL) {
   // Have two chains:
-  //   google.com -> www.google.com
-  //   news.google.com (no redirects)
-  GURL news("http://news.google.com/");
-  GURL source("http://google.com/");
-  GURL dest("http://www.google.com/");
+  //   9oo91e.qjz9zk -> www.9oo91e.qjz9zk
+  //   news.9oo91e.qjz9zk (no redirects)
+  GURL news("http://news.9oo91e.qjz9zk/");
+  GURL source("http://9oo91e.qjz9zk/");
+  GURL dest("http://www.9oo91e.qjz9zk/");
 
   std::vector<MostVisitedURL> most_visited;
   AppendMostVisitedURLWithRedirect(source, dest, &most_visited);
@@ -441,8 +441,8 @@ TEST_F(TopSitesImplTest, DiffMostVisited) {
 
 // Tests GetMostVisitedURLs.
 TEST_F(TopSitesImplTest, GetMostVisited) {
-  GURL news("http://news.google.com/");
-  GURL google("http://google.com/");
+  GURL news("http://news.9oo91e.qjz9zk/");
+  GURL google("http://9oo91e.qjz9zk/");
 
   AddPageToHistory(news);
   AddPageToHistory(google);
@@ -503,9 +503,9 @@ TEST_F(TopSitesImplTest, SaveToDB) {
   MostVisitedURL url;
   GURL asdf_url("http://asdf.com");
   base::string16 asdf_title(base::ASCIIToUTF16("ASDF"));
-  GURL google_url("http://google.com");
+  GURL google_url("http://9oo91e.qjz9zk");
   base::string16 google_title(base::ASCIIToUTF16("Google"));
-  GURL news_url("http://news.google.com");
+  GURL news_url("http://news.9oo91e.qjz9zk");
   base::string16 news_title(base::ASCIIToUTF16("Google News"));
 
   // Add asdf_url to history.
@@ -553,11 +553,11 @@ TEST_F(TopSitesImplTest, RealDatabase) {
   MostVisitedURL url;
   GURL asdf_url("http://asdf.com");
   base::string16 asdf_title(base::ASCIIToUTF16("ASDF"));
-  GURL google1_url("http://google.com");
-  GURL google2_url("http://google.com/redirect");
-  GURL google3_url("http://www.google.com");
+  GURL google1_url("http://9oo91e.qjz9zk");
+  GURL google2_url("http://9oo91e.qjz9zk/redirect");
+  GURL google3_url("http://www.9oo91e.qjz9zk");
   base::string16 google_title(base::ASCIIToUTF16("Google"));
-  GURL news_url("http://news.google.com");
+  GURL news_url("http://news.9oo91e.qjz9zk");
   base::string16 news_title(base::ASCIIToUTF16("Google News"));
 
   url.url = asdf_url;
@@ -611,11 +611,11 @@ TEST_F(TopSitesImplTest, RealDatabase) {
 }
 
 TEST_F(TopSitesImplTest, DeleteNotifications) {
-  GURL google1_url("http://google.com");
-  GURL google2_url("http://google.com/redirect");
-  GURL google3_url("http://www.google.com");
+  GURL google1_url("http://9oo91e.qjz9zk");
+  GURL google2_url("http://9oo91e.qjz9zk/redirect");
+  GURL google3_url("http://www.9oo91e.qjz9zk");
   base::string16 google_title(base::ASCIIToUTF16("Google"));
-  GURL news_url("http://news.google.com");
+  GURL news_url("http://news.9oo91e.qjz9zk");
   base::string16 news_title(base::ASCIIToUTF16("Google News"));
 
   AddPageToHistory(google1_url, google_title);
@@ -807,18 +807,18 @@ TEST_F(TopSitesImplTest, BlacklistingWithoutPrepopulated) {
   url.url = GURL("http://bbc.com/");
   url.redirects.push_back(url.url);
   pages.push_back(url);
-  url1.url = GURL("http://google.com/");
+  url1.url = GURL("http://9oo91e.qjz9zk/");
   url1.redirects.push_back(url1.url);
   pages.push_back(url1);
 
   SetTopSites(pages);
   EXPECT_FALSE(top_sites()->IsBlacklisted(GURL("http://bbc.com/")));
 
-  // Blacklist google.com.
-  top_sites()->AddBlacklistedURL(GURL("http://google.com/"));
+  // Blacklist 9oo91e.qjz9zk.
+  top_sites()->AddBlacklistedURL(GURL("http://9oo91e.qjz9zk/"));
 
   EXPECT_TRUE(top_sites()->HasBlacklistedItems());
-  EXPECT_TRUE(top_sites()->IsBlacklisted(GURL("http://google.com/")));
+  EXPECT_TRUE(top_sites()->IsBlacklisted(GURL("http://9oo91e.qjz9zk/")));
   EXPECT_FALSE(top_sites()->IsBlacklisted(GURL("http://bbc.com/")));
 
   // Make sure the blacklisted site isn't returned in the results.
@@ -837,16 +837,16 @@ TEST_F(TopSitesImplTest, BlacklistingWithoutPrepopulated) {
   }
 
   // Mark google as no longer blacklisted.
-  top_sites()->RemoveBlacklistedURL(GURL("http://google.com/"));
+  top_sites()->RemoveBlacklistedURL(GURL("http://9oo91e.qjz9zk/"));
   EXPECT_FALSE(top_sites()->HasBlacklistedItems());
-  EXPECT_FALSE(top_sites()->IsBlacklisted(GURL("http://google.com/")));
+  EXPECT_FALSE(top_sites()->IsBlacklisted(GURL("http://9oo91e.qjz9zk/")));
 
   // Make sure google is returned now.
   {
     TopSitesQuerier q;
     q.QueryTopSites(top_sites(), true);
     EXPECT_EQ("http://bbc.com/", q.urls()[0].url.spec());
-    EXPECT_EQ("http://google.com/", q.urls()[1].url.spec());
+    EXPECT_EQ("http://9oo91e.qjz9zk/", q.urls()[1].url.spec());
   }
 
   // Remove all blacklisted sites.
@@ -857,7 +857,7 @@ TEST_F(TopSitesImplTest, BlacklistingWithoutPrepopulated) {
     TopSitesQuerier q;
     q.QueryTopSites(top_sites(), true);
     EXPECT_EQ("http://bbc.com/", q.urls()[0].url.spec());
-    EXPECT_EQ("http://google.com/", q.urls()[1].url.spec());
+    EXPECT_EQ("http://9oo91e.qjz9zk/", q.urls()[1].url.spec());
     ASSERT_NO_FATAL_FAILURE(ContainsPrepopulatePages(q, 2));
   }
 }
@@ -871,21 +871,21 @@ TEST_F(TopSitesImplTest, BlacklistingWithPrepopulated) {
   url.url = GURL("http://bbc.com/");
   url.redirects.push_back(url.url);
   pages.push_back(url);
-  url1.url = GURL("http://google.com/");
+  url1.url = GURL("http://9oo91e.qjz9zk/");
   url1.redirects.push_back(url1.url);
   pages.push_back(url1);
 
   SetTopSites(pages);
   EXPECT_FALSE(top_sites()->IsBlacklisted(GURL("http://bbc.com/")));
 
-  // Blacklist google.com.
-  top_sites()->AddBlacklistedURL(GURL("http://google.com/"));
+  // Blacklist 9oo91e.qjz9zk.
+  top_sites()->AddBlacklistedURL(GURL("http://9oo91e.qjz9zk/"));
 
   DCHECK_GE(GetPrepopulatedPages().size(), 1u);
   GURL prepopulate_url = GetPrepopulatedPages()[0].most_visited.url;
 
   EXPECT_TRUE(top_sites()->HasBlacklistedItems());
-  EXPECT_TRUE(top_sites()->IsBlacklisted(GURL("http://google.com/")));
+  EXPECT_TRUE(top_sites()->IsBlacklisted(GURL("http://9oo91e.qjz9zk/")));
   EXPECT_FALSE(top_sites()->IsBlacklisted(GURL("http://bbc.com/")));
   EXPECT_FALSE(top_sites()->IsBlacklisted(prepopulate_url));
 
@@ -923,9 +923,9 @@ TEST_F(TopSitesImplTest, BlacklistingWithPrepopulated) {
   }
 
   // Mark google as no longer blacklisted.
-  top_sites()->RemoveBlacklistedURL(GURL("http://google.com/"));
+  top_sites()->RemoveBlacklistedURL(GURL("http://9oo91e.qjz9zk/"));
   EXPECT_TRUE(top_sites()->HasBlacklistedItems());
-  EXPECT_FALSE(top_sites()->IsBlacklisted(GURL("http://google.com/")));
+  EXPECT_FALSE(top_sites()->IsBlacklisted(GURL("http://9oo91e.qjz9zk/")));
 
   // Make sure google is returned now.
   {
@@ -933,7 +933,7 @@ TEST_F(TopSitesImplTest, BlacklistingWithPrepopulated) {
     q.QueryTopSites(top_sites(), true);
     ASSERT_EQ(2u + GetPrepopulatedPages().size() - 1, q.urls().size());
     EXPECT_EQ("http://bbc.com/", q.urls()[0].url.spec());
-    EXPECT_EQ("http://google.com/", q.urls()[1].url.spec());
+    EXPECT_EQ("http://9oo91e.qjz9zk/", q.urls()[1].url.spec());
     // Android has only one prepopulated page which has been blacklisted, so
     // only 2 urls are returned.
     if (q.urls().size() > 2)
@@ -951,7 +951,7 @@ TEST_F(TopSitesImplTest, BlacklistingWithPrepopulated) {
     q.QueryTopSites(top_sites(), true);
     ASSERT_EQ(2u + GetPrepopulatedPages().size(), q.urls().size());
     EXPECT_EQ("http://bbc.com/", q.urls()[0].url.spec());
-    EXPECT_EQ("http://google.com/", q.urls()[1].url.spec());
+    EXPECT_EQ("http://9oo91e.qjz9zk/", q.urls()[1].url.spec());
     ASSERT_NO_FATAL_FAILURE(ContainsPrepopulatePages(q, 2));
   }
 }

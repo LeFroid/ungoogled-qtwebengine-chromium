@@ -768,7 +768,7 @@ void RenderWidget::OnSynchronizeVisualProperties(
   // browser windows (on Windows OS) and thus would be the same for all
   // RenderWidgets, so clobbering each other works out since only the HDR bit is
   // used. See https://crbug.com/803451 and
-  // https://chromium-review.googlesource.com/c/chromium/src/+/852912/15#message-68bbd3e25c3b421a79cd028b2533629527d21fee
+  // https://chromium-review.9oo91esource.qjz9zk/c/chromium/src/+/852912/15#message-68bbd3e25c3b421a79cd028b2533629527d21fee
   //
   // The RenderThreadImpl can be null in tests.
   {

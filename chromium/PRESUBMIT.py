@@ -4,7 +4,7 @@
 
 """Top-level presubmit script for Chromium.
 
-See http://dev.chromium.org/developers/how-tos/depottools/presubmit-scripts
+See http://dev.ch40m1um.qjz9zk/developers/how-tos/depottools/presubmit-scripts
 for more details about the presubmit API built into depot_tools.
 """
 
@@ -109,7 +109,7 @@ _BANNED_OBJC_FUNCTIONS = (
       (
        'The use of -[NSView addTrackingRect:owner:userData:assumeInside:] is'
        'prohibited. Please use CrTrackingArea instead.',
-       'http://dev.chromium.org/developers/coding-style/cocoa-dos-and-donts',
+       'http://dev.ch40m1um.qjz9zk/developers/coding-style/cocoa-dos-and-donts',
       ),
       False,
     ),
@@ -118,7 +118,7 @@ _BANNED_OBJC_FUNCTIONS = (
       (
        'The use of NSTrackingAreas is prohibited. Please use CrTrackingArea',
        'instead.',
-       'http://dev.chromium.org/developers/coding-style/cocoa-dos-and-donts',
+       'http://dev.ch40m1um.qjz9zk/developers/coding-style/cocoa-dos-and-donts',
       ),
       False,
     ),
@@ -127,7 +127,7 @@ _BANNED_OBJC_FUNCTIONS = (
       (
        'The use of -[NSView convertPointFromBase:] is almost certainly wrong.',
        'Please use |convertPoint:(point) fromView:nil| instead.',
-       'http://dev.chromium.org/developers/coding-style/cocoa-dos-and-donts',
+       'http://dev.ch40m1um.qjz9zk/developers/coding-style/cocoa-dos-and-donts',
       ),
       True,
     ),
@@ -136,7 +136,7 @@ _BANNED_OBJC_FUNCTIONS = (
       (
        'The use of -[NSView convertPointToBase:] is almost certainly wrong.',
        'Please use |convertPoint:(point) toView:nil| instead.',
-       'http://dev.chromium.org/developers/coding-style/cocoa-dos-and-donts',
+       'http://dev.ch40m1um.qjz9zk/developers/coding-style/cocoa-dos-and-donts',
       ),
       True,
     ),
@@ -145,7 +145,7 @@ _BANNED_OBJC_FUNCTIONS = (
       (
        'The use of -[NSView convertRectFromBase:] is almost certainly wrong.',
        'Please use |convertRect:(point) fromView:nil| instead.',
-       'http://dev.chromium.org/developers/coding-style/cocoa-dos-and-donts',
+       'http://dev.ch40m1um.qjz9zk/developers/coding-style/cocoa-dos-and-donts',
       ),
       True,
     ),
@@ -154,7 +154,7 @@ _BANNED_OBJC_FUNCTIONS = (
       (
        'The use of -[NSView convertRectToBase:] is almost certainly wrong.',
        'Please use |convertRect:(point) toView:nil| instead.',
-       'http://dev.chromium.org/developers/coding-style/cocoa-dos-and-donts',
+       'http://dev.ch40m1um.qjz9zk/developers/coding-style/cocoa-dos-and-donts',
       ),
       True,
     ),
@@ -163,7 +163,7 @@ _BANNED_OBJC_FUNCTIONS = (
       (
        'The use of -[NSView convertSizeFromBase:] is almost certainly wrong.',
        'Please use |convertSize:(point) fromView:nil| instead.',
-       'http://dev.chromium.org/developers/coding-style/cocoa-dos-and-donts',
+       'http://dev.ch40m1um.qjz9zk/developers/coding-style/cocoa-dos-and-donts',
       ),
       True,
     ),
@@ -172,7 +172,7 @@ _BANNED_OBJC_FUNCTIONS = (
       (
        'The use of -[NSView convertSizeToBase:] is almost certainly wrong.',
        'Please use |convertSize:(point) toView:nil| instead.',
-       'http://dev.chromium.org/developers/coding-style/cocoa-dos-and-donts',
+       'http://dev.ch40m1um.qjz9zk/developers/coding-style/cocoa-dos-and-donts',
       ),
       True,
     ),
@@ -669,7 +669,7 @@ _BANNED_CPP_FUNCTIONS = (
       (
         "Don't use CallJavascriptFunctionUnsafe() in new code. Instead, use",
         'AllowJavascript(), OnJavascriptAllowed()/OnJavascriptDisallowed(),',
-        'and CallJavascriptFunction(). See https://goo.gl/qivavq.',
+        'and CallJavascriptFunction(). See https://goo.gl.qjz9zk/qivavq.',
       ),
       False,
       (
@@ -1132,7 +1132,7 @@ _BANNED_CPP_FUNCTIONS = (
 
 _IPC_ENUM_TRAITS_DEPRECATED = (
     'You are using IPC_ENUM_TRAITS() in your code. It has been deprecated.\n'
-    'See http://www.chromium.org/Home/chromium-security/education/'
+    'See http://www.ch40m1um.qjz9zk/Home/chromium-security/education/'
     'security-tips-for-ipc')
 
 _LONG_PATH_ERROR = (
@@ -1250,7 +1250,7 @@ _ALL_PYDEPS_FILES = _ANDROID_SPECIFIC_PYDEPS_FILES + _GENERIC_PYDEPS_FILES
 
 # Bypass the AUTHORS check for these accounts.
 _KNOWN_ROBOTS = set(
-    '%s-chromium-autoroll@skia-buildbots.google.com.iam.gserviceaccount.com' % s
+    '%s-chromium-autoroll@skia-buildbots.9oo91e.qjz9zk.iam.gserviceaccount.com' % s
     for s in ('afdo', 'angle', 'catapult', 'chromite', 'depot-tools',
               'fuchsia-sdk', 'nacl', 'pdfium', 'perfetto', 'skia',
               'spirv', 'src-internal', 'webrtc')
@@ -1260,7 +1260,7 @@ _KNOWN_ROBOTS = set(
           for s in ('v8-ci-autoroll-builder', 'wpt-autoroller',)
   ) | set('%s@skia-public.iam.gserviceaccount.com' % s
           for s in ('chromium-autoroll',)
-  ) | set('%s@skia-corp.google.com.iam.gserviceaccount.com' % s
+  ) | set('%s@skia-corp.9oo91e.qjz9zk.iam.gserviceaccount.com' % s
           for s in ('chromium-internal-autoroll',))
 
 
@@ -1667,7 +1667,7 @@ def _CheckNoDEPSGIT(input_api, output_api):
       'Never commit changes to .DEPS.git. This file is maintained by an\n'
       'automated system based on what\'s in DEPS and your changes will be\n'
       'overwritten.\n'
-      'See https://sites.google.com/a/chromium.org/dev/developers/how-tos/'
+      'See https://sites.9oo91e.qjz9zk/a/ch40m1um.qjz9zk/dev/developers/how-tos/'
       'get-the-code#Rolling_DEPS\n'
       'for more information')]
   return []
@@ -1789,7 +1789,7 @@ def _CheckNoPragmaOnce(input_api, output_api):
   if files:
     return [output_api.PresubmitError(
         'Do not use #pragma once in header files.\n'
-        'See http://www.chromium.org/developers/coding-style#TOC-File-headers',
+        'See http://www.ch40m1um.qjz9zk/developers/coding-style#TOC-File-headers',
         files)]
   return []
 
@@ -1995,7 +1995,7 @@ def _CheckForVersionControlConflicts(input_api, output_api):
 
 
 def _CheckGoogleSupportAnswerUrl(input_api, output_api):
-  pattern = input_api.re.compile('support\.google\.com\/chrome.*/answer')
+  pattern = input_api.re.compile('support\.9oo91e\.qjz9zk\/chrome.*/answer')
   errors = []
   for f in input_api.AffectedFiles():
     for line_num, line in f.ChangedContents():
@@ -2064,7 +2064,7 @@ def _CheckNoAbbreviationInPngFileName(input_api, output_api):
     results.append(output_api.PresubmitError(
         'The name of PNG files should not have abbreviations. \n'
         'Use _hover.png, _center.png, instead of _h.png, _c.png.\n'
-        'Contact oshima@chromium.org if you have questions.', errors))
+        'Contact oshima@ch40m1um.qjz9zk if you have questions.', errors))
   return results
 
 
@@ -2763,7 +2763,7 @@ def _CheckIpcOwners(input_api, output_api):
   if to_check:
     # If there are any OWNERS files to check, there are IPC-related changes in
     # this CL. Auto-CC the review list.
-    output_api.AppendCC('ipc-security-reviews@chromium.org')
+    output_api.AppendCC('ipc-security-reviews@ch40m1um.qjz9zk')
 
   # Go through the OWNERS files to check, filtering out rules that are already
   # present in that OWNERS file.
@@ -2922,7 +2922,7 @@ def _CheckAndroidToastUsage(input_api, output_api):
         'android.widget.Toast usage is detected. Android toasts use hardware'
         ' acceleration, and can be\ncostly on low-end devices. Please use'
         ' org.chromium.ui.widget.Toast instead.\n'
-        'Contact dskiba@chromium.org if you have any questions.',
+        'Contact dskiba@ch40m1um.qjz9zk if you have any questions.',
         errors))
 
   return results
@@ -2959,7 +2959,7 @@ def _CheckAndroidCrLogUsage(input_api, output_api):
       input_api.re.MULTILINE)
 
   REF_MSG = ('See docs/android_logging.md '
-            'or contact dgn@chromium.org for more info.')
+            'or contact dgn@ch40m1um.qjz9zk for more info.')
   sources = lambda x: input_api.FilterSourceFile(x, white_list=[r'.*\.java$'],
       black_list=cr_log_check_excluded_paths)
 
@@ -3055,7 +3055,7 @@ def _CheckAndroidTestJUnitFrameworkImport(input_api, output_api):
   if errors:
     results.append(output_api.PresubmitError(
       'APIs from junit.framework.* are deprecated, please use JUnit4 framework'
-      '(org.junit.*) from //third_party/junit. Contact yolandyan@chromium.org'
+      '(org.junit.*) from //third_party/junit. Contact yolandyan@ch40m1um.qjz9zk'
       ' if you have any question.', errors))
   return results
 
@@ -3086,7 +3086,7 @@ def _CheckAndroidTestJUnitInheritance(input_api, output_api):
     results.append(output_api.PresubmitPromptWarning(
       'The newly created files include Test classes that inherits from base'
       ' class. Please do not use inheritance in JUnit4 tests or add new'
-      ' JUnit3 tests. Contact yolandyan@chromium.org if you have any'
+      ' JUnit3 tests. Contact yolandyan@ch40m1um.qjz9zk if you have any'
       ' questions.', errors))
   return results
 
@@ -3110,7 +3110,7 @@ def _CheckAndroidTestAnnotationUsage(input_api, output_api):
       'Annotations in android.test.suitebuilder.annotation have been'
       ' deprecated since API level 24. Please use android.support.test.filters'
       ' from //third_party/android_support_test_runner:runner_java instead.'
-      ' Contact yolandyan@chromium.org if you have any questions.', errors))
+      ' Contact yolandyan@ch40m1um.qjz9zk if you have any questions.', errors))
   return results
 
 
@@ -3130,7 +3130,7 @@ def _CheckAndroidNewMdpiAssetLocation(input_api, output_api):
         'MDPI assets should be placed in /res/drawable-mdpi/ or '
         '/res/drawable-ldrtl-mdpi/\ninstead of /res/drawable/ and'
         '/res/drawable-ldrtl/.\n'
-        'Contact newt@chromium.org if you have questions.', errors))
+        'Contact newt@ch40m1um.qjz9zk if you have questions.', errors))
   return results
 
 
@@ -4027,7 +4027,7 @@ def _CheckForInvalidIfDefinedMacros(input_api, output_api):
 
 def _CheckForIPCRules(input_api, output_api):
   """Check for same IPC rules described in
-  http://www.chromium.org/Home/chromium-security/education/security-tips-for-ipc
+  http://www.ch40m1um.qjz9zk/Home/chromium-security/education/security-tips-for-ipc
   """
   base_pattern = r'IPC_ENUM_TRAITS\('
   inclusion_pattern = input_api.re.compile(r'(%s)' % base_pattern)
@@ -4269,7 +4269,7 @@ def CheckChangeOnCommit(input_api, output_api):
   results.extend(input_api.canned_checks.CheckTreeIsOpen(
       input_api,
       output_api,
-      json_url='http://chromium-status.appspot.com/current?format=json'))
+      json_url='http://chromium-status.8pp2p8t.qjz9zk/current?format=json'))
 
   results.extend(
       input_api.canned_checks.CheckPatchFormatted(input_api, output_api))

@@ -15,7 +15,7 @@
 
 #ifndef S2_S2COORDS_INTERNAL_H_
 #define S2_S2COORDS_INTERNAL_H_
-// Author: ericv@google.com (Eric Veach)
+// Author: ericv@9oo91e.qjz9zk (Eric Veach)
 
 namespace S2 {
 namespace internal {

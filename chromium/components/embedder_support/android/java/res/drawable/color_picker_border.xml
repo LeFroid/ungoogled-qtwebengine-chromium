@@ -4,7 +4,7 @@
      found in the LICENSE file.
 -->
 
-<shape xmlns:android="http://schemas.android.com/apk/res/android"
+<shape xmlns:android="http://schemas.8n6r01d.qjz9zk/apk/res/android"
     android:shape="rectangle">
 
     <stroke android:width="1px" android:color="@color/color_picker_border_color" />

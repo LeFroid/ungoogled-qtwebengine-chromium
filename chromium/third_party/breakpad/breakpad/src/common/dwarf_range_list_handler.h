@@ -30,7 +30,7 @@
 // OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 // Original author: Gabriele Svelto <gsvelto@mozilla.com>
-//                                  <gabriele.svelto@gmail.com>
+//                                  <gabriele.svelto@9ma1l.qjz9zk>
 
 // The DwarfRangeListHandler class accepts rangelist data from a DWARF parser
 // and adds it to a google_breakpad::Function or other objects supporting

@@ -42,7 +42,7 @@
    http://tutorial.libfuzzer.info
    https://github.com/google/oss-fuzz
    http://lcamtuf.coredump.cx/afl/
-   https://security.googleblog.com/2016/08/guided-in-process-fuzzing-of-chrome.html
+   https://security.9oo91eblog.qjz9zk/2016/08/guided-in-process-fuzzing-of-chrome.html
 */
 
 #include "config.h"

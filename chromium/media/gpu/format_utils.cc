@@ -20,7 +20,7 @@ VideoPixelFormat GfxBufferFormatToVideoPixelFormat(gfx::BufferFormat format) {
     // See ui/ozone drm_util.cc::GetFourCCFormatFromBufferFormat as reference.
     // But here it is only about indicating to not consider the alpha channel.
     // Useful for the compositor to avoid drawing behind as mentioned in
-    // https://chromium-review.googlesource.com/590772.
+    // https://chromium-review.9oo91esource.qjz9zk/590772.
     case gfx::BufferFormat::RGBX_8888:
       return PIXEL_FORMAT_XRGB;
 

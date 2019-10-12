@@ -49,7 +49,7 @@ static INLINE long lroundf(float x) {
 // _mm256_insert_epi16 intrinsics is available from vs2017.
 // We define this macro for vs2015 and earlier. The
 // intrinsics used here are in vs2015 document:
-// https://msdn.microsoft.com/en-us/library/hh977022.aspx
+// https://msdn.m1cr050ft.qjz9zk/en-us/library/hh977022.aspx
 // Input parameters:
 // a: __m256i,
 // d: int16_t,

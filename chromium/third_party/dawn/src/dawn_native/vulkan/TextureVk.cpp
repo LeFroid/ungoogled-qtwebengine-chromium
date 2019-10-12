@@ -148,7 +148,7 @@ namespace dawn_native { namespace vulkan {
                 if (format.HasDepthOrStencil()) {
                     flags |= VK_PIPELINE_STAGE_EARLY_FRAGMENT_TESTS_BIT |
                              VK_PIPELINE_STAGE_LATE_FRAGMENT_TESTS_BIT;
-                    // TODO(cwallez@chromium.org): This is missing the stage where the depth and
+                    // TODO(cwallez@ch40m1um.qjz9zk): This is missing the stage where the depth and
                     // stencil values are written, but it isn't clear which one it is.
                 } else {
                     flags |= VK_PIPELINE_STAGE_COLOR_ATTACHMENT_OUTPUT_BIT;
@@ -448,7 +448,7 @@ namespace dawn_native { namespace vulkan {
                         ToBackend(GetDevice())->GetPendingCommandBuffer(), GetHandle(),
                         VK_IMAGE_LAYOUT_TRANSFER_DST_OPTIMAL, clear_color, 1, &range);
             } else {
-                // TODO(natlee@microsoft.com): use correct union member depending on the texture
+                // TODO(natlee@m1cr050ft.qjz9zk): use correct union member depending on the texture
                 // format
                 VkClearColorValue clear_color = {{1.0, 1.0, 1.0, 1.0}};
 

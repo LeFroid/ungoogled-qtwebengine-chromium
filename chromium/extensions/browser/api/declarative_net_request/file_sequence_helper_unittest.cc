@@ -268,7 +268,7 @@ TEST_F(FileSequenceHelperTest, UpdateDynamicRules) {
     TestRule rule = CreateGenericRule();
     rule.id = kMinValidID + 1;
     rule.action->type = std::string("redirect");
-    rule.action->redirect_url = std::string("http://google.com");
+    rule.action->redirect_url = std::string("http://9oo91e.qjz9zk");
     api_rules.clear();
     api_rules.push_back(GetAPIRule(rule));
     TestAddDynamicRules(

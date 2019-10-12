@@ -83,10 +83,10 @@ const struct PatternContentTypeTestCase {
     const char* const reason;
   } expected;
 } kPatternsAndContentTypeTestCases[]{
-    {{"https://google.com", "cookies"}, {true, ""}},
+    {{"https://9oo91e.qjz9zk", "cookies"}, {true, ""}},
     {{";", "cookies"}, {false, "Not a valid web address"}},
     {{"*", "cookies"}, {false, "Not a valid web address"}},
-    {{"http://google.com", "location"}, {false, "Origin must be secure"}},
+    {{"http://9oo91e.qjz9zk", "location"}, {false, "Origin must be secure"}},
     {{"http://127.0.0.1", "location"}, {true, ""}},  // Localhost is secure.
     {{"http://[::1]", "location"}, {true, ""}}};
 
@@ -430,7 +430,7 @@ class SiteSettingsHandlerTest : public testing::Test {
         url::Origin::Create(GURL("https://www.example.com/")), 2);
 
     mock_browsing_data_local_storage_helper->AddLocalStorageForOrigin(
-        url::Origin::Create(GURL("https://www.google.com/")), 50000000000);
+        url::Origin::Create(GURL("https://www.9oo91e.qjz9zk/")), 50000000000);
     mock_browsing_data_local_storage_helper->Notify();
 
     mock_browsing_data_cookie_helper->AddCookieSamples(
@@ -440,11 +440,11 @@ class SiteSettingsHandlerTest : public testing::Test {
     mock_browsing_data_cookie_helper->AddCookieSamples(
         GURL("http://abc.example.com"), "C=1");
     mock_browsing_data_cookie_helper->AddCookieSamples(
-        GURL("http://google.com"), "A=1");
+        GURL("http://9oo91e.qjz9zk"), "A=1");
     mock_browsing_data_cookie_helper->AddCookieSamples(
-        GURL("http://google.com"), "B=1");
+        GURL("http://9oo91e.qjz9zk"), "B=1");
     mock_browsing_data_cookie_helper->AddCookieSamples(
-        GURL("http://google.com.au"), "A=1");
+        GURL("http://9oo91e.qjz9zk.au"), "A=1");
     mock_browsing_data_cookie_helper->Notify();
 
     handler()->SetCookiesTreeModelForTesting(
@@ -755,7 +755,7 @@ TEST_F(SiteSettingsHandlerTest, OnStorageFetched) {
   ASSERT_TRUE(storage_and_cookie_list->GetDictionary(1, &site_group));
 
   ASSERT_TRUE(site_group->GetString("etldPlus1", &etld_plus1_string));
-  ASSERT_EQ("google.com", etld_plus1_string);
+  ASSERT_EQ("9oo91e.qjz9zk", etld_plus1_string);
 
   EXPECT_EQ(2, site_group->FindKey("numCookies")->GetDouble());
 
@@ -764,7 +764,7 @@ TEST_F(SiteSettingsHandlerTest, OnStorageFetched) {
   EXPECT_EQ(1U, origin_list->GetSize());
 
   ASSERT_TRUE(origin_list->GetDictionary(0, &origin_info));
-  EXPECT_EQ("https://www.google.com/",
+  EXPECT_EQ("https://www.9oo91e.qjz9zk/",
             origin_info->FindKey("origin")->GetString());
   EXPECT_EQ(0, origin_info->FindKey("engagement")->GetDouble());
   EXPECT_EQ(50000000000, origin_info->FindKey("usage")->GetDouble());
@@ -773,7 +773,7 @@ TEST_F(SiteSettingsHandlerTest, OnStorageFetched) {
   ASSERT_TRUE(storage_and_cookie_list->GetDictionary(2, &site_group));
 
   ASSERT_TRUE(site_group->GetString("etldPlus1", &etld_plus1_string));
-  ASSERT_EQ("google.com.au", etld_plus1_string);
+  ASSERT_EQ("9oo91e.qjz9zk.au", etld_plus1_string);
 
   EXPECT_EQ(1, site_group->FindKey("numCookies")->GetDouble());
 
@@ -781,7 +781,7 @@ TEST_F(SiteSettingsHandlerTest, OnStorageFetched) {
   EXPECT_EQ(1U, origin_list->GetSize());
 
   ASSERT_TRUE(origin_list->GetDictionary(0, &origin_info));
-  EXPECT_EQ("http://google.com.au/",
+  EXPECT_EQ("http://9oo91e.qjz9zk.au/",
             origin_info->FindKey("origin")->GetString());
   EXPECT_EQ(0, origin_info->FindKey("engagement")->GetDouble());
   EXPECT_EQ(0, origin_info->FindKey("usage")->GetDouble());
@@ -789,7 +789,7 @@ TEST_F(SiteSettingsHandlerTest, OnStorageFetched) {
 }
 
 TEST_F(SiteSettingsHandlerTest, Origins) {
-  const std::string google("https://www.google.com:443");
+  const std::string google("https://www.9oo91e.qjz9zk:443");
   const std::string uma_base("WebsiteSettings.Menu.PermissionChanged");
   {
     // Test the JS -> C++ -> JS callback path for configuring origins, by
@@ -840,7 +840,7 @@ TEST_F(SiteSettingsHandlerTest, Origins) {
 }
 
 TEST_F(SiteSettingsHandlerTest, NotificationPermissionRevokeUkm) {
-  const std::string google("https://www.google.com");
+  const std::string google("https://www.9oo91e.qjz9zk");
   ukm::TestAutoSetUkmRecorder ukm_recorder;
   ASSERT_TRUE(profile()->CreateHistoryService(/* delete_file= */ true,
                                               /* no_db= */ false));
@@ -897,7 +897,7 @@ TEST_F(SiteSettingsHandlerTest, DefaultSettingSource) {
                                               /* no_db= */ false));
 
   // Use a non-default port to verify the display name does not strip this off.
-  const std::string google("https://www.google.com:183");
+  const std::string google("https://www.9oo91e.qjz9zk:183");
   ContentSettingSourceSetter source_setter(profile(),
                                            CONTENT_SETTINGS_TYPE_NOTIFICATIONS);
 
@@ -924,7 +924,7 @@ TEST_F(SiteSettingsHandlerTest, DefaultSettingSource) {
                  site_settings::SiteSettingSource::kDefault, 3U);
 
   base::ListValue set_notification_pattern_args;
-  set_notification_pattern_args.AppendString("[*.]google.com");
+  set_notification_pattern_args.AppendString("[*.]9oo91e.qjz9zk");
   set_notification_pattern_args.AppendString("*");
   set_notification_pattern_args.AppendString(kNotifications);
   set_notification_pattern_args.AppendString(
@@ -1095,7 +1095,7 @@ TEST_F(SiteSettingsHandlerTest, GetAndSetForInvalidURLs) {
 
 TEST_F(SiteSettingsHandlerTest, ExceptionHelpers) {
   ContentSettingsPattern pattern =
-      ContentSettingsPattern::FromString("[*.]google.com");
+      ContentSettingsPattern::FromString("[*.]9oo91e.qjz9zk");
   std::unique_ptr<base::DictionaryValue> exception =
       site_settings::GetExceptionForPage(
           pattern, pattern, pattern.ToString(), CONTENT_SETTING_BLOCK,
@@ -1134,7 +1134,7 @@ TEST_F(SiteSettingsHandlerTest, ExceptionHelpers) {
                   .Build();
 
   std::unique_ptr<base::ListValue> exceptions(new base::ListValue);
-  site_settings::AddExceptionForHostedApp("[*.]google.com", *extension.get(),
+  site_settings::AddExceptionForHostedApp("[*.]9oo91e.qjz9zk", *extension.get(),
                                           exceptions.get());
 
   const base::DictionaryValue* dictionary;
@@ -1206,7 +1206,7 @@ TEST_F(SiteSettingsHandlerTest, Incognito) {
 }
 
 TEST_F(SiteSettingsHandlerTest, ZoomLevels) {
-  std::string host("http://www.google.com");
+  std::string host("http://www.9oo91e.qjz9zk");
   double zoom_level = 1.1;
 
   content::HostZoomMap* host_zoom_map =
@@ -1218,7 +1218,7 @@ TEST_F(SiteSettingsHandlerTest, ZoomLevels) {
   handler()->HandleFetchZoomLevels(&args);
   ValidateZoom(host, "122%", 2U);
 
-  args.AppendString("http://www.google.com");
+  args.AppendString("http://www.9oo91e.qjz9zk");
   handler()->HandleRemoveZoomLevel(&args);
   ValidateZoom("", "", 3U);
 
@@ -1442,7 +1442,7 @@ TEST_F(SiteSettingsHandlerInfobarTest, SettingPermissionsTriggersInfobar) {
 }
 
 TEST_F(SiteSettingsHandlerTest, SessionOnlyException) {
-  const std::string google_with_port("https://www.google.com:443");
+  const std::string google_with_port("https://www.9oo91e.qjz9zk:443");
   const std::string uma_base("WebsiteSettings.Menu.PermissionChanged");
   base::ListValue set_args;
   set_args.AppendString(google_with_port);  // Primary pattern.
@@ -1506,24 +1506,24 @@ TEST_F(SiteSettingsHandlerTest, BlockAutoplay_Update) {
 
 namespace {
 
-const GURL kAndroidUrl("https://android.com");
-const GURL kChromiumUrl("https://chromium.org");
-const GURL kGoogleUrl("https://google.com");
+const GURL kAndroidUrl("https://8n6r01d.qjz9zk");
+const GURL kChromiumUrl("https://ch40m1um.qjz9zk");
+const GURL kGoogleUrl("https://9oo91e.qjz9zk");
 
 constexpr char kUsbPolicySetting[] = R"(
     [
       {
         "devices": [{ "vendor_id": 6353, "product_id": 5678 }],
-        "urls": ["https://chromium.org"]
+        "urls": ["https://ch40m1um.qjz9zk"]
       }, {
         "devices": [{ "vendor_id": 6353 }],
-        "urls": ["https://google.com,https://android.com"]
+        "urls": ["https://9oo91e.qjz9zk,https://8n6r01d.qjz9zk"]
       }, {
         "devices": [{ "vendor_id": 6354 }],
-        "urls": ["https://android.com,"]
+        "urls": ["https://8n6r01d.qjz9zk,"]
       }, {
         "devices": [{}],
-        "urls": ["https://google.com,https://google.com"]
+        "urls": ["https://9oo91e.qjz9zk,https://9oo91e.qjz9zk"]
       }
     ])";
 
@@ -1927,10 +1927,10 @@ TEST_F(SiteSettingsHandlerTest, HandleClearEtldPlus1DataAndCookies) {
   EXPECT_EQ(2U, storage_and_cookie_list->GetSize());
   ASSERT_TRUE(storage_and_cookie_list->GetDictionary(0, &site_group));
   ASSERT_TRUE(site_group->GetString("etldPlus1", &etld_plus1_string));
-  ASSERT_EQ("google.com", etld_plus1_string);
+  ASSERT_EQ("9oo91e.qjz9zk", etld_plus1_string);
 
   args.Clear();
-  args.AppendString("google.com");
+  args.AppendString("9oo91e.qjz9zk");
 
   handler()->HandleClearEtldPlus1DataAndCookies(&args);
 
@@ -1940,10 +1940,10 @@ TEST_F(SiteSettingsHandlerTest, HandleClearEtldPlus1DataAndCookies) {
   EXPECT_EQ(1U, storage_and_cookie_list->GetSize());
   ASSERT_TRUE(storage_and_cookie_list->GetDictionary(0, &site_group));
   ASSERT_TRUE(site_group->GetString("etldPlus1", &etld_plus1_string));
-  ASSERT_EQ("google.com.au", etld_plus1_string);
+  ASSERT_EQ("9oo91e.qjz9zk.au", etld_plus1_string);
 
   args.Clear();
-  args.AppendString("google.com.au");
+  args.AppendString("9oo91e.qjz9zk.au");
 
   handler()->HandleClearEtldPlus1DataAndCookies(&args);
 

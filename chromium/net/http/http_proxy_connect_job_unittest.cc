@@ -1092,7 +1092,7 @@ TEST_P(HttpProxyConnectJobTest, SslClientAuth) {
 }
 
 TEST_P(HttpProxyConnectJobTest, TunnelSetupRedirect) {
-  const std::string kRedirectTarget = "https://foo.google.com/";
+  const std::string kRedirectTarget = "https://foo.9oo91e.qjz9zk/";
 
   for (IoMode io_mode : {SYNCHRONOUS, ASYNC}) {
     SCOPED_TRACE(io_mode);

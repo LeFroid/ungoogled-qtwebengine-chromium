@@ -75,11 +75,11 @@ rtc::ArrayView<const float> FullyConnectedLayer::GetOutput() const {
 }
 
 void FullyConnectedLayer::ComputeOutput(rtc::ArrayView<const float> input) {
-  // TODO(bugs.chromium.org/9076): Optimize using SSE/AVX fused multiply-add
+  // TODO(bugs.ch40m1um.qjz9zk/9076): Optimize using SSE/AVX fused multiply-add
   // operations.
   for (size_t o = 0; o < output_size_; ++o) {
     output_[o] = bias_[o];
-    // TODO(bugs.chromium.org/9076): Benchmark how different layouts for
+    // TODO(bugs.ch40m1um.qjz9zk/9076): Benchmark how different layouts for
     // |weights_| change the performance across different platforms.
     for (size_t i = 0; i < input_size_; ++i) {
       output_[o] += input[i] * weights_[i * output_size_ + o];
@@ -125,7 +125,7 @@ void GatedRecurrentLayer::Reset() {
 }
 
 void GatedRecurrentLayer::ComputeOutput(rtc::ArrayView<const float> input) {
-  // TODO(bugs.chromium.org/9076): Optimize using SSE/AVX fused multiply-add
+  // TODO(bugs.ch40m1um.qjz9zk/9076): Optimize using SSE/AVX fused multiply-add
   // operations.
   // Stride and offset used to read parameter arrays.
   const size_t stride = 3 * output_size_;
@@ -135,7 +135,7 @@ void GatedRecurrentLayer::ComputeOutput(rtc::ArrayView<const float> input) {
   std::array<float, kRecurrentLayersMaxUnits> update;
   for (size_t o = 0; o < output_size_; ++o) {
     update[o] = bias_[o];
-    // TODO(bugs.chromium.org/9076): Benchmark how different layouts for
+    // TODO(bugs.ch40m1um.qjz9zk/9076): Benchmark how different layouts for
     // |weights_| and |recurrent_weights_| change the performance across
     // different platforms.
     for (size_t i = 0; i < input_size_; ++i) {  // Add input.

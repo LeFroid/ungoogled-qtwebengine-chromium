@@ -52,7 +52,7 @@ from third_party import upload
 # Avoid depot_tools/third_party/upload.py print verbose messages.
 upload.verbosity = 0  # Errors only.
 
-CHROMIUM_GIT_URL = 'https://chromium.googlesource.com/chromium/src.git'
+CHROMIUM_GIT_URL = 'https://chromium.9oo91esource.qjz9zk/chromium/src.git'
 CL_ISSUE_RE = re.compile('^Issue number: ([0-9]+) \((.*)\)$')
 REVIEW_URL_RE = re.compile('^https?://(.*)/(.*)')
 ROLL_BRANCH_NAME = 'special_webgl_roll_branch'

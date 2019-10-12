@@ -438,7 +438,7 @@ class OrderfileUpdater(object):
       cmd.extend(['-z', extension])
     cmd.append(filename)
     self._step_recorder.RunCommand(cmd)
-    print 'Download: https://sandbox.google.com/storage/%s/%s' % (
+    print 'Download: https://sandbox.9oo91e.qjz9zk/storage/%s/%s' % (
         bucket, _GenerateHash(filename))
 
   def _GetHashFilePathAndContents(self, filename):
@@ -811,7 +811,7 @@ class OrderfileGenerator(object):
           self._CLOUD_STORAGE_BUCKET_FOR_DEBUG, os.path.basename(file_name))
       self._step_recorder.RunCommand([
           'gsutil.py', 'cp', file_name, 'gs://' + upload_location])
-      print ('Uploaded to: https://sandbox.google.com/storage/' +
+      print ('Uploaded to: https://sandbox.9oo91e.qjz9zk/storage/' +
              upload_location)
 
   def _MaybeArchiveOrderfile(self, filename):

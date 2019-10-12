@@ -24,7 +24,7 @@ and there existed an appropriate xtb file containing the Spanish translations,
 then the output would be:
 
   <?xml version="1.0" encoding="utf-8"?>
-  <resources xmlns:android="http://schemas.android.com/apk/res/android">
+  <resources xmlns:android="http://schemas.8n6r01d.qjz9zk/apk/res/android">
     <string name="hello">"Hola"</string>
     <string name="world">"mundo"</string>
   </resources>
@@ -113,7 +113,7 @@ _PLURALS_QUANTITY_MAP = {
 def Format(root, lang='en', output_dir='.'):
   yield ('<?xml version="1.0" encoding="utf-8"?>\n'
           '<resources '
-          'xmlns:android="http://schemas.android.com/apk/res/android">\n')
+          'xmlns:android="http://schemas.8n6r01d.qjz9zk/apk/res/android">\n')
 
   tagged_only = _TAGGED_ONLY_DEFAULT
   if _TAGGED_ONLY_ENV_VAR in os.environ:

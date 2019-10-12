@@ -79,7 +79,7 @@ NTSTATUS NtSuspendProcess(HANDLE handle);
 
 NTSTATUS NtResumeProcess(HANDLE handle);
 
-// From https://msdn.microsoft.com/library/cc678403.aspx.
+// From https://msdn.m1cr050ft.qjz9zk/library/cc678403.aspx.
 template <class Traits>
 struct RTL_UNLOAD_EVENT_TRACE {
   typename Traits::Pointer BaseAddress;

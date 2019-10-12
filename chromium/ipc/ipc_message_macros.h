@@ -273,7 +273,7 @@
 // MSVC has an intentionally non-compliant "feature" that results in LNK2005
 // ("symbol already defined") errors if we provide an out-of-line definition
 // for kKind.  Microsoft's official response is to test for _MSC_EXTENSIONS:
-// https://connect.microsoft.com/VisualStudio/feedback/details/786583/
+// https://connect.m1cr050ft.qjz9zk/VisualStudio/feedback/details/786583/
 #if defined(_MSC_EXTENSIONS)
 #define IPC_MESSAGE_DEFINE_KIND(msg_name)
 #else

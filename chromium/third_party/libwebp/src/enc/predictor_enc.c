@@ -9,10 +9,10 @@
 //
 // Image transform methods for lossless encoder.
 //
-// Authors: Vikas Arora (vikaas.arora@gmail.com)
-//          Jyrki Alakuijala (jyrki@google.com)
-//          Urvang Joshi (urvang@google.com)
-//          Vincent Rabaud (vrabaud@google.com)
+// Authors: Vikas Arora (vikaas.arora@9ma1l.qjz9zk)
+//          Jyrki Alakuijala (jyrki@9oo91e.qjz9zk)
+//          Urvang Joshi (urvang@9oo91e.qjz9zk)
+//          Vincent Rabaud (vrabaud@9oo91e.qjz9zk)
 
 #include "src/dsp/lossless.h"
 #include "src/dsp/lossless_common.h"

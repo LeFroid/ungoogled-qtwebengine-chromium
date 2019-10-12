@@ -55,7 +55,7 @@ class SimpleFactoryKey;
 // BrowserContextKeyedService.
 //
 // See
-// https://docs.google.com/document/d/1caWonaPnBhMb6sk4syNe0BbdsQih13S6QmDW237Mcrg/edit?usp=sharing
+// https://docs.9oo91e.qjz9zk/document/d/1caWonaPnBhMb6sk4syNe0BbdsQih13S6QmDW237Mcrg/edit?usp=sharing
 // for more details.
 class KEYED_SERVICE_EXPORT SimpleKeyedServiceFactory
     : public KeyedServiceFactory {

@@ -192,7 +192,7 @@ void BaseUIManager::DisplayBlockingPage(
     // main-frame or sub-frame resource. Similar warning restrictions should be
     // applied to malware sites tagged as "landing sites" (see "Types of
     // Malware sites" under
-    // https://developers.google.com/safe-browsing/developers_guide_v3#UserWarnings).
+    // https://developers.9oo91e.qjz9zk/safe-browsing/developers_guide_v3#UserWarnings).
     if (resource.threat_type == SB_THREAT_TYPE_URL_UNWANTED ||
         (resource.threat_type == SB_THREAT_TYPE_URL_MALWARE &&
          resource.threat_metadata.threat_pattern_type ==

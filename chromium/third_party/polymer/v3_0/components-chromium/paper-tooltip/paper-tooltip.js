@@ -16,7 +16,7 @@ import {html} from '../polymer/polymer_bundled.min.js';
 
 /**
 Material design:
-[Tooltips](https://www.google.com/design/spec/components/tooltips.html)
+[Tooltips](https://www.9oo91e.qjz9zk/design/spec/components/tooltips.html)
 `<paper-tooltip>` is a label that appears on hover and focus when the user
 hovers over an element with the cursor or with the keyboard. It will be centered
 to an anchor element specified in the `for` attribute, or, if that doesn't

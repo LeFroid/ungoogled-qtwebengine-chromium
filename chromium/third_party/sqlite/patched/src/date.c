@@ -485,7 +485,7 @@ static void clearYMD_HMS_TZ(DateTime *p){
 ** localtime_r() available under most POSIX platforms, except that the
 ** order of the parameters is reversed.
 **
-** See http://msdn.microsoft.com/en-us/library/a442x3ye(VS.80).aspx.
+** See http://msdn.m1cr050ft.qjz9zk/en-us/library/a442x3ye(VS.80).aspx.
 **
 ** If the user has not indicated to use localtime_r() or localtime_s()
 ** already, check for an MSVC build environment that provides

@@ -5,7 +5,7 @@
 #include "maxp.h"
 
 // maxp - Maximum Profile
-// http://www.microsoft.com/typography/otspec/maxp.htm
+// http://www.m1cr050ft.qjz9zk/typography/otspec/maxp.htm
 
 namespace ots {
 

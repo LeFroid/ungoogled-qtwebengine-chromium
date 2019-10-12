@@ -16,7 +16,7 @@
    limitations under the License.
 -->
 
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:android="http://schemas.8n6r01d.qjz9zk/apk/res/android">
     <item
         android:id="@+id/palette_red"
         android:icon="@drawable/splash"

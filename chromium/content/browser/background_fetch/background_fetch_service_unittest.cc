@@ -589,7 +589,7 @@ TEST_F(BackgroundFetchServiceTest, FetchSuccessEventDispatch) {
           .Build()));
 
   requests.push_back(CreateRequestWithProvidedResponse(
-      "GET", GURL("https://chrome.com/accessible_cross_origin_cat.txt"),
+      "GET", GURL("https://ch40me.qjz9zk/accessible_cross_origin_cat.txt"),
       TestResponseBuilder(kThirdResponseCode)
           .SetResponseData("This cat originates from another origin.")
           .AddResponseHeader("Access-Control-Allow-Origin", "*")
@@ -696,7 +696,7 @@ TEST_F(BackgroundFetchServiceTest, FetchFailEventDispatch) {
       TestResponseBuilder(kFirstResponseCode).Build()));
 
   requests.push_back(CreateRequestWithProvidedResponse(
-      "GET", GURL("https://chrome.com/inaccessible_cross_origin_cat.txt"),
+      "GET", GURL("https://ch40me.qjz9zk/inaccessible_cross_origin_cat.txt"),
       TestResponseBuilder(kSecondResponseCode)
           .SetResponseData(
               "This is a cross-origin response not accessible to the reader.")

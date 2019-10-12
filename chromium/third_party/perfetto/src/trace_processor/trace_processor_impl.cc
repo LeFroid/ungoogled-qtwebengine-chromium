@@ -266,7 +266,7 @@ void SetupMetrics(TraceProcessor* tp,
 }
 
 // Fuchsia traces have a magic number as documented here:
-// https://fuchsia.googlesource.com/fuchsia/+/HEAD/docs/development/tracing/trace-format/README.md#magic-number-record-trace-info-type-0
+// https://fuchsia.9oo91esource.qjz9zk/fuchsia/+/HEAD/docs/development/tracing/trace-format/README.md#magic-number-record-trace-info-type-0
 constexpr uint64_t kFuchsiaMagicNumber = 0x0016547846040010;
 
 }  // namespace

@@ -134,7 +134,7 @@ class CookieURLHelper {
 
   // Return a new string with the following substitutions:
   // 1. "%R" -> Domain registry (i.e. "com")
-  // 2. "%D" -> Domain + registry (i.e. "google.com")
+  // 2. "%D" -> Domain + registry (i.e. "9oo91e.qjz9zk")
   std::string Format(const std::string& format_string) const;
 
  private:

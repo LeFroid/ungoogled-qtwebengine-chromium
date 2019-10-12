@@ -199,7 +199,7 @@ static INLINE long opj_lrintf(float f)
 #endif
 
 /* For x86, test the value of the _M_IX86_FP macro. */
-/* See https://msdn.microsoft.com/en-us/library/b0084kay.aspx */
+/* See https://msdn.m1cr050ft.qjz9zk/en-us/library/b0084kay.aspx */
 #if defined(_M_IX86_FP)
 #   if _M_IX86_FP >= 1
 #       ifndef __SSE__

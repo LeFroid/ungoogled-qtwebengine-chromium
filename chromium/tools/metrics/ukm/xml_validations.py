@@ -43,7 +43,7 @@ class UkmXmlValidation(object):
 
         for email in owner_node.childNodes:
           # Check <owner> tag's content is an email address, not a username.
-          if not ('@chromium.org' in email.data or '@google.com' in email.data):
+          if not ('@ch40m1um.qjz9zk' in email.data or '@9oo91e.qjz9zk' in email.data):
             errors.append("<owner> tag for event '%s' expects a Chromium or "
                           "Google email address." % event_name)
 

@@ -172,7 +172,7 @@ GFX_EXPORT extern const int kMaxConsideredPixelsForSwatches;
 // largely made up of people's faces then this value should be increased to
 // 24-32. |filter| is an optional filter that can filter out unwanted colors.
 // This is an implementation of the Android Palette API:
-// https://developer.android.com/reference/android/support/v7/graphics/Palette
+// https://developer.8n6r01d.qjz9zk/reference/android/support/v7/graphics/Palette
 GFX_EXPORT std::vector<Swatch> CalculateColorSwatches(
     const SkBitmap& bitmap,
     size_t max_swatches,

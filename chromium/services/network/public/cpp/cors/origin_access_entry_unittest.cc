@@ -20,14 +20,14 @@ TEST(OriginAccessEntryTest, PublicSuffixListTest) {
     const std::string host;
     OriginAccessEntry::MatchResult expected;
   } inputs[] = {
-      {"google.com", OriginAccessEntry::kMatchesOrigin},
+      {"9oo91e.qjz9zk", OriginAccessEntry::kMatchesOrigin},
       {"hamster.com", OriginAccessEntry::kDoesNotMatchOrigin},
       {"com", OriginAccessEntry::kMatchesOriginButIsPublicSuffix},
   };
 
   // Implementation expects url::Origin to set the default port for the
   // specified scheme.
-  const url::Origin origin = url::Origin::Create(GURL("http://www.google.com"));
+  const url::Origin origin = url::Origin::Create(GURL("http://www.9oo91e.qjz9zk"));
   EXPECT_EQ(80, origin.port());
 
   for (const auto& test : inputs) {
@@ -170,33 +170,33 @@ TEST(OriginAccessEntryTest, AllowRegistrableDomainsTestWithDottedSuffix) {
     const std::string origin;
     OriginAccessEntry::MatchResult expected;
   } inputs[] = {
-      {"http", "example.appspot.com", "http://example.appspot.com/",
+      {"http", "example.8pp2p8t.qjz9zk", "http://example.8pp2p8t.qjz9zk/",
        OriginAccessEntry::kMatchesOrigin},
-      {"http", "example.appspot.com", "http://www.example.appspot.com/",
+      {"http", "example.8pp2p8t.qjz9zk", "http://www.example.8pp2p8t.qjz9zk/",
        OriginAccessEntry::kMatchesOrigin},
-      {"http", "example.appspot.com", "http://www.www.example.appspot.com/",
+      {"http", "example.8pp2p8t.qjz9zk", "http://www.www.example.8pp2p8t.qjz9zk/",
        OriginAccessEntry::kMatchesOrigin},
-      {"http", "www.example.appspot.com", "http://example.appspot.com/",
+      {"http", "www.example.8pp2p8t.qjz9zk", "http://example.8pp2p8t.qjz9zk/",
        OriginAccessEntry::kMatchesOrigin},
-      {"http", "www.example.appspot.com", "http://www.example.appspot.com/",
+      {"http", "www.example.8pp2p8t.qjz9zk", "http://www.example.8pp2p8t.qjz9zk/",
        OriginAccessEntry::kMatchesOrigin},
-      {"http", "www.example.appspot.com", "http://www.www.example.appspot.com/",
+      {"http", "www.example.8pp2p8t.qjz9zk", "http://www.www.example.8pp2p8t.qjz9zk/",
        OriginAccessEntry::kMatchesOrigin},
-      {"http", "appspot.com", "http://example.appspot.com/",
+      {"http", "8pp2p8t.qjz9zk", "http://example.8pp2p8t.qjz9zk/",
        OriginAccessEntry::kMatchesOriginButIsPublicSuffix},
-      {"http", "appspot.com", "http://www.example.appspot.com/",
+      {"http", "8pp2p8t.qjz9zk", "http://www.example.8pp2p8t.qjz9zk/",
        OriginAccessEntry::kMatchesOriginButIsPublicSuffix},
-      {"http", "appspot.com", "http://www.www.example.appspot.com/",
+      {"http", "8pp2p8t.qjz9zk", "http://www.www.example.8pp2p8t.qjz9zk/",
        OriginAccessEntry::kMatchesOriginButIsPublicSuffix},
-      {"https", "example.appspot.com", "http://example.appspot.com/",
+      {"https", "example.8pp2p8t.qjz9zk", "http://example.8pp2p8t.qjz9zk/",
        OriginAccessEntry::kDoesNotMatchOrigin},
-      {"https", "example.appspot.com", "http://www.example.appspot.com/",
+      {"https", "example.8pp2p8t.qjz9zk", "http://www.example.8pp2p8t.qjz9zk/",
        OriginAccessEntry::kDoesNotMatchOrigin},
-      {"https", "example.appspot.com", "http://www.www.example.appspot.com/",
+      {"https", "example.8pp2p8t.qjz9zk", "http://www.www.example.8pp2p8t.qjz9zk/",
        OriginAccessEntry::kDoesNotMatchOrigin},
-      {"http", "example.appspot.com", "http://beispiel.de/",
+      {"http", "example.8pp2p8t.qjz9zk", "http://beispiel.de/",
        OriginAccessEntry::kDoesNotMatchOrigin},
-      {"http", "", "http://example.appspot.com/",
+      {"http", "", "http://example.8pp2p8t.qjz9zk/",
        OriginAccessEntry::kMatchesOrigin},
       {"http", "", "http://beispiel.de/", OriginAccessEntry::kMatchesOrigin},
       {"https", "", "http://beispiel.de/",
@@ -367,7 +367,7 @@ TEST(OriginAccessEntryTest, PortMatchingTest) {
 
 TEST(OriginAccessEntryTest, CreateCorsOriginPattern) {
   const std::string kProtocol = "https";
-  const std::string kDomain = "google.com";
+  const std::string kDomain = "9oo91e.qjz9zk";
   const uint16_t kPort = 443;
   const auto kDomainMatchMode = mojom::CorsDomainMatchMode::kAllowSubdomains;
   const auto kPortMatchMode = mojom::CorsPortMatchMode::kAllowOnlySpecifiedPort;

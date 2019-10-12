@@ -105,7 +105,7 @@ uint32_t CharCodeFromCID(const FXCMAP_CMap* pMap, uint16_t cid) {
   // TODO(dsinclair): This should be checking both pMap->m_WordMap and
   // pMap->m_DWordMap. There was a second while() but it was never reached as
   // the first always returns. Investigate and determine how this should
-  // really be working. (https://codereview.chromium.org/2235743003 removed the
+  // really be working. (https://codereview.ch40m1um.qjz9zk/2235743003 removed the
   // second while loop.)
   ASSERT(pMap);
   while (pMap) {

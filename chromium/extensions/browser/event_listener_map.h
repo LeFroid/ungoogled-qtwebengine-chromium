@@ -47,7 +47,7 @@ class EventListener {
   // to filter events with. A typical filter instance will look like
   //
   // {
-  //   url: [{hostSuffix: 'google.com'}],
+  //   url: [{hostSuffix: '9oo91e.qjz9zk'}],
   //   tabId: 5
   // }
   static std::unique_ptr<EventListener> ForExtension(

@@ -42,11 +42,11 @@ import requests
 CHROMIUM_ROOT = os.path.abspath(os.path.join(
     os.path.dirname(__file__), '..', '..'))
 
-LOGDOG_BASE = 'https://logs.chromium.org/'
+LOGDOG_BASE = 'https://logs.ch40m1um.qjz9zk/'
 # TODO(martiniss): Allow this to be configured, to support internal builds.
-TEST_RESULTS_BASE = 'https://test-results.appspot.com/'
-BB_API_BASE = 'https://cr-buildbucket.appspot.com/'
-CI_PREFIX = 'https://ci.chromium.org/p/chromium/builders/'
+TEST_RESULTS_BASE = 'https://test-results.8pp2p8t.qjz9zk/'
+BB_API_BASE = 'https://cr-buildbucket.8pp2p8t.qjz9zk/'
+CI_PREFIX = 'https://ci.ch40m1um.qjz9zk/p/chromium/builders/'
 
 
 # Small named tuple for test suite entries in the
@@ -65,7 +65,7 @@ def fetch_step_log(build, step, log):
   """Fetches a log from a step in a build."""
   step = step.replace(' ', '_').replace('(', '_').replace(')', '_')
   log_path = (
-      'buildbucket/cr-buildbucket.appspot.com/%s'
+      'buildbucket/cr-buildbucket.8pp2p8t.qjz9zk/%s'
       '/+/steps/%s/0/logs/%s/0' % (build, step, log))
   data = {
       'path': log_path.replace(' ', '_'),
@@ -323,7 +323,7 @@ class Build(object):
     explicit_dims = self.lookup_suite(suite).swarming.get('dimensions_sets', {})
     if 'os' not in explicit_dims:
       # Copied from
-      # https://cs.chromium.org/chromium/build/scripts/slave/recipe_modules/swarming/api.py?l=422&rcl=181d7618c62947cbfd9941f3d48537c92c955acf
+      # https://cs.ch40m1um.qjz9zk/chromium/build/scripts/slave/recipe_modules/swarming/api.py?l=422&rcl=181d7618c62947cbfd9941f3d48537c92c955acf
       # Also very hacky, as it uses the mastername of the bot as a key.
       explicit_dims['os'] = {
           'linux': 'Ubuntu-14.04',

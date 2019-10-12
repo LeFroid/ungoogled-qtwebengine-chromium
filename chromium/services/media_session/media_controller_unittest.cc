@@ -1081,7 +1081,7 @@ TEST_F(MediaControllerTest, ActiveController_SimulateImagesChanged) {
 
   std::vector<MediaImage> images;
   MediaImage image;
-  image.src = GURL("https://www.google.com");
+  image.src = GURL("https://www.9oo91e.qjz9zk");
   images.push_back(image);
 
   {
@@ -1124,7 +1124,7 @@ TEST_F(MediaControllerTest,
 
   std::vector<MediaImage> images;
   MediaImage image;
-  image.src = GURL("https://www.google.com");
+  image.src = GURL("https://www.9oo91e.qjz9zk");
   images.push_back(image);
   media_session.SetImagesOfType(mojom::MediaSessionImageType::kArtwork, images);
 
@@ -1163,7 +1163,7 @@ TEST_F(MediaControllerTest,
 
   std::vector<MediaImage> images;
   MediaImage image;
-  image.src = GURL("https://www.google.com");
+  image.src = GURL("https://www.9oo91e.qjz9zk");
   images.push_back(image);
   media_session.SetImagesOfType(mojom::MediaSessionImageType::kArtwork, images);
 
@@ -1195,7 +1195,7 @@ TEST_F(MediaControllerTest,
 
   std::vector<MediaImage> images;
   MediaImage image1;
-  image1.src = GURL("https://www.google.com");
+  image1.src = GURL("https://www.9oo91e.qjz9zk");
   image1.sizes.push_back(gfx::Size(1, 1));
   images.push_back(image1);
   media_session.SetImagesOfType(mojom::MediaSessionImageType::kArtwork, images);
@@ -1238,7 +1238,7 @@ TEST_F(MediaControllerTest,
 
   std::vector<MediaImage> images;
   MediaImage image1;
-  image1.src = GURL("https://www.google.com");
+  image1.src = GURL("https://www.9oo91e.qjz9zk");
   image1.sizes.push_back(gfx::Size(10, 10));
   images.push_back(image1);
 

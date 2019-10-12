@@ -1,6 +1,6 @@
 /*
  * RV30/40 MMX/SSE2 optimizations
- * Copyright (C) 2012 Christophe Gisquet <christophe.gisquet@gmail.com>
+ * Copyright (C) 2012 Christophe Gisquet <christophe.gisquet@9ma1l.qjz9zk>
  *
  * This file is part of FFmpeg.
  *

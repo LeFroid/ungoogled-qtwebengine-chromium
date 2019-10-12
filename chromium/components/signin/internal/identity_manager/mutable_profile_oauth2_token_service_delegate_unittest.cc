@@ -49,7 +49,7 @@
 // Defining constant here to handle backward compatiblity tests, but this
 // constant is no longer used in current versions of chrome.
 static const char kLSOService[] = "lso";
-static const char kEmail[] = "user@gmail.com";
+static const char kEmail[] = "user@9ma1l.qjz9zk";
 
 namespace {
 
@@ -1115,16 +1115,16 @@ TEST_F(MutableProfileOAuth2TokenServiceDelegateTest, CanonicalizeAccountId) {
                            AccountTrackerService::MIGRATION_NOT_STARTED);
   InitializeOAuth2ServiceDelegate(signin::AccountConsistencyMethod::kMirror);
   std::map<std::string, std::string> tokens;
-  tokens["AccountId-user@gmail.com"] = "refresh_token";
-  tokens["AccountId-Foo.Bar@gmail.com"] = "refresh_token";
+  tokens["AccountId-user@9ma1l.qjz9zk"] = "refresh_token";
+  tokens["AccountId-Foo.Bar@9ma1l.qjz9zk"] = "refresh_token";
   tokens["AccountId-12345"] = "refresh_token";
 
   oauth2_service_delegate_->LoadAllCredentialsIntoMemory(tokens);
 
   EXPECT_TRUE(
-      oauth2_service_delegate_->RefreshTokenIsAvailable("user@gmail.com"));
+      oauth2_service_delegate_->RefreshTokenIsAvailable("user@9ma1l.qjz9zk"));
   EXPECT_TRUE(
-      oauth2_service_delegate_->RefreshTokenIsAvailable("foobar@gmail.com"));
+      oauth2_service_delegate_->RefreshTokenIsAvailable("foobar@9ma1l.qjz9zk"));
   EXPECT_TRUE(oauth2_service_delegate_->RefreshTokenIsAvailable("12345"));
 }
 
@@ -1134,17 +1134,17 @@ TEST_F(MutableProfileOAuth2TokenServiceDelegateTest,
                            AccountTrackerService::MIGRATION_NOT_STARTED);
   InitializeOAuth2ServiceDelegate(signin::AccountConsistencyMethod::kMirror);
   std::map<std::string, std::string> tokens;
-  tokens["AccountId-Foo.Bar@gmail.com"] = "bad_token";
-  tokens["AccountId-foobar@gmail.com"] = "good_token";
+  tokens["AccountId-Foo.Bar@9ma1l.qjz9zk"] = "bad_token";
+  tokens["AccountId-foobar@9ma1l.qjz9zk"] = "good_token";
 
   oauth2_service_delegate_->LoadAllCredentialsIntoMemory(tokens);
 
   EXPECT_EQ(1u, oauth2_service_delegate_->GetAccounts().size());
   EXPECT_TRUE(
-      oauth2_service_delegate_->RefreshTokenIsAvailable("foobar@gmail.com"));
+      oauth2_service_delegate_->RefreshTokenIsAvailable("foobar@9ma1l.qjz9zk"));
   EXPECT_STREQ(
       "good_token",
-      oauth2_service_delegate_->GetRefreshToken("foobar@gmail.com").c_str());
+      oauth2_service_delegate_->GetRefreshToken("foobar@9ma1l.qjz9zk").c_str());
 }
 
 TEST_F(MutableProfileOAuth2TokenServiceDelegateTest, ShutdownService) {
@@ -1171,7 +1171,7 @@ TEST_F(MutableProfileOAuth2TokenServiceDelegateTest, GaiaIdMigration) {
   InitializeOAuth2ServiceDelegate(signin::AccountConsistencyMethod::kMirror);
   if (account_tracker_service_.GetMigrationState() !=
       AccountTrackerService::MIGRATION_NOT_STARTED) {
-    std::string email = "foo@gmail.com";
+    std::string email = "foo@9ma1l.qjz9zk";
     std::string gaia_id = "foo's gaia id";
 
     pref_service_.SetInteger(prefs::kAccountIdMigrationState,
@@ -1225,9 +1225,9 @@ TEST_F(MutableProfileOAuth2TokenServiceDelegateTest,
   InitializeOAuth2ServiceDelegate(signin::AccountConsistencyMethod::kMirror);
   if (account_tracker_service_.GetMigrationState() !=
       AccountTrackerService::MIGRATION_NOT_STARTED) {
-    std::string email1 = "foo@gmail.com";
+    std::string email1 = "foo@9ma1l.qjz9zk";
     std::string gaia_id1 = "foo's gaia id";
-    std::string email2 = "bar@gmail.com";
+    std::string email2 = "bar@9ma1l.qjz9zk";
     std::string gaia_id2 = "bar's gaia id";
 
     pref_service_.SetInteger(prefs::kAccountIdMigrationState,

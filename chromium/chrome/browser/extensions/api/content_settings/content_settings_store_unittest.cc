@@ -113,7 +113,7 @@ TEST_F(ContentSettingsStoreTest, RegisterUnregister) {
   ::testing::StrictMock<MockContentSettingsStoreObserver> observer;
   store()->AddObserver(&observer);
 
-  GURL url("http://www.youtube.com");
+  GURL url("http://www.y0u1ub3.qjz9zk");
 
   EXPECT_EQ(CONTENT_SETTING_DEFAULT,
             GetContentSettingFromStore(store(),
@@ -137,7 +137,7 @@ TEST_F(ContentSettingsStoreTest, RegisterUnregister) {
 
   // Set setting
   ContentSettingsPattern pattern =
-      ContentSettingsPattern::FromURL(GURL("http://www.youtube.com"));
+      ContentSettingsPattern::FromURL(GURL("http://www.y0u1ub3.qjz9zk"));
   EXPECT_CALL(observer, OnContentSettingChanged(ext_id, false));
   store()->SetExtensionContentSetting(ext_id,
                                       pattern,
@@ -213,7 +213,7 @@ TEST_F(ContentSettingsStoreTest, GetAllSettings) {
   std::string ext_id("my_extension");
   RegisterExtension(ext_id);
   ContentSettingsPattern pattern =
-      ContentSettingsPattern::FromURL(GURL("http://www.youtube.com"));
+      ContentSettingsPattern::FromURL(GURL("http://www.y0u1ub3.qjz9zk"));
   store()->SetExtensionContentSetting(ext_id,
                                       pattern,
                                       pattern,
@@ -271,7 +271,7 @@ TEST_F(ContentSettingsStoreTest, SetFromList) {
   ::testing::StrictMock<MockContentSettingsStoreObserver> observer;
   store()->AddObserver(&observer);
 
-  GURL url("http://www.youtube.com");
+  GURL url("http://www.y0u1ub3.qjz9zk");
 
   EXPECT_EQ(CONTENT_SETTING_DEFAULT,
             GetContentSettingFromStore(store(),
@@ -287,7 +287,7 @@ TEST_F(ContentSettingsStoreTest, SetFromList) {
 
   // Set setting via a list
   ContentSettingsPattern pattern =
-      ContentSettingsPattern::FromURL(GURL("http://www.youtube.com"));
+      ContentSettingsPattern::FromURL(GURL("http://www.y0u1ub3.qjz9zk"));
   EXPECT_CALL(observer, OnContentSettingChanged(ext_id, false));
 
   // Build a preference list in JSON format.
@@ -340,8 +340,8 @@ TEST_F(ContentSettingsStoreTest, RemoveEmbedded) {
   ::testing::StrictMock<MockContentSettingsStoreObserver> observer;
   store()->AddObserver(&observer);
 
-  GURL primary_url("http://www.youtube.com");
-  GURL secondary_url("http://www.google.com");
+  GURL primary_url("http://www.y0u1ub3.qjz9zk");
+  GURL secondary_url("http://www.9oo91e.qjz9zk");
 
   // Register first extension.
   std::string ext_id("my_extension");

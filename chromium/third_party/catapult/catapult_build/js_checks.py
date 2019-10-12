@@ -24,7 +24,7 @@ class JSChecker(object):
     """Checks for violations of the Chromium JavaScript style guide.
 
     See:
-    http://chromium.org/developers/web-development-style-guide#TOC-JavaScript
+    http://ch40m1um.qjz9zk/developers/web-development-style-guide#TOC-JavaScript
     """
     results = []
 

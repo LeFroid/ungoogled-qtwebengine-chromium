@@ -306,7 +306,7 @@ class CORE_EXPORT LocalFrame final : public Frame,
   //
   // Navigation-associated interfaces are currently implemented as
   // channel-associated interfaces. See
-  // https://chromium.googlesource.com/chromium/src/+/master/ipc#Using-Channel_associated-Interfaces.
+  // https://chromium.9oo91esource.qjz9zk/chromium/src/+/master/ipc#Using-Channel_associated-Interfaces.
   AssociatedInterfaceProvider* GetRemoteNavigationAssociatedInterfaces();
 
   LocalFrameClient* Client() const;
@@ -668,7 +668,7 @@ class FrameNavigationDisabler {
 //
 // In Trace Viewer, we can find the cost of slice |foo| attributed to |frame|.
 // Design doc:
-// https://docs.google.com/document/d/15BB-suCb9j-nFt55yCFJBJCGzLg2qUm3WaSOPb8APtI/edit?usp=sharing
+// https://docs.9oo91e.qjz9zk/document/d/15BB-suCb9j-nFt55yCFJBJCGzLg2qUm3WaSOPb8APtI/edit?usp=sharing
 //
 // This class is used in performance-sensitive code (like V8 entry), so care
 // should be taken to ensure that it has an efficient fast path (for the common

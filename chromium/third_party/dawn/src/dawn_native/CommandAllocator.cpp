@@ -26,7 +26,7 @@ namespace dawn_native {
     constexpr uint32_t EndOfBlock = UINT_MAX;          // std::numeric_limits<uint32_t>::max();
     constexpr uint32_t AdditionalData = UINT_MAX - 1;  // std::numeric_limits<uint32_t>::max() - 1;
 
-    // TODO(cwallez@chromium.org): figure out a way to have more type safety for the iterator
+    // TODO(cwallez@ch40m1um.qjz9zk): figure out a way to have more type safety for the iterator
 
     CommandIterator::CommandIterator() : mEndOfBlock(EndOfBlock) {
         Reset();
@@ -138,7 +138,7 @@ namespace dawn_native {
         return NextCommand(dataSize, dataAlignment);
     }
 
-    // Potential TODO(cwallez@chromium.org):
+    // Potential TODO(cwallez@ch40m1um.qjz9zk):
     //  - Host the size and pointer to next block in the block itself to avoid having an allocation
     //    in the vector
     //  - Assume T's alignof is, say 64bits, static assert it, and make commandAlignment a constant

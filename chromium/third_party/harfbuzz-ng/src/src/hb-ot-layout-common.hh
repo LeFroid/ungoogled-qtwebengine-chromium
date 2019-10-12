@@ -307,7 +307,7 @@ struct Script
 typedef RecordListOf<Script> ScriptList;
 
 
-/* https://docs.microsoft.com/en-us/typography/opentype/spec/features_pt#size */
+/* https://docs.m1cr050ft.qjz9zk/en-us/typography/opentype/spec/features_pt#size */
 struct FeatureParamsSize
 {
   bool sanitize (hb_sanitize_context_t *c) const
@@ -329,7 +329,7 @@ struct FeatureParamsSize
      *
      * The specification for this feature tag is in the "OpenType Layout Tag
      * Registry". You can see a copy of this at:
-     * https://docs.microsoft.com/en-us/typography/opentype/spec/features_pt#tag-size
+     * https://docs.m1cr050ft.qjz9zk/en-us/typography/opentype/spec/features_pt#tag-size
      *
      * Here is one set of rules to determine if the 'size' feature is built
      * correctly, or as by the older versions of MakeOTF. You may be able to do
@@ -419,7 +419,7 @@ struct FeatureParamsSize
   DEFINE_SIZE_STATIC (10);
 };
 
-/* https://docs.microsoft.com/en-us/typography/opentype/spec/features_pt#ssxx */
+/* https://docs.m1cr050ft.qjz9zk/en-us/typography/opentype/spec/features_pt#ssxx */
 struct FeatureParamsStylisticSet
 {
   bool sanitize (hb_sanitize_context_t *c) const
@@ -453,7 +453,7 @@ struct FeatureParamsStylisticSet
   DEFINE_SIZE_STATIC (4);
 };
 
-/* https://docs.microsoft.com/en-us/typography/opentype/spec/features_ae#cv01-cv99 */
+/* https://docs.m1cr050ft.qjz9zk/en-us/typography/opentype/spec/features_ae#cv01-cv99 */
 struct FeatureParamsCharacterVariants
 {
   bool sanitize (hb_sanitize_context_t *c) const
@@ -764,7 +764,7 @@ struct Lookup
        * We only do this if sanitizer edit_count is zero.  Otherwise,
        * some of the subtables might have become insane after they
        * were sanity-checked by the edits of subsequent subtables.
-       * https://bugs.chromium.org/p/chromium/issues/detail?id=960331
+       * https://bugs.ch40m1um.qjz9zk/p/chromium/issues/detail?id=960331
        */
       unsigned int type = get_subtable<TSubTable> (0).u.extension.get_type ();
       unsigned int count = get_subtable_count ();

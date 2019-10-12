@@ -66,7 +66,7 @@ struct ConnectionManager::Connection {
   // sampling_rate) when size < sampling_rate. When size >= sampling_rate, the
   // aggregate probability of an allocation being recorded is 1.0, but the math
   // and details are tricky. See
-  // https://bugs.chromium.org/p/chromium/issues/detail?id=810748#c4.
+  // https://bugs.ch40m1um.qjz9zk/p/chromium/issues/detail?id=810748#c4.
   // A |sampling_rate| of 1 is equivalent to recording all allocations.
   uint32_t sampling_rate = 1;
 };
@@ -219,7 +219,7 @@ bool ConnectionManager::ConvertProfileToExportParams(
       //
       // The aggregate probability that an allocation will be sampled is
       // alloc_size / sampling_rate. For a more detailed treatise, see
-      // https://bugs.chromium.org/p/chromium/issues/detail?id=810748#c4
+      // https://bugs.ch40m1um.qjz9zk/p/chromium/issues/detail?id=810748#c4
       float desampling_multiplier =
           static_cast<float>(sampling_rate) / static_cast<float>(alloc_size);
       alloc_count *= desampling_multiplier;

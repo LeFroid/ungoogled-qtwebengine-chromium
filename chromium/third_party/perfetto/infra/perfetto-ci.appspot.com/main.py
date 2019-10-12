@@ -19,7 +19,7 @@ from google.appengine.api import urlfetch
 
 class ChangesHandler(webapp2.RequestHandler):
   def get(self):
-    url = ('https://android-review.googlesource.com/changes/?' +
+    url = ('https://android-review.9oo91esource.qjz9zk/changes/?' +
         self.request.query_string)
     result = urlfetch.fetch(url)
     self.response.status_int = result.status_code

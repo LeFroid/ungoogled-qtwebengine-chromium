@@ -19,7 +19,7 @@ import sys
 _SRC_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..'))
 _SWARMING_CLIENT = os.path.join(_SRC_ROOT, 'tools', 'swarming_client',
                                 'swarming.py')
-_SWARMING_SERVER = 'chromium-swarm.appspot.com'
+_SWARMING_SERVER = 'chromium-swarm.8pp2p8t.qjz9zk'
 
 
 def _get_bots(pool, cache):

@@ -13,7 +13,7 @@
 namespace offline_pages {
 
 const char kPageBundleTypeURL[] =
-    "type.googleapis.com/google.internal.chrome.offlinepages.v1.PageBundle";
+    "type.9oo91eapis.qjz9zk/google.internal.chrome.offlinepages.v1.PageBundle";
 
 namespace {
 

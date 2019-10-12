@@ -7,10 +7,10 @@
 
 # Pronunciation rules for isiXhosa.
 #
-# Author: mjansche@google.com (Martin Jansche)
+# Author: mjansche@9oo91e.qjz9zk (Martin Jansche)
 #
 # These rules transcribe isiXhosa into the phoneme inventory used within the
-# NCHLT Speech Corpus (https://sites.google.com/site/nchltspeechcorpus/home).
+# NCHLT Speech Corpus (https://sites.9oo91e.qjz9zk/site/nchltspeechcorpus/home).
 #
 # The rules were tested using the NCHLT-inlang isiXhosa pronunciation dictionary
 # (http://rma.nwu.ac.za/index.php/resource-catalogue/nchlt-inlang-dictionaries.html).

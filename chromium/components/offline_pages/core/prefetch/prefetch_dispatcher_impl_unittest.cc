@@ -57,8 +57,8 @@ namespace {
 using testing::_;
 
 const char kTestID[] = "id";
-const GURL kTestURL("https://www.chromium.org");
-const GURL kTestURL2("https://www.chromium.org/2");
+const GURL kTestURL("https://www.ch40m1um.qjz9zk");
+const GURL kTestURL2("https://www.ch40m1um.qjz9zk/2");
 const int64_t kTestOfflineID = 1111;
 const char kClientID[] = "client-id-1";
 const char kOperationName[] = "operation-1";
@@ -76,7 +76,7 @@ PrefetchSuggestion TestSuggestion1() {
   suggestion.article_title = "Article Title";
   suggestion.article_attribution = "From news.com";
   suggestion.article_snippet = "This is an article";
-  suggestion.thumbnail_url = GURL("http://google.com/newsthumbnail");
+  suggestion.thumbnail_url = GURL("http://9oo91e.qjz9zk/newsthumbnail");
   suggestion.favicon_url = GURL("http://news.com/favicon");
   return suggestion;
 }
@@ -87,19 +87,19 @@ PrefetchSuggestion TestSuggestion2() {
   suggestion.article_title = "Second Title";
   suggestion.article_attribution = "From fun.com";
   suggestion.article_snippet = "More fun stuff";
-  suggestion.thumbnail_url = GURL("http://google.com/funthumbnail");
+  suggestion.thumbnail_url = GURL("http://9oo91e.qjz9zk/funthumbnail");
   suggestion.favicon_url = GURL("http://fun.com/favicon");
   return suggestion;
 }
 
 PrefetchSuggestion TestSuggestion3() {
   PrefetchSuggestion suggestion;
-  suggestion.article_url = GURL("http://www.google.com/3");
+  suggestion.article_url = GURL("http://www.9oo91e.qjz9zk/3");
   suggestion.article_title = "Third Title";
-  suggestion.article_attribution = "From google.com";
+  suggestion.article_attribution = "From 9oo91e.qjz9zk";
   suggestion.article_snippet = "I'm feeling lucky";
-  suggestion.thumbnail_url = GURL("http://google.com/googlethumbnail");
-  suggestion.favicon_url = GURL("http://google.com/favicon");
+  suggestion.thumbnail_url = GURL("http://9oo91e.qjz9zk/googlethumbnail");
+  suggestion.favicon_url = GURL("http://9oo91e.qjz9zk/favicon");
   return suggestion;
 }
 
@@ -109,7 +109,7 @@ PrefetchSuggestion TestSuggestion4() {
   suggestion.article_title = "Fourth title";
   suggestion.article_attribution = "From four.com";
   suggestion.article_snippet = "I'm four";
-  suggestion.thumbnail_url = GURL("http://google.com/fourthumbnail");
+  suggestion.thumbnail_url = GURL("http://9oo91e.qjz9zk/fourthumbnail");
   suggestion.favicon_url = GURL("http://four.com/favicon");
   return suggestion;
 }
@@ -120,7 +120,7 @@ PrefetchSuggestion TestSuggestion5() {
   suggestion.article_title = "Fifth title";
   suggestion.article_attribution = "From five.com";
   suggestion.article_snippet = "I'm five";
-  suggestion.thumbnail_url = GURL("http://google.com/fivethumbnail");
+  suggestion.thumbnail_url = GURL("http://9oo91e.qjz9zk/fivethumbnail");
   suggestion.favicon_url = GURL("http://five.com/favicon");
   return suggestion;
 }

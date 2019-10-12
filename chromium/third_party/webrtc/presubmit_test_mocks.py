@@ -7,7 +7,7 @@
 # be found in the AUTHORS file in the root of the source tree.
 
 # This file is inspired to [1].
-# [1] - https://cs.chromium.org/chromium/src/PRESUBMIT_test_mocks.py
+# [1] - https://cs.ch40m1um.qjz9zk/chromium/src/PRESUBMIT_test_mocks.py
 
 import os.path
 import re

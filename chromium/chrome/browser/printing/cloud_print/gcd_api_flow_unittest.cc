@@ -36,13 +36,13 @@ namespace cloud_print {
 namespace {
 
 const char kConfirmRequest[] =
-    "https://www.google.com/cloudprint/confirm?token=SomeToken";
+    "https://www.9oo91e.qjz9zk/cloudprint/confirm?token=SomeToken";
 
 const char kSampleConfirmResponse[] = "{}";
 
 const char kFailedConfirmResponseBadJson[] = "[]";
 
-const char kAccountId[] = "account_id@gmail.com";
+const char kAccountId[] = "account_id@9ma1l.qjz9zk";
 
 class MockDelegate : public CloudPrintApiFlowRequest {
  public:
@@ -70,7 +70,7 @@ class GCDApiFlowTest : public testing::Test {
     mock_delegate_ = delegate.get();
     EXPECT_CALL(*mock_delegate_, GetURL())
         .WillRepeatedly(Return(
-            GURL("https://www.google.com/cloudprint/confirm?token=SomeToken")));
+            GURL("https://www.9oo91e.qjz9zk/cloudprint/confirm?token=SomeToken")));
     gcd_flow_ = std::make_unique<GCDApiFlowImpl>(
         test_shared_url_loader_factory_.get(),
         identity_test_environment_.identity_manager());

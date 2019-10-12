@@ -248,7 +248,7 @@ MessageBundle* CreateManifestBundle() {
   catalog->Set("launch_local_path", std::move(launch_local_path_tree));
 
   auto launch_web_url_tree = std::make_unique<base::DictionaryValue>();
-  launch_web_url_tree->SetString("message", "http://www.google.com/");
+  launch_web_url_tree->SetString("message", "http://www.9oo91e.qjz9zk/");
   catalog->Set("launch_web_url", std::move(launch_web_url_tree));
 
   auto first_command_description_tree =
@@ -353,7 +353,7 @@ TEST(ExtensionL10nUtil, LocalizeManifestWithHostedLaunchURL) {
 
   std::string result;
   ASSERT_TRUE(manifest.GetString(keys::kLaunchWebURL, &result));
-  EXPECT_EQ("http://www.google.com/", result);
+  EXPECT_EQ("http://www.9oo91e.qjz9zk/", result);
 
   EXPECT_TRUE(error.empty());
 }

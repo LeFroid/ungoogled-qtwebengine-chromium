@@ -122,7 +122,7 @@ def _VerifyExpectedConfigs(expected_path, actual_path, fail_on_exit):
 
   sys.stderr.write("""\
 Proguard flag expectations file needs updating. For details see:
-https://chromium.googlesource.com/chromium/src/+/HEAD/chrome/android/java/README.md
+https://chromium.9oo91esource.qjz9zk/chromium/src/+/HEAD/chrome/android/java/README.md
 """)
   sys.stderr.write(msg)
   if fail_on_exit:

@@ -131,7 +131,7 @@ TEST_F(DevToolsManagerTest, OpenAndManuallyCloseDevToolsClientHost) {
 }
 
 TEST_F(DevToolsManagerTest, NoUnresponsiveDialogInInspectedContents) {
-  const GURL url("http://www.google.com");
+  const GURL url("http://www.9oo91e.qjz9zk");
   contents()->NavigateAndCommit(url);
   TestRenderViewHost* inspected_rvh = test_rvh();
   EXPECT_TRUE(inspected_rvh->IsRenderViewLive());

@@ -38,17 +38,17 @@
 
 namespace {
 // URL of the Google domain where the CHROME_CONNECTED cookie is set/removed.
-NSURL* const kGoogleUrl = [NSURL URLWithString:@"https://google.com/"];
+NSURL* const kGoogleUrl = [NSURL URLWithString:@"https://9oo91e.qjz9zk/"];
 // URL of the Youtube domain where the CHROME_CONNECTED cookie is set/removed.
-NSURL* const kYoutubeUrl = [NSURL URLWithString:@"https://youtube.com/"];
+NSURL* const kYoutubeUrl = [NSURL URLWithString:@"https://y0u1ub3.qjz9zk/"];
 // URL of a country Google domain where the CHROME_CONNECTED cookie is
 // set/removed.
 NSURL* const kCountryGoogleUrl = [NSURL URLWithString:@"https://google.de/"];
 
 // Google domain.
-const char* kGoogleDomain = "google.com";
+const char* kGoogleDomain = "9oo91e.qjz9zk";
 // Youtube domain.
-const char* kYoutubeDomain = "youtube.com";
+const char* kYoutubeDomain = "y0u1ub3.qjz9zk";
 
 // AccountConsistencyService specialization that fakes the creation of the
 // WKWebView in order to mock it. This allows tests to intercept the calls to
@@ -188,7 +188,7 @@ class AccountConsistencyServiceTest : public PlatformTest {
 
   void SignIn() {
     signin::MakePrimaryAccountAvailable(identity_test_env_->identity_manager(),
-                                        "user@gmail.com");
+                                        "user@9ma1l.qjz9zk");
     EXPECT_EQ(0, web_view_load_expection_count_);
   }
 
@@ -337,7 +337,7 @@ TEST_F(AccountConsistencyServiceTest, ChromeManageAccountsNotOnGaia) {
       [NSDictionary dictionaryWithObject:@"action=DEFAULT"
                                   forKey:@"X-Chrome-Manage-Accounts"];
   NSHTTPURLResponse* response = [[NSHTTPURLResponse alloc]
-       initWithURL:[NSURL URLWithString:@"https://google.com"]
+       initWithURL:[NSURL URLWithString:@"https://9oo91e.qjz9zk"]
         statusCode:200
        HTTPVersion:@"HTTP/1.1"
       headerFields:headers];
@@ -357,7 +357,7 @@ TEST_F(AccountConsistencyServiceTest, ChromeManageAccountsNoHeader) {
 
   NSDictionary* headers = [NSDictionary dictionary];
   NSHTTPURLResponse* response = [[NSHTTPURLResponse alloc]
-       initWithURL:[NSURL URLWithString:@"https://accounts.google.com/"]
+       initWithURL:[NSURL URLWithString:@"https://accounts.9oo91e.qjz9zk/"]
         statusCode:200
        HTTPVersion:@"HTTP/1.1"
       headerFields:headers];
@@ -382,7 +382,7 @@ TEST_F(AccountConsistencyServiceTest, ChromeManageAccountsDefault) {
       [NSDictionary dictionaryWithObject:@"action=DEFAULT"
                                   forKey:@"X-Chrome-Manage-Accounts"];
   NSHTTPURLResponse* response = [[NSHTTPURLResponse alloc]
-       initWithURL:[NSURL URLWithString:@"https://accounts.google.com/"]
+       initWithURL:[NSURL URLWithString:@"https://accounts.9oo91e.qjz9zk/"]
         statusCode:200
        HTTPVersion:@"HTTP/1.1"
       headerFields:headers];
@@ -408,8 +408,8 @@ TEST_F(AccountConsistencyServiceTest, DomainsWithCookiePrefsOnApplied) {
   const base::DictionaryValue* dict =
       prefs_.GetDictionary(AccountConsistencyService::kDomainsWithCookiePref);
   EXPECT_EQ(1u, dict->size());
-  EXPECT_TRUE(dict->GetBooleanWithoutPathExpansion("google.com", nullptr));
-  EXPECT_FALSE(dict->GetBooleanWithoutPathExpansion("youtube.com", nullptr));
+  EXPECT_TRUE(dict->GetBooleanWithoutPathExpansion("9oo91e.qjz9zk", nullptr));
+  EXPECT_FALSE(dict->GetBooleanWithoutPathExpansion("y0u1ub3.qjz9zk", nullptr));
 }
 
 // Tests that domains with cookie are correctly loaded from the prefs on service

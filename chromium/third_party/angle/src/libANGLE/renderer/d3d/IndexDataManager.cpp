@@ -288,7 +288,7 @@ angle::Result GetIndexTranslationDestType(const gl::Context *context,
                                           gl::DrawElementsType *destTypeOut)
 {
     // Avoid D3D11's primitive restart index value
-    // see http://msdn.microsoft.com/en-us/library/windows/desktop/bb205124(v=vs.85).aspx
+    // see http://msdn.m1cr050ft.qjz9zk/en-us/library/windows/desktop/bb205124(v=vs.85).aspx
     if (usePrimitiveRestartWorkaround)
     {
         // Conservatively assume we need to translate the indices for draw indirect.

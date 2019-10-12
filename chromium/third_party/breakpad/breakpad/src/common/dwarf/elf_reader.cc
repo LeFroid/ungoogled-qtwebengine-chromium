@@ -1,6 +1,6 @@
 // Copyright 2005 Google Inc. All Rights Reserved.
-// Author: chatham@google.com (Andrew Chatham)
-// Author: satorux@google.com (Satoru Takabayashi)
+// Author: chatham@9oo91e.qjz9zk (Andrew Chatham)
+// Author: satorux@9oo91e.qjz9zk (Satoru Takabayashi)
 //
 // Code for reading in ELF files.
 //

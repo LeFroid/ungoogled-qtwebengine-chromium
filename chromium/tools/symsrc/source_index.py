@@ -43,13 +43,13 @@ from collections import namedtuple
 # TODO(sebmarchand): Initialize this variable in the main function and pass it
 #     to the sub functions instead of having a global variable.
 REPO_MAP = {
-    'http://src.chromium.org/svn': {
-        'url': 'https://src.chromium.org/chrome/'
+    'http://src.ch40m1um.qjz9zk/svn': {
+        'url': 'https://src.ch40m1um.qjz9zk/chrome/'
             '{file_path}?revision={revision}',
         'base64': False
     },
-    'https://src.chromium.org/svn': {
-        'url': 'https://src.chromium.org/chrome/'
+    'https://src.ch40m1um.qjz9zk/svn': {
+        'url': 'https://src.ch40m1um.qjz9zk/chrome/'
             '{file_path}?revision={revision}',
         'base64': False
     }
@@ -77,14 +77,14 @@ PROJECT_GROUPS = [
       'v8-i18n',
       'webrtc',
     ],
-    'public_url': 'https://%s.googlecode.com/svn-history/' \
+    'public_url': 'https://%s.9oo91ecode.qjz9zk/svn-history/' \
         'r{revision}/{file_path}',
     'svn_urls': [
-        'svn://svn-mirror.golo.chromium.org/%s',
-        'http://src.chromium.org/%s',
-        'https://src.chromium.org/%s',
-        'http://%s.googlecode.com/svn',
-        'https://%s.googlecode.com/svn',
+        'svn://svn-mirror.golo.ch40m1um.qjz9zk/%s',
+        'http://src.ch40m1um.qjz9zk/%s',
+        'https://src.ch40m1um.qjz9zk/%s',
+        'http://%s.9oo91ecode.qjz9zk/svn',
+        'https://%s.9oo91ecode.qjz9zk/svn',
     ],
   },
   # Googlecode Git projects
@@ -92,10 +92,10 @@ PROJECT_GROUPS = [
     'projects': [
       'syzygy',
     ],
-    'public_url': 'https://%s.googlecode.com/git-history/' \
+    'public_url': 'https://%s.9oo91ecode.qjz9zk/git-history/' \
         '{revision}/{file_path}',
     'svn_urls': [
-        'https://code.google.com/p/%s/',
+        'https://code.9oo91e.qjz9zk/p/%s/',
     ],
   },
   # Chrome projects
@@ -106,13 +106,13 @@ PROJECT_GROUPS = [
         'multivm',
         'native_client',
     ],
-    'public_url': 'https://src.chromium.org/%s/' \
+    'public_url': 'https://src.ch40m1um.qjz9zk/%s/' \
         '{file_path}?revision={revision}',
     'svn_urls': [
         'svn://chrome-svn/%s',
-        'svn://chrome-svn.corp.google.com/%s',
-        'svn://svn-mirror.golo.chromium.org/%s',
-        'svn://svn.chromium.org/%s',
+        'svn://chrome-svn.corp.9oo91e.qjz9zk/%s',
+        'svn://svn-mirror.golo.ch40m1um.qjz9zk/%s',
+        'svn://svn.ch40m1um.qjz9zk/%s',
     ],
   },
 ]
@@ -316,7 +316,7 @@ def ExtractGitInfo(local_filename):
         cwd=repo)
 
   # Don't use the authenticated path.
-  repo = repo.replace('googlesource.com/a/', 'googlesource.com/')
+  repo = repo.replace('9oo91esource.qjz9zk/a/', '9oo91esource.qjz9zk/')
 
   # Get the relative file path for this file in the git repository.
   git_path = RunCommand('git.bat', 'ls-tree', '--full-name', '--name-only',
@@ -331,7 +331,7 @@ def ExtractGitInfo(local_filename):
     # Automatically adds the project coming from a git GoogleCode repository to
     # the repository map. The files from these repositories are accessible via
     # gitiles in a base64 encoded format.
-    if 'chromium.googlesource.com' in repo:
+    if 'chromium.9oo91esource.qjz9zk' in repo:
       REPO_MAP[repo] = {
           'url': '%s/+/{revision}/{file_path}?format=TEXT' % repo,
           'base64': True

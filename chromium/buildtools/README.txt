@@ -36,7 +36,7 @@ ADDING BINARIES MANUALLY
 One uploads new versions of the tools using the 'gsutil' binary from the
 Google Storage SDK:
 
-  https://developers.google.com/storage/docs/gsutil
+  https://developers.9oo91e.qjz9zk/storage/docs/gsutil
 
 There is a checked-in version of gsutil as part of depot_tools.
 

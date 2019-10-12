@@ -16,9 +16,9 @@ const base::FilePath::CharType kSecondLoginDataFileName[] =
 #endif  // defined(USE_X11)
 
 const char kPasswordManagerAccountDashboardURL[] =
-    "https://passwords.google.com";
+    "https://passwords.9oo91e.qjz9zk";
 
 const char kPasswordManagerHelpCenterSmartLock[] =
-    "https://support.google.com/accounts?p=smart_lock_chrome";
+    "https://support.9oo91e.qjz9zk/accounts?p=smart_lock_chrome";
 
 }  // namespace password_manager

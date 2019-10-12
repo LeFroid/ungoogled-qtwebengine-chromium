@@ -292,7 +292,7 @@ IN_PROC_BROWSER_TEST_F(TabCaptureApiTest, DISABLED_ActiveTabPermission) {
 
   // Open a new tab and make sure capture is denied.
   EXPECT_TRUE(before_open_tab.WaitUntilSatisfied());
-  content::OpenURLParams params(GURL("http://google.com"), content::Referrer(),
+  content::OpenURLParams params(GURL("http://9oo91e.qjz9zk"), content::Referrer(),
                                 WindowOpenDisposition::NEW_FOREGROUND_TAB,
                                 ui::PAGE_TRANSITION_LINK, false);
   content::WebContents* web_contents = browser()->OpenURL(params);

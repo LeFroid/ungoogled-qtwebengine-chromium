@@ -57,7 +57,7 @@ PUBLIC_XML_SNIPPET = """
 <rappor-metrics>
 
 <rappor-metric name="MultiD.TestMetric" type="SAFEBROWSING_RAPPOR_TYPE">
-  <owner>holte@chromium.org</owner>
+  <owner>holte@ch40m1um.qjz9zk</owner>
   <summary>
     Metric Summary.
   </summary>
@@ -77,7 +77,7 @@ PUBLIC_XML_SNIPPET = """
 
 <rappor-metric name="Search.DefaultSearchProvider" type="ETLD_PLUS_ONE">
   <owner>
-    holte@chromium.org
+    holte@ch40m1um.qjz9zk
   </owner>
   <summary>
 
@@ -175,7 +175,7 @@ PARSED_XML = {
                     },
                 ],
             }],
-            'owners': ['holte@chromium.org'],
+            'owners': ['holte@ch40m1um.qjz9zk'],
             'strings': [{
                 rappor_model.models.COMMENT_KEY: [],
                 'name': 'domain',
@@ -190,7 +190,7 @@ PARSED_XML = {
             rappor_model.models.COMMENT_KEY: [],
             'name': 'Search.DefaultSearchProvider',
             'flags': [],
-            'owners': ['holte@chromium.org'],
+            'owners': ['holte@ch40m1um.qjz9zk'],
             'strings': [],
             'summary': 'BLAH BLAH BLAH',
             'type': 'ETLD_PLUS_ONE',
@@ -240,7 +240,7 @@ PRETTY_PRINTED_XML = """<rappor-configuration>
 
 <rappor-metrics>
 <rappor-metric name="MultiD.TestMetric" type="SAFEBROWSING_RAPPOR_TYPE">
-  <owner>holte@chromium.org</owner>
+  <owner>holte@ch40m1um.qjz9zk</owner>
   <summary>
     Metric Summary.
   </summary>
@@ -259,7 +259,7 @@ PRETTY_PRINTED_XML = """<rappor-configuration>
 </rappor-metric>
 
 <rappor-metric name="Search.DefaultSearchProvider" type="ETLD_PLUS_ONE">
-  <owner>holte@chromium.org</owner>
+  <owner>holte@ch40m1um.qjz9zk</owner>
   <summary>
     BLAH BLAH BLAH
   </summary>
@@ -330,7 +330,7 @@ class RapporModelTest(unittest.TestCase):
     valid_metric = {
         'name': 'Search.DefaultSearchProvider',
         'flags': [],
-        'owners': ['holte@chromium.org'],
+        'owners': ['holte@ch40m1um.qjz9zk'],
         'strings': [],
         'summary': 'BLAH BLAH BLAH',
         'type': 'ETLD_PLUS_ONE',

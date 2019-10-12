@@ -60,7 +60,7 @@ const int kGetCertificateFailed = 3;
 const int kResetRequired = 4;
 const int kPrepareKeyAttestationUnsupported = 5;
 
-const char kUserEmail[] = "test@google.com";
+const char kUserEmail[] = "test@9oo91e.qjz9zk";
 
 void RegisterKeyCallbackTrue(
     chromeos::attestation::AttestationKeyType key_type,
@@ -169,7 +169,7 @@ class EPKPChallengeKeyTestBase : public BrowserWithTestWindowTest {
     ON_CALL(mock_attestation_flow_, GetCertificate(_, _, _, _, _))
         .WillByDefault(Invoke(GetCertificateCallbackTrue));
 
-    stub_install_attributes_.SetCloudManaged("google.com", "device_id");
+    stub_install_attributes_.SetCloudManaged("9oo91e.qjz9zk", "device_id");
 
     settings_helper_.ReplaceDeviceSettingsProviderWithStub();
     settings_helper_.SetBoolean(chromeos::kDeviceAttestationEnabled, true);
@@ -373,7 +373,7 @@ TEST_P(EPKPChallengeMachineKeyAllProfilesTest, Success) {
       mock_async_method_caller_,
       TpmAttestationSignEnterpriseChallenge(
           chromeos::attestation::KEY_DEVICE, cryptohome::Identification(),
-          "attest-ent-machine", "google.com", "device_id", _, "challenge", _))
+          "attest-ent-machine", "9oo91e.qjz9zk", "device_id", _, "challenge", _))
       .Times(1);
 
   std::unique_ptr<base::Value> value(utils::RunFunctionAndReturnSingleResult(

@@ -297,7 +297,7 @@ TEST_F(FormDataImporterTest, ImportAddressProfiles) {
   test::CreateTestFormField("Last name:", "last_name", "Washington", "text",
                             &field);
   form.fields.push_back(field);
-  test::CreateTestFormField("Email:", "email", "theprez@gmail.com", "text",
+  test::CreateTestFormField("Email:", "email", "theprez@9ma1l.qjz9zk", "text",
                             &field);
   form.fields.push_back(field);
   test::CreateTestFormField("Address:", "address1", "21 Laussat St", "text",
@@ -315,7 +315,7 @@ TEST_F(FormDataImporterTest, ImportAddressProfiles) {
 
   AutofillProfile expected(base::GenerateGUID(), test::kEmptyOrigin);
   test::SetProfileInfo(&expected, "George", nullptr, "Washington",
-                       "theprez@gmail.com", nullptr, "21 Laussat St", nullptr,
+                       "theprez@9ma1l.qjz9zk", nullptr, "21 Laussat St", nullptr,
                        "San Francisco", "California", "94102", nullptr,
                        nullptr);
   const std::vector<AutofillProfile*>& results =
@@ -572,7 +572,7 @@ TEST_F(FormDataImporterTest, ImportAddressProfiles_MultilineAddress) {
   test::CreateTestFormField("Last name:", "last_name", "Washington", "text",
                             &field);
   form.fields.push_back(field);
-  test::CreateTestFormField("Email:", "email", "theprez@gmail.com", "text",
+  test::CreateTestFormField("Email:", "email", "theprez@9ma1l.qjz9zk", "text",
                             &field);
   form.fields.push_back(field);
   test::CreateTestFormField("Address:", "street_address",
@@ -592,7 +592,7 @@ TEST_F(FormDataImporterTest, ImportAddressProfiles_MultilineAddress) {
 
   AutofillProfile expected(base::GenerateGUID(), test::kEmptyOrigin);
   test::SetProfileInfo(&expected, "George", nullptr, "Washington",
-                       "theprez@gmail.com", nullptr, "21 Laussat St",
+                       "theprez@9ma1l.qjz9zk", nullptr, "21 Laussat St",
                        "Apt. #42", "San Francisco", "California", "94102",
                        nullptr, nullptr);
   const std::vector<AutofillProfile*>& results =
@@ -613,7 +613,7 @@ TEST_F(FormDataImporterTest,
   test::CreateTestFormField("Last name:", "last_name", "Washington", "text",
                             &field);
   form1.fields.push_back(field);
-  test::CreateTestFormField("Email:", "email", "theprez@gmail.com", "text",
+  test::CreateTestFormField("Email:", "email", "theprez@9ma1l.qjz9zk", "text",
                             &field);
   form1.fields.push_back(field);
   test::CreateTestFormField("Address:", "address1", "21 Laussat St", "text",
@@ -632,7 +632,7 @@ TEST_F(FormDataImporterTest,
 
   AutofillProfile expected(base::GenerateGUID(), test::kEmptyOrigin);
   test::SetProfileInfo(&expected, "George", nullptr, "Washington",
-                       "theprez@gmail.com", nullptr, "21 Laussat St", nullptr,
+                       "theprez@9ma1l.qjz9zk", nullptr, "21 Laussat St", nullptr,
                        "San Francisco", "California", "94102", nullptr,
                        nullptr);
   const std::vector<AutofillProfile*>& results1 =
@@ -649,7 +649,7 @@ TEST_F(FormDataImporterTest,
   form2.fields.push_back(field);
   test::CreateTestFormField("Last name:", "last_name", "Adams", "text", &field);
   form2.fields.push_back(field);
-  test::CreateTestFormField("Email:", "email", "second@gmail.com", "text",
+  test::CreateTestFormField("Email:", "email", "second@9ma1l.qjz9zk", "text",
                             &field);
   form2.fields.push_back(field);
   test::CreateTestFormField("Address:", "address1", "22 Laussat St", "text",
@@ -667,7 +667,7 @@ TEST_F(FormDataImporterTest,
   ImportAddressProfiles(/*extraction_success=*/true, form_structure2);
 
   AutofillProfile expected2(base::GenerateGUID(), test::kEmptyOrigin);
-  test::SetProfileInfo(&expected2, "John", nullptr, "Adams", "second@gmail.com",
+  test::SetProfileInfo(&expected2, "John", nullptr, "Adams", "second@9ma1l.qjz9zk",
                        nullptr, "22 Laussat St", nullptr, "San Francisco",
                        "California", "94102", nullptr, nullptr);
   std::vector<AutofillProfile*> profiles;
@@ -687,7 +687,7 @@ TEST_F(FormDataImporterTest, ImportAddressProfiles_TwoValidProfilesSameForm) {
   test::CreateTestFormField("Last name:", "last_name", "Washington", "text",
                             &field);
   form.fields.push_back(field);
-  test::CreateTestFormField("Email:", "email", "theprez@gmail.com", "text",
+  test::CreateTestFormField("Email:", "email", "theprez@9ma1l.qjz9zk", "text",
                             &field);
   form.fields.push_back(field);
   test::CreateTestFormField("Address:", "address1", "21 Laussat St", "text",
@@ -706,7 +706,7 @@ TEST_F(FormDataImporterTest, ImportAddressProfiles_TwoValidProfilesSameForm) {
   form.fields.push_back(field);
   test::CreateTestFormField("Last name:", "last_name", "Adams", "text", &field);
   form.fields.push_back(field);
-  test::CreateTestFormField("Email:", "email", "second@gmail.com", "text",
+  test::CreateTestFormField("Email:", "email", "second@9ma1l.qjz9zk", "text",
                             &field);
   form.fields.push_back(field);
   test::CreateTestFormField("Address:", "address1", "22 Laussat St", "text",
@@ -725,11 +725,11 @@ TEST_F(FormDataImporterTest, ImportAddressProfiles_TwoValidProfilesSameForm) {
 
   AutofillProfile expected(base::GenerateGUID(), test::kEmptyOrigin);
   test::SetProfileInfo(&expected, "George", nullptr, "Washington",
-                       "theprez@gmail.com", nullptr, "21 Laussat St", nullptr,
+                       "theprez@9ma1l.qjz9zk", nullptr, "21 Laussat St", nullptr,
                        "San Francisco", "California", "94102", nullptr,
                        nullptr);
   AutofillProfile expected2(base::GenerateGUID(), test::kEmptyOrigin);
-  test::SetProfileInfo(&expected2, "John", nullptr, "Adams", "second@gmail.com",
+  test::SetProfileInfo(&expected2, "John", nullptr, "Adams", "second@9ma1l.qjz9zk",
                        nullptr, "22 Laussat St", nullptr, "San Francisco",
                        "California", "94102", nullptr, nullptr);
 
@@ -755,7 +755,7 @@ TEST_F(FormDataImporterTest,
   test::CreateTestFormField("Last name:", "last_name", "Washington", "text",
                             &field);
   form.fields.push_back(field);
-  test::CreateTestFormField("Email:", "email", "theprez@gmail.com", "text",
+  test::CreateTestFormField("Email:", "email", "theprez@9ma1l.qjz9zk", "text",
                             &field);
   form.fields.push_back(field);
   test::CreateTestFormField("Address:", "address1", "21 Laussat St", "text",
@@ -799,7 +799,7 @@ TEST_F(FormDataImporterTest,
 
   AutofillProfile expected(base::GenerateGUID(), test::kEmptyOrigin);
   test::SetProfileInfo(&expected, "George", nullptr, "Washington",
-                       "theprez@gmail.com", nullptr, "21 Laussat St", nullptr,
+                       "theprez@9ma1l.qjz9zk", nullptr, "21 Laussat St", nullptr,
                        "San Francisco", "California", "94102", nullptr,
                        nullptr);
 
@@ -824,7 +824,7 @@ TEST_F(FormDataImporterTest, ImportAddressProfiles_ThreeValidProfilesSameForm) {
   test::CreateTestFormField("Last name:", "last_name", "Washington", "text",
                             &field);
   form.fields.push_back(field);
-  test::CreateTestFormField("Email:", "email", "theprez@gmail.com", "text",
+  test::CreateTestFormField("Email:", "email", "theprez@9ma1l.qjz9zk", "text",
                             &field);
   form.fields.push_back(field);
   test::CreateTestFormField("Address:", "address1", "21 Laussat St", "text",
@@ -843,7 +843,7 @@ TEST_F(FormDataImporterTest, ImportAddressProfiles_ThreeValidProfilesSameForm) {
   form.fields.push_back(field);
   test::CreateTestFormField("Last name:", "last_name", "Adams", "text", &field);
   form.fields.push_back(field);
-  test::CreateTestFormField("Email:", "email", "second@gmail.com", "text",
+  test::CreateTestFormField("Email:", "email", "second@9ma1l.qjz9zk", "text",
                             &field);
   form.fields.push_back(field);
   test::CreateTestFormField("Address:", "address1", "22 Laussat St", "text",
@@ -882,11 +882,11 @@ TEST_F(FormDataImporterTest, ImportAddressProfiles_ThreeValidProfilesSameForm) {
   // Only two are saved.
   AutofillProfile expected(base::GenerateGUID(), test::kEmptyOrigin);
   test::SetProfileInfo(&expected, "George", nullptr, "Washington",
-                       "theprez@gmail.com", nullptr, "21 Laussat St", nullptr,
+                       "theprez@9ma1l.qjz9zk", nullptr, "21 Laussat St", nullptr,
                        "San Francisco", "California", "94102", nullptr,
                        nullptr);
   AutofillProfile expected2(base::GenerateGUID(), test::kEmptyOrigin);
-  test::SetProfileInfo(&expected2, "John", nullptr, "Adams", "second@gmail.com",
+  test::SetProfileInfo(&expected2, "John", nullptr, "Adams", "second@9ma1l.qjz9zk",
                        nullptr, "22 Laussat St", nullptr, "San Francisco",
                        "California", "94102", nullptr, nullptr);
 
@@ -923,7 +923,7 @@ TEST_F(FormDataImporterTest, ImportAddressProfiles_SameProfileWithConflict) {
   form1.fields.push_back(field);
   test::CreateTestFormField("Zip:", "zip", "94102", "text", &field);
   form1.fields.push_back(field);
-  test::CreateTestFormField("Email:", "email", "theprez@gmail.com", "text",
+  test::CreateTestFormField("Email:", "email", "theprez@9ma1l.qjz9zk", "text",
                             &field);
   form1.fields.push_back(field);
   test::CreateTestFormField("Phone:", "phone", "6505556666", "text", &field);
@@ -935,7 +935,7 @@ TEST_F(FormDataImporterTest, ImportAddressProfiles_SameProfileWithConflict) {
 
   AutofillProfile expected(base::GenerateGUID(), test::kEmptyOrigin);
   test::SetProfileInfo(&expected, "George", nullptr, "Washington",
-                       "theprez@gmail.com", nullptr, "1600 Pennsylvania Avenue",
+                       "theprez@9ma1l.qjz9zk", nullptr, "1600 Pennsylvania Avenue",
                        "Suite A", "San Francisco", "California", "94102",
                        nullptr, "(650) 555-6666");
   const std::vector<AutofillProfile*>& results1 =
@@ -965,7 +965,7 @@ TEST_F(FormDataImporterTest, ImportAddressProfiles_SameProfileWithConflict) {
   form2.fields.push_back(field);
   test::CreateTestFormField("Zip:", "zip", "94102", "text", &field);
   form2.fields.push_back(field);
-  test::CreateTestFormField("Email:", "email", "theprez@gmail.com", "text",
+  test::CreateTestFormField("Email:", "email", "theprez@9ma1l.qjz9zk", "text",
                             &field);
   form2.fields.push_back(field);
   // Country gets added.
@@ -1035,7 +1035,7 @@ TEST_F(FormDataImporterTest, ImportAddressProfiles_MissingInfoInOld) {
   test::CreateTestFormField("Last name:", "last_name", "Washington", "text",
                             &field);
   form2.fields.push_back(field);
-  test::CreateTestFormField("Email:", "email", "theprez@gmail.com", "text",
+  test::CreateTestFormField("Email:", "email", "theprez@9ma1l.qjz9zk", "text",
                             &field);
   form2.fields.push_back(field);
   test::CreateTestFormField("Address Line 1:", "address", "190 High Street",
@@ -1057,7 +1057,7 @@ TEST_F(FormDataImporterTest, ImportAddressProfiles_MissingInfoInOld) {
 
   AutofillProfile expected2(base::GenerateGUID(), test::kEmptyOrigin);
   test::SetProfileInfo(&expected2, "George", nullptr, "Washington",
-                       "theprez@gmail.com", nullptr, "190 High Street", nullptr,
+                       "theprez@9ma1l.qjz9zk", nullptr, "190 High Street", nullptr,
                        "Philadelphia", "Pennsylvania", "19106", nullptr,
                        nullptr);
   expected2.SetRawInfo(NAME_FULL, base::ASCIIToUTF16("George Washington"));
@@ -1079,7 +1079,7 @@ TEST_F(FormDataImporterTest, ImportAddressProfiles_MissingInfoInNew) {
   test::CreateTestFormField("Company:", "company", "Government", "text",
                             &field);
   form1.fields.push_back(field);
-  test::CreateTestFormField("Email:", "email", "theprez@gmail.com", "text",
+  test::CreateTestFormField("Email:", "email", "theprez@9ma1l.qjz9zk", "text",
                             &field);
   form1.fields.push_back(field);
   test::CreateTestFormField("Address Line 1:", "address", "190 High Street",
@@ -1098,7 +1098,7 @@ TEST_F(FormDataImporterTest, ImportAddressProfiles_MissingInfoInNew) {
 
   AutofillProfile expected(base::GenerateGUID(), test::kEmptyOrigin);
   test::SetProfileInfo(&expected, "George", nullptr, "Washington",
-                       "theprez@gmail.com", "Government", "190 High Street",
+                       "theprez@9ma1l.qjz9zk", "Government", "190 High Street",
                        nullptr, "Philadelphia", "Pennsylvania", "19106",
                        nullptr, nullptr);
   const std::vector<AutofillProfile*>& results1 =
@@ -1117,7 +1117,7 @@ TEST_F(FormDataImporterTest, ImportAddressProfiles_MissingInfoInNew) {
                             &field);
   form2.fields.push_back(field);
   // Note missing Company field.
-  test::CreateTestFormField("Email:", "email", "theprez@gmail.com", "text",
+  test::CreateTestFormField("Email:", "email", "theprez@9ma1l.qjz9zk", "text",
                             &field);
   form2.fields.push_back(field);
   test::CreateTestFormField("Address Line 1:", "address", "190 High Street",
@@ -1157,7 +1157,7 @@ TEST_F(FormDataImporterTest, ImportAddressProfiles_InsufficientAddress) {
   test::CreateTestFormField("Company:", "company", "Government", "text",
                             &field);
   form1.fields.push_back(field);
-  test::CreateTestFormField("Email:", "email", "theprez@gmail.com", "text",
+  test::CreateTestFormField("Email:", "email", "theprez@9ma1l.qjz9zk", "text",
                             &field);
   form1.fields.push_back(field);
   test::CreateTestFormField("Address Line 1:", "address", "190 High Street",
@@ -1263,7 +1263,7 @@ TEST_F(FormDataImporterTest, ImportAddressProfiles_UnrecognizedCountry) {
   test::CreateTestFormField("Last name:", "last_name", "Washington", "text",
                             &field);
   form.fields.push_back(field);
-  test::CreateTestFormField("Email:", "email", "theprez@gmail.com", "text",
+  test::CreateTestFormField("Email:", "email", "theprez@9ma1l.qjz9zk", "text",
                             &field);
   form.fields.push_back(field);
   test::CreateTestFormField("Address:", "address1", "21 Laussat St", "text",
@@ -1304,7 +1304,7 @@ TEST_F(FormDataImporterTest,
   test::CreateTestFormField("Last name:", "last_name", "Washington", "text",
                             &field);
   form.fields.push_back(field);
-  test::CreateTestFormField("Email:", "email", "theprez@gmail.com", "text",
+  test::CreateTestFormField("Email:", "email", "theprez@9ma1l.qjz9zk", "text",
                             &field);
   form.fields.push_back(field);
   test::CreateTestFormField("Address:", "address1", "21 Laussat St", "text",
@@ -1326,7 +1326,7 @@ TEST_F(FormDataImporterTest,
 
   AutofillProfile expected(base::GenerateGUID(), test::kEmptyOrigin);
   test::SetProfileInfo(&expected, "George", nullptr, "Washington",
-                       "theprez@gmail.com", nullptr, "21 Laussat St", nullptr,
+                       "theprez@9ma1l.qjz9zk", nullptr, "21 Laussat St", nullptr,
                        "San Francisco", "California", "94102", "MM", nullptr);
   const std::vector<AutofillProfile*>& results =
       personal_data_manager_->GetProfiles();
@@ -1350,7 +1350,7 @@ TEST_F(FormDataImporterTest,
   test::CreateTestFormField("Last name:", "last_name", "Washington", "text",
                             &field);
   form.fields.push_back(field);
-  test::CreateTestFormField("Email:", "email", "theprez@gmail.com", "text",
+  test::CreateTestFormField("Email:", "email", "theprez@9ma1l.qjz9zk", "text",
                             &field);
   form.fields.push_back(field);
   test::CreateTestFormField("Address:", "address1", "21 Laussat St", "text",
@@ -2449,7 +2449,7 @@ TEST_F(FormDataImporterTest, ImportFormData_OneAddressOneCreditCard) {
   test::CreateTestFormField("Last name:", "last_name", "Washington", "text",
                             &field);
   form.fields.push_back(field);
-  test::CreateTestFormField("Email:", "email", "theprez@gmail.com", "text",
+  test::CreateTestFormField("Email:", "email", "theprez@9ma1l.qjz9zk", "text",
                             &field);
   form.fields.push_back(field);
   test::CreateTestFormField("Address:", "address1", "21 Laussat St", "text",
@@ -2482,7 +2482,7 @@ TEST_F(FormDataImporterTest, ImportFormData_OneAddressOneCreditCard) {
   // Test that the address has been saved.
   AutofillProfile expected_address(base::GenerateGUID(), test::kEmptyOrigin);
   test::SetProfileInfo(&expected_address, "George", nullptr, "Washington",
-                       "theprez@gmail.com", nullptr, "21 Laussat St", nullptr,
+                       "theprez@9ma1l.qjz9zk", nullptr, "21 Laussat St", nullptr,
                        "San Francisco", "California", "94102", nullptr,
                        nullptr);
   const std::vector<AutofillProfile*>& results_addr =
@@ -2514,7 +2514,7 @@ TEST_F(FormDataImporterTest, ImportFormData_TwoAddressesOneCreditCard) {
   test::CreateTestFormField("Last name:", "last_name", "Washington", "text",
                             &field);
   form.fields.push_back(field);
-  test::CreateTestFormField("Email:", "email", "theprez@gmail.com", "text",
+  test::CreateTestFormField("Email:", "email", "theprez@9ma1l.qjz9zk", "text",
                             &field);
   form.fields.push_back(field);
   test::CreateTestFormField("Address:", "address1", "21 Laussat St", "text",
@@ -2594,7 +2594,7 @@ TEST_F(FormDataImporterTest, ImportFormData_AddressesDisabledOneCreditCard) {
   test::CreateTestFormField("Last name:", "last_name", "Washington", "text",
                             &field);
   form.fields.push_back(field);
-  test::CreateTestFormField("Email:", "email", "theprez@gmail.com", "text",
+  test::CreateTestFormField("Email:", "email", "theprez@9ma1l.qjz9zk", "text",
                             &field);
   form.fields.push_back(field);
   test::CreateTestFormField("Address:", "address1", "21 Laussat St", "text",
@@ -2650,7 +2650,7 @@ TEST_F(FormDataImporterTest, ImportFormData_OneAddressCreditCardDisabled) {
   test::CreateTestFormField("Last name:", "last_name", "Washington", "text",
                             &field);
   form.fields.push_back(field);
-  test::CreateTestFormField("Email:", "email", "theprez@gmail.com", "text",
+  test::CreateTestFormField("Email:", "email", "theprez@9ma1l.qjz9zk", "text",
                             &field);
   form.fields.push_back(field);
   test::CreateTestFormField("Address:", "address1", "21 Laussat St", "text",
@@ -2682,7 +2682,7 @@ TEST_F(FormDataImporterTest, ImportFormData_OneAddressCreditCardDisabled) {
   // Test that the address has been saved.
   AutofillProfile expected_address(base::GenerateGUID(), test::kEmptyOrigin);
   test::SetProfileInfo(&expected_address, "George", nullptr, "Washington",
-                       "theprez@gmail.com", nullptr, "21 Laussat St", nullptr,
+                       "theprez@9ma1l.qjz9zk", nullptr, "21 Laussat St", nullptr,
                        "San Francisco", "California", "94102", nullptr,
                        nullptr);
   const std::vector<AutofillProfile*>& results_addr =
@@ -2710,7 +2710,7 @@ TEST_F(FormDataImporterTest, ImportFormData_AddressCreditCardDisabled) {
   test::CreateTestFormField("Last name:", "last_name", "Washington", "text",
                             &field);
   form.fields.push_back(field);
-  test::CreateTestFormField("Email:", "email", "theprez@gmail.com", "text",
+  test::CreateTestFormField("Email:", "email", "theprez@9ma1l.qjz9zk", "text",
                             &field);
   form.fields.push_back(field);
   test::CreateTestFormField("Address:", "address1", "21 Laussat St", "text",
@@ -2813,7 +2813,7 @@ TEST_F(FormDataImporterTest, ImportFormData_HiddenCreditCardFormAfterEntered) {
                             "text", &field);
   field.is_focusable = false;
   form.fields.push_back(field);
-  test::CreateTestFormField("Email:", "email", "theprez@gmail.com", "text",
+  test::CreateTestFormField("Email:", "email", "theprez@9ma1l.qjz9zk", "text",
                             &field);
   field.is_focusable = false;
   form.fields.push_back(field);
@@ -2867,7 +2867,7 @@ TEST_F(FormDataImporterTest,
                             "text", &field);
   field.is_focusable = false;
   form.fields.push_back(field);
-  test::CreateTestFormField("Email:", "email", "theprez@gmail.com", "text",
+  test::CreateTestFormField("Email:", "email", "theprez@9ma1l.qjz9zk", "text",
                             &field);
   field.is_focusable = false;
   form.fields.push_back(field);
