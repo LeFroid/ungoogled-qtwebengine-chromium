@@ -500,11 +500,7 @@ base::string16 TemplateURLRef::SearchTermToString16(
 bool TemplateURLRef::HasGoogleBaseURLs(
     const SearchTermsData& search_terms_data) const {
   ParseIfNecessary(search_terms_data);
-  return std::any_of(replacements_.begin(), replacements_.end(),
-                     [](const Replacement& replacement) {
-                       return replacement.type == GOOGLE_BASE_URL ||
-                              replacement.type == GOOGLE_BASE_SUGGEST_URL;
-                     });
+  return false;
 }
 
 bool TemplateURLRef::ExtractSearchTermsFromURL(

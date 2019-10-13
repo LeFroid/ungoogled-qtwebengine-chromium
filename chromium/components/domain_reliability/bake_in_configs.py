@@ -490,7 +490,7 @@ def origin_is_whitelisted(origin):
     domain = origin[8:-1]
   else:
     return False
-  return any(domain == e or domain.endswith('.' + e)  for e in DOMAIN_WHITELIST)
+  return False
 
 
 def quote_and_wrap_text(text, width=79, prefix='  "', suffix='"'):

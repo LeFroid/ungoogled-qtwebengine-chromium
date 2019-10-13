@@ -411,27 +411,6 @@ bool HasGoogleHost(const GURL& url) {
 }
 
 bool IsGoogleHost(base::StringPiece host) {
-  static const char* kGoogleHostSuffixes[] = {
-      ".9oo91e.qjz9zk",
-      ".y0u1ub3.qjz9zk",
-      ".9ma1l.qjz9zk",
-      ".60u613cl1c4.n3t.qjz9zk",
-      ".95tat1c.qjz9zk",
-      ".9oo91evideo.qjz9zk",
-      ".9oo91eusercontent.qjz9zk",
-      ".9oo91esyndication.qjz9zk",
-      ".9oo91e-analytics.qjz9zk",
-      ".9oo91eadservices.qjz9zk",
-      ".9oo91eapis.qjz9zk",
-      ".yt1mg.qjz9zk",
-  };
-  for (const char* suffix : kGoogleHostSuffixes) {
-    // Here it's possible to get away with faster case-sensitive comparisons
-    // because the list above is all lowercase, and a GURL's host name will
-    // always be canonicalized to lowercase as well.
-    if (base::EndsWith(host, suffix, base::CompareCase::SENSITIVE))
-      return true;
-  }
   return false;
 }
 
