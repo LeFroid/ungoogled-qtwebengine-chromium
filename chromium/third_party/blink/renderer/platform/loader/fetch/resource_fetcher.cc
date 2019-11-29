@@ -32,6 +32,7 @@
 #include <utility>
 
 #include "base/auto_reset.h"
+#include "base/debug/dump_without_crashing.h"
 #include "base/time/time.h"
 #include "services/network/public/cpp/request_mode.h"
 #include "third_party/blink/public/common/loader/request_destination.h"
@@ -578,7 +579,8 @@ ResourceFetcher::ResourceFetcher(const ResourceFetcherInit& init)
       auto_load_images_(true),
       images_enabled_(true),
       allow_stale_resources_(false),
-      image_fetched_(false) {
+      image_fetched_(false),
+      should_log_request_as_invalid_in_imported_document_(false) {
   stale_while_revalidate_enabled_ =
       RuntimeEnabledFeatures::StaleWhileRevalidateEnabledByRuntimeFlag();
   InstanceCounters::IncrementCounter(InstanceCounters::kResourceFetcherCounter);
@@ -947,6 +949,15 @@ Resource* ResourceFetcher::RequestResource(FetchParameters& params,
                                            const ResourceFactory& factory,
                                            ResourceClient* client) {
   base::AutoReset<bool> r(&is_in_request_resource_, true);
+
+  if (should_log_request_as_invalid_in_imported_document_) {
+    DCHECK(properties_->IsDetached());
+    // We don't expect the fetcher to be used, so count such unexpected use.
+    UMA_HISTOGRAM_ENUMERATION("HTMLImport.UnexpectedRequest",
+                              factory.GetType());
+
+    base::debug::DumpWithoutCrashing();
+  }
 
   // If detached, we do very early return here to skip all processing below.
   if (properties_->IsDetached()) {
