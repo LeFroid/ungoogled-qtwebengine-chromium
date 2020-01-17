@@ -147,6 +147,10 @@ class MODULES_EXPORT BaseAudioContext
   // does nothing useful because the context is closed.
   void WarnForConnectionIfContextClosed() const;
 
+  // Return true if the destination is pulling on the audio graph.  Otherwise
+  // return false.
+  virtual bool IsPullingAudioGraph() const = 0;
+
   AudioBuffer* createBuffer(uint32_t number_of_channels,
                             uint32_t number_of_frames,
                             float sample_rate,
@@ -328,6 +332,8 @@ class MODULES_EXPORT BaseAudioContext
   // occurs preventing us from determining the count.
   int32_t CallbackBufferSize();
 
+  Mutex& GetTearDownMutex() const { return tear_down_mutex_; }
+
  protected:
   enum ContextType { kRealtimeContext, kOfflineContext };
 
@@ -434,6 +440,12 @@ class MODULES_EXPORT BaseAudioContext
   // This cannot be nullptr once it is assigned from AudioWorkletThread until
   // the BaseAudioContext goes away.
   WorkerThread* audio_worklet_thread_ = nullptr;
+
+  // Due to the multi-threading architecture of WebAudio, it is possible that
+  // object allocated by the main thread still can be accessed by the audio
+  // rendering thread while this context is torn down (GCed) by
+  // |Uninitialize()|.
+  mutable Mutex tear_down_mutex_;
 };
 
 }  // namespace blink

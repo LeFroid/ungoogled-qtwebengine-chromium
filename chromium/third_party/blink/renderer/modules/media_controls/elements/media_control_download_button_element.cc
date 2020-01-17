@@ -68,7 +68,7 @@ const char* MediaControlDownloadButtonElement::GetNameForHistograms() const {
 }
 
 void MediaControlDownloadButtonElement::DefaultEventHandler(Event& event) {
-  const KURL& url = MediaElement().currentSrc();
+  const KURL& url = MediaElement().downloadURL();
   if ((event.type() == event_type_names::kClick ||
        event.type() == event_type_names::kGesturetap) &&
       !(url.IsNull() || url.IsEmpty())) {
@@ -79,7 +79,7 @@ void MediaControlDownloadButtonElement::DefaultEventHandler(Event& event) {
     request.SetRequestContext(mojom::RequestContextType::DOWNLOAD);
     request.SetRequestorOrigin(SecurityOrigin::Create(GetDocument().Url()));
     GetDocument().GetFrame()->Client()->DownloadURL(
-        request, DownloadCrossOriginRedirects::kFollow);
+        request, network::mojom::RedirectMode::kError);
   }
   MediaControlInputElement::DefaultEventHandler(event);
 }
