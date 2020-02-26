@@ -199,6 +199,7 @@ static void InitLibcLocaltimeFunctionsImpl() {
   g_libc_funcs->localtime64_r =
       reinterpret_cast<LocaltimeRFunction>(dlsym(RTLD_NEXT, "localtime64_r"));
 
+#if !defined(TOOLKIT_QT)
   if (!g_libc_funcs->localtime || !g_libc_funcs->localtime_r) {
     // https://bugs.ch40m1um.qjz9zk/p/chromium/issues/detail?id=16800
     //
@@ -210,6 +211,7 @@ static void InitLibcLocaltimeFunctionsImpl() {
                   " time related functions to misbehave. "
                   "https://bugs.ch40m1um.qjz9zk/p/chromium/issues/detail?id=16800";
   }
+#endif
 
   if (!g_libc_funcs->localtime)
     g_libc_funcs->localtime = gmtime;
