@@ -167,6 +167,14 @@ IDNSpoofChecker::IDNSpoofChecker() {
       status);
   lgc_letters_n_ascii_.freeze();
 
+  // Latin small letter thorn ("þ", U+00FE) can be used to spoof both b and p.
+  // It's used in modern Icelandic orthography, so allow it for the Icelandic
+  // ccTLD (.is) but block in any other TLD. Also block Latin small letter eth
+  // ("ð", U+00F0) which can be used to spoof the letter o.
+  icelandic_characters_ =
+      icu::UnicodeSet(UNICODE_STRING_SIMPLE("[\\u00fe\\u00f0]"), status);
+  icelandic_characters_.freeze();
+
   // Used for diacritics-removal before the skeleton calculation. Add
   // "ł > l; ø > o; đ > d" that are not handled by "NFD; Nonspacing mark
   // removal; NFC".
@@ -180,7 +188,7 @@ IDNSpoofChecker::IDNSpoofChecker() {
 
   // Supplement the Unicode confusable list by the following mapping.
   //   - {U+00E6 (æ), U+04D5 (ӕ)}  => "ae"
-  //   - {U+00FE (þ), U+03FC (ϼ), U+048F (ҏ)} => p
+  //   - {U+03FC (ϼ), U+048F (ҏ)} => p
   //   - {U+0127 (ħ), U+043D (н), U+045B (ћ), U+04A3 (ң), U+04A5 (ҥ),
   //      U+04C8 (ӈ), U+04CA (ӊ), U+050B (ԋ), U+0527 (ԧ), U+0529 (ԩ)} => h
   //   - {U+0138 (ĸ), U+03BA (κ), U+043A (к), U+049B (қ), U+049D (ҝ),
@@ -221,7 +229,7 @@ IDNSpoofChecker::IDNSpoofChecker() {
   extra_confusable_mapper_.reset(icu::Transliterator::createFromRules(
       UNICODE_STRING_SIMPLE("ExtraConf"),
       icu::UnicodeString::fromUTF8(
-          "[æӕ] > ae; [þϼҏ] > p; [ħнћңҥӈӊԋԧԩ] > h;"
+          "[æӕ] > ae; [ϼҏ] > p; [ħнћңҥӈӊԋԧԩ] > h;"
           "[ĸκкқҝҟҡӄԟ] > k; [ŋпԥกח] > n; œ > ce;"
           "[ŧтҭԏ七丅丆丁] > t; [ƅьҍв] > b;  [ωшщพฟພຟ] > w;"
           "[мӎ] > m; [єҽҿၔ] > e; ґ > r; [ғӻ] > f;"
@@ -246,8 +254,9 @@ IDNSpoofChecker::~IDNSpoofChecker() {
   uspoof_close(checker_);
 }
 
-bool IDNSpoofChecker::SafeToDisplayAsUnicode(base::StringPiece16 label,
-                                             bool is_tld_ascii) {
+bool IDNSpoofChecker::SafeToDisplayAsUnicode(
+    base::StringPiece16 label,
+    base::StringPiece top_level_domain) {
   UErrorCode status = U_ZERO_ERROR;
   int32_t result =
       uspoof_check(checker_, label.data(),
@@ -274,6 +283,15 @@ bool IDNSpoofChecker::SafeToDisplayAsUnicode(base::StringPiece16 label,
   if (deviation_characters_.containsSome(label_string))
     return false;
 
+  // Disallow Icelandic confusables for domains outside Iceland's ccTLD (.is).
+  if (label_string.length() > 1 && top_level_domain != ".is" &&
+      icelandic_characters_.containsSome(label_string))
+
+  // Disallow Latin Schwa (U+0259) for domains outside Azerbaijan's ccTLD (.az).
+  if (label_string.length() > 1 && top_level_domain != "az" &&
+      label_string.indexOf("ə") != -1)
+    return false;
+
   // If there's no script mixing, the input is regarded as safe without any
   // extra check unless it falls into one of three categories:
   //   - contains Kana letter exceptions
@@ -291,6 +309,7 @@ bool IDNSpoofChecker::SafeToDisplayAsUnicode(base::StringPiece16 label,
   if (result == USPOOF_SINGLE_SCRIPT_RESTRICTIVE &&
       kana_letters_exceptions_.containsNone(label_string) &&
       combining_diacritics_exceptions_.containsNone(label_string)) {
+    bool is_tld_ascii = !top_level_domain.starts_with(".xn--");
     // Check Cyrillic confusable only for ASCII TLDs.
     return !is_tld_ascii || !IsMadeOfLatinAlikeCyrillic(label_string);
   }
