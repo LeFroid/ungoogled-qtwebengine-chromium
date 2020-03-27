@@ -77,9 +77,11 @@ void DeferredTaskHandler::BreakConnections() {
   // connection.
   wtf_size_t size = finished_source_handlers_.size();
   if (size > 0) {
-    for (auto* finished : finished_source_handlers_) {
-      active_source_handlers_.erase(finished);
+    for (auto finished : finished_source_handlers_) {
+      // Break connection first and then remove from the list because that can
+      // cause the handler to be deleted.
       finished->BreakConnectionWithLock();
+      active_source_handlers_.erase(finished);
     }
     finished_source_handlers_.clear();
   }
@@ -356,6 +358,7 @@ void DeferredTaskHandler::ClearHandlersToBeDeleted() {
   deletable_orphan_handlers_.clear();
   automatic_pull_handlers_.clear();
   rendering_automatic_pull_handlers_.clear();
+  finished_source_handlers_.clear();
   active_source_handlers_.clear();
 }
 
