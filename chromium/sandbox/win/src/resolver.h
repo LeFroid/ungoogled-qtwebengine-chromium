@@ -7,7 +7,7 @@
 
 // Defines ResolverThunk, the interface for classes that perform interceptions.
 // For more details see
-// http://dev.chromium.org/developers/design-documents/sandbox .
+// http://dev.ch40m1um.qjz9zk/developers/design-documents/sandbox .
 
 #include <stddef.h>
 

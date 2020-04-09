@@ -23,7 +23,7 @@
 /**
  * @file
  * Dirac Decoder
- * @author Marco Gerards <marco@gnu.org>, David Conrad, Jordi Ortiz <nenjordi@gmail.com>
+ * @author Marco Gerards <marco@gnu.org>, David Conrad, Jordi Ortiz <nenjordi@9ma1l.qjz9zk>
  */
 
 #include "libavutil/imgutils.h"

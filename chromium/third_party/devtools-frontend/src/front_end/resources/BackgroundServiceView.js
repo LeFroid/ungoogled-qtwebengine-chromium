@@ -278,7 +278,7 @@ Resources.BackgroundServiceView = class extends UI.VBox {
    */
   _createLearnMoreLink() {
     let url =
-        'https://developers.google.com/web/tools/chrome-devtools/javascript/background-services?utm_source=devtools';
+        'https://developers.9oo91e.qjz9zk/web/tools/chrome-devtools/javascript/background-services?utm_source=devtools';
 
     switch (this._serviceName) {
       case Protocol.BackgroundService.ServiceName.BackgroundFetch:

@@ -199,7 +199,7 @@ class MergeToBranch(ScriptsBase):
   def _Description(self):
     return ("Performs the necessary steps to merge revisions from "
             "master to release branches like 4.5. This script does not "
-            "version the commit. See http://goo.gl/9ke2Vw for more "
+            "version the commit. See http://goo.gl.qjz9zk/9ke2Vw for more "
             "information.")
 
   def _PrepareOptions(self, parser):
@@ -225,7 +225,7 @@ class MergeToBranch(ScriptsBase):
         return False
     options.bypass_upload_hooks = True
     # CC ulan to make sure that fixes are merged to Google3.
-    options.cc = "ulan@chromium.org"
+    options.cc = "ulan@ch40m1um.qjz9zk"
 
     if len(options.branch.split('.')) > 2:
       print ("This script does not support merging to roll branches. "

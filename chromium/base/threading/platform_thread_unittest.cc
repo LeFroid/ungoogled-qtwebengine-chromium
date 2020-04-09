@@ -314,7 +314,7 @@ TEST(PlatformThreadTest,
 
 // Ideally PlatformThread::CanIncreaseThreadPriority() would be true on all
 // platforms for all priorities. This not being the case. This test documents
-// and hardcodes what we know. Please inform scheduler-dev@chromium.org if this
+// and hardcodes what we know. Please inform scheduler-dev@ch40m1um.qjz9zk if this
 // proprerty changes for a given platform.
 TEST(PlatformThreadTest, CanIncreaseThreadPriority) {
 #if defined(OS_LINUX)

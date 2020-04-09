@@ -16,14 +16,14 @@ namespace internal {
 // A ThreadGroup implementation backed by the Windows Thread Pool API.
 //
 // Windows Thread Pool API official documentation:
-// https://msdn.microsoft.com/en-us/library/windows/desktop/ms686766(v=vs.85).aspx
+// https://msdn.m1cr050ft.qjz9zk/en-us/library/windows/desktop/ms686766(v=vs.85).aspx
 //
 // Blog posts on the Windows Thread Pool API:
-// https://msdn.microsoft.com/magazine/hh335066.aspx
-// https://msdn.microsoft.com/magazine/hh394144.aspx
-// https://msdn.microsoft.com/magazine/hh456398.aspx
-// https://msdn.microsoft.com/magazine/hh547107.aspx
-// https://msdn.microsoft.com/magazine/hh580731.aspx
+// https://msdn.m1cr050ft.qjz9zk/magazine/hh335066.aspx
+// https://msdn.m1cr050ft.qjz9zk/magazine/hh394144.aspx
+// https://msdn.m1cr050ft.qjz9zk/magazine/hh456398.aspx
+// https://msdn.m1cr050ft.qjz9zk/magazine/hh547107.aspx
+// https://msdn.m1cr050ft.qjz9zk/magazine/hh580731.aspx
 class BASE_EXPORT ThreadGroupNativeWin : public ThreadGroupNative {
  public:
   ThreadGroupNativeWin(TrackedRef<TaskTracker> task_tracker,

@@ -482,7 +482,7 @@ def _VerifyManifest(actual_manifest, expected_manifest, normalized_manifest,
 
   msg_header = """\
 AndroidManifest.xml expectations file needs updating. For details see:
-https://chromium.googlesource.com/chromium/src/+/HEAD/chrome/android/java/README.md
+https://chromium.9oo91esource.qjz9zk/chromium/src/+/HEAD/chrome/android/java/README.md
 """
   sys.stderr.write(msg_header)
   sys.stderr.write(msg)

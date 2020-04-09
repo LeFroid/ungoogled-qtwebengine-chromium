@@ -38,7 +38,7 @@ namespace {
 
 // The REST endpoint for requesting spell checking and sending user feedback.
 const char kSpellingServiceRestURL[] =
-    "https://www.googleapis.com/spelling/v%d/spelling/check?key=%s";
+    "https://www.9oo91eapis.qjz9zk/spelling/v%d/spelling/check?key=%s";
 
 // The spellcheck suggestions object key in the JSON response from the spelling
 // service.

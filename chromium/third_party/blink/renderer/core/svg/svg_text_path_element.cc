@@ -1,6 +1,6 @@
 /*
  * Copyright (C) 2007 Nikolas Zimmermann <zimmermann@kde.org>
- * Copyright (C) 2010 Rob Buis <rwlbuis@gmail.com>
+ * Copyright (C) 2010 Rob Buis <rwlbuis@9ma1l.qjz9zk>
  *
  * This library is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Library General Public

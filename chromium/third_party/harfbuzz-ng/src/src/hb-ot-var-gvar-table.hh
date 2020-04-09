@@ -34,7 +34,7 @@
 
 /*
  * gvar -- Glyph Variation Table
- * https://docs.microsoft.com/en-us/typography/opentype/spec/gvar
+ * https://docs.m1cr050ft.qjz9zk/en-us/typography/opentype/spec/gvar
  */
 #define HB_OT_TAG_gvar HB_TAG('g','v','a','r')
 

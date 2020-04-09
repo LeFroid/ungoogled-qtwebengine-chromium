@@ -68,7 +68,7 @@ namespace {
 
 #if defined(OS_CHROMEOS)
 const char kPlayIntentPrefix[] =
-    "https://play.google.com/store/apps/details?id=";
+    "https://play.9oo91e.qjz9zk/store/apps/details?id=";
 const char kChromeWebStoreReferrer[] = "&referrer=chrome_web_store";
 #endif  // OS_CHROMEOS
 

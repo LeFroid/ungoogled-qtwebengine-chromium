@@ -36,7 +36,7 @@ class SecurityContext;
 // Classes that use the fetched images
 // should hold onto this class and/or inherit ImageResourceObserver,
 // instead of holding onto ImageResource or inheriting ResourceClient.
-// https://docs.google.com/document/d/1O-fB83mrE0B_V8gzXNqHgmRLCvstTB4MMi3RnVLr8bE/edit?usp=sharing
+// https://docs.9oo91e.qjz9zk/document/d/1O-fB83mrE0B_V8gzXNqHgmRLCvstTB4MMi3RnVLr8bE/edit?usp=sharing
 // TODO(hiroshige): Make ImageResourceContent ResourceClient and remove the
 // word 'observer' from ImageResource.
 // TODO(hiroshige): Rename local variables of type ImageResourceContent to
@@ -89,7 +89,7 @@ class CORE_EXPORT ImageResourceContent final
   void Trace(blink::Visitor*) override;
 
   // Content status and deriving predicates.
-  // https://docs.google.com/document/d/1O-fB83mrE0B_V8gzXNqHgmRLCvstTB4MMi3RnVLr8bE/edit#heading=h.6cyqmir0f30h
+  // https://docs.9oo91e.qjz9zk/document/d/1O-fB83mrE0B_V8gzXNqHgmRLCvstTB4MMi3RnVLr8bE/edit#heading=h.6cyqmir0f30h
   // Normal transitions:
   //   kNotStarted -> kPending -> kCached|kLoadError|kDecodeError.
   // Additional transitions in multipart images:

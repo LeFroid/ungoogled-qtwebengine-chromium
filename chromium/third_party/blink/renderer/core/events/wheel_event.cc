@@ -1,7 +1,7 @@
 /*
  * Copyright (C) 2001 Peter Kelly (pmk@post.com)
  * Copyright (C) 2001 Tobias Anton (anton@stud.fbi.fh-darmstadt.de)
- * Copyright (C) 2006 Samuel Weinig (sam.weinig@gmail.com)
+ * Copyright (C) 2006 Samuel Weinig (sam.weinig@9ma1l.qjz9zk)
  * Copyright (C) 2003, 2005, 2006, 2008, 2010 Apple Inc. All rights reserved.
  * Copyright (C) 2013 Samsung Electronics. All rights reserved.
  *
@@ -139,7 +139,7 @@ void WheelEvent::preventDefault() {
     String message =
         "Unable to preventDefault inside passive event listener due to "
         "target being treated as passive. See "
-        "https://www.chromestatus.com/features/6662647093133312";
+        "https://www.ch40mestatus.qjz9zk/features/6662647093133312";
     auto* local_dom_window = DynamicTo<LocalDOMWindow>(view());
     if (local_dom_window && local_dom_window->GetFrame()) {
       Intervention::GenerateReport(local_dom_window->GetFrame(), id, message);

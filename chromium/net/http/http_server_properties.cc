@@ -155,8 +155,8 @@ HttpServerProperties::HttpServerProperties(
       broken_alternative_services_(kMaxRecentlyBrokenAlternativeServiceEntries,
                                    this,
                                    tick_clock_),
-      canonical_suffixes_({".ggpht.com", ".c.youtube.com", ".googlevideo.com",
-                           ".googleusercontent.com"}),
+      canonical_suffixes_({".99pht.qjz9zk", ".c.y0u1ub3.qjz9zk", ".9oo91evideo.qjz9zk",
+                           ".9oo91eusercontent.qjz9zk"}),
       quic_server_info_map_(kDefaultMaxQuicServerEntries),
       max_server_configs_stored_in_properties_(kDefaultMaxQuicServerEntries) {}
 

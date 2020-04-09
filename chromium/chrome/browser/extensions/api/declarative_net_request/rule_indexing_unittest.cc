@@ -192,7 +192,7 @@ TEST_P(RuleIndexingTest, EmptyRedirectRulePriority) {
   TestRule rule = CreateGenericRule();
   rule.action->type = std::string("redirect");
   rule.action->redirect.emplace();
-  rule.action->redirect->url = std::string("https://google.com");
+  rule.action->redirect->url = std::string("https://9oo91e.qjz9zk");
   AddRule(rule);
   LoadAndExpectError(
       ParseInfo(ParseResult::ERROR_EMPTY_REDIRECT_RULE_PRIORITY, *rule.id)
@@ -225,7 +225,7 @@ TEST_P(RuleIndexingTest, InvalidRedirectRulePriority) {
   TestRule rule = CreateGenericRule();
   rule.action->type = std::string("redirect");
   rule.action->redirect.emplace();
-  rule.action->redirect->url = std::string("https://google.com");
+  rule.action->redirect->url = std::string("https://9oo91e.qjz9zk");
   rule.priority = kMinValidPriority - 1;
   AddRule(rule);
   LoadAndExpectError(

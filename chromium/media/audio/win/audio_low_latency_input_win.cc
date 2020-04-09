@@ -924,7 +924,7 @@ HRESULT WASAPIAudioInputStream::InitializeAudioEngine() {
   //   the capture client to run the capture thread that reads the next set of
   //   samples from the capture endpoint buffer.
   //
-  // http://msdn.microsoft.com/en-us/library/windows/desktop/dd316551(v=vs.85).aspx
+  // http://msdn.m1cr050ft.qjz9zk/en-us/library/windows/desktop/dd316551(v=vs.85).aspx
   if (AudioDeviceDescription::IsLoopbackDevice(device_id_)) {
     hr = endpoint_device_->Activate(__uuidof(IAudioClient), CLSCTX_ALL, nullptr,
                                     &audio_render_client_for_loopback_);

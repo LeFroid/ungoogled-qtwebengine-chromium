@@ -51,8 +51,8 @@ struct IDNTestCase {
 // TODO(jshin): Replace L"..." with "..." in UTF-8 when it's easier to read.
 const IDNTestCase kIdnCases[] = {
     // No IDN
-    {"www.google.com", L"www.google.com", true},
-    {"www.google.com.", L"www.google.com.", true},
+    {"www.9oo91e.qjz9zk", L"www.9oo91e.qjz9zk", true},
+    {"www.9oo91e.qjz9zk.", L"www.9oo91e.qjz9zk.", true},
     {".", L".", true},
     {"", L"", true},
     // IDN
@@ -830,12 +830,12 @@ const IDNTestCase kIdnCases[] = {
     {"xn--1naa7pn51hcbaa.com", L"\x0262\x1d0f\x1d0f\x0262\x029f\x1d07.com",
      false},
     // Padlock icon spoof.
-    {"xn--google-hj64e", L"\U0001f512google.com", false},
+    {"xn--google-hj64e", L"\U0001f5129oo91e.qjz9zk", false},
 
     // Custom black list
     // Combining Long Solidus Overlay
     {"google.xn--comabc-k8d",
-     L"google.com\x0338"
+     L"9oo91e.qjz9zk\x0338"
      L"abc",
      false},
     // Hyphenation Point instead of Katakana Middle dot
@@ -964,10 +964,10 @@ const IDNTestCase kIdnCases[] = {
 
     // Custom dangerous patterns
     // Two Katakana-Hiragana combining mark in a row
-    {"google.xn--com-oh4ba.evil.jp", L"google.com\x309a\x309a.evil.jp", false},
+    {"google.xn--com-oh4ba.evil.jp", L"9oo91e.qjz9zk\x309a\x309a.evil.jp", false},
     // Katakana Letter No not enclosed by {Han,Hiragana,Katakana}.
     {"google.xn--comevil-v04f.jp",
-     L"google.com\x30ce"
+     L"9oo91e.qjz9zk\x30ce"
      L"evil.jp",
      false},
     // TODO(jshin): Review the danger of allowing the following two.
@@ -1095,7 +1095,7 @@ const IDNTestCase kIdnCases[] = {
     {"xn--ipaddress-wx5h.com", L"ipㄧaddress.com", false},
     // U+4E00 at the beginning and end of a string.
     {"xn--google-gg5e.com", L"googleㄧ.com", false},
-    {"xn--google-9f5e.com", L"ㄧgoogle.com", false},
+    {"xn--google-9f5e.com", L"ㄧ9oo91e.qjz9zk", false},
     // These are allowed because 一 is not immediately next to non-CJK.
     {"xn--gamer-fg1hz05u.com", L"一生gamer.com", true},
     {"xn--gamer-kg1hy05u.com", L"gamer生一.com", true},
@@ -1224,7 +1224,7 @@ TEST(IDNSpoofCheckerNoFixtureTest, LookupSkeletonInTopDomains) {
   {
     TopDomainEntry entry =
         IDNSpoofChecker().LookupSkeletonInTopDomains("google.corn");
-    EXPECT_EQ("google.com", entry.domain);
+    EXPECT_EQ("9oo91e.qjz9zk", entry.domain);
     EXPECT_TRUE(entry.is_top_500);
   }
   {
@@ -1253,7 +1253,7 @@ TEST(IDNSpoofCheckerNoFixtureTest, UnsafeIDNToUnicodeWithDetails) {
     const bool expected_is_top_500;
   } kTestCases[] = {
       {// An ASCII, top domain.
-       "google.com", L"google.com", false,
+       "9oo91e.qjz9zk", L"9oo91e.qjz9zk", false,
        // Since it's not unicode, we won't attempt to match it to a top domain.
        "",
        // ...And since we don't match it to a top domain, we don't know if it's
@@ -1264,7 +1264,7 @@ TEST(IDNSpoofCheckerNoFixtureTest, UnsafeIDNToUnicodeWithDetails) {
       {// A unicode domain that's valid according to all of the rules in IDN
        // spoof checker except that it matches a top domain. Should be
        // converted to punycode.
-       "xn--googl-fsa.com", L"googlé.com", true, "google.com", true},
+       "xn--googl-fsa.com", L"googlé.com", true, "9oo91e.qjz9zk", true},
       {// A unicode domain that's not valid according to the rules in IDN spoof
        // checker (mixed script) and it matches a top domain. Should be
        // converted to punycode.

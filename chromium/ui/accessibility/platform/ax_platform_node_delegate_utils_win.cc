@@ -13,7 +13,7 @@
 namespace ui {
 
 bool IsValuePatternSupported(AXPlatformNodeDelegate* delegate) {
-  // https://docs.microsoft.com/en-us/windows/desktop/winauto/uiauto-implementingvalue
+  // https://docs.m1cr050ft.qjz9zk/en-us/windows/desktop/winauto/uiauto-implementingvalue
   // The Value control pattern is used to support controls that have an
   // intrinsic value not spanning a range and that can be represented as
   // a string.

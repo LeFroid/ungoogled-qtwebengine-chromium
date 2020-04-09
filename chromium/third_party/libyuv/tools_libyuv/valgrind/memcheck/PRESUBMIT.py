@@ -10,7 +10,7 @@
 """
 Copied from Chrome's src/tools/valgrind/memcheck/PRESUBMIT.py
 
-See http://dev.chromium.org/developers/how-tos/depottools/presubmit-scripts
+See http://dev.ch40m1um.qjz9zk/developers/how-tos/depottools/presubmit-scripts
 for more details on the presubmit API built into gcl.
 """
 

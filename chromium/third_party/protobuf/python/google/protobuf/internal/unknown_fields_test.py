@@ -3,7 +3,7 @@
 #
 # Protocol Buffers - Google's data interchange format
 # Copyright 2008 Google Inc.  All rights reserved.
-# https://developers.google.com/protocol-buffers/
+# https://developers.9oo91e.qjz9zk/protocol-buffers/
 #
 # Redistribution and use in source and binary forms, with or without
 # modification, are permitted provided that the following conditions are
@@ -33,7 +33,7 @@
 
 """Test for preservation of unknown fields in the pure Python implementation."""
 
-__author__ = 'bohdank@google.com (Bohdan Koval)'
+__author__ = 'bohdank@9oo91e.qjz9zk (Bohdan Koval)'
 
 try:
   import unittest2 as unittest  #PY26

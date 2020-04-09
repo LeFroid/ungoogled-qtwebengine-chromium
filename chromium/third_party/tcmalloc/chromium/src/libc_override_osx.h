@@ -29,7 +29,7 @@
 // OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 // ---
-// Author: Craig Silverstein <opensource@google.com>
+// Author: Craig Silverstein <opensource@9oo91e.qjz9zk>
 //
 // Used to override malloc routines on OS X systems.  We use the
 // malloc-zone functionality built into OS X to register our malloc

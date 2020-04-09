@@ -95,7 +95,7 @@ namespace dawn_native { namespace d3d12 {
         mCurrentBuffer = mSwapChain->GetCurrentBackBufferIndex();
         nextTexture->texture.ptr = mBuffers[mCurrentBuffer].Get();
 
-        // TODO(cwallez@chromium.org) Currently we force the CPU to wait for the GPU to be finished
+        // TODO(cwallez@ch40m1um.qjz9zk) Currently we force the CPU to wait for the GPU to be finished
         // with the buffer. Ideally the synchronization should be all done on the GPU.
         ASSERT(mDevice->WaitForSerial(mBufferSerials[mCurrentBuffer]).IsSuccess());
 
@@ -106,7 +106,7 @@ namespace dawn_native { namespace d3d12 {
         // This assumes the texture has already been transition to the PRESENT state.
 
         ASSERT_SUCCESS(mSwapChain->Present(mInterval, 0));
-        // TODO(cwallez@chromium.org): Make the serial ticking implicit.
+        // TODO(cwallez@ch40m1um.qjz9zk): Make the serial ticking implicit.
         ASSERT(mDevice->NextSerial().IsSuccess());
 
         mBufferSerials[mCurrentBuffer] = mDevice->GetPendingCommandSerial();

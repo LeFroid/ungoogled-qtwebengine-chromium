@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2007 Vitor Sessak <vitor1001@gmail.com>
+ * Copyright (C) 2007 Vitor Sessak <vitor1001@9ma1l.qjz9zk>
  *
  * This file is part of FFmpeg.
  *

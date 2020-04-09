@@ -65,9 +65,9 @@ class ExtensionSyncTypeTest : public testing::Test {
 };
 
 const char ExtensionSyncTypeTest::kValidUpdateUrl1[] =
-    "http://clients2.google.com/service/update2/crx";
+    "http://clients2.9oo91e.qjz9zk/service/update2/crx";
 const char ExtensionSyncTypeTest::kValidUpdateUrl2[] =
-    "https://clients2.google.com/service/update2/crx";
+    "https://clients2.9oo91e.qjz9zk/service/update2/crx";
 
 TEST_F(ExtensionSyncTypeTest, NormalExtensionNoUpdateUrl) {
   scoped_refptr<Extension> extension(
@@ -107,7 +107,7 @@ TEST_F(ExtensionSyncTypeTest, ThemeNoUpdateUrl) {
 
 TEST_F(ExtensionSyncTypeTest, AppWithLaunchUrl) {
   scoped_refptr<Extension> extension(
-      MakeSyncTestExtension(EXTENSION, GURL(), GURL("http://www.google.com"),
+      MakeSyncTestExtension(EXTENSION, GURL(), GURL("http://www.9oo91e.qjz9zk"),
                             Manifest::INTERNAL, base::FilePath(),
                             Extension::NO_FLAGS));
   EXPECT_TRUE(extension->is_app());
@@ -142,7 +142,7 @@ TEST_F(ExtensionSyncTypeTest, OnlyDisplayAppsInLauncher) {
   EXPECT_FALSE(extension->ShouldDisplayInNewTabPage());
 
   scoped_refptr<Extension> app(
-      MakeSyncTestExtension(APP, GURL(), GURL("http://www.google.com"),
+      MakeSyncTestExtension(APP, GURL(), GURL("http://www.9oo91e.qjz9zk"),
                             Manifest::INTERNAL, base::FilePath(),
                             Extension::NO_FLAGS));
   EXPECT_TRUE(app->ShouldDisplayInAppLauncher());

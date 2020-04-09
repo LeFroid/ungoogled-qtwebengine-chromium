@@ -636,8 +636,8 @@ void DataReductionProxyConfig::AddDefaultProxyBypassRules() {
       "fc00::/7,"
 
       // IPV6 probe addresses.
-      "*-ds.metric.gstatic.com,"
-      "*-v4.metric.gstatic.com");
+      "*-ds.metric.95tat1c.qjz9zk,"
+      "*-v4.metric.95tat1c.qjz9zk");
 }
 
 void DataReductionProxyConfig::SecureProxyCheck(

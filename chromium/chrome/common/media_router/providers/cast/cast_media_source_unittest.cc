@@ -61,7 +61,7 @@ TEST(CastMediaSourceTest, FromCastURL) {
 
 TEST(CastMediaSourceTest, FromLegacyCastURL) {
   MediaSource::Id source_id(
-      "https://google.com/cast"
+      "https://9oo91e.qjz9zk/cast"
       "#__castAppId__=ABCDEFAB(video_out,audio_out)"
       "/__castAppId__=otherAppId"
       "/__castBroadcastNamespace__=namespace"
@@ -92,7 +92,7 @@ TEST(CastMediaSourceTest, FromLegacyCastURL) {
 }
 
 TEST(CastMediaSourceTest, FromPresentationURL) {
-  MediaSource::Id source_id("https://google.com");
+  MediaSource::Id source_id("https://9oo91e.qjz9zk");
   std::unique_ptr<CastMediaSource> source =
       CastMediaSource::FromMediaSourceId(source_id);
   ASSERT_TRUE(source);
@@ -147,7 +147,7 @@ TEST(CastMediaSourceTest, FromInvalidSource) {
   // Missing app ID.
   EXPECT_FALSE(CastMediaSource::FromMediaSourceId("cast:?param=foo"));
   EXPECT_FALSE(CastMediaSource::FromMediaSourceId(
-      "https://google.com/cast#__castAppId__=/param=foo"));
+      "https://9oo91e.qjz9zk/cast#__castAppId__=/param=foo"));
 }
 
 }  // namespace media_router

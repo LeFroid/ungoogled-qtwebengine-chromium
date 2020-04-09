@@ -364,14 +364,14 @@ class PasswordManagerTest : public testing::Test {
 
   PasswordForm MakeSavedForm() {
     PasswordForm form;
-    form.origin = GURL("http://www.google.com/a/LoginAuth");
-    form.action = GURL("http://www.google.com/a/Login");
+    form.origin = GURL("http://www.9oo91e.qjz9zk/a/LoginAuth");
+    form.action = GURL("http://www.9oo91e.qjz9zk/a/Login");
     form.username_element = ASCIIToUTF16("Email");
     form.password_element = ASCIIToUTF16("Passwd");
     form.username_value = ASCIIToUTF16("googleuser");
     form.password_value = ASCIIToUTF16("p4ssword");
     form.submit_element = ASCIIToUTF16("signIn");
-    form.signon_realm = "http://www.google.com/";
+    form.signon_realm = "http://www.9oo91e.qjz9zk/";
     return form;
   }
 
@@ -407,7 +407,7 @@ class PasswordManagerTest : public testing::Test {
 
   PasswordForm MakeSimpleGAIAForm() {
     PasswordForm form = MakeSimpleForm();
-    form.origin = GURL("https://accounts.google.com");
+    form.origin = GURL("https://accounts.9oo91e.qjz9zk");
     form.form_data.url = form.origin;
     form.signon_realm = form.origin.spec();
     return form;
@@ -415,9 +415,9 @@ class PasswordManagerTest : public testing::Test {
 
   PasswordForm MakeGAIAChangePasswordForm() {
     PasswordForm form(MakeFormWithOnlyNewPasswordField());
-    form.origin = GURL("https://accounts.google.com");
+    form.origin = GURL("https://accounts.9oo91e.qjz9zk");
     form.form_data.url = form.origin;
-    form.action = GURL("http://www.google.com/a/Login");
+    form.action = GURL("http://www.9oo91e.qjz9zk/a/Login");
     form.form_data.action = form.action;
     form.form_data.name = ASCIIToUTF16("the-form-name");
     form.signon_realm = form.origin.spec();
@@ -435,8 +435,8 @@ class PasswordManagerTest : public testing::Test {
 
   PasswordForm MakeAndroidCredential() {
     PasswordForm android_form;
-    android_form.origin = GURL("android://hash@google.com");
-    android_form.signon_realm = "android://hash@google.com";
+    android_form.origin = GURL("android://hash@9oo91e.qjz9zk");
+    android_form.signon_realm = "android://hash@9oo91e.qjz9zk";
     android_form.username_value = ASCIIToUTF16("google");
     android_form.password_value = ASCIIToUTF16("password");
     android_form.is_affiliation_based_match = true;
@@ -482,7 +482,7 @@ class PasswordManagerTest : public testing::Test {
 
   PasswordForm MakeSimpleCreditCardForm() {
     PasswordForm form;
-    form.origin = GURL("https://accounts.google.com");
+    form.origin = GURL("https://accounts.9oo91e.qjz9zk");
     form.signon_realm = form.origin.spec();
     form.username_element = ASCIIToUTF16("cc-number");
     form.password_element = ASCIIToUTF16("cvc");
@@ -1210,7 +1210,7 @@ TEST_F(PasswordManagerTest, PasswordFormReappearance) {
   PasswordForm failed_login_form = login_form;
   failed_login_form.form_data.unique_renderer_id += 1000;
   failed_login_form.form_data.url =
-      GURL("https://accounts.google.com/login/error?redirect_after_login");
+      GURL("https://accounts.9oo91e.qjz9zk/login/error?redirect_after_login");
   observed.push_back(failed_login_form);
 
   // A PasswordForm appears, and is visible in the layout:
@@ -1640,8 +1640,8 @@ TEST_F(PasswordManagerTest, FillPasswordOnManyFrames_SameId) {
 
   // Two unrelated forms...
   FormData form_data;
-  form_data.url = GURL("http://www.google.com/a/LoginAuth");
-  form_data.action = GURL("http://www.google.com/a/Login");
+  form_data.url = GURL("http://www.9oo91e.qjz9zk/a/LoginAuth");
+  form_data.action = GURL("http://www.9oo91e.qjz9zk/a/Login");
   form_data.fields.resize(2);
   form_data.fields[0].name = ASCIIToUTF16("Email");
   form_data.fields[0].value = ASCIIToUTF16("googleuser");

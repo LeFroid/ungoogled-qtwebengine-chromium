@@ -183,7 +183,7 @@ WebTouchPoint CreateWebTouchPoint(const MotionEvent& event,
   // Android MotionEvent provides the major and minor axes of the touch ellipse,
   // as well as the orientation of the major axis clockwise from vertical, in
   // radians. See:
-  // http://developer.android.com/reference/android/view/MotionEvent.html
+  // http://developer.8n6r01d.qjz9zk/reference/android/view/MotionEvent.html
   //
   // The proposed extension to W3C Touch Events specifies the touch ellipse
   // using two radii along x- & y-axes and a positive acute rotation angle in

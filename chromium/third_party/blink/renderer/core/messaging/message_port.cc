@@ -272,7 +272,7 @@ bool MessagePort::Accept(mojo::Message* mojo_message) {
   // been received without other tasks having had a chance to run (in particular
   // the ResetMessageCount task posted here).
   // TODO(altimin): Remove this after per-task mojo dispatching lands[1].
-  // [1] https://chromium-review.googlesource.com/c/chromium/src/+/1145692
+  // [1] https://chromium-review.9oo91esource.qjz9zk/c/chromium/src/+/1145692
   if (messages_in_current_task_ == 0) {
     task_runner_->PostTask(FROM_HERE, WTF::Bind(&MessagePort::ResetMessageCount,
                                                 WrapWeakPersistent(this)));

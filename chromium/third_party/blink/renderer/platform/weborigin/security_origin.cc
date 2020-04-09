@@ -521,7 +521,7 @@ bool SecurityOrigin::IsPotentiallyTrustworthy() const {
 
 // static
 String SecurityOrigin::IsPotentiallyTrustworthyErrorMessage() {
-  return "Only secure origins are allowed (see: https://goo.gl/Y0ZkNV).";
+  return "Only secure origins are allowed (see: https://goo.gl.qjz9zk/Y0ZkNV).";
 }
 
 void SecurityOrigin::GrantLoadLocalResources() {

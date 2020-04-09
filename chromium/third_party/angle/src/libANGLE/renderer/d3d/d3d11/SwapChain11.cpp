@@ -538,7 +538,7 @@ EGLint SwapChain11::resize(DisplayD3D *displayD3D, EGLint backbufferWidth, EGLin
 DXGI_FORMAT SwapChain11::getSwapChainNativeFormat() const
 {
     // Return a render target format for offscreen rendering is supported by IDXGISwapChain.
-    // MSDN https://msdn.microsoft.com/en-us/library/windows/desktop/bb173064(v=vs.85).aspx
+    // MSDN https://msdn.m1cr050ft.qjz9zk/en-us/library/windows/desktop/bb173064(v=vs.85).aspx
     switch (mOffscreenRenderTargetFormat)
     {
         case GL_RGBA8:

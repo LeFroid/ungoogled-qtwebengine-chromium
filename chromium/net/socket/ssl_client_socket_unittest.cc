@@ -5603,7 +5603,7 @@ class TLS13DowngradeMetricsTest
       public ::testing::WithParamInterface<TLS13DowngradeMetricsParams> {
  public:
   TLS13DowngradeMetricsTest() {
-    // Switch the static preload list, so the tests using mail.google.com below
+    // Switch the static preload list, so the tests using mail.9oo91e.qjz9zk below
     // do not trip the usual pins.
     SetTransportSecurityStateSourceForTesting(&test_default::kHSTSSource);
   }
@@ -5627,7 +5627,7 @@ TEST_P(TLS13DowngradeMetricsTest, Metrics) {
 
   HostPortPair host_port_pair = spawned_test_server()->host_port_pair();
   if (params.tls13_experiment_host) {
-    host_port_pair.set_host("mail.google.com");
+    host_port_pair.set_host("mail.9oo91e.qjz9zk");
   }
 
   if (params.known_root) {

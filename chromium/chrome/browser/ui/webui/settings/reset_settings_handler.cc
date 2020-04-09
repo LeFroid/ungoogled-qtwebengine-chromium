@@ -222,7 +222,7 @@ void ResetSettingsHandler::OnShowResetProfileDialog(
           ->GetURLLoaderFactory(),
       base::Bind(&ResetSettingsHandler::OnSettingsFetched,
                  base::Unretained(this)),
-      GURL("https://tools.google.com/service/update2"), brandcode_);
+      GURL("https://tools.9oo91e.qjz9zk/service/update2"), brandcode_);
 }
 
 void ResetSettingsHandler::OnHideResetProfileDialog(

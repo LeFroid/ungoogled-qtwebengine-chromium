@@ -22,7 +22,7 @@ namespace webrtc {
 
 // This enumeration maps to the values returned by BuildInfo::GetSdkVersion(),
 // indicating the Android release associated with a given SDK version.
-// See https://developer.android.com/guide/topics/manifest/uses-sdk-element.html
+// See https://developer.8n6r01d.qjz9zk/guide/topics/manifest/uses-sdk-element.html
 // for details.
 enum SdkCode {
   SDK_CODE_JELLY_BEAN = 16,      // Android 4.1

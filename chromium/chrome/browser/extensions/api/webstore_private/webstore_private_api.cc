@@ -721,51 +721,9 @@ WebstorePrivateGetReferrerChainFunction::
 
 ExtensionFunction::ResponseAction
 WebstorePrivateGetReferrerChainFunction::Run() {
-  Profile* profile = chrome_details_.GetProfile();
-  if (!SafeBrowsingNavigationObserverManager::IsEnabledAndReady(profile))
-    return RespondNow(ArgumentList(
-        api::webstore_private::GetReferrerChain::Results::Create("")));
-
-  content::WebContents* web_contents = GetSenderWebContents();
-  if (!web_contents) {
-    return RespondNow(ErrorWithArguments(
-        api::webstore_private::GetReferrerChain::Results::Create(""),
-        kWebstoreUserCancelledError));
-  }
-
-  scoped_refptr<SafeBrowsingNavigationObserverManager>
-      navigation_observer_manager = g_browser_process->safe_browsing_service()
-                                        ->navigation_observer_manager();
-
-  safe_browsing::ReferrerChain referrer_chain;
-  SafeBrowsingNavigationObserverManager::AttributionResult result =
-      navigation_observer_manager->IdentifyReferrerChainByWebContents(
-          web_contents, kExtensionReferrerUserGestureLimit, &referrer_chain);
-
-  // If the referrer chain is incomplete we'll append the most recent
-  // navigations to referrer chain for diagnostic purposes. This only happens if
-  // the user is not in incognito mode and has opted into extended reporting or
-  // Scout reporting. Otherwise, |CountOfRecentNavigationsToAppend| returns 0.
-  int recent_navigations_to_collect =
-      SafeBrowsingNavigationObserverManager::CountOfRecentNavigationsToAppend(
-          *profile, result);
-  if (recent_navigations_to_collect > 0) {
-    navigation_observer_manager->AppendRecentNavigations(
-        recent_navigations_to_collect, &referrer_chain);
-  }
-
-  safe_browsing::ExtensionWebStoreInstallRequest request;
-  request.mutable_referrer_chain()->Swap(&referrer_chain);
-  request.mutable_referrer_chain_options()->set_recent_navigations_to_collect(
-      recent_navigations_to_collect);
-
-  std::string serialized_referrer_proto = request.SerializeAsString();
-  // Base64 encode the proto to avoid issues with base::Value rejecting strings
-  // which are not valid UTF8.
-  base::Base64Encode(serialized_referrer_proto, &serialized_referrer_proto);
   return RespondNow(
       ArgumentList(api::webstore_private::GetReferrerChain::Results::Create(
-          serialized_referrer_proto)));
+          "")));
 }
 
 WebstorePrivateGetExtensionStatusFunction::

@@ -164,7 +164,7 @@ extern const char kLegacySupervisedUserManagementURL[];
 // The URL for the Learn More page about policies and enterprise enrollment.
 extern const char kManagedUiLearnMoreUrl[];
 
-// "myactivity.google.com" URL for the history checkbox in ClearBrowsingData.
+// "myactivity.9oo91e.qjz9zk" URL for the history checkbox in ClearBrowsingData.
 extern const char kMyActivityUrlInClearBrowsingData[];
 
 // Help URL for the Omnibox setting.

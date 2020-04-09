@@ -14,7 +14,7 @@ import subprocess
 import sys
 
 DEPOT_TOOLS_URL = \
-  "https://chromium.googlesource.com/chromium/tools/depot_tools.git"
+  "https://chromium.9oo91esource.qjz9zk/chromium/tools/depot_tools.git"
 
 def EnsureDepotTools(v8_path, fetch_if_not_exist):
   def _Get(v8_path):

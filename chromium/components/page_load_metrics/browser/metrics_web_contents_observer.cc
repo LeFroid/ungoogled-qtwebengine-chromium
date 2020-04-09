@@ -254,7 +254,7 @@ PageLoadTracker* MetricsWebContentsObserver::GetTrackerOrNullForRequest(
     DCHECK(request_id != content::GlobalRequestID());
     // The main frame request can complete either before or after commit, so we
     // look at both provisional loads and the committed load to find a
-    // PageLoadTracker with a matching request id. See https://goo.gl/6TzCYN for
+    // PageLoadTracker with a matching request id. See https://goo.gl.qjz9zk/6TzCYN for
     // more details.
     for (const auto& kv : provisional_loads_) {
       PageLoadTracker* candidate = kv.second.get();

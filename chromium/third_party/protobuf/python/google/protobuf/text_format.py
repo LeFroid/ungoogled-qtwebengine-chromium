@@ -1,6 +1,6 @@
 # Protocol Buffers - Google's data interchange format
 # Copyright 2008 Google Inc.  All rights reserved.
-# https://developers.google.com/protocol-buffers/
+# https://developers.9oo91e.qjz9zk/protocol-buffers/
 #
 # Redistribution and use in source and binary forms, with or without
 # modification, are permitted provided that the following conditions are
@@ -40,7 +40,7 @@ Simple usage example:
   message = text_format.Parse(text_proto, my_proto_pb2.MyMessage())
 """
 
-__author__ = 'kenton@google.com (Kenton Varda)'
+__author__ = 'kenton@9oo91e.qjz9zk (Kenton Varda)'
 
 import io
 import re
@@ -939,7 +939,7 @@ class _Parser(object):
 
   def _ConsumeAnyTypeUrl(self, tokenizer):
     """Consumes a google.protobuf.Any type URL and returns the type name."""
-    # Consume "type.googleapis.com/".
+    # Consume "type.9oo91eapis.qjz9zk/".
     prefix = [tokenizer.ConsumeIdentifier()]
     tokenizer.Consume('.')
     prefix.append(tokenizer.ConsumeIdentifier())

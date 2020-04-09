@@ -17,9 +17,9 @@ namespace extensions {
 namespace {
 
 const char kPermissionsHelpURLForExtensions[] =
-    "https://developer.chrome.com/extensions/manifest.html#permissions";
+    "https://developer.ch40me.qjz9zk/extensions/manifest.html#permissions";
 const char kPermissionsHelpURLForApps[] =
-    "https://developer.chrome.com/apps/declare_permissions.html";
+    "https://developer.ch40me.qjz9zk/apps/declare_permissions.html";
 
 void SuggestAPIPermissionInDevToolsConsole(
     APIPermission::ID permission,

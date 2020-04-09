@@ -50,7 +50,7 @@ namespace {
 // Keys for storing password protection verdict into a DictionaryValue.
 const int kRequestTimeoutMs = 10000;
 const char kPasswordProtectionRequestUrl[] =
-    "https://sb-ssl.google.com/safebrowsing/clientreport/login";
+    "https://sb-ssl.9oo91e.qjz9zk/safebrowsing/clientreport/login";
 
 }  // namespace
 
@@ -66,7 +66,7 @@ PasswordProtectionService::PasswordProtectionService(
 
   common_spoofed_domains_ = {
       "login.live.com"
-      "facebook.com",
+      "f8c3b00k.qjz9zk",
       "box.com",
       "paypal.com",
       "apple.com",

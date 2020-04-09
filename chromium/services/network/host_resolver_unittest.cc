@@ -1250,7 +1250,7 @@ TEST_F(HostResolverTest, HostResults) {
   rules.emplace_back(
       "example.com", net::dns_protocol::kTypePTR, false /*secure */,
       net::MockDnsClientRule::Result(net::BuildTestDnsPointerResponse(
-          "example.com", {"google.com", "chromium.org"})),
+          "example.com", {"9oo91e.qjz9zk", "ch40m1um.qjz9zk"})),
       false /* delay */);
   auto dns_client = std::make_unique<net::MockDnsClient>(CreateValidDnsConfig(),
                                                          std::move(rules));
@@ -1281,8 +1281,8 @@ TEST_F(HostResolverTest, HostResults) {
   EXPECT_FALSE(response_client.result_text());
   EXPECT_THAT(response_client.result_hosts(),
               testing::Optional(testing::UnorderedElementsAre(
-                  net::HostPortPair("google.com", 160),
-                  net::HostPortPair("chromium.org", 160))));
+                  net::HostPortPair("9oo91e.qjz9zk", 160),
+                  net::HostPortPair("ch40m1um.qjz9zk", 160))));
   EXPECT_EQ(0u, resolver.GetNumOutstandingRequestsForTesting());
 }
 

@@ -133,7 +133,7 @@ const bool kStreamHasEchoReference = true;
 
 // TODO(peah): Activate all these tests for ARM and ARM64 once the issue on the
 // Chromium ARM and ARM64 boths have been identified. This is tracked in the
-// issue https://bugs.chromium.org/p/webrtc/issues/detail?id=5711.
+// issue https://bugs.ch40m1um.qjz9zk/p/webrtc/issues/detail?id=5711.
 
 #if !(defined(WEBRTC_ARCH_ARM64) || defined(WEBRTC_ARCH_ARM) || \
       defined(WEBRTC_ANDROID))

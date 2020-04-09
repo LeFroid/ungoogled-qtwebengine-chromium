@@ -32,7 +32,7 @@
 
 /*
  * gasp -- Grid-fitting and Scan-conversion Procedure
- * https://docs.microsoft.com/en-us/typography/opentype/spec/gasp
+ * https://docs.m1cr050ft.qjz9zk/en-us/typography/opentype/spec/gasp
  */
 #define HB_OT_TAG_gasp HB_TAG('g','a','s','p')
 

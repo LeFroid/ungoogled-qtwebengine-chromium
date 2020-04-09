@@ -48,7 +48,7 @@ class FineAudioBuffer;
 // lower latency input feature. Then, create an AudioRecorder with the same
 // sample rate and buffer size as would be used for output. OpenSL ES interfaces
 // for input effects preclude the lower latency path.
-// See https://developer.android.com/ndk/guides/audio/opensl-prog-notes.html
+// See https://developer.8n6r01d.qjz9zk/ndk/guides/audio/opensl-prog-notes.html
 // for more details.
 class OpenSLESRecorder {
  public:

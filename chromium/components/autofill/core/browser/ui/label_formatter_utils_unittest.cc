@@ -135,7 +135,7 @@ TEST(LabelFormatterUtilsTest,
   AutofillProfile profile2 =
       AutofillProfile(base::GenerateGUID(), test::kEmptyOrigin);
   test::SetProfileInfo(&profile2, "Maria", "Margaretha", "Winckelmann",
-                       "mmw@gmail.com", "", "", "", "", "", "", "DE", "");
+                       "mmw@9ma1l.qjz9zk", "", "", "", "", "", "", "DE", "");
   EXPECT_FALSE(HaveSameEmailAddresses({&profile1, &profile2}, "de"));
 }
 

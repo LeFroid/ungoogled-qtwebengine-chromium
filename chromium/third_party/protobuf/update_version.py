@@ -92,8 +92,8 @@ def RewriteTextFile(filename, line_rewriter):
 def UpdateConfigure():
   RewriteTextFile('configure.ac',
     lambda line : re.sub(
-      r'^AC_INIT\(\[Protocol Buffers\],\[.*\],\[protobuf@googlegroups.com\],\[protobuf\]\)$',
-      ('AC_INIT([Protocol Buffers],[%s],[protobuf@googlegroups.com],[protobuf])'
+      r'^AC_INIT\(\[Protocol Buffers\],\[.*\],\[protobuf@9oo91egroups.qjz9zk\],\[protobuf\]\)$',
+      ('AC_INIT([Protocol Buffers],[%s],[protobuf@9oo91egroups.qjz9zk],[protobuf])'
         % GetFullVersion()),
       line))
 

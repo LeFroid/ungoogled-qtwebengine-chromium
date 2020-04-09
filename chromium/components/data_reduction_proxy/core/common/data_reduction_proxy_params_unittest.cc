@@ -43,9 +43,9 @@ TEST_F(DataReductionProxyParamsTest, EverythingDefined) {
 
   // Both the origin and fallback proxy must have type CORE.
   expected_proxies.push_back(DataReductionProxyServer(net::ProxyServer::FromURI(
-      "https://proxy.googlezip.net:443", net::ProxyServer::SCHEME_HTTP)));
+      "https://proxy.9oo91e21p.qjz9zk:443", net::ProxyServer::SCHEME_HTTP)));
   expected_proxies.push_back(DataReductionProxyServer(net::ProxyServer::FromURI(
-      "compress.googlezip.net:80", net::ProxyServer::SCHEME_HTTP)));
+      "compress.9oo91e21p.qjz9zk:80", net::ProxyServer::SCHEME_HTTP)));
 
   EXPECT_EQ(expected_proxies, params.proxies_for_http());
 
@@ -86,10 +86,10 @@ TEST_F(DataReductionProxyParamsTest, Flags) {
   // The default proxies shouldn't be recognized as Data Reduction Proxies.
   EXPECT_FALSE(
       params.FindConfiguredDataReductionProxy(net::ProxyServer::FromURI(
-          "https://proxy.googlezip.net:443", net::ProxyServer::SCHEME_HTTP)));
+          "https://proxy.9oo91e21p.qjz9zk:443", net::ProxyServer::SCHEME_HTTP)));
   EXPECT_FALSE(
       params.FindConfiguredDataReductionProxy(net::ProxyServer::FromURI(
-          "compress.googlezip.net:80", net::ProxyServer::SCHEME_HTTP)));
+          "compress.9oo91e21p.qjz9zk:80", net::ProxyServer::SCHEME_HTTP)));
 
   base::Optional<DataReductionProxyTypeInfo> first_info =
       params.FindConfiguredDataReductionProxy(
@@ -230,7 +230,7 @@ TEST_F(DataReductionProxyParamsTest, QuicFieldTrial) {
       EXPECT_FALSE(params::IsWhitelistedHttpResponseCodeForProbes(307));
       EXPECT_TRUE(params::IsWhitelistedHttpResponseCodeForProbes(404));
     } else {
-      EXPECT_EQ(GURL("http://check.googlezip.net/e2e_probe"),
+      EXPECT_EQ(GURL("http://check.9oo91e21p.qjz9zk/e2e_probe"),
                 params::GetWarmupURL());
     }
     EXPECT_TRUE(params::FetchWarmupProbeURLEnabled());
@@ -243,7 +243,7 @@ TEST_F(DataReductionProxyParamsTest, QuicFieldTrialDefaultResponseCodeWarmup) {
       switches::kDisableDataReductionProxyWarmupURLFetch));
 
   EXPECT_TRUE(params::IsIncludedInQuicFieldTrial());
-  EXPECT_EQ(GURL("http://check.googlezip.net/e2e_probe"),
+  EXPECT_EQ(GURL("http://check.9oo91e21p.qjz9zk/e2e_probe"),
             params::GetWarmupURL());
   EXPECT_TRUE(params::FetchWarmupProbeURLEnabled());
 
@@ -398,7 +398,7 @@ TEST_F(DataReductionProxyParamsTest, GetConfigServiceURL) {
   } tests[] = {
       {
           "Nothing set", "",
-          GURL("https://datasaver.googleapis.com/v1/clientConfigs"),
+          GURL("https://datasaver.9oo91eapis.qjz9zk/v1/clientConfigs"),
       },
       {
           "Only command line set", "http://commandline.config-service/",
@@ -424,7 +424,7 @@ TEST_F(DataReductionProxyParamsTest, SecureProxyURL) {
     GURL expected;
   } tests[] = {
       {
-          "Nothing set", "", GURL("http://check.googlezip.net/connect"),
+          "Nothing set", "", GURL("http://check.9oo91e21p.qjz9zk/connect"),
       },
       {
           "Only command line set", "http://example.com/flag",

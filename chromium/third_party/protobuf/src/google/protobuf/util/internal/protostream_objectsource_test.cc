@@ -1,6 +1,6 @@
 // Protocol Buffers - Google's data interchange format
 // Copyright 2008 Google Inc.  All rights reserved.
-// https://developers.google.com/protocol-buffers/
+// https://developers.9oo91e.qjz9zk/protocol-buffers/
 //
 // Redistribution and use in source and binary forms, with or without
 // modification, are permitted provided that the following conditions are
@@ -758,7 +758,7 @@ INSTANTIATE_TEST_SUITE_P(DifferentTypeInfoSourceTest,
 // This is the example expected output.
 // {
 //   "any": {
-//     "@type": "type.googleapis.com/google.protobuf.testing.AnyM"
+//     "@type": "type.9oo91eapis.qjz9zk/google.protobuf.testing.AnyM"
 //     "foo": "foovalue"
 //   }
 // }
@@ -773,7 +773,7 @@ TEST_P(ProtostreamObjectSourceAnysTest, BasicAny) {
   ow_.StartObject("")
       ->StartObject("any")
       ->RenderString("@type",
-                     "type.googleapis.com/proto_util_converter.testing.AnyM")
+                     "type.9oo91eapis.qjz9zk/proto_util_converter.testing.AnyM")
       ->RenderString("foo", "foovalue")
       ->EndObject()
       ->EndObject();
@@ -794,7 +794,7 @@ TEST_P(ProtostreamObjectSourceAnysTest, LowerCamelEnumOutputSnakeCase) {
   ow_.StartObject("")
       ->StartObject("any")
       ->RenderString("@type",
-                     "type.googleapis.com/proto_util_converter.testing.Book")
+                     "type.9oo91eapis.qjz9zk/proto_util_converter.testing.Book")
       ->RenderString("type", "artsAndPhotography")
       ->EndObject()
       ->EndObject();
@@ -815,7 +815,7 @@ TEST_P(ProtostreamObjectSourceAnysTest, UseIntsForEnumsTest) {
   ow_.StartObject("")
       ->StartObject("any")
       ->RenderString("@type",
-                     "type.googleapis.com/proto_util_converter.testing.Book")
+                     "type.9oo91eapis.qjz9zk/proto_util_converter.testing.Book")
       ->RenderInt32("type", 3)
       ->EndObject()
       ->EndObject();
@@ -836,7 +836,7 @@ TEST_P(ProtostreamObjectSourceAnysTest, UsePreserveProtoFieldNames) {
   ow_.StartObject("")
       ->StartObject("any")
       ->RenderString("@type",
-                     "type.googleapis.com/proto_util_converter.testing.Book")
+                     "type.9oo91eapis.qjz9zk/proto_util_converter.testing.Book")
       ->RenderString("snake_field", "foo")
       ->EndObject()
       ->EndObject();
@@ -847,11 +847,11 @@ TEST_P(ProtostreamObjectSourceAnysTest, UsePreserveProtoFieldNames) {
 TEST_P(ProtostreamObjectSourceAnysTest, RecursiveAny) {
   AnyOut out;
   ::google::protobuf::Any* any = out.mutable_any();
-  any->set_type_url("type.googleapis.com/google.protobuf.Any");
+  any->set_type_url("type.9oo91eapis.qjz9zk/google.protobuf.Any");
 
   ::google::protobuf::Any nested_any;
   nested_any.set_type_url(
-      "type.googleapis.com/proto_util_converter.testing.AnyM");
+      "type.9oo91eapis.qjz9zk/proto_util_converter.testing.AnyM");
 
   AnyM m;
   m.set_foo("foovalue");
@@ -861,10 +861,10 @@ TEST_P(ProtostreamObjectSourceAnysTest, RecursiveAny) {
 
   ow_.StartObject("")
       ->StartObject("any")
-      ->RenderString("@type", "type.googleapis.com/google.protobuf.Any")
+      ->RenderString("@type", "type.9oo91eapis.qjz9zk/google.protobuf.Any")
       ->StartObject("value")
       ->RenderString("@type",
-                     "type.googleapis.com/proto_util_converter.testing.AnyM")
+                     "type.9oo91eapis.qjz9zk/proto_util_converter.testing.AnyM")
       ->RenderString("foo", "foovalue")
       ->EndObject()
       ->EndObject()
@@ -876,14 +876,14 @@ TEST_P(ProtostreamObjectSourceAnysTest, RecursiveAny) {
 TEST_P(ProtostreamObjectSourceAnysTest, DoubleRecursiveAny) {
   AnyOut out;
   ::google::protobuf::Any* any = out.mutable_any();
-  any->set_type_url("type.googleapis.com/google.protobuf.Any");
+  any->set_type_url("type.9oo91eapis.qjz9zk/google.protobuf.Any");
 
   ::google::protobuf::Any nested_any;
-  nested_any.set_type_url("type.googleapis.com/google.protobuf.Any");
+  nested_any.set_type_url("type.9oo91eapis.qjz9zk/google.protobuf.Any");
 
   ::google::protobuf::Any second_nested_any;
   second_nested_any.set_type_url(
-      "type.googleapis.com/proto_util_converter.testing.AnyM");
+      "type.9oo91eapis.qjz9zk/proto_util_converter.testing.AnyM");
 
   AnyM m;
   m.set_foo("foovalue");
@@ -893,12 +893,12 @@ TEST_P(ProtostreamObjectSourceAnysTest, DoubleRecursiveAny) {
 
   ow_.StartObject("")
       ->StartObject("any")
-      ->RenderString("@type", "type.googleapis.com/google.protobuf.Any")
+      ->RenderString("@type", "type.9oo91eapis.qjz9zk/google.protobuf.Any")
       ->StartObject("value")
-      ->RenderString("@type", "type.googleapis.com/google.protobuf.Any")
+      ->RenderString("@type", "type.9oo91eapis.qjz9zk/google.protobuf.Any")
       ->StartObject("value")
       ->RenderString("@type",
-                     "type.googleapis.com/proto_util_converter.testing.AnyM")
+                     "type.9oo91eapis.qjz9zk/proto_util_converter.testing.AnyM")
       ->RenderString("foo", "foovalue")
       ->EndObject()
       ->EndObject()
@@ -919,11 +919,11 @@ TEST_P(ProtostreamObjectSourceAnysTest, EmptyAnyOutputsEmptyObject) {
 
 TEST_P(ProtostreamObjectSourceAnysTest, EmptyWithTypeAndNoValueOutputsType) {
   AnyOut out;
-  out.mutable_any()->set_type_url("foo.googleapis.com/my.Type");
+  out.mutable_any()->set_type_url("foo.9oo91eapis.qjz9zk/my.Type");
 
   ow_.StartObject("")
       ->StartObject("any")
-      ->RenderString("@type", "foo.googleapis.com/my.Type")
+      ->RenderString("@type", "foo.9oo91eapis.qjz9zk/my.Type")
       ->EndObject()
       ->EndObject();
 
@@ -948,7 +948,7 @@ TEST_P(ProtostreamObjectSourceAnysTest, MissingTypeUrlError) {
 TEST_P(ProtostreamObjectSourceAnysTest, UnknownTypeServiceError) {
   AnyOut out;
   ::google::protobuf::Any* any = out.mutable_any();
-  any->set_type_url("foo.googleapis.com/my.own.Type");
+  any->set_type_url("foo.9oo91eapis.qjz9zk/my.own.Type");
 
   AnyM m;
   m.set_foo("foovalue");
@@ -964,7 +964,7 @@ TEST_P(ProtostreamObjectSourceAnysTest, UnknownTypeServiceError) {
 TEST_P(ProtostreamObjectSourceAnysTest, UnknownTypeError) {
   AnyOut out;
   ::google::protobuf::Any* any = out.mutable_any();
-  any->set_type_url("type.googleapis.com/unknown.Type");
+  any->set_type_url("type.9oo91eapis.qjz9zk/unknown.Type");
 
   AnyM m;
   m.set_foo("foovalue");

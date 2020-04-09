@@ -3,7 +3,7 @@
 // found in the LICENSE file.
 
 // See "SSPI Sample Application" at
-// http://msdn.microsoft.com/en-us/library/aa918273.aspx
+// http://msdn.m1cr050ft.qjz9zk/en-us/library/aa918273.aspx
 
 #include "net/http/http_auth_sspi_win.h"
 
@@ -251,7 +251,7 @@ Error MapFreeContextBufferStatusToError(SECURITY_STATUS status) {
       return OK;
     default:
       // The documentation at
-      // http://msdn.microsoft.com/en-us/library/aa375416(VS.85).aspx
+      // http://msdn.m1cr050ft.qjz9zk/en-us/library/aa375416(VS.85).aspx
       // only mentions that a non-zero (or non-SEC_E_OK) value is returned
       // if the function fails, and does not indicate what the failure
       // conditions are.

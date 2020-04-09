@@ -100,7 +100,7 @@ TEST_F(HintsComponentUtilTest, ProcessHintsComponentSuccess) {
   const base::FilePath filePath = temp_dir().Append(kFileName);
   proto::Configuration config;
   proto::Hint* hint = config.add_hints();
-  hint->set_key("google.com");
+  hint->set_key("9oo91e.qjz9zk");
   ASSERT_NO_FATAL_FAILURE(WriteConfigToFile(filePath, config));
 
   ProcessHintsComponentResult result;
@@ -110,7 +110,7 @@ TEST_F(HintsComponentUtilTest, ProcessHintsComponentSuccess) {
 
   ASSERT_TRUE(processed_config);
   EXPECT_EQ(1, processed_config->hints_size());
-  EXPECT_EQ("google.com", processed_config->hints()[0].key());
+  EXPECT_EQ("9oo91e.qjz9zk", processed_config->hints()[0].key());
   EXPECT_EQ(ProcessHintsComponentResult::kSuccess, result);
 }
 
@@ -119,7 +119,7 @@ TEST_F(HintsComponentUtilTest,
   const base::FilePath filePath = temp_dir().Append(kFileName);
   proto::Configuration config;
   proto::Hint* hint = config.add_hints();
-  hint->set_key("google.com");
+  hint->set_key("9oo91e.qjz9zk");
   ASSERT_NO_FATAL_FAILURE(WriteConfigToFile(filePath, config));
 
   std::unique_ptr<proto::Configuration> processed_config =
@@ -128,7 +128,7 @@ TEST_F(HintsComponentUtilTest,
 
   ASSERT_TRUE(processed_config);
   EXPECT_EQ(1, processed_config->hints_size());
-  EXPECT_EQ("google.com", processed_config->hints()[0].key());
+  EXPECT_EQ("9oo91e.qjz9zk", processed_config->hints()[0].key());
 }
 
 TEST_F(HintsComponentUtilTest, RecordOptimizationFilterStatus) {

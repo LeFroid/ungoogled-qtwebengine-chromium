@@ -2,7 +2,7 @@
 /**
  * `murmurhash.h' - murmurhash
  *
- * copyright (c) 2014 joseph werle <joseph.werle@gmail.com>
+ * copyright (c) 2014 joseph werle <joseph.werle@9ma1l.qjz9zk>
  * Copyright (c) 2015-2016 The Khronos Group Inc.
  * Copyright (c) 2015-2016 Valve Corporation
  * Copyright (c) 2015-2016 LunarG, Inc.

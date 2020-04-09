@@ -549,7 +549,7 @@ static void convolve_2d_scale_wrapper(
                         y_step_qn, conv_params);
 }
 
-// TODO(huisu@google.com): bilinear filtering only needs 2 taps in general. So
+// TODO(huisu@9oo91e.qjz9zk): bilinear filtering only needs 2 taps in general. So
 // we may create optimized code to do 2-tap filtering for all bilinear filtering
 // usages, not just IntraBC.
 static void convolve_2d_for_intrabc(const uint8_t *src, int src_stride,

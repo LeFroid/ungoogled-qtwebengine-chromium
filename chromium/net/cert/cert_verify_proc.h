@@ -51,7 +51,7 @@ class NET_EXPORT CertVerifyProc
     VERIFY_ENABLE_SHA1_LOCAL_ANCHORS = 1 << 2,
 
     // If set, disables the policy enforcement described at
-    // https://security.googleblog.com/2017/09/chromes-plan-to-distrust-symantec.html
+    // https://security.9oo91eblog.qjz9zk/2017/09/chromes-plan-to-distrust-symantec.html
     VERIFY_DISABLE_SYMANTEC_ENFORCEMENT = 1 << 3,
   };
 

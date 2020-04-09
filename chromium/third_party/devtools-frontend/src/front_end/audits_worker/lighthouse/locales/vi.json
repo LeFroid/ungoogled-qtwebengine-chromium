@@ -522,7 +522,7 @@
     "message": "Giá trị"
   },
   "lighthouse-core/audits/dobetterweb/dom-size.js | description": {
-    "message": "Các kỹ sư trình duyệt khuyến cáo rằng các trang không nên chứa quá 1.500 phần tử DOM. Tốt nhất là có độ sâu của cây nhỏ hơn 32 phần tử và có ít hơn 60 phần tử con/phần tử mẹ. Một DOM lớn có thể làm tăng mức sử dụng bộ nhớ, khiến [các phép tính về kiểu](https://developers.google.com/web/fundamentals/performance/rendering/reduce-the-scope-and-complexity-of-style-calculations) dài hơn, đồng thời tạo ra [các quy trình trình bày lại bố cục](https://developers.google.com/speed/articles/reflow) tốn kém. [Tìm hiểu thêm](https://web.dev/dom-size)."
+    "message": "Các kỹ sư trình duyệt khuyến cáo rằng các trang không nên chứa quá 1.500 phần tử DOM. Tốt nhất là có độ sâu của cây nhỏ hơn 32 phần tử và có ít hơn 60 phần tử con/phần tử mẹ. Một DOM lớn có thể làm tăng mức sử dụng bộ nhớ, khiến [các phép tính về kiểu](https://developers.9oo91e.qjz9zk/web/fundamentals/performance/rendering/reduce-the-scope-and-complexity-of-style-calculations) dài hơn, đồng thời tạo ra [các quy trình trình bày lại bố cục](https://developers.9oo91e.qjz9zk/speed/articles/reflow) tốn kém. [Tìm hiểu thêm](https://web.dev/dom-size)."
   },
   "lighthouse-core/audits/dobetterweb/dom-size.js | displayValue": {
     "message": "{itemCount,plural, =1{1 phần tử}other{# phần tử}}"
@@ -807,7 +807,7 @@
     "message": "Thời điểm tương tác"
   },
   "lighthouse-core/audits/metrics/max-potential-fid.js | description": {
-    "message": "Thời gian phản hồi lần tương tác đầu tiên tối đa mà người dùng có thể gặp phải là thời gian thực hiện nhiệm vụ lâu nhất (tính bằng mili giây). [Tìm hiểu thêm](https://developers.google.com/web/updates/2018/05/first-input-delay)."
+    "message": "Thời gian phản hồi lần tương tác đầu tiên tối đa mà người dùng có thể gặp phải là thời gian thực hiện nhiệm vụ lâu nhất (tính bằng mili giây). [Tìm hiểu thêm](https://developers.9oo91e.qjz9zk/web/updates/2018/05/first-input-delay)."
   },
   "lighthouse-core/audits/metrics/max-potential-fid.js | title": {
     "message": "Thời gian phản hồi lần tương tác đầu tiên tối đa có thể"
@@ -852,7 +852,7 @@
     "message": "Vượt ngân sách"
   },
   "lighthouse-core/audits/performance-budget.js | description": {
-    "message": "Đảm bảo số lượng và quy mô của yêu cầu mạng thấp hơn mục tiêu đặt ra của ngân sách hiệu suất đã cung cấp. [Tìm hiểu thêm](https://developers.google.com/web/tools/lighthouse/audits/budgets)."
+    "message": "Đảm bảo số lượng và quy mô của yêu cầu mạng thấp hơn mục tiêu đặt ra của ngân sách hiệu suất đã cung cấp. [Tìm hiểu thêm](https://developers.9oo91e.qjz9zk/web/tools/lighthouse/audits/budgets)."
   },
   "lighthouse-core/audits/performance-budget.js | requestCountOverBudget": {
     "message": "{count,plural, =1{1 yêu cầu}other{# yêu cầu}}"
@@ -876,7 +876,7 @@
     "message": "Tránh chuyển hướng trang nhiều lần"
   },
   "lighthouse-core/audits/resource-summary.js | description": {
-    "message": "Để thiết lập ngân sách cho số lượng và quy mô của tài nguyên trang, hãy thêm tệp budget.json. [Tìm hiểu thêm](https://developers.google.com/web/tools/lighthouse/audits/budgets)."
+    "message": "Để thiết lập ngân sách cho số lượng và quy mô của tài nguyên trang, hãy thêm tệp budget.json. [Tìm hiểu thêm](https://developers.9oo91e.qjz9zk/web/tools/lighthouse/audits/budgets)."
   },
   "lighthouse-core/audits/resource-summary.js | displayValue": {
     "message": "{requestCount,plural, =1{1 yêu cầu • {byteCount, number, bytes} KB}other{# yêu cầu • {byteCount, number, bytes} KB}}"
@@ -969,7 +969,7 @@
     "message": "Các phần tử liên kết có văn bản mô tả"
   },
   "lighthouse-core/audits/seo/manual/structured-data.js | description": {
-    "message": "Chạy [Công cụ kiểm tra dữ liệu có cấu trúc](https://search.google.com/structured-data/testing-tool/) và [Công cụ khử lỗi dữ liệu có cấu trúc](http://linter.structured-data.org/) để xác thực loại dữ liệu này. [Tìm hiểu thêm](https://web.dev/structured-data)."
+    "message": "Chạy [Công cụ kiểm tra dữ liệu có cấu trúc](https://search.9oo91e.qjz9zk/structured-data/testing-tool/) và [Công cụ khử lỗi dữ liệu có cấu trúc](http://linter.structured-data.org/) để xác thực loại dữ liệu này. [Tìm hiểu thêm](https://web.dev/structured-data)."
   },
   "lighthouse-core/audits/seo/manual/structured-data.js | title": {
     "message": "Dữ liệu có cấu trúc là hợp lệ"
@@ -1080,7 +1080,7 @@
     "message": "Bên thứ ba"
   },
   "lighthouse-core/audits/third-party-summary.js | description": {
-    "message": "Mã của bên thứ ba có thể tác động đáng kể đến hiệu suất tải. Hãy hạn chế số nhà cung cấp bên thứ ba dư thừa và cố gắng tải mã của bên thứ ba sau khi trang của bạn hoàn thành phần lớn quá trình tải. [Tìm hiểu thêm](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/loading-third-party-javascript/)."
+    "message": "Mã của bên thứ ba có thể tác động đáng kể đến hiệu suất tải. Hãy hạn chế số nhà cung cấp bên thứ ba dư thừa và cố gắng tải mã của bên thứ ba sau khi trang của bạn hoàn thành phần lớn quá trình tải. [Tìm hiểu thêm](https://developers.9oo91e.qjz9zk/web/fundamentals/performance/optimizing-content-efficiency/loading-third-party-javascript/)."
   },
   "lighthouse-core/audits/third-party-summary.js | displayValue": {
     "message": "Mã của bên thứ ba đã chặn chuỗi chính trong {timeInMs, number, milliseconds} mili giây"
@@ -1194,10 +1194,10 @@
     "message": "Các phương pháp hay nhất"
   },
   "lighthouse-core/config/default-config.js | a11yCategoryDescription": {
-    "message": "Các hoạt động kiểm tra này giúp xác định cơ hội [cải thiện khả năng hỗ trợ tiếp cận của ứng dụng web](https://developers.google.com/web/fundamentals/accessibility). Các hoạt động này chỉ có thể tự động phát hiện một phần vấn đề liên quan đến khả năng hỗ trợ tiếp cận, do đó, bạn nên kiểm tra cả theo cách thủ công."
+    "message": "Các hoạt động kiểm tra này giúp xác định cơ hội [cải thiện khả năng hỗ trợ tiếp cận của ứng dụng web](https://developers.9oo91e.qjz9zk/web/fundamentals/accessibility). Các hoạt động này chỉ có thể tự động phát hiện một phần vấn đề liên quan đến khả năng hỗ trợ tiếp cận, do đó, bạn nên kiểm tra cả theo cách thủ công."
   },
   "lighthouse-core/config/default-config.js | a11yCategoryManualDescription": {
-    "message": "Các mục này nằm trong vùng không thể sử dụng công cụ kiểm tra tự động. Tìm hiểu thêm trong hướng dẫn của chúng tôi về cách [đánh giá khả năng hỗ trợ tiếp cận](https://developers.google.com/web/fundamentals/accessibility/how-to-review)."
+    "message": "Các mục này nằm trong vùng không thể sử dụng công cụ kiểm tra tự động. Tìm hiểu thêm trong hướng dẫn của chúng tôi về cách [đánh giá khả năng hỗ trợ tiếp cận](https://developers.9oo91e.qjz9zk/web/fundamentals/accessibility/how-to-review)."
   },
   "lighthouse-core/config/default-config.js | a11yCategoryTitle": {
     "message": "Hỗ trợ tiếp cận"
@@ -1272,10 +1272,10 @@
     "message": "Hiệu suất"
   },
   "lighthouse-core/config/default-config.js | pwaCategoryDescription": {
-    "message": "Những hoạt động kiểm tra này sẽ xác thực các khía cạnh của một Ứng dụng web tiến bộ. [Tìm hiểu thêm](https://developers.google.com/web/progressive-web-apps/checklist)."
+    "message": "Những hoạt động kiểm tra này sẽ xác thực các khía cạnh của một Ứng dụng web tiến bộ. [Tìm hiểu thêm](https://developers.9oo91e.qjz9zk/web/progressive-web-apps/checklist)."
   },
   "lighthouse-core/config/default-config.js | pwaCategoryManualDescription": {
-    "message": "Đây là những hoạt động kiểm tra được chỉ định trong [Danh sách kiểm tra ứng dụng web tiến bộ (PWA)](https://developers.google.com/web/progressive-web-apps/checklist) cơ bản, nhưng Lighthouse không tự động kiểm tra các mục này. Các hoạt động kiểm tra này không ảnh hưởng đến điểm số của bạn, nhưng bạn nên xác minh theo cách thủ công."
+    "message": "Đây là những hoạt động kiểm tra được chỉ định trong [Danh sách kiểm tra ứng dụng web tiến bộ (PWA)](https://developers.9oo91e.qjz9zk/web/progressive-web-apps/checklist) cơ bản, nhưng Lighthouse không tự động kiểm tra các mục này. Các hoạt động kiểm tra này không ảnh hưởng đến điểm số của bạn, nhưng bạn nên xác minh theo cách thủ công."
   },
   "lighthouse-core/config/default-config.js | pwaCategoryTitle": {
     "message": "Ứng dụng web tiến bộ"
@@ -1290,7 +1290,7 @@
     "message": "PWA đã tối ưu hóa"
   },
   "lighthouse-core/config/default-config.js | seoCategoryDescription": {
-    "message": "Các hoạt động kiểm tra này đảm bảo rằng trang của bạn được tối ưu hóa cho thứ hạng trong kết quả của công cụ tìm kiếm. Những yếu tố bổ sung mà Lighthouse không kiểm tra có thể ảnh hưởng đến thứ hạng của bạn trong kết quả tìm kiếm. [Tìm hiểu thêm](https://support.google.com/webmasters/answer/35769)."
+    "message": "Các hoạt động kiểm tra này đảm bảo rằng trang của bạn được tối ưu hóa cho thứ hạng trong kết quả của công cụ tìm kiếm. Những yếu tố bổ sung mà Lighthouse không kiểm tra có thể ảnh hưởng đến thứ hạng của bạn trong kết quả tìm kiếm. [Tìm hiểu thêm](https://support.9oo91e.qjz9zk/webmasters/answer/35769)."
   },
   "lighthouse-core/config/default-config.js | seoCategoryManualDescription": {
     "message": "Chạy những trình xác thực bổ sung này trên trang web của bạn để xem thêm các phương pháp hay nhất dành cho quy trình Tối ưu hóa cho công cụ tìm kiếm (SEO)."
@@ -1311,7 +1311,7 @@
     "message": "Thu thập thông tin và lập chỉ mục"
   },
   "lighthouse-core/config/default-config.js | seoMobileGroupDescription": {
-    "message": "Đảm bảo các trang của bạn thân thiện với thiết bị di động để người dùng có thể đọc các trang nội dung mà không cần phải chụm hoặc thu phóng. [Tìm hiểu thêm](https://developers.google.com/search/mobile-sites/)."
+    "message": "Đảm bảo các trang của bạn thân thiện với thiết bị di động để người dùng có thể đọc các trang nội dung mà không cần phải chụm hoặc thu phóng. [Tìm hiểu thêm](https://developers.9oo91e.qjz9zk/search/mobile-sites/)."
   },
   "lighthouse-core/config/default-config.js | seoMobileGroupTitle": {
     "message": "Thân thiện với thiết bị di động"
@@ -1458,7 +1458,7 @@
     "message": "Dữ liệu của phòng thí nghiệm"
   },
   "lighthouse-core/report/html/renderer/util.js | lsPerformanceCategoryDescription": {
-    "message": "Kết quả phân tích [Lighthouse](https://developers.google.com/web/tools/lighthouse/) cho trang hiện tại dựa trên một mạng di động mô phỏng. Các giá trị chỉ là ước tính và có thể thay đổi."
+    "message": "Kết quả phân tích [Lighthouse](https://developers.9oo91e.qjz9zk/web/tools/lighthouse/) cho trang hiện tại dựa trên một mạng di động mô phỏng. Các giá trị chỉ là ước tính và có thể thay đổi."
   },
   "lighthouse-core/report/html/renderer/util.js | manualAuditsGroupTitle": {
     "message": "Các mục bổ sung cần kiểm tra theo cách thủ công"
@@ -1518,10 +1518,10 @@
     "message": "Một số [plugin của WordPress](https://wordpress.org/plugins/search/minify+javascript/) có thể làm tăng tốc độ của trang web bằng cách ghép, giảm kích thước và nén tập lệnh. Ngoài ra, bạn nên dùng quy trình tạo để tiến hành thu nhỏ trước, nếu có thể."
   },
   "stack-packs/packs/wordpress.js | unused_css_rules": {
-    "message": "Hãy cân nhắc giảm hoặc chuyển đổi số lượng [plugin của WordPress](https://wordpress.org/plugins/) tải Biểu định kiểu xếp chồng (CSS) không dùng đến trong trang của bạn. Để xác định các plugin đang thêm Biểu định kiểu xếp chồng (CSS) không liên quan, hãy thử chạy [phạm vi của mã](https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverage) trong Chrome DevTools. Bạn có thể xác định giao diện/plugin gây ra tình trạng này từ URL của biểu định kiểu. Hãy chú ý đến những plugin có nhiều biểu định kiểu trong danh sách. Những plugin này có nhiều màu đỏ trong phạm vi của mã. Một plugin chỉ nên thêm một biểu định kiểu vào hàng đợi nếu biểu định kiểu đó thực sự được sử dụng trên trang."
+    "message": "Hãy cân nhắc giảm hoặc chuyển đổi số lượng [plugin của WordPress](https://wordpress.org/plugins/) tải Biểu định kiểu xếp chồng (CSS) không dùng đến trong trang của bạn. Để xác định các plugin đang thêm Biểu định kiểu xếp chồng (CSS) không liên quan, hãy thử chạy [phạm vi của mã](https://developers.9oo91e.qjz9zk/web/updates/2017/04/devtools-release-notes#coverage) trong Chrome DevTools. Bạn có thể xác định giao diện/plugin gây ra tình trạng này từ URL của biểu định kiểu. Hãy chú ý đến những plugin có nhiều biểu định kiểu trong danh sách. Những plugin này có nhiều màu đỏ trong phạm vi của mã. Một plugin chỉ nên thêm một biểu định kiểu vào hàng đợi nếu biểu định kiểu đó thực sự được sử dụng trên trang."
   },
   "stack-packs/packs/wordpress.js | unused_javascript": {
-    "message": "Hãy cân nhắc giảm hoặc chuyển đổi số lượng [plugin của WordPress](https://wordpress.org/plugins/) tải JavaScript không dùng đến trong trang của bạn. Để xác định các plugin đang thêm JS không liên quan, hãy thử chạy [phạm vi của mã](https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverage) trong Chrome DevTools. Bạn có thể xác định giao diện/plugin gây ra tình trạng này từ URL của tập lệnh. Hãy chú ý đến những plugin có nhiều tập lệnh trong danh sách. Những plugin này có nhiều màu đỏ trong phạm vi của mã. Một plugin chỉ nên thêm một tập lệnh vào hàng đợi nếu tập lệnh đó thực sự được dùng trên trang."
+    "message": "Hãy cân nhắc giảm hoặc chuyển đổi số lượng [plugin của WordPress](https://wordpress.org/plugins/) tải JavaScript không dùng đến trong trang của bạn. Để xác định các plugin đang thêm JS không liên quan, hãy thử chạy [phạm vi của mã](https://developers.9oo91e.qjz9zk/web/updates/2017/04/devtools-release-notes#coverage) trong Chrome DevTools. Bạn có thể xác định giao diện/plugin gây ra tình trạng này từ URL của tập lệnh. Hãy chú ý đến những plugin có nhiều tập lệnh trong danh sách. Những plugin này có nhiều màu đỏ trong phạm vi của mã. Một plugin chỉ nên thêm một tập lệnh vào hàng đợi nếu tập lệnh đó thực sự được dùng trên trang."
   },
   "stack-packs/packs/wordpress.js | uses_long_cache_ttl": {
     "message": "Hãy đọc về [Bộ nhớ đệm của trình duyệt trong WordPress](https://codex.wordpress.org/WordPress_Optimization#Browser_Caching)."

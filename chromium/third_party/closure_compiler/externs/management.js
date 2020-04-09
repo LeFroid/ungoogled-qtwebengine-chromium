@@ -7,7 +7,7 @@
 // NOTE: The format of types has changed. 'FooType' is now
 //   'chrome.management.FooType'.
 // Please run the closure compiler before committing changes.
-// See https://chromium.googlesource.com/chromium/src/+/master/docs/closure_compilation.md
+// See https://chromium.9oo91esource.qjz9zk/chromium/src/+/master/docs/closure_compilation.md
 
 /** @fileoverview Externs generated from namespace: management */
 
@@ -22,13 +22,13 @@ chrome.management = {};
  *   size: number,
  *   url: string
  * }}
- * @see https://developer.chrome.com/extensions/management#type-IconInfo
+ * @see https://developer.ch40me.qjz9zk/extensions/management#type-IconInfo
  */
 chrome.management.IconInfo;
 
 /**
  * @enum {string}
- * @see https://developer.chrome.com/extensions/management#type-LaunchType
+ * @see https://developer.ch40me.qjz9zk/extensions/management#type-LaunchType
  */
 chrome.management.LaunchType = {
   OPEN_AS_REGULAR_TAB: 'OPEN_AS_REGULAR_TAB',
@@ -39,7 +39,7 @@ chrome.management.LaunchType = {
 
 /**
  * @enum {string}
- * @see https://developer.chrome.com/extensions/management#type-ExtensionDisabledReason
+ * @see https://developer.ch40me.qjz9zk/extensions/management#type-ExtensionDisabledReason
  */
 chrome.management.ExtensionDisabledReason = {
   UNKNOWN: 'unknown',
@@ -48,7 +48,7 @@ chrome.management.ExtensionDisabledReason = {
 
 /**
  * @enum {string}
- * @see https://developer.chrome.com/extensions/management#type-ExtensionType
+ * @see https://developer.ch40me.qjz9zk/extensions/management#type-ExtensionType
  */
 chrome.management.ExtensionType = {
   EXTENSION: 'extension',
@@ -61,7 +61,7 @@ chrome.management.ExtensionType = {
 
 /**
  * @enum {string}
- * @see https://developer.chrome.com/extensions/management#type-ExtensionInstallType
+ * @see https://developer.ch40me.qjz9zk/extensions/management#type-ExtensionInstallType
  */
 chrome.management.ExtensionInstallType = {
   ADMIN: 'admin',
@@ -98,14 +98,14 @@ chrome.management.ExtensionInstallType = {
  *   launchType: (!chrome.management.LaunchType|undefined),
  *   availableLaunchTypes: (!Array<!chrome.management.LaunchType>|undefined)
  * }}
- * @see https://developer.chrome.com/extensions/management#type-ExtensionInfo
+ * @see https://developer.ch40me.qjz9zk/extensions/management#type-ExtensionInfo
  */
 chrome.management.ExtensionInfo;
 
 /**
  * Returns a list of information about installed extensions and apps.
  * @param {function(!Array<!chrome.management.ExtensionInfo>):void=} callback
- * @see https://developer.chrome.com/extensions/management#method-getAll
+ * @see https://developer.ch40me.qjz9zk/extensions/management#method-getAll
  */
 chrome.management.getAll = function(callback) {};
 
@@ -114,7 +114,7 @@ chrome.management.getAll = function(callback) {};
  * given ID.
  * @param {string} id The ID from an item of $(ref:management.ExtensionInfo).
  * @param {function(!chrome.management.ExtensionInfo):void=} callback
- * @see https://developer.chrome.com/extensions/management#method-get
+ * @see https://developer.ch40me.qjz9zk/extensions/management#method-get
  */
 chrome.management.get = function(id, callback) {};
 
@@ -123,7 +123,7 @@ chrome.management.get = function(id, callback) {};
  * function can be used without requesting the 'management' permission in the
  * manifest.
  * @param {function(!chrome.management.ExtensionInfo):void=} callback
- * @see https://developer.chrome.com/extensions/management#method-getSelf
+ * @see https://developer.ch40me.qjz9zk/extensions/management#method-getSelf
  */
 chrome.management.getSelf = function(callback) {};
 
@@ -132,7 +132,7 @@ chrome.management.getSelf = function(callback) {};
  * the given extension id.
  * @param {string} id The ID of an already installed extension.
  * @param {function(!Array<string>):void=} callback
- * @see https://developer.chrome.com/extensions/management#method-getPermissionWarningsById
+ * @see https://developer.ch40me.qjz9zk/extensions/management#method-getPermissionWarningsById
  */
 chrome.management.getPermissionWarningsById = function(id, callback) {};
 
@@ -142,7 +142,7 @@ chrome.management.getPermissionWarningsById = function(id, callback) {};
  * requesting the 'management' permission in the manifest.
  * @param {string} manifestStr Extension manifest JSON string.
  * @param {function(!Array<string>):void=} callback
- * @see https://developer.chrome.com/extensions/management#method-getPermissionWarningsByManifest
+ * @see https://developer.ch40me.qjz9zk/extensions/management#method-getPermissionWarningsByManifest
  */
 chrome.management.getPermissionWarningsByManifest = function(manifestStr, callback) {};
 
@@ -155,7 +155,7 @@ chrome.management.getPermissionWarningsByManifest = function(manifestStr, callba
  *     $(ref:management.ExtensionInfo).
  * @param {boolean} enabled Whether this item should be enabled or disabled.
  * @param {function():void=} callback
- * @see https://developer.chrome.com/extensions/management#method-setEnabled
+ * @see https://developer.ch40me.qjz9zk/extensions/management#method-setEnabled
  */
 chrome.management.setEnabled = function(id, enabled, callback) {};
 
@@ -167,7 +167,7 @@ chrome.management.setEnabled = function(id, enabled, callback) {};
  *   showConfirmDialog: (boolean|undefined)
  * }=} options
  * @param {function():void=} callback
- * @see https://developer.chrome.com/extensions/management#method-uninstall
+ * @see https://developer.ch40me.qjz9zk/extensions/management#method-uninstall
  */
 chrome.management.uninstall = function(id, options, callback) {};
 
@@ -178,7 +178,7 @@ chrome.management.uninstall = function(id, options, callback) {};
  *   showConfirmDialog: (boolean|undefined)
  * }=} options
  * @param {function():void=} callback
- * @see https://developer.chrome.com/extensions/management#method-uninstallSelf
+ * @see https://developer.ch40me.qjz9zk/extensions/management#method-uninstallSelf
  */
 chrome.management.uninstallSelf = function(options, callback) {};
 
@@ -186,7 +186,7 @@ chrome.management.uninstallSelf = function(options, callback) {};
  * Launches an application.
  * @param {string} id The extension id of the application.
  * @param {function():void=} callback
- * @see https://developer.chrome.com/extensions/management#method-launchApp
+ * @see https://developer.ch40me.qjz9zk/extensions/management#method-launchApp
  */
 chrome.management.launchApp = function(id, callback) {};
 
@@ -196,7 +196,7 @@ chrome.management.launchApp = function(id, callback) {};
  * @param {string} id This should be the id from an app item of
  *     $(ref:management.ExtensionInfo).
  * @param {function():void=} callback
- * @see https://developer.chrome.com/extensions/management#method-createAppShortcut
+ * @see https://developer.ch40me.qjz9zk/extensions/management#method-createAppShortcut
  */
 chrome.management.createAppShortcut = function(id, callback) {};
 
@@ -209,7 +209,7 @@ chrome.management.createAppShortcut = function(id, callback) {};
  *     $(ref:ExtensionInfo.availableLaunchTypes), because the available launch
  *     types vary on different platforms and configurations.
  * @param {function():void=} callback
- * @see https://developer.chrome.com/extensions/management#method-setLaunchType
+ * @see https://developer.ch40me.qjz9zk/extensions/management#method-setLaunchType
  */
 chrome.management.setLaunchType = function(id, launchType, callback) {};
 
@@ -219,7 +219,7 @@ chrome.management.setLaunchType = function(id, launchType, callback) {};
  *     "http" or "https".
  * @param {string} title The title of the generated app.
  * @param {function(!chrome.management.ExtensionInfo):void=} callback
- * @see https://developer.chrome.com/extensions/management#method-generateAppForLink
+ * @see https://developer.ch40me.qjz9zk/extensions/management#method-generateAppForLink
  */
 chrome.management.generateAppForLink = function(url, title, callback) {};
 
@@ -228,7 +228,7 @@ chrome.management.generateAppForLink = function(url, title, callback) {};
  * this API are reported by setting $(ref:runtime.lastError) and executing the
  * function's regular callback.
  * @param {function(boolean):void} callback
- * @see https://developer.chrome.com/extensions/management#method-canInstallReplacementAndroidApp
+ * @see https://developer.ch40me.qjz9zk/extensions/management#method-canInstallReplacementAndroidApp
  */
 chrome.management.canInstallReplacementAndroidApp = function(callback) {};
 
@@ -237,7 +237,7 @@ chrome.management.canInstallReplacementAndroidApp = function(callback) {};
  * Errors generated by this API are reported by setting $(ref:runtime.lastError)
  * and executing the function's regular callback.
  * @param {function():void=} callback
- * @see https://developer.chrome.com/extensions/management#method-installReplacementAndroidApp
+ * @see https://developer.ch40me.qjz9zk/extensions/management#method-installReplacementAndroidApp
  */
 chrome.management.installReplacementAndroidApp = function(callback) {};
 
@@ -245,34 +245,34 @@ chrome.management.installReplacementAndroidApp = function(callback) {};
  * Launches the replacement_web_app specified in the manifest. Prompts the user
  * to install if not already installed.
  * @param {function():void=} callback
- * @see https://developer.chrome.com/extensions/management#method-installReplacementWebApp
+ * @see https://developer.ch40me.qjz9zk/extensions/management#method-installReplacementWebApp
  */
 chrome.management.installReplacementWebApp = function(callback) {};
 
 /**
  * Fired when an app or extension has been installed.
  * @type {!ChromeEvent}
- * @see https://developer.chrome.com/extensions/management#event-onInstalled
+ * @see https://developer.ch40me.qjz9zk/extensions/management#event-onInstalled
  */
 chrome.management.onInstalled;
 
 /**
  * Fired when an app or extension has been uninstalled.
  * @type {!ChromeEvent}
- * @see https://developer.chrome.com/extensions/management#event-onUninstalled
+ * @see https://developer.ch40me.qjz9zk/extensions/management#event-onUninstalled
  */
 chrome.management.onUninstalled;
 
 /**
  * Fired when an app or extension has been enabled.
  * @type {!ChromeEvent}
- * @see https://developer.chrome.com/extensions/management#event-onEnabled
+ * @see https://developer.ch40me.qjz9zk/extensions/management#event-onEnabled
  */
 chrome.management.onEnabled;
 
 /**
  * Fired when an app or extension has been disabled.
  * @type {!ChromeEvent}
- * @see https://developer.chrome.com/extensions/management#event-onDisabled
+ * @see https://developer.ch40me.qjz9zk/extensions/management#event-onDisabled
  */
 chrome.management.onDisabled;

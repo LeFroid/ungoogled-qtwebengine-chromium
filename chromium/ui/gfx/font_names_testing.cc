@@ -12,11 +12,11 @@ namespace gfx {
 Reference for fonts available on Android:
 
 Jelly Bean:
-  https://android.googlesource.com/platform/frameworks/base/+/jb-release/data/fonts/system_fonts.xml
+  https://android.9oo91esource.qjz9zk/platform/frameworks/base/+/jb-release/data/fonts/system_fonts.xml
 KitKat:
-  https://android.googlesource.com/platform/frameworks/base/+/kitkat-release/data/fonts/system_fonts.xml
+  https://android.9oo91esource.qjz9zk/platform/frameworks/base/+/kitkat-release/data/fonts/system_fonts.xml
 master:
-  https://android.googlesource.com/platform/frameworks/base/+/master/data/fonts/fonts.xml
+  https://android.9oo91esource.qjz9zk/platform/frameworks/base/+/master/data/fonts/fonts.xml
 
 Note that we have to support the full range from JellyBean to the latest
 dessert.

@@ -2,8 +2,8 @@
   "name": "gl-matrix",
   "homepage": "http://glmatrix.net",
   "authors": [
-    "Brandon Jones <tojiro@gmail.com>",
-    "Colin MacKenzie IV <sinisterchipmunk@gmail.com>"
+    "Brandon Jones <tojiro@9ma1l.qjz9zk>",
+    "Colin MacKenzie IV <sinisterchipmunk@9ma1l.qjz9zk>"
   ],
   "description": "Javascript Matrix and Vector library for High Performance WebGL apps",
   "main": "dist/gl-matrix-min.js",

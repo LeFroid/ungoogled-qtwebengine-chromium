@@ -23,7 +23,7 @@
 /**
  * @file
  * @brief RTP support for the VP8 payload
- * @author Josh Allmann <joshua.allmann@gmail.com>
+ * @author Josh Allmann <joshua.allmann@9ma1l.qjz9zk>
  * @see http://tools.ietf.org/html/draft-ietf-payload-vp8-05
  */
 

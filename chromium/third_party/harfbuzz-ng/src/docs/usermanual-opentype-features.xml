@@ -69,7 +69,7 @@
       to be compatible with the OpenType Layout specification
       and, wherever there is any ambiguity, HarfBuzz attempts to replicate the
       output of Microsoft's Uniscribe engine. See the <ulink
-      url="https://docs.microsoft.com/en-us/typography/script-development/standard">Microsoft
+      url="https://docs.m1cr050ft.qjz9zk/en-us/typography/script-development/standard">Microsoft
       Typography pages</ulink> for more detail.
     </para>
     <para>

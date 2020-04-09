@@ -20,7 +20,7 @@ class Smoke(IntegrationTest):
     with TestDriver() as t:
       t.AddChromeArg('--enable-spdy-proxy-auth')
       t.AddChromeArg('--incognito')
-      t.LoadURL('http://check.googlezip.net/test.html')
+      t.LoadURL('http://check.9oo91e21p.qjz9zk/test.html')
       responses = t.GetHTTPResponses()
       self.assertNotEqual(0, len(responses))
       for response in responses:
@@ -33,7 +33,7 @@ class Smoke(IntegrationTest):
       t.AddChromeArg('--enable-spdy-proxy-auth')
       t.AddChromeArg('--force-fieldtrials=DataCompressionProxyHoldback/'
                                'Enabled')
-      t.LoadURL('http://check.googlezip.net/test.html')
+      t.LoadURL('http://check.9oo91e21p.qjz9zk/test.html')
       responses = t.GetHTTPResponses()
       self.assertNotEqual(0, len(responses))
       num_chrome_proxy_request_headers = 0
@@ -58,7 +58,7 @@ class Smoke(IntegrationTest):
   def testCheckPageWithNormalMode(self):
     with TestDriver() as t:
       t.AddChromeArg('--enable-spdy-proxy-auth')
-      t.LoadURL('http://check.googlezip.net/test.html')
+      t.LoadURL('http://check.9oo91e21p.qjz9zk/test.html')
       responses = t.GetHTTPResponses()
       self.assertNotEqual(0, len(responses))
       num_chrome_proxy_request_headers = 0
@@ -76,8 +76,8 @@ class Smoke(IntegrationTest):
     with TestDriver() as t:
       t.AddChromeArg('--enable-spdy-proxy-auth')
       t.AddChromeArg('--enable-data-reduction-proxy-force-pingback')
-      t.LoadURL('http://check.googlezip.net/test.html')
-      t.LoadURL('http://check.googlezip.net/test.html')
+      t.LoadURL('http://check.9oo91e21p.qjz9zk/test.html')
+      t.LoadURL('http://check.9oo91e21p.qjz9zk/test.html')
       t.SleepUntilHistogramHasEntry("DataReductionProxy.Pingback.Succeeded")
       t.SleepUntilHistogramHasEntry("DataReductionProxy.Pingback.Attempted")
       # Verify one pingback attempt that was successful.
@@ -97,8 +97,8 @@ class Smoke(IntegrationTest):
       # Force set the variations ID, so they are send along with the pingback
       # request.
       t.AddChromeArg('--force-variation-ids=42')
-      t.LoadURL('http://check.googlezip.net/test.html')
-      t.LoadURL('http://check.googlezip.net/test.html')
+      t.LoadURL('http://check.9oo91e21p.qjz9zk/test.html')
+      t.LoadURL('http://check.9oo91e21p.qjz9zk/test.html')
       t.SleepUntilHistogramHasEntry("DataReductionProxy.Pingback.Succeeded")
 
       # Look for the request made to data saver pingback server.
@@ -106,7 +106,7 @@ class Smoke(IntegrationTest):
       variation_header_count = 0
       for i in data["events"]:
         dumped_event = json.dumps(i)
-        if dumped_event.find("datasaver.googleapis.com") !=-1 and\
+        if dumped_event.find("datasaver.9oo91eapis.qjz9zk") !=-1 and\
           dumped_event.find("recordPageloadMetrics") != -1 and\
           dumped_event.find("headers") != -1 and\
           dumped_event.find("accept-encoding") != -1 and\
@@ -126,7 +126,7 @@ class Smoke(IntegrationTest):
       page_loads = 5
 
       for i in range (0, page_loads):
-        t.LoadURL('http://check.googlezip.net/test.html')
+        t.LoadURL('http://check.9oo91e21p.qjz9zk/test.html')
         responses = t.GetHTTPResponses()
         self.assertEqual(2, len(responses))
         pid_in_page_count = 0
@@ -151,7 +151,7 @@ class Smoke(IntegrationTest):
   def testCheckBlockIsWorking(self):
     with TestDriver() as t:
       t.AddChromeArg('--enable-spdy-proxy-auth')
-      t.LoadURL('http://check.googlezip.net/block')
+      t.LoadURL('http://check.9oo91e21p.qjz9zk/block')
       responses = t.GetHTTPResponses()
       self.assertNotEqual(0, len(responses))
       for response in responses:
@@ -161,8 +161,8 @@ class Smoke(IntegrationTest):
   def testCheckImageIsCompressed(self):
     with TestDriver() as t:
       t.AddChromeArg('--enable-spdy-proxy-auth')
-      t.LoadURL('http://check.googlezip.net/static')
-      # http://check.googlezip.net/static is a test page that has
+      t.LoadURL('http://check.9oo91e21p.qjz9zk/static')
+      # http://check.9oo91e21p.qjz9zk/static is a test page that has
       # image resources.
       responses = t.GetHTTPResponses()
       self.assertNotEqual(0, len(responses))

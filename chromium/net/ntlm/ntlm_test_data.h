@@ -9,8 +9,8 @@
 // Test vectors related to EPA (aka Channel Binding) have been taken from
 // a Microsoft blog post [2].
 //
-// [1] https://msdn.microsoft.com/en-us/library/cc236621.aspx
-// [2] https://blogs.msdn.microsoft.com/openspecification/2013/03/26/ntlm-and-
+// [1] https://msdn.m1cr050ft.qjz9zk/en-us/library/cc236621.aspx
+// [2] https://blogs.msdn.m1cr050ft.qjz9zk/openspecification/2013/03/26/ntlm-and-
 //         channel-binding-hash-aka-extended-protection-for-authentication/
 
 #ifndef NET_BASE_NTLM_TEST_DATA_H_

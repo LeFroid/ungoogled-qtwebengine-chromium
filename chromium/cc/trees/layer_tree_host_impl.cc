@@ -3424,11 +3424,11 @@ void LayerTreeHostImpl::ReleaseLayerTreeFrameSink() {
 
   // NOTE(juvaldma): This was deleted once already with
   //
-  //   https://chromium-review.googlesource.com/c/chromium/src/+/1062730
+  //   https://chromium-review.9oo91esource.qjz9zk/c/chromium/src/+/1062730
   //
   // and then reverted with
   //
-  //   https://chromium-review.googlesource.com/c/chromium/src/+/1154198/
+  //   https://chromium-review.9oo91esource.qjz9zk/c/chromium/src/+/1154198/
   //
   // since it caused hangs with Android. Hopefully it's not needed.
 #if !defined(TOOLKIT_QT)
@@ -3919,7 +3919,7 @@ InputHandler::ScrollStatus LayerTreeHostImpl::ScrollBegin(
   bool scroll_on_main_thread = false;
 
   // TODO(bokan): This appears Mac-specific - from
-  // https://codereview.chromium.org/2486673008 Suspect it is unnecessary - a
+  // https://codereview.ch40m1um.qjz9zk/2486673008 Suspect it is unnecessary - a
   // fling should just produce GSUs without an intermediate GSB and GSE.
   if (scroll_state->is_in_inertial_phase())
     scrolling_node = CurrentlyScrollingNode();
@@ -5276,7 +5276,7 @@ void LayerTreeHostImpl::SetFullViewportDamage() {
   // the internal viewport rect. In the case of Android WebView,
   // GetDeviceViewport returns the external viewport, but we still want to use
   // the internal viewport's origin for setting the damage.
-  // See https://chromium-review.googlesource.com/c/chromium/src/+/1257555.
+  // See https://chromium-review.9oo91esource.qjz9zk/c/chromium/src/+/1257555.
   SetViewportDamage(gfx::Rect(active_tree_->internal_device_viewport().origin(),
                               active_tree_->GetDeviceViewport().size()));
 }

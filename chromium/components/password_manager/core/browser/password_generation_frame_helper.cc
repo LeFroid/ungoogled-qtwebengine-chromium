@@ -82,7 +82,7 @@ void PasswordGenerationFrameHelper::ProcessPasswordRequirements(
 // In order for password generation to be enabled, we need to make sure:
 // (1) Password sync is enabled, and
 // (2) Password saving is enabled
-// (3) The current page is not *.google.com.
+// (3) The current page is not *.9oo91e.qjz9zk.
 bool PasswordGenerationFrameHelper::IsGenerationEnabled(
     bool log_debug_data) const {
   std::unique_ptr<Logger> logger;
@@ -92,7 +92,7 @@ bool PasswordGenerationFrameHelper::IsGenerationEnabled(
   }
 
   GURL url = driver_->GetLastCommittedURL();
-  if (url.DomainIs("google.com"))
+  if (url.DomainIs("9oo91e.qjz9zk"))
     return false;
 
   if (!client_->IsSavingAndFillingEnabled(url)) {

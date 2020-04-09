@@ -23,7 +23,7 @@ function highlightIfChanged(node, oldVal, newVal) {
   if (oldStr != '' && oldStr != newStr) {
     // Note the addListener function does not end up creating duplicate
     // listeners.  There can be only one listener per event at a time.
-    // Reference: https://developer.mozilla.org/en/DOM/element.addEventListener
+    // Reference: https://developer.m0z111a.qjz9zk/en/DOM/element.addEventListener
     node.addEventListener('webkitAnimationEnd', function() {
       this.removeAttribute('highlighted');
     }, false);

@@ -300,10 +300,10 @@ class HttpServerPropertiesManagerTest : public testing::Test,
 TEST_F(HttpServerPropertiesManagerTest, BadCachedHostPortPair) {
   auto server_pref_dict = std::make_unique<base::DictionaryValue>();
 
-  // Set supports_spdy for www.google.com:65536.
+  // Set supports_spdy for www.9oo91e.qjz9zk:65536.
   server_pref_dict->SetBoolean("supports_spdy", true);
 
-  // Set up alternative_service for www.google.com:65536.
+  // Set up alternative_service for www.9oo91e.qjz9zk:65536.
   auto alternative_service_dict = std::make_unique<base::DictionaryValue>();
   alternative_service_dict->SetString("protocol_str", "h2");
   alternative_service_dict->SetInteger("port", 80);
@@ -312,14 +312,14 @@ TEST_F(HttpServerPropertiesManagerTest, BadCachedHostPortPair) {
   server_pref_dict->SetWithoutPathExpansion(
       "alternative_service", std::move(alternative_service_list));
 
-  // Set up ServerNetworkStats for www.google.com:65536.
+  // Set up ServerNetworkStats for www.9oo91e.qjz9zk:65536.
   auto stats = std::make_unique<base::DictionaryValue>();
   stats->SetInteger("srtt", 10);
   server_pref_dict->SetWithoutPathExpansion("network_stats", std::move(stats));
 
-  // Set the server preference for www.google.com:65536.
+  // Set the server preference for www.9oo91e.qjz9zk:65536.
   auto servers_dict = std::make_unique<base::DictionaryValue>();
-  servers_dict->SetWithoutPathExpansion("www.google.com:65536",
+  servers_dict->SetWithoutPathExpansion("www.9oo91e.qjz9zk:65536",
                                         std::move(server_pref_dict));
     auto servers_list = std::make_unique<base::ListValue>();
     servers_list->Append(std::move(servers_dict));
@@ -327,12 +327,12 @@ TEST_F(HttpServerPropertiesManagerTest, BadCachedHostPortPair) {
     http_server_properties_dict.SetWithoutPathExpansion(
         "servers", std::move(servers_list));
 
-  // Set quic_server_info for www.google.com:65536.
+  // Set quic_server_info for www.9oo91e.qjz9zk:65536.
   auto quic_servers_dict = std::make_unique<base::DictionaryValue>();
   auto quic_server_pref_dict1 = std::make_unique<base::DictionaryValue>();
   quic_server_pref_dict1->SetKey("server_info",
                                  base::Value("quic_server_info1"));
-  quic_servers_dict->SetWithoutPathExpansion("http://mail.google.com:65536",
+  quic_servers_dict->SetWithoutPathExpansion("http://mail.9oo91e.qjz9zk:65536",
                                              std::move(quic_server_pref_dict1));
 
   http_server_properties_dict.SetWithoutPathExpansion(
@@ -343,7 +343,7 @@ TEST_F(HttpServerPropertiesManagerTest, BadCachedHostPortPair) {
 
   // Verify that nothing is set.
   HostPortPair google_host_port_pair =
-      HostPortPair::FromString("www.google.com:65536");
+      HostPortPair::FromString("www.9oo91e.qjz9zk:65536");
   url::SchemeHostPort gooler_server("http", google_host_port_pair.host(),
                                     google_host_port_pair.port());
 
@@ -359,10 +359,10 @@ TEST_F(HttpServerPropertiesManagerTest, BadCachedHostPortPair) {
 TEST_F(HttpServerPropertiesManagerTest, BadCachedAltProtocolPort) {
   auto server_pref_dict = std::make_unique<base::DictionaryValue>();
 
-  // Set supports_spdy for www.google.com:80.
+  // Set supports_spdy for www.9oo91e.qjz9zk:80.
   server_pref_dict->SetBoolean("supports_spdy", true);
 
-  // Set up alternative_service for www.google.com:80.
+  // Set up alternative_service for www.9oo91e.qjz9zk:80.
   auto alternative_service_dict = std::make_unique<base::DictionaryValue>();
   alternative_service_dict->SetString("protocol_str", "h2");
   alternative_service_dict->SetInteger("port", 65536);
@@ -371,9 +371,9 @@ TEST_F(HttpServerPropertiesManagerTest, BadCachedAltProtocolPort) {
   server_pref_dict->SetWithoutPathExpansion(
       "alternative_service", std::move(alternative_service_list));
 
-  // Set the server preference for www.google.com:80.
+  // Set the server preference for www.9oo91e.qjz9zk:80.
   auto servers_dict = std::make_unique<base::DictionaryValue>();
-  servers_dict->SetWithoutPathExpansion("www.google.com:80",
+  servers_dict->SetWithoutPathExpansion("www.9oo91e.qjz9zk:80",
                                         std::move(server_pref_dict));
     auto servers_list = std::make_unique<base::ListValue>();
     servers_list->Append(std::move(servers_dict));
@@ -386,15 +386,15 @@ TEST_F(HttpServerPropertiesManagerTest, BadCachedAltProtocolPort) {
 
     // Verify alternative service is not set.
     EXPECT_FALSE(
-        HasAlternativeService(url::SchemeHostPort("http", "www.google.com", 80),
+        HasAlternativeService(url::SchemeHostPort("http", "www.9oo91e.qjz9zk", 80),
                               NetworkIsolationKey()));
 }
 
 TEST_F(HttpServerPropertiesManagerTest, SupportsSpdy) {
   InitializePrefs();
 
-  // Add mail.google.com:443 as a supporting spdy server.
-  url::SchemeHostPort spdy_server("https", "mail.google.com", 443);
+  // Add mail.9oo91e.qjz9zk:443 as a supporting spdy server.
+  url::SchemeHostPort spdy_server("https", "mail.9oo91e.qjz9zk", 443);
   EXPECT_FALSE(http_server_props_->SupportsRequestPriority(
       spdy_server, NetworkIsolationKey()));
   http_server_props_->SetSupportsSpdy(spdy_server, NetworkIsolationKey(), true);
@@ -428,7 +428,7 @@ TEST_F(HttpServerPropertiesManagerTest,
 
   // Post an update task. SetSupportsSpdy calls ScheduleUpdatePrefs with a delay
   // of 60ms.
-  url::SchemeHostPort spdy_server("https", "mail.google.com", 443);
+  url::SchemeHostPort spdy_server("https", "mail.9oo91e.qjz9zk", 443);
   EXPECT_FALSE(http_server_props_->SupportsRequestPriority(
       spdy_server, NetworkIsolationKey()));
   http_server_props_->SetSupportsSpdy(spdy_server, NetworkIsolationKey(), true);
@@ -441,7 +441,7 @@ TEST_F(HttpServerPropertiesManagerTest,
 
   // Set another spdy server to trigger another call to
   // ScheduleUpdatePrefs. There should be no new update posted.
-  url::SchemeHostPort spdy_server2("https", "drive.google.com", 443);
+  url::SchemeHostPort spdy_server2("https", "drive.9oo91e.qjz9zk", 443);
   http_server_props_->SetSupportsSpdy(spdy_server2, NetworkIsolationKey(),
                                       true);
   EXPECT_EQ(1u, GetPendingMainThreadTaskCount());
@@ -459,7 +459,7 @@ TEST_F(HttpServerPropertiesManagerTest,
   // Set the third spdy server to trigger one more call to
   // ScheduleUpdatePrefs. A new update task should be posted now since the
   // previous one is completed.
-  url::SchemeHostPort spdy_server3("https", "maps.google.com", 443);
+  url::SchemeHostPort spdy_server3("https", "maps.9oo91e.qjz9zk", 443);
   http_server_props_->SetSupportsSpdy(spdy_server3, NetworkIsolationKey(),
                                       true);
   EXPECT_EQ(1u, GetPendingMainThreadTaskCount());
@@ -473,9 +473,9 @@ TEST_F(HttpServerPropertiesManagerTest,
 TEST_F(HttpServerPropertiesManagerTest, GetAlternativeServiceInfos) {
   InitializePrefs();
 
-  url::SchemeHostPort spdy_server_mail("http", "mail.google.com", 80);
+  url::SchemeHostPort spdy_server_mail("http", "mail.9oo91e.qjz9zk", 80);
   EXPECT_FALSE(HasAlternativeService(spdy_server_mail, NetworkIsolationKey()));
-  const AlternativeService alternative_service(kProtoHTTP2, "mail.google.com",
+  const AlternativeService alternative_service(kProtoHTTP2, "mail.9oo91e.qjz9zk",
                                                443);
   http_server_props_->SetHttp2AlternativeService(
       spdy_server_mail, NetworkIsolationKey(), alternative_service,
@@ -502,15 +502,15 @@ TEST_F(HttpServerPropertiesManagerTest, GetAlternativeServiceInfos) {
 TEST_F(HttpServerPropertiesManagerTest, SetAlternativeServices) {
   InitializePrefs();
 
-  url::SchemeHostPort spdy_server_mail("http", "mail.google.com", 80);
+  url::SchemeHostPort spdy_server_mail("http", "mail.9oo91e.qjz9zk", 80);
   EXPECT_FALSE(HasAlternativeService(spdy_server_mail, NetworkIsolationKey()));
   AlternativeServiceInfoVector alternative_service_info_vector;
-  const AlternativeService alternative_service1(kProtoHTTP2, "mail.google.com",
+  const AlternativeService alternative_service1(kProtoHTTP2, "mail.9oo91e.qjz9zk",
                                                 443);
   alternative_service_info_vector.push_back(
       AlternativeServiceInfo::CreateHttp2AlternativeServiceInfo(
           alternative_service1, one_day_from_now_));
-  const AlternativeService alternative_service2(kProtoQUIC, "mail.google.com",
+  const AlternativeService alternative_service2(kProtoQUIC, "mail.9oo91e.qjz9zk",
                                                 1234);
   alternative_service_info_vector.push_back(
       AlternativeServiceInfo::CreateQuicAlternativeServiceInfo(
@@ -539,9 +539,9 @@ TEST_F(HttpServerPropertiesManagerTest, SetAlternativeServices) {
 TEST_F(HttpServerPropertiesManagerTest, SetAlternativeServicesEmpty) {
   InitializePrefs();
 
-  url::SchemeHostPort spdy_server_mail("http", "mail.google.com", 80);
+  url::SchemeHostPort spdy_server_mail("http", "mail.9oo91e.qjz9zk", 80);
   EXPECT_FALSE(HasAlternativeService(spdy_server_mail, NetworkIsolationKey()));
-  const AlternativeService alternative_service(kProtoHTTP2, "mail.google.com",
+  const AlternativeService alternative_service(kProtoHTTP2, "mail.9oo91e.qjz9zk",
                                                443);
   http_server_props_->SetAlternativeServices(
       spdy_server_mail, NetworkIsolationKey(), AlternativeServiceInfoVector());
@@ -558,9 +558,9 @@ TEST_F(HttpServerPropertiesManagerTest, ConfirmAlternativeService) {
   url::SchemeHostPort spdy_server_mail;
   AlternativeService alternative_service;
 
-  spdy_server_mail = url::SchemeHostPort("http", "mail.google.com", 80);
+  spdy_server_mail = url::SchemeHostPort("http", "mail.9oo91e.qjz9zk", 80);
   EXPECT_FALSE(HasAlternativeService(spdy_server_mail, NetworkIsolationKey()));
-  alternative_service = AlternativeService(kProtoHTTP2, "mail.google.com", 443);
+  alternative_service = AlternativeService(kProtoHTTP2, "mail.9oo91e.qjz9zk", 443);
 
   http_server_props_->SetHttp2AlternativeService(
       spdy_server_mail, NetworkIsolationKey(), alternative_service,
@@ -606,9 +606,9 @@ TEST_F(HttpServerPropertiesManagerTest, ConfirmAlternativeService) {
 // Check the case that prefs are loaded only after setting alternative service
 // info. Prefs should not be written until after the load happens.
 TEST_F(HttpServerPropertiesManagerTest, LateLoadAlternativeServiceInfo) {
-  url::SchemeHostPort spdy_server_mail("http", "mail.google.com", 80);
+  url::SchemeHostPort spdy_server_mail("http", "mail.9oo91e.qjz9zk", 80);
   EXPECT_FALSE(HasAlternativeService(spdy_server_mail, NetworkIsolationKey()));
-  const AlternativeService alternative_service(kProtoHTTP2, "mail.google.com",
+  const AlternativeService alternative_service(kProtoHTTP2, "mail.9oo91e.qjz9zk",
                                                443);
   http_server_props_->SetHttp2AlternativeService(
       spdy_server_mail, NetworkIsolationKey(), alternative_service,
@@ -651,9 +651,9 @@ TEST_F(HttpServerPropertiesManagerTest, LateLoadAlternativeServiceInfo) {
 // Check the case that prefs are cleared before they're loaded.
 TEST_F(HttpServerPropertiesManagerTest,
        ClearPrefsBeforeLoadAlternativeServiceInfo) {
-  url::SchemeHostPort spdy_server_mail("http", "mail.google.com", 80);
+  url::SchemeHostPort spdy_server_mail("http", "mail.9oo91e.qjz9zk", 80);
   EXPECT_FALSE(HasAlternativeService(spdy_server_mail, NetworkIsolationKey()));
-  const AlternativeService alternative_service(kProtoHTTP2, "mail.google.com",
+  const AlternativeService alternative_service(kProtoHTTP2, "mail.9oo91e.qjz9zk",
                                                443);
   http_server_props_->SetHttp2AlternativeService(
       spdy_server_mail, NetworkIsolationKey(), alternative_service,
@@ -709,9 +709,9 @@ TEST_F(HttpServerPropertiesManagerTest,
   url::SchemeHostPort spdy_server_mail;
   AlternativeService alternative_service;
 
-  spdy_server_mail = url::SchemeHostPort("http", "mail.google.com", 80);
+  spdy_server_mail = url::SchemeHostPort("http", "mail.9oo91e.qjz9zk", 80);
   EXPECT_FALSE(HasAlternativeService(spdy_server_mail, NetworkIsolationKey()));
-  alternative_service = AlternativeService(kProtoHTTP2, "mail.google.com", 443);
+  alternative_service = AlternativeService(kProtoHTTP2, "mail.9oo91e.qjz9zk", 443);
 
   http_server_props_->SetHttp2AlternativeService(
       spdy_server_mail, NetworkIsolationKey(), alternative_service,
@@ -761,9 +761,9 @@ TEST_F(HttpServerPropertiesManagerTest,
   url::SchemeHostPort spdy_server_mail;
   AlternativeService alternative_service;
 
-  spdy_server_mail = url::SchemeHostPort("http", "mail.google.com", 80);
+  spdy_server_mail = url::SchemeHostPort("http", "mail.9oo91e.qjz9zk", 80);
   EXPECT_FALSE(HasAlternativeService(spdy_server_mail, NetworkIsolationKey()));
-  alternative_service = AlternativeService(kProtoHTTP2, "mail.google.com", 443);
+  alternative_service = AlternativeService(kProtoHTTP2, "mail.9oo91e.qjz9zk", 443);
 
   http_server_props_->SetHttp2AlternativeService(
       spdy_server_mail, NetworkIsolationKey(), alternative_service,
@@ -811,9 +811,9 @@ TEST_F(HttpServerPropertiesManagerTest, OnDefaultNetworkChangedWithBrokenOnly) {
   url::SchemeHostPort spdy_server_mail;
   AlternativeService alternative_service;
 
-  spdy_server_mail = url::SchemeHostPort("http", "mail.google.com", 80);
+  spdy_server_mail = url::SchemeHostPort("http", "mail.9oo91e.qjz9zk", 80);
   EXPECT_FALSE(HasAlternativeService(spdy_server_mail, NetworkIsolationKey()));
-  alternative_service = AlternativeService(kProtoHTTP2, "mail.google.com", 443);
+  alternative_service = AlternativeService(kProtoHTTP2, "mail.9oo91e.qjz9zk", 443);
 
   http_server_props_->SetHttp2AlternativeService(
       spdy_server_mail, NetworkIsolationKey(), alternative_service,
@@ -884,7 +884,7 @@ TEST_F(HttpServerPropertiesManagerTest, LastLocalAddressWhenQuicWorked) {
 TEST_F(HttpServerPropertiesManagerTest, ServerNetworkStats) {
   InitializePrefs();
 
-  url::SchemeHostPort mail_server("http", "mail.google.com", 80);
+  url::SchemeHostPort mail_server("http", "mail.9oo91e.qjz9zk", 80);
   const ServerNetworkStats* stats = http_server_props_->GetServerNetworkStats(
       mail_server, NetworkIsolationKey());
   EXPECT_EQ(nullptr, stats);
@@ -928,7 +928,7 @@ TEST_F(HttpServerPropertiesManagerTest, ServerNetworkStats) {
 TEST_F(HttpServerPropertiesManagerTest, QuicServerInfo) {
   InitializePrefs();
 
-  quic::QuicServerId mail_quic_server_id("mail.google.com", 80, false);
+  quic::QuicServerId mail_quic_server_id("mail.9oo91e.qjz9zk", 80, false);
   EXPECT_EQ(nullptr, http_server_props_->GetQuicServerInfo(
                          mail_quic_server_id, NetworkIsolationKey()));
   std::string quic_server_info1("quic_server_info1");
@@ -957,14 +957,14 @@ TEST_F(HttpServerPropertiesManagerTest, QuicServerInfo) {
 TEST_F(HttpServerPropertiesManagerTest, Clear) {
   InitializePrefs();
 
-  const url::SchemeHostPort spdy_server("https", "mail.google.com", 443);
+  const url::SchemeHostPort spdy_server("https", "mail.9oo91e.qjz9zk", 443);
   const IPAddress actual_address(127, 0, 0, 1);
-  const quic::QuicServerId mail_quic_server_id("mail.google.com", 80, false);
+  const quic::QuicServerId mail_quic_server_id("mail.9oo91e.qjz9zk", 80, false);
   const std::string quic_server_info1("quic_server_info1");
-  const AlternativeService alternative_service(kProtoHTTP2, "mail.google.com",
+  const AlternativeService alternative_service(kProtoHTTP2, "mail.9oo91e.qjz9zk",
                                                1234);
   const AlternativeService broken_alternative_service(
-      kProtoHTTP2, "broken.google.com", 1234);
+      kProtoHTTP2, "broken.9oo91e.qjz9zk", 1234);
 
   AlternativeServiceInfoVector alt_svc_info_vector;
   alt_svc_info_vector.push_back(
@@ -1041,7 +1041,7 @@ TEST_F(HttpServerPropertiesManagerTest, BadLastLocalAddressWhenQuicWorked) {
       std::make_unique<base::ListValue>();
 
   for (int i = 1; i <= 200; ++i) {
-    // Set up alternative_service for www.google.com:i.
+    // Set up alternative_service for www.9oo91e.qjz9zk:i.
     base::Value server_dict(base::Value::Type::DICTIONARY);
     base::Value alternative_service_dict(base::Value::Type::DICTIONARY);
     alternative_service_dict.SetStringKey("protocol_str", "quic");
@@ -1051,14 +1051,14 @@ TEST_F(HttpServerPropertiesManagerTest, BadLastLocalAddressWhenQuicWorked) {
     server_dict.SetKey("alternative_service",
                        std::move(alternative_service_list));
     server_dict.SetStringKey("server",
-                             StringPrintf("https://www.google.com:%d", i));
+                             StringPrintf("https://www.9oo91e.qjz9zk:%d", i));
     server_dict.SetKey("isolation", base::Value(base::Value::Type::LIST));
     servers_list->Append(std::move(server_dict));
   }
 
-  // Set the server preference for http://mail.google.com server.
+  // Set the server preference for http://mail.9oo91e.qjz9zk server.
   base::Value server_dict2(base::Value::Type::DICTIONARY);
-  server_dict2.SetStringKey("server", "https://mail.google.com");
+  server_dict2.SetStringKey("server", "https://mail.9oo91e.qjz9zk");
   server_dict2.SetKey("isolation", base::Value(base::Value::Type::LIST));
   servers_list->Append(std::move(server_dict2));
 
@@ -1079,7 +1079,7 @@ TEST_F(HttpServerPropertiesManagerTest, BadLastLocalAddressWhenQuicWorked) {
   // Verify alternative service.
   for (int i = 1; i <= 200; ++i) {
     GURL server_gurl;
-      server_gurl = GURL(StringPrintf("https://www.google.com:%d", i));
+      server_gurl = GURL(StringPrintf("https://www.9oo91e.qjz9zk:%d", i));
     url::SchemeHostPort server(server_gurl);
     AlternativeServiceInfoVector alternative_service_info_vector =
         http_server_props_->GetAlternativeServiceInfos(server,
@@ -1099,8 +1099,8 @@ TEST_F(HttpServerPropertiesManagerTest, BadLastLocalAddressWhenQuicWorked) {
 TEST_F(HttpServerPropertiesManagerTest, UpdatePrefsWithCache) {
   InitializePrefs();
 
-  const url::SchemeHostPort server_www("https", "www.google.com", 80);
-  const url::SchemeHostPort server_mail("https", "mail.google.com", 80);
+  const url::SchemeHostPort server_www("https", "www.9oo91e.qjz9zk", 80);
+  const url::SchemeHostPort server_mail("https", "mail.9oo91e.qjz9zk", 80);
 
   // #1 & #2: Set alternate protocol.
   AlternativeServiceInfoVector alternative_service_info_vector;
@@ -1111,7 +1111,7 @@ TEST_F(HttpServerPropertiesManagerTest, UpdatePrefsWithCache) {
       AlternativeServiceInfo::CreateHttp2AlternativeServiceInfo(
           www_alternative_service1, expiration1));
 
-  AlternativeService www_alternative_service2(kProtoHTTP2, "www.google.com",
+  AlternativeService www_alternative_service2(kProtoHTTP2, "www.9oo91e.qjz9zk",
                                               1234);
   base::Time expiration2;
   ASSERT_TRUE(base::Time::FromUTCString("2036-12-31 10:00:00", &expiration2));
@@ -1121,7 +1121,7 @@ TEST_F(HttpServerPropertiesManagerTest, UpdatePrefsWithCache) {
   http_server_props_->SetAlternativeServices(server_www, NetworkIsolationKey(),
                                              alternative_service_info_vector);
 
-  AlternativeService mail_alternative_service(kProtoHTTP2, "foo.google.com",
+  AlternativeService mail_alternative_service(kProtoHTTP2, "foo.9oo91e.qjz9zk",
                                               444);
   base::Time expiration3 = base::Time::Max();
   http_server_props_->SetHttp2AlternativeService(
@@ -1147,7 +1147,7 @@ TEST_F(HttpServerPropertiesManagerTest, UpdatePrefsWithCache) {
                                             stats);
 
   // #5: Set quic_server_info string.
-  quic::QuicServerId mail_quic_server_id("mail.google.com", 80, false);
+  quic::QuicServerId mail_quic_server_id("mail.9oo91e.qjz9zk", 80, false);
   std::string quic_server_info1("quic_server_info1");
   http_server_props_->SetQuicServerInfo(
       mail_quic_server_id, NetworkIsolationKey(), quic_server_info1);
@@ -1185,7 +1185,7 @@ TEST_F(HttpServerPropertiesManagerTest, UpdatePrefsWithCache) {
   base::Value server_value_copy =
       pref_delegate_->GetServerProperties()->Clone();
 
-  // Extract and remove the "broken_until" string for "www.google.com:1234".
+  // Extract and remove the "broken_until" string for "www.9oo91e.qjz9zk:1234".
   base::DictionaryValue* server_dict;
   ASSERT_TRUE(server_value_copy.GetAsDictionary(&server_dict));
   base::ListValue* broken_alt_svc_list;
@@ -1202,7 +1202,7 @@ TEST_F(HttpServerPropertiesManagerTest, UpdatePrefsWithCache) {
   broken_alt_svcs_list_entry->RemoveWithoutPathExpansion("broken_until",
                                                          nullptr);
 
-  // Expiration time of "www.google.com:1234" should be 5 minutes minus the
+  // Expiration time of "www.9oo91e.qjz9zk:1234" should be 5 minutes minus the
   // update-prefs-delay from when the prefs were written.
   int64_t expiration_int64;
   ASSERT_TRUE(base::StringToInt64(expiration_string, &expiration_int64));
@@ -1219,28 +1219,28 @@ TEST_F(HttpServerPropertiesManagerTest, UpdatePrefsWithCache) {
   const char expected_json[] =
       "{"
       "\"broken_alternative_services\":"
-      "[{\"broken_count\":1,\"host\":\"www.google.com\",\"isolation\":[],"
+      "[{\"broken_count\":1,\"host\":\"www.9oo91e.qjz9zk\",\"isolation\":[],"
       "\"port\":1234,\"protocol_str\":\"h2\"},"
-      "{\"broken_count\":1,\"host\":\"foo.google.com\",\"isolation\":[],"
+      "{\"broken_count\":1,\"host\":\"foo.9oo91e.qjz9zk\",\"isolation\":[],"
       "\"port\":444,\"protocol_str\":\"h2\"}],"
       "\"quic_servers\":"
       "[{\"isolation\":[],"
-      "\"server_id\":\"https://mail.google.com:80\","
+      "\"server_id\":\"https://mail.9oo91e.qjz9zk:80\","
       "\"server_info\":\"quic_server_info1\"}],"
       "\"servers\":["
       "{\"alternative_service\":[{\"advertised_versions\":[],"
       "\"expiration\":\"13756212000000000\",\"port\":443,"
       "\"protocol_str\":\"h2\"},"
       "{\"advertised_versions\":[],\"expiration\":\"13758804000000000\","
-      "\"host\":\"www.google.com\",\"port\":1234,\"protocol_str\":\"h2\"}],"
+      "\"host\":\"www.9oo91e.qjz9zk\",\"port\":1234,\"protocol_str\":\"h2\"}],"
       "\"isolation\":[],"
-      "\"server\":\"https://www.google.com:80\"},"
+      "\"server\":\"https://www.9oo91e.qjz9zk:80\"},"
       "{\"alternative_service\":[{\"advertised_versions\":[],"
-      "\"expiration\":\"9223372036854775807\",\"host\":\"foo.google.com\","
+      "\"expiration\":\"9223372036854775807\",\"host\":\"foo.9oo91e.qjz9zk\","
       "\"port\":444,\"protocol_str\":\"h2\"}],"
       "\"isolation\":[],"
       "\"network_stats\":{\"srtt\":42},"
-      "\"server\":\"https://mail.google.com:80\","
+      "\"server\":\"https://mail.9oo91e.qjz9zk:80\","
       "\"supports_spdy\":true}],"
       "\"supports_quic\":{\"address\":\"127.0.0.1\",\"used_quic\":true},"
       "\"version\":5}";
@@ -1470,8 +1470,8 @@ TEST_F(HttpServerPropertiesManagerTest, UpdatePrefsOnShutdown) {
 TEST_F(HttpServerPropertiesManagerTest, PersistAdvertisedVersionsToPref) {
   InitializePrefs();
 
-  const url::SchemeHostPort server_www("https", "www.google.com", 80);
-  const url::SchemeHostPort server_mail("https", "mail.google.com", 80);
+  const url::SchemeHostPort server_www("https", "www.9oo91e.qjz9zk", 80);
+  const url::SchemeHostPort server_mail("https", "mail.9oo91e.qjz9zk", 80);
 
   // #1 & #2: Set alternate protocol.
   AlternativeServiceInfoVector alternative_service_info_vector;
@@ -1488,7 +1488,7 @@ TEST_F(HttpServerPropertiesManagerTest, PersistAdvertisedVersionsToPref) {
       AlternativeServiceInfo::CreateQuicAlternativeServiceInfo(
           quic_alternative_service1, expiration1, advertised_versions));
   // HTTP/2 alternative service should not set any advertised version.
-  AlternativeService h2_alternative_service(kProtoHTTP2, "www.google.com",
+  AlternativeService h2_alternative_service(kProtoHTTP2, "www.9oo91e.qjz9zk",
                                             1234);
   base::Time expiration2;
   ASSERT_TRUE(base::Time::FromUTCString("2036-12-31 10:00:00", &expiration2));
@@ -1499,7 +1499,7 @@ TEST_F(HttpServerPropertiesManagerTest, PersistAdvertisedVersionsToPref) {
                                              alternative_service_info_vector);
 
   // Set another QUIC alternative service with a single advertised QUIC version.
-  AlternativeService mail_alternative_service(kProtoQUIC, "foo.google.com",
+  AlternativeService mail_alternative_service(kProtoQUIC, "foo.9oo91e.qjz9zk",
                                               444);
   base::Time expiration3 = base::Time::Max();
   http_server_props_->SetQuicAlternativeService(
@@ -1512,7 +1512,7 @@ TEST_F(HttpServerPropertiesManagerTest, PersistAdvertisedVersionsToPref) {
                                             stats);
 
   // #4: Set quic_server_info string.
-  quic::QuicServerId mail_quic_server_id("mail.google.com", 80, false);
+  quic::QuicServerId mail_quic_server_id("mail.9oo91e.qjz9zk", 80, false);
   std::string quic_server_info1("quic_server_info1");
   http_server_props_->SetQuicServerInfo(
       mail_quic_server_id, NetworkIsolationKey(), quic_server_info1);
@@ -1531,22 +1531,22 @@ TEST_F(HttpServerPropertiesManagerTest, PersistAdvertisedVersionsToPref) {
   const char expected_json[] =
       "{\"quic_servers\":["
       "{\"isolation\":[],"
-      "\"server_id\":\"https://mail.google.com:80\","
+      "\"server_id\":\"https://mail.9oo91e.qjz9zk:80\","
       "\"server_info\":\"quic_server_info1\"}],"
       "\"servers\":["
       "{\"alternative_service\":[{"
       "\"advertised_versions\":[43,46],\"expiration\":\"13756212000000000\","
       "\"port\":443,\"protocol_str\":\"quic\"},{\"advertised_versions\":[],"
-      "\"expiration\":\"13758804000000000\",\"host\":\"www.google.com\","
+      "\"expiration\":\"13758804000000000\",\"host\":\"www.9oo91e.qjz9zk\","
       "\"port\":1234,\"protocol_str\":\"h2\"}],"
       "\"isolation\":[],"
-      "\"server\":\"https://www.google.com:80\"},"
+      "\"server\":\"https://www.9oo91e.qjz9zk:80\"},"
       "{\"alternative_service\":[{"
       "\"advertised_versions\":[46],\"expiration\":\"9223372036854775807\","
-      "\"host\":\"foo.google.com\",\"port\":444,\"protocol_str\":\"quic\"}],"
+      "\"host\":\"foo.9oo91e.qjz9zk\",\"port\":444,\"protocol_str\":\"quic\"}],"
       "\"isolation\":[],"
       "\"network_stats\":{\"srtt\":42},"
-      "\"server\":\"https://mail.google.com:80\"}],"
+      "\"server\":\"https://mail.9oo91e.qjz9zk:80\"}],"
       "\"supports_quic\":{"
       "\"address\":\"127.0.0.1\",\"used_quic\":true},\"version\":5}";
 
@@ -1619,7 +1619,7 @@ TEST_F(HttpServerPropertiesManagerTest,
        UpdatePrefWhenAdvertisedVersionsChange) {
   InitializePrefs();
 
-  const url::SchemeHostPort server_www("https", "www.google.com", 80);
+  const url::SchemeHostPort server_www("https", "www.9oo91e.qjz9zk", 80);
 
   // #1: Set alternate protocol.
   AlternativeServiceInfoVector alternative_service_info_vector;
@@ -1635,7 +1635,7 @@ TEST_F(HttpServerPropertiesManagerTest,
                                              alternative_service_info_vector);
 
   // Set quic_server_info string.
-  quic::QuicServerId mail_quic_server_id("mail.google.com", 80, false);
+  quic::QuicServerId mail_quic_server_id("mail.9oo91e.qjz9zk", 80, false);
   std::string quic_server_info1("quic_server_info1");
   http_server_props_->SetQuicServerInfo(
       mail_quic_server_id, NetworkIsolationKey(), quic_server_info1);
@@ -1654,14 +1654,14 @@ TEST_F(HttpServerPropertiesManagerTest,
   const char expected_json[] =
       "{\"quic_servers\":"
       "[{\"isolation\":[],"
-      "\"server_id\":\"https://mail.google.com:80\","
+      "\"server_id\":\"https://mail.9oo91e.qjz9zk:80\","
       "\"server_info\":\"quic_server_info1\"}],"
       "\"servers\":["
       "{\"alternative_service\":[{\"advertised_versions\":[46],"
       "\"expiration\":\"13756212000000000\",\"port\":443,"
       "\"protocol_str\":\"quic\"}],"
       "\"isolation\":[],"
-      "\"server\":\"https://www.google.com:80\"}],"
+      "\"server\":\"https://www.9oo91e.qjz9zk:80\"}],"
       "\"supports_quic\":"
       "{\"address\":\"127.0.0.1\",\"used_quic\":true},\"version\":5}";
 
@@ -1697,14 +1697,14 @@ TEST_F(HttpServerPropertiesManagerTest,
   const char expected_json_updated[] =
       "{\"quic_servers\":"
       "[{\"isolation\":[],"
-      "\"server_id\":\"https://mail.google.com:80\","
+      "\"server_id\":\"https://mail.9oo91e.qjz9zk:80\","
       "\"server_info\":\"quic_server_info1\"}],"
       "\"servers\":["
       "{\"alternative_service\":[{\"advertised_versions\":[43,46],"
       "\"expiration\":\"13756212000000000\",\"port\":443,"
       "\"protocol_str\":\"quic\"}],"
       "\"isolation\":[],"
-      "\"server\":\"https://www.google.com:80\"}],"
+      "\"server\":\"https://www.9oo91e.qjz9zk:80\"}],"
       "\"supports_quic\":"
       "{\"address\":\"127.0.0.1\",\"used_quic\":true},\"version\":5}";
   EXPECT_TRUE(
@@ -1750,7 +1750,7 @@ TEST_F(HttpServerPropertiesManagerTest, UpdateCacheWithPrefs) {
   EXPECT_NE(0u, GetPendingMainThreadTaskCount());
 
   // Load the |pref_delegate_| with some JSON to verify updating the cache from
-  // prefs. For the broken alternative services "www.google.com:1234" and
+  // prefs. For the broken alternative services "www.9oo91e.qjz9zk:1234" and
   // "cached_broken", the expiration time will be one day from now.
 
   std::string expiration_str =
@@ -1762,7 +1762,7 @@ TEST_F(HttpServerPropertiesManagerTest, UpdateCacheWithPrefs) {
       "{\"broken_until\":\"" +
       expiration_str +
       "\","
-      "\"host\":\"www.google.com\",\"isolation\":[],"
+      "\"host\":\"www.9oo91e.qjz9zk\",\"isolation\":[],"
       "\"port\":1234,\"protocol_str\":\"h2\"},"
       "{\"broken_count\":2,\"broken_until\":\"" +
       expiration_str +
@@ -1774,23 +1774,23 @@ TEST_F(HttpServerPropertiesManagerTest, UpdateCacheWithPrefs) {
       "\"port\":443,\"protocol_str\":\"quic\"}],"
       "\"quic_servers\":["
       "{\"isolation\":[],"
-      "\"server_id\":\"https://mail.google.com:80\","
+      "\"server_id\":\"https://mail.9oo91e.qjz9zk:80\","
       "\"server_info\":\"quic_server_info1\"}"
       "],"
       "\"servers\":["
-      "{\"server\":\"https://www.google.com:80\","
+      "{\"server\":\"https://www.9oo91e.qjz9zk:80\","
       "\"isolation\":[],"
       "\"alternative_service\":["
       "{\"expiration\":\"13756212000000000\",\"port\":443,"
       "\"protocol_str\":\"h2\"},"
-      "{\"expiration\":\"13758804000000000\",\"host\":\"www.google.com\","
+      "{\"expiration\":\"13758804000000000\",\"host\":\"www.9oo91e.qjz9zk\","
       "\"port\":1234,\"protocol_str\":\"h2\"}"
       "]"
       "},"
-      "{\"server\":\"https://mail.google.com:80\","
+      "{\"server\":\"https://mail.9oo91e.qjz9zk:80\","
       "\"isolation\":[],"
       "\"alternative_service\":["
-      "{\"expiration\":\"9223372036854775807\",\"host\":\"foo.google.com\","
+      "{\"expiration\":\"9223372036854775807\",\"host\":\"foo.9oo91e.qjz9zk\","
       "\"port\":444,\"protocol_str\":\"h2\"}"
       "],"
       "\"network_stats\":{\"srtt\":42}"
@@ -1817,17 +1817,17 @@ TEST_F(HttpServerPropertiesManagerTest, UpdateCacheWithPrefs) {
   EXPECT_NE(0u, GetPendingMainThreadTaskCount());
 
   //
-  // Verify alternative service info for https://www.google.com
+  // Verify alternative service info for https://www.9oo91e.qjz9zk
   //
   AlternativeServiceInfoVector alternative_service_info_vector =
       http_server_props_->GetAlternativeServiceInfos(
-          url::SchemeHostPort("https", "www.google.com", 80),
+          url::SchemeHostPort("https", "www.9oo91e.qjz9zk", 80),
           NetworkIsolationKey());
   ASSERT_EQ(2u, alternative_service_info_vector.size());
 
   EXPECT_EQ(kProtoHTTP2,
             alternative_service_info_vector[0].alternative_service().protocol);
-  EXPECT_EQ("www.google.com",
+  EXPECT_EQ("www.9oo91e.qjz9zk",
             alternative_service_info_vector[0].alternative_service().host);
   EXPECT_EQ(443, alternative_service_info_vector[0].alternative_service().port);
   EXPECT_EQ(
@@ -1837,7 +1837,7 @@ TEST_F(HttpServerPropertiesManagerTest, UpdateCacheWithPrefs) {
 
   EXPECT_EQ(kProtoHTTP2,
             alternative_service_info_vector[1].alternative_service().protocol);
-  EXPECT_EQ("www.google.com",
+  EXPECT_EQ("www.9oo91e.qjz9zk",
             alternative_service_info_vector[1].alternative_service().host);
   EXPECT_EQ(1234,
             alternative_service_info_vector[1].alternative_service().port);
@@ -1847,17 +1847,17 @@ TEST_F(HttpServerPropertiesManagerTest, UpdateCacheWithPrefs) {
           alternative_service_info_vector[1].expiration().ToInternalValue()));
 
   //
-  // Verify alternative service info for https://mail.google.com
+  // Verify alternative service info for https://mail.9oo91e.qjz9zk
   //
   alternative_service_info_vector =
       http_server_props_->GetAlternativeServiceInfos(
-          url::SchemeHostPort("https", "mail.google.com", 80),
+          url::SchemeHostPort("https", "mail.9oo91e.qjz9zk", 80),
           NetworkIsolationKey());
   ASSERT_EQ(1u, alternative_service_info_vector.size());
 
   EXPECT_EQ(kProtoHTTP2,
             alternative_service_info_vector[0].alternative_service().protocol);
-  EXPECT_EQ("foo.google.com",
+  EXPECT_EQ("foo.9oo91e.qjz9zk",
             alternative_service_info_vector[0].alternative_service().host);
   EXPECT_EQ(444, alternative_service_info_vector[0].alternative_service().port);
   EXPECT_EQ(
@@ -1868,7 +1868,7 @@ TEST_F(HttpServerPropertiesManagerTest, UpdateCacheWithPrefs) {
   //
   // Verify broken alternative services.
   //
-  AlternativeService prefs_broken_service(kProtoHTTP2, "www.google.com", 1234);
+  AlternativeService prefs_broken_service(kProtoHTTP2, "www.9oo91e.qjz9zk", 1234);
   EXPECT_TRUE(http_server_props_->IsAlternativeServiceBroken(
       cached_broken_service, NetworkIsolationKey()));
   EXPECT_TRUE(http_server_props_->IsAlternativeServiceBroken(
@@ -1902,7 +1902,7 @@ TEST_F(HttpServerPropertiesManagerTest, UpdateCacheWithPrefs) {
   // been removed from the alternative services info vectors of all servers.
   alternative_service_info_vector =
       http_server_props_->GetAlternativeServiceInfos(
-          url::SchemeHostPort("https", "www.google.com", 80),
+          url::SchemeHostPort("https", "www.9oo91e.qjz9zk", 80),
           NetworkIsolationKey());
   ASSERT_EQ(1u, alternative_service_info_vector.size());
 
@@ -1983,7 +1983,7 @@ TEST_F(HttpServerPropertiesManagerTest, UpdateCacheWithPrefs) {
   //
   const ServerNetworkStats* server_network_stats =
       http_server_props_->GetServerNetworkStats(
-          url::SchemeHostPort("https", "mail.google.com", 80),
+          url::SchemeHostPort("https", "mail.9oo91e.qjz9zk", 80),
           NetworkIsolationKey());
   EXPECT_TRUE(server_network_stats);
   EXPECT_EQ(server_network_stats->srtt, base::TimeDelta::FromInternalValue(42));
@@ -1992,7 +1992,7 @@ TEST_F(HttpServerPropertiesManagerTest, UpdateCacheWithPrefs) {
   // Verify QUIC server info.
   //
   const std::string* quic_server_info = http_server_props_->GetQuicServerInfo(
-      quic::QuicServerId("mail.google.com", 80, false), NetworkIsolationKey());
+      quic::QuicServerId("mail.9oo91e.qjz9zk", 80, false), NetworkIsolationKey());
   EXPECT_EQ("quic_server_info1", *quic_server_info);
 
   //
@@ -2263,10 +2263,10 @@ TEST_F(HttpServerPropertiesManagerTest,
   const url::Origin kOrigin2 = url::Origin::Create(GURL("https://bar.test/"));
   const NetworkIsolationKey kNetworkIsolationKey1(kOrigin1, kOrigin1);
   const NetworkIsolationKey kNetworkIsolationKey2(kOrigin2, kOrigin2);
-  // Three servers with the same canonical suffix (".c.youtube.com").
-  const url::SchemeHostPort kServer1("https", "foo.c.youtube.com", 443);
-  const url::SchemeHostPort kServer2("https", "bar.c.youtube.com", 443);
-  const url::SchemeHostPort kServer3("https", "baz.c.youtube.com", 443);
+  // Three servers with the same canonical suffix (".c.y0u1ub3.qjz9zk").
+  const url::SchemeHostPort kServer1("https", "foo.c.y0u1ub3.qjz9zk", 443);
+  const url::SchemeHostPort kServer2("https", "bar.c.y0u1ub3.qjz9zk", 443);
+  const url::SchemeHostPort kServer3("https", "baz.c.y0u1ub3.qjz9zk", 443);
 
   base::test::ScopedFeatureList feature_list;
   feature_list.InitAndEnableFeature(
@@ -2276,15 +2276,15 @@ TEST_F(HttpServerPropertiesManagerTest,
   base::Time expiration = base::Time::Now() + base::TimeDelta::FromDays(1);
   AlternativeServiceInfo alt_service1 =
       AlternativeServiceInfo::CreateQuicAlternativeServiceInfo(
-          AlternativeService(kProtoQUIC, "foopy.c.youtube.com", 1234),
+          AlternativeService(kProtoQUIC, "foopy.c.y0u1ub3.qjz9zk", 1234),
           expiration, DefaultSupportedQuicVersions());
   AlternativeServiceInfo alt_service2 =
       AlternativeServiceInfo::CreateHttp2AlternativeServiceInfo(
-          AlternativeService(kProtoHTTP2, "foopy.c.youtube.com", 443),
+          AlternativeService(kProtoHTTP2, "foopy.c.y0u1ub3.qjz9zk", 443),
           expiration);
   AlternativeServiceInfo alt_service3 =
       AlternativeServiceInfo::CreateHttp2AlternativeServiceInfo(
-          AlternativeService(kProtoHTTP2, "foopy2.c.youtube.com", 443),
+          AlternativeService(kProtoHTTP2, "foopy2.c.y0u1ub3.qjz9zk", 443),
           expiration);
   AlternativeServiceInfoVector alt_service_vector1 = {alt_service1};
   AlternativeServiceInfoVector alt_service_vector2 = {alt_service1,
@@ -2856,12 +2856,12 @@ TEST_F(HttpServerPropertiesManagerTest,
   const NetworkIsolationKey kNetworkIsolationKey1(kOrigin1, kOrigin1);
   const NetworkIsolationKey kNetworkIsolationKey2(kOrigin2, kOrigin2);
 
-  // Three servers with the same canonical suffix (".c.youtube.com").
-  const quic::QuicServerId kServer1("foo.c.youtube.com", 443,
+  // Three servers with the same canonical suffix (".c.y0u1ub3.qjz9zk").
+  const quic::QuicServerId kServer1("foo.c.y0u1ub3.qjz9zk", 443,
                                     false /* privacy_mode_enabled */);
-  const quic::QuicServerId kServer2("bar.c.youtube.com", 443,
+  const quic::QuicServerId kServer2("bar.c.y0u1ub3.qjz9zk", 443,
                                     false /* privacy_mode_enabled */);
-  const quic::QuicServerId kServer3("baz.c.youtube.com", 443,
+  const quic::QuicServerId kServer3("baz.c.y0u1ub3.qjz9zk", 443,
                                     false /* privacy_mode_enabled */);
 
   const char kQuicServerInfo1[] = "info1";

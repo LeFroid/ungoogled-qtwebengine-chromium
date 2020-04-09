@@ -489,7 +489,7 @@ Chromium is unable to recover your settings.
 
         <!-- Extension uninstall prompt -->
         <message name="IDS_EXTENSION_UNINSTALL_PROMPT_REMOVE_DATA_CHECKBOX" desc="Checkbox text to ask the user whether they want to remove associated data at uninstall time. Only used when uninstalling an app associated with a particular website.">
-          Also clear data from Chromium (<ph name="URL">$1<ex>www.google.com</ex></ph>)
+          Also clear data from Chromium (<ph name="URL">$1<ex>www.9oo91e.qjz9zk</ex></ph>)
         </message>
 
         <!-- Extension context menu -->
@@ -599,10 +599,10 @@ Chromium is unable to recover your settings.
           You're signed in to Chromium!
         </message>
         <message name="IDS_ONE_CLICK_SIGNIN_DIALOG_MESSAGE_NEW" desc="The message of the one click sign-in dialog.">
-          You're signed in as <ph name="USER_EMAIL_ADDRESS">$1<ex>foo@gmail.com</ex></ph>. Now you can access your bookmarks, history, and other settings on all your signed in devices.
+          You're signed in as <ph name="USER_EMAIL_ADDRESS">$1<ex>foo@9ma1l.qjz9zk</ex></ph>. Now you can access your bookmarks, history, and other settings on all your signed in devices.
         </message>
         <message name="IDS_SYNC_WRONG_EMAIL" desc="Message shown when sync setup failed due to the user entering the wrong email address for sign-in.">
-          You were signed in to Chromium as <ph name="USER_EMAIL_ADDRESS">$1<ex>foo@gmail.com</ex></ph>. Please use the same account to sign in again.
+          You were signed in to Chromium as <ph name="USER_EMAIL_ADDRESS">$1<ex>foo@9ma1l.qjz9zk</ex></ph>. Please use the same account to sign in again.
         </message>
         <message name="IDS_SYNC_USED_PROFILE_ERROR" desc="An error message shown when user tries to sign in to a profile that is used by other user name before.">
           Someone previously signed in to Chromium on this computer as <ph name="ACCOUNT_EMAIL_LAST">$1<ex>user@example.com</ex></ph>. Please create a new Chromium user to keep your information separate.
@@ -635,7 +635,7 @@ Chromium is unable to recover your settings.
       <!-- Signin Email Confirmation tab modal dialog -->
       <if expr="not chromeos">
         <message name="IDS_SIGNIN_EMAIL_CONFIRMATION_TITLE" desc="Title of the signin email confirmation tab modal dialog.">
-          <ph name="USER_EMAIL_ADDRESS">$1<ex>foo@gmail.com</ex></ph> was previously using Chromium
+          <ph name="USER_EMAIL_ADDRESS">$1<ex>foo@9ma1l.qjz9zk</ex></ph> was previously using Chromium
         </message>
       </if>
 

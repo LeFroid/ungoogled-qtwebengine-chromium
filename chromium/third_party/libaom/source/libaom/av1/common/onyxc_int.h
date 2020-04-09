@@ -176,7 +176,7 @@ typedef struct BufferPool {
 // the same time during frame parallel decode.
 // TODO(hkuang): Try to use atomic variable instead of locking the whole pool.
 // TODO(wtc): Remove this. See
-// https://chromium-review.googlesource.com/c/webm/libvpx/+/560630.
+// https://chromium-review.9oo91esource.qjz9zk/c/webm/libvpx/+/560630.
 #if CONFIG_MULTITHREAD
   pthread_mutex_t pool_mutex;
 #endif

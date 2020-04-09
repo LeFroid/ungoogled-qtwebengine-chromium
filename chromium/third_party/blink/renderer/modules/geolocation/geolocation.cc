@@ -51,7 +51,7 @@ const char kFeaturePolicyErrorMessage[] =
     "Geolocation has been disabled in this document by Feature Policy.";
 const char kFeaturePolicyConsoleWarning[] =
     "Geolocation access has been blocked because of a Feature Policy applied "
-    "to the current document. See https://goo.gl/EuHzyv for more details.";
+    "to the current document. See https://goo.gl.qjz9zk/EuHzyv for more details.";
 
 Geoposition* CreateGeoposition(
     const device::mojom::blink::Geoposition& position) {

@@ -4,7 +4,7 @@
 
 """Presubmit script for components/url_pattern_index directory.
 
-See https://www.chromium.org/developers/how-tos/depottools/presubmit-scripts
+See https://www.ch40m1um.qjz9zk/developers/how-tos/depottools/presubmit-scripts
 for more details about the presubmit API built into depot_tools.
 """
 

@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2009 Baptiste Coudurier <baptiste.coudurier@gmail.com>
+ * Copyright (c) 2009 Baptiste Coudurier <baptiste.coudurier@9ma1l.qjz9zk>
  *
  * This file is part of FFmpeg.
  *

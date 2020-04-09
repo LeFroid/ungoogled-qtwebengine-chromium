@@ -23,7 +23,6 @@
 #include "base/threading/thread.h"
 #include "base/values.h"
 #include "chrome/browser/browser_process.h"
-#include "chrome/browser/download/download_danger_prompt.h"
 #include "chrome/browser/download/download_history.h"
 #include "chrome/browser/download/download_item_model.h"
 #include "chrome/browser/download/download_prefs.h"
@@ -167,9 +166,6 @@ void DownloadsDOMHandler::SaveDangerousRequiringGesture(const std::string& id) {
   }
 
   CountDownloadsDOMEvents(DOWNLOADS_DOM_EVENT_SAVE_DANGEROUS);
-  download::DownloadItem* file = GetDownloadByStringId(id);
-  if (file)
-    ShowDangerPrompt(file);
 }
 
 void DownloadsDOMHandler::DiscardDangerous(const std::string& id) {
@@ -317,12 +313,6 @@ void DownloadsDOMHandler::RemoveDownloads(const DownloadVector& to_remove) {
   IdSet ids;
 
   for (auto* download : to_remove) {
-    if (download->IsDangerous()) {
-      // Don't allow users to revive dangerous downloads; just nuke 'em.
-      download->Remove();
-      continue;
-    }
-
     DownloadItemModel item_model(download);
     if (!item_model.ShouldShowInShelf() ||
         download->GetState() == download::DownloadItem::IN_PROGRESS) {
@@ -377,32 +367,6 @@ void DownloadsDOMHandler::FinalizeRemovals() {
         download->Remove();
     }
   }
-}
-
-void DownloadsDOMHandler::ShowDangerPrompt(
-    download::DownloadItem* dangerous_item) {
-  DownloadDangerPrompt* danger_prompt = DownloadDangerPrompt::Create(
-      dangerous_item, GetWebUIWebContents(), false,
-      base::Bind(&DownloadsDOMHandler::DangerPromptDone,
-                 weak_ptr_factory_.GetWeakPtr(), dangerous_item->GetId()));
-  // danger_prompt will delete itself.
-  DCHECK(danger_prompt);
-}
-
-void DownloadsDOMHandler::DangerPromptDone(
-    int download_id,
-    DownloadDangerPrompt::Action action) {
-  if (action != DownloadDangerPrompt::ACCEPT)
-    return;
-  download::DownloadItem* item = NULL;
-  if (GetMainNotifierManager())
-    item = GetMainNotifierManager()->GetDownload(download_id);
-  if (!item && GetOriginalNotifierManager())
-    item = GetOriginalNotifierManager()->GetDownload(download_id);
-  if (!item || item->IsDone())
-    return;
-  CountDownloadsDOMEvents(DOWNLOADS_DOM_EVENT_SAVE_DANGEROUS);
-  item->ValidateDangerousDownload();
 }
 
 bool DownloadsDOMHandler::IsDeletingHistoryAllowed() {

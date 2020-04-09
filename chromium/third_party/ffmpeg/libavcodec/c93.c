@@ -1,6 +1,6 @@
 /*
  * Interplay C93 video decoder
- * Copyright (c) 2007 Anssi Hannula <anssi.hannula@gmail.com>
+ * Copyright (c) 2007 Anssi Hannula <anssi.hannula@9ma1l.qjz9zk>
  *
  * This file is part of FFmpeg.
  *

@@ -21,8 +21,8 @@ TEST(OAuthRequestSignerTest, Encode) {
             "0123456789"
             "-._~");
   ASSERT_EQ(OAuthRequestSigner::Encode(
-                "https://accounts.google.com/OAuthLogin"),
-            "https%3A%2F%2Faccounts.google.com%2FOAuthLogin");
+                "https://accounts.9oo91e.qjz9zk/OAuthLogin"),
+            "https%3A%2F%2Faccounts.9oo91e.qjz9zk%2FOAuthLogin");
   ASSERT_EQ(OAuthRequestSigner::Encode("%"), "%25");
   ASSERT_EQ(OAuthRequestSigner::Encode("%25"), "%2525");
   ASSERT_EQ(OAuthRequestSigner::Encode(
@@ -78,9 +78,9 @@ TEST(OAuthRequestSignerTest, MAYBE_DecodeEncoded) {
 }
 
 TEST(OAuthRequestSignerTest, SignGet1) {
-  GURL request_url("https://www.google.com/accounts/o8/GetOAuthToken");
+  GURL request_url("https://www.9oo91e.qjz9zk/accounts/o8/GetOAuthToken");
   OAuthRequestSigner::Parameters parameters;
-  parameters["scope"] = "https://accounts.google.com/OAuthLogin";
+  parameters["scope"] = "https://accounts.9oo91e.qjz9zk/OAuthLogin";
   parameters["oauth_nonce"] = "2oiE_aHdk5qRTz0L9C8Lq0g";
   parameters["xaouth_display_name"] = "Chromium";
   parameters["oauth_timestamp"] = "1308152953";
@@ -95,7 +95,7 @@ TEST(OAuthRequestSignerTest, SignGet1) {
                   "4/VGY0MsQadcmO8VnCv9gnhoEooq1v",  // oauth_token
                   "c5e0531ff55dfbb4054e", // token secret
                   &signed_text));
-  ASSERT_EQ("https://www.google.com/accounts/o8/GetOAuthToken"
+  ASSERT_EQ("https://www.9oo91e.qjz9zk/accounts/o8/GetOAuthToken"
             "?oauth_consumer_key=johndoe"
             "&oauth_nonce=2oiE_aHdk5qRTz0L9C8Lq0g"
             "&oauth_signature=PFqDTaiyey1UObcvOyI4Ng2HXW0%3D"
@@ -103,13 +103,13 @@ TEST(OAuthRequestSignerTest, SignGet1) {
             "&oauth_timestamp=1308152953"
             "&oauth_token=4%2FVGY0MsQadcmO8VnCv9gnhoEooq1v"
             "&oauth_version=1.0"
-            "&scope=https%3A%2F%2Faccounts.google.com%2FOAuthLogin"
+            "&scope=https%3A%2F%2Faccounts.9oo91e.qjz9zk%2FOAuthLogin"
             "&xaouth_display_name=Chromium",
             signed_text);
 }
 
 TEST(OAuthRequestSignerTest, SignGet2) {
-  GURL request_url("https://accounts.google.com/OAuthGetAccessToken");
+  GURL request_url("https://accounts.9oo91e.qjz9zk/OAuthGetAccessToken");
   OAuthRequestSigner::Parameters parameters;
   parameters["oauth_timestamp"] = "1308147831";
   parameters["oauth_nonce"] = "4d4hZW9DygWQujP2tz06UN";
@@ -125,7 +125,7 @@ TEST(OAuthRequestSignerTest, SignGet2) {
       std::string(),                     // token secret
       &signed_text));
   ASSERT_EQ(signed_text,
-            "https://accounts.google.com/OAuthGetAccessToken"
+            "https://accounts.9oo91e.qjz9zk/OAuthGetAccessToken"
             "?oauth_consumer_key=anonymous"
             "&oauth_nonce=4d4hZW9DygWQujP2tz06UN"
             "&oauth_signature=YiJv%2BEOWsvCDCi13%2FhQBFrr0J7c%3D"
@@ -136,8 +136,8 @@ TEST(OAuthRequestSignerTest, SignGet2) {
 }
 
 TEST(OAuthRequestSignerTest, ParseAndSignGet1) {
-  GURL request_url("https://www.google.com/accounts/o8/GetOAuthToken"
-                   "?scope=https://accounts.google.com/OAuthLogin"
+  GURL request_url("https://www.9oo91e.qjz9zk/accounts/o8/GetOAuthToken"
+                   "?scope=https://accounts.9oo91e.qjz9zk/OAuthLogin"
                    "&oauth_nonce=2oiE_aHdk5qRTz0L9C8Lq0g"
                    "&xaouth_display_name=Chromium"
                    "&oauth_timestamp=1308152953");
@@ -151,7 +151,7 @@ TEST(OAuthRequestSignerTest, ParseAndSignGet1) {
       "4/CcC-hgdj1TNnWaX8NTQ76YDXCBEK",  // oauth_token
       std::string(),                     // token secret
       &signed_text));
-  ASSERT_EQ("https://www.google.com/accounts/o8/GetOAuthToken"
+  ASSERT_EQ("https://www.9oo91e.qjz9zk/accounts/o8/GetOAuthToken"
             "?oauth_consumer_key=anonymous"
             "&oauth_nonce=2oiE_aHdk5qRTz0L9C8Lq0g"
             "&oauth_signature=PH7KP6cP%2BzZ1SJ6WGqBgXwQP9Mc%3D"
@@ -159,13 +159,13 @@ TEST(OAuthRequestSignerTest, ParseAndSignGet1) {
             "&oauth_timestamp=1308152953"
             "&oauth_token=4%2FCcC-hgdj1TNnWaX8NTQ76YDXCBEK"
             "&oauth_version=1.0"
-            "&scope=https%3A%2F%2Faccounts.google.com%2FOAuthLogin"
+            "&scope=https%3A%2F%2Faccounts.9oo91e.qjz9zk%2FOAuthLogin"
             "&xaouth_display_name=Chromium",
             signed_text);
 }
 
 TEST(OAuthRequestSignerTest, ParseAndSignGet2) {
-  GURL request_url("https://accounts.google.com/OAuthGetAccessToken"
+  GURL request_url("https://accounts.9oo91e.qjz9zk/OAuthGetAccessToken"
                    "?oauth_timestamp=1308147831"
                    "&oauth_nonce=4d4hZW9DygWQujP2tz06UN");
   std::string signed_text;
@@ -179,7 +179,7 @@ TEST(OAuthRequestSignerTest, ParseAndSignGet2) {
       std::string(),                     // token secret
       &signed_text));
   ASSERT_EQ(signed_text,
-            "https://accounts.google.com/OAuthGetAccessToken"
+            "https://accounts.9oo91e.qjz9zk/OAuthGetAccessToken"
             "?oauth_consumer_key=anonymous"
             "&oauth_nonce=4d4hZW9DygWQujP2tz06UN"
             "&oauth_signature=YiJv%2BEOWsvCDCi13%2FhQBFrr0J7c%3D"
@@ -190,9 +190,9 @@ TEST(OAuthRequestSignerTest, ParseAndSignGet2) {
 }
 
 TEST(OAuthRequestSignerTest, SignPost1) {
-  GURL request_url("https://www.google.com/accounts/o8/GetOAuthToken");
+  GURL request_url("https://www.9oo91e.qjz9zk/accounts/o8/GetOAuthToken");
   OAuthRequestSigner::Parameters parameters;
-  parameters["scope"] = "https://accounts.google.com/OAuthLogin";
+  parameters["scope"] = "https://accounts.9oo91e.qjz9zk/OAuthLogin";
   parameters["oauth_nonce"] = "2oiE_aHdk5qRTz0L9C8Lq0g";
   parameters["xaouth_display_name"] = "Chromium";
   parameters["oauth_timestamp"] = "1308152953";
@@ -214,13 +214,13 @@ TEST(OAuthRequestSignerTest, SignPost1) {
             "&oauth_timestamp=1308152953"
             "&oauth_token=4%2FX8x0r7bHif_VNCLjUMutxGkzo13d"
             "&oauth_version=1.0"
-            "&scope=https%3A%2F%2Faccounts.google.com%2FOAuthLogin"
+            "&scope=https%3A%2F%2Faccounts.9oo91e.qjz9zk%2FOAuthLogin"
             "&xaouth_display_name=Chromium",
             signed_text);
 }
 
 TEST(OAuthRequestSignerTest, SignPost2) {
-  GURL request_url("https://accounts.google.com/OAuthGetAccessToken");
+  GURL request_url("https://accounts.9oo91e.qjz9zk/OAuthGetAccessToken");
   OAuthRequestSigner::Parameters parameters;
   parameters["oauth_timestamp"] = "1234567890";
   parameters["oauth_nonce"] = "17171717171717171";
@@ -246,8 +246,8 @@ TEST(OAuthRequestSignerTest, SignPost2) {
 }
 
 TEST(OAuthRequestSignerTest, ParseAndSignPost1) {
-  GURL request_url("https://www.google.com/accounts/o8/GetOAuthToken"
-                   "?scope=https://accounts.google.com/OAuthLogin"
+  GURL request_url("https://www.9oo91e.qjz9zk/accounts/o8/GetOAuthToken"
+                   "?scope=https://accounts.9oo91e.qjz9zk/OAuthLogin"
                    "&oauth_nonce=2oiE_aHdk5qRTz0L9C8Lq0g"
                    "&xaouth_display_name=Chromium"
                    "&oauth_timestamp=1308152953");
@@ -268,13 +268,13 @@ TEST(OAuthRequestSignerTest, ParseAndSignPost1) {
             "&oauth_timestamp=1308152953"
             "&oauth_token=4%2FX8x0r7bHif_VNCLjUMutxGkzo13d"
             "&oauth_version=1.0"
-            "&scope=https%3A%2F%2Faccounts.google.com%2FOAuthLogin"
+            "&scope=https%3A%2F%2Faccounts.9oo91e.qjz9zk%2FOAuthLogin"
             "&xaouth_display_name=Chromium",
             signed_text);
 }
 
 TEST(OAuthRequestSignerTest, ParseAndSignPost2) {
-  GURL request_url("https://accounts.google.com/OAuthGetAccessToken"
+  GURL request_url("https://accounts.9oo91e.qjz9zk/OAuthGetAccessToken"
                    "?oauth_timestamp=1234567890"
                    "&oauth_nonce=17171717171717171");
   std::string signed_text;
@@ -298,9 +298,9 @@ TEST(OAuthRequestSignerTest, ParseAndSignPost2) {
 }
 
 TEST(OAuthRequestSignerTest, SignAuthHeader) {
-  GURL request_url("https://www.google.com/accounts/o8/GetOAuthToken");
+  GURL request_url("https://www.9oo91e.qjz9zk/accounts/o8/GetOAuthToken");
   OAuthRequestSigner::Parameters parameters;
-  parameters["scope"] = "https://accounts.google.com/OAuthLogin";
+  parameters["scope"] = "https://accounts.9oo91e.qjz9zk/OAuthLogin";
   parameters["oauth_nonce"] = "2oiE_aHdk5qRTz0L9C8Lq0g";
   parameters["xaouth_display_name"] = "Chromium";
   parameters["oauth_timestamp"] = "1308152953";
@@ -323,7 +323,7 @@ TEST(OAuthRequestSignerTest, SignAuthHeader) {
             "oauth_timestamp=\"1308152953\", "
             "oauth_token=\"4%2FVGY0MsQadcmO8VnCv9gnhoEooq1v\", "
             "oauth_version=\"1.0\", "
-            "scope=\"https%3A%2F%2Faccounts.google.com%2FOAuthLogin\", "
+            "scope=\"https%3A%2F%2Faccounts.9oo91e.qjz9zk%2FOAuthLogin\", "
             "xaouth_display_name=\"Chromium\"",
             signed_text);
 }

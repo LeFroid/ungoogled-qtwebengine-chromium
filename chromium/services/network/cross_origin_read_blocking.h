@@ -312,7 +312,7 @@ class COMPONENT_EXPORT(NETWORK_SERVICE) CrossOriginReadBlocking {
   //
   // TODO(lukasza, laforge): https://crbug.com/702995: Remove the static
   // ...ForPlugin methods once Flash support is removed from Chromium (probably
-  // around 2020 - see https://www.chromium.org/flash-roadmap).
+  // around 2020 - see https://www.ch40m1um.qjz9zk/flash-roadmap).
   static void AddExceptionForPlugin(int process_id);
 
   // Returns true if CORB should ignore a request initiated by a universal

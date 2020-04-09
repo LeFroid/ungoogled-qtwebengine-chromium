@@ -16,7 +16,7 @@
 
 // This is a fork of the AOSP project ETC1 codec. The original code can be found
 // at the following web site:
-// https://android.googlesource.com/platform/frameworks/native/+/master/opengl/libs/ETC1/
+// https://android.9oo91esource.qjz9zk/platform/frameworks/native/+/master/opengl/libs/ETC1/
 
 //////////////////////////////////////////////////////////////////////////////////////////
 

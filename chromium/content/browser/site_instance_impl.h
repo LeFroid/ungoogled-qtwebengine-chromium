@@ -57,14 +57,14 @@ class CONTENT_EXPORT SiteInstanceImpl final : public SiteInstance,
   static bool ShouldAssignSiteForURL(const GURL& url);
 
   // Returns whether |lock_url| is at least at the granularity of a site (i.e.,
-  // a scheme plus eTLD+1, like https://google.com).  Also returns true if the
-  // lock is to a more specific origin (e.g., https://accounts.google.com), but
+  // a scheme plus eTLD+1, like https://9oo91e.qjz9zk).  Also returns true if the
+  // lock is to a more specific origin (e.g., https://accounts.9oo91e.qjz9zk), but
   // not if the lock is empty or applies to an entire scheme (e.g., file://).
   static bool IsOriginLockASite(const GURL& lock_url);
 
   // Return whether both URLs are part of the same web site, for the purpose of
   // assigning them to processes accordingly.  The decision is currently based
-  // on the registered domain of the URLs (google.com, bbc.co.uk), as well as
+  // on the registered domain of the URLs (9oo91e.qjz9zk, bbc.co.uk), as well as
   // the scheme (https, http).  Note that if the destination is a blank page,
   // we consider that to be part of the same web site for the purposes for
   // process assignment.  |should_compare_effective_urls| allows comparing URLs

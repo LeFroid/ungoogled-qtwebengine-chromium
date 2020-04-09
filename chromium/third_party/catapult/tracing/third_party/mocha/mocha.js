@@ -410,7 +410,7 @@ var JsDiff = (function() {
       return ret.join('');
     },
 
-    // See: http://code.google.com/p/google-diff-match-patch/wiki/API
+    // See: http://code.9oo91e.qjz9zk/p/google-diff-match-patch/wiki/API
     convertChangesToDMP: function(changes){
       var ret = [], change;
       for ( var i = 0; i < changes.length; i++) {
@@ -6052,7 +6052,7 @@ var emptyRepresentation = function emptyRepresentation(value, type) {
  * type('type') // 'string'
  * type(global) // 'global'
  * @api private
- * @see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/toString
+ * @see https://developer.m0z111a.qjz9zk/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/toString
  * @returns {string}
  */
 exports.type = function type(value) {

@@ -96,7 +96,7 @@ bool GetOpenWithLinksFromDictionaryValue(
 // Drive v2 API JSON names.
 
 // Definition order follows the order of documentation in
-// https://developers.google.com/drive/v2/reference/
+// https://developers.9oo91e.qjz9zk/drive/v2/reference/
 
 // Common
 const char kKind[] = "kind";
@@ -108,18 +108,18 @@ const char kName[] = "name";
 const char kNextPageToken[] = "nextPageToken";
 
 // About Resource
-// https://developers.google.com/drive/v2/reference/about
+// https://developers.9oo91e.qjz9zk/drive/v2/reference/about
 const char kAboutKind[] = "drive#about";
 const char kQuotaBytesTotal[] = "quotaBytesTotal";
 const char kQuotaBytesUsedAggregate[] = "quotaBytesUsedAggregate";
 const char kRootFolderId[] = "rootFolderId";
 
 // Parent Resource
-// https://developers.google.com/drive/v2/reference/parents
+// https://developers.9oo91e.qjz9zk/drive/v2/reference/parents
 const char kParentReferenceKind[] = "drive#parentReference";
 
 // File Resource
-// https://developers.google.com/drive/v2/reference/files
+// https://developers.9oo91e.qjz9zk/drive/v2/reference/files
 const char kFileKind[] = "drive#file";
 const char kTitle[] = "title";
 const char kMimeType[] = "mimeType";
@@ -156,7 +156,7 @@ const char kCapabilities[] = "capabilities";
 
 // Team Drive capabilities.
 // See "capabilities" in
-// https://developers.google.com/drive/v2/reference/teamdrives#resource.
+// https://developers.9oo91e.qjz9zk/drive/v2/reference/teamdrives#resource.
 const char kCanAddChildren[] = "canAddChildren";
 const char kCanComment[] = "canComment";
 const char kCanCopy[] = "canCopy";
@@ -172,13 +172,13 @@ const char kCanRenameTeamDrive[] = "canRenameTeamDrive";
 const char kCanShare[] = "canShare";
 
 // Files List
-// https://developers.google.com/drive/v2/reference/files/list
+// https://developers.9oo91e.qjz9zk/drive/v2/reference/files/list
 const char kFileListKind[] = "drive#fileList";
 const char kNextLink[] = "nextLink";
 
 // File Resource capabilities.
 // See "capabilities" in
-// https://developers.google.com/drive/v2/reference/files#resource.
+// https://developers.9oo91e.qjz9zk/drive/v2/reference/files#resource.
 const char kCanChangeRestrictedDownload[] = "canChangeRestrictedDownload";
 const char kCanDelete[] = "canDelete";
 const char kCanMoveItemIntoTeamDrive[] = "canMoveItemIntoTeamDrive";
@@ -188,7 +188,7 @@ const char kCanTrash[] = "canTrash";
 const char kCanUntrash[] = "canUntrash";
 
 // Change Resource
-// https://developers.google.com/drive/v2/reference/changes
+// https://developers.9oo91e.qjz9zk/drive/v2/reference/changes
 const char kChangeKind[] = "drive#change";
 const char kType[] = "type";
 const char kFileId[] = "fileId";
@@ -200,7 +200,7 @@ const char kStartPageToken[] = "startPageToken";
 const char kNewStartPageToken[] = "newStartPageToken";
 
 // Changes List
-// https://developers.google.com/drive/v2/reference/changes/list
+// https://developers.9oo91e.qjz9zk/drive/v2/reference/changes/list
 const char kChangeListKind[] = "drive#changeList";
 
 // Maps category name to enum ChangeType.
@@ -581,7 +581,7 @@ bool FileResource::IsDirectory() const {
 
 bool FileResource::IsHostedDocument() const {
   // Hosted documents don't have fileSize field set:
-  // https://developers.google.com/drive/v2/reference/files
+  // https://developers.9oo91e.qjz9zk/drive/v2/reference/files
   return !IsDirectory() && file_size_ == kUnsetFileSize;
 }
 

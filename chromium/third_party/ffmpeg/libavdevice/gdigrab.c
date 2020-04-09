@@ -4,7 +4,7 @@
  * This file is part of FFmpeg.
  *
  * Copyright (C) 2013 Calvin Walton <calvin.walton@kepstin.ca>
- * Copyright (C) 2007-2010 Christophe Gisquet <word1.word2@gmail.com>
+ * Copyright (C) 2007-2010 Christophe Gisquet <word1.word2@9ma1l.qjz9zk>
  *
  * FFmpeg is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Lesser General Public License
@@ -25,7 +25,7 @@
  * @file
  * GDI frame device demuxer
  * @author Calvin Walton <calvin.walton@kepstin.ca>
- * @author Christophe Gisquet <word1.word2@gmail.com>
+ * @author Christophe Gisquet <word1.word2@9ma1l.qjz9zk>
  */
 
 #include "config.h"

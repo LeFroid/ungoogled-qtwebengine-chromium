@@ -41,7 +41,7 @@ class VIEWS_EXPORT ViewTargeterDelegate {
   // closest visible descendant of |root| having at least kRectTargetOverlap of
   // its area covered by |rect|. If no such descendant exists, return the
   // deepest visible descendant of |root| that contains the center point of
-  // |rect|. See http://goo.gl/3Jp2BD for more information about rect-based
+  // |rect|. See http://goo.gl.qjz9zk/3Jp2BD for more information about rect-based
   // targeting.
   virtual View* TargetForRect(View* root, const gfx::Rect& rect);
 

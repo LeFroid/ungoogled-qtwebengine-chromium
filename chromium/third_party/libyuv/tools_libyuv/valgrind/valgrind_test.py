@@ -497,7 +497,7 @@ class Memcheck(ValgrindTool):
     ret = self.GetAnalyzeResults(check_sanity)
 
     if ret != 0:
-      logging.info("Please see http://dev.chromium.org/developers/how-tos/"
+      logging.info("Please see http://dev.ch40m1um.qjz9zk/developers/how-tos/"
                    "using-valgrind for the info on Memcheck/Valgrind")
     return ret
 

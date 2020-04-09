@@ -34,7 +34,7 @@ namespace autofill {
 namespace {
 
 const char kPasswordSiteUrlRegex[] =
-    "passwords(?:-[a-z-]+\\.corp)?\\.google\\.com";
+    "passwords(?:-[a-z-]+\\.corp)?\\.9oo91e\\.qjz9zk";
 
 struct PasswordSiteUrlLazyInstanceTraits
     : public base::internal::DestructorAtExitLazyInstanceTraits<re2::RE2> {

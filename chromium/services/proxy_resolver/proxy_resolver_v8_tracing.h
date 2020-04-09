@@ -71,7 +71,7 @@ class ProxyResolverV8Tracing {
 // returned by Create(), creates ProxyResolverV8Tracing instances that execute
 // ProxyResolverV8 on a single helper thread, and do some magic to avoid
 // blocking in DNS. For more details see the design document:
-// https://docs.google.com/a/google.com/document/d/16Ij5OcVnR3s0MH4Z5XkhI9VTPoMJdaBn9rKreAmGOdE/edit?pli=1
+// https://docs.9oo91e.qjz9zk/a/9oo91e.qjz9zk/document/d/16Ij5OcVnR3s0MH4Z5XkhI9VTPoMJdaBn9rKreAmGOdE/edit?pli=1
 class ProxyResolverV8TracingFactory {
  public:
   ProxyResolverV8TracingFactory() {}

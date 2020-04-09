@@ -46,7 +46,7 @@ class SHA1EntropyProvider : public base::FieldTrial::EntropyProvider {
 // name along with all possible low entropy sources. It finds the index where
 // the actual low entropy source's hash would fall in the sorted list of all
 // those hashes, and uses that as the final value. For more info, see:
-// https://docs.google.com/document/d/1cPF5PruriWNP2Z5gSkq4MBTm0wSZqLyIJkUO9ekibeo
+// https://docs.9oo91e.qjz9zk/document/d/1cPF5PruriWNP2Z5gSkq4MBTm0wSZqLyIJkUO9ekibeo
 class NormalizedMurmurHashEntropyProvider
     : public base::FieldTrial::EntropyProvider {
  public:

@@ -197,7 +197,7 @@ TEST_F(BrowsingHistoryHandlerTest, ObservingWebHistoryDeletions) {
     args.Append("remove-visits-callback-id");
     base::Value to_remove(base::Value::Type::LIST);
     base::Value visit(base::Value::Type::DICTIONARY);
-    visit.SetStringKey("url", "https://www.google.com");
+    visit.SetStringKey("url", "https://www.9oo91e.qjz9zk");
     base::Value timestamps(base::Value::Type::LIST);
     timestamps.Append(12345678.0);
     visit.SetKey("timestamps", std::move(timestamps));

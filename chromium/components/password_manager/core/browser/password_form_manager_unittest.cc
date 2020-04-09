@@ -272,10 +272,10 @@ class PasswordFormManagerTest : public testing::Test,
                                 public testing::WithParamInterface<bool> {
  public:
   PasswordFormManagerTest() : task_runner_(new TestMockTimeTaskRunner) {
-    GURL origin = GURL("https://accounts.google.com/a/ServiceLoginAuth");
-    GURL action = GURL("https://accounts.google.com/a/ServiceLogin");
-    GURL psl_origin = GURL("https://myaccounts.google.com/a/ServiceLoginAuth");
-    GURL psl_action = GURL("https://myaccounts.google.com/a/ServiceLogin");
+    GURL origin = GURL("https://accounts.9oo91e.qjz9zk/a/ServiceLoginAuth");
+    GURL action = GURL("https://accounts.9oo91e.qjz9zk/a/ServiceLogin");
+    GURL psl_origin = GURL("https://myaccounts.9oo91e.qjz9zk/a/ServiceLoginAuth");
+    GURL psl_action = GURL("https://myaccounts.9oo91e.qjz9zk/a/ServiceLogin");
 
     observed_form_.url = origin;
     observed_form_.action = action;
@@ -342,9 +342,9 @@ class PasswordFormManagerTest : public testing::Test,
 
     saved_match_.origin = origin;
     saved_match_.action = action;
-    saved_match_.signon_realm = "https://accounts.google.com/";
+    saved_match_.signon_realm = "https://accounts.9oo91e.qjz9zk/";
     saved_match_.preferred = true;
-    saved_match_.username_value = ASCIIToUTF16("test@gmail.com");
+    saved_match_.username_value = ASCIIToUTF16("test@9ma1l.qjz9zk");
     saved_match_.username_element = ASCIIToUTF16("field1");
     saved_match_.password_value = ASCIIToUTF16("test1");
     saved_match_.password_element = ASCIIToUTF16("field2");
@@ -354,7 +354,7 @@ class PasswordFormManagerTest : public testing::Test,
     psl_saved_match_ = saved_match_;
     psl_saved_match_.origin = psl_origin;
     psl_saved_match_.action = psl_action;
-    psl_saved_match_.signon_realm = "https://myaccounts.google.com/";
+    psl_saved_match_.signon_realm = "https://myaccounts.9oo91e.qjz9zk/";
     psl_saved_match_.is_public_suffix_match = true;
 
     parsed_observed_form_ = saved_match_;
@@ -773,8 +773,8 @@ TEST_P(PasswordFormManagerTest, CreatePendingCredentialsPSLMatchSaved) {
   TestMockTimeTaskRunner::ScopedContext scoped_context(task_runner_.get());
   PasswordForm expected = saved_match_;
 
-  saved_match_.origin = GURL("https://m.accounts.google.com/auth");
-  saved_match_.signon_realm = "https://m.accounts.google.com/";
+  saved_match_.origin = GURL("https://m.accounts.9oo91e.qjz9zk/auth");
+  saved_match_.signon_realm = "https://m.accounts.9oo91e.qjz9zk/";
   saved_match_.is_public_suffix_match = true;
 
   SetNonFederatedAndNotifyFetchCompleted({&saved_match_});

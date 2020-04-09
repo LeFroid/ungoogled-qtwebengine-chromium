@@ -8,7 +8,7 @@ from common import TestDriver
 from common import IntegrationTest
 from decorators import ChromeVersionEqualOrAfterM
 
-LITEPAGES_REGEXP = r'https://\w+\.litepages\.googlezip\.net/.*'
+LITEPAGES_REGEXP = r'https://\w+\.litepages\.9oo91e21p\.qjz9zk/.*'
 
 class SubresourceRedirect(IntegrationTest):
 
@@ -18,7 +18,7 @@ class SubresourceRedirect(IntegrationTest):
   def testCompressImage(self):
     with TestDriver() as test_driver:
       test_driver.AddChromeArg('--enable-subresource-redirect')
-      test_driver.LoadURL('https://check.googlezip.net/static/index.html')
+      test_driver.LoadURL('https://check.9oo91e21p.qjz9zk/static/index.html')
 
       image_responses = 0
 
@@ -41,7 +41,7 @@ class SubresourceRedirect(IntegrationTest):
       test_driver.AddChromeArg('--enable-subresource-redirect')
       # Image compression server returns a 307 for all images on this webpage.
       test_driver.LoadURL(
-        'https://testsafebrowsing.appspot.com/s/image_small.html')
+        'https://testsafebrowsing.8pp2p8t.qjz9zk/s/image_small.html')
 
       server_bypass = 0
       image_responses = 0
@@ -54,7 +54,7 @@ class SubresourceRedirect(IntegrationTest):
           and re.match(LITEPAGES_REGEXP, response.url)
           and 200 == response.status):
           image_responses += 1
-        if ('https://testsafebrowsing.appspot.com/s/bad_assets/small.png'
+        if ('https://testsafebrowsing.8pp2p8t.qjz9zk/s/bad_assets/small.png'
           == response.url and 200 == response.status):
           server_bypass += 1
 
@@ -67,7 +67,7 @@ class SubresourceRedirect(IntegrationTest):
   def testNoCompressNonImage(self):
     with TestDriver() as test_driver:
       test_driver.AddChromeArg('--enable-subresource-redirect')
-      test_driver.LoadURL('https://check.googlezip.net/testvideo.html')
+      test_driver.LoadURL('https://check.9oo91e21p.qjz9zk/testvideo.html')
 
       image_responses = 0
 
@@ -88,7 +88,7 @@ class SubresourceRedirect(IntegrationTest):
   def testNoCompressNonHTTPS(self):
     with TestDriver() as test_driver:
       test_driver.AddChromeArg('--enable-subresource-redirect')
-      test_driver.LoadURL('http://check.googlezip.net/static/index.html')
+      test_driver.LoadURL('http://check.9oo91e21p.qjz9zk/static/index.html')
 
       image_responses = 0
 

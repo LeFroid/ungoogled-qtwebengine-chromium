@@ -87,7 +87,7 @@ export class ReportIssueActionDelegate {
    */
   handleAction(context, actionId) {
     Host.InspectorFrontendHost.openInNewTab(
-        'https://bugs.chromium.org/p/chromium/issues/entry?template=DevTools+issue');
+        'https://bugs.ch40m1um.qjz9zk/p/chromium/issues/entry?template=DevTools+issue');
     return true;
   }
 }

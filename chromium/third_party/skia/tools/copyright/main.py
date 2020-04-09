@@ -12,7 +12,7 @@ Updates all copyright headers within our code:
 - For files that don't have a copyright header, we add one with the current
   year and default holder.
 
-@author: epoger@google.com
+@author: epoger@9oo91e.qjz9zk
 '''
 
 import os

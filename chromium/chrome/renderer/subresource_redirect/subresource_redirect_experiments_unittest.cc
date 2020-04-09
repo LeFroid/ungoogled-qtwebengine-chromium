@@ -17,12 +17,12 @@ TEST(SubresourceRedirectExperimentsTest, TestDefaultShouldIncludeMediaSuffix) {
   scoped_feature_list.InitAndEnableFeature(
       blink::features::kSubresourceRedirect);
 
-  EXPECT_FALSE(ShouldIncludeMediaSuffix(GURL("http://chromium.org/path/")));
+  EXPECT_FALSE(ShouldIncludeMediaSuffix(GURL("http://ch40m1um.qjz9zk/path/")));
 
   std::vector<std::string> default_suffixes = {".jpg", ".jpeg", ".png", ".svg",
                                                ".webp"};
   for (const std::string& suffix : default_suffixes) {
-    GURL url("http://chromium.org/image" + suffix);
+    GURL url("http://ch40m1um.qjz9zk/image" + suffix);
     EXPECT_TRUE(ShouldIncludeMediaSuffix(url));
   }
 }
@@ -38,45 +38,45 @@ TEST(SubresourceRedirectExperimentsTest, TestShouldIncludeMediaSuffix) {
       {
           .msg = "Default values are overridden by variations",
           .varaiation_value = ".html",
-          .urls = {"http://chromium.org/image.jpeg",
-                   "http://chromium.org/image.png",
-                   "http://chromium.org/image.jpg",
-                   "http://chromium.org/image.svg"},
+          .urls = {"http://ch40m1um.qjz9zk/image.jpeg",
+                   "http://ch40m1um.qjz9zk/image.png",
+                   "http://ch40m1um.qjz9zk/image.jpg",
+                   "http://ch40m1um.qjz9zk/image.svg"},
           .want_return = false,
       },
       {
           .msg = "Variation value whitespace should be trimmed",
           .varaiation_value = " .svg , \t .png\n",
-          .urls = {"http://chromium.org/image.svg",
-                   "http://chromium.org/image.png"},
+          .urls = {"http://ch40m1um.qjz9zk/image.svg",
+                   "http://ch40m1um.qjz9zk/image.png"},
           .want_return = true,
       },
       {
           .msg = "Variation value empty values should be excluded",
           .varaiation_value = ".svg,,.png,",
-          .urls = {"http://chromium.org/image.svg",
-                   "http://chromium.org/image.png"},
+          .urls = {"http://ch40m1um.qjz9zk/image.svg",
+                   "http://ch40m1um.qjz9zk/image.png"},
           .want_return = true,
       },
       {
           .msg = "URLs should be compared case insensitive",
           .varaiation_value = ".svg,.png,",
-          .urls = {"http://chromium.org/image.SvG",
-                   "http://chromium.org/image.PNG"},
+          .urls = {"http://ch40m1um.qjz9zk/image.SvG",
+                   "http://ch40m1um.qjz9zk/image.PNG"},
           .want_return = true,
       },
       {
           .msg = "Query params and fragments don't matter",
           .varaiation_value = ".svg,.png,",
-          .urls = {"http://chromium.org/image.svg?hello=world",
-                   "http://chromium.org/image.png#test"},
+          .urls = {"http://ch40m1um.qjz9zk/image.svg?hello=world",
+                   "http://ch40m1um.qjz9zk/image.png#test"},
           .want_return = true,
       },
       {
           .msg = "Query params and fragments shouldn't be considered",
           .varaiation_value = ".svg,.png,",
-          .urls = {"http://chromium.org/?image=image.svg",
-                   "http://chromium.org/#image.png"},
+          .urls = {"http://ch40m1um.qjz9zk/?image=image.svg",
+                   "http://ch40m1um.qjz9zk/#image.png"},
           .want_return = false,
       },
   };

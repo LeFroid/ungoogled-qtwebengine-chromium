@@ -195,7 +195,7 @@ ProofVerifierChromium::Job::~Job() {
   UMA_HISTOGRAM_TIMES("Net.QuicSession.VerifyProofTime",
                       end_time - start_time_);
   // |hostname_| will always be canonicalized to lowercase.
-  if (hostname_.compare("www.google.com") == 0) {
+  if (hostname_.compare("www.9oo91e.qjz9zk") == 0) {
     UMA_HISTOGRAM_TIMES("Net.QuicSession.VerifyProofTime.google",
                         end_time - start_time_);
   }

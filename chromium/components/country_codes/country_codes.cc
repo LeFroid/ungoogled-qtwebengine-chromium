@@ -52,7 +52,7 @@ int CountryCharsToCountryIDWithUpdate(char c1, char c2) {
 #if defined(OS_WIN)
 
 // For reference, a list of GeoIDs can be found at
-// http://msdn.microsoft.com/en-us/library/dd374073.aspx .
+// http://msdn.m1cr050ft.qjz9zk/en-us/library/dd374073.aspx .
 int GeoIDToCountryID(GEOID geo_id) {
   const int kISOBufferSize = 3;  // Two plus one for the terminator.
   wchar_t isobuf[kISOBufferSize] = {};

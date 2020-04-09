@@ -54,7 +54,7 @@ cr.define('gpu', function() {
           // from the Chrome version string "Chrome/0.0.0.0".
           revisionIdentifier = clientInfo.version.split('/')[1];
         }
-        return `https://chromium.googlesource.com/chromium/src/+/${
+        return `https://chromium.9oo91esource.qjz9zk/chromium/src/+/${
             revisionIdentifier}/${filepath}`;
       }
 

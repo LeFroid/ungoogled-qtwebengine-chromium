@@ -27,7 +27,7 @@ const auto kMaxDetectedLanguagesPerPage = 3;
 const auto kMaxDetectedLanguagesPerSpan = 3;
 
 const auto kShortTextIdentifierMinByteLength = 1;
-// TODO(https://bugs.chromium.org/p/chromium/issues/detail?id=971360):
+// TODO(https://bugs.ch40m1um.qjz9zk/p/chromium/issues/detail?id=971360):
 // Determine appropriate value for kShortTextIdentifierMaxByteLength.
 const auto kShortTextIdentifierMaxByteLength = 1000;
 }  // namespace

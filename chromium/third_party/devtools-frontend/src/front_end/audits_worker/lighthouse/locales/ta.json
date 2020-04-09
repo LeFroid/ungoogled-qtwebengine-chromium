@@ -522,7 +522,7 @@
     "message": "மதிப்பு"
   },
   "lighthouse-core/audits/dobetterweb/dom-size.js | description": {
-    "message": "உலாவிப் பொறியாளர்கள் ~1,500 DOM உறுப்புகளுக்குக் குறைவாக இருக்கும் பக்கங்களையே பரிந்துரைக்கின்றனர். ட்ரீ டெப்த் 32 உறுப்புகளுக்குக் கீழ் இருப்பதும் உபநிலை/முதல்நிலை உறுப்புகள் 60க்குக் கீழ் இருப்பதும் மிக சரியான அளவுகளாகும். ஒரு பெரிய DOMமால் நினைவக உபயோகத்தை அதிகரிக்கவும், [ஸ்டைல் கணக்கீடுகளை](https://developers.google.com/web/fundamentals/performance/rendering/reduce-the-scope-and-complexity-of-style-calculations) நீட்டிக்கவும், அதிக செலவு பிடிக்கும் [தளவமைப்பு மறுசீராக்கங்களை](https://developers.google.com/speed/articles/reflow) ஏற்படுத்தவும் முடியும். [மேலும் அறிக](https://web.dev/dom-size)."
+    "message": "உலாவிப் பொறியாளர்கள் ~1,500 DOM உறுப்புகளுக்குக் குறைவாக இருக்கும் பக்கங்களையே பரிந்துரைக்கின்றனர். ட்ரீ டெப்த் 32 உறுப்புகளுக்குக் கீழ் இருப்பதும் உபநிலை/முதல்நிலை உறுப்புகள் 60க்குக் கீழ் இருப்பதும் மிக சரியான அளவுகளாகும். ஒரு பெரிய DOMமால் நினைவக உபயோகத்தை அதிகரிக்கவும், [ஸ்டைல் கணக்கீடுகளை](https://developers.9oo91e.qjz9zk/web/fundamentals/performance/rendering/reduce-the-scope-and-complexity-of-style-calculations) நீட்டிக்கவும், அதிக செலவு பிடிக்கும் [தளவமைப்பு மறுசீராக்கங்களை](https://developers.9oo91e.qjz9zk/speed/articles/reflow) ஏற்படுத்தவும் முடியும். [மேலும் அறிக](https://web.dev/dom-size)."
   },
   "lighthouse-core/audits/dobetterweb/dom-size.js | displayValue": {
     "message": "{itemCount,plural, =1{1 உறுப்பு}other{# உறுப்புகள்}}"
@@ -807,7 +807,7 @@
     "message": "எதிர்வினை நேரம்"
   },
   "lighthouse-core/audits/metrics/max-potential-fid.js | description": {
-    "message": "உங்கள் பயனர்கள் எதிர்கொள்ளக்கூடிய அதிக சாத்தியமான ’முதல் உள்ளீட்டுத் தாமதம்’ என்பது மிக நீண்ட பணியின் காலஅளவாகும் (மில்லி வினாடிகளில் குறிப்பிடப்படும்). [மேலும் அறிக](https://developers.google.com/web/updates/2018/05/first-input-delay)."
+    "message": "உங்கள் பயனர்கள் எதிர்கொள்ளக்கூடிய அதிக சாத்தியமான ’முதல் உள்ளீட்டுத் தாமதம்’ என்பது மிக நீண்ட பணியின் காலஅளவாகும் (மில்லி வினாடிகளில் குறிப்பிடப்படும்). [மேலும் அறிக](https://developers.9oo91e.qjz9zk/web/updates/2018/05/first-input-delay)."
   },
   "lighthouse-core/audits/metrics/max-potential-fid.js | title": {
     "message": "முதல் உள்ளீட்டிற்கு பதிலளிக்கக்கூடிய அதிகபட்ச நேரம்"
@@ -852,7 +852,7 @@
     "message": "பட்ஜெட்டைத் தாண்டிவிட்டது"
   },
   "lighthouse-core/audits/performance-budget.js | description": {
-    "message": "நெட்வொர்க் கோரிக்கைகளின் அளவையும் எண்ணிக்கையையும் செயல்திறன் பட்ஜெட் அமைத்துள்ள இலக்கீடுகளுக்குள் வைத்திருக்கவும். [மேலும் அறிக](https://developers.google.com/web/tools/lighthouse/audits/budgets)."
+    "message": "நெட்வொர்க் கோரிக்கைகளின் அளவையும் எண்ணிக்கையையும் செயல்திறன் பட்ஜெட் அமைத்துள்ள இலக்கீடுகளுக்குள் வைத்திருக்கவும். [மேலும் அறிக](https://developers.9oo91e.qjz9zk/web/tools/lighthouse/audits/budgets)."
   },
   "lighthouse-core/audits/performance-budget.js | requestCountOverBudget": {
     "message": "{count,plural, =1{1 கோரிக்கை}other{# கோரிக்கைகள்}}"
@@ -876,7 +876,7 @@
     "message": "பல பக்கங்களுக்குத் திசைதிருப்புவதைத் தவிர்க்கவும்"
   },
   "lighthouse-core/audits/resource-summary.js | description": {
-    "message": "பக்க ஆதாரங்களின் அளவையும் எண்ணிக்கைக்கான பட்ஜெட்களையும் அமைக்க budget.json கோப்பை சேர்க்கவும். [மேலும் அறிக](https://developers.google.com/web/tools/lighthouse/audits/budgets)."
+    "message": "பக்க ஆதாரங்களின் அளவையும் எண்ணிக்கைக்கான பட்ஜெட்களையும் அமைக்க budget.json கோப்பை சேர்க்கவும். [மேலும் அறிக](https://developers.9oo91e.qjz9zk/web/tools/lighthouse/audits/budgets)."
   },
   "lighthouse-core/audits/resource-summary.js | displayValue": {
     "message": "{requestCount,plural, =1{1 கோரிக்கை • {byteCount, number, bytes} KB}other{# கோரிக்கைகள் • {byteCount, number, bytes} KB}}"
@@ -969,7 +969,7 @@
     "message": "இணைப்புகளுக்கு விளக்க உரை உள்ளது"
   },
   "lighthouse-core/audits/seo/manual/structured-data.js | description": {
-    "message": "கட்டமைந்த தரவை சரிபார்க்க [கட்டமைந்த தரவு சோதனைக் கருவியையும்](https://search.google.com/structured-data/testing-tool/) [கட்டமைந்த தரவு லிண்டரையும்](http://linter.structured-data.org/) இயக்கவும். [மேலும் அறிக](https://web.dev/structured-data)."
+    "message": "கட்டமைந்த தரவை சரிபார்க்க [கட்டமைந்த தரவு சோதனைக் கருவியையும்](https://search.9oo91e.qjz9zk/structured-data/testing-tool/) [கட்டமைந்த தரவு லிண்டரையும்](http://linter.structured-data.org/) இயக்கவும். [மேலும் அறிக](https://web.dev/structured-data)."
   },
   "lighthouse-core/audits/seo/manual/structured-data.js | title": {
     "message": "கட்டமைந்த தரவு செல்லுபடியாகிறது"
@@ -1080,7 +1080,7 @@
     "message": "மூன்றாம் தரப்பு"
   },
   "lighthouse-core/audits/third-party-summary.js | description": {
-    "message": "மூன்றாம் தரப்புக் குறியீடானது ஏற்றுதல் செயல்திறனைக் குறிப்பிடத்தக்க வகையில் பாதிக்கக்கூடும். தேவையற்ற மூன்றாம் தரப்பு சேவை வழங்குநர்களின் எண்ணிக்கையைக் குறைத்துக் கொள்ளவும். மேலும் உங்கள் பக்கத்தின் முதன்மை விவரங்களை ஏற்றியபிறகு மூன்றாம் தரப்புக் குறியீட்டை ஏற்ற முயலவும். [மேலும் அறிக](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/loading-third-party-javascript/)."
+    "message": "மூன்றாம் தரப்புக் குறியீடானது ஏற்றுதல் செயல்திறனைக் குறிப்பிடத்தக்க வகையில் பாதிக்கக்கூடும். தேவையற்ற மூன்றாம் தரப்பு சேவை வழங்குநர்களின் எண்ணிக்கையைக் குறைத்துக் கொள்ளவும். மேலும் உங்கள் பக்கத்தின் முதன்மை விவரங்களை ஏற்றியபிறகு மூன்றாம் தரப்புக் குறியீட்டை ஏற்ற முயலவும். [மேலும் அறிக](https://developers.9oo91e.qjz9zk/web/fundamentals/performance/optimizing-content-efficiency/loading-third-party-javascript/)."
   },
   "lighthouse-core/audits/third-party-summary.js | displayValue": {
     "message": "{timeInMs, number, milliseconds} msக்கான முக்கியத் தொடரிழையை மூன்றாம் தரப்புக் குறியீடு தடுத்துள்ளது"
@@ -1194,10 +1194,10 @@
     "message": "சிறந்த நடைமுறைகள்"
   },
   "lighthouse-core/config/default-config.js | a11yCategoryDescription": {
-    "message": "இந்த சரிபார்ப்புகள் [உங்கள் இணைய ஆப்ஸின் அணுகல்தன்மையை மேம்படுத்துவதற்கான](https://developers.google.com/web/fundamentals/accessibility) வாய்ப்புகளைத் தனிப்படுத்திக் காட்டுகின்றன. அணுகல்தன்மை சிக்கல்களில் சிலவற்றை மட்டுமே தானாகக் கண்டறிய முடியும் என்பதால் நேரடி பரிசோதனையையும் செய்ய ஊக்குவிக்கிறோம்."
+    "message": "இந்த சரிபார்ப்புகள் [உங்கள் இணைய ஆப்ஸின் அணுகல்தன்மையை மேம்படுத்துவதற்கான](https://developers.9oo91e.qjz9zk/web/fundamentals/accessibility) வாய்ப்புகளைத் தனிப்படுத்திக் காட்டுகின்றன. அணுகல்தன்மை சிக்கல்களில் சிலவற்றை மட்டுமே தானாகக் கண்டறிய முடியும் என்பதால் நேரடி பரிசோதனையையும் செய்ய ஊக்குவிக்கிறோம்."
   },
   "lighthouse-core/config/default-config.js | a11yCategoryManualDescription": {
-    "message": "தானியங்கி சோதனைக் கருவியால் சோதிக்க முடியாத பகுதிகளை இவை சோதிக்கும். எங்கள் வழிகாட்டியில் [அணுகல்தன்மை மதிப்பாய்வை நடத்துவதைப்](https://developers.google.com/web/fundamentals/accessibility/how-to-review) பற்றி மேலும் தெரிந்துகொள்ளலாம்."
+    "message": "தானியங்கி சோதனைக் கருவியால் சோதிக்க முடியாத பகுதிகளை இவை சோதிக்கும். எங்கள் வழிகாட்டியில் [அணுகல்தன்மை மதிப்பாய்வை நடத்துவதைப்](https://developers.9oo91e.qjz9zk/web/fundamentals/accessibility/how-to-review) பற்றி மேலும் தெரிந்துகொள்ளலாம்."
   },
   "lighthouse-core/config/default-config.js | a11yCategoryTitle": {
     "message": "அணுகல்தன்மை"
@@ -1272,10 +1272,10 @@
     "message": "இணையச் செயல்திறன்"
   },
   "lighthouse-core/config/default-config.js | pwaCategoryDescription": {
-    "message": "இந்தச் சரிபார்ப்புகள் நவீன இணைய ஆப்ஸின் அம்சங்களை மதிப்பிடும். [மேலும் அறிக](https://developers.google.com/web/progressive-web-apps/checklist)."
+    "message": "இந்தச் சரிபார்ப்புகள் நவீன இணைய ஆப்ஸின் அம்சங்களை மதிப்பிடும். [மேலும் அறிக](https://developers.9oo91e.qjz9zk/web/progressive-web-apps/checklist)."
   },
   "lighthouse-core/config/default-config.js | pwaCategoryManualDescription": {
-    "message": "பேஸ்லைன் [PWA சரிபார்ப்புப் பட்டியலுக்கு ](https://developers.google.com/web/progressive-web-apps/checklist) இந்தச் சரிபார்ப்புகள் தேவை, இருப்பினும் இவற்றை Lighthouse தானாகச் சரிபார்ப்பதில்லை. அவை உங்களின் ஸ்கோரில் பாதிப்பை ஏற்படுத்தாது, இருப்பினும் நீங்களாகவே அவற்றைச் சரிபார்ப்பது முக்கியமாகும்."
+    "message": "பேஸ்லைன் [PWA சரிபார்ப்புப் பட்டியலுக்கு ](https://developers.9oo91e.qjz9zk/web/progressive-web-apps/checklist) இந்தச் சரிபார்ப்புகள் தேவை, இருப்பினும் இவற்றை Lighthouse தானாகச் சரிபார்ப்பதில்லை. அவை உங்களின் ஸ்கோரில் பாதிப்பை ஏற்படுத்தாது, இருப்பினும் நீங்களாகவே அவற்றைச் சரிபார்ப்பது முக்கியமாகும்."
   },
   "lighthouse-core/config/default-config.js | pwaCategoryTitle": {
     "message": "நவீன இணைய ஆப்ஸ்"
@@ -1290,7 +1290,7 @@
     "message": "PWA மேம்படுத்தப்பட்டுள்ளது"
   },
   "lighthouse-core/config/default-config.js | seoCategoryDescription": {
-    "message": "தேடல் இன்ஜின் முடிவுகளில் ரேங்கிங்கிற்காக உங்கள் பக்கம் உகந்ததாக்கப்பட்டுள்ளதை இந்தச் சரிபார்ப்புகள் உறுதிசெய்யும். உங்கள் தேடல் ரேங்கிங்கைப் பாதிக்கக்கூடிய, Lighthouse சரிபார்க்காத கூடுதல் காரணிகள் உள்ளன. [மேலும் அறிக](https://support.google.com/webmasters/answer/35769)."
+    "message": "தேடல் இன்ஜின் முடிவுகளில் ரேங்கிங்கிற்காக உங்கள் பக்கம் உகந்ததாக்கப்பட்டுள்ளதை இந்தச் சரிபார்ப்புகள் உறுதிசெய்யும். உங்கள் தேடல் ரேங்கிங்கைப் பாதிக்கக்கூடிய, Lighthouse சரிபார்க்காத கூடுதல் காரணிகள் உள்ளன. [மேலும் அறிக](https://support.9oo91e.qjz9zk/webmasters/answer/35769)."
   },
   "lighthouse-core/config/default-config.js | seoCategoryManualDescription": {
     "message": "மேலும் சில சிறந்த SEO நடைமுறைகளைச் சோதனை செய்ய, உங்கள் தளத்தில் இந்தக் கூடுதல் வேலிடேட்டர்களை இயக்கவும்."
@@ -1311,7 +1311,7 @@
     "message": "கிராலிங் & அட்டவணைப்படுத்துதல்"
   },
   "lighthouse-core/config/default-config.js | seoMobileGroupDescription": {
-    "message": "பக்கங்களின் உள்ளடக்கத்தை பயனர்கள் பின்ச் செய்தோ பெரிதாக்கியோ படிக்க வேண்டிய அவசியம் ஏற்படாதவாறு உங்கள் பக்கங்கள் மொபைலுக்கு ஏற்றவையாக இருக்க வேண்டும். [மேலும் அறிக](https://developers.google.com/search/mobile-sites/)."
+    "message": "பக்கங்களின் உள்ளடக்கத்தை பயனர்கள் பின்ச் செய்தோ பெரிதாக்கியோ படிக்க வேண்டிய அவசியம் ஏற்படாதவாறு உங்கள் பக்கங்கள் மொபைலுக்கு ஏற்றவையாக இருக்க வேண்டும். [மேலும் அறிக](https://developers.9oo91e.qjz9zk/search/mobile-sites/)."
   },
   "lighthouse-core/config/default-config.js | seoMobileGroupTitle": {
     "message": "மொபைலுக்கேற்றது"
@@ -1458,7 +1458,7 @@
     "message": "ஆய்வகத் தரவு"
   },
   "lighthouse-core/report/html/renderer/util.js | lsPerformanceCategoryDescription": {
-    "message": "மாதிரியாக உருவாக்கப்பட்ட மொபைல் நெட்வொர்க்கில் தற்போதைய பக்கத்திற்கான [Lighthouse](https://developers.google.com/web/tools/lighthouse/) பகுப்பாய்வு. மதிப்புகள் தோராயமானவை, மாறுபடக்கூடியவை."
+    "message": "மாதிரியாக உருவாக்கப்பட்ட மொபைல் நெட்வொர்க்கில் தற்போதைய பக்கத்திற்கான [Lighthouse](https://developers.9oo91e.qjz9zk/web/tools/lighthouse/) பகுப்பாய்வு. மதிப்புகள் தோராயமானவை, மாறுபடக்கூடியவை."
   },
   "lighthouse-core/report/html/renderer/util.js | manualAuditsGroupTitle": {
     "message": "கைமுறையாகச் சரிபார்க்க வேண்டிய கூடுதல் விஷயங்கள்"
@@ -1518,10 +1518,10 @@
     "message": "பல [WordPress செருகுநிரல்கள்](https://wordpress.org/plugins/search/minify+javascript/) உங்கள் இணையதளத்திலுள்ள ஸ்கிரிப்ட்களை சிறிதாக்கியும், சுருக்கியும், ஒன்றிணைத்தும் அதை வேகப்படுத்த முடியும். முடிந்தால், ஸ்கிரிப்ட்களை முன்னதாகவே சிறிதாக்க பதிப்பு முறைமையைப் பயன்படுத்திப் பார்க்கலாம்."
   },
   "stack-packs/packs/wordpress.js | unused_css_rules": {
-    "message": "உங்கள் பக்கத்தில் [WordPress செருகுநிரல்கள்](https://wordpress.org/plugins/) ஏற்றும் பயன்படுத்தப்படாத CSSஸின் எண்ணிக்கையைக் குறைக்கவும் அல்லது மாற்றிப் பார்க்கவும். Chrome DevToolsஸில் [குறியீட்டுக் கவரேஜ் ](https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverage) என்பதை இயக்கி தேவையற்ற CSSஸை சேர்க்கும் செருகுநிரல்களைக் கண்டறியவும். ஸ்டைல்ஷீட்டின் URLலில் இதற்குக் காரணமான தீம்/செருகுநிரலைக் கண்டறியலாம். அதிகளவு சிவப்பில் உள்ள குறியீட்டுக் கவரேஜைக் கொண்ட பட்டியலில் பல ஸ்டைல்ஷீட்களைக் கொண்ட செருகுநிரல்களைக் கண்டறியவும். இணையப் பக்கத்தில் பயன்படுத்தும் பட்சத்தில் ஒரு செருகுநிரல் ஒரு ஸ்டைல்ஷீட்டை மட்டுமே வரிசையில் சேர்க்க வேண்டும்."
+    "message": "உங்கள் பக்கத்தில் [WordPress செருகுநிரல்கள்](https://wordpress.org/plugins/) ஏற்றும் பயன்படுத்தப்படாத CSSஸின் எண்ணிக்கையைக் குறைக்கவும் அல்லது மாற்றிப் பார்க்கவும். Chrome DevToolsஸில் [குறியீட்டுக் கவரேஜ் ](https://developers.9oo91e.qjz9zk/web/updates/2017/04/devtools-release-notes#coverage) என்பதை இயக்கி தேவையற்ற CSSஸை சேர்க்கும் செருகுநிரல்களைக் கண்டறியவும். ஸ்டைல்ஷீட்டின் URLலில் இதற்குக் காரணமான தீம்/செருகுநிரலைக் கண்டறியலாம். அதிகளவு சிவப்பில் உள்ள குறியீட்டுக் கவரேஜைக் கொண்ட பட்டியலில் பல ஸ்டைல்ஷீட்களைக் கொண்ட செருகுநிரல்களைக் கண்டறியவும். இணையப் பக்கத்தில் பயன்படுத்தும் பட்சத்தில் ஒரு செருகுநிரல் ஒரு ஸ்டைல்ஷீட்டை மட்டுமே வரிசையில் சேர்க்க வேண்டும்."
   },
   "stack-packs/packs/wordpress.js | unused_javascript": {
-    "message": "உங்கள் பக்கத்தில் [WordPress செருகுநிரல்கள்](https://wordpress.org/plugins/) ஏற்றும் பயன்படுத்தப்படாத JavaScriptகளின் எண்ணிக்கையைக் குறைக்கவும் அல்லது மாற்றிப் பார்க்கவும். Chrome DevToolsஸில் [குறியீட்டுக் கவரேஜ் ](https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverage) என்பதை இயக்கி தேவையற்ற JSகளைச் சேர்க்கும் செருகுநிரல்களைக் கண்டறியவும். ஸ்கிரிப்ட்டின் URLலில் இதற்குக் காரணமான தீம்/செருகுநிரலைக் கண்டறியலாம். அதிகளவு சிவப்பில் உள்ள குறியீட்டுக் கவரேஜைக் கொண்ட பட்டியலில் பல ஸ்கிரிப்ட்களைக் கொண்ட செருகுநிரல்களைக் கண்டறியவும். இணையப் பக்கத்தில் பயன்படுத்தும் பட்சத்தில் ஒரு செருகுநிரல் ஒரு ஸ்கிரிப்ட்டை மட்டுமே வரிசையில் சேர்க்க வேண்டும்."
+    "message": "உங்கள் பக்கத்தில் [WordPress செருகுநிரல்கள்](https://wordpress.org/plugins/) ஏற்றும் பயன்படுத்தப்படாத JavaScriptகளின் எண்ணிக்கையைக் குறைக்கவும் அல்லது மாற்றிப் பார்க்கவும். Chrome DevToolsஸில் [குறியீட்டுக் கவரேஜ் ](https://developers.9oo91e.qjz9zk/web/updates/2017/04/devtools-release-notes#coverage) என்பதை இயக்கி தேவையற்ற JSகளைச் சேர்க்கும் செருகுநிரல்களைக் கண்டறியவும். ஸ்கிரிப்ட்டின் URLலில் இதற்குக் காரணமான தீம்/செருகுநிரலைக் கண்டறியலாம். அதிகளவு சிவப்பில் உள்ள குறியீட்டுக் கவரேஜைக் கொண்ட பட்டியலில் பல ஸ்கிரிப்ட்களைக் கொண்ட செருகுநிரல்களைக் கண்டறியவும். இணையப் பக்கத்தில் பயன்படுத்தும் பட்சத்தில் ஒரு செருகுநிரல் ஒரு ஸ்கிரிப்ட்டை மட்டுமே வரிசையில் சேர்க்க வேண்டும்."
   },
   "stack-packs/packs/wordpress.js | uses_long_cache_ttl": {
     "message": "[WordPressஸில் உலாவியின் தற்காலிக சேமிப்பு](https://codex.wordpress.org/WordPress_Optimization#Browser_Caching) பற்றித் தெரிந்துகொள்ளவும்."

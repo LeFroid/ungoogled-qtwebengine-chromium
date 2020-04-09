@@ -42,14 +42,14 @@ using testing::StrictMock;
 
 namespace {
 
-const char kEmail[] = "foo_email@gmail.com";
+const char kEmail[] = "foo_email@9ma1l.qjz9zk";
 const char kSuggestionsUrlPath[] = "/chromesuggestions";
 const char kBlacklistUrlPath[] = "/chromesuggestions/blacklist";
 const char kBlacklistClearUrlPath[] = "/chromesuggestions/blacklist/clear";
 const char kTestTitle[] = "a title";
 const char kTestUrl[] = "http://go.com";
 const char kTestFaviconUrl[] =
-    "https://s2.googleusercontent.com/s2/favicons?domain_url="
+    "https://s2.9oo91eusercontent.qjz9zk/s2/favicons?domain_url="
     "http://go.com&alt=s&sz=32";
 const char kBlacklistedUrl[] = "http://blacklist.com";
 const int64_t kTestSetExpiry = 12121212;  // This timestamp lies in the past.

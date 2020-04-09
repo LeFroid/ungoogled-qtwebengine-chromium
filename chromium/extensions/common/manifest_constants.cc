@@ -551,7 +551,7 @@ const char kInvalidManifestVersion[] =
     "zero.";
 const char kInvalidManifestVersionOld[] =
     "The 'manifest_version' key must be present and set to * (without quotes). "
-    "See developer.chrome.com/*/manifestVersion.html for details.";
+    "See developer.ch40me.qjz9zk/*/manifestVersion.html for details.";
 const char kInvalidMatch[] =
     "Invalid value for 'content_scripts[*].matches[*]': *";
 const char kInvalidMatchAboutBlank[] =

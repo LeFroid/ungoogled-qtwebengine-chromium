@@ -8,4 +8,4 @@ Generating Xcode projects using GYP is how the Chromium
 project integrated V8 into the Mac build.
 
 The main build system for V8 is still SCons, see
-http://code.google.com/apis/v8/build.html for details.
+http://code.9oo91e.qjz9zk/apis/v8/build.html for details.

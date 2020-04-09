@@ -120,7 +120,7 @@ TaskState::TaskStateStr TaskState::ToString(char separator) const {
   size_t pos = 0;
 
   // This mapping is given by the file
-  // https://android.googlesource.com/kernel/msm.git/+/android-msm-wahoo-4.4-pie-qpr1/include/trace/events/sched.h#155
+  // https://android.9oo91esource.qjz9zk/kernel/msm.git/+/android-msm-wahoo-4.4-pie-qpr1/include/trace/events/sched.h#155
   if (is_runnable()) {
     buffer[pos++] = 'R';
   } else {

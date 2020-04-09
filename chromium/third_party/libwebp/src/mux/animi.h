@@ -9,7 +9,7 @@
 //
 // Internal header for animation related functions.
 //
-// Author: Hui Su (huisu@google.com)
+// Author: Hui Su (huisu@9oo91e.qjz9zk)
 
 #ifndef WEBP_MUX_ANIMI_H_
 #define WEBP_MUX_ANIMI_H_

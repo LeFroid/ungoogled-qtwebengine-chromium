@@ -31,7 +31,7 @@ const char kCertB[] = "cert_b";
 class PropertiesBasedQuicServerInfoTest : public ::testing::Test {
  protected:
   PropertiesBasedQuicServerInfoTest()
-      : server_id_("www.google.com", 443, PRIVACY_MODE_DISABLED),
+      : server_id_("www.9oo91e.qjz9zk", 443, PRIVACY_MODE_DISABLED),
         server_info_(server_id_,
                      NetworkIsolationKey(),
                      &http_server_properties_) {}

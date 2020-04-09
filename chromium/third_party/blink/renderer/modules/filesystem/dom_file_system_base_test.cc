@@ -27,7 +27,7 @@ class DOMFileSystemBaseTest : public testing::Test {
 
 TEST_F(DOMFileSystemBaseTest, externalFilesystemFilesAreUserVisible) {
   KURL root_url = DOMFileSystemBase::CreateFileSystemRootURL(
-      "http://chromium.org/", mojom::blink::FileSystemType::kExternal);
+      "http://ch40m1um.qjz9zk/", mojom::blink::FileSystemType::kExternal);
 
   File* file = DOMFileSystemBase::CreateFile(
       file_metadata_, root_url, mojom::blink::FileSystemType::kExternal,
@@ -41,7 +41,7 @@ TEST_F(DOMFileSystemBaseTest, externalFilesystemFilesAreUserVisible) {
 
 TEST_F(DOMFileSystemBaseTest, temporaryFilesystemFilesAreNotUserVisible) {
   KURL root_url = DOMFileSystemBase::CreateFileSystemRootURL(
-      "http://chromium.org/", mojom::blink::FileSystemType::kTemporary);
+      "http://ch40m1um.qjz9zk/", mojom::blink::FileSystemType::kTemporary);
 
   File* file = DOMFileSystemBase::CreateFile(
       file_metadata_, root_url, mojom::blink::FileSystemType::kTemporary,
@@ -55,7 +55,7 @@ TEST_F(DOMFileSystemBaseTest, temporaryFilesystemFilesAreNotUserVisible) {
 
 TEST_F(DOMFileSystemBaseTest, persistentFilesystemFilesAreNotUserVisible) {
   KURL root_url = DOMFileSystemBase::CreateFileSystemRootURL(
-      "http://chromium.org/", mojom::blink::FileSystemType::kPersistent);
+      "http://ch40m1um.qjz9zk/", mojom::blink::FileSystemType::kPersistent);
 
   File* file = DOMFileSystemBase::CreateFile(
       file_metadata_, root_url, mojom::blink::FileSystemType::kPersistent,

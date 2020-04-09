@@ -62,7 +62,7 @@ public:
  uses a 32k in-memory cache already, so it only flushes occasionally and is well equipped for a
  steam like this.
 
- See: https://b.corp.google.com/issues/143074513
+ See: https://b.corp.9oo91e.qjz9zk/issues/143074513
 */
 class NanoFILEAppendAndCloseStream : public SkWStream {
 public:

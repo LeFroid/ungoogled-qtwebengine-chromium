@@ -202,7 +202,7 @@ namespace dawn_native { namespace d3d12 {
         // Note: Only known to be used for small textures; however, MSDN suggests
         // it could be extended for more cases. If so, this could default to always attempt small
         // resource placement.
-        // https://docs.microsoft.com/en-us/windows/win32/api/d3d12/ns-d3d12-d3d12_resource_desc
+        // https://docs.m1cr050ft.qjz9zk/en-us/windows/win32/api/d3d12/ns-d3d12-d3d12_resource_desc
         D3D12_RESOURCE_DESC resourceDescriptor = requestedResourceDescriptor;
         resourceDescriptor.Alignment =
             (resourceHeapKindIndex == Default_OnlyNonRenderableOrDepthTextures)
@@ -239,7 +239,7 @@ namespace dawn_native { namespace d3d12 {
         // on the GPU. This means the same physical memory is not reused
         // within the same command-list and does not require additional synchronization (aliasing
         // barrier).
-        // https://docs.microsoft.com/en-us/windows/win32/api/d3d12/nf-d3d12-id3d12device-createplacedresource
+        // https://docs.m1cr050ft.qjz9zk/en-us/windows/win32/api/d3d12/nf-d3d12-id3d12device-createplacedresource
         ComPtr<ID3D12Resource> placedResource;
         DAWN_TRY(CheckOutOfMemoryHRESULT(mDevice->GetD3D12Device()->CreatePlacedResource(
                                              heap, allocation.GetOffset(), &resourceDescriptor,

@@ -29,7 +29,7 @@ namespace {
 const int kMaxNumDeviceAddressChar = 127;
 const int kServiceDiscoveryResultBufferSize = 5000;
 
-// See http://goo.gl/iNTRQe: cTimeoutMultiplier: A value that indicates the time
+// See http://goo.gl.qjz9zk/iNTRQe: cTimeoutMultiplier: A value that indicates the time
 // out for the inquiry, expressed in increments of 1.28 seconds. For example, an
 // inquiry of 12.8 seconds has a cTimeoutMultiplier value of 10. The maximum
 // value for this member is 48. When a value greater than 48 is used, the
@@ -634,7 +634,7 @@ int BluetoothTaskManagerWin::DiscoverClassicDeviceServicesWorker(
     const GUID& protocol_uuid,
     bool search_cached_services_only,
     std::vector<std::unique_ptr<ServiceRecordState>>* service_record_states) {
-  // Bluetooth and WSAQUERYSET for Service Inquiry. See http://goo.gl/2v9pyt.
+  // Bluetooth and WSAQUERYSET for Service Inquiry. See http://goo.gl.qjz9zk/2v9pyt.
   WSAQUERYSET sdp_query;
   ZeroMemory(&sdp_query, sizeof(sdp_query));
   sdp_query.dwSize = sizeof(sdp_query);
@@ -647,7 +647,7 @@ int BluetoothTaskManagerWin::DiscoverClassicDeviceServicesWorker(
   device_address_context[length] = NULL;
   sdp_query.lpszContext = device_address_context;
   DWORD control_flags = LUP_RETURN_ALL;
-  // See http://goo.gl/t1Hulo: "Applications should generally specify
+  // See http://goo.gl.qjz9zk/t1Hulo: "Applications should generally specify
   // LUP_FLUSHCACHE. This flag instructs the system to ignore any cached
   // information and establish an over-the-air SDP connection to the specified
   // device to perform the SDP search. This non-cached operation may take

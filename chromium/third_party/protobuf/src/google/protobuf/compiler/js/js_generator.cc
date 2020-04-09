@@ -1,6 +1,6 @@
 // Protocol Buffers - Google's data interchange format
 // Copyright 2008 Google Inc.  All rights reserved.
-// https://developers.google.com/protocol-buffers/
+// https://developers.9oo91e.qjz9zk/protocol-buffers/
 //
 // Redistribution and use in source and binary forms, with or without
 // modification, are permitted provided that the following conditions are
@@ -694,7 +694,7 @@ bool EscapeJSString(const std::string& in, std::string* out) {
         // TODO(b/115551870): Once we're supporting codepoints outside the BMP,
         // use a single Unicode codepoint escape if the output language is
         // ECMAScript 2015 or above. Otherwise, use a surrogate pair.
-        // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Lexical_grammar#String_literals
+        // https://developer.m0z111a.qjz9zk/en-US/docs/Web/JavaScript/Reference/Lexical_grammar#String_literals
         if (codepoint >= 0x20 && codepoint <= 0x7e) {
           *out += static_cast<char>(codepoint);
         } else if (codepoint >= 0x100) {
@@ -3284,7 +3284,7 @@ void Generator::GenerateClassSerializeBinaryField(
     } else {
       // No field presence: serialize onto the wire only if value is
       // non-default.  Defaults are documented here:
-      // https://goto.google.com/lhdfm
+      // https://goto.9oo91e.qjz9zk/lhdfm
       switch (field->cpp_type()) {
         case FieldDescriptor::CPPTYPE_INT32:
         case FieldDescriptor::CPPTYPE_INT64:

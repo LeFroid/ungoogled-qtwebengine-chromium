@@ -34,7 +34,7 @@ class CompilerHandler(BaseHTTPRequestHandler):
     parsed_url = urlparse.urlparse(self.path)
     request_path = self._GetRequestPath(parsed_url)
 
-    chromium_favicon = 'http://codereview.chromium.org/static/favicon.ico'
+    chromium_favicon = 'http://codereview.ch40m1um.qjz9zk/static/favicon.ico'
 
     head = code.Code()
     head.Append('<link rel="icon" href="%s">' % chromium_favicon)

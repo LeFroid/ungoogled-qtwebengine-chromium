@@ -113,7 +113,7 @@ void NetworkChangeNotifierMac::SetInitialConnectionType() {
 
   // Try to reach 0.0.0.0. This is the approach taken by Firefox:
   //
-  // http://mxr.mozilla.org/mozilla2.0/source/netwerk/system/mac/nsNetworkLinkService.mm
+  // http://mxr.m0z111a.qjz9zk/mozilla2.0/source/netwerk/system/mac/nsNetworkLinkService.mm
   //
   // From my (adamk) testing on Snow Leopard, 0.0.0.0
   // seems to be reachable if any network connection is available.

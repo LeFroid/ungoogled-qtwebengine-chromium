@@ -522,7 +522,7 @@
     "message": "Hodnota"
   },
   "lighthouse-core/audits/dobetterweb/dom-size.js | description": {
-    "message": "Programátori prehliadača odporúčajú, aby stránky obsahovali menej ako ~1 500 prvkov DOM. Optimálna hodnota je hĺbka stromovej štruktúry menšia ako 32 prvkov a menej ako 60 podradených či nadradených prvkov. Veľký prvok DOM môže zvýšiť spotrebu pamäte, predĺžiť [výpočty štýlov](https://developers.google.com/web/fundamentals/performance/rendering/reduce-the-scope-and-complexity-of-style-calculations) a spôsobiť nákladné [preformátovania rozložení](https://developers.google.com/speed/articles/reflow). [Ďalšie informácie](https://web.dev/dom-size)"
+    "message": "Programátori prehliadača odporúčajú, aby stránky obsahovali menej ako ~1 500 prvkov DOM. Optimálna hodnota je hĺbka stromovej štruktúry menšia ako 32 prvkov a menej ako 60 podradených či nadradených prvkov. Veľký prvok DOM môže zvýšiť spotrebu pamäte, predĺžiť [výpočty štýlov](https://developers.9oo91e.qjz9zk/web/fundamentals/performance/rendering/reduce-the-scope-and-complexity-of-style-calculations) a spôsobiť nákladné [preformátovania rozložení](https://developers.9oo91e.qjz9zk/speed/articles/reflow). [Ďalšie informácie](https://web.dev/dom-size)"
   },
   "lighthouse-core/audits/dobetterweb/dom-size.js | displayValue": {
     "message": "{itemCount,plural, =1{1 prvok}few{# prvky}many{# elements}other{# prvkov}}"
@@ -807,7 +807,7 @@
     "message": "Čas do interaktívneho vykreslenia"
   },
   "lighthouse-core/audits/metrics/max-potential-fid.js | description": {
-    "message": "Maximálne potenciálne oneskorenie prvého vstupu, ktoré sa u vašich používateľov môže vyskytnúť, je trvanie najdlhšej úlohy (v milisekundách). [Ďalšie informácie](https://developers.google.com/web/updates/2018/05/first-input-delay)"
+    "message": "Maximálne potenciálne oneskorenie prvého vstupu, ktoré sa u vašich používateľov môže vyskytnúť, je trvanie najdlhšej úlohy (v milisekundách). [Ďalšie informácie](https://developers.9oo91e.qjz9zk/web/updates/2018/05/first-input-delay)"
   },
   "lighthouse-core/audits/metrics/max-potential-fid.js | title": {
     "message": "Max. potenc. oneskorenie prvého vstupu"
@@ -852,7 +852,7 @@
     "message": "Cez rozpočet"
   },
   "lighthouse-core/audits/performance-budget.js | description": {
-    "message": "Udržujte množstvo a veľkosť žiadostí siete pod cieľovými hodnotami stanovenými poskytnutým rozpočtom výkonnosti. [Ďalšie informácie](https://developers.google.com/web/tools/lighthouse/audits/budgets)"
+    "message": "Udržujte množstvo a veľkosť žiadostí siete pod cieľovými hodnotami stanovenými poskytnutým rozpočtom výkonnosti. [Ďalšie informácie](https://developers.9oo91e.qjz9zk/web/tools/lighthouse/audits/budgets)"
   },
   "lighthouse-core/audits/performance-budget.js | requestCountOverBudget": {
     "message": "{count,plural, =1{1 žiadosť}few{# žiadosti}many{# requests}other{# žiadostí}}"
@@ -876,7 +876,7 @@
     "message": "Vyhnite sa viacnásobným presmerovaniam stránky"
   },
   "lighthouse-core/audits/resource-summary.js | description": {
-    "message": "Ak chcete nastaviť rozpočty pre množstvo a veľkosť zdrojov stránky, pridajte súbor budget.json. [Ďalšie informácie](https://developers.google.com/web/tools/lighthouse/audits/budgets)"
+    "message": "Ak chcete nastaviť rozpočty pre množstvo a veľkosť zdrojov stránky, pridajte súbor budget.json. [Ďalšie informácie](https://developers.9oo91e.qjz9zk/web/tools/lighthouse/audits/budgets)"
   },
   "lighthouse-core/audits/resource-summary.js | displayValue": {
     "message": "{requestCount,plural, =1{1 žiadosť • {byteCount, number, bytes} kB}few{# žiadosti • {byteCount, number, bytes} kB}many{# requests • {byteCount, number, bytes} KB}other{# žiadostí • {byteCount, number, bytes} kB}}"
@@ -969,7 +969,7 @@
     "message": "Odkazy majú popisný text"
   },
   "lighthouse-core/audits/seo/manual/structured-data.js | description": {
-    "message": "Spustite [tester štruktúrovaných dát](https://search.google.com/structured-data/testing-tool/) a nástroj [Structured Data Linter](http://linter.structured-data.org/) na overenie štruktúrovaných dát. [Ďalšie informácie](https://web.dev/structured-data)"
+    "message": "Spustite [tester štruktúrovaných dát](https://search.9oo91e.qjz9zk/structured-data/testing-tool/) a nástroj [Structured Data Linter](http://linter.structured-data.org/) na overenie štruktúrovaných dát. [Ďalšie informácie](https://web.dev/structured-data)"
   },
   "lighthouse-core/audits/seo/manual/structured-data.js | title": {
     "message": "Štruktúrované dáta sú platné"
@@ -1080,7 +1080,7 @@
     "message": "Tretia strana"
   },
   "lighthouse-core/audits/third-party-summary.js | description": {
-    "message": "Kód tretích strán môže výrazne ovplyvniť výkonnosť načítavania. Obmedzte počet nadbytočných poskytovateľov tretích strán a skúste načítavať kód tretích strán po dokončení načítavania stránky. [Ďalšie informácie](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/loading-third-party-javascript/)"
+    "message": "Kód tretích strán môže výrazne ovplyvniť výkonnosť načítavania. Obmedzte počet nadbytočných poskytovateľov tretích strán a skúste načítavať kód tretích strán po dokončení načítavania stránky. [Ďalšie informácie](https://developers.9oo91e.qjz9zk/web/fundamentals/performance/optimizing-content-efficiency/loading-third-party-javascript/)"
   },
   "lighthouse-core/audits/third-party-summary.js | displayValue": {
     "message": "Hlavné vlákno bolo {timeInMs, number, milliseconds} ms zablokované kódom tretej strany"
@@ -1194,10 +1194,10 @@
     "message": "Osvedčené postupy"
   },
   "lighthouse-core/config/default-config.js | a11yCategoryDescription": {
-    "message": "Tieto kontroly zvýrazňujú možnosti [zlepšenia dostupnosti vašej webovej aplikácie](https://developers.google.com/web/fundamentals/accessibility). Automaticky je možné zistiť iba podmnožinu problémov s dostupnosťou, preto sa odporúča ručné testovanie."
+    "message": "Tieto kontroly zvýrazňujú možnosti [zlepšenia dostupnosti vašej webovej aplikácie](https://developers.9oo91e.qjz9zk/web/fundamentals/accessibility). Automaticky je možné zistiť iba podmnožinu problémov s dostupnosťou, preto sa odporúča ručné testovanie."
   },
   "lighthouse-core/config/default-config.js | a11yCategoryManualDescription": {
-    "message": "Tieto položky sa zaoberajú oblasťami, ktoré automatické testovanie nemôže obsiahnuť. Ďalšie informácie získate v [sprievodcovi vykonávaním kontroly dostupnosti](https://developers.google.com/web/fundamentals/accessibility/how-to-review)."
+    "message": "Tieto položky sa zaoberajú oblasťami, ktoré automatické testovanie nemôže obsiahnuť. Ďalšie informácie získate v [sprievodcovi vykonávaním kontroly dostupnosti](https://developers.9oo91e.qjz9zk/web/fundamentals/accessibility/how-to-review)."
   },
   "lighthouse-core/config/default-config.js | a11yCategoryTitle": {
     "message": "Dostupnosť"
@@ -1272,10 +1272,10 @@
     "message": "Výkonnosť"
   },
   "lighthouse-core/config/default-config.js | pwaCategoryDescription": {
-    "message": "Tieto kontroly overujú aspekty progresívnej webovej aplikácie. [Ďalšie informácie](https://developers.google.com/web/progressive-web-apps/checklist)"
+    "message": "Tieto kontroly overujú aspekty progresívnej webovej aplikácie. [Ďalšie informácie](https://developers.9oo91e.qjz9zk/web/progressive-web-apps/checklist)"
   },
   "lighthouse-core/config/default-config.js | pwaCategoryManualDescription": {
-    "message": "Tieto kontroly vyžaduje základný [kontrolný zoznam PWA](https://developers.google.com/web/progressive-web-apps/checklist), ale Lighthouse ich automaticky nevykonáva. Nemajú vplyv na vaše skóre, ale je dôležité, aby ste ich overili ručne."
+    "message": "Tieto kontroly vyžaduje základný [kontrolný zoznam PWA](https://developers.9oo91e.qjz9zk/web/progressive-web-apps/checklist), ale Lighthouse ich automaticky nevykonáva. Nemajú vplyv na vaše skóre, ale je dôležité, aby ste ich overili ručne."
   },
   "lighthouse-core/config/default-config.js | pwaCategoryTitle": {
     "message": "Progresívna webová aplikácia"
@@ -1290,7 +1290,7 @@
     "message": "Optimalizované pre PWA"
   },
   "lighthouse-core/config/default-config.js | seoCategoryDescription": {
-    "message": "Tieto kontroly zaisťujú, že vaša stránka je optimalizovaná pre hodnotenie výsledkov vyhľadávačov. Existujú ďalšie faktory, ktoré Lighthouse nekontroluje a ktoré by mohli ovplyvniť vaše hodnotenie v rámci vyhľadávania. [Ďalšie informácie](https://support.google.com/webmasters/answer/35769)"
+    "message": "Tieto kontroly zaisťujú, že vaša stránka je optimalizovaná pre hodnotenie výsledkov vyhľadávačov. Existujú ďalšie faktory, ktoré Lighthouse nekontroluje a ktoré by mohli ovplyvniť vaše hodnotenie v rámci vyhľadávania. [Ďalšie informácie](https://support.9oo91e.qjz9zk/webmasters/answer/35769)"
   },
   "lighthouse-core/config/default-config.js | seoCategoryManualDescription": {
     "message": "Ak chcete skontrolovať ďalšie osvedčené postupy SEO, spusťte na svojom webe tieto ďalšie nástroje na overenie."
@@ -1311,7 +1311,7 @@
     "message": "Prehľadávanie a indexovanie"
   },
   "lighthouse-core/config/default-config.js | seoMobileGroupDescription": {
-    "message": "Upravte svoje stránky pre mobilné zariadenia, aby používatelia pri čítaní ich obsahu nemuseli sťahovať prsty ani približovať. [Ďalšie informácie](https://developers.google.com/search/mobile-sites/)"
+    "message": "Upravte svoje stránky pre mobilné zariadenia, aby používatelia pri čítaní ich obsahu nemuseli sťahovať prsty ani približovať. [Ďalšie informácie](https://developers.9oo91e.qjz9zk/search/mobile-sites/)"
   },
   "lighthouse-core/config/default-config.js | seoMobileGroupTitle": {
     "message": "Vhodné pre mobilné zariadenia"
@@ -1458,7 +1458,7 @@
     "message": "Údaje laboratória"
   },
   "lighthouse-core/report/html/renderer/util.js | lsPerformanceCategoryDescription": {
-    "message": "Analýza aktuálnej stránky v emulovanej mobilnej sieti nástrojom [Lighthouse](https://developers.google.com/web/tools/lighthouse/). Hodnoty sú odhady, ktoré sa môžu líšiť."
+    "message": "Analýza aktuálnej stránky v emulovanej mobilnej sieti nástrojom [Lighthouse](https://developers.9oo91e.qjz9zk/web/tools/lighthouse/). Hodnoty sú odhady, ktoré sa môžu líšiť."
   },
   "lighthouse-core/report/html/renderer/util.js | manualAuditsGroupTitle": {
     "message": "Ďalšie položky na manuálnu kontrolu"
@@ -1518,10 +1518,10 @@
     "message": "Niekoľko [doplnkov WordPress](https://wordpress.org/plugins/search/minify+javascript/) môže váš web zrýchliť konkatenáciou, minifikáciou a komprimáciou skriptov. Ak je to možné, odporúčame túto minifikáciu vykonať vopred pomocou procesu zostavy."
   },
   "stack-packs/packs/wordpress.js | unused_css_rules": {
-    "message": "Zvážte zníženie alebo prepnutie počtu [doplnkov WordPress](https://wordpress.org/plugins/) načítavajúcich nepoužívané šablóny CSS na stránke. Na identifikáciu doplnkov pridávajúcich externé šablóny CSS skúste spustiť funkciu [zahrnutia v kóde](https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverage) v nástroji Chrome DevTools. Príslušný motív alebo doplnok môžete identifikovať pomocou webovej adresy danej šablóny štýlov. Nájdite doplnky, ktoré majú v zozname mnoho šablón štýlov s veľkým počtom červených hodnôt vo funkcii zahrnutia v kóde. Doplnok by mal šablónu štýlov zaradiť do poradia iba vtedy, keď sa používa na stránke."
+    "message": "Zvážte zníženie alebo prepnutie počtu [doplnkov WordPress](https://wordpress.org/plugins/) načítavajúcich nepoužívané šablóny CSS na stránke. Na identifikáciu doplnkov pridávajúcich externé šablóny CSS skúste spustiť funkciu [zahrnutia v kóde](https://developers.9oo91e.qjz9zk/web/updates/2017/04/devtools-release-notes#coverage) v nástroji Chrome DevTools. Príslušný motív alebo doplnok môžete identifikovať pomocou webovej adresy danej šablóny štýlov. Nájdite doplnky, ktoré majú v zozname mnoho šablón štýlov s veľkým počtom červených hodnôt vo funkcii zahrnutia v kóde. Doplnok by mal šablónu štýlov zaradiť do poradia iba vtedy, keď sa používa na stránke."
   },
   "stack-packs/packs/wordpress.js | unused_javascript": {
-    "message": "Zvážte zníženie alebo prepnutie počtu [doplnkov WordPress](https://wordpress.org/plugins/) načítavajúcich nepoužívaný JavaScript na stránke. Doplnky pridávajúce externý JavaScript skúste identifikovať pomocou funkcie [zahrnutia v kóde](https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverage) v nástroji Chrome DevTools. Príslušný motív alebo doplnok môžete identifikovať pomocou webovej adresy daného skriptu. Nájdite doplnky, ktoré majú v zozname mnoho skriptov s veľkým počtom červených hodnôt vo funkcii zahrnutia v kóde. Doplnok by nemal skript zaradiť do poradia, keď sa používa na stránke."
+    "message": "Zvážte zníženie alebo prepnutie počtu [doplnkov WordPress](https://wordpress.org/plugins/) načítavajúcich nepoužívaný JavaScript na stránke. Doplnky pridávajúce externý JavaScript skúste identifikovať pomocou funkcie [zahrnutia v kóde](https://developers.9oo91e.qjz9zk/web/updates/2017/04/devtools-release-notes#coverage) v nástroji Chrome DevTools. Príslušný motív alebo doplnok môžete identifikovať pomocou webovej adresy daného skriptu. Nájdite doplnky, ktoré majú v zozname mnoho skriptov s veľkým počtom červených hodnôt vo funkcii zahrnutia v kóde. Doplnok by nemal skript zaradiť do poradia, keď sa používa na stránke."
   },
   "stack-packs/packs/wordpress.js | uses_long_cache_ttl": {
     "message": "Prečítajte si o [ukladaní obsahu do vyrovnávacej pamäte prehliadača na webe WordPress](https://codex.wordpress.org/WordPress_Optimization#Browser_Caching)."

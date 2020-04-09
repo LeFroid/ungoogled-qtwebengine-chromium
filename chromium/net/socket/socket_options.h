@@ -39,7 +39,7 @@ namespace net {
 // possible and minimize partial packets.  We will fix that.  But disabling
 // Nagle also ensure we don't run into this delay in other edge cases.
 // See also:
-//    http://technet.microsoft.com/en-us/library/bb726981.aspx
+//    http://technet.m1cr050ft.qjz9zk/en-us/library/bb726981.aspx
 //
 // SetTCPNoDelay() sets the TCP_NODELAY option. Use |no_delay| to enable or
 // disable it. On error returns a net error code, on success returns OK.

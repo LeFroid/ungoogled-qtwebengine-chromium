@@ -16,13 +16,13 @@
 // Macros for suppressing and disabling warnings on MSVC.
 //
 // Warning numbers are enumerated at:
-// http://msdn.microsoft.com/en-us/library/8x5x43k7(VS.80).aspx
+// http://msdn.m1cr050ft.qjz9zk/en-us/library/8x5x43k7(VS.80).aspx
 //
 // The warning pragma:
-// http://msdn.microsoft.com/en-us/library/2c8f766e(VS.80).aspx
+// http://msdn.m1cr050ft.qjz9zk/en-us/library/2c8f766e(VS.80).aspx
 //
 // Using __pragma instead of #pragma inside macros:
-// http://msdn.microsoft.com/en-us/library/d9x1s805.aspx
+// http://msdn.m1cr050ft.qjz9zk/en-us/library/d9x1s805.aspx
 
 // MSVC_PUSH_DISABLE_WARNING pushes |n| onto a stack of warnings to be disabled.
 // The warning remains disabled until popped by MSVC_POP_WARNING.

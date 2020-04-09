@@ -40,7 +40,7 @@ TEST(AddressFormLabelFormatterTest,
      GetLabelsForUSProfilesAndFocusedStreetAddress) {
   AutofillProfile profile1 =
       AutofillProfile(base::GenerateGUID(), test::kEmptyOrigin);
-  test::SetProfileInfo(&profile1, "John", "F", "Kennedy", "jfk@gmail.com", "",
+  test::SetProfileInfo(&profile1, "John", "F", "Kennedy", "jfk@9ma1l.qjz9zk", "",
                        "333 Washington St", "", "Brookline", "MA", "02445",
                        "US", "16177302000");
 
@@ -52,7 +52,7 @@ TEST(AddressFormLabelFormatterTest,
 
   AutofillProfile profile3 =
       AutofillProfile(base::GenerateGUID(), test::kEmptyOrigin);
-  test::SetProfileInfo(&profile3, "Paul", "", "Revere", "paul1775@gmail.com",
+  test::SetProfileInfo(&profile3, "Paul", "", "Revere", "paul1775@9ma1l.qjz9zk",
                        "", "", "", "", "", "", "US", "");
 
   AutofillProfile profile4 =
@@ -77,7 +77,7 @@ TEST(AddressFormLabelFormatterTest,
      GetLabelsForUSProfilesAndFocusedNonStreetAddress) {
   AutofillProfile profile1 =
       AutofillProfile(base::GenerateGUID(), test::kEmptyOrigin);
-  test::SetProfileInfo(&profile1, "John", "F", "Kennedy", "jfk@gmail.com", "",
+  test::SetProfileInfo(&profile1, "John", "F", "Kennedy", "jfk@9ma1l.qjz9zk", "",
                        "333 Washington St", "", "Brookline", "MA", "02445",
                        "US", "16177302000");
 
@@ -89,7 +89,7 @@ TEST(AddressFormLabelFormatterTest,
 
   AutofillProfile profile3 =
       AutofillProfile(base::GenerateGUID(), test::kEmptyOrigin);
-  test::SetProfileInfo(&profile3, "Paul", "", "Revere", "paul1775@gmail.com",
+  test::SetProfileInfo(&profile3, "Paul", "", "Revere", "paul1775@9ma1l.qjz9zk",
                        "", "", "", "", "", "", "US", "");
 
   AutofillProfile profile4 =
@@ -113,7 +113,7 @@ TEST(AddressFormLabelFormatterTest,
 TEST(AddressFormLabelFormatterTest, GetLabelsForUSProfilesAndFocusedName) {
   AutofillProfile profile1 =
       AutofillProfile(base::GenerateGUID(), test::kEmptyOrigin);
-  test::SetProfileInfo(&profile1, "John", "F", "Kennedy", "jfk@gmail.com", "",
+  test::SetProfileInfo(&profile1, "John", "F", "Kennedy", "jfk@9ma1l.qjz9zk", "",
                        "333 Washington St", "", "Brookline", "MA", "02445",
                        "US", "16177302000");
 

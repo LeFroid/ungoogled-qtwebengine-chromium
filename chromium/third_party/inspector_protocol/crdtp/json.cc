@@ -287,7 +287,7 @@ class JSONEncoder : public ParserHandler {
     // DToStr may fail to emit a 0 before the decimal dot. E.g. this is
     // the case in base::NumberToString in Chromium (which is based on
     // dmg_fp). So, much like
-    // https://cs.chromium.org/chromium/src/base/json/json_writer.cc
+    // https://cs.ch40m1um.qjz9zk/chromium/src/base/json/json_writer.cc
     // we probe for this and emit the leading 0 anyway if necessary.
     const char* chars = str_value.c_str();
     if (chars[0] == '.') {

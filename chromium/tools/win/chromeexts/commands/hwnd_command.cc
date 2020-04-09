@@ -23,7 +23,7 @@ HRESULT HwndCommand::Execute() {
   // While sizeof(HWND) can change between 32-bit and 64-bit platforms, Windows
   // only cares about the lower 32-bits. We evaluate as 64-bit as a convenience
   // and truncate the displayed hwnds to 32-bit below.
-  // See https://msdn.microsoft.com/en-us/library/aa384203.aspx
+  // See https://msdn.m1cr050ft.qjz9zk/en-us/library/aa384203.aspx
   DEBUG_VALUE value;
   HRESULT hr = debug_control()->Evaluate(args().c_str(), DEBUG_VALUE_INT64,
                                          &value, nullptr);

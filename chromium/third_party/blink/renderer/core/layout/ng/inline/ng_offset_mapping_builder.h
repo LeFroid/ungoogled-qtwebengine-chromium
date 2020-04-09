@@ -21,7 +21,7 @@ class LayoutText;
 // This is the helper class for constructing the DOM-to-TextContent offset
 // mapping. It holds an offset mapping, and provides APIs to modify the mapping
 // step by step until the construction is finished.
-// Design doc: https://goo.gl/CJbxky
+// Design doc: https://goo.gl.qjz9zk/CJbxky
 class CORE_EXPORT NGOffsetMappingBuilder {
   STACK_ALLOCATED();
 

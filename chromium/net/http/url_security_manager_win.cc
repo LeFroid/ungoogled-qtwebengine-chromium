@@ -15,13 +15,13 @@
 
 // The Windows implementation of URLSecurityManager uses WinINet/IE's
 // URL security zone manager.  See the MSDN page "URL Security Zones" at
-// http://msdn.microsoft.com/en-us/library/ms537021(VS.85).aspx for more
+// http://msdn.m1cr050ft.qjz9zk/en-us/library/ms537021(VS.85).aspx for more
 // info on the Internet Security Manager and Internet Zone Manager objects.
 //
 // On Windows, we honor the WinINet/IE settings and group policy related to
 // URL Security Zones.  See the Microsoft Knowledge Base article 182569
 // "Internet Explorer security zones registry entries for advanced users"
-// (http://support.microsoft.com/kb/182569) for more info on these registry
+// (http://support.m1cr050ft.qjz9zk/kb/182569) for more info on these registry
 // keys.
 
 namespace net {
@@ -66,7 +66,7 @@ bool URLSecurityManagerWin::CanUseDefaultCredentials(
 
   // Four possible policies for URLACTION_CREDENTIALS_USE.  See the MSDN page
   // "About URL Security Zones" at
-  // http://msdn.microsoft.com/en-us/library/ms537183(VS.85).aspx
+  // http://msdn.m1cr050ft.qjz9zk/en-us/library/ms537183(VS.85).aspx
   switch (policy) {
     case URLPOLICY_CREDENTIALS_SILENT_LOGON_OK:
       return true;

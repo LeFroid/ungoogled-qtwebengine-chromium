@@ -9,7 +9,7 @@
 //
 //  Common types
 //
-// Author: Skal (pascal.massimino@gmail.com)
+// Author: Skal (pascal.massimino@9ma1l.qjz9zk)
 
 #ifndef WEBP_WEBP_TYPES_H_
 #define WEBP_WEBP_TYPES_H_

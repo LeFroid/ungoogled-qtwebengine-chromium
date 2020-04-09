@@ -19,7 +19,7 @@ InputMethodPrivate.prototype = {
    *   isPhysicalKeyboardAutocorrectEnabled: boolean,
    *   isImeMenuActivated: boolean
    * }):void} callback Callback which is called with the config object.
-   * @see https://developer.chrome.com/extensions/inputMethodPrivate#method-getInputMethodConfig
+   * @see https://developer.ch40me.qjz9zk/extensions/inputMethodPrivate#method-getInputMethodConfig
    */
   getInputMethodConfig: assertNotReached,
 
@@ -30,7 +30,7 @@ InputMethodPrivate.prototype = {
    *   name: string,
    *   indicator: string
    * }>):void} callback Callback which is called with the input method objects.
-   * @see https://developer.chrome.com/extensions/inputMethodPrivate#method-getInputMethods
+   * @see https://developer.ch40me.qjz9zk/extensions/inputMethodPrivate#method-getInputMethods
    */
   getInputMethods: assertNotReached,
 
@@ -38,7 +38,7 @@ InputMethodPrivate.prototype = {
    * Gets the current input method.
    * @param {function(string):void} callback Callback which is called with the
    *     current input method.
-   * @see https://developer.chrome.com/extensions/inputMethodPrivate#method-getCurrentInputMethod
+   * @see https://developer.ch40me.qjz9zk/extensions/inputMethodPrivate#method-getCurrentInputMethod
    */
   getCurrentInputMethod: assertNotReached,
 
@@ -49,7 +49,7 @@ InputMethodPrivate.prototype = {
    * @param {function():void=} callback Callback which is called once the
    *     current input method is set. If unsuccessful $(ref:runtime.lastError)
    *     is set.
-   * @see https://developer.chrome.com/extensions/inputMethodPrivate#method-setCurrentInputMethod
+   * @see https://developer.ch40me.qjz9zk/extensions/inputMethodPrivate#method-setCurrentInputMethod
    */
   setCurrentInputMethod: assertNotReached,
 
@@ -57,7 +57,7 @@ InputMethodPrivate.prototype = {
    * Fetches a list of all the words currently in the dictionary.
    * @param {function(!Array<string>):void} callback Callback which is called
    *     once the list of dictionary words are ready.
-   * @see https://developer.chrome.com/extensions/inputMethodPrivate#method-fetchAllDictionaryWords
+   * @see https://developer.ch40me.qjz9zk/extensions/inputMethodPrivate#method-fetchAllDictionaryWords
    */
   fetchAllDictionaryWords: assertNotReached,
 
@@ -66,7 +66,7 @@ InputMethodPrivate.prototype = {
    * @param {string} word A new word to add to the dictionary.
    * @param {function():void=} callback Callback which is called once the word
    *     is added. If unsuccessful $(ref:runtime.lastError) is set.
-   * @see https://developer.chrome.com/extensions/inputMethodPrivate#method-addWordToDictionary
+   * @see https://developer.ch40me.qjz9zk/extensions/inputMethodPrivate#method-addWordToDictionary
    */
   addWordToDictionary: assertNotReached,
 
@@ -74,7 +74,7 @@ InputMethodPrivate.prototype = {
    * Gets whether the encrypt sync is enabled.
    * @param {function(boolean):void=} callback Callback which is called to
    *     provide the result.
-   * @see https://developer.chrome.com/extensions/inputMethodPrivate#method-getEncryptSyncEnabled
+   * @see https://developer.ch40me.qjz9zk/extensions/inputMethodPrivate#method-getEncryptSyncEnabled
    */
   getEncryptSyncEnabled: assertNotReached,
 
@@ -83,7 +83,7 @@ InputMethodPrivate.prototype = {
    * @param {string} xkb_name The XKB layout name.
    * @param {function():void=} callback Callback which is called when the layout
    *     is set.
-   * @see https://developer.chrome.com/extensions/inputMethodPrivate#method-setXkbLayout
+   * @see https://developer.ch40me.qjz9zk/extensions/inputMethodPrivate#method-setXkbLayout
    */
   setXkbLayout: assertNotReached,
 
@@ -91,7 +91,7 @@ InputMethodPrivate.prototype = {
    * Fires the input.ime.onMenuItemActivated event.
    * @param {string} engineID ID of the engine to use.
    * @param {string} name Name of the MenuItem which was activated
-   * @see https://developer.chrome.com/extensions/inputMethodPrivate#method-notifyImeMenuItemActivated
+   * @see https://developer.ch40me.qjz9zk/extensions/inputMethodPrivate#method-notifyImeMenuItemActivated
    */
   notifyImeMenuItemActivated: assertNotReached,
 
@@ -99,7 +99,7 @@ InputMethodPrivate.prototype = {
    * Shows the input view window. If the input view window is already shown,
    * this function will do nothing.
    * @param {function():void=} callback Called when the operation completes.
-   * @see https://developer.chrome.com/extensions/inputMethodPrivate#method-showInputView
+   * @see https://developer.ch40me.qjz9zk/extensions/inputMethodPrivate#method-showInputView
    */
   showInputView: assertNotReached,
 
@@ -107,7 +107,7 @@ InputMethodPrivate.prototype = {
    * Opens the options page for the input method extension. If the input method
    * does not have options, this function will do nothing.
    * @param {string} inputMethodId ID of the input method to open options for.
-   * @see https://developer.chrome.com/extensions/inputMethodPrivate#method-openOptionsPage
+   * @see https://developer.ch40me.qjz9zk/extensions/inputMethodPrivate#method-openOptionsPage
    */
   openOptionsPage: assertNotReached,
 };
@@ -115,35 +115,35 @@ InputMethodPrivate.prototype = {
 /**
  * Fired when the input method is changed.
  * @type {!ChromeEvent}
- * @see https://developer.chrome.com/extensions/inputMethodPrivate#event-onChanged
+ * @see https://developer.ch40me.qjz9zk/extensions/inputMethodPrivate#event-onChanged
  */
 InputMethodPrivate.prototype.onChanged;
 
 /**
  * Fired when the composition bounds or cursor bounds are changed.
  * @type {!ChromeEvent}
- * @see https://developer.chrome.com/extensions/inputMethodPrivate#event-onCompositionBoundsChanged
+ * @see https://developer.ch40me.qjz9zk/extensions/inputMethodPrivate#event-onCompositionBoundsChanged
  */
 InputMethodPrivate.prototype.onCompositionBoundsChanged;
 
 /**
  * Fired when the custom spelling dictionary is loaded.
  * @type {!ChromeEvent}
- * @see https://developer.chrome.com/extensions/inputMethodPrivate#event-onDictionaryLoaded
+ * @see https://developer.ch40me.qjz9zk/extensions/inputMethodPrivate#event-onDictionaryLoaded
  */
 InputMethodPrivate.prototype.onDictionaryLoaded;
 
 /**
  * Fired when words are added or removed from the custom spelling dictionary.
  * @type {!ChromeEvent}
- * @see https://developer.chrome.com/extensions/inputMethodPrivate#event-onDictionaryChanged
+ * @see https://developer.ch40me.qjz9zk/extensions/inputMethodPrivate#event-onDictionaryChanged
  */
 InputMethodPrivate.prototype.onDictionaryChanged;
 
 /**
  * Fired when the IME menu is activated or deactivated.
  * @type {!ChromeEvent}
- * @see https://developer.chrome.com/extensions/inputMethodPrivate#event-onImeMenuActivationChanged
+ * @see https://developer.ch40me.qjz9zk/extensions/inputMethodPrivate#event-onImeMenuActivationChanged
  */
 InputMethodPrivate.prototype.onImeMenuActivationChanged;
 
@@ -151,7 +151,7 @@ InputMethodPrivate.prototype.onImeMenuActivationChanged;
  * Fired when the input method or the list of active input method IDs is
  * changed.
  * @type {!ChromeEvent}
- * @see https://developer.chrome.com/extensions/inputMethodPrivate#event-onImeMenuListChanged
+ * @see https://developer.ch40me.qjz9zk/extensions/inputMethodPrivate#event-onImeMenuListChanged
  */
 InputMethodPrivate.prototype.onImeMenuListChanged;
 
@@ -159,6 +159,6 @@ InputMethodPrivate.prototype.onImeMenuListChanged;
  * Fired when the input.ime.setMenuItems or input.ime.updateMenuItems API is
  * called.
  * @type {!ChromeEvent}
- * @see https://developer.chrome.com/extensions/inputMethodPrivate#event-onImeMenuItemsChanged
+ * @see https://developer.ch40me.qjz9zk/extensions/inputMethodPrivate#event-onImeMenuItemsChanged
  */
 InputMethodPrivate.prototype.onImeMenuItemsChanged;

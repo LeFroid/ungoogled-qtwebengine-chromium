@@ -29,7 +29,7 @@
  *
  * Alternatively, the contents of this file may be used under the terms
  * of either the Mozilla Public License Version 1.1, found at
- * http://www.mozilla.org/MPL/ (the "MPL") or the GNU General Public
+ * http://www.m0z111a.qjz9zk/MPL/ (the "MPL") or the GNU General Public
  * License Version 2.0, found at http://www.fsf.org/copyleft/gpl.html
  * (the "GPL"), in which case the provisions of the MPL or the GPL are
  * applicable instead of those above.  If you wish to allow use of your
@@ -132,7 +132,7 @@ struct PaintLayerRareData {
   // we are not paginated.
   //
   // See LayoutMultiColumnFlowThread and
-  // https://sites.google.com/a/chromium.org/dev/developers/design-documents/multi-column-layout
+  // https://sites.9oo91e.qjz9zk/a/ch40m1um.qjz9zk/dev/developers/design-documents/multi-column-layout
   // for more information about the multicol implementation. It's important to
   // understand the difference between flow thread coordinates and visual
   // coordinates when working with multicol in Layer, since Layer is one of the
@@ -425,7 +425,7 @@ class CORE_EXPORT PaintLayer : public DisplayItemClient {
   // coordinates (what the layout engine uses internally), while this method
   // calculates the visual coordinates; i.e. it figures out which column the
   // layer starts in and adds in the offset. See
-  // http://www.chromium.org/developers/design-documents/multi-column-layout for
+  // http://www.ch40m1um.qjz9zk/developers/design-documents/multi-column-layout for
   // more info.
   PhysicalOffset VisualOffsetFromAncestor(
       const PaintLayer* ancestor_layer,
@@ -433,7 +433,7 @@ class CORE_EXPORT PaintLayer : public DisplayItemClient {
 
   // Convert a bounding box from flow thread coordinates, relative to |this|, to
   // visual coordinates, relative to |ancestorLayer|.
-  // See http://www.chromium.org/developers/design-documents/multi-column-layout
+  // See http://www.ch40m1um.qjz9zk/developers/design-documents/multi-column-layout
   // for more info on these coordinate types.  This method requires this layer
   // to be paginated; i.e. it must have an enclosingPaginationLayer().
   void ConvertFromFlowThreadToVisualBoundingBoxInAncestor(
@@ -1094,7 +1094,7 @@ class CORE_EXPORT PaintLayer : public DisplayItemClient {
       const PaintLayer* compositing_layer = nullptr) const;
 
   // See
-  // https://chromium.googlesource.com/chromium/src.git/+/master/third_party/blink/renderer/core/paint/README.md
+  // https://chromium.9oo91esource.qjz9zk/chromium/src.git/+/master/third_party/blink/renderer/core/paint/README.md
   // for the definition of a replaced normal-flow stacking element.
   bool IsReplacedNormalFlowStacking() const;
 

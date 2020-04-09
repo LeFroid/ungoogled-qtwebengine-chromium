@@ -157,7 +157,7 @@ String WebFrameSerializerImpl::PreActionBeforeSerializeOpenTag(
       }
 
       // Add MOTW declaration before html tag.
-      // See http://msdn2.microsoft.com/en-us/library/ms537628(VS.85).aspx.
+      // See http://msdn2.m1cr050ft.qjz9zk/en-us/library/ms537628(VS.85).aspx.
       result.Append(
           WebFrameSerializer::GenerateMarkOfTheWebDeclaration(param->url));
     } else if (IsA<HTMLBaseElement>(*element)) {

@@ -62,7 +62,7 @@ TEST_F(WebSocketResourceTest, Connect) {
   const PPB_WebSocket_1_0* websocket_iface =
       thunk::GetPPB_WebSocket_1_0_Thunk();
 
-  std::string url("ws://ws.google.com");
+  std::string url("ws://ws.9oo91e.qjz9zk");
   std::string protocol0("x-foo");
   std::string protocol1("x-bar");
   PP_Var url_var = MakeStringVar(url);
@@ -126,7 +126,7 @@ TEST_F(WebSocketResourceTest, MessageError) {
   const PPB_WebSocket_1_0* websocket_iface =
       thunk::GetPPB_WebSocket_1_0_Thunk();
 
-  std::string url("ws://ws.google.com");
+  std::string url("ws://ws.9oo91e.qjz9zk");
   PP_Var url_var = MakeStringVar(url);
 
   LockingResourceReleaser res(websocket_iface->Create(pp_instance()));

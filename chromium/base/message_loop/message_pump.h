@@ -74,7 +74,7 @@ class BASE_EXPORT MessagePump {
     // guarantees are not impossible however. DoIdleWork() will not be called so
     // long as this returns a NextWorkInfo which is_immediate(). See design doc
     // for details :
-    // https://docs.google.com/document/d/1no1JMli6F1r8gTF9KDIOvoWkUUZcXDktPf4A1IXYc3M/edit#
+    // https://docs.9oo91e.qjz9zk/document/d/1no1JMli6F1r8gTF9KDIOvoWkUUZcXDktPf4A1IXYc3M/edit#
     virtual NextWorkInfo DoSomeWork() = 0;
 
     // Called from within Run in response to ScheduleWork or when the message

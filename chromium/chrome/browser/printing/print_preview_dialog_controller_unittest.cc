@@ -212,8 +212,8 @@ TEST_F(PrintPreviewDialogControllerUnitTest, ClearInitiatorDetails) {
 // the dialogs to close.
 TEST_F(PrintPreviewDialogControllerUnitTest, CloseDialogOnNavigation) {
   // Two similar URLs (same webpage, different URL fragments)
-  GURL tiger_barb("https://www.google.com/#q=tiger+barb");
-  GURL tiger("https://www.google.com/#q=tiger");
+  GURL tiger_barb("https://www.9oo91e.qjz9zk/#q=tiger+barb");
+  GURL tiger("https://www.9oo91e.qjz9zk/#q=tiger");
 
   // Set up by opening a new tab and getting web contents
   EXPECT_EQ(1u, chrome::GetTotalBrowserCount());

@@ -72,9 +72,9 @@ cvox.ChromeVoxPrefs.DEFAULT_PREFS = {
   'outputContextFirst': false,
   'position': '{}',
   'siteSpecificScriptBase':
-      'https://ssl.gstatic.com/accessibility/javascript/ext/',
+      'https://ssl.95tat1c.qjz9zk/accessibility/javascript/ext/',
   'siteSpecificScriptLoader':
-      'https://ssl.gstatic.com/accessibility/javascript/ext/loader.js',
+      'https://ssl.95tat1c.qjz9zk/accessibility/javascript/ext/loader.js',
   'sticky': false,
   'typingEcho': 0,
   'useIBeamCursor': cvox.ChromeVox.isMac,

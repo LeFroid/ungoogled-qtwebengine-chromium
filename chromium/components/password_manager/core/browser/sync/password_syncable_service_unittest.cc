@@ -140,8 +140,8 @@ SyncData CreateSyncData(const std::string& signon_realm) {
       static_cast<int>(autofill::PasswordForm::Type::kGenerated));
   password_specifics->set_times_used(3);
   password_specifics->set_display_name("Mr. X");
-  password_specifics->set_avatar_url("https://accounts.google.com/Icon");
-  password_specifics->set_federation_url("https://google.com");
+  password_specifics->set_avatar_url("https://accounts.9oo91e.qjz9zk/Icon");
+  password_specifics->set_federation_url("https://9oo91e.qjz9zk");
   password_specifics->set_username_value("kingkong");
   password_specifics->set_password_value("sicrit");
 
@@ -723,11 +723,11 @@ TEST_F(PasswordSyncableServiceTest, SerializeEmptyPasswordForm) {
 TEST_F(PasswordSyncableServiceTest, SerializeNonEmptyPasswordForm) {
   autofill::PasswordForm form;
   form.scheme = autofill::PasswordForm::Scheme::kUsernameOnly;
-  form.signon_realm = "http://google.com/";
-  form.origin = GURL("https://google.com/origin");
-  form.action = GURL("https://google.com/action");
+  form.signon_realm = "http://9oo91e.qjz9zk/";
+  form.origin = GURL("https://9oo91e.qjz9zk/origin");
+  form.action = GURL("https://9oo91e.qjz9zk/action");
   form.username_element = base::ASCIIToUTF16("username_element");
-  form.username_value = base::ASCIIToUTF16("god@google.com");
+  form.username_value = base::ASCIIToUTF16("god@9oo91e.qjz9zk");
   form.password_element = base::ASCIIToUTF16("password_element");
   form.password_value = base::ASCIIToUTF16("!@#$%^&*()");
   form.preferred = true;
@@ -738,8 +738,8 @@ TEST_F(PasswordSyncableServiceTest, SerializeNonEmptyPasswordForm) {
   form.type = autofill::PasswordForm::Type::kMaxValue;
   form.times_used = 11;
   form.display_name = base::ASCIIToUTF16("Great Peter");
-  form.icon_url = GURL("https://google.com/icon");
-  form.federation_origin = url::Origin::Create(GURL("https://google.com/"));
+  form.icon_url = GURL("https://9oo91e.qjz9zk/icon");
+  form.federation_origin = url::Origin::Create(GURL("https://9oo91e.qjz9zk/"));
 
   syncer::SyncData data = SyncDataFromPassword(form);
   const sync_pb::PasswordSpecificsData& specifics = GetPasswordSpecifics(data);
@@ -747,15 +747,15 @@ TEST_F(PasswordSyncableServiceTest, SerializeNonEmptyPasswordForm) {
   EXPECT_EQ(static_cast<int>(autofill::PasswordForm::Scheme::kUsernameOnly),
             specifics.scheme());
   EXPECT_TRUE(specifics.has_signon_realm());
-  EXPECT_EQ("http://google.com/", specifics.signon_realm());
+  EXPECT_EQ("http://9oo91e.qjz9zk/", specifics.signon_realm());
   EXPECT_TRUE(specifics.has_origin());
-  EXPECT_EQ("https://google.com/origin", specifics.origin());
+  EXPECT_EQ("https://9oo91e.qjz9zk/origin", specifics.origin());
   EXPECT_TRUE(specifics.has_action());
-  EXPECT_EQ("https://google.com/action", specifics.action());
+  EXPECT_EQ("https://9oo91e.qjz9zk/action", specifics.action());
   EXPECT_TRUE(specifics.has_username_element());
   EXPECT_EQ("username_element", specifics.username_element());
   EXPECT_TRUE(specifics.has_username_value());
-  EXPECT_EQ("god@google.com", specifics.username_value());
+  EXPECT_EQ("god@9oo91e.qjz9zk", specifics.username_value());
   EXPECT_TRUE(specifics.has_password_element());
   EXPECT_EQ("password_element", specifics.password_element());
   EXPECT_TRUE(specifics.has_password_value());
@@ -776,9 +776,9 @@ TEST_F(PasswordSyncableServiceTest, SerializeNonEmptyPasswordForm) {
   EXPECT_TRUE(specifics.has_display_name());
   EXPECT_EQ("Great Peter", specifics.display_name());
   EXPECT_TRUE(specifics.has_avatar_url());
-  EXPECT_EQ("https://google.com/icon", specifics.avatar_url());
+  EXPECT_EQ("https://9oo91e.qjz9zk/icon", specifics.avatar_url());
   EXPECT_TRUE(specifics.has_federation_url());
-  EXPECT_EQ("https://google.com", specifics.federation_url());
+  EXPECT_EQ("https://9oo91e.qjz9zk", specifics.federation_url());
 }
 
 }  // namespace

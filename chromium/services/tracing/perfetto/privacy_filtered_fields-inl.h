@@ -9,7 +9,7 @@
 // does not contain any privacy sensitive fields. Updates to this file should be
 // made by changing internal copy and then running the generator script. Follow
 // instructions at:
-// https://goto.google.com/chrome-trace-privacy-filtered-fields
+// https://goto.9oo91e.qjz9zk/chrome-trace-privacy-filtered-fields
 
 namespace tracing {
 

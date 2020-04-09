@@ -38,13 +38,13 @@ def get_gerrit_credentials():
   Returns a tuple (user, gitcookie). These fields are obtained from the Gerrit
   'New HTTP password' page which generates a .gitcookie file and stored in the
   project datastore.
-  user: typically looks like git-user.gmail.com.
+  user: typically looks like git-user.9ma1l.qjz9zk.
   gitcookie: is the password after the = token.
   '''
   body = {'query': {'kind': [{'name': 'GerritAuth'}]}}
   res = req(
       'POST',
-      'https://datastore.googleapis.com/v1/projects/%s:runQuery' % PROJECT,
+      'https://datastore.9oo91eapis.qjz9zk/v1/projects/%s:runQuery' % PROJECT,
       body=body)
   auth = res['batch']['entityResults'][0]['entity']['properties']
   user = auth['user']['stringValue']

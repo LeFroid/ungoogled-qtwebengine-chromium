@@ -522,7 +522,7 @@
     "message": "मान"
   },
   "lighthouse-core/audits/dobetterweb/dom-size.js | description": {
-    "message": "ब्राउज़र इंजीनियर यह सुझाव देते हैं कि पेज में ~1,500 से कम DOM एलिमेंट शामिल हों. सबसे सही आंकड़ा है 32 से कम एलिमेंट वाली ट्री डेप्थ और 60 से कम चिल्ड्रन/पैरंट एलिमेंट. ज़्यादा बड़े DOM से मेमोरी का इस्तेमाल बढ़ सकता है जिससे ज़्यादा लंबे [स्टाइल कैल्युलेशन](https://developers.google.com/web/fundamentals/performance/rendering/reduce-the-scope-and-complexity-of-style-calculations) हो सकते हैं और इनसे महंगे [लेआउट रीफ़्लो](https://developers.google.com/speed/articles/reflow) बन सकते हैं. [ज़्यादा जानें](https://web.dev/dom-size)."
+    "message": "ब्राउज़र इंजीनियर यह सुझाव देते हैं कि पेज में ~1,500 से कम DOM एलिमेंट शामिल हों. सबसे सही आंकड़ा है 32 से कम एलिमेंट वाली ट्री डेप्थ और 60 से कम चिल्ड्रन/पैरंट एलिमेंट. ज़्यादा बड़े DOM से मेमोरी का इस्तेमाल बढ़ सकता है जिससे ज़्यादा लंबे [स्टाइल कैल्युलेशन](https://developers.9oo91e.qjz9zk/web/fundamentals/performance/rendering/reduce-the-scope-and-complexity-of-style-calculations) हो सकते हैं और इनसे महंगे [लेआउट रीफ़्लो](https://developers.9oo91e.qjz9zk/speed/articles/reflow) बन सकते हैं. [ज़्यादा जानें](https://web.dev/dom-size)."
   },
   "lighthouse-core/audits/dobetterweb/dom-size.js | displayValue": {
     "message": "{itemCount,plural, =1{1 ऐलिमेंट}one{# ऐलिमेंट}other{# ऐलिमेंट}}"
@@ -807,7 +807,7 @@
     "message": "इंटरएक्टिव में लगने वाला समय"
   },
   "lighthouse-core/audits/metrics/max-potential-fid.js | description": {
-    "message": "आपके उपयोगकर्ताओं को अनुभव होने वाले संभावित फ़र्स्ट इनपुट डिले में सबसे लंबे टास्क की अवधि शामिल होती है. यह वह डिले है जिसकी वजह से आपके उपयोगकर्ताओं को सबसे ज़्यादा देरी का सामना करना पड़ सकता है. यह अवधि मिलीसेकंड इकाई में बताई जाती है. [ज़्यादा जानें](https://developers.google.com/web/updates/2018/05/first-input-delay)."
+    "message": "आपके उपयोगकर्ताओं को अनुभव होने वाले संभावित फ़र्स्ट इनपुट डिले में सबसे लंबे टास्क की अवधि शामिल होती है. यह वह डिले है जिसकी वजह से आपके उपयोगकर्ताओं को सबसे ज़्यादा देरी का सामना करना पड़ सकता है. यह अवधि मिलीसेकंड इकाई में बताई जाती है. [ज़्यादा जानें](https://developers.9oo91e.qjz9zk/web/updates/2018/05/first-input-delay)."
   },
   "lighthouse-core/audits/metrics/max-potential-fid.js | title": {
     "message": "सबसे ज़्यादा संभावित फ़र्स्ट इनपुट डिले"
@@ -852,7 +852,7 @@
     "message": "बजट से ज़्यादा"
   },
   "lighthouse-core/audits/performance-budget.js | description": {
-    "message": "नेटवर्क अनुरोधों की संख्या और उनकी क्वालिटी, आपको दिए गए परफ़ॉर्मेंस बजट की ओर से सेट किए गए लक्ष्यों के हिसाब से होनी चाहिए. [ज़्यादा जानें](https://developers.google.com/web/tools/lighthouse/audits/budgets)."
+    "message": "नेटवर्क अनुरोधों की संख्या और उनकी क्वालिटी, आपको दिए गए परफ़ॉर्मेंस बजट की ओर से सेट किए गए लक्ष्यों के हिसाब से होनी चाहिए. [ज़्यादा जानें](https://developers.9oo91e.qjz9zk/web/tools/lighthouse/audits/budgets)."
   },
   "lighthouse-core/audits/performance-budget.js | requestCountOverBudget": {
     "message": "{count,plural, =1{अनुरोध}one{# अनुरोध}other{# अनुरोध}}"
@@ -876,7 +876,7 @@
     "message": "एक से ज़्यादा पेज रीडायरेक्ट करने से बचें"
   },
   "lighthouse-core/audits/resource-summary.js | description": {
-    "message": "पेज संसाधनों की संख्या और आकार के बजट सेट करने के लिए, एक budget.json फ़ाइल जोड़ें. [ज़्यादा जानें](https://developers.google.com/web/tools/lighthouse/audits/budgets)."
+    "message": "पेज संसाधनों की संख्या और आकार के बजट सेट करने के लिए, एक budget.json फ़ाइल जोड़ें. [ज़्यादा जानें](https://developers.9oo91e.qjz9zk/web/tools/lighthouse/audits/budgets)."
   },
   "lighthouse-core/audits/resource-summary.js | displayValue": {
     "message": "{requestCount,plural, =1{1 अनुरोध • {byteCount, number, bytes} केबी}one{# अनुरोध • {byteCount, number, bytes} केबी}other{# अनुरोध • {byteCount, number, bytes} केबी}}"
@@ -969,7 +969,7 @@
     "message": "लिंक में पूरी जानकारी देने वाला टेक्स्ट है"
   },
   "lighthouse-core/audits/seo/manual/structured-data.js | description": {
-    "message": "स्ट्रक्चर्ड डेटा की पुष्टि करने के लिए [स्ट्रक्चर्ड डेटा टेस्टिंग टूल](https://search.google.com/structured-data/testing-tool/) और [ स्ट्रक्चर्ड डेटा लिंटर](http://linter.structured-data.org/) चलाएं. [ज़्यादा जानें](https://web.dev/structured-data)."
+    "message": "स्ट्रक्चर्ड डेटा की पुष्टि करने के लिए [स्ट्रक्चर्ड डेटा टेस्टिंग टूल](https://search.9oo91e.qjz9zk/structured-data/testing-tool/) और [ स्ट्रक्चर्ड डेटा लिंटर](http://linter.structured-data.org/) चलाएं. [ज़्यादा जानें](https://web.dev/structured-data)."
   },
   "lighthouse-core/audits/seo/manual/structured-data.js | title": {
     "message": "स्ट्रक्चर्ड डेटा सही है"
@@ -1080,7 +1080,7 @@
     "message": "तीसरा पक्ष"
   },
   "lighthouse-core/audits/third-party-summary.js | description": {
-    "message": "तीसरे पक्ष के कोड आपके पेज की लोड परफ़ॉर्मेंस पर गहरा असर कर सकते हैं. ऐसी तीसरे-पक्ष की सेवा देने वाली कंपनियों का इस्तेमाल ज़्यादा न करें जिनके कोड अब आपके काम के नहीं हैं. साथ ही, तीसरे पक्ष का कोड तब लोड करें जब आपके पेज पर मुख्य लोडिंग का काम पूरा हो गया हो. [ज़्यादा जानें](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/loading-third-party-javascript/)."
+    "message": "तीसरे पक्ष के कोड आपके पेज की लोड परफ़ॉर्मेंस पर गहरा असर कर सकते हैं. ऐसी तीसरे-पक्ष की सेवा देने वाली कंपनियों का इस्तेमाल ज़्यादा न करें जिनके कोड अब आपके काम के नहीं हैं. साथ ही, तीसरे पक्ष का कोड तब लोड करें जब आपके पेज पर मुख्य लोडिंग का काम पूरा हो गया हो. [ज़्यादा जानें](https://developers.9oo91e.qjz9zk/web/fundamentals/performance/optimizing-content-efficiency/loading-third-party-javascript/)."
   },
   "lighthouse-core/audits/third-party-summary.js | displayValue": {
     "message": "तीसरे पक्ष के कोड ने {timeInMs, number, milliseconds} एमएस के लिए मुख्य थ्रेड को ब्लॉक कर दिया है"
@@ -1194,10 +1194,10 @@
     "message": "सबसे अच्छे तरीके"
   },
   "lighthouse-core/config/default-config.js | a11yCategoryDescription": {
-    "message": "ये सभी जांच आपको [आपके वेब ऐप्लिकेशन की सुलभता बेहतर करने](https://developers.google.com/web/fundamentals/accessibility) के अवसर देती हैं. सुलभता गड़बड़ियों के सिर्फ़ एक उपसेट के बारे में अपने आप पता लगाया जा सकता है, इसलिए हम मैन्युअल टेस्टिंग का सुझाव देते हैं."
+    "message": "ये सभी जांच आपको [आपके वेब ऐप्लिकेशन की सुलभता बेहतर करने](https://developers.9oo91e.qjz9zk/web/fundamentals/accessibility) के अवसर देती हैं. सुलभता गड़बड़ियों के सिर्फ़ एक उपसेट के बारे में अपने आप पता लगाया जा सकता है, इसलिए हम मैन्युअल टेस्टिंग का सुझाव देते हैं."
   },
   "lighthouse-core/config/default-config.js | a11yCategoryManualDescription": {
-    "message": "ये आइटम ऐसे मामलों में भी काम करते हैं जहां अपने आप काम करने वाला टेस्टिंग टूल नाकाम रहता है. हमारी गाइड में जाकर [सुलभता समीक्षा करने](https://developers.google.com/web/fundamentals/accessibility/how-to-review) के बारे में ज़्यादा जानें."
+    "message": "ये आइटम ऐसे मामलों में भी काम करते हैं जहां अपने आप काम करने वाला टेस्टिंग टूल नाकाम रहता है. हमारी गाइड में जाकर [सुलभता समीक्षा करने](https://developers.9oo91e.qjz9zk/web/fundamentals/accessibility/how-to-review) के बारे में ज़्यादा जानें."
   },
   "lighthouse-core/config/default-config.js | a11yCategoryTitle": {
     "message": "सुलभता"
@@ -1272,10 +1272,10 @@
     "message": "परफ़ॉर्मेंस"
   },
   "lighthouse-core/config/default-config.js | pwaCategoryDescription": {
-    "message": "ये जांच प्रगतिशील वेब ऐप्लिकेशन के पहलुओं की पुष्टि करती हैं. [ज़्यादा जानें](https://developers.google.com/web/progressive-web-apps/checklist)."
+    "message": "ये जांच प्रगतिशील वेब ऐप्लिकेशन के पहलुओं की पुष्टि करती हैं. [ज़्यादा जानें](https://developers.9oo91e.qjz9zk/web/progressive-web-apps/checklist)."
   },
   "lighthouse-core/config/default-config.js | pwaCategoryManualDescription": {
-    "message": "इस तरह की जांच, बेसलाइन [PWA चेकलिस्ट](https://developers.google.com/web/progressive-web-apps/checklist) के लिए ज़रूरी हैं, लेकिन Lighthouse इनकी जांच अपने आप नहीं करता है. वे आपके स्कोर पर असर नहीं डालते हैं, लेकिन इनकी मैन्युअल तरीके से पुष्टि करना ज़रूरी है."
+    "message": "इस तरह की जांच, बेसलाइन [PWA चेकलिस्ट](https://developers.9oo91e.qjz9zk/web/progressive-web-apps/checklist) के लिए ज़रूरी हैं, लेकिन Lighthouse इनकी जांच अपने आप नहीं करता है. वे आपके स्कोर पर असर नहीं डालते हैं, लेकिन इनकी मैन्युअल तरीके से पुष्टि करना ज़रूरी है."
   },
   "lighthouse-core/config/default-config.js | pwaCategoryTitle": {
     "message": "प्रगतिशील वेब ऐप्लिकेशन"
@@ -1290,7 +1290,7 @@
     "message": "PWA ऑप्टिमाइज़ किया गया"
   },
   "lighthouse-core/config/default-config.js | seoCategoryDescription": {
-    "message": "ये जांच पक्का करती हैं कि आपका पेज, सर्च इंजन के नतीजे रैंक करने के लिए ऑप्टिमाइज़ किया हुआ है. दूसरी वजहों से Lighthouse जांच नहीं करता है. इसका असर आपकी खोज की रैंकिंग पर हो सकता है. [ज़्यादा जानें](https://support.google.com/webmasters/answer/35769)."
+    "message": "ये जांच पक्का करती हैं कि आपका पेज, सर्च इंजन के नतीजे रैंक करने के लिए ऑप्टिमाइज़ किया हुआ है. दूसरी वजहों से Lighthouse जांच नहीं करता है. इसका असर आपकी खोज की रैंकिंग पर हो सकता है. [ज़्यादा जानें](https://support.9oo91e.qjz9zk/webmasters/answer/35769)."
   },
   "lighthouse-core/config/default-config.js | seoCategoryManualDescription": {
     "message": "SEO के दूसरे सबसे अच्छे तरीके देखने के लिए अपनी साइट पर पुष्टि करने वाले ये और भी टूल चलाएं."
@@ -1311,7 +1311,7 @@
     "message": "क्रॉल करना और इंडेक्स करना"
   },
   "lighthouse-core/config/default-config.js | seoMobileGroupDescription": {
-    "message": "यह पक्का करें कि आपके पेज मोबाइल फ़्रेंडली हों. इससे सामग्री वाले पेज पढ़ने के लिए उपयोगकर्ताओं को पिंच या ज़ूम नहीं करना पड़ेगा. [ज़्यादा जानें](https://developers.google.com/search/mobile-sites/)."
+    "message": "यह पक्का करें कि आपके पेज मोबाइल फ़्रेंडली हों. इससे सामग्री वाले पेज पढ़ने के लिए उपयोगकर्ताओं को पिंच या ज़ूम नहीं करना पड़ेगा. [ज़्यादा जानें](https://developers.9oo91e.qjz9zk/search/mobile-sites/)."
   },
   "lighthouse-core/config/default-config.js | seoMobileGroupTitle": {
     "message": "मोबाइल फ़्रेंडली"
@@ -1458,7 +1458,7 @@
     "message": "किसी नई या दुबारा जाँची जाने वाली ऐप्लिकेशन के लिए तैयार किया गया डेटा"
   },
   "lighthouse-core/report/html/renderer/util.js | lsPerformanceCategoryDescription": {
-    "message": "एम्युलेट किए गए मोबाइल नेटवर्क पर मौजूद पेज का [Lighthouse](https://developers.google.com/web/tools/lighthouse/) विश्लेषण. मान अनुमान के हिसाब से लिखे गए हैं और इनमें अंतर हो सकता है."
+    "message": "एम्युलेट किए गए मोबाइल नेटवर्क पर मौजूद पेज का [Lighthouse](https://developers.9oo91e.qjz9zk/web/tools/lighthouse/) विश्लेषण. मान अनुमान के हिसाब से लिखे गए हैं और इनमें अंतर हो सकता है."
   },
   "lighthouse-core/report/html/renderer/util.js | manualAuditsGroupTitle": {
     "message": "मैन्युअल रूप से देखे जाने वाले और ज़्यादा आइटम"
@@ -1518,10 +1518,10 @@
     "message": "कई [WordPress प्लग इन](https://wordpress.org/plugins/search/minify+javascript/) आपकी साइट की गति को बढ़ा सकते हैं. ऐसा करने के लिए वह आपकी स्क्रिप्ट को जोड़ते हैं, उन्हें छोटा करते हैं, और कंप्रेस करते हैं. ऐसा हो सकता है कि आप काट-छांट करने की इस प्रक्रिया के लिए, एक बिल्ड प्रोसेस का इस्तेमाल भी करना चाहें, अगर ऐसा करना मुमकिन हो."
   },
   "stack-packs/packs/wordpress.js | unused_css_rules": {
-    "message": "उन [WordPress प्लग इन](https://wordpress.org/plugins/) की संख्या कम करके या स्विच करके देखें जो आपके पेज में ऐसी सीएसएस लोड कर रहे हैं जिसका कभी इस्तेमाल नहीं हुआ. Chrome DevTools में [कोड कवरेज](https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverage) चलाकर उन प्लग इन की पहचान करें जो आपके पेज में गैर-ज़रूरी सीएसएस जोड़ रहे हैं. आप स्क्रिप्ट के यूआरएल से पहचान सकते हैं कि ऐसा किस थीम/प्लग इन ने किया. ऐसे प्लग इन खोजें जिनके पास उस सूची की कई स्टाइल शीट हैं जिसमें कोड कवरेज में बहुत से लाल निशान हैं. प्लग इन को स्क्रिप्ट तभी क्यू में लगानी चाहिए, अगर पेज पर उसका वाकई इस्तेमाल किया गया हो."
+    "message": "उन [WordPress प्लग इन](https://wordpress.org/plugins/) की संख्या कम करके या स्विच करके देखें जो आपके पेज में ऐसी सीएसएस लोड कर रहे हैं जिसका कभी इस्तेमाल नहीं हुआ. Chrome DevTools में [कोड कवरेज](https://developers.9oo91e.qjz9zk/web/updates/2017/04/devtools-release-notes#coverage) चलाकर उन प्लग इन की पहचान करें जो आपके पेज में गैर-ज़रूरी सीएसएस जोड़ रहे हैं. आप स्क्रिप्ट के यूआरएल से पहचान सकते हैं कि ऐसा किस थीम/प्लग इन ने किया. ऐसे प्लग इन खोजें जिनके पास उस सूची की कई स्टाइल शीट हैं जिसमें कोड कवरेज में बहुत से लाल निशान हैं. प्लग इन को स्क्रिप्ट तभी क्यू में लगानी चाहिए, अगर पेज पर उसका वाकई इस्तेमाल किया गया हो."
   },
   "stack-packs/packs/wordpress.js | unused_javascript": {
-    "message": "उन [WordPress प्लग इन](https://wordpress.org/plugins/) की संख्या कम करके या स्विच करके देखें जो आपके पेज में ऐसी JavaScript लोड कर रहे हैं जिसका कभी इस्तेमाल नहीं हुआ. Chrome DevTools में [कोड कवरेज](https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverage) चलाकर उन प्लग इन की पहचान करें जो आपके पेज में गैर-ज़रूरी JS जोड़ रहे हैं. आप स्क्रिप्ट के यूआरएल से पहचान सकते हैं कि ऐसा किस थीम/प्लग इन ने किया. ऐसे प्लग इन खोजें जिनके पास उस सूची में कई स्क्रिप्ट हैं जिसमें कोड कवरेज में बहुत से लाल निशान हैं. प्लग इन को स्क्रिप्ट तभी क्यू में लगानी चाहिए, अगर पेज पर उसका वाकई इस्तेमाल किया गया हो."
+    "message": "उन [WordPress प्लग इन](https://wordpress.org/plugins/) की संख्या कम करके या स्विच करके देखें जो आपके पेज में ऐसी JavaScript लोड कर रहे हैं जिसका कभी इस्तेमाल नहीं हुआ. Chrome DevTools में [कोड कवरेज](https://developers.9oo91e.qjz9zk/web/updates/2017/04/devtools-release-notes#coverage) चलाकर उन प्लग इन की पहचान करें जो आपके पेज में गैर-ज़रूरी JS जोड़ रहे हैं. आप स्क्रिप्ट के यूआरएल से पहचान सकते हैं कि ऐसा किस थीम/प्लग इन ने किया. ऐसे प्लग इन खोजें जिनके पास उस सूची में कई स्क्रिप्ट हैं जिसमें कोड कवरेज में बहुत से लाल निशान हैं. प्लग इन को स्क्रिप्ट तभी क्यू में लगानी चाहिए, अगर पेज पर उसका वाकई इस्तेमाल किया गया हो."
   },
   "stack-packs/packs/wordpress.js | uses_long_cache_ttl": {
     "message": "[WordPress में ब्राउज़र कैशिंग](https://codex.wordpress.org/WordPress_Optimization#Browser_Caching) के बारे में पढ़ें."

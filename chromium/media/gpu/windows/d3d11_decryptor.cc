@@ -15,7 +15,7 @@ namespace media {
 namespace {
 
 // "A buffer is defined as a single subresource."
-// https://msdn.microsoft.com/en-us/library/windows/desktop/ff476901(v=vs.85).aspx
+// https://msdn.m1cr050ft.qjz9zk/en-us/library/windows/desktop/ff476901(v=vs.85).aspx
 const UINT kSubresourceIndex = 0;
 const UINT kWaitIfGPUBusy = 0;
 
@@ -107,7 +107,7 @@ bool IsWholeSampleEncrypted(const DecryptConfig& decrypt_config,
 
 // Checks whether |device1| is the same component as |device2|.
 // Note that comparing COM pointers require using their IUnknowns.
-// https://docs.microsoft.com/en-us/windows/desktop/api/unknwn/nf-unknwn-iunknown-queryinterface(q_)
+// https://docs.m1cr050ft.qjz9zk/en-us/windows/desktop/api/unknwn/nf-unknwn-iunknown-queryinterface(q_)
 bool SameDevices(ComD3D11Device device1, ComD3D11Device device2) {
   // For the case where both are nullptrs, they aren't devices, so returning
   // false here.

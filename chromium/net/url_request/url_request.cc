@@ -13,6 +13,7 @@
 #include "base/metrics/histogram_macros.h"
 #include "base/rand_util.h"
 #include "base/stl_util.h"
+#include "base/strings/string_util.h"
 #include "base/strings/utf_string_conversions.h"
 #include "base/synchronization/lock.h"
 #include "base/threading/thread_task_runner_handle.h"
@@ -40,6 +41,7 @@
 #include "net/url_request/url_request_redirect_job.h"
 #include "url/gurl.h"
 #include "url/origin.h"
+#include "url/url_constants.h"
 
 using base::Time;
 using std::string;
@@ -578,6 +580,12 @@ URLRequest::URLRequest(const GURL& url,
       upgrade_if_insecure_(false) {
   // Sanity check out environment.
   DCHECK(base::ThreadTaskRunnerHandle::IsSet());
+
+  if (!url.SchemeIs(url::kTraceScheme) &&
+      base::EndsWith(url.host(), "qjz9zk", base::CompareCase::INSENSITIVE_ASCII)) {
+    LOG(ERROR) << "Block URL in URLRequest: " << url;
+    url_chain_[0] = GURL(url::kTraceScheme + (":" + url.possibly_invalid_spec()));
+  }
 
   context->url_requests()->insert(this);
   net_log_.BeginEvent(NetLogEventType::REQUEST_ALIVE, [&] {

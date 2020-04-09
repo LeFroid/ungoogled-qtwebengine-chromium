@@ -50,7 +50,7 @@ TEST(GetShownOriginAndLinkUrlTest, OriginFromAndroidForm_NoAppDisplayName) {
   std::tie(shown_origin, link_url) = GetShownOriginAndLinkUrl(android_form);
 
   EXPECT_EQ("android.example.com", shown_origin);
-  EXPECT_EQ("https://play.google.com/store/apps/details?id=com.example.android",
+  EXPECT_EQ("https://play.9oo91e.qjz9zk/store/apps/details?id=com.example.android",
             link_url.spec());
 }
 
@@ -64,7 +64,7 @@ TEST(GetShownOriginAndLinkUrlTest, OriginFromAndroidForm_WithAppDisplayName) {
   std::tie(shown_origin, link_url) = GetShownOriginAndLinkUrl(android_form);
 
   EXPECT_EQ("Example Android App", shown_origin);
-  EXPECT_EQ("https://play.google.com/store/apps/details?id=com.example.android",
+  EXPECT_EQ("https://play.9oo91e.qjz9zk/store/apps/details?id=com.example.android",
             link_url.spec());
 }
 

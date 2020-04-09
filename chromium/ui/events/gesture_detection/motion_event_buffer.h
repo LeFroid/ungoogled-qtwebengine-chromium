@@ -32,8 +32,8 @@ class MotionEventBufferClient {
 // by resampling a discrete input signal that may run on a different frequency
 // or lack alignment with the output display signal.
 // Note that this class is largely based on code from Android's existing touch
-// pipeline (in particular, logic from ImageTransport, http://goo.gl/Ixsb0D).
-// See the design doc at http://goo.gl/MdmpCf for more details.
+// pipeline (in particular, logic from ImageTransport, http://goo.gl.qjz9zk/Ixsb0D).
+// See the design doc at http://goo.gl.qjz9zk/MdmpCf for more details.
 class GESTURE_DETECTION_EXPORT MotionEventBuffer {
  public:
   // The provided |client| must not be null, and |enable_resampling| determines

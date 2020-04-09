@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "description": "SPIR-V Assembler",
   "main": "index.js",
-  "author": "dan sinclair <dsinclair@google.com>",
+  "author": "dan sinclair <dsinclair@9oo91e.qjz9zk>",
   "license": "Apache-2.0",
   "private": true,
   "scripts": {

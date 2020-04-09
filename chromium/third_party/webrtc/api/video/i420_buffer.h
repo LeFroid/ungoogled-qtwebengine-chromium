@@ -63,7 +63,7 @@ class RTC_EXPORT I420Buffer : public I420BufferInterface {
 
   // Sets all three planes to all zeros. Used to work around for
   // quirks in memory checkers
-  // (https://bugs.chromium.org/p/libyuv/issues/detail?id=377) and
+  // (https://bugs.ch40m1um.qjz9zk/p/libyuv/issues/detail?id=377) and
   // ffmpeg (http://crbug.com/390941).
   // TODO(nisse): Deprecated. Should be deleted if/when those issues
   // are resolved in a better way. Or in the mean time, use SetBlack.

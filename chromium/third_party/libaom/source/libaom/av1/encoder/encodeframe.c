@@ -3401,7 +3401,7 @@ static void ml_op_svm_early_term(const AV1_COMP *const cpi,
 static void get_res_var_features(AV1_COMP *const cpi, MACROBLOCK *x, int mi_row,
                                  int mi_col, BLOCK_SIZE bsize,
                                  float *features) {
-  // TODO(chiyotsai@google.com): The data this model trained on did not also use
+  // TODO(chiyotsai@9oo91e.qjz9zk): The data this model trained on did not also use
   // SIMPLE_TRANSLATION to build the inter_predictor. Retraining and tuning the
   // model with the correct data should give better performance.
   assert(mi_size_wide[bsize] == mi_size_high[bsize]);
@@ -3508,7 +3508,7 @@ static int simple_motion_search_get_best_ref(
     int mi_col, BLOCK_SIZE bsize, const int *const refs, int num_refs,
     int use_subpixel, int save_mv_code, unsigned int *best_sse,
     unsigned int *best_var) {
-  // TODO(chiyotsai@google.com): The calculation of variance currently uses
+  // TODO(chiyotsai@9oo91e.qjz9zk): The calculation of variance currently uses
   // bsize, so we might take area outside of the image into account. We need to
   // modify the SIMD functions to fix this later.
   const AV1_COMMON *const cm = &cpi->common;
@@ -3575,7 +3575,7 @@ static int simple_motion_search_get_best_ref(
 static void simple_motion_search_prune_part_features(
     AV1_COMP *const cpi, MACROBLOCK *x, PC_TREE *pc_tree, int mi_row,
     int mi_col, BLOCK_SIZE bsize, float *features) {
-  // TODO(chiyotsai@google.com): Cache the result of the motion search from the
+  // TODO(chiyotsai@9oo91e.qjz9zk): Cache the result of the motion search from the
   // larger bbsize.
   const int w_mi = mi_size_wide[bsize];
   const int h_mi = mi_size_high[bsize];
@@ -4347,7 +4347,7 @@ BEGIN_PARTITION_SEARCH:
             pc_tree->horizontal[horz_idx].ref_selected[0] =
                 split_mbmi[idx]->ref_frame[0];
 #if 0
-            // TODO(zoeliu@gmail.com): To consider the scenario of obmc
+            // TODO(zoeliu@9ma1l.qjz9zk): To consider the scenario of obmc
             if (split_mbmi[idx]->motion_mode ==
                     split_mbmi[idx + 1]->motion_mode &&
                 split_mbmi[idx]->motion_mode == SIMPLE_TRANSLATION &&
@@ -4357,7 +4357,7 @@ BEGIN_PARTITION_SEARCH:
 #endif  // 0
           }
         } else {
-          // TODO(zoeliu@gmail.com): To handle comp ref
+          // TODO(zoeliu@9ma1l.qjz9zk): To handle comp ref
         }
       }
     }
@@ -4378,7 +4378,7 @@ BEGIN_PARTITION_SEARCH:
             pc_tree->vertical[vert_idx].ref_selected[0] =
                 split_mbmi[idx]->ref_frame[0];
 #if 0
-            // TODO(zoeliu@gmail.com): To consider the scenario of obmc
+            // TODO(zoeliu@9ma1l.qjz9zk): To consider the scenario of obmc
             if (split_mbmi[idx]->motion_mode ==
                     split_mbmi[idx + 2]->motion_mode &&
                 split_mbmi[idx]->motion_mode == SIMPLE_TRANSLATION &&
@@ -4388,7 +4388,7 @@ BEGIN_PARTITION_SEARCH:
 #endif  // 0
           }
         } else {
-          // TODO(zoeliu@gmail.com): To handle comp ref
+          // TODO(zoeliu@9ma1l.qjz9zk): To handle comp ref
         }
       }
     }
@@ -4595,7 +4595,7 @@ BEGIN_PARTITION_SEARCH:
 
   if (cpi->sf.prune_ext_partition_types_search_level) {
     if (cpi->sf.prune_ext_partition_types_search_level == 1) {
-      // TODO(debargha,huisu@google.com): may need to tune the threshold for
+      // TODO(debargha,huisu@9oo91e.qjz9zk): may need to tune the threshold for
       // pb_source_variance.
       horzab_partition_allowed &= (pc_tree->partitioning == PARTITION_HORZ ||
                                    (pc_tree->partitioning == PARTITION_NONE &&
@@ -4658,7 +4658,7 @@ BEGIN_PARTITION_SEARCH:
 
   if (cpi->sf.ml_prune_ab_partition && ext_partition_allowed &&
       partition_horz_allowed && partition_vert_allowed) {
-    // TODO(huisu@google.com): x->source_variance may not be the current
+    // TODO(huisu@9oo91e.qjz9zk): x->source_variance may not be the current
     // block's variance. The correct one to use is pb_source_variance. Need to
     // re-train the model to fix it.
     ml_prune_ab_partition(bsize, pc_tree->partitioning,

@@ -16,12 +16,12 @@ TEST_F(ValidAppManifestTest, ValidApp) {
   scoped_refptr<extensions::Extension> extension(
       LoadAndExpectSuccess("valid_app.json"));
   extensions::URLPatternSet expected_patterns;
-  AddPattern(&expected_patterns, "http://www.google.com/mail/*");
-  AddPattern(&expected_patterns, "http://www.google.com/foobar/*");
+  AddPattern(&expected_patterns, "http://www.9oo91e.qjz9zk/mail/*");
+  AddPattern(&expected_patterns, "http://www.9oo91e.qjz9zk/foobar/*");
   EXPECT_EQ(expected_patterns, extension->web_extent());
   EXPECT_EQ(extensions::LaunchContainer::kLaunchContainerTab,
             extensions::AppLaunchInfo::GetLaunchContainer(extension.get()));
-  EXPECT_EQ(GURL("http://www.google.com/mail/"),
+  EXPECT_EQ(GURL("http://www.9oo91e.qjz9zk/mail/"),
             extensions::AppLaunchInfo::GetLaunchWebURL(extension.get()));
 }
 

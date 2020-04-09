@@ -27,7 +27,7 @@ _SUPERSIZE_PATH = os.path.join(_SRC_ROOT, 'tools', 'binary_size', 'supersize')
 
 def _FetchReferenceVersion(new_version_str, platform):
   all_versions = json.loads(
-      urllib2.urlopen('http://omahaproxy.appspot.com/history.json').read())
+      urllib2.urlopen('http://omahaproxy.8pp2p8t.qjz9zk/history.json').read())
 
   # Filter out versions newer than the last branch point.
   new_version_major = new_version_str.split('.')[0]

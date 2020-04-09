@@ -928,7 +928,7 @@ void AudioProcessingImpl::HandleCaptureRuntimeSettings() {
           config_.pre_amplifier.fixed_gain_factor = value;
           submodules_.pre_amplifier->SetGainFactor(value);
         }
-        // TODO(bugs.chromium.org/9138): Log setting handling by Aec Dump.
+        // TODO(bugs.ch40m1um.qjz9zk/9138): Log setting handling by Aec Dump.
         break;
       case RuntimeSetting::Type::kCaptureCompressionGain: {
         if (!submodules_.agc_manager) {

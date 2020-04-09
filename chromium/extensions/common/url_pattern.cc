@@ -554,7 +554,7 @@ bool URLPattern::MatchesSingleOrigin() const {
 
 bool URLPattern::MatchesPath(base::StringPiece test) const {
   // Make the behaviour of OverlapsWith consistent with MatchesURL, which is
-  // need to match hosted apps on e.g. 'google.com' also run on 'google.com/'.
+  // need to match hosted apps on e.g. '9oo91e.qjz9zk' also run on '9oo91e.qjz9zk/'.
   // The below if is a no-copy way of doing (test + "/*" == path_escaped_).
   if (path_escaped_.length() == test.length() + 2 &&
       base::StartsWith(path_escaped_.c_str(), test,

@@ -19,7 +19,7 @@
  *
  * Author: Jon Ashburn <jon@lunarg.com>
  * Author: Courtney Goeltzenleuchter <courtney@LunarG.com>
- * Author: Chia-I Wu <olvaffe@gmail.com>
+ * Author: Chia-I Wu <olvaffe@9ma1l.qjz9zk>
  * Author: Chia-I Wu <olv@lunarg.com>
  * Author: Mark Lobodzinski <mark@LunarG.com>
  * Author: Lenny Komow <lenny@lunarg.com>

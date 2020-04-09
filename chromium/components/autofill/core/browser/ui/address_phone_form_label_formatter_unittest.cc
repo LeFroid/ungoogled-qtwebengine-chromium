@@ -39,7 +39,7 @@ TEST(AddressPhoneFormLabelFormatterTest, GetLabelsWithMissingProfiles) {
 TEST(AddressPhoneFormLabelFormatterTest, GetLabelsForUSProfilesAndFocusedName) {
   AutofillProfile profile1 =
       AutofillProfile(base::GenerateGUID(), test::kEmptyOrigin);
-  test::SetProfileInfo(&profile1, "John", "F", "Kennedy", "jfk@gmail.com", "",
+  test::SetProfileInfo(&profile1, "John", "F", "Kennedy", "jfk@9ma1l.qjz9zk", "",
                        "333 Washington St", "", "Brookline", "MA", "02445",
                        "US", "16177302000");
 
@@ -76,7 +76,7 @@ TEST(AddressPhoneFormLabelFormatterTest,
      GetLabelsForUSProfilesAndFocusedStreetAddress) {
   AutofillProfile profile1 =
       AutofillProfile(base::GenerateGUID(), test::kEmptyOrigin);
-  test::SetProfileInfo(&profile1, "John", "F", "Kennedy", "jfk@gmail.com", "",
+  test::SetProfileInfo(&profile1, "John", "F", "Kennedy", "jfk@9ma1l.qjz9zk", "",
                        "333 Washington St", "", "Brookline", "MA", "02445",
                        "US", "16177302000");
 
@@ -113,7 +113,7 @@ TEST(AddressPhoneFormLabelFormatterTest,
      GetLabelsForUSProfilesAndFocusedNonStreetAddress) {
   AutofillProfile profile1 =
       AutofillProfile(base::GenerateGUID(), test::kEmptyOrigin);
-  test::SetProfileInfo(&profile1, "John", "F", "Kennedy", "jfk@gmail.com", "",
+  test::SetProfileInfo(&profile1, "John", "F", "Kennedy", "jfk@9ma1l.qjz9zk", "",
                        "333 Washington St", "", "Brookline", "MA", "02445",
                        "US", "16177302000");
 
@@ -150,7 +150,7 @@ TEST(AddressPhoneFormLabelFormatterTest,
      GetLabelsForUSProfilesAndFocusedPhone) {
   AutofillProfile profile1 =
       AutofillProfile(base::GenerateGUID(), test::kEmptyOrigin);
-  test::SetProfileInfo(&profile1, "John", "F", "Kennedy", "jfk@gmail.com", "",
+  test::SetProfileInfo(&profile1, "John", "F", "Kennedy", "jfk@9ma1l.qjz9zk", "",
                        "333 Washington St", "", "Brookline", "MA", "02445",
                        "US", "16177302000");
 
@@ -305,7 +305,7 @@ TEST(AddressPhoneFormLabelFormatterTest,
      GetLabelsForFormWithAddressFieldsMinusStreetAddress) {
   AutofillProfile profile =
       AutofillProfile(base::GenerateGUID(), test::kEmptyOrigin);
-  test::SetProfileInfo(&profile, "John", "F", "Kennedy", "jfk@gmail.com", "",
+  test::SetProfileInfo(&profile, "John", "F", "Kennedy", "jfk@9ma1l.qjz9zk", "",
                        "333 Washington St", "", "Brookline", "MA", "02445",
                        "US", "16177302000");
 

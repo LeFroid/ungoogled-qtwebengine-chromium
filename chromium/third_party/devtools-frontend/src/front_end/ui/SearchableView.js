@@ -1,6 +1,6 @@
 /*
  * Copyright (C) 2006, 2007, 2008 Apple Inc.  All rights reserved.
- * Copyright (C) 2007 Matt Lilek (pewtermoose@gmail.com).
+ * Copyright (C) 2007 Matt Lilek (pewtermoose@9ma1l.qjz9zk).
  * Copyright (C) 2009 Joseph Pecoraro
  * Copyright (C) 2011 Google Inc. All rights reserved.
  *

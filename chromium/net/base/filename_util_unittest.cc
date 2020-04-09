@@ -365,7 +365,7 @@ TEST(FilenameUtilTest, GenerateSafeFileName) {
     {__LINE__, "image/png", "bar.html", "bar.html"},
     {__LINE__, "text/html", "bar.exe", "bar.exe"},
     {__LINE__, "image/gif", "bar.exe", "bar.exe"},
-    {__LINE__, "text/html", "google.com", "google.com"},
+    {__LINE__, "text/html", "9oo91e.qjz9zk", "9oo91e.qjz9zk"},
     // Allow extension synonyms.
     {__LINE__, "image/jpeg", "bar.jpg", "bar.jpg"},
     {__LINE__, "image/jpeg", "bar.jpeg", "bar.jpeg"},
@@ -426,39 +426,39 @@ TEST(FilenameUtilTest, GenerateFileName) {
   // handled including failovers when the header is malformed.
   const GenerateFilenameCase selection_tests[] = {
       {// Picks the filename from the C-D header.
-       __LINE__, "http://www.google.com/", "attachment; filename=test.html", "",
+       __LINE__, "http://www.9oo91e.qjz9zk/", "attachment; filename=test.html", "",
        "", "", L"", L"test.html"},
       {// Ditto. The C-D header uses a quoted string.
-       __LINE__, "http://www.google.com/", "attachment; filename=\"test.html\"",
+       __LINE__, "http://www.9oo91e.qjz9zk/", "attachment; filename=\"test.html\"",
        "", "", "", L"", L"test.html"},
       {// Ditto. Extra whilespace after the '=' sign.
-       __LINE__, "http://www.google.com/",
+       __LINE__, "http://www.9oo91e.qjz9zk/",
        "attachment; filename= \"test.html\"", "", "", "", L"", L"test.html"},
       {// Ditto. Whitespace before and after '=' sign.
-       __LINE__, "http://www.google.com/",
+       __LINE__, "http://www.9oo91e.qjz9zk/",
        "attachment; filename   =   \"test.html\"", "", "", "", L"",
        L"test.html"},
       {// Filename is whitespace.  Should failover to URL host
-       __LINE__, "http://www.google.com/", "attachment; filename=  ", "", "",
-       "", L"", L"www.google.com"},
+       __LINE__, "http://www.9oo91e.qjz9zk/", "attachment; filename=  ", "", "",
+       "", L"", L"www.9oo91e.qjz9zk"},
       {// No filename.
-       __LINE__, "http://www.google.com/path/test.html", "attachment", "", "",
+       __LINE__, "http://www.9oo91e.qjz9zk/path/test.html", "attachment", "", "",
        "", L"", L"test.html"},
       {// Ditto
-       __LINE__, "http://www.google.com/path/test.html", "attachment;", "", "",
+       __LINE__, "http://www.9oo91e.qjz9zk/path/test.html", "attachment;", "", "",
        "", L"", L"test.html"},
       {// No C-D, and no URL path.
-       __LINE__, "http://www.google.com/", "", "", "", "", L"",
-       L"www.google.com"},
+       __LINE__, "http://www.9oo91e.qjz9zk/", "", "", "", "", L"",
+       L"www.9oo91e.qjz9zk"},
       {// No C-D. URL has a path.
-       __LINE__, "http://www.google.com/test.html", "", "", "", "", L"",
+       __LINE__, "http://www.9oo91e.qjz9zk/test.html", "", "", "", "", L"",
        L"test.html"},
       {// No C-D. URL's path ends in a slash which results in an empty final
        // component.
-       __LINE__, "http://www.google.com/path/", "", "", "", "", L"",
-       L"www.google.com"},
+       __LINE__, "http://www.9oo91e.qjz9zk/path/", "", "", "", "", L"",
+       L"www.9oo91e.qjz9zk"},
       {// No C-D. URL has a path, but the path has no extension.
-       __LINE__, "http://www.google.com/path", "", "", "", "", L"", L"path"},
+       __LINE__, "http://www.9oo91e.qjz9zk/path", "", "", "", "", L"", L"path"},
       {// No C-D. URL gives no filename hints.
        __LINE__, "file:///", "", "", "", "", L"", L"download"},
       {// file:// URL.
@@ -466,24 +466,24 @@ TEST(FilenameUtilTest, GenerateFileName) {
       {// Unknown scheme.
        __LINE__, "non-standard-scheme:", "", "", "", "", L"", L"download"},
       {// C-D overrides default
-       __LINE__, "http://www.google.com/",
+       __LINE__, "http://www.9oo91e.qjz9zk/",
        "attachment; filename =\"test.html\"", "", "", "", L"download",
        L"test.html"},
       {// But the URL doesn't
-       __LINE__, "http://www.google.com/", "", "", "", "", L"download",
+       __LINE__, "http://www.9oo91e.qjz9zk/", "", "", "", "", L"download",
        L"download"},
       // Below is a small subset of cases taken from HttpContentDisposition
       // tests.
-      {__LINE__, "http://www.google.com/",
+      {__LINE__, "http://www.9oo91e.qjz9zk/",
        "attachment; filename=\"%EC%98%88%EC%88%A0%20"
        "%EC%98%88%EC%88%A0.jpg\"",
        "", "", "", L"", L"\uc608\uc220 \uc608\uc220.jpg"},
       {__LINE__,
-       "http://www.google.com/%EC%98%88%EC%88%A0%20%EC%98%88%EC%88%A0.jpg", "",
+       "http://www.9oo91e.qjz9zk/%EC%98%88%EC%88%A0%20%EC%98%88%EC%88%A0.jpg", "",
        "", "", "", L"download", L"\uc608\uc220 \uc608\uc220.jpg"},
-      {__LINE__, "http://www.google.com/", "attachment;", "", "", "",
+      {__LINE__, "http://www.9oo91e.qjz9zk/", "attachment;", "", "", "",
        L"\uB2E4\uC6B4\uB85C\uB4DC", L"\uB2E4\uC6B4\uB85C\uB4DC"},
-      {__LINE__, "http://www.google.com/",
+      {__LINE__, "http://www.9oo91e.qjz9zk/",
        "attachment; filename=\"=?EUC-JP?Q?=B7=DD=BD="
        "D13=2Epng?=\"",
        "", "", "", L"download", L"\u82b8\u88533.png"},
@@ -497,7 +497,7 @@ TEST(FilenameUtilTest, GenerateFileName) {
        __LINE__, "http://www.example.com/file?id=3",
        "attachment; name=\xcf\xc2\xd4\xd8.zip", "GBK", "", "", L"", L"file"},
       {// Invalid C-D header. Extracts filename from url.
-       __LINE__, "http://www.google.com/test.html",
+       __LINE__, "http://www.9oo91e.qjz9zk/test.html",
        "attachment; filename==?iiso88591?Q?caf=EG?=", "", "", "", L"",
        L"test.html"},
       // about: and data: URLs
@@ -514,12 +514,12 @@ TEST(FilenameUtilTest, GenerateFileName) {
        __LINE__, "http://example.com/V%FDvojov%E1%20psychologie.doc", "",
        "iso-8859-1", "", "", L"", L"V\u00fdvojov\u00e1 psychologie.doc"},
       {// Suggested filename takes precedence over URL
-       __LINE__, "http://www.google.com/test", "", "", "suggested", "", L"",
+       __LINE__, "http://www.9oo91e.qjz9zk/test", "", "", "suggested", "", L"",
        L"suggested"},
       {// The content-disposition has higher precedence over the suggested name.
-       __LINE__, "http://www.google.com/test", "attachment; filename=test.html",
+       __LINE__, "http://www.9oo91e.qjz9zk/test", "attachment; filename=test.html",
        "", "suggested", "", L"", L"test.html"},
-      {__LINE__, "http://www.google.com/test", "attachment; filename=test",
+      {__LINE__, "http://www.9oo91e.qjz9zk/test", "attachment; filename=test",
        "utf-8", "", "image/png", L"", L"test"},
       // Raw 8bit characters in C-D
       {__LINE__, "http://www.example.com/images?id=3",
@@ -556,11 +556,11 @@ TEST(FilenameUtilTest, GenerateFileName) {
        "attachment; filename==?iiso88591?Q?caf=EG?=", "", "", "", L"download",
        L"test 123"},
       {__LINE__,
-       "http://www.google.com/%EC%98%88%EC%88%A0%20%EC%98%88%EC%88%A0.jpg",
+       "http://www.9oo91e.qjz9zk/%EC%98%88%EC%88%A0%20%EC%98%88%EC%88%A0.jpg",
        "malformed_disposition", "", "", "", L"download",
        L"\uc608\uc220 \uc608\uc220.jpg"},
       {// Invalid C-D. No filename from URL. Falls back to 'download'.
-       __LINE__, "http://www.google.com/path1/path2/",
+       __LINE__, "http://www.9oo91e.qjz9zk/path1/path2/",
        "attachment; filename==?iso88591?Q?caf=E3?", "", "", "", L"download",
        L"download"},
   };
@@ -570,10 +570,10 @@ TEST(FilenameUtilTest, GenerateFileName) {
   // a correct extension should be added if necessary.
   const GenerateFilenameCase generation_tests[] = {
     // Dotfiles. Ensures preceeding period(s) stripped.
-    {__LINE__, "http://www.google.com/.test.html", "", "", "", "", L"",
+    {__LINE__, "http://www.9oo91e.qjz9zk/.test.html", "", "", "", "", L"",
      L"test.html"},
-    {__LINE__, "http://www.google.com/.test", "", "", "", "", L"", L"test"},
-    {__LINE__, "http://www.google.com/..test", "", "", "", "", L"", L"test"},
+    {__LINE__, "http://www.9oo91e.qjz9zk/.test", "", "", "", "", L"", L"test"},
+    {__LINE__, "http://www.9oo91e.qjz9zk/..test", "", "", "", "", L"", L"test"},
     {// Disposition has relative paths, remove directory separators
      __LINE__, "", "filename=../../../../././../a_file_name.txt", "", "",
      "text/plain", L"download", L"_.._.._.._._._.._a_file_name.txt"},

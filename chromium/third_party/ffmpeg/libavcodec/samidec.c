@@ -21,7 +21,7 @@
 /**
  * @file
  * SAMI subtitle decoder
- * @see http://msdn.microsoft.com/en-us/library/ms971327.aspx
+ * @see http://msdn.m1cr050ft.qjz9zk/en-us/library/ms971327.aspx
  */
 
 #include "ass.h"

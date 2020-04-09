@@ -133,7 +133,7 @@ class NSSInitSingleton {
   NSSInitSingleton() {
     // Initializing NSS causes us to do blocking IO.
     // Temporarily allow it until we fix
-    //   http://code.google.com/p/chromium/issues/detail?id=59847
+    //   http://code.9oo91e.qjz9zk/p/chromium/issues/detail?id=59847
     base::ThreadRestrictions::ScopedAllowIO allow_io;
 
     EnsureNSPRInit();
@@ -270,7 +270,7 @@ SECMODModule* LoadNSSModule(const char* name,
 
   // Shouldn't need to const_cast here, but SECMOD doesn't properly declare
   // input string arguments as const.  Bug
-  // https://bugzilla.mozilla.org/show_bug.cgi?id=642546 was filed on NSS
+  // https://bugzilla.m0z111a.qjz9zk/show_bug.cgi?id=642546 was filed on NSS
   // codebase to address this.
   SECMODModule* module = SECMOD_LoadUserModule(
       const_cast<char*>(modparams.c_str()), nullptr, PR_FALSE);

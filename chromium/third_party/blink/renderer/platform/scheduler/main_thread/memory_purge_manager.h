@@ -56,7 +56,7 @@ class PLATFORM_EXPORT MemoryPurgeManager {
   // backgrounded.
   //
   // Experiment results:
-  // https://docs.google.com/document/d/1E88EYNlZE1DhmlgmjUnGnCAASm8-tWCAWXy8p53vmwc/edit?usp=sharing
+  // https://docs.9oo91e.qjz9zk/document/d/1E88EYNlZE1DhmlgmjUnGnCAASm8-tWCAWXy8p53vmwc/edit?usp=sharing
   static constexpr int kDefaultMinTimeToPurgeAfterBackgrounded = 1;
   static constexpr int kDefaultMaxTimeToPurgeAfterBackgrounded = 4;
 

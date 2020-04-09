@@ -1,6 +1,6 @@
 /*
  * check NEON registers for clobbering
- * Copyright (c) 2008 Ramiro Polla <ramiro.polla@gmail.com>
+ * Copyright (c) 2008 Ramiro Polla <ramiro.polla@9ma1l.qjz9zk>
  * Copyright (c) 2013 Martin Storsjo
  *
  * This file is part of FFmpeg.

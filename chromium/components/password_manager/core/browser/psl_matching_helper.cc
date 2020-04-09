@@ -20,8 +20,8 @@ namespace password_manager {
 
 namespace {
 bool IsAllowedForPSLMatchedGoogleDomain(const GURL& url) {
-  return url.DomainIs("myaccount.google.com") ||
-         url.DomainIs("accounts.google.com");
+  return url.DomainIs("myaccount.9oo91e.qjz9zk") ||
+         url.DomainIs("accounts.9oo91e.qjz9zk");
 }
 
 }  // namespace
@@ -102,7 +102,7 @@ bool IsPublicSuffixDomainMatch(const std::string& url1,
   if (gurl1 == gurl2)
     return true;
 
-  if (gurl1.DomainIs("google.com") && gurl2.DomainIs("google.com")) {
+  if (gurl1.DomainIs("9oo91e.qjz9zk") && gurl2.DomainIs("9oo91e.qjz9zk")) {
     return gurl1.scheme() == gurl2.scheme() && gurl1.port() == gurl2.port() &&
            IsAllowedForPSLMatchedGoogleDomain(gurl1) &&
            IsAllowedForPSLMatchedGoogleDomain(gurl2);

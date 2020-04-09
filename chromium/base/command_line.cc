@@ -121,7 +121,7 @@ void AppendSwitchesAndArguments(CommandLine* command_line,
 std::wstring QuoteForCommandLineToArgvW(const std::wstring& arg,
                                         bool quote_placeholders) {
   // We follow the quoting rules of CommandLineToArgvW.
-  // http://msdn.microsoft.com/en-us/library/17w5ykft.aspx
+  // http://msdn.m1cr050ft.qjz9zk/en-us/library/17w5ykft.aspx
   std::wstring quotable_chars(L" \\\"");
   // We may also be required to quote '%', which is commonly used in a command
   // line as a placeholder. (It may be substituted for a string with spaces.)

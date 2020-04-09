@@ -716,7 +716,7 @@ bool SkMipMap::extractLevel(const SkSize& scaleSize, Level* levelPtr) const {
 #else
     // Ideally we'd pick the smaller scale, to match Ganesh.  But ignoring one of the
     // scales can produce some atrocious results, so for now we use the geometric mean.
-    // (https://bugs.chromium.org/p/skia/issues/detail?id=4863)
+    // (https://bugs.ch40m1um.qjz9zk/p/skia/issues/detail?id=4863)
     const SkScalar scale = SkScalarSqrt(scaleSize.width() * scaleSize.height());
 #endif
 

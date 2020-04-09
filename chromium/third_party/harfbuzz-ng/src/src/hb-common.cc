@@ -516,7 +516,7 @@ hb_script_to_iso15924_tag (hb_script_t script)
 hb_direction_t
 hb_script_get_horizontal_direction (hb_script_t script)
 {
-  /* https://docs.google.com/spreadsheets/d/1Y90M0Ie3MUJ6UVCRDOypOtijlMDLNNyyLk36T6iMu0o */
+  /* https://docs.9oo91e.qjz9zk/spreadsheets/d/1Y90M0Ie3MUJ6UVCRDOypOtijlMDLNNyyLk36T6iMu0o */
   switch ((hb_tag_t) script)
   {
     /* Unicode-1.1 additions */

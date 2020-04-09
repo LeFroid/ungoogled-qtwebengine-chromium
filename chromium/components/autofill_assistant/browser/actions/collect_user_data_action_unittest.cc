@@ -987,7 +987,7 @@ TEST_F(CollectUserDataActionTest, AttachesProfiles) {
 
   autofill::AutofillProfile profile;
   autofill::test::SetProfileInfo(&profile, "Adam", "", "West",
-                                 "adam.west@gmail.com", "", "", "", "", "", "",
+                                 "adam.west@9ma1l.qjz9zk", "", "", "", "", "", "",
                                  "", "");
 
   ON_CALL(mock_personal_data_manager_, GetProfiles)
@@ -1030,7 +1030,7 @@ TEST_F(CollectUserDataActionTest, AttachesCreditCardsWithAddress) {
 
   autofill::AutofillProfile billing_address;
   autofill::test::SetProfileInfo(&billing_address, "Adam", "", "West",
-                                 "adam.west@gmail.com", "", "Baker Street 221b",
+                                 "adam.west@9ma1l.qjz9zk", "", "Baker Street 221b",
                                  "", "London", "", "WC2N 5DU", "UK", "+44");
 
   ON_CALL(mock_personal_data_manager_, GetProfileByGUID("GUID"))

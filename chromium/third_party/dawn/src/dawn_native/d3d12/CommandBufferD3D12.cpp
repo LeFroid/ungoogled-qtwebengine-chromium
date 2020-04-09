@@ -583,7 +583,7 @@ namespace dawn_native { namespace d3d12 {
         ID3D12GraphicsCommandList* commandList = commandContext->GetCommandList();
 
         // Precompute the allocation of bindgroups in descriptor heaps
-        // TODO(cwallez@chromium.org): Iterating over all the commands here is inefficient. We
+        // TODO(cwallez@ch40m1um.qjz9zk): Iterating over all the commands here is inefficient. We
         // should have a system where commands and descriptors are recorded in parallel then the
         // heaps set using a small CommandList inserted just before the main CommandList.
         {
@@ -1052,7 +1052,7 @@ namespace dawn_native { namespace d3d12 {
                             ->StencilBeginningAccess.Clear.ClearValue.DepthStencil.Stencil;
                 }
 
-                // TODO(kainino@chromium.org): investigate: should the Dawn clear
+                // TODO(kainino@ch40m1um.qjz9zk): investigate: should the Dawn clear
                 // stencil type be uint8_t?
                 if (clearFlags) {
                     commandList->ClearDepthStencilView(

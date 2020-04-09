@@ -18,7 +18,7 @@ import webapp2
 
 import base64
 
-BASE = 'https://android.googlesource.com/platform/external/perfetto.git/' \
+BASE = 'https://android.9oo91esource.qjz9zk/platform/external/perfetto.git/' \
        '+/master/%s?format=TEXT'
 
 RESOURCES = {

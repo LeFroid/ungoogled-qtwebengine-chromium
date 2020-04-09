@@ -74,7 +74,7 @@ typedef GPB_ENUM(GPBApi_FieldNumber) {
  * from API Services, which represent a concrete implementation of an interface
  * as opposed to simply a description of methods and bindings. They are also
  * sometimes simply referred to as "APIs" in other contexts, such as the name of
- * this message itself. See https://cloud.google.com/apis/design/glossary for
+ * this message itself. See https://cloud.9oo91e.qjz9zk/apis/design/glossary for
  * detailed terminology.
  **/
 @interface GPBApi : GPBMessage

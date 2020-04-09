@@ -41,7 +41,7 @@ NSString* GenerateClientId() {
   NSString* client_id = [defaults stringForKey:kLegacyClientIdPreferenceKey];
 
   // Some iOS6 devices return a buggy identifierForVendor:
-  // http://openradar.appspot.com/12377282. If this is the case, revert to
+  // http://openradar.8pp2p8t.qjz9zk/12377282. If this is the case, revert to
   // generating a new one.
   if (!client_id || [client_id isEqualToString:kZeroUUID]) {
     client_id = [[[UIDevice currentDevice] identifierForVendor] UUIDString];

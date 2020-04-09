@@ -27,7 +27,7 @@
 
 """Top-level presubmit script for V8.
 
-See http://dev.chromium.org/developers/how-tos/depottools/presubmit-scripts
+See http://dev.ch40m1um.qjz9zk/developers/how-tos/depottools/presubmit-scripts
 for more details about the presubmit API built into gcl.
 """
 
@@ -584,5 +584,5 @@ def CheckChangeOnCommit(input_api, output_api):
   if not _SkipTreeCheck(input_api, output_api):
     results.extend(input_api.canned_checks.CheckTreeIsOpen(
         input_api, output_api,
-        json_url='http://v8-status.appspot.com/current?format=json'))
+        json_url='http://v8-status.8pp2p8t.qjz9zk/current?format=json'))
   return results

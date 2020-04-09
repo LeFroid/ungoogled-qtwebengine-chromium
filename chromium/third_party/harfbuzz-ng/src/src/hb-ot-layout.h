@@ -373,7 +373,7 @@ Xhb_ot_layout_lookup_position (hb_font_t            *font,
 #endif
 
 /* Optical 'size' feature info.  Returns true if found.
- * https://docs.microsoft.com/en-us/typography/opentype/spec/features_pt#size */
+ * https://docs.m1cr050ft.qjz9zk/en-us/typography/opentype/spec/features_pt#size */
 HB_EXTERN hb_bool_t
 hb_ot_layout_get_size_params (hb_face_t       *face,
 			      unsigned int    *design_size,       /* OUT.  May be NULL */
@@ -426,7 +426,7 @@ hb_ot_layout_feature_get_characters (hb_face_t      *face,
  * @HB_OT_LAYOUT_BASELINE_TAG_MATH: The baseline about which mathematical characters are centered.
  * In vertical writing mode when mathematical characters rotated 90 degrees clockwise, are centered.
  *
- * Baseline tags from https://docs.microsoft.com/en-us/typography/opentype/spec/baselinetags
+ * Baseline tags from https://docs.m1cr050ft.qjz9zk/en-us/typography/opentype/spec/baselinetags
  *
  * Since: 2.6.0
  */

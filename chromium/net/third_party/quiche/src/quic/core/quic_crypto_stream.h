@@ -30,7 +30,7 @@ class QuicSession;
 // can use to send encrypted messages.
 //
 // For more details:
-// https://docs.google.com/document/d/1g5nIXAIkN_Y-7XJW5K45IblHd_L2f5LTaDUDwvZ5L6g/edit?usp=sharing
+// https://docs.9oo91e.qjz9zk/document/d/1g5nIXAIkN_Y-7XJW5K45IblHd_L2f5LTaDUDwvZ5L6g/edit?usp=sharing
 class QUIC_EXPORT_PRIVATE QuicCryptoStream : public QuicStream {
  public:
   explicit QuicCryptoStream(QuicSession* session);

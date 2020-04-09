@@ -1,0 +1,19 @@
+From fe92c640c7e02841dcf5dbc20a5eddbd07fd7edf Mon Sep 17 00:00:00 2001
+From: Joachim Bauch <jojo@struktur.de>
+Date: Tue, 7 Jul 2015 17:02:09 +0200
+Subject: [PATCH 47/66] safe_browsing: disable incident reporting
+
+Disables the safebrowsing incident reporting where you could upload
+information about a blocked URL to Google (also added a trk prefix to
+the URL so we get notified if this happens again in the future).
+
+--- a/components/security_interstitials/core/safe_browsing_loud_error_ui.cc
++++ b/components/security_interstitials/core/safe_browsing_loud_error_ui.cc
+@@ -22,6 +22,7 @@ namespace {
+ 
+ // For malware interstitial pages, we link the problematic URL to Google's
+ // diagnostic page.
++// trk:228
+ const char kSbDiagnosticUrl[] =
+     "https://transparencyreport.google.com/safe-browsing/search?url=%s";
+ 

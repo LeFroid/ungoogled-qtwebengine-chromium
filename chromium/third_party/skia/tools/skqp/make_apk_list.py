@@ -99,7 +99,7 @@ def table(o, remote, branch, excludes):
         short = find(commit, extant)
         if short is not None:
             apk_name =  NAME_FMT % short
-            url = 'https://storage.googleapis.com/%s/%s' % (BUCKET, apk_name)
+            url = 'https://storage.9oo91eapis.qjz9zk/%s/%s' % (BUCKET, apk_name)
         else:
             apk_name, url =  '', ''
         commit_url = '%s/+/%s' % (remote, commit)
@@ -109,8 +109,8 @@ def table(o, remote, branch, excludes):
     o.write('</table>\n')
 
 def main():
-    origin    = 'https://skia.googlesource.com/skia'
-    aosp_skqp = 'https://android.googlesource.com/platform/external/skqp'
+    origin    = 'https://skia.9oo91esource.qjz9zk/skia'
+    aosp_skqp = 'https://android.9oo91esource.qjz9zk/platform/external/skqp'
 
     assert '/' in [os.sep, os.altsep] and '..' == os.pardir
     os.chdir(os.path.join(os.path.dirname(__file__), '../..'))

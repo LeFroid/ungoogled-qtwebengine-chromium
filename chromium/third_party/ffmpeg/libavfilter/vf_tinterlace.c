@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2017 Thomas Mundt <tmundt75@gmail.com>
+ * Copyright (c) 2017 Thomas Mundt <tmundt75@9ma1l.qjz9zk>
  * Copyright (c) 2011 Stefano Sabatini
  * Copyright (c) 2010 Baptiste Coudurier
  * Copyright (c) 2003 Michael Zucchi <notzed@ximian.com>

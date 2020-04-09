@@ -100,7 +100,7 @@ enum class CoverageMode {
   // precise binary coverage resets counters for incremental updates.
   kPreciseBinary,
   // Similar to the precise coverage modes but provides coverage at a
-  // lower granularity. Design doc: goo.gl/lA2swZ.
+  // lower granularity. Design doc: goo.gl.qjz9zk/lA2swZ.
   kBlockCount,
   kBlockBinary,
 };

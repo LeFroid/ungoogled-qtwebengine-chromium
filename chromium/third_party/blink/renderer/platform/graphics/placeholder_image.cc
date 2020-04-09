@@ -38,7 +38,7 @@ namespace blink {
 namespace {
 
 // Placeholder image visual specifications:
-// https://docs.google.com/document/d/1BHeA1azbgCdZgCnr16VN2g7A9MHPQ_dwKn5szh8evMQ/edit
+// https://docs.9oo91e.qjz9zk/document/d/1BHeA1azbgCdZgCnr16VN2g7A9MHPQ_dwKn5szh8evMQ/edit
 
 constexpr int kIconWidth = 24;
 constexpr int kIconHeight = 24;
@@ -112,7 +112,7 @@ FontDescription CreatePlaceholderFontDescription(float scale_factor) {
 // Ex: FormatOriginalResourceSizeBytes(1740800) => "1.7 MB"
 //
 // See the placeholder image number format specifications for more info:
-// https://docs.google.com/document/d/1BHeA1azbgCdZgCnr16VN2g7A9MHPQ_dwKn5szh8evMQ/edit#heading=h.d135l9z7tn0a
+// https://docs.9oo91e.qjz9zk/document/d/1BHeA1azbgCdZgCnr16VN2g7A9MHPQ_dwKn5szh8evMQ/edit#heading=h.d135l9z7tn0a
 String FormatOriginalResourceSizeBytes(int64_t bytes) {
   DCHECK_LT(0, bytes);
 

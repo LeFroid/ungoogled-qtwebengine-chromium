@@ -17,7 +17,7 @@
 
 """Tokenize C++ source code."""
 
-__author__ = 'nnorwitz@google.com (Neal Norwitz)'
+__author__ = 'nnorwitz@9oo91e.qjz9zk (Neal Norwitz)'
 
 
 try:

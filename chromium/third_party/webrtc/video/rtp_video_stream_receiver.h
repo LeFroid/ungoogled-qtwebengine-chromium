@@ -292,7 +292,7 @@ class RtpVideoStreamReceiver : public LossNotificationSender,
   std::map<uint8_t, absl::optional<VideoCodecType>> payload_type_map_;
 
   // TODO(johan): Remove pt_codec_params_ once
-  // https://bugs.chromium.org/p/webrtc/issues/detail?id=6883 is resolved.
+  // https://bugs.ch40m1um.qjz9zk/p/webrtc/issues/detail?id=6883 is resolved.
   // Maps a payload type to a map of out-of-band supplied codec parameters.
   std::map<uint8_t, std::map<std::string, std::string>> pt_codec_params_;
   int16_t last_payload_type_ = -1;

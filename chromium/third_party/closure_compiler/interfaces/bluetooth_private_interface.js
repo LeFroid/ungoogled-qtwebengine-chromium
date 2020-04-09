@@ -17,14 +17,14 @@ BluetoothPrivate.prototype = {
    * Changes the state of the Bluetooth adapter.
    * @param {!chrome.bluetoothPrivate.NewAdapterState} adapterState
    * @param {function():void=} callback
-   * @see https://developer.chrome.com/extensions/bluetoothPrivate#method-setAdapterState
+   * @see https://developer.ch40me.qjz9zk/extensions/bluetoothPrivate#method-setAdapterState
    */
   setAdapterState: assertNotReached,
 
   /**
    * @param {!chrome.bluetoothPrivate.SetPairingResponseOptions} options
    * @param {function():void=} callback
-   * @see https://developer.chrome.com/extensions/bluetoothPrivate#method-setPairingResponse
+   * @see https://developer.ch40me.qjz9zk/extensions/bluetoothPrivate#method-setPairingResponse
    */
   setPairingResponse: assertNotReached,
 
@@ -32,7 +32,7 @@ BluetoothPrivate.prototype = {
    * Tears down all connections to the given device.
    * @param {string} deviceAddress
    * @param {function():void=} callback
-   * @see https://developer.chrome.com/extensions/bluetoothPrivate#method-disconnectAll
+   * @see https://developer.ch40me.qjz9zk/extensions/bluetoothPrivate#method-disconnectAll
    */
   disconnectAll: assertNotReached,
 
@@ -40,7 +40,7 @@ BluetoothPrivate.prototype = {
    * Forgets the given device.
    * @param {string} deviceAddress
    * @param {function():void=} callback
-   * @see https://developer.chrome.com/extensions/bluetoothPrivate#method-forgetDevice
+   * @see https://developer.ch40me.qjz9zk/extensions/bluetoothPrivate#method-forgetDevice
    */
   forgetDevice: assertNotReached,
 
@@ -48,7 +48,7 @@ BluetoothPrivate.prototype = {
    * Set or clear discovery filter.
    * @param {!chrome.bluetoothPrivate.DiscoveryFilter} discoveryFilter
    * @param {function():void=} callback
-   * @see https://developer.chrome.com/extensions/bluetoothPrivate#method-setDiscoveryFilter
+   * @see https://developer.ch40me.qjz9zk/extensions/bluetoothPrivate#method-setDiscoveryFilter
    */
   setDiscoveryFilter: assertNotReached,
 
@@ -59,7 +59,7 @@ BluetoothPrivate.prototype = {
    * @param {string} deviceAddress
    * @param {function(!chrome.bluetoothPrivate.ConnectResultType):void=}
    *     callback
-   * @see https://developer.chrome.com/extensions/bluetoothPrivate#method-connect
+   * @see https://developer.ch40me.qjz9zk/extensions/bluetoothPrivate#method-connect
    */
   connect: assertNotReached,
 
@@ -67,7 +67,7 @@ BluetoothPrivate.prototype = {
    * Pairs the given device.
    * @param {string} deviceAddress
    * @param {function():void=} callback
-   * @see https://developer.chrome.com/extensions/bluetoothPrivate#method-pair
+   * @see https://developer.ch40me.qjz9zk/extensions/bluetoothPrivate#method-pair
    */
   pair: assertNotReached,
 };
@@ -75,6 +75,6 @@ BluetoothPrivate.prototype = {
 /**
  * Fired when a pairing event occurs.
  * @type {!ChromeEvent}
- * @see https://developer.chrome.com/extensions/bluetoothPrivate#event-onPairing
+ * @see https://developer.ch40me.qjz9zk/extensions/bluetoothPrivate#event-onPairing
  */
 BluetoothPrivate.prototype.onPairing;

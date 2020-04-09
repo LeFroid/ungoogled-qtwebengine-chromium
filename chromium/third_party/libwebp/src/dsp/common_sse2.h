@@ -9,7 +9,7 @@
 //
 // SSE2 code common to several files.
 //
-// Author: Vincent Rabaud (vrabaud@google.com)
+// Author: Vincent Rabaud (vrabaud@9oo91e.qjz9zk)
 
 #ifndef WEBP_DSP_COMMON_SSE2_H_
 #define WEBP_DSP_COMMON_SSE2_H_

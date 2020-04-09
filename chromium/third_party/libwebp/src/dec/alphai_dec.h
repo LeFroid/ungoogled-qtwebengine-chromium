@@ -9,7 +9,7 @@
 //
 // Alpha decoder: internal header.
 //
-// Author: Urvang (urvang@google.com)
+// Author: Urvang (urvang@9oo91e.qjz9zk)
 
 #ifndef WEBP_DEC_ALPHAI_DEC_H_
 #define WEBP_DEC_ALPHAI_DEC_H_

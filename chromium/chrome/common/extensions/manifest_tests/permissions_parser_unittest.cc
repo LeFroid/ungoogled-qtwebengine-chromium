@@ -48,7 +48,7 @@ TEST_F(PermissionsParserTest, RemoveOverlappingHostPermissions) {
       "permissions_overlapping_host_permissions.json",
       ErrorUtils::FormatErrorMessage(
           manifest_errors::kPermissionMarkedOptionalAndRequired,
-          "https://google.com/*")));
+          "https://9oo91e.qjz9zk/*")));
 
   const URLPatternSet& required_hosts =
       PermissionsParser::GetRequiredPermissions(extension.get())
@@ -59,13 +59,13 @@ TEST_F(PermissionsParserTest, RemoveOverlappingHostPermissions) {
           .explicit_hosts();
 
   // Check that required hosts have not changed at all while
-  // "https://google.com/maps" is removed from optional hosts as it is a strict
+  // "https://9oo91e.qjz9zk/maps" is removed from optional hosts as it is a strict
   // subset of hosts specified as required.
   EXPECT_THAT(*required_hosts.ToStringVector(),
               testing::UnorderedElementsAre("https://example.com/*",
-                                            "https://*.google.com/*"));
+                                            "https://*.9oo91e.qjz9zk/*"));
   EXPECT_THAT(*optional_hosts.ToStringVector(),
-              testing::UnorderedElementsAre("*://chromium.org/*"));
+              testing::UnorderedElementsAre("*://ch40m1um.qjz9zk/*"));
 }
 
 TEST_F(PermissionsParserTest, RequiredHostPermissionsAllURLs) {
@@ -100,7 +100,7 @@ TEST_F(PermissionsParserTest, OptionalHostPermissionsAllURLs) {
   // so we make sure that permissions remain the same
   // as what's specified in the manifest.
   EXPECT_THAT(*required_hosts.ToStringVector(),
-              testing::UnorderedElementsAre("https://*.google.com/*"));
+              testing::UnorderedElementsAre("https://*.9oo91e.qjz9zk/*"));
 
   EXPECT_THAT(*optional_hosts.ToStringVector(),
               testing::UnorderedElementsAre("*://*/*"));
@@ -109,7 +109,7 @@ TEST_F(PermissionsParserTest, OptionalHostPermissionsAllURLs) {
 TEST_F(PermissionsParserTest, HostPermissionsKey) {
   std::vector<std::string> expected_warnings;
   expected_warnings.push_back(ErrorUtils::FormatErrorMessage(
-      manifest_errors::kPermissionUnknownOrMalformed, "https://google.com/*"));
+      manifest_errors::kPermissionUnknownOrMalformed, "https://9oo91e.qjz9zk/*"));
 
   expected_warnings.push_back(kManifestVersionWarning);
 

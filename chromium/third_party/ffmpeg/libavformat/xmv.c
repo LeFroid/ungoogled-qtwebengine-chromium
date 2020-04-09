@@ -1,7 +1,7 @@
 /*
  * Microsoft XMV demuxer
  * Copyright (c) 2011 Sven Hesse <drmccoy@drmccoy.de>
- * Copyright (c) 2011 Matthew Hoops <clone2727@gmail.com>
+ * Copyright (c) 2011 Matthew Hoops <clone2727@9ma1l.qjz9zk>
  *
  * This file is part of FFmpeg.
  *

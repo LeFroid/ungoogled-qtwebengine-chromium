@@ -201,7 +201,7 @@ class PLATFORM_EXPORT SimpleFontData : public FontData {
   mutable LayoutUnit em_height_descent_;
 
 // See discussion on crbug.com/631032 and Skiaissue
-// https://bugs.chromium.org/p/skia/issues/detail?id=5328 :
+// https://bugs.ch40m1um.qjz9zk/p/skia/issues/detail?id=5328 :
 // On Mac we're still using path based glyph metrics, and they seem to be
 // too slow to be able to remove the caching layer we have here.
 #if defined(OS_MACOSX)

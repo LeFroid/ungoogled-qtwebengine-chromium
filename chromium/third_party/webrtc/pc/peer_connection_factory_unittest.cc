@@ -58,7 +58,7 @@ using webrtc::VideoTrackSourceInterface;
 
 namespace {
 
-static const char kStunIceServer[] = "stun:stun.l.google.com:19302";
+static const char kStunIceServer[] = "stun:stun.l.9oo91e.qjz9zk:19302";
 static const char kTurnIceServer[] = "turn:test.com:1234";
 static const char kTurnIceServerWithTransport[] =
     "turn:hello.com?transport=tcp";
@@ -172,7 +172,7 @@ class PeerConnectionFactoryTest : public ::testing::Test {
 // TODO(henrika): disabling this test since relying on real audio can result in
 // flaky tests and focus on details that are out of scope for you might expect
 // for a PeerConnectionFactory unit test.
-// See https://bugs.chromium.org/p/webrtc/issues/detail?id=7806 for details.
+// See https://bugs.ch40m1um.qjz9zk/p/webrtc/issues/detail?id=7806 for details.
 TEST(PeerConnectionFactoryTestInternal, DISABLED_CreatePCUsingInternalModules) {
 #ifdef WEBRTC_ANDROID
   webrtc::InitializeAndroidObjects();
@@ -287,7 +287,7 @@ TEST_F(PeerConnectionFactoryTest, CreatePCUsingIceServers) {
                                      std::move(cert_generator), &observer_));
   ASSERT_TRUE(pc.get() != NULL);
   cricket::ServerAddresses stun_servers;
-  rtc::SocketAddress stun1("stun.l.google.com", 19302);
+  rtc::SocketAddress stun1("stun.l.9oo91e.qjz9zk", 19302);
   stun_servers.insert(stun1);
   VerifyStunServers(stun_servers);
   std::vector<cricket::RelayServerConfig> turn_servers;
@@ -318,7 +318,7 @@ TEST_F(PeerConnectionFactoryTest, CreatePCUsingIceServersUrls) {
                                      std::move(cert_generator), &observer_));
   ASSERT_TRUE(pc.get() != NULL);
   cricket::ServerAddresses stun_servers;
-  rtc::SocketAddress stun1("stun.l.google.com", 19302);
+  rtc::SocketAddress stun1("stun.l.9oo91e.qjz9zk", 19302);
   stun_servers.insert(stun1);
   VerifyStunServers(stun_servers);
   std::vector<cricket::RelayServerConfig> turn_servers;

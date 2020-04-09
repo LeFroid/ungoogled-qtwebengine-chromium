@@ -78,17 +78,17 @@ namespace {
 // The URL for the the Learn More page shown on incognito new tab.
 const char kLearnMoreIncognitoUrl[] =
 #if defined(OS_CHROMEOS)
-    "https://support.google.com/chromebook/?p=incognito";
+    "https://support.9oo91e.qjz9zk/chromebook/?p=incognito";
 #else
-    "https://support.google.com/chrome/?p=incognito";
+    "https://support.9oo91e.qjz9zk/chrome/?p=incognito";
 #endif
 
 // The URL for the Learn More page shown on guest session new tab.
 const char kLearnMoreGuestSessionUrl[] =
 #if defined(OS_CHROMEOS)
-    "https://support.google.com/chromebook/?p=chromebook_guest";
+    "https://support.9oo91e.qjz9zk/chromebook/?p=chromebook_guest";
 #else
-    "https://support.google.com/chrome/?p=ui_guest";
+    "https://support.9oo91e.qjz9zk/chrome/?p=ui_guest";
 #endif
 
 SkColor GetThemeColor(const ui::ThemeProvider& tp, int id) {

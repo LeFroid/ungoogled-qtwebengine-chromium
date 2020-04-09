@@ -32,7 +32,7 @@
 namespace sfntly {
 
 // The following code implements the name table defined in TTF/OTF spec, which
-// can be found at http://www.microsoft.com/typography/otspec/name.htm.
+// can be found at http://www.m1cr050ft.qjz9zk/typography/otspec/name.htm.
 
 // Name IDs defined in TTF/OTF spec.
 struct NameId {

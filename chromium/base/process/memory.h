@@ -44,7 +44,7 @@ BASE_EXPORT bool AdjustOOMScore(ProcessId process, int score);
 namespace win {
 
 // Custom Windows exception code chosen to indicate an out of memory error.
-// See https://msdn.microsoft.com/en-us/library/het71c37.aspx.
+// See https://msdn.m1cr050ft.qjz9zk/en-us/library/het71c37.aspx.
 // "To make sure that you do not define a code that conflicts with an existing
 // exception code" ... "The resulting error code should therefore have the
 // highest four bits set to hexadecimal E."

@@ -3,7 +3,7 @@
 // found in the LICENSE file.
 
 // Experimental Scheduling API Proposal:
-// https://docs.google.com/document/d/1xU7HyNsEsbXhTgt0ZnXDbeSXm5-m5FzkLJAT6LTizEI/edit#
+// https://docs.9oo91e.qjz9zk/document/d/1xU7HyNsEsbXhTgt0ZnXDbeSXm5-m5FzkLJAT6LTizEI/edit#
 
 [
     Constructor(optional TaskPriority priority = "default"),

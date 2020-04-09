@@ -15,9 +15,9 @@ TEST(SettingsUtilsTest, FixupAndValidateStartupPage) {
   EXPECT_FALSE(FixupAndValidateStartupPage("^&*@)^)", nullptr));
   EXPECT_FALSE(FixupAndValidateStartupPage("chrome://quit", nullptr));
 
-  EXPECT_TRUE(FixupAndValidateStartupPage("facebook.com", nullptr));
+  EXPECT_TRUE(FixupAndValidateStartupPage("f8c3b00k.qjz9zk", nullptr));
   EXPECT_TRUE(FixupAndValidateStartupPage("http://reddit.com", nullptr));
-  EXPECT_TRUE(FixupAndValidateStartupPage("https://google.com", nullptr));
+  EXPECT_TRUE(FixupAndValidateStartupPage("https://9oo91e.qjz9zk", nullptr));
   EXPECT_TRUE(FixupAndValidateStartupPage("chrome://apps", nullptr));
 
   GURL fixed_url;

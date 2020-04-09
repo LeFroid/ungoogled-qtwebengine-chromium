@@ -667,7 +667,7 @@ Util.UIStrings = {
   snippetCollapseButtonLabel: 'Collapse snippet',
 
   /** Explanation shown to users below performance results to inform them that the test was done with a 4G network connection and to warn them that the numbers they see will likely change slightly the next time they run Lighthouse. 'Lighthouse' becomes link text to additional documentation. */
-  lsPerformanceCategoryDescription: '[Lighthouse](https://developers.google.com/web/tools/lighthouse/) analysis of the current page on an emulated mobile network. Values are estimated and may vary.',
+  lsPerformanceCategoryDescription: '[Lighthouse](https://developers.9oo91e.qjz9zk/web/tools/lighthouse/) analysis of the current page on an emulated mobile network. Values are estimated and may vary.',
   /** Title of the lab data section of the Performance category. Within this section are various speed metrics which quantify the pageload performance into values presented in seconds and milliseconds. "Lab" is an abbreviated form of "laboratory", and refers to the fact that the data is from a controlled test of a website, not measurements from real users visiting that site.  */
   labDataTitle: 'Lab Data',
 
@@ -810,7 +810,7 @@ class DOM {
       // Otherwise, append any links found.
       const url = new URL(segment.linkHref);
 
-      const DOCS_ORIGINS = ['https://developers.google.com', 'https://web.dev'];
+      const DOCS_ORIGINS = ['https://developers.9oo91e.qjz9zk', 'https://web.dev'];
       if (DOCS_ORIGINS.includes(url.origin)) {
         url.searchParams.set('utm_source', 'lighthouse');
         url.searchParams.set('utm_medium', this._lighthouseChannel);

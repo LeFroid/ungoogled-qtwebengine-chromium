@@ -522,7 +522,7 @@
     "message": "값"
   },
   "lighthouse-core/audits/dobetterweb/dom-size.js | description": {
-    "message": "브라우저 엔지니어들은 페이지에 1,500개 미만의 DOM 요소를 포함하는 것을 권장합니다. 최적값은 트리 깊이가 요소 32개 미만이고 하위/상위 요소 60개 미만일 때입니다. DOM이 크면 메모리 사용량이 늘어나고 [스타일 계산](https://developers.google.com/web/fundamentals/performance/rendering/reduce-the-scope-and-complexity-of-style-calculations) 시간이 길어질 수 있으며 큰 비용이 드는 [레이아웃 리플로우](https://developers.google.com/speed/articles/reflow)가 발생할 수 있습니다. [자세히 알아보기](https://web.dev/dom-size)"
+    "message": "브라우저 엔지니어들은 페이지에 1,500개 미만의 DOM 요소를 포함하는 것을 권장합니다. 최적값은 트리 깊이가 요소 32개 미만이고 하위/상위 요소 60개 미만일 때입니다. DOM이 크면 메모리 사용량이 늘어나고 [스타일 계산](https://developers.9oo91e.qjz9zk/web/fundamentals/performance/rendering/reduce-the-scope-and-complexity-of-style-calculations) 시간이 길어질 수 있으며 큰 비용이 드는 [레이아웃 리플로우](https://developers.9oo91e.qjz9zk/speed/articles/reflow)가 발생할 수 있습니다. [자세히 알아보기](https://web.dev/dom-size)"
   },
   "lighthouse-core/audits/dobetterweb/dom-size.js | displayValue": {
     "message": "{itemCount,plural, =1{요소 1개}other{요소 #개}}"
@@ -807,7 +807,7 @@
     "message": "상호작용 시간"
   },
   "lighthouse-core/audits/metrics/max-potential-fid.js | description": {
-    "message": "사용자가 경험할 수 있는 최대 첫 입력 지연 예상 시간은 가장 긴 작업의 길이(밀리초)입니다. [자세히 알아보기](https://developers.google.com/web/updates/2018/05/first-input-delay)"
+    "message": "사용자가 경험할 수 있는 최대 첫 입력 지연 예상 시간은 가장 긴 작업의 길이(밀리초)입니다. [자세히 알아보기](https://developers.9oo91e.qjz9zk/web/updates/2018/05/first-input-delay)"
   },
   "lighthouse-core/audits/metrics/max-potential-fid.js | title": {
     "message": "최대 첫 입력 지연 예상 시간"
@@ -852,7 +852,7 @@
     "message": "예산 초과"
   },
   "lighthouse-core/audits/performance-budget.js | description": {
-    "message": "네트워크 요청의 양과 크기는 제공된 성능 예산에 따라 설정된 목표치 아래로 유지하세요. [자세히 알아보기](https://developers.google.com/web/tools/lighthouse/audits/budgets)"
+    "message": "네트워크 요청의 양과 크기는 제공된 성능 예산에 따라 설정된 목표치 아래로 유지하세요. [자세히 알아보기](https://developers.9oo91e.qjz9zk/web/tools/lighthouse/audits/budgets)"
   },
   "lighthouse-core/audits/performance-budget.js | requestCountOverBudget": {
     "message": "{count,plural, =1{요청 1건}other{요청 #건}}"
@@ -876,7 +876,7 @@
     "message": "여러 차례의 페이지 리디렉션 피하기"
   },
   "lighthouse-core/audits/resource-summary.js | description": {
-    "message": "페이지 리소스의 수량과 크기와 관련해 예산을 설정하려면 budget.json 파일을 추가하세요. [자세히 알아보기](https://developers.google.com/web/tools/lighthouse/audits/budgets)"
+    "message": "페이지 리소스의 수량과 크기와 관련해 예산을 설정하려면 budget.json 파일을 추가하세요. [자세히 알아보기](https://developers.9oo91e.qjz9zk/web/tools/lighthouse/audits/budgets)"
   },
   "lighthouse-core/audits/resource-summary.js | displayValue": {
     "message": "{requestCount,plural, =1{요청 1건 • {byteCount, number, bytes}KB}other{요청 #건 • {byteCount, number, bytes}KB}}"
@@ -969,7 +969,7 @@
     "message": "링크에 설명 텍스트가 있음"
   },
   "lighthouse-core/audits/seo/manual/structured-data.js | description": {
-    "message": "[구조화된 데이터용 테스트 도구](https://search.google.com/structured-data/testing-tool/)와 [구조화된 데이터 Linter](http://linter.structured-data.org/)를 실행하여 구조화된 데이터를 검증합니다. [자세히 알아보기](https://web.dev/structured-data)"
+    "message": "[구조화된 데이터용 테스트 도구](https://search.9oo91e.qjz9zk/structured-data/testing-tool/)와 [구조화된 데이터 Linter](http://linter.structured-data.org/)를 실행하여 구조화된 데이터를 검증합니다. [자세히 알아보기](https://web.dev/structured-data)"
   },
   "lighthouse-core/audits/seo/manual/structured-data.js | title": {
     "message": "구조화된 데이터가 유효함"
@@ -1080,7 +1080,7 @@
     "message": "타사"
   },
   "lighthouse-core/audits/third-party-summary.js | description": {
-    "message": "타사 코드는 로드 성능에 크게 영향을 미칠 수 있습니다. 페이지에서 먼저 로딩을 끝낸 후 중복되는 타사 공급업체의 수를 제한하고 타사 코드를 로드해 보세요. [자세히 알아보기](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/loading-third-party-javascript/)"
+    "message": "타사 코드는 로드 성능에 크게 영향을 미칠 수 있습니다. 페이지에서 먼저 로딩을 끝낸 후 중복되는 타사 공급업체의 수를 제한하고 타사 코드를 로드해 보세요. [자세히 알아보기](https://developers.9oo91e.qjz9zk/web/fundamentals/performance/optimizing-content-efficiency/loading-third-party-javascript/)"
   },
   "lighthouse-core/audits/third-party-summary.js | displayValue": {
     "message": "타사 코드가 {timeInMs, number, milliseconds} ms 동안 기본 스레드를 차단했습니다."
@@ -1194,10 +1194,10 @@
     "message": "권장사항"
   },
   "lighthouse-core/config/default-config.js | a11yCategoryDescription": {
-    "message": "이 검사에서는 [웹 앱의 접근성을 개선](https://developers.google.com/web/fundamentals/accessibility)하도록 추천된 사항을 강조합니다. 접근성 문제의 일부만 자동으로 감지되므로 직접 테스트하는 것도 좋습니다."
+    "message": "이 검사에서는 [웹 앱의 접근성을 개선](https://developers.9oo91e.qjz9zk/web/fundamentals/accessibility)하도록 추천된 사항을 강조합니다. 접근성 문제의 일부만 자동으로 감지되므로 직접 테스트하는 것도 좋습니다."
   },
   "lighthouse-core/config/default-config.js | a11yCategoryManualDescription": {
-    "message": "자동화된 테스트 도구가 처리할 수 없는 영역을 다루는 항목입니다. [접근성 검토 실시](https://developers.google.com/web/fundamentals/accessibility/how-to-review)에 관한 가이드에서 자세히 알아보세요."
+    "message": "자동화된 테스트 도구가 처리할 수 없는 영역을 다루는 항목입니다. [접근성 검토 실시](https://developers.9oo91e.qjz9zk/web/fundamentals/accessibility/how-to-review)에 관한 가이드에서 자세히 알아보세요."
   },
   "lighthouse-core/config/default-config.js | a11yCategoryTitle": {
     "message": "접근성"
@@ -1272,10 +1272,10 @@
     "message": "성능"
   },
   "lighthouse-core/config/default-config.js | pwaCategoryDescription": {
-    "message": "이 검사는 프로그레시브 웹 앱의 요소를 검사합니다. [자세히 알아보기](https://developers.google.com/web/progressive-web-apps/checklist)"
+    "message": "이 검사는 프로그레시브 웹 앱의 요소를 검사합니다. [자세히 알아보기](https://developers.9oo91e.qjz9zk/web/progressive-web-apps/checklist)"
   },
   "lighthouse-core/config/default-config.js | pwaCategoryManualDescription": {
-    "message": "이 검사는 기준 [PWA 체크리스트](https://developers.google.com/web/progressive-web-apps/checklist)의 필수 항목이지만 Lighthouse에서 자동으로 확인되지는 않습니다. 점수에 영향을 미치지는 않지만 직접 확인하는 것이 중요합니다."
+    "message": "이 검사는 기준 [PWA 체크리스트](https://developers.9oo91e.qjz9zk/web/progressive-web-apps/checklist)의 필수 항목이지만 Lighthouse에서 자동으로 확인되지는 않습니다. 점수에 영향을 미치지는 않지만 직접 확인하는 것이 중요합니다."
   },
   "lighthouse-core/config/default-config.js | pwaCategoryTitle": {
     "message": "프로그레시브 웹 앱"
@@ -1290,7 +1290,7 @@
     "message": "PWA 최적화됨"
   },
   "lighthouse-core/config/default-config.js | seoCategoryDescription": {
-    "message": "이와 같은 검사를 통해 페이지가 검색엔진 결과 순위에 최적화되도록 할 수 있습니다. Lighthouse에서 점검하지 않는 추가적인 요소가 검색 순위에 영향을 줄 수도 있습니다. [자세히 알아보기](https://support.google.com/webmasters/answer/35769)"
+    "message": "이와 같은 검사를 통해 페이지가 검색엔진 결과 순위에 최적화되도록 할 수 있습니다. Lighthouse에서 점검하지 않는 추가적인 요소가 검색 순위에 영향을 줄 수도 있습니다. [자세히 알아보기](https://support.9oo91e.qjz9zk/webmasters/answer/35769)"
   },
   "lighthouse-core/config/default-config.js | seoCategoryManualDescription": {
     "message": "사이트에서 이러한 추가 검증 도구를 실행하여 추가적인 검색엔진 최적화 권장사항을 확인합니다."
@@ -1311,7 +1311,7 @@
     "message": "크롤링 및 색인 생성"
   },
   "lighthouse-core/config/default-config.js | seoMobileGroupDescription": {
-    "message": "사용자가 콘텐츠를 읽기 위해 페이지를 확대하거나 축소할 필요가 없도록 모바일 친화적인 페이지를 지원하세요. [자세히 알아보기](https://developers.google.com/search/mobile-sites/)"
+    "message": "사용자가 콘텐츠를 읽기 위해 페이지를 확대하거나 축소할 필요가 없도록 모바일 친화적인 페이지를 지원하세요. [자세히 알아보기](https://developers.9oo91e.qjz9zk/search/mobile-sites/)"
   },
   "lighthouse-core/config/default-config.js | seoMobileGroupTitle": {
     "message": "모바일 친화적"
@@ -1458,7 +1458,7 @@
     "message": "실험실 데이터"
   },
   "lighthouse-core/report/html/renderer/util.js | lsPerformanceCategoryDescription": {
-    "message": "에뮬레이션된 모바일 네트워크에서 분석한 현재 페이지의 [Lighthouse](https://developers.google.com/web/tools/lighthouse/) 결과입니다. 값은 추정치이며 달라질 수 있습니다."
+    "message": "에뮬레이션된 모바일 네트워크에서 분석한 현재 페이지의 [Lighthouse](https://developers.9oo91e.qjz9zk/web/tools/lighthouse/) 결과입니다. 값은 추정치이며 달라질 수 있습니다."
   },
   "lighthouse-core/report/html/renderer/util.js | manualAuditsGroupTitle": {
     "message": "직접 확인해야 하는 추가 항목"
@@ -1518,10 +1518,10 @@
     "message": "다양한 [WordPress 플러그인](https://wordpress.org/plugins/search/minify+javascript/)을 사용해 스크립트를 연결, 축소, 압축함으로써 사이트 속도를 높일 수 있습니다. 또한 가능한 경우 빌드 프로세스를 사용하여 축소 작업을 미리 실행할 수도 있습니다."
   },
   "stack-packs/packs/wordpress.js | unused_css_rules": {
-    "message": "페이지에서 사용되지 않는 CSS를 로드하는 [WordPress 플러그인](https://wordpress.org/plugins/) 개수를 줄이거나 전환하는 것이 좋습니다. 과도한 CSS를 부가하는 플러그인이 무엇인지 확인하려면 Chrome DevTools의 [코드 범위](https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverage)를 실행해 보세요. 스타일시트의 URL에서 관련된 테마 또는 플러그인을 확인할 수 있습니다. 목록에서 코드 범위에 빨간색이 길게 표시된 스타일시트가 있는 플러그인을 찾아보세요. 실제로 페이지에서 사용되는 플러그인은 대기열에 하나의 스타일시트만 포함해야 합니다."
+    "message": "페이지에서 사용되지 않는 CSS를 로드하는 [WordPress 플러그인](https://wordpress.org/plugins/) 개수를 줄이거나 전환하는 것이 좋습니다. 과도한 CSS를 부가하는 플러그인이 무엇인지 확인하려면 Chrome DevTools의 [코드 범위](https://developers.9oo91e.qjz9zk/web/updates/2017/04/devtools-release-notes#coverage)를 실행해 보세요. 스타일시트의 URL에서 관련된 테마 또는 플러그인을 확인할 수 있습니다. 목록에서 코드 범위에 빨간색이 길게 표시된 스타일시트가 있는 플러그인을 찾아보세요. 실제로 페이지에서 사용되는 플러그인은 대기열에 하나의 스타일시트만 포함해야 합니다."
   },
   "stack-packs/packs/wordpress.js | unused_javascript": {
-    "message": "페이지에서 사용되지 않는 JavaScript를 로드하는 [WordPress 플러그인](https://wordpress.org/plugins/) 개수를 줄이거나 전환하는 것이 좋습니다. 과도한 JS를 부가하는 플러그인이 무엇인지 확인하려면 Chrome DevTools의 [코드 범위](https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverage)를 실행해 보세요. 스크립트의 URL에서 관련 테마 또는 플러그인을 확인할 수 있습니다. 목록에서 코드 범위에 빨간색이 길게 표시된 스크립트가 있는 플러그인을 찾아보세요. 실제로 페이지에서 사용되는 플러그인은 대기열에 하나의 스크립트만 포함해야 합니다."
+    "message": "페이지에서 사용되지 않는 JavaScript를 로드하는 [WordPress 플러그인](https://wordpress.org/plugins/) 개수를 줄이거나 전환하는 것이 좋습니다. 과도한 JS를 부가하는 플러그인이 무엇인지 확인하려면 Chrome DevTools의 [코드 범위](https://developers.9oo91e.qjz9zk/web/updates/2017/04/devtools-release-notes#coverage)를 실행해 보세요. 스크립트의 URL에서 관련 테마 또는 플러그인을 확인할 수 있습니다. 목록에서 코드 범위에 빨간색이 길게 표시된 스크립트가 있는 플러그인을 찾아보세요. 실제로 페이지에서 사용되는 플러그인은 대기열에 하나의 스크립트만 포함해야 합니다."
   },
   "stack-packs/packs/wordpress.js | uses_long_cache_ttl": {
     "message": "[WordPress 브라우저 캐싱](https://codex.wordpress.org/WordPress_Optimization#Browser_Caching)에 관해 자세히 알아보세요."

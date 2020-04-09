@@ -522,7 +522,7 @@
     "message": "Значение"
   },
   "lighthouse-core/audits/dobetterweb/dom-size.js | description": {
-    "message": "Разработчики браузеров рекомендуют размещать на странице не более 1500 элементов DOM. Оптимальные показатели: глубина дерева – менее 32 элементов, количество дочерних и родительских элементов – менее 60. Сложная структура DOM может привести к использованию большего объема памяти, замедлить [вычисление стилей](https://developers.google.com/web/fundamentals/performance/rendering/reduce-the-scope-and-complexity-of-style-calculations) и увеличить затраты на [компоновку шаблонов](https://developers.google.com/speed/articles/reflow). [Подробнее…](https://web.dev/dom-size)"
+    "message": "Разработчики браузеров рекомендуют размещать на странице не более 1500 элементов DOM. Оптимальные показатели: глубина дерева – менее 32 элементов, количество дочерних и родительских элементов – менее 60. Сложная структура DOM может привести к использованию большего объема памяти, замедлить [вычисление стилей](https://developers.9oo91e.qjz9zk/web/fundamentals/performance/rendering/reduce-the-scope-and-complexity-of-style-calculations) и увеличить затраты на [компоновку шаблонов](https://developers.9oo91e.qjz9zk/speed/articles/reflow). [Подробнее…](https://web.dev/dom-size)"
   },
   "lighthouse-core/audits/dobetterweb/dom-size.js | displayValue": {
     "message": "{itemCount,plural, =1{1 элемент}one{# элемент}few{# элемента}many{# элементов}other{# элемента}}"
@@ -807,7 +807,7 @@
     "message": "Время загрузки для взаимодействия"
   },
   "lighthouse-core/audits/metrics/max-potential-fid.js | description": {
-    "message": "Максимальная потенциальная задержка после первого ввода показывает время выполнения самой длительной задачи в миллисекундах. [Подробнее…](https://developers.google.com/web/updates/2018/05/first-input-delay)"
+    "message": "Максимальная потенциальная задержка после первого ввода показывает время выполнения самой длительной задачи в миллисекундах. [Подробнее…](https://developers.9oo91e.qjz9zk/web/updates/2018/05/first-input-delay)"
   },
   "lighthouse-core/audits/metrics/max-potential-fid.js | title": {
     "message": "Макс. потенц. задержка после первого ввода"
@@ -852,7 +852,7 @@
     "message": "Сверх бюджета"
   },
   "lighthouse-core/audits/performance-budget.js | description": {
-    "message": "Следите за тем, чтобы количество и размер сетевых запросов соответствовали целям, установленным в бюджете производительности. [Подробнее…](https://developers.google.com/web/tools/lighthouse/audits/budgets)"
+    "message": "Следите за тем, чтобы количество и размер сетевых запросов соответствовали целям, установленным в бюджете производительности. [Подробнее…](https://developers.9oo91e.qjz9zk/web/tools/lighthouse/audits/budgets)"
   },
   "lighthouse-core/audits/performance-budget.js | requestCountOverBudget": {
     "message": "{count,plural, =1{1 запрос}one{# запрос}few{# запроса}many{# запросов}other{# запроса}}"
@@ -876,7 +876,7 @@
     "message": "Избегайте большого количества переадресаций"
   },
   "lighthouse-core/audits/resource-summary.js | description": {
-    "message": "Чтобы установить бюджет для количества и размера ресурсов на странице, добавьте файл budget.json. [Подробнее…](https://developers.google.com/web/tools/lighthouse/audits/budgets)"
+    "message": "Чтобы установить бюджет для количества и размера ресурсов на странице, добавьте файл budget.json. [Подробнее…](https://developers.9oo91e.qjz9zk/web/tools/lighthouse/audits/budgets)"
   },
   "lighthouse-core/audits/resource-summary.js | displayValue": {
     "message": "{requestCount,plural, =1{1 запрос • {byteCount, number, bytes} КБ}one{# запрос • {byteCount, number, bytes} КБ}few{# запроса • {byteCount, number, bytes} КБ}many{# запросов • {byteCount, number, bytes} КБ}other{# запроса • {byteCount, number, bytes} КБ}}"
@@ -969,7 +969,7 @@
     "message": "У ссылок есть описания"
   },
   "lighthouse-core/audits/seo/manual/structured-data.js | description": {
-    "message": "Для тестирования структурированных данных воспользуйтесь [инструментом проверки](https://search.google.com/structured-data/testing-tool/) и [инструментом Structured Data Linter](http://linter.structured-data.org/). [Подробнее…](https://web.dev/structured-data)"
+    "message": "Для тестирования структурированных данных воспользуйтесь [инструментом проверки](https://search.9oo91e.qjz9zk/structured-data/testing-tool/) и [инструментом Structured Data Linter](http://linter.structured-data.org/). [Подробнее…](https://web.dev/structured-data)"
   },
   "lighthouse-core/audits/seo/manual/structured-data.js | title": {
     "message": "Структурированные данные действительны"
@@ -1080,7 +1080,7 @@
     "message": "Сторонний поставщик"
   },
   "lighthouse-core/audits/third-party-summary.js | description": {
-    "message": "Сторонний код может сильно замедлить загрузку страниц сайта. Рекомендуем использовать только самые необходимые сторонние ресурсы и сделать так, чтобы они загружались в последнюю очередь. [Подробнее…](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/loading-third-party-javascript/)"
+    "message": "Сторонний код может сильно замедлить загрузку страниц сайта. Рекомендуем использовать только самые необходимые сторонние ресурсы и сделать так, чтобы они загружались в последнюю очередь. [Подробнее…](https://developers.9oo91e.qjz9zk/web/fundamentals/performance/optimizing-content-efficiency/loading-third-party-javascript/)"
   },
   "lighthouse-core/audits/third-party-summary.js | displayValue": {
     "message": "Сторонний код заблокировал основной поток на {timeInMs, number, milliseconds} мс"
@@ -1194,10 +1194,10 @@
     "message": "Рекомендации"
   },
   "lighthouse-core/config/default-config.js | a11yCategoryDescription": {
-    "message": "Узнайте, какие трудности могут возникнуть у людей с ограниченными возможностями при использовании вашего веб-приложения, и [сделайте его доступнее](https://developers.google.com/web/fundamentals/accessibility). Тестирование вручную поможет выявить проблемы доступности, которые не были обнаружены автоматически."
+    "message": "Узнайте, какие трудности могут возникнуть у людей с ограниченными возможностями при использовании вашего веб-приложения, и [сделайте его доступнее](https://developers.9oo91e.qjz9zk/web/fundamentals/accessibility). Тестирование вручную поможет выявить проблемы доступности, которые не были обнаружены автоматически."
   },
   "lighthouse-core/config/default-config.js | a11yCategoryManualDescription": {
-    "message": "Ручная проверка позволяет охватить области, которые невозможно протестировать автоматически. Подробнее [о проверке специальных возможностей](https://developers.google.com/web/fundamentals/accessibility/how-to-review)…"
+    "message": "Ручная проверка позволяет охватить области, которые невозможно протестировать автоматически. Подробнее [о проверке специальных возможностей](https://developers.9oo91e.qjz9zk/web/fundamentals/accessibility/how-to-review)…"
   },
   "lighthouse-core/config/default-config.js | a11yCategoryTitle": {
     "message": "Специальные возможности"
@@ -1272,10 +1272,10 @@
     "message": "Производительность"
   },
   "lighthouse-core/config/default-config.js | pwaCategoryDescription": {
-    "message": "Здесь проверяется соответствие нормам современных веб-приложений. [Подробнее…](https://developers.google.com/web/progressive-web-apps/checklist)"
+    "message": "Здесь проверяется соответствие нормам современных веб-приложений. [Подробнее…](https://developers.9oo91e.qjz9zk/web/progressive-web-apps/checklist)"
   },
   "lighthouse-core/config/default-config.js | pwaCategoryManualDescription": {
-    "message": "Lighthouse не проверяет эти пункты автоматически, но они необходимы для соответствия базовому [контрольному списку современных веб-приложений](https://developers.google.com/web/progressive-web-apps/checklist). Они не влияют на показатель приложения, однако их следует проверить вручную."
+    "message": "Lighthouse не проверяет эти пункты автоматически, но они необходимы для соответствия базовому [контрольному списку современных веб-приложений](https://developers.9oo91e.qjz9zk/web/progressive-web-apps/checklist). Они не влияют на показатель приложения, однако их следует проверить вручную."
   },
   "lighthouse-core/config/default-config.js | pwaCategoryTitle": {
     "message": "Современное веб-приложение"
@@ -1290,7 +1290,7 @@
     "message": "Соответствие рекомендациям для PWA"
   },
   "lighthouse-core/config/default-config.js | seoCategoryDescription": {
-    "message": "Эти проверки позволяют оптимизировать сайт для успешной индексации поисковыми системами. Lighthouse проверяет не все факторы, которые могут повлиять на позицию сайта в результатах поиска. [Подробнее…](https://support.google.com/webmasters/answer/35769)"
+    "message": "Эти проверки позволяют оптимизировать сайт для успешной индексации поисковыми системами. Lighthouse проверяет не все факторы, которые могут повлиять на позицию сайта в результатах поиска. [Подробнее…](https://support.9oo91e.qjz9zk/webmasters/answer/35769)"
   },
   "lighthouse-core/config/default-config.js | seoCategoryManualDescription": {
     "message": "Проверьте, соответствует ли ваш сайт рекомендациям по поисковой оптимизации (SEO), с помощью этих дополнительных сервисов."
@@ -1311,7 +1311,7 @@
     "message": "Сканирование и индексирование"
   },
   "lighthouse-core/config/default-config.js | seoMobileGroupDescription": {
-    "message": "Убедитесь, что ваши страницы оптимизированы для мобильных устройств, чтобы пользователям не приходилось менять масштаб страниц или подстраивать их под размер экрана. [Подробнее…](https://developers.google.com/search/mobile-sites/)"
+    "message": "Убедитесь, что ваши страницы оптимизированы для мобильных устройств, чтобы пользователям не приходилось менять масштаб страниц или подстраивать их под размер экрана. [Подробнее…](https://developers.9oo91e.qjz9zk/search/mobile-sites/)"
   },
   "lighthouse-core/config/default-config.js | seoMobileGroupTitle": {
     "message": "Оптимизация для мобильных устройств"
@@ -1458,7 +1458,7 @@
     "message": "Лабораторные данные"
   },
   "lighthouse-core/report/html/renderer/util.js | lsPerformanceCategoryDescription": {
-    "message": "Результаты анализа [Lighthouse](https://developers.google.com/web/tools/lighthouse/), проведенного для текущей страницы в эмулированной мобильной сети. Значения приблизительные и могут изменяться."
+    "message": "Результаты анализа [Lighthouse](https://developers.9oo91e.qjz9zk/web/tools/lighthouse/), проведенного для текущей страницы в эмулированной мобильной сети. Значения приблизительные и могут изменяться."
   },
   "lighthouse-core/report/html/renderer/util.js | manualAuditsGroupTitle": {
     "message": "Дополнительные объекты для проверки вручную"
@@ -1518,10 +1518,10 @@
     "message": "Ускорьте загрузку сайта с помощью [плагинов WordPress](https://wordpress.org/plugins/search/minify+javascript/), которые позволяют объединять, уменьшать и сжимать скрипты. Рекомендуем использовать такие плагины на этапе сборки."
   },
   "stack-packs/packs/wordpress.js | unused_css_rules": {
-    "message": "Рекомендуем заменить или удалить [плагины WordPress](https://wordpress.org/plugins/), которые загружают неиспользуемый код CSS на вашей странице. Чтобы найти такие плагины, запустите [анализ покрытия кода](https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverage) в инструментах разработчика Chrome. Определить нужный плагин или тему можно по URL таблицы стилей. Обращайте внимание на плагины с большим количеством таблиц стилей, в которых при анализе покрытия кода преобладает красный цвет. Таблица стилей должна попадать в очередь, только если она используется на странице."
+    "message": "Рекомендуем заменить или удалить [плагины WordPress](https://wordpress.org/plugins/), которые загружают неиспользуемый код CSS на вашей странице. Чтобы найти такие плагины, запустите [анализ покрытия кода](https://developers.9oo91e.qjz9zk/web/updates/2017/04/devtools-release-notes#coverage) в инструментах разработчика Chrome. Определить нужный плагин или тему можно по URL таблицы стилей. Обращайте внимание на плагины с большим количеством таблиц стилей, в которых при анализе покрытия кода преобладает красный цвет. Таблица стилей должна попадать в очередь, только если она используется на странице."
   },
   "stack-packs/packs/wordpress.js | unused_javascript": {
-    "message": "Рекомендуем заменить или удалить [плагины WordPress](https://wordpress.org/plugins/), которые загружают неиспользуемый код JavaScript на вашей странице. Чтобы найти такие плагины, запустите [анализ покрытия кода](https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverage) в инструментах разработчика Chrome. Определить нужный плагин или тему можно по URL скрипта. Обращайте внимание на плагины с большим количеством скриптов, в которых при анализе покрытия кода преобладает красный цвет. Скрипт должен попадать в очередь, только если он используется на странице."
+    "message": "Рекомендуем заменить или удалить [плагины WordPress](https://wordpress.org/plugins/), которые загружают неиспользуемый код JavaScript на вашей странице. Чтобы найти такие плагины, запустите [анализ покрытия кода](https://developers.9oo91e.qjz9zk/web/updates/2017/04/devtools-release-notes#coverage) в инструментах разработчика Chrome. Определить нужный плагин или тему можно по URL скрипта. Обращайте внимание на плагины с большим количеством скриптов, в которых при анализе покрытия кода преобладает красный цвет. Скрипт должен попадать в очередь, только если он используется на странице."
   },
   "stack-packs/packs/wordpress.js | uses_long_cache_ttl": {
     "message": "Подробнее [о кешировании в браузере на платформе WordPress](https://codex.wordpress.org/WordPress_Optimization#Browser_Caching)…"

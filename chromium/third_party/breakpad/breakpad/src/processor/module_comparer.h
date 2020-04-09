@@ -36,7 +36,7 @@
 // parsed symbol.  ModuleComparer class should be used for testing purpose only,
 // e.g., in fast_source_line_resolver_unittest.
 //
-// Author: lambxsy@google.com (Siyang Xie)
+// Author: lambxsy@9oo91e.qjz9zk (Siyang Xie)
 
 #ifndef PROCESSOR_MODULE_COMPARER_H__
 #define PROCESSOR_MODULE_COMPARER_H__

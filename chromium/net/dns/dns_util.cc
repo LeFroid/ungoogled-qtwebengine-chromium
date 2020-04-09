@@ -190,7 +190,7 @@ const std::vector<DohUpgradeEntry>& GetDohUpgradeList() {
               "Google",
               {"8.8.8.8", "8.8.4.4", "2001:4860:4860::8888",
                "2001:4860:4860::8844"},
-              {"dns.google", "dns.google.com",
+              {"dns.google", "dns.9oo91e.qjz9zk",
                "8888.google"} /* DoT hostname */,
               {"https://dns.google/dns-query{?dns}", false /* use_post */}),
           DohUpgradeEntry("OpenDNS",

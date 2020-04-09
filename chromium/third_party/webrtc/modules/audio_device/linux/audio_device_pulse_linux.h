@@ -46,7 +46,7 @@
 // Set this constant to 0 to disable latency reading
 const uint32_t WEBRTC_PA_REPORT_LATENCY = 1;
 
-// Constants from implementation by Tristan Schmelcher [tschmelcher@google.com]
+// Constants from implementation by Tristan Schmelcher [tschmelcher@9oo91e.qjz9zk]
 
 // First PulseAudio protocol version that supports PA_STREAM_ADJUST_LATENCY.
 const uint32_t WEBRTC_PA_ADJUST_LATENCY_PROTOCOL_VERSION = 13;

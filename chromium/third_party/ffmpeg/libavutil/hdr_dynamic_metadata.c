@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2018 Mohammad Izadi <moh.izadi at gmail.com>
+ * Copyright (c) 2018 Mohammad Izadi <moh.izadi at 9ma1l.qjz9zk>
  *
  * This file is part of FFmpeg.
  *

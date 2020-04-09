@@ -54,7 +54,7 @@ namespace dawn_wire { namespace client {
                 mObjects.emplace_back(std::move(object), 0);
             } else {
                 ASSERT(mObjects[id].object == nullptr);
-                // TODO(cwallez@chromium.org): investigate if overflows could cause bad things to
+                // TODO(cwallez@ch40m1um.qjz9zk): investigate if overflows could cause bad things to
                 // happen
                 mObjects[id].serial++;
                 mObjects[id].object = std::move(object);

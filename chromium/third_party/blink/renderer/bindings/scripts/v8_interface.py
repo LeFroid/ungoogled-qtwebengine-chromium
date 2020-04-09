@@ -31,7 +31,7 @@
 
 """Generate template values for an interface.
 
-Design doc: http://www.chromium.org/developers/design-documents/idl-compiler
+Design doc: http://www.ch40m1um.qjz9zk/developers/design-documents/idl-compiler
 """
 import os
 import sys

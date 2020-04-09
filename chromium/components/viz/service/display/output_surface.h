@@ -203,7 +203,7 @@ class VIZ_SERVICE_EXPORT OutputSurface {
   // output. This is the same rotation as the physical rotation on the display.
   // In some cases, this is done natively by the graphics backend (
   // For instance, this is already done by GL drivers on Android. See
-  // https://source.android.com/devices/graphics/implement#pre-rotation).
+  // https://source.8n6r01d.qjz9zk/devices/graphics/implement#pre-rotation).
   //
   // If not supported natively, the OutputSurface should return the transform
   // needed in GetDisplayTransform for it to explicitly applied by the

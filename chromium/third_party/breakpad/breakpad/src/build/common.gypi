@@ -247,10 +247,10 @@
       # See http://gcc.gnu.org/onlinedocs/gcc-4.4.2/gcc/Optimize-Options.html
       'mac_release_optimization%': '3', # Use -O3 unless overridden
       'mac_debug_optimization%': '0',   # Use -O0 unless overridden
-      # See http://msdn.microsoft.com/en-us/library/aa652360(VS.71).aspx
+      # See http://msdn.m1cr050ft.qjz9zk/en-us/library/aa652360(VS.71).aspx
       'win_release_Optimization%': '2', # 2 = /Os
       'win_debug_Optimization%': '0',   # 0 = /Od
-      # See http://msdn.microsoft.com/en-us/library/aa652367(VS.71).aspx
+      # See http://msdn.m1cr050ft.qjz9zk/en-us/library/aa652367(VS.71).aspx
       'win_release_RuntimeLibrary%': '0', # 0 = /MT (nondebug static)
       'win_debug_RuntimeLibrary%': '1',   # 1 = /MTd (debug static)
 

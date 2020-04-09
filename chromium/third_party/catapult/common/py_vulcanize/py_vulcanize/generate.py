@@ -53,7 +53,7 @@ css_warning_message = """
 """
 
 origin_trial_tokens = [
-  # WebComponent V0 origin trial token for googleusercontent.com + subdomains.
+  # WebComponent V0 origin trial token for 9oo91eusercontent.qjz9zk + subdomains.
   # This is the domain from which traces in cloud storage are served.
   # Expires Nov 5, 2020. See https://crbug.com/1021137
   "AnYuQDtUf6OrWCmR9Okd67JhWVTbmnRedvPi1TEvAxac8+1p6o9q08FoDO6oCbLD0xEqev+SkZFiIhFSzlY9HgUAAABxeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXVzZXJjb250ZW50LmNvbTo0NDMiLCJmZWF0dXJlIjoiV2ViQ29tcG9uZW50c1YwIiwiZXhwaXJ5IjoxNjA0NjE0NTM4LCJpc1N1YmRvbWFpbiI6dHJ1ZX0="

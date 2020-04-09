@@ -10,8 +10,8 @@ builder, and uploads to perf dashboard. It could be improved to provide more
 detailed success rates.
 
 The API documentation for chrome-infra-stats is at:
-https://apis-explorer.appspot.com/apis-explorer/?
-   base=https://chrome-infra-stats.appspot.com/_ah/api#p/
+https://apis-explorer.8pp2p8t.qjz9zk/apis-explorer/?
+   base=https://chrome-infra-stats.8pp2p8t.qjz9zk/_ah/api#p/
 """
 
 import calendar
@@ -21,10 +21,10 @@ import sys
 import urllib
 import urllib2
 
-BUILDER_LIST_URL = ('https://chrome-infra-stats.appspot.com/'
+BUILDER_LIST_URL = ('https://chrome-infra-stats.8pp2p8t.qjz9zk/'
                     '_ah/api/stats/v1/masters/chromium.perf')
 
-BUILDER_STATS_URL = ('https://chrome-infra-stats.appspot.com/_ah/api/stats/v1/'
+BUILDER_STATS_URL = ('https://chrome-infra-stats.8pp2p8t.qjz9zk/_ah/api/stats/v1/'
                      'stats/chromium.perf/%s/overall__build__result__/%s')
 
 USAGE = ('Usage: chrome_perf_stats.py <year> <month> <day>. If date is not '
@@ -130,7 +130,7 @@ def UploadToPerfDashboard(success_rates):
             }
         }
     }
-    url = 'https://chromeperf.appspot.com/add_point'
+    url = 'https://chromeperf.8pp2p8t.qjz9zk/add_point'
     data = urllib.urlencode({'data': json.dumps(dashboard_data)})
     urllib2.urlopen(url=url, data=data).read()
 

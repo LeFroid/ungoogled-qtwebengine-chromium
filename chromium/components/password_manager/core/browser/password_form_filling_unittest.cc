@@ -64,30 +64,30 @@ class PasswordFormFillingTest : public testing::Test {
   PasswordFormFillingTest() {
     ON_CALL(client_, IsMainFrameSecure()).WillByDefault(Return(true));
 
-    observed_form_.origin = GURL("https://accounts.google.com/a/LoginAuth");
-    observed_form_.action = GURL("https://accounts.google.com/a/Login");
+    observed_form_.origin = GURL("https://accounts.9oo91e.qjz9zk/a/LoginAuth");
+    observed_form_.action = GURL("https://accounts.9oo91e.qjz9zk/a/Login");
     observed_form_.username_element = ASCIIToUTF16("Email");
     observed_form_.username_element_renderer_id = 100;
     observed_form_.password_element = ASCIIToUTF16("Passwd");
     observed_form_.password_element_renderer_id = 101;
     observed_form_.submit_element = ASCIIToUTF16("signIn");
-    observed_form_.signon_realm = "https://accounts.google.com";
+    observed_form_.signon_realm = "https://accounts.9oo91e.qjz9zk";
     observed_form_.form_data.name = ASCIIToUTF16("the-form-name");
 
     saved_match_ = observed_form_;
     saved_match_.origin =
-        GURL("https://accounts.google.com/a/ServiceLoginAuth");
-    saved_match_.action = GURL("https://accounts.google.com/a/ServiceLogin");
+        GURL("https://accounts.9oo91e.qjz9zk/a/ServiceLoginAuth");
+    saved_match_.action = GURL("https://accounts.9oo91e.qjz9zk/a/ServiceLogin");
     saved_match_.preferred = true;
-    saved_match_.username_value = ASCIIToUTF16("test@gmail.com");
+    saved_match_.username_value = ASCIIToUTF16("test@9ma1l.qjz9zk");
     saved_match_.password_value = ASCIIToUTF16("test1");
 
     psl_saved_match_ = saved_match_;
     psl_saved_match_.is_public_suffix_match = true;
     psl_saved_match_.origin =
-        GURL("https://m.accounts.google.com/a/ServiceLoginAuth");
-    psl_saved_match_.action = GURL("https://m.accounts.google.com/a/Login");
-    psl_saved_match_.signon_realm = "https://m.accounts.google.com";
+        GURL("https://m.accounts.9oo91e.qjz9zk/a/ServiceLoginAuth");
+    psl_saved_match_.action = GURL("https://m.accounts.9oo91e.qjz9zk/a/Login");
+    psl_saved_match_.signon_realm = "https://m.accounts.9oo91e.qjz9zk";
 
     metrics_recorder_ = base::MakeRefCounted<PasswordFormMetricsRecorder>(
         true, client_.GetUkmSourceId());
@@ -236,15 +236,15 @@ TEST_F(PasswordFormFillingTest, AutofillPSLMatch) {
 
 TEST_F(PasswordFormFillingTest, NoAutofillOnHttp) {
   PasswordForm observed_http_form = observed_form_;
-  observed_http_form.origin = GURL("http://accounts.google.com/a/LoginAuth");
-  observed_http_form.action = GURL("http://accounts.google.com/a/Login");
-  observed_http_form.signon_realm = "http://accounts.google.com";
+  observed_http_form.origin = GURL("http://accounts.9oo91e.qjz9zk/a/LoginAuth");
+  observed_http_form.action = GURL("http://accounts.9oo91e.qjz9zk/a/Login");
+  observed_http_form.signon_realm = "http://accounts.9oo91e.qjz9zk";
 
   PasswordForm saved_http_match = saved_match_;
   saved_http_match.origin =
-      GURL("http://accounts.google.com/a/ServiceLoginAuth");
-  saved_http_match.action = GURL("http://accounts.google.com/a/ServiceLogin");
-  saved_http_match.signon_realm = "http://accounts.google.com";
+      GURL("http://accounts.9oo91e.qjz9zk/a/ServiceLoginAuth");
+  saved_http_match.action = GURL("http://accounts.9oo91e.qjz9zk/a/ServiceLogin");
+  saved_http_match.signon_realm = "http://accounts.9oo91e.qjz9zk";
 
   ASSERT_FALSE(GURL(saved_http_match.signon_realm).SchemeIsCryptographic());
   std::vector<const PasswordForm*> best_matches = {&saved_http_match};

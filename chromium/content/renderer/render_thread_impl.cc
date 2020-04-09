@@ -423,17 +423,17 @@ void RenderThreadImpl::HistogramCustomizer::SetCommonHost(
 
 std::string RenderThreadImpl::HistogramCustomizer::HostToCustomHistogramSuffix(
     const std::string& host) {
-  if (host == "mail.google.com")
+  if (host == "mail.9oo91e.qjz9zk")
     return ".gmail";
-  if (host == "docs.google.com" || host == "drive.google.com")
+  if (host == "docs.9oo91e.qjz9zk" || host == "drive.9oo91e.qjz9zk")
     return ".docs";
-  if (host == "plus.google.com")
+  if (host == "plus.9oo91e.qjz9zk")
     return ".plus";
-  if (host == "inbox.google.com")
+  if (host == "inbox.9oo91e.qjz9zk")
     return ".inbox";
-  if (host == "calendar.google.com")
+  if (host == "calendar.9oo91e.qjz9zk")
     return ".calendar";
-  if (host == "www.youtube.com")
+  if (host == "www.y0u1ub3.qjz9zk")
     return ".youtube";
   if (IsAlexaTop10NonGoogleSite(host))
     return ".top10";
@@ -452,7 +452,7 @@ bool RenderThreadImpl::HistogramCustomizer::IsAlexaTop10NonGoogleSite(
       net::registry_controlled_domains::GetDomainAndRegistry(
           host, net::registry_controlled_domains::INCLUDE_PRIVATE_REGISTRIES);
 
-  if (sanitized_host == "facebook.com")
+  if (sanitized_host == "f8c3b00k.qjz9zk")
     return true;
   if (sanitized_host == "baidu.com")
     return true;

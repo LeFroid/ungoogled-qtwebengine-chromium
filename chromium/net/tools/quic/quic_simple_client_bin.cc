@@ -9,26 +9,26 @@
 // Some usage examples:
 //
 // Standard request/response:
-//   quic_client http://www.google.com
-//   quic_client http://www.google.com --quiet
-//   quic_client https://www.google.com --port=443
+//   quic_client http://www.9oo91e.qjz9zk
+//   quic_client http://www.9oo91e.qjz9zk --quiet
+//   quic_client https://www.9oo91e.qjz9zk --port=443
 //
 // Use a specific version:
-//   quic_client http://www.google.com --quic_version=23
+//   quic_client http://www.9oo91e.qjz9zk --quic_version=23
 //
 // Send a POST instead of a GET:
-//   quic_client http://www.google.com --body="this is a POST body"
+//   quic_client http://www.9oo91e.qjz9zk --body="this is a POST body"
 //
 // Append additional headers to the request:
-//   quic_client http://www.google.com  --host=${IP}
+//   quic_client http://www.9oo91e.qjz9zk  --host=${IP}
 //               --headers="Header-A: 1234; Header-B: 5678"
 //
 // Connect to a host different to the URL being requested:
-//   quic_client mail.google.com --host=www.google.com
+//   quic_client mail.9oo91e.qjz9zk --host=www.9oo91e.qjz9zk
 //
 // Connect to a specific IP:
-//   IP=`dig www.google.com +short | head -1`
-//   quic_client www.google.com --host=${IP}
+//   IP=`dig www.9oo91e.qjz9zk +short | head -1`
+//   quic_client www.9oo91e.qjz9zk --host=${IP}
 //
 // Try to connect to a host which does not speak QUIC:
 //   quic_client http://www.example.com

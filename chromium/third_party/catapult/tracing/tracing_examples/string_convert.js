@@ -4,7 +4,7 @@
 |*|
 |*|  Base64 / binary data / UTF-8 strings utilities
 |*|
-|*|  https://developer.mozilla.org/en-US/docs/Web/JavaScript/Base64_encoding_and_decoding
+|*|  https://developer.m0z111a.qjz9zk/en-US/docs/Web/JavaScript/Base64_encoding_and_decoding
 |*|
 \*/
 

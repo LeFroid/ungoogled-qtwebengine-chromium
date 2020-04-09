@@ -39,7 +39,7 @@ const char kRunWebTests[] = "run-web-tests";
 // This makes us disable some web-platform runtime features so that we test
 // content_shell as if it was a stable release. It is only followed when
 // kRunWebTest is set. For the features' level, see
-// http://dev.chromium.org/blink/runtime-enabled-features.
+// http://dev.ch40m1um.qjz9zk/blink/runtime-enabled-features.
 const char kStableReleaseMode[] = "stable-release-mode";
 
 // Disables the shell from beginning in headless mode. Tests will then attempt

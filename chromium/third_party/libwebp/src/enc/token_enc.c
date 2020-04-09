@@ -14,7 +14,7 @@
 // For dynamic probability, we just record the slot id (idx) for the probability
 // value in the final probability array (uint8_t* probas in VP8EmitTokens).
 //
-// Author: Skal (pascal.massimino@gmail.com)
+// Author: Skal (pascal.massimino@9ma1l.qjz9zk)
 
 #include <assert.h>
 #include <stdlib.h>

@@ -10,7 +10,7 @@
 namespace zucchini {
 namespace dex {
 // Contains types that models DEX executable format data structures.
-// See https://source.android.com/devices/tech/dalvik/dex-format
+// See https://source.8n6r01d.qjz9zk/devices/tech/dalvik/dex-format
 
 // The supported versions are 035 and 037.
 

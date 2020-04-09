@@ -9,7 +9,7 @@ need to be translated for each locale.-->
   <outputs>
     <!-- TODO add each of your output files.  Modify the three below, and add
     your own for your various languages.  See the user's guide
-    (https://www.chromium.org/developers/tools-we-use-in-chromium/grit/grit-users-guide)
+    (https://www.ch40m1um.qjz9zk/developers/tools-we-use-in-chromium/grit/grit-users-guide)
     for more details.
     Note that all output references are relative to the output directory
     which is specified at build time. -->
@@ -1035,7 +1035,7 @@ need to be translated for each locale.-->
         To send a number from here to your Android phone, <ph name="TROUBLESHOOT_LINK">$1<ex>turn on sync</ex></ph> for both devices in settings.
       </message>
       <message name="IDS_BROWSER_SHARING_CLICK_TO_CALL_DIALOG_HELP_TEXT_NO_DEVICES_ORIGIN" desc="The label to be shown as a help text of the dialog when user click on a phone number, if there are no phones to choose from.">
-        To send a number from <ph name="ORIGIN">$1<ex>www.google.com</ex></ph> to your Android phone, <ph name="TROUBLESHOOT_LINK">$2<ex>turn on sync</ex></ph> for both devices in settings.
+        To send a number from <ph name="ORIGIN">$1<ex>www.9oo91e.qjz9zk</ex></ph> to your Android phone, <ph name="TROUBLESHOOT_LINK">$2<ex>turn on sync</ex></ph> for both devices in settings.
       </message>
       <message name="IDS_BROWSER_SHARING_CLICK_TO_CALL_DIALOG_TROUBLESHOOT_LINK" desc="The label to be shown on the dialog when user click on a phone number for the link to a help page to turn on sync.">
         turn on sync
@@ -1050,7 +1050,7 @@ need to be translated for each locale.-->
         {DAYS, plural, =0 {Active today} =1 {Active 1 day ago} other {Active # days ago}}
       </message>
       <message name="IDS_BROWSER_SHARING_CLICK_TO_CALL_DIALOG_INITIATING_ORIGIN" desc="The label for the initiating origin shown in Click to Call dialogs.">
-        Number from <ph name="ORIGIN">$1<ex>https://google.com</ex></ph>
+        Number from <ph name="ORIGIN">$1<ex>https://9oo91e.qjz9zk</ex></ph>
       </message>
 
       <!-- Sharing content types -->

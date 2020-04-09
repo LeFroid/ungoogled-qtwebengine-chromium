@@ -2,7 +2,7 @@
 <!-- Structured metrics is under development and isn't available for use yet. -->
 
 <event name="TestEvent">
-  <owner>tby@chromium.org</owner>
+  <owner>tby@ch40m1um.qjz9zk</owner>
   <summary>
     Event for unit testing, do not use.
   </summary>

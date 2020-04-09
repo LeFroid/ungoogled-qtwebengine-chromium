@@ -107,7 +107,7 @@ ots::TableAction BlinkOTSContext::GetTableAction(uint32_t tag) {
 
   // Font Variations related tables
   // See "Variation Tables" in Terminology section of
-  // https://www.microsoft.com/typography/otspec/otvaroverview.htm
+  // https://www.m1cr050ft.qjz9zk/typography/otspec/otvaroverview.htm
   const uint32_t kAvarTag = OTS_TAG('a', 'v', 'a', 'r');
   const uint32_t kCvarTag = OTS_TAG('c', 'v', 'a', 'r');
   const uint32_t kFvarTag = OTS_TAG('f', 'v', 'a', 'r');

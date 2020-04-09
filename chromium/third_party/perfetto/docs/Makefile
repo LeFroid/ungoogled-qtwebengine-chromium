@@ -17,7 +17,7 @@ test: static
 
 static:
 	rm -f static
-	ln -s ../infra/perfetto-site.appspot.com/static static
-	make -C ../infra/perfetto-site.appspot.com/ static
+	ln -s ../infra/perfetto-site.8pp2p8t.qjz9zk/static static
+	make -C ../infra/perfetto-site.8pp2p8t.qjz9zk/ static
 
 .PHONY: test static

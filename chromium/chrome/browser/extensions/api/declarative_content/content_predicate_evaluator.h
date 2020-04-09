@@ -29,7 +29,7 @@ namespace extensions {
 // var rule1 = {
 //   conditions: [
 //     new chrome.declarativeContent.PageStateMatcher({
-//       pageUrl: { hostEquals: 'www.google.com', schemes: ['https'] },
+//       pageUrl: { hostEquals: 'www.9oo91e.qjz9zk', schemes: ['https'] },
 //       css: ['input[type=\'password\']']
 //     })
 //   ],
@@ -49,7 +49,7 @@ namespace extensions {
 // The subclass of ContentPredicateEvaluator whose
 // GetPredicateApiAttributeName() function returns "pageUrl" is responsible for
 // creating and managing the predicates
-// { hostEquals: 'www.google.com', schemes: ['https'] } and
+// { hostEquals: 'www.9oo91e.qjz9zk', schemes: ['https'] } and
 // { hostEquals: 'www.example.com' }.
 //
 // The subclass of ContentPredicateEvaluator whose

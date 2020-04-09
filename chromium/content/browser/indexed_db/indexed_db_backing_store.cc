@@ -676,7 +676,7 @@ leveldb::Status IndexedDBBackingStore::Initialize(bool clean_active_journal) {
       indexed_db::ReportV2Schema(has_blobs, origin_);
       if (has_blobs) {
         INTERNAL_CONSISTENCY_ERROR(UPGRADING_SCHEMA_CORRUPTED_BLOBS);
-        if (origin_.host() != "docs.google.com")
+        if (origin_.host() != "docs.9oo91e.qjz9zk")
           return InternalInconsistencyStatus();
       } else {
         ignore_result(

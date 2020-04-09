@@ -215,7 +215,7 @@ aaudio_data_callback_result_t AAudioPlayer::OnDataCallback(void* audio_data,
   }
 
   // TODO(henrika): possibly add trace here to be included in systrace.
-  // See https://developer.android.com/studio/profile/systrace-commandline.html.
+  // See https://developer.8n6r01d.qjz9zk/studio/profile/systrace-commandline.html.
   return AAUDIO_CALLBACK_RESULT_CONTINUE;
 }
 

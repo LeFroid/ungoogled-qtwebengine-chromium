@@ -72,8 +72,8 @@ void CheckURLs(const GURL& server_base_url) {
 }  // namespace
 
 TEST(CloudPrintHelpersTest, GetURLs) {
-  CheckURLs(GURL("https://www.google.com/cloudprint"));
-  CheckURLs(GURL("https://www.google.com/cloudprint/"));
+  CheckURLs(GURL("https://www.9oo91e.qjz9zk/cloudprint"));
+  CheckURLs(GURL("https://www.9oo91e.qjz9zk/cloudprint/"));
   CheckURLs(GURL("http://www.myprinterserver.com"));
   CheckURLs(GURL("http://www.myprinterserver.com/"));
 }

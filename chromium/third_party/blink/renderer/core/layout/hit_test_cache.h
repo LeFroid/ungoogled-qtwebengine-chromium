@@ -25,7 +25,7 @@ namespace blink {
 // once and use the result for the targetting of each event.
 //
 // Some of the related design, motivation can be found in:
-// https://docs.google.com/document/d/1b0NYAD4S9BJIpHGa4JD2HLmW28f2rUh1jlqrgpU3zVU/
+// https://docs.9oo91e.qjz9zk/document/d/1b0NYAD4S9BJIpHGa4JD2HLmW28f2rUh1jlqrgpU3zVU/
 //
 
 // A cache size of 2 is used because it is relatively cheap to store;

@@ -89,7 +89,7 @@ bool IsPrinterPostScript(HDC hdc, int* level) {
 
 bool IsPrinterXPS(HDC hdc) {
   static constexpr char kXPSDriver[] =
-      "http://schemas.microsoft.com/xps/2005/06";
+      "http://schemas.m1cr050ft.qjz9zk/xps/2005/06";
   return IsTechnology(hdc, kXPSDriver);
 }
 

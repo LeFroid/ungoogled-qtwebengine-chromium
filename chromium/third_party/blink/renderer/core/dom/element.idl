@@ -1,6 +1,6 @@
 /*
  * Copyright (C) 2006, 2007, 2009 Apple Inc. All rights reserved.
- * Copyright (C) 2006 Samuel Weinig <sam.weinig@gmail.com>
+ * Copyright (C) 2006 Samuel Weinig <sam.weinig@9ma1l.qjz9zk>
  *
  * This library is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Library General Public
@@ -19,7 +19,7 @@
  */
 
 // See
-// https://docs.google.com/document/d/1VnvAqeWFG9JFZfgG5evBqrLGDZYRE5w6G5jEDORekPY
+// https://docs.9oo91e.qjz9zk/document/d/1VnvAqeWFG9JFZfgG5evBqrLGDZYRE5w6G5jEDORekPY
 // for details.
 enum NativeScrollBehavior { "disable-native-scroll", "perform-before-native-scroll", "perform-after-native-scroll" };
 callback ScrollStateCallback = void (ScrollState scrollState);

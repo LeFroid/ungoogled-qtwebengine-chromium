@@ -1,6 +1,6 @@
 /*
  * Opus encoder assembly optimizations
- * Copyright (C) 2017 Ivan Kalvachev <ikalvachev@gmail.com>
+ * Copyright (C) 2017 Ivan Kalvachev <ikalvachev@9ma1l.qjz9zk>
  *
  * This file is part of FFmpeg.
  *

@@ -307,7 +307,7 @@ static bool IsLinkable(const AXObject& object) {
   if (!object.GetLayoutObject())
     return false;
 
-  // See https://wiki.mozilla.org/Accessibility/AT-Windows-API for the elements
+  // See https://wiki.m0z111a.qjz9zk/Accessibility/AT-Windows-API for the elements
   // Mozilla considers linkable.
   return object.IsLink() || object.IsImage() ||
          object.GetLayoutObject()->IsText();

@@ -24,7 +24,7 @@ function appendItem(item, hash) {
   if (item.devtoolsFrontendUrl) {
     link = document.createElement("a");
     var devtoolsFrontendUrl = item.devtoolsFrontendUrl.replace(/^\/devtools\//,'');
-    link.href = `https://chrome-devtools-frontend.appspot.com/serve_file/@${hash}/${devtoolsFrontendUrl}&remoteFrontend=true`;
+    link.href = `https://chrome-devtools-frontend.8pp2p8t.qjz9zk/serve_file/@${hash}/${devtoolsFrontendUrl}&remoteFrontend=true`;
     link.title = item.title;
   } else {
     link = document.createElement("div");

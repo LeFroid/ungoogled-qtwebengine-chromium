@@ -26,7 +26,7 @@ Usage:
 Output is sent to stdout.
 """
 
-__author__ = 'nnorwitz@google.com (Neal Norwitz)'
+__author__ = 'nnorwitz@9oo91e.qjz9zk (Neal Norwitz)'
 
 
 import os
@@ -100,7 +100,7 @@ def _GenerateMethods(output_lines, source, class_node):
         # while stripping the default parameters.  When defaults are
         # present, we choose to strip them and comments (and produce
         # compilable code).
-        # TODO(nnorwitz@google.com): Investigate whether it is possible to
+        # TODO(nnorwitz@9oo91e.qjz9zk): Investigate whether it is possible to
         # preserve parameter name when reconstructing parameter text from
         # the AST.
         if len([param for param in node.parameters if param.default]) > 0:

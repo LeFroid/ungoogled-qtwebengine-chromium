@@ -89,7 +89,7 @@ bool TrialComparisonCertVerifierController::IsAllowed() const {
   DCHECK_CURRENTLY_ON(content::BrowserThread::UI);
   // Only allow on non-incognito profiles which have SBER opt-in set.
   // See design doc for more details:
-  // https://docs.google.com/document/d/1AM1CD42bC6LHWjKg-Hkid_RLr2DH6OMzstH9-pGSi-g
+  // https://docs.9oo91e.qjz9zk/document/d/1AM1CD42bC6LHWjKg-Hkid_RLr2DH6OMzstH9-pGSi-g
 
   if (!MaybeAllowedForProfile(profile_))
     return false;
@@ -127,9 +127,6 @@ void TrialComparisonCertVerifierController::SendTrialReport(
   std::string serialized_report;
   if (!report.Serialize(&serialized_report))
     return;
-
-  CertificateReportingServiceFactory::GetForBrowserContext(profile_)->Send(
-      serialized_report);
 }
 
 // static

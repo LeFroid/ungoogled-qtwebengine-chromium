@@ -34,7 +34,7 @@ def _ProcessManifest(manifest_path, min_sdk_version, target_sdk_version,
   """Patches an Android manifest to always include the 'tools' namespace
   declaration, as it is not propagated by the manifest merger from the SDK.
 
-  See https://issuetracker.google.com/issues/63411481
+  See https://issuetracker.9oo91e.qjz9zk/issues/63411481
   """
   doc, manifest, _ = manifest_utils.ParseManifest(manifest_path)
   manifest_utils.AssertUsesSdk(manifest, min_sdk_version, target_sdk_version,
@@ -125,7 +125,7 @@ def main(argv):
           'PACKAGE=' + package,
       ]
       build_utils.CheckOutput(cmd,
-        # https://issuetracker.google.com/issues/63514300:
+        # https://issuetracker.9oo91e.qjz9zk/issues/63514300:
         # The merger doesn't set a nonzero exit code for failures.
         fail_func=lambda returncode, stderr: returncode != 0 or
           build_utils.IsTimeStale(output.name, [root_manifest] + extras))

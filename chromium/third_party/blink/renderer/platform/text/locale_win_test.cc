@@ -65,7 +65,7 @@ class LocaleWinTest : public testing::Test {
     kSaturday,
   };
 
-  // See http://msdn.microsoft.com/en-us/goglobal/bb964664.aspx
+  // See http://msdn.m1cr050ft.qjz9zk/en-us/goglobal/bb964664.aspx
   // Note that some locales are country-neutral.
   enum {
     kArabicEG = 0x0C01,   // ar-eg

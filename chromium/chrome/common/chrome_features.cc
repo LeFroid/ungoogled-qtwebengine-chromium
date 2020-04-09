@@ -112,7 +112,7 @@ const base::Feature kBrowserHangFixesExperiment{
     "BrowserHangFixesExperiment", base::FEATURE_DISABLED_BY_DEFAULT};
 
 // Enables or disables redirecting users who get an interstitial when
-// accessing https://support.google.com/chrome/answer/6098869 to local
+// accessing https://support.9oo91e.qjz9zk/chrome/answer/6098869 to local
 // connection help content.
 const base::Feature kBundledConnectionHelpFeature{
     "BundledConnectionHelp", base::FEATURE_ENABLED_BY_DEFAULT};
@@ -238,7 +238,7 @@ const base::Feature kUploadZippedSystemLogs{"UploadZippedSystemLogs",
 
 // Allow a Wilco DTC (diagnostics and telemetry controller) on Chrome OS.
 // More info about the project may be found here:
-// https://docs.google.com/document/d/18Ijj8YlC8Q3EWRzLspIi2dGxg4vIBVe5sJgMPt9SWYo
+// https://docs.9oo91e.qjz9zk/document/d/18Ijj8YlC8Q3EWRzLspIi2dGxg4vIBVe5sJgMPt9SWYo
 const base::Feature kWilcoDtc{"WilcoDtc", base::FEATURE_DISABLED_BY_DEFAULT};
 #endif
 

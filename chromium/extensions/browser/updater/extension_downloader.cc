@@ -94,27 +94,18 @@ const char kNotFromWebstoreInstallSource[] = "notfromwebstore";
 const char kDefaultInstallSource[] = "";
 const char kReinstallInstallSource[] = "reinstall";
 
-const char kGoogleDotCom[] = "google.com";
 const char kTokenServiceConsumerId[] = "extension_downloader";
 const char kWebstoreOAuth2Scope[] =
-    "https://www.googleapis.com/auth/chromewebstore.readonly";
+    "trk:10:https://www.9oo91eapis.qjz9zk/auth/chromewebstore.readonly";
 
 ExtensionDownloaderTestDelegate* g_test_delegate = nullptr;
 
 #define RETRY_HISTOGRAM(name, retry_count, url)                           \
-  if ((url).DomainIs(kGoogleDotCom)) {                                    \
-    UMA_HISTOGRAM_CUSTOM_COUNTS("Extensions." name "RetryCountGoogleUrl", \
-                                retry_count,                              \
-                                1,                                        \
-                                kMaxRetries,                              \
-                                kMaxRetries + 1);                         \
-  } else {                                                                \
     UMA_HISTOGRAM_CUSTOM_COUNTS("Extensions." name "RetryCountOtherUrl",  \
                                 retry_count,                              \
                                 1,                                        \
                                 kMaxRetries,                              \
-                                kMaxRetries + 1);                         \
-  }
+                                kMaxRetries + 1);
 
 bool ShouldRetryRequest(const network::SimpleURLLoader* loader) {
   DCHECK(loader);
@@ -308,12 +299,6 @@ void ExtensionDownloader::DoStartAllPending() {
   ReportStats();
   url_stats_ = URLStats();
 
-  for (auto it = fetches_preparing_.begin(); it != fetches_preparing_.end();
-       ++it) {
-    std::vector<std::unique_ptr<ManifestFetchData>>& list = it->second;
-    for (size_t i = 0; i < list.size(); ++i)
-      StartUpdateCheck(std::move(list[i]));
-  }
   fetches_preparing_.clear();
 }
 
@@ -347,11 +332,6 @@ bool ExtensionDownloader::AddExtensionData(
     return false;
   }
 
-  // Make sure we use SSL for store-hosted extensions.
-  if (extension_urls::IsWebstoreUpdateUrl(update_url) &&
-      !update_url.SchemeIsCryptographic())
-    update_url = extension_urls::GetWebstoreUpdateUrl();
-
   // Skip extensions with empty IDs.
   if (id.empty()) {
     DLOG(WARNING) << "Found extension with empty ID";
@@ -360,12 +340,10 @@ bool ExtensionDownloader::AddExtensionData(
     return false;
   }
 
-  if (update_url.DomainIs(kGoogleDotCom)) {
-    url_stats_.google_url_count++;
-  } else if (update_url.is_empty()) {
+  if (update_url.is_empty()) {
     url_stats_.no_url_count++;
     // Fill in default update URL.
-    update_url = extension_urls::GetWebstoreUpdateUrl();
+    update_url = GURL("chrome://blank/");
   } else {
     url_stats_.other_url_count++;
   }
@@ -573,7 +551,7 @@ void ExtensionDownloader::CreateManifestLoader() {
   resource_request->credentials_mode = network::mojom::CredentialsMode::kOmit;
 
   // Send traffic-management headers to the webstore.
-  // https://bugs.chromium.org/p/chromium/issues/detail?id=647516
+  // https://bugs.ch40m1um.qjz9zk/p/chromium/issues/detail?id=647516
   if (extension_urls::IsWebstoreUpdateUrl(active_request->full_url())) {
     resource_request->headers.SetHeader(kUpdateInteractivityHeader,
                                         active_request->foreground_check()
@@ -702,20 +680,6 @@ void ExtensionDownloader::HandleManifestResults(
     FetchUpdatedExtension(std::make_unique<ExtensionFetch>(
         update->extension_id, crx_url, update->package_hash, update->version,
         fetch_data->request_ids()));
-  }
-
-  // If the manifest response included a <daystart> element, we want to save
-  // that value for any extensions which had sent a ping in the request.
-  if (fetch_data->base_url().DomainIs(kGoogleDotCom) &&
-      results->daystart_elapsed_seconds >= 0) {
-    Time day_start =
-        Time::Now() - TimeDelta::FromSeconds(results->daystart_elapsed_seconds);
-
-    for (const std::string& id : fetch_data->extension_ids()) {
-      ExtensionDownloaderDelegate::PingResult& result = ping_results_[id];
-      result.did_ping = fetch_data->DidPing(id, ManifestFetchData::ROLLCALL);
-      result.day_start = day_start;
-    }
   }
 
   NotifyExtensionsDownloadStageChanged(
@@ -1195,11 +1159,7 @@ bool ExtensionDownloader::IterateFetchCredentialsAfterFailure(
   // fetch.
   switch (fetch->credentials) {
     case ExtensionFetch::CREDENTIALS_NONE:
-      if (fetch->url.DomainIs(kGoogleDotCom) && identity_manager_) {
-        fetch->credentials = ExtensionFetch::CREDENTIALS_OAUTH2_TOKEN;
-      } else {
-        fetch->credentials = ExtensionFetch::CREDENTIALS_COOKIES;
-      }
+      fetch->credentials = ExtensionFetch::CREDENTIALS_COOKIES;
       return true;
     case ExtensionFetch::CREDENTIALS_OAUTH2_TOKEN:
       fetch->oauth2_attempt_count++;

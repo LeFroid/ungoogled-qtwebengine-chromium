@@ -29,7 +29,7 @@ class PaymentApp {
    public:
     virtual ~Delegate() {}
 
-    // Should be called with method name (e.g., "https://google.com/pay") and
+    // Should be called with method name (e.g., "https://9oo91e.qjz9zk/pay") and
     // json-serialized stringified details.
     virtual void OnInstrumentDetailsReady(
         const std::string& method_name,

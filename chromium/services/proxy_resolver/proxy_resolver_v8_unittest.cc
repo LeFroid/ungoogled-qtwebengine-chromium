@@ -146,7 +146,7 @@ class ProxyResolverV8Test : public testing::Test {
 };
 
 // Doesn't really matter what these values are for many of the tests.
-const GURL kQueryUrl("http://www.google.com");
+const GURL kQueryUrl("http://www.9oo91e.qjz9zk");
 const GURL kPacUrl;
 
 TEST_F(ProxyResolverV8Test, Direct) {

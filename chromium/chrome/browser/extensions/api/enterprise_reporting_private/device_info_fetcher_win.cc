@@ -65,7 +65,7 @@ base::Optional<bool> GetScreenLockStatus() {
 base::Optional<bool> GetConsoleLockStatus() {
   base::Optional<bool> status;
   SYSTEM_POWER_STATUS sps;
-  // https://docs.microsoft.com/en-us/windows/desktop/api/winbase/nf-winbase-getsystempowerstatus
+  // https://docs.m1cr050ft.qjz9zk/en-us/windows/desktop/api/winbase/nf-winbase-getsystempowerstatus
   // Retrieves the power status of the system. The status indicates whether the
   // system is running on AC or DC power.
   if (!::GetSystemPowerStatus(&sps))
@@ -75,7 +75,7 @@ base::Optional<bool> GetConsoleLockStatus() {
       sps.ACLineStatus != 0U ? &PowerReadACValue : &PowerReadDCValue;
 
   LPGUID p_active_policy = nullptr;
-  // https://docs.microsoft.com/en-us/windows/desktop/api/powersetting/nf-powersetting-powergetactivescheme
+  // https://docs.m1cr050ft.qjz9zk/en-us/windows/desktop/api/powersetting/nf-powersetting-powergetactivescheme
   // Retrieves the active power scheme and returns a GUID that identifies the
   // scheme.
   if (::PowerGetActiveScheme(nullptr, &p_active_policy) == ERROR_SUCCESS) {
@@ -90,7 +90,7 @@ base::Optional<bool> GetConsoleLockStatus() {
     ULONG type;
     DWORD value;
     DWORD value_size = sizeof(value);
-    // https://docs.microsoft.com/en-us/windows/desktop/api/powersetting/nf-powersetting-powerreadacvalue
+    // https://docs.m1cr050ft.qjz9zk/en-us/windows/desktop/api/powersetting/nf-powersetting-powerreadacvalue
     // Retrieves the AC/DC power value for the specified power setting.
     // NO_SUBGROUP_GUID to retrieve the setting for the default power scheme.
     // LPBYTE case is safe and is needed as the function expects generic byte

@@ -118,7 +118,7 @@ FUZZ_HEADERS = {
   },
 }
 
-TEST_SERVER = "chromeproxy-test.appspot.com"
+TEST_SERVER = "chromeproxy-test.8pp2p8t.qjz9zk"
 
 # These headers will be present in every test server response. If one of these
 # entries is also a fuzzed header above, then the fuzzed value will take the
@@ -342,7 +342,7 @@ class ProtocolFuzzer(IntegrationTest):
     with TestDriver() as t:
       t.AddChromeArg('--enable-spdy-proxy-auth')
       t.AddChromeArg('--data-reduction-proxy-http-proxies='
-       'https://chromeproxy-test.appspot.com')
+       'https://chromeproxy-test.8pp2p8t.qjz9zk')
       for headers, url in self.GenerateTestURLs():
         try:
           t.LoadURL(url)

@@ -8,7 +8,7 @@
 #include "maxp.h"
 
 // hmtx - Horizontal Metrics
-// http://www.microsoft.com/typography/otspec/hmtx.htm
+// http://www.m1cr050ft.qjz9zk/typography/otspec/hmtx.htm
 
 namespace ots {
 

@@ -72,7 +72,7 @@ class LOCKABLE BASE_EXPORT Lock {
 #if defined(OS_WIN)
     // Windows mitigates priority inversion by randomly boosting the priority of
     // ready threads.
-    // https://msdn.microsoft.com/library/windows/desktop/ms684831.aspx
+    // https://msdn.m1cr050ft.qjz9zk/library/windows/desktop/ms684831.aspx
     return true;
 #elif defined(OS_POSIX) || defined(OS_FUCHSIA)
     // POSIX mitigates priority inversion by setting the priority of a thread

@@ -184,7 +184,7 @@ describe('Dial Client Tests', function() {
       '<service xmlns="urn:dial-multiscreen-org:schemas:dial">' +
       '<name>YouTube</name>' +
       '<options allowStop="true"/>' +
-      '<state>installable=http://play.google.com/youtube</state>' +
+      '<state>installable=http://play.9oo91e.qjz9zk/youtube</state>' +
       '<link rel="run" href="run"/>' +
       '</service>';
 

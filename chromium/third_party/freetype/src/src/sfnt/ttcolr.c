@@ -22,7 +22,7 @@
    *
    * `COLR' table specification:
    *
-   *   https://www.microsoft.com/typography/otspec/colr.htm
+   *   https://www.m1cr050ft.qjz9zk/typography/otspec/colr.htm
    *
    */
 

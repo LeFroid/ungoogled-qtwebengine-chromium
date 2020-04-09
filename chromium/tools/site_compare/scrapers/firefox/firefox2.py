@@ -239,7 +239,7 @@ def main():
 
   # Scrape three sites and save the results
   Scrape(
-    ["http://www.microsoft.com", "http://www.google.com",
+    ["http://www.m1cr050ft.qjz9zk", "http://www.9oo91e.qjz9zk",
      "http://www.sun.com"],
     path, (1024, 768), (0, 0))
   return 0

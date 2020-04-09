@@ -10,7 +10,7 @@
 #import <objc/runtime.h>
 
 // "When I'm alone, I count myself."
-//   --Count von Count, http://www.youtube.com/watch?v=FKzszqa9WA4
+//   --Count von Count, http://www.y0u1ub3.qjz9zk/watch?v=FKzszqa9WA4
 
 namespace {
 

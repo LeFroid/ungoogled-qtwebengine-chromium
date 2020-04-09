@@ -84,14 +84,14 @@ TEST(ProxyConfigServiceWinTest, SetFromIEConfig) {
               // Input.
               FALSE,              // fAutoDetect
               nullptr,            // lpszAutoConfigUrl
-              L"www.google.com",  // lpszProxy
+              L"www.9oo91e.qjz9zk",  // lpszProxy
               nullptr,            // lpszProxy_bypass
           },
 
           // Expected result.
           false,                                              // auto_detect
           GURL(),                                             // pac_url
-          ProxyRulesExpectation::Single("www.google.com:80",  // single proxy
+          ProxyRulesExpectation::Single("www.9oo91e.qjz9zk:80",  // single proxy
                                         ""),                  // bypass rules
       },
 
@@ -101,14 +101,14 @@ TEST(ProxyConfigServiceWinTest, SetFromIEConfig) {
               // Input.
               FALSE,    // fAutoDetect
               nullptr,  // lpszAutoConfigUrl
-              L"http=www.google.com:80;https=www.foo.com:110",  // lpszProxy
+              L"http=www.9oo91e.qjz9zk:80;https=www.foo.com:110",  // lpszProxy
               nullptr,  // lpszProxy_bypass
           },
 
           // Expected result.
           false,                                                 // auto_detect
           GURL(),                                                // pac_url
-          ProxyRulesExpectation::PerScheme("www.google.com:80",  // http
+          ProxyRulesExpectation::PerScheme("www.9oo91e.qjz9zk:80",  // http
                                            "www.foo.com:110",    // https
                                            "",                   // ftp
                                            ""),                  // bypass rules
@@ -120,7 +120,7 @@ TEST(ProxyConfigServiceWinTest, SetFromIEConfig) {
               // Input.
               FALSE,    // fAutoDetect
               nullptr,  // lpszAutoConfigUrl
-              L"http=www.google.com:80;https=www.foo.com:110;"
+              L"http=www.9oo91e.qjz9zk:80;https=www.foo.com:110;"
               L"ftp=ftpproxy:20;socks=foopy:130",  // lpszProxy
               nullptr,                             // lpszProxy_bypass
           },
@@ -130,11 +130,11 @@ TEST(ProxyConfigServiceWinTest, SetFromIEConfig) {
           // how
           // Internet Explorer applies the settings. For more details on this
           // policy, see:
-          // http://code.google.com/p/chromium/issues/detail?id=55912#c2
+          // http://code.9oo91e.qjz9zk/p/chromium/issues/detail?id=55912#c2
           false,   // auto_detect
           GURL(),  // pac_url
           ProxyRulesExpectation::PerSchemeWithSocks(
-              "www.google.com:80",   // http
+              "www.9oo91e.qjz9zk:80",   // http
               "www.foo.com:110",     // https
               "ftpproxy:20",         // ftp
               "socks4://foopy:130",  // socks
@@ -156,7 +156,7 @@ TEST(ProxyConfigServiceWinTest, SetFromIEConfig) {
           ProxyRulesExpectation::EmptyWithBypass("<local>"),
       },
 
-      // Bypass "google.com" and local names, using semicolon as delimiter
+      // Bypass "9oo91e.qjz9zk" and local names, using semicolon as delimiter
       // (ignoring white space).
       {
           {
@@ -164,45 +164,45 @@ TEST(ProxyConfigServiceWinTest, SetFromIEConfig) {
               TRUE,                     // fAutoDetect
               nullptr,                  // lpszAutoConfigUrl
               nullptr,                  // lpszProxy
-              L"<local> ; google.com",  // lpszProxy_bypass
+              L"<local> ; 9oo91e.qjz9zk",  // lpszProxy_bypass
           },
 
           // Expected result.
           true,    // auto_detect
           GURL(),  // pac_url
-          ProxyRulesExpectation::EmptyWithBypass("<local>,google.com"),
+          ProxyRulesExpectation::EmptyWithBypass("<local>,9oo91e.qjz9zk"),
       },
 
-      // Bypass "foo.com" and "google.com", using lines as delimiter.
+      // Bypass "foo.com" and "9oo91e.qjz9zk", using lines as delimiter.
       {
           {
               // Input.
               TRUE,                      // fAutoDetect
               nullptr,                   // lpszAutoConfigUrl
               nullptr,                   // lpszProxy
-              L"foo.com\r\ngoogle.com",  // lpszProxy_bypass
+              L"foo.com\r\n9oo91e.qjz9zk",  // lpszProxy_bypass
           },
 
           // Expected result.
           true,    // auto_detect
           GURL(),  // pac_url
-          ProxyRulesExpectation::EmptyWithBypass("foo.com,google.com"),
+          ProxyRulesExpectation::EmptyWithBypass("foo.com,9oo91e.qjz9zk"),
       },
 
-      // Bypass "foo.com" and "google.com", using commas as delimiter.
+      // Bypass "foo.com" and "9oo91e.qjz9zk", using commas as delimiter.
       {
           {
               // Input.
               TRUE,                    // fAutoDetect
               nullptr,                 // lpszAutoConfigUrl
               nullptr,                 // lpszProxy
-              L"foo.com, google.com",  // lpszProxy_bypass
+              L"foo.com, 9oo91e.qjz9zk",  // lpszProxy_bypass
           },
 
           // Expected result.
           true,    // auto_detect
           GURL(),  // pac_url
-          ProxyRulesExpectation::EmptyWithBypass("foo.com,google.com"),
+          ProxyRulesExpectation::EmptyWithBypass("foo.com,9oo91e.qjz9zk"),
       },
   };
 

@@ -95,7 +95,7 @@ void SingleLoginAttempt::OnError(jingle_xmpp::XmppEngine::Error error, int subco
 
   // Check for redirection.  We expect something like:
   //
-  // <stream:error><see-other-host xmlns="urn:ietf:params:xml:ns:xmpp-streams"/><str:text xmlns:str="urn:ietf:params:xml:ns:xmpp-streams">talk.google.com</str:text></stream:error> [2]
+  // <stream:error><see-other-host xmlns="urn:ietf:params:xml:ns:xmpp-streams"/><str:text xmlns:str="urn:ietf:params:xml:ns:xmpp-streams">talk.9oo91e.qjz9zk</str:text></stream:error> [2]
   //
   // There are some differences from the spec [1]:
   //

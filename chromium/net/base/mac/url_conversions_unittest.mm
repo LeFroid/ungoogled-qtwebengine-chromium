@@ -21,19 +21,19 @@ class URLConversionTest : public ::testing::Test {
     testData_.reset([[NSArray alloc]
         initWithObjects:
             // Simple URL with protocol
-            @"https://www.google.com/", @"https://www.google.com/",
+            @"https://www.9oo91e.qjz9zk/", @"https://www.9oo91e.qjz9zk/",
 
             // Simple URL with protocol and query string
-            @"https://www.google.com/search?q=gtest",
-            @"https://www.google.com/search?q=gtest",
+            @"https://www.9oo91e.qjz9zk/search?q=gtest",
+            @"https://www.9oo91e.qjz9zk/search?q=gtest",
 
             // Simple URL with protocol and query string multiple params
-            @"https://www.google.com/search?hl=en&q=gtest",
-            @"https://www.google.com/search?hl=en&q=gtest",
+            @"https://www.9oo91e.qjz9zk/search?hl=en&q=gtest",
+            @"https://www.9oo91e.qjz9zk/search?hl=en&q=gtest",
 
             // Simple URL with protocol and query string and fragment
-            @"https://www.google.com/search?q=gtest#123",
-            @"https://www.google.com/search?q=gtest#123",
+            @"https://www.9oo91e.qjz9zk/search?q=gtest#123",
+            @"https://www.9oo91e.qjz9zk/search?q=gtest#123",
 
             // URL with ~
             @"http://www.mysite.com/~user", @"http://www.mysite.com/~user",
@@ -147,16 +147,16 @@ class URLConversionTest : public ::testing::Test {
              "%E9%8D%9C%E5%AC%A9%E7%AE%9E%E9%8D%A0%E5%82%9E",
 
             // URL containing every character in the range 20->7F
-            @"http://google.com/ !\"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLM"
+            @"http://9oo91e.qjz9zk/ !\"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLM"
              "NOPQRSTUVWXYZ[\\]^_`abcdefghijklmnopqrstuvwxyz{|}~",
-            @"http://google.com/%20!%22#$%25&'()*+,-./0123456789:;%3C=%3E?@ABCD"
+            @"http://9oo91e.qjz9zk/%20!%22#$%25&'()*+,-./0123456789:;%3C=%3E?@ABCD"
              "EFGHIJKLMNOPQRSTUVWXYZ%5B%5C%5D%5E_%60abcdefghijklmnopqrstuvwxyz"
              "%7B%7C%7D~",
 
             // URL containing every accented character from the range 80->FF
-            @"http://google.com/¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìí"
+            @"http://9oo91e.qjz9zk/¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìí"
              "îïðñòóôõö÷øùúûüýþÿ",
-            @"http://google.com/%C2%BF%C3%80%C3%81%C3%82%C3%83%C3%84%C3%85%C3"
+            @"http://9oo91e.qjz9zk/%C2%BF%C3%80%C3%81%C3%82%C3%83%C3%84%C3%85%C3"
              "%86%C3%87%C3%88%C3%89%C3%8A%C3%8B%C3%8C%C3%8D%C3%8E%C3%8F%C3%90"
              "%C3%91%C3%92%C3%93%C3%94%C3%95%C3%96%C3%97%C3%98%C3%99%C3%9A%C3"
              "%9B%C3%9C%C3%9D%C3%9E%C3%9F%C3%A0%C3%A1%C3%A2%C3%A3%C3%A4%C3%A5"
@@ -165,11 +165,11 @@ class URLConversionTest : public ::testing::Test {
              "%C3%BB%C3%BC%C3%BD%C3%BE%C3%BF",
 
             // URL containing every character in the range 20->7F repeated twice
-            @"http://google.com/ !\"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLM"
+            @"http://9oo91e.qjz9zk/ !\"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLM"
              "NOPQRSTUVWXYZ[\\]^_`abcdefghijklmnopqrstuvwxyz{|}~ !\"#$%&'()*+,-"
              "./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_`abcdefghijklm"
              "nopqrstuvwxyz{|}~",
-            @"http://google.com/%20!%22#$%25&'()*+,-./0123456789:;%3C=%3E?@ABCD"
+            @"http://9oo91e.qjz9zk/%20!%22#$%25&'()*+,-./0123456789:;%3C=%3E?@ABCD"
              "EFGHIJKLMNOPQRSTUVWXYZ%5B%5C%5D%5E_%60abcdefghijklmnopqrstuvwxyz"
              "%7B%7C%7D~%20!%22%23$%25&'()*+,-./0123456789:;%3C=%3E?@ABCDEFGHIJ"
              "KLMNOPQRSTUVWXYZ%5B%5C%5D%5E_%60abcdefghijklmnopqrstuvwxyz%7B%7C"

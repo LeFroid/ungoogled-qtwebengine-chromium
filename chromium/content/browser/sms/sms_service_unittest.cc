@@ -55,7 +55,7 @@ class RenderFrameHost;
 
 namespace {
 
-const char kTestUrl[] = "https://www.google.com";
+const char kTestUrl[] = "https://www.9oo91e.qjz9zk";
 
 // Service encapsulates a SmsService endpoint, with all of its dependencies
 // mocked out (and the common plumbing needed to inject them), and a

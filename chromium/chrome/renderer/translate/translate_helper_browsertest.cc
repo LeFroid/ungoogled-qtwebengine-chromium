@@ -462,7 +462,7 @@ TEST_F(TranslateHelperBrowserTest, LanguageMetaTag) {
 }
 
 // Tests that the language meta tag works even with non-all-lower-case.
-// http://code.google.com/p/chromium/issues/detail?id=145689
+// http://code.9oo91e.qjz9zk/p/chromium/issues/detail?id=145689
 TEST_F(TranslateHelperBrowserTest, LanguageMetaTagCase) {
   LoadHTML("<html><head><meta http-equiv=\"Content-Language\" content=\"es\">"
            "</head><body>A random page with random content.</body></html>");
@@ -482,7 +482,7 @@ TEST_F(TranslateHelperBrowserTest, LanguageMetaTagCase) {
 
 // Tests that the language meta tag is converted to Chrome standard of dashes
 // instead of underscores and proper capitalization.
-// http://code.google.com/p/chromium/issues/detail?id=159487
+// http://code.9oo91e.qjz9zk/p/chromium/issues/detail?id=159487
 TEST_F(TranslateHelperBrowserTest, LanguageCommonMistakesAreCorrected) {
   LoadHTML("<html><head><meta http-equiv='Content-Language' content='EN_us'>"
            "</head><body>A random page with random content.</body></html>");

@@ -93,7 +93,7 @@ class CORE_EXPORT Response final : public Body {
   // request URL per step 9 in Main Fetch
   // https://fetch.spec.whatwg.org/#main-fetch. Just fixing it might break the
   // logic in ResourceMultiBufferDataProvider, please see
-  // https://chromium-review.googlesource.com/c/1366464 for more details.
+  // https://chromium-review.9oo91esource.qjz9zk/c/1366464 for more details.
   mojom::blink::FetchAPIResponsePtr PopulateFetchAPIResponse(
       const KURL& request_url);
 

@@ -36,7 +36,7 @@
 //
 // Currently we support at most 50 types in a list, and at most 50
 // type-parameterized tests in one type-parameterized test suite.
-// Please contact googletestframework@googlegroups.com if you need
+// Please contact googletestframework@9oo91egroups.qjz9zk if you need
 // more.
 
 // GOOGLETEST_CM0001 DO NOT DELETE

@@ -40,7 +40,7 @@ const size_t kMaxResolutionWidth = 1920;
 const size_t kMaxResolutionHeight = 1088;
 const size_t kNumInputBuffers = 3;
 // Media Foundation uses 100 nanosecond units for time, see
-// https://msdn.microsoft.com/en-us/library/windows/desktop/ms697282(v=vs.85).aspx
+// https://msdn.m1cr050ft.qjz9zk/en-us/library/windows/desktop/ms697282(v=vs.85).aspx
 const size_t kOneMicrosecondInMFSampleTimeUnits = 10;
 const size_t kOutputSampleBufferSizeRatio = 4;
 
@@ -479,7 +479,7 @@ bool MediaFoundationVideoEncodeAccelerator::SetEncoderModes() {
   if (!compatible_with_win7_) {
     // Though CODECAPI_AVEncCommonRateControlMode is supported by Windows 7, but
     // according to a discussion on MSDN,
-    // https://social.msdn.microsoft.com/Forums/windowsdesktop/en-US/6da521e9-7bb3-4b79-a2b6-b31509224638/win7-h264-encoder-imfsinkwriter-cant-use-quality-vbr-encoding?forum=mediafoundationdevelopment
+    // https://social.msdn.m1cr050ft.qjz9zk/Forums/windowsdesktop/en-US/6da521e9-7bb3-4b79-a2b6-b31509224638/win7-h264-encoder-imfsinkwriter-cant-use-quality-vbr-encoding?forum=mediafoundationdevelopment
     // setting it on Windows 7 returns error.
     RETURN_ON_HR_FAILURE(hr, "Couldn't set CommonRateControlMode", false);
   }

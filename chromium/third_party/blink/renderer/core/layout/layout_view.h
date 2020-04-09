@@ -49,7 +49,7 @@ class ViewFragmentationContext;
 // LayoutView is always at position (0,0) relative to the document (and so isn't
 // necessarily in view).
 // See
-// https://www.chromium.org/developers/design-documents/blink-coordinate-spaces
+// https://www.ch40m1um.qjz9zk/developers/design-documents/blink-coordinate-spaces
 // about the different viewports.
 //
 // Because there is one LayoutView per rooted layout tree (or Frame), this class

@@ -438,7 +438,7 @@ bool File::Flush() {
 
   // On Windows 8 and above, FlushFileBuffers is guaranteed to flush the storage
   // device's internal buffers (if they exist) before returning.
-  // https://blogs.msdn.microsoft.com/oldnewthing/20170510-00/?p=95505
+  // https://blogs.msdn.m1cr050ft.qjz9zk/oldnewthing/20170510-00/?p=95505
   return ::FlushFileBuffers(file_.Get()) != FALSE;
 }
 

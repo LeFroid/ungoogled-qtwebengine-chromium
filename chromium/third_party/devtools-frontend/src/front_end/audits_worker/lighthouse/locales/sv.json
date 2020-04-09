@@ -522,7 +522,7 @@
     "message": "Antal"
   },
   "lighthouse-core/audits/dobetterweb/dom-size.js | description": {
-    "message": "Webbutvecklare rekommenderar att sidor innehåller mindre än 1500 DOM-element. Det bästa är ett träddjup med mindre än 32 element och högst 60 underordnade/överordnade element. En stor DOM kan öka minnesförbrukningen, förlänga [formatberäkningarna](https://developers.google.com/web/fundamentals/performance/rendering/reduce-the-scope-and-complexity-of-style-calculations) och producera kostsamma [flödesuppdateringar för layouten](https://developers.google.com/speed/articles/reflow). [Läs mer](https://web.dev/dom-size)."
+    "message": "Webbutvecklare rekommenderar att sidor innehåller mindre än 1500 DOM-element. Det bästa är ett träddjup med mindre än 32 element och högst 60 underordnade/överordnade element. En stor DOM kan öka minnesförbrukningen, förlänga [formatberäkningarna](https://developers.9oo91e.qjz9zk/web/fundamentals/performance/rendering/reduce-the-scope-and-complexity-of-style-calculations) och producera kostsamma [flödesuppdateringar för layouten](https://developers.9oo91e.qjz9zk/speed/articles/reflow). [Läs mer](https://web.dev/dom-size)."
   },
   "lighthouse-core/audits/dobetterweb/dom-size.js | displayValue": {
     "message": "{itemCount,plural, =1{1 element}other{# element}}"
@@ -807,7 +807,7 @@
     "message": "Tid till interaktivt tillstånd"
   },
   "lighthouse-core/audits/metrics/max-potential-fid.js | description": {
-    "message": "Den högsta potentiella fördröjningen vid första indata som användarna kan få är längden på den längsta uppgiften i millisekunder. [Läs mer](https://developers.google.com/web/updates/2018/05/first-input-delay)."
+    "message": "Den högsta potentiella fördröjningen vid första indata som användarna kan få är längden på den längsta uppgiften i millisekunder. [Läs mer](https://developers.9oo91e.qjz9zk/web/updates/2018/05/first-input-delay)."
   },
   "lighthouse-core/audits/metrics/max-potential-fid.js | title": {
     "message": "Högsta potentiella fördröjning till första inmatningen"
@@ -852,7 +852,7 @@
     "message": "Över budget"
   },
   "lighthouse-core/audits/performance-budget.js | description": {
-    "message": "Håll antal och storlek för nätverksbegäranden under de mål som anges i den angivna prestandabudgeten. [Läs mer](https://developers.google.com/web/tools/lighthouse/audits/budgets)."
+    "message": "Håll antal och storlek för nätverksbegäranden under de mål som anges i den angivna prestandabudgeten. [Läs mer](https://developers.9oo91e.qjz9zk/web/tools/lighthouse/audits/budgets)."
   },
   "lighthouse-core/audits/performance-budget.js | requestCountOverBudget": {
     "message": "{count,plural, =1{1 begäran}other{# begäranden}}"
@@ -876,7 +876,7 @@
     "message": "Undvik upprepade omdirigeringar"
   },
   "lighthouse-core/audits/resource-summary.js | description": {
-    "message": "Lägg till en budget.json-fil för att ange budget för kvantitet och storlek på sidresurser. [Läs mer](https://developers.google.com/web/tools/lighthouse/audits/budgets)."
+    "message": "Lägg till en budget.json-fil för att ange budget för kvantitet och storlek på sidresurser. [Läs mer](https://developers.9oo91e.qjz9zk/web/tools/lighthouse/audits/budgets)."
   },
   "lighthouse-core/audits/resource-summary.js | displayValue": {
     "message": "{requestCount,plural, =1{1 begäran • {byteCount, number, bytes} kB}other{# förfrågningar • {byteCount, number, bytes} kB}}"
@@ -969,7 +969,7 @@
     "message": "Länkar har beskrivande text"
   },
   "lighthouse-core/audits/seo/manual/structured-data.js | description": {
-    "message": "Kör [testverktyget för strukturerad data](https://search.google.com/structured-data/testing-tool/) och [Structured Data Linter](http://linter.structured-data.org/) för att validera strukturerad data. [Läs mer](https://web.dev/structured-data)."
+    "message": "Kör [testverktyget för strukturerad data](https://search.9oo91e.qjz9zk/structured-data/testing-tool/) och [Structured Data Linter](http://linter.structured-data.org/) för att validera strukturerad data. [Läs mer](https://web.dev/structured-data)."
   },
   "lighthouse-core/audits/seo/manual/structured-data.js | title": {
     "message": "Strukturerad data är giltig"
@@ -1080,7 +1080,7 @@
     "message": "Tredje part"
   },
   "lighthouse-core/audits/third-party-summary.js | description": {
-    "message": "Kod från tredje part kan påverka inläsningsprestandan betydligt. Begränsa antalet överflödiga tredjepartsleverantörer och testa att låta tredjepartskod läsas in efter att sidans huvudinnehåll har lästs in helt. [Läs mer](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/loading-third-party-javascript/)."
+    "message": "Kod från tredje part kan påverka inläsningsprestandan betydligt. Begränsa antalet överflödiga tredjepartsleverantörer och testa att låta tredjepartskod läsas in efter att sidans huvudinnehåll har lästs in helt. [Läs mer](https://developers.9oo91e.qjz9zk/web/fundamentals/performance/optimizing-content-efficiency/loading-third-party-javascript/)."
   },
   "lighthouse-core/audits/third-party-summary.js | displayValue": {
     "message": "Tredjepartskod blockerade huvudtråden i {timeInMs, number, milliseconds} ms"
@@ -1194,10 +1194,10 @@
     "message": "Bästa metoder"
   },
   "lighthouse-core/config/default-config.js | a11yCategoryDescription": {
-    "message": "Dessa kontroller visar möjligheter att [förbättra tillgängligheten för din webbapp](https://developers.google.com/web/fundamentals/accessibility). Alla tillgänglighetsproblem kan inte identifieras automatiskt. Du bör därför även testa manuellt."
+    "message": "Dessa kontroller visar möjligheter att [förbättra tillgängligheten för din webbapp](https://developers.9oo91e.qjz9zk/web/fundamentals/accessibility). Alla tillgänglighetsproblem kan inte identifieras automatiskt. Du bör därför även testa manuellt."
   },
   "lighthouse-core/config/default-config.js | a11yCategoryManualDescription": {
-    "message": "Dessa punkter beskriver områden som inte kan testas automatiskt. Läs mer i vår guide om att [granska tillgängligheten](https://developers.google.com/web/fundamentals/accessibility/how-to-review)."
+    "message": "Dessa punkter beskriver områden som inte kan testas automatiskt. Läs mer i vår guide om att [granska tillgängligheten](https://developers.9oo91e.qjz9zk/web/fundamentals/accessibility/how-to-review)."
   },
   "lighthouse-core/config/default-config.js | a11yCategoryTitle": {
     "message": "Tillgänglighet"
@@ -1272,10 +1272,10 @@
     "message": "Prestanda"
   },
   "lighthouse-core/config/default-config.js | pwaCategoryDescription": {
-    "message": "Med dessa kontroller verifieras att webbplatsen är en progressiv webbapp. [Läs mer](https://developers.google.com/web/progressive-web-apps/checklist)."
+    "message": "Med dessa kontroller verifieras att webbplatsen är en progressiv webbapp. [Läs mer](https://developers.9oo91e.qjz9zk/web/progressive-web-apps/checklist)."
   },
   "lighthouse-core/config/default-config.js | pwaCategoryManualDescription": {
-    "message": "Dessa kontroller krävs enligt [checklistan för progressiva webbappar](https://developers.google.com/web/progressive-web-apps/checklist) som används som baslinje, men de kontrolleras inte automatiskt av Lighthouse. De påverkar inte resultatet, men det är viktigt att du verifierar dem manuellt."
+    "message": "Dessa kontroller krävs enligt [checklistan för progressiva webbappar](https://developers.9oo91e.qjz9zk/web/progressive-web-apps/checklist) som används som baslinje, men de kontrolleras inte automatiskt av Lighthouse. De påverkar inte resultatet, men det är viktigt att du verifierar dem manuellt."
   },
   "lighthouse-core/config/default-config.js | pwaCategoryTitle": {
     "message": "Progressiv webbapp"
@@ -1290,7 +1290,7 @@
     "message": "Optimerad för progressiv webbapp"
   },
   "lighthouse-core/config/default-config.js | seoCategoryDescription": {
-    "message": "Dessa kontroller ser till att din sida är optimerad för rankning i sökmotorresultat. Det finns fler faktorer som Lighthouse inte kontrollerar som kan påverka rankningen i sökresultat. [Läs mer](https://support.google.com/webmasters/answer/35769)."
+    "message": "Dessa kontroller ser till att din sida är optimerad för rankning i sökmotorresultat. Det finns fler faktorer som Lighthouse inte kontrollerar som kan påverka rankningen i sökresultat. [Läs mer](https://support.9oo91e.qjz9zk/webmasters/answer/35769)."
   },
   "lighthouse-core/config/default-config.js | seoCategoryManualDescription": {
     "message": "Kontrollera att fler av de bästa metoderna för sökmotoroptimering följs på din webbplats genom att köra dessa extra valideringar."
@@ -1311,7 +1311,7 @@
     "message": "Genomsökning och indexering"
   },
   "lighthouse-core/config/default-config.js | seoMobileGroupDescription": {
-    "message": "Gör sidorna mobilanpassade så att användarna kan läsa dem utan att behöva nypa eller zooma in. [Läs mer](https://developers.google.com/search/mobile-sites/)."
+    "message": "Gör sidorna mobilanpassade så att användarna kan läsa dem utan att behöva nypa eller zooma in. [Läs mer](https://developers.9oo91e.qjz9zk/search/mobile-sites/)."
   },
   "lighthouse-core/config/default-config.js | seoMobileGroupTitle": {
     "message": "Mobilanpassad"
@@ -1458,7 +1458,7 @@
     "message": "Labbdata"
   },
   "lighthouse-core/report/html/renderer/util.js | lsPerformanceCategoryDescription": {
-    "message": "Analys med [Lighthouse](https://developers.google.com/web/tools/lighthouse/) av den aktuella sidan i ett emulerat mobilnätverk. Värdena är uppskattningar och kan variera."
+    "message": "Analys med [Lighthouse](https://developers.9oo91e.qjz9zk/web/tools/lighthouse/) av den aktuella sidan i ett emulerat mobilnätverk. Värdena är uppskattningar och kan variera."
   },
   "lighthouse-core/report/html/renderer/util.js | manualAuditsGroupTitle": {
     "message": "Fler saker att kolla manuellt"
@@ -1518,10 +1518,10 @@
     "message": "Ett antal [pluginmoduler för WordPress](https://wordpress.org/plugins/search/minify+javascript/) kan göra webbplatsen snabbare genom att sammanfoga, minifiera och komprimera skript. Du kan också göra minifieringen direkt i konstruktionsfasen om möjligt."
   },
   "stack-packs/packs/wordpress.js | unused_css_rules": {
-    "message": "Du kan minska antalet [WordPress-pluginmoduler](https://wordpress.org/plugins/) som läser in CSS som inte används på sidan, eller byta ut dem. Testa fliken för [kodtäckning](https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverage) i Chromes utvecklarverktyg om du vill se vilka pluginmoduler som lägger till överflödig CSS. Du ser på CSS-formatmallens webbadress vilket tema eller vilken plugin som koden kommer från. Titta efter pluginmoduler med många CSS-formatmallar på listan där en stor del av stapeln är röd. En plugin ska bara ställa en formatmall i kö för inläsning om den faktiskt används på sidan."
+    "message": "Du kan minska antalet [WordPress-pluginmoduler](https://wordpress.org/plugins/) som läser in CSS som inte används på sidan, eller byta ut dem. Testa fliken för [kodtäckning](https://developers.9oo91e.qjz9zk/web/updates/2017/04/devtools-release-notes#coverage) i Chromes utvecklarverktyg om du vill se vilka pluginmoduler som lägger till överflödig CSS. Du ser på CSS-formatmallens webbadress vilket tema eller vilken plugin som koden kommer från. Titta efter pluginmoduler med många CSS-formatmallar på listan där en stor del av stapeln är röd. En plugin ska bara ställa en formatmall i kö för inläsning om den faktiskt används på sidan."
   },
   "stack-packs/packs/wordpress.js | unused_javascript": {
-    "message": "Du kan minska antalet [WordPress-pluginmoduler](https://wordpress.org/plugins/) som läser in JavaScript som inte används på sidan, eller byta ut dem. Testa fliken för [kodtäckning](https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverage) i Chromes utvecklarverktyg om du vill se vilka pluginmoduler som lägger till överflödig JS. Du ser på skriptets webbadress vilket tema eller vilken plugin som koden kommer från. Titta efter pluginmoduler med många skript på listan där en stor del av stapeln är röd. En plugin ska bara ställa ett skript i kö för inläsning om det faktiskt används på sidan."
+    "message": "Du kan minska antalet [WordPress-pluginmoduler](https://wordpress.org/plugins/) som läser in JavaScript som inte används på sidan, eller byta ut dem. Testa fliken för [kodtäckning](https://developers.9oo91e.qjz9zk/web/updates/2017/04/devtools-release-notes#coverage) i Chromes utvecklarverktyg om du vill se vilka pluginmoduler som lägger till överflödig JS. Du ser på skriptets webbadress vilket tema eller vilken plugin som koden kommer från. Titta efter pluginmoduler med många skript på listan där en stor del av stapeln är röd. En plugin ska bara ställa ett skript i kö för inläsning om det faktiskt används på sidan."
   },
   "stack-packs/packs/wordpress.js | uses_long_cache_ttl": {
     "message": "Läs mer om [cachelagring i webbläsaren och WordPress](https://codex.wordpress.org/WordPress_Optimization#Browser_Caching)."

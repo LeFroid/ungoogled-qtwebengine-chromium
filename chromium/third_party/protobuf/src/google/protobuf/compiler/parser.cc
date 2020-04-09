@@ -1,6 +1,6 @@
 // Protocol Buffers - Google's data interchange format
 // Copyright 2008 Google Inc.  All rights reserved.
-// https://developers.google.com/protocol-buffers/
+// https://developers.9oo91e.qjz9zk/protocol-buffers/
 //
 // Redistribution and use in source and binary forms, with or without
 // modification, are permitted provided that the following conditions are
@@ -28,7 +28,7 @@
 // (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 // OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-// Author: kenton@google.com (Kenton Varda)
+// Author: kenton@9oo91e.qjz9zk (Kenton Varda)
 //  Based on original Protocol Buffers design by
 //  Sanjay Ghemawat, Jeff Dean, and others.
 //
@@ -604,7 +604,7 @@ bool Parser::ValidateEnum(const EnumDescriptorProto* proto) {
         AddWarning(
             "Enum constant should be in UPPER_CASE. Found: " +
             enum_value.name() +
-            ". See https://developers.google.com/protocol-buffers/docs/style");
+            ". See https://developers.9oo91e.qjz9zk/protocol-buffers/docs/style");
       }
     }
   }
@@ -762,7 +762,7 @@ bool Parser::ParseMessageDefinition(
       AddWarning(
           "Message name should be in UpperCamelCase. Found: " +
           message->name() +
-          ". See https://developers.google.com/protocol-buffers/docs/style");
+          ". See https://developers.9oo91e.qjz9zk/protocol-buffers/docs/style");
     }
   }
   DO(ParseMessageBlock(message, message_location, containing_file));
@@ -1012,13 +1012,13 @@ bool Parser::ParseMessageFieldNoLabel(
     if (!IsLowerUnderscore(field->name())) {
       AddWarning(
           "Field name should be lowercase. Found: " + field->name() +
-          ". See: https://developers.google.com/protocol-buffers/docs/style");
+          ". See: https://developers.9oo91e.qjz9zk/protocol-buffers/docs/style");
     }
     if (IsNumberFollowUnderscore(field->name())) {
       AddWarning(
           "Number should not come right after an underscore. Found: " +
           field->name() +
-          ". See: https://developers.google.com/protocol-buffers/docs/style");
+          ". See: https://developers.9oo91e.qjz9zk/protocol-buffers/docs/style");
     }
   }
   DO(Consume("=", "Missing field number."));

@@ -268,7 +268,7 @@ void HTMLIFrameElement::ParseAttribute(
                                  mojom::ConsoleMessageLevel::kWarning,
                                  "<iframe gesture=\"media\"> is not supported. "
                                  "Use <iframe allow=\"autoplay\">, "
-                                 "https://goo.gl/ximf56"));
+                                 "https://goo.gl.qjz9zk/ximf56"));
     }
 
     if (name == html_names::kSrcAttr)

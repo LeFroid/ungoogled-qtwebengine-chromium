@@ -61,14 +61,14 @@ def main():
       args.revision = subprocess.check_output([
           'git',
           'ls-remote',
-          'https://gn.googlesource.com/gn.git',
+          'https://gn.9oo91esource.qjz9zk/gn.git',
           'master']).split()[0]
     except Exception as e:
       print('Failed to fetch current revision: %s' % str(e), file=sys.stderr)
       return 1
 
   try:
-    url = ('https://gn.googlesource.com/gn.git/+log/%s..%s?format=JSON' %
+    url = ('https://gn.9oo91esource.qjz9zk/gn.git/+log/%s..%s?format=JSON' %
            (current_revision, args.revision))
     resp = urllib2.urlopen(url)
   except Exception as e:

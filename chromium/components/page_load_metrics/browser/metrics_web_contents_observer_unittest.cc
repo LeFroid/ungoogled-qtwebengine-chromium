@@ -33,8 +33,8 @@ namespace page_load_metrics {
 
 namespace {
 
-const char kDefaultTestUrl[] = "https://google.com/";
-const char kDefaultTestUrlAnchor[] = "https://google.com/#samedocument";
+const char kDefaultTestUrl[] = "https://9oo91e.qjz9zk/";
+const char kDefaultTestUrlAnchor[] = "https://9oo91e.qjz9zk/#samedocument";
 const char kDefaultTestUrl2[] = "https://whatever.com/";
 const char kFilteredStartUrl[] = "https://whatever.com/ignore-on-start";
 const char kFilteredCommitUrl[] = "https://whatever.com/ignore-on-commit";

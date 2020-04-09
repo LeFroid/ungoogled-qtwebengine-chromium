@@ -112,7 +112,7 @@ int MapOpenSSLErrorSSL(uint32_t error_code) {
     // SSL_R_SSLV3_ALERT_HANDSHAKE_FAILURE may be returned from the server after
     // receiving ClientHello if there's no common supported cipher. Map that
     // specific case to ERR_SSL_VERSION_OR_CIPHER_MISMATCH to match the NSS
-    // implementation. See https://goo.gl/oMtZW and https://crbug.com/446505.
+    // implementation. See https://goo.gl.qjz9zk/oMtZW and https://crbug.com/446505.
     case SSL_R_SSLV3_ALERT_HANDSHAKE_FAILURE: {
       uint32_t previous = ERR_peek_error();
       if (previous != 0 && ERR_GET_LIB(previous) == ERR_LIB_SSL &&

@@ -33,8 +33,8 @@ namespace {
 const char kEnabled[] = "Enabled";
 const char kControl[] = "Control";
 const char kDisabled[] = "Disabled";
-const char kDefaultSecureProxyCheckUrl[] = "http://check.googlezip.net/connect";
-const char kDefaultWarmupUrl[] = "http://check.googlezip.net/e2e_probe";
+const char kDefaultSecureProxyCheckUrl[] = "http://check.9oo91e21p.qjz9zk/connect";
+const char kDefaultWarmupUrl[] = "http://check.9oo91e21p.qjz9zk/e2e_probe";
 
 const char kQuicFieldTrial[] = "DataReductionProxyUseQuic";
 
@@ -42,11 +42,11 @@ const char kLitePageFieldTrial[] = "DataCompressionProxyLoFi";
 
 // Default URL for retrieving the Data Reduction Proxy configuration.
 const char kClientConfigURL[] =
-    "https://datasaver.googleapis.com/v1/clientConfigs";
+    "https://datasaver.9oo91eapis.qjz9zk/v1/clientConfigs";
 
 // Default URL for sending pageload metrics.
 const char kPingbackURL[] =
-    "https://datasaver.googleapis.com/v1/metrics:recordPageloadMetrics";
+    "https://datasaver.9oo91eapis.qjz9zk/v1/metrics:recordPageloadMetrics";
 
 // LitePage black list version.
 const char kLitePageBlackListVersion[] = "lite-page-blacklist-version";
@@ -408,10 +408,10 @@ DataReductionProxyParams::DataReductionProxyParams() {
     DCHECK(proxies_for_http_.empty());
     proxies_for_http_.push_back(
         DataReductionProxyServer(net::ProxyServer::FromURI(
-            "https://proxy.googlezip.net:443", net::ProxyServer::SCHEME_HTTP)));
+            "https://proxy.9oo91e21p.qjz9zk:443", net::ProxyServer::SCHEME_HTTP)));
     proxies_for_http_.push_back(
         DataReductionProxyServer(net::ProxyServer::FromURI(
-            "compress.googlezip.net:80", net::ProxyServer::SCHEME_HTTP)));
+            "compress.9oo91e21p.qjz9zk:80", net::ProxyServer::SCHEME_HTTP)));
   }
 
   DCHECK(std::all_of(proxies_for_http_.begin(), proxies_for_http_.end(),

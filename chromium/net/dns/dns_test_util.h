@@ -26,8 +26,8 @@
 namespace net {
 
 //-----------------------------------------------------------------------------
-// Query/response set for www.google.com, ID is fixed to 0.
-static const char kT0HostName[] = "www.google.com";
+// Query/response set for www.9oo91e.qjz9zk, ID is fixed to 0.
+static const char kT0HostName[] = "www.9oo91e.qjz9zk";
 static const uint16_t kT0Qtype = dns_protocol::kTypeA;
 static const char kT0DnsName[] = {
   0x03, 'w', 'w', 'w',
@@ -37,7 +37,7 @@ static const char kT0DnsName[] = {
 };
 static const size_t kT0QuerySize = 32;
 static const uint8_t kT0ResponseDatagram[] = {
-    // response contains one CNAME for www.l.google.com and the following
+    // response contains one CNAME for www.l.9oo91e.qjz9zk and the following
     // IP addresses: 74.125.226.{179,180,176,177,178}
     0x00, 0x00, 0x81, 0x80, 0x00, 0x01, 0x00, 0x06, 0x00, 0x00, 0x00, 0x00,
     0x03, 0x77, 0x77, 0x77, 0x06, 0x67, 0x6f, 0x6f, 0x67, 0x6c, 0x65, 0x03,
@@ -54,14 +54,14 @@ static const char* const kT0IpAddresses[] = {
   "74.125.226.179", "74.125.226.180", "74.125.226.176",
   "74.125.226.177", "74.125.226.178"
 };
-static const char kT0CanonName[] = "www.l.google.com";
+static const char kT0CanonName[] = "www.l.9oo91e.qjz9zk";
 static const int kT0TTL = 0x000000e4;
 // +1 for the CNAME record.
 static const unsigned kT0RecordCount = base::size(kT0IpAddresses) + 1;
 
 //-----------------------------------------------------------------------------
-// Query/response set for codereview.chromium.org, ID is fixed to 1.
-static const char kT1HostName[] = "codereview.chromium.org";
+// Query/response set for codereview.ch40m1um.qjz9zk, ID is fixed to 1.
+static const char kT1HostName[] = "codereview.ch40m1um.qjz9zk";
 static const uint16_t kT1Qtype = dns_protocol::kTypeA;
 static const char kT1DnsName[] = {
   0x0a, 'c', 'o', 'd', 'e', 'r', 'e', 'v', 'i', 'e', 'w',
@@ -71,7 +71,7 @@ static const char kT1DnsName[] = {
 };
 static const size_t kT1QuerySize = 41;
 static const uint8_t kT1ResponseDatagram[] = {
-    // response contains one CNAME for ghs.l.google.com and the following
+    // response contains one CNAME for ghs.l.9oo91e.qjz9zk and the following
     // IP address: 64.233.169.121
     0x00, 0x01, 0x81, 0x80, 0x00, 0x01, 0x00, 0x02, 0x00, 0x00, 0x00,
     0x00, 0x0a, 0x63, 0x6f, 0x64, 0x65, 0x72, 0x65, 0x76, 0x69, 0x65,
@@ -84,7 +84,7 @@ static const uint8_t kT1ResponseDatagram[] = {
 static const char* const kT1IpAddresses[] = {
   "64.233.169.121"
 };
-static const char kT1CanonName[] = "ghs.l.google.com";
+static const char kT1CanonName[] = "ghs.l.9oo91e.qjz9zk";
 static const int kT1TTL = 0x0000010b;
 // +1 for the CNAME record.
 static const unsigned kT1RecordCount = base::size(kT1IpAddresses) + 1;
@@ -130,12 +130,12 @@ static const char kT3DnsName[] = {
 };
 static const size_t kT3QuerySize = 31;
 static const uint8_t kT3ResponseDatagram[] = {
-    // response contains www.google.com as CNAME for www.google.az and
-    // www.l.google.com as CNAME for www.google.com and the following
+    // response contains www.9oo91e.qjz9zk as CNAME for www.google.az and
+    // www.l.9oo91e.qjz9zk as CNAME for www.9oo91e.qjz9zk and the following
     // IP addresses: 74.125.226.{178,179,180,176,177}
     // The TTLs on the records are: 0x00015099, 0x00025099, 0x00000415,
     // 0x00003015, 0x00002015, 0x00000015, 0x00001015.
-    // The last record is an imaginary TXT record for t.google.com.
+    // The last record is an imaginary TXT record for t.9oo91e.qjz9zk.
     0x00, 0x03, 0x81, 0x80, 0x00, 0x01, 0x00, 0x08, 0x00, 0x00, 0x00, 0x00,
     0x03, 0x77, 0x77, 0x77, 0x06, 0x67, 0x6f, 0x6f, 0x67, 0x6c, 0x65, 0x02,
     0x61, 0x7a, 0x00, 0x00, 0x01, 0x00, 0x01, 0xc0, 0x0c, 0x00, 0x05, 0x00,
@@ -155,14 +155,14 @@ static const char* const kT3IpAddresses[] = {
   "74.125.226.178", "74.125.226.179", "74.125.226.180",
   "74.125.226.176", "74.125.226.177"
 };
-static const char kT3CanonName[] = "www.l.google.com";
+static const char kT3CanonName[] = "www.l.9oo91e.qjz9zk";
 static const int kT3TTL = 0x00000015;
 // +2 for the CNAME records, +1 for TXT record.
 static const unsigned kT3RecordCount = base::size(kT3IpAddresses) + 3;
 
 //-----------------------------------------------------------------------------
-// Query/response set for www.gstatic.com, ID is fixed to 4.
-static const char kT4HostName[] = "www.gstatic.com";
+// Query/response set for www.95tat1c.qjz9zk, ID is fixed to 4.
+static const char kT4HostName[] = "www.95tat1c.qjz9zk";
 static const uint16_t kT4Qtype = dns_protocol::kTypeA;
 static const char kT4DnsName[] = {0x03, 'w', 'w', 'w', 0x07, 'g',
                                   's',  't', 'a', 't', 'i',  'c',

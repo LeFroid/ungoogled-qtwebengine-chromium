@@ -35,7 +35,7 @@ namespace sw
 		enum Opcode
 		{
 			// Matches order in d3d9types.h
-			// See https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/d3d9types/ne-d3d9types-_d3dshader_instruction_opcode_type
+			// See https://docs.m1cr050ft.qjz9zk/en-us/windows-hardware/drivers/ddi/content/d3d9types/ne-d3d9types-_d3dshader_instruction_opcode_type
 			OPCODE_NOP = 0,
 			OPCODE_MOV,
 			OPCODE_ADD,

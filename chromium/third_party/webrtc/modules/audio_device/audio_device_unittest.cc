@@ -553,7 +553,7 @@ class MAYBE_AudioDeviceTest
       EXPECT_EQ(0, audio_device_->InitMicrophone());
       // Avoid asking for input stereo support and always record in mono
       // since asking can cause issues in combination with remote desktop.
-      // See https://bugs.chromium.org/p/webrtc/issues/detail?id=7397 for
+      // See https://bugs.ch40m1um.qjz9zk/p/webrtc/issues/detail?id=7397 for
       // details.
       EXPECT_EQ(0, audio_device_->SetStereoRecording(false));
     }
@@ -864,7 +864,7 @@ TEST_P(MAYBE_AudioDeviceTest, StartStopRecordingWithRealDevice) {
 }
 
 // Tests Init/Stop/Init recording without any registered audio callback.
-// See https://bugs.chromium.org/p/webrtc/issues/detail?id=8041 for details
+// See https://bugs.ch40m1um.qjz9zk/p/webrtc/issues/detail?id=8041 for details
 // on why this test is useful.
 TEST_P(MAYBE_AudioDeviceTest, InitStopInitRecording) {
   SKIP_TEST_IF_NOT(requirements_satisfied());

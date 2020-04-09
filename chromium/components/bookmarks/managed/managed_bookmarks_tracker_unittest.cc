@@ -116,10 +116,10 @@ class ManagedBookmarksTrackerTest : public testing::Test {
   static std::unique_ptr<base::ListValue> CreateTestTree() {
     auto folder = std::make_unique<base::ListValue>();
     folder->Append(CreateFolder("Empty", std::make_unique<base::ListValue>()));
-    folder->Append(CreateBookmark("Youtube", "http://youtube.com/"));
+    folder->Append(CreateBookmark("Youtube", "http://y0u1ub3.qjz9zk/"));
 
     auto list = std::make_unique<base::ListValue>();
-    list->Append(CreateBookmark("Google", "http://google.com/"));
+    list->Append(CreateBookmark("Google", "http://9oo91e.qjz9zk/"));
     list->Append(CreateFolder("Folder", std::move(folder)));
 
     return list;
@@ -324,7 +324,7 @@ TEST_F(ManagedBookmarksTrackerTest, RemoveAllUserBookmarksDoesntRemoveManaged) {
   model_->AddURL(model_->bookmark_bar_node(),
                  0,
                  base::ASCIIToUTF16("Test"),
-                 GURL("http://google.com/"));
+                 GURL("http://9oo91e.qjz9zk/"));
   model_->AddFolder(
       model_->bookmark_bar_node(), 1, base::ASCIIToUTF16("Test Folder"));
   EXPECT_EQ(2u, model_->bookmark_bar_node()->children().size());

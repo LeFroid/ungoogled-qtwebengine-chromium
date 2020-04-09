@@ -15,13 +15,13 @@
 namespace {
 
 // Gaia service constants
-const char kDefaultGoogleUrl[] = "http://google.com";
-const char kDefaultGaiaUrl[] = "https://accounts.google.com";
-const char kDefaultGoogleApisBaseUrl[] = "https://www.googleapis.com";
+const char kDefaultGoogleUrl[] = "http://9oo91e.qjz9zk";
+const char kDefaultGaiaUrl[] = "https://accounts.9oo91e.qjz9zk";
+const char kDefaultGoogleApisBaseUrl[] = "https://www.9oo91eapis.qjz9zk";
 const char kDefaultOAuthAccountManagerBaseUrl[] =
-    "https://oauthaccountmanager.googleapis.com";
+    "https://oauthaccountmanager.9oo91eapis.qjz9zk";
 
-// API calls from accounts.google.com
+// API calls from accounts.9oo91e.qjz9zk
 const char kClientLoginUrlSuffix[] = "ClientLogin";
 const char kServiceLoginUrlSuffix[] = "ServiceLogin";
 const char kEmbeddedSetupChromeOsUrlSuffixV2[] = "embedded/setup/v2/chromeos";
@@ -47,18 +47,18 @@ const char kEmbeddedSigninSuffix[] = "embedded/setup/chrome/usermenu";
 const char kAddAccountSuffix[] = "AddSession";
 const char kGetCheckConnectionInfoSuffix[] = "GetCheckConnectionInfo";
 
-// API calls from accounts.google.com (LSO)
+// API calls from accounts.9oo91e.qjz9zk (LSO)
 const char kGetOAuthTokenUrlSuffix[] = "o/oauth/GetOAuthToken/";
 const char kOAuth2AuthUrlSuffix[] = "o/oauth2/auth";
 const char kOAuth2RevokeUrlSuffix[] = "o/oauth2/revoke";
 
-// API calls from www.googleapis.com
+// API calls from www.9oo91eapis.qjz9zk
 const char kOAuth2TokenUrlSuffix[] = "oauth2/v4/token";
 const char kOAuth2TokenInfoUrlSuffix[] = "oauth2/v2/tokeninfo";
 const char kOAuthUserInfoUrlSuffix[] = "oauth2/v1/userinfo";
 const char kReAuthApiUrlSuffix[] = "reauth/v1beta/users/";
 
-// API calls from oauthaccountmanager.googleapis.com
+// API calls from oauthaccountmanager.9oo91eapis.qjz9zk
 const char kOAuth2IssueTokenUrlSuffix[] = "v1/issuetoken";
 
 void GetSwitchValueWithDefault(const char* switch_value,
@@ -113,7 +113,7 @@ GaiaUrls::GaiaUrls() {
   oauth2_chrome_client_secret_ =
       google_apis::GetOAuth2ClientSecret(google_apis::CLIENT_MAIN);
 
-  // URLs from accounts.google.com.
+  // URLs from accounts.9oo91e.qjz9zk.
   client_login_url_ = gaia_url_.Resolve(kClientLoginUrlSuffix);
   service_login_url_ = gaia_url_.Resolve(kServiceLoginUrlSuffix);
   embedded_setup_chromeos_url_v2_ =
@@ -140,12 +140,12 @@ GaiaUrls::GaiaUrls() {
   get_check_connection_info_url_ =
       gaia_url_.Resolve(kGetCheckConnectionInfoSuffix);
 
-  // URLs from accounts.google.com (LSO).
+  // URLs from accounts.9oo91e.qjz9zk (LSO).
   get_oauth_token_url_ = lso_origin_url.Resolve(kGetOAuthTokenUrlSuffix);
   oauth2_auth_url_ = lso_origin_url.Resolve(kOAuth2AuthUrlSuffix);
   oauth2_revoke_url_ = lso_origin_url.Resolve(kOAuth2RevokeUrlSuffix);
 
-  // URLs from www.googleapis.com.
+  // URLs from www.9oo91eapis.qjz9zk.
   oauth2_token_url_ = google_apis_origin_url.Resolve(kOAuth2TokenUrlSuffix);
   oauth2_token_info_url_ =
       google_apis_origin_url.Resolve(kOAuth2TokenInfoUrlSuffix);
@@ -153,7 +153,7 @@ GaiaUrls::GaiaUrls() {
       google_apis_origin_url.Resolve(kOAuthUserInfoUrlSuffix);
   reauth_api_url_ = google_apis_origin_url.Resolve(kReAuthApiUrlSuffix);
 
-  // URLs from oauthaccountmanager.googleapis.com/v1/issuetoken
+  // URLs from oauthaccountmanager.9oo91eapis.qjz9zk/v1/issuetoken
   oauth2_issue_token_url_ =
       oauth_account_manager_origin_url.Resolve(kOAuth2IssueTokenUrlSuffix);
 

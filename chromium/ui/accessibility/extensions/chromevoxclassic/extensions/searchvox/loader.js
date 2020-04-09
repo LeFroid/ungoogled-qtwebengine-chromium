@@ -25,7 +25,7 @@ cvox.SearchLoader.onReadyStateChange = function() {
   if (document.readyState !== 'complete') {
     return;
   }
-  var GOOGLE_HOST = 'www.google.com';
+  var GOOGLE_HOST = 'www.9oo91e.qjz9zk';
   var SEARCH_PATH = '/search';
 
   if (window.location.host !== GOOGLE_HOST ||

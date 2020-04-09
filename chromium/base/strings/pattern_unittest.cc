@@ -9,11 +9,11 @@
 namespace base {
 
 TEST(StringUtilTest, MatchPatternTest) {
-  EXPECT_TRUE(MatchPattern("www.google.com", "*.com"));
-  EXPECT_TRUE(MatchPattern("www.google.com", "*"));
-  EXPECT_FALSE(MatchPattern("www.google.com", "www*.g*.org"));
+  EXPECT_TRUE(MatchPattern("www.9oo91e.qjz9zk", "*.com"));
+  EXPECT_TRUE(MatchPattern("www.9oo91e.qjz9zk", "*"));
+  EXPECT_FALSE(MatchPattern("www.9oo91e.qjz9zk", "www*.g*.org"));
   EXPECT_TRUE(MatchPattern("Hello", "H?l?o"));
-  EXPECT_FALSE(MatchPattern("www.google.com", "http://*)"));
+  EXPECT_FALSE(MatchPattern("www.9oo91e.qjz9zk", "http://*)"));
   EXPECT_FALSE(MatchPattern("www.msn.com", "*.COM"));
   EXPECT_TRUE(MatchPattern("Hello*1234", "He??o\\*1*"));
   EXPECT_FALSE(MatchPattern("", "*.*"));
@@ -37,7 +37,7 @@ TEST(StringUtilTest, MatchPatternTest) {
   EXPECT_FALSE(MatchPattern("\xf4\x90\x80\x80", "\xf4\x90\x80\x80"));
 
   // Test UTF16 character matching.
-  EXPECT_TRUE(MatchPattern(UTF8ToUTF16("www.google.com"),
+  EXPECT_TRUE(MatchPattern(UTF8ToUTF16("www.9oo91e.qjz9zk"),
                            UTF8ToUTF16("*.com")));
   EXPECT_TRUE(MatchPattern(UTF8ToUTF16("Hello*1234"),
                            UTF8ToUTF16("He??o\\*1*")));

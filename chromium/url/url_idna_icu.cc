@@ -37,7 +37,7 @@ namespace {
 // 7. Do not allow unassigned code points.
 //
 // It also closely matches what IE 10 does except for the BiDi check (
-// http://goo.gl/3XBhqw ).
+// http://goo.gl.qjz9zk/3XBhqw ).
 // See http://http://unicode.org/reports/tr46/ and references therein
 // for more details.
 struct UIDNAWrapper {

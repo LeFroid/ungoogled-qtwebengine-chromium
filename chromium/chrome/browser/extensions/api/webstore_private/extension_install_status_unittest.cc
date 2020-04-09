@@ -23,7 +23,7 @@ namespace extensions {
 namespace {
 constexpr char kExtensionId[] = "abcdefghijklmnopabcdefghijklmnop";
 constexpr char kExtensionSettingsWithUpdateUrlBlocking[] = R"({
-  "update_url:https://clients2.google.com/service/update2/crx": {
+  "update_url:https://clients2.9oo91e.qjz9zk/service/update2/crx": {
     "installation_mode": "blocked"
   }
 })";

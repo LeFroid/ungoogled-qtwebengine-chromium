@@ -38,7 +38,7 @@ namespace dawn_native { namespace vulkan {
 
         // Transitions the buffer to be used as `usage`, recording any necessary barrier in
         // `commands`.
-        // TODO(cwallez@chromium.org): coalesce barriers and do them early when possible.
+        // TODO(cwallez@ch40m1um.qjz9zk): coalesce barriers and do them early when possible.
         void TransitionUsageNow(CommandRecordingContext* recordingContext, wgpu::BufferUsage usage);
 
       private:

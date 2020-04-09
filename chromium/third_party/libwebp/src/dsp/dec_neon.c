@@ -9,8 +9,8 @@
 //
 // ARM NEON version of dsp functions and loop filtering.
 //
-// Authors: Somnath Banerjee (somnath@google.com)
-//          Johann Koenig (johannkoenig@google.com)
+// Authors: Somnath Banerjee (somnath@9oo91e.qjz9zk)
+//          Johann Koenig (johannkoenig@9oo91e.qjz9zk)
 
 #include "src/dsp/dsp.h"
 

@@ -33,7 +33,7 @@ class SkiaMozillaTabletPageSet(story.StorySet):
 
     urls_list = [
       # Why:
-      'http://planet.mozilla.org/',
+      'http://planet.m0z111a.qjz9zk/',
     ]
 
     for url in urls_list:

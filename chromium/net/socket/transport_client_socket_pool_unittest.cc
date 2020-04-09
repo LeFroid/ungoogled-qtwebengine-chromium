@@ -103,7 +103,7 @@ class TransportClientSocketPoolTest : public ::testing::Test,
       : WithTaskEnvironment(time_source),
         connect_backup_jobs_enabled_(
             TransportClientSocketPool::set_connect_backup_jobs_enabled(true)),
-        group_id_(HostPortPair("www.google.com", 80),
+        group_id_(HostPortPair("www.9oo91e.qjz9zk", 80),
                   ClientSocketPool::SocketType::kHttp,
                   PrivacyMode::PRIVACY_MODE_DISABLED,
                   NetworkIsolationKey(),
@@ -260,7 +260,7 @@ TEST_F(TransportClientSocketPoolTest, SetDisableSecureDns) {
     TestCompletionCallback callback;
     ClientSocketHandle handle;
     ClientSocketPool::GroupId group_id(
-        HostPortPair("www.google.com", 80), ClientSocketPool::SocketType::kHttp,
+        HostPortPair("www.9oo91e.qjz9zk", 80), ClientSocketPool::SocketType::kHttp,
         PrivacyMode::PRIVACY_MODE_DISABLED, NetworkIsolationKey(),
         disable_secure_dns);
     EXPECT_EQ(
@@ -911,7 +911,7 @@ TEST_F(TransportClientSocketPoolTest, RequestTwice) {
                   pool_.get(), NetLogWithSource());
   ASSERT_THAT(rv, IsError(ERR_IO_PENDING));
 
-  // The callback is going to request "www.google.com". We want it to complete
+  // The callback is going to request "www.9oo91e.qjz9zk". We want it to complete
   // synchronously this time.
   session_deps_.host_resolver->set_synchronous_mode(true);
 
@@ -2347,7 +2347,7 @@ TEST_F(TransportClientSocketPoolTest, TagHttpProxyNoTunnel) {
   socket_data.set_connect_data(MockConnect(SYNCHRONOUS, OK));
   tagging_client_socket_factory_.AddSocketDataProvider(&socket_data);
 
-  const HostPortPair kDestination("www.google.com", 80);
+  const HostPortPair kDestination("www.9oo91e.qjz9zk", 80);
   const ClientSocketPool::GroupId kGroupId(
       kDestination, ClientSocketPool::SocketType::kHttp,
       PrivacyMode::PRIVACY_MODE_DISABLED, NetworkIsolationKey(),
@@ -2405,8 +2405,8 @@ TEST_F(TransportClientSocketPoolTest, TagHttpProxyTunnel) {
   session_deps_.host_resolver->set_synchronous_mode(true);
 
   std::string request =
-      "CONNECT www.google.com:443 HTTP/1.1\r\n"
-      "Host: www.google.com:443\r\n"
+      "CONNECT www.9oo91e.qjz9zk:443 HTTP/1.1\r\n"
+      "Host: www.9oo91e.qjz9zk:443\r\n"
       "Proxy-Connection: keep-alive\r\n\r\n";
   MockWrite writes[] = {
       MockWrite(SYNCHRONOUS, 0, request.c_str()),
@@ -2420,7 +2420,7 @@ TEST_F(TransportClientSocketPoolTest, TagHttpProxyTunnel) {
   SSLSocketDataProvider ssl_data(SYNCHRONOUS, OK);
   tagging_client_socket_factory_.AddSSLSocketDataProvider(&ssl_data);
 
-  const HostPortPair kDestination("www.google.com", 443);
+  const HostPortPair kDestination("www.9oo91e.qjz9zk", 443);
   const ClientSocketPool::GroupId kGroupId(
       kDestination, ClientSocketPool::SocketType::kSsl,
       PrivacyMode::PRIVACY_MODE_DISABLED, NetworkIsolationKey(),

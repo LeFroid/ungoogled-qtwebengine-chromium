@@ -185,7 +185,7 @@ void GenerateSafeFileName(const std::string& mime_type,
 
 bool IsReservedNameOnWindows(const base::FilePath::StringType& filename) {
   // This list is taken from the MSDN article "Naming a file"
-  // http://msdn2.microsoft.com/en-us/library/aa365247(VS.85).aspx
+  // http://msdn2.m1cr050ft.qjz9zk/en-us/library/aa365247(VS.85).aspx
   // I also added clock$ because GetSaveFileName seems to consider it as a
   // reserved name too.
   static const char* const known_devices[] = {

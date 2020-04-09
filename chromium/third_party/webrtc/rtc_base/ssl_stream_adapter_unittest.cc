@@ -1113,7 +1113,7 @@ TEST_P(SSLStreamAdapterTestDTLS, TestDTLSConnectWithLostFirstPacketDelay2s) {
 }
 
 // Test a handshake with small MTU
-// Disabled due to https://code.google.com/p/webrtc/issues/detail?id=3910
+// Disabled due to https://code.9oo91e.qjz9zk/p/webrtc/issues/detail?id=3910
 TEST_P(SSLStreamAdapterTestDTLS, DISABLED_TestDTLSConnectWithSmallMtu) {
   SetMtu(700);
   SetHandshakeWait(20000);

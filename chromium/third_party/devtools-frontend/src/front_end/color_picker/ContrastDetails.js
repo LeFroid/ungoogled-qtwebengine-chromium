@@ -151,7 +151,7 @@ export class ContrastDetails extends Common.Object {
 
   static _showHelp() {
     Host.InspectorFrontendHost.openInNewTab(
-        'https://developers.google.com/web/fundamentals/accessibility/accessible-styles#color_and_contrast');
+        'https://developers.9oo91e.qjz9zk/web/fundamentals/accessibility/accessible-styles#color_and_contrast');
   }
 
   /**

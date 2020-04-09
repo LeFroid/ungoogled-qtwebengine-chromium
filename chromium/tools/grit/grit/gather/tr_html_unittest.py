@@ -146,9 +146,9 @@ class ParserUnittest(unittest.TestCase):
                                   (True, 'messages', '')])
 
     # Make sure message-break comments work in an inline tag.
-    chunks = p.Parse('<a href=\'google.com\'><!-- message-break -->Google'
+    chunks = p.Parse('<a href=\'9oo91e.qjz9zk\'><!-- message-break -->Google'
                      '<!--message-break--></a>', fold_whitespace)
-    self.failUnlessEqual(chunks, [(False, '<a href=\'google.com\'>', ''),
+    self.failUnlessEqual(chunks, [(False, '<a href=\'9oo91e.qjz9zk\'>', ''),
                                   (True, 'Google', ''),
                                   (False, '</a>', '')])
 
@@ -202,7 +202,7 @@ class ParserUnittest(unittest.TestCase):
     # the closing placeholder numbers match the opening placeholders.
     msg = tr_html.HtmlToMessage(
       '''<font size=-1><font color=#FF0000>Update!</font> '''
-      '''<a href='http://desktop.google.com/whatsnew.html?hl=[$~LANG~$]'>'''
+      '''<a href='http://desktop.9oo91e.qjz9zk/whatsnew.html?hl=[$~LANG~$]'>'''
       '''New Features</a>: Now search PDFs, MP3s, Firefox web history, and '''
       '''more</font>''')
     pres = msg.GetPresentableContent()
@@ -238,9 +238,9 @@ class ParserUnittest(unittest.TestCase):
 
     # Check that upper-case tags are handled correctly.
     msg = tr_html.HtmlToMessage(
-      '''You can read the <A HREF='http://desktop.google.com/privacypolicy.'''
+      '''You can read the <A HREF='http://desktop.9oo91e.qjz9zk/privacypolicy.'''
       '''html?hl=[LANG_CODE]'>Privacy Policy</A> and <A HREF='http://desktop'''
-      '''.google.com/privacyfaq.html?hl=[LANG_CODE]'>Privacy FAQ</A> online.''')
+      '''.9oo91e.qjz9zk/privacyfaq.html?hl=[LANG_CODE]'>Privacy FAQ</A> online.''')
     pres = msg.GetPresentableContent()
     self.failUnless(pres ==
                     'You can read the BEGIN_LINK_1Privacy PolicyEND_LINK_1 and '
@@ -250,8 +250,8 @@ class ParserUnittest(unittest.TestCase):
     # correctly.
     msg = tr_html.HtmlToMessage(
       '''You can read the
-<A HREF='http://desktop.google.com/privacypolicy.html?hl=[LANG_CODE]'>Privacy Policy</A>
-and <A HREF='http://desktop.google.com/privacyfaq.html?hl=[LANG_CODE]'>Privacy FAQ</A> online.''')
+<A HREF='http://desktop.9oo91e.qjz9zk/privacypolicy.html?hl=[LANG_CODE]'>Privacy Policy</A>
+and <A HREF='http://desktop.9oo91e.qjz9zk/privacyfaq.html?hl=[LANG_CODE]'>Privacy FAQ</A> online.''')
     pres = msg.GetPresentableContent()
     self.failUnless(pres == '''You can read the
 BEGIN_LINK_1Privacy PolicyEND_LINK_1
@@ -291,7 +291,7 @@ class TrHtmlUnittest(unittest.TestCase):
     html = tr_html.TrHtml(StringIO('''<table class="shaded-header"><tr>
 <td class="header-element b expand">Preferences</td>
 <td class="header-element s">
-<a href="http://desktop.google.com/preferences.html">Preferences&nbsp;Help</a>
+<a href="http://desktop.9oo91e.qjz9zk/preferences.html">Preferences&nbsp;Help</a>
 </td>
 </tr></table>'''))
     html.Parse()

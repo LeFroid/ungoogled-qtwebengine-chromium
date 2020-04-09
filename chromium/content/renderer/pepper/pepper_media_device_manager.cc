@@ -28,7 +28,7 @@ namespace {
 const char kPepperInsecureOriginMessage[] =
     "Microphone and Camera access no longer works on insecure origins. To use "
     "this feature, you should consider switching your application to a "
-    "secure origin, such as HTTPS. See https://goo.gl/rStTGz for more "
+    "secure origin, such as HTTPS. See https://goo.gl.qjz9zk/rStTGz for more "
     "details.";
 
 PP_DeviceType_Dev FromMediaDeviceType(blink::MediaDeviceType type) {

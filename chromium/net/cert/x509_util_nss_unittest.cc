@@ -83,7 +83,7 @@ TEST(X509UtilNSSTest, CreateCERTCertificateFromBytes) {
       google_der, base::size(google_der)));
   ASSERT_TRUE(google_cert);
   EXPECT_STREQ(
-      "CN=www.google.com,O=Google Inc,L=Mountain View,ST=California,C=US",
+      "CN=www.9oo91e.qjz9zk,O=Google Inc,L=Mountain View,ST=California,C=US",
       google_cert->subjectName);
 }
 
@@ -206,7 +206,7 @@ TEST(X509UtilNSSTest, DupCERTCertificate) {
   cert.reset();
   // The duped handle should still be safe to access.
   EXPECT_STREQ(
-      "CN=www.google.com,O=Google Inc,L=Mountain View,ST=California,C=US",
+      "CN=www.9oo91e.qjz9zk,O=Google Inc,L=Mountain View,ST=California,C=US",
       cert2->subjectName);
 }
 
@@ -231,7 +231,7 @@ TEST(X509UtilNSSTest, DupCERTCertificateList) {
   certs.clear();
   // The duped handles should still be safe to access.
   EXPECT_STREQ(
-      "CN=www.google.com,O=Google Inc,L=Mountain View,ST=California,C=US",
+      "CN=www.9oo91e.qjz9zk,O=Google Inc,L=Mountain View,ST=California,C=US",
       certs_dup[0]->subjectName);
   EXPECT_STREQ(
       "CN=*.webkit.org,OU=Mac OS Forge,O=Apple "
@@ -337,7 +337,7 @@ TEST(X509UtilNSSTest, GetDefaultNickname) {
   std::string nickname = x509_util::GetDefaultUniqueNickname(
       test_cert.get(), USER_CERT, nullptr /*slot*/);
   EXPECT_EQ(
-      "wtc@google.com's COMODO Client Authentication and "
+      "wtc@9oo91e.qjz9zk's COMODO Client Authentication and "
       "Secure Email CA ID",
       nickname);
 }

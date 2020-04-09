@@ -717,7 +717,7 @@ TEST_F(PlatformSensorAndProviderTestWin,
   base::win::ScopedPropVariant pvQuat;
 
   // The SENSOR_DATA_TYPE_QUATERNION property has [VT_VECTOR | VT_UI1] type.
-  // https://msdn.microsoft.com/en-us/library/windows/hardware/dn265187(v=vs.85).aspx
+  // https://msdn.m1cr050ft.qjz9zk/en-us/library/windows/hardware/dn265187(v=vs.85).aspx
   // Helper functions e.g., InitVariantFromDoubleArray cannot be used for its
   // intialization and the only way to initialize it, is to use
   // InitPropVariantFromGUIDAsBuffer with quaternion format GUID.

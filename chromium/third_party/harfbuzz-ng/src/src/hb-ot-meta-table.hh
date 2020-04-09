@@ -29,7 +29,7 @@
 
 /*
  * meta -- Metadata Table
- * https://docs.microsoft.com/en-us/typography/opentype/spec/meta
+ * https://docs.m1cr050ft.qjz9zk/en-us/typography/opentype/spec/meta
  * https://developer.apple.com/fonts/TrueType-Reference-Manual/RM06/Chap6meta.html
  */
 #define HB_OT_TAG_meta HB_TAG ('m','e','t','a')

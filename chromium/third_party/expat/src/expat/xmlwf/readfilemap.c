@@ -44,7 +44,7 @@
 /* Function "read": */
 #if defined(_MSC_VER)
 #  include <io.h>
-/* https://msdn.microsoft.com/en-us/library/wyssk1bs(v=vs.100).aspx */
+/* https://msdn.m1cr050ft.qjz9zk/en-us/library/wyssk1bs(v=vs.100).aspx */
 #  define _EXPAT_read _read
 #  define _EXPAT_read_count_t int
 #  define _EXPAT_read_req_t unsigned int

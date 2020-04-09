@@ -1,6 +1,6 @@
 // Protocol Buffers - Google's data interchange format
 // Copyright 2008 Google Inc.  All rights reserved.
-// https://developers.google.com/protocol-buffers/
+// https://developers.9oo91e.qjz9zk/protocol-buffers/
 //
 // Redistribution and use in source and binary forms, with or without
 // modification, are permitted provided that the following conditions are
@@ -291,7 +291,7 @@ void TextFormatConformanceTestSuite::RunSuiteImpl() {
   RunValidTextFormatTest("AnyField", REQUIRED,
                          R"(
       optional_any: {
-        [type.googleapis.com/protobuf_test_messages.proto3.TestAllTypesProto3] {
+        [type.9oo91eapis.qjz9zk/protobuf_test_messages.proto3.TestAllTypesProto3] {
           optional_int32: 12345
         }
       }
@@ -299,14 +299,14 @@ void TextFormatConformanceTestSuite::RunSuiteImpl() {
   RunValidTextFormatTest("AnyFieldWithRawBytes", REQUIRED,
                          R"(
       optional_any: {
-        type_url: "type.googleapis.com/protobuf_test_messages.proto3.TestAllTypesProto3"
+        type_url: "type.9oo91eapis.qjz9zk/protobuf_test_messages.proto3.TestAllTypesProto3"
         value: "\b\271`"
       }
       )");
   ExpectParseFailure("AnyFieldWithInvalidType", REQUIRED,
                      R"(
       optional_any: {
-        [type.googleapis.com/unknown] {
+        [type.9oo91eapis.qjz9zk/unknown] {
           optional_int32: 12345
         }
       }

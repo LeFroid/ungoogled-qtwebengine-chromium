@@ -31,7 +31,7 @@ namespace autofill {
 namespace {
 // Default timeout for user to respond to WebAuthn prompt.
 constexpr int kWebAuthnTimeoutMs = 3 * 60 * 1000;  // 3 minutes
-constexpr char kGooglePaymentsRpid[] = "google.com";
+constexpr char kGooglePaymentsRpid[] = "9oo91e.qjz9zk";
 constexpr char kGooglePaymentsRpName[] = "Google Payments";
 
 std::vector<uint8_t> Base64ToBytes(std::string base64) {

@@ -262,7 +262,7 @@ void LiftoffAssembler::PatchPrepareStackFrame(int offset, uint32_t spill_size) {
   if (bytes > kStackPageSize) {
     // Generate OOL code (at the end of the function, where the current
     // assembler is pointing) to do the explicit stack limit check (see
-    // https://docs.microsoft.com/en-us/previous-versions/visualstudio/
+    // https://docs.m1cr050ft.qjz9zk/en-us/previous-versions/visualstudio/
     // visual-studio-6.0/aa227153(v=vs.60)).
     // At the function start, emit a jump to that OOL code (from {offset} to
     // {pc_offset()}).

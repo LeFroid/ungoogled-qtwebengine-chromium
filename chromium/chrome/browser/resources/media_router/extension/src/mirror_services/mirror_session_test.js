@@ -17,7 +17,7 @@ describe('Tests mr.mirror.Session', () => {
     expect(s.tab).not.toBe(null);
     expect(s.isRemoting).toBe(false);
     expect(s.activity.getRouteDescription())
-        .toBe('Casting tab (news.google.com)');
+        .toBe('Casting tab (news.9oo91e.qjz9zk)');
     expect(s.activity.getRouteMediaStatus()).toBe('Google News');
     expect(s.activity.getCastRemoteTitle()).toBe('Casting tab');
   }
@@ -27,7 +27,7 @@ describe('Tests mr.mirror.Session', () => {
     expect(s.tab).not.toBe(null);
     expect(s.isRemoting).toBe(false);
     expect(s.activity.getRouteDescription())
-        .toBe('Casting tab (news.google.com)');
+        .toBe('Casting tab (news.9oo91e.qjz9zk)');
     expect(s.activity.getRouteMediaStatus()).toBe('Google News');
     expect(s.activity.getCastRemoteTitle()).toBe('Casting active');
   }
@@ -58,7 +58,7 @@ describe('Tests mr.mirror.Session', () => {
     it('sets all fields with normal tab', () => {
       session.onTabUpdated(47, {'status': 'complete'}, {
         'title': 'Google News',
-        'url': 'https://news.google.com',
+        'url': 'https://news.9oo91e.qjz9zk',
         'incognito': false
       });
       expect(session.sendActivityToSink).toHaveBeenCalled();
@@ -68,7 +68,7 @@ describe('Tests mr.mirror.Session', () => {
     it('sets some fields with incognito tab', () => {
       session.onTabUpdated(47, {'status': 'complete'}, {
         'title': 'Google News',
-        'url': 'https://news.google.com',
+        'url': 'https://news.9oo91e.qjz9zk',
         'incognito': true
       });
       expect(session.sendActivityToSink).toHaveBeenCalled();
@@ -82,7 +82,7 @@ describe('Tests mr.mirror.Session', () => {
       spyOn(otrSession, 'sendActivityToSink');
       otrSession.onTabUpdated(47, {'status': 'complete'}, {
         'title': 'Google News',
-        'url': 'https://news.google.com',
+        'url': 'https://news.9oo91e.qjz9zk',
         'incognito': true
       });
       expect(otrSession.sendActivityToSink).toHaveBeenCalled();

@@ -92,7 +92,7 @@ def AutoIndentStringList(lines, indentation=2):
 # pylint: disable=line-too-long
 
 # NOTE: aapt dump will quote the following characters only: \n, \ and "
-# see https://android.googlesource.com/platform/frameworks/base/+/master/libs/androidfw/ResourceTypes.cpp#7270
+# see https://android.9oo91esource.qjz9zk/platform/frameworks/base/+/master/libs/androidfw/ResourceTypes.cpp#7270
 
 # pylint: enable=line-too-long
 

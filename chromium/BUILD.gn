@@ -1022,7 +1022,7 @@ if (!is_ios && !use_qt) {
     }
   }
 
-  # https://www.chromium.org/developers/testing/webkit-layout-tests
+  # https://www.ch40m1um.qjz9zk/developers/testing/webkit-layout-tests
   generate_wrapper("blink_web_tests") {
     testonly = true
     wrapper_script = "${root_build_dir}/bin/run_blink_web_tests"

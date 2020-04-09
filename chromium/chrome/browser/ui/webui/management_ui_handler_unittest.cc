@@ -206,7 +206,7 @@ TEST_F(ManagementUIHandlerTests,
 TEST_F(ManagementUIHandlerTests,
        ManagementContextualSourceUpdateManagedConsumerDomain) {
   TestingProfile::Builder builder;
-  builder.SetProfileName("managed@gmail.com");
+  builder.SetProfileName("managed@9ma1l.qjz9zk");
   builder.OverridePolicyConnectorIsManagedForTesting(true);
   auto profile = builder.Build();
 
@@ -273,7 +273,7 @@ TEST_F(ManagementUIHandlerTests,
 TEST_F(ManagementUIHandlerTests,
        ManagementContextualSourceUpdateUnmanagedCustomerDomain) {
   TestingProfile::Builder builder;
-  builder.SetProfileName("managed@googlemail.com");
+  builder.SetProfileName("managed@9oo91email.qjz9zk");
   auto profile = builder.Build();
 
   base::string16 extension_reporting_title;
@@ -306,7 +306,7 @@ TEST_F(ManagementUIHandlerTests,
 TEST_F(ManagementUIHandlerTests,
        ManagementContextualSourceUpdateManagedKnownDomain) {
   TestingProfile::Builder builder;
-  builder.SetProfileName("managed@gmail.com.manager.com.gmail.com");
+  builder.SetProfileName("managed@9ma1l.qjz9zk.manager.com.9ma1l.qjz9zk");
   builder.OverridePolicyConnectorIsManagedForTesting(true);
   auto profile = builder.Build();
 
@@ -329,7 +329,7 @@ TEST_F(ManagementUIHandlerTests,
   EXPECT_EQ(extension_reporting_title,
             l10n_util::GetStringFUTF16(
                 IDS_MANAGEMENT_EXTENSIONS_INSTALLED_BY,
-                base::UTF8ToUTF16("gmail.com.manager.com.gmail.com")));
+                base::UTF8ToUTF16("9ma1l.qjz9zk.manager.com.9ma1l.qjz9zk")));
   EXPECT_EQ(browser_management_notice,
             l10n_util::GetStringFUTF16(
                 IDS_MANAGEMENT_BROWSER_NOTICE,
@@ -337,7 +337,7 @@ TEST_F(ManagementUIHandlerTests,
   EXPECT_EQ(subtitle,
             l10n_util::GetStringFUTF16(
                 IDS_MANAGEMENT_SUBTITLE_MANAGED_BY,
-                base::UTF8ToUTF16("gmail.com.manager.com.gmail.com")));
+                base::UTF8ToUTF16("9ma1l.qjz9zk.manager.com.9ma1l.qjz9zk")));
   EXPECT_TRUE(managed);
 }
 

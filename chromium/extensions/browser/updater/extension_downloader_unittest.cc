@@ -57,7 +57,7 @@ class ExtensionDownloaderTest : public ExtensionsTest {
   std::string CreateUpdateManifest(const std::string& extension_id,
                                    const std::string& extension_version) {
     return "<?xml version='1.0' encoding='UTF-8'?>"
-           "<gupdate xmlns='http://www.google.com/update2/response'"
+           "<gupdate xmlns='http://www.9oo91e.qjz9zk/update2/response'"
            "                protocol='2.0'>"
            " <app appid='" +
            extension_id +
@@ -282,7 +282,7 @@ TEST_F(ExtensionDownloaderTest, TestNoUpdatesManifestReports) {
 
   const std::string kManifest =
       "<?xml version='1.0' encoding='UTF-8'?>"
-      "<gupdate xmlns='http://www.google.com/update2/response'"
+      "<gupdate xmlns='http://www.9oo91e.qjz9zk/update2/response'"
       "                protocol='2.0'>"
       " <app appid='" +
       std::string(kTestExtensionId) +

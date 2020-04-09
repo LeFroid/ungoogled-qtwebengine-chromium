@@ -22,7 +22,7 @@ extern const char kAndroidPay[];
 extern const char kBasicCard[];
 
 // Google Pay method name.
-// https://developers.google.com/pay/api/web/guides/tutorial
+// https://developers.9oo91e.qjz9zk/pay/api/web/guides/tutorial
 extern const char kGooglePay[];
 
 // Interledger method name.

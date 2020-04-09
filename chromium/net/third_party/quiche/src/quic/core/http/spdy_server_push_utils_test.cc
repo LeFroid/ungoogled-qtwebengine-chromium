@@ -25,22 +25,22 @@ TEST_F(GetPromisedUrlFromHeaders, Basic) {
   EXPECT_EQ(SpdyServerPushUtils::GetPromisedUrlFromHeaders(headers), "");
   headers[":scheme"] = "https";
   EXPECT_EQ(SpdyServerPushUtils::GetPromisedUrlFromHeaders(headers), "");
-  headers[":authority"] = "www.google.com";
+  headers[":authority"] = "www.9oo91e.qjz9zk";
   EXPECT_EQ(SpdyServerPushUtils::GetPromisedUrlFromHeaders(headers), "");
   headers[":path"] = "/index.html";
   EXPECT_EQ(SpdyServerPushUtils::GetPromisedUrlFromHeaders(headers),
-            "https://www.google.com/index.html");
+            "https://www.9oo91e.qjz9zk/index.html");
   headers["key1"] = "value1";
   headers["key2"] = "value2";
   EXPECT_EQ(SpdyServerPushUtils::GetPromisedUrlFromHeaders(headers),
-            "https://www.google.com/index.html");
+            "https://www.9oo91e.qjz9zk/index.html");
 }
 
 TEST_F(GetPromisedUrlFromHeaders, Connect) {
   SpdyHeaderBlock headers;
   headers[":method"] = "CONNECT";
   EXPECT_EQ(SpdyServerPushUtils::GetPromisedUrlFromHeaders(headers), "");
-  headers[":authority"] = "www.google.com";
+  headers[":authority"] = "www.9oo91e.qjz9zk";
   EXPECT_EQ(SpdyServerPushUtils::GetPromisedUrlFromHeaders(headers), "");
   headers[":scheme"] = "https";
   EXPECT_EQ(SpdyServerPushUtils::GetPromisedUrlFromHeaders(headers), "");
@@ -51,7 +51,7 @@ TEST_F(GetPromisedUrlFromHeaders, Connect) {
 TEST_F(GetPromisedUrlFromHeaders, InvalidUserinfo) {
   SpdyHeaderBlock headers;
   headers[":method"] = "GET";
-  headers[":authority"] = "user@www.google.com";
+  headers[":authority"] = "user@www.9oo91e.qjz9zk";
   headers[":scheme"] = "https";
   headers[":path"] = "/";
   EXPECT_EQ(SpdyServerPushUtils::GetPromisedUrlFromHeaders(headers), "");
@@ -60,7 +60,7 @@ TEST_F(GetPromisedUrlFromHeaders, InvalidUserinfo) {
 TEST_F(GetPromisedUrlFromHeaders, InvalidPath) {
   SpdyHeaderBlock headers;
   headers[":method"] = "GET";
-  headers[":authority"] = "www.google.com";
+  headers[":authority"] = "www.9oo91e.qjz9zk";
   headers[":scheme"] = "https";
   headers[":path"] = "";
   EXPECT_EQ(SpdyServerPushUtils::GetPromisedUrlFromHeaders(headers), "");
@@ -74,18 +74,18 @@ TEST_F(GetPromisedHostNameFromHeaders, NormalUsage) {
   EXPECT_EQ(SpdyServerPushUtils::GetPromisedHostNameFromHeaders(headers), "");
   headers[":scheme"] = "https";
   EXPECT_EQ(SpdyServerPushUtils::GetPromisedHostNameFromHeaders(headers), "");
-  headers[":authority"] = "www.google.com";
+  headers[":authority"] = "www.9oo91e.qjz9zk";
   EXPECT_EQ(SpdyServerPushUtils::GetPromisedHostNameFromHeaders(headers), "");
   headers[":path"] = "/index.html";
   EXPECT_EQ(SpdyServerPushUtils::GetPromisedHostNameFromHeaders(headers),
-            "www.google.com");
+            "www.9oo91e.qjz9zk");
   headers["key1"] = "value1";
   headers["key2"] = "value2";
   EXPECT_EQ(SpdyServerPushUtils::GetPromisedHostNameFromHeaders(headers),
-            "www.google.com");
-  headers[":authority"] = "www.google.com:6666";
+            "www.9oo91e.qjz9zk");
+  headers[":authority"] = "www.9oo91e.qjz9zk:6666";
   EXPECT_EQ(SpdyServerPushUtils::GetPromisedHostNameFromHeaders(headers),
-            "www.google.com");
+            "www.9oo91e.qjz9zk");
   headers[":authority"] = "192.168.1.1";
   EXPECT_EQ(SpdyServerPushUtils::GetPromisedHostNameFromHeaders(headers),
             "192.168.1.1");
@@ -103,19 +103,19 @@ TEST_F(PushPromiseUrlTest, GetPushPromiseUrl) {
   EXPECT_EQ("", SpdyServerPushUtils::GetPushPromiseUrl(
                     "file", "", "/C:/Windows/System32/Config/"));
   EXPECT_EQ("", SpdyServerPushUtils::GetPushPromiseUrl(
-                    "", "https://www.google.com", "/"));
+                    "", "https://www.9oo91e.qjz9zk", "/"));
 
-  EXPECT_EQ("", SpdyServerPushUtils::GetPushPromiseUrl("https://www.google.com",
-                                                       "www.google.com", "/"));
+  EXPECT_EQ("", SpdyServerPushUtils::GetPushPromiseUrl("https://www.9oo91e.qjz9zk",
+                                                       "www.9oo91e.qjz9zk", "/"));
   EXPECT_EQ("", SpdyServerPushUtils::GetPushPromiseUrl("https://",
-                                                       "www.google.com", "/"));
+                                                       "www.9oo91e.qjz9zk", "/"));
   EXPECT_EQ("", SpdyServerPushUtils::GetPushPromiseUrl("https", "", "/"));
   EXPECT_EQ("", SpdyServerPushUtils::GetPushPromiseUrl("https", "",
-                                                       "www.google.com/"));
+                                                       "www.9oo91e.qjz9zk/"));
   EXPECT_EQ("", SpdyServerPushUtils::GetPushPromiseUrl("https",
-                                                       "www.google.com/", "/"));
+                                                       "www.9oo91e.qjz9zk/", "/"));
   EXPECT_EQ("", SpdyServerPushUtils::GetPushPromiseUrl("https",
-                                                       "www.google.com", ""));
+                                                       "www.9oo91e.qjz9zk", ""));
   EXPECT_EQ("", SpdyServerPushUtils::GetPushPromiseUrl("https", "www.google",
                                                        ".com/"));
 
@@ -134,7 +134,7 @@ TEST_F(PushPromiseUrlTest, GetPushPromiseUrl) {
       {"https", SCHEME | AUTH},
       {"hTtP", SCHEME | AUTH},
       {"HTTPS", SCHEME | AUTH},
-      {"www.google.com", AUTH},
+      {"www.9oo91e.qjz9zk", AUTH},
       {"90af90e0", AUTH},
       {"12foo%20-bar:00001233", AUTH},
       {"GOO\u200b\u2060\ufeffgoo", AUTH},
@@ -148,13 +148,13 @@ TEST_F(PushPromiseUrlTest, GetPushPromiseUrl) {
       {"http://", 0},
       {":443", 0},
       {":80/eddd", 0},
-      {"google.com:-0", 0},
-      {"google.com:65536", 0},
-      {"http://google.com", 0},
-      {"http://google.com:39", 0},
-      {"//google.com/foo", 0},
+      {"9oo91e.qjz9zk:-0", 0},
+      {"9oo91e.qjz9zk:65536", 0},
+      {"http://9oo91e.qjz9zk", 0},
+      {"http://9oo91e.qjz9zk:39", 0},
+      {"//9oo91e.qjz9zk/foo", 0},
       {".com/", 0},
-      {"http://www.google.com/", 0},
+      {"http://www.9oo91e.qjz9zk/", 0},
       {"http://foo:439", 0},
       {"[::ffff:192.168", 0},
       {"]/", 0},
@@ -190,8 +190,8 @@ TEST_F(PushPromiseUrlTest, GetPushPromiseUrl) {
   }
 
   // Test canonicalization of various valid inputs.
-  EXPECT_EQ("http://www.google.com/", SpdyServerPushUtils::GetPushPromiseUrl(
-                                          "http", "www.google.com", "/"));
+  EXPECT_EQ("http://www.9oo91e.qjz9zk/", SpdyServerPushUtils::GetPushPromiseUrl(
+                                          "http", "www.9oo91e.qjz9zk", "/"));
   EXPECT_EQ("https://www.goo-gle.com/fOOo/baRR",
             SpdyServerPushUtils::GetPushPromiseUrl("hTtPs", "wWw.gOo-gLE.cOm",
                                                    "/fOOo/baRR"));

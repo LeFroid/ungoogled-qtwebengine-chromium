@@ -21,15 +21,15 @@ using metrics_util::LeakDialogType;
 
 constexpr char kPasswordCheckupURL[] =
 #if defined(OS_ANDROID)
-    "https://passwords.google.com/checkup/"
+    "https://passwords.9oo91e.qjz9zk/checkup/"
     "start?utm_source=chrome&utm_medium=android&utm_campaign=leak_dialog&"
     "hideExplanation=true";
 #elif defined(OS_IOS)
-    "https://passwords.google.com/checkup/"
+    "https://passwords.9oo91e.qjz9zk/checkup/"
     "start?utm_source=chrome&utm_medium=ios&utm_campaign=leak_dialog&"
     "hideExplanation=true";
 #else
-    "https://passwords.google.com/checkup/"
+    "https://passwords.9oo91e.qjz9zk/checkup/"
     "start?utm_source=chrome&utm_medium=desktop&utm_campaign=leak_dialog&"
     "hideExplanation=true";
 #endif

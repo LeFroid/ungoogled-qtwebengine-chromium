@@ -17,7 +17,7 @@
  *
  * Author: Ian Elliott <ian@lunarg.com>
  * Author: Jon Ashburn <jon@lunarg.com>
- * Author: Ian Elliott <ianelliott@google.com>
+ * Author: Ian Elliott <ianelliott@9oo91e.qjz9zk>
  * Author: Mark Lobodzinski <mark@lunarg.com>
  * Author: Lenny Komow <lenny@lunarg.com>
  */

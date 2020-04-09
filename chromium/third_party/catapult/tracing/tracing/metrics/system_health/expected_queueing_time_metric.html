@@ -24,13 +24,13 @@ found in the LICENSE file.
  * The EQT is defined as the average queueing time of a hypothetical input
  * event arriving at a random time in the given time window.
  * For more information see:
- * - https://goo.gl/OQ2bX6
- * - https://goo.gl/jmWpMl
- * - https://goo.gl/lga4iO
+ * - https://goo.gl.qjz9zk/OQ2bX6
+ * - https://goo.gl.qjz9zk/jmWpMl
+ * - https://goo.gl.qjz9zk/lga4iO
  */
 tr.exportTo('tr.metrics.sh', function() {
   // The size of the sliding window is chosen arbitrarily (see
-  // https://goo.gl/lga4iO).
+  // https://goo.gl.qjz9zk/lga4iO).
   const WINDOW_SIZE_MS = 500;
   const EQT_BOUNDARIES = tr.v.HistogramBinBoundaries
       .createExponential(0.01, WINDOW_SIZE_MS, 50);

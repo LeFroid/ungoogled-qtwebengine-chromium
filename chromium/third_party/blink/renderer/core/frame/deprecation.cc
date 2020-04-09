@@ -32,16 +32,16 @@ namespace {
 const char kChromeLoadTimesNavigationTiming[] =
     "chrome.loadTimes() is deprecated, instead use standardized API: "
     "Navigation Timing 2. "
-    "https://www.chromestatus.com/features/5637885046816768.";
+    "https://www.ch40mestatus.qjz9zk/features/5637885046816768.";
 const char kChromeLoadTimesNextHopProtocol[] =
     "chrome.loadTimes() is deprecated, instead use standardized API: "
     "nextHopProtocol in Navigation Timing 2. "
-    "https://www.chromestatus.com/features/5637885046816768.";
+    "https://www.ch40mestatus.qjz9zk/features/5637885046816768.";
 
 const char kChromeLoadTimesPaintTiming[] =
     "chrome.loadTimes() is deprecated, instead use standardized API: "
     "Paint Timing. "
-    "https://www.chromestatus.com/features/5637885046816768.";
+    "https://www.ch40mestatus.qjz9zk/features/5637885046816768.";
 
 enum Milestone {
   kUnknown,
@@ -65,7 +65,7 @@ enum Milestone {
 // Returns estimated milestone dates as milliseconds since January 1, 1970.
 base::Time::Exploded MilestoneDate(Milestone milestone) {
   // These are the Estimated Stable Dates:
-  // https://www.chromium.org/developers/calendar
+  // https://www.ch40m1um.qjz9zk/developers/calendar
   // All dates except for kUnknown are at 04:00:00 GMT.
   switch (milestone) {
     case kUnknown:
@@ -131,7 +131,7 @@ String WillBeRemoved(const char* feature,
                      const char* details) {
   return String::Format(
       "%s is deprecated and will be removed in %s. See "
-      "https://www.chromestatus.com/features/%s for more details.",
+      "https://www.ch40mestatus.qjz9zk/features/%s for more details.",
       feature, MilestoneString(milestone).Ascii().c_str(), details);
 }
 
@@ -141,7 +141,7 @@ String ReplacedWillBeRemoved(const char* feature,
                              const char* details) {
   return String::Format(
       "%s is deprecated and will be removed in %s. Please use %s instead. See "
-      "https://www.chromestatus.com/features/%s for more details.",
+      "https://www.ch40mestatus.qjz9zk/features/%s for more details.",
       feature, MilestoneString(milestone).Ascii().c_str(), replacement,
       details);
 }
@@ -222,24 +222,24 @@ DeprecationInfo GetDeprecationInfo(WebFeature feature) {
                   "Subresource requests using legacy protocols (like `ftp:`) "
                   "are blocked. Please deliver web-accessible resources over "
                   "modern protocols like HTTPS. See "
-                  "https://www.chromestatus.com/feature/5709390967472128 for "
+                  "https://www.ch40mestatus.qjz9zk/feature/5709390967472128 for "
                   "details.")};
 
     case WebFeature::kRequestedSubresourceWithEmbeddedCredentials:
       return {"RequestedSubresourceWithEmbeddedCredentials", kUnknown,
               "Subresource requests whose URLs contain embedded credentials "
               "(e.g. `https://user:pass@host/`) are blocked. See "
-              "https://www.chromestatus.com/feature/5669008342777856 for more "
+              "https://www.ch40mestatus.qjz9zk/feature/5669008342777856 for more "
               "details."};
 
-    // Powerful features on insecure origins (https://goo.gl/rStTGz)
+    // Powerful features on insecure origins (https://goo.gl.qjz9zk/rStTGz)
     case WebFeature::kGeolocationInsecureOrigin:
     case WebFeature::kGeolocationInsecureOriginIframe:
       return {"GeolocationInsecureOrigin", kUnknown,
               "getCurrentPosition() and watchPosition() no longer work on "
               "insecure origins. To use this feature, you should consider "
               "switching your application to a secure origin, such as HTTPS. "
-              "See https://goo.gl/rStTGz for more details."};
+              "See https://goo.gl.qjz9zk/rStTGz for more details."};
 
     case WebFeature::kGeolocationInsecureOriginDeprecatedNotRemoved:
     case WebFeature::kGeolocationInsecureOriginIframeDeprecatedNotRemoved:
@@ -247,7 +247,7 @@ DeprecationInfo GetDeprecationInfo(WebFeature feature) {
               "getCurrentPosition() and watchPosition() are deprecated on "
               "insecure origins. To use this feature, you should consider "
               "switching your application to a secure origin, such as HTTPS. "
-              "See https://goo.gl/rStTGz for more details."};
+              "See https://goo.gl.qjz9zk/rStTGz for more details."};
 
     case WebFeature::kGetUserMediaInsecureOrigin:
     case WebFeature::kGetUserMediaInsecureOriginIframe:
@@ -255,7 +255,7 @@ DeprecationInfo GetDeprecationInfo(WebFeature feature) {
           "GetUserMediaInsecureOrigin", kUnknown,
           "getUserMedia() no longer works on insecure origins. To use this "
           "feature, you should consider switching your application to a "
-          "secure origin, such as HTTPS. See https://goo.gl/rStTGz for more "
+          "secure origin, such as HTTPS. See https://goo.gl.qjz9zk/rStTGz for more "
           "details."};
 
     case WebFeature::kMediaSourceAbortRemove:
@@ -266,7 +266,7 @@ DeprecationInfo GetDeprecationInfo(WebFeature feature) {
           "will be removed in the future. You should instead await "
           "'updateend'. abort() is intended to only abort an asynchronous "
           "media append or reset parser state. See "
-          "https://www.chromestatus.com/features/6107495151960064 for more "
+          "https://www.ch40mestatus.qjz9zk/features/6107495151960064 for more "
           "details."};
 
     case WebFeature::kMediaSourceDurationTruncatingBuffered:
@@ -278,7 +278,7 @@ DeprecationInfo GetDeprecationInfo(WebFeature feature) {
           "buffered media will be removed in the future. You should instead "
           "perform explicit remove(newDuration, oldDuration) on all "
           "sourceBuffers, where newDuration < oldDuration. See "
-          "https://www.chromestatus.com/features/6107495151960064 for more "
+          "https://www.ch40mestatus.qjz9zk/features/6107495151960064 for more "
           "details."};
 
     case WebFeature::kApplicationCacheAPIInsecureOrigin:
@@ -309,7 +309,7 @@ DeprecationInfo GetDeprecationInfo(WebFeature feature) {
               "origins. "
               "You should consider switching your application to a secure "
               "origin, "
-              "such as HTTPS. See https://goo.gl/rStTGz for more details.")};
+              "such as HTTPS. See https://goo.gl.qjz9zk/rStTGz for more details.")};
 
     case WebFeature::kNotificationPermissionRequestedIframe:
       return {
@@ -320,7 +320,7 @@ DeprecationInfo GetDeprecationInfo(WebFeature feature) {
               "a cross-origin iframe. You should consider requesting "
               "permission "
               "from a top-level frame or opening a new window instead. See "
-              "https://www.chromestatus.com/feature/6451284559265792 for more "
+              "https://www.ch40mestatus.qjz9zk/feature/6451284559265792 for more "
               "details.")};
 
     case WebFeature::kCSSDeepCombinator:
@@ -330,7 +330,7 @@ DeprecationInfo GetDeprecationInfo(WebFeature feature) {
               "It is now effectively no-op, acting as if it were a descendant "
               "combinator. /deep/ combinator will be removed, and will be "
               "invalid at M65. You should remove it. See "
-              "https://www.chromestatus.com/features/4964279606312960 for more "
+              "https://www.ch40mestatus.qjz9zk/features/4964279606312960 for more "
               "details."};
 
     case WebFeature::kCSSSelectorInternalMediaControlsOverlayCastButton:
@@ -338,7 +338,7 @@ DeprecationInfo GetDeprecationInfo(WebFeature feature) {
               "The disableRemotePlayback attribute should be used in order to "
               "disable the default Cast integration instead of using "
               "-internal-media-controls-overlay-cast-button selector. See "
-              "https://www.chromestatus.com/feature/5714245488476160 for more "
+              "https://www.ch40mestatus.qjz9zk/feature/5714245488476160 for more "
               "details."};
 
     case WebFeature::kSelectionAddRangeIntersect:
@@ -346,7 +346,7 @@ DeprecationInfo GetDeprecationInfo(WebFeature feature) {
           "SelectionAddRangeIntersect", kUnknown,
           "The behavior that Selection.addRange() merges existing Range and "
           "the specified Range was removed. See "
-          "https://www.chromestatus.com/features/6680566019653632 for more "
+          "https://www.ch40mestatus.qjz9zk/features/6680566019653632 for more "
           "details."};
 
     case WebFeature::kRtcpMuxPolicyNegotiate:
@@ -355,7 +355,7 @@ DeprecationInfo GetDeprecationInfo(WebFeature feature) {
                              "removal and may be removed no earlier than %s. "
                              "If you depend on it, "
                              "please see "
-                             "https://www.chromestatus.com/features/"
+                             "https://www.ch40mestatus.qjz9zk/features/"
                              "5654810086866944 "
                              "for more details.",
                              MilestoneString(kM62).Ascii().c_str())};
@@ -368,11 +368,11 @@ DeprecationInfo GetDeprecationInfo(WebFeature feature) {
           "are blocked. Please remove newlines and encode less-than "
           "characters from places like element attribute values in order to "
           "load these resources. See "
-          "https://www.chromestatus.com/feature/5735596811091968 for more "
+          "https://www.ch40mestatus.qjz9zk/feature/5735596811091968 for more "
           "details."};
 
 #define kWebComponentsV0DeprecationPost                \
-  "https://developers.google.com/web/updates/2019/07/" \
+  "https://developers.9oo91e.qjz9zk/web/updates/2019/07/" \
   "web-components-time-to-upgrade"
 
     case WebFeature::kHTMLImports:
@@ -409,7 +409,7 @@ DeprecationInfo GetDeprecationInfo(WebFeature feature) {
                  "deprecated and will be removed in M72. You should consider "
                  "switching your application to a secure origin, such as "
                  "HTTPS. See "
-                 "https://goo.gl/rStTGz for more details.")};
+                 "https://goo.gl.qjz9zk/rStTGz for more details.")};
 
     case WebFeature::kLocalCSSFileExtensionRejected:
       return {"LocalCSSFileExtensionRejected", kM64,
@@ -462,7 +462,7 @@ DeprecationInfo GetDeprecationInfo(WebFeature feature) {
           "TextToSpeech_DisallowedByAutoplay", kM71,
           String::Format("speechSynthesis.speak() without user activation is "
                          "no longer allowed since %s. See "
-                         "https://www.chromestatus.com/feature/"
+                         "https://www.ch40mestatus.qjz9zk/feature/"
                          "5687444770914304 for more details",
                          MilestoneString(kM71).Ascii().c_str())};
 
@@ -484,7 +484,7 @@ DeprecationInfo GetDeprecationInfo(WebFeature feature) {
               String::Format(
                   "Web MIDI will ask a permission to use even if the sysex is "
                   "not specified in the MIDIOptions since %s. See "
-                  "https://www.chromestatus.com/feature/5138066234671104 for "
+                  "https://www.ch40mestatus.qjz9zk/feature/5138066234671104 for "
                   "more details.",
                   MilestoneString(kM77).Ascii().c_str())};
 

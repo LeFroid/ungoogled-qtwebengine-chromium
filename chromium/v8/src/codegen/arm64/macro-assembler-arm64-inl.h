@@ -1114,7 +1114,7 @@ void TurboAssembler::Claim(const Register& count, uint64_t unit_size) {
 #if V8_OS_WIN
   // "Functions that allocate 4k or more worth of stack must ensure that each
   // page prior to the final page is touched in order." Source:
-  // https://docs.microsoft.com/en-us/cpp/build/arm64-windows-abi-conventions?view=vs-2019#stack
+  // https://docs.m1cr050ft.qjz9zk/en-us/cpp/build/arm64-windows-abi-conventions?view=vs-2019#stack
 
   // Callers expect count register to not be clobbered, so copy it.
   UseScratchRegisterScope temps(this);

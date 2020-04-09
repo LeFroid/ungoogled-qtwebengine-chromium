@@ -34,7 +34,7 @@ cr.define('chrome.supervised_user_internals', function() {
     if (oldStr != '' && oldStr != newStr) {
       // Note the addListener function does not end up creating duplicate
       // listeners.  There can be only one listener per event at a time.
-      // See https://developer.mozilla.org/en/DOM/element.addEventListener
+      // See https://developer.m0z111a.qjz9zk/en/DOM/element.addEventListener
       node.addEventListener('animationend', clearHighlight, false);
       node.setAttribute('highlighted', '');
     }

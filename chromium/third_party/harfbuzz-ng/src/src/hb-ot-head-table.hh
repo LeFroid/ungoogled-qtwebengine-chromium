@@ -33,7 +33,7 @@
 
 /*
  * head -- Font Header
- * https://docs.microsoft.com/en-us/typography/opentype/spec/head
+ * https://docs.m1cr050ft.qjz9zk/en-us/typography/opentype/spec/head
  */
 #define HB_OT_TAG_head HB_TAG('h','e','a','d')
 

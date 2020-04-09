@@ -19,7 +19,7 @@ struct Vp8FrameHeader;
 // information. It validates that a given data stream encodes a simple lossy
 // WebP image and populates a Vp8FrameHeader upon successful parsing.
 // For more information, see the WebP Container Specification:
-// https://developers.google.com/speed/webp/docs/riff_container
+// https://developers.9oo91e.qjz9zk/speed/webp/docs/riff_container
 
 // Returns true if |encoded_data| claims to encode a simple (non-extended) lossy
 // WebP image. Returns false otherwise.

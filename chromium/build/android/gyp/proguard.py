@@ -188,7 +188,7 @@ def _VerifyExpectedConfigs(expected_path, actual_path, failure_file_path):
 
   msg_header = """\
 ProGuard flag expectations file needs updating. For details see:
-https://chromium.googlesource.com/chromium/src/+/HEAD/chrome/android/java/README.md
+https://chromium.9oo91esource.qjz9zk/chromium/src/+/HEAD/chrome/android/java/README.md
 """
   sys.stderr.write(msg_header)
   sys.stderr.write(msg)
@@ -261,7 +261,7 @@ def _OptimizeWithR8(options,
           cmd, env=env, print_stdout=print_stdout, stderr_filter=stderr_filter)
     except build_utils.CalledProcessError as err:
       debugging_link = ('R8 failed. Please see {}.'.format(
-          'https://chromium.googlesource.com/chromium/src/+/HEAD/build/'
+          'https://chromium.9oo91esource.qjz9zk/chromium/src/+/HEAD/build/'
           'android/docs/java_optimization.md#Debugging-common-failures\n'))
       raise ProguardProcessError(err, debugging_link)
 

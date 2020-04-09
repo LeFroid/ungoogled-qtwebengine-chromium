@@ -77,7 +77,7 @@ bool IsKnownRoot(CERTCertificate* root) {
   }
 
   // This magic name is taken from
-  // http://bonsai.mozilla.org/cvsblame.cgi?file=mozilla/security/nss/lib/ckfw/builtins/constants.c&rev=1.13&mark=86,89#79
+  // http://bonsai.m0z111a.qjz9zk/cvsblame.cgi?file=mozilla/security/nss/lib/ckfw/builtins/constants.c&rev=1.13&mark=86,89#79
   return 0 == strcmp(PK11_GetSlotName(root->slot), "NSS Builtin Objects");
 }
 

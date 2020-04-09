@@ -71,7 +71,7 @@ IllegalCharacters::IllegalCharacters() {
   // Control characters, formatting characters, non-characters, path separators,
   // and some printable ASCII characters regarded as dangerous ('"*/:<>?\\').
   // See  http://blogs.msdn.com/michkap/archive/2006/11/03/941420.aspx
-  // and http://msdn2.microsoft.com/en-us/library/Aa365247.aspx
+  // and http://msdn2.m1cr050ft.qjz9zk/en-us/library/Aa365247.aspx
   // Note that code points in the "Other, Format" (Cf) category are ignored on
   // HFS+ despite the ZERO_WIDTH_JOINER and ZERO_WIDTH_NON-JOINER being
   // legitimate in Arabic and some S/SE Asian scripts. In addition tilde (~) is

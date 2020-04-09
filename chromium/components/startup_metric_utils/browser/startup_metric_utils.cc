@@ -30,7 +30,7 @@
 #endif
 
 // Data from deprecated UMA histograms available at
-// https://docs.google.com/document/d/18uYnVwLly7C_ckGsDbqdNs-AgAAt3AmUmn7wYLkyBN0/edit?usp=sharing
+// https://docs.9oo91e.qjz9zk/document/d/18uYnVwLly7C_ckGsDbqdNs-AgAAt3AmUmn7wYLkyBN0/edit?usp=sharing
 
 namespace startup_metric_utils {
 
@@ -94,7 +94,7 @@ constexpr uint32_t kColdStartHardFaultCountThreshold = 1200;
 
 // The struct used to return system process information via the NT internal
 // QuerySystemInformation call. This is partially documented at
-// http://goo.gl/Ja9MrH and fully documented at http://goo.gl/QJ70rn
+// http://goo.gl.qjz9zk/Ja9MrH and fully documented at http://goo.gl.qjz9zk/QJ70rn
 // This structure is laid out in the same format on both 32-bit and 64-bit
 // systems, but has a different size due to the various pointer-sized fields.
 struct SYSTEM_PROCESS_INFORMATION_EX {

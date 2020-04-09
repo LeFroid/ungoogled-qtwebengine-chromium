@@ -210,7 +210,7 @@ namespace dawn_native { namespace opengl {
                 GLuint framebuffer = 0;
                 gl.GenFramebuffers(1, &framebuffer);
                 gl.BindFramebuffer(GL_DRAW_FRAMEBUFFER, framebuffer);
-                // TODO(natlee@microsoft.com): clear all mip levels and array layers.
+                // TODO(natlee@m1cr050ft.qjz9zk): clear all mip levels and array layers.
                 gl.FramebufferTexture2D(GL_DRAW_FRAMEBUFFER, GL_DEPTH_STENCIL_ATTACHMENT,
                                         GetGLTarget(), GetHandle(), 0);
                 if (doDepthClear && doStencilClear) {
@@ -237,7 +237,7 @@ namespace dawn_native { namespace opengl {
                 }
             }
         } else {
-            // TODO(natlee@microsoft.com): test compressed textures are cleared
+            // TODO(natlee@m1cr050ft.qjz9zk): test compressed textures are cleared
             // create temp buffer with clear color to copy to the texture image
             ASSERT(kTextureRowPitchAlignment % GetFormat().blockByteSize == 0);
             uint32_t rowPitch =
@@ -255,7 +255,7 @@ namespace dawn_native { namespace opengl {
             }
             descriptor.nextInChain = nullptr;
             descriptor.usage = wgpu::BufferUsage::CopySrc | wgpu::BufferUsage::MapWrite;
-            // TODO(natlee@microsoft.com): use Dynamic Uplaoder here for temp buffer
+            // TODO(natlee@m1cr050ft.qjz9zk): use Dynamic Uplaoder here for temp buffer
             Ref<Buffer> srcBuffer = ToBackend(device->CreateBuffer(&descriptor));
             // Call release here to prevent memory leak since CreateBuffer will up the ref count to
             // 1, then assigning to Ref<Buffer> ups the ref count to 2. Release will reduce the ref
@@ -281,7 +281,7 @@ namespace dawn_native { namespace opengl {
                 Extent3D size = GetMipLevelPhysicalSize(level);
                 switch (GetDimension()) {
                     case wgpu::TextureDimension::e2D:
-                        // TODO(natlee@microsoft.com): This will break when layerCount is greater
+                        // TODO(natlee@m1cr050ft.qjz9zk): This will break when layerCount is greater
                         // than 1, because the buffer is only sized for one layer.
                         ASSERT(layerCount == 1);
                         gl.TexSubImage2D(GetGLTarget(), level, 0, 0, size.width, size.height,

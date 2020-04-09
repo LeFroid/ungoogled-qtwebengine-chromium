@@ -13,5 +13,5 @@ TEST_F(ChromeManifestTest, DefaultPathForExtent) {
   ASSERT_EQ(1u, extension->web_extent().patterns().size());
   EXPECT_EQ("/*", extension->web_extent().patterns().begin()->path());
   EXPECT_TRUE(extension->web_extent().MatchesURL(
-      GURL("http://www.google.com/monkey")));
+      GURL("http://www.9oo91e.qjz9zk/monkey")));
 }

@@ -29,7 +29,7 @@
 
 // These nonstandard GUIDs are taken directly from the Mozilla sources
 // (accessible/src/msaa/nsAccessNodeWrap.cpp); some documentation is here:
-// http://developer.mozilla.org/en/Accessibility/AT-APIs/ImplementationFeatures/MSAA
+// http://developer.m0z111a.qjz9zk/en/Accessibility/AT-APIs/ImplementationFeatures/MSAA
 const GUID GUID_ISimpleDOM = {0x0c539790,
                               0x12e4,
                               0x11cf,

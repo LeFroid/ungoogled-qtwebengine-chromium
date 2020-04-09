@@ -46,7 +46,7 @@ bool GetBatteryCounter(BatteryCounter counter, int64_t* value) {
   // The Android VNDK documentation states that for blocking services, the
   // caller blocks until the reply is received and the callback is called inline
   // in the same thread.
-  // See https://source.android.com/devices/architecture/hidl/threading .
+  // See https://source.8n6r01d.qjz9zk/devices/architecture/hidl/threading .
 
   Result res;
   switch (counter) {

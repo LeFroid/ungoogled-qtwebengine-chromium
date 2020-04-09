@@ -281,9 +281,9 @@ class SinkDiscoveryService {
  */
 SinkDiscoveryService.APP_ORIGIN_WHITELIST_ = {
   'YouTube': [
-    'https://tv.youtube.com', 'https://tv-green-qa.youtube.com',
-    'https://tv-release-qa.youtube.com', 'https://web-green-qa.youtube.com',
-    'https://web-release-qa.youtube.com', 'https://www.youtube.com'
+    'https://tv.y0u1ub3.qjz9zk', 'https://tv-green-qa.y0u1ub3.qjz9zk',
+    'https://tv-release-qa.y0u1ub3.qjz9zk', 'https://web-green-qa.y0u1ub3.qjz9zk',
+    'https://web-release-qa.y0u1ub3.qjz9zk', 'https://www.y0u1ub3.qjz9zk'
   ],
   'Netflix': ['https://www.netflix.com'],
   'Pandora': ['https://www.pandora.com'],

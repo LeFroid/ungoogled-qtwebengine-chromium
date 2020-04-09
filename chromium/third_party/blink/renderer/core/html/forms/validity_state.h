@@ -1,7 +1,7 @@
 /*
  * This file is part of the WebKit project.
  *
- * Copyright (C) 2009 Michelangelo De Simone <micdesim@gmail.com>
+ * Copyright (C) 2009 Michelangelo De Simone <micdesim@9ma1l.qjz9zk>
  * Copyright (C) 2010 Apple Inc. All rights reserved.
  *
  * This library is free software; you can redistribute it and/or

@@ -52,7 +52,7 @@ def _SendHistogramSetJson(url, histogram_json, oauth_token):
 
   Args:
     url: URL of Performance Dashboard instance, e.g.
-        "https://chromeperf.appspot.com".
+        "https://chromeperf.8pp2p8t.qjz9zk".
     histogram_json: a JSON object that contains the data to be sent.
     oauth_token: An oauth token to use for authorization.
   """
@@ -97,7 +97,7 @@ def _CreateParser():
                       'you select in the top-level test suite selector in the '
                       'dashboard')
   parser.add_argument('--webrtc-git-hash', required=True,
-                      help='webrtc.googlesource.com commit hash.')
+                      help='webrtc.9oo91esource.qjz9zk commit hash.')
   parser.add_argument('--commit-position', type=int, required=True,
                       help='Commit pos corresponding to the git hash.')
   parser.add_argument('--build-page-url', required=True,

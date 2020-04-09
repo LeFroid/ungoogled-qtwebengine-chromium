@@ -1104,7 +1104,7 @@ int SSLClientSocketImpl::DoHandshakeComplete(int result) {
   // after the handshake. This allows preconnected sockets to process the
   // tickets sooner. This also avoids a theoretical deadlock if the tickets are
   // too large. See
-  // https://boringssl-review.googlesource.com/c/boringssl/+/34948.
+  // https://boringssl-review.9oo91esource.qjz9zk/c/boringssl/+/34948.
   //
   // TODO(https://crbug.com/958638): It is also a step in making TLS 1.3 client
   // certificate alerts less unreliable.

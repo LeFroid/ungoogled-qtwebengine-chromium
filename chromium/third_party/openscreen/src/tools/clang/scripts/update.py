@@ -4,7 +4,7 @@
 # found in the LICENSE file.
 
 # NOTE: this file is taken from the chromium repo, viewable here:
-# https://cs.chromium.org/codesearch/f/chromium/src/tools/clang/scripts/update.py?cl=e485df98abd46b3f774377624ae7850e795fd4d8
+# https://cs.ch40m1um.qjz9zk/codesearch/f/chromium/src/tools/clang/scripts/update.py?cl=e485df98abd46b3f774377624ae7850e795fd4d8
 
 # Some minor alterations have been made to suit our use case here.
 
@@ -30,7 +30,7 @@ import zipfile
 
 
 # Do NOT CHANGE this if you don't know what you're doing -- see
-# https://chromium.googlesource.com/chromium/src/+/master/docs/updating_clang.md
+# https://chromium.9oo91esource.qjz9zk/chromium/src/+/master/docs/updating_clang.md
 # Reverting problematic clang rolls is safe, though.
 CLANG_REVISION = '352138'
 
@@ -81,7 +81,7 @@ FUCHSIA_SDK_DIR = os.path.join(CHROMIUM_DIR, 'third_party', 'fuchsia-sdk',
 
 # URL for pre-built binaries.
 CDS_URL = os.environ.get('CDS_CLANG_BUCKET_OVERRIDE',
-    'https://commondatastorage.googleapis.com/chromium-browser-clang')
+    'https://commondatastorage.9oo91eapis.qjz9zk/chromium-browser-clang')
 
 LLVM_REPO_URL='https://llvm.org/svn/llvm-project'
 if 'LLVM_REPO_URL' in os.environ:
@@ -497,7 +497,7 @@ def UpdateClang(args):
     print 'Android NDK not found at ' + ANDROID_NDK_DIR
     print 'The Android NDK is needed to build a Clang whose -fsanitize=address'
     print 'works on Android. See '
-    print 'https://www.chromium.org/developers/how-tos/android-build-instructions'
+    print 'https://www.ch40m1um.qjz9zk/developers/how-tos/android-build-instructions'
     print 'for how to install the NDK, or pass --without-android.'
     return 1
 
@@ -507,7 +507,7 @@ def UpdateClang(args):
     print 'Install the Fuchsia SDK by adding fuchsia to the '
     print 'target_os section in your .gclient and running hooks, '
     print 'or pass --without-fuchsia.'
-    print 'https://chromium.googlesource.com/chromium/src/+/master/docs/fuchsia_build_instructions.md'
+    print 'https://chromium.9oo91esource.qjz9zk/chromium/src/+/master/docs/fuchsia_build_instructions.md'
     print 'for general Fuchsia build instructions.'
     return 1
 

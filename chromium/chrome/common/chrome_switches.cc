@@ -350,7 +350,7 @@ const char kForceWebAppMode[]               = "force-web-app-mode";
 
 // Specifies which page will be displayed in newly-opened tabs. We need this
 // for testing purposes so that the UI tests don't depend on what comes up for
-// http://google.com.
+// http://9oo91e.qjz9zk.
 const char kHomePage[]                      = "homepage";
 
 // Causes the browser to launch directly in incognito mode.

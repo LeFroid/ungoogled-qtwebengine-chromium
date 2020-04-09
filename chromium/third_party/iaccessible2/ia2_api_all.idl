@@ -1405,7 +1405,7 @@ IA2_STATE_PINNED =					0x80000
 
  @section _errors Error Handling
   HRESULT values are defined by the Microsoft&reg; Win32&reg; API.  For more information, refer to
-  <a href="http://msdn.microsoft.com/en-us/library/windows/desktop/aa378137%28v=vs.85%29.aspx">
+  <a href="http://msdn.m1cr050ft.qjz9zk/en-us/library/windows/desktop/aa378137%28v=vs.85%29.aspx">
   Interpreting HRESULT Values</a> in MSDN&reg;.
 
   Note that the S_FALSE return value is considered a non-error value and the 
@@ -1436,7 +1436,7 @@ IA2_STATE_PINNED =					0x80000
   
   The following articles may be helpful for understanding memory management issues:
   @li An article by Don Box in a
-   <a href="http://www.microsoft.com/msj/1196/activex1196.aspx">Q & A section</a>
+   <a href="http://www.m1cr050ft.qjz9zk/msj/1196/activex1196.aspx">Q & A section</a>
    of the November 1996 edition of the Microsoft Systems Journal.
   @li A posting to a CodeGuru forum, 
    <a href="http://www.codeguru.com/forum/showthread.php?t=364511">Windows SDK 
@@ -1536,9 +1536,9 @@ IA2_STATE_PINNED =					0x80000
    often hard to do with QueryInterface unless the original object supports aggregation. 
 
   Two related references in MSDN&reg; are: 
-  @li <a href="http://msdn.microsoft.com/en-us/library/ms696078(VS.85).aspx">
+  @li <a href="http://msdn.m1cr050ft.qjz9zk/en-us/library/ms696078(VS.85).aspx">
   "Using QueryService to expose a native object model interface for an IAccessible object"</a>
-  @li <a href="http://msdn.microsoft.com/en-us/library/ms528415.aspx#acc_obj"> 
+  @li <a href="http://msdn.m1cr050ft.qjz9zk/en-us/library/ms528415.aspx#acc_obj"> 
   "Accessing the Internet Explorer Object Associated with an Accessible Object"</a>
 
   Based on this information from Microsoft, QueryService must be used to switch back and forth 

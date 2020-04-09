@@ -617,6 +617,7 @@ ChildProcessSecurityPolicyImpl::ChildProcessSecurityPolicyImpl() {
 #endif  // BUILDFLAG(ENABLE_WEBSOCKETS)
   RegisterWebSafeScheme(url::kFtpScheme);
   RegisterWebSafeScheme(url::kDataScheme);
+  RegisterWebSafeScheme(url::kTraceScheme);
   RegisterWebSafeScheme("feed");
 
   // TODO(nick): https://crbug.com/651534 blob: and filesystem: schemes embed

@@ -994,7 +994,7 @@ TEST_P(IsolatedWorldCSPTest, CSPForWorld) {
   using ::testing::ElementsAre;
 
   // Set a CSP for the main world.
-  const char* kMainWorldCSP = "connect-src https://google.com;";
+  const char* kMainWorldCSP = "connect-src https://9oo91e.qjz9zk;";
   GetDocument().GetContentSecurityPolicy()->DidReceiveHeader(
       kMainWorldCSP, kContentSecurityPolicyHeaderTypeEnforce,
       kContentSecurityPolicyHeaderSourceHTTP);

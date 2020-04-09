@@ -58,7 +58,7 @@ void PrintGLFWError(int code, const char* message) {
 enum class CmdBufType {
     None,
     Terrible,
-    //TODO(cwallez@chromium.org) double terrible cmdbuf
+    //TODO(cwallez@ch40m1um.qjz9zk) double terrible cmdbuf
 };
 
 // Default to D3D12, Metal, Vulkan, OpenGL in that order as D3D12 and Metal are the preferred on

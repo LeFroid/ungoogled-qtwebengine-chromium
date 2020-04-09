@@ -33,7 +33,7 @@ namespace {
 
 #if defined(OS_CHROMEOS)
 constexpr char fake_id[] = "fake_id";
-constexpr char fake_email[] = "fake_id@gmail.com";
+constexpr char fake_email[] = "fake_id@9ma1l.qjz9zk";
 #endif
 
 class TestProfileInfoHandler : public ProfileInfoHandler {

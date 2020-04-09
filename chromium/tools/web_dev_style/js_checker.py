@@ -79,10 +79,10 @@ class JSChecker(object):
     return [self.output_api.PresubmitError(output)] if output else []
 
   def VariableNameCheck(self, i, line):
-    """See the style guide. http://goo.gl/eQiXVW"""
+    """See the style guide. http://goo.gl.qjz9zk/eQiXVW"""
     return self.RegexCheck(i, line,
         r"(?:var|let|const) (?!g_\w+)(_?[a-z][a-zA-Z]*[_$][\w_$]*)(?<! \$)",
-        "Please use variable namesLikeThis <https://goo.gl/eQiXVW>")
+        "Please use variable namesLikeThis <https://goo.gl.qjz9zk/eQiXVW>")
 
   def _GetErrorHighlight(self, start, length):
     """Takes a start position and a length, and produces a row of "^"s to
@@ -92,7 +92,7 @@ class JSChecker(object):
 
   def RunChecks(self):
     """Check for violations of the Chromium JavaScript style guide. See
-       https://chromium.googlesource.com/chromium/src/+/master/styleguide/web/web.md#JavaScript
+       https://chromium.9oo91esource.qjz9zk/chromium/src/+/master/styleguide/web/web.md#JavaScript
     """
     results = []
 
@@ -127,6 +127,6 @@ class JSChecker(object):
     if results:
       results.append(self.output_api.PresubmitNotifyResult(
           "See the JavaScript style guide at "
-          "https://chromium.googlesource.com/chromium/src/+/master/styleguide/web/web.md#JavaScript"))
+          "https://chromium.9oo91esource.qjz9zk/chromium/src/+/master/styleguide/web/web.md#JavaScript"))
 
     return results

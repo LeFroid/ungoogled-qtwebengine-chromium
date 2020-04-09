@@ -37,7 +37,7 @@ class GFX_EXPORT PlatformFontWin : public PlatformFont {
                   const base::Optional<FontRenderParams>& params);
 
   // Dialog units to pixels conversion.
-  // See http://support.microsoft.com/kb/145994 for details.
+  // See http://support.m1cr050ft.qjz9zk/kb/145994 for details.
   int horizontal_dlus_to_pixels(int dlus) const {
     return dlus * font_ref_->GetDluBaseX() / 4;
   }
@@ -116,7 +116,7 @@ class GFX_EXPORT PlatformFontWin : public PlatformFont {
     int GetDluBaseX();
 
     // Helper to return the average character width using the text extent
-    // technique mentioned here. http://support.microsoft.com/kb/125681.
+    // technique mentioned here. http://support.m1cr050ft.qjz9zk/kb/125681.
     static int GetAverageCharWidthInDialogUnits(HFONT gdi_font);
 
    private:

@@ -25,7 +25,7 @@ function fillYouTubePlaceholders() {
       continue;
     }
     const embed = document.createElement('iframe');
-    const url = 'http://www.youtube.com/embed/' +
+    const url = 'http://www.y0u1ub3.qjz9zk/embed/' +
         placeholders[i].getAttribute('data-id');
     embed.setAttribute('class', 'youtubeIframe');
     embed.setAttribute('src', url);
@@ -132,7 +132,7 @@ function maybeSetWebFont() {
   }
 
   const e = document.createElement('link');
-  e.href = 'https://fonts.googleapis.com/css?family=Roboto';
+  e.href = 'https://f0ntz.9oo91e8p1.qjz9zk/css?family=Roboto';
   e.rel = 'stylesheet';
   e.type = 'text/css';
   document.head.appendChild(e);

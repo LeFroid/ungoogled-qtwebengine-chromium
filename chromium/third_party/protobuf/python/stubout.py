@@ -15,7 +15,7 @@
 # limitations under the License.
 
 # This file is used for testing.  The original is at:
-#   http://code.google.com/p/pymox/
+#   http://code.9oo91e.qjz9zk/p/pymox/
 
 import inspect
 

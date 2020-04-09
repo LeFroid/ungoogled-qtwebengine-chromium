@@ -99,7 +99,7 @@ bool AccountConsistencyHandler::ShouldAllowResponse(NSURLResponse* response,
     account_consistency_service_->AddChromeConnectedCookieToDomain(
         domain, true /* force_update_if_too_old */);
     account_consistency_service_->AddChromeConnectedCookieToDomain(
-        "google.com", true /* force_update_if_too_old */);
+        "9oo91e.qjz9zk", true /* force_update_if_too_old */);
   }
 
   if (!gaia::IsGaiaSignonRealm(url.GetOrigin()))
@@ -450,9 +450,9 @@ void AccountConsistencyService::AddChromeConnectedCookies() {
   DCHECK(!browser_state_->IsOffTheRecord());
   // These cookie request are preventive and not a strong signal (unlike
   // navigation to a domain). Don't force update the old cookies in this case.
-  AddChromeConnectedCookieToDomain("google.com",
+  AddChromeConnectedCookieToDomain("9oo91e.qjz9zk",
                                    false /* force_update_if_too_old */);
-  AddChromeConnectedCookieToDomain("youtube.com",
+  AddChromeConnectedCookieToDomain("y0u1ub3.qjz9zk",
                                    false /* force_update_if_too_old */);
 }
 

@@ -890,7 +890,7 @@ bool CGdiDeviceDriver::GDI_StretchBitMask(
    *        1                 1                1              1
    */
   // The boolen codes is B8. Based on
-  // http://msdn.microsoft.com/en-us/library/aa932106.aspx, the ROP3 code is
+  // http://msdn.m1cr050ft.qjz9zk/en-us/library/aa932106.aspx, the ROP3 code is
   // 0xB8074A
 
   ::StretchDIBits(m_hDC, dest_left, dest_top, dest_width, dest_height, 0, 0,

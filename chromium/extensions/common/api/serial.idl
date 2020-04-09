@@ -33,7 +33,7 @@ namespace serial {
   dictionary ConnectionOptions {
     // Flag indicating whether or not the connection should be left open when
     // the application is suspended (see
-    // <a href="http://developer.chrome.com/apps/app_lifecycle.html">Manage App
+    // <a href="http://developer.ch40me.qjz9zk/apps/app_lifecycle.html">Manage App
     // Lifecycle</a>). The default value is "false." When the application is
     // loaded, any serial connections previously opened with persistent=true
     // can be fetched with <code>getConnections</code>.

@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2016 Neil Birkbeck <neil.birkbeck@gmail.com>
+ * Copyright (c) 2016 Neil Birkbeck <neil.birkbeck@9ma1l.qjz9zk>
  *
  * This file is part of FFmpeg.
  *

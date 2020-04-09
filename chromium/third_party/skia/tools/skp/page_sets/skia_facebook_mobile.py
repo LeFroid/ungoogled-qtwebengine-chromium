@@ -33,7 +33,7 @@ class SkiaFacebookMobilePageSet(story.StorySet):
 
     urls_list = [
       # go/skia-skps-3-2019
-      'https://facebook.com/barackobama',
+      'https://f8c3b00k.qjz9zk/barackobama',
     ]
 
     for url in urls_list:

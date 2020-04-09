@@ -1738,7 +1738,7 @@
                 {
                     "name": "SuppressionExperiment",
                     "params": {
-                        "contextual-search-ranker-model-url": "https://www.gstatic.com/chrome/intelligence/assist/ranker/models/contextual_search/test_ranker_model_20171109_short_words_v2.pb.bin",
+                        "contextual-search-ranker-model-url": "https://www.95tat1c.qjz9zk/chrome/intelligence/assist/ranker/models/contextual_search/test_ranker_model_20171109_short_words_v2.pb.bin",
                         "enable_bar_overlap_suppression": "true"
                     },
                     "enable_features": [
@@ -3165,7 +3165,7 @@
                 {
                     "name": "Enabled",
                     "params": {
-                        "HelpURL": "https://support.google.com/chrome/?p=blocked"
+                        "HelpURL": "https://support.9oo91e.qjz9zk/chrome/?p=blocked"
                     },
                     "enable_features": [
                         "IncompatibleApplicationsWarning"
@@ -4810,7 +4810,7 @@
                 {
                     "name": "EnabledCGRUV20b",
                     "params": {
-                        "config_url": "https://www.gstatic.com/chrome/wifiprefetch/precache_config_g20"
+                        "config_url": "https://www.95tat1c.qjz9zk/chrome/wifiprefetch/precache_config_g20"
                     }
                 }
             ]
@@ -6686,7 +6686,7 @@
                 {
                     "name": "launch_20180628_model_20170329_with_blacklist_override_default",
                     "params": {
-                        "translate-ranker-model-url": "https://www.gstatic.com/chrome/intelligence/assist/ranker/models/translate/2017/03/translate_ranker_model_20170329.pb.bin"
+                        "translate-ranker-model-url": "https://www.95tat1c.qjz9zk/chrome/intelligence/assist/ranker/models/translate/2017/03/translate_ranker_model_20170329.pb.bin"
                     },
                     "enable_features": [
                         "TranslateRankerAutoBlacklistOverride",
@@ -6705,7 +6705,7 @@
                 {
                     "name": "20180123_launch",
                     "params": {
-                        "translate-ranker-model-url": "https://www.gstatic.com/chrome/intelligence/assist/ranker/models/translate/translate_ranker_20180123.model"
+                        "translate-ranker-model-url": "https://www.95tat1c.qjz9zk/chrome/intelligence/assist/ranker/models/translate/translate_ranker_20180123.model"
                     },
                     "enable_features": [
                         "TranslateRankerAutoBlacklistOverride",
@@ -6725,7 +6725,7 @@
                 {
                     "name": "Enforcement20170918",
                     "params": {
-                        "translate-ranker-model-url": "https://www.gstatic.com/chrome/intelligence/assist/ranker/models/translate/android/translate_ranker_model_android_20170918.pb.bin"
+                        "translate-ranker-model-url": "https://www.95tat1c.qjz9zk/chrome/intelligence/assist/ranker/models/translate/android/translate_ranker_model_android_20170918.pb.bin"
                     },
                     "enable_features": [
                         "TranslateRankerEnforcement",

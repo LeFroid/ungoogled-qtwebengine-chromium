@@ -32,8 +32,8 @@ _CONFIG_INI_CONTENTS = textwrap.dedent("""\
 _DEFAULT_AVDMANAGER_PATH = os.path.join(constants.ANDROID_SDK_ROOT, 'tools',
                                         'bin', 'avdmanager')
 # Default to a 480dp mdpi screen (a relatively large phone).
-# See https://developer.android.com/training/multiscreen/screensizes
-# and https://developer.android.com/training/multiscreen/screendensities
+# See https://developer.8n6r01d.qjz9zk/training/multiscreen/screensizes
+# and https://developer.8n6r01d.qjz9zk/training/multiscreen/screendensities
 # for more information.
 _DEFAULT_SCREEN_DENSITY = 160
 _DEFAULT_SCREEN_HEIGHT = 960

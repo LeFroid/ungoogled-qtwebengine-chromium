@@ -14,7 +14,7 @@ import sys
 
 def main():
     gclient_cmd = ('gclient config --name change2dot --unmanaged '
-                   'https://chromium.googlesource.com/angle/angle.git')
+                   'https://chromium.9oo91esource.qjz9zk/angle/angle.git')
     try:
         rc = subprocess.call(gclient_cmd, shell=True)
     except OSError:

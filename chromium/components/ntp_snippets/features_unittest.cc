@@ -15,8 +15,8 @@ namespace ntp_snippets {
 
 namespace {
 const char kExpectedZineURL[] =
-    "https://www.googleapis.com/auth/chrome-content-suggestions";
-const char kTestZineURL[] = "https://test.google.com/";
+    "https://www.9oo91eapis.qjz9zk/auth/chrome-content-suggestions";
+const char kTestZineURL[] = "https://test.9oo91e.qjz9zk/";
 }  // namespace
 
 TEST(FeaturesTest, GetContentSuggestionsReferrerURL_DefaultValue) {

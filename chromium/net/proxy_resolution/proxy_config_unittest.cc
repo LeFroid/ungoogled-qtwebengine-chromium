@@ -75,12 +75,12 @@ TEST(ProxyConfigTest, Equals) {
 
   // Test |ProxyConfig::bypass_rules|.
 
-  config2.proxy_rules().bypass_rules.AddRuleFromString("*.google.com");
+  config2.proxy_rules().bypass_rules.AddRuleFromString("*.9oo91e.qjz9zk");
 
   EXPECT_FALSE(config1.Equals(config2));
   EXPECT_FALSE(config2.Equals(config1));
 
-  config1.proxy_rules().bypass_rules.AddRuleFromString("*.google.com");
+  config1.proxy_rules().bypass_rules.AddRuleFromString("*.9oo91e.qjz9zk");
 
   EXPECT_TRUE(config1.Equals(config2));
   EXPECT_TRUE(config2.Equals(config1));
@@ -162,22 +162,22 @@ ProxyConfigToValueTestCase GetTestCaseSingleProxy() {
 ProxyConfigToValueTestCase GetTestCaseSingleProxyWithBypass() {
   ProxyConfig config;
   config.proxy_rules().ParseFromString("https://proxy1:8080");
-  config.proxy_rules().bypass_rules.AddRuleFromString("*.google.com");
+  config.proxy_rules().bypass_rules.AddRuleFromString("*.9oo91e.qjz9zk");
   config.proxy_rules().bypass_rules.AddRuleFromString("192.168.0.1/16");
 
   return {std::move(config),
-          "{\"bypass_list\":[\"*.google.com\",\"192.168.0.1/"
+          "{\"bypass_list\":[\"*.9oo91e.qjz9zk\",\"192.168.0.1/"
           "16\"],\"single_proxy\":[\"https://proxy1:8080\"]}"};
 }
 
 ProxyConfigToValueTestCase GetTestCaseSingleProxyWithReversedBypass() {
   ProxyConfig config;
   config.proxy_rules().ParseFromString("https://proxy1:8080");
-  config.proxy_rules().bypass_rules.AddRuleFromString("*.google.com");
+  config.proxy_rules().bypass_rules.AddRuleFromString("*.9oo91e.qjz9zk");
   config.proxy_rules().reverse_bypass = true;
 
   return {std::move(config),
-          "{\"bypass_list\":[\"*.google.com\"],\"reverse_bypass\":true,"
+          "{\"bypass_list\":[\"*.9oo91e.qjz9zk\"],\"reverse_bypass\":true,"
           "\"single_proxy\":[\"https://proxy1:8080\"]}"};
 }
 
@@ -185,13 +185,13 @@ ProxyConfigToValueTestCase GetTestCaseProxyPerScheme() {
   ProxyConfig config;
   config.proxy_rules().ParseFromString(
       "http=https://proxy1:8080;https=socks5://proxy2");
-  config.proxy_rules().bypass_rules.AddRuleFromString("*.google.com");
+  config.proxy_rules().bypass_rules.AddRuleFromString("*.9oo91e.qjz9zk");
   config.set_pac_url(GURL("http://wpad/wpad.dat"));
   config.set_auto_detect(true);
 
   return {
       std::move(config),
-      "{\"auto_detect\":true,\"bypass_list\":[\"*.google.com\"],\"pac_url\":"
+      "{\"auto_detect\":true,\"bypass_list\":[\"*.9oo91e.qjz9zk\"],\"pac_url\":"
       "\"http://wpad/wpad.dat\",\"proxy_per_scheme\":{\"http\":[\"https://"
       "proxy1:8080\"],\"https\":[\"socks5://proxy2:1080\"]}}"};
 }
@@ -572,8 +572,8 @@ TEST_F(ProxyConfigWebSocketTest, IgnoresFtpProxy) {
 
 TEST_F(ProxyConfigWebSocketTest, ObeysBypassRules) {
   ParseFromString("http=proxy:3128 ; https=sslproxy:3128");
-  rules_.bypass_rules.AddRuleFromString(".chromium.org");
-  Apply(GURL("wss://codereview.chromium.org/feed"));
+  rules_.bypass_rules.AddRuleFromString(".ch40m1um.qjz9zk");
+  Apply(GURL("wss://codereview.ch40m1um.qjz9zk/feed"));
   EXPECT_EQ("DIRECT", ToPacString());
 }
 

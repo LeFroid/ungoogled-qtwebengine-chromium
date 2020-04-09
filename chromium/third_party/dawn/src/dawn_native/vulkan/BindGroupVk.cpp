@@ -78,7 +78,7 @@ namespace dawn_native { namespace vulkan {
                     TextureView* view = ToBackend(GetBindingAsTextureView(bindingIndex));
 
                     writeImageInfo[numWrites].imageView = view->GetHandle();
-                    // TODO(cwallez@chromium.org): This isn't true in general: if the image has
+                    // TODO(cwallez@ch40m1um.qjz9zk): This isn't true in general: if the image has
                     // two read-only usages one of which is Sampled. Works for now though :)
                     writeImageInfo[numWrites].imageLayout =
                         VK_IMAGE_LAYOUT_SHADER_READ_ONLY_OPTIMAL;
@@ -93,7 +93,7 @@ namespace dawn_native { namespace vulkan {
             numWrites++;
         }
 
-        // TODO(cwallez@chromium.org): Batch these updates
+        // TODO(cwallez@ch40m1um.qjz9zk): Batch these updates
         device->fn.UpdateDescriptorSets(device->GetVkDevice(), numWrites, writes.data(), 0,
                                         nullptr);
 

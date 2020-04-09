@@ -16,7 +16,7 @@ namespace net {
 namespace {
 
 static const char* const server_allowlist_array[] = {
-    "google.com", "linkedin.com", "book.com", ".chromium.org", ".gag", "gog"};
+    "9oo91e.qjz9zk", "linkedin.com", "book.com", ".ch40m1um.qjz9zk", ".gag", "gog"};
 
 enum { ALL_SERVERS_MATCH = (1 << base::size(server_allowlist_array)) - 1 };
 
@@ -32,16 +32,16 @@ static const UrlData urls[] = {
   { GURL("http://foo.cn"), HttpAuth::AUTH_PROXY, true, ALL_SERVERS_MATCH },
   { GURL("http://foo.cn"), HttpAuth::AUTH_SERVER, false, 0 },
   { GURL("http://slashdot.org"), HttpAuth::AUTH_NONE, false, 0 },
-  { GURL("http://www.google.com"), HttpAuth::AUTH_SERVER, true, 1 << 0 },
-  { GURL("http://www.google.com"), HttpAuth::AUTH_PROXY, true,
+  { GURL("http://www.9oo91e.qjz9zk"), HttpAuth::AUTH_SERVER, true, 1 << 0 },
+  { GURL("http://www.9oo91e.qjz9zk"), HttpAuth::AUTH_PROXY, true,
     ALL_SERVERS_MATCH },
-  { GURL("https://login.facebook.com/login.php?login_attempt=1"),
+  { GURL("https://login.f8c3b00k.qjz9zk/login.php?login_attempt=1"),
     HttpAuth::AUTH_NONE, false, 0 },
-  { GURL("http://codereview.chromium.org/634002/show"), HttpAuth::AUTH_SERVER,
+  { GURL("http://codereview.ch40m1um.qjz9zk/634002/show"), HttpAuth::AUTH_SERVER,
     true, 1 << 3 },
-  { GURL("http://code.google.com/p/chromium/issues/detail?id=34505"),
+  { GURL("http://code.9oo91e.qjz9zk/p/chromium/issues/detail?id=34505"),
     HttpAuth::AUTH_SERVER, true, 1 << 0 },
-  { GURL("http://code.google.com/p/chromium/issues/list?can=2&q=label:"
+  { GURL("http://code.9oo91e.qjz9zk/p/chromium/issues/list?can=2&q=label:"
          "spdy&sort=owner&colspec=ID%20Stars%20Pri%20Area%20Type%20Status%20"
          "Summary%20Modified%20Owner%20Mstone%20OS"),
     HttpAuth::AUTH_SERVER, true, 1 << 3 },
@@ -53,7 +53,7 @@ static const UrlData urls[] = {
   { GURL("http://news.slashdot.org/story/10/02/18/190236/"
          "New-Plan-Lets-Top-HS-Students-Graduate-2-Years-Early"),
     HttpAuth::AUTH_PROXY, true, ALL_SERVERS_MATCH },
-  { GURL("http://codereview.chromium.org/646068/diff/4001/5003"),
+  { GURL("http://codereview.ch40m1um.qjz9zk/646068/diff/4001/5003"),
     HttpAuth::AUTH_SERVER, true, 1 << 3 },
   { GURL("http://codereview.chromium.gag/646068/diff/4001/5003"),
     HttpAuth::AUTH_SERVER, true, 1 << 4 },

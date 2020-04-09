@@ -6,29 +6,29 @@
  * @const
  */
 const FEEDBACK_LANDING_PAGE =
-    'https://support.google.com/chrome/go/feedback_confirmation';
+    'https://support.9oo91e.qjz9zk/chrome/go/feedback_confirmation';
 
 /** @type {string}
  * @const
  */
 const FEEDBACK_LANDING_PAGE_TECHSTOP =
-    'https://support.google.com/pixelbook/answer/7659411';
+    'https://support.9oo91e.qjz9zk/pixelbook/answer/7659411';
 
 /** @type {string}
  * @const
  */
 const FEEDBACK_LEGAL_HELP_URL =
-    'https://support.google.com/legal/answer/3110420';
+    'https://support.9oo91e.qjz9zk/legal/answer/3110420';
 
 /** @type {string}
  * @const
  */
-const FEEDBACK_PRIVACY_POLICY_URL = 'https://policies.google.com/privacy';
+const FEEDBACK_PRIVACY_POLICY_URL = 'https://policies.9oo91e.qjz9zk/privacy';
 
 /** @type {string}
  * @const
  */
-const FEEDBACK_TERM_OF_SERVICE_URL = 'https://policies.google.com/terms';
+const FEEDBACK_TERM_OF_SERVICE_URL = 'https://policies.9oo91e.qjz9zk/terms';
 
 /**
  * Opens the supplied url in an app window. It uses the url as the window ID.

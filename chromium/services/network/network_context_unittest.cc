@@ -1348,7 +1348,7 @@ TEST_F(NetworkContextTest, ClearHttpCache) {
                               ->GetCache();
 
   std::vector<std::string> entry_urls = {
-      "http://www.google.com",    "https://www.google.com",
+      "http://www.9oo91e.qjz9zk",    "https://www.9oo91e.qjz9zk",
       "http://www.wikipedia.com", "https://www.wikipedia.com",
       "http://localhost:1234",    "https://localhost:1234",
   };
@@ -1425,7 +1425,7 @@ TEST_F(NetworkContextTest, NotifyExternalCacheHit) {
       mock_cache.http_cache());
 
   std::vector<std::string> entry_urls = {
-      "http://www.google.com",    "https://www.google.com",
+      "http://www.9oo91e.qjz9zk",    "https://www.9oo91e.qjz9zk",
       "http://www.wikipedia.com", "https://www.wikipedia.com",
       "http://localhost:1234",    "https://localhost:1234",
   };
@@ -1462,7 +1462,7 @@ TEST_F(NetworkContextTest, NotifyExternalCacheHit_Split) {
       mock_cache.http_cache());
 
   std::vector<std::string> entry_urls = {
-      "http://www.google.com",    "https://www.google.com",
+      "http://www.9oo91e.qjz9zk",    "https://www.9oo91e.qjz9zk",
       "http://www.wikipedia.com", "https://www.wikipedia.com",
       "http://localhost:1234",    "https://localhost:1234",
   };
@@ -1625,7 +1625,7 @@ TEST_F(NetworkContextTest, ClearHostCache) {
 }
 
 TEST_F(NetworkContextTest, ClearHttpAuthCache) {
-  GURL origin("http://google.com");
+  GURL origin("http://9oo91e.qjz9zk");
   std::unique_ptr<NetworkContext> network_context =
       CreateContextWithParams(CreateContextParams());
   net::HttpAuthCache* cache = network_context->url_request_context()
@@ -1674,7 +1674,7 @@ TEST_F(NetworkContextTest, ClearHttpAuthCache) {
 }
 
 TEST_F(NetworkContextTest, ClearAllHttpAuthCache) {
-  GURL origin("http://google.com");
+  GURL origin("http://9oo91e.qjz9zk");
   std::unique_ptr<NetworkContext> network_context =
       CreateContextWithParams(CreateContextParams());
   net::HttpAuthCache* cache = network_context->url_request_context()
@@ -1811,7 +1811,7 @@ TEST_F(NetworkContextTest, ClearReportingCacheReports) {
   network_context->url_request_context()->set_reporting_service(
       reporting_service.get());
 
-  GURL domain("http://google.com");
+  GURL domain("http://9oo91e.qjz9zk");
   reporting_service->QueueReport(domain, "Mozilla/1.0", "group", "type",
                                  nullptr, 0);
 
@@ -1841,10 +1841,10 @@ TEST_F(NetworkContextTest, ClearReportingCacheReportsWithFilter) {
   network_context->url_request_context()->set_reporting_service(
       reporting_service.get());
 
-  GURL domain1("http://google.com");
+  GURL domain1("http://9oo91e.qjz9zk");
   reporting_service->QueueReport(domain1, "Mozilla/1.0", "group", "type",
                                  nullptr, 0);
-  GURL domain2("http://chromium.org");
+  GURL domain2("http://ch40m1um.qjz9zk");
   reporting_service->QueueReport(domain2, "Mozilla/1.0", "group", "type",
                                  nullptr, 0);
 
@@ -1854,7 +1854,7 @@ TEST_F(NetworkContextTest, ClearReportingCacheReportsWithFilter) {
 
   mojom::ClearDataFilterPtr filter = mojom::ClearDataFilter::New();
   filter->type = mojom::ClearDataFilter_Type::KEEP_MATCHES;
-  filter->domains.push_back("chromium.org");
+  filter->domains.push_back("ch40m1um.qjz9zk");
 
   base::RunLoop run_loop;
   network_context->ClearReportingCacheReports(std::move(filter),
@@ -1959,7 +1959,7 @@ TEST_F(NetworkContextTest, ClearReportingCacheClients) {
   network_context->url_request_context()->set_reporting_service(
       reporting_service.get());
 
-  GURL domain("https://google.com");
+  GURL domain("https://9oo91e.qjz9zk");
   reporting_cache->SetEndpointForTesting(url::Origin::Create(domain), "group",
                                          domain, net::OriginSubdomains::DEFAULT,
                                          base::Time::Max(), 1 /* priority */,
@@ -1988,12 +1988,12 @@ TEST_F(NetworkContextTest, ClearReportingCacheClientsWithFilter) {
   network_context->url_request_context()->set_reporting_service(
       reporting_service.get());
 
-  GURL domain1("https://google.com");
+  GURL domain1("https://9oo91e.qjz9zk");
   reporting_cache->SetEndpointForTesting(
       url::Origin::Create(domain1), "group", domain1,
       net::OriginSubdomains::DEFAULT, base::Time::Max(), 1 /* priority */,
       1 /* weight */);
-  GURL domain2("https://chromium.org");
+  GURL domain2("https://ch40m1um.qjz9zk");
   reporting_cache->SetEndpointForTesting(
       url::Origin::Create(domain2), "group", domain2,
       net::OriginSubdomains::DEFAULT, base::Time::Max(), 1 /* priority */,
@@ -2003,7 +2003,7 @@ TEST_F(NetworkContextTest, ClearReportingCacheClientsWithFilter) {
 
   mojom::ClearDataFilterPtr filter = mojom::ClearDataFilter::New();
   filter->type = mojom::ClearDataFilter_Type::KEEP_MATCHES;
-  filter->domains.push_back("chromium.org");
+  filter->domains.push_back("ch40m1um.qjz9zk");
 
   base::RunLoop run_loop;
   network_context->ClearReportingCacheClients(std::move(filter),
@@ -2065,7 +2065,7 @@ TEST_F(NetworkContextTest, ClearNetworkErrorLogging) {
       network_context->url_request_context()->network_error_logging_service();
   ASSERT_TRUE(logging_service);
 
-  GURL domain("https://google.com");
+  GURL domain("https://9oo91e.qjz9zk");
   logging_service->OnHeader(url::Origin::Create(domain),
                             net::IPAddress(192, 168, 0, 1),
                             "{\"report_to\":\"group\",\"max_age\":86400}");
@@ -2090,11 +2090,11 @@ TEST_F(NetworkContextTest, ClearNetworkErrorLoggingWithFilter) {
       network_context->url_request_context()->network_error_logging_service();
   ASSERT_TRUE(logging_service);
 
-  GURL domain1("https://google.com");
+  GURL domain1("https://9oo91e.qjz9zk");
   logging_service->OnHeader(url::Origin::Create(domain1),
                             net::IPAddress(192, 168, 0, 1),
                             "{\"report_to\":\"group\",\"max_age\":86400}");
-  GURL domain2("https://chromium.org");
+  GURL domain2("https://ch40m1um.qjz9zk");
   logging_service->OnHeader(url::Origin::Create(domain2),
                             net::IPAddress(192, 168, 0, 1),
                             "{\"report_to\":\"group\",\"max_age\":86400}");
@@ -2103,7 +2103,7 @@ TEST_F(NetworkContextTest, ClearNetworkErrorLoggingWithFilter) {
 
   mojom::ClearDataFilterPtr filter = mojom::ClearDataFilter::New();
   filter->type = mojom::ClearDataFilter_Type::KEEP_MATCHES;
-  filter->domains.push_back("chromium.org");
+  filter->domains.push_back("ch40m1um.qjz9zk");
 
   base::RunLoop run_loop;
   network_context->ClearNetworkErrorLogging(std::move(filter),

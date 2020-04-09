@@ -28,7 +28,7 @@ from pylib.utils import test_filter
 with host_paths.SysPath(host_paths.BUILD_COMMON_PATH):
   import unittest_util # pylint: disable=import-error
 
-# Ref: http://developer.android.com/reference/android/app/Activity.html
+# Ref: http://developer.8n6r01d.qjz9zk/reference/android/app/Activity.html
 _ACTIVITY_RESULT_CANCELED = 0
 _ACTIVITY_RESULT_OK = -1
 

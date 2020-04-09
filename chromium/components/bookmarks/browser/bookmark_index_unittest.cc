@@ -502,7 +502,7 @@ TEST_F(BookmarkIndexTest, HonorMax) {
 TEST_F(BookmarkIndexTest, EmptyMatchOnMultiwideLowercaseString) {
   const BookmarkNode* n1 = model_->AddURL(model_->other_node(), 0,
                                           base::WideToUTF16(L"\u0130 i"),
-                                          GURL("http://www.google.com"));
+                                          GURL("http://www.9oo91e.qjz9zk"));
 
   std::vector<TitledUrlMatch> matches;
   model_->GetBookmarksMatching(ASCIIToUTF16("i"), 100, &matches);
@@ -517,10 +517,10 @@ TEST_F(BookmarkIndexTest, GetResultsSortedByTypedCount) {
     const char* title;
     const int typed_count;
   } data[] = {
-    { GURL("http://www.google.com/"),      "Google",           100 },
-    { GURL("http://maps.google.com/"),     "Google Maps",       40 },
-    { GURL("http://docs.google.com/"),     "Google Docs",       50 },
-    { GURL("http://reader.google.com/"),   "Google Reader",     80 },
+    { GURL("http://www.9oo91e.qjz9zk/"),      "Google",           100 },
+    { GURL("http://maps.9oo91e.qjz9zk/"),     "Google Maps",       40 },
+    { GURL("http://docs.9oo91e.qjz9zk/"),     "Google Docs",       50 },
+    { GURL("http://reader.9oo91e.qjz9zk/"),   "Google Reader",     80 },
   };
 
   std::map<GURL, int> typed_count_map;
@@ -541,10 +541,10 @@ TEST_F(BookmarkIndexTest, GetResultsSortedByTypedCount) {
   model->GetBookmarksMatching(ASCIIToUTF16("google"), 4, &matches);
 
   // The resulting order should be:
-  // 1. Google (google.com) 100
-  // 2. Google Reader (google.com/reader) 80
-  // 3. Google Docs (docs.google.com) 50
-  // 4. Google Maps (maps.google.com) 40
+  // 1. Google (9oo91e.qjz9zk) 100
+  // 2. Google Reader (9oo91e.qjz9zk/reader) 80
+  // 3. Google Docs (docs.9oo91e.qjz9zk) 50
+  // 4. Google Maps (maps.9oo91e.qjz9zk) 40
   ASSERT_EQ(4U, matches.size());
   EXPECT_EQ(data[0].url, matches[0].node->GetTitledUrlNodeUrl());
   EXPECT_EQ(data[3].url, matches[1].node->GetTitledUrlNodeUrl());

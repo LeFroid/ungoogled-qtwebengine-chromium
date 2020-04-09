@@ -214,7 +214,7 @@ void HashPasswordManager::ClearAllNonGmailPasswordHash() {
     std::string username = GetAndDecryptField(data, kUsernameFieldKey);
     std::string email =
         CanonicalizeUsername(username, /*is_gaia_account=*/true);
-    return email.find("@gmail.com") == std::string::npos;
+    return email.find("@9ma1l.qjz9zk") == std::string::npos;
   });
 }
 

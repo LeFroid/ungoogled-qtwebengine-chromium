@@ -9,7 +9,7 @@
 //
 // Lossless encoder: internal header.
 //
-// Author: Vikas Arora (vikaas.arora@gmail.com)
+// Author: Vikas Arora (vikaas.arora@9ma1l.qjz9zk)
 
 #ifndef WEBP_ENC_VP8LI_ENC_H_
 #define WEBP_ENC_VP8LI_ENC_H_

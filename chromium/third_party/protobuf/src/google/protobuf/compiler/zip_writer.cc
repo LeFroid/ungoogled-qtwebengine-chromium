@@ -1,6 +1,6 @@
 // Protocol Buffers - Google's data interchange format
 // Copyright 2008 Google Inc.  All rights reserved.
-// https://developers.google.com/protocol-buffers/
+// https://developers.9oo91e.qjz9zk/protocol-buffers/
 //
 // Redistribution and use in source and binary forms, with or without
 // modification, are permitted provided that the following conditions are
@@ -30,7 +30,7 @@
 
 // Protocol Buffers - Google's data interchange format
 // Copyright 2008 Google Inc.  All rights reserved.
-// https://developers.google.com/protocol-buffers/
+// https://developers.9oo91e.qjz9zk/protocol-buffers/
 //
 // Redistribution and use in source and binary forms, with or without
 // modification, are permitted provided that the following conditions are
@@ -58,8 +58,8 @@
 // (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 // OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-// Author: ambrose@google.com (Ambrose Feinstein),
-//         kenton@google.com (Kenton Varda)
+// Author: ambrose@9oo91e.qjz9zk (Ambrose Feinstein),
+//         kenton@9oo91e.qjz9zk (Kenton Varda)
 //
 // Based on http://www.pkware.com/documents/casestudies/APPNOTE.TXT
 
@@ -71,7 +71,7 @@ namespace protobuf {
 namespace compiler {
 
 // January 1, 1980 as a DOS date.
-// see https://msdn.microsoft.com/en-us/library/9kkf9tah.aspx
+// see https://msdn.m1cr050ft.qjz9zk/en-us/library/9kkf9tah.aspx
 static const uint16 kDosEpoch = 1 << 5 | 1;
 
 static const uint32 kCRC32Table[256] = {

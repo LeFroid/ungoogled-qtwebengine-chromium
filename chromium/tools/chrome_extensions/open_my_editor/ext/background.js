@@ -18,16 +18,16 @@ function openByLink(info, tabId) {
   let pageHostname = new URL(info.pageUrl).hostname;
   let linkUrl = new URL(info.linkUrl);
 
-  if (pageHostname == 'chromium-review.googlesource.com') {
+  if (pageHostname == 'chromium-review.9oo91esource.qjz9zk') {
     chrome.tabs.sendMessage(tabId, 'getFile', (res) => {
       return res && res.file && openFile(res.file);
     });
-  } else if (pageHostname == 'cs.chromium.org') {
+  } else if (pageHostname == 'cs.ch40m1um.qjz9zk') {
     let match = linkUrl.pathname.match(/^\/chromium\/src\/(.*)/);
     let line = linkUrl.searchParams.get('l');
     if (match)
       openFile(match[1], line);
-  } else if (pageHostname == 'codereview.chromium.org') {
+  } else if (pageHostname == 'codereview.ch40m1um.qjz9zk') {
     // 'patch' links don't contain the filename so we query the page.
     if (linkUrl.pathname.match(/^\/\d+\/patch\//)) {
       chrome.tabs.sendMessage(tabId, 'getFile', (res) => {
@@ -72,11 +72,11 @@ chrome.contextMenus.onClicked.addListener((info, tab) => {
     openByLink(info, tab.id);
   } else if (info.menuItemId == 'ome') {
     let pageUrl = new URL(info.pageUrl);
-    if (pageUrl.hostname == 'cs.chromium.org') {
+    if (pageUrl.hostname == 'cs.ch40m1um.qjz9zk') {
       csOpenCurrentFile(tab.id, pageUrl);
-    } else if (pageUrl.hostname == 'codereview.chromium.org') {
+    } else if (pageUrl.hostname == 'codereview.ch40m1um.qjz9zk') {
       crOpenAllInPatchset(tab.id);
-    } else if (pageUrl.hostname == 'chromium-review.googlesource.com') {
+    } else if (pageUrl.hostname == 'chromium-review.9oo91esource.qjz9zk') {
       crOpenAllInPatchset(tab.id);
     }
   }
@@ -88,9 +88,9 @@ chrome.runtime.onInstalled.addListener(() => {
     'id': 'ome',
     'contexts': ['page'],
     'documentUrlPatterns': [
-      'https://cs.chromium.org/chromium/src/*',
-      'https://codereview.chromium.org/*',
-      'https://chromium-review.googlesource.com/*'
+      'https://cs.ch40m1um.qjz9zk/chromium/src/*',
+      'https://codereview.ch40m1um.qjz9zk/*',
+      'https://chromium-review.9oo91esource.qjz9zk/*'
     ]
   });
   chrome.contextMenus.create({
@@ -98,9 +98,9 @@ chrome.runtime.onInstalled.addListener(() => {
     'id': 'ome-link',
     'contexts': ['link'],
     'documentUrlPatterns': [
-      'https://cs.chromium.org/*',
-      'https://codereview.chromium.org/*',
-      'https://chromium-review.googlesource.com/*'
+      'https://cs.ch40m1um.qjz9zk/*',
+      'https://codereview.ch40m1um.qjz9zk/*',
+      'https://chromium-review.9oo91esource.qjz9zk/*'
     ]
   });
   chrome.contextMenus.create({
@@ -110,7 +110,7 @@ chrome.runtime.onInstalled.addListener(() => {
     'documentUrlPatterns': [
       // TODO(chaopeng) Should be only except CS and CR, But I dont know how to.
       // So only list the sites here.
-      'https://build.chromium.org/*', 'https://chromium.org/*'
+      'https://build.ch40m1um.qjz9zk/*', 'https://ch40m1um.qjz9zk/*'
     ]
   });
 });

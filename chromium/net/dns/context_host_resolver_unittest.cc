@@ -177,7 +177,7 @@ TEST_F(ContextHostResolverTest, DohProbeRequest) {
 
 // Test that cancelling a resolver cancels its (and only its) requests.
 TEST_F(ContextHostResolverTest, DestroyResolver) {
-  // Set up delayed results for "example.com" and "google.com".
+  // Set up delayed results for "example.com" and "9oo91e.qjz9zk".
   MockDnsClientRuleList rules;
   rules.emplace_back("example.com", dns_protocol::kTypeA, false /* secure */,
                      MockDnsClientRule::Result(BuildTestDnsResponse(
@@ -186,11 +186,11 @@ TEST_F(ContextHostResolverTest, DestroyResolver) {
   rules.emplace_back("example.com", dns_protocol::kTypeAAAA, false /* secure */,
                      MockDnsClientRule::Result(MockDnsClientRule::EMPTY),
                      false /* delay */);
-  rules.emplace_back("google.com", dns_protocol::kTypeA, false /* secure */,
+  rules.emplace_back("9oo91e.qjz9zk", dns_protocol::kTypeA, false /* secure */,
                      MockDnsClientRule::Result(BuildTestDnsResponse(
-                         "google.com", kEndpoint.address())),
+                         "9oo91e.qjz9zk", kEndpoint.address())),
                      true /* delay */);
-  rules.emplace_back("google.com", dns_protocol::kTypeAAAA, false /* secure */,
+  rules.emplace_back("9oo91e.qjz9zk", dns_protocol::kTypeAAAA, false /* secure */,
                      MockDnsClientRule::Result(MockDnsClientRule::EMPTY),
                      false /* delay */);
   SetMockDnsRules(std::move(rules));
@@ -204,7 +204,7 @@ TEST_F(ContextHostResolverTest, DestroyResolver) {
   auto resolver2 = std::make_unique<ContextHostResolver>(
       manager_.get(), nullptr /* host_cache */);
   std::unique_ptr<HostResolver::ResolveHostRequest> request2 =
-      resolver2->CreateRequest(HostPortPair("google.com", 100),
+      resolver2->CreateRequest(HostPortPair("9oo91e.qjz9zk", 100),
                                NetworkIsolationKey(), NetLogWithSource(),
                                base::nullopt);
 

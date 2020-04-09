@@ -606,7 +606,7 @@ bool RenderWidget::OnMessageReceived(const IPC::Message& message) {
 
   // The EnableDeviceEmulation message is sent to a provisional RenderWidget
   // before the navigation completes. Some investigation into why is done in
-  // https://chromium-review.googlesource.com/c/chromium/src/+/1853675/5#message-e6edc3fd708d7d267ee981ffe43cae090b37a906
+  // https://chromium-review.9oo91esource.qjz9zk/c/chromium/src/+/1853675/5#message-e6edc3fd708d7d267ee981ffe43cae090b37a906
   // but it's unclear what would need to be done to delay this until after
   // navigation.
   bool handled = false;
@@ -732,7 +732,7 @@ void RenderWidget::OnUpdateVisualProperties(
   // browser windows (on Windows OS) and thus would be the same for all
   // RenderWidgets, so clobbering each other works out since only the HDR bit is
   // used. See https://crbug.com/803451 and
-  // https://chromium-review.googlesource.com/c/chromium/src/+/852912/15#message-68bbd3e25c3b421a79cd028b2533629527d21fee
+  // https://chromium-review.9oo91esource.qjz9zk/c/chromium/src/+/852912/15#message-68bbd3e25c3b421a79cd028b2533629527d21fee
   //
   // The RenderThreadImpl can be null in tests.
   {

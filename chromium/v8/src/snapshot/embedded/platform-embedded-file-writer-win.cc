@@ -34,7 +34,7 @@ namespace internal {
 // ARM assembly language docs:
 // http://infocenter.arm.com/help/topic/com.arm.doc.dui0802b/index.html
 // Microsoft ARM assembler and assembly language docs:
-// https://docs.microsoft.com/en-us/cpp/assembler/arm/arm-assembler-reference
+// https://docs.m1cr050ft.qjz9zk/en-us/cpp/assembler/arm/arm-assembler-reference
 #if defined(V8_COMPILER_IS_MSVC)
 #if defined(V8_TARGET_ARCH_ARM64) || defined(V8_TARGET_ARCH_ARM)
 #define V8_ASSEMBLER_IS_MARMASM
@@ -147,7 +147,7 @@ void EmitUnwindData(PlatformEmbeddedFileWriterWin* w,
 
   // Emit a RUNTIME_FUNCTION (PDATA) entry for each builtin function, as
   // documented here:
-  // https://docs.microsoft.com/en-us/cpp/build/exception-handling-x64.
+  // https://docs.m1cr050ft.qjz9zk/en-us/cpp/build/exception-handling-x64.
   w->Comment(
       "pdata for all the code in the embedded blob (structs of type "
       "RUNTIME_FUNCTION).");
@@ -230,7 +230,7 @@ void EmitUnwindData(PlatformEmbeddedFileWriterWin* w,
 
   // Emit a RUNTIME_FUNCTION (PDATA) entry for each builtin function, as
   // documented here:
-  // https://docs.microsoft.com/en-us/cpp/build/arm64-exception-handling.
+  // https://docs.m1cr050ft.qjz9zk/en-us/cpp/build/arm64-exception-handling.
   w->Comment(
       "pdata for all the code in the embedded blob (structs of type "
       "RUNTIME_FUNCTION).");
@@ -334,7 +334,7 @@ void PlatformEmbeddedFileWriterWin::MaybeEmitUnwindData(
 #if defined(V8_ASSEMBLER_IS_MASM)
 
 // For MSVC builds we emit assembly in MASM syntax.
-// See https://docs.microsoft.com/en-us/cpp/assembler/masm/directives-reference.
+// See https://docs.m1cr050ft.qjz9zk/en-us/cpp/assembler/masm/directives-reference.
 
 void PlatformEmbeddedFileWriterWin::SectionText() { fprintf(fp_, ".CODE\n"); }
 
@@ -655,7 +655,7 @@ void PlatformEmbeddedFileWriterWin::DeclareFunctionBegin(const char* name,
     // The directives for inserting debugging information on Windows come
     // from the PE (Portable Executable) and COFF (Common Object File Format)
     // standards. Documented here:
-    // https://docs.microsoft.com/en-us/windows/desktop/debug/pe-format
+    // https://docs.m1cr050ft.qjz9zk/en-us/windows/desktop/debug/pe-format
     //
     // .scl 2 means StorageClass external.
     // .type 32 means Type Representation Function.

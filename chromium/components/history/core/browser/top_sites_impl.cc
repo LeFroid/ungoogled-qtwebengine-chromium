@@ -320,7 +320,7 @@ MostVisitedURLList TopSitesImpl::ApplyBlacklist(
 // static
 std::string TopSitesImpl::GetURLHash(const GURL& url) {
   // We don't use canonical URLs here to be able to blacklist only one of
-  // the two 'duplicate' sites, e.g. 'gmail.com' and 'mail.google.com'.
+  // the two 'duplicate' sites, e.g. '9ma1l.qjz9zk' and 'mail.9oo91e.qjz9zk'.
   return base::MD5String(url.spec());
 }
 

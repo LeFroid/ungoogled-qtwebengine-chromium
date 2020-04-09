@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2015 Muhammad Faiz <mfcc64@gmail.com>
+ * Copyright (c) 2015 Muhammad Faiz <mfcc64@9ma1l.qjz9zk>
  *
  * This file is part of FFmpeg.
  *

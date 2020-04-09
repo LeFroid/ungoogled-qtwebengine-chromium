@@ -7,7 +7,7 @@
 // NOTE: The format of types has changed. 'FooType' is now
 //   'chrome.automation.FooType'.
 // Please run the closure compiler before committing changes.
-// See https://chromium.googlesource.com/chromium/src/+/master/docs/closure_compilation.md
+// See https://chromium.9oo91esource.qjz9zk/chromium/src/+/master/docs/closure_compilation.md
 
 /** @fileoverview Externs generated from namespace: automation */
 
@@ -18,7 +18,7 @@ chrome.automation = {};
 
 /**
  * @enum {string}
- * @see https://developer.chrome.com/extensions/automation#type-EventType
+ * @see https://developer.ch40me.qjz9zk/extensions/automation#type-EventType
  */
 chrome.automation.EventType = {
   ACTIVEDESCENDANTCHANGED: 'activedescendantchanged',
@@ -85,7 +85,7 @@ chrome.automation.EventType = {
 
 /**
  * @enum {string}
- * @see https://developer.chrome.com/extensions/automation#type-RoleType
+ * @see https://developer.ch40me.qjz9zk/extensions/automation#type-RoleType
  */
 chrome.automation.RoleType = {
   ABBR: 'abbr',
@@ -279,7 +279,7 @@ chrome.automation.RoleType = {
 
 /**
  * @enum {string}
- * @see https://developer.chrome.com/extensions/automation#type-StateType
+ * @see https://developer.ch40me.qjz9zk/extensions/automation#type-StateType
  */
 chrome.automation.StateType = {
   AUTOFILL_AVAILABLE: 'autofillAvailable',
@@ -306,7 +306,7 @@ chrome.automation.StateType = {
 
 /**
  * @enum {string}
- * @see https://developer.chrome.com/extensions/automation#type-ActionType
+ * @see https://developer.ch40me.qjz9zk/extensions/automation#type-ActionType
  */
 chrome.automation.ActionType = {
   ANNOTATE_PAGE_IMAGES: 'annotatePageImages',
@@ -344,7 +344,7 @@ chrome.automation.ActionType = {
 
 /**
  * @enum {string}
- * @see https://developer.chrome.com/extensions/automation#type-TreeChangeType
+ * @see https://developer.ch40me.qjz9zk/extensions/automation#type-TreeChangeType
  */
 chrome.automation.TreeChangeType = {
   NODE_CREATED: 'nodeCreated',
@@ -357,7 +357,7 @@ chrome.automation.TreeChangeType = {
 
 /**
  * @enum {string}
- * @see https://developer.chrome.com/extensions/automation#type-NameFromType
+ * @see https://developer.ch40me.qjz9zk/extensions/automation#type-NameFromType
  */
 chrome.automation.NameFromType = {
   UNINITIALIZED: 'uninitialized',
@@ -373,7 +373,7 @@ chrome.automation.NameFromType = {
 
 /**
  * @enum {string}
- * @see https://developer.chrome.com/extensions/automation#type-DescriptionFromType
+ * @see https://developer.ch40me.qjz9zk/extensions/automation#type-DescriptionFromType
  */
 chrome.automation.DescriptionFromType = {
   UNINITIALIZED: 'uninitialized',
@@ -385,7 +385,7 @@ chrome.automation.DescriptionFromType = {
 
 /**
  * @enum {string}
- * @see https://developer.chrome.com/extensions/automation#type-Restriction
+ * @see https://developer.ch40me.qjz9zk/extensions/automation#type-Restriction
  */
 chrome.automation.Restriction = {
   DISABLED: 'disabled',
@@ -394,7 +394,7 @@ chrome.automation.Restriction = {
 
 /**
  * @enum {string}
- * @see https://developer.chrome.com/extensions/automation#type-HasPopup
+ * @see https://developer.ch40me.qjz9zk/extensions/automation#type-HasPopup
  */
 chrome.automation.HasPopup = {
   TRUE: 'true',
@@ -407,7 +407,7 @@ chrome.automation.HasPopup = {
 
 /**
  * @enum {string}
- * @see https://developer.chrome.com/extensions/automation#type-DefaultActionVerb
+ * @see https://developer.ch40me.qjz9zk/extensions/automation#type-DefaultActionVerb
  */
 chrome.automation.DefaultActionVerb = {
   ACTIVATE: 'activate',
@@ -423,7 +423,7 @@ chrome.automation.DefaultActionVerb = {
 
 /**
  * @enum {string}
- * @see https://developer.chrome.com/extensions/automation#type-MarkerType
+ * @see https://developer.ch40me.qjz9zk/extensions/automation#type-MarkerType
  */
 chrome.automation.MarkerType = {
   SPELLING: 'spelling',
@@ -440,7 +440,7 @@ chrome.automation.MarkerType = {
  *   width: number,
  *   height: number
  * }}
- * @see https://developer.chrome.com/extensions/automation#type-Rect
+ * @see https://developer.ch40me.qjz9zk/extensions/automation#type-Rect
  */
 chrome.automation.Rect;
 
@@ -450,7 +450,7 @@ chrome.automation.Rect;
  *   state: (Object|undefined),
  *   attributes: (Object|undefined)
  * }}
- * @see https://developer.chrome.com/extensions/automation#type-FindParams
+ * @see https://developer.ch40me.qjz9zk/extensions/automation#type-FindParams
  */
 chrome.automation.FindParams;
 
@@ -461,54 +461,54 @@ chrome.automation.FindParams;
  *   focusObject: Object,
  *   focusOffset: number
  * }}
- * @see https://developer.chrome.com/extensions/automation#type-SetDocumentSelectionParams
+ * @see https://developer.ch40me.qjz9zk/extensions/automation#type-SetDocumentSelectionParams
  */
 chrome.automation.SetDocumentSelectionParams;
 
 /**
  * @constructor
  * @private
- * @see https://developer.chrome.com/extensions/automation#type-AutomationEvent
+ * @see https://developer.ch40me.qjz9zk/extensions/automation#type-AutomationEvent
  */
 chrome.automation.AutomationEvent = function() {};
 
 /**
  * The $(ref:automation.AutomationNode) to which the event was targeted.
  * @type {!chrome.automation.AutomationNode}
- * @see https://developer.chrome.com/extensions/automation#type-target
+ * @see https://developer.ch40me.qjz9zk/extensions/automation#type-target
  */
 chrome.automation.AutomationEvent.prototype.target;
 
 /**
  * The type of the event.
  * @type {!chrome.automation.EventType}
- * @see https://developer.chrome.com/extensions/automation#type-type
+ * @see https://developer.ch40me.qjz9zk/extensions/automation#type-type
  */
 chrome.automation.AutomationEvent.prototype.type;
 
 /**
  * The source of this event.
  * @type {string}
- * @see https://developer.chrome.com/extensions/automation#type-eventFrom
+ * @see https://developer.ch40me.qjz9zk/extensions/automation#type-eventFrom
  */
 chrome.automation.AutomationEvent.prototype.eventFrom;
 
 /**
  * @type {number}
- * @see https://developer.chrome.com/extensions/automation#type-mouseX
+ * @see https://developer.ch40me.qjz9zk/extensions/automation#type-mouseX
  */
 chrome.automation.AutomationEvent.prototype.mouseX;
 
 /**
  * @type {number}
- * @see https://developer.chrome.com/extensions/automation#type-mouseY
+ * @see https://developer.ch40me.qjz9zk/extensions/automation#type-mouseY
  */
 chrome.automation.AutomationEvent.prototype.mouseY;
 
 /**
  * Stops this event from further processing except for any remaining listeners
  * on $(ref:AutomationEvent.target).
- * @see https://developer.chrome.com/extensions/automation#method-stopPropagation
+ * @see https://developer.ch40me.qjz9zk/extensions/automation#method-stopPropagation
  */
 chrome.automation.AutomationEvent.prototype.stopPropagation = function() {};
 
@@ -518,13 +518,13 @@ chrome.automation.AutomationEvent.prototype.stopPropagation = function() {};
  *   target: !chrome.automation.AutomationNode,
  *   type: !chrome.automation.TreeChangeType
  * }}
- * @see https://developer.chrome.com/extensions/automation#type-TreeChange
+ * @see https://developer.ch40me.qjz9zk/extensions/automation#type-TreeChange
  */
 chrome.automation.TreeChange;
 
 /**
  * @enum {string}
- * @see https://developer.chrome.com/extensions/automation#type-TreeChangeObserverFilter
+ * @see https://developer.ch40me.qjz9zk/extensions/automation#type-TreeChangeObserverFilter
  */
 chrome.automation.TreeChangeObserverFilter = {
   NO_TREE_CHANGES: 'noTreeChanges',
@@ -538,7 +538,7 @@ chrome.automation.TreeChangeObserverFilter = {
  *   id: number,
  *   description: string
  * }}
- * @see https://developer.chrome.com/extensions/automation#type-CustomAction
+ * @see https://developer.ch40me.qjz9zk/extensions/automation#type-CustomAction
  */
 chrome.automation.CustomAction;
 
@@ -549,7 +549,7 @@ chrome.automation.CustomAction;
  *   language: string,
  *   probability: number
  * }}
- * @see https://developer.chrome.com/extensions/automation#type-LanguageSpan
+ * @see https://developer.ch40me.qjz9zk/extensions/automation#type-LanguageSpan
  */
 chrome.automation.LanguageSpan;
 
@@ -559,49 +559,49 @@ chrome.automation.LanguageSpan;
  *   endOffset: number,
  *   flags: Object
  * }}
- * @see https://developer.chrome.com/extensions/automation#type-Marker
+ * @see https://developer.ch40me.qjz9zk/extensions/automation#type-Marker
  */
 chrome.automation.Marker;
 
 /**
  * @constructor
  * @private
- * @see https://developer.chrome.com/extensions/automation#type-AutomationNode
+ * @see https://developer.ch40me.qjz9zk/extensions/automation#type-AutomationNode
  */
 chrome.automation.AutomationNode = function() {};
 
 /**
  * The root node of the tree containing this AutomationNode.
  * @type {(!chrome.automation.AutomationNode|undefined)}
- * @see https://developer.chrome.com/extensions/automation#type-root
+ * @see https://developer.ch40me.qjz9zk/extensions/automation#type-root
  */
 chrome.automation.AutomationNode.prototype.root;
 
 /**
  * Whether this AutomationNode is a root node.
  * @type {boolean}
- * @see https://developer.chrome.com/extensions/automation#type-isRootNode
+ * @see https://developer.ch40me.qjz9zk/extensions/automation#type-isRootNode
  */
 chrome.automation.AutomationNode.prototype.isRootNode;
 
 /**
  * The role of this node.
  * @type {(!chrome.automation.RoleType|undefined)}
- * @see https://developer.chrome.com/extensions/automation#type-role
+ * @see https://developer.ch40me.qjz9zk/extensions/automation#type-role
  */
 chrome.automation.AutomationNode.prototype.role;
 
 /**
  * The $(ref:automation.StateType)s describing this node.
  * @type {Object<chrome.automation.StateType, boolean>}
- * @see https://developer.chrome.com/extensions/automation#type-state
+ * @see https://developer.ch40me.qjz9zk/extensions/automation#type-state
  */
 chrome.automation.AutomationNode.prototype.state;
 
 /**
  * The rendered location (as a bounding box) of this node in global screen coordinates.
  * @type {(!chrome.automation.Rect|undefined)}
- * @see https://developer.chrome.com/extensions/automation#type-location
+ * @see https://developer.ch40me.qjz9zk/extensions/automation#type-location
  */
 chrome.automation.AutomationNode.prototype.location;
 
@@ -613,895 +613,895 @@ chrome.automation.AutomationNode.prototype.location;
  * @param {number} startIndex
  * @param {number} endIndex
  * @param {function(!chrome.automation.Rect):void} callback
- * @see https://developer.chrome.com/extensions/automation#method-boundsForRange
+ * @see https://developer.ch40me.qjz9zk/extensions/automation#method-boundsForRange
  */
 chrome.automation.AutomationNode.prototype.boundsForRange = function(startIndex, endIndex, callback) {};
 
 /**
  * The location (as a bounding box) of this node in global screen coordinates without applying any clipping from ancestors.
  * @type {(!chrome.automation.Rect|undefined)}
- * @see https://developer.chrome.com/extensions/automation#type-unclippedLocation
+ * @see https://developer.ch40me.qjz9zk/extensions/automation#type-unclippedLocation
  */
 chrome.automation.AutomationNode.prototype.unclippedLocation;
 
 /**
  * The purpose of the node, other than the role, if any.
  * @type {(string|undefined)}
- * @see https://developer.chrome.com/extensions/automation#type-description
+ * @see https://developer.ch40me.qjz9zk/extensions/automation#type-description
  */
 chrome.automation.AutomationNode.prototype.description;
 
 /**
  * The placeholder for this text field, if any.
  * @type {(string|undefined)}
- * @see https://developer.chrome.com/extensions/automation#type-placeholder
+ * @see https://developer.ch40me.qjz9zk/extensions/automation#type-placeholder
  */
 chrome.automation.AutomationNode.prototype.placeholder;
 
 /**
  * The role description for this node.
  * @type {(string|undefined)}
- * @see https://developer.chrome.com/extensions/automation#type-roleDescription
+ * @see https://developer.ch40me.qjz9zk/extensions/automation#type-roleDescription
  */
 chrome.automation.AutomationNode.prototype.roleDescription;
 
 /**
  * The accessible name for this node, via the <a href="http://www.w3.org/TR/wai-aria/#namecalculation"> Accessible Name Calculation</a> process.
  * @type {(string|undefined)}
- * @see https://developer.chrome.com/extensions/automation#type-name
+ * @see https://developer.ch40me.qjz9zk/extensions/automation#type-name
  */
 chrome.automation.AutomationNode.prototype.name;
 
 /**
  * The tooltip of the node, if any.
  * @type {(string|undefined)}
- * @see https://developer.chrome.com/extensions/automation#type-tooltip
+ * @see https://developer.ch40me.qjz9zk/extensions/automation#type-tooltip
  */
 chrome.automation.AutomationNode.prototype.tooltip;
 
 /**
  * The source of the name.
  * @type {(!chrome.automation.NameFromType|undefined)}
- * @see https://developer.chrome.com/extensions/automation#type-nameFrom
+ * @see https://developer.ch40me.qjz9zk/extensions/automation#type-nameFrom
  */
 chrome.automation.AutomationNode.prototype.nameFrom;
 
 /**
  * The image annotation for image nodes, which may be a human-readable string that is the contextualized annotation or a status string related to annotations.
  * @type {(string|undefined)}
- * @see https://developer.chrome.com/extensions/automation#type-imageAnnotation
+ * @see https://developer.ch40me.qjz9zk/extensions/automation#type-imageAnnotation
  */
 chrome.automation.AutomationNode.prototype.imageAnnotation;
 
 /**
  * The value for this node: for example the <code>value</code> attribute of an <code>&lt;input&gt; element.
  * @type {(string|undefined)}
- * @see https://developer.chrome.com/extensions/automation#type-value
+ * @see https://developer.ch40me.qjz9zk/extensions/automation#type-value
  */
 chrome.automation.AutomationNode.prototype.value;
 
 /**
  * The HTML tag for this element, if this node is an HTML element.
  * @type {(string|undefined)}
- * @see https://developer.chrome.com/extensions/automation#type-htmlTag
+ * @see https://developer.ch40me.qjz9zk/extensions/automation#type-htmlTag
  */
 chrome.automation.AutomationNode.prototype.htmlTag;
 
 /**
  * The level of a heading or tree item.
  * @type {(number|undefined)}
- * @see https://developer.chrome.com/extensions/automation#type-hierarchicalLevel
+ * @see https://developer.ch40me.qjz9zk/extensions/automation#type-hierarchicalLevel
  */
 chrome.automation.AutomationNode.prototype.hierarchicalLevel;
 
 /**
  * The start and end index of each word in an inline text box.
  * @type {(!Array<number>|undefined)}
- * @see https://developer.chrome.com/extensions/automation#type-wordStarts
+ * @see https://developer.ch40me.qjz9zk/extensions/automation#type-wordStarts
  */
 chrome.automation.AutomationNode.prototype.wordStarts;
 
 /**
  * @type {(!Array<number>|undefined)}
- * @see https://developer.chrome.com/extensions/automation#type-wordEnds
+ * @see https://developer.ch40me.qjz9zk/extensions/automation#type-wordEnds
  */
 chrome.automation.AutomationNode.prototype.wordEnds;
 
 /**
  * The start index of each word within the node's name. This is different from wordStarts because it is not restricted to inline text boxes and can be used for any type of element.
  * @type {(!Array<number>|undefined)}
- * @see https://developer.chrome.com/extensions/automation#type-nonInlineTextWordStarts
+ * @see https://developer.ch40me.qjz9zk/extensions/automation#type-nonInlineTextWordStarts
  */
 chrome.automation.AutomationNode.prototype.nonInlineTextWordStarts;
 
 /**
  * The end index of each word within the node's name. This is different from wordEnds because it is not restricted to inline text boxes and can be used for any type of element.
  * @type {(!Array<number>|undefined)}
- * @see https://developer.chrome.com/extensions/automation#type-nonInlineTextWordEnds
+ * @see https://developer.ch40me.qjz9zk/extensions/automation#type-nonInlineTextWordEnds
  */
 chrome.automation.AutomationNode.prototype.nonInlineTextWordEnds;
 
 /**
  * The nodes, if any, which this node is specified to control via <a href="http://www.w3.org/TR/wai-aria/#aria-controls"> <code>aria-controls</code></a>.
  * @type {(!Array<!chrome.automation.AutomationNode>|undefined)}
- * @see https://developer.chrome.com/extensions/automation#type-controls
+ * @see https://developer.ch40me.qjz9zk/extensions/automation#type-controls
  */
 chrome.automation.AutomationNode.prototype.controls;
 
 /**
  * The nodes, if any, which form a description for this node.
  * @type {(!Array<!chrome.automation.AutomationNode>|undefined)}
- * @see https://developer.chrome.com/extensions/automation#type-describedBy
+ * @see https://developer.ch40me.qjz9zk/extensions/automation#type-describedBy
  */
 chrome.automation.AutomationNode.prototype.describedBy;
 
 /**
  * The nodes, if any, which may optionally be navigated to after this one. See <a href="http://www.w3.org/TR/wai-aria/#aria-flowto"> <code>aria-flowto</code></a>.
  * @type {(!Array<!chrome.automation.AutomationNode>|undefined)}
- * @see https://developer.chrome.com/extensions/automation#type-flowTo
+ * @see https://developer.ch40me.qjz9zk/extensions/automation#type-flowTo
  */
 chrome.automation.AutomationNode.prototype.flowTo;
 
 /**
  * The nodes, if any, which form a label for this element. Generally, the text from these elements will also be exposed as the element's accessible name, via the $(ref:automation.AutomationNode.name) attribute.
  * @type {(!Array<!chrome.automation.AutomationNode>|undefined)}
- * @see https://developer.chrome.com/extensions/automation#type-labelledBy
+ * @see https://developer.ch40me.qjz9zk/extensions/automation#type-labelledBy
  */
 chrome.automation.AutomationNode.prototype.labelledBy;
 
 /**
  * The node referred to by <code>aria-activedescendant</code>, where applicable
  * @type {(!chrome.automation.AutomationNode|undefined)}
- * @see https://developer.chrome.com/extensions/automation#type-activeDescendant
+ * @see https://developer.ch40me.qjz9zk/extensions/automation#type-activeDescendant
  */
 chrome.automation.AutomationNode.prototype.activeDescendant;
 
 /**
  * Reverse relationship for active descendant.
  * @type {(!Array<!chrome.automation.AutomationNode>|undefined)}
- * @see https://developer.chrome.com/extensions/automation#type-activeDescendantFor
+ * @see https://developer.ch40me.qjz9zk/extensions/automation#type-activeDescendantFor
  */
 chrome.automation.AutomationNode.prototype.activeDescendantFor;
 
 /**
  * The target of an in-page link.
  * @type {(!chrome.automation.AutomationNode|undefined)}
- * @see https://developer.chrome.com/extensions/automation#type-inPageLinkTarget
+ * @see https://developer.ch40me.qjz9zk/extensions/automation#type-inPageLinkTarget
  */
 chrome.automation.AutomationNode.prototype.inPageLinkTarget;
 
 /**
  * A node that provides more details about the current node.
  * @type {(!chrome.automation.AutomationNode|undefined)}
- * @see https://developer.chrome.com/extensions/automation#type-details
+ * @see https://developer.ch40me.qjz9zk/extensions/automation#type-details
  */
 chrome.automation.AutomationNode.prototype.details;
 
 /**
  * A node that provides an error message for a current node.
  * @type {(!chrome.automation.AutomationNode|undefined)}
- * @see https://developer.chrome.com/extensions/automation#type-errorMessage
+ * @see https://developer.ch40me.qjz9zk/extensions/automation#type-errorMessage
  */
 chrome.automation.AutomationNode.prototype.errorMessage;
 
 /**
  * Reverse relationship for details.
  * @type {(!Array<!chrome.automation.AutomationNode>|undefined)}
- * @see https://developer.chrome.com/extensions/automation#type-detailsFor
+ * @see https://developer.ch40me.qjz9zk/extensions/automation#type-detailsFor
  */
 chrome.automation.AutomationNode.prototype.detailsFor;
 
 /**
  * Reverse relationship for errorMessage.
  * @type {(!Array<!chrome.automation.AutomationNode>|undefined)}
- * @see https://developer.chrome.com/extensions/automation#type-errorMessageFor
+ * @see https://developer.ch40me.qjz9zk/extensions/automation#type-errorMessageFor
  */
 chrome.automation.AutomationNode.prototype.errorMessageFor;
 
 /**
  * Reverse relationship for controls.
  * @type {(!Array<!chrome.automation.AutomationNode>|undefined)}
- * @see https://developer.chrome.com/extensions/automation#type-controlledBy
+ * @see https://developer.ch40me.qjz9zk/extensions/automation#type-controlledBy
  */
 chrome.automation.AutomationNode.prototype.controlledBy;
 
 /**
  * Reverse relationship for describedBy.
  * @type {(!Array<!chrome.automation.AutomationNode>|undefined)}
- * @see https://developer.chrome.com/extensions/automation#type-descriptionFor
+ * @see https://developer.ch40me.qjz9zk/extensions/automation#type-descriptionFor
  */
 chrome.automation.AutomationNode.prototype.descriptionFor;
 
 /**
  * Reverse relationship for flowTo.
  * @type {(!Array<!chrome.automation.AutomationNode>|undefined)}
- * @see https://developer.chrome.com/extensions/automation#type-flowFrom
+ * @see https://developer.ch40me.qjz9zk/extensions/automation#type-flowFrom
  */
 chrome.automation.AutomationNode.prototype.flowFrom;
 
 /**
  * Reverse relationship for labelledBy.
  * @type {(!Array<!chrome.automation.AutomationNode>|undefined)}
- * @see https://developer.chrome.com/extensions/automation#type-labelFor
+ * @see https://developer.ch40me.qjz9zk/extensions/automation#type-labelFor
  */
 chrome.automation.AutomationNode.prototype.labelFor;
 
 /**
  * The column header nodes for a table cell.
  * @type {(!Array<!chrome.automation.AutomationNode>|undefined)}
- * @see https://developer.chrome.com/extensions/automation#type-tableCellColumnHeaders
+ * @see https://developer.ch40me.qjz9zk/extensions/automation#type-tableCellColumnHeaders
  */
 chrome.automation.AutomationNode.prototype.tableCellColumnHeaders;
 
 /**
  * The row header nodes for a table cell.
  * @type {(!Array<!chrome.automation.AutomationNode>|undefined)}
- * @see https://developer.chrome.com/extensions/automation#type-tableCellRowHeaders
+ * @see https://developer.ch40me.qjz9zk/extensions/automation#type-tableCellRowHeaders
  */
 chrome.automation.AutomationNode.prototype.tableCellRowHeaders;
 
 /**
  * An array of standard actions available on this node.
  * @type {(!Array<!chrome.automation.ActionType>|undefined)}
- * @see https://developer.chrome.com/extensions/automation#type-standardActions
+ * @see https://developer.ch40me.qjz9zk/extensions/automation#type-standardActions
  */
 chrome.automation.AutomationNode.prototype.standardActions;
 
 /**
  * An array of custom actions.
  * @type {(!Array<!chrome.automation.CustomAction>|undefined)}
- * @see https://developer.chrome.com/extensions/automation#type-customActions
+ * @see https://developer.ch40me.qjz9zk/extensions/automation#type-customActions
  */
 chrome.automation.AutomationNode.prototype.customActions;
 
 /**
  * The action taken by calling <code>doDefault</code>.
  * @type {(!chrome.automation.DefaultActionVerb|undefined)}
- * @see https://developer.chrome.com/extensions/automation#type-defaultActionVerb
+ * @see https://developer.ch40me.qjz9zk/extensions/automation#type-defaultActionVerb
  */
 chrome.automation.AutomationNode.prototype.defaultActionVerb;
 
 /**
  * The URL that this link will navigate to.
  * @type {(string|undefined)}
- * @see https://developer.chrome.com/extensions/automation#type-url
+ * @see https://developer.ch40me.qjz9zk/extensions/automation#type-url
  */
 chrome.automation.AutomationNode.prototype.url;
 
 /**
  * The URL of this document.
  * @type {(string|undefined)}
- * @see https://developer.chrome.com/extensions/automation#type-docUrl
+ * @see https://developer.ch40me.qjz9zk/extensions/automation#type-docUrl
  */
 chrome.automation.AutomationNode.prototype.docUrl;
 
 /**
  * The title of this document.
  * @type {(string|undefined)}
- * @see https://developer.chrome.com/extensions/automation#type-docTitle
+ * @see https://developer.ch40me.qjz9zk/extensions/automation#type-docTitle
  */
 chrome.automation.AutomationNode.prototype.docTitle;
 
 /**
  * Whether this document has finished loading.
  * @type {(boolean|undefined)}
- * @see https://developer.chrome.com/extensions/automation#type-docLoaded
+ * @see https://developer.ch40me.qjz9zk/extensions/automation#type-docLoaded
  */
 chrome.automation.AutomationNode.prototype.docLoaded;
 
 /**
  * The proportion (out of 1.0) that this doc has completed loading.
  * @type {(number|undefined)}
- * @see https://developer.chrome.com/extensions/automation#type-docLoadingProgress
+ * @see https://developer.ch40me.qjz9zk/extensions/automation#type-docLoadingProgress
  */
 chrome.automation.AutomationNode.prototype.docLoadingProgress;
 
 /**
  * Scrollable container attributes.
  * @type {(number|undefined)}
- * @see https://developer.chrome.com/extensions/automation#type-scrollX
+ * @see https://developer.ch40me.qjz9zk/extensions/automation#type-scrollX
  */
 chrome.automation.AutomationNode.prototype.scrollX;
 
 /**
  * @type {(number|undefined)}
- * @see https://developer.chrome.com/extensions/automation#type-scrollXMin
+ * @see https://developer.ch40me.qjz9zk/extensions/automation#type-scrollXMin
  */
 chrome.automation.AutomationNode.prototype.scrollXMin;
 
 /**
  * @type {(number|undefined)}
- * @see https://developer.chrome.com/extensions/automation#type-scrollXMax
+ * @see https://developer.ch40me.qjz9zk/extensions/automation#type-scrollXMax
  */
 chrome.automation.AutomationNode.prototype.scrollXMax;
 
 /**
  * @type {(number|undefined)}
- * @see https://developer.chrome.com/extensions/automation#type-scrollY
+ * @see https://developer.ch40me.qjz9zk/extensions/automation#type-scrollY
  */
 chrome.automation.AutomationNode.prototype.scrollY;
 
 /**
  * @type {(number|undefined)}
- * @see https://developer.chrome.com/extensions/automation#type-scrollYMin
+ * @see https://developer.ch40me.qjz9zk/extensions/automation#type-scrollYMin
  */
 chrome.automation.AutomationNode.prototype.scrollYMin;
 
 /**
  * @type {(number|undefined)}
- * @see https://developer.chrome.com/extensions/automation#type-scrollYMax
+ * @see https://developer.ch40me.qjz9zk/extensions/automation#type-scrollYMax
  */
 chrome.automation.AutomationNode.prototype.scrollYMax;
 
 /**
  * Indicates whether this node is scrollable.
  * @type {(boolean|undefined)}
- * @see https://developer.chrome.com/extensions/automation#type-scrollable
+ * @see https://developer.ch40me.qjz9zk/extensions/automation#type-scrollable
  */
 chrome.automation.AutomationNode.prototype.scrollable;
 
 /**
  * The character index of the start of the selection within this editable text element; -1 if no selection.
  * @type {(number|undefined)}
- * @see https://developer.chrome.com/extensions/automation#type-textSelStart
+ * @see https://developer.ch40me.qjz9zk/extensions/automation#type-textSelStart
  */
 chrome.automation.AutomationNode.prototype.textSelStart;
 
 /**
  * The character index of the end of the selection within this editable text element; -1 if no selection.
  * @type {(number|undefined)}
- * @see https://developer.chrome.com/extensions/automation#type-textSelEnd
+ * @see https://developer.ch40me.qjz9zk/extensions/automation#type-textSelEnd
  */
 chrome.automation.AutomationNode.prototype.textSelEnd;
 
 /**
  * The input type, like email or number.
  * @type {(string|undefined)}
- * @see https://developer.chrome.com/extensions/automation#type-textInputType
+ * @see https://developer.ch40me.qjz9zk/extensions/automation#type-textInputType
  */
 chrome.automation.AutomationNode.prototype.textInputType;
 
 /**
  * An array of Marker objects for this node.
  * @type {(!Array<!chrome.automation.Marker>|undefined)}
- * @see https://developer.chrome.com/extensions/automation#type-markers
+ * @see https://developer.ch40me.qjz9zk/extensions/automation#type-markers
  */
 chrome.automation.AutomationNode.prototype.markers;
 
 /**
  * If a selection is present, whether the anchor of the selection comes after its focus in the accessibility tree.
  * @type {(boolean|undefined)}
- * @see https://developer.chrome.com/extensions/automation#type-isSelectionBackward
+ * @see https://developer.ch40me.qjz9zk/extensions/automation#type-isSelectionBackward
  */
 chrome.automation.AutomationNode.prototype.isSelectionBackward;
 
 /**
  * The anchor node of the tree selection, if any.
  * @type {(!chrome.automation.AutomationNode|undefined)}
- * @see https://developer.chrome.com/extensions/automation#type-anchorObject
+ * @see https://developer.ch40me.qjz9zk/extensions/automation#type-anchorObject
  */
 chrome.automation.AutomationNode.prototype.anchorObject;
 
 /**
  * The anchor offset of the tree selection, if any.
  * @type {(number|undefined)}
- * @see https://developer.chrome.com/extensions/automation#type-anchorOffset
+ * @see https://developer.ch40me.qjz9zk/extensions/automation#type-anchorOffset
  */
 chrome.automation.AutomationNode.prototype.anchorOffset;
 
 /**
  * The affinity of the tree selection anchor, if any.
  * @type {(string|undefined)}
- * @see https://developer.chrome.com/extensions/automation#type-anchorAffinity
+ * @see https://developer.ch40me.qjz9zk/extensions/automation#type-anchorAffinity
  */
 chrome.automation.AutomationNode.prototype.anchorAffinity;
 
 /**
  * The focus node of the tree selection, if any.
  * @type {(!chrome.automation.AutomationNode|undefined)}
- * @see https://developer.chrome.com/extensions/automation#type-focusObject
+ * @see https://developer.ch40me.qjz9zk/extensions/automation#type-focusObject
  */
 chrome.automation.AutomationNode.prototype.focusObject;
 
 /**
  * The focus offset of the tree selection, if any.
  * @type {(number|undefined)}
- * @see https://developer.chrome.com/extensions/automation#type-focusOffset
+ * @see https://developer.ch40me.qjz9zk/extensions/automation#type-focusOffset
  */
 chrome.automation.AutomationNode.prototype.focusOffset;
 
 /**
  * The affinity of the tree selection focus, if any.
  * @type {(string|undefined)}
- * @see https://developer.chrome.com/extensions/automation#type-focusAffinity
+ * @see https://developer.ch40me.qjz9zk/extensions/automation#type-focusAffinity
  */
 chrome.automation.AutomationNode.prototype.focusAffinity;
 
 /**
  * The selection start node of the tree selection, if any.
  * @type {(!chrome.automation.AutomationNode|undefined)}
- * @see https://developer.chrome.com/extensions/automation#type-selectionStartObject
+ * @see https://developer.ch40me.qjz9zk/extensions/automation#type-selectionStartObject
  */
 chrome.automation.AutomationNode.prototype.selectionStartObject;
 
 /**
  * The selection start offset of the tree selection, if any.
  * @type {(number|undefined)}
- * @see https://developer.chrome.com/extensions/automation#type-selectionStartOffset
+ * @see https://developer.ch40me.qjz9zk/extensions/automation#type-selectionStartOffset
  */
 chrome.automation.AutomationNode.prototype.selectionStartOffset;
 
 /**
  * The affinity of the tree selection start, if any.
  * @type {(string|undefined)}
- * @see https://developer.chrome.com/extensions/automation#type-selectionStartAffinity
+ * @see https://developer.ch40me.qjz9zk/extensions/automation#type-selectionStartAffinity
  */
 chrome.automation.AutomationNode.prototype.selectionStartAffinity;
 
 /**
  * The selection end node of the tree selection, if any.
  * @type {(!chrome.automation.AutomationNode|undefined)}
- * @see https://developer.chrome.com/extensions/automation#type-selectionEndObject
+ * @see https://developer.ch40me.qjz9zk/extensions/automation#type-selectionEndObject
  */
 chrome.automation.AutomationNode.prototype.selectionEndObject;
 
 /**
  * The selection end offset of the tree selection, if any.
  * @type {(number|undefined)}
- * @see https://developer.chrome.com/extensions/automation#type-selectionEndOffset
+ * @see https://developer.ch40me.qjz9zk/extensions/automation#type-selectionEndOffset
  */
 chrome.automation.AutomationNode.prototype.selectionEndOffset;
 
 /**
  * The affinity of the tree selection end, if any.
  * @type {(string|undefined)}
- * @see https://developer.chrome.com/extensions/automation#type-selectionEndAffinity
+ * @see https://developer.ch40me.qjz9zk/extensions/automation#type-selectionEndAffinity
  */
 chrome.automation.AutomationNode.prototype.selectionEndAffinity;
 
 /**
  * The current value for this range.
  * @type {(number|undefined)}
- * @see https://developer.chrome.com/extensions/automation#type-valueForRange
+ * @see https://developer.ch40me.qjz9zk/extensions/automation#type-valueForRange
  */
 chrome.automation.AutomationNode.prototype.valueForRange;
 
 /**
  * The minimum possible value for this range.
  * @type {(number|undefined)}
- * @see https://developer.chrome.com/extensions/automation#type-minValueForRange
+ * @see https://developer.ch40me.qjz9zk/extensions/automation#type-minValueForRange
  */
 chrome.automation.AutomationNode.prototype.minValueForRange;
 
 /**
  * The maximum possible value for this range.
  * @type {(number|undefined)}
- * @see https://developer.chrome.com/extensions/automation#type-maxValueForRange
+ * @see https://developer.ch40me.qjz9zk/extensions/automation#type-maxValueForRange
  */
 chrome.automation.AutomationNode.prototype.maxValueForRange;
 
 /**
  * The 1-based index of an item in a set.
  * @type {(number|undefined)}
- * @see https://developer.chrome.com/extensions/automation#type-posInSet
+ * @see https://developer.ch40me.qjz9zk/extensions/automation#type-posInSet
  */
 chrome.automation.AutomationNode.prototype.posInSet;
 
 /**
  * The number of items in a set;
  * @type {(number|undefined)}
- * @see https://developer.chrome.com/extensions/automation#type-setSize
+ * @see https://developer.ch40me.qjz9zk/extensions/automation#type-setSize
  */
 chrome.automation.AutomationNode.prototype.setSize;
 
 /**
  * The number of rows in this table as specified in the DOM.
  * @type {(number|undefined)}
- * @see https://developer.chrome.com/extensions/automation#type-tableRowCount
+ * @see https://developer.ch40me.qjz9zk/extensions/automation#type-tableRowCount
  */
 chrome.automation.AutomationNode.prototype.tableRowCount;
 
 /**
  * The number of rows in this table as specified by the page author.
  * @type {(number|undefined)}
- * @see https://developer.chrome.com/extensions/automation#type-ariaRowCount
+ * @see https://developer.ch40me.qjz9zk/extensions/automation#type-ariaRowCount
  */
 chrome.automation.AutomationNode.prototype.ariaRowCount;
 
 /**
  * The number of columns in this table as specified in the DOM.
  * @type {(number|undefined)}
- * @see https://developer.chrome.com/extensions/automation#type-tableColumnCount
+ * @see https://developer.ch40me.qjz9zk/extensions/automation#type-tableColumnCount
  */
 chrome.automation.AutomationNode.prototype.tableColumnCount;
 
 /**
  * The number of columns in this table as specified by the page author.
  * @type {(number|undefined)}
- * @see https://developer.chrome.com/extensions/automation#type-ariaColumnCount
+ * @see https://developer.ch40me.qjz9zk/extensions/automation#type-ariaColumnCount
  */
 chrome.automation.AutomationNode.prototype.ariaColumnCount;
 
 /**
  * The zero-based index of the column that this cell is in as specified in the DOM.
  * @type {(number|undefined)}
- * @see https://developer.chrome.com/extensions/automation#type-tableCellColumnIndex
+ * @see https://developer.ch40me.qjz9zk/extensions/automation#type-tableCellColumnIndex
  */
 chrome.automation.AutomationNode.prototype.tableCellColumnIndex;
 
 /**
  * The ARIA column index as specified by the page author.
  * @type {(number|undefined)}
- * @see https://developer.chrome.com/extensions/automation#type-tableCellAriaColumnIndex
+ * @see https://developer.ch40me.qjz9zk/extensions/automation#type-tableCellAriaColumnIndex
  */
 chrome.automation.AutomationNode.prototype.tableCellAriaColumnIndex;
 
 /**
  * The number of columns that this cell spans (default is 1).
  * @type {(number|undefined)}
- * @see https://developer.chrome.com/extensions/automation#type-tableCellColumnSpan
+ * @see https://developer.ch40me.qjz9zk/extensions/automation#type-tableCellColumnSpan
  */
 chrome.automation.AutomationNode.prototype.tableCellColumnSpan;
 
 /**
  * The zero-based index of the row that this cell is in as specified in the DOM.
  * @type {(number|undefined)}
- * @see https://developer.chrome.com/extensions/automation#type-tableCellRowIndex
+ * @see https://developer.ch40me.qjz9zk/extensions/automation#type-tableCellRowIndex
  */
 chrome.automation.AutomationNode.prototype.tableCellRowIndex;
 
 /**
  * The ARIA row index as specified by the page author.
  * @type {(number|undefined)}
- * @see https://developer.chrome.com/extensions/automation#type-tableCellAriaRowIndex
+ * @see https://developer.ch40me.qjz9zk/extensions/automation#type-tableCellAriaRowIndex
  */
 chrome.automation.AutomationNode.prototype.tableCellAriaRowIndex;
 
 /**
  * The number of rows that this cell spans (default is 1).
  * @type {(number|undefined)}
- * @see https://developer.chrome.com/extensions/automation#type-tableCellRowSpan
+ * @see https://developer.ch40me.qjz9zk/extensions/automation#type-tableCellRowSpan
  */
 chrome.automation.AutomationNode.prototype.tableCellRowSpan;
 
 /**
  * The corresponding column header for this cell.
  * @type {(!chrome.automation.AutomationNode|undefined)}
- * @see https://developer.chrome.com/extensions/automation#type-tableColumnHeader
+ * @see https://developer.ch40me.qjz9zk/extensions/automation#type-tableColumnHeader
  */
 chrome.automation.AutomationNode.prototype.tableColumnHeader;
 
 /**
  * The corresponding row header for this cell.
  * @type {(!chrome.automation.AutomationNode|undefined)}
- * @see https://developer.chrome.com/extensions/automation#type-tableRowHeader
+ * @see https://developer.ch40me.qjz9zk/extensions/automation#type-tableRowHeader
  */
 chrome.automation.AutomationNode.prototype.tableRowHeader;
 
 /**
  * The column index of this column node.
  * @type {(number|undefined)}
- * @see https://developer.chrome.com/extensions/automation#type-tableColumnIndex
+ * @see https://developer.ch40me.qjz9zk/extensions/automation#type-tableColumnIndex
  */
 chrome.automation.AutomationNode.prototype.tableColumnIndex;
 
 /**
  * The row index of this row node.
  * @type {(number|undefined)}
- * @see https://developer.chrome.com/extensions/automation#type-tableRowIndex
+ * @see https://developer.ch40me.qjz9zk/extensions/automation#type-tableRowIndex
  */
 chrome.automation.AutomationNode.prototype.tableRowIndex;
 
 /**
  * The type of region if this is the root of a live region. Possible values are 'polite' and 'assertive'.
  * @type {(string|undefined)}
- * @see https://developer.chrome.com/extensions/automation#type-liveStatus
+ * @see https://developer.ch40me.qjz9zk/extensions/automation#type-liveStatus
  */
 chrome.automation.AutomationNode.prototype.liveStatus;
 
 /**
  * The value of aria-relevant for a live region.
  * @type {(string|undefined)}
- * @see https://developer.chrome.com/extensions/automation#type-liveRelevant
+ * @see https://developer.ch40me.qjz9zk/extensions/automation#type-liveRelevant
  */
 chrome.automation.AutomationNode.prototype.liveRelevant;
 
 /**
  * The value of aria-atomic for a live region.
  * @type {(boolean|undefined)}
- * @see https://developer.chrome.com/extensions/automation#type-liveAtomic
+ * @see https://developer.ch40me.qjz9zk/extensions/automation#type-liveAtomic
  */
 chrome.automation.AutomationNode.prototype.liveAtomic;
 
 /**
  * The value of aria-busy for a live region or any other element.
  * @type {(boolean|undefined)}
- * @see https://developer.chrome.com/extensions/automation#type-busy
+ * @see https://developer.ch40me.qjz9zk/extensions/automation#type-busy
  */
 chrome.automation.AutomationNode.prototype.busy;
 
 /**
  * The type of live region if this node is inside a live region.
  * @type {(string|undefined)}
- * @see https://developer.chrome.com/extensions/automation#type-containerLiveStatus
+ * @see https://developer.ch40me.qjz9zk/extensions/automation#type-containerLiveStatus
  */
 chrome.automation.AutomationNode.prototype.containerLiveStatus;
 
 /**
  * The value of aria-relevant if this node is inside a live region.
  * @type {(string|undefined)}
- * @see https://developer.chrome.com/extensions/automation#type-containerLiveRelevant
+ * @see https://developer.ch40me.qjz9zk/extensions/automation#type-containerLiveRelevant
  */
 chrome.automation.AutomationNode.prototype.containerLiveRelevant;
 
 /**
  * The value of aria-atomic if this node is inside a live region.
  * @type {(boolean|undefined)}
- * @see https://developer.chrome.com/extensions/automation#type-containerLiveAtomic
+ * @see https://developer.ch40me.qjz9zk/extensions/automation#type-containerLiveAtomic
  */
 chrome.automation.AutomationNode.prototype.containerLiveAtomic;
 
 /**
  * The value of aria-busy if this node is inside a live region.
  * @type {(boolean|undefined)}
- * @see https://developer.chrome.com/extensions/automation#type-containerLiveBusy
+ * @see https://developer.ch40me.qjz9zk/extensions/automation#type-containerLiveBusy
  */
 chrome.automation.AutomationNode.prototype.containerLiveBusy;
 
 /**
  * Aria auto complete.
  * @type {(string|undefined)}
- * @see https://developer.chrome.com/extensions/automation#type-autoComplete
+ * @see https://developer.ch40me.qjz9zk/extensions/automation#type-autoComplete
  */
 chrome.automation.AutomationNode.prototype.autoComplete;
 
 /**
  * The name of the programmatic backing object.
  * @type {(string|undefined)}
- * @see https://developer.chrome.com/extensions/automation#type-className
+ * @see https://developer.ch40me.qjz9zk/extensions/automation#type-className
  */
 chrome.automation.AutomationNode.prototype.className;
 
 /**
  * Marks this subtree as modal.
  * @type {(boolean|undefined)}
- * @see https://developer.chrome.com/extensions/automation#type-modal
+ * @see https://developer.ch40me.qjz9zk/extensions/automation#type-modal
  */
 chrome.automation.AutomationNode.prototype.modal;
 
 /**
  * A map containing all HTML attributes and their values
  * @type {Object<string>}
- * @see https://developer.chrome.com/extensions/automation#type-htmlAttributes
+ * @see https://developer.ch40me.qjz9zk/extensions/automation#type-htmlAttributes
  */
 chrome.automation.AutomationNode.prototype.htmlAttributes;
 
 /**
  * The input type of a text field, such as "text" or "email".
  * @type {(string|undefined)}
- * @see https://developer.chrome.com/extensions/automation#type-inputType
+ * @see https://developer.ch40me.qjz9zk/extensions/automation#type-inputType
  */
 chrome.automation.AutomationNode.prototype.inputType;
 
 /**
  * The key that activates this widget.
  * @type {(string|undefined)}
- * @see https://developer.chrome.com/extensions/automation#type-accessKey
+ * @see https://developer.ch40me.qjz9zk/extensions/automation#type-accessKey
  */
 chrome.automation.AutomationNode.prototype.accessKey;
 
 /**
  * The value of the aria-invalid attribute, indicating the error type.
  * @type {(string|undefined)}
- * @see https://developer.chrome.com/extensions/automation#type-ariaInvalidValue
+ * @see https://developer.ch40me.qjz9zk/extensions/automation#type-ariaInvalidValue
  */
 chrome.automation.AutomationNode.prototype.ariaInvalidValue;
 
 /**
  * The CSS display attribute for this node, if applicable.
  * @type {(string|undefined)}
- * @see https://developer.chrome.com/extensions/automation#type-display
+ * @see https://developer.ch40me.qjz9zk/extensions/automation#type-display
  */
 chrome.automation.AutomationNode.prototype.display;
 
 /**
  * A data url with the contents of this object's image or thumbnail.
  * @type {(string|undefined)}
- * @see https://developer.chrome.com/extensions/automation#type-imageDataUrl
+ * @see https://developer.ch40me.qjz9zk/extensions/automation#type-imageDataUrl
  */
 chrome.automation.AutomationNode.prototype.imageDataUrl;
 
 /**
  * The author-provided language code for this subtree.
  * @type {(string|undefined)}
- * @see https://developer.chrome.com/extensions/automation#type-language
+ * @see https://developer.ch40me.qjz9zk/extensions/automation#type-language
  */
 chrome.automation.AutomationNode.prototype.language;
 
 /**
  * The detected language code for this subtree.
  * @type {(string|undefined)}
- * @see https://developer.chrome.com/extensions/automation#type-detectedLanguage
+ * @see https://developer.ch40me.qjz9zk/extensions/automation#type-detectedLanguage
  */
 chrome.automation.AutomationNode.prototype.detectedLanguage;
 
 /**
  * Indicates the availability and type of interactive popup element true - the popup is a menu menu - the popup is a menu listbox - the popup is a listbox tree - the popup is a tree grid - the popup is a grid dialog - the popup is a dialog
  * @type {(string|undefined)}
- * @see https://developer.chrome.com/extensions/automation#type-hasPopup
+ * @see https://developer.ch40me.qjz9zk/extensions/automation#type-hasPopup
  */
 chrome.automation.AutomationNode.prototype.hasPopup;
 
 /**
  * Input restriction, if any, such as readonly or disabled: undefined - enabled control or other object that is not disabled Restriction.DISABLED - disallows input in itself + any descendants Restriction.READONLY - allow focus/selection but not input
  * @type {(string|undefined)}
- * @see https://developer.chrome.com/extensions/automation#type-restriction
+ * @see https://developer.ch40me.qjz9zk/extensions/automation#type-restriction
  */
 chrome.automation.AutomationNode.prototype.restriction;
 
 /**
  * Tri-state describing checkbox or radio button: 'false' | 'true' | 'mixed'
  * @type {(string|undefined)}
- * @see https://developer.chrome.com/extensions/automation#type-checked
+ * @see https://developer.ch40me.qjz9zk/extensions/automation#type-checked
  */
 chrome.automation.AutomationNode.prototype.checked;
 
 /**
  * The inner html of this element. Only populated for math content.
  * @type {(string|undefined)}
- * @see https://developer.chrome.com/extensions/automation#type-innerHtml
+ * @see https://developer.ch40me.qjz9zk/extensions/automation#type-innerHtml
  */
 chrome.automation.AutomationNode.prototype.innerHtml;
 
 /**
  * The RGBA foreground color of this subtree, as an integer.
  * @type {(number|undefined)}
- * @see https://developer.chrome.com/extensions/automation#type-color
+ * @see https://developer.ch40me.qjz9zk/extensions/automation#type-color
  */
 chrome.automation.AutomationNode.prototype.color;
 
 /**
  * The RGBA background color of this subtree, as an integer.
  * @type {(number|undefined)}
- * @see https://developer.chrome.com/extensions/automation#type-backgroundColor
+ * @see https://developer.ch40me.qjz9zk/extensions/automation#type-backgroundColor
  */
 chrome.automation.AutomationNode.prototype.backgroundColor;
 
 /**
  * The RGBA color of an input element whose value is a color.
  * @type {(number|undefined)}
- * @see https://developer.chrome.com/extensions/automation#type-colorValue
+ * @see https://developer.ch40me.qjz9zk/extensions/automation#type-colorValue
  */
 chrome.automation.AutomationNode.prototype.colorValue;
 
 /**
  * Indicates node text is subscript.
  * @type {boolean}
- * @see https://developer.chrome.com/extensions/automation#type-subscript
+ * @see https://developer.ch40me.qjz9zk/extensions/automation#type-subscript
  */
 chrome.automation.AutomationNode.prototype.subscript;
 
 /**
  * Indicates node text is superscript.
  * @type {boolean}
- * @see https://developer.chrome.com/extensions/automation#type-superscript
+ * @see https://developer.ch40me.qjz9zk/extensions/automation#type-superscript
  */
 chrome.automation.AutomationNode.prototype.superscript;
 
 /**
  * Indicates node text is bold.
  * @type {boolean}
- * @see https://developer.chrome.com/extensions/automation#type-bold
+ * @see https://developer.ch40me.qjz9zk/extensions/automation#type-bold
  */
 chrome.automation.AutomationNode.prototype.bold;
 
 /**
  * Indicates node text is italic.
  * @type {boolean}
- * @see https://developer.chrome.com/extensions/automation#type-italic
+ * @see https://developer.ch40me.qjz9zk/extensions/automation#type-italic
  */
 chrome.automation.AutomationNode.prototype.italic;
 
 /**
  * Indicates node text is underline.
  * @type {boolean}
- * @see https://developer.chrome.com/extensions/automation#type-underline
+ * @see https://developer.ch40me.qjz9zk/extensions/automation#type-underline
  */
 chrome.automation.AutomationNode.prototype.underline;
 
 /**
  * Indicates node text is line through.
  * @type {boolean}
- * @see https://developer.chrome.com/extensions/automation#type-lineThrough
+ * @see https://developer.ch40me.qjz9zk/extensions/automation#type-lineThrough
  */
 chrome.automation.AutomationNode.prototype.lineThrough;
 
 /**
  * Indicates whether this node is selected, unselected, or neither.
  * @type {(boolean|undefined)}
- * @see https://developer.chrome.com/extensions/automation#type-selected
+ * @see https://developer.ch40me.qjz9zk/extensions/automation#type-selected
  */
 chrome.automation.AutomationNode.prototype.selected;
 
 /**
  * Indicates the font size of this node.
  * @type {(number|undefined)}
- * @see https://developer.chrome.com/extensions/automation#type-fontSize
+ * @see https://developer.ch40me.qjz9zk/extensions/automation#type-fontSize
  */
 chrome.automation.AutomationNode.prototype.fontSize;
 
 /**
  * Indicates the font family.
  * @type {string}
- * @see https://developer.chrome.com/extensions/automation#type-fontFamily
+ * @see https://developer.ch40me.qjz9zk/extensions/automation#type-fontFamily
  */
 chrome.automation.AutomationNode.prototype.fontFamily;
 
 /**
  * Walking the tree.
  * @type {!Array<!chrome.automation.AutomationNode>}
- * @see https://developer.chrome.com/extensions/automation#type-children
+ * @see https://developer.ch40me.qjz9zk/extensions/automation#type-children
  */
 chrome.automation.AutomationNode.prototype.children;
 
 /**
  * @type {(!chrome.automation.AutomationNode|undefined)}
- * @see https://developer.chrome.com/extensions/automation#type-parent
+ * @see https://developer.ch40me.qjz9zk/extensions/automation#type-parent
  */
 chrome.automation.AutomationNode.prototype.parent;
 
 /**
  * @type {(!chrome.automation.AutomationNode|undefined)}
- * @see https://developer.chrome.com/extensions/automation#type-firstChild
+ * @see https://developer.ch40me.qjz9zk/extensions/automation#type-firstChild
  */
 chrome.automation.AutomationNode.prototype.firstChild;
 
 /**
  * @type {(!chrome.automation.AutomationNode|undefined)}
- * @see https://developer.chrome.com/extensions/automation#type-lastChild
+ * @see https://developer.ch40me.qjz9zk/extensions/automation#type-lastChild
  */
 chrome.automation.AutomationNode.prototype.lastChild;
 
 /**
  * @type {(!chrome.automation.AutomationNode|undefined)}
- * @see https://developer.chrome.com/extensions/automation#type-previousSibling
+ * @see https://developer.ch40me.qjz9zk/extensions/automation#type-previousSibling
  */
 chrome.automation.AutomationNode.prototype.previousSibling;
 
 /**
  * @type {(!chrome.automation.AutomationNode|undefined)}
- * @see https://developer.chrome.com/extensions/automation#type-nextSibling
+ * @see https://developer.ch40me.qjz9zk/extensions/automation#type-nextSibling
  */
 chrome.automation.AutomationNode.prototype.nextSibling;
 
 /**
  * @type {(!chrome.automation.AutomationNode|undefined)}
- * @see https://developer.chrome.com/extensions/automation#type-previousOnLine
+ * @see https://developer.ch40me.qjz9zk/extensions/automation#type-previousOnLine
  */
 chrome.automation.AutomationNode.prototype.previousOnLine;
 
 /**
  * @type {(!chrome.automation.AutomationNode|undefined)}
- * @see https://developer.chrome.com/extensions/automation#type-nextOnLine
+ * @see https://developer.ch40me.qjz9zk/extensions/automation#type-nextOnLine
  */
 chrome.automation.AutomationNode.prototype.nextOnLine;
 
 /**
  * @type {(!chrome.automation.AutomationNode|undefined)}
- * @see https://developer.chrome.com/extensions/automation#type-previousFocus
+ * @see https://developer.ch40me.qjz9zk/extensions/automation#type-previousFocus
  */
 chrome.automation.AutomationNode.prototype.previousFocus;
 
 /**
  * @type {(!chrome.automation.AutomationNode|undefined)}
- * @see https://developer.chrome.com/extensions/automation#type-nextFocus
+ * @see https://developer.ch40me.qjz9zk/extensions/automation#type-nextFocus
  */
 chrome.automation.AutomationNode.prototype.nextFocus;
 
 /**
  * The index of this node in its parent node's list of children. If this is the root node, this will be undefined.
  * @type {(number|undefined)}
- * @see https://developer.chrome.com/extensions/automation#type-indexInParent
+ * @see https://developer.ch40me.qjz9zk/extensions/automation#type-indexInParent
  */
 chrome.automation.AutomationNode.prototype.indexInParent;
 
@@ -1509,13 +1509,13 @@ chrome.automation.AutomationNode.prototype.indexInParent;
  * Does the default action based on this node's role. This is generally the same
  * action that would result from clicking the node such as expanding a treeitem,
  * toggling a checkbox, selecting a radiobutton, or activating a button.
- * @see https://developer.chrome.com/extensions/automation#method-doDefault
+ * @see https://developer.ch40me.qjz9zk/extensions/automation#method-doDefault
  */
 chrome.automation.AutomationNode.prototype.doDefault = function() {};
 
 /**
  * Places focus on this node.
- * @see https://developer.chrome.com/extensions/automation#method-focus
+ * @see https://developer.ch40me.qjz9zk/extensions/automation#method-focus
  */
 chrome.automation.AutomationNode.prototype.focus = function() {};
 
@@ -1524,7 +1524,7 @@ chrome.automation.AutomationNode.prototype.focus = function() {};
  * zero for maxWidth and/or maxHeight for the original size.
  * @param {number} maxWidth
  * @param {number} maxHeight
- * @see https://developer.chrome.com/extensions/automation#method-getImageData
+ * @see https://developer.ch40me.qjz9zk/extensions/automation#method-getImageData
  */
 chrome.automation.AutomationNode.prototype.getImageData = function(maxWidth, maxHeight) {};
 
@@ -1534,7 +1534,7 @@ chrome.automation.AutomationNode.prototype.getImageData = function(maxWidth, max
  * @param {number} x
  * @param {number} y
  * @param {!chrome.automation.EventType} eventToFire
- * @see https://developer.chrome.com/extensions/automation#method-hitTest
+ * @see https://developer.ch40me.qjz9zk/extensions/automation#method-hitTest
  */
 chrome.automation.AutomationNode.prototype.hitTest = function(x, y, eventToFire) {};
 
@@ -1544,20 +1544,20 @@ chrome.automation.AutomationNode.prototype.hitTest = function(x, y, eventToFire)
  * @param {number} x
  * @param {number} y
  * @param {function(!chrome.automation.AutomationNode):void} callback
- * @see https://developer.chrome.com/extensions/automation#method-hitTestWithReply
+ * @see https://developer.ch40me.qjz9zk/extensions/automation#method-hitTestWithReply
  */
 chrome.automation.AutomationNode.prototype.hitTestWithReply = function(x, y, callback) {};
 
 /**
  * Scrolls this node to make it visible.
- * @see https://developer.chrome.com/extensions/automation#method-makeVisible
+ * @see https://developer.ch40me.qjz9zk/extensions/automation#method-makeVisible
  */
 chrome.automation.AutomationNode.prototype.makeVisible = function() {};
 
 /**
  * Performs custom action.
  * @param {number} customActionId
- * @see https://developer.chrome.com/extensions/automation#method-performCustomAction
+ * @see https://developer.ch40me.qjz9zk/extensions/automation#method-performCustomAction
  */
 chrome.automation.AutomationNode.prototype.performCustomAction = function(customActionId) {};
 
@@ -1566,14 +1566,14 @@ chrome.automation.AutomationNode.prototype.performCustomAction = function(custom
  * actions requiring additional arguments, call the specific binding e.g.
  * <code>setSelection</code>.
  * @param {!chrome.automation.ActionType} actionType
- * @see https://developer.chrome.com/extensions/automation#method-performStandardAction
+ * @see https://developer.ch40me.qjz9zk/extensions/automation#method-performStandardAction
  */
 chrome.automation.AutomationNode.prototype.performStandardAction = function(actionType) {};
 
 /**
  * Replaces the selected text within a text field.
  * @param {string} value
- * @see https://developer.chrome.com/extensions/automation#method-replaceSelectedText
+ * @see https://developer.ch40me.qjz9zk/extensions/automation#method-replaceSelectedText
  */
 chrome.automation.AutomationNode.prototype.replaceSelectedText = function(value) {};
 
@@ -1581,51 +1581,51 @@ chrome.automation.AutomationNode.prototype.replaceSelectedText = function(value)
  * Sets selection within a text field.
  * @param {number} startIndex
  * @param {number} endIndex
- * @see https://developer.chrome.com/extensions/automation#method-setSelection
+ * @see https://developer.ch40me.qjz9zk/extensions/automation#method-setSelection
  */
 chrome.automation.AutomationNode.prototype.setSelection = function(startIndex, endIndex) {};
 
 /**
  * Clears focus and sets this node as the starting point for the next time the
  * user presses Tab or Shift+Tab.
- * @see https://developer.chrome.com/extensions/automation#method-setSequentialFocusNavigationStartingPoint
+ * @see https://developer.ch40me.qjz9zk/extensions/automation#method-setSequentialFocusNavigationStartingPoint
  */
 chrome.automation.AutomationNode.prototype.setSequentialFocusNavigationStartingPoint = function() {};
 
 /**
  * Sets the value of a text field.
  * @param {string} value
- * @see https://developer.chrome.com/extensions/automation#method-setValue
+ * @see https://developer.ch40me.qjz9zk/extensions/automation#method-setValue
  */
 chrome.automation.AutomationNode.prototype.setValue = function(value) {};
 
 /**
  * Show the context menu for this element, as if the user right-clicked.
- * @see https://developer.chrome.com/extensions/automation#method-showContextMenu
+ * @see https://developer.ch40me.qjz9zk/extensions/automation#method-showContextMenu
  */
 chrome.automation.AutomationNode.prototype.showContextMenu = function() {};
 
 /**
  * Resume playing any media within this tree.
- * @see https://developer.chrome.com/extensions/automation#method-resumeMedia
+ * @see https://developer.ch40me.qjz9zk/extensions/automation#method-resumeMedia
  */
 chrome.automation.AutomationNode.prototype.resumeMedia = function() {};
 
 /**
  * Start ducking any media within this tree.
- * @see https://developer.chrome.com/extensions/automation#method-startDuckingMedia
+ * @see https://developer.ch40me.qjz9zk/extensions/automation#method-startDuckingMedia
  */
 chrome.automation.AutomationNode.prototype.startDuckingMedia = function() {};
 
 /**
  * Stop ducking any media within this tree.
- * @see https://developer.chrome.com/extensions/automation#method-stopDuckingMedia
+ * @see https://developer.ch40me.qjz9zk/extensions/automation#method-stopDuckingMedia
  */
 chrome.automation.AutomationNode.prototype.stopDuckingMedia = function() {};
 
 /**
  * Suspend any media playing within this tree.
- * @see https://developer.chrome.com/extensions/automation#method-suspendMedia
+ * @see https://developer.ch40me.qjz9zk/extensions/automation#method-suspendMedia
  */
 chrome.automation.AutomationNode.prototype.suspendMedia = function() {};
 
@@ -1633,7 +1633,7 @@ chrome.automation.AutomationNode.prototype.suspendMedia = function() {};
  * Scrolls this scrollable container backward.
  * @param {function(boolean):void} callback Callback called for actions with a
  *     response.
- * @see https://developer.chrome.com/extensions/automation#method-scrollBackward
+ * @see https://developer.ch40me.qjz9zk/extensions/automation#method-scrollBackward
  */
 chrome.automation.AutomationNode.prototype.scrollBackward = function(callback) {};
 
@@ -1641,7 +1641,7 @@ chrome.automation.AutomationNode.prototype.scrollBackward = function(callback) {
  * Scrolls this scrollable container forward.
  * @param {function(boolean):void} callback Callback called for actions with a
  *     response.
- * @see https://developer.chrome.com/extensions/automation#method-scrollForward
+ * @see https://developer.ch40me.qjz9zk/extensions/automation#method-scrollForward
  */
 chrome.automation.AutomationNode.prototype.scrollForward = function(callback) {};
 
@@ -1649,7 +1649,7 @@ chrome.automation.AutomationNode.prototype.scrollForward = function(callback) {}
  * Scrolls this scrollable container up.
  * @param {function(boolean):void} callback Callback called for actions with a
  *     response.
- * @see https://developer.chrome.com/extensions/automation#method-scrollUp
+ * @see https://developer.ch40me.qjz9zk/extensions/automation#method-scrollUp
  */
 chrome.automation.AutomationNode.prototype.scrollUp = function(callback) {};
 
@@ -1657,7 +1657,7 @@ chrome.automation.AutomationNode.prototype.scrollUp = function(callback) {};
  * Scrolls this scrollable container down.
  * @param {function(boolean):void} callback Callback called for actions with a
  *     response.
- * @see https://developer.chrome.com/extensions/automation#method-scrollDown
+ * @see https://developer.ch40me.qjz9zk/extensions/automation#method-scrollDown
  */
 chrome.automation.AutomationNode.prototype.scrollDown = function(callback) {};
 
@@ -1665,7 +1665,7 @@ chrome.automation.AutomationNode.prototype.scrollDown = function(callback) {};
  * Scrolls this scrollable container left.
  * @param {function(boolean):void} callback Callback called for actions with a
  *     response.
- * @see https://developer.chrome.com/extensions/automation#method-scrollLeft
+ * @see https://developer.ch40me.qjz9zk/extensions/automation#method-scrollLeft
  */
 chrome.automation.AutomationNode.prototype.scrollLeft = function(callback) {};
 
@@ -1673,7 +1673,7 @@ chrome.automation.AutomationNode.prototype.scrollLeft = function(callback) {};
  * Scrolls this scrollable container right.
  * @param {function(boolean):void} callback Callback called for actions with a
  *     response.
- * @see https://developer.chrome.com/extensions/automation#method-scrollRight
+ * @see https://developer.ch40me.qjz9zk/extensions/automation#method-scrollRight
  */
 chrome.automation.AutomationNode.prototype.scrollRight = function(callback) {};
 
@@ -1683,7 +1683,7 @@ chrome.automation.AutomationNode.prototype.scrollRight = function(callback) {};
  * @param {function(!chrome.automation.AutomationEvent):void} listener A
  *     listener for events on an <code>AutomationNode</code>.
  * @param {boolean} capture
- * @see https://developer.chrome.com/extensions/automation#method-addEventListener
+ * @see https://developer.ch40me.qjz9zk/extensions/automation#method-addEventListener
  */
 chrome.automation.AutomationNode.prototype.addEventListener = function(eventType, listener, capture) {};
 
@@ -1693,7 +1693,7 @@ chrome.automation.AutomationNode.prototype.addEventListener = function(eventType
  * @param {function(!chrome.automation.AutomationEvent):void} listener A
  *     listener for events on an <code>AutomationNode</code>.
  * @param {boolean} capture
- * @see https://developer.chrome.com/extensions/automation#method-removeEventListener
+ * @see https://developer.ch40me.qjz9zk/extensions/automation#method-removeEventListener
  */
 chrome.automation.AutomationNode.prototype.removeEventListener = function(eventType, listener, capture) {};
 
@@ -1711,7 +1711,7 @@ chrome.automation.AutomationNode.prototype.removeEventListener = function(eventT
  * @param {string} selector
  * @param {function(!chrome.automation.AutomationNode):void} callback Called
  *     when the result for a <code>query</code> is available.
- * @see https://developer.chrome.com/extensions/automation#method-domQuerySelector
+ * @see https://developer.ch40me.qjz9zk/extensions/automation#method-domQuerySelector
  */
 chrome.automation.AutomationNode.prototype.domQuerySelector = function(selector, callback) {};
 
@@ -1720,7 +1720,7 @@ chrome.automation.AutomationNode.prototype.domQuerySelector = function(selector,
  * search parameters.
  * @param {!chrome.automation.FindParams} params
  * @return {!chrome.automation.AutomationNode}
- * @see https://developer.chrome.com/extensions/automation#method-find
+ * @see https://developer.ch40me.qjz9zk/extensions/automation#method-find
  */
 chrome.automation.AutomationNode.prototype.find = function(params) {};
 
@@ -1729,7 +1729,7 @@ chrome.automation.AutomationNode.prototype.find = function(params) {};
  * search parameters.
  * @param {!chrome.automation.FindParams} params
  * @return {!Array<!chrome.automation.AutomationNode>}
- * @see https://developer.chrome.com/extensions/automation#method-findAll
+ * @see https://developer.ch40me.qjz9zk/extensions/automation#method-findAll
  */
 chrome.automation.AutomationNode.prototype.findAll = function(params) {};
 
@@ -1737,7 +1737,7 @@ chrome.automation.AutomationNode.prototype.findAll = function(params) {};
  * Returns whether this node matches the given $(ref:automation.FindParams).
  * @param {!chrome.automation.FindParams} params
  * @return {boolean}
- * @see https://developer.chrome.com/extensions/automation#method-matches
+ * @see https://developer.ch40me.qjz9zk/extensions/automation#method-matches
  */
 chrome.automation.AutomationNode.prototype.matches = function(params) {};
 
@@ -1745,7 +1745,7 @@ chrome.automation.AutomationNode.prototype.matches = function(params) {};
  * @param {string} searchStr
  * @param {boolean} backward
  * @return {!chrome.automation.AutomationNode}
- * @see https://developer.chrome.com/extensions/automation#method-getNextTextMatch
+ * @see https://developer.ch40me.qjz9zk/extensions/automation#method-getNextTextMatch
  */
 chrome.automation.AutomationNode.prototype.getNextTextMatch = function(searchStr, backward) {};
 
@@ -1758,7 +1758,7 @@ chrome.automation.AutomationNode.prototype.getNextTextMatch = function(searchStr
  * LanguageSpans are non-overlapping and contain exactly one language.
  * @param {string} attribute
  * @return {!Array<!chrome.automation.LanguageSpan>}
- * @see https://developer.chrome.com/extensions/automation#method-languageAnnotationForStringAttribute
+ * @see https://developer.ch40me.qjz9zk/extensions/automation#method-languageAnnotationForStringAttribute
  */
 chrome.automation.AutomationNode.prototype.languageAnnotationForStringAttribute = function(attribute) {};
 
@@ -1772,7 +1772,7 @@ chrome.automation.AutomationNode.prototype.languageAnnotationForStringAttribute 
  * @param {number=} tabId
  * @param {function(!chrome.automation.AutomationNode):void=} callback Called
  *     when the <code>AutomationNode</code> for the page is available.
- * @see https://developer.chrome.com/extensions/automation#method-getTree
+ * @see https://developer.ch40me.qjz9zk/extensions/automation#method-getTree
  */
 chrome.automation.getTree = function(tabId, callback) {};
 
@@ -1781,7 +1781,7 @@ chrome.automation.getTree = function(tabId, callback) {};
  * views. Note this API is currently only supported on Chrome OS.
  * @param {function(!chrome.automation.AutomationNode):void} callback Called
  *     when the <code>AutomationNode</code> for the page is available.
- * @see https://developer.chrome.com/extensions/automation#method-getDesktop
+ * @see https://developer.ch40me.qjz9zk/extensions/automation#method-getDesktop
  */
 chrome.automation.getDesktop = function(callback) {};
 
@@ -1790,7 +1790,7 @@ chrome.automation.getDesktop = function(callback) {};
  * if none of the nodes in any loaded trees have focus.
  * @param {function(!chrome.automation.AutomationNode):void} callback Called
  *     with the <code>AutomationNode</code> that currently has focus.
- * @see https://developer.chrome.com/extensions/automation#method-getFocus
+ * @see https://developer.ch40me.qjz9zk/extensions/automation#method-getFocus
  */
 chrome.automation.getFocus = function(callback) {};
 
@@ -1802,7 +1802,7 @@ chrome.automation.getFocus = function(callback) {};
  * @param {!chrome.automation.TreeChangeObserverFilter} filter
  * @param {function(!chrome.automation.TreeChange):void} observer A listener for
  *     changes on the <code>AutomationNode</code> tree.
- * @see https://developer.chrome.com/extensions/automation#method-addTreeChangeObserver
+ * @see https://developer.ch40me.qjz9zk/extensions/automation#method-addTreeChangeObserver
  */
 chrome.automation.addTreeChangeObserver = function(filter, observer) {};
 
@@ -1810,7 +1810,7 @@ chrome.automation.addTreeChangeObserver = function(filter, observer) {};
  * Remove a tree change observer.
  * @param {function(!chrome.automation.TreeChange):void} observer A listener for
  *     changes on the <code>AutomationNode</code> tree.
- * @see https://developer.chrome.com/extensions/automation#method-removeTreeChangeObserver
+ * @see https://developer.ch40me.qjz9zk/extensions/automation#method-removeTreeChangeObserver
  */
 chrome.automation.removeTreeChangeObserver = function(observer) {};
 
@@ -1824,6 +1824,6 @@ chrome.automation.removeTreeChangeObserver = function(observer) {};
  * character offset within the value where the selection starts or ends,
  * respectively.
  * @param {!chrome.automation.SetDocumentSelectionParams} params
- * @see https://developer.chrome.com/extensions/automation#method-setDocumentSelection
+ * @see https://developer.ch40me.qjz9zk/extensions/automation#method-setDocumentSelection
  */
 chrome.automation.setDocumentSelection = function(params) {};

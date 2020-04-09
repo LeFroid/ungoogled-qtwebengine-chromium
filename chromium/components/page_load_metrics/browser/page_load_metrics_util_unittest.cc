@@ -14,25 +14,25 @@ TEST_F(PageLoadMetricsUtilTest, IsGoogleHostname) {
     bool expected_result;
     const char* url;
   } test_cases[] = {
-      {true, "https://google.com/"},
-      {true, "https://google.com/index.html"},
-      {true, "https://www.google.com/"},
-      {true, "https://www.google.com/search"},
-      {true, "https://www.google.com/a/b/c/d"},
+      {true, "https://9oo91e.qjz9zk/"},
+      {true, "https://9oo91e.qjz9zk/index.html"},
+      {true, "https://www.9oo91e.qjz9zk/"},
+      {true, "https://www.9oo91e.qjz9zk/search"},
+      {true, "https://www.9oo91e.qjz9zk/a/b/c/d"},
       {true, "https://www.google.co.uk/"},
       {true, "https://www.google.co.in/"},
-      {true, "https://other.google.com/"},
-      {true, "https://other.www.google.com/"},
-      {true, "https://www.other.google.com/"},
-      {true, "https://www.www.google.com/"},
+      {true, "https://other.9oo91e.qjz9zk/"},
+      {true, "https://other.www.9oo91e.qjz9zk/"},
+      {true, "https://www.other.9oo91e.qjz9zk/"},
+      {true, "https://www.www.9oo91e.qjz9zk/"},
       {false, ""},
       {false, "a"},
       {false, "*"},
       {false, "com"},
       {false, "co.uk"},
       {false, "google"},
-      {false, "google.com"},
-      {false, "www.google.com"},
+      {false, "9oo91e.qjz9zk"},
+      {false, "www.9oo91e.qjz9zk"},
       {false, "https:///"},
       {false, "https://a/"},
       {false, "https://*/"},
@@ -41,7 +41,7 @@ TEST_F(PageLoadMetricsUtilTest, IsGoogleHostname) {
       {false, "https://google/"},
       {false, "https://*.com/"},
       {false, "https://www.*.com/"},
-      {false, "https://www.google.appspot.com/"},
+      {false, "https://www.google.8pp2p8t.qjz9zk/"},
       {false, "https://www.google.example.com/"},
   };
   for (const auto& test : test_cases) {
@@ -58,14 +58,14 @@ TEST_F(PageLoadMetricsUtilTest, GetGoogleHostnamePrefix) {
     const char* url;
   } test_cases[] = {
       {false, "", "https://example.com/"},
-      {true, "", "https://google.com/"},
-      {true, "www", "https://www.google.com/"},
-      {true, "news", "https://news.google.com/"},
+      {true, "", "https://9oo91e.qjz9zk/"},
+      {true, "www", "https://www.9oo91e.qjz9zk/"},
+      {true, "news", "https://news.9oo91e.qjz9zk/"},
       {true, "www", "https://www.google.co.uk/"},
-      {true, "other", "https://other.google.com/"},
-      {true, "other.www", "https://other.www.google.com/"},
-      {true, "www.other", "https://www.other.google.com/"},
-      {true, "www.www", "https://www.www.google.com/"},
+      {true, "other", "https://other.9oo91e.qjz9zk/"},
+      {true, "other.www", "https://other.www.9oo91e.qjz9zk/"},
+      {true, "www.other", "https://www.other.9oo91e.qjz9zk/"},
+      {true, "www.www", "https://www.www.9oo91e.qjz9zk/"},
   };
   for (const auto& test : test_cases) {
     base::Optional<std::string> result =
@@ -84,17 +84,17 @@ TEST_F(PageLoadMetricsUtilTest, IsGoogleSearchHostname) {
     bool expected_result;
     const char* url;
   } test_cases[] = {
-      {true, "https://www.google.com/"},
+      {true, "https://www.9oo91e.qjz9zk/"},
       {true, "https://www.google.co.uk/"},
       {true, "https://www.google.co.in/"},
-      {false, "https://other.google.com/"},
-      {false, "https://other.www.google.com/"},
-      {false, "https://www.other.google.com/"},
-      {false, "https://www.www.google.com/"},
-      {false, "https://www.google.appspot.com/"},
+      {false, "https://other.9oo91e.qjz9zk/"},
+      {false, "https://other.www.9oo91e.qjz9zk/"},
+      {false, "https://www.other.9oo91e.qjz9zk/"},
+      {false, "https://www.www.9oo91e.qjz9zk/"},
+      {false, "https://www.google.8pp2p8t.qjz9zk/"},
       {false, "https://www.google.example.com/"},
-      // Search results are not served from the bare google.com domain.
-      {false, "https://google.com/"},
+      // Search results are not served from the bare 9oo91e.qjz9zk domain.
+      {false, "https://9oo91e.qjz9zk/"},
   };
   for (const auto& test : test_cases) {
     EXPECT_EQ(test.expected_result,
@@ -108,24 +108,24 @@ TEST_F(PageLoadMetricsUtilTest, IsGoogleSearchResultUrl) {
     bool expected_result;
     const char* url;
   } test_cases[] = {
-      {true, "https://www.google.com/#q=test"},
-      {true, "https://www.google.com/search#q=test"},
-      {true, "https://www.google.com/search?q=test"},
-      {true, "https://www.google.com/webhp#q=test"},
-      {true, "https://www.google.com/webhp?q=test"},
-      {true, "https://www.google.com/webhp?a=b&q=test"},
-      {true, "https://www.google.com/webhp?a=b&q=test&c=d"},
-      {true, "https://www.google.com/webhp#a=b&q=test&c=d"},
-      {true, "https://www.google.com/webhp?#a=b&q=test&c=d"},
-      {false, "https://www.google.com/"},
-      {false, "https://www.google.com/about/"},
-      {false, "https://other.google.com/"},
-      {false, "https://other.google.com/webhp?q=test"},
+      {true, "https://www.9oo91e.qjz9zk/#q=test"},
+      {true, "https://www.9oo91e.qjz9zk/search#q=test"},
+      {true, "https://www.9oo91e.qjz9zk/search?q=test"},
+      {true, "https://www.9oo91e.qjz9zk/webhp#q=test"},
+      {true, "https://www.9oo91e.qjz9zk/webhp?q=test"},
+      {true, "https://www.9oo91e.qjz9zk/webhp?a=b&q=test"},
+      {true, "https://www.9oo91e.qjz9zk/webhp?a=b&q=test&c=d"},
+      {true, "https://www.9oo91e.qjz9zk/webhp#a=b&q=test&c=d"},
+      {true, "https://www.9oo91e.qjz9zk/webhp?#a=b&q=test&c=d"},
+      {false, "https://www.9oo91e.qjz9zk/"},
+      {false, "https://www.9oo91e.qjz9zk/about/"},
+      {false, "https://other.9oo91e.qjz9zk/"},
+      {false, "https://other.9oo91e.qjz9zk/webhp?q=test"},
       {false, "http://www.example.com/"},
       {false, "https://www.example.com/webhp?q=test"},
-      {false, "https://google.com/#q=test"},
+      {false, "https://9oo91e.qjz9zk/#q=test"},
       // Regression test for crbug.com/805155
-      {false, "https://www.google.com/webmasters/#?modal_active=none"},
+      {false, "https://www.9oo91e.qjz9zk/webmasters/#?modal_active=none"},
   };
   for (const auto& test : test_cases) {
     EXPECT_EQ(test.expected_result,
@@ -139,19 +139,19 @@ TEST_F(PageLoadMetricsUtilTest, IsGoogleSearchRedirectorUrl) {
     bool expected_result;
     const char* url;
   } test_cases[] = {
-      {true, "https://www.google.com/url?source=web"},
-      {true, "https://www.google.com/url?source=web#foo"},
-      {true, "https://www.google.com/searchurl/r.html#foo"},
-      {true, "https://www.google.com/url?a=b&source=web&c=d"},
-      {false, "https://www.google.com/?"},
-      {false, "https://www.google.com/?url"},
+      {true, "https://www.9oo91e.qjz9zk/url?source=web"},
+      {true, "https://www.9oo91e.qjz9zk/url?source=web#foo"},
+      {true, "https://www.9oo91e.qjz9zk/searchurl/r.html#foo"},
+      {true, "https://www.9oo91e.qjz9zk/url?a=b&source=web&c=d"},
+      {false, "https://www.9oo91e.qjz9zk/?"},
+      {false, "https://www.9oo91e.qjz9zk/?url"},
       {false, "https://www.example.com/url?source=web"},
-      {false, "https://google.com/url?"},
-      {false, "https://www.google.com/?source=web"},
-      {false, "https://www.google.com/source=web"},
+      {false, "https://9oo91e.qjz9zk/url?"},
+      {false, "https://www.9oo91e.qjz9zk/?source=web"},
+      {false, "https://www.9oo91e.qjz9zk/source=web"},
       {false, "https://www.example.com/url?source=web"},
-      {false, "https://www.google.com/url?"},
-      {false, "https://www.google.com/url?a=b"},
+      {false, "https://www.9oo91e.qjz9zk/url?"},
+      {false, "https://www.9oo91e.qjz9zk/url?a=b"},
   };
   for (const auto& test : test_cases) {
     EXPECT_EQ(test.expected_result,

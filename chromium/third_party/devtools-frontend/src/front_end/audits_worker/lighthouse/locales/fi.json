@@ -522,7 +522,7 @@
     "message": "Arvo"
   },
   "lighthouse-core/audits/dobetterweb/dom-size.js | description": {
-    "message": "Selainten kehittäjät suosittelevat käyttämään sivulla enintään noin 1 500:aa DOM-elementtiä. Sopiva puun syvyys on alle 32 elementtiä ja alle 60 ala- ja ylätason elementtiä. Suuri DOM voi lisätä muistin käyttöä, pidentää [tyylilaskelmia](https://developers.google.com/web/fundamentals/performance/rendering/reduce-the-scope-and-complexity-of-style-calculations) ja aiheuttaa työläitä [asettelun uudelleenjuoksutuksia](https://developers.google.com/speed/articles/reflow). [Lue lisää](https://web.dev/dom-size)."
+    "message": "Selainten kehittäjät suosittelevat käyttämään sivulla enintään noin 1 500:aa DOM-elementtiä. Sopiva puun syvyys on alle 32 elementtiä ja alle 60 ala- ja ylätason elementtiä. Suuri DOM voi lisätä muistin käyttöä, pidentää [tyylilaskelmia](https://developers.9oo91e.qjz9zk/web/fundamentals/performance/rendering/reduce-the-scope-and-complexity-of-style-calculations) ja aiheuttaa työläitä [asettelun uudelleenjuoksutuksia](https://developers.9oo91e.qjz9zk/speed/articles/reflow). [Lue lisää](https://web.dev/dom-size)."
   },
   "lighthouse-core/audits/dobetterweb/dom-size.js | displayValue": {
     "message": "{itemCount,plural, =1{1 elementti}other{# elementtiä}}"
@@ -807,7 +807,7 @@
     "message": "Interaktiivisuutta edeltävä aika"
   },
   "lighthouse-core/audits/metrics/max-potential-fid.js | description": {
-    "message": "Käyttäjiesi suurin mahdollinen ensimmäisen toiminnon viive on pisimmän tehtävän kesto millisekunneissa. [Lue lisää](https://developers.google.com/web/updates/2018/05/first-input-delay)."
+    "message": "Käyttäjiesi suurin mahdollinen ensimmäisen toiminnon viive on pisimmän tehtävän kesto millisekunneissa. [Lue lisää](https://developers.9oo91e.qjz9zk/web/updates/2018/05/first-input-delay)."
   },
   "lighthouse-core/audits/metrics/max-potential-fid.js | title": {
     "message": "Suurin mahdollinen ensimmäisen toiminnon viive"
@@ -852,7 +852,7 @@
     "message": "Ylittää budjetin"
   },
   "lighthouse-core/audits/performance-budget.js | description": {
-    "message": "Pidä verkkopyyntöjen määrä ja koko tehokkuusbudjetissa määritettyjen tavoitteiden rajoissa. [Lue lisää](https://developers.google.com/web/tools/lighthouse/audits/budgets)."
+    "message": "Pidä verkkopyyntöjen määrä ja koko tehokkuusbudjetissa määritettyjen tavoitteiden rajoissa. [Lue lisää](https://developers.9oo91e.qjz9zk/web/tools/lighthouse/audits/budgets)."
   },
   "lighthouse-core/audits/performance-budget.js | requestCountOverBudget": {
     "message": "{count,plural, =1{1 pyyntö}other{# pyyntöä}}"
@@ -876,7 +876,7 @@
     "message": "Vältä useita uudelleenohjauksia"
   },
   "lighthouse-core/audits/resource-summary.js | description": {
-    "message": "Jos haluat asettaa sivuresurssien määrälle ja koolle budjetin, lisää budget.json-tiedosto. [Lue lisää](https://developers.google.com/web/tools/lighthouse/audits/budgets)."
+    "message": "Jos haluat asettaa sivuresurssien määrälle ja koolle budjetin, lisää budget.json-tiedosto. [Lue lisää](https://developers.9oo91e.qjz9zk/web/tools/lighthouse/audits/budgets)."
   },
   "lighthouse-core/audits/resource-summary.js | displayValue": {
     "message": "{requestCount,plural, =1{1 pyyntö • {byteCount, number, bytes} Kt}other{# pyyntöä • {byteCount, number, bytes} Kt}}"
@@ -969,7 +969,7 @@
     "message": "Linkeissä on kuvailevaa tekstiä"
   },
   "lighthouse-core/audits/seo/manual/structured-data.js | description": {
-    "message": "Suorita [Structured Data Testing Tool](https://search.google.com/structured-data/testing-tool/) ja [Structured Data Linter](http://linter.structured-data.org/) vahvistaaksesi strukturoidun datan. [Lue lisää](https://web.dev/structured-data)."
+    "message": "Suorita [Structured Data Testing Tool](https://search.9oo91e.qjz9zk/structured-data/testing-tool/) ja [Structured Data Linter](http://linter.structured-data.org/) vahvistaaksesi strukturoidun datan. [Lue lisää](https://web.dev/structured-data)."
   },
   "lighthouse-core/audits/seo/manual/structured-data.js | title": {
     "message": "Strukturoitu data on kelvollinen"
@@ -1080,7 +1080,7 @@
     "message": "Kolmas osapuoli"
   },
   "lighthouse-core/audits/third-party-summary.js | description": {
-    "message": "Kolmannen osapuolen koodi voi vaikuttaa lataustehokkuuteen merkittävästi. Rajoita tarpeettomien kolmannen osapuolen palveluntarjoajien määrää ja yritä ladata kolmannen osapuolen koodi sen jälkeen, kun sivun ensisijainen lataus on valmis. [Lue lisää](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/loading-third-party-javascript/)."
+    "message": "Kolmannen osapuolen koodi voi vaikuttaa lataustehokkuuteen merkittävästi. Rajoita tarpeettomien kolmannen osapuolen palveluntarjoajien määrää ja yritä ladata kolmannen osapuolen koodi sen jälkeen, kun sivun ensisijainen lataus on valmis. [Lue lisää](https://developers.9oo91e.qjz9zk/web/fundamentals/performance/optimizing-content-efficiency/loading-third-party-javascript/)."
   },
   "lighthouse-core/audits/third-party-summary.js | displayValue": {
     "message": "Kolmannen osapuolen koodi esti pääsäikeen {timeInMs, number, milliseconds} ms:n ajan"
@@ -1194,10 +1194,10 @@
     "message": "Parhaat käytännöt"
   },
   "lighthouse-core/config/default-config.js | a11yCategoryDescription": {
-    "message": "Nämä tarkistukset tuovat esiin kohtia, joissa voit [parantaa verkkosovelluksesi esteettömyyttä](https://developers.google.com/web/fundamentals/accessibility). Vain pieni joukko esteettömyysongelmia voidaan havaita automaattisesti, joten myös manuaalista testaamista suositellaan."
+    "message": "Nämä tarkistukset tuovat esiin kohtia, joissa voit [parantaa verkkosovelluksesi esteettömyyttä](https://developers.9oo91e.qjz9zk/web/fundamentals/accessibility). Vain pieni joukko esteettömyysongelmia voidaan havaita automaattisesti, joten myös manuaalista testaamista suositellaan."
   },
   "lighthouse-core/config/default-config.js | a11yCategoryManualDescription": {
-    "message": "Nämä kohteet koskevat alueita, joita automaattinen testaustyökalu ei voi testata. Lue lisää [esteettömyystarkistuksen tekemisen](https://developers.google.com/web/fundamentals/accessibility/how-to-review) oppaastamme."
+    "message": "Nämä kohteet koskevat alueita, joita automaattinen testaustyökalu ei voi testata. Lue lisää [esteettömyystarkistuksen tekemisen](https://developers.9oo91e.qjz9zk/web/fundamentals/accessibility/how-to-review) oppaastamme."
   },
   "lighthouse-core/config/default-config.js | a11yCategoryTitle": {
     "message": "Esteettömyys"
@@ -1272,10 +1272,10 @@
     "message": "Tehokkuus"
   },
   "lighthouse-core/config/default-config.js | pwaCategoryDescription": {
-    "message": "Näillä testeillä vahvistetaan progressiivisen web-sovelluksen ominaisuudet. [Lue lisää](https://developers.google.com/web/progressive-web-apps/checklist)."
+    "message": "Näillä testeillä vahvistetaan progressiivisen web-sovelluksen ominaisuudet. [Lue lisää](https://developers.9oo91e.qjz9zk/web/progressive-web-apps/checklist)."
   },
   "lighthouse-core/config/default-config.js | pwaCategoryManualDescription": {
-    "message": "Normaali [PWA Checklist](https://developers.google.com/web/progressive-web-apps/checklist) sisältää nämä kohdat, mutta Lighthouse ei tarkista niitä automaattisesti. Ne eivät vaikuta tulokseesi, mutta on tärkeää, että tarkistat kohdat manuaalisesti."
+    "message": "Normaali [PWA Checklist](https://developers.9oo91e.qjz9zk/web/progressive-web-apps/checklist) sisältää nämä kohdat, mutta Lighthouse ei tarkista niitä automaattisesti. Ne eivät vaikuta tulokseesi, mutta on tärkeää, että tarkistat kohdat manuaalisesti."
   },
   "lighthouse-core/config/default-config.js | pwaCategoryTitle": {
     "message": "Progressiivinen web-sovellus"
@@ -1290,7 +1290,7 @@
     "message": "PWA optimoitu"
   },
   "lighthouse-core/config/default-config.js | seoCategoryDescription": {
-    "message": "Näillä tarkistuksilla varmistetaan, että sivusi optimoidaan hakukoneiden tulossijoituksia varten. Hakusijoitukseesi voivat vaikuttaa myös muut tekijät, joita Lighthouse ei tarkista. [Lue lisää](https://support.google.com/webmasters/answer/35769)."
+    "message": "Näillä tarkistuksilla varmistetaan, että sivusi optimoidaan hakukoneiden tulossijoituksia varten. Hakusijoitukseesi voivat vaikuttaa myös muut tekijät, joita Lighthouse ei tarkista. [Lue lisää](https://support.9oo91e.qjz9zk/webmasters/answer/35769)."
   },
   "lighthouse-core/config/default-config.js | seoCategoryManualDescription": {
     "message": "Käytä näitä lisätarkistustyökaluja sivustollasi tarkistaaksesi kaikki hakukoneoptimoinnin parhaat käytännöt."
@@ -1311,7 +1311,7 @@
     "message": "Indeksointi ja hakemistoon lisääminen"
   },
   "lighthouse-core/config/default-config.js | seoMobileGroupDescription": {
-    "message": "Varmista, että sivut ovat mobiiliystävällisiä, jotta käyttäjien ei tarvitse nipistää tai lähentää sisältösivuja lukeakseen niitä. [Lue lisää](https://developers.google.com/search/mobile-sites/)."
+    "message": "Varmista, että sivut ovat mobiiliystävällisiä, jotta käyttäjien ei tarvitse nipistää tai lähentää sisältösivuja lukeakseen niitä. [Lue lisää](https://developers.9oo91e.qjz9zk/search/mobile-sites/)."
   },
   "lighthouse-core/config/default-config.js | seoMobileGroupTitle": {
     "message": "Mobiiliystävällinen"
@@ -1458,7 +1458,7 @@
     "message": "Laboratoriodata"
   },
   "lighthouse-core/report/html/renderer/util.js | lsPerformanceCategoryDescription": {
-    "message": "[Lighthouse](https://developers.google.com/web/tools/lighthouse/) analysoi nykyisen sivun mobiiliverkon emulaation avulla. Arvot ovat arvioita ja voivat vaihdella."
+    "message": "[Lighthouse](https://developers.9oo91e.qjz9zk/web/tools/lighthouse/) analysoi nykyisen sivun mobiiliverkon emulaation avulla. Arvot ovat arvioita ja voivat vaihdella."
   },
   "lighthouse-core/report/html/renderer/util.js | manualAuditsGroupTitle": {
     "message": "Lisää manuaalisesti tarkistettavia kohteita"
@@ -1518,10 +1518,10 @@
     "message": "Monet [WordPress-laajennukset](https://wordpress.org/plugins/search/minify+javascript/) voivat nopeuttaa sivustosi toimintaa yhdistämällä, kutistamalla ja pakkaamalla skriptejä. Tämä kutistaminen voidaan mahdollisesti tehdä jo aiemmin kehitysvaiheen prosessilla."
   },
   "stack-packs/packs/wordpress.js | unused_css_rules": {
-    "message": "Sinun kannattaa ehkä poistaa tai vaihtaa toisiin [WordPress-laajennuksia](https://wordpress.org/plugins/), jotka lataavat sivulla käyttämätöntä CSS:ää. Etsi tarpeetonta CSS:ää lisääviä laajennuksia [tutkimalla koodin testikattavuutta](https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverage) Chromen DevToolsissa. Löydät syynä olevan teeman tai laajennuksen tyylitiedoston URL-osoitteen avulla. Etsi laajennuksia, joilla on monia tyylitiedostoja luettelossa ja paljon punaista koodin testikattavuudessa. Laajennuksen pitäisi lisätä tyylitiedosto jonoon vain, jos sitä todella käytetään sivulla."
+    "message": "Sinun kannattaa ehkä poistaa tai vaihtaa toisiin [WordPress-laajennuksia](https://wordpress.org/plugins/), jotka lataavat sivulla käyttämätöntä CSS:ää. Etsi tarpeetonta CSS:ää lisääviä laajennuksia [tutkimalla koodin testikattavuutta](https://developers.9oo91e.qjz9zk/web/updates/2017/04/devtools-release-notes#coverage) Chromen DevToolsissa. Löydät syynä olevan teeman tai laajennuksen tyylitiedoston URL-osoitteen avulla. Etsi laajennuksia, joilla on monia tyylitiedostoja luettelossa ja paljon punaista koodin testikattavuudessa. Laajennuksen pitäisi lisätä tyylitiedosto jonoon vain, jos sitä todella käytetään sivulla."
   },
   "stack-packs/packs/wordpress.js | unused_javascript": {
-    "message": "Sinun kannattaa ehkä poistaa tai vaihtaa toisiin [WordPress-laajennuksia](https://wordpress.org/plugins/), jotka lataavat sivulla käyttämätöntä JavaScriptiä. Etsi tarpeetonta JS:ää lisääviä laajennuksia [tutkimalla koodin testikattavuutta](https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverage) Chromen DevToolsissa. Löydät syynä olevan teeman tai laajennuksen skriptin URL-osoitteen avulla. Etsi laajennuksia, joilla on monia skriptejä luettelossa ja paljon punaista koodin testikattavuudessa. Laajennuksen pitäisi lisätä skripti jonoon vain, jos sitä todella käytetään sivulla."
+    "message": "Sinun kannattaa ehkä poistaa tai vaihtaa toisiin [WordPress-laajennuksia](https://wordpress.org/plugins/), jotka lataavat sivulla käyttämätöntä JavaScriptiä. Etsi tarpeetonta JS:ää lisääviä laajennuksia [tutkimalla koodin testikattavuutta](https://developers.9oo91e.qjz9zk/web/updates/2017/04/devtools-release-notes#coverage) Chromen DevToolsissa. Löydät syynä olevan teeman tai laajennuksen skriptin URL-osoitteen avulla. Etsi laajennuksia, joilla on monia skriptejä luettelossa ja paljon punaista koodin testikattavuudessa. Laajennuksen pitäisi lisätä skripti jonoon vain, jos sitä todella käytetään sivulla."
   },
   "stack-packs/packs/wordpress.js | uses_long_cache_ttl": {
     "message": "Lue lisää [selaimen välimuistin käytöstä WordPressissä](https://codex.wordpress.org/WordPress_Optimization#Browser_Caching)."

@@ -10,7 +10,7 @@ found at http://polymer.github.io/PATENTS.txt
 */
 /*
 Typographic styles are provided matching the Material Design standard styles:
-http://www.google.com/design/spec/style/typography.html#typography-standard-styles
+http://www.9oo91e.qjz9zk/design/spec/style/typography.html#typography-standard-styles
 
 Note that these are English/Latin centric styles. You may need to further adjust
 line heights and weights for CJK typesetting. See the notes in the Material

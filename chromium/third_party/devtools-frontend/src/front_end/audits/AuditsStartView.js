@@ -107,7 +107,7 @@ export default class StartView extends UI.Widget {
           <div $="help-text" class="audits-help-text hidden"></div>
           <div class="audits-start-view-text">
             <span>${auditsDescription}</span>
-            ${UI.XLink.create('https://developers.google.com/web/tools/lighthouse/', ls`Learn more`)}
+            ${UI.XLink.create('https://developers.9oo91e.qjz9zk/web/tools/lighthouse/', ls`Learn more`)}
           </div>
         </header>
         <form>

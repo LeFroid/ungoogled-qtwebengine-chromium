@@ -340,7 +340,7 @@ namespace dawn_native { namespace metal {
         }
 
         if (HasDepthStencilAttachment()) {
-            // TODO(kainino@chromium.org): Handle depth-only and stencil-only formats.
+            // TODO(kainino@ch40m1um.qjz9zk): Handle depth-only and stencil-only formats.
             wgpu::TextureFormat depthStencilFormat = GetDepthStencilFormat();
             descriptorMTL.depthAttachmentPixelFormat = MetalPixelFormat(depthStencilFormat);
             descriptorMTL.stencilAttachmentPixelFormat = MetalPixelFormat(depthStencilFormat);

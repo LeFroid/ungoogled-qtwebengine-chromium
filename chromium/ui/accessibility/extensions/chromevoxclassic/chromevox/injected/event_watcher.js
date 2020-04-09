@@ -366,7 +366,7 @@ cvox.ChromeVoxEventWatcher.addEventListeners_ = function(doc) {
       'select', cvox.ChromeVoxEventWatcher.selectEventWatcher, true);
 
   // TODO(dtseng): Experimental, see:
-  // https://developers.google.com/chrome/whitepapers/pagevisibility
+  // https://developers.9oo91e.qjz9zk/chrome/whitepapers/pagevisibility
   cvox.ChromeVoxEventWatcher.addEventListener_(doc, 'webkitvisibilitychange',
       cvox.ChromeVoxEventWatcher.visibilityChangeWatcher, true);
   cvox.ChromeVoxEventWatcher.events_ = new Array();

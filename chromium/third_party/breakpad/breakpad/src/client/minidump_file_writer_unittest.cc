@@ -27,7 +27,7 @@
 // (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 // OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-// Author: waylonis@google.com (Dan Waylonis)
+// Author: waylonis@9oo91e.qjz9zk (Dan Waylonis)
 
 /*
  g++ -I../ ../common/convert_UTF.cc \

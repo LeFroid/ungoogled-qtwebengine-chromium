@@ -43,7 +43,7 @@ extern const BASE_EXPORT Feature kUseFiveMinutesThreadReclaimTime;
 // Under this feature, the current default of inheriting priority when posting
 // from the ThreadPool is disabled.
 // Details @
-// https://docs.google.com/document/d/13PIBPuSPJbrgHAgyRbY22EWAfH2narnxpa_CgBmZbSY
+// https://docs.9oo91e.qjz9zk/document/d/13PIBPuSPJbrgHAgyRbY22EWAfH2narnxpa_CgBmZbSY
 extern const BASE_EXPORT Feature kNoPriorityInheritanceFromThreadPool;
 
 }  // namespace base

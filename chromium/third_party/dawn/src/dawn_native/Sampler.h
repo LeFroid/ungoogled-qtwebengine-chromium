@@ -44,7 +44,7 @@ namespace dawn_native {
       private:
         SamplerBase(DeviceBase* device, ObjectBase::ErrorTag tag);
 
-        // TODO(cwallez@chromium.org): Store a crypto hash of the items instead?
+        // TODO(cwallez@ch40m1um.qjz9zk): Store a crypto hash of the items instead?
         wgpu::AddressMode mAddressModeU;
         wgpu::AddressMode mAddressModeV;
         wgpu::AddressMode mAddressModeW;

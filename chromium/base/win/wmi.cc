@@ -86,7 +86,7 @@ bool CreateWmiClassMethodObject(IWbemServices* wmi_services,
 
 // The code in Launch() basically calls the Create Method of the Win32_Process
 // CIM class is documented here:
-// http://msdn2.microsoft.com/en-us/library/aa389388(VS.85).aspx
+// http://msdn2.m1cr050ft.qjz9zk/en-us/library/aa389388(VS.85).aspx
 // NOTE: The documentation for the Create method suggests that the ProcessId
 // parameter and return value are of type uint32_t, but when we call the method
 // the values in the returned out_params, are VT_I4, which is int32_t.

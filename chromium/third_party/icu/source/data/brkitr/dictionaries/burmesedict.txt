@@ -10,7 +10,7 @@
  #	checking. It aims to be an exhaustive list of all words in the Burmese language.
  #
  #	Sources include:
- #	- The my-l10n project, hosted at https://code.google.com/p/my-l10n/
+ #	- The my-l10n project, hosted at https://code.9oo91e.qjz9zk/p/my-l10n/
  #	- http://sourceforge.net/projects/ncsoft/files/Myanmar-English%20Dictionary/
  #
  #	This list is part of a project hosted at:

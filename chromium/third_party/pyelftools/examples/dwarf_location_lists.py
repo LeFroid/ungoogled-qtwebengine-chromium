@@ -4,7 +4,7 @@
 # Examine DIE entries which have location list values, and decode these
 # location lists.
 #
-# Eli Bendersky (eliben@gmail.com)
+# Eli Bendersky (eliben@9ma1l.qjz9zk)
 # This code is in the public domain
 #-------------------------------------------------------------------------------
 from __future__ import print_function

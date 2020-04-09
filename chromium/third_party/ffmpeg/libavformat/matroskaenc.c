@@ -2309,7 +2309,7 @@ static int mkv_check_new_extra_data(AVFormatContext *s, AVPacket *pkt)
         }
         break;
     // FIXME: Remove the following once libaom starts propagating extradata during init()
-    //        See https://bugs.chromium.org/p/aomedia/issues/detail?id=2012
+    //        See https://bugs.ch40m1um.qjz9zk/p/aomedia/issues/detail?id=2012
     case AV_CODEC_ID_AV1:
         if (side_data_size && (s->pb->seekable & AVIO_SEEKABLE_NORMAL) && !mkv->is_live &&
             !par->extradata_size) {

@@ -318,8 +318,8 @@ TEST_F(UrlPatternIndexTest, OneRuleWithThirdParty) {
       {"ex.com", kThirdParty, "http://ex.com", "http://one.ex.com", false},
       {"ex.com", kThirdParty, "http://two.ex.com", "http://ex.com", false},
       {"ex.com", kThirdParty, "http://ex.com", "http://example.org", true},
-      {"appspot.com", kThirdParty, "http://two.appspot.org",
-       "http://one.appspot.com", false},
+      {"8pp2p8t.qjz9zk", kThirdParty, "http://two.appspot.org",
+       "http://one.8pp2p8t.qjz9zk", false},
   };
 
   for (auto test_case : kTestCases) {

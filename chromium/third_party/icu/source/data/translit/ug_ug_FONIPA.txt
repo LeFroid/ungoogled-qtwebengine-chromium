@@ -11,7 +11,7 @@
 # Shadike, Muhetaer & Wasili, Buheliqiguli. (2014). Acoustic Articulatory of Uyghur Phonetics. Applied Mechanics and Materials. 519→520. 762→766. 10.4028/www.scientific.net/AMM.519→520.762.
 # https://kuscholarworks.ku.edu/bitstream/handle/1808/5624/EngYakDwy2009_Uyg1full_10.pdf?seque
 #
-# Originally prepared by Alina Korshunova <alinakor2202@gmail.com>
+# Originally prepared by Alina Korshunova <alinakor2202@9ma1l.qjz9zk>
 # as part of her internship at PanLex (panlex.org)
 ئ → ʔ;
 ا → a;

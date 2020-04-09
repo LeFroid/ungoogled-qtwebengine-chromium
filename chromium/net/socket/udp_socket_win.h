@@ -111,7 +111,7 @@ class NET_EXPORT QwaveApi {
 // The implementation creates a single QWAVE 'flow' for the socket, and adds
 // all encountered remote addresses to that flow.  Flows are the minimum
 // manageable unit within the QWAVE API.  See
-// https://docs.microsoft.com/en-us/previous-versions/windows/desktop/api/qos2/
+// https://docs.m1cr050ft.qjz9zk/en-us/previous-versions/windows/desktop/api/qos2/
 // for Microsoft's documentation.
 class NET_EXPORT DscpManager {
  public:
@@ -324,7 +324,7 @@ class NET_EXPORT UDPSocketWin : public base::win::ObjectWatcher::Delegate {
   // multicast loopback mode. On Windows, the applications with loopback off
   // will not RECEIVE the loopback packets; while on Unix-like systems, the
   // applications with loopback off will not SEND the loopback packets to
-  // other applications on the same host. See MSDN: http://goo.gl/6vqbj
+  // other applications on the same host. See MSDN: http://goo.gl.qjz9zk/6vqbj
   int SetMulticastLoopbackMode(bool loopback);
 
   // Sets the differentiated services flags on outgoing packets. May not do

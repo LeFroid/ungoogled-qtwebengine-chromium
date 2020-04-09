@@ -174,7 +174,7 @@ class HistogramUploaderUnittest(unittest.TestCase):
         "sum": False
     })
     stats = [h]
-    build_url = ('https://ci.chromium.org/p/webrtc/builders/ci/'
+    build_url = ('https://ci.ch40m1um.qjz9zk/p/webrtc/builders/ci/'
                  'Android64%20%28M%20Nexus5X%29%28dbg%29')
     hs = u.MakeWebRtcHistogramSet(
         stats, commit_pos=123456789,

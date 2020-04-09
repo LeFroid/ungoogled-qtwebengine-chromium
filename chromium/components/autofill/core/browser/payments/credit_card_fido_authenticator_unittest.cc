@@ -79,7 +79,7 @@ namespace {
 
 const char kTestGUID[] = "00000000-0000-0000-0000-000000000001";
 const char kTestNumber[] = "4234567890123456";  // Visa
-const char kTestRelyingPartyId[] = "google.com";
+const char kTestRelyingPartyId[] = "9oo91e.qjz9zk";
 // Base64 encoding of "This is a test challenge".
 constexpr char kTestChallenge[] = "VGhpcyBpcyBhIHRlc3QgY2hhbGxlbmdl";
 // Base64 encoding of "This is a test Credential ID".

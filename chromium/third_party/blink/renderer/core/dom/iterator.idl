@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-// http://people.mozilla.org/~jorendorff/es6-draft.html#sec-iterator-interface
+// http://people.m0z111a.qjz9zk/~jorendorff/es6-draft.html#sec-iterator-interface
 
 [
     NoInterfaceObject

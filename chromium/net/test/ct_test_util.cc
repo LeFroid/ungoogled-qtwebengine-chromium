@@ -27,7 +27,7 @@ namespace ct {
 namespace {
 
 // The following test vectors are from
-// http://code.google.com/p/certificate-transparency
+// http://code.9oo91e.qjz9zk/p/certificate-transparency
 
 const char kDefaultDerCert[] =
     "308202ca30820233a003020102020106300d06092a864886f70d01010505003055310b3009"
@@ -104,7 +104,7 @@ const char kTestSCTPrecertSignatureData[] =
     "2100e4edc0db3ac572b1e2f5e8ab6a680653987dcf41027dfeffa105519d89edbf08";
 
 // A well-formed OCSP response with fake SCT contents. Does not come from
-// http://code.google.com/p/certificate-transparency, does not pertain to any
+// http://code.9oo91e.qjz9zk/p/certificate-transparency, does not pertain to any
 // of the test certs here, and is only used to test extracting the extension
 // contents from the response.
 const char kFakeOCSPResponse[] =

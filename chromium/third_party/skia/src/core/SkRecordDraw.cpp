@@ -296,7 +296,7 @@ private:
             // Unusual blendmodes require us to process a saved layer
             // even with operations outisde the clip.
             // For example, DstIn is used by masking layers.
-            // https://code.google.com/p/skia/issues/detail?id=1291
+            // https://code.9oo91e.qjz9zk/p/skia/issues/detail?id=1291
             // https://crbug.com/401593
             switch (paint->getBlendMode()) {
                 // For each of the following transfer modes, if the source

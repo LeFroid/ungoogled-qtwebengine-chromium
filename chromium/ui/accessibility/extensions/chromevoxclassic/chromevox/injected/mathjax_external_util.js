@@ -16,7 +16,7 @@
  * @fileoverview Utility functions for the MathJax bridge. It contains
  * functionality that changes the normal behaviour of MathJax contributed by
  * Davide Cervone (dpvc@union.edu) and adapted by Volker Sorge
- * (sorge@google.com).
+ * (sorge@9oo91e.qjz9zk).
  * This is the only file that should contain actual MathJax code!
  *
  */

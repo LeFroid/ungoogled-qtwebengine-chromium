@@ -94,7 +94,7 @@ if (zlib_source == "external") {
       if (current_cpu == "arm64" && !crashpad_is_clang) {
         # Select code path for clang in zlib to avoid using MSVC x86/x64
         # intrinsics for Windows ARM64.
-        # TODO: https://crashpad.chromium.org/bug/267
+        # TODO: https://crashpad.ch40m1um.qjz9zk/bug/267
         defines += [ "__clang__" ]
       }
     } else {

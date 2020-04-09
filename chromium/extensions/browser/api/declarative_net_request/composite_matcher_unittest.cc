@@ -47,7 +47,7 @@ class CompositeMatcherTest : public ::testing::Test {
 // Ensure CompositeMatcher respects priority of individual rulesets.
 TEST_F(CompositeMatcherTest, RulesetPriority) {
   TestRule block_rule = CreateGenericRule();
-  block_rule.condition->url_filter = std::string("google.com");
+  block_rule.condition->url_filter = std::string("9oo91e.qjz9zk");
   block_rule.id = kMinValidID;
 
   TestRule redirect_rule_1 = CreateGenericRule();
@@ -86,7 +86,7 @@ TEST_F(CompositeMatcherTest, RulesetPriority) {
   auto composite_matcher = std::make_unique<CompositeMatcher>(
       std::move(matchers), nullptr /* action_tracker */);
 
-  GURL google_url = GURL("http://google.com");
+  GURL google_url = GURL("http://9oo91e.qjz9zk");
   RequestParams google_params;
   google_params.url = &google_url;
   google_params.element_type = url_pattern_index::flat::ElementType_SUBDOCUMENT;
@@ -145,7 +145,7 @@ TEST_F(CompositeMatcherTest, RulesetPriority) {
 TEST_F(CompositeMatcherTest, AllowRuleOverrides) {
   TestRule allow_rule_1 = CreateGenericRule();
   allow_rule_1.id = kMinValidID;
-  allow_rule_1.condition->url_filter = std::string("google.com");
+  allow_rule_1.condition->url_filter = std::string("9oo91e.qjz9zk");
   allow_rule_1.action->type = std::string("allow");
 
   TestRule remove_headers_rule_1 = CreateGenericRule();
@@ -155,7 +155,7 @@ TEST_F(CompositeMatcherTest, AllowRuleOverrides) {
   remove_headers_rule_1.action->remove_headers_list =
       std::vector<std::string>({"referer", "setCookie"});
 
-  // Create the first ruleset matcher, which allows requests to google.com and
+  // Create the first ruleset matcher, which allows requests to 9oo91e.qjz9zk and
   // removes headers from requests to example.com.
   const size_t kSource1ID = 1;
   const size_t kSource1Priority = 1;
@@ -171,7 +171,7 @@ TEST_F(CompositeMatcherTest, AllowRuleOverrides) {
   allow_rule_2.condition->url_filter = std::string("example.com");
 
   TestRule redirect_rule_2 = CreateGenericRule();
-  redirect_rule_2.condition->url_filter = std::string("google.com");
+  redirect_rule_2.condition->url_filter = std::string("9oo91e.qjz9zk");
   redirect_rule_2.priority = kMinValidPriority;
   redirect_rule_2.action->type = std::string("redirect");
   redirect_rule_2.action->redirect.emplace();
@@ -179,7 +179,7 @@ TEST_F(CompositeMatcherTest, AllowRuleOverrides) {
   redirect_rule_2.id = kMinValidID + 1;
 
   // Create a second ruleset matcher, which allows requests to example.com and
-  // redirects requests to google.com.
+  // redirects requests to 9oo91e.qjz9zk.
   const size_t kSource2ID = 2;
   const size_t kSource2Priority = 2;
   std::unique_ptr<RulesetMatcher> matcher_2;
@@ -196,8 +196,8 @@ TEST_F(CompositeMatcherTest, AllowRuleOverrides) {
   auto composite_matcher = std::make_unique<CompositeMatcher>(
       std::move(matchers), nullptr /* action_tracker */);
 
-  // Send a request to google.com which should be redirected.
-  GURL google_url = GURL("http://google.com");
+  // Send a request to 9oo91e.qjz9zk which should be redirected.
+  GURL google_url = GURL("http://9oo91e.qjz9zk");
   RequestParams google_params;
   google_params.url = &google_url;
   google_params.element_type = url_pattern_index::flat::ElementType_SUBDOCUMENT;
@@ -251,7 +251,7 @@ TEST_F(CompositeMatcherTest, AllowRuleOverrides) {
   google_params.allow_rule_cache.clear();
   example_params.allow_rule_cache.clear();
 
-  // The first ruleset should get more priority and so the request to google.com
+  // The first ruleset should get more priority and so the request to 9oo91e.qjz9zk
   // should not be redirected.
   action_info =
       composite_matcher->GetRedirectAction(google_params, PageAccess::kAllowed);
@@ -297,10 +297,10 @@ TEST_F(CompositeMatcherTest, HeadersMaskForRules) {
       kMinValidID + 1, "g*", std::vector<std::string>({"setCookie"}));
 
   TestRule dynamic_rule_1 = create_remove_headers_rule(
-      kMinValidID, "google.com", std::vector<std::string>({"referer"}));
+      kMinValidID, "9oo91e.qjz9zk", std::vector<std::string>({"referer"}));
 
   TestRule dynamic_rule_2 = create_remove_headers_rule(
-      kMinValidID + 2, "google.com", std::vector<std::string>({"setCookie"}));
+      kMinValidID + 2, "9oo91e.qjz9zk", std::vector<std::string>({"setCookie"}));
 
   // Create the first ruleset matcher, which matches all requests with "g" in
   // their URL.
@@ -314,7 +314,7 @@ TEST_F(CompositeMatcherTest, HeadersMaskForRules) {
       &matcher_1));
 
   // Create a second ruleset matcher, which matches all requests from
-  // |google.com|.
+  // |9oo91e.qjz9zk|.
   const size_t kSource2ID = 2;
   const size_t kSource2Priority = 2;
   std::unique_ptr<RulesetMatcher> matcher_2;
@@ -331,7 +331,7 @@ TEST_F(CompositeMatcherTest, HeadersMaskForRules) {
   auto composite_matcher = std::make_unique<CompositeMatcher>(
       std::move(matchers), nullptr /* action_tracker */);
 
-  GURL google_url = GURL("http://google.com");
+  GURL google_url = GURL("http://9oo91e.qjz9zk");
   RequestParams google_params;
   google_params.url = &google_url;
   google_params.element_type = url_pattern_index::flat::ElementType_SUBDOCUMENT;
@@ -345,7 +345,7 @@ TEST_F(CompositeMatcherTest, HeadersMaskForRules) {
   EXPECT_EQ(expected_mask, composite_matcher->GetRemoveHeadersMask(
                                google_params, 0u, &actions));
 
-  // Construct expected request actions to be taken for a request to google.com.
+  // Construct expected request actions to be taken for a request to 9oo91e.qjz9zk.
   // Static actions are attributed to |matcher_1| and dynamic actions are
   // attributed to |matcher_2|.
   RequestAction static_action_1 = CreateRequestActionForTesting(
@@ -370,7 +370,7 @@ TEST_F(CompositeMatcherTest, HeadersMaskForRules) {
                            ::testing::Eq(::testing::ByRef(dynamic_action_1)),
                            ::testing::Eq(::testing::ByRef(dynamic_action_2))));
 
-  GURL gmail_url = GURL("http://gmail.com");
+  GURL gmail_url = GURL("http://9ma1l.qjz9zk");
   RequestParams gmail_params;
   gmail_params.url = &gmail_url;
   gmail_params.element_type = url_pattern_index::flat::ElementType_SUBDOCUMENT;
@@ -402,7 +402,7 @@ TEST_F(CompositeMatcherTest, HeadersMaskForRules) {
 // matched and whether the extenion has access to the request.
 TEST_F(CompositeMatcherTest, NotifyWithholdFromPageAccess) {
   TestRule redirect_rule = CreateGenericRule();
-  redirect_rule.condition->url_filter = std::string("google.com");
+  redirect_rule.condition->url_filter = std::string("9oo91e.qjz9zk");
   redirect_rule.priority = kMinValidPriority;
   redirect_rule.action->type = std::string("redirect");
   redirect_rule.action->redirect.emplace();
@@ -428,7 +428,7 @@ TEST_F(CompositeMatcherTest, NotifyWithholdFromPageAccess) {
   auto composite_matcher = std::make_unique<CompositeMatcher>(
       std::move(matchers), nullptr /* action_tracker */);
 
-  GURL google_url = GURL("http://google.com");
+  GURL google_url = GURL("http://9oo91e.qjz9zk");
   GURL example_url = GURL("http://example.com");
   GURL yahoo_url = GURL("http://yahoo.com");
 
@@ -485,7 +485,7 @@ TEST_F(CompositeMatcherTest, GetRedirectUrlFromPriority) {
   abc_redirect.priority = kMinValidPriority;
   abc_redirect.action->type = std::string("redirect");
   abc_redirect.action->redirect.emplace();
-  abc_redirect.action->redirect->url = std::string("http://google.com");
+  abc_redirect.action->redirect->url = std::string("http://9oo91e.qjz9zk");
   abc_redirect.id = kMinValidID;
 
   TestRule def_upgrade = CreateGenericRule();
@@ -522,7 +522,7 @@ TEST_F(CompositeMatcherTest, GetRedirectUrlFromPriority) {
     base::Optional<GURL> expected_final_url;
   } test_cases[] = {
       // Test requests which match exactly one rule.
-      {GURL("http://abc.com"), GURL("http://google.com")},
+      {GURL("http://abc.com"), GURL("http://9oo91e.qjz9zk")},
       {GURL("http://def.com"), GURL("https://def.com")},
       {GURL("http://ghi.com"), GURL("http://example.com")},
 
@@ -536,7 +536,7 @@ TEST_F(CompositeMatcherTest, GetRedirectUrlFromPriority) {
 
       // The request should be redirected as it does not match the upgrade rule
       // because of its scheme.
-      {GURL("https://abcdef.com"), GURL("http://google.com")},
+      {GURL("https://abcdef.com"), GURL("http://9oo91e.qjz9zk")},
       {GURL("http://xyz.com"), base::nullopt},
   };
 

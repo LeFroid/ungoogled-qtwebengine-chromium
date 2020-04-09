@@ -181,7 +181,7 @@ class HistoryServiceTest : public testing::Test {
 TEST_F(HistoryServiceTest, AddPage) {
   ASSERT_TRUE(history_service_.get());
   // Add the page once from a child frame.
-  const GURL test_url("http://www.google.com/");
+  const GURL test_url("http://www.9oo91e.qjz9zk/");
   history_service_->AddPage(
       test_url, base::Time::Now(), nullptr, 0, GURL(), history::RedirectList(),
       ui::PAGE_TRANSITION_MANUAL_SUBFRAME, history::SOURCE_BROWSED, false);
@@ -402,7 +402,7 @@ TEST_F(HistoryServiceTest, Typed) {
   ASSERT_TRUE(history_service_.get());
 
   // Add the page once as typed.
-  const GURL test_url("http://www.google.com/");
+  const GURL test_url("http://www.9oo91e.qjz9zk/");
   history_service_->AddPage(
       test_url, base::Time::Now(), context_id, 0, GURL(),
       history::RedirectList(), ui::PAGE_TRANSITION_TYPED,
@@ -451,7 +451,7 @@ TEST_F(HistoryServiceTest, SetTitle) {
   ASSERT_TRUE(history_service_.get());
 
   // Add a URL.
-  const GURL existing_url("http://www.google.com/");
+  const GURL existing_url("http://www.9oo91e.qjz9zk/");
   history_service_->AddPage(
       existing_url, base::Time::Now(), history::SOURCE_BROWSED);
 
@@ -464,7 +464,7 @@ TEST_F(HistoryServiceTest, SetTitle) {
   EXPECT_EQ(existing_title, query_url_result_.row.title());
 
   // set a title on a nonexistent page
-  const GURL nonexistent_url("http://news.google.com/");
+  const GURL nonexistent_url("http://news.9oo91e.qjz9zk/");
   const base::string16 nonexistent_title = base::UTF8ToUTF16("Google News");
   history_service_->SetPageTitle(nonexistent_url, nonexistent_title);
 
@@ -479,11 +479,11 @@ TEST_F(HistoryServiceTest, SetTitle) {
 TEST_F(HistoryServiceTest, MostVisitedURLs) {
   ASSERT_TRUE(history_service_.get());
 
-  const GURL url0("http://www.google.com/url0/");
-  const GURL url1("http://www.google.com/url1/");
-  const GURL url2("http://www.google.com/url2/");
-  const GURL url3("http://www.google.com/url3/");
-  const GURL url4("http://www.google.com/url4/");
+  const GURL url0("http://www.9oo91e.qjz9zk/url0/");
+  const GURL url1("http://www.9oo91e.qjz9zk/url1/");
+  const GURL url2("http://www.9oo91e.qjz9zk/url2/");
+  const GURL url3("http://www.9oo91e.qjz9zk/url3/");
+  const GURL url4("http://www.9oo91e.qjz9zk/url4/");
 
   const ContextID context_id = reinterpret_cast<ContextID>(1);
 
@@ -666,16 +666,16 @@ TEST_F(HistoryServiceTest, CountMonthlyVisitedHosts) {
   HistoryService* history = history_service_.get();
   ASSERT_TRUE(history);
 
-  AddPageInThePast(history, "http://www.google.com/", 0);
+  AddPageInThePast(history, "http://www.9oo91e.qjz9zk/", 0);
   EXPECT_EQ(1, GetMonthlyHostCountHelper(history, &tracker_));
 
-  AddPageInThePast(history, "http://www.google.com/foo", 1);
-  AddPageInThePast(history, "https://www.google.com/foo", 5);
-  AddPageInThePast(history, "https://www.gmail.com/foo", 10);
+  AddPageInThePast(history, "http://www.9oo91e.qjz9zk/foo", 1);
+  AddPageInThePast(history, "https://www.9oo91e.qjz9zk/foo", 5);
+  AddPageInThePast(history, "https://www.9ma1l.qjz9zk/foo", 10);
   // Expect 2 because only host part of URL counts.
   EXPECT_EQ(2, GetMonthlyHostCountHelper(history, &tracker_));
 
-  AddPageInThePast(history, "https://www.gmail.com/foo", 31);
+  AddPageInThePast(history, "https://www.9ma1l.qjz9zk/foo", 31);
   // Count should not change since URL added is older than a month.
   EXPECT_EQ(2, GetMonthlyHostCountHelper(history, &tracker_));
 

@@ -515,7 +515,7 @@ IN_PROC_BROWSER_TEST_F(BrowserActionApiTest, TabSpecificBrowserActionState) {
   EXPECT_EQ("hi!", GetBrowserActionsBar()->GetTooltip(0));
 }
 
-// http://code.google.com/p/chromium/issues/detail?id=70829
+// http://code.9oo91e.qjz9zk/p/chromium/issues/detail?id=70829
 // Mac used to be ok, but then mac 10.5 started failing too. =(
 IN_PROC_BROWSER_TEST_F(BrowserActionApiTest, DISABLED_BrowserActionPopup) {
   ASSERT_TRUE(
@@ -984,7 +984,7 @@ IN_PROC_BROWSER_TEST_F(BrowserActionApiTest, BrowserActionWithRectangularIcon) {
 // Regression test for crbug.com/584747.
 IN_PROC_BROWSER_TEST_F(BrowserActionApiTest, BrowserActionOpenPopupOnPopup) {
   // Open a new web popup window.
-  NavigateParams params(browser(), GURL("http://www.google.com/"),
+  NavigateParams params(browser(), GURL("http://www.9oo91e.qjz9zk/"),
                         ui::PAGE_TRANSITION_LINK);
   params.disposition = WindowOpenDisposition::NEW_POPUP;
   params.window_action = NavigateParams::SHOW_WINDOW;

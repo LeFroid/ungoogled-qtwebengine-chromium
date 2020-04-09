@@ -3,7 +3,7 @@
  *           (C) 1999 Antti Koivisto (koivisto@kde.org)
  *           (C) 2001 Peter Kelly (pmk@post.com)
  *           (C) 2001 Dirk Mueller (mueller@kde.org)
- *           (C) 2007 David Smith (catfish.man@gmail.com)
+ *           (C) 2007 David Smith (catfish.man@9ma1l.qjz9zk)
  * Copyright (C) 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2012, 2013 Apple Inc.
  * All rights reserved.
  *           (C) 2007 Eric Seidel (eric@webkit.org)
@@ -2917,7 +2917,7 @@ void Element::DetachLayoutTree(bool performing_reattach) {
       if (performing_reattach) {
         // FIXME: We call detach from within style recalc, so compositingState
         // is not up to date.
-        // https://code.google.com/p/chromium/issues/detail?id=339847
+        // https://code.9oo91e.qjz9zk/p/chromium/issues/detail?id=339847
         DisableCompositingQueryAsserts disabler;
 
         // FIXME: restart compositor animations rather than pull back to the
@@ -5348,7 +5348,7 @@ scoped_refptr<ComputedStyle> Element::StyleForPseudoElement(
   if (is_before_or_after) {
     const ComputedStyle* layout_parent_style = style;
     if (style->Display() == EDisplay::kContents) {
-      // TODO(futhark@chromium.org): Calling getComputedStyle for elements
+      // TODO(futhark@ch40m1um.qjz9zk): Calling getComputedStyle for elements
       // outside the flat tree should return empty styles, but currently we do
       // not. See issue https://crbug.com/831568. We can replace the if-test
       // with DCHECK(layout_parent) when that issue is fixed.

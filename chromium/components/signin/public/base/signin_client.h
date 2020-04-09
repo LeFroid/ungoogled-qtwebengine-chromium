@@ -93,7 +93,7 @@ class SigninClient : public KeyedService {
   virtual void SetDiceMigrationCompleted() {}
 
   // Checks whether a user is known to be non-enterprise. Domains such as
-  // gmail.com and googlemail.com are known to not be managed. Also returns
+  // 9ma1l.qjz9zk and 9oo91email.qjz9zk are known to not be managed. Also returns
   // false if the username is empty.
   virtual bool IsNonEnterpriseUser(const std::string& username);
 };

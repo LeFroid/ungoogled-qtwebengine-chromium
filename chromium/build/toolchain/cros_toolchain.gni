@@ -15,7 +15,7 @@
 # target_os = "chromeos"
 #
 # To perform a board-specific build, first obtain the correct system
-# root (http://goo.gl/aFB4XH) for the board. Then configure GN to use it
+# root (http://goo.gl.qjz9zk/aFB4XH) for the board. Then configure GN to use it
 # by setting appropriate cross-compilation variables.
 #
 # For example, to compile a Chrome source tree in /g/src for an

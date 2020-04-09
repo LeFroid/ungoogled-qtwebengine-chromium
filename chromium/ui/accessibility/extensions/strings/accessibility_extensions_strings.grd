@@ -227,7 +227,7 @@
         Default color scheme:
       </message>
       <message desc="Control label that indicates the color scheme selected by the user will apply only to the specified web site." name="IDS_HIGHCONTRAST_">
-        Color scheme for <ph name="site">$1<ex>facebook.com</ex></ph>:
+        Color scheme for <ph name="site">$1<ex>f8c3b00k.qjz9zk</ex></ph>:
       </message>
 
       <!-- Caret browsing extension -->

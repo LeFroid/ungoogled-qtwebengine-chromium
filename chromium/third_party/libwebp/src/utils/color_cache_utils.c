@@ -9,7 +9,7 @@
 //
 // Color Cache for WebP Lossless
 //
-// Author: Jyrki Alakuijala (jyrki@google.com)
+// Author: Jyrki Alakuijala (jyrki@9oo91e.qjz9zk)
 
 #include <assert.h>
 #include <stdlib.h>

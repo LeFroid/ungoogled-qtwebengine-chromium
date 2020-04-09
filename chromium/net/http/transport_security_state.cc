@@ -231,7 +231,7 @@ bool AddHash(const char* sha256_hash, HashValueVector* out) {
   return true;
 }
 
-// Converts |hostname| from dotted form ("www.google.com") to the form
+// Converts |hostname| from dotted form ("www.9oo91e.qjz9zk") to the form
 // used in DNS: "\x03www\x06google\x03com", lowercases that, and returns
 // the result.
 std::string CanonicalizeHost(const std::string& host) {

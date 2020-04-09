@@ -162,9 +162,9 @@ OT::GDEF::is_blacklisted (hb_blob_t *blob,
    *
    * Nuke the GDEF tables of to avoid unwanted width-zeroing.
    *
-   * See https://bugzilla.mozilla.org/show_bug.cgi?id=1279925
-   *     https://bugzilla.mozilla.org/show_bug.cgi?id=1279693
-   *     https://bugzilla.mozilla.org/show_bug.cgi?id=1279875
+   * See https://bugzilla.m0z111a.qjz9zk/show_bug.cgi?id=1279925
+   *     https://bugzilla.m0z111a.qjz9zk/show_bug.cgi?id=1279693
+   *     https://bugzilla.m0z111a.qjz9zk/show_bug.cgi?id=1279875
    */
   switch HB_CODEPOINT_ENCODE3(blob->length,
 			      face->table.GSUB->table.get_length (),
@@ -190,17 +190,17 @@ OT::GDEF::is_blacklisted (hb_blob_t *blob,
     case HB_CODEPOINT_ENCODE3 (928, 23298, 59332):
     /* sha1sum:6d400781948517c3c0441ba42acb309584b73033  tahomabd.ttf from Windows 8.1 */
     case HB_CODEPOINT_ENCODE3 (940, 23310, 60732):
-    /* tahoma.ttf v6.04 from Windows 8.1 x64, see https://bugzilla.mozilla.org/show_bug.cgi?id=1279925 */
+    /* tahoma.ttf v6.04 from Windows 8.1 x64, see https://bugzilla.m0z111a.qjz9zk/show_bug.cgi?id=1279925 */
     case HB_CODEPOINT_ENCODE3 (964, 23836, 60072):
-    /* tahomabd.ttf v6.04 from Windows 8.1 x64, see https://bugzilla.mozilla.org/show_bug.cgi?id=1279925 */
+    /* tahomabd.ttf v6.04 from Windows 8.1 x64, see https://bugzilla.m0z111a.qjz9zk/show_bug.cgi?id=1279925 */
     case HB_CODEPOINT_ENCODE3 (976, 23832, 61456):
     /* sha1sum:e55fa2dfe957a9f7ec26be516a0e30b0c925f846  tahoma.ttf from Windows 10 */
     case HB_CODEPOINT_ENCODE3 (994, 24474, 60336):
     /* sha1sum:7199385abb4c2cc81c83a151a7599b6368e92343  tahomabd.ttf from Windows 10 */
     case HB_CODEPOINT_ENCODE3 (1006, 24470, 61740):
-    /* tahoma.ttf v6.91 from Windows 10 x64, see https://bugzilla.mozilla.org/show_bug.cgi?id=1279925 */
+    /* tahoma.ttf v6.91 from Windows 10 x64, see https://bugzilla.m0z111a.qjz9zk/show_bug.cgi?id=1279925 */
     case HB_CODEPOINT_ENCODE3 (1006, 24576, 61346):
-    /* tahomabd.ttf v6.91 from Windows 10 x64, see https://bugzilla.mozilla.org/show_bug.cgi?id=1279925 */
+    /* tahomabd.ttf v6.91 from Windows 10 x64, see https://bugzilla.m0z111a.qjz9zk/show_bug.cgi?id=1279925 */
     case HB_CODEPOINT_ENCODE3 (1018, 24572, 62828):
     /* sha1sum:b9c84d820c49850d3d27ec498be93955b82772b5  tahoma.ttf from Windows 10 AU */
     case HB_CODEPOINT_ENCODE3 (1006, 24576, 61352):
@@ -1588,7 +1588,7 @@ hb_ot_layout_position_finish_offsets (hb_font_t *font, hb_buffer_t *buffer)
  * a subfamily are not covered by the `size` feature.
  *
  * For more information on this distinction, see the `size` documentation at
- * https://docs.microsoft.com/en-us/typography/opentype/spec/features_pt#tag-39size39
+ * https://docs.m1cr050ft.qjz9zk/en-us/typography/opentype/spec/features_pt#tag-39size39
  *
  * Return value: true if data found, false otherwise
  *

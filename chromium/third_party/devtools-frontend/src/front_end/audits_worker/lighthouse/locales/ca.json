@@ -522,7 +522,7 @@
     "message": "Valor"
   },
   "lighthouse-core/audits/dobetterweb/dom-size.js | description": {
-    "message": "Els enginyers de navegadors recomanen que les pàgines continguin menys d'uns 1.500 elements DOM. La situació ideal és una profunditat d'arbre de menys de 32 elements i de menys de 60 elements superiors o secundaris. Un DOM gran pot augmentar l'ús de la memòria, provocar [càlculs d'estil](https://developers.google.com/web/fundamentals/performance/rendering/reduce-the-scope-and-complexity-of-style-calculations) més llargs i produir [reinicis de reflux del disseny](https://developers.google.com/speed/articles/reflow) costosos. [Obtén més informació](https://web.dev/dom-size)."
+    "message": "Els enginyers de navegadors recomanen que les pàgines continguin menys d'uns 1.500 elements DOM. La situació ideal és una profunditat d'arbre de menys de 32 elements i de menys de 60 elements superiors o secundaris. Un DOM gran pot augmentar l'ús de la memòria, provocar [càlculs d'estil](https://developers.9oo91e.qjz9zk/web/fundamentals/performance/rendering/reduce-the-scope-and-complexity-of-style-calculations) més llargs i produir [reinicis de reflux del disseny](https://developers.9oo91e.qjz9zk/speed/articles/reflow) costosos. [Obtén més informació](https://web.dev/dom-size)."
   },
   "lighthouse-core/audits/dobetterweb/dom-size.js | displayValue": {
     "message": "{itemCount,plural, =1{Un element}other{# elements}}"
@@ -807,7 +807,7 @@
     "message": "Temps fins que és interactiva"
   },
   "lighthouse-core/audits/metrics/max-potential-fid.js | description": {
-    "message": "El retard potencial màxim respecte a la primera interacció que els usuaris es poden trobar és la durada, en mil·lisegons, de la tasca més llarga. [Obtén més informació](https://developers.google.com/web/updates/2018/05/first-input-delay)."
+    "message": "El retard potencial màxim respecte a la primera interacció que els usuaris es poden trobar és la durada, en mil·lisegons, de la tasca més llarga. [Obtén més informació](https://developers.9oo91e.qjz9zk/web/updates/2018/05/first-input-delay)."
   },
   "lighthouse-core/audits/metrics/max-potential-fid.js | title": {
     "message": "Retard potencial màxim respecte a la primera interacció"
@@ -852,7 +852,7 @@
     "message": "Per sobre del pressupost"
   },
   "lighthouse-core/audits/performance-budget.js | description": {
-    "message": "Manté la quantitat i la mida de les sol·licituds de xarxa ajustades als objectius establerts al pressupost de rendiment que s'ha proporcionat. [Obtén més informació](https://developers.google.com/web/tools/lighthouse/audits/budgets)."
+    "message": "Manté la quantitat i la mida de les sol·licituds de xarxa ajustades als objectius establerts al pressupost de rendiment que s'ha proporcionat. [Obtén més informació](https://developers.9oo91e.qjz9zk/web/tools/lighthouse/audits/budgets)."
   },
   "lighthouse-core/audits/performance-budget.js | requestCountOverBudget": {
     "message": "{count,plural, =1{1 sol·licitud}other{# sol·licituds}}"
@@ -876,7 +876,7 @@
     "message": "Evita les redireccions múltiples a pàgines"
   },
   "lighthouse-core/audits/resource-summary.js | description": {
-    "message": "Per definir els pressupostos de la quantitat i la mida dels recursos de la pàgina, afegeix un fitxer budget.json. [Obtén més informació](https://developers.google.com/web/tools/lighthouse/audits/budgets)."
+    "message": "Per definir els pressupostos de la quantitat i la mida dels recursos de la pàgina, afegeix un fitxer budget.json. [Obtén més informació](https://developers.9oo91e.qjz9zk/web/tools/lighthouse/audits/budgets)."
   },
   "lighthouse-core/audits/resource-summary.js | displayValue": {
     "message": "{requestCount,plural, =1{1 sol·licitud • {byteCount, number, bytes} kB}other{# sol·licituds • {byteCount, number, bytes} kB}}"
@@ -969,7 +969,7 @@
     "message": "Els enllaços tenen text descriptiu"
   },
   "lighthouse-core/audits/seo/manual/structured-data.js | description": {
-    "message": "Executa l'[eina de proves de dades estructurades](https://search.google.com/structured-data/testing-tool/) i l'[eina Structured Data Linter](http://linter.structured-data.org/) per validar aquest tipus de dades. [Obtén més informació](https://web.dev/structured-data)."
+    "message": "Executa l'[eina de proves de dades estructurades](https://search.9oo91e.qjz9zk/structured-data/testing-tool/) i l'[eina Structured Data Linter](http://linter.structured-data.org/) per validar aquest tipus de dades. [Obtén més informació](https://web.dev/structured-data)."
   },
   "lighthouse-core/audits/seo/manual/structured-data.js | title": {
     "message": "Les dades estructurades són vàlides"
@@ -1080,7 +1080,7 @@
     "message": "Tercers"
   },
   "lighthouse-core/audits/third-party-summary.js | description": {
-    "message": "El codi de tercers pot afectar significativament el rendiment de la càrrega. Limita el nombre de proveïdors externs redundants i prova de carregar codi de tercers quan la càrrega principal de la pàgina ha finalitzat. [Obtén més informació](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/loading-third-party-javascript/)."
+    "message": "El codi de tercers pot afectar significativament el rendiment de la càrrega. Limita el nombre de proveïdors externs redundants i prova de carregar codi de tercers quan la càrrega principal de la pàgina ha finalitzat. [Obtén més informació](https://developers.9oo91e.qjz9zk/web/fundamentals/performance/optimizing-content-efficiency/loading-third-party-javascript/)."
   },
   "lighthouse-core/audits/third-party-summary.js | displayValue": {
     "message": "El codi de tercers ha bloquejat el fil principal durant {timeInMs, number, milliseconds} ms"
@@ -1194,10 +1194,10 @@
     "message": "Pràctiques recomanades"
   },
   "lighthouse-core/config/default-config.js | a11yCategoryDescription": {
-    "message": "Aquestes comprovacions destaquen les oportunitats per [millorar l'accessibilitat de l'aplicació web](https://developers.google.com/web/fundamentals/accessibility). Només poden detectar un subconjunt de problemes d'accessibilitat automàticament, de manera que et recomanem que també hi facis proves manuals."
+    "message": "Aquestes comprovacions destaquen les oportunitats per [millorar l'accessibilitat de l'aplicació web](https://developers.9oo91e.qjz9zk/web/fundamentals/accessibility). Només poden detectar un subconjunt de problemes d'accessibilitat automàticament, de manera que et recomanem que també hi facis proves manuals."
   },
   "lighthouse-core/config/default-config.js | a11yCategoryManualDescription": {
-    "message": "Aquests elements tracten àrees que les eines de proves automatitzades no poden cobrir. Obtén més informació a la nostra guia sobre [com es duen a terme ressenyes d'accessibilitat](https://developers.google.com/web/fundamentals/accessibility/how-to-review)."
+    "message": "Aquests elements tracten àrees que les eines de proves automatitzades no poden cobrir. Obtén més informació a la nostra guia sobre [com es duen a terme ressenyes d'accessibilitat](https://developers.9oo91e.qjz9zk/web/fundamentals/accessibility/how-to-review)."
   },
   "lighthouse-core/config/default-config.js | a11yCategoryTitle": {
     "message": "Accessibilitat"
@@ -1272,10 +1272,10 @@
     "message": "Rendiment"
   },
   "lighthouse-core/config/default-config.js | pwaCategoryDescription": {
-    "message": "Aquestes validacions verifiquen els aspectes de les aplicacions web progressives. [Obtén més informació](https://developers.google.com/web/progressive-web-apps/checklist)."
+    "message": "Aquestes validacions verifiquen els aspectes de les aplicacions web progressives. [Obtén més informació](https://developers.9oo91e.qjz9zk/web/progressive-web-apps/checklist)."
   },
   "lighthouse-core/config/default-config.js | pwaCategoryManualDescription": {
-    "message": "La [llista de comprovació de referència per a aplicacions web progressives](https://developers.google.com/web/progressive-web-apps/checklist) requereix aquestes validacions, però Lighthouse no les verifica automàticament. Tot i que no afecten la teva puntuació, és important que les verifiquis manualment."
+    "message": "La [llista de comprovació de referència per a aplicacions web progressives](https://developers.9oo91e.qjz9zk/web/progressive-web-apps/checklist) requereix aquestes validacions, però Lighthouse no les verifica automàticament. Tot i que no afecten la teva puntuació, és important que les verifiquis manualment."
   },
   "lighthouse-core/config/default-config.js | pwaCategoryTitle": {
     "message": "Aplicació web progressiva"
@@ -1290,7 +1290,7 @@
     "message": "Optimitzat per a PWA"
   },
   "lighthouse-core/config/default-config.js | seoCategoryDescription": {
-    "message": "Aquestes comprovacions garanteixen que la pàgina estigui optimitzada per classificar els resultats del motor de cerca. Hi ha factors addicionals que Lighthouse no comprova i que és possible que afectin la teva classificació a les cerques. [Obtén més informació](https://support.google.com/webmasters/answer/35769)."
+    "message": "Aquestes comprovacions garanteixen que la pàgina estigui optimitzada per classificar els resultats del motor de cerca. Hi ha factors addicionals que Lighthouse no comprova i que és possible que afectin la teva classificació a les cerques. [Obtén més informació](https://support.9oo91e.qjz9zk/webmasters/answer/35769)."
   },
   "lighthouse-core/config/default-config.js | seoCategoryManualDescription": {
     "message": "Executa aquestes validacions addicionals al lloc web per comprovar les pràctiques addicionals recomanades per a SEO."
@@ -1311,7 +1311,7 @@
     "message": "Rastreig i indexació"
   },
   "lighthouse-core/config/default-config.js | seoMobileGroupDescription": {
-    "message": "Comprova que les pàgines estiguin adaptades per a mòbils, de manera que els usuaris no hagin de pinçar o ampliar les pàgines de contingut per poder llegir-les. [Obtén més informació](https://developers.google.com/search/mobile-sites/)."
+    "message": "Comprova que les pàgines estiguin adaptades per a mòbils, de manera que els usuaris no hagin de pinçar o ampliar les pàgines de contingut per poder llegir-les. [Obtén més informació](https://developers.9oo91e.qjz9zk/search/mobile-sites/)."
   },
   "lighthouse-core/config/default-config.js | seoMobileGroupTitle": {
     "message": "Adaptació per a mòbils"
@@ -1458,7 +1458,7 @@
     "message": "Dades de laboratori"
   },
   "lighthouse-core/report/html/renderer/util.js | lsPerformanceCategoryDescription": {
-    "message": "Anàlisi amb [Lighthouse](https://developers.google.com/web/tools/lighthouse/) de la pàgina actual mitjançant una xarxa mòbil emulada. Els valors són estimacions i poden variar."
+    "message": "Anàlisi amb [Lighthouse](https://developers.9oo91e.qjz9zk/web/tools/lighthouse/) de la pàgina actual mitjançant una xarxa mòbil emulada. Els valors són estimacions i poden variar."
   },
   "lighthouse-core/report/html/renderer/util.js | manualAuditsGroupTitle": {
     "message": "Elements addicionals per comprovar manualment"
@@ -1518,10 +1518,10 @@
     "message": "Hi ha diversos [connectors de WordPress](https://wordpress.org/plugins/search/minify+javascript/) que poden accelerar el teu lloc web. Per fer-ho, concatenen, redueixen i comprimeixen els scripts. També et recomanem que utilitzis un procés de compilació per fer aquesta minimització de manera anticipada, si és possible."
   },
   "stack-packs/packs/wordpress.js | unused_css_rules": {
-    "message": "Pots reduir o canviar el nombre de [connectors de WordPress](https://wordpress.org/plugins/) que carreguen fitxers CSS no utilitzats a la pàgina. Per identificar els connectors que afegeixen fitxers CSS externs, prova d'executar la [cobertura de codi](https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverage) a Chrome DevTools. Pots identificar el tema o el connector responsable a partir de l'URL del full d'estil. Cerca connectors que tinguin molts fulls d'estil a la llista amb molt vermell a la cobertura de codi. Un connector només hauria de tenir un full d'estil a la cua si es fa servir a la pàgina."
+    "message": "Pots reduir o canviar el nombre de [connectors de WordPress](https://wordpress.org/plugins/) que carreguen fitxers CSS no utilitzats a la pàgina. Per identificar els connectors que afegeixen fitxers CSS externs, prova d'executar la [cobertura de codi](https://developers.9oo91e.qjz9zk/web/updates/2017/04/devtools-release-notes#coverage) a Chrome DevTools. Pots identificar el tema o el connector responsable a partir de l'URL del full d'estil. Cerca connectors que tinguin molts fulls d'estil a la llista amb molt vermell a la cobertura de codi. Un connector només hauria de tenir un full d'estil a la cua si es fa servir a la pàgina."
   },
   "stack-packs/packs/wordpress.js | unused_javascript": {
-    "message": "Pots reduir o canviar el nombre de [connectors de WordPress](https://wordpress.org/plugins/) que carreguen fitxers JavaScript no utilitzats a la pàgina. Per identificar els connectors que afegeixen fitxers JavaScript externs, prova d'executar la [cobertura de codi](https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverage) a Chrome DevTools. Pots identificar el tema o el connector responsable a partir de l'URL de l'script. Cerca connectors que tinguin molts scripts a la llista amb molt vermell a la cobertura de codi. Un connector només hauria de tenir un script a la cua si es fa servir a la pàgina."
+    "message": "Pots reduir o canviar el nombre de [connectors de WordPress](https://wordpress.org/plugins/) que carreguen fitxers JavaScript no utilitzats a la pàgina. Per identificar els connectors que afegeixen fitxers JavaScript externs, prova d'executar la [cobertura de codi](https://developers.9oo91e.qjz9zk/web/updates/2017/04/devtools-release-notes#coverage) a Chrome DevTools. Pots identificar el tema o el connector responsable a partir de l'URL de l'script. Cerca connectors que tinguin molts scripts a la llista amb molt vermell a la cobertura de codi. Un connector només hauria de tenir un script a la cua si es fa servir a la pàgina."
   },
   "stack-packs/packs/wordpress.js | uses_long_cache_ttl": {
     "message": "Obtén informació sobre la [memòria cau del navegador a WordPress](https://codex.wordpress.org/WordPress_Optimization#Browser_Caching)."

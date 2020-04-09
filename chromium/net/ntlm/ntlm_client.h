@@ -6,10 +6,10 @@
 // Specification version 28.0 [1], an unofficial NTLM reference [2], and a
 // blog post describing Extended Protection for Authentication [3].
 //
-// [1] https://msdn.microsoft.com/en-us/library/cc236621.aspx
+// [1] https://msdn.m1cr050ft.qjz9zk/en-us/library/cc236621.aspx
 // [2] http://davenport.sourceforge.net/ntlm.html
 // [3]
-// https://blogs.msdn.microsoft.com/openspecification/2013/03/26/ntlm-and-channel-binding-hash-aka-extended-protection-for-authentication/
+// https://blogs.msdn.m1cr050ft.qjz9zk/openspecification/2013/03/26/ntlm-and-channel-binding-hash-aka-extended-protection-for-authentication/
 
 #ifndef NET_BASE_NTLM_CLIENT_H_
 #define NET_BASE_NTLM_CLIENT_H_
@@ -35,7 +35,7 @@ namespace ntlm {
 // negotiated.
 //
 // [1] -
-// https://support.microsoft.com/en-us/help/968389/extended-protection-for-authentication
+// https://support.m1cr050ft.qjz9zk/en-us/help/968389/extended-protection-for-authentication
 class NET_EXPORT_PRIVATE NtlmClient {
  public:
   // Pass feature flags to enable/disable NTLMv2 and additional NTLMv2
@@ -85,7 +85,7 @@ class NET_EXPORT_PRIVATE NtlmClient {
   // |server_challenge_message| is the full content of the challenge message
   // sent by the server.
   //
-  // [1] - https://technet.microsoft.com/en-us/library/jj852267(v=ws.11).aspx
+  // [1] - https://technet.m1cr050ft.qjz9zk/en-us/library/jj852267(v=ws.11).aspx
   std::vector<uint8_t> GenerateAuthenticateMessage(
       const base::string16& domain,
       const base::string16& username,

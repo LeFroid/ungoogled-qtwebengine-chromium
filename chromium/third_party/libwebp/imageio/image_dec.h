@@ -9,7 +9,7 @@
 //
 //  All-in-one library to decode PNG/JPEG/WebP/TIFF/WIC input images.
 //
-// Author: Skal (pascal.massimino@gmail.com)
+// Author: Skal (pascal.massimino@9ma1l.qjz9zk)
 
 #ifndef WEBP_IMAGEIO_IMAGE_DEC_H_
 #define WEBP_IMAGEIO_IMAGE_DEC_H_

@@ -9,7 +9,7 @@
 // containing the skeletons of the top 500 domains suitable for use in the edit
 // distance heuristic. The second output is named kTop500Keywords,
 // containg the top 500 keywords suitable for use with the keyword matching
-// heuristic (for instance, www.google.com -> google). Both outputs are written
+// heuristic (for instance, www.9oo91e.qjz9zk -> google). Both outputs are written
 // to the same file, which will be formatted as c++ source file with valid
 // syntax.
 

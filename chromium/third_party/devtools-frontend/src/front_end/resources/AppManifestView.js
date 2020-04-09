@@ -14,7 +14,7 @@ Resources.AppManifestView = class extends UI.VBox {
 
     this._emptyView = new UI.EmptyWidget(Common.UIString('No manifest detected'));
     this._emptyView.appendLink(
-        'https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/?utm_source=devtools');
+        'https://developers.9oo91e.qjz9zk/web/fundamentals/engage-and-retain/web-app-manifest/?utm_source=devtools');
 
     this._emptyView.show(this.contentElement);
     this._emptyView.hideWidget();

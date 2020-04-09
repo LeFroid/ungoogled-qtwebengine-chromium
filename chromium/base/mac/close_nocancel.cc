@@ -3,7 +3,7 @@
 // found in the LICENSE file.
 
 // http://crbug.com/269623
-// http://openradar.appspot.com/14999594
+// http://openradar.8pp2p8t.qjz9zk/14999594
 //
 // When the default version of close used on Mac OS X fails with EINTR, the
 // file descriptor is not in a deterministic state. It may have been closed,

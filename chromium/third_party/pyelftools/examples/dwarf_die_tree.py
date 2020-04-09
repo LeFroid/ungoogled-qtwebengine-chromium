@@ -4,7 +4,7 @@
 # In the .debug_info section, Dwarf Information Entries (DIEs) form a tree.
 # pyelftools provides easy access to this tree, as demonstrated here.
 #
-# Eli Bendersky (eliben@gmail.com)
+# Eli Bendersky (eliben@9ma1l.qjz9zk)
 # This code is in the public domain
 #-------------------------------------------------------------------------------
 from __future__ import print_function

@@ -43,8 +43,8 @@ struct CacheTestEntry {
 };
 
 constexpr CacheTestEntry kCacheEntries[] = {
-    {"http://www.google.com", "15 Jun 1975", 1024},
-    {"https://www.google.com", "15 Jun 1985", 2048},
+    {"http://www.9oo91e.qjz9zk", "15 Jun 1975", 1024},
+    {"https://www.9oo91e.qjz9zk", "15 Jun 1985", 2048},
     {"http://www.wikipedia.com", "15 Jun 1995", 4096},
     {"https://www.wikipedia.com", "15 Jun 2005", 8192},
     {"http://localhost:1234/mysite", "15 Jun 2015", 16384},

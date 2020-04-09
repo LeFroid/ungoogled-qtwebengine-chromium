@@ -107,7 +107,7 @@ void CpuId(int eax, int ecx, int* cpu_info) {
 //    mov        xcr0, eax
 //  }
 // For VS2013 and earlier 32 bit, the _xgetbv(0) optimizer produces bad code.
-// https://code.google.com/p/libyuv/issues/detail?id=529
+// https://code.9oo91e.qjz9zk/p/libyuv/issues/detail?id=529
 #if defined(_M_IX86) && (_MSC_VER < 1900)
 #pragma optimize("g", off)
 #endif

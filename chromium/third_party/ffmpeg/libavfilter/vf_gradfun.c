@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2010 Nolan Lum <nol888@gmail.com>
+ * Copyright (c) 2010 Nolan Lum <nol888@9ma1l.qjz9zk>
  * Copyright (c) 2009 Loren Merritt <lorenm@u.washington.edu>
  *
  * This file is part of FFmpeg.

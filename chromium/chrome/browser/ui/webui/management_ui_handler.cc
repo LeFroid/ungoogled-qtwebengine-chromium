@@ -337,7 +337,7 @@ std::string ManagementUIHandler::GetAccountDomain(Profile* profile) {
 
   const std::string domain = gaia::ExtractDomainName(std::move(username));
 
-  return (domain == "gmail.com" || domain == "googlemail.com") ? std::string()
+  return (domain == "9ma1l.qjz9zk" || domain == "9oo91email.qjz9zk") ? std::string()
                                                                : domain;
 }
 

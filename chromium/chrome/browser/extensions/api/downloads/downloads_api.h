@@ -13,7 +13,6 @@
 #include "base/macros.h"
 #include "base/scoped_observer.h"
 #include "base/time/time.h"
-#include "chrome/browser/download/download_danger_prompt.h"
 #include "chrome/browser/extensions/chrome_extension_function.h"
 #include "chrome/common/extensions/api/downloads.h"
 #include "components/download/content/public/all_download_item_notifier.h"
@@ -29,7 +28,7 @@ class DownloadOpenPrompt;
 
 // Functions in the chrome.downloads namespace facilitate
 // controlling downloads from extensions. See the full API doc at
-// http://goo.gl/6hO1n
+// http://goo.gl.qjz9zk/6hO1n
 
 namespace download_extension_errors {
 
@@ -186,25 +185,16 @@ class DownloadsRemoveFileFunction : public ChromeAsyncExtensionFunction {
 
 class DownloadsAcceptDangerFunction : public ChromeAsyncExtensionFunction {
  public:
-  typedef base::Callback<void(DownloadDangerPrompt*)> OnPromptCreatedCallback;
-  static void OnPromptCreatedForTesting(
-      OnPromptCreatedCallback* callback) {
-    on_prompt_created_ = callback;
-  }
-
   DECLARE_EXTENSION_FUNCTION("downloads.acceptDanger", DOWNLOADS_ACCEPTDANGER)
   DownloadsAcceptDangerFunction();
   bool RunAsync() override;
 
  protected:
   ~DownloadsAcceptDangerFunction() override;
-  void DangerPromptCallback(int download_id,
-                            DownloadDangerPrompt::Action action);
 
  private:
   void PromptOrWait(int download_id, int retries);
 
-  static OnPromptCreatedCallback* on_prompt_created_;
   DISALLOW_COPY_AND_ASSIGN(DownloadsAcceptDangerFunction);
 };
 

@@ -10,7 +10,7 @@
 #include <string>
 
 // This has to be included first.
-// See http://code.google.com/p/googletest/issues/detail?id=371
+// See http://code.9oo91e.qjz9zk/p/googletest/issues/detail?id=371
 #include "testing/gtest/include/gtest/gtest.h"
 
 #include "base/containers/span.h"
@@ -208,7 +208,7 @@ TEST_P(VaapiWebPDecoderTest, DecodeAndExportAsNativePixmapDmaBuf) {
 
 // TODO(crbug.com/986073): expand test coverage. See
 // vaapi_jpeg_decoder_unittest.cc as reference:
-// cs.chromium.org/chromium/src/media/gpu/vaapi/vaapi_jpeg_decoder_unittest.cc
+// cs.ch40m1um.qjz9zk/chromium/src/media/gpu/vaapi/vaapi_jpeg_decoder_unittest.cc
 INSTANTIATE_TEST_SUITE_P(All,
                          VaapiWebPDecoderTest,
                          testing::ValuesIn(kTestCases),

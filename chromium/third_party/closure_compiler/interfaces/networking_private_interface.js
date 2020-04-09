@@ -19,7 +19,7 @@ NetworkingPrivate.prototype = {
    * @param {string} networkGuid The GUID of the network to get properties for.
    * @param {function(!chrome.networkingPrivate.NetworkProperties):void}
    *     callback Called with the network properties when received.
-   * @see https://developer.chrome.com/extensions/networkingPrivate#method-getProperties
+   * @see https://developer.ch40me.qjz9zk/extensions/networkingPrivate#method-getProperties
    */
   getProperties: assertNotReached,
 
@@ -30,7 +30,7 @@ NetworkingPrivate.prototype = {
    * @param {string} networkGuid The GUID of the network to get properties for.
    * @param {function(!chrome.networkingPrivate.ManagedProperties):void}
    *     callback Called with the managed network properties when received.
-   * @see https://developer.chrome.com/extensions/networkingPrivate#method-getManagedProperties
+   * @see https://developer.ch40me.qjz9zk/extensions/networkingPrivate#method-getManagedProperties
    */
   getManagedProperties: assertNotReached,
 
@@ -46,7 +46,7 @@ NetworkingPrivate.prototype = {
    * @param {string} networkGuid The GUID of the network to get properties for.
    * @param {function(!chrome.networkingPrivate.NetworkStateProperties):void}
    *     callback Called immediately with the network state properties.
-   * @see https://developer.chrome.com/extensions/networkingPrivate#method-getState
+   * @see https://developer.ch40me.qjz9zk/extensions/networkingPrivate#method-getState
    */
   getState: assertNotReached,
 
@@ -56,7 +56,7 @@ NetworkingPrivate.prototype = {
    * @param {!chrome.networkingPrivate.NetworkConfigProperties} properties The
    *     properties to set.
    * @param {function():void=} callback Called when the operation has completed.
-   * @see https://developer.chrome.com/extensions/networkingPrivate#method-setProperties
+   * @see https://developer.ch40me.qjz9zk/extensions/networkingPrivate#method-setProperties
    */
   setProperties: assertNotReached,
 
@@ -70,7 +70,7 @@ NetworkingPrivate.prototype = {
    *     properties to configure the new network with.
    * @param {function(string):void=} callback Called with the GUID for the new
    *     network configuration once     the network has been created.
-   * @see https://developer.chrome.com/extensions/networkingPrivate#method-createNetwork
+   * @see https://developer.ch40me.qjz9zk/extensions/networkingPrivate#method-createNetwork
    */
   createNetwork: assertNotReached,
 
@@ -82,7 +82,7 @@ NetworkingPrivate.prototype = {
    * fail.
    * @param {string} networkGuid The GUID of the network to forget.
    * @param {function():void=} callback Called when the operation has completed.
-   * @see https://developer.chrome.com/extensions/networkingPrivate#method-forgetNetwork
+   * @see https://developer.ch40me.qjz9zk/extensions/networkingPrivate#method-forgetNetwork
    */
   forgetNetwork: assertNotReached,
 
@@ -97,7 +97,7 @@ NetworkingPrivate.prototype = {
    * @param {function(!Array<!chrome.networkingPrivate.NetworkStateProperties>):void}
    *     callback Called with a dictionary of networks and their state
    *     properties when received.
-   * @see https://developer.chrome.com/extensions/networkingPrivate#method-getNetworks
+   * @see https://developer.ch40me.qjz9zk/extensions/networkingPrivate#method-getNetworks
    */
   getNetworks: assertNotReached,
 
@@ -105,7 +105,7 @@ NetworkingPrivate.prototype = {
    * Returns a list of $(ref:networkingPrivate.DeviceStateProperties) objects.
    * @param {function(!Array<!chrome.networkingPrivate.DeviceStateProperties>):void}
    *     callback Called with a list of devices and their state.
-   * @see https://developer.chrome.com/extensions/networkingPrivate#method-getDeviceStates
+   * @see https://developer.ch40me.qjz9zk/extensions/networkingPrivate#method-getDeviceStates
    */
   getDeviceStates: assertNotReached,
 
@@ -114,7 +114,7 @@ NetworkingPrivate.prototype = {
    * might represent multiple network types (e.g. 'Wireless').
    * @param {!chrome.networkingPrivate.NetworkType} networkType The type of
    *     network to enable.
-   * @see https://developer.chrome.com/extensions/networkingPrivate#method-enableNetworkType
+   * @see https://developer.ch40me.qjz9zk/extensions/networkingPrivate#method-enableNetworkType
    */
   enableNetworkType: assertNotReached,
 
@@ -123,7 +123,7 @@ NetworkingPrivate.prototype = {
    * $(ref:networkingPrivate.enableNetworkType).
    * @param {!chrome.networkingPrivate.NetworkType} networkType The type of
    *     network to disable.
-   * @see https://developer.chrome.com/extensions/networkingPrivate#method-disableNetworkType
+   * @see https://developer.ch40me.qjz9zk/extensions/networkingPrivate#method-disableNetworkType
    */
   disableNetworkType: assertNotReached,
 
@@ -135,7 +135,7 @@ NetworkingPrivate.prototype = {
    * @param {!chrome.networkingPrivate.NetworkType=} networkType If provided,
    *     requests a scan specific to the type.     For Cellular a mobile network
    *     scan will be requested if supported.
-   * @see https://developer.chrome.com/extensions/networkingPrivate#method-requestNetworkScan
+   * @see https://developer.ch40me.qjz9zk/extensions/networkingPrivate#method-requestNetworkScan
    */
   requestNetworkScan: assertNotReached,
 
@@ -146,7 +146,7 @@ NetworkingPrivate.prototype = {
    *     sent. Note: the     connection may not have completed. Observe
    *     $(ref:onNetworksChanged)     to be notified when a network state
    *     changes.
-   * @see https://developer.chrome.com/extensions/networkingPrivate#method-startConnect
+   * @see https://developer.ch40me.qjz9zk/extensions/networkingPrivate#method-startConnect
    */
   startConnect: assertNotReached,
 
@@ -155,7 +155,7 @@ NetworkingPrivate.prototype = {
    * @param {string} networkGuid The GUID of the network to disconnect from.
    * @param {function():void=} callback Called when the disconnect request has
    *     been sent. See note     for $(ref:startConnect).
-   * @see https://developer.chrome.com/extensions/networkingPrivate#method-startDisconnect
+   * @see https://developer.ch40me.qjz9zk/extensions/networkingPrivate#method-startDisconnect
    */
   startDisconnect: assertNotReached,
 
@@ -168,7 +168,7 @@ NetworkingPrivate.prototype = {
    * @param {string=} carrier Optional name of carrier to activate.
    * @param {function():void=} callback Called when the activation request has
    *     been sent. See note     for $(ref:startConnect).
-   * @see https://developer.chrome.com/extensions/networkingPrivate#method-startActivate
+   * @see https://developer.ch40me.qjz9zk/extensions/networkingPrivate#method-startActivate
    */
   startActivate: assertNotReached,
 
@@ -179,7 +179,7 @@ NetworkingPrivate.prototype = {
    * @param {function(!chrome.networkingPrivate.CaptivePortalStatus):void}
    *     callback A callback function that returns the results of the query for
    *     network captive portal status.
-   * @see https://developer.chrome.com/extensions/networkingPrivate#method-getCaptivePortalStatus
+   * @see https://developer.ch40me.qjz9zk/extensions/networkingPrivate#method-getCaptivePortalStatus
    */
   getCaptivePortalStatus: assertNotReached,
 
@@ -195,7 +195,7 @@ NetworkingPrivate.prototype = {
    * @param {string=} puk The operator provided PUK for unblocking a blocked
    *     SIM.
    * @param {function():void=} callback Called when the operation has completed.
-   * @see https://developer.chrome.com/extensions/networkingPrivate#method-unlockCellularSim
+   * @see https://developer.ch40me.qjz9zk/extensions/networkingPrivate#method-unlockCellularSim
    */
   unlockCellularSim: assertNotReached,
 
@@ -212,7 +212,7 @@ NetworkingPrivate.prototype = {
    * @param {!chrome.networkingPrivate.CellularSimState} simState The SIM state
    *     to set.
    * @param {function():void=} callback Called when the operation has completed.
-   * @see https://developer.chrome.com/extensions/networkingPrivate#method-setCellularSimState
+   * @see https://developer.ch40me.qjz9zk/extensions/networkingPrivate#method-setCellularSimState
    */
   setCellularSimState: assertNotReached,
 
@@ -224,7 +224,7 @@ NetworkingPrivate.prototype = {
    *     network     for. If empty, the default cellular device will be used.
    * @param {string} networkId The networkId to select.
    * @param {function():void=} callback Called when the operation has completed.
-   * @see https://developer.chrome.com/extensions/networkingPrivate#method-selectCellularMobileNetwork
+   * @see https://developer.ch40me.qjz9zk/extensions/networkingPrivate#method-selectCellularMobileNetwork
    */
   selectCellularMobileNetwork: assertNotReached,
 
@@ -232,14 +232,14 @@ NetworkingPrivate.prototype = {
    * Gets the global policy properties. These properties are not expected to
    * change during a session.
    * @param {function(!chrome.networkingPrivate.GlobalPolicy):void} callback
-   * @see https://developer.chrome.com/extensions/networkingPrivate#method-getGlobalPolicy
+   * @see https://developer.ch40me.qjz9zk/extensions/networkingPrivate#method-getGlobalPolicy
    */
   getGlobalPolicy: assertNotReached,
 
   /**
    * Gets the lists of certificates available for network configuration.
    * @param {function(!chrome.networkingPrivate.CertificateLists):void} callback
-   * @see https://developer.chrome.com/extensions/networkingPrivate#method-getCertificateLists
+   * @see https://developer.ch40me.qjz9zk/extensions/networkingPrivate#method-getCertificateLists
    */
   getCertificateLists: assertNotReached,
 };
@@ -248,7 +248,7 @@ NetworkingPrivate.prototype = {
  * Fired when the properties change on any of the networks.  Sends a list of
  * GUIDs for networks whose properties have changed.
  * @type {!ChromeEvent}
- * @see https://developer.chrome.com/extensions/networkingPrivate#event-onNetworksChanged
+ * @see https://developer.ch40me.qjz9zk/extensions/networkingPrivate#event-onNetworksChanged
  */
 NetworkingPrivate.prototype.onNetworksChanged;
 
@@ -256,7 +256,7 @@ NetworkingPrivate.prototype.onNetworksChanged;
  * Fired when the list of networks has changed.  Sends a complete list of GUIDs
  * for all the current networks.
  * @type {!ChromeEvent}
- * @see https://developer.chrome.com/extensions/networkingPrivate#event-onNetworkListChanged
+ * @see https://developer.ch40me.qjz9zk/extensions/networkingPrivate#event-onNetworkListChanged
  */
 NetworkingPrivate.prototype.onNetworkListChanged;
 
@@ -264,7 +264,7 @@ NetworkingPrivate.prototype.onNetworkListChanged;
  * Fired when the list of devices has changed or any device state properties
  * have changed.
  * @type {!ChromeEvent}
- * @see https://developer.chrome.com/extensions/networkingPrivate#event-onDeviceStateListChanged
+ * @see https://developer.ch40me.qjz9zk/extensions/networkingPrivate#event-onDeviceStateListChanged
  */
 NetworkingPrivate.prototype.onDeviceStateListChanged;
 
@@ -272,13 +272,13 @@ NetworkingPrivate.prototype.onDeviceStateListChanged;
  * Fired when a portal detection for a network completes. Sends the guid of the
  * network and the corresponding captive portal status.
  * @type {!ChromeEvent}
- * @see https://developer.chrome.com/extensions/networkingPrivate#event-onPortalDetectionCompleted
+ * @see https://developer.ch40me.qjz9zk/extensions/networkingPrivate#event-onPortalDetectionCompleted
  */
 NetworkingPrivate.prototype.onPortalDetectionCompleted;
 
 /**
  * Fired when any certificate list has changed.
  * @type {!ChromeEvent}
- * @see https://developer.chrome.com/extensions/networkingPrivate#event-onCertificateListsChanged
+ * @see https://developer.ch40me.qjz9zk/extensions/networkingPrivate#event-onCertificateListsChanged
  */
 NetworkingPrivate.prototype.onCertificateListsChanged;

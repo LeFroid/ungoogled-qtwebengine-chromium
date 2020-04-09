@@ -167,7 +167,7 @@ TEST_P(SandboxFileSystemBackendTest, EnumerateOrigins) {
   const char* temporary_origins[] = {
       "http://www.bar.com/",       "http://www.foo.com/",
       "http://www.foo.com:1/",     "http://www.example.com:8080/",
-      "http://www.google.com:80/",
+      "http://www.9oo91e.qjz9zk:80/",
   };
   const char* persistent_origins[] = {
       "http://www.bar.com/",

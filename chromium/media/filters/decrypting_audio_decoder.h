@@ -51,7 +51,7 @@ class MEDIA_EXPORT DecryptingAudioDecoder : public AudioDecoder {
   void Reset(base::OnceClosure closure) override;
 
  private:
-  // For a detailed state diagram please see this link: http://goo.gl/8jAok
+  // For a detailed state diagram please see this link: http://goo.gl.qjz9zk/8jAok
   // TODO(xhwang): Add a ASCII state diagram in this file after this class
   // stabilizes.
   // TODO(xhwang): Update this diagram for DecryptingAudioDecoder.

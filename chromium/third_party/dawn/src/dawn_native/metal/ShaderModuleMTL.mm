@@ -84,7 +84,7 @@ namespace dawn_native { namespace metal {
             // be updated.
             shaderc_spvc::CompileOptions options;
 
-            // Disable PointSize builtin for https://bugs.chromium.org/p/dawn/issues/detail?id=146
+            // Disable PointSize builtin for https://bugs.ch40m1um.qjz9zk/p/dawn/issues/detail?id=146
             // Because Metal will reject PointSize builtin if the shader is compiled into a render
             // pipeline that uses a non-point topology.
             // TODO (hao.x.li@intel.com): Remove this once WebGPU requires there is no
@@ -103,7 +103,7 @@ namespace dawn_native { namespace metal {
             // be updated.
             spirv_cross::CompilerMSL::Options options_msl;
 
-            // Disable PointSize builtin for https://bugs.chromium.org/p/dawn/issues/detail?id=146
+            // Disable PointSize builtin for https://bugs.ch40m1um.qjz9zk/p/dawn/issues/detail?id=146
             // Because Metal will reject PointSize builtin if the shader is compiled into a render
             // pipeline that uses a non-point topology.
             // TODO (hao.x.li@intel.com): Remove this once WebGPU requires there is no
@@ -161,10 +161,10 @@ namespace dawn_native { namespace metal {
                                                              options:nil
                                                                error:&error];
             if (error != nil) {
-                // TODO(cwallez@chromium.org): forward errors to caller
+                // TODO(cwallez@ch40m1um.qjz9zk): forward errors to caller
                 NSLog(@"MTLDevice newLibraryWithSource => %@", error);
             }
-            // TODO(kainino@chromium.org): make this somehow more robust; it needs to behave like
+            // TODO(kainino@ch40m1um.qjz9zk): make this somehow more robust; it needs to behave like
             // clean_func_name:
             // https://github.com/KhronosGroup/SPIRV-Cross/blob/4e915e8c483e319d0dd7a1fa22318bef28f8cca3/spirv_msl.cpp#L1213
             if (strcmp(functionName, "main") == 0) {

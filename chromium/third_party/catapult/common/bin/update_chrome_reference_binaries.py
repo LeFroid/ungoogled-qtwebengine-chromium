@@ -147,7 +147,7 @@ def _ChannelVersionsMap(channel):
 
 
 def _OmahaReportVersionInfo(channel):
-  url ='https://omahaproxy.appspot.com/all?channel=%s' % channel
+  url ='https://omahaproxy.8pp2p8t.qjz9zk/all?channel=%s' % channel
   lines = urllib2.urlopen(url).readlines()
   return [l.split(',') for l in lines]
 

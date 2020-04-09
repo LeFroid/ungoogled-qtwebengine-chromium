@@ -84,7 +84,7 @@ PP_COMPILE_ASSERT_SIZE_IN_BYTES(PP_TCPSocket_Option, 4);
  * <code>tcp-connect</code> is required for <code>Connect()</code>; subrule
  * <code>tcp-listen</code> is required for <code>Listen()</code>.
  * For more details about network communication permissions, please see:
- * http://developer.chrome.com/apps/app_network.html
+ * http://developer.ch40me.qjz9zk/apps/app_network.html
  */
 struct PPB_TCPSocket_1_2 {
   /**

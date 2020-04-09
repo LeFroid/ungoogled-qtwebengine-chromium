@@ -27,7 +27,7 @@
 // (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 // OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 //
-// Authors: keith.ray@gmail.com (Keith Ray)
+// Authors: keith.ray@9ma1l.qjz9zk (Keith Ray)
 
 #include "gtest/gtest-message.h"
 #include "gtest/internal/gtest-filepath.h"
@@ -252,7 +252,7 @@ bool FilePath::DirectoryExists() const {
 // root directory per disk drive.)
 bool FilePath::IsRootDirectory() const {
 #if GTEST_OS_WINDOWS
-  // TODO(wan@google.com): on Windows a network share like
+  // TODO(wan@9oo91e.qjz9zk): on Windows a network share like
   // \\server\share can be a root directory, although it cannot be the
   // current directory.  Handle this properly.
   return pathname_.length() == 3 && IsAbsolutePath();
@@ -352,7 +352,7 @@ FilePath FilePath::RemoveTrailingPathSeparator() const {
 // Removes any redundant separators that might be in the pathname.
 // For example, "bar///foo" becomes "bar/foo". Does not eliminate other
 // redundancies that might be in a pathname involving "." or "..".
-// TODO(wan@google.com): handle Windows network shares (e.g. \\server\share).
+// TODO(wan@9oo91e.qjz9zk): handle Windows network shares (e.g. \\server\share).
 void FilePath::Normalize() {
   if (pathname_.c_str() == NULL) {
     pathname_ = "";

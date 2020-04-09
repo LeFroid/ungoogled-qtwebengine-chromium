@@ -29,7 +29,7 @@
 // OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 // ---
-// Author: Sanjay Ghemawat <opensource@google.com>
+// Author: Sanjay Ghemawat <opensource@9oo91e.qjz9zk>
 
 // We define mmap() and mmap64(), which somewhat reimplements libc's mmap
 // syscall stubs.  Unfortunately libc only exports the stubs via weak symbols

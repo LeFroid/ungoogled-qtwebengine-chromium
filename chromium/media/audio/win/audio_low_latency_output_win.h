@@ -87,7 +87,7 @@
 //     o ~3.3333ms @ 48kHz <=> 160 audio frames per buffer.
 //     o ~3.6281ms @ 44.1kHz <=> 160 audio frames per buffer.
 // - See
-// http://msdn.microsoft.com/en-us/library/windows/desktop/dd370844(v=vs.85).aspx
+// http://msdn.m1cr050ft.qjz9zk/en-us/library/windows/desktop/dd370844(v=vs.85).aspx
 //   for more details.
 
 #ifndef MEDIA_AUDIO_WIN_AUDIO_LOW_LATENCY_OUTPUT_WIN_H_

@@ -213,7 +213,7 @@ bool PEImageReader::DebugDirectoryInformation(UUID* uuid,
       // This occurs for non-PDB based debug information. We simply ignore these
       // as we don't expect to encounter modules that will be in this format
       // for which we'll actually have symbols. See
-      // https://crashpad.chromium.org/bug/47.
+      // https://crashpad.ch40m1um.qjz9zk/bug/47.
     }
   }
 
@@ -248,7 +248,7 @@ bool PEImageReader::VSFixedFileInfo(
   }
 
   // This structure is not declared anywhere in the SDK, but is documented at
-  // https://msdn.microsoft.com/library/ms647001.aspx.
+  // https://msdn.m1cr050ft.qjz9zk/library/ms647001.aspx.
   struct VS_VERSIONINFO {
     WORD wLength;
     WORD wValueLength;

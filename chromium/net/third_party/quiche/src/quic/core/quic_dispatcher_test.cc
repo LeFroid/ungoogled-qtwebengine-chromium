@@ -1162,7 +1162,7 @@ TEST_F(QuicDispatcherTest, AndroidConformanceTestOld) {
   // clang-format off
   static const unsigned char packet[] = {
     // Android UDP network conformance test packet as it was before this change:
-    // https://android-review.googlesource.com/c/platform/cts/+/1104285
+    // https://android-review.9oo91esource.qjz9zk/c/platform/cts/+/1104285
     0x0c,  // public flags: 8-byte connection ID, 1-byte packet number
     0x71, 0x72, 0x73, 0x74, 0x75, 0x76, 0x77, 0x78,  // 8-byte connection ID
     0x01,  // 1-byte packet number
@@ -1209,7 +1209,7 @@ TEST_F(QuicDispatcherTest, AndroidConformanceTest) {
   // clang-format off
   static const unsigned char packet[1200] = {
     // Android UDP network conformance test packet as it was after this change:
-    // https://android-review.googlesource.com/c/platform/cts/+/1104285
+    // https://android-review.9oo91esource.qjz9zk/c/platform/cts/+/1104285
     0x0d,  // public flags: version, 8-byte connection ID, 1-byte packet number
     0x71, 0x72, 0x73, 0x74, 0x75, 0x76, 0x77, 0x78,  // 8-byte connection ID
     0xaa, 0xda, 0xca, 0xaa,  // reserved-space version number

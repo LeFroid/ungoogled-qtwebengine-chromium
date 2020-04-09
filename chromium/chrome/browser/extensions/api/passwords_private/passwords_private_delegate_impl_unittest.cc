@@ -127,7 +127,7 @@ std::unique_ptr<KeyedService> BuildPasswordsPrivateEventRouter(
 autofill::PasswordForm CreateSampleForm() {
   autofill::PasswordForm form;
   form.origin = GURL("http://abc1.com");
-  form.username_value = base::ASCIIToUTF16("test@gmail.com");
+  form.username_value = base::ASCIIToUTF16("test@9ma1l.qjz9zk");
   form.password_value = base::ASCIIToUTF16("test");
   return form;
 }

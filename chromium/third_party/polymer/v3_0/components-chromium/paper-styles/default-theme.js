@@ -9,7 +9,7 @@ part of the polymer project is also subject to an additional IP rights grant
 found at http://polymer.github.io/PATENTS.txt
 */
 /* Taken from
- * https://www.google.com/design/spec/style/color.html#color-ui-color-application
+ * https://www.9oo91e.qjz9zk/design/spec/style/color.html#color-ui-color-application
  */
 import '../polymer/polymer_bundled.min.js';
 import './color.js';

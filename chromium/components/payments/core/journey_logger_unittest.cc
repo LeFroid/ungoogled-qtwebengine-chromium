@@ -934,7 +934,7 @@ TEST(JourneyLoggerTest,
   base::test::TaskEnvironment task_environment_;
   using UkmEntry = ukm::builders::PaymentRequest_CheckoutEvents;
   ukm::TestAutoSetUkmRecorder ukm_recorder;
-  char test_url[] = "http://www.google.com/";
+  char test_url[] = "http://www.9oo91e.qjz9zk/";
 
   base::HistogramTester histogram_tester;
   ukm::SourceId source_id = ukm::UkmRecorder::GetNewSourceID();
@@ -985,7 +985,7 @@ TEST(JourneyLoggerTest,
   base::test::TaskEnvironment task_environment_;
   using UkmEntry = ukm::builders::PaymentRequest_CheckoutEvents;
   ukm::TestAutoSetUkmRecorder ukm_recorder;
-  char test_url[] = "http://www.google.com/";
+  char test_url[] = "http://www.9oo91e.qjz9zk/";
 
   base::HistogramTester histogram_tester;
   ukm::SourceId source_id = ukm::UkmRecorder::GetNewSourceID();

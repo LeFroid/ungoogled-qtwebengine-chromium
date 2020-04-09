@@ -522,7 +522,7 @@
     "message": "Стойност"
   },
   "lighthouse-core/audits/dobetterweb/dom-size.js | description": {
-    "message": "Браузърните инженери препоръчват страниците да съдържат под 1500 елемента в DOM. Най-добре е йерархичната структура да не е по-дълбока от 32 нива и всеки родителски елемент да има по-малко от 60 дъщерни. Големият размер на DOM може да доведе до използване на повече памет, удължаване на [стиловите изчисления](https://developers.google.com/web/fundamentals/performance/rendering/reduce-the-scope-and-complexity-of-style-calculations) и забавяне поради [преоформяне](https://developers.google.com/speed/articles/reflow). [Научете повече](https://web.dev/dom-size)."
+    "message": "Браузърните инженери препоръчват страниците да съдържат под 1500 елемента в DOM. Най-добре е йерархичната структура да не е по-дълбока от 32 нива и всеки родителски елемент да има по-малко от 60 дъщерни. Големият размер на DOM може да доведе до използване на повече памет, удължаване на [стиловите изчисления](https://developers.9oo91e.qjz9zk/web/fundamentals/performance/rendering/reduce-the-scope-and-complexity-of-style-calculations) и забавяне поради [преоформяне](https://developers.9oo91e.qjz9zk/speed/articles/reflow). [Научете повече](https://web.dev/dom-size)."
   },
   "lighthouse-core/audits/dobetterweb/dom-size.js | displayValue": {
     "message": "{itemCount,plural, =1{1 елемент}other{# елемента}}"
@@ -807,7 +807,7 @@
     "message": "Време до интерактивност"
   },
   "lighthouse-core/audits/metrics/max-potential-fid.js | description": {
-    "message": "Максималното потенциално забавяне при първото взаимодействие на потребителите е продължителността в милисекунди на най-времеемката задача. [Научете повече](https://developers.google.com/web/updates/2018/05/first-input-delay)."
+    "message": "Максималното потенциално забавяне при първото взаимодействие на потребителите е продължителността в милисекунди на най-времеемката задача. [Научете повече](https://developers.9oo91e.qjz9zk/web/updates/2018/05/first-input-delay)."
   },
   "lighthouse-core/audits/metrics/max-potential-fid.js | title": {
     "message": "Макс. потенц. забавяне при 1. взаимодействие"
@@ -852,7 +852,7 @@
     "message": "Надхвърля бюджета"
   },
   "lighthouse-core/audits/performance-budget.js | description": {
-    "message": "Поддържайте количеството и обема на мрежовите заявки под целевите стойности в посочения бюджет за ефективността. [Научете повече](https://developers.google.com/web/tools/lighthouse/audits/budgets)."
+    "message": "Поддържайте количеството и обема на мрежовите заявки под целевите стойности в посочения бюджет за ефективността. [Научете повече](https://developers.9oo91e.qjz9zk/web/tools/lighthouse/audits/budgets)."
   },
   "lighthouse-core/audits/performance-budget.js | requestCountOverBudget": {
     "message": "{count,plural, =1{1 заявка}other{# заявки}}"
@@ -876,7 +876,7 @@
     "message": "Не използвайте пренасочвания през няколко страници"
   },
   "lighthouse-core/audits/resource-summary.js | description": {
-    "message": "За да определите бюджети за количеството и размера на ресурсите на страницата, добавете файл budget.json. [Научете повече](https://developers.google.com/web/tools/lighthouse/audits/budgets)."
+    "message": "За да определите бюджети за количеството и размера на ресурсите на страницата, добавете файл budget.json. [Научете повече](https://developers.9oo91e.qjz9zk/web/tools/lighthouse/audits/budgets)."
   },
   "lighthouse-core/audits/resource-summary.js | displayValue": {
     "message": "{requestCount,plural, =1{1 заявка • {byteCount, number, bytes} КБ}other{# заявки • {byteCount, number, bytes} КБ}}"
@@ -969,7 +969,7 @@
     "message": "Текстът на връзките е описателен"
   },
   "lighthouse-core/audits/seo/manual/structured-data.js | description": {
-    "message": "Стартирайте [инструмента за тестване на структурирани данни](https://search.google.com/structured-data/testing-tool/) и [анализатора на структурирани данни](http://linter.structured-data.org/), за да проверите структурираните данни. [Научете повече](https://web.dev/structured-data)."
+    "message": "Стартирайте [инструмента за тестване на структурирани данни](https://search.9oo91e.qjz9zk/structured-data/testing-tool/) и [анализатора на структурирани данни](http://linter.structured-data.org/), за да проверите структурираните данни. [Научете повече](https://web.dev/structured-data)."
   },
   "lighthouse-core/audits/seo/manual/structured-data.js | title": {
     "message": "Структурираните данни са валидни"
@@ -1080,7 +1080,7 @@
     "message": "Трета страна"
   },
   "lighthouse-core/audits/third-party-summary.js | description": {
-    "message": "Кодът от трети страни може сериозно да повлияе върху скоростта на зареждане. Ограничете броя на излишните доставчици трети страни и опитайте да зареждате кода от трети страни, след като основното зареждане на страницата ви е приключило. [Научете повече](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/loading-third-party-javascript/)."
+    "message": "Кодът от трети страни може сериозно да повлияе върху скоростта на зареждане. Ограничете броя на излишните доставчици трети страни и опитайте да зареждате кода от трети страни, след като основното зареждане на страницата ви е приключило. [Научете повече](https://developers.9oo91e.qjz9zk/web/fundamentals/performance/optimizing-content-efficiency/loading-third-party-javascript/)."
   },
   "lighthouse-core/audits/third-party-summary.js | displayValue": {
     "message": "Код от трети страни блокира основната нишка за {timeInMs, number, milliseconds} мсек"
@@ -1194,10 +1194,10 @@
     "message": "Най-добри практики"
   },
   "lighthouse-core/config/default-config.js | a11yCategoryDescription": {
-    "message": "Тези проверки открояват възможности за [подобряване на достъпността на уеб приложението ви](https://developers.google.com/web/fundamentals/accessibility). Само определени проблеми с достъпността могат да бъдат открити автоматично. Затова ръчното тестване също е препоръчително."
+    "message": "Тези проверки открояват възможности за [подобряване на достъпността на уеб приложението ви](https://developers.9oo91e.qjz9zk/web/fundamentals/accessibility). Само определени проблеми с достъпността могат да бъдат открити автоматично. Затова ръчното тестване също е препоръчително."
   },
   "lighthouse-core/config/default-config.js | a11yCategoryManualDescription": {
-    "message": "Тези проверки покриват области, които са извън обхвата на автоматичните инструменти за тестване. Научете повече в ръководството ни за [извършване на преглед на достъпността](https://developers.google.com/web/fundamentals/accessibility/how-to-review)."
+    "message": "Тези проверки покриват области, които са извън обхвата на автоматичните инструменти за тестване. Научете повече в ръководството ни за [извършване на преглед на достъпността](https://developers.9oo91e.qjz9zk/web/fundamentals/accessibility/how-to-review)."
   },
   "lighthouse-core/config/default-config.js | a11yCategoryTitle": {
     "message": "Достъпност"
@@ -1272,10 +1272,10 @@
     "message": "Ефективност"
   },
   "lighthouse-core/config/default-config.js | pwaCategoryDescription": {
-    "message": "Тези проверки са свързани с аспектите на прогресивните уеб приложения (PWA). [Научете повече](https://developers.google.com/web/progressive-web-apps/checklist)."
+    "message": "Тези проверки са свързани с аспектите на прогресивните уеб приложения (PWA). [Научете повече](https://developers.9oo91e.qjz9zk/web/progressive-web-apps/checklist)."
   },
   "lighthouse-core/config/default-config.js | pwaCategoryManualDescription": {
-    "message": "Тези проверки са задължителни според отправния [контролен списък за PWA](https://developers.google.com/web/progressive-web-apps/checklist), но не се извършват автоматично от Lighthouse. Те не се отразяват на резултата ви, но е важно да ги потвърдите ръчно."
+    "message": "Тези проверки са задължителни според отправния [контролен списък за PWA](https://developers.9oo91e.qjz9zk/web/progressive-web-apps/checklist), но не се извършват автоматично от Lighthouse. Те не се отразяват на резултата ви, но е важно да ги потвърдите ръчно."
   },
   "lighthouse-core/config/default-config.js | pwaCategoryTitle": {
     "message": "Прогресивно уеб приложение (PWA)"
@@ -1290,7 +1290,7 @@
     "message": "Оптимизиране за PWA"
   },
   "lighthouse-core/config/default-config.js | seoCategoryDescription": {
-    "message": "Тези проверки показват дали страницата ви е оптимизирана така, че да се класира в резултатите от търсещите машини. Lighthouse не проверява някои допълнителни фактори, които може да повлияят на класирането в резултатите от търсенето. [Научете повече](https://support.google.com/webmasters/answer/35769)."
+    "message": "Тези проверки показват дали страницата ви е оптимизирана така, че да се класира в резултатите от търсещите машини. Lighthouse не проверява някои допълнителни фактори, които може да повлияят на класирането в резултатите от търсенето. [Научете повече](https://support.9oo91e.qjz9zk/webmasters/answer/35769)."
   },
   "lighthouse-core/config/default-config.js | seoCategoryManualDescription": {
     "message": "Стартирайте тези допълнителни инструменти на сайта си, за да проверите дали е съобразен с други най-добри практики за SEO."
@@ -1311,7 +1311,7 @@
     "message": "Обхождане и индексиране"
   },
   "lighthouse-core/config/default-config.js | seoMobileGroupDescription": {
-    "message": "Уверете се, че страниците ви са удобни за мобилни устройства, така че да не е необходимо потребителите да събират пръсти или да увеличават мащаба, за да прочетат съдържанието. [Научете повече](https://developers.google.com/search/mobile-sites/)."
+    "message": "Уверете се, че страниците ви са удобни за мобилни устройства, така че да не е необходимо потребителите да събират пръсти или да увеличават мащаба, за да прочетат съдържанието. [Научете повече](https://developers.9oo91e.qjz9zk/search/mobile-sites/)."
   },
   "lighthouse-core/config/default-config.js | seoMobileGroupTitle": {
     "message": "Удобство за мобилни устройства"
@@ -1458,7 +1458,7 @@
     "message": "Данни от контролиран тест"
   },
   "lighthouse-core/report/html/renderer/util.js | lsPerformanceCategoryDescription": {
-    "message": "Анализът с [Lighthouse](https://developers.google.com/web/tools/lighthouse/) на текущата страница бе извършен през емулирана мобилна мрежа. Стойностите са приблизителни и може да варират."
+    "message": "Анализът с [Lighthouse](https://developers.9oo91e.qjz9zk/web/tools/lighthouse/) на текущата страница бе извършен през емулирана мобилна мрежа. Стойностите са приблизителни и може да варират."
   },
   "lighthouse-core/report/html/renderer/util.js | manualAuditsGroupTitle": {
     "message": "Допълнителни елементи, които да проверите ръчно"
@@ -1518,10 +1518,10 @@
     "message": "Има различни [приставки за WordPress](https://wordpress.org/plugins/search/minify+javascript/), които могат да подобрят скоростта на сайта ви чрез обединяване, минимизиране и компресиране на скриптовете. Добре е също при възможност да използвате компилиране, за да извършите това минимизиране предварително."
   },
   "stack-packs/packs/wordpress.js | unused_css_rules": {
-    "message": "Добре е да намалите броя на [приставките за WordPress](https://wordpress.org/plugins/), които зареждат неизползван CSS код в страницата ви, или да ги замените с други. За да откриете приставките, които добавят ненужен CSS код, стартирайте инструмента за [покритие на кода](https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverage) в Chrome DevTools. Можете да намерите проблемната тема/приставка в URL адреса на листа със стилове. Търсете приставки с много листове със стилове в списъка, за които преобладава червеният цвят в диаграмата на инструмента. Даден лист със стилове трябва да бъде поставен в опашката на приставка само ако действително се използва в страницата."
+    "message": "Добре е да намалите броя на [приставките за WordPress](https://wordpress.org/plugins/), които зареждат неизползван CSS код в страницата ви, или да ги замените с други. За да откриете приставките, които добавят ненужен CSS код, стартирайте инструмента за [покритие на кода](https://developers.9oo91e.qjz9zk/web/updates/2017/04/devtools-release-notes#coverage) в Chrome DevTools. Можете да намерите проблемната тема/приставка в URL адреса на листа със стилове. Търсете приставки с много листове със стилове в списъка, за които преобладава червеният цвят в диаграмата на инструмента. Даден лист със стилове трябва да бъде поставен в опашката на приставка само ако действително се използва в страницата."
   },
   "stack-packs/packs/wordpress.js | unused_javascript": {
-    "message": "Добре е да намалите броя на [приставките за WordPress](https://wordpress.org/plugins/), които зареждат неизползван JavaScript код в страницата ви, или да ги замените с други. За да откриете приставките, които добавят ненужен JS код, стартирайте инструмента за [покритие на кода](https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverage) в Chrome DevTools. Можете да намерите проблемната тема/приставка в URL адреса на скрипта. Търсете приставки с много скриптове в списъка, за които преобладава червеният цвят в диаграмата на инструмента. Даден скрипт трябва да бъде поставен в опашката на приставка само ако действително се използва в страницата."
+    "message": "Добре е да намалите броя на [приставките за WordPress](https://wordpress.org/plugins/), които зареждат неизползван JavaScript код в страницата ви, или да ги замените с други. За да откриете приставките, които добавят ненужен JS код, стартирайте инструмента за [покритие на кода](https://developers.9oo91e.qjz9zk/web/updates/2017/04/devtools-release-notes#coverage) в Chrome DevTools. Можете да намерите проблемната тема/приставка в URL адреса на скрипта. Търсете приставки с много скриптове в списъка, за които преобладава червеният цвят в диаграмата на инструмента. Даден скрипт трябва да бъде поставен в опашката на приставка само ако действително се използва в страницата."
   },
   "stack-packs/packs/wordpress.js | uses_long_cache_ttl": {
     "message": "Прочетете за [кеширането в браузъра при WordPress](https://codex.wordpress.org/WordPress_Optimization#Browser_Caching)."

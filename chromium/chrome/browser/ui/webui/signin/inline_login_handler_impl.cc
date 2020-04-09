@@ -330,6 +330,7 @@ void InlineSigninHelper::OnClientOAuthSuccessAndBrowserOpened(
     const ClientOAuthResult& result,
     Profile* /*profile*/,
     Profile::CreateStatus /*status*/) {
+#if BUILDFLAG(ENABLE_ONE_CLICK_SIGNIN)
   HandlerSigninReason reason = GetHandlerSigninReason(current_url_);
   if (reason == HandlerSigninReason::FETCH_LST_ONLY) {
     // Constants are only available on Windows for the Google Credential
@@ -419,6 +420,7 @@ void InlineSigninHelper::OnClientOAuthSuccessAndBrowserOpened(
     CreateSyncStarter(result.refresh_token);
   }
   base::ThreadTaskRunnerHandle::Get()->DeleteSoon(FROM_HERE, this);
+#endif
 }
 
 void InlineSigninHelper::UntrustedSigninConfirmed(

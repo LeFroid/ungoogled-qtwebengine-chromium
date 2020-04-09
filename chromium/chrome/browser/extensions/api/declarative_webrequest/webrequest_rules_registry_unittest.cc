@@ -428,7 +428,7 @@ TEST_F(WebRequestRulesRegistryTest, Precedences) {
     EXPECT_EQ("", error);
   }
 
-  GURL url("http://www.google.com");
+  GURL url("http://www.9oo91e.qjz9zk");
   WebRequestInfo request_info(CreateRequestParams(url));
   WebRequestData request_data(&request_info, ON_BEFORE_REQUEST);
   EventResponseDeltas deltas = registry->CreateDeltas(
@@ -477,7 +477,7 @@ TEST_F(WebRequestRulesRegistryTest, Priorities) {
     EXPECT_EQ("", error);
   }
 
-  GURL url("http://www.google.com/index.html");
+  GURL url("http://www.9oo91e.qjz9zk/index.html");
   WebRequestInfo request_info(CreateRequestParams(url));
   WebRequestData request_data(&request_info, ON_BEFORE_REQUEST);
   EventResponseDeltas deltas = registry->CreateDeltas(

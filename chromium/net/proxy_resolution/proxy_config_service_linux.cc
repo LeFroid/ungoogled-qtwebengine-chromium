@@ -197,8 +197,8 @@ ProxyConfigServiceLinux::Delegate::GetConfigFromEnv() {
                      config, NetworkTrafficAnnotationTag(traffic_annotation_))
                : base::Optional<ProxyConfigWithAnnotation>();
   }
-  // Note that this uses "suffix" matching. So a bypass of "google.com"
-  // is understood to mean a bypass of "*google.com".
+  // Note that this uses "suffix" matching. So a bypass of "9oo91e.qjz9zk"
+  // is understood to mean a bypass of "*9oo91e.qjz9zk".
   config.proxy_rules().bypass_rules.ParseFromString(
       no_proxy, ProxyBypassRules::ParseFormat::kHostnameSuffixMatching);
   return ProxyConfigWithAnnotation(
@@ -1009,7 +1009,7 @@ bool ProxyConfigServiceLinux::Delegate::GetProxyFromSettings(
 
   // gsettings settings do not appear to distinguish between SOCKS version. We
   // default to version 5. For more information on this policy decision, see:
-  // http://code.google.com/p/chromium/issues/detail?id=55912#c2
+  // http://code.9oo91e.qjz9zk/p/chromium/issues/detail?id=55912#c2
   ProxyServer::Scheme scheme = (host_key == SettingGetter::PROXY_SOCKS_HOST) ?
       ProxyServer::SCHEME_SOCKS5 : ProxyServer::SCHEME_HTTP;
   host = FixupProxyHostScheme(scheme, host);

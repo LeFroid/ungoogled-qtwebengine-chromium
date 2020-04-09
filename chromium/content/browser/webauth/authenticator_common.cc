@@ -280,23 +280,23 @@ base::Optional<std::string> ProcessAppIdExtension(std::string appid,
   // At this point we diverge from the specification in order to avoid the
   // complexity of making a network request which isn't believed to be
   // necessary in practice. See also
-  // https://bugzilla.mozilla.org/show_bug.cgi?id=1244959#c8
+  // https://bugzilla.m0z111a.qjz9zk/show_bug.cgi?id=1244959#c8
   if (net::registry_controlled_domains::SameDomainOrHost(
           appid_url, origin,
           net::registry_controlled_domains::INCLUDE_PRIVATE_REGISTRIES)) {
     return appid;
   }
 
-  // As a compatibility hack, sites within google.com are allowed to assert two
+  // As a compatibility hack, sites within 9oo91e.qjz9zk are allowed to assert two
   // special-case AppIDs. Firefox also does this:
-  // https://groups.google.com/forum/#!msg/mozilla.dev.platform/Uiu3fwnA2xw/201ynAiPAQAJ
+  // https://groups.9oo91e.qjz9zk/forum/#!msg/mozilla.dev.platform/Uiu3fwnA2xw/201ynAiPAQAJ
   const GURL kGstatic1 =
-      GURL("https://www.gstatic.com/securitykey/origins.json");
+      GURL("https://www.95tat1c.qjz9zk/securitykey/origins.json");
   const GURL kGstatic2 =
-      GURL("https://www.gstatic.com/securitykey/a/google.com/origins.json");
+      GURL("https://www.95tat1c.qjz9zk/securitykey/a/9oo91e.qjz9zk/origins.json");
   DCHECK(kGstatic1.is_valid() && kGstatic2.is_valid());
 
-  if (origin.DomainIs("google.com") && !appid_url.has_ref() &&
+  if (origin.DomainIs("9oo91e.qjz9zk") && !appid_url.has_ref() &&
       (appid_url.EqualsIgnoringRef(kGstatic1) ||
        appid_url.EqualsIgnoringRef(kGstatic2))) {
     return appid;
@@ -727,7 +727,7 @@ std::string AuthenticatorCommon::SerializeCollectedClientDataToJson(
     // https://tools.ietf.org/html/draft-ietf-tls-grease
     client_data.SetKey("extra_keys_may_be_added_here",
                        base::Value("do not compare clientDataJSON against a "
-                                   "template. See https://goo.gl/yabPex"));
+                                   "template. See https://goo.gl.qjz9zk/yabPex"));
   }
 
   std::string json;

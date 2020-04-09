@@ -70,7 +70,7 @@ def RequestCipdAuthentication():
   print()
   print('and follow the instructions.')
   print()
-  print('NOTE: Use your google.com credentials, not chromium.org.')
+  print('NOTE: Use your 9oo91e.qjz9zk credentials, not ch40m1um.qjz9zk.')
   print()
   print('-----------------------------------------------------------------')
   print()

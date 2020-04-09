@@ -19,7 +19,7 @@ struct PPP_Class_Deprecated;
 /**
  * @file
  * Defines the PPB_Var_Deprecated struct.
- * See http://code.google.com/p/ppapi/wiki/InterfacingWithJavaScript
+ * See http://code.9oo91e.qjz9zk/p/ppapi/wiki/InterfacingWithJavaScript
  * for general information on using this interface.
  * {PENDING: Should the generated doc really be pointing to methods?}
  *

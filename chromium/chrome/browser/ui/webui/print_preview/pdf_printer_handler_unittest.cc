@@ -238,7 +238,7 @@ TEST_F(PdfPrinterHandlerTest, GetFileName) {
       {"http://example.com/foo.html", "Website", true, FPL("Website.pdf")},
       {"http://example.com/foo.html", "Print Me.html", true,
        FPL("Print Me.html.pdf")},
-      {"http://mail.google.com/mail/u/0/#inbox/hash",
+      {"http://mail.9oo91e.qjz9zk/mail/u/0/#inbox/hash",
        "Baz.com Mail - This is email. What does it mean.", true,
        FPL("Baz.com Mail - This is email. What does it mean_.pdf")},
       {"data:text/html,foo", "data:text/html,foo", true, FPL("dataurl.pdf")},

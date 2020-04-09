@@ -55,7 +55,7 @@ using StartPageTokenCallback =
 namespace drive {
 
 // Represents a property for a file or a directory.
-// https://developers.google.com/drive/v2/reference/properties
+// https://developers.9oo91e.qjz9zk/drive/v2/reference/properties
 class Property {
  public:
   Property();
@@ -106,7 +106,7 @@ bool ParseMultipartResponse(const std::string& content_type,
 // This is base class of the Drive API related requests. All Drive API requests
 // support partial request (to improve the performance). The function can be
 // shared among the Drive API requests.
-// See also https://developers.google.com/drive/performance
+// See also https://developers.9oo91e.qjz9zk/drive/performance
 class DriveApiPartialFieldRequest : public UrlFetchRequestBase {
  public:
   explicit DriveApiPartialFieldRequest(RequestSender* sender);
@@ -205,7 +205,7 @@ class DriveApiDataRequest : public DriveApiPartialFieldRequest {
 
 // This class performs the request for fetching a file.
 // This request is mapped to
-// https://developers.google.com/drive/v2/reference/files/get
+// https://developers.9oo91e.qjz9zk/drive/v2/reference/files/get
 class FilesGetRequest : public DriveApiDataRequest<FileResource> {
  public:
   FilesGetRequest(RequestSender* sender,
@@ -245,9 +245,9 @@ enum FileVisibility {
 
 // This class performs the request for creating a resource.
 // This request is mapped to
-// https://developers.google.com/drive/v2/reference/files/insert
-// See also https://developers.google.com/drive/manage-uploads and
-// https://developers.google.com/drive/folder
+// https://developers.9oo91e.qjz9zk/drive/v2/reference/files/insert
+// See also https://developers.9oo91e.qjz9zk/drive/manage-uploads and
+// https://developers.9oo91e.qjz9zk/drive/folder
 class FilesInsertRequest : public DriveApiDataRequest<FileResource> {
  public:
   FilesInsertRequest(RequestSender* sender,
@@ -316,7 +316,7 @@ class FilesInsertRequest : public DriveApiDataRequest<FileResource> {
 
 // This class performs the request for patching file metadata.
 // This request is mapped to
-// https://developers.google.com/drive/v2/reference/files/patch
+// https://developers.9oo91e.qjz9zk/drive/v2/reference/files/patch
 class FilesPatchRequest : public DriveApiDataRequest<FileResource> {
  public:
   FilesPatchRequest(RequestSender* sender,
@@ -396,7 +396,7 @@ class FilesPatchRequest : public DriveApiDataRequest<FileResource> {
 
 // This class performs the request for copying a resource.
 // This request is mapped to
-// https://developers.google.com/drive/v2/reference/files/copy
+// https://developers.9oo91e.qjz9zk/drive/v2/reference/files/copy
 class FilesCopyRequest : public DriveApiDataRequest<FileResource> {
  public:
   // Upon completion, |callback| will be called. |callback| must not be null.
@@ -454,7 +454,7 @@ class FilesCopyRequest : public DriveApiDataRequest<FileResource> {
 // should be able to be fetched by another request using this class, by
 // setting the next_page_token from previous call, to page_token.
 // This request is mapped to
-// https://developers.google.com/drive/v2/reference/teamdrives/list
+// https://developers.9oo91e.qjz9zk/drive/v2/reference/teamdrives/list
 class TeamDriveListRequest : public DriveApiDataRequest<TeamDriveList> {
  public:
   TeamDriveListRequest(RequestSender* sender,
@@ -489,7 +489,7 @@ class TeamDriveListRequest : public DriveApiDataRequest<TeamDriveList> {
 // |team_drive_id_| may be empty, in which case the start page token will be
 // returned for the users changes.
 // This request is mapped to
-// https://developers.google.com/drive/v2/reference/changes/getStartPageToken
+// https://developers.9oo91e.qjz9zk/drive/v2/reference/changes/getStartPageToken
 class StartPageTokenRequest : public DriveApiDataRequest<StartPageToken> {
  public:
   StartPageTokenRequest(RequestSender* sender,
@@ -521,7 +521,7 @@ class StartPageTokenRequest : public DriveApiDataRequest<StartPageToken> {
 // should be able to be fetched by ContinueGetFileListRequest defined below,
 // or by FilesListRequest with setting page token.
 // This request is mapped to
-// https://developers.google.com/drive/v2/reference/files/list
+// https://developers.9oo91e.qjz9zk/drive/v2/reference/files/list
 class FilesListRequest : public DriveApiDataRequest<FileList> {
  public:
   FilesListRequest(RequestSender* sender,
@@ -593,7 +593,7 @@ class FilesListNextPageRequest : public DriveApiDataRequest<FileList> {
 
 // This class performs the request for deleting a resource.
 // This request is mapped to
-// https://developers.google.com/drive/v2/reference/files/delete
+// https://developers.9oo91e.qjz9zk/drive/v2/reference/files/delete
 class FilesDeleteRequest : public EntryActionRequest {
  public:
   FilesDeleteRequest(RequestSender* sender,
@@ -624,7 +624,7 @@ class FilesDeleteRequest : public EntryActionRequest {
 
 // This class performs the request for trashing a resource.
 // This request is mapped to
-// https://developers.google.com/drive/v2/reference/files/trash
+// https://developers.9oo91e.qjz9zk/drive/v2/reference/files/trash
 class FilesTrashRequest : public DriveApiDataRequest<FileResource> {
  public:
   FilesTrashRequest(RequestSender* sender,
@@ -654,7 +654,7 @@ class FilesTrashRequest : public DriveApiDataRequest<FileResource> {
 
 // This class performs the request for fetching About data.
 // This request is mapped to
-// https://developers.google.com/drive/v2/reference/about/get
+// https://developers.9oo91e.qjz9zk/drive/v2/reference/about/get
 class AboutGetRequest : public DriveApiDataRequest<AboutResource> {
  public:
   AboutGetRequest(RequestSender* sender,
@@ -679,7 +679,7 @@ class AboutGetRequest : public DriveApiDataRequest<AboutResource> {
 // should be able to be fetched by ContinueGetFileListRequest defined below.
 // or by ChangesListRequest with setting page token.
 // This request is mapped to
-// https://developers.google.com/drive/v2/reference/changes/list
+// https://developers.9oo91e.qjz9zk/drive/v2/reference/changes/list
 class ChangesListRequest : public DriveApiDataRequest<ChangeList> {
  public:
   ChangesListRequest(RequestSender* sender,
@@ -755,7 +755,7 @@ class ChangesListNextPageRequest : public DriveApiDataRequest<ChangeList> {
 
 // This class performs the request for inserting a resource to a directory.
 // This request is mapped to
-// https://developers.google.com/drive/v2/reference/children/insert
+// https://developers.9oo91e.qjz9zk/drive/v2/reference/children/insert
 class ChildrenInsertRequest : public EntryActionRequest {
  public:
   ChildrenInsertRequest(RequestSender* sender,
@@ -792,7 +792,7 @@ class ChildrenInsertRequest : public EntryActionRequest {
 
 // This class performs the request for removing a resource from a directory.
 // This request is mapped to
-// https://developers.google.com/drive/v2/reference/children/delete
+// https://developers.9oo91e.qjz9zk/drive/v2/reference/children/delete
 class ChildrenDeleteRequest : public EntryActionRequest {
  public:
   // |callback| must not be null.
@@ -1115,7 +1115,7 @@ enum PermissionRole {
 // This class performs the request for adding permission on a specified file.
 class PermissionsInsertRequest : public EntryActionRequest {
  public:
-  // See https://developers.google.com/drive/v2/reference/permissions/insert.
+  // See https://developers.9oo91e.qjz9zk/drive/v2/reference/permissions/insert.
   PermissionsInsertRequest(RequestSender* sender,
                            const DriveApiUrlGenerator& url_generator,
                            const EntryActionCallback& callback);

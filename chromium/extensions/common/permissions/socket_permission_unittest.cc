@@ -160,7 +160,7 @@ TEST(SocketPermissionTest, Match) {
       SocketPermissionRequest::TCP_CONNECT, "www.example.com", 80));
   EXPECT_FALSE(data.Check(param.get()));
   param.reset(new SocketPermission::CheckParam(
-      SocketPermissionRequest::UDP_SEND_TO, "www.google.com", 8800));
+      SocketPermissionRequest::UDP_SEND_TO, "www.9oo91e.qjz9zk", 8800));
   EXPECT_FALSE(data.Check(param.get()));
   param.reset(new SocketPermission::CheckParam(
       SocketPermissionRequest::UDP_SEND_TO, "wwwexample.com", 8800));
@@ -180,7 +180,7 @@ TEST(SocketPermissionTest, Match) {
       SocketPermissionRequest::TCP_CONNECT, "www.example.com", 80));
   EXPECT_FALSE(data.Check(param.get()));
   param.reset(new SocketPermission::CheckParam(
-      SocketPermissionRequest::UDP_SEND_TO, "www.google.com", 8800));
+      SocketPermissionRequest::UDP_SEND_TO, "www.9oo91e.qjz9zk", 8800));
   EXPECT_FALSE(data.Check(param.get()));
 
   ASSERT_TRUE(data.ParseForTest("udp-bind::8800"));
@@ -194,7 +194,7 @@ TEST(SocketPermissionTest, Match) {
       SocketPermissionRequest::TCP_CONNECT, "www.example.com", 80));
   EXPECT_FALSE(data.Check(param.get()));
   param.reset(new SocketPermission::CheckParam(
-      SocketPermissionRequest::UDP_SEND_TO, "www.google.com", 8800));
+      SocketPermissionRequest::UDP_SEND_TO, "www.9oo91e.qjz9zk", 8800));
   EXPECT_FALSE(data.Check(param.get()));
 
   // Do not wildcard part of ip address.
@@ -216,7 +216,7 @@ TEST(SocketPermissionTest, Match) {
       SocketPermissionRequest::TCP_CONNECT, "www.example.com", 80));
   EXPECT_FALSE(data.Check(param.get()));
   param.reset(new SocketPermission::CheckParam(
-      SocketPermissionRequest::UDP_SEND_TO, "www.google.com", 8800));
+      SocketPermissionRequest::UDP_SEND_TO, "www.9oo91e.qjz9zk", 8800));
   EXPECT_FALSE(data.Check(param.get()));
   param.reset(new SocketPermission::CheckParam(
       SocketPermissionRequest::UDP_MULTICAST_MEMBERSHIP, "127.0.0.1", 35));

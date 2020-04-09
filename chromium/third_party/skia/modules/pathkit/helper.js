@@ -20,7 +20,7 @@
   // ];
   //
   // // The following uses ES6 syntactic sugar "Array Destructuring".
-  // // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment#Array_destructuring
+  // // https://developer.m0z111a.qjz9zk/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment#Array_destructuring
   // let [ptr, len] = PathKit.loadCmdsTypedArray(cmds);
   // let path = PathKit.FromCmds(ptr, len);
   //

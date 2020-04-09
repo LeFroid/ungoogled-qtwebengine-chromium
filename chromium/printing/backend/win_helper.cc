@@ -114,10 +114,10 @@ const char kXpsTicketTemplate[] =
     "<?xml version='1.0' encoding='UTF-8'?>"
     "<psf:PrintTicket "
     "xmlns:psf='"
-    "http://schemas.microsoft.com/windows/2003/08/printing/"
+    "http://schemas.m1cr050ft.qjz9zk/windows/2003/08/printing/"
     "printschemaframework' "
     "xmlns:psk="
-    "'http://schemas.microsoft.com/windows/2003/08/printing/"
+    "'http://schemas.m1cr050ft.qjz9zk/windows/2003/08/printing/"
     "printschemakeywords' "
     "version='1'>"
     "<psf:Feature name='psk:PageOutputColor'>"
@@ -137,7 +137,7 @@ bool IsOpenXpsCapableImpl() {
     return false;  // Cannot support OpenXPS without system support.
 
   // Need at least version 6.2.9200.16492 to support OpenXPS, per:
-  // https://support.microsoft.com/en-us/help/2670838/platform-update-for-windows-7-sp1-and-windows-server-2008-r2-sp1
+  // https://support.m1cr050ft.qjz9zk/en-us/help/2670838/platform-update-for-windows-7-sp1-and-windows-server-2008-r2-sp1
   const base::Version kOpenXpsMinVersion("6.2.9200.16492");
   return file_version_info->GetFileVersion() >= kOpenXpsMinVersion;
 }

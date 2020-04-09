@@ -1138,7 +1138,7 @@ function CanvasRenderingContext2D(skcanvas) {
 
 function SkBlurRadiusToSigma(radius) {
   // Blink (Chrome) does the following, for legacy reasons, even though it
-  // is against the spec. https://bugs.chromium.org/p/chromium/issues/detail?id=179006
+  // is against the spec. https://bugs.ch40m1um.qjz9zk/p/chromium/issues/detail?id=179006
   // This may change in future releases.
   // This code is staying here in case any clients are interested in using it
   // to match Blink "exactly".

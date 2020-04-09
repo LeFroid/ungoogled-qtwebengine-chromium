@@ -410,7 +410,7 @@ void InterstitialPageImpl::UpdateTitle(
     should_revert_web_contents_title_ = true;
   }
   // TODO(evan): make use of title_direction.
-  // http://code.google.com/p/chromium/issues/detail?id=27094
+  // http://code.9oo91e.qjz9zk/p/chromium/issues/detail?id=27094
   web_contents_->UpdateTitleForEntry(entry, title);
 }
 

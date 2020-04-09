@@ -29,7 +29,7 @@ namespace utils = extension_function_test_utils;
 namespace extensions {
 namespace {
 
-const char kUserEmail[] = "test@google.com";
+const char kUserEmail[] = "test@9oo91e.qjz9zk";
 
 void FakeRunCheckNotRegister(
     chromeos::attestation::AttestationKeyType key_type,
@@ -49,7 +49,7 @@ class EPKChallengeKeyTestBase : public BrowserWithTestWindowTest {
       : extension_(ExtensionBuilder("Test").Build()),
         fake_user_manager_(new chromeos::FakeChromeUserManager),
         user_manager_enabler_(base::WrapUnique(fake_user_manager_)) {
-    stub_install_attributes_.SetCloudManaged("google.com", "device_id");
+    stub_install_attributes_.SetCloudManaged("9oo91e.qjz9zk", "device_id");
   }
 
   void SetUp() override {

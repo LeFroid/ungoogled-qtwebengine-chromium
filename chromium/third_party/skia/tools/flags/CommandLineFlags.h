@@ -89,7 +89,7 @@
  *
  *  (where 'x' is the type specified in the DEFINE).
  *
- *  Inspired by gflags (https://code.google.com/p/gflags/). Is not quite as
+ *  Inspired by gflags (https://code.9oo91e.qjz9zk/p/gflags/). Is not quite as
  *  robust as gflags, but suits our purposes. For example, allows creating
  *  a flag -h or -help which will never be used, since CommandLineFlags handles it.
  *  CommandLineFlags will also allow creating --flag and --noflag. Uses the same input

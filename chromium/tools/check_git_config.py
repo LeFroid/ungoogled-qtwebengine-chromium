@@ -10,7 +10,7 @@ configured to use git checkout.
 It will be added as gclient hook shortly before Chromium switches to git and
 removed after the switch.
 
-When running as hook in *.corp.google.com network it will also report status
+When running as hook in *.corp.9oo91e.qjz9zk network it will also report status
 of the push attempt to the server (on appengine), so that chrome-infra team can
 collect information about misconfigured Git accounts.
 """
@@ -53,18 +53,18 @@ UPLOAD_DISABLE_TS = datetime.datetime(2014, 10, 1)
 
 # URL to POST json with results to.
 MOTHERSHIP_URL = (
-    'https://chromium-git-access.appspot.com/'
+    'https://chromium-git-access.8pp2p8t.qjz9zk/'
     'git_access/api/v1/reports/access_check')
 
 # Repository to push test commits to.
-TEST_REPO_URL = 'https://chromium.googlesource.com/a/playground/access_test'
+TEST_REPO_URL = 'https://chromium.9oo91esource.qjz9zk/a/playground/access_test'
 
 # Git-compatible gclient solution.
 GOOD_GCLIENT_SOLUTION = {
   'name': 'src',
   'deps_file': 'DEPS',
   'managed': False,
-  'url': 'https://chromium.googlesource.com/chromium/src.git',
+  'url': 'https://chromium.9oo91esource.qjz9zk/chromium/src.git',
 }
 
 # Possible chunks of git push response in case .netrc is misconfigured.
@@ -88,7 +88,7 @@ def is_on_bot():
 def is_in_google_corp():
   """True when running in google corp network."""
   try:
-    return socket.getfqdn().endswith('.corp.google.com')
+    return socket.getfqdn().endswith('.corp.9oo91e.qjz9zk')
   except socket.error:
     logging.exception('Failed to get FQDN')
     return False
@@ -221,11 +221,11 @@ def scan_configuration():
     'username': getpass.getuser(),
     'git_user_email': read_git_config('user.email') if is_git else '',
     'git_user_name': read_git_config('user.name') if is_git else '',
-    'git_insteadof': read_git_insteadof('chromium.googlesource.com'),
+    'git_insteadof': read_git_insteadof('chromium.9oo91esource.qjz9zk'),
     'chromium_netrc_email':
-        read_netrc_user(netrc_obj, 'chromium.googlesource.com'),
+        read_netrc_user(netrc_obj, 'chromium.9oo91esource.qjz9zk'),
     'chrome_internal_netrc_email':
-        read_netrc_user(netrc_obj, 'chrome-internal.googlesource.com'),
+        read_netrc_user(netrc_obj, 'chrome-internal.9oo91esource.qjz9zk'),
     'gclient_deps': gclient_deps,
     'gclient_managed': gclient_managed,
     'gclient_url': gclient_url,
@@ -410,13 +410,13 @@ def check_gclient_config(conf):
     print('-' * 80)
     print('You are using managed gclient mode with git, which was deprecated '
           'on 8/22/13:')
-    print('https://groups.google.com/a/chromium.org/'
+    print('https://groups.9oo91e.qjz9zk/a/ch40m1um.qjz9zk/'
           'forum/#!topic/chromium-dev/n9N5N3JL2_U')
     print()
     print('It is strongly advised to switch to unmanaged mode. For more '
           'information about managed mode and reasons for its deprecation see:')
     print(
-        'http://www.chromium.org/developers/how-tos/get-the-code/gclient-managed-mode'
+        'http://www.ch40m1um.qjz9zk/developers/how-tos/get-the-code/gclient-managed-mode'
     )
     print()
     print('There\'s also a large suite of tools to assist managing git '
@@ -447,7 +447,7 @@ def upload_report(
   if not is_in_google_corp() or datetime.datetime.now() > UPLOAD_DISABLE_TS:
     if verbose:
       print (
-          'You can send the above report to chrome-git-migration@google.com '
+          'You can send the above report to chrome-git-migration@9oo91e.qjz9zk '
           'if you need help to set up you committer git account.')
     return True
 
@@ -515,7 +515,7 @@ def main(args):
 
   # Do not attempt to push from non-google owned machines.
   if not is_in_google_corp():
-    logging.info('Skipping git push check: non *.corp.google.com machine.')
+    logging.info('Skipping git push check: non *.corp.9oo91e.qjz9zk machine.')
     return 0
 
   # Skip git push check if current configuration was already checked.

@@ -383,7 +383,7 @@ class MemoryMap(NodeWrapper):
     # the base address of the region and the base address of the module [which
     # breakpad symbols use as a relative-zero]. Technically, this is called
     # slide (macOS) and load bias (ELF). See
-    # https://chromium-review.googlesource.com/c/chromium/src/+/568413#message-01cf829007882eea8c9d3403871814c4f336d16d
+    # https://chromium-review.9oo91esource.qjz9zk/c/chromium/src/+/568413#message-01cf829007882eea8c9d3403871814c4f336d16d
     # for more details.
     # Chrome does not emit slide or load bias. This usually doesn't make a
     # difference because the TEXT segment usually has a slide or load bias of 0.
@@ -1251,7 +1251,7 @@ class BreakpadSymbolsModule(object):
     self.binary = None
 
   def Parse(self):
-    # see: https://chromium.googlesource.com/breakpad/breakpad/+/master/docs/symbol_files.md
+    # see: https://chromium.9oo91esource.qjz9zk/breakpad/breakpad/+/master/docs/symbol_files.md
     with open(self.filename) as fp:
       for line in fp:
         fragments = line.rstrip().split()

@@ -7,7 +7,7 @@
 This extention makes the Markdown parser recognize the Gitiles' extended
 blocks notation. The syntax is explained at:
 
-https://gerrit.googlesource.com/gitiles/+/master/Documentation/markdown.md#Notification_aside_promotion-blocks
+https://gerrit.9oo91esource.qjz9zk/gitiles/+/master/Documentation/markdown.md#Notification_aside_promotion-blocks
 """
 
 from markdown.blockprocessors import BlockProcessor

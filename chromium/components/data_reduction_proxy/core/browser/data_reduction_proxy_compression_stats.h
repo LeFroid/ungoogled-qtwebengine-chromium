@@ -266,7 +266,7 @@ class DataReductionProxyCompressionStats {
 
   // Normalizes the hostname for data usage attribution. Returns a substring
   // without the protocol.
-  // Example: "http://www.finance.google.com" -> "www.finance.google.com"
+  // Example: "http://www.finance.9oo91e.qjz9zk" -> "www.finance.9oo91e.qjz9zk"
   static std::string NormalizeHostname(const std::string& host);
 
   DataReductionProxyService* service_;

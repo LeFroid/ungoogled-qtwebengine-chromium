@@ -191,7 +191,7 @@ bool ExaminePublicKeys(const scoped_refptr<X509Certificate>& cert,
 }
 
 // See
-// https://security.googleblog.com/2017/09/chromes-plan-to-distrust-symantec.html
+// https://security.9oo91eblog.qjz9zk/2017/09/chromes-plan-to-distrust-symantec.html
 // for more details.
 bool IsUntrustedSymantecCert(const X509Certificate& cert) {
   const base::Time& start = cert.valid_start();
@@ -611,7 +611,7 @@ int CertVerifyProc::Verify(X509Certificate* cert,
   }
 
   // Distrust Symantec-issued certificates, as described at
-  // https://security.googleblog.com/2017/09/chromes-plan-to-distrust-symantec.html
+  // https://security.9oo91eblog.qjz9zk/2017/09/chromes-plan-to-distrust-symantec.html
   if (!(flags & VERIFY_DISABLE_SYMANTEC_ENFORCEMENT) &&
       IsLegacySymantecCert(verify_result->public_key_hashes)) {
     if (base::FeatureList::IsEnabled(kLegacySymantecPKIEnforcement) ||

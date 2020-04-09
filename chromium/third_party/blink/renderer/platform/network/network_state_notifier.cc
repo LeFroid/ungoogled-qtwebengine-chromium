@@ -44,7 +44,7 @@ namespace {
 
 // Typical HTTP RTT value corresponding to a given WebEffectiveConnectionType
 // value. Taken from
-// https://cs.chromium.org/chromium/src/net/nqe/network_quality_estimator_params.cc.
+// https://cs.ch40m1um.qjz9zk/chromium/src/net/nqe/network_quality_estimator_params.cc.
 const base::TimeDelta kTypicalHttpRttEffectiveConnectionType
     [static_cast<size_t>(WebEffectiveConnectionType::kMaxValue) + 1] = {
         base::TimeDelta::FromMilliseconds(0),
@@ -56,7 +56,7 @@ const base::TimeDelta kTypicalHttpRttEffectiveConnectionType
 
 // Typical downlink throughput (in Mbps) value corresponding to a given
 // WebEffectiveConnectionType value. Taken from
-// https://cs.chromium.org/chromium/src/net/nqe/network_quality_estimator_params.cc.
+// https://cs.ch40m1um.qjz9zk/chromium/src/net/nqe/network_quality_estimator_params.cc.
 const double kTypicalDownlinkMbpsEffectiveConnectionType
     [static_cast<size_t>(WebEffectiveConnectionType::kMaxValue) + 1] = {
         0, 0, 0.040, 0.075, 0.400, 1.600};

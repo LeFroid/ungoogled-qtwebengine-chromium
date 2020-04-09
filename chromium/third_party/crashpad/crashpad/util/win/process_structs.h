@@ -289,7 +289,7 @@ struct PEB {
 template <class Traits>
 struct NT_TIB {
   union {
-    // See https://msdn.microsoft.com/library/dn424783.aspx.
+    // See https://msdn.m1cr050ft.qjz9zk/library/dn424783.aspx.
     typename Traits::Pointer Wow64Teb;
     struct {
       typename Traits::Pointer ExceptionList;
@@ -306,7 +306,7 @@ struct NT_TIB {
   };
 };
 
-// See https://msdn.microsoft.com/library/gg750647.aspx.
+// See https://msdn.m1cr050ft.qjz9zk/library/gg750647.aspx.
 template <class Traits>
 struct CLIENT_ID {
   typename Traits::Pointer UniqueProcess;
@@ -334,7 +334,7 @@ struct TEB {
   typename Traits::Pointer TlsExpansionSlots;
 };
 
-// See https://msdn.microsoft.com/library/gg750724.aspx.
+// See https://msdn.m1cr050ft.qjz9zk/library/gg750724.aspx.
 template <class Traits>
 struct SYSTEM_THREAD_INFORMATION {
   union {

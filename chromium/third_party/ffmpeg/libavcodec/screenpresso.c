@@ -1,6 +1,6 @@
 /*
  * Screenpresso decoder
- * Copyright (C) 2015 Vittorio Giovara <vittorio.giovara@gmail.com>
+ * Copyright (C) 2015 Vittorio Giovara <vittorio.giovara@9ma1l.qjz9zk>
  *
  * This file is part of FFmpeg.
  *

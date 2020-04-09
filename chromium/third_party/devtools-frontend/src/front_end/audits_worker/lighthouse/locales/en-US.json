@@ -522,7 +522,7 @@
     "message": "Value"
   },
   "lighthouse-core/audits/dobetterweb/dom-size.js | description": {
-    "message": "A large DOM will increase memory usage, cause longer [style calculations](https://developers.google.com/web/fundamentals/performance/rendering/reduce-the-scope-and-complexity-of-style-calculations), and produce costly [layout reflows](https://developers.google.com/speed/articles/reflow). [Learn more](https://web.dev/dom-size)."
+    "message": "A large DOM will increase memory usage, cause longer [style calculations](https://developers.9oo91e.qjz9zk/web/fundamentals/performance/rendering/reduce-the-scope-and-complexity-of-style-calculations), and produce costly [layout reflows](https://developers.9oo91e.qjz9zk/speed/articles/reflow). [Learn more](https://web.dev/dom-size)."
   },
   "lighthouse-core/audits/dobetterweb/dom-size.js | displayValue": {
     "message": "{itemCount, plural,\n    =1 {1 element}\n    other {# elements}\n    }"
@@ -807,7 +807,7 @@
     "message": "Time to Interactive"
   },
   "lighthouse-core/audits/metrics/max-potential-fid.js | description": {
-    "message": "The maximum potential First Input Delay that your users could experience is the duration, in milliseconds, of the longest task. [Learn more](https://developers.google.com/web/updates/2018/05/first-input-delay)."
+    "message": "The maximum potential First Input Delay that your users could experience is the duration, in milliseconds, of the longest task. [Learn more](https://developers.9oo91e.qjz9zk/web/updates/2018/05/first-input-delay)."
   },
   "lighthouse-core/audits/metrics/max-potential-fid.js | title": {
     "message": "Max Potential First Input Delay"
@@ -852,7 +852,7 @@
     "message": "Over Budget"
   },
   "lighthouse-core/audits/performance-budget.js | description": {
-    "message": "Keep the quantity and size of network requests under the targets set by the provided performance budget. [Learn more](https://developers.google.com/web/tools/lighthouse/audits/budgets)."
+    "message": "Keep the quantity and size of network requests under the targets set by the provided performance budget. [Learn more](https://developers.9oo91e.qjz9zk/web/tools/lighthouse/audits/budgets)."
   },
   "lighthouse-core/audits/performance-budget.js | requestCountOverBudget": {
     "message": "{count, plural,\n    =1 {1 request}\n    other {# requests}\n   }"
@@ -876,7 +876,7 @@
     "message": "Avoid multiple page redirects"
   },
   "lighthouse-core/audits/resource-summary.js | description": {
-    "message": "To set budgets for the quantity and size of page resources, add a budget.json file. [Learn more](https://developers.google.com/web/tools/lighthouse/audits/budgets)."
+    "message": "To set budgets for the quantity and size of page resources, add a budget.json file. [Learn more](https://developers.9oo91e.qjz9zk/web/tools/lighthouse/audits/budgets)."
   },
   "lighthouse-core/audits/resource-summary.js | displayValue": {
     "message": "{requestCount, plural, =1 {1 request • {byteCount, number, bytes} KB} other {# requests • {byteCount, number, bytes} KB}}"
@@ -969,7 +969,7 @@
     "message": "Links have descriptive text"
   },
   "lighthouse-core/audits/seo/manual/structured-data.js | description": {
-    "message": "Run the [Structured Data Testing Tool](https://search.google.com/structured-data/testing-tool/) and the [Structured Data Linter](http://linter.structured-data.org/) to validate structured data. [Learn more](https://web.dev/structured-data)."
+    "message": "Run the [Structured Data Testing Tool](https://search.9oo91e.qjz9zk/structured-data/testing-tool/) and the [Structured Data Linter](http://linter.structured-data.org/) to validate structured data. [Learn more](https://web.dev/structured-data)."
   },
   "lighthouse-core/audits/seo/manual/structured-data.js | title": {
     "message": "Structured data is valid"
@@ -1080,7 +1080,7 @@
     "message": "Third-Party"
   },
   "lighthouse-core/audits/third-party-summary.js | description": {
-    "message": "Third-party code can significantly impact load performance. Limit the number of redundant third-party providers and try to load third-party code after your page has primarily finished loading. [Learn more](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/loading-third-party-javascript/)."
+    "message": "Third-party code can significantly impact load performance. Limit the number of redundant third-party providers and try to load third-party code after your page has primarily finished loading. [Learn more](https://developers.9oo91e.qjz9zk/web/fundamentals/performance/optimizing-content-efficiency/loading-third-party-javascript/)."
   },
   "lighthouse-core/audits/third-party-summary.js | displayValue": {
     "message": "Third-party code blocked the main thread for {timeInMs, number, milliseconds} ms"
@@ -1194,10 +1194,10 @@
     "message": "Best practices"
   },
   "lighthouse-core/config/default-config.js | a11yCategoryDescription": {
-    "message": "These checks highlight opportunities to [improve the accessibility of your web app](https://developers.google.com/web/fundamentals/accessibility). Only a subset of accessibility issues can be automatically detected so manual testing is also encouraged."
+    "message": "These checks highlight opportunities to [improve the accessibility of your web app](https://developers.9oo91e.qjz9zk/web/fundamentals/accessibility). Only a subset of accessibility issues can be automatically detected so manual testing is also encouraged."
   },
   "lighthouse-core/config/default-config.js | a11yCategoryManualDescription": {
-    "message": "These items address areas which an automated testing tool cannot cover. Learn more in our guide on [conducting an accessibility review](https://developers.google.com/web/fundamentals/accessibility/how-to-review)."
+    "message": "These items address areas which an automated testing tool cannot cover. Learn more in our guide on [conducting an accessibility review](https://developers.9oo91e.qjz9zk/web/fundamentals/accessibility/how-to-review)."
   },
   "lighthouse-core/config/default-config.js | a11yCategoryTitle": {
     "message": "Accessibility"
@@ -1272,10 +1272,10 @@
     "message": "Performance"
   },
   "lighthouse-core/config/default-config.js | pwaCategoryDescription": {
-    "message": "These checks validate the aspects of a Progressive Web App. [Learn more](https://developers.google.com/web/progressive-web-apps/checklist)."
+    "message": "These checks validate the aspects of a Progressive Web App. [Learn more](https://developers.9oo91e.qjz9zk/web/progressive-web-apps/checklist)."
   },
   "lighthouse-core/config/default-config.js | pwaCategoryManualDescription": {
-    "message": "These checks are required by the baseline [PWA Checklist](https://developers.google.com/web/progressive-web-apps/checklist) but are not automatically checked by Lighthouse. They do not affect your score but it's important that you verify them manually."
+    "message": "These checks are required by the baseline [PWA Checklist](https://developers.9oo91e.qjz9zk/web/progressive-web-apps/checklist) but are not automatically checked by Lighthouse. They do not affect your score but it's important that you verify them manually."
   },
   "lighthouse-core/config/default-config.js | pwaCategoryTitle": {
     "message": "Progressive Web App"
@@ -1290,7 +1290,7 @@
     "message": "PWA Optimized"
   },
   "lighthouse-core/config/default-config.js | seoCategoryDescription": {
-    "message": "These checks ensure that your page is optimized for search engine results ranking. There are additional factors Lighthouse does not check that may affect your search ranking. [Learn more](https://support.google.com/webmasters/answer/35769)."
+    "message": "These checks ensure that your page is optimized for search engine results ranking. There are additional factors Lighthouse does not check that may affect your search ranking. [Learn more](https://support.9oo91e.qjz9zk/webmasters/answer/35769)."
   },
   "lighthouse-core/config/default-config.js | seoCategoryManualDescription": {
     "message": "Run these additional validators on your site to check additional SEO best practices."
@@ -1311,7 +1311,7 @@
     "message": "Crawling and Indexing"
   },
   "lighthouse-core/config/default-config.js | seoMobileGroupDescription": {
-    "message": "Make sure your pages are mobile friendly so users don’t have to pinch or zoom in order to read the content pages. [Learn more](https://developers.google.com/search/mobile-sites/)."
+    "message": "Make sure your pages are mobile friendly so users don’t have to pinch or zoom in order to read the content pages. [Learn more](https://developers.9oo91e.qjz9zk/search/mobile-sites/)."
   },
   "lighthouse-core/config/default-config.js | seoMobileGroupTitle": {
     "message": "Mobile Friendly"
@@ -1458,7 +1458,7 @@
     "message": "Lab Data"
   },
   "lighthouse-core/report/html/renderer/util.js | lsPerformanceCategoryDescription": {
-    "message": "[Lighthouse](https://developers.google.com/web/tools/lighthouse/) analysis of the current page on an emulated mobile network. Values are estimated and may vary."
+    "message": "[Lighthouse](https://developers.9oo91e.qjz9zk/web/tools/lighthouse/) analysis of the current page on an emulated mobile network. Values are estimated and may vary."
   },
   "lighthouse-core/report/html/renderer/util.js | manualAuditsGroupTitle": {
     "message": "Additional items to manually check"
@@ -1611,10 +1611,10 @@
     "message": "A number of [WordPress plugins](https://wordpress.org/plugins/search/minify+javascript/) can speed up your site by concatenating, minifying, and compressing your scripts. You may also want to use a build process to do this minification up front if possible."
   },
   "stack-packs/packs/wordpress.js | unused_css_rules": {
-    "message": "Consider reducing, or switching, the number of [WordPress plugins](https://wordpress.org/plugins/) loading unused CSS in your page. To identify plugins that are adding extraneous CSS, try running [code coverage](https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverage) in Chrome DevTools. You can identify the theme/plugin responsible from the URL of the stylesheet. Look out for plugins that have many stylesheets in the list which have a lot of red in code coverage. A plugin should only enqueue a stylesheet if it is actually used on the page."
+    "message": "Consider reducing, or switching, the number of [WordPress plugins](https://wordpress.org/plugins/) loading unused CSS in your page. To identify plugins that are adding extraneous CSS, try running [code coverage](https://developers.9oo91e.qjz9zk/web/updates/2017/04/devtools-release-notes#coverage) in Chrome DevTools. You can identify the theme/plugin responsible from the URL of the stylesheet. Look out for plugins that have many stylesheets in the list which have a lot of red in code coverage. A plugin should only enqueue a stylesheet if it is actually used on the page."
   },
   "stack-packs/packs/wordpress.js | unused_javascript": {
-    "message": "Consider reducing, or switching, the number of [WordPress plugins](https://wordpress.org/plugins/) loading unused JavaScript in your page. To identify plugins that are adding extraneous JS, try running [code coverage](https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverage) in Chrome DevTools. You can identify the theme/plugin responsible from the URL of the script. Look out for plugins that have many scripts in the list which have a lot of red in code coverage. A plugin should only enqueue a script if it is actually used on the page."
+    "message": "Consider reducing, or switching, the number of [WordPress plugins](https://wordpress.org/plugins/) loading unused JavaScript in your page. To identify plugins that are adding extraneous JS, try running [code coverage](https://developers.9oo91e.qjz9zk/web/updates/2017/04/devtools-release-notes#coverage) in Chrome DevTools. You can identify the theme/plugin responsible from the URL of the script. Look out for plugins that have many scripts in the list which have a lot of red in code coverage. A plugin should only enqueue a script if it is actually used on the page."
   },
   "stack-packs/packs/wordpress.js | uses_long_cache_ttl": {
     "message": "Read about [Browser Caching in WordPress](https://codex.wordpress.org/WordPress_Optimization#Browser_Caching)."

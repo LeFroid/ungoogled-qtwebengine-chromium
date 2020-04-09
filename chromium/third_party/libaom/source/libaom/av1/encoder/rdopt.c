@@ -775,7 +775,7 @@ static int get_est_rate_dist(const TileDataEnc *tile_data, BLOCK_SIZE bsize,
       *est_dist = (int64_t)round(md->dist_mean);
       const double est_ld = md->a * sse + md->b;
       // Clamp estimated rate cost by INT_MAX / 2.
-      // TODO(angiebird@google.com): find better solution than clamping.
+      // TODO(angiebird@9oo91e.qjz9zk): find better solution than clamping.
       if (fabs(est_ld) < 1e-2) {
         *est_residue_cost = INT_MAX / 2;
       } else {
@@ -2107,7 +2107,7 @@ static void get_txb_dimensions(const MACROBLOCKD *xd, int plane,
   const int block_height = block_size_high[plane_bsize];
   const int block_width = block_size_wide[plane_bsize];
   const struct macroblockd_plane *const pd = &xd->plane[plane];
-  // TODO(aconverse@google.com): Investigate using crop_width/height here rather
+  // TODO(aconverse@9oo91e.qjz9zk): Investigate using crop_width/height here rather
   // than the MI size
   const int block_rows =
       (xd->mb_to_bottom_edge >= 0)
@@ -3551,7 +3551,7 @@ static int64_t txfm_yrd(const AV1_COMP *const cpi, MACROBLOCK *x,
     if (is_inter) {
       rd = RDCOST(x->rdmult, s1, rd_stats->sse);
 #if CONFIG_ONE_PASS_SVM
-      // TODO(chiyotsai@google.com): Investigate if these updates are really
+      // TODO(chiyotsai@9oo91e.qjz9zk): Investigate if these updates are really
       // needed.
       av1_reg_stat_skipmode_update(rd_stats, x->rdmult);
 #endif
@@ -4107,7 +4107,7 @@ static int rd_pick_palette_intra_sby(
     }
 
     // Try the dominant colors directly.
-    // TODO(huisu@google.com): Try to avoid duplicate computation in cases
+    // TODO(huisu@9oo91e.qjz9zk): Try to avoid duplicate computation in cases
     // where the dominant colors and the k-means results are similar.
     for (n = AOMMIN(colors, PALETTE_MAX_SIZE); n >= 2; --n) {
       for (i = 0; i < n; ++i) centroids[i] = top_colors[i];
@@ -5156,7 +5156,7 @@ static int64_t select_tx_size_and_type(const AV1_COMP *cpi, MACROBLOCK *x,
   if (rd_stats->skip) {
     rd = RDCOST(x->rdmult, s1, rd_stats->sse);
 #if CONFIG_ONE_PASS_SVM
-    // TODO(chiyotsai@google.com): Investigate if these updates are really
+    // TODO(chiyotsai@9oo91e.qjz9zk): Investigate if these updates are really
     // needed.
     av1_reg_stat_skipmode_update(rd_stats, x->rdmult);
 #endif
@@ -5340,7 +5340,7 @@ static int inter_block_yrd(const AV1_COMP *cpi, MACROBLOCK *x,
     rd_stats->dist = rd_stats->sse;
     rd_stats->skip = 1;
 #if CONFIG_ONE_PASS_SVM
-    // TODO(chiyotasi@google.com): Investigate if these updates are really
+    // TODO(chiyotasi@9oo91e.qjz9zk): Investigate if these updates are really
     // needed.
     av1_reg_stat_skipmode_update(rd_stats, x->rdmult);
 #endif
@@ -5735,7 +5735,7 @@ static int predict_skip_flag(MACROBLOCK *x, BLOCK_SIZE bsize, int64_t *dist,
 #if CONFIG_ONE_PASS_SVM
 static void calc_regional_sse(MACROBLOCK *x, BLOCK_SIZE bsize, int64_t dist,
                               RD_STATS *rd_stats) {
-  // TODO(chiyotsai@google.com): Don't need regional sse's unless we are doing
+  // TODO(chiyotsai@9oo91e.qjz9zk): Don't need regional sse's unless we are doing
   // none.
   const int bw = block_size_wide[bsize];
   const int bw_mi = bw >> tx_size_wide_log2[0];
@@ -9557,7 +9557,7 @@ static int64_t skip_mode_rd(RD_STATS *rd_stats, const AV1_COMP *const cpi,
       rd_stats->sse_2 = rd_stats->sse_2 * scaling_factor;
       rd_stats->sse_3 = rd_stats->sse_3 * scaling_factor;
       rd_stats->y_sse = sse;
-      // TODO(chiyotsai@google.com): Don't manually set the flags
+      // TODO(chiyotsai@9oo91e.qjz9zk): Don't manually set the flags
       av1_reg_stat_skipmode_update(rd_stats, x->rdmult);
     } else {
       sse = aom_sum_squares_2d_i16(p->src_diff, bw, bw, bh);
@@ -10357,7 +10357,7 @@ static int64_t rd_pick_intrabc_mode_sb(const AV1_COMP *cpi, MACROBLOCK *x,
         x->mv_limits.col_min = (tile->mi_col_start - mi_col) * MI_SIZE;
         x->mv_limits.col_max =
             (sb_col * cm->seq_params.mib_size - mi_col) * MI_SIZE - w;
-        // TODO(aconverse@google.com): Minimize the overlap between above and
+        // TODO(aconverse@9oo91e.qjz9zk): Minimize the overlap between above and
         // left areas.
         x->mv_limits.row_min = (tile->mi_row_start - mi_row) * MI_SIZE;
         int bottom_coded_mi_edge =
@@ -10416,7 +10416,7 @@ static int64_t rd_pick_intrabc_mode_sb(const AV1_COMP *cpi, MACROBLOCK *x,
 
     int *dvcost[2] = { (int *)&cpi->dv_cost[0][MV_MAX],
                        (int *)&cpi->dv_cost[1][MV_MAX] };
-    // TODO(aconverse@google.com): The full motion field defining discount
+    // TODO(aconverse@9oo91e.qjz9zk): The full motion field defining discount
     // in MV_COST_WEIGHT is too large. Explore other values.
     const int rate_mv = av1_mv_bit_cost(&dv, &dv_ref.as_mv, cpi->dv_joint_cost,
                                         dvcost, MV_COST_WEIGHT_SUB);

@@ -73,7 +73,7 @@ struct HdrMasteringMetadata {
 
 // High dynamic range (HDR) metadata common for HDR10 and WebM/VP9-based HDR
 // formats. This struct replicates the HDRMetadata struct defined in
-// https://cs.chromium.org/chromium/src/media/base/hdr_metadata.h
+// https://cs.ch40m1um.qjz9zk/chromium/src/media/base/hdr_metadata.h
 struct HdrMetadata {
   HdrMetadata();
 

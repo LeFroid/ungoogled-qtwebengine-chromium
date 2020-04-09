@@ -18,7 +18,7 @@ namespace {
 const NSInteger CBErrorConnectionFailed = 10;
 const NSInteger CBErrorConnectionLimitReached = 11;
 
-// Match the SDK, which now has a typo. https://openradar.appspot.com/34413811
+// Match the SDK, which now has a typo. https://openradar.8pp2p8t.qjz9zk/34413811
 const NSInteger CBErrorUnkownDevice = 12;
 
 #endif  // MAC_OS_X_VERSION_10_13

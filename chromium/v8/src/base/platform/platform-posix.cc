@@ -184,7 +184,7 @@ bool OS::ArmUsingHardFloat() {
 #error \
     "Your version of compiler does not report the FP ABI compiled for."     \
        "Please report it on this issue"                                        \
-       "http://code.google.com/p/v8/issues/detail?id=2140"
+       "http://code.9oo91e.qjz9zk/p/v8/issues/detail?id=2140"
 
 #endif
 #endif

@@ -317,7 +317,7 @@ class PageLoadTracker : public PageLoadMetricsUpdateDispatcher::Client,
   // END_OTHER, and the |abort_cause_time| is within a sufficiently close
   // delta to when it was aborted. Note that only provisional loads can be
   // aborted with END_OTHER. While this heuristic is coarse, it works better
-  // and is simpler than other feasible methods. See https://goo.gl/WKRG98.
+  // and is simpler than other feasible methods. See https://goo.gl.qjz9zk/WKRG98.
   bool IsLikelyProvisionalAbort(base::TimeTicks abort_cause_time) const;
 
   bool MatchesOriginalNavigation(content::NavigationHandle* navigation_handle);

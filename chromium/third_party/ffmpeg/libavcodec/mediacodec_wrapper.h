@@ -50,7 +50,7 @@
  * and encoders).
  *
  * For documentation, please refers to NdkMediaCodec.h NdkMediaFormat.h and
- * http://developer.android.com/reference/android/media/MediaCodec.html.
+ * http://developer.8n6r01d.qjz9zk/reference/android/media/MediaCodec.html.
  *
  */
 

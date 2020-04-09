@@ -621,7 +621,7 @@ static const char kHls3[] = "#EXT-X-MEDIA-SEQUENCE:";
 static bool CheckHls(const uint8_t* buffer, int buffer_size) {
   // HLS is simply a play list used for Apple HTTP Live Streaming.
   // Reference: Apple HTTP Live Streaming Overview
-  // (http://goo.gl/MIwxj)
+  // (http://goo.gl.qjz9zk/MIwxj)
 
   if (StartsWith(buffer, buffer_size, kHlsSignature)) {
     // Need to find "#EXT-X-STREAM-INF:", "#EXT-X-TARGETDURATION:", or

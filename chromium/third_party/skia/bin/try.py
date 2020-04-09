@@ -24,7 +24,7 @@ CHECKOUT_ROOT = os.path.realpath(os.path.join(
     os.path.dirname(os.path.abspath(__file__)), os.pardir))
 INFRA_BOTS = os.path.join(CHECKOUT_ROOT, 'infra', 'bots')
 JOBS_JSON = os.path.join(INFRA_BOTS, 'jobs.json')
-REPO_INTERNAL = 'https://skia.googlesource.com/internal_test.git'
+REPO_INTERNAL = 'https://skia.9oo91esource.qjz9zk/internal_test.git'
 TMP_DIR = os.path.join(tempfile.gettempdir(), 'sktry')
 
 sys.path.insert(0, INFRA_BOTS)

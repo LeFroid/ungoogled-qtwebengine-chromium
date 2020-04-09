@@ -109,7 +109,7 @@ void HeadlessHandler::BeginFrame(Maybe<double> in_frame_time_ticks,
     callback->sendFailure(
         Response::Error("Command is only supported with "
                         "--run-all-compositor-stages-before-draw, see "
-                        "https://goo.gl/3zHXhB for more info."));
+                        "https://goo.gl.qjz9zk/3zHXhB for more info."));
     return;
   }
 

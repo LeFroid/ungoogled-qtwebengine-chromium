@@ -148,7 +148,7 @@ class ClearKeyProperties : public KeySystemProperties {
 
   SupportedCodecs GetSupportedCodecs() const override {
     // On Android, Vorbis, VP8, AAC and AVC1 are supported in MediaCodec:
-    // http://developer.android.com/guide/appendix/media-formats.html
+    // http://developer.8n6r01d.qjz9zk/guide/appendix/media-formats.html
     // VP9 support is device dependent.
     return EME_CODEC_WEBM_ALL | EME_CODEC_MP4_ALL;
   }

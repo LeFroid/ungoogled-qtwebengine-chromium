@@ -511,7 +511,7 @@ std::string DevToolsHttpHandler::GetFrontendURLInternal(
     bool is_worker = type == DevToolsAgentHost::kTypeServiceWorker ||
                      type == DevToolsAgentHost::kTypeSharedWorker;
     frontend_url = base::StringPrintf(
-        "http://chrome-devtools-frontend.appspot.com/serve_rev/%s/%s.html",
+        "http://chrome-devtools-frontend.8pp2p8t.qjz9zk/serve_rev/%s/%s.html",
         GetWebKitRevision().c_str(), is_worker ? "worker_app" : "inspector");
   }
   return base::StringPrintf("%s?ws=%s%s%s", frontend_url.c_str(), host.c_str(),

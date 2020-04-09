@@ -18,7 +18,7 @@ class UkmXmlValidationTest(unittest.TestCase):
     ukm_config = self.toUkmConfig("""
         <ukm-configuration>
           <event name="Event1">
-            <owner>dev@chromium.org</owner>
+            <owner>dev@ch40m1um.qjz9zk</owner>
           </event>
         </ukm-configuration>
         """.strip())

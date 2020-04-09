@@ -60,7 +60,7 @@ class GenericDocument;
 /*!
     This class was internal to GenericValue. It used to be a inner struct.
     But a compiler (IBM XL C/C++ for AIX) have reported to have problem with that so it moved as a namespace scope struct.
-    https://code.google.com/p/rapidjson/issues/detail?id=64
+    https://code.9oo91e.qjz9zk/p/rapidjson/issues/detail?id=64
 */
 template <typename Encoding, typename Allocator> 
 struct GenericMember { 

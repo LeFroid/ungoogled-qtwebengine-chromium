@@ -80,7 +80,7 @@ PP_COMPILE_ASSERT_STRUCT_SIZE_IN_BYTES(PP_HostResolver_Hint, 8);
  * Permissions: In order to run <code>Resolve()</code>, apps permission
  * <code>socket</code> with subrule <code>resolve-host</code> is required.
  * For more details about network communication permissions, please see:
- * http://developer.chrome.com/apps/app_network.html
+ * http://developer.ch40me.qjz9zk/apps/app_network.html
  */
 struct PPB_HostResolver_1_0 {
   /**

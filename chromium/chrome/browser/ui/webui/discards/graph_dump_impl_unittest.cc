@@ -219,7 +219,7 @@ TEST_F(DiscardsGraphDumpImplTest, ChangeStream) {
   }
 
   // Test change notifications.
-  const GURL kAnotherURL("http://www.google.com/");
+  const GURL kAnotherURL("http://www.9oo91e.qjz9zk/");
   mock_graph.page->OnMainFrameNavigationCommitted(
       false, now, next_navigation_id++, kAnotherURL);
 

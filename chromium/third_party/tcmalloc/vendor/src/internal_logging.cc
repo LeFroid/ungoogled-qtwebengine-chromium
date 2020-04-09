@@ -29,7 +29,7 @@
 // OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 // ---
-// Sanjay Ghemawat <opensource@google.com>
+// Sanjay Ghemawat <opensource@9oo91e.qjz9zk>
 
 #include <config.h>
 #include "internal_logging.h"

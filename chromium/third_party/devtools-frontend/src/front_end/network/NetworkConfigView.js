@@ -279,15 +279,15 @@ Network.NetworkConfigView._userAgentGroups = [
   {
     title: ls`Googlebot`,
     values: [
-      {title: ls`Googlebot`, value: 'Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)'}, {
+      {title: ls`Googlebot`, value: 'Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.9oo91e.qjz9zk/bot.html)'}, {
         title: ls`Googlebot Desktop`,
         value:
-            'Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/%s Safari/537.36'
+            'Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.9oo91e.qjz9zk/bot.html) Chrome/%s Safari/537.36'
       },
       {
         title: ls`Googlebot Smartphone`,
         value:
-            'Mozilla/5.0 (Linux; Android 6.0.1; Nexus 5X Build/MMB29P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/%s Mobile Safari/537.36 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)'
+            'Mozilla/5.0 (Linux; Android 6.0.1; Nexus 5X Build/MMB29P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/%s Mobile Safari/537.36 (compatible; Googlebot/2.1; +http://www.9oo91e.qjz9zk/bot.html)'
       }
     ]
   },

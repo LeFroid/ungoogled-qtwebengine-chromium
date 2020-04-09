@@ -119,10 +119,10 @@ function updateCrashList(
         comment: commentLines.join('\n'),
         // TODO(scottmg): Use add_labels to add 'User-Submitted' rather than
         // duplicating the template's labels (the first two) once
-        // https://bugs.chromium.org/p/monorail/issues/detail?id=1488 is done.
+        // https://bugs.ch40m1um.qjz9zk/p/monorail/issues/detail?id=1488 is done.
         labels: 'Restrict-View-EditIssue,Stability-Crash,User-Submitted',
       };
-      let href = 'https://code.google.com/p/chromium/issues/entry';
+      let href = 'https://code.9oo91e.qjz9zk/p/chromium/issues/entry';
       for (const param in params) {
         href = appendParam(href, param, params[param]);
       }

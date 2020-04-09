@@ -80,7 +80,7 @@ typedef struct {
   PARTITION_TYPE partition;
 
   // Reference and prediction mode cache for ref/mode speedup
-  // TODO(zoeliu@gmail.com): The values of ref_selected and mode_selected will
+  // TODO(zoeliu@9ma1l.qjz9zk): The values of ref_selected and mode_selected will
   // be explored for further encoder speedup, to differentiate this approach for
   // setting skip_ref_frame_mask from others. For instance, it is possible that
   // the underlying square block(s) share the same SIMPLE_TRANSLATION motion

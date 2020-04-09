@@ -514,7 +514,7 @@ TEST_F(PreviewsDeciderImplTest, AllPreviewsDisabledByFeature) {
 
   PreviewsUserData user_data2(kDefaultPageId);
   content::MockNavigationHandle navigation_handle;
-  navigation_handle.set_url(GURL("https://www.google.com"));
+  navigation_handle.set_url(GURL("https://www.9oo91e.qjz9zk"));
   EXPECT_FALSE(previews_decider_impl()->ShouldAllowPreviewAtNavigationStart(
       &user_data2, &navigation_handle, false, PreviewsType::NOSCRIPT));
 }
@@ -529,7 +529,7 @@ TEST_F(PreviewsDeciderImplTest, TestDisallowBasicAuthentication) {
   base::HistogramTester histogram_tester;
   PreviewsUserData user_data(kDefaultPageId);
   content::MockNavigationHandle navigation_handle;
-  navigation_handle.set_url(GURL("https://user:pass@www.google.com"));
+  navigation_handle.set_url(GURL("https://user:pass@www.9oo91e.qjz9zk"));
   EXPECT_FALSE(previews_decider_impl()->ShouldAllowPreviewAtNavigationStart(
       &user_data, &navigation_handle, false, PreviewsType::OFFLINE));
   histogram_tester.ExpectBucketCount(
@@ -551,7 +551,7 @@ TEST_F(PreviewsDeciderImplTest,
 
   PreviewsUserData user_data(kDefaultPageId);
   content::MockNavigationHandle navigation_handle;
-  navigation_handle.set_url(GURL("https://www.google.com"));
+  navigation_handle.set_url(GURL("https://www.9oo91e.qjz9zk"));
 
   InitializeUIServiceWithoutWaitingForBlackList(
       /*include_previews_opt_guide=*/true);
@@ -598,14 +598,14 @@ TEST_F(PreviewsDeciderImplTest, MAYBE_TestSetBlacklistBoolDueToBlackListState) {
 
   PreviewsUserData user_data(kDefaultPageId);
   content::MockNavigationHandle navigation_handle;
-  navigation_handle.set_url(GURL("https://www.google.com"));
+  navigation_handle.set_url(GURL("https://www.9oo91e.qjz9zk"));
 
   base::HistogramTester histogram_tester;
   InitializeUIServiceWithoutWaitingForBlackList(
       /*include_previews_opt_guide=*/true);
   base::RunLoop().RunUntilIdle();
   previews_decider_impl()->AddPreviewNavigation(
-      GURL("https://www.google.com"), true, PreviewsType::LITE_PAGE, 1);
+      GURL("https://www.9oo91e.qjz9zk"), true, PreviewsType::LITE_PAGE, 1);
 
   EXPECT_FALSE(user_data.black_listed_for_lite_page());
   EXPECT_FALSE(previews_decider_impl()->ShouldAllowPreviewAtNavigationStart(
@@ -621,7 +621,7 @@ TEST_F(PreviewsDeciderImplTest,
 
   PreviewsUserData user_data(kDefaultPageId);
   content::MockNavigationHandle navigation_handle;
-  navigation_handle.set_url(GURL("https://www.google.com"));
+  navigation_handle.set_url(GURL("https://www.9oo91e.qjz9zk"));
 
   ReportEffectiveConnectionType(net::EFFECTIVE_CONNECTION_TYPE_UNKNOWN);
 
@@ -645,7 +645,7 @@ TEST_F(PreviewsDeciderImplTest, TestAllowLitePageWhenNetworkQualityFast) {
 
   PreviewsUserData user_data(kDefaultPageId);
   content::MockNavigationHandle navigation_handle;
-  navigation_handle.set_url(GURL("https://www.google.com"));
+  navigation_handle.set_url(GURL("https://www.9oo91e.qjz9zk"));
 
   // LitePage check NQE on its own.
   ReportEffectiveConnectionType(net::EFFECTIVE_CONNECTION_TYPE_4G);
@@ -665,7 +665,7 @@ TEST_F(PreviewsDeciderImplTest, TestAllowLitePageWhenPageLoadNotPainful) {
 
   PreviewsUserData user_data(kDefaultPageId);
   content::MockNavigationHandle navigation_handle;
-  navigation_handle.set_url(GURL("https://www.google.com"));
+  navigation_handle.set_url(GURL("https://www.9oo91e.qjz9zk"));
 
   // LitePage makes its own judgments about painful page loads.
   ReportEffectiveConnectionType(net::EFFECTIVE_CONNECTION_TYPE_4G);
@@ -685,7 +685,7 @@ TEST_F(PreviewsDeciderImplTest, TestDisallowOfflineWhenNetworkQualityFast) {
 
   PreviewsUserData user_data(kDefaultPageId);
   content::MockNavigationHandle navigation_handle;
-  navigation_handle.set_url(GURL("https://www.google.com"));
+  navigation_handle.set_url(GURL("https://www.9oo91e.qjz9zk"));
 
   ReportEffectiveConnectionType(net::EFFECTIVE_CONNECTION_TYPE_3G);
   base::HistogramTester histogram_tester;
@@ -703,7 +703,7 @@ TEST_F(PreviewsDeciderImplTest, TestDisallowOfflineWhenPageLoadNotPainful) {
 
   PreviewsUserData user_data(kDefaultPageId);
   content::MockNavigationHandle navigation_handle;
-  navigation_handle.set_url(GURL("https://www.google.com"));
+  navigation_handle.set_url(GURL("https://www.9oo91e.qjz9zk"));
 
   ReportEffectiveConnectionType(net::EFFECTIVE_CONNECTION_TYPE_3G);
   base::HistogramTester histogram_tester;
@@ -723,7 +723,7 @@ TEST_F(PreviewsDeciderImplTest, TestDisallowOfflineWhenNetworkOffline) {
 
   PreviewsUserData user_data(kDefaultPageId);
   content::MockNavigationHandle navigation_handle;
-  navigation_handle.set_url(GURL("https://www.google.com"));
+  navigation_handle.set_url(GURL("https://www.9oo91e.qjz9zk"));
 
   ReportEffectiveConnectionType(net::EFFECTIVE_CONNECTION_TYPE_OFFLINE);
   base::HistogramTester histogram_tester;
@@ -743,7 +743,7 @@ TEST_F(PreviewsDeciderImplTest, TestDisallowOfflineOnReload) {
 
   PreviewsUserData user_data(kDefaultPageId);
   content::MockNavigationHandle navigation_handle;
-  navigation_handle.set_url(GURL("https://www.google.com"));
+  navigation_handle.set_url(GURL("https://www.9oo91e.qjz9zk"));
 
   base::HistogramTester histogram_tester;
   EXPECT_FALSE(previews_decider_impl()->ShouldAllowPreviewAtNavigationStart(
@@ -766,7 +766,7 @@ TEST_F(PreviewsDeciderImplTest, TestDisallowOfflineOnReloadWithExperiment) {
 
   PreviewsUserData user_data(kDefaultPageId);
   content::MockNavigationHandle navigation_handle;
-  navigation_handle.set_url(GURL("https://www.google.com"));
+  navigation_handle.set_url(GURL("https://www.9oo91e.qjz9zk"));
 
   base::HistogramTester histogram_tester;
   EXPECT_FALSE(previews_decider_impl()->ShouldAllowPreviewAtNavigationStart(
@@ -799,7 +799,7 @@ TEST_F(PreviewsDeciderImplTest, TestAllowOffline) {
 
     PreviewsUserData user_data(kDefaultPageId);
     content::MockNavigationHandle navigation_handle;
-    navigation_handle.set_url(GURL("https://www.google.com"));
+    navigation_handle.set_url(GURL("https://www.9oo91e.qjz9zk"));
     base::HistogramTester histogram_tester;
     EXPECT_EQ(test.expected_offline_allowed,
               previews_decider_impl()->ShouldAllowPreviewAtNavigationStart(
@@ -829,7 +829,7 @@ TEST_F(PreviewsDeciderImplTest, OfflineDisallowedWhenFeatureDisabled) {
 
   PreviewsUserData user_data(kDefaultPageId);
   content::MockNavigationHandle navigation_handle;
-  navigation_handle.set_url(GURL("https://www.google.com"));
+  navigation_handle.set_url(GURL("https://www.9oo91e.qjz9zk"));
   base::HistogramTester histogram_tester;
   EXPECT_FALSE(previews_decider_impl()->ShouldAllowPreviewAtNavigationStart(
       &user_data, &navigation_handle, false, PreviewsType::OFFLINE));
@@ -847,7 +847,7 @@ TEST_F(PreviewsDeciderImplTest,
 
   PreviewsUserData user_data(kDefaultPageId);
   content::MockNavigationHandle navigation_handle;
-  navigation_handle.set_url(GURL("https://www.google.com"));
+  navigation_handle.set_url(GURL("https://www.9oo91e.qjz9zk"));
   base::HistogramTester histogram_tester;
   EXPECT_FALSE(previews_decider_impl()->ShouldAllowPreviewAtNavigationStart(
       &user_data, &navigation_handle, false, PreviewsType::OFFLINE));
@@ -882,7 +882,7 @@ TEST_F(PreviewsDeciderImplTest, NoScriptFeatureDefaultBehavior) {
   base::HistogramTester histogram_tester;
   PreviewsUserData user_data(kDefaultPageId);
   content::MockNavigationHandle navigation_handle;
-  navigation_handle.set_url(GURL("https://www.google.com"));
+  navigation_handle.set_url(GURL("https://www.9oo91e.qjz9zk"));
 #if defined(OS_ANDROID)
   // Enabled by default on Android. NOSCRIPT always allowed at navigation start
   // to handle asynchronous loading of page hints; non-whitelisted ones are
@@ -915,7 +915,7 @@ TEST_F(PreviewsDeciderImplTest, NoScriptNotAllowedWithoutOptimizationHints) {
     base::HistogramTester histogram_tester;
     PreviewsUserData user_data(kDefaultPageId);
     content::MockNavigationHandle navigation_handle;
-    navigation_handle.set_url(GURL("https://www.google.com"));
+    navigation_handle.set_url(GURL("https://www.9oo91e.qjz9zk"));
     EXPECT_FALSE(previews_decider_impl()->ShouldAllowPreviewAtNavigationStart(
         &user_data, &navigation_handle, false, PreviewsType::NOSCRIPT));
     EXPECT_EQ(test_ect, user_data.navigation_ect());
@@ -937,7 +937,7 @@ TEST_F(PreviewsDeciderImplTest, NoScriptAllowedByFeatureWithWhitelist) {
 
   PreviewsUserData user_data(kDefaultPageId);
   content::MockNavigationHandle navigation_handle;
-  navigation_handle.set_url(GURL("https://www.google.com"));
+  navigation_handle.set_url(GURL("https://www.9oo91e.qjz9zk"));
   // First verify preview allowed for non-whitelisted url; they're always
   // allowed at navigation start to enable asynchronous loading of page hints.
   EXPECT_TRUE(previews_decider_impl()->ShouldAllowPreviewAtNavigationStart(
@@ -945,7 +945,7 @@ TEST_F(PreviewsDeciderImplTest, NoScriptAllowedByFeatureWithWhitelist) {
 
   // Now verify preview allowed for whitelisted url.
   content::MockNavigationHandle whitelisted_navigation_handle;
-  whitelisted_navigation_handle.set_url(GURL("https://www.google.com"));
+  whitelisted_navigation_handle.set_url(GURL("https://www.9oo91e.qjz9zk"));
   EXPECT_TRUE(previews_decider_impl()->ShouldAllowPreviewAtNavigationStart(
       &user_data, &navigation_handle, false, PreviewsType::NOSCRIPT));
 
@@ -966,7 +966,7 @@ TEST_F(PreviewsDeciderImplTest, NoScriptCommitTimeWhitelistCheck) {
     base::HistogramTester histogram_tester;
     PreviewsUserData user_data(kDefaultPageId);
     content::MockNavigationHandle navigation_handle;
-    navigation_handle.set_url(GURL("https://www.google.com"));
+    navigation_handle.set_url(GURL("https://www.9oo91e.qjz9zk"));
     EXPECT_FALSE(previews_decider_impl()->ShouldCommitPreview(
         &user_data, &navigation_handle, PreviewsType::NOSCRIPT));
 
@@ -1073,7 +1073,7 @@ TEST_F(PreviewsDeciderImplTest,
   base::HistogramTester histogram_tester;
   PreviewsUserData user_data(kDefaultPageId);
   content::MockNavigationHandle navigation_handle;
-  navigation_handle.set_url(GURL("https://www.google.com"));
+  navigation_handle.set_url(GURL("https://www.9oo91e.qjz9zk"));
   EXPECT_TRUE(previews_decider_impl()->ShouldAllowPreviewAtNavigationStart(
       &user_data, &navigation_handle, false, PreviewsType::LITE_PAGE_REDIRECT));
 
@@ -1095,7 +1095,7 @@ TEST_F(PreviewsDeciderImplTest, LitePageRedirectDisallowedByServerBlacklist) {
 
   PreviewsUserData user_data(kDefaultPageId);
   content::MockNavigationHandle navigation_handle;
-  navigation_handle.set_url(GURL("https://www.google.com"));
+  navigation_handle.set_url(GURL("https://www.9oo91e.qjz9zk"));
   // First verify preview allowed for non-whitelisted url.
   EXPECT_TRUE(previews_decider_impl()->ShouldAllowPreviewAtNavigationStart(
       &user_data, &navigation_handle, false, PreviewsType::LITE_PAGE_REDIRECT));
@@ -1142,7 +1142,7 @@ TEST_F(PreviewsDeciderImplTest,
 
   PreviewsUserData user_data(kDefaultPageId);
   content::MockNavigationHandle navigation_handle;
-  navigation_handle.set_url(GURL("https://www.google.com"));
+  navigation_handle.set_url(GURL("https://www.9oo91e.qjz9zk"));
   // First verify preview allowed for non-whitelisted url.
   EXPECT_TRUE(previews_decider_impl()->ShouldAllowPreviewAtNavigationStart(
       &user_data, &navigation_handle, false, PreviewsType::LITE_PAGE_REDIRECT));
@@ -1170,7 +1170,7 @@ TEST_F(PreviewsDeciderImplTest, ResourceLoadingHintsAllowedByDefault) {
   base::HistogramTester histogram_tester;
   PreviewsUserData user_data(kDefaultPageId);
   content::MockNavigationHandle navigation_handle;
-  navigation_handle.set_url(GURL("https://www.google.com"));
+  navigation_handle.set_url(GURL("https://www.9oo91e.qjz9zk"));
 
 #if defined(OS_ANDROID)
   bool expected = true;
@@ -1247,7 +1247,7 @@ TEST_F(PreviewsDeciderImplTest,
   base::HistogramTester histogram_tester;
   PreviewsUserData user_data(kDefaultPageId);
   content::MockNavigationHandle navigation_handle;
-  navigation_handle.set_url(GURL("https://www.google.com"));
+  navigation_handle.set_url(GURL("https://www.9oo91e.qjz9zk"));
 
   // Verify preview allowed initially for url without known hints.
   EXPECT_TRUE(previews_decider_impl()->ShouldAllowPreviewAtNavigationStart(
@@ -1271,7 +1271,7 @@ TEST_F(PreviewsDeciderImplTest, ResourceLoadingHintsCommitTimeWhitelistCheck) {
     base::HistogramTester histogram_tester;
     PreviewsUserData user_data(kDefaultPageId);
     content::MockNavigationHandle navigation_handle;
-    navigation_handle.set_url(GURL("https://www.google.com"));
+    navigation_handle.set_url(GURL("https://www.9oo91e.qjz9zk"));
     EXPECT_FALSE(previews_decider_impl()->ShouldCommitPreview(
         &user_data, &navigation_handle, PreviewsType::RESOURCE_LOADING_HINTS));
 
@@ -1338,7 +1338,7 @@ TEST_F(PreviewsDeciderImplTest, DeferAllScriptDefaultBehavior) {
   base::HistogramTester histogram_tester;
   PreviewsUserData user_data(kDefaultPageId);
   content::MockNavigationHandle navigation_handle;
-  navigation_handle.set_url(GURL("https://www.google.com"));
+  navigation_handle.set_url(GURL("https://www.9oo91e.qjz9zk"));
 
 #if defined(OS_ANDROID)
   bool expected = true;
@@ -1412,7 +1412,7 @@ TEST_F(PreviewsDeciderImplTest,
   base::HistogramTester histogram_tester;
   PreviewsUserData user_data(kDefaultPageId);
   content::MockNavigationHandle navigation_handle;
-  navigation_handle.set_url(GURL("https://www.google.com"));
+  navigation_handle.set_url(GURL("https://www.9oo91e.qjz9zk"));
 
   // Verify preview allowed initially for url without known hints.
   EXPECT_TRUE(previews_decider_impl()->ShouldAllowPreviewAtNavigationStart(
@@ -1435,7 +1435,7 @@ TEST_F(PreviewsDeciderImplTest, DeferAllScriptCommitTimeWhitelistCheck) {
     base::HistogramTester histogram_tester;
     PreviewsUserData user_data(kDefaultPageId);
     content::MockNavigationHandle navigation_handle;
-    navigation_handle.set_url(GURL("https://www.google.com"));
+    navigation_handle.set_url(GURL("https://www.9oo91e.qjz9zk"));
     EXPECT_FALSE(previews_decider_impl()->ShouldCommitPreview(
         &user_data, &navigation_handle, PreviewsType::DEFER_ALL_SCRIPT));
 
@@ -1569,7 +1569,7 @@ TEST_F(
   previews_decider_impl()->InjectTestBlacklist(nullptr /* blacklist */);
   PreviewsUserData user_data(kDefaultPageId);
   content::MockNavigationHandle navigation_handle;
-  navigation_handle.set_url(GURL("https://www.google.com"));
+  navigation_handle.set_url(GURL("https://www.9oo91e.qjz9zk"));
   previews_decider_impl()->ShouldAllowPreviewAtNavigationStart(
       &user_data, &navigation_handle, false, expected_type);
   base::RunLoop().RunUntilIdle();
@@ -1594,7 +1594,7 @@ TEST_F(
   previews_decider_impl()->InjectTestBlacklist(nullptr /* blacklist */);
   PreviewsUserData user_data(kDefaultPageId);
   content::MockNavigationHandle navigation_handle;
-  navigation_handle.set_url(GURL("https://www.google.com"));
+  navigation_handle.set_url(GURL("https://www.9oo91e.qjz9zk"));
   previews_decider_impl()->ShouldAllowPreviewAtNavigationStart(
       &user_data, &navigation_handle, false, expected_type);
   base::RunLoop().RunUntilIdle();
@@ -1631,7 +1631,7 @@ TEST_F(PreviewsDeciderImplTest, LogDecisionMadeBlacklistStatusesDefault) {
 
     PreviewsUserData user_data(kDefaultPageId);
     content::MockNavigationHandle navigation_handle;
-    navigation_handle.set_url(GURL("https://www.google.com"));
+    navigation_handle.set_url(GURL("https://www.9oo91e.qjz9zk"));
     previews_decider_impl()->ShouldAllowPreviewAtNavigationStart(
         &user_data, &navigation_handle, false, expected_type);
     base::RunLoop().RunUntilIdle();
@@ -1654,7 +1654,7 @@ TEST_F(PreviewsDeciderImplTest, ShouldCommitPreviewBlacklistStatuses) {
   auto expected_type = PreviewsType::NOSCRIPT;
   PreviewsUserData user_data(kDefaultPageId);
   content::MockNavigationHandle navigation_handle;
-  navigation_handle.set_url(GURL("https://www.google.com"));
+  navigation_handle.set_url(GURL("https://www.9oo91e.qjz9zk"));
   // First verify URL is allowed for no blacklist status.
   EXPECT_TRUE(previews_decider_impl()->ShouldCommitPreview(
       &user_data, &navigation_handle, expected_type));
@@ -1677,7 +1677,7 @@ TEST_F(PreviewsDeciderImplTest, ShouldCommitPreviewBlacklistStatuses) {
     previews_decider_impl()->InjectTestBlacklist(std::move(blacklist));
     PreviewsUserData user_data(kDefaultPageId);
     content::MockNavigationHandle navigation_handle;
-    navigation_handle.set_url(GURL("https://www.google.com"));
+    navigation_handle.set_url(GURL("https://www.9oo91e.qjz9zk"));
     EXPECT_FALSE(previews_decider_impl()->ShouldCommitPreview(
         &user_data, &navigation_handle, expected_type));
     base::RunLoop().RunUntilIdle();
@@ -1717,7 +1717,7 @@ TEST_F(PreviewsDeciderImplTest, LogDecisionMadeBlacklistStatusesIgnore) {
     previews_decider_impl()->InjectTestBlacklist(std::move(blacklist));
     PreviewsUserData user_data(kDefaultPageId);
     content::MockNavigationHandle navigation_handle;
-    navigation_handle.set_url(GURL("https://www.google.com"));
+    navigation_handle.set_url(GURL("https://www.9oo91e.qjz9zk"));
     previews_decider_impl()->ShouldAllowPreviewAtNavigationStart(
         &user_data, &navigation_handle, false, expected_type);
 
@@ -1749,7 +1749,7 @@ TEST_F(PreviewsDeciderImplTest, LogDecisionMadeMediaSuffixesAreExcluded) {
     previews_decider_impl()->InjectTestBlacklist(std::move(blacklist));
     PreviewsUserData user_data(kDefaultPageId);
     content::MockNavigationHandle navigation_handle;
-    navigation_handle.set_url(GURL("https://www.google.com/video.mp4"));
+    navigation_handle.set_url(GURL("https://www.9oo91e.qjz9zk/video.mp4"));
     previews_decider_impl()->ShouldAllowPreviewAtNavigationStart(
         &user_data, &navigation_handle, false, expected_type);
 
@@ -1773,7 +1773,7 @@ TEST_F(PreviewsDeciderImplTest, IgnoreFlagDoesNotCheckBlacklist) {
       true /* ignored */);
   PreviewsUserData user_data(kDefaultPageId);
   content::MockNavigationHandle navigation_handle;
-  navigation_handle.set_url(GURL("https://www.google.com"));
+  navigation_handle.set_url(GURL("https://www.9oo91e.qjz9zk"));
   EXPECT_TRUE(previews_decider_impl()->ShouldAllowPreviewAtNavigationStart(
       &user_data, &navigation_handle, false, PreviewsType::OFFLINE));
 
@@ -1792,7 +1792,7 @@ TEST_F(PreviewsDeciderImplTest, ReloadsTriggerFiveMinuteRule) {
 
   PreviewsUserData user_data(kDefaultPageId);
   content::MockNavigationHandle navigation_handle;
-  navigation_handle.set_url(GURL("https://www.google.com"));
+  navigation_handle.set_url(GURL("https://www.9oo91e.qjz9zk"));
   EXPECT_TRUE(previews_decider_impl()->ShouldAllowPreviewAtNavigationStart(
       &user_data, &navigation_handle, false, PreviewsType::OFFLINE));
 
@@ -1839,7 +1839,7 @@ TEST_F(PreviewsDeciderImplTest,
   ReportEffectiveConnectionType(net::EFFECTIVE_CONNECTION_TYPE_UNKNOWN);
   PreviewsUserData user_data(kDefaultPageId);
   content::MockNavigationHandle navigation_handle;
-  navigation_handle.set_url(GURL("https://www.google.com"));
+  navigation_handle.set_url(GURL("https://www.9oo91e.qjz9zk"));
   previews_decider_impl()->ShouldAllowPreviewAtNavigationStart(
       &user_data, &navigation_handle, false, expected_type);
 
@@ -1883,7 +1883,7 @@ TEST_F(PreviewsDeciderImplTest, LogDecisionMadePageLoadNotPainful) {
   };
   PreviewsUserData user_data(kDefaultPageId);
   content::MockNavigationHandle navigation_handle;
-  navigation_handle.set_url(GURL("https://www.google.com"));
+  navigation_handle.set_url(GURL("https://www.9oo91e.qjz9zk"));
   previews_decider_impl()->ShouldAllowPreviewAtNavigationStart(
       &user_data, &navigation_handle, false, expected_type);
   base::RunLoop().RunUntilIdle();
@@ -1924,7 +1924,7 @@ TEST_F(PreviewsDeciderImplTest, LogDecisionMadeNetworkNotSlow) {
   };
   PreviewsUserData user_data(kDefaultPageId);
   content::MockNavigationHandle navigation_handle;
-  navigation_handle.set_url(GURL("https://www.google.com"));
+  navigation_handle.set_url(GURL("https://www.9oo91e.qjz9zk"));
   previews_decider_impl()->ShouldAllowPreviewAtNavigationStart(
       &user_data, &navigation_handle, false, expected_type);
   base::RunLoop().RunUntilIdle();
@@ -1954,7 +1954,7 @@ TEST_F(PreviewsDeciderImplTest, LogDecisionMadeReloadDisallowed) {
   ReportEffectiveConnectionType(net::EFFECTIVE_CONNECTION_TYPE_2G);
   PreviewsUserData user_data(kDefaultPageId);
   content::MockNavigationHandle navigation_handle;
-  navigation_handle.set_url(GURL("https://www.google.com"));
+  navigation_handle.set_url(GURL("https://www.9oo91e.qjz9zk"));
 
   auto expected_reason = PreviewsEligibilityReason::RELOAD_DISALLOWED;
   auto expected_type = PreviewsType::OFFLINE;
@@ -2003,7 +2003,7 @@ TEST_F(PreviewsDeciderImplTest, IgnoreBlacklistEnabledViaFlag) {
   ReportEffectiveConnectionType(net::EFFECTIVE_CONNECTION_TYPE_2G);
   PreviewsUserData user_data(kDefaultPageId);
   content::MockNavigationHandle navigation_handle;
-  navigation_handle.set_url(GURL("https://www.google.com"));
+  navigation_handle.set_url(GURL("https://www.9oo91e.qjz9zk"));
   auto expected_reason = PreviewsEligibilityReason::ALLOWED;
   EXPECT_TRUE(previews_decider_impl()->ShouldAllowPreviewAtNavigationStart(
       &user_data, &navigation_handle, false, PreviewsType::OFFLINE));
@@ -2045,7 +2045,7 @@ TEST_F(PreviewsDeciderImplTest, LogDecisionMadeAllowClientPreviewsWithECT) {
   };
   PreviewsUserData user_data(kDefaultPageId);
   content::MockNavigationHandle navigation_handle;
-  navigation_handle.set_url(GURL("https://www.google.com"));
+  navigation_handle.set_url(GURL("https://www.9oo91e.qjz9zk"));
   previews_decider_impl()->ShouldAllowPreviewAtNavigationStart(
       &user_data, &navigation_handle, false, expected_type);
   base::RunLoop().RunUntilIdle();
@@ -2183,7 +2183,7 @@ TEST_F(PreviewsDeciderImplTest, TestIgnoreLongTermRule) {
   ReportEffectiveConnectionType(net::EFFECTIVE_CONNECTION_TYPE_3G);
   PreviewsUserData user_data(kDefaultPageId);
   content::MockNavigationHandle navigation_handle;
-  navigation_handle.set_url(GURL("https://www.google.com"));
+  navigation_handle.set_url(GURL("https://www.9oo91e.qjz9zk"));
   base::HistogramTester histogram_tester;
   previews_decider_impl()->SetIgnoreLongTermBlackListForServerPreviews(false);
   EXPECT_FALSE(previews_decider_impl()->ShouldAllowPreviewAtNavigationStart(

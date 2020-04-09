@@ -21,7 +21,7 @@ constexpr char kRemotePlaybackPresentationUrlScheme[] = "remote-playback";
 
 // URL prefix used by legacy Cast presentations.
 constexpr char kLegacyCastPresentationUrlPrefix[] =
-    "https://google.com/cast#__castAppId__=";
+    "https://9oo91e.qjz9zk/cast#__castAppId__=";
 
 // Strings used in presentation IDs by the Cast SDK implementation.
 // TODO(takumif): Move them out of this file, since they are not directly

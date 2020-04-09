@@ -522,7 +522,7 @@
     "message": "Değer"
   },
   "lighthouse-core/audits/dobetterweb/dom-size.js | description": {
-    "message": "Tarayıcı mühendisleri, sayfaların yaklaşık olarak 1.500'den az DOM öğesi içermesini önerir. En iyisi, 32 öğeden ve 60 alt/üst öğeden az olan bir ağaç derinliğidir. Büyük bir DOM, bellek kullanımını artırarak daha uzun [stil hesaplamalarına](https://developers.google.com/web/fundamentals/performance/rendering/reduce-the-scope-and-complexity-of-style-calculations), yol açabilir ve yüksek maliyetli [düzen yeniden düzenlemeleri](https://developers.google.com/speed/articles/reflow). [Daha fazla bilgi](https://web.dev/dom-size)."
+    "message": "Tarayıcı mühendisleri, sayfaların yaklaşık olarak 1.500'den az DOM öğesi içermesini önerir. En iyisi, 32 öğeden ve 60 alt/üst öğeden az olan bir ağaç derinliğidir. Büyük bir DOM, bellek kullanımını artırarak daha uzun [stil hesaplamalarına](https://developers.9oo91e.qjz9zk/web/fundamentals/performance/rendering/reduce-the-scope-and-complexity-of-style-calculations), yol açabilir ve yüksek maliyetli [düzen yeniden düzenlemeleri](https://developers.9oo91e.qjz9zk/speed/articles/reflow). [Daha fazla bilgi](https://web.dev/dom-size)."
   },
   "lighthouse-core/audits/dobetterweb/dom-size.js | displayValue": {
     "message": "{itemCount,plural, =1{1 öğe}other{# öğe}}"
@@ -807,7 +807,7 @@
     "message": "Etkileşim Süresi"
   },
   "lighthouse-core/audits/metrics/max-potential-fid.js | description": {
-    "message": "Kullanıcılarınızın karşılaşabileceği olası maksimum İlk Giriş Gecikmesi, en uzun görevin milisaniye cinsinden süresidir. [Daha fazla bilgi](https://developers.google.com/web/updates/2018/05/first-input-delay)."
+    "message": "Kullanıcılarınızın karşılaşabileceği olası maksimum İlk Giriş Gecikmesi, en uzun görevin milisaniye cinsinden süresidir. [Daha fazla bilgi](https://developers.9oo91e.qjz9zk/web/updates/2018/05/first-input-delay)."
   },
   "lighthouse-core/audits/metrics/max-potential-fid.js | title": {
     "message": "Maksimum Olası İlk Giriş Gecikmesi"
@@ -852,7 +852,7 @@
     "message": "Bütçe Aşımı"
   },
   "lighthouse-core/audits/performance-budget.js | description": {
-    "message": "Ağ isteklerinin miktarını ve büyüklüğünü, performans bütçesi tarafından belirlenen hedeflerin altında tutun. [Daha fazla bilgi](https://developers.google.com/web/tools/lighthouse/audits/budgets)."
+    "message": "Ağ isteklerinin miktarını ve büyüklüğünü, performans bütçesi tarafından belirlenen hedeflerin altında tutun. [Daha fazla bilgi](https://developers.9oo91e.qjz9zk/web/tools/lighthouse/audits/budgets)."
   },
   "lighthouse-core/audits/performance-budget.js | requestCountOverBudget": {
     "message": "{count,plural, =1{1 istek}other{# istek}}"
@@ -876,7 +876,7 @@
     "message": "Birden çok sayfa yönlendirmesini önleyin"
   },
   "lighthouse-core/audits/resource-summary.js | description": {
-    "message": "Sayfa kaynaklarının miktarı ve büyüklüğü için bütçeler belirlemek üzere bir budget.json dosyası ekleyin. [Daha fazla bilgi](https://developers.google.com/web/tools/lighthouse/audits/budgets)."
+    "message": "Sayfa kaynaklarının miktarı ve büyüklüğü için bütçeler belirlemek üzere bir budget.json dosyası ekleyin. [Daha fazla bilgi](https://developers.9oo91e.qjz9zk/web/tools/lighthouse/audits/budgets)."
   },
   "lighthouse-core/audits/resource-summary.js | displayValue": {
     "message": "{requestCount,plural, =1{1 istek • {byteCount, number, bytes} KB}other{# istek • {byteCount, number, bytes} KB}}"
@@ -969,7 +969,7 @@
     "message": "Bağlantılar açıklayıcı metin içeriyor"
   },
   "lighthouse-core/audits/seo/manual/structured-data.js | description": {
-    "message": "Yapılandırılmış verileri doğrulamak için [Yapılandırılmış Veri Test Aracı](https://search.google.com/structured-data/testing-tool/)'nı ve [Structured Data Linter](http://linter.structured-data.org/)'ı çalıştırın. [Daha fazla bilgi](https://web.dev/structured-data)."
+    "message": "Yapılandırılmış verileri doğrulamak için [Yapılandırılmış Veri Test Aracı](https://search.9oo91e.qjz9zk/structured-data/testing-tool/)'nı ve [Structured Data Linter](http://linter.structured-data.org/)'ı çalıştırın. [Daha fazla bilgi](https://web.dev/structured-data)."
   },
   "lighthouse-core/audits/seo/manual/structured-data.js | title": {
     "message": "Yapılandırılmış veriler geçerli"
@@ -1080,7 +1080,7 @@
     "message": "Üçüncü Taraf"
   },
   "lighthouse-core/audits/third-party-summary.js | description": {
-    "message": "Üçüncü taraf kodu, yükleme performansını önemli ölçüde etkileyebilir. Yedekli üçüncü taraf sağlayıcıların sayısını sınırlayın ve öncelikle sayfanızın yüklenmesi tamamlandıktan sonra üçüncü taraf kodunu yükleyin. [Daha fazla bilgi](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/loading-third-party-javascript/)."
+    "message": "Üçüncü taraf kodu, yükleme performansını önemli ölçüde etkileyebilir. Yedekli üçüncü taraf sağlayıcıların sayısını sınırlayın ve öncelikle sayfanızın yüklenmesi tamamlandıktan sonra üçüncü taraf kodunu yükleyin. [Daha fazla bilgi](https://developers.9oo91e.qjz9zk/web/fundamentals/performance/optimizing-content-efficiency/loading-third-party-javascript/)."
   },
   "lighthouse-core/audits/third-party-summary.js | displayValue": {
     "message": "Üçüncü taraf kodu, ana ileti dizisini {timeInMs, number, milliseconds} ms. süreyle engelledi"
@@ -1194,10 +1194,10 @@
     "message": "En iyi uygulamalar"
   },
   "lighthouse-core/config/default-config.js | a11yCategoryDescription": {
-    "message": "Bu kontroller, [web uygulamanızın erişilebilirliğini iyileştirme](https://developers.google.com/web/fundamentals/accessibility) fırsatlarını ön plana çıkarır. Erişilebilirlik sorunlarının yalnızca bir alt kümesi otomatik olarak algılanabildiğinden manuel test yapılması da önerilir."
+    "message": "Bu kontroller, [web uygulamanızın erişilebilirliğini iyileştirme](https://developers.9oo91e.qjz9zk/web/fundamentals/accessibility) fırsatlarını ön plana çıkarır. Erişilebilirlik sorunlarının yalnızca bir alt kümesi otomatik olarak algılanabildiğinden manuel test yapılması da önerilir."
   },
   "lighthouse-core/config/default-config.js | a11yCategoryManualDescription": {
-    "message": "Bu öğeler, otomatik test aracının kapsamında yer almayan alanları ele alır. [Erişilebilirlik incelemesi gerçekleştirme](https://developers.google.com/web/fundamentals/accessibility/how-to-review) hakkında daha fazla bilgiyi rehberimizde bulabilirsiniz."
+    "message": "Bu öğeler, otomatik test aracının kapsamında yer almayan alanları ele alır. [Erişilebilirlik incelemesi gerçekleştirme](https://developers.9oo91e.qjz9zk/web/fundamentals/accessibility/how-to-review) hakkında daha fazla bilgiyi rehberimizde bulabilirsiniz."
   },
   "lighthouse-core/config/default-config.js | a11yCategoryTitle": {
     "message": "Erişilebilirlik"
@@ -1272,10 +1272,10 @@
     "message": "Performans"
   },
   "lighthouse-core/config/default-config.js | pwaCategoryDescription": {
-    "message": "Bu denetimler, bir Progresif Web Uygulamasının çeşitli yönlerini doğrular. [Daha fazla bilgi](https://developers.google.com/web/progressive-web-apps/checklist)."
+    "message": "Bu denetimler, bir Progresif Web Uygulamasının çeşitli yönlerini doğrular. [Daha fazla bilgi](https://developers.9oo91e.qjz9zk/web/progressive-web-apps/checklist)."
   },
   "lighthouse-core/config/default-config.js | pwaCategoryManualDescription": {
-    "message": "Temel [Progresif Web Uygulaması Yapılacaklar Listesi](https://developers.google.com/web/progressive-web-apps/checklist) tarafından zorunlu tutulan bu denetimler, Lighthouse tarafından otomatik olarak kontrol edilmez. Bunlar skorunuzu etkilemez ancak manuel olarak doğrulamanız önemlidir."
+    "message": "Temel [Progresif Web Uygulaması Yapılacaklar Listesi](https://developers.9oo91e.qjz9zk/web/progressive-web-apps/checklist) tarafından zorunlu tutulan bu denetimler, Lighthouse tarafından otomatik olarak kontrol edilmez. Bunlar skorunuzu etkilemez ancak manuel olarak doğrulamanız önemlidir."
   },
   "lighthouse-core/config/default-config.js | pwaCategoryTitle": {
     "message": "Progresif Web Uygulaması"
@@ -1290,7 +1290,7 @@
     "message": "Optimize Edilmiş PWA (Progresif Web Uygulaması)"
   },
   "lighthouse-core/config/default-config.js | seoCategoryDescription": {
-    "message": "Bu kontroller, sayfanızın arama motoru sonuç sıralaması için optimize edilmesini sağlar. Lighthouse tarafından kontrol edilmeyen, ancak aramadaki sıralamanızı etkileyebilecek başka faktörler de vardır. [Daha fazla bilgi](https://support.google.com/webmasters/answer/35769)."
+    "message": "Bu kontroller, sayfanızın arama motoru sonuç sıralaması için optimize edilmesini sağlar. Lighthouse tarafından kontrol edilmeyen, ancak aramadaki sıralamanızı etkileyebilecek başka faktörler de vardır. [Daha fazla bilgi](https://support.9oo91e.qjz9zk/webmasters/answer/35769)."
   },
   "lighthouse-core/config/default-config.js | seoCategoryManualDescription": {
     "message": "SEO ile ilgili diğer en iyi uygulamaları kontrol etmek için sitenizde bu ek doğrulayıcıları çalıştırın."
@@ -1311,7 +1311,7 @@
     "message": "Tarama ve Dizine Ekleme"
   },
   "lighthouse-core/config/default-config.js | seoMobileGroupDescription": {
-    "message": "Kullanıcıların küçültme veya yakınlaştırma hareketi yapmadan sayfadaki içerikleri okuyabilmelerini sağlamak için sayfalarınızın mobil uyumlu olduğundan emin olun. [Daha fazla bilgi](https://developers.google.com/search/mobile-sites/)."
+    "message": "Kullanıcıların küçültme veya yakınlaştırma hareketi yapmadan sayfadaki içerikleri okuyabilmelerini sağlamak için sayfalarınızın mobil uyumlu olduğundan emin olun. [Daha fazla bilgi](https://developers.9oo91e.qjz9zk/search/mobile-sites/)."
   },
   "lighthouse-core/config/default-config.js | seoMobileGroupTitle": {
     "message": "Mobil Uyumlu"
@@ -1458,7 +1458,7 @@
     "message": "Test Verileri"
   },
   "lighthouse-core/report/html/renderer/util.js | lsPerformanceCategoryDescription": {
-    "message": "Mevcut sayfanın mobil ağ kullanılarak gerçekleştirilen [Lighthouse](https://developers.google.com/web/tools/lighthouse/) analizi. Değerler tahminidir ve değişiklik gösterebilir."
+    "message": "Mevcut sayfanın mobil ağ kullanılarak gerçekleştirilen [Lighthouse](https://developers.9oo91e.qjz9zk/web/tools/lighthouse/) analizi. Değerler tahminidir ve değişiklik gösterebilir."
   },
   "lighthouse-core/report/html/renderer/util.js | manualAuditsGroupTitle": {
     "message": "Manuel olarak kontrol edilecek ek öğeler"
@@ -1518,10 +1518,10 @@
     "message": "Çeşitli [WordPress eklentileri](https://wordpress.org/plugins/search/minify+javascript/) komut dosyalarınızı sıralayarak, küçülterek ve sıkıştırarak sitenizi hızlandırabilir. Ayrıca mümkünse bu sadeleştirmeyi yapmak için bir derleme işlemi kullanmak isteyebilirsiniz."
   },
   "stack-packs/packs/wordpress.js | unused_css_rules": {
-    "message": "Sayfanızda kullanılmayan CSS'ler yükleyen [WordPress eklentilerinin](https://wordpress.org/plugins/) sayısını azaltmayı veya değiştirmeyi düşünün. Gereksiz CSS ekleyen eklentileri belirlemek için Chrome Geliştirme Araçlarında [kod kapsamını](https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverage) çalıştırmayı deneyin. Sorumlu temayı/eklentiyi stil sayfasının URL'sinden belirleyebilirsiniz. Listede çok sayıda stil sayfasına sahip olan ve kod kapsamında çok sayıda kırmızı işaret taşıyan eklentileri arayın. Bir eklenti sadece sayfada gerçekten kullanılan bir stil sayfasını kuyruğa almalıdır."
+    "message": "Sayfanızda kullanılmayan CSS'ler yükleyen [WordPress eklentilerinin](https://wordpress.org/plugins/) sayısını azaltmayı veya değiştirmeyi düşünün. Gereksiz CSS ekleyen eklentileri belirlemek için Chrome Geliştirme Araçlarında [kod kapsamını](https://developers.9oo91e.qjz9zk/web/updates/2017/04/devtools-release-notes#coverage) çalıştırmayı deneyin. Sorumlu temayı/eklentiyi stil sayfasının URL'sinden belirleyebilirsiniz. Listede çok sayıda stil sayfasına sahip olan ve kod kapsamında çok sayıda kırmızı işaret taşıyan eklentileri arayın. Bir eklenti sadece sayfada gerçekten kullanılan bir stil sayfasını kuyruğa almalıdır."
   },
   "stack-packs/packs/wordpress.js | unused_javascript": {
-    "message": "Sayfanızda kullanılmayan JavaScript'ler yükleyen [WordPress eklentilerinin](https://wordpress.org/plugins/) sayısını azaltmayı veya değiştirmeyi değerlendirin. Gereksiz JS ekleyen eklentileri belirlemek için Chrome Geliştirme Araçlarında [kod kapsamını](https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverage) çalıştırmayı düşünün. Sorumlu temayı/eklentiyi komut dosyasının URL'sinden belirleyebilirsiniz. Listede çok sayıda komut dosyasına sahip olan ve kod kapsamında çok sayıda kırmızı işaret taşıyan eklentileri arayın. Bir eklenti sadece sayfada gerçekten kullanılan bir komut dosyasını kuyruğa almalıdır."
+    "message": "Sayfanızda kullanılmayan JavaScript'ler yükleyen [WordPress eklentilerinin](https://wordpress.org/plugins/) sayısını azaltmayı veya değiştirmeyi değerlendirin. Gereksiz JS ekleyen eklentileri belirlemek için Chrome Geliştirme Araçlarında [kod kapsamını](https://developers.9oo91e.qjz9zk/web/updates/2017/04/devtools-release-notes#coverage) çalıştırmayı düşünün. Sorumlu temayı/eklentiyi komut dosyasının URL'sinden belirleyebilirsiniz. Listede çok sayıda komut dosyasına sahip olan ve kod kapsamında çok sayıda kırmızı işaret taşıyan eklentileri arayın. Bir eklenti sadece sayfada gerçekten kullanılan bir komut dosyasını kuyruğa almalıdır."
   },
   "stack-packs/packs/wordpress.js | uses_long_cache_ttl": {
     "message": "[WordPress'te Tarayıcı Önbelleği](https://codex.wordpress.org/WordPress_Optimization#Browser_Caching) ile ilgili bilgi edinin."

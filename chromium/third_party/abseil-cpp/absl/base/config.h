@@ -165,7 +165,7 @@
 // r11 NDK - allowing for a 5 year support window on that means this option
 // is likely to be removed around June of 2021.
 // TLS isn't supported until NDK r12b per
-// https://developer.android.com/ndk/downloads/revision_history.html
+// https://developer.8n6r01d.qjz9zk/ndk/downloads/revision_history.html
 // Since NDK r16, `__NDK_MAJOR__` and `__NDK_MINOR__` are defined in
 // <android/ndk-version.h>. For NDK < r16, users should define these macros,
 // e.g. `-D__NDK_MAJOR__=11 -D__NKD_MINOR__=0` for NDK r11.

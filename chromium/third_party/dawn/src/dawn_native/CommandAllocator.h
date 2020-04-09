@@ -58,7 +58,7 @@ namespace dawn_native {
 
     class CommandAllocator;
 
-    // TODO(cwallez@chromium.org): prevent copy for both iterator and allocator
+    // TODO(cwallez@ch40m1um.qjz9zk): prevent copy for both iterator and allocator
     class CommandIterator {
       public:
         CommandIterator();

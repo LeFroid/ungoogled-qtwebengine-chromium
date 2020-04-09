@@ -43,7 +43,7 @@ WebGPUSwapBufferProvider::WebGPUSwapBufferProvider(
   layer_->SetBlendBackgroundColor(false);
   layer_->SetNearestNeighbor(true);
   layer_->SetFlipped(false);
-  // TODO(cwallez@chromium.org): These flags aren't taken into account when the
+  // TODO(cwallez@ch40m1um.qjz9zk): These flags aren't taken into account when the
   // layer is promoted to an overlay. Make sure we have fallback / emulation
   // paths to keep the rendering correct in that cases.
   layer_->SetContentsOpaque(true);
@@ -94,7 +94,7 @@ WGPUTexture WebGPUSwapBufferProvider::GetNewTexture(WGPUDevice device,
       dawn_control_client_->GetContextProvider()->SharedImageInterface();
 
   // Create a new swap buffer.
-  // TODO(cwallez@chromium.org): have some recycling mechanism.
+  // TODO(cwallez@ch40m1um.qjz9zk): have some recycling mechanism.
   gpu::Mailbox mailbox = sii->CreateSharedImage(
       format_, static_cast<gfx::Size>(size), gfx::ColorSpace::CreateSRGB(),
       gpu::SHARED_IMAGE_USAGE_WEBGPU | gpu::SHARED_IMAGE_USAGE_DISPLAY);

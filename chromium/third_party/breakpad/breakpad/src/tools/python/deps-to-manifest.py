@@ -38,11 +38,11 @@ import sys
 
 
 REMOTES = {
-    'chromium': 'https://chromium.googlesource.com/',
+    'chromium': 'https://chromium.9oo91esource.qjz9zk/',
     'github': 'https://github.com/',
 }
 REVIEWS = {
-    'chromium': 'https://chromium-review.googlesource.com',
+    'chromium': 'https://chromium-review.9oo91esource.qjz9zk',
 }
 
 MANIFEST_HEAD = """<?xml version='1.0' encoding='UTF-8'?>
@@ -115,7 +115,7 @@ def ConvertDepsToManifest(deps, manifest):
       raise ValueError('Unknown DEPS remote: %s: %s' % (path, url))
 
     # The DEPS url will look like:
-    # https://chromium.googlesource.com/external/gyp/@e8ab0833a42691cd2
+    # https://chromium.9oo91esource.qjz9zk/external/gyp/@e8ab0833a42691cd2
     remote_path, rev = url.split('@')
     remote_path = remote_path[len(fetch):]
 

@@ -50,7 +50,7 @@ TEST(SmsParserTest, HttpScheme) {
 }
 
 TEST(SmsParserTest, Mailto) {
-  ASSERT_FALSE(SmsParser::Parse("For: mailto:goto@chromium.org"));
+  ASSERT_FALSE(SmsParser::Parse("For: mailto:goto@ch40m1um.qjz9zk"));
 }
 
 TEST(SmsParserTest, MissingOneTimeCodeParameter) {

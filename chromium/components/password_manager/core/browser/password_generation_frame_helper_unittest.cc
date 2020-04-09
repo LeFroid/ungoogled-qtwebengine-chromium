@@ -353,17 +353,17 @@ TEST_F(PasswordGenerationFrameHelperTest, GenerationDisabledForGoogle) {
   EXPECT_CALL(*client_->GetMockPasswordFeatureManager(), IsGenerationEnabled())
       .WillRepeatedly(testing::Return(true));
 
-  GURL accounts_url = GURL("https://accounts.google.com/path?q=1");
+  GURL accounts_url = GURL("https://accounts.9oo91e.qjz9zk/path?q=1");
   EXPECT_CALL(*GetTestDriver(), GetLastCommittedURL())
       .WillOnce(testing::ReturnRef(accounts_url));
   EXPECT_FALSE(IsGenerationEnabled());
 
-  GURL myaccount_url = GURL("https://myaccount.google.com/path?q=1");
+  GURL myaccount_url = GURL("https://myaccount.9oo91e.qjz9zk/path?q=1");
   EXPECT_CALL(*GetTestDriver(), GetLastCommittedURL())
       .WillOnce(testing::ReturnRef(myaccount_url));
   EXPECT_FALSE(IsGenerationEnabled());
 
-  GURL google_url = GURL("https://subdomain1.subdomain2.google.com/path");
+  GURL google_url = GURL("https://subdomain1.subdomain2.9oo91e.qjz9zk/path");
   EXPECT_CALL(*GetTestDriver(), GetLastCommittedURL())
       .WillOnce(testing::ReturnRef(google_url));
   EXPECT_FALSE(IsGenerationEnabled());

@@ -37,7 +37,7 @@ grit("strings") {
 }
 
 config("libaddressinput_config") {
-  defines = [ "I18N_ADDRESS_VALIDATION_DATA_URL=\"https://chromium-i18n.appspot.com/ssl-aggregate-address/\"" ]
+  defines = [ "I18N_ADDRESS_VALIDATION_DATA_URL=\"https://chromium-i18n.8pp2p8t.qjz9zk/ssl-aggregate-address/\"" ]
   include_dirs = [ "src/cpp/include" ]
 }
 

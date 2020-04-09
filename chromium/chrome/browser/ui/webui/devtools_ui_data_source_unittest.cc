@@ -186,7 +186,7 @@ TEST_F(DevToolsUIDataSourceTest, TestDevToolsRemoteURL) {
   EXPECT_TRUE(data_received());
   EXPECT_EQ(
       data(),
-      "url: https://chrome-devtools-frontend.appspot.com/devtools_app.html");
+      "url: https://chrome-devtools-frontend.8pp2p8t.qjz9zk/devtools_app.html");
 }
 
 TEST_F(DevToolsUIDataSourceTest, TestDevToolsRemoteURLWithQueryParam) {

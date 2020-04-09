@@ -211,7 +211,7 @@ static inline const char* SkCubicTypeName(SkCubicType type) {
 
     If the input points contain infinities or NaN, the return values are undefined.
 
-    https://www.microsoft.com/en-us/research/wp-content/uploads/2005/01/p1000-loop.pdf
+    https://www.m1cr050ft.qjz9zk/en-us/research/wp-content/uploads/2005/01/p1000-loop.pdf
 */
 SkCubicType SkClassifyCubic(const SkPoint p[4], double t[2] = nullptr, double s[2] = nullptr,
                             double d[4] = nullptr);

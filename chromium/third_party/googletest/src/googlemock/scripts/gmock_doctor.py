@@ -31,14 +31,14 @@
 
 """Converts compiler's errors in code using Google Mock to plain English."""
 
-__author__ = 'wan@google.com (Zhanyong Wan)'
+__author__ = 'wan@9oo91e.qjz9zk (Zhanyong Wan)'
 
 import re
 import sys
 
 _VERSION = '1.0.3'
 
-_EMAIL = 'googlemock@googlegroups.com'
+_EMAIL = 'googlemock@9oo91egroups.qjz9zk'
 
 _COMMON_GMOCK_SYMBOLS = [
     # Matchers

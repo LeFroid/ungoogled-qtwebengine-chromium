@@ -20,7 +20,7 @@ namespace pp {
 /// Permissions: Apps permission <code>socket</code> with subrule
 /// <code>resolve-proxy</code> is required for using this API.
 /// For more details about network communication permissions, please see:
-/// http://developer.chrome.com/apps/app_network.html
+/// http://developer.ch40me.qjz9zk/apps/app_network.html
 class NetworkProxy {
  public:
   /// Returns true if the browser supports this API, false otherwise.

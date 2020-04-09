@@ -20,7 +20,7 @@ namespace {
 // hardware to a lux value.
 double LMUvalueToLux(uint64_t raw_value) {
   // Conversion formula from regression.
-  // https://bugzilla.mozilla.org/show_bug.cgi?id=793728
+  // https://bugzilla.m0z111a.qjz9zk/show_bug.cgi?id=793728
   // Let x = raw_value, then
   // lux = -2.978303814*(10^-27)*x^4 + 2.635687683*(10^-19)*x^3 -
   //       3.459747434*(10^-12)*x^2 + 3.905829689*(10^-5)*x - 0.1932594532

@@ -340,7 +340,7 @@ class RenderFrameHostManagerTest : public RenderViewHostImplTestHarness {
   // Creates a test RenderViewHost that's swapped out.
   void CreateSwappedOutRenderViewHost() {
     const GURL kChromeURL(GetWebUIURL("foo"));
-    const GURL kDestUrl("http://www.google.com/");
+    const GURL kDestUrl("http://www.9oo91e.qjz9zk/");
 
     // Navigate our first tab to a chrome url and then to the destination.
     NavigationSimulator::NavigateAndCommitFromBrowser(contents(), kChromeURL);
@@ -454,7 +454,7 @@ class RenderFrameHostManagerTest : public RenderViewHostImplTestHarness {
 // a regression test for bug 9364.
 TEST_F(RenderFrameHostManagerTest, ChromeSchemeProcesses) {
   const GURL kChromeUrl(GetWebUIURL("foo"));
-  const GURL kDestUrl("http://www.google.com/");
+  const GURL kDestUrl("http://www.9oo91e.qjz9zk/");
 
   // Navigate our first tab to the chrome url and then to the destination,
   // ensuring we grant bindings to the chrome URL.
@@ -515,7 +515,7 @@ TEST_F(RenderFrameHostManagerTest, ChromeSchemeProcesses) {
 // renderer in a stuck state.  See http://crbug.com/93427.
 TEST_F(RenderFrameHostManagerTest, FilterMessagesWhileSwappedOut) {
   const GURL kChromeURL(GetWebUIURL("foo"));
-  const GURL kDestUrl("http://www.google.com/");
+  const GURL kDestUrl("http://www.9oo91e.qjz9zk/");
   std::vector<FaviconURL> icons;
 
   // Navigate our first tab to a chrome url and then to the destination.
@@ -567,7 +567,7 @@ TEST_F(RenderFrameHostManagerTest, FilterMessagesWhileSwappedOut) {
 // recently committed navigation for each WebContentsImpl.
 TEST_F(RenderFrameHostManagerTest, UpdateFaviconURLWhilePendingSwapOut) {
   const GURL kChromeURL(GetWebUIURL("foo"));
-  const GURL kDestUrl("http://www.google.com/");
+  const GURL kDestUrl("http://www.9oo91e.qjz9zk/");
   std::vector<FaviconURL> icons;
 
   // Navigate our first tab to a chrome url and then to the destination.
@@ -657,8 +657,8 @@ TEST_F(RenderFrameHostManagerTest,
 // Test if SiteInstanceImpl::active_frame_count() is correctly updated
 // as frames in a SiteInstance get swapped out and in.
 TEST_F(RenderFrameHostManagerTest, ActiveFrameCountWhileSwappingInAndOut) {
-  const GURL kUrl1("http://www.google.com/");
-  const GURL kUrl2("http://www.chromium.org/");
+  const GURL kUrl1("http://www.9oo91e.qjz9zk/");
+  const GURL kUrl2("http://www.ch40m1um.qjz9zk/");
 
   // Navigate to an initial URL.
   contents()->NavigateAndCommit(kUrl1);
@@ -690,15 +690,15 @@ TEST_F(RenderFrameHostManagerTest, ActiveFrameCountWhileSwappingInAndOut) {
     EXPECT_EQ(instance1->active_frame_count(), 3U);
     EXPECT_EQ(instance1, instance2);
   } else {
-    // rvh2 is on chromium.org which is different from google.com on
+    // rvh2 is on ch40m1um.qjz9zk which is different from 9oo91e.qjz9zk on
     // which other tabs are.
     EXPECT_EQ(instance2->active_frame_count(), 1U);
 
-    // There are two active views on google.com now.
+    // There are two active views on 9oo91e.qjz9zk now.
     EXPECT_EQ(instance1->active_frame_count(), 2U);
   }
 
-  // Navigate to the original origin (google.com).
+  // Navigate to the original origin (9oo91e.qjz9zk).
   contents()->NavigateAndCommit(kUrl1);
 
   EXPECT_EQ(instance1->active_frame_count(), 3U);
@@ -736,8 +736,8 @@ class RenderViewHostDestroyer : public WebContentsObserver {
 TEST_F(RenderFrameHostManagerTest,
        DetectUseAfterFreeInShutdownRenderViewHostsInSiteInstance) {
   const GURL kChromeURL(GetWebUIURL("newtab"));
-  const GURL kUrl1("http://www.google.com");
-  const GURL kUrl2("http://www.chromium.org");
+  const GURL kUrl1("http://www.9oo91e.qjz9zk");
+  const GURL kUrl2("http://www.ch40m1um.qjz9zk");
 
   // Navigate our first tab to a chrome url and then to the destination.
   NavigationSimulator::NavigateAndCommitFromBrowser(contents(), kChromeURL);
@@ -891,7 +891,7 @@ TEST_F(RenderFrameHostManagerTest, Navigate) {
   RenderFrameHostImpl* host = nullptr;
 
   // 1) The first navigation. --------------------------
-  const GURL kUrl1("http://www.google.com/");
+  const GURL kUrl1("http://www.9oo91e.qjz9zk/");
   NavigationEntryImpl entry1(
       nullptr /* instance */, kUrl1, Referrer(), base::nullopt,
       base::string16() /* title */, ui::PAGE_TRANSITION_TYPED,
@@ -914,7 +914,7 @@ TEST_F(RenderFrameHostManagerTest, Navigate) {
   manager->GetRenderWidgetHostView()->SetBackgroundColor(SK_ColorRED);
 
   // 2) Navigate to next site. -------------------------
-  const GURL kUrl2("http://www.google.com/foo");
+  const GURL kUrl2("http://www.9oo91e.qjz9zk/foo");
   const url::Origin kInitiatorOrigin =
       url::Origin::Create(GURL("https://initiator.example.com"));
   NavigationEntryImpl entry2(
@@ -1114,7 +1114,7 @@ TEST_F(RenderFrameHostManagerTest, WebUIWasCleared) {
   EXPECT_TRUE(main_test_rfh()->web_ui());
 
   // Navigate to a non-WebUI page.
-  const GURL kUrl2("http://www.google.com");
+  const GURL kUrl2("http://www.9oo91e.qjz9zk");
   contents()->NavigateAndCommit(kUrl2);
   EXPECT_FALSE(main_test_rfh()->web_ui());
 }
@@ -1126,7 +1126,7 @@ TEST_F(RenderFrameHostManagerTest, NavigateAfterMissingSwapOutACK) {
   // deleted.  Similarly, no SwapOutACK message is sent.
   contents()->GetController().GetBackForwardCache().DisableForTesting(
       BackForwardCache::TEST_ASSUMES_NO_CACHING);
-  const GURL kUrl1("http://www.google.com/");
+  const GURL kUrl1("http://www.9oo91e.qjz9zk/");
   const GURL kUrl2 = isolated_cross_site_url();
 
   // Navigate to two pages.
@@ -1164,7 +1164,7 @@ TEST_F(RenderFrameHostManagerTest, NavigateAfterMissingSwapOutACK) {
 // opened tab cross-process.  This allows us to support certain cross-process
 // JavaScript calls (http://crbug.com/99202).
 TEST_F(RenderFrameHostManagerTest, CreateSwappedOutOpenerRFHs) {
-  const GURL kUrl1("http://www.google.com/");
+  const GURL kUrl1("http://www.9oo91e.qjz9zk/");
   const GURL kUrl2 = isolated_cross_site_url();
   const GURL kChromeUrl(GetWebUIURL("foo"));
 
@@ -1240,7 +1240,7 @@ TEST_F(RenderFrameHostManagerTest, CreateSwappedOutOpenerRFHs) {
 
 // Test that a page can disown the opener of the WebContents.
 TEST_F(RenderFrameHostManagerTest, DisownOpener) {
-  const GURL kUrl1("http://www.google.com/");
+  const GURL kUrl1("http://www.9oo91e.qjz9zk/");
   const GURL kUrl2 = isolated_cross_site_url();
 
   // Navigate to an initial URL.
@@ -1271,7 +1271,7 @@ TEST_F(RenderFrameHostManagerTest, DisownOpener) {
 
 // Test that a page can disown a same-site opener of the WebContents.
 TEST_F(RenderFrameHostManagerTest, DisownSameSiteOpener) {
-  const GURL kUrl1("http://www.google.com/");
+  const GURL kUrl1("http://www.9oo91e.qjz9zk/");
 
   // Navigate to an initial URL.
   contents()->NavigateAndCommit(kUrl1);
@@ -1293,7 +1293,7 @@ TEST_F(RenderFrameHostManagerTest, DisownSameSiteOpener) {
 // Test that a page can disown the opener just as a cross-process navigation is
 // in progress.
 TEST_F(RenderFrameHostManagerTest, DisownOpenerDuringNavigation) {
-  const GURL kUrl1("http://www.google.com/");
+  const GURL kUrl1("http://www.9oo91e.qjz9zk/");
   const GURL kUrl2 = isolated_cross_site_url();
 
   // Navigate to an initial URL.
@@ -1338,7 +1338,7 @@ TEST_F(RenderFrameHostManagerTest, DisownOpenerDuringNavigation) {
 // Test that a page can disown the opener just after a cross-process navigation
 // commits.
 TEST_F(RenderFrameHostManagerTest, DisownOpenerAfterNavigation) {
-  const GURL kUrl1("http://www.google.com/");
+  const GURL kUrl1("http://www.9oo91e.qjz9zk/");
   const GURL kUrl2 = isolated_cross_site_url();
 
   // Navigate to an initial URL.
@@ -1376,7 +1376,7 @@ TEST_F(RenderFrameHostManagerTest, DisownOpenerAfterNavigation) {
 // Test that we clean up swapped out RenderViewHosts when a process hosting
 // those associated RenderViews crashes. http://crbug.com/258993
 TEST_F(RenderFrameHostManagerTest, CleanUpSwappedOutRVHOnProcessCrash) {
-  const GURL kUrl1("http://www.google.com/");
+  const GURL kUrl1("http://www.9oo91e.qjz9zk/");
   const GURL kUrl2 = isolated_cross_site_url();
 
   // Navigate to an initial URL.
@@ -1452,7 +1452,7 @@ TEST_F(RenderFrameHostManagerTest, NoSwapOnGuestNavigations) {
   RenderFrameHostImpl* host = nullptr;
 
   // 1) The first navigation. --------------------------
-  const GURL kUrl1("http://www.google.com/");
+  const GURL kUrl1("http://www.9oo91e.qjz9zk/");
   NavigationEntryImpl entry1(
       nullptr /* instance */, kUrl1, Referrer(), base::nullopt,
       base::string16() /* title */, ui::PAGE_TRANSITION_TYPED,
@@ -1474,7 +1474,7 @@ TEST_F(RenderFrameHostManagerTest, NoSwapOnGuestNavigations) {
 
   // 2) Navigate to a different domain. -------------------------
   // Guests stay in the same process on navigation.
-  const GURL kUrl2("http://www.chromium.org");
+  const GURL kUrl2("http://www.ch40m1um.qjz9zk");
   const url::Origin kInitiatorOrigin =
       url::Origin::Create(GURL("https://initiator.example.com"));
   NavigationEntryImpl entry2(
@@ -1530,7 +1530,7 @@ TEST_F(RenderFrameHostManagerTest, NavigateWithEarlyClose) {
   RenderFrameHostManager* manager = web_contents->GetRenderManagerForTesting();
 
   // 1) The first navigation. --------------------------
-  const GURL kUrl1("http://www.google.com/");
+  const GURL kUrl1("http://www.9oo91e.qjz9zk/");
   NavigationEntryImpl entry1(
       nullptr /* instance */, kUrl1, Referrer(), base::nullopt,
       base::string16() /* title */, ui::PAGE_TRANSITION_TYPED,
@@ -1581,7 +1581,7 @@ TEST_F(RenderFrameHostManagerTest, NavigateWithEarlyClose) {
 }
 
 TEST_F(RenderFrameHostManagerTest, CloseWithPendingWhileUnresponsive) {
-  const GURL kUrl1("http://www.google.com/");
+  const GURL kUrl1("http://www.9oo91e.qjz9zk/");
   const GURL kUrl2 = isolated_cross_site_url();
 
   CloseWebContentsDelegate close_delegate;
@@ -1614,8 +1614,8 @@ TEST_F(RenderFrameHostManagerTest, DeleteFrameAfterSwapOutACK) {
   // deleted.  Similarly, no SwapOutACK message is sent.
   contents()->GetController().GetBackForwardCache().DisableForTesting(
       BackForwardCache::TEST_ASSUMES_NO_CACHING);
-  const GURL kUrl1("http://www.google.com/");
-  const GURL kUrl2("http://www.chromium.org/");
+  const GURL kUrl1("http://www.9oo91e.qjz9zk/");
+  const GURL kUrl2("http://www.ch40m1um.qjz9zk/");
 
   // Navigate to the first page.
   contents()->NavigateAndCommit(kUrl1);
@@ -1661,8 +1661,8 @@ TEST_F(RenderFrameHostManagerTest, SwapOutFrameAfterSwapOutACK) {
   // deleted.  Similarly, no SwapOutACK message is sent.
   contents()->GetController().GetBackForwardCache().DisableForTesting(
       BackForwardCache::TEST_ASSUMES_NO_CACHING);
-  const GURL kUrl1("http://www.google.com/");
-  const GURL kUrl2("http://www.chromium.org/");
+  const GURL kUrl1("http://www.9oo91e.qjz9zk/");
+  const GURL kUrl2("http://www.ch40m1um.qjz9zk/");
 
   // Navigate to the first page.
   contents()->NavigateAndCommit(kUrl1);
@@ -1707,8 +1707,8 @@ TEST_F(RenderFrameHostManagerTest, CommitNewNavigationBeforeSendingSwapOut) {
   // deleted.  Similarly, no SwapOutACK message is sent.
   contents()->GetController().GetBackForwardCache().DisableForTesting(
       BackForwardCache::TEST_ASSUMES_NO_CACHING);
-  const GURL kUrl1("http://www.google.com/");
-  const GURL kUrl2("http://www.chromium.org/");
+  const GURL kUrl1("http://www.9oo91e.qjz9zk/");
+  const GURL kUrl2("http://www.ch40m1um.qjz9zk/");
 
   // Navigate to the first page.
   contents()->NavigateAndCommit(kUrl1);
@@ -1753,7 +1753,7 @@ TEST_F(RenderFrameHostManagerTest, CommitNewNavigationBeforeSendingSwapOut) {
 // Test that a RenderFrameHost is properly deleted when a cross-site navigation
 // is cancelled.
 TEST_F(RenderFrameHostManagerTest, CancelPendingProperlyDeletesOrSwaps) {
-  const GURL kUrl1("http://www.google.com/");
+  const GURL kUrl1("http://www.9oo91e.qjz9zk/");
   const GURL kUrl2 = isolated_cross_site_url();
   RenderFrameHostImpl* pending_rfh = nullptr;
   base::TimeTicks now = base::TimeTicks::Now();
@@ -1819,7 +1819,7 @@ class RenderFrameHostManagerTestWithSiteIsolation
 // deleted when the node is detached. Motivated by http://crbug.com/441357 and
 // http://crbug.com/444955.
 TEST_F(RenderFrameHostManagerTestWithSiteIsolation, DetachPendingChild) {
-  const GURL kUrlA("http://www.google.com/");
+  const GURL kUrlA("http://www.9oo91e.qjz9zk/");
   const GURL kUrlB("http://webkit.org/");
 
   constexpr auto kOwnerType = blink::FrameOwnerElementType::kIframe;
@@ -1943,7 +1943,7 @@ TEST_F(RenderFrameHostManagerTestWithSiteIsolation, DetachPendingChild) {
 // mess with the first tab's content. Motivated by http://crbug.com/473714.
 TEST_F(RenderFrameHostManagerTestWithSiteIsolation,
        TwoTabsCrashOneReloadsOneLeaves) {
-  const GURL kUrl1("http://www.google.com/");
+  const GURL kUrl1("http://www.9oo91e.qjz9zk/");
   const GURL kUrl2("http://webkit.org/");
   const GURL kUrl3("http://whatwg.org/");
 
@@ -2062,7 +2062,7 @@ TEST_F(RenderFrameHostManagerTestWithSiteIsolation,
 // Test that opener proxies are created properly with a cycle on the opener
 // chain.
 TEST_F(RenderFrameHostManagerTest, CreateOpenerProxiesWithCycleOnOpenerChain) {
-  const GURL kUrl1("http://www.google.com/");
+  const GURL kUrl1("http://www.9oo91e.qjz9zk/");
   const GURL kUrl2 = isolated_cross_site_url();
 
   // Navigate to an initial URL.
@@ -2127,7 +2127,7 @@ TEST_F(RenderFrameHostManagerTest, CreateOpenerProxiesWithCycleOnOpenerChain) {
 // Test that opener proxies are created properly when the opener points
 // to itself.
 TEST_F(RenderFrameHostManagerTest, CreateOpenerProxiesWhenOpenerPointsToSelf) {
-  const GURL kUrl1("http://www.google.com/");
+  const GURL kUrl1("http://www.9oo91e.qjz9zk/");
   const GURL kUrl2 = isolated_cross_site_url();
 
   // Navigate to an initial URL.
@@ -2528,7 +2528,7 @@ TEST_F(RenderFrameHostManagerTest, SimultaneousNavigationWithOneWebUI1) {
   EXPECT_FALSE(GetPendingFrameHost(manager));
 
   // Navigation request to a non-WebUI page.
-  const GURL kUrl("http://google.com");
+  const GURL kUrl("http://9oo91e.qjz9zk");
   auto navigation =
       NavigationSimulator::CreateBrowserInitiated(kUrl, contents());
   navigation->ReadyToCommit();
@@ -2578,7 +2578,7 @@ TEST_F(RenderFrameHostManagerTest, SimultaneousNavigationWithOneWebUI2) {
   EXPECT_EQ(web_ui, host1->web_ui());
 
   // Navigation request to a non-WebUI page.
-  const GURL kUrl("http://google.com");
+  const GURL kUrl("http://9oo91e.qjz9zk");
   auto navigation =
       NavigationSimulator::CreateBrowserInitiated(kUrl, contents());
   navigation->ReadyToCommit();
@@ -2974,8 +2974,8 @@ TEST_F(RenderFrameHostManagerTestWithSiteIsolation,
 // https://crbug.com/916137.
 TEST_F(RenderFrameHostManagerTestWithSiteIsolation,
        NewProxyReceivesLoadingState) {
-  const GURL kUrl1("http://www.chromium.org");
-  const GURL kUrl2("http://www.google.com");
+  const GURL kUrl1("http://www.ch40m1um.qjz9zk");
+  const GURL kUrl2("http://www.9oo91e.qjz9zk");
   const GURL kUrl3("http://foo.com");
 
   // Navigate main frame to |kUrl1| and commit, but don't simulate
@@ -3036,8 +3036,8 @@ TEST_F(RenderFrameHostManagerTestWithSiteIsolation,
 
 // Tests that a BeginNavigation IPC from a no longer active RFH is ignored.
 TEST_F(RenderFrameHostManagerTest, BeginNavigationIgnoredWhenNotActive) {
-  const GURL kUrl1("http://www.google.com");
-  const GURL kUrl2("http://www.chromium.org");
+  const GURL kUrl1("http://www.9oo91e.qjz9zk");
+  const GURL kUrl2("http://www.ch40m1um.qjz9zk");
   const GURL kUrl3("http://foo.com");
 
   contents()->NavigateAndCommit(kUrl1);
@@ -3067,8 +3067,8 @@ TEST_F(RenderFrameHostManagerTest, BeginNavigationIgnoredWhenNotActive) {
 // Tests that sandbox flags received after a navigation away has started do not
 // affect the document being navigated to.
 TEST_F(RenderFrameHostManagerTest, ReceivedFramePolicyAfterNavigationStarted) {
-  const GURL kUrl1("http://www.google.com");
-  const GURL kUrl2("http://www.chromium.org");
+  const GURL kUrl1("http://www.9oo91e.qjz9zk");
+  const GURL kUrl2("http://www.ch40m1um.qjz9zk");
 
   contents()->NavigateAndCommit(kUrl1);
   TestRenderFrameHost* initial_rfh = main_test_rfh();

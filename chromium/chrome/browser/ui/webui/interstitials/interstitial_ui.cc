@@ -250,123 +250,12 @@ LookalikeUrlInterstitialPage* CreateLookalikeInterstitialPage(
                                                      safe_url));
 }
 
-safe_browsing::SafeBrowsingBlockingPage* CreateSafeBrowsingBlockingPage(
-    content::WebContents* web_contents) {
-  safe_browsing::SBThreatType threat_type =
-      safe_browsing::SB_THREAT_TYPE_URL_MALWARE;
-  GURL request_url("http://example.com");
-  std::string url_param;
-  if (net::GetValueForKeyInQuery(web_contents->GetURL(),
-                                 "url",
-                                 &url_param)) {
-    if (GURL(url_param).is_valid()) {
-      request_url = GURL(url_param);
-    }
-  }
-  GURL main_frame_url(request_url);
-  // TODO(mattm): add flag to change main_frame_url or add dedicated flag to
-  // test subresource interstitials.
-  std::string type_param;
-  if (net::GetValueForKeyInQuery(web_contents->GetURL(),
-                                 "type",
-                                 &type_param)) {
-    if (type_param == "malware") {
-      threat_type = safe_browsing::SB_THREAT_TYPE_URL_MALWARE;
-    } else if (type_param == "phishing") {
-      threat_type = safe_browsing::SB_THREAT_TYPE_URL_PHISHING;
-    } else if (type_param == "unwanted") {
-      threat_type = safe_browsing::SB_THREAT_TYPE_URL_UNWANTED;
-    } else if (type_param == "clientside_malware") {
-      threat_type = safe_browsing::SB_THREAT_TYPE_URL_CLIENT_SIDE_MALWARE;
-    } else if (type_param == "clientside_phishing") {
-      threat_type = safe_browsing::SB_THREAT_TYPE_URL_CLIENT_SIDE_PHISHING;
-    } else if (type_param == "billing") {
-      threat_type = safe_browsing::SB_THREAT_TYPE_BILLING;
-    }
-  }
-  safe_browsing::SafeBrowsingBlockingPage::UnsafeResource resource;
-  resource.url = request_url;
-  resource.is_subresource = request_url != main_frame_url;
-  resource.is_subframe = false;
-  resource.threat_type = threat_type;
-  resource.web_contents_getter =
-      security_interstitials::UnsafeResource::GetWebContentsGetter(
-          web_contents->GetMainFrame()->GetProcess()->GetID(),
-          web_contents->GetMainFrame()->GetRoutingID());
-  resource.threat_source = g_browser_process->safe_browsing_service()
-                               ->database_manager()
-                               ->GetThreatSource();
-
-  // Normally safebrowsing interstitial types which block the main page load
-  // (SB_THREAT_TYPE_URL_MALWARE, SB_THREAT_TYPE_URL_PHISHING, and
-  // SB_THREAT_TYPE_URL_UNWANTED on main-frame loads) would expect there to be a
-  // pending navigation when the SafeBrowsingBlockingPage is created. This demo
-  // creates a SafeBrowsingBlockingPage but does not actually show a real
-  // interstitial. Instead it extracts the html and displays it manually, so the
-  // parts which depend on the NavigationEntry are not hit.
-  return safe_browsing::SafeBrowsingBlockingPage::CreateBlockingPage(
-      g_browser_process->safe_browsing_service()->ui_manager().get(),
-      web_contents, main_frame_url, resource, true);
-}
-
-TestSafeBrowsingBlockingPageQuiet* CreateSafeBrowsingQuietBlockingPage(
-    content::WebContents* web_contents) {
-  safe_browsing::SBThreatType threat_type =
-      safe_browsing::SB_THREAT_TYPE_URL_MALWARE;
-  GURL request_url("http://example.com");
-  std::string url_param;
-  if (net::GetValueForKeyInQuery(web_contents->GetURL(), "url", &url_param)) {
-    if (GURL(url_param).is_valid())
-      request_url = GURL(url_param);
-  }
-  GURL main_frame_url(request_url);
-  std::string type_param;
-  bool is_giant_webview = false;
-  if (net::GetValueForKeyInQuery(web_contents->GetURL(), "type", &type_param)) {
-    if (type_param == "malware") {
-      threat_type = safe_browsing::SB_THREAT_TYPE_URL_MALWARE;
-    } else if (type_param == "phishing") {
-      threat_type = safe_browsing::SB_THREAT_TYPE_URL_PHISHING;
-    } else if (type_param == "unwanted") {
-      threat_type = safe_browsing::SB_THREAT_TYPE_URL_UNWANTED;
-    } else if (type_param == "billing") {
-      threat_type = safe_browsing::SB_THREAT_TYPE_BILLING;
-    } else if (type_param == "giant") {
-      threat_type = safe_browsing::SB_THREAT_TYPE_URL_MALWARE;
-      is_giant_webview = true;
-    }
-  }
-  safe_browsing::SafeBrowsingBlockingPage::UnsafeResource resource;
-  resource.url = request_url;
-  resource.is_subresource = request_url != main_frame_url;
-  resource.is_subframe = false;
-  resource.threat_type = threat_type;
-  resource.web_contents_getter =
-      security_interstitials::UnsafeResource::GetWebContentsGetter(
-          web_contents->GetMainFrame()->GetProcess()->GetID(),
-          web_contents->GetMainFrame()->GetRoutingID());
-  resource.threat_source = g_browser_process->safe_browsing_service()
-                               ->database_manager()
-                               ->GetThreatSource();
-
-  // Normally safebrowsing interstitial types which block the main page load
-  // (SB_THREAT_TYPE_URL_MALWARE, SB_THREAT_TYPE_URL_PHISHING, and
-  // SB_THREAT_TYPE_URL_UNWANTED on main-frame loads) would expect there to be a
-  // pending navigation when the SafeBrowsingBlockingPage is created. This demo
-  // creates a SafeBrowsingBlockingPage but does not actually show a real
-  // interstitial. Instead it extracts the html and displays it manually, so the
-  // parts which depend on the NavigationEntry are not hit.
-  return TestSafeBrowsingBlockingPageQuiet::CreateBlockingPage(
-      g_browser_process->safe_browsing_service()->ui_manager().get(),
-      web_contents, main_frame_url, resource, is_giant_webview);
-}
-
 #if BUILDFLAG(ENABLE_CAPTIVE_PORTAL_DETECTION)
 CaptivePortalBlockingPage* CreateCaptivePortalBlockingPage(
     content::WebContents* web_contents) {
   bool is_wifi_connection = false;
   GURL landing_url("https://captive.portal/login");
-  GURL request_url("https://google.com");
+  GURL request_url("https://9oo91e.qjz9zk");
   // Not initialized to a default value, since non-empty wifi_ssid is
   // considered a wifi connection, even if is_wifi_connection is false.
   std::string wifi_ssid;
@@ -473,8 +362,6 @@ void InterstitialHTMLSource::StartDataRequest(
   } else if (path_without_query == "/blocked-interception") {
     interstitial_delegate.reset(
         CreateBlockedInterceptionBlockingPage(web_contents));
-  } else if (path_without_query == "/safebrowsing") {
-    interstitial_delegate.reset(CreateSafeBrowsingBlockingPage(web_contents));
   } else if (path_without_query == "/clock") {
     interstitial_delegate.reset(CreateBadClockBlockingPage(web_contents));
   } else if (path_without_query == "/lookalike") {
@@ -486,13 +373,6 @@ void InterstitialHTMLSource::StartDataRequest(
   } else if (path_without_query == "/origin_policy") {
     interstitial_delegate.reset(
         CreateOriginPolicyInterstitialPage(web_contents));
-  }
-
-  if (path_without_query == "/quietsafebrowsing") {
-    TestSafeBrowsingBlockingPageQuiet* blocking_page =
-        CreateSafeBrowsingQuietBlockingPage(web_contents);
-    interstitial_delegate.reset(blocking_page);
-    html = blocking_page->GetHTML();
 #if BUILDFLAG(ENABLE_SUPERVISED_USERS)
   } else if (path_without_query == "/supervised_user") {
     html = GetSupervisedUserInterstitialHTML(path);

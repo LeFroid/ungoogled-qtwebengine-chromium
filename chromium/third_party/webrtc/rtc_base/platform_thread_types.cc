@@ -59,7 +59,7 @@ bool IsThreadRefEqual(const PlatformThreadRef& a, const PlatformThreadRef& b) {
 void SetCurrentThreadName(const char* name) {
 #if defined(WEBRTC_WIN)
   // For details see:
-  // https://docs.microsoft.com/en-us/visualstudio/debugger/how-to-set-a-thread-name-in-native-code
+  // https://docs.m1cr050ft.qjz9zk/en-us/visualstudio/debugger/how-to-set-a-thread-name-in-native-code
 #pragma pack(push, 8)
   struct {
     DWORD dwType;

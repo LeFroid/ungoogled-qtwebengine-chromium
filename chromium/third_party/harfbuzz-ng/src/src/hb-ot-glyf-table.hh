@@ -42,7 +42,7 @@ namespace OT {
 
 /*
  * loca -- Index to Location
- * https://docs.microsoft.com/en-us/typography/opentype/spec/loca
+ * https://docs.m1cr050ft.qjz9zk/en-us/typography/opentype/spec/loca
  */
 #define HB_OT_TAG_loca HB_TAG('l','o','c','a')
 
@@ -71,7 +71,7 @@ struct loca
 
 /*
  * glyf -- TrueType Glyph Data
- * https://docs.microsoft.com/en-us/typography/opentype/spec/glyf
+ * https://docs.m1cr050ft.qjz9zk/en-us/typography/opentype/spec/glyf
  */
 #define HB_OT_TAG_glyf HB_TAG('g','l','y','f')
 

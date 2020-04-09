@@ -437,7 +437,7 @@ void DWriteFontProxyImpl::MatchUniqueFont(
     DWRITE_FONT_PROPERTY search_property = {property_id,
                                             unique_font_name_wide.c_str(), L""};
     // GetMatchingFonts() matches all languages according to:
-    // https://docs.microsoft.com/en-us/windows/desktop/api/dwrite_3/ns-dwrite_3-dwrite_font_property
+    // https://docs.m1cr050ft.qjz9zk/en-us/windows/desktop/api/dwrite_3/ns-dwrite_3-dwrite_font_property
     HRESULT hr =
         system_font_set->GetMatchingFonts(&search_property, 1, &filtered_set);
     return SUCCEEDED(hr);

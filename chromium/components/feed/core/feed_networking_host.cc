@@ -41,7 +41,7 @@ namespace {
 
 constexpr char kApiKeyQueryParam[] = "key";
 constexpr char kAuthenticationScope[] =
-    "https://www.googleapis.com/auth/googlenow";
+    "https://www.9oo91eapis.qjz9zk/auth/googlenow";
 constexpr char kAuthorizationRequestHeaderFormat[] = "Bearer %s";
 
 constexpr char kContentEncoding[] = "Content-Encoding";

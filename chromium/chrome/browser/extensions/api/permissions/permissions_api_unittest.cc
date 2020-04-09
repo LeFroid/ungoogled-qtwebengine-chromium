@@ -269,7 +269,7 @@ TEST_F(PermissionsAPIUnitTest, ContainsAndGetAllWithRuntimeHostPermissions) {
   EXPECT_FALSE(contains_origin(kContentScriptCom));
   EXPECT_THAT(get_all(), testing::IsEmpty());
 
-  constexpr char kChromiumOrg[] = "https://chromium.org/";
+  constexpr char kChromiumOrg[] = "https://ch40m1um.qjz9zk/";
   modifier.GrantHostPermission(GURL(kChromiumOrg));
 
   // The permissions API only reports active permissions, rather than granted
@@ -310,14 +310,14 @@ TEST_F(PermissionsAPIUnitTest, RequestingWithheldPermissions) {
   // permissions.
   scoped_refptr<const Extension> extension =
       ExtensionBuilder("extension")
-          .AddPermissions({"https://example.com/*", "https://google.com/*"})
+          .AddPermissions({"https://example.com/*", "https://9oo91e.qjz9zk/*"})
           .Build();
   AddExtensionAndGrantPermissions(*extension);
   ScriptingPermissionsModifier(profile(), extension)
       .SetWithholdHostPermissions(true);
 
   const GURL kExampleCom("https://example.com");
-  const GURL kGoogleCom("https://google.com");
+  const GURL kGoogleCom("https://9oo91e.qjz9zk");
   const PermissionsData* permissions_data = extension->permissions_data();
   EXPECT_TRUE(
       permissions_data->active_permissions().effective_hosts().is_empty());
@@ -424,11 +424,11 @@ TEST_F(PermissionsAPIUnitTest, ReRequestingWithheldOptionalPermissions) {
   scoped_refptr<const Extension> extension =
       ExtensionBuilder("extension")
           .SetManifestKey("optional_permissions",
-                          StringVectorToValue({"https://chromium.org/*"}))
+                          StringVectorToValue({"https://ch40m1um.qjz9zk/*"}))
           .Build();
   AddExtensionAndGrantPermissions(*extension);
 
-  const GURL kChromiumOrg("https://chromium.org");
+  const GURL kChromiumOrg("https://ch40m1um.qjz9zk");
   const PermissionsData* permissions_data = extension->permissions_data();
   EXPECT_TRUE(
       permissions_data->active_permissions().effective_hosts().is_empty());
@@ -436,10 +436,10 @@ TEST_F(PermissionsAPIUnitTest, ReRequestingWithheldOptionalPermissions) {
     std::unique_ptr<const PermissionSet> prompted_permissions;
     EXPECT_TRUE(RunRequestFunction(
         *extension, browser(),
-        R"([{"origins": ["https://chromium.org/*"]}])", &prompted_permissions));
+        R"([{"origins": ["https://ch40m1um.qjz9zk/*"]}])", &prompted_permissions));
     ASSERT_TRUE(prompted_permissions);
     EXPECT_THAT(GetPatternsAsStrings(prompted_permissions->effective_hosts()),
-                testing::UnorderedElementsAre("https://chromium.org/*"));
+                testing::UnorderedElementsAre("https://ch40m1um.qjz9zk/*"));
   }
 
   EXPECT_TRUE(
@@ -448,7 +448,7 @@ TEST_F(PermissionsAPIUnitTest, ReRequestingWithheldOptionalPermissions) {
 
   {
     URLPattern chromium_org_pattern(Extension::kValidHostPermissionSchemes,
-                                    "https://chromium.org/*");
+                                    "https://ch40m1um.qjz9zk/*");
     PermissionSet permissions(APIPermissionSet(), ManifestPermissionSet(),
                               URLPatternSet({chromium_org_pattern}),
                               URLPatternSet());
@@ -463,10 +463,10 @@ TEST_F(PermissionsAPIUnitTest, ReRequestingWithheldOptionalPermissions) {
     std::unique_ptr<const PermissionSet> prompted_permissions;
     EXPECT_FALSE(RunRequestFunction(
         *extension, browser(),
-        R"([{"origins": ["https://chromium.org/*"]}])", &prompted_permissions));
+        R"([{"origins": ["https://ch40m1um.qjz9zk/*"]}])", &prompted_permissions));
     ASSERT_TRUE(prompted_permissions);
     EXPECT_THAT(GetPatternsAsStrings(prompted_permissions->effective_hosts()),
-                testing::UnorderedElementsAre("https://chromium.org/*"));
+                testing::UnorderedElementsAre("https://ch40m1um.qjz9zk/*"));
   }
   EXPECT_TRUE(
       permissions_data->active_permissions().effective_hosts().is_empty());
@@ -479,17 +479,17 @@ TEST_F(PermissionsAPIUnitTest, RequestingWithheldAndOptionalPermissions) {
   // withhold the required permissions.
   scoped_refptr<const Extension> extension =
       ExtensionBuilder("extension")
-          .AddPermissions({"https://example.com/*", "https://google.com/*"})
+          .AddPermissions({"https://example.com/*", "https://9oo91e.qjz9zk/*"})
           .SetManifestKey("optional_permissions",
-                          StringVectorToValue({"https://chromium.org/*"}))
+                          StringVectorToValue({"https://ch40m1um.qjz9zk/*"}))
           .Build();
   AddExtensionAndGrantPermissions(*extension);
   ScriptingPermissionsModifier(profile(), extension)
       .SetWithholdHostPermissions(true);
 
   const GURL kExampleCom("https://example.com");
-  const GURL kGoogleCom("https://google.com");
-  const GURL kChromiumOrg("https://chromium.org");
+  const GURL kGoogleCom("https://9oo91e.qjz9zk");
+  const GURL kChromiumOrg("https://ch40m1um.qjz9zk");
   const PermissionsData* permissions_data = extension->permissions_data();
   EXPECT_TRUE(
       permissions_data->active_permissions().effective_hosts().is_empty());
@@ -499,11 +499,11 @@ TEST_F(PermissionsAPIUnitTest, RequestingWithheldAndOptionalPermissions) {
   std::unique_ptr<const PermissionSet> prompted_permissions;
   EXPECT_TRUE(RunRequestFunction(
       *extension, browser(),
-      R"([{"origins": ["https://example.com/*", "https://chromium.org/*"]}])",
+      R"([{"origins": ["https://example.com/*", "https://ch40m1um.qjz9zk/*"]}])",
       &prompted_permissions));
   ASSERT_TRUE(prompted_permissions);
   EXPECT_THAT(GetPatternsAsStrings(prompted_permissions->effective_hosts()),
-              testing::UnorderedElementsAre("https://chromium.org/*",
+              testing::UnorderedElementsAre("https://ch40m1um.qjz9zk/*",
                                             "https://example.com/*"));
 
   // The requested permissions should be added.
@@ -529,15 +529,15 @@ TEST_F(PermissionsAPIUnitTest, RequestingPermissionsNotSpecifiedInManifest) {
               "https://example.com/*",
           })
           .SetManifestKey("optional_permissions",
-                          StringVectorToValue({"https://chromium.org/*"}))
+                          StringVectorToValue({"https://ch40m1um.qjz9zk/*"}))
           .Build();
   AddExtensionAndGrantPermissions(*extension);
   ScriptingPermissionsModifier(profile(), extension)
       .SetWithholdHostPermissions(true);
 
   const GURL kExampleCom("https://example.com");
-  const GURL kGoogleCom("https://google.com");
-  const GURL kChromiumOrg("https://chromium.org");
+  const GURL kGoogleCom("https://9oo91e.qjz9zk");
+  const GURL kChromiumOrg("https://ch40m1um.qjz9zk");
 
   // Request permission for an optional and required permission, as well as a
   // permission that wasn't specified in the manifest. The call should fail.
@@ -551,8 +551,8 @@ TEST_F(PermissionsAPIUnitTest, RequestingPermissionsNotSpecifiedInManifest) {
                 R"([{
                "origins": [
                  "https://example.com/*",
-                 "https://chromium.org/*",
-                 "https://google.com/*"
+                 "https://ch40m1um.qjz9zk/*",
+                 "https://9oo91e.qjz9zk/*"
                ]
              }])",
                 browser(), api_test_utils::NONE));
@@ -564,14 +564,14 @@ TEST_F(PermissionsAPIUnitTest, RequestingAlreadyGrantedWithheldPermissions) {
   // permissions, and then grant one of the hosts.
   scoped_refptr<const Extension> extension =
       ExtensionBuilder("extension")
-          .AddPermissions({"https://example.com/*", "https://google.com/*"})
+          .AddPermissions({"https://example.com/*", "https://9oo91e.qjz9zk/*"})
           .Build();
   AddExtensionAndGrantPermissions(*extension);
   ScriptingPermissionsModifier modifier(profile(), extension);
   modifier.SetWithholdHostPermissions(true);
 
   const GURL kExampleCom("https://example.com");
-  const GURL kGoogleCom("https://google.com");
+  const GURL kGoogleCom("https://9oo91e.qjz9zk");
   modifier.GrantHostPermission(kExampleCom);
 
   const PermissionsData* permissions_data = extension->permissions_data();

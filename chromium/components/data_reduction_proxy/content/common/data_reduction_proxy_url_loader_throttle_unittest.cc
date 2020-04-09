@@ -260,7 +260,7 @@ void RestartBypassProxyAndCacheHelper(
     mojom::DataReductionProxy* mojo_data_reduction_proxy,
     bool response_came_from_drp) {
   base::HistogramTester histogram_tester;
-  auto drp_server = MakeCoreDrpServer("QUIC proxy.googlezip.net:443");
+  auto drp_server = MakeCoreDrpServer("QUIC proxy.9oo91e21p.qjz9zk:443");
 
   auto manager = CreateManager(mojo_data_reduction_proxy, {drp_server});
   MockDelegate delegate;

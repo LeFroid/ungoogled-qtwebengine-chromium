@@ -44,7 +44,7 @@ RandomNumberGenerator::RandomNumberGenerator() {
 
 #if V8_OS_CYGWIN || V8_OS_WIN
   // Use rand_s() to gather entropy on Windows. See:
-  // https://code.google.com/p/v8/issues/detail?id=2905
+  // https://code.9oo91e.qjz9zk/p/v8/issues/detail?id=2905
   unsigned first_half, second_half;
   errno_t result = rand_s(&first_half);
   DCHECK_EQ(0, result);
@@ -78,7 +78,7 @@ RandomNumberGenerator::RandomNumberGenerator() {
   // it is the responsibility of the embedder to install
   // an entropy source using v8::V8::SetEntropySource(),
   // which provides reasonable entropy, see:
-  // https://code.google.com/p/v8/issues/detail?id=2905
+  // https://code.9oo91e.qjz9zk/p/v8/issues/detail?id=2905
   int64_t seed = Time::NowFromSystemTime().ToInternalValue() << 24;
   seed ^= TimeTicks::HighResolutionNow().ToInternalValue() << 16;
   seed ^= TimeTicks::Now().ToInternalValue() << 8;

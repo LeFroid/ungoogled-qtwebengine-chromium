@@ -33,7 +33,7 @@ static const char kNistSPKIHash[] =
 #define VARIABLE_IS_NOT_USED
 #endif
 
-// Google's 2009 cert. Lacks a SubjectAltName, but contains www.google.com in
+// Google's 2009 cert. Lacks a SubjectAltName, but contains www.9oo91e.qjz9zk in
 // the Subject CN field.
 
 unsigned char VARIABLE_IS_NOT_USED google_der[] = {

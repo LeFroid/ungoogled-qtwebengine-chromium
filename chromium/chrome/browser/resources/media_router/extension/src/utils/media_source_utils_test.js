@@ -24,9 +24,9 @@ describe('Tests MediaSourceUtils', function() {
 
   describe('Tests isPresentationSource', function() {
     it('should return true for presentation source', function() {
-      expect(mr.MediaSourceUtils.isPresentationSource('http://www.google.com'))
+      expect(mr.MediaSourceUtils.isPresentationSource('http://www.9oo91e.qjz9zk'))
           .toBe(true);
-      expect(mr.MediaSourceUtils.isPresentationSource('https://www.google.com'))
+      expect(mr.MediaSourceUtils.isPresentationSource('https://www.9oo91e.qjz9zk'))
           .toBe(true);
     });
 
@@ -38,7 +38,7 @@ describe('Tests MediaSourceUtils', function() {
 
     it('should return false for cast receiver app', function() {
       expect(mr.MediaSourceUtils.isPresentationSource(
-                 'http://www.google.com/cast#__castAppId__=deadbeef'))
+                 'http://www.9oo91e.qjz9zk/cast#__castAppId__=deadbeef'))
           .toBe(false);
     });
   });
@@ -46,7 +46,7 @@ describe('Tests MediaSourceUtils', function() {
   describe('Tests getMirrorTabId', function() {
     it('should return null for non tab mirror source or invalid ID',
        function() {
-         expect(mr.MediaSourceUtils.getMirrorTabId('http://www.google.com'))
+         expect(mr.MediaSourceUtils.getMirrorTabId('http://www.9oo91e.qjz9zk'))
              .toBeNull();
          expect(mr.MediaSourceUtils.getMirrorTabId(
                     'urn:x-org.chromium.media:source:tab:'))

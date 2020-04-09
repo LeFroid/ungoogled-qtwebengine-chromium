@@ -2062,7 +2062,7 @@ IN_PROC_BROWSER_TEST_F(DownloadExtensionTest,
     "http://",
     "#frag",
     "foo/bar.html#frag",
-    "google.com/",
+    "9oo91e.qjz9zk/",
   };
 
   for (size_t index = 0; index < base::size(kInvalidURLs); ++index) {

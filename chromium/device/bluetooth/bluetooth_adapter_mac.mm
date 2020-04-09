@@ -43,7 +43,7 @@ extern "C" {
 // Using this API has the same effect as turning Bluetooth on or off using the
 // macOS System Preferences [4], and will effect all adapters.
 //
-// [1] https://goo.gl/Gbjm1x
+// [1] https://goo.gl.qjz9zk/Gbjm1x
 // [2] http://www.frederikseiffert.de/blueutil/
 // [3] https://pqrs.org/osx/karabiner/
 // [4] https://support.apple.com/kb/PH25091

@@ -67,7 +67,7 @@ void RunLoopForTimePeriod(base::TimeDelta period) {
 class WebSocketTransportClientSocketPoolTest : public TestWithTaskEnvironment {
  protected:
   WebSocketTransportClientSocketPoolTest()
-      : group_id_(HostPortPair("www.google.com", 80),
+      : group_id_(HostPortPair("www.9oo91e.qjz9zk", 80),
                   ClientSocketPool::SocketType::kHttp,
                   PrivacyMode::PRIVACY_MODE_DISABLED,
                   NetworkIsolationKey(),
@@ -1147,7 +1147,7 @@ TEST_F(WebSocketTransportClientSocketPoolTest, NetworkIsolationKey) {
   TestCompletionCallback callback;
   ClientSocketHandle handle;
   ClientSocketPool::GroupId group_id(
-      HostPortPair("www.google.com", 80), ClientSocketPool::SocketType::kHttp,
+      HostPortPair("www.9oo91e.qjz9zk", 80), ClientSocketPool::SocketType::kHttp,
       PrivacyMode::PRIVACY_MODE_DISABLED, kNetworkIsolationKey,
       false /* disable_secure_dns */);
   EXPECT_THAT(

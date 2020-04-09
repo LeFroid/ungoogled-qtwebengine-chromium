@@ -63,7 +63,7 @@ void PossiblyWarnFeatureDeprecation(content::RenderFrameHost* rfh,
           "[Deprecation] Download in sandbox is deprecated and will be removed "
           "in M81. You may consider adding 'allow-downloads' to the sandbox "
           "attribute list. See "
-          "https://www.chromestatus.com/feature/5706745674465280 for more "
+          "https://www.ch40mestatus.qjz9zk/feature/5706745674465280 for more "
           "details.");
       return;
     case WebFeature::kDownloadInAdFrameWithoutUserGesture:
@@ -71,7 +71,7 @@ void PossiblyWarnFeatureDeprecation(content::RenderFrameHost* rfh,
           blink::mojom::ConsoleMessageLevel::kWarning,
           "[Intervention] Download in ad frame without user activation is "
           "not allowed. See "
-          "https://www.chromestatus.com/feature/6311883621531648 for more "
+          "https://www.ch40mestatus.qjz9zk/feature/6311883621531648 for more "
           "details.");
       return;
 

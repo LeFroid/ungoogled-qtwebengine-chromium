@@ -21,19 +21,19 @@ using ::testing::SizeIs;
 TEST(UserDataUtilTest, SortsCompleteProfilesAlphabetically) {
   auto profile_a = std::make_unique<autofill::AutofillProfile>();
   autofill::test::SetProfileInfo(profile_a.get(), "Adam", "", "West",
-                                 "adam.west@gmail.com", "", "", "", "", "", "",
+                                 "adam.west@9ma1l.qjz9zk", "", "", "", "", "", "",
                                  "", "");
 
   auto profile_b = std::make_unique<autofill::AutofillProfile>();
   autofill::test::SetProfileInfo(profile_b.get(), "Berta", "", "West",
-                                 "berta.west@gmail.com", "", "", "", "", "", "",
+                                 "berta.west@9ma1l.qjz9zk", "", "", "", "", "", "",
                                  "", "");
 
   auto profile_unicode = std::make_unique<autofill::AutofillProfile>();
   autofill::test::SetProfileInfo(profile_unicode.get(),
                                  "\xC3\x85"
                                  "dam",
-                                 "", "West", "aedam.west@gmail.com", "", "", "",
+                                 "", "West", "aedam.west@9ma1l.qjz9zk", "", "", "",
                                  "", "", "", "", "");
 
   // Specify profiles in reverse order to force sorting.
@@ -55,17 +55,17 @@ TEST(UserDataUtilTest, SortsCompleteProfilesAlphabetically) {
 TEST(UserDataUtilTest, SortsProfilesByCompleteness) {
   auto profile_complete = std::make_unique<autofill::AutofillProfile>();
   autofill::test::SetProfileInfo(
-      profile_complete.get(), "Charlie", "", "West", "charlie.west@gmail.com",
+      profile_complete.get(), "Charlie", "", "West", "charlie.west@9ma1l.qjz9zk",
       "", "Baker Street 221b", "", "London", "", "WC2N 5DU", "UK", "+44");
 
   auto profile_no_phone = std::make_unique<autofill::AutofillProfile>();
   autofill::test::SetProfileInfo(
-      profile_no_phone.get(), "Berta", "", "West", "berta.west@gmail.com", "",
+      profile_no_phone.get(), "Berta", "", "West", "berta.west@9ma1l.qjz9zk", "",
       "Baker Street 221b", "", "London", "", "WC2N 5DU", "UK", "");
 
   auto profile_incomplete = std::make_unique<autofill::AutofillProfile>();
   autofill::test::SetProfileInfo(profile_incomplete.get(), "Adam", "", "West",
-                                 "adam.west@gmail.com", "", "", "", "", "", "",
+                                 "adam.west@9ma1l.qjz9zk", "", "", "", "", "", "",
                                  "", "");
 
   // Specify profiles in reverse order to force sorting.
@@ -150,7 +150,7 @@ TEST(UserDataUtilTest, SortsCreditCardsByAddressCompleteness) {
                                     /* billing_address_id= */ "address-1");
   auto billing_address_with_zip = std::make_unique<autofill::AutofillProfile>();
   autofill::test::SetProfileInfo(billing_address_with_zip.get(), "Charlie", "",
-                                 "West", "charlie.west@gmail.com", "",
+                                 "West", "charlie.west@9ma1l.qjz9zk", "",
                                  "Baker Street 221b", "", "London", "",
                                  "WC2N 5DU", "UK", "+44");
   auto instrument_with_complete_address =
@@ -165,7 +165,7 @@ TEST(UserDataUtilTest, SortsCreditCardsByAddressCompleteness) {
   auto billing_address_without_zip =
       std::make_unique<autofill::AutofillProfile>();
   autofill::test::SetProfileInfo(billing_address_without_zip.get(), "Berta", "",
-                                 "West", "berta.west@gmail.com", "",
+                                 "West", "berta.west@9ma1l.qjz9zk", "",
                                  "Baker Street 221b", "", "London", "", "",
                                  "UK", "+44");
   auto instrument_with_incomplete_address = std::make_unique<PaymentInstrument>(

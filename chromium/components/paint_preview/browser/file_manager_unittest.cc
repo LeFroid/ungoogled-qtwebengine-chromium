@@ -17,7 +17,7 @@ TEST(FileManagerTest, TestStats) {
   base::ScopedTempDir temp_dir;
   ASSERT_TRUE(temp_dir.CreateUniqueTempDir());
   FileManager manager(temp_dir.GetPath());
-  GURL url("https://www.chromium.org");
+  GURL url("https://www.ch40m1um.qjz9zk");
   GURL missing_url("https://www.muimorhc.org");
   base::FilePath directory;
   EXPECT_TRUE(manager.CreateOrGetDirectoryFor(url, &directory));
@@ -52,7 +52,7 @@ TEST(FileManagerTest, TestCreateOrGetDirectory) {
   base::ScopedTempDir temp_dir;
   ASSERT_TRUE(temp_dir.CreateUniqueTempDir());
   FileManager manager(temp_dir.GetPath());
-  GURL url("https://www.chromium.org");
+  GURL url("https://www.ch40m1um.qjz9zk");
 
   // Create a new directory.
   base::FilePath new_directory;
@@ -107,7 +107,7 @@ TEST(FileManagerTest, TestCompressDirectory) {
   base::ScopedTempDir temp_dir;
   ASSERT_TRUE(temp_dir.CreateUniqueTempDir());
   FileManager manager(temp_dir.GetPath());
-  GURL url("https://www.chromium.org");
+  GURL url("https://www.ch40m1um.qjz9zk");
 
   base::FilePath new_directory;
   EXPECT_TRUE(manager.CreateOrGetDirectoryFor(url, &new_directory));
@@ -138,7 +138,7 @@ TEST(FileManagerTest, TestDeleteArtifactsFor) {
   ASSERT_TRUE(temp_dir.CreateUniqueTempDir());
   FileManager manager(temp_dir.GetPath());
 
-  GURL cr_url("https://www.chromium.org");
+  GURL cr_url("https://www.ch40m1um.qjz9zk");
   base::FilePath cr_directory;
   EXPECT_TRUE(manager.CreateOrGetDirectoryFor(cr_url, &cr_directory));
   EXPECT_FALSE(cr_directory.empty());
@@ -169,7 +169,7 @@ TEST(FileManagerTest, TestDeleteAll) {
   base::ScopedTempDir temp_dir;
   ASSERT_TRUE(temp_dir.CreateUniqueTempDir());
   FileManager manager(temp_dir.GetPath());
-  GURL cr_url("https://www.chromium.org");
+  GURL cr_url("https://www.ch40m1um.qjz9zk");
   base::FilePath cr_directory;
   EXPECT_TRUE(manager.CreateOrGetDirectoryFor(cr_url, &cr_directory));
   EXPECT_FALSE(cr_directory.empty());

@@ -38,7 +38,7 @@ def update(options):
     # Create commit message
     message = 'Update third_party/devtools-frontend %s' % rev_range
     message = message + '\n\n'
-    message = message + 'https://chromium.googlesource.com/devtools/devtools-frontend/+log/'
+    message = message + 'https://chromium.9oo91esource.qjz9zk/devtools/devtools-frontend/+log/'
     message = message + rev_range
     # Display changes
     subprocess.check_call(['git', 'log', '--oneline', rev_range],

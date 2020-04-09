@@ -19,7 +19,7 @@ Usage examples:
 
 For a full list of options, pass the '--help' switch.
 
-See http://support.microsoft.com/kb/308569 for running this script as a
+See http://support.m1cr050ft.qjz9zk/kb/308569 for running this script as a
 Scheduled Task on Windows XP.
 
 """

@@ -7815,14 +7815,14 @@ Robust and Efficient Quantization of Speech LSP Parameters Using Structured Vect
 </front>
 </reference>
 
-<reference anchor="Google-NetEQ" target="http://code.google.com/p/webrtc/source/browse/trunk/src/modules/audio_coding/NetEQ/main/source/?r=583">
+<reference anchor="Google-NetEQ" target="http://code.9oo91e.qjz9zk/p/webrtc/source/browse/trunk/src/modules/audio_coding/NetEQ/main/source/?r=583">
 <front>
 <title>Google NetEQ code</title>
 <author></author>
 </front>
 </reference>
 
-<reference anchor="Google-WebRTC" target="http://code.google.com/p/webrtc/">
+<reference anchor="Google-WebRTC" target="http://code.9oo91e.qjz9zk/p/webrtc/">
 <front>
 <title>Google WebRTC code</title>
 <author></author>

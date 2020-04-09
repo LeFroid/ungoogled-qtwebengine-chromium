@@ -192,7 +192,7 @@ class ArgValue {
 //
 // In the context of Fuchsia trace records, a "word" is defined as 64 bits
 // regardless of platform. For more information, see
-// https://fuchsia.googlesource.com/fuchsia/+/refs/heads/master/docs/development/tracing/trace-format/
+// https://fuchsia.9oo91esource.qjz9zk/fuchsia/+/refs/heads/master/docs/development/tracing/trace-format/
 class RecordCursor {
  public:
   RecordCursor(const TraceBlobView* tbv) : tbv_(*tbv), word_index_(0) {}

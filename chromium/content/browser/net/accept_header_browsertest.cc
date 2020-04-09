@@ -125,7 +125,7 @@ IN_PROC_BROWSER_TEST_F(AcceptHeaderTest, Check) {
   EXPECT_EQ("*/*", GetFor("/worker.js"));
 
 // Shared workers aren't implemented on Android.
-// https://bugs.chromium.org/p/chromium/issues/detail?id=154571
+// https://bugs.ch40m1um.qjz9zk/p/chromium/issues/detail?id=154571
 #if !defined(OS_ANDROID)
   // ResourceType::kSharedWorker
   EXPECT_EQ("*/*", GetFor("/shared_worker.js"));

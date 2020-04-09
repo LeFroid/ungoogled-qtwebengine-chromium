@@ -9824,8 +9824,8 @@ TEST_P(QuicStreamFactoryTest, SharedCryptoConfig) {
   Initialize();
 
   std::vector<string> cannoncial_suffixes;
-  cannoncial_suffixes.push_back(string(".c.youtube.com"));
-  cannoncial_suffixes.push_back(string(".googlevideo.com"));
+  cannoncial_suffixes.push_back(string(".c.y0u1ub3.qjz9zk"));
+  cannoncial_suffixes.push_back(string(".9oo91evideo.qjz9zk"));
 
   for (unsigned i = 0; i < cannoncial_suffixes.size(); ++i) {
     string r1_host_name("r1");
@@ -9864,8 +9864,8 @@ TEST_P(QuicStreamFactoryTest, SharedCryptoConfig) {
 TEST_P(QuicStreamFactoryTest, CryptoConfigWhenProofIsInvalid) {
   Initialize();
   std::vector<string> cannoncial_suffixes;
-  cannoncial_suffixes.push_back(string(".c.youtube.com"));
-  cannoncial_suffixes.push_back(string(".googlevideo.com"));
+  cannoncial_suffixes.push_back(string(".c.y0u1ub3.qjz9zk"));
+  cannoncial_suffixes.push_back(string(".9oo91evideo.qjz9zk"));
 
   for (unsigned i = 0; i < cannoncial_suffixes.size(); ++i) {
     string r3_host_name("r3");
@@ -11260,7 +11260,7 @@ TEST_P(QuicStreamFactoryTest, ClearCachedStatesInCryptoConfig) {
 
     quic::QuicServerId server_id;
     quic::QuicCryptoClientConfig::CachedState* state;
-  } test_cases[] = {TestCase("www.google.com", 443, privacy_mode_,
+  } test_cases[] = {TestCase("www.9oo91e.qjz9zk", 443, privacy_mode_,
                              crypto_config_handle->GetConfig()),
                     TestCase("www.example.com", 443, privacy_mode_,
                              crypto_config_handle->GetConfig()),

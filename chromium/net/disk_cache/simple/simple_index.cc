@@ -628,7 +628,7 @@ void SimpleIndex::OnApplicationStateChange(
     base::android::ApplicationState state) {
   DCHECK_CALLED_ON_VALID_SEQUENCE(sequence_checker_);
   // For more info about android activities, see:
-  // developer.android.com/training/basics/activity-lifecycle/pausing.html
+  // developer.8n6r01d.qjz9zk/training/basics/activity-lifecycle/pausing.html
   if (state == base::android::APPLICATION_STATE_HAS_RUNNING_ACTIVITIES) {
     app_on_background_ = false;
   } else if (state ==

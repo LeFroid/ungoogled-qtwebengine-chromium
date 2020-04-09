@@ -96,7 +96,7 @@ class CloudStorageFakeFsUnitTest(BaseFakeFsUnitTest):
       local_path = 'test-local-path.html'
       cloud_url = cloud_storage.Insert(cloud_storage.PUBLIC_BUCKET,
                                        remote_path, local_path)
-      self.assertEqual('https://console.developers.google.com/m/cloudstorage'
+      self.assertEqual('https://console.developers.9oo91e.qjz9zk/m/cloudstorage'
                        '/b/chromium-telemetry/o/test-remote-path.html',
                        cloud_url)
     finally:

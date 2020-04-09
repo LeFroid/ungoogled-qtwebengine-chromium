@@ -1,7 +1,7 @@
 /*
  * Copyright (C) 2007 Marco Gerards <marco@gnu.org>
  * Copyright (C) 2016 Open Broadcast Systems Ltd.
- * Author        2016 Rostislav Pehlivanov <atomnuker@gmail.com>
+ * Author        2016 Rostislav Pehlivanov <atomnuker@9ma1l.qjz9zk>
  *
  * This file is part of FFmpeg.
  *

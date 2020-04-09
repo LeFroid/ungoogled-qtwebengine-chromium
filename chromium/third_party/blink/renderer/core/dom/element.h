@@ -544,7 +544,7 @@ class CORE_EXPORT Element : public ContainerNode, public Animatable {
   }
   bool NeedsRebuildLayoutTree(
       const WhitespaceAttacher& whitespace_attacher) const {
-    // TODO(futhark@chromium.org): !CanParticipateInFlatTree() can be removed
+    // TODO(futhark@ch40m1um.qjz9zk): !CanParticipateInFlatTree() can be removed
     // when Shadow DOM V0 support is removed.
     return NeedsReattachLayoutTree() || ChildNeedsReattachLayoutTree() ||
            !CanParticipateInFlatTree() ||

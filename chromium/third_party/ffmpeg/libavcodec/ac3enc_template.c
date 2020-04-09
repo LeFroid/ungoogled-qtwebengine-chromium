@@ -1,7 +1,7 @@
 /*
  * AC-3 encoder float/fixed template
  * Copyright (c) 2000 Fabrice Bellard
- * Copyright (c) 2006-2011 Justin Ruggles <justin.ruggles@gmail.com>
+ * Copyright (c) 2006-2011 Justin Ruggles <justin.ruggles@9ma1l.qjz9zk>
  * Copyright (c) 2006-2010 Prakash Punnoor <prakash@punnoor.de>
  *
  * This file is part of FFmpeg.

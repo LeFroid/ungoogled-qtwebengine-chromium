@@ -60,7 +60,7 @@ TEST(PaymentResponseTest, DataCopiedOver) {
   input->stringified_details = "{\"transactionId\": 123}";
   input->shipping_option = "standardShippingOption";
   input->payer->name = "Jon Doe";
-  input->payer->email = "abc@gmail.com";
+  input->payer->email = "abc@9ma1l.qjz9zk";
   input->payer->phone = "0123";
   MockPaymentStateResolver* complete_callback =
       MakeGarbageCollected<MockPaymentStateResolver>();
@@ -72,7 +72,7 @@ TEST(PaymentResponseTest, DataCopiedOver) {
   EXPECT_EQ("foo", output->methodName());
   EXPECT_EQ("standardShippingOption", output->shippingOption());
   EXPECT_EQ("Jon Doe", output->payerName());
-  EXPECT_EQ("abc@gmail.com", output->payerEmail());
+  EXPECT_EQ("abc@9ma1l.qjz9zk", output->payerEmail());
   EXPECT_EQ("0123", output->payerPhone());
   EXPECT_EQ("id", output->requestId());
 
@@ -175,7 +175,7 @@ TEST(PaymentResponseTest, JSONSerializerTest) {
   input->method_name = "foo";
   input->stringified_details = "{\"transactionId\": 123}";
   input->shipping_option = "standardShippingOption";
-  input->payer->email = "abc@gmail.com";
+  input->payer->email = "abc@9ma1l.qjz9zk";
   input->payer->phone = "0123";
   input->payer->name = "Jon Doe";
   input->shipping_address = payments::mojom::blink::PaymentAddress::New();
@@ -208,7 +208,7 @@ TEST(PaymentResponseTest, JSONSerializerTest) {
       "\"organization\":\"\",\"recipient\":\"\",\"phone\":\"\"},"
       "\"shippingOption\":"
       "\"standardShippingOption\",\"payerName\":\"Jon Doe\","
-      "\"payerEmail\":\"abc@gmail.com\",\"payerPhone\":\"0123\"}";
+      "\"payerEmail\":\"abc@9ma1l.qjz9zk\",\"payerPhone\":\"0123\"}";
   EXPECT_EQ(expected, json_string);
 }
 

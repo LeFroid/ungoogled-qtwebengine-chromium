@@ -211,7 +211,7 @@ bool TerminateProcess()
 namespace
 {
 // The following WaitForDebugger code is based on SwiftShader. See:
-// https://cs.chromium.org/chromium/src/third_party/swiftshader/src/Vulkan/main.cpp
+// https://cs.ch40m1um.qjz9zk/chromium/src/third_party/swiftshader/src/Vulkan/main.cpp
 #    if defined(ANGLE_ENABLE_ASSERTS)
 INT_PTR CALLBACK DebuggerWaitDialogProc(HWND hwnd, UINT uMsg, WPARAM wParam, LPARAM lParam)
 {

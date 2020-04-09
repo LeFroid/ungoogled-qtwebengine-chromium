@@ -50,9 +50,9 @@ std::string NormalizedUTF8Path(const base::FilePath& path) {
 
 TEST(FileSystemURLTest, ParsePersistent) {
   FileSystemURL url = CreateFileSystemURL(
-      "filesystem:http://chromium.org/persistent/directory/file");
+      "filesystem:http://ch40m1um.qjz9zk/persistent/directory/file");
   ASSERT_TRUE(url.is_valid());
-  EXPECT_EQ("http://chromium.org/", url.origin().GetURL().spec());
+  EXPECT_EQ("http://ch40m1um.qjz9zk/", url.origin().GetURL().spec());
   EXPECT_EQ(kFileSystemTypePersistent, url.type());
   EXPECT_EQ(FPL("file"), VirtualPath::BaseName(url.path()).value());
   EXPECT_EQ(FPL("directory"), url.path().DirName().value());
@@ -60,9 +60,9 @@ TEST(FileSystemURLTest, ParsePersistent) {
 
 TEST(FileSystemURLTest, ParseTemporary) {
   FileSystemURL url = CreateFileSystemURL(
-      "filesystem:http://chromium.org/temporary/directory/file");
+      "filesystem:http://ch40m1um.qjz9zk/temporary/directory/file");
   ASSERT_TRUE(url.is_valid());
-  EXPECT_EQ("http://chromium.org/", url.origin().GetURL().spec());
+  EXPECT_EQ("http://ch40m1um.qjz9zk/", url.origin().GetURL().spec());
   EXPECT_EQ(kFileSystemTypeTemporary, url.type());
   EXPECT_EQ(FPL("file"), VirtualPath::BaseName(url.path()).value());
   EXPECT_EQ(FPL("directory"), url.path().DirName().value());
@@ -70,9 +70,9 @@ TEST(FileSystemURLTest, ParseTemporary) {
 
 TEST(FileSystemURLTest, EnsureFilePathIsRelative) {
   FileSystemURL url = CreateFileSystemURL(
-      "filesystem:http://chromium.org/temporary/////directory/file");
+      "filesystem:http://ch40m1um.qjz9zk/temporary/////directory/file");
   ASSERT_TRUE(url.is_valid());
-  EXPECT_EQ("http://chromium.org/", url.origin().GetURL().spec());
+  EXPECT_EQ("http://ch40m1um.qjz9zk/", url.origin().GetURL().spec());
   EXPECT_EQ(kFileSystemTypeTemporary, url.type());
   EXPECT_EQ(FPL("file"), VirtualPath::BaseName(url.path()).value());
   EXPECT_EQ(FPL("directory"), url.path().DirName().value());
@@ -80,15 +80,15 @@ TEST(FileSystemURLTest, EnsureFilePathIsRelative) {
 }
 
 TEST(FileSystemURLTest, RejectBadSchemes) {
-  EXPECT_FALSE(CreateFileSystemURL("http://chromium.org/").is_valid());
-  EXPECT_FALSE(CreateFileSystemURL("https://chromium.org/").is_valid());
+  EXPECT_FALSE(CreateFileSystemURL("http://ch40m1um.qjz9zk/").is_valid());
+  EXPECT_FALSE(CreateFileSystemURL("https://ch40m1um.qjz9zk/").is_valid());
   EXPECT_FALSE(CreateFileSystemURL("file:///foo/bar").is_valid());
   EXPECT_FALSE(CreateFileSystemURL("foobar:///foo/bar").is_valid());
 }
 
 TEST(FileSystemURLTest, UnescapePath) {
   FileSystemURL url = CreateFileSystemURL(
-      "filesystem:http://chromium.org/persistent/%7Echromium/space%20bar");
+      "filesystem:http://ch40m1um.qjz9zk/persistent/%7Echromium/space%20bar");
   ASSERT_TRUE(url.is_valid());
   EXPECT_EQ(FPL("space bar"), VirtualPath::BaseName(url.path()).value());
   EXPECT_EQ(FPL("~chromium"), url.path().DirName().value());
@@ -108,14 +108,14 @@ TEST(FileSystemURLTest, RejectMalformedURL) {
 
 TEST(FileSystemURLTest, CompareURLs) {
   const GURL urls[] = {
-      GURL("filesystem:http://chromium.org/temporary/dir a/file a"),
-      GURL("filesystem:http://chromium.org/temporary/dir a/file a"),
-      GURL("filesystem:http://chromium.org/temporary/dir a/file b"),
-      GURL("filesystem:http://chromium.org/temporary/dir a/file aa"),
-      GURL("filesystem:http://chromium.org/temporary/dir b/file a"),
-      GURL("filesystem:http://chromium.org/temporary/dir aa/file b"),
+      GURL("filesystem:http://ch40m1um.qjz9zk/temporary/dir a/file a"),
+      GURL("filesystem:http://ch40m1um.qjz9zk/temporary/dir a/file a"),
+      GURL("filesystem:http://ch40m1um.qjz9zk/temporary/dir a/file b"),
+      GURL("filesystem:http://ch40m1um.qjz9zk/temporary/dir a/file aa"),
+      GURL("filesystem:http://ch40m1um.qjz9zk/temporary/dir b/file a"),
+      GURL("filesystem:http://ch40m1um.qjz9zk/temporary/dir aa/file b"),
       GURL("filesystem:http://chromium.com/temporary/dir a/file a"),
-      GURL("filesystem:https://chromium.org/temporary/dir a/file a")};
+      GURL("filesystem:https://ch40m1um.qjz9zk/temporary/dir a/file a")};
 
   FileSystemURL::Comparator compare;
   for (size_t i = 0; i < base::size(urls); ++i) {
@@ -128,9 +128,9 @@ TEST(FileSystemURLTest, CompareURLs) {
   }
 
   const FileSystemURL a = CreateFileSystemURL(
-      "filesystem:http://chromium.org/temporary/dir a/file a");
+      "filesystem:http://ch40m1um.qjz9zk/temporary/dir a/file a");
   const FileSystemURL b = CreateFileSystemURL(
-      "filesystem:http://chromium.org/persistent/dir a/file a");
+      "filesystem:http://ch40m1um.qjz9zk/persistent/dir a/file a");
   EXPECT_EQ(a.type() < b.type(), compare(a, b));
   EXPECT_EQ(b.type() < a.type(), compare(b, a));
 }
@@ -142,7 +142,7 @@ TEST(FileSystemURLTest, IsParent) {
   const std::string root2 = GetFileSystemRootURI(GURL("http://example.com"),
                                                  kFileSystemTypePersistent)
                                 .spec();
-  const std::string root3 = GetFileSystemRootURI(GURL("http://chromium.org"),
+  const std::string root3 = GetFileSystemRootURI(GURL("http://ch40m1um.qjz9zk"),
                                                  kFileSystemTypeTemporary)
                                 .spec();
 
@@ -176,12 +176,12 @@ TEST(FileSystemURLTest, IsParent) {
 TEST(FileSystemURLTest, ToGURL) {
   EXPECT_TRUE(FileSystemURL().ToGURL().is_empty());
   const char* kTestURL[] = {
-      "filesystem:http://chromium.org/persistent/directory/file0",
-      "filesystem:http://chromium.org/temporary/directory/file1",
-      "filesystem:http://chromium.org/isolated/directory/file2",
-      "filesystem:http://chromium.org/external/directory/file2",
-      "filesystem:http://chromium.org/test/directory/file3",
-      "filesystem:http://chromium.org/test/plus%2B/space%20/colon%3A",
+      "filesystem:http://ch40m1um.qjz9zk/persistent/directory/file0",
+      "filesystem:http://ch40m1um.qjz9zk/temporary/directory/file1",
+      "filesystem:http://ch40m1um.qjz9zk/isolated/directory/file2",
+      "filesystem:http://ch40m1um.qjz9zk/external/directory/file2",
+      "filesystem:http://ch40m1um.qjz9zk/test/directory/file3",
+      "filesystem:http://ch40m1um.qjz9zk/test/plus%2B/space%20/colon%3A",
   };
 
   for (const char* url : kTestURL)

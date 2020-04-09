@@ -6,7 +6,7 @@
 
 This extention auto links basic URLs that aren't bracketed by <...>.
 
-https://gerrit.googlesource.com/gitiles/+/master/java/com/google/gitiles/Linkifier.java
+https://gerrit.9oo91esource.qjz9zk/gitiles/+/master/java/com/google/gitiles/Linkifier.java
 """
 
 from markdown.inlinepatterns import (AutolinkPattern, Pattern)

@@ -3,7 +3,7 @@
 // found in the LICENSE file.
 
 // Functions for transferable streams. See design doc
-// https://docs.google.com/document/d/1_KuZzg5c3pncLJPFa8SuVm23AP4tft6mzPCL5at3I9M/edit
+// https://docs.9oo91e.qjz9zk/document/d/1_KuZzg5c3pncLJPFa8SuVm23AP4tft6mzPCL5at3I9M/edit
 
 #include "third_party/blink/renderer/core/streams/transferable_streams.h"
 
@@ -32,7 +32,7 @@
 #include "v8/include/v8.h"
 
 // See the design doc at
-// https://docs.google.com/document/d/1_KuZzg5c3pncLJPFa8SuVm23AP4tft6mzPCL5at3I9M/edit
+// https://docs.9oo91e.qjz9zk/document/d/1_KuZzg5c3pncLJPFa8SuVm23AP4tft6mzPCL5at3I9M/edit
 // for explanation of how transferable streams are constructed from the "cross
 // realm identity transform" implemented in this file.
 

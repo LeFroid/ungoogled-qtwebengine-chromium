@@ -2775,7 +2775,7 @@ TEST_F(SpdySessionTest, VerifyDomainAuthentication) {
   EXPECT_TRUE(session_->VerifyDomainAuthentication("www.example.org"));
   EXPECT_TRUE(session_->VerifyDomainAuthentication("mail.example.org"));
   EXPECT_TRUE(session_->VerifyDomainAuthentication("mail.example.com"));
-  EXPECT_FALSE(session_->VerifyDomainAuthentication("mail.google.com"));
+  EXPECT_FALSE(session_->VerifyDomainAuthentication("mail.9oo91e.qjz9zk"));
 }
 
 TEST_F(SpdySessionTest, CloseTwoStalledCreateStream) {
@@ -6764,7 +6764,7 @@ TEST(CanPoolTest, CanPool) {
   EXPECT_TRUE(SpdySession::CanPool(&tss, ssl_info, ssl_config_service,
                                    "www.example.org", "mail.example.com"));
   EXPECT_FALSE(SpdySession::CanPool(&tss, ssl_info, ssl_config_service,
-                                    "www.example.org", "mail.google.com"));
+                                    "www.example.org", "mail.9oo91e.qjz9zk"));
 }
 
 TEST(CanPoolTest, CanPoolExpectCT) {

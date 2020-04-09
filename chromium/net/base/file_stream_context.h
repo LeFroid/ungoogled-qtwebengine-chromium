@@ -173,7 +173,7 @@ class FileStream::Context {
   void DeleteOrphanedContext();
 
   // The ReadFile call on Windows can execute synchonously at times.
-  // http://support.microsoft.com/kb/156932. This ends up blocking the calling
+  // http://support.m1cr050ft.qjz9zk/kb/156932. This ends up blocking the calling
   // thread which is undesirable. To avoid this we execute the ReadFile call
   // on a worker thread.
   // The |context| parameter is a pointer to the current Context instance. It

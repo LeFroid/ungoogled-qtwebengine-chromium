@@ -393,7 +393,7 @@ TEST_F(ProxyResolutionServiceTest, Direct) {
       std::make_unique<MockProxyConfigService>(ProxyConfig::CreateDirect()),
       base::WrapUnique(factory), nullptr);
 
-  GURL url("http://www.google.com/");
+  GURL url("http://www.9oo91e.qjz9zk/");
 
   ProxyInfo info;
   TestCompletionCallback callback;
@@ -431,7 +431,7 @@ TEST_F(ProxyResolutionServiceTest, OnResolveProxyCallbackAddProxy) {
   ProxyResolutionService service(
       std::make_unique<MockProxyConfigService>(config), nullptr, nullptr);
 
-  GURL url("http://www.google.com/");
+  GURL url("http://www.9oo91e.qjz9zk/");
   GURL bypass_url("http://internet.org");
 
   ProxyInfo info;
@@ -497,7 +497,7 @@ TEST_F(ProxyResolutionServiceTest, OnResolveProxyCallbackRemoveProxy) {
   ProxyResolutionService service(
       std::make_unique<MockProxyConfigService>(config), nullptr, nullptr);
 
-  GURL url("http://www.google.com/");
+  GURL url("http://www.9oo91e.qjz9zk/");
   GURL bypass_url("http://internet.org");
 
   ProxyInfo info;
@@ -579,7 +579,7 @@ TEST_F(ProxyResolutionServiceTest, CallbackDeletesRequest) {
       std::make_unique<ProxyResolutionService>(
           base::WrapUnique(config_service), base::WrapUnique(factory), nullptr);
 
-  GURL url("http://www.google.com/");
+  GURL url("http://www.9oo91e.qjz9zk/");
   GURL url2("http://www.example.com/");
 
   ProxyInfo info;
@@ -644,7 +644,7 @@ TEST_F(ProxyResolutionServiceTest, CallbackDeletesRequestDuringDestructor) {
       std::make_unique<ProxyResolutionService>(
           base::WrapUnique(config_service), base::WrapUnique(factory), nullptr);
 
-  GURL url("http://www.google.com/");
+  GURL url("http://www.9oo91e.qjz9zk/");
 
   ProxyInfo info;
   std::unique_ptr<ProxyResolutionService::Request> request, request2;
@@ -694,7 +694,7 @@ TEST_F(ProxyResolutionServiceTest, CallbackDeletesSelf) {
       std::make_unique<ProxyResolutionService>(
           base::WrapUnique(config_service), base::WrapUnique(factory), nullptr);
 
-  GURL url("http://www.google.com/");
+  GURL url("http://www.9oo91e.qjz9zk/");
   ProxyInfo info;
 
   std::unique_ptr<ProxyResolutionService::Request> request1;
@@ -761,7 +761,7 @@ TEST_F(ProxyResolutionServiceTest, CallbackDeletesSelfDuringDestructor) {
       std::make_unique<ProxyResolutionService>(
           base::WrapUnique(config_service), base::WrapUnique(factory), nullptr);
 
-  GURL url("http://www.google.com/");
+  GURL url("http://www.9oo91e.qjz9zk/");
   ProxyInfo info;
 
   std::unique_ptr<ProxyResolutionService::Request> request1;
@@ -803,7 +803,7 @@ TEST_F(ProxyResolutionServiceTest, ProxyServiceDeletedBeforeRequest) {
   MockAsyncProxyResolverFactory* factory =
       new MockAsyncProxyResolverFactory(false);
 
-  GURL url("http://www.google.com/");
+  GURL url("http://www.9oo91e.qjz9zk/");
 
   ProxyInfo info;
   TestCompletionCallback callback;
@@ -846,7 +846,7 @@ TEST_F(ProxyResolutionServiceTest, CallbackDeletesService) {
       std::make_unique<ProxyResolutionService>(
           base::WrapUnique(config_service), base::WrapUnique(factory), nullptr);
 
-  GURL url("http://www.google.com/");
+  GURL url("http://www.9oo91e.qjz9zk/");
 
   ProxyInfo info;
 
@@ -893,7 +893,7 @@ TEST_F(ProxyResolutionServiceTest, PAC) {
   ProxyResolutionService service(base::WrapUnique(config_service),
                                  base::WrapUnique(factory), nullptr);
 
-  GURL url("http://www.google.com/");
+  GURL url("http://www.9oo91e.qjz9zk/");
 
   ProxyInfo info;
   TestCompletionCallback callback;
@@ -957,7 +957,7 @@ TEST_F(ProxyResolutionServiceTest, PAC_NoIdentityOrHash) {
   ProxyResolutionService service(base::WrapUnique(config_service),
                                  base::WrapUnique(factory), nullptr);
 
-  GURL url("http://username:password@www.google.com/?ref#hash#hash");
+  GURL url("http://username:password@www.9oo91e.qjz9zk/?ref#hash#hash");
 
   ProxyInfo info;
   TestCompletionCallback callback;
@@ -973,7 +973,7 @@ TEST_F(ProxyResolutionServiceTest, PAC_NoIdentityOrHash) {
 
   ASSERT_EQ(1u, resolver.pending_jobs().size());
   // The URL should have been simplified, stripping the username/password/hash.
-  EXPECT_EQ(GURL("http://www.google.com/?ref"),
+  EXPECT_EQ(GURL("http://www.9oo91e.qjz9zk/?ref"),
             resolver.pending_jobs()[0]->url());
 
   // We end here without ever completing the request -- destruction of
@@ -990,7 +990,7 @@ TEST_F(ProxyResolutionServiceTest, PAC_FailoverWithoutDirect) {
   ProxyResolutionService service(base::WrapUnique(config_service),
                                  base::WrapUnique(factory), nullptr);
 
-  GURL url("http://www.google.com/");
+  GURL url("http://www.9oo91e.qjz9zk/");
 
   ProxyInfo info;
   TestCompletionCallback callback1;
@@ -1098,7 +1098,7 @@ TEST_F(ProxyResolutionServiceTest, PAC_FailoverAfterDirect) {
   ProxyResolutionService service(base::WrapUnique(config_service),
                                  base::WrapUnique(factory), nullptr);
 
-  GURL url("http://www.google.com/");
+  GURL url("http://www.9oo91e.qjz9zk/");
 
   ProxyInfo info;
   TestCompletionCallback callback1;
@@ -1156,7 +1156,7 @@ TEST_F(ProxyResolutionServiceTest, PAC_ConfigSourcePropagates) {
                                  base::WrapUnique(factory), nullptr);
 
   // Resolve something.
-  GURL url("http://www.google.com/");
+  GURL url("http://www.9oo91e.qjz9zk/");
   ProxyInfo info;
   TestCompletionCallback callback;
   std::unique_ptr<ProxyResolutionService::Request> request;
@@ -1197,7 +1197,7 @@ TEST_F(ProxyResolutionServiceTest, ProxyResolverFails) {
                                  base::WrapUnique(factory), nullptr);
 
   // Start first resolve request.
-  GURL url("http://www.google.com/");
+  GURL url("http://www.9oo91e.qjz9zk/");
   ProxyInfo info;
   TestCompletionCallback callback1;
   std::unique_ptr<ProxyResolutionService::Request> request;
@@ -1261,7 +1261,7 @@ TEST_F(ProxyResolutionServiceTest, ProxyResolverTerminatedDuringRequest) {
                                  base::WrapUnique(factory), nullptr);
 
   // Start first resolve request.
-  GURL url("http://www.google.com/");
+  GURL url("http://www.9oo91e.qjz9zk/");
   ProxyInfo info;
   TestCompletionCallback callback1;
   std::unique_ptr<ProxyResolutionService::Request> request;
@@ -1333,8 +1333,8 @@ TEST_F(ProxyResolutionServiceTest,
                                  base::WrapUnique(factory), nullptr);
 
   // Start two resolve requests.
-  GURL url1("http://www.google.com/");
-  GURL url2("https://www.google.com/");
+  GURL url1("http://www.9oo91e.qjz9zk/");
+  GURL url2("https://www.9oo91e.qjz9zk/");
   ProxyInfo info;
   TestCompletionCallback callback1;
   std::unique_ptr<ProxyResolutionService::Request> request1, request2;
@@ -1406,7 +1406,7 @@ TEST_F(ProxyResolutionServiceTest, PacFileFetcherFailsDownloadingMandatoryPac) {
                                  base::WrapUnique(factory), nullptr);
 
   // Start first resolve request.
-  GURL url("http://www.google.com/");
+  GURL url("http://www.9oo91e.qjz9zk/");
   ProxyInfo info;
   TestCompletionCallback callback1;
   std::unique_ptr<ProxyResolutionService::Request> request;
@@ -1460,7 +1460,7 @@ TEST_F(ProxyResolutionServiceTest,
                              std::make_unique<DoNothingDhcpPacFileFetcher>());
 
   // Start resolve request.
-  GURL url("http://www.google.com/");
+  GURL url("http://www.9oo91e.qjz9zk/");
   ProxyInfo info;
   TestCompletionCallback callback;
   std::unique_ptr<ProxyResolutionService::Request> request;
@@ -1508,7 +1508,7 @@ TEST_F(ProxyResolutionServiceTest, ProxyResolverFailsInJavaScriptMandatoryPac) {
                                  base::WrapUnique(factory), nullptr);
 
   // Start first resolve request.
-  GURL url("http://www.google.com/");
+  GURL url("http://www.9oo91e.qjz9zk/");
   ProxyInfo info;
   TestCompletionCallback callback1;
   std::unique_ptr<ProxyResolutionService::Request> request;
@@ -1567,7 +1567,7 @@ TEST_F(ProxyResolutionServiceTest, ProxyFallback) {
   ProxyResolutionService service(base::WrapUnique(config_service),
                                  base::WrapUnique(factory), nullptr);
 
-  GURL url("http://www.google.com/");
+  GURL url("http://www.9oo91e.qjz9zk/");
 
   // Get the proxy information.
   ProxyInfo info;
@@ -1705,7 +1705,7 @@ TEST_F(ProxyResolutionServiceTest, ProxyFallbackToDirect) {
   ProxyResolutionService service(base::WrapUnique(config_service),
                                  base::WrapUnique(factory), nullptr);
 
-  GURL url("http://www.google.com/");
+  GURL url("http://www.9oo91e.qjz9zk/");
 
   // Get the proxy information.
   ProxyInfo info;
@@ -1768,7 +1768,7 @@ TEST_F(ProxyResolutionServiceTest, ProxyFallback_BadConfig) {
   ProxyResolutionService service(base::WrapUnique(config_service),
                                  base::WrapUnique(factory), nullptr);
 
-  GURL url("http://www.google.com/");
+  GURL url("http://www.9oo91e.qjz9zk/");
 
   // Get the proxy information.
   ProxyInfo info;
@@ -1874,7 +1874,7 @@ TEST_F(ProxyResolutionServiceTest, ProxyFallback_BadConfigMandatory) {
   ProxyResolutionService service(base::WrapUnique(config_service),
                                  base::WrapUnique(factory), nullptr);
 
-  GURL url("http://www.google.com/");
+  GURL url("http://www.9oo91e.qjz9zk/");
 
   // Get the proxy information.
   ProxyInfo info;
@@ -2048,7 +2048,7 @@ TEST_F(ProxyResolutionServiceTest, PerProtocolProxyTests) {
   {
     ProxyResolutionService service(
         std::make_unique<MockProxyConfigService>(config), nullptr, nullptr);
-    GURL test_url("ftp://ftp.google.com");
+    GURL test_url("ftp://ftp.9oo91e.qjz9zk");
     ProxyInfo info;
     TestCompletionCallback callback;
     int rv = service.ResolveProxy(
@@ -2075,7 +2075,7 @@ TEST_F(ProxyResolutionServiceTest, PerProtocolProxyTests) {
     config.proxy_rules().ParseFromString("foopy1:8080");
     ProxyResolutionService service(
         std::make_unique<MockProxyConfigService>(config), nullptr, nullptr);
-    GURL test_url("http://www.microsoft.com");
+    GURL test_url("http://www.m1cr050ft.qjz9zk");
     ProxyInfo info;
     TestCompletionCallback callback;
     int rv = service.ResolveProxy(
@@ -2097,7 +2097,7 @@ TEST_F(ProxyResolutionServiceTest, ProxyConfigTrafficAnnotationPropagates) {
     config.proxy_rules().ParseFromString("https=foopy2:8080");
     ProxyResolutionService service(
         std::make_unique<MockProxyConfigService>(config), nullptr, nullptr);
-    GURL test_url("http://www.google.com");
+    GURL test_url("http://www.9oo91e.qjz9zk");
     ProxyInfo info;
     TestCompletionCallback callback;
     int rv = service.ResolveProxy(
@@ -2113,7 +2113,7 @@ TEST_F(ProxyResolutionServiceTest, ProxyConfigTrafficAnnotationPropagates) {
     config.proxy_rules().ParseFromString("https=foopy2:8080");
     ProxyResolutionService service(
         std::make_unique<MockProxyConfigService>(config), nullptr, nullptr);
-    GURL test_url("https://www.google.com");
+    GURL test_url("https://www.9oo91e.qjz9zk");
     ProxyInfo info;
     TestCompletionCallback callback;
     int rv = service.ResolveProxy(
@@ -2128,7 +2128,7 @@ TEST_F(ProxyResolutionServiceTest, ProxyConfigTrafficAnnotationPropagates) {
     ProxyConfig config;
     ProxyResolutionService service(
         std::make_unique<MockProxyConfigService>(config), nullptr, nullptr);
-    GURL test_url("http://www.google.com");
+    GURL test_url("http://www.9oo91e.qjz9zk");
     ProxyInfo info;
     TestCompletionCallback callback;
     int rv = service.ResolveProxy(
@@ -2167,7 +2167,7 @@ TEST_F(ProxyResolutionServiceTest, DefaultProxyFallbackToSOCKS) {
   {
     ProxyResolutionService service(
         std::make_unique<MockProxyConfigService>(config), nullptr, nullptr);
-    GURL test_url("ftp://ftp.google.com");
+    GURL test_url("ftp://ftp.9oo91e.qjz9zk");
     ProxyInfo info;
     TestCompletionCallback callback;
     int rv = service.ResolveProxy(
@@ -2193,7 +2193,7 @@ TEST_F(ProxyResolutionServiceTest, DefaultProxyFallbackToSOCKS) {
   {
     ProxyResolutionService service(
         std::make_unique<MockProxyConfigService>(config), nullptr, nullptr);
-    GURL test_url("unknown://www.microsoft.com");
+    GURL test_url("unknown://www.m1cr050ft.qjz9zk");
     ProxyInfo info;
     TestCompletionCallback callback;
     int rv = service.ResolveProxy(
@@ -2367,7 +2367,7 @@ TEST_F(ProxyResolutionServiceTest, InitialPACScriptDownload) {
   EXPECT_EQ(OK, callback1.WaitForResult());
   // ProxyResolver::GetProxyForURL() to take a std::unique_ptr<Request>* rather
   // than a RequestHandle* (patchset #11 id:200001 of
-  // https://codereview.chromium.org/1439053002/ )
+  // https://codereview.ch40m1um.qjz9zk/1439053002/ )
   EXPECT_EQ("request1:80", info1.proxy_server().ToURI());
   EXPECT_FALSE(info1.proxy_resolve_start_time().is_null());
   EXPECT_FALSE(info1.proxy_resolve_end_time().is_null());
@@ -2619,7 +2619,7 @@ TEST_F(ProxyResolutionServiceTest, FallbackFromAutodetectToCustomPac) {
   EXPECT_EQ(OK, callback1.WaitForResult());
   // ProxyResolver::GetProxyForURL() to take a std::unique_ptr<Request>* rather
   // than a RequestHandle* (patchset #11 id:200001 of
-  // https://codereview.chromium.org/1439053002/ )
+  // https://codereview.ch40m1um.qjz9zk/1439053002/ )
   EXPECT_EQ("request1:80", info1.proxy_server().ToURI());
   EXPECT_FALSE(info1.proxy_resolve_start_time().is_null());
   EXPECT_FALSE(info1.proxy_resolve_end_time().is_null());
@@ -2706,7 +2706,7 @@ TEST_F(ProxyResolutionServiceTest, FallbackFromAutodetectToCustomPac2) {
   EXPECT_EQ(OK, callback1.WaitForResult());
   // ProxyResolver::GetProxyForURL() to take a std::unique_ptr<Request>* rather
   // than a RequestHandle* (patchset #11 id:200001 of
-  // https://codereview.chromium.org/1439053002/ )
+  // https://codereview.ch40m1um.qjz9zk/1439053002/ )
   EXPECT_EQ("request1:80", info1.proxy_server().ToURI());
 
   EXPECT_THAT(callback2.WaitForResult(), IsOk());
@@ -2781,7 +2781,7 @@ TEST_F(ProxyResolutionServiceTest, BypassDoesntApplyToPac) {
   config.set_auto_detect(true);
   config.set_pac_url(GURL("http://foopy/proxy.pac"));
   config.proxy_rules().ParseFromString("http=foopy:80");  // Not used.
-  config.proxy_rules().bypass_rules.ParseFromString("www.google.com");
+  config.proxy_rules().bypass_rules.ParseFromString("www.9oo91e.qjz9zk");
 
   MockProxyConfigService* config_service = new MockProxyConfigService(config);
   MockAsyncProxyResolver resolver;
@@ -2800,7 +2800,7 @@ TEST_F(ProxyResolutionServiceTest, BypassDoesntApplyToPac) {
   TestCompletionCallback callback1;
   std::unique_ptr<ProxyResolutionService::Request> request1;
   int rv = service.ResolveProxy(
-      GURL("http://www.google.com"), std::string(), NetworkIsolationKey(),
+      GURL("http://www.9oo91e.qjz9zk"), std::string(), NetworkIsolationKey(),
       &info1, callback1.callback(), &request1, NetLogWithSource());
   EXPECT_THAT(rv, IsError(ERR_IO_PENDING));
 
@@ -2817,7 +2817,7 @@ TEST_F(ProxyResolutionServiceTest, BypassDoesntApplyToPac) {
   factory->pending_requests()[0]->CompleteNowWithForwarder(OK, &resolver);
 
   ASSERT_EQ(1u, resolver.pending_jobs().size());
-  EXPECT_EQ(GURL("http://www.google.com"), resolver.pending_jobs()[0]->url());
+  EXPECT_EQ(GURL("http://www.9oo91e.qjz9zk"), resolver.pending_jobs()[0]->url());
 
   // Complete the pending request.
   resolver.pending_jobs()[0]->results()->UseNamedProxy("request1:80");
@@ -2831,13 +2831,13 @@ TEST_F(ProxyResolutionServiceTest, BypassDoesntApplyToPac) {
   ProxyInfo info2;
   TestCompletionCallback callback2;
   std::unique_ptr<ProxyResolutionService::Request> request2;
-  rv = service.ResolveProxy(GURL("http://www.google.com"), std::string(),
+  rv = service.ResolveProxy(GURL("http://www.9oo91e.qjz9zk"), std::string(),
                             NetworkIsolationKey(), &info2, callback2.callback(),
                             &request2, NetLogWithSource());
   EXPECT_THAT(rv, IsError(ERR_IO_PENDING));
 
   ASSERT_EQ(1u, resolver.pending_jobs().size());
-  EXPECT_EQ(GURL("http://www.google.com"), resolver.pending_jobs()[0]->url());
+  EXPECT_EQ(GURL("http://www.9oo91e.qjz9zk"), resolver.pending_jobs()[0]->url());
 
   // Complete the pending request.
   resolver.pending_jobs()[0]->results()->UseNamedProxy("request2:80");
@@ -2872,7 +2872,7 @@ TEST_F(ProxyResolutionServiceTest,
   TestCompletionCallback callback1;
   std::unique_ptr<ProxyResolutionService::Request> request1;
   int rv = service.ResolveProxy(
-      GURL("http://www.google.com"), std::string(), NetworkIsolationKey(),
+      GURL("http://www.9oo91e.qjz9zk"), std::string(), NetworkIsolationKey(),
       &info1, callback1.callback(), &request1, NetLogWithSource());
   EXPECT_THAT(rv, IsError(ERR_IO_PENDING));
 
@@ -2900,7 +2900,7 @@ TEST_F(ProxyResolutionServiceTest,
   ProxyResolutionService service(base::WrapUnique(config_service),
                                  base::WrapUnique(factory), nullptr);
 
-  GURL url("http://www.google.com/");
+  GURL url("http://www.9oo91e.qjz9zk/");
 
   ProxyInfo info;
   TestCompletionCallback callback;
@@ -2932,7 +2932,7 @@ TEST_F(ProxyResolutionServiceTest, UpdateConfigFromPACToDirect) {
   TestCompletionCallback callback1;
   std::unique_ptr<ProxyResolutionService::Request> request1;
   int rv = service.ResolveProxy(
-      GURL("http://www.google.com"), std::string(), NetworkIsolationKey(),
+      GURL("http://www.9oo91e.qjz9zk"), std::string(), NetworkIsolationKey(),
       &info1, callback1.callback(), &request1, NetLogWithSource());
   EXPECT_THAT(rv, IsError(ERR_IO_PENDING));
 
@@ -2961,7 +2961,7 @@ TEST_F(ProxyResolutionServiceTest, UpdateConfigFromPACToDirect) {
   ProxyInfo info2;
   TestCompletionCallback callback2;
   std::unique_ptr<ProxyResolutionService::Request> request2;
-  rv = service.ResolveProxy(GURL("http://www.google.com"), std::string(),
+  rv = service.ResolveProxy(GURL("http://www.9oo91e.qjz9zk"), std::string(),
                             NetworkIsolationKey(), &info2, callback2.callback(),
                             &request2, NetLogWithSource());
   EXPECT_THAT(rv, IsOk());
@@ -4056,7 +4056,7 @@ TEST_F(ProxyResolutionServiceTest, ImplicitlyBypassWithPac) {
   TestCompletionCallback callback1;
   std::unique_ptr<ProxyResolutionService::Request> request1;
   int rv = service.ResolveProxy(
-      GURL("http://www.google.com"), std::string(), NetworkIsolationKey(),
+      GURL("http://www.9oo91e.qjz9zk"), std::string(), NetworkIsolationKey(),
       &info1, callback1.callback(), &request1, NetLogWithSource());
   EXPECT_THAT(rv, IsError(ERR_IO_PENDING));
 
@@ -4071,7 +4071,7 @@ TEST_F(ProxyResolutionServiceTest, ImplicitlyBypassWithPac) {
   factory->pending_requests()[0]->CompleteNowWithForwarder(OK, &resolver);
 
   ASSERT_EQ(1u, resolver.pending_jobs().size());
-  EXPECT_EQ(GURL("http://www.google.com"), resolver.pending_jobs()[0]->url());
+  EXPECT_EQ(GURL("http://www.9oo91e.qjz9zk"), resolver.pending_jobs()[0]->url());
 
   // Complete the pending request.
   resolver.pending_jobs()[0]->results()->UseNamedProxy("request1:80");

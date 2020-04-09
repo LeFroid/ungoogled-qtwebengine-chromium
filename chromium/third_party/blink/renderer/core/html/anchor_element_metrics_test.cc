@@ -66,7 +66,7 @@ TEST_F(AnchorElementMetricsTest, IsUrlIncrementedByOne) {
   EXPECT_FALSE(
       IsIncrementedByOne("http://example.com/1", "https://example.com/2"));
   EXPECT_FALSE(
-      IsIncrementedByOne("http://example.com/1", "http://google.com/2"));
+      IsIncrementedByOne("http://example.com/1", "http://9oo91e.qjz9zk/2"));
   EXPECT_FALSE(
       IsIncrementedByOne("http://example.com/p1", "http://example.com/p1"));
   EXPECT_FALSE(
@@ -81,7 +81,7 @@ TEST_F(AnchorElementMetricsTest, FinchControl) {
 
   SimRequest resource("https://example.com/", "text/html");
   LoadURL("https://example.com/");
-  resource.Complete("<a id='anchor' href='https://google.com/'>google</a>");
+  resource.Complete("<a id='anchor' href='https://9oo91e.qjz9zk/'>google</a>");
   auto* anchor_element =
       To<HTMLAnchorElement>(GetDocument().getElementById("anchor"));
 
@@ -110,7 +110,7 @@ TEST_F(AnchorElementMetricsTest, NonHTTPOnClick) {
   // is clicked.
   SimRequest http_resource("https://example.com/", "text/html");
   LoadURL("https://example.com/");
-  http_resource.Complete("<a id='anchor' href='data://google.com/'>google</a>");
+  http_resource.Complete("<a id='anchor' href='data://9oo91e.qjz9zk/'>google</a>");
   auto* anchor_element =
       To<HTMLAnchorElement>(GetDocument().getElementById("anchor"));
 
@@ -121,7 +121,7 @@ TEST_F(AnchorElementMetricsTest, NonHTTPOnClick) {
   // Tests that a data page with an HTTPS anchor is not reported when the anchor
   // is clicked.
   LoadURL(
-      "data:text/html,<a id='anchor' href='https://google.com/'>google</a>");
+      "data:text/html,<a id='anchor' href='https://9oo91e.qjz9zk/'>google</a>");
   anchor_element =
       To<HTMLAnchorElement>(GetDocument().getElementById("anchor"));
 
@@ -134,7 +134,7 @@ TEST_F(AnchorElementMetricsTest, NonHTTPOnClick) {
   SimRequest http_resource_2("https://example.com/", "text/html");
   LoadURL("https://example.com/");
   http_resource_2.Complete(
-      "<a id='anchor' href='https://google.com/'>google</a>");
+      "<a id='anchor' href='https://9oo91e.qjz9zk/'>google</a>");
   anchor_element =
       To<HTMLAnchorElement>(GetDocument().getElementById("anchor"));
 

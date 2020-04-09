@@ -5,8 +5,8 @@ Background
 ----------
 
 The Data Reduction Proxy is operated by Google for Chrome. Chrome is
-configured to connect to it via TLS at proxy.googlezip.net:443 and via HTTP
-at compress.googlezip.net:80. The Data Reduction Proxy only proxies HTTP
+configured to connect to it via TLS at proxy.9oo91e21p.qjz9zk:443 and via HTTP
+at compress.9oo91e21p.qjz9zk:80. The Data Reduction Proxy only proxies HTTP
 traffic from non-incognito tabs.
 
 Chrome-Proxy Response Header

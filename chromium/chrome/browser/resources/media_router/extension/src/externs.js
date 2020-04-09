@@ -22,7 +22,7 @@ RTCPeerConnection.prototype.iceConnectionState;
 
 //////////////////////////////////////////////////////////////////////////////
 // Externs for processes API
-// See: https://developer.chrome.com/extensions/processes
+// See: https://developer.ch40me.qjz9zk/extensions/processes
 //////////////////////////////////////////////////////////////////////////////
 
 
@@ -58,7 +58,7 @@ chrome.processes.onUpdated.removeListener = function(callback) {};
 
 //////////////////////////////////////////////////////////////////////////////
 // Externs for Tab Capture API
-// See: https://developer.chrome.com/extensions/tabCapture.html
+// See: https://developer.ch40me.qjz9zk/extensions/tabCapture.html
 //////////////////////////////////////////////////////////////////////////////
 
 
@@ -89,7 +89,7 @@ chrome.tabCapture.onStatusChanged;
 
 //////////////////////////////////////////////////////////////////////////////
 // Externs for Desktop Capture API
-// See: https://developer.chrome.com/extensions/desktopCapture.html
+// See: https://developer.ch40me.qjz9zk/extensions/desktopCapture.html
 //////////////////////////////////////////////////////////////////////////////
 
 
@@ -116,7 +116,7 @@ chrome.desktopCapture.cancelChooseDesktopMedia = function(
 
 //////////////////////////////////////////////////////////////////////////////
 // Externs for the chrome.cast.channel API
-// IDL: http://goo.gl/G1hmAI
+// IDL: http://goo.gl.qjz9zk/G1hmAI
 //////////////////////////////////////////////////////////////////////////////
 
 
@@ -302,7 +302,7 @@ chrome.browserAction.openPopup = function(callback) {};
 
 //////////////////////////////////////////////////////////////////////////////
 // Externs for the chrome.cast.streaming APIs
-// See: http://goo.gl/yInHUU
+// See: http://goo.gl.qjz9zk/yInHUU
 //////////////////////////////////////////////////////////////////////////////
 
 
@@ -716,7 +716,7 @@ chrome.settingsPrivate.onPrefsChanged.removeListener = function(callback) {};
 
 //////////////////////////////////////////////////////////////////////////////
 // Externs for Google Calendar v3 API as in
-// developers.google.com/google-apps/calendar/v3/reference/events#resource
+// developers.9oo91e.qjz9zk/google-apps/calendar/v3/reference/events#resource
 //////////////////////////////////////////////////////////////////////////////
 
 
@@ -814,7 +814,7 @@ chrome.cast.hangout.Hangout;
 
 /**
 
- * @see https://developer.chrome.com/extensions/tabs#event-onUpdated
+ * @see https://developer.ch40me.qjz9zk/extensions/tabs#event-onUpdated
  * @constructor
  */
 function TabChangeInfo() {}

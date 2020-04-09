@@ -187,7 +187,7 @@ class SharedImageRepresentationDawnD3D : public SharedImageRepresentationDawn {
   WGPUDevice device_;
   WGPUTexture texture_ = nullptr;
 
-  // TODO(cwallez@chromium.org): Load procs only once when the factory is
+  // TODO(cwallez@ch40m1um.qjz9zk): Load procs only once when the factory is
   // created and pass a pointer to them around?
   DawnProcTable dawn_procs_;
 };
@@ -481,7 +481,7 @@ WGPUTexture SharedImageRepresentationDawnD3D::BeginAccess(
     // Assume that the user of this representation will write to the texture
     // so set the cleared flag so that other representations don't overwrite
     // the result.
-    // TODO(cwallez@chromium.org): This is incorrect and allows reading
+    // TODO(cwallez@ch40m1um.qjz9zk): This is incorrect and allows reading
     // uninitialized data. When !IsCleared we should tell dawn_native to
     // consider the texture lazy-cleared.
     SetCleared();
@@ -500,7 +500,7 @@ void SharedImageRepresentationDawnD3D::EndAccess() {
   SharedImageBackingD3D* d3d_image_backing =
       static_cast<SharedImageBackingD3D*>(backing());
 
-  // TODO(cwallez@chromium.org): query dawn_native to know if the texture was
+  // TODO(cwallez@ch40m1um.qjz9zk): query dawn_native to know if the texture was
   // cleared and set IsCleared appropriately.
 
   // All further operations on the textures are errors (they would be racy

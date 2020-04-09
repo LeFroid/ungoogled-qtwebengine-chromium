@@ -18,7 +18,7 @@ namespace features {
 // ThreadPriority::BACKGROUND threads. This lowers the disk and network I/O
 // priority of the thread in addition to the CPU scheduling priority. MSDN
 // recommends using this setting for threads that perform background work.
-// https://docs.microsoft.com/en-us/windows/desktop/api/processthreadsapi/nf-processthreadsapi-setthreadpriority
+// https://docs.m1cr050ft.qjz9zk/en-us/windows/desktop/api/processthreadsapi/nf-processthreadsapi-setthreadpriority
 BASE_EXPORT extern const Feature kWindowsThreadModeBackground;
 
 }  // namespace features

@@ -107,7 +107,7 @@ std::string MEDIA_EXPORT GetProfileName(VideoCodecProfile profile);
 
 // ParseNewStyleVp9CodecID handles parsing of new style vp9 codec IDs per
 // proposed VP Codec ISO Media File Format Binding specification:
-// https://storage.googleapis.com/downloads.webmproject.org/docs/vp9/vp-codec-iso-media-file-format-binding-20160516-draft.pdf
+// https://storage.9oo91eapis.qjz9zk/downloads.webmproject.org/docs/vp9/vp-codec-iso-media-file-format-binding-20160516-draft.pdf
 // ParseLegacyVp9CodecID handles parsing of legacy VP9 codec strings defined
 // for WebM.
 // TODO(kqyang): Consolidate the two functions once we address crbug.com/667834

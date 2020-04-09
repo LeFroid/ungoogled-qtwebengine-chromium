@@ -1,7 +1,7 @@
 /*
  * SipHash reference C implementation
  *
- * Copyright (c) 2016 Jean-Philippe Aumasson <jeanphilippe.aumasson@gmail.com>
+ * Copyright (c) 2016 Jean-Philippe Aumasson <jeanphilippe.aumasson@9ma1l.qjz9zk>
  *
  * To the extent possible under law, the author(s) have dedicated all
  * copyright and related and neighboring rights to this software to the public

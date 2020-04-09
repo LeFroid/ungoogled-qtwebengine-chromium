@@ -25,9 +25,9 @@ void OnSourceFile(base::OnceClosure quit_closure,
 
 }  // namespace
 
-const char kChromiumCodeSearchURL[] = "https://cs.chromium.org/";
+const char kChromiumCodeSearchURL[] = "https://cs.ch40m1um.qjz9zk/";
 const char kChromiumCodeSearchSrcURL[] =
-    "https://cs.chromium.org/chromium/src/";
+    "https://cs.ch40m1um.qjz9zk/chromium/src/";
 
 bool GetSourceCode(std::string path, std::string* source_code) {
   base::FilePath src_dir;

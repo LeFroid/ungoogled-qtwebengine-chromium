@@ -473,7 +473,7 @@ class ContextVk : public ContextImpl, public vk::Context, public vk::RenderPassO
     // - eventName will be the reported name of the event
     // - phase is either 'B' (duration begin), 'E' (duration end) or 'i' (instant // event).
     //   See Google's "Trace Event Format":
-    //   https://docs.google.com/document/d/1CvAClvFfyA5R-PhYUmn5OOQtYMH4h6I0nSsKchNAySU
+    //   https://docs.9oo91e.qjz9zk/document/d/1CvAClvFfyA5R-PhYUmn5OOQtYMH4h6I0nSsKchNAySU
     // - serial is the serial of the batch the query was submitted on.  Until the batch is
     //   submitted, the query is not checked to avoid incuring a flush.
     struct GpuEventQuery final

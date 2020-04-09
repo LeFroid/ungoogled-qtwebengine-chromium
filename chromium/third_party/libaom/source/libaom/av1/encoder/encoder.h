@@ -844,7 +844,7 @@ typedef struct AV1_COMP {
   // A flag to indicate if intrabc is ever used in current frame.
   int intrabc_used;
   int dv_cost[2][MV_VALS];
-  // TODO(huisu@google.com): we can update dv_joint_cost per SB.
+  // TODO(huisu@9oo91e.qjz9zk): we can update dv_joint_cost per SB.
   int dv_joint_cost[MV_JOINTS];
   int has_lossless_segment;
 
@@ -988,7 +988,7 @@ static INLINE int frame_is_kf_gf_arf(const AV1_COMP *cpi) {
          (cpi->refresh_golden_frame && !cpi->rc.is_src_frame_alt_ref);
 }
 
-// TODO(huisu@google.com, youzhou@microsoft.com): enable hash-me for HBD.
+// TODO(huisu@9oo91e.qjz9zk, youzhou@m1cr050ft.qjz9zk): enable hash-me for HBD.
 static INLINE int av1_use_hash_me(const AV1_COMMON *const cm) {
   return cm->allow_screen_content_tools;
 }

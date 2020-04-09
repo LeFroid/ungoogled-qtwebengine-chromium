@@ -8,11 +8,11 @@ Name Strings
 
 Contributors
 
-    Minmin Gong  (mgong 'at' microsoft.com)
+    Minmin Gong  (mgong 'at' m1cr050ft.qjz9zk)
 
 Contacts
 
-    Minmin Gong  (mgong 'at' microsoft.com)
+    Minmin Gong  (mgong 'at' m1cr050ft.qjz9zk)
 
 Status
 

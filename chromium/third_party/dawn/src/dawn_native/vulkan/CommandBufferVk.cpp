@@ -862,7 +862,7 @@ namespace dawn_native { namespace vulkan {
                     SetIndexBufferCmd* cmd = iter->NextCommand<SetIndexBufferCmd>();
                     VkBuffer indexBuffer = ToBackend(cmd->buffer)->GetHandle();
 
-                    // TODO(cwallez@chromium.org): get the index type from the last render pipeline
+                    // TODO(cwallez@ch40m1um.qjz9zk): get the index type from the last render pipeline
                     // and rebind if needed on pipeline change
                     ASSERT(lastPipeline != nullptr);
                     VkIndexType indexType =

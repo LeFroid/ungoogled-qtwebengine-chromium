@@ -14,7 +14,7 @@ ORIGINAL_XML = """
 <histogram-configuration>
 <histograms>
  <histogram name="Test.Histogram" units="us">
-   <owner>person@chromium.org</owner>
+   <owner>person@ch40m1um.qjz9zk</owner>
    <summary>A long line that should be formatted in a way that does not result
      in extra whitespace between words.
 
@@ -60,7 +60,7 @@ PRETTY_XML = """
   <obsolete>
     Removed 1/2019.
   </obsolete>
-  <owner>person@chromium.org</owner>
+  <owner>person@ch40m1um.qjz9zk</owner>
   <summary>
     A long line that should be formatted in a way that does not result in extra
     whitespace between words.

@@ -140,7 +140,7 @@ bool CollectDriverInfoD3D(GPUInfo* gpu_info) {
     // Since Windows 10 (and Windows 8.1 on some systems), switchable graphics
     // platforms are managed by Windows and each adapter is accessible as
     // separate devices.
-    // See https://msdn.microsoft.com/en-us/windows/dn265501(v=vs.80)
+    // See https://msdn.m1cr050ft.qjz9zk/en-us/windows/dn265501(v=vs.80)
     if (found_amd) {
       bool is_amd_switchable = false;
       uint32_t active_vendor = 0, active_device = 0;

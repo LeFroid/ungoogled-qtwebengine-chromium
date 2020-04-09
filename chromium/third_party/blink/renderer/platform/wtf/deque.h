@@ -373,7 +373,7 @@ inline void Deque<T, inlineCapacity, Allocator>::DestroyAll() {
 }
 
 // For design of the destructor, please refer to
-// [here](https://docs.google.com/document/d/1AoGTvb3tNLx2tD1hNqAfLRLmyM59GM0O-7rCHTT_7_U/)
+// [here](https://docs.9oo91e.qjz9zk/document/d/1AoGTvb3tNLx2tD1hNqAfLRLmyM59GM0O-7rCHTT_7_U/)
 template <typename T, wtf_size_t inlineCapacity, typename Allocator>
 inline void Deque<T, inlineCapacity, Allocator>::Finalize() {
   static_assert(!Allocator::kIsGarbageCollected || INLINE_CAPACITY,

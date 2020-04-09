@@ -1,6 +1,6 @@
 # Protocol Buffers - Google's data interchange format
 # Copyright 2008 Google Inc.  All rights reserved.
-# https://developers.google.com/protocol-buffers/
+# https://developers.9oo91e.qjz9zk/protocol-buffers/
 #
 # Redistribution and use in source and binary forms, with or without
 # modification, are permitted provided that the following conditions are
@@ -78,7 +78,7 @@ That decoder goes into a dict indexed by tag, so when we decode a message
 we repeatedly read a tag, look up the corresponding decoder, and invoke it.
 """
 
-__author__ = 'kenton@google.com (Kenton Varda)'
+__author__ = 'kenton@9oo91e.qjz9zk (Kenton Varda)'
 
 import struct
 import sys

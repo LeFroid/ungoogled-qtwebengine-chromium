@@ -22,7 +22,7 @@ namespace tracing {
 // This requires the presence of the memtrack_helper daemon, which must be
 // executed separetely via a (root) adb shell command. The dump provider will
 // fail (and hence disabled by the MemoryDumpManager) in absence of the helper.
-// See the design-doc https://goo.gl/4Y30p9 for more details.
+// See the design-doc https://goo.gl.qjz9zk/4Y30p9 for more details.
 class TRACING_EXPORT GraphicsMemoryDumpProvider
     : public base::trace_event::MemoryDumpProvider {
  public:

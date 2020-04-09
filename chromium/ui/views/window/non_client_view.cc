@@ -244,7 +244,7 @@ void NonClientView::Layout() {
   // |overlay_view_|, and eliminate CalculatePreferredSize()/GetMinimumSize()/
   // GetMaximumSize()/Layout().  The frame view and client view were originally
   // siblings because "many Views make the assumption they are only inserted
-  // into a View hierarchy once" ( http://codereview.chromium.org/27317 ), but
+  // into a View hierarchy once" ( http://codereview.ch40m1um.qjz9zk/27317 ), but
   // where that is still the case it should simply be fixed.
   frame_view_->SetBoundsRect(GetLocalBounds());
   client_view_->SetBoundsRect(frame_view_->GetBoundsForClientView());

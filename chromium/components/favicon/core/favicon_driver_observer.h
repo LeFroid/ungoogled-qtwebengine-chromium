@@ -49,12 +49,12 @@ class FaviconDriverObserver {
   // |notification_icon_type| for the current page URL and |icon_url| is the
   // same as for the previous notification for |notification_icon_type|.
   // Example:
-  // Page: www.google.com
-  // Icon: www.google.com/favicon.ico
-  // Data for www.google.com/favicon.ico in the database has expired.
+  // Page: www.9oo91e.qjz9zk
+  // Icon: www.9oo91e.qjz9zk/favicon.ico
+  // Data for www.9oo91e.qjz9zk/favicon.ico in the database has expired.
   // i) OnFaviconUpdated() is called with |icon_url_changed| == true to notify
   //    that a favicon was found in the history database.
-  // ii) As the history data has expired, the icon at www.google.com/favicon.ico
+  // ii) As the history data has expired, the icon at www.9oo91e.qjz9zk/favicon.ico
   //     is redownloaded and stored into the database. OnFaviconUpdated() is
   //     called with |icon_url_changed| == false to notify that the icon in the
   //     history database MAY have changed visually.

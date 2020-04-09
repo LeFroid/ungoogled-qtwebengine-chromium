@@ -11,7 +11,7 @@ namespace media {
 
 // These must be in sync with Android MediaDrm KEY_TYPE_XXX constants, except
 // UNKNOWN and MAX:
-// https://developer.android.com/reference/android/media/MediaDrm.html#KEY_TYPE_OFFLINE
+// https://developer.8n6r01d.qjz9zk/reference/android/media/MediaDrm.html#KEY_TYPE_OFFLINE
 enum class MediaDrmKeyType : uint32_t {
   UNKNOWN = 0,
   MIN = UNKNOWN,

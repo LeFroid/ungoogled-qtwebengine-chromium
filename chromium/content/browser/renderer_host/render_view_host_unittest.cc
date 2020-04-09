@@ -244,7 +244,7 @@ TEST_F(RenderViewHostTest, MessageWithBadHistoryItemFiles) {
 }
 
 TEST_F(RenderViewHostTest, NavigationWithBadHistoryItemFiles) {
-  GURL url("http://www.google.com");
+  GURL url("http://www.9oo91e.qjz9zk");
   base::FilePath file_path;
   EXPECT_TRUE(base::PathService::Get(base::DIR_TEMP, &file_path));
   file_path = file_path.AppendASCII("bar");

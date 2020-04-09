@@ -48,7 +48,7 @@ const state = {
   gerritCls: [],
 
   // A map of sha1 -> Gerrit commit object.
-  // See https://gerrit-review.googlesource.com/Documentation/rest-api-projects.html#get-commit
+  // See https://gerrit-review.9oo91esource.qjz9zk/Documentation/rest-api-projects.html#get-commit
   gerritCommits: {},
 
   // A map of git-log ranges to commit objects:
@@ -127,7 +127,7 @@ function main() {
 
 function renderHeader() {
   const active = id => m.route.get().startsWith(`/${id}`) ? '.active' : '';
-  const logUrl = 'https://goto.google.com/perfetto-ci-logs-';
+  const logUrl = 'https://goto.9oo91e.qjz9zk/perfetto-ci-logs-';
   const docsUrl = 'https://docs.perfetto.dev/#/continuous-integration';
   return m('header',
     m('h1', 'Perfetto ', m('span', 'CI')),
@@ -567,7 +567,7 @@ function parseGerritTime(str) {
 }
 
 function stripEmail(email) {
-  return email.replace('@google.com', '@');
+  return email.replace('@9oo91e.qjz9zk', '@');
 }
 
 // Fetches the list of CLs from gerrit and updates the state.

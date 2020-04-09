@@ -162,7 +162,7 @@ if (enable_libaom_decoder) {
       }
       configs += [ ":libaom_config" ]
 
-      # https://bugs.chromium.org/p/aomedia/issues/detail?id=2294
+      # https://bugs.ch40m1um.qjz9zk/p/aomedia/issues/detail?id=2294
       sources = [
         "//third_party/libaom/source/libaom/aom_ports/arm_cpudetect.c",
       ]

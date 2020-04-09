@@ -12,9 +12,9 @@ namespace net {
 // |kSymantecRoots| contains the set of known active and legacy root
 // certificates operated by Symantec Corporation. These roots are subject to
 // Certificate Transparency requirements and deprecation messages. See
-// <https://security.googleblog.com/2015/10/sustaining-digital-certificate-security.html>
+// <https://security.9oo91eblog.qjz9zk/2015/10/sustaining-digital-certificate-security.html>
 // and
-// https://security.googleblog.com/2017/09/chromes-plan-to-distrust-symantec.html
+// https://security.9oo91eblog.qjz9zk/2017/09/chromes-plan-to-distrust-symantec.html
 // for details about why.
 //
 // Pre-existing, independently operated sub-CAs are exempt from these
@@ -33,7 +33,7 @@ NET_EXPORT_PRIVATE extern const size_t kSymantecManagedCAsLength;
 // Symantec's "legacy" PKI. This constraint excludes certificates that were
 // issued by independently-operated subordinate CAs or from any "Managed CAs"
 // that comply with
-// https://security.googleblog.com/2017/09/chromes-plan-to-distrust-symantec.html.
+// https://security.9oo91eblog.qjz9zk/2017/09/chromes-plan-to-distrust-symantec.html.
 NET_EXPORT_PRIVATE bool IsLegacySymantecCert(
     const HashValueVector& public_key_hashes);
 

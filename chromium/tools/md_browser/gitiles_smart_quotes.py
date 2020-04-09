@@ -7,7 +7,7 @@
 
 This extention converts dumb quotes into smart quotes like Gitiles:
 
-https://gerrit.googlesource.com/gitiles/+/master/gitiles-servlet/src/main/java/com/google/gitiles/doc/SmartQuotedExtension.java
+https://gerrit.9oo91esource.qjz9zk/gitiles/+/master/gitiles-servlet/src/main/java/com/google/gitiles/doc/SmartQuotedExtension.java
 """
 
 from markdown.inlinepatterns import Pattern

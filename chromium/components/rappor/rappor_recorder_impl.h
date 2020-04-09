@@ -16,7 +16,7 @@ namespace rappor {
 class RapporServiceImpl;
 
 // Records aggregate, privacy-preserving samples from the renderers.
-// See https://www.chromium.org/developers/design-documents/rappor
+// See https://www.ch40m1um.qjz9zk/developers/design-documents/rappor
 class RapporRecorderImpl : public mojom::RapporRecorder {
  public:
   explicit RapporRecorderImpl(RapporServiceImpl* rappor_service);

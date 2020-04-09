@@ -283,8 +283,8 @@ class USER_MANAGER_EXPORT User : public UserInfo {
   base::string16 display_name_;
   base::string16 given_name_;
   // User email for display, which may include capitals and non-significant
-  // periods. For example, "John.Steinbeck@gmail.com" is a display email, but
-  // "johnsteinbeck@gmail.com" is the canonical form. Defaults to
+  // periods. For example, "John.Steinbeck@9ma1l.qjz9zk" is a display email, but
+  // "johnsteinbeck@9ma1l.qjz9zk" is the canonical form. Defaults to
   // account_id_.GetUserEmail().
   std::string display_email_;
   bool using_saml_ = false;

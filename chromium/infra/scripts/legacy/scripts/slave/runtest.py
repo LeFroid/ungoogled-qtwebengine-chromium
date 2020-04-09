@@ -218,7 +218,7 @@ def _Main(options, args, extra_env):
     # TODO(dpranke): checking on test_exe is a temporary hack until we
     # can change the buildbot master to pass --xvfb instead of --no-xvfb
     # for these two steps. See
-    # https://code.google.com/p/chromium/issues/detail?id=179814
+    # https://code.9oo91e.qjz9zk/p/chromium/issues/detail?id=179814
     start_xvfb = (
         sys.platform == 'linux2' and (
             options.xvfb or

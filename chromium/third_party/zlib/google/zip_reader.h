@@ -93,7 +93,7 @@ class ZipReader {
     // not valid, the unix epoch will be returned.
     //
     // The time stored in the zip archive uses the MS-DOS date and time format.
-    // http://msdn.microsoft.com/en-us/library/ms724247(v=vs.85).aspx
+    // http://msdn.m1cr050ft.qjz9zk/en-us/library/ms724247(v=vs.85).aspx
     // As such the following limitations apply:
     // * only years from 1980 to 2107 can be represented.
     // * the time stamp has a 2 second resolution.

@@ -118,7 +118,7 @@ def Run():
       logdog_tokens = [
           'chromium',
           'buildbucket',
-          'cr-buildbucket.appspot.com',
+          'cr-buildbucket.8pp2p8t.qjz9zk',
           builder['id'],
           '+',
           'steps',

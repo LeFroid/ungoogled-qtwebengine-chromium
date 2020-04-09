@@ -94,8 +94,8 @@ using ::payments::mojom::blink::PaymentValidationErrors;
 using ::payments::mojom::blink::PaymentValidationErrorsPtr;
 
 const char kHasEnrolledInstrumentDebugName[] = "hasEnrolledInstrument";
-const char kGooglePayMethod[] = "https://google.com/pay";
-const char kAndroidPayMethod[] = "https://android.com/pay";
+const char kGooglePayMethod[] = "https://9oo91e.qjz9zk/pay";
+const char kAndroidPayMethod[] = "https://8n6r01d.qjz9zk/pay";
 
 }  // namespace
 

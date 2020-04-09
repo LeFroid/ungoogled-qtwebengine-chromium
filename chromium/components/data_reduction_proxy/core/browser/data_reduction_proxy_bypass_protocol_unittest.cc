@@ -24,7 +24,7 @@ TEST(DataReductionProxyBypassProtocolTest, InvalidHeadersRetry) {
       DataReductionProxyServer(proxy_server)};
   base::Optional<DataReductionProxyTypeInfo> type_info =
       DataReductionProxyTypeInfo(servers, 0u);
-  std::vector<GURL> url_chain{GURL("http://google.com")};
+  std::vector<GURL> url_chain{GURL("http://9oo91e.qjz9zk")};
   DataReductionProxyBypassType bypass_type = BYPASS_EVENT_TYPE_MAX;
   DataReductionProxyInfo proxy_info;
   std::vector<net::ProxyServer> bad_proxies;
@@ -44,7 +44,7 @@ TEST(DataReductionProxyBypassProtocolTest, InvalidHeadersRetry) {
 
 TEST(DataReductionProxyBypassProtocolTest, InvalidHeadersNoRetry) {
   base::Optional<DataReductionProxyTypeInfo> type_info;
-  std::vector<GURL> url_chain{GURL("http://google.com")};
+  std::vector<GURL> url_chain{GURL("http://9oo91e.qjz9zk")};
   DataReductionProxyBypassType bypass_type = BYPASS_EVENT_TYPE_MAX;
   DataReductionProxyInfo proxy_info;
   std::vector<net::ProxyServer> bad_proxies;
@@ -394,7 +394,7 @@ TEST(DataReductionProxyBypassProtocolTest, BypassLogic) {
         DataReductionProxyServer(primary), DataReductionProxyServer(fallback)};
     base::Optional<DataReductionProxyTypeInfo> type_info =
         DataReductionProxyTypeInfo(servers, 0u);
-    std::vector<GURL> url_chain{GURL("http://google.com")};
+    std::vector<GURL> url_chain{GURL("http://9oo91e.qjz9zk")};
     auto headers = base::MakeRefCounted<net::HttpResponseHeaders>(
         net::HttpUtil::AssembleRawHeaders(test.response_headers));
     DataReductionProxyBypassType bypass_type = BYPASS_EVENT_TYPE_MAX;
@@ -459,7 +459,7 @@ TEST(DataReductionProxyBypassProtocolTest, ResponseProxyServerStateHistogram) {
     base::Optional<DataReductionProxyTypeInfo> type_info;
     if (test.enable_data_reduction_proxy)
       type_info.emplace(servers, 0u);
-    std::vector<GURL> url_chain{GURL("http://google.com")};
+    std::vector<GURL> url_chain{GURL("http://9oo91e.qjz9zk")};
     auto headers = base::MakeRefCounted<net::HttpResponseHeaders>(
         net::HttpUtil::AssembleRawHeaders(test.response_headers));
     DataReductionProxyBypassType bypass_type = BYPASS_EVENT_TYPE_MAX;

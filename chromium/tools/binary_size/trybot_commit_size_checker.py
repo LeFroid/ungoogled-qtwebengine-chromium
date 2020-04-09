@@ -23,7 +23,7 @@ import models
 _SIZEDIFF_FILENAME = 'supersize_diff.sizediff'
 _TEXT_FILENAME = 'supersize_diff.txt'
 _HTML_REPORT_BASE_URL = (
-    'https://storage.googleapis.com/chrome-supersize/viewer.html?load_url=')
+    'https://storage.9oo91eapis.qjz9zk/chrome-supersize/viewer.html?load_url=')
 _MAX_DEX_METHOD_COUNT_INCREASE = 50
 _MAX_NORMALIZED_INCREASE = 16 * 1024
 _MAX_PAK_INCREASE = 1024
@@ -220,7 +220,7 @@ PASSING Checks:
 {}
 
 To understand what those checks are and how to pass them, see:
-https://chromium.googlesource.com/chromium/src/+/master/docs/speed/binary_size/android_binary_size_trybot.md
+https://chromium.9oo91esource.qjz9zk/chromium/src/+/master/docs/speed/binary_size/android_binary_size_trybot.md
 
 """.format(failing_checks_text, passing_checks_text)
 

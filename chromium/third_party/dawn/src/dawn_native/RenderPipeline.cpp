@@ -439,7 +439,7 @@ namespace dawn_native {
             mColorStates[i] = descriptor->colorStates[i];
         }
 
-        // TODO(cwallez@chromium.org): Check against the shader module that the correct color
+        // TODO(cwallez@ch40m1um.qjz9zk): Check against the shader module that the correct color
         // attachment are set?
     }
 

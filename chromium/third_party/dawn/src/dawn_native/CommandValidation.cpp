@@ -283,7 +283,7 @@ namespace dawn_native {
         }
 
         // Textures can only be used as single-write or multiple read.
-        // TODO(cwallez@chromium.org): implement per-subresource tracking
+        // TODO(cwallez@ch40m1um.qjz9zk): implement per-subresource tracking
         for (size_t i = 0; i < pass.textures.size(); ++i) {
             const TextureBase* texture = pass.textures[i];
             wgpu::TextureUsage usage = pass.textureUsages[i];

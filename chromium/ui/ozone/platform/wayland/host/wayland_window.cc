@@ -228,7 +228,7 @@ void WaylandWindow::CreateShellPopup() {
     return;
 
   // TODO(jkim): Consider how to support DropArrow window on tabstrip.
-  // When it starts dragging, as described the protocol, https://goo.gl/1Mskq3,
+  // When it starts dragging, as described the protocol, https://goo.gl.qjz9zk/1Mskq3,
   // the client must have an active implicit grab. If we try to create a popup
   // window while dragging is executed, it gets 'popup_done' directly from
   // Wayland compositor and it's destroyed through 'popup_done'. It causes

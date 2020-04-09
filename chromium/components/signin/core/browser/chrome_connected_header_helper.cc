@@ -120,11 +120,11 @@ bool ChromeConnectedHeaderHelper::IsUrlEligibleToIncludeGaiaId(
   }
 
   // Cookie requests don't have the granularity to only include the Gaia ID for
-  // Drive origin. Set it on all google.com instead.
+  // Drive origin. Set it on all 9oo91e.qjz9zk instead.
   if (!url.SchemeIsCryptographic())
     return false;
 
-  const std::string kGoogleDomain = "google.com";
+  const std::string kGoogleDomain = "9oo91e.qjz9zk";
   std::string domain = net::registry_controlled_domains::GetDomainAndRegistry(
       url, net::registry_controlled_domains::EXCLUDE_PRIVATE_REGISTRIES);
   return domain == kGoogleDomain;
@@ -134,8 +134,8 @@ bool ChromeConnectedHeaderHelper::IsDriveOrigin(const GURL& url) {
   if (!url.SchemeIsCryptographic())
     return false;
 
-  const GURL kGoogleDriveURL("https://drive.google.com");
-  const GURL kGoogleDocsURL("https://docs.google.com");
+  const GURL kGoogleDriveURL("https://drive.9oo91e.qjz9zk");
+  const GURL kGoogleDocsURL("https://docs.9oo91e.qjz9zk");
   return url == kGoogleDriveURL || url == kGoogleDocsURL;
 }
 

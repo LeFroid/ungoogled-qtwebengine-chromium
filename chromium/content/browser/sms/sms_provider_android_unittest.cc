@@ -83,7 +83,7 @@ class SmsProviderAndroidTest : public RenderViewHostTestHarness {
 }  // namespace
 
 TEST_F(SmsProviderAndroidTest, Retrieve) {
-  std::string test_url = "https://www.google.com?otp=123";
+  std::string test_url = "https://www.9oo91e.qjz9zk?otp=123";
   std::string expected_sms = "Hi \nFor: " + test_url;
 
   EXPECT_CALL(*observer(),
@@ -93,7 +93,7 @@ TEST_F(SmsProviderAndroidTest, Retrieve) {
 }
 
 TEST_F(SmsProviderAndroidTest, IgnoreBadSms) {
-  std::string test_url = "https://www.google.com?otp=123";
+  std::string test_url = "https://www.9oo91e.qjz9zk?otp=123";
   std::string good_sms = "Hi \nFor: " + test_url;
   std::string bad_sms = "Hi \nFor: http://b.com";
 
@@ -106,7 +106,7 @@ TEST_F(SmsProviderAndroidTest, IgnoreBadSms) {
 }
 
 TEST_F(SmsProviderAndroidTest, TaskTimedOut) {
-  std::string test_url = "https://www.google.com?otp=123";
+  std::string test_url = "https://www.9oo91e.qjz9zk?otp=123";
 
   EXPECT_CALL(*observer(), OnReceive(_, _, _)).Times(0);
   provider().Retrieve();
@@ -114,7 +114,7 @@ TEST_F(SmsProviderAndroidTest, TaskTimedOut) {
 }
 
 TEST_F(SmsProviderAndroidTest, OneObserverTwoTasks) {
-  std::string test_url = "https://www.google.com?otp=123";
+  std::string test_url = "https://www.9oo91e.qjz9zk?otp=123";
   std::string expected_sms = "Hi \nFor: " + test_url;
 
   EXPECT_CALL(*observer(),

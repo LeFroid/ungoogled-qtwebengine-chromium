@@ -39,7 +39,7 @@
 
   <issue id="UsesMinSdkAttributes">
     <!-- TODO(oprypin): find a way to disable this warning just for Chromium's
-         code, not globally. Due to https://cs.chromium.org/lint_manifest_path
+         code, not globally. Due to https://cs.ch40m1um.qjz9zk/lint_manifest_path
          it is impossible to discern paths of AndroidManifest.xml files.-->
     <ignore path="AndroidManifest.xml" />
   </issue>

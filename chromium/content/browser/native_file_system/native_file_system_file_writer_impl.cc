@@ -93,8 +93,7 @@ NativeFileSystemFileWriterImpl::NativeFileSystemFileWriterImpl(
                                  url,
                                  handle_state,
                                  /*is_directory=*/false),
-      swap_url_(swap_url),
-      has_transient_user_activation_(has_transient_user_activation) {
+      swap_url_(swap_url) {
   DCHECK_EQ(swap_url.type(), url.type());
 }
 
@@ -302,50 +301,7 @@ void NativeFileSystemFileWriterImpl::CloseImpl(CloseCallback callback) {
   // swap file even if the writer was destroyed at that point.
   state_ = State::kClosePending;
 
-  if (!RequireAfterWriteCheck() || !manager()->permission_context()) {
-    DidPassAfterWriteCheck(std::move(callback));
-    return;
-  }
-
-  ComputeHashForSwapFile(base::BindOnce(
-      &NativeFileSystemFileWriterImpl::DoAfterWriteCheck,
-      weak_factory_.GetWeakPtr(), swap_url().path(), std::move(callback)));
-}
-
-// static
-void NativeFileSystemFileWriterImpl::DoAfterWriteCheck(
-    base::WeakPtr<NativeFileSystemFileWriterImpl> file_writer,
-    const base::FilePath& swap_path,
-    NativeFileSystemFileWriterImpl::CloseCallback callback,
-    base::File::Error hash_result,
-    const std::string& hash,
-    int64_t size) {
-  if (!file_writer || hash_result != base::File::FILE_OK) {
-    // If writer was deleted, or calculating the hash failed try deleting the
-    // swap file and invoke the callback.
-    base::PostTask(FROM_HERE, {base::ThreadPool(), base::MayBlock()},
-                   base::BindOnce(base::IgnoreResult(&base::DeleteFile),
-                                  swap_path, /*recursive=*/false));
-    std::move(callback).Run(native_file_system_error::FromStatus(
-        NativeFileSystemStatus::kOperationAborted,
-        "Failed to perform Safe Browsing check."));
-    return;
-  }
-
-  DCHECK_CALLED_ON_VALID_SEQUENCE(file_writer->sequence_checker_);
-
-  auto item = std::make_unique<NativeFileSystemWriteItem>();
-  item->target_file_path = file_writer->url().path();
-  item->full_path = file_writer->swap_url().path();
-  item->sha256_hash = hash;
-  item->size = size;
-  item->frame_url = file_writer->context().url;
-  item->has_user_gesture = file_writer->has_transient_user_activation_;
-  file_writer->manager()->permission_context()->PerformAfterWriteChecks(
-      std::move(item), file_writer->context().process_id,
-      file_writer->context().frame_id,
-      base::BindOnce(&NativeFileSystemFileWriterImpl::DidAfterWriteCheck,
-                     file_writer, swap_path, std::move(callback)));
+  DidPassAfterWriteCheck(std::move(callback));
 }
 
 // static

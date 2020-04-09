@@ -49,7 +49,7 @@ class PasswordManagerMetricsRecorder {
     INVALID_FORM,
     // A Google credential cannot be saved by policy because it is the Chrome
     // Sync credential and therefore acts as a master password that gives access
-    // to all other credentials on https://passwords.google.com.
+    // to all other credentials on https://passwords.9oo91e.qjz9zk.
     SYNC_CREDENTIAL,
     // Credentials are not offered to be saved on HTTP pages if a credential is
     // stored for the corresponding HTTPS page.

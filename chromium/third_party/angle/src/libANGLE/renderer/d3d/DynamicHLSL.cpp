@@ -957,7 +957,7 @@ std::string DynamicHLSL::generateGeometryShaderPreamble(const VaryingPacking &va
         // render target is an array resource. Because of this we do not write to gl_Layer if we are
         // taking the side-by-side code path. We still select the viewport index in the layered code
         // path as that is always valid. See:
-        // https://msdn.microsoft.com/en-us/library/windows/desktop/bb509647(v=vs.85).aspx
+        // https://msdn.m1cr050ft.qjz9zk/en-us/library/windows/desktop/bb509647(v=vs.85).aspx
         preambleStream << "\n"
                        << "void selectView(inout GS_OUTPUT output, GS_INPUT input)\n"
                        << "{\n"

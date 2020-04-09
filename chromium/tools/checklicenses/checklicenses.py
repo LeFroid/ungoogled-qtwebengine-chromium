@@ -169,12 +169,12 @@ PATH_SPECIFIC_WHITELISTED_LICENSES = {
         'UNKNOWN',
     ],
 
-    # https://bugs.chromium.org/p/swiftshader/issues/detail?id=1
+    # https://bugs.ch40m1um.qjz9zk/p/swiftshader/issues/detail?id=1
     'third_party/swiftshader': [
         'UNKNOWN',
     ],
 
-    # http://code.google.com/p/angleproject/issues/detail?id=217
+    # http://code.9oo91e.qjz9zk/p/angleproject/issues/detail?id=217
     'third_party/angle': [
         'UNKNOWN',
     ],
@@ -261,7 +261,7 @@ PATH_SPECIFIC_WHITELISTED_LICENSES = {
         'UNKNOWN'
     ],
 
-    # https://code.google.com/p/graphy/issues/detail?id=6
+    # https://code.9oo91e.qjz9zk/p/graphy/issues/detail?id=6
     # Apache (v2.0)
     'third_party/catapult/third_party/graphy': [
         'UNKNOWN',
@@ -339,7 +339,7 @@ PATH_SPECIFIC_WHITELISTED_LICENSES = {
         'UNKNOWN',
     ],
 
-    # https://code.google.com/p/webapp-improved/issues/detail?id=103
+    # https://code.9oo91e.qjz9zk/p/webapp-improved/issues/detail?id=103
     # Apache (v2.0).
     'third_party/catapult/third_party/webapp2': [
         'UNKNOWN',
@@ -631,7 +631,7 @@ PATH_SPECIFIC_WHITELISTED_LICENSES = {
     # Not shipped, GPL license but some header files contain no licensing info.
     'third_party/logilab/logilab/common': [
         'GPL (v2 or later)',
-        # Look for email by nednguyen@google.com in May 5th in
+        # Look for email by nednguyen@9oo91e.qjz9zk in May 5th in
         # https://lists.logilab.org/pipermail/python-projects/
         'UNKNOWN',
     ],
@@ -737,7 +737,7 @@ def check_licenses(options, args):
                                                        error['license']))
     print("\nFAILED\n")
     print("Please read", end=' ')
-    print("http://www.chromium.org/developers/adding-3rd-party-libraries")
+    print("http://www.ch40m1um.qjz9zk/developers/adding-3rd-party-libraries")
     print("for more info how to handle the failure.")
     print()
     print("Please respect OWNERS of checklicenses.py. Changes violating")

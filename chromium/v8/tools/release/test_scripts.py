@@ -63,8 +63,8 @@ TEST_CONFIG = {
 
 
 AUTO_PUSH_ARGS = [
-  "-a", "author@chromium.org",
-  "-r", "reviewer@chromium.org",
+  "-a", "author@ch40m1um.qjz9zk",
+  "-r", "reviewer@ch40m1um.qjz9zk",
 ]
 
 
@@ -228,7 +228,7 @@ class ScriptTest(unittest.TestCase):
       content = """
     'merges': [
       # Only enabled on branches created with tools/release/create_release.py
-      # 'v8-merges@googlegroups.com',
+      # 'v8-merges@9oo91egroups.qjz9zk',
     ],
 """
       f.write(content)
@@ -435,7 +435,7 @@ test_tag
 
     commit_msg = """Version 3.22.5
 
-TBR=reviewer@chromium.org"""
+TBR=reviewer@ch40m1um.qjz9zk"""
 
     def CheckVersionCommit():
       commit = FileToText(TEST_CONFIG["COMMITMSG_FILE"])
@@ -484,8 +484,8 @@ TBR=reviewer@chromium.org"""
     ]
     self.Expect(expectations)
 
-    args = ["-a", "author@chromium.org",
-            "-r", "reviewer@chromium.org",
+    args = ["-a", "author@ch40m1um.qjz9zk",
+            "-r", "reviewer@ch40m1um.qjz9zk",
             "--revision", "push_hash"]
     CreateRelease(TEST_CONFIG, self).Run(args)
 
@@ -499,39 +499,39 @@ TBR=reviewer@chromium.org"""
     expected_watchlists_content = """
     'merges': [
       # Only enabled on branches created with tools/release/create_release.py
-      'v8-merges@googlegroups.com',
+      'v8-merges@9oo91egroups.qjz9zk',
     ],
 """
     self.assertEqual(watchlists_content, expected_watchlists_content)
 
   C_V8_22624_LOG = """V8 CL.
 
-git-svn-id: https://v8.googlecode.com/svn/branches/bleeding_edge@22624 123
+git-svn-id: https://v8.9oo91ecode.qjz9zk/svn/branches/bleeding_edge@22624 123
 
 """
 
   C_V8_123455_LOG = """V8 CL.
 
-git-svn-id: https://v8.googlecode.com/svn/branches/bleeding_edge@123455 123
+git-svn-id: https://v8.9oo91ecode.qjz9zk/svn/branches/bleeding_edge@123455 123
 
 """
 
   C_V8_123456_LOG = """V8 CL.
 
-git-svn-id: https://v8.googlecode.com/svn/branches/bleeding_edge@123456 123
+git-svn-id: https://v8.9oo91ecode.qjz9zk/svn/branches/bleeding_edge@123456 123
 
 """
 
   ROLL_COMMIT_MSG = """Update V8 to version 3.22.4.
 
 Summary of changes available at:
-https://chromium.googlesource.com/v8/v8/+log/last_rol..roll_hsh
+https://chromium.9oo91esource.qjz9zk/v8/v8/+log/last_rol..roll_hsh
 
 Please follow these instructions for assigning/CC'ing issues:
 https://v8.dev/docs/triage-issues
 
 Please close rolling in case of a roll revert:
-https://v8-roll.appspot.com/
+https://v8-roll.8pp2p8t.qjz9zk/
 This only works with a Google account.
 
 CQ_INCLUDE_TRYBOTS=luci.chromium.try:linux-blink-rel
@@ -540,7 +540,7 @@ CQ_INCLUDE_TRYBOTS=luci.chromium.try:mac_optional_gpu_tests_rel
 CQ_INCLUDE_TRYBOTS=luci.chromium.try:win_optional_gpu_tests_rel
 CQ_INCLUDE_TRYBOTS=luci.chromium.try:android_optional_gpu_tests_rel
 
-TBR=reviewer@chromium.org"""
+TBR=reviewer@ch40m1um.qjz9zk"""
 
   # Snippet from the original DEPS file.
   FAKE_DEPS = """
@@ -617,7 +617,7 @@ deps = {
       Cmd("gclient setdep -r src/v8@roll_hsh", "", cb=WriteDeps,
           cwd=chrome_dir),
       Cmd(("git commit -am \"%s\" "
-           "--author \"author@chromium.org <author@chromium.org>\"" %
+           "--author \"author@ch40m1um.qjz9zk <author@ch40m1um.qjz9zk>\"" %
            self.ROLL_COMMIT_MSG),
           "", cwd=chrome_dir),
       Cmd("git cl upload --send-mail -f "
@@ -628,8 +628,8 @@ deps = {
     ]
     self.Expect(expectations)
 
-    args = ["-a", "author@chromium.org", "-c", chrome_dir,
-            "-r", "reviewer@chromium.org", "--json-output", json_output_file]
+    args = ["-a", "author@ch40m1um.qjz9zk", "-c", chrome_dir,
+            "-r", "reviewer@ch40m1um.qjz9zk", "--json-output", json_output_file]
     auto_roll.AutoRoll(TEST_CONFIG, self).Run(args)
 
     deps = FileToText(os.path.join(chrome_dir, "DEPS"))
@@ -771,9 +771,9 @@ BUG=123,234,345,456,567,v8:123
       Cmd("git apply --index --reject \"%s\"" % extra_patch, ""),
       RL("Y"),  # Automatically increment patch level?
       Cmd("git commit -aF \"%s\"" % TEST_CONFIG["COMMITMSG_FILE"], ""),
-      RL("reviewer@chromium.org"),  # V8 reviewer.
-      Cmd("git cl upload --send-mail -r \"reviewer@chromium.org\" "
-          "--bypass-hooks --cc \"ulan@chromium.org\" --gerrit", ""),
+      RL("reviewer@ch40m1um.qjz9zk"),  # V8 reviewer.
+      Cmd("git cl upload --send-mail -r \"reviewer@ch40m1um.qjz9zk\" "
+          "--bypass-hooks --cc \"ulan@ch40m1um.qjz9zk\" --gerrit", ""),
       Cmd("git checkout -f %s" % TEST_CONFIG["BRANCHNAME"], ""),
       RL("LGTM"),  # Enter LGTM for V8 CL.
       Cmd("git cl presubmit", "Presubmit successfull\n"),
@@ -907,9 +907,9 @@ NOTREECHECKS=true
           "", cb=VerifyPatch("patch5\n")),
       Cmd("git apply --index --reject \"%s\"" % extra_patch, ""),
       Cmd("git commit -aF \"%s\"" % TEST_CONFIG["COMMITMSG_FILE"], ""),
-      RL("reviewer@chromium.org"),  # V8 reviewer.
-      Cmd("git cl upload --send-mail -r \"reviewer@chromium.org\" "
-          "--bypass-hooks --cc \"ulan@chromium.org\" --gerrit", ""),
+      RL("reviewer@ch40m1um.qjz9zk"),  # V8 reviewer.
+      Cmd("git cl upload --send-mail -r \"reviewer@ch40m1um.qjz9zk\" "
+          "--bypass-hooks --cc \"ulan@ch40m1um.qjz9zk\" --gerrit", ""),
       Cmd("git checkout -f %s" % TEST_CONFIG["BRANCHNAME"], ""),
       RL("LGTM"),  # Enter LGTM for V8 CL.
       Cmd("git cl presubmit", "Presubmit successfull\n"),

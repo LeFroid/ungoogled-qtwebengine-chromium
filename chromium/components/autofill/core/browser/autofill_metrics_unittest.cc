@@ -238,7 +238,7 @@ void AppendFieldTypeUkm(const FormData& form,
 
 void SetProfileTestData(AutofillProfile* profile) {
   test::SetProfileInfo(profile, "Elvis", "Aaron", "Presley",
-                       "theking@gmail.com", "RCA", "3734 Elvis Presley Blvd.",
+                       "theking@9ma1l.qjz9zk", "RCA", "3734 Elvis Presley Blvd.",
                        "Apt. 10", "Memphis", "Tennessee", "38116", "US",
                        "12345678901");
   profile->set_guid(kTestGuid);
@@ -387,7 +387,7 @@ void AutofillMetricsTest::CreateAmbiguousProfiles() {
   CreateTestAutofillProfiles();
 
   AutofillProfile profile;
-  test::SetProfileInfo(&profile, "John", "Decca", "Public", "john@gmail.com",
+  test::SetProfileInfo(&profile, "John", "Decca", "Public", "john@9ma1l.qjz9zk",
                        "Company", "123 Main St.", "unit 7", "Springfield",
                        "Texas", "79401", "US", "2345678901");
   profile.set_guid("00000000-0000-0000-0000-000000000003");
@@ -500,7 +500,7 @@ void AutofillMetricsTest::RecreateFullServerCreditCardWithBankName() {
 void AutofillMetricsTest::CreateTestAutofillProfiles() {
   AutofillProfile profile1;
   test::SetProfileInfo(&profile1, "Elvis", "Aaron", "Presley",
-                       "theking@gmail.com", "RCA", "3734 Elvis Presley Blvd.",
+                       "theking@9ma1l.qjz9zk", "RCA", "3734 Elvis Presley Blvd.",
                        "Apt. 10", "Memphis", "Tennessee", "38116", "US",
                        "12345678901");
   profile1.set_guid(kTestGuid);
@@ -508,7 +508,7 @@ void AutofillMetricsTest::CreateTestAutofillProfiles() {
 
   AutofillProfile profile2;
   test::SetProfileInfo(&profile2, "Charles", "Hardin", "Holley",
-                       "buddy@gmail.com", "Decca", "123 Apple St.", "unit 6",
+                       "buddy@9ma1l.qjz9zk", "Decca", "123 Apple St.", "unit 6",
                        "Lubbock", "Texas", "79401", "US", "2345678901");
   profile2.set_guid("00000000-0000-0000-0000-000000000002");
   personal_data_->AddProfile(profile2);
@@ -580,7 +580,7 @@ TEST_F(AutofillMetricsTest, QualityMetrics) {
   server_types.push_back(NAME_FIRST);
 
   test::CreateTestFormField("Autofill Failed", "autofillfailed",
-                            "buddy@gmail.com", "text", &field);
+                            "buddy@9ma1l.qjz9zk", "text", &field);
   field.is_autofilled = false;
   form.fields.push_back(field);
   heuristic_types.push_back(PHONE_HOME_NUMBER);
@@ -1539,7 +1539,7 @@ class QualityMetricsTest
       case NAME_FULL:
         return "Elvis Aaron Presley";
       case EMAIL_ADDRESS:
-        return "buddy@gmail.com";
+        return "buddy@9ma1l.qjz9zk";
       case PHONE_HOME_NUMBER:
       case PHONE_HOME_WHOLE_NUMBER:
       case PHONE_HOME_CITY_AND_NUMBER:
@@ -1839,7 +1839,7 @@ TEST_F(AutofillMetricsTest, TimingMetrics) {
   form.fields.push_back(field);
 
   test::CreateTestFormField("Autofill Failed", "autofillfailed",
-                            "buddy@gmail.com", "text", &field);
+                            "buddy@9ma1l.qjz9zk", "text", &field);
   field.is_autofilled = false;
   form.fields.push_back(field);
 
@@ -1883,7 +1883,7 @@ TEST_F(AutofillMetricsTest, QualityMetrics_NoSubmission) {
   server_types.push_back(NAME_FIRST);
 
   test::CreateTestFormField("Autofill Failed", "autofillfailed",
-                            "buddy@gmail.com", "text", &field);
+                            "buddy@9ma1l.qjz9zk", "text", &field);
   field.is_autofilled = false;
   form.fields.push_back(field);
   heuristic_types.push_back(PHONE_HOME_NUMBER);
@@ -2319,7 +2319,7 @@ TEST_F(AutofillMetricsTest, SaneMetricsWithCacheMismatch) {
   form.fields.push_back(field);
   heuristic_types.push_back(NAME_FULL);
   server_types.push_back(NAME_FULL);
-  test::CreateTestFormField("Both mismatch", "mismatch", "buddy@gmail.com",
+  test::CreateTestFormField("Both mismatch", "mismatch", "buddy@9ma1l.qjz9zk",
                             "text", &field);
   field.is_autofilled = false;
   form.fields.push_back(field);
@@ -2489,7 +2489,7 @@ TEST_F(AutofillMetricsTest, NumberOfEditedAutofilledFields) {
   server_types.push_back(NAME_FULL);
 
   test::CreateTestFormField("Autofill Failed", "autofillfailed",
-                            "buddy@gmail.com", "text", &field);
+                            "buddy@9ma1l.qjz9zk", "text", &field);
   field.is_autofilled = true;
   form.fields.push_back(field);
   heuristic_types.push_back(EMAIL_ADDRESS);
@@ -2542,7 +2542,7 @@ TEST_F(AutofillMetricsTest, NumberOfEditedAutofilledFields_NoSubmission) {
   server_types.push_back(NAME_FULL);
 
   test::CreateTestFormField("Autofill Failed", "autofillfailed",
-                            "buddy@gmail.com", "text", &field);
+                            "buddy@9ma1l.qjz9zk", "text", &field);
   field.is_autofilled = true;
   form.fields.push_back(field);
   heuristic_types.push_back(EMAIL_ADDRESS);
@@ -6827,7 +6827,7 @@ TEST_F(AutofillMetricsTest, AutofillFormSubmittedState) {
 
   // Non fillable form.
   form.fields[0].value = ASCIIToUTF16("Unknown Person");
-  form.fields[1].value = ASCIIToUTF16("unknown.person@gmail.com");
+  form.fields[1].value = ASCIIToUTF16("unknown.person@9ma1l.qjz9zk");
   forms.front() = form;
 
   {
@@ -6862,7 +6862,7 @@ TEST_F(AutofillMetricsTest, AutofillFormSubmittedState) {
 
   // Fillable form.
   form.fields[0].value = ASCIIToUTF16("Elvis Aaron Presley");
-  form.fields[1].value = ASCIIToUTF16("theking@gmail.com");
+  form.fields[1].value = ASCIIToUTF16("theking@9ma1l.qjz9zk");
   form.fields[2].value = ASCIIToUTF16("12345678901");
   forms.front() = form;
 
@@ -7097,7 +7097,7 @@ TEST_F(
 
     form.fields[0].value = ASCIIToUTF16("Elvis Aaron Presley");
     form.fields[0].is_autofilled = true;
-    form.fields[1].value = ASCIIToUTF16("theking@gmail.com");
+    form.fields[1].value = ASCIIToUTF16("theking@9ma1l.qjz9zk");
     form.fields[1].is_autofilled = true;
     form.fields[2].value = ASCIIToUTF16("12345678901");
     form.fields[2].is_autofilled = true;
@@ -7672,12 +7672,12 @@ TEST_F(AutofillMetricsTest, FormFillDuration) {
 
   // Fill the field values for form submission.
   form.fields[0].value = ASCIIToUTF16("Elvis Aaron Presley");
-  form.fields[1].value = ASCIIToUTF16("theking@gmail.com");
+  form.fields[1].value = ASCIIToUTF16("theking@9ma1l.qjz9zk");
   form.fields[2].value = ASCIIToUTF16("12345678901");
 
   // Fill the field values for form submission.
   second_form.fields[0].value = ASCIIToUTF16("Elvis Aaron Presley");
-  second_form.fields[1].value = ASCIIToUTF16("theking@gmail.com");
+  second_form.fields[1].value = ASCIIToUTF16("theking@9ma1l.qjz9zk");
   second_form.fields[2].value = ASCIIToUTF16("12345678901");
   second_form.fields[3].value = ASCIIToUTF16("51512345678");
 
@@ -8111,7 +8111,7 @@ TEST_F(AutofillMetricsTest, ProfileActionOnFormSubmitted) {
 
   // Fill the field values for the first form submission.
   form.fields[0].value = ASCIIToUTF16("Albert Canuck");
-  form.fields[1].value = ASCIIToUTF16("can@gmail.com");
+  form.fields[1].value = ASCIIToUTF16("can@9ma1l.qjz9zk");
   form.fields[2].value = ASCIIToUTF16("12345678901");
   form.fields[3].value = ASCIIToUTF16("1234 McGill street.");
   form.fields[4].value = ASCIIToUTF16("Montreal");
@@ -8124,7 +8124,7 @@ TEST_F(AutofillMetricsTest, ProfileActionOnFormSubmitted) {
 
   // Fill the field values for the third form submission.
   third_form.fields[0].value = ASCIIToUTF16("Jean-Paul Canuck");
-  third_form.fields[1].value = ASCIIToUTF16("can2@gmail.com");
+  third_form.fields[1].value = ASCIIToUTF16("can2@9ma1l.qjz9zk");
   third_form.fields[2].value = ASCIIToUTF16("");
   third_form.fields[3].value = ASCIIToUTF16("1234 McGill street.");
   third_form.fields[4].value = ASCIIToUTF16("Montreal");
@@ -8427,7 +8427,7 @@ TEST_F(AutofillMetricsTest,
 
 // Tests that logging CardUploadDecision UKM works as expected.
 TEST_F(AutofillMetricsTest, RecordCardUploadDecisionMetric) {
-  GURL url("https://www.google.com");
+  GURL url("https://www.9oo91e.qjz9zk");
   int upload_decision = 1;
   autofill_client_.set_form_origin(url);
 
@@ -8447,7 +8447,7 @@ TEST_F(AutofillMetricsTest, RecordCardUploadDecisionMetric) {
 
 // Tests that logging DeveloperEngagement UKM works as expected.
 TEST_F(AutofillMetricsTest, RecordDeveloperEngagementMetric) {
-  GURL url("https://www.google.com");
+  GURL url("https://www.9oo91e.qjz9zk");
   int form_structure_metric = 1;
   FormSignature form_signature = 100;
   autofill_client_.set_form_origin(url);
@@ -8485,7 +8485,7 @@ TEST_F(AutofillMetricsTest, RecordCardUploadDecisionMetric_InvalidUrl) {
 
 // Tests that no UKM is logged when the ukm service is null.
 TEST_F(AutofillMetricsTest, RecordCardUploadDecisionMetric_NoUkmService) {
-  GURL url("https://www.google.com");
+  GURL url("https://www.9oo91e.qjz9zk");
   test_ukm_recorder_->Purge();
   AutofillMetrics::LogCardUploadDecisionsUkm(nullptr, -1, url, 1);
   EXPECT_EQ(0ul, test_ukm_recorder_->sources_count());

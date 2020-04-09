@@ -4,7 +4,7 @@
 """Parses ELF information without relying external tools.
 
 This file was originally copied and adapted from:
-https://fuchsia.googlesource.com/fuchsia/+/827f9fe/build/images/elfinfo.py
+https://fuchsia.9oo91esource.qjz9zk/fuchsia/+/827f9fe/build/images/elfinfo.py
 """
 
 from contextlib import contextmanager

@@ -127,7 +127,6 @@ enum PhishingDetectorResult {
   INVALID_SCORE = 4,
 };
 
-[EnableIf=full_safe_browsing]
 interface PhishingDetector {
   // Tells the renderer to begin phishing detection for the given toplevel URL
   // which it has started loading. Returns the serialized request proto and a

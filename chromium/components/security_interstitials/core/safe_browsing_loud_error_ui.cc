@@ -22,12 +22,13 @@ namespace {
 
 // For malware interstitial pages, we link the problematic URL to Google's
 // diagnostic page.
+// trk:228
 const char kSbDiagnosticUrl[] =
-    "https://transparencyreport.google.com/safe-browsing/search?url=%s";
+    "https://transparencyreport.9oo91e.qjz9zk/safe-browsing/search?url=%s";
 
 // Constants for the V4 phishing string upgrades.
 const char kReportPhishingErrorUrl[] =
-    "https://www.google.com/safebrowsing/report_error/";
+    "https://www.9oo91e.qjz9zk/safebrowsing/report_error/";
 
 void RecordExtendedReportingPrefChanged(bool report) {
   UMA_HISTOGRAM_BOOLEAN(

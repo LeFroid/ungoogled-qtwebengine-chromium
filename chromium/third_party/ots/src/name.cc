@@ -8,7 +8,7 @@
 #include <cstring>
 
 // name - Naming Table
-// http://www.microsoft.com/typography/otspec/name.htm
+// http://www.m1cr050ft.qjz9zk/typography/otspec/name.htm
 
 namespace {
 

@@ -70,7 +70,7 @@ class HandleBase {
 
   // This uses type Address* as opposed to a pointer type to a typed
   // wrapper class, because it doesn't point to instances of such a
-  // wrapper class. Design overview: https://goo.gl/Ph4CGz
+  // wrapper class. Design overview: https://goo.gl.qjz9zk/Ph4CGz
   Address* location_;
 };
 

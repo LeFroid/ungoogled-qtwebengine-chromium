@@ -38,7 +38,6 @@
 #include "chrome/browser/browser_process.h"
 #include "chrome/browser/download/download_core_service.h"
 #include "chrome/browser/download/download_core_service_factory.h"
-#include "chrome/browser/download/download_danger_prompt.h"
 #include "chrome/browser/download/download_file_icon_extractor.h"
 #include "chrome/browser/download/download_open_prompt.h"
 #include "chrome/browser/download/download_prefs.h"
@@ -1325,9 +1324,6 @@ DownloadsAcceptDangerFunction::DownloadsAcceptDangerFunction() {}
 
 DownloadsAcceptDangerFunction::~DownloadsAcceptDangerFunction() {}
 
-DownloadsAcceptDangerFunction::OnPromptCreatedCallback*
-    DownloadsAcceptDangerFunction::on_prompt_created_ = NULL;
-
 bool DownloadsAcceptDangerFunction::RunAsync() {
   std::unique_ptr<downloads::AcceptDanger::Params> params(
       downloads::AcceptDanger::Params::Create(*args_));
@@ -1365,40 +1361,7 @@ void DownloadsAcceptDangerFunction::PromptOrWait(int download_id, int retries) {
     return;
   }
   RecordApiFunctions(DOWNLOADS_FUNCTION_ACCEPT_DANGER);
-  // DownloadDangerPrompt displays a modal dialog using native widgets that the
-  // user must either accept or cancel. It cannot be scripted.
-  DownloadDangerPrompt* prompt = DownloadDangerPrompt::Create(
-      download_item,
-      web_contents,
-      true,
-      base::Bind(&DownloadsAcceptDangerFunction::DangerPromptCallback,
-                 this, download_id));
-  // DownloadDangerPrompt deletes itself
-  if (on_prompt_created_ && !on_prompt_created_->is_null())
-    on_prompt_created_->Run(prompt);
-  // Function finishes in DangerPromptCallback().
-}
-
-void DownloadsAcceptDangerFunction::DangerPromptCallback(
-    int download_id, DownloadDangerPrompt::Action action) {
-  DCHECK_CURRENTLY_ON(BrowserThread::UI);
-  DownloadItem* download_item = GetDownload(
-      browser_context(), include_incognito_information(), download_id);
-  if (InvalidId(download_item, &error_) ||
-      Fault(download_item->GetState() != DownloadItem::IN_PROGRESS,
-            download_extension_errors::kNotInProgress, &error_))
-    return;
-  switch (action) {
-    case DownloadDangerPrompt::ACCEPT:
-      download_item->ValidateDangerousDownload();
-      break;
-    case DownloadDangerPrompt::CANCEL:
-      download_item->Remove();
-      break;
-    case DownloadDangerPrompt::DISMISS:
-      break;
-  }
-  SendResponse(error_.empty());
+  download_item->ValidateDangerousDownload();
 }
 
 DownloadsShowFunction::DownloadsShowFunction() {}

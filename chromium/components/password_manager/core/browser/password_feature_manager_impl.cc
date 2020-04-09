@@ -32,7 +32,7 @@ bool PasswordFeatureManagerImpl::IsGenerationEnabled() const {
 bool PasswordFeatureManagerImpl::ShouldCheckReuseOnLeakDetection() const {
   switch (password_manager_util::GetPasswordSyncState(sync_service_)) {
     // We currently check the reuse of the leaked password only for users who
-    // can access passwords.google.com. Therefore, if the credentials are not
+    // can access passwords.9oo91e.qjz9zk. Therefore, if the credentials are not
     // synced, no need to check for password use.
     case NOT_SYNCING:
     case SYNCING_WITH_CUSTOM_PASSPHRASE:

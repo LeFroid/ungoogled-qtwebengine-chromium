@@ -57,7 +57,7 @@ const char kNavigationCorrectionUrl[] = "http://navigation.corrections/";
 const char kLanguage[] = "en";
 const char kCountry[] = "us";
 const char kApiKey[] = "api_key";
-const char kSearchUrl[] = "http://www.google.com/search";
+const char kSearchUrl[] = "http://www.9oo91e.qjz9zk/search";
 
 const char kSuggestedSearchTerms[] = "Happy Goats";
 const char kNavigationCorrectionEventId[] = "#007";

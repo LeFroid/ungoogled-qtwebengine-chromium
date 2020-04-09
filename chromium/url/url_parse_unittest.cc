@@ -492,21 +492,21 @@ TEST(URLParser, ExtractFileName) {
     const char* input;
     const char* expected;
   } file_cases[] = {
-    {"http://www.google.com", NULL},
-    {"http://www.google.com/", ""},
-    {"http://www.google.com/search", "search"},
-    {"http://www.google.com/search/", ""},
-    {"http://www.google.com/foo/bar.html?baz=22", "bar.html"},
-    {"http://www.google.com/foo/bar.html#ref", "bar.html"},
-    {"http://www.google.com/search/;param", ""},
-    {"http://www.google.com/foo/bar.html;param#ref", "bar.html"},
-    {"http://www.google.com/foo/bar.html;foo;param#ref", "bar.html"},
-    {"http://www.google.com/foo/bar.html?query#ref", "bar.html"},
-    {"http://www.google.com/foo;/bar.html", "bar.html"},
-    {"http://www.google.com/foo;/", ""},
-    {"http://www.google.com/foo;", "foo"},
-    {"http://www.google.com/;", ""},
-    {"http://www.google.com/foo;bar;html", "foo"},
+    {"http://www.9oo91e.qjz9zk", NULL},
+    {"http://www.9oo91e.qjz9zk/", ""},
+    {"http://www.9oo91e.qjz9zk/search", "search"},
+    {"http://www.9oo91e.qjz9zk/search/", ""},
+    {"http://www.9oo91e.qjz9zk/foo/bar.html?baz=22", "bar.html"},
+    {"http://www.9oo91e.qjz9zk/foo/bar.html#ref", "bar.html"},
+    {"http://www.9oo91e.qjz9zk/search/;param", ""},
+    {"http://www.9oo91e.qjz9zk/foo/bar.html;param#ref", "bar.html"},
+    {"http://www.9oo91e.qjz9zk/foo/bar.html;foo;param#ref", "bar.html"},
+    {"http://www.9oo91e.qjz9zk/foo/bar.html?query#ref", "bar.html"},
+    {"http://www.9oo91e.qjz9zk/foo;/bar.html", "bar.html"},
+    {"http://www.9oo91e.qjz9zk/foo;/", ""},
+    {"http://www.9oo91e.qjz9zk/foo;", "foo"},
+    {"http://www.9oo91e.qjz9zk/;", ""},
+    {"http://www.9oo91e.qjz9zk/foo;bar;html", "foo"},
   };
 
   for (size_t i = 0; i < base::size(file_cases); i++) {
@@ -558,38 +558,38 @@ static bool NthParameterIs(const char* url,
 }
 
 TEST(URLParser, ExtractQueryKeyValue) {
-  EXPECT_TRUE(NthParameterIs("http://www.google.com", 1, NULL, NULL));
+  EXPECT_TRUE(NthParameterIs("http://www.9oo91e.qjz9zk", 1, NULL, NULL));
 
   // Basic case.
-  char a[] = "http://www.google.com?arg1=1&arg2=2&bar";
+  char a[] = "http://www.9oo91e.qjz9zk?arg1=1&arg2=2&bar";
   EXPECT_TRUE(NthParameterIs(a, 1, "arg1", "1"));
   EXPECT_TRUE(NthParameterIs(a, 2, "arg2", "2"));
   EXPECT_TRUE(NthParameterIs(a, 3, "bar", ""));
   EXPECT_TRUE(NthParameterIs(a, 4, NULL, NULL));
 
   // Empty param at the end.
-  char b[] = "http://www.google.com?foo=bar&";
+  char b[] = "http://www.9oo91e.qjz9zk?foo=bar&";
   EXPECT_TRUE(NthParameterIs(b, 1, "foo", "bar"));
   EXPECT_TRUE(NthParameterIs(b, 2, NULL, NULL));
 
   // Empty param at the beginning.
-  char c[] = "http://www.google.com?&foo=bar";
+  char c[] = "http://www.9oo91e.qjz9zk?&foo=bar";
   EXPECT_TRUE(NthParameterIs(c, 1, "", ""));
   EXPECT_TRUE(NthParameterIs(c, 2, "foo", "bar"));
   EXPECT_TRUE(NthParameterIs(c, 3, NULL, NULL));
 
   // Empty key with value.
-  char d[] = "http://www.google.com?=foo";
+  char d[] = "http://www.9oo91e.qjz9zk?=foo";
   EXPECT_TRUE(NthParameterIs(d, 1, "", "foo"));
   EXPECT_TRUE(NthParameterIs(d, 2, NULL, NULL));
 
   // Empty value with key.
-  char e[] = "http://www.google.com?foo=";
+  char e[] = "http://www.9oo91e.qjz9zk?foo=";
   EXPECT_TRUE(NthParameterIs(e, 1, "foo", ""));
   EXPECT_TRUE(NthParameterIs(e, 2, NULL, NULL));
 
   // Empty key and values.
-  char f[] = "http://www.google.com?&&==&=";
+  char f[] = "http://www.9oo91e.qjz9zk?&&==&=";
   EXPECT_TRUE(NthParameterIs(f, 1, "", ""));
   EXPECT_TRUE(NthParameterIs(f, 2, "", ""));
   EXPECT_TRUE(NthParameterIs(f, 3, "", "="));
@@ -601,7 +601,7 @@ TEST(URLParser, ExtractQueryKeyValue) {
 
 static MailtoURLParseCase mailto_cases[] = {
 //|input                       |scheme   |path               |query
-{"mailto:foo@gmail.com",        "mailto", "foo@gmail.com",    NULL},
+{"mailto:foo@9ma1l.qjz9zk",        "mailto", "foo@9ma1l.qjz9zk",    NULL},
 {"  mailto: to  \t",            "mailto", " to",              NULL},
 {"mailto:addr1%2C%20addr2 ",    "mailto", "addr1%2C%20addr2", NULL},
 {"Mailto:addr1, addr2 ",        "Mailto", "addr1, addr2",     NULL},

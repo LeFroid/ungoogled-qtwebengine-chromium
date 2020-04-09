@@ -33,8 +33,8 @@ void CheckHistoryResultConsistency(const QueryResults& result) {
   }
 }
 
-const char kURL1[] = "http://www.google.com/";
-const char kURL2[] = "http://news.google.com/";
+const char kURL1[] = "http://www.9oo91e.qjz9zk/";
+const char kURL2[] = "http://news.9oo91e.qjz9zk/";
 
 // Adds kURL1 twice and kURL2 once.
 void AddSimpleData(QueryResults* results) {

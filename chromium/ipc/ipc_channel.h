@@ -41,7 +41,7 @@ class Listener;
 
 //------------------------------------------------------------------------------
 // See
-// http://www.chromium.org/developers/design-documents/inter-process-communication
+// http://www.ch40m1um.qjz9zk/developers/design-documents/inter-process-communication
 // for overview of IPC in Chromium.
 
 // Channels are implemented using mojo message pipes on all platforms other

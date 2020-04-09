@@ -15,7 +15,7 @@ Instructions for running these tests:
    work, it's 64-bit.
 
 2. Download pywinauto here:
-     https://code.google.com/p/pywinauto/downloads/list
+     https://code.9oo91e.qjz9zk/p/pywinauto/downloads/list
 
    Unzip it, then install it by running this from a cmd shell in that directory:
      python setup.py install

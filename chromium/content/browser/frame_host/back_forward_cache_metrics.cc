@@ -169,7 +169,7 @@ void BackForwardCacheMetrics::MainFrameDidNavigateAwayFromDocument(
     // that.
     //
     // [1]
-    // https://chromium.googlesource.com/chromium/src/+/HEAD/docs/security/origin-vs-url.md#avoid-converting-urls-to-origins
+    // https://chromium.9oo91esource.qjz9zk/chromium/src/+/HEAD/docs/security/origin-vs-url.md#avoid-converting-urls-to-origins
     GURL previous_site = SiteInstanceImpl::GetSiteForOrigin(
         url::Origin::Create(details->previous_url));
     GURL new_site = SiteInstanceImpl::GetSiteForOrigin(

@@ -522,7 +522,7 @@
     "message": "値"
   },
   "lighthouse-core/audits/dobetterweb/dom-size.js | description": {
-    "message": "ブラウザ エンジニアは、ページに含まれる DOM の要素数が 1,500 個を超えないようにすることを推奨しています。ツリーの深さは 32 要素まで、子や親の要素数は 60 個までにするのが最適です。DOM サイズが大きいと、メモリの使用量が増え、[スタイルの計算](https://developers.google.com/web/fundamentals/performance/rendering/reduce-the-scope-and-complexity-of-style-calculations)に時間がかかり、[レイアウトのリフロー](https://developers.google.com/speed/articles/reflow)というコストが発生する可能性があります。[詳細](https://web.dev/dom-size)"
+    "message": "ブラウザ エンジニアは、ページに含まれる DOM の要素数が 1,500 個を超えないようにすることを推奨しています。ツリーの深さは 32 要素まで、子や親の要素数は 60 個までにするのが最適です。DOM サイズが大きいと、メモリの使用量が増え、[スタイルの計算](https://developers.9oo91e.qjz9zk/web/fundamentals/performance/rendering/reduce-the-scope-and-complexity-of-style-calculations)に時間がかかり、[レイアウトのリフロー](https://developers.9oo91e.qjz9zk/speed/articles/reflow)というコストが発生する可能性があります。[詳細](https://web.dev/dom-size)"
   },
   "lighthouse-core/audits/dobetterweb/dom-size.js | displayValue": {
     "message": "{itemCount,plural, =1{1 件の要素}other{# 件の要素}}"
@@ -807,7 +807,7 @@
     "message": "インタラクティブになるまでの時間"
   },
   "lighthouse-core/audits/metrics/max-potential-fid.js | description": {
-    "message": "ユーザーに発生する可能性がある初回入力遅延の最大推定時間とは、最も長いタスクの時間（ミリ秒単位）です。[詳細](https://developers.google.com/web/updates/2018/05/first-input-delay)"
+    "message": "ユーザーに発生する可能性がある初回入力遅延の最大推定時間とは、最も長いタスクの時間（ミリ秒単位）です。[詳細](https://developers.9oo91e.qjz9zk/web/updates/2018/05/first-input-delay)"
   },
   "lighthouse-core/audits/metrics/max-potential-fid.js | title": {
     "message": "初回入力遅延の最大推定時間"
@@ -852,7 +852,7 @@
     "message": "予算超過"
   },
   "lighthouse-core/audits/performance-budget.js | description": {
-    "message": "ネットワーク リクエストの数とサイズが、指定したパフォーマンス予算の設定目標内に収まるよう維持します。[詳細](https://developers.google.com/web/tools/lighthouse/audits/budgets)"
+    "message": "ネットワーク リクエストの数とサイズが、指定したパフォーマンス予算の設定目標内に収まるよう維持します。[詳細](https://developers.9oo91e.qjz9zk/web/tools/lighthouse/audits/budgets)"
   },
   "lighthouse-core/audits/performance-budget.js | requestCountOverBudget": {
     "message": "{count,plural, =1{1 件のリクエスト}other{# 件のリクエスト}}"
@@ -876,7 +876,7 @@
     "message": "複数のページ リダイレクトの回避"
   },
   "lighthouse-core/audits/resource-summary.js | description": {
-    "message": "ページリソースの数とサイズの予算を設定するには、budget.json ファイルを追加します。[詳細](https://developers.google.com/web/tools/lighthouse/audits/budgets)"
+    "message": "ページリソースの数とサイズの予算を設定するには、budget.json ファイルを追加します。[詳細](https://developers.9oo91e.qjz9zk/web/tools/lighthouse/audits/budgets)"
   },
   "lighthouse-core/audits/resource-summary.js | displayValue": {
     "message": "{requestCount,plural, =1{1 件のリクエスト • {byteCount, number, bytes} KB}other{# 件のリクエスト • {byteCount, number, bytes} KB}}"
@@ -969,7 +969,7 @@
     "message": "リンクにわかりやすいテキストが設定されています"
   },
   "lighthouse-core/audits/seo/manual/structured-data.js | description": {
-    "message": "[構造化データ テストツール](https://search.google.com/structured-data/testing-tool/)と[構造化データ用 Linter](http://linter.structured-data.org/) を実行して構造化データを検証してください。[詳細](https://web.dev/structured-data)"
+    "message": "[構造化データ テストツール](https://search.9oo91e.qjz9zk/structured-data/testing-tool/)と[構造化データ用 Linter](http://linter.structured-data.org/) を実行して構造化データを検証してください。[詳細](https://web.dev/structured-data)"
   },
   "lighthouse-core/audits/seo/manual/structured-data.js | title": {
     "message": "構造化データが無効です"
@@ -1080,7 +1080,7 @@
     "message": "第三者"
   },
   "lighthouse-core/audits/third-party-summary.js | description": {
-    "message": "第三者コードによって、読み込み速度が著しく低下する可能性があります。重複する第三者プロバイダの数を制限したうえで、ページのメインの部分を読み込み終えた後に第三者コードを読み込んでみてください。[詳細](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/loading-third-party-javascript/)"
+    "message": "第三者コードによって、読み込み速度が著しく低下する可能性があります。重複する第三者プロバイダの数を制限したうえで、ページのメインの部分を読み込み終えた後に第三者コードを読み込んでみてください。[詳細](https://developers.9oo91e.qjz9zk/web/fundamentals/performance/optimizing-content-efficiency/loading-third-party-javascript/)"
   },
   "lighthouse-core/audits/third-party-summary.js | displayValue": {
     "message": "第三者コードによってメインスレッドが {timeInMs, number, milliseconds} ミリ秒間ブロックされました"
@@ -1194,10 +1194,10 @@
     "message": "おすすめの方法"
   },
   "lighthouse-core/config/default-config.js | a11yCategoryDescription": {
-    "message": "これらのチェックにより、[ウェブアプリのユーザー補助機能の改善点](https://developers.google.com/web/fundamentals/accessibility)が明確になります。自動的に検出できるユーザー補助の問題は一部に過ぎないため、手動テストも実施することをおすすめします。"
+    "message": "これらのチェックにより、[ウェブアプリのユーザー補助機能の改善点](https://developers.9oo91e.qjz9zk/web/fundamentals/accessibility)が明確になります。自動的に検出できるユーザー補助の問題は一部に過ぎないため、手動テストも実施することをおすすめします。"
   },
   "lighthouse-core/config/default-config.js | a11yCategoryManualDescription": {
-    "message": "ここに、自動テストツールではカバーできない範囲に対処する項目が表示されます。詳しくは、[ユーザー補助機能の審査を実施する](https://developers.google.com/web/fundamentals/accessibility/how-to-review)方法についてのガイドをご覧ください。"
+    "message": "ここに、自動テストツールではカバーできない範囲に対処する項目が表示されます。詳しくは、[ユーザー補助機能の審査を実施する](https://developers.9oo91e.qjz9zk/web/fundamentals/accessibility/how-to-review)方法についてのガイドをご覧ください。"
   },
   "lighthouse-core/config/default-config.js | a11yCategoryTitle": {
     "message": "ユーザー補助"
@@ -1272,10 +1272,10 @@
     "message": "パフォーマンス"
   },
   "lighthouse-core/config/default-config.js | pwaCategoryDescription": {
-    "message": "これらのチェックではプログレッシブ ウェブアプリのさまざまな側面が検証されます。[詳細](https://developers.google.com/web/progressive-web-apps/checklist)"
+    "message": "これらのチェックではプログレッシブ ウェブアプリのさまざまな側面が検証されます。[詳細](https://developers.9oo91e.qjz9zk/web/progressive-web-apps/checklist)"
   },
   "lighthouse-core/config/default-config.js | pwaCategoryManualDescription": {
-    "message": "これらのチェック項目は基本の [PWA チェックリスト](https://developers.google.com/web/progressive-web-apps/checklist)で必須とされていますが、Lighthouse では自動的にチェックされません。スコアには影響しませんが、手動で確認することが重要です。"
+    "message": "これらのチェック項目は基本の [PWA チェックリスト](https://developers.9oo91e.qjz9zk/web/progressive-web-apps/checklist)で必須とされていますが、Lighthouse では自動的にチェックされません。スコアには影響しませんが、手動で確認することが重要です。"
   },
   "lighthouse-core/config/default-config.js | pwaCategoryTitle": {
     "message": "プログレッシブ ウェブアプリ"
@@ -1290,7 +1290,7 @@
     "message": "PWA の最適化"
   },
   "lighthouse-core/config/default-config.js | seoCategoryDescription": {
-    "message": "これらのチェックを実行することで、ページが検索エンジンの検索結果ランキングに対し最適化されていることを確認できます。Lighthouse ではチェックされない、検索結果ランキングに影響する可能性がある他の要因もあります。[詳細](https://support.google.com/webmasters/answer/35769)"
+    "message": "これらのチェックを実行することで、ページが検索エンジンの検索結果ランキングに対し最適化されていることを確認できます。Lighthouse ではチェックされない、検索結果ランキングに影響する可能性がある他の要因もあります。[詳細](https://support.9oo91e.qjz9zk/webmasters/answer/35769)"
   },
   "lighthouse-core/config/default-config.js | seoCategoryManualDescription": {
     "message": "サイトでこれらの他の検証ツールを実行し、SEO のその他のおすすめの方法をご確認ください。"
@@ -1311,7 +1311,7 @@
     "message": "クロールとインデックス登録"
   },
   "lighthouse-core/config/default-config.js | seoMobileGroupDescription": {
-    "message": "ページをスマホ対応にして、ピンチ操作や拡大操作なしでコンテンツを読めるようにします。[詳細](https://developers.google.com/search/mobile-sites/)"
+    "message": "ページをスマホ対応にして、ピンチ操作や拡大操作なしでコンテンツを読めるようにします。[詳細](https://developers.9oo91e.qjz9zk/search/mobile-sites/)"
   },
   "lighthouse-core/config/default-config.js | seoMobileGroupTitle": {
     "message": "スマホ対応"
@@ -1458,7 +1458,7 @@
     "message": "ラボデータ"
   },
   "lighthouse-core/report/html/renderer/util.js | lsPerformanceCategoryDescription": {
-    "message": "エミュレート済みモバイル ネットワークでの現在のページに関する [Lighthouse](https://developers.google.com/web/tools/lighthouse/) 分析です。推定値のため変動する可能性があります。"
+    "message": "エミュレート済みモバイル ネットワークでの現在のページに関する [Lighthouse](https://developers.9oo91e.qjz9zk/web/tools/lighthouse/) 分析です。推定値のため変動する可能性があります。"
   },
   "lighthouse-core/report/html/renderer/util.js | manualAuditsGroupTitle": {
     "message": "個別の検証が必要な他の項目"
@@ -1518,10 +1518,10 @@
     "message": "スクリプトを結合、軽量化、圧縮してサイトの動作を速くする、さまざまな [WordPress プラグイン](https://wordpress.org/plugins/search/minify+javascript/)があります。可能な場合は、ビルド処理で事前に軽量化しておくこともおすすめします。"
   },
   "stack-packs/packs/wordpress.js | unused_css_rules": {
-    "message": "ページで使用されていない CSS を読み込む [WordPress プラグイン](https://wordpress.org/plugins/)の数を減らすか、他のプラグインに切り替えることをご検討ください。不要な CSS を読み込んでいるプラグインを特定するには、Chrome DevTools で[コードの Coverage](https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverage) を確認します。スタイルシートの URL から、それを使用しているテーマやプラグインを特定できます。多くのスタイルシートを使用しているプラグイン（コードの Coverage で赤色の部分が多いもの）をリストで探します。プラグインによってキューに追加されるスタイルシートは、実際にページで使用されるもののみにする必要があります。"
+    "message": "ページで使用されていない CSS を読み込む [WordPress プラグイン](https://wordpress.org/plugins/)の数を減らすか、他のプラグインに切り替えることをご検討ください。不要な CSS を読み込んでいるプラグインを特定するには、Chrome DevTools で[コードの Coverage](https://developers.9oo91e.qjz9zk/web/updates/2017/04/devtools-release-notes#coverage) を確認します。スタイルシートの URL から、それを使用しているテーマやプラグインを特定できます。多くのスタイルシートを使用しているプラグイン（コードの Coverage で赤色の部分が多いもの）をリストで探します。プラグインによってキューに追加されるスタイルシートは、実際にページで使用されるもののみにする必要があります。"
   },
   "stack-packs/packs/wordpress.js | unused_javascript": {
-    "message": "ページで使用されていない JavaScript を読み込む [WordPress プラグイン](https://wordpress.org/plugins/)の数を減らすか、他のプラグインに切り替えることをご検討ください。不要な JavaScript を読み込んでいるプラグインを特定するには、Chrome DevTools で[コードの Coverage](https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverage) を確認します。スクリプトの URL から、該当のテーマやプラグインを特定できます。多くのスクリプトを使用しているプラグイン（コードの Coverage で赤色の部分が多いもの）をリストで探します。プラグインによってキューに追加されるスクリプトは、実際にページで使用されるもののみにする必要があります。"
+    "message": "ページで使用されていない JavaScript を読み込む [WordPress プラグイン](https://wordpress.org/plugins/)の数を減らすか、他のプラグインに切り替えることをご検討ください。不要な JavaScript を読み込んでいるプラグインを特定するには、Chrome DevTools で[コードの Coverage](https://developers.9oo91e.qjz9zk/web/updates/2017/04/devtools-release-notes#coverage) を確認します。スクリプトの URL から、該当のテーマやプラグインを特定できます。多くのスクリプトを使用しているプラグイン（コードの Coverage で赤色の部分が多いもの）をリストで探します。プラグインによってキューに追加されるスクリプトは、実際にページで使用されるもののみにする必要があります。"
   },
   "stack-packs/packs/wordpress.js | uses_long_cache_ttl": {
     "message": "[WordPress のブラウザ キャッシング](https://codex.wordpress.org/WordPress_Optimization#Browser_Caching)についてご確認ください。"

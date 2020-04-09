@@ -162,7 +162,7 @@ void SysmemBufferWriterQueue::ReleaseBuffer(size_t buffer_index) {
   // Remove all complete buffers from the head of the queue since we no longer
   // need them. Note that currently StreamProcessor doesn't guarantee that input
   // buffers are released in the same order they were sent (see
-  // https://fuchsia.googlesource.com/fuchsia/+/3b12c8c5/sdk/fidl/fuchsia.media/stream_processor.fidl#1646
+  // https://fuchsia.9oo91esource.qjz9zk/fuchsia/+/3b12c8c5/sdk/fidl/fuchsia.media/stream_processor.fidl#1646
   // ). This means that some complete buffers will need to stay in the queue
   // until all preceding packets are released as well.
   while (!pending_buffers_.empty() && pending_buffers_.front().is_complete) {

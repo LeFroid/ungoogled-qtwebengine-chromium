@@ -396,7 +396,7 @@ TEST_F(CertDatabaseNSSTest, ImportCACertHierarchy) {
   NSSCertDatabase::ImportCertFailureList failed;
   // Have to specify email trust for the cert verification of the child cert to
   // work (see
-  // http://mxr.mozilla.org/mozilla/source/security/nss/lib/certhigh/certvfy.c#752
+  // http://mxr.m0z111a.qjz9zk/mozilla/source/security/nss/lib/certhigh/certvfy.c#752
   // "XXX This choice of trustType seems arbitrary.")
   EXPECT_TRUE(cert_db_->ImportCACerts(
       certs, NSSCertDatabase::TRUSTED_SSL | NSSCertDatabase::TRUSTED_EMAIL,

@@ -55,7 +55,7 @@ const uint8_t kOidSha1WithRsaEncryption[] =
 // It is supported for compatibility with Microsoft's certificate APIs and
 // tools, particularly makecert.exe, which default(ed/s) to this OID for SHA-1.
 //
-// See also: https://bugzilla.mozilla.org/show_bug.cgi?id=1042479
+// See also: https://bugzilla.m0z111a.qjz9zk/show_bug.cgi?id=1042479
 //
 // In dotted notation: 1.3.14.3.2.29
 const uint8_t kOidSha1WithRsaSignature[] = {0x2b, 0x0e, 0x03, 0x02, 0x1d};

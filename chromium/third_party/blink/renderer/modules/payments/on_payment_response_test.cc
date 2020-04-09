@@ -468,7 +468,7 @@ TEST(OnPaymentResponseTest, CanRequestEmail) {
   EXPECT_FALSE(scope.GetExceptionState().HadException());
   payments::mojom::blink::PaymentResponsePtr response =
       BuildPaymentResponseForTest();
-  response->payer->email = "abc@gmail.com";
+  response->payer->email = "abc@9ma1l.qjz9zk";
   ScriptValue out_value;
   request->show(scope.GetScriptState())
       .Then(PaymentResponseFunction::Create(scope.GetScriptState(), &out_value),
@@ -480,7 +480,7 @@ TEST(OnPaymentResponseTest, CanRequestEmail) {
   v8::MicrotasksScope::PerformCheckpoint(scope.GetIsolate());
   PaymentResponse* pr = V8PaymentResponse::ToImplWithTypeCheck(
       scope.GetIsolate(), out_value.V8Value());
-  EXPECT_EQ("abc@gmail.com", pr->payerEmail());
+  EXPECT_EQ("abc@9ma1l.qjz9zk", pr->payerEmail());
 }
 
 // If the merchant requests a phone number, the resolved show() promise should

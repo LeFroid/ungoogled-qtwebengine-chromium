@@ -29,7 +29,7 @@
 
 /*
  * sbix -- Standard Bitmap Graphics
- * https://docs.microsoft.com/en-us/typography/opentype/spec/sbix
+ * https://docs.m1cr050ft.qjz9zk/en-us/typography/opentype/spec/sbix
  * https://developer.apple.com/fonts/TrueType-Reference-Manual/RM06/Chap6sbix.html
  */
 #define HB_OT_TAG_sbix HB_TAG('s','b','i','x')

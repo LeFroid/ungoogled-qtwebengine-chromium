@@ -28,10 +28,6 @@ namespace variations {
 
 namespace {
 
-// The name string for the header for variations information.
-// Note that prior to M33 this header was named X-Chrome-Variations.
-const char kClientDataHeader[] = "X-Client-Data";
-
 // The result of checking if a URL should have variations headers appended.
 // This enum is used to record UMA histogram values, and should not be
 // reordered.
@@ -88,26 +84,7 @@ class VariationsHeaderHelper {
   }
 
   bool AppendHeaderIfNeeded(const GURL& url, InIncognito incognito) {
-    // Note the criteria for attaching client experiment headers:
-    // 1. We only transmit to Google owned domains which can evaluate
-    // experiments.
-    //    1a. These include hosts which have a standard postfix such as:
-    //         *.doubleclick.net or *.googlesyndication.com or
-    //         exactly www.googleadservices.com or
-    //         international TLD domains *.google.<TLD> or *.youtube.<TLD>.
-    // 2. Only transmit for non-Incognito profiles.
-    // 3. For the X-Client-Data header, only include non-empty variation IDs.
-    if ((incognito == InIncognito::kYes) || !ShouldAppendVariationsHeader(url))
-      return false;
-
-    if (variations_header_.empty())
-      return false;
-
-    // Set the variations header to cors_exempt_headers rather than headers
-    // to be exempted from CORS checks.
-    resource_request_->cors_exempt_headers.SetHeaderIfMissing(
-        kClientDataHeader, variations_header_);
-    return true;
+    return false;
   }
 
  private:
@@ -150,8 +127,6 @@ void RemoveVariationsHeaderIfNeeded(
     const net::RedirectInfo& redirect_info,
     const network::mojom::URLResponseHead& response_head,
     std::vector<std::string>* to_be_removed_headers) {
-  if (!ShouldAppendVariationsHeader(redirect_info.new_url))
-    to_be_removed_headers->push_back(kClientDataHeader);
 }
 
 std::unique_ptr<network::SimpleURLLoader>
@@ -181,11 +156,11 @@ CreateSimpleURLLoaderWithVariationsHeaderUnknownSignedIn(
 }
 
 bool IsVariationsHeader(const std::string& header_name) {
-  return header_name == kClientDataHeader;
+  return false;
 }
 
 bool HasVariationsHeader(const network::ResourceRequest& request) {
-  return request.cors_exempt_headers.HasHeader(kClientDataHeader);
+  return false;
 }
 
 bool ShouldAppendVariationsHeaderForTesting(const GURL& url) {
@@ -194,7 +169,6 @@ bool ShouldAppendVariationsHeaderForTesting(const GURL& url) {
 
 void UpdateCorsExemptHeaderForVariations(
     network::mojom::NetworkContextParams* params) {
-  params->cors_exempt_header_list.push_back(kClientDataHeader);
 }
 
 }  // namespace variations

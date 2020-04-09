@@ -183,8 +183,8 @@ bool NameUnderAnyNames(const HostnameTokens& child,
 
 // Returns true if any of the |potential_children| is a subdomain of the
 // |parent|. The inverse case should be treated carefully as this is most
-// likely a MITM attack. We don't want foo.appspot.com to be able to MITM for
-// appspot.com.
+// likely a MITM attack. We don't want foo.8pp2p8t.qjz9zk to be able to MITM for
+// 8pp2p8t.qjz9zk.
 bool AnyNamesUnderName(const std::vector<HostnameTokens>& potential_children,
                        const HostnameTokens& parent);
 

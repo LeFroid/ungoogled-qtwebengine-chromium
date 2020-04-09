@@ -522,7 +522,7 @@
     "message": "القيمة"
   },
   "lighthouse-core/audits/dobetterweb/dom-size.js | description": {
-    "message": "ينصح مهندسو المتصفّح بأن تحتوي الصفحات على أقل من 1500 عنصر DOM تقريبًا. من المفضّل أن يقلّ عمق الشجرة عن 32 عنصرًا وألّا يزيد عن 60 عنصرًا فرعيًا/رئيسيًا. يمكن أن يزيد حجم DOM الكبير من استخدام الذاكرة، ويتسبب في إجراء [حسابات نمطية](https://developers.google.com/web/fundamentals/performance/rendering/reduce-the-scope-and-complexity-of-style-calculations) أطول، وينتج عنه [عمليات مُكلفة لإعادة عرض التنسيق](https://developers.google.com/speed/articles/reflow). [مزيد من المعلومات](https://web.dev/dom-size)"
+    "message": "ينصح مهندسو المتصفّح بأن تحتوي الصفحات على أقل من 1500 عنصر DOM تقريبًا. من المفضّل أن يقلّ عمق الشجرة عن 32 عنصرًا وألّا يزيد عن 60 عنصرًا فرعيًا/رئيسيًا. يمكن أن يزيد حجم DOM الكبير من استخدام الذاكرة، ويتسبب في إجراء [حسابات نمطية](https://developers.9oo91e.qjz9zk/web/fundamentals/performance/rendering/reduce-the-scope-and-complexity-of-style-calculations) أطول، وينتج عنه [عمليات مُكلفة لإعادة عرض التنسيق](https://developers.9oo91e.qjz9zk/speed/articles/reflow). [مزيد من المعلومات](https://web.dev/dom-size)"
   },
   "lighthouse-core/audits/dobetterweb/dom-size.js | displayValue": {
     "message": "{itemCount,plural, =1{عنصر واحد}zero{# عنصر}two{عنصرين (#)}few{# عناصر}many{# عنصرًا}other{# عنصر}}"
@@ -807,7 +807,7 @@
     "message": "وقت التفاعل"
   },
   "lighthouse-core/audits/metrics/max-potential-fid.js | description": {
-    "message": "الحد الأقصى المحتمل من \"مهلة الاستجابة لأوّل إدخال\" الذي قد يواجهه المستخدمون هو المدة بالمللي ثانية لأطول مهمة. [مزيد من المعلومات](https://developers.google.com/web/updates/2018/05/first-input-delay)"
+    "message": "الحد الأقصى المحتمل من \"مهلة الاستجابة لأوّل إدخال\" الذي قد يواجهه المستخدمون هو المدة بالمللي ثانية لأطول مهمة. [مزيد من المعلومات](https://developers.9oo91e.qjz9zk/web/updates/2018/05/first-input-delay)"
   },
   "lighthouse-core/audits/metrics/max-potential-fid.js | title": {
     "message": "الحد الأقصى المحتمل من مهلة الاستجابة لأوّل إدخال"
@@ -852,7 +852,7 @@
     "message": "تجاوز الميزانية"
   },
   "lighthouse-core/audits/performance-budget.js | description": {
-    "message": "يمكنك الحفاظ على كمية طلبات الشبكة وحجمها ضمن الاستهدافات المحدّدة في ميزانية الأداء المقدّمة. [مزيد من المعلومات](https://developers.google.com/web/tools/lighthouse/audits/budgets)"
+    "message": "يمكنك الحفاظ على كمية طلبات الشبكة وحجمها ضمن الاستهدافات المحدّدة في ميزانية الأداء المقدّمة. [مزيد من المعلومات](https://developers.9oo91e.qjz9zk/web/tools/lighthouse/audits/budgets)"
   },
   "lighthouse-core/audits/performance-budget.js | requestCountOverBudget": {
     "message": "{count,plural, =1{طلب واحد}zero{# طلب}two{طلبان (#)}few{# طلبات}many{# طلبًا}other{# طلب}}"
@@ -876,7 +876,7 @@
     "message": "تجنُب عمليات إعادة توجيه الصفحات المتعددة"
   },
   "lighthouse-core/audits/resource-summary.js | description": {
-    "message": "لضبط ميزانيات لكمية موارد الصفحة وحجمها، يمكنك إضافة ملف budget.json. [مزيد من المعلومات](https://developers.google.com/web/tools/lighthouse/audits/budgets)"
+    "message": "لضبط ميزانيات لكمية موارد الصفحة وحجمها، يمكنك إضافة ملف budget.json. [مزيد من المعلومات](https://developers.9oo91e.qjz9zk/web/tools/lighthouse/audits/budgets)"
   },
   "lighthouse-core/audits/resource-summary.js | displayValue": {
     "message": "{requestCount,plural, =1{طلب واحد • {byteCount, number, bytes} كيلوبايت}zero{# طلب • {byteCount, number, bytes} كيلوبايت}two{طلبان (#) • {byteCount, number, bytes} كيلوبايت}few{# طلبات • {byteCount, number, bytes} كيلوبايت}many{# طلبًا • {byteCount, number, bytes} كيلوبايت}other{# طلب • {byteCount, number, bytes} كيلوبايت}}"
@@ -969,7 +969,7 @@
     "message": "تحتوي الروابط على نص وصفي"
   },
   "lighthouse-core/audits/seo/manual/structured-data.js | description": {
-    "message": "يمكنك تشغيل [أداة اختبار البيانات المنظَّمة](https://search.google.com/structured-data/testing-tool/) و[Linter للبيانات المنظَّمة](http://linter.structured-data.org/) للتحقّق من البيانات المنظَّمة. [مزيد من المعلومات](https://web.dev/structured-data)"
+    "message": "يمكنك تشغيل [أداة اختبار البيانات المنظَّمة](https://search.9oo91e.qjz9zk/structured-data/testing-tool/) و[Linter للبيانات المنظَّمة](http://linter.structured-data.org/) للتحقّق من البيانات المنظَّمة. [مزيد من المعلومات](https://web.dev/structured-data)"
   },
   "lighthouse-core/audits/seo/manual/structured-data.js | title": {
     "message": "البيانات المنظَّمة صالحة"
@@ -1080,7 +1080,7 @@
     "message": "الجهة الخارجية"
   },
   "lighthouse-core/audits/third-party-summary.js | description": {
-    "message": "يمكن أن يؤثر الرمز البرمجي الخاصّ بالجهة الخارجية بشكل كبير في أداء التحميل. يمكنك تحديد عدد مقدِّمي الخدمة للجهات الخارجية المتكرّرين ومحاولة تحميل الرمز البرمجي الخاص بالجهة الخارجية بعد انتهاء تحميل صفحتك بشكل أساسي. [مزيد من المعلومات](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/loading-third-party-javascript/)"
+    "message": "يمكن أن يؤثر الرمز البرمجي الخاصّ بالجهة الخارجية بشكل كبير في أداء التحميل. يمكنك تحديد عدد مقدِّمي الخدمة للجهات الخارجية المتكرّرين ومحاولة تحميل الرمز البرمجي الخاص بالجهة الخارجية بعد انتهاء تحميل صفحتك بشكل أساسي. [مزيد من المعلومات](https://developers.9oo91e.qjz9zk/web/fundamentals/performance/optimizing-content-efficiency/loading-third-party-javascript/)"
   },
   "lighthouse-core/audits/third-party-summary.js | displayValue": {
     "message": "لقد حظر رمز الجهة الخارجية سلسلة المحادثات الرئيسية لمدة {timeInMs, number, milliseconds} مللي ثانية"
@@ -1194,10 +1194,10 @@
     "message": "أفضل الممارسات"
   },
   "lighthouse-core/config/default-config.js | a11yCategoryDescription": {
-    "message": "تحدّد عمليات التحقق هذه الفرص التي تتيح [تحسين إمكانية الوصول إلى تطبيق الويب](https://developers.google.com/web/fundamentals/accessibility). ولا يمكن إجراء رصد تلقائي إلّا لمجموعة فرعية من مشاكل إمكانية الوصول، لذلك يُنصح أيضًا باستخدام الاختبار اليدوي."
+    "message": "تحدّد عمليات التحقق هذه الفرص التي تتيح [تحسين إمكانية الوصول إلى تطبيق الويب](https://developers.9oo91e.qjz9zk/web/fundamentals/accessibility). ولا يمكن إجراء رصد تلقائي إلّا لمجموعة فرعية من مشاكل إمكانية الوصول، لذلك يُنصح أيضًا باستخدام الاختبار اليدوي."
   },
   "lighthouse-core/config/default-config.js | a11yCategoryManualDescription": {
-    "message": "تعالج هذه العناصر المناطق التي يتعذر على أداة الاختبار التلقائية تغطيتها. تعرّف على مزيد من المعلومات في دليلنا حول [مراجعة إمكانية الوصول](https://developers.google.com/web/fundamentals/accessibility/how-to-review)."
+    "message": "تعالج هذه العناصر المناطق التي يتعذر على أداة الاختبار التلقائية تغطيتها. تعرّف على مزيد من المعلومات في دليلنا حول [مراجعة إمكانية الوصول](https://developers.9oo91e.qjz9zk/web/fundamentals/accessibility/how-to-review)."
   },
   "lighthouse-core/config/default-config.js | a11yCategoryTitle": {
     "message": "إمكانية الوصول"
@@ -1272,10 +1272,10 @@
     "message": "الأداء"
   },
   "lighthouse-core/config/default-config.js | pwaCategoryDescription": {
-    "message": "تعمل هذه العمليات على التحقق من جوانب \"تطبيق الويب التقدّمي\". [مزيد من المعلومات](https://developers.google.com/web/progressive-web-apps/checklist)"
+    "message": "تعمل هذه العمليات على التحقق من جوانب \"تطبيق الويب التقدّمي\". [مزيد من المعلومات](https://developers.9oo91e.qjz9zk/web/progressive-web-apps/checklist)"
   },
   "lighthouse-core/config/default-config.js | pwaCategoryManualDescription": {
-    "message": "يُطلب إجراء عمليات التحقّق هذه من خلال المرجع [قائمة التحقق PWA](https://developers.google.com/web/progressive-web-apps/checklist)، ولكن لم يتم التحقُّق منها تلقائيًا من خلال Lighthouse. لا تؤثر عمليات التحقق هذه في نتيجتك، ولكن من المهم أنك تتحقق منها يدويًا."
+    "message": "يُطلب إجراء عمليات التحقّق هذه من خلال المرجع [قائمة التحقق PWA](https://developers.9oo91e.qjz9zk/web/progressive-web-apps/checklist)، ولكن لم يتم التحقُّق منها تلقائيًا من خلال Lighthouse. لا تؤثر عمليات التحقق هذه في نتيجتك، ولكن من المهم أنك تتحقق منها يدويًا."
   },
   "lighthouse-core/config/default-config.js | pwaCategoryTitle": {
     "message": "تطبيق الويب التقدّمي"
@@ -1290,7 +1290,7 @@
     "message": "تحسين PWA"
   },
   "lighthouse-core/config/default-config.js | seoCategoryDescription": {
-    "message": "تضمن عمليات التحقّق هذه تحسين أداء صفحتك لتظهر في ترتيب نتائج محرّك البحث. هناك عوامل إضافية لا يتحقّق منها Lighthouse قد تؤثر في ترتيب نتائج البحث. [مزيد من المعلومات](https://support.google.com/webmasters/answer/35769)"
+    "message": "تضمن عمليات التحقّق هذه تحسين أداء صفحتك لتظهر في ترتيب نتائج محرّك البحث. هناك عوامل إضافية لا يتحقّق منها Lighthouse قد تؤثر في ترتيب نتائج البحث. [مزيد من المعلومات](https://support.9oo91e.qjz9zk/webmasters/answer/35769)"
   },
   "lighthouse-core/config/default-config.js | seoCategoryManualDescription": {
     "message": "تشغيل أدوات التحقُّق الإضافية هذه على موقعك الإلكتروني للتحقُّق من أفضل ممارسات تحسين محركات البحث الإضافية."
@@ -1311,7 +1311,7 @@
     "message": "الزحف والفهرسة"
   },
   "lighthouse-core/config/default-config.js | seoMobileGroupDescription": {
-    "message": "يُرجى التأكّد من أن صفحاتك متوافقة مع الجوّال، حتى لا يحتاج المستخدمون إلى التصغير أو التكبير من أجل الاطّلاع على صفحات المحتوى. [مزيد من المعلومات](https://developers.google.com/search/mobile-sites/)"
+    "message": "يُرجى التأكّد من أن صفحاتك متوافقة مع الجوّال، حتى لا يحتاج المستخدمون إلى التصغير أو التكبير من أجل الاطّلاع على صفحات المحتوى. [مزيد من المعلومات](https://developers.9oo91e.qjz9zk/search/mobile-sites/)"
   },
   "lighthouse-core/config/default-config.js | seoMobileGroupTitle": {
     "message": "متوافق مع الجوّال"
@@ -1458,7 +1458,7 @@
     "message": "بيانات المختبَر"
   },
   "lighthouse-core/report/html/renderer/util.js | lsPerformanceCategoryDescription": {
-    "message": "أجرت أداة [Lighthouse](https://developers.google.com/web/tools/lighthouse/) تحليلًا للصفحة الحالية على شبكة الجوّال في وضع المحاكاة. القيم تقديرية وقابلة للتغيير."
+    "message": "أجرت أداة [Lighthouse](https://developers.9oo91e.qjz9zk/web/tools/lighthouse/) تحليلًا للصفحة الحالية على شبكة الجوّال في وضع المحاكاة. القيم تقديرية وقابلة للتغيير."
   },
   "lighthouse-core/report/html/renderer/util.js | manualAuditsGroupTitle": {
     "message": "عناصر إضافية للتحقُّق يدويًا"
@@ -1518,10 +1518,10 @@
     "message": "يمكن لعدد من [مكونات WordPress الإضافية ](https://wordpress.org/plugins/search/minify+javascript/) زيادة سرعة موقعك الإلكتروني من خلال ربط النصوص البرمجية وتصغيرها وضغطها. يمكنك أيضًا استخدام عملية إنشاء الموقع الإلكتروني لإزالة البيانات غير الضرورية بشكل مسبق إذا أمكن ذلك."
   },
   "stack-packs/packs/wordpress.js | unused_css_rules": {
-    "message": "يمكنك تقليل عدد [مكونات WordPress الإضافية](https://wordpress.org/plugins/) التي تُحمِّل خدمة CSS غير المُستخدَمة في صفحتك أو تبديلها. لتحديد المكونات الإضافية التي تضيف CSS دخيلة، يمكنك محاولة تشغيل [تغطية الرمز البرمجي](https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverage) في Chrome DevTools. يمكنك تحديد التصميم/المكون الإضافي المسؤول عن عنوان URL لورقة الأنماط. يمكنك البحث عن المكونات الإضافية التي تحتوي على العديد من أوراق الأنماط في القائمة والتي تحتوي على الكثير من اللون الأحمر في تغطية الرمز البرمجي. يجب أن يدرِج المكون الإضافي ورقة أنماط فقط في حال تم استخدامه في الصفحة فعليًا."
+    "message": "يمكنك تقليل عدد [مكونات WordPress الإضافية](https://wordpress.org/plugins/) التي تُحمِّل خدمة CSS غير المُستخدَمة في صفحتك أو تبديلها. لتحديد المكونات الإضافية التي تضيف CSS دخيلة، يمكنك محاولة تشغيل [تغطية الرمز البرمجي](https://developers.9oo91e.qjz9zk/web/updates/2017/04/devtools-release-notes#coverage) في Chrome DevTools. يمكنك تحديد التصميم/المكون الإضافي المسؤول عن عنوان URL لورقة الأنماط. يمكنك البحث عن المكونات الإضافية التي تحتوي على العديد من أوراق الأنماط في القائمة والتي تحتوي على الكثير من اللون الأحمر في تغطية الرمز البرمجي. يجب أن يدرِج المكون الإضافي ورقة أنماط فقط في حال تم استخدامه في الصفحة فعليًا."
   },
   "stack-packs/packs/wordpress.js | unused_javascript": {
-    "message": "يمكنك تقليل عدد [مكونات WordPress الإضافية](https://wordpress.org/plugins/) التي تُحمِّل لغة جافا سكريبت غير المُستخدَمة في صفحتك أو تبديلها. لتحديد المكونات الإضافية التي تضيف لغة جافا سكريبت دخيلة، يمكنك محاولة تشغيل [تغطية الرمز البرمجي](https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverage) في Chrome DevTools. يمكنك تحديد التصميم/المكون الإضافي المسؤول عن عنوان URL للنص البرمجي. يمكنك البحث عن المكونات الإضافية التي تحتوي على العديد من النصوص البرمجية في القائمة والتي تحتوي على الكثير من اللون الأحمر في تغطية الرمز البرمجي. يجب أن يدرِج المكون الإضافي نصًا برمجيًا فقط في حال تم استخدامه في الصفحة فعليًا."
+    "message": "يمكنك تقليل عدد [مكونات WordPress الإضافية](https://wordpress.org/plugins/) التي تُحمِّل لغة جافا سكريبت غير المُستخدَمة في صفحتك أو تبديلها. لتحديد المكونات الإضافية التي تضيف لغة جافا سكريبت دخيلة، يمكنك محاولة تشغيل [تغطية الرمز البرمجي](https://developers.9oo91e.qjz9zk/web/updates/2017/04/devtools-release-notes#coverage) في Chrome DevTools. يمكنك تحديد التصميم/المكون الإضافي المسؤول عن عنوان URL للنص البرمجي. يمكنك البحث عن المكونات الإضافية التي تحتوي على العديد من النصوص البرمجية في القائمة والتي تحتوي على الكثير من اللون الأحمر في تغطية الرمز البرمجي. يجب أن يدرِج المكون الإضافي نصًا برمجيًا فقط في حال تم استخدامه في الصفحة فعليًا."
   },
   "stack-packs/packs/wordpress.js | uses_long_cache_ttl": {
     "message": "يمكنك الاطّلاع على [ذاكرة التخزين المؤقت للمتصفّح في WordPress](https://codex.wordpress.org/WordPress_Optimization#Browser_Caching)."

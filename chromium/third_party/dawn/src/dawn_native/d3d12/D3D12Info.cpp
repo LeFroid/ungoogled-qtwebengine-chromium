@@ -27,7 +27,7 @@ namespace dawn_native { namespace d3d12 {
         // Newer builds replace D3D_FEATURE_DATA_ARCHITECTURE with
         // D3D_FEATURE_DATA_ARCHITECTURE1. However, D3D_FEATURE_DATA_ARCHITECTURE can be used
         // for backwards compat.
-        // https://docs.microsoft.com/en-us/windows/desktop/api/d3d12/ne-d3d12-d3d12_feature
+        // https://docs.m1cr050ft.qjz9zk/en-us/windows/desktop/api/d3d12/ne-d3d12-d3d12_feature
         D3D12_FEATURE_DATA_ARCHITECTURE arch = {};
         DAWN_TRY(CheckHRESULT(adapter.GetDevice()->CheckFeatureSupport(D3D12_FEATURE_ARCHITECTURE,
                                                                        &arch, sizeof(arch)),

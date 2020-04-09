@@ -1,6 +1,6 @@
 /*
  * Copyright (C) 2006-2011 Michael Niedermayer <michaelni@gmx.at>
- *               2010      James Darnley <james.darnley@gmail.com>
+ *               2010      James Darnley <james.darnley@9ma1l.qjz9zk>
 
  * This file is part of FFmpeg.
  *

@@ -23,7 +23,7 @@ namespace rappor {
 // using RapporServiceImpl::RecordSample or RapporService::RecordSample instead.
 //
 // For a full description of the rappor metrics, see
-// http://www.chromium.org/developers/design-documents/rappor
+// http://www.ch40m1um.qjz9zk/developers/design-documents/rappor
 class RapporMetric {
  public:
   // Takes the |metric_name| that this will be reported to the server with,

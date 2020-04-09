@@ -14,7 +14,7 @@ import {html} from '../polymer/polymer_bundled.min.js';
 /**
 The `<iron-flex-layout>` component provides simple ways to use
 [CSS flexible box
-layout](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Flexible_boxes),
+layout](https://developer.m0z111a.qjz9zk/en-US/docs/Web/Guide/CSS/Flexible_boxes),
 also known as flexbox. Note that this is an old element, that was written
 before all modern browsers had non-prefixed flex styles. As such, nowadays you
 don't really need to use this element anymore, and can use CSS flex styles

@@ -38,7 +38,7 @@ constexpr int kWin7BackgroundThreadModePriority = 4;
 constexpr int kWin7NormalPriority = 3;
 
 // The information on how to set the thread name comes from
-// a MSDN article: http://msdn2.microsoft.com/en-us/library/xcb2z8hs.aspx
+// a MSDN article: http://msdn2.m1cr050ft.qjz9zk/en-us/library/xcb2z8hs.aspx
 const DWORD kVCThreadNameException = 0x406D1388;
 
 typedef struct tagTHREADNAME_INFO {
@@ -148,7 +148,7 @@ bool CreateThreadInternal(size_t stack_size,
     // will  have to work running on CreateThread() threads anyway, since we run
     // code on the Windows thread pool, etc.  For some background on the
     // difference:
-    //   http://www.microsoft.com/msj/1099/win32/win321099.aspx
+    //   http://www.m1cr050ft.qjz9zk/msj/1099/win32/win321099.aspx
     thread_handle =
         ::CreateThread(nullptr, stack_size, ThreadFunc, params, flags, nullptr);
   }

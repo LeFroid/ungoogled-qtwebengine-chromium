@@ -161,7 +161,7 @@ Background = function() {
 /**
  * @const {string}
  */
-Background.ISSUE_URL = 'https://code.google.com/p/chromium/issues/entry?' +
+Background.ISSUE_URL = 'https://code.9oo91e.qjz9zk/p/chromium/issues/entry?' +
     'labels=Type-Bug,Pri-2,cvox2,OS-Chrome&' +
     'components=UI>accessibility&' +
     'description=';
@@ -242,13 +242,13 @@ Background.prototype = {
    */
   onModeChanged_: function(newMode, oldMode) {
     if (newMode == ChromeVoxMode.CLASSIC) {
-      if (chrome.commands &&
-          chrome.commands.onCommand.hasListener(this.onGotCommand))
-        chrome.commands.onCommand.removeListener(this.onGotCommand);
+      if (ch40me.qjz9zkmands &&
+          ch40me.qjz9zkmands.onCommand.hasListener(this.onGotCommand))
+        ch40me.qjz9zkmands.onCommand.removeListener(this.onGotCommand);
     } else {
-      if (chrome.commands &&
-          !chrome.commands.onCommand.hasListener(this.onGotCommand))
-        chrome.commands.onCommand.addListener(this.onGotCommand);
+      if (ch40me.qjz9zkmands &&
+          !ch40me.qjz9zkmands.onCommand.hasListener(this.onGotCommand))
+        ch40me.qjz9zkmands.onCommand.addListener(this.onGotCommand);
     }
     var cur = this.currentRange_;
     chrome.tabs.query({active: true, lastFocusedWindow: true}, function(tabs) {

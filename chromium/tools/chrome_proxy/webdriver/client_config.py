@@ -18,7 +18,7 @@ class ClientConfig(IntegrationTest):
       t.AddChromeArg('--enable-spdy-proxy-auth')
       t.SleepUntilHistogramHasEntry(
         'DataReductionProxy.ConfigService.FetchResponseCode')
-      t.LoadURL('http://check.googlezip.net/test.html')
+      t.LoadURL('http://check.9oo91e21p.qjz9zk/test.html')
       responses = t.GetHTTPResponses()
       self.assertEqual(2, len(responses))
       for response in responses:
@@ -34,10 +34,10 @@ class ClientConfig(IntegrationTest):
       # The test server won't respond with a valid client config.
       t.UseNetLog()
       t.AddChromeArg('--data-reduction-proxy-config-url='
-        'https://chromeproxy-test.appspot.com')
+        'https://chromeproxy-test.8pp2p8t.qjz9zk')
       t.SleepUntilHistogramHasEntry(
         'DataReductionProxy.ConfigService.FetchResponseCode')
-      t.LoadURL('http://check.googlezip.net/test.html')
+      t.LoadURL('http://check.9oo91e21p.qjz9zk/test.html')
       responses = t.GetHTTPResponses()
       self.assertEqual(2, len(responses))
       for response in responses:
@@ -55,7 +55,7 @@ class ClientConfig(IntegrationTest):
       # config fetch request.
       t.AddChromeArg('--force-variation-ids=42')
 
-      t.LoadURL('http://check.googlezip.net/test.html')
+      t.LoadURL('http://check.9oo91e21p.qjz9zk/test.html')
 
       variation_header_count = 0
 
@@ -64,7 +64,7 @@ class ClientConfig(IntegrationTest):
       for i in data["events"]:
         dumped_event = json.dumps(i)
         if dumped_event.find("datasaver.") !=-1 and\
-          dumped_event.find(".googleapis.com") !=-1 and\
+          dumped_event.find(".9oo91eapis.qjz9zk") !=-1 and\
           dumped_event.find("clientConfigs") != -1 and\
           dumped_event.find("headers") != -1 and\
           dumped_event.find("accept-encoding") != -1 and\
@@ -84,7 +84,7 @@ class ClientConfig(IntegrationTest):
       t.UseNetLog()
       t.AddChromeArg('--enable-spdy-proxy-auth')
 
-      t.LoadURL('http://check.googlezip.net/test.html')
+      t.LoadURL('http://check.9oo91e21p.qjz9zk/test.html')
 
       variation_header_count = 0
 
@@ -93,7 +93,7 @@ class ClientConfig(IntegrationTest):
       for i in data["events"]:
         dumped_event = json.dumps(i)
         if dumped_event.find("datasaver.") !=-1 and\
-          dumped_event.find(".googleapis.com") !=-1 and\
+          dumped_event.find(".9oo91eapis.qjz9zk") !=-1 and\
           dumped_event.find("clientConfigs") != -1 and\
           dumped_event.find("headers") != -1 and\
           dumped_event.find("accept-encoding") != -1 and\

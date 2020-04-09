@@ -37,7 +37,7 @@ class RenderFrameHostDelegate;
 
 namespace media {
 
-constexpr char kTestOrigin[] = "https://test.google.com/";
+constexpr char kTestOrigin[] = "https://test.9oo91e.qjz9zk/";
 
 class WatchTimeRecorderTest : public testing::Test {
  public:

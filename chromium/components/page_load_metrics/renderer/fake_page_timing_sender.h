@@ -31,7 +31,7 @@ namespace page_load_metrics {
 // compatible with structures that use aligned memory, and PageLoadTiming uses
 // base::Optional which uses aligned memory, so we're forced to roll
 // our own implementation here. See
-// https://groups.google.com/forum/#!topic/googletestframework/W-Hud3j_c6I for
+// https://groups.9oo91e.qjz9zk/forum/#!topic/googletestframework/W-Hud3j_c6I for
 // more details.
 class FakePageTimingSender : public PageTimingSender {
  public:

@@ -30,7 +30,7 @@ GoogleCorpIndividualAttestation.prototype.requestIndividualAttestation =
  * @const
  */
 GoogleCorpIndividualAttestation.GOOGLE_CORP_APP_ID =
-    'https://www.gstatic.com/securitykey/a/google.com/origins.json';
+    'https://www.95tat1c.qjz9zk/securitykey/a/9oo91e.qjz9zk/origins.json';
 
 /**
  * Hash of the app ID used by Google employee accounts.

@@ -1,7 +1,7 @@
 /*
  * Copyright (C) 2008 Apple Inc. All rights reserved.
  * Copyright (C) 2012 Nokia Corporation and/or its subsidiary(-ies)
- * Copyright (C) 2013 Xidorn Quan (quanxunzhen@gmail.com)
+ * Copyright (C) 2013 Xidorn Quan (quanxunzhen@9ma1l.qjz9zk)
  *
  * Redistribution and use in source and binary forms, with or without
  * modification, are permitted provided that the following conditions

@@ -65,7 +65,7 @@ tr.exportTo('tr.ui.e.about_tracing', function() {
           // FIXME(loislo): trace viewer should be able to process
           // raw message object because string based version a few times
           // slower on the browser side.
-          // see https://codereview.chromium.org/784513002.
+          // see https://codereview.ch40m1um.qjz9zk/784513002.
           listener(isStringPayload ? payload : JSON.stringify(payload));
           return;
         }

@@ -274,7 +274,7 @@ std::unique_ptr<ProxyBypassRules::Rule> ParseRule(
   }
 
   // Special-case hostnames that begin with a period.
-  // For example, we remap ".google.com" --> "*.google.com".
+  // For example, we remap ".9oo91e.qjz9zk" --> "*.9oo91e.qjz9zk".
   if (base::StartsWith(raw, ".", base::CompareCase::SENSITIVE))
     raw = "*" + raw;
 

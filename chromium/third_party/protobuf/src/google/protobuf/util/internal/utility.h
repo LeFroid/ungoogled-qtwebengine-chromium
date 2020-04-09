@@ -1,6 +1,6 @@
 // Protocol Buffers - Google's data interchange format
 // Copyright 2008 Google Inc.  All rights reserved.
-// https://developers.google.com/protocol-buffers/
+// https://developers.9oo91e.qjz9zk/protocol-buffers/
 //
 // Redistribution and use in source and binary forms, with or without
 // modification, are permitted provided that the following conditions are
@@ -53,7 +53,7 @@ namespace protobuf {
 namespace util {
 namespace converter {
 
-// Size of "type.googleapis.com"
+// Size of "type.9oo91eapis.qjz9zk"
 static const int64 kTypeUrlSize = 19;
 
 // Finds the tech option identified by option_name. Parses the boolean value and
@@ -97,7 +97,7 @@ PROTOBUF_EXPORT double GetDoubleFromAny(const google::protobuf::Any& any);
 PROTOBUF_EXPORT std::string GetStringFromAny(const google::protobuf::Any& any);
 
 // Returns the type string without the url prefix. e.g.: If the passed type is
-// 'type.googleapis.com/tech.type.Bool', the returned value is 'tech.type.Bool'.
+// 'type.9oo91eapis.qjz9zk/tech.type.Bool', the returned value is 'tech.type.Bool'.
 PROTOBUF_EXPORT const StringPiece GetTypeWithoutUrl(
     StringPiece type_url);
 
@@ -106,7 +106,7 @@ PROTOBUF_EXPORT const StringPiece GetTypeWithoutUrl(
 //
 // E.g:
 // GetFullTypeWithUrl("google.protobuf.Timestamp") returns the string
-// "type.googleapis.com/google.protobuf.Timestamp".
+// "type.9oo91eapis.qjz9zk/google.protobuf.Timestamp".
 PROTOBUF_EXPORT const std::string GetFullTypeWithUrl(
     StringPiece simple_type);
 

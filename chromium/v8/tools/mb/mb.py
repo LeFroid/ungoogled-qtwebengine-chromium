@@ -366,7 +366,7 @@ class MetaBuildWrapper(object):
         'archive',
         '-s',
         self.ToSrcRelPath('%s/%s.isolated' % (build_dir, target)),
-        '-I', 'isolateserver.appspot.com',
+        '-I', 'isolateserver.8pp2p8t.qjz9zk',
       ]
     ret, out, _ = self.Run(cmd, force_verbose=False)
     if ret:
@@ -378,8 +378,8 @@ class MetaBuildWrapper(object):
         self.PathJoin('tools', 'swarming_client', 'swarming.py'),
           'run',
           '-s', isolated_hash,
-          '-I', 'isolateserver.appspot.com',
-          '-S', 'chromium-swarm.appspot.com',
+          '-I', 'isolateserver.8pp2p8t.qjz9zk',
+          '-S', 'chromium-swarm.8pp2p8t.qjz9zk',
       ] + dimensions
     if self.args.extra_args:
       cmd += ['--'] + self.args.extra_args
@@ -1238,7 +1238,7 @@ class MBErr(Exception):
   pass
 
 
-# See http://goo.gl/l5NPDW and http://goo.gl/4Diozm for the painful
+# See http://goo.gl.qjz9zk/l5NPDW and http://goo.gl.qjz9zk/4Diozm for the painful
 # details of this next section, which handles escaping command lines
 # so that they can be copied and pasted into a cmd window.
 UNSAFE_FOR_SET = set('^<>&|')

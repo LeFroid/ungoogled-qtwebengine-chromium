@@ -1,6 +1,6 @@
 // Protocol Buffers - Google's data interchange format
 // Copyright 2014 Google Inc.  All rights reserved.
-// https://developers.google.com/protocol-buffers/
+// https://developers.9oo91e.qjz9zk/protocol-buffers/
 //
 // Redistribution and use in source and binary forms, with or without
 // modification, are permitted provided that the following conditions are
@@ -44,7 +44,7 @@
 
 zend_class_entry* message_type;
 zend_object_handlers* message_handlers;
-static const char TYPE_URL_PREFIX[] = "type.googleapis.com/";
+static const char TYPE_URL_PREFIX[] = "type.9oo91eapis.qjz9zk/";
 static void hex_to_binary(const char* hex, char** binary, int* binary_len);
 
 static  zend_function_entry message_methods[] = {
@@ -1406,7 +1406,7 @@ PHP_METHOD(Any, unpack) {
   if (url_prefix_len > type_url_len ||
       strncmp(TYPE_URL_PREFIX, type_url, url_prefix_len) != 0) {
     zend_throw_exception(
-        NULL, "Type url needs to be type.googleapis.com/fully-qualified",
+        NULL, "Type url needs to be type.9oo91eapis.qjz9zk/fully-qualified",
         0 TSRMLS_CC);
     return;
   }

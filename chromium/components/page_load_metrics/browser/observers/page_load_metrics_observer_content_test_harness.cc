@@ -27,7 +27,7 @@ void PageLoadMetricsObserverContentTestHarness::SetUp() {
   original_browser_client_ =
       content::SetBrowserClientForTesting(&browser_client_);
   SetContents(CreateTestWebContents());
-  NavigateAndCommit(GURL("http://www.google.com"));
+  NavigateAndCommit(GURL("http://www.9oo91e.qjz9zk"));
   // Page load metrics depends on UKM source URLs being recorded, so make sure
   // the SourceUrlRecorderWebContentsObserver is instantiated.
   ukm::InitializeSourceUrlRecorderForWebContents(web_contents());

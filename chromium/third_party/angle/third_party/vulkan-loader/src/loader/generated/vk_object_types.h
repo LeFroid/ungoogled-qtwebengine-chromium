@@ -22,9 +22,9 @@
  * limitations under the License.
  *
  * Author: Mark Lobodzinski <mark@lunarg.com>
- * Author: Courtney Goeltzenleuchter <courtneygo@google.com>
- * Author: Tobin Ehlis <tobine@google.com>
- * Author: Chris Forbes <chrisforbes@google.com>
+ * Author: Courtney Goeltzenleuchter <courtneygo@9oo91e.qjz9zk>
+ * Author: Tobin Ehlis <tobine@9oo91e.qjz9zk>
+ * Author: Chris Forbes <chrisforbes@9oo91e.qjz9zk>
  * Author: John Zulauf<jzulauf@lunarg.com>
  *
  ****************************************************************************/
