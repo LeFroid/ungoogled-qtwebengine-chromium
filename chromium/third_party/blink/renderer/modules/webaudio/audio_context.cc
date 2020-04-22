@@ -132,7 +132,8 @@ AudioContext::AudioContext(Document& document,
                            const WebAudioLatencyHint& latency_hint,
                            base::Optional<float> sample_rate)
     : BaseAudioContext(&document, kRealtimeContext),
-      context_id_(g_context_id++) {
+      context_id_(g_context_id++),
+      keep_alive_(PERSISTENT_FROM_HERE, this) {
   destination_node_ =
       RealtimeAudioDestinationNode::Create(this, latency_hint, sample_rate);
 
@@ -169,13 +170,14 @@ AudioContext::AudioContext(Document& document,
           destination()->GetAudioDestinationHandler());
   base_latency_ = destination_handler.GetFramesPerBuffer() /
                   static_cast<double>(sampleRate());
+
 }
 
 void AudioContext::Uninitialize() {
   DCHECK(IsMainThread());
   DCHECK_NE(g_hardware_context_count, 0u);
   --g_hardware_context_count;
-
+  StopRendering();
   DidClose();
   RecordAutoplayMetrics();
   BaseAudioContext::Uninitialize();
@@ -214,7 +216,7 @@ ScriptPromise AudioContext::suspendContext(ScriptState* script_state) {
 
     // Stop rendering now.
     if (destination())
-      StopRendering();
+      SuspendRendering();
 
     // Since we don't have any way of knowing when the hardware actually stops,
     // we'll just resolve the promise now.
@@ -358,14 +360,36 @@ bool AudioContext::IsContextClosed() const {
   return close_resolver_ || BaseAudioContext::IsContextClosed();
 }
 
+void AudioContext::StartRendering() {
+  DCHECK(IsMainThread());
+
+  if (!keep_alive_)
+    keep_alive_ = this;
+  BaseAudioContext::StartRendering();
+}
+
 void AudioContext::StopRendering() {
+  DCHECK(IsMainThread());
+  DCHECK(destination());
+
+  // It is okay to perform the following on a suspended AudioContext because
+  // this method gets called from ExecutionContext::ContextDestroyed() meaning
+  // the AudioContext is already unreachable from the user code.
+  if (ContextState() != kClosed) {
+    destination()->GetAudioDestinationHandler().StopRendering();
+    SetContextState(kClosed);
+    GetDeferredTaskHandler().ClearHandlersToBeDeleted();
+    keep_alive_.Clear();
+  }
+}
+
+void AudioContext::SuspendRendering() {
   DCHECK(IsMainThread());
   DCHECK(destination());
 
   if (ContextState() == kRunning) {
     destination()->GetAudioDestinationHandler().StopRendering();
     SetContextState(kSuspended);
-    GetDeferredTaskHandler().ClearHandlersToBeDeleted();
   }
 }
 

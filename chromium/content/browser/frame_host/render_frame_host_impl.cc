@@ -698,6 +698,8 @@ class FileChooserImpl : public blink::mojom::FileChooser,
   void FileSelected(std::vector<blink::mojom::FileChooserFileInfoPtr> files,
                     const base::FilePath& base_dir,
                     blink::mojom::FileChooserParams::Mode mode) {
+    if (proxy_)
+      proxy_->ResetOwner();
     proxy_ = nullptr;
     if (!render_frame_host_)
       return;
@@ -731,11 +733,15 @@ class FileChooserImpl : public blink::mojom::FileChooser,
   }
 
   void FileSelectionCanceled() {
+    if (proxy_)
+      proxy_->ResetOwner();
     proxy_ = nullptr;
     if (!render_frame_host_)
       return;
     std::move(callback_).Run(nullptr);
   }
+
+  void ResetProxy() { proxy_ = nullptr; }
 
  private:
   class ListenerProxy : public content::FileSelectListener {
@@ -747,6 +753,8 @@ class FileChooserImpl : public blink::mojom::FileChooser,
           << "Should call either FileSelectListener::FileSelected() or "
              "FileSelectListener::FileSelectionCanceled()";
 #endif
+      if (owner_)
+        owner_->ResetProxy();
     }
     void ResetOwner() { owner_ = nullptr; }
 
