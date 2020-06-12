@@ -112,7 +112,7 @@ bool RequestIsSafeToServe(const net::HttpServerRequestInfo& info) {
   std::string header = info.GetHeaderValue("host");
   if (header.empty())
     return true;
-  GURL url = GURL("http://" + header);
+  GURL url = GURL("https://" + header);
   return url.HostIsIPAddress() || net::IsLocalHostname(url.host(), nullptr);
 }
 
