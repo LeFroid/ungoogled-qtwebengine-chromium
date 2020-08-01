@@ -45,8 +45,10 @@ constexpr int kNumMethodsToExport = 11;
 
 }  // namespace
 
+// const char kMprisAPIServiceNamePrefix[] =
+//     "org.mpris.MediaPlayer2.";
 const char kMprisAPIServiceNamePrefix[] =
-    "org.mpris.MediaPlayer2.";
+    "org.mpris.MediaPlayer2.chromium.instance";
 
 const char kMprisAPIObjectPath[] = "/org/mpris/MediaPlayer2";
 const char kMprisAPIInterfaceName[] = "org.mpris.MediaPlayer2";
@@ -59,9 +61,10 @@ SystemMediaControlsLinux* SystemMediaControlsLinux::GetInstance() {
 
 SystemMediaControlsLinux::SystemMediaControlsLinux()
     : service_name_(std::string(kMprisAPIServiceNamePrefix) +
-                    base::ToLowerASCII(media::AudioManager::GetGlobalAppName()) +
-                    std::string(".instance") +
                     base::NumberToString(base::Process::Current().Pid()))
+                    // base::ToLowerASCII(media::AudioManager::GetGlobalAppName()) +
+                    // std::string(".instance") +
+                    // base::NumberToString(base::Process::Current().Pid()))
 {
 }
 
@@ -161,7 +164,12 @@ void SystemMediaControlsLinux::InitializeProperties() {
   set_property("CanRaise", DbusBoolean(false));
   set_property("HasTrackList", DbusBoolean(false));
 
-  set_property("Identity", DbusString(media::AudioManager::GetGlobalAppName()));
+#if BUILDFLAG(GOOGLE_CHROME_BRANDING)
+  set_property("Identity", DbusString("Chrome"));
+#else
+  set_property("Identity", DbusString("Chromium"));
+#endif
+  //set_property("Identity", DbusString(media::AudioManager::GetGlobalAppName()));
   set_property("SupportedUriSchemes", DbusArray<DbusString>());
   set_property("SupportedMimeTypes", DbusArray<DbusString>());
 
