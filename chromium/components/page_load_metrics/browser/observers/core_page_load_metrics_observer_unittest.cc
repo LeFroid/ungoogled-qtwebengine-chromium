@@ -26,8 +26,8 @@ using LargestContentType =
 
 namespace {
 
-const char kDefaultTestUrl[] = "https://google.com";
-const char kDefaultTestUrlAnchor[] = "https://google.com#samepage";
+const char kDefaultTestUrl[] = "https://9oo91e.qjz9zk";
+const char kDefaultTestUrlAnchor[] = "https://9oo91e.qjz9zk#samepage";
 const char kDefaultTestUrl2[] = "https://whatever.com";
 
 }  // namespace
@@ -685,7 +685,7 @@ TEST_F(CorePageLoadMetricsObserverTest, LargestImageLoadingSmallerThanText) {
 
 TEST_F(CorePageLoadMetricsObserverTest,
        LargestContentfulPaintAllFrames_OnlySubframeProvided) {
-  const char kSubframeTestUrl[] = "https://google.com/subframe.html";
+  const char kSubframeTestUrl[] = "https://9oo91e.qjz9zk/subframe.html";
 
   page_load_metrics::mojom::PageLoadTiming timing;
   page_load_metrics::InitPageLoadTimingForTest(&timing);
@@ -741,7 +741,7 @@ TEST_F(CorePageLoadMetricsObserverTest,
 
 TEST_F(CorePageLoadMetricsObserverTest,
        LargestContentfulPaintAllFrames_SubframeImageLoading) {
-  const char kSubframeTestUrl[] = "https://google.com/subframe.html";
+  const char kSubframeTestUrl[] = "https://9oo91e.qjz9zk/subframe.html";
 
   page_load_metrics::mojom::PageLoadTiming timing;
   page_load_metrics::InitPageLoadTimingForTest(&timing);
@@ -787,7 +787,7 @@ TEST_F(CorePageLoadMetricsObserverTest,
 
 TEST_F(CorePageLoadMetricsObserverTest,
        LargestContentfulPaintAllFrames_OnlyMainFrameProvided) {
-  const char kSubframeTestUrl[] = "https://google.com/subframe.html";
+  const char kSubframeTestUrl[] = "https://9oo91e.qjz9zk/subframe.html";
 
   page_load_metrics::mojom::PageLoadTiming timing;
   page_load_metrics::InitPageLoadTimingForTest(&timing);
@@ -844,7 +844,7 @@ TEST_F(CorePageLoadMetricsObserverTest,
 // existing candidate if a larger candidate from subframe is provided.
 TEST_F(CorePageLoadMetricsObserverTest,
        LargestContentfulPaintAllFrames_MergeFromFramesBySize_SubframeLarger) {
-  const char kSubframeTestUrl[] = "https://google.com/subframe.html";
+  const char kSubframeTestUrl[] = "https://9oo91e.qjz9zk/subframe.html";
 
   // Create a main frame timing with a largest_image_paint that happens late.
   page_load_metrics::mojom::PageLoadTiming timing;
@@ -906,7 +906,7 @@ TEST_F(CorePageLoadMetricsObserverTest,
 // existing candidate if a larger candidate from main frame is provided.
 TEST_F(CorePageLoadMetricsObserverTest,
        LargestContentfulPaintAllFrames_MergeFromFramesBySize_MainFrameLarger) {
-  const char kSubframeTestUrl[] = "https://google.com/subframe.html";
+  const char kSubframeTestUrl[] = "https://9oo91e.qjz9zk/subframe.html";
 
   page_load_metrics::mojom::PageLoadTiming timing;
   page_load_metrics::InitPageLoadTimingForTest(&timing);
@@ -968,7 +968,7 @@ TEST_F(CorePageLoadMetricsObserverTest,
 // the first one.
 TEST_F(CorePageLoadMetricsObserverTest,
        LargestContentfulPaintAllFrames_SubframesCandidateOnlyGetLarger_Larger) {
-  const char kSubframeTestUrl[] = "https://google.com/subframe.html";
+  const char kSubframeTestUrl[] = "https://9oo91e.qjz9zk/subframe.html";
 
   page_load_metrics::mojom::PageLoadTiming timing;
   page_load_metrics::InitPageLoadTimingForTest(&timing);
@@ -1022,7 +1022,7 @@ TEST_F(CorePageLoadMetricsObserverTest,
 TEST_F(
     CorePageLoadMetricsObserverTest,
     LargestContentfulPaintAllFrames_SubframesCandidateOnlyGetLarger_Smaller) {
-  const char kSubframeTestUrl[] = "https://google.com/subframe.html";
+  const char kSubframeTestUrl[] = "https://9oo91e.qjz9zk/subframe.html";
 
   page_load_metrics::mojom::PageLoadTiming timing;
   page_load_metrics::InitPageLoadTimingForTest(&timing);
@@ -1412,7 +1412,7 @@ TEST_F(CorePageLoadMetricsObserverTest, FontPreloadHistogramsNotObserved) {
   timing.paint_timing->largest_image_paint_size = 100u;
   PopulateRequiredTimingFields(&timing);
 
-  NavigateAndCommit(GURL("https://www.google.com/"));
+  NavigateAndCommit(GURL("https://www.9oo91e.qjz9zk/"));
   tester()->SimulateTimingUpdate(timing);
 
   // Simulate closing the tab.
@@ -1450,7 +1450,7 @@ TEST_F(CorePageLoadMetricsObserverTest, FontPreloadHistogramsObserved) {
   page_load_metrics::mojom::FrameMetadata metadata;
   metadata.behavior_flags |= blink::LoadingBehaviorFlag::
       kLoadingBehaviorFontPreloadStartedBeforeRendering;
-  NavigateAndCommit(GURL("https://www.google.com/"));
+  NavigateAndCommit(GURL("https://www.9oo91e.qjz9zk/"));
   tester()->SimulateTimingAndMetadataUpdate(timing, metadata);
 
   // Similate closing the tab.
@@ -1492,7 +1492,7 @@ TEST_F(CorePageLoadMetricsObserverTest,
   metadata.behavior_flags |= blink::LoadingBehaviorFlag::
       kLoadingBehaviorFontPreloadStartedBeforeRendering;
 
-  NavigateAndCommit(GURL("https://www.google.com/"));
+  NavigateAndCommit(GURL("https://www.9oo91e.qjz9zk/"));
   tester()->SimulateTimingUpdate(timing);
   tester()->SimulateMetadataUpdate(metadata, main_rfh());
 

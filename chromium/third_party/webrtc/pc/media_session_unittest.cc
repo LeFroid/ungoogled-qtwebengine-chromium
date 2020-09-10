@@ -143,34 +143,34 @@ static const RtpDataCodec kDataCodecsAnswer[] = {
 
 static const RtpExtension kAudioRtpExtension1[] = {
     RtpExtension("urn:ietf:params:rtp-hdrext:ssrc-audio-level", 8),
-    RtpExtension("http://google.com/testing/audio_something", 10),
+    RtpExtension("http://9oo91e.qjz9zk/testing/audio_something", 10),
 };
 
 static const RtpExtension kAudioRtpExtensionEncrypted1[] = {
     RtpExtension("urn:ietf:params:rtp-hdrext:ssrc-audio-level", 8),
-    RtpExtension("http://google.com/testing/audio_something", 10),
+    RtpExtension("http://9oo91e.qjz9zk/testing/audio_something", 10),
     RtpExtension("urn:ietf:params:rtp-hdrext:ssrc-audio-level", 12, true),
 };
 
 static const RtpExtension kAudioRtpExtension2[] = {
     RtpExtension("urn:ietf:params:rtp-hdrext:ssrc-audio-level", 2),
-    RtpExtension("http://google.com/testing/audio_something_else", 8),
-    RtpExtension("http://google.com/testing/both_audio_and_video", 7),
+    RtpExtension("http://9oo91e.qjz9zk/testing/audio_something_else", 8),
+    RtpExtension("http://9oo91e.qjz9zk/testing/both_audio_and_video", 7),
 };
 
 static const RtpExtension kAudioRtpExtension3[] = {
-    RtpExtension("http://google.com/testing/audio_something", 2),
-    RtpExtension("http://google.com/testing/both_audio_and_video", 3),
+    RtpExtension("http://9oo91e.qjz9zk/testing/audio_something", 2),
+    RtpExtension("http://9oo91e.qjz9zk/testing/both_audio_and_video", 3),
 };
 
 static const RtpExtension kAudioRtpExtension3ForEncryption[] = {
-    RtpExtension("http://google.com/testing/audio_something", 2),
+    RtpExtension("http://9oo91e.qjz9zk/testing/audio_something", 2),
     // Use RTP extension that supports encryption.
     RtpExtension("urn:ietf:params:rtp-hdrext:toffset", 3),
 };
 
 static const RtpExtension kAudioRtpExtension3ForEncryptionOffer[] = {
-    RtpExtension("http://google.com/testing/audio_something", 2),
+    RtpExtension("http://9oo91e.qjz9zk/testing/audio_something", 2),
     RtpExtension("urn:ietf:params:rtp-hdrext:toffset", 3),
     RtpExtension("urn:ietf:params:rtp-hdrext:toffset", 14, true),
 };
@@ -185,28 +185,28 @@ static const RtpExtension kAudioRtpExtensionEncryptedAnswer[] = {
 
 static const RtpExtension kVideoRtpExtension1[] = {
     RtpExtension("urn:ietf:params:rtp-hdrext:toffset", 14),
-    RtpExtension("http://google.com/testing/video_something", 13),
+    RtpExtension("http://9oo91e.qjz9zk/testing/video_something", 13),
 };
 
 static const RtpExtension kVideoRtpExtensionEncrypted1[] = {
     RtpExtension("urn:ietf:params:rtp-hdrext:toffset", 14),
-    RtpExtension("http://google.com/testing/video_something", 13),
+    RtpExtension("http://9oo91e.qjz9zk/testing/video_something", 13),
     RtpExtension("urn:ietf:params:rtp-hdrext:toffset", 11, true),
 };
 
 static const RtpExtension kVideoRtpExtension2[] = {
     RtpExtension("urn:ietf:params:rtp-hdrext:toffset", 2),
-    RtpExtension("http://google.com/testing/video_something_else", 14),
-    RtpExtension("http://google.com/testing/both_audio_and_video", 7),
+    RtpExtension("http://9oo91e.qjz9zk/testing/video_something_else", 14),
+    RtpExtension("http://9oo91e.qjz9zk/testing/both_audio_and_video", 7),
 };
 
 static const RtpExtension kVideoRtpExtension3[] = {
-    RtpExtension("http://google.com/testing/video_something", 4),
-    RtpExtension("http://google.com/testing/both_audio_and_video", 5),
+    RtpExtension("http://9oo91e.qjz9zk/testing/video_something", 4),
+    RtpExtension("http://9oo91e.qjz9zk/testing/both_audio_and_video", 5),
 };
 
 static const RtpExtension kVideoRtpExtension3ForEncryption[] = {
-    RtpExtension("http://google.com/testing/video_something", 4),
+    RtpExtension("http://9oo91e.qjz9zk/testing/video_something", 4),
     // Use RTP extension that supports encryption.
     RtpExtension("urn:ietf:params:rtp-hdrext:toffset", 5),
 };
@@ -2880,7 +2880,7 @@ TEST_F(MediaSessionDescriptionFactoryTest,
 }
 
 // Regression test for:
-// https://bugs.chromium.org/p/webrtc/issues/detail?id=8332
+// https://bugs.ch40m1um.qjz9zk/p/webrtc/issues/detail?id=8332
 // Existing codecs should always appear before new codecs in re-offers. But
 // under a specific set of circumstances, the existing RTX codec was ending up
 // added to the end of the list.

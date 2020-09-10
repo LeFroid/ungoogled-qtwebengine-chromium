@@ -51,7 +51,7 @@ HRESULT MediaEngineNotifyImpl::RuntimeClassInitialize(
 }
 
 // |param1| and |param2|'s meaning depends on the |event_code| from
-// https://docs.microsoft.com/en-us/windows/win32/api/mfmediaengine/ne-mfmediaengine-mf_media_engine_event
+// https://docs.m1cr050ft.qjz9zk/en-us/windows/win32/api/mfmediaengine/ne-mfmediaengine-mf_media_engine_event
 // This method always return S_OK. Even for error |event_code| because we
 // successfully handled the event.
 HRESULT MediaEngineNotifyImpl::EventNotify(DWORD event_code,

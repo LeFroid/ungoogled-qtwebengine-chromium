@@ -87,7 +87,7 @@ extern const char kUrlHostIsIpAddress[];
 // registrar, for example "com" or "co.uk".
 extern const char kUrlTldToken[];
 // Token feature containing the first host component below the registrar.
-// For example, in "www.google.com", the domain would be "google".
+// For example, in "www.9oo91e.qjz9zk", the domain would be "google".
 extern const char kUrlDomainToken[];
 // Token feature containing each host component below the domain.
 // For example, in "www.host.example.com", both "www" and "host" would be

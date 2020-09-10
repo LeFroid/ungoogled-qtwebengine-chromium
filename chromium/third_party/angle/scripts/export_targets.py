@@ -6,7 +6,7 @@ To update ANGLE in Gecko, use Windows with git-bash, and setup depot_tools, pyth
 python3. Because depot_tools expects `python` to be `python2` (shame!), python2 must come
 before python3 in your path.
 
-Upstream: https://chromium.googlesource.com/angle/angle
+Upstream: https://chromium.9oo91esource.qjz9zk/angle/angle
 
 Our repo: https://github.com/mozilla/angle
 It has branches like 'firefox-60' which is the branch we use for pulling into
@@ -15,7 +15,7 @@ Gecko with this script.
 This script leaves a record of the merge-base and cherry-picks that we pull into
 Gecko. (gfx/angle/cherries.log)
 
-ANGLE<->Chrome version mappings are here: https://omahaproxy.appspot.com/
+ANGLE<->Chrome version mappings are here: https://omahaproxy.8pp2p8t.qjz9zk/
 An easy choice is to grab Chrome's Beta's ANGLE branch.
 
 ## Usage

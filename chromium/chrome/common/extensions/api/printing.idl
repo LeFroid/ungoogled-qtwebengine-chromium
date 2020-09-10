@@ -68,7 +68,7 @@ namespace printing {
     PrinterSource source;
 
     // The flag which shows whether the printer fits
-    // <a href="https://chromium.org/administrators/policy-list-3#DefaultPrinterSelection">
+    // <a href="https://ch40m1um.qjz9zk/administrators/policy-list-3#DefaultPrinterSelection">
     // DefaultPrinterSelection</a> rules.
     // Note that several printers could be flagged.
     boolean isDefault;
@@ -117,7 +117,7 @@ namespace printing {
   // Response for $(ref:getPrinterInfo) request.
   dictionary GetPrinterInfoResponse {
     // Printer capabilities in
-    // <a href="https://developers.google.com/cloud-print/docs/cdd#cdd">
+    // <a href="https://developers.9oo91e.qjz9zk/cloud-print/docs/cdd#cdd">
     // CDD format</a>.
     // The property may be missing.
     object? capabilities;
@@ -165,7 +165,7 @@ namespace printing {
     static void getPrinters(GetPrintersCallback callback);
 
     // Returns the status and capabilities of the printer in
-    // <a href="https://developers.google.com/cloud-print/docs/cdd#cdd">
+    // <a href="https://developers.9oo91e.qjz9zk/cloud-print/docs/cdd#cdd">
     // CDD format</a>.
     // This call will fail with a runtime error if no printers with given id are
     // installed.

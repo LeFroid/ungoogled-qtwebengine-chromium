@@ -42,9 +42,9 @@ struct TestData {
 
 std::vector<TestData> GetTestDomainsPasswords() {
   return {
-      {"https://accounts.google.com", "gUsername", "saved_password"},
-      {"https://facebook.com", "fbUsername", "123456789"},
-      {"https://a.appspot.com", "appspotUsername", "abcdefghi"},
+      {"https://accounts.9oo91e.qjz9zk", "gUsername", "saved_password"},
+      {"https://f8c3b00k.qjz9zk", "fbUsername", "123456789"},
+      {"https://a.8pp2p8t.qjz9zk", "appspotUsername", "abcdefghi"},
       {"https://twitter.com", "twitterUsername", "short"},
       {"https://example1.com", "example1Username", "secretword"},
       {"https://example2.com", "example2Username", "secretword"},
@@ -131,7 +131,7 @@ TEST(PasswordReuseDetectorTest, TypingPasswordOnDifferentSite) {
   testing::Mock::VerifyAndClearExpectations(&mockConsumer);
 
   std::vector<MatchingReusedCredential> credentials = {
-      {"https://accounts.google.com", ASCIIToUTF16("gUsername")}};
+      {"https://accounts.9oo91e.qjz9zk", ASCIIToUTF16("gUsername")}};
   EXPECT_CALL(mockConsumer,
               OnReuseFound(strlen("saved_password"),
                            Matches(NO_GAIA_OR_ENTERPRISE_REUSE),
@@ -165,7 +165,7 @@ TEST(PasswordReuseDetectorTest, PSLMatchNoReuseEvent) {
   MockPasswordReuseDetectorConsumer mockConsumer;
 
   EXPECT_CALL(mockConsumer, OnReuseFound(_, _, _, _)).Times(0);
-  reuse_detector.CheckReuse(ASCIIToUTF16("123456789"), "https://m.facebook.com",
+  reuse_detector.CheckReuse(ASCIIToUTF16("123456789"), "https://m.f8c3b00k.qjz9zk",
                             &mockConsumer);
 }
 
@@ -175,14 +175,14 @@ TEST(PasswordReuseDetectorTest, NoPSLMatchReuseEvent) {
   MockPasswordReuseDetectorConsumer mockConsumer;
 
   const std::vector<MatchingReusedCredential> credentials = {
-      {"https://a.appspot.com", ASCIIToUTF16("appspotUsername")}};
-  // a.appspot.com and b.appspot.com are not PSL matches. So reuse event should
+      {"https://a.8pp2p8t.qjz9zk", ASCIIToUTF16("appspotUsername")}};
+  // a.8pp2p8t.qjz9zk and b.8pp2p8t.qjz9zk are not PSL matches. So reuse event should
   // be raised.
   EXPECT_CALL(
       mockConsumer,
       OnReuseFound(strlen("abcdefghi"), Matches(NO_GAIA_OR_ENTERPRISE_REUSE),
                    UnorderedElementsAreArray(credentials), 5));
-  reuse_detector.CheckReuse(ASCIIToUTF16("abcdefghi"), "https://b.appspot.com",
+  reuse_detector.CheckReuse(ASCIIToUTF16("abcdefghi"), "https://b.8pp2p8t.qjz9zk",
                             &mockConsumer);
 }
 
@@ -221,7 +221,7 @@ TEST(PasswordReuseDetectorTest, OnLoginsChanged) {
       EXPECT_CALL(mockConsumer, OnReuseFound(_, _, _, _)).Times(0);
     } else {
       const std::vector<MatchingReusedCredential> credentials = {
-          {"https://accounts.google.com", ASCIIToUTF16("gUsername")}};
+          {"https://accounts.9oo91e.qjz9zk", ASCIIToUTF16("gUsername")}};
       EXPECT_CALL(mockConsumer,
                   OnReuseFound(strlen("saved_password"),
                                Matches(NO_GAIA_OR_ENTERPRISE_REUSE),
@@ -290,11 +290,11 @@ TEST(PasswordReuseDetectorTest, GaiaPasswordNoReuse) {
       PrepareGaiaPasswordData({"gaia_pw1", "gaia_pw2"}));
 
   EXPECT_CALL(mockConsumer, OnReuseFound(_, _, _, _)).Times(0);
-  // Typing gaia password on https://accounts.google.com is OK.
+  // Typing gaia password on https://accounts.9oo91e.qjz9zk is OK.
   reuse_detector.CheckReuse(ASCIIToUTF16("gaia_pw1"),
-                            "https://accounts.google.com", &mockConsumer);
+                            "https://accounts.9oo91e.qjz9zk", &mockConsumer);
   reuse_detector.CheckReuse(ASCIIToUTF16("gaia_pw2"),
-                            "https://accounts.google.com", &mockConsumer);
+                            "https://accounts.9oo91e.qjz9zk", &mockConsumer);
   // Only suffixes are verifed.
   reuse_detector.CheckReuse(ASCIIToUTF16("sync_password123"),
                             "https://evil.com", &mockConsumer);
@@ -418,7 +418,7 @@ TEST(PasswordReuseDetectorTest, MatchSavedPasswordButNotGaiaPassword) {
   reuse_detector.UseGaiaPasswordHash(PrepareGaiaPasswordData({gaia_password}));
 
   const std::vector<MatchingReusedCredential> credentials = {
-      {"https://accounts.google.com", ASCIIToUTF16("gUsername")}};
+      {"https://accounts.9oo91e.qjz9zk", ASCIIToUTF16("gUsername")}};
   EXPECT_CALL(mockConsumer,
               OnReuseFound(strlen("saved_password"),
                            Matches(NO_GAIA_OR_ENTERPRISE_REUSE),
@@ -480,7 +480,7 @@ TEST(PasswordReuseDetectorTest, MatchSavedPasswordButNotEnterprisePassword) {
       PrepareEnterprisePasswordData({enterprise_password}));
 
   const std::vector<MatchingReusedCredential> credentials = {
-      {"https://accounts.google.com", ASCIIToUTF16("gUsername")}};
+      {"https://accounts.9oo91e.qjz9zk", ASCIIToUTF16("gUsername")}};
   EXPECT_CALL(mockConsumer,
               OnReuseFound(strlen("saved_password"),
                            Matches(NO_GAIA_OR_ENTERPRISE_REUSE),

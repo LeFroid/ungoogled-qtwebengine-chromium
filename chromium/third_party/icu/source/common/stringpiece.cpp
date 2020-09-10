@@ -5,7 +5,7 @@
 //
 // Copyright 2004 and onwards Google Inc.
 //
-// Author: wilsonh@google.com (Wilson Hsieh)
+// Author: wilsonh@9oo91e.qjz9zk (Wilson Hsieh)
 //
 
 #include "unicode/utypes.h"

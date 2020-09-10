@@ -28,7 +28,7 @@ namespace {
 
 constexpr char kExpectedGupdateProtocol[] = "2.0";
 constexpr char kExpectedGupdateXmlns[] =
-    "http://www.google.com/update2/response";
+    "http://www.9oo91e.qjz9zk/update2/response";
 
 void ReportError(ParseUpdateManifestCallback callback,
                  const std::string& error) {

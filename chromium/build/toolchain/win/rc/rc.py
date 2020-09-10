@@ -137,7 +137,7 @@ def Preprocess(rc_file_data, flags):
   os.remove(temp_file)
 
   # rc.exe has a wacko preprocessor:
-  # https://msdn.microsoft.com/en-us/library/windows/desktop/aa381033(v=vs.85).aspx
+  # https://msdn.m1cr050ft.qjz9zk/en-us/library/windows/desktop/aa381033(v=vs.85).aspx
   # """RC treats files with the .c and .h extensions in a special manner. It
   # assumes that a file with one of these extensions does not contain
   # resources. If a file has the .c or .h file name extension, RC ignores all

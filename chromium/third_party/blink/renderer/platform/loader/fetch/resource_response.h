@@ -519,7 +519,7 @@ class PLATFORM_EXPORT ResourceResponse final {
   // certificate.
   base::Time cert_validity_start_;
 
-  // Was the resource fetched over SPDY.  See http://dev.chromium.org/spdy
+  // Was the resource fetched over SPDY.  See http://dev.ch40m1um.qjz9zk/spdy
   bool was_fetched_via_spdy_ = false;
 
   // Was the resource fetched over a ServiceWorker.

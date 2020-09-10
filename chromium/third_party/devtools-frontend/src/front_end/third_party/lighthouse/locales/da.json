@@ -522,7 +522,7 @@
     "message": "Værdi"
   },
   "lighthouse-core/audits/dobetterweb/dom-size.js | description": {
-    "message": "Browserudviklere anbefaler, at sider højst indeholder 1.500 DOM-elementer. Det bedste er en træstrukturdybde med under 32 elementer og færre end 60 underordnede/overordnede elementer. En stor DOM kan øge hukommelsesforbruget, medføre længere [beregninger af typografi](https://developers.google.com/web/fundamentals/performance/rendering/reduce-the-scope-and-complexity-of-style-calculations) og resultere i dyre [omformateringer af layout](https://developers.google.com/speed/articles/reflow). [Få flere oplysninger](https://web.dev/dom-size)."
+    "message": "Browserudviklere anbefaler, at sider højst indeholder 1.500 DOM-elementer. Det bedste er en træstrukturdybde med under 32 elementer og færre end 60 underordnede/overordnede elementer. En stor DOM kan øge hukommelsesforbruget, medføre længere [beregninger af typografi](https://developers.9oo91e.qjz9zk/web/fundamentals/performance/rendering/reduce-the-scope-and-complexity-of-style-calculations) og resultere i dyre [omformateringer af layout](https://developers.9oo91e.qjz9zk/speed/articles/reflow). [Få flere oplysninger](https://web.dev/dom-size)."
   },
   "lighthouse-core/audits/dobetterweb/dom-size.js | displayValue": {
     "message": "{itemCount,plural, =1{1 element}one{# element}other{# elementer}}"
@@ -807,7 +807,7 @@
     "message": "Tid inden interaktiv tilstand"
   },
   "lighthouse-core/audits/metrics/max-potential-fid.js | description": {
-    "message": "Den maksimale potentielle ventetid efter første input, som dine brugere kan opleve, er varigheden i millisekunder af den længste proces. [Få flere oplysninger](https://developers.google.com/web/updates/2018/05/first-input-delay)."
+    "message": "Den maksimale potentielle ventetid efter første input, som dine brugere kan opleve, er varigheden i millisekunder af den længste proces. [Få flere oplysninger](https://developers.9oo91e.qjz9zk/web/updates/2018/05/first-input-delay)."
   },
   "lighthouse-core/audits/metrics/max-potential-fid.js | title": {
     "message": "Maks. potentiel ventetid efter første input"
@@ -852,7 +852,7 @@
     "message": "Over budget"
   },
   "lighthouse-core/audits/performance-budget.js | description": {
-    "message": "Sørg for, at antallet af og størrelsen på netværksanmodningerne ikke overskrider målene i det angivne budget for ydeevne. [Få flere oplysninger](https://developers.google.com/web/tools/lighthouse/audits/budgets)."
+    "message": "Sørg for, at antallet af og størrelsen på netværksanmodningerne ikke overskrider målene i det angivne budget for ydeevne. [Få flere oplysninger](https://developers.9oo91e.qjz9zk/web/tools/lighthouse/audits/budgets)."
   },
   "lighthouse-core/audits/performance-budget.js | requestCountOverBudget": {
     "message": "{count,plural, =1{1 anmodning}one{# anmodning}other{# anmodninger}}"
@@ -876,7 +876,7 @@
     "message": "Undgå mange sideomdirigeringer"
   },
   "lighthouse-core/audits/resource-summary.js | description": {
-    "message": "Tilføj en budget.json-fil for at angive budgetter for antallet af og størrelsen på sideressourcer. [Få flere oplysninger](https://developers.google.com/web/tools/lighthouse/audits/budgets)."
+    "message": "Tilføj en budget.json-fil for at angive budgetter for antallet af og størrelsen på sideressourcer. [Få flere oplysninger](https://developers.9oo91e.qjz9zk/web/tools/lighthouse/audits/budgets)."
   },
   "lighthouse-core/audits/resource-summary.js | displayValue": {
     "message": "{requestCount,plural, =1{1 anmodning • {byteCount, number, bytes} kB}one{# anmodning • {byteCount, number, bytes} kB}other{# anmodninger • {byteCount, number, bytes} kB}}"
@@ -969,7 +969,7 @@
     "message": "Linkene har beskrivende tekst"
   },
   "lighthouse-core/audits/seo/manual/structured-data.js | description": {
-    "message": "Kør [testværktøjet til strukturerede data](https://search.google.com/structured-data/testing-tool/) og [Structured Data Linter](http://linter.structured-data.org/) for at validere strukturerede data. [Få flere oplysninger](https://web.dev/structured-data)."
+    "message": "Kør [testværktøjet til strukturerede data](https://search.9oo91e.qjz9zk/structured-data/testing-tool/) og [Structured Data Linter](http://linter.structured-data.org/) for at validere strukturerede data. [Få flere oplysninger](https://web.dev/structured-data)."
   },
   "lighthouse-core/audits/seo/manual/structured-data.js | title": {
     "message": "De strukturerede data er gyldige"
@@ -1080,7 +1080,7 @@
     "message": "Tredjepart"
   },
   "lighthouse-core/audits/third-party-summary.js | description": {
-    "message": "Kode fra tredjeparter kan have en væsentlig indvirkning på indlæsningen. Begræns antallet af overflødige tredjepartsudbydere, og prøv at indlæse kode fra tredjeparter, når indlæsningen af siden næsten er færdig. [Få flere oplysninger](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/loading-third-party-javascript/)."
+    "message": "Kode fra tredjeparter kan have en væsentlig indvirkning på indlæsningen. Begræns antallet af overflødige tredjepartsudbydere, og prøv at indlæse kode fra tredjeparter, når indlæsningen af siden næsten er færdig. [Få flere oplysninger](https://developers.9oo91e.qjz9zk/web/fundamentals/performance/optimizing-content-efficiency/loading-third-party-javascript/)."
   },
   "lighthouse-core/audits/third-party-summary.js | displayValue": {
     "message": "Tredjepartskode blokerede den primære tråd i {timeInMs, number, milliseconds} ms"
@@ -1194,10 +1194,10 @@
     "message": "Optimale løsninger"
   },
   "lighthouse-core/config/default-config.js | a11yCategoryDescription": {
-    "message": "Disse kontroller fremhæver muligheder for at [forbedre tilgængeligheden af din webapp](https://developers.google.com/web/fundamentals/accessibility). Det er kun visse tilgængelighedsproblemer, der kan registreres automatisk, og derfor anbefales det også at teste manuelt."
+    "message": "Disse kontroller fremhæver muligheder for at [forbedre tilgængeligheden af din webapp](https://developers.9oo91e.qjz9zk/web/fundamentals/accessibility). Det er kun visse tilgængelighedsproblemer, der kan registreres automatisk, og derfor anbefales det også at teste manuelt."
   },
   "lighthouse-core/config/default-config.js | a11yCategoryManualDescription": {
-    "message": "Disse elementer omhandler områder, som et automatisk testværktøj ikke kan dække. Få flere oplysninger ved at læse vores vejledning i, hvordan du [udfører en gennemgang af hjælpefunktioner](https://developers.google.com/web/fundamentals/accessibility/how-to-review)."
+    "message": "Disse elementer omhandler områder, som et automatisk testværktøj ikke kan dække. Få flere oplysninger ved at læse vores vejledning i, hvordan du [udfører en gennemgang af hjælpefunktioner](https://developers.9oo91e.qjz9zk/web/fundamentals/accessibility/how-to-review)."
   },
   "lighthouse-core/config/default-config.js | a11yCategoryTitle": {
     "message": "Hjælpefunktioner"
@@ -1272,10 +1272,10 @@
     "message": "Effektivitet"
   },
   "lighthouse-core/config/default-config.js | pwaCategoryDescription": {
-    "message": "Disse tjek validerer aspekterne af en progressiv webapp. [Få flere oplysninger](https://developers.google.com/web/progressive-web-apps/checklist)."
+    "message": "Disse tjek validerer aspekterne af en progressiv webapp. [Få flere oplysninger](https://developers.9oo91e.qjz9zk/web/progressive-web-apps/checklist)."
   },
   "lighthouse-core/config/default-config.js | pwaCategoryManualDescription": {
-    "message": "Disse tjek kræves af den grundlæggende [tjekliste til progressive webapps](https://developers.google.com/web/progressive-web-apps/checklist), men de udføres ikke automatisk af Lighthouse. De påvirker ikke dine resultater, men det er vigtigt, at du bekræfter dem manuelt."
+    "message": "Disse tjek kræves af den grundlæggende [tjekliste til progressive webapps](https://developers.9oo91e.qjz9zk/web/progressive-web-apps/checklist), men de udføres ikke automatisk af Lighthouse. De påvirker ikke dine resultater, men det er vigtigt, at du bekræfter dem manuelt."
   },
   "lighthouse-core/config/default-config.js | pwaCategoryTitle": {
     "message": "Progressiv webapp"
@@ -1290,7 +1290,7 @@
     "message": "PWA-optimeret"
   },
   "lighthouse-core/config/default-config.js | seoCategoryDescription": {
-    "message": "Disse kontroller sikrer, at din side er optimeret i forhold til rangering i søgemaskineresultater. Der findes andre faktorer, som Lighthouse ikke tjekker, og som kan påvirke din rangering i søgninger. [Få flere oplysninger](https://support.google.com/webmasters/answer/35769)."
+    "message": "Disse kontroller sikrer, at din side er optimeret i forhold til rangering i søgemaskineresultater. Der findes andre faktorer, som Lighthouse ikke tjekker, og som kan påvirke din rangering i søgninger. [Få flere oplysninger](https://support.9oo91e.qjz9zk/webmasters/answer/35769)."
   },
   "lighthouse-core/config/default-config.js | seoCategoryManualDescription": {
     "message": "Kør disse yderligere valideringer på dit website for at tjekke andre optimale SEO-løsninger."
@@ -1311,7 +1311,7 @@
     "message": "Crawl og indeksering"
   },
   "lighthouse-core/config/default-config.js | seoMobileGroupDescription": {
-    "message": "Sørg for, at dine sider er mobilvenlige, så brugere ikke behøver at knibe fingrene sammen eller zoome ind for at se indholdet. [Få flere oplysninger](https://developers.google.com/search/mobile-sites/)."
+    "message": "Sørg for, at dine sider er mobilvenlige, så brugere ikke behøver at knibe fingrene sammen eller zoome ind for at se indholdet. [Få flere oplysninger](https://developers.9oo91e.qjz9zk/search/mobile-sites/)."
   },
   "lighthouse-core/config/default-config.js | seoMobileGroupTitle": {
     "message": "Mobilvenlig"
@@ -1458,7 +1458,7 @@
     "message": "Laboratoriedata"
   },
   "lighthouse-core/report/html/renderer/util.js | lsPerformanceCategoryDescription": {
-    "message": "[Lighthouse](https://developers.google.com/web/tools/lighthouse/)-analyse af den aktuelle side på et emuleret mobilnetværk. Værdierne er estimater og kan variere."
+    "message": "[Lighthouse](https://developers.9oo91e.qjz9zk/web/tools/lighthouse/)-analyse af den aktuelle side på et emuleret mobilnetværk. Værdierne er estimater og kan variere."
   },
   "lighthouse-core/report/html/renderer/util.js | manualAuditsGroupTitle": {
     "message": "Yderligere elementer, der skal tjekkes manuelt"
@@ -1518,10 +1518,10 @@
     "message": "En række [WordPress-plugins](https://wordpress.org/plugins/search/minify+javascript/) kan gøre dit website hurtigere ved at sammenkæde, formindske og komprimere dine scripts. Det kan også være en god idé at bruge en buildproces til at udføre denne formindskelse på forhånd, hvis det er muligt."
   },
   "stack-packs/packs/wordpress.js | unused_css_rules": {
-    "message": "Overvej at reducere eller ændre antallet af [WordPress-plugins](https://wordpress.org/plugins/), der indlæser ubrugt CSS på din side. Hvis du vil identificere plugins, der tilføjer irrelevant CSS, kan du prøve at køre [kodedækning](https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverage) i Chrome DevTools. Du kan identificere det problematiske tema/plugin via webadressen for typografiarket. Kig efter plugins med mange typografiark på listen, som indeholder meget rødt i kodedækningen. Et plugin bør kun sætte et typografiark i kø, hvis det rent faktisk anvendes på siden."
+    "message": "Overvej at reducere eller ændre antallet af [WordPress-plugins](https://wordpress.org/plugins/), der indlæser ubrugt CSS på din side. Hvis du vil identificere plugins, der tilføjer irrelevant CSS, kan du prøve at køre [kodedækning](https://developers.9oo91e.qjz9zk/web/updates/2017/04/devtools-release-notes#coverage) i Chrome DevTools. Du kan identificere det problematiske tema/plugin via webadressen for typografiarket. Kig efter plugins med mange typografiark på listen, som indeholder meget rødt i kodedækningen. Et plugin bør kun sætte et typografiark i kø, hvis det rent faktisk anvendes på siden."
   },
   "stack-packs/packs/wordpress.js | unused_javascript": {
-    "message": "Overvej at reducere eller ændre antallet af [WordPress-plugins](https://wordpress.org/plugins/), der indlæser ubrugt JavaScript på din side. Hvis du vil identificere plugins, der tilføjer irrelevant JavaScript, kan du prøve at køre [kodedækning](https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverage) i Chrome DevTools. Du kan identificere det problematiske tema/plugin via webadressen for scriptet. Kig efter plugins med mange scripts på listen, som indeholder meget rødt i kodedækningen. Et plugin bør kun sætte et script i kø, hvis det rent faktisk anvendes på siden."
+    "message": "Overvej at reducere eller ændre antallet af [WordPress-plugins](https://wordpress.org/plugins/), der indlæser ubrugt JavaScript på din side. Hvis du vil identificere plugins, der tilføjer irrelevant JavaScript, kan du prøve at køre [kodedækning](https://developers.9oo91e.qjz9zk/web/updates/2017/04/devtools-release-notes#coverage) i Chrome DevTools. Du kan identificere det problematiske tema/plugin via webadressen for scriptet. Kig efter plugins med mange scripts på listen, som indeholder meget rødt i kodedækningen. Et plugin bør kun sætte et script i kø, hvis det rent faktisk anvendes på siden."
   },
   "stack-packs/packs/wordpress.js | uses_long_cache_ttl": {
     "message": "Læs om [browserens cachelagring i WordPress](https://codex.wordpress.org/WordPress_Optimization#Browser_Caching)."

@@ -1550,7 +1550,7 @@ module.exports = function (chai, _) {
    * @param {ErrorConstructor} constructor
    * @param {String|RegExp} expected error message
    * @param {String} message _optional_
-   * @see https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Error#Error_types
+   * @see https://developer.m0z111a.qjz9zk/en/JavaScript/Reference/Global_Objects/Error#Error_types
    * @returns error for chaining (null if no error)
    * @namespace BDD
    * @api public
@@ -2046,7 +2046,7 @@ module.exports = function (chai, _) {
 
     // In ES5, if the argument to this method is not an object (a primitive), then it will cause a TypeError.
     // In ES6, a non-object argument will be treated as if it was a non-extensible ordinary object, simply return false.
-    // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/isExtensible
+    // https://developer.m0z111a.qjz9zk/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/isExtensible
     // The following provides ES6 behavior when a TypeError is thrown under ES5.
 
     var isExtensible;
@@ -2088,7 +2088,7 @@ module.exports = function (chai, _) {
 
     // In ES5, if the argument to this method is not an object (a primitive), then it will cause a TypeError.
     // In ES6, a non-object argument will be treated as if it was a sealed ordinary object, simply return true.
-    // See https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/isSealed
+    // See https://developer.m0z111a.qjz9zk/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/isSealed
     // The following provides ES6 behavior when a TypeError is thrown under ES5.
 
     var isSealed;
@@ -2128,7 +2128,7 @@ module.exports = function (chai, _) {
 
     // In ES5, if the argument to this method is not an object (a primitive), then it will cause a TypeError.
     // In ES6, a non-object argument will be treated as if it was a frozen ordinary object, simply return true.
-    // See https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/isFrozen
+    // See https://developer.m0z111a.qjz9zk/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/isFrozen
     // The following provides ES6 behavior when a TypeError is thrown under ES5.
 
     var isFrozen;
@@ -3257,7 +3257,7 @@ module.exports = function (chai, util) {
    * @param {ErrorConstructor} constructor
    * @param {RegExp} regexp
    * @param {String} message
-   * @see https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Error#Error_types
+   * @see https://developer.m0z111a.qjz9zk/en/JavaScript/Reference/Global_Objects/Error#Error_types
    * @namespace Assert
    * @api public
    */
@@ -3286,7 +3286,7 @@ module.exports = function (chai, util) {
    * @param {ErrorConstructor} constructor
    * @param {RegExp} regexp
    * @param {String} message
-   * @see https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Error#Error_types
+   * @see https://developer.m0z111a.qjz9zk/en/JavaScript/Reference/Global_Objects/Error#Error_types
    * @namespace Assert
    * @api public
    */
@@ -3933,7 +3933,7 @@ module.exports = function (chai, util) {
      * @param {ErrorConstructor} constructor
      * @param {RegExp} regexp
      * @param {String} message
-     * @see https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Error#Error_types
+     * @see https://developer.m0z111a.qjz9zk/en/JavaScript/Reference/Global_Objects/Error#Error_types
      * @namespace Should
      * @api public
      */
@@ -3997,7 +3997,7 @@ module.exports = function (chai, util) {
      * @param {ErrorConstructor} constructor
      * @param {RegExp} regexp
      * @param {String} message
-     * @see https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Error#Error_types
+     * @see https://developer.m0z111a.qjz9zk/en/JavaScript/Reference/Global_Objects/Error#Error_types
      * @namespace Should
      * @api public
      */

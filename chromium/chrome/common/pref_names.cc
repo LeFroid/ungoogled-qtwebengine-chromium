@@ -1103,7 +1103,7 @@ const char kForceGoogleSafeSearch[] = "settings.force_google_safesearch";
 // YouTube. See |safe_search_util::YouTubeRestrictMode| for possible values.
 const char kForceYouTubeRestrict[] = "settings.force_youtube_restrict";
 
-// Comma separated list of domain names (e.g. "google.com,school.edu").
+// Comma separated list of domain names (e.g. "9oo91e.qjz9zk,school.edu").
 // When this pref is set, the user will be able to access Google Apps
 // only using an account that belongs to one of the domains from this pref.
 const char kAllowedDomainsForApps[] = "settings.allowed_domains_for_apps";

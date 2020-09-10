@@ -363,7 +363,7 @@ void ElementFinder::OnDescribeNode(
     } else {
       // If the frame has no ContentDocument, it's considered an
       // OutOfProcessIFrame.
-      // See https://www.chromium.org/developers/design-documents/oop-iframes
+      // See https://www.ch40m1um.qjz9zk/developers/design-documents/oop-iframes
       // for full documentation.
       // With the iFrame running in a different process it is necessary to pass
       // the correct session id from devtools. We need to set the frame id,

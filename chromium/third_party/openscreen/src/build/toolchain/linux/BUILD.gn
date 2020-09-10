@@ -21,7 +21,7 @@ template("gcc_toolchain") {
 
       # The host toolchain needs to be preserved by all secondary toolchains.
       # For futher explanation, see
-      # https://gn.googlesource.com/gn/+/refs/heads/master/docs/reference.md#toolchain-overview
+      # https://gn.9oo91esource.qjz9zk/gn/+/refs/heads/master/docs/reference.md#toolchain-overview
       host_toolchain = host_toolchain
     }
 

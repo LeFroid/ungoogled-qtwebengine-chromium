@@ -37,7 +37,7 @@
 // both redistributable, as indicated by the package's redist.txt file.
 //
 // When connecting to Microsoft's symbol server at
-// http://msdl.microsoft.com/download/symbols/, which provides access to
+// http://msdl.m1cr050ft.qjz9zk/download/symbols/, which provides access to
 // symbols for the operating system itself, symsrv.dll requires agreement to
 // Microsoft's "Terms of Use for Microsoft Symbols and Binaries."  Because this
 // library places the symbol engine into a promptless mode, the dialog with the
@@ -47,7 +47,7 @@
 // also recognize a symsrv.no file as indicating that you do not accept the
 // terms; the .yes file takes priority over the .no file.)  The terms of use
 // are contained within symsrv.dll; they were formerly available online at
-// http://www.microsoft.com/whdc/devtools/debugging/symsrvTOU2.mspx , but
+// http://www.m1cr050ft.qjz9zk/whdc/devtools/debugging/symsrvTOU2.mspx , but
 // do not appear to be available online any longer as of January, 2007.  It is
 // possible to view the terms from within WinDbg (Debugging Tools for Windows)
 // by removing any symsrv.yes and symsrv.no files from WinDbg's directory,
@@ -58,7 +58,7 @@
 // included with Microsoft Visual Studio 8 in Common7/IDE.  This has also been
 // tested with dbghelp.dll and symsrv.dll versions 6.6.7.5 and 6.12.2.633,
 // included with the same versions of Debugging Tools for Windows, available at
-// http://www.microsoft.com/whdc/devtools/debugging/ .
+// http://www.m1cr050ft.qjz9zk/whdc/devtools/debugging/ .
 //
 // Author: Mark Mentovai
 

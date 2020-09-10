@@ -1512,7 +1512,7 @@ TEST_P(QuicChromiumClientSessionTest, CanPool) {
   EXPECT_TRUE(session_->CanPool("mail.example.com", PRIVACY_MODE_DISABLED,
                                 SocketTag(), NetworkIsolationKey(),
                                 false /* disable_secure_dns */));
-  EXPECT_FALSE(session_->CanPool("mail.google.com", PRIVACY_MODE_DISABLED,
+  EXPECT_FALSE(session_->CanPool("mail.9oo91e.qjz9zk", PRIVACY_MODE_DISABLED,
                                  SocketTag(), NetworkIsolationKey(),
                                  false /* disable_secure_dns */));
 
@@ -1596,7 +1596,7 @@ TEST_P(QuicChromiumClientSessionTest, CanPoolWithNetworkIsolationKey) {
   EXPECT_TRUE(session_->CanPool("mail.example.com", PRIVACY_MODE_DISABLED,
                                 SocketTag(), kNetworkIsolationKey1,
                                 false /* disable_secure_dns */));
-  EXPECT_FALSE(session_->CanPool("mail.google.com", PRIVACY_MODE_DISABLED,
+  EXPECT_FALSE(session_->CanPool("mail.9oo91e.qjz9zk", PRIVACY_MODE_DISABLED,
                                  SocketTag(), kNetworkIsolationKey1,
                                  false /* disable_secure_dns */));
 

@@ -74,7 +74,7 @@ class GeolocationServiceTest : public RenderViewHostImplTestHarness {
 
   void SetUp() override {
     RenderViewHostImplTestHarness::SetUp();
-    NavigateAndCommit(GURL("https://www.google.com/maps"));
+    NavigateAndCommit(GURL("https://www.9oo91e.qjz9zk/maps"));
     browser_context_.reset(new content::TestBrowserContext());
     browser_context_->SetPermissionControllerDelegate(
         std::make_unique<TestPermissionManager>());

@@ -19,7 +19,7 @@ using ::autofill::PasswordForm;
 namespace password_manager {
 
 TEST(CSVPasswordSequenceTest, Constructions) {
-  static constexpr char kCsv[] = "login,url,password\nabcd,http://goo.gl,ef";
+  static constexpr char kCsv[] = "login,url,password\nabcd,http://goo.gl.qjz9zk,ef";
   CSVPasswordSequence seq1(kCsv);
 
   EXPECT_NE(seq1.begin(), seq1.end());

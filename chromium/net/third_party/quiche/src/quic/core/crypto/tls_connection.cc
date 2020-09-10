@@ -109,7 +109,7 @@ TlsConnection* TlsConnection::ConnectionFromSsl(const SSL* ssl) {
 }
 
 // TODO(nharper): Once
-// https://boringssl-review.googlesource.com/c/boringssl/+/40127 lands and is
+// https://boringssl-review.9oo91esource.qjz9zk/c/boringssl/+/40127 lands and is
 // rolled into google3, remove the BORINGSSL_API_VERSION check.
 const SSL_QUIC_METHOD TlsConnection::kSslQuicMethod{
 #if BORINGSSL_API_VERSION < 10

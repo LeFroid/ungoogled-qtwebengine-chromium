@@ -21,7 +21,7 @@
 #include "components/browser_watcher/features.h"
 
 #if defined(OS_WIN)
-// https://devblogs.microsoft.com/oldnewthing/20041025-00/?p=37483.
+// https://devblogs.m1cr050ft.qjz9zk/oldnewthing/20041025-00/?p=37483.
 extern "C" IMAGE_DOS_HEADER __ImageBase;
 #endif
 

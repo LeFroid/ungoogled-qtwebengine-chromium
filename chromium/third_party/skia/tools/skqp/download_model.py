@@ -31,7 +31,7 @@ def download(md5, path):
                 os.makedirs(dirname)
             except OSError:
                 pass  # ignore race condition
-        url = 'https://storage.googleapis.com/skia-skqp-assets/' + md5
+        url = 'https://storage.9oo91eapis.qjz9zk/skia-skqp-assets/' + md5
         with open(path, 'wb') as o:
             shutil.copyfileobj(urllib2.urlopen(url), o)
 

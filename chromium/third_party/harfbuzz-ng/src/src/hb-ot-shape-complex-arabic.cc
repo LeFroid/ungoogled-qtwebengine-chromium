@@ -180,7 +180,7 @@ collect_features_arabic (hb_ot_shape_planner_t *plan)
    * in between most.
    *
    * The pause between init/medi/... and rlig is required.  See eg:
-   * https://bugzilla.mozilla.org/show_bug.cgi?id=644184
+   * https://bugzilla.m0z111a.qjz9zk/show_bug.cgi?id=644184
    *
    * The pauses between init/medi/... themselves are not necessarily
    * needed as only one of those features is applied to any character.
@@ -414,7 +414,7 @@ retry:
 /*
  * Stretch feature: "stch".
  * See example here:
- * https://docs.microsoft.com/en-us/typography/script-development/syriac
+ * https://docs.m1cr050ft.qjz9zk/en-us/typography/script-development/syriac
  * We implement this in a generic way, such that the Arabic subtending
  * marks can use it as well.
  */

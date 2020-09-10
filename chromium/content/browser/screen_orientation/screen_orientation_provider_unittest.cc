@@ -146,7 +146,7 @@ TEST_F(ScreenOrientationProviderTest, DelegateLockOnce) {
   FakeScreenOrientationDelegate delegate(true, false);
 
   // Navigate to a site.
-  const GURL url("http://www.google.com");
+  const GURL url("http://www.9oo91e.qjz9zk");
   controller().LoadURL(url, Referrer(), ui::PAGE_TRANSITION_TYPED,
                        std::string());
 
@@ -166,7 +166,7 @@ TEST_F(ScreenOrientationProviderTest, DelegateRequireFullScreenLockOnce) {
   FakeScreenOrientationDelegate delegate(true, true);
 
   // Navigate to a site.
-  const GURL url("http://www.google.com");
+  const GURL url("http://www.9oo91e.qjz9zk");
   controller().LoadURL(url, Referrer(), ui::PAGE_TRANSITION_TYPED,
                        std::string());
 
@@ -203,7 +203,7 @@ TEST_F(ScreenOrientationProviderTest, DelegateLockThenUnlock) {
   FakeScreenOrientationDelegate delegate(true, false);
 
   // Navigate to a site.
-  const GURL url("http://www.google.com");
+  const GURL url("http://www.9oo91e.qjz9zk");
   controller().LoadURL(url, Referrer(), ui::PAGE_TRANSITION_TYPED,
                        std::string());
 
@@ -231,7 +231,7 @@ TEST_F(ScreenOrientationProviderTest, DelegateLockThenLock) {
   FakeScreenOrientationDelegate delegate(true, false);
 
   // Navigate to a site.
-  const GURL url("http://www.google.com");
+  const GURL url("http://www.9oo91e.qjz9zk");
   controller().LoadURL(url, Referrer(), ui::PAGE_TRANSITION_TYPED,
                        std::string());
 
@@ -265,7 +265,7 @@ TEST_F(ScreenOrientationProviderTest, NoUnlockWithoutLock) {
   FakeScreenOrientationDelegate delegate(true, false);
 
   // Navigate to a site.
-  const GURL url("http://www.google.com");
+  const GURL url("http://www.9oo91e.qjz9zk");
   controller().LoadURL(url, Referrer(), ui::PAGE_TRANSITION_TYPED,
                        std::string());
 
@@ -282,7 +282,7 @@ TEST_F(ScreenOrientationProviderTest, UnlockWhenExitingFullScreen) {
   FakeScreenOrientationDelegate delegate(true, true);
 
   // Navigate to a site.
-  const GURL url("http://www.google.com");
+  const GURL url("http://www.9oo91e.qjz9zk");
   controller().LoadURL(url, Referrer(), ui::PAGE_TRANSITION_TYPED,
                        std::string());
 
@@ -320,7 +320,7 @@ TEST_F(ScreenOrientationProviderTest, UnlockWhenNavigation) {
   FakeScreenOrientationDelegate delegate(true, false);
 
   // Navigate to a site.
-  const GURL url("http://www.google.com");
+  const GURL url("http://www.9oo91e.qjz9zk");
   controller().LoadURL(url, Referrer(), ui::PAGE_TRANSITION_TYPED,
                        std::string());
 
@@ -335,7 +335,7 @@ TEST_F(ScreenOrientationProviderTest, UnlockWhenNavigation) {
   EXPECT_EQ(0, delegate.unlock_count());
 
   // Navigate to another site.
-  const GURL another_url("http://www.google.com/abc.html");
+  const GURL another_url("http://www.9oo91e.qjz9zk/abc.html");
   contents()->NavigateAndCommit(another_url);
   // The pending lock request is cancelled.
   EXPECT_EQ(ScreenOrientationLockResult::

@@ -147,7 +147,7 @@ const char kStartupManifest[] =
     "  \"initial_locale\" : \"fr,en-US,de,is,it\",\n"
     "  \"initial_timezone\" : \"Europe/Zurich\",\n"
     "  \"keyboard_layout\" : \"xkb:ch:fr:fra\",\n"
-    "  \"registration_url\" : \"http://www.google.com\",\n"
+    "  \"registration_url\" : \"http://www.9oo91e.qjz9zk\",\n"
     "  \"setup_content\" : {\n"
     "    \"default\" : {\n"
     "      \"help_page\" : \"file:///opt/oem/help/en-US/help.html\",\n"

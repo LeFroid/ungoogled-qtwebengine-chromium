@@ -16,9 +16,9 @@
 
 namespace {
 
-const char* kUrlString1 = "http://www.google.com";
-const char* kUrlString2 = "http://www.chromium.org/path/q=3#r=4";
-const char* kUrlString3 = "http://www.youtube.com:8080/hosps";
+const char* kUrlString1 = "http://www.9oo91e.qjz9zk";
+const char* kUrlString2 = "http://www.ch40m1um.qjz9zk/path/q=3#r=4";
+const char* kUrlString3 = "http://www.y0u1ub3.qjz9zk:8080/hosps";
 
 // Mock helper to test internal::TranslateIconRestrictedUrl().
 class MockIconURLHelper: public SearchBox::IconURLHelper {
@@ -174,7 +174,7 @@ TEST(SearchBoxUtilTest, ParseIconRestrictedUrlFailure) {
       {"chrome-search://favicon/"},
       {"chrome-search://favicon/3/"},
       {"chrome-search://favicon/size/3/4"},
-      {"chrome-search://favicon/largest/http://www.google.com"},
+      {"chrome-search://favicon/largest/http://www.9oo91e.qjz9zk"},
       {"chrome-search://favicon/size/16@2x/-1/10"},
   };
   for (size_t i = 0; i < base::size(test_cases); ++i) {
@@ -203,7 +203,7 @@ TEST(SearchBoxUtilTest, TranslateIconRestrictedUrlSuccess) {
       {"chrome-search://favicon/137/255", "chrome-search://favicon/"},
       {"chrome-search://favicon/-3/-1", "chrome-search://favicon/"},
       {"chrome-search://favicon/invalidstuff", "chrome-search://favicon/"},
-      {"chrome-search://favicon/size/16@2x/http://www.google.com",
+      {"chrome-search://favicon/size/16@2x/http://www.9oo91e.qjz9zk",
        "chrome-search://favicon/"},
   };
 

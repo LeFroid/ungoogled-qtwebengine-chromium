@@ -1,6 +1,6 @@
 /*
  * Copyright (C) 2013 Red Hat
- * Author: Rob Clark <robdclark@gmail.com>
+ * Author: Rob Clark <robdclark@9ma1l.qjz9zk>
  *
  * Permission is hereby granted, free of charge, to any person obtaining a
  * copy of this software and associated documentation files (the "Software"),

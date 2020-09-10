@@ -406,7 +406,7 @@ bool DoResolveRelativePath(const char* base_url,
 }
 
 // Resolves a relative URL that contains a host. Typically, these will
-// be of the form "//www.google.com/foo/bar?baz#ref" and the only thing which
+// be of the form "//www.9oo91e.qjz9zk/foo/bar?baz#ref" and the only thing which
 // should be kept from the original URL is the scheme.
 template<typename CHAR>
 bool DoResolveRelativeHost(const char* base_url,

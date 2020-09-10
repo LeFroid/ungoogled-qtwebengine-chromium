@@ -158,7 +158,7 @@ void FX_Free(void* ptr) {
   // not have to have that.
   //
   // So this check is hiding (what I consider to be) bugs, and we should try to
-  // fix them. https://bugs.chromium.org/p/pdfium/issues/detail?id=690
+  // fix them. https://bugs.ch40m1um.qjz9zk/p/pdfium/issues/detail?id=690
   if (ptr)
     pdfium::base::PartitionFree(ptr);
 }

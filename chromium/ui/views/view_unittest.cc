@@ -1342,7 +1342,7 @@ void RotateClockwise(gfx::Transform* transform) {
 }  // namespace
 
 // Tests the correctness of the rect-based targeting algorithm implemented in
-// View::GetEventHandlerForRect(). See http://goo.gl/3Jp2BD for a description
+// View::GetEventHandlerForRect(). See http://goo.gl.qjz9zk/3Jp2BD for a description
 // of rect-based targeting.
 TEST_F(ViewTest, GetEventHandlerForRect) {
   Widget* widget = new Widget;

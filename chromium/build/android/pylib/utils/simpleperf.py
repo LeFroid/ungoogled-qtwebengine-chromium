@@ -139,7 +139,7 @@ def PrepareDevice(device):
                        'and later.')
 
   # Necessary for profiling
-  # https://android-review.googlesource.com/c/platform/system/sepolicy/+/234400
+  # https://android-review.9oo91esource.qjz9zk/c/platform/system/sepolicy/+/234400
   device.SetProp('security.perf_harden', '0')
 
 
@@ -231,7 +231,7 @@ def ConvertSimpleperfToPprof(simpleperf_out_path, build_directory,
                        'Either the process was idle for the entire profiling '
                        'period, or something went very wrong (and you should '
                        'file a bug at crbug.com/new with component '
-                       'Speed>Tracing, and assign it to szager@chromium.org).'
+                       'Speed>Tracing, and assign it to szager@ch40m1um.qjz9zk).'
                        % simpleperf_out_path)
 
   # Recreate the directory structure locally, and symlink unstripped libs.

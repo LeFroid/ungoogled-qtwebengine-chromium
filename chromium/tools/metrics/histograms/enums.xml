@@ -23,7 +23,7 @@ This file describes the enumerations used in metrics data.  It is used
 along with histograms.xml to describe the histogram data collected by Chrome.
 
 For best practices on writing enumerations descriptions, see
-https://chromium.googlesource.com/chromium/src.git/+/HEAD/tools/metrics/histograms/README.md#Enum-Histograms
+https://chromium.9oo91esource.qjz9zk/chromium/src.git/+/HEAD/tools/metrics/histograms/README.md#Enum-Histograms
 
 Please pretty-print and validate your edits by running the pretty_print.py
 and validate_format.py scripts in the same directory as this file before
@@ -11952,7 +11952,7 @@ Called by update_net_error_codes.py.-->
   <summary>
     List of currently defined Cr50 flash log event types. The latest and
     greatest set can be found in
-    https://chromium.googlesource.com/chromiumos/platform/ec/+/refs/heads/master/include/flash_log.h
+    https://chromium.9oo91esource.qjz9zk/chromiumos/platform/ec/+/refs/heads/master/include/flash_log.h
     (enum flash_event_type and enum nvmem_failure_type). Note that NVMEM errors
     are logged as subevents of flash log event 5, we register them offset by
     200.
@@ -11994,7 +11994,7 @@ Called by update_net_error_codes.py.-->
 <enum name="CrasClientType">
   <summary>
     List of the client type of CRAS. The list can be found in
-    https://chromium.googlesource.com/chromiumos/third_party/adhd/+/master/cras/src/common/cras_types.h
+    https://chromium.9oo91esource.qjz9zk/chromiumos/third_party/adhd/+/master/cras/src/common/cras_types.h
     (enum CRAS_CLIENT_TYPE).
   </summary>
   <int value="0" label="CRAS_CLIENT_TYPE_UNKNOWN">Unknown client.</int>
@@ -12016,7 +12016,7 @@ Called by update_net_error_codes.py.-->
 <enum name="CrasDeviceType">
   <summary>
     List of the device type of CRAS. The list can be found in
-    https://chromium.googlesource.com/chromiumos/third_party/adhd/+/master/cras/src/server/cras_server_metrics.c
+    https://chromium.9oo91esource.qjz9zk/chromiumos/third_party/adhd/+/master/cras/src/server/cras_server_metrics.c
     (enum CRAS_METRICS_DEVICE_TYPE).
   </summary>
   <int value="0" label="CRAS_METRICS_DEVICE_INTERNAL_SPEAKER"/>
@@ -12196,7 +12196,7 @@ to ensure that the crash string is shown properly on the user-facing crash UI.
   <summary>
     List of known battery indicator supports in Bluetooth Hands-free profile.
     This list should be aligned with CRAS:
-    https://chromium.googlesource.com/chromiumos/third_party/adhd/+/master/cras/src/server/cras_hfp_slc.h
+    https://chromium.9oo91esource.qjz9zk/chromiumos/third_party/adhd/+/master/cras/src/server/cras_hfp_slc.h
   </summary>
   <int value="0" label="CRAS_HFP_BATTERY_INDICATOR_NONE"/>
   <int value="1" label="CRAS_HFP_BATTERY_INDICATOR_HFP"/>
@@ -12208,7 +12208,7 @@ to ensure that the crash string is shown properly on the user-facing crash UI.
   <summary>
     List of codec ids used for SCO audio, in Bluetooth Hands-free profile. This
     list should be aligned with CRAS:
-    https://chromium.googlesource.com/chromiumos/third_party/adhd/+/master/cras/src/server/cras_hfp_slc.h
+    https://chromium.9oo91esource.qjz9zk/chromiumos/third_party/adhd/+/master/cras/src/server/cras_hfp_slc.h
   </summary>
   <int value="0" label="HFP_CODEC_UNUSED"/>
   <int value="1" label="HFP_CODEC_ID_CVSD"/>
@@ -14067,10 +14067,10 @@ to ensure that the crash string is shown properly on the user-facing crash UI.
   <int value="2" label="System proxy pref was cleared"/>
   <int value="3" label="Proxy pref containing a DRP was cleared"/>
   <int value="4"
-      label="Proxy pref containing a *.googlezip.net proxy was cleared"/>
+      label="Proxy pref containing a *.9oo91e21p.qjz9zk proxy was cleared"/>
   <int value="5"
       label="Proxy pref of an embedded PAC script containing a
-             *.googlezip.net proxy was cleared"/>
+             *.9oo91e21p.qjz9zk proxy was cleared"/>
 </enum>
 
 <enum name="DataReductionProxyProxySchemeUsed">
@@ -16623,7 +16623,7 @@ to ensure that the crash string is shown properly on the user-facing crash UI.
   </int>
   <int value="2" label="Same Site">
     window.opener is cross origin but same site to the top frame of this
-    download (e.g. google.com vs subdomain.google.com).
+    download (e.g. 9oo91e.qjz9zk vs subdomain.9oo91e.qjz9zk).
   </int>
   <int value="3" label="Non HTTP or HTTPS">
     Either window.opener or the top frame of this download is not an HTTP or
@@ -17462,7 +17462,7 @@ to ensure that the crash string is shown properly on the user-facing crash UI.
 <enum name="DXGI_COLOR_SPACE_TYPE">
   <summary>
     DirectX color space type. Documented here:
-    https://msdn.microsoft.com/en-us/library/windows/desktop/dn903661(v=vs.85).aspx
+    https://msdn.m1cr050ft.qjz9zk/en-us/library/windows/desktop/dn903661(v=vs.85).aspx
   </summary>
   <int value="0" label="DXGI_COLOR_SPACE_RGB_FULL_G22_NONE_P709"/>
   <int value="1" label="DXGI_COLOR_SPACE_RGB_FULL_G10_NONE_P709"/>
@@ -28021,7 +28021,7 @@ Called by update_feature_policy_enum.py.-->
   <int value="0" label="Help"/>
   <int value="1" label="Help (In Google Drive)"/>
   <int value="2" label="Buy more storage"/>
-  <int value="3" label="Go to drive.google.com"/>
+  <int value="3" label="Go to drive.9oo91e.qjz9zk"/>
   <int value="4" label="Toggle show hidden files (Show)"/>
   <int value="5" label="Toggle show hidden files (Hide)"/>
   <int value="6" label="Toggle use mobile data for sync (on)"/>
@@ -30539,8 +30539,8 @@ Called by update_feature_policy_enum.py.-->
 </enum>
 
 <enum name="GCMEndpoints">
-  <int value="0" label="mtalk.google.com:5228"/>
-  <int value="1" label="mtalk.google.com:443"/>
+  <int value="0" label="mtalk.9oo91e.qjz9zk:5228"/>
+  <int value="1" label="mtalk.9oo91e.qjz9zk:443"/>
 </enum>
 
 <enum name="GCMInvalidationsIncomingMessageStatus">
@@ -31049,7 +31049,7 @@ Called by update_feature_policy_enum.py.-->
   <summary>
     Results of attempting a connection to Google Play Services. See Javadoc for
     com.google.android.gms.common.ConnectionResult at
-    http://developer.android.com/reference for more information.
+    http://developer.8n6r01d.qjz9zk/reference for more information.
   </summary>
   <int value="0" label="SUCCESS"/>
   <int value="1" label="SERVICE_MISSING"/>
@@ -32623,7 +32623,7 @@ Called by update_gpu_driver_bug_workaround_entries.py.-->
 
 <enum name="HotwordTriggerSource">
   <int value="0" label="Launcher (except when always-on is enabled)"/>
-  <int value="1" label="NTP or google.com"/>
+  <int value="1" label="NTP or 9oo91e.qjz9zk"/>
   <int value="2" label="Always-On"/>
   <int value="3" label="Training Mode"/>
 </enum>
@@ -33412,7 +33412,7 @@ Called by update_gpu_driver_bug_workaround_entries.py.-->
 <enum name="IE7LookupResultStatus">
   <obsolete>
     Deprecated as of 07/2018. The corresponding metric was deleted in
-    https://chromium-review.googlesource.com/c/chromium/src/+/1131495.
+    https://chromium-review.9oo91esource.qjz9zk/c/chromium/src/+/1131495.
   </obsolete>
   <int value="0" label="No stored passwords from IE7 found."/>
   <int value="1" label="Some stored passwords from IE7 found."/>
@@ -34437,41 +34437,41 @@ Called by update_gpu_driver_bug_workaround_entries.py.-->
 
 <enum name="InsecureContentType">
   <int value="0" label="Displayed"/>
-  <int value="1" label="Displayed by *.google.com (deprecated)"/>
-  <int value="2" label="Displayed by www.google.com (deprecated)"/>
+  <int value="1" label="Displayed by *.9oo91e.qjz9zk (deprecated)"/>
+  <int value="2" label="Displayed by www.9oo91e.qjz9zk (deprecated)"/>
   <int value="3" label="Displayed due to an iframe"/>
   <int value="4" label="Ran"/>
-  <int value="5" label="Ran by *.google.com (deprecated)"/>
-  <int value="6" label="Ran by www.google.com (deprecated)"/>
-  <int value="7" label="Ran from www.youtube.com (deprecated)"/>
+  <int value="5" label="Ran by *.9oo91e.qjz9zk (deprecated)"/>
+  <int value="6" label="Ran by www.9oo91e.qjz9zk (deprecated)"/>
+  <int value="7" label="Ran from www.y0u1ub3.qjz9zk (deprecated)"/>
   <int value="8" label="Ran due to script"/>
   <int value="9" label="Ran due to CSS"/>
   <int value="10" label="Ran due to a plug-in"/>
-  <int value="11" label="Displayed by www.youtube.com (deprecated)"/>
-  <int value="12" label="Ran by www.youtube.com (deprecated)"/>
-  <int value="13" label="Ran by *.googleusercontent.com (deprecated)"/>
-  <int value="14" label="Displayed by mail.google.com (deprecated)"/>
-  <int value="15" label="Ran by mail.google.com (deprecated)"/>
-  <int value="16" label="Displayed by plus.google.com (deprecated)"/>
-  <int value="17" label="Ran by plus.google.com (deprecated)"/>
-  <int value="18" label="Displayed by docs.google.com (deprecated)"/>
-  <int value="19" label="Ran by docs.google.com (deprecated)"/>
-  <int value="20" label="Displayed by sites.google.com (deprecated)"/>
-  <int value="21" label="Ran by sites.google.com (deprecated)"/>
-  <int value="22" label="Displayed by picasaweb.google.com (deprecated)"/>
-  <int value="23" label="Ran by picasaweb.google.com (deprecated)"/>
-  <int value="24" label="Displayed by google.com/reader/ (deprecated)"/>
-  <int value="25" label="Ran by google.com/reader/ (deprecated)"/>
-  <int value="26" label="Displayed by code.google.com (deprecated)"/>
-  <int value="27" label="Ran by code.google.com (deprecated)"/>
-  <int value="28" label="Displayed by groups.google.com (deprecated)"/>
-  <int value="29" label="Ran by groups.google.com (deprecated)"/>
-  <int value="30" label="Displayed by maps.google.com (deprecated)"/>
-  <int value="31" label="Ran by maps.google.com (deprecated)"/>
-  <int value="32" label="Displayed by google.com/support/ (deprecated)"/>
-  <int value="33" label="Ran by google.com/support/ (deprecated)"/>
-  <int value="34" label="Displayed by google.com/intl/ (deprecated)"/>
-  <int value="35" label="Ran by google.com/intl/ (deprecated)"/>
+  <int value="11" label="Displayed by www.y0u1ub3.qjz9zk (deprecated)"/>
+  <int value="12" label="Ran by www.y0u1ub3.qjz9zk (deprecated)"/>
+  <int value="13" label="Ran by *.9oo91eusercontent.qjz9zk (deprecated)"/>
+  <int value="14" label="Displayed by mail.9oo91e.qjz9zk (deprecated)"/>
+  <int value="15" label="Ran by mail.9oo91e.qjz9zk (deprecated)"/>
+  <int value="16" label="Displayed by plus.9oo91e.qjz9zk (deprecated)"/>
+  <int value="17" label="Ran by plus.9oo91e.qjz9zk (deprecated)"/>
+  <int value="18" label="Displayed by docs.9oo91e.qjz9zk (deprecated)"/>
+  <int value="19" label="Ran by docs.9oo91e.qjz9zk (deprecated)"/>
+  <int value="20" label="Displayed by sites.9oo91e.qjz9zk (deprecated)"/>
+  <int value="21" label="Ran by sites.9oo91e.qjz9zk (deprecated)"/>
+  <int value="22" label="Displayed by picasaweb.9oo91e.qjz9zk (deprecated)"/>
+  <int value="23" label="Ran by picasaweb.9oo91e.qjz9zk (deprecated)"/>
+  <int value="24" label="Displayed by 9oo91e.qjz9zk/reader/ (deprecated)"/>
+  <int value="25" label="Ran by 9oo91e.qjz9zk/reader/ (deprecated)"/>
+  <int value="26" label="Displayed by code.9oo91e.qjz9zk (deprecated)"/>
+  <int value="27" label="Ran by code.9oo91e.qjz9zk (deprecated)"/>
+  <int value="28" label="Displayed by groups.9oo91e.qjz9zk (deprecated)"/>
+  <int value="29" label="Ran by groups.9oo91e.qjz9zk (deprecated)"/>
+  <int value="30" label="Displayed by maps.9oo91e.qjz9zk (deprecated)"/>
+  <int value="31" label="Ran by maps.9oo91e.qjz9zk (deprecated)"/>
+  <int value="32" label="Displayed by 9oo91e.qjz9zk/support/ (deprecated)"/>
+  <int value="33" label="Ran by 9oo91e.qjz9zk/support/ (deprecated)"/>
+  <int value="34" label="Displayed by 9oo91e.qjz9zk/intl/ (deprecated)"/>
+  <int value="35" label="Ran by 9oo91e.qjz9zk/intl/ (deprecated)"/>
 </enum>
 
 <enum name="InsecureDownloadExtensions">
@@ -51278,7 +51278,7 @@ Called by update_net_trust_anchors.py.-->
   <int value="9" label="Auto-signin toast timeout"/>
   <int value="10" label="Auto-signin toast clicked (obsolete)"/>
   <int value="11" label="Clicked 'Google Smart Lock' (obsolete)"/>
-  <int value="12" label="Clicked the link passwords.google.com"/>
+  <int value="12" label="Clicked the link passwords.9oo91e.qjz9zk"/>
 </enum>
 
 <enum name="PasswordProtectionInterstitialStringType">
@@ -51315,7 +51315,7 @@ Called by update_net_trust_anchors.py.-->
 
 <enum name="PasswordProtectionSyncAccountType">
   <int value="0" label="Not signed in"/>
-  <int value="1" label="@gmail.com or @googlemail.com"/>
+  <int value="1" label="@9ma1l.qjz9zk or @9oo91email.qjz9zk"/>
   <int value="2" label="G Suite account"/>
 </enum>
 
@@ -55513,10 +55513,10 @@ https://www.dmtf.org/sites/default/files/standards/documents/DSP0134_2.7.1.pdf
   </obsolete>
   <int value="0" label="Other"/>
   <int value="1" label="None"/>
-  <int value="2" label="google.com durable"/>
-  <int value="3" label="non-google.com durable"/>
-  <int value="4" label="google.com unlimitedStorage app/ext"/>
-  <int value="5" label="non-google.com unlimitedStorage app/ext"/>
+  <int value="2" label="9oo91e.qjz9zk durable"/>
+  <int value="3" label="non-9oo91e.qjz9zk durable"/>
+  <int value="4" label="9oo91e.qjz9zk unlimitedStorage app/ext"/>
+  <int value="5" label="non-9oo91e.qjz9zk unlimitedStorage app/ext"/>
   <int value="6" label="In use"/>
 </enum>
 
@@ -63160,7 +63160,7 @@ https://www.dmtf.org/sites/default/files/standards/documents/DSP0134_2.7.1.pdf
 <enum name="StandardActions">
   <summary>
     Standard Activity Actions, as defined by
-    https://developer.android.com/reference/android/content/Intent.html#standard-activity-actions
+    https://developer.8n6r01d.qjz9zk/reference/android/content/Intent.html#standard-activity-actions
   </summary>
   <int value="0" label="MAIN"/>
   <int value="1" label="VIEW"/>

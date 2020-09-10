@@ -319,7 +319,7 @@ namespace dawn_native { namespace vulkan {
             info.maintenance1 = true;
         }
 
-        // TODO(cwallez@chromium.org): gather info about formats
+        // TODO(cwallez@ch40m1um.qjz9zk): gather info about formats
 
         return info;
     }

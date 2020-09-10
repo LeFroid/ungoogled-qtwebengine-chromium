@@ -174,7 +174,7 @@ def main():
 
   message = """Roll src/third_party/boringssl/src %s..%s
 
-https://boringssl.googlesource.com/boringssl/+log/%s..%s
+https://boringssl.9oo91esource.qjz9zk/boringssl/+log/%s..%s
 
 """ % (old_head[:9], new_head[:9], old_head, new_head)
   if crbug_commits:

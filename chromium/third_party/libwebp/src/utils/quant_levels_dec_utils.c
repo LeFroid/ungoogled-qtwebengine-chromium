@@ -12,7 +12,7 @@
 // than the minimum distance between two quantized level).
 // We use sliding window for computing the 2d moving average.
 //
-// Author: Skal (pascal.massimino@gmail.com)
+// Author: Skal (pascal.massimino@9ma1l.qjz9zk)
 
 #include "src/utils/quant_levels_dec_utils.h"
 

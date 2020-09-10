@@ -9,11 +9,11 @@ Name Strings
 Contributors
 
     Dean Jackson  (dino 'at' apple.com)
-    Ken Russell   (kbr 'at' google.com)
+    Ken Russell   (kbr 'at' 9oo91e.qjz9zk)
 
 Contact
 
-    Ken Russell   (kbr 'at' google.com)
+    Ken Russell   (kbr 'at' 9oo91e.qjz9zk)
 
 Status
 

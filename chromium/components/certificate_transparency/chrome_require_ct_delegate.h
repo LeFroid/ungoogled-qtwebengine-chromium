@@ -25,7 +25,7 @@ namespace certificate_transparency {
 // when to require Certificate Transparency for a host or certificate. Combined
 // with ChromeCTPolicyEnforcer, these two classes implement the
 // "Certificate Transparency in Chrome" policy from
-// https://goo.gl/chrome/ct-policy - PolicyEnforcer imposing the policies on
+// https://goo.gl.qjz9zk/chrome/ct-policy - PolicyEnforcer imposing the policies on
 // the SCTs to determine whether or not a certificate complies, and
 // RequireCTDelegate to determine whether or not compliance is required for the
 // connection to succeed.

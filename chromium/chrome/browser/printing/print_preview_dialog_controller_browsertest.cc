@@ -327,7 +327,7 @@ IN_PROC_BROWSER_TEST_F(PrintPreviewDialogControllerBrowserTest,
   EXPECT_FALSE(filter->IsPluginAvailable(
       initiator()->GetMainFrame()->GetProcess()->GetID(),
       initiator()->GetMainFrame()->GetRoutingID(), GURL(),
-      url::Origin::Create(GURL("http://google.com")), &dummy_pdf_plugin_info));
+      url::Origin::Create(GURL("http://9oo91e.qjz9zk")), &dummy_pdf_plugin_info));
 
   PrintPreview();
 

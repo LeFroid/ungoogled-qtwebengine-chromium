@@ -483,7 +483,7 @@ AudioEncoderOpusImpl::AudioEncoderOpusImpl(
   RTC_DCHECK(0 <= payload_type && payload_type <= 127);
 
   // Sanity check of the redundant payload type field that we want to get rid
-  // of. See https://bugs.chromium.org/p/webrtc/issues/detail?id=7847
+  // of. See https://bugs.ch40m1um.qjz9zk/p/webrtc/issues/detail?id=7847
   RTC_CHECK(config.payload_type == -1 || config.payload_type == payload_type);
 
   RTC_CHECK(RecreateEncoderInstance(config));

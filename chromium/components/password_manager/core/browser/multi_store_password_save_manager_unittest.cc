@@ -78,10 +78,10 @@ class MultiStorePasswordSaveManagerTest : public testing::Test {
   MultiStorePasswordSaveManagerTest()
       : votes_uploader_(&client_,
                         false /* is_possible_change_password_form */) {
-    GURL origin = GURL("https://accounts.google.com/a/ServiceLoginAuth");
-    GURL action = GURL("https://accounts.google.com/a/ServiceLogin");
-    GURL psl_origin = GURL("https://myaccounts.google.com/a/ServiceLoginAuth");
-    GURL psl_action = GURL("https://myaccounts.google.com/a/ServiceLogin");
+    GURL origin = GURL("https://accounts.9oo91e.qjz9zk/a/ServiceLoginAuth");
+    GURL action = GURL("https://accounts.9oo91e.qjz9zk/a/ServiceLogin");
+    GURL psl_origin = GURL("https://myaccounts.9oo91e.qjz9zk/a/ServiceLoginAuth");
+    GURL psl_action = GURL("https://myaccounts.9oo91e.qjz9zk/a/ServiceLogin");
 
     observed_form_.url = origin;
     observed_form_.action = action;
@@ -117,8 +117,8 @@ class MultiStorePasswordSaveManagerTest : public testing::Test {
 
     saved_match_.origin = origin;
     saved_match_.action = action;
-    saved_match_.signon_realm = "https://accounts.google.com/";
-    saved_match_.username_value = ASCIIToUTF16("test@gmail.com");
+    saved_match_.signon_realm = "https://accounts.9oo91e.qjz9zk/";
+    saved_match_.username_value = ASCIIToUTF16("test@9ma1l.qjz9zk");
     saved_match_.username_element = ASCIIToUTF16("field1");
     saved_match_.password_value = ASCIIToUTF16("test1");
     saved_match_.password_element = ASCIIToUTF16("field2");
@@ -128,7 +128,7 @@ class MultiStorePasswordSaveManagerTest : public testing::Test {
     psl_saved_match_ = saved_match_;
     psl_saved_match_.origin = psl_origin;
     psl_saved_match_.action = psl_action;
-    psl_saved_match_.signon_realm = "https://myaccounts.google.com/";
+    psl_saved_match_.signon_realm = "https://myaccounts.9oo91e.qjz9zk/";
     psl_saved_match_.is_public_suffix_match = true;
 
     parsed_observed_form_ = saved_match_;
@@ -189,10 +189,10 @@ class MultiStorePasswordSaveManagerTest : public testing::Test {
   PasswordForm CreateSavedFederated() {
     autofill::PasswordForm federated;
     federated.origin = GURL("https://example.in/login");
-    federated.signon_realm = "federation://example.in/google.com";
+    federated.signon_realm = "federation://example.in/9oo91e.qjz9zk";
     federated.type = autofill::PasswordForm::Type::kApi;
     federated.federation_origin =
-        url::Origin::Create(GURL("https://google.com/"));
+        url::Origin::Create(GURL("https://9oo91e.qjz9zk/"));
     federated.username_value = ASCIIToUTF16("federated_username");
     return federated;
   }

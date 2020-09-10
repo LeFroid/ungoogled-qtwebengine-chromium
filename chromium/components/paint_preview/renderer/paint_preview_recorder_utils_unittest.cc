@@ -119,8 +119,8 @@ TEST(PaintPreviewServiceUtilsTest, TestBuildAndSerializeProto) {
   auto token = base::UnguessableToken::Create();
   auto embedding_token = base::UnguessableToken::Create();
   PaintPreviewTracker tracker(token, embedding_token, true);
-  tracker.AnnotateLink(GURL("www.google.com"), gfx::Rect(1, 2, 3, 4));
-  tracker.AnnotateLink(GURL("www.chromium.org"), gfx::Rect(10, 20, 10, 20));
+  tracker.AnnotateLink(GURL("www.9oo91e.qjz9zk"), gfx::Rect(1, 2, 3, 4));
+  tracker.AnnotateLink(GURL("www.ch40m1um.qjz9zk"), gfx::Rect(10, 20, 10, 20));
   tracker.CreateContentForRemoteFrame(gfx::Rect(1, 1, 1, 1),
                                       base::UnguessableToken::Create());
   tracker.CreateContentForRemoteFrame(gfx::Rect(1, 2, 4, 8),

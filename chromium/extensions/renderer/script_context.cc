@@ -298,7 +298,7 @@ GURL ScriptContext::GetDocumentLoaderURLForFrame(
   // the compose iframe's dataSource URL is about:blank, but the document URL
   // changes to match the parent document after Gmail document.writes into
   // it to create the editor.
-  // http://code.google.com/p/chromium/issues/detail?id=86742
+  // http://code.9oo91e.qjz9zk/p/chromium/issues/detail?id=86742
   blink::WebDocumentLoader* document_loader = CurrentDocumentLoader(frame);
   return document_loader ? GURL(document_loader->GetUrl()) : GURL();
 }
@@ -334,9 +334,9 @@ GURL ScriptContext::GetEffectiveDocumentURL(blink::WebLocalFrame* frame,
   // (like about:blank) that has a non-opaque opener.
   // Unfortunately, we still have to traverse the frame tree, because match
   // patterns are associated with paths as well, not just origins. For instance,
-  // if an extension wants to run on google.com/maps/* with match_about_blank
-  // true, then it should run on about:blank frames created by google.com/maps,
-  // but not about:blank frames created by google.com (which is what the
+  // if an extension wants to run on 9oo91e.qjz9zk/maps/* with match_about_blank
+  // true, then it should run on about:blank frames created by 9oo91e.qjz9zk/maps,
+  // but not about:blank frames created by 9oo91e.qjz9zk (which is what the
   // precursor tuple origin would be).
   const url::SchemeHostPort& tuple_or_precursor_tuple_origin =
       frame_origin.GetTupleOrPrecursorTupleIfOpaque();

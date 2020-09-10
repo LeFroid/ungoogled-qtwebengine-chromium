@@ -337,7 +337,7 @@ class DiscoveryE2ETest : public testing::Test {
 // - The ipv6 socket in discovery/mdns/service_impl.cc fails to bind to an ipv6
 //   address on the loopback interface. Investigating this issue is pending
 //   resolution of bug
-//   https://bugs.chromium.org/p/openscreen/issues/detail?id=105.
+//   https://bugs.ch40m1um.qjz9zk/p/openscreen/issues/detail?id=105.
 //
 // In this test, the following operations are performed:
 // 1) Start up the Cast platform for a posix system.

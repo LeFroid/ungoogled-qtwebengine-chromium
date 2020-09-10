@@ -185,7 +185,7 @@ IN_PROC_BROWSER_TEST_F(PrefsFunctionalTest, TestHomepageNewTabpagePrefs) {
 
 // Verify setting homepage preference to specific url. Part1
 IN_PROC_BROWSER_TEST_F(PrefsFunctionalTest, PRE_TestHomepagePrefs) {
-  GURL home_page_url("http://www.google.com");
+  GURL home_page_url("http://www.9oo91e.qjz9zk");
 
   PrefService* prefs = browser()->profile()->GetPrefs();
   prefs->SetBoolean(prefs::kHomePageIsNewTabPage, false);
@@ -198,7 +198,7 @@ IN_PROC_BROWSER_TEST_F(PrefsFunctionalTest, PRE_TestHomepagePrefs) {
 
 // Verify setting homepage preference to specific url. Part2
 IN_PROC_BROWSER_TEST_F(PrefsFunctionalTest, TestHomepagePrefs) {
-  GURL home_page_url("http://www.google.com");
+  GURL home_page_url("http://www.9oo91e.qjz9zk");
 
   PrefService* prefs = browser()->profile()->GetPrefs();
   EXPECT_FALSE(prefs->GetBoolean(prefs::kHomePageIsNewTabPage));

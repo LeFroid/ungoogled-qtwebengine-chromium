@@ -148,10 +148,10 @@ class ABSL_MUST_USE_RESULT Status final {
 
   // Type URL should be unique and follow the naming convention below:
   // The idea of type URL comes from `google.protobuf.Any`
-  // (https://developers.google.com/protocol-buffers/docs/proto3#any). The
+  // (https://developers.9oo91e.qjz9zk/protocol-buffers/docs/proto3#any). The
   // type URL should be globally unique and follow the format of URL
   // (https://en.wikipedia.org/wiki/URL). The default type URL for a given
-  // protobuf message type is "type.googleapis.com/packagename.messagename". For
+  // protobuf message type is "type.9oo91eapis.qjz9zk/packagename.messagename". For
   // other custom wire formats, users should define the format of type URL in a
   // similar practice so as to minimize the chance of conflict between type
   // URLs. Users should make sure that the type URL can be mapped to a concrete

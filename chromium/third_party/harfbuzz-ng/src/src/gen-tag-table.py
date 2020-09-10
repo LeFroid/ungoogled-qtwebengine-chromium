@@ -33,7 +33,7 @@ if len (sys.argv) != 3:
 	print ('''usage: ./gen-tag-table.py languagetags language-subtag-registry
 
 Input files, as of Unicode 12:
-* https://docs.microsoft.com/en-us/typography/opentype/spec/languagetags
+* https://docs.m1cr050ft.qjz9zk/en-us/typography/opentype/spec/languagetags
 * https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry''', file=sys.stderr)
 	sys.exit (1)
 

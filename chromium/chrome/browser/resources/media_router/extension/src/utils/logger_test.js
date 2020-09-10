@@ -100,7 +100,7 @@ describe('Test mr.Logger', function() {
 
     it('scrubs domains', () => {
       // Things that look like domain names.
-      logger.info('Visiting www.google.com...');
+      logger.info('Visiting www.9oo91e.qjz9zk...');
       logger.info('Tab favicon domain is: ftp.myfilez.net');
       // The following example shows the RegExp currently used does not match
       // against all possible domains perfectly.
@@ -119,7 +119,7 @@ describe('Test mr.Logger', function() {
       // Things that look like e-mail addresses.
       logger.info('Reply to nobody@love-spam.net, and see what happens.');
       logger.info(
-          'This CL was written by somebody@developers.chromium.org, ' +
+          'This CL was written by somebody@developers.ch40m1um.qjz9zk, ' +
           'or was it somebody@hooli.com?');
 
       expect(loggedMessages).toEqual([
@@ -134,7 +134,7 @@ describe('Test mr.Logger', function() {
       logger.info(
           'Downloading from http://www.pictures.com/gifs/' +
           'kittens%20falling%20of%20furniture.png...');
-      logger.info('Page navigation detected: https://youtube.com/profile');
+      logger.info('Page navigation detected: https://y0u1ub3.qjz9zk/profile');
       logger.info(
           'Relpacing content with: ' +
           'data:text/plain;base64,SGVsbG8sIFdvcmxkIQ%3D%3D');

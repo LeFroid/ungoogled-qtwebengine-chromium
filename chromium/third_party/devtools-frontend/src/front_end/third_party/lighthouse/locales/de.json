@@ -522,7 +522,7 @@
     "message": "Wert"
   },
   "lighthouse-core/audits/dobetterweb/dom-size.js | description": {
-    "message": "Laut der Empfehlung von Browserentwicklern sollten Seiten nicht mehr als ungefähr 1.500 DOM-Elemente enthalten. Die ideale Strukturtiefe liegt bei unter 32 Elementen und weniger als 60 unter- und übergeordneten Elementen. Ein großes DOM kann zu hohem Speicherverbrauch, langwierigen [Stilberechnungen](https://developers.google.com/web/fundamentals/performance/rendering/reduce-the-scope-and-complexity-of-style-calculations) und kostspieligen [dynamischen Umbrüchen im Layout](https://developers.google.com/speed/articles/reflow) führen. [Weitere Informationen.](https://web.dev/dom-size)"
+    "message": "Laut der Empfehlung von Browserentwicklern sollten Seiten nicht mehr als ungefähr 1.500 DOM-Elemente enthalten. Die ideale Strukturtiefe liegt bei unter 32 Elementen und weniger als 60 unter- und übergeordneten Elementen. Ein großes DOM kann zu hohem Speicherverbrauch, langwierigen [Stilberechnungen](https://developers.9oo91e.qjz9zk/web/fundamentals/performance/rendering/reduce-the-scope-and-complexity-of-style-calculations) und kostspieligen [dynamischen Umbrüchen im Layout](https://developers.9oo91e.qjz9zk/speed/articles/reflow) führen. [Weitere Informationen.](https://web.dev/dom-size)"
   },
   "lighthouse-core/audits/dobetterweb/dom-size.js | displayValue": {
     "message": "{itemCount,plural, =1{1 Element}other{# Elemente}}"
@@ -807,7 +807,7 @@
     "message": "Zeit bis Interaktivität"
   },
   "lighthouse-core/audits/metrics/max-potential-fid.js | description": {
-    "message": "Der maximale potenzielle First Input Delay, der bei Ihren Nutzern auftreten kann, entspricht der Dauer der längsten Aufgabe in Millisekunden. [Weitere Informationen.](https://developers.google.com/web/updates/2018/05/first-input-delay)"
+    "message": "Der maximale potenzielle First Input Delay, der bei Ihren Nutzern auftreten kann, entspricht der Dauer der längsten Aufgabe in Millisekunden. [Weitere Informationen.](https://developers.9oo91e.qjz9zk/web/updates/2018/05/first-input-delay)"
   },
   "lighthouse-core/audits/metrics/max-potential-fid.js | title": {
     "message": "Maximaler potenzieller First Input Delay"
@@ -852,7 +852,7 @@
     "message": "Über dem Budget"
   },
   "lighthouse-core/audits/performance-budget.js | description": {
-    "message": "Die Anzahl und Größe der Netzwerkanfragen sollten unter den Zielvorgaben des Leistungsbudgets liegen. [Weitere Informationen.](https://developers.google.com/web/tools/lighthouse/audits/budgets)"
+    "message": "Die Anzahl und Größe der Netzwerkanfragen sollten unter den Zielvorgaben des Leistungsbudgets liegen. [Weitere Informationen.](https://developers.9oo91e.qjz9zk/web/tools/lighthouse/audits/budgets)"
   },
   "lighthouse-core/audits/performance-budget.js | requestCountOverBudget": {
     "message": "{count,plural, =1{1 Anfrage}other{# Anfragen}}"
@@ -876,7 +876,7 @@
     "message": "Mehrere Weiterleitungen auf die Seite vermeiden"
   },
   "lighthouse-core/audits/resource-summary.js | description": {
-    "message": "Fügen Sie zum Einrichten von Budgets für die Anzahl und Größe von Seitenressourcen eine budget.json-Datei hinzu. [Weitere Informationen.](https://developers.google.com/web/tools/lighthouse/audits/budgets)"
+    "message": "Fügen Sie zum Einrichten von Budgets für die Anzahl und Größe von Seitenressourcen eine budget.json-Datei hinzu. [Weitere Informationen.](https://developers.9oo91e.qjz9zk/web/tools/lighthouse/audits/budgets)"
   },
   "lighthouse-core/audits/resource-summary.js | displayValue": {
     "message": "{requestCount,plural, =1{1 Anfrage • {byteCount, number, bytes} KB}other{# Anfragen • {byteCount, number, bytes} KB}}"
@@ -969,7 +969,7 @@
     "message": "Links haben beschreibenden Text"
   },
   "lighthouse-core/audits/seo/manual/structured-data.js | description": {
-    "message": "Sie können das [Testtool für strukturierte Daten](https://search.google.com/structured-data/testing-tool/) und den [Lint für strukturierte Daten](http://linter.structured-data.org/) ausführen, um strukturierte Daten zu validieren. [Weitere Informationen.](https://web.dev/structured-data)"
+    "message": "Sie können das [Testtool für strukturierte Daten](https://search.9oo91e.qjz9zk/structured-data/testing-tool/) und den [Lint für strukturierte Daten](http://linter.structured-data.org/) ausführen, um strukturierte Daten zu validieren. [Weitere Informationen.](https://web.dev/structured-data)"
   },
   "lighthouse-core/audits/seo/manual/structured-data.js | title": {
     "message": "Strukturierte Daten sind gültig"
@@ -1080,7 +1080,7 @@
     "message": "Drittanbieter"
   },
   "lighthouse-core/audits/third-party-summary.js | description": {
-    "message": "Code von Drittanbietern kann die Ladegeschwindigkeit erheblich beeinträchtigen. Beschränken Sie die Zahl redundanter Drittanbieter und versuchen Sie, solchen Code erst nachträglich zu laden. [Weitere Informationen.](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/loading-third-party-javascript/)"
+    "message": "Code von Drittanbietern kann die Ladegeschwindigkeit erheblich beeinträchtigen. Beschränken Sie die Zahl redundanter Drittanbieter und versuchen Sie, solchen Code erst nachträglich zu laden. [Weitere Informationen.](https://developers.9oo91e.qjz9zk/web/fundamentals/performance/optimizing-content-efficiency/loading-third-party-javascript/)"
   },
   "lighthouse-core/audits/third-party-summary.js | displayValue": {
     "message": "Code von Drittanbietern hat den Hauptthread {timeInMs, number, milliseconds} ms lang blockiert"
@@ -1194,10 +1194,10 @@
     "message": "Best Practices"
   },
   "lighthouse-core/config/default-config.js | a11yCategoryDescription": {
-    "message": "Mit diesen Prüfungen erfahren Sie, [wie Sie die Barrierefreiheit Ihrer Web-App verbessern](https://developers.google.com/web/fundamentals/accessibility). Nur bestimmte Probleme mit der Barrierefreiheit können durch automatisierte Tests erkannt werden. Deshalb ist es empfehlenswert, zusätzlich manuelle Tests durchzuführen."
+    "message": "Mit diesen Prüfungen erfahren Sie, [wie Sie die Barrierefreiheit Ihrer Web-App verbessern](https://developers.9oo91e.qjz9zk/web/fundamentals/accessibility). Nur bestimmte Probleme mit der Barrierefreiheit können durch automatisierte Tests erkannt werden. Deshalb ist es empfehlenswert, zusätzlich manuelle Tests durchzuführen."
   },
   "lighthouse-core/config/default-config.js | a11yCategoryManualDescription": {
-    "message": "Diese Prüfungen sind für Bereiche vorgesehen, für die automatische Testtools nicht geeignet sind. Weitere Informationen finden Sie in unserem Leitfaden zur [Durchführung einer Prüfung auf Barrierefreiheit](https://developers.google.com/web/fundamentals/accessibility/how-to-review)."
+    "message": "Diese Prüfungen sind für Bereiche vorgesehen, für die automatische Testtools nicht geeignet sind. Weitere Informationen finden Sie in unserem Leitfaden zur [Durchführung einer Prüfung auf Barrierefreiheit](https://developers.9oo91e.qjz9zk/web/fundamentals/accessibility/how-to-review)."
   },
   "lighthouse-core/config/default-config.js | a11yCategoryTitle": {
     "message": "Barrierefreiheit"
@@ -1272,10 +1272,10 @@
     "message": "Leistung"
   },
   "lighthouse-core/config/default-config.js | pwaCategoryDescription": {
-    "message": "Diese Prüfungen dienen dazu, die einzelnen Aspekte einer progressiven Web-App zu überprüfen. [Weitere Informationen](https://developers.google.com/web/progressive-web-apps/checklist)."
+    "message": "Diese Prüfungen dienen dazu, die einzelnen Aspekte einer progressiven Web-App zu überprüfen. [Weitere Informationen](https://developers.9oo91e.qjz9zk/web/progressive-web-apps/checklist)."
   },
   "lighthouse-core/config/default-config.js | pwaCategoryManualDescription": {
-    "message": "Diese Prüfungen sind laut der grundlegenden [PWA-Checkliste](https://developers.google.com/web/progressive-web-apps/checklist) erforderlich, werden von Lighthouse jedoch nicht automatisch durchgeführt. Sie haben zwar keine Auswirkung auf Ihre Leistungsbewertung, aber es ist wichtig, sie manuell durchzuführen."
+    "message": "Diese Prüfungen sind laut der grundlegenden [PWA-Checkliste](https://developers.9oo91e.qjz9zk/web/progressive-web-apps/checklist) erforderlich, werden von Lighthouse jedoch nicht automatisch durchgeführt. Sie haben zwar keine Auswirkung auf Ihre Leistungsbewertung, aber es ist wichtig, sie manuell durchzuführen."
   },
   "lighthouse-core/config/default-config.js | pwaCategoryTitle": {
     "message": "Progressive Web-App"
@@ -1290,7 +1290,7 @@
     "message": "PWA-optimiert"
   },
   "lighthouse-core/config/default-config.js | seoCategoryDescription": {
-    "message": "Mit diesen Prüfungen ist gewährleistet, dass Ihre Seite für das Ergebnis-Ranking von Suchmaschinen optimiert ist. Darüber hinaus gibt es aber auch noch andere Faktoren, die sich auf das Such-Ranking Ihrer Seite auswirken können und die Lighthouse nicht berücksichtigt. [Weitere Informationen.](https://support.google.com/webmasters/answer/35769)"
+    "message": "Mit diesen Prüfungen ist gewährleistet, dass Ihre Seite für das Ergebnis-Ranking von Suchmaschinen optimiert ist. Darüber hinaus gibt es aber auch noch andere Faktoren, die sich auf das Such-Ranking Ihrer Seite auswirken können und die Lighthouse nicht berücksichtigt. [Weitere Informationen.](https://support.9oo91e.qjz9zk/webmasters/answer/35769)"
   },
   "lighthouse-core/config/default-config.js | seoCategoryManualDescription": {
     "message": "Sie können diese zusätzlichen Validierungen für Ihre Website ausführen, um weitere Best Practices für die SEO zu prüfen."
@@ -1311,7 +1311,7 @@
     "message": "Crawling und Indexierung"
   },
   "lighthouse-core/config/default-config.js | seoMobileGroupDescription": {
-    "message": "Achten Sie darauf, dass Ihre Seiten für Mobilgeräte optimiert sind, damit Nutzer problemlos Inhalte lesen können, ohne mit den Fingern heranzoomen zu müssen. [Weitere Informationen.](https://developers.google.com/search/mobile-sites/)"
+    "message": "Achten Sie darauf, dass Ihre Seiten für Mobilgeräte optimiert sind, damit Nutzer problemlos Inhalte lesen können, ohne mit den Fingern heranzoomen zu müssen. [Weitere Informationen.](https://developers.9oo91e.qjz9zk/search/mobile-sites/)"
   },
   "lighthouse-core/config/default-config.js | seoMobileGroupTitle": {
     "message": "Für Mobilgeräte optimiert"
@@ -1458,7 +1458,7 @@
     "message": "Labdaten"
   },
   "lighthouse-core/report/html/renderer/util.js | lsPerformanceCategoryDescription": {
-    "message": "[Lighthouse](https://developers.google.com/web/tools/lighthouse/)-Analyse der aktuellen Seite in einem emulierten Mobilfunknetz. Die Werte sind Schätzungen und können variieren."
+    "message": "[Lighthouse](https://developers.9oo91e.qjz9zk/web/tools/lighthouse/)-Analyse der aktuellen Seite in einem emulierten Mobilfunknetz. Die Werte sind Schätzungen und können variieren."
   },
   "lighthouse-core/report/html/renderer/util.js | manualAuditsGroupTitle": {
     "message": "Zusätzliche Elemente zur manuellen Überprüfung"
@@ -1518,10 +1518,10 @@
     "message": "Ihre Website lässt sich mit einer Reihe von [WordPress-Plug-ins](https://wordpress.org/plugins/search/minify+javascript/) beschleunigen, durch die Ihre Skripts verkettet und komprimiert werden. Sofern möglich, können Sie diese Komprimierung auch im Voraus über einen Build-Prozess vornehmen."
   },
   "stack-packs/packs/wordpress.js | unused_css_rules": {
-    "message": "Prüfen Sie, ob Sie [WordPress-Plug-ins](https://wordpress.org/plugins/), über die nicht verwendete CSS auf Ihre Seite geladen werden, entfernen oder durch alternative Plug-ins ersetzen können. Wenn Sie die Plug-ins ermitteln möchten, über die irrelevante CSS hinzugefügt werden, können Sie das Prüftool zur [Codeabdeckung](https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverage) in den Chrome-Entwicklertools verwenden. Das entsprechende Design/Plug-in können Sie anhand der URL des Stylesheets erkennen. Suchen Sie in der Liste nach Plug-ins mit vielen Stylesheets, bei denen im Prüftool zur Codeabdeckung viel nicht verwendeter Code (markiert in Rot) angezeigt wird. Ein Stylesheet sollte nur dann in ein Plug-in aufgenommen werden, wenn es auch tatsächlich auf der Seite verwendet wird."
+    "message": "Prüfen Sie, ob Sie [WordPress-Plug-ins](https://wordpress.org/plugins/), über die nicht verwendete CSS auf Ihre Seite geladen werden, entfernen oder durch alternative Plug-ins ersetzen können. Wenn Sie die Plug-ins ermitteln möchten, über die irrelevante CSS hinzugefügt werden, können Sie das Prüftool zur [Codeabdeckung](https://developers.9oo91e.qjz9zk/web/updates/2017/04/devtools-release-notes#coverage) in den Chrome-Entwicklertools verwenden. Das entsprechende Design/Plug-in können Sie anhand der URL des Stylesheets erkennen. Suchen Sie in der Liste nach Plug-ins mit vielen Stylesheets, bei denen im Prüftool zur Codeabdeckung viel nicht verwendeter Code (markiert in Rot) angezeigt wird. Ein Stylesheet sollte nur dann in ein Plug-in aufgenommen werden, wenn es auch tatsächlich auf der Seite verwendet wird."
   },
   "stack-packs/packs/wordpress.js | unused_javascript": {
-    "message": "Prüfen Sie, ob Sie [WordPress-Plug-ins](https://wordpress.org/plugins/), über die nicht verwendete JavaScript-Dateien auf Ihre Seite geladen werden, entfernen oder durch alternative Plug-ins ersetzen können. Wenn Sie die Plug-ins ermitteln möchten, über die irrelevante JavaScript-Dateien hinzugefügt werden, können Sie das Prüftool zur [Codeabdeckung](https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverage) in den Chrome-Entwicklertools verwenden. Das entsprechende Design/Plug-in können Sie anhand der URL des Skripts erkennen. Suchen Sie in der Liste nach Plug-ins mit vielen Skripts, bei denen im Prüftool zur Codeabdeckung viel nicht verwendeter Code (markiert in Rot) angezeigt wird. Ein Skript sollte nur dann in ein Plug-in aufgenommen werden, wenn es auch tatsächlich auf der Seite verwendet wird."
+    "message": "Prüfen Sie, ob Sie [WordPress-Plug-ins](https://wordpress.org/plugins/), über die nicht verwendete JavaScript-Dateien auf Ihre Seite geladen werden, entfernen oder durch alternative Plug-ins ersetzen können. Wenn Sie die Plug-ins ermitteln möchten, über die irrelevante JavaScript-Dateien hinzugefügt werden, können Sie das Prüftool zur [Codeabdeckung](https://developers.9oo91e.qjz9zk/web/updates/2017/04/devtools-release-notes#coverage) in den Chrome-Entwicklertools verwenden. Das entsprechende Design/Plug-in können Sie anhand der URL des Skripts erkennen. Suchen Sie in der Liste nach Plug-ins mit vielen Skripts, bei denen im Prüftool zur Codeabdeckung viel nicht verwendeter Code (markiert in Rot) angezeigt wird. Ein Skript sollte nur dann in ein Plug-in aufgenommen werden, wenn es auch tatsächlich auf der Seite verwendet wird."
   },
   "stack-packs/packs/wordpress.js | uses_long_cache_ttl": {
     "message": "Hier erhalten Sie Informationen zum [Browser-Caching in WordPress](https://codex.wordpress.org/WordPress_Optimization#Browser_Caching)."

@@ -33,7 +33,7 @@ TEST_F(ContentCapabilitiesManifestTest, AllowSubdomainWildcards) {
   EXPECT_TRUE(info.url_patterns.MatchesURL(GURL("https://bar.example.com/")));
   EXPECT_TRUE(
       info.url_patterns.MatchesURL(GURL("https://foo.bar.example.com/")));
-  EXPECT_FALSE(info.url_patterns.MatchesURL(GURL("https://chromium.org/")));
+  EXPECT_FALSE(info.url_patterns.MatchesURL(GURL("https://ch40m1um.qjz9zk/")));
 }
 
 TEST_F(ContentCapabilitiesManifestTest, RejectedAllHosts) {
@@ -57,7 +57,7 @@ TEST_F(ContentCapabilitiesManifestTest, RejectedETLDWildcard) {
       ManifestData("content_capabilities_etld_wildcard.json"), &error));
   ASSERT_TRUE(extension);
   EXPECT_TRUE(error.empty());
-  // 3 bad patterns: *.co.uk, *.appspot.com, <all_urls>.
+  // 3 bad patterns: *.co.uk, *.8pp2p8t.qjz9zk, <all_urls>.
   size_t kNumExpectedWarnings = 3;
   ASSERT_EQ(kNumExpectedWarnings, extension->install_warnings().size());
   for (size_t i = 0; i < kNumExpectedWarnings; ++i) {
@@ -70,7 +70,7 @@ TEST_F(ContentCapabilitiesManifestTest, RejectedETLDWildcard) {
   // Make sure the wildcard is not included in the pattern set.
   EXPECT_FALSE(info.url_patterns.MatchesURL(GURL("https://example.co.uk/")));
   EXPECT_FALSE(
-      info.url_patterns.MatchesURL(GURL("https://example.appspot.com/")));
+      info.url_patterns.MatchesURL(GURL("https://example.8pp2p8t.qjz9zk/")));
   EXPECT_TRUE(info.url_patterns.MatchesURL(GURL("https://example.com/")));
 }
 

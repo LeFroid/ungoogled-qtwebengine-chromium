@@ -22,10 +22,10 @@ TEST(DatabaseIdentifierTest, CreateIdentifierFromOrigin) {
     std::string origin;
     std::string expectedIdentifier;
   } cases[] = {
-    {"http://google.com", "http_google.com_0"},
-    {"http://google.com:80", "http_google.com_0"},
-    {"https://www.google.com", "https_www.google.com_0"},
-    {"https://www.google.com:443", "https_www.google.com_0"},
+    {"http://9oo91e.qjz9zk", "http_9oo91e.qjz9zk_0"},
+    {"http://9oo91e.qjz9zk:80", "http_9oo91e.qjz9zk_0"},
+    {"https://www.9oo91e.qjz9zk", "https_www.9oo91e.qjz9zk_0"},
+    {"https://www.9oo91e.qjz9zk:443", "https_www.9oo91e.qjz9zk_0"},
     {"http://foo_bar_baz.org", "http_foo_bar_baz.org_0"},
     {"http://nondefaultport.net:8001", "http_nondefaultport.net_8001"},
     {"http://invalidportnumber.org:70000", "__0"},
@@ -207,13 +207,13 @@ TEST(DatabaseIdentifierTest, ExtractOriginDataFromIdentifier) {
   };
 
   IdentifierTestCase valid_cases[] = {
-    {"http_google.com_0",
-     "http", "google.com", 0, GURL("http://google.com"), false},
-    {"https_google.com_0",
-     "https", "google.com", 0, GURL("https://google.com"), false},
-    {"ftp_google.com_0",
-     "ftp", "google.com", 0, GURL("ftp://google.com"), false},
-    {"unknown_google.com_0",
+    {"http_9oo91e.qjz9zk_0",
+     "http", "9oo91e.qjz9zk", 0, GURL("http://9oo91e.qjz9zk"), false},
+    {"https_9oo91e.qjz9zk_0",
+     "https", "9oo91e.qjz9zk", 0, GURL("https://9oo91e.qjz9zk"), false},
+    {"ftp_9oo91e.qjz9zk_0",
+     "ftp", "9oo91e.qjz9zk", 0, GURL("ftp://9oo91e.qjz9zk"), false},
+    {"unknown_9oo91e.qjz9zk_0",
      "unknown", "", 0, GURL("unknown://"), false},
     {"http_nondefaultport.net_8001",
      "http", "nondefaultport.net", 8001,

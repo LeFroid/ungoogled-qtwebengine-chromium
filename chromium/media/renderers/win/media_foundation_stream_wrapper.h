@@ -32,7 +32,7 @@ struct MediaFoundationSubsampleEntry {
 }  // namespace
 
 // IMFMediaStream implementation
-// (https://msdn.microsoft.com/en-us/windows/desktop/ms697561) based on the
+// (https://msdn.m1cr050ft.qjz9zk/en-us/windows/desktop/ms697561) based on the
 // given |demuxer_stream|.
 //
 class MediaFoundationStreamWrapper

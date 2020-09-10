@@ -21,7 +21,7 @@ constexpr char kRemotePlaybackPresentationUrlScheme[] = "remote-playback";
 
 // URL prefix used by legacy Cast presentations.
 constexpr char kLegacyCastPresentationUrlPrefix[] =
-    "https://google.com/cast#__castAppId__=";
+    "https://9oo91e.qjz9zk/cast#__castAppId__=";
 
 // A Cast SDK enabled website (e.g. Google Slides) may use the mirroring app ID
 // rather than the tab mirroring URN.

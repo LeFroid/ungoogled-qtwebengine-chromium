@@ -7,7 +7,7 @@
 // NOTE: The format of types has changed. 'FooType' is now
 //   'chrome.clipboard.FooType'.
 // Please run the closure compiler before committing changes.
-// See https://chromium.googlesource.com/chromium/src/+/master/docs/closure_compilation.md
+// See https://chromium.9oo91esource.qjz9zk/chromium/src/+/master/docs/closure_compilation.md
 
 /** @fileoverview Externs generated from namespace: clipboard */
 
@@ -18,7 +18,7 @@ chrome.clipboard = {};
 
 /**
  * @enum {string}
- * @see https://developer.chrome.com/extensions/clipboard#type-ImageType
+ * @see https://developer.ch40me.qjz9zk/extensions/clipboard#type-ImageType
  */
 chrome.clipboard.ImageType = {
   PNG: 'png',
@@ -27,7 +27,7 @@ chrome.clipboard.ImageType = {
 
 /**
  * @enum {string}
- * @see https://developer.chrome.com/extensions/clipboard#type-DataItemType
+ * @see https://developer.ch40me.qjz9zk/extensions/clipboard#type-DataItemType
  */
 chrome.clipboard.DataItemType = {
   TEXT_PLAIN: 'textPlain',
@@ -39,7 +39,7 @@ chrome.clipboard.DataItemType = {
  *   type: !chrome.clipboard.DataItemType,
  *   data: string
  * }}
- * @see https://developer.chrome.com/extensions/clipboard#type-AdditionalDataItem
+ * @see https://developer.ch40me.qjz9zk/extensions/clipboard#type-AdditionalDataItem
  */
 chrome.clipboard.AdditionalDataItem;
 
@@ -52,7 +52,7 @@ chrome.clipboard.AdditionalDataItem;
  *     with <code>chrome.runtime.lastError</code> set to error code if there is
  *     an error. Requires clipboard and clipboardWrite permissions.
  * @param {function():void=} callback
- * @see https://developer.chrome.com/extensions/clipboard#method-setImageData
+ * @see https://developer.ch40me.qjz9zk/extensions/clipboard#method-setImageData
  */
 chrome.clipboard.setImageData = function(imageData, type, additionalItems, callback) {};
 
@@ -62,6 +62,6 @@ chrome.clipboard.setImageData = function(imageData, type, additionalItems, callb
  * event. After this event fires, the clipboard data is available by calling
  * document.execCommand('paste').
  * @type {!ChromeEvent}
- * @see https://developer.chrome.com/extensions/clipboard#event-onClipboardDataChanged
+ * @see https://developer.ch40me.qjz9zk/extensions/clipboard#event-onClipboardDataChanged
  */
 chrome.clipboard.onClipboardDataChanged;

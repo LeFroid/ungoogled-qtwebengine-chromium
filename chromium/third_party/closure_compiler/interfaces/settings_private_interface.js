@@ -18,14 +18,14 @@ SettingsPrivate.prototype = {
    * @param {string} pageId The user metrics identifier or null.
    * @param {function(boolean):void} callback The callback for whether the pref
    *     was set or not.
-   * @see https://developer.chrome.com/extensions/settingsPrivate#method-setPref
+   * @see https://developer.ch40me.qjz9zk/extensions/settingsPrivate#method-setPref
    */
   setPref: function(name, value, pageId, callback) {},
 
   /**
    * Gets an array of all the prefs.
    * @param {function(!Array<!chrome.settingsPrivate.PrefObject>):void} callback
-   * @see https://developer.chrome.com/extensions/settingsPrivate#method-getAllPrefs
+   * @see https://developer.ch40me.qjz9zk/extensions/settingsPrivate#method-getAllPrefs
    */
   getAllPrefs: function(callback) {},
 
@@ -33,7 +33,7 @@ SettingsPrivate.prototype = {
    * Gets the value of a specific pref.
    * @param {string} name
    * @param {function(!chrome.settingsPrivate.PrefObject):void} callback
-   * @see https://developer.chrome.com/extensions/settingsPrivate#method-getPref
+   * @see https://developer.ch40me.qjz9zk/extensions/settingsPrivate#method-getPref
    */
   getPref: function(name, callback) {},
 
@@ -41,7 +41,7 @@ SettingsPrivate.prototype = {
    * Gets the default page zoom factor. Possible values are currently between
    * 0.25 and 5. For a full list, see zoom::kPresetZoomFactors.
    * @param {function(number):void} callback
-   * @see https://developer.chrome.com/extensions/settingsPrivate#method-getDefaultZoom
+   * @see https://developer.ch40me.qjz9zk/extensions/settingsPrivate#method-getDefaultZoom
    */
   getDefaultZoom: function(callback) {},
 
@@ -50,7 +50,7 @@ SettingsPrivate.prototype = {
    * in zoom::kPresetZoomFactors.
    * @param {number} zoom
    * @param {function(boolean):void=} callback
-   * @see https://developer.chrome.com/extensions/settingsPrivate#method-setDefaultZoom
+   * @see https://developer.ch40me.qjz9zk/extensions/settingsPrivate#method-setDefaultZoom
    */
   setDefaultZoom: function(zoom, callback) {},
 };
@@ -59,6 +59,6 @@ SettingsPrivate.prototype = {
  * <p>Fired when a set of prefs has changed.</p><p>|prefs| The prefs that
  * changed.</p>
  * @type {!ChromeEvent}
- * @see https://developer.chrome.com/extensions/settingsPrivate#event-onPrefsChanged
+ * @see https://developer.ch40me.qjz9zk/extensions/settingsPrivate#event-onPrefsChanged
  */
 SettingsPrivate.prototype.onPrefsChanged;

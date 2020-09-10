@@ -9,7 +9,7 @@
  */
 
 // Disable for TSan v2, see
-// https://code.google.com/p/webrtc/issues/detail?id=1205 for details.
+// https://code.9oo91e.qjz9zk/p/webrtc/issues/detail?id=1205 for details.
 #if !defined(THREAD_SANITIZER)
 
 #include <stdio.h>
@@ -3191,7 +3191,7 @@ void ModifySsrcs(cricket::SessionDescription* desc) {
 // being reset to 0 once the SSRC change occurs.
 //
 // Regression test for this bug:
-// https://bugs.chromium.org/p/webrtc/issues/detail?id=8158
+// https://bugs.ch40m1um.qjz9zk/p/webrtc/issues/detail?id=8158
 //
 // The bug causes the track stats to only represent one of the two streams:
 // whichever one has the higher SSRC. So with this bug, there was a 50% chance

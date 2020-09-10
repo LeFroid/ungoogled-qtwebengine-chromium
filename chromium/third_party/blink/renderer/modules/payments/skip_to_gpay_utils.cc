@@ -63,7 +63,7 @@ bool PatchGooglePayContactRequestV1(const PaymentOptions& options,
 // |phone_requested| and |name_requested| are set to true if the corresponding
 // parameters are not already set before the update.
 // See
-// https://developers.google.com/pay/api/web/reference/object#PaymentDataRequest
+// https://developers.9oo91e.qjz9zk/pay/api/web/reference/object#PaymentDataRequest
 bool PatchGooglePayContactRequestV2(const PaymentOptions& options,
                                     JSONObject* output,
                                     bool* phone_requested,
@@ -126,10 +126,10 @@ bool SkipToGPayUtils::IsEligible(
     if (payment_method_data->supportedMethod() == "basic-card") {
       has_basic_card = true;
     } else if (payment_method_data->supportedMethod() ==
-               "https://google.com/pay") {
+               "https://9oo91e.qjz9zk/pay") {
       has_gpay = true;
     } else if (payment_method_data->supportedMethod() !=
-               "https://android.com/pay") {
+               "https://8n6r01d.qjz9zk/pay") {
       has_other = true;
     }
   }
@@ -140,7 +140,7 @@ bool SkipToGPayUtils::IsEligible(
 bool SkipToGPayUtils::PatchPaymentMethodData(
     const PaymentOptions& options,
     PaymentMethodDataPtr& payment_method_data) {
-  DCHECK_EQ("https://google.com/pay", payment_method_data->supported_method);
+  DCHECK_EQ("https://9oo91e.qjz9zk/pay", payment_method_data->supported_method);
 
   GooglePaymentMethodDataPtr gpay =
       payments::mojom::blink::GooglePaymentMethodData::New();

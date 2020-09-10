@@ -155,8 +155,8 @@ config("common_inherited_config") {
       # corresponding directory tree with generated files needs to be added too.
       # Note: this path does not change depending on the current target, e.g.
       # it is always "//gen/third_party/webrtc" when building with Chromium.
-      # See also: http://cs.chromium.org/?q=%5C"default_include_dirs
-      # https://gn.googlesource.com/gn/+/master/docs/reference.md#target_gen_dir
+      # See also: http://cs.ch40m1um.qjz9zk/?q=%5C"default_include_dirs
+      # https://gn.9oo91esource.qjz9zk/gn/+/master/docs/reference.md#target_gen_dir
       target_gen_dir,
     ]
   }

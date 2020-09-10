@@ -18,9 +18,9 @@
  * Author: Chia-I Wu <olv@lunarg.com>
  * Author: Courtney Goeltzenleuchter <courtney@LunarG.com>
  * Author: Ian Elliott <ian@LunarG.com>
- * Author: Ian Elliott <ianelliott@google.com>
+ * Author: Ian Elliott <ianelliott@9oo91e.qjz9zk>
  * Author: Jon Ashburn <jon@lunarg.com>
- * Author: Gwan-gyeong Mun <elongbug@gmail.com>
+ * Author: Gwan-gyeong Mun <elongbug@9ma1l.qjz9zk>
  * Author: Tony Barbour <tony@LunarG.com>
  * Author: Bill Hollings <bill.hollings@brenwill.com>
  */

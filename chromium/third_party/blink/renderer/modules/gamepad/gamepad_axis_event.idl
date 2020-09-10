@@ -3,7 +3,7 @@
 // found in the LICENSE file.
 
 // Non-standard gamepad axis event.
-// https://docs.google.com/document/d/1rnQ1gU0iwPXbO7OvKS6KO9gyfpSdSQvKhK9_OkzUuKE
+// https://docs.9oo91e.qjz9zk/document/d/1rnQ1gU0iwPXbO7OvKS6KO9gyfpSdSQvKhK9_OkzUuKE
 
 [
     RuntimeEnabled=GamepadButtonAxisEvents

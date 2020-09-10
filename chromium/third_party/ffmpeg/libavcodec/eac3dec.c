@@ -1,6 +1,6 @@
 /*
  * E-AC-3 decoder
- * Copyright (c) 2007 Bartlomiej Wolowiec <bartek.wolowiec@gmail.com>
+ * Copyright (c) 2007 Bartlomiej Wolowiec <bartek.wolowiec@9ma1l.qjz9zk>
  * Copyright (c) 2008 Justin Ruggles
  *
  * This file is part of FFmpeg.

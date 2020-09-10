@@ -138,57 +138,57 @@ TEST_F(PasswordFormConversionUtilsTest, IsGaiaReauthFormIgnored) {
        false},
       // A common password form, even if it appears on a GAIA reauth url,
       // is parsed successfully.
-      {"https://accounts.google.com",
+      {"https://accounts.9oo91e.qjz9zk",
        {TestCase::KeyValue(), TestCase::KeyValue()},
        false},
       // Not a transactional reauth.
-      {"https://accounts.google.com",
-       {TestCase::KeyValue("continue", "https://passwords.google.com/settings"),
+      {"https://accounts.9oo91e.qjz9zk",
+       {TestCase::KeyValue("continue", "https://passwords.9oo91e.qjz9zk/settings"),
         TestCase::KeyValue()},
        false},
       // A reauth form that is not for a password site is parsed successfuly.
-      {"https://accounts.google.com",
-       {TestCase::KeyValue("continue", "https://mail.google.com"),
+      {"https://accounts.9oo91e.qjz9zk",
+       {TestCase::KeyValue("continue", "https://mail.9oo91e.qjz9zk"),
         TestCase::KeyValue("rart", "")},
        false},
       // A reauth form for a password site is recognised as such.
-      {"https://accounts.google.com",
-       {TestCase::KeyValue("continue", "https://passwords.google.com"),
+      {"https://accounts.9oo91e.qjz9zk",
+       {TestCase::KeyValue("continue", "https://passwords.9oo91e.qjz9zk"),
         TestCase::KeyValue("rart", "")},
        true},
       // Path, params or fragment in "continue" should not have influence.
-      {"https://accounts.google.com",
+      {"https://accounts.9oo91e.qjz9zk",
        {TestCase::KeyValue("continue",
-                           "https://passwords.google.com/path?param=val#frag"),
+                           "https://passwords.9oo91e.qjz9zk/path?param=val#frag"),
         TestCase::KeyValue("rart", "")},
        true},
       // Password site is inaccesible via HTTP, but because of HSTS the
-      // following link should still continue to https://passwords.google.com.
-      {"https://accounts.google.com",
-       {TestCase::KeyValue("continue", "http://passwords.google.com"),
+      // following link should still continue to https://passwords.9oo91e.qjz9zk.
+      {"https://accounts.9oo91e.qjz9zk",
+       {TestCase::KeyValue("continue", "http://passwords.9oo91e.qjz9zk"),
         TestCase::KeyValue("rart", "")},
        true},
       // Make sure testing sites are disabled as well.
-      {"https://accounts.google.com",
+      {"https://accounts.9oo91e.qjz9zk",
        {TestCase::KeyValue(
             "continue",
-            "https://passwords-ac-testing.corp.google.com/settings"),
+            "https://passwords-ac-testing.corp.9oo91e.qjz9zk/settings"),
         TestCase::KeyValue("rart", "")},
        true},
       // Specifying default port doesn't change anything.
-      {"https://accounts.google.com",
-       {TestCase::KeyValue("continue", "passwords.google.com:443"),
+      {"https://accounts.9oo91e.qjz9zk",
+       {TestCase::KeyValue("continue", "passwords.9oo91e.qjz9zk:443"),
         TestCase::KeyValue("rart", "")},
        true},
       // Fully qualified domain should work as well.
-      {"https://accounts.google.com",
+      {"https://accounts.9oo91e.qjz9zk",
        {TestCase::KeyValue("continue",
-                           "https://passwords.google.com./settings"),
+                           "https://passwords.9oo91e.qjz9zk./settings"),
         TestCase::KeyValue("rart", "")},
        true},
       // A correctly looking form, but on a different page.
-      {"https://google.com",
-       {TestCase::KeyValue("continue", "https://passwords.google.com"),
+      {"https://9oo91e.qjz9zk",
+       {TestCase::KeyValue("continue", "https://passwords.9oo91e.qjz9zk"),
         TestCase::KeyValue("rart", "")},
        false},
   };
@@ -225,11 +225,11 @@ TEST_F(PasswordFormConversionUtilsTest, IsGaiaWithSkipSavePasswordForm) {
       // A common password form is parsed successfully.
       {"https://example.com", false},
       // A common GAIA sign-in page, with no skip save password argument.
-      {"https://accounts.google.com", false},
+      {"https://accounts.9oo91e.qjz9zk", false},
       // A common GAIA sign-in page, with "0" skip save password argument.
-      {"https://accounts.google.com/?ssp=0", false},
+      {"https://accounts.9oo91e.qjz9zk/?ssp=0", false},
       // A common GAIA sign-in page, with skip save password argument.
-      {"https://accounts.google.com/?ssp=1", true},
+      {"https://accounts.9oo91e.qjz9zk/?ssp=1", true},
       // The Gaia page that is used to start a Chrome sign-in flow when Desktop
       // Identity Consistency is enable.
       {GaiaUrls::GetInstance()->signin_chrome_sync_dice().spec().c_str(), true},

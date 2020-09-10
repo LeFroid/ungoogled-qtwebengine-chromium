@@ -79,7 +79,7 @@ class WebLayerVariationsHttpBrowserTest : public WebLayerBrowserTest {
     base::CommandLine* command_line = base::CommandLine::ForCurrentProcess();
 
     // HTTPS server only serves a valid cert for localhost, so this is needed to
-    // load pages from "www.google.com" without an interstitial.
+    // load pages from "www.9oo91e.qjz9zk" without an interstitial.
     command_line->AppendSwitch("ignore-certificate-errors");
 
     WebLayerBrowserTest::SetUp();
@@ -90,7 +90,7 @@ class WebLayerVariationsHttpBrowserTest : public WebLayerBrowserTest {
         variations::VariationsHttpHeaderProvider::GetInstance();
     variations_provider->ForceVariationIds({"12", "456", "t789"}, "");
 
-    // The test makes requests to google.com which we want to redirect to the
+    // The test makes requests to 9oo91e.qjz9zk which we want to redirect to the
     // test server.
     host_resolver()->AddRule("*", "127.0.0.1");
 
@@ -102,7 +102,7 @@ class WebLayerVariationsHttpBrowserTest : public WebLayerBrowserTest {
   }
 
   GURL GetGoogleUrlWithPath(const std::string& path) const {
-    return https_server_.GetURL("www.google.com", path);
+    return https_server_.GetURL("www.9oo91e.qjz9zk", path);
   }
 
   GURL GetGoogleRedirectUrl1() const {
@@ -150,8 +150,8 @@ class WebLayerVariationsHttpBrowserTest : public WebLayerBrowserTest {
 
     // Set up a test server that redirects according to the
     // following redirect chain:
-    // https://www.google.com:<port>/redirect
-    // --> https://www.google.com:<port>/redirect2
+    // https://www.9oo91e.qjz9zk:<port>/redirect
+    // --> https://www.9oo91e.qjz9zk:<port>/redirect2
     // --> https://www.example.com:<port>/
     auto http_response =
         std::make_unique<net::test_server::BasicHttpResponse>();

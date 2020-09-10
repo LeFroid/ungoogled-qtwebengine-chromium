@@ -522,7 +522,7 @@
     "message": "Nilai"
   },
   "lighthouse-core/audits/dobetterweb/dom-size.js | description": {
-    "message": "Engineer browser merekomendasikan halaman yang berisi kurang dari ~ 1.500 elemen DOM. Ukuran yang pas adalah suatu kedalaman hierarki yang terdiri dari <32 elemen dan kurang dari 60 elemen turunan/induk. DOM yang besar dapat meningkatkan penggunaan memori, menyebabkan [penghitungan gaya](https://developers.google.com/web/fundamentals/performance/rendering/reduce-the-scope-and-complexity-of-style-calculations) yang lebih lama, dan menghasilkan [penyesuaian tata letak](https://developers.google.com/speed/articles/reflow) yang mahal. [Pelajari lebih lanjut](https://web.dev/dom-size)."
+    "message": "Engineer browser merekomendasikan halaman yang berisi kurang dari ~ 1.500 elemen DOM. Ukuran yang pas adalah suatu kedalaman hierarki yang terdiri dari <32 elemen dan kurang dari 60 elemen turunan/induk. DOM yang besar dapat meningkatkan penggunaan memori, menyebabkan [penghitungan gaya](https://developers.9oo91e.qjz9zk/web/fundamentals/performance/rendering/reduce-the-scope-and-complexity-of-style-calculations) yang lebih lama, dan menghasilkan [penyesuaian tata letak](https://developers.9oo91e.qjz9zk/speed/articles/reflow) yang mahal. [Pelajari lebih lanjut](https://web.dev/dom-size)."
   },
   "lighthouse-core/audits/dobetterweb/dom-size.js | displayValue": {
     "message": "{itemCount,plural, =1{1 elemen}other{# elemen}}"
@@ -807,7 +807,7 @@
     "message": "Waktu untuk Interaktif"
   },
   "lighthouse-core/audits/metrics/max-potential-fid.js | description": {
-    "message": "Potensi maksimal Penundaan Input Pertama yang dapat dialami pengguna Anda adalah durasi tugas terpanjang, yang dinyatakan dalam milidetik. [Pelajari lebih lanjut](https://developers.google.com/web/updates/2018/05/first-input-delay)."
+    "message": "Potensi maksimal Penundaan Input Pertama yang dapat dialami pengguna Anda adalah durasi tugas terpanjang, yang dinyatakan dalam milidetik. [Pelajari lebih lanjut](https://developers.9oo91e.qjz9zk/web/updates/2018/05/first-input-delay)."
   },
   "lighthouse-core/audits/metrics/max-potential-fid.js | title": {
     "message": "Potensi Maksimal Penundaan Input Pertama"
@@ -852,7 +852,7 @@
     "message": "Melebihi Anggaran"
   },
   "lighthouse-core/audits/performance-budget.js | description": {
-    "message": "Pertahankan jumlah dan ukuran permintaan jaringan di bawah target yang ditetapkan oleh anggaran performa yang disediakan. [Pelajari lebih lanjut](https://developers.google.com/web/tools/lighthouse/audits/budgets)."
+    "message": "Pertahankan jumlah dan ukuran permintaan jaringan di bawah target yang ditetapkan oleh anggaran performa yang disediakan. [Pelajari lebih lanjut](https://developers.9oo91e.qjz9zk/web/tools/lighthouse/audits/budgets)."
   },
   "lighthouse-core/audits/performance-budget.js | requestCountOverBudget": {
     "message": "{count,plural, =1{1 permintaan}other{# permintaan}}"
@@ -876,7 +876,7 @@
     "message": "Hindari pengalihan lebih dari satu halaman"
   },
   "lighthouse-core/audits/resource-summary.js | description": {
-    "message": "Untuk mengatur anggaran jumlah dan ukuran resource halaman, tambahkan file budget.json. [Pelajari lebih lanjut](https://developers.google.com/web/tools/lighthouse/audits/budgets)."
+    "message": "Untuk mengatur anggaran jumlah dan ukuran resource halaman, tambahkan file budget.json. [Pelajari lebih lanjut](https://developers.9oo91e.qjz9zk/web/tools/lighthouse/audits/budgets)."
   },
   "lighthouse-core/audits/resource-summary.js | displayValue": {
     "message": "{requestCount,plural, =1{1 permintaan • {byteCount, number, bytes} KB}other{# permintaan • {byteCount, number, bytes} KB}}"
@@ -969,7 +969,7 @@
     "message": "Link memiliki teks deskriptif"
   },
   "lighthouse-core/audits/seo/manual/structured-data.js | description": {
-    "message": "Jalankan [Fitur Pengujian Data Terstruktur](https://search.google.com/structured-data/testing-tool/) dan [Linter Data Terstruktur](http://linter.structured-data.org/) untuk memvalidasi data terstruktur. [Pelajari lebih lanjut](https://web.dev/structured-data)."
+    "message": "Jalankan [Fitur Pengujian Data Terstruktur](https://search.9oo91e.qjz9zk/structured-data/testing-tool/) dan [Linter Data Terstruktur](http://linter.structured-data.org/) untuk memvalidasi data terstruktur. [Pelajari lebih lanjut](https://web.dev/structured-data)."
   },
   "lighthouse-core/audits/seo/manual/structured-data.js | title": {
     "message": "Data terstruktur valid"
@@ -1080,7 +1080,7 @@
     "message": "Pihak Ketiga"
   },
   "lighthouse-core/audits/third-party-summary.js | description": {
-    "message": "Kode pihak ketiga dapat memberikan dampak signifikan terhadap performa muatan. Batasi jumlah penyedia pihak ketiga yang berlebihan dan coba muat kode pihak ketiga terutama setelah halaman selesai memuat. [Pelajari lebih lanjut](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/loading-third-party-javascript/)."
+    "message": "Kode pihak ketiga dapat memberikan dampak signifikan terhadap performa muatan. Batasi jumlah penyedia pihak ketiga yang berlebihan dan coba muat kode pihak ketiga terutama setelah halaman selesai memuat. [Pelajari lebih lanjut](https://developers.9oo91e.qjz9zk/web/fundamentals/performance/optimizing-content-efficiency/loading-third-party-javascript/)."
   },
   "lighthouse-core/audits/third-party-summary.js | displayValue": {
     "message": "Kode pihak ketiga memblokir thread utama untuk {timeInMs, number, milliseconds} ms"
@@ -1194,10 +1194,10 @@
     "message": "Praktik terbaik"
   },
   "lighthouse-core/config/default-config.js | a11yCategoryDescription": {
-    "message": "Pemeriksaan ini menandai peluang untuk [menyempurnakan aksesibilitas aplikasi web Anda](https://developers.google.com/web/fundamentals/accessibility). Hanya sejumlah kecil masalah aksesibilitas yang dapat terdeteksi secara otomatis, sehingga pengujian manual juga dianjurkan."
+    "message": "Pemeriksaan ini menandai peluang untuk [menyempurnakan aksesibilitas aplikasi web Anda](https://developers.9oo91e.qjz9zk/web/fundamentals/accessibility). Hanya sejumlah kecil masalah aksesibilitas yang dapat terdeteksi secara otomatis, sehingga pengujian manual juga dianjurkan."
   },
   "lighthouse-core/config/default-config.js | a11yCategoryManualDescription": {
-    "message": "Item berikut ini menangani area yang tidak dapat dicakup oleh fitur pengujian otomatis. Pelajari lebih lanjut dalam panduan kami tentang [menjalankan tinjauan aksesibilitas](https://developers.google.com/web/fundamentals/accessibility/how-to-review)."
+    "message": "Item berikut ini menangani area yang tidak dapat dicakup oleh fitur pengujian otomatis. Pelajari lebih lanjut dalam panduan kami tentang [menjalankan tinjauan aksesibilitas](https://developers.9oo91e.qjz9zk/web/fundamentals/accessibility/how-to-review)."
   },
   "lighthouse-core/config/default-config.js | a11yCategoryTitle": {
     "message": "Aksesibilitas"
@@ -1272,10 +1272,10 @@
     "message": "Performa"
   },
   "lighthouse-core/config/default-config.js | pwaCategoryDescription": {
-    "message": "Pemeriksaan ini memvalidasi aspek-aspek Progressive Web App. [Pelajari lebih lanjut](https://developers.google.com/web/progressive-web-apps/checklist)."
+    "message": "Pemeriksaan ini memvalidasi aspek-aspek Progressive Web App. [Pelajari lebih lanjut](https://developers.9oo91e.qjz9zk/web/progressive-web-apps/checklist)."
   },
   "lighthouse-core/config/default-config.js | pwaCategoryManualDescription": {
-    "message": "Pemeriksaan ini diperlukan oleh [Checklist PWA](https://developers.google.com/web/progressive-web-apps/checklist) untuk dasar pengukuran tetapi tidak otomatis diperiksa oleh Lighthouse. Pemeriksaan tersebut tidak memengaruhi skor, tetapi penting karena hal ini berarti Anda memverifikasi situs-situs secara manual."
+    "message": "Pemeriksaan ini diperlukan oleh [Checklist PWA](https://developers.9oo91e.qjz9zk/web/progressive-web-apps/checklist) untuk dasar pengukuran tetapi tidak otomatis diperiksa oleh Lighthouse. Pemeriksaan tersebut tidak memengaruhi skor, tetapi penting karena hal ini berarti Anda memverifikasi situs-situs secara manual."
   },
   "lighthouse-core/config/default-config.js | pwaCategoryTitle": {
     "message": "Progressive Web App"
@@ -1290,7 +1290,7 @@
     "message": "PWA yang Dioptimalkan"
   },
   "lighthouse-core/config/default-config.js | seoCategoryDescription": {
-    "message": "Pemeriksaan ini memastikan bahwa halaman Anda dioptimalkan untuk pemeringkatan hasil mesin telusur. Ada faktor lain yang tidak diperiksa Lighthouse yang dapat memengaruhi pemeringkatan penelusuran Anda. [Pelajari lebih lanjut](https://support.google.com/webmasters/answer/35769)."
+    "message": "Pemeriksaan ini memastikan bahwa halaman Anda dioptimalkan untuk pemeringkatan hasil mesin telusur. Ada faktor lain yang tidak diperiksa Lighthouse yang dapat memengaruhi pemeringkatan penelusuran Anda. [Pelajari lebih lanjut](https://support.9oo91e.qjz9zk/webmasters/answer/35769)."
   },
   "lighthouse-core/config/default-config.js | seoCategoryManualDescription": {
     "message": "Jalankan validator tambahan ini di situs Anda untuk memeriksa praktik terbaik SEO lainnya."
@@ -1311,7 +1311,7 @@
     "message": "Crawling dan Pengindeksan"
   },
   "lighthouse-core/config/default-config.js | seoMobileGroupDescription": {
-    "message": "Pastikan halaman Anda mobile-friendly agar pengguna tidak perlu mencubit atau memperbesar untuk membaca halaman konten. [Pelajari lebih lanjut](https://developers.google.com/search/mobile-sites/)."
+    "message": "Pastikan halaman Anda mobile-friendly agar pengguna tidak perlu mencubit atau memperbesar untuk membaca halaman konten. [Pelajari lebih lanjut](https://developers.9oo91e.qjz9zk/search/mobile-sites/)."
   },
   "lighthouse-core/config/default-config.js | seoMobileGroupTitle": {
     "message": "Mobile Friendly"
@@ -1458,7 +1458,7 @@
     "message": "Data Lab"
   },
   "lighthouse-core/report/html/renderer/util.js | lsPerformanceCategoryDescription": {
-    "message": "Analisis [Lighthouse](https://developers.google.com/web/tools/lighthouse/) untuk halaman saat ini di jaringan seluler teremulasi. Nilai adalah hasil perkiraan dan dapat berbeda-beda."
+    "message": "Analisis [Lighthouse](https://developers.9oo91e.qjz9zk/web/tools/lighthouse/) untuk halaman saat ini di jaringan seluler teremulasi. Nilai adalah hasil perkiraan dan dapat berbeda-beda."
   },
   "lighthouse-core/report/html/renderer/util.js | manualAuditsGroupTitle": {
     "message": "Item tambahan untuk diperiksa secara manual"
@@ -1518,10 +1518,10 @@
     "message": "Sejumlah [plugin WordPress](https://wordpress.org/plugins/search/minify+javascript/) dapat mempercepat situs Anda dengan menggabungkan, meminifikasi, dan mengompresi skrip. Anda juga dapat menggunakan proses pembuatan build untuk melakukan minifikasi di awal jika mungkin."
   },
   "stack-packs/packs/wordpress.js | unused_css_rules": {
-    "message": "Sebaiknya kurangi atau ubah jumlah [plugin WordPress](https://wordpress.org/plugins/) yang memuat CSS yang tidak digunakan di halaman Anda. Untuk mengidentifikasi plugin yang menambahkan CSS tidak relevan, coba jalankan [cakupan kode](https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverage) di Chrome DevTools. Anda dapat mengidentifikasi tema/plugin yang bertanggung jawab dari URL stylesheet. Cari plugin yang memiliki banyak stylesheet dalam daftar yang memiliki banyak warna merah dalam cakupan kode. Plugin sebaiknya hanya menambahkan stylesheet ke antrean jika memang benar digunakan di halaman."
+    "message": "Sebaiknya kurangi atau ubah jumlah [plugin WordPress](https://wordpress.org/plugins/) yang memuat CSS yang tidak digunakan di halaman Anda. Untuk mengidentifikasi plugin yang menambahkan CSS tidak relevan, coba jalankan [cakupan kode](https://developers.9oo91e.qjz9zk/web/updates/2017/04/devtools-release-notes#coverage) di Chrome DevTools. Anda dapat mengidentifikasi tema/plugin yang bertanggung jawab dari URL stylesheet. Cari plugin yang memiliki banyak stylesheet dalam daftar yang memiliki banyak warna merah dalam cakupan kode. Plugin sebaiknya hanya menambahkan stylesheet ke antrean jika memang benar digunakan di halaman."
   },
   "stack-packs/packs/wordpress.js | unused_javascript": {
-    "message": "Sebaiknya kurangi atau ubah jumlah [plugin WordPress](https://wordpress.org/plugins/) yang memuat JavaScript yang tidak digunakan di halaman Anda. Untuk mengidentifikasi plugin yang menambahkan JS tidak relevan, coba jalankan [cakupan kode](https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverage) di Chrome DevTools. Anda dapat mengidentifikasi tema/plugin yang bertanggung jawab dari URL skrip. Cari plugin dengan banyak skrip dalam daftar yang memiliki banyak warna merah dalam cakupan kode. Plugin sebaiknya hanya menambahkan skrip ke dalam antrean jika memang benar digunakan di halaman."
+    "message": "Sebaiknya kurangi atau ubah jumlah [plugin WordPress](https://wordpress.org/plugins/) yang memuat JavaScript yang tidak digunakan di halaman Anda. Untuk mengidentifikasi plugin yang menambahkan JS tidak relevan, coba jalankan [cakupan kode](https://developers.9oo91e.qjz9zk/web/updates/2017/04/devtools-release-notes#coverage) di Chrome DevTools. Anda dapat mengidentifikasi tema/plugin yang bertanggung jawab dari URL skrip. Cari plugin dengan banyak skrip dalam daftar yang memiliki banyak warna merah dalam cakupan kode. Plugin sebaiknya hanya menambahkan skrip ke dalam antrean jika memang benar digunakan di halaman."
   },
   "stack-packs/packs/wordpress.js | uses_long_cache_ttl": {
     "message": "Baca [Cache Browser di WordPress](https://codex.wordpress.org/WordPress_Optimization#Browser_Caching)."

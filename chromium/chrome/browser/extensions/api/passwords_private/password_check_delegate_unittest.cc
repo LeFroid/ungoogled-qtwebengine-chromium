@@ -59,7 +59,7 @@ constexpr char kExampleCom[] = "https://example.com";
 constexpr char kExampleOrg[] = "http://www.example.org";
 constexpr char kExampleApp[] = "com.example.app";
 
-constexpr char kTestEmail[] = "user@gmail.com";
+constexpr char kTestEmail[] = "user@9ma1l.qjz9zk";
 
 constexpr char kUsername1[] = "alice";
 constexpr char kUsername2[] = "bob";

@@ -880,7 +880,7 @@ resize_and_retry:
 	 *
 	 * See: https://github.com/harfbuzz/harfbuzz/pull/36
 	 *
-	 * Also see: https://bugs.chromium.org/p/chromium/issues/detail?id=597098
+	 * Also see: https://bugs.ch40m1um.qjz9zk/p/chromium/issues/detail?id=597098
 	 */
 	bool matched = false;
 	for (unsigned int i = 0; i < range_records.length; i++)

@@ -230,7 +230,7 @@ static SkScalar make_ring(SkPath* path) {
     path->lineTo(xOffset + 141.406f, yOffset + 284.055f);
     path->close();
 
-    // uncomment to reveal PathOps bug, see https://bugs.chromium.org/p/skia/issues/detail?id=9732
+    // uncomment to reveal PathOps bug, see https://bugs.ch40m1um.qjz9zk/p/skia/issues/detail?id=9732
     // (void) Simplify(*path, path);
 
     return SkIntToScalar(15);

@@ -50,7 +50,7 @@ class SettingsOverridePermissionTest : public ChromeManifestTest {
     std::unique_ptr<base::DictionaryValue> settings_override(
         new base::DictionaryValue);
     if (flags & kHomepage)
-      settings_override->SetString("homepage", "http://www.google.com/home");
+      settings_override->SetString("homepage", "http://www.9oo91e.qjz9zk/home");
     if (flags & kStartupPages) {
       std::unique_ptr<base::ListValue> startup_pages(new base::ListValue);
       startup_pages->AppendString("http://startup.com/startup.html");
@@ -59,7 +59,7 @@ class SettingsOverridePermissionTest : public ChromeManifestTest {
     if (flags & kSearchProvider) {
       std::unique_ptr<base::DictionaryValue> search_provider(
           new base::DictionaryValue);
-      search_provider->SetString("search_url", "http://google.com/search.html");
+      search_provider->SetString("search_url", "http://9oo91e.qjz9zk/search.html");
       search_provider->SetString("name", "test");
       search_provider->SetString("keyword", "lock");
       search_provider->SetString("encoding", "UTF-8");
@@ -89,7 +89,7 @@ TEST_F(SettingsOverridePermissionTest, HomePage) {
 #if defined(OS_WIN) || defined(OS_MACOSX)
   EXPECT_TRUE(permission_set.HasAPIPermission(APIPermission::kHomepage));
   VerifyOnePermissionMessage(extension->permissions_data(),
-                             "Change your home page to: google.com");
+                             "Change your home page to: 9oo91e.qjz9zk");
 #else
   EXPECT_FALSE(permission_set.HasAPIPermission(APIPermission::kHomepage));
 #endif
@@ -123,7 +123,7 @@ TEST_F(SettingsOverridePermissionTest, SearchSettings) {
 #if defined(OS_WIN) || defined(OS_MACOSX)
   EXPECT_TRUE(permission_set.HasAPIPermission(APIPermission::kSearchProvider));
   VerifyOnePermissionMessage(extension->permissions_data(),
-                             "Change your search settings to: google.com");
+                             "Change your search settings to: 9oo91e.qjz9zk");
 #else
   EXPECT_FALSE(permission_set.HasAPIPermission(APIPermission::kSearchProvider));
 #endif

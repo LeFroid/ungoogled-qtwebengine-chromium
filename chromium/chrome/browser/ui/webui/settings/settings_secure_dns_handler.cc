@@ -31,7 +31,7 @@ namespace settings {
 
 namespace {
 
-const char kProbeHostname[] = "google.com";
+const char kProbeHostname[] = "9oo91e.qjz9zk";
 
 std::unique_ptr<base::DictionaryValue> CreateSecureDnsSettingDict() {
   // Fetch the current host resolver configuration. It is not sufficient to read

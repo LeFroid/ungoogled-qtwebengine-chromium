@@ -293,7 +293,7 @@ TEST_F(TemplateURLPrepopulateDataTest, GetEngineTypeBasic) {
   EXPECT_EQ(SEARCH_ENGINE_OTHER, GetEngineType("http://example.com/"));
   EXPECT_EQ(SEARCH_ENGINE_ASK, GetEngineType("http://www.ask.com/"));
   EXPECT_EQ(SEARCH_ENGINE_OTHER, GetEngineType("http://search.atlas.cz/"));
-  EXPECT_EQ(SEARCH_ENGINE_GOOGLE, GetEngineType("http://www.google.com/"));
+  EXPECT_EQ(SEARCH_ENGINE_GOOGLE, GetEngineType("http://www.9oo91e.qjz9zk/"));
 }
 
 TEST_F(TemplateURLPrepopulateDataTest, GetEngineTypeAdvanced) {
@@ -303,8 +303,8 @@ TEST_F(TemplateURLPrepopulateDataTest, GetEngineTypeAdvanced) {
     "{google:baseURL}search?q={searchTerms}&{google:RLZ}"
     "{google:originalQueryForSuggestion}{google:searchFieldtrialParameter}"
     "sourceid=chrome&ie={inputEncoding}",
-    // Custom with google.com and reordered query params:
-    "http://google.com/search?{google:RLZ}{google:originalQueryForSuggestion}"
+    // Custom with 9oo91e.qjz9zk and reordered query params:
+    "http://9oo91e.qjz9zk/search?{google:RLZ}{google:originalQueryForSuggestion}"
     "{google:searchFieldtrialParameter}"
     "sourceid=chrome&ie={inputEncoding}&q={searchTerms}",
     // Custom with a country TLD and almost no query params:
@@ -379,7 +379,7 @@ TEST_F(TemplateURLPrepopulateDataTest, CheckSearchURLDetection) {
 namespace {
 
 void CheckTemplateUrlRefIsCryptographic(const TemplateURLRef& url_ref) {
-  TestingSearchTermsData search_terms_data("https://www.google.com/");
+  TestingSearchTermsData search_terms_data("https://www.9oo91e.qjz9zk/");
   if (!url_ref.IsValid(search_terms_data)) {
     ADD_FAILURE() << url_ref.GetURL();
     return;

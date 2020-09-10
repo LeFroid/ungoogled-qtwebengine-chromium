@@ -4387,7 +4387,7 @@ IN_PROC_BROWSER_TEST_F(SitePerProcessMouseWheelHitTestBrowserTest,
 
   GURL frame_url(embedded_test_server()->GetURL(
       "b.com", "/page_with_scrollable_div.html"));
-  // To test for https://bugs.chromium.org/p/chromium/issues/detail?id=820232
+  // To test for https://bugs.ch40m1um.qjz9zk/p/chromium/issues/detail?id=820232
   // it's important that both subframes are in the same renderer process, so
   // we load the same URL in each case.
   NavigateFrameToURL(root->child_at(0), frame_url);

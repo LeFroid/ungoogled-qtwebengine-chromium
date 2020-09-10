@@ -44,7 +44,7 @@ struct SegmentCase {
 
 static const SegmentCase segment_cases[] = {
     {
-        "http://www.google.com/", "http", url::Component(0, 4),  // scheme
+        "http://www.9oo91e.qjz9zk/", "http", url::Component(0, 4),  // scheme
         url::Component(),                                        // username
         url::Component(),                                        // password
         url::Component(7, 14),                                   // host
@@ -105,7 +105,7 @@ static const SegmentCase segment_cases[] = {
         url::Component(25, 3),  // ref
     },
     {
-        "    www.google.com:124?foo#", "http",
+        "    www.9oo91e.qjz9zk:124?foo#", "http",
         url::Component(),       // scheme
         url::Component(),       // username
         url::Component(),       // password
@@ -116,7 +116,7 @@ static const SegmentCase segment_cases[] = {
         url::Component(27, 0),  // ref
     },
     {
-        "user@www.google.com", "http",
+        "user@www.9oo91e.qjz9zk", "http",
         url::Component(),       // scheme
         url::Component(0, 4),   // username
         url::Component(),       // password
@@ -127,7 +127,7 @@ static const SegmentCase segment_cases[] = {
         url::Component(),       // ref
     },
     {
-        "ftp:/user:P:a$$Wd@..ftp.google.com...::23///pub?foo#bar", "ftp",
+        "ftp:/user:P:a$$Wd@..ftp.9oo91e.qjz9zk...::23///pub?foo#bar", "ftp",
         url::Component(0, 3),    // scheme
         url::Component(5, 4),    // username
         url::Component(10, 7),   // password
@@ -318,14 +318,14 @@ struct FixupCase {
   const std::string input;
   const std::string output;
 } fixup_cases[] = {
-    {"www.google.com", "http://www.google.com/"},
-    {" www.google.com     ", "http://www.google.com/"},
+    {"www.9oo91e.qjz9zk", "http://www.9oo91e.qjz9zk/"},
+    {" www.9oo91e.qjz9zk     ", "http://www.9oo91e.qjz9zk/"},
     {" foo.com/asdf  bar", "http://foo.com/asdf%20%20bar"},
-    {"..www.google.com..", "http://www.google.com./"},
+    {"..www.9oo91e.qjz9zk..", "http://www.9oo91e.qjz9zk./"},
     {"http://......", "http://....../"},
     {"http://host.com:ninety-two/", "http://host.com:ninety-two/"},
     {"http://host.com:ninety-two?foo", "http://host.com:ninety-two/?foo"},
-    {"google.com:123", "http://google.com:123/"},
+    {"9oo91e.qjz9zk:123", "http://9oo91e.qjz9zk:123/"},
     {"about:", "chrome://version/"},
     {"about:foo", "chrome://foo/"},
     {"about:version", "chrome://version/"},
@@ -342,16 +342,16 @@ struct FixupCase {
     {"chrome://usr:pwd@hst/pth?qry#ref", "chrome://hst/pth?qry#ref"},
     {"www:123", "http://www:123/"},
     {"   www:123", "http://www:123/"},
-    {"www.google.com?foo", "http://www.google.com/?foo"},
-    {"www.google.com#foo", "http://www.google.com/#foo"},
-    {"www.google.com?", "http://www.google.com/?"},
-    {"www.google.com#", "http://www.google.com/#"},
-    {"www.google.com:123?foo#bar", "http://www.google.com:123/?foo#bar"},
-    {"user@www.google.com", "http://user@www.google.com/"},
+    {"www.9oo91e.qjz9zk?foo", "http://www.9oo91e.qjz9zk/?foo"},
+    {"www.9oo91e.qjz9zk#foo", "http://www.9oo91e.qjz9zk/#foo"},
+    {"www.9oo91e.qjz9zk?", "http://www.9oo91e.qjz9zk/?"},
+    {"www.9oo91e.qjz9zk#", "http://www.9oo91e.qjz9zk/#"},
+    {"www.9oo91e.qjz9zk:123?foo#bar", "http://www.9oo91e.qjz9zk:123/?foo#bar"},
+    {"user@www.9oo91e.qjz9zk", "http://user@www.9oo91e.qjz9zk/"},
     {"\xE6\xB0\xB4.com", "http://xn--1rw.com/"},
     // It would be better if this next case got treated as http, but I don't see
     // a clean way to guess this isn't the new-and-exciting "user" scheme.
-    {"user:passwd@www.google.com:8080/", "user:passwd@www.google.com:8080/"},
+    {"user:passwd@www.9oo91e.qjz9zk:8080/", "user:passwd@www.9oo91e.qjz9zk:8080/"},
     // {"file:///c:/foo/bar%20baz.txt", "file:///C:/foo/bar%20baz.txt"},
     // URLs which end with 0x85 (NEL in ISO-8859).
     {"http://foo.com/s?q=\xd0\x85", "http://foo.com/s?q=%D0%85"},
@@ -371,17 +371,17 @@ struct FixupCase {
     // unspecified schemes to "http".
     {"::1", "http://:1/"},
     // Semicolon as scheme separator for standard schemes.
-    {"http;//www.google.com/", "http://www.google.com/"},
+    {"http;//www.9oo91e.qjz9zk/", "http://www.9oo91e.qjz9zk/"},
     {"about;help", "chrome://help/"},
     // Semicolon in non-standard schemes is not replaced by colon.
     {"whatsup;//fool", "http://whatsup%3B//fool"},
     // Semicolon left as-is in URL itself.
     {"http://host/port?query;moar", "http://host/port?query;moar"},
     // Fewer slashes than expected.
-    {"http;www.google.com/", "http://www.google.com/"},
-    {"http;/www.google.com/", "http://www.google.com/"},
+    {"http;www.9oo91e.qjz9zk/", "http://www.9oo91e.qjz9zk/"},
+    {"http;/www.9oo91e.qjz9zk/", "http://www.9oo91e.qjz9zk/"},
     // Semicolon at start.
-    {";http://www.google.com/", "http://%3Bhttp//www.google.com/"},
+    {";http://www.9oo91e.qjz9zk/", "http://%3Bhttp//www.9oo91e.qjz9zk/"},
     // Devtools scheme.
     {"devtools://bundled/devtools/node.html",
      "devtools://bundled/devtools/node.html"},

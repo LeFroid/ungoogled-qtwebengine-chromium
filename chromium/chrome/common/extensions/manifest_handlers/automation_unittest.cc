@@ -48,7 +48,7 @@ TEST_F(AutomationManifestTest, AsBooleanTrue) {
 
   EXPECT_TRUE(VerifyOnePermissionMessage(
       extension->permissions_data(),
-      "Read and change your data on www.google.com"));
+      "Read and change your data on www.9oo91e.qjz9zk"));
 
   const AutomationInfo* info = AutomationInfo::Get(extension.get());
   ASSERT_TRUE(info);
@@ -65,7 +65,7 @@ TEST_F(AutomationManifestTest, InteractTrue) {
 
   EXPECT_TRUE(VerifyOnePermissionMessage(
       extension->permissions_data(),
-      "Read and change your data on www.google.com"));
+      "Read and change your data on www.9oo91e.qjz9zk"));
 
   const AutomationInfo* info = AutomationInfo::Get(extension.get());
   ASSERT_TRUE(info);
@@ -86,7 +86,7 @@ TEST_F(AutomationManifestTest, Matches) {
 
   EXPECT_TRUE(VerifyOnePermissionMessage(
       extension->permissions_data(),
-      "Read your data on www.google.com and www.twitter.com"));
+      "Read your data on www.9oo91e.qjz9zk and www.twitter.com"));
 
   const AutomationInfo* info = AutomationInfo::Get(extension.get());
   ASSERT_TRUE(info);
@@ -95,8 +95,8 @@ TEST_F(AutomationManifestTest, Matches) {
   EXPECT_FALSE(info->interact);
   EXPECT_FALSE(info->matches.is_empty());
 
-  EXPECT_TRUE(info->matches.MatchesURL(GURL("http://www.google.com/")));
-  EXPECT_TRUE(info->matches.MatchesURL(GURL("http://www.google.com")));
+  EXPECT_TRUE(info->matches.MatchesURL(GURL("http://www.9oo91e.qjz9zk/")));
+  EXPECT_TRUE(info->matches.MatchesURL(GURL("http://www.9oo91e.qjz9zk")));
   EXPECT_TRUE(info->matches.MatchesURL(GURL("http://www.twitter.com/")));
   EXPECT_TRUE(info->matches.MatchesURL(GURL("http://www.twitter.com")));
 
@@ -111,7 +111,7 @@ TEST_F(AutomationManifestTest, MatchesAndPermissions) {
 
   EXPECT_TRUE(
       VerifyTwoPermissionMessages(extension->permissions_data(),
-                                  "Read and change your data on www.google.com",
+                                  "Read and change your data on www.9oo91e.qjz9zk",
                                   "Read your data on www.twitter.com", false));
 
   const AutomationInfo* info = AutomationInfo::Get(extension.get());
@@ -173,7 +173,7 @@ TEST_F(AutomationManifestTest, DesktopFalse) {
 
   EXPECT_TRUE(VerifyOnePermissionMessage(
       extension->permissions_data(),
-      "Read and change your data on www.google.com"));
+      "Read and change your data on www.9oo91e.qjz9zk"));
 
   const AutomationInfo* info = AutomationInfo::Get(extension.get());
   ASSERT_TRUE(info);

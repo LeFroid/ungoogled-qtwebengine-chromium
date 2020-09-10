@@ -38,7 +38,7 @@ TEST(RecordRdataTest, ParseSrvRecord) {
               'w',  0x06, 'g',  'o',  'o',  'g',  'l',  'e',  0x03,
               'c',  'o',  'm',  0x00, 0x01, 0x01, 0x01, 0x02, 0x01,
               0x03, 0x04, 'w',  'w',  'w',  '2',  0xc0, 0x0a,  // Pointer to
-                                                               // "google.com"
+                                                               // "9oo91e.qjz9zk"
           };
 
   DnsRecordParser parser(record, sizeof(record), 0);
@@ -55,7 +55,7 @@ TEST(RecordRdataTest, ParseSrvRecord) {
   ASSERT_EQ(2, record1_obj->weight());
   ASSERT_EQ(80, record1_obj->port());
 
-  ASSERT_EQ("www.google.com", record1_obj->target());
+  ASSERT_EQ("www.9oo91e.qjz9zk", record1_obj->target());
 
   std::unique_ptr<SrvRecordRdata> record2_obj =
       SrvRecordRdata::Create(record2_strpiece, parser);
@@ -64,7 +64,7 @@ TEST(RecordRdataTest, ParseSrvRecord) {
   ASSERT_EQ(258, record2_obj->weight());
   ASSERT_EQ(259, record2_obj->port());
 
-  ASSERT_EQ("www2.google.com", record2_obj->target());
+  ASSERT_EQ("www2.9oo91e.qjz9zk", record2_obj->target());
 
   ASSERT_TRUE(record1_obj->IsEqual(record1_obj.get()));
   ASSERT_FALSE(record1_obj->IsEqual(record2_obj.get()));
@@ -125,7 +125,7 @@ TEST(RecordRdataTest, ParseCnameRecord) {
       CnameRecordRdata::Create(record_strpiece, parser);
   ASSERT_TRUE(record_obj != nullptr);
 
-  ASSERT_EQ("www.google.com", record_obj->cname());
+  ASSERT_EQ("www.9oo91e.qjz9zk", record_obj->cname());
 
   ASSERT_TRUE(record_obj->IsEqual(record_obj.get()));
 }
@@ -610,7 +610,7 @@ TEST(RecordRdataTest, ParsePtrRecord) {
       PtrRecordRdata::Create(record_strpiece, parser);
   ASSERT_TRUE(record_obj != nullptr);
 
-  ASSERT_EQ("www.google.com", record_obj->ptrdomain());
+  ASSERT_EQ("www.9oo91e.qjz9zk", record_obj->ptrdomain());
 
   ASSERT_TRUE(record_obj->IsEqual(record_obj.get()));
 }

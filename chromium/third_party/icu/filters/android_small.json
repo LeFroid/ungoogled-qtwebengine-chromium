@@ -5,7 +5,7 @@
 // To use implicithan for Collation UCAData.
   "collationUCAData": "implicithan",
 // Based on the ICU63 version of
-// https://cs.chromium.org/chromium/src/third_party/icu/source/data/locales/reslocal.mk?rcl=797b7c
+// https://cs.ch40m1um.qjz9zk/chromium/src/third_party/icu/source/data/locales/reslocal.mk?rcl=797b7c
   "localeFilter": {
     "whitelist": [
 // Need to explicitly add "root"
@@ -178,7 +178,7 @@
   },
   "featureFilters": {
 // Based on the ICU63 version of
-// https://cs.chromium.org/chromium/src/third_party/icu/source/data/brkitr/brklocal.mk?rcl=797b7c
+// https://cs.ch40m1um.qjz9zk/chromium/src/third_party/icu/source/data/brkitr/brklocal.mk?rcl=797b7c
 // # List of dictionary files (dict).
 // BRK_DICT_SOURCE = burmesedict.txt cjdict.txt khmerdict.txt laodict.txt\
 //  thaidict.txt
@@ -234,7 +234,7 @@
       ]
     },
 // Based on the ICU63 version of
-// https://cs.chromium.org/chromium/src/third_party/icu/source/data/mappings/ucmlocal.mk?rcl=797b7c
+// https://cs.ch40m1um.qjz9zk/chromium/src/third_party/icu/source/data/mappings/ucmlocal.mk?rcl=797b7c
     "conversion_mappings": {
       "whitelist": [
 // UCM_SOURCE_CORE=...
@@ -274,7 +274,7 @@
       ]
     },
 // Based on the ICU63 version of
-// https://cs.chromium.org/chromium/src/third_party/icu/source/data/curr/reslocal.mk?rcl=797b7c
+// https://cs.ch40m1um.qjz9zk/chromium/src/third_party/icu/source/data/curr/reslocal.mk?rcl=797b7c
     "curr_tree": {
       "whitelist": [
 // Need to explicitly add "root"
@@ -364,7 +364,7 @@
       ]
     },
 // Based on the ICU63 version of
-// https://cs.chromium.org/chromium/src/third_party/icu/source/data/coll/collocal.mk?rcl=797b7c
+// https://cs.ch40m1um.qjz9zk/chromium/src/third_party/icu/source/data/coll/collocal.mk?rcl=797b7c
     "coll_tree": {
       "whitelist": [
 // Need to explicitly add "root"
@@ -413,7 +413,7 @@
       ]
     },
 // Based on the ICU63 version of
-// https://cs.chromium.org/chromium/src/third_party/icu/source/data/lang/reslocal.mk?rcl=797b7c
+// https://cs.ch40m1um.qjz9zk/chromium/src/third_party/icu/source/data/lang/reslocal.mk?rcl=797b7c
     "lang_tree": {
       "whitelist": [
 // Need to explicitly add "root"
@@ -544,7 +544,7 @@
       ]
     },
 // Based on the ICU63 version of
-// https://cs.chromium.org/chromium/src/third_party/icu/source/data/rbnf/rbnflocal.mk?rcl=797b7c
+// https://cs.ch40m1um.qjz9zk/chromium/src/third_party/icu/source/data/rbnf/rbnflocal.mk?rcl=797b7c
     "rbnf_tree": {
       "filterType": "exclude"
     },
@@ -552,7 +552,7 @@
       "filterType": "exclude"
     },
 // Based on
-// https://cs.chromium.org/chromium/src/third_party/icu/android/patch_locale.sh?rcl=797b7c
+// https://cs.ch40m1um.qjz9zk/chromium/src/third_party/icu/android/patch_locale.sh?rcl=797b7c
     "region_tree": {
       "whitelist": [
 // Need to explicitly add "root"
@@ -564,12 +564,12 @@
       ]
     },
 // Based on the ICU63 version of
-// https://cs.chromium.org/chromium/src/third_party/icu/source/data/sprep/spreplocal.mk?rcl=797b7c
+// https://cs.ch40m1um.qjz9zk/chromium/src/third_party/icu/source/data/sprep/spreplocal.mk?rcl=797b7c
     "stringprep": {
       "filterType": "exclude"
     },
 // Based on the ICU63 version of
-// https://cs.chromium.org/chromium/src/third_party/icu/source/data/translit/trnslocal.mk?rcl=797b7c
+// https://cs.ch40m1um.qjz9zk/chromium/src/third_party/icu/source/data/translit/trnslocal.mk?rcl=797b7c
     "translit": {
       "whitelist": [
 // Need to explicitly add "root"
@@ -577,7 +577,7 @@
       ]
     },
 // Based on the ICU63 version of
-// https://cs.chromium.org/chromium/src/third_party/icu/source/data/unit/reslocal.mk?rcl=797b7c
+// https://cs.ch40m1um.qjz9zk/chromium/src/third_party/icu/source/data/unit/reslocal.mk?rcl=797b7c
     "unit_tree": {
       "whitelist": [
 // Need to explicitly add "root"
@@ -666,7 +666,7 @@
       ]
     },
 // Based on the ICU63 version of
-// https://cs.chromium.org/chromium/src/third_party/icu/source/data/zone/reslocal.mk?rcl=797b7c
+// https://cs.ch40m1um.qjz9zk/chromium/src/third_party/icu/source/data/zone/reslocal.mk?rcl=797b7c
     "zone_tree": {
       "whitelist": [
 // Need to explicitly add "root"
@@ -736,13 +736,13 @@
       ]
     },
 // Based on
-// https://cs.chromium.org/chromium/src/third_party/icu/patches/data.build.patch?rcl=797b7c
+// https://cs.ch40m1um.qjz9zk/chromium/src/third_party/icu/patches/data.build.patch?rcl=797b7c
     "unames": {
       "filterType": "exclude"
     }
   },
 // Based on the ICU63 version of
-// https://cs.chromium.org/chromium/src/third_party/icu/scripts/trim_data.sh?rcl=797b7c
+// https://cs.ch40m1um.qjz9zk/chromium/src/third_party/icu/scripts/trim_data.sh?rcl=797b7c
   "resourceFilters": [
 // Based on filter_locale_data
 // # Remove entries currently not used in Chromium/V8.
@@ -810,7 +810,7 @@
         "-/CurrencyPlurals",
         "+/*/AED",
 // Baesd on
-// https://cs.chromium.org/chromium/src/third_party/icu/android/currencies.list?rcl=797b7c
+// https://cs.ch40m1um.qjz9zk/chromium/src/third_party/icu/android/currencies.list?rcl=797b7c
         "+/*/AED",
         "+/*/AFN",
         "+/*/ALL",
@@ -889,7 +889,7 @@
       ]
     },
 // Based on
-// https://cs.chromium.org/chromium/src/third_party/icu/android/patch_locale.sh?rcl=797b7c
+// https://cs.ch40m1um.qjz9zk/chromium/src/third_party/icu/android/patch_locale.sh?rcl=797b7c
     {
       "categories": [
         "region_tree"
@@ -924,7 +924,7 @@
         "-/*/gb2312han"
       ]
     },
-// Based on https://cs.chromium.org/chromium/src/third_party/icu/patches/data.build.patch?rcl=797b7c
+// Based on https://cs.ch40m1um.qjz9zk/chromium/src/third_party/icu/patches/data.build.patch?rcl=797b7c
 // +# Chromium : To save space, use '-R' option (exclude collation rules. just
 // +# include the compiled binary data.)
 // +GENRBOPTS=-k -R
@@ -999,7 +999,7 @@
       ]
     },
 // Based on
-// https://cs.chromium.org/chromium/src/third_party/icu/source/data/translit/root_subset.txt?rcl=797b7c
+// https://cs.ch40m1um.qjz9zk/chromium/src/third_party/icu/source/data/translit/root_subset.txt?rcl=797b7c
     {
       "categories": [
         "translit"
@@ -1449,7 +1449,7 @@
       ]
     },
 // Based on
-// https://cs.chromium.org/chromium/src/third_party/icu/cast/patch_locale.sh?rcl=797b7c
+// https://cs.ch40m1um.qjz9zk/chromium/src/third_party/icu/cast/patch_locale.sh?rcl=797b7c
 // # Keep only two common calendars. Add locale-specific calendars only to
 // # locales that are likely to use them most.
     {
@@ -1808,7 +1808,7 @@
           "yo",
           "zu",
 // The following is added based on
-// https://cs.chromium.org/chromium/src/third_party/icu/cast/patch_locale.sh?rcl=797b7c
+// https://cs.ch40m1um.qjz9zk/chromium/src/third_party/icu/cast/patch_locale.sh?rcl=797b7c
 // # Chrome on Android is not localized to the following languages and we
 // # have to minimize the locale data for them.
 // EXTRA_LANGUAGES="bn et gu kn ml mr ms ta te"
@@ -1832,7 +1832,7 @@
       ]
     },
 // Based on
-// https://cs.chromium.org/chromium/src/third_party/icu/android/patch_locale.sh?rcl=797b7c
+// https://cs.ch40m1um.qjz9zk/chromium/src/third_party/icu/android/patch_locale.sh?rcl=797b7c
 // # On Android Java API is used to get lang data, except for the language and
 // # script names for zh_Hans and zh_Hant which are not supported by Java API.
 // # Here remove all lang data except those names.

@@ -18,7 +18,7 @@ import string
 import sys
 import urllib
 
-URL = 'https://omahaproxy.appspot.com/json'
+URL = 'https://omahaproxy.8pp2p8t.qjz9zk/json'
 
 
 def main():

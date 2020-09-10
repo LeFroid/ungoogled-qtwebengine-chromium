@@ -15,7 +15,7 @@ namespace password_manager {
 // CSVPasswordSequence takes a string with CSV representation of multiple
 // credentials and exposes the corresponding PasswordForms in a sequence,
 // parsing as necessary. For more details, see
-// https://docs.google.com/document/d/1wsZBl93S_WGaXZqrqq5SP08LVZ0zDKf6e9nlptyl9AY/edit?usp=sharing.
+// https://docs.9oo91e.qjz9zk/document/d/1wsZBl93S_WGaXZqrqq5SP08LVZ0zDKf6e9nlptyl9AY/edit?usp=sharing.
 class CSVPasswordSequence {
  public:
   // Construct a CSVPasswordSequence over the provided CSV description |csv| of

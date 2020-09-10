@@ -1402,7 +1402,7 @@ void* Stack::GetStackStart() {
   return reinterpret_cast<void*>(__readfsdword(offsetof(NT_TIB, StackBase)));
 #elif defined(V8_TARGET_ARCH_ARM64)
   // Windows 8 and later, see
-  // https://docs.microsoft.com/en-us/windows/win32/api/processthreadsapi/nf-processthreadsapi-getcurrentthreadstacklimits
+  // https://docs.m1cr050ft.qjz9zk/en-us/windows/win32/api/processthreadsapi/nf-processthreadsapi-getcurrentthreadstacklimits
   ULONG_PTR lowLimit, highLimit;
   ::GetCurrentThreadStackLimits(&lowLimit, &highLimit);
   return reinterpret_cast<void*>(highLimit);

@@ -528,7 +528,7 @@ void ResourceLoadScheduler::ShowConsoleMessageIfNeeded() {
       "background, and no request was sent from the queue in the last 1 "
       "minute. This means previously requested in-flight requests haven't "
       "received any response from servers. See "
-      "https://www.chromestatus.com/feature/5527160148197376 for more details");
+      "https://www.ch40mestatus.qjz9zk/feature/5527160148197376 for more details");
   is_console_info_shown_ = true;
 }
 

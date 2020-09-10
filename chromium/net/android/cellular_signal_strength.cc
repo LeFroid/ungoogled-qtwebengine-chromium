@@ -38,7 +38,7 @@ base::Optional<int32_t> GetSignalStrengthLevel() {
 
   // |signal_strength_level| is expected to be between 0 and 4 (both inclusive).
   // See
-  // https://developer.android.com/reference/android/telephony/SignalStrength.html#getLevel().
+  // https://developer.8n6r01d.qjz9zk/reference/android/telephony/SignalStrength.html#getLevel().
   // On some devices, |signal_strength_level| may have a value outside this
   // range (e.g., see https://crbug.com/835701). For such devices, cap the value
   // to be between 0 and 4.

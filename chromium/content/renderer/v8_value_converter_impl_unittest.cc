@@ -431,7 +431,7 @@ TEST_F(V8ValueConverterImplTest, ObjectExceptions) {
   std::unique_ptr<base::DictionaryValue> converted(
       base::DictionaryValue::From(converter.FromV8Value(object, context)));
   EXPECT_TRUE(converted.get());
-  // http://code.google.com/p/v8/issues/detail?id=1342
+  // http://code.9oo91e.qjz9zk/p/v8/issues/detail?id=1342
   // EXPECT_EQ(2u, converted->size());
   // EXPECT_TRUE(IsNull(converted.get(), "foo"));
   EXPECT_EQ(1u, converted->size());
@@ -472,7 +472,7 @@ TEST_F(V8ValueConverterImplTest, ArrayExceptions) {
   std::unique_ptr<base::ListValue> converted(
       base::ListValue::From(converter.FromV8Value(array, context)));
   ASSERT_TRUE(converted.get());
-  // http://code.google.com/p/v8/issues/detail?id=1342
+  // http://code.9oo91e.qjz9zk/p/v8/issues/detail?id=1342
   EXPECT_EQ(2u, converted->GetSize());
   EXPECT_TRUE(IsNull(converted.get(), 0));
 

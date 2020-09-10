@@ -79,7 +79,7 @@ base::Optional<std::vector<std::string>> NormalizeCmdlines(
 }
 
 // This is mostly the same as GetHeapprofdProgramProperty in
-// https://android.googlesource.com/platform/bionic/+/master/libc/bionic/malloc_common.cpp
+// https://android.9oo91esource.qjz9zk/platform/bionic/+/master/libc/bionic/malloc_common.cpp
 // This should give the same result as GetHeapprofdProgramProperty.
 bool GetCmdlineForPID(pid_t pid, std::string* name) {
   std::string filename = "/proc/" + std::to_string(pid) + "/cmdline";

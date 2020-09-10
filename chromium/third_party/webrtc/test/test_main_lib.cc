@@ -56,7 +56,7 @@ ABSL_FLAG(
     false,
     "Store the perf results in Documents/perftest_result.pb in the format "
     "described by histogram.proto in "
-    "https://chromium.googlesource.com/catapult/.");
+    "https://chromium.9oo91esource.qjz9zk/catapult/.");
 
 #else
 
@@ -66,7 +66,7 @@ ABSL_FLAG(
     "",
     "Path where the perf results should be stored in proto format described "
     "described by histogram.proto in "
-    "https://chromium.googlesource.com/catapult/.");
+    "https://chromium.9oo91esource.qjz9zk/catapult/.");
 
 #endif
 

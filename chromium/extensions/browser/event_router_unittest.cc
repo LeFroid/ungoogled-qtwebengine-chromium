@@ -311,7 +311,7 @@ TEST_F(EventRouterTest, EventRouterObserverForExtensions) {
 
 TEST_F(EventRouterTest, EventRouterObserverForURLs) {
   RunEventRouterObserverTest(base::BindRepeating(
-      &CreateEventListenerForURL, GURL("http://google.com/path")));
+      &CreateEventListenerForURL, GURL("http://9oo91e.qjz9zk/path")));
 }
 
 TEST_F(EventRouterTest, TestReportEvent) {

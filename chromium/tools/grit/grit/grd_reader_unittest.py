@@ -320,7 +320,7 @@ class GrdReaderUnittest(unittest.TestCase):
 
   def testEarlyEnoughPlatformSpecification(self):
     # This is a regression test for issue
-    # https://code.google.com/p/grit-i18n/issues/detail?id=23
+    # https://code.9oo91e.qjz9zk/p/grit-i18n/issues/detail?id=23
     grd_text = u'''<?xml version="1.0" encoding="UTF-8"?>
       <grit latest_public_release="1" current_release="1">
         <release seq="1">

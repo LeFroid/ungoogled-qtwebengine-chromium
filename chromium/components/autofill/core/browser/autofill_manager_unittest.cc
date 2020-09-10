@@ -252,7 +252,7 @@ void ExpectFilledAddressFormElvis(int page_id,
   ExpectFilledForm(page_id, filled_form, expected_page_id, "Elvis", "Aaron",
                    "Presley", "3734 Elvis Presley Blvd.", "Apt. 10", "Memphis",
                    "Tennessee", "38116", "United States", "12345678901",
-                   "theking@gmail.com", "", "", "", "", true,
+                   "theking@9ma1l.qjz9zk", "", "", "", "", true,
                    has_credit_card_fields, false);
 }
 
@@ -543,7 +543,7 @@ class AutofillManagerTest : public testing::Test {
     // This line silences the warning from PaymentsClient about matching sync
     // and Payments server types.
     base::CommandLine::ForCurrentProcess()->AppendSwitchASCII(
-        "sync-url", "https://google.com");
+        "sync-url", "https://9oo91e.qjz9zk");
 
     CreateTestCreditCardFormData(form, true, false);
     FormsSeen(std::vector<FormData>(1, *form));
@@ -646,7 +646,7 @@ class AutofillManagerTest : public testing::Test {
   void CreateTestAutofillProfiles() {
     AutofillProfile profile1;
     test::SetProfileInfo(&profile1, "Elvis", "Aaron", "Presley",
-                         "theking@gmail.com", "RCA", "3734 Elvis Presley Blvd.",
+                         "theking@9ma1l.qjz9zk", "RCA", "3734 Elvis Presley Blvd.",
                          "Apt. 10", "Memphis", "Tennessee", "38116", "US",
                          "12345678901");
     profile1.set_guid("00000000-0000-0000-0000-000000000001");
@@ -654,7 +654,7 @@ class AutofillManagerTest : public testing::Test {
 
     AutofillProfile profile2;
     test::SetProfileInfo(&profile2, "Charles", "Hardin", "Holley",
-                         "buddy@gmail.com", "Decca", "123 Apple St.", "unit 6",
+                         "buddy@9ma1l.qjz9zk", "Decca", "123 Apple St.", "unit 6",
                          "Lubbock", "Texas", "79401", "US", "23456789012");
     profile2.set_guid("00000000-0000-0000-0000-000000000002");
     personal_data_.AddProfile(profile2);
@@ -1106,15 +1106,15 @@ TEST_P(SuggestionMatchingTest, GetProfileSuggestions_EmptyValue) {
       // It has an extra digit.
     case EnabledFeature::kDesktop:
       label1 = MakeLabel(
-          {"123 Apple St., unit 6", "23456789012", "buddy@gmail.com"});
+          {"123 Apple St., unit 6", "23456789012", "buddy@9ma1l.qjz9zk"});
       label2 = MakeLabel({"3734 Elvis Presley Blvd., Apt. 10", "(234) 567-8901",
-                          "theking@gmail.com"});
+                          "theking@9ma1l.qjz9zk"});
       break;
     case EnabledFeature::kMobileShowAll:
       label1 = MakeMobileLabel(
-          {"123 Apple St., unit 6", "23456789012", "buddy@gmail.com"});
+          {"123 Apple St., unit 6", "23456789012", "buddy@9ma1l.qjz9zk"});
       label2 = MakeMobileLabel({"3734 Elvis Presley Blvd., Apt. 10",
-                                "(234) 567-8901", "theking@gmail.com"});
+                                "(234) 567-8901", "theking@9ma1l.qjz9zk"});
       break;
     case EnabledFeature::kMobileShowOne:
       label1 = "123 Apple St., unit 6";
@@ -1302,15 +1302,15 @@ TEST_P(SuggestionMatchingTest, GetProfileSuggestions_WithDuplicates) {
       // It has an extra digit.
     case EnabledFeature::kDesktop:
       label1 = MakeLabel(
-          {"123 Apple St., unit 6", "23456789012", "buddy@gmail.com"});
+          {"123 Apple St., unit 6", "23456789012", "buddy@9ma1l.qjz9zk"});
       label2 = MakeLabel({"3734 Elvis Presley Blvd., Apt. 10", "(234) 567-8901",
-                          "theking@gmail.com"});
+                          "theking@9ma1l.qjz9zk"});
       break;
     case EnabledFeature::kMobileShowAll:
       label1 = MakeMobileLabel(
-          {"123 Apple St., unit 6", "23456789012", "buddy@gmail.com"});
+          {"123 Apple St., unit 6", "23456789012", "buddy@9ma1l.qjz9zk"});
       label2 = MakeMobileLabel({"3734 Elvis Presley Blvd., Apt. 10",
-                                "(234) 567-8901", "theking@gmail.com"});
+                                "(234) 567-8901", "theking@9ma1l.qjz9zk"});
       break;
     case EnabledFeature::kMobileShowOne:
       label1 = "123 Apple St., unit 6";
@@ -1803,15 +1803,15 @@ TEST_P(SuggestionMatchingTest, GetAddressAndCreditCardSuggestions) {
       // 23456789012 is not formatted because it is invalid for the app locale.
       // It has an extra digit.
       label1 = MakeLabel(
-          {"123 Apple St., unit 6", "23456789012", "buddy@gmail.com"});
+          {"123 Apple St., unit 6", "23456789012", "buddy@9ma1l.qjz9zk"});
       label2 = MakeLabel({"3734 Elvis Presley Blvd., Apt. 10", "(234) 567-8901",
-                          "theking@gmail.com"});
+                          "theking@9ma1l.qjz9zk"});
       break;
     case EnabledFeature::kMobileShowAll:
       label1 = MakeMobileLabel(
-          {"123 Apple St., unit 6", "23456789012", "buddy@gmail.com"});
+          {"123 Apple St., unit 6", "23456789012", "buddy@9ma1l.qjz9zk"});
       label2 = MakeMobileLabel({"3734 Elvis Presley Blvd., Apt. 10",
-                                "(234) 567-8901", "theking@gmail.com"});
+                                "(234) 567-8901", "theking@9ma1l.qjz9zk"});
       break;
     case EnabledFeature::kMobileShowOne:
       label1 = "123 Apple St., unit 6";
@@ -1960,15 +1960,15 @@ TEST_P(SuggestionMatchingTest, GetFieldSuggestionsWhenFormIsAutofilled) {
       // It has an extra digit.
     case EnabledFeature::kDesktop:
       label1 = MakeLabel(
-          {"123 Apple St., unit 6", "23456789012", "buddy@gmail.com"});
+          {"123 Apple St., unit 6", "23456789012", "buddy@9ma1l.qjz9zk"});
       label2 = MakeLabel({"3734 Elvis Presley Blvd., Apt. 10", "(234) 567-8901",
-                          "theking@gmail.com"});
+                          "theking@9ma1l.qjz9zk"});
       break;
     case EnabledFeature::kMobileShowAll:
       label1 = MakeMobileLabel(
-          {"123 Apple St., unit 6", "23456789012", "buddy@gmail.com"});
+          {"123 Apple St., unit 6", "23456789012", "buddy@9ma1l.qjz9zk"});
       label2 = MakeMobileLabel({"3734 Elvis Presley Blvd., Apt. 10",
-                                "(234) 567-8901", "theking@gmail.com"});
+                                "(234) 567-8901", "theking@9ma1l.qjz9zk"});
       break;
     case EnabledFeature::kMobileShowOne:
       label1 = "123 Apple St., unit 6";
@@ -2077,9 +2077,9 @@ TEST_P(SuggestionMatchingTest, GetProfileSuggestions_FancyPhone) {
       value3 = "(234) 567-8901";
       label1 = "Natty Bumppo";
       label2 = MakeLabel(
-          {"Charles Holley", "123 Apple St., unit 6", "buddy@gmail.com"});
+          {"Charles Holley", "123 Apple St., unit 6", "buddy@9ma1l.qjz9zk"});
       label3 = MakeLabel({"Elvis Presley", "3734 Elvis Presley Blvd., Apt. 10",
-                          "theking@gmail.com"});
+                          "theking@9ma1l.qjz9zk"});
       break;
     case EnabledFeature::kMobileShowAll:
       value1 = "(800) 772-4743";
@@ -2087,9 +2087,9 @@ TEST_P(SuggestionMatchingTest, GetProfileSuggestions_FancyPhone) {
       value3 = "(234) 567-8901";
       label1 = "Natty";
       label2 = MakeMobileLabel(
-          {"Charles", "123 Apple St., unit 6", "buddy@gmail.com"});
+          {"Charles", "123 Apple St., unit 6", "buddy@9ma1l.qjz9zk"});
       label3 = MakeMobileLabel(
-          {"Elvis", "3734 Elvis Presley Blvd., Apt. 10", "theking@gmail.com"});
+          {"Elvis", "3734 Elvis Presley Blvd., Apt. 10", "theking@9ma1l.qjz9zk"});
       break;
     case EnabledFeature::kMobileShowOne:
       value1 = "(800) 772-4743";
@@ -2725,7 +2725,7 @@ TEST_F(AutofillManagerTest, FillAddressForm_CompanyBirthyear) {
   AutofillProfile profile;
   const char guid[] = "00000000-0000-0000-0000-000000000123";
   test::SetProfileInfo(&profile, "Elvis", "Aaron", "Presley",
-                       "theking@gmail.com", "1987", "3734 Elvis Presley Blvd.",
+                       "theking@9ma1l.qjz9zk", "1987", "3734 Elvis Presley Blvd.",
                        "Apt. 10", "Memphis", "Tennessee", "38116", "US",
                        "12345678901");
   profile.set_guid(guid);
@@ -2965,7 +2965,7 @@ TEST_F(AutofillManagerTest, FillFormWithNonFocusableFields) {
   ExpectFilledField("First Name", "firstname", "Elvis", "text",
                     response_data.fields[0]);
   ExpectFilledField("", "lastname", "Presley", "text", response_data.fields[1]);
-  ExpectFilledField("", "email", "theking@gmail.com", "text",
+  ExpectFilledField("", "email", "theking@9ma1l.qjz9zk", "text",
                     response_data.fields[2]);
   ExpectFilledField("Phone Number", "phonenumber", "12345678901", "tel",
                     response_data.fields[3]);
@@ -3130,7 +3130,7 @@ TEST_F(AutofillManagerTest, FillFormWithAuthorSpecifiedSections) {
     ExpectFilledField("", "ccname", "", "text", response_data.fields[7]);
     ExpectFilledField("", "ccnumber", "", "text", response_data.fields[8]);
     ExpectFilledField("", "ccexp", "", "text", response_data.fields[9]);
-    ExpectFilledField("", "email", "theking@gmail.com", "text",
+    ExpectFilledField("", "email", "theking@9ma1l.qjz9zk", "text",
                       response_data.fields[10]);
   }
 
@@ -3217,7 +3217,7 @@ TEST_F(AutofillManagerTest, FillFormWithMultipleEmails) {
                                      &response_page_id, &response_data);
 
   // The second email address should be filled.
-  EXPECT_EQ(ASCIIToUTF16("theking@gmail.com"),
+  EXPECT_EQ(ASCIIToUTF16("theking@9ma1l.qjz9zk"),
             response_data.fields.back().value);
 
   // The remainder of the form should be filled as usual.
@@ -4964,7 +4964,7 @@ const ProfileMatchingTypesTestCase kProfileMatchingTypesTestCases[] = {
     {"A", NAME_MIDDLE_INITIAL},
     {"Presley", NAME_LAST},
     {"Elvis Aaron Presley", NAME_FULL},
-    {"theking@gmail.com", EMAIL_ADDRESS},
+    {"theking@9ma1l.qjz9zk", EMAIL_ADDRESS},
     {"RCA", COMPANY_NAME},
     {"3734 Elvis Presley Blvd.", ADDRESS_HOME_LINE1},
     {"Apt. 10", ADDRESS_HOME_LINE2},
@@ -5067,18 +5067,18 @@ TEST_P(ProfileMatchingTypesTest, DeterminePossibleFieldTypesForUpload) {
   std::vector<AutofillProfile> profiles;
   profiles.resize(3);
   test::SetProfileInfo(&profiles[0], "Elvis", "Aaron", "Presley",
-                       "theking@gmail.com", "RCA", "3734 Elvis Presley Blvd.",
+                       "theking@9ma1l.qjz9zk", "RCA", "3734 Elvis Presley Blvd.",
                        "Apt. 10", "Memphis", "Tennessee", "38116", "US",
                        "+1 (234) 567-8901");
   profiles[0].set_guid("00000000-0000-0000-0000-000000000001");
 
-  test::SetProfileInfo(&profiles[1], "Charles", "", "Holley", "buddy@gmail.com",
+  test::SetProfileInfo(&profiles[1], "Charles", "", "Holley", "buddy@9ma1l.qjz9zk",
                        "Decca", "123 Apple St.", "unit 6", "Lubbock", "TX",
                        "79401", "US", "5142821292");
   profiles[1].set_guid("00000000-0000-0000-0000-000000000002");
 
   test::SetProfileInfo(&profiles[2], "Charles", "", "Baudelaire",
-                       "lesfleursdumal@gmail.com", "", "108 Rue Saint-Lazare",
+                       "lesfleursdumal@9ma1l.qjz9zk", "", "108 Rue Saint-Lazare",
                        "Apt. 11", "Paris", "Île de France", "75008", "FR",
                        "+33 2 49 19 70 70");
   profiles[2].set_guid("00000000-0000-0000-0000-000000000001");
@@ -5202,7 +5202,7 @@ TEST_F(AutofillManagerTest, DeterminePossibleFieldTypesWithMultipleValidities) {
   {
     AutofillProfile profile;
     test::SetProfileInfo(&profile, "Elvis", "Aaron", "Presley",
-                         "theking@gmail.com", "RCA", "3734 Elvis Presley Blvd.",
+                         "theking@9ma1l.qjz9zk", "RCA", "3734 Elvis Presley Blvd.",
                          "", "Memphis", "Tennessee", "38116", "US",
                          "(234) 567-8901");
     profile.set_guid("00000000-0000-0000-0000-000000000001");
@@ -5212,7 +5212,7 @@ TEST_F(AutofillManagerTest, DeterminePossibleFieldTypesWithMultipleValidities) {
   }
   {
     AutofillProfile profile;
-    test::SetProfileInfo(&profile, "Alice", "", "Munro", "munro@gmail.com", "",
+    test::SetProfileInfo(&profile, "Alice", "", "Munro", "munro@9ma1l.qjz9zk", "",
                          "1331 W Georgia", "", "Vancouver", "Tennessee",
                          "V4D 4S4", "CA", "(778) 567-8901");
     profile.set_guid("00000000-0000-0000-0000-000000000002");
@@ -5305,7 +5305,7 @@ TEST_F(AutofillManagerTest, DisambiguateUploadTypes) {
   std::vector<AutofillProfile> profiles;
   AutofillProfile profile;
   test::SetProfileInfo(&profile, "Elvis", "Aaron", "Presley",
-                       "theking@gmail.com", "RCA", "3734 Elvis Presley Blvd.",
+                       "theking@9ma1l.qjz9zk", "RCA", "3734 Elvis Presley Blvd.",
                        "", "Memphis", "Tennessee", "38116", "US",
                        "(234) 567-8901");
   profile.set_guid("00000000-0000-0000-0000-000000000001");
@@ -5485,7 +5485,7 @@ TEST_F(AutofillManagerTest, CrowdsourceUPIVPA) {
   FormFieldData field;
   test::CreateTestFormField("", "name1", "1234@indianbank", "text", &field);
   form.fields.push_back(field);
-  test::CreateTestFormField("", "name2", "not-upi@gmail.com", "text", &field);
+  test::CreateTestFormField("", "name2", "not-upi@9ma1l.qjz9zk", "text", &field);
   form.fields.push_back(field);
   FormStructure form_structure(form);
 
@@ -5881,7 +5881,7 @@ TEST_F(AutofillManagerTest, OnTextFieldDidChangeAndUnfocus_Upload) {
   // default values are not used for upload comparisons.
   form.fields[0].value = ASCIIToUTF16("Elvis");
   form.fields[1].value = ASCIIToUTF16("Presley");
-  form.fields[2].value = ASCIIToUTF16("theking@gmail.com");
+  form.fields[2].value = ASCIIToUTF16("theking@9ma1l.qjz9zk");
   // Simulate editing a field.
   autofill_manager_->OnTextFieldDidChange(
       form, form.fields.front(), gfx::RectF(), AutofillTickClock::NowTicks());
@@ -5931,7 +5931,7 @@ TEST_F(AutofillManagerTest, OnTextFieldDidChangeAndNavigation_Upload) {
   // default values are not used for upload comparisons.
   form.fields[0].value = ASCIIToUTF16("Elvis");
   form.fields[1].value = ASCIIToUTF16("Presley");
-  form.fields[2].value = ASCIIToUTF16("theking@gmail.com");
+  form.fields[2].value = ASCIIToUTF16("theking@9ma1l.qjz9zk");
   // Simulate editing a field.
   autofill_manager_->OnTextFieldDidChange(
       form, form.fields.front(), gfx::RectF(), AutofillTickClock::NowTicks());
@@ -5981,7 +5981,7 @@ TEST_F(AutofillManagerTest, OnDidFillAutofillFormDataAndUnfocus_Upload) {
   // Form was autofilled with user data.
   form.fields[0].value = ASCIIToUTF16("Elvis");
   form.fields[1].value = ASCIIToUTF16("Presley");
-  form.fields[2].value = ASCIIToUTF16("theking@gmail.com");
+  form.fields[2].value = ASCIIToUTF16("theking@9ma1l.qjz9zk");
   autofill_manager_->OnDidFillAutofillFormData(form,
                                                AutofillTickClock::NowTicks());
 
@@ -6246,7 +6246,7 @@ TEST_F(AutofillManagerTest, CreditCardDisabledDoesNotSuggest) {
   EXPECT_FALSE(external_delegate_->on_suggestions_returned_seen());
 }
 
-// Verify that typing "gmail" matches "theking@gmail.com" and "buddy@gmail.com"
+// Verify that typing "gmail" matches "theking@9ma1l.qjz9zk" and "buddy@9ma1l.qjz9zk"
 // when substring matching is enabled.
 TEST_P(SuggestionMatchingTest, DisplaySuggestionsWithMatchingTokens) {
   base::test::ScopedFeatureList features;
@@ -6292,8 +6292,8 @@ TEST_P(SuggestionMatchingTest, DisplaySuggestionsWithMatchingTokens) {
       label2 = "3734 Elvis Presley Blvd.";
   }
   // Test that we sent the right values to the external delegate.
-  CheckSuggestions(kDefaultPageID, Suggestion("buddy@gmail.com", label1, "", 1),
-                   Suggestion("theking@gmail.com", label2, "", 2));
+  CheckSuggestions(kDefaultPageID, Suggestion("buddy@9ma1l.qjz9zk", label1, "", 1),
+                   Suggestion("theking@9ma1l.qjz9zk", label2, "", 2));
 }
 
 // Verify that typing "apple" will match "123 Apple St." when substring matching
@@ -6333,7 +6333,7 @@ TEST_P(SuggestionMatchingTest,
                    Suggestion("123 Apple St., unit 6", label, "", 1));
 }
 
-// Verify that typing "mail" will not match any of the "@gmail.com" email
+// Verify that typing "mail" will not match any of the "@9ma1l.qjz9zk" email
 // addresses when substring matching is enabled.
 TEST_F(AutofillManagerTest, NoSuggestionForNonPrefixTokenMatch) {
   base::test::ScopedFeatureList features;

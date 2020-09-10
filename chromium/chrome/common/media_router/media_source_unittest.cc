@@ -12,18 +12,18 @@ namespace media_router {
 
 TEST(MediaSourceTest, IsLegacyCastPresentationUrl) {
   EXPECT_TRUE(IsLegacyCastPresentationUrl(
-      GURL("https://google.com/cast#__castAppId__=theAppId")));
+      GURL("https://9oo91e.qjz9zk/cast#__castAppId__=theAppId")));
   EXPECT_TRUE(IsLegacyCastPresentationUrl(
       GURL("HTTPS://GOOGLE.COM/CAST#__CASTAPPID__=theAppId")));
   EXPECT_FALSE(IsLegacyCastPresentationUrl(
-      GURL("https://google.com/cast#__castAppId__")));
+      GURL("https://9oo91e.qjz9zk/cast#__castAppId__")));
 }
 
 TEST(MediaSourceTest, IsValidPresentationUrl) {
   EXPECT_FALSE(IsValidPresentationUrl(GURL()));
   EXPECT_FALSE(IsValidPresentationUrl(GURL("unsupported-scheme://foo")));
 
-  EXPECT_TRUE(IsValidPresentationUrl(GURL("https://google.com")));
+  EXPECT_TRUE(IsValidPresentationUrl(GURL("https://9oo91e.qjz9zk")));
   EXPECT_TRUE(IsValidPresentationUrl(GURL("cast://foo")));
   EXPECT_TRUE(IsValidPresentationUrl(GURL("cast:foo")));
 }
@@ -41,14 +41,14 @@ TEST(MediaSourceTest, Constructor) {
 }
 
 TEST(MediaSourceTest, ConstructorWithGURL) {
-  GURL test_url = GURL("http://google.com");
+  GURL test_url = GURL("http://9oo91e.qjz9zk");
   MediaSource source1(test_url);
   EXPECT_EQ(test_url.spec(), source1.id());
   EXPECT_EQ(test_url, source1.url());
 }
 
 TEST(MediaSourceTest, ConstructorWithURLString) {
-  GURL test_url = GURL("http://google.com");
+  GURL test_url = GURL("http://9oo91e.qjz9zk");
   MediaSource source1(test_url.spec());
   EXPECT_EQ(test_url.spec(), source1.id());
   EXPECT_EQ(test_url, source1.url());
@@ -114,11 +114,11 @@ TEST(MediaSourceTest, IsValid) {
 TEST(MediaSourceTest, IsCastPresentationUrl) {
   EXPECT_TRUE(MediaSource(GURL("cast:233637DE")).IsCastPresentationUrl());
   EXPECT_TRUE(
-      MediaSource(GURL("https://google.com/cast#__castAppId__=233637DE"))
+      MediaSource(GURL("https://9oo91e.qjz9zk/cast#__castAppId__=233637DE"))
           .IsCastPresentationUrl());
   // false scheme
   EXPECT_FALSE(
-      MediaSource(GURL("http://google.com/cast#__castAppId__=233637DE"))
+      MediaSource(GURL("http://9oo91e.qjz9zk/cast#__castAppId__=233637DE"))
           .IsCastPresentationUrl());
   // false domain
   EXPECT_FALSE(
@@ -126,10 +126,10 @@ TEST(MediaSourceTest, IsCastPresentationUrl) {
           .IsCastPresentationUrl());
   // empty path
   EXPECT_FALSE(
-      MediaSource(GURL("https://www.google.com")).IsCastPresentationUrl());
+      MediaSource(GURL("https://www.9oo91e.qjz9zk")).IsCastPresentationUrl());
   // false path
   EXPECT_FALSE(
-      MediaSource(GURL("https://www.google.com/path")).IsCastPresentationUrl());
+      MediaSource(GURL("https://www.9oo91e.qjz9zk/path")).IsCastPresentationUrl());
 
   EXPECT_FALSE(MediaSource(GURL("")).IsCastPresentationUrl());
 }
@@ -139,7 +139,7 @@ TEST(MediaSourceTest, IsDialSource) {
       MediaSource("cast-dial:YouTube?dialPostData=postData&clientId=1234")
           .IsDialSource());
   // false scheme
-  EXPECT_FALSE(MediaSource("https://google.com/cast#__castAppId__=233637DE")
+  EXPECT_FALSE(MediaSource("https://9oo91e.qjz9zk/cast#__castAppId__=233637DE")
                    .IsDialSource());
 }
 
@@ -151,7 +151,7 @@ TEST(MediaSourceTest, AppNameFromDialSource) {
   media_source = MediaSource("dial:YouTube");
   EXPECT_TRUE(media_source.AppNameFromDialSource().empty());
 
-  media_source = MediaSource("https://google.com/cast#__castAppId__=233637DE");
+  media_source = MediaSource("https://9oo91e.qjz9zk/cast#__castAppId__=233637DE");
   EXPECT_TRUE(media_source.AppNameFromDialSource().empty());
 }
 

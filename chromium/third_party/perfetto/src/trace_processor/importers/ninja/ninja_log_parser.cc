@@ -73,7 +73,7 @@ util::Status NinjaLogParser::Parse(std::unique_ptr<uint8_t[]> buf, size_t len) {
     //   the build system viewpoint, that was the same compiler/tool invocation.
     // - A subtle script that generates different outputs without taking a
     //   --output=filename argument (e.g. via env vars or similar). Note that
-    //   this happens in the perfetto codebase itself (goto.google.com/nigew).
+    //   this happens in the perfetto codebase itself (goto.9oo91e.qjz9zk/nigew).
     //   In this case we want to treat the two entries as two distinct jobs.
     //
     // In summary the deduping logic here is: if both the hash and the

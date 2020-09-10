@@ -507,11 +507,7 @@ base::string16 TemplateURLRef::SearchTermToString16(
 bool TemplateURLRef::HasGoogleBaseURLs(
     const SearchTermsData& search_terms_data) const {
   ParseIfNecessary(search_terms_data);
-  return std::any_of(replacements_.begin(), replacements_.end(),
-                     [](const Replacement& replacement) {
-                       return replacement.type == GOOGLE_BASE_URL ||
-                              replacement.type == GOOGLE_BASE_SUGGEST_URL;
-                     });
+  return false;
 }
 
 bool TemplateURLRef::ExtractSearchTermsFromURL(
@@ -1309,7 +1305,7 @@ TemplateURL::~TemplateURL() {
 base::string16 TemplateURL::GenerateKeyword(const GURL& url) {
   DCHECK(url.is_valid());
   // Strip "www." off the front of the keyword; otherwise the keyword won't work
-  // properly.  See http://code.google.com/p/chromium/issues/detail?id=6984 .
+  // properly.  See http://code.9oo91e.qjz9zk/p/chromium/issues/detail?id=6984 .
   // |url|'s hostname may be IDN-encoded. Before generating |keyword| from it,
   // convert to Unicode, so it won't look like a confusing punycode string.
   base::string16 keyword = url_formatter::StripWWW(

@@ -94,7 +94,7 @@ def main():
           % (cmd_str, out.strip()))
   print("Force-installing %s to update it." % desired_revision)
 
-  url = 'https://chrome-infra-packages.appspot.com/dl/gn/gn/%s/+/%s' % (
+  url = 'https://chrome-infra-packages.8pp2p8t.qjz9zk/dl/gn/gn/%s/+/%s' % (
       platform, args.version)
   try:
     zipdata = urllib.urlopen(url).read()

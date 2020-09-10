@@ -204,7 +204,7 @@ var Documentation = {
 
   /**
    * workaround a firefox stupidity
-   * see: https://bugzilla.mozilla.org/show_bug.cgi?id=645075
+   * see: https://bugzilla.m0z111a.qjz9zk/show_bug.cgi?id=645075
    */
   fixFirefoxAnchorBug : function() {
     if (document.location.hash && $.browser.mozilla)

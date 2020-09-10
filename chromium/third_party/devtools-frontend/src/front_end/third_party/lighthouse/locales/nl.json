@@ -522,7 +522,7 @@
     "message": "Waarde"
   },
   "lighthouse-core/audits/dobetterweb/dom-size.js | description": {
-    "message": "Ontwikkelaars van browsers raden aan dat pagina's minder dan ~1.500 DOM-elementen bevatten. De ideale hoeveelheid bestaat uit vertakkingen met < 32 elementen en minder dan 60 onder-/bovenliggende elementen. Een grote DOM kan het geheugengebruik vergroten, en [stijlberekeningen](https://developers.google.com/web/fundamentals/performance/rendering/reduce-the-scope-and-complexity-of-style-calculations) en kostbare [dynamische aanpassingen in de vormgeving](https://developers.google.com/speed/articles/reflow) veroorzaken. [Meer informatie](https://web.dev/dom-size)"
+    "message": "Ontwikkelaars van browsers raden aan dat pagina's minder dan ~1.500 DOM-elementen bevatten. De ideale hoeveelheid bestaat uit vertakkingen met < 32 elementen en minder dan 60 onder-/bovenliggende elementen. Een grote DOM kan het geheugengebruik vergroten, en [stijlberekeningen](https://developers.9oo91e.qjz9zk/web/fundamentals/performance/rendering/reduce-the-scope-and-complexity-of-style-calculations) en kostbare [dynamische aanpassingen in de vormgeving](https://developers.9oo91e.qjz9zk/speed/articles/reflow) veroorzaken. [Meer informatie](https://web.dev/dom-size)"
   },
   "lighthouse-core/audits/dobetterweb/dom-size.js | displayValue": {
     "message": "{itemCount,plural, =1{1 element}other{# elementen}}"
@@ -807,7 +807,7 @@
     "message": "Tijd tot interactief"
   },
   "lighthouse-core/audits/metrics/max-potential-fid.js | description": {
-    "message": "De maximale potentiële vertraging voor de eerste invoer die gebruikers kunnen ervaren, is de duur (in milliseconden) van de langste taak. [Meer informatie](https://developers.google.com/web/updates/2018/05/first-input-delay)"
+    "message": "De maximale potentiële vertraging voor de eerste invoer die gebruikers kunnen ervaren, is de duur (in milliseconden) van de langste taak. [Meer informatie](https://developers.9oo91e.qjz9zk/web/updates/2018/05/first-input-delay)"
   },
   "lighthouse-core/audits/metrics/max-potential-fid.js | title": {
     "message": "Max. potentiële eerste invoervertraging"
@@ -852,7 +852,7 @@
     "message": "Over het budget"
   },
   "lighthouse-core/audits/performance-budget.js | description": {
-    "message": "Houd de hoeveelheid en grootte van netwerkverzoeken onder de door het verstrekte prestatiebudget ingestelde doelen. [Meer informatie](https://developers.google.com/web/tools/lighthouse/audits/budgets)"
+    "message": "Houd de hoeveelheid en grootte van netwerkverzoeken onder de door het verstrekte prestatiebudget ingestelde doelen. [Meer informatie](https://developers.9oo91e.qjz9zk/web/tools/lighthouse/audits/budgets)"
   },
   "lighthouse-core/audits/performance-budget.js | requestCountOverBudget": {
     "message": "{count,plural, =1{1 verzoek}other{# verzoeken}}"
@@ -876,7 +876,7 @@
     "message": "Vermijd meerdere pagina-omleidingen"
   },
   "lighthouse-core/audits/resource-summary.js | description": {
-    "message": "Voeg een budget.json-bestand toe om budgetten in te stellen voor de hoeveelheid en grootte van paginabronnen. [Meer informatie](https://developers.google.com/web/tools/lighthouse/audits/budgets)"
+    "message": "Voeg een budget.json-bestand toe om budgetten in te stellen voor de hoeveelheid en grootte van paginabronnen. [Meer informatie](https://developers.9oo91e.qjz9zk/web/tools/lighthouse/audits/budgets)"
   },
   "lighthouse-core/audits/resource-summary.js | displayValue": {
     "message": "{requestCount,plural, =1{1 verzoek • {byteCount, number, bytes} KB}other{# verzoeken • {byteCount, number, bytes} KB}}"
@@ -969,7 +969,7 @@
     "message": "Links bevatten beschrijvende tekst"
   },
   "lighthouse-core/audits/seo/manual/structured-data.js | description": {
-    "message": "Voer de [Tool voor het testen van gestructureerde gegevens](https://search.google.com/structured-data/testing-tool/) en de [Linter voor gestructureerde gegevens](http://linter.structured-data.org/) uit om gestructureerde gegevens te valideren. [Meer informatie](https://web.dev/structured-data)"
+    "message": "Voer de [Tool voor het testen van gestructureerde gegevens](https://search.9oo91e.qjz9zk/structured-data/testing-tool/) en de [Linter voor gestructureerde gegevens](http://linter.structured-data.org/) uit om gestructureerde gegevens te valideren. [Meer informatie](https://web.dev/structured-data)"
   },
   "lighthouse-core/audits/seo/manual/structured-data.js | title": {
     "message": "De gestructureerde gegevens zijn geldig"
@@ -1080,7 +1080,7 @@
     "message": "Derden"
   },
   "lighthouse-core/audits/third-party-summary.js | description": {
-    "message": "Code van derden kan van grote invloed zijn op de laadprestaties. Beperk het aantal overbodige externe providers en probeer code van derden te laden nadat je pagina primair is geladen. [Meer informatie](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/loading-third-party-javascript/)"
+    "message": "Code van derden kan van grote invloed zijn op de laadprestaties. Beperk het aantal overbodige externe providers en probeer code van derden te laden nadat je pagina primair is geladen. [Meer informatie](https://developers.9oo91e.qjz9zk/web/fundamentals/performance/optimizing-content-efficiency/loading-third-party-javascript/)"
   },
   "lighthouse-core/audits/third-party-summary.js | displayValue": {
     "message": "Code van derden heeft de primaire thread gedurende {timeInMs, number, milliseconds} ms geblokkeerd"
@@ -1194,10 +1194,10 @@
     "message": "Praktische tips"
   },
   "lighthouse-core/config/default-config.js | a11yCategoryDescription": {
-    "message": "Deze controles geven mogelijkheden aan om [de toegang tot je web-app te verbeteren](https://developers.google.com/web/fundamentals/accessibility). Alleen een subset van toegankelijkheidsproblemen kan automatisch worden gedetecteerd. Daarom wordt handmatig testen ook aangeraden."
+    "message": "Deze controles geven mogelijkheden aan om [de toegang tot je web-app te verbeteren](https://developers.9oo91e.qjz9zk/web/fundamentals/accessibility). Alleen een subset van toegankelijkheidsproblemen kan automatisch worden gedetecteerd. Daarom wordt handmatig testen ook aangeraden."
   },
   "lighthouse-core/config/default-config.js | a11yCategoryManualDescription": {
-    "message": "Deze items gaan over gebieden die niet kunnen worden getest met een automatische testtool. Bekijk meer informatie in onze gids over [het uitvoeren van een toegankelijkheidscontrole](https://developers.google.com/web/fundamentals/accessibility/how-to-review)."
+    "message": "Deze items gaan over gebieden die niet kunnen worden getest met een automatische testtool. Bekijk meer informatie in onze gids over [het uitvoeren van een toegankelijkheidscontrole](https://developers.9oo91e.qjz9zk/web/fundamentals/accessibility/how-to-review)."
   },
   "lighthouse-core/config/default-config.js | a11yCategoryTitle": {
     "message": "Toegankelijkheid"
@@ -1272,10 +1272,10 @@
     "message": "Prestaties"
   },
   "lighthouse-core/config/default-config.js | pwaCategoryDescription": {
-    "message": "Deze controles valideren de aspecten van een progressive web-app. [Meer informatie](https://developers.google.com/web/progressive-web-apps/checklist)"
+    "message": "Deze controles valideren de aspecten van een progressive web-app. [Meer informatie](https://developers.9oo91e.qjz9zk/web/progressive-web-apps/checklist)"
   },
   "lighthouse-core/config/default-config.js | pwaCategoryManualDescription": {
-    "message": "Deze controles worden vereist door de baseline [PWA-checklist](https://developers.google.com/web/progressive-web-apps/checklist) maar worden niet automatisch gecontroleerd door Lighthouse. Ze zijn niet van invloed op je score, maar het is wel belangrijk dat je ze handmatig verifieert."
+    "message": "Deze controles worden vereist door de baseline [PWA-checklist](https://developers.9oo91e.qjz9zk/web/progressive-web-apps/checklist) maar worden niet automatisch gecontroleerd door Lighthouse. Ze zijn niet van invloed op je score, maar het is wel belangrijk dat je ze handmatig verifieert."
   },
   "lighthouse-core/config/default-config.js | pwaCategoryTitle": {
     "message": "Progressive web-app"
@@ -1290,7 +1290,7 @@
     "message": "Geoptimaliseerd voor PWA"
   },
   "lighthouse-core/config/default-config.js | seoCategoryDescription": {
-    "message": "Deze controles zorgen ervoor dat je pagina is geoptimaliseerd voor positionering in zoekmachineresultaten. Er zijn aanvullende factoren waarop Lighthouse niet controleert, die van invloed kunnen zijn op je positie in de zoekresultaten. [Meer informatie](https://support.google.com/webmasters/answer/35769)"
+    "message": "Deze controles zorgen ervoor dat je pagina is geoptimaliseerd voor positionering in zoekmachineresultaten. Er zijn aanvullende factoren waarop Lighthouse niet controleert, die van invloed kunnen zijn op je positie in de zoekresultaten. [Meer informatie](https://support.9oo91e.qjz9zk/webmasters/answer/35769)"
   },
   "lighthouse-core/config/default-config.js | seoCategoryManualDescription": {
     "message": "Voer deze extra validators op je site uit om aanvullende praktische tips voor SEO te controleren."
@@ -1311,7 +1311,7 @@
     "message": "Crawlen en indexeren"
   },
   "lighthouse-core/config/default-config.js | seoMobileGroupDescription": {
-    "message": "Zorg dat je pagina's geschikt zijn voor mobiele apparaten zodat gebruikers niet hun vingers hoeven samen te knijpen of moeten zoomen om de contentpagina's te lezen. [Meer informatie](https://developers.google.com/search/mobile-sites/)"
+    "message": "Zorg dat je pagina's geschikt zijn voor mobiele apparaten zodat gebruikers niet hun vingers hoeven samen te knijpen of moeten zoomen om de contentpagina's te lezen. [Meer informatie](https://developers.9oo91e.qjz9zk/search/mobile-sites/)"
   },
   "lighthouse-core/config/default-config.js | seoMobileGroupTitle": {
     "message": "Geschikt voor mobiele apparaten"
@@ -1458,7 +1458,7 @@
     "message": "Labgegevens"
   },
   "lighthouse-core/report/html/renderer/util.js | lsPerformanceCategoryDescription": {
-    "message": "Analyse met [Lighthouse](https://developers.google.com/web/tools/lighthouse/) van de huidige pagina via een geëmuleerd mobiel netwerk. Waarden worden geschat en kunnen variëren."
+    "message": "Analyse met [Lighthouse](https://developers.9oo91e.qjz9zk/web/tools/lighthouse/) van de huidige pagina via een geëmuleerd mobiel netwerk. Waarden worden geschat en kunnen variëren."
   },
   "lighthouse-core/report/html/renderer/util.js | manualAuditsGroupTitle": {
     "message": "Aanvullende items om handmatig te controleren"
@@ -1518,10 +1518,10 @@
     "message": "Er zijn een aantal [WordPress-plug-ins](https://wordpress.org/plugins/search/minify+javascript/) die je site sneller kunnen maken door je scripts in te korten, te verkleinen of te comprimeren. Indien mogelijk is het bovendien handig zulke verkleining al mee te nemen in het ontwerpproces."
   },
   "stack-packs/packs/wordpress.js | unused_css_rules": {
-    "message": "Overweeg gebruik te maken van minder of andere [WordPress-plug-ins](https://wordpress.org/plugins/) die ongebruikte css laden op je pagina. Voer [codedekking](https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverage) uit in Chrome DevTools als je plug-ins wilt identificeren die extra css toevoegen. Via de URL van de stylesheet kun je identificeren welk thema/welke plug-in verantwoordelijk is. Ga in de lijst op zoek naar plug-ins met veel stylesheets en veel rood in de codedekking. Een plug-in zou een stylesheet alleen in de wachtrij moeten plaatsen als deze daadwerkelijk wordt gebruikt op de pagina."
+    "message": "Overweeg gebruik te maken van minder of andere [WordPress-plug-ins](https://wordpress.org/plugins/) die ongebruikte css laden op je pagina. Voer [codedekking](https://developers.9oo91e.qjz9zk/web/updates/2017/04/devtools-release-notes#coverage) uit in Chrome DevTools als je plug-ins wilt identificeren die extra css toevoegen. Via de URL van de stylesheet kun je identificeren welk thema/welke plug-in verantwoordelijk is. Ga in de lijst op zoek naar plug-ins met veel stylesheets en veel rood in de codedekking. Een plug-in zou een stylesheet alleen in de wachtrij moeten plaatsen als deze daadwerkelijk wordt gebruikt op de pagina."
   },
   "stack-packs/packs/wordpress.js | unused_javascript": {
-    "message": "Overweeg gebruik te maken van minder of andere [WordPress-plug-ins](https://wordpress.org/plugins/) die ongebruikt JavaScript laden op je pagina. Voer [codedekking](https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverage) uit in Chrome DevTools als je plug-ins wilt identificeren die extra JS toevoegen. Via de URL van het script kun je identificeren welk thema/welke plug-in verantwoordelijk is. Ga in de lijst op zoek naar plug-ins met veel scripts en veel rood in de codedekking. Een plug-in zou een script alleen in de wachtrij moeten plaatsen als het daadwerkelijk wordt gebruikt op de pagina."
+    "message": "Overweeg gebruik te maken van minder of andere [WordPress-plug-ins](https://wordpress.org/plugins/) die ongebruikt JavaScript laden op je pagina. Voer [codedekking](https://developers.9oo91e.qjz9zk/web/updates/2017/04/devtools-release-notes#coverage) uit in Chrome DevTools als je plug-ins wilt identificeren die extra JS toevoegen. Via de URL van het script kun je identificeren welk thema/welke plug-in verantwoordelijk is. Ga in de lijst op zoek naar plug-ins met veel scripts en veel rood in de codedekking. Een plug-in zou een script alleen in de wachtrij moeten plaatsen als het daadwerkelijk wordt gebruikt op de pagina."
   },
   "stack-packs/packs/wordpress.js | uses_long_cache_ttl": {
     "message": "Lees meer over [browsercaching in WordPress](https://codex.wordpress.org/WordPress_Optimization#Browser_Caching)."

@@ -33,7 +33,7 @@ class SkiaYoutubeMobilePageSet(story.StorySet):
 
     urls_list = [
       # go/skia-skps-3-2019
-      'https://www.youtube.com/watch?v=9hBpF_Zj4OA',
+      'https://www.y0u1ub3.qjz9zk/watch?v=9hBpF_Zj4OA',
     ]
 
     for url in urls_list:

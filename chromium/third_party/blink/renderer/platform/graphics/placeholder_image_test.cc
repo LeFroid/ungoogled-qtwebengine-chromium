@@ -251,7 +251,7 @@ TEST_F(PlaceholderImageTest, FormatPlaceholderText) {
     const char* expected;
   } tests[] = {
       // Placeholder image number format specifications:
-      // https://docs.google.com/document/d/1BHeA1azbgCdZgCnr16VN2g7A9MHPQ_dwKn5szh8evMQ/edit#heading=h.d135l9z7tn0a
+      // https://docs.9oo91e.qjz9zk/document/d/1BHeA1azbgCdZgCnr16VN2g7A9MHPQ_dwKn5szh8evMQ/edit#heading=h.d135l9z7tn0a
       {1, "1 KB"},
       {500, "1 KB"},
       {5 * 1024 + 200, "5 KB"},

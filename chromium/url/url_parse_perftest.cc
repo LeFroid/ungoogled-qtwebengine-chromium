@@ -25,7 +25,7 @@ TEST(URLParse, FullURL) {
 }
 
 constexpr base::StringPiece kTypicalUrl1 =
-    "http://www.google.com/"
+    "http://www.9oo91e.qjz9zk/"
     "search?q=url+parsing&ie=utf-8&oe=utf-8&aq=t&rls=org.mozilla:en-US:"
     "official&client=firefox-a";
 

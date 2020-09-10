@@ -29,7 +29,7 @@ namespace utils = extension_function_test_utils;
 namespace extensions {
 namespace {
 
-const char kUserEmail[] = "test@google.com";
+const char kUserEmail[] = "test@9oo91e.qjz9zk";
 
 class EPKPChallengeKeyTestBase : public BrowserWithTestWindowTest {
  protected:

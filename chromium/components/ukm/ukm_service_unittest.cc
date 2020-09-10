@@ -236,7 +236,7 @@ TEST_F(UkmServiceTest, PersistAndPurge) {
   service.EnableReporting();
 
   SourceId id = GetWhitelistedSourceId(0);
-  recorder.UpdateSourceURL(id, GURL("https://google.com/foobar"));
+  recorder.UpdateSourceURL(id, GURL("https://9oo91e.qjz9zk/foobar"));
   // Should init, generate a log, and start an upload for source.
   task_runner_->RunPendingTasks();
   EXPECT_TRUE(client_.uploader()->is_uploading());
@@ -261,7 +261,7 @@ TEST_F(UkmServiceTest, Purge) {
 
   // Record some data
   auto id = GetWhitelistedSourceId(0);
-  recorder.UpdateSourceURL(id, GURL("https://google.com/foobar1"));
+  recorder.UpdateSourceURL(id, GURL("https://9oo91e.qjz9zk/foobar1"));
   TestEvent1(id).Record(&service);
 
   // Purge should delete data, so there shouldn't be anything left to upload.
@@ -346,8 +346,8 @@ TEST_F(UkmServiceTest, SourceSerialization) {
   service.EnableReporting();
 
   UkmSource::NavigationData navigation_data;
-  navigation_data.urls = {GURL("https://google.com/initial"),
-                          GURL("https://google.com/final")};
+  navigation_data.urls = {GURL("https://9oo91e.qjz9zk/initial"),
+                          GURL("https://9oo91e.qjz9zk/final")};
 
   ukm::SourceId id = GetWhitelistedSourceId(0);
   recorder.RecordNavigation(id, navigation_data);
@@ -361,7 +361,7 @@ TEST_F(UkmServiceTest, SourceSerialization) {
   const Source& proto_source = proto_report.sources(0);
 
   EXPECT_EQ(id, proto_source.id());
-  EXPECT_EQ(GURL("https://google.com/final").spec(),
+  EXPECT_EQ(GURL("https://9oo91e.qjz9zk/final").spec(),
             proto_source.urls(1).url());
 }
 
@@ -379,7 +379,7 @@ TEST_F(UkmServiceTest, AddEntryWithEmptyMetrics) {
   service.EnableReporting();
 
   ukm::SourceId id = GetWhitelistedSourceId(0);
-  recorder.UpdateSourceURL(id, GURL("https://google.com/foobar"));
+  recorder.UpdateSourceURL(id, GURL("https://9oo91e.qjz9zk/foobar"));
 
   TestEvent1(id).Record(&service);
   service.Flush();
@@ -410,7 +410,7 @@ TEST_F(UkmServiceTest, MetricsProviderTest) {
   service.EnableReporting();
 
   ukm::SourceId id = GetWhitelistedSourceId(0);
-  recorder.UpdateSourceURL(id, GURL("https://google.com/foobar"));
+  recorder.UpdateSourceURL(id, GURL("https://9oo91e.qjz9zk/foobar"));
   TestEvent1(id).Record(&service);
   service.Flush();
   EXPECT_EQ(GetPersistedLogCount(), 1);
@@ -466,7 +466,7 @@ TEST_F(UkmServiceTest, AddUserDemograhicsWhenAvailableAndFeatureEnabled) {
   service.EnableReporting();
 
   ukm::SourceId id = GetWhitelistedSourceId(0);
-  recorder.UpdateSourceURL(id, GURL("https://google.com/foobar"));
+  recorder.UpdateSourceURL(id, GURL("https://9oo91e.qjz9zk/foobar"));
   TestEvent1(id).Record(&service);
   service.Flush();
   EXPECT_EQ(1, GetPersistedLogCount());
@@ -508,7 +508,7 @@ TEST_F(UkmServiceTest,
   service.EnableReporting();
 
   ukm::SourceId id = GetWhitelistedSourceId(0);
-  recorder.UpdateSourceURL(id, GURL("https://google.com/foobar"));
+  recorder.UpdateSourceURL(id, GURL("https://9oo91e.qjz9zk/foobar"));
   TestEvent1(id).Record(&service);
   service.Flush();
   EXPECT_EQ(1, GetPersistedLogCount());
@@ -545,7 +545,7 @@ TEST_F(UkmServiceTest, DontAddUserDemograhicsWhenFeatureDisabled) {
   service.EnableReporting();
 
   ukm::SourceId id = GetWhitelistedSourceId(0);
-  recorder.UpdateSourceURL(id, GURL("https://google.com/foobar"));
+  recorder.UpdateSourceURL(id, GURL("https://9oo91e.qjz9zk/foobar"));
   TestEvent1(id).Record(&service);
   service.Flush();
   EXPECT_EQ(1, GetPersistedLogCount());
@@ -571,13 +571,13 @@ TEST_F(UkmServiceTest, LogsRotation) {
 
   // Log rotation should generate a log.
   const ukm::SourceId id = GetWhitelistedSourceId(0);
-  recorder.UpdateSourceURL(id, GURL("https://google.com/foobar"));
+  recorder.UpdateSourceURL(id, GURL("https://9oo91e.qjz9zk/foobar"));
   task_runner_->RunPendingTasks();
   EXPECT_EQ(1, service.report_count());
   EXPECT_TRUE(client_.uploader()->is_uploading());
 
   // Rotation shouldn't generate a log due to one being pending.
-  recorder.UpdateSourceURL(id, GURL("https://google.com/foobar"));
+  recorder.UpdateSourceURL(id, GURL("https://9oo91e.qjz9zk/foobar"));
   task_runner_->RunPendingTasks();
   EXPECT_EQ(1, service.report_count());
   EXPECT_TRUE(client_.uploader()->is_uploading());
@@ -592,7 +592,7 @@ TEST_F(UkmServiceTest, LogsRotation) {
   for (int i = 3; i < 6; i++) {
     task_runner_->RunPendingTasks();
     client_.uploader()->CompleteUpload(200);
-    recorder.UpdateSourceURL(id, GURL("https://google.com/foobar"));
+    recorder.UpdateSourceURL(id, GURL("https://9oo91e.qjz9zk/foobar"));
     task_runner_->RunPendingTasks();
     EXPECT_EQ(i, service.report_count());
   }
@@ -619,7 +619,7 @@ TEST_F(UkmServiceTest, LogsUploadedOnlyWhenHavingSourcesOrEntries) {
   EXPECT_EQ(GetPersistedLogCount(), 0);
 
   ukm::SourceId id = GetWhitelistedSourceId(0);
-  recorder.UpdateSourceURL(id, GURL("https://google.com/foobar"));
+  recorder.UpdateSourceURL(id, GURL("https://9oo91e.qjz9zk/foobar"));
   // Includes a Source, so will persist.
   service.Flush();
   EXPECT_EQ(GetPersistedLogCount(), 1);
@@ -629,7 +629,7 @@ TEST_F(UkmServiceTest, LogsUploadedOnlyWhenHavingSourcesOrEntries) {
   service.Flush();
   EXPECT_EQ(GetPersistedLogCount(), 2);
 
-  recorder.UpdateSourceURL(id, GURL("https://google.com/foobar"));
+  recorder.UpdateSourceURL(id, GURL("https://9oo91e.qjz9zk/foobar"));
   TestEvent1(id).Record(&service);
   // Do not keep the source in the recorder after the current log.
   recorder.MarkSourceForDeletion(id);
@@ -665,8 +665,8 @@ TEST_F(UkmServiceTest, RecordRedirectedUrl) {
 
   ukm::SourceId id = GetWhitelistedSourceId(0);
   UkmSource::NavigationData navigation_data;
-  navigation_data.urls = {GURL("https://google.com/initial"),
-                          GURL("https://google.com/final")};
+  navigation_data.urls = {GURL("https://9oo91e.qjz9zk/initial"),
+                          GURL("https://9oo91e.qjz9zk/final")};
   recorder.RecordNavigation(id, navigation_data);
 
   service.Flush();
@@ -677,9 +677,9 @@ TEST_F(UkmServiceTest, RecordRedirectedUrl) {
   const Source& proto_source = proto_report.sources(0);
 
   EXPECT_EQ(id, proto_source.id());
-  EXPECT_EQ(GURL("https://google.com/initial").spec(),
+  EXPECT_EQ(GURL("https://9oo91e.qjz9zk/initial").spec(),
             proto_source.urls(0).url());
-  EXPECT_EQ(GURL("https://google.com/final").spec(),
+  EXPECT_EQ(GURL("https://9oo91e.qjz9zk/final").spec(),
             proto_source.urls(1).url());
 }
 
@@ -747,7 +747,7 @@ TEST_F(UkmServiceTest, RecordSessionId) {
   service.EnableReporting();
 
   auto id = GetWhitelistedSourceId(0);
-  recorder.UpdateSourceURL(id, GURL("https://google.com/foobar"));
+  recorder.UpdateSourceURL(id, GURL("https://9oo91e.qjz9zk/foobar"));
 
   service.Flush();
   EXPECT_EQ(1, GetPersistedLogCount());
@@ -773,11 +773,11 @@ TEST_F(UkmServiceTest, SourceSize) {
   service.EnableReporting();
 
   auto id = GetWhitelistedSourceId(0);
-  recorder.UpdateSourceURL(id, GURL("https://google.com/foobar1"));
+  recorder.UpdateSourceURL(id, GURL("https://9oo91e.qjz9zk/foobar1"));
   id = GetWhitelistedSourceId(1);
-  recorder.UpdateSourceURL(id, GURL("https://google.com/foobar2"));
+  recorder.UpdateSourceURL(id, GURL("https://9oo91e.qjz9zk/foobar2"));
   id = GetWhitelistedSourceId(2);
-  recorder.UpdateSourceURL(id, GURL("https://google.com/foobar3"));
+  recorder.UpdateSourceURL(id, GURL("https://9oo91e.qjz9zk/foobar3"));
 
   service.Flush();
   EXPECT_EQ(1, GetPersistedLogCount());
@@ -800,7 +800,7 @@ TEST_F(UkmServiceTest, PurgeMidUpload) {
   service.EnableReporting();
 
   auto id = GetWhitelistedSourceId(0);
-  recorder.UpdateSourceURL(id, GURL("https://google.com/foobar1"));
+  recorder.UpdateSourceURL(id, GURL("https://9oo91e.qjz9zk/foobar1"));
   // Should init, generate a log, and start an upload.
   task_runner_->RunPendingTasks();
   EXPECT_TRUE(client_.uploader()->is_uploading());
@@ -828,7 +828,7 @@ TEST_F(UkmServiceTest, WhitelistEntryTest) {
   service.EnableReporting();
 
   auto id = GetWhitelistedSourceId(0);
-  recorder.UpdateSourceURL(id, GURL("https://google.com/foobar1"));
+  recorder.UpdateSourceURL(id, GURL("https://9oo91e.qjz9zk/foobar1"));
 
   TestEvent1(id).Record(&service);
   TestEvent2(id).Record(&service);
@@ -882,7 +882,7 @@ TEST_F(UkmServiceTest, SourceURLLength) {
 }
 
 TEST_F(UkmServiceTest, UnreferencedNonWhitelistedSources) {
-  const GURL kURL("https://google.com/foobar");
+  const GURL kURL("https://9oo91e.qjz9zk/foobar");
   for (bool restrict_to_whitelisted_source_ids : {true, false}) {
     // Set a threshold of number of Sources via Feature Params.
     ScopedUkmFeatureParams params(
@@ -1013,15 +1013,15 @@ TEST_F(UkmServiceTest, UnreferencedNonWhitelistedSources) {
 
 TEST_F(UkmServiceTest, NonWhitelistedUrls) {
   // URL to be manually whitelisted using whitelisted source type.
-  const GURL kURL("https://google.com/foobar");
+  const GURL kURL("https://9oo91e.qjz9zk/foobar");
   struct {
     GURL url;
     bool expect_in_report;
   } test_cases[] = {
-      {GURL("https://google.com/foobar"), true},
+      {GURL("https://9oo91e.qjz9zk/foobar"), true},
       // For origin-only URLs, only the origin needs to be matched.
-      {GURL("https://google.com"), true},
-      {GURL("https://google.com/foobar2"), false},
+      {GURL("https://9oo91e.qjz9zk"), true},
+      {GURL("https://9oo91e.qjz9zk/foobar2"), false},
       {GURL("https://other.com"), false},
   };
 
@@ -1126,7 +1126,7 @@ TEST_F(UkmServiceTest, WhitelistIdType) {
         1, static_cast<SourceIdType>(type.first));
     ASSERT_EQ(GetSourceIdType(id), type.first);
 
-    recorder.UpdateSourceURL(id, GURL("https://google.com/foobar1"));
+    recorder.UpdateSourceURL(id, GURL("https://9oo91e.qjz9zk/foobar1"));
 
     TestEvent1(id).Record(&service);
 
@@ -1137,7 +1137,7 @@ TEST_F(UkmServiceTest, WhitelistIdType) {
     if (type.second) {
       // Verify we've added one source.
       EXPECT_EQ(1, proto_report.sources_size());
-      EXPECT_EQ(GURL("https://google.com/foobar1").spec(),
+      EXPECT_EQ(GURL("https://9oo91e.qjz9zk/foobar1").spec(),
                 proto_report.sources(0).urls(0).url());
     } else {
       // No source added when id is not whitelisted type.

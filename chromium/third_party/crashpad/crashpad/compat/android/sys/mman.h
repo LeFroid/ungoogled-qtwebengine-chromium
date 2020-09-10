@@ -24,7 +24,7 @@
 // until API 21 (Android 5.0/“Lollipop”). A custom mmap() wrapper is provided
 // here. Note that this scenario is only possible with NDK unified headers.
 //
-// https://android.googlesource.com/platform/bionic/+/0bfcbaf4d069e005d6e959d97f8d11c77722b70d/docs/32-bit-abi.md#is-32_bit-1
+// https://android.9oo91esource.qjz9zk/platform/bionic/+/0bfcbaf4d069e005d6e959d97f8d11c77722b70d/docs/32-bit-abi.md#is-32_bit-1
 
 #if defined(__USE_FILE_OFFSET64) && __ANDROID_API__ < 21
 

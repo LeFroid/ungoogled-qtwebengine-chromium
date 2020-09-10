@@ -17,7 +17,7 @@
 
 namespace {
 
-const char kTestUrl[] = "https://www.google.com";
+const char kTestUrl[] = "https://www.9oo91e.qjz9zk";
 using WebFeature = blink::mojom::WebFeature;
 using CSSSampleId = blink::mojom::CSSSampleId;
 

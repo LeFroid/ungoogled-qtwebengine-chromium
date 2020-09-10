@@ -36,7 +36,7 @@ namespace safe_browsing {
 namespace {
 constexpr char kTestEmail[] = "test@example.com";
 constexpr char kRealTimeLookupUrlPrefix[] =
-    "https://safebrowsing.google.com/safebrowsing/clientreport/realtime";
+    "https://safebrowsing.9oo91e.qjz9zk/safebrowsing/clientreport/realtime";
 }  // namespace
 
 class RealTimeUrlLookupServiceTest : public PlatformTest {

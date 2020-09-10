@@ -310,7 +310,7 @@ bool Range::isPointInRange(Node* ref_node,
 int16_t Range::comparePoint(Node* ref_node,
                             unsigned offset,
                             ExceptionState& exception_state) const {
-  // http://developer.mozilla.org/en/docs/DOM:range.comparePoint
+  // http://developer.m0z111a.qjz9zk/en/docs/DOM:range.comparePoint
   // This method returns -1, 0 or 1 depending on if the point described by the
   // refNode node and an offset within the node is before, same as, or after the
   // range respectively.
@@ -436,7 +436,7 @@ void Range::deleteContents(ExceptionState& exception_state) {
 }
 
 bool Range::intersectsNode(Node* ref_node, ExceptionState& exception_state) {
-  // http://developer.mozilla.org/en/docs/DOM:range.intersectsNode
+  // http://developer.m0z111a.qjz9zk/en/docs/DOM:range.intersectsNode
   // Returns a bool if the node intersects the range.
   if (!ref_node) {
     // FIXME: Generated bindings code never calls with null, and neither should

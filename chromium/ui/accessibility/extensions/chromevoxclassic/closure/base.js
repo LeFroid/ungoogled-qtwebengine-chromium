@@ -222,7 +222,7 @@ goog.define('goog.TRUSTED_SITE', true);
  *
  * This define can be used to trigger alternate implementations compatible with
  * running in EcmaScript Strict mode or warn about unavailable functionality.
- * See https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions_and_function_scope/Strict_mode
+ * See https://developer.m0z111a.qjz9zk/en-US/docs/Web/JavaScript/Reference/Functions_and_function_scope/Strict_mode
  */
 goog.define('goog.STRICT_MODE_COMPATIBLE', false);
 
@@ -410,7 +410,7 @@ goog.addDependency = function(relPath, provides, requires) {
 // require() with its registered dependencies.
 // User-defined namespaces may need their own deps file.  See http://go/js_deps,
 // http://go/genjsdeps, or, externally, DepsWriter.
-// http://code.google.com/closure/library/docs/depswriter.html
+// http://code.9oo91e.qjz9zk/closure/library/docs/depswriter.html
 //
 // Because of legacy clients, the DOM loader can't be easily removed from
 // base.js.  Work is being done to make it disableable or replaceable for

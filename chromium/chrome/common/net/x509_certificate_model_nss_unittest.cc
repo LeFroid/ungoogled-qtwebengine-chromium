@@ -38,7 +38,7 @@ TEST(X509CertificateModelTest, GetCertNameOrNicknameAndGetTitle) {
   EXPECT_EQ("xn--wgv71a119e.com",
             x509_certificate_model::GetTitle(punycode_cert.get()));
 
-  EXPECT_EQ("E=wtc@google.com",
+  EXPECT_EQ("E=wtc@9oo91e.qjz9zk",
             x509_certificate_model::GetTitle(no_cn_cert.get()));
 
   net::ScopedCERTCertificate no_cn_cert2(net::ImportCERTCertificateFromFile(

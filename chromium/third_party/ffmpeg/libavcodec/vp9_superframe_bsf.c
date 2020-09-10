@@ -1,6 +1,6 @@
 /*
  * Vp9 invisible (alt-ref) frame to superframe merge bitstream filter
- * Copyright (c) 2016 Ronald S. Bultje <rsbultje@gmail.com>
+ * Copyright (c) 2016 Ronald S. Bultje <rsbultje@9ma1l.qjz9zk>
  *
  * This file is part of FFmpeg.
  *

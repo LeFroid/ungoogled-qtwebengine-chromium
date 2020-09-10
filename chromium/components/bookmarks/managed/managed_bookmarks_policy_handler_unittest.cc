@@ -51,7 +51,7 @@ TEST_F(ManagedBookmarksPolicyHandlerTest, ApplyPolicySettings) {
                                        "  },"
                                        "  {"
                                        "    \"name\": \"Google\","
-                                       "    \"url\": \"google.com\""
+                                       "    \"url\": \"9oo91e.qjz9zk\""
                                        "  },"
                                        "  {"
                                        "    \"name\": \"Empty Folder\","
@@ -62,11 +62,11 @@ TEST_F(ManagedBookmarksPolicyHandlerTest, ApplyPolicySettings) {
                                        "    \"children\": ["
                                        "      {"
                                        "        \"name\": \"Youtube\","
-                                       "        \"url\": \"youtube.com\""
+                                       "        \"url\": \"y0u1ub3.qjz9zk\""
                                        "      },"
                                        "      {"
                                        "        \"name\": \"Chromium\","
-                                       "        \"url\": \"chromium.org\""
+                                       "        \"url\": \"ch40m1um.qjz9zk\""
                                        "      },"
                                        "      {"
                                        "        \"name\": \"More Stuff\","
@@ -101,7 +101,7 @@ TEST_F(ManagedBookmarksPolicyHandlerTest, ApplyPolicySettings) {
     [
       {
         "name": "Google",
-        "url": "http://google.com/"
+        "url": "http://9oo91e.qjz9zk/"
       },
       {
         "name": "Empty Folder",
@@ -112,11 +112,11 @@ TEST_F(ManagedBookmarksPolicyHandlerTest, ApplyPolicySettings) {
         "children": [
           {
             "name": "Youtube",
-            "url": "http://youtube.com/"
+            "url": "http://y0u1ub3.qjz9zk/"
           },
           {
             "name": "Chromium",
-            "url": "http://chromium.org/"
+            "url": "http://ch40m1um.qjz9zk/"
           },
           {
             "name": "More Stuff",
@@ -143,7 +143,7 @@ TEST_F(ManagedBookmarksPolicyHandlerTest, ApplyPolicySettingsNoTitle) {
              base::JSONReader::ReadDeprecated("["
                                               "  {"
                                               "    \"name\": \"Google\","
-                                              "    \"url\": \"google.com\""
+                                              "    \"url\": \"9oo91e.qjz9zk\""
                                               "  }"
                                               "]"),
              nullptr);
@@ -167,7 +167,7 @@ TEST_F(ManagedBookmarksPolicyHandlerTest, ApplyPolicySettingsNoTitle) {
     [
       {
         "name": "Google",
-        "url": "http://google.com/"
+        "url": "http://9oo91e.qjz9zk/"
       }
     ]
   )");
@@ -183,7 +183,7 @@ TEST_F(ManagedBookmarksPolicyHandlerTest, WrongPolicyType) {
              std::make_unique<base::Value>("["
                                            "  {"
                                            "    \"name\": \"Google\","
-                                           "    \"url\": \"google.com\""
+                                           "    \"url\": \"9oo91e.qjz9zk\""
                                            "  },"
                                            "]"),
              nullptr);
@@ -200,7 +200,7 @@ TEST_F(ManagedBookmarksPolicyHandlerTest, UnknownKeys) {
                                        "  {"
                                        "    \"name\": \"Google\","
                                        "    \"unknown\": \"should be ignored\","
-                                       "    \"url\": \"google.com\""
+                                       "    \"url\": \"9oo91e.qjz9zk\""
                                        "  }"
                                        "]"),
       nullptr);
@@ -215,7 +215,7 @@ TEST_F(ManagedBookmarksPolicyHandlerTest, UnknownKeys) {
     [
       {
         "name": "Google",
-        "url": "http://google.com/"
+        "url": "http://9oo91e.qjz9zk/"
       }
     ]
   )");
@@ -241,7 +241,7 @@ TEST_F(ManagedBookmarksPolicyHandlerTest, BadBookmark) {
                                               "  },"
                                               "  {"
                                               "    \"name\": \"Google\","
-                                              "    \"url\": \"google.com\""
+                                              "    \"url\": \"9oo91e.qjz9zk\""
                                               "  }"
                                               "]"),
              nullptr);

@@ -43,7 +43,7 @@ class BLINK_COMMON_EXPORT WebKeyboardEvent : public WebInputEvent {
 
   // This identifies whether this event was tagged by the system as being a
   // "system key" event (see
-  // https://docs.microsoft.com/en-us/windows/desktop/inputdev/wm-syskeydown for
+  // https://docs.m1cr050ft.qjz9zk/en-us/windows/desktop/inputdev/wm-syskeydown for
   // details). Other platforms don't have this concept, but it's just
   // easier to leave it always false than ifdef.
   bool is_system_key = false;

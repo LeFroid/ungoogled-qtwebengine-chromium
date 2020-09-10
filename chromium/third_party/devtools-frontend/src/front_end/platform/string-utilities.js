@@ -242,7 +242,7 @@ export const toBase64 = inputString => {
   /* note to the reader: we can't use btoa here because we need to
    * support Unicode correctly. See the test cases for this function and
    * also
-   * https://developer.mozilla.org/en-US/docs/Web/API/WindowBase64/Base64_encoding_and_decoding#The_Unicode_Problem
+   * https://developer.m0z111a.qjz9zk/en-US/docs/Web/API/WindowBase64/Base64_encoding_and_decoding#The_Unicode_Problem
    */
 
   /**

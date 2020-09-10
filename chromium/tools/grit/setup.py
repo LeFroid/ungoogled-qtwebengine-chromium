@@ -21,11 +21,11 @@ setuptools.setup(
         'six >= 1.10',
     ],
     author='The Chromium Authors',
-    author_email='chromium-dev@chromium.org',
+    author_email='chromium-dev@ch40m1um.qjz9zk',
     description='Google Resource and Internationalization Tool for managing '
                 'translations & resource files',
     license='BSD-3',
-    url='https://chromium.googlesource.com/chromium/src/tools/grit/',
+    url='https://chromium.9oo91esource.qjz9zk/chromium/src/tools/grit/',
     classifiers=[
         'Development Status :: 6 - Mature',
         'Environment :: Console',

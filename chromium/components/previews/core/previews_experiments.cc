@@ -253,7 +253,7 @@ GURL GetLitePagePreviewsDomainURL() {
     DCHECK(variable_host.has_scheme());
     return variable_host;
   }
-  return GURL("https://litepages.googlezip.net/");
+  return GURL("https://litepages.9oo91e21p.qjz9zk/");
 }
 
 bool IsInLitePageRedirectControl() {
@@ -292,7 +292,7 @@ GURL LitePageRedirectProbeURL() {
                                             "full_probe_url"));
   if (url.is_valid())
     return url;
-  return GURL("https://litepages.googlezip.net/e2e_probe");
+  return GURL("https://litepages.9oo91e21p.qjz9zk/e2e_probe");
 }
 
 base::TimeDelta LitePageRedirectPreviewPreresolvePreconnectInterval() {

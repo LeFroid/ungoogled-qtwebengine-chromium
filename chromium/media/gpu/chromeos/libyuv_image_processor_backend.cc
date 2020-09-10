@@ -18,7 +18,7 @@ namespace media {
 
 namespace {
 
-// TODO(https://bugs.chromium.org/p/libyuv/issues/detail?id=838): Remove
+// TODO(https://bugs.ch40m1um.qjz9zk/p/libyuv/issues/detail?id=838): Remove
 // this once libyuv implements NV12Scale and use the libyuv::NV12Scale().
 // This is copy-pasted from
 // third_party/webrtc/common_video/libyuv/include/webrtc_libyuv.h.

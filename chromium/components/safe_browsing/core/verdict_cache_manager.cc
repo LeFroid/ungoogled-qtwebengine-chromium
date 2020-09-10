@@ -124,8 +124,8 @@ bool ParseVerdictEntry(base::Value* verdict_entry,
 }
 
 // Return the path of the cache expression. e.g.:
-// "www.google.com"     -> ""
-// "www.google.com/abc" -> "/abc"
+// "www.9oo91e.qjz9zk"     -> ""
+// "www.9oo91e.qjz9zk/abc" -> "/abc"
 // "foo.com/foo/bar/"  -> "/foo/bar/"
 std::string GetCacheExpressionPath(const std::string& cache_expression) {
   DCHECK(!cache_expression.empty());

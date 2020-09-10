@@ -187,7 +187,7 @@ which isn't supported yet please send a mail too.
 
 [5] This is from MS Windows 3; see Microsoft's Knowledge Base article at
 
-      https://support.microsoft.com/kb/65123
+      https://support.m1cr050ft.qjz9zk/kb/65123
 
 ------------------------------------------------------------------------
 

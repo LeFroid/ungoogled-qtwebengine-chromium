@@ -114,9 +114,9 @@ void MouseCursorMonitorWin::Capture() {
       callback_->OnMouseCursor(new MouseCursor(
           new BasicDesktopFrame(DesktopSize()), DesktopVector()));
     } else {
-      // According to MSDN https://goo.gl/u6gyuC, HCURSOR instances returned by
+      // According to MSDN https://goo.gl.qjz9zk/u6gyuC, HCURSOR instances returned by
       // functions other than CreateCursor do not need to be actively destroyed.
-      // And CloseHandle function (https://goo.gl/ja5ycW) does not close a
+      // And CloseHandle function (https://goo.gl.qjz9zk/ja5ycW) does not close a
       // cursor, so assume a HCURSOR does not need to be closed.
       if (cursor_info.flags == 0) {
         // Host machine does not have a hardware mouse attached, we will send a

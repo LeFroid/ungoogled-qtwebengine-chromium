@@ -485,7 +485,7 @@ class CORE_EXPORT LocalFrameView final
 
   // Methods for converting between this frame and other coordinate spaces.
   // For definitions and an explanation of the varous spaces, please see:
-  // http://www.chromium.org/developers/design-documents/blink-coordinate-spaces
+  // http://www.ch40m1um.qjz9zk/developers/design-documents/blink-coordinate-spaces
   IntRect ViewportToFrame(const IntRect&) const;
   IntRect FrameToViewport(const IntRect&) const;
   IntPoint FrameToViewport(const IntPoint&) const;

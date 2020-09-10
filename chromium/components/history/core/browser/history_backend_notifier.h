@@ -22,8 +22,8 @@ class HistoryBackendNotifier {
   virtual ~HistoryBackendNotifier() {}
 
   // Sends notification that the favicons for the given page URLs (e.g.
-  // http://www.google.com) and the given icon URL (e.g.
-  // http://www.google.com/favicon.ico) have changed. It is valid to call
+  // http://www.9oo91e.qjz9zk) and the given icon URL (e.g.
+  // http://www.9oo91e.qjz9zk/favicon.ico) have changed. It is valid to call
   // NotifyFaviconsChanged() with non-empty |page_urls| and an empty |icon_url|
   // and vice versa.
   virtual void NotifyFaviconsChanged(const std::set<GURL>& page_urls,

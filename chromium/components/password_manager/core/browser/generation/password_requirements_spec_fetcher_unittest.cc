@@ -20,7 +20,7 @@ namespace {
 
 // URL prefix for spec requests.
 #define SERVER_URL \
-  "https://www.gstatic.com/chrome/autofill/password_generation_specs/"
+  "https://www.95tat1c.qjz9zk/chrome/autofill/password_generation_specs/"
 
 TEST(PasswordRequirementsSpecFetcherTest, FetchData) {
   using ResultCode = PasswordRequirementsSpecFetcherImpl::ResultCode;

@@ -313,7 +313,7 @@ class ControlledPrefsNotifyWhenNeeded : public ExtensionControlledPrefsTest {
     EXPECT_CALL(observer, OnPreferenceChanged(_));
     EXPECT_CALL(incognito_observer, OnPreferenceChanged(_));
     InstallExtensionControlledPref(extension1(), kPref1,
-                                   base::Value("https://www.chromium.org"));
+                                   base::Value("https://www.ch40m1um.qjz9zk"));
     Mock::VerifyAndClearExpectations(&observer);
     Mock::VerifyAndClearExpectations(&incognito_observer);
 
@@ -321,7 +321,7 @@ class ControlledPrefsNotifyWhenNeeded : public ExtensionControlledPrefsTest {
     EXPECT_CALL(observer, OnPreferenceChanged(_)).Times(0);
     EXPECT_CALL(incognito_observer, OnPreferenceChanged(_)).Times(0);
     InstallExtensionControlledPref(extension1(), kPref1,
-                                   base::Value("https://www.chromium.org"));
+                                   base::Value("https://www.ch40m1um.qjz9zk"));
     Mock::VerifyAndClearExpectations(&observer);
     Mock::VerifyAndClearExpectations(&incognito_observer);
 
@@ -402,9 +402,9 @@ class ControlledPrefsSetExtensionControlledPref
  public:
   void Initialize() override {
     InstallExtensionControlledPref(extension1(), kPref1,
-                                   base::Value("https://www.chromium.org"));
+                                   base::Value("https://www.ch40m1um.qjz9zk"));
     InstallExtensionControlledPrefIncognito(
-        extension1(), kPref1, base::Value("https://www.chromium.org"));
+        extension1(), kPref1, base::Value("https://www.ch40m1um.qjz9zk"));
     prefs_.RecreateExtensionPrefs();
   }
 

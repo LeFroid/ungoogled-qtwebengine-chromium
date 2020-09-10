@@ -574,7 +574,7 @@ class MODULES_EXPORT RTCPeerConnection final
   webrtc::PeerConnectionInterface::PeerConnectionState peer_connection_state_;
   // TODO(https://crbug.com/857004): The trackers' metrics are currently not
   // uploaded; either use the metrics it produces (i.e. revert
-  // https://chromium-review.googlesource.com/c/chromium/src/+/1991421) or
+  // https://chromium-review.9oo91esource.qjz9zk/c/chromium/src/+/1991421) or
   // delete all CallSetupStateTracker code for good.
   CallSetupStateTracker call_setup_state_tracker_;
 

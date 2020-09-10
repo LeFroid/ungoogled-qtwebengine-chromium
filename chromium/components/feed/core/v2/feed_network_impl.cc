@@ -35,18 +35,18 @@
 namespace feed {
 namespace {
 constexpr char kAuthenticationScope[] =
-    "https://www.googleapis.com/auth/googlenow";
+    "https://www.9oo91eapis.qjz9zk/auth/googlenow";
 constexpr char kApplicationOctetStream[] = "application/octet-stream";
 constexpr base::TimeDelta kNetworkTimeout = base::TimeDelta::FromSeconds(30);
 
 constexpr char kFeedQueryUrl[] =
-    "https://www.google.com/httpservice/retry/InteractiveDiscoverAgaService/"
+    "https://www.9oo91e.qjz9zk/httpservice/retry/InteractiveDiscoverAgaService/"
     "FeedQuery";
 constexpr char kNextPageQueryUrl[] =
-    "https://www.google.com/httpservice/retry/InteractiveDiscoverAgaService/"
+    "https://www.9oo91e.qjz9zk/httpservice/retry/InteractiveDiscoverAgaService/"
     "NextPageQuery";
 constexpr char kBackgroundQueryUrl[] =
-    "https://www.google.com/httpservice/noretry/BackgroundDiscoverAgaService/"
+    "https://www.9oo91e.qjz9zk/httpservice/noretry/BackgroundDiscoverAgaService/"
     "FeedQuery";
 
 using RawResponse = FeedNetworkImpl::RawResponse;
@@ -414,7 +414,7 @@ void FeedNetworkImpl::SendActionRequest(
   request.SerializeToString(&binary_proto);
 
   GURL url(
-      "https://www.google.com/httpservice/retry/ClankActionUploadService/"
+      "https://www.9oo91e.qjz9zk/httpservice/retry/ClankActionUploadService/"
       "ClankActionUpload");
   AddMothershipPayloadQueryParams(/*is_post=*/true, /*payload=*/std::string(),
                                   delegate_->GetLanguageTag(), &url);

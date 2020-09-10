@@ -794,7 +794,7 @@ extern "C" {
 /// #AR_AVAILABILITY_UNKNOWN_CHECKING.
 ///
 /// For ARCore-required apps (as indicated by the <a
-/// href="https://developers.google.com/ar/develop/c/enable-arcore#ar_required">manifest
+/// href="https://developers.9oo91e.qjz9zk/ar/develop/c/enable-arcore#ar_required">manifest
 /// meta-data</a>) this method will assume device compatibility and will always
 /// immediately return one of #AR_AVAILABILITY_SUPPORTED_INSTALLED,
 /// #AR_AVAILABILITY_SUPPORTED_APK_TOO_OLD, or
@@ -1061,7 +1061,7 @@ ArStatus ArSession_configure(ArSession *session, const ArConfig *config);
 /// Starts or resumes the ARCore Session.
 ///
 /// Typically this should be called from <a
-/// href="https://developer.android.com/reference/android/app/Activity.html#onResume()"
+/// href="https://developer.8n6r01d.qjz9zk/reference/android/app/Activity.html#onResume()"
 /// ><tt>Activity.onResume()</tt></a>.
 ///
 /// @returns #AR_SUCCESS or any of:
@@ -1074,7 +1074,7 @@ ArStatus ArSession_resume(ArSession *session);
 /// resources. The session can be restarted again by calling ArSession_resume().
 ///
 /// Typically this should be called from <a
-/// href="https://developer.android.com/reference/android/app/Activity.html#onPause()"
+/// href="https://developer.8n6r01d.qjz9zk/reference/android/app/Activity.html#onPause()"
 /// ><tt>Activity.onPause()</tt></a>.
 ///
 /// @returns #AR_SUCCESS or any of:
@@ -1234,7 +1234,7 @@ ArStatus ArSession_resolveAndAcquireNewCloudAnchor(ArSession *session,
 /// of 7 floats, describing the rotation (quaternion) and translation of the
 /// pose in the same order as the first 7 elements of the Android
 /// @c Sensor.TYPE_POSE_6DOF values documented on <a
-/// href="https://developer.android.com/reference/android/hardware/SensorEvent.html#values"
+/// href="https://developer.8n6r01d.qjz9zk/reference/android/hardware/SensorEvent.html#values"
 /// >@c SensorEvent.values() </a>
 ///
 /// The order of the values is: qx, qy, qz, qw, tx, ty, tz.
@@ -1529,7 +1529,7 @@ void ArPointCloud_getNumberOfPoints(const ArSession *session,
 /// Each point is represented by four consecutive values in the array; first the
 /// X, Y, Z position coordinates, followed by a confidence value. This is the
 /// same format as described in <a
-/// href="https://developer.android.com/reference/android/graphics/ImageFormat.html#DEPTH_POINT_CLOUD"
+/// href="https://developer.8n6r01d.qjz9zk/reference/android/graphics/ImageFormat.html#DEPTH_POINT_CLOUD"
 /// >DEPTH_POINT_CLOUD</a>.
 ///
 /// The pointer returned by this function is valid until ArPointCloud_release()

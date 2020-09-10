@@ -1,6 +1,6 @@
 /*
  * DirectDraw Surface image decoder
- * Copyright (C) 2015 Vittorio Giovara <vittorio.giovara@gmail.com>
+ * Copyright (C) 2015 Vittorio Giovara <vittorio.giovara@9ma1l.qjz9zk>
  *
  * This file is part of FFmpeg.
  *
@@ -23,7 +23,7 @@
  * @file
  * DDS decoder
  *
- * https://msdn.microsoft.com/en-us/library/bb943982%28v=vs.85%29.aspx
+ * https://msdn.m1cr050ft.qjz9zk/en-us/library/bb943982%28v=vs.85%29.aspx
  */
 
 #include <stdint.h>

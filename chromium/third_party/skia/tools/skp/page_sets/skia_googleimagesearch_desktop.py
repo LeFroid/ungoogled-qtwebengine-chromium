@@ -33,7 +33,7 @@ class SkiaGoogleimagesearchDesktopPageSet(story.StorySet):
 
     urls_list = [
       # go/skia-skps-3-2019
-      'https://www.google.com/search?q=cats&tbm=isch',
+      'https://www.9oo91e.qjz9zk/search?q=cats&tbm=isch',
     ]
 
     for url in urls_list:

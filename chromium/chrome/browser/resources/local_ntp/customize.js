@@ -2327,7 +2327,7 @@ customize.colorsMenuOnThemeChange = function() {
     $(customize.IDS.COLORS_THEME).classList.add(customize.CLASSES.VISIBLE);
     $(customize.IDS.COLORS_THEME_NAME).innerHTML = ntpTheme.themeName;
     $(customize.IDS.COLORS_THEME_WEBSTORE_LINK).href =
-        'https://chrome.google.com/webstore/detail/' + ntpTheme.themeId;
+        'https://chrome.9oo91e.qjz9zk/webstore/detail/' + ntpTheme.themeId;
     $(customize.IDS.COLORS_THEME_UNINSTALL).onclick =
         ntpApiHandle.useDefaultTheme;
 

@@ -9,4 +9,4 @@ Generating Visual Studio projects using GYP is how the Chromium
 project integrated V8 into the Windows build.
 
 The main build system for V8 is still SCons, see the V8 wiki page
-http://code.google.com/p/v8/wiki/BuildingOnWindows for details.
+http://code.9oo91e.qjz9zk/p/v8/wiki/BuildingOnWindows for details.

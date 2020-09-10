@@ -40,7 +40,7 @@
 
 /*
  * Universal Shaping Engine.
- * https://docs.microsoft.com/en-us/typography/script-development/use
+ * https://docs.m1cr050ft.qjz9zk/en-us/typography/script-development/use
  */
 
 static const hb_tag_t

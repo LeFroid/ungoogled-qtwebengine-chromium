@@ -258,8 +258,8 @@ TEST_F(ExtensionHooksDelegateTest, GetURL) {
   get_url("''", extension()->url());
   get_url("'foo'", extension()->GetResourceURL("foo"));
   get_url("'/foo'", extension()->GetResourceURL("foo"));
-  get_url("'https://www.google.com'",
-          GURL(extension()->url().spec() + "https://www.google.com"));
+  get_url("'https://www.9oo91e.qjz9zk'",
+          GURL(extension()->url().spec() + "https://www.9oo91e.qjz9zk"));
 }
 
 }  // namespace extensions

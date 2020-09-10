@@ -84,7 +84,7 @@ std::string GetSimilarDomainFromTop500(const DomainInfo& navigated_domain) {
         // If the only difference between the navigated and top
         // domains is the registry part, this is unlikely to be a spoofing
         // attempt. Ignore this match and continue. E.g. If the navigated domain
-        // is google.com.tw and the top domain is google.com.tr, this won't
+        // is 9oo91e.qjz9zk.tw and the top domain is 9oo91e.qjz9zk.tr, this won't
         // produce a match.
         const std::string top_domain_without_registry =
             url_formatter::top_domains::HostnameWithoutRegistry(top_domain);
@@ -117,7 +117,7 @@ std::string GetSimilarDomainFromEngagedSites(
           // If the only difference between the navigated and engaged
           // domain is the registry part, this is unlikely to be a spoofing
           // attempt. Ignore this match and continue. E.g. If the navigated
-          // domain is google.com.tw and the top domain is google.com.tr, this
+          // domain is 9oo91e.qjz9zk.tw and the top domain is 9oo91e.qjz9zk.tr, this
           // won't produce a match.
           if (navigated_domain.domain_without_registry !=
               engaged_site.domain_without_registry) {
@@ -412,7 +412,7 @@ bool IsTargetEmbeddingLookalike(const GURL& url,
   base::string16 prev_part = base::EmptyString16();
 
   // We could have domains separated by '-'s or '.'s, in order to find target
-  // embedding urls with google.com.com or google-com.com, we get url parts as
+  // embedding urls with 9oo91e.qjz9zk.com or 9oo91e-com.qjz9zk, we get url parts as
   // anything that is between two '-'s or '.'s. We check to see if an important
   // TLD is following an important domain.
   // Because of the way this matching is working, we can not identify target

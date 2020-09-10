@@ -692,7 +692,7 @@ TEST_F(PermissionManagerTest, KillSwitchOnIsNotOverridable) {
 
 TEST_F(PermissionManagerTest, GetPermissionStatusDelegation) {
   const char* kOrigin1 = "https://example.com";
-  const char* kOrigin2 = "https://google.com";
+  const char* kOrigin2 = "https://9oo91e.qjz9zk";
 
   base::test::ScopedFeatureList scoped_feature_list;
   scoped_feature_list.InitAndEnableFeature(features::kPermissionDelegation);
@@ -787,7 +787,7 @@ TEST_F(PermissionManagerTest, GetPermissionStatusDelegation) {
 
 TEST_F(PermissionManagerTest, SubscribeWithPermissionDelegation) {
   const char* kOrigin1 = "https://example.com";
-  const char* kOrigin2 = "https://google.com";
+  const char* kOrigin2 = "https://9oo91e.qjz9zk";
 
   base::test::ScopedFeatureList scoped_feature_list;
   scoped_feature_list.InitAndEnableFeature(features::kPermissionDelegation);

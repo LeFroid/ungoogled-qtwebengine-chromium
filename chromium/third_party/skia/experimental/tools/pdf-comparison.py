@@ -10,7 +10,7 @@ It relies on pdfium_test being in the PATH.  To build:
 
 mkdir -p ~/src/pdfium
 cd ~/src/pdfium
-gclient config --unmanaged https://pdfium.googlesource.com/pdfium.git
+gclient config --unmanaged https://pdfium.9oo91esource.qjz9zk/pdfium.git
 gclient sync
 cd pdfium
 gn gen out/default --args='pdf_enable_xfa=false pdf_enable_v8=false pdf_is_standalone=true'

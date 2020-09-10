@@ -838,14 +838,14 @@ export class SecurityMainView extends UI.Widget.VBox {
       currentExplanations.push({
         summary: ls`This page is suspicious`,
         description: ls
-        `Chrome has determined that this site could be fake or fraudulent.\n\nIf you believe this is shown in error please visit https://bugs.chromium.org/p/chromium/issues/entry?template=Safety+Tips+Appeals.`
+        `Chrome has determined that this site could be fake or fraudulent.\n\nIf you believe this is shown in error please visit https://bugs.ch40m1um.qjz9zk/p/chromium/issues/entry?template=Safety+Tips+Appeals.`
       });
     } else if (securityStateIssueIds.includes('lookalike') && safetyTipInfo.safeUrl) {
       currentExplanations.push({
         summary: ls`Possible spoofing URL`,
         description: ls`This site's hostname looks similar to ${
             new URL(safetyTipInfo.safeUrl)
-                .hostname}. Attackers sometimes mimic sites by making small, hard-to-see changes to the domain name.\n\nIf you believe this is shown in error please visit https://bugs.chromium.org/p/chromium/issues/entry?template=Safety+Tips+Appeals.`
+                .hostname}. Attackers sometimes mimic sites by making small, hard-to-see changes to the domain name.\n\nIf you believe this is shown in error please visit https://bugs.ch40m1um.qjz9zk/p/chromium/issues/entry?template=Safety+Tips+Appeals.`
       });
     }
 

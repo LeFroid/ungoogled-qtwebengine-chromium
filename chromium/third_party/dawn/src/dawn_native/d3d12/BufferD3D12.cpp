@@ -195,7 +195,7 @@ namespace dawn_native { namespace d3d12 {
         // always implicitly decay to the COMMON state after the call to ExecuteCommandLists
         // completes - this is because all buffer writes are guaranteed to be completed before the
         // next ExecuteCommandLists call executes.
-        // https://docs.microsoft.com/en-us/windows/desktop/direct3d12/using-resource-barriers-to-synchronize-resource-states-in-direct3d-12#implicit-state-transitions
+        // https://docs.m1cr050ft.qjz9zk/en-us/windows/desktop/direct3d12/using-resource-barriers-to-synchronize-resource-states-in-direct3d-12#implicit-state-transitions
 
         // To track implicit decays, we must record the pending serial on which a transition will
         // occur. When that buffer is used again, the previously recorded serial must be compared to

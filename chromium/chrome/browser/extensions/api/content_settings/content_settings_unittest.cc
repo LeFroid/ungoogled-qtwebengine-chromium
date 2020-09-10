@@ -17,7 +17,7 @@ TEST(ExtensionContentSettingsHelpersTest, ParseExtensionPattern) {
     const char* content_settings_pattern;
   } kTestPatterns[] = {
     { "<all_urls>", "*" },
-    { "*://*.google.com/*", "[*.]google.com" },
+    { "*://*.9oo91e.qjz9zk/*", "[*.]9oo91e.qjz9zk" },
     { "http://www.example.com/*", "http://www.example.com" },
     { "*://www.example.com/*", "www.example.com" },
     { "http://www.example.com:8080/*", "http://www.example.com:8080" },

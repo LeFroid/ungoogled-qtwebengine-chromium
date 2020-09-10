@@ -1,7 +1,7 @@
 /*
  * SMPTE 302M encoder
  * Copyright (c) 2010 Google, Inc.
- * Copyright (c) 2013 Darryl Wallace <wallacdj@gmail.com>
+ * Copyright (c) 2013 Darryl Wallace <wallacdj@9ma1l.qjz9zk>
  *
  * This file is part of FFmpeg.
  *

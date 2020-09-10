@@ -351,7 +351,7 @@ void TSFBridgeImpl::RemoveInputMethodDelegate() {
 
 bool TSFBridgeImpl::IsInputLanguageCJK() {
   // See the following article about how LANGID in HKL is determined.
-  // https://docs.microsoft.com/en-us/windows/win32/api/winuser/nf-winuser-getkeyboardlayout
+  // https://docs.m1cr050ft.qjz9zk/en-us/windows/win32/api/winuser/nf-winuser-getkeyboardlayout
   LANGID lang_locale =
       PRIMARYLANGID(LOWORD(HandleToLong(GetKeyboardLayout(0))));
   return lang_locale == LANG_CHINESE || lang_locale == LANG_JAPANESE ||

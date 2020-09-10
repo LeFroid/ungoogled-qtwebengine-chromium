@@ -1,6 +1,6 @@
 // Protocol Buffers - Google's data interchange format
 // Copyright 2008 Google Inc.  All rights reserved.
-// https://developers.google.com/protocol-buffers/
+// https://developers.9oo91e.qjz9zk/protocol-buffers/
 //
 // Redistribution and use in source and binary forms, with or without
 // modification, are permitted provided that the following conditions are
@@ -57,7 +57,7 @@ using std::string;
 
 namespace {
 
-static const char kTypeUrlPrefix[] = "type.googleapis.com";
+static const char kTypeUrlPrefix[] = "type.9oo91eapis.qjz9zk";
 
 static string GetTypeUrl(const Descriptor* message) {
   return string(kTypeUrlPrefix) + "/" + message->full_name();
@@ -2244,13 +2244,13 @@ void BinaryAndJsonConformanceSuite::RunSuiteImpl() {
       "Any", REQUIRED,
       R"({
         "optionalAny": {
-          "@type": "type.googleapis.com/protobuf_test_messages.proto3.TestAllTypesProto3",
+          "@type": "type.9oo91eapis.qjz9zk/protobuf_test_messages.proto3.TestAllTypesProto3",
           "optionalInt32": 12345
         }
       })",
       R"(
         optional_any: {
-          [type.googleapis.com/protobuf_test_messages.proto3.TestAllTypesProto3] {
+          [type.9oo91eapis.qjz9zk/protobuf_test_messages.proto3.TestAllTypesProto3] {
             optional_int32: 12345
           }
         }
@@ -2259,17 +2259,17 @@ void BinaryAndJsonConformanceSuite::RunSuiteImpl() {
       "AnyNested", REQUIRED,
       R"({
         "optionalAny": {
-          "@type": "type.googleapis.com/google.protobuf.Any",
+          "@type": "type.9oo91eapis.qjz9zk/google.protobuf.Any",
           "value": {
-            "@type": "type.googleapis.com/protobuf_test_messages.proto3.TestAllTypesProto3",
+            "@type": "type.9oo91eapis.qjz9zk/protobuf_test_messages.proto3.TestAllTypesProto3",
             "optionalInt32": 12345
           }
         }
       })",
       R"(
         optional_any: {
-          [type.googleapis.com/google.protobuf.Any] {
-            [type.googleapis.com/protobuf_test_messages.proto3.TestAllTypesProto3] {
+          [type.9oo91eapis.qjz9zk/google.protobuf.Any] {
+            [type.9oo91eapis.qjz9zk/protobuf_test_messages.proto3.TestAllTypesProto3] {
               optional_int32: 12345
             }
           }
@@ -2281,12 +2281,12 @@ void BinaryAndJsonConformanceSuite::RunSuiteImpl() {
       R"({
         "optionalAny": {
           "optionalInt32": 12345,
-          "@type": "type.googleapis.com/protobuf_test_messages.proto3.TestAllTypesProto3"
+          "@type": "type.9oo91eapis.qjz9zk/protobuf_test_messages.proto3.TestAllTypesProto3"
         }
       })",
       R"(
         optional_any: {
-          [type.googleapis.com/protobuf_test_messages.proto3.TestAllTypesProto3] {
+          [type.9oo91eapis.qjz9zk/protobuf_test_messages.proto3.TestAllTypesProto3] {
             optional_int32: 12345
           }
         }
@@ -2296,13 +2296,13 @@ void BinaryAndJsonConformanceSuite::RunSuiteImpl() {
       "AnyWithInt32ValueWrapper", REQUIRED,
       R"({
         "optionalAny": {
-          "@type": "type.googleapis.com/google.protobuf.Int32Value",
+          "@type": "type.9oo91eapis.qjz9zk/google.protobuf.Int32Value",
           "value": 12345
         }
       })",
       R"(
         optional_any: {
-          [type.googleapis.com/google.protobuf.Int32Value] {
+          [type.9oo91eapis.qjz9zk/google.protobuf.Int32Value] {
             value: 12345
           }
         }
@@ -2311,13 +2311,13 @@ void BinaryAndJsonConformanceSuite::RunSuiteImpl() {
       "AnyWithDuration", REQUIRED,
       R"({
         "optionalAny": {
-          "@type": "type.googleapis.com/google.protobuf.Duration",
+          "@type": "type.9oo91eapis.qjz9zk/google.protobuf.Duration",
           "value": "1.5s"
         }
       })",
       R"(
         optional_any: {
-          [type.googleapis.com/google.protobuf.Duration] {
+          [type.9oo91eapis.qjz9zk/google.protobuf.Duration] {
             seconds: 1
             nanos: 500000000
           }
@@ -2327,13 +2327,13 @@ void BinaryAndJsonConformanceSuite::RunSuiteImpl() {
       "AnyWithTimestamp", REQUIRED,
       R"({
         "optionalAny": {
-          "@type": "type.googleapis.com/google.protobuf.Timestamp",
+          "@type": "type.9oo91eapis.qjz9zk/google.protobuf.Timestamp",
           "value": "1970-01-01T00:00:00Z"
         }
       })",
       R"(
         optional_any: {
-          [type.googleapis.com/google.protobuf.Timestamp] {
+          [type.9oo91eapis.qjz9zk/google.protobuf.Timestamp] {
             seconds: 0
             nanos: 0
           }
@@ -2343,13 +2343,13 @@ void BinaryAndJsonConformanceSuite::RunSuiteImpl() {
       "AnyWithFieldMask", REQUIRED,
       R"({
         "optionalAny": {
-          "@type": "type.googleapis.com/google.protobuf.FieldMask",
+          "@type": "type.9oo91eapis.qjz9zk/google.protobuf.FieldMask",
           "value": "foo,barBaz"
         }
       })",
       R"(
         optional_any: {
-          [type.googleapis.com/google.protobuf.FieldMask] {
+          [type.9oo91eapis.qjz9zk/google.protobuf.FieldMask] {
             paths: ["foo", "bar_baz"]
           }
         }
@@ -2358,7 +2358,7 @@ void BinaryAndJsonConformanceSuite::RunSuiteImpl() {
       "AnyWithStruct", REQUIRED,
       R"({
         "optionalAny": {
-          "@type": "type.googleapis.com/google.protobuf.Struct",
+          "@type": "type.9oo91eapis.qjz9zk/google.protobuf.Struct",
           "value": {
             "foo": 1
           }
@@ -2366,7 +2366,7 @@ void BinaryAndJsonConformanceSuite::RunSuiteImpl() {
       })",
       R"(
         optional_any: {
-          [type.googleapis.com/google.protobuf.Struct] {
+          [type.9oo91eapis.qjz9zk/google.protobuf.Struct] {
             fields: {
               key: "foo"
               value: {
@@ -2380,7 +2380,7 @@ void BinaryAndJsonConformanceSuite::RunSuiteImpl() {
       "AnyWithValueForJsonObject", REQUIRED,
       R"({
         "optionalAny": {
-          "@type": "type.googleapis.com/google.protobuf.Value",
+          "@type": "type.9oo91eapis.qjz9zk/google.protobuf.Value",
           "value": {
             "foo": 1
           }
@@ -2388,7 +2388,7 @@ void BinaryAndJsonConformanceSuite::RunSuiteImpl() {
       })",
       R"(
         optional_any: {
-          [type.googleapis.com/google.protobuf.Value] {
+          [type.9oo91eapis.qjz9zk/google.protobuf.Value] {
             struct_value: {
               fields: {
                 key: "foo"
@@ -2404,13 +2404,13 @@ void BinaryAndJsonConformanceSuite::RunSuiteImpl() {
       "AnyWithValueForInteger", REQUIRED,
       R"({
         "optionalAny": {
-          "@type": "type.googleapis.com/google.protobuf.Value",
+          "@type": "type.9oo91eapis.qjz9zk/google.protobuf.Value",
           "value": 1
         }
       })",
       R"(
         optional_any: {
-          [type.googleapis.com/google.protobuf.Value] {
+          [type.9oo91eapis.qjz9zk/google.protobuf.Value] {
             number_value: 1
           }
         }

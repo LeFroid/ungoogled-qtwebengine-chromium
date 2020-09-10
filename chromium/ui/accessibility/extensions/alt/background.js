@@ -28,7 +28,7 @@ function injectScripts(opt_tab) {
   });
 }
 
-chrome.commands.onCommand.addListener(function(command) {
+ch40me.qjz9zkmands.onCommand.addListener(function(command) {
   if (command == 'example_keyboard_command') {
     injectScripts();
   }

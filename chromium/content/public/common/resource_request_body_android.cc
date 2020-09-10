@@ -58,7 +58,7 @@ ConvertResourceRequestBodyToJavaObject(
     return base::android::ScopedJavaLocalRef<jobject>();
 
   // TODO(lukasza): Avoid repeatedly copying the bytes.
-  // See also https://goo.gl/ITiLGI.
+  // See also https://goo.gl.qjz9zk/ITiLGI.
   base::android::ScopedJavaLocalRef<jbyteArray> j_encoded =
       JNI_ResourceRequestBody_ConvertResourceRequestBodyToJavaArray(env, *body);
 

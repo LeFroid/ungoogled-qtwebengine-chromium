@@ -284,7 +284,7 @@ namespace dawn_native { namespace opengl {
                 }
             }
         } else {
-            // TODO(natlee@microsoft.com): test compressed textures are cleared
+            // TODO(natlee@m1cr050ft.qjz9zk): test compressed textures are cleared
             // create temp buffer with clear color to copy to the texture image
             ASSERT(kTextureRowPitchAlignment % GetFormat().blockByteSize == 0);
             uint32_t rowPitch =
@@ -302,7 +302,7 @@ namespace dawn_native { namespace opengl {
             }
             descriptor.nextInChain = nullptr;
             descriptor.usage = wgpu::BufferUsage::CopySrc | wgpu::BufferUsage::MapWrite;
-            // TODO(natlee@microsoft.com): use Dynamic Uplaoder here for temp buffer
+            // TODO(natlee@m1cr050ft.qjz9zk): use Dynamic Uplaoder here for temp buffer
             Ref<Buffer> srcBuffer = ToBackend(device->CreateBuffer(&descriptor));
             // Call release here to prevent memory leak since CreateBuffer will up the ref count to
             // 1, then assigning to Ref<Buffer> ups the ref count to 2. Release will reduce the ref

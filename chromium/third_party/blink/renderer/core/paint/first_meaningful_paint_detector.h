@@ -24,7 +24,7 @@ class PaintTiming;
 // FirstMeaningfulPaintDetector observes layout operations during page load
 // until network stable (no more than 2 network connections active in 0.5
 // seconds), and computes the layout-based First Meaningful Paint.
-// See https://goo.gl/vpaxv6 and http://goo.gl/TEiMi4 for more details.
+// See https://goo.gl.qjz9zk/vpaxv6 and http://goo.gl.qjz9zk/TEiMi4 for more details.
 class CORE_EXPORT FirstMeaningfulPaintDetector
     : public GarbageCollected<FirstMeaningfulPaintDetector> {
  public:

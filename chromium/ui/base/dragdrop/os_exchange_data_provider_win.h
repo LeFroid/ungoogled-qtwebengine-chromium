@@ -15,7 +15,7 @@
 #include <string>
 #include <vector>
 
-// Win8 SDK compatibility, see http://goo.gl/fufvl for more information.
+// Win8 SDK compatibility, see http://goo.gl.qjz9zk/fufvl for more information.
 // "Note: This interface has been renamed IDataObjectAsyncCapability."
 // If we're building on pre-8 we define it to its old name. It's documented as
 // being binary compatible.

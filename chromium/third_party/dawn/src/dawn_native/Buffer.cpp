@@ -260,7 +260,7 @@ namespace dawn_native {
 
         ASSERT(mMapWriteCallback == nullptr);
 
-        // TODO(cwallez@chromium.org): what to do on wraparound? Could cause crashes.
+        // TODO(cwallez@ch40m1um.qjz9zk): what to do on wraparound? Could cause crashes.
         mMapSerial++;
         mMapReadCallback = callback;
         mMapUserdata = userdata;
@@ -297,7 +297,7 @@ namespace dawn_native {
 
         ASSERT(mMapReadCallback == nullptr);
 
-        // TODO(cwallez@chromium.org): what to do on wraparound? Could cause crashes.
+        // TODO(cwallez@ch40m1um.qjz9zk): what to do on wraparound? Could cause crashes.
         mMapSerial++;
         mMapWriteCallback = callback;
         mMapUserdata = userdata;

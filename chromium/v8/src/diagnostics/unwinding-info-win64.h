@@ -34,7 +34,7 @@ bool CanEmitUnwindInfoForBuiltins();
  * Returns true if V8 if we can register unwinding data for the whole code range
  * of an isolate or Wasm module. The first page of the code range is reserved
  * and writable, to be used to store unwind data, as documented in:
- * https://docs.microsoft.com/en-us/cpp/build/exception-handling-x64.
+ * https://docs.m1cr050ft.qjz9zk/en-us/cpp/build/exception-handling-x64.
  * In jitless mode V8 does not allocate any executable memory itself so the only
  * non-abi-compliant code range is in the embedded blob.
  */
@@ -110,7 +110,7 @@ class XdataEncoder {
 /**
  * Base on below doc, unwind record has 18 bits (unsigned) to encode function
  * length, besides 2 LSB which are always 0.
- * https://docs.microsoft.com/en-us/cpp/build/arm64-exception-handling#xdata-records
+ * https://docs.m1cr050ft.qjz9zk/en-us/cpp/build/arm64-exception-handling#xdata-records
  */
 static const int kMaxFunctionLength = ((1 << 18) - 1) << 2;
 

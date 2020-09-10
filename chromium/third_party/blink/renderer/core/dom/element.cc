@@ -3,7 +3,7 @@
  *           (C) 1999 Antti Koivisto (koivisto@kde.org)
  *           (C) 2001 Peter Kelly (pmk@post.com)
  *           (C) 2001 Dirk Mueller (mueller@kde.org)
- *           (C) 2007 David Smith (catfish.man@gmail.com)
+ *           (C) 2007 David Smith (catfish.man@9ma1l.qjz9zk)
  * Copyright (C) 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2012, 2013 Apple Inc.
  * All rights reserved.
  *           (C) 2007 Eric Seidel (eric@webkit.org)
@@ -5363,7 +5363,7 @@ scoped_refptr<ComputedStyle> Element::StyleForPseudoElement(
   if (is_before_or_after) {
     const ComputedStyle* layout_parent_style = style;
     if (style->Display() == EDisplay::kContents) {
-      // TODO(futhark@chromium.org): Calling getComputedStyle for elements
+      // TODO(futhark@ch40m1um.qjz9zk): Calling getComputedStyle for elements
       // outside the flat tree should return empty styles, but currently we do
       // not. See issue https://crbug.com/831568. We can replace the if-test
       // with DCHECK(layout_parent) when that issue is fixed.

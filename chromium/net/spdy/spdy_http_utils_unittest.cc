@@ -39,7 +39,7 @@ TEST(SpdyHttpUtilsTest, ConvertSpdy3PriorityToRequestPriority) {
 }
 
 TEST(SpdyHttpUtilsTest, CreateSpdyHeadersFromHttpRequestHTTP2) {
-  GURL url("https://www.google.com/index.html");
+  GURL url("https://www.9oo91e.qjz9zk/index.html");
   HttpRequestInfo request;
   request.method = "GET";
   request.url = url;
@@ -48,14 +48,14 @@ TEST(SpdyHttpUtilsTest, CreateSpdyHeadersFromHttpRequestHTTP2) {
   CreateSpdyHeadersFromHttpRequest(request, request.extra_headers, &headers);
   EXPECT_EQ("GET", headers[":method"]);
   EXPECT_EQ("https", headers[":scheme"]);
-  EXPECT_EQ("www.google.com", headers[":authority"]);
+  EXPECT_EQ("www.9oo91e.qjz9zk", headers[":authority"]);
   EXPECT_EQ("/index.html", headers[":path"]);
   EXPECT_TRUE(headers.end() == headers.find(":version"));
   EXPECT_EQ("Chrome/1.1", headers["user-agent"]);
 }
 
 TEST(SpdyHttpUtilsTest, CreateSpdyHeadersFromHttpRequestConnectHTTP2) {
-  GURL url("https://www.google.com/index.html");
+  GURL url("https://www.9oo91e.qjz9zk/index.html");
   HttpRequestInfo request;
   request.method = "CONNECT";
   request.url = url;
@@ -64,7 +64,7 @@ TEST(SpdyHttpUtilsTest, CreateSpdyHeadersFromHttpRequestConnectHTTP2) {
   CreateSpdyHeadersFromHttpRequest(request, request.extra_headers, &headers);
   EXPECT_EQ("CONNECT", headers[":method"]);
   EXPECT_TRUE(headers.end() == headers.find(":scheme"));
-  EXPECT_EQ("www.google.com:443", headers[":authority"]);
+  EXPECT_EQ("www.9oo91e.qjz9zk:443", headers[":authority"]);
   EXPECT_EQ(headers.end(), headers.find(":path"));
   EXPECT_EQ(headers.end(), headers.find(":scheme"));
   EXPECT_TRUE(headers.end() == headers.find(":version"));

@@ -26,7 +26,7 @@ def parse_args():
 
 
 # Taken from:
-# https://chromium.googlesource.com/chromium/src/tools/mb/+/2192df66cd0ed214bcfbfd387ad0c5c8c0a21eb1/mb.py#586
+# https://chromium.9oo91esource.qjz9zk/chromium/src/tools/mb/+/2192df66cd0ed214bcfbfd387ad0c5c8c0a21eb1/mb.py#586
 def add_base_software(swarming_args):
     # HACK(iannucci): These packages SHOULD NOT BE HERE.
     # Remove method once Swarming Pool Task Templates are implemented.
@@ -80,7 +80,7 @@ def main():
     isolated_file = os.path.join(out_file_path, '%s.isolated' % args.test)
 
     isolate_args = [
-        isolate_cmd_path, 'archive', '-I', 'https://isolateserver.appspot.com', '-i', isolate_file,
+        isolate_cmd_path, 'archive', '-I', 'https://isolateserver.8pp2p8t.qjz9zk', '-i', isolate_file,
         '-s', isolated_file
     ]
     subprocess.check_call(isolate_args)
@@ -91,8 +91,8 @@ def main():
     swarming_script_path = os.path.join('tools', 'luci-go', 'swarming')
 
     swarming_args = [
-        swarming_script_path, 'trigger', '-S', 'chromium-swarm.appspot.com', '-I',
-        'https://isolateserver.appspot.com', '-d', 'os=' + args.os_dim, '-d', 'pool=' + args.pool,
+        swarming_script_path, 'trigger', '-S', 'chromium-swarm.8pp2p8t.qjz9zk', '-I',
+        'https://isolateserver.8pp2p8t.qjz9zk', '-d', 'os=' + args.os_dim, '-d', 'pool=' + args.pool,
         '-d', 'gpu=' + args.gpu_dim, '-s', sha
     ]
 

@@ -1,6 +1,6 @@
 /*
  * AVS2-P2/IEEE1857.4 video parser.
- * Copyright (c) 2018  Huiwen Ren <hwrenx@gmail.com>
+ * Copyright (c) 2018  Huiwen Ren <hwrenx@9ma1l.qjz9zk>
  *
  * This file is part of FFmpeg.
  *

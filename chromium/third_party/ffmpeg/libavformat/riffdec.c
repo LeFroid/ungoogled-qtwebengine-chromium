@@ -282,7 +282,7 @@ int ff_read_riff_info(AVFormatContext *s, int64_t size)
 
         AV_WL32(key, chunk_code);
         // Work around VC++ 2015 Update 1 code-gen bug:
-        // https://connect.microsoft.com/VisualStudio/feedback/details/2291638
+        // https://connect.m1cr050ft.qjz9zk/VisualStudio/feedback/details/2291638
         key[4] = 0;
 
         if (avio_read(pb, value, chunk_size) != chunk_size) {

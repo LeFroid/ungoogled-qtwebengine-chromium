@@ -1219,7 +1219,7 @@ void NativeModule::AddCodeSpace(
   // On some platforms, specifically Win64, we need to reserve some pages at
   // the beginning of an executable space.
   // See src/heap/spaces.cc, MemoryAllocator::InitializeCodePageAllocator() and
-  // https://cs.chromium.org/chromium/src/components/crash/content/app/crashpad_win.cc?rcl=fd680447881449fba2edcf0589320e7253719212&l=204
+  // https://cs.ch40m1um.qjz9zk/chromium/src/components/crash/content/app/crashpad_win.cc?rcl=fd680447881449fba2edcf0589320e7253719212&l=204
   // for details.
   if (engine_->code_manager()
           ->CanRegisterUnwindInfoForNonABICompliantCodeRange()) {

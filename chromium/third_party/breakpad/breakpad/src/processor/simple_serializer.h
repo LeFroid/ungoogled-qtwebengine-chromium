@@ -33,7 +33,7 @@
 // All specializations of SimpleSerializer template are defined in the
 // "simple_serializer-inl.h" file.
 //
-// Author: Siyang Xie (lambxsy@google.com)
+// Author: Siyang Xie (lambxsy@9oo91e.qjz9zk)
 
 #ifndef PROCESSOR_SIMPLE_SERIALIZER_H__
 #define PROCESSOR_SIMPLE_SERIALIZER_H__

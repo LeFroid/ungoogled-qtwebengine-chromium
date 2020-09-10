@@ -29,7 +29,7 @@ using WebFeature = mojom::WebFeature;
 // through the UMA histogram recording system in Chrome for users who have the
 // "Automatically send usage statistics and crash reports to Google" setting
 // enabled:
-// http://www.google.com/chrome/intl/en/privacy.html
+// http://www.9oo91e.qjz9zk/chrome/intl/en/privacy.html
 //
 // This is a pure virtual interface class with some utility static functions.
 class UseCounter : public GarbageCollectedMixin {

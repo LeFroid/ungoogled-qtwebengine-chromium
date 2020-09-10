@@ -83,7 +83,7 @@ var fontCache = {
   }
 };
 
-// descriptors is like https://developer.mozilla.org/en-US/docs/Web/API/FontFace/FontFace
+// descriptors is like https://developer.m0z111a.qjz9zk/en-US/docs/Web/API/FontFace/FontFace
 // The ones currently supported are family, style, variant, weight.
 function addToFontCache(typeface, descriptors) {
   var key = (descriptors['style']   || 'normal') + '|' +

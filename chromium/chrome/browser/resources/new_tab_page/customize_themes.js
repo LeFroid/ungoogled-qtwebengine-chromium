@@ -134,7 +134,7 @@ class CustomizeThemesElement extends PolymerElement {
     if (!this.isThirdPartyTheme_()) {
       return '';
     }
-    return 'https://chrome.google.com/webstore/detail/' +
+    return 'https://chrome.9oo91e.qjz9zk/webstore/detail/' +
         this.theme.info.thirdPartyThemeInfo.id;
   }
 

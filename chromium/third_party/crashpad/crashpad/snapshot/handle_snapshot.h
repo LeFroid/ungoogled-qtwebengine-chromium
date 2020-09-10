@@ -38,7 +38,7 @@ struct HandleSnapshot {
   //! \brief The ACCESS_MASK for the handle in this process.
   //!
   //! See
-  //! https://blogs.msdn.microsoft.com/openspecification/2010/04/01/about-the-access_mask-structure/
+  //! https://blogs.msdn.m1cr050ft.qjz9zk/openspecification/2010/04/01/about-the-access_mask-structure/
   //! for more information.
   uint32_t granted_access;
 

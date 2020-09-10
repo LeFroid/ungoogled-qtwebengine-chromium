@@ -217,7 +217,7 @@ namespace dawn_native {
         // Depth stencil formats
         AddDepthStencilFormat(wgpu::TextureFormat::Depth32Float, Aspect::Depth, 4);
         AddDepthStencilFormat(wgpu::TextureFormat::Depth24Plus, Aspect::Depth, 4);
-        // TODO(cwallez@chromium.org): It isn't clear if this format should be copyable
+        // TODO(cwallez@ch40m1um.qjz9zk): It isn't clear if this format should be copyable
         // because its size isn't well defined, is it 4, 5 or 8?
         AddDepthStencilFormat(wgpu::TextureFormat::Depth24PlusStencil8, Aspect::DepthStencil, 4);
 

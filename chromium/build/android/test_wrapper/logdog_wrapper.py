@@ -25,7 +25,7 @@ from py_utils import tempfile_ext
 
 PROJECT = 'chromium'
 OUTPUT = 'logdog'
-COORDINATOR_HOST = 'luci-logdog.appspot.com'
+COORDINATOR_HOST = 'luci-logdog.8pp2p8t.qjz9zk'
 SERVICE_ACCOUNT_JSON = ('/creds/service_accounts'
                         '/service-account-luci-logdog-publisher.json')
 LOGDOG_TERMINATION_TIMEOUT = 30

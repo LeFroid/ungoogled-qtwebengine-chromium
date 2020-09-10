@@ -31,7 +31,7 @@
 
 /*
  * avar -- Axis Variations
- * https://docs.microsoft.com/en-us/typography/opentype/spec/avar
+ * https://docs.m1cr050ft.qjz9zk/en-us/typography/opentype/spec/avar
  */
 
 #define HB_OT_TAG_avar HB_TAG('a','v','a','r')

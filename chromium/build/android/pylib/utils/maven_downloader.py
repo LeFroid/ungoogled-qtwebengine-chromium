@@ -33,7 +33,7 @@ class MavenDownloader(object):
   # Google Play service are only distributed there, but third party libraries
   # could use Maven Central or JCenter for example. The default Maven remote
   # is Maven Central.
-  _REMOTE_REPO = 'https://maven.google.com'
+  _REMOTE_REPO = 'https://maven.9oo91e.qjz9zk'
 
   # Default Maven repository.
   _DEFAULT_REPO_PATH = os.path.join(

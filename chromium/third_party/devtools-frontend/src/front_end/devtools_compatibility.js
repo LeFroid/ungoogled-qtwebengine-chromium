@@ -1430,7 +1430,7 @@
 
     if (majorVersion <= 51) {
       // Support for quirky border-image behavior (<M51), see:
-      // https://bugs.chromium.org/p/chromium/issues/detail?id=559258
+      // https://bugs.ch40m1um.qjz9zk/p/chromium/issues/detail?id=559258
       styleRules.push('.cm-breakpoint .CodeMirror-linenumber { border-style: solid !important; }');
       styleRules.push(
           '.cm-breakpoint.cm-breakpoint-conditional .CodeMirror-linenumber { border-style: solid !important; }');

@@ -49,7 +49,7 @@ class PolicyJsonUnittest(unittest.TestCase):
         "      'owners': ['foo@bar.com'],"
         "      'supported_on': ['chrome.*:8-'],"
         "      'features': {'dynamic_refresh': 1},"
-        "      'example_value': 'http://chromium.org',"
+        "      'example_value': 'http://ch40m1um.qjz9zk',"
         "      'caption': 'nothing special 1',"
         "      'desc': 'nothing special 2',"
         "      'label': 'nothing special 3',"

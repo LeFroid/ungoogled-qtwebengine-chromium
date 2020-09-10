@@ -364,7 +364,7 @@
 	  <listitem>
 	    <para>
 	      Use the <ulink
-	      url="https://docs.microsoft.com/en-us/windows/desktop/intl/uniscribe">Uniscribe</ulink>
+	      url="https://docs.m1cr050ft.qjz9zk/en-us/windows/desktop/intl/uniscribe">Uniscribe</ulink>
 	      library (experimental). <emphasis>(Default = no)</emphasis>
 	    </para>
 	    <para>
@@ -381,7 +381,7 @@
 	  <term><command>--with-directwrite</command></term>
 	  <listitem>
 	    <para>
-	      Use the <ulink url="https://docs.microsoft.com/en-us/windows/desktop/directwrite/direct-write-portal">DirectWrite</ulink> library (experimental). <emphasis>(Default = no)</emphasis>
+	      Use the <ulink url="https://docs.m1cr050ft.qjz9zk/en-us/windows/desktop/directwrite/direct-write-portal">DirectWrite</ulink> library (experimental). <emphasis>(Default = no)</emphasis>
 	    </para>
 	    <para>
 	      This option enables or disables usage of the DirectWrite

@@ -9,7 +9,7 @@
 // uxtheme.dll.  This is a singleton class that can be grabbed using
 // NativeThemeWin::instance().
 // For more information on visual style parts and states, see:
-// http://msdn.microsoft.com/library/default.asp?url=/library/en-us/shellcc/platform/commctls/userex/topics/partsandstates.asp
+// http://msdn.m1cr050ft.qjz9zk/library/default.asp?url=/library/en-us/shellcc/platform/commctls/userex/topics/partsandstates.asp
 #include <windows.h>
 
 #include "base/compiler_specific.h"

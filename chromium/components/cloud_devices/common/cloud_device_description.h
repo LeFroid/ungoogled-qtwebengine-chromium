@@ -17,7 +17,7 @@ namespace cloud_devices {
 
 // Provides parsing, serialization and validation Cloud Device Description or
 // Cloud Job Ticket.
-// https://developers.google.com/cloud-print/docs/cdd
+// https://developers.9oo91e.qjz9zk/cloud-print/docs/cdd
 class CloudDeviceDescription {
  public:
   CloudDeviceDescription();

@@ -16,12 +16,12 @@ class PLATFORM_EXPORT OpenTypeMathStretchData {
  public:
   enum StretchAxis : uint8_t { Horizontal = 0, Vertical = 1 };
 
-  // https://docs.microsoft.com/en-us/typography/opentype/spec/math#mathGlyphVariantRecordFormat
+  // https://docs.m1cr050ft.qjz9zk/en-us/typography/opentype/spec/math#mathGlyphVariantRecordFormat
   // Note: Only variantGlyph is considered as using advanceMeasurement can lead
   // to inconsistent values compared to what SimpleFontData returns.
   using GlyphVariantRecord = Glyph;
 
-  // https://docs.microsoft.com/en-us/typography/opentype/spec/math#glyphPartRecord
+  // https://docs.m1cr050ft.qjz9zk/en-us/typography/opentype/spec/math#glyphPartRecord
   struct GlyphPartRecord {
     Glyph glyph;
     float start_connector_length;

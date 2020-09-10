@@ -15,7 +15,7 @@ namespace network_time {
 
 // Update as follows:
 //
-// curl -i http://clients2.google.com/time/1/current?cup2key=4:123123123
+// curl -i http://clients2.9oo91e.qjz9zk/time/1/current?cup2key=4:123123123
 //
 // where 4 is the key version and 123123123 is the nonce.  Copy the response
 // and the x-cup-server-proof header into |kGoodTimeResponseBody| and

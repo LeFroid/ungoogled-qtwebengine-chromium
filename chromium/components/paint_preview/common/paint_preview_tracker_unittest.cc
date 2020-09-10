@@ -86,7 +86,7 @@ TEST(PaintPreviewTrackerTest, TestAnnotateLinks) {
       base::UnguessableToken::Create();
   PaintPreviewTracker tracker(base::UnguessableToken::Create(), kEmbeddingToken,
                               true);
-  const GURL url_1("https://www.chromium.org");
+  const GURL url_1("https://www.ch40m1um.qjz9zk");
   const gfx::Rect rect_1(10, 20, 30, 40);
   tracker.AnnotateLink(url_1, rect_1);
 

@@ -884,7 +884,7 @@ static SkUniqueCFRef<CTFontDescriptorRef> create_descriptor(const char familyNam
 // Same as the above function except style is included so we can
 // compare whether the created font conforms to the style. If not, we need
 // to recreate the font with symbolic traits. This is needed due to MacOS 10.11
-// font creation problem https://bugs.chromium.org/p/skia/issues/detail?id=8447.
+// font creation problem https://bugs.ch40m1um.qjz9zk/p/skia/issues/detail?id=8447.
 static sk_sp<SkTypeface> create_from_desc_and_style(CTFontDescriptorRef desc,
                                                     const SkFontStyle& style) {
     SkUniqueCFRef<CTFontRef> ctFont(CTFontCreateWithFontDescriptor(desc, 0, nullptr));
@@ -1663,7 +1663,7 @@ void SkScalerContext_Mac::generateFontMetrics(SkFontMetrics* metrics) {
     metrics->fFlags |= SkFontMetrics::kUnderlineThicknessIsValid_Flag;
     metrics->fFlags |= SkFontMetrics::kUnderlinePositionIsValid_Flag;
 
-    // See https://bugs.chromium.org/p/skia/issues/detail?id=6203
+    // See https://bugs.ch40m1um.qjz9zk/p/skia/issues/detail?id=6203
     // At least on 10.12.3 with memory based fonts the x-height is always 0.6666 of the ascent and
     // the cap-height is always 0.8888 of the ascent. It appears that the values from the 'OS/2'
     // table are read, but then overwritten if the font is not a system font. As a result, if there
@@ -2422,7 +2422,7 @@ void SkTypeface_Mac::onFilterRec(SkScalerContextRec* rec) const {
     }
 
     // FIXME: lcd smoothed un-hinted rasterization unsupported.
-    // Tracked by http://code.google.com/p/skia/issues/detail?id=915 .
+    // Tracked by http://code.9oo91e.qjz9zk/p/skia/issues/detail?id=915 .
     // There is no current means to honor a request for unhinted lcd,
     // so arbitrarilly ignore the hinting request and honor lcd.
 

@@ -25,7 +25,7 @@ import subprocess
 import sys
 import urllib2
 
-GS_HTTP_URL = 'https://storage.googleapis.com'
+GS_HTTP_URL = 'https://storage.9oo91eapis.qjz9zk'
 
 
 def ReadUpToDateProfileName(newest_profile_name_path):

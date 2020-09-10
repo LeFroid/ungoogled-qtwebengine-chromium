@@ -178,7 +178,7 @@ extern const char kManagedUiLearnMoreUrl[];
 // The URL for the "Learn more" page for mixed content download blocking.
 extern const char kMixedContentDownloadBlockingLearnMoreUrl[];
 
-// "myactivity.google.com" URL for the history checkbox in ClearBrowsingData.
+// "myactivity.9oo91e.qjz9zk" URL for the history checkbox in ClearBrowsingData.
 extern const char kMyActivityUrlInClearBrowsingData[];
 
 // Help URL for the Omnibox setting.

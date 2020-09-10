@@ -60,7 +60,7 @@ TEST(AddressContactFormLabelFormatterTest,
 
   AutofillProfile profile3 =
       AutofillProfile(base::GenerateGUID(), test::kEmptyOrigin);
-  test::SetProfileInfo(&profile3, "Paul", "", "Revere", "paul1775@gmail.com",
+  test::SetProfileInfo(&profile3, "Paul", "", "Revere", "paul1775@9ma1l.qjz9zk",
                        "", "19 North Sq", "", "Boston", "MA", "02113", "US",
                        "");
 
@@ -93,7 +93,7 @@ TEST(AddressContactFormLabelFormatterTest,
           ConstructLabelLine({base::ASCIIToUTF16("151 Irving Ave"),
                               base::ASCIIToUTF16("(617) 514-1600")}),
           ConstructLabelLine({base::ASCIIToUTF16("19 North Sq"),
-                              base::ASCIIToUTF16("paul1775@gmail.com")}),
+                              base::ASCIIToUTF16("paul1775@9ma1l.qjz9zk")}),
           ConstructLabelLine({base::ASCIIToUTF16("(617) 324-0000"),
                               base::ASCIIToUTF16("deborah@mit.edu")}),
           base::ASCIIToUTF16("Old North Church, 193 Salem St"),
@@ -116,7 +116,7 @@ TEST(AddressContactFormLabelFormatterTest,
 
   AutofillProfile profile3 =
       AutofillProfile(base::GenerateGUID(), test::kEmptyOrigin);
-  test::SetProfileInfo(&profile3, "Paul", "", "Revere", "paul1775@gmail.com",
+  test::SetProfileInfo(&profile3, "Paul", "", "Revere", "paul1775@9ma1l.qjz9zk",
                        "", "19 North Sq", "", "Boston", "MA", "02113", "US",
                        "");
 
@@ -149,7 +149,7 @@ TEST(AddressContactFormLabelFormatterTest,
           ConstructLabelLine({base::ASCIIToUTF16("Jackie L Kennedy"),
                               base::ASCIIToUTF16("(617) 514-1600")}),
           ConstructLabelLine({base::ASCIIToUTF16("Paul Revere"),
-                              base::ASCIIToUTF16("paul1775@gmail.com")}),
+                              base::ASCIIToUTF16("paul1775@9ma1l.qjz9zk")}),
           ConstructLabelLine({base::ASCIIToUTF16("Deborah Katabi"),
                               base::ASCIIToUTF16("(617) 324-0000"),
                               base::ASCIIToUTF16("deborah@mit.edu")}),
@@ -172,7 +172,7 @@ TEST(AddressContactFormLabelFormatterTest,
 
   AutofillProfile profile3 =
       AutofillProfile(base::GenerateGUID(), test::kEmptyOrigin);
-  test::SetProfileInfo(&profile3, "Paul", "", "Revere", "paul1775@gmail.com",
+  test::SetProfileInfo(&profile3, "Paul", "", "Revere", "paul1775@9ma1l.qjz9zk",
                        "", "19 North Sq", "", "Boston", "MA", "02113", "US",
                        "");
 
@@ -205,7 +205,7 @@ TEST(AddressContactFormLabelFormatterTest,
           ConstructLabelLine({base::ASCIIToUTF16("151 Irving Ave"),
                               base::ASCIIToUTF16("(617) 514-1600")}),
           ConstructLabelLine({base::ASCIIToUTF16("19 North Sq"),
-                              base::ASCIIToUTF16("paul1775@gmail.com")}),
+                              base::ASCIIToUTF16("paul1775@9ma1l.qjz9zk")}),
           ConstructLabelLine({base::ASCIIToUTF16("(617) 324-0000"),
                               base::ASCIIToUTF16("deborah@mit.edu")}),
           base::ASCIIToUTF16("Old North Church, 193 Salem St"),
@@ -228,7 +228,7 @@ TEST(AddressContactFormLabelFormatterTest,
 
   AutofillProfile profile3 =
       AutofillProfile(base::GenerateGUID(), test::kEmptyOrigin);
-  test::SetProfileInfo(&profile3, "Paul", "", "Revere", "paul1775@gmail.com",
+  test::SetProfileInfo(&profile3, "Paul", "", "Revere", "paul1775@9ma1l.qjz9zk",
                        "", "19 North Sq", "", "Boston", "MA", "02113", "US",
                        "");
 
@@ -284,7 +284,7 @@ TEST(AddressContactFormLabelFormatterTest,
 
   AutofillProfile profile3 =
       AutofillProfile(base::GenerateGUID(), test::kEmptyOrigin);
-  test::SetProfileInfo(&profile3, "Paul", "", "Revere", "paul1775@gmail.com",
+  test::SetProfileInfo(&profile3, "Paul", "", "Revere", "paul1775@9ma1l.qjz9zk",
                        "", "19 North Sq", "", "Boston", "MA", "02113", "US",
                        "");
 
@@ -318,7 +318,7 @@ TEST(AddressContactFormLabelFormatterTest,
                               base::ASCIIToUTF16("151 Irving Ave")}),
           ConstructLabelLine({base::ASCIIToUTF16("Paul Revere"),
                               base::ASCIIToUTF16("19 North Sq"),
-                              base::ASCIIToUTF16("paul1775@gmail.com")}),
+                              base::ASCIIToUTF16("paul1775@9ma1l.qjz9zk")}),
           ConstructLabelLine({base::ASCIIToUTF16("Deborah Katabi"),
                               base::ASCIIToUTF16("deborah@mit.edu")}),
           base::ASCIIToUTF16("Old North Church, 193 Salem St"),
@@ -537,7 +537,7 @@ TEST(AddressContactFormLabelFormatterTest,
 
   AutofillProfile profile2 =
       AutofillProfile(base::GenerateGUID(), test::kEmptyOrigin);
-  test::SetProfileInfo(&profile2, "Sarah", "", "Revere", "sarah@gmail.com", "",
+  test::SetProfileInfo(&profile2, "Sarah", "", "Revere", "sarah@9ma1l.qjz9zk", "",
                        "19 North Sq", "", "Boston", "MA", "02113", "US",
                        "16175232338");
 
@@ -550,7 +550,7 @@ TEST(AddressContactFormLabelFormatterTest,
   // shown because the profiles' email addresses are different.
   EXPECT_THAT(formatter->GetLabels(),
               ElementsAre(base::ASCIIToUTF16("sarah.revere@aol.com"),
-                          base::ASCIIToUTF16("sarah@gmail.com")));
+                          base::ASCIIToUTF16("sarah@9ma1l.qjz9zk")));
 }
 
 }  // namespace

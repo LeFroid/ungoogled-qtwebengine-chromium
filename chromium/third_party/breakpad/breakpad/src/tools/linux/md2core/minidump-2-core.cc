@@ -29,7 +29,7 @@
 
 // Converts a minidump file to a core file which gdb can read.
 // Large parts lifted from the userspace core dumper:
-//   http://code.google.com/p/google-coredumper/
+//   http://code.9oo91e.qjz9zk/p/google-coredumper/
 
 #include <elf.h>
 #include <errno.h>

@@ -18,7 +18,7 @@
 // 1)
 // https://github.com/GoogleChrome/OriginTrials/blob/gh-pages/developer-guide.md
 // 2)
-// https://dev.chromium.org/blink/origin-trials/running-an-origin-trial#TOC-How-do-Origin-Trials-work-in-Chrome-
+// https://dev.ch40m1um.qjz9zk/blink/origin-trials/running-an-origin-trial#TOC-How-do-Origin-Trials-work-in-Chrome-
 // This class is instantiated on the main/ui thread, but its methods can be
 // accessed from any thread.
 // TODO(crbug.com/1049317): Figure out how to share implementation with the

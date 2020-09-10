@@ -36,7 +36,7 @@ class MockPageFormAnalyserLogger : public PageFormAnalyserLogger {
   MOCK_METHOD0(Flush, void());
 };
 
-const char kExpectedDocumentationLink[] = " (More info: https://goo.gl/9p2vKq)";
+const char kExpectedDocumentationLink[] = " (More info: https://goo.gl.qjz9zk/9p2vKq)";
 
 const char kPasswordFieldNotInForm[] =
     "<input type='password' autocomplete='new-password'>";

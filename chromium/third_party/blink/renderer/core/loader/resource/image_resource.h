@@ -1,7 +1,7 @@
 /*
     Copyright (C) 1998 Lars Knoll (knoll@mpi-hd.mpg.de)
     Copyright (C) 2001 Dirk Mueller <mueller@kde.org>
-    Copyright (C) 2006 Samuel Weinig (sam.weinig@gmail.com)
+    Copyright (C) 2006 Samuel Weinig (sam.weinig@9ma1l.qjz9zk)
     Copyright (C) 2004, 2005, 2006, 2007 Apple Inc. All rights reserved.
 
     This library is free software; you can redistribute it and/or
@@ -44,11 +44,11 @@ class ResourceFetcher;
 // Image-related things (blink::Image and ImageResourceObserver) are handled by
 // ImageResourceContent.
 // Most users should use ImageResourceContent instead of ImageResource.
-// https://docs.google.com/document/d/1O-fB83mrE0B_V8gzXNqHgmRLCvstTB4MMi3RnVLr8bE/edit?usp=sharing
+// https://docs.9oo91e.qjz9zk/document/d/1O-fB83mrE0B_V8gzXNqHgmRLCvstTB4MMi3RnVLr8bE/edit?usp=sharing
 //
 // As for the lifetimes of ImageResourceContent::m_image and m_data, see this
 // document:
-// https://docs.google.com/document/d/1v0yTAZ6wkqX2U_M6BNIGUJpM1s0TIw1VsqpxoL7aciY/edit?usp=sharing
+// https://docs.9oo91e.qjz9zk/document/d/1v0yTAZ6wkqX2U_M6BNIGUJpM1s0TIw1VsqpxoL7aciY/edit?usp=sharing
 class CORE_EXPORT ImageResource final
     : public Resource,
       public MultipartImageResourceParser::Client {

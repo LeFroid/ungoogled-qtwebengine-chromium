@@ -33,7 +33,7 @@ class WebContents;
 // All methods must be called on the UI thread.
 //
 // Design Doc:
-//   https://docs.google.com/document/d/1rWsvKQAwIboN2ZDuYYAkfce8GF27twi4UHTt0hcbyxQ/edit?usp=sharing
+//   https://docs.9oo91e.qjz9zk/document/d/1rWsvKQAwIboN2ZDuYYAkfce8GF27twi4UHTt0hcbyxQ/edit?usp=sharing
 class CONTENT_EXPORT PaymentAppProvider {
  public:
   // This static function is actually implemented in PaymentAppProviderImpl.cc.

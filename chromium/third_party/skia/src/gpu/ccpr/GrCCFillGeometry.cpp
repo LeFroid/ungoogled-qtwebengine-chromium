@@ -262,7 +262,7 @@ static inline void find_chops_around_inflection_points(float padRadius, Sk2f tl,
     // See "Resolution Independent Curve Rendering using Programmable Graphics Hardware",
     // 4.3 Finding klmn:
     //
-    // https://www.microsoft.com/en-us/research/wp-content/uploads/2005/01/p1000-loop.pdf
+    // https://www.m1cr050ft.qjz9zk/en-us/research/wp-content/uploads/2005/01/p1000-loop.pdf
     //
     // From here on we use Sk2f with "L" names, but the second lane will be for line M.
     tl = (sl > 0).thenElse(tl, -tl); // Tl=tl/sl is the triple root of l(t,s). Normalize so s >= 0.
@@ -347,7 +347,7 @@ static inline void find_chops_around_loop_intersection(float padRadius, Sk2f t2,
     // See "Resolution Independent Curve Rendering using Programmable Graphics Hardware",
     // 4.3 Finding klmn:
     //
-    // https://www.microsoft.com/en-us/research/wp-content/uploads/2005/01/p1000-loop.pdf
+    // https://www.m1cr050ft.qjz9zk/en-us/research/wp-content/uploads/2005/01/p1000-loop.pdf
     Sk2f T2 = t2/s2; // T2 is the double root of l(T).
     Sk2f T1 = SkNx_shuffle<1,0>(T2); // T1 is the other root of l(T).
 

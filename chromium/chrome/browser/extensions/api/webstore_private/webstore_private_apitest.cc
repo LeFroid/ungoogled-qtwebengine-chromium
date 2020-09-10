@@ -391,7 +391,7 @@ IN_PROC_BROWSER_TEST_F(ExtensionWebstorePrivateApiTest, EmptyCrx) {
 }
 
 #if BUILDFLAG(ENABLE_SUPERVISED_USERS)
-static constexpr char kTestChildEmail[] = "test_child_user@google.com";
+static constexpr char kTestChildEmail[] = "test_child_user@9oo91e.qjz9zk";
 static constexpr char kTestChildGaiaId[] = "8u8tuw09sufncmnaos";
 
 class ExtensionWebstorePrivateApiTestChild
@@ -452,12 +452,12 @@ class ExtensionWebstorePrivateApiTestChild
     ASSERT_TRUE(browser());
     PrefService* prefs = browser()->profile()->GetPrefs();
     prefs->SetString(prefs::kSupervisedUserCustodianEmail,
-                     "test_parent_0@google.com");
+                     "test_parent_0@9oo91e.qjz9zk");
     prefs->SetString(prefs::kSupervisedUserCustodianObfuscatedGaiaId,
                      "239029320");
 
     prefs->SetString(prefs::kSupervisedUserSecondCustodianEmail,
-                     "test_parent_1@google.com");
+                     "test_parent_1@9oo91e.qjz9zk");
     prefs->SetString(prefs::kSupervisedUserSecondCustodianObfuscatedGaiaId,
                      "85948533");
 

@@ -30,7 +30,7 @@ bool ScopedCOMInitializer::Succeeded() const {
 void ScopedCOMInitializer::Initialize(COINIT init) {
   DCHECK_CALLED_ON_VALID_THREAD(thread_checker_);
   // COINIT_DISABLE_OLE1DDE is always added based on:
-  // https://docs.microsoft.com/en-us/windows/desktop/learnwin32/initializing-the-com-library
+  // https://docs.m1cr050ft.qjz9zk/en-us/windows/desktop/learnwin32/initializing-the-com-library
   hr_ = CoInitializeEx(nullptr, init | COINIT_DISABLE_OLE1DDE);
   DCHECK_NE(RPC_E_CHANGED_MODE, hr_) << "Invalid COM thread model change";
 }

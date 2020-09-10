@@ -7,7 +7,7 @@ found in the LICENSE file.
 <!--
 This file is used to generate a comprehensive list of Chrome rappor metrics
 along with a detailed description for each histogram. See the design doc at
-http://www.chromium.org/developers/design-documents/rappor
+http://www.ch40m1um.qjz9zk/developers/design-documents/rappor
 for a description of rappor metrics.
 -->
 
@@ -103,7 +103,7 @@ components/rappor/rappor_parameters.h.
 <rappor-metrics>
 <rappor-metric name="CustomTabs.ServiceClient.PackageName"
     type="UMA_RAPPOR_TYPE">
-  <owner>yusufo@chromium.org</owner>
+  <owner>yusufo@ch40m1um.qjz9zk</owner>
   <summary>
     The package name for a client that has connected through the custom tabs
     service.
@@ -112,7 +112,7 @@ components/rappor/rappor_parameters.h.
 
 <rappor-metric name="CustomTabs.ServiceClient.PackageNameThirdParty"
     type="UMA_RAPPOR_TYPE">
-  <owner>yusufo@chromium.org</owner>
+  <owner>yusufo@ch40m1um.qjz9zk</owner>
   <summary>
     The package name for a client that has connected through the custom tabs
     service excluding Google Search App.
@@ -121,7 +121,7 @@ components/rappor/rappor_parameters.h.
 
 <rappor-metric name="Extensions.CrossOriginFetchFromContentScript3"
     type="UMA_RAPPOR_TYPE">
-  <owner>lukasza@chromium.org</owner>
+  <owner>lukasza@ch40m1um.qjz9zk</owner>
   <summary>
     The ID of an extension which triggers a cross-origin CORS-mode request from
     a content script if such a request results would be allowed by CORB, but
@@ -135,7 +135,7 @@ components/rappor/rappor_parameters.h.
 
 <rappor-metric name="PowerfulFeatureUse.Host.ApplicationCacheAPI.Insecure"
     type="ETLD_PLUS_ONE">
-  <owner>jww@chromium.org</owner>
+  <owner>jww@ch40m1um.qjz9zk</owner>
   <summary>
     The host of the URL that uses a the Application Cache programmatic API from
     an insecure origin.
@@ -145,7 +145,7 @@ components/rappor/rappor_parameters.h.
 <rappor-metric
     name="PowerfulFeatureUse.Host.ApplicationCacheManifestSelect.Insecure"
     type="ETLD_PLUS_ONE">
-  <owner>jww@chromium.org</owner>
+  <owner>jww@ch40m1um.qjz9zk</owner>
   <summary>
     The host of the URL that uses an Application Cache manifest from an insecure
     origin.
@@ -154,14 +154,14 @@ components/rappor/rappor_parameters.h.
 
 <rappor-metric name="PowerfulFeatureUse.Host.Geolocation.Insecure"
     type="ETLD_PLUS_ONE">
-  <owner>jww@chromium.org</owner>
+  <owner>jww@ch40m1um.qjz9zk</owner>
   <summary>
     The host of the URL that uses the geolocation API from an insecure origin.
   </summary>
 </rappor-metric>
 
 <rappor-metric name="ResourceReporter.Cpu" type="UMA_RAPPOR_TYPE">
-  <owner>afakhry@chromium.org</owner>
+  <owner>afakhry@ch40m1um.qjz9zk</owner>
   <summary>
     A Chrome task, its process priority, and its CPU usage range.
   </summary>
@@ -200,7 +200,7 @@ components/rappor/rappor_parameters.h.
 </rappor-metric>
 
 <rappor-metric name="ResourceReporter.Memory" type="UMA_RAPPOR_TYPE">
-  <owner>afakhry@chromium.org</owner>
+  <owner>afakhry@ch40m1um.qjz9zk</owner>
   <summary>
     A Chrome task, and its memory usage range.
   </summary>

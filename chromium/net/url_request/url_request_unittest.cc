@@ -817,9 +817,9 @@ TEST_F(URLRequestTest, RecordsSameOriginReferrerHistogram) {
   context.set_network_delegate(&network_delegate);
   TestDelegate d;
   std::unique_ptr<URLRequest> req(
-      context.CreateRequest(GURL("http://google.com/"), DEFAULT_PRIORITY, &d,
+      context.CreateRequest(GURL("http://9oo91e.qjz9zk/"), DEFAULT_PRIORITY, &d,
                             TRAFFIC_ANNOTATION_FOR_TESTS));
-  req->SetReferrer("http://google.com");
+  req->SetReferrer("http://9oo91e.qjz9zk");
   req->set_referrer_policy(URLRequest::NEVER_CLEAR_REFERRER);
 
   base::HistogramTester histograms;
@@ -837,7 +837,7 @@ TEST_F(URLRequestTest, RecordsCrossOriginReferrerHistogram) {
   context.set_network_delegate(&network_delegate);
   TestDelegate d;
   std::unique_ptr<URLRequest> req(
-      context.CreateRequest(GURL("http://google.com/"), DEFAULT_PRIORITY, &d,
+      context.CreateRequest(GURL("http://9oo91e.qjz9zk/"), DEFAULT_PRIORITY, &d,
                             TRAFFIC_ANNOTATION_FOR_TESTS));
   req->SetReferrer("http://origin.com");
 
@@ -865,9 +865,9 @@ TEST_F(URLRequestTest, RecordsReferrerHistogramAgainOnRedirect) {
   context.set_network_delegate(&network_delegate);
   TestDelegate d;
   std::unique_ptr<URLRequest> req(
-      context.CreateRequest(GURL("http://google.com/"), DEFAULT_PRIORITY, &d,
+      context.CreateRequest(GURL("http://9oo91e.qjz9zk/"), DEFAULT_PRIORITY, &d,
                             TRAFFIC_ANNOTATION_FOR_TESTS));
-  req->SetReferrer("http://google.com");
+  req->SetReferrer("http://9oo91e.qjz9zk");
 
   req->set_referrer_policy(
       URLRequest::CLEAR_REFERRER_ON_TRANSITION_FROM_SECURE_TO_INSECURE);
@@ -900,12 +900,12 @@ TEST_F(URLRequestTest, RecordsReferrrerWithInformativePath) {
   network_delegate.set_redirect_url(GURL("http://redirect.com/"));
   TestDelegate d;
   std::unique_ptr<URLRequest> req(
-      context.CreateRequest(GURL("http://google.com/"), DEFAULT_PRIORITY, &d,
+      context.CreateRequest(GURL("http://9oo91e.qjz9zk/"), DEFAULT_PRIORITY, &d,
                             TRAFFIC_ANNOTATION_FOR_TESTS));
 
   // Since this referrer is much more informative than the initiating origin,
   // we should see the histograms' true buckets populated.
-  req->SetReferrer("http://google.com/very-informative-path");
+  req->SetReferrer("http://9oo91e.qjz9zk/very-informative-path");
 
   base::HistogramTester histograms;
 
@@ -931,12 +931,12 @@ TEST_F(URLRequestTest, RecordsReferrerWithInformativeQuery) {
   network_delegate.set_redirect_url(GURL("http://redirect.com/"));
   TestDelegate d;
   std::unique_ptr<URLRequest> req(
-      context.CreateRequest(GURL("http://google.com/"), DEFAULT_PRIORITY, &d,
+      context.CreateRequest(GURL("http://9oo91e.qjz9zk/"), DEFAULT_PRIORITY, &d,
                             TRAFFIC_ANNOTATION_FOR_TESTS));
 
   // Since this referrer is much more informative than the initiating origin,
   // we should see the histograms' true buckets populated.
-  req->SetReferrer("http://google.com/?very-informative-query");
+  req->SetReferrer("http://9oo91e.qjz9zk/?very-informative-query");
 
   base::HistogramTester histograms;
 
@@ -962,7 +962,7 @@ TEST_F(URLRequestTest, RecordsReferrerWithoutInformativePathOrQuery) {
   network_delegate.set_redirect_url(GURL("http://origin.com/"));
   TestDelegate d;
   std::unique_ptr<URLRequest> req(
-      context.CreateRequest(GURL("http://google.com/"), DEFAULT_PRIORITY, &d,
+      context.CreateRequest(GURL("http://9oo91e.qjz9zk/"), DEFAULT_PRIORITY, &d,
                             TRAFFIC_ANNOTATION_FOR_TESTS));
 
   // Since this referrer _isn't_ more informative than the initiating origin,
@@ -4582,7 +4582,7 @@ TEST_F(URLRequestTestHTTP, CancelAfterStart) {
   TestDelegate d;
   {
     std::unique_ptr<URLRequest> r(default_context().CreateRequest(
-        GURL("http://www.google.com/"), DEFAULT_PRIORITY, &d,
+        GURL("http://www.9oo91e.qjz9zk/"), DEFAULT_PRIORITY, &d,
         TRAFFIC_ANNOTATION_FOR_TESTS));
 
     r->Start();
@@ -7269,7 +7269,7 @@ TEST_F(URLRequestTestHTTP, BasicAuthLoadTiming) {
 // In this test, we do a POST which the server will 302 redirect.
 // The subsequent transaction should use GET, and should not send the
 // Content-Type header.
-// http://code.google.com/p/chromium/issues/detail?id=843
+// http://code.9oo91e.qjz9zk/p/chromium/issues/detail?id=843
 TEST_F(URLRequestTestHTTP, Post302RedirectGet) {
   ASSERT_TRUE(http_test_server()->Start());
 

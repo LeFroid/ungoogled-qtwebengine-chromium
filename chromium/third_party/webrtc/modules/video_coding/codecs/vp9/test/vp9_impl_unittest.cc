@@ -1623,7 +1623,7 @@ class TestVp9ImplProfile2 : public TestVp9Impl {
  protected:
   void SetUp() override {
     // Profile 2 might not be available on some platforms until
-    // https://bugs.chromium.org/p/webm/issues/detail?id=1544 is solved.
+    // https://bugs.ch40m1um.qjz9zk/p/webm/issues/detail?id=1544 is solved.
     bool profile_2_is_supported = false;
     for (const auto& codec : SupportedVP9Codecs()) {
       if (ParseSdpForVP9Profile(codec.parameters)

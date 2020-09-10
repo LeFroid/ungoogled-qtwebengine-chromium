@@ -16,7 +16,7 @@ TEST(PaymentsServiceSandboxUrl, CheckSandboxUrls) {
       switches::kWalletServiceUseSandbox, "1");
 
   const char kExpectedSandboxURL[] =
-      "https://pay.sandbox.google.com/payments/"
+      "https://pay.sandbox.9oo91e.qjz9zk/payments/"
       "home?utm_source=chrome&utm_medium=settings&utm_campaign=payment-methods#"
       "paymentMethods";
 
@@ -29,7 +29,7 @@ TEST(PaymentsServiceSandboxUrl, CheckProdUrls) {
       switches::kWalletServiceUseSandbox, "0");
 
   const char kExpectedURL[] =
-      "https://pay.google.com/payments/"
+      "https://pay.9oo91e.qjz9zk/payments/"
       "home?utm_source=chrome&utm_medium=settings&utm_campaign=payment-methods#"
       "paymentMethods";
 

@@ -96,7 +96,7 @@ void av1_ml_early_term_after_split(AV1_COMP *const cpi, MACROBLOCK *const x,
 
 // Use the rdcost ratio and source var ratio to prune PARTITION_HORZ and
 // PARTITION_VERT.
-// TODO(chiyotsai@google.com): Currently this model does not use q value and has
+// TODO(chiyotsai@9oo91e.qjz9zk): Currently this model does not use q value and has
 // no information about rectangular partitions. Preliminary experiments suggest
 // that we can get better performance by adding in q_index and rectangular
 // sse/var from SMS. We should retrain and tune this model later.

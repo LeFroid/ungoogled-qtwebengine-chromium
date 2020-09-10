@@ -1,6 +1,6 @@
 /*
  * Sun Rasterfile (.sun/.ras/im{1,8,24}/.sunras) image encoder
- * Copyright (c) 2012 Aneesh Dogra (lionaneesh) <lionaneesh@gmail.com>
+ * Copyright (c) 2012 Aneesh Dogra (lionaneesh) <lionaneesh@9ma1l.qjz9zk>
  *
  * This file is part of FFmpeg.
  *

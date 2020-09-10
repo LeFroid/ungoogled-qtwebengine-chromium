@@ -30,7 +30,7 @@
 // stackwalker_address_list_unittest.cc: Unit tests for the
 // StackwalkerAddressList class.
 //
-// Author: Chris Hamilton <chrisha@chromium.org>
+// Author: Chris Hamilton <chrisha@ch40m1um.qjz9zk>
 
 #include <string>
 #include <vector>

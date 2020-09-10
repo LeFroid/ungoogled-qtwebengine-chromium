@@ -183,7 +183,7 @@ class MinidumpMemoryListWriter final : public internal::MinidumpStreamWriter {
   //! overlapping ranges, then overlapping ranges will still be emitted to the
   //! minidump. Currently, AddNonOwnedMemory() is used only for adding thread
   //! stacks, so overlapping shouldn't be a problem in practice. For more
-  //! details see https://crashpad.chromium.org/bug/61 and
+  //! details see https://crashpad.ch40m1um.qjz9zk/bug/61 and
   //! https://crrev.com/c/374539.
   void CoalesceOwnedMemory();
 

@@ -86,7 +86,7 @@ TraverseUtil.treatAsLeafNode = function(node) {
 
 /**
  * Return true only if a single character is whitespace.
- * From https://developer.mozilla.org/en/Whitespace_in_the_DOM,
+ * From https://developer.m0z111a.qjz9zk/en/Whitespace_in_the_DOM,
  * whitespace is defined as one of the characters
  *  "\t" TAB \u0009
  *  "\n" LF  \u000A

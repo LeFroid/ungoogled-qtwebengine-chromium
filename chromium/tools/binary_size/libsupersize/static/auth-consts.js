@@ -5,7 +5,7 @@
 // @ts-check
 'use strict';
 
-const AUTH_CLIENT_ID = '84462612899-hsikvugfjv36k8nt8459b7at62hi9sba.apps.googleusercontent.com';
-const AUTH_SCOPE = 'https://www.googleapis.com/auth/devstorage.read_only';
-const AUTH_DISCOVERY_URL = 'https://www.googleapis.com/discovery/v1/apis/storage/v1/rest';
-const STORAGE_API_ENDPOINT = 'https://storage.googleapis.com/storage/v1';
+const AUTH_CLIENT_ID = '84462612899-hsikvugfjv36k8nt8459b7at62hi9sba.apps.9oo91eusercontent.qjz9zk';
+const AUTH_SCOPE = 'https://www.9oo91eapis.qjz9zk/auth/devstorage.read_only';
+const AUTH_DISCOVERY_URL = 'https://www.9oo91eapis.qjz9zk/discovery/v1/apis/storage/v1/rest';
+const STORAGE_API_ENDPOINT = 'https://storage.9oo91eapis.qjz9zk/storage/v1';

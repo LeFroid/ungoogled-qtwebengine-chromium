@@ -116,13 +116,13 @@ PasswordFormFillData GetTestPasswordFormFillData() {
   // Create an exact match in the database.
   PasswordForm preferred_match = form_on_page;
   preferred_match.username_element = ASCIIToUTF16("username");
-  preferred_match.username_value = ASCIIToUTF16("test@gmail.com");
+  preferred_match.username_value = ASCIIToUTF16("test@9ma1l.qjz9zk");
   preferred_match.password_element = ASCIIToUTF16("password");
   preferred_match.password_value = ASCIIToUTF16("test");
 
   std::vector<const PasswordForm*> matches;
   PasswordForm non_preferred_match = preferred_match;
-  non_preferred_match.username_value = ASCIIToUTF16("test1@gmail.com");
+  non_preferred_match.username_value = ASCIIToUTF16("test1@9ma1l.qjz9zk");
   non_preferred_match.password_value = ASCIIToUTF16("test1");
   matches.push_back(&non_preferred_match);
 

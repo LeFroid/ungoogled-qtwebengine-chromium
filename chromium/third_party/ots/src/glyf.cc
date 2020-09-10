@@ -12,7 +12,7 @@
 #include "maxp.h"
 
 // glyf - Glyph Data
-// http://www.microsoft.com/typography/otspec/glyf.htm
+// http://www.m1cr050ft.qjz9zk/typography/otspec/glyf.htm
 
 namespace ots {
 

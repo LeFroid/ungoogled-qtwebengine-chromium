@@ -522,7 +522,7 @@
     "message": "ערך"
   },
   "lighthouse-core/audits/dobetterweb/dom-size.js | description": {
-    "message": "מהנדסי דפדפנים ממליצים לכלול פחות מכ-1,500 רכיבי DOM בדפים. התצורה המועדפת היא עץ בעומק של פחות מ-32 רכיבים, ופחות מ-60 רכיבי צאצא לכל רכיב הורה. DOM גדול עשוי להגדיל את צריכת משאבי הזיכרון, להאריך את הזמן הדרוש ל[חישובי סגנונות](https://developers.google.com/web/fundamentals/performance/rendering/reduce-the-scope-and-complexity-of-style-calculations) ולהוביל ל[זרימה חוזרת של פריסות](https://developers.google.com/speed/articles/reflow) שגוזלת משאבים יקרים. [מידע נוסף](https://web.dev/dom-size)."
+    "message": "מהנדסי דפדפנים ממליצים לכלול פחות מכ-1,500 רכיבי DOM בדפים. התצורה המועדפת היא עץ בעומק של פחות מ-32 רכיבים, ופחות מ-60 רכיבי צאצא לכל רכיב הורה. DOM גדול עשוי להגדיל את צריכת משאבי הזיכרון, להאריך את הזמן הדרוש ל[חישובי סגנונות](https://developers.9oo91e.qjz9zk/web/fundamentals/performance/rendering/reduce-the-scope-and-complexity-of-style-calculations) ולהוביל ל[זרימה חוזרת של פריסות](https://developers.9oo91e.qjz9zk/speed/articles/reflow) שגוזלת משאבים יקרים. [מידע נוסף](https://web.dev/dom-size)."
   },
   "lighthouse-core/audits/dobetterweb/dom-size.js | displayValue": {
     "message": "{itemCount,plural, =1{רכיב אחד}two{# רכיבים}many{# רכיבים}other{# רכיבים}}"
@@ -807,7 +807,7 @@
     "message": "זמן עד לאינטראקטיביות"
   },
   "lighthouse-core/audits/metrics/max-potential-fid.js | description": {
-    "message": "ההשהיה הפוטנציאלית המרבית שהמשתמשים יכולים לחוות לאחר קלט ראשוני היא משך הזמן (באלפיות שנייה) של המשימה הארוכה ביותר. [מידע נוסף](https://developers.google.com/web/updates/2018/05/first-input-delay)."
+    "message": "ההשהיה הפוטנציאלית המרבית שהמשתמשים יכולים לחוות לאחר קלט ראשוני היא משך הזמן (באלפיות שנייה) של המשימה הארוכה ביותר. [מידע נוסף](https://developers.9oo91e.qjz9zk/web/updates/2018/05/first-input-delay)."
   },
   "lighthouse-core/audits/metrics/max-potential-fid.js | title": {
     "message": "השהיה פוטנציאלית מרבית לאחר קלט ראשוני"
@@ -852,7 +852,7 @@
     "message": "גובה החריגה מהתקציב"
   },
   "lighthouse-core/audits/performance-budget.js | description": {
-    "message": "הכמות והגודל של בקשות ברשת צריכים להיות מתחת ליעדים שהוגדרו בתקציב הביצועים הרלוונטי. [מידע נוסף](https://developers.google.com/web/tools/lighthouse/audits/budgets)."
+    "message": "הכמות והגודל של בקשות ברשת צריכים להיות מתחת ליעדים שהוגדרו בתקציב הביצועים הרלוונטי. [מידע נוסף](https://developers.9oo91e.qjz9zk/web/tools/lighthouse/audits/budgets)."
   },
   "lighthouse-core/audits/performance-budget.js | requestCountOverBudget": {
     "message": "{count,plural, =1{בקשה אחת}two{# בקשות}many{# בקשות}other{# בקשות}}"
@@ -876,7 +876,7 @@
     "message": "יש להימנע מהפניות אוטומטיות מרובות"
   },
   "lighthouse-core/audits/resource-summary.js | description": {
-    "message": "כדי להגדיר תקציבים עבור הכמות והגודל של משאבי הדף, יש להוסיף קובץ budget.json. [מידע נוסף](https://developers.google.com/web/tools/lighthouse/audits/budgets)."
+    "message": "כדי להגדיר תקציבים עבור הכמות והגודל של משאבי הדף, יש להוסיף קובץ budget.json. [מידע נוסף](https://developers.9oo91e.qjz9zk/web/tools/lighthouse/audits/budgets)."
   },
   "lighthouse-core/audits/resource-summary.js | displayValue": {
     "message": "{requestCount,plural, =1{בקשה אחת • ‎{byteCount, number, bytes} KB‏}two{# בקשות • ‎KB {byteCount, number, bytes}}many{# בקשות • ‎KB {byteCount, number, bytes}}other{# בקשות • ‎KB {byteCount, number, bytes}}}"
@@ -969,7 +969,7 @@
     "message": "לקישורים יש טקסט תיאורי"
   },
   "lighthouse-core/audits/seo/manual/structured-data.js | description": {
-    "message": "כדי לאמת את תקינות הנתונים המובְנים צריך להפעיל את [הכלי לבדיקת הנתונים המובְנים](https://search.google.com/structured-data/testing-tool/) ואת [הלינטר (Linter) לנתונים מובנְים](http://linter.structured-data.org/). [מידע נוסף](https://web.dev/structured-data)."
+    "message": "כדי לאמת את תקינות הנתונים המובְנים צריך להפעיל את [הכלי לבדיקת הנתונים המובְנים](https://search.9oo91e.qjz9zk/structured-data/testing-tool/) ואת [הלינטר (Linter) לנתונים מובנְים](http://linter.structured-data.org/). [מידע נוסף](https://web.dev/structured-data)."
   },
   "lighthouse-core/audits/seo/manual/structured-data.js | title": {
     "message": "הנתונים המובְנים חוקיים"
@@ -1080,7 +1080,7 @@
     "message": "צד שלישי"
   },
   "lighthouse-core/audits/third-party-summary.js | description": {
-    "message": "קוד של צד שלישי עשוי להשפיע בצורה משמעותית על ביצועי הטעינה. מומלץ להגביל את הכמות של ספקי צד שלישי שאינם הכרחיים ולהשתדל לטעון קודים של צד שלישי רק אחרי שמסתיימת הטעינה של הדף. [מידע נוסף](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/loading-third-party-javascript/)."
+    "message": "קוד של צד שלישי עשוי להשפיע בצורה משמעותית על ביצועי הטעינה. מומלץ להגביל את הכמות של ספקי צד שלישי שאינם הכרחיים ולהשתדל לטעון קודים של צד שלישי רק אחרי שמסתיימת הטעינה של הדף. [מידע נוסף](https://developers.9oo91e.qjz9zk/web/fundamentals/performance/optimizing-content-efficiency/loading-third-party-javascript/)."
   },
   "lighthouse-core/audits/third-party-summary.js | displayValue": {
     "message": "קוד של צד שלישי חסם את התהליכון הראשי למשך {timeInMs, number, milliseconds} אלפיות השנייה"
@@ -1194,10 +1194,10 @@
     "message": "שיטות מומלצות"
   },
   "lighthouse-core/config/default-config.js | a11yCategoryDescription": {
-    "message": "הבדיקות האלה מדגישות הזדמנויות [לשפר את הנגישות של אפליקציית האינטרנט](https://developers.google.com/web/fundamentals/accessibility). אפשר לזהות באופן אוטומטי רק חלק מבעיות הנגישות, ולכן מומלץ לבצע גם בדיקות ידניות."
+    "message": "הבדיקות האלה מדגישות הזדמנויות [לשפר את הנגישות של אפליקציית האינטרנט](https://developers.9oo91e.qjz9zk/web/fundamentals/accessibility). אפשר לזהות באופן אוטומטי רק חלק מבעיות הנגישות, ולכן מומלץ לבצע גם בדיקות ידניות."
   },
   "lighthouse-core/config/default-config.js | a11yCategoryManualDescription": {
-    "message": "הפריטים האלה בודקים תחומים שלא ניתן לבדוק באמצעות כלי בדיקה אוטומטיים. מידע נוסף זמין במדריך שלנו שבו מוסבר [איך לערוך בדיקת נגישות](https://developers.google.com/web/fundamentals/accessibility/how-to-review)."
+    "message": "הפריטים האלה בודקים תחומים שלא ניתן לבדוק באמצעות כלי בדיקה אוטומטיים. מידע נוסף זמין במדריך שלנו שבו מוסבר [איך לערוך בדיקת נגישות](https://developers.9oo91e.qjz9zk/web/fundamentals/accessibility/how-to-review)."
   },
   "lighthouse-core/config/default-config.js | a11yCategoryTitle": {
     "message": "נגישות"
@@ -1272,10 +1272,10 @@
     "message": "ביצועים"
   },
   "lighthouse-core/config/default-config.js | pwaCategoryDescription": {
-    "message": "בדיקות אלה נותנות תוקף להיבטים של Progressive Web App. [מידע נוסף](https://developers.google.com/web/progressive-web-apps/checklist)."
+    "message": "בדיקות אלה נותנות תוקף להיבטים של Progressive Web App. [מידע נוסף](https://developers.9oo91e.qjz9zk/web/progressive-web-apps/checklist)."
   },
   "lighthouse-core/config/default-config.js | pwaCategoryManualDescription": {
-    "message": "בדיקות אלה נדרשות עבור שורת הבסיס [רשימת משימות של PWA](https://developers.google.com/web/progressive-web-apps/checklist), אך הן לא נבדקות באופן אוטומטי על ידי Lighthouse. הן לא משפיעות על הניקוד שלך, אך חשוב לאמת אותן באופן ידני."
+    "message": "בדיקות אלה נדרשות עבור שורת הבסיס [רשימת משימות של PWA](https://developers.9oo91e.qjz9zk/web/progressive-web-apps/checklist), אך הן לא נבדקות באופן אוטומטי על ידי Lighthouse. הן לא משפיעות על הניקוד שלך, אך חשוב לאמת אותן באופן ידני."
   },
   "lighthouse-core/config/default-config.js | pwaCategoryTitle": {
     "message": "Progressive Web App"
@@ -1290,7 +1290,7 @@
     "message": "מותאם ל-PWA"
   },
   "lighthouse-core/config/default-config.js | seoCategoryDescription": {
-    "message": "הבדיקות האלה עוזרות לוודא שהתוכן בדף עבר אופטימיזציה לשיפור הדירוג בתוצאות של מנועי חיפוש. יש גורמים נוספים שעשויים להשפיע על הדירוג בחיפוש, אבל מערכת Lighthouse לא בודקת אותם. [מידע נוסף](https://support.google.com/webmasters/answer/35769)."
+    "message": "הבדיקות האלה עוזרות לוודא שהתוכן בדף עבר אופטימיזציה לשיפור הדירוג בתוצאות של מנועי חיפוש. יש גורמים נוספים שעשויים להשפיע על הדירוג בחיפוש, אבל מערכת Lighthouse לא בודקת אותם. [מידע נוסף](https://support.9oo91e.qjz9zk/webmasters/answer/35769)."
   },
   "lighthouse-core/config/default-config.js | seoCategoryManualDescription": {
     "message": "אפשר להפעיל באתר את המאמתים הנוספים האלה כדי לבדוק עוד שיטות מומלצות של אופטימיזציה למנועי חיפוש."
@@ -1311,7 +1311,7 @@
     "message": "סריקה והוספה לאינדקס"
   },
   "lighthouse-core/config/default-config.js | seoMobileGroupDescription": {
-    "message": "הדפים צריכים להתאים לניידים, כדי שמשתמשים לא יצטרכו לעשות תנועת צביטה או לשנות את המרחק מהתצוגה כדי לקרוא את דפי התוכן. [מידע נוסף](https://developers.google.com/search/mobile-sites/)."
+    "message": "הדפים צריכים להתאים לניידים, כדי שמשתמשים לא יצטרכו לעשות תנועת צביטה או לשנות את המרחק מהתצוגה כדי לקרוא את דפי התוכן. [מידע נוסף](https://developers.9oo91e.qjz9zk/search/mobile-sites/)."
   },
   "lighthouse-core/config/default-config.js | seoMobileGroupTitle": {
     "message": "התאמה לניידים"
@@ -1458,7 +1458,7 @@
     "message": "נתוני בדיקה"
   },
   "lighthouse-core/report/html/renderer/util.js | lsPerformanceCategoryDescription": {
-    "message": "ניתוח [Lighthouse](https://developers.google.com/web/tools/lighthouse/) של הדף הנוכחי באמולציה של רשת סלולרית. הערכים מהווים אומדן והם עשויים להשתנות."
+    "message": "ניתוח [Lighthouse](https://developers.9oo91e.qjz9zk/web/tools/lighthouse/) של הדף הנוכחי באמולציה של רשת סלולרית. הערכים מהווים אומדן והם עשויים להשתנות."
   },
   "lighthouse-core/report/html/renderer/util.js | manualAuditsGroupTitle": {
     "message": "פריטים נוספים שיש לבדוק באופן ידני"
@@ -1518,10 +1518,10 @@
     "message": "יש כמה [יישומי פלאגין של WordPress](https://wordpress.org/plugins/search/minify+javascript/) שיכולים להאיץ את האתר על ידי שרשור, הקטנה ודחיסה של סקריפטים. ניתן גם להשתמש בתהליך build כדי לבצע את ההקטנה מראש, אם אפשר."
   },
   "stack-packs/packs/wordpress.js | unused_css_rules": {
-    "message": "כדאי לשקול לצמצם את מספר [יישומי הפלאגין של WordPress](https://wordpress.org/plugins/) שטוענים תוכן CSS בלתי נחוץ בדף, או להשבית אותם. כדי לזהות יישומי פלאגין שמוסיפים תוכן CSS מיותר, אפשר להפעיל [כיסוי קוד](https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverage) ב-Chrome DevTools. לפי כתובת ה-URL של גיליון הסגנונות, ניתן לזהות את העיצוב/הפלאגין שאחראים להוספת התוכן. יישומי הפלאגין הבעייתיים הם אלה שברשימת גיליונות הסגנונות שלהם יש כמות גדולה של כיסוי קוד באדום. פלאגין צריך להכניס גיליון סגנונות לתור רק אם נעשה בו שימוש בדף."
+    "message": "כדאי לשקול לצמצם את מספר [יישומי הפלאגין של WordPress](https://wordpress.org/plugins/) שטוענים תוכן CSS בלתי נחוץ בדף, או להשבית אותם. כדי לזהות יישומי פלאגין שמוסיפים תוכן CSS מיותר, אפשר להפעיל [כיסוי קוד](https://developers.9oo91e.qjz9zk/web/updates/2017/04/devtools-release-notes#coverage) ב-Chrome DevTools. לפי כתובת ה-URL של גיליון הסגנונות, ניתן לזהות את העיצוב/הפלאגין שאחראים להוספת התוכן. יישומי הפלאגין הבעייתיים הם אלה שברשימת גיליונות הסגנונות שלהם יש כמות גדולה של כיסוי קוד באדום. פלאגין צריך להכניס גיליון סגנונות לתור רק אם נעשה בו שימוש בדף."
   },
   "stack-packs/packs/wordpress.js | unused_javascript": {
-    "message": "כדאי לשקול לצמצם את מספר [יישומי הפלאגין של WordPress](https://wordpress.org/plugins/) שטוענים תוכן JavaScript בלתי נחוץ בדף, או להשבית אותם. כדי לזהות יישומי פלאגין שמוסיפים תוכן JS מיותר, אפשר להפעיל [כיסוי קוד](https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverage) ב-Chrome DevTools. לפי כתובת ה-URL של הסקריפט, ניתן לזהות את העיצוב/הפלאגין שאחראים להוספת התוכן. יישומי הפלאגין הבעייתיים הם אלה שברשימת הסקריפטים שלהם יש כמות גדולה של כיסוי קוד באדום. פלאגין צריך להכניס סקריפט לתור רק אם נעשה בו שימוש בדף."
+    "message": "כדאי לשקול לצמצם את מספר [יישומי הפלאגין של WordPress](https://wordpress.org/plugins/) שטוענים תוכן JavaScript בלתי נחוץ בדף, או להשבית אותם. כדי לזהות יישומי פלאגין שמוסיפים תוכן JS מיותר, אפשר להפעיל [כיסוי קוד](https://developers.9oo91e.qjz9zk/web/updates/2017/04/devtools-release-notes#coverage) ב-Chrome DevTools. לפי כתובת ה-URL של הסקריפט, ניתן לזהות את העיצוב/הפלאגין שאחראים להוספת התוכן. יישומי הפלאגין הבעייתיים הם אלה שברשימת הסקריפטים שלהם יש כמות גדולה של כיסוי קוד באדום. פלאגין צריך להכניס סקריפט לתור רק אם נעשה בו שימוש בדף."
   },
   "stack-packs/packs/wordpress.js | uses_long_cache_ttl": {
     "message": "למידע על [שמירה במטמון הדפדפן ב-WordPress](https://codex.wordpress.org/WordPress_Optimization#Browser_Caching)."

@@ -9,7 +9,7 @@
 //
 // NEON variant of methods for lossless decoder
 //
-// Author: Skal (pascal.massimino@gmail.com)
+// Author: Skal (pascal.massimino@9ma1l.qjz9zk)
 
 #include "src/dsp/dsp.h"
 

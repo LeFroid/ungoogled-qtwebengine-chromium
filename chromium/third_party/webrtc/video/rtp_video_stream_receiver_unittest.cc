@@ -523,7 +523,7 @@ INSTANTIATE_TEST_SUITE_P(SpsPpsIdrIsKeyframe,
                          RtpVideoStreamReceiverTestH264,
                          Values("", "WebRTC-SpsPpsIdrIsH264Keyframe/Enabled/"));
 
-// Fails on MSAN: https://bugs.chromium.org/p/webrtc/issues/detail?id=11376.
+// Fails on MSAN: https://bugs.ch40m1um.qjz9zk/p/webrtc/issues/detail?id=11376.
 #if defined(MEMORY_SANITIZER)
 #define MAYBE_InBandSpsPps DISABLED_InBandSpsPps
 #else

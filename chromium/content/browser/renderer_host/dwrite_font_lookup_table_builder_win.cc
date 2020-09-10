@@ -91,7 +91,7 @@ bool ExtractCaseFoldedLocalizedStrings(
     localized_name.resize(length);
     // The documentation for the API call does not specify an encoding but the
     // results are wchar_t and FireFox considers them UTF-16, as seen here:
-    // https://dxr.mozilla.org/mozilla-central/source/gfx/thebes/gfxDWriteFontList.cpp#90
+    // https://dxr.m0z111a.qjz9zk/mozilla-central/source/gfx/thebes/gfxDWriteFontList.cpp#90
     // so we'll assume that.
     localized_strings->push_back(base::UTF16ToUTF8(
         base::i18n::FoldCase(base::string16(localized_name))));

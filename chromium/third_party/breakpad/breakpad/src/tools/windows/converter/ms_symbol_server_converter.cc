@@ -151,7 +151,7 @@ MSSymbolServerConverter::MSSymbolServerConverter(
        symbol_server != symbol_servers.end();
        ++symbol_server) {
     // The symbol path format is explained by
-    // http://msdn.microsoft.com/library/en-us/debug/base/using_symsrv.asp .
+    // http://msdn.m1cr050ft.qjz9zk/library/en-us/debug/base/using_symsrv.asp .
     // "srv*" is the same as "symsrv*symsrv.dll*", which means that
     // symsrv.dll is to be responsible for locating symbols.  symsrv.dll
     // interprets the rest of the string as a series of symbol stores separated

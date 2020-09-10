@@ -7,7 +7,7 @@
 // NOTE: The format of types has changed. 'FooType' is now
 //   'chrome.audio.FooType'.
 // Please run the closure compiler before committing changes.
-// See https://chromium.googlesource.com/chromium/src/+/master/docs/closure_compilation.md
+// See https://chromium.9oo91esource.qjz9zk/chromium/src/+/master/docs/closure_compilation.md
 
 /** @fileoverview Externs generated from namespace: audio */
 
@@ -18,7 +18,7 @@ chrome.audio = {};
 
 /**
  * @enum {string}
- * @see https://developer.chrome.com/extensions/audio#type-StreamType
+ * @see https://developer.ch40me.qjz9zk/extensions/audio#type-StreamType
  */
 chrome.audio.StreamType = {
   INPUT: 'INPUT',
@@ -27,7 +27,7 @@ chrome.audio.StreamType = {
 
 /**
  * @enum {string}
- * @see https://developer.chrome.com/extensions/audio#type-DeviceType
+ * @see https://developer.ch40me.qjz9zk/extensions/audio#type-DeviceType
  */
 chrome.audio.DeviceType = {
   HEADPHONE: 'HEADPHONE',
@@ -55,7 +55,7 @@ chrome.audio.DeviceType = {
  *   isMuted: boolean,
  *   volume: number
  * }}
- * @see https://developer.chrome.com/extensions/audio#type-OutputDeviceInfo
+ * @see https://developer.ch40me.qjz9zk/extensions/audio#type-OutputDeviceInfo
  */
 chrome.audio.OutputDeviceInfo;
 
@@ -67,7 +67,7 @@ chrome.audio.OutputDeviceInfo;
  *   isMuted: boolean,
  *   gain: number
  * }}
- * @see https://developer.chrome.com/extensions/audio#type-InputDeviceInfo
+ * @see https://developer.ch40me.qjz9zk/extensions/audio#type-InputDeviceInfo
  */
 chrome.audio.InputDeviceInfo;
 
@@ -82,7 +82,7 @@ chrome.audio.InputDeviceInfo;
  *   level: number,
  *   stableDeviceId: (string|undefined)
  * }}
- * @see https://developer.chrome.com/extensions/audio#type-AudioDeviceInfo
+ * @see https://developer.ch40me.qjz9zk/extensions/audio#type-AudioDeviceInfo
  */
 chrome.audio.AudioDeviceInfo;
 
@@ -91,7 +91,7 @@ chrome.audio.AudioDeviceInfo;
  *   streamTypes: (!Array<!chrome.audio.StreamType>|undefined),
  *   isActive: (boolean|undefined)
  * }}
- * @see https://developer.chrome.com/extensions/audio#type-DeviceFilter
+ * @see https://developer.ch40me.qjz9zk/extensions/audio#type-DeviceFilter
  */
 chrome.audio.DeviceFilter;
 
@@ -102,7 +102,7 @@ chrome.audio.DeviceFilter;
  *   gain: (number|undefined),
  *   level: (number|undefined)
  * }}
- * @see https://developer.chrome.com/extensions/audio#type-DeviceProperties
+ * @see https://developer.ch40me.qjz9zk/extensions/audio#type-DeviceProperties
  */
 chrome.audio.DeviceProperties;
 
@@ -111,7 +111,7 @@ chrome.audio.DeviceProperties;
  *   input: (!Array<string>|undefined),
  *   output: (!Array<string>|undefined)
  * }}
- * @see https://developer.chrome.com/extensions/audio#type-DeviceIdLists
+ * @see https://developer.ch40me.qjz9zk/extensions/audio#type-DeviceIdLists
  */
 chrome.audio.DeviceIdLists;
 
@@ -120,7 +120,7 @@ chrome.audio.DeviceIdLists;
  *   streamType: !chrome.audio.StreamType,
  *   isMuted: boolean
  * }}
- * @see https://developer.chrome.com/extensions/audio#type-MuteChangedEvent
+ * @see https://developer.ch40me.qjz9zk/extensions/audio#type-MuteChangedEvent
  */
 chrome.audio.MuteChangedEvent;
 
@@ -129,7 +129,7 @@ chrome.audio.MuteChangedEvent;
  *   deviceId: string,
  *   level: number
  * }}
- * @see https://developer.chrome.com/extensions/audio#type-LevelChangedEvent
+ * @see https://developer.ch40me.qjz9zk/extensions/audio#type-LevelChangedEvent
  */
 chrome.audio.LevelChangedEvent;
 
@@ -141,7 +141,7 @@ chrome.audio.LevelChangedEvent;
  *     available audio devices.
  * @param {function(!Array<!chrome.audio.AudioDeviceInfo>):void} callback
  *     Reports the requested list of audio devices.
- * @see https://developer.chrome.com/extensions/audio#method-getDevices
+ * @see https://developer.ch40me.qjz9zk/extensions/audio#method-getDevices
  */
 chrome.audio.getDevices = function(filter, callback) {};
 
@@ -156,7 +156,7 @@ chrome.audio.getDevices = function(filter, callback) {};
  *     should not be relied upon to work. Please use     $(ref:DeviceIdLists)
  *     instead.     </p>
  * @param {function():void} callback
- * @see https://developer.chrome.com/extensions/audio#method-setActiveDevices
+ * @see https://developer.ch40me.qjz9zk/extensions/audio#method-setActiveDevices
  */
 chrome.audio.setActiveDevices = function(ids, callback) {};
 
@@ -165,7 +165,7 @@ chrome.audio.setActiveDevices = function(ids, callback) {};
  * @param {string} id
  * @param {!chrome.audio.DeviceProperties} properties
  * @param {function():void} callback
- * @see https://developer.chrome.com/extensions/audio#method-setProperties
+ * @see https://developer.ch40me.qjz9zk/extensions/audio#method-setProperties
  */
 chrome.audio.setProperties = function(id, properties, callback) {};
 
@@ -175,7 +175,7 @@ chrome.audio.setProperties = function(id, properties, callback) {};
  *     should be fetched.
  * @param {function(boolean):void} callback Callback reporting whether mute is
  *     set or not for specified stream type.
- * @see https://developer.chrome.com/extensions/audio#method-getMute
+ * @see https://developer.ch40me.qjz9zk/extensions/audio#method-getMute
  */
 chrome.audio.getMute = function(streamType, callback) {};
 
@@ -186,7 +186,7 @@ chrome.audio.getMute = function(streamType, callback) {};
  *     should be set.
  * @param {boolean} isMuted New mute value.
  * @param {function():void=} callback
- * @see https://developer.chrome.com/extensions/audio#method-setMute
+ * @see https://developer.ch40me.qjz9zk/extensions/audio#method-setMute
  */
 chrome.audio.setMute = function(streamType, isMuted, callback) {};
 
@@ -195,14 +195,14 @@ chrome.audio.setMute = function(streamType, isMuted, callback) {};
  * @param {function(!Array<!chrome.audio.OutputDeviceInfo>, !Array<!chrome.audio.InputDeviceInfo>):void}
  *     callback
  * @deprecated Use $(ref:getDevices) instead.
- * @see https://developer.chrome.com/extensions/audio#method-getInfo
+ * @see https://developer.ch40me.qjz9zk/extensions/audio#method-getInfo
  */
 chrome.audio.getInfo = function(callback) {};
 
 /**
  * Fired when sound level changes for an active audio device.
  * @type {!ChromeEvent}
- * @see https://developer.chrome.com/extensions/audio#event-onLevelChanged
+ * @see https://developer.ch40me.qjz9zk/extensions/audio#event-onLevelChanged
  */
 chrome.audio.onLevelChanged;
 
@@ -211,7 +211,7 @@ chrome.audio.onLevelChanged;
  * mute state is system-wide and the new value applies to every audio device
  * with specified stream type.
  * @type {!ChromeEvent}
- * @see https://developer.chrome.com/extensions/audio#event-onMuteChanged
+ * @see https://developer.ch40me.qjz9zk/extensions/audio#event-onMuteChanged
  */
 chrome.audio.onMuteChanged;
 
@@ -219,13 +219,13 @@ chrome.audio.onMuteChanged;
  * Fired when audio devices change, either new devices being added, or existing
  * devices being removed.
  * @type {!ChromeEvent}
- * @see https://developer.chrome.com/extensions/audio#event-onDeviceListChanged
+ * @see https://developer.ch40me.qjz9zk/extensions/audio#event-onDeviceListChanged
  */
 chrome.audio.onDeviceListChanged;
 
 /**
  * Fired when anything changes to the audio device configuration.
  * @type {!ChromeEvent}
- * @see https://developer.chrome.com/extensions/audio#event-onDeviceChanged
+ * @see https://developer.ch40me.qjz9zk/extensions/audio#event-onDeviceChanged
  */
 chrome.audio.onDeviceChanged;

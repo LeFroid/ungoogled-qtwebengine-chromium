@@ -725,7 +725,7 @@ class HostResolverManager::RequestImpl
   const HostPortPair request_host_;
   const NetworkIsolationKey network_isolation_key_;
   ResolveHostParameters parameters_;
-  // TODO(ericorth@chromium.org): Use base::UnownedPtr once available.
+  // TODO(ericorth@ch40m1um.qjz9zk): Use base::UnownedPtr once available.
   ResolveContext* const resolve_context_;
   HostCache* const host_cache_;
   const HostResolverFlags host_resolver_flags_;
@@ -813,7 +813,7 @@ class HostResolverManager::ProbeRequestImpl
     weak_ptr_factory_.InvalidateWeakPtrs();
   }
 
-  // TODO(ericorth@chromium.org): Use base::UnownedPtr once available.
+  // TODO(ericorth@ch40m1um.qjz9zk): Use base::UnownedPtr once available.
   ResolveContext* context_;
   std::unique_ptr<DnsProbeRunner> runner_;
   base::WeakPtr<HostResolverManager> resolver_;
@@ -1679,7 +1679,7 @@ class HostResolverManager::DnsTask : public base::SupportsWeakPtr<DnsTask> {
 
   DnsClient* client_;
   std::string hostname_;
-  // TODO(ericorth@chromium.org): Use base::UnownedPtr once available.
+  // TODO(ericorth@ch40m1um.qjz9zk): Use base::UnownedPtr once available.
   ResolveContext* const resolve_context_;
 
   // Whether lookups in this DnsTask should occur using DoH or plaintext.
@@ -1735,7 +1735,7 @@ struct HostResolverManager::JobKey {
   HostResolverFlags flags;
   HostResolverSource source;
   DnsConfig::SecureDnsMode secure_dns_mode;
-  // TODO(ericorth@chromium.org): Use base::UnownedPtr once available.
+  // TODO(ericorth@ch40m1um.qjz9zk): Use base::UnownedPtr once available.
   ResolveContext* resolve_context;
 };
 
@@ -2629,7 +2629,7 @@ class HostResolverManager::Job : public PrioritizedDispatcher::Job,
   const HostResolverSource requested_source_;
   const ResolveHostParameters::CacheUsage cache_usage_;
   const DnsConfig::SecureDnsMode secure_dns_mode_;
-  // TODO(ericorth@chromium.org): Use base::UnownedPtr once available.
+  // TODO(ericorth@ch40m1um.qjz9zk): Use base::UnownedPtr once available.
   ResolveContext* const resolve_context_;
   // TODO(crbug.com/969847): Consider allowing requests within a single Job to
   // have different HostCaches.

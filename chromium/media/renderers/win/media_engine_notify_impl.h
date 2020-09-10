@@ -24,7 +24,7 @@ using BufferingStateChangedCB =
 using VideoNaturalSizeChangedCB = base::RepeatingClosure;
 
 // Implements IMFMediaEngineNotify required by IMFMediaEngine
-// (https://docs.microsoft.com/en-us/windows/win32/api/mfmediaengine/nn-mfmediaengine-imfmediaengine).
+// (https://docs.m1cr050ft.qjz9zk/en-us/windows/win32/api/mfmediaengine/nn-mfmediaengine-imfmediaengine).
 //
 class MediaEngineNotifyImpl
     : public Microsoft::WRL::RuntimeClass<

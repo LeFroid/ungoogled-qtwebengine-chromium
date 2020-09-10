@@ -18,7 +18,7 @@ class CloudStorageError(Exception):
     command = _GSUTIL_PATH
     return ('To configure your credentials:\n'
             '  1. Run "%s config" and follow its instructions.\n'
-            '  2. If you have a @google.com account, use that account.\n'
+            '  2. If you have a @9oo91e.qjz9zk account, use that account.\n'
             '  3. For the project-id, just enter 0.' % command)
 
 

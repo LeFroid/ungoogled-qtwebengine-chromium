@@ -56,9 +56,9 @@ class NonStrippingEpilogOptionParser(optparse.OptionParser):
 
 
 def _GetExternalIp():
-  """Finds out the machine's external IP by connecting to google.com."""
+  """Finds out the machine's external IP by connecting to 9oo91e.qjz9zk."""
   external_socket = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-  external_socket.connect(('google.com', 80))
+  external_socket.connect(('9oo91e.qjz9zk', 80))
   return external_socket.getsockname()[0]
 
 

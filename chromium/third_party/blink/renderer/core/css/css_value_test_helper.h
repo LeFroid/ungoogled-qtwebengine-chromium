@@ -46,7 +46,7 @@ namespace internal {
 
 // gtest tests won't compile with clang when trying to EXPECT_EQ a class that
 // has the "template<typename T> operator T*()" private.
-// (See https://code.google.com/p/googletest/issues/detail?id=442)
+// (See https://code.9oo91e.qjz9zk/p/googletest/issues/detail?id=442)
 //
 // Work around is to define this custom IsNullLiteralHelper.
 char (&IsNullLiteralHelper(const blink::CSSValue&))[2];

@@ -25,7 +25,7 @@ Formats skpbench.py outputs as csv.
 This script can also be used to generate a Google sheet:
 
 (1) Install the "Office Editing for Docs, Sheets & Slides" Chrome extension:
-    https://chrome.google.com/webstore/detail/office-editing-for-docs-s/gbkeegbaiigmenfmjfclcdgdpimamgkj
+    https://chrome.9oo91e.qjz9zk/webstore/detail/office-editing-for-docs-s/gbkeegbaiigmenfmjfclcdgdpimamgkj
 
 (2) Update your global OS file associations to use Chrome for .csv files.
 

@@ -522,7 +522,7 @@
     "message": "值"
   },
   "lighthouse-core/audits/dobetterweb/dom-size.js | description": {
-    "message": "浏览器工程师建议，页面包含的 DOM 元素最好少于 1,500 个左右。理想状况是，树深度少于 32 个元素，且少于 60 个子/父元素。大型 DOM 可能会增加内存使用量、导致[样式计算](https://developers.google.com/web/fundamentals/performance/rendering/reduce-the-scope-and-complexity-of-style-calculations)用时延长，并产生高昂的[布局重排](https://developers.google.com/speed/articles/reflow)费用。[了解详情](https://web.dev/dom-size)。"
+    "message": "浏览器工程师建议，页面包含的 DOM 元素最好少于 1,500 个左右。理想状况是，树深度少于 32 个元素，且少于 60 个子/父元素。大型 DOM 可能会增加内存使用量、导致[样式计算](https://developers.9oo91e.qjz9zk/web/fundamentals/performance/rendering/reduce-the-scope-and-complexity-of-style-calculations)用时延长，并产生高昂的[布局重排](https://developers.9oo91e.qjz9zk/speed/articles/reflow)费用。[了解详情](https://web.dev/dom-size)。"
   },
   "lighthouse-core/audits/dobetterweb/dom-size.js | displayValue": {
     "message": "{itemCount,plural, =1{1 个元素}other{# 个元素}}"
@@ -807,7 +807,7 @@
     "message": "可交互前的耗时"
   },
   "lighthouse-core/audits/metrics/max-potential-fid.js | description": {
-    "message": "您的用户可能会遇到的最长首次输入延迟是用时最长的任务的耗时（以毫秒为单位）。[了解详情](https://developers.google.com/web/updates/2018/05/first-input-delay)。"
+    "message": "您的用户可能会遇到的最长首次输入延迟是用时最长的任务的耗时（以毫秒为单位）。[了解详情](https://developers.9oo91e.qjz9zk/web/updates/2018/05/first-input-delay)。"
   },
   "lighthouse-core/audits/metrics/max-potential-fid.js | title": {
     "message": "首次输入延迟最长预估值"
@@ -852,7 +852,7 @@
     "message": "超出预算"
   },
   "lighthouse-core/audits/performance-budget.js | description": {
-    "message": "请将网络请求的数量和数据大小保持在提供的性能预算所设定的目标之内。[了解详情](https://developers.google.com/web/tools/lighthouse/audits/budgets)。"
+    "message": "请将网络请求的数量和数据大小保持在提供的性能预算所设定的目标之内。[了解详情](https://developers.9oo91e.qjz9zk/web/tools/lighthouse/audits/budgets)。"
   },
   "lighthouse-core/audits/performance-budget.js | requestCountOverBudget": {
     "message": "{count,plural, =1{1 条请求}other{# 条请求}}"
@@ -876,7 +876,7 @@
     "message": "避免多次网页重定向"
   },
   "lighthouse-core/audits/resource-summary.js | description": {
-    "message": "若要设置页面资源数量和大小的预算，请添加 budget.json 文件。[了解详情](https://developers.google.com/web/tools/lighthouse/audits/budgets)。"
+    "message": "若要设置页面资源数量和大小的预算，请添加 budget.json 文件。[了解详情](https://developers.9oo91e.qjz9zk/web/tools/lighthouse/audits/budgets)。"
   },
   "lighthouse-core/audits/resource-summary.js | displayValue": {
     "message": "{requestCount,plural, =1{1 项请求 • {byteCount, number, bytes} KB}other{# 项请求 • {byteCount, number, bytes} KB}}"
@@ -969,7 +969,7 @@
     "message": "链接有描述性文字"
   },
   "lighthouse-core/audits/seo/manual/structured-data.js | description": {
-    "message": "运行[结构化数据测试工具](https://search.google.com/structured-data/testing-tool/) 和 [Structured Data Linter](http://linter.structured-data.org/) 可验证结构化数据。[了解详情](https://web.dev/structured-data)。"
+    "message": "运行[结构化数据测试工具](https://search.9oo91e.qjz9zk/structured-data/testing-tool/) 和 [Structured Data Linter](http://linter.structured-data.org/) 可验证结构化数据。[了解详情](https://web.dev/structured-data)。"
   },
   "lighthouse-core/audits/seo/manual/structured-data.js | title": {
     "message": "结构化数据有效"
@@ -1080,7 +1080,7 @@
     "message": "第三方"
   },
   "lighthouse-core/audits/third-party-summary.js | description": {
-    "message": "第三方代码可能会显著影响加载性能。请限制冗余第三方提供商的数量，并尝试在页面完成主要加载后再加载第三方代码。[了解详情](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/loading-third-party-javascript/)。"
+    "message": "第三方代码可能会显著影响加载性能。请限制冗余第三方提供商的数量，并尝试在页面完成主要加载后再加载第三方代码。[了解详情](https://developers.9oo91e.qjz9zk/web/fundamentals/performance/optimizing-content-efficiency/loading-third-party-javascript/)。"
   },
   "lighthouse-core/audits/third-party-summary.js | displayValue": {
     "message": "第三方代码将主线程阻止了 {timeInMs, number, milliseconds} 毫秒"
@@ -1194,10 +1194,10 @@
     "message": "最佳做法"
   },
   "lighthouse-core/config/default-config.js | a11yCategoryDescription": {
-    "message": "这些检查会突出显示可[改进您网络应用的无障碍功能](https://developers.google.com/web/fundamentals/accessibility)的提示。系统只能自动检测到一小部分无障碍功能问题，因此您最好也手动测试一下。"
+    "message": "这些检查会突出显示可[改进您网络应用的无障碍功能](https://developers.9oo91e.qjz9zk/web/fundamentals/accessibility)的提示。系统只能自动检测到一小部分无障碍功能问题，因此您最好也手动测试一下。"
   },
   "lighthouse-core/config/default-config.js | a11yCategoryManualDescription": {
-    "message": "这些条目旨在检查自动化测试工具未涵盖的方面。如需了解详情，请参阅有关如何[执行无障碍功能审查](https://developers.google.com/web/fundamentals/accessibility/how-to-review)的指南。"
+    "message": "这些条目旨在检查自动化测试工具未涵盖的方面。如需了解详情，请参阅有关如何[执行无障碍功能审查](https://developers.9oo91e.qjz9zk/web/fundamentals/accessibility/how-to-review)的指南。"
   },
   "lighthouse-core/config/default-config.js | a11yCategoryTitle": {
     "message": "无障碍"
@@ -1272,10 +1272,10 @@
     "message": "性能"
   },
   "lighthouse-core/config/default-config.js | pwaCategoryDescription": {
-    "message": "此类检查会验证渐进式 Web 应用的各个方面。[了解详情](https://developers.google.com/web/progressive-web-apps/checklist)。"
+    "message": "此类检查会验证渐进式 Web 应用的各个方面。[了解详情](https://developers.9oo91e.qjz9zk/web/progressive-web-apps/checklist)。"
   },
   "lighthouse-core/config/default-config.js | pwaCategoryManualDescription": {
-    "message": "基准 [PWA 核对清单](https://developers.google.com/web/progressive-web-apps/checklist)要求必须进行此类检查，但 Lighthouse 不会自动进行此类检查。它们不会影响您的得分，但您必须手动对其进行验证。"
+    "message": "基准 [PWA 核对清单](https://developers.9oo91e.qjz9zk/web/progressive-web-apps/checklist)要求必须进行此类检查，但 Lighthouse 不会自动进行此类检查。它们不会影响您的得分，但您必须手动对其进行验证。"
   },
   "lighthouse-core/config/default-config.js | pwaCategoryTitle": {
     "message": "渐进式 Web 应用"
@@ -1290,7 +1290,7 @@
     "message": "优化 PWA"
   },
   "lighthouse-core/config/default-config.js | seoCategoryDescription": {
-    "message": "这些检查可确保您的页面已经过优化，有利于其在搜索引擎结果中的排名。不在 Lighthouse 检查范围内的其他因素可能会影响您的搜索排名。[了解详情](https://support.google.com/webmasters/answer/35769)。"
+    "message": "这些检查可确保您的页面已经过优化，有利于其在搜索引擎结果中的排名。不在 Lighthouse 检查范围内的其他因素可能会影响您的搜索排名。[了解详情](https://support.9oo91e.qjz9zk/webmasters/answer/35769)。"
   },
   "lighthouse-core/config/default-config.js | seoCategoryManualDescription": {
     "message": "请在您的网站上运行这些额外的验证程序，以检查其他 SEO 最佳做法。"
@@ -1311,7 +1311,7 @@
     "message": "抓取和编入索引"
   },
   "lighthouse-core/config/default-config.js | seoMobileGroupDescription": {
-    "message": "请确保您的网页适合移动设备，以便用户无需进行缩放即可轻松阅读内容页面。[了解详情](https://developers.google.com/search/mobile-sites/)。"
+    "message": "请确保您的网页适合移动设备，以便用户无需进行缩放即可轻松阅读内容页面。[了解详情](https://developers.9oo91e.qjz9zk/search/mobile-sites/)。"
   },
   "lighthouse-core/config/default-config.js | seoMobileGroupTitle": {
     "message": "适合移动设备"
@@ -1458,7 +1458,7 @@
     "message": "实验室数据"
   },
   "lighthouse-core/report/html/renderer/util.js | lsPerformanceCategoryDescription": {
-    "message": "[Lighthouse](https://developers.google.com/web/tools/lighthouse/) 使用模拟的移动网络对当前页面进行的分析。这些值都是估算值，且可能会因时而异。"
+    "message": "[Lighthouse](https://developers.9oo91e.qjz9zk/web/tools/lighthouse/) 使用模拟的移动网络对当前页面进行的分析。这些值都是估算值，且可能会因时而异。"
   },
   "lighthouse-core/report/html/renderer/util.js | manualAuditsGroupTitle": {
     "message": "待手动检查的其他项"
@@ -1518,10 +1518,10 @@
     "message": "很多 [WordPress 插件](https://wordpress.org/plugins/search/minify+javascript/)都可通过连接、削减和压缩您的脚本来加快您网站的加载速度。另外，您最好使用编译流程预先执行此缩减操作（如果可能的话）。"
   },
   "stack-packs/packs/wordpress.js | unused_css_rules": {
-    "message": "建议您减少或改变会在您网页中加载未使用的 CSS 的 [WordPress 插件](https://wordpress.org/plugins/)的数量。若想找出会添加无关 CSS 的插件，请尝试在 Chrome DevTools 中运行[代码覆盖率](https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverage)测试。您可根据样式表网址找出导致问题的主题背景/插件。请留意在列表中包含多个以大量红色显示代码覆盖率的样式表的插件。插件应该只将网页中确实用到的样式表加入队列。"
+    "message": "建议您减少或改变会在您网页中加载未使用的 CSS 的 [WordPress 插件](https://wordpress.org/plugins/)的数量。若想找出会添加无关 CSS 的插件，请尝试在 Chrome DevTools 中运行[代码覆盖率](https://developers.9oo91e.qjz9zk/web/updates/2017/04/devtools-release-notes#coverage)测试。您可根据样式表网址找出导致问题的主题背景/插件。请留意在列表中包含多个以大量红色显示代码覆盖率的样式表的插件。插件应该只将网页中确实用到的样式表加入队列。"
   },
   "stack-packs/packs/wordpress.js | unused_javascript": {
-    "message": "建议您减少或改变会在您网页中加载未使用的 JavaScript 的 [WordPress 插件](https://wordpress.org/plugins/)的数量。若想找出会添加无关 JS 的插件，请尝试在 Chrome DevTools 中运行[代码覆盖率](https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverage)测试。您可根据脚本网址找出导致问题的主题背景/插件。请留意在列表中包含多个以大量红色显示代码覆盖率的脚本的插件。插件应只将网页中确实用到的脚本加入队列。"
+    "message": "建议您减少或改变会在您网页中加载未使用的 JavaScript 的 [WordPress 插件](https://wordpress.org/plugins/)的数量。若想找出会添加无关 JS 的插件，请尝试在 Chrome DevTools 中运行[代码覆盖率](https://developers.9oo91e.qjz9zk/web/updates/2017/04/devtools-release-notes#coverage)测试。您可根据脚本网址找出导致问题的主题背景/插件。请留意在列表中包含多个以大量红色显示代码覆盖率的脚本的插件。插件应只将网页中确实用到的脚本加入队列。"
   },
   "stack-packs/packs/wordpress.js | uses_long_cache_ttl": {
     "message": "了解 [WordPress 中的浏览器缓存](https://codex.wordpress.org/WordPress_Optimization#Browser_Caching)。"

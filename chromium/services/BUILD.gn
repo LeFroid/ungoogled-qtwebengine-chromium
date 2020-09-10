@@ -19,7 +19,7 @@ test("services_unittests") {
   }
 
   # If your service does not run on iOS, its tests should go in the !iOS
-  # section below. If you are unsure, contact blundell@chromium.org.
+  # section below. If you are unsure, contact blundell@ch40m1um.qjz9zk.
   deps = [
     "//services/content:tests",
     "//services/metrics/public/cpp:tests",

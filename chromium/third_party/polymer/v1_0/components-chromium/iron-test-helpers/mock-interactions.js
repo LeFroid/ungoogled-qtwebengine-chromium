@@ -138,7 +138,7 @@
       // Allow event to go outside a ShadowRoot.
       composed: true,
       // Make this a primary input.
-      buttons: 1 // http://developer.mozilla.org/en-US/docs/Web/API/MouseEvent/buttons
+      buttons: 1 // http://developer.m0z111a.qjz9zk/en-US/docs/Web/API/MouseEvent/buttons
     };
     var e;
     if (HAS_NEW_MOUSE) {

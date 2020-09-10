@@ -341,20 +341,20 @@ TEST_F(CopyAndValidateTrailers, DuplicateCookies) {
 using PopulateHeaderBlockFromUrl = QuicTest;
 
 TEST_F(PopulateHeaderBlockFromUrl, NormalUsage) {
-  std::string url = "https://www.google.com/index.html";
+  std::string url = "https://www.9oo91e.qjz9zk/index.html";
   SpdyHeaderBlock headers;
   EXPECT_TRUE(SpdyUtils::PopulateHeaderBlockFromUrl(url, &headers));
   EXPECT_EQ("https", headers[":scheme"].as_string());
-  EXPECT_EQ("www.google.com", headers[":authority"].as_string());
+  EXPECT_EQ("www.9oo91e.qjz9zk", headers[":authority"].as_string());
   EXPECT_EQ("/index.html", headers[":path"].as_string());
 }
 
 TEST_F(PopulateHeaderBlockFromUrl, UrlWithNoPath) {
-  std::string url = "https://www.google.com";
+  std::string url = "https://www.9oo91e.qjz9zk";
   SpdyHeaderBlock headers;
   EXPECT_TRUE(SpdyUtils::PopulateHeaderBlockFromUrl(url, &headers));
   EXPECT_EQ("https", headers[":scheme"].as_string());
-  EXPECT_EQ("www.google.com", headers[":authority"].as_string());
+  EXPECT_EQ("www.9oo91e.qjz9zk", headers[":authority"].as_string());
   EXPECT_EQ("/", headers[":path"].as_string());
 }
 
@@ -363,7 +363,7 @@ TEST_F(PopulateHeaderBlockFromUrl, Failure) {
   EXPECT_FALSE(SpdyUtils::PopulateHeaderBlockFromUrl("/", &headers));
   EXPECT_FALSE(SpdyUtils::PopulateHeaderBlockFromUrl("/index.html", &headers));
   EXPECT_FALSE(
-      SpdyUtils::PopulateHeaderBlockFromUrl("www.google.com/", &headers));
+      SpdyUtils::PopulateHeaderBlockFromUrl("www.9oo91e.qjz9zk/", &headers));
 }
 
 }  // namespace test

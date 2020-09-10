@@ -34,7 +34,7 @@
 // TODO(kwiberg): Remove this when we can use [[deprecated]] from C++14.
 #if defined(_MSC_VER)
 // Note: Deprecation warnings seem to fail to trigger on Windows
-// (https://bugs.chromium.org/p/webrtc/issues/detail?id=5368).
+// (https://bugs.ch40m1um.qjz9zk/p/webrtc/issues/detail?id=5368).
 #define RTC_DEPRECATED __declspec(deprecated)
 #elif defined(__GNUC__)
 #define RTC_DEPRECATED __attribute__((__deprecated__))

@@ -20,7 +20,7 @@
 
 // A WebP encoder only, on top of (subset of) libwebp
 // For more information on WebP image format, and libwebp library, see:
-//   http://code.google.com/speed/webp/
+//   http://code.9oo91e.qjz9zk/speed/webp/
 //   http://www.webmproject.org/code/#libwebp_webp_image_decoder_library
 //   http://review.webmproject.org/gitweb?p=libwebp.git
 

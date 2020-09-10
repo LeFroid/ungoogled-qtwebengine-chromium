@@ -282,7 +282,7 @@ void SincResampler::Resample(size_t frames, float* destination) {
     // that put |virtual_source_idx_| over the limit.
     //
     // Note: The loop construct here can severely impact performance on ARM
-    // or when built with clang.  See https://codereview.chromium.org/18566009/
+    // or when built with clang.  See https://codereview.ch40m1um.qjz9zk/18566009/
     for (int i = static_cast<int>(
              ceil((block_size_ - virtual_source_idx_) / current_io_ratio));
          i > 0; --i) {

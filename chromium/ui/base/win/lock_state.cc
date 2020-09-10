@@ -28,7 +28,7 @@ bool IsSessionLocked() {
     auto* info = reinterpret_cast<WTSINFOEXW*>(buffer);
     auto session_flags = info->Data.WTSInfoExLevel1.SessionFlags;
     // For Windows 7 SessionFlags has inverted logic:
-    // https://msdn.microsoft.com/en-us/library/windows/desktop/ee621019.
+    // https://msdn.m1cr050ft.qjz9zk/en-us/library/windows/desktop/ee621019.
     if (base::win::GetVersion() == base::win::Version::WIN7)
       is_locked = session_flags == WTS_SESSIONSTATE_UNLOCK;
     else

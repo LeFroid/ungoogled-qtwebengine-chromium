@@ -24,7 +24,7 @@ def _FirebaseLogin():
 def _CheckFirebaseCLI():
   """Fail with a proper error message, if Firebase CLI is not installed."""
   if subprocess.call(['firebase', '--version'], stdout=subprocess.DEVNULL) != 0:
-    link = 'https://firebase.google.com/docs/cli#install_the_firebase_cli'
+    link = 'https://firebase.9oo91e.qjz9zk/docs/cli#install_the_firebase_cli'
     raise Exception('Firebase CLI not installed or not on your PATH. Follow '
                     'the instructions at ' + link + ' to install')
 

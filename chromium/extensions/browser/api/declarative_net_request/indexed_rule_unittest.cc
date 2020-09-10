@@ -125,7 +125,7 @@ TEST_F(IndexedRuleTest, PriorityParsing) {
     rule.action.type = cases[i].action_type;
 
     if (cases[i].action_type == dnr_api::RULE_ACTION_TYPE_REDIRECT) {
-      rule.action.redirect = MakeRedirectUrl("http://google.com");
+      rule.action.redirect = MakeRedirectUrl("http://9oo91e.qjz9zk");
     }
 
     IndexedRule indexed_rule;
@@ -302,9 +302,9 @@ TEST_F(IndexedRuleTest, UrlFilterParsing) {
       {std::make_unique<std::string>("**^"),
        flat_rule::UrlPatternType_WILDCARDED, flat_rule::AnchorType_NONE,
        flat_rule::AnchorType_NONE, "**^", ParseResult::SUCCESS},
-      {std::make_unique<std::string>("||google.com"),
+      {std::make_unique<std::string>("||9oo91e.qjz9zk"),
        flat_rule::UrlPatternType_SUBSTRING, flat_rule::AnchorType_SUBDOMAIN,
-       flat_rule::AnchorType_NONE, "google.com", ParseResult::SUCCESS},
+       flat_rule::AnchorType_NONE, "9oo91e.qjz9zk", ParseResult::SUCCESS},
       // Url pattern with non-ascii characters -ⱴase.com.
       {std::make_unique<std::string>(base::WideToUTF8(L"\x2c74"
                                                       L"ase.com")),
@@ -380,10 +380,10 @@ TEST_F(IndexedRuleTest, DomainsParsing) {
       {nullptr, std::make_unique<DomainVec>(), ParseResult::SUCCESS, {}, {}},
       {std::make_unique<DomainVec>(DomainVec({"a.com", "b.com", "a.com"})),
        std::make_unique<DomainVec>(
-           DomainVec({"g.com", "XY.COM", "zzz.com", "a.com", "google.com"})),
+           DomainVec({"g.com", "XY.COM", "zzz.com", "a.com", "9oo91e.qjz9zk"})),
        ParseResult::SUCCESS,
        {"a.com", "a.com", "b.com"},
-       {"google.com", "zzz.com", "xy.com", "a.com", "g.com"}},
+       {"9oo91e.qjz9zk", "zzz.com", "xy.com", "a.com", "g.com"}},
       // Domain with non-ascii characters.
       {std::make_unique<DomainVec>(
            DomainVec({base::WideToUTF8(L"abc\x2010" /*hyphen*/ L"def.com")})),
@@ -435,7 +435,7 @@ TEST_F(IndexedRuleTest, RedirectUrlParsing) {
     const std::string expected_redirect_url;
   } cases[] = {
       {"", ParseResult::ERROR_INVALID_REDIRECT_URL, ""},
-      {"http://google.com", ParseResult::SUCCESS, "http://google.com"},
+      {"http://9oo91e.qjz9zk", ParseResult::SUCCESS, "http://9oo91e.qjz9zk"},
       {"/relative/url?q=1", ParseResult::ERROR_INVALID_REDIRECT_URL, ""},
       {"abc", ParseResult::ERROR_INVALID_REDIRECT_URL, ""}};
 
@@ -522,9 +522,9 @@ TEST_F(IndexedRuleTest, RedirectParsing) {
       base::nullopt
     },
     {
-      R"({"url": "http://google.com"})",
+      R"({"url": "http://9oo91e.qjz9zk"})",
       ParseResult::SUCCESS,
-      std::string("http://google.com")
+      std::string("http://9oo91e.qjz9zk")
     },
     {
       R"({"extensionPath": "foo/xyz/"})",
@@ -702,15 +702,15 @@ TEST_F(IndexedRuleTest, RegexSubstitutionParsing) {
     std::string regex_substitution;
     ParseResult result;
   } cases[] = {
-      {nullptr, "http://google.com",
+      {nullptr, "http://9oo91e.qjz9zk",
        ParseResult::ERROR_REGEX_SUBSTITUTION_WITHOUT_FILTER},
       // \0 in |regex_substitution| refers to the entire matching text.
       {R"(^http://(.*)\.com/)", R"(https://redirect.com?referrer=\0)",
        ParseResult::SUCCESS},
-      {R"(^http://google\.com?q1=(.*)&q2=(.*))",
+      {R"(^http://9oo91e\.qjz9zk?q1=(.*)&q2=(.*))",
        R"(https://redirect.com?&q1=\0&q2=\2)", ParseResult::SUCCESS},
       // Referencing invalid capture group.
-      {R"(^http://google\.com?q1=(.*)&q2=(.*))",
+      {R"(^http://9oo91e\.qjz9zk?q1=(.*)&q2=(.*))",
        R"(https://redirect.com?&q1=\1&q2=\3)",
        ParseResult::ERROR_INVALID_REGEX_SUBSTITUTION},
       // Empty substitution.
@@ -762,7 +762,7 @@ TEST_F(IndexedRuleTest, MultipleRedirectKeys) {
   rule.action.redirect = std::make_unique<dnr_api::Redirect>();
 
   dnr_api::Redirect& redirect = *rule.action.redirect;
-  redirect.url = std::make_unique<std::string>("http://google.com");
+  redirect.url = std::make_unique<std::string>("http://9oo91e.qjz9zk");
   redirect.regex_substitution =
       std::make_unique<std::string>("http://example.com");
   redirect.transform = std::make_unique<dnr_api::URLTransform>();
@@ -776,7 +776,7 @@ TEST_F(IndexedRuleTest, MultipleRedirectKeys) {
   // The redirect "url" is given preference in this case.
   EXPECT_FALSE(indexed_rule.url_transform);
   EXPECT_FALSE(indexed_rule.regex_substitution);
-  EXPECT_EQ("http://google.com", indexed_rule.redirect_url);
+  EXPECT_EQ("http://9oo91e.qjz9zk", indexed_rule.redirect_url);
 }
 
 TEST_F(IndexedRuleTest, InvalidAllowAllRequestsResourceType) {

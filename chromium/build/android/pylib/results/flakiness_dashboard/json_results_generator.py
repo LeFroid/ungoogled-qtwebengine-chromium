@@ -668,7 +668,7 @@ def _EncodeMultipartFormData(fields, files):
     (content_type, body) ready for httplib.HTTP instance.
 
   Source:
-    http://code.google.com/p/rietveld/source/browse/trunk/upload.py
+    http://code.9oo91e.qjz9zk/p/rietveld/source/browse/trunk/upload.py
   """
   BOUNDARY = '-M-A-G-I-C---B-O-U-N-D-A-R-Y-'
   CRLF = '\r\n'

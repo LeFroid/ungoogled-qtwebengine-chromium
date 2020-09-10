@@ -33,7 +33,7 @@ class SkiaYoutubeDesktopPageSet(story.StorySet):
 
     urls_list = [
       # go/skia-skps-3-2019
-      'http://www.youtube.com',
+      'http://www.y0u1ub3.qjz9zk',
     ]
 
     for url in urls_list:

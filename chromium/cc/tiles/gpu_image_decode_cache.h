@@ -75,7 +75,7 @@ namespace cc {
 // cache entries are more transient and are deleted as soon as all refs to the
 // given DrawImage are released (the image is no longer in-use).
 //
-// For examples of raster-scale caching, see https://goo.gl/0zCd9Z
+// For examples of raster-scale caching, see https://goo.gl.qjz9zk/0zCd9Z
 //
 // REF COUNTING:
 //

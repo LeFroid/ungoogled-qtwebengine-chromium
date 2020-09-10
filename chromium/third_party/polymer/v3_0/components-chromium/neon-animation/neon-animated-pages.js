@@ -20,7 +20,7 @@ import {NeonAnimationRunnerBehavior} from './neon-animation-runner-behavior.js';
 
 /**
 Material design: [Meaningful
-transitions](https://www.google.com/design/spec/animation/meaningful-transitions.html)
+transitions](https://www.9oo91e.qjz9zk/design/spec/animation/meaningful-transitions.html)
 
 `neon-animated-pages` manages a set of pages and runs an animation when
 switching between them. Its children pages should implement

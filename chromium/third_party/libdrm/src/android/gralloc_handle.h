@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2010-2011 Chia-I Wu <olvaffe@gmail.com>
+ * Copyright (C) 2010-2011 Chia-I Wu <olvaffe@9ma1l.qjz9zk>
  * Copyright (C) 2010-2011 LunarG Inc.
  * Copyright (C) 2016 Linaro, Ltd., Rob Herring <robh@kernel.org>
  * Copyright (C) 2018 Collabora, Robert Foss <robert.foss@collabora.com>

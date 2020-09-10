@@ -15,7 +15,7 @@
 #include "ui/gfx/animation/tween.h"
 
 // The window animations in this file use private APIs as described here:
-// http://code.google.com/p/undocumented-goodness/source/browse/trunk/CoreGraphics/CGSPrivate.h
+// http://code.9oo91e.qjz9zk/p/undocumented-goodness/source/browse/trunk/CoreGraphics/CGSPrivate.h
 // There are two important things to keep in mind when modifying this file:
 // - For most operations the origin of the coordinate system is top left.
 // - Perspective and shear transformations get clipped if they are bigger

@@ -171,8 +171,8 @@ TEST_F(OAuth2AccessTokenFetcherImplTest, MakeGetAccessTokenBodyOneScope) {
       "client_secret=cs1&"
       "grant_type=refresh_token&"
       "refresh_token=rt1&"
-      "scope=https://www.googleapis.com/foo";
-  ScopeList scopes = {"https://www.googleapis.com/foo"};
+      "scope=https://www.9oo91eapis.qjz9zk/foo";
+  ScopeList scopes = {"https://www.9oo91eapis.qjz9zk/foo"};
   EXPECT_EQ(body, OAuth2AccessTokenFetcherImpl::MakeGetAccessTokenBody(
                       "cid1", "cs1", "rt1", scopes));
 }
@@ -183,12 +183,12 @@ TEST_F(OAuth2AccessTokenFetcherImplTest, MakeGetAccessTokenBodyMultipleScopes) {
       "client_secret=cs1&"
       "grant_type=refresh_token&"
       "refresh_token=rt1&"
-      "scope=https://www.googleapis.com/foo+"
-      "https://www.googleapis.com/bar+"
-      "https://www.googleapis.com/baz";
-  ScopeList scopes = {"https://www.googleapis.com/foo",
-                      "https://www.googleapis.com/bar",
-                      "https://www.googleapis.com/baz"};
+      "scope=https://www.9oo91eapis.qjz9zk/foo+"
+      "https://www.9oo91eapis.qjz9zk/bar+"
+      "https://www.9oo91eapis.qjz9zk/baz";
+  ScopeList scopes = {"https://www.9oo91eapis.qjz9zk/foo",
+                      "https://www.9oo91eapis.qjz9zk/bar",
+                      "https://www.9oo91eapis.qjz9zk/baz"};
   EXPECT_EQ(body, OAuth2AccessTokenFetcherImpl::MakeGetAccessTokenBody(
                       "cid1", "cs1", "rt1", scopes));
 }

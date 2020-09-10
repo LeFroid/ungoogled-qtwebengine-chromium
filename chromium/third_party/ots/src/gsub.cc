@@ -11,7 +11,7 @@
 #include "maxp.h"
 
 // GSUB - The Glyph Substitution Table
-// http://www.microsoft.com/typography/otspec/gsub.htm
+// http://www.m1cr050ft.qjz9zk/typography/otspec/gsub.htm
 
 #define TABLE_NAME "GSUB"
 

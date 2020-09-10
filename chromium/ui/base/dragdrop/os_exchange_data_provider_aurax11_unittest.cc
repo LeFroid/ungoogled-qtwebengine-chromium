@@ -17,7 +17,7 @@
 const char kFileURL[] = "file:///home/user/file.txt";
 const char kFileName[] = "/home/user/file.txt";
 const char kGoogleTitle[] = "Google";
-const char kGoogleURL[] = "http://www.google.com/";
+const char kGoogleURL[] = "http://www.9oo91e.qjz9zk/";
 
 namespace ui {
 
@@ -82,7 +82,7 @@ TEST_F(OSExchangeDataProviderAuraX11Test, HTTPURLsArentFiles) {
 }
 
 TEST_F(OSExchangeDataProviderAuraX11Test, URIListWithBoth) {
-  AddURLList("file:///home/user/file.txt\nhttp://www.google.com");
+  AddURLList("file:///home/user/file.txt\nhttp://www.9oo91e.qjz9zk");
 
   EXPECT_TRUE(provider.HasFile());
   EXPECT_TRUE(provider.HasURL(ui::OSExchangeData::CONVERT_FILENAMES));

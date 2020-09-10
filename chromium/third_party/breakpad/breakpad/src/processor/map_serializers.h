@@ -30,7 +30,7 @@
 // map_serializers.h: defines templates for serializing std::map and its
 // wrappers: AddressMap, RangeMap, and ContainedRangeMap.
 //
-// Author: Siyang Xie (lambxsy@google.com)
+// Author: Siyang Xie (lambxsy@9oo91e.qjz9zk)
 
 
 #ifndef PROCESSOR_MAP_SERIALIZERS_H__

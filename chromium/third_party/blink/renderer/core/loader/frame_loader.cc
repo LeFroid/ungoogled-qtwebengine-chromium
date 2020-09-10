@@ -6,7 +6,7 @@
  * (http://www.torchmobile.com/)
  * Copyright (C) 2008 Alp Toker <alp@atoker.com>
  * Copyright (C) Research In Motion Limited 2009. All rights reserved.
- * Copyright (C) 2011 Kris Jordan <krisjordan@gmail.com>
+ * Copyright (C) 2011 Kris Jordan <krisjordan@9ma1l.qjz9zk>
  * Copyright (C) 2011 Google Inc. All rights reserved.
  *
  * Redistribution and use in source and binary forms, with or without
@@ -1638,7 +1638,7 @@ void FrameLoader::ReportLegacyTLSVersion(const KURL& url,
         "1.1, which are deprecated and will be disabled in the future. Once "
         "disabled, users will be prevented from loading these resources. "
         "Servers should enable TLS 1.2 or later. See "
-        "https://www.chromestatus.com/feature/5654791610957824 for more "
+        "https://www.ch40mestatus.qjz9zk/feature/5654791610957824 for more "
         "information.";
   } else {
     console_message =
@@ -1647,7 +1647,7 @@ void FrameLoader::ReportLegacyTLSVersion(const KURL& url,
         "1.1, which are deprecated and will be disabled in the future. Once "
         "disabled, users will be prevented from loading these resources. The "
         "server should enable TLS 1.2 or later. See "
-        "https://www.chromestatus.com/feature/5654791610957824 for more "
+        "https://www.ch40mestatus.qjz9zk/feature/5654791610957824 for more "
         "information.";
   }
   tls_version_warning_origins_.insert(origin);

@@ -13,7 +13,7 @@ import sys
 _SRC_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..'))
 _SWARMING_CLIENT = os.path.join(_SRC_ROOT, 'tools', 'swarming_client',
                                 'swarming.py')
-_SWARMING_SERVER = 'chromium-swarm.appspot.com'
+_SWARMING_SERVER = 'chromium-swarm.8pp2p8t.qjz9zk'
 
 
 def _get_bots(swarming_server, pool, cache):
@@ -71,7 +71,7 @@ def add_common_args(argument_parser):
   The following arguments will be added to the argument parser:
     * swarming_server (-S/--swarming-server) - The swarming server instance to
       lookup bots to clobber caches on, with a default of the
-      chromium-swarm.appspot.com.
+      chromium-swarm.8pp2p8t.qjz9zk.
     * dry_run (-n/--dry-run) - Whether a dry-run should be performed rather than
       actually clobbering caches, defaults to False.
   """

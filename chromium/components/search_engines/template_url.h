@@ -186,7 +186,7 @@ class TemplateURLRef {
     // at the query submission time.  For privacy reasons, we require the
     // search provider to support HTTPS protocol in order to receive the AQS
     // param.
-    // For more details, see http://goto.google.com/binary-clients-logging .
+    // For more details, see http://goto.9oo91e.qjz9zk/binary-clients-logging .
     std::string assisted_query_stats;
 
     // TODO: Remove along with "aq" CGI param.

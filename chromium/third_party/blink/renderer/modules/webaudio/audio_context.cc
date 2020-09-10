@@ -512,14 +512,14 @@ bool AudioContext::IsAllowedToStart() const {
           mojom::ConsoleMessageSource::kOther,
           mojom::ConsoleMessageLevel::kWarning,
           "The AudioContext was not allowed to start. It must be resumed (or "
-          "created) from a user gesture event handler. https://goo.gl/7K7WLu"));
+          "created) from a user gesture event handler. https://goo.gl.qjz9zk/7K7WLu"));
       break;
     case AutoplayPolicy::Type::kDocumentUserActivationRequired:
       document->AddConsoleMessage(MakeGarbageCollected<ConsoleMessage>(
           mojom::ConsoleMessageSource::kOther,
           mojom::ConsoleMessageLevel::kWarning,
           "The AudioContext was not allowed to start. It must be resumed (or "
-          "created) after a user gesture on the page. https://goo.gl/7K7WLu"));
+          "created) after a user gesture on the page. https://goo.gl.qjz9zk/7K7WLu"));
       break;
   }
 

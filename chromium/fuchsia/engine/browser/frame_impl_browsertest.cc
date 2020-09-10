@@ -1580,7 +1580,7 @@ IN_PROC_BROWSER_TEST_F(FrameImplTest, InvalidUrl) {
   cr_fuchsia::ResultReceiver<fuchsia::web::NavigationController_LoadUrl_Result>
       result(run_loop.QuitClosure());
   controller->LoadUrl(
-      "http:google.com:foo", fuchsia::web::LoadUrlParams(),
+      "http:9oo91e.qjz9zk:foo", fuchsia::web::LoadUrlParams(),
       cr_fuchsia::CallbackToFitFunction(result.GetReceiveCallback()));
   run_loop.Run();
 

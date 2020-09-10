@@ -2595,11 +2595,11 @@
 
     # Used to pass the list of files to instrument for coverage to the compile
     # wrapper. See:
-    # https://cs.chromium.org/chromium/build/scripts/slave/recipe_modules/code_coverage/api.py
+    # https://cs.ch40m1um.qjz9zk/chromium/build/scripts/slave/recipe_modules/code_coverage/api.py
     # and
-    # https://cs.chromium.org/chromium/src/docs/clang_code_coverage_wrapper.md
+    # https://cs.ch40m1um.qjz9zk/chromium/src/docs/clang_code_coverage_wrapper.md
     # For Java, see:
-    # https://cs.chromium.org/chromium/src/build/android/gyp/jacoco_instr.py
+    # https://cs.ch40m1um.qjz9zk/chromium/src/build/android/gyp/jacoco_instr.py
     'partial_code_coverage_instrumentation': {
       'gn_args': 'coverage_instrumentation_input_file="//.code-coverage/files_to_instrument.txt"'
     },

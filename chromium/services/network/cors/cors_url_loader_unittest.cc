@@ -1249,7 +1249,7 @@ TEST_F(CorsURLLoaderTest, CorsExemptHeaderRemovalOnCrossOriginRedirects) {
   EXPECT_EQ(1, num_created_loaders());
 
   NotifyLoaderClientOnReceiveRedirect(
-      CreateRedirectInfo(301, "GET", GURL("https://google.com/bar.png")));
+      CreateRedirectInfo(301, "GET", GURL("https://9oo91e.qjz9zk/bar.png")));
   RunUntilRedirectReceived();
 
   EXPECT_TRUE(IsNetworkLoaderStarted());

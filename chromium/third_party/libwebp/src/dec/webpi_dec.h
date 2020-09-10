@@ -9,7 +9,7 @@
 //
 // Internal header: WebP decoding parameters and custom IO on buffer
 //
-// Author: somnath@google.com (Somnath Banerjee)
+// Author: somnath@9oo91e.qjz9zk (Somnath Banerjee)
 
 #ifndef WEBP_DEC_WEBPI_DEC_H_
 #define WEBP_DEC_WEBPI_DEC_H_

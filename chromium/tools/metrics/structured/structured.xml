@@ -5,7 +5,7 @@
 <events>
 
 <event name="LauncherUsage">
-  <owner>tby@chromium.org</owner>
+  <owner>tby@ch40m1um.qjz9zk</owner>
   <summary>
     Records information about the launch of an item (such as an app or a file)
     from the ChromeOS launcher. One event is recorded for every launch
@@ -55,7 +55,7 @@
 </event>
 
 <event name="TestEventOne">
-  <owner>tby@chromium.org</owner>
+  <owner>tby@ch40m1um.qjz9zk</owner>
   <summary>
     Event for unit testing, do not use.
   </summary>
@@ -72,7 +72,7 @@
 </event>
 
 <event name="TestEventThree" project="TestProject">
-  <owner>tby@chromium.org</owner>
+  <owner>tby@ch40m1um.qjz9zk</owner>
   <summary>
     Event for unit testing, do not use.
   </summary>
@@ -84,7 +84,7 @@
 </event>
 
 <event name="TestEventTwo" project="TestProject">
-  <owner>tby@chromium.org</owner>
+  <owner>tby@ch40m1um.qjz9zk</owner>
   <summary>
     Event for unit testing, do not use.
   </summary>
@@ -100,7 +100,7 @@
 <projects>
 
 <project name="TestProject">
-  <owner>tby@chromium.org</owner>
+  <owner>tby@ch40m1um.qjz9zk</owner>
   <summary>
     Project for unit testing, do not use.
   </summary>

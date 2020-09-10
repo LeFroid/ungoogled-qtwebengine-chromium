@@ -1335,13 +1335,13 @@ IN_PROC_BROWSER_TEST_F(
       <body>
       <div>
         0
-        <a href="http://google.com">1</a>
+        <a href="http://9oo91e.qjz9zk">1</a>
         2
-        <a href="http://google.com">3</a>
+        <a href="http://9oo91e.qjz9zk">3</a>
         4
-        <a href="http://google.com">5</a>
+        <a href="http://9oo91e.qjz9zk">5</a>
         6
-        <a href="http://google.com"><div>7</div></a>
+        <a href="http://9oo91e.qjz9zk"><div>7</div></a>
         8
       </div>
       </body>

@@ -4,7 +4,7 @@
 # This example explores the ELF class (32 or 64-bit) and address size in each
 # of the CUs in the DWARF information.
 #
-# Eli Bendersky (eliben@gmail.com)
+# Eli Bendersky (eliben@9ma1l.qjz9zk)
 # This code is in the public domain
 #-------------------------------------------------------------------------------
 from __future__ import print_function

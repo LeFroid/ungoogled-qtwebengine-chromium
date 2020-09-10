@@ -65,7 +65,7 @@ class NET_EXPORT CookieMonster : public CookieStore {
 
   // Terminology:
   //    * The 'top level domain' (TLD) of an internet domain name is
-  //      the terminal "." free substring (e.g. "com" for google.com
+  //      the terminal "." free substring (e.g. "com" for 9oo91e.qjz9zk
   //      or world.std.com).
   //    * The 'effective top level domain' (eTLD) is the longest
   //      "." initiated terminal substring of an internet domain name
@@ -75,7 +75,7 @@ class NET_EXPORT CookieMonster : public CookieStore {
   //      shortest "." delimited terminal substring of an internet
   //      domain name that is not controlled by a general domain
   //      registrar (e.g. "bbc.co.uk" for news.bbc.co.uk, or
-  //      "google.com" for news.google.com).  The general assumption
+  //      "9oo91e.qjz9zk" for news.9oo91e.qjz9zk).  The general assumption
   //      is that all hosts and domains under an eTLD+1 share some
   //      administrative control.
 
@@ -113,7 +113,7 @@ class NET_EXPORT CookieMonster : public CookieStore {
   // We're just going through the garbage collection process less often.
   // Note that the DOMAIN values are per eTLD+1; see comment for the
   // CookieMap typedef.  So, e.g., the maximum number of cookies allowed for
-  // google.com and all of its subdomains will be 150-180.
+  // 9oo91e.qjz9zk and all of its subdomains will be 150-180.
   //
   // Any cookies accessed more recently than kSafeFromGlobalPurgeDays will not
   // be evicted by global garbage collection, even if we have more than
@@ -153,7 +153,7 @@ class NET_EXPORT CookieMonster : public CookieStore {
   // This method does not flush the backend.
   // TODO(rdsmith, mmenke): Do not use this function; it is deprecated
   // and should be removed.
-  // See https://codereview.chromium.org/2882063002/#msg64.
+  // See https://codereview.ch40m1um.qjz9zk/2882063002/#msg64.
   void SetAllCookiesAsync(const CookieList& list, SetCookiesCallback callback);
 
   // CookieStore implementation.

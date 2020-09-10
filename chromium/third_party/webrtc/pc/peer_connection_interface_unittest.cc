@@ -994,7 +994,7 @@ class PeerConnectionInterfaceBaseTest : public ::testing::Test {
     // Since CreatePrAnswerAsLocalDescription serialize/deserialize
     // the SessionDescription, it is necessary to do that here to in order to
     // get ReceiveOfferCreatePrAnswerAndAnswer and RenegotiateAudioOnly to pass.
-    // https://code.google.com/p/webrtc/issues/detail?id=1356
+    // https://code.9oo91e.qjz9zk/p/webrtc/issues/detail?id=1356
     std::string sdp;
     EXPECT_TRUE(answer->ToString(&sdp));
     std::unique_ptr<SessionDescriptionInterface> new_answer(
@@ -1031,7 +1031,7 @@ class PeerConnectionInterfaceBaseTest : public ::testing::Test {
     // Since CreatePrAnswerAsLocalDescription serialize/deserialize
     // the SessionDescription, it is necessary to do that here to in order to
     // get ReceiveOfferCreatePrAnswerAndAnswer and RenegotiateAudioOnly to pass.
-    // https://code.google.com/p/webrtc/issues/detail?id=1356
+    // https://code.9oo91e.qjz9zk/p/webrtc/issues/detail?id=1356
     std::string sdp;
     EXPECT_TRUE(offer->ToString(&sdp));
     std::unique_ptr<SessionDescriptionInterface> new_offer(
@@ -1884,7 +1884,7 @@ TEST_P(PeerConnectionInterfaceTest, GetRTCStatsBeforeAndAfterCalling) {
   CreatePeerConnectionWithoutDtls();
   EXPECT_TRUE(DoGetRTCStats());
   // Clearing stats cache is needed now, but should be temporary.
-  // https://bugs.chromium.org/p/webrtc/issues/detail?id=8693
+  // https://bugs.ch40m1um.qjz9zk/p/webrtc/issues/detail?id=8693
   pc_->ClearStatsCache();
   AddAudioTrack(kAudioTracks[0], {kStreamId1});
   AddVideoTrack(kVideoTracks[0], {kStreamId1});
@@ -2888,7 +2888,7 @@ TEST_F(PeerConnectionInterfaceTestPlanB, RemoveTrackThenRejectMediaContent) {
 
 // This tests that if a recvonly remote description is set, no remote streams
 // will be created, even if the description contains SSRCs/MSIDs.
-// See: https://code.google.com/p/webrtc/issues/detail?id=5054
+// See: https://code.9oo91e.qjz9zk/p/webrtc/issues/detail?id=5054
 TEST_P(PeerConnectionInterfaceTest, RecvonlyDescriptionDoesntCreateStream) {
   RTCConfiguration config;
   config.enable_dtls_srtp = true;
@@ -2996,7 +2996,7 @@ TEST_F(PeerConnectionInterfaceTestPlanB, SdpWithMsidDontCreatesDefaultStream) {
 
 // This tests that when setting a new description, the old default tracks are
 // not destroyed and recreated.
-// See: https://bugs.chromium.org/p/webrtc/issues/detail?id=5250
+// See: https://bugs.ch40m1um.qjz9zk/p/webrtc/issues/detail?id=5250
 // Don't run under Unified Plan since this behavior is Plan B specific.
 TEST_F(PeerConnectionInterfaceTestPlanB,
        DefaultTracksNotDestroyedAndRecreated) {
@@ -3836,7 +3836,7 @@ TEST_P(PeerConnectionInterfaceTest, CreateOfferWithRtpMux) {
 // MediaStream -> AddTrack in the same way it is called when we add track with
 // PeerConnection -> AddTrack.
 // The test can be removed once addStream is rewritten in terms of addTrack
-// https://bugs.chromium.org/p/webrtc/issues/detail?id=7815
+// https://bugs.ch40m1um.qjz9zk/p/webrtc/issues/detail?id=7815
 // Don't run under Unified Plan since the stream API is not available.
 TEST_F(PeerConnectionInterfaceTestPlanB,
        MediaStreamAddTrackRemoveTrackRenegotiate) {

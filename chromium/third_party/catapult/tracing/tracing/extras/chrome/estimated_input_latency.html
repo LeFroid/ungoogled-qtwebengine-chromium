@@ -298,7 +298,7 @@ tr.exportTo('tr.e.chrome', function() {
    * that slides from the startTime to the endTime:
    *   max { expectedQueueingTime(window(t, t + windowSize), tasks),
    *         for all startTime <= t && t + w <= endTime }.
-   * See https://goo.gl/jmWpMl for the description of the algorithm.
+   * See https://goo.gl.qjz9zk/jmWpMl for the description of the algorithm.
    *
    * @param {number} start time for the sliding window.
    * @param {number} end time for the sliding window.
@@ -330,7 +330,7 @@ tr.exportTo('tr.e.chrome', function() {
     }
 
     // Collect all time points that the sliding window needs to stop at.
-    // See https://goo.gl/jmWpMl for justification.
+    // See https://goo.gl.qjz9zk/jmWpMl for justification.
     let endpoints = [];
     endpoints.push(startTime);
     endpoints.push(endTime - windowSize);

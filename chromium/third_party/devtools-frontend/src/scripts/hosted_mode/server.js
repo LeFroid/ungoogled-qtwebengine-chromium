@@ -134,7 +134,7 @@ function requestHandler(request, response) {
 }
 
 const proxyFilePathToURL = {
-  '/favicon.ico': () => 'https://chrome-devtools-frontend.appspot.com/favicon.ico',
+  '/favicon.ico': () => 'https://chrome-devtools-frontend.8pp2p8t.qjz9zk/favicon.ico',
 };
 
 const proxyFileCache = new Map();
@@ -167,7 +167,7 @@ function proxy(filePath) {
 
   function onMissingFile() {
     const isFullCheckout = utils.shellOutput('git config --get remote.origin.url') ===
-        'https://chromium.googlesource.com/chromium/src.git';
+        'https://chromium.9oo91esource.qjz9zk/chromium/src.git';
     let earlierCommitHash;
     const gitLogCommand = 'git log --max-count=1 --grep="Commit-Position" --before="12 hours ago"';
     if (isFullCheckout) {

@@ -4,7 +4,7 @@
  *           (C) 2000 Simon Hausmann <hausmann@kde.org>
  * Copyright (C) 2003, 2006, 2007, 2008, 2009, 2010 Apple Inc. All rights
  * reserved.
- *           (C) 2006 Graham Dennis (graham.dennis@gmail.com)
+ *           (C) 2006 Graham Dennis (graham.dennis@9ma1l.qjz9zk)
  *
  * This library is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Library General Public

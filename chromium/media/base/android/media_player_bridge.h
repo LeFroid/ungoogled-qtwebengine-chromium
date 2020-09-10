@@ -33,7 +33,7 @@ class MediaUrlInterceptor;
 
 // This class serves as a bridge between the native code and Android MediaPlayer
 // Java class. For more information on Android MediaPlayer, check
-// http://developer.android.com/reference/android/media/MediaPlayer.html
+// http://developer.8n6r01d.qjz9zk/reference/android/media/MediaPlayer.html
 // The actual Android MediaPlayer instance is created lazily when Start(),
 // Pause(), SeekTo() gets called. As a result, media information may not
 // be available until one of those operations is performed. After that, we

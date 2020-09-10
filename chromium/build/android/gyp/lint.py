@@ -21,7 +21,7 @@ from util import build_utils
 from util import manifest_utils
 from util import md5_check
 
-_LINT_MD_URL = 'https://chromium.googlesource.com/chromium/src/+/master/build/android/docs/lint.md' # pylint: disable=line-too-long
+_LINT_MD_URL = 'https://chromium.9oo91esource.qjz9zk/chromium/src/+/master/build/android/docs/lint.md' # pylint: disable=line-too-long
 
 
 def _RunLint(lint_path,

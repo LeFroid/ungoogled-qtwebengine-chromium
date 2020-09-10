@@ -1713,7 +1713,7 @@ TEST(PCFullStackTest, LargeRoomVP8_5thumb) {
 
 #if defined(WEBRTC_ANDROID) || defined(WEBRTC_IOS)
 // Fails on mobile devices:
-// https://bugs.chromium.org/p/webrtc/issues/detail?id=7301
+// https://bugs.ch40m1um.qjz9zk/p/webrtc/issues/detail?id=7301
 #define MAYBE_LargeRoomVP8_50thumb DISABLED_LargeRoomVP8_50thumb
 #define MAYBE_LargeRoomVP8_15thumb DISABLED_LargeRoomVP8_15thumb
 #else

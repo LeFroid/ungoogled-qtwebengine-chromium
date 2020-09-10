@@ -1229,7 +1229,7 @@ TEST_F(AXPlatformNodeTextRangeProviderTest,
       L"Text with formattingStandalone line with no formattingbold "
       L"textParagraph 1Paragraph 2Paragraph 3Paragraph 4");
 
-  // https://docs.microsoft.com/en-us/windows/win32/api/uiautomationclient/nf-uiautomationclient-iuiautomationtextrange-expandtoenclosingunit
+  // https://docs.m1cr050ft.qjz9zk/en-us/windows/win32/api/uiautomationclient/nf-uiautomationclient-iuiautomationtextrange-expandtoenclosingunit
   // Consider two consecutive text units A and B.
   // The documentation illustrates 9 cases, but cases 1 and 9 are equivalent.
   // In each case, the expected output is a range from start of A to end of A.

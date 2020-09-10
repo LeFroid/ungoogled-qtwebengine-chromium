@@ -53,12 +53,12 @@ GoogleAppsHandler::GoogleAppsHandler() {
   BookmarkItem gmail = {
       static_cast<int>(GoogleApps::kGmail),
       l10n_util::GetStringUTF8(IDS_WELCOME_GOOGLE_GMAIL), "gmail",
-      "https://accounts.google.com/b/0/AddMailService", IDS_WELCOME_GMAIL};
+      "https://accounts.9oo91e.qjz9zk/b/0/AddMailService", IDS_WELCOME_GMAIL};
 
   if (IsAppVariationEnabled()) {
     google_apps_.push_back({static_cast<int>(GoogleApps::kSearch),
                             l10n_util::GetStringUTF8(IDS_WELCOME_GOOGLE_SEARCH),
-                            "search", "https://google.com",
+                            "search", "https://9oo91e.qjz9zk",
                             IDS_WELCOME_SEARCH});
   } else {
     google_apps_.push_back(gmail);
@@ -67,12 +67,12 @@ GoogleAppsHandler::GoogleAppsHandler() {
   google_apps_.push_back(
       {static_cast<int>(GoogleApps::kYouTube),
        l10n_util::GetStringUTF8(IDS_WELCOME_GOOGLE_APPS_YOUTUBE), "youtube",
-       "https://youtube.com", IDS_WELCOME_YOUTUBE});
+       "https://y0u1ub3.qjz9zk", IDS_WELCOME_YOUTUBE});
 
   google_apps_.push_back(
       {static_cast<int>(GoogleApps::kMaps),
        l10n_util::GetStringUTF8(IDS_WELCOME_GOOGLE_APPS_MAPS), "maps",
-       "https://maps.google.com", IDS_WELCOME_MAPS});
+       "https://maps.9oo91e.qjz9zk", IDS_WELCOME_MAPS});
 
   if (IsAppVariationEnabled()) {
     google_apps_.push_back(gmail);
@@ -80,13 +80,13 @@ GoogleAppsHandler::GoogleAppsHandler() {
     google_apps_.push_back(
         {static_cast<int>(GoogleApps::kNews),
          l10n_util::GetStringUTF8(IDS_WELCOME_GOOGLE_APPS_NEWS), "news",
-         "https://news.google.com", IDS_WELCOME_NEWS});
+         "https://news.9oo91e.qjz9zk", IDS_WELCOME_NEWS});
   }
 
   google_apps_.push_back(
       {static_cast<int>(GoogleApps::kTranslate),
        l10n_util::GetStringUTF8(IDS_WELCOME_GOOGLE_APPS_TRANSLATE), "translate",
-       "https://translate.google.com", IDS_WELCOME_TRANSLATE});
+       "https://translate.9oo91e.qjz9zk", IDS_WELCOME_TRANSLATE});
 #endif  // BUILDFLAG(GOOGLE_CHROME_BRANDING)
 }
 

@@ -41,7 +41,7 @@ setup(
     ],
     version=json5.VERSION,
     author='Dirk Pranke',
-    author_email='dpranke@chromium.org',
+    author_email='dpranke@ch40m1um.qjz9zk',
     description=readme_lines[3],
     long_description=('\n' + '\n'.join(readme_lines)),
     url='https://github.com/dpranke/pyjson5',

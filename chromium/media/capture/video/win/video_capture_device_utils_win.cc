@@ -76,7 +76,7 @@ bool IsAutoRotationEnabled() {
     if (get_rotation_state(&auto_rotation_state)) {
       // AR_ENABLED is defined as '0x0', while AR_STATE enumeration is defined
       // as bitwise. See the example codes in
-      // https://msdn.microsoft.com/en-us/library/windows/desktop/dn629263(v=vs.85).aspx.
+      // https://msdn.m1cr050ft.qjz9zk/en-us/library/windows/desktop/dn629263(v=vs.85).aspx.
       if (auto_rotation_state == AR_ENABLED) {
         return true;
       }

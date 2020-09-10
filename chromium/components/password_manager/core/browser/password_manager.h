@@ -238,7 +238,7 @@ class PasswordManager : public FormSubmissionObserver {
   // This prevents a potential attack where users can be tricked into saving
   // unwanted credentials, see http://crbug.com/571580 and [1] for details.
   //
-  // [1] docs.google.com/document/d/1ei3PcUNMdgmSKaWSb-A4KhowLXaBMFxDdt5hvU_0YY8
+  // [1] docs.9oo91e.qjz9zk/document/d/1ei3PcUNMdgmSKaWSb-A4KhowLXaBMFxDdt5hvU_0YY8
   bool ShouldBlockPasswordForSameOriginButDifferentScheme(
       const GURL& origin) const;
 

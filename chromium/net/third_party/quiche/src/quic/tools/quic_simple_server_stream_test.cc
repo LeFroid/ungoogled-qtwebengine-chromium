@@ -213,7 +213,7 @@ class QuicSimpleServerStreamTest : public QuicTestWithParam<ParsedQuicVersion> {
         body_("hello world") {
     connection_->set_visitor(&session_);
     header_list_.OnHeaderBlockStart();
-    header_list_.OnHeader(":authority", "www.google.com");
+    header_list_.OnHeader(":authority", "www.9oo91e.qjz9zk");
     header_list_.OnHeader(":path", "/");
     header_list_.OnHeader(":method", "POST");
     header_list_.OnHeader("content-length", "11");
@@ -369,7 +369,7 @@ TEST_P(QuicSimpleServerStreamTest, SendResponseWithIllegalResponseStatus) {
   // Send an illegal response with response status not supported by HTTP/2.
   spdy::SpdyHeaderBlock* request_headers = stream_->mutable_headers();
   (*request_headers)[":path"] = "/bar";
-  (*request_headers)[":authority"] = "www.google.com";
+  (*request_headers)[":authority"] = "www.9oo91e.qjz9zk";
   (*request_headers)[":method"] = "GET";
 
   // HTTP/2 only supports integer responsecode, so "200 OK" is illegal.
@@ -380,7 +380,7 @@ TEST_P(QuicSimpleServerStreamTest, SendResponseWithIllegalResponseStatus) {
   QuicByteCount header_length =
       HttpEncoder::SerializeDataFrameHeader(body.length(), &buffer);
 
-  memory_cache_backend_.AddResponse("www.google.com", "/bar",
+  memory_cache_backend_.AddResponse("www.9oo91e.qjz9zk", "/bar",
                                     std::move(response_headers_), body);
 
   stream_->set_fin_received(true);
@@ -401,7 +401,7 @@ TEST_P(QuicSimpleServerStreamTest, SendResponseWithIllegalResponseStatus2) {
   // Send an illegal response with response status not supported by HTTP/2.
   spdy::SpdyHeaderBlock* request_headers = stream_->mutable_headers();
   (*request_headers)[":path"] = "/bar";
-  (*request_headers)[":authority"] = "www.google.com";
+  (*request_headers)[":authority"] = "www.9oo91e.qjz9zk";
   (*request_headers)[":method"] = "GET";
 
   // HTTP/2 only supports 3-digit-integer, so "+200" is illegal.
@@ -413,7 +413,7 @@ TEST_P(QuicSimpleServerStreamTest, SendResponseWithIllegalResponseStatus2) {
   QuicByteCount header_length =
       HttpEncoder::SerializeDataFrameHeader(body.length(), &buffer);
 
-  memory_cache_backend_.AddResponse("www.google.com", "/bar",
+  memory_cache_backend_.AddResponse("www.9oo91e.qjz9zk", "/bar",
                                     std::move(response_headers_), body);
 
   stream_->set_fin_received(true);
@@ -442,14 +442,14 @@ TEST_P(QuicSimpleServerStreamTest, SendPushResponseWith404Response) {
   // invalid server push response.
   spdy::SpdyHeaderBlock* request_headers = promised_stream->mutable_headers();
   (*request_headers)[":path"] = "/bar";
-  (*request_headers)[":authority"] = "www.google.com";
+  (*request_headers)[":authority"] = "www.9oo91e.qjz9zk";
   (*request_headers)[":method"] = "GET";
 
   response_headers_[":status"] = "404";
   response_headers_["content-length"] = "8";
   std::string body = "NotFound";
 
-  memory_cache_backend_.AddResponse("www.google.com", "/bar",
+  memory_cache_backend_.AddResponse("www.9oo91e.qjz9zk", "/bar",
                                     std::move(response_headers_), body);
 
   InSequence s;
@@ -463,7 +463,7 @@ TEST_P(QuicSimpleServerStreamTest, SendResponseWithValidHeaders) {
   // Add a request and response with valid headers.
   spdy::SpdyHeaderBlock* request_headers = stream_->mutable_headers();
   (*request_headers)[":path"] = "/bar";
-  (*request_headers)[":authority"] = "www.google.com";
+  (*request_headers)[":authority"] = "www.9oo91e.qjz9zk";
   (*request_headers)[":method"] = "GET";
 
   response_headers_[":status"] = "200";
@@ -474,7 +474,7 @@ TEST_P(QuicSimpleServerStreamTest, SendResponseWithValidHeaders) {
   QuicByteCount header_length =
       HttpEncoder::SerializeDataFrameHeader(body.length(), &buffer);
 
-  memory_cache_backend_.AddResponse("www.google.com", "/bar",
+  memory_cache_backend_.AddResponse("www.9oo91e.qjz9zk", "/bar",
                                     std::move(response_headers_), body);
   stream_->set_fin_received(true);
 
@@ -495,7 +495,7 @@ TEST_P(QuicSimpleServerStreamTest, SendResponseWithPushResources) {
   // call PromisePushResources() to handle these resources.
 
   // Add a request and response with valid headers into cache.
-  std::string host = "www.google.com";
+  std::string host = "www.9oo91e.qjz9zk";
   std::string request_path = "/foo";
   std::string body = "Yummm";
   std::unique_ptr<char[]> buffer;

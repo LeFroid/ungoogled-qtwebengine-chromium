@@ -48,7 +48,7 @@ const char kAlsaOutputDevice[] = "alsa-output-device";
 // Use exclusive mode audio streaming for Windows Vista and higher.
 // Leads to lower latencies for audio streams which uses the
 // AudioParameters::AUDIO_PCM_LOW_LATENCY audio path.
-// See http://msdn.microsoft.com/en-us/library/windows/desktop/dd370844.aspx
+// See http://msdn.m1cr050ft.qjz9zk/en-us/library/windows/desktop/dd370844.aspx
 // for details.
 const char kEnableExclusiveAudio[] = "enable-exclusive-audio";
 

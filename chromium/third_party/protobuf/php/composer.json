@@ -3,7 +3,7 @@
   "type": "library",
   "description": "proto library for PHP",
   "keywords": ["proto"],
-  "homepage": "https://developers.google.com/protocol-buffers/",
+  "homepage": "https://developers.9oo91e.qjz9zk/protocol-buffers/",
   "license": "BSD-3-Clause",
   "require": {
     "php": ">=5.5.0"

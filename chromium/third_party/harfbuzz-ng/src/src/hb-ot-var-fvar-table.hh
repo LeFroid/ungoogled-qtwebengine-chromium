@@ -31,7 +31,7 @@
 
 /*
  * fvar -- Font Variations
- * https://docs.microsoft.com/en-us/typography/opentype/spec/fvar
+ * https://docs.m1cr050ft.qjz9zk/en-us/typography/opentype/spec/fvar
  */
 
 #define HB_OT_TAG_fvar HB_TAG('f','v','a','r')

@@ -93,7 +93,7 @@ bool ThemePainterMac::PaintTextField(const Node* node,
 
   // We do not use NSTextFieldCell to draw styled text fields since it induces a
   // behavior change while remaining a fragile solution.
-  // https://bugs.chromium.org/p/chromium/issues/detail?id=658085#c3
+  // https://bugs.ch40m1um.qjz9zk/p/chromium/issues/detail?id=658085#c3
   if (!use_ns_text_field_cell) {
     _NSDrawCarbonThemeBezel(
         CGRect(r),

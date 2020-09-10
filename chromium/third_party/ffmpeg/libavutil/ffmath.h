@@ -1,5 +1,5 @@
 /*
- * copyright (c) 2016 Ganesh Ajjanagadde <gajjanag@gmail.com>
+ * copyright (c) 2016 Ganesh Ajjanagadde <gajjanag@9ma1l.qjz9zk>
  *
  * This file is part of FFmpeg.
  *

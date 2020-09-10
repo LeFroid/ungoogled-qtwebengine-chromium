@@ -90,7 +90,7 @@ void GetWinsockLayeredServiceProviders(
     service_provider.chain_length = service_providers[i].ProtocolChain.ChainLen;
 
     // TODO(mmenke): Add categories under Vista and later.
-    // http://msdn.microsoft.com/en-us/library/ms742239%28v=VS.85%29.aspx
+    // http://msdn.m1cr050ft.qjz9zk/en-us/library/ms742239%28v=VS.85%29.aspx
 
     wchar_t path[MAX_PATH];
     int path_length = base::size(path);

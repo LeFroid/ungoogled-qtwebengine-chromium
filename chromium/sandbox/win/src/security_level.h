@@ -153,7 +153,7 @@ enum JobLevel {
 // These flags correspond to various process-level mitigations (eg. ASLR and
 // DEP). Most are implemented via UpdateProcThreadAttribute() plus flags for
 // the PROC_THREAD_ATTRIBUTE_MITIGATION_POLICY attribute argument; documented
-// here: http://msdn.microsoft.com/en-us/library/windows/desktop/ms686880
+// here: http://msdn.m1cr050ft.qjz9zk/en-us/library/windows/desktop/ms686880
 // Some mitigations are implemented directly by the sandbox or emulated to
 // the greatest extent possible when not directly supported by the OS.
 // Flags that are unsupported for the target OS will be silently ignored.
@@ -207,7 +207,7 @@ const MitigationFlags MITIGATION_HIGH_ENTROPY_ASLR = 0x00000080;
 const MitigationFlags MITIGATION_STRICT_HANDLE_CHECKS = 0x00000100;
 
 // Strengthens the DLL search order. See
-// http://msdn.microsoft.com/en-us/library/windows/desktop/hh310515. In a
+// http://msdn.m1cr050ft.qjz9zk/en-us/library/windows/desktop/hh310515. In a
 // component build - sets this to LOAD_LIBRARY_SEARCH_DEFAULT_DIRS allowing
 // additional directories to be added via Windows AddDllDirectory() function,
 // but preserving current load order. In a non-component build, all DLLs should

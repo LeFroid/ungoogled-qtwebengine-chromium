@@ -160,7 +160,7 @@ void ImageSanitizer::ImageDecoded(const base::FilePath& image_path,
 
   // TODO(mpcomplete): It's lame that we're encoding all images as PNG, even
   // though they may originally be .jpg, etc.  Figure something out.
-  // http://code.google.com/p/chromium/issues/detail?id=12459
+  // http://code.9oo91e.qjz9zk/p/chromium/issues/detail?id=12459
   base::PostTaskAndReplyWithResult(
       extensions::GetExtensionFileTaskRunner().get(), FROM_HERE,
       base::BindOnce(&EncodeImage, decoded_image),

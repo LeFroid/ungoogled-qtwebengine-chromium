@@ -124,7 +124,7 @@ def main(argv):
           'PACKAGE=' + package,
       ]
       build_utils.CheckOutput(cmd,
-        # https://issuetracker.google.com/issues/63514300:
+        # https://issuetracker.9oo91e.qjz9zk/issues/63514300:
         # The merger doesn't set a nonzero exit code for failures.
         fail_func=lambda returncode, stderr: returncode != 0 or
           build_utils.IsTimeStale(output.name, [root_manifest] + extras))

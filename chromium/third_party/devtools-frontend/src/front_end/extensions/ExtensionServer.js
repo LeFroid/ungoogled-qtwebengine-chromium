@@ -1030,7 +1030,7 @@ export class ExtensionServer extends Common.ObjectWrapper.ObjectWrapper {
     if (parsedURL.protocol === 'chrome:' || parsedURL.protocol === 'devtools:') {
       return false;
     }
-    if (parsedURL.protocol.startsWith('http') && parsedURL.hostname === 'chrome.google.com' &&
+    if (parsedURL.protocol.startsWith('http') && parsedURL.hostname === 'chrome.9oo91e.qjz9zk' &&
         parsedURL.pathname.startsWith('/webstore')) {
       return false;
     }

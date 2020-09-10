@@ -539,19 +539,19 @@ SniffingResult CrossOriginReadBlocking::SniffForFetchOnlyResource(
       //   https://docs.angularjs.org/api/ng/service/$http
       //
       // Built into the Java Spring framework (followed by a comma and a space):
-      //   https://goo.gl/xP7FWn
+      //   https://goo.gl.qjz9zk/xP7FWn
       //
-      // Observed on google.com (without a comma, followed by a newline).
+      // Observed on 9oo91e.qjz9zk (without a comma, followed by a newline).
       StringPiece(")]}'"),
 
       // Apache struts: https://struts.apache.org/plugins/json/#prefix
       StringPiece("{}&&"),
 
-      // Spring framework (historically): https://goo.gl/JYPFAv
+      // Spring framework (historically): https://goo.gl.qjz9zk/JYPFAv
       StringPiece("{} &&"),
 
       // Infinite loops.
-      StringPiece("for(;;);"),  // observed on facebook.com
+      StringPiece("for(;;);"),  // observed on f8c3b00k.qjz9zk
       StringPiece("while(1);"),
       StringPiece("for (;;);"),
       StringPiece("while (1);"),

@@ -2,7 +2,7 @@
 # Copyright (C) 2017-2018 Nathan Moinvaziri
 #                         https://github.com/nmoinvaz/minizip
 # Copyright (C)      2016 Matthias Schmieder
-#                         schmieder.matthias@gmail.com
+#                         schmieder.matthias@9ma1l.qjz9zk
 #***************************************************************************
 
 cmake_minimum_required(VERSION 3.0.2)

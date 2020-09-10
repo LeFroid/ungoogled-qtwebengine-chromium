@@ -42,7 +42,7 @@ HB_BEGIN_DECLS
  * only Basic Latin (ASCII) characters. Indicates languages and/or scripts
  * that the font is declared to be capable of supporting.
  *
- * Known metadata tags from https://docs.microsoft.com/en-us/typography/opentype/spec/meta
+ * Known metadata tags from https://docs.m1cr050ft.qjz9zk/en-us/typography/opentype/spec/meta
  *
  * Since: 2.6.0
  **/

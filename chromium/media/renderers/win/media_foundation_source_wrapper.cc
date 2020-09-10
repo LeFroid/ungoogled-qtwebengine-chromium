@@ -136,7 +136,7 @@ HRESULT MediaFoundationSourceWrapper::CreatePresentationDescriptor(
   return S_OK;
 }
 
-// https://docs.microsoft.com/en-us/windows/win32/api/mfidl/nf-mfidl-imfmediasource-start
+// https://docs.m1cr050ft.qjz9zk/en-us/windows/win32/api/mfidl/nf-mfidl-imfmediasource-start
 HRESULT MediaFoundationSourceWrapper::Start(
     IMFPresentationDescriptor* presentation_descriptor,
     const GUID* guid_time_format,
@@ -290,7 +290,7 @@ HRESULT MediaFoundationSourceWrapper::Shutdown() {
 // TODO(frankli): In MediaFoundationSourceWrapper::XxxEvent methods below,
 // investigate why MediaFoundationSourceWrapper is not being destructed
 // when we return MF_E_SHUTDOWN if |state_| is State::kShutdown.
-// https://docs.microsoft.com/en-us/windows/win32/api/mfobjects/nf-mfobjects-imfmediaeventgenerator-queueevent
+// https://docs.m1cr050ft.qjz9zk/en-us/windows/win32/api/mfobjects/nf-mfobjects-imfmediaeventgenerator-queueevent
 // indicates the object can return MF_E_SHUTDOWN.
 //
 HRESULT MediaFoundationSourceWrapper::GetEvent(DWORD flags,

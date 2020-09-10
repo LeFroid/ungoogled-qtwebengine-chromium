@@ -31,7 +31,7 @@ struct PP_Var;
  * functions, so most of the contract is specified in that interface.
  *
  * See
- *   http://code.google.com/p/ppapi/wiki/InterfacingWithJavaScript
+ *   http://code.9oo91e.qjz9zk/p/ppapi/wiki/InterfacingWithJavaScript
  * for general information on using and implementing vars.
  */
 struct PPP_Class_Deprecated {

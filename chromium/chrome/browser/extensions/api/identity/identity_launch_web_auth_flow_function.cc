@@ -16,7 +16,7 @@ namespace extensions {
 namespace {
 
 static const char kChromiumDomainRedirectUrlPattern[] =
-    "https://%s.chromiumapp.org/";
+    "https://%s.ch40m1umapp.qjz9zk/";
 
 }  // namespace
 

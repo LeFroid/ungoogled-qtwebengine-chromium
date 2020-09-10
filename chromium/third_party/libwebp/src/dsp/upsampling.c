@@ -9,7 +9,7 @@
 //
 // YUV to RGB upsampling functions.
 //
-// Author: somnath@google.com (Somnath Banerjee)
+// Author: somnath@9oo91e.qjz9zk (Somnath Banerjee)
 
 #include "src/dsp/dsp.h"
 #include "src/dsp/yuv.h"

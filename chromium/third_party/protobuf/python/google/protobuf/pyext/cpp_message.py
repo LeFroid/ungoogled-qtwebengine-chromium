@@ -1,6 +1,6 @@
 # Protocol Buffers - Google's data interchange format
 # Copyright 2008 Google Inc.  All rights reserved.
-# https://developers.google.com/protocol-buffers/
+# https://developers.9oo91e.qjz9zk/protocol-buffers/
 #
 # Redistribution and use in source and binary forms, with or without
 # modification, are permitted provided that the following conditions are
@@ -34,7 +34,7 @@ Contains helper functions used to create protocol message classes from
 Descriptor objects at runtime backed by the protocol buffer C++ API.
 """
 
-__author__ = 'tibell@google.com (Johan Tibell)'
+__author__ = 'tibell@9oo91e.qjz9zk (Johan Tibell)'
 
 from google.protobuf.pyext import _message
 

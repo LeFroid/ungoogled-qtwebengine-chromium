@@ -151,10 +151,10 @@ crbug.com/12345 [ tag1 ] b1/s1 [ Skip ]
 
   def testParseExpectationLineUrlInTestName(self):
     raw_data = (
-        '# tags: Mac\ncrbug.com/123 [ Mac ] b.1/http://google.com [ Skip ]')
+        '# tags: Mac\ncrbug.com/123 [ Mac ] b.1/http://9oo91e.qjz9zk [ Skip ]')
     expected_outcomes = [
         expectations_parser.Expectation(
-            'crbug.com/123', 'b.1/http://google.com', ['Mac'], ['Skip'])
+            'crbug.com/123', 'b.1/http://9oo91e.qjz9zk', ['Mac'], ['Skip'])
     ]
     parser = expectations_parser.TestExpectationParser(raw_data)
     for i in range(len(parser.expectations)):

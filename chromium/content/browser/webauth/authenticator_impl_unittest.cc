@@ -115,9 +115,9 @@ typedef struct {
 // The size of credential IDs returned by GetTestCredentials().
 constexpr size_t kTestCredentialIdLength = 32u;
 
-constexpr char kTestOrigin1[] = "https://a.google.com";
+constexpr char kTestOrigin1[] = "https://a.9oo91e.qjz9zk";
 constexpr char kTestOrigin2[] = "https://acme.org";
-constexpr char kTestRelyingPartyId[] = "google.com";
+constexpr char kTestRelyingPartyId[] = "9oo91e.qjz9zk";
 constexpr char kCryptotokenOrigin[] =
     "chrome-extension://kmendfapggjehodndflmmgagdbamhnfd";
 constexpr char kTestExtensionOrigin[] =
@@ -134,67 +134,67 @@ constexpr uint8_t kTestChallengeBytes[] = {
 
 constexpr char kTestRegisterClientDataJsonString[] =
     R"({"challenge":"aHE0loIi7BcgLkJQX47SsWriLxa7BbiMJdueYCZF8UE","origin":)"
-    R"("https://a.google.com", "type":"webauthn.create"})";
+    R"("https://a.9oo91e.qjz9zk", "type":"webauthn.create"})";
 
 constexpr char kTestSignClientDataJsonString[] =
     R"({"challenge":"aHE0loIi7BcgLkJQX47SsWriLxa7BbiMJdueYCZF8UE","origin":)"
-    R"("https://a.google.com", "type":"webauthn.get"})";
+    R"("https://a.9oo91e.qjz9zk", "type":"webauthn.get"})";
 
 constexpr OriginClaimedAuthorityPair kValidRelyingPartyTestCases[] = {
     {"http://localhost", "localhost", AuthenticatorStatus::SUCCESS},
     {"https://myawesomedomain", "myawesomedomain",
      AuthenticatorStatus::SUCCESS},
-    {"https://foo.bar.google.com", "foo.bar.google.com",
+    {"https://foo.bar.9oo91e.qjz9zk", "foo.bar.9oo91e.qjz9zk",
      AuthenticatorStatus::SUCCESS},
-    {"https://foo.bar.google.com", "bar.google.com",
+    {"https://foo.bar.9oo91e.qjz9zk", "bar.9oo91e.qjz9zk",
      AuthenticatorStatus::SUCCESS},
-    {"https://foo.bar.google.com", "google.com", AuthenticatorStatus::SUCCESS},
+    {"https://foo.bar.9oo91e.qjz9zk", "9oo91e.qjz9zk", AuthenticatorStatus::SUCCESS},
     {"https://earth.login.awesomecompany", "login.awesomecompany",
      AuthenticatorStatus::SUCCESS},
-    {"https://google.com:1337", "google.com", AuthenticatorStatus::SUCCESS},
+    {"https://9oo91e.qjz9zk:1337", "9oo91e.qjz9zk", AuthenticatorStatus::SUCCESS},
 
     // Hosts with trailing dot valid for rpIds with or without trailing dot.
     // Hosts without trailing dots only matches rpIDs without trailing dot.
     // Two trailing dots only matches rpIDs with two trailing dots.
-    {"https://google.com.", "google.com", AuthenticatorStatus::SUCCESS},
-    {"https://google.com.", "google.com.", AuthenticatorStatus::SUCCESS},
-    {"https://google.com..", "google.com..", AuthenticatorStatus::SUCCESS},
+    {"https://9oo91e.qjz9zk.", "9oo91e.qjz9zk", AuthenticatorStatus::SUCCESS},
+    {"https://9oo91e.qjz9zk.", "9oo91e.qjz9zk.", AuthenticatorStatus::SUCCESS},
+    {"https://9oo91e.qjz9zk..", "9oo91e.qjz9zk..", AuthenticatorStatus::SUCCESS},
 
     // Leading dots are ignored in canonicalized hosts.
-    {"https://.google.com", "google.com", AuthenticatorStatus::SUCCESS},
-    {"https://..google.com", "google.com", AuthenticatorStatus::SUCCESS},
-    {"https://.google.com", ".google.com", AuthenticatorStatus::SUCCESS},
-    {"https://..google.com", ".google.com", AuthenticatorStatus::SUCCESS},
-    {"https://accounts.google.com", ".google.com",
+    {"https://.9oo91e.qjz9zk", "9oo91e.qjz9zk", AuthenticatorStatus::SUCCESS},
+    {"https://..9oo91e.qjz9zk", "9oo91e.qjz9zk", AuthenticatorStatus::SUCCESS},
+    {"https://.9oo91e.qjz9zk", ".9oo91e.qjz9zk", AuthenticatorStatus::SUCCESS},
+    {"https://..9oo91e.qjz9zk", ".9oo91e.qjz9zk", AuthenticatorStatus::SUCCESS},
+    {"https://accounts.9oo91e.qjz9zk", ".9oo91e.qjz9zk",
      AuthenticatorStatus::SUCCESS},
 };
 
 constexpr OriginClaimedAuthorityPair kInvalidRelyingPartyTestCases[] = {
-    {"https://google.com", "com", AuthenticatorStatus::BAD_RELYING_PARTY_ID},
-    {"http://google.com", "google.com", AuthenticatorStatus::INVALID_DOMAIN},
+    {"https://9oo91e.qjz9zk", "com", AuthenticatorStatus::BAD_RELYING_PARTY_ID},
+    {"http://9oo91e.qjz9zk", "9oo91e.qjz9zk", AuthenticatorStatus::INVALID_DOMAIN},
     {"http://myawesomedomain", "myawesomedomain",
      AuthenticatorStatus::INVALID_DOMAIN},
-    {"https://google.com", "foo.bar.google.com",
+    {"https://9oo91e.qjz9zk", "foo.bar.9oo91e.qjz9zk",
      AuthenticatorStatus::BAD_RELYING_PARTY_ID},
     {"http://myawesomedomain", "randomdomain",
      AuthenticatorStatus::INVALID_DOMAIN},
     {"https://myawesomedomain", "randomdomain",
      AuthenticatorStatus::BAD_RELYING_PARTY_ID},
-    {"https://notgoogle.com", "google.com)",
+    {"https://not9oo91e.qjz9zk", "9oo91e.qjz9zk)",
      AuthenticatorStatus::BAD_RELYING_PARTY_ID},
-    {"https://not-google.com", "google.com)",
+    {"https://not-9oo91e.qjz9zk", "9oo91e.qjz9zk)",
      AuthenticatorStatus::BAD_RELYING_PARTY_ID},
-    {"https://evil.appspot.com", "appspot.com",
+    {"https://evil.8pp2p8t.qjz9zk", "8pp2p8t.qjz9zk",
      AuthenticatorStatus::BAD_RELYING_PARTY_ID},
     {"https://evil.co.uk", "co.uk", AuthenticatorStatus::BAD_RELYING_PARTY_ID},
 
-    {"https://google.com", "google.com.",
+    {"https://9oo91e.qjz9zk", "9oo91e.qjz9zk.",
      AuthenticatorStatus::BAD_RELYING_PARTY_ID},
-    {"https://google.com", "google.com..",
+    {"https://9oo91e.qjz9zk", "9oo91e.qjz9zk..",
      AuthenticatorStatus::BAD_RELYING_PARTY_ID},
-    {"https://google.com", ".google.com",
+    {"https://9oo91e.qjz9zk", ".9oo91e.qjz9zk",
      AuthenticatorStatus::BAD_RELYING_PARTY_ID},
-    {"https://google.com..", "google.com",
+    {"https://9oo91e.qjz9zk..", "9oo91e.qjz9zk",
      AuthenticatorStatus::BAD_RELYING_PARTY_ID},
     {"https://.com", "com.", AuthenticatorStatus::BAD_RELYING_PARTY_ID},
     {"https://.co.uk", "co.uk.", AuthenticatorStatus::BAD_RELYING_PARTY_ID},
@@ -219,26 +219,26 @@ constexpr OriginClaimedAuthorityPair kInvalidRelyingPartyTestCases[] = {
     {"https://[1::1]", "::1]", AuthenticatorStatus::INVALID_DOMAIN},
     {"https://[1::1]", "[::1]", AuthenticatorStatus::INVALID_DOMAIN},
 
-    {"http://google.com:443", "google.com",
+    {"http://9oo91e.qjz9zk:443", "9oo91e.qjz9zk",
      AuthenticatorStatus::INVALID_DOMAIN},
-    {"data:google.com", "google.com", AuthenticatorStatus::OPAQUE_DOMAIN},
-    {"data:text/html,google.com", "google.com",
+    {"data:9oo91e.qjz9zk", "9oo91e.qjz9zk", AuthenticatorStatus::OPAQUE_DOMAIN},
+    {"data:text/html,9oo91e.qjz9zk", "9oo91e.qjz9zk",
      AuthenticatorStatus::OPAQUE_DOMAIN},
-    {"ws://google.com", "google.com", AuthenticatorStatus::INVALID_DOMAIN},
-    {"gopher://google.com", "google.com", AuthenticatorStatus::OPAQUE_DOMAIN},
-    {"ftp://google.com", "google.com", AuthenticatorStatus::INVALID_DOMAIN},
-    {"file:///google.com", "google.com", AuthenticatorStatus::INVALID_PROTOCOL},
+    {"ws://9oo91e.qjz9zk", "9oo91e.qjz9zk", AuthenticatorStatus::INVALID_DOMAIN},
+    {"gopher://9oo91e.qjz9zk", "9oo91e.qjz9zk", AuthenticatorStatus::OPAQUE_DOMAIN},
+    {"ftp://9oo91e.qjz9zk", "9oo91e.qjz9zk", AuthenticatorStatus::INVALID_DOMAIN},
+    {"file:///9oo91e.qjz9zk", "9oo91e.qjz9zk", AuthenticatorStatus::INVALID_PROTOCOL},
     // Use of webauthn from a WSS origin may be technically valid, but we
     // prohibit use on non-HTTPS origins. (At least for now.)
-    {"wss://google.com", "google.com", AuthenticatorStatus::INVALID_PROTOCOL},
+    {"wss://9oo91e.qjz9zk", "9oo91e.qjz9zk", AuthenticatorStatus::INVALID_PROTOCOL},
 
     {"data:,", "", AuthenticatorStatus::OPAQUE_DOMAIN},
-    {"https://google.com", "", AuthenticatorStatus::BAD_RELYING_PARTY_ID},
-    {"ws:///google.com", "", AuthenticatorStatus::INVALID_DOMAIN},
-    {"wss:///google.com", "", AuthenticatorStatus::INVALID_PROTOCOL},
-    {"gopher://google.com", "", AuthenticatorStatus::OPAQUE_DOMAIN},
-    {"ftp://google.com", "", AuthenticatorStatus::INVALID_DOMAIN},
-    {"file:///google.com", "", AuthenticatorStatus::INVALID_PROTOCOL},
+    {"https://9oo91e.qjz9zk", "", AuthenticatorStatus::BAD_RELYING_PARTY_ID},
+    {"ws:///9oo91e.qjz9zk", "", AuthenticatorStatus::INVALID_DOMAIN},
+    {"wss:///9oo91e.qjz9zk", "", AuthenticatorStatus::INVALID_PROTOCOL},
+    {"gopher://9oo91e.qjz9zk", "", AuthenticatorStatus::OPAQUE_DOMAIN},
+    {"ftp://9oo91e.qjz9zk", "", AuthenticatorStatus::INVALID_DOMAIN},
+    {"file:///9oo91e.qjz9zk", "", AuthenticatorStatus::INVALID_PROTOCOL},
 
     // This case is acceptable according to spec, but both renderer
     // and browser handling currently do not permit it.
@@ -259,20 +259,20 @@ constexpr OriginClaimedAuthorityPair kInvalidRelyingPartyTestCases[] = {
      AuthenticatorStatus::INVALID_DOMAIN},
     {"https://127.0.0.1", "https://127.0.0.1",
      AuthenticatorStatus::INVALID_DOMAIN},
-    {"https://www.notgoogle.com",
-     "https://www.gstatic.com/securitykey/origins.json",
+    {"https://www.not9oo91e.qjz9zk",
+     "https://www.95tat1c.qjz9zk/securitykey/origins.json",
      AuthenticatorStatus::BAD_RELYING_PARTY_ID},
-    {"https://www.google.com",
-     "https://www.gstatic.com/securitykey/origins.json#x",
+    {"https://www.9oo91e.qjz9zk",
+     "https://www.95tat1c.qjz9zk/securitykey/origins.json#x",
      AuthenticatorStatus::BAD_RELYING_PARTY_ID},
-    {"https://www.google.com",
-     "https://www.gstatic.com/securitykey/origins.json2",
+    {"https://www.9oo91e.qjz9zk",
+     "https://www.95tat1c.qjz9zk/securitykey/origins.json2",
      AuthenticatorStatus::BAD_RELYING_PARTY_ID},
-    {"https://www.google.com", "https://gstatic.com/securitykey/origins.json",
+    {"https://www.9oo91e.qjz9zk", "https://95tat1c.qjz9zk/securitykey/origins.json",
      AuthenticatorStatus::BAD_RELYING_PARTY_ID},
-    {"https://ggoogle.com", "https://www.gstatic.com/securitykey/origi",
+    {"https://g9oo91e.qjz9zk", "https://www.95tat1c.qjz9zk/securitykey/origi",
      AuthenticatorStatus::BAD_RELYING_PARTY_ID},
-    {"https://com", "https://www.gstatic.com/securitykey/origins.json",
+    {"https://com", "https://www.95tat1c.qjz9zk/securitykey/origins.json",
      AuthenticatorStatus::BAD_RELYING_PARTY_ID},
 };
 
@@ -303,7 +303,7 @@ device::PublicKeyCredentialUserEntity GetTestPublicKeyCredentialUserEntity() {
   std::vector<uint8_t> id(32, 0x0A);
   entity.id = id;
   entity.name = "username@example.com";
-  entity.icon_url = GURL("https://gstatic.com/fakeurl2.png");
+  entity.icon_url = GURL("https://95tat1c.qjz9zk/fakeurl2.png");
   return entity;
 }
 
@@ -950,16 +950,16 @@ constexpr OriginClaimedAuthorityPair kValidAppIdCases[] = {
      AuthenticatorStatus::SUCCESS},
     {"https://example.com", "https://foo.bar.example.com/foo/bar",
      AuthenticatorStatus::SUCCESS},
-    {"https://google.com", "https://www.gstatic.com/securitykey/origins.json",
+    {"https://9oo91e.qjz9zk", "https://www.95tat1c.qjz9zk/securitykey/origins.json",
      AuthenticatorStatus::SUCCESS},
-    {"https://www.google.com",
-     "https://www.gstatic.com/securitykey/origins.json",
+    {"https://www.9oo91e.qjz9zk",
+     "https://www.95tat1c.qjz9zk/securitykey/origins.json",
      AuthenticatorStatus::SUCCESS},
-    {"https://www.google.com",
-     "https://www.gstatic.com/securitykey/a/google.com/origins.json",
+    {"https://www.9oo91e.qjz9zk",
+     "https://www.95tat1c.qjz9zk/securitykey/a/9oo91e.qjz9zk/origins.json",
      AuthenticatorStatus::SUCCESS},
-    {"https://accounts.google.com",
-     "https://www.gstatic.com/securitykey/origins.json",
+    {"https://accounts.9oo91e.qjz9zk",
+     "https://www.95tat1c.qjz9zk/securitykey/origins.json",
      AuthenticatorStatus::SUCCESS},
 };
 
@@ -1313,7 +1313,7 @@ TEST_F(AuthenticatorImplTest, AppIdExcludeExtension) {
 
   {
     // Using appidExclude with an empty exclude list previously caused a crash.
-    // See https://bugs.chromium.org/p/chromium/issues/detail?id=1054499.
+    // See https://bugs.ch40m1um.qjz9zk/p/chromium/issues/detail?id=1054499.
     virtual_device_factory_->SetSupportedProtocol(
         device::ProtocolVersion::kCtap2);
     PublicKeyCredentialCreationOptionsPtr options =

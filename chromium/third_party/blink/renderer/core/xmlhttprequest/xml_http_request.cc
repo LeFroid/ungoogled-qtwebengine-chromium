@@ -1136,7 +1136,7 @@ void XMLHttpRequest::CreateRequest(scoped_refptr<EncodedFormData> http_body,
         HandleNetworkError();
         ThrowForLoadFailureIfNeeded(exception_state,
                                     "Synchronous XHR in page dismissal. See "
-                                    "https://www.chromestatus.com/feature/"
+                                    "https://www.ch40mestatus.qjz9zk/feature/"
                                     "4664843055398912 for more details.");
         return;
       }

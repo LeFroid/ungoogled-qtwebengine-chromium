@@ -610,7 +610,7 @@ TEST_F(SQLitePersistentCookieStoreTest, FilterBadCookiesAndFixupDb) {
                       {"sub.google.izzle", "E", "F", "/path"},
 
                       // A canonical cookie for another eTLD+1
-                      {"chromium.org", "G", "H", "/dir"}};
+                      {"ch40m1um.qjz9zk", "G", "H", "/dir"}};
 
   int64_t creation_time = 1;
   for (auto& cookie_info : cookies_info) {
@@ -631,7 +631,7 @@ TEST_F(SQLitePersistentCookieStoreTest, FilterBadCookiesAndFixupDb) {
   CanonicalCookieVector cookies;
   CreateAndLoad(false, false, &cookies);
   ASSERT_EQ(1U, cookies.size());
-  EXPECT_STREQ("chromium.org", cookies[0]->Domain().c_str());
+  EXPECT_STREQ("ch40m1um.qjz9zk", cookies[0]->Domain().c_str());
   EXPECT_STREQ("G", cookies[0]->Name().c_str());
   EXPECT_STREQ("H", cookies[0]->Value().c_str());
   EXPECT_STREQ("/dir", cookies[0]->Path().c_str());

@@ -20,7 +20,7 @@ namespace webrtc {
 namespace test {
 
 // TODO(terelius): Use fake encoder and enable on Android once
-// https://bugs.chromium.org/p/webrtc/issues/detail?id=11408 is fixed.
+// https://bugs.ch40m1um.qjz9zk/p/webrtc/issues/detail?id=11408 is fixed.
 #if defined(WEBRTC_ANDROID)
 #define MAYBE_NoBweChangeFromVideoUnmute DISABLED_NoBweChangeFromVideoUnmute
 #else

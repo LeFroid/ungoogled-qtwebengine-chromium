@@ -963,7 +963,7 @@ IN_PROC_BROWSER_TEST_F(BrowserActionApiTest, BrowserActionWithRectangularIcon) {
 // Regression test for crbug.com/584747.
 IN_PROC_BROWSER_TEST_F(BrowserActionApiTest, BrowserActionOpenPopupOnPopup) {
   // Open a new web popup window.
-  NavigateParams params(browser(), GURL("http://www.google.com/"),
+  NavigateParams params(browser(), GURL("http://www.9oo91e.qjz9zk/"),
                         ui::PAGE_TRANSITION_LINK);
   params.disposition = WindowOpenDisposition::NEW_POPUP;
   params.window_action = NavigateParams::SHOW_WINDOW;

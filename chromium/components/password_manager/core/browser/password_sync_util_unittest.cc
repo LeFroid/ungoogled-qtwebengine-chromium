@@ -29,7 +29,7 @@ using PasswordSyncUtilTest = SyncUsernameTestBase;
 
 PasswordForm SimpleGAIAChangePasswordForm() {
   PasswordForm form;
-  form.signon_realm = "https://myaccount.google.com/";
+  form.signon_realm = "https://myaccount.9oo91e.qjz9zk/";
   return form;
 }
 
@@ -91,9 +91,9 @@ TEST_F(PasswordSyncUtilTest, IsSyncAccountCredential) {
       {SimpleGaiaForm(""), "sync_user@example.org", true},
       {SimpleNonGaiaForm(""), "sync_user@example.org", false},
       {SimpleGAIAChangePasswordForm(), "sync_user@example.org", true},
-      {SimpleForm("https://subdomain.google.com/", "sync_user@example.org"),
+      {SimpleForm("https://subdomain.9oo91e.qjz9zk/", "sync_user@example.org"),
        "sync_user@example.org", true},
-      {SimpleForm("https://subdomain.google.com/", ""), "sync_user@example.org",
+      {SimpleForm("https://subdomain.9oo91e.qjz9zk/", ""), "sync_user@example.org",
        true},
   };
 

@@ -69,7 +69,7 @@ TEST_F(PaintPreviewRecorderRenderViewTest, TestCaptureMainFrameAndClipping) {
       "<body>"
       "  <div style='width: 600px; height: 80vh; "
       "              background-color: #ff0000'>&nbsp;</div>"
-      "  <a style='display:inline-block' href='http://www.google.com'>Foo</a>"
+      "  <a style='display:inline-block' href='http://www.9oo91e.qjz9zk'>Foo</a>"
       "  <div style='width: 100px; height: 600px; "
       "              background-color: #000000'>&nbsp;</div>"
       "  <div style='overflow: hidden; width: 100px; height: 100px;"
@@ -103,7 +103,7 @@ TEST_F(PaintPreviewRecorderRenderViewTest, TestCaptureMainFrameAndClipping) {
   EXPECT_EQ(out_response->content_id_to_embedding_token.size(), 0U);
 
   EXPECT_EQ(out_response->links.size(), 1U);
-  EXPECT_EQ(out_response->links[0]->url, GURL("http://www.google.com/"));
+  EXPECT_EQ(out_response->links[0]->url, GURL("http://www.9oo91e.qjz9zk/"));
   // Relaxed checks on dimensions and no checks on positions. This is not
   // intended to test the rendering behavior of the page only that a link
   // was captured and has a bounding box.

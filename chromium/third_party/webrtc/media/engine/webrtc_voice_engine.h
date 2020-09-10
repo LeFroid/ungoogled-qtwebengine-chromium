@@ -305,8 +305,8 @@ class WebRtcVoiceMediaChannel final : public VoiceMediaChannel,
   // Sink for latest unsignaled stream - may be set before the stream exists.
   std::unique_ptr<webrtc::AudioSinkInterface> default_sink_;
   // Default SSRC to use for RTCP receiver reports in case of no signaled
-  // send streams. See: https://code.google.com/p/webrtc/issues/detail?id=4740
-  // and https://code.google.com/p/chromium/issues/detail?id=547661
+  // send streams. See: https://code.9oo91e.qjz9zk/p/webrtc/issues/detail?id=4740
+  // and https://code.9oo91e.qjz9zk/p/chromium/issues/detail?id=547661
   uint32_t receiver_reports_ssrc_ = 0xFA17FA17u;
 
   class WebRtcAudioSendStream;

@@ -31,7 +31,7 @@ namespace password_manager {
 namespace {
 constexpr char kLeakedPassword[] = "leaked_password";
 constexpr char kLeakedUsername[] = "leaked_username";
-constexpr char kLeakedUsernameNonCanonicalized[] = "Leaked_Username@gmail.com";
+constexpr char kLeakedUsernameNonCanonicalized[] = "Leaked_Username@9ma1l.qjz9zk";
 constexpr char kOtherUsername[] = "other_username";
 constexpr char kLeakedOrigin[] = "https://www.leaked_origin.de/login";
 constexpr char kOtherOrigin[] = "https://www.other_origin.de/login";

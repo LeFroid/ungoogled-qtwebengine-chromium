@@ -89,7 +89,7 @@ namespace safe_minmax_impl {
 
 // Make the range of a type available via something other than a constexpr
 // function, to work around MSVC limitations. See
-// https://blogs.msdn.microsoft.com/vcblog/2015/12/02/partial-support-for-expression-sfinae-in-vs-2015-update-1/
+// https://blogs.msdn.m1cr050ft.qjz9zk/vcblog/2015/12/02/partial-support-for-expression-sfinae-in-vs-2015-update-1/
 template <typename T>
 struct Limits {
   static constexpr T lowest = std::numeric_limits<T>::lowest();

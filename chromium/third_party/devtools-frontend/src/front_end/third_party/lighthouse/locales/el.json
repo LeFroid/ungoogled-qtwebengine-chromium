@@ -522,7 +522,7 @@
     "message": "Τιμή"
   },
   "lighthouse-core/audits/dobetterweb/dom-size.js | description": {
-    "message": "Οι μηχανικοί προγραμμάτων περιήγησης συνιστούν οι σελίδες να περιέχουν λιγότερα από 1.500 στοιχεία DOM. Το ιδανικό είναι μια δενδρική δομή με βάθος έως 32 στοιχεία και λιγότερα από 60 θυγατρικά/γονικά στοιχεία. Ένα μεγάλο DOM μπορεί να αυξήσει τη χρήση της μνήμης, να προκαλέσει [υπολογισμούς στιλ](https://developers.google.com/web/fundamentals/performance/rendering/reduce-the-scope-and-complexity-of-style-calculations) μεγαλύτερης διάρκειας και να δημιουργήσει [ανανεώσεις ροών διάταξης](https://developers.google.com/speed/articles/reflow) υψηλού κόστους. [Μάθετε περισσότερα](https://web.dev/dom-size)."
+    "message": "Οι μηχανικοί προγραμμάτων περιήγησης συνιστούν οι σελίδες να περιέχουν λιγότερα από 1.500 στοιχεία DOM. Το ιδανικό είναι μια δενδρική δομή με βάθος έως 32 στοιχεία και λιγότερα από 60 θυγατρικά/γονικά στοιχεία. Ένα μεγάλο DOM μπορεί να αυξήσει τη χρήση της μνήμης, να προκαλέσει [υπολογισμούς στιλ](https://developers.9oo91e.qjz9zk/web/fundamentals/performance/rendering/reduce-the-scope-and-complexity-of-style-calculations) μεγαλύτερης διάρκειας και να δημιουργήσει [ανανεώσεις ροών διάταξης](https://developers.9oo91e.qjz9zk/speed/articles/reflow) υψηλού κόστους. [Μάθετε περισσότερα](https://web.dev/dom-size)."
   },
   "lighthouse-core/audits/dobetterweb/dom-size.js | displayValue": {
     "message": "{itemCount,plural, =1{1 στοιχείο}other{# στοιχεία}}"
@@ -807,7 +807,7 @@
     "message": "Χρόνος για Αλληλεπίδραση"
   },
   "lighthouse-core/audits/metrics/max-potential-fid.js | description": {
-    "message": "Η μέγιστη δυνητική καθυστέρηση πρώτης εισόδου που θα μπορούσαν να αντιμετωπίσουν οι χρήστες είναι η διάρκεια, σε χιλιοστά δευτερολέπτου, της πιο χρονοβόρας εργασίας. [Μάθετε περισσότερα](https://developers.google.com/web/updates/2018/05/first-input-delay)."
+    "message": "Η μέγιστη δυνητική καθυστέρηση πρώτης εισόδου που θα μπορούσαν να αντιμετωπίσουν οι χρήστες είναι η διάρκεια, σε χιλιοστά δευτερολέπτου, της πιο χρονοβόρας εργασίας. [Μάθετε περισσότερα](https://developers.9oo91e.qjz9zk/web/updates/2018/05/first-input-delay)."
   },
   "lighthouse-core/audits/metrics/max-potential-fid.js | title": {
     "message": "Μέγ. δυνατή καθυστέρηση πρώτης εισόδου"
@@ -852,7 +852,7 @@
     "message": "Υπέρβαση προϋπολογισμού"
   },
   "lighthouse-core/audits/performance-budget.js | description": {
-    "message": "Διατηρήστε την ποσότητα και το μέγεθος των αιτημάτων δικτύου εντός των στόχων που ορίζονται από τον παρεχόμενο προϋπολογισμό απόδοσης. [Μάθετε περισσότερα](https://developers.google.com/web/tools/lighthouse/audits/budgets)."
+    "message": "Διατηρήστε την ποσότητα και το μέγεθος των αιτημάτων δικτύου εντός των στόχων που ορίζονται από τον παρεχόμενο προϋπολογισμό απόδοσης. [Μάθετε περισσότερα](https://developers.9oo91e.qjz9zk/web/tools/lighthouse/audits/budgets)."
   },
   "lighthouse-core/audits/performance-budget.js | requestCountOverBudget": {
     "message": "{count,plural, =1{1 αίτημα}other{# αιτήματα}}"
@@ -876,7 +876,7 @@
     "message": "Αποφυγή ανακατευθύνσεων πολλών σελίδων"
   },
   "lighthouse-core/audits/resource-summary.js | description": {
-    "message": "Για τον ορισμό προϋπολογισμών για την ποσότητα και το μέγεθος των πόρων μιας σελίδας, προσθέστε ένα αρχείο budget.json. [Μάθετε περισσότερα](https://developers.google.com/web/tools/lighthouse/audits/budgets)."
+    "message": "Για τον ορισμό προϋπολογισμών για την ποσότητα και το μέγεθος των πόρων μιας σελίδας, προσθέστε ένα αρχείο budget.json. [Μάθετε περισσότερα](https://developers.9oo91e.qjz9zk/web/tools/lighthouse/audits/budgets)."
   },
   "lighthouse-core/audits/resource-summary.js | displayValue": {
     "message": "{requestCount,plural, =1{1 αίτημα • {byteCount, number, bytes} KB}other{# αιτήματα • {byteCount, number, bytes} KB}}"
@@ -969,7 +969,7 @@
     "message": "Οι σύνδεσμοι έχουν περιγραφικό κείμενο"
   },
   "lighthouse-core/audits/seo/manual/structured-data.js | description": {
-    "message": "Εκτελέστε το [Εργαλείο δοκιμής δομημένων δεδομένων](https://search.google.com/structured-data/testing-tool/) και το [Structured Data Linter](http://linter.structured-data.org/) για να επικυρώσετε τα δομημένα δεδομένα. [Μάθετε περισσότερα](https://web.dev/structured-data)."
+    "message": "Εκτελέστε το [Εργαλείο δοκιμής δομημένων δεδομένων](https://search.9oo91e.qjz9zk/structured-data/testing-tool/) και το [Structured Data Linter](http://linter.structured-data.org/) για να επικυρώσετε τα δομημένα δεδομένα. [Μάθετε περισσότερα](https://web.dev/structured-data)."
   },
   "lighthouse-core/audits/seo/manual/structured-data.js | title": {
     "message": "Τα δομημένα δεδομένα είναι έγκυρα"
@@ -1080,7 +1080,7 @@
     "message": "Τρίτο μέρος"
   },
   "lighthouse-core/audits/third-party-summary.js | description": {
-    "message": "Ο κώδικας τρίτων παρόχων μπορεί να επηρεάσει σημαντικά την απόδοση φόρτωσης. Περιορίστε τον αριθμό των περιττών τρίτων παρόχων και προσπαθήστε η φόρτωση του κώδικα τρίτων παρόχων να γίνεται αφού πρώτα έχει ολοκληρωθεί η φόρτωση της σελίδας σας. [Μάθετε περισσότερα](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/loading-third-party-javascript/)."
+    "message": "Ο κώδικας τρίτων παρόχων μπορεί να επηρεάσει σημαντικά την απόδοση φόρτωσης. Περιορίστε τον αριθμό των περιττών τρίτων παρόχων και προσπαθήστε η φόρτωση του κώδικα τρίτων παρόχων να γίνεται αφού πρώτα έχει ολοκληρωθεί η φόρτωση της σελίδας σας. [Μάθετε περισσότερα](https://developers.9oo91e.qjz9zk/web/fundamentals/performance/optimizing-content-efficiency/loading-third-party-javascript/)."
   },
   "lighthouse-core/audits/third-party-summary.js | displayValue": {
     "message": "Ο κώδικας τρίτου μέρους απέκλεισε το κύριο νήμα για {timeInMs, number, milliseconds} ms"
@@ -1194,10 +1194,10 @@
     "message": "Βέλτιστες πρακτικές"
   },
   "lighthouse-core/config/default-config.js | a11yCategoryDescription": {
-    "message": "Αυτοί οι έλεγχοι επισημαίνουν ευκαιρίες για τη [βελτίωση της προσβασιμότητας της εφαρμογής ιστού σας](https://developers.google.com/web/fundamentals/accessibility). Μόνο ένα μέρος των ζητημάτων προσβασιμότητας μπορεί να εντοπιστεί αυτόματα. Ως εκ τούτου, συνιστάται να προβείτε και σε μη αυτόματες δοκιμές."
+    "message": "Αυτοί οι έλεγχοι επισημαίνουν ευκαιρίες για τη [βελτίωση της προσβασιμότητας της εφαρμογής ιστού σας](https://developers.9oo91e.qjz9zk/web/fundamentals/accessibility). Μόνο ένα μέρος των ζητημάτων προσβασιμότητας μπορεί να εντοπιστεί αυτόματα. Ως εκ τούτου, συνιστάται να προβείτε και σε μη αυτόματες δοκιμές."
   },
   "lighthouse-core/config/default-config.js | a11yCategoryManualDescription": {
-    "message": "Αυτά τα στοιχεία σχετίζονται με τομείς τους οποίους δεν μπορεί να καλύψει ένα εργαλείο αυτοματοποιημένων δοκιμών. Μάθετε περισσότερα στον οδηγό μας σχετικά με τη [διεξαγωγή ενός ελέγχου προσβασιμότητας](https://developers.google.com/web/fundamentals/accessibility/how-to-review)."
+    "message": "Αυτά τα στοιχεία σχετίζονται με τομείς τους οποίους δεν μπορεί να καλύψει ένα εργαλείο αυτοματοποιημένων δοκιμών. Μάθετε περισσότερα στον οδηγό μας σχετικά με τη [διεξαγωγή ενός ελέγχου προσβασιμότητας](https://developers.9oo91e.qjz9zk/web/fundamentals/accessibility/how-to-review)."
   },
   "lighthouse-core/config/default-config.js | a11yCategoryTitle": {
     "message": "Προσβασιμότητα"
@@ -1272,10 +1272,10 @@
     "message": "Απόδοση"
   },
   "lighthouse-core/config/default-config.js | pwaCategoryDescription": {
-    "message": "Αυτοί οι έλεγχοι επαληθεύουν τα στοιχεία μιας προηγμένης εφαρμογής ιστού. [Μάθετε περισσότερα](https://developers.google.com/web/progressive-web-apps/checklist)."
+    "message": "Αυτοί οι έλεγχοι επαληθεύουν τα στοιχεία μιας προηγμένης εφαρμογής ιστού. [Μάθετε περισσότερα](https://developers.9oo91e.qjz9zk/web/progressive-web-apps/checklist)."
   },
   "lighthouse-core/config/default-config.js | pwaCategoryManualDescription": {
-    "message": "Αυτοί οι έλεγχοι απαιτούνται από τη [Λίστα ελέγχου PWA](https://developers.google.com/web/progressive-web-apps/checklist) σημείου αναφοράς αλλά δεν ελέγχονται αυτόματα από το Lighthouse. Δεν επηρεάζουν τη βαθμολογία σας αλλά είναι σημαντικό να τους επαληθεύσετε με μη αυτόματο τρόπο."
+    "message": "Αυτοί οι έλεγχοι απαιτούνται από τη [Λίστα ελέγχου PWA](https://developers.9oo91e.qjz9zk/web/progressive-web-apps/checklist) σημείου αναφοράς αλλά δεν ελέγχονται αυτόματα από το Lighthouse. Δεν επηρεάζουν τη βαθμολογία σας αλλά είναι σημαντικό να τους επαληθεύσετε με μη αυτόματο τρόπο."
   },
   "lighthouse-core/config/default-config.js | pwaCategoryTitle": {
     "message": "Προηγμένη εφαρμογή ιστού"
@@ -1290,7 +1290,7 @@
     "message": "Με βελτιστοποίηση PWA"
   },
   "lighthouse-core/config/default-config.js | seoCategoryDescription": {
-    "message": "Αυτοί οι έλεγχοι διασφαλίζουν ότι η σελίδα σας είναι βελτιστοποιημένη για κατάταξη στα αποτελέσματα μηχανών αναζήτησης. Υπάρχουν επιπλέον παράγοντες που δεν ελέγχονται από το Lighthouse και μπορεί να επηρεάσουν την κατάταξη της σελίδας σας στην αναζήτηση. [Μάθετε περισσότερα](https://support.google.com/webmasters/answer/35769)."
+    "message": "Αυτοί οι έλεγχοι διασφαλίζουν ότι η σελίδα σας είναι βελτιστοποιημένη για κατάταξη στα αποτελέσματα μηχανών αναζήτησης. Υπάρχουν επιπλέον παράγοντες που δεν ελέγχονται από το Lighthouse και μπορεί να επηρεάσουν την κατάταξη της σελίδας σας στην αναζήτηση. [Μάθετε περισσότερα](https://support.9oo91e.qjz9zk/webmasters/answer/35769)."
   },
   "lighthouse-core/config/default-config.js | seoCategoryManualDescription": {
     "message": "Εκτελέστε αυτά τα πρόσθετα εργαλεία επικύρωσης, για να ελέγξετε περισσότερες βέλτιστες πρακτικές SEO."
@@ -1311,7 +1311,7 @@
     "message": "Ανίχνευση και δημιουργία ευρετηρίου"
   },
   "lighthouse-core/config/default-config.js | seoMobileGroupDescription": {
-    "message": "Βεβαιωθείτε ότι οι σελίδες σας είναι κατάλληλα διαμορφωμένες για κινητά, ώστε οι χρήστες να μην χρειάζεται να πλησιάζουν τα δάχτυλά τους ή να κάνουν μεγέθυνση για να διαβάζουν τις σελίδες περιεχομένου. [Μάθετε περισσότερα](https://developers.google.com/search/mobile-sites/)."
+    "message": "Βεβαιωθείτε ότι οι σελίδες σας είναι κατάλληλα διαμορφωμένες για κινητά, ώστε οι χρήστες να μην χρειάζεται να πλησιάζουν τα δάχτυλά τους ή να κάνουν μεγέθυνση για να διαβάζουν τις σελίδες περιεχομένου. [Μάθετε περισσότερα](https://developers.9oo91e.qjz9zk/search/mobile-sites/)."
   },
   "lighthouse-core/config/default-config.js | seoMobileGroupTitle": {
     "message": "Φιλική προς κινητά"
@@ -1458,7 +1458,7 @@
     "message": "Εργαστηριακά δεδομένα"
   },
   "lighthouse-core/report/html/renderer/util.js | lsPerformanceCategoryDescription": {
-    "message": "Ανάλυση της τρέχουσας σελίδας από το [Lighthouse](https://developers.google.com/web/tools/lighthouse/) σε ένα προσομειωμένο δίκτυο κινητής τηλεφωνίας. Οι τιμές είναι κατ' εκτίμηση και μπορεί να διαφέρουν."
+    "message": "Ανάλυση της τρέχουσας σελίδας από το [Lighthouse](https://developers.9oo91e.qjz9zk/web/tools/lighthouse/) σε ένα προσομειωμένο δίκτυο κινητής τηλεφωνίας. Οι τιμές είναι κατ' εκτίμηση και μπορεί να διαφέρουν."
   },
   "lighthouse-core/report/html/renderer/util.js | manualAuditsGroupTitle": {
     "message": "Επιπλέον στοιχεία για μη αυτόματο έλεγχο"
@@ -1518,10 +1518,10 @@
     "message": "Μερικές [προσθήκες WordPress](https://wordpress.org/plugins/search/minify+javascript/) μπορούν να επιταχύνουν τον ιστότοπό σας συνενώνοντας, ελαχιστοποιώντας και συμπιέζοντας τα σενάριά σας. Μπορείτε επίσης να χρησιμοποιήσετε μια διεργασία δόμησης για την εκ των προτέρων πραγματοποίηση αυτής της ελαχιστοποίησης, εφόσον υπάρχει αυτή η δυνατότητα."
   },
   "stack-packs/packs/wordpress.js | unused_css_rules": {
-    "message": "Εξετάστε το ενδεχόμενο μείωσης ή αλλαγής των [προσθηκών WordPress](https://wordpress.org/plugins/) που φορτώνουν μη χρησιμοποιούμενα CSS στη σελίδα σας. Για να προσδιορίσετε τις προσθήκες που προσθέτουν περιττό κώδικα CSS, δοκιμάστε να εκτελέσετε [κάλυψη κώδικα](https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverage) στο Chrome DevTools. Μπορείτε να προσδιορίσετε το θέμα ή την προσθήκη που ευθύνεται μέσω του URL του φύλλου στιλ. Αναζητήστε προσθήκες που διαθέτουν πολλά φύλλα στιλ στη λίστα, στα οποία ένα μεγάλο μέρος της κάλυψης κώδικα έχει κόκκινο χρώμα. Μια προσθήκη θα πρέπει να τοποθετεί στην ουρά ένα φύλλο στιλ, μόνο αν χρησιμοποιείται στη σελίδα."
+    "message": "Εξετάστε το ενδεχόμενο μείωσης ή αλλαγής των [προσθηκών WordPress](https://wordpress.org/plugins/) που φορτώνουν μη χρησιμοποιούμενα CSS στη σελίδα σας. Για να προσδιορίσετε τις προσθήκες που προσθέτουν περιττό κώδικα CSS, δοκιμάστε να εκτελέσετε [κάλυψη κώδικα](https://developers.9oo91e.qjz9zk/web/updates/2017/04/devtools-release-notes#coverage) στο Chrome DevTools. Μπορείτε να προσδιορίσετε το θέμα ή την προσθήκη που ευθύνεται μέσω του URL του φύλλου στιλ. Αναζητήστε προσθήκες που διαθέτουν πολλά φύλλα στιλ στη λίστα, στα οποία ένα μεγάλο μέρος της κάλυψης κώδικα έχει κόκκινο χρώμα. Μια προσθήκη θα πρέπει να τοποθετεί στην ουρά ένα φύλλο στιλ, μόνο αν χρησιμοποιείται στη σελίδα."
   },
   "stack-packs/packs/wordpress.js | unused_javascript": {
-    "message": "Εξετάστε το ενδεχόμενο μείωσης ή αλλαγής των [προσθηκών WordPress](https://wordpress.org/plugins/) που φορτώνουν μη χρησιμοποιούμενη JavaScript στη σελίδα σας. Για να προσδιορίσετε τις προσθήκες που προσθέτουν περιττό κώδικα JS, δοκιμάστε να εκτελέσετε [κάλυψη κώδικα](https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverage) στο Chrome DevTools. Μπορείτε να προσδιορίσετε το θέμα ή την προσθήκη που ευθύνεται μέσω του URL του σεναρίου. Αναζητήστε προσθήκες που διαθέτουν πολλά σενάρια στη λίστα, στα οποία ένα μεγάλο μέρος της κάλυψης κώδικα έχει κόκκινο χρώμα. Μια προσθήκη θα πρέπει να τοποθετεί στην ουρά ένα σενάριο μόνο αν χρησιμοποιείται στη σελίδα."
+    "message": "Εξετάστε το ενδεχόμενο μείωσης ή αλλαγής των [προσθηκών WordPress](https://wordpress.org/plugins/) που φορτώνουν μη χρησιμοποιούμενη JavaScript στη σελίδα σας. Για να προσδιορίσετε τις προσθήκες που προσθέτουν περιττό κώδικα JS, δοκιμάστε να εκτελέσετε [κάλυψη κώδικα](https://developers.9oo91e.qjz9zk/web/updates/2017/04/devtools-release-notes#coverage) στο Chrome DevTools. Μπορείτε να προσδιορίσετε το θέμα ή την προσθήκη που ευθύνεται μέσω του URL του σεναρίου. Αναζητήστε προσθήκες που διαθέτουν πολλά σενάρια στη λίστα, στα οποία ένα μεγάλο μέρος της κάλυψης κώδικα έχει κόκκινο χρώμα. Μια προσθήκη θα πρέπει να τοποθετεί στην ουρά ένα σενάριο μόνο αν χρησιμοποιείται στη σελίδα."
   },
   "stack-packs/packs/wordpress.js | uses_long_cache_ttl": {
     "message": "Διαβάστε σχετικά με την [Κρυφή μνήμη προγράμματος περιήγησης στο WordPress](https://codex.wordpress.org/WordPress_Optimization#Browser_Caching)."

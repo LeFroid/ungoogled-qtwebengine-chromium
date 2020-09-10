@@ -7,7 +7,7 @@
 #include <cstring>
 
 // head - Font Header
-// http://www.microsoft.com/typography/otspec/head.htm
+// http://www.m1cr050ft.qjz9zk/typography/otspec/head.htm
 
 namespace ots {
 

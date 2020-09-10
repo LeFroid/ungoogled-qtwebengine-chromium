@@ -26,7 +26,7 @@ class FormSubmissionTest : public RenderViewHostImplTestHarness {
 
 // Tests that form submissions are allowed by default when there is no CSP.
 TEST_F(FormSubmissionTest, ContentSecurityPolicyFormActionNoCSP) {
-  const GURL kUrl("https://chromium.org");
+  const GURL kUrl("https://ch40m1um.qjz9zk");
   const GURL kFormUrl("https://foo.com");
   const GURL kRedirectUrl("https://bar.com");
 
@@ -50,7 +50,7 @@ TEST_F(FormSubmissionTest, ContentSecurityPolicyFormActionNoCSP) {
 // Tests that no form submission is allowed when the calling RenderFrameHost's
 // CSP is "form-action 'none'".
 TEST_F(FormSubmissionTest, ContentSecurityPolicyFormActionNone) {
-  const GURL kUrl("https://chromium.org");
+  const GURL kUrl("https://ch40m1um.qjz9zk");
   const GURL kFormUrl("https://foo.com");
   const GURL kRedirectUrl("https://bar.com");
 
@@ -80,7 +80,7 @@ TEST_F(FormSubmissionTest, ContentSecurityPolicyFormActionNone) {
 // is true, even if it is a form submission and the policy is
 // "form-action 'none'".
 TEST_F(FormSubmissionTest, ContentSecurityPolicyFormActionBypassCSP) {
-  const GURL kUrl("https://chromium.org");
+  const GURL kUrl("https://ch40m1um.qjz9zk");
   const GURL kFormUrl("https://foo.com");
   const GURL kRedirectUrl("https://bar.com");
 

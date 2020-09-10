@@ -514,7 +514,7 @@ namespace dawn_native {
 
     MaybeError ShaderModuleBase::ExtractSpirvInfoWithSpirvCross(
         const spirv_cross::Compiler& compiler) {
-        // TODO(cwallez@chromium.org): make errors here creation errors
+        // TODO(cwallez@ch40m1um.qjz9zk): make errors here creation errors
         // currently errors here do not prevent the shadermodule from being used
         const auto& resources = compiler.get_shader_resources();
 

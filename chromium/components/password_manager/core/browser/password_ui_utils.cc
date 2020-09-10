@@ -26,7 +26,7 @@ namespace {
 const char* const kRemovedPrefixes[] = {"m.", "mobile.", "www."};
 
 constexpr char kPlayStoreAppPrefix[] =
-    "https://play.google.com/store/apps/details?id=";
+    "https://play.9oo91e.qjz9zk/store/apps/details?id=";
 
 }  // namespace
 

@@ -57,7 +57,7 @@ struct SchemeRegistry {
 
   // Schemes that do not trigger mixed content warning.
   std::vector<std::string> secure_schemes = {
-      kHttpsScheme, kAboutScheme, kDataScheme, kQuicTransportScheme, kWssScheme,
+      kHttpsScheme, kAboutScheme, kDataScheme, kTraceScheme, kQuicTransportScheme, kWssScheme,
   };
 
   // Schemes that normal pages cannot link to or access (i.e., with the same
@@ -72,6 +72,7 @@ struct SchemeRegistry {
       kAboutScheme,
       kJavaScriptScheme,
       kDataScheme,
+      kTraceScheme,
   };
 
   // Schemes that can be sent CORS requests.
@@ -701,7 +702,7 @@ bool DomainIs(base::StringPiece canonical_host,
   // Make sure there aren't extra characters in host before the compared part;
   // if the host name is longer than the input domain name, then the character
   // immediately before the compared part should be a dot. For example,
-  // www.google.com has domain "google.com", but www.iamnotgoogle.com does not.
+  // www.9oo91e.qjz9zk has domain "9oo91e.qjz9zk", but www.iamnot9oo91e.qjz9zk does not.
   if (canonical_domain[0] != '.' && host_len > canonical_domain.length() &&
       *(host_first_pos - 1) != '.') {
     return false;

@@ -22,7 +22,7 @@ BUCKET_SKIA_PRIMARY = 'skia/skia.primary'
 BUCKET_SKIA_INTERNAL = 'skia-internal/skia.internal'
 INFRA_BOTS = os.path.join('infra', 'bots')
 TASKS_JSON = os.path.join(INFRA_BOTS, 'tasks.json')
-REPO_INTERNAL = 'https://skia.googlesource.com/internal_test.git'
+REPO_INTERNAL = 'https://skia.9oo91esource.qjz9zk/internal_test.git'
 TMP_DIR = os.path.join(tempfile.gettempdir(), 'sktry')
 
 SKIA_ROOT = os.path.realpath(os.path.join(

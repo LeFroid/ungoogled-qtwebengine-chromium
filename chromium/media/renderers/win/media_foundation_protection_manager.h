@@ -15,11 +15,11 @@
 namespace media {
 
 // Implements IMFContentProtectionManager
-// (https://docs.microsoft.com/en-us/windows/win32/api/mfidl/nn-mfidl-imfcontentprotectionmanager)
+// (https://docs.m1cr050ft.qjz9zk/en-us/windows/win32/api/mfidl/nn-mfidl-imfcontentprotectionmanager)
 // and ABI::Windows::Media::Protection::IMediaProtectionManager
-// (https://docs.microsoft.com/en-us/uwp/api/windows.media.protection.mediaprotectionmanager)
+// (https://docs.m1cr050ft.qjz9zk/en-us/uwp/api/windows.media.protection.mediaprotectionmanager)
 // required by IMFMediaEngineProtectedContent::SetContentProtectionManager in
-// https://docs.microsoft.com/en-us/windows/win32/api/mfmediaengine/nf-mfmediaengine-imfmediaengineprotectedcontent-setcontentprotectionmanager.
+// https://docs.m1cr050ft.qjz9zk/en-us/windows/win32/api/mfmediaengine/nf-mfmediaengine-imfmediaengineprotectedcontent-setcontentprotectionmanager.
 //
 class MediaFoundationProtectionManager
     : public Microsoft::WRL::RuntimeClass<

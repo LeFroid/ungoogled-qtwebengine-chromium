@@ -118,17 +118,17 @@ TEST_F(ReplacementAppsManifestTest, InvalidWebAppType) {
   LoadAndExpectError(CreateManifest(R"(["https://secure.com"])", nullptr),
                      manifest_errors::kInvalidReplacementWebApp);
   LoadAndExpectError(
-      CreateManifest(R"(["https://www.google.com", "not_a_valid_url"])",
+      CreateManifest(R"(["https://www.9oo91e.qjz9zk", "not_a_valid_url"])",
                      nullptr),
       manifest_errors::kInvalidReplacementWebApp);
 }
 
 TEST_F(ReplacementAppsManifestTest, VerifyParse) {
   scoped_refptr<Extension> good = LoadAndExpectSuccess(
-      CreateManifest(R"("https://www.google.com")", R"("com.company.app")"));
+      CreateManifest(R"("https://www.9oo91e.qjz9zk")", R"("com.company.app")"));
   EXPECT_TRUE(ReplacementAppsInfo::HasReplacementWebApp(good.get()));
   EXPECT_EQ(ReplacementAppsInfo::GetReplacementWebApp(good.get()),
-            GURL("https://www.google.com"));
+            GURL("https://www.9oo91e.qjz9zk"));
   EXPECT_TRUE(ReplacementAppsInfo::HasReplacementAndroidApp(good.get()));
   EXPECT_EQ(ReplacementAppsInfo::GetReplacementAndroidApp(good.get()),
             "com.company.app");

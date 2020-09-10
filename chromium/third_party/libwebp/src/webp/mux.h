@@ -9,8 +9,8 @@
 //
 //  RIFF container manipulation and encoding for WebP images.
 //
-// Authors: Urvang (urvang@google.com)
-//          Vikas (vikasa@google.com)
+// Authors: Urvang (urvang@9oo91e.qjz9zk)
+//          Vikas (vikasa@9oo91e.qjz9zk)
 
 #ifndef WEBP_WEBP_MUX_H_
 #define WEBP_WEBP_MUX_H_

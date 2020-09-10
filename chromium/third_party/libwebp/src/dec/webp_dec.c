@@ -9,7 +9,7 @@
 //
 // Main decoding functions for WEBP images.
 //
-// Author: Skal (pascal.massimino@gmail.com)
+// Author: Skal (pascal.massimino@9ma1l.qjz9zk)
 
 #include <stdlib.h>
 

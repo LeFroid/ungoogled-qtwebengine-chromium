@@ -35,7 +35,7 @@
 
 /*
  * OS/2 and Windows Metrics
- * https://docs.microsoft.com/en-us/typography/opentype/spec/os2
+ * https://docs.m1cr050ft.qjz9zk/en-us/typography/opentype/spec/os2
  */
 #define HB_OT_TAG_OS2 HB_TAG('O','S','/','2')
 
@@ -86,7 +86,7 @@ struct OS2V5Tail
     unsigned int lower_optical_size = usLowerOpticalPointSize;
     unsigned int upper_optical_size = usUpperOpticalPointSize;
 
-    /* Per https://docs.microsoft.com/en-us/typography/opentype/spec/os2#lps */
+    /* Per https://docs.m1cr050ft.qjz9zk/en-us/typography/opentype/spec/os2#lps */
     if (lower_optical_size < upper_optical_size &&
 	lower_optical_size >= 1 && lower_optical_size <= 0xFFFE &&
 	upper_optical_size >= 2 && upper_optical_size <= 0xFFFF)

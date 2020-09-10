@@ -485,11 +485,11 @@ class FaviconHandlerTest : public testing::Test {
   const std::vector<gfx::Size> kEmptySizes;
 
   // Some known icons for which download will succeed.
-  const GURL kPageURL = GURL("http://www.google.com");
-  const GURL kIconURL10x10 = GURL("http://www.google.com/favicon10x10");
-  const GURL kIconURL12x12 = GURL("http://www.google.com/favicon12x12");
-  const GURL kIconURL16x16 = GURL("http://www.google.com/favicon16x16");
-  const GURL kIconURL64x64 = GURL("http://www.google.com/favicon64x64");
+  const GURL kPageURL = GURL("http://www.9oo91e.qjz9zk");
+  const GURL kIconURL10x10 = GURL("http://www.9oo91e.qjz9zk/favicon10x10");
+  const GURL kIconURL12x12 = GURL("http://www.9oo91e.qjz9zk/favicon12x12");
+  const GURL kIconURL16x16 = GURL("http://www.9oo91e.qjz9zk/favicon16x16");
+  const GURL kIconURL64x64 = GURL("http://www.9oo91e.qjz9zk/favicon64x64");
 
   FaviconHandlerTest()
       : task_environment_(
@@ -556,7 +556,7 @@ class FaviconHandlerTest : public testing::Test {
 
 TEST_F(FaviconHandlerTest, GetFaviconFromHistory) {
   base::HistogramTester histogram_tester;
-  const GURL kIconURL("http://www.google.com/favicon");
+  const GURL kIconURL("http://www.9oo91e.qjz9zk/favicon");
 
   favicon_service_.fake()->Store(kPageURL, kIconURL,
                                  CreateRawBitmapResult(kIconURL));
@@ -583,7 +583,7 @@ TEST_F(FaviconHandlerTest, UpdateFaviconMappingsAndFetch) {
 // Test that we don't try to delete favicon mappings when a page URL is not in
 // history even if the page lists no favicons.
 TEST_F(FaviconHandlerTest, DoNotDeleteFaviconMappingsIfNotInHistory) {
-  const GURL kIconURL("http://www.google.com/favicon");
+  const GURL kIconURL("http://www.9oo91e.qjz9zk/favicon");
 
   EXPECT_CALL(favicon_service_, DeleteFaviconMappings(_, _)).Times(0);
   EXPECT_CALL(delegate_, OnFaviconDeleted(_, _)).Times(0);
@@ -598,7 +598,7 @@ TEST_F(FaviconHandlerTest, DoNotDeleteFaviconMappingsIfNotInHistory) {
 // - FaviconService::OnFaviconDataForManifestFromFaviconService() runs before
 //   FaviconHandler::OnUpdateCandidates() is called.
 TEST_F(FaviconHandlerTest, DeleteFaviconMappingsIfCandidatesSlower) {
-  const GURL kIconURL("http://www.google.com/favicon");
+  const GURL kIconURL("http://www.9oo91e.qjz9zk/favicon");
 
   favicon_service_.fake()->Store(kPageURL, kIconURL,
                                  CreateRawBitmapResult(kIconURL));
@@ -638,7 +638,7 @@ TEST_F(FaviconHandlerTest, DeleteFaviconMappingsIfCandidatesSlower) {
 // - FaviconHandler::OnUpdateCandidates() is called before
 //   FaviconService::OnFaviconDataForManifestFromFaviconService() runs.
 TEST_F(FaviconHandlerTest, DeleteFaviconMappingsIfCandidatesFaster) {
-  const GURL kIconURL("http://www.google.com/favicon");
+  const GURL kIconURL("http://www.9oo91e.qjz9zk/favicon");
 
   favicon_service_.fake()->Store(kPageURL, kIconURL,
                                  CreateRawBitmapResult(kIconURL));
@@ -674,7 +674,7 @@ TEST_F(FaviconHandlerTest, DeleteFaviconMappingsIfCandidatesFaster) {
 // Test that favicon mappings are deleted when a page in history lists a
 // candidate that is expired and is known to return a 404.
 TEST_F(FaviconHandlerTest, DeleteFaviconMappingsDespitePrior404) {
-  const GURL kIconURL("http://www.google.com/favicon");
+  const GURL kIconURL("http://www.9oo91e.qjz9zk/favicon");
 
   favicon_service_.fake()->Store(
       kPageURL, kIconURL,
@@ -695,8 +695,8 @@ TEST_F(FaviconHandlerTest, DeleteFaviconMappingsDespitePrior404) {
 // Test that favicon mappings are deleted for a page in history, when all icons
 // listed in the page return a 404.
 TEST_F(FaviconHandlerTest, DeleteFaviconMappingsDueTo404) {
-  const GURL kIconURLInHistory("http://www.google.com/favicon-in-history");
-  const GURL k404IconURL("http://www.google.com/404.png");
+  const GURL kIconURLInHistory("http://www.9oo91e.qjz9zk/favicon-in-history");
+  const GURL k404IconURL("http://www.9oo91e.qjz9zk/404.png");
 
   favicon_service_.fake()->Store(kPageURL, kIconURLInHistory,
                                  CreateRawBitmapResult(kIconURLInHistory));
@@ -710,7 +710,7 @@ TEST_F(FaviconHandlerTest, DeleteFaviconMappingsDueTo404) {
 // Test that we don't try to delete favicon mappings when a page URL is not in
 // history even if all icons listed in the page return a 404.
 TEST_F(FaviconHandlerTest, DoNotDeleteFaviconMappingsIfNotInHistoryDespite404) {
-  const GURL k404IconURL("http://www.google.com/404.png");
+  const GURL k404IconURL("http://www.9oo91e.qjz9zk/404.png");
 
   EXPECT_CALL(favicon_service_, DeleteFaviconMappings(_, _)).Times(0);
 
@@ -720,8 +720,8 @@ TEST_F(FaviconHandlerTest, DoNotDeleteFaviconMappingsIfNotInHistoryDespite404) {
 // Test that favicon mappings are not deleted for a page in history when all
 // icons listed in the page return a 503.
 TEST_F(FaviconHandlerTest, DoNotDeleteFaviconMappingsDueTo503) {
-  const GURL kIconURLInHistory("http://www.google.com/favicon-in-history");
-  const GURL k503IconURL("http://www.google.com/503.png");
+  const GURL kIconURLInHistory("http://www.9oo91e.qjz9zk/favicon-in-history");
+  const GURL k503IconURL("http://www.9oo91e.qjz9zk/503.png");
 
   delegate_.fake_image_downloader().AddError(k503IconURL, 503);
 
@@ -738,7 +738,7 @@ TEST_F(FaviconHandlerTest, DoNotDeleteFaviconMappingsDueTo503) {
 // multiple page URLs exist due to a quick in-same-document navigation (e.g.
 // fragment navigation).
 TEST_F(FaviconHandlerTest, UpdateFaviconMappingsAndFetchWithMultipleURLs) {
-  const GURL kDifferentPageURL = GURL("http://www.google.com/other");
+  const GURL kDifferentPageURL = GURL("http://www.9oo91e.qjz9zk/other");
 
   EXPECT_CALL(favicon_service_,
               UpdateFaviconMappingsAndFetch(
@@ -785,7 +785,7 @@ TEST_F(FaviconHandlerTest, CloneFaviconMappingsForPageInHistory) {
 // FaviconService should be told to propagate the mappings from the last page
 // URL (lookup hit) to the rest of the URLs.
 TEST_F(FaviconHandlerTest, CloneFaviconMappingsWithMultipleURLs) {
-  const GURL kPageURLInHistory = GURL("http://www.google.com/other");
+  const GURL kPageURLInHistory = GURL("http://www.9oo91e.qjz9zk/other");
 
   favicon_service_.fake()->Store(kPageURLInHistory, kIconURL16x16,
                                  CreateRawBitmapResult(kIconURL16x16));
@@ -916,7 +916,7 @@ TEST_F(FaviconHandlerTest, DownloadUnknownFaviconInIncognito) {
 // Test that favicon mappings are not deleted in incognito even if the page
 // lists no candidates.
 TEST_F(FaviconHandlerTest, DoNotDeleteFaviconMappingsInIncognito) {
-  const GURL kIconURL("http://www.google.com/favicon");
+  const GURL kIconURL("http://www.9oo91e.qjz9zk/favicon");
 
   ON_CALL(delegate_, IsOffTheRecord()).WillByDefault(Return(true));
   favicon_service_.fake()->Store(kPageURL, kIconURL,
@@ -934,7 +934,7 @@ TEST_F(FaviconHandlerTest, DoNotDeleteFaviconMappingsInIncognito) {
 // Test that the icon is redownloaded if the icon cached for the page URL
 // expired.
 TEST_F(FaviconHandlerTest, RedownloadExpiredPageUrlFavicon) {
-  const GURL kIconURL("http://www.google.com/favicon");
+  const GURL kIconURL("http://www.9oo91e.qjz9zk/favicon");
   const SkColor kOldColor = SK_ColorBLUE;
   const SkColor kNewColor = SK_ColorGREEN;
 
@@ -970,7 +970,7 @@ TEST_F(FaviconHandlerTest, RedownloadExpiredPageUrlFavicon) {
 // AND
 // - There is no data in database for the new icon URL.
 TEST_F(FaviconHandlerTest, UpdateAndDownloadFavicon) {
-  const GURL kOldIconURL("http://www.google.com/old_favicon");
+  const GURL kOldIconURL("http://www.9oo91e.qjz9zk/old_favicon");
   const GURL kNewIconURL = kIconURL16x16;
 
   favicon_service_.fake()->Store(kPageURL, kOldIconURL,
@@ -989,7 +989,7 @@ TEST_F(FaviconHandlerTest, UpdateAndDownloadFavicon) {
 // - The invalid data is not sent to the UI.
 // - The icon is redownloaded.
 TEST_F(FaviconHandlerTest, FaviconInHistoryInvalid) {
-  const GURL kIconURL("http://www.google.com/favicon");
+  const GURL kIconURL("http://www.9oo91e.qjz9zk/favicon");
 
   delegate_.fake_image_downloader().Add(kIconURL, IntVector{gfx::kFaviconSize},
                                         SK_ColorBLUE);
@@ -1014,9 +1014,9 @@ TEST_F(FaviconHandlerTest, FaviconInHistoryInvalid) {
 // Test that no downloads are done if a user visits a page which changed its
 // favicon URL to a favicon URL which is already cached in the database.
 TEST_F(FaviconHandlerTest, UpdateFavicon) {
-  const GURL kSomePreviousPageURL("https://www.google.com/previous");
-  const GURL kIconURL("http://www.google.com/favicon");
-  const GURL kNewIconURL("http://www.google.com/new_favicon");
+  const GURL kSomePreviousPageURL("https://www.9oo91e.qjz9zk/previous");
+  const GURL kIconURL("http://www.9oo91e.qjz9zk/favicon");
+  const GURL kNewIconURL("http://www.9oo91e.qjz9zk/new_favicon");
 
   favicon_service_.fake()->Store(kPageURL, kIconURL,
                                  CreateRawBitmapResult(kIconURL));
@@ -1036,7 +1036,7 @@ TEST_F(FaviconHandlerTest, UpdateFavicon) {
 }
 
 TEST_F(FaviconHandlerTest, Download2ndFaviconURLCandidate) {
-  const GURL kIconURLReturning500("http://www.google.com/500.png");
+  const GURL kIconURLReturning500("http://www.9oo91e.qjz9zk/500.png");
 
   delegate_.fake_image_downloader().AddError(kIconURLReturning500, 500);
 
@@ -1070,7 +1070,7 @@ TEST_F(FaviconHandlerTest, Download2ndFaviconURLCandidate) {
 // favicon_base::IconType::kFavicon and add new ones like
 // OnlyDownloadMatchingIconType and CallSetFaviconsWithCorrectIconType.
 TEST_F(FaviconHandlerTest, UpdateDuringDownloading) {
-  const GURL kIconURL1("http://www.google.com/favicon");
+  const GURL kIconURL1("http://www.9oo91e.qjz9zk/favicon");
   const GURL kIconURL2 = kIconURL16x16;
   const GURL kIconURL3 = kIconURL12x12;
 
@@ -1143,7 +1143,7 @@ TEST_F(FaviconHandlerTest, UpdateDuringDatabaseLookup) {
 // Test that sending an icon URL update identical to the previous icon URL
 // update during image download is a no-op.
 TEST_F(FaviconHandlerTest, UpdateSameIconURLsWhileDownloadingShouldBeNoop) {
-  const GURL kSlowLoadingIconURL("http://www.google.com/slow_favicon");
+  const GURL kSlowLoadingIconURL("http://www.9oo91e.qjz9zk/slow_favicon");
 
   const std::vector<FaviconURL> favicon_urls = {
       FaviconURL(kIconURL12x12, kFavicon, kEmptySizes),
@@ -1363,7 +1363,7 @@ class FaviconHandlerMultipleFaviconsTest : public FaviconHandlerTest {
 
     for (int icon_size : candidate_icon_sizes) {
       const GURL icon_url(base::StringPrintf(
-          "https://www.google.com/generated/%dx%d", icon_size, icon_size));
+          "https://www.9oo91e.qjz9zk/generated/%dx%d", icon_size, icon_size));
       // Set up 200 responses for all images, and the corresponding size.
       delegate_.fake_image_downloader().Add(icon_url, IntVector{icon_size});
       // Create test candidates of type kFavicon and a fake URL.
@@ -1432,8 +1432,8 @@ TEST_F(FaviconHandlerMultipleFaviconsTest,
 //   without sizes information, and shouldn't be downloaded.
 TEST_F(FaviconHandlerTest,
        StopsDownloadingWhenRemainingCandidatesWorseDespite404) {
-  const GURL k404IconURL("http://www.google.com/404.png");
-  const GURL kIconURL192x192 = GURL("http://www.google.com/favicon192x192");
+  const GURL k404IconURL("http://www.9oo91e.qjz9zk/404.png");
+  const GURL kIconURL192x192 = GURL("http://www.9oo91e.qjz9zk/favicon192x192");
 
   RunHandlerWithCandidates(
       FaviconDriverObserver::NON_TOUCH_16_DIP,
@@ -1470,7 +1470,7 @@ TEST_F(FaviconHandlerMultipleFaviconsTest,
 }
 
 TEST_F(FaviconHandlerTest, Report404) {
-  const GURL k404IconURL("http://www.google.com/404.png");
+  const GURL k404IconURL("http://www.9oo91e.qjz9zk/404.png");
 
   EXPECT_CALL(favicon_service_, UnableToDownloadFavicon(k404IconURL));
 
@@ -1481,7 +1481,7 @@ TEST_F(FaviconHandlerTest, Report404) {
 // Test that WasUnableToDownloadFavicon() is not called if a download returns
 // HTTP status 503.
 TEST_F(FaviconHandlerTest, NotReport503) {
-  const GURL k503IconURL("http://www.google.com/503.png");
+  const GURL k503IconURL("http://www.9oo91e.qjz9zk/503.png");
 
   delegate_.fake_image_downloader().AddError(k503IconURL, 503);
 
@@ -1496,7 +1496,7 @@ TEST_F(FaviconHandlerTest, NotReport503) {
 // - Downloading one of the page's icon URLs previously returned a 404.
 // - None of the favicons are cached in the Favicons database.
 TEST_F(FaviconHandlerTest, MultipleFavicons404) {
-  const GURL k404IconURL("http://www.google.com/404.png");
+  const GURL k404IconURL("http://www.9oo91e.qjz9zk/404.png");
 
   ON_CALL(favicon_service_, WasUnableToDownloadFavicon(k404IconURL))
       .WillByDefault(Return(true));
@@ -1514,7 +1514,7 @@ TEST_F(FaviconHandlerTest, MultipleFavicons404) {
 //   size.
 // - The 404 icon is last.
 TEST_F(FaviconHandlerTest, MultipleFaviconsLast404) {
-  const GURL k404IconURL("http://www.google.com/404.png");
+  const GURL k404IconURL("http://www.9oo91e.qjz9zk/404.png");
 
   ON_CALL(favicon_service_, WasUnableToDownloadFavicon(k404IconURL))
       .WillByDefault(Return(true));
@@ -1529,8 +1529,8 @@ TEST_F(FaviconHandlerTest, MultipleFaviconsLast404) {
 // - Downloading the page's icons has previously returned a 404.
 // - None of the favicons are cached in the Favicons database.
 TEST_F(FaviconHandlerTest, MultipleFaviconsAll404) {
-  const GURL k404IconURL1("http://www.google.com/a/404.png");
-  const GURL k404IconURL2("http://www.google.com/b/404.png");
+  const GURL k404IconURL1("http://www.9oo91e.qjz9zk/a/404.png");
+  const GURL k404IconURL2("http://www.9oo91e.qjz9zk/b/404.png");
 
   ON_CALL(favicon_service_, WasUnableToDownloadFavicon(k404IconURL1))
       .WillByDefault(Return(true));
@@ -1545,7 +1545,7 @@ TEST_F(FaviconHandlerTest, MultipleFaviconsAll404) {
 // Test that favicon mappings are removed if the page initially lists a favicon
 // and later uses Javascript to change it to another icon that returns a 404.
 TEST_F(FaviconHandlerTest, ChangeFaviconViaJavascriptTo404) {
-  const GURL k404IconURL("http://www.google.com/404.png");
+  const GURL k404IconURL("http://www.9oo91e.qjz9zk/404.png");
 
   EXPECT_CALL(favicon_service_, SetFavicons(base::flat_set<GURL>{kPageURL},
                                             kIconURL16x16, kFavicon, _));
@@ -1569,7 +1569,7 @@ TEST_F(FaviconHandlerTest, ChangeFaviconViaJavascriptTo404) {
 // lists a favicon and later uses Javascript to change it to another icon that
 // returns a 404.
 TEST_F(FaviconHandlerTest, ChangeFaviconViaJavascriptTo404InIncognito) {
-  const GURL k404IconURL("http://www.google.com/404.png");
+  const GURL k404IconURL("http://www.9oo91e.qjz9zk/404.png");
 
   ON_CALL(delegate_, IsOffTheRecord()).WillByDefault(Return(true));
   favicon_service_.fake()->Store(kPageURL, kIconURL16x16,
@@ -1603,11 +1603,11 @@ TEST_F(FaviconHandlerTest, FaviconInvalidURL) {
 
 TEST_F(FaviconHandlerTest, TestSortFavicon) {
   // Names represent the bitmap sizes per icon.
-  const GURL kIconURL1_17("http://www.google.com/a");
-  const GURL kIconURL1024_512("http://www.google.com/b");
-  const GURL kIconURL16_14("http://www.google.com/c");
-  const GURL kIconURLWithoutSize1("http://www.google.com/d");
-  const GURL kIconURLWithoutSize2("http://www.google.com/e");
+  const GURL kIconURL1_17("http://www.9oo91e.qjz9zk/a");
+  const GURL kIconURL1024_512("http://www.9oo91e.qjz9zk/b");
+  const GURL kIconURL16_14("http://www.9oo91e.qjz9zk/c");
+  const GURL kIconURLWithoutSize1("http://www.9oo91e.qjz9zk/d");
+  const GURL kIconURLWithoutSize2("http://www.9oo91e.qjz9zk/e");
 
   const std::vector<favicon::FaviconURL> kSourceIconURLs{
       FaviconURL(kIconURL1_17, kFavicon, {gfx::Size(1, 1), gfx::Size(17, 17)}),
@@ -1631,9 +1631,9 @@ TEST_F(FaviconHandlerTest, TestSortFavicon) {
 }
 
 TEST_F(FaviconHandlerTest, TestSortTouchIconLargest) {
-  const GURL kIconURLWithoutSize("http://www.google.com/touchicon-nosize");
-  const GURL kIconURL144x144("http://www.google.com/touchicon144x144");
-  const GURL kIconURL192x192("http://www.google.com/touchicon192x192");
+  const GURL kIconURLWithoutSize("http://www.9oo91e.qjz9zk/touchicon-nosize");
+  const GURL kIconURL144x144("http://www.9oo91e.qjz9zk/touchicon144x144");
+  const GURL kIconURL192x192("http://www.9oo91e.qjz9zk/touchicon192x192");
 
   const std::vector<favicon::FaviconURL> kSourceIconURLs{
       FaviconURL(kIconURLWithoutSize, kTouchIcon, kEmptySizes),
@@ -1653,11 +1653,11 @@ TEST_F(FaviconHandlerTest, TestSortTouchIconLargest) {
 
 TEST_F(FaviconHandlerTest, TestDownloadLargestFavicon) {
   // Names represent the bitmap sizes per icon.
-  const GURL kIconURL1024_512("http://www.google.com/a");
-  const GURL kIconURL15_14("http://www.google.com/b");
-  const GURL kIconURL16_512("http://www.google.com/c");
-  const GURL kIconURLWithoutSize1("http://www.google.com/d");
-  const GURL kIconURLWithoutSize2("http://www.google.com/e");
+  const GURL kIconURL1024_512("http://www.9oo91e.qjz9zk/a");
+  const GURL kIconURL15_14("http://www.9oo91e.qjz9zk/b");
+  const GURL kIconURL16_512("http://www.9oo91e.qjz9zk/c");
+  const GURL kIconURLWithoutSize1("http://www.9oo91e.qjz9zk/d");
+  const GURL kIconURLWithoutSize2("http://www.9oo91e.qjz9zk/e");
 
   RunHandlerWithCandidates(
       FaviconDriverObserver::NON_TOUCH_LARGEST,
@@ -1681,8 +1681,8 @@ TEST_F(FaviconHandlerTest, TestDownloadLargestFavicon) {
 }
 
 TEST_F(FaviconHandlerTest, TestSelectLargestFavicon) {
-  const GURL kIconURL1("http://www.google.com/b");
-  const GURL kIconURL2("http://www.google.com/c");
+  const GURL kIconURL1("http://www.9oo91e.qjz9zk/b");
+  const GURL kIconURL2("http://www.9oo91e.qjz9zk/c");
 
   delegate_.fake_image_downloader().Add(kIconURL1, IntVector{15});
   delegate_.fake_image_downloader().Add(kIconURL2, IntVector{14, 16});
@@ -1706,8 +1706,8 @@ TEST_F(FaviconHandlerTest, TestFaviconWasScaledAfterDownload) {
       FaviconDriverObserver::NON_TOUCH_LARGEST,
       /*candidates_from_web_manifest=*/false);
 
-  const GURL kIconURL1("http://www.google.com/b");
-  const GURL kIconURL2("http://www.google.com/c");
+  const GURL kIconURL1("http://www.9oo91e.qjz9zk/b");
+  const GURL kIconURL2("http://www.9oo91e.qjz9zk/c");
 
   const int kOriginalSize1 = kMaximalSize + 1;
   const int kOriginalSize2 = kMaximalSize + 2;
@@ -1751,7 +1751,7 @@ TEST_F(FaviconHandlerTest, TestKeepDownloadedLargestFavicon) {
 // considered the same document, favicon candidates listed in the second page
 // get associated to that second page only.
 TEST_F(FaviconHandlerTest, SetFaviconsForLastPageUrlOnly) {
-  const GURL kDifferentPageURL = GURL("http://www.google.com/other");
+  const GURL kDifferentPageURL = GURL("http://www.9oo91e.qjz9zk/other");
 
   EXPECT_CALL(favicon_service_,
               SetFavicons(base::flat_set<GURL>{kDifferentPageURL},
@@ -1779,7 +1779,7 @@ TEST_F(FaviconHandlerTest, SetFaviconsForLastPageUrlOnly) {
 // the same document (e.g. fragment navigation), favicon candidates listed in
 // the second page get associated to both page URLs.
 TEST_F(FaviconHandlerTest, SetFaviconsForMultipleUrlsWithinDocument) {
-  const GURL kDifferentPageURL = GURL("http://www.google.com/other");
+  const GURL kDifferentPageURL = GURL("http://www.9oo91e.qjz9zk/other");
 
   EXPECT_CALL(favicon_service_,
               SetFavicons(base::flat_set<GURL>{kPageURL, kDifferentPageURL},
@@ -1807,7 +1807,7 @@ TEST_F(FaviconHandlerTest, SetFaviconsForMultipleUrlsWithinDocument) {
 // logical grouping and blame layer.
 class FaviconHandlerManifestsEnabledTest : public FaviconHandlerTest {
  protected:
-  const GURL kManifestURL = GURL("http://www.google.com/manifest.json");
+  const GURL kManifestURL = GURL("http://www.9oo91e.qjz9zk/manifest.json");
 
   FaviconHandlerManifestsEnabledTest() = default;
 
@@ -2095,8 +2095,8 @@ TEST_F(FaviconHandlerManifestsEnabledTest, GetFaviconFromUnknownManifest) {
 
 // Test that icons from a web manifest use a desired size of 192x192.
 TEST_F(FaviconHandlerManifestsEnabledTest, Prefer192x192IconFromManifest) {
-  const GURL kIconURL144x144 = GURL("http://www.google.com/favicon144x144");
-  const GURL kIconURL192x192 = GURL("http://www.google.com/favicon192x192");
+  const GURL kIconURL144x144 = GURL("http://www.9oo91e.qjz9zk/favicon144x144");
+  const GURL kIconURL192x192 = GURL("http://www.9oo91e.qjz9zk/favicon192x192");
 
   delegate_.fake_image_downloader().Add(kIconURL144x144, IntVector{144});
   delegate_.fake_image_downloader().Add(kIconURL192x192, IntVector{192});
@@ -2121,7 +2121,7 @@ TEST_F(FaviconHandlerManifestsEnabledTest, Prefer192x192IconFromManifest) {
 // URL nor the manifest URL.
 TEST_F(FaviconHandlerManifestsEnabledTest,
        GetNonResized192x192FaviconFromUnknownManifest) {
-  const GURL kIconURL192x192 = GURL("http://www.google.com/favicon192x192");
+  const GURL kIconURL192x192 = GURL("http://www.9oo91e.qjz9zk/favicon192x192");
   const std::vector<favicon::FaviconURL> kManifestIcons = {
       FaviconURL(kIconURL192x192, kWebManifestIcon, kEmptySizes),
   };
@@ -2161,7 +2161,7 @@ TEST_F(FaviconHandlerManifestsEnabledTest, GetFaviconFromExpiredManifest) {
 // URL.
 TEST_F(FaviconHandlerManifestsEnabledTest,
        GetFaviconFromExpiredManifestLinkedFromOtherPage) {
-  const GURL kSomePreviousPageURL("https://www.google.com/previous");
+  const GURL kSomePreviousPageURL("https://www.9oo91e.qjz9zk/previous");
   const std::vector<favicon::FaviconURL> kManifestIcons = {
       FaviconURL(kIconURL64x64, kWebManifestIcon, kEmptySizes),
   };
@@ -2187,7 +2187,7 @@ TEST_F(FaviconHandlerManifestsEnabledTest,
 // - There is data in the database for the icon URL listed in the manifest.
 TEST_F(FaviconHandlerManifestsEnabledTest,
        GetFaviconFromUnknownManifestButKnownIcon) {
-  const GURL kSomePreviousPageURL("https://www.google.com/previous");
+  const GURL kSomePreviousPageURL("https://www.9oo91e.qjz9zk/previous");
   const std::vector<favicon::FaviconURL> kManifestIcons = {
       FaviconURL(kIconURL16x16, kWebManifestIcon, kEmptySizes),
   };
@@ -2339,7 +2339,7 @@ TEST_F(FaviconHandlerManifestsEnabledTest, UnknownManifestWithoutIcons) {
 // - The database knows about the icon URL.
 TEST_F(FaviconHandlerManifestsEnabledTest,
        UnknownManifestWithoutIconsAndKnownRegularIcons) {
-  const GURL kSomePreviousPageURL("https://www.google.com/previous");
+  const GURL kSomePreviousPageURL("https://www.9oo91e.qjz9zk/previous");
 
   delegate_.fake_manifest_downloader().Add(kManifestURL,
                                            std::vector<favicon::FaviconURL>());
@@ -2393,8 +2393,8 @@ TEST_F(FaviconHandlerManifestsEnabledTest,
 // Test that Delegate::OnFaviconUpdated() is called if a page uses Javascript to
 // modify the page's <link rel="manifest"> tag to point to a different manifest.
 TEST_F(FaviconHandlerManifestsEnabledTest, ManifestUpdateViaJavascript) {
-  const GURL kManifestURL1("http://www.google.com/manifest1.json");
-  const GURL kManifestURL2("http://www.google.com/manifest2.json");
+  const GURL kManifestURL1("http://www.9oo91e.qjz9zk/manifest1.json");
+  const GURL kManifestURL2("http://www.9oo91e.qjz9zk/manifest2.json");
   const std::vector<favicon::FaviconURL> kManifestIcons1 = {
       FaviconURL(kIconURL64x64, kWebManifestIcon, kEmptySizes),
   };
@@ -2532,7 +2532,7 @@ TEST_F(FaviconHandlerManifestsEnabledTest,
 // - The database has bitmap data for the manifest URL.
 TEST_F(FaviconHandlerManifestsEnabledTest,
        AddKnownManifestViaJavascriptWhileImageDownload) {
-  const GURL kSomePreviousPageURL("https://www.google.com/previous");
+  const GURL kSomePreviousPageURL("https://www.9oo91e.qjz9zk/previous");
 
   favicon_service_.fake()->Store(
       kSomePreviousPageURL, kManifestURL,
@@ -2615,8 +2615,8 @@ TEST_F(FaviconHandlerManifestsEnabledTest,
 // - The second manifest contains the same icons as the first.
 TEST_F(FaviconHandlerManifestsEnabledTest,
        UpdateManifestWithSameIconURLsWhileDownloading) {
-  const GURL kManifestURL1("http://www.google.com/manifest1.json");
-  const GURL kManifestURL2("http://www.google.com/manifest2.json");
+  const GURL kManifestURL1("http://www.9oo91e.qjz9zk/manifest1.json");
+  const GURL kManifestURL2("http://www.9oo91e.qjz9zk/manifest2.json");
   const std::vector<favicon::FaviconURL> kManifestIcons = {
       FaviconURL(kIconURL64x64, kWebManifestIcon, kEmptySizes),
   };

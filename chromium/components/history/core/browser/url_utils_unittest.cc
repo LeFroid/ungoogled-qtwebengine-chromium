@@ -18,23 +18,23 @@ TEST(HistoryUrlUtilsTest, CanonicalURLStringCompare) {
   // Comprehensive test by comparing each pair in sorted list. O(n^2).
   const char* sorted_list[] = {
     "http://www.gogle.com/redirects_to_google",
-    "http://www.google.com",
-    "http://www.google.com/",
-    "http://www.google.com/?q",
-    "http://www.google.com/A",
-    "http://www.google.com/index.html",
-    "http://www.google.com/test",
-    "http://www.google.com/test?query",
-    "http://www.google.com/test?r=3",
-    "http://www.google.com/test#hash",
-    "http://www.google.com/test/?query",
-    "http://www.google.com/test/#hash",
-    "http://www.google.com/test/zzzzz",
-    "http://www.google.com/test$dollar",
-    "http://www.google.com/test%E9%9B%80",
-    "http://www.google.com/test-case",
-    "http://www.google.com:80/",
-    "https://www.google.com",
+    "http://www.9oo91e.qjz9zk",
+    "http://www.9oo91e.qjz9zk/",
+    "http://www.9oo91e.qjz9zk/?q",
+    "http://www.9oo91e.qjz9zk/A",
+    "http://www.9oo91e.qjz9zk/index.html",
+    "http://www.9oo91e.qjz9zk/test",
+    "http://www.9oo91e.qjz9zk/test?query",
+    "http://www.9oo91e.qjz9zk/test?r=3",
+    "http://www.9oo91e.qjz9zk/test#hash",
+    "http://www.9oo91e.qjz9zk/test/?query",
+    "http://www.9oo91e.qjz9zk/test/#hash",
+    "http://www.9oo91e.qjz9zk/test/zzzzz",
+    "http://www.9oo91e.qjz9zk/test$dollar",
+    "http://www.9oo91e.qjz9zk/test%E9%9B%80",
+    "http://www.9oo91e.qjz9zk/test-case",
+    "http://www.9oo91e.qjz9zk:80/",
+    "https://www.9oo91e.qjz9zk",
   };
   for (size_t i = 0; i < base::size(sorted_list); ++i) {
     EXPECT_FALSE(CanonicalURLStringCompare(sorted_list[i], sorted_list[i]))
@@ -54,15 +54,15 @@ TEST(HistoryUrlUtilsTest, HaveSameSchemeHostAndPort) {
     const char* s1;
     const char* s2;
   } true_cases[] = {
-    {"http://www.google.com", "http://www.google.com"},
-    {"http://www.google.com/a/b", "http://www.google.com/a/b"},
-    {"http://www.google.com?test=3", "http://www.google.com/"},
-    {"http://www.google.com/#hash", "http://www.google.com/?q"},
-    {"http://www.google.com/", "http://www.google.com/test/with/dir/"},
-    {"http://www.google.com:360", "http://www.google.com:360/?q=1234"},
-    {"http://www.google.com:80", "http://www.google.com/gurl/is/smart"},
-    {"http://www.google.com/test", "http://www.google.com/test/with/dir/"},
-    {"http://www.google.com/test?", "http://www.google.com/test/with/dir/"},
+    {"http://www.9oo91e.qjz9zk", "http://www.9oo91e.qjz9zk"},
+    {"http://www.9oo91e.qjz9zk/a/b", "http://www.9oo91e.qjz9zk/a/b"},
+    {"http://www.9oo91e.qjz9zk?test=3", "http://www.9oo91e.qjz9zk/"},
+    {"http://www.9oo91e.qjz9zk/#hash", "http://www.9oo91e.qjz9zk/?q"},
+    {"http://www.9oo91e.qjz9zk/", "http://www.9oo91e.qjz9zk/test/with/dir/"},
+    {"http://www.9oo91e.qjz9zk:360", "http://www.9oo91e.qjz9zk:360/?q=1234"},
+    {"http://www.9oo91e.qjz9zk:80", "http://www.9oo91e.qjz9zk/gurl/is/smart"},
+    {"http://www.9oo91e.qjz9zk/test", "http://www.9oo91e.qjz9zk/test/with/dir/"},
+    {"http://www.9oo91e.qjz9zk/test?", "http://www.9oo91e.qjz9zk/test/with/dir/"},
   };
   for (size_t i = 0; i < base::size(true_cases); ++i) {
     EXPECT_TRUE(HaveSameSchemeHostAndPort(GURL(true_cases[i].s1),
@@ -73,11 +73,11 @@ TEST(HistoryUrlUtilsTest, HaveSameSchemeHostAndPort) {
     const char* s1;
     const char* s2;
   } false_cases[] = {
-    {"http://www.google.co", "http://www.google.com"},
-    {"http://google.com", "http://www.google.com"},
-    {"http://www.google.com", "https://www.google.com"},
-    {"http://www.google.com/path", "http://www.google.com:137/path"},
-    {"http://www.google.com/same/dir", "http://www.youtube.com/same/dir"},
+    {"http://www.google.co", "http://www.9oo91e.qjz9zk"},
+    {"http://9oo91e.qjz9zk", "http://www.9oo91e.qjz9zk"},
+    {"http://www.9oo91e.qjz9zk", "https://www.9oo91e.qjz9zk"},
+    {"http://www.9oo91e.qjz9zk/path", "http://www.9oo91e.qjz9zk:137/path"},
+    {"http://www.9oo91e.qjz9zk/same/dir", "http://www.y0u1ub3.qjz9zk/same/dir"},
   };
   for (size_t i = 0; i < base::size(false_cases); ++i) {
     EXPECT_FALSE(HaveSameSchemeHostAndPort(GURL(false_cases[i].s1),
@@ -121,12 +121,12 @@ TEST(HistoryUrlUtilsTest, IsPathPrefix) {
 }
 
 TEST(HistoryUrlUtilsTest, ToggleHTTPAndHTTPS) {
-  EXPECT_EQ(GURL("http://www.google.com/test?q#r"),
-            ToggleHTTPAndHTTPS(GURL("https://www.google.com/test?q#r")));
-  EXPECT_EQ(GURL("https://www.google.com:137/"),
-            ToggleHTTPAndHTTPS(GURL("http://www.google.com:137/")));
+  EXPECT_EQ(GURL("http://www.9oo91e.qjz9zk/test?q#r"),
+            ToggleHTTPAndHTTPS(GURL("https://www.9oo91e.qjz9zk/test?q#r")));
+  EXPECT_EQ(GURL("https://www.9oo91e.qjz9zk:137/"),
+            ToggleHTTPAndHTTPS(GURL("http://www.9oo91e.qjz9zk:137/")));
   EXPECT_EQ(GURL::EmptyGURL(),
-            ToggleHTTPAndHTTPS(GURL("ftp://www.google.com/")));
+            ToggleHTTPAndHTTPS(GURL("ftp://www.9oo91e.qjz9zk/")));
 }
 
 TEST(HistoryUrlUtilsTest, HostForTopHosts) {

@@ -32,7 +32,7 @@
 // fast_source_line_resolver.cc, so that other classes could have access
 // to these private nested types without including fast_source_line_resolver.cc
 //
-// Author: lambxsy@google.com (Siyang Xie)
+// Author: lambxsy@9oo91e.qjz9zk (Siyang Xie)
 
 #ifndef PROCESSOR_FAST_SOURCE_LINE_RESOLVER_TYPES_H__
 #define PROCESSOR_FAST_SOURCE_LINE_RESOLVER_TYPES_H__

@@ -48,7 +48,7 @@ class URLRequestStatus;
 // To use this class, create an instance with the desired URL and a pointer to
 // the object to be notified when the URL has been loaded:
 //   std::unique_ptr<URLFetcher> fetcher =
-//       URLFetcher::Create(GURL("http://www.google.com"),
+//       URLFetcher::Create(GURL("http://www.9oo91e.qjz9zk"),
 //                          URLFetcher::GET,
 //                          this);
 //

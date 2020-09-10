@@ -191,7 +191,7 @@ TEST_F(FaviconSourceTestWithLegacyFormat,
       .Times(0);
 
   source()->StartDataRequest(
-      GURL(base::StrCat({kDummyPrefix, "size/16@1x/https://www.google.com"})),
+      GURL(base::StrCat({kDummyPrefix, "size/16@1x/https://www.9oo91e.qjz9zk"})),
       test_web_contents_getter_, base::BindRepeating(&Noop));
 }
 
@@ -199,7 +199,7 @@ TEST_F(FaviconSourceTestWithLegacyFormat,
        ShouldRecordFaviconResourceHistogram_NonExtensionOrigin) {
   base::HistogramTester tester;
   source()->StartDataRequest(
-      GURL(base::StrCat({kDummyPrefix, "size/16@1x/https://www.google.com"})),
+      GURL(base::StrCat({kDummyPrefix, "size/16@1x/https://www.9oo91e.qjz9zk"})),
       test_web_contents_getter_, base::DoNothing());
   tester.ExpectBucketCount("Extensions.FaviconResourceRequested",
                            extensions::Manifest::TYPE_EXTENSION, 0);
@@ -214,7 +214,7 @@ TEST_F(FaviconSourceTestWithLegacyFormat,
       ->SetLastCommittedURL(extension->url());
   base::HistogramTester tester;
   source()->StartDataRequest(
-      GURL(base::StrCat({kDummyPrefix, "size/16@1x/https://www.google.com"})),
+      GURL(base::StrCat({kDummyPrefix, "size/16@1x/https://www.9oo91e.qjz9zk"})),
       test_web_contents_getter_, base::DoNothing());
   tester.ExpectBucketCount("Extensions.FaviconResourceRequested",
                            extensions::Manifest::TYPE_EXTENSION, 1);
@@ -224,7 +224,7 @@ TEST_F(FaviconSourceTestWithFavicon2Format,
        ShouldNotRecordFaviconResourceHistogram) {
   base::HistogramTester tester;
   source()->StartDataRequest(
-      GURL(base::StrCat({kDummyPrefix, "size/16@1x/https://www.google.com"})),
+      GURL(base::StrCat({kDummyPrefix, "size/16@1x/https://www.9oo91e.qjz9zk"})),
       test_web_contents_getter_, base::BindRepeating(&Noop));
   std::unique_ptr<base::HistogramSamples> samples(
       tester.GetHistogramSamplesSinceCreation(
@@ -289,7 +289,7 @@ TEST_F(
 
   EXPECT_CALL(
       *mock_history_ui_favicon_request_handler_,
-      GetRawFaviconForPageURL(GURL("https://www.google.com"), _, _, _, _))
+      GetRawFaviconForPageURL(GURL("https://www.9oo91e.qjz9zk"), _, _, _, _))
       .Times(1);
 
   source()->StartDataRequest(

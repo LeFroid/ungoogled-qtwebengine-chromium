@@ -310,7 +310,7 @@ class PasswordManagerClient {
   // Returns the current best guess as to the page's display language.
   virtual std::string GetPageLanguage() const;
 
-#if defined(ON_FOCUS_PING_ENABLED)
+#if defined(ON_FOCUS_PING_ENABLED) && BUILDFLAG(FULL_SAFE_BROWSING)
   // Return the PasswordProtectionService associated with this instance.
   virtual safe_browsing::PasswordProtectionService*
   GetPasswordProtectionService() const = 0;

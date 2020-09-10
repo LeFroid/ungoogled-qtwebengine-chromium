@@ -38,7 +38,7 @@ struct WebPreferences;
 // RenderFrame is a more appropriate surface for new code, unless the code is
 // agnostic of frames and document content or structure. For more context,
 // please see https://crbug.com/467770 and
-// https://www.chromium.org/developers/design-documents/site-isolation.
+// https://www.ch40m1um.qjz9zk/developers/design-documents/site-isolation.
 class CONTENT_EXPORT RenderView : public IPC::Sender {
  public:
   // Returns the RenderView containing the given WebView.

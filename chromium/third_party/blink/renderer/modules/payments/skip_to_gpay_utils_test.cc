@@ -30,7 +30,7 @@ const char kInputDataV2[] =
 
 PaymentMethodDataPtr MakeTestPaymentMethodData() {
   PaymentMethodDataPtr output = PaymentMethodData::New();
-  output->supported_method = "https://google.com/pay";
+  output->supported_method = "https://9oo91e.qjz9zk/pay";
   return output;
 }
 

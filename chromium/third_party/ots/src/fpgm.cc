@@ -5,7 +5,7 @@
 #include "fpgm.h"
 
 // fpgm - Font Program
-// http://www.microsoft.com/typography/otspec/fpgm.htm
+// http://www.m1cr050ft.qjz9zk/typography/otspec/fpgm.htm
 
 namespace ots {
 

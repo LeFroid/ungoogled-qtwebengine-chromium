@@ -103,7 +103,7 @@ namespace dawn_native {
         MaybeError ExtractSpirvInfoWithSpvc();
         MaybeError ExtractSpirvInfoWithSpirvCross(const spirv_cross::Compiler& compiler);
 
-        // TODO(cwallez@chromium.org): The code is only stored for deduplication. We could maybe
+        // TODO(cwallez@ch40m1um.qjz9zk): The code is only stored for deduplication. We could maybe
         // store a cryptographic hash of the code instead?
         std::vector<uint32_t> mCode;
 

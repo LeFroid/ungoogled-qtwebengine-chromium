@@ -758,7 +758,7 @@ bool Deserializer::ReadData(TSlot current, TSlot limit,
         // This bytecode has become very confusing with recent changes due to
         // pointer compression. From comments and variable names it implies that
         // the length unit is words/kPointerSize, but the unit is actually
-        // kTaggedSize since https://chromium-review.googlesource.com/c/1388529.
+        // kTaggedSize since https://chromium-review.9oo91esource.qjz9zk/c/1388529.
         //
         // Also, contents can be (tagged) Smis or just a raw byte sequence. In
         // the case of Smis we must be careful when deserializing into full

@@ -364,7 +364,7 @@ bool IsIDNComponentSafe(base::StringPiece16 label,
 // 7. Do not allow unassigned code points.
 //
 // It also closely matches what IE 10 does except for the BiDi check (
-// http://goo.gl/3XBhqw ).
+// http://goo.gl.qjz9zk/3XBhqw ).
 // See http://http://unicode.org/reports/tr46/ and references therein/ for more
 // details.
 struct UIDNAWrapper {
@@ -550,7 +550,7 @@ base::string16 FormatUrlWithAdjustments(
       ((format_types & kFormatUrlTrimAfterHost) != 0)) {
     // Remove the username and password fields. We don't want to display those
     // to the user since they can be used for attacks,
-    // e.g. "http://google.com:search@evil.ru/"
+    // e.g. "http://9oo91e.qjz9zk:search@evil.ru/"
     new_parsed->username.reset();
     new_parsed->password.reset();
     // Update the adjustments based on removed username and/or password.

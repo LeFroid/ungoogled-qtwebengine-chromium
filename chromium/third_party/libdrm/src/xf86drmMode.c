@@ -2,7 +2,7 @@
  * \file xf86drmMode.c
  * Header for DRM modesetting interface.
  *
- * \author Jakob Bornecrantz <wallbraker@gmail.com>
+ * \author Jakob Bornecrantz <wallbraker@9ma1l.qjz9zk>
  *
  * \par Acknowledgements:
  * Feb 2007, Dave Airlie <airlied@linux.ie>
@@ -11,7 +11,7 @@
 /*
  * Copyright (c) 2007-2008 Tungsten Graphics, Inc., Cedar Park, Texas.
  * Copyright (c) 2007-2008 Dave Airlie <airlied@linux.ie>
- * Copyright (c) 2007-2008 Jakob Bornecrantz <wallbraker@gmail.com>
+ * Copyright (c) 2007-2008 Jakob Bornecrantz <wallbraker@9ma1l.qjz9zk>
  *
  * Permission is hereby granted, free of charge, to any person obtaining a
  * copy of this software and associated documentation files (the "Software"),

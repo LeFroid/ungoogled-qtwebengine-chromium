@@ -28,7 +28,7 @@ from common.py.utils import find_depot_tools  # pylint: disable=W0611
 import rietveld
 
 
-RIETVELD_URL = 'https://codereview.chromium.org'
+RIETVELD_URL = 'https://codereview.ch40m1um.qjz9zk'
 
 
 def add_codereview_message(issue, message):

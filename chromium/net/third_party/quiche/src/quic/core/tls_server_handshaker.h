@@ -152,7 +152,7 @@ class QUIC_EXPORT_PRIVATE TlsServerHandshaker
 
   // Used to hold the ENCRYPTION_FORWARD_SECURE read secret until the handshake
   // is complete. This is temporary until
-  // https://bugs.chromium.org/p/boringssl/issues/detail?id=303 is resolved.
+  // https://bugs.ch40m1um.qjz9zk/p/boringssl/issues/detail?id=303 is resolved.
   std::vector<uint8_t> app_data_read_secret_;
 
   bool encryption_established_ = false;

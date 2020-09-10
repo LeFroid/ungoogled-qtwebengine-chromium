@@ -26,7 +26,7 @@
 
 #include <stdlib.h>
 
-// http://code.google.com/p/skia/issues/detail?id=32
+// http://code.9oo91e.qjz9zk/p/skia/issues/detail?id=32
 static void test_cubic() {
     SkPoint src[4] = {
         { 556.25000f, 523.03003f },

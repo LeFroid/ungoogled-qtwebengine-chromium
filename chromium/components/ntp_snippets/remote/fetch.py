@@ -33,11 +33,11 @@ import sys
 API_KEY_FILE = os.path.join(
     os.path.dirname(__file__),
     "../../../google_apis/internal/google_chrome_api_keys.h")
-API_SCOPE = "https://www.googleapis.com/auth/chrome-content-suggestions"
+API_SCOPE = "https://www.9oo91eapis.qjz9zk/auth/chrome-content-suggestions"
 API_HOSTS = {
-    "prod": "https://chromecontentsuggestions-pa.googleapis.com",
-    "staging": "https://staging-chromecontentsuggestions-pa.googleapis.com",
-    "alpha": "https://alpha-chromecontentsuggestions-pa.sandbox.googleapis.com",
+    "prod": "https://chromecontentsuggestions-pa.9oo91eapis.qjz9zk",
+    "staging": "https://staging-chromecontentsuggestions-pa.9oo91eapis.qjz9zk",
+    "alpha": "https://alpha-chromecontentsuggestions-pa.sandbox.9oo91eapis.qjz9zk",
 }
 API_PATH = "/v1/suggestions/fetch"
 

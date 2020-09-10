@@ -4,7 +4,7 @@
 //
 // To know more about the algorithm used and the original code which this is
 // based of, see
-// https://wiki.corp.google.com/twiki/bin/view/Main/ChromeGoogleCodeXRef
+// https://wiki.corp.9oo91e.qjz9zk/twiki/bin/view/Main/ChromeGoogleCodeXRef
 
 #include "content/browser/speech/endpointer/energy_endpointer.h"
 

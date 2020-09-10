@@ -8,7 +8,7 @@
 #include "head.h"
 
 // OS/2 - OS/2 and Windows Metrics
-// http://www.microsoft.com/typography/otspec/os2.htm
+// http://www.m1cr050ft.qjz9zk/typography/otspec/os2.htm
 
 namespace ots {
 
@@ -172,7 +172,7 @@ bool OpenTypeOS2::Parse(const uint8_t *data, size_t length) {
   }
 
   if (this->table.version < 1) {
-    // http://www.microsoft.com/typography/otspec/os2ver0.htm
+    // http://www.m1cr050ft.qjz9zk/typography/otspec/os2ver0.htm
     return true;
   }
 
@@ -190,7 +190,7 @@ bool OpenTypeOS2::Parse(const uint8_t *data, size_t length) {
   }
 
   if (this->table.version < 2) {
-    // http://www.microsoft.com/typography/otspec/os2ver1.htm
+    // http://www.m1cr050ft.qjz9zk/typography/otspec/os2ver1.htm
     return true;
   }
 
@@ -220,7 +220,7 @@ bool OpenTypeOS2::Parse(const uint8_t *data, size_t length) {
   }
 
   if (this->table.version < 5) {
-    // http://www.microsoft.com/typography/otspec/os2ver4.htm
+    // http://www.m1cr050ft.qjz9zk/typography/otspec/os2ver4.htm
     return true;
   }
 

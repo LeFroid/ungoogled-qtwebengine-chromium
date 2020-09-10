@@ -48,7 +48,7 @@ class AddSupervisionBrowserTest : public InProcessBrowserTest {
     // FakeGaia.IssueOAuthToken().
     identity_test_env_ = std::make_unique<signin::IdentityTestEnvironment>();
     identity_test_env_->MakeUnconsentedPrimaryAccountAvailable(
-        "example@gmail.com");
+        "example@9ma1l.qjz9zk");
     // This makes the identity manager return the string "access_token" for the
     // access token.
     identity_test_env_->SetAutomaticIssueOfAccessTokens(true);

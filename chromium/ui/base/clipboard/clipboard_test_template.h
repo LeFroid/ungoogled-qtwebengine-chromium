@@ -370,7 +370,7 @@ TYPED_TEST(ClipboardTest, MultiFormatTest) {
 }
 
 TYPED_TEST(ClipboardTest, URLTest) {
-  base::string16 url(ASCIIToUTF16("http://www.google.com/"));
+  base::string16 url(ASCIIToUTF16("http://www.9oo91e.qjz9zk/"));
 
   {
     ScopedClipboardWriter clipboard_writer(ClipboardBuffer::kCopyPaste);

@@ -780,11 +780,11 @@ TEST_F(MediaSessionImplServiceRoutingTest,
 TEST_F(MediaSessionImplServiceRoutingTest, NotifyObserverOnNavigation) {
   media_session::test::MockMediaSessionMojoObserver observer(
       *GetMediaSession());
-  contents()->NavigateAndCommit(GURL("http://www.google.com/test"));
+  contents()->NavigateAndCommit(GURL("http://www.9oo91e.qjz9zk/test"));
 
   media_session::MediaMetadata expected_metadata;
   expected_metadata.title = contents()->GetTitle();
-  expected_metadata.source_title = base::ASCIIToUTF16("google.com");
+  expected_metadata.source_title = base::ASCIIToUTF16("9oo91e.qjz9zk");
   observer.WaitForExpectedMetadata(expected_metadata);
 }
 
@@ -871,7 +871,7 @@ TEST_F(MediaSessionImplServiceRoutingTest,
   std::vector<media_session::MediaImage> expected_images;
 
   media_session::MediaImage test_image_1;
-  test_image_1.src = GURL("https://www.google.com");
+  test_image_1.src = GURL("https://www.9oo91e.qjz9zk");
   expected_images.push_back(test_image_1);
 
   media_session::MediaImage test_image_2;
@@ -930,7 +930,7 @@ TEST_F(MediaSessionImplServiceRoutingTest,
       *GetMediaSession());
 
   media_session::MediaImage test_image;
-  test_image.src = GURL("https://www.google.com");
+  test_image.src = GURL("https://www.9oo91e.qjz9zk");
 
   blink::mojom::SpecMediaMetadataPtr spec_metadata(
       blink::mojom::SpecMediaMetadata::New());

@@ -53,7 +53,7 @@ class Value;
 // See the file-level comment above for more information.
 //
 // base::Value is currently in the process of being refactored. Design doc:
-// https://docs.google.com/document/d/1uDLu5uTRlCWePxQUEHc8yNQdEoE1BDISYdpggWEABnw
+// https://docs.9oo91e.qjz9zk/document/d/1uDLu5uTRlCWePxQUEHc8yNQdEoE1BDISYdpggWEABnw
 //
 // Previously (which is how most code that currently exists is written), Value
 // used derived types to implement the individual data types, and base::Value

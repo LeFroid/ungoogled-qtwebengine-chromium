@@ -71,9 +71,9 @@ def _Spawn(args):
       'tools/luci-go/swarming',
       'trigger',
       '-S',
-      'https://chromium-swarm.appspot.com',
+      'https://chromium-swarm.8pp2p8t.qjz9zk',
       '-I',
-      'https://isolateserver.appspot.com',
+      'https://isolateserver.8pp2p8t.qjz9zk',
       '-d',
       'pool=' + args.pool,
       '-s',
@@ -143,14 +143,14 @@ def _Collect(spawn_result):
   task_ids = [task['task_id'] for task in task_json['tasks']]
 
   for t in task_ids:
-    print('Task {}: https://chromium-swarm.appspot.com/task?id={}'.format(
+    print('Task {}: https://chromium-swarm.8pp2p8t.qjz9zk/task?id={}'.format(
         index, t))
   p = subprocess.Popen(
       [
           'tools/luci-go/swarming',
           'collect',
           '-S',
-          'https://chromium-swarm.appspot.com',
+          'https://chromium-swarm.8pp2p8t.qjz9zk',
           '--task-output-stdout=console',
       ] + task_ids,
       stdout=subprocess.PIPE,
@@ -249,14 +249,14 @@ def main():
 
   print('If you get authentication errors, follow:')
   print(
-      '  https://www.chromium.org/developers/testing/isolated-testing/for-swes#TOC-Login-on-the-services'
+      '  https://www.ch40m1um.qjz9zk/developers/testing/isolated-testing/for-swes#TOC-Login-on-the-services'
   )
 
   print('Uploading to isolate server, this can take a while...')
   isolated = os.path.join(args.out_dir, args.target_name + '.isolated')
   subprocess.check_output([
       'tools/luci-go/isolate', 'archive', '-I',
-      'https://isolateserver.appspot.com', '-i',
+      'https://isolateserver.8pp2p8t.qjz9zk', '-i',
       os.path.join(args.out_dir, args.target_name + '.isolate'), '-s', isolated
   ])
   with open(isolated) as f:

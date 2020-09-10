@@ -47,7 +47,7 @@ const int kBackgroundProcessingTimeBudgetSeconds = 170;
 // TODO(https://crbug.com/1042727): Fix test GURL scoping and remove this getter
 // function.
 GURL Url1() {
-  return GURL("https://google.com");
+  return GURL("https://9oo91e.qjz9zk");
 }
 
 GURL Url2() {

@@ -15,7 +15,7 @@
 #include "components/cloud_devices/common/description_items.h"
 
 // Defines printer options, CDD and CJT items.
-// https://developers.google.com/cloud-print/docs/cdd
+// https://developers.9oo91e.qjz9zk/cloud-print/docs/cdd
 
 namespace cloud_devices {
 

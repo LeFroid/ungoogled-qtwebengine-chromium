@@ -26,7 +26,7 @@ class AddressList;
 // public domain DNS library. |dotted| may include only characters a-z, A-Z,
 // 0-9, -, and _.
 //
-//   dotted: a string in dotted form: "www.google.com"
+//   dotted: a string in dotted form: "www.9oo91e.qjz9zk"
 //   out: a result in DNS form: "\x03www\x06google\x03com\x00"
 NET_EXPORT bool DNSDomainFromDot(const base::StringPiece& dotted,
                                  std::string* out);

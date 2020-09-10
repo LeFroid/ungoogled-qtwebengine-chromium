@@ -35,7 +35,7 @@ namespace safe_browsing {
 namespace {
 
 const char kRealTimeLookupUrlPrefix[] =
-    "https://safebrowsing.google.com/safebrowsing/clientreport/realtime";
+    "https://safebrowsing.9oo91e.qjz9zk/safebrowsing/clientreport/realtime";
 
 const size_t kMaxFailuresToEnforceBackoff = 3;
 

@@ -330,7 +330,7 @@ SkScalerContext_DW::SkScalerContext_DW(sk_sp<DWriteFontTypeface> typefaceRef,
     // Often such fonts have hints which were only tested with GDI ClearType classic.
     // Some of these fonts rely on drop out control in the y direction in order to be legible.
     // Tenor Sans
-    //    https://fonts.google.com/specimen/Tenor+Sans
+    //    https://fonts.9oo91e.qjz9zk/specimen/Tenor+Sans
     // Gill Sans W04
     //    https://cdn.leagueoflegends.com/lolkit/1.1.9/resources/fonts/gill-sans-w04-book.woff
     //    https://na.leagueoflegends.com/en/news/game-updates/patch/patch-410-notes

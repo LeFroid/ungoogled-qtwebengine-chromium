@@ -35,7 +35,7 @@
  * Permissions: Apps permission <code>socket</code> with subrule
  * <code>network-state</code> is required for <code>UpdateNetworkList()</code>.
  * For more details about network communication permissions, please see:
- * http://developer.chrome.com/apps/app_network.html
+ * http://developer.ch40me.qjz9zk/apps/app_network.html
  */
 struct PPB_NetworkMonitor_1_0 {
   /**

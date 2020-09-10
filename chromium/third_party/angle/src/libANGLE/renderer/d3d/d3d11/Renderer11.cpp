@@ -1094,7 +1094,7 @@ egl::ConfigSet Renderer11::generateConfigs()
     if (mRenderer11DeviceCaps.featureLevel >= D3D_FEATURE_LEVEL_10_0)
     {
         // Additional high bit depth formats added in D3D 10.0
-        // https://msdn.microsoft.com/en-us/library/windows/desktop/bb173064.aspx
+        // https://msdn.m1cr050ft.qjz9zk/en-us/library/windows/desktop/bb173064.aspx
         colorBufferFormats.push_back(GL_RGBA16F);
         colorBufferFormats.push_back(GL_RGB10_A2);
     }
@@ -4060,7 +4060,7 @@ angle::Result Renderer11::getSamplerState(const gl::Context *context,
 UINT Renderer11::getSampleDescQuality(GLuint supportedSamples) const
 {
     // Per the documentation on
-    // https://docs.microsoft.com/en-us/windows/win32/api/d3d11/ne-d3d11-d3d11_standard_multisample_quality_levels
+    // https://docs.m1cr050ft.qjz9zk/en-us/windows/win32/api/d3d11/ne-d3d11-d3d11_standard_multisample_quality_levels
     // applications can only request the standard multisample pattern on
     // feature levels 10_1 and above.
     if (supportedSamples > 0 && mDevice->GetFeatureLevel() >= D3D_FEATURE_LEVEL_10_1)
@@ -4095,7 +4095,7 @@ angle::Result Renderer11::clearRenderTarget(const gl::Context *context,
     ID3D11RenderTargetView *rtv = rt11->getRenderTargetView().get();
 
     // There are complications with some types of RTV and FL 9_3 with ClearRenderTargetView.
-    // See https://msdn.microsoft.com/en-us/library/windows/desktop/ff476388(v=vs.85).aspx
+    // See https://msdn.m1cr050ft.qjz9zk/en-us/library/windows/desktop/ff476388(v=vs.85).aspx
     ASSERT(mRenderer11DeviceCaps.featureLevel > D3D_FEATURE_LEVEL_9_3 || !IsArrayRTV(rtv));
 
     const auto &d3d11Format = rt11->getFormatSet();

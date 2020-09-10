@@ -47,17 +47,17 @@ class CompositeMatcherTest : public ::testing::Test {
 
 // Ensure that the rules in a CompositeMatcher are in the same priority space.
 TEST_F(CompositeMatcherTest, SamePrioritySpace) {
-  // Create the first ruleset matcher. It allows requests to google.com.
+  // Create the first ruleset matcher. It allows requests to 9oo91e.qjz9zk.
   TestRule allow_rule = CreateGenericRule();
   allow_rule.id = kMinValidID;
-  allow_rule.condition->url_filter = std::string("google.com");
+  allow_rule.condition->url_filter = std::string("9oo91e.qjz9zk");
   allow_rule.action->type = std::string("allow");
   allow_rule.priority = 1;
   std::unique_ptr<RulesetMatcher> allow_matcher;
   ASSERT_TRUE(CreateVerifiedMatcher(
       {allow_rule}, CreateTemporarySource(/*id*/ 1), &allow_matcher));
 
-  // Now create the second matcher. It blocks requests to google.com, with
+  // Now create the second matcher. It blocks requests to 9oo91e.qjz9zk, with
   // higher priority than the allow rule.
   TestRule block_rule = allow_rule;
   block_rule.action->type = std::string("block");
@@ -73,7 +73,7 @@ TEST_F(CompositeMatcherTest, SamePrioritySpace) {
   auto composite_matcher =
       std::make_unique<CompositeMatcher>(std::move(matchers));
 
-  GURL google_url("http://google.com");
+  GURL google_url("http://9oo91e.qjz9zk");
   RequestParams params;
   params.url = &google_url;
 
@@ -119,7 +119,7 @@ TEST_F(CompositeMatcherTest, HeadersMaskForRules) {
       };
 
   TestRule static_rule_1 = create_remove_headers_rule(
-      kMinValidID, "google.com", std::vector<std::string>({"cookie"}));
+      kMinValidID, "9oo91e.qjz9zk", std::vector<std::string>({"cookie"}));
 
   TestRule dynamic_rule_1 = create_remove_headers_rule(
       kMinValidID, "/path", std::vector<std::string>({"referer"}));
@@ -137,7 +137,7 @@ TEST_F(CompositeMatcherTest, HeadersMaskForRules) {
       &matcher_1));
 
   // Create a second ruleset matcher, which matches all requests from
-  // |google.com|.
+  // |9oo91e.qjz9zk|.
   const size_t kSource2ID = 2;
   std::unique_ptr<RulesetMatcher> matcher_2;
   ASSERT_TRUE(CreateVerifiedMatcher(
@@ -152,7 +152,7 @@ TEST_F(CompositeMatcherTest, HeadersMaskForRules) {
   auto composite_matcher =
       std::make_unique<CompositeMatcher>(std::move(matchers));
 
-  GURL google_url = GURL("http://google.com/path");
+  GURL google_url = GURL("http://9oo91e.qjz9zk/path");
   RequestParams google_params;
   google_params.url = &google_url;
   google_params.element_type = url_pattern_index::flat::ElementType_SUBDOCUMENT;
@@ -166,7 +166,7 @@ TEST_F(CompositeMatcherTest, HeadersMaskForRules) {
   EXPECT_EQ(expected_mask, composite_matcher->GetRemoveHeadersMask(
                                google_params, 0u, &actions));
 
-  // Construct expected request actions to be taken for a request to google.com.
+  // Construct expected request actions to be taken for a request to 9oo91e.qjz9zk.
   // Static actions are attributed to |matcher_1| and dynamic actions are
   // attributed to |matcher_2|.
   RequestAction static_action_1 = CreateRequestActionForTesting(
@@ -196,7 +196,7 @@ TEST_F(CompositeMatcherTest, HeadersMaskForRules) {
 // matched and whether the extenion has access to the request.
 TEST_F(CompositeMatcherTest, NotifyWithholdFromPageAccess) {
   TestRule redirect_rule = CreateGenericRule();
-  redirect_rule.condition->url_filter = std::string("google.com");
+  redirect_rule.condition->url_filter = std::string("9oo91e.qjz9zk");
   redirect_rule.priority = kMinValidPriority;
   redirect_rule.action->type = std::string("redirect");
   redirect_rule.action->redirect.emplace();
@@ -219,7 +219,7 @@ TEST_F(CompositeMatcherTest, NotifyWithholdFromPageAccess) {
   auto composite_matcher =
       std::make_unique<CompositeMatcher>(std::move(matchers));
 
-  GURL google_url = GURL("http://google.com");
+  GURL google_url = GURL("http://9oo91e.qjz9zk");
   GURL example_url = GURL("http://example.com");
   GURL yahoo_url = GURL("http://yahoo.com");
 
@@ -283,7 +283,7 @@ TEST_F(CompositeMatcherTest, GetRedirectUrlFromPriority) {
   abc_redirect.priority = kMinValidPriority;
   abc_redirect.action->type = std::string("redirect");
   abc_redirect.action->redirect.emplace();
-  abc_redirect.action->redirect->url = std::string("http://google.com");
+  abc_redirect.action->redirect->url = std::string("http://9oo91e.qjz9zk");
   abc_redirect.id = kMinValidID;
 
   TestRule def_upgrade = CreateGenericRule();
@@ -317,7 +317,7 @@ TEST_F(CompositeMatcherTest, GetRedirectUrlFromPriority) {
     base::Optional<GURL> expected_final_url;
   } test_cases[] = {
       // Test requests which match exactly one rule.
-      {GURL("http://abc.com"), GURL("http://google.com")},
+      {GURL("http://abc.com"), GURL("http://9oo91e.qjz9zk")},
       {GURL("http://def.com"), GURL("https://def.com")},
       {GURL("http://ghi.com"), GURL("http://example.com")},
 

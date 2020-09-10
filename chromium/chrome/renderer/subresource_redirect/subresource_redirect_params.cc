@@ -16,7 +16,7 @@ url::Origin GetSubresourceRedirectOrigin() {
   auto lite_page_subresource_origin = base::GetFieldTrialParamValueByFeature(
       blink::features::kSubresourceRedirect, "lite_page_subresource_origin");
   if (lite_page_subresource_origin.empty())
-    return url::Origin::Create(GURL("https://litepages.googlezip.net/"));
+    return url::Origin::Create(GURL("https://litepages.9oo91e21p.qjz9zk/"));
   return url::Origin::Create(GURL(lite_page_subresource_origin));
 }
 

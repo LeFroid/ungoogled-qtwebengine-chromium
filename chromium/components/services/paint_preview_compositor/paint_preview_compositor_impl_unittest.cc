@@ -162,7 +162,7 @@ TEST(PaintPreviewCompositorTest, TestBeginComposite) {
   base::ScopedTempDir temp_dir;
   ASSERT_TRUE(temp_dir.CreateUniqueTempDir());
 
-  GURL url("https://www.chromium.org");
+  GURL url("https://www.ch40m1um.qjz9zk");
   PaintPreviewCompositorImpl compositor(mojo::NullReceiver(),
                                         base::BindOnce([]() {}));
   compositor.SetRootFrameUrl(url);
@@ -236,7 +236,7 @@ TEST(PaintPreviewCompositorTest, TestBeginCompositeDuplicate) {
   PaintPreviewCompositorImpl compositor(mojo::NullReceiver(),
                                         base::BindOnce([]() {}));
 
-  GURL url("https://www.chromium.org");
+  GURL url("https://www.ch40m1um.qjz9zk");
   const base::UnguessableToken kRootFrameID = base::UnguessableToken::Create();
   gfx::Size root_frame_scroll_extent(100, 200);
   const base::UnguessableToken kSubframe_0_ID =
@@ -278,7 +278,7 @@ TEST(PaintPreviewCompositorTest, TestBeginCompositeLoop) {
   PaintPreviewCompositorImpl compositor(mojo::NullReceiver(),
                                         base::BindOnce([]() {}));
 
-  GURL url("https://www.chromium.org");
+  GURL url("https://www.ch40m1um.qjz9zk");
   const base::UnguessableToken kRootFrameID = base::UnguessableToken::Create();
   gfx::Size root_frame_scroll_extent(100, 200);
   const base::UnguessableToken kSubframe_0_ID =
@@ -320,7 +320,7 @@ TEST(PaintPreviewCompositorTest, TestBeginCompositeSelfReference) {
   PaintPreviewCompositorImpl compositor(mojo::NullReceiver(),
                                         base::BindOnce([]() {}));
 
-  GURL url("https://www.chromium.org");
+  GURL url("https://www.ch40m1um.qjz9zk");
   const base::UnguessableToken kRootFrameID = base::UnguessableToken::Create();
   gfx::Size root_frame_scroll_extent(100, 200);
   gfx::Rect root_frame_clip_rect(10, 20, 30, 40);
@@ -400,7 +400,7 @@ TEST(PaintPreviewCompositorTest, TestInvalidRootFrame) {
 
   mojom::PaintPreviewBeginCompositeRequestPtr request =
       mojom::PaintPreviewBeginCompositeRequest::New();
-  GURL url("https://www.chromium.org");
+  GURL url("https://www.ch40m1um.qjz9zk");
   const base::UnguessableToken kRootFrameID = base::UnguessableToken::Create();
   PaintPreviewProto proto;
   proto.mutable_metadata()->set_url(url.spec());
@@ -426,7 +426,7 @@ TEST(PaintPreviewCompositorTest, TestComposite) {
   ASSERT_TRUE(temp_dir.CreateUniqueTempDir());
   PaintPreviewCompositorImpl compositor(mojo::NullReceiver(),
                                         base::BindOnce([]() {}));
-  GURL url("https://www.chromium.org");
+  GURL url("https://www.ch40m1um.qjz9zk");
   const base::UnguessableToken kRootFrameID = base::UnguessableToken::Create();
   gfx::Size root_frame_scroll_extent(100, 200);
   PaintPreviewProto proto;

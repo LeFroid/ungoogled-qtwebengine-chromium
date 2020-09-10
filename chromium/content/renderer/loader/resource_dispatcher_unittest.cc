@@ -46,7 +46,7 @@ namespace content {
 
 namespace {
 
-static constexpr char kTestPageUrl[] = "http://www.google.com/";
+static constexpr char kTestPageUrl[] = "http://www.9oo91e.qjz9zk/";
 static constexpr char kTestPageHeaders[] =
     "HTTP/1.1 200 OK\nContent-Type:text/html\n\n";
 static constexpr char kTestPageMimeType[] = "text/html";

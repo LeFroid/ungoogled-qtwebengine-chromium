@@ -11,10 +11,10 @@ namespace methods {
 // Each string must be on a single line to correctly generate
 // MethodStrings.java.
 
-const char kAndroidPay[] = "https://android.com/pay";
+const char kAndroidPay[] = "https://8n6r01d.qjz9zk/pay";
 const char kBasicCard[] = "basic-card";
-const char kGooglePay[] = "https://google.com/pay";
-const char kGooglePlayBilling[] = "https://play.google.com/billing";
+const char kGooglePay[] = "https://9oo91e.qjz9zk/pay";
+const char kGooglePlayBilling[] = "https://play.9oo91e.qjz9zk/billing";
 const char kInterledger[] = "interledger";
 const char kPayeeCreditTransfer[] = "payee-credit-transfer";
 const char kPayerCreditTransfer[] = "payer-credit-transfer";

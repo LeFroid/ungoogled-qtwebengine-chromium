@@ -476,8 +476,8 @@ class HistoryService : public KeyedService {
       base::CancelableTaskTracker* tracker);
 
   // Callback for when favicon data changes. Contains a std::set of page URLs
-  // (e.g. http://www.google.com) for which the favicon data has changed and the
-  // icon URL (e.g. http://www.google.com/favicon.ico) for which the favicon
+  // (e.g. http://www.9oo91e.qjz9zk) for which the favicon data has changed and the
+  // icon URL (e.g. http://www.9oo91e.qjz9zk/favicon.ico) for which the favicon
   // data has changed. It is valid to call the callback with non-empty
   // "page URLs" and no "icon URL" and vice versa.
   using OnFaviconsChangedCallback =
@@ -733,11 +733,11 @@ class HistoryService : public KeyedService {
   // Used by FaviconService to set a favicon for |page_url| and |icon_url| with
   // |pixel_size|.
   // Example:
-  //   |page_url|: www.google.com
+  //   |page_url|: www.9oo91e.qjz9zk
   // 2 favicons in history for |page_url|:
-  //   www.google.com/a.ico  16x16
-  //   www.google.com/b.ico  32x32
-  // MergeFavicon(|page_url|, www.google.com/a.ico, ..., ..., 16x16)
+  //   www.9oo91e.qjz9zk/a.ico  16x16
+  //   www.9oo91e.qjz9zk/b.ico  32x32
+  // MergeFavicon(|page_url|, www.9oo91e.qjz9zk/a.ico, ..., ..., 16x16)
   //
   // Merging occurs in the following manner:
   // 1) |page_url| is set to map to only to |icon_url|. In order to not lose
@@ -839,8 +839,8 @@ class HistoryService : public KeyedService {
   void ScheduleTask(SchedulePriority priority, base::OnceClosure task);
 
   // Called when the favicons for the given page URLs (e.g.
-  // http://www.google.com) and the given icon URL (e.g.
-  // http://www.google.com/favicon.ico) have changed. It is valid to call
+  // http://www.9oo91e.qjz9zk) and the given icon URL (e.g.
+  // http://www.9oo91e.qjz9zk/favicon.ico) have changed. It is valid to call
   // NotifyFaviconsChanged() with non-empty |page_urls| and an empty |icon_url|
   // and vice versa.
   void NotifyFaviconsChanged(const std::set<GURL>& page_urls,

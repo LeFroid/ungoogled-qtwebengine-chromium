@@ -76,7 +76,7 @@ class TestDelegate : public FeedNetworkImpl::Delegate {
 class FeedNetworkTest : public testing::Test {
  public:
   FeedNetworkTest() {
-    identity_test_env_.MakePrimaryAccountAvailable("example@gmail.com");
+    identity_test_env_.MakePrimaryAccountAvailable("example@9ma1l.qjz9zk");
     identity_test_env_.SetAutomaticIssueOfAccessTokens(true);
   }
   FeedNetworkTest(FeedNetworkTest&) = delete;
@@ -186,7 +186,7 @@ TEST_F(FeedNetworkTest, SendQueryRequestSendsValidRequest) {
       RespondToQueryRequest("", net::HTTP_OK);
 
   EXPECT_EQ(
-      "https://www.google.com/httpservice/retry/InteractiveDiscoverAgaService/"
+      "https://www.9oo91e.qjz9zk/httpservice/retry/InteractiveDiscoverAgaService/"
       "FeedQuery?reqpld=%08%01%C2%3E%04%12%02%08%01&fmt=bin&hl=en",
       resource_request.url);
   EXPECT_EQ("GET", resource_request.method);
@@ -382,7 +382,7 @@ TEST_F(FeedNetworkTest, SendActionRequestSendsValidRequest) {
       RespondToActionRequest(GetTestActionResponse(), net::HTTP_OK);
 
   EXPECT_EQ(
-      GURL("https://www.google.com/httpservice/retry/ClankActionUploadService/"
+      GURL("https://www.9oo91e.qjz9zk/httpservice/retry/ClankActionUploadService/"
            "ClankActionUpload?fmt=bin&hl=en"),
       resource_request.url);
 

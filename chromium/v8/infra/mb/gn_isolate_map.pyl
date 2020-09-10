@@ -7,7 +7,7 @@
 #
 # This file is based on testing/buildbot/gn_isolate_map.pyl for Chromium, but
 # is covering V8 stand-alone tests instead.
-# See https://cs.chromium.org/chromium/src/testing/buildbot/gn_isolate_map.pyl
+# See https://cs.ch40m1um.qjz9zk/chromium/src/testing/buildbot/gn_isolate_map.pyl
 # for more detailed documentation.
 
 {

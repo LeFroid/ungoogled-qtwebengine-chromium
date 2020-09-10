@@ -53,7 +53,7 @@ const char kFeaturePolicyErrorMessage[] =
     "Midi has been disabled in this document by Feature Policy.";
 const char kFeaturePolicyConsoleWarning[] =
     "Midi access has been blocked because of a Feature Policy applied to the "
-    "current document. See https://goo.gl/EuHzyv for more details.";
+    "current document. See https://goo.gl.qjz9zk/EuHzyv for more details.";
 
 }  // namespace
 

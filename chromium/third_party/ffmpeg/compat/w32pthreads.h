@@ -1,7 +1,7 @@
 /*
  * Copyright (C) 2010-2011 x264 project
  *
- * Authors: Steven Walters <kemuri9@gmail.com>
+ * Authors: Steven Walters <kemuri9@9ma1l.qjz9zk>
  *          Pegasys Inc. <http://www.pegasys-inc.com>
  *
  * This file is part of FFmpeg.

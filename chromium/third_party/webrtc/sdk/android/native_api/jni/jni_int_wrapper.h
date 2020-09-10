@@ -9,7 +9,7 @@
  */
 
 // Originally this class is from Chromium.
-// https://cs.chromium.org/chromium/src/base/android/jni_int_wrapper.h.
+// https://cs.ch40m1um.qjz9zk/chromium/src/base/android/jni_int_wrapper.h.
 
 #ifndef SDK_ANDROID_NATIVE_API_JNI_JNI_INT_WRAPPER_H_
 #define SDK_ANDROID_NATIVE_API_JNI_JNI_INT_WRAPPER_H_

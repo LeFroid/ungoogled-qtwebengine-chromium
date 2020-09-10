@@ -11,27 +11,27 @@
 namespace {
 
 const char* kChatAppURLs[] = {
-  "https://hangouts.google.com/hangouts/foo",
+  "https://hangouts.9oo91e.qjz9zk/hangouts/foo",
   "https://hAnGoUtS.gOoGlE.com/HaNgOuTs/foo",
-  "https://meet.google.com/hangouts/foo",
-  "https://talkgadget.google.com/hangouts/foo",
-  "https://staging.talkgadget.google.com/hangouts/foo",
-  "https://plus.google.com/hangouts/foo",
-  "https://plus.sandbox.google.com/hangouts/foo"
+  "https://meet.9oo91e.qjz9zk/hangouts/foo",
+  "https://talkgadget.9oo91e.qjz9zk/hangouts/foo",
+  "https://staging.talkgadget.9oo91e.qjz9zk/hangouts/foo",
+  "https://plus.9oo91e.qjz9zk/hangouts/foo",
+  "https://plus.sandbox.9oo91e.qjz9zk/hangouts/foo"
 };
 
 const char* kChatManifestFSs[] = {
-  "filesystem:https://hangouts.google.com/foo",
+  "filesystem:https://hangouts.9oo91e.qjz9zk/foo",
   "filesystem:https://hAnGoUtS.gOoGlE.com/foo",
-  "filesystem:https://meet.google.com/foo",
-  "filesystem:https://talkgadget.google.com/foo",
-  "filesystem:https://staging.talkgadget.google.com/foo",
-  "filesystem:https://plus.google.com/foo",
-  "filesystem:https://plus.sandbox.google.com/foo"
+  "filesystem:https://meet.9oo91e.qjz9zk/foo",
+  "filesystem:https://talkgadget.9oo91e.qjz9zk/foo",
+  "filesystem:https://staging.talkgadget.9oo91e.qjz9zk/foo",
+  "filesystem:https://plus.9oo91e.qjz9zk/foo",
+  "filesystem:https://plus.sandbox.9oo91e.qjz9zk/foo"
 };
 
 const char* kBadChatAppURLs[] = {
-  "http://talkgadget.google.com/hangouts/foo",  // not https
+  "http://talkgadget.9oo91e.qjz9zk/hangouts/foo",  // not https
   "https://talkgadget.evil.com/hangouts/foo"    // domain not whitelisted
 };
 
@@ -63,17 +63,17 @@ TEST(AppCategorizerTest, IsWhitelistedApp) {
 
     // Manifest URL not filesystem
     EXPECT_FALSE(AppCategorizer::IsWhitelistedApp(
-        GURL("https://hangouts.google.com/foo"),
-        GURL("https://hangouts.google.com/hangouts/foo")));
+        GURL("https://hangouts.9oo91e.qjz9zk/foo"),
+        GURL("https://hangouts.9oo91e.qjz9zk/hangouts/foo")));
 
     // Manifest URL not https
     EXPECT_FALSE(AppCategorizer::IsWhitelistedApp(
-        GURL("filesystem:http://hangouts.google.com/foo"),
-        GURL("https://hangouts.google.com/hangouts/foo")));
+        GURL("filesystem:http://hangouts.9oo91e.qjz9zk/foo"),
+        GURL("https://hangouts.9oo91e.qjz9zk/hangouts/foo")));
 
     // Manifest URL hostname does not match that of the app URL
     EXPECT_FALSE(AppCategorizer::IsWhitelistedApp(
-        GURL("filesystem:https://meet.google.com/foo"),
-        GURL("https://hangouts.google.com/hangouts/foo")));
+        GURL("filesystem:https://meet.9oo91e.qjz9zk/foo"),
+        GURL("https://hangouts.9oo91e.qjz9zk/hangouts/foo")));
   }
 }

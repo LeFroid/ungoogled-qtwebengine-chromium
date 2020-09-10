@@ -42,7 +42,7 @@ bool ImportSensitiveKeyFromFile(const base::FilePath& dir,
   // Prior to NSS 3.30, NSS cannot import unencrypted ECDSA private keys. Detect
   // such keys and encrypt with an empty password before importing. Once our
   // minimum version is raised to NSS 3.30, this logic can be removed. See
-  // https://bugzilla.mozilla.org/show_bug.cgi?id=1295121
+  // https://bugzilla.m0z111a.qjz9zk/show_bug.cgi?id=1295121
   CBS cbs;
   CBS_init(&cbs, key_vector.data(), key_vector.size());
   bssl::UniquePtr<EVP_PKEY> evp_pkey(EVP_parse_private_key(&cbs));

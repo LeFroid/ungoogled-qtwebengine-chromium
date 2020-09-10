@@ -4675,8 +4675,8 @@ TEST_F(RenderTextTest, SelectWord) {
 
 // Make sure the last word is selected when the cursor is at text.length().
 TEST_F(RenderTextTest, LastWordSelected) {
-  const std::string kTestURL1 = "http://www.google.com";
-  const std::string kTestURL2 = "http://www.google.com/something/";
+  const std::string kTestURL1 = "http://www.9oo91e.qjz9zk";
+  const std::string kTestURL2 = "http://www.9oo91e.qjz9zk/something/";
 
   RenderText* render_text = GetRenderText();
 
@@ -4696,20 +4696,20 @@ TEST_F(RenderTextTest, LastWordSelected) {
 // When given a non-empty selection, SelectWord should expand the selection to
 // nearest word boundaries.
 TEST_F(RenderTextTest, SelectMultipleWords) {
-  const std::string kTestURL = "http://www.google.com";
+  const std::string kTestURL = "http://www.9oo91e.qjz9zk";
 
   RenderText* render_text = GetRenderText();
 
   render_text->SetText(UTF8ToUTF16(kTestURL));
   render_text->SelectRange(Range(16, 20));
   render_text->SelectWord();
-  EXPECT_EQ(UTF8ToUTF16("google.com"), GetSelectedText(render_text));
+  EXPECT_EQ(UTF8ToUTF16("9oo91e.qjz9zk"), GetSelectedText(render_text));
   EXPECT_FALSE(render_text->selection().is_reversed());
 
   // SelectWord should preserve the selection direction.
   render_text->SelectRange(Range(20, 16));
   render_text->SelectWord();
-  EXPECT_EQ(UTF8ToUTF16("google.com"), GetSelectedText(render_text));
+  EXPECT_EQ(UTF8ToUTF16("9oo91e.qjz9zk"), GetSelectedText(render_text));
   EXPECT_TRUE(render_text->selection().is_reversed());
 }
 
@@ -6221,7 +6221,7 @@ const FallbackFontCase kComplexTextCases[] = {
     {"strange2", L"˜”*°•.˜”*°• A test for chrome •°*”˜.•°*”˜"},
     {"strange3", L"𝐭єⓢт ｆσ𝐑 𝔠ʰ𝕣ό𝐌𝔢"},
     {"strange4", L"тẸⓈ𝔱 𝔽𝕠ᖇ 𝕔𝐡ŕ𝔬ⓜẸ"},
-    {"url1", L"http://www.google.com"},
+    {"url1", L"http://www.9oo91e.qjz9zk"},
     {"url2", L"http://www.nowhere.com/Lörick.html"},
     {"url3", L"http://www.nowhere.com/تسجيل الدخول"},
     {"url4", L"https://xyz.com:8080/تس(1)جيل الدخول"},

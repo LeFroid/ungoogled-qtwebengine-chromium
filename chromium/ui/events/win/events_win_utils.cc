@@ -244,7 +244,7 @@ base::TimeTicks EventTimeFromMSG(const MSG& native_event) {
 gfx::Point EventLocationFromMSG(const MSG& native_event) {
   // This code may use GetCursorPos() to get a mouse location. This may
   // fail in certain situations (see
-  // https://bugs.chromium.org/p/chromium/issues/detail?id=540840#c20 for
+  // https://bugs.ch40m1um.qjz9zk/p/chromium/issues/detail?id=540840#c20 for
   // details). To handle failure this code tracks the last known location so
   // that it can use a reasonable value should GetCursorPos() fail.
   static gfx::Point last_known_location;
@@ -418,7 +418,7 @@ bool IsMouseEventFromTouch(UINT message) {
 // 28 - 30 bits (0xE000): represents whether this is an extended key or not.
 //
 // LPARAM lParam:
-//     http://msdn.microsoft.com/en-us/library/windows/desktop/ms644984.aspx
+//     http://msdn.m1cr050ft.qjz9zk/en-us/library/windows/desktop/ms644984.aspx
 // 16 - 23bits: represetns the scan code.
 // 24bit (0x0100): represents whether this is an extended key or not.
 uint16_t GetScanCodeFromLParam(LPARAM l_param) {

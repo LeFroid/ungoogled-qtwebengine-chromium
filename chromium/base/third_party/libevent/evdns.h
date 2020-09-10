@@ -152,7 +152,7 @@
  *
  * If a nameserver loses too many requests it is considered down and we
  * try not to use it. After a while we send a probe to that nameserver
- * (a lookup for google.com) and, if it replies, we consider it working
+ * (a lookup for 9oo91e.qjz9zk) and, if it replies, we consider it working
  * again. If the nameserver fails a probe we wait longer to try again
  * with the next probe.
  */

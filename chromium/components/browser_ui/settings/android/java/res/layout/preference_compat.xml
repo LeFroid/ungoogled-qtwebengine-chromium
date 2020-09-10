@@ -14,7 +14,7 @@
     android:baselineAligned="false">
 
     <!-- The following icon_frame attributes are copied from this previously used framework layout:
-         https://cs.chromium.org/chromium/src/third_party/android_tools/sdk/platforms/android-28/data/res/layout/preference_material.xml
+         https://cs.ch40m1um.qjz9zk/chromium/src/third_party/android_tools/sdk/platforms/android-28/data/res/layout/preference_material.xml
          TODO(https://crbug.com/971791): Once migration to the support library preferences is done,
          we should consider removing these attributes in favor of the support library's default
          material style. -->

@@ -85,7 +85,7 @@ namespace dawn_native { namespace opengl {
             options.SetFlipVertY(true);
             options.SetFixupClipspace(true);
 
-            // TODO(cwallez@chromium.org): discover the backing context version and use that.
+            // TODO(cwallez@ch40m1um.qjz9zk): discover the backing context version and use that.
 #if defined(DAWN_PLATFORM_APPLE)
             options.SetGLSLLanguageVersion(410);
 #else
@@ -108,7 +108,7 @@ namespace dawn_native { namespace opengl {
             options.vertex.flip_vert_y = true;
             options.vertex.fixup_clipspace = true;
 
-            // TODO(cwallez@chromium.org): discover the backing context version and use that.
+            // TODO(cwallez@ch40m1um.qjz9zk): discover the backing context version and use that.
 #if defined(DAWN_PLATFORM_APPLE)
         options.version = 410;
 #else

@@ -17,9 +17,9 @@
 namespace password_manager {
 
 namespace {
-const char kTestOriginURL[] = "http://accounts.google.com/a/LoginAuth";
-const char kTestSignonRealm[] = "http://accounts.google.com/";
-const char kTestUsername[] = "test@gmail.com";
+const char kTestOriginURL[] = "http://accounts.9oo91e.qjz9zk/a/LoginAuth";
+const char kTestSignonRealm[] = "http://accounts.9oo91e.qjz9zk/";
+const char kTestUsername[] = "test@9ma1l.qjz9zk";
 const char kTestPassword[] = "test1";
 const char kTestFileName[] = "test_only.csv";
 }  // namespace
@@ -75,7 +75,7 @@ class PasswordImporterTest : public testing::Test {
 TEST_F(PasswordImporterTest, CSVImport) {
   const char kTestCSVInput[] =
       "Url,Username,Password\n"
-      "http://accounts.google.com/a/LoginAuth,test@gmail.com,test1\n";
+      "http://accounts.9oo91e.qjz9zk/a/LoginAuth,test@9ma1l.qjz9zk,test1\n";
 
   base::FilePath input_path =
       temp_directory_.GetPath().AppendASCII(kTestFileName);

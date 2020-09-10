@@ -363,16 +363,16 @@ are declared in tools/grit/grit_rule.gni.
       </if>
 
       <message name="IDS_PERMISSIONS_BUBBLE_PROMPT" desc="The label that is used to introduce permission request details to the user in a popup.">
-        <ph name="SITE_NAME">$1<ex>google.com</ex></ph> wants to
+        <ph name="SITE_NAME">$1<ex>9oo91e.qjz9zk</ex></ph> wants to
       </message>
       <message name="IDS_PERMISSIONS_BUBBLE_PROMPT_ACCESSIBLE_TITLE_ONE_PERM" desc="The label that is read by a screen reader to describe the permissions prompt bubble. This will be followed by the short name of a single permission.">
-        <ph name="SITE_NAME">$1<ex>google.com</ex></ph> wants to: <ph name="PERMISSION">$2<ex>use your microphone</ex></ph>
+        <ph name="SITE_NAME">$1<ex>9oo91e.qjz9zk</ex></ph> wants to: <ph name="PERMISSION">$2<ex>use your microphone</ex></ph>
       </message>
       <message name="IDS_PERMISSIONS_BUBBLE_PROMPT_ACCESSIBLE_TITLE_TWO_PERMS" desc="The label that is read by a screen reader to describe the permissions prompt bubble. This will be followed by the short names of two permissions.">
-        <ph name="SITE_NAME">$1<ex>google.com</ex></ph> wants to: <ph name="FIRST_PERMISSION">$2<ex>use your microphone</ex></ph> and <ph name="SECOND_PERMISSION">$3<ex>use your location</ex></ph>
+        <ph name="SITE_NAME">$1<ex>9oo91e.qjz9zk</ex></ph> wants to: <ph name="FIRST_PERMISSION">$2<ex>use your microphone</ex></ph> and <ph name="SECOND_PERMISSION">$3<ex>use your location</ex></ph>
       </message>
       <message name="IDS_PERMISSIONS_BUBBLE_PROMPT_ACCESSIBLE_TITLE_TWO_PERMS_MORE" desc="The label that is read by a screen reader to describe the permissions prompt bubble. This will be followed by the short names of two permissions, then an &quot;and more&quot; descriptive text indicating that the dialog's body contains the entire list of requested permissions.">
-        <ph name="SITE_NAME">$1<ex>google.com</ex></ph> wants to: <ph name="FIRST_PERMISSION">$2<ex>use your microphone</ex></ph>, <ph name="SECOND_PERMISSION">$3<ex>use your location</ex></ph>, and more
+        <ph name="SITE_NAME">$1<ex>9oo91e.qjz9zk</ex></ph> wants to: <ph name="FIRST_PERMISSION">$2<ex>use your microphone</ex></ph>, <ph name="SECOND_PERMISSION">$3<ex>use your location</ex></ph>, and more
       </message>
       <message name="IDS_PERMISSION_CUSTOMIZE" desc="Label on text button to allow the user to customize a permissions request.">
         Customize
@@ -551,7 +551,7 @@ are declared in tools/grit/grit_rule.gni.
             Open link as
           </message>
           <message name="IDS_CONTENT_CONTEXT_OPENLINKINPROFILE" desc="The name of the open a link as a different user command">
-            Open link as <ph name="USER">$1<ex>user@gmail.com</ex></ph>
+            Open link as <ph name="USER">$1<ex>user@9ma1l.qjz9zk</ex></ph>
           </message>
           <message name="IDS_CONTENT_CONTEXT_OPENLINKBOOKMARKAPP" desc="The name of the Open Link in App command in the content area context menu">
             Open link in <ph name="APP">$1<ex>Gmail App</ex></ph>
@@ -694,7 +694,7 @@ are declared in tools/grit/grit_rule.gni.
             &amp;Search <ph name="SEARCH_ENGINE">$1<ex>Google</ex></ph> for image
           </message>
           <message name="IDS_CONTENT_CONTEXT_GOTOURL" desc="The name of the Go to 'url' command in the content area context menu">
-            &amp;Go to <ph name="URL">$1<ex>http://www.google.com/</ex></ph>
+            &amp;Go to <ph name="URL">$1<ex>http://www.9oo91e.qjz9zk/</ex></ph>
           </message>
           <message name="IDS_CONTENT_CONTEXT_GENERATEPASSWORD" desc="The name of the Generate Password command in the content area context menu">
             Suggest password...
@@ -769,7 +769,7 @@ are declared in tools/grit/grit_rule.gni.
             Open Link as
           </message>
           <message name="IDS_CONTENT_CONTEXT_OPENLINKINPROFILE" desc="In Title Case: The name of the open a link as a different user command">
-            Open Link as <ph name="USER">$1<ex>user@gmail.com</ex></ph>
+            Open Link as <ph name="USER">$1<ex>user@9ma1l.qjz9zk</ex></ph>
           </message>
           <message name="IDS_CONTENT_CONTEXT_OPENLINKBOOKMARKAPP" desc="In Title Case: The name of the Open Link in App command in the content area context menu">
             Open Link in <ph name="APP">$1<ex>Gmail App</ex></ph>
@@ -924,7 +924,7 @@ are declared in tools/grit/grit_rule.gni.
             &amp;Search <ph name="SEARCH_ENGINE">$1<ex>Google</ex></ph> for Image
           </message>
           <message name="IDS_CONTENT_CONTEXT_GOTOURL" desc="In Title Case: The name of the Go to url for 'string' command in the content area context menu">
-            &amp;Go to <ph name="URL">$1<ex>http://www.google.com/</ex></ph>
+            &amp;Go to <ph name="URL">$1<ex>http://www.9oo91e.qjz9zk/</ex></ph>
           </message>
           <message name="IDS_CONTENT_CONTEXT_GENERATEPASSWORD" desc="In Title Case: The name of the Generate Password command in the content area context menu">
             Suggest Password...
@@ -1128,7 +1128,7 @@ are declared in tools/grit/grit_rule.gni.
 
       <if expr="chromeos">
         <message name="IDS_VISIT_DESKTOP_OF_LRU_USER" desc="The text label of the menu item which allows the user to move a window from one users desktop to another.">
-          Move window to <ph name="USER_NAME">$1<ex>User name</ex></ph> (<ph name="USER_EMAIL">$2<ex>john@google.com</ex></ph>)
+          Move window to <ph name="USER_NAME">$1<ex>User name</ex></ph> (<ph name="USER_EMAIL">$2<ex>john@9oo91e.qjz9zk</ex></ph>)
         </message>
       </if>
 
@@ -1235,7 +1235,7 @@ are declared in tools/grit/grit_rule.gni.
         Review
       </message>
       <message name="IDS_TOS_NOTIFICATION_LINK" desc="The URL for the new TOS change link." translateable="false">
-        https://www.google.com/chrome/privacy/eula_text.html
+        https://www.9oo91e.qjz9zk/chrome/privacy/eula_text.html
       </message>
 
       <message name="IDS_HELP_MENU" desc="The text label of the Help sub-menu item in the wrench menu">
@@ -2528,7 +2528,7 @@ are declared in tools/grit/grit_rule.gni.
         Share
       </message>
       <message name="IDS_WEBSHARE_TARGET_DIALOG_ITEM_TEXT" desc="Text for a Web Share Target item in the Web Share Target dialog.">
-        <ph name="APP_NAME">$1<ex>Google Maps</ex></ph> (<ph name="APP_URL">$2<ex>https://google.com/maps</ex></ph>)
+        <ph name="APP_NAME">$1<ex>Google Maps</ex></ph> (<ph name="APP_URL">$2<ex>https://9oo91e.qjz9zk/maps</ex></ph>)
       </message>
 
       <!-- Content blocking strings -->
@@ -2582,10 +2582,10 @@ are declared in tools/grit/grit_rule.gni.
         Images were blocked on this page.
       </message>
       <message name="IDS_BLOCKED_COOKIES_UNBLOCK" desc="Radio button choice to unblock a site from setting cookies, displayed in bubble when a page tries to set cookies.">
-        Always allow <ph name="HOST">$1<ex>mail.google.com</ex></ph> to set cookies
+        Always allow <ph name="HOST">$1<ex>mail.9oo91e.qjz9zk</ex></ph> to set cookies
       </message>
       <message name="IDS_BLOCKED_IMAGES_UNBLOCK" desc="Radio button choice to unblock a site from showing images, displayed in bubble when a page tries to display images.">
-        Always allow <ph name="HOST">$1<ex>mail.google.com</ex></ph> to show images
+        Always allow <ph name="HOST">$1<ex>mail.9oo91e.qjz9zk</ex></ph> to show images
       </message>
       <message name="IDS_BLOCKED_COOKIES_NO_ACTION" desc="Radio button choice to continue blocking a site from setting cookies, displayed in bubble when a page tries to set cookies.">
         Continue blocking cookies
@@ -2594,7 +2594,7 @@ are declared in tools/grit/grit_rule.gni.
         Continue allowing cookies
       </message>
       <message name="IDS_ALLOWED_COOKIES_BLOCK" desc="Radio button choice to block a site to set the cookies, displayed in bubble when a page tries to set cookies.">
-        Always block cookies on <ph name="HOST">$1<ex>mail.google.com</ex></ph>
+        Always block cookies on <ph name="HOST">$1<ex>mail.9oo91e.qjz9zk</ex></ph>
       </message>
       <message name="IDS_BLOCKED_IMAGES_NO_ACTION" desc="Radio button choice to continue blocking a site from showing images, displayed in bubble when a page tries to display images.">
         Continue blocking images
@@ -2606,28 +2606,28 @@ are declared in tools/grit/grit_rule.gni.
         Pop-ups blocked:
       </message>
       <message name="IDS_BLOCKED_POPUPS_REDIRECTS_UNBLOCK" desc="Radio button choice to unblock a site from showing popups and redirects, displayed in bubble when a page tries to display popups or redirects.">
-        Always allow pop-ups and redirects from <ph name="HOST">$1<ex>mail.google.com</ex></ph>
+        Always allow pop-ups and redirects from <ph name="HOST">$1<ex>mail.9oo91e.qjz9zk</ex></ph>
       </message>
       <message name="IDS_BLOCKED_POPUPS_REDIRECTS_NO_ACTION" desc="Radio button choice to continue blocking a site from showing popups and redirects, displayed in bubble when a page tries to display popups or redirects.">
         Continue blocking
       </message>
       <message name="IDS_BLOCKED_MEDIASTREAM_MIC_AND_CAMERA_ALLOW" desc="Radio button choice to allow a site to access microphone and camera, displayed in bubble when a page tries to access microphone and camera.">
-        Always allow <ph name="HOST">$1<ex>mail.google.com</ex></ph> to access your camera and microphone
+        Always allow <ph name="HOST">$1<ex>mail.9oo91e.qjz9zk</ex></ph> to access your camera and microphone
       </message>
       <message name="IDS_BLOCKED_MEDIASTREAM_MIC_ALLOW" desc="Radio button choice to allow a site to access microphone, displayed in bubble when a page tries to access microphone.">
-        Always allow <ph name="HOST">$1<ex>mail.google.com</ex></ph> to access your microphone
+        Always allow <ph name="HOST">$1<ex>mail.9oo91e.qjz9zk</ex></ph> to access your microphone
       </message>
       <message name="IDS_BLOCKED_MEDIASTREAM_CAMERA_ALLOW" desc="Radio button choice to allow a site to access camera, displayed in bubble when a page tries to access camera.">
-        Always allow <ph name="HOST">$1<ex>mail.google.com</ex></ph> to access your camera
+        Always allow <ph name="HOST">$1<ex>mail.9oo91e.qjz9zk</ex></ph> to access your camera
       </message>
       <message name="IDS_BLOCKED_MEDIASTREAM_MIC_AND_CAMERA_ASK" desc="Radio button choice to ask the user for permission when a site tries to access microphone and camera, displayed in bubble when a page was blocked from accessing microphone and camera.">
-        Ask if <ph name="HOST">$1<ex>mail.google.com</ex></ph> wants to access your camera and microphone
+        Ask if <ph name="HOST">$1<ex>mail.9oo91e.qjz9zk</ex></ph> wants to access your camera and microphone
       </message>
       <message name="IDS_BLOCKED_MEDIASTREAM_MIC_ASK" desc="Radio button choice to ask the user for permission when a site tries to access microphone, displayed in bubble when a page was blocked from accessing microphone.">
-        Ask if <ph name="HOST">$1<ex>mail.google.com</ex></ph> wants to access your microphone
+        Ask if <ph name="HOST">$1<ex>mail.9oo91e.qjz9zk</ex></ph> wants to access your microphone
       </message>
       <message name="IDS_BLOCKED_MEDIASTREAM_CAMERA_ASK" desc="Radio button choice to ask the user for permission when a site tries to access camera, displayed in bubble when a page was blocked from accessing camera.">
-        Ask if <ph name="HOST">$1<ex>mail.google.com</ex></ph> wants to access your camera
+        Ask if <ph name="HOST">$1<ex>mail.9oo91e.qjz9zk</ex></ph> wants to access your camera
       </message>
       <message name="IDS_ALLOWED_MEDIASTREAM_MIC_AND_CAMERA_BLOCK" desc="Radio button choice to block a site to access microphone and camera, displayed in bubble when a page is accessing microphone and camera.">
         Always block camera and microphone access
@@ -2648,13 +2648,13 @@ are declared in tools/grit/grit_rule.gni.
         Continue blocking camera access
       </message>
       <message name="IDS_ALLOWED_MEDIASTREAM_MIC_AND_CAMERA_NO_ACTION" desc="Radio button choice to allow a site to access microphone and camera, displayed in bubble when a page is accessing microphone and camera.">
-        Continue allowing <ph name="HOST">$1<ex>mail.google.com</ex></ph> to access your camera and microphone
+        Continue allowing <ph name="HOST">$1<ex>mail.9oo91e.qjz9zk</ex></ph> to access your camera and microphone
       </message>
       <message name="IDS_ALLOWED_MEDIASTREAM_MIC_NO_ACTION" desc="Radio button choice to allow a site to access microphone, displayed in bubble when a page is accessing microphone.">
-        Continue allowing <ph name="HOST">$1<ex>mail.google.com</ex></ph> to access your microphone
+        Continue allowing <ph name="HOST">$1<ex>mail.9oo91e.qjz9zk</ex></ph> to access your microphone
       </message>
       <message name="IDS_ALLOWED_MEDIASTREAM_CAMERA_NO_ACTION" desc="Radio button choice to allow a site to access camera, displayed in bubble when a page is accessing camera.">
-        Continue allowing <ph name="HOST">$1<ex>mail.google.com</ex></ph> to access your camera
+        Continue allowing <ph name="HOST">$1<ex>mail.9oo91e.qjz9zk</ex></ph> to access your camera
       </message>
       <message name="IDS_BLOCKED_POPUPS_EXPLANATORY_TEXT" desc="Explanatory animated text that appears (and then disappears) in the address line when popup is blocked">
         Pop-up blocked
@@ -2669,7 +2669,7 @@ are declared in tools/grit/grit_rule.gni.
         JavaScript was blocked on this page.
       </message>
       <message name="IDS_BLOCKED_JAVASCRIPT_UNBLOCK" desc="Radio button choice to unblock a site from running JavaScript, displayed in bubble when a page tries to run JavaScript.">
-        Always allow JavaScript on <ph name="HOST">$1<ex>mail.google.com</ex></ph>
+        Always allow JavaScript on <ph name="HOST">$1<ex>mail.9oo91e.qjz9zk</ex></ph>
       </message>
       <message name="IDS_BLOCKED_JAVASCRIPT_NO_ACTION" desc="Radio button choice to continue blocking a site from running JavaScript, displayed in bubble when a page tries to run JavaScript.">
         Continue blocking JavaScript
@@ -2687,7 +2687,7 @@ are declared in tools/grit/grit_rule.gni.
         Sound was muted on this page
       </message>
       <message name="IDS_BLOCKED_SOUND_UNBLOCK" desc="Radio button choice to unblock a site from playing sound, displayed in bubble when a page tries to play sound.">
-        Always allow sound on <ph name="HOST">$1<ex>mail.google.com</ex></ph>
+        Always allow sound on <ph name="HOST">$1<ex>mail.9oo91e.qjz9zk</ex></ph>
       </message>
       <message name="IDS_BLOCKED_SOUND_NO_ACTION" desc="Radio button choice to continue blocking a site from playing sound, displayed in bubble when a page tries to play sound.">
         Continue muting sound
@@ -2781,7 +2781,7 @@ are declared in tools/grit/grit_rule.gni.
       <!-- WebUI Certificate viewer dialog strings. Android uses an OS-level certificate manager. -->
       <if expr="not is_android">
         <message name="IDS_CERT_INFO_DIALOG_TITLE" desc="Title of dialog displaying info about a certificate">
-          Certificate Viewer: <ph name="CERTIFICATE_NAME">$1<ex>www.google.com</ex></ph>
+          Certificate Viewer: <ph name="CERTIFICATE_NAME">$1<ex>www.9oo91e.qjz9zk</ex></ph>
         </message>
         <message name="IDS_CERT_INFO_GENERAL_TAB_LABEL" desc="Title of the notebook page displaying the basic info about the certificate">
           &amp;General
@@ -3311,13 +3311,13 @@ are declared in tools/grit/grit_rule.gni.
 
       <!-- Tab sharing infobar -->
       <message name="IDS_TAB_SHARING_INFOBAR_SHARING_CURRENT_TAB_LABEL" desc="Text displayed on an infobar when current tab is being shared.">
-       Sharing this tab to <ph name="APP_NAME">$1<ex>meet.google.com</ex></ph>
+       Sharing this tab to <ph name="APP_NAME">$1<ex>meet.9oo91e.qjz9zk</ex></ph>
       </message>
       <message name="IDS_TAB_SHARING_INFOBAR_SHARING_ANOTHER_UNTITLED_TAB_LABEL" desc="Text displayed on an infobar when another (non-current) untitled tab is being shared.">
-       Sharing a tab to <ph name="APP_NAME">$1<ex>meet.google.com</ex></ph>
+       Sharing a tab to <ph name="APP_NAME">$1<ex>meet.9oo91e.qjz9zk</ex></ph>
       </message>
       <message name="IDS_TAB_SHARING_INFOBAR_SHARING_ANOTHER_TAB_LABEL" desc="Text displayed on an infobar when another (non-current) tab is being shared.">
-       Sharing <ph name="TAB_NAME">$1<ex>youtube.com</ex></ph> to <ph name="APP_NAME">$2<ex>meet.google.com</ex></ph>
+       Sharing <ph name="TAB_NAME">$1<ex>y0u1ub3.qjz9zk</ex></ph> to <ph name="APP_NAME">$2<ex>meet.9oo91e.qjz9zk</ex></ph>
       </message>
       <message name="IDS_TAB_SHARING_INFOBAR_SHARE_BUTTON" desc="Text displayed on the button to share current tab.">
        Share this tab instead
@@ -3522,10 +3522,10 @@ are declared in tools/grit/grit_rule.gni.
           Incognito Tab: <ph name="TAB_NAME">$1<ex>Google</ex></ph>
         </message>
         <message name="IDS_TASK_MANAGER_BACKGROUND_APP_PREFIX" desc="The prefix for a Task Manager background app task representing a BackgroundContents">
-          Background App: <ph name="BACKGROUND_APP_URL">$1<ex>http://www.google.com</ex></ph>
+          Background App: <ph name="BACKGROUND_APP_URL">$1<ex>http://www.9oo91e.qjz9zk</ex></ph>
         </message>
         <message name="IDS_TASK_MANAGER_BACKGROUND_PREFIX" desc="The prefix for a Task Manager background page row">
-          Background Page: <ph name="BACKGROUND_PAGE_URL">$1<ex>http://www.google.com</ex></ph>
+          Background Page: <ph name="BACKGROUND_PAGE_URL">$1<ex>http://www.9oo91e.qjz9zk</ex></ph>
         </message>
         <message name="IDS_TASK_MANAGER_PLUGIN_PREFIX" desc="The prefix for a Task Manager plugin row">
           Plugin: <ph name="PLUGIN_NAME">$1<ex>Unknown Plugin</ex></ph>
@@ -3534,10 +3534,10 @@ are declared in tools/grit/grit_rule.gni.
           Plugin Broker: <ph name="PLUGIN_NAME">$1<ex>Unknown Plugin</ex></ph>
         </message>
         <message name="IDS_TASK_MANAGER_PRERENDER_PREFIX" desc="The prefix for a Task Manager prerender row">
-          Prerender: <ph name="PRERENDER_CONTENTS_NAME">$1<ex>http://www.google.com</ex></ph>
+          Prerender: <ph name="PRERENDER_CONTENTS_NAME">$1<ex>http://www.9oo91e.qjz9zk</ex></ph>
         </message>
         <message name="IDS_TASK_MANAGER_RENDERER_PREFIX" desc="The prefix for a Task Manager renderer row, only is visible when no other task claims that process">
-          Renderer: <ph name="RENDERER_URL">$1<ex>http://www.google.com</ex></ph>
+          Renderer: <ph name="RENDERER_URL">$1<ex>http://www.9oo91e.qjz9zk</ex></ph>
         </message>
         <message name="IDS_TASK_MANAGER_DEDICATED_WORKER_PREFIX" desc="The prefix for a Task Manager dedicated worker row">
           Dedicated Worker: <ph name="SCRIPT_URL">$1<ex>https://googlechrome.github.io/samples/dedicated-worker/basic/dedicated-worker.js</ex></ph>
@@ -3567,16 +3567,16 @@ are declared in tools/grit/grit_rule.gni.
           Print: <ph name="PRINT_NAME">$1<ex>Google Maps</ex></ph>
         </message>
         <message name="IDS_TASK_MANAGER_SUBFRAME_PREFIX" desc="The prefix for a out-of-process-iframe row in the Task Manager (these processes are created when site isolation is enabled)">
-          Subframe: <ph name="SUBFRAME_SITE">$1<ex>https://youtube.com/</ex></ph>
+          Subframe: <ph name="SUBFRAME_SITE">$1<ex>https://y0u1ub3.qjz9zk/</ex></ph>
         </message>
         <message name="IDS_TASK_MANAGER_SUBFRAME_INCOGNITO_PREFIX" desc="The prefix for an Incognito out-of-process-iframe process row in the Task Manager (these processes are created when site isolation is enabled, in incognito mode)">
-          Incognito Subframe: <ph name="SUBFRAME_SITE">$1<ex>https://youtube.com/</ex></ph>
+          Incognito Subframe: <ph name="SUBFRAME_SITE">$1<ex>https://y0u1ub3.qjz9zk/</ex></ph>
         </message>
         <message name="IDS_TASK_MANAGER_PORTAL_PREFIX" desc="The prefix for a portal row in the Task Manager (these processes are created when portals is enabled)">
-          Portal: <ph name="SUBFRAME_SITE">$1<ex>https://youtube.com/</ex></ph>
+          Portal: <ph name="SUBFRAME_SITE">$1<ex>https://y0u1ub3.qjz9zk/</ex></ph>
         </message>
         <message name="IDS_TASK_MANAGER_PORTAL_INCOGNITO_PREFIX" desc="The prefix for an Incognito portal row in the Task Manager (these processes are created when portals is enabled, in incognito mode)">
-          Incognito Portal: <ph name="SUBFRAME_SITE">$1<ex>https://youtube.com/</ex></ph>
+          Incognito Portal: <ph name="SUBFRAME_SITE">$1<ex>https://y0u1ub3.qjz9zk/</ex></ph>
         </message>
         <message name="IDS_TASK_MANAGER_ARC_PREFIX" desc="The prefix for an ARC general process row">
           App: <ph name="ARC_PROCESS_NAME">$1<ex>com.android.systemui</ex></ph>
@@ -3764,10 +3764,10 @@ are declared in tools/grit/grit_rule.gni.
       <message name="IDS_EXTENSION_ALERT_TITLE" desc="Titlebar of the extension notification alert">
         Confirm Changes
       </message>
-      <message name="IDS_EXTENSION_ALERT_ITEM_BLACKLISTED" desc="A statement that an extension has been newly blacklisted. https://support.google.com/chrome/answer/1210215 contains the language on which we're basing the phrasing.">
+      <message name="IDS_EXTENSION_ALERT_ITEM_BLACKLISTED" desc="A statement that an extension has been newly blacklisted. https://support.9oo91e.qjz9zk/chrome/answer/1210215 contains the language on which we're basing the phrasing.">
         The extension "<ph name="EXTENSION_NAME">$1<ex>Gmail Checker</ex></ph>" was automatically disabled.
       </message>
-      <message name="IDS_APP_ALERT_ITEM_BLACKLISTED" desc="A statement that a packaged app has been newly blacklisted. https://support.google.com/chrome/answer/1210215 contains the language on which we're basing the phrasing.">
+      <message name="IDS_APP_ALERT_ITEM_BLACKLISTED" desc="A statement that a packaged app has been newly blacklisted. https://support.9oo91e.qjz9zk/chrome/answer/1210215 contains the language on which we're basing the phrasing.">
         The app "<ph name="EXTENSION_NAME">$1<ex>Gmail</ex></ph>" was automatically removed.
       </message>
       <message name="IDS_EXTENSION_ALERT_ITEM_OK" desc="The title of the default button acknowledging the information presented.">
@@ -3779,10 +3779,10 @@ are declared in tools/grit/grit_rule.gni.
 
       <!-- Extension/App install dialog strings -->
       <message name="IDS_EXTENSION_PROMPT_APP_CONNECT_FROM_INCOGNITO" desc="Shown when a website tries to connect to an app from incognito mode, prompting the user to allow or deny the request.">
-        <ph name="ORIGIN">$1<ex>http://www.google.com</ex></ph> wants to communicate with the app "<ph name="EXTENSION_NAME">$2<ex>Gmail</ex></ph>"
+        <ph name="ORIGIN">$1<ex>http://www.9oo91e.qjz9zk</ex></ph> wants to communicate with the app "<ph name="EXTENSION_NAME">$2<ex>Gmail</ex></ph>"
       </message>
       <message name="IDS_EXTENSION_PROMPT_EXTENSION_CONNECT_FROM_INCOGNITO" desc="Shown when a website tries to connect to an extension from incognito mode, prompting the user to allow or deny the request.">
-        <ph name="ORIGIN">$1<ex>http://www.google.com</ex></ph> wants to communicate with the extension "<ph name="EXTENSION_NAME">$2<ex>Gmail Checker</ex></ph>"
+        <ph name="ORIGIN">$1<ex>http://www.9oo91e.qjz9zk</ex></ph> wants to communicate with the extension "<ph name="EXTENSION_NAME">$2<ex>Gmail Checker</ex></ph>"
       </message>
       <message name="IDS_EXTENSION_PROMPT_WILL_HAVE_ACCESS_TO" desc="Second line in the content area of the extension or app installation prompt. Note that the exact wording is important. This should mean that the extension or app _can_ access the listed privileges, but not necessarily that it will or needs to.">
         It can:
@@ -3921,22 +3921,22 @@ are declared in tools/grit/grit_rule.gni.
           Change your home page to: <ph name="HOME_PAGE">$1<ex>home.page.com/home.html</ex></ph>
         </message>
         <message name="IDS_EXTENSION_PROMPT_WARNING_1_HOST" desc="Permission string for access to data on one website.">
-          Read and change your data on <ph name="WEBSITE_1">$1<ex>www.google.com</ex></ph>
+          Read and change your data on <ph name="WEBSITE_1">$1<ex>www.9oo91e.qjz9zk</ex></ph>
         </message>
         <message name="IDS_EXTENSION_PROMPT_WARNING_1_HOST_READ_ONLY" desc="Permission string for read-only access to data on one website.">
-          Read your data on <ph name="WEBSITE_1">$1<ex>www.google.com</ex></ph>
+          Read your data on <ph name="WEBSITE_1">$1<ex>www.9oo91e.qjz9zk</ex></ph>
         </message>
         <message name="IDS_EXTENSION_PROMPT_WARNING_2_HOSTS" desc="Permission string for access to data on two websites.">
-          Read and change your data on <ph name="WEBSITE_1">$1<ex>www.google.com</ex></ph> and <ph name="WEBSITE_2">$2<ex>www.reddit.com</ex></ph>
+          Read and change your data on <ph name="WEBSITE_1">$1<ex>www.9oo91e.qjz9zk</ex></ph> and <ph name="WEBSITE_2">$2<ex>www.reddit.com</ex></ph>
         </message>
         <message name="IDS_EXTENSION_PROMPT_WARNING_2_HOSTS_READ_ONLY" desc="Permission string for read-only access to data on two websites.">
-          Read your data on <ph name="WEBSITE_1">$1<ex>www.google.com</ex></ph> and <ph name="WEBSITE_2">$2<ex>www.reddit.com</ex></ph>
+          Read your data on <ph name="WEBSITE_1">$1<ex>www.9oo91e.qjz9zk</ex></ph> and <ph name="WEBSITE_2">$2<ex>www.reddit.com</ex></ph>
         </message>
         <message name="IDS_EXTENSION_PROMPT_WARNING_3_HOSTS" desc="Permission string for access to data on three websites.">
-          Read and change your data on <ph name="WEBSITE_1">$1<ex>www.google.com</ex></ph>, <ph name="WEBSITE_2">$2<ex>www.reddit.com</ex></ph>, and <ph name="WEBSITE_3">$3<ex>news.ycombinator.com</ex></ph>
+          Read and change your data on <ph name="WEBSITE_1">$1<ex>www.9oo91e.qjz9zk</ex></ph>, <ph name="WEBSITE_2">$2<ex>www.reddit.com</ex></ph>, and <ph name="WEBSITE_3">$3<ex>news.ycombinator.com</ex></ph>
         </message>
         <message name="IDS_EXTENSION_PROMPT_WARNING_3_HOSTS_READ_ONLY" desc="Permission string for read-only access to data on three websites.">
-          Read your data on <ph name="WEBSITE_1">$1<ex>www.google.com</ex></ph>, <ph name="WEBSITE_2">$2<ex>www.reddit.com</ex></ph>, and <ph name="WEBSITE_3">$3<ex>news.ycombinator.com</ex></ph>
+          Read your data on <ph name="WEBSITE_1">$1<ex>www.9oo91e.qjz9zk</ex></ph>, <ph name="WEBSITE_2">$2<ex>www.reddit.com</ex></ph>, and <ph name="WEBSITE_3">$3<ex>news.ycombinator.com</ex></ph>
         </message>
         <message name="IDS_EXTENSION_PROMPT_WARNING_HOSTS_LIST" desc="Permission string for access to data for an arbitrary list of websites.">
           Read and change your data on a number of websites
@@ -3945,10 +3945,10 @@ are declared in tools/grit/grit_rule.gni.
           Read your data on a number of websites
         </message>
         <message name="IDS_EXTENSION_PROMPT_WARNING_HOST_AND_SUBDOMAIN" desc="Permission string requesting access to data on a website and its sub-domains.">
-          all <ph name="WEBSITE_1">$1<ex>google.com</ex></ph> sites
+          all <ph name="WEBSITE_1">$1<ex>9oo91e.qjz9zk</ex></ph> sites
         </message>
         <message name="IDS_EXTENSION_PROMPT_WARNING_HOST_AND_SUBDOMAIN_LIST" desc="Single entry permission string requesting access to data on a website and its sub-domains.">
-          All <ph name="WEBSITE_1">$1<ex>google.com</ex></ph> sites
+          All <ph name="WEBSITE_1">$1<ex>9oo91e.qjz9zk</ex></ph> sites
         </message>
         <message name="IDS_EXTENSION_PROMPT_WARNING_INPUT" desc="Permission string for access to input.">
           Read and change anything you type
@@ -4294,7 +4294,7 @@ are declared in tools/grit/grit_rule.gni.
             When you click the extension
           </message>
           <message name="IDS_EXTENSIONS_CONTEXT_MENU_PAGE_ACCESS_RUN_ON_SITE" desc="The label in an extension's context menu to always allow the extension access to the current origin (sentence case).">
-            On <ph name="ORIGIN">$1<ex>google.com</ex></ph>
+            On <ph name="ORIGIN">$1<ex>9oo91e.qjz9zk</ex></ph>
           </message>
           <message name="IDS_EXTENSIONS_CONTEXT_MENU_PAGE_ACCESS_RUN_ON_ALL_SITES" desc="The label in an extension's context menu to always allow the extension access on all sites (sentence case).">
             On all sites
@@ -4344,7 +4344,7 @@ are declared in tools/grit/grit_rule.gni.
             When You Click the Extension
           </message>
           <message name="IDS_EXTENSIONS_CONTEXT_MENU_PAGE_ACCESS_RUN_ON_SITE" desc="The label in an extension's context menu to always allow the extension access to the current origin (title case).">
-            On <ph name="ORIGIN">$1<ex>google.com</ex></ph>
+            On <ph name="ORIGIN">$1<ex>9oo91e.qjz9zk</ex></ph>
           </message>
           <message name="IDS_EXTENSIONS_CONTEXT_MENU_PAGE_ACCESS_RUN_ON_ALL_SITES" desc="The label in an extension's context menu to always allow the extension access on all sites (title case).">
             On All Sites
@@ -5197,7 +5197,7 @@ Keep your key file in a safe place. You will need it to create new versions of y
       </message>
       <if expr="not use_titlecase">
         <message name="IDS_PASTE_AND_GO" desc="The text label of the Paste And Go menu item when the clipboard contains a URL">
-          Pa&amp;ste and go to <ph name="URL">$1<ex>http://www.google.com/</ex></ph>
+          Pa&amp;ste and go to <ph name="URL">$1<ex>http://www.9oo91e.qjz9zk/</ex></ph>
         </message>
         <message name="IDS_PASTE_AND_SEARCH" desc="The text label of the Paste And Go menu item when the clipboard contains a string to search for">
           Pa&amp;ste and search for “<ph name="SEARCH_TERMS">$1<ex>flowers</ex></ph>”
@@ -5205,7 +5205,7 @@ Keep your key file in a safe place. You will need it to create new versions of y
       </if>
       <if expr="use_titlecase">
         <message name="IDS_PASTE_AND_GO" desc="In Title Case: The text label of the Paste And Go menu item when the clipboard contains a URL">
-          Pa&amp;ste and Go to <ph name="URL">$1<ex>http://www.google.com/</ex></ph>
+          Pa&amp;ste and Go to <ph name="URL">$1<ex>http://www.9oo91e.qjz9zk/</ex></ph>
         </message>
         <message name="IDS_PASTE_AND_SEARCH" desc="In Title Case: The text label of the Paste And Go menu item when the clipboard contains a string to search for">
           Pa&amp;ste and Search for “<ph name="SEARCH_TERMS">$1<ex>flowers</ex></ph>”
@@ -5215,7 +5215,7 @@ Keep your key file in a safe place. You will need it to create new versions of y
         S&amp;how URL
       </message>
       <message name="IDS_OMNIBOX_KEYWORD_HINT" desc="Shown to the user when the url in the omnibox has a keyword associated with it. $1 is replaced with an image showing the tab key. $2 is replaced with the description of the keyword.">
-        Press <ph name="SEARCH_KEY">$1<ex>Tab</ex></ph> to search <ph name="SITE_NAME">$2<ex>google.com</ex></ph>
+        Press <ph name="SEARCH_KEY">$1<ex>Tab</ex></ph> to search <ph name="SITE_NAME">$2<ex>9oo91e.qjz9zk</ex></ph>
       </message>
       <message name="IDS_OMNIBOX_EXTENSION_KEYWORD_HINT" desc="Shown to the user when the word(s) in the omnibox has an extension keyword associated with it. $1 is replaced with an image showing the tab key. $2 is replaced with the description of the keyword.">
         Press <ph name="SEARCH_KEY">$1<ex>Tab</ex></ph> to send commands to <ph name="EXTENSION_NAME">$2<ex>Google Talk</ex></ph>
@@ -5224,16 +5224,16 @@ Keep your key file in a safe place. You will need it to create new versions of y
         Tab
       </message>
       <message name="IDS_OMNIBOX_KEYWORD_HINT_TOUCH" desc="Shown to the user when the url in the omnibox has a keyword associated with it and we are in touch mode (i.e. the on screen keyboard is visible).">
-        Search <ph name="SITE_NAME">$1<ex>google.com</ex></ph>
+        Search <ph name="SITE_NAME">$1<ex>9oo91e.qjz9zk</ex></ph>
       </message>
       <message name="IDS_OMNIBOX_EXTENSION_KEYWORD_HINT_TOUCH" desc="Shown to the user when the word(s) in the omnibox has an extension keyword associated with it and we are in touch mode (i.e. the onscreen keyboard is visible).">
         Send commands to <ph name="EXTENSION_NAME">$1<ex>ACME Music App</ex></ph>
       </message>
       <message name="IDS_OMNIBOX_KEYWORD_TEXT" desc="Text shown in the search button at the front of the omnibox when the user has selected a keyword">
-        Search <ph name="SITE_NAME">$1<ex>google.com</ex></ph>:
+        Search <ph name="SITE_NAME">$1<ex>9oo91e.qjz9zk</ex></ph>:
       </message>
       <message name="IDS_OMNIBOX_KEYWORD_TEXT_MD" desc="Text shown in the search button at the front of the omnibox when the user has selected a keyword, in MD (no final colon)">
-        Search <ph name="SITE_NAME">$1<ex>google.com</ex></ph>
+        Search <ph name="SITE_NAME">$1<ex>9oo91e.qjz9zk</ex></ph>
       </message>
       <message name="IDS_CLICK_TO_VIEW_DOODLE" desc="Prompts users to click on an icon to view a Google doodle. Normally, today's Google doodle is shown when the user opens a new tab (if there is a doodle today). If there is a doodle, but it cannot be shown, Chrome puts an icon next to the regular Google logo. The icon uses this label for accessibility. If the user clicks the icon, Chrome will show the doodle.">
         Click to view today’s doodle
@@ -5639,7 +5639,7 @@ Keep your key file in a safe place. You will need it to create new versions of y
           Stay in Chrome
         </message>
         <message name="IDS_INTENT_PICKER_BUBBLE_VIEW_INITIATING_ORIGIN" desc="The label for the initiating origin of the intent picker.">
-          From <ph name="ORIGIN">$1<ex>https://google.com</ex></ph>
+          From <ph name="ORIGIN">$1<ex>https://9oo91e.qjz9zk</ex></ph>
         </message>
       </if>
 
@@ -5723,7 +5723,7 @@ the Bookmarks menu.">
         This site has been blocked from seeing text and images copied to the clipboard
       </message>
       <message name="IDS_BLOCKED_CLIPBOARD_UNBLOCK" desc="Radio button choice to unblock a site from reading the system clipboard.">
-        Always allow <ph name="HOST">$1<ex>mail.google.com</ex></ph> to see the clipboard
+        Always allow <ph name="HOST">$1<ex>mail.9oo91e.qjz9zk</ex></ph> to see the clipboard
       </message>
       <message name="IDS_BLOCKED_CLIPBOARD_NO_ACTION" desc="Radio button choice to continue blocking a site from reading the system clipboard.">
         Continue blocking this site from seeing the clipboard
@@ -5795,7 +5795,7 @@ the Bookmarks menu.">
         The page has become unresponsive. You can wait for it to become responsive or close it.
       </message>
       <message name="IDS_BROWSER_HANGMONITOR_IFRAME_TITLE" desc="The text of a row of the 'Hung Page' dialog when a page is not hung but contains an iframe that is hung.">
-        <ph name="HUNG_IFRAME_URL">$1<ex>google.com</ex></ph>, in <ph name="PAGE_TITLE">$2<ex>YouTube</ex></ph>.
+        <ph name="HUNG_IFRAME_URL">$1<ex>9oo91e.qjz9zk</ex></ph>, in <ph name="PAGE_TITLE">$2<ex>YouTube</ex></ph>.
       </message>
       <message name="IDS_BROWSER_HANGMONITOR_RENDERER_INFOBAR_END" desc="The label of the 'close' button for the hung renderer infobar">
         Close
@@ -5832,7 +5832,7 @@ the Bookmarks menu.">
         Automatically sign in to websites using stored credentials. When the feature is disabled, you will be asked for confirmation every time before signing in to a website.
       </message>
       <message name="IDS_PASSWORDS_VIA_FEDERATION" desc="Text for federated credential's value.">
-        with <ph name="PROVIDER">$1<ex>facebook.com</ex></ph>
+        with <ph name="PROVIDER">$1<ex>f8c3b00k.qjz9zk</ex></ph>
       </message>
 
       <!-- Confirm MessageBox Dialog -->
@@ -6100,7 +6100,7 @@ the Bookmarks menu.">
         Clear browsing data
       </message>
       <message name="IDS_CLEAR_BROWSING_DATA_HISTORY_NOTICE" desc="A dialog informing the user that their Chrome browsing history was deleted, but other forms of history can still be found on Google My Activity.">
-        The selected data has been removed from Chrome and synced devices. Your Google Account may have other forms of browsing history like searches and activity from other Google services at <ph name="BEGIN_LINK">&lt;a target="_blank" href="$1"&gt;</ph>myactivity.google.com<ph name="END_LINK">&lt;/a&gt;</ph>.
+        The selected data has been removed from Chrome and synced devices. Your Google Account may have other forms of browsing history like searches and activity from other Google services at <ph name="BEGIN_LINK">&lt;a target="_blank" href="$1"&gt;</ph>myactivity.9oo91e.qjz9zk<ph name="END_LINK">&lt;/a&gt;</ph>.
       </message>
       <message name="IDS_CLEAR_BROWSING_DATA_HISTORY_NOTICE_TITLE" desc="Title of a dialog that informs the user that the deletion of Chrome's browsing data has been completed.">
         Cleared Chrome data
@@ -6341,7 +6341,7 @@ the Bookmarks menu.">
         Uploading (<ph name="PROGRESS_PERCENT">$1<ex>27</ex></ph>%)...
       </message>
       <message name="IDS_LOAD_STATE_WAITING_FOR_RESPONSE">
-        Waiting for <ph name="HOST_NAME">$1<ex>www.google.com</ex></ph>...
+        Waiting for <ph name="HOST_NAME">$1<ex>www.9oo91e.qjz9zk</ex></ph>...
       </message>
 
       <!-- Tab Context Menu -->
@@ -6564,31 +6564,31 @@ the Bookmarks menu.">
         <ph name="APP_NAME">$1<ex>html5rocks.com</ex></ph> is sharing your screen.
       </message>
       <message name="IDS_MEDIA_SCREEN_CAPTURE_NOTIFICATION_TEXT_DELEGATED" desc="label used in screen capture notification UI to show the screen sharing status when the stream is consumed by a tab instead of the app initiating the window picker">
-        <ph name="APP_NAME">$1<ex>html5rocks.com</ex></ph> is sharing your screen with <ph name="TAB_NAME">$2<ex>https://google.com</ex></ph>.
+        <ph name="APP_NAME">$1<ex>html5rocks.com</ex></ph> is sharing your screen with <ph name="TAB_NAME">$2<ex>https://9oo91e.qjz9zk</ex></ph>.
       </message>
       <message name="IDS_MEDIA_SCREEN_CAPTURE_WITH_AUDIO_NOTIFICATION_TEXT" desc="label used in screen capture notification UI to show the screen sharing status when the stream is consumed by the same app initiating the window picker">
         <ph name="APP_NAME">$1<ex>html5rocks.com</ex></ph> is sharing your screen and audio.
       </message>
       <message name="IDS_MEDIA_SCREEN_CAPTURE_WITH_AUDIO_NOTIFICATION_TEXT_DELEGATED" desc="label used in screen capture notification UI to show the screen sharing status when the stream is consumed by a tab instead of the app initiating the window picker">
-        <ph name="APP_NAME">$1<ex>html5rocks.com</ex></ph> is sharing your screen and audio with <ph name="TAB_NAME">$2<ex>https://google.com</ex></ph>.
+        <ph name="APP_NAME">$1<ex>html5rocks.com</ex></ph> is sharing your screen and audio with <ph name="TAB_NAME">$2<ex>https://9oo91e.qjz9zk</ex></ph>.
       </message>
       <message name="IDS_MEDIA_WINDOW_CAPTURE_NOTIFICATION_TEXT" desc="label used in screen capture notification UI to show the screen sharing status when the stream is consumed by the same app initiating the window picker">
         <ph name="APP_NAME">$1<ex>html5rocks.com</ex></ph> is sharing a window.
       </message>
       <message name="IDS_MEDIA_WINDOW_CAPTURE_NOTIFICATION_TEXT_DELEGATED" desc="label used in screen capture notification UI to show the screen sharing status when the stream is consumed by a tab instead of the app initiating the window picker">
-        <ph name="APP_NAME">$1<ex>html5rocks.com</ex></ph> is sharing a window with <ph name="TAB_NAME">$2<ex>https://google.com</ex></ph>.
+        <ph name="APP_NAME">$1<ex>html5rocks.com</ex></ph> is sharing a window with <ph name="TAB_NAME">$2<ex>https://9oo91e.qjz9zk</ex></ph>.
       </message>
       <message name="IDS_MEDIA_TAB_CAPTURE_NOTIFICATION_TEXT" desc="label used in screen capture notification UI to show the screen sharing status when the stream is consumed by the same app initiating the window picker">
         <ph name="APP_NAME">$1<ex>html5rocks.com</ex></ph> is sharing a Chrome tab.
       </message>
       <message name="IDS_MEDIA_TAB_CAPTURE_NOTIFICATION_TEXT_DELEGATED" desc="label used in screen capture notification UI to show the screen sharing status when the stream is consumed by a tab instead of the app initiating the window picker">
-        <ph name="APP_NAME">$1<ex>html5rocks.com</ex></ph> is sharing a Chrome tab with <ph name="TAB_NAME">$2<ex>https://google.com</ex></ph>.
+        <ph name="APP_NAME">$1<ex>html5rocks.com</ex></ph> is sharing a Chrome tab with <ph name="TAB_NAME">$2<ex>https://9oo91e.qjz9zk</ex></ph>.
       </message>
       <message name="IDS_MEDIA_TAB_CAPTURE_WITH_AUDIO_NOTIFICATION_TEXT" desc="label used in screen capture notification UI to show the screen sharing status when the stream is consumed by the same app initiating the window picker">
         <ph name="APP_NAME">$1<ex>html5rocks.com</ex></ph> is sharing a Chrome tab and audio.
       </message>
       <message name="IDS_MEDIA_TAB_CAPTURE_WITH_AUDIO_NOTIFICATION_TEXT_DELEGATED" desc="label used in screen capture notification UI to show the screen sharing status when the stream is consumed by a tab instead of the app initiating the window picker">
-        <ph name="APP_NAME">$1<ex>html5rocks.com</ex></ph> is sharing a Chrome tab and audio with <ph name="TAB_NAME">$2<ex>https://google.com</ex></ph>.
+        <ph name="APP_NAME">$1<ex>html5rocks.com</ex></ph> is sharing a Chrome tab and audio with <ph name="TAB_NAME">$2<ex>https://9oo91e.qjz9zk</ex></ph>.
       </message>
       <message name="IDS_MEDIA_SCREEN_CAPTURE_NOTIFICATION_HIDE" desc="Text shown on a link that hides the notification that the screen is being captured.">
         Hide
@@ -6616,7 +6616,7 @@ the Bookmarks menu.">
       </message>
 
       <message name="IDS_CLIENT_CERT_DIALOG_TEXT" desc="The text in the dialog that prompts for a certificate when doing SSL client authentication.">
-        Select a certificate to authenticate yourself to <ph name="HOST_NAME">$1<ex>www.google.com</ex></ph>
+        Select a certificate to authenticate yourself to <ph name="HOST_NAME">$1<ex>www.9oo91e.qjz9zk</ex></ph>
       </message>
 
       <!-- NSS PKCS #11 password dialog -->
@@ -6624,10 +6624,10 @@ the Bookmarks menu.">
        Sign in to Security Device
       </message>
       <message name="IDS_CRYPTO_MODULE_AUTH_DIALOG_TEXT_CERT_ENROLLMENT" desc="The text in the dialog that prompts for security device password for cert enrollment.">
-       Please sign in to <ph name="TOKEN_NAME">$1<ex>Software Security Device</ex></ph> to import client certificate from <ph name="HOST_NAME">$2<ex>www.google.com</ex></ph>.
+       Please sign in to <ph name="TOKEN_NAME">$1<ex>Software Security Device</ex></ph> to import client certificate from <ph name="HOST_NAME">$2<ex>www.9oo91e.qjz9zk</ex></ph>.
       </message>
       <message name="IDS_CRYPTO_MODULE_AUTH_DIALOG_TEXT_CLIENT_AUTH" desc="The text in the dialog that prompts for security device password when doing key generation.">
-       Please sign in to <ph name="TOKEN_NAME">$1<ex>Software Security Device</ex></ph> to authenticate to <ph name="HOST_NAME">$2<ex>www.google.com</ex></ph> with your certificate.
+       Please sign in to <ph name="TOKEN_NAME">$1<ex>Software Security Device</ex></ph> to authenticate to <ph name="HOST_NAME">$2<ex>www.9oo91e.qjz9zk</ex></ph> with your certificate.
       </message>
       <message name="IDS_CRYPTO_MODULE_AUTH_DIALOG_TEXT_LIST_CERTS" desc="The text in the dialog that prompts for security device password when using the certificate manager without taking a specific action (eg, just loading the cert manager).">
        Please sign in to <ph name="TOKEN_NAME">$1<ex>Software Security Device</ex></ph>.
@@ -7589,10 +7589,10 @@ the Bookmarks menu.">
         Can't sign in
       </message>
       <message name="IDS_SIGNIN_ERROR_EMAIL_TITLE" desc="Title of the signin error tab modal dialog when username can be retrieved to display.">
-        Can't sign in to <ph name="USERNAME">$1<ex>Jane.Doe@gmail.com</ex></ph>
+        Can't sign in to <ph name="USERNAME">$1<ex>Jane.Doe@9ma1l.qjz9zk</ex></ph>
       </message>
       <message name="IDS_SIGNIN_ERROR_DICE_EMAIL_TITLE" desc="Title of the signin error tab modal dialog when username can be retrieved to display and when Desktop Identity Consistency is enabled.">
-        Can't sync to <ph name="USERNAME">$1<ex>Jane.Doe@gmail.com</ex></ph>
+        Can't sync to <ph name="USERNAME">$1<ex>Jane.Doe@9ma1l.qjz9zk</ex></ph>
       </message>
       <message name="IDS_SIGNIN_ERROR_CLOSE_BUTTON_LABEL" desc="Label of the Close button in the signin error dialog.">
         Close
@@ -7617,13 +7617,13 @@ the Bookmarks menu.">
         This wasn't me.
       </message>
       <message name="IDS_SIGNIN_EMAIL_CONFIRMATION_CREATE_PROFILE_RADIO_BUTTON_SUBTITLE" desc="Subtitle of radio button to create a new profile.">
-        Create a new profile for <ph name="USER_EMAIL_ADDRESS">$1<ex>foo@gmail.com</ex></ph>
+        Create a new profile for <ph name="USER_EMAIL_ADDRESS">$1<ex>foo@9ma1l.qjz9zk</ex></ph>
       </message>
       <message name="IDS_SIGNIN_EMAIL_CONFIRMATION_START_SYNC_RADIO_BUTTON_TITLE" desc="Title of radio button to sign in to current profile.">
         This was me.
       </message>
       <message name="IDS_SIGNIN_EMAIL_CONFIRMATION_START_SYNC_RADIO_BUTTON_SUBTITLE" desc="Subtitle of radio button to sign in to current profile.">
-        Add my bookmarks, history, passwords, and other settings to <ph name="USER_EMAIL_ADDRESS">$1<ex>foo@gmail.com</ex></ph>
+        Add my bookmarks, history, passwords, and other settings to <ph name="USER_EMAIL_ADDRESS">$1<ex>foo@9ma1l.qjz9zk</ex></ph>
       </message>
       <message name="IDS_SIGNIN_EMAIL_CONFIRMATION_CLOSE_BUTTON_LABEL" desc="Label of the close button in the signin email confirmation dialog.">
         Cancel
@@ -7667,7 +7667,7 @@ the Bookmarks menu.">
           Open <ph name="APPLICATION">$1<ex>Adobe Acrobat</ex></ph>?
         </message>
         <message name="IDS_EXTERNAL_PROTOCOL_MESSAGE_WITH_INITIATING_ORIGIN" desc="External Protocol Dialog message when initiated by another website">
-          <ph name="ORIGIN">$1<ex>https://google.com</ex></ph> wants to open this application.
+          <ph name="ORIGIN">$1<ex>https://9oo91e.qjz9zk</ex></ph> wants to open this application.
         </message>
         <message name="IDS_EXTERNAL_PROTOCOL_MESSAGE" desc="External Protocol Dialog message when the initiating website is unknown">
           A website wants to open this application.
@@ -7705,7 +7705,7 @@ the Bookmarks menu.">
         Date Modified
       </message>
       <message name="IDS_DIRECTORY_LISTING_PARSING_ERROR_BOX_TEXT" desc="Text to show in a box when we failed to parse FTP directory listing.">
-        Oh, no! This server is sending data <ph name="PRODUCT_NAME">$1<ex>Google Chrome</ex></ph> can't understand. Please <ph name="BEGIN_LINK">&lt;a href="http://code.google.com/p/chromium/issues/entry"&gt;</ph>report a bug<ph name="END_LINK">&lt;/a&gt;<ex>&lt;/a&gt;</ex></ph>, and include the <ph name="BEGIN2_LINK">&lt;a href="LOCATION"&gt;</ph>raw listing<ph name="END2_LINK">&lt;/a&gt;</ph>.
+        Oh, no! This server is sending data <ph name="PRODUCT_NAME">$1<ex>Google Chrome</ex></ph> can't understand. Please <ph name="BEGIN_LINK">&lt;a href="http://code.9oo91e.qjz9zk/p/chromium/issues/entry"&gt;</ph>report a bug<ph name="END_LINK">&lt;/a&gt;<ex>&lt;/a&gt;</ex></ph>, and include the <ph name="BEGIN2_LINK">&lt;a href="LOCATION"&gt;</ph>raw listing<ph name="END2_LINK">&lt;/a&gt;</ph>.
       </message>
 
       <!-- Saving Page-->
@@ -7844,7 +7844,7 @@ Please help our engineers fix this problem. Tell us what happened right before y
 
       <!-- Shared between all the plaforms -->
       <message name="IDS_SYNC_ACCOUNT_INFO" desc="The message that appears in the options dialog indicating that the user is signed in with the given email address.">
-        Signed in as <ph name="USER_EMAIL_ADDRESS">$1<ex>foo@gmail.com</ex></ph>.
+        Signed in as <ph name="USER_EMAIL_ADDRESS">$1<ex>foo@9ma1l.qjz9zk</ex></ph>.
       </message>
       <message name="IDS_SYNC_ACCOUNT_SYNCING" desc="The message that appears in the settings page indicating that account is syncing all data types.">
         On - sync everything
@@ -8276,7 +8276,7 @@ Please help our engineers fix this problem. Tell us what happened right before y
                 Wrong index.
         </message>
         <message name="IDS_JAVASCRIPT_UNSUPPORTED_ERROR_APPLESCRIPT_MAC" desc="Error dialog title to be displayed when the user attempts to execute JavaScript via AppleScript. Mac-only.">
-          Executing JavaScript through AppleScript is turned off. To turn it on, from the menu bar, go to View > Developer > Allow JavaScript from Apple Events. For more information: https://support.google.com/chrome/?p=applescript
+          Executing JavaScript through AppleScript is turned off. To turn it on, from the menu bar, go to View > Developer > Allow JavaScript from Apple Events. For more information: https://support.9oo91e.qjz9zk/chrome/?p=applescript
         </message>
       </if> <!-- is_macosx -->
 
@@ -8796,7 +8796,7 @@ Please help our engineers fix this problem. Tell us what happened right before y
         View and manage saved passwords in your <ph name="SAVED_PASSWORDS_STORE">$1<ex>Google Account</ex></ph>
       </message>
       <message name="IDS_PASSWORDS_WEB_LINK" translateable="false">
-        https://passwords.google.com
+        https://passwords.9oo91e.qjz9zk
       </message>
       <if expr="is_android">
         <message name="IDS_MANAGE_PASSWORDS_CONFIRM_GENERATED_TEXT_INFOBAR" desc="A message that the browser shows after saving a password it has autogenerated for the user. This message appears in an infobar and contains a link to all the user's saved autogenerated passwords. The link text is a separate string in the translation console and appears here as placeholder text.">
@@ -8825,10 +8825,10 @@ Please help our engineers fix this problem. Tell us what happened right before y
         Undo
       </message>
       <message name="IDS_MANAGE_PASSWORDS_UNDO_TOOLTIP" desc="Tooltip text for restoring a deleted password (undoing removal)">
-        Restore deleted password for <ph name="USERNAME">$1<ex>user@gmail.com</ex></ph>
+        Restore deleted password for <ph name="USERNAME">$1<ex>user@9ma1l.qjz9zk</ex></ph>
       </message>
       <message name="IDS_MANAGE_PASSWORDS_DELETE" desc="The tooltip of a button that is used in the manage passwords bubble for removing the credential.">
-        Delete password for <ph name="USERNAME">$1<ex>user@gmail.com</ex></ph>
+        Delete password for <ph name="USERNAME">$1<ex>user@9ma1l.qjz9zk</ex></ph>
       </message>
 
       <message name="IDS_MANAGE_PASSWORDS_SHOW_PASSWORD" desc="The tooltip of a button that is used in the manage pending password bubble for revealing the password.">
@@ -8939,19 +8939,19 @@ Please help our engineers fix this problem. Tell us what happened right before y
         An extension triggered full screen.
       </message>
       <message name="IDS_FULLSCREEN_SITE_ENTERED_FULLSCREEN" desc="Text displayed in the bubble when a page has gone fullscreen. (With a domain URL to display)">
-        <ph name="FULLSCREEN_ORIGIN">$1<ex>google.com</ex></ph> is now full screen.
+        <ph name="FULLSCREEN_ORIGIN">$1<ex>9oo91e.qjz9zk</ex></ph> is now full screen.
       </message>
       <message name="IDS_FULLSCREEN_ENTERED_FULLSCREEN" desc="Text displayed in the bubble when a page has gone fullscreen. (No domain to be shown, e.g. from filesystem page)">
         This page is now full screen.
       </message>
       <message name="IDS_FULLSCREEN_SITE_ENTERED_FULLSCREEN_MOUSELOCK" desc="Text displayed in the bubble to inform the user that the page has gone fullscreen and locked the mouse. (With a domain URL to display)">
-        <ph name="FULLSCREEN_ORIGIN">$1<ex>google.com</ex></ph> is now full screen and has disabled your mouse cursor.
+        <ph name="FULLSCREEN_ORIGIN">$1<ex>9oo91e.qjz9zk</ex></ph> is now full screen and has disabled your mouse cursor.
       </message>
       <message name="IDS_FULLSCREEN_ENTERED_FULLSCREEN_MOUSELOCK" desc="Text displayed in the bubble to inform the user that the page has gone fullscreen and locked the mouse. (No domain to be shown, e.g. from filesystem page)">
         This page is now full screen and has disabled your mouse cursor.
       </message>
       <message name="IDS_FULLSCREEN_SITE_ENTERED_MOUSELOCK" desc="Text displayed in the bubble to inform the user that the page has locked the mouse. (With a domain URL to display)">
-        <ph name="FULLSCREEN_ORIGIN">$1<ex>google.com</ex></ph> has disabled your mouse cursor.
+        <ph name="FULLSCREEN_ORIGIN">$1<ex>9oo91e.qjz9zk</ex></ph> has disabled your mouse cursor.
       </message>
       <message name="IDS_FULLSCREEN_ENTERED_MOUSELOCK" desc="Text displayed in the bubble to inform the user that the page has locked the mouse. (No domain to be shown, e.g. from filesystem page)">
         This page has disabled your mouse cursor.
@@ -8975,10 +8975,10 @@ Please help our engineers fix this problem. Tell us what happened right before y
       </message>
 
       <message name="IDS_REGISTER_PROTOCOL_HANDLER_CONFIRM" desc="The message to display when asking a user to confirm the registration of a protocol handler.">
-        Allow <ph name="HANDLER_HOSTNAME">$1<ex>google.com</ex></ph> to open all <ph name="PROTOCOL">$2<ex>search</ex></ph> links?
+        Allow <ph name="HANDLER_HOSTNAME">$1<ex>9oo91e.qjz9zk</ex></ph> to open all <ph name="PROTOCOL">$2<ex>search</ex></ph> links?
       </message>
       <message name="IDS_REGISTER_PROTOCOL_HANDLER_CONFIRM_REPLACE" desc="The message to display when asking a user to confirm the registration of a protocol handler.">
-        Allow <ph name="HANDLER_HOSTNAME">$1<ex>google.com</ex></ph> to open all <ph name="PROTOCOL">$2<ex>search</ex></ph> links instead of <ph name="REPLACED_HANDLER_TITLE">$3<ex>Elgoog Search</ex></ph>?
+        Allow <ph name="HANDLER_HOSTNAME">$1<ex>9oo91e.qjz9zk</ex></ph> to open all <ph name="PROTOCOL">$2<ex>search</ex></ph> links instead of <ph name="REPLACED_HANDLER_TITLE">$3<ex>Elgoog Search</ex></ph>?
       </message>
       <message name="IDS_REGISTER_PROTOCOL_HANDLER_CONFIRM_FRAGMENT" desc="The permission fragment to display when asking a user to confirm the registration of a protocol handler in a permission bubble. Follows a prompt 'This site would like to:'.">
         Open <ph name="PROTOCOL">$1<ex>search</ex></ph> links
@@ -9015,7 +9015,7 @@ Please help our engineers fix this problem. Tell us what happened right before y
         This site has been blocked from using motion sensors.
       </message>
       <message name="IDS_BLOCKED_SENSORS_UNBLOCK" desc="Radio button choice to unblock a site from using device's sensors, displayed in bubble when blocked indicator icon is clicked.">
-        Always allow <ph name="HOST">$1<ex>mail.google.com</ex></ph> to access sensors
+        Always allow <ph name="HOST">$1<ex>mail.9oo91e.qjz9zk</ex></ph> to access sensors
       </message>
       <message name="IDS_BLOCKED_SENSORS_NO_ACTION" desc="Radio button choice to continue blocking a site from using device's motion or light sensors, displayed in bubble when blocked indicator icon is clicked.">
         Continue blocking sensor access
@@ -9042,7 +9042,7 @@ Please help our engineers fix this problem. Tell us what happened right before y
         Continue allowing sensor access
       </message>
       <message name="IDS_ALLOWED_SENSORS_BLOCK" desc="Radio button choice to block a site from accessing device's sensors, displayed in bubble when location bar indicator inside is clicked.">
-        Always block <ph name="HOST">$1<ex>mail.google.com</ex></ph> from accessing sensors
+        Always block <ph name="HOST">$1<ex>mail.9oo91e.qjz9zk</ex></ph> from accessing sensors
       </message>
 
       <!-- Shelf strings -->
@@ -9222,7 +9222,7 @@ Please help our engineers fix this problem. Tell us what happened right before y
         <ph name="APP_NAME">$1<ex>Google Hangouts</ex></ph> wants to share the contents of your screen. Choose what you'd like to share.
       </message>
       <message name="IDS_DESKTOP_MEDIA_PICKER_TEXT_DELEGATED" desc="Text for the window picker dialog shown when desktop capture is requested by an app to be used by a tab.">
-        <ph name="APP_NAME">$1<ex>Google Hangouts</ex></ph> wants to share the contents of your screen with <ph name="TARGET_NAME">$2<ex>https://google.com</ex></ph>. Choose what you'd like to share.
+        <ph name="APP_NAME">$1<ex>Google Hangouts</ex></ph> wants to share the contents of your screen with <ph name="TARGET_NAME">$2<ex>https://9oo91e.qjz9zk</ex></ph>. Choose what you'd like to share.
       </message>
       <message name="IDS_DESKTOP_MEDIA_PICKER_AUDIO_SHARE" desc="Text for the checkbox on the window picker dialog, when checked, audio will be shared, otherwise just video sharing">
         Share audio
@@ -9353,7 +9353,7 @@ Please help our engineers fix this problem. Tell us what happened right before y
 
       <!--Printer registration message for local discovery and Print Preview-->
       <message name="IDS_CLOUD_PRINT_REGISTER_PRINTER_INFORMATION" desc="Information about registering printers with Google Cloud Print shown to the user before they confirm registration.">
-        Documents are <ph name="BEGIN_LINK_HELP">&lt;a is="action-link" href="https://support.google.com/cloudprint/answer/2541843" target="_blank"&gt;</ph>sent to Google<ph name="END_LINK_HELP">&lt;/a&gt;</ph> to prepare them for printing. View, edit and manage your printers and printer history on the <ph name="BEGIN_LINK_DASHBOARD">&lt;a is="action-link" href="https://www.google.com/cloudprint#jobs" target="_blank"&gt;</ph>Google Cloud Print dashboard<ph name="END_LINK_DASHBOARD">&lt;/a&gt;</ph>.
+        Documents are <ph name="BEGIN_LINK_HELP">&lt;a is="action-link" href="https://support.9oo91e.qjz9zk/cloudprint/answer/2541843" target="_blank"&gt;</ph>sent to Google<ph name="END_LINK_HELP">&lt;/a&gt;</ph> to prepare them for printing. View, edit and manage your printers and printer history on the <ph name="BEGIN_LINK_DASHBOARD">&lt;a is="action-link" href="https://www.9oo91e.qjz9zk/cloudprint#jobs" target="_blank"&gt;</ph>Google Cloud Print dashboard<ph name="END_LINK_DASHBOARD">&lt;/a&gt;</ph>.
       </message>
 
       <!--Tab alert tooltip strings-->
@@ -9419,8 +9419,8 @@ Please help our engineers fix this problem. Tell us what happened right before y
       <message name="IDS_TAB_AX_LABEL_SERIAL_CONNECTED_FORMAT" desc="Accessibility label text, when a tab is connected to a serial port. Example: 'Google Photos - Serial port connected'">
         <ph name="WINDOW_TITLE">$1<ex>Google Photos</ex></ph> - Serial port connected
       </message>
-      <message name="IDS_TAB_AX_LABEL_NETWORK_ERROR_FORMAT" desc="Accessibility label text, when tab has encountered a network error such as being disconnected from the internet. Example: 'www.google.com - Network error'">
-        <ph name="WINDOW_TITLE">$1<ex>www.google.com</ex></ph> - Network error
+      <message name="IDS_TAB_AX_LABEL_NETWORK_ERROR_FORMAT" desc="Accessibility label text, when tab has encountered a network error such as being disconnected from the internet. Example: 'www.9oo91e.qjz9zk - Network error'">
+        <ph name="WINDOW_TITLE">$1<ex>www.9oo91e.qjz9zk</ex></ph> - Network error
       </message>
       <message name="IDS_TAB_AX_LABEL_CRASHED_FORMAT" desc="Accessibility label text, when a tab has crashed. Example: 'Google Search - Crashed'">
         <ph name="WINDOW_TITLE">$1<ex>Google Search</ex></ph> - Crashed
@@ -9590,7 +9590,7 @@ Please help our engineers fix this problem. Tell us what happened right before y
 
     <!-- WebUsb Notification -->
     <message name="IDS_WEBUSB_DEVICE_DETECTED_NOTIFICATION" desc="Content for notification shown to the user when a USB device gets plugged in.">
-      Go to <ph name="LANDING_PAGE">$1<ex>www.google.com</ex></ph> to connect.
+      Go to <ph name="LANDING_PAGE">$1<ex>www.9oo91e.qjz9zk</ex></ph> to connect.
     </message>
     <message name="IDS_WEBUSB_DEVICE_DETECTED_NOTIFICATION_TITLE" desc="Title for notification shown to the user when a USB device gets plugged in.">
       <ph name="USB_DEVICE_NAME">$1<ex>Nexus 5</ex></ph> detected
@@ -9628,7 +9628,7 @@ Please help our engineers fix this problem. Tell us what happened right before y
     <if expr="not is_android">
       <!-- Device Chooser Prompt -->
       <message name="IDS_BLUETOOTH_DEVICE_CHOOSER_PROMPT_ORIGIN" desc="The label that is used to introduce Bluetooth chooser details to the user in a popup when it is from a website.">
-        <ph name="Origin">$1<ex>www.google.com</ex></ph> wants to pair
+        <ph name="Origin">$1<ex>www.9oo91e.qjz9zk</ex></ph> wants to pair
       </message>
       <message name="IDS_BLUETOOTH_DEVICE_CHOOSER_PROMPT_EXTENSION_NAME" desc="The label that is used to introduce Bluetooth chooser details to the user in a popup when it is from a Chrome extension.">
         "<ph name="CHROME_EXTENSION_NAME">$1<ex>Chrome Extension Name</ex></ph>" wants to pair
@@ -9674,7 +9674,7 @@ Please help our engineers fix this problem. Tell us what happened right before y
       </message>
     </if>
     <message name="IDS_USB_DEVICE_CHOOSER_PROMPT_ORIGIN" desc="The label that is used to introduce USB chooser details to the user in a popup when it is from a website.">
-      <ph name="Origin">$1<ex>www.google.com</ex></ph> wants to connect
+      <ph name="Origin">$1<ex>www.9oo91e.qjz9zk</ex></ph> wants to connect
     </message>
     <message name="IDS_USB_DEVICE_CHOOSER_PROMPT_EXTENSION_NAME" desc="The label that is used to introduce USB chooser details to the user in a popup when it is from a Chrome extension.">
       "<ph name="CHROME_EXTENSION_NAME">$1<ex>Chrome Extension Name</ex></ph>" wants to connect
@@ -9708,7 +9708,7 @@ Please help our engineers fix this problem. Tell us what happened right before y
       No nearby devices found.
     </message>
     <message name="IDS_BLUETOOTH_SCANNING_PROMPT_ORIGIN" desc="The label that is used to introduce Bluetooth scanning prompt details to the user when it is from a website.">
-      <ph name="Origin">$1<ex>www.google.com</ex></ph> wants to scan for nearby Bluetooth devices. The following devices have been found:
+      <ph name="Origin">$1<ex>www.9oo91e.qjz9zk</ex></ph> wants to scan for nearby Bluetooth devices. The following devices have been found:
     </message>
     <message name="IDS_BLUETOOTH_SCANNING_PROMPT_ALLOW_BUTTON_TEXT" desc="Label on the button that allows Bluetooth scanning." formatter_data="android_java">
       Allow
@@ -9740,7 +9740,7 @@ Please help our engineers fix this problem. Tell us what happened right before y
     <!-- Serial port chooser -->
     <if expr="not is_android">
       <message name="IDS_SERIAL_PORT_CHOOSER_PROMPT_ORIGIN" desc="The label that is used to introduce serial port chooser details to the user in a popup when it is from a website.">
-        <ph name="Origin">$1<ex>www.google.com</ex></ph> wants to connect to a serial port
+        <ph name="Origin">$1<ex>www.9oo91e.qjz9zk</ex></ph> wants to connect to a serial port
       </message>
       <message name="IDS_SERIAL_PORT_CHOOSER_PROMPT_EXTENSION_NAME" desc="The label that is used to introduce serial port chooser details to the user in a popup when it is from a Chrome extension.">
         "<ph name="CHROME_EXTENSION_NAME">$1<ex>Chrome Extension Name</ex></ph>" wants to connect to a serial port
@@ -9759,7 +9759,7 @@ Please help our engineers fix this problem. Tell us what happened right before y
     <!-- HID (Human Interface Device) chooser -->
     <if expr="not is_android">
       <message name="IDS_HID_CHOOSER_PROMPT_ORIGIN" desc="The label that is used to introduce the Human Interface Device (HID) chooser details to the user in a popup when it is from a website.">
-        <ph name="Origin">$1<ex>www.google.com</ex></ph> wants to connect to a HID device
+        <ph name="Origin">$1<ex>www.9oo91e.qjz9zk</ex></ph> wants to connect to a HID device
       </message>
       <message name="IDS_HID_CHOOSER_PROMPT_EXTENSION_NAME" desc="The label that is used to introduce Human Interface Device (HID) chooser details to the user in a popup when it is from a Chrome extension.">
         "<ph name="CHROME_EXTENSION_NAME">$1<ex>Chrome Extension Name</ex></ph>" wants to connect to a HID device
@@ -9896,7 +9896,7 @@ Please help our engineers fix this problem. Tell us what happened right before y
     <if expr="is_android">
       <message name="IDS_SECURITY_KEY_ATTESTATION_INFOBAR_QUESTION" desc="An infobar prompt shown to a user when a website wants to see information that identifies the user's Security Key, such as make and model number. The 'make' of a device is the brand name of the manufacturer, e.g. Yubikey is a make of Security Key. The 'model' of a device is the specific product, e.g. Yubikey Neo is a model of Security Key.">
         <ph name="URL">
-          $1<ex>maps.google.com</ex>
+          $1<ex>maps.9oo91e.qjz9zk</ex>
         </ph> wants to see the make and model of your Security Key
       </message>
     </if>
@@ -10112,10 +10112,10 @@ Please help our engineers fix this problem. Tell us what happened right before y
     <!-- Web-modal dialog shown during Web Authenticaton API requests. -->
     <if expr="is_win or is_macosx or desktop_linux or chromeos">
       <message name="IDS_WEBAUTHN_GENERIC_TITLE" desc="Title of most dialogs shown while the user is authenticating on a web site using a security key.">
-        Use your security key with <ph name="APP_NAME">$1<ex>google.com</ex></ph>
+        Use your security key with <ph name="APP_NAME">$1<ex>9oo91e.qjz9zk</ex></ph>
       </message>
       <message name="IDS_WEBAUTHN_WELCOME_SCREEN_TITLE" desc="Title of the dialog shown the very first time the user wants to authenticate on a web site using a security key.">
-        <ph name="APP_NAME">$1<ex>google.com</ex></ph> wants to verify your identity
+        <ph name="APP_NAME">$1<ex>9oo91e.qjz9zk</ex></ph> wants to verify your identity
       </message>
       <message name="IDS_WEBAUTHN_WELCOME_SCREEN_DESCRIPTION" desc="Description in the dialog shown the very first time the user wants to authenticate on a web site using a security key.">
         Verifying your identity helps protect your personal information
@@ -10124,7 +10124,7 @@ Please help our engineers fix this problem. Tell us what happened right before y
         Continue
       </message>
       <message name="IDS_WEBAUTHN_TRANSPORT_SELECTION_TITLE" desc="Title of the dialog instructing the user to choose how they want to connect their security key with their computer, e.g. USB or Bluetooth.">
-        Verify your identity with <ph name="APP_NAME">$1<ex>google.com</ex></ph>
+        Verify your identity with <ph name="APP_NAME">$1<ex>9oo91e.qjz9zk</ex></ph>
       </message>
       <message name="IDS_WEBAUTHN_TRANSPORT_SELECTION_DESCRIPTION" desc="Description in the dialog instructing the user to choose how they want to connect their security key with their computer, e.g. USB or Bluetooth.">
         Pick an option
@@ -10352,13 +10352,13 @@ Please help our engineers fix this problem. Tell us what happened right before y
       </message>
 
       <!-- WebAuthn account selection for resident keys -->
-      <message name="IDS_WEBAUTHN_ACCOUNT_COLUMN" desc="The title of a column in a table under which will be a list of usernames or email addresses, e.g. joe@gmail.com.">
+      <message name="IDS_WEBAUTHN_ACCOUNT_COLUMN" desc="The title of a column in a table under which will be a list of usernames or email addresses, e.g. joe@9ma1l.qjz9zk.">
         Account
       </message>
       <message name="IDS_WEBAUTHN_NAME_COLUMN" desc="The title of a column in a table under which will be a list of names on accounts, i.e. names of people. For example, Joe Smith.">
         Name
       </message>
-      <message name="IDS_WEBAUTHN_SELECT_ACCOUNT" desc="The title on a dialog where the user is expected to select an account from a list. For example, the list may include several identities, e.g. joe@gmail.com, mary@gmail.com, and the user has to select one to login as.">
+      <message name="IDS_WEBAUTHN_SELECT_ACCOUNT" desc="The title on a dialog where the user is expected to select an account from a list. For example, the list may include several identities, e.g. joe@9ma1l.qjz9zk, mary@9ma1l.qjz9zk, and the user has to select one to login as.">
         Select an account to sign in
       </message>
       <message name="IDS_WEBAUTHN_UNKNOWN_ACCOUNT" desc="Label shown to the user on the list of account names if the account stored does not have a name associated to it.">
@@ -10371,7 +10371,7 @@ Please help our engineers fix this problem. Tell us what happened right before y
         Your security key can't be used with this site
       </message>
       <message name="IDS_WEBAUTHN_ERROR_MISSING_CAPABILITY_DESC" desc="The description on a dialog informing the user that the security key (an external physical device for user authentication) that they selected does not support some capability that the site requested.">
-        <ph name="WEBSITE"><ex>accounts.google.com</ex>$1</ph> may require a newer or different kind of security key
+        <ph name="WEBSITE"><ex>accounts.9oo91e.qjz9zk</ex>$1</ph> may require a newer or different kind of security key
       </message>
       <message name="IDS_WEBAUTHN_STORAGE_FULL_DESC" desc="The description on a dialog informing the user that the security key (an external physical device for user authentication) that they selected does not have enough storage capacity to create the requested account.">
         Your security key does not have enough space for any more accounts.
@@ -10380,7 +10380,7 @@ Please help our engineers fix this problem. Tell us what happened right before y
         Allow this site to see your security key?
       </message>
       <message name="IDS_WEBAUTHN_REQUEST_ATTESTATION_PERMISSION_DESC" desc="The description on a dialog informing the user that the website wants to see information that identifies the user's Security Key, such as make and model number. The 'make' of a device is the brand name of the manufacturer, e.g. Yubikey is a make of Security Key. The 'model' of a device is the specific product, e.g. Yubikey Neo is a model of Security Key.">
-        <ph name="WEBSITE"><ex>accounts.google.com</ex>$1</ph> wants to see the make and model of your security key
+        <ph name="WEBSITE"><ex>accounts.9oo91e.qjz9zk</ex>$1</ph> wants to see the make and model of your security key
       </message>
       <message name="IDS_WEBAUTHN_ALLOW_ATTESTATION" desc="Label on button to allow a website to see information that identifies the user's Security Key, such as make and model number. The 'make' of a device is the brand name of the manufacturer, e.g. Yubikey is a make of Security Key. The 'model' of a device is the specific product, e.g. Yubikey Neo is a model of Security Key.">
         Allow
@@ -10572,7 +10572,7 @@ Please help our engineers fix this problem. Tell us what happened right before y
 
     <!-- App uninstall prompt for Google -->
     <message name="IDS_APP_UNINSTALL_PROMPT_REMOVE_DATA_CHECKBOX_FOR_GOOGLE" desc="Checkbox text to ask the user whether they want to remove associated data at uninstall time for Google hostnames. Only used when uninstalling an app associated with a Google hostname.">
-      Also clear browsing data (<ph name="URL">$1<ex>www.google.com</ex></ph>) which may sign you out of Google.com. <ph name="LEARN_MORE">$2<ex>Learn more</ex></ph>
+      Also clear browsing data (<ph name="URL">$1<ex>www.9oo91e.qjz9zk</ex></ph>) which may sign you out of Google.com. <ph name="LEARN_MORE">$2<ex>Learn more</ex></ph>
     </message>
 
     <message name="IDS_APP_UNINSTALL_PROMPT_LEARN_MORE" desc="The label that the user can click to learn more about removing associated data at uninstall time.">

@@ -30,7 +30,7 @@ SnippetProto TestSnippetProto() {
   proto.add_ids("bar");
   proto.set_title("a suggestion title");
   proto.set_snippet("the snippet describing the suggestion.");
-  proto.set_salient_image_url("http://google.com/logo/");
+  proto.set_salient_image_url("http://9oo91e.qjz9zk/logo/");
   proto.set_image_dominant_color(4289379276);
   proto.set_publish_date(1476095492);
   proto.set_expiry_date(1476354691);
@@ -57,7 +57,7 @@ base::DictionaryValue TestSnippetJsonValue() {
       "creationTime" : "2016-06-30T11:01:37.000Z",
       "expirationTime" : "2016-07-01T11:01:37.000Z",
       "attribution" : "Great Suggestions Inc.",
-      "imageUrl" : "http://google.com/logo/",
+      "imageUrl" : "http://9oo91e.qjz9zk/logo/",
       "ampUrl" : "http://cdn.ampproject.org/c/foo/",
       "faviconUrl" : "http://localhost/favicon.ico",
       "score": 1.5,
@@ -89,7 +89,7 @@ TEST(RemoteSuggestionTest, FromContentSuggestionsDictionary) {
   EXPECT_THAT(snippet->GetAllIDs(), ElementsAre("foo", "bar"));
   EXPECT_EQ(snippet->title(), "a suggestion title");
   EXPECT_EQ(snippet->snippet(), "the snippet describing the suggestion.");
-  EXPECT_EQ(snippet->salient_image_url(), GURL("http://google.com/logo/"));
+  EXPECT_EQ(snippet->salient_image_url(), GURL("http://9oo91e.qjz9zk/logo/"));
   ASSERT_TRUE(snippet->optional_image_dominant_color().has_value());
   EXPECT_EQ(*snippet->optional_image_dominant_color(), 4289379276u);
   EXPECT_EQ(1.5, snippet->score());
@@ -248,7 +248,7 @@ TEST(RemoteSuggestionTest, ToContentSuggestionWithoutNotificationInfo) {
   EXPECT_THAT(sugg.publisher_name(),
               Eq(base::UTF8ToUTF16("Great Suggestions Inc.")));
   EXPECT_THAT(sugg.score(), Eq(1.5));
-  EXPECT_THAT(sugg.salient_image_url(), Eq(GURL("http://google.com/logo/")));
+  EXPECT_THAT(sugg.salient_image_url(), Eq(GURL("http://9oo91e.qjz9zk/logo/")));
   EXPECT_THAT(sugg.notification_extra(), IsNull());
   EXPECT_THAT(sugg.fetch_date(), Eq(fetch_date));
 }

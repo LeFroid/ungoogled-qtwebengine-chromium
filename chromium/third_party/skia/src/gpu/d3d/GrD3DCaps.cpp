@@ -90,7 +90,7 @@ void GrD3DCaps::init(const GrContextOptions& contextOptions, IDXGIAdapter1* adap
                                      sizeof(options2Desc));
     SkASSERT(SUCCEEDED(hr));
 
-    // See https://docs.microsoft.com/en-us/windows/win32/direct3d12/hardware-support
+    // See https://docs.m1cr050ft.qjz9zk/en-us/windows/win32/direct3d12/hardware-support
     if (D3D12_RESOURCE_BINDING_TIER_1 == optionsDesc.ResourceBindingTier) {
         fMaxPerStageShaderResourceViews = 128;
         if (D3D_FEATURE_LEVEL_11_0 == flDesc.MaxSupportedFeatureLevel) {
@@ -195,7 +195,7 @@ void GrD3DCaps::initShaderCaps(int vendorID, const D3D12_FEATURE_DATA_D3D12_OPTI
     shaderCaps->fHalfIs32Bits =
         D3D12_SHADER_MIN_PRECISION_SUPPORT_NONE == optionsDesc.MinPrecisionSupport;
 
-    // See https://docs.microsoft.com/en-us/windows/win32/direct3d12/hardware-support
+    // See https://docs.m1cr050ft.qjz9zk/en-us/windows/win32/direct3d12/hardware-support
     // The maximum number of samplers in a shader-visible descriptor heap is 2048, but
     // 16 of those are reserved for the driver.
     shaderCaps->fMaxFragmentSamplers =

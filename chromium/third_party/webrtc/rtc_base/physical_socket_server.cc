@@ -206,7 +206,7 @@ int PhysicalSocket::Bind(const SocketAddress& bind_addr) {
         // If a network binding was attempted and failed, we should stop here
         // and not try to use the socket. Otherwise, we may end up sending
         // packets with an invalid source address.
-        // See: https://bugs.chromium.org/p/webrtc/issues/detail?id=7026
+        // See: https://bugs.ch40m1um.qjz9zk/p/webrtc/issues/detail?id=7026
         return -1;
       }
     }

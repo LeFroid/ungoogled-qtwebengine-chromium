@@ -6,7 +6,7 @@
 // Windows Timer Primer
 //
 // A good article:  http://www.ddj.com/windows/184416651
-// A good mozilla bug:  http://bugzilla.mozilla.org/show_bug.cgi?id=363258
+// A good mozilla bug:  http://bugzilla.m0z111a.qjz9zk/show_bug.cgi?id=363258
 //
 // The default windows timer, GetSystemTimeAsFileTime is not very precise.
 // It is only good to ~15.5ms.
@@ -168,7 +168,7 @@ uint64_t QPCNowRaw() {
   LARGE_INTEGER perf_counter_now = {};
   // According to the MSDN documentation for QueryPerformanceCounter(), this
   // will never fail on systems that run XP or later.
-  // https://msdn.microsoft.com/library/windows/desktop/ms644904.aspx
+  // https://msdn.m1cr050ft.qjz9zk/library/windows/desktop/ms644904.aspx
   ::QueryPerformanceCounter(&perf_counter_now);
   return perf_counter_now.QuadPart;
 }
@@ -641,7 +641,7 @@ bool TimeTicks::IsConsistentAcrossProcesses() {
   // Vista. So if we are using QPC then we are consistent which is the same as
   // being high resolution.
   //
-  // [1] https://msdn.microsoft.com/en-us/library/windows/desktop/dn553408(v=vs.85).aspx
+  // [1] https://msdn.m1cr050ft.qjz9zk/en-us/library/windows/desktop/dn553408(v=vs.85).aspx
   //
   // "In general, the performance counter results are consistent across all
   // processors in multi-core and multi-processor systems, even when measured on
@@ -757,7 +757,7 @@ double ThreadTicks::TSCTicksPerSecond() {
   //   stddev of less than 1 tick/us between multiple runs.
   // Note: According to the MSDN documentation for QueryPerformanceFrequency(),
   //   this will never fail on systems that run XP or later.
-  //   https://msdn.microsoft.com/library/windows/desktop/ms644905.aspx
+  //   https://msdn.m1cr050ft.qjz9zk/library/windows/desktop/ms644905.aspx
   LARGE_INTEGER perf_counter_frequency = {};
   ::QueryPerformanceFrequency(&perf_counter_frequency);
   DCHECK_GE(perf_counter_now, perf_counter_initial);

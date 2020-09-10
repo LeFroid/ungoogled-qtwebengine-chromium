@@ -189,7 +189,7 @@
         To help you complete tasks, Google will receive the URLs and contents of sites on which you use Assistant, as well as information you submit through Assistant. This information may be stored in your Google account. You can turn off Assistant in Chrome settings. <ph name="BEGIN_LINK">&lt;link&gt;</ph>Learn&#xA0;more<ph name="END_LINK">&lt;/link&gt;</ph>
       </message>
       <message name="IDS_AUTOFILL_ASSISTANT_GOOGLE_TERMS_URL" desc="URL for Google Autofill Assistant Terms of Service" translateable="false">
-        http://support.google.com/assistant?p=fast_checkout
+        http://support.9oo91e.qjz9zk/assistant?p=fast_checkout
       </message>
       <message name="IDS_AUTOFILL_ASSISTANT_GIVE_UP"
                desc="Text label that is shown when autofill assistant cannot help anymore, because of a user action."

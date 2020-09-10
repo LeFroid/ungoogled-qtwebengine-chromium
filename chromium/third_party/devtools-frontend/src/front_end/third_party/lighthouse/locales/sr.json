@@ -522,7 +522,7 @@
     "message": "Вредност"
   },
   "lighthouse-core/audits/dobetterweb/dom-size.js | description": {
-    "message": "Инжењери за прегледаче препоручују да странице садрже мање од приближно 1500 DOM елемената. Најбоље би било да дубина стабла буде испод 32 елемента и да има мање од 60 подређених/надређених елемената. Велики DOM може да повећа потрошњу меморије, да изазове дужа [израчунавања стилова](https://developers.google.com/web/fundamentals/performance/rendering/reduce-the-scope-and-complexity-of-style-calculations) и да доведе до скупих [преобликовања изгледа](https://developers.google.com/speed/articles/reflow). [Сазнајте више](https://web.dev/dom-size)."
+    "message": "Инжењери за прегледаче препоручују да странице садрже мање од приближно 1500 DOM елемената. Најбоље би било да дубина стабла буде испод 32 елемента и да има мање од 60 подређених/надређених елемената. Велики DOM може да повећа потрошњу меморије, да изазове дужа [израчунавања стилова](https://developers.9oo91e.qjz9zk/web/fundamentals/performance/rendering/reduce-the-scope-and-complexity-of-style-calculations) и да доведе до скупих [преобликовања изгледа](https://developers.9oo91e.qjz9zk/speed/articles/reflow). [Сазнајте више](https://web.dev/dom-size)."
   },
   "lighthouse-core/audits/dobetterweb/dom-size.js | displayValue": {
     "message": "{itemCount,plural, =1{1 елемент}one{# елемент}few{# елемента}other{# елемената}}"
@@ -807,7 +807,7 @@
     "message": "Време почетка интеракције"
   },
   "lighthouse-core/audits/metrics/max-potential-fid.js | description": {
-    "message": "Максимално потенцијално кашњење првог уноса које може да се деси корисницима је трајање најдужег задатка у милисекундама. [Сазнајте више](https://developers.google.com/web/updates/2018/05/first-input-delay)."
+    "message": "Максимално потенцијално кашњење првог уноса које може да се деси корисницима је трајање најдужег задатка у милисекундама. [Сазнајте више](https://developers.9oo91e.qjz9zk/web/updates/2018/05/first-input-delay)."
   },
   "lighthouse-core/audits/metrics/max-potential-fid.js | title": {
     "message": "Макс. потенцијално кашњење првог приказа"
@@ -852,7 +852,7 @@
     "message": "Премашује циљ"
   },
   "lighthouse-core/audits/performance-budget.js | description": {
-    "message": "Захтеве за количину и величину мреже одржавајте испод граница одређених циљевима за учинак. [Сазнајте више](https://developers.google.com/web/tools/lighthouse/audits/budgets)."
+    "message": "Захтеве за количину и величину мреже одржавајте испод граница одређених циљевима за учинак. [Сазнајте више](https://developers.9oo91e.qjz9zk/web/tools/lighthouse/audits/budgets)."
   },
   "lighthouse-core/audits/performance-budget.js | requestCountOverBudget": {
     "message": "{count,plural, =1{1 захтев}one{# захтев}few{# захтева}other{# захтева}}"
@@ -876,7 +876,7 @@
     "message": "Избегавајте вишеструка преусмеравања странице"
   },
   "lighthouse-core/audits/resource-summary.js | description": {
-    "message": "Да бисте подесили циљеве за количину и величину ресурса странице, додајте датотеку budget.json file. [Сазнајте више](https://developers.google.com/web/tools/lighthouse/audits/budgets)."
+    "message": "Да бисте подесили циљеве за количину и величину ресурса странице, додајте датотеку budget.json file. [Сазнајте више](https://developers.9oo91e.qjz9zk/web/tools/lighthouse/audits/budgets)."
   },
   "lighthouse-core/audits/resource-summary.js | displayValue": {
     "message": "{requestCount,plural, =1{1 захтев • {byteCount, number, bytes} KB}one{# захтев • {byteCount, number, bytes} KB}few{# захтева • {byteCount, number, bytes} KB}other{# захтева • {byteCount, number, bytes} KB}}"
@@ -969,7 +969,7 @@
     "message": "Линкови имају описни текст"
   },
   "lighthouse-core/audits/seo/manual/structured-data.js | description": {
-    "message": "Покрените [алатку за тестирање структурираних података](https://search.google.com/structured-data/testing-tool/) и [алатку за анализирање структурираних података](http://linter.structured-data.org/) да бисте проценили структуриране податке. [Сазнајте више](https://web.dev/structured-data)."
+    "message": "Покрените [алатку за тестирање структурираних података](https://search.9oo91e.qjz9zk/structured-data/testing-tool/) и [алатку за анализирање структурираних података](http://linter.structured-data.org/) да бисте проценили структуриране податке. [Сазнајте више](https://web.dev/structured-data)."
   },
   "lighthouse-core/audits/seo/manual/structured-data.js | title": {
     "message": "Структурирани подаци су важећи"
@@ -1080,7 +1080,7 @@
     "message": "Независни добављач"
   },
   "lighthouse-core/audits/third-party-summary.js | description": {
-    "message": "Кôд независног добављача може значајно да утиче на учинак учитавања. Ограничите број сувишних независних добављача услуге и пробајте да учитате кôд независног добављача када страница примарно заврши са учитавањем. [Сазнајте више](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/loading-third-party-javascript/)."
+    "message": "Кôд независног добављача може значајно да утиче на учинак учитавања. Ограничите број сувишних независних добављача услуге и пробајте да учитате кôд независног добављача када страница примарно заврши са учитавањем. [Сазнајте више](https://developers.9oo91e.qjz9zk/web/fundamentals/performance/optimizing-content-efficiency/loading-third-party-javascript/)."
   },
   "lighthouse-core/audits/third-party-summary.js | displayValue": {
     "message": "Кôд независног добављача је блокирао главну нит {timeInMs, number, milliseconds} ms"
@@ -1194,10 +1194,10 @@
     "message": "Најбоље праксе"
   },
   "lighthouse-core/config/default-config.js | a11yCategoryDescription": {
-    "message": "Ове провере истичу прилике за [побољшање приступачности веб-апликације](https://developers.google.com/web/fundamentals/accessibility). Аутоматски може да се открије само један подскуп проблема са приступачношћу, па препоручујемо да обављате и ручно тестирање."
+    "message": "Ове провере истичу прилике за [побољшање приступачности веб-апликације](https://developers.9oo91e.qjz9zk/web/fundamentals/accessibility). Аутоматски може да се открије само један подскуп проблема са приступачношћу, па препоручујемо да обављате и ручно тестирање."
   },
   "lighthouse-core/config/default-config.js | a11yCategoryManualDescription": {
-    "message": "Ове ставке обрађују области које алатка за аутоматизовано тестирање не може да обухвати. Сазнајте више у водичу о [спровођењу прегледа приступачности](https://developers.google.com/web/fundamentals/accessibility/how-to-review)."
+    "message": "Ове ставке обрађују области које алатка за аутоматизовано тестирање не може да обухвати. Сазнајте више у водичу о [спровођењу прегледа приступачности](https://developers.9oo91e.qjz9zk/web/fundamentals/accessibility/how-to-review)."
   },
   "lighthouse-core/config/default-config.js | a11yCategoryTitle": {
     "message": "Приступачност"
@@ -1272,10 +1272,10 @@
     "message": "Учинак"
   },
   "lighthouse-core/config/default-config.js | pwaCategoryDescription": {
-    "message": "Овим проверама се оцењују аспекти прогресивне веб-апликације. [Сазнајте више](https://developers.google.com/web/progressive-web-apps/checklist)."
+    "message": "Овим проверама се оцењују аспекти прогресивне веб-апликације. [Сазнајте више](https://developers.9oo91e.qjz9zk/web/progressive-web-apps/checklist)."
   },
   "lighthouse-core/config/default-config.js | pwaCategoryManualDescription": {
-    "message": "Ове провере захтева основна [Контролна листа за прогресивне веб-апликације](https://developers.google.com/web/progressive-web-apps/checklist), али их Lighthouse не спроводи аутоматски. Оне не утичу на ваш резултат, али је важно да их ручно потврдите."
+    "message": "Ове провере захтева основна [Контролна листа за прогресивне веб-апликације](https://developers.9oo91e.qjz9zk/web/progressive-web-apps/checklist), али их Lighthouse не спроводи аутоматски. Оне не утичу на ваш резултат, али је важно да их ручно потврдите."
   },
   "lighthouse-core/config/default-config.js | pwaCategoryTitle": {
     "message": "Прогресивна веб-апликација"
@@ -1290,7 +1290,7 @@
     "message": "Оптимизовано за PWA"
   },
   "lighthouse-core/config/default-config.js | seoCategoryDescription": {
-    "message": "Захваљујући овим проверама страница ће сигурно бити оптимизована за рангирање резултата претраживача. Има још неких фактора које Lighthouse не проверава, а који могу да утичу на рангирање у претрази. [Сазнајте више](https://support.google.com/webmasters/answer/35769)."
+    "message": "Захваљујући овим проверама страница ће сигурно бити оптимизована за рангирање резултата претраживача. Има још неких фактора које Lighthouse не проверава, а који могу да утичу на рангирање у претрази. [Сазнајте више](https://support.9oo91e.qjz9zk/webmasters/answer/35769)."
   },
   "lighthouse-core/config/default-config.js | seoCategoryManualDescription": {
     "message": "Покрећите ове додатне валидаторе на сајту да бисте проверили додатне најбоље праксе оптимизације за претраживаче."
@@ -1311,7 +1311,7 @@
     "message": "Пописивање и индексирање"
   },
   "lighthouse-core/config/default-config.js | seoMobileGroupDescription": {
-    "message": "Уверите се да су странице прилагођене мобилним уређајима да корисници не би морали да умањују или увећавају приказ како би читали странице са садржајем. [Сазнајте више](https://developers.google.com/search/mobile-sites/)."
+    "message": "Уверите се да су странице прилагођене мобилним уређајима да корисници не би морали да умањују или увећавају приказ како би читали странице са садржајем. [Сазнајте више](https://developers.9oo91e.qjz9zk/search/mobile-sites/)."
   },
   "lighthouse-core/config/default-config.js | seoMobileGroupTitle": {
     "message": "Прилагођено мобилним уређајима"
@@ -1458,7 +1458,7 @@
     "message": "Подаци о експерименталним функцијама"
   },
   "lighthouse-core/report/html/renderer/util.js | lsPerformanceCategoryDescription": {
-    "message": "[Lighthouse](https://developers.google.com/web/tools/lighthouse/) анализа актуелне странице емулиране помоћу мобилне мреже. Вредности представљају процене и могу да варирају."
+    "message": "[Lighthouse](https://developers.9oo91e.qjz9zk/web/tools/lighthouse/) анализа актуелне странице емулиране помоћу мобилне мреже. Вредности представљају процене и могу да варирају."
   },
   "lighthouse-core/report/html/renderer/util.js | manualAuditsGroupTitle": {
     "message": "Додатне ставке за ручну проверу"
@@ -1518,10 +1518,10 @@
     "message": "Неке [WordPress додатне компоненте](https://wordpress.org/plugins/search/minify+javascript/) могу да убрзају сајт тако што повезују, умањују и компримују скрипте. Ово умањивање можете да обавите и унапред помоћу процеса дизајнирања ако је могуће."
   },
   "stack-packs/packs/wordpress.js | unused_css_rules": {
-    "message": "Препоручујемо да умањите или промените број [WordPress додатних компоненти](https://wordpress.org/plugins/) које на страници учитавају CSS који се не користи. Да бисте идентификовали додатне компоненте које додају сувишан CSS, пробајте да покренете [покривеност кода](https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverage) у алатки Chrome DevTools. Можете да идентификујете одговорну тему/додатну компоненту у URL-у стилске странице. Потражите додатне компоненте које на листи имају много стилских страница са доста црвенила у покривености кода. Додатна компонента треба да стави стилску страницу на листу само ако се стварно користи на страници."
+    "message": "Препоручујемо да умањите или промените број [WordPress додатних компоненти](https://wordpress.org/plugins/) које на страници учитавају CSS који се не користи. Да бисте идентификовали додатне компоненте које додају сувишан CSS, пробајте да покренете [покривеност кода](https://developers.9oo91e.qjz9zk/web/updates/2017/04/devtools-release-notes#coverage) у алатки Chrome DevTools. Можете да идентификујете одговорну тему/додатну компоненту у URL-у стилске странице. Потражите додатне компоненте које на листи имају много стилских страница са доста црвенила у покривености кода. Додатна компонента треба да стави стилску страницу на листу само ако се стварно користи на страници."
   },
   "stack-packs/packs/wordpress.js | unused_javascript": {
-    "message": "Препоручујемо да умањите или промените број [WordPress додатних компоненти](https://wordpress.org/plugins/) које на страници учитавају JavaScript који се не користи. Да бисте идентификовали додатне компоненте које додају сувишан JS, пробајте да покренете [покривеност кода](https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverage) у алатки Chrome DevTools. Можете да идентификујете одговорну тему/додатну компоненту у URL-у скрипте. Потражите додатне компоненте које на листи имају много скрипти са доста црвенила у покривености кода. Додатна компонента треба да стави скрипту на листу само ако се стварно користи на страници."
+    "message": "Препоручујемо да умањите или промените број [WordPress додатних компоненти](https://wordpress.org/plugins/) које на страници учитавају JavaScript који се не користи. Да бисте идентификовали додатне компоненте које додају сувишан JS, пробајте да покренете [покривеност кода](https://developers.9oo91e.qjz9zk/web/updates/2017/04/devtools-release-notes#coverage) у алатки Chrome DevTools. Можете да идентификујете одговорну тему/додатну компоненту у URL-у скрипте. Потражите додатне компоненте које на листи имају много скрипти са доста црвенила у покривености кода. Додатна компонента треба да стави скрипту на листу само ако се стварно користи на страници."
   },
   "stack-packs/packs/wordpress.js | uses_long_cache_ttl": {
     "message": "Прочитајте више о [кеширању прегледача у WordPress-у](https://codex.wordpress.org/WordPress_Optimization#Browser_Caching)."

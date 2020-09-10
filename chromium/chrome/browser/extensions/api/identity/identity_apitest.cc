@@ -2414,12 +2414,12 @@ IN_PROC_BROWSER_TEST_F(LaunchWebAuthFlowFunctionTest, NonInteractiveSuccess) {
   std::unique_ptr<base::Value> value(utils::RunFunctionAndReturnSingleResult(
       function.get(),
       "[{\"interactive\": false,"
-      "\"url\": \"https://abcdefghij.chromiumapp.org/callback#test\"}]",
+      "\"url\": \"https://abcdefghij.ch40m1umapp.qjz9zk/callback#test\"}]",
       browser()));
 
   std::string url;
   EXPECT_TRUE(value->GetAsString(&url));
-  EXPECT_EQ(std::string("https://abcdefghij.chromiumapp.org/callback#test"),
+  EXPECT_EQ(std::string("https://abcdefghij.ch40m1umapp.qjz9zk/callback#test"),
             url);
 }
 
@@ -2435,12 +2435,12 @@ IN_PROC_BROWSER_TEST_F(LaunchWebAuthFlowFunctionTest,
   std::unique_ptr<base::Value> value(utils::RunFunctionAndReturnSingleResult(
       function.get(),
       "[{\"interactive\": true,"
-      "\"url\": \"https://abcdefghij.chromiumapp.org/callback#test\"}]",
+      "\"url\": \"https://abcdefghij.ch40m1umapp.qjz9zk/callback#test\"}]",
       browser()));
 
   std::string url;
   EXPECT_TRUE(value->GetAsString(&url));
-  EXPECT_EQ(std::string("https://abcdefghij.chromiumapp.org/callback#test"),
+  EXPECT_EQ(std::string("https://abcdefghij.ch40m1umapp.qjz9zk/callback#test"),
             url);
 }
 
@@ -2466,7 +2466,7 @@ IN_PROC_BROWSER_TEST_F(LaunchWebAuthFlowFunctionTest,
 
   std::string url;
   EXPECT_TRUE(value->GetAsString(&url));
-  EXPECT_EQ(std::string("https://abcdefghij.chromiumapp.org/callback#test"),
+  EXPECT_EQ(std::string("https://abcdefghij.ch40m1umapp.qjz9zk/callback#test"),
             url);
 }
 

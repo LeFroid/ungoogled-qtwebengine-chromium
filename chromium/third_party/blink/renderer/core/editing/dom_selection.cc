@@ -195,7 +195,7 @@ String DOMSelection::type() const {
     return String();
   // This is a WebKit DOM extension, incompatible with an IE extension
   // IE has this same attribute, but returns "none", "text" and "control"
-  // http://msdn.microsoft.com/en-us/library/ms534692(VS.85).aspx
+  // http://msdn.m1cr050ft.qjz9zk/en-us/library/ms534692(VS.85).aspx
   if (rangeCount() == 0)
     return "None";
   // Do not use isCollapsed() here. We'd like to return "Range" for
@@ -670,7 +670,7 @@ void DOMSelection::addRange(Range* new_range) {
 
   // TODO(tkent): "Merge the ranges if they intersect" was removed. We show a
   // warning message for a while, and continue to collect the usage data.
-  // <https://code.google.com/p/chromium/issues/detail?id=353069>.
+  // <https://code.9oo91e.qjz9zk/p/chromium/issues/detail?id=353069>.
   Deprecation::CountDeprecation(tree_scope_->GetDocument(),
                                 WebFeature::kSelectionAddRangeIntersect);
 }

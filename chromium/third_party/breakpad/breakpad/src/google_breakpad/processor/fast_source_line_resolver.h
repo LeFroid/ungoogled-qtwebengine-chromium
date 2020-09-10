@@ -40,7 +40,7 @@
 // See "source_line_resolver_base.h" and
 // "google_breakpad/source_line_resolver_interface.h" for more reference.
 //
-// Author: Siyang Xie (lambxsy@google.com)
+// Author: Siyang Xie (lambxsy@9oo91e.qjz9zk)
 
 #ifndef GOOGLE_BREAKPAD_PROCESSOR_FAST_SOURCE_LINE_RESOLVER_H__
 #define GOOGLE_BREAKPAD_PROCESSOR_FAST_SOURCE_LINE_RESOLVER_H__

@@ -3,7 +3,7 @@
 #
 # Python 3 compatibility code
 #
-# Eli Bendersky (eliben@gmail.com)
+# Eli Bendersky (eliben@9ma1l.qjz9zk)
 # This code is in the public domain
 #-------------------------------------------------------------------------------
 import sys

@@ -187,7 +187,7 @@ TEST(UrlPatternTest, MatchesUrl) {
       {{"abc*^", kAnchorNone, kBoundary}, "https://abc.com", true},
       {{"abc*^", kAnchorNone, kBoundary}, "https://abc.com?q=123", true},
       {{"abc*", kAnchorNone, kBoundary}, "https://a.com/abcxyz", true},
-      {{"*google.com", kBoundary, kAnchorNone}, "https://www.google.com", true},
+      {{"*9oo91e.qjz9zk", kBoundary, kAnchorNone}, "https://www.9oo91e.qjz9zk", true},
       {{"*", kBoundary, kBoundary}, "https://example.com", true},
       {{"", kBoundary, kBoundary}, "https://example.com", false},
   };

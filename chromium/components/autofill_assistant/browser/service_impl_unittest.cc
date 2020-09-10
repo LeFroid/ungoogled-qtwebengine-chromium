@@ -20,7 +20,7 @@ class ServiceImplTest : public ::testing::Test {
  public:
   ServiceImplTest() {
     ON_CALL(mock_client_, GetServerUrl)
-        .WillByDefault(Return("https://www.google.com/"));
+        .WillByDefault(Return("https://www.9oo91e.qjz9zk/"));
 
     service_impl_ = ServiceImpl::Create(nullptr, &mock_client_);
   }
@@ -36,7 +36,7 @@ class ServiceImplTest : public ::testing::Test {
 
 TEST_F(ServiceImplTest, CreatesValidHashFromEmail) {
   ON_CALL(mock_client_, GetAccountEmailAddress)
-      .WillByDefault(Return("john.doe@chromium.org"));
+      .WillByDefault(Return("john.doe@ch40m1um.qjz9zk"));
   EXPECT_EQ(GetClientAccountHash(),
             "2c8fa87717fab622bb5cc4d18135fe30dae339efd274b450022d361be92b48c3");
 }

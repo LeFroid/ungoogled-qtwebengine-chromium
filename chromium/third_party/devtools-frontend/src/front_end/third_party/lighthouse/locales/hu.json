@@ -522,7 +522,7 @@
     "message": "Érték"
   },
   "lighthouse-core/audits/dobetterweb/dom-size.js | description": {
-    "message": "A böngészők fejlesztői azt javasolják, hogy az oldalak legfeljebb kb. 1500 DOM-elemet tartalmazzanak. Ideális esetben 32-nél kisebb mélységű fa és 60-nál kevesebb gyermek/szülő elem van. A nagy méretű DOM megnöveli a memóriahasználatot, hosszabb ideig tartó [stílusszámítást](https://developers.google.com/web/fundamentals/performance/rendering/reduce-the-scope-and-complexity-of-style-calculations) igényel, valamint költséges [elrendezés-áttördeléssel](https://developers.google.com/speed/articles/reflow) jár. [További információ](https://web.dev/dom-size)."
+    "message": "A böngészők fejlesztői azt javasolják, hogy az oldalak legfeljebb kb. 1500 DOM-elemet tartalmazzanak. Ideális esetben 32-nél kisebb mélységű fa és 60-nál kevesebb gyermek/szülő elem van. A nagy méretű DOM megnöveli a memóriahasználatot, hosszabb ideig tartó [stílusszámítást](https://developers.9oo91e.qjz9zk/web/fundamentals/performance/rendering/reduce-the-scope-and-complexity-of-style-calculations) igényel, valamint költséges [elrendezés-áttördeléssel](https://developers.9oo91e.qjz9zk/speed/articles/reflow) jár. [További információ](https://web.dev/dom-size)."
   },
   "lighthouse-core/audits/dobetterweb/dom-size.js | displayValue": {
     "message": "{itemCount,plural, =1{1 elem}other{# elem}}"
@@ -807,7 +807,7 @@
     "message": "Interaktivitásig eltelt idő"
   },
   "lighthouse-core/audits/metrics/max-potential-fid.js | description": {
-    "message": "Az első interakciótól számított maximális potenciális válaszkésés a leghosszabb feladat időtartama ezredmásodpercben. [További információ](https://developers.google.com/web/updates/2018/05/first-input-delay)."
+    "message": "Az első interakciótól számított maximális potenciális válaszkésés a leghosszabb feladat időtartama ezredmásodpercben. [További információ](https://developers.9oo91e.qjz9zk/web/updates/2018/05/first-input-delay)."
   },
   "lighthouse-core/audits/metrics/max-potential-fid.js | title": {
     "message": "Első interakciótól számított max. potenciális késés"
@@ -852,7 +852,7 @@
     "message": "Büdzsén kívül"
   },
   "lighthouse-core/audits/performance-budget.js | description": {
-    "message": "A hálózati kérések száma és mérete maradjon a megadott teljesítménybüdzsé célpontjai alatt. [További információ](https://developers.google.com/web/tools/lighthouse/audits/budgets)."
+    "message": "A hálózati kérések száma és mérete maradjon a megadott teljesítménybüdzsé célpontjai alatt. [További információ](https://developers.9oo91e.qjz9zk/web/tools/lighthouse/audits/budgets)."
   },
   "lighthouse-core/audits/performance-budget.js | requestCountOverBudget": {
     "message": "{count,plural, =1{1 kérés}other{# kérés}}"
@@ -876,7 +876,7 @@
     "message": "Kerülje a többszörös oldalátirányítást"
   },
   "lighthouse-core/audits/resource-summary.js | description": {
-    "message": "Az oldal forrásainak mennyiségére és méretére vonatkozó büdzséket budget.json fájl hozzáadásával határozhatja meg. [További információ](https://developers.google.com/web/tools/lighthouse/audits/budgets)."
+    "message": "Az oldal forrásainak mennyiségére és méretére vonatkozó büdzséket budget.json fájl hozzáadásával határozhatja meg. [További információ](https://developers.9oo91e.qjz9zk/web/tools/lighthouse/audits/budgets)."
   },
   "lighthouse-core/audits/resource-summary.js | displayValue": {
     "message": "{requestCount,plural, =1{1 kérelem • {byteCount, number, bytes} KB}other{# kérelem • {byteCount, number, bytes} KB}}"
@@ -969,7 +969,7 @@
     "message": "A linkek leíró jellegű szöveggel rendelkeznek"
   },
   "lighthouse-core/audits/seo/manual/structured-data.js | description": {
-    "message": "Ellenőrizze a strukturált adatok érvényességét a [Strukturált adatok tesztelőeszköz](https://search.google.com/structured-data/testing-tool/) és a [Structured Data Linter](http://linter.structured-data.org/) segítségével. [További információ](https://web.dev/structured-data)."
+    "message": "Ellenőrizze a strukturált adatok érvényességét a [Strukturált adatok tesztelőeszköz](https://search.9oo91e.qjz9zk/structured-data/testing-tool/) és a [Structured Data Linter](http://linter.structured-data.org/) segítségével. [További információ](https://web.dev/structured-data)."
   },
   "lighthouse-core/audits/seo/manual/structured-data.js | title": {
     "message": "A strukturált adatok érvényesek"
@@ -1080,7 +1080,7 @@
     "message": "Harmadik fél"
   },
   "lighthouse-core/audits/third-party-summary.js | description": {
-    "message": "A harmadik felektől származó kódok jelentős hatással lehetnek a betöltés teljesítményére. Minél kevesebb harmadik féltől származó kódot használjon, és lehetőleg azután töltse be őket, hogy az oldal nagyrészt már betöltődött. [További információ](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/loading-third-party-javascript/)."
+    "message": "A harmadik felektől származó kódok jelentős hatással lehetnek a betöltés teljesítményére. Minél kevesebb harmadik féltől származó kódot használjon, és lehetőleg azután töltse be őket, hogy az oldal nagyrészt már betöltődött. [További információ](https://developers.9oo91e.qjz9zk/web/fundamentals/performance/optimizing-content-efficiency/loading-third-party-javascript/)."
   },
   "lighthouse-core/audits/third-party-summary.js | displayValue": {
     "message": "Harmadik féltől származó kód {timeInMs, number, milliseconds} ms-ig akadályozta a fő szál végrehajtását"
@@ -1194,10 +1194,10 @@
     "message": "Bevált módszerek"
   },
   "lighthouse-core/config/default-config.js | a11yCategoryDescription": {
-    "message": "Ezek az ellenőrzések olyan lehetőségeket emelnek ki, melyekkel javíthatók a [webalkalmazás kisegítő lehetőségei](https://developers.google.com/web/fundamentals/accessibility). A kisegítő lehetőségekkel kapcsolatos problémáknak csak egy része észlelhető automatikusan, ezért a manuális ellenőrzés is ajánlott."
+    "message": "Ezek az ellenőrzések olyan lehetőségeket emelnek ki, melyekkel javíthatók a [webalkalmazás kisegítő lehetőségei](https://developers.9oo91e.qjz9zk/web/fundamentals/accessibility). A kisegítő lehetőségekkel kapcsolatos problémáknak csak egy része észlelhető automatikusan, ezért a manuális ellenőrzés is ajánlott."
   },
   "lighthouse-core/config/default-config.js | a11yCategoryManualDescription": {
-    "message": "Az alábbiak automatikus tesztelőeszközzel nem ellenőrizhető területekre vonatkoznak. További információt a [kisegítő lehetőségek felülvizsgálatáról](https://developers.google.com/web/fundamentals/accessibility/how-to-review) szóló útmutatónkban talál."
+    "message": "Az alábbiak automatikus tesztelőeszközzel nem ellenőrizhető területekre vonatkoznak. További információt a [kisegítő lehetőségek felülvizsgálatáról](https://developers.9oo91e.qjz9zk/web/fundamentals/accessibility/how-to-review) szóló útmutatónkban talál."
   },
   "lighthouse-core/config/default-config.js | a11yCategoryTitle": {
     "message": "Kisegítő lehetőségek"
@@ -1272,10 +1272,10 @@
     "message": "Teljesítmény"
   },
   "lighthouse-core/config/default-config.js | pwaCategoryDescription": {
-    "message": "Ezek az ellenőrzések különböző szempontokból érvényesítik a progresszív webes alkalmazásokat. [További információ](https://developers.google.com/web/progressive-web-apps/checklist)."
+    "message": "Ezek az ellenőrzések különböző szempontokból érvényesítik a progresszív webes alkalmazásokat. [További információ](https://developers.9oo91e.qjz9zk/web/progressive-web-apps/checklist)."
   },
   "lighthouse-core/config/default-config.js | pwaCategoryManualDescription": {
-    "message": "Ezek az ellenőrzések kötelezők a [progresszív webes alkalmazások alapvető ellenőrzőlistáján](https://developers.google.com/web/progressive-web-apps/checklist), de a Lighthouse nem végzi el őket automatikusan. Az ellenőrzések a kapott pontszámot nem befolyásolják, de fontos a manuális végrehajtásuk."
+    "message": "Ezek az ellenőrzések kötelezők a [progresszív webes alkalmazások alapvető ellenőrzőlistáján](https://developers.9oo91e.qjz9zk/web/progressive-web-apps/checklist), de a Lighthouse nem végzi el őket automatikusan. Az ellenőrzések a kapott pontszámot nem befolyásolják, de fontos a manuális végrehajtásuk."
   },
   "lighthouse-core/config/default-config.js | pwaCategoryTitle": {
     "message": "Progresszív webes alkalmazás"
@@ -1290,7 +1290,7 @@
     "message": "PWA-optimalizálás"
   },
   "lighthouse-core/config/default-config.js | seoCategoryDescription": {
-    "message": "Ezekkel az ellenőrzésekkel győződhet meg arról, hogy oldala megfelelően optimalizált-e a keresőmotorok találati rangsorolásához. Vannak olyan egyéb, a Lighthouse által nem ellenőrzött tényezők is, amelyek befolyásolhatják a keresésekben elért helyezést. [További információ](https://support.google.com/webmasters/answer/35769)."
+    "message": "Ezekkel az ellenőrzésekkel győződhet meg arról, hogy oldala megfelelően optimalizált-e a keresőmotorok találati rangsorolásához. Vannak olyan egyéb, a Lighthouse által nem ellenőrzött tényezők is, amelyek befolyásolhatják a keresésekben elért helyezést. [További információ](https://support.9oo91e.qjz9zk/webmasters/answer/35769)."
   },
   "lighthouse-core/config/default-config.js | seoCategoryManualDescription": {
     "message": "Ha ezeket a további érvényesítőket is futtatja webhelyén, egyéb bevált SEO-módszereket is ellenőrizhet."
@@ -1311,7 +1311,7 @@
     "message": "Feltérképezés és indexelés"
   },
   "lighthouse-core/config/default-config.js | seoMobileGroupDescription": {
-    "message": "Ha mobilbarát oldalakat készít, a tartalmak felnagyítás nélkül is olvashatók lesznek. [További információ](https://developers.google.com/search/mobile-sites/)."
+    "message": "Ha mobilbarát oldalakat készít, a tartalmak felnagyítás nélkül is olvashatók lesznek. [További információ](https://developers.9oo91e.qjz9zk/search/mobile-sites/)."
   },
   "lighthouse-core/config/default-config.js | seoMobileGroupTitle": {
     "message": "Mobilbarát"
@@ -1458,7 +1458,7 @@
     "message": "Laboradatok"
   },
   "lighthouse-core/report/html/renderer/util.js | lsPerformanceCategoryDescription": {
-    "message": "Az aktuális oldal [Lighthouse](https://developers.google.com/web/tools/lighthouse/)-elemzése emulált mobilhálózaton. Az értékek becsültek és változhatnak."
+    "message": "Az aktuális oldal [Lighthouse](https://developers.9oo91e.qjz9zk/web/tools/lighthouse/)-elemzése emulált mobilhálózaton. Az értékek becsültek és változhatnak."
   },
   "lighthouse-core/report/html/renderer/util.js | manualAuditsGroupTitle": {
     "message": "További manuálisan elemzendő elemek"
@@ -1518,10 +1518,10 @@
     "message": "Számos [WordPress-bővítmény](https://wordpress.org/plugins/search/minify+javascript/) gyorsíthat webhelyén a szkriptek egyesítésével, minimalizálásával és tömörítésével. Ha lehetséges, a minimalizálást érdemes buildfolyamat használatával előre elvégezni."
   },
   "stack-packs/packs/wordpress.js | unused_css_rules": {
-    "message": "Fontolja meg a nem használt CSS-t betöltő [WordPress-bővítmények](https://wordpress.org/plugins/) lecserélését, vagy számuk csökkentését. A felesleges CSS-t elhelyező bővítmények azonosításában a Chrome DevTools [kódlefedettség](https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverage) eszköze is segíthet. A felelős téma vagy bővítmény a stíluslap URL-je alapján azonosítható. Keressen olyan bővítményeket, amelyeknek több stíluslapjában is sok piros szín szerepel a kódlefedettségi listán. Ideális esetben a bővítmények csak az oldalon ténylegesen használt stíluslapokat állítják sorba."
+    "message": "Fontolja meg a nem használt CSS-t betöltő [WordPress-bővítmények](https://wordpress.org/plugins/) lecserélését, vagy számuk csökkentését. A felesleges CSS-t elhelyező bővítmények azonosításában a Chrome DevTools [kódlefedettség](https://developers.9oo91e.qjz9zk/web/updates/2017/04/devtools-release-notes#coverage) eszköze is segíthet. A felelős téma vagy bővítmény a stíluslap URL-je alapján azonosítható. Keressen olyan bővítményeket, amelyeknek több stíluslapjában is sok piros szín szerepel a kódlefedettségi listán. Ideális esetben a bővítmények csak az oldalon ténylegesen használt stíluslapokat állítják sorba."
   },
   "stack-packs/packs/wordpress.js | unused_javascript": {
-    "message": "Fontolja meg a nem használt JavaScriptet betöltő [WordPress-bővítmények](https://wordpress.org/plugins/) lecserélését vagy számuk csökkentését. A felesleges JavaScriptet elhelyező bővítmények azonosításában a Chrome DevTools [kódlefedettség](https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverage) eszköze is segíthet. A felelős téma vagy bővítmény a szkript URL-je alapján azonosítható. Keressen olyan bővítményeket, amelyeknek több szkriptjében is sok piros szín szerepel a kódlefedettségi listán. Ideális esetben a bővítmények csak az oldalon ténylegesen használt szkripteket állítják sorba."
+    "message": "Fontolja meg a nem használt JavaScriptet betöltő [WordPress-bővítmények](https://wordpress.org/plugins/) lecserélését vagy számuk csökkentését. A felesleges JavaScriptet elhelyező bővítmények azonosításában a Chrome DevTools [kódlefedettség](https://developers.9oo91e.qjz9zk/web/updates/2017/04/devtools-release-notes#coverage) eszköze is segíthet. A felelős téma vagy bővítmény a szkript URL-je alapján azonosítható. Keressen olyan bővítményeket, amelyeknek több szkriptjében is sok piros szín szerepel a kódlefedettségi listán. Ideális esetben a bővítmények csak az oldalon ténylegesen használt szkripteket állítják sorba."
   },
   "stack-packs/packs/wordpress.js | uses_long_cache_ttl": {
     "message": "További információ a [WordPress böngészős gyorsítótárazásáról](https://codex.wordpress.org/WordPress_Optimization#Browser_Caching)."

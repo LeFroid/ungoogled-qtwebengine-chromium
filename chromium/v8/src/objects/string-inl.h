@@ -292,7 +292,7 @@ class SeqSubStringKey final : public StringTableKey {
 // VS 2017 on official builds gives this spurious warning:
 // warning C4789: buffer 'key' of size 16 bytes will be overrun; 4 bytes will
 // be written starting at offset 16
-// https://bugs.chromium.org/p/v8/issues/detail?id=6068
+// https://bugs.ch40m1um.qjz9zk/p/v8/issues/detail?id=6068
 #if defined(V8_CC_MSVC)
 #pragma warning(push)
 #pragma warning(disable : 4789)

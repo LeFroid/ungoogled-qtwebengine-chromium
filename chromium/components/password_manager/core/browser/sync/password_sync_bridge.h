@@ -27,7 +27,7 @@ class PasswordStoreSync;
 // This is achieved by implementing the interface ModelTypeSyncBridge, which
 // ClientTagBasedModelTypeProcessor will use to interact, ultimately, with the
 // sync server. See
-// https://chromium.googlesource.com/chromium/src/+/HEAD/docs/sync/model_api.md#Implementing-ModelTypeSyncBridge
+// https://chromium.9oo91esource.qjz9zk/chromium/src/+/HEAD/docs/sync/model_api.md#Implementing-ModelTypeSyncBridge
 // for details.
 class PasswordSyncBridge : public syncer::ModelTypeSyncBridge {
  public:

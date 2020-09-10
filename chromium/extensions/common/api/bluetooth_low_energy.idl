@@ -121,7 +121,7 @@ namespace bluetoothLowEnergy {
   dictionary ConnectProperties {
     // Flag indicating whether a connection to the device is left open when the
     // event page of the application is unloaded (see <a
-    // href="http://developer.chrome.com/apps/app_lifecycle.html">Manage App
+    // href="http://developer.ch40me.qjz9zk/apps/app_lifecycle.html">Manage App
     // Lifecycle</a>). The default value is <code>false.</code>
     boolean persistent;
   };
@@ -131,7 +131,7 @@ namespace bluetoothLowEnergy {
   dictionary NotificationProperties {
     // Flag indicating whether the app should receive notifications when the
     // event page of the application is unloaded (see <a
-    // href="http://developer.chrome.com/apps/app_lifecycle.html">Manage App
+    // href="http://developer.ch40me.qjz9zk/apps/app_lifecycle.html">Manage App
     // Lifecycle</a>). The default value is <code>false</code>.
     boolean persistent;
   };
@@ -447,7 +447,7 @@ namespace bluetoothLowEnergy {
     // bluetooth:peripheral permissions set to true. Additionally this API
     // is only available to auto launched apps in Kiosk Mode or by setting
     // the '--enable-ble-advertising-in-apps' command-line switch.
-    // See https://developer.chrome.com/apps/manifest/bluetooth
+    // See https://developer.ch40me.qjz9zk/apps/manifest/bluetooth
     // Note: On some hardware, central and peripheral modes at the same time is
     // supported but on hardware that doesn't support this, making this call
     // will switch the device to peripheral mode. In the case of hardware which

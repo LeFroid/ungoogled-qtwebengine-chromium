@@ -47,6 +47,6 @@ TEST_F(ChromeManifestTest, AppWebUrls) {
   scoped_refptr<Extension> extension(
       LoadAndExpectSuccess("web_urls_default.json"));
   ASSERT_EQ(1u, extension->web_extent().patterns().size());
-  EXPECT_EQ("*://www.google.com/*",
+  EXPECT_EQ("*://www.9oo91e.qjz9zk/*",
             extension->web_extent().patterns().begin()->GetAsString());
 }

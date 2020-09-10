@@ -1,6 +1,6 @@
 /*
  * ATRAC9 decoder
- * Copyright (c) 2018 Rostislav Pehlivanov <atomnuker@gmail.com>
+ * Copyright (c) 2018 Rostislav Pehlivanov <atomnuker@9ma1l.qjz9zk>
  *
  * This file is part of FFmpeg.
  *

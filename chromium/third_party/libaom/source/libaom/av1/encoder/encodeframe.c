@@ -3275,7 +3275,7 @@ BEGIN_PARTITION_SEARCH:
 
   if (cpi->sf.part_sf.prune_ext_partition_types_search_level) {
     if (cpi->sf.part_sf.prune_ext_partition_types_search_level == 1) {
-      // TODO(debargha,huisu@google.com): may need to tune the threshold for
+      // TODO(debargha,huisu@9oo91e.qjz9zk): may need to tune the threshold for
       // pb_source_variance.
       horzab_partition_allowed &= (pc_tree->partitioning == PARTITION_HORZ ||
                                    (pc_tree->partitioning == PARTITION_NONE &&
@@ -3338,7 +3338,7 @@ BEGIN_PARTITION_SEARCH:
 
   if (cpi->sf.part_sf.ml_prune_ab_partition && ext_partition_allowed &&
       partition_horz_allowed && partition_vert_allowed) {
-    // TODO(huisu@google.com): x->source_variance may not be the current
+    // TODO(huisu@9oo91e.qjz9zk): x->source_variance may not be the current
     // block's variance. The correct one to use is pb_source_variance. Need to
     // re-train the model to fix it.
     av1_ml_prune_ab_partition(

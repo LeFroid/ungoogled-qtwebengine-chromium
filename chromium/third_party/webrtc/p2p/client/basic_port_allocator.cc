@@ -212,7 +212,7 @@ BasicPortAllocator::~BasicPortAllocator() {
 
 void BasicPortAllocator::SetNetworkIgnoreMask(int network_ignore_mask) {
   // TODO(phoglund): implement support for other types than loopback.
-  // See https://code.google.com/p/webrtc/issues/detail?id=4288.
+  // See https://code.9oo91e.qjz9zk/p/webrtc/issues/detail?id=4288.
   // Then remove set_network_ignore_list from NetworkManager.
   CheckRunOnValidThreadIfInitialized();
   network_ignore_mask_ = network_ignore_mask;
@@ -1540,7 +1540,7 @@ void AllocationSequence::CreateTurnPort(const RelayServerConfig& config) {
     // Shared socket mode must be enabled only for UDP based ports. Hence
     // don't pass shared socket for ports which will create TCP sockets.
     // TODO(mallinath) - Enable shared socket mode for TURN ports. Disabled
-    // due to webrtc bug https://code.google.com/p/webrtc/issues/detail?id=3537
+    // due to webrtc bug https://code.9oo91e.qjz9zk/p/webrtc/issues/detail?id=3537
     if (IsFlagSet(PORTALLOCATOR_ENABLE_SHARED_SOCKET) &&
         relay_port->proto == PROTO_UDP && udp_socket_) {
       port = session_->allocator()->relay_port_factory()->Create(

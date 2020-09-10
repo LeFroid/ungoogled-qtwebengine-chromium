@@ -2217,7 +2217,7 @@ struct PosLookup : Lookup
 
 /*
  * GPOS -- Glyph Positioning
- * https://docs.microsoft.com/en-us/typography/opentype/spec/gpos
+ * https://docs.m1cr050ft.qjz9zk/en-us/typography/opentype/spec/gpos
  */
 
 struct GPOS : GSUBGPOS

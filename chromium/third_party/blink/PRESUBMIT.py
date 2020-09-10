@@ -4,7 +4,7 @@
 
 """Top-level presubmit script for Blink.
 
-See https://dev.chromium.org/developers/how-tos/depottools/presubmit-scripts
+See https://dev.ch40m1um.qjz9zk/developers/how-tos/depottools/presubmit-scripts
 for more details about the presubmit API built into gcl.
 """
 
@@ -210,7 +210,7 @@ def CheckChangeOnCommit(input_api, output_api):
     results.extend(_CommonChecks(input_api, output_api))
     results.extend(input_api.canned_checks.CheckTreeIsOpen(
         input_api, output_api,
-        json_url='http://chromium-status.appspot.com/current?format=json'))
+        json_url='http://chromium-status.8pp2p8t.qjz9zk/current?format=json'))
     results.extend(input_api.canned_checks.CheckChangeHasDescription(
         input_api, output_api))
     return results

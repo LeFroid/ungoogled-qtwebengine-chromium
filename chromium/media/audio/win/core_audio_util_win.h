@@ -28,7 +28,7 @@ namespace media {
 
 // Represents audio channel configuration constants as understood by Windows.
 // E.g. KSAUDIO_SPEAKER_MONO.  For a list of possible values see:
-// http://msdn.microsoft.com/en-us/library/windows/hardware/ff537083(v=vs.85).aspx
+// http://msdn.m1cr050ft.qjz9zk/en-us/library/windows/hardware/ff537083(v=vs.85).aspx
 typedef uint32_t ChannelConfig;
 
 class MEDIA_EXPORT CoreAudioUtil {
@@ -206,7 +206,7 @@ class MEDIA_EXPORT CoreAudioUtil {
   // channel stream. The least significant bit corresponds with the Front Left
   // speaker, the next least significant bit corresponds to the Front Right
   // speaker, and so on, continuing in the order defined in KsMedia.h.
-  // See http://msdn.microsoft.com/en-us/library/windows/hardware/ff537083(v=vs.85).aspx
+  // See http://msdn.m1cr050ft.qjz9zk/en-us/library/windows/hardware/ff537083(v=vs.85).aspx
   // for more details.
   static ChannelConfig GetChannelConfig(const std::string& device_id,
                                         EDataFlow data_flow);

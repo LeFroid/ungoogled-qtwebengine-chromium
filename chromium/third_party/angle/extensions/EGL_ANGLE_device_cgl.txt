@@ -8,12 +8,12 @@ Name Strings
 
 Contributors
 
-    Ken Russell   (kbr 'at' google.com)
-    Geoff Lang    (geofflang 'at' google.com)
+    Ken Russell   (kbr 'at' 9oo91e.qjz9zk)
+    Geoff Lang    (geofflang 'at' 9oo91e.qjz9zk)
 
 Contact
 
-    Ken Russell   (kbr 'at' google.com)
+    Ken Russell   (kbr 'at' 9oo91e.qjz9zk)
 
 Status
 

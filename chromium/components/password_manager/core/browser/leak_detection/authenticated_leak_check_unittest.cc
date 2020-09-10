@@ -32,8 +32,8 @@ using ::testing::Field;
 using ::testing::Return;
 using ::testing::StrictMock;
 
-constexpr char kTestEmail[] = "user@gmail.com";
-constexpr char kUsername[] = "USERNAME@gmail.com";
+constexpr char kTestEmail[] = "user@9ma1l.qjz9zk";
+constexpr char kUsername[] = "USERNAME@9ma1l.qjz9zk";
 constexpr char kPassword[] = "password123";
 constexpr char kExampleCom[] = "https://example.com";
 

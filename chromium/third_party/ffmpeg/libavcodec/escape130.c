@@ -1,6 +1,6 @@
 /*
  * Escape 130 video decoder
- * Copyright (C) 2008 Eli Friedman (eli.friedman <at> gmail.com)
+ * Copyright (C) 2008 Eli Friedman (eli.friedman <at> 9ma1l.qjz9zk)
  *
  * This file is part of FFmpeg.
  *

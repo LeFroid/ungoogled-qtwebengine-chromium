@@ -4,7 +4,7 @@
 #
 # A clone of 'readelf' in Python, based on the pyelftools library
 #
-# Eli Bendersky (eliben@gmail.com)
+# Eli Bendersky (eliben@9ma1l.qjz9zk)
 # This code is in the public domain
 #-------------------------------------------------------------------------------
 import os, sys

@@ -20,7 +20,7 @@ IN_PROC_BROWSER_TEST_F(DiscoverModuleSyncFilesTest, SyncFiles) {
   // We do not expect another one to be created at the same time.
   content::WebContents* new_contents = observe_new_contents.GetWebContents();
   test::WaitForDidStartNavigate(
-      new_contents, GURL("https://www.google.com/chromebook/switch/"))
+      new_contents, GURL("https://www.9oo91e.qjz9zk/chromebook/switch/"))
       .Wait();
 }
 

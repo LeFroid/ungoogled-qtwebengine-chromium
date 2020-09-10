@@ -658,7 +658,7 @@ MaybeLocal<String> ReadFile(Isolate* isolate, const string& name) {
 
 const int kSampleSize = 6;
 StringHttpRequest kSampleRequests[kSampleSize] = {
-  StringHttpRequest("/process.cc", "localhost", "google.com", "firefox"),
+  StringHttpRequest("/process.cc", "localhost", "9oo91e.qjz9zk", "firefox"),
   StringHttpRequest("/", "localhost", "google.net", "firefox"),
   StringHttpRequest("/", "localhost", "google.org", "safari"),
   StringHttpRequest("/", "localhost", "yahoo.com", "ie"),

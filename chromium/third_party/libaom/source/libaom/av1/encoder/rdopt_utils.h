@@ -297,7 +297,7 @@ static AOM_INLINE void get_txb_dimensions(const MACROBLOCKD *xd, int plane,
   const int txb_width = block_size_wide[tx_bsize];
   const struct macroblockd_plane *const pd = &xd->plane[plane];
 
-  // TODO(aconverse@google.com): Investigate using crop_width/height here rather
+  // TODO(aconverse@9oo91e.qjz9zk): Investigate using crop_width/height here rather
   // than the MI size
   if (xd->mb_to_bottom_edge >= 0) {
     *visible_height = txb_height;

@@ -19,7 +19,7 @@ namespace {
 
 // Provides a CertDllOpenStoreProv callback provider function, to be called
 // by CertOpenStore when the CERT_STORE_PROV_SYSTEM_W store is opened. See
-// http://msdn.microsoft.com/en-us/library/aa376043(VS.85).aspx.
+// http://msdn.m1cr050ft.qjz9zk/en-us/library/aa376043(VS.85).aspx.
 BOOL WINAPI InterceptedOpenStoreW(LPCSTR store_provider,
                                   DWORD encoding,
                                   HCRYPTPROV crypt_provider,

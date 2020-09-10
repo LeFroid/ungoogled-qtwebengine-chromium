@@ -39,7 +39,7 @@ constexpr uint8_t kAlternativeApplicationParameter[] = {
     0x4e, 0x82, 0x5e, 0xca, 0x3a, 0x98, 0x0f, 0x1a, 0x25, 0x6d};
 
 constexpr char kClientDataJson[] =
-    R"({"challenge":"foobar","new_keys_may_be_added_here":"do not compare clientDataJSON against a template. See https://goo.gl/yabPex","origin":"https://google.com","type":"webauthn.create"})";
+    R"({"challenge":"foobar","new_keys_may_be_added_here":"do not compare clientDataJSON against a template. See https://goo.gl.qjz9zk/yabPex","origin":"https://9oo91e.qjz9zk","type":"webauthn.create"})";
 
 // SHA-256 hash of kClientDataJson.
 constexpr uint8_t kClientDataHash[] = {

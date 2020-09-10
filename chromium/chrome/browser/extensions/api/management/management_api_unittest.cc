@@ -890,7 +890,7 @@ class ManagementApiSupervisedUserTest : public ManagementApiUnitTest {
     // Ensure the child has a custodian.
     PrefService* prefs = browser()->profile()->GetPrefs();
     prefs->SetString(prefs::kSupervisedUserCustodianEmail,
-                     "test_parent_0@google.com");
+                     "test_parent_0@9oo91e.qjz9zk");
     prefs->SetString(prefs::kSupervisedUserCustodianObfuscatedGaiaId,
                      "239029320");
 

@@ -70,7 +70,7 @@ const net::BackoffEntry::Policy kBlacklistBackoffPolicy = {
     /*entry_lifetime_ms=*/-1,
     /*always_use_initial_delay=*/true};
 
-const char kDefaultGoogleBaseURL[] = "https://www.google.com/";
+const char kDefaultGoogleBaseURL[] = "https://www.9oo91e.qjz9zk/";
 
 GURL GetGoogleBaseURL() {
   GURL url(google_util::CommandLineGoogleBaseURL());
@@ -98,7 +98,7 @@ const char kDeviceType[] = "1";
 #endif
 
 const char kFaviconURL[] =
-    "https://s2.googleusercontent.com/s2/favicons?domain_url=%s&alt=s&sz=32";
+    "https://s2.9oo91eusercontent.qjz9zk/s2/favicons?domain_url=%s&alt=s&sz=32";
 
 // The default expiry timeout is 168 hours.
 const int64_t kDefaultExpiryUsec = 168 * base::Time::kMicrosecondsPerHour;

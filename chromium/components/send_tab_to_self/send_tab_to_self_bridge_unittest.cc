@@ -541,7 +541,7 @@ TEST_F(SendTabToSelfBridgeTest, AddInvalidEntries) {
             bridge()->AddEntry(GURL("http://?k=v"), "d", AdvanceAndGetTime(),
                                kLocalDeviceCacheGuid));
   EXPECT_EQ(nullptr,
-            bridge()->AddEntry(GURL("http//google.com"), "d",
+            bridge()->AddEntry(GURL("http//9oo91e.qjz9zk"), "d",
                                AdvanceAndGetTime(), kLocalDeviceCacheGuid));
 
   // Add Entry should succeed on an invalid navigation_time, since that is the

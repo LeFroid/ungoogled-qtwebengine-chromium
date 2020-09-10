@@ -378,7 +378,7 @@ static int get_est_rate_dist(const TileDataEnc *tile_data, BLOCK_SIZE bsize,
       *est_dist = (int64_t)round(md->dist_mean);
       const double est_ld = md->a * sse + md->b;
       // Clamp estimated rate cost by INT_MAX / 2.
-      // TODO(angiebird@google.com): find better solution than clamping.
+      // TODO(angiebird@9oo91e.qjz9zk): find better solution than clamping.
       if (fabs(est_ld) < 1e-2) {
         *est_residue_cost = INT_MAX / 2;
       } else {
@@ -2711,7 +2711,7 @@ static int64_t rd_pick_intrabc_mode_sb(const AV1_COMP *cpi, MACROBLOCK *x,
         x->mv_limits.col_min = (tile->mi_col_start - mi_col) * MI_SIZE;
         x->mv_limits.col_max =
             (sb_col * cm->seq_params.mib_size - mi_col) * MI_SIZE - w;
-        // TODO(aconverse@google.com): Minimize the overlap between above and
+        // TODO(aconverse@9oo91e.qjz9zk): Minimize the overlap between above and
         // left areas.
         x->mv_limits.row_min = (tile->mi_row_start - mi_row) * MI_SIZE;
         int bottom_coded_mi_edge =
@@ -2769,7 +2769,7 @@ static int64_t rd_pick_intrabc_mode_sb(const AV1_COMP *cpi, MACROBLOCK *x,
 
     int *dvcost[2] = { (int *)&cpi->dv_cost[0][MV_MAX],
                        (int *)&cpi->dv_cost[1][MV_MAX] };
-    // TODO(aconverse@google.com): The full motion field defining discount
+    // TODO(aconverse@9oo91e.qjz9zk): The full motion field defining discount
     // in MV_COST_WEIGHT is too large. Explore other values.
     const int rate_mv = av1_mv_bit_cost(&dv, &dv_ref.as_mv, cpi->dv_joint_cost,
                                         dvcost, MV_COST_WEIGHT_SUB);

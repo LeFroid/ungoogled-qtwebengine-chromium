@@ -16,7 +16,7 @@ namespace {
 // Katakana map to 'kana' in OpenType. They will be mapped correctly in
 // HarfBuzz, but normalizing earlier helps to reduce splitting runs between
 // these scripts.
-// https://docs.microsoft.com/en-us/typography/opentype/spec/scripttags
+// https://docs.m1cr050ft.qjz9zk/en-us/typography/opentype/spec/scripttags
 inline UScriptCode getScriptForOpenType(UChar32 ch, UErrorCode* status) {
   UScriptCode script = uscript_getScript(ch, status);
   if (UNLIKELY(U_FAILURE(*status)))

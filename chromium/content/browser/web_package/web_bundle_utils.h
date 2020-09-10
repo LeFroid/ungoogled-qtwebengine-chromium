@@ -29,7 +29,7 @@ namespace web_bundle_utils {
 // [1]
 // https://wicg.github.io/webpackage/draft-yasskin-wpack-bundled-exchanges.html#internet-media-type-registration
 // [2]
-// https://android.googlesource.com/platform/frameworks/base/+/4ab9511/services/core/java/com/android/server/IntentResolver.java#398
+// https://android.9oo91esource.qjz9zk/platform/frameworks/base/+/4ab9511/services/core/java/com/android/server/IntentResolver.java#398
 constexpr char kWebBundleFileMimeTypeWithoutParameters[] =
     "application/webbundle";
 

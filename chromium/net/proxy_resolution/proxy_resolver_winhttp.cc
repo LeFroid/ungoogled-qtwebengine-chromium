@@ -101,7 +101,7 @@ int ProxyResolverWinHttp::GetProxyForURL(
   // was tested in version 10.0.16299, and is also implied by the description of
   // the ERROR_WINHTTP_UNRECOGNIZED_SCHEME error code in the Microsoft
   // documentation at
-  // https://docs.microsoft.com/en-us/windows/desktop/api/winhttp/nf-winhttp-winhttpgetproxyforurl.
+  // https://docs.m1cr050ft.qjz9zk/en-us/windows/desktop/api/winhttp/nf-winhttp-winhttpgetproxyforurl.
   // See https://crbug.com/862121.
   GURL mutable_query_url = query_url;
   if (query_url.SchemeIsWSOrWSS()) {
@@ -126,7 +126,7 @@ int ProxyResolverWinHttp::GetProxyForURL(
   WINHTTP_PROXY_INFO info = {0};
   DCHECK(session_handle_);
 
-  // Per http://msdn.microsoft.com/en-us/library/aa383153(VS.85).aspx, it is
+  // Per http://msdn.m1cr050ft.qjz9zk/en-us/library/aa383153(VS.85).aspx, it is
   // necessary to first try resolving with fAutoLogonIfChallenged set to false.
   // Otherwise, we fail over to trying it with a value of true.  This way we
   // get good performance in the case where WinHTTP uses an out-of-process

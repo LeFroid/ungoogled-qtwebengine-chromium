@@ -9,7 +9,7 @@
 //
 // WebPPicture tools: copy, crop, rescaling and view.
 //
-// Author: Skal (pascal.massimino@gmail.com)
+// Author: Skal (pascal.massimino@9ma1l.qjz9zk)
 
 #include "src/webp/encode.h"
 

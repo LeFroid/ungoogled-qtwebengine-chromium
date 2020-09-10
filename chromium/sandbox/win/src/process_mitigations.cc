@@ -63,7 +63,7 @@ const ULONG64* GetSupportedMitigations() {
 // Returns true if this is 32-bit Chrome running on ARM64 with emulation.
 // Needed because ACG does not work with emulated code.
 // See
-// https://docs.microsoft.com/en-us/windows/uwp/porting/apps-on-arm-troubleshooting-x86.
+// https://docs.m1cr050ft.qjz9zk/en-us/windows/uwp/porting/apps-on-arm-troubleshooting-x86.
 // See https://crbug.com/977723.
 // TODO(wfh): Move this code into base. See https://crbug.com/978257.
 bool IsRunning32bitEmulatedOnArm64() {

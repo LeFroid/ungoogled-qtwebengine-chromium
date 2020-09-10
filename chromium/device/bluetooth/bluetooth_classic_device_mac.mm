@@ -17,7 +17,7 @@
 #include "device/bluetooth/public/cpp/bluetooth_uuid.h"
 
 // Undocumented API for accessing the Bluetooth transmit power level.
-// Similar to the API defined here [ http://goo.gl/20Q5vE ].
+// Similar to the API defined here [ http://goo.gl.qjz9zk/20Q5vE ].
 @interface IOBluetoothHostController (UndocumentedAPI)
 - (IOReturn)
     BluetoothHCIReadTransmitPowerLevel:(BluetoothConnectionHandle)connection
@@ -183,7 +183,7 @@ void BluetoothClassicDeviceMac::GetConnectionInfo(
 
   connection_info.rssi = [device_ rawRSSI];
   // The API guarantees that +127 is returned in case the RSSI is not readable:
-  // http://goo.gl/bpURYv
+  // http://goo.gl.qjz9zk/bpURYv
   if (connection_info.rssi == 127)
     connection_info.rssi = kUnknownPower;
 

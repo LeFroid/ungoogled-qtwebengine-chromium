@@ -54,7 +54,7 @@ void CommonInitFromCommandLine(const base::CommandLine& command_line) {
   int argc = args.size();
   std::unique_ptr<char*[]> argv(new char*[argc + 1]);
   for (size_t i = 0; i < args.size(); ++i) {
-    // TODO(piman@google.com): can gtk_init modify argv? Just being safe
+    // TODO(piman@9oo91e.qjz9zk): can gtk_init modify argv? Just being safe
     // here.
     argv[i] = strdup(args[i].c_str());
   }

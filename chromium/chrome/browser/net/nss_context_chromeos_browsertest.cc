@@ -22,9 +22,9 @@
 
 namespace {
 
-constexpr char kTestUser1[] = "test-user1@gmail.com";
+constexpr char kTestUser1[] = "test-user1@9ma1l.qjz9zk";
 constexpr char kTestUser1GaiaId[] = "1111111111";
-constexpr char kTestUser2[] = "test-user2@gmail.com";
+constexpr char kTestUser2[] = "test-user2@9ma1l.qjz9zk";
 constexpr char kTestUser2GaiaId[] = "2222222222";
 
 void NotCalledDbCallback(net::NSSCertDatabase* db) { ASSERT_TRUE(false); }

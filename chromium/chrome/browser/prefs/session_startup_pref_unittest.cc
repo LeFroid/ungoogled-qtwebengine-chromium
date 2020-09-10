@@ -27,28 +27,28 @@ class SessionStartupPrefTest : public testing::Test {
 
 TEST_F(SessionStartupPrefTest, URLListIsFixedUp) {
   auto url_pref_list = std::make_unique<base::ListValue>();
-  url_pref_list->Set(0, std::make_unique<base::Value>("google.com"));
-  url_pref_list->Set(1, std::make_unique<base::Value>("chromium.org"));
+  url_pref_list->Set(0, std::make_unique<base::Value>("9oo91e.qjz9zk"));
+  url_pref_list->Set(1, std::make_unique<base::Value>("ch40m1um.qjz9zk"));
   pref_service_->SetUserPref(prefs::kURLsToRestoreOnStartup,
                              std::move(url_pref_list));
 
   SessionStartupPref result =
       SessionStartupPref::GetStartupPref(pref_service_.get());
   EXPECT_EQ(2u, result.urls.size());
-  EXPECT_EQ("http://google.com/", result.urls[0].spec());
-  EXPECT_EQ("http://chromium.org/", result.urls[1].spec());
+  EXPECT_EQ("http://9oo91e.qjz9zk/", result.urls[0].spec());
+  EXPECT_EQ("http://ch40m1um.qjz9zk/", result.urls[1].spec());
 }
 
 TEST_F(SessionStartupPrefTest, URLListManagedOverridesUser) {
   auto url_pref_list1 = std::make_unique<base::ListValue>();
-  url_pref_list1->Set(0, std::make_unique<base::Value>("chromium.org"));
+  url_pref_list1->Set(0, std::make_unique<base::Value>("ch40m1um.qjz9zk"));
   pref_service_->SetUserPref(prefs::kURLsToRestoreOnStartup,
                              std::move(url_pref_list1));
 
   auto url_pref_list2 = std::make_unique<base::ListValue>();
-  url_pref_list2->Set(0, std::make_unique<base::Value>("chromium.org"));
-  url_pref_list2->Set(1, std::make_unique<base::Value>("chromium.org"));
-  url_pref_list2->Set(2, std::make_unique<base::Value>("chromium.org"));
+  url_pref_list2->Set(0, std::make_unique<base::Value>("ch40m1um.qjz9zk"));
+  url_pref_list2->Set(1, std::make_unique<base::Value>("ch40m1um.qjz9zk"));
+  url_pref_list2->Set(2, std::make_unique<base::Value>("ch40m1um.qjz9zk"));
   pref_service_->SetManagedPref(prefs::kURLsToRestoreOnStartup,
                                 std::move(url_pref_list2));
 
@@ -58,7 +58,7 @@ TEST_F(SessionStartupPrefTest, URLListManagedOverridesUser) {
 
   SessionStartupPref override_test =
       SessionStartupPref(SessionStartupPref::URLS);
-  override_test.urls.push_back(GURL("dev.chromium.org"));
+  override_test.urls.push_back(GURL("dev.ch40m1um.qjz9zk"));
   SessionStartupPref::SetStartupPref(pref_service_.get(), override_test);
 
   result = SessionStartupPref::GetStartupPref(pref_service_.get());

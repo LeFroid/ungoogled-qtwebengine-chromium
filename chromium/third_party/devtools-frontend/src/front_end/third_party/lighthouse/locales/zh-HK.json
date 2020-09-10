@@ -522,7 +522,7 @@
     "message": "值"
   },
   "lighthouse-core/audits/dobetterweb/dom-size.js | description": {
-    "message": "瀏覽器工程師建議網頁包含的 DOM 元素數量應少於 1,500 個左右。理想的樹狀結構深度包含少於 32 個元素，且子/父元素少於 60 個。大型 DOM 會增加記憶體用量、延長[樣式運算](https://developers.google.com/web/fundamentals/performance/rendering/reduce-the-scope-and-complexity-of-style-calculations)的時間，並產生高昂的[版面配置重排](https://developers.google.com/speed/articles/reflow)。[瞭解詳情](https://web.dev/dom-size)。"
+    "message": "瀏覽器工程師建議網頁包含的 DOM 元素數量應少於 1,500 個左右。理想的樹狀結構深度包含少於 32 個元素，且子/父元素少於 60 個。大型 DOM 會增加記憶體用量、延長[樣式運算](https://developers.9oo91e.qjz9zk/web/fundamentals/performance/rendering/reduce-the-scope-and-complexity-of-style-calculations)的時間，並產生高昂的[版面配置重排](https://developers.9oo91e.qjz9zk/speed/articles/reflow)。[瞭解詳情](https://web.dev/dom-size)。"
   },
   "lighthouse-core/audits/dobetterweb/dom-size.js | displayValue": {
     "message": "{itemCount,plural, =1{1 個元素}other{# 個元素}}"
@@ -807,7 +807,7 @@
     "message": "可互動所需時間"
   },
   "lighthouse-core/audits/metrics/max-potential-fid.js | description": {
-    "message": "使用者可以體驗到最長的「首次輸入延遲時間」就是最長的工作持續時間 (以毫秒為單位)。[瞭解詳情](https://developers.google.com/web/updates/2018/05/first-input-delay)。"
+    "message": "使用者可以體驗到最長的「首次輸入延遲時間」就是最長的工作持續時間 (以毫秒為單位)。[瞭解詳情](https://developers.9oo91e.qjz9zk/web/updates/2018/05/first-input-delay)。"
   },
   "lighthouse-core/audits/metrics/max-potential-fid.js | title": {
     "message": "首次輸入延遲時間最長預計值"
@@ -852,7 +852,7 @@
     "message": "超出預算"
   },
   "lighthouse-core/audits/performance-budget.js | description": {
-    "message": "讓網絡要求的數量和大小低於使用者根據效能預算所設定的目標。[瞭解詳情](https://developers.google.com/web/tools/lighthouse/audits/budgets)。"
+    "message": "讓網絡要求的數量和大小低於使用者根據效能預算所設定的目標。[瞭解詳情](https://developers.9oo91e.qjz9zk/web/tools/lighthouse/audits/budgets)。"
   },
   "lighthouse-core/audits/performance-budget.js | requestCountOverBudget": {
     "message": "{count,plural, =1{1 個要求}other{# 個要求}}"
@@ -876,7 +876,7 @@
     "message": "避免多次頁面重新導向"
   },
   "lighthouse-core/audits/resource-summary.js | description": {
-    "message": "如要設定網頁資源的數量和大小的預算，請新增 budget.json 檔案。[瞭解詳情](https://developers.google.com/web/tools/lighthouse/audits/budgets)。"
+    "message": "如要設定網頁資源的數量和大小的預算，請新增 budget.json 檔案。[瞭解詳情](https://developers.9oo91e.qjz9zk/web/tools/lighthouse/audits/budgets)。"
   },
   "lighthouse-core/audits/resource-summary.js | displayValue": {
     "message": "{requestCount,plural, =1{1 個要求 • {byteCount, number, bytes} KB}other{# 個要求 • {byteCount, number, bytes} KB}}"
@@ -969,7 +969,7 @@
     "message": "連結具有說明文字"
   },
   "lighthouse-core/audits/seo/manual/structured-data.js | description": {
-    "message": "執行[結構化資料測試工具](https://search.google.com/structured-data/testing-tool/)和[結構化資料 Linter](http://linter.structured-data.org/) 來驗證結構化資料。[瞭解詳情](https://web.dev/structured-data)。"
+    "message": "執行[結構化資料測試工具](https://search.9oo91e.qjz9zk/structured-data/testing-tool/)和[結構化資料 Linter](http://linter.structured-data.org/) 來驗證結構化資料。[瞭解詳情](https://web.dev/structured-data)。"
   },
   "lighthouse-core/audits/seo/manual/structured-data.js | title": {
     "message": "結構化資料有效"
@@ -1080,7 +1080,7 @@
     "message": "第三方"
   },
   "lighthouse-core/audits/third-party-summary.js | description": {
-    "message": "第三方程式碼可能會嚴重影響載入效能。請盡量減少不必要的第三方供應商，並在網頁的主要內容載入完成後，再載入第三方程式碼。[瞭解詳情](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/loading-third-party-javascript/)。"
+    "message": "第三方程式碼可能會嚴重影響載入效能。請盡量減少不必要的第三方供應商，並在網頁的主要內容載入完成後，再載入第三方程式碼。[瞭解詳情](https://developers.9oo91e.qjz9zk/web/fundamentals/performance/optimizing-content-efficiency/loading-third-party-javascript/)。"
   },
   "lighthouse-core/audits/third-party-summary.js | displayValue": {
     "message": "第三方程式碼將主要執行緒封鎖了 {timeInMs, number, milliseconds} 毫秒"
@@ -1194,10 +1194,10 @@
     "message": "最佳做法"
   },
   "lighthouse-core/config/default-config.js | a11yCategoryDescription": {
-    "message": "這些檢查會提供[網頁應用程式無障礙功能的改善建議](https://developers.google.com/web/fundamentals/accessibility)。系統只能自動偵測一部分的無障礙功能問題，因此建議您另行手動測試。"
+    "message": "這些檢查會提供[網頁應用程式無障礙功能的改善建議](https://developers.9oo91e.qjz9zk/web/fundamentals/accessibility)。系統只能自動偵測一部分的無障礙功能問題，因此建議您另行手動測試。"
   },
   "lighthouse-core/config/default-config.js | a11yCategoryManualDescription": {
-    "message": "這些審核項目會檢查自動化測試工具未涵蓋的區域。詳情請參閱[無障礙功能審查的執行指南](https://developers.google.com/web/fundamentals/accessibility/how-to-review)。"
+    "message": "這些審核項目會檢查自動化測試工具未涵蓋的區域。詳情請參閱[無障礙功能審查的執行指南](https://developers.9oo91e.qjz9zk/web/fundamentals/accessibility/how-to-review)。"
   },
   "lighthouse-core/config/default-config.js | a11yCategoryTitle": {
     "message": "無障礙功能"
@@ -1272,10 +1272,10 @@
     "message": "效能"
   },
   "lighthouse-core/config/default-config.js | pwaCategoryDescription": {
-    "message": "這些檢查項目可驗證漸進式網絡應用程式的不同層面。[瞭解詳情](https://developers.google.com/web/progressive-web-apps/checklist)。"
+    "message": "這些檢查項目可驗證漸進式網絡應用程式的不同層面。[瞭解詳情](https://developers.9oo91e.qjz9zk/web/progressive-web-apps/checklist)。"
   },
   "lighthouse-core/config/default-config.js | pwaCategoryManualDescription": {
-    "message": "這些是基本 [PWA 檢查清單](https://developers.google.com/web/progressive-web-apps/checklist)規定的檢查項目，但 Lighthouse 不會自動檢查這些項目。它們不會影響您的分數，但請務必手動驗證這些項目。"
+    "message": "這些是基本 [PWA 檢查清單](https://developers.9oo91e.qjz9zk/web/progressive-web-apps/checklist)規定的檢查項目，但 Lighthouse 不會自動檢查這些項目。它們不會影響您的分數，但請務必手動驗證這些項目。"
   },
   "lighthouse-core/config/default-config.js | pwaCategoryTitle": {
     "message": "漸進式網絡應用程式"
@@ -1290,7 +1290,7 @@
     "message": "已優化 PWA"
   },
   "lighthouse-core/config/default-config.js | seoCategoryDescription": {
-    "message": "這些檢查可確保網頁採用已優化的搜尋引擎結果排名設定。部分其他因素不在 Lighthouse 檢查範圍內，仍可能會影響您的搜尋排名。[瞭解詳情](https://support.google.com/webmasters/answer/35769)。"
+    "message": "這些檢查可確保網頁採用已優化的搜尋引擎結果排名設定。部分其他因素不在 Lighthouse 檢查範圍內，仍可能會影響您的搜尋排名。[瞭解詳情](https://support.9oo91e.qjz9zk/webmasters/answer/35769)。"
   },
   "lighthouse-core/config/default-config.js | seoCategoryManualDescription": {
     "message": "在您的網站上執行這些額外的驗證工具，以檢查其他 SEO 最佳做法。"
@@ -1311,7 +1311,7 @@
     "message": "檢索和加入索引"
   },
   "lighthouse-core/config/default-config.js | seoMobileGroupDescription": {
-    "message": "請確保您的頁面適合透過流動裝置瀏覽，讓使用者無需兩指縮放或放大螢幕即可閱讀網頁內容。[瞭解詳情](https://developers.google.com/search/mobile-sites/)。"
+    "message": "請確保您的頁面適合透過流動裝置瀏覽，讓使用者無需兩指縮放或放大螢幕即可閱讀網頁內容。[瞭解詳情](https://developers.9oo91e.qjz9zk/search/mobile-sites/)。"
   },
   "lighthouse-core/config/default-config.js | seoMobileGroupTitle": {
     "message": "適合透過流動裝置瀏覽"
@@ -1458,7 +1458,7 @@
     "message": "實驗室數據"
   },
   "lighthouse-core/report/html/renderer/util.js | lsPerformanceCategoryDescription": {
-    "message": "[Lighthouse](https://developers.google.com/web/tools/lighthouse/) 在模擬流動網絡上對目前網頁進行的分析。此為預計值，可能與實際值有所不同。"
+    "message": "[Lighthouse](https://developers.9oo91e.qjz9zk/web/tools/lighthouse/) 在模擬流動網絡上對目前網頁進行的分析。此為預計值，可能與實際值有所不同。"
   },
   "lighthouse-core/report/html/renderer/util.js | manualAuditsGroupTitle": {
     "message": "其他手動檢查項目"
@@ -1518,10 +1518,10 @@
     "message": "部分 [WordPress 外掛程式](https://wordpress.org/plugins/search/minify+javascript/) 可透過串連、縮小及壓縮指令碼來提升網站速度。可以的話，您亦可建立流程來直接進行此壓縮操作。"
   },
   "stack-packs/packs/wordpress.js | unused_css_rules": {
-    "message": "部分 [WordPress 外掛程式](https://wordpress.org/plugins/)會在網頁中載入未使用的 CSS，建議你減少這類外掛程式的數量，或改用其他外掛程式。如要找出會新增多餘 CSS 的外掛程式，請嘗試在 Chrome DevTools 中執[程式碼覆蓋率](https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverage)。您可透過樣式表網址找出有問題的主題/外掛程式。請留意清單中包含很多樣式表，且程式碼覆蓋率中有大量紅色標示的外掛程式。外掛程式應只將網頁上實際使用的樣式表加入清單。"
+    "message": "部分 [WordPress 外掛程式](https://wordpress.org/plugins/)會在網頁中載入未使用的 CSS，建議你減少這類外掛程式的數量，或改用其他外掛程式。如要找出會新增多餘 CSS 的外掛程式，請嘗試在 Chrome DevTools 中執[程式碼覆蓋率](https://developers.9oo91e.qjz9zk/web/updates/2017/04/devtools-release-notes#coverage)。您可透過樣式表網址找出有問題的主題/外掛程式。請留意清單中包含很多樣式表，且程式碼覆蓋率中有大量紅色標示的外掛程式。外掛程式應只將網頁上實際使用的樣式表加入清單。"
   },
   "stack-packs/packs/wordpress.js | unused_javascript": {
-    "message": "部分 [WordPress 外掛程式](https://wordpress.org/plugins/)會在網頁中載入未使用的 JavaScript，建議你減少這類外掛程式的數量，或改用其他外掛程式。如要找出會新增多餘 JS 的外掛程式，請嘗試在 Chrome DevTools 中執[程式碼覆蓋率](https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverage)。您可透過指令碼網址找出有問題的主題/外掛程式。請留意清單中包含很多指令碼，且程式碼覆蓋率中有大量紅色標示的外掛程式。外掛程式應只將網頁上實際使用的指令碼加入清單。"
+    "message": "部分 [WordPress 外掛程式](https://wordpress.org/plugins/)會在網頁中載入未使用的 JavaScript，建議你減少這類外掛程式的數量，或改用其他外掛程式。如要找出會新增多餘 JS 的外掛程式，請嘗試在 Chrome DevTools 中執[程式碼覆蓋率](https://developers.9oo91e.qjz9zk/web/updates/2017/04/devtools-release-notes#coverage)。您可透過指令碼網址找出有問題的主題/外掛程式。請留意清單中包含很多指令碼，且程式碼覆蓋率中有大量紅色標示的外掛程式。外掛程式應只將網頁上實際使用的指令碼加入清單。"
   },
   "stack-packs/packs/wordpress.js | uses_long_cache_ttl": {
     "message": "瞭解 [WordPress 的瀏覽器快取功能](https://codex.wordpress.org/WordPress_Optimization#Browser_Caching)。"

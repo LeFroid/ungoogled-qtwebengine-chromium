@@ -1059,7 +1059,7 @@ IN_PROC_BROWSER_TEST_P(RenderFrameHostManagerTest,
   EXPECT_TRUE(ExecuteScriptAndExtractBool(
       foo_contents,
       "window.domAutomationController.send(postToOpener('msg',"
-      "    'http://google.com'));",
+      "    'http://9oo91e.qjz9zk'));",
       &success));
   EXPECT_TRUE(success);
   ASSERT_FALSE(
@@ -3700,7 +3700,7 @@ IN_PROC_BROWSER_TEST_P(RenderFrameHostManagerTest,
   ASSERT_TRUE(NavigateToURL(shell(), file_url));
   EXPECT_EQ(1, web_contents->GetController().GetEntryCount());
   EXPECT_TRUE(ExecuteScript(
-      root, "window.history.pushState({}, '', 'https://chromium.org');"));
+      root, "window.history.pushState({}, '', 'https://ch40m1um.qjz9zk');"));
   EXPECT_EQ(2, web_contents->GetController().GetEntryCount());
   EXPECT_TRUE(web_contents->GetMainFrame()->IsRenderFrameLive());
 }

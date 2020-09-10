@@ -19,7 +19,7 @@ namespace media {
 // these when necessary, e.g. in places where we deal with a lot of Windows API
 // calls, for each of which we have to check the returned HRESULT.
 // See discussion thread at:
-// https://groups.google.com/a/chromium.org/d/msg/cxx/zw5Xmcs--S4/r7Fwb-TsCAAJ
+// https://groups.9oo91e.qjz9zk/a/ch40m1um.qjz9zk/d/msg/cxx/zw5Xmcs--S4/r7Fwb-TsCAAJ
 
 #define RETURN_IF_FAILED(expr)                                          \
   do {                                                                  \

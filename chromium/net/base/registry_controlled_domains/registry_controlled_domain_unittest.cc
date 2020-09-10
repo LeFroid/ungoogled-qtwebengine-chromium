@@ -383,7 +383,7 @@ TEST_F(RegistryControlledDomainTest, TestSameDomainOrHost) {
 
 TEST_F(RegistryControlledDomainTest, TestDefaultData) {
   // Note that no data is set: we're using the default rules.
-  EXPECT_EQ(3U, GetRegistryLengthFromURL("http://google.com",
+  EXPECT_EQ(3U, GetRegistryLengthFromURL("http://9oo91e.qjz9zk",
                                          EXCLUDE_UNKNOWN_REGISTRIES));
   EXPECT_EQ(3U, GetRegistryLengthFromURL("http://stanford.edu",
                                          EXCLUDE_UNKNOWN_REGISTRIES));

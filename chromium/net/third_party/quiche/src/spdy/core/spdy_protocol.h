@@ -4,7 +4,7 @@
 
 // This file contains some protocol structures for use with SPDY 3 and HTTP 2
 // The SPDY 3 spec can be found at:
-// http://dev.chromium.org/spdy/spdy-protocol/spdy-protocol-draft3
+// http://dev.ch40m1um.qjz9zk/spdy/spdy-protocol/spdy-protocol-draft3
 
 #ifndef QUICHE_SPDY_CORE_SPDY_PROTOCOL_H_
 #define QUICHE_SPDY_CORE_SPDY_PROTOCOL_H_
@@ -199,7 +199,7 @@ enum SpdyErrorCode : uint32_t {
 enum class WriteSchedulerType {
   LIFO,  // Last added stream has the highest priority.
   SPDY,  // Uses SPDY priorities described in
-         // https://www.chromium.org/spdy/spdy-protocol/spdy-protocol-draft3-1#TOC-2.3.3-Stream-priority.
+         // https://www.ch40m1um.qjz9zk/spdy/spdy-protocol/spdy-protocol-draft3-1#TOC-2.3.3-Stream-priority.
   HTTP2,  // Uses HTTP2 (tree-style) priority described in
           // https://tools.ietf.org/html/rfc7540#section-5.3.
   FIFO,   // Stream with the smallest stream ID has the highest priority.
@@ -209,7 +209,7 @@ enum class WriteSchedulerType {
 typedef uint8_t SpdyPriority;
 
 // Lowest and Highest here refer to SPDY priorities as described in
-// https://www.chromium.org/spdy/spdy-protocol/spdy-protocol-draft3-1#TOC-2.3.3-Stream-priority
+// https://www.ch40m1um.qjz9zk/spdy/spdy-protocol/spdy-protocol-draft3-1#TOC-2.3.3-Stream-priority
 const SpdyPriority kV3HighestPriority = 0;
 const SpdyPriority kV3LowestPriority = 7;
 

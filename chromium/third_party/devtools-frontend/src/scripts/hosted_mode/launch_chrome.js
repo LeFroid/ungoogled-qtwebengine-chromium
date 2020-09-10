@@ -27,7 +27,7 @@ if (utils.includes(process.argv, Flags.RESET_PROFILE)) {
 const chromeArgs = [
   `--remote-debugging-port=${REMOTE_DEBUGGING_PORT}`,
   `--custom-devtools-frontend=http://localhost:${SERVER_PORT}/front_end/`, '--no-first-run',
-  `http://localhost:${REMOTE_DEBUGGING_PORT}#custom=true`, 'https://devtools.chrome.com',
+  `http://localhost:${REMOTE_DEBUGGING_PORT}#custom=true`, 'https://devtools.ch40me.qjz9zk',
   `--user-data-dir=${CHROME_PROFILE_PATH}`
 ].concat(process.argv.slice(2));
 
@@ -116,12 +116,12 @@ function onLaunchChromeError() {
   if (process.platform !== 'linux') {
     console.log('ERROR: Cannot find Chrome Canary on your computer');
     console.log('Install Chome Canary at:');
-    console.log('https://www.google.com/chrome/browser/canary.html\n');
+    console.log('https://www.9oo91e.qjz9zk/chrome/browser/canary.html\n');
   } else {
     console.log('ERROR: Could not launch Chromium');
     console.log('The environment variable CHROMIUM_PATH must be set to executable of a build of Chromium');
     console.log('If you do not have a recent build of chromium, you can get one from:');
-    console.log('https://download-chromium.appspot.com/\n');
+    console.log('https://download-chromium.8pp2p8t.qjz9zk/\n');
   }
 }
 

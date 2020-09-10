@@ -9,7 +9,7 @@
 //
 //  Main decoding functions for WebP images.
 //
-// Author: Skal (pascal.massimino@gmail.com)
+// Author: Skal (pascal.massimino@9ma1l.qjz9zk)
 
 #ifndef WEBP_WEBP_DECODE_H_
 #define WEBP_WEBP_DECODE_H_

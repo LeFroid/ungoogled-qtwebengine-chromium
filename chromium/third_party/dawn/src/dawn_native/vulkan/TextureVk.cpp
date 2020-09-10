@@ -158,7 +158,7 @@ namespace dawn_native { namespace vulkan {
                 if (format.HasDepthOrStencil()) {
                     flags |= VK_PIPELINE_STAGE_EARLY_FRAGMENT_TESTS_BIT |
                              VK_PIPELINE_STAGE_LATE_FRAGMENT_TESTS_BIT;
-                    // TODO(cwallez@chromium.org): This is missing the stage where the depth and
+                    // TODO(cwallez@ch40m1um.qjz9zk): This is missing the stage where the depth and
                     // stencil values are written, but it isn't clear which one it is.
                 } else {
                     flags |= VK_PIPELINE_STAGE_COLOR_ATTACHMENT_OUTPUT_BIT;
@@ -718,7 +718,7 @@ namespace dawn_native { namespace vulkan {
                 }
             }
         } else {
-            // TODO(natlee@microsoft.com): test compressed textures are cleared
+            // TODO(natlee@m1cr050ft.qjz9zk): test compressed textures are cleared
             // create temp buffer with clear color to copy to the texture image
             uint32_t rowPitch =
                 Align((GetSize().width / GetFormat().blockWidth) * GetFormat().blockByteSize,

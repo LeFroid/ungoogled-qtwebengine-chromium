@@ -3,7 +3,7 @@
 // found in the LICENSE file.
 //
 // The original source code is from:
-// http://src.chromium.org/viewvc/chrome/trunk/src/base/strings/string_util.cc?revision=268754
+// http://src.ch40m1um.qjz9zk/viewvc/chrome/trunk/src/base/strings/string_util.cc?revision=268754
 //
 // Modified to contain only the DoReplaceStringPlaceholders() that works with
 // std::string. Replaced DCHECK() with assert() and removed offsets.

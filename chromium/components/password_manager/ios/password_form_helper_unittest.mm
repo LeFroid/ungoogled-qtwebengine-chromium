@@ -288,7 +288,7 @@ TEST_F(PasswordFormHelperTest, FillPasswordFormWithFillData) {
        "<input id='p1' type='password' name='pw1'></form>");
   const std::string base_url = BaseUrl();
   FillData fill_data;
-  SetFillData(base_url, "gChrome~form~0", "u1", "john.doe@gmail.com", "p1",
+  SetFillData(base_url, "gChrome~form~0", "u1", "john.doe@9ma1l.qjz9zk", "p1",
               "super!secret", &fill_data);
 
   __block int call_counter = 0;
@@ -301,7 +301,7 @@ TEST_F(PasswordFormHelperTest, FillPasswordFormWithFillData) {
     return call_counter == 1;
   }));
   id result = ExecuteJavaScript(kInputFieldValueVerificationScript);
-  EXPECT_NSEQ(@"u1=john.doe@gmail.com;p1=super!secret;", result);
+  EXPECT_NSEQ(@"u1=john.doe@9ma1l.qjz9zk;p1=super!secret;", result);
 }
 
 // Tests that a form is found and the found form is filled in with the given
@@ -312,7 +312,7 @@ TEST_F(PasswordFormHelperTest, FindAndFillOnePasswordForm) {
        "<input id='p1' type='password' name='pw1'></form>");
   __block int call_counter = 0;
   __block int success_counter = 0;
-  [helper_ findAndFillPasswordFormsWithUserName:@"john.doe@gmail.com"
+  [helper_ findAndFillPasswordFormsWithUserName:@"john.doe@9ma1l.qjz9zk"
                                        password:@"super!secret"
                               completionHandler:^(BOOL complete) {
                                 ++call_counter;
@@ -325,7 +325,7 @@ TEST_F(PasswordFormHelperTest, FindAndFillOnePasswordForm) {
   }));
   EXPECT_EQ(1, success_counter);
   id result = ExecuteJavaScript(kInputFieldValueVerificationScript);
-  EXPECT_NSEQ(@"u1=john.doe@gmail.com;p1=super!secret;", result);
+  EXPECT_NSEQ(@"u1=john.doe@9ma1l.qjz9zk;p1=super!secret;", result);
 }
 
 // Tests that multiple forms on the same page are found and filled.
@@ -346,7 +346,7 @@ TEST_F(PasswordFormHelperTest, FindAndFillMultiplePasswordForms) {
        "<input id='p3' type='password' name='pw3'></form>");
   __block int call_counter = 0;
   __block int success_counter = 0;
-  [helper_ findAndFillPasswordFormsWithUserName:@"john.doe@gmail.com"
+  [helper_ findAndFillPasswordFormsWithUserName:@"john.doe@9ma1l.qjz9zk"
                                        password:@"super!secret"
                               completionHandler:^(BOOL complete) {
                                 ++call_counter;
@@ -361,8 +361,8 @@ TEST_F(PasswordFormHelperTest, FindAndFillMultiplePasswordForms) {
   EXPECT_EQ(2, success_counter);
   id result = ExecuteJavaScript(kInputFieldValueVerificationScript);
   EXPECT_NSEQ(
-      @"u2=john.doe@gmail.com;p2=super!secret;"
-       "u3=john.doe@gmail.com;p3=super!secret;",
+      @"u2=john.doe@9ma1l.qjz9zk;p2=super!secret;"
+       "u3=john.doe@9ma1l.qjz9zk;p3=super!secret;",
       result);
 }
 

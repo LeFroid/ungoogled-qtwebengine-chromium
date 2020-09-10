@@ -37,7 +37,7 @@ def _CreateParser():
                       'you select in the top-level test suite selector in the '
                       'dashboard')
   parser.add_argument('--webrtc-git-hash', required=True,
-                      help='webrtc.googlesource.com commit hash.')
+                      help='webrtc.9oo91esource.qjz9zk commit hash.')
   parser.add_argument('--commit-position', type=int, required=True,
                       help='Commit pos corresponding to the git hash.')
   parser.add_argument('--build-page-url', required=True,

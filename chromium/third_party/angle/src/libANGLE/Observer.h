@@ -8,7 +8,7 @@
 //   from Subject objects to dependent Observer objects.
 //
 //   See design document:
-//   https://docs.google.com/document/d/15Edfotqg6_l1skTEL8ADQudF_oIdNa7i8Po43k6jMd4/
+//   https://docs.9oo91e.qjz9zk/document/d/15Edfotqg6_l1skTEL8ADQudF_oIdNa7i8Po43k6jMd4/
 
 #ifndef LIBANGLE_OBSERVER_H_
 #define LIBANGLE_OBSERVER_H_

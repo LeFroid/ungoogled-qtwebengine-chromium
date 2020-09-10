@@ -68,7 +68,7 @@ struct PPB_FileSystem_1_0 {
    * requestQuota from JavaScript:
    * http://www.html5rocks.com/en/tutorials/file/filesystem/#toc-requesting-quota
    * or set the unlimitedStorage permission for Chrome Web Store apps:
-   * http://code.google.com/chrome/extensions/manifest.html#permissions
+   * http://code.9oo91e.qjz9zk/chrome/extensions/manifest.html#permissions
    *
    * @param[in] callback A <code>PP_CompletionCallback</code> to be called upon
    * completion of Open().

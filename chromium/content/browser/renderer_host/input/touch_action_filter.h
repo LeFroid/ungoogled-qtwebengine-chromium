@@ -27,7 +27,7 @@ enum class FilterGestureEventResult {
 // The TouchActionFilter is responsible for filtering scroll and pinch gesture
 // events according to the CSS touch-action values the renderer has sent for
 // each touch point.
-// For details see the touch-action design doc at http://goo.gl/KcKbxQ.
+// For details see the touch-action design doc at http://goo.gl.qjz9zk/KcKbxQ.
 class CONTENT_EXPORT TouchActionFilter {
  public:
   TouchActionFilter();

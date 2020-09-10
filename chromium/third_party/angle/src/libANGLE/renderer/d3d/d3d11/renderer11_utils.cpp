@@ -157,7 +157,7 @@ bool GetNPOTTextureSupport(D3D_FEATURE_LEVEL featureLevel)
         case D3D_FEATURE_LEVEL_10_0:
             return true;
 
-        // From http://msdn.microsoft.com/en-us/library/windows/desktop/ff476876.aspx
+        // From http://msdn.m1cr050ft.qjz9zk/en-us/library/windows/desktop/ff476876.aspx
         case D3D_FEATURE_LEVEL_9_3:
         case D3D_FEATURE_LEVEL_9_2:
         case D3D_FEATURE_LEVEL_9_1:
@@ -181,7 +181,7 @@ float GetMaximumAnisotropy(D3D_FEATURE_LEVEL featureLevel)
         case D3D_FEATURE_LEVEL_10_0:
             return D3D10_MAX_MAXANISOTROPY;
 
-        // From http://msdn.microsoft.com/en-us/library/windows/desktop/ff476876.aspx
+        // From http://msdn.m1cr050ft.qjz9zk/en-us/library/windows/desktop/ff476876.aspx
         case D3D_FEATURE_LEVEL_9_3:
         case D3D_FEATURE_LEVEL_9_2:
             return 16;
@@ -205,7 +205,7 @@ bool GetOcclusionQuerySupport(D3D_FEATURE_LEVEL featureLevel)
         case D3D_FEATURE_LEVEL_10_0:
             return true;
 
-        // From http://msdn.microsoft.com/en-us/library/windows/desktop/ff476150.aspx
+        // From http://msdn.m1cr050ft.qjz9zk/en-us/library/windows/desktop/ff476150.aspx
         // ID3D11Device::CreateQuery
         case D3D_FEATURE_LEVEL_9_3:
         case D3D_FEATURE_LEVEL_9_2:
@@ -221,7 +221,7 @@ bool GetOcclusionQuerySupport(D3D_FEATURE_LEVEL featureLevel)
 
 bool GetEventQuerySupport(D3D_FEATURE_LEVEL featureLevel)
 {
-    // From http://msdn.microsoft.com/en-us/library/windows/desktop/ff476150.aspx
+    // From http://msdn.m1cr050ft.qjz9zk/en-us/library/windows/desktop/ff476150.aspx
     // ID3D11Device::CreateQuery
 
     switch (featureLevel)
@@ -243,7 +243,7 @@ bool GetEventQuerySupport(D3D_FEATURE_LEVEL featureLevel)
 
 bool GetInstancingSupport(D3D_FEATURE_LEVEL featureLevel)
 {
-    // From http://msdn.microsoft.com/en-us/library/windows/desktop/ff476150.aspx
+    // From http://msdn.m1cr050ft.qjz9zk/en-us/library/windows/desktop/ff476150.aspx
     // ID3D11Device::CreateInputLayout
 
     switch (featureLevel)
@@ -320,11 +320,11 @@ bool GetFramebufferBlitSupport(D3D_FEATURE_LEVEL featureLevel)
 
 bool GetDerivativeInstructionSupport(D3D_FEATURE_LEVEL featureLevel)
 {
-    // http://msdn.microsoft.com/en-us/library/windows/desktop/bb509588.aspx states that
+    // http://msdn.m1cr050ft.qjz9zk/en-us/library/windows/desktop/bb509588.aspx states that
     // shader model
     // ps_2_x is required for the ddx (and other derivative functions).
 
-    // http://msdn.microsoft.com/en-us/library/windows/desktop/ff476876.aspx states that
+    // http://msdn.m1cr050ft.qjz9zk/en-us/library/windows/desktop/ff476876.aspx states that
     // feature level
     // 9.3 supports shader model ps_2_x.
 
@@ -369,7 +369,7 @@ bool GetShaderTextureLODSupport(D3D_FEATURE_LEVEL featureLevel)
 
 int GetMaximumSimultaneousRenderTargets(D3D_FEATURE_LEVEL featureLevel)
 {
-    // From http://msdn.microsoft.com/en-us/library/windows/desktop/ff476150.aspx
+    // From http://msdn.m1cr050ft.qjz9zk/en-us/library/windows/desktop/ff476150.aspx
     // ID3D11Device::CreateInputLayout
 
     switch (featureLevel)
@@ -585,7 +585,7 @@ int GetMaximumVertexInputSlots(D3D_FEATURE_LEVEL featureLevel)
         case D3D_FEATURE_LEVEL_10_0:
             return D3D10_STANDARD_VERTEX_ELEMENT_COUNT;
 
-        // From http://http://msdn.microsoft.com/en-us/library/windows/desktop/ff476876.aspx
+        // From http://http://msdn.m1cr050ft.qjz9zk/en-us/library/windows/desktop/ff476876.aspx
         // "Max Input Slots"
         case D3D_FEATURE_LEVEL_9_3:
         case D3D_FEATURE_LEVEL_9_2:
@@ -610,7 +610,7 @@ int GetMaximumVertexUniformVectors(D3D_FEATURE_LEVEL featureLevel)
         case D3D_FEATURE_LEVEL_10_0:
             return D3D10_REQ_CONSTANT_BUFFER_ELEMENT_COUNT;
 
-        // From http://msdn.microsoft.com/en-us/library/windows/desktop/ff476149.aspx
+        // From http://msdn.m1cr050ft.qjz9zk/en-us/library/windows/desktop/ff476149.aspx
         // ID3D11DeviceContext::VSSetConstantBuffers
         case D3D_FEATURE_LEVEL_9_3:
         case D3D_FEATURE_LEVEL_9_2:
@@ -725,7 +725,7 @@ int GetMaximumVertexTextureUnits(D3D_FEATURE_LEVEL featureLevel)
             return D3D10_COMMONSHADER_SAMPLER_SLOT_COUNT;
 
         // Vertex textures not supported on D3D11 Feature Level 9 according to
-        // http://msdn.microsoft.com/en-us/library/windows/desktop/ff476149.aspx
+        // http://msdn.m1cr050ft.qjz9zk/en-us/library/windows/desktop/ff476149.aspx
         // ID3D11DeviceContext::VSSetSamplers and ID3D11DeviceContext::VSSetShaderResources
         case D3D_FEATURE_LEVEL_9_3:
         case D3D_FEATURE_LEVEL_9_2:
@@ -751,7 +751,7 @@ int GetMaximumPixelUniformVectors(D3D_FEATURE_LEVEL featureLevel)
         case D3D_FEATURE_LEVEL_10_0:
             return 1024;  // D3D10_REQ_CONSTANT_BUFFER_ELEMENT_COUNT;
 
-        // From http://msdn.microsoft.com/en-us/library/windows/desktop/ff476149.aspx
+        // From http://msdn.m1cr050ft.qjz9zk/en-us/library/windows/desktop/ff476149.aspx
         // ID3D11DeviceContext::PSSetConstantBuffers
         case D3D_FEATURE_LEVEL_9_3:
         case D3D_FEATURE_LEVEL_9_2:
@@ -827,7 +827,7 @@ int GetMaximumPixelTextureUnits(D3D_FEATURE_LEVEL featureLevel)
         case D3D_FEATURE_LEVEL_10_0:
             return D3D10_COMMONSHADER_SAMPLER_SLOT_COUNT;
 
-        // http://msdn.microsoft.com/en-us/library/windows/desktop/ff476149.aspx
+        // http://msdn.m1cr050ft.qjz9zk/en-us/library/windows/desktop/ff476149.aspx
         // ID3D11DeviceContext::PSSetShaderResources
         case D3D_FEATURE_LEVEL_9_3:
         case D3D_FEATURE_LEVEL_9_2:
@@ -887,7 +887,7 @@ int GetMaxComputeSharedMemorySize(D3D_FEATURE_LEVEL featureLevel)
     {
         // In D3D11 the maximum total size of all variables with the groupshared storage class is
         // 32kb.
-        // https://docs.microsoft.com/en-us/windows/desktop/direct3dhlsl/dx-graphics-hlsl-variable-syntax
+        // https://docs.m1cr050ft.qjz9zk/en-us/windows/desktop/direct3dhlsl/dx-graphics-hlsl-variable-syntax
         case D3D_FEATURE_LEVEL_11_1:
         case D3D_FEATURE_LEVEL_11_0:
             return 32768;
@@ -941,7 +941,7 @@ void SetUAVRelatedResourceLimits(D3D_FEATURE_LEVEL featureLevel, gl::Caps *caps)
 
     // For pixel shaders, the render targets and unordered access views share the same resource
     // slots when being written out.
-    // https://msdn.microsoft.com/en-us/library/windows/desktop/ff476465(v=vs.85).aspx
+    // https://msdn.m1cr050ft.qjz9zk/en-us/library/windows/desktop/ff476465(v=vs.85).aspx
     GLuint maxNumRTVsAndUAVs = 0u;
 
     switch (featureLevel)
@@ -975,7 +975,7 @@ void SetUAVRelatedResourceLimits(D3D_FEATURE_LEVEL featureLevel, gl::Caps *caps)
     caps->maxShaderAtomicCounters[gl::ShaderType::Compute] = caps->maxCombinedAtomicCounters;
 
     // See
-    // https://docs.microsoft.com/en-us/windows/desktop/direct3d11/overviews-direct3d-11-resources-limits
+    // https://docs.m1cr050ft.qjz9zk/en-us/windows/desktop/direct3d11/overviews-direct3d-11-resources-limits
     // Resource size (in MB) for any of the preceding resources is min(max(128,0.25f * (amount of
     // dedicated VRAM)), 2048) MB. So we set it to 128MB to keep same with GL backend.
     caps->maxShaderStorageBlockSize =
@@ -1068,7 +1068,7 @@ int GetMinimumTextureGatherOffset(D3D_FEATURE_LEVEL featureLevel)
 {
     switch (featureLevel)
     {
-        // https://docs.microsoft.com/en-us/windows/desktop/direct3dhlsl/gather4-po--sm5---asm-
+        // https://docs.m1cr050ft.qjz9zk/en-us/windows/desktop/direct3dhlsl/gather4-po--sm5---asm-
         case D3D_FEATURE_LEVEL_11_1:
         case D3D_FEATURE_LEVEL_11_0:
             return -32;
@@ -1090,7 +1090,7 @@ int GetMaximumTextureGatherOffset(D3D_FEATURE_LEVEL featureLevel)
 {
     switch (featureLevel)
     {
-        // https://docs.microsoft.com/en-us/windows/desktop/direct3dhlsl/gather4-po--sm5---asm-
+        // https://docs.m1cr050ft.qjz9zk/en-us/windows/desktop/direct3dhlsl/gather4-po--sm5---asm-
         case D3D_FEATURE_LEVEL_11_1:
         case D3D_FEATURE_LEVEL_11_0:
             return 31;
@@ -1126,7 +1126,7 @@ size_t GetMaximumConstantBufferSize(D3D_FEATURE_LEVEL featureLevel)
         case D3D_FEATURE_LEVEL_10_0:
             return D3D10_REQ_CONSTANT_BUFFER_ELEMENT_COUNT * bytesPerComponent;
 
-        // Limits from http://msdn.microsoft.com/en-us/library/windows/desktop/ff476501.aspx
+        // Limits from http://msdn.m1cr050ft.qjz9zk/en-us/library/windows/desktop/ff476501.aspx
         // remarks section
         case D3D_FEATURE_LEVEL_9_3:
         case D3D_FEATURE_LEVEL_9_2:
@@ -1509,7 +1509,7 @@ void GenerateCaps(ID3D11Device *device,
 
     // With DirectX 11.1, constant buffer offset and size must be a multiple of 16 constants of 16
     // bytes each.
-    // https://msdn.microsoft.com/en-us/library/windows/desktop/hh404649%28v=vs.85%29.aspx
+    // https://msdn.m1cr050ft.qjz9zk/en-us/library/windows/desktop/hh404649%28v=vs.85%29.aspx
     // With DirectX 11.0, we emulate UBO offsets using copies of ranges of the UBO however
     // we still keep the same alignment as 11.1 for consistency.
     caps->uniformBufferOffsetAlignment = 256;
@@ -1519,7 +1519,7 @@ void GenerateCaps(ID3D11Device *device,
 
     // A shader storage block will be translated to a structure in HLSL. So We reference the HLSL
     // structure packing rules
-    // https://msdn.microsoft.com/en-us/library/windows/desktop/bb509632(v=vs.85).aspx. The
+    // https://msdn.m1cr050ft.qjz9zk/en-us/library/windows/desktop/bb509632(v=vs.85).aspx. The
     // resulting size of any structure will always be evenly divisible by sizeof(four-component
     // vector).
     caps->shaderStorageBufferOffsetAlignment = 16;
@@ -1594,11 +1594,11 @@ void GenerateCaps(ID3D11Device *device,
         0;  // Timestamps cannot be supported due to D3D11 limitations
     extensions->robustness = true;
     // Direct3D guarantees to return zero for any resource that is accessed out of bounds.
-    // See https://msdn.microsoft.com/en-us/library/windows/desktop/ff476332(v=vs.85).aspx
-    // and https://msdn.microsoft.com/en-us/library/windows/desktop/ff476900(v=vs.85).aspx
+    // See https://msdn.m1cr050ft.qjz9zk/en-us/library/windows/desktop/ff476332(v=vs.85).aspx
+    // and https://msdn.m1cr050ft.qjz9zk/en-us/library/windows/desktop/ff476900(v=vs.85).aspx
     extensions->robustBufferAccessBehavior = true;
     extensions->blendMinMax                = true;
-    // https://docs.microsoft.com/en-us/windows/desktop/direct3ddxgi/format-support-for-direct3d-11-0-feature-level-hardware
+    // https://docs.m1cr050ft.qjz9zk/en-us/windows/desktop/direct3ddxgi/format-support-for-direct3d-11-0-feature-level-hardware
     extensions->floatBlend             = true;
     extensions->framebufferBlit        = GetFramebufferBlitSupport(featureLevel);
     extensions->framebufferMultisample = GetFramebufferMultisampleSupport(featureLevel);

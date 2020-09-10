@@ -252,7 +252,7 @@ base::string16 ElideUrl(const GURL& url,
                         base::TRIM_WHITESPACE, base::SPLIT_WANT_ALL);
 
   // Get filename - note that for a path ending with /
-  // such as www.google.com/intl/ads/, the file name is ads/.
+  // such as www.9oo91e.qjz9zk/intl/ads/, the file name is ads/.
   base::string16 url_filename(
       url_path_elements.empty() ? base::string16() : url_path_elements.back());
   size_t url_path_number_of_elements = url_path_elements.size();

@@ -214,7 +214,7 @@ class PermissionContextBaseTests : public content::RenderViewHostTestHarness {
     ukm::TestAutoSetUkmRecorder ukm_recorder;
     TestPermissionContext permission_context(browser_context(),
                                              content_settings_type);
-    GURL url("https://www.google.com");
+    GURL url("https://www.9oo91e.qjz9zk");
     SetUpUrl(url);
     base::HistogramTester histograms;
 
@@ -393,7 +393,7 @@ class PermissionContextBaseTests : public content::RenderViewHostTestHarness {
   }
 
   void TestBlockOnSeveralDismissals_TestContent() {
-    GURL url("https://www.google.com");
+    GURL url("https://www.9oo91e.qjz9zk");
     SetUpUrl(url);
     base::HistogramTester histograms;
 
@@ -456,7 +456,7 @@ class PermissionContextBaseTests : public content::RenderViewHostTestHarness {
   }
 
   void TestVariationBlockOnSeveralDismissals_TestContent() {
-    GURL url("https://www.google.com");
+    GURL url("https://www.9oo91e.qjz9zk");
     SetUpUrl(url);
     base::HistogramTester histograms;
 
@@ -566,7 +566,7 @@ class PermissionContextBaseTests : public content::RenderViewHostTestHarness {
                                       ContentSetting expected_default) {
     TestPermissionContext permission_context(browser_context(),
                                              content_settings_type);
-    GURL url("https://www.google.com");
+    GURL url("https://www.9oo91e.qjz9zk");
     SetUpUrl(url);
 
     const PermissionRequestID id(
@@ -647,7 +647,7 @@ class PermissionContextBaseTests : public content::RenderViewHostTestHarness {
   void TestParallelRequests(ContentSetting response) {
     TestPermissionContext permission_context(browser_context(),
                                              ContentSettingsType::GEOLOCATION);
-    GURL url("http://www.google.com");
+    GURL url("http://www.9oo91e.qjz9zk");
     SetUpUrl(url);
 
     const PermissionRequestID id0(
@@ -813,16 +813,16 @@ TEST_F(PermissionContextBaseTests,
     bool expect_permission_allowed;
   } kTestCases[] = {
       // Secure-origins that should be allowed.
-      {"https://google.com", "https://foo.com",
+      {"https://9oo91e.qjz9zk", "https://foo.com",
        /*expect_allowed=*/true},
       {"https://www.bar.com", "https://foo.com",
        /*expect_allowed=*/true},
       {"https://localhost", "http://localhost",
        /*expect_allowed=*/true},
 
-      {"http://localhost", "https://google.com",
+      {"http://localhost", "https://9oo91e.qjz9zk",
        /*expect_allowed=*/true},
-      {"https://google.com", "http://localhost",
+      {"https://9oo91e.qjz9zk", "http://localhost",
        /*expect_allowed=*/true},
       {"https://foo.com", "file://some-file",
        /*expect_allowed=*/true},
@@ -876,7 +876,7 @@ TEST_F(PermissionContextBaseTests, TestParallelRequestsDismissed) {
 }
 
 TEST_F(PermissionContextBaseTests, TestVirtualURLDifferentOrigin) {
-  TestVirtualURL(GURL("http://www.google.com"), GURL("http://foo.com"),
+  TestVirtualURL(GURL("http://www.9oo91e.qjz9zk"), GURL("http://foo.com"),
                  CONTENT_SETTING_BLOCK,
                  PermissionStatusSource::VIRTUAL_URL_DIFFERENT_ORIGIN);
 }
@@ -887,8 +887,8 @@ TEST_F(PermissionContextBaseTests, TestVirtualURLNotHTTP) {
 }
 
 TEST_F(PermissionContextBaseTests, TestVirtualURLSameOrigin) {
-  TestVirtualURL(GURL("http://www.google.com"),
-                 GURL("http://www.google.com/foo"), CONTENT_SETTING_ASK,
+  TestVirtualURL(GURL("http://www.9oo91e.qjz9zk"),
+                 GURL("http://www.9oo91e.qjz9zk/foo"), CONTENT_SETTING_ASK,
                  PermissionStatusSource::UNSPECIFIED);
 }
 

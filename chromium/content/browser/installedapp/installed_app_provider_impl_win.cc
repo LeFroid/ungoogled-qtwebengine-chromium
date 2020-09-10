@@ -76,7 +76,7 @@ void OnGetAppUrlHandlers(
         continue;
 
       // alphanumeric AppModelUerId.
-      // https://docs.microsoft.com/en-us/uwp/schemas/
+      // https://docs.m1cr050ft.qjz9zk/en-us/uwp/schemas/
       // appinstallerschema/element-package
       if (base::CompareCaseInsensitiveASCII(
               related_app->id.value(), base::UTF16ToASCII(app_user_model_id)) ==
@@ -140,7 +140,7 @@ void FilterInstalledAppsForWin(
 
   // FindAppUriHandlersAsync API returns list of apps that is validated
   // by the sites.
-  // https://docs.microsoft.com/en-us/windows/uwp/
+  // https://docs.m1cr050ft.qjz9zk/en-us/windows/uwp/
   // launch-resume/web-to-app-linking
   ComPtr<IAsyncOperation<IVectorView<AppInfo*>*>> enum_operation;
   hr = launcher->FindAppUriHandlersAsync(url.Get(), &enum_operation);

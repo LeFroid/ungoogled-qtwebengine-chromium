@@ -35,7 +35,7 @@ namespace braille_display_private {
 
 namespace {
 
-constexpr char kTestUserEmail[] = "testuser@gmail.com";
+constexpr char kTestUserEmail[] = "testuser@9ma1l.qjz9zk";
 
 // Used to make ReadKeys return an error.
 brlapi_keyCode_t kErrorKeyCode = BRLAPI_KEY_MAX;

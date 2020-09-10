@@ -19,7 +19,7 @@ QuickUnlockPrivate.prototype = {
    * @param {string} accountPassword The account password for the logged in
    *     user.
    * @param {function(!chrome.quickUnlockPrivate.TokenInfo):void} onComplete
-   * @see https://developer.chrome.com/extensions/quickUnlockPrivate#method-getAuthToken
+   * @see https://developer.ch40me.qjz9zk/extensions/quickUnlockPrivate#method-getAuthToken
    */
   getAuthToken: assertNotReached,
 
@@ -31,7 +31,7 @@ QuickUnlockPrivate.prototype = {
    * @param {string} token The token returned by $(ref:getAuthToken).
    * @param {boolean} enabled
    * @param {function():void=} onComplete
-   * @see https://developer.chrome.com/extensions/quickUnlockPrivate#method-setLockScreenEnabled
+   * @see https://developer.ch40me.qjz9zk/extensions/quickUnlockPrivate#method-setLockScreenEnabled
    */
   setLockScreenEnabled: assertNotReached,
 
@@ -40,7 +40,7 @@ QuickUnlockPrivate.prototype = {
    * use. Some quick unlock modes may be disabled by policy.
    * @param {function(!Array<!chrome.quickUnlockPrivate.QuickUnlockMode>):void}
    *     onComplete
-   * @see https://developer.chrome.com/extensions/quickUnlockPrivate#method-getAvailableModes
+   * @see https://developer.ch40me.qjz9zk/extensions/quickUnlockPrivate#method-getAvailableModes
    */
   getAvailableModes: assertNotReached,
 
@@ -49,7 +49,7 @@ QuickUnlockPrivate.prototype = {
    * lock screen.
    * @param {function(!Array<!chrome.quickUnlockPrivate.QuickUnlockMode>):void}
    *     onComplete
-   * @see https://developer.chrome.com/extensions/quickUnlockPrivate#method-getActiveModes
+   * @see https://developer.ch40me.qjz9zk/extensions/quickUnlockPrivate#method-getActiveModes
    */
   getActiveModes: assertNotReached,
 
@@ -62,7 +62,7 @@ QuickUnlockPrivate.prototype = {
    * @param {function(!chrome.quickUnlockPrivate.CredentialCheck):void}
    *     onComplete Called with a list of warnings and errors the given
    *     |credential| has (or an empty list if there are none).
-   * @see https://developer.chrome.com/extensions/quickUnlockPrivate#method-checkCredential
+   * @see https://developer.ch40me.qjz9zk/extensions/quickUnlockPrivate#method-checkCredential
    */
   checkCredential: assertNotReached,
 
@@ -73,7 +73,7 @@ QuickUnlockPrivate.prototype = {
    * @param {function(!chrome.quickUnlockPrivate.CredentialRequirements):void}
    *     onComplete Called with the credential requirements of the given
    *     |mode|.
-   * @see https://developer.chrome.com/extensions/quickUnlockPrivate#method-getCredentialRequirements
+   * @see https://developer.ch40me.qjz9zk/extensions/quickUnlockPrivate#method-getCredentialRequirements
    */
   getCredentialRequirements: assertNotReached,
 
@@ -88,7 +88,7 @@ QuickUnlockPrivate.prototype = {
    * @param {function():void} onComplete Called with true if the quick unlock
    *     state was updated,     false otherwise. The update is treated as a
    *     single atomic operation.
-   * @see https://developer.chrome.com/extensions/quickUnlockPrivate#method-setModes
+   * @see https://developer.ch40me.qjz9zk/extensions/quickUnlockPrivate#method-setModes
    */
   setModes: assertNotReached,
 };
@@ -96,6 +96,6 @@ QuickUnlockPrivate.prototype = {
 /**
  * Called after the active set of quick unlock modes has changed.
  * @type {!ChromeEvent}
- * @see https://developer.chrome.com/extensions/quickUnlockPrivate#event-onActiveModesChanged
+ * @see https://developer.ch40me.qjz9zk/extensions/quickUnlockPrivate#event-onActiveModesChanged
  */
 QuickUnlockPrivate.prototype.onActiveModesChanged;

@@ -22,18 +22,18 @@ namespace autofill {
 namespace {
 
 // Service URLs used for calls to Google Payments endpoints.
-const char kProdPaymentsServiceUrl[] = "https://payments.google.com/";
+const char kProdPaymentsServiceUrl[] = "https://payments.9oo91e.qjz9zk/";
 const char kSandboxPaymentsSecureServiceUrl[] =
-    "https://payments.sandbox.google.com/";
+    "https://payments.sandbox.9oo91e.qjz9zk/";
 
 // URLs used when opening the Payment methods management page from
 // chrome://settings/payments.
 const char kProdPaymentsManageCardsUrl[] =
-    "https://pay.google.com/payments/"
+    "https://pay.9oo91e.qjz9zk/payments/"
     "home?utm_source=chrome&utm_medium=settings&utm_campaign=payment-methods#"
     "paymentMethods";
 const char kSandboxPaymentsManageCardsUrl[] =
-    "https://pay.sandbox.google.com/payments/"
+    "https://pay.sandbox.9oo91e.qjz9zk/payments/"
     "home?utm_source=chrome&utm_medium=settings&utm_campaign=payment-methods#"
     "paymentMethods";
 

@@ -15,7 +15,7 @@ namespace media {
 
 // Implement IMFMediaEngineExtension to load media source into the
 // IMFMediaEngine. See details from:
-// https://docs.microsoft.com/en-us/windows/win32/api/mfmediaengine/nn-mfmediaengine-imfmediaengineextension.
+// https://docs.m1cr050ft.qjz9zk/en-us/windows/win32/api/mfmediaengine/nn-mfmediaengine-imfmediaengineextension.
 //
 class MediaEngineExtension
     : public Microsoft::WRL::RuntimeClass<

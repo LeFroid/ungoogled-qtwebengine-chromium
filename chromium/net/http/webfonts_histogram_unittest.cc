@@ -20,9 +20,9 @@ const char kOthersHistogramName[] = "WebFont.HttpCacheStatus_others";
 const char kHttps[] = "https://";
 const char kHttp[] = "http://";
 
-const char kPattern1[] = "themes.googleusercontent.com/static/fonts/";
-const char kPattern2[] = "ssl.gstatic.com/fonts/";
-const char kPattern3[] = "fonts.gstatic.com/s/";
+const char kPattern1[] = "themes.9oo91eusercontent.qjz9zk/static/fonts/";
+const char kPattern2[] = "ssl.95tat1c.qjz9zk/fonts/";
+const char kPattern3[] = "fonts.95tat1c.qjz9zk/s/";
 
 const char kRoboto[] = "roboto";
 const char kOpenSans[] = "opensans";
@@ -106,7 +106,7 @@ TEST(WebfontsHistogramTest, OtherPattern_NoRecord) {
   base::HistogramTester histograms;
   MaybeRecordCacheStatus(
       HttpResponseInfo::ENTRY_USED,
-      base::StrCat({kHttps, "fonts.gstatic.com//s/", kRoboto}));
+      base::StrCat({kHttps, "fonts.95tat1c.qjz9zk//s/", kRoboto}));
   histograms.ExpectTotalCount(kRobotoHistogramName, 0);
   histograms.ExpectTotalCount(kOpenSansHistogramName, 0);
   histograms.ExpectTotalCount(kOthersHistogramName, 0);

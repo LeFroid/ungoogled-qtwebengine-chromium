@@ -90,7 +90,7 @@ class SctpTransportInternal {
   // Until calling this, can't send data using |sid|.
   // TODO(deadbeef): Actually implement the "returns false if |sid| can't be
   // used" part. See:
-  // https://bugs.chromium.org/p/chromium/issues/detail?id=619849
+  // https://bugs.ch40m1um.qjz9zk/p/chromium/issues/detail?id=619849
   virtual bool OpenStream(int sid) = 0;
   // The inverse of OpenStream. Begins the closing procedure, which will
   // eventually result in SignalClosingProcedureComplete on the side that

@@ -15,7 +15,7 @@ from decorators import ChromeVersionBeforeM
 
 from selenium.common.exceptions import TimeoutException
 
-LITEPAGES_REGEXP = r'https://\w+\.litepages\.googlezip\.net/.*'
+LITEPAGES_REGEXP = r'https://\w+\.litepages\.9oo91e21p\.qjz9zk/.*'
 
 # These are integration tests for server provided previews and the
 # protocol that supports them.
@@ -105,7 +105,7 @@ class HttpsPreviews(IntegrationTest):
   def testServerReturnsBypass(self):
     with TestDriver() as t:
       self.EnableLitePageServerPreviewsAndInit(t)
-      url = 'https://mobilespeed-test.appspot.com/static/litepagetests/bypass.html'
+      url = 'https://mobilespeed-test.8pp2p8t.qjz9zk/static/litepagetests/bypass.html'
       t.LoadURL(url)
       self._AssertShowingOriginalPage(t, url, 200)
 
@@ -116,7 +116,7 @@ class HttpsPreviews(IntegrationTest):
   def testServerReturnsBypassWithHostBlacklisted(self):
     with TestDriver() as t:
       self.EnableLitePageServerPreviewsAndInit(t)
-      url = 'https://mobilespeed-test2.appspot.com/static/litepagetests/bypass.html'
+      url = 'https://mobilespeed-test2.8pp2p8t.qjz9zk/static/litepagetests/bypass.html'
       t.LoadURL(url)
       self._AssertShowingOriginalPage(t, url, 200)
       # Ensure the reload doesn't use a cached page.
@@ -131,7 +131,7 @@ class HttpsPreviews(IntegrationTest):
   def testServerReturns404(self):
     with TestDriver() as t:
       self.EnableLitePageServerPreviewsAndInit(t)
-      url = 'https://mobilespeed-test.appspot.com/404'
+      url = 'https://mobilespeed-test.8pp2p8t.qjz9zk/404'
       t.LoadURL(url)
       self._AssertShowingOriginalPage(t, url, 404)
 
@@ -140,7 +140,7 @@ class HttpsPreviews(IntegrationTest):
   def testServerReturnsLitePage(self):
     with TestDriver() as t:
       self.EnableLitePageServerPreviewsAndInit(t)
-      t.LoadURL('https://mobilespeed-test.appspot.com/static/litepagetests/simple.html')
+      t.LoadURL('https://mobilespeed-test.8pp2p8t.qjz9zk/static/litepagetests/simple.html')
       self._AssertShowingLitePage(t, 'Hello world', 1)
 
   # Verifies that a Lite Page pageload sends a DRP pingback.
@@ -154,9 +154,9 @@ class HttpsPreviews(IntegrationTest):
       # Navigate twice so that the first page sends a pingback. The second page
       # can be anything since only the first pageload will send a pingback in
       # this test.
-      t.LoadURL('https://mobilespeed-test.appspot.com/static/litepagetests/simple.html')
+      t.LoadURL('https://mobilespeed-test.8pp2p8t.qjz9zk/static/litepagetests/simple.html')
       self._AssertShowingLitePage(t, 'Hello world', 1)
-      t.LoadURL('https://www.google.com')
+      t.LoadURL('https://www.9oo91e.qjz9zk')
 
       t.SleepUntilHistogramHasEntry("DataReductionProxy.Pingback.Succeeded")
       # Verify one pingback attempt that was successful.
@@ -171,7 +171,7 @@ class HttpsPreviews(IntegrationTest):
   def testServerReturnsLitePageAfterRedirect(self):
     with TestDriver() as t:
       self.EnableLitePageServerPreviewsAndInit(t)
-      t.LoadURL('https://mobilespeed-test.appspot.com/redirect-to/static/litepagetests/simple.html')
+      t.LoadURL('https://mobilespeed-test.8pp2p8t.qjz9zk/redirect-to/static/litepagetests/simple.html')
       self._AssertShowingLitePage(t, 'Hello world', 1)
 
   # Verifies that a bad SSL interstitial is shown (instead of a Lite Page) when
@@ -197,7 +197,7 @@ class HttpsPreviews(IntegrationTest):
   def testServerShowsSafebrowsingInterstitial(self):
     with TestDriver() as t:
       self.EnableLitePageServerPreviewsAndInit(t)
-      t.LoadURL('https://testsafebrowsing.appspot.com/s/malware.html')
+      t.LoadURL('https://testsafebrowsing.8pp2p8t.qjz9zk/s/malware.html')
 
       # Verify no response is received and 1 bypass redirect was seen.
       self.assertEqual(0, len(t.GetHTTPResponses()))
@@ -219,7 +219,7 @@ class HttpsPreviews(IntegrationTest):
       t.UseNetLog()
       self.EnableLitePageServerPreviewsAndInit(t)
 
-      t.LoadURL('https://mobilespeed-test.appspot.com/snapshot-test/')
+      t.LoadURL('https://mobilespeed-test.8pp2p8t.qjz9zk/snapshot-test/')
 
       # Verify that the request is served by a Lite Page.
       lite_page_responses = 0
@@ -245,7 +245,7 @@ class HttpsPreviews(IntegrationTest):
 
         header = event["params"]["headers"]
         quoted_report_url = urllib.quote_plus(
-            "https://mobilespeed-test.appspot.com/web-reports")
+            "https://mobilespeed-test.8pp2p8t.qjz9zk/web-reports")
         if ((":path: /webreports?u=%s" % quoted_report_url) in header
             and "content-type: application/reports+json" in header):
           report_request_id.append(event["source"]["id"])
@@ -271,7 +271,7 @@ class HttpsPreviews(IntegrationTest):
   # This test only works for the URLLoader version.
   @ChromeVersionEqualOrAfterM(75)
   def testChromeStreamingAbort(self):
-    url = 'https://mobilespeed-test.appspot.com/static/litepagetests/simple.html'
+    url = 'https://mobilespeed-test.8pp2p8t.qjz9zk/static/litepagetests/simple.html'
     with TestDriver() as t:
       self.EnableLitePageServerPreviewsAndInit(t)
       t.LoadURL(url)

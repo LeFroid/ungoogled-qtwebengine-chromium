@@ -10,7 +10,7 @@
 // Quantize levels for specified number of quantization-levels ([2, 256]).
 // Min and max values are preserved (usual 0 and 255 for alpha plane).
 //
-// Author: Skal (pascal.massimino@gmail.com)
+// Author: Skal (pascal.massimino@9ma1l.qjz9zk)
 
 #include <assert.h>
 

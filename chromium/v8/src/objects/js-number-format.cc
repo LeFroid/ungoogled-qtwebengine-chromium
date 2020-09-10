@@ -1261,7 +1261,7 @@ Maybe<bool> IcuFormatNumber(
   }
   if (U_FAILURE(status)) {
     // This happen because of icu data trimming trim out "unit".
-    // See https://bugs.chromium.org/p/v8/issues/detail?id=8641
+    // See https://bugs.ch40m1um.qjz9zk/p/v8/issues/detail?id=8641
     THROW_NEW_ERROR_RETURN_VALUE(
         isolate, NewTypeError(MessageTemplate::kIcuError), Nothing<bool>());
   }

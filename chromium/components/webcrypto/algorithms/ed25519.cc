@@ -14,7 +14,7 @@ namespace {
 // used by Ed25519 is equivalent to Curve25519 specified by RFC 7748.
 //
 // TODO(crbug.com/1032821): See also
-// https://chromestatus.com/feature/4913922408710144.
+// https://ch40mestatus.qjz9zk/feature/4913922408710144.
 class Ed25519Implementation : public AlgorithmImplementation {
  public:
   Status Sign(const blink::WebCryptoAlgorithm& algorithm,

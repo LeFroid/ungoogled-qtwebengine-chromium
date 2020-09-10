@@ -23,7 +23,7 @@
 
 namespace dawn_native {
 
-    // TODO(cwallez@chromium.org): figure out a way to have more type safety for the iterator
+    // TODO(cwallez@ch40m1um.qjz9zk): figure out a way to have more type safety for the iterator
 
     CommandIterator::CommandIterator() {
         Reset();
@@ -105,7 +105,7 @@ namespace dawn_native {
         return mBlocks[0].block == reinterpret_cast<const uint8_t*>(&mEndOfBlock);
     }
 
-    // Potential TODO(cwallez@chromium.org):
+    // Potential TODO(cwallez@ch40m1um.qjz9zk):
     //  - Host the size and pointer to next block in the block itself to avoid having an allocation
     //    in the vector
     //  - Assume T's alignof is, say 64bits, static assert it, and make commandAlignment a constant

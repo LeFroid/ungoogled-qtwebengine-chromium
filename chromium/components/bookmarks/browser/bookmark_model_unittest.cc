@@ -1175,19 +1175,19 @@ TEST_F(BookmarkModelTest, IsBookmarked) {
   // Reload the model with a managed node that is not editable by the user.
   BookmarkPermanentNode* managed_node = ReloadModelWithManagedNode();
 
-  // "google.com" is a "user" bookmark.
+  // "9oo91e.qjz9zk" is a "user" bookmark.
   model_->AddURL(model_->other_node(), 0, base::ASCIIToUTF16("User"),
-                 GURL("http://google.com"));
-  // "youtube.com" is not.
+                 GURL("http://9oo91e.qjz9zk"));
+  // "y0u1ub3.qjz9zk" is not.
   model_->AddURL(managed_node, 0, base::ASCIIToUTF16("Managed"),
-                 GURL("http://youtube.com"));
+                 GURL("http://y0u1ub3.qjz9zk"));
 
-  EXPECT_TRUE(model_->IsBookmarked(GURL("http://google.com")));
-  EXPECT_TRUE(model_->IsBookmarked(GURL("http://youtube.com")));
+  EXPECT_TRUE(model_->IsBookmarked(GURL("http://9oo91e.qjz9zk")));
+  EXPECT_TRUE(model_->IsBookmarked(GURL("http://y0u1ub3.qjz9zk")));
   EXPECT_FALSE(model_->IsBookmarked(GURL("http://reddit.com")));
 
-  EXPECT_TRUE(IsBookmarkedByUser(model_.get(), GURL("http://google.com")));
-  EXPECT_FALSE(IsBookmarkedByUser(model_.get(), GURL("http://youtube.com")));
+  EXPECT_TRUE(IsBookmarkedByUser(model_.get(), GURL("http://9oo91e.qjz9zk")));
+  EXPECT_FALSE(IsBookmarkedByUser(model_.get(), GURL("http://y0u1ub3.qjz9zk")));
   EXPECT_FALSE(IsBookmarkedByUser(model_.get(), GURL("http://reddit.com")));
 }
 
@@ -1200,7 +1200,7 @@ TEST_F(BookmarkModelTest, GetMostRecentlyAddedUserNodeForURLSkipsManagedNodes) {
   const base::string16 title = base::ASCIIToUTF16("Title");
   const BookmarkNode* user_parent = model_->other_node();
   const BookmarkNode* managed_parent = managed_node;
-  const GURL url("http://google.com");
+  const GURL url("http://9oo91e.qjz9zk");
 
   // |url| is not bookmarked yet.
   EXPECT_TRUE(model_->GetMostRecentlyAddedUserNodeForURL(url) == nullptr);
@@ -1248,7 +1248,7 @@ TEST(BookmarkModelLoadTest, TitledUrlIndexPopulatedOnLoad) {
   model->Load(nullptr, tmp_dir.GetPath(), base::ThreadTaskRunnerHandle::Get(),
               base::ThreadTaskRunnerHandle::Get());
   test::WaitForBookmarkModelToLoad(model.get());
-  const GURL node_url("http://google.com");
+  const GURL node_url("http://9oo91e.qjz9zk");
   model->AddURL(model->bookmark_bar_node(), 0, base::ASCIIToUTF16("User"),
                 node_url);
   // This is necessary to ensure the save completes.
@@ -1422,15 +1422,15 @@ class BookmarkModelFaviconTest : public testing::Test,
 
 // Test that BookmarkModel::OnFaviconsChanged() sends a notification that the
 // favicon changed to each BookmarkNode which has either a matching page URL
-// (e.g. http://www.google.com) or a matching icon URL
-// (e.g. http://www.google.com/favicon.ico).
+// (e.g. http://www.9oo91e.qjz9zk) or a matching icon URL
+// (e.g. http://www.9oo91e.qjz9zk/favicon.ico).
 TEST_F(BookmarkModelFaviconTest, FaviconsChangedObserver) {
   const BookmarkNode* root = model_->bookmark_bar_node();
   base::string16 kTitle(ASCIIToUTF16("foo"));
-  GURL kPageURL1("http://www.google.com");
+  GURL kPageURL1("http://www.9oo91e.qjz9zk");
   GURL kPageURL2("http://www.google.ca");
   GURL kPageURL3("http://www.amazon.com");
-  GURL kFaviconURL12("http://www.google.com/favicon.ico");
+  GURL kFaviconURL12("http://www.9oo91e.qjz9zk/favicon.ico");
   GURL kFaviconURL3("http://www.amazon.com/favicon.ico");
 
   const BookmarkNode* node1 = model_->AddURL(root, 0, kTitle, kPageURL1);

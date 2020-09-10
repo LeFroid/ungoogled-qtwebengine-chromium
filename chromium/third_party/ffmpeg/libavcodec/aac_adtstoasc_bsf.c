@@ -1,6 +1,6 @@
 /*
  * MPEG-2/4 AAC ADTS to MPEG-4 Audio Specific Configuration bitstream filter
- * Copyright (c) 2009 Alex Converse <alex.converse@gmail.com>
+ * Copyright (c) 2009 Alex Converse <alex.converse@9ma1l.qjz9zk>
  *
  * This file is part of FFmpeg.
  *

@@ -70,7 +70,7 @@ enum class TaskPriority : uint8_t {
   // This is the default TaskPriority in order for tasks to run in order by
   // default and avoid unintended consequences. The only way to get a task to
   // run at a higher priority than USER_BLOCKING is to coordinate with a
-  // higher-level scheduler (contact scheduler-dev@chromium.org for such use
+  // higher-level scheduler (contact scheduler-dev@ch40m1um.qjz9zk for such use
   // cases).
   USER_BLOCKING,
 

@@ -243,10 +243,10 @@ TEST_F(ExtensionInfoGeneratorUnitTest, BasicInfoTest) {
           .Set("permissions", ListBuilder()
                                   .Append("file://*/*")
                                   .Append("tabs")
-                                  .Append("*://*.google.com/*")
+                                  .Append("*://*.9oo91e.qjz9zk/*")
                                   .Append("*://*.example.com/*")
                                   .Append("*://*.foo.bar/*")
-                                  .Append("*://*.chromium.org/*")
+                                  .Append("*://*.ch40m1um.qjz9zk/*")
                                   .Build())
           .Build();
   std::unique_ptr<base::DictionaryValue> manifest_copy(manifest->DeepCopy());
@@ -349,7 +349,7 @@ TEST_F(ExtensionInfoGeneratorUnitTest, BasicInfoTest) {
 
   // Test an extension that isn't unpacked.
   manifest_copy->SetString("update_url",
-                           "https://clients2.google.com/service/update2/crx");
+                           "https://clients2.9oo91e.qjz9zk/service/update2/crx");
   id = crx_file::id_util::GenerateId("beta");
   extension = ExtensionBuilder()
                   .SetManifest(std::move(manifest_copy))
@@ -494,27 +494,27 @@ TEST_F(ExtensionInfoGeneratorUnitTest,
   std::unique_ptr<developer::ExtensionInfo> info =
       GenerateExtensionInfo(extension->id());
 
-  // Withhold permissions, and grant *://chromium.org/*.
+  // Withhold permissions, and grant *://ch40m1um.qjz9zk/*.
   ScriptingPermissionsModifier permissions_modifier(profile(), extension);
   permissions_modifier.SetWithholdHostPermissions(true);
   URLPattern all_chromium(Extension::kValidHostPermissionSchemes,
-                          "*://chromium.org/*");
+                          "*://ch40m1um.qjz9zk/*");
   PermissionSet all_chromium_set(APIPermissionSet(), ManifestPermissionSet(),
                                  URLPatternSet({all_chromium}),
                                  URLPatternSet({all_chromium}));
   permissions_test_util::GrantRuntimePermissionsAndWaitForCompletion(
       profile(), *extension, all_chromium_set);
 
-  // The extension should only be granted http://chromium.org/* (since that's
+  // The extension should only be granted http://ch40m1um.qjz9zk/* (since that's
   // the intersection with what it requested).
   URLPattern http_chromium(Extension::kValidHostPermissionSchemes,
-                           "http://chromium.org/*");
+                           "http://ch40m1um.qjz9zk/*");
   EXPECT_EQ(PermissionSet(APIPermissionSet(), ManifestPermissionSet(),
                           URLPatternSet({http_chromium}), URLPatternSet()),
             extension->permissions_data()->active_permissions());
 
   // The generated info should use the entirety of the granted permission,
-  // which is *://chromium.org/*.
+  // which is *://ch40m1um.qjz9zk/*.
   info = GenerateExtensionInfo(extension->id());
   ASSERT_TRUE(info->permissions.runtime_host_permissions);
   const developer::RuntimeHostPermissions* runtime_hosts =
@@ -522,7 +522,7 @@ TEST_F(ExtensionInfoGeneratorUnitTest,
   EXPECT_EQ(developer::HOST_ACCESS_ON_SPECIFIC_SITES,
             runtime_hosts->host_access);
   EXPECT_EQ(
-      R"([{"granted":true,"host":"*://chromium.org/*"},)"
+      R"([{"granted":true,"host":"*://ch40m1um.qjz9zk/*"},)"
       R"({"granted":false,"host":"http://*/*"}])",
       SiteControlsToString(runtime_hosts->hosts));
   EXPECT_TRUE(runtime_hosts->has_all_hosts);
@@ -535,18 +535,18 @@ TEST_F(ExtensionInfoGeneratorUnitTest, RuntimeHostPermissionsSpecificHosts) {
       CreateExtension("extension",
                       ListBuilder()
                           .Append("https://example.com/*")
-                          .Append("https://chromium.org/*")
+                          .Append("https://ch40m1um.qjz9zk/*")
                           .Build(),
                       Manifest::INTERNAL);
 
   std::unique_ptr<developer::ExtensionInfo> info =
       GenerateExtensionInfo(extension->id());
 
-  // Withhold permissions, and grant *://chromium.org/*.
+  // Withhold permissions, and grant *://ch40m1um.qjz9zk/*.
   ScriptingPermissionsModifier permissions_modifier(profile(), extension);
   permissions_modifier.SetWithholdHostPermissions(true);
   URLPattern all_chromium(Extension::kValidHostPermissionSchemes,
-                          "https://chromium.org/*");
+                          "https://ch40m1um.qjz9zk/*");
   PermissionSet all_chromium_set(APIPermissionSet(), ManifestPermissionSet(),
                                  URLPatternSet({all_chromium}),
                                  URLPatternSet({all_chromium}));
@@ -554,7 +554,7 @@ TEST_F(ExtensionInfoGeneratorUnitTest, RuntimeHostPermissionsSpecificHosts) {
       profile(), *extension, all_chromium_set);
 
   // The generated info should use the entirety of the granted permission,
-  // which is *://chromium.org/*.
+  // which is *://ch40m1um.qjz9zk/*.
   info = GenerateExtensionInfo(extension->id());
   ASSERT_TRUE(info->permissions.runtime_host_permissions);
   const developer::RuntimeHostPermissions* runtime_hosts =
@@ -562,7 +562,7 @@ TEST_F(ExtensionInfoGeneratorUnitTest, RuntimeHostPermissionsSpecificHosts) {
   EXPECT_EQ(developer::HOST_ACCESS_ON_SPECIFIC_SITES,
             runtime_hosts->host_access);
   EXPECT_EQ(
-      R"([{"granted":true,"host":"https://chromium.org/*"},)"
+      R"([{"granted":true,"host":"https://ch40m1um.qjz9zk/*"},)"
       R"({"granted":false,"host":"https://example.com/*"}])",
       SiteControlsToString(runtime_hosts->hosts));
   EXPECT_FALSE(runtime_hosts->has_all_hosts);
@@ -612,7 +612,7 @@ TEST_F(ExtensionInfoGeneratorUnitTest, WithheldUrlsOverlapping) {
       CreateExtension("extension",
                       ListBuilder()
                           .Append("*://example.com/*")
-                          .Append("https://chromium.org/*")
+                          .Append("https://ch40m1um.qjz9zk/*")
                           .Build(),
                       Manifest::INTERNAL);
   ScriptingPermissionsModifier modifier(profile(), extension);
@@ -625,7 +625,7 @@ TEST_F(ExtensionInfoGeneratorUnitTest, WithheldUrlsOverlapping) {
     // Initially, no hosts are granted.
     EXPECT_EQ(
         R"([{"granted":false,"host":"*://example.com/*"},)"
-        R"({"granted":false,"host":"https://chromium.org/*"}])",
+        R"({"granted":false,"host":"https://ch40m1um.qjz9zk/*"}])",
         SiteControlsToString(
             info->permissions.runtime_host_permissions->hosts));
     EXPECT_FALSE(info->permissions.runtime_host_permissions->has_all_hosts);
@@ -649,7 +649,7 @@ TEST_F(ExtensionInfoGeneratorUnitTest, WithheldUrlsOverlapping) {
     EXPECT_EQ(
         R"([{"granted":true,"host":"http://example.com/*"},)"
         R"({"granted":false,"host":"*://example.com/*"},)"
-        R"({"granted":false,"host":"https://chromium.org/*"}])",
+        R"({"granted":false,"host":"https://ch40m1um.qjz9zk/*"}])",
         SiteControlsToString(
             info->permissions.runtime_host_permissions->hosts));
     EXPECT_FALSE(info->permissions.runtime_host_permissions->has_all_hosts);
@@ -676,7 +676,7 @@ TEST_F(ExtensionInfoGeneratorUnitTest, WithheldUrlsOverlapping) {
     // by the *://example.com/* pattern.
     EXPECT_EQ(
         R"([{"granted":true,"host":"*://example.com/*"},)"
-        R"({"granted":false,"host":"https://chromium.org/*"}])",
+        R"({"granted":false,"host":"https://ch40m1um.qjz9zk/*"}])",
         SiteControlsToString(
             info->permissions.runtime_host_permissions->hosts));
     EXPECT_FALSE(info->permissions.runtime_host_permissions->has_all_hosts);
@@ -703,7 +703,7 @@ TEST_F(ExtensionInfoGeneratorUnitTest, WithheldUrlsOverlapping) {
     // The full granted pattern should be visible.
     EXPECT_EQ(
         R"([{"granted":true,"host":"*://*.example.com/*"},)"
-        R"({"granted":false,"host":"https://chromium.org/*"}])",
+        R"({"granted":false,"host":"https://ch40m1um.qjz9zk/*"}])",
         SiteControlsToString(
             info->permissions.runtime_host_permissions->hosts));
     EXPECT_FALSE(info->permissions.runtime_host_permissions->has_all_hosts);
@@ -718,7 +718,7 @@ TEST_F(ExtensionInfoGeneratorUnitTest,
        WithheldUrlsOverlappingWithContentScript) {
   scoped_refptr<const Extension> extension =
       ExtensionBuilder("extension")
-          .AddPermissions({"*://example.com/*", "*://chromium.org/*"})
+          .AddPermissions({"*://example.com/*", "*://ch40m1um.qjz9zk/*"})
           .AddContentScript("script.js", {"*://example.com/foo"})
           .Build();
   {
@@ -737,7 +737,7 @@ TEST_F(ExtensionInfoGeneratorUnitTest,
     ASSERT_TRUE(info->permissions.runtime_host_permissions);
     // Initially, no hosts are granted.
     EXPECT_EQ(
-        R"([{"granted":false,"host":"*://chromium.org/*"},)"
+        R"([{"granted":false,"host":"*://ch40m1um.qjz9zk/*"},)"
         R"({"granted":false,"host":"*://example.com/*"}])",
         SiteControlsToString(
             info->permissions.runtime_host_permissions->hosts));

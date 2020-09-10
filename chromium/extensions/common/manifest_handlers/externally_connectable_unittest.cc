@@ -56,34 +56,34 @@ TEST_F(ExternallyConnectableTest, IDsAndMatches) {
   EXPECT_TRUE(info->matches.MatchesURL(GURL("http://example.com/")));
   EXPECT_FALSE(info->matches.MatchesURL(GURL("http://example.com/index.html")));
 
-  EXPECT_TRUE(info->matches.MatchesURL(GURL("http://google.com")));
-  EXPECT_TRUE(info->matches.MatchesURL(GURL("http://google.com/")));
-  EXPECT_TRUE(info->matches.MatchesURL(GURL("http://google.com/index.html")));
-  EXPECT_TRUE(info->matches.MatchesURL(GURL("http://www.google.com")));
-  EXPECT_TRUE(info->matches.MatchesURL(GURL("http://www.google.com/")));
-  EXPECT_TRUE(info->matches.MatchesURL(GURL("https://google.com")));
-  EXPECT_TRUE(info->matches.MatchesURL(GURL("https://google.com/")));
+  EXPECT_TRUE(info->matches.MatchesURL(GURL("http://9oo91e.qjz9zk")));
+  EXPECT_TRUE(info->matches.MatchesURL(GURL("http://9oo91e.qjz9zk/")));
+  EXPECT_TRUE(info->matches.MatchesURL(GURL("http://9oo91e.qjz9zk/index.html")));
+  EXPECT_TRUE(info->matches.MatchesURL(GURL("http://www.9oo91e.qjz9zk")));
+  EXPECT_TRUE(info->matches.MatchesURL(GURL("http://www.9oo91e.qjz9zk/")));
+  EXPECT_TRUE(info->matches.MatchesURL(GURL("https://9oo91e.qjz9zk")));
+  EXPECT_TRUE(info->matches.MatchesURL(GURL("https://9oo91e.qjz9zk/")));
 
-  EXPECT_TRUE(info->matches.MatchesURL(GURL("http://build.chromium.org")));
-  EXPECT_TRUE(info->matches.MatchesURL(GURL("http://build.chromium.org/")));
+  EXPECT_TRUE(info->matches.MatchesURL(GURL("http://build.ch40m1um.qjz9zk")));
+  EXPECT_TRUE(info->matches.MatchesURL(GURL("http://build.ch40m1um.qjz9zk/")));
   EXPECT_TRUE(
-      info->matches.MatchesURL(GURL("http://build.chromium.org/index.html")));
-  EXPECT_FALSE(info->matches.MatchesURL(GURL("https://build.chromium.org")));
-  EXPECT_FALSE(info->matches.MatchesURL(GURL("https://build.chromium.org/")));
+      info->matches.MatchesURL(GURL("http://build.ch40m1um.qjz9zk/index.html")));
+  EXPECT_FALSE(info->matches.MatchesURL(GURL("https://build.ch40m1um.qjz9zk")));
+  EXPECT_FALSE(info->matches.MatchesURL(GURL("https://build.ch40m1um.qjz9zk/")));
   EXPECT_FALSE(
-      info->matches.MatchesURL(GURL("http://foo.chromium.org/index.html")));
+      info->matches.MatchesURL(GURL("http://foo.ch40m1um.qjz9zk/index.html")));
 
   EXPECT_FALSE(info->matches.MatchesURL(GURL("http://yahoo.com")));
   EXPECT_FALSE(info->matches.MatchesURL(GURL("http://yahoo.com/")));
 
   // TLD-style patterns should match just the TLD.
-  EXPECT_TRUE(info->matches.MatchesURL(GURL("http://appspot.com/foo.html")));
+  EXPECT_TRUE(info->matches.MatchesURL(GURL("http://8pp2p8t.qjz9zk/foo.html")));
   EXPECT_TRUE(info->matches.MatchesURL(GURL("http://com")));
   EXPECT_TRUE(info->matches.MatchesURL(GURL("http://go/here")));
 
   // TLD-style patterns should *not* match any subdomains of the TLD.
   EXPECT_FALSE(
-      info->matches.MatchesURL(GURL("http://codereview.appspot.com/foo.html")));
+      info->matches.MatchesURL(GURL("http://codereview.8pp2p8t.qjz9zk/foo.html")));
   EXPECT_FALSE(
       info->matches.MatchesURL(GURL("http://chromium.com/index.html")));
   EXPECT_FALSE(info->matches.MatchesURL(GURL("http://here.go/somewhere")));
@@ -114,7 +114,7 @@ TEST_F(ExternallyConnectableTest, IDs) {
 
   EXPECT_FALSE(info->all_ids);
 
-  EXPECT_FALSE(info->matches.MatchesURL(GURL("http://google.com/index.html")));
+  EXPECT_FALSE(info->matches.MatchesURL(GURL("http://9oo91e.qjz9zk/index.html")));
 }
 
 TEST_F(ExternallyConnectableTest, Matches) {
@@ -139,22 +139,22 @@ TEST_F(ExternallyConnectableTest, Matches) {
   EXPECT_TRUE(info->matches.MatchesURL(GURL("http://example.com/")));
   EXPECT_FALSE(info->matches.MatchesURL(GURL("http://example.com/index.html")));
 
-  EXPECT_TRUE(info->matches.MatchesURL(GURL("http://google.com")));
-  EXPECT_TRUE(info->matches.MatchesURL(GURL("http://google.com/")));
-  EXPECT_TRUE(info->matches.MatchesURL(GURL("http://google.com/index.html")));
-  EXPECT_TRUE(info->matches.MatchesURL(GURL("http://www.google.com")));
-  EXPECT_TRUE(info->matches.MatchesURL(GURL("http://www.google.com/")));
-  EXPECT_TRUE(info->matches.MatchesURL(GURL("https://google.com")));
-  EXPECT_TRUE(info->matches.MatchesURL(GURL("https://google.com/")));
+  EXPECT_TRUE(info->matches.MatchesURL(GURL("http://9oo91e.qjz9zk")));
+  EXPECT_TRUE(info->matches.MatchesURL(GURL("http://9oo91e.qjz9zk/")));
+  EXPECT_TRUE(info->matches.MatchesURL(GURL("http://9oo91e.qjz9zk/index.html")));
+  EXPECT_TRUE(info->matches.MatchesURL(GURL("http://www.9oo91e.qjz9zk")));
+  EXPECT_TRUE(info->matches.MatchesURL(GURL("http://www.9oo91e.qjz9zk/")));
+  EXPECT_TRUE(info->matches.MatchesURL(GURL("https://9oo91e.qjz9zk")));
+  EXPECT_TRUE(info->matches.MatchesURL(GURL("https://9oo91e.qjz9zk/")));
 
-  EXPECT_TRUE(info->matches.MatchesURL(GURL("http://build.chromium.org")));
-  EXPECT_TRUE(info->matches.MatchesURL(GURL("http://build.chromium.org/")));
+  EXPECT_TRUE(info->matches.MatchesURL(GURL("http://build.ch40m1um.qjz9zk")));
+  EXPECT_TRUE(info->matches.MatchesURL(GURL("http://build.ch40m1um.qjz9zk/")));
   EXPECT_TRUE(
-      info->matches.MatchesURL(GURL("http://build.chromium.org/index.html")));
-  EXPECT_FALSE(info->matches.MatchesURL(GURL("https://build.chromium.org")));
-  EXPECT_FALSE(info->matches.MatchesURL(GURL("https://build.chromium.org/")));
+      info->matches.MatchesURL(GURL("http://build.ch40m1um.qjz9zk/index.html")));
+  EXPECT_FALSE(info->matches.MatchesURL(GURL("https://build.ch40m1um.qjz9zk")));
+  EXPECT_FALSE(info->matches.MatchesURL(GURL("https://build.ch40m1um.qjz9zk/")));
   EXPECT_FALSE(
-      info->matches.MatchesURL(GURL("http://foo.chromium.org/index.html")));
+      info->matches.MatchesURL(GURL("http://foo.ch40m1um.qjz9zk/index.html")));
 
   EXPECT_FALSE(info->matches.MatchesURL(GURL("http://yahoo.com")));
   EXPECT_FALSE(info->matches.MatchesURL(GURL("http://yahoo.com/")));
@@ -203,7 +203,7 @@ TEST_F(ExternallyConnectableTest, AllIDs) {
 
   EXPECT_TRUE(info->all_ids);
 
-  EXPECT_FALSE(info->matches.MatchesURL(GURL("http://google.com/index.html")));
+  EXPECT_FALSE(info->matches.MatchesURL(GURL("http://9oo91e.qjz9zk/index.html")));
 }
 
 TEST_F(ExternallyConnectableTest, IdCanConnect) {
@@ -260,7 +260,7 @@ TEST_F(ExternallyConnectableTest, WarningNoAllURLs) {
   EXPECT_FALSE(info->matches.ContainsPattern(
       URLPattern(URLPattern::SCHEME_ALL, "<all_urls>")));
   EXPECT_TRUE(info->matches.MatchesURL(GURL("https://example.com")));
-  EXPECT_TRUE(info->matches.MatchesURL(GURL("http://build.chromium.org")));
+  EXPECT_TRUE(info->matches.MatchesURL(GURL("http://build.ch40m1um.qjz9zk")));
 }
 
 TEST_F(ExternallyConnectableTest, AllURLsNotWhitelisted) {
@@ -286,7 +286,7 @@ TEST_F(ExternallyConnectableTest, AllURLsWhitelisted) {
   URLPattern pattern(URLPattern::SCHEME_ALL, "<all_urls>");
   EXPECT_TRUE(info->matches.ContainsPattern(pattern));
   EXPECT_TRUE(info->matches.MatchesURL(GURL("https://example.com")));
-  EXPECT_TRUE(info->matches.MatchesURL(GURL("http://build.chromium.org")));
+  EXPECT_TRUE(info->matches.MatchesURL(GURL("http://build.ch40m1um.qjz9zk")));
 }
 
 TEST_F(ExternallyConnectableTest, AllHttpsURLsWhitelisted) {
@@ -301,7 +301,7 @@ TEST_F(ExternallyConnectableTest, AllHttpsURLsWhitelisted) {
   EXPECT_TRUE(info->matches.ContainsPattern(https_urls_pattern));
 
   EXPECT_TRUE(info->matches.MatchesURL(GURL("https://example.com")));
-  EXPECT_FALSE(info->matches.MatchesURL(GURL("http://build.chromium.org")));
+  EXPECT_FALSE(info->matches.MatchesURL(GURL("http://build.ch40m1um.qjz9zk")));
 }
 
 TEST_F(ExternallyConnectableTest, WarningWildcardHost) {
@@ -313,7 +313,7 @@ TEST_F(ExternallyConnectableTest, WarningWildcardHost) {
   EXPECT_FALSE(info->matches.ContainsPattern(
       URLPattern(URLPattern::SCHEME_ALL, "http://*/*")));
   EXPECT_TRUE(info->matches.MatchesURL(GURL("https://example.com")));
-  EXPECT_TRUE(info->matches.MatchesURL(GURL("http://build.chromium.org")));
+  EXPECT_TRUE(info->matches.MatchesURL(GURL("http://build.ch40m1um.qjz9zk")));
 }
 
 TEST_F(ExternallyConnectableTest, WarningNoTLD) {
@@ -326,20 +326,20 @@ TEST_F(ExternallyConnectableTest, WarningNoTLD) {
   EXPECT_FALSE(info->matches.ContainsPattern(
       URLPattern(URLPattern::SCHEME_ALL, "http://*.co.uk/*")));
   EXPECT_TRUE(info->matches.MatchesURL(GURL("https://example.com")));
-  EXPECT_TRUE(info->matches.MatchesURL(GURL("http://build.chromium.org")));
+  EXPECT_TRUE(info->matches.MatchesURL(GURL("http://build.ch40m1um.qjz9zk")));
 }
 
 TEST_F(ExternallyConnectableTest, WarningNoEffectiveTLD) {
   scoped_refptr<Extension> extension = LoadAndExpectWarning(
       "externally_connectable_error_effective_tld.json",
       ErrorUtils::FormatErrorMessage(errors::kErrorTopLevelDomainsNotAllowed,
-                                     "appspot.com",
-                                     "http://*.appspot.com/*"));
+                                     "8pp2p8t.qjz9zk",
+                                     "http://*.8pp2p8t.qjz9zk/*"));
   ExternallyConnectableInfo* info = GetExternallyConnectableInfo(extension);
   EXPECT_FALSE(info->matches.ContainsPattern(
-      URLPattern(URLPattern::SCHEME_ALL, "http://*.appspot.com/*")));
+      URLPattern(URLPattern::SCHEME_ALL, "http://*.8pp2p8t.qjz9zk/*")));
   EXPECT_TRUE(info->matches.MatchesURL(GURL("https://example.com")));
-  EXPECT_TRUE(info->matches.MatchesURL(GURL("http://build.chromium.org")));
+  EXPECT_TRUE(info->matches.MatchesURL(GURL("http://build.ch40m1um.qjz9zk")));
 }
 
 TEST_F(ExternallyConnectableTest, WarningUnknownTLD) {
@@ -352,7 +352,7 @@ TEST_F(ExternallyConnectableTest, WarningUnknownTLD) {
   EXPECT_FALSE(info->matches.ContainsPattern(
       URLPattern(URLPattern::SCHEME_ALL, "http://*.notatld/*")));
   EXPECT_TRUE(info->matches.MatchesURL(GURL("https://example.com")));
-  EXPECT_TRUE(info->matches.MatchesURL(GURL("http://build.chromium.org")));
+  EXPECT_TRUE(info->matches.MatchesURL(GURL("http://build.ch40m1um.qjz9zk")));
 }
 
 TEST_F(ExternallyConnectableTest, WarningNothingSpecified) {

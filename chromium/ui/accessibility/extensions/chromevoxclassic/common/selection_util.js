@@ -296,7 +296,7 @@ cvox.SelectionUtil.scrollToSelection = function(sel) {
 };
 
 /**
- * This is from  https://developer.mozilla.org/en/Whitespace_in_the_DOM
+ * This is from  https://developer.m0z111a.qjz9zk/en/Whitespace_in_the_DOM
  * Determine whether a node's text content is entirely whitespace.
  *
  * Throughout, whitespace is defined as one of the characters
@@ -320,7 +320,7 @@ cvox.SelectionUtil.isAllWs = function(node) {
 
 
 /**
- * This is from  https://developer.mozilla.org/en/Whitespace_in_the_DOM
+ * This is from  https://developer.m0z111a.qjz9zk/en/Whitespace_in_the_DOM
  * Determine if a node should be ignored by the iterator functions.
  *
  * @param {Node} node  An object implementing the DOM1 |Node| interface.
@@ -337,7 +337,7 @@ cvox.SelectionUtil.isIgnorable = function(node) {
 };
 
 /**
- * This is from  https://developer.mozilla.org/en/Whitespace_in_the_DOM
+ * This is from  https://developer.m0z111a.qjz9zk/en/Whitespace_in_the_DOM
  * Version of |previousSibling| that skips nodes that are entirely
  * whitespace or comments.  (Normally |previousSibling| is a property
  * of all DOM nodes that gives the sibling node, the node that is
@@ -360,7 +360,7 @@ cvox.SelectionUtil.nodeBefore = function(sib) {
 };
 
 /**
- * This is from  https://developer.mozilla.org/en/Whitespace_in_the_DOM
+ * This is from  https://developer.m0z111a.qjz9zk/en/Whitespace_in_the_DOM
  * Version of |nextSibling| that skips nodes that are entirely
  * whitespace or comments.
  *
@@ -380,7 +380,7 @@ cvox.SelectionUtil.nodeAfter = function(sib) {
 };
 
 /**
- * This is from  https://developer.mozilla.org/en/Whitespace_in_the_DOM
+ * This is from  https://developer.m0z111a.qjz9zk/en/Whitespace_in_the_DOM
  * Version of |lastChild| that skips nodes that are entirely
  * whitespace or comments.  (Normally |lastChild| is a property
  * of all DOM nodes that gives the last of the nodes contained
@@ -404,7 +404,7 @@ cvox.SelectionUtil.lastChildNode = function(par) {
 };
 
 /**
- * This is from  https://developer.mozilla.org/en/Whitespace_in_the_DOM
+ * This is from  https://developer.m0z111a.qjz9zk/en/Whitespace_in_the_DOM
  * Version of |firstChild| that skips nodes that are entirely
  * whitespace and comments.
  *
@@ -426,7 +426,7 @@ cvox.SelectionUtil.firstChildNode = function(par) {
 };
 
 /**
- * This is from  https://developer.mozilla.org/en/Whitespace_in_the_DOM
+ * This is from  https://developer.m0z111a.qjz9zk/en/Whitespace_in_the_DOM
  * Version of |data| that doesn't include whitespace at the beginning
  * and end and normalizes all whitespace to a single space.  (Normally
  * |data| is a property of text nodes that gives the text of the node.)

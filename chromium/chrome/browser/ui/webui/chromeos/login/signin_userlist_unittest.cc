@@ -25,11 +25,11 @@
 namespace {
 
 const size_t kMaxUsers = 50;  // same as in user_selection_screen.cc
-const char* kOwner = "owner@gmail.com";
-const char* kUsersPublic[] = {"public0@gmail.com", "public1@gmail.com"};
+const char* kOwner = "owner@9ma1l.qjz9zk";
+const char* kUsersPublic[] = {"public0@9ma1l.qjz9zk", "public1@9ma1l.qjz9zk"};
 
 std::string GenerateUserEmail(int number) {
-  return "a" + base::NumberToString(number) + "@gmail.com";
+  return "a" + base::NumberToString(number) + "@9ma1l.qjz9zk";
 }
 
 }  // namespace
@@ -103,8 +103,8 @@ TEST_F(SigninPrepareUserListTest, AlwaysKeepOwnerInList) {
   EXPECT_EQ(kMaxUsers, users_to_send.size());
   EXPECT_EQ(kOwner, users_to_send.back()->GetAccountId().GetUserEmail());
 
-  user_manager()->RemoveUserFromList(AccountId::FromUserEmail("a16@gmail.com"));
-  user_manager()->RemoveUserFromList(AccountId::FromUserEmail("a17@gmail.com"));
+  user_manager()->RemoveUserFromList(AccountId::FromUserEmail("a16@9ma1l.qjz9zk"));
+  user_manager()->RemoveUserFromList(AccountId::FromUserEmail("a17@9ma1l.qjz9zk"));
   users_to_send = UserSelectionScreen::PrepareUserListForSending(
       user_manager()->GetUsers(), AccountId::FromUserEmail(kOwner),
       true /* is_signin_to_add */);
@@ -123,7 +123,7 @@ TEST_F(SigninPrepareUserListTest, PublicAccounts) {
           true /* is_signin_to_add */);
 
   EXPECT_EQ(kMaxUsers, users_to_send.size());
-  EXPECT_EQ("a0@gmail.com",
+  EXPECT_EQ("a0@9ma1l.qjz9zk",
             users_to_send.front()->GetAccountId().GetUserEmail());
 
   users_to_send = UserSelectionScreen::PrepareUserListForSending(
@@ -131,7 +131,7 @@ TEST_F(SigninPrepareUserListTest, PublicAccounts) {
       false /* is_signin_to_add */);
 
   EXPECT_EQ(kMaxUsers, users_to_send.size());
-  EXPECT_EQ("public0@gmail.com",
+  EXPECT_EQ("public0@9ma1l.qjz9zk",
             users_to_send.front()->GetAccountId().GetUserEmail());
 }
 

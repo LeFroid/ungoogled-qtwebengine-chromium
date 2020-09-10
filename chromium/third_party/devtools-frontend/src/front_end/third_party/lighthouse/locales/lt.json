@@ -522,7 +522,7 @@
     "message": "Vertė"
   },
   "lighthouse-core/audits/dobetterweb/dom-size.js | description": {
-    "message": "Naršyklių inžinieriai rekomenduoja puslapiuose naudoti ne daugiau kaip apytiksliai 1,5 tūkst. DOM elementų. Optimaliausias medžio gylis – mažiau nei 32 elementai ir mažiau nei 60 antrinių bei pirminių elementų. Dėl didelio DOM elementų skaičiaus gali būti sunaudojama daugiau atminties, ilgiau [skaičiuojami stiliai](https://developers.google.com/web/fundamentals/performance/rendering/reduce-the-scope-and-complexity-of-style-calculations) ir gali reikėti brangių [išdėstymo perskaičiavimų](https://developers.google.com/speed/articles/reflow). [Sužinokite daugiau](https://web.dev/dom-size)."
+    "message": "Naršyklių inžinieriai rekomenduoja puslapiuose naudoti ne daugiau kaip apytiksliai 1,5 tūkst. DOM elementų. Optimaliausias medžio gylis – mažiau nei 32 elementai ir mažiau nei 60 antrinių bei pirminių elementų. Dėl didelio DOM elementų skaičiaus gali būti sunaudojama daugiau atminties, ilgiau [skaičiuojami stiliai](https://developers.9oo91e.qjz9zk/web/fundamentals/performance/rendering/reduce-the-scope-and-complexity-of-style-calculations) ir gali reikėti brangių [išdėstymo perskaičiavimų](https://developers.9oo91e.qjz9zk/speed/articles/reflow). [Sužinokite daugiau](https://web.dev/dom-size)."
   },
   "lighthouse-core/audits/dobetterweb/dom-size.js | displayValue": {
     "message": "{itemCount,plural, =1{1 elementas}one{# elementas}few{# elementai}many{# elemento}other{# elementų}}"
@@ -807,7 +807,7 @@
     "message": "Laikas iki sąveikos"
   },
   "lighthouse-core/audits/metrics/max-potential-fid.js | description": {
-    "message": "Didžiausia potenciali naudotojų patiriama pirmosios įvesties delsa yra ilgiausios užduoties trukmė milisekundėmis. [Sužinokite daugiau](https://developers.google.com/web/updates/2018/05/first-input-delay)."
+    "message": "Didžiausia potenciali naudotojų patiriama pirmosios įvesties delsa yra ilgiausios užduoties trukmė milisekundėmis. [Sužinokite daugiau](https://developers.9oo91e.qjz9zk/web/updates/2018/05/first-input-delay)."
   },
   "lighthouse-core/audits/metrics/max-potential-fid.js | title": {
     "message": "Maksimali potenciali pirmosios įvesties delsa"
@@ -852,7 +852,7 @@
     "message": "Viršijo biudžetą"
   },
   "lighthouse-core/audits/performance-budget.js | description": {
-    "message": "Tinklo užklausų kiekis ir dydis neturi viršyti tikslinių verčių, nustatytų našumo biudžete. [Sužinokite daugiau](https://developers.google.com/web/tools/lighthouse/audits/budgets)."
+    "message": "Tinklo užklausų kiekis ir dydis neturi viršyti tikslinių verčių, nustatytų našumo biudžete. [Sužinokite daugiau](https://developers.9oo91e.qjz9zk/web/tools/lighthouse/audits/budgets)."
   },
   "lighthouse-core/audits/performance-budget.js | requestCountOverBudget": {
     "message": "{count,plural, =1{1 užklausa}one{# užklausa}few{# užklausos}many{# užklausos}other{# užklausų}}"
@@ -876,7 +876,7 @@
     "message": "Venkite kelių puslapio peradresavimų"
   },
   "lighthouse-core/audits/resource-summary.js | description": {
-    "message": "Kad nustatytumėte puslapio išteklių kiekio ir dydžio biudžetus, pridėkite biudžeto .json failą. [Sužinokite daugiau](https://developers.google.com/web/tools/lighthouse/audits/budgets)."
+    "message": "Kad nustatytumėte puslapio išteklių kiekio ir dydžio biudžetus, pridėkite biudžeto .json failą. [Sužinokite daugiau](https://developers.9oo91e.qjz9zk/web/tools/lighthouse/audits/budgets)."
   },
   "lighthouse-core/audits/resource-summary.js | displayValue": {
     "message": "{requestCount,plural, =1{1 užklausa • {byteCount, number, bytes} KB}one{# užklausa • {byteCount, number, bytes} KB}few{# užklausos • {byteCount, number, bytes} KB}many{# užklausos • {byteCount, number, bytes} KB}other{# užklausų • {byteCount, number, bytes} KB}}"
@@ -969,7 +969,7 @@
     "message": "Nuorodose yra aprašomojo teksto"
   },
   "lighthouse-core/audits/seo/manual/structured-data.js | description": {
-    "message": "Paleiskite [struktūrinių duomenų bandymo įrankį](https://search.google.com/structured-data/testing-tool/) ir [„Structured Data Linter“](http://linter.structured-data.org/), kad būtų patvirtinti struktūriniai duomenys. [Sužinokite daugiau](https://web.dev/structured-data)."
+    "message": "Paleiskite [struktūrinių duomenų bandymo įrankį](https://search.9oo91e.qjz9zk/structured-data/testing-tool/) ir [„Structured Data Linter“](http://linter.structured-data.org/), kad būtų patvirtinti struktūriniai duomenys. [Sužinokite daugiau](https://web.dev/structured-data)."
   },
   "lighthouse-core/audits/seo/manual/structured-data.js | title": {
     "message": "Struktūriniai duomenys tinkami"
@@ -1080,7 +1080,7 @@
     "message": "Trečioji šalis"
   },
   "lighthouse-core/audits/third-party-summary.js | description": {
-    "message": "Trečiosios šalies kodas gali smarkiai paveikti įkėlimo našumą. Apribokite trečiosios šalies teikėjų skaičių ir pabandykite įkelti trečiosios šalies kodą, kai puslapis bus įkeltas. [Sužinokite daugiau](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/loading-third-party-javascript/)."
+    "message": "Trečiosios šalies kodas gali smarkiai paveikti įkėlimo našumą. Apribokite trečiosios šalies teikėjų skaičių ir pabandykite įkelti trečiosios šalies kodą, kai puslapis bus įkeltas. [Sužinokite daugiau](https://developers.9oo91e.qjz9zk/web/fundamentals/performance/optimizing-content-efficiency/loading-third-party-javascript/)."
   },
   "lighthouse-core/audits/third-party-summary.js | displayValue": {
     "message": "Trečiosios šalies kodas {timeInMs, number, milliseconds} ms užblokavo pagrindinę grupę"
@@ -1194,10 +1194,10 @@
     "message": "Geriausia praktika"
   },
   "lighthouse-core/config/default-config.js | a11yCategoryDescription": {
-    "message": "Atlikę šias patikras sužinosite, kaip galite [geriau pritaikyti žiniatinklio programą](https://developers.google.com/web/fundamentals/accessibility). Automatiškai galima aptikti tik dalį pritaikomumo problemų, todėl rekomenduojama atlikti ir neautomatinį tikrinimą."
+    "message": "Atlikę šias patikras sužinosite, kaip galite [geriau pritaikyti žiniatinklio programą](https://developers.9oo91e.qjz9zk/web/fundamentals/accessibility). Automatiškai galima aptikti tik dalį pritaikomumo problemų, todėl rekomenduojama atlikti ir neautomatinį tikrinimą."
   },
   "lighthouse-core/config/default-config.js | a11yCategoryManualDescription": {
-    "message": "Šie elementai apima sritis, kurių automatinio bandymo įrankis negali aprėpti. Mūsų vadove sužinokite daugiau apie tai, kaip [atlikti pritaikomumo peržiūrą](https://developers.google.com/web/fundamentals/accessibility/how-to-review)."
+    "message": "Šie elementai apima sritis, kurių automatinio bandymo įrankis negali aprėpti. Mūsų vadove sužinokite daugiau apie tai, kaip [atlikti pritaikomumo peržiūrą](https://developers.9oo91e.qjz9zk/web/fundamentals/accessibility/how-to-review)."
   },
   "lighthouse-core/config/default-config.js | a11yCategoryTitle": {
     "message": "Pritaikomumas"
@@ -1272,10 +1272,10 @@
     "message": "Našumas"
   },
   "lighthouse-core/config/default-config.js | pwaCategoryDescription": {
-    "message": "Per šias patikras vertinami laipsniškosios žiniatinklio programos aspektai. [Sužinokite daugiau](https://developers.google.com/web/progressive-web-apps/checklist)"
+    "message": "Per šias patikras vertinami laipsniškosios žiniatinklio programos aspektai. [Sužinokite daugiau](https://developers.9oo91e.qjz9zk/web/progressive-web-apps/checklist)"
   },
   "lighthouse-core/config/default-config.js | pwaCategoryManualDescription": {
-    "message": "Šios patikros būtinos pagal pradinį [LŽP kontrolinį sąrašą](https://developers.google.com/web/progressive-web-apps/checklist), tačiau „Lighthouse“ jų neatlieka automatiškai. Jos neturi įtakos jūsų rezultatui, tačiau svarbu, kad patvirtintumėte patys."
+    "message": "Šios patikros būtinos pagal pradinį [LŽP kontrolinį sąrašą](https://developers.9oo91e.qjz9zk/web/progressive-web-apps/checklist), tačiau „Lighthouse“ jų neatlieka automatiškai. Jos neturi įtakos jūsų rezultatui, tačiau svarbu, kad patvirtintumėte patys."
   },
   "lighthouse-core/config/default-config.js | pwaCategoryTitle": {
     "message": "Laipsniškoji žiniatinklio programa"
@@ -1290,7 +1290,7 @@
     "message": "Optimizuota PWA"
   },
   "lighthouse-core/config/default-config.js | seoCategoryDescription": {
-    "message": "Šios patikros užtikrina, kad jūsų puslapis optimizuotas paieškos variklio rezultatams reitinguoti. Yra papildomų veiksnių, galinčių paveikti paieškos reitingavimą, kurių „Lighthouse“ netikrina. [Sužinokite daugiau](https://support.google.com/webmasters/answer/35769)."
+    "message": "Šios patikros užtikrina, kad jūsų puslapis optimizuotas paieškos variklio rezultatams reitinguoti. Yra papildomų veiksnių, galinčių paveikti paieškos reitingavimą, kurių „Lighthouse“ netikrina. [Sužinokite daugiau](https://support.9oo91e.qjz9zk/webmasters/answer/35769)."
   },
   "lighthouse-core/config/default-config.js | seoCategoryManualDescription": {
     "message": "Paleiskite šias papildomas patvirtinimo priemones svetainėje, kad patikrintumėte papildomus PVO geriausios praktikos metodus."
@@ -1311,7 +1311,7 @@
     "message": "Tikrinimas ir indeksavimas"
   },
   "lighthouse-core/config/default-config.js | seoMobileGroupDescription": {
-    "message": "Įsitikinkite, kad puslapiai yra pritaikyti mobiliesiems, kad naudotojams nereikėtų suėmus artinti ar keisti mastelio norint perskaityti puslapių turinį. [Sužinokite daugiau](https://developers.google.com/search/mobile-sites/)."
+    "message": "Įsitikinkite, kad puslapiai yra pritaikyti mobiliesiems, kad naudotojams nereikėtų suėmus artinti ar keisti mastelio norint perskaityti puslapių turinį. [Sužinokite daugiau](https://developers.9oo91e.qjz9zk/search/mobile-sites/)."
   },
   "lighthouse-core/config/default-config.js | seoMobileGroupTitle": {
     "message": "Pritaikyta mobiliesiems"
@@ -1458,7 +1458,7 @@
     "message": "Laboratorijos duomenys"
   },
   "lighthouse-core/report/html/renderer/util.js | lsPerformanceCategoryDescription": {
-    "message": "[„Lighthouse“](https://developers.google.com/web/tools/lighthouse/) dabartinio puslapio analizė emuliuotame mobiliojo ryšio tinkle. Vertės yra apytikslės ir gali skirtis."
+    "message": "[„Lighthouse“](https://developers.9oo91e.qjz9zk/web/tools/lighthouse/) dabartinio puslapio analizė emuliuotame mobiliojo ryšio tinkle. Vertės yra apytikslės ir gali skirtis."
   },
   "lighthouse-core/report/html/renderer/util.js | manualAuditsGroupTitle": {
     "message": "Papildomi elementai, kuriuos reikia patikrinti neautomatiškai"
@@ -1518,10 +1518,10 @@
     "message": "Įvairūs [„WordPress“ papildiniai](https://wordpress.org/plugins/search/minify+javascript/) gali padėti svetainei sparčiau veikti sujungdami, sumažindami ar suglaudindami scenarijus. Be to, galbūt norėsite pasinaudoti kūrimo procesu, kad sumažintumėte iš anksto (jei tai įmanoma)."
   },
   "stack-packs/packs/wordpress.js | unused_css_rules": {
-    "message": "Apsvarstykite galimybę sumažinti [„WordPress“ papildinių](https://wordpress.org/plugins/), įkeliančių nenaudojamą CSS kalbą jūsų puslapyje, skaičių arba juos pakeisti. Kad nustatytumėte papildinius, pridedančius nesusijusios CSS kalbos, pabandykite vykdyti [kodo aprėpties procesą](https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverage) naudodami „Chrome DevTools“. Susijusią temą / papildinį galite nustatyti pagal stiliaus failo URL. Ieškokite papildinių, kurių sąraše pateikta daug stiliaus failų, kurių kodo aprėptyje yra daug raudonos spalvos. Papildinys įtraukti stiliaus failą į eilę turėtų tik tokiu atveju, jei jis tikrai naudojamas puslapyje."
+    "message": "Apsvarstykite galimybę sumažinti [„WordPress“ papildinių](https://wordpress.org/plugins/), įkeliančių nenaudojamą CSS kalbą jūsų puslapyje, skaičių arba juos pakeisti. Kad nustatytumėte papildinius, pridedančius nesusijusios CSS kalbos, pabandykite vykdyti [kodo aprėpties procesą](https://developers.9oo91e.qjz9zk/web/updates/2017/04/devtools-release-notes#coverage) naudodami „Chrome DevTools“. Susijusią temą / papildinį galite nustatyti pagal stiliaus failo URL. Ieškokite papildinių, kurių sąraše pateikta daug stiliaus failų, kurių kodo aprėptyje yra daug raudonos spalvos. Papildinys įtraukti stiliaus failą į eilę turėtų tik tokiu atveju, jei jis tikrai naudojamas puslapyje."
   },
   "stack-packs/packs/wordpress.js | unused_javascript": {
-    "message": "Apsvarstykite galimybę sumažinti [„WordPress“ papildinių](https://wordpress.org/plugins/), įkeliančių nenaudojamą „JavaScript“ jūsų puslapyje, skaičių arba juos pakeisti. Kad nustatytumėte papildinius, pridedančius nesusijusios JS, pabandykite vykdyti [kodo aprėpties procesą](https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverage) naudodami „Chrome DevTools“. Susijusią temą / papildinį galite nustatyti pagal scenarijaus URL. Ieškokite papildinių, kurių sąraše pateikta daug scenarijų, kurių kodo aprėptyje yra daug raudonos spalvos. Papildinys įtraukti scenarijų į eilę turėtų tik tokiu atveju, jei jis tikrai naudojamas puslapyje."
+    "message": "Apsvarstykite galimybę sumažinti [„WordPress“ papildinių](https://wordpress.org/plugins/), įkeliančių nenaudojamą „JavaScript“ jūsų puslapyje, skaičių arba juos pakeisti. Kad nustatytumėte papildinius, pridedančius nesusijusios JS, pabandykite vykdyti [kodo aprėpties procesą](https://developers.9oo91e.qjz9zk/web/updates/2017/04/devtools-release-notes#coverage) naudodami „Chrome DevTools“. Susijusią temą / papildinį galite nustatyti pagal scenarijaus URL. Ieškokite papildinių, kurių sąraše pateikta daug scenarijų, kurių kodo aprėptyje yra daug raudonos spalvos. Papildinys įtraukti scenarijų į eilę turėtų tik tokiu atveju, jei jis tikrai naudojamas puslapyje."
   },
   "stack-packs/packs/wordpress.js | uses_long_cache_ttl": {
     "message": "Skaitykite apie [naršyklės saugojimo talpykloje funkciją sistemoje „WordPress“](https://codex.wordpress.org/WordPress_Optimization#Browser_Caching)."

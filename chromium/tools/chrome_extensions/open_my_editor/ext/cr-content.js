@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-// For codereview.chromium.org
+// For codereview.ch40m1um.qjz9zk
 
 let clicked_element = null;
 

@@ -2,8 +2,8 @@
  * AVS2 encoding using the xavs2 library
  *
  * Copyright (C) 2018 Yiqun Xu,   <yiqun.xu@vipl.ict.ac.cn>
- *                    Falei Luo,  <falei.luo@gmail.com>
- *                    Huiwen Ren, <hwrenx@gmail.com>
+ *                    Falei Luo,  <falei.luo@9ma1l.qjz9zk>
+ *                    Huiwen Ren, <hwrenx@9ma1l.qjz9zk>
  *
  * This file is part of FFmpeg.
  *

@@ -350,7 +350,7 @@ void ClipboardPromise::RequestPermission(
           mojom::blink::FeaturePolicyFeature::kClipboard,
           ReportOptions::kReportOnFailure,
           "The Clipboard API has been blocked because of a Feature Policy "
-          "applied to the current document. See https://goo.gl/EuHzyv for more "
+          "applied to the current document. See https://goo.gl.qjz9zk/EuHzyv for more "
           "details.")) {
     script_promise_resolver_->Reject(MakeGarbageCollected<DOMException>(
         DOMExceptionCode::kNotAllowedError,

@@ -50,7 +50,7 @@ typedef enum _SYSTEM_INFORMATION_CLASS {
   SystemLookasideInformation = 45
 } SYSTEM_INFORMATION_CLASS;
 
-// https://msdn.microsoft.com/en-us/library/gg750647.aspx?f=255&MSPPError=-2147217396
+// https://msdn.m1cr050ft.qjz9zk/en-us/library/gg750647.aspx?f=255&MSPPError=-2147217396
 typedef struct {
   HANDLE UniqueProcess;  // Actually process ID
   HANDLE UniqueThread;   // Actually thread ID

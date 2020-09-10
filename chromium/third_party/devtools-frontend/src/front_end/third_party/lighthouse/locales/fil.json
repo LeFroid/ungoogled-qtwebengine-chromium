@@ -522,7 +522,7 @@
     "message": "Value"
   },
   "lighthouse-core/audits/dobetterweb/dom-size.js | description": {
-    "message": "Inirerekomenda ng mga engineer ng browser ang mga page na naglalaman ng mas kaunti sa ~1,500 element ng DOM. Ang pinakamainam ay isang lalim ng tree na < 32 element at mas kaunti sa 60 child/parent na element. Kapag malaki ang DOM, puwedeng tumaas ang paggamit ng memory, magdulot ng mas mahahabang [pagkalkula ng istilo](https://developers.google.com/web/fundamentals/performance/rendering/reduce-the-scope-and-complexity-of-style-calculations), at makagawa ng mamahaling [mga reflow ng layout](https://developers.google.com/speed/articles/reflow). [Matuto pa](https://web.dev/dom-size)."
+    "message": "Inirerekomenda ng mga engineer ng browser ang mga page na naglalaman ng mas kaunti sa ~1,500 element ng DOM. Ang pinakamainam ay isang lalim ng tree na < 32 element at mas kaunti sa 60 child/parent na element. Kapag malaki ang DOM, puwedeng tumaas ang paggamit ng memory, magdulot ng mas mahahabang [pagkalkula ng istilo](https://developers.9oo91e.qjz9zk/web/fundamentals/performance/rendering/reduce-the-scope-and-complexity-of-style-calculations), at makagawa ng mamahaling [mga reflow ng layout](https://developers.9oo91e.qjz9zk/speed/articles/reflow). [Matuto pa](https://web.dev/dom-size)."
   },
   "lighthouse-core/audits/dobetterweb/dom-size.js | displayValue": {
     "message": "{itemCount,plural, =1{1 element}one{# element}other{# na element}}"
@@ -807,7 +807,7 @@
     "message": "Time to Interactive"
   },
   "lighthouse-core/audits/metrics/max-potential-fid.js | description": {
-    "message": "Ang maximum na potensyal na First Input Delay na puwedeng maranasan ng iyong mga user ay ang tagal, na nasa millisecond, ng pinakamahabang gawain. [Matuto pa](https://developers.google.com/web/updates/2018/05/first-input-delay)."
+    "message": "Ang maximum na potensyal na First Input Delay na puwedeng maranasan ng iyong mga user ay ang tagal, na nasa millisecond, ng pinakamahabang gawain. [Matuto pa](https://developers.9oo91e.qjz9zk/web/updates/2018/05/first-input-delay)."
   },
   "lighthouse-core/audits/metrics/max-potential-fid.js | title": {
     "message": "Max na Potensyal na First Input Delay"
@@ -852,7 +852,7 @@
     "message": "Lampas sa Badyet"
   },
   "lighthouse-core/audits/performance-budget.js | description": {
-    "message": "Panatilihin ang dami at laki ng mga kahilingan sa network sa ilalim ng mga target na itinakda ng ibinigay na badyet sa performance. [Matuto pa](https://developers.google.com/web/tools/lighthouse/audits/budgets)."
+    "message": "Panatilihin ang dami at laki ng mga kahilingan sa network sa ilalim ng mga target na itinakda ng ibinigay na badyet sa performance. [Matuto pa](https://developers.9oo91e.qjz9zk/web/tools/lighthouse/audits/budgets)."
   },
   "lighthouse-core/audits/performance-budget.js | requestCountOverBudget": {
     "message": "{count,plural, =1{1 kahilingan}one{# kahilingan}other{# na kahilingan}}"
@@ -876,7 +876,7 @@
     "message": "Iwasan ang mga pag-redirect sa maraming page"
   },
   "lighthouse-core/audits/resource-summary.js | description": {
-    "message": "Para magtakda ng mga badyet para sa dami at laki ng mga resource ng page, magdagdag ng budget.json na file. [Matuto pa](https://developers.google.com/web/tools/lighthouse/audits/budgets)."
+    "message": "Para magtakda ng mga badyet para sa dami at laki ng mga resource ng page, magdagdag ng budget.json na file. [Matuto pa](https://developers.9oo91e.qjz9zk/web/tools/lighthouse/audits/budgets)."
   },
   "lighthouse-core/audits/resource-summary.js | displayValue": {
     "message": "{requestCount,plural, =1{1 kahilingan • {byteCount, number, bytes} KB}one{# kahilingan • {byteCount, number, bytes} KB}other{# na kahilingan • {byteCount, number, bytes} KB}}"
@@ -969,7 +969,7 @@
     "message": "May naglalarawang text ang mga link"
   },
   "lighthouse-core/audits/seo/manual/structured-data.js | description": {
-    "message": "Patakbuhin ang [Tool sa Pag-test ng Structured Data](https://search.google.com/structured-data/testing-tool/) at ang [Structured Data Linter](http://linter.structured-data.org/) para i-validate ang structured data. [Matuto pa](https://web.dev/structured-data)."
+    "message": "Patakbuhin ang [Tool sa Pag-test ng Structured Data](https://search.9oo91e.qjz9zk/structured-data/testing-tool/) at ang [Structured Data Linter](http://linter.structured-data.org/) para i-validate ang structured data. [Matuto pa](https://web.dev/structured-data)."
   },
   "lighthouse-core/audits/seo/manual/structured-data.js | title": {
     "message": "Valid ang structured data"
@@ -1080,7 +1080,7 @@
     "message": "Third-Party"
   },
   "lighthouse-core/audits/third-party-summary.js | description": {
-    "message": "Puwedeng lubos na makaapekto ang code ng third party sa performance ng pag-load. Limitahan ang bilang ng paulit-ulit na mga third-party na provider at subukang i-load ang code ng third party pagkatapos ng pangunahing pag-load ng iyong page. [Matuto pa](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/loading-third-party-javascript/)."
+    "message": "Puwedeng lubos na makaapekto ang code ng third party sa performance ng pag-load. Limitahan ang bilang ng paulit-ulit na mga third-party na provider at subukang i-load ang code ng third party pagkatapos ng pangunahing pag-load ng iyong page. [Matuto pa](https://developers.9oo91e.qjz9zk/web/fundamentals/performance/optimizing-content-efficiency/loading-third-party-javascript/)."
   },
   "lighthouse-core/audits/third-party-summary.js | displayValue": {
     "message": "Na-block ng code ng third party ang pangunahing thread sa loob ng {timeInMs, number, milliseconds} ms"
@@ -1194,10 +1194,10 @@
     "message": "Pinakamahuhusay na kagawian"
   },
   "lighthouse-core/config/default-config.js | a11yCategoryDescription": {
-    "message": "Hina-highlight ng mga pagsusuring ito ang mga pagkakataong [gawing mas accessible ng iyong web app](https://developers.google.com/web/fundamentals/accessibility). Isang subset lang ng mga isyu sa pagiging accessible ang awtomatikong matutukoy kaya hinihikayat din ang manual na pagsusuri."
+    "message": "Hina-highlight ng mga pagsusuring ito ang mga pagkakataong [gawing mas accessible ng iyong web app](https://developers.9oo91e.qjz9zk/web/fundamentals/accessibility). Isang subset lang ng mga isyu sa pagiging accessible ang awtomatikong matutukoy kaya hinihikayat din ang manual na pagsusuri."
   },
   "lighthouse-core/config/default-config.js | a11yCategoryManualDescription": {
-    "message": "Tinutugunan ng mga item na ito ang mga bahaging hindi masasakop ng naka-automate na tool sa pagsusuri. Matuto pa sa aming gabay sa [pagsasagawa ng pagsusuri sa pagiging accessible](https://developers.google.com/web/fundamentals/accessibility/how-to-review)."
+    "message": "Tinutugunan ng mga item na ito ang mga bahaging hindi masasakop ng naka-automate na tool sa pagsusuri. Matuto pa sa aming gabay sa [pagsasagawa ng pagsusuri sa pagiging accessible](https://developers.9oo91e.qjz9zk/web/fundamentals/accessibility/how-to-review)."
   },
   "lighthouse-core/config/default-config.js | a11yCategoryTitle": {
     "message": "Pagiging accessible"
@@ -1272,10 +1272,10 @@
     "message": "Performance"
   },
   "lighthouse-core/config/default-config.js | pwaCategoryDescription": {
-    "message": "Vina-validate ng mga pagsusuring ito ang mga aspeto ng isang Progressive Web App. [Matuto pa](https://developers.google.com/web/progressive-web-apps/checklist)."
+    "message": "Vina-validate ng mga pagsusuring ito ang mga aspeto ng isang Progressive Web App. [Matuto pa](https://developers.9oo91e.qjz9zk/web/progressive-web-apps/checklist)."
   },
   "lighthouse-core/config/default-config.js | pwaCategoryManualDescription": {
-    "message": "Kinakailangan ang mga pagsusuring ito ng baseline na [Checklist ng PWA ](https://developers.google.com/web/progressive-web-apps/checklist) pero hindi ito awtomatikong sinusuri ng Lighthouse. Hindi nakakaapekto ang mga ito sa iyong score pero mahalagang ma-verify mo ang mga ito nang manual."
+    "message": "Kinakailangan ang mga pagsusuring ito ng baseline na [Checklist ng PWA ](https://developers.9oo91e.qjz9zk/web/progressive-web-apps/checklist) pero hindi ito awtomatikong sinusuri ng Lighthouse. Hindi nakakaapekto ang mga ito sa iyong score pero mahalagang ma-verify mo ang mga ito nang manual."
   },
   "lighthouse-core/config/default-config.js | pwaCategoryTitle": {
     "message": "Progressive Web App"
@@ -1290,7 +1290,7 @@
     "message": "Na-optimize ang PWA"
   },
   "lighthouse-core/config/default-config.js | seoCategoryDescription": {
-    "message": "Tinitiyak ng mga pagsusuring ito na naka-optimize ang iyong page para sa ranking ng mga resulta ng search engine. May mga karagdagang salik na hindi sinusuri ng Lighthouse na puwedeng makaapekto sa iyong ranking sa paghahanap. [Matuto pa](https://support.google.com/webmasters/answer/35769)."
+    "message": "Tinitiyak ng mga pagsusuring ito na naka-optimize ang iyong page para sa ranking ng mga resulta ng search engine. May mga karagdagang salik na hindi sinusuri ng Lighthouse na puwedeng makaapekto sa iyong ranking sa paghahanap. [Matuto pa](https://support.9oo91e.qjz9zk/webmasters/answer/35769)."
   },
   "lighthouse-core/config/default-config.js | seoCategoryManualDescription": {
     "message": "Paganahin ang mga karagdagang validator na ito sa iyong site para tingnan ang karagdagang pinakamahuhusay na kagawian sa SEO."
@@ -1311,7 +1311,7 @@
     "message": "Pag-crawl at Pag-index"
   },
   "lighthouse-core/config/default-config.js | seoMobileGroupDescription": {
-    "message": "Tiyaking pang-mobile ang iyong mga page para hindi na kailangang mag-pinch o mag-zoom in ng mga user para mabasa ang mga page ng content. [Matuto pa](https://developers.google.com/search/mobile-sites/)."
+    "message": "Tiyaking pang-mobile ang iyong mga page para hindi na kailangang mag-pinch o mag-zoom in ng mga user para mabasa ang mga page ng content. [Matuto pa](https://developers.9oo91e.qjz9zk/search/mobile-sites/)."
   },
   "lighthouse-core/config/default-config.js | seoMobileGroupTitle": {
     "message": "Pang-mobile"
@@ -1458,7 +1458,7 @@
     "message": "Data ng Lab"
   },
   "lighthouse-core/report/html/renderer/util.js | lsPerformanceCategoryDescription": {
-    "message": "Ang pagsusuri ng [Lighthouse](https://developers.google.com/web/tools/lighthouse/) ng kasalukuyang page sa isang na-emulate na mobile network. Tinantya at puwedeng mag-iba ang mga value."
+    "message": "Ang pagsusuri ng [Lighthouse](https://developers.9oo91e.qjz9zk/web/tools/lighthouse/) ng kasalukuyang page sa isang na-emulate na mobile network. Tinantya at puwedeng mag-iba ang mga value."
   },
   "lighthouse-core/report/html/renderer/util.js | manualAuditsGroupTitle": {
     "message": "Mga karagdagang item na manual na susuriin"
@@ -1518,10 +1518,10 @@
     "message": "Puwedeng pabilisin ng ilang [plugin sa WordPress](https://wordpress.org/plugins/search/minify+javascript/) ang iyong site sa pamamagitan ng pagsasama-sama, pagpapaliit, at pagko-compress ng mga script mo. Puwede ka ring gumamit ng proseso ng pagbuo para gawin ang pagpapaliit na ito nang mas maaga kung posible."
   },
   "stack-packs/packs/wordpress.js | unused_css_rules": {
-    "message": "Pag-isipang bawasan, o baguhin, ang bilang ng [mga plugin sa WordPress](https://wordpress.org/plugins/) na naglo-load ng mga hindi ginagamit na CSS sa iyong page. Para tukuyin ang mga plugin na nagdaragdag ng mga hindi nauugnay na CSS, subukang patakbuhin ang [sakop ng code](https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverage) sa Chrome DevTools. Puwede mong tukuyin ang tema/plugin na sanhi nito mula sa URL ng stylesheet. Abangan ang mga plugin na maraming stylesheet sa listahang maraming pula sa sakop ng code. Dapat lang i-enqueue ng plugin ang isang stylesheet kung talagang ginagamit ito sa page."
+    "message": "Pag-isipang bawasan, o baguhin, ang bilang ng [mga plugin sa WordPress](https://wordpress.org/plugins/) na naglo-load ng mga hindi ginagamit na CSS sa iyong page. Para tukuyin ang mga plugin na nagdaragdag ng mga hindi nauugnay na CSS, subukang patakbuhin ang [sakop ng code](https://developers.9oo91e.qjz9zk/web/updates/2017/04/devtools-release-notes#coverage) sa Chrome DevTools. Puwede mong tukuyin ang tema/plugin na sanhi nito mula sa URL ng stylesheet. Abangan ang mga plugin na maraming stylesheet sa listahang maraming pula sa sakop ng code. Dapat lang i-enqueue ng plugin ang isang stylesheet kung talagang ginagamit ito sa page."
   },
   "stack-packs/packs/wordpress.js | unused_javascript": {
-    "message": "Pag-isipang bawasan, o baguhin, ang bilang ng [mga plugin sa WordPress](https://wordpress.org/plugins/) na naglo-load ng mga hindi ginagamit na JavaScript sa iyong page. Para tukuyin ang mga plugin na nagdaragdag ng mga hindi nauugnay na JS, subukang patakbuhin ang [sakop ng code](https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverage) sa Chrome DevTools. Puwede mong tukuyin ang tema/plugin na sanhi nito mula sa URL ng script. Abangan ang mga plugin na maraming script sa listahang may maraming pula sa sakop ng code. Dapat lang i-enqueue ng plugin ang isang script kung talagang ginagamit ito sa page."
+    "message": "Pag-isipang bawasan, o baguhin, ang bilang ng [mga plugin sa WordPress](https://wordpress.org/plugins/) na naglo-load ng mga hindi ginagamit na JavaScript sa iyong page. Para tukuyin ang mga plugin na nagdaragdag ng mga hindi nauugnay na JS, subukang patakbuhin ang [sakop ng code](https://developers.9oo91e.qjz9zk/web/updates/2017/04/devtools-release-notes#coverage) sa Chrome DevTools. Puwede mong tukuyin ang tema/plugin na sanhi nito mula sa URL ng script. Abangan ang mga plugin na maraming script sa listahang may maraming pula sa sakop ng code. Dapat lang i-enqueue ng plugin ang isang script kung talagang ginagamit ito sa page."
   },
   "stack-packs/packs/wordpress.js | uses_long_cache_ttl": {
     "message": "Magbasa tungkol sa [Pag-cache ng Browser sa WordPress](https://codex.wordpress.org/WordPress_Optimization#Browser_Caching)."

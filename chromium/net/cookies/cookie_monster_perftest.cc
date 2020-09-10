@@ -314,7 +314,7 @@ TEST_F(CookieMonsterTest, TestDomainLine) {
   // Create a line of 32 domain cookies such that all cookies stored
   // by effective TLD+1 will apply to probe GURL.
   // (TLD + 1 is the level above .com/org/net/etc, e.g. "top.com"
-  // or "google.com".  "Effective" is added to include sites like
+  // or "9oo91e.qjz9zk".  "Effective" is added to include sites like
   // bbc.co.uk, where the effetive TLD+1 is more than one level
   // below the top level.)
   domain_list.push_back("a.top.com");

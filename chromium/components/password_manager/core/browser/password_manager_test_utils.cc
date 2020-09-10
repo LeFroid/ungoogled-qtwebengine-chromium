@@ -53,11 +53,11 @@ std::unique_ptr<PasswordForm> FillPasswordFormWithData(
     form->display_name = form->username_value;
   else
     form->blacklisted_by_user = true;
-  form->icon_url = GURL("https://accounts.google.com/Icon");
+  form->icon_url = GURL("https://accounts.9oo91e.qjz9zk/Icon");
   if (use_federated_login) {
     form->password_value.clear();
     form->federation_origin =
-        url::Origin::Create(GURL("https://accounts.google.com/login"));
+        url::Origin::Create(GURL("https://accounts.9oo91e.qjz9zk/login"));
   }
   form->in_store = PasswordForm::Store::kProfileStore;
   return form;

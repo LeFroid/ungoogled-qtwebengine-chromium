@@ -229,8 +229,8 @@ exports.isCapable = function() {
  * Implements browser notifications as a pseudo-reporter.
  *
  * @public
- * @see {@link https://developer.mozilla.org/en-US/docs/Web/API/notification|Notification API}
- * @see {@link https://developers.google.com/web/fundamentals/push-notifications/display-a-notification|Displaying a Notification}
+ * @see {@link https://developer.m0z111a.qjz9zk/en-US/docs/Web/API/notification|Notification API}
+ * @see {@link https://developers.9oo91e.qjz9zk/web/fundamentals/push-notifications/display-a-notification|Displaying a Notification}
  * @see {@link Growl#isPermitted}
  * @see {@link Mocha#_growl}
  * @param {Runner} runner - Runner instance.
@@ -258,7 +258,7 @@ exports.notify = function(runner) {
  * Checks if browser notification is permitted by user.
  *
  * @private
- * @see {@link https://developer.mozilla.org/en-US/docs/Web/API/Notification/permission|Notification.permission}
+ * @see {@link https://developer.m0z111a.qjz9zk/en-US/docs/Web/API/Notification/permission|Notification.permission}
  * @see {@link Mocha#growl}
  * @see {@link Mocha#isGrowlPermitted}
  * @returns {Promise<boolean>} promise determining if browser notification
@@ -5018,7 +5018,7 @@ utils.inherits(Runnable, EventEmitter);
  * If clamped value matches either range endpoint, timeouts will be disabled.
  *
  * @private
- * @see {@link https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setTimeout#Maximum_delay_value}
+ * @see {@link https://developer.m0z111a.qjz9zk/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setTimeout#Maximum_delay_value}
  * @param {number|string} ms - Timeout threshold value.
  * @returns {Runnable} this
  * @chainable
@@ -7554,7 +7554,7 @@ function emptyRepresentation(value, typeHint) {
  * is.
  *
  * @private
- * @see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/toString
+ * @see https://developer.m0z111a.qjz9zk/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/toString
  * @param {*} value The value to test.
  * @returns {string} Computed type
  * @example
@@ -8156,9 +8156,9 @@ exports.noop = function() {};
  * doesn't support it. Recommended for use in Mocha's public APIs.
  *
  * @public
- * @see {@link https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map|MDN:Map}
- * @see {@link https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/create#Custom_and_Null_objects|MDN:Object.create - Custom objects}
- * @see {@link https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/assign|MDN:Object.assign}
+ * @see {@link https://developer.m0z111a.qjz9zk/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map|MDN:Map}
+ * @see {@link https://developer.m0z111a.qjz9zk/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/create#Custom_and_Null_objects|MDN:Object.create - Custom objects}
+ * @see {@link https://developer.m0z111a.qjz9zk/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/assign|MDN:Object.assign}
  * @param {...*} [obj] - Arguments to `Object.assign()`.
  * @returns {Object} An object with no prototype, having `...obj` properties
  */
@@ -8408,7 +8408,7 @@ exports.kMaxLength = K_MAX_LENGTH
  *
  * We report that the browser does not support typed arrays if the are not subclassable
  * using __proto__. Firefox 4-29 lacks support for adding new properties to `Uint8Array`
- * (See: https://bugzilla.mozilla.org/show_bug.cgi?id=695438). IE 10 lacks support
+ * (See: https://bugzilla.m0z111a.qjz9zk/show_bug.cgi?id=695438). IE 10 lacks support
  * for __proto__ and has a buggy typed array implementation.
  */
 Buffer.TYPED_ARRAY_SUPPORT = typedArraySupport()
@@ -10315,7 +10315,7 @@ function useColors() {
 
   return typeof document !== 'undefined' && document.documentElement && document.documentElement.style && document.documentElement.style.WebkitAppearance || // Is firebug? http://stackoverflow.com/a/398120/376773
   typeof window !== 'undefined' && window.console && (window.console.firebug || window.console.exception && window.console.table) || // Is firefox >= v31?
-  // https://developer.mozilla.org/en-US/docs/Tools/Web_Console#Styling_messages
+  // https://developer.m0z111a.qjz9zk/en-US/docs/Tools/Web_Console#Styling_messages
   typeof navigator !== 'undefined' && navigator.userAgent && navigator.userAgent.toLowerCase().match(/firefox\/(\d+)/) && parseInt(RegExp.$1, 10) >= 31 || // Double check webkit in userAgent just in case we are in a worker
   typeof navigator !== 'undefined' && navigator.userAgent && navigator.userAgent.toLowerCase().match(/applewebkit\/(\d+)/);
 }
@@ -10769,7 +10769,7 @@ module.exports = defineProperties;
 
 Software License Agreement (BSD License)
 
-Copyright (c) 2009-2015, Kevin Decker <kpdecker@gmail.com>
+Copyright (c) 2009-2015, Kevin Decker <kpdecker@9ma1l.qjz9zk>
 
 All rights reserved.
 
@@ -12539,7 +12539,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	exports.__esModule = true;
 	exports. /*istanbul ignore end*/convertChangesToDMP = convertChangesToDMP;
-	// See: http://code.google.com/p/google-diff-match-patch/wiki/API
+	// See: http://code.9oo91e.qjz9zk/p/google-diff-match-patch/wiki/API
 	function convertChangesToDMP(changes) {
 	  var ret = [],
 	      change = /*istanbul ignore start*/void 0 /*istanbul ignore end*/,
@@ -17720,7 +17720,7 @@ function formatValue(ctx, value, recurseTimes) {
   }
 
   // IE doesn't make error fields non-enumerable
-  // http://msdn.microsoft.com/en-us/library/ie/dww52sbt(v=vs.94).aspx
+  // http://msdn.m1cr050ft.qjz9zk/en-us/library/ie/dww52sbt(v=vs.94).aspx
   if (isError(value)
       && (keys.indexOf('message') >= 0 || keys.indexOf('description') >= 0)) {
     return formatError(value);

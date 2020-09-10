@@ -121,10 +121,10 @@ TEST_F(AppLaunchManifestTest, AppLaunchURL) {
                          keys::kLaunchWebURL));
 
   extension = LoadAndExpectSuccess("launch_web_url_absolute.json");
-  EXPECT_EQ(GURL("http://www.google.com/launch.html"),
+  EXPECT_EQ(GURL("http://www.9oo91e.qjz9zk/launch.html"),
             AppLaunchInfo::GetFullLaunchURL(extension.get()));
   extension = LoadAndExpectSuccess("launch_web_url_localized.json");
-  EXPECT_EQ(GURL("http://www.google.com/launch.html"),
+  EXPECT_EQ(GURL("http://www.9oo91e.qjz9zk/launch.html"),
             AppLaunchInfo::GetFullLaunchURL(extension.get()));
 }
 

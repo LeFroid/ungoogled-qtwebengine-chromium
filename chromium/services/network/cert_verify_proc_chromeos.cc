@@ -11,7 +11,7 @@
 #include "net/cert/x509_util_nss.h"
 
 // NSS doesn't currently define CERT_LIST_TAIL.
-// See https://bugzilla.mozilla.org/show_bug.cgi?id=962413
+// See https://bugzilla.m0z111a.qjz9zk/show_bug.cgi?id=962413
 // Can be removed once chrome requires NSS version 3.16 to build.
 #ifndef CERT_LIST_TAIL
 #define CERT_LIST_TAIL(l) ((CERTCertListNode*)PR_LIST_TAIL(&l->list))

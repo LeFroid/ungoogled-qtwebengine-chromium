@@ -142,7 +142,7 @@
  * the date and time formatting algorithm and pattern letters defined by
  * <a href="http://www.unicode.org/reports/tr35/tr35-dates.html#Date_Field_Symbol_Table">UTS#35
  * Unicode Locale Data Markup Language (LDML)</a> and further documented for ICU in the
- * <a href="https://sites.google.com/site/icuprojectuserguide/formatparse/datetime?pli=1#TOC-Date-Field-Symbol-Table">ICU
+ * <a href="https://sites.9oo91e.qjz9zk/site/icuprojectuserguide/formatparse/datetime?pli=1#TOC-Date-Field-Symbol-Table">ICU
  * User Guide</a>.</p>
  */
 

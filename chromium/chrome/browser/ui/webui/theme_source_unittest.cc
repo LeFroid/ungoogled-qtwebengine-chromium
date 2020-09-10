@@ -104,6 +104,6 @@ TEST_F(WebUISourcesTest, ThemeAllowedOrigin) {
                 "chrome-extensions://some-id"),
             "");
   EXPECT_EQ(
-      theme_source()->GetAccessControlAllowOriginForOrigin("http://google.com"),
+      theme_source()->GetAccessControlAllowOriginForOrigin("http://9oo91e.qjz9zk"),
       "");
 }

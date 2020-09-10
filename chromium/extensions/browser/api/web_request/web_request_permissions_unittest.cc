@@ -44,63 +44,63 @@ TEST_F(ExtensionWebRequestPermissionsTest, TestHideRequestForURL) {
     const char* url;
     int expected_hide_request_mask;
   } cases[] = {
-      {"https://www.google.com", HIDE_BROWSER_SUB_RESOURCE_REQUEST},
+      {"https://www.9oo91e.qjz9zk", HIDE_BROWSER_SUB_RESOURCE_REQUEST},
       {"http://www.example.com", HIDE_BROWSER_SUB_RESOURCE_REQUEST},
       {"https://www.example.com", HIDE_BROWSER_SUB_RESOURCE_REQUEST},
-      {"https://clients.google.com",
+      {"https://clients.9oo91e.qjz9zk",
        HIDE_BROWSER_SUB_RESOURCE_REQUEST | HIDE_SUB_FRAME_NAVIGATION},
-      {"http://clients4.google.com",
+      {"http://clients4.9oo91e.qjz9zk",
        HIDE_BROWSER_SUB_RESOURCE_REQUEST | HIDE_SUB_FRAME_NAVIGATION},
-      {"https://clients4.google.com",
+      {"https://clients4.9oo91e.qjz9zk",
        HIDE_BROWSER_SUB_RESOURCE_REQUEST | HIDE_SUB_FRAME_NAVIGATION},
-      {"https://clients9999.google.com",
+      {"https://clients9999.9oo91e.qjz9zk",
        HIDE_BROWSER_SUB_RESOURCE_REQUEST | HIDE_SUB_FRAME_NAVIGATION},
-      {"https://clients9999..google.com", HIDE_BROWSER_SUB_RESOURCE_REQUEST},
-      {"https://clients9999.example.google.com",
+      {"https://clients9999..9oo91e.qjz9zk", HIDE_BROWSER_SUB_RESOURCE_REQUEST},
+      {"https://clients9999.example.9oo91e.qjz9zk",
        HIDE_BROWSER_SUB_RESOURCE_REQUEST},
-      {"https://clients.google.com.",
+      {"https://clients.9oo91e.qjz9zk.",
        HIDE_BROWSER_SUB_RESOURCE_REQUEST | HIDE_SUB_FRAME_NAVIGATION},
-      {"https://.clients.google.com.",
+      {"https://.clients.9oo91e.qjz9zk.",
        HIDE_BROWSER_SUB_RESOURCE_REQUEST | HIDE_SUB_FRAME_NAVIGATION},
-      {"https://test.clients.google.com",
+      {"https://test.clients.9oo91e.qjz9zk",
        HIDE_SUB_FRAME_NAVIGATION | HIDE_BROWSER_SUB_RESOURCE_REQUEST},
       {"http://google.example.com", HIDE_BROWSER_SUB_RESOURCE_REQUEST},
       {"http://www.example.com", HIDE_BROWSER_SUB_RESOURCE_REQUEST},
       {"https://www.example.com", HIDE_BROWSER_SUB_RESOURCE_REQUEST},
-      {"https://sb-ssl.google.com", HIDE_ALL},
-      {"https://sb-ssl.random.google.com", HIDE_BROWSER_SUB_RESOURCE_REQUEST},
-      {"https://safebrowsing.googleapis.com", HIDE_ALL},
+      {"https://sb-ssl.9oo91e.qjz9zk", HIDE_ALL},
+      {"https://sb-ssl.random.9oo91e.qjz9zk", HIDE_BROWSER_SUB_RESOURCE_REQUEST},
+      {"https://safebrowsing.9oo91eapis.qjz9zk", HIDE_ALL},
       // Unsupported scheme.
-      {"blob:https://safebrowsing.googleapis.com/"
+      {"blob:https://safebrowsing.9oo91eapis.qjz9zk/"
        "fc3f440b-78ed-469f-8af8-7a1717ff39ae",
        HIDE_ALL},
-      {"filesystem:https://safebrowsing.googleapis.com/path", HIDE_ALL},
-      {"https://safebrowsing.googleapis.com.", HIDE_ALL},
-      {"https://safebrowsing.googleapis.com/v4", HIDE_ALL},
-      {"https://safebrowsing.googleapis.com:80/v4", HIDE_ALL},
-      {"https://safebrowsing.googleapis.com./v4", HIDE_ALL},
-      {"https://safebrowsing.googleapis.com/v5", HIDE_ALL},
-      {"https://safebrowsing.google.com/safebrowsing", HIDE_ALL},
-      {"https://safebrowsing.google.com/safebrowsing/anything", HIDE_ALL},
-      {"https://safebrowsing.google.com", HIDE_BROWSER_SUB_RESOURCE_REQUEST},
-      {"https://chrome.google.com", HIDE_BROWSER_SUB_RESOURCE_REQUEST},
-      {"http://www.google.com/", HIDE_BROWSER_SUB_RESOURCE_REQUEST},
-      {"https://chrome.google.com/webstore", HIDE_ALL},
-      {"https://chrome.google.com./webstore", HIDE_ALL},
-      {"https://chrome.google.com./webstore/", HIDE_ALL},
+      {"filesystem:https://safebrowsing.9oo91eapis.qjz9zk/path", HIDE_ALL},
+      {"https://safebrowsing.9oo91eapis.qjz9zk.", HIDE_ALL},
+      {"https://safebrowsing.9oo91eapis.qjz9zk/v4", HIDE_ALL},
+      {"https://safebrowsing.9oo91eapis.qjz9zk:80/v4", HIDE_ALL},
+      {"https://safebrowsing.9oo91eapis.qjz9zk./v4", HIDE_ALL},
+      {"https://safebrowsing.9oo91eapis.qjz9zk/v5", HIDE_ALL},
+      {"https://safebrowsing.9oo91e.qjz9zk/safebrowsing", HIDE_ALL},
+      {"https://safebrowsing.9oo91e.qjz9zk/safebrowsing/anything", HIDE_ALL},
+      {"https://safebrowsing.9oo91e.qjz9zk", HIDE_BROWSER_SUB_RESOURCE_REQUEST},
+      {"https://chrome.9oo91e.qjz9zk", HIDE_BROWSER_SUB_RESOURCE_REQUEST},
+      {"http://www.9oo91e.qjz9zk/", HIDE_BROWSER_SUB_RESOURCE_REQUEST},
+      {"https://chrome.9oo91e.qjz9zk/webstore", HIDE_ALL},
+      {"https://chrome.9oo91e.qjz9zk./webstore", HIDE_ALL},
+      {"https://chrome.9oo91e.qjz9zk./webstore/", HIDE_ALL},
       // Unsupported scheme.
-      {"blob:https://chrome.google.com/fc3f440b-78ed-469f-8af8-7a1717ff39ae",
+      {"blob:https://chrome.9oo91e.qjz9zk/fc3f440b-78ed-469f-8af8-7a1717ff39ae",
        HIDE_ALL},
       // Unsupported scheme.
       {"chrome://test/", HIDE_ALL},
       // Unsupported scheme.
       {"chrome-untrusted://test/", HIDE_ALL},
       {"notregisteredscheme://www.foobar.com", HIDE_ALL},
-      {"https://chrome.google.com:80/webstore", HIDE_ALL},
-      {"https://chrome.google.com/webstore?query", HIDE_ALL},
-      {"http://clients2.google.com/service/update2/crx", HIDE_ALL},
-      {"https://clients2.google.com/service/update2/crx", HIDE_ALL},
-      {"https://chrome.google.com/webstore/inlineinstall/detail/"
+      {"https://chrome.9oo91e.qjz9zk:80/webstore", HIDE_ALL},
+      {"https://chrome.9oo91e.qjz9zk/webstore?query", HIDE_ALL},
+      {"http://clients2.9oo91e.qjz9zk/service/update2/crx", HIDE_ALL},
+      {"https://clients2.9oo91e.qjz9zk/service/update2/crx", HIDE_ALL},
+      {"https://chrome.9oo91e.qjz9zk/webstore/inlineinstall/detail/"
        "kcnhkahnjcbndmmehfkdnkjomaanaooo",
        HIDE_ALL},
   };
@@ -193,7 +193,7 @@ TEST_F(ExtensionWebRequestPermissionsTest, TestHideRequestForURL) {
 
   // Check protection of requests originating from the frame showing the Chrome
   // WebStore. Normally this request is not protected:
-  GURL non_sensitive_url("http://www.google.com/test.js");
+  GURL non_sensitive_url("http://www.9oo91e.qjz9zk/test.js");
 
   {
     WebRequestInfo non_sensitive_request(create_request_params(
@@ -248,7 +248,7 @@ TEST_F(ExtensionWebRequestPermissionsTest,
   };
 
   const GURL example_com("https://example.com");
-  const GURL chromium_org("https://chromium.org");
+  const GURL chromium_org("https://ch40m1um.qjz9zk");
   const url::Origin example_com_origin(url::Origin::Create(example_com));
   const url::Origin chromium_org_origin(url::Origin::Create(chromium_org));
 
@@ -270,9 +270,9 @@ TEST_F(ExtensionWebRequestPermissionsTest,
     }
   }
 
-  // Grant access to chromium.org.
+  // Grant access to ch40m1um.qjz9zk.
   URLPatternSet chromium_org_patterns({URLPattern(
-      Extension::kValidHostPermissionSchemes, "https://chromium.org/*")});
+      Extension::kValidHostPermissionSchemes, "https://ch40m1um.qjz9zk/*")});
   extension->permissions_data()->SetPermissions(
       std::make_unique<PermissionSet>(
           APIPermissionSet(), ManifestPermissionSet(),
@@ -318,7 +318,7 @@ TEST_F(ExtensionWebRequestPermissionsTest,
        RequireAccessToURLAndInitiatorWithWithheldPermissions) {
   ExtensionsAPIClient api_client;
 
-  const char* kGoogleCom = "https://google.com/";
+  const char* kGoogleCom = "https://9oo91e.qjz9zk/";
   const char* kExampleCom = "https://example.com/";
   const char* kYahooCom = "https://yahoo.com";
 

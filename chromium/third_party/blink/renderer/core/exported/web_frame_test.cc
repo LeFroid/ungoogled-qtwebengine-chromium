@@ -13196,7 +13196,7 @@ TEST_F(WebFrameTest, FaviconURLUpdateEvent) {
   frame->GetDocument()->documentElement()->setInnerHTML(
       "<html>"
       "<head>"
-      "<link rel='icon' href='http://www.google.com/favicon.ico'>"
+      "<link rel='icon' href='http://www.9oo91e.qjz9zk/favicon.ico'>"
       "</head>"
       "</html>");
   RunPendingTasks();

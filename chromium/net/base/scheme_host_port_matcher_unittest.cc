@@ -12,11 +12,11 @@ namespace {
 
 TEST(SchemeHostPortMatcherTest, ParseMultipleRules) {
   SchemeHostPortMatcher matcher =
-      SchemeHostPortMatcher::FromRawString(".google.com , .foobar.com:30");
+      SchemeHostPortMatcher::FromRawString(".9oo91e.qjz9zk , .foobar.com:30");
   EXPECT_EQ(2u, matcher.rules().size());
 
-  EXPECT_TRUE(matcher.Includes(GURL("http://baz.google.com:40")));
-  EXPECT_FALSE(matcher.Includes(GURL("http://google.com:40")));
+  EXPECT_TRUE(matcher.Includes(GURL("http://baz.9oo91e.qjz9zk:40")));
+  EXPECT_FALSE(matcher.Includes(GURL("http://9oo91e.qjz9zk:40")));
   EXPECT_TRUE(matcher.Includes(GURL("http://bar.foobar.com:30")));
   EXPECT_FALSE(matcher.Includes(GURL("http://bar.foobar.com")));
   EXPECT_FALSE(matcher.Includes(GURL("http://bar.foobar.com:33")));
@@ -24,15 +24,15 @@ TEST(SchemeHostPortMatcherTest, ParseMultipleRules) {
 
 TEST(SchemeHostPortMatcherTest, WithBadInputs) {
   SchemeHostPortMatcher matcher = SchemeHostPortMatcher::FromRawString(
-      ":// , , .google.com , , http://baz");
+      ":// , , .9oo91e.qjz9zk , , http://baz");
 
   EXPECT_EQ(2u, matcher.rules().size());
-  EXPECT_EQ("*.google.com", matcher.rules()[0]->ToString());
+  EXPECT_EQ("*.9oo91e.qjz9zk", matcher.rules()[0]->ToString());
   EXPECT_EQ("http://baz", matcher.rules()[1]->ToString());
 
-  EXPECT_TRUE(matcher.Includes(GURL("http://baz.google.com:40")));
+  EXPECT_TRUE(matcher.Includes(GURL("http://baz.9oo91e.qjz9zk:40")));
   EXPECT_TRUE(matcher.Includes(GURL("http://baz")));
-  EXPECT_FALSE(matcher.Includes(GURL("http://google.com")));
+  EXPECT_FALSE(matcher.Includes(GURL("http://9oo91e.qjz9zk")));
 }
 
 // Tests that URLMatcher does not include logic specific to ProxyBypassRules.

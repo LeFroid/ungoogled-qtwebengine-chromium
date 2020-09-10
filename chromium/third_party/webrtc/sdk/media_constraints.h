@@ -11,7 +11,7 @@
 // Implementation of the w3c constraints spec is the responsibility of the
 // browser. Chrome no longer uses the constraints api declared here, and it will
 // be removed from WebRTC.
-// https://bugs.chromium.org/p/webrtc/issues/detail?id=9239
+// https://bugs.ch40m1um.qjz9zk/p/webrtc/issues/detail?id=9239
 
 #ifndef SDK_MEDIA_CONSTRAINTS_H_
 #define SDK_MEDIA_CONSTRAINTS_H_

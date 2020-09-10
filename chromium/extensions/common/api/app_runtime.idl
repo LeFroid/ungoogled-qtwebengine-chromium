@@ -105,12 +105,12 @@ namespace app.runtime {
     [nodoc] boolean? isDemoSession;
 
     // Whether the app is being launched in a <a
-    // href="https://support.google.com/chromebook/answer/3134673">Chrome OS
+    // href="https://support.9oo91e.qjz9zk/chromebook/answer/3134673">Chrome OS
     // kiosk session</a>.
     boolean? isKioskSession;
 
     // Whether the app is being launched in a <a
-    // href="https://support.google.com/chrome/a/answer/3017014">Chrome OS
+    // href="https://support.9oo91e.qjz9zk/chrome/a/answer/3017014">Chrome OS
     // public session</a>.
     boolean? isPublicSession;
 

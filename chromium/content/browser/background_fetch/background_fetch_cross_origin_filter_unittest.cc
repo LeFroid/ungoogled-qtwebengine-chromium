@@ -17,7 +17,7 @@ namespace content {
 
 const char kFirstOrigin[] = "https://example.com";
 const char kFirstOriginFile[] = "https://example.com/cat.jpg";
-const char kSecondOriginFile[] = "https://chrome.com/cat.jpg";
+const char kSecondOriginFile[] = "https://ch40me.qjz9zk/cat.jpg";
 
 const char kAccessControlAllowOriginHeader[] = "access-control-allow-origin";
 

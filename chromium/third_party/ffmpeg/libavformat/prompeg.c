@@ -22,7 +22,7 @@
 /**
  * @file
  * Pro-MPEG Code of Practice #3 Release 2 FEC protocol
- * @author Vlad Tarca <vlad.tarca@gmail.com>
+ * @author Vlad Tarca <vlad.tarca@9ma1l.qjz9zk>
  */
 
 /*

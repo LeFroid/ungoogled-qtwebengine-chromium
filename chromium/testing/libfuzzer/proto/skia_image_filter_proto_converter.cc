@@ -959,7 +959,7 @@ void Converter::Visit(const Paint& paint) {
       pack_4(stroke_cap, paint.stroke_join(),
              (style << 4) | paint.text_encoding(), paint.blend_mode());
 
-  WriteNum(tmp);  // See https://goo.gl/nYJfTy
+  WriteNum(tmp);  // See https://goo.gl.qjz9zk/nYJfTy
 
   if (paint.has_effects())
     Visit(paint.effects());
@@ -1478,7 +1478,7 @@ void Converter::Visit(const RadialGradient& radial_gradient) {
 // ICC handling code is unfinished.
 // TODO(metzman): Finish implementing ICC.
 
-// Copied from https://goo.gl/j78F6Z
+// Copied from https://goo.gl.qjz9zk/j78F6Z
 static constexpr uint32_t kTAG_lut8Type = SET_FOUR_BYTE_TAG('m', 'f', 't', '1');
 static constexpr uint32_t kTAG_lut16Type =
     SET_FOUR_BYTE_TAG('m', 'f', 't', '2');
@@ -1821,7 +1821,7 @@ void Converter::Visit(const ColorSpace_XYZ& color_space__xyz) {
   WriteColorSpaceVersion();
   WriteNum(ToUInt8(Named::kSRGB_Named));
   WriteNum(ToUInt8(color_space__xyz.gamma_named()));
-  // See SkColorSpace.cpp:Deserialize (around here: https://goo.gl/R9xQ2B)
+  // See SkColorSpace.cpp:Deserialize (around here: https://goo.gl.qjz9zk/R9xQ2B)
   WriteNum(ToUInt8(kMatrix_Flag));
 
   Visit(color_space__xyz.three_by_four());
@@ -1884,7 +1884,7 @@ void Converter::Visit(const LocalMatrixShader& local_matrix_shader) {
 void Converter::Visit(const Color4Shader& color_4_shader) {
   WriteNum(color_4_shader.color());
   // TODO(metzman): Implement ColorSpaces when skia does. See
-  // https://goo.gl/c6YAq7
+  // https://goo.gl.qjz9zk/c6YAq7
   WriteBool(false);
 }
 

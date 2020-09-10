@@ -63,7 +63,7 @@ TEST(OriginPolicyParser, ValidOtherFieldsButNoIDs) {
           "policies_report_only": ["script-src 'self' 'https://example.com/'"]
         },
         "features": {
-          "policy": "geolocation 'self' http://maps.google.com"
+          "policy": "geolocation 'self' http://maps.9oo91e.qjz9zk"
         },
         "isolation": true
       }
@@ -81,7 +81,7 @@ TEST(OriginPolicyParser, ValidOtherFieldsButEmptyIDs) {
           "policies_report_only": ["script-src 'self' 'https://example.com/'"]
         },
         "features": {
-          "policy": "geolocation 'self' http://maps.google.com"
+          "policy": "geolocation 'self' http://maps.9oo91e.qjz9zk"
         },
         "isolation": true
       }
@@ -100,7 +100,7 @@ TEST(OriginPolicyParser, ValidOtherFieldsButEmptyIDsAfterNonemptyIDs) {
           "policies_report_only": ["script-src 'self' 'https://example.com/'"]
         },
         "features": {
-          "policy": "geolocation 'self' http://maps.google.com"
+          "policy": "geolocation 'self' http://maps.9oo91e.qjz9zk"
         },
         "isolation": true
       }
@@ -118,7 +118,7 @@ TEST(OriginPolicyParser, ValidOtherFieldsButNonArrayID) {
           "policies_report_only": ["script-src 'self' 'https://example.com/'"]
         },
         "features": {
-          "policy": "geolocation 'self' http://maps.google.com"
+          "policy": "geolocation 'self' http://maps.9oo91e.qjz9zk"
         },
         "isolation": true
       }
@@ -449,11 +449,11 @@ TEST(OriginPolicyParser, FeatureOne) {
       {
         "ids": ["my-policy"],
         "features": {
-          "policy": "geolocation 'self' http://maps.google.com"
+          "policy": "geolocation 'self' http://maps.9oo91e.qjz9zk"
         }
       } )");
 
-  ASSERT_EQ("geolocation 'self' http://maps.google.com",
+  ASSERT_EQ("geolocation 'self' http://maps.9oo91e.qjz9zk",
             policy_contents->feature_policy);
 }
 
@@ -462,12 +462,12 @@ TEST(OriginPolicyParser, FeatureTwo) {
       {
         "ids": ["my-policy"],
         "features": {
-          "policy": "geolocation 'self' http://maps.google.com; camera https://example.com"
+          "policy": "geolocation 'self' http://maps.9oo91e.qjz9zk; camera https://example.com"
         }
       } )");
 
   ASSERT_EQ(
-      "geolocation 'self' http://maps.google.com; camera https://example.com",
+      "geolocation 'self' http://maps.9oo91e.qjz9zk; camera https://example.com",
       policy_contents->feature_policy);
 }
 
@@ -475,7 +475,7 @@ TEST(OriginPolicyParser, FeatureTwoFeatures) {
   auto policy_contents = OriginPolicyParser::Parse(R"(
       {
         "ids": ["my-policy"],
-        "features": { "policy": "geolocation 'self' http://maps.google.com" },
+        "features": { "policy": "geolocation 'self' http://maps.9oo91e.qjz9zk" },
         "features": { "policy": "camera https://example.com" }
       } )");
 
@@ -487,7 +487,7 @@ TEST(OriginPolicyParser, FeatureTwoPolicy) {
       {
         "ids": ["my-policy"],
         "features": {
-          "policy": "geolocation 'self' http://maps.google.com",
+          "policy": "geolocation 'self' http://maps.9oo91e.qjz9zk",
           "policy": "camera https://example.com"
         }
       } )");
@@ -503,12 +503,12 @@ TEST(OriginPolicyParser, FeatureComma) {
       {
         "ids": ["my-policy"],
         "features": {
-          "policy": "geolocation 'self' http://maps.google.com, camera https://example.com"
+          "policy": "geolocation 'self' http://maps.9oo91e.qjz9zk, camera https://example.com"
         }
       } )");
 
   ASSERT_EQ(
-      "geolocation 'self' http://maps.google.com, camera https://example.com",
+      "geolocation 'self' http://maps.9oo91e.qjz9zk, camera https://example.com",
       policy_contents->feature_policy);
 }
 
@@ -529,7 +529,7 @@ TEST(OriginPolicyParser, FeatureNonDict) {
   auto policy_contents = OriginPolicyParser::Parse(R"(
       {
         "ids": ["my-policy"],
-        "features": "geolocation 'self' http://maps.google.com"
+        "features": "geolocation 'self' http://maps.9oo91e.qjz9zk"
       } )");
 
   ASSERT_FALSE(policy_contents->feature_policy.has_value());
@@ -540,7 +540,7 @@ TEST(OriginPolicyParser, FeatureNonString) {
       {
         "ids": ["my-policy"],
         "features": {
-          "policy": ["geolocation 'self' http://maps.google.com"]
+          "policy": ["geolocation 'self' http://maps.9oo91e.qjz9zk"]
         }
       } )");
 

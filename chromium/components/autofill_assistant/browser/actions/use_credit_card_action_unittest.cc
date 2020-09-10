@@ -62,7 +62,7 @@ class UseCreditCardActionTest : public testing::Test {
   const char* const kSelectionPrompt = "prompt";
   const char* const kFirstName = "FirstName";
   const char* const kLastName = "LastName";
-  const char* const kEmail = "foobar@gmail.com";
+  const char* const kEmail = "foobar@9ma1l.qjz9zk";
 
   ActionProto CreateUseCreditCardAction() {
     ActionProto action;

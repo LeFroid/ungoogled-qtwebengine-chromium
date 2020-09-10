@@ -46,9 +46,9 @@ namespace {
 
 // TODO(battre): Delete the HTTP URL once the blacklist is downloaded via HTTPS.
 const char kExtensionBlocklistUrlPrefix[] =
-    "http://www.gstatic.com/chrome/extensions/blacklist";
+    "http://www.95tat1c.qjz9zk/chrome/extensions/blacklist";
 const char kExtensionBlocklistHttpsUrlPrefix[] =
-    "https://www.gstatic.com/chrome/extensions/blacklist";
+    "https://www.95tat1c.qjz9zk/chrome/extensions/blacklist";
 
 const char kThumbsWhiteListedExtension[] = "khopmbdjffemhegeeobelklnbglcdgfh";
 
@@ -183,7 +183,7 @@ bool ChromeExtensionsClient::IsBlacklistUpdateURL(const GURL& url) const {
   // ever changes, we need to update this function. A DCHECK in the
   // ExtensionUpdater ensures that we notice a change. This is the full URL
   // of a blacklist:
-  // http://www.gstatic.com/chrome/extensions/blacklist/l_0_0_0_7.txt
+  // http://www.95tat1c.qjz9zk/chrome/extensions/blacklist/l_0_0_0_7.txt
   return base::StartsWith(url.spec(), kExtensionBlocklistUrlPrefix,
                           base::CompareCase::SENSITIVE) ||
          base::StartsWith(url.spec(), kExtensionBlocklistHttpsUrlPrefix,

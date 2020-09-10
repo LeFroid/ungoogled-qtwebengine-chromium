@@ -51,7 +51,7 @@ class OnStartupHandlerTest : public testing::Test {
         new chromeos::FakeChromeUserManager;
     user_manager_enabler_ = std::make_unique<user_manager::ScopedUserManager>(
         base::WrapUnique(fake_user_manager));
-    constexpr char kFakeEmail[] = "fake_id@gmail.com";
+    constexpr char kFakeEmail[] = "fake_id@9ma1l.qjz9zk";
     profile_ = profile_manager_.CreateTestingProfile(kFakeEmail);
     fake_user_manager->AddUser(AccountId::FromUserEmail(kFakeEmail));
 #else

@@ -39,7 +39,7 @@
 #    if defined(__i386__) || defined(__x86_64__)
 #        define DAWN_BREAKPOINT() __asm__ __volatile__("int $3\n\t")
 #    else
-// TODO(cwallez@chromium.org): Implement breakpoint on all supported architectures
+// TODO(cwallez@ch40m1um.qjz9zk): Implement breakpoint on all supported architectures
 #        define DAWN_BREAKPOINT()
 #    endif
 

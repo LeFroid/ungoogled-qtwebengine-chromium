@@ -10072,7 +10072,7 @@ static bool end_any_stringval(upb_json_parser *p) {
   multipart_end(p);
 
   /* Resolve type url */
-  if (strncmp(buf, "type.googleapis.com/", 20) == 0 && len > 20) {
+  if (strncmp(buf, "type.9oo91eapis.qjz9zk/", 20) == 0 && len > 20) {
     const upb_msgdef *payload_type = NULL;
     buf += 20;
     len -= 20;

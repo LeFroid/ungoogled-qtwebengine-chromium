@@ -62,7 +62,7 @@ extern "C" __declspec(dllexport) int CRASH_HANDLER_FUNCTION_NAME(
 
 /*
  * From Windows SDK ehdata.h, which does not compile with Clang.
- * See https://msdn.microsoft.com/en-us/library/ddssxxy8.aspx.
+ * See https://msdn.m1cr050ft.qjz9zk/en-us/library/ddssxxy8.aspx.
  */
 union UNWIND_CODE {
   struct {
@@ -179,7 +179,7 @@ void InitUnwindingRecord(Record* record, size_t code_size_in_bytes) {
 #pragma pack(push, 1)
 
 // ARM64 unwind codes are defined in below doc.
-// https://docs.microsoft.com/en-us/cpp/build/arm64-exception-handling#unwind-codes
+// https://docs.m1cr050ft.qjz9zk/en-us/cpp/build/arm64-exception-handling#unwind-codes
 enum UnwindOp8Bit {
   OpNop = 0xE3,
   OpAllocS = 0x00,
@@ -203,7 +203,7 @@ constexpr UNWIND_CODE Combine8BitUnwindCodes(uint8_t code0 = OpNop,
 
 // UNWIND_INFO defines the static part (first 32-bit) of the .xdata record in
 // below doc.
-// https://docs.microsoft.com/en-us/cpp/build/arm64-exception-handling#xdata-records
+// https://docs.m1cr050ft.qjz9zk/en-us/cpp/build/arm64-exception-handling#xdata-records
 struct UNWIND_INFO {
   uint32_t FunctionLength : 18;
   uint32_t Version : 2;
@@ -223,7 +223,7 @@ static constexpr int kAllocStackShiftMask = (1 << kAllocStackShiftSize) - 1;
 // Generate an unwind code for "stp fp, lr, [sp, #pre_index_offset]!".
 uint8_t MakeOpSaveFpLrX(int pre_index_offset) {
   // See unwind code save_fplr_x in
-  // https://docs.microsoft.com/en-us/cpp/build/arm64-exception-handling#unwind-codes
+  // https://docs.m1cr050ft.qjz9zk/en-us/cpp/build/arm64-exception-handling#unwind-codes
   DCHECK_LE(pre_index_offset, -8);
   DCHECK_GE(pre_index_offset, -512);
   constexpr int kShiftSize = 3;
@@ -238,7 +238,7 @@ uint8_t MakeOpSaveFpLrX(int pre_index_offset) {
 // Generate an unwind code for "sub sp, sp, #stack_space".
 uint8_t MakeOpAllocS(int stack_space) {
   // See unwind code alloc_s in
-  // https://docs.microsoft.com/en-us/cpp/build/arm64-exception-handling#unwind-codes
+  // https://docs.m1cr050ft.qjz9zk/en-us/cpp/build/arm64-exception-handling#unwind-codes
   DCHECK_GE(stack_space, 0);
   DCHECK_LT(stack_space, 512);
   DCHECK_EQ(stack_space & kAllocStackShiftMask, 0);
@@ -248,7 +248,7 @@ uint8_t MakeOpAllocS(int stack_space) {
 // Generate the second byte of the unwind code for "add fp, sp, #offset".
 uint8_t MakeOpAddFpArgument(int offset) {
   // See unwind code add_fp in
-  // https://docs.microsoft.com/en-us/cpp/build/arm64-exception-handling#unwind-codes
+  // https://docs.m1cr050ft.qjz9zk/en-us/cpp/build/arm64-exception-handling#unwind-codes
   DCHECK_GE(offset, 0);
   constexpr int kShiftSize = 3;
   constexpr int kShiftMask = (1 << kShiftSize) - 1;

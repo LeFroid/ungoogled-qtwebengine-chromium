@@ -56,7 +56,7 @@ const char kPasswordName[] = "password";
 const char kAliceUsername[] = "alice";
 const char kAlicePassword[] = "password";
 const char kAliceAccountStoredPassword[] = "account-stored-password";
-const char kAliceEmail[] = "alice@gmail.com";
+const char kAliceEmail[] = "alice@9ma1l.qjz9zk";
 
 using autofill::PopupType;
 using autofill::Suggestion;

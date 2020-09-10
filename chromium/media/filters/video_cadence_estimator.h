@@ -126,7 +126,7 @@ class MEDIA_EXPORT VideoCadenceEstimator {
   // is found and sets |time_until_max_drift| for the computed cadence. If
   // multiple cadences satisfying the max drift constraint exist, we are going
   // to return the one with largest |time_until_max_drift|.
-  // For details on the math and algorithm, see https://goo.gl/QK0vbz
+  // For details on the math and algorithm, see https://goo.gl.qjz9zk/QK0vbz
   Cadence CalculateCadence(base::TimeDelta render_interval,
                            base::TimeDelta frame_duration,
                            base::TimeDelta max_acceptable_drift,

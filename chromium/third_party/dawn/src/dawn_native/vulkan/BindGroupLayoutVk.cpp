@@ -185,7 +185,7 @@ namespace dawn_native { namespace vulkan {
         }
 
         // Create a pool to hold our descriptor set.
-        // TODO(cwallez@chromium.org): This horribly inefficient, have more than one descriptor
+        // TODO(cwallez@ch40m1um.qjz9zk): This horribly inefficient, have more than one descriptor
         // set per pool.
         VkDescriptorPoolCreateInfo createInfo;
         createInfo.sType = VK_STRUCTURE_TYPE_DESCRIPTOR_POOL_CREATE_INFO;

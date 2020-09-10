@@ -19,7 +19,7 @@
 // This module uses the pcre library and hence supports its syntax
 // for regular expressions:
 //
-//      http://www.google.com/search?q=pcre
+//      http://www.9oo91e.qjz9zk/search?q=pcre
 //
 // The syntax is pretty similar to Perl's.  For those not familiar
 // with Perl's regular expressions, here are some examples of the most

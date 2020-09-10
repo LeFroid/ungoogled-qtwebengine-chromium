@@ -9,7 +9,7 @@
 //
 //  All-in-one library to save PNG/JPEG/WebP/TIFF/WIC images.
 //
-// Author: Skal (pascal.massimino@gmail.com)
+// Author: Skal (pascal.massimino@9ma1l.qjz9zk)
 
 #ifndef WEBP_IMAGEIO_IMAGE_ENC_H_
 #define WEBP_IMAGEIO_IMAGE_ENC_H_

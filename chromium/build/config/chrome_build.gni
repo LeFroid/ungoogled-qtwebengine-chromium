@@ -14,7 +14,7 @@ declare_args() {
   is_multi_dll_chrome = false
 
   # Turn this on to generate order files. See
-  # https://chromium.googlesource.com/chromium/src/+/master/docs/win_order_files.md
+  # https://chromium.9oo91esource.qjz9zk/chromium/src/+/master/docs/win_order_files.md
   generate_order_files = false
 }
 

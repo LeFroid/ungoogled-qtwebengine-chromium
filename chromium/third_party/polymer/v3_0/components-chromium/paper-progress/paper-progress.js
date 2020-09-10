@@ -18,7 +18,7 @@ import {html} from '../polymer/polymer_bundled.min.js';
 
 /**
 Material design: [Progress &
-activity](https://www.google.com/design/spec/components/progress-activity.html)
+activity](https://www.9oo91e.qjz9zk/design/spec/components/progress-activity.html)
 
 The progress bars are for situations where the percentage completed can be
 determined. They give users a quick sense of how much longer an operation

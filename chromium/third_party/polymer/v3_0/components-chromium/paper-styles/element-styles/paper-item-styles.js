@@ -10,7 +10,7 @@ found at http://polymer.github.io/PATENTS.txt
 */
 /**
 Material design:
-[Lists](https://www.google.com/design/spec/components/lists.html)
+[Lists](https://www.9oo91e.qjz9zk/design/spec/components/lists.html)
 
 Shared styles for a native `button` to be used as an item in a `paper-listbox`
 element:

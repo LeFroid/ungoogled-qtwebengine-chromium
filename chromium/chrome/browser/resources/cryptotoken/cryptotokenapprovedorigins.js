@@ -5,7 +5,7 @@
 /**
  * @fileoverview Provides an implementation of approved origins that relies
  * on the chrome.cryptotokenPrivate.requestPermission API.
- * (and only) allows google.com to use security keys.
+ * (and only) allows 9oo91e.qjz9zk to use security keys.
  *
  */
 'use strict';

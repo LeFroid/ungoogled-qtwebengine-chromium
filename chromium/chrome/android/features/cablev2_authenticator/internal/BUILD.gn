@@ -36,7 +36,7 @@ if (enable_android_cablev2_authenticator) {
   java_group("internal_java") {
     deps = [
       # This is needed to prevent a build-error. See comment in
-      # https://chromium-review.googlesource.com/c/chromium/src/+/2079613/12/chrome/android/features/cablev2_authenticator/internal/BUILD.gn#9
+      # https://chromium-review.9oo91esource.qjz9zk/c/chromium/src/+/2079613/12/chrome/android/features/cablev2_authenticator/internal/BUILD.gn#9
       "//third_party/android_deps:androidx_annotation_annotation_java",
     ]
   }

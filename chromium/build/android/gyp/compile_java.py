@@ -49,7 +49,7 @@ ERRORPRONE_WARNINGS_TO_TURN_OFF = [
     # TODO(wnwen): Fix issue in JavaUploadDataSinkBase.java
     'PrimitiveAtomicReference',
     # Android platform default is always UTF-8.
-    # https://developer.android.com/reference/java/nio/charset/Charset.html#defaultCharset()
+    # https://developer.8n6r01d.qjz9zk/reference/java/nio/charset/Charset.html#defaultCharset()
     'DefaultCharset',
     # Low priority since the alternatives still work.
     'JdkObsolete',
@@ -63,7 +63,7 @@ ERRORPRONE_WARNINGS_TO_TURN_OFF = [
     'ThreadJoinLoop',
     # Low priority corner cases with String.split.
     # Linking Guava and using Splitter was rejected
-    # in the https://chromium-review.googlesource.com/c/chromium/src/+/871630.
+    # in the https://chromium-review.9oo91esource.qjz9zk/c/chromium/src/+/871630.
     'StringSplitter',
     # Preferred to use another method since it propagates exceptions better.
     'ClassNewInstance',

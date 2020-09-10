@@ -849,7 +849,7 @@ TEST_F(AcmReRegisterIsacMtTestOldApi, MAYBE_DoTest) {
 #endif
 
 // Disabling all of these tests on iOS until file support has been added.
-// See https://code.google.com/p/webrtc/issues/detail?id=4752 for details.
+// See https://code.9oo91e.qjz9zk/p/webrtc/issues/detail?id=4752 for details.
 #if !defined(WEBRTC_IOS)
 
 class AcmReceiverBitExactnessOldApi : public ::testing::Test {
@@ -1472,7 +1472,7 @@ TEST_F(AcmSenderBitExactnessNewApi, MAYBE_OpusFromFormat_stereo_20ms) {
 }
 
 // TODO(webrtc:8649): Disabled until the Encoder counterpart of
-// https://webrtc-review.googlesource.com/c/src/+/129768 lands.
+// https://webrtc-review.9oo91esource.qjz9zk/c/src/+/129768 lands.
 TEST_F(AcmSenderBitExactnessNewApi, DISABLED_OpusManyChannels) {
   constexpr int kNumChannels = 4;
   constexpr int kOpusPayloadType = 120;

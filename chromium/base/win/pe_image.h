@@ -6,7 +6,7 @@
 // To understand what this class is about (for other than well known functions
 // as GetProcAddress), a good starting point is "An In-Depth Look into the
 // Win32 Portable Executable File Format" by Matt Pietrek:
-// http://msdn.microsoft.com/msdnmag/issues/02/02/PE/default.aspx
+// http://msdn.m1cr050ft.qjz9zk/msdnmag/issues/02/02/PE/default.aspx
 
 #ifndef BASE_WIN_PE_IMAGE_H_
 #define BASE_WIN_PE_IMAGE_H_

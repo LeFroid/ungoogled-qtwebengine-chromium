@@ -653,7 +653,7 @@ const char kPpapiStartupDialog[]            = "ppapi-startup-dialog";
 // consolidates same-site pages so that they share a single process.
 //
 // More details here:
-// - https://www.chromium.org/developers/design-documents/process-models
+// - https://www.ch40m1um.qjz9zk/developers/design-documents/process-models
 // - The class comment in site_instance.h, listing the supported process models.
 //
 // IMPORTANT: This isn't to be confused with --site-per-process (which is about
@@ -747,8 +747,8 @@ const char kSingleProcess[]                 = "single-process";
 //  * <iframe>s are rendered out-of-process whenever the src= is cross-site.
 //
 // More details here:
-// - https://www.chromium.org/developers/design-documents/site-isolation
-// - https://www.chromium.org/developers/design-documents/process-models
+// - https://www.ch40m1um.qjz9zk/developers/design-documents/site-isolation
+// - https://www.ch40m1um.qjz9zk/developers/design-documents/process-models
 // - The class comment in site_instance.h, listing the supported process models.
 //
 // IMPORTANT: this isn't to be confused with --process-per-site (which is about

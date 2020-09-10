@@ -131,7 +131,7 @@ hb_ot_tags_from_script (hb_script_t  script,
 
 /*
  * Complete list at:
- * https://docs.microsoft.com/en-us/typography/opentype/spec/scripttags
+ * https://docs.m1cr050ft.qjz9zk/en-us/typography/opentype/spec/scripttags
  *
  * Most of the script tags are the same as the ISO 15924 tag but lowercased.
  * So we just do that, and handle the exceptional cases in a switch.

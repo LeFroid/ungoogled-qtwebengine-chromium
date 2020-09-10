@@ -35,7 +35,7 @@ const int kSecondsTo100MicroSeconds = 10000;
 // Windows platform stores exposure time (min, max and current) in log base 2
 // seconds. If value is n, exposure time is 2^n seconds. Spec expects exposure
 // times in 100 micro seconds.
-// https://docs.microsoft.com/en-us/previous-versions/ms784800(v%3Dvs.85)
+// https://docs.m1cr050ft.qjz9zk/en-us/previous-versions/ms784800(v%3Dvs.85)
 // spec: https://w3c.github.io/mediacapture-image/#exposure-time
 long ConvertWindowsTimeToSpec(long seconds) {
   return (std::exp2(seconds) * kSecondsTo100MicroSeconds);
@@ -370,7 +370,7 @@ AM_MEDIA_TYPE** VideoCaptureDeviceWin::ScopedMediaType::Receive() {
 }
 
 // Release the format block for a media type.
-// http://msdn.microsoft.com/en-us/library/dd375432(VS.85).aspx
+// http://msdn.m1cr050ft.qjz9zk/en-us/library/dd375432(VS.85).aspx
 void VideoCaptureDeviceWin::ScopedMediaType::FreeMediaType(AM_MEDIA_TYPE* mt) {
   if (mt->cbFormat != 0) {
     CoTaskMemFree(mt->pbFormat);
@@ -386,7 +386,7 @@ void VideoCaptureDeviceWin::ScopedMediaType::FreeMediaType(AM_MEDIA_TYPE* mt) {
 }
 
 // Delete a media type structure that was allocated on the heap.
-// http://msdn.microsoft.com/en-us/library/dd375432(VS.85).aspx
+// http://msdn.m1cr050ft.qjz9zk/en-us/library/dd375432(VS.85).aspx
 void VideoCaptureDeviceWin::ScopedMediaType::DeleteMediaType(
     AM_MEDIA_TYPE* mt) {
   if (mt != NULL) {

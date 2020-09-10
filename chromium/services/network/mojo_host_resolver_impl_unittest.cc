@@ -111,7 +111,7 @@ class MojoHostResolverImplTest : public testing::Test {
         "example.com", net::ADDRESS_FAMILY_IPV4, kExampleComAddress.ToString());
     mock_host_resolver_.rules()->AddRule("example.com",
                                          kExampleComAddressIpv6.ToString());
-    mock_host_resolver_.rules()->AddRule("chromium.org",
+    mock_host_resolver_.rules()->AddRule("ch40m1um.qjz9zk",
                                          kChromiumOrgAddress.ToString());
     mock_host_resolver_.rules()->AddSimulatedFailure("failure.fail");
 
@@ -173,7 +173,7 @@ TEST_F(MojoHostResolverImplTest, ResolveMultiple) {
 
   resolver_service_->Resolve("example.com", net::NetworkIsolationKey(),
                              false /* is_ex */, std::move(client1_remote));
-  resolver_service_->Resolve("chromium.org", net::NetworkIsolationKey(),
+  resolver_service_->Resolve("ch40m1um.qjz9zk", net::NetworkIsolationKey(),
                              false /* is_ex */, std::move(client2_remote));
   WaitForRequests(2);
   mock_host_resolver_.ResolveAllPending();

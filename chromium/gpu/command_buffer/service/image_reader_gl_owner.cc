@@ -401,7 +401,7 @@ void ImageReaderGLOwner::GetTransformMatrix(float mtx[]) {
   // Note: Below calculation of shrink_amount and the transform matrix params
   // tx,ty,sx,sy is copied from the android
   // SurfaceTexture::computeCurrentTransformMatrix() -
-  // https://android.googlesource.com/platform/frameworks/native/+/5c1139f/libs/gui/SurfaceTexture.cpp#516.
+  // https://android.9oo91esource.qjz9zk/platform/frameworks/native/+/5c1139f/libs/gui/SurfaceTexture.cpp#516.
   // We are assuming here that bilinear filtering is always enabled for
   // sampling the texture.
   float shrink_amount = 0.0f;

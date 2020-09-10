@@ -105,7 +105,7 @@ TEST(HttpAuthSSPITest, ParseChallenge_TwoRounds) {
   std::string auth_token;
   EXPECT_EQ(OK,
             auth_sspi.GenerateAuthToken(
-                nullptr, "HTTP/intranet.google.com", std::string(), &auth_token,
+                nullptr, "HTTP/intranet.9oo91e.qjz9zk", std::string(), &auth_token,
                 NetLogWithSource(), base::BindOnce(&UnexpectedCallback)));
 
   std::string second_challenge_text = "Negotiate Zm9vYmFy";
@@ -141,7 +141,7 @@ TEST(HttpAuthSSPITest, ParseChallenge_MissingTokenSecondRound) {
   std::string auth_token;
   EXPECT_EQ(OK,
             auth_sspi.GenerateAuthToken(
-                nullptr, "HTTP/intranet.google.com", std::string(), &auth_token,
+                nullptr, "HTTP/intranet.9oo91e.qjz9zk", std::string(), &auth_token,
                 NetLogWithSource(), base::BindOnce(&UnexpectedCallback)));
   std::string second_challenge_text = "Negotiate";
   HttpAuthChallengeTokenizer second_challenge(second_challenge_text.begin(),
@@ -164,7 +164,7 @@ TEST(HttpAuthSSPITest, ParseChallenge_NonBase64EncodedToken) {
   std::string auth_token;
   EXPECT_EQ(OK,
             auth_sspi.GenerateAuthToken(
-                nullptr, "HTTP/intranet.google.com", std::string(), &auth_token,
+                nullptr, "HTTP/intranet.9oo91e.qjz9zk", std::string(), &auth_token,
                 NetLogWithSource(), base::BindOnce(&UnexpectedCallback)));
   std::string second_challenge_text = "Negotiate =happyjoy=";
   HttpAuthChallengeTokenizer second_challenge(second_challenge_text.begin(),
@@ -186,7 +186,7 @@ TEST(HttpAuthSSPITest, GenerateAuthToken_FullHandshake_AmbientCreds) {
   std::string auth_token;
   ASSERT_EQ(OK,
             auth_sspi.GenerateAuthToken(
-                nullptr, "HTTP/intranet.google.com", std::string(), &auth_token,
+                nullptr, "HTTP/intranet.9oo91e.qjz9zk", std::string(), &auth_token,
                 NetLogWithSource(), base::BindOnce(&UnexpectedCallback)));
   EXPECT_EQ("Negotiate ", auth_token.substr(0, 10));
 
@@ -195,7 +195,7 @@ TEST(HttpAuthSSPITest, GenerateAuthToken_FullHandshake_AmbientCreds) {
 
   // This token string indicates that HttpAuthSSPI correctly established the
   // security context using the default credentials.
-  EXPECT_EQ("<Default>'s token #1 for HTTP/intranet.google.com", decoded_token);
+  EXPECT_EQ("<Default>'s token #1 for HTTP/intranet.9oo91e.qjz9zk", decoded_token);
 
   // The server token is arbitrary.
   std::string second_challenge_text = "Negotiate UmVzcG9uc2U=";
@@ -206,11 +206,11 @@ TEST(HttpAuthSSPITest, GenerateAuthToken_FullHandshake_AmbientCreds) {
 
   ASSERT_EQ(OK,
             auth_sspi.GenerateAuthToken(
-                nullptr, "HTTP/intranet.google.com", std::string(), &auth_token,
+                nullptr, "HTTP/intranet.9oo91e.qjz9zk", std::string(), &auth_token,
                 NetLogWithSource(), base::BindOnce(&UnexpectedCallback)));
   ASSERT_EQ("Negotiate ", auth_token.substr(0, 10));
   ASSERT_TRUE(base::Base64Decode(auth_token.substr(10), &decoded_token));
-  EXPECT_EQ("<Default>'s token #2 for HTTP/intranet.google.com", decoded_token);
+  EXPECT_EQ("<Default>'s token #2 for HTTP/intranet.9oo91e.qjz9zk", decoded_token);
 }
 
 // Test NetLogs produced while going through a full Negotiate handshake.
@@ -227,7 +227,7 @@ TEST(HttpAuthSSPITest, GenerateAuthToken_FullHandshake_AmbientCreds_Logging) {
   std::string auth_token;
   ASSERT_EQ(OK,
             auth_sspi.GenerateAuthToken(
-                nullptr, "HTTP/intranet.google.com", std::string(), &auth_token,
+                nullptr, "HTTP/intranet.9oo91e.qjz9zk", std::string(), &auth_token,
                 net_log.bound(), base::BindOnce(&UnexpectedCallback)));
 
   // The token is the ASCII string "Response" in base64.
@@ -238,7 +238,7 @@ TEST(HttpAuthSSPITest, GenerateAuthToken_FullHandshake_AmbientCreds_Logging) {
             auth_sspi.ParseChallenge(&second_challenge));
   ASSERT_EQ(OK,
             auth_sspi.GenerateAuthToken(
-                nullptr, "HTTP/intranet.google.com", std::string(), &auth_token,
+                nullptr, "HTTP/intranet.9oo91e.qjz9zk", std::string(), &auth_token,
                 net_log.bound(), base::BindOnce(&UnexpectedCallback)));
 
   auto entries =
@@ -270,7 +270,7 @@ TEST(HttpAuthSSPITest, GenerateAuthToken_FullHandshake_AmbientCreds_Logging) {
          "mechanism": "Itsa me Kerberos!!",
          "open": true,
          "source": "\u003CDefault>",
-         "target": "HTTP/intranet.google.com"
+         "target": "HTTP/intranet.9oo91e.qjz9zk"
       },
       "status": {
          "net_error": 0,
@@ -292,7 +292,7 @@ TEST(HttpAuthSSPITest, GenerateAuthToken_FullHandshake_AmbientCreds_Logging) {
         "mechanism": "Itsa me Kerberos!!",
         "open": false,
         "source": "\u003CDefault>",
-        "target": "HTTP/intranet.google.com"
+        "target": "HTTP/intranet.9oo91e.qjz9zk"
       },
       "status": {
          "net_error": 0,

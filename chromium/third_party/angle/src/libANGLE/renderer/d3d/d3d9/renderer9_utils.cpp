@@ -717,7 +717,7 @@ void GenerateCaps(IDirect3D9 *d3d9,
     extensions->robustBufferAccessBehavior = false;
     extensions->blendMinMax                = true;
     // Although according to
-    // https://docs.microsoft.com/en-us/windows/desktop/direct3ddxgi/format-support-for-direct3d-feature-level-9-1-hardware
+    // https://docs.m1cr050ft.qjz9zk/en-us/windows/desktop/direct3ddxgi/format-support-for-direct3d-feature-level-9-1-hardware
     // D3D9 doesn't have full blending capability for RGBA32F. But turns out it could provide
     // correct blending result in reality. As a result of some regression reports by client app, we
     // decided to turn floatBlend on for D3D9

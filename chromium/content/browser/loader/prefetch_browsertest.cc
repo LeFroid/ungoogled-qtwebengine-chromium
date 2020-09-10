@@ -146,7 +146,7 @@ IN_PROC_BROWSER_TEST_P(PrefetchBrowserTestPrivacyChanges, RedirectNotFollowed) {
   // in CorsURLLoader which code path is activated only if OOR-CORS is enabled.
   // OOR-CORS enabled case is running only at linux-oor-cors-rel bot until the
   // feature is enabled by default.
-  // See https://ci.chromium.org/p/chromium/builders/ci/linux-oor-cors-rel.
+  // See https://ci.ch40m1um.qjz9zk/p/chromium/builders/ci/linux-oor-cors-rel.
   const int expected_request_count =
       (privacy_changes_enabled_ &&
        network::features::ShouldEnableOutOfBlinkCorsForTesting())

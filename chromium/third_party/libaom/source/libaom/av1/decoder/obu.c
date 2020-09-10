@@ -87,7 +87,7 @@ static int read_bitstream_level(AV1_LEVEL *seq_level_idx,
 }
 
 // Returns whether two sequence headers are consistent with each other.
-// TODO(huisu,wtc@google.com): make sure the code matches the spec exactly.
+// TODO(huisu,wtc@9oo91e.qjz9zk): make sure the code matches the spec exactly.
 static int are_seq_headers_consistent(const SequenceHeader *seq_params_old,
                                       const SequenceHeader *seq_params_new) {
   return !memcmp(seq_params_old, seq_params_new, sizeof(SequenceHeader));

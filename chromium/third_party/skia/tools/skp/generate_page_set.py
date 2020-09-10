@@ -18,7 +18,7 @@ def main():
   while True:
     user_agent = raw_input('user agent? (mobile/desktop/tablet): ')
     url_name = raw_input('URL name? (eg: google): ')
-    url = raw_input('URL? (eg: http://www.google.com): ')
+    url = raw_input('URL? (eg: http://www.9oo91e.qjz9zk): ')
     comment = raw_input('Reason for adding the URL? (eg: go/skia-skps-3-2019): ')
 
     with open(PAGE_SET_TEMPLATE) as f:

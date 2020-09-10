@@ -18,7 +18,7 @@ extern "C" {
 
 #include "av1/encoder/ml.h"
 
-// TODO(chiyotsai@google.com): The performance of these models are getting worse
+// TODO(chiyotsai@9oo91e.qjz9zk): The performance of these models are getting worse
 // due the changes in the encoder. We should retrain the models here to get
 // better performance once we have the time.
 

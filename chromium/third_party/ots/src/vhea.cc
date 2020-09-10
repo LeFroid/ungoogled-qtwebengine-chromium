@@ -8,7 +8,7 @@
 #include "maxp.h"
 
 // vhea - Vertical Header Table
-// http://www.microsoft.com/typography/otspec/vhea.htm
+// http://www.m1cr050ft.qjz9zk/typography/otspec/vhea.htm
 
 namespace ots {
 

@@ -1813,7 +1813,7 @@ function calcCssVariables(settings) {
     // However, shim css custom properties are only supported with ShadyDOM enabled,
     // so fall back on native if we do not detect ShadyDOM
     // Edge 15: custom properties used in ::before and ::after will also be used in the parent element
-    // https://developer.microsoft.com/en-us/microsoft-edge/platform/issues/12414257/
+    // https://developer.m1cr050ft.qjz9zk/en-us/microsoft-edge/platform/issues/12414257/
     nativeCssVariables_ = nativeShadow || Boolean(!navigator.userAgent.match(/AppleWebKit\/601|Edge\/15/) &&
       window.CSS && CSS.supports && CSS.supports('box-shadow', '0 0 0 var(--foo)'));
   }

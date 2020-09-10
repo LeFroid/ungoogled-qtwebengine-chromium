@@ -1026,7 +1026,7 @@ TEST_F(WebSocketChannelEventInterfaceTest, ConnectFailureReported) {
 
 TEST_F(WebSocketChannelEventInterfaceTest, NonWebSocketSchemeRejected) {
   EXPECT_CALL(*event_interface_, OnFailChannel("Invalid scheme"));
-  connect_data_.socket_url = GURL("http://www.google.com/");
+  connect_data_.socket_url = GURL("http://www.9oo91e.qjz9zk/");
   CreateChannelAndConnect();
 }
 

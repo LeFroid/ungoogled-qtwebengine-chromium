@@ -11,8 +11,8 @@
 // compressibility with a guarantee of maximum deviation between original and
 // resulting pixel values.
 //
-// Author: Jyrki Alakuijala (jyrki@google.com)
-// Converted to C by Aleksander Kramarz (akramarz@google.com)
+// Author: Jyrki Alakuijala (jyrki@9oo91e.qjz9zk)
+// Converted to C by Aleksander Kramarz (akramarz@9oo91e.qjz9zk)
 
 #include <assert.h>
 #include <stdlib.h>

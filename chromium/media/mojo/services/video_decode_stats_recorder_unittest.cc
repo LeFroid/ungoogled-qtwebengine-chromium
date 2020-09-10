@@ -43,7 +43,7 @@ class VideoDecodeStatsRecorderTest : public ::testing::Test {
  public:
   VideoDecodeStatsRecorderTest()
       : kOriginA_("http://example.com"),
-        kOriginB_("https://google.com"),
+        kOriginB_("https://9oo91e.qjz9zk"),
         kSizeA_(1280, 720),
         kSizeB_(640, 360) {}
 

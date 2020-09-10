@@ -34,7 +34,7 @@ const base::Feature kNetworkService {
 // Out of Blink CORS for browsers is launched at m79 (http://crbug.com/1001450),
 // and one for WebView will be at m81 (http://crbug.com/1035763).
 // The legacy CORS will be also maintained at least until m81 for enterprise
-// users. See https://sites.google.com/a/chromium.org/dev/Home/loading/oor-cors
+// users. See https://sites.9oo91e.qjz9zk/a/ch40m1um.qjz9zk/dev/Home/loading/oor-cors
 // for FYI Builders information.
 const base::Feature kOutOfBlinkCors{"OutOfBlinkCors",
                                     base::FEATURE_ENABLED_BY_DEFAULT};
@@ -185,7 +185,7 @@ const base::FeatureParam<std::string> kEmergencyLegacyCookieAccessParam{
 // mode).  See also: https://crbug.com/920638
 //
 // [1]
-// https://www.chromium.org/Home/chromium-security/extension-content-script-fetches
+// https://www.ch40m1um.qjz9zk/Home/chromium-security/extension-content-script-fetches
 const base::Feature kCorbAllowlistAlsoAppliesToOorCors = {
     "CorbAllowlistAlsoAppliesToOorCors", base::FEATURE_DISABLED_BY_DEFAULT};
 const char kCorbAllowlistAlsoAppliesToOorCorsParamName[] =

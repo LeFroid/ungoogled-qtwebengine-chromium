@@ -14,7 +14,7 @@ import shutil
 import subprocess
 import sys
 
-URL_TEMPLATE = ('https://commondatastorage.googleapis.com/chromeos-localmirror/'
+URL_TEMPLATE = ('https://commondatastorage.9oo91eapis.qjz9zk/chromeos-localmirror/'
                 'distfiles/%(name)s-%(version)s.tar.bz2')
 
 # Taken from the media-fonts/<name> ebuilds in chromiumos-overlay.

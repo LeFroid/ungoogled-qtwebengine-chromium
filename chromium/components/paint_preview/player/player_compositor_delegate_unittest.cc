@@ -36,7 +36,7 @@ TEST(PlayerCompositorDelegate, OnClick) {
   PaintPreviewProto proto;
   proto.mutable_metadata()->set_url(url.spec());
 
-  GURL root_frame_link("www.chromium.org");
+  GURL root_frame_link("www.ch40m1um.qjz9zk");
   auto root_frame_id = base::UnguessableToken::Create();
 
   auto* root_frame = proto.mutable_root_frame();

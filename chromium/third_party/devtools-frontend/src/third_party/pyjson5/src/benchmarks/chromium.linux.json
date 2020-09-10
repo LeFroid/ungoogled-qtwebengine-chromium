@@ -45,7 +45,7 @@
           "output_links": [
             {
               "link": [
-                "https://luci-logdog.appspot.com/v/?s",
+                "https://luci-logdog.8pp2p8t.qjz9zk/v/?s",
                 "=android%2Fswarming%2Flogcats%2F",
                 "${TASK_ID}%2F%2B%2Funified_logcats"
               ],
@@ -85,7 +85,7 @@
           "output_links": [
             {
               "link": [
-                "https://luci-logdog.appspot.com/v/?s",
+                "https://luci-logdog.8pp2p8t.qjz9zk/v/?s",
                 "=android%2Fswarming%2Flogcats%2F",
                 "${TASK_ID}%2F%2B%2Funified_logcats"
               ],
@@ -124,7 +124,7 @@
           "output_links": [
             {
               "link": [
-                "https://luci-logdog.appspot.com/v/?s",
+                "https://luci-logdog.8pp2p8t.qjz9zk/v/?s",
                 "=android%2Fswarming%2Flogcats%2F",
                 "${TASK_ID}%2F%2B%2Funified_logcats"
               ],
@@ -163,7 +163,7 @@
           "output_links": [
             {
               "link": [
-                "https://luci-logdog.appspot.com/v/?s",
+                "https://luci-logdog.8pp2p8t.qjz9zk/v/?s",
                 "=android%2Fswarming%2Flogcats%2F",
                 "${TASK_ID}%2F%2B%2Funified_logcats"
               ],
@@ -202,7 +202,7 @@
           "output_links": [
             {
               "link": [
-                "https://luci-logdog.appspot.com/v/?s",
+                "https://luci-logdog.8pp2p8t.qjz9zk/v/?s",
                 "=android%2Fswarming%2Flogcats%2F",
                 "${TASK_ID}%2F%2B%2Funified_logcats"
               ],
@@ -241,7 +241,7 @@
           "output_links": [
             {
               "link": [
-                "https://luci-logdog.appspot.com/v/?s",
+                "https://luci-logdog.8pp2p8t.qjz9zk/v/?s",
                 "=android%2Fswarming%2Flogcats%2F",
                 "${TASK_ID}%2F%2B%2Funified_logcats"
               ],
@@ -280,7 +280,7 @@
           "output_links": [
             {
               "link": [
-                "https://luci-logdog.appspot.com/v/?s",
+                "https://luci-logdog.8pp2p8t.qjz9zk/v/?s",
                 "=android%2Fswarming%2Flogcats%2F",
                 "${TASK_ID}%2F%2B%2Funified_logcats"
               ],
@@ -323,7 +323,7 @@
           "output_links": [
             {
               "link": [
-                "https://luci-logdog.appspot.com/v/?s",
+                "https://luci-logdog.8pp2p8t.qjz9zk/v/?s",
                 "=android%2Fswarming%2Flogcats%2F",
                 "${TASK_ID}%2F%2B%2Funified_logcats"
               ],
@@ -367,7 +367,7 @@
           "output_links": [
             {
               "link": [
-                "https://luci-logdog.appspot.com/v/?s",
+                "https://luci-logdog.8pp2p8t.qjz9zk/v/?s",
                 "=android%2Fswarming%2Flogcats%2F",
                 "${TASK_ID}%2F%2B%2Funified_logcats"
               ],
@@ -406,7 +406,7 @@
           "output_links": [
             {
               "link": [
-                "https://luci-logdog.appspot.com/v/?s",
+                "https://luci-logdog.8pp2p8t.qjz9zk/v/?s",
                 "=android%2Fswarming%2Flogcats%2F",
                 "${TASK_ID}%2F%2B%2Funified_logcats"
               ],
@@ -446,7 +446,7 @@
           "output_links": [
             {
               "link": [
-                "https://luci-logdog.appspot.com/v/?s",
+                "https://luci-logdog.8pp2p8t.qjz9zk/v/?s",
                 "=android%2Fswarming%2Flogcats%2F",
                 "${TASK_ID}%2F%2B%2Funified_logcats"
               ],
@@ -487,7 +487,7 @@
           "output_links": [
             {
               "link": [
-                "https://luci-logdog.appspot.com/v/?s",
+                "https://luci-logdog.8pp2p8t.qjz9zk/v/?s",
                 "=android%2Fswarming%2Flogcats%2F",
                 "${TASK_ID}%2F%2B%2Funified_logcats"
               ],
@@ -531,7 +531,7 @@
           "output_links": [
             {
               "link": [
-                "https://luci-logdog.appspot.com/v/?s",
+                "https://luci-logdog.8pp2p8t.qjz9zk/v/?s",
                 "=android%2Fswarming%2Flogcats%2F",
                 "${TASK_ID}%2F%2B%2Funified_logcats"
               ],
@@ -572,7 +572,7 @@
           "output_links": [
             {
               "link": [
-                "https://luci-logdog.appspot.com/v/?s",
+                "https://luci-logdog.8pp2p8t.qjz9zk/v/?s",
                 "=android%2Fswarming%2Flogcats%2F",
                 "${TASK_ID}%2F%2B%2Funified_logcats"
               ],
@@ -611,7 +611,7 @@
           "output_links": [
             {
               "link": [
-                "https://luci-logdog.appspot.com/v/?s",
+                "https://luci-logdog.8pp2p8t.qjz9zk/v/?s",
                 "=android%2Fswarming%2Flogcats%2F",
                 "${TASK_ID}%2F%2B%2Funified_logcats"
               ],
@@ -650,7 +650,7 @@
           "output_links": [
             {
               "link": [
-                "https://luci-logdog.appspot.com/v/?s",
+                "https://luci-logdog.8pp2p8t.qjz9zk/v/?s",
                 "=android%2Fswarming%2Flogcats%2F",
                 "${TASK_ID}%2F%2B%2Funified_logcats"
               ],
@@ -689,7 +689,7 @@
           "output_links": [
             {
               "link": [
-                "https://luci-logdog.appspot.com/v/?s",
+                "https://luci-logdog.8pp2p8t.qjz9zk/v/?s",
                 "=android%2Fswarming%2Flogcats%2F",
                 "${TASK_ID}%2F%2B%2Funified_logcats"
               ],
@@ -729,7 +729,7 @@
           "output_links": [
             {
               "link": [
-                "https://luci-logdog.appspot.com/v/?s",
+                "https://luci-logdog.8pp2p8t.qjz9zk/v/?s",
                 "=android%2Fswarming%2Flogcats%2F",
                 "${TASK_ID}%2F%2B%2Funified_logcats"
               ],
@@ -768,7 +768,7 @@
           "output_links": [
             {
               "link": [
-                "https://luci-logdog.appspot.com/v/?s",
+                "https://luci-logdog.8pp2p8t.qjz9zk/v/?s",
                 "=android%2Fswarming%2Flogcats%2F",
                 "${TASK_ID}%2F%2B%2Funified_logcats"
               ],
@@ -807,7 +807,7 @@
           "output_links": [
             {
               "link": [
-                "https://luci-logdog.appspot.com/v/?s",
+                "https://luci-logdog.8pp2p8t.qjz9zk/v/?s",
                 "=android%2Fswarming%2Flogcats%2F",
                 "${TASK_ID}%2F%2B%2Funified_logcats"
               ],
@@ -846,7 +846,7 @@
           "output_links": [
             {
               "link": [
-                "https://luci-logdog.appspot.com/v/?s",
+                "https://luci-logdog.8pp2p8t.qjz9zk/v/?s",
                 "=android%2Fswarming%2Flogcats%2F",
                 "${TASK_ID}%2F%2B%2Funified_logcats"
               ],
@@ -885,7 +885,7 @@
           "output_links": [
             {
               "link": [
-                "https://luci-logdog.appspot.com/v/?s",
+                "https://luci-logdog.8pp2p8t.qjz9zk/v/?s",
                 "=android%2Fswarming%2Flogcats%2F",
                 "${TASK_ID}%2F%2B%2Funified_logcats"
               ],
@@ -924,7 +924,7 @@
           "output_links": [
             {
               "link": [
-                "https://luci-logdog.appspot.com/v/?s",
+                "https://luci-logdog.8pp2p8t.qjz9zk/v/?s",
                 "=android%2Fswarming%2Flogcats%2F",
                 "${TASK_ID}%2F%2B%2Funified_logcats"
               ],
@@ -964,7 +964,7 @@
           "output_links": [
             {
               "link": [
-                "https://luci-logdog.appspot.com/v/?s",
+                "https://luci-logdog.8pp2p8t.qjz9zk/v/?s",
                 "=android%2Fswarming%2Flogcats%2F",
                 "${TASK_ID}%2F%2B%2Funified_logcats"
               ],
@@ -1004,7 +1004,7 @@
           "output_links": [
             {
               "link": [
-                "https://luci-logdog.appspot.com/v/?s",
+                "https://luci-logdog.8pp2p8t.qjz9zk/v/?s",
                 "=android%2Fswarming%2Flogcats%2F",
                 "${TASK_ID}%2F%2B%2Funified_logcats"
               ],
@@ -1044,7 +1044,7 @@
           "output_links": [
             {
               "link": [
-                "https://luci-logdog.appspot.com/v/?s",
+                "https://luci-logdog.8pp2p8t.qjz9zk/v/?s",
                 "=android%2Fswarming%2Flogcats%2F",
                 "${TASK_ID}%2F%2B%2Funified_logcats"
               ],
@@ -1084,7 +1084,7 @@
           "output_links": [
             {
               "link": [
-                "https://luci-logdog.appspot.com/v/?s",
+                "https://luci-logdog.8pp2p8t.qjz9zk/v/?s",
                 "=android%2Fswarming%2Flogcats%2F",
                 "${TASK_ID}%2F%2B%2Funified_logcats"
               ],
@@ -1124,7 +1124,7 @@
           "output_links": [
             {
               "link": [
-                "https://luci-logdog.appspot.com/v/?s",
+                "https://luci-logdog.8pp2p8t.qjz9zk/v/?s",
                 "=android%2Fswarming%2Flogcats%2F",
                 "${TASK_ID}%2F%2B%2Funified_logcats"
               ],
@@ -1164,7 +1164,7 @@
           "output_links": [
             {
               "link": [
-                "https://luci-logdog.appspot.com/v/?s",
+                "https://luci-logdog.8pp2p8t.qjz9zk/v/?s",
                 "=android%2Fswarming%2Flogcats%2F",
                 "${TASK_ID}%2F%2B%2Funified_logcats"
               ],
@@ -1204,7 +1204,7 @@
           "output_links": [
             {
               "link": [
-                "https://luci-logdog.appspot.com/v/?s",
+                "https://luci-logdog.8pp2p8t.qjz9zk/v/?s",
                 "=android%2Fswarming%2Flogcats%2F",
                 "${TASK_ID}%2F%2B%2Funified_logcats"
               ],
@@ -1244,7 +1244,7 @@
           "output_links": [
             {
               "link": [
-                "https://luci-logdog.appspot.com/v/?s",
+                "https://luci-logdog.8pp2p8t.qjz9zk/v/?s",
                 "=android%2Fswarming%2Flogcats%2F",
                 "${TASK_ID}%2F%2B%2Funified_logcats"
               ],
@@ -1283,7 +1283,7 @@
           "output_links": [
             {
               "link": [
-                "https://luci-logdog.appspot.com/v/?s",
+                "https://luci-logdog.8pp2p8t.qjz9zk/v/?s",
                 "=android%2Fswarming%2Flogcats%2F",
                 "${TASK_ID}%2F%2B%2Funified_logcats"
               ],
@@ -1323,7 +1323,7 @@
           "output_links": [
             {
               "link": [
-                "https://luci-logdog.appspot.com/v/?s",
+                "https://luci-logdog.8pp2p8t.qjz9zk/v/?s",
                 "=android%2Fswarming%2Flogcats%2F",
                 "${TASK_ID}%2F%2B%2Funified_logcats"
               ],
@@ -1362,7 +1362,7 @@
           "output_links": [
             {
               "link": [
-                "https://luci-logdog.appspot.com/v/?s",
+                "https://luci-logdog.8pp2p8t.qjz9zk/v/?s",
                 "=android%2Fswarming%2Flogcats%2F",
                 "${TASK_ID}%2F%2B%2Funified_logcats"
               ],
@@ -1401,7 +1401,7 @@
           "output_links": [
             {
               "link": [
-                "https://luci-logdog.appspot.com/v/?s",
+                "https://luci-logdog.8pp2p8t.qjz9zk/v/?s",
                 "=android%2Fswarming%2Flogcats%2F",
                 "${TASK_ID}%2F%2B%2Funified_logcats"
               ],
@@ -1440,7 +1440,7 @@
           "output_links": [
             {
               "link": [
-                "https://luci-logdog.appspot.com/v/?s",
+                "https://luci-logdog.8pp2p8t.qjz9zk/v/?s",
                 "=android%2Fswarming%2Flogcats%2F",
                 "${TASK_ID}%2F%2B%2Funified_logcats"
               ],
@@ -1480,7 +1480,7 @@
           "output_links": [
             {
               "link": [
-                "https://luci-logdog.appspot.com/v/?s",
+                "https://luci-logdog.8pp2p8t.qjz9zk/v/?s",
                 "=android%2Fswarming%2Flogcats%2F",
                 "${TASK_ID}%2F%2B%2Funified_logcats"
               ],
@@ -1510,7 +1510,7 @@
           "output_links": [
             {
               "link": [
-                "https://luci-logdog.appspot.com/v/?s",
+                "https://luci-logdog.8pp2p8t.qjz9zk/v/?s",
                 "=android%2Fswarming%2Flogcats%2F",
                 "${TASK_ID}%2F%2B%2Funified_logcats"
               ],
@@ -1603,7 +1603,7 @@
           "output_links": [
             {
               "link": [
-                "https://luci-logdog.appspot.com/v/?s",
+                "https://luci-logdog.8pp2p8t.qjz9zk/v/?s",
                 "=android%2Fswarming%2Flogcats%2F",
                 "${TASK_ID}%2F%2B%2Funified_logcats"
               ],
@@ -1643,7 +1643,7 @@
           "output_links": [
             {
               "link": [
-                "https://luci-logdog.appspot.com/v/?s",
+                "https://luci-logdog.8pp2p8t.qjz9zk/v/?s",
                 "=android%2Fswarming%2Flogcats%2F",
                 "${TASK_ID}%2F%2B%2Funified_logcats"
               ],
@@ -1682,7 +1682,7 @@
           "output_links": [
             {
               "link": [
-                "https://luci-logdog.appspot.com/v/?s",
+                "https://luci-logdog.8pp2p8t.qjz9zk/v/?s",
                 "=android%2Fswarming%2Flogcats%2F",
                 "${TASK_ID}%2F%2B%2Funified_logcats"
               ],
@@ -1721,7 +1721,7 @@
           "output_links": [
             {
               "link": [
-                "https://luci-logdog.appspot.com/v/?s",
+                "https://luci-logdog.8pp2p8t.qjz9zk/v/?s",
                 "=android%2Fswarming%2Flogcats%2F",
                 "${TASK_ID}%2F%2B%2Funified_logcats"
               ],
@@ -1760,7 +1760,7 @@
           "output_links": [
             {
               "link": [
-                "https://luci-logdog.appspot.com/v/?s",
+                "https://luci-logdog.8pp2p8t.qjz9zk/v/?s",
                 "=android%2Fswarming%2Flogcats%2F",
                 "${TASK_ID}%2F%2B%2Funified_logcats"
               ],
@@ -1799,7 +1799,7 @@
           "output_links": [
             {
               "link": [
-                "https://luci-logdog.appspot.com/v/?s",
+                "https://luci-logdog.8pp2p8t.qjz9zk/v/?s",
                 "=android%2Fswarming%2Flogcats%2F",
                 "${TASK_ID}%2F%2B%2Funified_logcats"
               ],
@@ -1838,7 +1838,7 @@
           "output_links": [
             {
               "link": [
-                "https://luci-logdog.appspot.com/v/?s",
+                "https://luci-logdog.8pp2p8t.qjz9zk/v/?s",
                 "=android%2Fswarming%2Flogcats%2F",
                 "${TASK_ID}%2F%2B%2Funified_logcats"
               ],
@@ -1881,7 +1881,7 @@
           "output_links": [
             {
               "link": [
-                "https://luci-logdog.appspot.com/v/?s",
+                "https://luci-logdog.8pp2p8t.qjz9zk/v/?s",
                 "=android%2Fswarming%2Flogcats%2F",
                 "${TASK_ID}%2F%2B%2Funified_logcats"
               ],
@@ -1925,7 +1925,7 @@
           "output_links": [
             {
               "link": [
-                "https://luci-logdog.appspot.com/v/?s",
+                "https://luci-logdog.8pp2p8t.qjz9zk/v/?s",
                 "=android%2Fswarming%2Flogcats%2F",
                 "${TASK_ID}%2F%2B%2Funified_logcats"
               ],
@@ -1965,7 +1965,7 @@
           "output_links": [
             {
               "link": [
-                "https://luci-logdog.appspot.com/v/?s",
+                "https://luci-logdog.8pp2p8t.qjz9zk/v/?s",
                 "=android%2Fswarming%2Flogcats%2F",
                 "${TASK_ID}%2F%2B%2Funified_logcats"
               ],
@@ -2005,7 +2005,7 @@
           "output_links": [
             {
               "link": [
-                "https://luci-logdog.appspot.com/v/?s",
+                "https://luci-logdog.8pp2p8t.qjz9zk/v/?s",
                 "=android%2Fswarming%2Flogcats%2F",
                 "${TASK_ID}%2F%2B%2Funified_logcats"
               ],
@@ -2046,7 +2046,7 @@
           "output_links": [
             {
               "link": [
-                "https://luci-logdog.appspot.com/v/?s",
+                "https://luci-logdog.8pp2p8t.qjz9zk/v/?s",
                 "=android%2Fswarming%2Flogcats%2F",
                 "${TASK_ID}%2F%2B%2Funified_logcats"
               ],
@@ -2090,7 +2090,7 @@
           "output_links": [
             {
               "link": [
-                "https://luci-logdog.appspot.com/v/?s",
+                "https://luci-logdog.8pp2p8t.qjz9zk/v/?s",
                 "=android%2Fswarming%2Flogcats%2F",
                 "${TASK_ID}%2F%2B%2Funified_logcats"
               ],
@@ -2131,7 +2131,7 @@
           "output_links": [
             {
               "link": [
-                "https://luci-logdog.appspot.com/v/?s",
+                "https://luci-logdog.8pp2p8t.qjz9zk/v/?s",
                 "=android%2Fswarming%2Flogcats%2F",
                 "${TASK_ID}%2F%2B%2Funified_logcats"
               ],
@@ -2170,7 +2170,7 @@
           "output_links": [
             {
               "link": [
-                "https://luci-logdog.appspot.com/v/?s",
+                "https://luci-logdog.8pp2p8t.qjz9zk/v/?s",
                 "=android%2Fswarming%2Flogcats%2F",
                 "${TASK_ID}%2F%2B%2Funified_logcats"
               ],
@@ -2209,7 +2209,7 @@
           "output_links": [
             {
               "link": [
-                "https://luci-logdog.appspot.com/v/?s",
+                "https://luci-logdog.8pp2p8t.qjz9zk/v/?s",
                 "=android%2Fswarming%2Flogcats%2F",
                 "${TASK_ID}%2F%2B%2Funified_logcats"
               ],
@@ -2248,7 +2248,7 @@
           "output_links": [
             {
               "link": [
-                "https://luci-logdog.appspot.com/v/?s",
+                "https://luci-logdog.8pp2p8t.qjz9zk/v/?s",
                 "=android%2Fswarming%2Flogcats%2F",
                 "${TASK_ID}%2F%2B%2Funified_logcats"
               ],
@@ -2288,7 +2288,7 @@
           "output_links": [
             {
               "link": [
-                "https://luci-logdog.appspot.com/v/?s",
+                "https://luci-logdog.8pp2p8t.qjz9zk/v/?s",
                 "=android%2Fswarming%2Flogcats%2F",
                 "${TASK_ID}%2F%2B%2Funified_logcats"
               ],
@@ -2327,7 +2327,7 @@
           "output_links": [
             {
               "link": [
-                "https://luci-logdog.appspot.com/v/?s",
+                "https://luci-logdog.8pp2p8t.qjz9zk/v/?s",
                 "=android%2Fswarming%2Flogcats%2F",
                 "${TASK_ID}%2F%2B%2Funified_logcats"
               ],
@@ -2366,7 +2366,7 @@
           "output_links": [
             {
               "link": [
-                "https://luci-logdog.appspot.com/v/?s",
+                "https://luci-logdog.8pp2p8t.qjz9zk/v/?s",
                 "=android%2Fswarming%2Flogcats%2F",
                 "${TASK_ID}%2F%2B%2Funified_logcats"
               ],
@@ -2405,7 +2405,7 @@
           "output_links": [
             {
               "link": [
-                "https://luci-logdog.appspot.com/v/?s",
+                "https://luci-logdog.8pp2p8t.qjz9zk/v/?s",
                 "=android%2Fswarming%2Flogcats%2F",
                 "${TASK_ID}%2F%2B%2Funified_logcats"
               ],
@@ -2444,7 +2444,7 @@
           "output_links": [
             {
               "link": [
-                "https://luci-logdog.appspot.com/v/?s",
+                "https://luci-logdog.8pp2p8t.qjz9zk/v/?s",
                 "=android%2Fswarming%2Flogcats%2F",
                 "${TASK_ID}%2F%2B%2Funified_logcats"
               ],
@@ -2483,7 +2483,7 @@
           "output_links": [
             {
               "link": [
-                "https://luci-logdog.appspot.com/v/?s",
+                "https://luci-logdog.8pp2p8t.qjz9zk/v/?s",
                 "=android%2Fswarming%2Flogcats%2F",
                 "${TASK_ID}%2F%2B%2Funified_logcats"
               ],
@@ -2523,7 +2523,7 @@
           "output_links": [
             {
               "link": [
-                "https://luci-logdog.appspot.com/v/?s",
+                "https://luci-logdog.8pp2p8t.qjz9zk/v/?s",
                 "=android%2Fswarming%2Flogcats%2F",
                 "${TASK_ID}%2F%2B%2Funified_logcats"
               ],
@@ -2563,7 +2563,7 @@
           "output_links": [
             {
               "link": [
-                "https://luci-logdog.appspot.com/v/?s",
+                "https://luci-logdog.8pp2p8t.qjz9zk/v/?s",
                 "=android%2Fswarming%2Flogcats%2F",
                 "${TASK_ID}%2F%2B%2Funified_logcats"
               ],
@@ -2603,7 +2603,7 @@
           "output_links": [
             {
               "link": [
-                "https://luci-logdog.appspot.com/v/?s",
+                "https://luci-logdog.8pp2p8t.qjz9zk/v/?s",
                 "=android%2Fswarming%2Flogcats%2F",
                 "${TASK_ID}%2F%2B%2Funified_logcats"
               ],
@@ -2643,7 +2643,7 @@
           "output_links": [
             {
               "link": [
-                "https://luci-logdog.appspot.com/v/?s",
+                "https://luci-logdog.8pp2p8t.qjz9zk/v/?s",
                 "=android%2Fswarming%2Flogcats%2F",
                 "${TASK_ID}%2F%2B%2Funified_logcats"
               ],
@@ -2683,7 +2683,7 @@
           "output_links": [
             {
               "link": [
-                "https://luci-logdog.appspot.com/v/?s",
+                "https://luci-logdog.8pp2p8t.qjz9zk/v/?s",
                 "=android%2Fswarming%2Flogcats%2F",
                 "${TASK_ID}%2F%2B%2Funified_logcats"
               ],
@@ -2723,7 +2723,7 @@
           "output_links": [
             {
               "link": [
-                "https://luci-logdog.appspot.com/v/?s",
+                "https://luci-logdog.8pp2p8t.qjz9zk/v/?s",
                 "=android%2Fswarming%2Flogcats%2F",
                 "${TASK_ID}%2F%2B%2Funified_logcats"
               ],
@@ -2763,7 +2763,7 @@
           "output_links": [
             {
               "link": [
-                "https://luci-logdog.appspot.com/v/?s",
+                "https://luci-logdog.8pp2p8t.qjz9zk/v/?s",
                 "=android%2Fswarming%2Flogcats%2F",
                 "${TASK_ID}%2F%2B%2Funified_logcats"
               ],
@@ -2803,7 +2803,7 @@
           "output_links": [
             {
               "link": [
-                "https://luci-logdog.appspot.com/v/?s",
+                "https://luci-logdog.8pp2p8t.qjz9zk/v/?s",
                 "=android%2Fswarming%2Flogcats%2F",
                 "${TASK_ID}%2F%2B%2Funified_logcats"
               ],
@@ -2842,7 +2842,7 @@
           "output_links": [
             {
               "link": [
-                "https://luci-logdog.appspot.com/v/?s",
+                "https://luci-logdog.8pp2p8t.qjz9zk/v/?s",
                 "=android%2Fswarming%2Flogcats%2F",
                 "${TASK_ID}%2F%2B%2Funified_logcats"
               ],
@@ -2882,7 +2882,7 @@
           "output_links": [
             {
               "link": [
-                "https://luci-logdog.appspot.com/v/?s",
+                "https://luci-logdog.8pp2p8t.qjz9zk/v/?s",
                 "=android%2Fswarming%2Flogcats%2F",
                 "${TASK_ID}%2F%2B%2Funified_logcats"
               ],
@@ -2921,7 +2921,7 @@
           "output_links": [
             {
               "link": [
-                "https://luci-logdog.appspot.com/v/?s",
+                "https://luci-logdog.8pp2p8t.qjz9zk/v/?s",
                 "=android%2Fswarming%2Flogcats%2F",
                 "${TASK_ID}%2F%2B%2Funified_logcats"
               ],
@@ -2960,7 +2960,7 @@
           "output_links": [
             {
               "link": [
-                "https://luci-logdog.appspot.com/v/?s",
+                "https://luci-logdog.8pp2p8t.qjz9zk/v/?s",
                 "=android%2Fswarming%2Flogcats%2F",
                 "${TASK_ID}%2F%2B%2Funified_logcats"
               ],
@@ -2999,7 +2999,7 @@
           "output_links": [
             {
               "link": [
-                "https://luci-logdog.appspot.com/v/?s",
+                "https://luci-logdog.8pp2p8t.qjz9zk/v/?s",
                 "=android%2Fswarming%2Flogcats%2F",
                 "${TASK_ID}%2F%2B%2Funified_logcats"
               ],
@@ -3039,7 +3039,7 @@
           "output_links": [
             {
               "link": [
-                "https://luci-logdog.appspot.com/v/?s",
+                "https://luci-logdog.8pp2p8t.qjz9zk/v/?s",
                 "=android%2Fswarming%2Flogcats%2F",
                 "${TASK_ID}%2F%2B%2Funified_logcats"
               ],
@@ -3069,7 +3069,7 @@
           "output_links": [
             {
               "link": [
-                "https://luci-logdog.appspot.com/v/?s",
+                "https://luci-logdog.8pp2p8t.qjz9zk/v/?s",
                 "=android%2Fswarming%2Flogcats%2F",
                 "${TASK_ID}%2F%2B%2Funified_logcats"
               ],

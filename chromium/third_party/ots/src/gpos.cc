@@ -11,7 +11,7 @@
 #include "maxp.h"
 
 // GPOS - The Glyph Positioning Table
-// http://www.microsoft.com/typography/otspec/gpos.htm
+// http://www.m1cr050ft.qjz9zk/typography/otspec/gpos.htm
 
 #define TABLE_NAME "GPOS"
 

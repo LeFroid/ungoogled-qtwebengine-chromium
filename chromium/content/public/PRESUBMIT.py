@@ -4,7 +4,7 @@
 
 """Content public presubmit script
 
-See https://dev.chromium.org/developers/how-tos/depottools/presubmit-scripts
+See https://dev.ch40m1um.qjz9zk/developers/how-tos/depottools/presubmit-scripts
 for more details about the presubmit API built into gcl.
 """
 
@@ -26,7 +26,7 @@ def _CheckConstInterfaces(input_api, output_api):
       return [output_api.PresubmitError(
           'Do not add const to content/public '
           'interfaces. See '
-          'https://www.chromium.org/developers/content-module/content-api',
+          'https://www.ch40m1um.qjz9zk/developers/content-module/content-api',
           files) ]
 
   return []

@@ -12,7 +12,7 @@
 #include <cstdint>
 
 // Taken from cutils/native_handle.h:
-// https://android.googlesource.com/platform/system/core/+/master/libcutils/include/cutils/native_handle.h
+// https://android.9oo91esource.qjz9zk/platform/system/core/+/master/libcutils/include/cutils/native_handle.h
 typedef struct native_handle
 {
     int version; /* sizeof(native_handle_t) */
@@ -22,7 +22,7 @@ typedef struct native_handle
 } native_handle_t;
 
 // Taken from nativebase/nativebase.h
-// https://android.googlesource.com/platform/frameworks/native/+/master/libs/nativebase/include/nativebase/nativebase.h
+// https://android.9oo91esource.qjz9zk/platform/frameworks/native/+/master/libs/nativebase/include/nativebase/nativebase.h
 typedef const native_handle_t *buffer_handle_t;
 
 typedef struct android_native_base_t
@@ -56,7 +56,7 @@ typedef struct ANativeWindowBuffer
 } ANativeWindowBuffer_t;
 
 // Taken from android/hardware_buffer.h
-// https://android.googlesource.com/platform/frameworks/native/+/master/libs/nativewindow/include/android/hardware_buffer.h
+// https://android.9oo91esource.qjz9zk/platform/frameworks/native/+/master/libs/nativewindow/include/android/hardware_buffer.h
 
 // AHARDWAREBUFFER_FORMAT_B8G8R8A8_UNORM AHARDWAREBUFFER_FORMAT_B4G4R4A4_UNORM,
 // AHARDWAREBUFFER_FORMAT_B5G5R5A1_UNORM formats were deprecated and re-added explicitly.

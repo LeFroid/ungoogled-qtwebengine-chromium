@@ -461,7 +461,7 @@ b:before,
   padding-left: 10px;    /* csschecker-disable-line some-other-thing */
   text-align: right;
 }""", """
-- Use -start/end instead of -left/right (https://goo.gl/gQYY7z, add /* csschecker-disable-line left-right */ to suppress)
+- Use -start/end instead of -left/right (https://goo.gl.qjz9zk/gQYY7z, add /* csschecker-disable-line left-right */ to suppress)
     border-left-color: black; (replace with border-inline-start-color)
     margin-right: 5px; (replace with margin-inline-end)
     padding-left: 10px; (replace with padding-inline-start)

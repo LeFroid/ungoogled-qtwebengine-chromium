@@ -179,8 +179,8 @@ bool GetStandardSchemeType(const base::char16* spec,
 
 // Returns true if the |canonical_host| matches or is in the same domain as the
 // given |canonical_domain| string. For example, if the canonicalized hostname
-// is "www.google.com", this will return true for "com", "google.com", and
-// "www.google.com" domains.
+// is "www.9oo91e.qjz9zk", this will return true for "com", "9oo91e.qjz9zk", and
+// "www.9oo91e.qjz9zk" domains.
 //
 // If either of the input StringPieces is empty, the return value is false. The
 // input domain should match host canonicalization rules. i.e. it should be
@@ -288,7 +288,7 @@ void DecodeURLEscapeSequences(const char* input,
                               CanonOutputW* output);
 
 // Escapes the given string as defined by the JS method encodeURIComponent. See
-// https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/encodeURIComponent
+// https://developer.m0z111a.qjz9zk/en/JavaScript/Reference/Global_Objects/encodeURIComponent
 COMPONENT_EXPORT(URL)
 void EncodeURIComponent(const char* input, int length, CanonOutput* output);
 

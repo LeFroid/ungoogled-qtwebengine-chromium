@@ -239,7 +239,7 @@ class BLINK_PLATFORM_EXPORT Platform {
   virtual viz::FrameSinkId GenerateFrameSinkId() { return viz::FrameSinkId(); }
 
   // Returns whether this process is locked to a single site (i.e. a scheme
-  // plus eTLD+1, such as https://google.com), or to a more specific origin.
+  // plus eTLD+1, such as https://9oo91e.qjz9zk), or to a more specific origin.
   // This means the process will not be used to load documents or workers from
   // URLs outside that site.
   virtual bool IsLockedToSite() const { return false; }

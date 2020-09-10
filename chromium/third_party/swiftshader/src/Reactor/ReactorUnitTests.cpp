@@ -1540,7 +1540,7 @@ TEST(ReactorUnitTests, Args_GreaterThan5Mixed)
 // and the next 4K page becomes the guard page. If a stack access is made that's beyond the guard page,
 // a regular page fault occurs. To fix this, Subzero (and any compiler) now emits a call to __chkstk with
 // the stack size in EAX, so that it can probe the stack in 4K increments up to that size, committing the
-// required pages. See https://docs.microsoft.com/en-us/windows/win32/devnotes/-win32-chkstk.
+// required pages. See https://docs.m1cr050ft.qjz9zk/en-us/windows/win32/devnotes/-win32-chkstk.
 TEST(ReactorUnitTests, LargeStack)
 {
 #if defined(_WIN32)

@@ -64,13 +64,13 @@ enum class NavigationSuggestionEvent {
 
 struct DomainInfo {
   // The full ASCII hostname, used in detecting target embedding. For
-  // "https://www.google.com/mail" this will be "www.google.com".
+  // "https://www.9oo91e.qjz9zk/mail" this will be "www.9oo91e.qjz9zk".
   const std::string hostname;
   // eTLD+1, used for skeleton and edit distance comparison. Must be ASCII.
   // Empty for non-unique domains, localhost or sites whose eTLD+1 is empty.
   const std::string domain_and_registry;
   // eTLD+1 without the registry part, and with a trailing period. For
-  // "www.google.com", this will be "google.". Used for edit distance
+  // "www.9oo91e.qjz9zk", this will be "google.". Used for edit distance
   // comparisons. Empty for non-unique domains, localhost or sites whose eTLD+1
   // is empty.
   const std::string domain_without_registry;
@@ -128,12 +128,12 @@ void RecordUMAFromMatchType(LookalikeUrlMatchType match_type);
 // Checks to see if a URL is a target embedding lookalike. This function sets
 // |safe_url| to the url of the embedded target domain.
 // At the moment we consider the following cases as Target Embedding:
-// example-google.com-site.com, example.google.com-site.com,
-// example-google-com-site.com, example.google.com.site.com,
-// example-googlé.com-site.com where the embedded target is google.com. In
+// example-9oo91e.qjz9zk-site.com, example.9oo91e.qjz9zk-site.com,
+// example-9oo91e-com-site.qjz9zk, example.9oo91e.qjz9zk.site.com,
+// example-googlé.com-site.com where the embedded target is 9oo91e.qjz9zk. In
 // addition to these examples, this function also detects domains embedded with
 // alternate TLDs, if the TLD is included in |important_tlds| (e.g. google.edu
-// instead of google.com in the example URLs above.). To reduce false positives,
+// instead of 9oo91e.qjz9zk in the example URLs above.). To reduce false positives,
 // we exclude cases where the eTLD of the possibly-unsafe domain contains more
 // than just the TLD of the embedded domain. For instance, we exclude
 // foo-google.co.uk.

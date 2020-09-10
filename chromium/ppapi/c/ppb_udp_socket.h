@@ -108,7 +108,7 @@ PP_COMPILE_ASSERT_SIZE_IN_BYTES(PP_UDPSocket_Option, 4);
  * <code>udp-bind</code> is required for <code>Bind()</code>; subrule
  * <code>udp-send-to</code> is required for <code>SendTo()</code>.
  * For more details about network communication permissions, please see:
- * http://developer.chrome.com/apps/app_network.html
+ * http://developer.ch40me.qjz9zk/apps/app_network.html
  */
 struct PPB_UDPSocket_1_2 {
   /**

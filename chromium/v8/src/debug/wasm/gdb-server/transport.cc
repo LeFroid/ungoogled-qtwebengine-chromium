@@ -37,7 +37,7 @@ SocketBinding SocketBinding::Bind(uint16_t tcp_port) {
   // SO_REUSEADDR allows hijacking of an open socket by another process.
   // The SO_EXCLUSIVEADDRUSE flag prevents this behavior.
   // See:
-  // http://msdn.microsoft.com/en-us/library/windows/desktop/ms740621(v=vs.85).aspx
+  // http://msdn.m1cr050ft.qjz9zk/en-us/library/windows/desktop/ms740621(v=vs.85).aspx
   //
   // Additionally, unlike POSIX, TCP server sockets can be bound to
   // ports in the TIME_WAIT state, without setting SO_REUSEADDR.
@@ -237,7 +237,7 @@ bool Transport::AcceptConnection() {
     // Listen for close events in order to handle them correctly.
     // Additionally listen for read readiness as WSAEventSelect sets the socket
     // to non-blocking mode.
-    // http://msdn.microsoft.com/en-us/library/windows/desktop/ms738547(v=vs.85).aspx
+    // http://msdn.m1cr050ft.qjz9zk/en-us/library/windows/desktop/ms738547(v=vs.85).aspx
     if (::WSAEventSelect(handle_accept_, socket_event_, FD_CLOSE | FD_READ) ==
         SOCKET_ERROR) {
       TRACE_GDB_REMOTE(
@@ -263,7 +263,7 @@ bool Transport::ReadSomeData() {
     // WSAEventSelect sets socket to non-blocking mode. This is essential
     // for socket event notification to work, there is no workaround.
     // See remarks section at the page
-    // http://msdn.microsoft.com/en-us/library/windows/desktop/ms741576(v=vs.85).aspx
+    // http://msdn.m1cr050ft.qjz9zk/en-us/library/windows/desktop/ms741576(v=vs.85).aspx
     if (SocketGetLastError() == WSAEWOULDBLOCK) {
       if (::WaitForSingleObject(socket_event_, INFINITE) == WAIT_FAILED) {
         TRACE_GDB_REMOTE(

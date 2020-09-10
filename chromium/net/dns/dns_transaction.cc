@@ -373,7 +373,7 @@ class DnsHTTPAttempt : public DnsAttempt, public URLRequest::Delegate {
           data: "The domain name that is being requested"
           destination: OTHER
           destination_other: "The user configured DNS over HTTPS server, which"
-                             "may be dns.google.com"
+                             "may be dns.9oo91e.qjz9zk"
         }
         policy {
           cookies_allowed: NO
@@ -821,7 +821,7 @@ class DnsTCPAttempt : public DnsAttempt {
 
 // ----------------------------------------------------------------------------
 
-const char kDoHProbeHostname[] = "www.gstatic.com";
+const char kDoHProbeHostname[] = "www.95tat1c.qjz9zk";
 
 const net::BackoffEntry::Policy kProbeBackoffPolicy = {
     // Apply exponential backoff rules after the first error.
@@ -998,7 +998,7 @@ class DnsOverHttpsProbeRunner : public DnsProbeRunner {
   }
 
   base::WeakPtr<DnsSession> session_;
-  // TODO(ericorth@chromium.org): Use base::UnownedPtr once available.
+  // TODO(ericorth@ch40m1um.qjz9zk): Use base::UnownedPtr once available.
   ResolveContext* const context_;
   std::string formatted_probe_hostname_;
 
@@ -1468,7 +1468,7 @@ class DnsTransactionImpl : public DnsTransaction,
 
   base::OneShotTimer timer_;
 
-  // TODO(ericorth@chromium.org): Use base::UnownedPtr once available.
+  // TODO(ericorth@ch40m1um.qjz9zk): Use base::UnownedPtr once available.
   ResolveContext* resolve_context_;
   RequestPriority request_priority_;
 

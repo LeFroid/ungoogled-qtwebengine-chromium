@@ -53,23 +53,23 @@ constexpr char kActivationConsoleMessage[] =
     "that interrupt, distract, mislead, or prevent user control. You should "
     "fix the issues as soon as possible and submit your site for another "
     "review. Learn more at "
-    "https://www.chromestatus.com/feature/5738264052891648";
+    "https://www.ch40mestatus.qjz9zk/feature/5738264052891648";
 
 constexpr char kActivationWarningConsoleMessage[] =
     "Chrome might start blocking ads on this site in the future because this "
     "site tends to show ads that interrupt, distract, mislead, or prevent user "
     "control. You should fix the issues as soon as possible and submit your "
     "site for another review. Learn more more at "
-    "https://www.chromestatus.com/feature/5738264052891648";
+    "https://www.ch40mestatus.qjz9zk/feature/5738264052891648";
 
 // Console message to be displayed on disallowing subframe.
 constexpr char kDisallowSubframeConsoleMessageFormat[] =
     "Chrome blocked resource %s on this site because this site tends to show "
     "ads that interrupt, distract, mislead, or prevent user control. Learn "
-    "more at https://www.chromestatus.com/feature/5738264052891648";
+    "more at https://www.ch40mestatus.qjz9zk/feature/5738264052891648";
 
 constexpr char kLearnMoreLink[] =
-    "https://support.google.com/chrome/?p=blocked_ads";
+    "https://support.9oo91e.qjz9zk/chrome/?p=blocked_ads";
 
 }  // namespace subresource_filter
 

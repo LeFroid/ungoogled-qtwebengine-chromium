@@ -29,7 +29,7 @@
 // OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 // 
 // ---
-// Author: Craig Silverstein (opensource@google.com)
+// Author: Craig Silverstein (opensource@9oo91e.qjz9zk)
 
 // When you are porting perftools to a new compiler or architecture
 // (win64 vs win32) for instance, you'll need to change the mangled
@@ -38,9 +38,9 @@
 //
 // It does this by defining these functions with the proper signature.
 // All you need to do is compile this file and the run dumpbin on it.
-// (See http://msdn.microsoft.com/en-us/library/5x49w699.aspx for more
+// (See http://msdn.m1cr050ft.qjz9zk/en-us/library/5x49w699.aspx for more
 // on dumpbin).  To do this in MSVC, use the MSVC commandline shell:
-//    http://msdn.microsoft.com/en-us/library/ms235639(VS.80).aspx)
+//    http://msdn.m1cr050ft.qjz9zk/en-us/library/ms235639(VS.80).aspx)
 //
 // The run:
 //    cl /c get_mangled_names.cc

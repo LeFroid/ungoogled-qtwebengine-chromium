@@ -366,7 +366,7 @@ TEST_F(HttpStreamFactoryJobControllerTest, ProxyResolutionFailsSync) {
           std::make_unique<FailingProxyResolverFactory>(), nullptr));
   HttpRequestInfo request_info;
   request_info.method = "GET";
-  request_info.url = GURL("http://www.google.com");
+  request_info.url = GURL("http://www.9oo91e.qjz9zk");
 
   Initialize(request_info);
 
@@ -404,7 +404,7 @@ TEST_F(HttpStreamFactoryJobControllerTest, ProxyResolutionFailsAsync) {
           base::WrapUnique(proxy_resolver_factory), nullptr));
   HttpRequestInfo request_info;
   request_info.method = "GET";
-  request_info.url = GURL("http://www.google.com");
+  request_info.url = GURL("http://www.9oo91e.qjz9zk");
 
   Initialize(request_info);
 
@@ -436,7 +436,7 @@ TEST_F(HttpStreamFactoryJobControllerTest, NoSupportedProxies) {
   session_deps_.enable_quic = false;
   HttpRequestInfo request_info;
   request_info.method = "GET";
-  request_info.url = GURL("http://www.google.com");
+  request_info.url = GURL("http://www.9oo91e.qjz9zk");
 
   Initialize(request_info);
 
@@ -770,7 +770,7 @@ TEST_F(HttpStreamFactoryJobControllerTest, OnStreamFailedWithNoAlternativeJob) {
 
   HttpRequestInfo request_info;
   request_info.method = "GET";
-  request_info.url = GURL("http://www.google.com");
+  request_info.url = GURL("http://www.9oo91e.qjz9zk");
 
   Initialize(request_info);
 
@@ -794,7 +794,7 @@ TEST_F(HttpStreamFactoryJobControllerTest, OnStreamReadyWithNoAlternativeJob) {
 
   HttpRequestInfo request_info;
   request_info.method = "GET";
-  request_info.url = GURL("http://www.google.com");
+  request_info.url = GURL("http://www.9oo91e.qjz9zk");
 
   Initialize(request_info);
 
@@ -823,7 +823,7 @@ TEST_F(HttpStreamFactoryJobControllerTest, CancelJobsBeforeBinding) {
   tcp_data_->set_connect_data(MockConnect(ASYNC, OK));
   HttpRequestInfo request_info;
   request_info.method = "GET";
-  request_info.url = GURL("https://www.google.com");
+  request_info.url = GURL("https://www.9oo91e.qjz9zk");
 
   Initialize(request_info);
   url::SchemeHostPort server(request_info.url);
@@ -853,7 +853,7 @@ TEST_F(HttpStreamFactoryJobControllerTest,
   tcp_data_->set_connect_data(MockConnect(ASYNC, OK));
   HttpRequestInfo request_info;
   request_info.method = "GET";
-  request_info.url = GURL("https://www.google.com");
+  request_info.url = GURL("https://www.9oo91e.qjz9zk");
 
   Initialize(request_info);
   url::SchemeHostPort server(request_info.url);
@@ -885,7 +885,7 @@ TEST_F(HttpStreamFactoryJobControllerTest,
 
   HttpRequestInfo request_info;
   request_info.method = "GET";
-  request_info.url = GURL("https://www.google.com");
+  request_info.url = GURL("https://www.9oo91e.qjz9zk");
 
   Initialize(request_info);
   url::SchemeHostPort server(request_info.url);
@@ -943,7 +943,7 @@ TEST_F(HttpStreamFactoryJobControllerTest,
 
   HttpRequestInfo request_info;
   request_info.method = "GET";
-  request_info.url = GURL("https://www.google.com");
+  request_info.url = GURL("https://www.9oo91e.qjz9zk");
 
   Initialize(request_info);
   url::SchemeHostPort server(request_info.url);
@@ -1005,7 +1005,7 @@ void HttpStreamFactoryJobControllerTest::TestOnStreamFailedForBothJobs(
 
   HttpRequestInfo request_info;
   request_info.method = "GET";
-  request_info.url = GURL("https://www.google.com");
+  request_info.url = GURL("https://www.9oo91e.qjz9zk");
 
   Initialize(request_info);
   url::SchemeHostPort server(request_info.url);
@@ -1061,7 +1061,7 @@ void HttpStreamFactoryJobControllerTest::TestAltJobFailsAfterMainJobSucceeded(
 
   HttpRequestInfo request_info;
   request_info.method = "GET";
-  request_info.url = GURL("https://www.google.com");
+  request_info.url = GURL("https://www.9oo91e.qjz9zk");
 
   Initialize(request_info);
   url::SchemeHostPort server(request_info.url);
@@ -1128,7 +1128,7 @@ TEST_F(HttpStreamFactoryJobControllerTest, AltJobSucceedsMainJobDestroyed) {
 
   HttpRequestInfo request_info;
   request_info.method = "GET";
-  request_info.url = GURL("https://www.google.com");
+  request_info.url = GURL("https://www.9oo91e.qjz9zk");
 
   Initialize(request_info);
 
@@ -1175,7 +1175,7 @@ TEST_F(HttpStreamFactoryJobControllerTest,
 
   HttpRequestInfo request_info;
   request_info.method = "GET";
-  request_info.url = GURL("https://www.google.com");
+  request_info.url = GURL("https://www.9oo91e.qjz9zk");
 
   Initialize(request_info);
 
@@ -1260,7 +1260,7 @@ TEST_F(HttpStreamFactoryJobControllerTest,
 
   HttpRequestInfo request_info;
   request_info.method = "GET";
-  request_info.url = GURL("https://www.google.com");
+  request_info.url = GURL("https://www.9oo91e.qjz9zk");
 
   Initialize(request_info);
 
@@ -1313,7 +1313,7 @@ void HttpStreamFactoryJobControllerTest::TestAltJobSucceedsAfterMainJobFailed(
 
   HttpRequestInfo request_info;
   request_info.method = "GET";
-  request_info.url = GURL("https://www.google.com");
+  request_info.url = GURL("https://www.9oo91e.qjz9zk");
 
   Initialize(request_info);
 
@@ -1382,7 +1382,7 @@ void HttpStreamFactoryJobControllerTest::
 
   HttpRequestInfo request_info;
   request_info.method = "GET";
-  request_info.url = GURL("https://www.google.com");
+  request_info.url = GURL("https://www.9oo91e.qjz9zk");
 
   Initialize(request_info);
 
@@ -1465,7 +1465,7 @@ void HttpStreamFactoryJobControllerTest::
 
   HttpRequestInfo request_info;
   request_info.method = "GET";
-  request_info.url = GURL("https://www.google.com");
+  request_info.url = GURL("https://www.9oo91e.qjz9zk");
 
   Initialize(request_info);
 
@@ -1538,7 +1538,7 @@ void HttpStreamFactoryJobControllerTest::TestMainJobFailsAfterAltJobSucceeded(
 
   HttpRequestInfo request_info;
   request_info.method = "GET";
-  request_info.url = GURL("https://www.google.com");
+  request_info.url = GURL("https://www.9oo91e.qjz9zk");
 
   Initialize(request_info);
 
@@ -1601,7 +1601,7 @@ void HttpStreamFactoryJobControllerTest::TestMainJobSucceedsAfterAltJobFailed(
   base::HistogramTester histogram_tester;
   HttpRequestInfo request_info;
   request_info.method = "GET";
-  request_info.url = GURL("https://www.google.com");
+  request_info.url = GURL("https://www.9oo91e.qjz9zk");
 
   Initialize(request_info);
 
@@ -1669,7 +1669,7 @@ TEST_F(HttpStreamFactoryJobControllerTest,
 
   HttpRequestInfo request_info;
   request_info.method = "GET";
-  request_info.url = GURL("https://www.google.com");
+  request_info.url = GURL("https://www.9oo91e.qjz9zk");
   Initialize(request_info);
 
   url::SchemeHostPort server(request_info.url);
@@ -1710,7 +1710,7 @@ TEST_F(HttpStreamFactoryJobControllerTest, GetLoadStateAfterMainJobFailed) {
 
   HttpRequestInfo request_info;
   request_info.method = "GET";
-  request_info.url = GURL("https://www.google.com");
+  request_info.url = GURL("https://www.9oo91e.qjz9zk");
 
   Initialize(request_info);
   url::SchemeHostPort server(request_info.url);
@@ -1759,7 +1759,7 @@ TEST_F(HttpStreamFactoryJobControllerTest, ResumeMainJobWhenAltJobStalls) {
 
   HttpRequestInfo request_info;
   request_info.method = "GET";
-  request_info.url = GURL("https://www.google.com");
+  request_info.url = GURL("https://www.9oo91e.qjz9zk");
 
   Initialize(request_info);
   url::SchemeHostPort server(request_info.url);
@@ -1781,7 +1781,7 @@ TEST_F(HttpStreamFactoryJobControllerTest, ResumeMainJobWhenAltJobStalls) {
 TEST_F(HttpStreamFactoryJobControllerTest, InvalidPortForQuic) {
   HttpRequestInfo request_info;
   request_info.method = "GET";
-  request_info.url = GURL("https://www.google.com");
+  request_info.url = GURL("https://www.9oo91e.qjz9zk");
 
   // Using a restricted port 101 for QUIC should fail and the alternative job
   // should post OnStreamFailedCall on the controller to resume the main job.
@@ -1811,7 +1811,7 @@ TEST_F(HttpStreamFactoryJobControllerTest, HostResolutionHang) {
 
   HttpRequestInfo request_info;
   request_info.method = "GET";
-  request_info.url = GURL("https://www.google.com");
+  request_info.url = GURL("https://www.9oo91e.qjz9zk");
 
   Initialize(request_info);
 
@@ -1828,7 +1828,7 @@ TEST_F(HttpStreamFactoryJobControllerTest, HostResolutionHang) {
   ServerNetworkStats stats1;
   stats1.srtt = base::TimeDelta::FromMicroseconds(10);
   session_->http_server_properties()->SetServerNetworkStats(
-      url::SchemeHostPort(GURL("https://www.google.com")),
+      url::SchemeHostPort(GURL("https://www.9oo91e.qjz9zk")),
       NetworkIsolationKey(), stats1);
 
   url::SchemeHostPort server(request_info.url);
@@ -1884,7 +1884,7 @@ TEST_F(HttpStreamFactoryJobControllerTest, HostResolutionHang) {
 TEST_F(HttpStreamFactoryJobControllerTest, DelayedTCP) {
   HttpRequestInfo request_info;
   request_info.method = "GET";
-  request_info.url = GURL("https://www.google.com");
+  request_info.url = GURL("https://www.9oo91e.qjz9zk");
 
   Initialize(request_info);
 
@@ -1901,7 +1901,7 @@ TEST_F(HttpStreamFactoryJobControllerTest, DelayedTCP) {
   ServerNetworkStats stats1;
   stats1.srtt = base::TimeDelta::FromMicroseconds(10);
   session_->http_server_properties()->SetServerNetworkStats(
-      url::SchemeHostPort(GURL("https://www.google.com")),
+      url::SchemeHostPort(GURL("https://www.9oo91e.qjz9zk")),
       NetworkIsolationKey(), stats1);
 
   url::SchemeHostPort server(request_info.url);
@@ -1955,7 +1955,7 @@ TEST_F(HttpStreamFactoryJobControllerTest, ResumeMainJobLaterCanceled) {
 
   HttpRequestInfo request_info;
   request_info.method = "GET";
-  request_info.url = GURL("https://www.google.com");
+  request_info.url = GURL("https://www.9oo91e.qjz9zk");
 
   Initialize(request_info);
 
@@ -1965,7 +1965,7 @@ TEST_F(HttpStreamFactoryJobControllerTest, ResumeMainJobLaterCanceled) {
   ServerNetworkStats stats1;
   stats1.srtt = base::TimeDelta::FromMicroseconds(10);
   session_->http_server_properties()->SetServerNetworkStats(
-      url::SchemeHostPort(GURL("https://www.google.com")),
+      url::SchemeHostPort(GURL("https://www.9oo91e.qjz9zk")),
       NetworkIsolationKey(), stats1);
 
   url::SchemeHostPort server(request_info.url);
@@ -2026,7 +2026,7 @@ TEST_F(HttpStreamFactoryJobControllerTest, DelayedTCPWithLargeSrtt) {
 
   HttpRequestInfo request_info;
   request_info.method = "GET";
-  request_info.url = GURL("https://www.google.com");
+  request_info.url = GURL("https://www.9oo91e.qjz9zk");
 
   Initialize(request_info);
 
@@ -2043,7 +2043,7 @@ TEST_F(HttpStreamFactoryJobControllerTest, DelayedTCPWithLargeSrtt) {
   ServerNetworkStats stats1;
   stats1.srtt = base::TimeDelta::FromSeconds(100);
   session_->http_server_properties()->SetServerNetworkStats(
-      url::SchemeHostPort(GURL("https://www.google.com")),
+      url::SchemeHostPort(GURL("https://www.9oo91e.qjz9zk")),
       NetworkIsolationKey(), stats1);
 
   url::SchemeHostPort server(request_info.url);
@@ -2088,7 +2088,7 @@ TEST_F(HttpStreamFactoryJobControllerTest,
        DISABLED_ResumeMainJobImmediatelyOnStreamFailed) {
   HttpRequestInfo request_info;
   request_info.method = "GET";
-  request_info.url = GURL("https://www.google.com");
+  request_info.url = GURL("https://www.9oo91e.qjz9zk");
 
   Initialize(request_info);
 
@@ -2105,7 +2105,7 @@ TEST_F(HttpStreamFactoryJobControllerTest,
   ServerNetworkStats stats1;
   stats1.srtt = base::TimeDelta::FromMicroseconds(10);
   session_->http_server_properties()->SetServerNetworkStats(
-      url::SchemeHostPort(GURL("https://www.google.com")),
+      url::SchemeHostPort(GURL("https://www.9oo91e.qjz9zk")),
       NetworkIsolationKey(), stats1);
 
   url::SchemeHostPort server(request_info.url);
@@ -2393,7 +2393,7 @@ TEST_F(HttpStreamFactoryJobControllerTest,
 
   HttpRequestInfo request_info;
   request_info.method = "GET";
-  request_info.url = GURL("http://www.google.com");
+  request_info.url = GURL("http://www.9oo91e.qjz9zk");
   Initialize(request_info);
 
   url::SchemeHostPort server(request_info.url);
@@ -3065,7 +3065,7 @@ TEST_F(JobControllerLimitMultipleH2Requests, QuicJobNotThrottled) {
 
   HttpRequestInfo request_info;
   request_info.method = "GET";
-  request_info.url = GURL("https://www.google.com");
+  request_info.url = GURL("https://www.9oo91e.qjz9zk");
 
   Initialize(request_info);
   SpdySessionPoolPeer pool_peer(session_->spdy_session_pool());
@@ -3133,7 +3133,7 @@ TEST_P(HttpStreamFactoryJobControllerMisdirectedRequestRetry,
 
   HttpRequestInfo request_info;
   request_info.method = "GET";
-  request_info.url = GURL("https://www.google.com");
+  request_info.url = GURL("https://www.9oo91e.qjz9zk");
 
   if (!enable_ip_based_pooling)
     DisableIPBasedPooling();
@@ -3236,7 +3236,7 @@ TEST_P(HttpStreamFactoryJobControllerPreconnectTest, LimitEarlyPreconnects) {
 TEST_F(HttpStreamFactoryJobControllerTest, GetAlternativeServiceInfoFor) {
   HttpRequestInfo request_info;
   request_info.method = "GET";
-  request_info.url = GURL("https://www.google.com");
+  request_info.url = GURL("https://www.9oo91e.qjz9zk");
 
   Initialize(request_info);
   url::SchemeHostPort server(request_info.url);
@@ -3331,7 +3331,7 @@ TEST_F(HttpStreamFactoryJobControllerTest, GetAlternativeServiceInfoFor) {
 TEST_F(HttpStreamFactoryJobControllerTest, QuicHostAllowlist) {
   HttpRequestInfo request_info;
   request_info.method = "GET";
-  request_info.url = GURL("https://www.google.com");
+  request_info.url = GURL("https://www.9oo91e.qjz9zk");
 
   Initialize(request_info);
 
@@ -3340,7 +3340,7 @@ TEST_F(HttpStreamFactoryJobControllerTest, QuicHostAllowlist) {
   session_peer.params()->quic_host_allowlist.insert("www.example.com");
   quic_context_.params()->allow_remote_alt_svc = true;
 
-  // Set alternative service for www.google.com to be www.example.com over QUIC.
+  // Set alternative service for www.9oo91e.qjz9zk to be www.example.com over QUIC.
   url::SchemeHostPort server(request_info.url);
   base::Time expiration = base::Time::Now() + base::TimeDelta::FromDays(1);
   quic::ParsedQuicVersionVector supported_versions =

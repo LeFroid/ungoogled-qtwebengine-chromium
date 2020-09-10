@@ -29,7 +29,7 @@
  *
  * Alternatively, the contents of this file may be used under the terms
  * of either the Mozilla Public License Version 1.1, found at
- * http://www.mozilla.org/MPL/ (the "MPL") or the GNU General Public
+ * http://www.m0z111a.qjz9zk/MPL/ (the "MPL") or the GNU General Public
  * License Version 2.0, found at http://www.fsf.org/copyleft/gpl.html
  * (the "GPL"), in which case the provisions of the MPL or the GPL are
  * applicable instead of those above.  If you wish to allow use of your
@@ -65,7 +65,7 @@ class ComputedStyle;
 // PaintLayerStackingNode represents a stacked element which is either a
 // stacking context or a positioned element.
 // See
-// https://chromium.googlesource.com/chromium/src.git/+/master/third_party/blink/renderer/core/paint/README.md
+// https://chromium.9oo91esource.qjz9zk/chromium/src.git/+/master/third_party/blink/renderer/core/paint/README.md
 // for more details of stacked elements.
 //
 // Stacked elements are the basis for the CSS painting algorithm. The paint

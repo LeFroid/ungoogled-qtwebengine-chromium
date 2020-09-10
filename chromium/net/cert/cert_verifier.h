@@ -51,7 +51,7 @@ class NET_EXPORT CertVerifier {
     bool enable_sha1_local_anchors = false;
 
     // Disable enforcement of the policies described at
-    // https://security.googleblog.com/2017/09/chromes-plan-to-distrust-symantec.html
+    // https://security.9oo91eblog.qjz9zk/2017/09/chromes-plan-to-distrust-symantec.html
     bool disable_symantec_enforcement = false;
 
     // Provides an optional CRLSet structure that can be used to avoid

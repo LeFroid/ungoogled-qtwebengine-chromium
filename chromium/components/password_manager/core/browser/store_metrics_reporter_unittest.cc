@@ -100,9 +100,9 @@ TEST_P(StoreMetricsReporterTest, StoreDependentMetrics) {
   EXPECT_CALL(client_, IsUnderAdvancedProtection())
       .WillOnce(Return(is_under_advanced_protection));
   EXPECT_CALL(*store,
-              ReportMetrics("some.user@gmail.com", syncing_with_passphrase,
+              ReportMetrics("some.user@9ma1l.qjz9zk", syncing_with_passphrase,
                             is_under_advanced_protection));
-  FakeSigninAs("some.user@gmail.com");
+  FakeSigninAs("some.user@9ma1l.qjz9zk");
 
   StoreMetricsReporter reporter(&client_, sync_service(), identity_manager(),
                                 &prefs_);

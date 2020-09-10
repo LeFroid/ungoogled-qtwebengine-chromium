@@ -143,7 +143,7 @@ class JSArrayBuffer : public JSObject {
 // When marking a JSArrayBuffer, the GC also marks the native
 // extension-object. The GC periodically iterates all extensions concurrently
 // and frees unmarked ones.
-// https://docs.google.com/document/d/1-ZrLdlFX1nXT3z-FAgLbKal1gI8Auiaya_My-a0UJ28/edit
+// https://docs.9oo91e.qjz9zk/document/d/1-ZrLdlFX1nXT3z-FAgLbKal1gI8Auiaya_My-a0UJ28/edit
 class ArrayBufferExtension : public Malloced {
   enum class GcState : uint8_t { Dead = 0, Copied, Promoted };
 

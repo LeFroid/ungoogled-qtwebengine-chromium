@@ -30,7 +30,7 @@
 // We would like to globally disable this warning, but unfortunately, the
 // compiler is buggy and only supports disabling it with a pragma, so we can't
 // disable it with other silly warnings in the build files. See:
-//   https://connect.microsoft.com/VisualStudio/feedback/details/1114440
+//   https://connect.m1cr050ft.qjz9zk/VisualStudio/feedback/details/1114440
 #pragma warning(push)
 #pragma warning(disable: 4200)
 

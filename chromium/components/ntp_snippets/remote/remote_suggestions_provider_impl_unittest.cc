@@ -1952,8 +1952,8 @@ TEST_F(RemoteSuggestionsProviderImplTest, DismissShouldRespectAllKnownUrls) {
       "http://www.aol.com/article/2016/05/stolen-doggie"};
   const std::vector<std::string> publishers = {"Mashable", "AOL"};
   const std::vector<std::string> amp_urls = {
-      "http://mashable-amphtml.googleusercontent.com/1",
-      "http://t2.gstatic.com/images?q=tbn:3"};
+      "http://mashable-amphtml.9oo91eusercontent.qjz9zk/1",
+      "http://t2.95tat1c.qjz9zk/images?q=tbn:3"};
 
   // Add the suggestion from the mashable domain.
   std::vector<FetchedCategory> fetched_categories;

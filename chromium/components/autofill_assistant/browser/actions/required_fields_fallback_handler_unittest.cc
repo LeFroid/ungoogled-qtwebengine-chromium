@@ -466,7 +466,7 @@ TEST_F(RequiredFieldsFallbackHandlerTest, AddsAllProfileFields) {
       {5, "Gamma"},
       {6, "B"},
       {7, "Alpha Beta Gamma"},
-      {9, "alpha@google.com"},
+      {9, "alpha@9oo91e.qjz9zk"},
       {10, "1234567"},
       {11, "79"},
       {12, "41"},
@@ -484,7 +484,7 @@ TEST_F(RequiredFieldsFallbackHandlerTest, AddsAllProfileFields) {
   auto profile = std::make_unique<autofill::AutofillProfile>(
       base::GenerateGUID(), autofill::test::kEmptyOrigin);
   autofill::test::SetProfileInfo(
-      profile.get(), "Alpha", "Beta", "Gamma", "alpha@google.com", "Google",
+      profile.get(), "Alpha", "Beta", "Gamma", "alpha@9oo91e.qjz9zk", "Google",
       "Brandschenkestrasse 110", "Google Building 110", "Zurich",
       "Canton Zurich", "8002", "CH", "+41791234567");
   RequiredFieldsFallbackHandler::FallbackData fallback_data;

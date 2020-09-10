@@ -354,7 +354,7 @@
               "url": {
                 "type": "string",
                 "optional": true,
-                "description": "The URL to initially navigate the tab to. Fully-qualified URLs must include a scheme (i.e., 'http://www.google.com', not 'www.google.com'). Relative URLs are relative to the current page within the extension. Defaults to the New Tab Page."
+                "description": "The URL to initially navigate the tab to. Fully-qualified URLs must include a scheme (i.e., 'http://www.9oo91e.qjz9zk', not 'www.9oo91e.qjz9zk'). Relative URLs are relative to the current page within the extension. Defaults to the New Tab Page."
               },
               "active": {
                 "type": "boolean",
@@ -742,7 +742,7 @@
               {
                 "type": "string",
                 "name": "language",
-                "description": "An ISO language code such as <code>en</code> or <code>fr</code>. For a complete list of languages supported by this method, see <a href='http://src.chromium.org/viewvc/chrome/trunk/src/third_party/cld/languages/internal/languages.cc'>kLanguageInfoTable</a>. The second to fourth columns are checked and the first non-NULL value is returned, except for Simplified Chinese for which <code>zh-CN</code> is returned. For an unknown/undefined language, <code>und</code> is returned."
+                "description": "An ISO language code such as <code>en</code> or <code>fr</code>. For a complete list of languages supported by this method, see <a href='http://src.ch40m1um.qjz9zk/viewvc/chrome/trunk/src/third_party/cld/languages/internal/languages.cc'>kLanguageInfoTable</a>. The second to fourth columns are checked and the first non-NULL value is returned, except for Simplified Chinese for which <code>zh-CN</code> is returned. For an unknown/undefined language, <code>und</code> is returned."
               }
             ]
           }

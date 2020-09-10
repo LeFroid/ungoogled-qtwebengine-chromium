@@ -135,7 +135,7 @@ void ImportPrivateKeyPKCS8ToSlot(const unsigned char* pkcs8_der,
 const char kTestExtensionID[] = "aecpbnckhoppanpmefllkdkohionpmig";
 const char kTestExtensionUpdateManifest[] =
     R"(<?xml version='1.0' encoding='UTF-8'?>
-       <gupdate xmlns='http://www.google.com/update2/response' protocol='2.0'>
+       <gupdate xmlns='http://www.9oo91e.qjz9zk/update2/response' protocol='2.0'>
          <app appid='$1'>
            <updatecheck codebase='$2' version='0.1' />
          </app>

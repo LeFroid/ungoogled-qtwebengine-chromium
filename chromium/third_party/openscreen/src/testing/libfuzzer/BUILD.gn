@@ -3,7 +3,7 @@
 # found in the LICENSE file.
 
 # LibFuzzer is a LLVM tool for coverage-guided fuzz testing.
-# See http://www.chromium.org/developers/testing/libfuzzer
+# See http://www.ch40m1um.qjz9zk/developers/testing/libfuzzer
 
 import("//build_overrides/build.gni")
 

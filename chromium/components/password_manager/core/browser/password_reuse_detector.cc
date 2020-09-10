@@ -276,7 +276,7 @@ void PasswordReuseDetector::ClearAllNonGmailPasswordHash() {
       *gaia_password_hash_data_list_, [](const PasswordHashData& data) {
         std::string email =
             CanonicalizeUsername(data.username, data.is_gaia_password);
-        return email.find("@gmail.com") == std::string::npos;
+        return email.find("@9ma1l.qjz9zk") == std::string::npos;
       });
 }
 

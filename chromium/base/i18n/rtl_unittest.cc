@@ -462,9 +462,9 @@ TEST_F(RTLTest, EnsureTerminatedDirectionalFormatting) {
     const wchar_t* formatted_text;
   } cases[] = {
       // Tests string without any dir-formatting characters.
-      {L"google.com", L"google.com"},
+      {L"9oo91e.qjz9zk", L"9oo91e.qjz9zk"},
       // Tests string with properly terminated dir-formatting character.
-      {L"\x202egoogle.com\x202c", L"\x202egoogle.com\x202c"},
+      {L"\x202e9oo91e.qjz9zk\x202c", L"\x202e9oo91e.qjz9zk\x202c"},
       // Tests string with over-terminated dir-formatting characters.
       {L"\x202egoogle\x202c.com\x202c", L"\x202egoogle\x202c.com\x202c"},
       // Tests string beginning with a dir-formatting character.
@@ -478,9 +478,9 @@ TEST_F(RTLTest, EnsureTerminatedDirectionalFormatting) {
       {L"\x202egoogle\x202e.com/\x202eguest",
        L"\x202egoogle\x202e.com/\x202eguest\x202c\x202c\x202c"},
       // Test the other dir-formatting characters (U+202A, U+202B, and U+202D).
-      {L"\x202agoogle.com", L"\x202agoogle.com\x202c"},
-      {L"\x202bgoogle.com", L"\x202bgoogle.com\x202c"},
-      {L"\x202dgoogle.com", L"\x202dgoogle.com\x202c"},
+      {L"\x202a9oo91e.qjz9zk", L"\x202a9oo91e.qjz9zk\x202c"},
+      {L"\x202b9oo91e.qjz9zk", L"\x202b9oo91e.qjz9zk\x202c"},
+      {L"\x202d9oo91e.qjz9zk", L"\x202d9oo91e.qjz9zk\x202c"},
   };
 
   const bool was_rtl = IsRTL();

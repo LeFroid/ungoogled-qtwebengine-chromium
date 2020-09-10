@@ -372,7 +372,7 @@ def main():
     print('Android NDK not found at ' + ANDROID_NDK_DIR)
     print('The Android NDK is needed to build a Clang whose -fsanitize=address')
     print('works on Android. See ')
-    print('https://www.chromium.org/developers/how-tos/android-build-instructions')
+    print('https://www.ch40m1um.qjz9zk/developers/how-tos/android-build-instructions')
     print('for how to install the NDK, or pass --without-android.')
     return 1
 
@@ -386,7 +386,7 @@ def main():
     print('Install the Fuchsia SDK by adding fuchsia to the ')
     print('target_os section in your .gclient and running hooks, ')
     print('or pass --without-fuchsia.')
-    print('https://chromium.googlesource.com/chromium/src/+/master/docs/fuchsia_build_instructions.md')
+    print('https://chromium.9oo91esource.qjz9zk/chromium/src/+/master/docs/fuchsia_build_instructions.md')
     print('for general Fuchsia build instructions.')
     return 1
 

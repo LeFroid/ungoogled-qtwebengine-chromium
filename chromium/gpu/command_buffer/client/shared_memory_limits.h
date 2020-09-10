@@ -86,7 +86,7 @@ struct SharedMemoryLimits {
 
     // Android uses a smaller command buffer for the display compositor. Meant
     // to hold the contents of the display compositor drawing the scene. See
-    // discussion here: https://goo.gl/s23m5j
+    // discussion here: https://goo.gl.qjz9zk/s23m5j
     limits.command_buffer_size = 64 * 1024;
     // These limits are meant to hold the uploads for the browser UI without
     // any excess space.

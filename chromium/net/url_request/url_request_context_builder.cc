@@ -42,6 +42,7 @@
 #include "net/quic/quic_stream_factory.h"
 #include "net/ssl/ssl_config_service_defaults.h"
 #include "net/url_request/static_http_user_agent_settings.h"
+#include "net/url_request/trk_protocol_handler.h"
 #include "net/url_request/url_request_context.h"
 #include "net/url_request/url_request_context_storage.h"
 #include "net/url_request/url_request_job_factory_impl.h"
@@ -613,6 +614,9 @@ std::unique_ptr<URLRequestContext> URLRequestContextBuilder::Build() {
                                     std::move(scheme_handler.second));
   }
   protocol_handlers_.clear();
+
+  job_factory->SetProtocolHandler(url::kTraceScheme,
+                                  std::make_unique<TrkProtocolHandler>());
 
 #if !BUILDFLAG(DISABLE_FTP_SUPPORT)
   if (ftp_enabled_) {

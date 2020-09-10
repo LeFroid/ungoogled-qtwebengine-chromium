@@ -350,7 +350,7 @@ std::string AutofillAssistantPrivateAPI::GetServerUrl() const {
   // TODO(crbug.com/1015753): Consider the autofill-assistant-url for endpoint
   // overrides and share the kDefaultAutofillAssistantServerUrl to expose it
   // here.
-  return "https://automate-pa.googleapis.com";
+  return "https://automate-pa.9oo91eapis.qjz9zk";
 }
 
 std::string AutofillAssistantPrivateAPI::GetLocale() const {

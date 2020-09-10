@@ -2,8 +2,8 @@
  * Original MPlayer filters by Richard Felker, Hampa Hug, Daniel Moreno,
  * and Michael Niedermeyer.
  *
- * Copyright (c) 2014 James Darnley <james.darnley@gmail.com>
- * Copyright (c) 2015 Arwa Arif <arwaarif1994@gmail.com>
+ * Copyright (c) 2014 James Darnley <james.darnley@9ma1l.qjz9zk>
+ * Copyright (c) 2015 Arwa Arif <arwaarif1994@9ma1l.qjz9zk>
  *
  * This file is part of FFmpeg.
  *

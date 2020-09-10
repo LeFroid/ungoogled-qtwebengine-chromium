@@ -51,7 +51,7 @@ class CaptivePortalTabReloader;
 // following the refactor of navigation signaling to WebContentsObservers.
 //
 // For the design doc, see:
-// https://docs.google.com/document/d/1k-gP2sswzYNvryu9NcgN7q5XrsMlUdlUdoW9WRaEmfM/edit
+// https://docs.9oo91e.qjz9zk/document/d/1k-gP2sswzYNvryu9NcgN7q5XrsMlUdlUdoW9WRaEmfM/edit
 class CaptivePortalTabHelper
     : public content::WebContentsObserver,
       public content::WebContentsUserData<CaptivePortalTabHelper> {

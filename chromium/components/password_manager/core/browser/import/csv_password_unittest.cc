@@ -334,14 +334,14 @@ INSTANTIATE_TEST_SUITE_P(
             .Map({{0, Label::kOrigin},
                   {1, Label::kUsername},
                   {2, Label::kPassword}})
-            .CSV("https://aččountš.googľe.čom/,test@gmail.com,test1\n")
+            .CSV("https://aččountš.googľe.čom/,test@9ma1l.qjz9zk,test1\n")
             .Status(Status::kSyntaxError)
             .Build(),
         TestCaseBuilder("invalid URI")
             .Map({{0, Label::kOrigin},
                   {1, Label::kUsername},
                   {2, Label::kPassword}})
-            .CSV(":,test@gmail.com,test1\n")
+            .CSV(":,test@9ma1l.qjz9zk,test1\n")
             .Status(Status::kSemanticError)
             .Build(),
         TestCaseBuilder("map not injective")

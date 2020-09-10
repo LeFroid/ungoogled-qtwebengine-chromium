@@ -79,12 +79,12 @@ class VerdictCacheManagerTest : public ::testing::Test {
 };
 
 TEST_F(VerdictCacheManagerTest, TestCanRetrieveCachedVerdict) {
-  GURL url("https://www.google.com/");
+  GURL url("https://www.9oo91e.qjz9zk/");
   ReusedPasswordAccountType password_type;
   password_type.set_account_type(ReusedPasswordAccountType::GSUITE);
   password_type.set_is_account_syncing(true);
   LoginReputationClientResponse cached_verdict;
-  cached_verdict.set_cache_expression("www.google.com/");
+  cached_verdict.set_cache_expression("www.9oo91e.qjz9zk/");
   EXPECT_EQ(LoginReputationClientResponse::VERDICT_TYPE_UNSPECIFIED,
             cache_manager_->GetCachedPhishGuardVerdict(
                 url, LoginReputationClientRequest::PASSWORD_REUSE_EVENT,
@@ -92,7 +92,7 @@ TEST_F(VerdictCacheManagerTest, TestCanRetrieveCachedVerdict) {
 
   CachePhishGuardVerdict(LoginReputationClientRequest::PASSWORD_REUSE_EVENT,
                          password_type, LoginReputationClientResponse::SAFE, 60,
-                         "www.google.com/", base::Time::Now());
+                         "www.9oo91e.qjz9zk/", base::Time::Now());
 
   EXPECT_EQ(LoginReputationClientResponse::SAFE,
             cache_manager_->GetCachedPhishGuardVerdict(
@@ -101,12 +101,12 @@ TEST_F(VerdictCacheManagerTest, TestCanRetrieveCachedVerdict) {
 }
 
 TEST_F(VerdictCacheManagerTest, TestCacheSplitByTriggerType) {
-  GURL url("https://www.google.com/");
+  GURL url("https://www.9oo91e.qjz9zk/");
   ReusedPasswordAccountType password_type;
   password_type.set_account_type(ReusedPasswordAccountType::GSUITE);
   password_type.set_is_account_syncing(true);
   LoginReputationClientResponse cached_verdict;
-  cached_verdict.set_cache_expression("www.google.com/");
+  cached_verdict.set_cache_expression("www.9oo91e.qjz9zk/");
   EXPECT_EQ(LoginReputationClientResponse::VERDICT_TYPE_UNSPECIFIED,
             cache_manager_->GetCachedPhishGuardVerdict(
                 url, LoginReputationClientRequest::PASSWORD_REUSE_EVENT,
@@ -114,7 +114,7 @@ TEST_F(VerdictCacheManagerTest, TestCacheSplitByTriggerType) {
 
   CachePhishGuardVerdict(LoginReputationClientRequest::UNFAMILIAR_LOGIN_PAGE,
                          password_type, LoginReputationClientResponse::SAFE, 60,
-                         "www.google.com/", base::Time::Now());
+                         "www.9oo91e.qjz9zk/", base::Time::Now());
 
   EXPECT_EQ(LoginReputationClientResponse::VERDICT_TYPE_UNSPECIFIED,
             cache_manager_->GetCachedPhishGuardVerdict(
@@ -123,12 +123,12 @@ TEST_F(VerdictCacheManagerTest, TestCacheSplitByTriggerType) {
 }
 
 TEST_F(VerdictCacheManagerTest, TestCacheSplitByPasswordType) {
-  GURL url("https://www.google.com/");
+  GURL url("https://www.9oo91e.qjz9zk/");
   ReusedPasswordAccountType password_type;
   password_type.set_account_type(ReusedPasswordAccountType::GSUITE);
   password_type.set_is_account_syncing(true);
   LoginReputationClientResponse cached_verdict;
-  cached_verdict.set_cache_expression("www.google.com/");
+  cached_verdict.set_cache_expression("www.9oo91e.qjz9zk/");
   EXPECT_EQ(LoginReputationClientResponse::VERDICT_TYPE_UNSPECIFIED,
             cache_manager_->GetCachedPhishGuardVerdict(
                 url, LoginReputationClientRequest::PASSWORD_REUSE_EVENT,
@@ -138,7 +138,7 @@ TEST_F(VerdictCacheManagerTest, TestCacheSplitByPasswordType) {
       ReusedPasswordAccountType::NON_GAIA_ENTERPRISE);
   CachePhishGuardVerdict(LoginReputationClientRequest::UNFAMILIAR_LOGIN_PAGE,
                          password_type, LoginReputationClientResponse::SAFE, 60,
-                         "www.google.com/", base::Time::Now());
+                         "www.9oo91e.qjz9zk/", base::Time::Now());
   password_type.set_account_type(ReusedPasswordAccountType::GSUITE);
   EXPECT_EQ(LoginReputationClientResponse::VERDICT_TYPE_UNSPECIFIED,
             cache_manager_->GetCachedPhishGuardVerdict(
@@ -148,7 +148,7 @@ TEST_F(VerdictCacheManagerTest, TestCacheSplitByPasswordType) {
 
 TEST_F(VerdictCacheManagerTest, TestGetStoredPhishGuardVerdictCount) {
   LoginReputationClientResponse cached_verdict;
-  cached_verdict.set_cache_expression("www.google.com/");
+  cached_verdict.set_cache_expression("www.9oo91e.qjz9zk/");
   EXPECT_EQ(0u, cache_manager_->GetStoredPhishGuardVerdictCount(
                     LoginReputationClientRequest::PASSWORD_REUSE_EVENT));
   ReusedPasswordAccountType password_type;
@@ -157,21 +157,21 @@ TEST_F(VerdictCacheManagerTest, TestGetStoredPhishGuardVerdictCount) {
   password_type.set_is_account_syncing(true);
   CachePhishGuardVerdict(LoginReputationClientRequest::PASSWORD_REUSE_EVENT,
                          password_type, LoginReputationClientResponse::SAFE, 60,
-                         "www.google.com/", base::Time::Now());
+                         "www.9oo91e.qjz9zk/", base::Time::Now());
 
   EXPECT_EQ(1u, cache_manager_->GetStoredPhishGuardVerdictCount(
                     LoginReputationClientRequest::PASSWORD_REUSE_EVENT));
 
   CachePhishGuardVerdict(LoginReputationClientRequest::PASSWORD_REUSE_EVENT,
                          password_type, LoginReputationClientResponse::SAFE, 60,
-                         "www.google.com/", base::Time::Now());
+                         "www.9oo91e.qjz9zk/", base::Time::Now());
 
   EXPECT_EQ(1u, cache_manager_->GetStoredPhishGuardVerdictCount(
                     LoginReputationClientRequest::PASSWORD_REUSE_EVENT));
 
   CachePhishGuardVerdict(LoginReputationClientRequest::PASSWORD_REUSE_EVENT,
                          password_type, LoginReputationClientResponse::SAFE, 60,
-                         "www.google.com/path", base::Time::Now());
+                         "www.9oo91e.qjz9zk/path", base::Time::Now());
 
   EXPECT_EQ(2u, cache_manager_->GetStoredPhishGuardVerdictCount(
                     LoginReputationClientRequest::PASSWORD_REUSE_EVENT));
@@ -181,7 +181,7 @@ TEST_F(VerdictCacheManagerTest, TestParseInvalidVerdictEntry) {
   // Directly save an invalid cache entry.
   LoginReputationClientResponse verdict;
   verdict.set_verdict_type(LoginReputationClientResponse::SAFE);
-  verdict.set_cache_expression("www.google.com/");
+  verdict.set_cache_expression("www.9oo91e.qjz9zk/");
   verdict.set_cache_duration_sec(60);
 
   std::string verdict_serialized;
@@ -192,12 +192,12 @@ TEST_F(VerdictCacheManagerTest, TestParseInvalidVerdictEntry) {
   auto* verdict_dictionary =
       cache_dictionary->SetKey("2", base::Value(base::Value::Type::DICTIONARY));
   auto* verdict_entry = verdict_dictionary->SetKey(
-      "www.google.com/", base::Value(base::Value::Type::DICTIONARY));
+      "www.9oo91e.qjz9zk/", base::Value(base::Value::Type::DICTIONARY));
   verdict_entry->SetStringKey("cache_creation_time", "invalid_time");
   verdict_entry->SetStringKey("verdict_proto", verdict_serialized);
 
   content_setting_map_->SetWebsiteSettingDefaultScope(
-      GURL("http://www.google.com/"), GURL(),
+      GURL("http://www.9oo91e.qjz9zk/"), GURL(),
       ContentSettingsType::PASSWORD_PROTECTION, std::string(),
       std::move(cache_dictionary));
 
@@ -208,7 +208,7 @@ TEST_F(VerdictCacheManagerTest, TestParseInvalidVerdictEntry) {
   LoginReputationClientResponse cached_verdict;
   EXPECT_EQ(LoginReputationClientResponse::VERDICT_TYPE_UNSPECIFIED,
             cache_manager_->GetCachedPhishGuardVerdict(
-                GURL("https://www.google.com/"),
+                GURL("https://www.9oo91e.qjz9zk/"),
                 LoginReputationClientRequest::PASSWORD_REUSE_EVENT,
                 password_type, &cached_verdict));
 }
@@ -393,7 +393,7 @@ TEST_F(VerdictCacheManagerTest, TestCleanUpExpiredVerdictWithInvalidEntry) {
   // Directly save an invalid cache entry.
   LoginReputationClientResponse verdict;
   verdict.set_verdict_type(LoginReputationClientResponse::SAFE);
-  verdict.set_cache_expression("www.google.com/");
+  verdict.set_cache_expression("www.9oo91e.qjz9zk/");
   verdict.set_cache_duration_sec(60);
 
   std::string verdict_serialized;
@@ -404,12 +404,12 @@ TEST_F(VerdictCacheManagerTest, TestCleanUpExpiredVerdictWithInvalidEntry) {
   auto* verdict_dictionary =
       cache_dictionary->SetKey("1", base::Value(base::Value::Type::DICTIONARY));
   auto* verdict_entry = verdict_dictionary->SetKey(
-      "www.google.com/path", base::Value(base::Value::Type::DICTIONARY));
+      "www.9oo91e.qjz9zk/path", base::Value(base::Value::Type::DICTIONARY));
   verdict_entry->SetStringKey("cache_creation_time", "invalid_time");
   verdict_entry->SetStringKey("verdict_proto", verdict_serialized);
 
   content_setting_map_->SetWebsiteSettingDefaultScope(
-      GURL("http://www.google.com/"), GURL(),
+      GURL("http://www.9oo91e.qjz9zk/"), GURL(),
       ContentSettingsType::PASSWORD_PROTECTION, std::string(),
       std::move(cache_dictionary));
 
@@ -418,12 +418,12 @@ TEST_F(VerdictCacheManagerTest, TestCleanUpExpiredVerdictWithInvalidEntry) {
   // Save one valid entry
   CachePhishGuardVerdict(LoginReputationClientRequest::PASSWORD_REUSE_EVENT,
                          password_type, LoginReputationClientResponse::SAFE, 60,
-                         "www.google.com/", base::Time::Now());
+                         "www.9oo91e.qjz9zk/", base::Time::Now());
 
   // Verify we saved two entries under PasswordType PRIMARY_ACCOUNT_PASSWORD
   EXPECT_EQ(2U,
             content_setting_map_
-                ->GetWebsiteSetting(GURL("http://www.google.com/"), GURL(),
+                ->GetWebsiteSetting(GURL("http://www.9oo91e.qjz9zk/"), GURL(),
                                     ContentSettingsType::PASSWORD_PROTECTION,
                                     std::string(), nullptr)
                 ->FindDictKey("1")
@@ -434,7 +434,7 @@ TEST_F(VerdictCacheManagerTest, TestCleanUpExpiredVerdictWithInvalidEntry) {
   // One should have been cleaned up
   EXPECT_EQ(1U,
             content_setting_map_
-                ->GetWebsiteSetting(GURL("http://www.google.com/"), GURL(),
+                ->GetWebsiteSetting(GURL("http://www.9oo91e.qjz9zk/"), GURL(),
                                     ContentSettingsType::PASSWORD_PROTECTION,
                                     std::string(), nullptr)
                 ->FindDictKey("1")

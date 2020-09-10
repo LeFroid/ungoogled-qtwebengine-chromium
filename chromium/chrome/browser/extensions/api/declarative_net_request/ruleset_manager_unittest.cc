@@ -282,7 +282,7 @@ TEST_P(RulesetManagerTest, TotalEvaluationTimeHistogram) {
   WebRequestInfo example_com_request(
       GetRequestParamsForURL("http://example.com"));
   WebRequestInfo google_com_request(
-      GetRequestParamsForURL("http://google.com"));
+      GetRequestParamsForURL("http://9oo91e.qjz9zk"));
   bool is_incognito_context = false;
   const char* kHistogramName =
       "Extensions.DeclarativeNetRequest.EvaluateRequestTime.AllExtensions3";
@@ -331,13 +331,13 @@ TEST_P(RulesetManagerTest, TotalEvaluationTimeHistogram) {
 
 // Test redirect rules.
 TEST_P(RulesetManagerTest, Redirect) {
-  // Add an extension ruleset which redirects "example.com" to "google.com".
+  // Add an extension ruleset which redirects "example.com" to "9oo91e.qjz9zk".
   TestRule rule = CreateGenericRule();
   rule.condition->url_filter = std::string("example.com");
   rule.priority = kMinValidPriority;
   rule.action->type = std::string("redirect");
   rule.action->redirect.emplace();
-  rule.action->redirect->url = std::string("http://google.com");
+  rule.action->redirect->url = std::string("http://9oo91e.qjz9zk");
   std::unique_ptr<CompositeMatcher> matcher;
   ASSERT_NO_FATAL_FAILURE(
       CreateMatcherForRules({rule}, "test_extension", &matcher,
@@ -345,13 +345,13 @@ TEST_P(RulesetManagerTest, Redirect) {
   manager()->AddRuleset(last_loaded_extension()->id(), std::move(matcher));
 
   // Create a request to "example.com" with an empty initiator. It should be
-  // redirected to "google.com".
+  // redirected to "9oo91e.qjz9zk".
   const bool is_incognito_context = false;
   const char* kExampleURL = "http://example.com";
   RequestAction expected_redirect_action = CreateRequestActionForTesting(
       RequestActionType::REDIRECT, *rule.id, *rule.priority,
       dnr_api::SOURCE_TYPE_MANIFEST, last_loaded_extension()->id());
-  expected_redirect_action.redirect_url = GURL("http://google.com");
+  expected_redirect_action.redirect_url = GURL("http://9oo91e.qjz9zk");
   WebRequestInfo request_1(GetRequestParamsForURL(kExampleURL, base::nullopt));
   manager()->EvaluateRequest(request_1, is_incognito_context);
   ASSERT_EQ(1u, request_1.dnr_actions->size());
@@ -398,7 +398,7 @@ TEST_P(RulesetManagerTest, ExtensionScheme) {
   }
 
   // Add another extension with a background page which redirects all requests
-  // to "http://google.com".
+  // to "http://9oo91e.qjz9zk".
   {
     std::unique_ptr<CompositeMatcher> matcher;
     TestRule rule = CreateGenericRule();
@@ -406,7 +406,7 @@ TEST_P(RulesetManagerTest, ExtensionScheme) {
     rule.priority = kMinValidPriority;
     rule.action->type = std::string("redirect");
     rule.action->redirect.emplace();
-    rule.action->redirect->url = std::string("http://google.com");
+    rule.action->redirect->url = std::string("http://9oo91e.qjz9zk");
     ASSERT_NO_FATAL_FAILURE(CreateMatcherForRules(
         {rule}, "test extension_2", &matcher,
         std::vector<std::string>({URLPattern::kAllUrlsPattern}),
@@ -579,7 +579,7 @@ TEST_P(RulesetManagerTest, HostPermissionForInitiator) {
        false, false},
       // Doesn't have access to initiator. But blocking a request doesn't
       // require host permissions.
-      {"https://example.com", url::Origin::Create(GURL("http://google.com")),
+      {"https://example.com", url::Origin::Create(GURL("http://9oo91e.qjz9zk")),
        false, true},
   };
 

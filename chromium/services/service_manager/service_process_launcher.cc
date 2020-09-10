@@ -190,7 +190,7 @@ base::ProcessId ServiceProcessLauncher::ProcessState::LaunchInBackground(
 
   // Pseudo handles are used when stdout and stderr redirect to the console. In
   // that case, they're automatically inherited by child processes. See
-  // https://msdn.microsoft.com/en-us/library/windows/desktop/ms682075.aspx
+  // https://msdn.m1cr050ft.qjz9zk/en-us/library/windows/desktop/ms682075.aspx
   // Trying to add them to the list of handles to inherit causes CreateProcess
   // to fail. When this process is launched from Python then a real handle is
   // used. In that case, we do want to add it to the list of handles that is

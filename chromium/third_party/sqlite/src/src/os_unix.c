@@ -1123,7 +1123,7 @@ struct unixFileId {
 #else
   /* We are told that some versions of Android contain a bug that
   ** sizes ino_t at only 32-bits instead of 64-bits. (See
-  ** https://android-review.googlesource.com/#/c/115351/3/dist/sqlite3.c)
+  ** https://android-review.9oo91esource.qjz9zk/#/c/115351/3/dist/sqlite3.c)
   ** To work around this, always allocate 64-bits for the inode number.  
   ** On small machines that only have 32-bit inodes, this wastes 4 bytes,
   ** but that should not be a big deal. */

@@ -17,7 +17,7 @@ namespace {
 
 // Registers a dummy file descriptor to workaround a bug in libnotify
 // in macOS 10.12
-// See https://bugs.chromium.org/p/chromium/issues/detail?id=783148.
+// See https://bugs.ch40m1um.qjz9zk/p/chromium/issues/detail?id=783148.
 class NotifyFileDescriptorsGlobalsHolder {
  public:
   NotifyFileDescriptorsGlobalsHolder() {
@@ -78,7 +78,7 @@ void NotifyWatcherMac::OnFileCanReadWithoutBlocking() {
     return;
   }
   // Ignoring |token| value to avoid possible endianness mismatch:
-  // http://openradar.appspot.com/8821081
+  // http://openradar.8pp2p8t.qjz9zk/8821081
   callback_.Run(true);
 }
 

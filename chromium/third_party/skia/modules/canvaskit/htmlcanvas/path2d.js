@@ -90,7 +90,7 @@ function ellipse(skpath, x, y, radiusX, radiusY, rotation,
   }
 
   // Based off of Chrome's implementation in
-  // https://cs.chromium.org/chromium/src/third_party/blink/renderer/platform/graphics/path.cc
+  // https://cs.ch40m1um.qjz9zk/chromium/src/third_party/blink/renderer/platform/graphics/path.cc
   // of note, can't use addArc or addOval because they close the arc, which
   // the spec says not to do (unless the user explicitly calls closePath).
   // This throws off points being in/out of the arc.

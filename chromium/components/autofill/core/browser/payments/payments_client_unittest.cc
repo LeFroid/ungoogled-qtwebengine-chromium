@@ -108,7 +108,7 @@ class PaymentsClientTest : public testing::Test {
         test_shared_loader_factory_, identity_test_env_.identity_manager(),
         &test_personal_data_);
     test_personal_data_.SetAccountInfoForPayments(
-        identity_test_env_.MakePrimaryAccountAvailable("example@gmail.com"));
+        identity_test_env_.MakePrimaryAccountAvailable("example@9ma1l.qjz9zk"));
   }
 
   void TearDown() override { client_.reset(); }
@@ -428,11 +428,11 @@ TEST_F(PaymentsClientTest, UnmaskSuccessViaCVCWithCreationOptions) {
   ReturnResponse(
       net::HTTP_OK,
       "{ \"pan\": \"1234\", \"dcvv\": \"321\", \"fido_creation_options\": "
-      "{\"relying_party_id\": \"google.com\"}}");
+      "{\"relying_party_id\": \"9oo91e.qjz9zk\"}}");
   EXPECT_EQ(AutofillClient::SUCCESS, result_);
   EXPECT_EQ("1234", unmask_response_details_->real_pan);
   EXPECT_EQ("321", unmask_response_details_->dcvv);
-  EXPECT_EQ("google.com",
+  EXPECT_EQ("9oo91e.qjz9zk",
             *unmask_response_details_->fido_creation_options->FindStringKey(
                 "relying_party_id"));
 }
@@ -533,10 +533,10 @@ TEST_F(PaymentsClientTest, EnrollAttemptReturnsCreationOptions) {
                  "{ \"fido_authentication_info\": { \"user_status\": "
                  "\"FIDO_AUTH_DISABLED\","
                  "\"fido_creation_options\": {"
-                 "\"relying_party_id\": \"google.com\"}}}");
+                 "\"relying_party_id\": \"9oo91e.qjz9zk\"}}}");
   EXPECT_EQ(AutofillClient::SUCCESS, result_);
   EXPECT_FALSE(opt_change_response_.user_is_opted_in.value());
-  EXPECT_EQ("google.com",
+  EXPECT_EQ("9oo91e.qjz9zk",
             *opt_change_response_.fido_creation_options->FindStringKey(
                 "relying_party_id"));
 }
@@ -756,7 +756,7 @@ TEST_F(PaymentsClientTest, SupportedCardBinRangesParsesCorrectly) {
 TEST_F(PaymentsClientTest, GetUploadAccountFromSyncTest) {
   // Set up a different account.
   const AccountInfo& secondary_account_info =
-      identity_test_env_.MakeAccountAvailable("secondary@gmail.com");
+      identity_test_env_.MakeAccountAvailable("secondary@9ma1l.qjz9zk");
   test_personal_data_.SetAccountInfoForPayments(secondary_account_info);
 
   StartUploading(/*include_cvc=*/true);

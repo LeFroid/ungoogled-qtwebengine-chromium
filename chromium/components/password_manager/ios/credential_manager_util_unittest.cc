@@ -18,7 +18,7 @@ namespace password_manager {
 namespace {
 
 constexpr char kTestWebOrigin[] = "https://example.com/";
-constexpr char kTestIconUrl[] = "https://www.google.com/favicon.ico";
+constexpr char kTestIconUrl[] = "https://www.9oo91e.qjz9zk/favicon.ico";
 
 base::DictionaryValue BuildExampleCredential() {
   base::DictionaryValue json;
@@ -231,14 +231,14 @@ TEST_F(CredentialManagerUtilTest, ParseFederations) {
   std::unique_ptr<base::ListValue> list_ptr =
       std::make_unique<base::ListValue>();
   list_ptr->Append(kTestWebOrigin);
-  list_ptr->Append("https://google.com");
+  list_ptr->Append("https://9oo91e.qjz9zk");
   json.SetList(kCredentialRequestProvidersKey, std::move(list_ptr));
   std::vector<GURL> federations;
 
   // Check that parsing valid |providers| results in correct |federations| list.
   EXPECT_TRUE(ParseFederations(json, &federations));
   EXPECT_THAT(federations, testing::ElementsAre(GURL(kTestWebOrigin),
-                                                GURL("https://google.com")));
+                                                GURL("https://9oo91e.qjz9zk")));
 
   // ParseFederations should skip invalid URLs.
   list_ptr = std::make_unique<base::ListValue>();

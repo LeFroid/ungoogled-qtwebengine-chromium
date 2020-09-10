@@ -83,7 +83,7 @@ bool IsBehindCaptivePortal() {
     Microsoft::WRL::ComPtr<INetwork> network;
     ULONG items_returned = 0;
     // Note: MSDN documentation at
-    // https://msdn.microsoft.com/en-us/library/windows/desktop/aa370740(v=vs.85).aspx
+    // https://msdn.m1cr050ft.qjz9zk/en-us/library/windows/desktop/aa370740(v=vs.85).aspx
     // says items_returned is set to NULL if the first parameter is 1, but this
     // seems incorrect. In this call, items_returned is 1 until there are no
     // networks. Then it becomes zero.

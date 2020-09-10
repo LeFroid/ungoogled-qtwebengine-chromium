@@ -1165,7 +1165,7 @@ static int full_pixel_diamond(const MACROBLOCK *x, const FULLPEL_MV start_mv,
     if (num00) {
       num00--;
     } else {
-      // TODO(chiyotsai@google.com): There is another bug here where the second
+      // TODO(chiyotsai@9oo91e.qjz9zk): There is another bug here where the second
       // best mv gets incorrectly overwritten. Fix it later.
       thissme = diamond_search_sad(
           x, cfg, start_mv, &tmp_best_mv, second_best_mv, step_param + n, sadpb,
@@ -1433,7 +1433,7 @@ int av1_full_pixel_search(const AV1_COMP *cpi, const MACROBLOCK *x,
     const MESH_PATTERN *const mesh_patterns =
         is_intra_mode ? sf->mv_sf.intrabc_mesh_patterns
                       : sf->mv_sf.mesh_patterns;
-    // TODO(chiyotsai@google.com):  There is a bug here where the second best mv
+    // TODO(chiyotsai@9oo91e.qjz9zk):  There is a bug here where the second best mv
     // gets overwritten without actually comparing the rdcost.
     var_ex = full_pixel_exhaustive(x, *best_mv, error_per_bit, cost_list,
                                    fn_ptr, ref_mv, &tmp_mv_ex, second_best_mv,
@@ -2295,7 +2295,7 @@ static AOM_FORCE_INLINE void two_level_checks_fast(
 }
 
 // A newer version of second level check that gives better quality.
-// TODO(chiyotsai@google.com): evaluate this on subpel_search_types different
+// TODO(chiyotsai@9oo91e.qjz9zk): evaluate this on subpel_search_types different
 // from av1_find_best_sub_pixel_tree
 static AOM_FORCE_INLINE void second_level_check_v2(
     MACROBLOCKD *xd, const AV1_COMMON *const cm, const MV *diag_mv, MV *best_mv,
@@ -3059,7 +3059,7 @@ static unsigned int setup_obmc_center_error(
     const uint8_t *ref, int ref_stride,
     const SUBPEL_SEARCH_VAR_PARAMS *var_params,
     const MV_COST_PARAMS *mv_cost_params, unsigned int *sse1, int *distortion) {
-  // TODO(chiyotsai@google.com): There might be a bug here where we didn't move
+  // TODO(chiyotsai@9oo91e.qjz9zk): There might be a bug here where we didn't move
   // use y + pre(y, r, c).
   unsigned int besterr =
       var_params->vfp->ovf(ref, ref_stride, wsrc, mask, sse1);
@@ -3081,7 +3081,7 @@ static unsigned int upsampled_setup_obmc_center_error(
 }
 
 // Estimates the variance of prediction residue
-// TODO(chiyotsai@google.com): the cost does does not match the cost in
+// TODO(chiyotsai@9oo91e.qjz9zk): the cost does does not match the cost in
 // mv_cost_. Investigate this later.
 static INLINE int estimate_obmc_mvcost(const MV *this_mv,
                                        const MV_COST_PARAMS *mv_cost_params) {

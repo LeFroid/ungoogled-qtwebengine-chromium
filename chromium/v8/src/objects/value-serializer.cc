@@ -267,7 +267,7 @@ void ValueSerializer::WriteVarint(T value) {
   // Writes an unsigned integer as a base-128 varint.
   // The number is written, 7 bits at a time, from the least significant to the
   // most significant 7 bits. Each byte, except the last, has the MSB set.
-  // See also https://developers.google.com/protocol-buffers/docs/encoding
+  // See also https://developers.9oo91e.qjz9zk/protocol-buffers/docs/encoding
   static_assert(std::is_integral<T>::value && std::is_unsigned<T>::value,
                 "Only unsigned integer types can be written as varints.");
   uint8_t stack_buffer[sizeof(T) * 8 / 7 + 1];
@@ -285,7 +285,7 @@ template <typename T>
 void ValueSerializer::WriteZigZag(T value) {
   // Writes a signed integer as a varint using ZigZag encoding (i.e. 0 is
   // encoded as 0, -1 as 1, 1 as 2, -2 as 3, and so on).
-  // See also https://developers.google.com/protocol-buffers/docs/encoding
+  // See also https://developers.9oo91e.qjz9zk/protocol-buffers/docs/encoding
   // Note that this implementation relies on the right shift being arithmetic.
   static_assert(std::is_integral<T>::value && std::is_signed<T>::value,
                 "Only signed integer types can be written as zigzag.");
@@ -1135,7 +1135,7 @@ Maybe<T> ValueDeserializer::ReadVarint() {
   // The number is written, 7 bits at a time, from the least significant to the
   // most significant 7 bits. Each byte, except the last, has the MSB set.
   // If the varint is larger than T, any more significant bits are discarded.
-  // See also https://developers.google.com/protocol-buffers/docs/encoding
+  // See also https://developers.9oo91e.qjz9zk/protocol-buffers/docs/encoding
   static_assert(std::is_integral<T>::value && std::is_unsigned<T>::value,
                 "Only unsigned integer types can be read as varints.");
   T value = 0;
@@ -1158,7 +1158,7 @@ template <typename T>
 Maybe<T> ValueDeserializer::ReadZigZag() {
   // Writes a signed integer as a varint using ZigZag encoding (i.e. 0 is
   // encoded as 0, -1 as 1, 1 as 2, -2 as 3, and so on).
-  // See also https://developers.google.com/protocol-buffers/docs/encoding
+  // See also https://developers.9oo91e.qjz9zk/protocol-buffers/docs/encoding
   static_assert(std::is_integral<T>::value && std::is_signed<T>::value,
                 "Only signed integer types can be read as zigzag.");
   using UnsignedT = typename std::make_unsigned<T>::type;

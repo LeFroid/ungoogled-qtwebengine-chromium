@@ -49,20 +49,20 @@ TEST(URLPatternSetTest, Empty) {
 
 TEST(URLPatternSetTest, One) {
   URLPatternSet set;
-  AddPattern(&set, "http://www.google.com/*");
+  AddPattern(&set, "http://www.9oo91e.qjz9zk/*");
 
-  EXPECT_TRUE(set.MatchesURL(GURL("http://www.google.com/")));
-  EXPECT_TRUE(set.MatchesURL(GURL("http://www.google.com/monkey")));
-  EXPECT_FALSE(set.MatchesURL(GURL("https://www.google.com/")));
-  EXPECT_FALSE(set.MatchesURL(GURL("https://www.microsoft.com/")));
+  EXPECT_TRUE(set.MatchesURL(GURL("http://www.9oo91e.qjz9zk/")));
+  EXPECT_TRUE(set.MatchesURL(GURL("http://www.9oo91e.qjz9zk/monkey")));
+  EXPECT_FALSE(set.MatchesURL(GURL("https://www.9oo91e.qjz9zk/")));
+  EXPECT_FALSE(set.MatchesURL(GURL("https://www.m1cr050ft.qjz9zk/")));
 }
 
 TEST(URLPatternSetTest, Two) {
   URLPatternSet set;
-  AddPattern(&set, "http://www.google.com/*");
+  AddPattern(&set, "http://www.9oo91e.qjz9zk/*");
   AddPattern(&set, "http://www.yahoo.com/*");
 
-  EXPECT_TRUE(set.MatchesURL(GURL("http://www.google.com/monkey")));
+  EXPECT_TRUE(set.MatchesURL(GURL("http://www.9oo91e.qjz9zk/monkey")));
   EXPECT_TRUE(set.MatchesURL(GURL("http://www.yahoo.com/monkey")));
   EXPECT_FALSE(set.MatchesURL(GURL("https://www.apple.com/monkey")));
 }
@@ -77,27 +77,27 @@ TEST(URLPatternSetTest, StreamOperatorEmpty) {
 
 TEST(URLPatternSetTest, StreamOperatorOne) {
   URLPatternSet set;
-  AddPattern(&set, "http://www.google.com/*");
+  AddPattern(&set, "http://www.9oo91e.qjz9zk/*");
 
   std::ostringstream stream;
   stream << set;
-  EXPECT_EQ("{ \"http://www.google.com/*\" }", stream.str());
+  EXPECT_EQ("{ \"http://www.9oo91e.qjz9zk/*\" }", stream.str());
 }
 
 TEST(URLPatternSetTest, StreamOperatorTwo) {
   URLPatternSet set;
-  AddPattern(&set, "http://www.google.com/*");
+  AddPattern(&set, "http://www.9oo91e.qjz9zk/*");
   AddPattern(&set, "http://www.yahoo.com/*");
 
   std::ostringstream stream;
   stream << set;
-  EXPECT_EQ("{ \"http://www.google.com/*\", \"http://www.yahoo.com/*\" }",
+  EXPECT_EQ("{ \"http://www.9oo91e.qjz9zk/*\", \"http://www.yahoo.com/*\" }",
             stream.str());
 }
 
 TEST(URLPatternSetTest, OverlapsWith) {
   URLPatternSet set1;
-  AddPattern(&set1, "http://www.google.com/f*");
+  AddPattern(&set1, "http://www.9oo91e.qjz9zk/f*");
   AddPattern(&set1, "http://www.yahoo.com/b*");
 
   URLPatternSet set2;
@@ -105,7 +105,7 @@ TEST(URLPatternSetTest, OverlapsWith) {
   AddPattern(&set2, "http://www.yahoo.com/z*");
 
   URLPatternSet set3;
-  AddPattern(&set3, "http://www.google.com/q/*");
+  AddPattern(&set3, "http://www.9oo91e.qjz9zk/q/*");
   AddPattern(&set3, "http://www.yahoo.com/b/*");
 
   EXPECT_FALSE(set1.OverlapsWith(set2));
@@ -119,7 +119,7 @@ TEST(URLPatternSetTest, CreateDifference) {
   URLPatternSet expected;
   URLPatternSet set1;
   URLPatternSet set2;
-  AddPattern(&set1, "http://www.google.com/f*");
+  AddPattern(&set1, "http://www.9oo91e.qjz9zk/f*");
   AddPattern(&set1, "http://www.yahoo.com/b*");
 
   // Subtract an empty set.
@@ -129,7 +129,7 @@ TEST(URLPatternSetTest, CreateDifference) {
   // Subtract a real set.
   AddPattern(&set2, "http://www.reddit.com/f*");
   AddPattern(&set2, "http://www.yahoo.com/z*");
-  AddPattern(&set2, "http://www.google.com/f*");
+  AddPattern(&set2, "http://www.9oo91e.qjz9zk/f*");
 
   AddPattern(&expected, "http://www.yahoo.com/b*");
 
@@ -149,7 +149,7 @@ TEST(URLPatternSetTest, CreateIntersection_StringComparison) {
   URLPatternSet empty_set;
   URLPatternSet expected;
   URLPatternSet set1;
-  AddPattern(&set1, "http://www.google.com/f*");
+  AddPattern(&set1, "http://www.9oo91e.qjz9zk/f*");
   AddPattern(&set1, "http://www.yahoo.com/b*");
 
   // Intersection with an empty set.
@@ -165,9 +165,9 @@ TEST(URLPatternSetTest, CreateIntersection_StringComparison) {
   URLPatternSet set2;
   AddPattern(&set2, "http://www.reddit.com/f*");
   AddPattern(&set2, "http://www.yahoo.com/z*");
-  AddPattern(&set2, "http://www.google.com/f*");
+  AddPattern(&set2, "http://www.9oo91e.qjz9zk/f*");
 
-  AddPattern(&expected, "http://www.google.com/f*");
+  AddPattern(&expected, "http://www.9oo91e.qjz9zk/f*");
 
   result = URLPatternSet::CreateIntersection(
       set1, set2, URLPatternSet::IntersectionBehavior::kStringComparison);
@@ -180,30 +180,30 @@ TEST(URLPatternSetTest, CreateIntersection_StringComparison) {
 TEST(URLPatternSetTest, CreateIntersection_PatternsContainedByBoth) {
   {
     URLPatternSet set1;
-    AddPattern(&set1, "http://*.google.com/*");
+    AddPattern(&set1, "http://*.9oo91e.qjz9zk/*");
     AddPattern(&set1, "http://*.yahoo.com/*");
 
     URLPatternSet set2;
-    AddPattern(&set2, "http://google.com/*");
+    AddPattern(&set2, "http://9oo91e.qjz9zk/*");
 
     // The semantic intersection should contain only those patterns that are in
-    // both set 1 and set 2, or "http://google.com/*".
+    // both set 1 and set 2, or "http://9oo91e.qjz9zk/*".
     URLPatternSet intersection = URLPatternSet::CreateIntersection(
         set1, set2,
         URLPatternSet::IntersectionBehavior::kPatternsContainedByBoth);
     ASSERT_EQ(1u, intersection.size());
-    EXPECT_EQ("http://google.com/*", intersection.begin()->GetAsString());
+    EXPECT_EQ("http://9oo91e.qjz9zk/*", intersection.begin()->GetAsString());
   }
 
   {
     // IntersectionBehavior::kPatternsContainedByBoth doesn't handle funny
     // intersections, where the resultant pattern is neither of the two
     // compared patterns. So the intersection of these two is not
-    // http://www.google.com/*, but rather nothing.
+    // http://www.9oo91e.qjz9zk/*, but rather nothing.
     URLPatternSet set1;
     AddPattern(&set1, "http://*/*");
     URLPatternSet set2;
-    AddPattern(&set2, "*://www.google.com/*");
+    AddPattern(&set2, "*://www.9oo91e.qjz9zk/*");
     EXPECT_TRUE(
         URLPatternSet::CreateIntersection(
             set1, set2,
@@ -218,29 +218,29 @@ TEST(URLPatternSetTest, CreateIntersection_Detailed) {
     std::vector<std::string> set2;
     std::vector<std::string> expected_intersection;
   } test_cases[] = {
-      {{"https://*.google.com/*", "https://chromium.org/*"},
-       {"*://maps.google.com/*", "*://chromium.org/foo"},
-       {"https://maps.google.com/*", "https://chromium.org/foo"}},
+      {{"https://*.9oo91e.qjz9zk/*", "https://ch40m1um.qjz9zk/*"},
+       {"*://maps.9oo91e.qjz9zk/*", "*://ch40m1um.qjz9zk/foo"},
+       {"https://maps.9oo91e.qjz9zk/*", "https://ch40m1um.qjz9zk/foo"}},
       {{"https://*/*", "http://*/*"},
-       {"*://google.com/*", "*://chromium.org/*"},
-       {"https://google.com/*", "http://google.com/*", "https://chromium.org/*",
-        "http://chromium.org/*"}},
+       {"*://9oo91e.qjz9zk/*", "*://ch40m1um.qjz9zk/*"},
+       {"https://9oo91e.qjz9zk/*", "http://9oo91e.qjz9zk/*", "https://ch40m1um.qjz9zk/*",
+        "http://ch40m1um.qjz9zk/*"}},
       {{"<all_urls>"},
-       {"https://chromium.org/*", "*://google.com/*"},
-       {"https://chromium.org/*", "*://google.com/*"}},
+       {"https://ch40m1um.qjz9zk/*", "*://9oo91e.qjz9zk/*"},
+       {"https://ch40m1um.qjz9zk/*", "*://9oo91e.qjz9zk/*"}},
       {{"*://*/maps", "*://*.example.com/*"},
-       {"https://*.google.com/*", "https://www.example.com/*"},
-       {"https://*.google.com/maps", "https://www.example.com/*"}},
-      {{"https://*/maps", "https://*.google.com/*"},
-       {"https://*.google.com/*"},
-       {"https://*.google.com/*"}},
+       {"https://*.9oo91e.qjz9zk/*", "https://www.example.com/*"},
+       {"https://*.9oo91e.qjz9zk/maps", "https://www.example.com/*"}},
+      {{"https://*/maps", "https://*.9oo91e.qjz9zk/*"},
+       {"https://*.9oo91e.qjz9zk/*"},
+       {"https://*.9oo91e.qjz9zk/*"}},
       {{"http://*/*"}, {"https://*/*"}, {}},
-      {{"https://*.google.com/*", "https://maps.google.com/*"},
-       {"https://*.google.com/*", "https://*/*"},
+      {{"https://*.9oo91e.qjz9zk/*", "https://maps.9oo91e.qjz9zk/*"},
+       {"https://*.9oo91e.qjz9zk/*", "https://*/*"},
        // NOTE: We don't currently do any additional "collapsing" step after
        // finding the intersection. We potentially could, to reduce the number
        // of patterns we need to store.
-       {"https://*.google.com/*", "https://maps.google.com/*"}},
+       {"https://*.9oo91e.qjz9zk/*", "https://maps.9oo91e.qjz9zk/*"}},
   };
 
   constexpr int kValidSchemes = URLPattern::SCHEME_ALL;
@@ -290,11 +290,11 @@ TEST(URLPatternSetTest, CreateUnion) {
   URLPatternSet empty_set;
 
   URLPatternSet set1;
-  AddPattern(&set1, "http://www.google.com/f*");
+  AddPattern(&set1, "http://www.9oo91e.qjz9zk/f*");
   AddPattern(&set1, "http://www.yahoo.com/b*");
 
   URLPatternSet expected;
-  AddPattern(&expected, "http://www.google.com/f*");
+  AddPattern(&expected, "http://www.9oo91e.qjz9zk/f*");
   AddPattern(&expected, "http://www.yahoo.com/b*");
 
   // Union with an empty set.
@@ -305,7 +305,7 @@ TEST(URLPatternSetTest, CreateUnion) {
   URLPatternSet set2;
   AddPattern(&set2, "http://www.reddit.com/f*");
   AddPattern(&set2, "http://www.yahoo.com/z*");
-  AddPattern(&set2, "http://www.google.com/f*");
+  AddPattern(&set2, "http://www.9oo91e.qjz9zk/f*");
 
   AddPattern(&expected, "http://www.reddit.com/f*");
   AddPattern(&expected, "http://www.yahoo.com/z*");
@@ -319,7 +319,7 @@ TEST(URLPatternSetTest, Contains) {
   URLPatternSet set2;
   URLPatternSet empty_set;
 
-  AddPattern(&set1, "http://www.google.com/*");
+  AddPattern(&set1, "http://www.9oo91e.qjz9zk/*");
   AddPattern(&set1, "http://www.yahoo.com/*");
 
   AddPattern(&set2, "http://www.reddit.com/*");
@@ -333,7 +333,7 @@ TEST(URLPatternSetTest, Contains) {
   EXPECT_FALSE(set1.Contains(set2));
   EXPECT_FALSE(set2.Contains(set1));
 
-  AddPattern(&set2, "http://www.google.com/*");
+  AddPattern(&set2, "http://www.9oo91e.qjz9zk/*");
 
   EXPECT_FALSE(set1.Contains(set2));
   EXPECT_TRUE(set2.Contains(set1));
@@ -349,10 +349,10 @@ TEST(URLPatternSetTest, Duplicates) {
   URLPatternSet set1;
   URLPatternSet set2;
 
-  AddPattern(&set1, "http://www.google.com/*");
-  AddPattern(&set2, "http://www.google.com/*");
+  AddPattern(&set1, "http://www.9oo91e.qjz9zk/*");
+  AddPattern(&set2, "http://www.9oo91e.qjz9zk/*");
 
-  AddPattern(&set1, "http://www.google.com/*");
+  AddPattern(&set1, "http://www.9oo91e.qjz9zk/*");
 
   // The sets should still be equal after adding a duplicate.
   EXPECT_EQ(set2, set1);
@@ -363,7 +363,7 @@ TEST(URLPatternSetTest, ToValueAndPopulate) {
   URLPatternSet set2;
 
   std::vector<std::string> patterns;
-  patterns.push_back("http://www.google.com/*");
+  patterns.push_back("http://www.9oo91e.qjz9zk/*");
   patterns.push_back("http://www.yahoo.com/*");
 
   for (size_t i = 0; i < patterns.size(); ++i)
@@ -381,9 +381,9 @@ TEST(URLPatternSetTest, ToValueAndPopulate) {
 }
 
 TEST(URLPatternSetTest, NwayUnion) {
-  std::string google_a = "http://www.google.com/a*";
-  std::string google_b = "http://www.google.com/b*";
-  std::string google_c = "http://www.google.com/c*";
+  std::string google_a = "http://www.9oo91e.qjz9zk/a*";
+  std::string google_b = "http://www.9oo91e.qjz9zk/b*";
+  std::string google_c = "http://www.9oo91e.qjz9zk/c*";
   std::string yahoo_a = "http://www.yahoo.com/a*";
   std::string yahoo_b = "http://www.yahoo.com/b*";
   std::string yahoo_c = "http://www.yahoo.com/c*";
@@ -527,19 +527,19 @@ TEST(URLPatternSetTest, NwayUnion) {
 TEST(URLPatternSetTest, AddOrigin) {
   URLPatternSet set;
   EXPECT_TRUE(set.AddOrigin(
-      URLPattern::SCHEME_ALL, GURL("https://www.google.com/")));
-  EXPECT_TRUE(set.MatchesURL(GURL("https://www.google.com/foo/bar")));
-  EXPECT_FALSE(set.MatchesURL(GURL("http://www.google.com/foo/bar")));
-  EXPECT_FALSE(set.MatchesURL(GURL("https://en.google.com/foo/bar")));
+      URLPattern::SCHEME_ALL, GURL("https://www.9oo91e.qjz9zk/")));
+  EXPECT_TRUE(set.MatchesURL(GURL("https://www.9oo91e.qjz9zk/foo/bar")));
+  EXPECT_FALSE(set.MatchesURL(GURL("http://www.9oo91e.qjz9zk/foo/bar")));
+  EXPECT_FALSE(set.MatchesURL(GURL("https://en.9oo91e.qjz9zk/foo/bar")));
   set.ClearPatterns();
 
   EXPECT_TRUE(set.AddOrigin(
-      URLPattern::SCHEME_ALL, GURL("https://google.com/")));
-  EXPECT_FALSE(set.MatchesURL(GURL("https://www.google.com/foo/bar")));
-  EXPECT_TRUE(set.MatchesURL(GURL("https://google.com/foo/bar")));
+      URLPattern::SCHEME_ALL, GURL("https://9oo91e.qjz9zk/")));
+  EXPECT_FALSE(set.MatchesURL(GURL("https://www.9oo91e.qjz9zk/foo/bar")));
+  EXPECT_TRUE(set.MatchesURL(GURL("https://9oo91e.qjz9zk/foo/bar")));
 
   EXPECT_FALSE(set.AddOrigin(
-      URLPattern::SCHEME_HTTP, GURL("https://google.com/")));
+      URLPattern::SCHEME_HTTP, GURL("https://9oo91e.qjz9zk/")));
 }
 
 TEST(URLPatternSet, AddOriginIPv6) {
@@ -557,15 +557,15 @@ TEST(URLPatternSet, AddOriginIPv6) {
 
 TEST(URLPatternSetTest, ToStringVector) {
   URLPatternSet set;
-  AddPattern(&set, "https://google.com/");
-  AddPattern(&set, "https://google.com/");
+  AddPattern(&set, "https://9oo91e.qjz9zk/");
+  AddPattern(&set, "https://9oo91e.qjz9zk/");
   AddPattern(&set, "https://yahoo.com/");
 
   std::unique_ptr<std::vector<std::string>> string_vector(set.ToStringVector());
 
   EXPECT_EQ(2UL, string_vector->size());
 
-  EXPECT_TRUE(base::Contains(*string_vector, "https://google.com/"));
+  EXPECT_TRUE(base::Contains(*string_vector, "https://9oo91e.qjz9zk/"));
   EXPECT_TRUE(base::Contains(*string_vector, "https://yahoo.com/"));
 }
 

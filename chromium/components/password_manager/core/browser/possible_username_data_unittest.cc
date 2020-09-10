@@ -56,7 +56,7 @@ TEST_F(IsPossibleUsernameValidTest, SignonRealm) {
                                        possible_username_data_.last_change));
 
   EXPECT_FALSE(IsPossibleUsernameValid(possible_username_data_,
-                                       "https://google.com/",
+                                       "https://9oo91e.qjz9zk/",
                                        possible_username_data_.last_change));
 }
 

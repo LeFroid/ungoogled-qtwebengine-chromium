@@ -923,7 +923,7 @@ void HTMLMediaElement::InvokeLoadAlgorithm() {
       RecordPlayPromiseRejected(PlayPromiseRejectReason::kInterruptedByLoad);
       RejectPlayPromises(DOMExceptionCode::kAbortError,
                          "The play() request was interrupted by a new load "
-                         "request. https://goo.gl/LdLk22");
+                         "request. https://goo.gl.qjz9zk/LdLk22");
     }
 
     // 4.7 - If seeking is true, set it to false.
@@ -4135,7 +4135,7 @@ void HTMLMediaElement::RejectScheduledPlayPromises() {
     RecordPlayPromiseRejected(PlayPromiseRejectReason::kInterruptedByPause);
     RejectPlayPromisesInternal(DOMExceptionCode::kAbortError,
                                "The play() request was interrupted by a call "
-                               "to pause(). https://goo.gl/LdLk22");
+                               "to pause(). https://goo.gl.qjz9zk/LdLk22");
   } else {
     RecordPlayPromiseRejected(PlayPromiseRejectReason::kNoSupportedSources);
     RejectPlayPromisesInternal(

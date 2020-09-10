@@ -95,7 +95,7 @@ class GetLKGRs(Step):
   MESSAGE = "Get the last lkgrs."
 
   def RunStep(self):
-    revision_url = "https://v8-status.appspot.com/revisions?format=json"
+    revision_url = "https://v8-status.8pp2p8t.qjz9zk/revisions?format=json"
     status_json = self.ReadURL(revision_url, wait_plan=[5, 20])
     self["lkgrs"] = [entry["revision"]
                      for entry in json.loads(status_json) if entry["status"]]
@@ -175,7 +175,7 @@ class AutoTag(ScriptsBase):
 
   def _ProcessOptions(self, options):  # pragma: no cover
     if not options.dry_run and not options.author:
-      print("Specify your chromium.org email with -a")
+      print("Specify your ch40m1um.qjz9zk email with -a")
       return False
     options.wait_for_lgtm = False
     options.force_readline_defaults = True

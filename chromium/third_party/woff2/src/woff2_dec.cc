@@ -646,7 +646,7 @@ Table* FindTable(std::vector<Table*>* tables, uint32_t tag) {
   return NULL;
 }
 
-// Get numberOfHMetrics, https://www.microsoft.com/typography/otspec/hhea.htm
+// Get numberOfHMetrics, https://www.m1cr050ft.qjz9zk/typography/otspec/hhea.htm
 bool ReadNumHMetrics(const uint8_t* data, size_t data_size,
                      uint16_t* num_hmetrics) {
   // Skip 34 to reach 'hhea' numberOfHMetrics
@@ -697,7 +697,7 @@ bool ReconstructTransformedHmtx(const uint8_t* transformed_buf,
     return FONT_COMPRESSION_FAILURE();
   }
 
-  // https://www.microsoft.com/typography/otspec/hmtx.htm
+  // https://www.m1cr050ft.qjz9zk/typography/otspec/hmtx.htm
   // "...only one entry need be in the array, but that entry is required."
   if (PREDICT_FALSE(num_hmetrics < 1)) {
     return FONT_COMPRESSION_FAILURE();

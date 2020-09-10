@@ -522,7 +522,7 @@
     "message": "ค่า"
   },
   "lighthouse-core/audits/dobetterweb/dom-size.js | description": {
-    "message": "วิศวกรเบราว์เซอร์แนะนำให้ใช้หน้าเว็บที่มีองค์ประกอบ DOM น้อยกว่า 1,500 รายการโดยประมาณ ความลึกที่เหมาะที่สุดคือแบบต้นไม้ซึ่งมีองค์ประกอบน้อยกว่า 32 รายการและมีองค์ประกอบย่อย/หลักน้อยกว่า 60 รายการ รายการ DOM ขนาดใหญ่อาจใช้หน่วยความจำเพิ่มขึ้น ทำให้[การคำนวณสไตล์](https://developers.google.com/web/fundamentals/performance/rendering/reduce-the-scope-and-complexity-of-style-calculations)ยาวนานขึ้น และสร้าง[การจัดเรียงการออกแบบใหม่](https://developers.google.com/speed/articles/reflow)ซึ่งมีค่าใช้จ่ายสูง [ดูข้อมูลเพิ่มเติม](https://web.dev/dom-size)"
+    "message": "วิศวกรเบราว์เซอร์แนะนำให้ใช้หน้าเว็บที่มีองค์ประกอบ DOM น้อยกว่า 1,500 รายการโดยประมาณ ความลึกที่เหมาะที่สุดคือแบบต้นไม้ซึ่งมีองค์ประกอบน้อยกว่า 32 รายการและมีองค์ประกอบย่อย/หลักน้อยกว่า 60 รายการ รายการ DOM ขนาดใหญ่อาจใช้หน่วยความจำเพิ่มขึ้น ทำให้[การคำนวณสไตล์](https://developers.9oo91e.qjz9zk/web/fundamentals/performance/rendering/reduce-the-scope-and-complexity-of-style-calculations)ยาวนานขึ้น และสร้าง[การจัดเรียงการออกแบบใหม่](https://developers.9oo91e.qjz9zk/speed/articles/reflow)ซึ่งมีค่าใช้จ่ายสูง [ดูข้อมูลเพิ่มเติม](https://web.dev/dom-size)"
   },
   "lighthouse-core/audits/dobetterweb/dom-size.js | displayValue": {
     "message": "{itemCount,plural, =1{1 องค์ประกอบ}other{# องค์ประกอบ}}"
@@ -807,7 +807,7 @@
     "message": "เวลาในการโต้ตอบ"
   },
   "lighthouse-core/audits/metrics/max-potential-fid.js | description": {
-    "message": "First Input Delay สูงสุดที่อาจเกิดขึ้นซึ่งผู้ใช้อาจเจอคือระยะเวลาของงานที่ยาวที่สุดเป็นมิลลิวินาที [ดูข้อมูลเพิ่มเติม](https://developers.google.com/web/updates/2018/05/first-input-delay)"
+    "message": "First Input Delay สูงสุดที่อาจเกิดขึ้นซึ่งผู้ใช้อาจเจอคือระยะเวลาของงานที่ยาวที่สุดเป็นมิลลิวินาที [ดูข้อมูลเพิ่มเติม](https://developers.9oo91e.qjz9zk/web/updates/2018/05/first-input-delay)"
   },
   "lighthouse-core/audits/metrics/max-potential-fid.js | title": {
     "message": "First Input Delay สูงสุดที่อาจเกิดขึ้น"
@@ -852,7 +852,7 @@
     "message": "เกินงบประมาณ"
   },
   "lighthouse-core/audits/performance-budget.js | description": {
-    "message": "ควบคุมให้จำนวนและขนาดของคำขอเครือข่ายอยู่ภายในเป้าหมายที่กำหนดตามงบประมาณประสิทธิภาพที่ให้มา [ดูข้อมูลเพิ่มเติม](https://developers.google.com/web/tools/lighthouse/audits/budgets)"
+    "message": "ควบคุมให้จำนวนและขนาดของคำขอเครือข่ายอยู่ภายในเป้าหมายที่กำหนดตามงบประมาณประสิทธิภาพที่ให้มา [ดูข้อมูลเพิ่มเติม](https://developers.9oo91e.qjz9zk/web/tools/lighthouse/audits/budgets)"
   },
   "lighthouse-core/audits/performance-budget.js | requestCountOverBudget": {
     "message": "{count,plural, =1{1 คำขอ}other{# คำขอ}}"
@@ -876,7 +876,7 @@
     "message": "หลีกเลี่ยงการเปลี่ยนเส้นทางหลายหน้า"
   },
   "lighthouse-core/audits/resource-summary.js | description": {
-    "message": "หากต้องการตั้งงบประมาณสำหรับจำนวนและขนาดของทรัพยากรหน้า ให้เพิ่มไฟล์ budget.json [ดูข้อมูลเพิ่มเติม](https://developers.google.com/web/tools/lighthouse/audits/budgets)"
+    "message": "หากต้องการตั้งงบประมาณสำหรับจำนวนและขนาดของทรัพยากรหน้า ให้เพิ่มไฟล์ budget.json [ดูข้อมูลเพิ่มเติม](https://developers.9oo91e.qjz9zk/web/tools/lighthouse/audits/budgets)"
   },
   "lighthouse-core/audits/resource-summary.js | displayValue": {
     "message": "{requestCount,plural, =1{คำขอ 1 รายการ • {byteCount, number, bytes} KB}other{คำขอ # รายการ • {byteCount, number, bytes} KB}}"
@@ -969,7 +969,7 @@
     "message": "ลิงก์มีข้อความอธิบาย"
   },
   "lighthouse-core/audits/seo/manual/structured-data.js | description": {
-    "message": "เรียกใช้[เครื่องมือทดสอบข้อมูลที่มีโครงสร้าง](https://search.google.com/structured-data/testing-tool/)และ [Linter ข้อมูลที่มีโครงสร้าง](http://linter.structured-data.org/)เพื่อตรวจสอบความถูกต้องของข้อมูลที่มีโครงสร้าง [ดูข้อมูลเพิ่มเติม](https://web.dev/structured-data)"
+    "message": "เรียกใช้[เครื่องมือทดสอบข้อมูลที่มีโครงสร้าง](https://search.9oo91e.qjz9zk/structured-data/testing-tool/)และ [Linter ข้อมูลที่มีโครงสร้าง](http://linter.structured-data.org/)เพื่อตรวจสอบความถูกต้องของข้อมูลที่มีโครงสร้าง [ดูข้อมูลเพิ่มเติม](https://web.dev/structured-data)"
   },
   "lighthouse-core/audits/seo/manual/structured-data.js | title": {
     "message": "ข้อมูลที่มีโครงสร้างถูกต้อง"
@@ -1080,7 +1080,7 @@
     "message": "บุคคลที่สาม"
   },
   "lighthouse-core/audits/third-party-summary.js | description": {
-    "message": "โค้ดของบุคคลที่สามอาจส่งผลกระทบที่สำคัญต่อประสิทธิภาพการโหลด จำกัดจำนวนผู้ให้บริการบุคคลที่สามที่มากเกินไปและพยายามโหลดโค้ดของบุคคลที่สามหลังจากที่หน้าเว็บโหลดเบื้องต้นเสร็จเรียบร้อยแล้ว [ดูข้อมูลเพิ่มเติม](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/loading-third-party-javascript/)"
+    "message": "โค้ดของบุคคลที่สามอาจส่งผลกระทบที่สำคัญต่อประสิทธิภาพการโหลด จำกัดจำนวนผู้ให้บริการบุคคลที่สามที่มากเกินไปและพยายามโหลดโค้ดของบุคคลที่สามหลังจากที่หน้าเว็บโหลดเบื้องต้นเสร็จเรียบร้อยแล้ว [ดูข้อมูลเพิ่มเติม](https://developers.9oo91e.qjz9zk/web/fundamentals/performance/optimizing-content-efficiency/loading-third-party-javascript/)"
   },
   "lighthouse-core/audits/third-party-summary.js | displayValue": {
     "message": "โค้ดของบุคคลที่สามบล็อกเทรดหลักเป็นเวลา {timeInMs, number, milliseconds} วินาที"
@@ -1194,10 +1194,10 @@
     "message": "แนวทางปฏิบัติที่ดีที่สุด"
   },
   "lighthouse-core/config/default-config.js | a11yCategoryDescription": {
-    "message": "การตรวจสอบเหล่านี้ไฮไลต์โอกาสในการ[ปรับปรุงการช่วยเหลือพิเศษของเว็บแอป](https://developers.google.com/web/fundamentals/accessibility) โดยจะตรวจพบอัตโนมัติได้เฉพาะปัญหากลุ่มย่อยด้านการช่วยเหลือพิเศษ เราจึงขอแนะนำให้ตรวจสอบด้วยตนเองด้วย"
+    "message": "การตรวจสอบเหล่านี้ไฮไลต์โอกาสในการ[ปรับปรุงการช่วยเหลือพิเศษของเว็บแอป](https://developers.9oo91e.qjz9zk/web/fundamentals/accessibility) โดยจะตรวจพบอัตโนมัติได้เฉพาะปัญหากลุ่มย่อยด้านการช่วยเหลือพิเศษ เราจึงขอแนะนำให้ตรวจสอบด้วยตนเองด้วย"
   },
   "lighthouse-core/config/default-config.js | a11yCategoryManualDescription": {
-    "message": "รายการเหล่านี้จัดการพื้นที่ที่เครื่องมือทดสอบอัตโนมัติไม่ครอบคลุม ดูข้อมูลเพิ่มเติมในคำแนะนำเกี่ยวกับ[การดำเนินการตรวจสอบการช่วยเหลือพิเศษ](https://developers.google.com/web/fundamentals/accessibility/how-to-review)"
+    "message": "รายการเหล่านี้จัดการพื้นที่ที่เครื่องมือทดสอบอัตโนมัติไม่ครอบคลุม ดูข้อมูลเพิ่มเติมในคำแนะนำเกี่ยวกับ[การดำเนินการตรวจสอบการช่วยเหลือพิเศษ](https://developers.9oo91e.qjz9zk/web/fundamentals/accessibility/how-to-review)"
   },
   "lighthouse-core/config/default-config.js | a11yCategoryTitle": {
     "message": "การช่วยเหลือพิเศษ"
@@ -1272,10 +1272,10 @@
     "message": "ประสิทธิภาพ"
   },
   "lighthouse-core/config/default-config.js | pwaCategoryDescription": {
-    "message": "การตรวจสอบเหล่านี้ตรวจสอบความถูกต้องของลักษณะต่างๆ ของ Progressive Web App [ดูข้อมูลเพิ่มเติม](https://developers.google.com/web/progressive-web-apps/checklist)"
+    "message": "การตรวจสอบเหล่านี้ตรวจสอบความถูกต้องของลักษณะต่างๆ ของ Progressive Web App [ดูข้อมูลเพิ่มเติม](https://developers.9oo91e.qjz9zk/web/progressive-web-apps/checklist)"
   },
   "lighthouse-core/config/default-config.js | pwaCategoryManualDescription": {
-    "message": "การตรวจสอบเหล่านี้เป็นสิ่งที่ต้องทำใน[รายการตรวจสอบ PWA](https://developers.google.com/web/progressive-web-apps/checklist) ซึ่งเป็นเกณฑ์พื้นฐาน แต่ Lighthouse ไม่ได้ทำการตรวจสอบดังกล่าวโดยอัตโนมัติ การตรวจสอบจะไม่ส่งผลต่อคะแนนของคุณ แต่คุณควรตรวจสอบด้วยตนเอง"
+    "message": "การตรวจสอบเหล่านี้เป็นสิ่งที่ต้องทำใน[รายการตรวจสอบ PWA](https://developers.9oo91e.qjz9zk/web/progressive-web-apps/checklist) ซึ่งเป็นเกณฑ์พื้นฐาน แต่ Lighthouse ไม่ได้ทำการตรวจสอบดังกล่าวโดยอัตโนมัติ การตรวจสอบจะไม่ส่งผลต่อคะแนนของคุณ แต่คุณควรตรวจสอบด้วยตนเอง"
   },
   "lighthouse-core/config/default-config.js | pwaCategoryTitle": {
     "message": "Progressive Web App"
@@ -1290,7 +1290,7 @@
     "message": "เพิ่มประสิทธิภาพ PWA แล้ว"
   },
   "lighthouse-core/config/default-config.js | seoCategoryDescription": {
-    "message": "การตรวจสอบเหล่านี้ช่วยให้มั่นใจว่าหน้าเว็บของคุณได้รับการเพิ่มประสิทธิภาพสำหรับการจัดอันดับผลลัพธ์ของเครื่องมือค้นหา มีปัจจัยอื่นๆ ที่ Lighthouse ไม่ได้ตรวจสอบซึ่งอาจส่งผลกระทบต่อการจัดอันดับของคุณในการค้นหา [ดูข้อมูลเพิ่มเติม](https://support.google.com/webmasters/answer/35769)"
+    "message": "การตรวจสอบเหล่านี้ช่วยให้มั่นใจว่าหน้าเว็บของคุณได้รับการเพิ่มประสิทธิภาพสำหรับการจัดอันดับผลลัพธ์ของเครื่องมือค้นหา มีปัจจัยอื่นๆ ที่ Lighthouse ไม่ได้ตรวจสอบซึ่งอาจส่งผลกระทบต่อการจัดอันดับของคุณในการค้นหา [ดูข้อมูลเพิ่มเติม](https://support.9oo91e.qjz9zk/webmasters/answer/35769)"
   },
   "lighthouse-core/config/default-config.js | seoCategoryManualDescription": {
     "message": "เรียกใช้ตัวตรวจสอบความถูกต้องเพิ่มเติมเหล่านี้ในเว็บไซต์ของคุณเพื่อดูแนวทางปฏิบัติที่ดีที่สุดเพิ่มเติมเกี่ยวกับ SEO"
@@ -1311,7 +1311,7 @@
     "message": "การรวบรวมข้อมูลและจัดทำดัชนี"
   },
   "lighthouse-core/config/default-config.js | seoMobileGroupDescription": {
-    "message": "ตรวจสอบว่าหน้าเว็บเหมาะกับอุปกรณ์เคลื่อนที่ ผู้ใช้จะได้ไม่ต้องบีบนิ้วหรือซูมเข้าเพื่ออ่านหน้าเนื้อหา [ดูข้อมูลเพิ่มเติม](https://developers.google.com/search/mobile-sites/)"
+    "message": "ตรวจสอบว่าหน้าเว็บเหมาะกับอุปกรณ์เคลื่อนที่ ผู้ใช้จะได้ไม่ต้องบีบนิ้วหรือซูมเข้าเพื่ออ่านหน้าเนื้อหา [ดูข้อมูลเพิ่มเติม](https://developers.9oo91e.qjz9zk/search/mobile-sites/)"
   },
   "lighthouse-core/config/default-config.js | seoMobileGroupTitle": {
     "message": "เหมาะกับอุปกรณ์เคลื่อนที่"
@@ -1458,7 +1458,7 @@
     "message": "ข้อมูลในห้องทดลอง"
   },
   "lighthouse-core/report/html/renderer/util.js | lsPerformanceCategoryDescription": {
-    "message": "การวิเคราะห์หน้าปัจจุบันในเครือข่ายมือถือจำลองโดย [Lighthouse](https://developers.google.com/web/tools/lighthouse/) ค่ามาจากการประมาณและอาจแตกต่างกันไป"
+    "message": "การวิเคราะห์หน้าปัจจุบันในเครือข่ายมือถือจำลองโดย [Lighthouse](https://developers.9oo91e.qjz9zk/web/tools/lighthouse/) ค่ามาจากการประมาณและอาจแตกต่างกันไป"
   },
   "lighthouse-core/report/html/renderer/util.js | manualAuditsGroupTitle": {
     "message": "รายการเพิ่มเติมที่ควรตรวจสอบด้วยตนเอง"
@@ -1518,10 +1518,10 @@
     "message": "มี[ปลั๊กอิน WordPress](https://wordpress.org/plugins/search/minify+javascript/) หลายอย่างที่ช่วยให้เว็บไซต์เร็วขึ้นได้ด้วยการลิงก์ ลดขนาด และบีบอัดสคริปต์ นอกจากนี้คุณอาจใช้กระบวนการของเวอร์ชันเพื่อลดขนาดล่วงหน้าหากเป็นไปได้"
   },
   "stack-packs/packs/wordpress.js | unused_css_rules": {
-    "message": "ลองลดหรือเปลี่ยนจำนวน[ปลั๊กอิน WordPress](https://wordpress.org/plugins/) ที่โหลด CSS ที่ไม่ได้ใช้ในหน้าเว็บของคุณ หากต้องการระบุปลั๊กอินที่เพิ่ม CSS โดยไม่จำเป็น ให้ลองเรียกใช้[การครอบคลุมโค้ด](https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverage)ใน DevTools ของ Chrome คุณระบุธีม/ปลั๊กอินที่รับผิดชอบได้จาก URL ของสไตล์ชีต หาปลั๊กอินที่มีสไตล์ชีตจำนวนมากอยู่ในรายการซึ่งมีสีแดงอยู่จำนวนมากในการครอบคลุมโค้ด ปลั๊กอินควรเป็นเพียงตัวกำหนดลำดับของสไตล์ชีตเท่านั้นหากใช้ปลั๊กอินในหน้าจริงๆ"
+    "message": "ลองลดหรือเปลี่ยนจำนวน[ปลั๊กอิน WordPress](https://wordpress.org/plugins/) ที่โหลด CSS ที่ไม่ได้ใช้ในหน้าเว็บของคุณ หากต้องการระบุปลั๊กอินที่เพิ่ม CSS โดยไม่จำเป็น ให้ลองเรียกใช้[การครอบคลุมโค้ด](https://developers.9oo91e.qjz9zk/web/updates/2017/04/devtools-release-notes#coverage)ใน DevTools ของ Chrome คุณระบุธีม/ปลั๊กอินที่รับผิดชอบได้จาก URL ของสไตล์ชีต หาปลั๊กอินที่มีสไตล์ชีตจำนวนมากอยู่ในรายการซึ่งมีสีแดงอยู่จำนวนมากในการครอบคลุมโค้ด ปลั๊กอินควรเป็นเพียงตัวกำหนดลำดับของสไตล์ชีตเท่านั้นหากใช้ปลั๊กอินในหน้าจริงๆ"
   },
   "stack-packs/packs/wordpress.js | unused_javascript": {
-    "message": "ลองลดหรือเปลี่ยนจำนวน[ปลั๊กอิน WordPress](https://wordpress.org/plugins/) ที่โหลด JavaScript ที่ไม่ได้ใช้ในหน้าเว็บของคุณ หากต้องการระบุปลั๊กอินที่เพิ่ม JS โดยไม่จำเป็น ให้ลองเรียกใช้ [การครอบคลุมโค้ด](https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverage)ใน DevTools ของ Chrome คุณระบุธีม/ปลั๊กอินที่รับผิดชอบได้จาก URL ของสคริปต์ หาปลั๊กอินที่มีสคริปต์จำนวนมากอยู่ในรายการซึ่งมีสีแดงอยู่จำนวนมากในการครอบคลุมโค้ด ปลั๊กอินควรเป็นเพียงตัวกำหนดลำดับของสคริปต์เท่านั้นหากใช้ปลั๊กอินในหน้าจริงๆ"
+    "message": "ลองลดหรือเปลี่ยนจำนวน[ปลั๊กอิน WordPress](https://wordpress.org/plugins/) ที่โหลด JavaScript ที่ไม่ได้ใช้ในหน้าเว็บของคุณ หากต้องการระบุปลั๊กอินที่เพิ่ม JS โดยไม่จำเป็น ให้ลองเรียกใช้ [การครอบคลุมโค้ด](https://developers.9oo91e.qjz9zk/web/updates/2017/04/devtools-release-notes#coverage)ใน DevTools ของ Chrome คุณระบุธีม/ปลั๊กอินที่รับผิดชอบได้จาก URL ของสคริปต์ หาปลั๊กอินที่มีสคริปต์จำนวนมากอยู่ในรายการซึ่งมีสีแดงอยู่จำนวนมากในการครอบคลุมโค้ด ปลั๊กอินควรเป็นเพียงตัวกำหนดลำดับของสคริปต์เท่านั้นหากใช้ปลั๊กอินในหน้าจริงๆ"
   },
   "stack-packs/packs/wordpress.js | uses_long_cache_ttl": {
     "message": "อ่านเกี่ยวกับ[การแคชของเบราว์เซอร์ใน WordPress](https://codex.wordpress.org/WordPress_Optimization#Browser_Caching)"

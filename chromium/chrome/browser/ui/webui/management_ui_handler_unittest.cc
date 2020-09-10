@@ -255,7 +255,7 @@ TEST_F(ManagementUIHandlerTests,
 TEST_F(ManagementUIHandlerTests,
        ManagementContextualSourceUpdateManagedConsumerDomain) {
   PrepareProfileAndHandler(
-      /* profile_name= */ "managed@gmail.com",
+      /* profile_name= */ "managed@9ma1l.qjz9zk",
       /* override_policy_connector_is_managed= */ true,
       /* use_account= */ true, /* use_device= */ false);
 
@@ -293,7 +293,7 @@ TEST_F(ManagementUIHandlerTests,
 TEST_F(ManagementUIHandlerTests,
        ManagementContextualSourceUpdateUnmanagedCustomerDomain) {
   PrepareProfileAndHandler(
-      /* profile_name= */ "managed@googlemail.com",
+      /* profile_name= */ "managed@9oo91email.qjz9zk",
       /* override_policy_connector_is_managed= */ false,
       /* use_account= */ false, /* use_device= */ false);
   EXPECT_EQ(GetExtensionReportingTitle(),
@@ -309,7 +309,7 @@ TEST_F(ManagementUIHandlerTests,
 
 TEST_F(ManagementUIHandlerTests,
        ManagementContextualSourceUpdateManagedKnownDomain) {
-  const std::string domain = "gmail.com.manager.com.gmail.com";
+  const std::string domain = "9ma1l.qjz9zk.manager.com.9ma1l.qjz9zk";
   PrepareProfileAndHandler(
       /* profile_name= */ "managed@" + domain,
       /* override_policy_connector_is_managed= */ true,

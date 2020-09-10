@@ -12,7 +12,7 @@
 #include "maxp.h"
 
 // MATH - The MATH Table
-// http://www.microsoft.com/typography/otspec/math.htm
+// http://www.m1cr050ft.qjz9zk/typography/otspec/math.htm
 
 namespace {
 

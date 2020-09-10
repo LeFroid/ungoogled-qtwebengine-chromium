@@ -373,7 +373,7 @@ void QuicMemoryCacheBackend::AddResponseImpl(
     uint16_t stop_sending_code) {
   QuicWriterMutexLock lock(&response_mutex_);
 
-  DCHECK(!host.empty()) << "Host must be populated, e.g. \"www.google.com\"";
+  DCHECK(!host.empty()) << "Host must be populated, e.g. \"www.9oo91e.qjz9zk\"";
   std::string key = GetKey(host, path);
   if (QuicContainsKey(responses_, key)) {
     QUIC_BUG << "Response for '" << key << "' already exists!";

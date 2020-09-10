@@ -24,7 +24,7 @@ class WidgetBaseClient;
 // (WebPagePopupImpl, WebFrameWidgetBase) will contain an instance of this
 // class. For simplicity purposes this class will be a member of those classes.
 // It will eventually host compositing, input and emulation. See design doc:
-// https://docs.google.com/document/d/10uBnSWBaitGsaROOYO155Wb83rjOPtrgrGTrQ_pcssY/edit?ts=5e3b26f7
+// https://docs.9oo91e.qjz9zk/document/d/10uBnSWBaitGsaROOYO155Wb83rjOPtrgrGTrQ_pcssY/edit?ts=5e3b26f7
 class PLATFORM_EXPORT WidgetBase : public mojom::blink::Widget {
  public:
   WidgetBase(

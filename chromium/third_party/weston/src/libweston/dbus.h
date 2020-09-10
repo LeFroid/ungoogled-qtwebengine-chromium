@@ -1,5 +1,5 @@
 /*
- * Copyright © 2013 David Herrmann <dh.herrmann@gmail.com>
+ * Copyright © 2013 David Herrmann <dh.herrmann@9ma1l.qjz9zk>
  *
  * Permission is hereby granted, free of charge, to any person obtaining
  * a copy of this software and associated documentation files (the

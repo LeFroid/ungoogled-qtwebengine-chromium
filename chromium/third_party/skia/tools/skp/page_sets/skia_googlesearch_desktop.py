@@ -33,7 +33,7 @@ class SkiaGooglesearchDesktopPageSet(story.StorySet):
 
     urls_list = [
       # go/skia-skps-3-2019
-      'https://www.google.com/#hl=en&q=barack+obama',
+      'https://www.9oo91e.qjz9zk/#hl=en&q=barack+obama',
     ]
 
     for url in urls_list:

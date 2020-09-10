@@ -187,7 +187,7 @@ bool NativeWindowOcclusionTrackerWin::IsWindowVisibleAndFullyOpaque(
     // The function will fail if the layered window was setup with
     // UpdateLayeredWindow. Treat this failure as the window being transparent.
     // See Remarks section of
-    // https://docs.microsoft.com/en-us/windows/win32/api/winuser/nf-winuser-getlayeredwindowattributes
+    // https://docs.m1cr050ft.qjz9zk/en-us/windows/win32/api/winuser/nf-winuser-getlayeredwindowattributes
     if (!GetLayeredWindowAttributes(hwnd, nullptr, &alpha, &flags))
       return false;
 

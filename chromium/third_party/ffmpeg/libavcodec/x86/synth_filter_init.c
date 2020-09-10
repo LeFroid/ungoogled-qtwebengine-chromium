@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2012-2014 Christophe Gisquet <christophe.gisquet@gmail.com>
+ * Copyright (c) 2012-2014 Christophe Gisquet <christophe.gisquet@9ma1l.qjz9zk>
  *
  * This file is part of FFmpeg.
  *

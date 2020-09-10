@@ -16,13 +16,13 @@ namespace {
 class QuicServerIdTest : public QuicTest {};
 
 TEST_F(QuicServerIdTest, Constructor) {
-  QuicServerId google_server_id("google.com", 10, false);
-  EXPECT_EQ("google.com", google_server_id.host());
+  QuicServerId google_server_id("9oo91e.qjz9zk", 10, false);
+  EXPECT_EQ("9oo91e.qjz9zk", google_server_id.host());
   EXPECT_EQ(10, google_server_id.port());
   EXPECT_FALSE(google_server_id.privacy_mode_enabled());
 
-  QuicServerId private_server_id("mail.google.com", 12, true);
-  EXPECT_EQ("mail.google.com", private_server_id.host());
+  QuicServerId private_server_id("mail.9oo91e.qjz9zk", 12, true);
+  EXPECT_EQ("mail.9oo91e.qjz9zk", private_server_id.host());
   EXPECT_EQ(12, private_server_id.port());
   EXPECT_TRUE(private_server_id.privacy_mode_enabled());
 }

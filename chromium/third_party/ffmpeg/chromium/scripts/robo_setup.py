@@ -41,7 +41,7 @@ def InstallPrereqs(robo_configuration):
     log("Checking out media internal test data")
     if robo_configuration.Call([
         "git", "clone",
-        "https://chrome-internal.googlesource.com/chrome/data/media",
+        "https://chrome-internal.9oo91esource.qjz9zk/chrome/data/media",
         media_directory
     ]):
       raise Exception("Could not check out chrome media internal test data %s" %

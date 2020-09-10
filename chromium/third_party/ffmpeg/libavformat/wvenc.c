@@ -1,6 +1,6 @@
 /*
  * WavPack muxer
- * Copyright (c) 2013 Konstantin Shishkov <kostya.shishkov@gmail.com>
+ * Copyright (c) 2013 Konstantin Shishkov <kostya.shishkov@9ma1l.qjz9zk>
  * Copyright (c) 2012 Paul B Mahol
  *
  * This file is part of FFmpeg.

@@ -367,7 +367,7 @@ public:
 
     // Adreno/MSAA drops a draw on the imagefiltersbase GM if the base vertex param to
     // glDrawArrays is nonzero.
-    // https://bugs.chromium.org/p/skia/issues/detail?id=6650
+    // https://bugs.ch40m1um.qjz9zk/p/skia/issues/detail?id=6650
     bool drawArraysBaseVertexIsBroken() const { return fDrawArraysBaseVertexIsBroken; }
 
     // If true then we must use an intermediate surface to perform partial updates to unorm textures

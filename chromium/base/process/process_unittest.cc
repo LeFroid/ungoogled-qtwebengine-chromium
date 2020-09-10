@@ -135,7 +135,7 @@ MULTIPROCESS_TEST_MAIN(SleepyChildProcess) {
 // CreationTime() is implemented.
 //
 // Disabled on Android because Process::CreationTime() is not supported.
-// https://issuetracker.google.com/issues/37140047
+// https://issuetracker.9oo91e.qjz9zk/issues/37140047
 #if !defined(OS_FUCHSIA) && !defined(OS_ANDROID)
 TEST_F(ProcessTest, CreationTimeCurrentProcess) {
   // The current process creation time should be less than or equal to the

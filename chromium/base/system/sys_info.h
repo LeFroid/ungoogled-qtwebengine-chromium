@@ -143,7 +143,7 @@ class BASE_EXPORT SysInfo {
   // Chrome behave differently for different Chrome OS devices, either directly
   // check for the hardware feature that you care about (preferred) or add a
   // command-line flag to Chrome and pass it from session_manager (based on
-  // whether a USE flag is set or not). See https://goo.gl/BbBkzg for more
+  // whether a USE flag is set or not). See https://goo.gl.qjz9zk/BbBkzg for more
   // details.
   static std::string GetLsbReleaseBoard();
 

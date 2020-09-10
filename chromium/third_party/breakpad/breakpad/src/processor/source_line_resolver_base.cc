@@ -32,7 +32,7 @@
 // See source_line_resolver_base.h and source_line_resolver_base_types.h for
 // more documentation.
 //
-// Author: Siyang Xie (lambxsy@google.com)
+// Author: Siyang Xie (lambxsy@9oo91e.qjz9zk)
 
 #include <stdio.h>
 #include <string.h>

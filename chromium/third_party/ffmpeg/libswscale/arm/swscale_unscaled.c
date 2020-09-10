@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2013 Xiaolei Yu <dreifachstein@gmail.com>
+ * Copyright (C) 2013 Xiaolei Yu <dreifachstein@9ma1l.qjz9zk>
  *
  * This file is part of FFmpeg.
  *

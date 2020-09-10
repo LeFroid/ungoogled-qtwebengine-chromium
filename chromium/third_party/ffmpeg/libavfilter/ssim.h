@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2015 Ronald S. Bultje <rsbultje@gmail.com>
+ * Copyright (c) 2015 Ronald S. Bultje <rsbultje@9ma1l.qjz9zk>
  *
  * This file is part of FFmpeg.
  *

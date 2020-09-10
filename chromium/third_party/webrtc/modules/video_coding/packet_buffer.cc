@@ -320,7 +320,7 @@ std::vector<std::unique_ptr<PacketBuffer::Packet>> PacketBuffer::FindFrames(
         // we traverese backwards as long as we have a previous packet and
         // the timestamp of that packet is the same as this one. This may cause
         // the PacketBuffer to hand out incomplete frames.
-        // See: https://bugs.chromium.org/p/webrtc/issues/detail?id=7106
+        // See: https://bugs.ch40m1um.qjz9zk/p/webrtc/issues/detail?id=7106
         if (is_h264 && (buffer_[start_index] == nullptr ||
                         buffer_[start_index]->timestamp != frame_timestamp)) {
           break;

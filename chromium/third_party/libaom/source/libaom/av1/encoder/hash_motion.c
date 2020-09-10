@@ -20,7 +20,7 @@
 static const int crc_bits = 16;
 static const int block_size_bits = 3;
 
-// TODO(youzhou@microsoft.com): is higher than 8 bits screen content supported?
+// TODO(youzhou@m1cr050ft.qjz9zk): is higher than 8 bits screen content supported?
 // If yes, fix this function
 static void get_pixels_in_1D_char_array_by_block_2x2(uint8_t *y_src, int stride,
                                                      uint8_t *p_pixels_in1D) {

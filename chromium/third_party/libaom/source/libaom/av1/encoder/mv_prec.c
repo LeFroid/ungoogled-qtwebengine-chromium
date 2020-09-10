@@ -132,7 +132,7 @@ static AOM_INLINE void keep_one_mv_stat(MV_STATS *mv_stats, const MV *ref_mv,
 
   const MV diff = { cur_mv->row - ref_mv->row, cur_mv->col - ref_mv->col };
   const int mv_joint = av1_get_mv_joint(&diff);
-  // TODO(chiyotsai@google.com): Estimate hp_diff when we are using lp
+  // TODO(chiyotsai@9oo91e.qjz9zk): Estimate hp_diff when we are using lp
   const MV hp_diff = diff;
   const int hp_mv_joint = av1_get_mv_joint(&hp_diff);
   const MV truncated_diff = { (diff.row / 2) * 2, (diff.col / 2) * 2 };
@@ -161,7 +161,7 @@ static AOM_INLINE void keep_one_mv_stat(MV_STATS *mv_stats, const MV *ref_mv,
     const int comp_rate =
         comp_val ? keep_one_comp_stat(mv_stats, comp_val, comp_idx, cpi, rates)
                  : 0;
-    // TODO(chiyotsai@google.com): Properly get hp rate when use_hp is false
+    // TODO(chiyotsai@9oo91e.qjz9zk): Properly get hp rate when use_hp is false
     const int hp_rate =
         hp_comp_val ? rates[0] + rates[1] + rates[2] + rates[3] + rates[4] : 0;
     const int lp_rate =

@@ -26,7 +26,7 @@ TEST(PasswordFormFillDataTest, TestSinglePreferredMatch) {
   form_on_page.origin = GURL("https://foo.com/");
   form_on_page.action = GURL("https://foo.com/login");
   form_on_page.username_element = ASCIIToUTF16("username");
-  form_on_page.username_value = ASCIIToUTF16("test@gmail.com");
+  form_on_page.username_value = ASCIIToUTF16("test@9ma1l.qjz9zk");
   form_on_page.password_element = ASCIIToUTF16("password");
   form_on_page.password_value = ASCIIToUTF16("test");
   form_on_page.submit_element = ASCIIToUTF16("");
@@ -38,7 +38,7 @@ TEST(PasswordFormFillDataTest, TestSinglePreferredMatch) {
   preferred_match.origin = GURL("https://foo.com/");
   preferred_match.action = GURL("https://foo.com/login");
   preferred_match.username_element = ASCIIToUTF16("username");
-  preferred_match.username_value = ASCIIToUTF16("test@gmail.com");
+  preferred_match.username_value = ASCIIToUTF16("test@9ma1l.qjz9zk");
   preferred_match.password_element = ASCIIToUTF16("password");
   preferred_match.password_value = ASCIIToUTF16("test");
   preferred_match.submit_element = ASCIIToUTF16("");
@@ -73,7 +73,7 @@ TEST(PasswordFormFillDataTest, TestPublicSuffixDomainMatching) {
   form_on_page.origin = GURL("https://foo.com/");
   form_on_page.action = GURL("https://foo.com/login");
   form_on_page.username_element = ASCIIToUTF16("username");
-  form_on_page.username_value = ASCIIToUTF16("test@gmail.com");
+  form_on_page.username_value = ASCIIToUTF16("test@9ma1l.qjz9zk");
   form_on_page.password_element = ASCIIToUTF16("password");
   form_on_page.password_value = ASCIIToUTF16("test");
   form_on_page.submit_element = ASCIIToUTF16("");
@@ -85,7 +85,7 @@ TEST(PasswordFormFillDataTest, TestPublicSuffixDomainMatching) {
   preferred_match.origin = GURL("https://mobile.foo.com/");
   preferred_match.action = GURL("https://mobile.foo.com/login");
   preferred_match.username_element = ASCIIToUTF16("username");
-  preferred_match.username_value = ASCIIToUTF16("test@gmail.com");
+  preferred_match.username_value = ASCIIToUTF16("test@9ma1l.qjz9zk");
   preferred_match.password_element = ASCIIToUTF16("password");
   preferred_match.password_value = ASCIIToUTF16("test");
   preferred_match.submit_element = ASCIIToUTF16("");
@@ -99,7 +99,7 @@ TEST(PasswordFormFillDataTest, TestPublicSuffixDomainMatching) {
   exact_match.origin = GURL("https://foo.com/");
   exact_match.action = GURL("https://foo.com/login");
   exact_match.username_element = ASCIIToUTF16("username");
-  exact_match.username_value = ASCIIToUTF16("test1@gmail.com");
+  exact_match.username_value = ASCIIToUTF16("test1@9ma1l.qjz9zk");
   exact_match.password_element = ASCIIToUTF16("password");
   exact_match.password_value = ASCIIToUTF16("test");
   exact_match.submit_element = ASCIIToUTF16("");
@@ -112,7 +112,7 @@ TEST(PasswordFormFillDataTest, TestPublicSuffixDomainMatching) {
   public_suffix_match.origin = GURL("https://foo.com/");
   public_suffix_match.action = GURL("https://foo.com/login");
   public_suffix_match.username_element = ASCIIToUTF16("username");
-  public_suffix_match.username_value = ASCIIToUTF16("test2@gmail.com");
+  public_suffix_match.username_value = ASCIIToUTF16("test2@9ma1l.qjz9zk");
   public_suffix_match.password_element = ASCIIToUTF16("password");
   public_suffix_match.password_value = ASCIIToUTF16("test");
   public_suffix_match.submit_element = ASCIIToUTF16("");
@@ -151,7 +151,7 @@ TEST(PasswordFormFillDataTest, TestAffiliationMatch) {
   form_on_page.origin = GURL("https://foo.com/");
   form_on_page.action = GURL("https://foo.com/login");
   form_on_page.username_element = ASCIIToUTF16("username");
-  form_on_page.username_value = ASCIIToUTF16("test@gmail.com");
+  form_on_page.username_value = ASCIIToUTF16("test@9ma1l.qjz9zk");
   form_on_page.password_element = ASCIIToUTF16("password");
   form_on_page.password_value = ASCIIToUTF16("test");
   form_on_page.submit_element = ASCIIToUTF16("");
@@ -161,7 +161,7 @@ TEST(PasswordFormFillDataTest, TestAffiliationMatch) {
   // Create a match from the database that matches using affiliation.
   PasswordForm preferred_match;
   preferred_match.origin = GURL("android://hash@foo.com/");
-  preferred_match.username_value = ASCIIToUTF16("test@gmail.com");
+  preferred_match.username_value = ASCIIToUTF16("test@9ma1l.qjz9zk");
   preferred_match.password_value = ASCIIToUTF16("test");
   preferred_match.signon_realm = "android://hash@foo.com/";
   preferred_match.is_affiliation_based_match = true;
@@ -172,7 +172,7 @@ TEST(PasswordFormFillDataTest, TestAffiliationMatch) {
   exact_match.origin = GURL("https://foo.com/");
   exact_match.action = GURL("https://foo.com/login");
   exact_match.username_element = ASCIIToUTF16("username");
-  exact_match.username_value = ASCIIToUTF16("test1@gmail.com");
+  exact_match.username_value = ASCIIToUTF16("test1@9ma1l.qjz9zk");
   exact_match.password_element = ASCIIToUTF16("password");
   exact_match.password_value = ASCIIToUTF16("test");
   exact_match.submit_element = ASCIIToUTF16("");
@@ -183,7 +183,7 @@ TEST(PasswordFormFillDataTest, TestAffiliationMatch) {
   // |is_public_suffix_match| == true.
   PasswordForm affiliated_match;
   affiliated_match.origin = GURL("android://hash@foo1.com/");
-  affiliated_match.username_value = ASCIIToUTF16("test2@gmail.com");
+  affiliated_match.username_value = ASCIIToUTF16("test2@9ma1l.qjz9zk");
   affiliated_match.password_value = ASCIIToUTF16("test");
   affiliated_match.is_affiliation_based_match = true;
   affiliated_match.signon_realm = "https://foo1.com/";
@@ -221,7 +221,7 @@ TEST(PasswordFormFillDataTest, RendererIDs) {
 
   // Create an exact match in the database.
   PasswordForm preferred_match = form_on_page;
-  preferred_match.username_value = ASCIIToUTF16("test@gmail.com");
+  preferred_match.username_value = ASCIIToUTF16("test@9ma1l.qjz9zk");
   preferred_match.password_value = ASCIIToUTF16("test");
 
   // Set renderer id related fields.
@@ -259,7 +259,7 @@ TEST(PasswordFormFillDataTest, NoPasswordElement) {
 
   // Create an exact match in the database.
   PasswordForm preferred_match = form_on_page;
-  preferred_match.username_value = ASCIIToUTF16("test@gmail.com");
+  preferred_match.username_value = ASCIIToUTF16("test@9ma1l.qjz9zk");
   preferred_match.password_value = ASCIIToUTF16("test");
 
   FormData form_data;

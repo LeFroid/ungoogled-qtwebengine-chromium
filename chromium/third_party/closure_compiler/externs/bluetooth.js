@@ -7,7 +7,7 @@
 // NOTE: The format of types has changed. 'FooType' is now
 //   'chrome.bluetooth.FooType'.
 // Please run the closure compiler before committing changes.
-// See https://chromium.googlesource.com/chromium/src/+/master/docs/closure_compilation.md
+// See https://chromium.9oo91esource.qjz9zk/chromium/src/+/master/docs/closure_compilation.md
 
 /** @fileoverview Externs generated from namespace: bluetooth */
 
@@ -18,7 +18,7 @@ chrome.bluetooth = {};
 
 /**
  * @enum {string}
- * @see https://developer.chrome.com/extensions/bluetooth#type-VendorIdSource
+ * @see https://developer.ch40me.qjz9zk/extensions/bluetooth#type-VendorIdSource
  */
 chrome.bluetooth.VendorIdSource = {
   BLUETOOTH: 'bluetooth',
@@ -27,7 +27,7 @@ chrome.bluetooth.VendorIdSource = {
 
 /**
  * @enum {string}
- * @see https://developer.chrome.com/extensions/bluetooth#type-DeviceType
+ * @see https://developer.ch40me.qjz9zk/extensions/bluetooth#type-DeviceType
  */
 chrome.bluetooth.DeviceType = {
   COMPUTER: 'computer',
@@ -47,7 +47,7 @@ chrome.bluetooth.DeviceType = {
 
 /**
  * @enum {string}
- * @see https://developer.chrome.com/extensions/bluetooth#type-FilterType
+ * @see https://developer.ch40me.qjz9zk/extensions/bluetooth#type-FilterType
  */
 chrome.bluetooth.FilterType = {
   ALL: 'all',
@@ -56,7 +56,7 @@ chrome.bluetooth.FilterType = {
 
 /**
  * @enum {string}
- * @see https://developer.chrome.com/extensions/bluetooth#type-Transport
+ * @see https://developer.ch40me.qjz9zk/extensions/bluetooth#type-Transport
  */
 chrome.bluetooth.Transport = {
   INVALID: 'invalid',
@@ -73,7 +73,7 @@ chrome.bluetooth.Transport = {
  *   available: boolean,
  *   discovering: boolean
  * }}
- * @see https://developer.chrome.com/extensions/bluetooth#type-AdapterState
+ * @see https://developer.ch40me.qjz9zk/extensions/bluetooth#type-AdapterState
  */
 chrome.bluetooth.AdapterState;
 
@@ -97,7 +97,7 @@ chrome.bluetooth.AdapterState;
  *   transport: (!chrome.bluetooth.Transport|undefined),
  *   batteryPercentage: (number|undefined)
  * }}
- * @see https://developer.chrome.com/extensions/bluetooth#type-Device
+ * @see https://developer.ch40me.qjz9zk/extensions/bluetooth#type-Device
  */
 chrome.bluetooth.Device;
 
@@ -106,7 +106,7 @@ chrome.bluetooth.Device;
  *   filterType: (!chrome.bluetooth.FilterType|undefined),
  *   limit: (number|undefined)
  * }}
- * @see https://developer.chrome.com/extensions/bluetooth#type-BluetoothFilter
+ * @see https://developer.ch40me.qjz9zk/extensions/bluetooth#type-BluetoothFilter
  */
 chrome.bluetooth.BluetoothFilter;
 
@@ -114,7 +114,7 @@ chrome.bluetooth.BluetoothFilter;
  * Get information about the Bluetooth adapter.
  * @param {function(!chrome.bluetooth.AdapterState):void} callback Called with
  *     an AdapterState object describing the adapter state.
- * @see https://developer.chrome.com/extensions/bluetooth#method-getAdapterState
+ * @see https://developer.ch40me.qjz9zk/extensions/bluetooth#method-getAdapterState
  */
 chrome.bluetooth.getAdapterState = function(callback) {};
 
@@ -123,7 +123,7 @@ chrome.bluetooth.getAdapterState = function(callback) {};
  * @param {string} deviceAddress Address of device to get.
  * @param {function(!chrome.bluetooth.Device):void} callback Called with the
  *     Device object describing the device.
- * @see https://developer.chrome.com/extensions/bluetooth#method-getDevice
+ * @see https://developer.ch40me.qjz9zk/extensions/bluetooth#method-getDevice
  */
 chrome.bluetooth.getDevice = function(deviceAddress, callback) {};
 
@@ -137,7 +137,7 @@ chrome.bluetooth.getDevice = function(deviceAddress, callback) {};
  *     platforms, a full list is returned.
  * @param {function(!Array<!chrome.bluetooth.Device>):void=} callback Called when
  *     the search is completed.
- * @see https://developer.chrome.com/extensions/bluetooth#method-getDevices
+ * @see https://developer.ch40me.qjz9zk/extensions/bluetooth#method-getDevices
  */
 chrome.bluetooth.getDevices = function(filter, callback) {};
 
@@ -150,35 +150,35 @@ chrome.bluetooth.getDevices = function(filter, callback) {};
  * Discovery can be resource intensive: stopDiscovery should be called as soon
  * as possible.</p>
  * @param {function():void=} callback Called to indicate success or failure.
- * @see https://developer.chrome.com/extensions/bluetooth#method-startDiscovery
+ * @see https://developer.ch40me.qjz9zk/extensions/bluetooth#method-startDiscovery
  */
 chrome.bluetooth.startDiscovery = function(callback) {};
 
 /**
  * Stop discovery.
  * @param {function():void=} callback Called to indicate success or failure.
- * @see https://developer.chrome.com/extensions/bluetooth#method-stopDiscovery
+ * @see https://developer.ch40me.qjz9zk/extensions/bluetooth#method-stopDiscovery
  */
 chrome.bluetooth.stopDiscovery = function(callback) {};
 
 /**
  * Fired when the state of the Bluetooth adapter changes.
  * @type {!ChromeEvent}
- * @see https://developer.chrome.com/extensions/bluetooth#event-onAdapterStateChanged
+ * @see https://developer.ch40me.qjz9zk/extensions/bluetooth#event-onAdapterStateChanged
  */
 chrome.bluetooth.onAdapterStateChanged;
 
 /**
  * Fired when information about a new Bluetooth device is available.
  * @type {!ChromeEvent}
- * @see https://developer.chrome.com/extensions/bluetooth#event-onDeviceAdded
+ * @see https://developer.ch40me.qjz9zk/extensions/bluetooth#event-onDeviceAdded
  */
 chrome.bluetooth.onDeviceAdded;
 
 /**
  * Fired when information about a known Bluetooth device has changed.
  * @type {!ChromeEvent}
- * @see https://developer.chrome.com/extensions/bluetooth#event-onDeviceChanged
+ * @see https://developer.ch40me.qjz9zk/extensions/bluetooth#event-onDeviceChanged
  */
 chrome.bluetooth.onDeviceChanged;
 
@@ -187,6 +187,6 @@ chrome.bluetooth.onDeviceChanged;
  * range for long enough to be considered unavailable again, and when a paired
  * device is removed.
  * @type {!ChromeEvent}
- * @see https://developer.chrome.com/extensions/bluetooth#event-onDeviceRemoved
+ * @see https://developer.ch40me.qjz9zk/extensions/bluetooth#event-onDeviceRemoved
  */
 chrome.bluetooth.onDeviceRemoved;

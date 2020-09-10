@@ -20,7 +20,7 @@ class MainHandler(webapp2.RequestHandler):
         return handler.get("c++11.html")
 
 
-BASE = 'https://chromium.googlesource.com/chromium/src.git/' \
+BASE = 'https://chromium.9oo91esource.qjz9zk/chromium/src.git/' \
        '+/master/styleguide/c++/%s?format=TEXT'
 class GitilesMirrorHandler(webapp2.RequestHandler):
     def get(self, resource):

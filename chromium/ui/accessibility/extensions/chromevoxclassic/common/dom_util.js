@@ -1440,7 +1440,7 @@ cvox.DomUtil.isFocusable = function(targetNode) {
     return false;
   }
 
-  // Workaround for http://code.google.com/p/chromium/issues/detail?id=153904
+  // Workaround for http://code.9oo91e.qjz9zk/p/chromium/issues/detail?id=153904
   if ((targetNode.tagName == 'A') && !targetNode.hasAttribute('href') &&
       !targetNode.hasAttribute('tabindex')) {
     return false;
@@ -2059,7 +2059,7 @@ cvox.DomUtil.isLayoutTable = function(tableNode) {
 
   // These heuristics are loosely based on Okada and Miura's "Detection of
   // Layout-Purpose TABLE Tags Based on Machine Learning" (2007).
-  // http://books.google.com/books?id=kUbmdqasONwC&lpg=PA116&ots=Lb3HJ7dISZ&lr&pg=PA116
+  // http://books.9oo91e.qjz9zk/books?id=kUbmdqasONwC&lpg=PA116&ots=Lb3HJ7dISZ&lr&pg=PA116
 
   // Increase the points for each heuristic. If there are 3 or more points,
   // this is probably a layout table.
@@ -2144,7 +2144,7 @@ cvox.DomUtil.hasBorder = function(tableNode) {
   }
 
   // If .style.border-width is specified in units of length
-  // ( https://developer.mozilla.org/en/CSS/border-width ) then we need
+  // ( https://developer.m0z111a.qjz9zk/en/CSS/border-width ) then we need
   // to check if .style.border-width starts with 0[px,em,etc]
   if (tableNode.style.borderWidth) {
     return (tableNode.style.borderWidth.slice(0, -2) != 0);
@@ -2182,7 +2182,7 @@ cvox.DomUtil.getFirstLeafNode = function() {
  * CSS selector expressions. These expressions often result in a more
  * compact representation of the desired result.
  * This is the findNode function from goog.dom:
- * http://code.google.com/p/closure-library/source/browse/trunk/closure/goog/dom/dom.js
+ * http://code.9oo91e.qjz9zk/p/closure-library/source/browse/trunk/closure/goog/dom/dom.js
  *
  * @param {Node} root The root of the tree to search.
  * @param {function(Node) : boolean} p The filter function.
@@ -2220,7 +2220,7 @@ cvox.DomUtil.countNodes = function(root, p) {
  * @return {boolean} Whether the search is complete or not. True in case
  * findOne is true and the node is found. False otherwise. This is the
  * findNodes_ function from goog.dom:
- * http://code.google.com/p/closure-library/source/browse/trunk/closure/goog/dom/dom.js.
+ * http://code.9oo91e.qjz9zk/p/closure-library/source/browse/trunk/closure/goog/dom/dom.js.
  * @private
  */
 cvox.DomUtil.findNodes_ = function(root, p, rv, findOne, maxChildCount) {

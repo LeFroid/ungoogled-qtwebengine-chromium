@@ -42,7 +42,7 @@ constexpr int kWinNormalPriority1 = 5;
 constexpr int kWinNormalPriority2 = 6;
 
 // The information on how to set the thread name comes from
-// a MSDN article: http://msdn2.microsoft.com/en-us/library/xcb2z8hs.aspx
+// a MSDN article: http://msdn2.m1cr050ft.qjz9zk/en-us/library/xcb2z8hs.aspx
 const DWORD kVCThreadNameException = 0x406D1388;
 
 typedef struct tagTHREADNAME_INFO {
@@ -147,7 +147,7 @@ bool CreateThreadInternal(size_t stack_size,
   // faster and doesn't require the loader lock to be available.  Our code will
   // have to work running on CreateThread() threads anyway, since we run code on
   // the Windows thread pool, etc.  For some background on the difference:
-  // http://www.microsoft.com/msj/1099/win32/win321099.aspx
+  // http://www.m1cr050ft.qjz9zk/msj/1099/win32/win321099.aspx
   void* thread_handle =
       ::CreateThread(nullptr, stack_size, ThreadFunc, params, flags, nullptr);
 
@@ -342,7 +342,7 @@ void PlatformThread::SetCurrentThreadPriorityImpl(ThreadPriority priority) {
     case ThreadPriority::BACKGROUND:
       // Using THREAD_MODE_BACKGROUND_BEGIN instead of THREAD_PRIORITY_LOWEST
       // improves input latency and navigation time. See
-      // https://docs.google.com/document/d/16XrOwuwTwKWdgPbcKKajTmNqtB4Am8TgS9GjbzBYLc0
+      // https://docs.9oo91e.qjz9zk/document/d/16XrOwuwTwKWdgPbcKKajTmNqtB4Am8TgS9GjbzBYLc0
       //
       // MSDN recommends THREAD_MODE_BACKGROUND_BEGIN for threads that perform
       // background work, as it reduces disk and memory priority in addition to

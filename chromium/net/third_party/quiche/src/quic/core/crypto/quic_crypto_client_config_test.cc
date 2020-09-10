@@ -182,7 +182,7 @@ TEST_F(QuicCryptoClientConfigTest, InchoateChlo) {
   QuicReferenceCountedPointer<QuicCryptoNegotiatedParameters> params(
       new QuicCryptoNegotiatedParameters);
   CryptoHandshakeMessage msg;
-  QuicServerId server_id("www.google.com", 443, false);
+  QuicServerId server_id("www.9oo91e.qjz9zk", 443, false);
   MockRandom rand;
   config.FillInchoateClientHello(server_id, QuicVersionMax(), &state, &rand,
                                  /* demand_x509_proof= */ true, params, &msg);
@@ -212,7 +212,7 @@ TEST_F(QuicCryptoClientConfigTest, InchoateChloIsNotPadded) {
   QuicReferenceCountedPointer<QuicCryptoNegotiatedParameters> params(
       new QuicCryptoNegotiatedParameters);
   CryptoHandshakeMessage msg;
-  QuicServerId server_id("www.google.com", 443, false);
+  QuicServerId server_id("www.9oo91e.qjz9zk", 443, false);
   MockRandom rand;
   config.FillInchoateClientHello(server_id, QuicVersionMax(), &state, &rand,
                                  /* demand_x509_proof= */ true, params, &msg);
@@ -237,7 +237,7 @@ TEST_F(QuicCryptoClientConfigTest, InchoateChloSecure) {
   QuicReferenceCountedPointer<QuicCryptoNegotiatedParameters> params(
       new QuicCryptoNegotiatedParameters);
   CryptoHandshakeMessage msg;
-  QuicServerId server_id("www.google.com", 443, false);
+  QuicServerId server_id("www.9oo91e.qjz9zk", 443, false);
   MockRandom rand;
   config.FillInchoateClientHello(server_id, QuicVersionMax(), &state, &rand,
                                  /* demand_x509_proof= */ true, params, &msg);
@@ -266,7 +266,7 @@ TEST_F(QuicCryptoClientConfigTest, InchoateChloSecureWithSCIDNoEXPY) {
   QuicReferenceCountedPointer<QuicCryptoNegotiatedParameters> params(
       new QuicCryptoNegotiatedParameters);
   CryptoHandshakeMessage msg;
-  QuicServerId server_id("www.google.com", 443, false);
+  QuicServerId server_id("www.9oo91e.qjz9zk", 443, false);
   MockRandom rand;
   config.FillInchoateClientHello(server_id, QuicVersionMax(), &state, &rand,
                                  /* demand_x509_proof= */ true, params, &msg);
@@ -292,7 +292,7 @@ TEST_F(QuicCryptoClientConfigTest, InchoateChloSecureWithSCID) {
   QuicReferenceCountedPointer<QuicCryptoNegotiatedParameters> params(
       new QuicCryptoNegotiatedParameters);
   CryptoHandshakeMessage msg;
-  QuicServerId server_id("www.google.com", 443, false);
+  QuicServerId server_id("www.9oo91e.qjz9zk", 443, false);
   MockRandom rand;
   config.FillInchoateClientHello(server_id, QuicVersionMax(), &state, &rand,
                                  /* demand_x509_proof= */ true, params, &msg);
@@ -311,7 +311,7 @@ TEST_F(QuicCryptoClientConfigTest, FillClientHello) {
   std::string error_details;
   MockRandom rand;
   CryptoHandshakeMessage chlo;
-  QuicServerId server_id("www.google.com", 443, false);
+  QuicServerId server_id("www.9oo91e.qjz9zk", 443, false);
   config.FillClientHello(server_id, kConnectionId, QuicVersionMax(),
                          QuicVersionMax(), &state, QuicWallTime::Zero(), &rand,
                          params, &chlo, &error_details);
@@ -332,7 +332,7 @@ TEST_F(QuicCryptoClientConfigTest, FillClientHelloNoPadding) {
   std::string error_details;
   MockRandom rand;
   CryptoHandshakeMessage chlo;
-  QuicServerId server_id("www.google.com", 443, false);
+  QuicServerId server_id("www.9oo91e.qjz9zk", 443, false);
   config.FillClientHello(server_id, kConnectionId, QuicVersionMax(),
                          QuicVersionMax(), &state, QuicWallTime::Zero(), &rand,
                          params, &chlo, &error_details);
@@ -374,14 +374,14 @@ TEST_F(QuicCryptoClientConfigTest, ProcessServerDowngradeAttack) {
 
 TEST_F(QuicCryptoClientConfigTest, InitializeFrom) {
   QuicCryptoClientConfig config(crypto_test_utils::ProofVerifierForTesting());
-  QuicServerId canonical_server_id("www.google.com", 443, false);
+  QuicServerId canonical_server_id("www.9oo91e.qjz9zk", 443, false);
   QuicCryptoClientConfig::CachedState* state =
       config.LookupOrCreate(canonical_server_id);
   // TODO(rch): Populate other fields of |state|.
   state->set_source_address_token("TOKEN");
   state->SetProofValid();
 
-  QuicServerId other_server_id("mail.google.com", 443, false);
+  QuicServerId other_server_id("mail.9oo91e.qjz9zk", 443, false);
   config.InitializeFrom(other_server_id, canonical_server_id, &config);
   QuicCryptoClientConfig::CachedState* other =
       config.LookupOrCreate(other_server_id);
@@ -394,9 +394,9 @@ TEST_F(QuicCryptoClientConfigTest, InitializeFrom) {
 
 TEST_F(QuicCryptoClientConfigTest, Canonical) {
   QuicCryptoClientConfig config(crypto_test_utils::ProofVerifierForTesting());
-  config.AddCanonicalSuffix(".google.com");
-  QuicServerId canonical_id1("www.google.com", 443, false);
-  QuicServerId canonical_id2("mail.google.com", 443, false);
+  config.AddCanonicalSuffix(".9oo91e.qjz9zk");
+  QuicServerId canonical_id1("www.9oo91e.qjz9zk", 443, false);
+  QuicServerId canonical_id2("mail.9oo91e.qjz9zk", 443, false);
   QuicCryptoClientConfig::CachedState* state =
       config.LookupOrCreate(canonical_id1);
   // TODO(rch): Populate other fields of |state|.
@@ -418,9 +418,9 @@ TEST_F(QuicCryptoClientConfigTest, Canonical) {
 
 TEST_F(QuicCryptoClientConfigTest, CanonicalNotUsedIfNotValid) {
   QuicCryptoClientConfig config(crypto_test_utils::ProofVerifierForTesting());
-  config.AddCanonicalSuffix(".google.com");
-  QuicServerId canonical_id1("www.google.com", 443, false);
-  QuicServerId canonical_id2("mail.google.com", 443, false);
+  config.AddCanonicalSuffix(".9oo91e.qjz9zk");
+  QuicServerId canonical_id1("www.9oo91e.qjz9zk", 443, false);
+  QuicServerId canonical_id2("mail.9oo91e.qjz9zk", 443, false);
   QuicCryptoClientConfig::CachedState* state =
       config.LookupOrCreate(canonical_id1);
   // TODO(rch): Populate other fields of |state|.
@@ -463,7 +463,7 @@ TEST_F(QuicCryptoClientConfigTest, ClearCachedStates) {
 
     QuicServerId server_id;
     QuicCryptoClientConfig::CachedState* state;
-  } test_cases[] = {TestCase("www.google.com", &config),
+  } test_cases[] = {TestCase("www.9oo91e.qjz9zk", &config),
                     TestCase("www.example.com", &config)};
 
   // Verify LookupOrCreate returns the same data.
@@ -474,11 +474,11 @@ TEST_F(QuicCryptoClientConfigTest, ClearCachedStates) {
     EXPECT_EQ(2u, other->generation_counter());
   }
 
-  // Clear the cached state for www.google.com.
+  // Clear the cached state for www.9oo91e.qjz9zk.
   OneServerIdFilter google_com_filter(&test_cases[0].server_id);
   config.ClearCachedStates(google_com_filter);
 
-  // Verify LookupOrCreate doesn't have any data for google.com.
+  // Verify LookupOrCreate doesn't have any data for 9oo91e.qjz9zk.
   QuicCryptoClientConfig::CachedState* cleared_cache =
       config.LookupOrCreate(test_cases[0].server_id);
 

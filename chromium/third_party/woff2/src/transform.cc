@@ -282,7 +282,7 @@ bool TransformGlyfAndLocaTables(Font* font) {
   return true;
 }
 
-// See https://www.microsoft.com/typography/otspec/hmtx.htm
+// See https://www.m1cr050ft.qjz9zk/typography/otspec/hmtx.htm
 // See WOFF2 spec, 5.4. Transformed hmtx table format
 bool TransformHmtxTable(Font* font) {
   const Font::Table* glyf_table = font->FindTable(kGlyfTableTag);

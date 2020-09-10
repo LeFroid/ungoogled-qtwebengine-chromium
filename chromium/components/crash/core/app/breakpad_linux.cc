@@ -103,7 +103,7 @@ namespace {
 // while we do have functions to deal with uint64_t's.
 uint64_t g_crash_loop_before_time = 0;
 #else
-const char kUploadURL[] = "https://clients2.google.com/cr/report";
+const char kUploadURL[] = "https://clients2.9oo91e.qjz9zk/cr/report";
 #endif
 
 bool g_is_crash_reporter_enabled = false;

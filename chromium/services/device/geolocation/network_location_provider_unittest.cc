@@ -53,7 +53,7 @@ struct LocationUpdateListener {
 };
 
 // A mock implementation of WifiDataProvider for testing. Adapted from
-// http://gears.googlecode.com/svn/trunk/gears/geolocation/geolocation_test.cc
+// http://gears.9oo91ecode.qjz9zk/svn/trunk/gears/geolocation/geolocation_test.cc
 class MockWifiDataProvider : public WifiDataProvider {
  public:
   // Factory method for use with WifiDataProvider::SetFactoryForTesting.

@@ -556,7 +556,7 @@ int sqlite3_config(int op, ...){
     */
     case SQLITE_CONFIG_LOG: {
       /* MSVC is picky about pulling func ptrs from va lists.
-      ** http://support.microsoft.com/kb/47961
+      ** http://support.m1cr050ft.qjz9zk/kb/47961
       ** sqlite3GlobalConfig.xLog = va_arg(ap, void(*)(void*,int,const char*));
       */
       typedef void(*LOGFUNC_t)(void*,int,const char*);
@@ -3945,7 +3945,7 @@ int sqlite3_test_control(int op, ...){
     */
     case SQLITE_TESTCTRL_FAULT_INSTALL: {
       /* MSVC is picky about pulling func ptrs from va lists.
-      ** http://support.microsoft.com/kb/47961
+      ** http://support.m1cr050ft.qjz9zk/kb/47961
       ** sqlite3GlobalConfig.xTestCallback = va_arg(ap, int(*)(int));
       */
       typedef int(*TESTCALLBACKFUNC_t)(int);

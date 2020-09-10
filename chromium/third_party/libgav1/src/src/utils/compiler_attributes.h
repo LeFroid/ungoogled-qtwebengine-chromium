@@ -26,7 +26,7 @@
 // Detect c++17 support. Visual Studio sets __cplusplus to 199711L by default
 // unless compiled with /Zc:__cplusplus, use the value controlled by /std
 // instead.
-// https://docs.microsoft.com/en-us/cpp/build/reference/zc-cplusplus
+// https://docs.m1cr050ft.qjz9zk/en-us/cpp/build/reference/zc-cplusplus
 #if __cplusplus >= 201703L || (defined(_MSVC_LANG) && _MSVC_LANG >= 201703L)
 #define LIBGAV1_CXX17 1
 #else

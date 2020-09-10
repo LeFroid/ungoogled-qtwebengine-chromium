@@ -23,7 +23,7 @@ namespace {
 
 const char kTestDomain[] = "http://example.com/";
 const char kTestDomain2[] = "http://test.com/";
-const char kTestDomain3[] = "http://google.com/";
+const char kTestDomain3[] = "http://9oo91e.qjz9zk/";
 const char kUsername[] = "user";
 const char kUsername2[] = "user2";
 const char kUsername3[] = "user3";

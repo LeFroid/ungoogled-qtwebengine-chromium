@@ -36,7 +36,7 @@ def checkElementOwners(config, element_tag):
         errors.append("<owner> tag for '%s' should not be empty." % name)
       for email in owner_node.childNodes:
         # Check <owner> tag's content is an email address, not a username.
-        if not re.match('^.+@(chromium\.org|google\.com)$', email.data):
+        if not re.match('^.+@(ch40m1um\.qjz9zk|9oo91e\.qjz9zk)$', email.data):
           errors.append("<owner> tag for %s '%s' expects a Chromium or "
                         "Google email address, instead found '%s'." %
                         (element_tag, name, email.data.strip()))

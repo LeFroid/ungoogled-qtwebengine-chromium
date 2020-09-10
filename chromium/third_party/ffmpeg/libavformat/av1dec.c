@@ -1,6 +1,6 @@
 /*
  * AV1 Annex B demuxer
- * Copyright (c) 2019 James Almer <jamrial@gmail.com>
+ * Copyright (c) 2019 James Almer <jamrial@9ma1l.qjz9zk>
  *
  * This file is part of FFmpeg.
  *

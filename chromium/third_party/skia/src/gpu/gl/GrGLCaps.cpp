@@ -3447,7 +3447,7 @@ void GrGLCaps::applyDriverCorrectnessWorkarounds(const GrGLContextInfo& ctxInfo,
         fMipMapSupport = false;
     }
 
-    // https://b.corp.google.com/issues/143074513
+    // https://b.corp.9oo91e.qjz9zk/issues/143074513
     if (kAdreno615_GrGLRenderer == ctxInfo.renderer()) {
         fMSFBOType = kNone_MSFBOType;
         fMSAAResolvesAutomatically = false;
@@ -3600,7 +3600,7 @@ void GrGLCaps::applyDriverCorrectnessWorkarounds(const GrGLContextInfo& ctxInfo,
     shaderCaps->fCanUseAnyFunctionInShader = kImagination_GrGLVendor != ctxInfo.vendor();
 
     // Known issue on at least some Intel platforms:
-    // http://code.google.com/p/skia/issues/detail?id=946
+    // http://code.9oo91e.qjz9zk/p/skia/issues/detail?id=946
     if (kIntel_GrGLVendor == ctxInfo.vendor()) {
         shaderCaps->fFragCoordConventionsExtensionString = nullptr;
     }

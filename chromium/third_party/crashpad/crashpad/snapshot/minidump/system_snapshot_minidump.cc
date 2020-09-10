@@ -97,36 +97,36 @@ std::string SystemSnapshotMinidump::CPUVendor() const {
 void SystemSnapshotMinidump::CPUFrequency(uint64_t* current_hz,
                                           uint64_t* max_hz) const {
   INITIALIZATION_STATE_DCHECK_VALID(initialized_);
-  NOTREACHED();  // https://crashpad.chromium.org/bug/10
+  NOTREACHED();  // https://crashpad.ch40m1um.qjz9zk/bug/10
 }
 
 uint32_t SystemSnapshotMinidump::CPUX86Signature() const {
   INITIALIZATION_STATE_DCHECK_VALID(initialized_);
-  NOTREACHED();  // https://crashpad.chromium.org/bug/10
+  NOTREACHED();  // https://crashpad.ch40m1um.qjz9zk/bug/10
   return 0;
 }
 
 uint64_t SystemSnapshotMinidump::CPUX86Features() const {
   INITIALIZATION_STATE_DCHECK_VALID(initialized_);
-  NOTREACHED();  // https://crashpad.chromium.org/bug/10
+  NOTREACHED();  // https://crashpad.ch40m1um.qjz9zk/bug/10
   return 0;
 }
 
 uint64_t SystemSnapshotMinidump::CPUX86ExtendedFeatures() const {
   INITIALIZATION_STATE_DCHECK_VALID(initialized_);
-  NOTREACHED();  // https://crashpad.chromium.org/bug/10
+  NOTREACHED();  // https://crashpad.ch40m1um.qjz9zk/bug/10
   return 0;
 }
 
 uint32_t SystemSnapshotMinidump::CPUX86Leaf7Features() const {
   INITIALIZATION_STATE_DCHECK_VALID(initialized_);
-  NOTREACHED();  // https://crashpad.chromium.org/bug/10
+  NOTREACHED();  // https://crashpad.ch40m1um.qjz9zk/bug/10
   return 0;
 }
 
 bool SystemSnapshotMinidump::CPUX86SupportsDAZ() const {
   INITIALIZATION_STATE_DCHECK_VALID(initialized_);
-  NOTREACHED();  // https://crashpad.chromium.org/bug/10
+  NOTREACHED();  // https://crashpad.ch40m1um.qjz9zk/bug/10
   return false;
 }
 
@@ -175,13 +175,13 @@ std::string SystemSnapshotMinidump::OSVersionFull() const {
 
 std::string SystemSnapshotMinidump::MachineDescription() const {
   INITIALIZATION_STATE_DCHECK_VALID(initialized_);
-  NOTREACHED();  // https://crashpad.chromium.org/bug/10
+  NOTREACHED();  // https://crashpad.ch40m1um.qjz9zk/bug/10
   return std::string();
 }
 
 bool SystemSnapshotMinidump::NXEnabled() const {
   INITIALIZATION_STATE_DCHECK_VALID(initialized_);
-  NOTREACHED();  // https://crashpad.chromium.org/bug/10
+  NOTREACHED();  // https://crashpad.ch40m1um.qjz9zk/bug/10
   return false;
 }
 
@@ -191,7 +191,7 @@ void SystemSnapshotMinidump::TimeZone(DaylightSavingTimeStatus* dst_status,
                                       std::string* standard_name,
                                       std::string* daylight_name) const {
   INITIALIZATION_STATE_DCHECK_VALID(initialized_);
-  NOTREACHED();  // https://crashpad.chromium.org/bug/10
+  NOTREACHED();  // https://crashpad.ch40m1um.qjz9zk/bug/10
 }
 
 }  // namespace internal

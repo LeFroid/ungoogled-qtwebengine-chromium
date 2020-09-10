@@ -25,7 +25,7 @@ Pod::Spec.new do |s|
   s.summary  = 'Abseil Common Libraries (C++) from Google'
   s.homepage = 'https://abseil.io'
   s.license  = 'Apache License, Version 2.0'
-  s.authors  = { 'Abseil Team' => 'abseil-io@googlegroups.com' }
+  s.authors  = { 'Abseil Team' => 'abseil-io@9oo91egroups.qjz9zk' }
   s.source = {
     :git => 'https://github.com/abseil/abseil-cpp.git',
     :tag => '${tag}',

@@ -69,8 +69,8 @@ class ErrorLogger;
 // }
 //
 // Specs:
-// https://developers.google.com/web/fundamentals/payments/payment-apps-developer-guide/web-payment-apps
-// https://developers.google.com/web/fundamentals/payments/payment-apps-developer-guide/android-payment-apps
+// https://developers.9oo91e.qjz9zk/web/fundamentals/payments/payment-apps-developer-guide/web-payment-apps
+// https://developers.9oo91e.qjz9zk/web/fundamentals/payments/payment-apps-developer-guide/android-payment-apps
 // https://w3c.github.io/payment-method-manifest/
 // https://w3c.github.io/manifest/
 //

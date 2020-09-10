@@ -34,7 +34,7 @@
  * @fileoverview Definitions for the Chromium extensions API.
  *
  * This is the externs file for the Chrome Extensions API.
- * See http://developer.chrome.com/extensions/
+ * See http://developer.ch40me.qjz9zk/extensions/
  *
  * There are several problematic issues regarding Chrome extension APIs and
  * this externs files, including:
@@ -104,7 +104,7 @@
  * at-typedef annotation. See
  * https://github.com/google/closure-compiler/wiki/Types-in-the-Closure-Type-System
  * for more information.) For example, the Permissions type defined at
- * http://developer.chrome.com/extensions/permissions.html#type-Permissions
+ * http://developer.ch40me.qjz9zk/extensions/permissions.html#type-Permissions
  * could be:
  *
  *   / **
@@ -127,7 +127,7 @@
  * For #2, use a standard constructor, even though no constructor is provided
  * and extension writers will never instantiate an instance, as using a first
  * class type provides the strongest type checking. For example, see the Port
- * type defined at http://developer.chrome.com/apps/runtime.html#type-Port.
+ * type defined at http://developer.ch40me.qjz9zk/apps/runtime.html#type-Port.
  * Always qualify the type name to reduce top-level pollution in this file:
  *
  *   Do:
@@ -234,7 +234,7 @@ if (Math.random() < 1) {  // always true but the compiler doesn't know that
 
 
 /**
- * @see https://developer.chrome.com/extensions/accessibilityFeatures
+ * @see https://developer.ch40me.qjz9zk/extensions/accessibilityFeatures
  * @const
  */
 chrome.accessibilityFeatures = {};
@@ -274,7 +274,7 @@ chrome.accessibilityFeatures.animationPolicy;
 
 /**
  * @const
- * @see http://developer.chrome.com/apps/app.runtime.html
+ * @see http://developer.ch40me.qjz9zk/apps/app.runtime.html
  */
 chrome.app.runtime = {};
 
@@ -282,7 +282,7 @@ chrome.app.runtime = {};
 
 /**
  * @constructor
- * @see http://developer.chrome.com/apps/app_runtime.html
+ * @see http://developer.ch40me.qjz9zk/apps/app_runtime.html
  */
 chrome.app.runtime.LaunchItem = function() {};
 
@@ -301,7 +301,7 @@ chrome.app.runtime.onEmbedRequested;
 
 /**
  * @constructor
- * @see https://developer.chrome.com/apps/app_runtime#event-onLaunched
+ * @see https://developer.ch40me.qjz9zk/apps/app_runtime#event-onLaunched
  */
 chrome.app.runtime.LaunchData = function() {};
 
@@ -324,27 +324,27 @@ chrome.app.runtime.onLaunched;
 
 /**
  * @type {!ChromeEvent}
- * @see http://developer.chrome.com/apps/app.runtime.html#event-onRestarted
+ * @see http://developer.ch40me.qjz9zk/apps/app.runtime.html#event-onRestarted
  */
 chrome.app.runtime.onRestarted;
 
 
 /**
  * @const
- * @see http://developer.chrome.com/apps/app.window.html
+ * @see http://developer.ch40me.qjz9zk/apps/app.window.html
  */
 chrome.app.window = {};
 
 
 /**
- * @see https://developer.chrome.com/apps/app_window#method-getAll
+ * @see https://developer.ch40me.qjz9zk/apps/app_window#method-getAll
  * @return {!Array<!chrome.app.window.AppWindow>}
  */
 chrome.app.window.getAll = function() {};
 
 
 /**
- * @see https://developer.chrome.com/apps/app_window#method-get
+ * @see https://developer.ch40me.qjz9zk/apps/app_window#method-get
  * @param {string} id
  * @return {chrome.app.window.AppWindow}
  */
@@ -354,20 +354,20 @@ chrome.app.window.get = function(id) {};
 
 /**
  * @constructor
- * @see http://developer.chrome.com/apps/app.window.html#type-AppWindow
+ * @see http://developer.ch40me.qjz9zk/apps/app.window.html#type-AppWindow
  */
 chrome.app.window.AppWindow = function() {};
 
 
 /**
- * @see http://developer.chrome.com/apps/app.window.html#type-AppWindow
+ * @see http://developer.ch40me.qjz9zk/apps/app.window.html#type-AppWindow
  * @return {undefined}
  */
 chrome.app.window.AppWindow.prototype.focus = function() {};
 
 
 /**
- * @see http://developer.chrome.com/apps/app.window.html#type-AppWindow
+ * @see http://developer.ch40me.qjz9zk/apps/app.window.html#type-AppWindow
  * @return {undefined}
  */
 chrome.app.window.AppWindow.prototype.fullscreen = function() {};
@@ -375,13 +375,13 @@ chrome.app.window.AppWindow.prototype.fullscreen = function() {};
 
 /**
  * @return {boolean}
- * @see http://developer.chrome.com/apps/app.window.html#type-AppWindow
+ * @see http://developer.ch40me.qjz9zk/apps/app.window.html#type-AppWindow
  */
 chrome.app.window.AppWindow.prototype.isFullscreen = function() {};
 
 
 /**
- * @see http://developer.chrome.com/apps/app.window.html#type-AppWindow
+ * @see http://developer.ch40me.qjz9zk/apps/app.window.html#type-AppWindow
  * @return {undefined}
  */
 chrome.app.window.AppWindow.prototype.minimize = function() {};
@@ -389,13 +389,13 @@ chrome.app.window.AppWindow.prototype.minimize = function() {};
 
 /**
  * @return {boolean}
- * @see http://developer.chrome.com/apps/app.window.html#type-AppWindow
+ * @see http://developer.ch40me.qjz9zk/apps/app.window.html#type-AppWindow
  */
 chrome.app.window.AppWindow.prototype.isMinimized = function() {};
 
 
 /**
- * @see http://developer.chrome.com/apps/app.window.html#type-AppWindow
+ * @see http://developer.ch40me.qjz9zk/apps/app.window.html#type-AppWindow
  * @return {undefined}
  */
 chrome.app.window.AppWindow.prototype.maximize = function() {};
@@ -403,13 +403,13 @@ chrome.app.window.AppWindow.prototype.maximize = function() {};
 
 /**
  * @return {boolean}
- * @see http://developer.chrome.com/apps/app.window.html#type-AppWindow
+ * @see http://developer.ch40me.qjz9zk/apps/app.window.html#type-AppWindow
  */
 chrome.app.window.AppWindow.prototype.isMaximized = function() {};
 
 
 /**
- * @see http://developer.chrome.com/apps/app.window.html#type-AppWindow
+ * @see http://developer.ch40me.qjz9zk/apps/app.window.html#type-AppWindow
  * @return {undefined}
  */
 chrome.app.window.AppWindow.prototype.restore = function() {};
@@ -418,7 +418,7 @@ chrome.app.window.AppWindow.prototype.restore = function() {};
 /**
  * @param {number} left The new left position, in pixels.
  * @param {number} top The new top position, in pixels.
- * @see http://developer.chrome.com/apps/app.window.html#type-AppWindow
+ * @see http://developer.ch40me.qjz9zk/apps/app.window.html#type-AppWindow
  * @return {undefined}
  */
 chrome.app.window.AppWindow.prototype.moveTo = function(left, top) {};
@@ -427,28 +427,28 @@ chrome.app.window.AppWindow.prototype.moveTo = function(left, top) {};
 /**
  * @param {number} width The new width, in pixels.
  * @param {number} height The new height, in pixels.
- * @see http://developer.chrome.com/apps/app.window.html#type-AppWindow
+ * @see http://developer.ch40me.qjz9zk/apps/app.window.html#type-AppWindow
  * @return {undefined}
  */
 chrome.app.window.AppWindow.prototype.resizeTo = function(width, height) {};
 
 
 /**
- * @see http://developer.chrome.com/apps/app.window.html#type-AppWindow
+ * @see http://developer.ch40me.qjz9zk/apps/app.window.html#type-AppWindow
  * @return {undefined}
  */
 chrome.app.window.AppWindow.prototype.drawAttention = function() {};
 
 
 /**
- * @see http://developer.chrome.com/apps/app.window.html#type-AppWindow
+ * @see http://developer.ch40me.qjz9zk/apps/app.window.html#type-AppWindow
  * @return {undefined}
  */
 chrome.app.window.AppWindow.prototype.clearAttention = function() {};
 
 
 /**
- * @see http://developer.chrome.com/apps/app.window.html#type-AppWindow
+ * @see http://developer.ch40me.qjz9zk/apps/app.window.html#type-AppWindow
  * @return {undefined}
  */
 chrome.app.window.AppWindow.prototype.close = function() {};
@@ -456,14 +456,14 @@ chrome.app.window.AppWindow.prototype.close = function() {};
 
 /**
  * @param {boolean=} opt_focus Should the window be focused? Defaults to true.
- * @see http://developer.chrome.com/apps/app.window.html#type-AppWindow
+ * @see http://developer.ch40me.qjz9zk/apps/app.window.html#type-AppWindow
  * @return {undefined}
  */
 chrome.app.window.AppWindow.prototype.show = function(opt_focus) {};
 
 
 /**
- * @see http://developer.chrome.com/apps/app.window.html#type-AppWindow
+ * @see http://developer.ch40me.qjz9zk/apps/app.window.html#type-AppWindow
  * @return {undefined}
  */
 chrome.app.window.AppWindow.prototype.hide = function() {};
@@ -471,14 +471,14 @@ chrome.app.window.AppWindow.prototype.hide = function() {};
 
 /**
  * @return {!chrome.app.window.ContentBounds} The current window bounds.
- * @see http://developer.chrome.com/apps/app.window.html#type-AppWindow
+ * @see http://developer.ch40me.qjz9zk/apps/app.window.html#type-AppWindow
  */
 chrome.app.window.AppWindow.prototype.getBounds = function() {};
 
 
 /**
  * @param {!chrome.app.window.ContentBounds} bounds The new window bounds.
- * @see http://developer.chrome.com/apps/app.window.html#type-AppWindow
+ * @see http://developer.ch40me.qjz9zk/apps/app.window.html#type-AppWindow
  * @return {undefined}
  */
 chrome.app.window.AppWindow.prototype.setBounds = function(bounds) {};
@@ -486,7 +486,7 @@ chrome.app.window.AppWindow.prototype.setBounds = function(bounds) {};
 
 /**
  * @return {boolean}
- * @see http://developer.chrome.com/apps/app.window.html#type-AppWindow
+ * @see http://developer.ch40me.qjz9zk/apps/app.window.html#type-AppWindow
  */
 chrome.app.window.AppWindow.prototype.isAlwaysOnTop = function() {};
 
@@ -494,7 +494,7 @@ chrome.app.window.AppWindow.prototype.isAlwaysOnTop = function() {};
 /**
  * @param {boolean} alwaysOnTop Set whether the window should stay above most
  *     other windows.
- * @see http://developer.chrome.com/apps/app.window.html#type-AppWindow
+ * @see http://developer.ch40me.qjz9zk/apps/app.window.html#type-AppWindow
  * @return {undefined}
  */
 chrome.app.window.AppWindow.prototype.setAlwaysOnTop = function(alwaysOnTop) {};
@@ -503,7 +503,7 @@ chrome.app.window.AppWindow.prototype.setAlwaysOnTop = function(alwaysOnTop) {};
 /**
  * @param {boolean} alwaysVisible Set whether the window is visible on all
  *     workspaces.
- * @see http://developer.chrome.com/apps/app.window.html#type-AppWindow
+ * @see http://developer.ch40me.qjz9zk/apps/app.window.html#type-AppWindow
  * @return {undefined}
  */
 chrome.app.window.AppWindow.prototype.setVisibleOnAllWorkspaces = function(
@@ -513,7 +513,7 @@ chrome.app.window.AppWindow.prototype.setVisibleOnAllWorkspaces = function(
 /**
  * @param {boolean} wantAllKeys Set whether the window should get all keyboard
  *     events including system keys that are usually not sent.
- * @see http://developer.chrome.com/apps/app.window.html#type-AppWindow
+ * @see http://developer.ch40me.qjz9zk/apps/app.window.html#type-AppWindow
  * @return {undefined}
  */
 chrome.app.window.AppWindow.prototype.setInterceptAllKeys = function(
@@ -575,7 +575,7 @@ chrome.app.window.AppWindow.prototype.outerBounds;
  *   setMinimumSize: function(number, number),
  *   setMaximumSize: function(number, number)
  * }}
- * @see http://developer.chrome.com/apps/app.window.html#type-Bounds
+ * @see http://developer.ch40me.qjz9zk/apps/app.window.html#type-Bounds
  */
 chrome.app.window.Bounds;
 
@@ -591,7 +591,7 @@ chrome.app.window.Bounds;
  *   maxWidth: (number|undefined),
  *   maxHeight: (number|undefined)
  * }}
- * @see http://developer.chrome.com/apps/app_window#type-BoundsSpecification
+ * @see http://developer.ch40me.qjz9zk/apps/app_window#type-BoundsSpecification
  */
 chrome.app.window.BoundsSpecification;
 
@@ -603,7 +603,7 @@ chrome.app.window.BoundsSpecification;
  *   width: (number|undefined),
  *   height: (number|undefined)
  * }}
- * @see http://developer.chrome.com/apps/app_window#type-ContentBounds
+ * @see http://developer.ch40me.qjz9zk/apps/app_window#type-ContentBounds
  */
 chrome.app.window.ContentBounds;
 
@@ -615,7 +615,7 @@ chrome.app.window.ContentBounds;
  *   activeColor: (string|undefined),
  *   inactiveColor: (string|undefined)
  * }}
- * @see http://developer.chrome.com/apps/app_window#type-FrameOptions
+ * @see http://developer.ch40me.qjz9zk/apps/app_window#type-FrameOptions
  */
 chrome.app.window.FrameOptions;
 
@@ -639,7 +639,7 @@ chrome.app.window.FrameOptions;
  *   focused: (boolean|undefined),
  *   visibleOnAllWorkspaces: (boolean|undefined)
  * }}
- * @see http://developer.chrome.com/apps/app.window.html#method-create
+ * @see http://developer.ch40me.qjz9zk/apps/app.window.html#method-create
  */
 chrome.app.window.CreateWindowOptions;
 
@@ -650,7 +650,7 @@ chrome.app.window.CreateWindowOptions;
  *     the new window.
  * @param {function(!chrome.app.window.AppWindow)=} opt_createWindowCallback
  *     Callback to be run.
- * @see http://developer.chrome.com/apps/app.window.html#method-create
+ * @see http://developer.ch40me.qjz9zk/apps/app.window.html#method-create
  * @return {undefined}
  */
 chrome.app.window.create = function(
@@ -661,49 +661,49 @@ chrome.app.window.create = function(
  * Returns an AppWindow object for the current script context (ie JavaScript
  * 'window' object).
  * @return {!chrome.app.window.AppWindow}
- * @see http://developer.chrome.com/apps/app.window.html#method-current
+ * @see http://developer.ch40me.qjz9zk/apps/app.window.html#method-current
  */
 chrome.app.window.current = function() {};
 
 
 /**
  * @type {!ChromeEvent}
- * @see http://developer.chrome.com/apps/app.window.html#event-onBoundsChanged
+ * @see http://developer.ch40me.qjz9zk/apps/app.window.html#event-onBoundsChanged
  */
 chrome.app.window.onBoundsChanged;
 
 
 /**
  * @type {!ChromeEvent}
- * @see http://developer.chrome.com/apps/app.window.html#event-onClosed
+ * @see http://developer.ch40me.qjz9zk/apps/app.window.html#event-onClosed
  */
 chrome.app.window.onClosed;
 
 
 /**
  * @type {!ChromeEvent}
- * @see http://developer.chrome.com/apps/app.window.html#event-onFullscreened
+ * @see http://developer.ch40me.qjz9zk/apps/app.window.html#event-onFullscreened
  */
 chrome.app.window.onFullscreened;
 
 
 /**
  * @type {!ChromeEvent}
- * @see http://developer.chrome.com/apps/app.window.html#event-onMaximized
+ * @see http://developer.ch40me.qjz9zk/apps/app.window.html#event-onMaximized
  */
 chrome.app.window.onMaximized;
 
 
 /**
  * @type {!ChromeEvent}
- * @see http://developer.chrome.com/apps/app.window.html#event-onMinimized
+ * @see http://developer.ch40me.qjz9zk/apps/app.window.html#event-onMinimized
  */
 chrome.app.window.onMinimized;
 
 
 /**
  * @type {!ChromeEvent}
- * @see http://developer.chrome.com/apps/app.window.html#event-onRestored
+ * @see http://developer.ch40me.qjz9zk/apps/app.window.html#event-onRestored
  */
 chrome.app.window.onRestored;
 
@@ -712,7 +712,7 @@ chrome.app.window.onRestored;
  * Private API.
  *
  * @const
- * @see https://code.google.com/p/chromium/codesearch#chromium/src/chrome/common/extensions/api/audio_modem.idl
+ * @see https://code.9oo91e.qjz9zk/p/chromium/codesearch#chromium/src/chrome/common/extensions/api/audio_modem.idl
  * @see go/chrome-modem
  */
 chrome.audioModem = {};
@@ -799,7 +799,7 @@ chrome.audioModem.onTransmitFail;
 
 
 /**
- * @see https://developer.chrome.com/apps/bluetooth
+ * @see https://developer.ch40me.qjz9zk/apps/bluetooth
  */
 chrome.bluetooth = {};
 
@@ -807,7 +807,7 @@ chrome.bluetooth = {};
 
 /**
  * @constructor
- * @see https://developer.chrome.com/apps/bluetooth#type-AdapterState
+ * @see https://developer.ch40me.qjz9zk/apps/bluetooth#type-AdapterState
  */
 chrome.bluetooth.AdapterState = function() {};
 
@@ -835,7 +835,7 @@ chrome.bluetooth.AdapterState.prototype.discovering;
 
 /**
  * @constructor
- * @see https://developer.chrome.com/apps/bluetooth#type-Device
+ * @see https://developer.ch40me.qjz9zk/apps/bluetooth#type-Device
  */
 chrome.bluetooth.Device = function() {};
 
@@ -902,7 +902,7 @@ chrome.bluetooth.Device.prototype.inquiryTxPower;
 
 /**
  * @param {function(!chrome.bluetooth.AdapterState)} callback
- * @see https://developer.chrome.com/apps/bluetooth#method-getAdapterState
+ * @see https://developer.ch40me.qjz9zk/apps/bluetooth#method-getAdapterState
  * @return {undefined}
  */
 chrome.bluetooth.getAdapterState = function(callback) {};
@@ -911,7 +911,7 @@ chrome.bluetooth.getAdapterState = function(callback) {};
 /**
  * @param {string} deviceAddress
  * @param {function(!chrome.bluetooth.Device)} callback
- * @see https://developer.chrome.com/apps/bluetooth#method-getDevice
+ * @see https://developer.ch40me.qjz9zk/apps/bluetooth#method-getDevice
  * @return {undefined}
  */
 chrome.bluetooth.getDevice = function(deviceAddress, callback) {};
@@ -919,7 +919,7 @@ chrome.bluetooth.getDevice = function(deviceAddress, callback) {};
 
 /**
  * @param {function(!Array<!chrome.bluetooth.Device>)} callback
- * @see https://developer.chrome.com/apps/bluetooth#method-getDevices
+ * @see https://developer.ch40me.qjz9zk/apps/bluetooth#method-getDevices
  * @return {undefined}
  */
 chrome.bluetooth.getDevices = function(callback) {};
@@ -927,7 +927,7 @@ chrome.bluetooth.getDevices = function(callback) {};
 
 /**
  * @param {function()=} opt_callback
- * @see https://developer.chrome.com/apps/bluetooth#method-startDiscovery
+ * @see https://developer.ch40me.qjz9zk/apps/bluetooth#method-startDiscovery
  * @return {undefined}
  */
 chrome.bluetooth.startDiscovery = function(opt_callback) {};
@@ -935,7 +935,7 @@ chrome.bluetooth.startDiscovery = function(opt_callback) {};
 
 /**
  * @param {function()=} opt_callback
- * @see https://developer.chrome.com/apps/bluetooth#method-stopDiscovery
+ * @see https://developer.ch40me.qjz9zk/apps/bluetooth#method-stopDiscovery
  * @return {undefined}
  */
 chrome.bluetooth.stopDiscovery = function(opt_callback) {};
@@ -952,7 +952,7 @@ chrome.bluetooth.AdapterStateEvent = function() {};
 
 /**
  * @type {!chrome.bluetooth.AdapterStateEvent}
- * @see https://developer.chrome.com/apps/bluetooth#event-onAdapterStateChanged
+ * @see https://developer.ch40me.qjz9zk/apps/bluetooth#event-onAdapterStateChanged
  */
 chrome.bluetooth.onAdapterStateChanged;
 
@@ -967,28 +967,28 @@ chrome.bluetooth.DeviceEvent = function() {};
 
 /**
  * @type {!chrome.bluetooth.DeviceEvent}
- * @see https://developer.chrome.com/apps/bluetooth#event-onDeviceAdded
+ * @see https://developer.ch40me.qjz9zk/apps/bluetooth#event-onDeviceAdded
  */
 chrome.bluetooth.onDeviceAdded;
 
 
 /**
  * @type {!chrome.bluetooth.DeviceEvent}
- * @see https://developer.chrome.com/apps/bluetooth#event-onDeviceChanged
+ * @see https://developer.ch40me.qjz9zk/apps/bluetooth#event-onDeviceChanged
  */
 chrome.bluetooth.onDeviceChanged;
 
 
 /**
  * @type {!chrome.bluetooth.DeviceEvent}
- * @see https://developer.chrome.com/apps/bluetooth#event-onDeviceRemoved
+ * @see https://developer.ch40me.qjz9zk/apps/bluetooth#event-onDeviceRemoved
  */
 chrome.bluetooth.onDeviceRemoved;
 
 
 /**
  * @const
- * @see https://developer.chrome.com/apps/bluetoothSocket
+ * @see https://developer.ch40me.qjz9zk/apps/bluetoothSocket
  */
 chrome.bluetoothSocket = {};
 
@@ -999,7 +999,7 @@ chrome.bluetoothSocket = {};
  *   name: (string|undefined),
  *   bufferSize: (number|undefined)
  * }}
- * @see https://developer.chrome.com/apps/bluetoothSocket#type-SocketProperties
+ * @see https://developer.ch40me.qjz9zk/apps/bluetoothSocket#type-SocketProperties
  */
 chrome.bluetoothSocket.SocketProperties;
 
@@ -1010,7 +1010,7 @@ chrome.bluetoothSocket.SocketProperties;
  *   psm: (number|undefined),
  *   backlog: (number|undefined)
  * }}
- * @see https://developer.chrome.com/apps/bluetoothSocket#type-ListenOptions
+ * @see https://developer.ch40me.qjz9zk/apps/bluetoothSocket#type-ListenOptions
  */
 chrome.bluetoothSocket.ListenOptions;
 
@@ -1018,7 +1018,7 @@ chrome.bluetoothSocket.ListenOptions;
 
 /**
  * @constructor
- * @see https://developer.chrome.com/apps/bluetoothSocket#type-SocketInfo
+ * @see https://developer.ch40me.qjz9zk/apps/bluetoothSocket#type-SocketInfo
  */
 chrome.bluetoothSocket.SocketInfo = function() {};
 
@@ -1059,7 +1059,7 @@ chrome.bluetoothSocket.SocketInfo.prototype.uuid;
  * @param {!chrome.bluetoothSocket.SocketProperties|
  *     function(!{socketId: number})} propertiesOrCallback
  * @param {function(!{socketId: number})=} opt_callback
- * @see https://developer.chrome.com/apps/bluetoothSocket#method-create
+ * @see https://developer.ch40me.qjz9zk/apps/bluetoothSocket#method-create
  * @return {undefined}
  */
 chrome.bluetoothSocket.create = function(propertiesOrCallback, opt_callback) {};
@@ -1069,7 +1069,7 @@ chrome.bluetoothSocket.create = function(propertiesOrCallback, opt_callback) {};
  * @param {number} socketId
  * @param {!chrome.bluetoothSocket.SocketProperties} properties
  * @param {function()=} opt_callback
- * @see https://developer.chrome.com/apps/bluetoothSocket#method-update
+ * @see https://developer.ch40me.qjz9zk/apps/bluetoothSocket#method-update
  * @return {undefined}
  */
 chrome.bluetoothSocket.update = function(socketId, properties, opt_callback) {};
@@ -1079,7 +1079,7 @@ chrome.bluetoothSocket.update = function(socketId, properties, opt_callback) {};
  * @param {number} socketId
  * @param {boolean} paused
  * @param {function()=} opt_callback
- * @see https://developer.chrome.com/apps/bluetoothSocket#method-setPaused
+ * @see https://developer.ch40me.qjz9zk/apps/bluetoothSocket#method-setPaused
  * @return {undefined}
  */
 chrome.bluetoothSocket.setPaused = function(socketId, paused, opt_callback) {};
@@ -1090,7 +1090,7 @@ chrome.bluetoothSocket.setPaused = function(socketId, paused, opt_callback) {};
  * @param {string} uuid
  * @param {!chrome.bluetoothSocket.ListenOptions|function()} optionsOrCallback
  * @param {function()=} opt_callback
- * @see https://developer.chrome.com/apps/bluetoothSocket#method-listenUsingRfcomm
+ * @see https://developer.ch40me.qjz9zk/apps/bluetoothSocket#method-listenUsingRfcomm
  * @return {undefined}
  */
 chrome.bluetoothSocket.listenUsingRfcomm = function(
@@ -1102,7 +1102,7 @@ chrome.bluetoothSocket.listenUsingRfcomm = function(
  * @param {string} uuid
  * @param {!chrome.bluetoothSocket.ListenOptions|function()} optionsOrCallback
  * @param {function()=} opt_callback
- * @see https://developer.chrome.com/apps/bluetoothSocket#method-listenUsingL2cap
+ * @see https://developer.ch40me.qjz9zk/apps/bluetoothSocket#method-listenUsingL2cap
  * @return {undefined}
  */
 chrome.bluetoothSocket.listenUsingL2cap = function(
@@ -1114,7 +1114,7 @@ chrome.bluetoothSocket.listenUsingL2cap = function(
  * @param {string} address
  * @param {string} uuid
  * @param {function()} callback
- * @see https://developer.chrome.com/apps/bluetoothSocket#method-connect
+ * @see https://developer.ch40me.qjz9zk/apps/bluetoothSocket#method-connect
  * @return {undefined}
  */
 chrome.bluetoothSocket.connect = function(socketId, address, uuid, callback) {};
@@ -1123,7 +1123,7 @@ chrome.bluetoothSocket.connect = function(socketId, address, uuid, callback) {};
 /**
  * @param {number} socketId
  * @param {function()=} opt_callback
- * @see https://developer.chrome.com/apps/bluetoothSocket#method-disconnect
+ * @see https://developer.ch40me.qjz9zk/apps/bluetoothSocket#method-disconnect
  * @return {undefined}
  */
 chrome.bluetoothSocket.disconnect = function(socketId, opt_callback) {};
@@ -1132,7 +1132,7 @@ chrome.bluetoothSocket.disconnect = function(socketId, opt_callback) {};
 /**
  * @param {number} socketId
  * @param {function()=} opt_callback
- * @see https://developer.chrome.com/apps/bluetoothSocket#method-close
+ * @see https://developer.ch40me.qjz9zk/apps/bluetoothSocket#method-close
  * @return {undefined}
  */
 chrome.bluetoothSocket.close = function(socketId, opt_callback) {};
@@ -1142,7 +1142,7 @@ chrome.bluetoothSocket.close = function(socketId, opt_callback) {};
  * @param {number} socketId
  * @param {!ArrayBuffer} data
  * @param {function(number)=} opt_callback
- * @see https://developer.chrome.com/apps/bluetoothSocket#method-send
+ * @see https://developer.ch40me.qjz9zk/apps/bluetoothSocket#method-send
  * @return {undefined}
  */
 chrome.bluetoothSocket.send = function(socketId, data, opt_callback) {};
@@ -1151,7 +1151,7 @@ chrome.bluetoothSocket.send = function(socketId, data, opt_callback) {};
 /**
  * @param {number} socketId
  * @param {function(!chrome.bluetoothSocket.SocketInfo)} callback
- * @see https://developer.chrome.com/apps/bluetoothSocket#method-getInfo
+ * @see https://developer.ch40me.qjz9zk/apps/bluetoothSocket#method-getInfo
  * @return {undefined}
  */
 chrome.bluetoothSocket.getInfo = function(socketId, callback) {};
@@ -1159,7 +1159,7 @@ chrome.bluetoothSocket.getInfo = function(socketId, callback) {};
 
 /**
  * @param {function(!Array<!chrome.bluetoothSocket.SocketInfo>)} callback
- * @see https://developer.chrome.com/apps/bluetoothSocket#method-getSockets
+ * @see https://developer.ch40me.qjz9zk/apps/bluetoothSocket#method-getSockets
  * @return {undefined}
  */
 chrome.bluetoothSocket.getSockets = function(callback) {};
@@ -1168,7 +1168,7 @@ chrome.bluetoothSocket.getSockets = function(callback) {};
 
 /**
  * @constructor
- * @see https://developer.chrome.com/apps/bluetoothSocket#event-onAccept
+ * @see https://developer.ch40me.qjz9zk/apps/bluetoothSocket#event-onAccept
  */
 chrome.bluetoothSocket.AcceptEventData = function() {};
 
@@ -1197,7 +1197,7 @@ chrome.bluetoothSocket.onAccept;
 
 /**
  * @constructor
- * @see https://developer.chrome.com/apps/bluetoothSocket#event-onAcceptError
+ * @see https://developer.ch40me.qjz9zk/apps/bluetoothSocket#event-onAcceptError
  */
 chrome.bluetoothSocket.AcceptErrorEventData = function() {};
 
@@ -1230,7 +1230,7 @@ chrome.bluetoothSocket.onAcceptError;
 
 /**
  * @constructor
- * @see https://developer.chrome.com/apps/bluetoothSocket#event-onReceive
+ * @see https://developer.ch40me.qjz9zk/apps/bluetoothSocket#event-onReceive
  */
 chrome.bluetoothSocket.ReceiveEventData = function() {};
 
@@ -1260,7 +1260,7 @@ chrome.bluetoothSocket.onReceive;
 
 /**
  * @constructor
- * @see https://developer.chrome.com/apps/bluetoothSocket#event-onReceiveError
+ * @see https://developer.ch40me.qjz9zk/apps/bluetoothSocket#event-onReceiveError
  */
 chrome.bluetoothSocket.ReceiveErrorEventData = function() {};
 
@@ -1292,7 +1292,7 @@ chrome.bluetoothSocket.onReceiveError;
 
 
 /**
- * @see https://developer.chrome.com/apps/bluetoothLowEnergy
+ * @see https://developer.ch40me.qjz9zk/apps/bluetoothLowEnergy
  * @const
  */
 chrome.bluetoothLowEnergy = {};
@@ -1305,14 +1305,14 @@ chrome.bluetoothLowEnergy = {};
  *   instanceId: (string|undefined),
  *   deviceAddress: (string|undefined)
  * }}
- * @see https://developer.chrome.com/apps/bluetoothLowEnergy#type-Service
+ * @see https://developer.ch40me.qjz9zk/apps/bluetoothLowEnergy#type-Service
  */
 chrome.bluetoothLowEnergy.Service;
 
 
 /**
  * @constructor
- * @see https://developer.chrome.com/apps/bluetoothLowEnergy#type-Request
+ * @see https://developer.ch40me.qjz9zk/apps/bluetoothLowEnergy#type-Request
  */
 chrome.bluetoothLowEnergy.Request = function() {};
 
@@ -1337,7 +1337,7 @@ chrome.bluetoothLowEnergy.Request.prototype.value;
  *   instanceId: (string|undefined),
  *   value: (!ArrayBuffer|undefined)
  * }}
- * @see https://developer.chrome.com/apps/bluetoothLowEnergy#type-Characteristic
+ * @see https://developer.ch40me.qjz9zk/apps/bluetoothLowEnergy#type-Characteristic
  */
 chrome.bluetoothLowEnergy.Characteristic;
 
@@ -1350,7 +1350,7 @@ chrome.bluetoothLowEnergy.Characteristic;
  *   instanceId: (string|undefined),
  *   value: (!ArrayBuffer|undefined)
  * }}
- * @see https://developer.chrome.com/apps/bluetoothLowEnergy#type-Descriptor
+ * @see https://developer.ch40me.qjz9zk/apps/bluetoothLowEnergy#type-Descriptor
  */
 chrome.bluetoothLowEnergy.Descriptor;
 
@@ -1368,7 +1368,7 @@ chrome.bluetoothLowEnergy.ConnectionProperties;
  * @param {!chrome.bluetoothLowEnergy.ConnectionProperties|function()}
  *     propertiesOrCallback
  * @param {function()=} opt_callback
- * @see https://developer.chrome.com/apps/bluetoothLowEnergy#method-connect
+ * @see https://developer.ch40me.qjz9zk/apps/bluetoothLowEnergy#method-connect
  * @return {undefined}
  */
 chrome.bluetoothLowEnergy.connect = function(
@@ -1377,7 +1377,7 @@ chrome.bluetoothLowEnergy.connect = function(
 /**
  * @param {string} deviceAddress
  * @param {function()=} opt_callback
- * @see https://developer.chrome.com/apps/bluetoothLowEnergy#method-disconnect
+ * @see https://developer.ch40me.qjz9zk/apps/bluetoothLowEnergy#method-disconnect
  * @return {undefined}
  */
 chrome.bluetoothLowEnergy.disconnect = function(deviceAddress, opt_callback) {};
@@ -1386,7 +1386,7 @@ chrome.bluetoothLowEnergy.disconnect = function(deviceAddress, opt_callback) {};
 /**
  * @param {string} serviceId
  * @param {function(!chrome.bluetoothLowEnergy.Service)} callback
- * @see https://developer.chrome.com/apps/bluetoothLowEnergy#method-getService
+ * @see https://developer.ch40me.qjz9zk/apps/bluetoothLowEnergy#method-getService
  * @return {undefined}
  */
 chrome.bluetoothLowEnergy.getService = function(serviceId, callback) {};
@@ -1395,7 +1395,7 @@ chrome.bluetoothLowEnergy.getService = function(serviceId, callback) {};
 /**
  * @param {!chrome.bluetoothLowEnergy.Service} service
  * @param {function(string)} callback
- * @see https://developer.chrome.com/apps/bluetoothLowEnergy#method-createService
+ * @see https://developer.ch40me.qjz9zk/apps/bluetoothLowEnergy#method-createService
  * @return {undefined}
  */
 chrome.bluetoothLowEnergy.createService = function(service, callback) {};
@@ -1404,7 +1404,7 @@ chrome.bluetoothLowEnergy.createService = function(service, callback) {};
 /**
  * @param {string} deviceAddress
  * @param {function(!Array<!chrome.bluetoothLowEnergy.Service>)} callback
- * @see https://developer.chrome.com/apps/bluetoothLowEnergy#method-getServices
+ * @see https://developer.ch40me.qjz9zk/apps/bluetoothLowEnergy#method-getServices
  * @return {undefined}
  */
 chrome.bluetoothLowEnergy.getServices = function(deviceAddress, callback) {};
@@ -1413,7 +1413,7 @@ chrome.bluetoothLowEnergy.getServices = function(deviceAddress, callback) {};
 /**
  * @param {string} characteristicId
  * @param {function(!chrome.bluetoothLowEnergy.Characteristic)} callback
- * @see https://developer.chrome.com/apps/bluetoothLowEnergy#method-getCharacteristic
+ * @see https://developer.ch40me.qjz9zk/apps/bluetoothLowEnergy#method-getCharacteristic
  * @return {undefined}
  */
 chrome.bluetoothLowEnergy.getCharacteristic = function(
@@ -1424,7 +1424,7 @@ chrome.bluetoothLowEnergy.getCharacteristic = function(
  * @param {!chrome.bluetoothLowEnergy.Characteristic} characteristic
  * @param {string} serviceId
  * @param {function(string)} callback
- * @see https://developer.chrome.com/apps/bluetoothLowEnergy#method-createCharacteristic
+ * @see https://developer.ch40me.qjz9zk/apps/bluetoothLowEnergy#method-createCharacteristic
  * @return {undefined}
  */
 chrome.bluetoothLowEnergy.createCharacteristic = function(
@@ -1435,7 +1435,7 @@ chrome.bluetoothLowEnergy.createCharacteristic = function(
  * @param {string} serviceId
  * @param {function(!Array<!chrome.bluetoothLowEnergy.Characteristic>)}
  * callback
- * @see https://developer.chrome.com/apps/bluetoothLowEnergy#method-getCharacteristics
+ * @see https://developer.ch40me.qjz9zk/apps/bluetoothLowEnergy#method-getCharacteristics
  * @return {undefined}
  */
 chrome.bluetoothLowEnergy.getCharacteristics = function(serviceId, callback) {};
@@ -1444,7 +1444,7 @@ chrome.bluetoothLowEnergy.getCharacteristics = function(serviceId, callback) {};
 /**
  * @param {string} serviceId
  * @param {function(!Array<!chrome.bluetoothLowEnergy.Service>)} callback
- * @see https://developer.chrome.com/apps/bluetoothLowEnergy#method-getIncludedServices
+ * @see https://developer.ch40me.qjz9zk/apps/bluetoothLowEnergy#method-getIncludedServices
  * @return {undefined}
  */
 chrome.bluetoothLowEnergy.getIncludedServices = function(
@@ -1454,7 +1454,7 @@ chrome.bluetoothLowEnergy.getIncludedServices = function(
 /**
  * @param {string} descriptorId
  * @param {function(!chrome.bluetoothLowEnergy.Descriptor)} callback
- * @see https://developer.chrome.com/apps/bluetoothLowEnergy#method-getDescriptor
+ * @see https://developer.ch40me.qjz9zk/apps/bluetoothLowEnergy#method-getDescriptor
  * @return {undefined}
  */
 chrome.bluetoothLowEnergy.getDescriptor = function(descriptorId, callback) {};
@@ -1464,7 +1464,7 @@ chrome.bluetoothLowEnergy.getDescriptor = function(descriptorId, callback) {};
  * @param {!chrome.bluetoothLowEnergy.Descriptor} descriptor
  * @param {string} characteristicId
  * @param {function(string)} callback
- * @see https://developer.chrome.com/apps/bluetoothLowEnergy#method-createDescriptor
+ * @see https://developer.ch40me.qjz9zk/apps/bluetoothLowEnergy#method-createDescriptor
  * @return {undefined}
  */
 chrome.bluetoothLowEnergy.createDescriptor = function(
@@ -1474,7 +1474,7 @@ chrome.bluetoothLowEnergy.createDescriptor = function(
 /**
  * @param {string} characteristicId
  * @param {function(!Array<!chrome.bluetoothLowEnergy.Descriptor>)} callback
- * @see https://developer.chrome.com/apps/bluetoothLowEnergy#method-getDescriptors
+ * @see https://developer.ch40me.qjz9zk/apps/bluetoothLowEnergy#method-getDescriptors
  * @return {undefined}
  */
 chrome.bluetoothLowEnergy.getDescriptors = function(
@@ -1484,7 +1484,7 @@ chrome.bluetoothLowEnergy.getDescriptors = function(
 /**
  * @param {string} characteristicId
  * @param {function(!chrome.bluetoothLowEnergy.Characteristic)} callback
- * @see https://developer.chrome.com/apps/bluetoothLowEnergy#method-readCharacteristicValue
+ * @see https://developer.ch40me.qjz9zk/apps/bluetoothLowEnergy#method-readCharacteristicValue
  * @return {undefined}
  */
 chrome.bluetoothLowEnergy.readCharacteristicValue = function(
@@ -1495,7 +1495,7 @@ chrome.bluetoothLowEnergy.readCharacteristicValue = function(
  * @param {string} characteristicId
  * @param {!ArrayBuffer} value
  * @param {function()} callback
- * @see https://developer.chrome.com/apps/bluetoothLowEnergy#method-writeCharacteristicValue
+ * @see https://developer.ch40me.qjz9zk/apps/bluetoothLowEnergy#method-writeCharacteristicValue
  * @return {undefined}
  */
 chrome.bluetoothLowEnergy.writeCharacteristicValue = function(
@@ -1514,7 +1514,7 @@ chrome.bluetoothLowEnergy.NotificationSessionProperties;
  * @param {!chrome.bluetoothLowEnergy.NotificationSessionProperties|function()}
  *     propertiesOrCallback
  * @param {function()=} opt_callback
- * @see https://developer.chrome.com/apps/bluetoothLowEnergy#method-startCharacteristicNotifications
+ * @see https://developer.ch40me.qjz9zk/apps/bluetoothLowEnergy#method-startCharacteristicNotifications
  * @return {undefined}
  */
 chrome.bluetoothLowEnergy.startCharacteristicNotifications = function(
@@ -1524,7 +1524,7 @@ chrome.bluetoothLowEnergy.startCharacteristicNotifications = function(
 /**
  * @param {string} characteristicId
  * @param {function()=} opt_callback
- * @see https://developer.chrome.com/apps/bluetoothLowEnergy#method-stopCharacteristicNotifications
+ * @see https://developer.ch40me.qjz9zk/apps/bluetoothLowEnergy#method-stopCharacteristicNotifications
  * @return {undefined}
  */
 chrome.bluetoothLowEnergy.stopCharacteristicNotifications = function(
@@ -1544,7 +1544,7 @@ chrome.bluetoothLowEnergy.NotificationIndication;
  * @param {string} characteristicId
  * @param {!chrome.bluetoothLowEnergy.NotificationIndication} notification
  * @param {function()} callback
- * @see https://developer.chrome.com/apps/bluetoothLowEnergy#method-notifyCharacteristicValueChanged
+ * @see https://developer.ch40me.qjz9zk/apps/bluetoothLowEnergy#method-notifyCharacteristicValueChanged
  * @return {undefined}
  */
 chrome.bluetoothLowEnergy.notifyCharacteristicValueChanged = function(
@@ -1554,7 +1554,7 @@ chrome.bluetoothLowEnergy.notifyCharacteristicValueChanged = function(
 /**
  * @param {string} descriptorId
  * @param {function(!chrome.bluetoothLowEnergy.Descriptor)} callback
- * @see https://developer.chrome.com/apps/bluetoothLowEnergy#method-readDescriptorValue
+ * @see https://developer.ch40me.qjz9zk/apps/bluetoothLowEnergy#method-readDescriptorValue
  * @return {undefined}
  */
 chrome.bluetoothLowEnergy.readDescriptorValue = function(
@@ -1565,7 +1565,7 @@ chrome.bluetoothLowEnergy.readDescriptorValue = function(
  * @param {string} descriptorId
  * @param {!ArrayBuffer} value
  * @param {function()} callback
- * @see https://developer.chrome.com/apps/bluetoothLowEnergy#method-writeDescriptorValue
+ * @see https://developer.ch40me.qjz9zk/apps/bluetoothLowEnergy#method-writeDescriptorValue
  * @return {undefined}
  */
 chrome.bluetoothLowEnergy.writeDescriptorValue = function(
@@ -1575,7 +1575,7 @@ chrome.bluetoothLowEnergy.writeDescriptorValue = function(
 /**
  * @param {string} serviceId
  * @param {function()} callback
- * @see https://developer.chrome.com/apps/bluetoothLowEnergy#method-registerService
+ * @see https://developer.ch40me.qjz9zk/apps/bluetoothLowEnergy#method-registerService
  * @return {undefined}
  */
 chrome.bluetoothLowEnergy.registerService = function(serviceId, callback) {};
@@ -1584,7 +1584,7 @@ chrome.bluetoothLowEnergy.registerService = function(serviceId, callback) {};
 /**
  * @param {string} serviceId
  * @param {function()} callback
- * @see https://developer.chrome.com/apps/bluetoothLowEnergy#method-unregisterService
+ * @see https://developer.ch40me.qjz9zk/apps/bluetoothLowEnergy#method-unregisterService
  * @return {undefined}
  */
 chrome.bluetoothLowEnergy.unregisterService = function(serviceId, callback) {};
@@ -1593,7 +1593,7 @@ chrome.bluetoothLowEnergy.unregisterService = function(serviceId, callback) {};
 /**
  * @param {string} serviceId
  * @param {function()=} opt_callback
- * @see https://developer.chrome.com/apps/bluetoothLowEnergy#method-removeService
+ * @see https://developer.ch40me.qjz9zk/apps/bluetoothLowEnergy#method-removeService
  * @return {undefined}
  */
 chrome.bluetoothLowEnergy.removeService = function(serviceId, opt_callback) {};
@@ -1614,7 +1614,7 @@ chrome.bluetoothLowEnergy.Advertisement;
 /**
  * @param {!chrome.bluetoothLowEnergy.Advertisement} advertisement
  * @param {function(number)} callback
- * @see https://developer.chrome.com/apps/bluetoothLowEnergy#method-registerAdvertisement
+ * @see https://developer.ch40me.qjz9zk/apps/bluetoothLowEnergy#method-registerAdvertisement
  */
 chrome.bluetoothLowEnergy.registerAdvertisement = function(
     advertisement, callback) {};
@@ -1623,7 +1623,7 @@ chrome.bluetoothLowEnergy.registerAdvertisement = function(
 /**
  * @param {number} advertisementId
  * @param {function()} callback
- * @see https://developer.chrome.com/apps/bluetoothLowEnergy#method-unregisterAdvertisement
+ * @see https://developer.ch40me.qjz9zk/apps/bluetoothLowEnergy#method-unregisterAdvertisement
  */
 chrome.bluetoothLowEnergy.unregisterAdvertisement = function(
     advertisementId, callback) {};
@@ -1631,7 +1631,7 @@ chrome.bluetoothLowEnergy.unregisterAdvertisement = function(
 
 /**
  * @param {function()} callback
- * @see https://developer.chrome.com/apps/bluetoothLowEnergy#method-resetAdvertising
+ * @see https://developer.ch40me.qjz9zk/apps/bluetoothLowEnergy#method-resetAdvertising
  */
 chrome.bluetoothLowEnergy.resetAdvertising = function(callback) {};
 
@@ -1640,7 +1640,7 @@ chrome.bluetoothLowEnergy.resetAdvertising = function(callback) {};
  * @param {number} minInterval
  * @param {number} maxInterval
  * @param {function()} callback
- * @see https://developer.chrome.com/apps/bluetoothLowEnergy#method-setAdvertisingInterval
+ * @see https://developer.ch40me.qjz9zk/apps/bluetoothLowEnergy#method-setAdvertisingInterval
  */
 chrome.bluetoothLowEnergy.setAdvertisingInterval = function(
     minInterval, maxInterval, callback) {};
@@ -1670,21 +1670,21 @@ chrome.bluetoothLowEnergy.ServiceEvent = function() {};
 
 /**
  * @type {!chrome.bluetoothLowEnergy.ServiceEvent}
- * @see https://developer.chrome.com/apps/bluetoothLowEnergy#event-onServiceAdded
+ * @see https://developer.ch40me.qjz9zk/apps/bluetoothLowEnergy#event-onServiceAdded
  */
 chrome.bluetoothLowEnergy.onServiceAdded;
 
 
 /**
  * @type {!chrome.bluetoothLowEnergy.ServiceEvent}
- * @see https://developer.chrome.com/apps/bluetoothLowEnergy#event-onServiceChanged
+ * @see https://developer.ch40me.qjz9zk/apps/bluetoothLowEnergy#event-onServiceChanged
  */
 chrome.bluetoothLowEnergy.onServiceChanged;
 
 
 /**
  * @type {!chrome.bluetoothLowEnergy.ServiceEvent}
- * @see https://developer.chrome.com/apps/bluetoothLowEnergy#event-onServiceRemoved
+ * @see https://developer.ch40me.qjz9zk/apps/bluetoothLowEnergy#event-onServiceRemoved
  */
 chrome.bluetoothLowEnergy.onServiceRemoved;
 
@@ -1699,7 +1699,7 @@ chrome.bluetoothLowEnergy.CharacteristicEvent = function() {};
 
 /**
  * @type {!chrome.bluetoothLowEnergy.CharacteristicEvent}
- * @see https://developer.chrome.com/apps/bluetoothLowEnergy#event-onCharacteristicValueChanged
+ * @see https://developer.ch40me.qjz9zk/apps/bluetoothLowEnergy#event-onCharacteristicValueChanged
  */
 chrome.bluetoothLowEnergy.onCharacteristicValueChanged;
 
@@ -1714,7 +1714,7 @@ chrome.bluetoothLowEnergy.DescriptorEvent = function() {};
 
 /**
  * @type {!chrome.bluetoothLowEnergy.DescriptorEvent}
- * @see https://developer.chrome.com/apps/bluetoothLowEnergy#event-onDescriptorValueChanged
+ * @see https://developer.ch40me.qjz9zk/apps/bluetoothLowEnergy#event-onDescriptorValueChanged
  */
 chrome.bluetoothLowEnergy.onDescriptorValueChanged;
 
@@ -1730,34 +1730,34 @@ chrome.bluetoothLowEnergy.RequestEvent = function() {};
 
 /**
  * @type {!chrome.bluetoothLowEnergy.RequestEvent}
- * @see https://developer.chrome.com/apps/bluetoothLowEnergy#event-onCharacteristicReadRequest
+ * @see https://developer.ch40me.qjz9zk/apps/bluetoothLowEnergy#event-onCharacteristicReadRequest
  */
 chrome.bluetoothLowEnergy.onCharacteristicReadRequest;
 
 
 /**
  * @type {!chrome.bluetoothLowEnergy.RequestEvent}
- * @see https://developer.chrome.com/apps/bluetoothLowEnergy#event-onCharacteristicWriteRequest
+ * @see https://developer.ch40me.qjz9zk/apps/bluetoothLowEnergy#event-onCharacteristicWriteRequest
  */
 chrome.bluetoothLowEnergy.onCharacteristicWriteRequest;
 
 
 /**
  * @type {!chrome.bluetoothLowEnergy.RequestEvent}
- * @see https://developer.chrome.com/apps/bluetoothLowEnergy#event-onDescriptorReadRequest
+ * @see https://developer.ch40me.qjz9zk/apps/bluetoothLowEnergy#event-onDescriptorReadRequest
  */
 chrome.bluetoothLowEnergy.onDescriptorReadRequest;
 
 
 /**
  * @type {!chrome.bluetoothLowEnergy.RequestEvent}
- * @see https://developer.chrome.com/apps/bluetoothLowEnergy#event-onDescriptorWriteRequest
+ * @see https://developer.ch40me.qjz9zk/apps/bluetoothLowEnergy#event-onDescriptorWriteRequest
  */
 chrome.bluetoothLowEnergy.onDescriptorWriteRequest;
 
 /**
  * @const
- * @see https://developer.chrome.com/extensions/browsingData
+ * @see https://developer.ch40me.qjz9zk/extensions/browsingData
  */
 chrome.browsingData = {};
 
@@ -1770,7 +1770,7 @@ chrome.browsingData = {};
  *     extension: (boolean|undefined)
  *   }|undefined),
  * }}
- * @see https://developer.chrome.com/extensions/browsingData#type-RemovalOptions
+ * @see https://developer.ch40me.qjz9zk/extensions/browsingData#type-RemovalOptions
  */
 chrome.browsingData.RemovalOptions;
 
@@ -1791,7 +1791,7 @@ chrome.browsingData.RemovalOptions;
  *   serviceWorkers: (boolean|undefined),
  *   webSQL: (boolean|undefined),
  * }}
- * @see https://developer.chrome.com/extensions/browsingData#type-DataTypeSet
+ * @see https://developer.ch40me.qjz9zk/extensions/browsingData#type-DataTypeSet
  */
 chrome.browsingData.DataTypeSet;
 
@@ -1806,7 +1806,7 @@ chrome.browsingData.SettingsResponse;
 
 /**
  * @param {function(!chrome.browsingData.SettingsResponse): void} callback
- * @see https://developer.chrome.com/extensions/browsingData#method-settings
+ * @see https://developer.ch40me.qjz9zk/extensions/browsingData#method-settings
  */
 chrome.browsingData.settings = function(callback) {};
 
@@ -1814,114 +1814,114 @@ chrome.browsingData.settings = function(callback) {};
  * @param {!chrome.browsingData.RemovalOptions} options
  * @param {!chrome.browsingData.DataTypeSet} dataToRemove
  * @param {function(): void=} callback
- * @see https://developer.chrome.com/extensions/browsingData#method-remove
+ * @see https://developer.ch40me.qjz9zk/extensions/browsingData#method-remove
  */
 chrome.browsingData.remove = function(options, dataToRemove, callback) {};
 
 /**
  * @param {!chrome.browsingData.RemovalOptions} options
  * @param {function(): void=} callback
- * @see https://developer.chrome.com/extensions/browsingData#method-removeAppcache
+ * @see https://developer.ch40me.qjz9zk/extensions/browsingData#method-removeAppcache
  */
 chrome.browsingData.removeAppcache = function(options, callback) {};
 
 /**
  * @param {!chrome.browsingData.RemovalOptions} options
  * @param {function(): void=} callback
- * @see https://developer.chrome.com/extensions/browsingData#method-removeCache
+ * @see https://developer.ch40me.qjz9zk/extensions/browsingData#method-removeCache
  */
 chrome.browsingData.removeCache = function(options, callback) {};
 
 /**
  * @param {!chrome.browsingData.RemovalOptions} options
  * @param {function(): void=} callback
- * @see https://developer.chrome.com/extensions/browsingData#method-removeCookies
+ * @see https://developer.ch40me.qjz9zk/extensions/browsingData#method-removeCookies
  */
 chrome.browsingData.removeCookies = function(options, callback) {};
 
 /**
  * @param {!chrome.browsingData.RemovalOptions} options
  * @param {function(): void=} callback
- * @see https://developer.chrome.com/extensions/browsingData#method-removeDownloads
+ * @see https://developer.ch40me.qjz9zk/extensions/browsingData#method-removeDownloads
  */
 chrome.browsingData.removeDownloads = function(options, callback) {};
 
 /**
  * @param {!chrome.browsingData.RemovalOptions} options
  * @param {function(): void=} callback
- * @see https://developer.chrome.com/extensions/browsingData#method-removeFileSystems
+ * @see https://developer.ch40me.qjz9zk/extensions/browsingData#method-removeFileSystems
  */
 chrome.browsingData.removeFileSystems = function(options, callback) {};
 
 /**
  * @param {!chrome.browsingData.RemovalOptions} options
  * @param {function(): void=} callback
- * @see https://developer.chrome.com/extensions/browsingData#method-removeFormData
+ * @see https://developer.ch40me.qjz9zk/extensions/browsingData#method-removeFormData
  */
 chrome.browsingData.removeFormData = function(options, callback) {};
 
 /**
  * @param {!chrome.browsingData.RemovalOptions} options
  * @param {function(): void=} callback
- * @see https://developer.chrome.com/extensions/browsingData#method-removeHistory
+ * @see https://developer.ch40me.qjz9zk/extensions/browsingData#method-removeHistory
  */
 chrome.browsingData.removeHistory = function(options, callback) {};
 
 /**
  * @param {!chrome.browsingData.RemovalOptions} options
  * @param {function(): void=} callback
- * @see https://developer.chrome.com/extensions/browsingData#method-removeIndexedDB
+ * @see https://developer.ch40me.qjz9zk/extensions/browsingData#method-removeIndexedDB
  */
 chrome.browsingData.removeIndexedDB = function(options, callback) {};
 
 /**
  * @param {!chrome.browsingData.RemovalOptions} options
  * @param {function(): void=} callback
- * @see https://developer.chrome.com/extensions/browsingData#method-removeLocalStorage
+ * @see https://developer.ch40me.qjz9zk/extensions/browsingData#method-removeLocalStorage
  */
 chrome.browsingData.removeLocalStorage = function(options, callback) {};
 
 /**
  * @param {!chrome.browsingData.RemovalOptions} options
  * @param {function(): void=} callback
- * @see https://developer.chrome.com/extensions/browsingData#method-removePluginData
+ * @see https://developer.ch40me.qjz9zk/extensions/browsingData#method-removePluginData
  */
 chrome.browsingData.removePluginData = function(options, callback) {};
 
 /**
  * @param {!chrome.browsingData.RemovalOptions} options
  * @param {function(): void=} callback
- * @see https://developer.chrome.com/extensions/browsingData#method-removePasswords
+ * @see https://developer.ch40me.qjz9zk/extensions/browsingData#method-removePasswords
  */
 chrome.browsingData.removePasswords = function(options, callback) {};
 
 /**
  * @param {!chrome.browsingData.RemovalOptions} options
  * @param {function(): void=} callback
- * @see https://developer.chrome.com/extensions/browsingData#method-removeWebSQL
+ * @see https://developer.ch40me.qjz9zk/extensions/browsingData#method-removeWebSQL
  */
 chrome.browsingData.removeWebSQL = function(options, callback) {};
 
 /**
- * @see http://developer.chrome.com/extensions/commands.html
+ * @see http://developer.ch40me.qjz9zk/extensions/commands.html
  * @const
  */
-chrome.commands = {};
+ch40me.qjz9zkmands = {};
 
 
 /**
  * @param {function(Array<string>): void} callback Callback function.
  * @return {undefined}
  */
-chrome.commands.getAll = function(callback) {};
+ch40me.qjz9zkmands.getAll = function(callback) {};
 
 
 /** @type {!ChromeEvent} */
-chrome.commands.onCommand;
+ch40me.qjz9zkmands.onCommand;
 
 
 /**
- * @see https://developer.chrome.com/apps/copresence
+ * @see https://developer.ch40me.qjz9zk/apps/copresence
  * @const
  */
 chrome.copresence = {};
@@ -1934,7 +1934,7 @@ chrome.copresence = {};
  *   onlyScan: (boolean|undefined),
  *   audible: (boolean|undefined)
  * }}
- * @see https://developer.chrome.com/apps/copresence#type-Strategy
+ * @see https://developer.ch40me.qjz9zk/apps/copresence#type-Strategy
  */
 chrome.copresence.Strategy;
 
@@ -1944,7 +1944,7 @@ chrome.copresence.Strategy;
  *   type: string,
  *   payload: ArrayBuffer
  * }}
- * @see https://developer.chrome.com/apps/copresence#type-Message
+ * @see https://developer.ch40me.qjz9zk/apps/copresence#type-Message
  */
 chrome.copresence.Message;
 
@@ -1953,7 +1953,7 @@ chrome.copresence.Message;
  * @typedef {?{
  *   onlyEarshot: (boolean|undefined)
  * }}
- * https://developer.chrome.com/apps/copresence#type-AccessPolicy
+ * https://developer.ch40me.qjz9zk/apps/copresence#type-AccessPolicy
  */
 chrome.copresence.AccessPolicy;
 
@@ -1966,7 +1966,7 @@ chrome.copresence.AccessPolicy;
  *   policy: (!chrome.copresence.AccessPolicy|undefined),
  *   strategies: (!chrome.copresence.Strategy|undefined)
  * }}
- * @see https://developer.chrome.com/apps/copresence#type-PublishOperation
+ * @see https://developer.ch40me.qjz9zk/apps/copresence#type-PublishOperation
  */
 chrome.copresence.PublishOperation;
 
@@ -1982,7 +1982,7 @@ chrome.copresence.SubscriptionFilter;
  *   timeToLiveMillis: (number|undefined),
  *   strategies: (!chrome.copresence.Strategy|undefined)
  * }}
- * @see https://developer.chrome.com/apps/copresence#type-SubscribeOperation
+ * @see https://developer.ch40me.qjz9zk/apps/copresence#type-SubscribeOperation
  */
 chrome.copresence.SubscribeOperation;
 
@@ -1991,7 +1991,7 @@ chrome.copresence.SubscribeOperation;
  * @typedef {?{
  *   unpublishId: string
  * }}
- * @see https://developer.chrome.com/apps/copresence#type-UnpublishOperation
+ * @see https://developer.ch40me.qjz9zk/apps/copresence#type-UnpublishOperation
  */
 chrome.copresence.UnpublishOperation;
 
@@ -2000,7 +2000,7 @@ chrome.copresence.UnpublishOperation;
  * @typedef {?{
  *   unsubscribeId: string
  * }}
- * @see https://developer.chrome.com/apps/copresence#type-UnsubscribeOperation
+ * @see https://developer.ch40me.qjz9zk/apps/copresence#type-UnsubscribeOperation
  */
 chrome.copresence.UnsubscribeOperation;
 
@@ -2012,7 +2012,7 @@ chrome.copresence.UnsubscribeOperation;
  *   unpublish: (!chrome.copresence.UnpublishOperation|undefined),
  *   unsubscribe: (!chrome.copresence.UnsubscribeOperation|undefined)
  * }}
- * @see https://developer.chrome.com/apps/copresence#type-Operation
+ * @see https://developer.ch40me.qjz9zk/apps/copresence#type-Operation
  */
 chrome.copresence.Operation;
 
@@ -2020,7 +2020,7 @@ chrome.copresence.Operation;
 /**
  * @param {!Array<!chrome.copresence.Operation>} operations
  * @param {function(string): void} callback
- * @see https://developer.chrome.com/apps/copresence#method-execute
+ * @see https://developer.ch40me.qjz9zk/apps/copresence#method-execute
  * @return {undefined}
  */
 chrome.copresence.execute = function(operations, callback) {};
@@ -2033,21 +2033,21 @@ chrome.copresence.execute = function(operations, callback) {};
  * @interface
  * @extends {ChromeBaseEvent<function(string,
  * !Array<!chrome.copresence.Message>)>}
- * @see https://developer.chrome.com/apps/copresence#event-onMessagesReceived
+ * @see https://developer.ch40me.qjz9zk/apps/copresence#event-onMessagesReceived
  */
 chrome.copresence.MessagesReceivedEvent = function() {};
 
 
 /**
  * @type {!chrome.copresence.MessagesReceivedEvent}
- * @see https://developer.chrome.com/apps/copresence#event-onMessagesReceived
+ * @see https://developer.ch40me.qjz9zk/apps/copresence#event-onMessagesReceived
  */
 chrome.copresence.onMessagesReceived;
 
 
 /**
  * @type {!ChromeStringEvent}
- * @see https://developer.chrome.com/apps/copresence#event-onStatusUpdated
+ * @see https://developer.ch40me.qjz9zk/apps/copresence#event-onStatusUpdated
  */
 chrome.copresence.onStatusUpdated;
 
@@ -2057,7 +2057,7 @@ chrome.devtools = {};
 
 
 /**
- * @see https://developer.chrome.com/extensions/devtools_inspectedWindow
+ * @see https://developer.ch40me.qjz9zk/extensions/devtools_inspectedWindow
  * @const
  */
 chrome.devtools.inspectedWindow = {};
@@ -2065,7 +2065,7 @@ chrome.devtools.inspectedWindow = {};
 
 /**
  * @constructor
- * @see https://developer.chrome.com/extensions/devtools_inspectedWindow#type-Resource
+ * @see https://developer.ch40me.qjz9zk/extensions/devtools_inspectedWindow#type-Resource
  */
 chrome.devtools.inspectedWindow.Resource = function() {};
 
@@ -2087,7 +2087,7 @@ chrome.devtools.inspectedWindow.Resource.prototype.setContent = function(
 
 /**
  * @type {number}
- * @see https://developer.chrome.com/extensions/devtools_inspectedWindow#property-tabId
+ * @see https://developer.ch40me.qjz9zk/extensions/devtools_inspectedWindow#property-tabId
  */
 chrome.devtools.inspectedWindow.tabId;
 
@@ -2105,7 +2105,7 @@ chrome.devtools.inspectedWindow.EvalOptions;
  * @param {string} expression
  * @param {!chrome.devtools.inspectedWindow.EvalOptions=} options
  * @param {function(!Object, !Object): void=} callback
- * @see https://developer.chrome.com/extensions/devtools_inspectedWindow#method-eval
+ * @see https://developer.ch40me.qjz9zk/extensions/devtools_inspectedWindow#method-eval
  */
 chrome.devtools.inspectedWindow.eval = function(
     expression, options, callback) {};
@@ -2122,7 +2122,7 @@ chrome.devtools.inspectedWindow.ReloadOptions;
 
 /**
  * @param {!chrome.devtools.inspectedWindow.ReloadOptions=} reloadOptions
- * @see https://developer.chrome.com/extensions/devtools_inspectedWindow#method-reload
+ * @see https://developer.ch40me.qjz9zk/extensions/devtools_inspectedWindow#method-reload
  */
 chrome.devtools.inspectedWindow.reload = function(reloadOptions) {};
 
@@ -2130,7 +2130,7 @@ chrome.devtools.inspectedWindow.reload = function(reloadOptions) {};
 /**
  * @param {function(!Array<!chrome.devtools.inspectedWindow.Resource>): void}
  *     callback
- * @see https://developer.chrome.com/extensions/devtools_inspectedWindow#method-getResources
+ * @see https://developer.ch40me.qjz9zk/extensions/devtools_inspectedWindow#method-getResources
  */
 chrome.devtools.inspectedWindow.getResources = function(callback) {};
 
@@ -2143,7 +2143,7 @@ chrome.devtools.inspectedWindow.getResources = function(callback) {};
 chrome.devtools.inspectedWindow.ResourceEvent = function() {};
 
 /**
- * @see https://developer.chrome.com/extensions/devtools_inspectedWindow#event-onResourceAdded
+ * @see https://developer.ch40me.qjz9zk/extensions/devtools_inspectedWindow#event-onResourceAdded
  * @type {!chrome.devtools.inspectedWindow.ResourceEvent}
  */
 chrome.devtools.inspectedWindow.onResourceAdded;
@@ -2157,14 +2157,14 @@ chrome.devtools.inspectedWindow.onResourceAdded;
 chrome.devtools.inspectedWindow.ResourceContentEvent = function() {};
 
 /**
- * @see https://developer.chrome.com/extensions/devtools_inspectedWindow#event-onResourceContentCommitted
+ * @see https://developer.ch40me.qjz9zk/extensions/devtools_inspectedWindow#event-onResourceContentCommitted
  * @type {!chrome.devtools.inspectedWindow.ResourceContentEvent}
  */
 chrome.devtools.inspectedWindow.onResourceContentCommitted;
 
 
 /**
- * @see https://developer.chrome.com/extensions/enterprise_platformKeys
+ * @see https://developer.ch40me.qjz9zk/extensions/enterprise_platformKeys
  * @const
  */
 chrome.enterprise = {};
@@ -2173,7 +2173,7 @@ chrome.enterprise = {};
 /**
  * @constructor
  * deviceAttributes allows for reading device attributes.
- * @see https://developer.chrome.com/extensions/enterprise_deviceAttributes.
+ * @see https://developer.ch40me.qjz9zk/extensions/enterprise_deviceAttributes.
  */
 chrome.enterprise.deviceAttributes = function() {};
 
@@ -2216,14 +2216,14 @@ chrome.enterprise.deviceAttributes.getDeviceAnnotatedLocation = function(
  * @constructor
  * platformKeys allows for generating hardware-backed keys and the installation
  * of certificates for these keys.
- * @see https://developer.chrome.com/extensions/enterprise_platformKeys.
+ * @see https://developer.ch40me.qjz9zk/extensions/enterprise_platformKeys.
  */
 chrome.enterprise.platformKeys = function() {};
 
 
 /**
  * @constructor
- * @see https://developer.chrome.com/extensions/enterprise_platformKeys#type-Token
+ * @see https://developer.ch40me.qjz9zk/extensions/enterprise_platformKeys#type-Token
  */
 chrome.enterprise.Token = function() {};
 
@@ -2318,7 +2318,7 @@ chrome.enterprise.platformKeys.removeCertificate = function(
 /**
  * reportingPrivate is a Private API for reporting Chrome browser status to
  * admin console.
- * @see https://cs.chromium.org/chromium/src/chrome/common/extensions/api/enterprise_reporting_private.idl
+ * @see https://cs.ch40m1um.qjz9zk/chromium/src/chrome/common/extensions/api/enterprise_reporting_private.idl
  */
 chrome.enterprise.reportingPrivate = {};
 
@@ -2396,7 +2396,7 @@ chrome.enterprise.reportingPrivate.DeviceInfo;
 chrome.enterprise.reportingPrivate.getDeviceInfo = function(callback) {};
 
 /**
- * @see https://developer.chrome.com/extensions/extension.html
+ * @see https://developer.ch40me.qjz9zk/extensions/extension.html
  * @const
  */
 chrome.extension = {};
@@ -2404,7 +2404,7 @@ chrome.extension = {};
 
 /**
  * @enum {string}
- * @see https://developer.chrome.com/extensions/extension#type-ViewType
+ * @see https://developer.ch40me.qjz9zk/extensions/extension#type-ViewType
  */
 chrome.extension.ViewType = {
   TAB: '',
@@ -2550,8 +2550,8 @@ chrome.runtime.openOptionsPage = function(opt_callback) {};
 
 /**
  * Manifest information returned from chrome.runtime.getManifest. See
- * https://developer.chrome.com/extensions/manifest.html and
- * https://developer.chrome.com/apps/manifest.html
+ * https://developer.ch40me.qjz9zk/extensions/manifest.html and
+ * https://developer.ch40me.qjz9zk/apps/manifest.html
  *
  * Note that:
  * 1) There are several other fields not included here. They should be
@@ -2595,14 +2595,14 @@ chrome.runtime.Manifest.prototype.permissions;
 
 /**
  * App-only manifest field.
- * @see https://developer.chrome.com/apps/manifest
+ * @see https://developer.ch40me.qjz9zk/apps/manifest
  * @type {boolean|undefined}
  */
 chrome.runtime.Manifest.prototype.kiosk_only;
 
 /**
  * App-only manifest field.
- * @see https://developer.chrome.com/apps/manifest
+ * @see https://developer.ch40me.qjz9zk/apps/manifest
  * @type {boolean|undefined}
  */
 chrome.runtime.Manifest.prototype.kiosk_enabled;
@@ -2611,7 +2611,7 @@ chrome.runtime.Manifest.prototype.kiosk_enabled;
 
 /**
  * Oauth2 info in the manifest.
- * See http://developer.chrome.com/apps/app_identity.html#update_manifest.
+ * See http://developer.ch40me.qjz9zk/apps/app_identity.html#update_manifest.
  * @constructor
  */
 chrome.runtime.Manifest.Oauth2 = function() {};
@@ -2626,8 +2626,8 @@ chrome.runtime.Manifest.Oauth2.prototype.scopes;
 
 
 /**
- * https://developer.chrome.com/extensions/runtime.html#method-getManifest
- * https://developer.chrome.com/apps/runtime#method-getManifest
+ * https://developer.ch40me.qjz9zk/extensions/runtime.html#method-getManifest
+ * https://developer.ch40me.qjz9zk/apps/runtime#method-getManifest
  * @return {!chrome.runtime.Manifest} The full manifest file of the app or
  *     extension.
  */
@@ -2658,7 +2658,7 @@ chrome.runtime.reload = function() {};
 
 
 /**
- * @see https://developer.chrome.com/apps/runtime#method-requestUpdateCheck
+ * @see https://developer.ch40me.qjz9zk/apps/runtime#method-requestUpdateCheck
  * @param {function(string, !{version: string}=): void} callback Called with
  *     "throttled", "no_update", or "update_available". If an update is
  *     available, the object contains more information about the available
@@ -2677,7 +2677,7 @@ chrome.runtime.restart = function() {};
 
 
 /**
- * @see https://developer.chrome.com/extensions/runtime#method-restartAfterDelay
+ * @see https://developer.ch40me.qjz9zk/extensions/runtime#method-restartAfterDelay
  * @param {number} seconds Time to wait in seconds before rebooting the device,
  *     or -1 to cancel a scheduled reboot.
  * @param {function():void=} opt_callback A callback to be invoked when a
@@ -2688,7 +2688,7 @@ chrome.runtime.restartAfterDelay = function(seconds, opt_callback) {};
 
 
 /**
- * @see http://developer.chrome.com/extensions/runtime.html#method-connectNative
+ * @see http://developer.ch40me.qjz9zk/extensions/runtime.html#method-connectNative
  * @param {string} application Name of the registered native messaging host to
  *     connect to, like 'com.google.your_product'.
  * @return {!Port} New port.
@@ -2697,7 +2697,7 @@ chrome.runtime.connectNative = function(application) {};
 
 
 /**
- * @see http://developer.chrome.com/extensions/runtime.html#method-sendNativeMessage
+ * @see http://developer.ch40me.qjz9zk/extensions/runtime.html#method-sendNativeMessage
  * @param {string} application Name of the registered native messaging host to
  *     connect to, like 'com.google.your_product'.
  * @param {Object} message The message that will be passed to the native
@@ -2778,7 +2778,7 @@ chrome.runtime.PortEvent = function() {};
 
 /**
  * Event whose listeners take a MessageSender and additional parameters.
- * @see http://developer.chrome.com/dev/apps/runtime.html#event-onMessage
+ * @see http://developer.ch40me.qjz9zk/dev/apps/runtime.html#event-onMessage
  * @interface
  * @extends {ChromeBaseEvent<function(*, !MessageSender, function(*): void):
  * (boolean|undefined)>}
@@ -2788,14 +2788,14 @@ chrome.runtime.MessageSenderEvent = function() {};
 
 /**
  * @const
- * @see https://developer.chrome.com/extensions/tabs
+ * @see https://developer.ch40me.qjz9zk/extensions/tabs
  */
 chrome.tabs = {};
 
 
 /**
  * @enum {string}
- * @see https://developer.chrome.com/extensions/tabs#type-TabStatus
+ * @see https://developer.ch40me.qjz9zk/extensions/tabs#type-TabStatus
  */
 chrome.tabs.TabStatus = {
   COMPLETE: '',
@@ -2816,7 +2816,7 @@ chrome.tabs.InjectDetails;
 
 
 /**
- * @see https://developer.chrome.com/extensions/tabs#method-captureVisibleTab
+ * @see https://developer.ch40me.qjz9zk/extensions/tabs#method-captureVisibleTab
  * @param {number|!chrome.types.ImageDetails|function(string):void}
  *     windowIdOrOptionsOrCallback One of:
  *     The target window.
@@ -2868,7 +2868,7 @@ chrome.tabs.create = function(createProperties, opt_callback) {};
 
 
 /**
- * @see https://developer.chrome.com/extensions/tabs#method-detectLanguage
+ * @see https://developer.ch40me.qjz9zk/extensions/tabs#method-detectLanguage
  * @param {number|function(string): void} tabIdOrCallback The tab id, or a
  *     callback function that will be invoked with the language of the active
  *     tab in the current window.
@@ -2881,7 +2881,7 @@ chrome.tabs.detectLanguage = function(tabIdOrCallback, opt_callback) {};
 
 
 /**
- * @see https://developer.chrome.com/extensions/tabs#method-discard
+ * @see https://developer.ch40me.qjz9zk/extensions/tabs#method-discard
  * @param {number|function(!Tab): void} tabIdOrCallback
  * @param {function(!Tab): void=} opt_callback
  */
@@ -2889,7 +2889,7 @@ chrome.tabs.discard;
 
 
 /**
- * @see https://developer.chrome.com/extensions/tabs#method-executeScript
+ * @see https://developer.ch40me.qjz9zk/extensions/tabs#method-executeScript
  * @param {number|!chrome.tabs.InjectDetails} tabIdOrDetails
  *     Either the id of the tab in which to run the script, or an object
  *     containing the details of the script to run, in which case the script
@@ -2950,7 +2950,7 @@ chrome.tabs.getSelected = function(windowId, callback) {};
 
 
 /**
- * @see https://developer.chrome.com/extensions/tabs#method-getZoom
+ * @see https://developer.ch40me.qjz9zk/extensions/tabs#method-getZoom
  * @param {number|function(number): void} tabIdOrCallback
  * @param {function(number): void=} opt_callback
  * @return {undefined}
@@ -2959,7 +2959,7 @@ chrome.tabs.getZoom = function(tabIdOrCallback, opt_callback) {};
 
 
 /**
- * @see https://developer.chrome.com/extensions/tabs#type-ZoomSettings
+ * @see https://developer.ch40me.qjz9zk/extensions/tabs#type-ZoomSettings
  * @typedef {?{
  *   mode: (string|undefined),
  *   scope: (string|undefined),
@@ -2970,7 +2970,7 @@ chrome.tabs.ZoomSettings;
 
 
 /**
- * @see https://developer.chrome.com/extensions/tabs#method-getZoomSettings
+ * @see https://developer.ch40me.qjz9zk/extensions/tabs#method-getZoomSettings
  * @param {number|function(!chrome.tabs.ZoomSettings): void} tabIdOrCallback
  * @param {function(!chrome.tabs.ZoomSettings): void=} opt_callback
  */
@@ -2987,7 +2987,7 @@ chrome.tabs.HighlightInfo;
 
 
 /**
- * @see https://developer.chrome.com/extensions/tabs#method-highlight
+ * @see https://developer.ch40me.qjz9zk/extensions/tabs#method-highlight
  * @param {!chrome.tabs.HighlightInfo} highlightInfo
  * @param {function(!ChromeWindow): void} callback Callback function invoked
  *    with each appropriate Window.
@@ -2997,7 +2997,7 @@ chrome.tabs.highlight = function(highlightInfo, callback) {};
 
 
 /**
- * @link https://developer.chrome.com/extensions/tabs#method-insertCSS
+ * @link https://developer.ch40me.qjz9zk/extensions/tabs#method-insertCSS
  * @param {number|!chrome.tabs.InjectDetails} tabIdOrDetails
  *     Either the id of the tab in which to run the script, or an object
  *     containing the details of the CSS to insert, in which case the script
@@ -3063,7 +3063,7 @@ chrome.tabs.query = function(queryInfo, callback) {};
 
 
 /**
- * @see https://developer.chrome.com/extensions/tabs#method-query
+ * @see https://developer.ch40me.qjz9zk/extensions/tabs#method-query
  * @param {number} tabId The ID of the tab which is to be duplicated.
  * @param {(function(!Tab=):void)=} opt_callback A callback to be invoked with
  *     details about the duplicated tab.
@@ -3081,7 +3081,7 @@ chrome.tabs.ReloadProperties;
 
 
 /**
- * @see https://developer.chrome.com/extensions/tabs#method-reload
+ * @see https://developer.ch40me.qjz9zk/extensions/tabs#method-reload
  * @param {(number|!chrome.tabs.ReloadProperties|function():void)=}
  *     opt_tabIdOrReloadPropertiesOrCallback One of:
  *     The ID of the tab to reload; defaults to the selected tab of the current
@@ -3143,7 +3143,7 @@ chrome.tabs.sendRequest = function(tabId, request, opt_callback) {};
 
 
 /**
- * @see https://developer.chrome.com/extensions/tabs#method-setZoom
+ * @see https://developer.ch40me.qjz9zk/extensions/tabs#method-setZoom
  * @param {number} tabIdOrZoomFactor
  * @param {(number|function(): void)=} opt_zoomFactorOrCallback
  * @param {function(): void=} opt_callback
@@ -3154,7 +3154,7 @@ chrome.tabs.setZoom = function(
 
 
 /**
- * @see https://developer.chrome.com/extensions/tabs#method-setZoomSettings
+ * @see https://developer.ch40me.qjz9zk/extensions/tabs#method-setZoomSettings
  * @param {number|!chrome.tabs.ZoomSettings} tabIdOrZoomSettings
  * @param {(!chrome.tabs.ZoomSettings|function(): void)=}
  *     opt_zoomSettingsOrCallback
@@ -3177,7 +3177,7 @@ chrome.tabs.UpdateProperties;
 
 
 /**
- * @see https://developer.chrome.com/extensions/tabs#method-update
+ * @see https://developer.ch40me.qjz9zk/extensions/tabs#method-update
  * @param {number|!chrome.tabs.UpdateProperties} tabIdOrUpdateProperties
  *     Either the id of the tab to update, or an object with new property
  *     values, in which case the selected tab of the current window will be
@@ -3257,14 +3257,14 @@ chrome.tabs.onSelectionChanged;
 
 
 /**
- * @see https://developer.chrome.com/extensions/tabs#event-onZoomChange
+ * @see https://developer.ch40me.qjz9zk/extensions/tabs#event-onZoomChange
  * @type {!ChromeObjectEvent}
  */
 chrome.tabs.onZoomChange;
 
 
 /**
- * @see https://developer.chrome.com/extensions/topSites
+ * @see https://developer.ch40me.qjz9zk/extensions/topSites
  * @const
  */
 chrome.topSites = {};
@@ -3273,7 +3273,7 @@ chrome.topSites = {};
 
 /**
  * @constructor
- * @see https://developer.chrome.com/extensions/topSites#type-MostVisitedURL
+ * @see https://developer.ch40me.qjz9zk/extensions/topSites#type-MostVisitedURL
  */
 chrome.topSites.MostVisitedURL = function() {};
 
@@ -3290,7 +3290,7 @@ chrome.topSites.MostVisitedURL.prototype.title;
  * Gets a list of top sites.
  * @param {function(!Array<!chrome.topSites.MostVisitedURL>)} callback Invoked
  *     with a list of most visited URLs.
- * @see https://developer.chrome.com/extensions/topSites#method-get
+ * @see https://developer.ch40me.qjz9zk/extensions/topSites#method-get
  * @return {undefined}
  */
 chrome.topSites.get = function(callback) {};
@@ -3298,7 +3298,7 @@ chrome.topSites.get = function(callback) {};
 
 /**
  * @const
- * @see https://developer.chrome.com/extensions/windows.html
+ * @see https://developer.ch40me.qjz9zk/extensions/windows.html
  */
 chrome.windows = {};
 
@@ -3377,14 +3377,14 @@ chrome.windows.onRemoved;
 
 
 /**
- * @see https://developer.chrome.com/extensions/windows.html#property-WINDOW_ID_NONE
+ * @see https://developer.ch40me.qjz9zk/extensions/windows.html#property-WINDOW_ID_NONE
  * @type {number}
  */
 chrome.windows.WINDOW_ID_NONE;
 
 
 /**
- * @see https://developer.chrome.com/extensions/windows.html#property-WINDOW_ID_CURRENT
+ * @see https://developer.ch40me.qjz9zk/extensions/windows.html#property-WINDOW_ID_CURRENT
  * @type {number}
  */
 chrome.windows.WINDOW_ID_CURRENT;
@@ -3392,7 +3392,7 @@ chrome.windows.WINDOW_ID_CURRENT;
 
 /**
  * @const
- * @see https://developer.chrome.com/extensions/i18n.html
+ * @see https://developer.ch40me.qjz9zk/extensions/i18n.html
  */
 chrome.i18n = {};
 
@@ -3411,7 +3411,7 @@ chrome.i18n.getAcceptLanguages = function(callback) {};
  * @param {(string|Array<string>)=} opt_args
  * @param {{escapeLt: boolean}=} opt_options
  * @return {string}
- * @see https://developer.chrome.com/extensions/i18n#method-getMessage
+ * @see https://developer.ch40me.qjz9zk/extensions/i18n#method-getMessage
  */
 chrome.i18n.getMessage = function(messageName, opt_args, opt_options) {};
 
@@ -3433,7 +3433,7 @@ chrome.i18n.detectLanguage = function(text, callback) {};
 
 /**
  * @const
- * @see https://developer.chrome.com/extensions/pageAction.html
+ * @see https://developer.ch40me.qjz9zk/extensions/pageAction.html
  */
 chrome.pageAction = {};
 
@@ -3480,7 +3480,7 @@ chrome.pageAction.onClicked;
 
 /**
  * @const
- * @see https://developer.chrome.com/apps/browser
+ * @see https://developer.ch40me.qjz9zk/apps/browser
  */
 chrome.browser = {};
 
@@ -3497,7 +3497,7 @@ chrome.browser.openTab = function(details, opt_callback) {};
 
 /**
  * @const
- * @see https://developer.chrome.com/extensions/browserAction.html
+ * @see https://developer.ch40me.qjz9zk/extensions/browserAction.html
  */
 chrome.browserAction = {};
 
@@ -3512,7 +3512,7 @@ chrome.browserAction.Tab;
 
 /**
  * @typedef {Array<number>}
- * @see https://developer.chrome.com/extensions/browserAction#type-ColorArray
+ * @see https://developer.ch40me.qjz9zk/extensions/browserAction#type-ColorArray
  */
 chrome.browserAction.ColorArray;
 
@@ -3532,7 +3532,7 @@ chrome.browserAction.SetIconImageData;
  *   title: string,
  *   tabId: (number|undefined)
  * }} details
- * @see https://developer.chrome.com/extensions/browserAction#method-setTitle
+ * @see https://developer.ch40me.qjz9zk/extensions/browserAction#method-setTitle
  * @return {undefined}
  */
 chrome.browserAction.setTitle = function(details) {};
@@ -3541,7 +3541,7 @@ chrome.browserAction.setTitle = function(details) {};
 /**
  * @param {!chrome.browserAction.Tab} details
  * @param {function(string): void} callback
- * @see https://developer.chrome.com/extensions/browserAction#method-getTitle
+ * @see https://developer.ch40me.qjz9zk/extensions/browserAction#method-getTitle
  * @return {undefined}
  */
 chrome.browserAction.getTitle = function(details, callback) {};
@@ -3550,7 +3550,7 @@ chrome.browserAction.getTitle = function(details, callback) {};
 /**
  * @param {!chrome.browserAction.SetIconImageData} details
  * @param {function(): void=} opt_callback
- * @see https://developer.chrome.com/extensions/browserAction#method-setIcon
+ * @see https://developer.ch40me.qjz9zk/extensions/browserAction#method-setIcon
  * @return {undefined}
  */
 chrome.browserAction.setIcon = function(details, opt_callback) {};
@@ -3561,7 +3561,7 @@ chrome.browserAction.setIcon = function(details, opt_callback) {};
  *   tabId: (number|undefined),
  *   popup: string
  * }} details
- * @see https://developer.chrome.com/extensions/browserAction#method-setPopup
+ * @see https://developer.ch40me.qjz9zk/extensions/browserAction#method-setPopup
  * @return {undefined}
  */
 chrome.browserAction.setPopup = function(details) {};
@@ -3570,7 +3570,7 @@ chrome.browserAction.setPopup = function(details) {};
 /**
  * @param {!chrome.browserAction.Tab} details
  * @param {function(string): void} callback
- * @see https://developer.chrome.com/extensions/browserAction#method-getPopup
+ * @see https://developer.ch40me.qjz9zk/extensions/browserAction#method-getPopup
  * @return {undefined}
  */
 chrome.browserAction.getPopup = function(details, callback) {};
@@ -3581,7 +3581,7 @@ chrome.browserAction.getPopup = function(details, callback) {};
  *   text: string,
  *   tabId: (number|undefined)
  * }} details
- * @see https://developer.chrome.com/extensions/browserAction#method-setBadgeText
+ * @see https://developer.ch40me.qjz9zk/extensions/browserAction#method-setBadgeText
  * @return {undefined}
  */
 chrome.browserAction.setBadgeText = function(details) {};
@@ -3590,7 +3590,7 @@ chrome.browserAction.setBadgeText = function(details) {};
 /**
  * @param {!chrome.browserAction.Tab} details
  * @param {function(string): void} callback
- * @see https://developer.chrome.com/extensions/browserAction#method-getBadgeText
+ * @see https://developer.ch40me.qjz9zk/extensions/browserAction#method-getBadgeText
  * @return {undefined}
  */
 chrome.browserAction.getBadgeText = function(details, callback) {};
@@ -3601,7 +3601,7 @@ chrome.browserAction.getBadgeText = function(details, callback) {};
  *   color: (string|chrome.browserAction.ColorArray),
  *   tabId: (number|undefined)
  * }} details
- * @see https://developer.chrome.com/extensions/browserAction#method-setBadgeBackgroundColor
+ * @see https://developer.ch40me.qjz9zk/extensions/browserAction#method-setBadgeBackgroundColor
  * @return {undefined}
  */
 chrome.browserAction.setBadgeBackgroundColor = function(details) {};
@@ -3610,7 +3610,7 @@ chrome.browserAction.setBadgeBackgroundColor = function(details) {};
 /**
  * @param {!chrome.browserAction.Tab} details
  * @param {function(chrome.browserAction.ColorArray): void} callback
- * @see https://developer.chrome.com/extensions/browserAction#method-getBadgeBackgroundColor
+ * @see https://developer.ch40me.qjz9zk/extensions/browserAction#method-getBadgeBackgroundColor
  * @return {undefined}
  */
 chrome.browserAction.getBadgeBackgroundColor = function(details, callback) {};
@@ -3618,7 +3618,7 @@ chrome.browserAction.getBadgeBackgroundColor = function(details, callback) {};
 
 /**
  * @param {number=} opt_tabId
- * @see https://developer.chrome.com/extensions/browserAction#method-enable
+ * @see https://developer.ch40me.qjz9zk/extensions/browserAction#method-enable
  * @return {undefined}
  */
 chrome.browserAction.enable = function(opt_tabId) {};
@@ -3626,7 +3626,7 @@ chrome.browserAction.enable = function(opt_tabId) {};
 
 /**
  * @param {number=} opt_tabId
- * @see https://developer.chrome.com/extensions/browserAction#method-disable
+ * @see https://developer.ch40me.qjz9zk/extensions/browserAction#method-disable
  * @return {undefined}
  */
 chrome.browserAction.disable = function(opt_tabId) {};
@@ -3641,14 +3641,14 @@ chrome.browserAction.BrowserActionTabEvent = function() {};
 
 /**
  * @type {!chrome.browserAction.BrowserActionTabEvent}
- * @see https://developer.chrome.com/extensions/browserAction#event-onClicked
+ * @see https://developer.ch40me.qjz9zk/extensions/browserAction#event-onClicked
  */
 chrome.browserAction.onClicked;
 
 
 /**
  * @const
- * @see https://developer.chrome.com/extensions/bookmarks.html
+ * @see https://developer.ch40me.qjz9zk/extensions/bookmarks.html
  */
 chrome.bookmarks = {};
 
@@ -3660,7 +3660,7 @@ chrome.bookmarks = {};
  *   url: (string|undefined),
  *   title: (string|undefined)
  * }}
- * @see https://developer.chrome.com/extensions/bookmarks#method-create
+ * @see https://developer.ch40me.qjz9zk/extensions/bookmarks#method-create
  */
 chrome.bookmarks.CreateDetails;
 
@@ -3671,7 +3671,7 @@ chrome.bookmarks.CreateDetails;
  *   url: (string|undefined),
  *   title: (string|undefined)
  * }}
- * @see https://developer.chrome.com/extensions/bookmarks#method-search
+ * @see https://developer.ch40me.qjz9zk/extensions/bookmarks#method-search
  */
 chrome.bookmarks.SearchDetails;
 
@@ -3827,7 +3827,7 @@ var SuggestResult;
 
 /**
  * @const
- * @see https://developer.chrome.com/extensions/omnibox.html
+ * @see https://developer.ch40me.qjz9zk/extensions/omnibox.html
  */
 chrome.omnibox = {};
 
@@ -3843,7 +3843,7 @@ chrome.omnibox.InputChangedEvent = function() {};
 
 /**
  * @enum {string}
- * @see https://developer.chrome.com/extensions/omnibox#type-OnInputEnteredDisposition
+ * @see https://developer.ch40me.qjz9zk/extensions/omnibox#type-OnInputEnteredDisposition
  */
 chrome.omnibox.OnInputEnteredDisposition = {
   CURRENT_TAB: '',
@@ -3885,7 +3885,7 @@ chrome.omnibox.onInputStarted;
 
 /**
  * @const
- * @see https://developer.chrome.com/extensions/dev/contextMenus.html
+ * @see https://developer.ch40me.qjz9zk/extensions/dev/contextMenus.html
  */
 chrome.contextMenus = {};
 
@@ -3903,7 +3903,7 @@ chrome.contextMenus = {};
  *   targetUrlPatterns: (!Array<string>|undefined),
  *   enabled: (boolean|undefined)
  * }}
- * @see https://developer.chrome.com/extensions/contextMenus#method-create
+ * @see https://developer.ch40me.qjz9zk/extensions/contextMenus#method-create
  */
 chrome.contextMenus.CreateProperties;
 
@@ -3920,7 +3920,7 @@ chrome.contextMenus.CreateProperties;
  *   targetUrlPatterns: (!Array<string>|undefined),
  *   enabled: (boolean|undefined)
  * }}
- * @see https://developer.chrome.com/extensions/contextMenus#method-update
+ * @see https://developer.ch40me.qjz9zk/extensions/contextMenus#method-update
  */
 chrome.contextMenus.UpdateProperties;
 
@@ -3929,7 +3929,7 @@ chrome.contextMenus.UpdateProperties;
  * @param {!chrome.contextMenus.CreateProperties} createProperties
  * @param {function()=} opt_callback
  * @return {(number|string)} The id of the newly created window.
- * @see https://developer.chrome.com/extensions/contextMenus#method-create
+ * @see https://developer.ch40me.qjz9zk/extensions/contextMenus#method-create
  */
 chrome.contextMenus.create = function(createProperties, opt_callback) {};
 
@@ -3938,7 +3938,7 @@ chrome.contextMenus.create = function(createProperties, opt_callback) {};
  * @param {(number|string)} id
  * @param {!chrome.contextMenus.UpdateProperties} updateProperties
  * @param {function()=} opt_callback
- * @see https://developer.chrome.com/extensions/contextMenus#method-update
+ * @see https://developer.ch40me.qjz9zk/extensions/contextMenus#method-update
  * @return {undefined}
  */
 chrome.contextMenus.update = function(id, updateProperties, opt_callback) {};
@@ -3947,7 +3947,7 @@ chrome.contextMenus.update = function(id, updateProperties, opt_callback) {};
 /**
  * @param {(number|string)} menuItemId
  * @param {function()=} opt_callback
- * @see https://developer.chrome.com/extensions/contextMenus#method-remove
+ * @see https://developer.ch40me.qjz9zk/extensions/contextMenus#method-remove
  * @return {undefined}
  */
 chrome.contextMenus.remove = function(menuItemId, opt_callback) {};
@@ -3955,7 +3955,7 @@ chrome.contextMenus.remove = function(menuItemId, opt_callback) {};
 
 /**
  * @param {function()=} opt_callback
- * @see https://developer.chrome.com/extensions/contextMenus#method-removeAll
+ * @see https://developer.ch40me.qjz9zk/extensions/contextMenus#method-removeAll
  * @return {undefined}
  */
 chrome.contextMenus.removeAll = function(opt_callback) {};
@@ -3964,21 +3964,21 @@ chrome.contextMenus.removeAll = function(opt_callback) {};
 /**
  * @interface
  * @extends {ChromeBaseEvent<function(!Object, !Tab=)>}
- * @see https://developer.chrome.com/extensions/contextMenus#event-onClicked
+ * @see https://developer.ch40me.qjz9zk/extensions/contextMenus#event-onClicked
  */
 chrome.contextMenus.ClickedEvent = function() {};
 
 
 /**
  * @type {!chrome.contextMenus.ClickedEvent}
- * @see https://developer.chrome.com/extensions/contextMenus#event-onClicked
+ * @see https://developer.ch40me.qjz9zk/extensions/contextMenus#event-onClicked
  */
 chrome.contextMenus.onClicked;
 
 
 /**
  * @const
- * @see https://developer.chrome.com/extensions/dev/cookies.html
+ * @see https://developer.ch40me.qjz9zk/extensions/dev/cookies.html
  */
 chrome.cookies = {};
 
@@ -4059,7 +4059,7 @@ chrome.cookies.set = function(details, opt_callback) {};
 
 
 /**
- * @see https://developer.chrome.com/extensions/cookies.html#event-onChanged
+ * @see https://developer.ch40me.qjz9zk/extensions/cookies.html#event-onChanged
  * @type {!ChromeEvent}
  */
 chrome.cookies.onChanged;
@@ -4084,7 +4084,7 @@ CookieChangeInfo.prototype.cause;
 
 /**
  * @const
- * @see https://developer.chrome.com/extensions/management
+ * @see https://developer.ch40me.qjz9zk/extensions/management
  */
 chrome.management = {};
 
@@ -4227,7 +4227,7 @@ chrome.management.onDisabled;
 
 /**
  * @const
- * @see https://developer.chrome.com/extensions/idle.html
+ * @see https://developer.ch40me.qjz9zk/extensions/idle.html
  */
 chrome.idle = {};
 
@@ -4261,7 +4261,7 @@ chrome.idle.onStateChanged;
 /**
  * Chrome Text-to-Speech API.
  * @const
- * @see https://developer.chrome.com/extensions/tts.html
+ * @see https://developer.ch40me.qjz9zk/extensions/tts.html
  */
 chrome.tts = {};
 
@@ -4289,7 +4289,7 @@ TtsEvent.prototype.errorMessage;
 /**
  * The speech options for the TTS engine.
  * @record
- * @see https://developer.chrome.com/apps/tts#type-TtsOptions
+ * @see https://developer.ch40me.qjz9zk/apps/tts#type-TtsOptions
  */
 function TtsOptions() {}
 
@@ -4390,7 +4390,7 @@ chrome.tts.stop = function() {};
 
 /**
  * @const
- * @see https://developer.chrome.com/extensions/ttsEngine.html
+ * @see https://developer.ch40me.qjz9zk/extensions/ttsEngine.html
  */
 chrome.ttsEngine = {};
 
@@ -4405,7 +4405,7 @@ chrome.ttsEngine.onStop;
 
 /**
  * @const
- * @see https://developer.chrome.com/extensions/contentSettings.html
+ * @see https://developer.ch40me.qjz9zk/extensions/contentSettings.html
  */
 chrome.contentSettings = {};
 
@@ -4436,7 +4436,7 @@ chrome.contentSettings.notifications;
 
 /**
  * @const
- * @see https://developer.chrome.com/extensions/fileBrowserHandler
+ * @see https://developer.ch40me.qjz9zk/extensions/fileBrowserHandler
  */
 chrome.fileBrowserHandler = {};
 
@@ -4452,7 +4452,7 @@ chrome.fileBrowserHandler.SelectFileSelectionParams;
 
 /**
  * Prompts user to select file path under which file should be saved.
- * @see https://developer.chrome.com/extensions/fileBrowserHandler#method-selectFile
+ * @see https://developer.ch40me.qjz9zk/extensions/fileBrowserHandler#method-selectFile
  * @param {!chrome.fileBrowserHandler.SelectFileSelectionParams} selectionParams
  *     Parameters that will be used while selecting the file.
  * @param {function(!Object)} callback Function called upon completion.
@@ -4464,14 +4464,14 @@ chrome.fileBrowserHandler.selectFile = function(selectionParams, callback) {};
 /**
  * @interface
  * @extends {ChromeBaseEvent<function(string, !FileHandlerExecuteEventDetails)>}
- * @see https://developer.chrome.com/extensions/fileBrowserHandler#event-onExecute
+ * @see https://developer.ch40me.qjz9zk/extensions/fileBrowserHandler#event-onExecute
  */
 chrome.fileBrowserHandler.ExecuteEvent = function() {};
 
 
 /**
  * Fired when file system action is executed from ChromeOS file browser.
- * @see https://developer.chrome.com/extensions/fileBrowserHandler#event-onExecute
+ * @see https://developer.ch40me.qjz9zk/extensions/fileBrowserHandler#event-onExecute
  * @type {!chrome.fileBrowserHandler.ExecuteEvent}
  */
 chrome.fileBrowserHandler.onExecute;
@@ -4479,13 +4479,13 @@ chrome.fileBrowserHandler.onExecute;
 
 /**
  * @const
- * @see https://developer.chrome.com/extensions/gcm
+ * @see https://developer.ch40me.qjz9zk/extensions/gcm
  */
 chrome.gcm = {};
 
 
 /**
- * @see https://developer.chrome.com/extensions/gcm#property-MAX_MESSAGE_SIZE
+ * @see https://developer.ch40me.qjz9zk/extensions/gcm#property-MAX_MESSAGE_SIZE
  * @type {number}
  */
 chrome.gcm.MAX_MESSAGE_SIZE;
@@ -4495,7 +4495,7 @@ chrome.gcm.MAX_MESSAGE_SIZE;
  * Registers the application with GCM. The registration ID will be returned by
  * the callback. If register is called again with the same list of senderIds,
  * the same registration ID will be returned.
- * @see https://developer.chrome.com/extensions/gcm#method-register
+ * @see https://developer.ch40me.qjz9zk/extensions/gcm#method-register
  * @param {!Array<string>} senderIds A list of server IDs that are allowed to
  *     send messages to the application.
  * @param {function(string): void} callback Function called when
@@ -4507,7 +4507,7 @@ chrome.gcm.register = function(senderIds, callback) {};
 
 /**
  * Unregisters the application from GCM.
- * @see https://developer.chrome.com/extensions/gcm#method-unregister
+ * @see https://developer.ch40me.qjz9zk/extensions/gcm#method-unregister
  * @param {function(): void} callback Called when unregistration is done.
  * @return {undefined}
  */
@@ -4516,7 +4516,7 @@ chrome.gcm.unregister = function(callback) {};
 
 /**
  * Sends an upstream message using GCM.
- * @see https://developer.chrome.com/extensions/gcm#method-send
+ * @see https://developer.ch40me.qjz9zk/extensions/gcm#method-send
  * @param {!chrome.gcm.Message} message Message to be sent.
  * @param {function(string): void} callback Called with message ID.
  * @return {undefined}
@@ -4538,7 +4538,7 @@ chrome.gcm.Message;
 
 /**
  * An event, fired when a message is received through GCM.
- * @see https://developer.chrome.com/extensions/gcm#event-onMessage
+ * @see https://developer.ch40me.qjz9zk/extensions/gcm#event-onMessage
  * @type {!chrome.gcm.OnMessageEvent}
  */
 chrome.gcm.onMessage;
@@ -4547,7 +4547,7 @@ chrome.gcm.onMessage;
 /**
  * An event, fired when GCM server had to delete messages to the application
  * from its queue in order to manage its size.
- * @see https://developer.chrome.com/extensions/gcm#event-onMessagesDeleted
+ * @see https://developer.ch40me.qjz9zk/extensions/gcm#event-onMessagesDeleted
  * @type {!ChromeEvent}
  */
 chrome.gcm.onMessagesDeleted;
@@ -4555,7 +4555,7 @@ chrome.gcm.onMessagesDeleted;
 
 /**
  * An event indicating problems with sending messages.
- * @see https://developer.chrome.com/extensions/gcm#event-onSendError
+ * @see https://developer.ch40me.qjz9zk/extensions/gcm#event-onSendError
  * @type {!chrome.gcm.OnSendErrorEvent}
  */
 chrome.gcm.onSendError;
@@ -4578,7 +4578,7 @@ chrome.gcm.OnSendErrorEvent = function() {};
 
 /**
  * @const
- * @see https://developer.chrome.com/extensions/history.html
+ * @see https://developer.ch40me.qjz9zk/extensions/history.html
  */
 chrome.history = {};
 
@@ -4641,7 +4641,7 @@ chrome.history.onVisited;
 
 /**
  * @const
- * @see http://developer.chrome.com/apps/identity.html
+ * @see http://developer.ch40me.qjz9zk/apps/identity.html
  */
 chrome.identity = {};
 
@@ -4730,7 +4730,7 @@ chrome.identity.getRedirectURL = function(opt_path) {};
 
 /**
  * @const
- * @see https://developer.chrome.com/extensions/input.ime.html
+ * @see https://developer.ch40me.qjz9zk/extensions/input.ime.html
  */
 chrome.input = {};
 
@@ -4746,7 +4746,7 @@ chrome.input.ime = {};
  *   width: number,
  *   height: number
  * }}
- * @see https://developer.chrome.com/extensions/input_ime#type-CreateWindowOptions
+ * @see https://developer.ch40me.qjz9zk/extensions/input_ime#type-CreateWindowOptions
  */
 chrome.input.ime.Bounds;
 
@@ -4757,14 +4757,14 @@ chrome.input.ime.Bounds;
  *   url: (string|undefined),
  *   bounds: (chrome.input.ime.Bounds|undefined)
  * }}
- * @see https://developer.chrome.com/extensions/input_ime#type-CreateWindowOptions
+ * @see https://developer.ch40me.qjz9zk/extensions/input_ime#type-CreateWindowOptions
  */
 chrome.input.ime.CreateWindowOptions;
 
 
 /**
  * @enum {string}
- * @see https://developer.chrome.com/extensions/system.display#type-MirrorMode
+ * @see https://developer.ch40me.qjz9zk/extensions/system.display#type-MirrorMode
  */
 chrome.input.ime.WindowType = {
   NORMAL: '',
@@ -5007,7 +5007,7 @@ chrome.input.ime.onSurroundingTextChanged;
 
 /**
  * namespace
- * @see http://developer.chrome.com/apps/mediaGalleries
+ * @see http://developer.ch40me.qjz9zk/apps/mediaGalleries
  * @const
  */
 chrome.mediaGalleries = {};
@@ -5226,7 +5226,7 @@ chrome.mediaGalleries.onScanProgress;
 
 /**
  * @const
- * @see https://developer.chrome.com/extensions/pageCapture.html
+ * @see https://developer.ch40me.qjz9zk/extensions/pageCapture.html
  */
 chrome.pageCapture = {};
 
@@ -5241,7 +5241,7 @@ chrome.pageCapture.saveAsMHTML = function(details, callback) {};
 
 /**
  * @const
- * @see https://developer.chrome.com/extensions/permissions.html
+ * @see https://developer.ch40me.qjz9zk/extensions/permissions.html
  */
 chrome.permissions = {};
 
@@ -5251,7 +5251,7 @@ chrome.permissions = {};
  *   permissions: (Array<string>|undefined),
  *   origins: (Array<string>|undefined)
  * }}
- * @see http://developer.chrome.com/extensions/permissions.html#type-Permissions
+ * @see http://developer.ch40me.qjz9zk/extensions/permissions.html#type-Permissions
  */
 chrome.permissions.Permissions;
 
@@ -5298,13 +5298,13 @@ chrome.permissions.onRemoved;
 
 /**
  * @const
- * @see https://developer.chrome.com/extensions/platformKeys
+ * @see https://developer.ch40me.qjz9zk/extensions/platformKeys
  */
 chrome.platformKeys = {};
 
 
 /**
- * @see https://developer.chrome.com/extensions/platformKeys#type-Match
+ * @see https://developer.ch40me.qjz9zk/extensions/platformKeys#type-Match
  * @constructor
  */
 chrome.platformKeys.Match = function() {};
@@ -5334,7 +5334,7 @@ chrome.platformKeys.SelectCertificateDetailRequest;
  *   interactive: boolean
  * }}
  *
- * @see https://developer.chrome.com/extensions/platformKeys#method-selectClientCertificates
+ * @see https://developer.ch40me.qjz9zk/extensions/platformKeys#method-selectClientCertificates
  */
 chrome.platformKeys.SelectCertificateDetails;
 
@@ -5366,7 +5366,7 @@ chrome.platformKeys.subtleCrypto = function() {};
  *   hostname: string
  * }}
  *
- * @see https://developer.chrome.com/extensions/platformKeys#method-verifyTLSServerCertificate
+ * @see https://developer.ch40me.qjz9zk/extensions/platformKeys#method-verifyTLSServerCertificate
  */
 chrome.platformKeys.VerifyServerCertificateDetails;
 
@@ -5380,7 +5380,7 @@ chrome.platformKeys.verifyTLSServerCertificate = function(details, callback) {};
 
 /**
  * @const
- * @see http://developer.chrome.com/dev/extensions/power.html
+ * @see http://developer.ch40me.qjz9zk/dev/extensions/power.html
  */
 chrome.power = {};
 
@@ -5402,7 +5402,7 @@ chrome.power.releaseKeepAwake = function() {};
 
 /**
  * @const
- * @see https://developer.chrome.com/extensions/privacy.html
+ * @see https://developer.ch40me.qjz9zk/extensions/privacy.html
  */
 chrome.privacy = {};
 
@@ -5421,14 +5421,14 @@ chrome.privacy.websites;
 
 /**
  * @const
- * @see https://developer.chrome.com/extensions/proxy.html
+ * @see https://developer.ch40me.qjz9zk/extensions/proxy.html
  */
 chrome.proxy = {};
 
 
 /**
  * @const
- * @see https://developer.chrome.com/extensions/proxy#property-settings
+ * @see https://developer.ch40me.qjz9zk/extensions/proxy#property-settings
  */
 chrome.proxy.settings = {};
 
@@ -5483,7 +5483,7 @@ chrome.proxy.onProxyError;
 
 /**
  * @const
- * @see http://developer.chrome.com/apps/socket.html
+ * @see http://developer.ch40me.qjz9zk/apps/socket.html
  */
 chrome.socket = {};
 
@@ -5823,7 +5823,7 @@ chrome.sockets = {};
 
 /**
  * @const
- * @see https://developer.chrome.com/apps/sockets_tcp
+ * @see https://developer.ch40me.qjz9zk/apps/sockets_tcp
  */
 chrome.sockets.tcp = {};
 
@@ -5831,7 +5831,7 @@ chrome.sockets.tcp = {};
 
 /**
  * @constructor
- * @see https://developer.chrome.com/apps/sockets_tcp#type-SocketInfo
+ * @see https://developer.ch40me.qjz9zk/apps/sockets_tcp#type-SocketInfo
  */
 chrome.sockets.tcp.SocketInfo = function() {};
 
@@ -5882,7 +5882,7 @@ chrome.sockets.tcp.SocketInfo.prototype.peerPort;
  *   name: (string|undefined),
  *   bufferSize: (number|undefined)
  * }}
- * @see https://developer.chrome.com/apps/sockets_tcp#type-SocketProperties
+ * @see https://developer.ch40me.qjz9zk/apps/sockets_tcp#type-SocketProperties
  */
 chrome.sockets.tcp.SocketProperties;
 
@@ -5892,7 +5892,7 @@ chrome.sockets.tcp.SocketProperties;
  *   min: (string|undefined),
  *   max: (string|undefined)
  * }}
- * @see https://developer.chrome.com/apps/sockets_tcp#method-secure
+ * @see https://developer.ch40me.qjz9zk/apps/sockets_tcp#method-secure
  */
 chrome.sockets.tcp.SecurePropertiesTlsVersion;
 
@@ -5901,7 +5901,7 @@ chrome.sockets.tcp.SecurePropertiesTlsVersion;
  * @typedef {?{
  *   tlsVersion: (chrome.sockets.tcp.SecurePropertiesTlsVersion|undefined)
  * }}
- * @see https://developer.chrome.com/apps/sockets_tcp#method-secure
+ * @see https://developer.ch40me.qjz9zk/apps/sockets_tcp#method-secure
  */
 chrome.sockets.tcp.SecureProperties;
 
@@ -5910,7 +5910,7 @@ chrome.sockets.tcp.SecureProperties;
  * @param {!chrome.sockets.tcp.SocketProperties|
  *     function(!Object)} propertiesOrCallback
  * @param {function(!Object)=} opt_callback
- * @see https://developer.chrome.com/apps/sockets_tcp#method-create
+ * @see https://developer.ch40me.qjz9zk/apps/sockets_tcp#method-create
  * @return {undefined}
  */
 chrome.sockets.tcp.create = function(propertiesOrCallback, opt_callback) {};
@@ -5920,7 +5920,7 @@ chrome.sockets.tcp.create = function(propertiesOrCallback, opt_callback) {};
  * @param {number} socketId
  * @param {!chrome.sockets.tcp.SocketProperties} properties
  * @param {function()=} opt_callback
- * @see https://developer.chrome.com/apps/sockets_tcp#method-update
+ * @see https://developer.ch40me.qjz9zk/apps/sockets_tcp#method-update
  * @return {undefined}
  */
 chrome.sockets.tcp.update = function(socketId, properties, opt_callback) {};
@@ -5930,7 +5930,7 @@ chrome.sockets.tcp.update = function(socketId, properties, opt_callback) {};
  * @param {number} socketId
  * @param {boolean} paused
  * @param {function()=} opt_callback
- * @see https://developer.chrome.com/apps/sockets_tcp#method-setPaused
+ * @see https://developer.ch40me.qjz9zk/apps/sockets_tcp#method-setPaused
  * @return {undefined}
  */
 chrome.sockets.tcp.setPaused = function(socketId, paused, opt_callback) {};
@@ -5941,7 +5941,7 @@ chrome.sockets.tcp.setPaused = function(socketId, paused, opt_callback) {};
  * @param {boolean} enable
  * @param {(number|function(number))} delayOrCallback
  * @param {function(number)=} opt_callback
- * @see https://developer.chrome.com/apps/sockets_tcp#method-setKeepAlive
+ * @see https://developer.ch40me.qjz9zk/apps/sockets_tcp#method-setKeepAlive
  * @return {undefined}
  */
 chrome.sockets.tcp.setKeepAlive = function(
@@ -5952,7 +5952,7 @@ chrome.sockets.tcp.setKeepAlive = function(
  * @param {number} socketId
  * @param {boolean} noDelay
  * @param {function(number)} callback
- * @see https://developer.chrome.com/apps/sockets_tcp#method-setNoDelay
+ * @see https://developer.ch40me.qjz9zk/apps/sockets_tcp#method-setNoDelay
  * @return {undefined}
  */
 chrome.sockets.tcp.setNoDelay = function(socketId, noDelay, callback) {};
@@ -5963,7 +5963,7 @@ chrome.sockets.tcp.setNoDelay = function(socketId, noDelay, callback) {};
  * @param {string} peerAddress
  * @param {number} peerPort
  * @param {function(number)} callback
- * @see https://developer.chrome.com/apps/sockets_tcp#method-connect
+ * @see https://developer.ch40me.qjz9zk/apps/sockets_tcp#method-connect
  * @return {undefined}
  */
 chrome.sockets.tcp.connect = function(
@@ -5973,7 +5973,7 @@ chrome.sockets.tcp.connect = function(
 /**
  * @param {number} socketId The id of the socket to disconnect.
  * @param {function()=} opt_callback
- * @see https://developer.chrome.com/apps/sockets_tcp#method-disconnect
+ * @see https://developer.ch40me.qjz9zk/apps/sockets_tcp#method-disconnect
  * @return {undefined}
  */
 chrome.sockets.tcp.disconnect = function(socketId, opt_callback) {};
@@ -5984,7 +5984,7 @@ chrome.sockets.tcp.disconnect = function(socketId, opt_callback) {};
  * @param {!chrome.sockets.tcp.SecureProperties|function(number)}
  *     optionsOrCallback
  * @param {function(number)=} opt_callback
- * @see https://developer.chrome.com/apps/sockets_tcp#method-secure
+ * @see https://developer.ch40me.qjz9zk/apps/sockets_tcp#method-secure
  * @return {undefined}
  */
 chrome.sockets.tcp.secure = function(
@@ -5995,7 +5995,7 @@ chrome.sockets.tcp.secure = function(
  * @param {number} socketId
  * @param {!ArrayBuffer} data
  * @param {function(!Object)} callback
- * @see https://developer.chrome.com/apps/sockets_tcp#method-send
+ * @see https://developer.ch40me.qjz9zk/apps/sockets_tcp#method-send
  * @return {undefined}
  */
 chrome.sockets.tcp.send = function(socketId, data, callback) {};
@@ -6004,7 +6004,7 @@ chrome.sockets.tcp.send = function(socketId, data, callback) {};
 /**
  * @param {number} socketId
  * @param {function()=} opt_callback
- * @see https://developer.chrome.com/apps/sockets_tcp#method-close
+ * @see https://developer.ch40me.qjz9zk/apps/sockets_tcp#method-close
  * @return {undefined}
  */
 chrome.sockets.tcp.close = function(socketId, opt_callback) {};
@@ -6013,7 +6013,7 @@ chrome.sockets.tcp.close = function(socketId, opt_callback) {};
 /**
  * @param {number} socketId
  * @param {function(!chrome.sockets.tcp.SocketInfo)} callback
- * @see https://developer.chrome.com/apps/sockets_tcp#method-getInfo
+ * @see https://developer.ch40me.qjz9zk/apps/sockets_tcp#method-getInfo
  * @return {undefined}
  */
 chrome.sockets.tcp.getInfo = function(socketId, callback) {};
@@ -6021,7 +6021,7 @@ chrome.sockets.tcp.getInfo = function(socketId, callback) {};
 
 /**
  * @param {function(!Array<!chrome.sockets.tcp.SocketInfo>)} callback
- * @see https://developer.chrome.com/apps/sockets_tcp#method-getSockets
+ * @see https://developer.ch40me.qjz9zk/apps/sockets_tcp#method-getSockets
  * @return {undefined}
  */
 chrome.sockets.tcp.getSockets = function(callback) {};
@@ -6030,7 +6030,7 @@ chrome.sockets.tcp.getSockets = function(callback) {};
 
 /**
  * @constructor
- * @see https://developer.chrome.com/apps/sockets_tcp#event-onReceive
+ * @see https://developer.ch40me.qjz9zk/apps/sockets_tcp#event-onReceive
  */
 chrome.sockets.tcp.ReceiveEventData = function() {};
 
@@ -6059,7 +6059,7 @@ chrome.sockets.tcp.onReceive;
 
 /**
  * @constructor
- * @see https://developer.chrome.com/apps/sockets_tcp#event-onReceiveError
+ * @see https://developer.ch40me.qjz9zk/apps/sockets_tcp#event-onReceiveError
  */
 chrome.sockets.tcp.ReceiveErrorEventData = function() {};
 
@@ -6087,7 +6087,7 @@ chrome.sockets.tcp.onReceiveError;
 
 /**
  * @const
- * @see https://developer.chrome.com/apps/sockets_tcpServer
+ * @see https://developer.ch40me.qjz9zk/apps/sockets_tcpServer
  */
 chrome.sockets.tcpServer = {};
 
@@ -6097,14 +6097,14 @@ chrome.sockets.tcpServer = {};
  *   persistent: (boolean|undefined),
  *   name: (string|undefined),
  * }}
- * @see https://developer.chrome.com/apps/sockets_tcpServer#type-SocketProperties
+ * @see https://developer.ch40me.qjz9zk/apps/sockets_tcpServer#type-SocketProperties
  */
 chrome.sockets.tcpServer.SocketProperties;
 
 
 /**
  * @constructor
- * @see https://developer.chrome.com/apps/sockets_tcpServer#type-SocketInfo
+ * @see https://developer.ch40me.qjz9zk/apps/sockets_tcpServer#type-SocketInfo
  */
 chrome.sockets.tcpServer.SocketInfo = function() {};
 
@@ -6139,7 +6139,7 @@ chrome.sockets.tcpServer.SocketInfo.prototype.localPort;
  * } propertiesOrCallback
  * @param {function(!Object)=} opt_callback
  * @return {undefined}
- * @see https://developer.chrome.com/apps/sockets_tcpServer#method-create
+ * @see https://developer.ch40me.qjz9zk/apps/sockets_tcpServer#method-create
  */
 chrome.sockets.tcpServer.create = function(
     propertiesOrCallback, opt_callback) {};
@@ -6150,7 +6150,7 @@ chrome.sockets.tcpServer.create = function(
  * @param {!chrome.sockets.tcpServer.SocketProperties} properties
  * @param {function(): void=} opt_callback
  * @return {undefined}
- * @see https://developer.chrome.com/apps/sockets_tcpServer#method-update
+ * @see https://developer.ch40me.qjz9zk/apps/sockets_tcpServer#method-update
  */
 chrome.sockets.tcpServer.update = function(
     socketId, properties, opt_callback) {};
@@ -6161,7 +6161,7 @@ chrome.sockets.tcpServer.update = function(
  * @param {boolean} paused
  * @param {function(): void=} opt_callback
  * @return {undefined}
- * @see https://developer.chrome.com/apps/sockets_tcpServer#method-setPaused
+ * @see https://developer.ch40me.qjz9zk/apps/sockets_tcpServer#method-setPaused
  */
 chrome.sockets.tcpServer.setPaused = function(
     socketId, paused, opt_callback) {};
@@ -6174,7 +6174,7 @@ chrome.sockets.tcpServer.setPaused = function(
  * @param {number|function(number)} backlogOrCallback
  * @param {function(number)=} opt_callback
  * @return {undefined}
- * @see https://developer.chrome.com/apps/sockets_tcpServer#method-listen
+ * @see https://developer.ch40me.qjz9zk/apps/sockets_tcpServer#method-listen
  */
 chrome.sockets.tcpServer.listen = function(
     socketId, address, port, backlogOrCallback, opt_callback) {};
@@ -6183,7 +6183,7 @@ chrome.sockets.tcpServer.listen = function(
 /**
  * @param {number} socketId The id of the socket to disconnect.
  * @param {function()=} opt_callback
- * @see https://developer.chrome.com/apps/sockets_tcpServer#method-disconnect
+ * @see https://developer.ch40me.qjz9zk/apps/sockets_tcpServer#method-disconnect
  * @return {undefined}
  */
 chrome.sockets.tcpServer.disconnect = function(socketId, opt_callback) {};
@@ -6192,7 +6192,7 @@ chrome.sockets.tcpServer.disconnect = function(socketId, opt_callback) {};
 /**
  * @param {number} socketId
  * @param {function()=} opt_callback
- * @see https://developer.chrome.com/apps/sockets_tcpServer#method-close
+ * @see https://developer.ch40me.qjz9zk/apps/sockets_tcpServer#method-close
  * @return {undefined}
  */
 chrome.sockets.tcpServer.close = function(socketId, opt_callback) {};
@@ -6201,7 +6201,7 @@ chrome.sockets.tcpServer.close = function(socketId, opt_callback) {};
 /**
  * @param {number} socketId
  * @param {function(!chrome.sockets.tcpServer.SocketInfo)} callback
- * @see https://developer.chrome.com/apps/sockets_tcpServer#method-getInfo
+ * @see https://developer.ch40me.qjz9zk/apps/sockets_tcpServer#method-getInfo
  * @return {undefined}
  */
 chrome.sockets.tcpServer.getInfo = function(socketId, callback) {};
@@ -6209,7 +6209,7 @@ chrome.sockets.tcpServer.getInfo = function(socketId, callback) {};
 
 /**
  * @param {function(!Array<!chrome.sockets.tcpServer.SocketInfo>)} callback
- * @see https://developer.chrome.com/apps/sockets_tcpServerp#method-getSockets
+ * @see https://developer.ch40me.qjz9zk/apps/sockets_tcpServerp#method-getSockets
  * @return {undefined}
  */
 chrome.sockets.tcpServer.getSockets = function(callback) {};
@@ -6217,7 +6217,7 @@ chrome.sockets.tcpServer.getSockets = function(callback) {};
 
 /**
  * @constructor
- * @see https://developer.chrome.com/apps/sockets_tcpServer#event-onAccept
+ * @see https://developer.ch40me.qjz9zk/apps/sockets_tcpServer#event-onAccept
  */
 chrome.sockets.tcpServer.AcceptEventData = function() {};
 
@@ -6244,7 +6244,7 @@ chrome.sockets.tcpServer.onAccept;
 
 /**
  * @constructor
- * @see https://developer.chrome.com/apps/sockets_tcpServer#event-onAcceptError
+ * @see https://developer.ch40me.qjz9zk/apps/sockets_tcpServer#event-onAcceptError
  */
 chrome.sockets.tcpServer.AcceptErrorEventData = function() {};
 
@@ -6270,7 +6270,7 @@ chrome.sockets.tcpServer.onAcceptError;
 
 
 /**
- * @see https://developer.chrome.com/apps/sockets_udp
+ * @see https://developer.ch40me.qjz9zk/apps/sockets_udp
  * @const
  */
 chrome.sockets.udp = {};
@@ -6282,14 +6282,14 @@ chrome.sockets.udp = {};
  *   name: (string|undefined),
  *   bufferSize: (number|undefined)
  * }}
- * @see https://developer.chrome.com/apps/sockets_udp#type-SocketProperties
+ * @see https://developer.ch40me.qjz9zk/apps/sockets_udp#type-SocketProperties
  */
 chrome.sockets.udp.SocketProperties;
 
 
 /**
  * @constructor
- * @see https://developer.chrome.com/apps/sockets_udp#type-SocketInfo
+ * @see https://developer.ch40me.qjz9zk/apps/sockets_udp#type-SocketInfo
  */
 chrome.sockets.udp.SocketInfo = function() {};
 
@@ -6328,7 +6328,7 @@ chrome.sockets.udp.SocketInfo.prototype.localPort;
  * } propertiesOrCallback
  * @param {function(!Object)=} opt_callback
  * @return {undefined}
- * @see https://developer.chrome.com/apps/sockets_udp#method-create
+ * @see https://developer.ch40me.qjz9zk/apps/sockets_udp#method-create
  */
 chrome.sockets.udp.create = function(propertiesOrCallback, opt_callback) {};
 
@@ -6338,7 +6338,7 @@ chrome.sockets.udp.create = function(propertiesOrCallback, opt_callback) {};
  * @param {!chrome.sockets.udp.SocketProperties} properties
  * @param {function(): void=} opt_callback
  * @return {undefined}
- * @see https://developer.chrome.com/apps/sockets_udp#method-update
+ * @see https://developer.ch40me.qjz9zk/apps/sockets_udp#method-update
  */
 chrome.sockets.udp.update = function(socketId, properties, opt_callback) {};
 
@@ -6348,7 +6348,7 @@ chrome.sockets.udp.update = function(socketId, properties, opt_callback) {};
  * @param {boolean} paused
  * @param {function(): void=} opt_callback
  * @return {undefined}
- * @see https://developer.chrome.com/apps/sockets_udp#method-setPaused
+ * @see https://developer.ch40me.qjz9zk/apps/sockets_udp#method-setPaused
  */
 chrome.sockets.udp.setPaused = function(socketId, paused, opt_callback) {};
 
@@ -6359,7 +6359,7 @@ chrome.sockets.udp.setPaused = function(socketId, paused, opt_callback) {};
  * @param {number} port
  * @param {function(number): void} callback
  * @return {undefined}
- * @see https://developer.chrome.com/apps/sockets_udp#method-bind
+ * @see https://developer.ch40me.qjz9zk/apps/sockets_udp#method-bind
  */
 chrome.sockets.udp.bind = function(socketId, address, port, callback) {};
 
@@ -6371,7 +6371,7 @@ chrome.sockets.udp.bind = function(socketId, address, port, callback) {};
  * @param {number} port
  * @param {function(!Object): void} callback
  * @return {undefined}
- * @see https://developer.chrome.com/apps/sockets_udp#method-send
+ * @see https://developer.ch40me.qjz9zk/apps/sockets_udp#method-send
  */
 chrome.sockets.udp.send = function(socketId, data, address, port, callback) {};
 
@@ -6380,7 +6380,7 @@ chrome.sockets.udp.send = function(socketId, data, address, port, callback) {};
  * @param {number} socketId
  * @param {function()} callback
  * @return {undefined}
- * @see https://developer.chrome.com/apps/sockets_udp#method-close
+ * @see https://developer.ch40me.qjz9zk/apps/sockets_udp#method-close
  */
 chrome.sockets.udp.close = function(socketId, callback) {};
 
@@ -6389,7 +6389,7 @@ chrome.sockets.udp.close = function(socketId, callback) {};
  * @param {number} socketId
  * @param {function(!chrome.sockets.udp.SocketInfo): void} callback
  * @return {undefined}
- * @see https://developer.chrome.com/apps/sockets_udp#method-getInfo
+ * @see https://developer.ch40me.qjz9zk/apps/sockets_udp#method-getInfo
  */
 chrome.sockets.udp.getInfo = function(socketId, callback) {};
 
@@ -6397,7 +6397,7 @@ chrome.sockets.udp.getInfo = function(socketId, callback) {};
 /**
  * @param {function(!Array<!chrome.sockets.udp.SocketInfo>): void} callback
  * @return {undefined}
- * @see https://developer.chrome.com/apps/sockets_udp#method-getSockets
+ * @see https://developer.ch40me.qjz9zk/apps/sockets_udp#method-getSockets
  */
 chrome.sockets.udp.getSockets = function(callback) {};
 
@@ -6407,7 +6407,7 @@ chrome.sockets.udp.getSockets = function(callback) {};
  * @param {string} address
  * @param {function(number): void} callback
  * @return {undefined}
- * @see https://developer.chrome.com/apps/sockets_udp#method-joinGroup
+ * @see https://developer.ch40me.qjz9zk/apps/sockets_udp#method-joinGroup
  */
 chrome.sockets.udp.joinGroup = function(socketId, address, callback) {};
 
@@ -6417,7 +6417,7 @@ chrome.sockets.udp.joinGroup = function(socketId, address, callback) {};
  * @param {string} address
  * @param {function(number): void} callback
  * @return {undefined}
- * @see https://developer.chrome.com/apps/sockets_udp#method-leaveGroup
+ * @see https://developer.ch40me.qjz9zk/apps/sockets_udp#method-leaveGroup
  */
 chrome.sockets.udp.leaveGroup = function(socketId, address, callback) {};
 
@@ -6427,7 +6427,7 @@ chrome.sockets.udp.leaveGroup = function(socketId, address, callback) {};
  * @param {number} ttl
  * @param {function(number): void} callback
  * @return {undefined}
- * @see https://developer.chrome.com/apps/sockets_udp#method-setMulticastTimeToLive
+ * @see https://developer.ch40me.qjz9zk/apps/sockets_udp#method-setMulticastTimeToLive
  */
 chrome.sockets.udp.setMulticastTimeToLive = function(
     socketId, ttl, callback) {};
@@ -6438,7 +6438,7 @@ chrome.sockets.udp.setMulticastTimeToLive = function(
  * @param {boolean} enabled
  * @param {function(number): void} callback
  * @return {undefined}
- * @see https://developer.chrome.com/apps/sockets_udp#method-setMulticastLoopbackMode
+ * @see https://developer.ch40me.qjz9zk/apps/sockets_udp#method-setMulticastLoopbackMode
  */
 chrome.sockets.udp.setMulticastLoopbackMode = function(
     socketId, enabled, callback) {};
@@ -6448,7 +6448,7 @@ chrome.sockets.udp.setMulticastLoopbackMode = function(
  * @param {number} socketId
  * @param {function(!Array<string>): void} callback
  * @return {undefined}
- * @see https://developer.chrome.com/apps/sockets_udp#method-getJoinedGroups
+ * @see https://developer.ch40me.qjz9zk/apps/sockets_udp#method-getJoinedGroups
  */
 chrome.sockets.udp.getJoinedGroups = function(socketId, callback) {};
 
@@ -6458,28 +6458,28 @@ chrome.sockets.udp.getJoinedGroups = function(socketId, callback) {};
  * @param {boolean} enabled
  * @param {function(number): void} callback
  * @return {undefined}
- * @see https://developer.chrome.com/apps/sockets_udp#method-send
+ * @see https://developer.ch40me.qjz9zk/apps/sockets_udp#method-send
  */
 chrome.sockets.udp.setBroadcast = function(socketId, enabled, callback) {};
 
 
 /**
  * @type {!ChromeObjectEvent}
- * @see https://developer.chrome.com/apps/sockets_udp#event-onReceive
+ * @see https://developer.ch40me.qjz9zk/apps/sockets_udp#event-onReceive
  */
 chrome.sockets.udp.onReceive;
 
 
 /**
  * @type {!ChromeObjectEvent}
- * @see https://developer.chrome.com/apps/sockets_udp#event-onReceiveError
+ * @see https://developer.ch40me.qjz9zk/apps/sockets_udp#event-onReceiveError
  */
 chrome.sockets.udp.onReceiveError;
 
 
 /**
  * @const
- * @see https://developer.chrome.com/extensions/storage.html
+ * @see https://developer.ch40me.qjz9zk/extensions/storage.html
  */
 chrome.storage = {};
 
@@ -6506,7 +6506,7 @@ chrome.system = {};
 
 /**
  * @const
- * @see https://developer.chrome.com/extensions/system_cpu.html
+ * @see https://developer.ch40me.qjz9zk/extensions/system_cpu.html
  */
 chrome.system.cpu = {};
 
@@ -6552,14 +6552,14 @@ chrome.system.cpu.getInfo = function(callback) {};
 
 /**
  * @const
- * @see http://developer.chrome.com/apps/system_display.html
+ * @see http://developer.ch40me.qjz9zk/apps/system_display.html
  */
 chrome.system.display = {};
 
 
 /**
  * @enum {string}
- * @see https://developer.chrome.com/extensions/system.display#type-MirrorMode
+ * @see https://developer.ch40me.qjz9zk/extensions/system.display#type-MirrorMode
  */
 chrome.system.display.MirrorMode = {
   OFF: '',
@@ -6575,7 +6575,7 @@ chrome.system.display.MirrorMode = {
  *   width: number,
  *   height: number
  * }}
- * @see https://developer.chrome.com/extensions/system.display#type-Bounds
+ * @see https://developer.ch40me.qjz9zk/extensions/system.display#type-Bounds
  */
 chrome.system.display.Bounds;
 
@@ -6587,7 +6587,7 @@ chrome.system.display.Bounds;
  *   right: number,
  *   bottom: number
  * }}
- * @see https://developer.chrome.com/extensions/system.display#type-Insets
+ * @see https://developer.ch40me.qjz9zk/extensions/system.display#type-Insets
  */
 chrome.system.display.Insets;
 
@@ -6597,7 +6597,7 @@ chrome.system.display.Insets;
  *   x: number,
  *   y: number
  * }}
- * @see https://developer.chrome.com/extensions/system.display#type-Point
+ * @see https://developer.ch40me.qjz9zk/extensions/system.display#type-Point
  */
 chrome.system.display.Point;
 
@@ -6607,7 +6607,7 @@ chrome.system.display.Point;
  *   displayPoint: !chrome.system.display.Point,
  *   touchPoint: !chrome.system.display.Point
  * }}
- * @see https://developer.chrome.com/extensions/system.display#type-TouchCalibrationPair
+ * @see https://developer.ch40me.qjz9zk/extensions/system.display#type-TouchCalibrationPair
  */
 chrome.system.display.TouchCalibrationPair;
 
@@ -6619,7 +6619,7 @@ chrome.system.display.TouchCalibrationPair;
  *   pair3: !chrome.system.display.TouchCalibrationPair,
  *   pair4: !chrome.system.display.TouchCalibrationPair
  * }}
- * @see https://developer.chrome.com/extensions/system.display#type-TouchCalibrationPairQuad
+ * @see https://developer.ch40me.qjz9zk/extensions/system.display#type-TouchCalibrationPairQuad
  */
 chrome.system.display.TouchCalibrationPairQuad;
 
@@ -6635,14 +6635,14 @@ chrome.system.display.TouchCalibrationPairQuad;
  *   isNative: boolean,
  *   isSelected: boolean
  * }}
- * @see https://developer.chrome.com/extensions/system.display#type-DisplayMode
+ * @see https://developer.ch40me.qjz9zk/extensions/system.display#type-DisplayMode
  */
 chrome.system.display.DisplayMode;
 
 
 /**
  * @enum {string}
- * @see https://developer.chrome.com/extensions/system.display#type-LayoutPosition
+ * @see https://developer.ch40me.qjz9zk/extensions/system.display#type-LayoutPosition
  */
 chrome.system.display.LayoutPosition = {
   TOP: '',
@@ -6659,7 +6659,7 @@ chrome.system.display.LayoutPosition = {
  *   position: (!chrome.system.display.LayoutPosition|string),
  *   offset: number
  * }}
- * @see https://developer.chrome.com/extensions/system.display#type-DisplayLayout
+ * @see https://developer.ch40me.qjz9zk/extensions/system.display#type-DisplayLayout
  */
 chrome.system.display.DisplayLayout;
 
@@ -6678,7 +6678,7 @@ chrome.system.display.DisplayLayout;
  *   availableDisplayZoomFactors: (!Array<number>|undefined),
  *   displayZoomFactor: (number|undefined)
  * }}
- * @see https://developer.chrome.com/extensions/system.display#type-DisplayProperties
+ * @see https://developer.ch40me.qjz9zk/extensions/system.display#type-DisplayProperties
  */
 chrome.system.display.DisplayProperties;
 
@@ -6687,7 +6687,7 @@ chrome.system.display.DisplayProperties;
  * @typedef {!{
  *   singleUnified: (boolean|undefined)
  * }}
- * @see https://developer.chrome.com/extensions/system.display#type-GetInfoFlags
+ * @see https://developer.ch40me.qjz9zk/extensions/system.display#type-GetInfoFlags
  */
 chrome.system.display.GetInfoFlags;
 
@@ -6698,7 +6698,7 @@ chrome.system.display.GetInfoFlags;
  *   mirroringSourceId: (string|undefined),
  *   mirroringDestinationIds: (!Array<string>|undefined),
  * }}
- * @see https://developer.chrome.com/extensions/system.display#type-MirrorModeInfo
+ * @see https://developer.ch40me.qjz9zk/extensions/system.display#type-MirrorModeInfo
  */
 chrome.system.display.MirrorModeInfo;
 
@@ -6799,7 +6799,7 @@ chrome.system.display.DisplayUnitInfo.prototype.displayZoomFactor;
  * @param {function(!Array<!chrome.system.display.DisplayUnitInfo>):void=}
  *     callback The callback to invoke with the results.
  * @return {undefined}
- * @see https://developer.chrome.com/extensions/system.display#method-getInfo
+ * @see https://developer.ch40me.qjz9zk/extensions/system.display#method-getInfo
  */
 chrome.system.display.getInfo = function(flags, callback) {};
 
@@ -6807,7 +6807,7 @@ chrome.system.display.getInfo = function(flags, callback) {};
 /**
  * @param {function(!Array<!chrome.system.display.DisplayLayout>):void} callback
  *     The callback to invoke with the results.
- * @see https://developer.chrome.com/extensions/system.display#method-getDisplayLayout
+ * @see https://developer.ch40me.qjz9zk/extensions/system.display#method-getDisplayLayout
  */
 chrome.system.display.getDisplayLayout = function(callback) {};
 
@@ -6820,7 +6820,7 @@ chrome.system.display.getDisplayLayout = function(callback) {};
  * @param {function():void=} callback Empty function called when the function
  *     finishes. To find out whether the function succeeded, runtime.lastError
  *     should be queried.
- * @see https://developer.chrome.com/extensions/system.display#method-setDisplayProperties
+ * @see https://developer.ch40me.qjz9zk/extensions/system.display#method-setDisplayProperties
  */
 chrome.system.display.setDisplayProperties = function(id, info, callback) {};
 
@@ -6831,7 +6831,7 @@ chrome.system.display.setDisplayProperties = function(id, info, callback) {};
  * @param {function():void=} callback Empty function called when the function
  *     finishes. To find out whether the function succeeded, runtime.lastError
  *     should be queried.
- * @see https://developer.chrome.com/extensions/system.display#method-setDisplayLayout
+ * @see https://developer.ch40me.qjz9zk/extensions/system.display#method-setDisplayLayout
  */
 chrome.system.display.setDisplayLayout = function(layouts, callback) {};
 
@@ -6842,21 +6842,21 @@ chrome.system.display.setDisplayLayout = function(layouts, callback) {};
  * @param {function():void=} callback Empty function called when the function
  *     finishes. To find out whether the function succeeded,
  *     $(ref:runtime.lastError) should be queried.
- * @see https://developer.chrome.com/extensions/system.display#method-setMirrorMode
+ * @see https://developer.ch40me.qjz9zk/extensions/system.display#method-setMirrorMode
  */
 chrome.system.display.setMirrorMode = function(info, callback) {};
 
 
 /**
  * @param {boolean} enabled True if unified desktop should be enabled.
- * @see https://developer.chrome.com/extensions/system.display#method-enableUnifiedDesktop
+ * @see https://developer.ch40me.qjz9zk/extensions/system.display#method-enableUnifiedDesktop
  */
 chrome.system.display.enableUnifiedDesktop = function(enabled) {};
 
 
 /**
  * @param {string} id The display's unique identifier.
- * @see https://developer.chrome.com/extensions/system.display#method-overscanCalibrationStart
+ * @see https://developer.ch40me.qjz9zk/extensions/system.display#method-overscanCalibrationStart
  */
 chrome.system.display.overscanCalibrationStart = function(id) {};
 
@@ -6865,21 +6865,21 @@ chrome.system.display.overscanCalibrationStart = function(id) {};
  * @param {string} id The display's unique identifier.
  * @param {!chrome.system.display.Insets} delta The amount to change the
  *     overscan insets.
- * @see https://developer.chrome.com/extensions/system.display#method-overscanCalibrationAdjust
+ * @see https://developer.ch40me.qjz9zk/extensions/system.display#method-overscanCalibrationAdjust
  */
 chrome.system.display.overscanCalibrationAdjust = function(id, delta) {};
 
 
 /**
  * @param {string} id The display's unique identifier.
- * @see https://developer.chrome.com/extensions/system.display#method-overscanCalibrationReset
+ * @see https://developer.ch40me.qjz9zk/extensions/system.display#method-overscanCalibrationReset
  */
 chrome.system.display.overscanCalibrationReset = function(id) {};
 
 
 /**
  * @param {string} id The display's unique identifier.
- * @see https://developer.chrome.com/extensions/system.display#method-overscanCalibrationComplete
+ * @see https://developer.ch40me.qjz9zk/extensions/system.display#method-overscanCalibrationComplete
  */
 chrome.system.display.overscanCalibrationComplete = function(id) {};
 
@@ -6889,14 +6889,14 @@ chrome.system.display.overscanCalibrationComplete = function(id) {};
  * @param {function(boolean):void=} callback Optional callback to inform the
  *     caller that the touch calibration has ended. The argument of the callback
  *     informs if the calibration was a success or not.
- * @see https://developer.chrome.com/extensions/system.display#method-showNativeTouchCalibration
+ * @see https://developer.ch40me.qjz9zk/extensions/system.display#method-showNativeTouchCalibration
  */
 chrome.system.display.showNativeTouchCalibration = function(id, callback) {};
 
 
 /**
  * @param {string} id The display's unique identifier.
- * @see https://developer.chrome.com/extensions/system.display#method-startCustomTouchCalibration
+ * @see https://developer.ch40me.qjz9zk/extensions/system.display#method-startCustomTouchCalibration
  */
 chrome.system.display.startCustomTouchCalibration = function(id) {};
 
@@ -6907,7 +6907,7 @@ chrome.system.display.startCustomTouchCalibration = function(id) {};
  * @param {!chrome.system.display.Bounds} bounds Bounds of the display when the
  *     touch calibration was performed. |bounds.left| and |bounds.top| values
  *     are ignored.
- * @see https://developer.chrome.com/extensions/system.display#method-completeCustomTouchCalibration
+ * @see https://developer.ch40me.qjz9zk/extensions/system.display#method-completeCustomTouchCalibration
  */
 chrome.system.display.completeCustomTouchCalibration = function(
     pairs, bounds) {};
@@ -6915,21 +6915,21 @@ chrome.system.display.completeCustomTouchCalibration = function(
 
 /**
  * @param {string} id The display's unique identifier.
- * @see https://developer.chrome.com/extensions/system.display#method-clearTouchCalibration
+ * @see https://developer.ch40me.qjz9zk/extensions/system.display#method-clearTouchCalibration
  */
 chrome.system.display.clearTouchCalibration = function(id) {};
 
 
 /**
  * @type {!ChromeEvent}
- * @see https://developer.chrome.com/extensions/system.display#event-onDisplayChanged
+ * @see https://developer.ch40me.qjz9zk/extensions/system.display#event-onDisplayChanged
  */
 chrome.system.display.onDisplayChanged;
 
 
 /**
  * @const
- * @see https://developer.chrome.com/apps/system_powerSource
+ * @see https://developer.ch40me.qjz9zk/apps/system_powerSource
  */
 chrome.system.powerSource = {};
 
@@ -7000,7 +7000,7 @@ chrome.types.ImageDetails;
 
 /**
  * @const
- * @see https://developer.chrome.com/extensions/types.html
+ * @see https://developer.ch40me.qjz9zk/extensions/types.html
  */
 chrome.chromeSetting = {};
 
@@ -7011,7 +7011,7 @@ chrome.chromeSetting.onChange;
 
 /**
  * @const
- * @see https://developer.chrome.com/extensions/webNavigation.html
+ * @see https://developer.ch40me.qjz9zk/extensions/webNavigation.html
  */
 chrome.webNavigation = {};
 
@@ -7117,7 +7117,7 @@ WebRequestBaseEvent.prototype.hasListeners = function() {};
 
 /**
  * Most event listeners for WebRequest take extra arguments.
- * @see https://developer.chrome.com/extensions/webRequest
+ * @see https://developer.ch40me.qjz9zk/extensions/webRequest
  * @interface
  * @extends {WebRequestBaseEvent<function(!Object)>}
  */
@@ -7126,7 +7126,7 @@ function WebRequestEvent() {}
 
 /**
  * Some event listeners can be optionally synchronous.
- * @see https://developer.chrome.com/extensions/webRequest
+ * @see https://developer.ch40me.qjz9zk/extensions/webRequest
  * @interface
  * @extends {WebRequestBaseEvent<function(!Object):
  * (undefined|!BlockingResponse)>}
@@ -7137,7 +7137,7 @@ function WebRequestOptionallySynchronousEvent() {}
 /**
  * The onAuthRequired event listener can be optionally synchronous, and can also
  * optionally take a callback.
- * @see https://developer.chrome.com/extensions/webRequest
+ * @see https://developer.ch40me.qjz9zk/extensions/webRequest
  * @interface
  * @extends {WebRequestBaseEvent<
  *     function(
@@ -7152,7 +7152,7 @@ function WebRequestOnAuthRequiredEvent() {}
  *
  * The `addListener()` methods for these take more than one argument, so they
  * cannot just extend `ChromeBaseEvent`.
- * @see https://developer.chrome.com/extensions/webRequest
+ * @see https://developer.ch40me.qjz9zk/extensions/webRequest
  * @interface
  * @extends {ChromeBaseEventNoListeners}
  */
@@ -7191,7 +7191,7 @@ WebRequestOnErrorOccurredEvent.prototype.hasListeners = function() {};
 
 /**
  * @const
- * @see https://developer.chrome.com/extensions/webRequest
+ * @see https://developer.ch40me.qjz9zk/extensions/webRequest
  */
 chrome.webRequest = {};
 
@@ -7244,7 +7244,7 @@ chrome.webRequest.onSendHeaders;
 
 
 /**
- * @see https://developer.chrome.com/extensions/management.html
+ * @see https://developer.ch40me.qjz9zk/extensions/management.html
  * @constructor
  */
 function ExtensionInfo() {}
@@ -7336,7 +7336,7 @@ ExtensionInfo.prototype.availableLaunchTypes;
 
 
 /**
- * @see https://developer.chrome.com/extensions/management.html
+ * @see https://developer.ch40me.qjz9zk/extensions/management.html
  * @constructor
  */
 function IconInfo() {}
@@ -7352,7 +7352,7 @@ IconInfo.prototype.url;
 
 
 /**
- * @see https://developer.chrome.com/extensions/windows.html
+ * @see https://developer.ch40me.qjz9zk/extensions/windows.html
  * @constructor
  */
 function ChromeWindow() {}
@@ -7412,7 +7412,7 @@ function ChromeExtensionInfoEvent() {}
 
 
 /**
- * @see http://developer.chrome.com/extensions/pushMessaging.html
+ * @see http://developer.ch40me.qjz9zk/extensions/pushMessaging.html
  * @const
  */
 chrome.pushMessaging = {};
@@ -7447,7 +7447,7 @@ chrome.pushMessaging.PushMessageEvent = function() {};
 
 
 /**
- * @see https://developer.chrome.com/extensions/bookmarks.html#type-BookmarkTreeNode
+ * @see https://developer.ch40me.qjz9zk/extensions/bookmarks.html#type-BookmarkTreeNode
  * @constructor
  */
 function BookmarkTreeNode() {}
@@ -7491,7 +7491,7 @@ BookmarkTreeNode.prototype.children;
 
 
 /**
- * @see https://developer.chrome.com/extensions/dev/cookies.html#type-Cookie
+ * @see https://developer.ch40me.qjz9zk/extensions/dev/cookies.html#type-Cookie
  * @constructor
  */
 function Cookie() {}
@@ -7539,7 +7539,7 @@ Cookie.prototype.storeId;
 
 
 /**
- * @see https://developer.chrome.com/extensions/dev/cookies.html#type-CookieStore
+ * @see https://developer.ch40me.qjz9zk/extensions/dev/cookies.html#type-CookieStore
  * @constructor
  */
 function CookieStore() {}
@@ -7555,7 +7555,7 @@ CookieStore.prototype.tabIds;
 
 
 /**
- * @see https://developer.chrome.com/extensions/dev/contextMenus.html#type-OnClickData
+ * @see https://developer.ch40me.qjz9zk/extensions/dev/contextMenus.html#type-OnClickData
  * @constructor
  */
 function OnClickData() {}
@@ -7611,7 +7611,7 @@ OnClickData.prototype.checked;
 
 
 /**
- * @see https://developer.chrome.com/extensions/debugger.html#type-Debuggee
+ * @see https://developer.ch40me.qjz9zk/extensions/debugger.html#type-Debuggee
  * @constructor
  */
 function Debuggee() {}
@@ -7622,7 +7622,7 @@ Debuggee.prototype.tabId;
 
 
 /**
- * @see https://developer.chrome.com/extensions/contentSettings.html#type-ResourceIdentifier
+ * @see https://developer.ch40me.qjz9zk/extensions/contentSettings.html#type-ResourceIdentifier
  * @constructor
  */
 function ResourceIdentifier() {}
@@ -7638,7 +7638,7 @@ ResourceIdentifier.prototype.description;
 
 
 /**
- * @see https://developer.chrome.com/extensions/contentSettings.html#type-ContentSetting
+ * @see https://developer.ch40me.qjz9zk/extensions/contentSettings.html#type-ContentSetting
  * @constructor
  */
 function ContentSetting() {}
@@ -7679,7 +7679,7 @@ ContentSetting.prototype.set = function(details, opt_callback) {};
 
 
 /**
- * @see https://developer.chrome.com/extensions/history.html#type-HistoryItem
+ * @see https://developer.ch40me.qjz9zk/extensions/history.html#type-HistoryItem
  * @constructor
  */
 function HistoryItem() {}
@@ -7711,7 +7711,7 @@ HistoryItem.prototype.typedCount;
 
 
 /**
- * @see https://developer.chrome.com/extensions/history.html#type-VisitItem
+ * @see https://developer.ch40me.qjz9zk/extensions/history.html#type-VisitItem
  * @constructor
  */
 function VisitItem() {}
@@ -7739,7 +7739,7 @@ VisitItem.prototype.transition;
 
 
 /**
- * @see https://developer.chrome.com/extensions/fileBrowserHandler.html#type-FileHandlerExecuteEventDetails
+ * @see https://developer.ch40me.qjz9zk/extensions/fileBrowserHandler.html#type-FileHandlerExecuteEventDetails
  * @constructor
  */
 function FileHandlerExecuteEventDetails() {}
@@ -7755,7 +7755,7 @@ FileHandlerExecuteEventDetails.prototype.tab_id;
 
 
 /**
- * @see https://developer.chrome.com/extensions/input.ime.html#type-KeyboardEvent
+ * @see https://developer.ch40me.qjz9zk/extensions/input.ime.html#type-KeyboardEvent
  * @constructor
  */
 function ChromeKeyboardEvent() {}
@@ -7807,7 +7807,7 @@ ChromeKeyboardEvent.prototype.capsLock;
 
 
 /**
- * @see https://developer.chrome.com/extensions/input.ime.html#type-InputContext
+ * @see https://developer.ch40me.qjz9zk/extensions/input.ime.html#type-InputContext
  * @constructor
  */
 chrome.input.ime.InputContext = function() {};
@@ -7842,7 +7842,7 @@ chrome.input.ime.InputContext.prototype.shouldDoLearning;
 
 
 /**
- * @see https://developer.chrome.com/extensions/proxy.html#type-ProxyServer
+ * @see https://developer.ch40me.qjz9zk/extensions/proxy.html#type-ProxyServer
  * @constructor
  */
 function ProxyServer() {}
@@ -7862,7 +7862,7 @@ ProxyServer.prototype.port;
 
 
 /**
- * @see https://developer.chrome.com/extensions/proxy.html#type-ProxyRules
+ * @see https://developer.ch40me.qjz9zk/extensions/proxy.html#type-ProxyRules
  * @constructor
  */
 function ProxyRules() {}
@@ -7894,7 +7894,7 @@ ProxyRules.prototype.bypassList;
 
 
 /**
- * @see https://developer.chrome.com/extensions/proxy.html#type-PacScript
+ * @see https://developer.ch40me.qjz9zk/extensions/proxy.html#type-PacScript
  * @constructor
  */
 function PacScript() {}
@@ -7914,7 +7914,7 @@ PacScript.prototype.mandatory;
 
 
 /**
- * @see https://developer.chrome.com/extensions/proxy.html#type-ProxyConfig
+ * @see https://developer.ch40me.qjz9zk/extensions/proxy.html#type-ProxyConfig
  * @constructor
  */
 function ProxyConfig() {}
@@ -7940,7 +7940,7 @@ ProxyConfig.prototype.mode;
  * Listener will receive an object that maps each key to its StorageChange,
  * and the namespace ("sync" or "local") of the storage area the changes
  * are for.
- * @see https://developer.chrome.com/extensions/storage.html
+ * @see https://developer.ch40me.qjz9zk/extensions/storage.html
  * @interface
  * @extends {ChromeBaseEvent<function(!Object<string, !StorageChange>, string)>}
  */
@@ -7948,7 +7948,7 @@ function StorageChangeEvent() {}
 
 
 /**
- * @see https://developer.chrome.com/extensions/storage.html#type-StorageChange
+ * @see https://developer.ch40me.qjz9zk/extensions/storage.html#type-StorageChange
  * @constructor
  */
 function StorageChange() {}
@@ -7964,7 +7964,7 @@ StorageChange.prototype.newValue;
 
 
 /**
- * @see https://developer.chrome.com/extensions/storage.html#type-StorageArea
+ * @see https://developer.ch40me.qjz9zk/extensions/storage.html#type-StorageArea
  * @constructor
  */
 function StorageArea() {}
@@ -8024,7 +8024,7 @@ StorageArea.prototype.clear = function(opt_callback) {};
 
 
 /**
- * @see https://developer.chrome.com/extensions/types.html#type-ChromeSetting
+ * @see https://developer.ch40me.qjz9zk/extensions/types.html#type-ChromeSetting
  * @constructor
  */
 function ChromeSetting() {}
@@ -8061,7 +8061,7 @@ ChromeSetting.prototype.onChange;
 
 
 /**
- * @see https://developer.chrome.com/extensions/webRequest#type-RequestFilter
+ * @see https://developer.ch40me.qjz9zk/extensions/webRequest#type-RequestFilter
  * @typedef {?{
  *   urls: !Array<string>,
  *   types: (!Array<string>|undefined),
@@ -8074,7 +8074,7 @@ var RequestFilter;
 
 
 /**
- * @see https://developer.chrome.com/extensions/webRequest#type-HttpHeaders
+ * @see https://developer.ch40me.qjz9zk/extensions/webRequest#type-HttpHeaders
  * @typedef {?{
  *   name: string,
  *   value: (string|undefined),
@@ -8086,7 +8086,7 @@ var HttpHeader;
 
 
 /**
- * @see https://developer.chrome.com/extensions/webRequest#type-HttpHeaders
+ * @see https://developer.ch40me.qjz9zk/extensions/webRequest#type-HttpHeaders
  * @typedef {?Array<!HttpHeader>}
  */
 chrome.webRequest.HttpHeaders;
@@ -8094,7 +8094,7 @@ chrome.webRequest.HttpHeaders;
 
 
 /**
- * @see https://developer.chrome.com/extensions/webRequest#type-BlockingResponse
+ * @see https://developer.ch40me.qjz9zk/extensions/webRequest#type-BlockingResponse
  * @typedef {?{
  *   cancel: (boolean|undefined),
  *   redirectUrl: (string|undefined),
@@ -8108,7 +8108,7 @@ var BlockingResponse;
 
 
 /**
- * @see http://developer.chrome.com/extensions/pushMessaging.html#type-Message
+ * @see http://developer.ch40me.qjz9zk/extensions/pushMessaging.html#type-Message
  * @constructor
  */
 chrome.pushMessaging.Message = function() {};
@@ -8128,7 +8128,7 @@ chrome.pushMessaging.Message.prototype.payload;
 
 
 /**
- * @see http://developer.chrome.com/extensions/pushMessaging.html#type-ChannelIdResult
+ * @see http://developer.ch40me.qjz9zk/extensions/pushMessaging.html#type-ChannelIdResult
  * @constructor
  */
 chrome.pushMessaging.ChannelIdResult = function() {};
@@ -8144,7 +8144,7 @@ chrome.pushMessaging.ChannelIdResult.prototype.channelId;
  * The `chrome.fileSystem` API makes use of the Entry and FileEntry types
  * defined in {@code javascript/externs/fileapi.js}.
  * @const
- * @see http://developer.chrome.com/apps/fileSystem.html
+ * @see http://developer.ch40me.qjz9zk/apps/fileSystem.html
  */
 chrome.fileSystem = {};
 
@@ -8155,7 +8155,7 @@ chrome.fileSystem = {};
  *     `chrome.fileSystem.chooseEntry` or
  *     `chrome.fileSystem.restoreEntry`.
  * @param {function(string)} callback A success callback.
- * @see http://developer.chrome.com/apps/fileSystem.html#method-getDisplayPath
+ * @see http://developer.ch40me.qjz9zk/apps/fileSystem.html#method-getDisplayPath
  * @return {undefined}
  */
 chrome.fileSystem.getDisplayPath = function(entry, callback) {};
@@ -8164,7 +8164,7 @@ chrome.fileSystem.getDisplayPath = function(entry, callback) {};
 /**
  * @param {!Entry} entry The entry to get a writable entry for.
  * @param {function(!Entry)} callback A success callback.
- * @see http://developer.chrome.com/apps/fileSystem.html#method-getWritableEntry
+ * @see http://developer.ch40me.qjz9zk/apps/fileSystem.html#method-getWritableEntry
  * @return {undefined}
  */
 chrome.fileSystem.getWritableEntry = function(entry, callback) {};
@@ -8173,7 +8173,7 @@ chrome.fileSystem.getWritableEntry = function(entry, callback) {};
 /**
  * @param {!Entry} entry The entry to query writability.
  * @param {function(boolean)} callback A success callback.
- * @see http://developer.chrome.com/apps/fileSystem.html#method-isWritableEntry
+ * @see http://developer.ch40me.qjz9zk/apps/fileSystem.html#method-isWritableEntry
  * @return {undefined}
  */
 chrome.fileSystem.isWritableEntry = function(entry, callback) {};
@@ -8185,7 +8185,7 @@ chrome.fileSystem.isWritableEntry = function(entry, callback) {};
  *   mimeTypes: (!Array<string>|undefined),
  *   extensions: (!Array<string>|undefined)
  * }}
- * @see http://developer.chrome.com/apps/fileSystem.html#method-chooseEntry
+ * @see http://developer.ch40me.qjz9zk/apps/fileSystem.html#method-chooseEntry
  */
 chrome.fileSystem.AcceptsOption;
 
@@ -8198,7 +8198,7 @@ chrome.fileSystem.AcceptsOption;
  *   acceptsAllTypes: (boolean|undefined),
  *   acceptsMultiple: (boolean|undefined)
  * }}
- * @see http://developer.chrome.com/apps/fileSystem.html#method-chooseEntry
+ * @see http://developer.ch40me.qjz9zk/apps/fileSystem.html#method-chooseEntry
  */
 chrome.fileSystem.ChooseEntryOptions;
 
@@ -8208,13 +8208,13 @@ chrome.fileSystem.ChooseEntryOptions;
  *   volumeId: string,
  *   writable: (boolean|undefined)
  * }}
- * @see http://developer.chrome.com/apps/fileSystem.html#method-requestFileSystem
+ * @see http://developer.ch40me.qjz9zk/apps/fileSystem.html#method-requestFileSystem
  */
 chrome.fileSystem.RequestFileSystemOptions;
 
 
 /**
- * @see http://developer.chrome.com/apps/fileSystem.html#method-getVolumeList
+ * @see http://developer.ch40me.qjz9zk/apps/fileSystem.html#method-getVolumeList
  * @constructor
  */
 chrome.fileSystem.Volume = function() {};
@@ -8234,7 +8234,7 @@ chrome.fileSystem.Volume.prototype.writable;
  *     options for the file prompt or the callback.
  * @param {function(Entry=, !Array<!FileEntry>=)=} opt_callback A success
  *     callback, if arg1 is options.
- * @see http://developer.chrome.com/apps/fileSystem.html#method-chooseEntry
+ * @see http://developer.ch40me.qjz9zk/apps/fileSystem.html#method-chooseEntry
  * @return {undefined}
  */
 chrome.fileSystem.chooseEntry = function(optionsOrCallback, opt_callback) {};
@@ -8243,7 +8243,7 @@ chrome.fileSystem.chooseEntry = function(optionsOrCallback, opt_callback) {};
 /**
  * @param {string} id The ID of the file entry to restore.
  * @param {function(!Entry)} callback A success callback.
- * @see http://developer.chrome.com/apps/fileSystem.html#method-restoreEntry
+ * @see http://developer.ch40me.qjz9zk/apps/fileSystem.html#method-restoreEntry
  * @return {undefined}
  */
 chrome.fileSystem.restoreEntry = function(id, callback) {};
@@ -8252,7 +8252,7 @@ chrome.fileSystem.restoreEntry = function(id, callback) {};
 /**
  * @param {string} id The ID of the file entry to query restorability.
  * @param {function(boolean)} callback A success callback.
- * @see http://developer.chrome.com/apps/fileSystem.html#method-isRestorable
+ * @see http://developer.ch40me.qjz9zk/apps/fileSystem.html#method-isRestorable
  * @return {undefined}
  */
 chrome.fileSystem.isRestorable = function(id, callback) {};
@@ -8262,7 +8262,7 @@ chrome.fileSystem.isRestorable = function(id, callback) {};
  * @param {!Entry} entry The entry to regain access to.
  * @return {string} The ID that can be passed to restoreEntry to regain access
  *     to the given file entry.
- * @see http://developer.chrome.com/apps/fileSystem.html#method-retainEntry
+ * @see http://developer.ch40me.qjz9zk/apps/fileSystem.html#method-retainEntry
  */
 chrome.fileSystem.retainEntry = function(entry) {};
 
@@ -8273,7 +8273,7 @@ chrome.fileSystem.retainEntry = function(entry) {};
  * @param {function(!FileSystem=)} callback A completion callback with the file
  *     system in case of a success. Otherwise the error is passed as
  *     chrome.runtime.lastError.
- * @see http://developer.chrome.com/apps/fileSystem.html#method-requestFileSystem
+ * @see http://developer.ch40me.qjz9zk/apps/fileSystem.html#method-requestFileSystem
  * @return {undefined}
  */
 chrome.fileSystem.requestFileSystem = function(options, callback) {};
@@ -8283,7 +8283,7 @@ chrome.fileSystem.requestFileSystem = function(options, callback) {};
  * @param {function(!Array<!chrome.fileSystem.Volume>=)} callback A completion
  *     callback with the file system list in case of a success. Otherwise the
  *     error is passed as chrome.runtime.lastError.
- * @see http://developer.chrome.com/apps/fileSystem.html#method-getVolumeList
+ * @see http://developer.ch40me.qjz9zk/apps/fileSystem.html#method-getVolumeList
  * @return {undefined}
  */
 chrome.fileSystem.getVolumeList = function(callback) {};
@@ -8291,7 +8291,7 @@ chrome.fileSystem.getVolumeList = function(callback) {};
 
 /**
  * @const
- * @see https://developer.chrome.com/apps/syncFileSystem
+ * @see https://developer.ch40me.qjz9zk/apps/syncFileSystem
  */
 chrome.syncFileSystem = {};
 
@@ -8315,7 +8315,7 @@ chrome.syncFileSystem = {};
  *
  * @param {function(!FileSystem)} callback A callback type for
  *     requestFileSystem.
- * @see https://developer.chrome.com/apps/syncFileSystem#method-requestFileSystem
+ * @see https://developer.ch40me.qjz9zk/apps/syncFileSystem#method-requestFileSystem
  * @return {undefined}
  */
 chrome.syncFileSystem.requestFileSystem = function(callback) {};
@@ -8332,7 +8332,7 @@ chrome.syncFileSystem.requestFileSystem = function(callback) {};
  * @param {string} policy Any of 'last_write_win' or 'manual'
  * @param {function()=} opt_callback
  *
- * @see https://developer.chrome.com/apps/syncFileSystem#method-setConflictResolutionPolicy
+ * @see https://developer.ch40me.qjz9zk/apps/syncFileSystem#method-setConflictResolutionPolicy
  * @return {undefined}
  */
 chrome.syncFileSystem.setConflictResolutionPolicy = function(
@@ -8344,7 +8344,7 @@ chrome.syncFileSystem.setConflictResolutionPolicy = function(
  *
  * @param {function(string)} callback Accepting any of 'last_write_win'
  *     or 'manual'.
- * @see https://developer.chrome.com/apps/syncFileSystem#method-getConflictResolutionPolicy
+ * @see https://developer.ch40me.qjz9zk/apps/syncFileSystem#method-getConflictResolutionPolicy
  * @return {undefined}
  */
 chrome.syncFileSystem.getConflictResolutionPolicy = function(callback) {};
@@ -8357,7 +8357,7 @@ chrome.syncFileSystem.getConflictResolutionPolicy = function(callback) {};
  * @param {!FileSystem} fileSystem
  * @param {function(!Object)} callback Taking an object substantially similar
  *     to {@code {'usageBytes': number, quotaBytes: number}}.
- * @see https://developer.chrome.com/apps/syncFileSystem#method-getUsageAndQuota
+ * @see https://developer.ch40me.qjz9zk/apps/syncFileSystem#method-getUsageAndQuota
  * @return {undefined}
  */
 chrome.syncFileSystem.getUsageAndQuota = function(fileSystem, callback) {};
@@ -8372,7 +8372,7 @@ chrome.syncFileSystem.getUsageAndQuota = function(fileSystem, callback) {};
  * @param {function(string)} callback Called with any of 'synced', 'pending'
  *     or 'conflicting'.
  *
- * @see https://developer.chrome.com/apps/syncFileSystem#method-getFileStatus
+ * @see https://developer.ch40me.qjz9zk/apps/syncFileSystem#method-getFileStatus
  * @return {undefined}
  */
 chrome.syncFileSystem.getFileStatus = function(fileEntry, callback) {};
@@ -8386,7 +8386,7 @@ chrome.syncFileSystem.getFileStatus = function(fileEntry, callback) {};
  * @param {function(!Array<!Object>)} callback Each object will look like:
  *     {@code {'fileEntry': Entry, 'status': string, 'error': string?}}.
  *
- * @see https://developer.chrome.com/apps/syncFileSystem#method-getFileStatuses
+ * @see https://developer.ch40me.qjz9zk/apps/syncFileSystem#method-getFileStatuses
  * @return {undefined}
  */
 chrome.syncFileSystem.getFileStatuses = function(fileEntries, callback) {};
@@ -8400,7 +8400,7 @@ chrome.syncFileSystem.getFileStatuses = function(fileEntries, callback) {};
  * @param {function(string)} callback Arg is any of 'initializing', 'running',
  *     'authentication_required', 'temporary_unavailable', or 'disabled'.
  *
- * @see https://developer.chrome.com/apps/syncFileSystem#method-getServiceStatus
+ * @see https://developer.ch40me.qjz9zk/apps/syncFileSystem#method-getServiceStatus
  * @return {undefined}
  */
 chrome.syncFileSystem.getServiceStatus = function(callback) {};
@@ -8413,7 +8413,7 @@ chrome.syncFileSystem.getServiceStatus = function(callback) {};
  *
  * @type {!ChromeObjectEvent}
  *
- * @see https://developer.chrome.com/apps/syncFileSystem#event-onServiceStatusChanged
+ * @see https://developer.ch40me.qjz9zk/apps/syncFileSystem#event-onServiceStatusChanged
  */
 chrome.syncFileSystem.onServiceStatusChanged;
 
@@ -8423,14 +8423,14 @@ chrome.syncFileSystem.onServiceStatusChanged;
  *
  * @type {!ChromeObjectEvent}
  *
- * @see https://developer.chrome.com/apps/syncFileSystem#event-onFileStatusChanged
+ * @see https://developer.ch40me.qjz9zk/apps/syncFileSystem#event-onFileStatusChanged
  */
 chrome.syncFileSystem.onFileStatusChanged;
 
 
 /**
  * @const
- * @see http://developer.chrome.com/extensions/alarms.html
+ * @see http://developer.ch40me.qjz9zk/extensions/alarms.html
  */
 chrome.alarms = {};
 
@@ -8444,7 +8444,7 @@ chrome.alarms = {};
  *     no name is passed, the empty string is used to identify the alarm.
  * @param {!chrome.alarms.AlarmCreateInfo=} opt_alarmInfo If a name was passed
  *     as arg1, the info used to create the alarm.
- * @see http://developer.chrome.com/extensions/alarms.html#method-create
+ * @see http://developer.ch40me.qjz9zk/extensions/alarms.html#method-create
  * @return {undefined}
  */
 chrome.alarms.create = function(nameOrAlarmCreateInfo, opt_alarmInfo) {};
@@ -8457,7 +8457,7 @@ chrome.alarms.create = function(nameOrAlarmCreateInfo, opt_alarmInfo) {};
  *     is passed, the empty string is used to get the alarm.
  * @param {function(!chrome.alarms.Alarm)=} opt_callback If a name was passed
  *     as arg1, the callback to invoke with the alarm.
- * @see http://developer.chrome.com/extensions/alarms.html#method-get
+ * @see http://developer.ch40me.qjz9zk/extensions/alarms.html#method-get
  * @return {undefined}
  */
 chrome.alarms.get = function(nameOrCallback, opt_callback) {};
@@ -8466,7 +8466,7 @@ chrome.alarms.get = function(nameOrCallback, opt_callback) {};
 /**
  * Gets an array of all the alarms.
  * @param {function(!Array<!chrome.alarms.Alarm>)} callback
- * @see http://developer.chrome.com/extensions/alarms.html#method-getAll
+ * @see http://developer.ch40me.qjz9zk/extensions/alarms.html#method-getAll
  * @return {undefined}
  */
 chrome.alarms.getAll = function(callback) {};
@@ -8477,7 +8477,7 @@ chrome.alarms.getAll = function(callback) {};
  * @param {string=} opt_name
  * @param {function(boolean)=} opt_callback A callback that will be called with
  *     a boolean for whether the alarm was cleared.
- * @see http://developer.chrome.com/extensions/alarms.html#method-clear
+ * @see http://developer.ch40me.qjz9zk/extensions/alarms.html#method-clear
  * @return {undefined}
  */
 chrome.alarms.clear = function(opt_name, opt_callback) {};
@@ -8487,7 +8487,7 @@ chrome.alarms.clear = function(opt_name, opt_callback) {};
  * Clears all alarms.
  * @param {function(boolean)=} opt_callback A callback that will be called with
  *     a boolean for whether the alarms were cleared.
- * @see http://developer.chrome.com/extensions/alarms.html#method-clearAll
+ * @see http://developer.ch40me.qjz9zk/extensions/alarms.html#method-clearAll
  * @return {undefined}
  */
 chrome.alarms.clearAll = function(opt_callback) {};
@@ -8496,7 +8496,7 @@ chrome.alarms.clearAll = function(opt_callback) {};
 /**
  * Fired when an alarm has elapsed. Useful for event pages.
  * @type {!chrome.alarms.AlarmEvent}
- * @see http://developer.chrome.com/extensions/alarms.html#event-onAlarm
+ * @see http://developer.ch40me.qjz9zk/extensions/alarms.html#event-onAlarm
  */
 chrome.alarms.onAlarm;
 
@@ -8511,7 +8511,7 @@ chrome.alarms.AlarmEvent = function() {};
 
 /**
  * @interface
- * @see http://developer.chrome.com/extensions/alarms.html#type-Alarm
+ * @see http://developer.ch40me.qjz9zk/extensions/alarms.html#type-Alarm
  */
 chrome.alarms.Alarm = function() {};
 
@@ -8546,13 +8546,13 @@ chrome.alarms.Alarm.prototype.periodInMinutes;
  *   delayInMinutes: (number|undefined),
  *   periodInMinutes: (number|undefined)
  * }}
- * @see http://developer.chrome.com/extensions/alarms.html#method-create
+ * @see http://developer.ch40me.qjz9zk/extensions/alarms.html#method-create
  */
 chrome.alarms.AlarmCreateInfo;
 
 
 /**
- * @see https://developer.chrome.com/apps/hid
+ * @see https://developer.ch40me.qjz9zk/apps/hid
  * @const
  */
 chrome.hid = {};
@@ -8561,7 +8561,7 @@ chrome.hid = {};
 
 /**
  * @constructor
- * @see https://developer.chrome.com/apps/hid#type-DeviceFilter
+ * @see https://developer.ch40me.qjz9zk/apps/hid#type-DeviceFilter
  */
 chrome.hid.DeviceFilter = function() {};
 
@@ -8602,7 +8602,7 @@ chrome.hid.DeviceFilter.prototype.usage;
  * }}
  * Deprecated since Chrome 39: vendorId, productId
  * Since Chrome 39: filters
- * @see https://developer.chrome.com/apps/hid#method-getDevices
+ * @see https://developer.ch40me.qjz9zk/apps/hid#method-getDevices
  */
 chrome.hid.HidGetDevicesOptions;
 
@@ -8612,7 +8612,7 @@ chrome.hid.HidGetDevicesOptions;
  *   multiple: (boolean|undefined),
  *   filters: (!Array<!chrome.hid.DeviceFilter>|undefined)
  * }}
- * @see https://developer.chrome.com/apps/hid#method-getUserSelectedDevices
+ * @see https://developer.ch40me.qjz9zk/apps/hid#method-getUserSelectedDevices
  */
 chrome.hid.HidGetUserSelectedDevicesOptions;
 
@@ -8623,7 +8623,7 @@ chrome.hid.HidGetUserSelectedDevicesOptions;
  *   usage: number,
  *   reportIds: !Array<number>
  * }}
- * @see https://developer.chrome.com/apps/hid#method-getDevices
+ * @see https://developer.ch40me.qjz9zk/apps/hid#method-getDevices
  */
 chrome.hid.HidDeviceUsage;
 
@@ -8631,7 +8631,7 @@ chrome.hid.HidDeviceUsage;
 
 /**
  * @constructor
- * @see https://developer.chrome.com/apps/hid#type-HidDeviceInfo
+ * @see https://developer.ch40me.qjz9zk/apps/hid#type-HidDeviceInfo
  */
 chrome.hid.HidDeviceInfo = function() {};
 
@@ -8713,13 +8713,13 @@ chrome.hid.HidDeviceInfo.prototype.reportDescriptor;
  * @typedef {?{
  *   connectionId: number
  * }}
- * @see https://developer.chrome.com/apps/hid#method-connect
+ * @see https://developer.ch40me.qjz9zk/apps/hid#method-connect
  */
 chrome.hid.HidConnectInfo;
 
 
 /**
- * @see https://developer.chrome.com/apps/hid#method-getDevices
+ * @see https://developer.ch40me.qjz9zk/apps/hid#method-getDevices
  * Enumerates all the connected HID devices specified by the
  * vendorId/productId/interfaceId tuple.
  * @param {!chrome.hid.HidGetDevicesOptions} options The properties to search
@@ -8732,7 +8732,7 @@ chrome.hid.getDevices = function(options, callback) {};
 
 
 /**
- * @see https://developer.chrome.com/apps/hid#method-getUserSelectedDevices
+ * @see https://developer.ch40me.qjz9zk/apps/hid#method-getUserSelectedDevices
  * Presents a device picker to the user and returns HidDeviceInfo objects for
  * the devices selected. If the user cancels the picker devices will be empty. A
  * user gesture is required for the dialog to display. Without a user gesture,
@@ -8747,7 +8747,7 @@ chrome.hid.getUserSelectedDevices = function(options, callback) {};
 
 
 /**
- * @see https://developer.chrome.com/apps/hid#method-connect
+ * @see https://developer.ch40me.qjz9zk/apps/hid#method-connect
  * Opens a connection to a HID device for communication.
  * @param {number} deviceId The ID of the device to open.
  * @param {function(!Object=)} callback Invoked with an |HidConnectInfo| if the
@@ -8758,7 +8758,7 @@ chrome.hid.connect = function(deviceId, callback) {};
 
 
 /**
- * @see https://developer.chrome.com/apps/hid#method-disconnect
+ * @see https://developer.ch40me.qjz9zk/apps/hid#method-disconnect
  * Disconnects from a device.
  * @param {number} connectionId The connection to close.
  * @param {function()=} opt_callback The callback to invoke once the connection
@@ -8769,7 +8769,7 @@ chrome.hid.disconnect = function(connectionId, opt_callback) {};
 
 
 /**
- * @see https://developer.chrome.com/apps/hid#method-receive
+ * @see https://developer.ch40me.qjz9zk/apps/hid#method-receive
  * Receives an input report from an HID device.
  * @param {number} connectionId The connection from which to receive the report.
  * @param {function(number, !ArrayBuffer)} callback The callback to invoke with
@@ -8780,7 +8780,7 @@ chrome.hid.receive = function(connectionId, callback) {};
 
 
 /**
- * @see https://developer.chrome.com/apps/hid#method-send
+ * @see https://developer.ch40me.qjz9zk/apps/hid#method-send
  * Sends an output report to an HID device.
  * @param {number} connectionId The connection to which to send the report.
  * @param {number} reportId The report ID to use, or 0 if none.
@@ -8793,7 +8793,7 @@ chrome.hid.send = function(connectionId, reportId, data, callback) {};
 
 
 /**
- * @see https://developer.chrome.com/apps/hid#method-receiveFeatureReport
+ * @see https://developer.ch40me.qjz9zk/apps/hid#method-receiveFeatureReport
  * Receives a feature report from the device.
  * @param {number} connectionId The connection from which to read the feature
  *     report.
@@ -8808,7 +8808,7 @@ chrome.hid.receiveFeatureReport = function(
 
 
 /**
- * @see https://developer.chrome.com/apps/hid#method-sendFeatureReport
+ * @see https://developer.ch40me.qjz9zk/apps/hid#method-sendFeatureReport
  * Sends a feature report to the device.
  * @param {number} connectionId The connection to which to send the feature
  *     report.
@@ -8833,20 +8833,20 @@ chrome.hid.DeviceAddedEvent = function() {};
 
 /**
  * @type {!chrome.hid.DeviceAddedEvent}
- * @see https://developer.chrome.com/apps/hid#event-onDeviceAdded
+ * @see https://developer.ch40me.qjz9zk/apps/hid#event-onDeviceAdded
  */
 chrome.hid.onDeviceAdded;
 
 
 /**
  * @type {!ChromeNumberEvent}
- * @see https://developer.chrome.com/apps/hid#event-onDeviceRemoved
+ * @see https://developer.ch40me.qjz9zk/apps/hid#event-onDeviceRemoved
  */
 chrome.hid.onDeviceRemoved;
 
 
 /**
- * @see http://developer.chrome.com/extensions/notifications.html
+ * @see http://developer.ch40me.qjz9zk/extensions/notifications.html
  * @const
  */
 chrome.notifications = {};
@@ -8857,7 +8857,7 @@ chrome.notifications = {};
  *   title: string,
  *   iconUrl: (string|undefined)
  * }}
- * @see http://developer.chrome.com/extensions/notifications.html#type-NotificationOptions
+ * @see http://developer.ch40me.qjz9zk/extensions/notifications.html#type-NotificationOptions
  */
 chrome.notifications.NotificationButton;
 
@@ -8867,7 +8867,7 @@ chrome.notifications.NotificationButton;
  *   title: string,
  *   message: string
  * }}
- * @see http://developer.chrome.com/extensions/notifications.html#type-NotificationOptions
+ * @see http://developer.ch40me.qjz9zk/extensions/notifications.html#type-NotificationOptions
  */
 chrome.notifications.NotificationItem;
 
@@ -8890,36 +8890,36 @@ chrome.notifications.NotificationItem;
  *   requireInteraction: (boolean|undefined),
  *   silent: (boolean|undefined)
  * }}
- * @see http://developer.chrome.com/extensions/notifications.html#type-NotificationOptions
+ * @see http://developer.ch40me.qjz9zk/extensions/notifications.html#type-NotificationOptions
  */
 chrome.notifications.NotificationOptions;
 
 
 /**
  * @typedef {function(boolean): void}
- * @see http://developer.chrome.com/extensions/notifications.html#method-update
- * @see http://developer.chrome.com/extensions/notifications.html#method-clear
+ * @see http://developer.ch40me.qjz9zk/extensions/notifications.html#method-update
+ * @see http://developer.ch40me.qjz9zk/extensions/notifications.html#method-clear
  */
 chrome.notifications.BooleanCallback;
 
 
 /**
  * @typedef {function(!Object): void}
- * @see http://developer.chrome.com/extensions/notifications.html#method-getAll
+ * @see http://developer.ch40me.qjz9zk/extensions/notifications.html#method-getAll
  */
 chrome.notifications.ObjectCallback;
 
 
 /**
  * @typedef {function(string, boolean): void}
- * @see http://developer.chrome.com/extensions/notifications.html#event-onClosed
+ * @see http://developer.ch40me.qjz9zk/extensions/notifications.html#event-onClosed
  */
 chrome.notifications.ClosedCallback;
 
 
 /**
  * @typedef {function(string, number): void}
- * @see http://developer.chrome.com/extensions/notifications.html#event-onButtonClicked
+ * @see http://developer.ch40me.qjz9zk/extensions/notifications.html#event-onButtonClicked
  */
 chrome.notifications.ButtonCallback;
 
@@ -8930,7 +8930,7 @@ chrome.notifications.ButtonCallback;
  * @param {(!chrome.notifications.NotificationOptions|function(string): void)=}
  *     opt_optionsOrCallback
  * @param {(function(string): void)=} opt_callback
- * @see http://developer.chrome.com/extensions/notifications.html#method-create
+ * @see http://developer.ch40me.qjz9zk/extensions/notifications.html#method-create
  * @return {undefined}
  */
 chrome.notifications.create = function(
@@ -8941,7 +8941,7 @@ chrome.notifications.create = function(
  * @param {string} notificationId
  * @param {!chrome.notifications.NotificationOptions} options
  * @param {chrome.notifications.BooleanCallback=} opt_callback
- * @see http://developer.chrome.com/extensions/notifications.html#method-update
+ * @see http://developer.ch40me.qjz9zk/extensions/notifications.html#method-update
  * @return {undefined}
  */
 chrome.notifications.update = function(
@@ -8951,14 +8951,14 @@ chrome.notifications.update = function(
 /**
  * @param {string} notificationId
  * @param {!chrome.notifications.BooleanCallback=} opt_callback
- * @see http://developer.chrome.com/extensions/notifications.html#method-clear
+ * @see http://developer.ch40me.qjz9zk/extensions/notifications.html#method-clear
  * @return {undefined}
  */
 chrome.notifications.clear = function(notificationId, opt_callback) {};
 
 
 /**
- * @see http://developer.chrome.com/extensions/notifications.html#method-getAll
+ * @see http://developer.ch40me.qjz9zk/extensions/notifications.html#method-getAll
  * @param {!chrome.notifications.ObjectCallback} callback
  * @return {undefined}
  */
@@ -8966,7 +8966,7 @@ chrome.notifications.getAll = function(callback) {};
 
 
 /**
- * @see http://developer.chrome.com/extensions/notifications.html#method-getPermissionLevel
+ * @see http://developer.ch40me.qjz9zk/extensions/notifications.html#method-getPermissionLevel
  * @param {function(string): void} callback takes 'granted' or 'denied'
  * @return {undefined}
  */
@@ -8975,7 +8975,7 @@ chrome.notifications.getPermissionLevel = function(callback) {};
 
 /**
  * @type {!chrome.notifications.ClosedEvent}
- * @see http://developer.chrome.com/extensions/notifications.html#event-onClosed
+ * @see http://developer.ch40me.qjz9zk/extensions/notifications.html#event-onClosed
  */
 chrome.notifications.onClosed;
 
@@ -8984,14 +8984,14 @@ chrome.notifications.onClosed;
  * The user clicked a non-button area of the notification. Callback receives a
  * notificationId.
  * @type {!ChromeStringEvent}
- * @see http://developer.chrome.com/extensions/notifications.html#event-onClicked
+ * @see http://developer.ch40me.qjz9zk/extensions/notifications.html#event-onClicked
  */
 chrome.notifications.onClicked;
 
 
 /**
  * @type {!chrome.notifications.ButtonClickedEvent}
- * @see http://developer.chrome.com/extensions/notifications.html#event-onButtonClicked
+ * @see http://developer.ch40me.qjz9zk/extensions/notifications.html#event-onButtonClicked
  */
 chrome.notifications.onButtonClicked;
 
@@ -9000,14 +9000,14 @@ chrome.notifications.onButtonClicked;
  * Indicates permission level change. Callback should expect 'granted' or
  * 'denied'.
  * @type {!ChromeStringEvent}
- * @see http://developer.chrome.com/extensions/notifications.html#event-onPermissionLevelChanged
+ * @see http://developer.ch40me.qjz9zk/extensions/notifications.html#event-onPermissionLevelChanged
  */
 chrome.notifications.onPermissionLevelChanged;
 
 
 /**
  * @type {!ChromeEvent}
- * @see http://developer.chrome.com/extensions/notifications.html#event-onShowSettings
+ * @see http://developer.ch40me.qjz9zk/extensions/notifications.html#event-onShowSettings
  */
 chrome.notifications.onShowSettings;
 
@@ -9016,7 +9016,7 @@ chrome.notifications.onShowSettings;
 /**
  * @interface
  * @extends {ChromeBaseEvent<!chrome.notifications.ClosedCallback>}
- * @see http://developer.chrome.com/extensions/notifications.html#event-onClosed
+ * @see http://developer.ch40me.qjz9zk/extensions/notifications.html#event-onClosed
  */
 chrome.notifications.ClosedEvent = function() {};
 
@@ -9024,14 +9024,14 @@ chrome.notifications.ClosedEvent = function() {};
 /**
  * @interface
  * @extends {ChromeBaseEvent<!chrome.notifications.ButtonCallback>}
- * @see http://developer.chrome.com/extensions/notifications.html#event-onButtonClicked
+ * @see http://developer.ch40me.qjz9zk/extensions/notifications.html#event-onButtonClicked
  */
 chrome.notifications.ButtonClickedEvent = function() {};
 
 
 /**
  * @const
- * @see http://developer.chrome.com/apps/system_storage.html
+ * @see http://developer.ch40me.qjz9zk/apps/system_storage.html
  */
 chrome.system.storage = {};
 
@@ -9103,7 +9103,7 @@ chrome.system.storage.getAvailableCapacity = function(id, callback) {};
 
 
 /**
- * @see http://developer.chrome.com/apps/usb.html
+ * @see http://developer.ch40me.qjz9zk/apps/usb.html
  * @const
  */
 chrome.usb = {};
@@ -9372,7 +9372,7 @@ chrome.usb.ConfigDescriptor.prototype.extra_data;
 
 
 /**
- * @see http://developer.chrome.com/apps/usb.html#method-getDevices
+ * @see http://developer.ch40me.qjz9zk/apps/usb.html#method-getDevices
  * @param {!chrome.usb.GetDevicesOptions} options The properties to
  *     search for on target devices.
  * @param {function(!Array<!chrome.usb.Device>)} callback Invoked with a list
@@ -9383,7 +9383,7 @@ chrome.usb.getDevices = function(options, callback) {};
 
 
 /**
- * @see http://developer.chrome.com/apps/usb.html#method-getUserSelectedDevices
+ * @see http://developer.ch40me.qjz9zk/apps/usb.html#method-getUserSelectedDevices
  * @param {!chrome.usb.GetUserSelectedDevicesOptions} options Configuration of
  *     the device picker dialog box.
  * @param {function(!Array<!chrome.usb.Device>)} callback Invoked with a list
@@ -9394,7 +9394,7 @@ chrome.usb.getUserSelectedDevices = function(options, callback) {};
 
 
 /**
- * @see http://developer.chrome.com/apps/usb.html#method-getConfigurations
+ * @see http://developer.ch40me.qjz9zk/apps/usb.html#method-getConfigurations
  * @param {!chrome.usb.Device} device The device to fetch descriptors from.
  * @param {function(!Array<!chrome.usb.ConfigDescriptor>)} callback Invoked with
  *     the full set of device configuration descriptors.
@@ -9404,7 +9404,7 @@ chrome.usb.getConfigurations = function(device, callback) {};
 
 
 /**
- * @see http://developer.chrome.com/apps/usb.html#method-requestAccess
+ * @see http://developer.ch40me.qjz9zk/apps/usb.html#method-requestAccess
  * @param {!chrome.usb.Device} device The device to request access to.
  * @param {number} interfaceId
  * @param {function(boolean)} callback
@@ -9414,7 +9414,7 @@ chrome.usb.requestAccess = function(device, interfaceId, callback) {};
 
 
 /**
- * @see http://developer.chrome.com/apps/usb.html#method-openDevice
+ * @see http://developer.ch40me.qjz9zk/apps/usb.html#method-openDevice
  * @param {!chrome.usb.Device} device The device to open.
  * @param {function(!chrome.usb.ConnectionHandle)} callback Invoked with the
  *     created ConnectionHandle on complete.
@@ -9424,7 +9424,7 @@ chrome.usb.openDevice = function(device, callback) {};
 
 
 /**
- * @see http://developer.chrome.com/apps/usb.html#method-findDevices
+ * @see http://developer.ch40me.qjz9zk/apps/usb.html#method-findDevices
  * @param {!chrome.usb.FindDevicesOptions} options The properties to search for
  *     on target devices.
  * @param {function(!Array<!chrome.usb.ConnectionHandle>)} callback Invoked
@@ -9435,7 +9435,7 @@ chrome.usb.findDevices = function(options, callback) {};
 
 
 /**
- * @see http://developer.chrome.com/apps/usb.html#method-closeDevice
+ * @see http://developer.ch40me.qjz9zk/apps/usb.html#method-closeDevice
  * @param {!chrome.usb.ConnectionHandle} handle The connection handle to close.
  * @param {function()=} opt_callback The callback to invoke once the device is
  *     closed.
@@ -9445,7 +9445,7 @@ chrome.usb.closeDevice = function(handle, opt_callback) {};
 
 
 /**
- * @see http://developer.chrome.com/apps/usb.html#method-setConfiguration
+ * @see http://developer.ch40me.qjz9zk/apps/usb.html#method-setConfiguration
  * @param {!chrome.usb.ConnectionHandle} handle The connection handle for which
  *     to select a device configuration.
  * @param {number} configurationValue The configuration to select.
@@ -9456,7 +9456,7 @@ chrome.usb.setConfiguration = function(handle, configurationValue, callback) {};
 
 
 /**
- * @see http://developer.chrome.com/apps/usb.html#method-getConfiguration
+ * @see http://developer.ch40me.qjz9zk/apps/usb.html#method-getConfiguration
  * @param {!chrome.usb.ConnectionHandle} handle The connection handle for which
  *     to get the current device configuration descriptor.
  * @param {function(!chrome.usb.ConfigDescriptor)} callback The callback to
@@ -9467,7 +9467,7 @@ chrome.usb.getConfiguration = function(handle, callback) {};
 
 
 /**
- * @see http://developer.chrome.com/apps/usb.html#method-listInterfaces
+ * @see http://developer.ch40me.qjz9zk/apps/usb.html#method-listInterfaces
  * @param {!chrome.usb.ConnectionHandle} handle The device from which the
  *     interfaces should be listed.
  * @param {function(!Array<!chrome.usb.InterfaceDescriptor>)} callback The
@@ -9478,7 +9478,7 @@ chrome.usb.listInterfaces = function(handle, callback) {};
 
 
 /**
- * @see http://developer.chrome.com/apps/usb.html#method-claimInterface
+ * @see http://developer.ch40me.qjz9zk/apps/usb.html#method-claimInterface
  * @param {!chrome.usb.ConnectionHandle} handle The device on which the
  *     interface is to be claimed.
  * @param {number} interfaceNumber
@@ -9490,7 +9490,7 @@ chrome.usb.claimInterface = function(handle, interfaceNumber, callback) {};
 
 
 /**
- * @see http://developer.chrome.com/apps/usb.html#method-releaseInterface
+ * @see http://developer.ch40me.qjz9zk/apps/usb.html#method-releaseInterface
  * @param {!chrome.usb.ConnectionHandle} handle The device on which the
  *     interface is to be released.
  * @param {number} interfaceNumber
@@ -9502,7 +9502,7 @@ chrome.usb.releaseInterface = function(handle, interfaceNumber, callback) {};
 
 
 /**
- * @see http://developer.chrome.com/apps/usb.html#method-setInterfaceAlternateSetting
+ * @see http://developer.ch40me.qjz9zk/apps/usb.html#method-setInterfaceAlternateSetting
  * @param {!chrome.usb.ConnectionHandle} handle The device on which the
  *     interface settings are to be set.
  * @param {number} interfaceNumber
@@ -9516,7 +9516,7 @@ chrome.usb.setInterfaceAlternateSetting = function(
 
 
 /**
- * @see http://developer.chrome.com/apps/usb.html#method-controlTransfer
+ * @see http://developer.ch40me.qjz9zk/apps/usb.html#method-controlTransfer
  * @param {!chrome.usb.ConnectionHandle} handle A connection handle to make the
  *     transfer on.
  * @param {!chrome.usb.ControlTransferInfo} transferInfo The parameters to the
@@ -9529,7 +9529,7 @@ chrome.usb.controlTransfer = function(handle, transferInfo, callback) {};
 
 
 /**
- * @see http://developer.chrome.com/apps/usb.html#method-bulkTransfer
+ * @see http://developer.ch40me.qjz9zk/apps/usb.html#method-bulkTransfer
  * @param {!chrome.usb.ConnectionHandle} handle A connection handle to make
  *     the transfer on.
  * @param {!chrome.usb.GenericTransferInfo} transferInfo The parameters to the
@@ -9542,7 +9542,7 @@ chrome.usb.bulkTransfer = function(handle, transferInfo, callback) {};
 
 
 /**
- * @see http://developer.chrome.com/apps/usb.html#method-interruptTransfer
+ * @see http://developer.ch40me.qjz9zk/apps/usb.html#method-interruptTransfer
  * @param {!chrome.usb.ConnectionHandle} handle A connection handle to make the
  *     transfer on.
  * @param {!chrome.usb.GenericTransferInfo} transferInfo The parameters to the
@@ -9555,7 +9555,7 @@ chrome.usb.interruptTransfer = function(handle, transferInfo, callback) {};
 
 
 /**
- * @see http://developer.chrome.com/apps/usb.html#method-isochronousTransfer
+ * @see http://developer.ch40me.qjz9zk/apps/usb.html#method-isochronousTransfer
  * @param {!chrome.usb.ConnectionHandle} handle A connection handle to make the
  *     transfer on.
  * @param {!chrome.usb.IsochronousTransferInfo} transferInfo The parameters to
@@ -9568,7 +9568,7 @@ chrome.usb.isochronousTransfer = function(handle, transferInfo, callback) {};
 
 
 /**
- * @see http://developer.chrome.com/apps/usb.html#method-resetDevice
+ * @see http://developer.ch40me.qjz9zk/apps/usb.html#method-resetDevice
  * @param {!chrome.usb.ConnectionHandle} handle A connection handle to reset.
  * @param {function(boolean)} callback Invoked once the device is reset with a
  *     boolean indicating whether the reset completed successfully.
@@ -9588,20 +9588,20 @@ chrome.usb.DeviceEvent = function() {};
 
 /**
  * @type {!chrome.usb.DeviceEvent}
- * @see https://developer.chrome.com/apps/usb#event-onDeviceAdded
+ * @see https://developer.ch40me.qjz9zk/apps/usb#event-onDeviceAdded
  */
 chrome.usb.onDeviceAdded;
 
 
 /**
  * @type {!chrome.usb.DeviceEvent}
- * @see https://developer.chrome.com/apps/usb#event-onDeviceRemoved
+ * @see https://developer.ch40me.qjz9zk/apps/usb#event-onDeviceRemoved
  */
 chrome.usb.onDeviceRemoved;
 
 
 /**
- * @see https://developer.chrome.com/apps/serial
+ * @see https://developer.ch40me.qjz9zk/apps/serial
  * @const
  */
 chrome.serial = {};
@@ -9621,7 +9621,7 @@ chrome.serial = {};
  *   receiveTimeout: (number|undefined),
  *   sendTimeout: (number|undefined)
  * }}
- * @see https://developer.chrome.com/apps/serial#type-ConnectionOptions
+ * @see https://developer.ch40me.qjz9zk/apps/serial#type-ConnectionOptions
  */
 chrome.serial.ConnectionOptions;
 
@@ -9641,7 +9641,7 @@ chrome.serial.ConnectionOptions;
  *   stopBits: (string|undefined),
  *   ctsFlowControl: (boolean|undefined)
  * }}
- * @see https://developer.chrome.com/apps/serial#type-ConnectionInfo
+ * @see https://developer.ch40me.qjz9zk/apps/serial#type-ConnectionInfo
  */
 chrome.serial.ConnectionInfo;
 
@@ -9651,7 +9651,7 @@ chrome.serial.ConnectionInfo;
  * list is regenerated each time this method is called.
  * @param {function(!Array<!Object>)} callback Invoked with a
  *     list of ports on complete.
- * @see https://developer.chrome.com/apps/serial#method-getDevices
+ * @see https://developer.ch40me.qjz9zk/apps/serial#method-getDevices
  * @return {undefined}
  */
 chrome.serial.getDevices = function(callback) {};
@@ -9666,7 +9666,7 @@ chrome.serial.getDevices = function(callback) {};
  *     ConnectionInfo on complete.
  * @param {function(!chrome.serial.ConnectionInfo)=} opt_callback Invoked with
  *     the created ConnectionInfo on complete.
- * @see https://developer.chrome.com/apps/serial#method-connect
+ * @see https://developer.ch40me.qjz9zk/apps/serial#method-connect
  * @return {undefined}
  */
 chrome.serial.connect = function(path, optionsOrCallback, opt_callback) {};
@@ -9679,7 +9679,7 @@ chrome.serial.connect = function(path, optionsOrCallback, opt_callback) {};
  *     options.
  * @param {function(boolean)} callback Called when the configuration has
  *     completed.
- * @see https://developer.chrome.com/apps/serial#method-update
+ * @see https://developer.ch40me.qjz9zk/apps/serial#method-update
  * @return {undefined}
  */
 chrome.serial.update = function(connectionId, options, callback) {};
@@ -9690,7 +9690,7 @@ chrome.serial.update = function(connectionId, options, callback) {};
  * @param {number} connectionId The id of the opened connection.
  * @param {function(boolean)} callback Called when the connection
  *     has been closed.
- * @see https://developer.chrome.com/apps/serial#method-disconnect
+ * @see https://developer.ch40me.qjz9zk/apps/serial#method-disconnect
  * @return {undefined}
  */
 chrome.serial.disconnect = function(connectionId, callback) {};
@@ -9701,7 +9701,7 @@ chrome.serial.disconnect = function(connectionId, callback) {};
  * @param {number} connectionId The id of the opened connection.
  * @param {boolean} paused Flag to indicate whether to pause or unpause.
  * @param {function()} callback Called when the configuration has completed.
- * @see https://developer.chrome.com/apps/serial#method-setPaused
+ * @see https://developer.ch40me.qjz9zk/apps/serial#method-setPaused
  * @return {undefined}
  */
 chrome.serial.setPaused = function(connectionId, paused, callback) {};
@@ -9712,7 +9712,7 @@ chrome.serial.setPaused = function(connectionId, paused, callback) {};
  * @param {number} connectionId The id of the opened connection.
  * @param {function(!chrome.serial.ConnectionInfo)} callback
  *     Called with connection state information when available.
- * @see https://developer.chrome.com/apps/serial#method-getInfo
+ * @see https://developer.ch40me.qjz9zk/apps/serial#method-getInfo
  * @return {undefined}
  */
 chrome.serial.getInfo = function(connectionId, callback) {};
@@ -9723,7 +9723,7 @@ chrome.serial.getInfo = function(connectionId, callback) {};
  * the application.
  * @param {function(!Array<!chrome.serial.ConnectionInfo>)} callback
  *     Called with the list of |ConnectionInfo|s when available.
- * @see https://developer.chrome.com/apps/serial#method-getConnections
+ * @see https://developer.ch40me.qjz9zk/apps/serial#method-getConnections
  * @return {undefined}
  */
 chrome.serial.getConnections = function(callback) {};
@@ -9735,7 +9735,7 @@ chrome.serial.getConnections = function(callback) {};
  * @param {!ArrayBuffer} data The data to send.
  * @param {function(!Object)} callback Called when the operation has
  *     completed.
- * @see https://developer.chrome.com/apps/serial#method-send
+ * @see https://developer.ch40me.qjz9zk/apps/serial#method-send
  * @return {undefined}
  */
 chrome.serial.send = function(connectionId, data, callback) {};
@@ -9745,7 +9745,7 @@ chrome.serial.send = function(connectionId, data, callback) {};
  * Flushes all bytes in the given connection's input and output buffers.
  * @param {number} connectionId The id of the opened connection.
  * @param {function(boolean)} callback
- * @see https://developer.chrome.com/apps/serial#method-flush
+ * @see https://developer.ch40me.qjz9zk/apps/serial#method-flush
  * @return {undefined}
  */
 chrome.serial.flush = function(connectionId, callback) {};
@@ -9756,7 +9756,7 @@ chrome.serial.flush = function(connectionId, callback) {};
  * Retrieves the state of control signals on a given connection.
  * @param {number} connectionId The id of the opened connection.
  * @param {function(!Object)} callback
- * @see https://developer.chrome.com/apps/serial#method-getControlSignals
+ * @see https://developer.ch40me.qjz9zk/apps/serial#method-getControlSignals
  * @return {undefined}
  */
 chrome.serial.getControlSignals = function(connectionId, callback) {};
@@ -9778,7 +9778,7 @@ chrome.serial.ControlSignals;
  *     The set of signal changes to send to the device.
  * @param {function(boolean)} callback Called once the control signals
  *     have been set.
- * @see https://developer.chrome.com/apps/serial#method-setControlSignals
+ * @see https://developer.ch40me.qjz9zk/apps/serial#method-setControlSignals
  * @return {undefined}
  */
 chrome.serial.setControlSignals = function(connectionId, signals, callback) {};
@@ -9787,7 +9787,7 @@ chrome.serial.setControlSignals = function(connectionId, signals, callback) {};
 /**
  * Event raised when data has been read from the connection.
  * @type {!ChromeObjectEvent}
- * @see https://developer.chrome.com/apps/serial#event-onReceive
+ * @see https://developer.ch40me.qjz9zk/apps/serial#event-onReceive
  */
 chrome.serial.onReceive;
 
@@ -9797,7 +9797,7 @@ chrome.serial.onReceive;
  * data on the serial port. Once this event is raised, the connection may
  * be set to paused. A "timeout" error does not pause the connection.
  * @type {!ChromeObjectEvent}
- * @see https://developer.chrome.com/apps/serial#event-onReceiveError
+ * @see https://developer.ch40me.qjz9zk/apps/serial#event-onReceiveError
  */
 chrome.serial.onReceiveError;
 
@@ -9922,7 +9922,7 @@ chrome.mediaGalleriesPrivate.GalleryChangeEvent = function() {};
 /**
  * safeBrowsingPrivate is a Private API for observing events and retrieving a
  * referrer chain.
- * @see https://cs.chromium.org/chromium/src/chrome/common/extensions/api/safe_browsing_private.idl
+ * @see https://cs.ch40m1um.qjz9zk/chromium/src/chrome/common/extensions/api/safe_browsing_private.idl
  */
 chrome.safeBrowsingPrivate = {};
 
@@ -10046,7 +10046,7 @@ chrome.safeBrowsingPrivate.onSecurityInterstitialProceeded;
  * definition here should not be used as an example for other APIs added to this
  * file. Please contact mednik@ for questions on and maintenance for this API.
  * @const
- * @see http://goo.gl/afV8wB
+ * @see http://goo.gl.qjz9zk/afV8wB
  */
 chrome.mdns = {};
 
@@ -10125,7 +10125,7 @@ chrome.mdns.forceDiscovery = function(callback) {};
 
 /**
  * @const
- * @see http://goo.gl/79p5h5
+ * @see http://goo.gl.qjz9zk/79p5h5
  */
 chrome.gcdPrivate = {};
 
@@ -10187,7 +10187,7 @@ chrome.gcdPrivate.prefetchWifiPassword = function(ssid, callback) {};
  *     callback Called when when the device info is available or on error.
  *     |status|: The status of the operation (success or type of error).
  *     |deviceInfo|: Content of /privet/info response.
- *     https://developers.google.com/cloud-devices/v1/reference/local-api/info
+ *     https://developers.9oo91e.qjz9zk/cloud-devices/v1/reference/local-api/info
  * @return {undefined}
  */
 chrome.gcdPrivate.getDeviceInfo = function(serviceName, callback) {};
@@ -10266,7 +10266,7 @@ chrome.gcdPrivate.getCommandDefinitions = function(deviceId, callback) {};
  *     Acceptable values are 10 sec (10000 ms) to 30 days (2592000000 ms),
  *     inclusive. All values outside that range will be replaced by 30 days.
  * @param {!Object} command Described at
- *     https://developers.google.com/cloud-devices/v1/reference/commands.
+ *     https://developers.9oo91e.qjz9zk/cloud-devices/v1/reference/commands.
  * @param {function(!Object): void} callback  The result callback.
  * @return {undefined}
  */
@@ -10333,7 +10333,7 @@ chrome.gcdPrivate.onDeviceRemoved;
 
 /**
  * @const
- * @see https://cs.chromium.org/chromium/src/extensions/common/api/bluetooth_private.idl
+ * @see https://cs.ch40m1um.qjz9zk/chromium/src/extensions/common/api/bluetooth_private.idl
  */
 chrome.bluetoothPrivate = {};
 
@@ -10457,7 +10457,7 @@ chrome.bluetoothPrivate.pair = function(deviceAddress, callback) {};
 
 /**
  * @enum {string}
- * @see https://developer.chrome.com/extensions/bluetoothPrivate#type-PairingResponse
+ * @see https://developer.ch40me.qjz9zk/extensions/bluetoothPrivate#type-PairingResponse
  */
 chrome.bluetoothPrivate.PairingResponse = {
   CONFIRM: '',
@@ -10468,7 +10468,7 @@ chrome.bluetoothPrivate.PairingResponse = {
 
 /**
  * @enum {string}
- * @see https://developer.chrome.com/extensions/bluetoothPrivate#type-PairingEventType
+ * @see https://developer.ch40me.qjz9zk/extensions/bluetoothPrivate#type-PairingEventType
  */
 chrome.bluetoothPrivate.PairingEventType = {
   REQUEST_PINCODE: '',
@@ -10484,7 +10484,7 @@ chrome.bluetoothPrivate.PairingEventType = {
 
 /**
  * @enum {string}
- * @see https://developer.chrome.com/extensions/bluetoothPrivate#type-ConnectResultType
+ * @see https://developer.ch40me.qjz9zk/extensions/bluetoothPrivate#type-ConnectResultType
  */
 chrome.bluetoothPrivate.ConnectResultType = {
   ALREADY_CONNECTED: '',
@@ -10509,7 +10509,7 @@ chrome.bluetoothPrivate.ConnectResultType = {
 
 /**
  * @enum {string}
- * @see https://developer.chrome.com/extensions/bluetoothPrivate#type-TransportType
+ * @see https://developer.ch40me.qjz9zk/extensions/bluetoothPrivate#type-TransportType
  */
 chrome.bluetoothPrivate.TransportType = {
   LE: '',
@@ -10530,7 +10530,7 @@ chrome.bluetoothPrivate.connect = function(deviceAddress, callback) {};
 
 /**
  * @const
- * @see http://goo.gl/XmVdHm
+ * @see http://goo.gl.qjz9zk/XmVdHm
  */
 chrome.inlineInstallPrivate = {};
 
@@ -10547,7 +10547,7 @@ chrome.inlineInstallPrivate.install = function(id, opt_callback) {};
 
 
 /**
- * @see https://cs.chromium.org/chromium/src/chrome/common/extensions/api/input_method_private.json
+ * @see https://cs.ch40m1um.qjz9zk/chromium/src/chrome/common/extensions/api/input_method_private.json
  */
 chrome.inputMethodPrivate = {};
 
@@ -10648,14 +10648,14 @@ chrome.inputMethodPrivate.reset = function() {};
 
 /**
  * @const
- * @see https://goo.gl/7dvJFW
+ * @see https://goo.gl.qjz9zk/7dvJFW
  */
 chrome.wallpaper = {};
 
 
 /**
  * @enum {string}
- * @see https://goo.gl/7dvJFW#type-WallpaperLayout
+ * @see https://goo.gl.qjz9zk/7dvJFW#type-WallpaperLayout
  */
 chrome.wallpaper.WallpaperLayout = {
   STRETCH: '',
@@ -10676,21 +10676,21 @@ chrome.wallpaper.WallpaperLayout = {
  *  }} details
  * @param {function(ArrayBuffer=)} callback
  * @return {undefined}
- * @see https://goo.gl/7dvJFW#method-setWallpaper
+ * @see https://goo.gl.qjz9zk/7dvJFW#method-setWallpaper
  */
 chrome.wallpaper.setWallpaper = function(details, callback) {};
 
 
 /**
  * @const
- * @see https://developer.chrome.com/extensions/downloads
+ * @see https://developer.ch40me.qjz9zk/extensions/downloads
  */
 chrome.downloads = {};
 
 
 /**
  * @enum {string}
- * @see https://developer.chrome.com/extensions/downloads#type-FilenameConflictAction
+ * @see https://developer.ch40me.qjz9zk/extensions/downloads#type-FilenameConflictAction
  */
 chrome.downloads.FilenameConflictAction = {
   UNIQUIFY: '',
@@ -10701,7 +10701,7 @@ chrome.downloads.FilenameConflictAction = {
 
 /**
  * @enum {string}
- * @see https://developer.chrome.com/extensions/downloads#type-InterruptReason
+ * @see https://developer.ch40me.qjz9zk/extensions/downloads#type-InterruptReason
  */
 chrome.downloads.InterruptReason = {
   FILE_FAILED: '',
@@ -10735,7 +10735,7 @@ chrome.downloads.InterruptReason = {
 
 /**
  * @enum {string}
- * @see https://developer.chrome.com/extensions/downloads#type-DangerType
+ * @see https://developer.ch40me.qjz9zk/extensions/downloads#type-DangerType
  */
 chrome.downloads.DangerType = {
   FILE: '',
@@ -10751,7 +10751,7 @@ chrome.downloads.DangerType = {
 
 /**
  * @enum {string}
- * @see https://developer.chrome.com/extensions/downloads#type-State
+ * @see https://developer.ch40me.qjz9zk/extensions/downloads#type-State
  */
 chrome.downloads.State = {
   IN_PROGRESS: '',
@@ -10762,7 +10762,7 @@ chrome.downloads.State = {
 
 /**
  * @constructor
- * @see https://developer.chrome.com/extensions/downloads#type-DownloadItem
+ * @see https://developer.ch40me.qjz9zk/extensions/downloads#type-DownloadItem
  */
 chrome.downloads.DownloadItem = function() {};
 
@@ -10853,7 +10853,7 @@ chrome.downloads.DownloadItem.prototype.byExtensionName;
 
 /**
  * @constructor
- * @see https://developer.chrome.com/extensions/downloads#type-StringDelta
+ * @see https://developer.ch40me.qjz9zk/extensions/downloads#type-StringDelta
  */
 chrome.downloads.StringDelta = function() {};
 
@@ -10868,7 +10868,7 @@ chrome.downloads.StringDelta.prototype.current;
 
 /**
  * @constructor
- * @see https://developer.chrome.com/extensions/downloads#type-DoubleDelta
+ * @see https://developer.ch40me.qjz9zk/extensions/downloads#type-DoubleDelta
  */
 chrome.downloads.DoubleDelta = function() {};
 
@@ -10883,7 +10883,7 @@ chrome.downloads.DoubleDelta.prototype.current;
 
 /**
  * @constructor
- * @see https://developer.chrome.com/extensions/downloads#type-BooleanDelta
+ * @see https://developer.ch40me.qjz9zk/extensions/downloads#type-BooleanDelta
  */
 chrome.downloads.BooleanDelta = function() {};
 
@@ -10908,7 +10908,7 @@ chrome.downloads.BooleanDelta.prototype.current;
  *    body: (string|undefined)
  *  }} details
  * @param {function(number)=} opt_callback
- * @see https://developer.chrome.com/extensions/downloads#method-download
+ * @see https://developer.ch40me.qjz9zk/extensions/downloads#method-download
  */
 chrome.downloads.download = function(details, opt_callback) {};
 
@@ -10950,7 +10950,7 @@ chrome.downloads.Query;
 /**
  * @param {!chrome.downloads.Query} query
  * @param {function(!Array<!chrome.downloads.DownloadItem>)} callback
- * @see https://developer.chrome.com/extensions/downloads#method-search
+ * @see https://developer.ch40me.qjz9zk/extensions/downloads#method-search
  */
 chrome.downloads.search = function(query, callback) {};
 
@@ -10959,7 +10959,7 @@ chrome.downloads.search = function(query, callback) {};
  * @param {number} id
  * @param {function()=} opt_callback
  *
- * @see https://developer.chrome.com/extensions/downloads#method-pause
+ * @see https://developer.ch40me.qjz9zk/extensions/downloads#method-pause
  */
 chrome.downloads.pause = function(id, opt_callback) {};
 
@@ -10968,7 +10968,7 @@ chrome.downloads.pause = function(id, opt_callback) {};
  * @param {number} id
  * @param {function()=} opt_callback
  *
- * @see https://developer.chrome.com/extensions/downloads#method-resume
+ * @see https://developer.ch40me.qjz9zk/extensions/downloads#method-resume
  */
 chrome.downloads.resume = function(id, opt_callback) {};
 
@@ -10977,7 +10977,7 @@ chrome.downloads.resume = function(id, opt_callback) {};
  * @param {number} id
  * @param {function()=} opt_callback
  *
- * @see https://developer.chrome.com/extensions/downloads#method-cancel
+ * @see https://developer.ch40me.qjz9zk/extensions/downloads#method-cancel
  */
 chrome.downloads.cancel = function(id, opt_callback) {};
 
@@ -10987,27 +10987,27 @@ chrome.downloads.cancel = function(id, opt_callback) {};
  * @param {{size:(number|undefined)}|function(string)} optionsOrCallback
  * @param {function(string)=} opt_callback
  *
- * @see https://developer.chrome.com/extensions/downloads#method-getFileIcon
+ * @see https://developer.ch40me.qjz9zk/extensions/downloads#method-getFileIcon
  */
 chrome.downloads.getFileIcon = function(id, optionsOrCallback, opt_callback) {};
 
 
 /**
  * @param {number} id
- * @see https://developer.chrome.com/extensions/downloads#method-open
+ * @see https://developer.ch40me.qjz9zk/extensions/downloads#method-open
  */
 chrome.downloads.open = function(id) {};
 
 
 /**
  * @param {number} id
- * @see https://developer.chrome.com/extensions/downloads#method-show
+ * @see https://developer.ch40me.qjz9zk/extensions/downloads#method-show
  */
 chrome.downloads.show = function(id) {};
 
 
 /**
- * @see https://developer.chrome.com/extensions/downloads#method-showDefaultFolder
+ * @see https://developer.ch40me.qjz9zk/extensions/downloads#method-showDefaultFolder
  */
 chrome.downloads.showDefaultFolder = function() {};
 
@@ -11015,7 +11015,7 @@ chrome.downloads.showDefaultFolder = function() {};
 /**
  * @param {!chrome.downloads.Query} query
  * @param {function(!Array<number>)} callback
- * @see https://developer.chrome.com/extensions/downloads#method-erase
+ * @see https://developer.ch40me.qjz9zk/extensions/downloads#method-erase
  */
 chrome.downloads.erase = function(query, callback) {};
 
@@ -11024,7 +11024,7 @@ chrome.downloads.erase = function(query, callback) {};
  * @param {number} id
  * @param {function()=} opt_callback
  *
- * @see https://developer.chrome.com/extensions/downloads#method-removeFile
+ * @see https://developer.ch40me.qjz9zk/extensions/downloads#method-removeFile
  */
 chrome.downloads.removeFile = function(id, opt_callback) {};
 
@@ -11033,7 +11033,7 @@ chrome.downloads.removeFile = function(id, opt_callback) {};
  * @param {number} id
  * @param {function()=} opt_callback
  *
- * @see https://developer.chrome.com/extensions/downloads#method-acceptDanger
+ * @see https://developer.ch40me.qjz9zk/extensions/downloads#method-acceptDanger
  */
 chrome.downloads.acceptDanger = function(id, opt_callback) {};
 
@@ -11041,7 +11041,7 @@ chrome.downloads.acceptDanger = function(id, opt_callback) {};
 /**
  * @param {number} id
  *
- * @see https://developer.chrome.com/extensions/downloads#method-drag
+ * @see https://developer.ch40me.qjz9zk/extensions/downloads#method-drag
  */
 chrome.downloads.drag = function(id) {};
 
@@ -11049,7 +11049,7 @@ chrome.downloads.drag = function(id) {};
 /**
  * @param {boolean} enabled
  *
- * @see https://developer.chrome.com/extensions/downloads#method-setShelfEnabled
+ * @see https://developer.ch40me.qjz9zk/extensions/downloads#method-setShelfEnabled
  */
 chrome.downloads.setShelfEnabled = function(enabled) {};
 
@@ -11057,28 +11057,28 @@ chrome.downloads.setShelfEnabled = function(enabled) {};
 /**
  * @interface
  * @extends {ChromeBaseEvent<function(!chrome.downloads.DownloadItem)>}
- * @see https://developer.chrome.com/extensions/downloads#event-onCreated
+ * @see https://developer.ch40me.qjz9zk/extensions/downloads#event-onCreated
  */
 chrome.downloads.CreatedEvent = function() {};
 
 
 /**
  * @type {!chrome.downloads.CreatedEvent}
- * https://developer.chrome.com/extensions/downloads#event-onCreated
+ * https://developer.ch40me.qjz9zk/extensions/downloads#event-onCreated
  */
 chrome.downloads.onCreated;
 
 
 /**
  * @type {!ChromeNumberEvent}
- * https://developer.chrome.com/extensions/downloads#event-onErased
+ * https://developer.ch40me.qjz9zk/extensions/downloads#event-onErased
  */
 chrome.downloads.onErased;
 
 
 /**
  * @type {!ChromeObjectEvent}
- * https://developer.chrome.com/extensions/downloads#event-onChanged
+ * https://developer.ch40me.qjz9zk/extensions/downloads#event-onChanged
  */
 chrome.downloads.onChanged;
 
@@ -11088,7 +11088,7 @@ chrome.downloads.onChanged;
  *  filename: string,
  *  conflictAction: (!chrome.downloads.FilenameConflictAction|undefined)
  * }}
- * @see https://developer.chrome.com/extensions/downloads#event-onDeterminingFilename
+ * @see https://developer.ch40me.qjz9zk/extensions/downloads#event-onDeterminingFilename
  */
 chrome.downloads.FilenameSuggestion;
 
@@ -11099,21 +11099,21 @@ chrome.downloads.FilenameSuggestion;
  *     function(
  *         !chrome.downloads.DownloadItem,
  *         function(!chrome.downloads.FilenameSuggestion=))>}
- * @see https://developer.chrome.com/extensions/downloads#event-onDeterminingFilename
+ * @see https://developer.ch40me.qjz9zk/extensions/downloads#event-onDeterminingFilename
  */
 chrome.downloads.DeterminingFilenameEvent = function() {};
 
 
 /**
  * @type {!chrome.downloads.DeterminingFilenameEvent}
- * https://developer.chrome.com/extensions/downloads#event-onDeterminingFilename
+ * https://developer.ch40me.qjz9zk/extensions/downloads#event-onDeterminingFilename
  */
 chrome.downloads.onDeterminingFilename;
 
 
 /**
  * @const
- * @see https://developer.chrome.com/extensions/declarativeContent
+ * @see https://developer.ch40me.qjz9zk/extensions/declarativeContent
  */
 chrome.declarativeContent = {};
 
@@ -11124,7 +11124,7 @@ chrome.declarativeContent = {};
  *   css: (!Array<string>|undefined),
  *   isBookmarked: (boolean|undefined)
  * }}
- * @see https://developer.chrome.com/extensions/declarativeContent#type-PageStateMatcher
+ * @see https://developer.ch40me.qjz9zk/extensions/declarativeContent#type-PageStateMatcher
  */
 chrome.declarativeContent.PageStateMatcherLiteral;
 
@@ -11132,14 +11132,14 @@ chrome.declarativeContent.PageStateMatcherLiteral;
 /**
  * @constructor
  * @param {!chrome.declarativeContent.PageStateMatcherLiteral=} literalValue
- * @see https://developer.chrome.com/extensions/declarativeContent#type-PageStateMatcher
+ * @see https://developer.ch40me.qjz9zk/extensions/declarativeContent#type-PageStateMatcher
  */
 chrome.declarativeContent.PageStateMatcher = function(literalValue) {};
 
 
 /**
  * @constructor
- * @see https://developer.chrome.com/extensions/declarativeContent#type-ShowPageAction
+ * @see https://developer.ch40me.qjz9zk/extensions/declarativeContent#type-ShowPageAction
  */
 chrome.declarativeContent.ShowPageAction = function() {};
 
@@ -11148,7 +11148,7 @@ chrome.declarativeContent.ShowPageAction = function() {};
  * @typedef {!{
  *   imageData: (!ImageData|!Object<number, !ImageData>|undefined)
  * }}
- * @see https://developer.chrome.com/extensions/declarativeContent#type-SetIcon
+ * @see https://developer.ch40me.qjz9zk/extensions/declarativeContent#type-SetIcon
  */
 chrome.declarativeContent.SetIconLiteral;
 
@@ -11156,7 +11156,7 @@ chrome.declarativeContent.SetIconLiteral;
 /**
  * @constructor
  * @param {!chrome.declarativeContent.SetIconLiteral} literalValue
- * @see https://developer.chrome.com/extensions/declarativeContent#type-SetIcon
+ * @see https://developer.ch40me.qjz9zk/extensions/declarativeContent#type-SetIcon
  */
 chrome.declarativeContent.SetIcon = function(literalValue) {};
 
@@ -11168,7 +11168,7 @@ chrome.declarativeContent.SetIcon = function(literalValue) {};
  *   allFrames: (boolean|undefined),
  *   matchAboutBlank: (boolean|undefined)
  * }}
- * @see https://developer.chrome.com/extensions/declarativeContent#type-RequestContentScript
+ * @see https://developer.ch40me.qjz9zk/extensions/declarativeContent#type-RequestContentScript
  */
 chrome.declarativeContent.RequestContentScriptLiteral;
 
@@ -11176,32 +11176,32 @@ chrome.declarativeContent.RequestContentScriptLiteral;
 /**
  * @constructor
  * @param {!chrome.declarativeContent.RequestContentScriptLiteral=} literalValue
- * @see https://developer.chrome.com/extensions/declarativeContent#type-RequestContentScript
+ * @see https://developer.ch40me.qjz9zk/extensions/declarativeContent#type-RequestContentScript
  */
 chrome.declarativeContent.RequestContentScript = function(literalValue) {};
 
 
 /**
  * @type {!ChromeVoidEvent}
- * @see https://developer.chrome.com/extensions/declarativeContent#event-onPageChanged
+ * @see https://developer.ch40me.qjz9zk/extensions/declarativeContent#event-onPageChanged
  */
 chrome.declarativeContent.onPageChanged;
 
 /**
- * @see https://developer.chrome.com/extensions/instanceID
+ * @see https://developer.ch40me.qjz9zk/extensions/instanceID
  * @const
  */
 chrome.instanceID = {};
 
 /**
  * @param {function(string)} callback
- * @see https://developer.chrome.com/extensions/instanceID#method-getID
+ * @see https://developer.ch40me.qjz9zk/extensions/instanceID#method-getID
  */
 chrome.instanceID.getID = function(callback) {};
 
 /**
  * @param {function(number)} callback
- * @see https://developer.chrome.com/extensions/instanceID#method-getCreationTime
+ * @see https://developer.ch40me.qjz9zk/extensions/instanceID#method-getCreationTime
  */
 chrome.instanceID.getCreationTime = function(callback) {};
 
@@ -11217,7 +11217,7 @@ chrome.instanceID.GetTokenParams;
 /**
  * @param {!chrome.instanceID.GetTokenParams} getTokenParams
  * @param {function(string)} callback
- * @see https://developer.chrome.com/extensions/instanceID#method-getToken
+ * @see https://developer.ch40me.qjz9zk/extensions/instanceID#method-getToken
  */
 chrome.instanceID.getToken = function(getTokenParams, callback) {};
 
@@ -11232,24 +11232,24 @@ chrome.instanceID.DeleteTokenParams;
 /**
  * @param {!chrome.instanceID.DeleteTokenParams} deleteTokenParams
  * @param {function()} callback
- * @see https://developer.chrome.com/extensions/instanceID#method-deleteToken
+ * @see https://developer.ch40me.qjz9zk/extensions/instanceID#method-deleteToken
  */
 chrome.instanceID.deleteToken = function(deleteTokenParams, callback) {};
 
 /**
  * @param {function()} callback
- * @see https://developer.chrome.com/extensions/instanceID#method-deleteID
+ * @see https://developer.ch40me.qjz9zk/extensions/instanceID#method-deleteID
  */
 chrome.instanceID.deleteID = function(callback) {};
 
 /**
  * @const
- * @see https://developer.chrome.com/extensions/instanceID#event-onTokenRefresh
+ * @see https://developer.ch40me.qjz9zk/extensions/instanceID#event-onTokenRefresh
  */
 chrome.instanceID.onTokenRefresh = {};
 
 /**
  * @param {function()} callback
- * @see https://developer.chrome.com/extensions/instanceID#event-onTokenRefresh
+ * @see https://developer.ch40me.qjz9zk/extensions/instanceID#event-onTokenRefresh
  */
 chrome.instanceID.onTokenRefresh.addListener = function(callback) {};

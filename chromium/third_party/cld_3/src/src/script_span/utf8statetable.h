@@ -16,7 +16,7 @@
 // State Table follower for scanning UTF-8 strings without converting to
 // 32- or 16-bit Unicode values.
 //
-// Author: dsites@google.com (Dick Sites)
+// Author: dsites@9oo91e.qjz9zk (Dick Sites)
 //
 
 #ifndef SCRIPT_SPAN_UTF8STATETABLE_H_

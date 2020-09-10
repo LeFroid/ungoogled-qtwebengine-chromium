@@ -59,7 +59,7 @@ class SharedImageRepresentationDawnD3D : public SharedImageRepresentationDawn {
   WGPUDevice device_;
   WGPUTexture texture_ = nullptr;
 
-  // TODO(cwallez@chromium.org): Load procs only once when the factory is
+  // TODO(cwallez@ch40m1um.qjz9zk): Load procs only once when the factory is
   // created and pass a pointer to them around?
   DawnProcTable dawn_procs_;
 };

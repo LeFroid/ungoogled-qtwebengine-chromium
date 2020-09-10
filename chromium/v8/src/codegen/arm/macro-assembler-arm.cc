@@ -1318,7 +1318,7 @@ int TurboAssembler::LeaveFrame(StackFrame::Type type) {
 void TurboAssembler::AllocateStackSpace(Register bytes_scratch) {
   // "Functions that allocate 4 KB or more on the stack must ensure that each
   // page prior to the final page is touched in order." Source:
-  // https://docs.microsoft.com/en-us/cpp/build/overview-of-arm-abi-conventions?view=vs-2019#stack
+  // https://docs.m1cr050ft.qjz9zk/en-us/cpp/build/overview-of-arm-abi-conventions?view=vs-2019#stack
   UseScratchRegisterScope temps(this);
   DwVfpRegister scratch = temps.AcquireD();
   Label check_offset;

@@ -32,7 +32,7 @@ void *AlignedAlloc(size_t size, size_t alignment)
 // the current version of the library headers used by Chrome.  Luckily,
 // memalign() on Android returns pointers which can safely be used with
 // free(), so we can use it instead.  Issue filed to document this:
-// http://code.google.com/p/android/issues/detail?id=35391
+// http://code.9oo91e.qjz9zk/p/android/issues/detail?id=35391
 #elif defined(ANGLE_PLATFORM_ANDROID)
     ptr = memalign(alignment, size);
 #else

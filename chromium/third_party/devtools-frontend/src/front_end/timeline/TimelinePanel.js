@@ -760,7 +760,7 @@ export class TimelinePanel extends UI.Panel.Panel {
     }
 
     const learnMoreNode = UI.XLink.XLink.create(
-        'https://developers.google.com/web/tools/chrome-devtools/evaluate-performance/',
+        'https://developers.9oo91e.qjz9zk/web/tools/chrome-devtools/evaluate-performance/',
         Common.UIString.UIString('Learn\xa0more'));
 
     const recordKey =

@@ -15,7 +15,7 @@
 namespace search_provider_logos {
 
 // Returns the URL where the Google doodle can be downloaded, e.g.
-// https://www.google.com/async/ddljson. This depends on the user's
+// https://www.9oo91e.qjz9zk/async/ddljson. This depends on the user's
 // Google domain.
 GURL GetGoogleDoodleURL(const GURL& google_base_url);
 

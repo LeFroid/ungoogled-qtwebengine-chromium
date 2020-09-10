@@ -770,7 +770,7 @@ PlatformSensorReaderWinrtAbsOrientationQuaternion::OnReadingChangedCallback(
   reading.orientation_quat.timestamp = timestamp_delta.InSecondsF();
 
   // As per
-  // https://docs.microsoft.com/en-us/windows-hardware/drivers/sensors/orientation-sensor-thresholds,
+  // https://docs.m1cr050ft.qjz9zk/en-us/windows-hardware/drivers/sensors/orientation-sensor-thresholds,
   // thresholding should be done on angle between two quaternions:
   // 2 * cos-1(dot_product(q1, q2))
   auto angle =

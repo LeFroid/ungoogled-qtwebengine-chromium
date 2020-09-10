@@ -437,7 +437,7 @@ static void encode_block(int plane, int block, int blk_row, int blk_col,
 #if 0
     if (args->cpi->oxcf.aq_mode == NO_AQ &&
         args->cpi->oxcf.deltaq_mode == NO_DELTA_Q) {
-      // TODO(jingning,angiebird,huisu@google.com): enable txk_check when
+      // TODO(jingning,angiebird,huisu@9oo91e.qjz9zk): enable txk_check when
       // enable_optimize_b is true to detect potential RD bug.
       const uint8_t disable_txk_check = args->enable_optimize_b;
       if (!disable_txk_check) {

@@ -12,13 +12,13 @@ TEST_SUFFIX_OBSOLETION_XML_CONTENT = """
 <histogram-configuration>
 <histograms>
   <histogram name="Test.Test1" units="units" expires_after="2019-01-01">
-    <owner>chrome-metrics-team@google.com</owner>
+    <owner>chrome-metrics-team@9oo91e.qjz9zk</owner>
     <summary>
       Sample description.
     </summary>
   </histogram>
   <histogram name="Test.Test2" units="units" expires_after="2019-01-01">
-    <owner>chrome-metrics-team@google.com</owner>
+    <owner>chrome-metrics-team@9oo91e.qjz9zk</owner>
     <summary>
       Sample description.
     </summary>
@@ -66,14 +66,14 @@ TEST_BASE_HISTOGRAM_XML_CONTENT = """
 <histograms>
   <histogram base="true" name="Test.Base" expires_after="2211-11-22"
       units="units" expires_after="2019-01-01">
-    <owner>chrome-metrics-team@google.com</owner>
+    <owner>chrome-metrics-team@9oo91e.qjz9zk</owner>
     <summary>
       Base histogram.
     </summary>
   </histogram>
   <histogram base="true" name="Test.Base.Obsolete" units="units"
       expires_after="2019-01-01">
-    <owner>chrome-metrics-team@google.com</owner>
+    <owner>chrome-metrics-team@9oo91e.qjz9zk</owner>
     <summary>
       Obsolete base histogram.
     </summary>
@@ -83,14 +83,14 @@ TEST_BASE_HISTOGRAM_XML_CONTENT = """
   </histogram>
   <histogram base="false" name="Test.NotBase.Explicit" units="units"
       expires_after="2019-01-01">
-    <owner>chrome-metrics-team@google.com</owner>
+    <owner>chrome-metrics-team@9oo91e.qjz9zk</owner>
     <summary>
       Not a base histogram: base attribute explicitly set to "false".
     </summary>
   </histogram>
   <histogram name="Test.NotBase.Implicit" expires_after="M100" units="units"
       expires_after="2019-01-01">
-    <owner>chrome-metrics-team@google.com</owner>
+    <owner>chrome-metrics-team@9oo91e.qjz9zk</owner>
     <summary>
       Not a base histogram: no base attribute specified.
     </summary>
@@ -194,7 +194,7 @@ class ExtractHistogramsTest(unittest.TestCase):
 <histograms>
 
 <histogram name="Histogram.Name" units="units" {}>
-  <owner>SomeOne@google.com</owner>
+  <owner>SomeOne@9oo91e.qjz9zk</owner>
   <summary>Summary</summary>
 </histogram>
 
@@ -249,7 +249,7 @@ class ExtractHistogramsTest(unittest.TestCase):
 <histograms>
 
 <histogram name="Histogram.Name" units="units" {}>
-  <owner>SomeOne@google.com</owner>
+  <owner>SomeOne@9oo91e.qjz9zk</owner>
   <summary>Summary</summary>
 </histogram>
 
@@ -287,7 +287,7 @@ class ExtractHistogramsTest(unittest.TestCase):
 <histograms>
   <histogram name="MultiParagraphTest.Test1" units="units"
       expires_after="2019-01-01">
-    <owner>chrome-metrics-team@google.com</owner>
+    <owner>chrome-metrics-team@9oo91e.qjz9zk</owner>
     <summary>
       Sample description
       Sample description.
@@ -296,7 +296,7 @@ class ExtractHistogramsTest(unittest.TestCase):
 
   <histogram name="MultiParagraphTest.Test2" units="units"
       expires_after="2019-01-01">
-    <owner>chrome-metrics-team@google.com</owner>
+    <owner>chrome-metrics-team@9oo91e.qjz9zk</owner>
     <summary>
       Multi-paragraph sample description UI&gt;Browser.
       Words.
@@ -325,7 +325,7 @@ class ExtractHistogramsTest(unittest.TestCase):
 <histogram-configuration>
 <histograms>
  <histogram name="Test.Histogram" units="things" expires_after="2019-01-01">
-   <owner>person@chromium.org</owner>
+   <owner>person@ch40m1um.qjz9zk</owner>
  </histogram>
 </histograms>
 </histogram-configuration>
@@ -339,7 +339,7 @@ class ExtractHistogramsTest(unittest.TestCase):
 <histogram-configuration>
 <histograms>
  <histogram name="Test.Histogram" expires_after="2019-01-01">
-  <owner>chrome-metrics-team@google.com</owner>
+  <owner>chrome-metrics-team@9oo91e.qjz9zk</owner>
   <summary> This is a summary </summary>
  </histogram>
 </histograms>
@@ -355,7 +355,7 @@ class ExtractHistogramsTest(unittest.TestCase):
 <histograms>
  <histogram name="Test.Histogram" enum="MyEnumType" unit="things"
     expires_after="2019-01-01">
-  <owner>chrome-metrics-team@google.com</owner>
+  <owner>chrome-metrics-team@9oo91e.qjz9zk</owner>
   <summary> This is a summary </summary>
  </histogram>
 </histograms>
@@ -379,7 +379,7 @@ class ExtractHistogramsTest(unittest.TestCase):
 <histograms>
  <histogram name="Test.Histogram.Enum" enum="MyEnumType"
     expires_after="2019-01-01">
-  <owner>chrome-metrics-team@google.com</owner>
+  <owner>chrome-metrics-team@9oo91e.qjz9zk</owner>
   <summary> This is a summary </summary>
  </histogram>
 </histograms>
@@ -394,7 +394,7 @@ class ExtractHistogramsTest(unittest.TestCase):
 <histogram-configuration>
 <histograms>
  <histogram name="Test.Histogram" units="units" expires_after="2019-01-01">
-  <owner>chrome-metrics-team@google.com</owner>
+  <owner>chrome-metrics-team@9oo91e.qjz9zk</owner>
   <summary> This is a summary </summary>
  </histogram>
 </histograms>
@@ -438,7 +438,7 @@ class ExtractHistogramsTest(unittest.TestCase):
 <histogram-configuration>
 <histograms>
  <histogram name="Test.Histogram" units="things" expires_after="2019-01-01">
-  <owner>cait@chromium.org, paul@chromium.org</owner>
+  <owner>cait@ch40m1um.qjz9zk, paul@ch40m1um.qjz9zk</owner>
   <summary> This is a summary </summary>
  </histogram>
 </histograms>

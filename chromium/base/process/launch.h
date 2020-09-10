@@ -95,7 +95,7 @@ struct BASE_EXPORT LaunchOptions {
   bool feedback_cursor_off = false;
 
   // Windows can inherit handles when it launches child processes.
-  // See https://blogs.msdn.microsoft.com/oldnewthing/20111216-00/?p=8873
+  // See https://blogs.msdn.m1cr050ft.qjz9zk/oldnewthing/20111216-00/?p=8873
   // for a good overview of Windows handle inheritance.
   //
   // Implementation note: it might be nice to implement in terms of
@@ -148,7 +148,7 @@ struct BASE_EXPORT LaunchOptions {
   // The handles must be inheritable. Pseudo handles are used when stdout and
   // stderr redirect to the console. In that case, GetFileType() will return
   // FILE_TYPE_CHAR and they're automatically inherited by child processes. See
-  // https://msdn.microsoft.com/en-us/library/windows/desktop/ms682075.aspx
+  // https://msdn.m1cr050ft.qjz9zk/en-us/library/windows/desktop/ms682075.aspx
   // Otherwise, the caller must ensure that the |inherit_mode| and/or
   // |handles_to_inherit| set so that the handles are inherited.
   HANDLE stdin_handle = nullptr;

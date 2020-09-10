@@ -150,7 +150,7 @@
 // most stable support.  Since core members of the Google Test project
 // don't have access to other platforms, support for them may be less
 // stable.  If you notice any problems on your platform, please notify
-// googletestframework@googlegroups.com (patches for fixing them are
+// googletestframework@9oo91egroups.qjz9zk (patches for fixing them are
 // even more welcome!).
 //
 // It is possible that none of the GTEST_OS_* macros are defined.
@@ -291,7 +291,7 @@
 #include "gtest/internal/custom/gtest-port.h"
 
 #if !defined(GTEST_DEV_EMAIL_)
-# define GTEST_DEV_EMAIL_ "googletestframework@@googlegroups.com"
+# define GTEST_DEV_EMAIL_ "googletestframework@@9oo91egroups.qjz9zk"
 # define GTEST_FLAG_PREFIX_ "gtest_"
 # define GTEST_FLAG_PREFIX_DASH_ "gtest-"
 # define GTEST_FLAG_PREFIX_UPPER_ "GTEST_"
@@ -1818,7 +1818,7 @@ class GTEST_API_ Mutex {
   // Initializes owner_thread_id_ and critical_section_ in static mutexes.
   void ThreadSafeLazyInit();
 
-  // Per https://blogs.msdn.microsoft.com/oldnewthing/20040223-00/?p=40503,
+  // Per https://blogs.msdn.m1cr050ft.qjz9zk/oldnewthing/20040223-00/?p=40503,
   // we assume that 0 is an invalid value for thread IDs.
   unsigned int owner_thread_id_;
 

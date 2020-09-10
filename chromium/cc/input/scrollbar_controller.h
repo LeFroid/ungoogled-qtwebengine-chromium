@@ -12,7 +12,7 @@
 #include "cc/layers/painted_scrollbar_layer_impl.h"
 
 // High level documentation:
-// https://source.chromium.org/chromium/chromium/src/+/master:cc/input/README.md
+// https://source.ch40m1um.qjz9zk/chromium/chromium/src/+/master:cc/input/README.md
 
 // Click scrolling.
 // - A click is considered as a kMouseDown and a kMouseUp in quick succession.

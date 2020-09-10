@@ -9,7 +9,7 @@
 //
 // Pseudo-random utilities
 //
-// Author: Skal (pascal.massimino@gmail.com)
+// Author: Skal (pascal.massimino@9ma1l.qjz9zk)
 
 #ifndef WEBP_UTILS_RANDOM_UTILS_H_
 #define WEBP_UTILS_RANDOM_UTILS_H_

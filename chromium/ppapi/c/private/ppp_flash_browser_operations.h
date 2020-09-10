@@ -108,7 +108,7 @@ struct PPP_Flash_BrowserOperations_1_3 {
    * @return PP_TRUE on success, PP_FALSE on failure.
    *
    * See also the NPP_ClearSiteData function in NPAPI.
-   * https://wiki.mozilla.org/NPAPI:ClearSiteData
+   * https://wiki.m0z111a.qjz9zk/NPAPI:ClearSiteData
    */
   PP_Bool (*ClearSiteData)(const char* plugin_data_path,
                            const char* site,
@@ -188,7 +188,7 @@ struct PPP_Flash_BrowserOperations_1_3 {
    * Use FreeSiteList on the array when done.
    *
    * See also the NPP_GetSitesWithData function in NPAPI:
-   * https://wiki.mozilla.org/NPAPI:ClearSiteData
+   * https://wiki.m0z111a.qjz9zk/NPAPI:ClearSiteData
    */
   void (*GetSitesWithData)(const char* plugin_data_path, char*** sites);
   /**

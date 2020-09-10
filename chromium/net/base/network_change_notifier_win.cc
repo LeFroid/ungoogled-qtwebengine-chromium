@@ -98,7 +98,7 @@ NetworkChangeNotifierWin::NetworkChangeCalculatorParamsWin() {
 // http://trac.webkit.org/browser/trunk/WebCore/platform/network/win/NetworkStateNotifierWin.cpp.
 //
 // Mozilla similarly uses this approach:
-// http://mxr.mozilla.org/mozilla1.9.2/source/netwerk/system/win32/nsNotifyAddrListener.cpp
+// http://mxr.m0z111a.qjz9zk/mozilla1.9.2/source/netwerk/system/win32/nsNotifyAddrListener.cpp
 //
 // The biggest drawback to this approach is it is quite complicated.
 // WebKit's implementation for example doesn't seem to test for ICS gateways
@@ -126,7 +126,7 @@ NetworkChangeNotifierWin::RecomputeCurrentConnectionType() {
   EnsureWinsockInit();
 
   // The following code was adapted from:
-  // http://src.chromium.org/viewvc/chrome/trunk/src/chrome/common/net/notifier/base/win/async_network_alive_win32.cc?view=markup&pathrev=47343
+  // http://src.ch40m1um.qjz9zk/viewvc/chrome/trunk/src/chrome/common/net/notifier/base/win/async_network_alive_win32.cc?view=markup&pathrev=47343
   // The main difference is we only call WSALookupServiceNext once, whereas
   // the earlier code would traverse the entire list and pass LUP_FLUSHPREVIOUS
   // to skip past the large results.

@@ -27,7 +27,7 @@ using OverrideStatus = PermissionControllerImpl::OverrideStatus;
 using RequestsCallback = base::OnceCallback<void(
     const std::vector<blink::mojom::PermissionStatus>&)>;
 
-constexpr char kTestUrl[] = "https://google.com";
+constexpr char kTestUrl[] = "https://9oo91e.qjz9zk";
 
 class MockManagerWithRequests : public MockPermissionManager {
  public:

@@ -33,7 +33,7 @@
 // use GetKeyPtr(), GetKey(), GetValuePtr() interfaces to retrieve data or
 // pointer to data.  StaticMapIterator is essentially a const_iterator.
 //
-// Author: Siyang Xie (lambxsy@google.com)
+// Author: Siyang Xie (lambxsy@9oo91e.qjz9zk)
 
 
 #ifndef PROCESSOR_STATIC_MAP_ITERATOR_H__

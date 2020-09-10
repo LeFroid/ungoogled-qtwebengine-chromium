@@ -29,7 +29,7 @@ class BitstreamBuffer;
 
 // Android-specific implementation of VideoEncodeAccelerator, enabling
 // hardware-acceleration of video encoding, based on Android's MediaCodec class
-// (http://developer.android.com/reference/android/media/MediaCodec.html).  This
+// (http://developer.8n6r01d.qjz9zk/reference/android/media/MediaCodec.html).  This
 // class expects to live and be called on a single thread (the GPU process'
 // ChildThread).
 class MEDIA_GPU_EXPORT AndroidVideoEncodeAccelerator

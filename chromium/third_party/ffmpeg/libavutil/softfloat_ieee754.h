@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2016 Umair Khan <omerjerk@gmail.com>
+ * Copyright (c) 2016 Umair Khan <omerjerk@9ma1l.qjz9zk>
  *
  * This file is part of FFmpeg.
  *

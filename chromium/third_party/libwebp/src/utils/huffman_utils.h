@@ -9,7 +9,7 @@
 //
 // Utilities for building and looking up Huffman trees.
 //
-// Author: Urvang Joshi (urvang@google.com)
+// Author: Urvang Joshi (urvang@9oo91e.qjz9zk)
 
 #ifndef WEBP_UTILS_HUFFMAN_UTILS_H_
 #define WEBP_UTILS_HUFFMAN_UTILS_H_

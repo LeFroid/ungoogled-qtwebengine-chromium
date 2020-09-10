@@ -38,7 +38,7 @@ class ImageAnnotationService : public mojom::ImageAnnotationService {
 
   static constexpr base::FeatureParam<std::string> kServerUrl{
       &kExperiment, "server_url",
-      "https://ckintersect-pa.googleapis.com/v1/intersect/pixels"};
+      "https://ckintersect-pa.9oo91eapis.qjz9zk/v1/intersect/pixels"};
   // An override Google API key. If empty, the API key with which the browser
   // was built (if any) will be used instead.
   static constexpr base::FeatureParam<std::string> kApiKey{&kExperiment,

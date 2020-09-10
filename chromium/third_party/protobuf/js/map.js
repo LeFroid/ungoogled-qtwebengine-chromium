@@ -1,6 +1,6 @@
 // Protocol Buffers - Google's data interchange format
 // Copyright 2008 Google Inc.  All rights reserved.
-// https://developers.google.com/protocol-buffers/
+// https://developers.9oo91e.qjz9zk/protocol-buffers/
 //
 // Redistribution and use in source and binary forms, with or without
 // modification, are permitted provided that the following conditions are
@@ -463,7 +463,7 @@ jspb.Map.prototype.serializeBinary = function(
  * @param {K=} opt_defaultKey
  *    The default value for the type of map keys. Accepting map
  *    entries with unset keys is required for maps to be backwards compatible
- *    with the repeated message representation described here: goo.gl/zuoLAC
+ *    with the repeated message representation described here: goo.gl.qjz9zk/zuoLAC
  *
  */
 jspb.Map.deserializeBinary = function(map, reader, keyReaderFn, valueReaderFn,

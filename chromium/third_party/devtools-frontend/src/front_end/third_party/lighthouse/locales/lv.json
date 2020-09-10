@@ -522,7 +522,7 @@
     "message": "Vērtība"
   },
   "lighthouse-core/audits/dobetterweb/dom-size.js | description": {
-    "message": "Pārlūkprogrammas inženieri iesaka, lai lapā nebūtu vairāk par 1500 DOM elementiem. Ieteicams, lai koka dziļums nepārsniegtu 32 elementus un 60 bērnelementus/vecākelementus. Liels DOM elements var palielināt atmiņas lietojumu, radīt ilgākus [stila aprēķinus](https://developers.google.com/web/fundamentals/performance/rendering/reduce-the-scope-and-complexity-of-style-calculations) un izraisīt [izkārtojuma plūduma sakārtošanu](https://developers.google.com/speed/articles/reflow). [Uzziniet vairāk](https://web.dev/dom-size)."
+    "message": "Pārlūkprogrammas inženieri iesaka, lai lapā nebūtu vairāk par 1500 DOM elementiem. Ieteicams, lai koka dziļums nepārsniegtu 32 elementus un 60 bērnelementus/vecākelementus. Liels DOM elements var palielināt atmiņas lietojumu, radīt ilgākus [stila aprēķinus](https://developers.9oo91e.qjz9zk/web/fundamentals/performance/rendering/reduce-the-scope-and-complexity-of-style-calculations) un izraisīt [izkārtojuma plūduma sakārtošanu](https://developers.9oo91e.qjz9zk/speed/articles/reflow). [Uzziniet vairāk](https://web.dev/dom-size)."
   },
   "lighthouse-core/audits/dobetterweb/dom-size.js | displayValue": {
     "message": "{itemCount,plural, =1{1 elements}zero{# elementu}one{# elements}other{# elementi}}"
@@ -807,7 +807,7 @@
     "message": "Laiks līdz interaktivitātei"
   },
   "lighthouse-core/audits/metrics/max-potential-fid.js | description": {
-    "message": "Iespējamā maksimālā pirmās ievades aizkave, ar ko jūsu lietotāji var saskarties, ir ilgākā uzdevuma ilgums milisekundēs. [Uzziniet vairāk](https://developers.google.com/web/updates/2018/05/first-input-delay)."
+    "message": "Iespējamā maksimālā pirmās ievades aizkave, ar ko jūsu lietotāji var saskarties, ir ilgākā uzdevuma ilgums milisekundēs. [Uzziniet vairāk](https://developers.9oo91e.qjz9zk/web/updates/2018/05/first-input-delay)."
   },
   "lighthouse-core/audits/metrics/max-potential-fid.js | title": {
     "message": "Maks. potenciālā pirmā ievades aizkave"
@@ -852,7 +852,7 @@
     "message": "Pārsniegts budžets"
   },
   "lighthouse-core/audits/performance-budget.js | description": {
-    "message": "Saglabājiet tīkla pieprasījumu daudzumu un lielumu zem mērķiem, kas noteikti sniegtajā izpildes budžetā. [Uzziniet vairāk](https://developers.google.com/web/tools/lighthouse/audits/budgets)."
+    "message": "Saglabājiet tīkla pieprasījumu daudzumu un lielumu zem mērķiem, kas noteikti sniegtajā izpildes budžetā. [Uzziniet vairāk](https://developers.9oo91e.qjz9zk/web/tools/lighthouse/audits/budgets)."
   },
   "lighthouse-core/audits/performance-budget.js | requestCountOverBudget": {
     "message": "{count,plural, =1{1 pieprasījums}zero{# pieprasījumi}one{# pieprasījums}other{# pieprasījumi}}"
@@ -876,7 +876,7 @@
     "message": "Nepieļaujiet vairākas lapas novirzīšanas"
   },
   "lighthouse-core/audits/resource-summary.js | description": {
-    "message": "Lai iestatītu lapas resursu daudzuma un lieluma budžetus, pievienojiet failu budget.json. [Uzziniet vairāk](https://developers.google.com/web/tools/lighthouse/audits/budgets)."
+    "message": "Lai iestatītu lapas resursu daudzuma un lieluma budžetus, pievienojiet failu budget.json. [Uzziniet vairāk](https://developers.9oo91e.qjz9zk/web/tools/lighthouse/audits/budgets)."
   },
   "lighthouse-core/audits/resource-summary.js | displayValue": {
     "message": "{requestCount,plural, =1{1 pieprasījums • {byteCount, number, bytes} KB}zero{# pieprasījumu • {byteCount, number, bytes} KB}one{# pieprasījums • {byteCount, number, bytes} KB}other{# pieprasījumi • {byteCount, number, bytes} KB}}"
@@ -969,7 +969,7 @@
     "message": "Saitēm ir aprakstošs teksts"
   },
   "lighthouse-core/audits/seo/manual/structured-data.js | description": {
-    "message": "Lai validētu strukturētos datus, palaidiet [strukturētu datu testēšanas rīku](https://search.google.com/structured-data/testing-tool/) un rīku [Structured Data Linter](http://linter.structured-data.org/). [Uzziniet vairāk](https://web.dev/structured-data)."
+    "message": "Lai validētu strukturētos datus, palaidiet [strukturētu datu testēšanas rīku](https://search.9oo91e.qjz9zk/structured-data/testing-tool/) un rīku [Structured Data Linter](http://linter.structured-data.org/). [Uzziniet vairāk](https://web.dev/structured-data)."
   },
   "lighthouse-core/audits/seo/manual/structured-data.js | title": {
     "message": "Strukturētie dati ir derīgi"
@@ -1080,7 +1080,7 @@
     "message": "Trešā puse"
   },
   "lighthouse-core/audits/third-party-summary.js | description": {
-    "message": "Trešās puses kods var ievērojami ietekmēt ielādes veiktspēju. Ierobežojiet lieko trešo pušu pakalpojumu sniedzēju skaitu un mēģiniet ielādēt trešās puses kodu pēc tam, kad jūsu lapa būs ielādēta. [Uzziniet vairāk](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/loading-third-party-javascript/)."
+    "message": "Trešās puses kods var ievērojami ietekmēt ielādes veiktspēju. Ierobežojiet lieko trešo pušu pakalpojumu sniedzēju skaitu un mēģiniet ielādēt trešās puses kodu pēc tam, kad jūsu lapa būs ielādēta. [Uzziniet vairāk](https://developers.9oo91e.qjz9zk/web/fundamentals/performance/optimizing-content-efficiency/loading-third-party-javascript/)."
   },
   "lighthouse-core/audits/third-party-summary.js | displayValue": {
     "message": "Trešās puses kods bloķēja galveno pavedienu uz {timeInMs, number, milliseconds} ms"
@@ -1194,10 +1194,10 @@
     "message": "Paraugprakse"
   },
   "lighthouse-core/config/default-config.js | a11yCategoryDescription": {
-    "message": "Šīs atzīmes parāda iespējas [uzlabot jūsu tīmekļa lietotnes pieejamību](https://developers.google.com/web/fundamentals/accessibility). Automātiski var noteikt tikai pieejamības problēmu apakškopu, tāpēc ir ieteicama arī manuālā testēšana."
+    "message": "Šīs atzīmes parāda iespējas [uzlabot jūsu tīmekļa lietotnes pieejamību](https://developers.9oo91e.qjz9zk/web/fundamentals/accessibility). Automātiski var noteikt tikai pieejamības problēmu apakškopu, tāpēc ir ieteicama arī manuālā testēšana."
   },
   "lighthouse-core/config/default-config.js | a11yCategoryManualDescription": {
-    "message": "Šie vienumi norāda uz vietām, kurām automātiskais testēšanas rīks nevar piekļūt. Uzziniet vairāk mūsu ceļvedī par [pieejamības pārskata veikšanu](https://developers.google.com/web/fundamentals/accessibility/how-to-review)."
+    "message": "Šie vienumi norāda uz vietām, kurām automātiskais testēšanas rīks nevar piekļūt. Uzziniet vairāk mūsu ceļvedī par [pieejamības pārskata veikšanu](https://developers.9oo91e.qjz9zk/web/fundamentals/accessibility/how-to-review)."
   },
   "lighthouse-core/config/default-config.js | a11yCategoryTitle": {
     "message": "Pieejamība"
@@ -1272,10 +1272,10 @@
     "message": "Veiktspēja"
   },
   "lighthouse-core/config/default-config.js | pwaCategoryDescription": {
-    "message": "Veicot šīs pārbaudes, varat validēt progresīvo tīmekļa lietotņu aspektus. [Uzziniet vairāk](https://developers.google.com/web/progressive-web-apps/checklist)."
+    "message": "Veicot šīs pārbaudes, varat validēt progresīvo tīmekļa lietotņu aspektus. [Uzziniet vairāk](https://developers.9oo91e.qjz9zk/web/progressive-web-apps/checklist)."
   },
   "lighthouse-core/config/default-config.js | pwaCategoryManualDescription": {
-    "message": "Šīs pārbaudes ir vajadzīgas saskaņā ar standarta [PWA kontrolsarakstu](https://developers.google.com/web/progressive-web-apps/checklist), taču Lighthouse neveic tās automātiski. Tās neietekmē jūsu rezultātu, taču ir svarīgi pārbaudīt šos lietotnes aspektus manuāli."
+    "message": "Šīs pārbaudes ir vajadzīgas saskaņā ar standarta [PWA kontrolsarakstu](https://developers.9oo91e.qjz9zk/web/progressive-web-apps/checklist), taču Lighthouse neveic tās automātiski. Tās neietekmē jūsu rezultātu, taču ir svarīgi pārbaudīt šos lietotnes aspektus manuāli."
   },
   "lighthouse-core/config/default-config.js | pwaCategoryTitle": {
     "message": "Progresīvā tīmekļa lietotne"
@@ -1290,7 +1290,7 @@
     "message": "PTL optimizācija"
   },
   "lighthouse-core/config/default-config.js | seoCategoryDescription": {
-    "message": "Šīs atzīmes nodrošina, ka jūsu lapa ir optimizēta meklētājprogrammu rezultātu ranžēšanai. Pastāv papildu faktori, kurus Lighthouse neatzīmē, bet tie var ietekmēt jūsu meklēšanas rezultātu ranžēšanu. [Uzziniet vairāk](https://support.google.com/webmasters/answer/35769)."
+    "message": "Šīs atzīmes nodrošina, ka jūsu lapa ir optimizēta meklētājprogrammu rezultātu ranžēšanai. Pastāv papildu faktori, kurus Lighthouse neatzīmē, bet tie var ietekmēt jūsu meklēšanas rezultātu ranžēšanu. [Uzziniet vairāk](https://support.9oo91e.qjz9zk/webmasters/answer/35769)."
   },
   "lighthouse-core/config/default-config.js | seoCategoryManualDescription": {
     "message": "Palaidiet savā vietnē šos papildu apstiprināšanas rīkus, lai aplūkotu papildu MPO paraugpraksi."
@@ -1311,7 +1311,7 @@
     "message": "Pārmeklēšana un indeksēšana"
   },
   "lighthouse-core/config/default-config.js | seoMobileGroupDescription": {
-    "message": "Jūsu lapām ir jābūt piemērotām mobilajām ierīcēm, lai lietotājiem nebūtu jāizmanto savilkšana vai tuvināšana lapu satura lasīšanai. [Uzziniet vairāk](https://developers.google.com/search/mobile-sites/)."
+    "message": "Jūsu lapām ir jābūt piemērotām mobilajām ierīcēm, lai lietotājiem nebūtu jāizmanto savilkšana vai tuvināšana lapu satura lasīšanai. [Uzziniet vairāk](https://developers.9oo91e.qjz9zk/search/mobile-sites/)."
   },
   "lighthouse-core/config/default-config.js | seoMobileGroupTitle": {
     "message": "Piemērota mobilajām ierīcēm"
@@ -1458,7 +1458,7 @@
     "message": "Laboratorijas dati"
   },
   "lighthouse-core/report/html/renderer/util.js | lsPerformanceCategoryDescription": {
-    "message": "[Lighthouse](https://developers.google.com/web/tools/lighthouse/) pašreizējās lapas analīze emulētajā mobilajā tīklā. Vērtības ir aptuvenas un var atšķirties."
+    "message": "[Lighthouse](https://developers.9oo91e.qjz9zk/web/tools/lighthouse/) pašreizējās lapas analīze emulētajā mobilajā tīklā. Vērtības ir aptuvenas un var atšķirties."
   },
   "lighthouse-core/report/html/renderer/util.js | manualAuditsGroupTitle": {
     "message": "Papildu vienumi manuālai pārbaudei"
@@ -1518,10 +1518,10 @@
     "message": "Vairāki [WordPress spraudņi](https://wordpress.org/plugins/search/minify+javascript/) var paātrināt jūsu vietnes darbību, savienojot, samazinot un saspiežot skriptus. Ja iespējams, varat veikt šo samazināšanu jau iepriekš izveides procesā."
   },
   "stack-packs/packs/wordpress.js | unused_css_rules": {
-    "message": "Ieteicams samazināt vai mainīt tādu [WordPress spraudņu](https://wordpress.org/plugins/) skaitu, kuri ielādē nelietotu CSS kodu jūsu lapā. Lai identificētu spraudņus, kuri pievieno lieku CSS kodu, mēģiniet izpildīt [koda pārklājumu](https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverage), izmantojot Chrome DevTools. Saistīto motīvu/spraudni varat identificēt stila lapas vietrādī URL. Meklējiet spraudņus, kuriem sarakstā ir daudz stila lapu ar daudz sarkanām atzīmēm koda pārklājumā. Spraudnim ir jāievieto rindā stilu lapa tikai tad, ja tā faktiski tiek izmantota lapā."
+    "message": "Ieteicams samazināt vai mainīt tādu [WordPress spraudņu](https://wordpress.org/plugins/) skaitu, kuri ielādē nelietotu CSS kodu jūsu lapā. Lai identificētu spraudņus, kuri pievieno lieku CSS kodu, mēģiniet izpildīt [koda pārklājumu](https://developers.9oo91e.qjz9zk/web/updates/2017/04/devtools-release-notes#coverage), izmantojot Chrome DevTools. Saistīto motīvu/spraudni varat identificēt stila lapas vietrādī URL. Meklējiet spraudņus, kuriem sarakstā ir daudz stila lapu ar daudz sarkanām atzīmēm koda pārklājumā. Spraudnim ir jāievieto rindā stilu lapa tikai tad, ja tā faktiski tiek izmantota lapā."
   },
   "stack-packs/packs/wordpress.js | unused_javascript": {
-    "message": "Ieteicams samazināt vai mainīt tādu [WordPress spraudņu](https://wordpress.org/plugins/) skaitu, kuri ielādē nelietotu JavaScript kodu jūsu lapā. Lai identificētu spraudņus, kuri pievieno lieku JS kodu, mēģiniet izpildīt [koda pārklājumu](https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverage), izmantojot Chrome DevTools. Saistīto motīvu/spraudni varat identificēt skripta vietrādī URL. Meklējiet spraudņus, kuriem sarakstā ir daudz skriptu ar daudz sarkanām atzīmēm koda pārklājumā. Spraudnim ir jāievieto rindā skripts tikai tad, ja tas faktiski tiek izmantots lapā."
+    "message": "Ieteicams samazināt vai mainīt tādu [WordPress spraudņu](https://wordpress.org/plugins/) skaitu, kuri ielādē nelietotu JavaScript kodu jūsu lapā. Lai identificētu spraudņus, kuri pievieno lieku JS kodu, mēģiniet izpildīt [koda pārklājumu](https://developers.9oo91e.qjz9zk/web/updates/2017/04/devtools-release-notes#coverage), izmantojot Chrome DevTools. Saistīto motīvu/spraudni varat identificēt skripta vietrādī URL. Meklējiet spraudņus, kuriem sarakstā ir daudz skriptu ar daudz sarkanām atzīmēm koda pārklājumā. Spraudnim ir jāievieto rindā skripts tikai tad, ja tas faktiski tiek izmantots lapā."
   },
   "stack-packs/packs/wordpress.js | uses_long_cache_ttl": {
     "message": "Uzziniet par [pārlūkprogrammas datu saglabāšanu kešatmiņā programmatūrā WordPress](https://codex.wordpress.org/WordPress_Optimization#Browser_Caching)."

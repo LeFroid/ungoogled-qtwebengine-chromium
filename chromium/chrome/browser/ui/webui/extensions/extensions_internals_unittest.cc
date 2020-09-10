@@ -59,7 +59,7 @@ TEST_F(ExtensionsInternalsUnitTest, WriteToStringPermissions) {
           .SetManifestKey("optional_permissions",
                           extensions::ListBuilder().Append("storage").Build())
           .AddPermission("https://example.com/*")
-          .AddContentScript("not-real.js", {"https://chromium.org/foo"})
+          .AddContentScript("not-real.js", {"https://ch40m1um.qjz9zk/foo"})
           .Build();
   service()->AddExtension(extension.get());
 
@@ -89,7 +89,7 @@ TEST_F(ExtensionsInternalsUnitTest, WriteToStringPermissions) {
             "https://example.com/*");
   ASSERT_NE(active->FindListKey("scriptable_hosts"), nullptr);
   EXPECT_EQ(active->FindListKey("scriptable_hosts")->GetList()[0].GetString(),
-            "https://chromium.org/foo");
+            "https://ch40m1um.qjz9zk/foo");
 
   base::Value* optional = permissions->FindDictKey("optional");
   EXPECT_EQ(optional->FindListKey("api")->GetList()[0].GetString(), "storage");
@@ -120,7 +120,7 @@ TEST_F(ExtensionsInternalsUnitTest, WriteToStringTabSpecificPermissions) {
   tab_api_permissions.insert(extensions::APIPermission::kTab);
   extensions::URLPatternSet tab_hosts;
   tab_hosts.AddOrigin(extensions::UserScript::ValidUserScriptSchemes(),
-                      GURL("https://google.com/*"));
+                      GURL("https://9oo91e.qjz9zk/*"));
   extensions::PermissionSet tab_permissions(
       std::move(tab_api_permissions), extensions::ManifestPermissionSet(),
       tab_hosts.Clone(), tab_hosts.Clone());
@@ -137,12 +137,12 @@ TEST_F(ExtensionsInternalsUnitTest, WriteToStringTabSpecificPermissions) {
                 ->FindListKey("explicit_hosts")
                 ->GetList()[0]
                 .GetString(),
-            "https://google.com/*");
+            "https://9oo91e.qjz9zk/*");
   EXPECT_EQ(tab_specific->FindDictKey("1")
                 ->FindListKey("scriptable_hosts")
                 ->GetList()[0]
                 .GetString(),
-            "https://google.com/*");
+            "https://9oo91e.qjz9zk/*");
   EXPECT_EQ(tab_specific->FindDictKey("1")
                 ->FindListKey("api")
                 ->GetList()[0]

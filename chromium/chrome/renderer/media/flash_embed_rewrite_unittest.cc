@@ -13,95 +13,95 @@ TEST(FlashEmbedRewriteTest, YouTubeRewriteEmbed) {
     std::string expected;
   } test_data[] = {
       // { original, expected }
-      {"http://youtube.com", ""},
-      {"http://www.youtube.com", ""},
-      {"https://www.youtube.com", ""},
-      {"http://www.foo.youtube.com", ""},
-      {"https://www.foo.youtube.com", ""},
+      {"http://y0u1ub3.qjz9zk", ""},
+      {"http://www.y0u1ub3.qjz9zk", ""},
+      {"https://www.y0u1ub3.qjz9zk", ""},
+      {"http://www.foo.y0u1ub3.qjz9zk", ""},
+      {"https://www.foo.y0u1ub3.qjz9zk", ""},
       // Non-YouTube domains shouldn't be modified
-      {"http://www.plus.google.com", ""},
+      {"http://www.plus.9oo91e.qjz9zk", ""},
       // URL isn't using Flash
-      {"http://www.youtube.com/embed/deadbeef", ""},
+      {"http://www.y0u1ub3.qjz9zk/embed/deadbeef", ""},
       // URL isn't using Flash, no www
-      {"http://youtube.com/embed/deadbeef", ""},
+      {"http://y0u1ub3.qjz9zk/embed/deadbeef", ""},
       // URL isn't using Flash, invalid parameter construct
-      {"http://www.youtube.com/embed/deadbeef&start=4", ""},
+      {"http://www.y0u1ub3.qjz9zk/embed/deadbeef&start=4", ""},
       // URL is using Flash, no www
-      {"http://youtube.com/v/deadbeef", "http://youtube.com/embed/deadbeef"},
+      {"http://y0u1ub3.qjz9zk/v/deadbeef", "http://y0u1ub3.qjz9zk/embed/deadbeef"},
       // URL is using Flash, is valid, https
-      {"https://www.youtube.com/v/deadbeef",
-       "https://www.youtube.com/embed/deadbeef"},
+      {"https://www.y0u1ub3.qjz9zk/v/deadbeef",
+       "https://www.y0u1ub3.qjz9zk/embed/deadbeef"},
       // URL is using Flash, is valid, http
-      {"http://www.youtube.com/v/deadbeef",
-       "http://www.youtube.com/embed/deadbeef"},
+      {"http://www.y0u1ub3.qjz9zk/v/deadbeef",
+       "http://www.y0u1ub3.qjz9zk/embed/deadbeef"},
       // URL is using Flash, valid
-      {"https://www.foo.youtube.com/v/deadbeef",
-       "https://www.foo.youtube.com/embed/deadbeef"},
+      {"https://www.foo.y0u1ub3.qjz9zk/v/deadbeef",
+       "https://www.foo.y0u1ub3.qjz9zk/embed/deadbeef"},
       // URL is using Flash, is valid, has one parameter
-      {"http://www.youtube.com/v/deadbeef?start=4",
-       "http://www.youtube.com/embed/deadbeef?start=4"},
+      {"http://www.y0u1ub3.qjz9zk/v/deadbeef?start=4",
+       "http://www.y0u1ub3.qjz9zk/embed/deadbeef?start=4"},
       // URL is using Flash, is valid, has multiple parameters
-      {"http://www.youtube.com/v/deadbeef?start=4&fs=1",
-       "http://www.youtube.com/embed/deadbeef?start=4&fs=1"},
+      {"http://www.y0u1ub3.qjz9zk/v/deadbeef?start=4&fs=1",
+       "http://www.y0u1ub3.qjz9zk/embed/deadbeef?start=4&fs=1"},
       // URL is using Flash, invalid parameter construct, has one parameter
-      {"http://www.youtube.com/v/deadbeef&start=4",
-       "http://www.youtube.com/embed/deadbeef?start=4"},
+      {"http://www.y0u1ub3.qjz9zk/v/deadbeef&start=4",
+       "http://www.y0u1ub3.qjz9zk/embed/deadbeef?start=4"},
       // URL is using Flash, invalid parameter construct, has multiple
       // parameters
-      {"http://www.youtube.com/v/deadbeef&start=4&fs=1?foo=bar",
-       "http://www.youtube.com/embed/deadbeef?start=4&fs=1&foo=bar"},
+      {"http://www.y0u1ub3.qjz9zk/v/deadbeef&start=4&fs=1?foo=bar",
+       "http://www.y0u1ub3.qjz9zk/embed/deadbeef?start=4&fs=1&foo=bar"},
       // URL is using Flash, invalid parameter construct, has multiple
       // parameters
-      {"http://www.youtube.com/v/deadbeef&start=4&fs=1",
-       "http://www.youtube.com/embed/deadbeef?start=4&fs=1"},
+      {"http://www.y0u1ub3.qjz9zk/v/deadbeef&start=4&fs=1",
+       "http://www.y0u1ub3.qjz9zk/embed/deadbeef?start=4&fs=1"},
       // Invalid parameter construct
-      {"http://www.youtube.com/abcd/v/deadbeef", ""},
+      {"http://www.y0u1ub3.qjz9zk/abcd/v/deadbeef", ""},
       // Invalid parameter construct
-      {"http://www.youtube.com/v/abcd/", "http://www.youtube.com/embed/abcd/"},
+      {"http://www.y0u1ub3.qjz9zk/v/abcd/", "http://www.y0u1ub3.qjz9zk/embed/abcd/"},
       // Invalid parameter construct
-      {"http://www.youtube.com/v/123/", "http://www.youtube.com/embed/123/"},
-      // youtube-nocookie.com
-      {"http://www.youtube-nocookie.com/v/123/",
-       "http://www.youtube-nocookie.com/embed/123/"},
-      // youtube-nocookie.com, isn't using flash
-      {"http://www.youtube-nocookie.com/embed/123/", ""},
-      // youtube-nocookie.com, has one parameter
-      {"http://www.youtube-nocookie.com/v/123?start=foo",
-       "http://www.youtube-nocookie.com/embed/123?start=foo"},
-      // youtube-nocookie.com, has multiple parameters
-      {"http://www.youtube-nocookie.com/v/123?start=foo&bar=baz",
-       "http://www.youtube-nocookie.com/embed/123?start=foo&bar=baz"},
-      // youtube-nocookie.com, invalid parameter construct, has one parameter
-      {"http://www.youtube-nocookie.com/v/123&start=foo",
-       "http://www.youtube-nocookie.com/embed/123?start=foo"},
-      // youtube-nocookie.com, invalid parameter construct, has multiple
+      {"http://www.y0u1ub3.qjz9zk/v/123/", "http://www.y0u1ub3.qjz9zk/embed/123/"},
+      // y0u1ub3-nocookie.qjz9zk
+      {"http://www.y0u1ub3-nocookie.qjz9zk/v/123/",
+       "http://www.y0u1ub3-nocookie.qjz9zk/embed/123/"},
+      // y0u1ub3-nocookie.qjz9zk, isn't using flash
+      {"http://www.y0u1ub3-nocookie.qjz9zk/embed/123/", ""},
+      // y0u1ub3-nocookie.qjz9zk, has one parameter
+      {"http://www.y0u1ub3-nocookie.qjz9zk/v/123?start=foo",
+       "http://www.y0u1ub3-nocookie.qjz9zk/embed/123?start=foo"},
+      // y0u1ub3-nocookie.qjz9zk, has multiple parameters
+      {"http://www.y0u1ub3-nocookie.qjz9zk/v/123?start=foo&bar=baz",
+       "http://www.y0u1ub3-nocookie.qjz9zk/embed/123?start=foo&bar=baz"},
+      // y0u1ub3-nocookie.qjz9zk, invalid parameter construct, has one parameter
+      {"http://www.y0u1ub3-nocookie.qjz9zk/v/123&start=foo",
+       "http://www.y0u1ub3-nocookie.qjz9zk/embed/123?start=foo"},
+      // y0u1ub3-nocookie.qjz9zk, invalid parameter construct, has multiple
       // parameters
-      {"http://www.youtube-nocookie.com/v/123&start=foo&bar=baz",
-       "http://www.youtube-nocookie.com/embed/123?start=foo&bar=baz"},
-      // youtube-nocookie.com, https
-      {"https://www.youtube-nocookie.com/v/123/",
-       "https://www.youtube-nocookie.com/embed/123/"},
+      {"http://www.y0u1ub3-nocookie.qjz9zk/v/123&start=foo&bar=baz",
+       "http://www.y0u1ub3-nocookie.qjz9zk/embed/123?start=foo&bar=baz"},
+      // y0u1ub3-nocookie.qjz9zk, https
+      {"https://www.y0u1ub3-nocookie.qjz9zk/v/123/",
+       "https://www.y0u1ub3-nocookie.qjz9zk/embed/123/"},
       // URL isn't using Flash, has JS API enabled
-      {"http://www.youtube.com/embed/deadbeef?enablejsapi=1", ""},
+      {"http://www.y0u1ub3.qjz9zk/embed/deadbeef?enablejsapi=1", ""},
       // URL is using Flash, has JS API enabled
-      {"http://www.youtube.com/v/deadbeef?enablejsapi=1",
-       "http://www.youtube.com/embed/deadbeef?enablejsapi=1"},
-      // youtube-nocookie.com, has JS API enabled
-      {"http://www.youtube-nocookie.com/v/123?enablejsapi=1",
-       "http://www.youtube-nocookie.com/embed/123?enablejsapi=1"},
+      {"http://www.y0u1ub3.qjz9zk/v/deadbeef?enablejsapi=1",
+       "http://www.y0u1ub3.qjz9zk/embed/deadbeef?enablejsapi=1"},
+      // y0u1ub3-nocookie.qjz9zk, has JS API enabled
+      {"http://www.y0u1ub3-nocookie.qjz9zk/v/123?enablejsapi=1",
+       "http://www.y0u1ub3-nocookie.qjz9zk/embed/123?enablejsapi=1"},
       // ... with multiple parameters.
-      {"http://www.youtube.com/v/deadbeef?enablejsapi=1&foo=2",
-       "http://www.youtube.com/embed/deadbeef?enablejsapi=1&foo=2"},
+      {"http://www.y0u1ub3.qjz9zk/v/deadbeef?enablejsapi=1&foo=2",
+       "http://www.y0u1ub3.qjz9zk/embed/deadbeef?enablejsapi=1&foo=2"},
       // URL is using Flash, has JS API enabled, invalid parameter construct
-      {"http://www.youtube.com/v/deadbeef&enablejsapi=1",
-       "http://www.youtube.com/embed/deadbeef?enablejsapi=1"},
+      {"http://www.y0u1ub3.qjz9zk/v/deadbeef&enablejsapi=1",
+       "http://www.y0u1ub3.qjz9zk/embed/deadbeef?enablejsapi=1"},
       // ... with multiple parameters.
-      {"http://www.youtube.com/v/deadbeef&enablejsapi=1&foo=2",
-       "http://www.youtube.com/embed/deadbeef?enablejsapi=1&foo=2"},
+      {"http://www.y0u1ub3.qjz9zk/v/deadbeef&enablejsapi=1&foo=2",
+       "http://www.y0u1ub3.qjz9zk/embed/deadbeef?enablejsapi=1&foo=2"},
       // URL is using Flash, has JS API enabled, invalid parameter construct,
       // has multiple parameters
-      {"http://www.youtube.com/v/deadbeef&start=4&enablejsapi=1",
-       "http://www.youtube.com/embed/deadbeef?start=4&enablejsapi=1"},
+      {"http://www.y0u1ub3.qjz9zk/v/deadbeef&start=4&enablejsapi=1",
+       "http://www.y0u1ub3.qjz9zk/embed/deadbeef?start=4&enablejsapi=1"},
   };
 
   for (const auto& data : test_data) {

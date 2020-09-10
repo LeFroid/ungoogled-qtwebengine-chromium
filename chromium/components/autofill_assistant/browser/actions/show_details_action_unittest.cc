@@ -48,7 +48,7 @@ class ShowDetailsActionTest : public testing::Test {
   std::unique_ptr<autofill::AutofillProfile> MakeAutofillProfile() {
     auto profile = std::make_unique<autofill::AutofillProfile>();
     autofill::test::SetProfileInfo(profile.get(), "Charles", "Hardin", "Holley",
-                                   "buddy@gmail.com", "Decca", "123 Apple St.",
+                                   "buddy@9ma1l.qjz9zk", "Decca", "123 Apple St.",
                                    "unit 6", "Lubbock", "Texas", "79401", "US",
                                    "23456789012");
     return profile;

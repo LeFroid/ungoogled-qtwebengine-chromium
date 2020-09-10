@@ -52,7 +52,7 @@ TEST(SmsParserTest, FtpScheme) {
 }
 
 TEST(SmsParserTest, Mailto) {
-  ASSERT_FALSE(SmsParser::Parse("@mailto:goto@chromium.org #123"));
+  ASSERT_FALSE(SmsParser::Parse("@mailto:goto@ch40m1um.qjz9zk #123"));
 }
 
 TEST(SmsParserTest, MissingOneTimeCodeParameter) {

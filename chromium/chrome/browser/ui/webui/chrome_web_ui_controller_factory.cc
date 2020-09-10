@@ -82,8 +82,6 @@
 #include "components/nacl/common/buildflags.h"
 #include "components/prefs/pref_service.h"
 #include "components/safe_browsing/buildflags.h"
-#include "components/safe_browsing/content/web_ui/safe_browsing_ui.h"
-#include "components/safe_browsing/core/web_ui/constants.h"
 #include "components/security_interstitials/content/connection_help_ui.h"
 #include "components/security_interstitials/content/known_interception_disclosure_ui.h"
 #include "components/security_interstitials/content/urls.h"
@@ -447,8 +445,6 @@ WebUIFactoryFunction GetWebUIFactoryFunction(WebUI* web_ui,
     return &NewWebUI<PredictorsUI>;
   if (url.host_piece() == chrome::kChromeUIQuotaInternalsHost)
     return &NewWebUI<QuotaInternalsUI>;
-  if (url.host_piece() == safe_browsing::kChromeUISafeBrowsingHost)
-    return &NewWebUI<safe_browsing::SafeBrowsingUI>;
   if (url.host_piece() == chrome::kChromeUISignInInternalsHost)
     return &NewWebUI<SignInInternalsUI>;
   if (url.host_piece() == chrome::kChromeUISuggestionsHost)

@@ -59,7 +59,7 @@ namespace dawn_native {
                 return DAWN_VALIDATION_ERROR("Copy would touch outside of the texture");
             }
 
-            // TODO(cwallez@chromium.org): Check the depth bound differently for 2D arrays and 3D
+            // TODO(cwallez@ch40m1um.qjz9zk): Check the depth bound differently for 2D arrays and 3D
             // textures
             if (textureCopy.origin.z != 0 || copySize.depth > 1) {
                 return DAWN_VALIDATION_ERROR("No support for z != 0 and depth > 1 for now");
@@ -188,7 +188,7 @@ namespace dawn_native {
             uint32_t blockWidth = textureFormat.blockWidth;
             uint32_t blockHeight = textureFormat.blockHeight;
 
-            // TODO(cwallez@chromium.org): check for overflows
+            // TODO(cwallez@ch40m1um.qjz9zk): check for overflows
             uint32_t slicePitch = rowPitch * imageHeight / blockWidth;
             uint32_t sliceSize = rowPitch * (copySize.height / blockHeight - 1) +
                                  (copySize.width / blockWidth) * blockByteSize;

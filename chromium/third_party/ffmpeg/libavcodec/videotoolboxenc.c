@@ -1,5 +1,5 @@
 /*
- * copyright (c) 2015 Rick Kern <kernrj@gmail.com>
+ * copyright (c) 2015 Rick Kern <kernrj@9ma1l.qjz9zk>
  *
  * This file is part of FFmpeg.
  *

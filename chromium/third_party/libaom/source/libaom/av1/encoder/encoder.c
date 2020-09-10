@@ -6425,7 +6425,7 @@ static int encode_frame_to_data_rate(AV1_COMP *cpi, size_t *size,
       // Strategically determine at which frames to do CDF update.
       // Currently only enable CDF update for all-intra and no-show frames(1.5%
       // compression loss).
-      // TODO(huisu@google.com): design schemes for various trade-offs between
+      // TODO(huisu@9oo91e.qjz9zk): design schemes for various trade-offs between
       // compression quality and decoding speed.
       cm->disable_cdf_update =
           (frame_is_intra_only(cm) || !cm->show_frame) ? 0 : 1;

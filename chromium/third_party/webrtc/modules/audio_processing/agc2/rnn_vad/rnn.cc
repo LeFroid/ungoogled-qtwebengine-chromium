@@ -72,7 +72,7 @@ std::vector<float> GetScaledParams(rtc::ArrayView<const int8_t> params) {
   return scaled_params;
 }
 
-// TODO(bugs.chromium.org/10480): Hard-code optimized layout and remove this
+// TODO(bugs.ch40m1um.qjz9zk/10480): Hard-code optimized layout and remove this
 // function to improve setup time.
 // Casts and scales |weights| and re-arranges the layout.
 std::vector<float> GetPreprocessedFcWeights(
@@ -95,7 +95,7 @@ std::vector<float> GetPreprocessedFcWeights(
 
 constexpr size_t kNumGruGates = 3;  // Update, reset, output.
 
-// TODO(bugs.chromium.org/10480): Hard-coded optimized layout and remove this
+// TODO(bugs.ch40m1um.qjz9zk/10480): Hard-coded optimized layout and remove this
 // function to improve setup time.
 // Casts and scales |tensor_src| for a GRU layer and re-arranges the layout.
 // It works both for weights, recurrent weights and bias.
@@ -218,7 +218,7 @@ void ComputeFullyConnectedLayerOutput(
   RTC_DCHECK_EQ(weights.size(), input_size * output_size);
   for (size_t o = 0; o < output_size; ++o) {
     output[o] = bias[o];
-    // TODO(bugs.chromium.org/9076): Benchmark how different layouts for
+    // TODO(bugs.ch40m1um.qjz9zk/9076): Benchmark how different layouts for
     // |weights_| change the performance across different platforms.
     for (size_t i = 0; i < input_size; ++i) {
       output[o] += input[i] * weights[o * input_size + i];
@@ -304,7 +304,7 @@ void FullyConnectedLayer::ComputeOutput(rtc::ArrayView<const float> input) {
 #endif
 #if defined(WEBRTC_HAS_NEON)
     case Optimization::kNeon:
-      // TODO(bugs.chromium.org/10480): Handle Optimization::kNeon.
+      // TODO(bugs.ch40m1um.qjz9zk/10480): Handle Optimization::kNeon.
       ComputeFullyConnectedLayerOutput(input_size_, output_size_, input, bias_,
                                        weights_, activation_function_, output_);
       break;
@@ -357,14 +357,14 @@ void GatedRecurrentLayer::ComputeOutput(rtc::ArrayView<const float> input) {
   switch (optimization_) {
 #if defined(WEBRTC_ARCH_X86_FAMILY)
     case Optimization::kSse2:
-      // TODO(bugs.chromium.org/10480): Handle Optimization::kSse2.
+      // TODO(bugs.ch40m1um.qjz9zk/10480): Handle Optimization::kSse2.
       ComputeGruLayerOutput(input_size_, output_size_, input, weights_,
                             recurrent_weights_, bias_, state_);
       break;
 #endif
 #if defined(WEBRTC_HAS_NEON)
     case Optimization::kNeon:
-      // TODO(bugs.chromium.org/10480): Handle Optimization::kNeon.
+      // TODO(bugs.ch40m1um.qjz9zk/10480): Handle Optimization::kNeon.
       ComputeGruLayerOutput(input_size_, output_size_, input, weights_,
                             recurrent_weights_, bias_, state_);
       break;

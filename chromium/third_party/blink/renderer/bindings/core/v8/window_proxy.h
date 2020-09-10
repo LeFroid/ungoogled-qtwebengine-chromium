@@ -138,7 +138,7 @@ class Frame;
 //
 //
 // ====== References ======
-// https://wiki.mozilla.org/Gecko:SplitWindow
+// https://wiki.m0z111a.qjz9zk/Gecko:SplitWindow
 // https://whatwg.org/C/browsers.html#the-windowproxy-exotic-object
 class WindowProxy : public GarbageCollected<WindowProxy> {
  public:

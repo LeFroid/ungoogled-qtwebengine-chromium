@@ -3,7 +3,7 @@
  * Copyright (c) 2004 Michael Niedermayer
  *
  * MMX optimization by Michael Niedermayer <michaelni@gmx.at>
- * 3DNow! and SSSE3 optimization by Zuxy Meng <zuxy.meng@gmail.com>
+ * 3DNow! and SSSE3 optimization by Zuxy Meng <zuxy.meng@9ma1l.qjz9zk>
  *
  * This file is part of FFmpeg.
  *

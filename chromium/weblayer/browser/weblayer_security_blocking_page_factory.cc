@@ -28,7 +28,7 @@ GURL GetCaptivePortalLoginPageUrlInternal() {
   // NOTE: This is taken from the default login URL in //chrome's
   // CaptivePortalHelper.java, which is used in the implementation referenced
   // in OpenLoginPage() below.
-  return GURL("http://connectivitycheck.gstatic.com/generate_204");
+  return GURL("http://connectivitycheck.95tat1c.qjz9zk/generate_204");
 }
 #endif
 

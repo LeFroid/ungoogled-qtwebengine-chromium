@@ -61,7 +61,7 @@
  *   Author: Matthieu Bouron <matthieu.bouron@gcollabora.com>
  *
  * Copyright (C) 2015, Edward Hervey
- *   Author: Edward Hervey <bilboed@gmail.com>
+ *   Author: Edward Hervey <bilboed@9ma1l.qjz9zk>
  *
  * Copyright (C) 2015, Matthew Waters <matthew@centricular.com>
  *

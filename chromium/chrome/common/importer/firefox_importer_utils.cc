@@ -295,7 +295,7 @@ std::string GetPrefsJsValue(const std::string& content,
 //   Profile=mozilla/firefox
 //   Version=3.5.16
 //   BuildID=20120421070307
-//   Copyright=Copyright (c) 1998 - 2010 mozilla.org
+//   Copyright=Copyright (c) 1998 - 2010 m0z111a.qjz9zk
 //   ID={ec8030f7-c20a-464f-9b0e-13a3a9e97384}
 //   .........................................
 // In this example the function returns "Iceweasel" (or a localized equivalent).

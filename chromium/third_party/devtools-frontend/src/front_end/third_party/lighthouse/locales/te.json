@@ -522,7 +522,7 @@
     "message": "విలువ"
   },
   "lighthouse-core/audits/dobetterweb/dom-size.js | description": {
-    "message": "బ్రౌజర్ ఇంజినీర్‌లు ~1,500 కంటే తక్కువ DOM మూలకాలను కలిగి ఉండే పేజీలను సిఫార్సు చేస్తారు. అత్యుత్తమ ప్రమాణంలో ట్రీ డెప్త్ < 32 మూలకాలు, 60 కంటే తక్కువ ఉపాంశ/మూలాధార మూలకాలు ఉండాలి. పెద్ద DOM వలన మెమరీ వినియోగం పెరగవచ్చు. దీర్ఘమైన [స్టైల్ గణనలు](https://developers.google.com/web/fundamentals/performance/rendering/reduce-the-scope-and-complexity-of-style-calculations) జరగవచ్చు, ఖరీదైన [లేఅవుట్ రీఫ్లోలు](https://developers.google.com/speed/articles/reflow) అందించవచ్చు. [మరింత తెలుసుకోండి](https://web.dev/dom-size)."
+    "message": "బ్రౌజర్ ఇంజినీర్‌లు ~1,500 కంటే తక్కువ DOM మూలకాలను కలిగి ఉండే పేజీలను సిఫార్సు చేస్తారు. అత్యుత్తమ ప్రమాణంలో ట్రీ డెప్త్ < 32 మూలకాలు, 60 కంటే తక్కువ ఉపాంశ/మూలాధార మూలకాలు ఉండాలి. పెద్ద DOM వలన మెమరీ వినియోగం పెరగవచ్చు. దీర్ఘమైన [స్టైల్ గణనలు](https://developers.9oo91e.qjz9zk/web/fundamentals/performance/rendering/reduce-the-scope-and-complexity-of-style-calculations) జరగవచ్చు, ఖరీదైన [లేఅవుట్ రీఫ్లోలు](https://developers.9oo91e.qjz9zk/speed/articles/reflow) అందించవచ్చు. [మరింత తెలుసుకోండి](https://web.dev/dom-size)."
   },
   "lighthouse-core/audits/dobetterweb/dom-size.js | displayValue": {
     "message": "{itemCount,plural, =1{1 మూలకం}other{# మూలకాలు}}"
@@ -807,7 +807,7 @@
     "message": "పేజీలో పూర్తి పరస్పర చర్యకు పట్టే సమయం"
   },
   "lighthouse-core/audits/metrics/max-potential-fid.js | description": {
-    "message": "మీ వినియోగదారులు ఎదుర్కోగల గరిష్ఠ మొదటి ఇన్‌పుట్ ఆలస్యం అన్నది సుదీర్ఘ టాస్క్‌లో మిల్లీసెకన్ల వ్యవధిలో ఉంటుంది. [మరింత తెలుసుకోండి](https://developers.google.com/web/updates/2018/05/first-input-delay)."
+    "message": "మీ వినియోగదారులు ఎదుర్కోగల గరిష్ఠ మొదటి ఇన్‌పుట్ ఆలస్యం అన్నది సుదీర్ఘ టాస్క్‌లో మిల్లీసెకన్ల వ్యవధిలో ఉంటుంది. [మరింత తెలుసుకోండి](https://developers.9oo91e.qjz9zk/web/updates/2018/05/first-input-delay)."
   },
   "lighthouse-core/audits/metrics/max-potential-fid.js | title": {
     "message": "మొదటి ఇన్‌పుట్ ఆలస్య గరిష్ఠ వ్యవధి"
@@ -852,7 +852,7 @@
     "message": "బడ్జెట్ దాటిపోయింది"
   },
   "lighthouse-core/audits/performance-budget.js | description": {
-    "message": "నెట్‌వర్క్ అభ్యర్థనల సంఖ్య, పరిమాణాన్ని అందించబడిన పనితీరు బడ్జెట్ ప్రకారం నిర్దేశించిన లక్ష్యాల కంటే తక్కువకు ఉంచండి. [మరింత తెలుసుకోండి](https://developers.google.com/web/tools/lighthouse/audits/budgets)."
+    "message": "నెట్‌వర్క్ అభ్యర్థనల సంఖ్య, పరిమాణాన్ని అందించబడిన పనితీరు బడ్జెట్ ప్రకారం నిర్దేశించిన లక్ష్యాల కంటే తక్కువకు ఉంచండి. [మరింత తెలుసుకోండి](https://developers.9oo91e.qjz9zk/web/tools/lighthouse/audits/budgets)."
   },
   "lighthouse-core/audits/performance-budget.js | requestCountOverBudget": {
     "message": "{count,plural, =1{1 అభ్యర్థన}other{# అభ్యర్థనలు}}"
@@ -876,7 +876,7 @@
     "message": "అనేక పేజీ మళ్లింపులను నివారించండి"
   },
   "lighthouse-core/audits/resource-summary.js | description": {
-    "message": "పేజీ వనరుల సంఖ్య, పరిమాణం కోసం బడ్జెట్‌లను సెట్ చేయడానికి, 'budget.json' ఫైల్‌ను జోడించండి. [మరింత తెలుసుకోండి](https://developers.google.com/web/tools/lighthouse/audits/budgets)."
+    "message": "పేజీ వనరుల సంఖ్య, పరిమాణం కోసం బడ్జెట్‌లను సెట్ చేయడానికి, 'budget.json' ఫైల్‌ను జోడించండి. [మరింత తెలుసుకోండి](https://developers.9oo91e.qjz9zk/web/tools/lighthouse/audits/budgets)."
   },
   "lighthouse-core/audits/resource-summary.js | displayValue": {
     "message": "{requestCount,plural, =1{1 అభ్యర్థన • {byteCount, number, bytes} KB}other{# అభ్యర్థనలు • {byteCount, number, bytes} KB}}"
@@ -969,7 +969,7 @@
     "message": "లింక్‌లలో వివరణాత్మక వచనం ఉంది"
   },
   "lighthouse-core/audits/seo/manual/structured-data.js | description": {
-    "message": "నిర్మాణాత్మకమైన డేటాను ప్రామాణీకరించడం కోసం [నిర్మాణాత్మక డేటా పరీక్ష సాధనం](https://search.google.com/structured-data/testing-tool/), [నిర్మాణాత్మక డేటా లింటర్‌](http://linter.structured-data.org/)లను అమలు చేయండి. [మరింత తెలుసుకోండి](https://web.dev/structured-data)."
+    "message": "నిర్మాణాత్మకమైన డేటాను ప్రామాణీకరించడం కోసం [నిర్మాణాత్మక డేటా పరీక్ష సాధనం](https://search.9oo91e.qjz9zk/structured-data/testing-tool/), [నిర్మాణాత్మక డేటా లింటర్‌](http://linter.structured-data.org/)లను అమలు చేయండి. [మరింత తెలుసుకోండి](https://web.dev/structured-data)."
   },
   "lighthouse-core/audits/seo/manual/structured-data.js | title": {
     "message": "నిర్మాణాత్మక డేటా చెల్లుబాటు అవుతుంది"
@@ -1080,7 +1080,7 @@
     "message": "మూడవ పక్షం"
   },
   "lighthouse-core/audits/third-party-summary.js | description": {
-    "message": "మూడవ పక్షం కోడ్ గణనీయ స్థాయిలో లోడ్ పనితీరుపై ప్రభావం చూపవచ్చు. అవసరం లేని మూడవ పక్ష ప్రదాతల సంఖ్యను పరిమితం చేసి, మీ పేజీ ప్రాథమికంగా లోడ్ కావడం పూర్తయిన తర్వాత మూడవ పక్ష కోడ్‌ను లోడ్ చేయడానికి ప్రయత్నించండి. [మరింత తెలుసుకోండి](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/loading-third-party-javascript/)."
+    "message": "మూడవ పక్షం కోడ్ గణనీయ స్థాయిలో లోడ్ పనితీరుపై ప్రభావం చూపవచ్చు. అవసరం లేని మూడవ పక్ష ప్రదాతల సంఖ్యను పరిమితం చేసి, మీ పేజీ ప్రాథమికంగా లోడ్ కావడం పూర్తయిన తర్వాత మూడవ పక్ష కోడ్‌ను లోడ్ చేయడానికి ప్రయత్నించండి. [మరింత తెలుసుకోండి](https://developers.9oo91e.qjz9zk/web/fundamentals/performance/optimizing-content-efficiency/loading-third-party-javascript/)."
   },
   "lighthouse-core/audits/third-party-summary.js | displayValue": {
     "message": "మూడవ పక్షం కోడ్ ఒక ప్రధానమైన థ్రెడ్‌ను {timeInMs, number, milliseconds} మిల్లీసెకన్ల పాటు బ్లాక్ చేసింది"
@@ -1194,10 +1194,10 @@
     "message": "ఉత్తమ అభ్యాసాలు"
   },
   "lighthouse-core/config/default-config.js | a11yCategoryDescription": {
-    "message": "[మీ వెబ్ యాప్ యొక్క యాక్సెసిబిలిటీని మెరుగుపరచగల](https://developers.google.com/web/fundamentals/accessibility) అవకాశాలను ఈ తనిఖీలు హైలైట్ చేస్తాయి. యాక్సెసిబిలిటీ సమస్యలలోని ఒక సబ్‌సెట్‌ను మాత్రమే ఆటోమేటిక్‌గా గుర్తించడం సాధ్యపడుతుంది, కనుక మాన్యువల్ పరీక్ష కూడా చేయాల్సిందిగా సిఫార్సు చేస్తున్నాము."
+    "message": "[మీ వెబ్ యాప్ యొక్క యాక్సెసిబిలిటీని మెరుగుపరచగల](https://developers.9oo91e.qjz9zk/web/fundamentals/accessibility) అవకాశాలను ఈ తనిఖీలు హైలైట్ చేస్తాయి. యాక్సెసిబిలిటీ సమస్యలలోని ఒక సబ్‌సెట్‌ను మాత్రమే ఆటోమేటిక్‌గా గుర్తించడం సాధ్యపడుతుంది, కనుక మాన్యువల్ పరీక్ష కూడా చేయాల్సిందిగా సిఫార్సు చేస్తున్నాము."
   },
   "lighthouse-core/config/default-config.js | a11yCategoryManualDescription": {
-    "message": "ఆటోమేటెడ్ పరీక్ష సాధనం కవర్ చేయని ప్రాంతాలను ఈ అంశాలు పేర్కొంటాయి. [యాక్సెసిబిలిటీ సమీక్షను నిర్వహించడం](https://developers.google.com/web/fundamentals/accessibility/how-to-review) గురించి మా గైడ్‌లో మరింత తెలుసుకోండి."
+    "message": "ఆటోమేటెడ్ పరీక్ష సాధనం కవర్ చేయని ప్రాంతాలను ఈ అంశాలు పేర్కొంటాయి. [యాక్సెసిబిలిటీ సమీక్షను నిర్వహించడం](https://developers.9oo91e.qjz9zk/web/fundamentals/accessibility/how-to-review) గురించి మా గైడ్‌లో మరింత తెలుసుకోండి."
   },
   "lighthouse-core/config/default-config.js | a11yCategoryTitle": {
     "message": "యాక్సెసిబిలిటీ"
@@ -1272,10 +1272,10 @@
     "message": "పనితీరు"
   },
   "lighthouse-core/config/default-config.js | pwaCategoryDescription": {
-    "message": "ఈ తనిఖీల ద్వారా ప్రోగ్రెసివ్ వెబ్ యాప్ అంశాలు ధృవీకరించబడతాయి. [మరింత తెలుసుకోండి](https://developers.google.com/web/progressive-web-apps/checklist)."
+    "message": "ఈ తనిఖీల ద్వారా ప్రోగ్రెసివ్ వెబ్ యాప్ అంశాలు ధృవీకరించబడతాయి. [మరింత తెలుసుకోండి](https://developers.9oo91e.qjz9zk/web/progressive-web-apps/checklist)."
   },
   "lighthouse-core/config/default-config.js | pwaCategoryManualDescription": {
-    "message": "మౌళికమైన [PWA తనిఖీ జాబితా](https://developers.google.com/web/progressive-web-apps/checklist) ప్రకారం ఈ తనిఖీలను తప్పనిసరిగా నిర్వహించాలి, కానీ ఇవి Lighthouse ద్వారా ఆటోమేటిక్‌గా తనిఖీ చేయబడవు. ఇవి మీ స్కోర్‌పై ప్రభావం చూపవు, కానీ మీరు వీటిని మాన్యువల్‌గా అయినా ధృవీకరించడం ముఖ్యం."
+    "message": "మౌళికమైన [PWA తనిఖీ జాబితా](https://developers.9oo91e.qjz9zk/web/progressive-web-apps/checklist) ప్రకారం ఈ తనిఖీలను తప్పనిసరిగా నిర్వహించాలి, కానీ ఇవి Lighthouse ద్వారా ఆటోమేటిక్‌గా తనిఖీ చేయబడవు. ఇవి మీ స్కోర్‌పై ప్రభావం చూపవు, కానీ మీరు వీటిని మాన్యువల్‌గా అయినా ధృవీకరించడం ముఖ్యం."
   },
   "lighthouse-core/config/default-config.js | pwaCategoryTitle": {
     "message": "ప్రోగ్రెసివ్ వెబ్ యాప్"
@@ -1290,7 +1290,7 @@
     "message": "PWA ఆప్టిమైజ్ చేసినవి"
   },
   "lighthouse-core/config/default-config.js | seoCategoryDescription": {
-    "message": "శోధన ఇంజిన్ ఫలితాల ర్యాంకింగ్ కోసం మీ పేజీ ఆప్టిమైజ్ చేయబడినట్లు ఈ తనిఖీలు నిర్ధారిస్తాయి. మీ శోధన ర్యాంకింగ్‌పై ప్రభావం చూపగల ఈ అదనపు అంశాలను Lighthouse తనిఖీ చేయదు. [మరింత తెలుసుకోండి](https://support.google.com/webmasters/answer/35769)."
+    "message": "శోధన ఇంజిన్ ఫలితాల ర్యాంకింగ్ కోసం మీ పేజీ ఆప్టిమైజ్ చేయబడినట్లు ఈ తనిఖీలు నిర్ధారిస్తాయి. మీ శోధన ర్యాంకింగ్‌పై ప్రభావం చూపగల ఈ అదనపు అంశాలను Lighthouse తనిఖీ చేయదు. [మరింత తెలుసుకోండి](https://support.9oo91e.qjz9zk/webmasters/answer/35769)."
   },
   "lighthouse-core/config/default-config.js | seoCategoryManualDescription": {
     "message": "అదనపు SEO ఉత్తమ అభ్యాసాలను తనిఖీ చేయడం కోసం మీ సైట్‌లో అదనపు వాలిడేటర్‌లను అమలు చేయండి."
@@ -1311,7 +1311,7 @@
     "message": "క్రాలింగ్ మరియు అనుక్రమణ"
   },
   "lighthouse-core/config/default-config.js | seoMobileGroupDescription": {
-    "message": "వినియోగదారులు కంటెంట్ పేజీలను చదవడం కోసం స్క్రీన్‌పై రెండు వేళ్లను ఉంచి దగ్గరకు లేదా దూరానికి లాగుతూ లేదా దగ్గరగా జూమ్ చేసి ఇబ్బందిపడేలా కాకుండా మీ పేజీలు మొబైల్ అనుకూలంగా ఉన్నాయని నిర్థారించుకోండి. [మరింత తెలుసుకోండి](https://developers.google.com/search/mobile-sites/)."
+    "message": "వినియోగదారులు కంటెంట్ పేజీలను చదవడం కోసం స్క్రీన్‌పై రెండు వేళ్లను ఉంచి దగ్గరకు లేదా దూరానికి లాగుతూ లేదా దగ్గరగా జూమ్ చేసి ఇబ్బందిపడేలా కాకుండా మీ పేజీలు మొబైల్ అనుకూలంగా ఉన్నాయని నిర్థారించుకోండి. [మరింత తెలుసుకోండి](https://developers.9oo91e.qjz9zk/search/mobile-sites/)."
   },
   "lighthouse-core/config/default-config.js | seoMobileGroupTitle": {
     "message": "మొబైల్-అనుకూలం"
@@ -1458,7 +1458,7 @@
     "message": "ల్యాబ్ డేటా"
   },
   "lighthouse-core/report/html/renderer/util.js | lsPerformanceCategoryDescription": {
-    "message": "అనుకరణ మొబైల్ నెట్‌వర్క్‌లో ప్రస్తుత పేజీకి సంబంధించిన [Lighthouse](https://developers.google.com/web/tools/lighthouse/) విశ్లేషణ. విలువలు కేవలం అంచనా మాత్రమే, ఇవి మారే అవకాశం ఉంది."
+    "message": "అనుకరణ మొబైల్ నెట్‌వర్క్‌లో ప్రస్తుత పేజీకి సంబంధించిన [Lighthouse](https://developers.9oo91e.qjz9zk/web/tools/lighthouse/) విశ్లేషణ. విలువలు కేవలం అంచనా మాత్రమే, ఇవి మారే అవకాశం ఉంది."
   },
   "lighthouse-core/report/html/renderer/util.js | manualAuditsGroupTitle": {
     "message": "మాన్యువల్‌గా తనిఖీ చేయవలసిన అదనపు అంశాలు"
@@ -1518,10 +1518,10 @@
     "message": "అనేక [WordPress ప్లగ్ఇన్‌లు](https://wordpress.org/plugins/search/minify+javascript/) మీ స్క్రిప్ట్‌లను క్రమపరచడం, చిన్నవిగా చేయడం, కుదించడం ద్వారా మీ సైట్‌ను మరింత వేగవంతం చేయవచ్చు. వీలైతే, ఈ కనిష్ఠీకరణను ముందుగానే నిర్వహించేలా కూడా మీరు ఒక బిల్డ్ ప్రాసెస్‌ను ఉపయోగించడం పరిగణించవచ్చు."
   },
   "stack-packs/packs/wordpress.js | unused_css_rules": {
-    "message": "మీ పేజీలో ఉపయోగించని CSSను లోడ్ చేస్తున్న '[WordPress ప్లగ్ఇన్‌‌ల](https://wordpress.org/plugins/)' సంఖ్యను తగ్గించడం లేదా మార్చడాన్ని పరిశీలించండి. అదనపు CSSను జోడించే ప్లగ్ఇన్‌లను గుర్తించడానికి, Chrome DevToolsలో '[కోడ్ కవరేజీ](https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverage)' అమలు చేయడానికి ప్రయత్నించండి. అందుకు కారణమైన థీమ్/ప్లగ్ఇన్‌ను స్టైల్‌షీట్‌లోని URL నుండి మీరు గుర్తించవచ్చు. కోడ్ కవరేజ్‌లో ఎక్కువ ఎరుపు రంగు కలిగి ఉన్న జాబితాలో అనేక స్టైల్‌షీట్‌లను కలిగి ఉన్న ప్లగ్ఇన్‌లను వెతకండి. నిజంగా ప్లగ్ఇన్‌ను ఆ పేజీలో ఉపయోగించినప్పుడు మాత్రమే స్టైల్‌షీట్‌కు జత చేయాలి."
+    "message": "మీ పేజీలో ఉపయోగించని CSSను లోడ్ చేస్తున్న '[WordPress ప్లగ్ఇన్‌‌ల](https://wordpress.org/plugins/)' సంఖ్యను తగ్గించడం లేదా మార్చడాన్ని పరిశీలించండి. అదనపు CSSను జోడించే ప్లగ్ఇన్‌లను గుర్తించడానికి, Chrome DevToolsలో '[కోడ్ కవరేజీ](https://developers.9oo91e.qjz9zk/web/updates/2017/04/devtools-release-notes#coverage)' అమలు చేయడానికి ప్రయత్నించండి. అందుకు కారణమైన థీమ్/ప్లగ్ఇన్‌ను స్టైల్‌షీట్‌లోని URL నుండి మీరు గుర్తించవచ్చు. కోడ్ కవరేజ్‌లో ఎక్కువ ఎరుపు రంగు కలిగి ఉన్న జాబితాలో అనేక స్టైల్‌షీట్‌లను కలిగి ఉన్న ప్లగ్ఇన్‌లను వెతకండి. నిజంగా ప్లగ్ఇన్‌ను ఆ పేజీలో ఉపయోగించినప్పుడు మాత్రమే స్టైల్‌షీట్‌కు జత చేయాలి."
   },
   "stack-packs/packs/wordpress.js | unused_javascript": {
-    "message": "మీ పేజీలో ఉపయోగించని JavaScriptను లోడ్ చేస్తున్న '[WordPress ప్లగ్ఇన్‌‌ల](https://wordpress.org/plugins/)' సంఖ్యను తగ్గించడం లేదా మార్చడాన్ని పరిశీలించండి. అదనపు JSను జోడించే ప్లగ్ఇన్‌లను గుర్తించడానికి, Chrome DevToolsలో '[కోడ్ కవరేజీ](https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverage)' అమలు చేయడానికి ప్రయత్నించండి. అందుకు కారణమైన థీమ్/ప్లగ్ఇన్‌ను స్క్రిప్ట్ యొక్క URL నుండి మీరు గుర్తించవచ్చు. కోడ్ కవరేజ్‌లో ఎక్కువ ఎరుపు రంగు కలిగి ఉన్న జాబితాలో అనేక స్క్రిప్ట్‌లను కలిగి ఉన్న ప్లగ్ఇన్‌లను వెతకండి. నిజంగా ప్లగ్ఇన్‌ను ఆ పేజీలో ఉపయోగించినప్పుడు మాత్రమే స్క్రిప్ట్‌కు జత చేయాలి."
+    "message": "మీ పేజీలో ఉపయోగించని JavaScriptను లోడ్ చేస్తున్న '[WordPress ప్లగ్ఇన్‌‌ల](https://wordpress.org/plugins/)' సంఖ్యను తగ్గించడం లేదా మార్చడాన్ని పరిశీలించండి. అదనపు JSను జోడించే ప్లగ్ఇన్‌లను గుర్తించడానికి, Chrome DevToolsలో '[కోడ్ కవరేజీ](https://developers.9oo91e.qjz9zk/web/updates/2017/04/devtools-release-notes#coverage)' అమలు చేయడానికి ప్రయత్నించండి. అందుకు కారణమైన థీమ్/ప్లగ్ఇన్‌ను స్క్రిప్ట్ యొక్క URL నుండి మీరు గుర్తించవచ్చు. కోడ్ కవరేజ్‌లో ఎక్కువ ఎరుపు రంగు కలిగి ఉన్న జాబితాలో అనేక స్క్రిప్ట్‌లను కలిగి ఉన్న ప్లగ్ఇన్‌లను వెతకండి. నిజంగా ప్లగ్ఇన్‌ను ఆ పేజీలో ఉపయోగించినప్పుడు మాత్రమే స్క్రిప్ట్‌కు జత చేయాలి."
   },
   "stack-packs/packs/wordpress.js | uses_long_cache_ttl": {
     "message": "[WordPressలో బ్రౌజర్ కాష్ విధానం](https://codex.wordpress.org/WordPress_Optimization#Browser_Caching) గురించి చదవండి."

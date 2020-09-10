@@ -20,7 +20,7 @@ namespace {
 
 using ::testing::StrictMock;
 
-constexpr char kTestAccount[] = "user@gmail.com";
+constexpr char kTestAccount[] = "user@9ma1l.qjz9zk";
 
 class LeakDetectionCheckFactoryImplTest : public testing::Test {
  public:

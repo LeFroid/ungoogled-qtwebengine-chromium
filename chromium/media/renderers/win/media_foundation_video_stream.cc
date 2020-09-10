@@ -68,7 +68,7 @@ MFVideoRotationFormat VideoRotationToMF(VideoRotation rotation) {
 }
 
 //
-// https://docs.microsoft.com/en-us/windows/win32/api/mfobjects/ns-mfobjects-mfoffset
+// https://docs.m1cr050ft.qjz9zk/en-us/windows/win32/api/mfobjects/ns-mfobjects-mfoffset
 // The value of the MFOffset number is value + (fract / 65536.0f).
 MFOffset MakeOffset(float value) {
   MFOffset offset;

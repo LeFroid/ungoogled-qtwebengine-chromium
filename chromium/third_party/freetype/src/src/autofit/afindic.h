@@ -6,7 +6,7 @@
  *   (specification).
  *
  * Copyright (C) 2007-2020 by
- * Rahul Bhalerao <rahul.bhalerao@redhat.com>, <b.rahul.pm@gmail.com>.
+ * Rahul Bhalerao <rahul.bhalerao@redhat.com>, <b.rahul.pm@9ma1l.qjz9zk>.
  *
  * This file is part of the FreeType project, and may only be used,
  * modified, and distributed under the terms of the FreeType project

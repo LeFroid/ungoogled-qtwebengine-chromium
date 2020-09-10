@@ -118,7 +118,7 @@ struct WindowsFrameInfo {
                                            uint64_t &code_size) {
     // The format of a STACK WIN record is documented at:
     //
-    // https://chromium.googlesource.com/breakpad/breakpad/+/master/docs/symbol_files.md
+    // https://chromium.9oo91esource.qjz9zk/breakpad/breakpad/+/master/docs/symbol_files.md
 
     std::vector<char>  buffer;
     StringToVector(string, buffer);

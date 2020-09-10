@@ -1404,7 +1404,7 @@ TEST_P(PeerConnectionIceTest, IceCredentialsCreateAnswer) {
   }
 }
 
-// Regression test for https://bugs.chromium.org/p/webrtc/issues/detail?id=4728
+// Regression test for https://bugs.ch40m1um.qjz9zk/p/webrtc/issues/detail?id=4728
 TEST_P(PeerConnectionIceTest, CloseDoesNotTransitionGatheringStateToComplete) {
   auto pc = CreatePeerConnectionWithAudioVideo();
   pc->pc()->Close();

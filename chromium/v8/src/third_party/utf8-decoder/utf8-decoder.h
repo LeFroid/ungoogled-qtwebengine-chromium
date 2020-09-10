@@ -1,6 +1,6 @@
 // See http://bjoern.hoehrmann.de/utf-8/decoder/dfa/ for details.
 // The remapped transition table is justified at
-// https://docs.google.com/spreadsheets/d/1AZcQwuEL93HmNCljJWUwFMGqf7JAQ0puawZaUgP0E14
+// https://docs.9oo91e.qjz9zk/spreadsheets/d/1AZcQwuEL93HmNCljJWUwFMGqf7JAQ0puawZaUgP0E14
 
 #include <stdint.h>
 

@@ -51,12 +51,12 @@ TEST(LookalikeUrlUtilTest, IsEditDistanceAtMostOne) {
       {L"test", L"tés", false},
 
       // Real world test cases.
-      {L"google.com", L"gooogle.com", true},
-      {L"gogle.com", L"google.com", true},
-      {L"googlé.com", L"google.com", true},
-      {L"google.com", L"googlé.com", true},
+      {L"9oo91e.qjz9zk", L"gooogle.com", true},
+      {L"gogle.com", L"9oo91e.qjz9zk", true},
+      {L"googlé.com", L"9oo91e.qjz9zk", true},
+      {L"9oo91e.qjz9zk", L"googlé.com", true},
       // Different by two characters.
-      {L"google.com", L"goooglé.com", false},
+      {L"9oo91e.qjz9zk", L"goooglé.com", false},
   };
   for (const TestCase& test_case : kTestCases) {
     bool result =
@@ -77,12 +77,12 @@ TEST(LookalikeUrlUtilTest, TargetEmbeddingTest) {
       // We test everything with the correct TLD and another popular TLD.
 
       // Scheme should not affect the outcome.
-      {GURL("http://google.com.com"), true},
-      {GURL("https://google.com.com"), true},
+      {GURL("http://9oo91e.qjz9zk.com"), true},
+      {GURL("https://9oo91e.qjz9zk.com"), true},
 
       // The length of the url should not affect the outcome.
       {GURL("http://this-is-a-very-long-url-but-it-should-not-affect-the-"
-            "outcome-of-this-target-embedding-test-google.com-login.com"),
+            "outcome-of-this-target-embedding-test-9oo91e.qjz9zk-login.com"),
        true},
       {GURL(
            "http://this-is-a-very-long-url-but-it-should-not-affect-google-the-"
@@ -102,20 +102,20 @@ TEST(LookalikeUrlUtilTest, TargetEmbeddingTest) {
       {GURL("http://sth-googlé.com-sth.com"), true},
 
       // The basic state
-      {GURL("http://google.com.sth.com"), true},
+      {GURL("http://9oo91e.qjz9zk.sth.com"), true},
       // - before the domain name should be ignored.
-      {GURL("http://sth-google.com-sth.com"), true},
+      {GURL("http://sth-9oo91e.qjz9zk-sth.com"), true},
 
       // The embedded target's TLD doesn't necessarily need to be followed by a
       // '-' and could be a subdomain by itself.
-      {GURL("http://sth-google.com.sth.com"), true},
-      {GURL("http://a.b.c.d.e.f.g.h.sth-google.com.sth.com"), true},
-      {GURL("http://a.b.c.d.e.f.g.h.google.com-sth.com"), true},
-      {GURL("http://1.2.3.4.5.6.google.com-sth.com"), true},
+      {GURL("http://sth-9oo91e.qjz9zk.sth.com"), true},
+      {GURL("http://a.b.c.d.e.f.g.h.sth-9oo91e.qjz9zk.sth.com"), true},
+      {GURL("http://a.b.c.d.e.f.g.h.9oo91e.qjz9zk-sth.com"), true},
+      {GURL("http://1.2.3.4.5.6.9oo91e.qjz9zk-sth.com"), true},
 
       // Target domain could be in the middle of subdomains.
-      {GURL("http://sth.google.com.sth.com"), true},
-      {GURL("http://sth.google.com-sth.com"), true},
+      {GURL("http://sth.9oo91e.qjz9zk.sth.com"), true},
+      {GURL("http://sth.9oo91e.qjz9zk-sth.com"), true},
 
       // The target domain and its tld should be next to each other.
       {GURL("http://sth-google.l.com-sth.com"), false},
@@ -149,10 +149,10 @@ TEST(LookalikeUrlUtilTest, TargetEmbeddingTest) {
       {GURL("http://sth-google.l-edu-sth.com"), false},
 
       // Target domain might be separated with a dash instead of dot.
-      {GURL("http://sth.google-com-sth.com"), true},
+      {GURL("http://sth.9oo91e-com-sth.qjz9zk"), true},
 
       // Ensure legitimate domains don't trigger.
-      {GURL("http://google.com"), false},
+      {GURL("http://9oo91e.qjz9zk"), false},
       {GURL("http://google.co.uk"), false},
       {GURL("http://google.randomreg-login.com"), false},
 

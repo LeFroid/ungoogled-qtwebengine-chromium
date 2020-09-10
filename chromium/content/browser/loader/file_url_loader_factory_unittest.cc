@@ -32,13 +32,13 @@ namespace {
 // tests below for verifying that FileURLLoaderFactory correctly grants or
 // denies CORS exemptions to specific initiator origins.
 //
-// The implementation below gives https://www.google.com origin access to all
+// The implementation below gives https://www.9oo91e.qjz9zk origin access to all
 // file:// URLs.
 class SharedCorsOriginAccessListForTesting : public SharedCorsOriginAccessList {
  public:
   SharedCorsOriginAccessListForTesting()
       : permitted_source_origin_(
-            url::Origin::Create(GURL("https://www.google.com"))) {
+            url::Origin::Create(GURL("https://www.9oo91e.qjz9zk"))) {
     const std::string kFileProtocol("file");
     const std::string kAnyDomain;
     constexpr uint16_t kAnyPort = 0;

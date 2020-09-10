@@ -17,7 +17,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-# Author: Tobin Ehlis <tobine@google.com>
+# Author: Tobin Ehlis <tobine@9oo91e.qjz9zk>
 #
 # This script generates a Mock ICD that intercepts almost all Vulkan
 #  functions. That layer is not intended to be useful or even compilable

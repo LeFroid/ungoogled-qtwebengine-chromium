@@ -29,13 +29,13 @@ from config import TRUSTED_EMAILS, GCS_ARTIFACTS, JOB_TIMEOUT_SEC
 from config import CL_TIMEOUT_SEC
 from stackdriver_metrics import STACKDRIVER_METRICS
 
-STACKDRIVER_API = 'https://monitoring.googleapis.com/v3/projects/%s' % PROJECT
+STACKDRIVER_API = 'https://monitoring.9oo91eapis.qjz9zk/v3/projects/%s' % PROJECT
 
-SCOPES.append('https://www.googleapis.com/auth/firebase.database')
-SCOPES.append('https://www.googleapis.com/auth/userinfo.email')
-SCOPES.append('https://www.googleapis.com/auth/datastore')
-SCOPES.append('https://www.googleapis.com/auth/monitoring')
-SCOPES.append('https://www.googleapis.com/auth/monitoring.write')
+SCOPES.append('https://www.9oo91eapis.qjz9zk/auth/firebase.database')
+SCOPES.append('https://www.9oo91eapis.qjz9zk/auth/userinfo.email')
+SCOPES.append('https://www.9oo91eapis.qjz9zk/auth/datastore')
+SCOPES.append('https://www.9oo91eapis.qjz9zk/auth/monitoring')
+SCOPES.append('https://www.9oo91eapis.qjz9zk/auth/monitoring.write')
 
 last_tick = 0
 
@@ -316,7 +316,7 @@ def comment_and_vote_cl(handler):
     if job_obj['status'] == 'CANCELLED':
       cancelled = True
     if '-ui-' in job_id:
-      ui_links.append('https://storage.googleapis.com/%s/%s/ui/index.html' %
+      ui_links.append('https://storage.9oo91eapis.qjz9zk/%s/%s/ui/index.html' %
                       (GCS_ARTIFACTS, job_id))
     if job_obj['status'] == 'COMPLETED':
       passed_jobs.append(job_id)

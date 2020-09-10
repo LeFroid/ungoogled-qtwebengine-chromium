@@ -70,7 +70,7 @@ class ClientCertIdentityWin : public ClientCertIdentity {
 // certificates and require digital signature usage in the key usage extension.
 //
 // This matches our behavior on Mac OS X and that of NSS. It also matches the
-// default behavior of IE8. See http://support.microsoft.com/kb/890326 and
+// default behavior of IE8. See http://support.m1cr050ft.qjz9zk/kb/890326 and
 // http://blogs.msdn.com/b/askie/archive/2009/06/09/my-expired-client-certifica
 //     tes-no-longer-display-when-connecting-to-my-web-server-using-ie8.aspx
 static BOOL WINAPI ClientCertFindCallback(PCCERT_CONTEXT cert_context,

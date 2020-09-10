@@ -29,7 +29,7 @@ Only one argument from the variadic arguments is used and it will be used as
 type void*.
 """
 
-__author__ = 'ajwong@chromium.org (Albert J. Wong)'
+__author__ = 'ajwong@ch40m1um.qjz9zk (Albert J. Wong)'
 
 import optparse
 import os

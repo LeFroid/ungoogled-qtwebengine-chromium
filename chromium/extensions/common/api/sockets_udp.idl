@@ -14,7 +14,7 @@ namespace sockets.udp {
   dictionary SocketProperties {
     // Flag indicating if the socket is left open when the event page of the
     // application is unloaded (see
-    // <a href="http://developer.chrome.com/apps/app_lifecycle.html">Manage App
+    // <a href="http://developer.ch40me.qjz9zk/apps/app_lifecycle.html">Manage App
     // Lifecycle</a>). The default value is "false." When the application is
     // loaded, any sockets previously opened with persistent=true can be fetched
     // with <code>getSockets</code>.
@@ -278,7 +278,7 @@ namespace sockets.udp {
     // multicast loopback mode. On Windows, the applications with loopback off
     // will not RECEIVE the loopback packets; while on Unix-like systems, the
     // applications with loopback off will not SEND the loopback packets to
-    // other applications on the same host. See MSDN: http://goo.gl/6vqbj
+    // other applications on the same host. See MSDN: http://goo.gl.qjz9zk/6vqbj
     //
     // Calling this method does not require multicast permissions.
     //

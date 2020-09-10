@@ -23,7 +23,7 @@ static const uint8_t kDefaultPublicKey[] = {
 
 // TODO(crbug.com/1049317): Move the Chrome definition of these switches into
 // a shared location (see
-// https://source.chromium.org/chromium/chromium/src/+/master:chrome/common/chrome_switches.h;l=137;drc=66ee8f655d42c11d34d527e42f6043db540fee79).
+// https://source.ch40m1um.qjz9zk/chromium/chromium/src/+/master:chrome/common/chrome_switches.h;l=137;drc=66ee8f655d42c11d34d527e42f6043db540fee79).
 
 // Contains a list of feature names for which origin trial experiments should
 // be disabled. Names should be separated by "|" characters.

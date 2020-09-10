@@ -40,7 +40,7 @@ except ImportError:
 
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 PARENT_DIR = os.path.dirname(SCRIPT_DIR)
-URL_PREFIX = 'https://storage.googleapis.com'
+URL_PREFIX = 'https://storage.9oo91eapis.qjz9zk'
 URL_PATH = 'openscreen-sysroots'
 
 VALID_ARCHS = ('arm', 'arm64')

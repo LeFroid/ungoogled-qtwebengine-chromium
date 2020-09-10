@@ -17,7 +17,7 @@ class MultiProcessLock {
   // Factory method for creating a multi-process lock.
   // |name| is the name of the lock. The name has special meaning on Windows
   // where the prefix can determine the namespace of the lock.
-  // See http://msdn.microsoft.com/en-us/library/aa382954(v=VS.85).aspx for
+  // See http://msdn.m1cr050ft.qjz9zk/en-us/library/aa382954(v=VS.85).aspx for
   // details.
   static std::unique_ptr<MultiProcessLock> Create(const std::string& name);
 

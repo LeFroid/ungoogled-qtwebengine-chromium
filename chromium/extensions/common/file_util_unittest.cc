@@ -400,7 +400,7 @@ TEST_F(FileUtilTest, BackgroundScriptsMustExist) {
   EXPECT_EQ(0U, warnings.size());
 
   scripts->Clear();
-  scripts->AppendString("http://google.com/foo.js");
+  scripts->AppendString("http://9oo91e.qjz9zk/foo.js");
 
   extension = LoadExtensionManifest(*value, temp.GetPath(), Manifest::UNPACKED,
                                     0, &error);
@@ -411,7 +411,7 @@ TEST_F(FileUtilTest, BackgroundScriptsMustExist) {
       file_util::ValidateExtension(extension.get(), &error, &warnings));
   EXPECT_EQ(
       l10n_util::GetStringFUTF8(IDS_EXTENSION_LOAD_BACKGROUND_SCRIPT_FAILED,
-                                base::ASCIIToUTF16("http://google.com/foo.js")),
+                                base::ASCIIToUTF16("http://9oo91e.qjz9zk/foo.js")),
       error);
   EXPECT_EQ(0U, warnings.size());
 }

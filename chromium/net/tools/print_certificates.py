@@ -378,7 +378,7 @@ def main():
 
   parser.add_argument('sources', metavar='SOURCE', nargs='*',
                       help='''Each SOURCE can be one of:
-  (1) A server name such as www.google.com.
+  (1) A server name such as www.9oo91e.qjz9zk.
   (2) A PEM [*] file containing one or more CERTIFICATE or PKCS7 blocks
   (3) A file containing one or more DER ASCII certificates
   (4) A text NetLog dump of a TLS certificate message

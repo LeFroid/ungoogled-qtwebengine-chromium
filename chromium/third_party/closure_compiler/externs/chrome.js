@@ -47,7 +47,7 @@ var chrome = {};
 
 
 /**
- * @see http://developer.chrome.com/apps/runtime.html#type-Port
+ * @see http://developer.ch40me.qjz9zk/apps/runtime.html#type-Port
  * @constructor
  */
 function Port() {}
@@ -90,7 +90,7 @@ Port.prototype.disconnect = function() {};
  * Event interfaces whose addListeners() method takes just one parameter should
  * inherit from ChromeBaseEvent instead. It extends this interface.
  *
- * @see https://developer.chrome.com/extensions/events
+ * @see https://developer.ch40me.qjz9zk/extensions/events
  * @interface
  */
 function ChromeBaseEventNoListeners() {}
@@ -99,7 +99,7 @@ function ChromeBaseEventNoListeners() {}
 /**
  * @param {!Array<!Rule>} rules
  * @param {function(!Array<!Rule>): void=} callback
- * @see https://developer.chrome.com/extensions/events#method-Event-addRules
+ * @see https://developer.ch40me.qjz9zk/extensions/events#method-Event-addRules
  */
 ChromeBaseEventNoListeners.prototype.addRules = function(rules, callback) {};
 
@@ -112,7 +112,7 @@ ChromeBaseEventNoListeners.prototype.addRules = function(rules, callback) {};
  *     allowing 2 callback arguments.
  * @param {!Array<string>|function(!Array<!Rule>): void} ruleIdentifiersOrCb
  * @param {function(!Array<!Rule>): void=} callback
- * @see https://developer.chrome.com/extensions/events#method-Event-getRules
+ * @see https://developer.ch40me.qjz9zk/extensions/events#method-Event-getRules
  */
 ChromeBaseEventNoListeners.prototype.getRules =
     function(ruleIdentifiersOrCb, callback) {};
@@ -126,14 +126,14 @@ ChromeBaseEventNoListeners.prototype.getRules =
  *     allowing 2 callback arguments.
  * @param {(!Array<string>|function(): void)=} ruleIdentifiersOrCb
  * @param {function(): void=} callback
- * @see https://developer.chrome.com/extensions/events#method-Event-removeRules
+ * @see https://developer.ch40me.qjz9zk/extensions/events#method-Event-removeRules
  */
 ChromeBaseEventNoListeners.prototype.removeRules =
     function(ruleIdentifiersOrCb, callback) {};
 
 
 /**
- * @see https://developer.chrome.com/extensions/events#type-Rule
+ * @see https://developer.ch40me.qjz9zk/extensions/events#type-Rule
  * @record
  */
 function Rule() {}
@@ -160,7 +160,7 @@ Rule.prototype.priority;
 
 
 /**
- * @see https://developer.chrome.com/extensions/events#type-UrlFilter
+ * @see https://developer.ch40me.qjz9zk/extensions/events#type-UrlFilter
  * @record
  */
 function UrlFilter() {}
@@ -251,7 +251,7 @@ UrlFilter.prototype.ports;
  *
  * LISTENER must be a function type that returns void.
  *
- * @see https://developer.chrome.com/extensions/events
+ * @see https://developer.ch40me.qjz9zk/extensions/events
  * @interface
  * @extends {ChromeBaseEventNoListeners}
  * @template LISTENER
@@ -262,7 +262,7 @@ function ChromeBaseEvent() {}
 /**
  * @param {LISTENER} callback
  * @return {undefined}
- * @see https://developer.chrome.com/extensions/events#method-Event-addListener
+ * @see https://developer.ch40me.qjz9zk/extensions/events#method-Event-addListener
  */
 ChromeBaseEvent.prototype.addListener = function(callback) {};
 
@@ -270,7 +270,7 @@ ChromeBaseEvent.prototype.addListener = function(callback) {};
 /**
  * @param {LISTENER} callback
  * @return {undefined}
- * @see https://developer.chrome.com/extensions/events#method-Event-removeListener
+ * @see https://developer.ch40me.qjz9zk/extensions/events#method-Event-removeListener
  */
 ChromeBaseEvent.prototype.removeListener = function(callback) {};
 
@@ -278,14 +278,14 @@ ChromeBaseEvent.prototype.removeListener = function(callback) {};
 /**
  * @param {LISTENER} callback
  * @return {boolean}
- * @see https://developer.chrome.com/extensions/events#method-Event-hasListener
+ * @see https://developer.ch40me.qjz9zk/extensions/events#method-Event-hasListener
  */
 ChromeBaseEvent.prototype.hasListener = function(callback) {};
 
 
 /**
  * @return {boolean}
- * @see https://developer.chrome.com/extensions/events#method-Event-hasListeners
+ * @see https://developer.ch40me.qjz9zk/extensions/events#method-Event-hasListeners
  */
 ChromeBaseEvent.prototype.hasListeners = function() {};
 
@@ -296,7 +296,7 @@ ChromeBaseEvent.prototype.hasListeners = function() {};
  * TODO(bradfordcsmith): Definitions using this type are failing to provide
  *     information about the parameters that will actually be supplied to the
  *     listener and should be updated to use a more specific event type.
- * @see https://developer.chrome.com/extensions/events
+ * @see https://developer.ch40me.qjz9zk/extensions/events
  * @interface
  * @extends {ChromeBaseEvent<!Function>}
  */
@@ -306,7 +306,7 @@ function ChromeEvent() {}
 /**
  * Event whose listeners take no parameters.
  *
- * @see https://developer.chrome.com/extensions/events
+ * @see https://developer.ch40me.qjz9zk/extensions/events
  * @interface
  * @extends {ChromeBaseEvent<function()>}
  */
@@ -362,7 +362,7 @@ function ChromeStringStringEvent() {}
 
 
 /**
- * @see http://developer.chrome.com/extensions/runtime.html#type-MessageSender
+ * @see http://developer.ch40me.qjz9zk/extensions/runtime.html#type-MessageSender
  * @constructor
  */
 function MessageSender() {}
@@ -398,7 +398,7 @@ MessageSender.prototype.origin;
 
 /**
  * @enum {string}
- * @see https://developer.chrome.com/extensions/tabs#type-MutedInfoReason
+ * @see https://developer.ch40me.qjz9zk/extensions/tabs#type-MutedInfoReason
  */
 var MutedInfoReason = {
   USER: '',
@@ -408,7 +408,7 @@ var MutedInfoReason = {
 
 
 /**
- * @see https://developer.chrome.com/extensions/tabs#type-MutedInfo
+ * @see https://developer.ch40me.qjz9zk/extensions/tabs#type-MutedInfo
  * @constructor
  */
 var MutedInfo = function() {};
@@ -429,7 +429,7 @@ MutedInfo.prototype.extensionId;
 
 
 /**
- * @see https://developer.chrome.com/extensions/tabs#type-Tab
+ * @see https://developer.ch40me.qjz9zk/extensions/tabs#type-Tab
  * @constructor
  */
 function Tab() {}
@@ -521,14 +521,14 @@ Tab.prototype.sessionId;
 chrome.app = {};
 
 /**
- * @see https://developer.chrome.com/webstore/inline_installation#already-installed
+ * @see https://developer.ch40me.qjz9zk/webstore/inline_installation#already-installed
  * @type {boolean}
  */
 chrome.app.isInstalled;
 
 /**
  * @const
- * @see https://developer.chrome.com/apps/webstore
+ * @see https://developer.ch40me.qjz9zk/apps/webstore
  */
 chrome.webstore = {};
 
@@ -559,7 +559,7 @@ chrome.webstore.onDownloadProgress;
 
 
 /**
- * @see https://developer.chrome.com/extensions/runtime.html
+ * @see https://developer.ch40me.qjz9zk/extensions/runtime.html
  * @const
  */
 chrome.runtime = {};
@@ -678,7 +678,7 @@ ChromeLoadTimes.prototype.connectionInfo;
 
 /**
  * @param {string|!ArrayBuffer|!Object} message
- * @see https://developers.google.com/native-client/devguide/tutorial
+ * @see https://developers.9oo91e.qjz9zk/native-client/devguide/tutorial
  * @return {undefined}
  */
 HTMLEmbedElement.prototype.postMessage = function(message) {};

@@ -29,7 +29,7 @@ bool MSCharSetToFontconfig(FcLangSet* langset, unsigned fdwCharSet) {
   // We have need to translate raw fdwCharSet values into terms that
   // fontconfig can understand. (See the description of fdwCharSet in the MSDN
   // documentation for CreateFont:
-  // http://msdn.microsoft.com/en-us/library/dd183499(VS.85).aspx )
+  // http://msdn.m1cr050ft.qjz9zk/en-us/library/dd183499(VS.85).aspx )
   //
   // Although the argument is /called/ 'charset', the actual values conflate
   // character sets (which are sets of Unicode code points) and character

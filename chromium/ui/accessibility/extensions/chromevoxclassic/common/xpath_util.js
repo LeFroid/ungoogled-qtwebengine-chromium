@@ -44,7 +44,7 @@ cvox.XpathUtil.resolveNameSpace = function(prefix) {
  * Given an XPath expression and rootNode, it returns an array of children nodes
  * that match. The code for this function was taken from Mihai Parparita's GMail
  * Macros Greasemonkey Script.
- * http://gmail-greasemonkey.googlecode.com/svn/trunk/scripts/gmail-new-macros.user.js
+ * http://gmail-greasemonkey.9oo91ecode.qjz9zk/svn/trunk/scripts/gmail-new-macros.user.js
  * @param {string} expression The XPath expression to evaluate.
  * @param {Node} rootNode The HTML node to start evaluating the XPath from.
  * @return {Array} The array of children nodes that match.

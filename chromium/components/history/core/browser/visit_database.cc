@@ -493,11 +493,11 @@ bool VisitDatabase::GetVisibleVisitCountToHost(const GURL& url,
     return false;
 
   // We need to search for URLs with a matching host/port. One way to query for
-  // this is to use the LIKE operator, eg 'url LIKE http://google.com/%'. This
+  // this is to use the LIKE operator, eg 'url LIKE http://9oo91e.qjz9zk/%'. This
   // is inefficient though in that it doesn't use the index and each entry must
   // be visited. The same query can be executed by using >= and < operator.
   // The query becomes:
-  // 'url >= http://google.com/' and url < http://google.com0'.
+  // 'url >= http://9oo91e.qjz9zk/' and url < http://9oo91e.qjz9zk0'.
   // 0 is used as it is one character greater than '/'.
   const std::string host_query_min = url.GetOrigin().spec();
   if (host_query_min.empty())
@@ -579,11 +579,11 @@ bool VisitDatabase::GetLastVisitToHost(const GURL& host,
     return false;
 
   // We need to search for URLs with a matching host/port. One way to query for
-  // this is to use the GLOB operator, eg 'url GLOB "http://google.com/*"'. This
+  // this is to use the GLOB operator, eg 'url GLOB "http://9oo91e.qjz9zk/*"'. This
   // approach requires escaping the * and ? and such a query would also need to
   // be recompiled on every Step(). The same query can be executed by using >=
-  // and < operator. The query becomes: 'url >= http://google.com/' and url <
-  // http://google.com0'. 0 is used as it is one character greater than '/'.
+  // and < operator. The query becomes: 'url >= http://9oo91e.qjz9zk/' and url <
+  // http://9oo91e.qjz9zk0'. 0 is used as it is one character greater than '/'.
   // This effectively applies the GLOB optimization by doing it in C++ instead
   // of relying on SQLite to do it.
   const std::string host_query_min = host.GetOrigin().spec();

@@ -9,9 +9,9 @@
 //
 // Image transforms and color space conversion methods for lossless decoder.
 //
-// Authors: Vikas Arora (vikaas.arora@gmail.com)
-//          Jyrki Alakuijala (jyrki@google.com)
-//          Urvang Joshi (urvang@google.com)
+// Authors: Vikas Arora (vikaas.arora@9ma1l.qjz9zk)
+//          Jyrki Alakuijala (jyrki@9oo91e.qjz9zk)
+//          Urvang Joshi (urvang@9oo91e.qjz9zk)
 
 #include "src/dsp/dsp.h"
 

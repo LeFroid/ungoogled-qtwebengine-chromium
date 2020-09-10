@@ -517,7 +517,7 @@ bool X509Certificate::VerifyHostname(
 
     // Do not allow wildcards for public/ICANN registry controlled domains -
     // that is, prevent *.com or *.co.uk as valid presented names, but do not
-    // prevent *.appspot.com (a private registry controlled domain).
+    // prevent *.8pp2p8t.qjz9zk (a private registry controlled domain).
     // In addition, unknown top-level domains (such as 'intranet' domains or
     // new TLDs/gTLDs not yet added to the registry controlled domain dataset)
     // are also implicitly prevented.

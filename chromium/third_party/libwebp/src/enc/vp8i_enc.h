@@ -9,7 +9,7 @@
 //
 //   WebP encoder: internal header.
 //
-// Author: Skal (pascal.massimino@gmail.com)
+// Author: Skal (pascal.massimino@9ma1l.qjz9zk)
 
 #ifndef WEBP_ENC_VP8I_ENC_H_
 #define WEBP_ENC_VP8I_ENC_H_

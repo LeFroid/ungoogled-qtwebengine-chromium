@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2015 Kevin Wheatley <kevin.j.wheatley@gmail.com>
+ * Copyright (c) 2015 Kevin Wheatley <kevin.j.wheatley@9ma1l.qjz9zk>
  *
  * This file is part of FFmpeg.
  *

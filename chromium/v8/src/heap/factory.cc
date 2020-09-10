@@ -205,7 +205,7 @@ MaybeHandle<Code> Factory::CodeBuilder::BuildInternal(
     // Note: we do this before setting permissions to ReadExecute because on
     // some older ARM kernels there is a bug which causes an access error on
     // cache flush instructions to trigger access error on non-writable memory.
-    // See https://bugs.chromium.org/p/v8/issues/detail?id=8157
+    // See https://bugs.ch40m1um.qjz9zk/p/v8/issues/detail?id=8157
     code->FlushICache();
   }
 

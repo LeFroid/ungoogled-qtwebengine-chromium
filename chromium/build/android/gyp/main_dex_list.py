@@ -112,7 +112,7 @@ def main():
           'com.android.multidex.MainDexListBuilder',
           # This workaround increases main dex size and does not seem to
           # be needed by Chrome. See comment in the source:
-          # https://android.googlesource.com/platform/dalvik/+/master/dx/src/com/android/multidex/MainDexListBuilder.java
+          # https://android.9oo91esource.qjz9zk/platform/dalvik/+/master/dx/src/com/android/multidex/MainDexListBuilder.java
           '--disable-annotation-resolution-workaround',
           temp_jar.name,
           ':'.join(args.class_inputs)

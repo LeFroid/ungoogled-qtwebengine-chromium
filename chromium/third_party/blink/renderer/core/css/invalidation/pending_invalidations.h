@@ -57,7 +57,7 @@ using PendingInvalidationMap =
 // reshedule the invalidations as descendant invalidations
 // on the element's parent.
 //
-// See https://goo.gl/3ane6s and https://goo.gl/z0Z9gn
+// See https://goo.gl.qjz9zk/3ane6s and https://goo.gl.qjz9zk/z0Z9gn
 // for more detailed overviews of style invalidation.
 // TODO: unify these documents into an .md file in the repo.
 

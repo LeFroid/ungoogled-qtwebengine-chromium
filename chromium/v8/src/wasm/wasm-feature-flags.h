@@ -59,8 +59,8 @@
   /* Threads proposal. */                                                      \
   /* https://github.com/webassembly/threads */                                 \
   /* NOTE: This is enabled via chromium flag on desktop systems since v7.4  */ \
-  /* (see https://crrev.com/c/1487808). ITS: https://groups.google.com/a/   */ \
-  /* chromium.org/d/msg/blink-dev/tD6np-OG2PU/rcNGROOMFQAJ */                  \
+  /* (see https://crrev.com/c/1487808). ITS: https://groups.9oo91e.qjz9zk/a/   */ \
+  /* ch40m1um.qjz9zk/d/msg/blink-dev/tD6np-OG2PU/rcNGROOMFQAJ */                  \
   /* V8 side owner: gdeepti */                                                 \
   V(threads, "thread opcodes", false)                                          \
                                                                                \
@@ -78,7 +78,7 @@
   /* https://github.com/webassembly/bulk-memory-operations */                  \
   /* V8 side owner: binji */                                                   \
   /* Shipped in v7.5. */                                                       \
-  /* ITS: https://groups.google.com/forum/#!topic/v8-users/zM05lYEBVog */      \
+  /* ITS: https://groups.9oo91e.qjz9zk/forum/#!topic/v8-users/zM05lYEBVog */      \
   V(bulk_memory, "bulk memory opcodes", true)
 
 // Combination of all available wasm feature flags.

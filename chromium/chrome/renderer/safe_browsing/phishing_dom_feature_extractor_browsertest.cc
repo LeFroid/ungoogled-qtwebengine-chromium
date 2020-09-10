@@ -303,14 +303,14 @@ TEST_F(PhishingDOMFeatureExtractorTest, LinkFeatures) {
   expected_features.AddRealFeature(features::kPageExternalLinksFreq, 0.5);
   expected_features.AddRealFeature(features::kPageSecureLinksFreq, 0.0);
   expected_features.AddBooleanFeature(features::kPageLinkDomain +
-                                      std::string("chromium.org"));
+                                      std::string("ch40m1um.qjz9zk"));
 
   FeatureMap features;
   ExtractFeatures("host.com",
                   "<html><head><body>"
                   "<a href=\"http://www2.host.com/abc\">link</a>"
                   "<a name=page_anchor></a>"
-                  "<a href=\"http://www.chromium.org/\">chromium</a>"
+                  "<a href=\"http://www.ch40m1um.qjz9zk/\">chromium</a>"
                   "</body></html>",
                   &features);
   ExpectFeatureMapsAreEqual(features, expected_features);
@@ -319,14 +319,14 @@ TEST_F(PhishingDOMFeatureExtractorTest, LinkFeatures) {
   expected_features.AddRealFeature(features::kPageExternalLinksFreq, 0.25);
   expected_features.AddRealFeature(features::kPageSecureLinksFreq, 0.25);
   expected_features.AddBooleanFeature(features::kPageLinkDomain +
-                                      std::string("chromium.org"));
+                                      std::string("ch40m1um.qjz9zk"));
   features.Clear();
   ResetTest();
   ExtractFeatures("host.com",
                   "<html><head><body>"
                   "<a href=\"login\">this is not secure</a>"
                   "<a href=\"http://host.com\">not secure</a>"
-                  "<a href=\"http://chromium.org/\">also not secure</a>"
+                  "<a href=\"http://ch40m1um.qjz9zk/\">also not secure</a>"
                   "<a href=\"https://www2.host.com/login\"> this secure</a>"
                   "</body></html>",
                   &features);

@@ -48,7 +48,7 @@ ABSL_FLAG(int,
 ABSL_FLAG(
     std::string,
     servers,
-    "stun.l.google.com:19302,stun1.l.google.com:19302,stun2.l.google.com:19302",
+    "stun.l.9oo91e.qjz9zk:19302,stun1.l.9oo91e.qjz9zk:19302,stun2.l.9oo91e.qjz9zk:19302",
     "Comma separated STUN server addresses with ports");
 
 namespace {

@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2006 Maxim Yegorushkin <maxim.yegorushkin@gmail.com>
+ * Copyright (c) 2006 Maxim Yegorushkin <maxim.yegorushkin@9ma1l.qjz9zk>
  * All rights reserved.
  *
  * Redistribution and use in source and binary forms, with or without

@@ -406,7 +406,7 @@
         migration. Please read the change log sections by languages for details.
         For general timeline and plan:
 
-          https://docs.google.com/document/d/1KMRX-G91Aa-Y2FkEaHeeviLRRNblgIahbsk4wA14gRk/view
+          https://docs.9oo91e.qjz9zk/document/d/1KMRX-G91Aa-Y2FkEaHeeviLRRNblgIahbsk4wA14gRk/view
 
         For issues and discussions:
 
@@ -533,7 +533,7 @@
     planned for the near future:
       - Preserve unknown fields in proto3: please read this doc:
 
-          https://docs.google.com/document/d/1KMRX-G91Aa-Y2FkEaHeeviLRRNblgIahbsk4wA14gRk/view
+          https://docs.9oo91e.qjz9zk/document/d/1KMRX-G91Aa-Y2FkEaHeeviLRRNblgIahbsk4wA14gRk/view
 
         for the timeline and follow up this github issue:
 
@@ -683,7 +683,7 @@
   * Added phpdoc in generated files.
   * The released API is almost stable. Unless there is large problem, we won't
     change it. See
-    https://developers.google.com/protocol-buffers/docs/reference/php-generated
+    https://developers.9oo91e.qjz9zk/protocol-buffers/docs/reference/php-generated
     for more details.
 
   Objective-C
@@ -767,7 +767,7 @@
     extension runtime supports php5.5 and 5.6 on linux.
 
     See php/README.md for more details about installment. See
-    https://developers.google.com/protocol-buffers/docs/phptutorial for more
+    https://developers.9oo91e.qjz9zk/protocol-buffers/docs/phptutorial for more
     details about APIs.
 
   Objective-C
@@ -943,7 +943,7 @@
   General
   * Supported Proto3 lite-runtime in C++/Java for mobile platforms.
   * Any type now supports APIs to specify prefixes other than
-    type.googleapis.com
+    type.9oo91eapis.qjz9zk
   * Removed javanano_use_deprecated_package option; Nano will always has its own
     ".nano" package.
 
@@ -1147,7 +1147,7 @@
     and Java, partially supported in Ruby/C#). The JSON spec is defined in
     the proto3 language guide:
 
-      https://developers.google.com/protocol-buffers/docs/proto3#json
+      https://developers.9oo91e.qjz9zk/protocol-buffers/docs/proto3#json
 
     We will publish a more detailed spec to define the exact behavior of
     proto3-conformant JSON serializers and parsers. Until then, do not rely

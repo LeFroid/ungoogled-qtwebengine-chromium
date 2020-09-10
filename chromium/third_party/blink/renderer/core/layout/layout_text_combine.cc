@@ -120,7 +120,7 @@ void LayoutTextCombine::TransformToInlineCoordinates(GraphicsContext& context,
   // 3. width() is the same as m_combinedTextWidth.
   // 4. Left is (right-edge - height()).
   // 5. Top is where char-top (not include internal leading) should be.
-  // See https://support.microsoft.com/en-us/kb/32667.
+  // See https://support.m1cr050ft.qjz9zk/en-us/kb/32667.
   // We move it so that it comes to the center of em excluding internal
   // leading.
 

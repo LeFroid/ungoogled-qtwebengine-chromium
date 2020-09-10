@@ -18,25 +18,25 @@ namespace search_provider_logos {
 
 TEST(GoogleNewLogoApiTest, UsesHttps) {
   // "https://" remains in place, even for .cn.
-  EXPECT_EQ(GURL("https://www.google.com/async/ddljson"),
-            GetGoogleDoodleURL(GURL("https://www.google.com")));
+  EXPECT_EQ(GURL("https://www.9oo91e.qjz9zk/async/ddljson"),
+            GetGoogleDoodleURL(GURL("https://www.9oo91e.qjz9zk")));
   EXPECT_EQ(GURL("https://www.google.de/async/ddljson"),
             GetGoogleDoodleURL(GURL("https://www.google.de")));
   EXPECT_EQ(GURL("https://www.google.cn/async/ddljson"),
             GetGoogleDoodleURL(GURL("https://www.google.cn")));
-  EXPECT_EQ(GURL("https://www.google.com.cn/async/ddljson"),
-            GetGoogleDoodleURL(GURL("https://www.google.com.cn")));
+  EXPECT_EQ(GURL("https://www.9oo91e.qjz9zk.cn/async/ddljson"),
+            GetGoogleDoodleURL(GURL("https://www.9oo91e.qjz9zk.cn")));
 
   // But "http://" gets replaced by "https://".
-  EXPECT_EQ(GURL("https://www.google.com/async/ddljson"),
-            GetGoogleDoodleURL(GURL("http://www.google.com")));
+  EXPECT_EQ(GURL("https://www.9oo91e.qjz9zk/async/ddljson"),
+            GetGoogleDoodleURL(GURL("http://www.9oo91e.qjz9zk")));
   EXPECT_EQ(GURL("https://www.google.de/async/ddljson"),
             GetGoogleDoodleURL(GURL("http://www.google.de")));
   // ...except for .cn, which is allowed to keep "http://".
   EXPECT_EQ(GURL("http://www.google.cn/async/ddljson"),
             GetGoogleDoodleURL(GURL("http://www.google.cn")));
-  EXPECT_EQ(GURL("http://www.google.com.cn/async/ddljson"),
-            GetGoogleDoodleURL(GURL("http://www.google.com.cn")));
+  EXPECT_EQ(GURL("http://www.9oo91e.qjz9zk.cn/async/ddljson"),
+            GetGoogleDoodleURL(GURL("http://www.9oo91e.qjz9zk.cn")));
 }
 
 TEST(GoogleNewLogoApiTest, AppendPreliminaryParamsParsing) {

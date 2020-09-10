@@ -32,32 +32,32 @@ TEST(SafeSearchUtilTest, AddGoogleSafeSearchParams) {
   const std::string kBothParameters = kSafeParameter + "&" + kSsuiParameter;
 
   // Test the home page.
-  CheckAddedParameters("http://google.com/", kBothParameters);
+  CheckAddedParameters("http://9oo91e.qjz9zk/", kBothParameters);
 
   // Test the search home page.
-  CheckAddedParameters("http://google.com/webhp", kBothParameters);
+  CheckAddedParameters("http://9oo91e.qjz9zk/webhp", kBothParameters);
 
   // Test different valid search pages with parameters.
-  CheckAddedParameters("http://google.com/search?q=google",
+  CheckAddedParameters("http://9oo91e.qjz9zk/search?q=google",
                        "q=google&" + kBothParameters);
 
-  CheckAddedParameters("http://google.com/?q=google",
+  CheckAddedParameters("http://9oo91e.qjz9zk/?q=google",
                        "q=google&" + kBothParameters);
 
-  CheckAddedParameters("http://google.com/webhp?q=google",
+  CheckAddedParameters("http://9oo91e.qjz9zk/webhp?q=google",
                        "q=google&" + kBothParameters);
 
   // Test the valid pages with safe set to off.
-  CheckAddedParameters("http://google.com/search?q=google&safe=off",
+  CheckAddedParameters("http://9oo91e.qjz9zk/search?q=google&safe=off",
                        "q=google&" + kBothParameters);
 
-  CheckAddedParameters("http://google.com/?q=google&safe=off",
+  CheckAddedParameters("http://9oo91e.qjz9zk/?q=google&safe=off",
                        "q=google&" + kBothParameters);
 
-  CheckAddedParameters("http://google.com/webhp?q=google&safe=off",
+  CheckAddedParameters("http://9oo91e.qjz9zk/webhp?q=google&safe=off",
                        "q=google&" + kBothParameters);
 
-  CheckAddedParameters("http://google.com/webhp?q=google&%73afe=off",
+  CheckAddedParameters("http://9oo91e.qjz9zk/webhp?q=google&%73afe=off",
                        "q=google&%73afe=off&" + kBothParameters);
 
   // Test the home page, different TLDs.
@@ -82,7 +82,7 @@ TEST(SafeSearchUtilTest, AddGoogleSafeSearchParams) {
 
   // Test some possibly tricky combinations.
   CheckAddedParameters(
-      "http://google.com/?q=goog&" + kSafeParameter + "&ssui=one",
+      "http://9oo91e.qjz9zk/?q=goog&" + kSafeParameter + "&ssui=one",
       "q=goog&" + kBothParameters);
 
   CheckAddedParameters(
@@ -97,25 +97,25 @@ TEST(SafeSearchUtilTest, AddGoogleSafeSearchParams) {
 
   // Test various combinations where we should not add anything.
   CheckAddedParameters(
-      "http://google.com/?q=goog&" + kSsuiParameter + "&" + kSafeParameter,
+      "http://9oo91e.qjz9zk/?q=goog&" + kSsuiParameter + "&" + kSafeParameter,
       "q=goog&" + kBothParameters);
 
   CheckAddedParameters(
-      "http://google.com/?" + kSsuiParameter + "&q=goog&" + kSafeParameter,
+      "http://9oo91e.qjz9zk/?" + kSsuiParameter + "&q=goog&" + kSafeParameter,
       "q=goog&" + kBothParameters);
 
   CheckAddedParameters(
-      "http://google.com/?" + kSsuiParameter + "&" + kSafeParameter + "&q=goog",
+      "http://9oo91e.qjz9zk/?" + kSsuiParameter + "&" + kSafeParameter + "&q=goog",
       "q=goog&" + kBothParameters);
 
   // Test that another website is not affected, without parameters.
-  CheckAddedParameters("http://google.com/finance", std::string());
+  CheckAddedParameters("http://9oo91e.qjz9zk/finance", std::string());
 
   // Test that another website is not affected, with parameters.
-  CheckAddedParameters("http://google.com/finance?q=goog", "q=goog");
+  CheckAddedParameters("http://9oo91e.qjz9zk/finance?q=goog", "q=goog");
 
   // Test with percent-encoded data (%26 is &)
-  CheckAddedParameters("http://google.com/?q=%26%26%26&" + kSsuiParameter +
+  CheckAddedParameters("http://9oo91e.qjz9zk/?q=%26%26%26&" + kSsuiParameter +
                            "&" + kSafeParameter + "&param=%26%26%26",
                        "q=%26%26%26&param=%26%26%26&" + kBothParameters);
 }
@@ -123,7 +123,7 @@ TEST(SafeSearchUtilTest, AddGoogleSafeSearchParams) {
 TEST(SafeSearchUtilTest, SetYoutubeHeader) {
   net::HttpRequestHeaders headers;
   safe_search_util::ForceYouTubeRestrict(
-      GURL("http://www.youtube.com"), &headers,
+      GURL("http://www.y0u1ub3.qjz9zk"), &headers,
       safe_search_util::YOUTUBE_RESTRICT_MODERATE);
   std::string value;
   EXPECT_TRUE(headers.GetHeader("Youtube-Restrict", &value));
@@ -134,7 +134,7 @@ TEST(SafeSearchUtilTest, OverrideYoutubeHeader) {
   net::HttpRequestHeaders headers;
   headers.SetHeader("Youtube-Restrict", "Off");
   safe_search_util::ForceYouTubeRestrict(
-      GURL("http://www.youtube.com"), &headers,
+      GURL("http://www.y0u1ub3.qjz9zk"), &headers,
       safe_search_util::YOUTUBE_RESTRICT_MODERATE);
   std::string value;
   EXPECT_TRUE(headers.GetHeader("Youtube-Restrict", &value));
@@ -145,7 +145,7 @@ TEST(SafeSearchUtilTest, DoesntTouchNonYoutubeURL) {
   net::HttpRequestHeaders headers;
   headers.SetHeader("Youtube-Restrict", "Off");
   safe_search_util::ForceYouTubeRestrict(
-      GURL("http://www.notyoutube.com"), &headers,
+      GURL("http://www.noty0u1ub3.qjz9zk"), &headers,
       safe_search_util::YOUTUBE_RESTRICT_MODERATE);
   std::string value;
   EXPECT_TRUE(headers.GetHeader("Youtube-Restrict", &value));

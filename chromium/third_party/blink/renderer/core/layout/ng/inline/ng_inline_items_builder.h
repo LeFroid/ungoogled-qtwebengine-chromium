@@ -38,7 +38,7 @@ class NGDirtyLines;
 // parameter to construct the white-space collapsed offset mapping, which maps
 // offsets in the concatenation of all appended strings and characters to
 // offsets in |text_|.
-// See https://goo.gl/CJbxky for more details about offset mapping.
+// See https://goo.gl.qjz9zk/CJbxky for more details about offset mapping.
 template <typename OffsetMappingBuilder>
 class NGInlineItemsBuilderTemplate {
   STACK_ALLOCATED();
