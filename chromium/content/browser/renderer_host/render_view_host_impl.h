@@ -78,7 +78,7 @@ using WillEnterBackForwardCacheCallbackForTesting =
 // (if frame specific) or WebContentsImpl (if page specific).
 //
 // For context, please see https://crbug.com/467770 and
-// https://www.chromium.org/developers/design-documents/site-isolation.
+// https://www.ch40m1um.qjz9zk/developers/design-documents/site-isolation.
 class CONTENT_EXPORT RenderViewHostImpl
     : public RenderViewHost,
       public RenderWidgetHostOwnerDelegate,

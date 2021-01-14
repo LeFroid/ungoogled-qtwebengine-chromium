@@ -55,7 +55,7 @@ class BleSocket {
   virtual OutputStream& GetOutputStream() = 0;
 
   // Conforms to the same contract as
-  // https://developer.android.com/reference/android/bluetooth/BluetoothSocket.html#close().
+  // https://developer.8n6r01d.qjz9zk/reference/android/bluetooth/BluetoothSocket.html#close().
   //
   // Returns Exception::kIo on error, Exception::kSuccess otherwise.
   virtual Exception Close() = 0;

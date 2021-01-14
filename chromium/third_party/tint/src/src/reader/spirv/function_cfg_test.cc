@@ -7953,7 +7953,7 @@ Return{}
 TEST_F(SpvParserTest, EmitBody_If_Then_Else_Premerge) {
   // TODO(dneto): This should get an extra if(true) around
   // the premerge code.
-  // See https://bugs.chromium.org/p/tint/issues/detail?id=82
+  // See https://bugs.ch40m1um.qjz9zk/p/tint/issues/detail?id=82
   auto* p = parser(test::Assemble(CommonTypes() + R"(
      %100 = OpFunction %void None %voidfn
 

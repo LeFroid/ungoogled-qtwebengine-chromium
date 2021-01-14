@@ -390,7 +390,7 @@
     "message": "Suggested Token"
   },
   "lighthouse-core/audits/autocomplete.js | description": {
-    "message": "`autocomplete` helps users submit forms quicker. To reduce user effort, consider enabling by setting the `autocomplete` attribute to a valid value. [Learn more](https://developers.google.com/web/fundamentals/design-and-ux/input/forms#use_metadata_to_enable_auto-complete)"
+    "message": "`autocomplete` helps users submit forms quicker. To reduce user effort, consider enabling by setting the `autocomplete` attribute to a valid value. [Learn more](https://developers.9oo91e.qjz9zk/web/fundamentals/design-and-ux/input/forms#use_metadata_to_enable_auto-complete)"
   },
   "lighthouse-core/audits/autocomplete.js | failureTitle": {
     "message": "`<input>` elements do not have correct `autocomplete` attributes"
@@ -621,7 +621,7 @@
     "message": "值"
   },
   "lighthouse-core/audits/dobetterweb/dom-size.js | description": {
-    "message": "大型 DOM 会增加内存使用量、导致[样式计算](https://developers.google.com/web/fundamentals/performance/rendering/reduce-the-scope-and-complexity-of-style-calculations)用时延长，并产生高昂的[布局重排](https://developers.google.com/speed/articles/reflow)成本。[了解详情](https://web.dev/dom-size/)。"
+    "message": "大型 DOM 会增加内存使用量、导致[样式计算](https://developers.9oo91e.qjz9zk/web/fundamentals/performance/rendering/reduce-the-scope-and-complexity-of-style-calculations)用时延长，并产生高昂的[布局重排](https://developers.9oo91e.qjz9zk/speed/articles/reflow)成本。[了解详情](https://web.dev/dom-size/)。"
   },
   "lighthouse-core/audits/dobetterweb/dom-size.js | displayValue": {
     "message": "{itemCount,plural, =1{1 个元素}other{# 个元素}}"
@@ -834,7 +834,7 @@
     "message": "对请求的处理方式"
   },
   "lighthouse-core/audits/is-on-https.js | description": {
-    "message": "All sites should be protected with HTTPS, even ones that don't handle sensitive data. This includes avoiding [mixed content](https://developers.google.com/web/fundamentals/security/prevent-mixed-content/what-is-mixed-content), where some resources are loaded over HTTP despite the initial request being served over HTTPS. HTTPS prevents intruders from tampering with or passively listening in on the communications between your app and your users, and is a prerequisite for HTTP/2 and many new web platform APIs. [Learn more](https://web.dev/is-on-https/)."
+    "message": "All sites should be protected with HTTPS, even ones that don't handle sensitive data. This includes avoiding [mixed content](https://developers.9oo91e.qjz9zk/web/fundamentals/security/prevent-mixed-content/what-is-mixed-content), where some resources are loaded over HTTP despite the initial request being served over HTTPS. HTTPS prevents intruders from tampering with or passively listening in on the communications between your app and your users, and is a prerequisite for HTTP/2 and many new web platform APIs. [Learn more](https://web.dev/is-on-https/)."
   },
   "lighthouse-core/audits/is-on-https.js | displayValue": {
     "message": "{itemCount,plural, =1{发现 1 条不安全的请求}other{发现 # 条不安全的请求}}"
@@ -855,7 +855,7 @@
     "message": "库"
   },
   "lighthouse-core/audits/large-javascript-libraries.js | description": {
-    "message": "大型 JavaScript 库可能会导致性能不佳。最好使用功能相当且规模较小的 JavaScript 库，以缩减软件包大小。[了解详情](https://developers.google.com/web/fundamentals/performance/webpack/decrease-frontend-size#optimize_dependencies)。"
+    "message": "大型 JavaScript 库可能会导致性能不佳。最好使用功能相当且规模较小的 JavaScript 库，以缩减软件包大小。[了解详情](https://developers.9oo91e.qjz9zk/web/fundamentals/performance/webpack/decrease-frontend-size#optimize_dependencies)。"
   },
   "lighthouse-core/audits/large-javascript-libraries.js | displayValue": {
     "message": "{libraryCount,plural, =1{发现了 1 个大型库}other{发现了 # 个大型库}}"
@@ -990,7 +990,7 @@
     "message": "服务器后端延迟"
   },
   "lighthouse-core/audits/no-unload-listeners.js | description": {
-    "message": "“`unload`”事件不会可靠地触发，而且监听该事件可能会妨碍系统实施“往返缓存”之类的浏览器优化策略。建议您改用“`pagehide`”或“`visibilitychange`”事件。[了解详情](https://developers.google.com/web/updates/2018/07/page-lifecycle-api#the-unload-event)"
+    "message": "“`unload`”事件不会可靠地触发，而且监听该事件可能会妨碍系统实施“往返缓存”之类的浏览器优化策略。建议您改用“`pagehide`”或“`visibilitychange`”事件。[了解详情](https://developers.9oo91e.qjz9zk/web/updates/2018/07/page-lifecycle-api#the-unload-event)"
   },
   "lighthouse-core/audits/no-unload-listeners.js | failureTitle": {
     "message": "注册“`unload`”事件监听器"
@@ -1041,7 +1041,7 @@
     "message": "Lighthouse 无法从清单读取 `start_url`。因此，系统已将 `start_url` 视为该文档的网址。错误消息：“{manifestWarning}”。"
   },
   "lighthouse-core/audits/performance-budget.js | description": {
-    "message": "请将网络请求的数量和数据大小保持在提供的性能预算所设定的目标之内。[了解详情](https://developers.google.com/web/tools/lighthouse/audits/budgets)。"
+    "message": "请将网络请求的数量和数据大小保持在提供的性能预算所设定的目标之内。[了解详情](https://developers.9oo91e.qjz9zk/web/tools/lighthouse/audits/budgets)。"
   },
   "lighthouse-core/audits/performance-budget.js | requestCountOverBudget": {
     "message": "{count,plural, =1{1 条请求}other{# 条请求}}"
@@ -1113,7 +1113,7 @@
     "message": "无法抓取的链接"
   },
   "lighthouse-core/audits/seo/crawlable-anchors.js | description": {
-    "message": "搜索引擎可能会使用链接中的 `href` 属性来抓取网站。请确保锚元素的 `href` 属性链接到合适的目标网站，以便搜索引擎发现该网站上的更多网页。[了解详情](https://support.google.com/webmasters/answer/9112205)"
+    "message": "搜索引擎可能会使用链接中的 `href` 属性来抓取网站。请确保锚元素的 `href` 属性链接到合适的目标网站，以便搜索引擎发现该网站上的更多网页。[了解详情](https://support.9oo91e.qjz9zk/webmasters/answer/9112205)"
   },
   "lighthouse-core/audits/seo/crawlable-anchors.js | failureTitle": {
     "message": "有无法抓取的链接"
@@ -1197,7 +1197,7 @@
     "message": "链接有描述性文字"
   },
   "lighthouse-core/audits/seo/manual/structured-data.js | description": {
-    "message": "运行[结构化数据测试工具](https://search.google.com/structured-data/testing-tool/) 和 [Structured Data Linter](http://linter.structured-data.org/) 可验证结构化数据。[了解详情](https://web.dev/structured-data/)。"
+    "message": "运行[结构化数据测试工具](https://search.9oo91e.qjz9zk/structured-data/testing-tool/) 和 [Structured Data Linter](http://linter.structured-data.org/) 可验证结构化数据。[了解详情](https://web.dev/structured-data/)。"
   },
   "lighthouse-core/audits/seo/manual/structured-data.js | title": {
     "message": "结构化数据有效"
@@ -1320,7 +1320,7 @@
     "message": "第三方"
   },
   "lighthouse-core/audits/third-party-summary.js | description": {
-    "message": "第三方代码可能会显著影响加载性能。请限制冗余第三方提供商的数量，并尝试在页面完成主要加载后再加载第三方代码。[了解详情](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/loading-third-party-javascript/)。"
+    "message": "第三方代码可能会显著影响加载性能。请限制冗余第三方提供商的数量，并尝试在页面完成主要加载后再加载第三方代码。[了解详情](https://developers.9oo91e.qjz9zk/web/fundamentals/performance/optimizing-content-efficiency/loading-third-party-javascript/)。"
   },
   "lighthouse-core/audits/third-party-summary.js | displayValue": {
     "message": "第三方代码将主线程阻止了 {timeInMs, number, milliseconds} 毫秒"
@@ -1341,7 +1341,7 @@
     "message": "指标"
   },
   "lighthouse-core/audits/timing-budget.js | description": {
-    "message": "设置时间预算有助于您密切关注网站性能。性能出色的网站既会快速加载，也会快速响应用户输入事件。[了解详情](https://developers.google.com/web/tools/lighthouse/audits/budgets)。"
+    "message": "设置时间预算有助于您密切关注网站性能。性能出色的网站既会快速加载，也会快速响应用户输入事件。[了解详情](https://developers.9oo91e.qjz9zk/web/tools/lighthouse/audits/budgets)。"
   },
   "lighthouse-core/audits/timing-budget.js | title": {
     "message": "时间预算"
@@ -1395,7 +1395,7 @@
     "message": "映射网址"
   },
   "lighthouse-core/audits/valid-source-maps.js | description": {
-    "message": "源代码映射会将缩减了大小的代码转换成原始源代码。这有助于开发者在正式版中调试。此外，Lighthouse 还能提供进一步的数据分析。您不妨考虑部署源代码映射以充分利用这些好处。[了解详情](https://developers.google.com/web/tools/chrome-devtools/javascript/source-maps)。"
+    "message": "源代码映射会将缩减了大小的代码转换成原始源代码。这有助于开发者在正式版中调试。此外，Lighthouse 还能提供进一步的数据分析。您不妨考虑部署源代码映射以充分利用这些好处。[了解详情](https://developers.9oo91e.qjz9zk/web/tools/chrome-devtools/javascript/source-maps)。"
   },
   "lighthouse-core/audits/valid-source-maps.js | failureTitle": {
     "message": "大型第一方 JavaScript 缺少源代码映射"
@@ -1464,10 +1464,10 @@
     "message": "最佳做法"
   },
   "lighthouse-core/config/default-config.js | a11yCategoryDescription": {
-    "message": "这些检查会突出显示可[改进您网络应用的无障碍功能](https://developers.google.com/web/fundamentals/accessibility)的提示。系统只能自动检测到一小部分无障碍功能问题，因此您最好也手动测试一下。"
+    "message": "这些检查会突出显示可[改进您网络应用的无障碍功能](https://developers.9oo91e.qjz9zk/web/fundamentals/accessibility)的提示。系统只能自动检测到一小部分无障碍功能问题，因此您最好也手动测试一下。"
   },
   "lighthouse-core/config/default-config.js | a11yCategoryManualDescription": {
-    "message": "这些条目旨在检查自动化测试工具未涵盖的方面。如需了解详情，请参阅有关如何[执行无障碍功能审查](https://developers.google.com/web/fundamentals/accessibility/how-to-review)的指南。"
+    "message": "这些条目旨在检查自动化测试工具未涵盖的方面。如需了解详情，请参阅有关如何[执行无障碍功能审查](https://developers.9oo91e.qjz9zk/web/fundamentals/accessibility/how-to-review)的指南。"
   },
   "lighthouse-core/config/default-config.js | a11yCategoryTitle": {
     "message": "无障碍"
@@ -1554,10 +1554,10 @@
     "message": "性能"
   },
   "lighthouse-core/config/default-config.js | pwaCategoryDescription": {
-    "message": "此类检查会验证渐进式 Web 应用的各个方面。[了解详情](https://developers.google.com/web/progressive-web-apps/checklist)。"
+    "message": "此类检查会验证渐进式 Web 应用的各个方面。[了解详情](https://developers.9oo91e.qjz9zk/web/progressive-web-apps/checklist)。"
   },
   "lighthouse-core/config/default-config.js | pwaCategoryManualDescription": {
-    "message": "基准 [PWA 核对清单](https://developers.google.com/web/progressive-web-apps/checklist)要求必须进行此类检查，但 Lighthouse 不会自动进行此类检查。它们不会影响您的得分，但您必须手动对其进行验证。"
+    "message": "基准 [PWA 核对清单](https://developers.9oo91e.qjz9zk/web/progressive-web-apps/checklist)要求必须进行此类检查，但 Lighthouse 不会自动进行此类检查。它们不会影响您的得分，但您必须手动对其进行验证。"
   },
   "lighthouse-core/config/default-config.js | pwaCategoryTitle": {
     "message": "渐进式 Web 应用"
@@ -1572,7 +1572,7 @@
     "message": "优化 PWA"
   },
   "lighthouse-core/config/default-config.js | seoCategoryDescription": {
-    "message": "这些检查可确保您的页面已经过优化，有利于其在搜索引擎结果中的排名。不在 Lighthouse 检查范围内的其他因素可能会影响您的搜索排名。[了解详情](https://support.google.com/webmasters/answer/35769)。"
+    "message": "这些检查可确保您的页面已经过优化，有利于其在搜索引擎结果中的排名。不在 Lighthouse 检查范围内的其他因素可能会影响您的搜索排名。[了解详情](https://support.9oo91e.qjz9zk/webmasters/answer/35769)。"
   },
   "lighthouse-core/config/default-config.js | seoCategoryManualDescription": {
     "message": "请在您的网站上运行这些额外的验证程序，以检查其他 SEO 最佳做法。"
@@ -1593,7 +1593,7 @@
     "message": "抓取和编入索引"
   },
   "lighthouse-core/config/default-config.js | seoMobileGroupDescription": {
-    "message": "请确保您的网页适合移动设备，以便用户无需进行缩放即可轻松阅读内容页面。[了解详情](https://developers.google.com/search/mobile-sites/)。"
+    "message": "请确保您的网页适合移动设备，以便用户无需进行缩放即可轻松阅读内容页面。[了解详情](https://developers.9oo91e.qjz9zk/search/mobile-sites/)。"
   },
   "lighthouse-core/config/default-config.js | seoMobileGroupTitle": {
     "message": "适合移动设备"
@@ -1836,7 +1836,7 @@
     "message": "实验室数据"
   },
   "lighthouse-core/report/html/renderer/util.js | lsPerformanceCategoryDescription": {
-    "message": "[Lighthouse](https://developers.google.com/web/tools/lighthouse/) 使用模拟的移动网络对当前页面进行的分析。这些值都是估算值，且可能会因时而异。"
+    "message": "[Lighthouse](https://developers.9oo91e.qjz9zk/web/tools/lighthouse/) 使用模拟的移动网络对当前页面进行的分析。这些值都是估算值，且可能会因时而异。"
   },
   "lighthouse-core/report/html/renderer/util.js | manualAuditsGroupTitle": {
     "message": "待手动检查的其他项"
@@ -1983,10 +1983,10 @@
     "message": "确保您已在“管理 » 配置 » 开发”页面中启用了“聚合 JavaScript 文件”。您还可以通过[其他模块](https://www.drupal.org/project/project_module?f%5B0%5D=&f%5B1%5D=&f%5B2%5D=im_vid_3%3A123&f%5B3%5D=&f%5B4%5D=sm_field_project_type%3Afull&f%5B5%5D=&f%5B6%5D=&text=javascript+aggregation&solrsort=iss_project_release_usage+desc&op=Search)配置更高级的聚合选项，从而通过串联、缩减和压缩您的 JavaScript 资源加快您网站的加载速度。"
   },
   "node_modules/lighthouse-stack-packs/packs/drupal.js | unused-css-rules": {
-    "message": "建议您移除未使用的 CSS 规则，仅将所需的 Drupal 库附加到相关网页或网页中的组件。如需了解详情，请访问 [Drupal 文档链接](https://www.drupal.org/docs/8/creating-custom-modules/adding-stylesheets-css-and-javascript-js-to-a-drupal-8-module#library)。若想找出会添加无关 CSS 的附加库，请尝试在 Chrome 开发者工具中运行[代码覆盖率](https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverage)测试。在 Drupal 网站中停用 CSS 聚合后，您可根据样式表网址找出导致问题的主题背景/模块。请留意列表中哪些主题背景/模块有大量样式表的代码覆盖率偏红。主题背景/模块应该只将网页中确实用到的样式表加入队列。"
+    "message": "建议您移除未使用的 CSS 规则，仅将所需的 Drupal 库附加到相关网页或网页中的组件。如需了解详情，请访问 [Drupal 文档链接](https://www.drupal.org/docs/8/creating-custom-modules/adding-stylesheets-css-and-javascript-js-to-a-drupal-8-module#library)。若想找出会添加无关 CSS 的附加库，请尝试在 Chrome 开发者工具中运行[代码覆盖率](https://developers.9oo91e.qjz9zk/web/updates/2017/04/devtools-release-notes#coverage)测试。在 Drupal 网站中停用 CSS 聚合后，您可根据样式表网址找出导致问题的主题背景/模块。请留意列表中哪些主题背景/模块有大量样式表的代码覆盖率偏红。主题背景/模块应该只将网页中确实用到的样式表加入队列。"
   },
   "node_modules/lighthouse-stack-packs/packs/drupal.js | unused-javascript": {
-    "message": "Consider removing unused JavaScript assets and only attach the needed Drupal libraries to the relevant page or component in a page. See the [Drupal documentation link](https://www.drupal.org/docs/8/creating-custom-modules/adding-stylesheets-css-and-javascript-js-to-a-drupal-8-module#library) for details. To identify attached libraries that are adding extraneous JavaScript, try running [code coverage](https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverage) in Chrome DevTools. You can identify the theme/module responsible from the URL of the script when JavaScript aggregation is disabled in your Drupal site. Look out for themes/modules that have many scripts in the list which have a lot of red in code coverage. A theme/module should only enqueue a script if it is actually used on the page."
+    "message": "Consider removing unused JavaScript assets and only attach the needed Drupal libraries to the relevant page or component in a page. See the [Drupal documentation link](https://www.drupal.org/docs/8/creating-custom-modules/adding-stylesheets-css-and-javascript-js-to-a-drupal-8-module#library) for details. To identify attached libraries that are adding extraneous JavaScript, try running [code coverage](https://developers.9oo91e.qjz9zk/web/updates/2017/04/devtools-release-notes#coverage) in Chrome DevTools. You can identify the theme/module responsible from the URL of the script when JavaScript aggregation is disabled in your Drupal site. Look out for themes/modules that have many scripts in the list which have a lot of red in code coverage. A theme/module should only enqueue a script if it is actually used on the page."
   },
   "node_modules/lighthouse-stack-packs/packs/drupal.js | uses-long-cache-ttl": {
     "message": "在“管理 » 配置 » 开发”页面中设置“浏览器和代理缓存最长时限”。了解 [Drupal 缓存和性能优化](https://www.drupal.org/docs/7/managing-site-performance-and-scalability/caching-to-improve-performance/caching-overview#s-drupal-performance-resources)。"
@@ -2025,10 +2025,10 @@
     "message": "很多 [Joomla 扩展程序](https://extensions.joomla.org/instant-search/?jed_live%5Bquery%5D=performance)都可通过串联、缩减和压缩您的脚本来加快您网站的加载速度。部分模板也提供此功能。"
   },
   "node_modules/lighthouse-stack-packs/packs/joomla.js | unused-css-rules": {
-    "message": "某些 [Joomla 扩展程序](https://extensions.joomla.org/)会在您的网页中加载未使用的 CSS，建议您减少这类扩展程序的数量，或改用其他扩展程序。若想找出会添加无关 CSS 的扩展程序，请尝试在 Chrome 开发者工具中运行[代码覆盖率](https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverage)测试。您可根据样式表网址找出导致问题的主题背景/插件。请留意列表中哪些插件有大量样式表的代码覆盖率偏红。插件应该只将网页中确实用到的样式表加入队列。"
+    "message": "某些 [Joomla 扩展程序](https://extensions.joomla.org/)会在您的网页中加载未使用的 CSS，建议您减少这类扩展程序的数量，或改用其他扩展程序。若想找出会添加无关 CSS 的扩展程序，请尝试在 Chrome 开发者工具中运行[代码覆盖率](https://developers.9oo91e.qjz9zk/web/updates/2017/04/devtools-release-notes#coverage)测试。您可根据样式表网址找出导致问题的主题背景/插件。请留意列表中哪些插件有大量样式表的代码覆盖率偏红。插件应该只将网页中确实用到的样式表加入队列。"
   },
   "node_modules/lighthouse-stack-packs/packs/joomla.js | unused-javascript": {
-    "message": "某些 [Joomla 扩展程序](https://extensions.joomla.org/)会在您的网页中加载未使用的 JavaScript，建议您减少这类扩展程序的数量，或改用其他扩展程序。若想找出会添加无关 JS 的插件，请尝试在 Chrome 开发者工具中运行[代码覆盖率](https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverage)测试。您可根据脚本网址找出导致问题的扩展程序。请留意列表中哪些扩展程序有大量脚本的代码覆盖率偏红。扩展程序应该只将网页中确实用到的脚本加入队列。"
+    "message": "某些 [Joomla 扩展程序](https://extensions.joomla.org/)会在您的网页中加载未使用的 JavaScript，建议您减少这类扩展程序的数量，或改用其他扩展程序。若想找出会添加无关 JS 的插件，请尝试在 Chrome 开发者工具中运行[代码覆盖率](https://developers.9oo91e.qjz9zk/web/updates/2017/04/devtools-release-notes#coverage)测试。您可根据脚本网址找出导致问题的扩展程序。请留意列表中哪些扩展程序有大量脚本的代码覆盖率偏红。扩展程序应该只将网页中确实用到的脚本加入队列。"
   },
   "node_modules/lighthouse-stack-packs/packs/joomla.js | uses-long-cache-ttl": {
     "message": "了解 [Joomla 中的浏览器缓存功能](https://docs.joomla.org/Cache)。"
@@ -2124,10 +2124,10 @@
     "message": "很多 [WordPress 插件](https://wordpress.org/plugins/search/minify+javascript/)都可通过连接、削减和压缩您的脚本来加快您网站的加载速度。另外，您最好使用编译流程预先执行此缩减操作（如果可能的话）。"
   },
   "node_modules/lighthouse-stack-packs/packs/wordpress.js | unused-css-rules": {
-    "message": "建议您减少或改变会在您网页中加载未使用的 CSS 的 [WordPress 插件](https://wordpress.org/plugins/)的数量。若想找出会添加无关 CSS 的插件，请尝试在 Chrome DevTools 中运行[代码覆盖率](https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverage)测试。您可根据样式表网址找出导致问题的主题背景/插件。请留意在列表中包含多个以大量红色显示代码覆盖率的样式表的插件。插件应该只将网页中确实用到的样式表加入队列。"
+    "message": "建议您减少或改变会在您网页中加载未使用的 CSS 的 [WordPress 插件](https://wordpress.org/plugins/)的数量。若想找出会添加无关 CSS 的插件，请尝试在 Chrome DevTools 中运行[代码覆盖率](https://developers.9oo91e.qjz9zk/web/updates/2017/04/devtools-release-notes#coverage)测试。您可根据样式表网址找出导致问题的主题背景/插件。请留意在列表中包含多个以大量红色显示代码覆盖率的样式表的插件。插件应该只将网页中确实用到的样式表加入队列。"
   },
   "node_modules/lighthouse-stack-packs/packs/wordpress.js | unused-javascript": {
-    "message": "建议您减少或改变会在您网页中加载未使用的 JavaScript 的 [WordPress 插件](https://wordpress.org/plugins/)的数量。若想找出会添加无关 JS 的插件，请尝试在 Chrome DevTools 中运行[代码覆盖率](https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverage)测试。您可根据脚本网址找出导致问题的主题背景/插件。请留意在列表中包含多个以大量红色显示代码覆盖率的脚本的插件。插件应只将网页中确实用到的脚本加入队列。"
+    "message": "建议您减少或改变会在您网页中加载未使用的 JavaScript 的 [WordPress 插件](https://wordpress.org/plugins/)的数量。若想找出会添加无关 JS 的插件，请尝试在 Chrome DevTools 中运行[代码覆盖率](https://developers.9oo91e.qjz9zk/web/updates/2017/04/devtools-release-notes#coverage)测试。您可根据脚本网址找出导致问题的主题背景/插件。请留意在列表中包含多个以大量红色显示代码覆盖率的脚本的插件。插件应只将网页中确实用到的脚本加入队列。"
   },
   "node_modules/lighthouse-stack-packs/packs/wordpress.js | uses-long-cache-ttl": {
     "message": "了解 [WordPress 中的浏览器缓存](https://wordpress.org/support/article/optimization/#browser-caching)。"

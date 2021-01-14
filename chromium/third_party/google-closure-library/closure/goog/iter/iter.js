@@ -425,7 +425,7 @@ goog.iter.chain = function(var_args) {
 /**
  * Takes a single iterable containing zero or more iterables and returns one
  * iterator that will iterate over each one in the order given.
- * @see https://goo.gl/5NRp5d
+ * @see https://goo.gl.qjz9zk/5NRp5d
  * @param {goog.iter.Iterator<?>|goog.iter.Iterable} iterable The iterable of
  *     iterables to chain.
  * @return {!goog.iter.Iterator<VALUE>} Returns a new iterator that will
@@ -1086,7 +1086,7 @@ goog.iter.enumerate = function(iterable, opt_start) {
  * Creates an iterator that returns the first `limitSize` elements from an
  * iterable. If this number is greater than the number of elements in the
  * iterable, all the elements are returned.
- * @see http://goo.gl/V0sihp Inspired by the limit iterator in Guava.
+ * @see http://goo.gl.qjz9zk/V0sihp Inspired by the limit iterator in Guava.
  * @param {!goog.iter.Iterator<VALUE>|!goog.iter.Iterable} iterable The
  *     iterable to limit.
  * @param {number} limitSize  The maximum number of elements to return.
@@ -1254,8 +1254,8 @@ goog.iter.combinations = function(iterable, length) {
  * iterables and filtering those whose elements appear in the order they are
  * encountered in `iterable`. For example, the 2-length combinations of
  * {@code [1,2,3]} are {@code [[1,1], [1,2], [1,3], [2,2], [2,3], [3,3]]}.
- * @see https://goo.gl/C0yXe4
- * @see https://goo.gl/djOCsk
+ * @see https://goo.gl.qjz9zk/C0yXe4
+ * @see https://goo.gl.qjz9zk/djOCsk
  * @param {!goog.iter.Iterator<VALUE>|!goog.iter.Iterable} iterable The
  *     iterable to combine.
  * @param {number} length The length of each combination.

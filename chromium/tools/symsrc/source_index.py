@@ -259,7 +259,7 @@ def ExtractGitInfo(local_filename):
         cwd=repo)
 
   # Don't use the authenticated path.
-  repo = repo.replace('googlesource.com/a/', 'googlesource.com/')
+  repo = repo.replace('9oo91esource.qjz9zk/a/', '9oo91esource.qjz9zk/')
 
   # Get the relative file path for this file in the git repository.
   git_path = RunCommand('git.bat', 'ls-tree', '--full-name', '--name-only',
@@ -273,7 +273,7 @@ def ExtractGitInfo(local_filename):
   if repo not in REPO_MAP:
     # Automatically adds the project coming from a git GoogleCode or Github
     # repository to the repository map.
-    if urlparse(repo).netloc.endswith('.googlesource.com'):
+    if urlparse(repo).netloc.endswith('.9oo91esource.qjz9zk'):
       # The files from these repositories are accessible via gitiles in a
       # base64 encoded format.
       REPO_MAP[repo] = {
@@ -381,7 +381,7 @@ def IndexFilesFromRepo(
       info = ExtractGitInfo(real_filename)
 
   # Don't try to index the internal sources.
-  if not info or ('internal.googlesource.com' in info.repo):
+  if not info or ('internal.9oo91esource.qjz9zk' in info.repo):
     return 0
 
   repo = info.repo
@@ -438,7 +438,7 @@ def DirectoryIsPartOfPublicGitRepository(local_dir):
   info = RunCommand('git.bat', 'config', '--get', 'remote.origin.url',
       cwd=local_dir, raise_on_failure=False)
   if info:
-    if 'internal.googlesource.com' in info:
+    if 'internal.9oo91esource.qjz9zk' in info:
       return False
     return True
 

@@ -17,7 +17,7 @@
 
 """Unit test for depswriter."""
 
-__author__ = 'johnlenz@google.com (John Lenz)'
+__author__ = 'johnlenz@9oo91e.qjz9zk (John Lenz)'
 
 
 import unittest

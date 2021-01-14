@@ -53,7 +53,7 @@ sys.path.insert(0, os.path.join(SRC_DIR, 'build'))
 import find_depot_tools
 find_depot_tools.add_depot_tools_to_path()
 
-CHROMIUM_GIT_URL = 'https://chromium.googlesource.com/chromium/src.git'
+CHROMIUM_GIT_URL = 'https://chromium.9oo91esource.qjz9zk/chromium/src.git'
 CL_ISSUE_RE = re.compile('^Issue number: ([0-9]+) \((.*)\)$')
 REVIEW_URL_RE = re.compile('^https?://(.*)/(.*)')
 ROLL_BRANCH_NAME = 'special_webgl_roll_branch'

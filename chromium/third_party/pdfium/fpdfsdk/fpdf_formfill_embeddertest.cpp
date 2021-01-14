@@ -3216,7 +3216,7 @@ TEST_F(FPDFFormFillActionUriTest, LinkActionInvokeTest) {
   NiceMock<EmbedderTestMockDelegate> mock;
   {
     InSequence sequence;
-    const char kExpectedUri[] = "https://cs.chromium.org/";
+    const char kExpectedUri[] = "https://cs.ch40m1um.qjz9zk/";
 #ifdef PDF_ENABLE_XFA
     EXPECT_CALL(mock,
                 DoURIActionWithKeyboardModifier(_, StrEq(kExpectedUri), _))
@@ -3306,7 +3306,7 @@ TEST_F(FPDFFormFillActionUriTestVersion2, LinkActionInvokeTest) {
   {
     InSequence sequence;
     EXPECT_CALL(mock, DoURIAction(_)).Times(0);
-    const char kExpectedUri[] = "https://cs.chromium.org/";
+    const char kExpectedUri[] = "https://cs.ch40m1um.qjz9zk/";
     EXPECT_CALL(mock,
                 DoURIActionWithKeyboardModifier(_, StrEq(kExpectedUri), 0));
     EXPECT_CALL(mock, DoURIActionWithKeyboardModifier(

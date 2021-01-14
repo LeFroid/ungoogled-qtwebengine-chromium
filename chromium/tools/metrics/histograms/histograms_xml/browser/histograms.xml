@@ -9,9 +9,9 @@ This file is used to generate a comprehensive list of Browser histograms
 along with a detailed description for each histogram.
 
 For best practices on writing histogram descriptions, see
-https://chromium.googlesource.com/chromium/src.git/+/HEAD/tools/metrics/histograms/README.md
+https://chromium.9oo91esource.qjz9zk/chromium/src.git/+/HEAD/tools/metrics/histograms/README.md
 
-Please send CLs to chromium-metrics-reviews@google.com rather than to specific
+Please send CLs to chromium-metrics-reviews@9oo91e.qjz9zk rather than to specific
 individuals. These CLs will be automatically reassigned to a reviewer within
 about 5 minutes. This approach helps the metrics team to load-balance incoming
 reviews. Googlers can read more about this at go/gwsq-gerrit.
@@ -23,17 +23,17 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Browser.BitmapFetcher.Decode" units="ms"
     expires_after="2021-04-23">
-  <owner>manukh@chromium.org</owner>
-  <owner>jdonnelly@chromium.org</owner>
-  <owner>chrome-omnibox-team@google.com</owner>
+  <owner>manukh@ch40m1um.qjz9zk</owner>
+  <owner>jdonnelly@ch40m1um.qjz9zk</owner>
+  <owner>chrome-omnibox-team@9oo91e.qjz9zk</owner>
   <summary>The time elapsed decoding an image using BitmapFetcher.</summary>
 </histogram>
 
 <histogram name="Browser.BitmapFetcher.Fetch" units="ms"
     expires_after="2021-04-23">
-  <owner>manukh@chromium.org</owner>
-  <owner>jdonnelly@chromium.org</owner>
-  <owner>chrome-omnibox-team@google.com</owner>
+  <owner>manukh@ch40m1um.qjz9zk</owner>
+  <owner>jdonnelly@ch40m1um.qjz9zk</owner>
+  <owner>chrome-omnibox-team@9oo91e.qjz9zk</owner>
   <summary>
     The time elapsed fetching an image from a URL using BitmapFetcher.
   </summary>
@@ -41,8 +41,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Browser.DarkModeStatus" enum="DarkModeStatus"
     expires_after="2021-02-21">
-  <owner>lgrey@chromium.org</owner>
-  <owner>robliao@chromium.org</owner>
+  <owner>lgrey@ch40m1um.qjz9zk</owner>
+  <owner>robliao@ch40m1um.qjz9zk</owner>
   <summary>
     Whether the user's system is in dark mode, light mode, or if this choice is
     unavailable due to lack of system support. Updated every UMA upload.
@@ -51,9 +51,9 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Browser.PaintPreview.Capture.CompressedOnDiskSize" units="KB"
     expires_after="2021-02-14">
-  <owner>ckitagawa@chromium.org</owner>
-  <owner>mahmoudi@chromium.org</owner>
-  <owner>fredmello@chromium.org</owner>
+  <owner>ckitagawa@ch40m1um.qjz9zk</owner>
+  <owner>mahmoudi@ch40m1um.qjz9zk</owner>
+  <owner>fredmello@ch40m1um.qjz9zk</owner>
   <summary>
     Records the size of a compressed on-disk capture for the paint preview after
     a proto is written to disk if compressed.
@@ -62,9 +62,9 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Browser.PaintPreview.Capture.NumberOfFramesCaptured"
     units="units" expires_after="2021-02-21">
-  <owner>ckitagawa@chromium.org</owner>
-  <owner>mahmoudi@chromium.org</owner>
-  <owner>fredmello@chromium.org</owner>
+  <owner>ckitagawa@ch40m1um.qjz9zk</owner>
+  <owner>mahmoudi@ch40m1um.qjz9zk</owner>
+  <owner>fredmello@ch40m1um.qjz9zk</owner>
   <summary>
     Records the number of frames captured by a paint preview if it succeeded.
   </summary>
@@ -72,9 +72,9 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Browser.PaintPreview.Capture.Success" enum="BooleanSuccess"
     expires_after="2021-02-21">
-  <owner>ckitagawa@chromium.org</owner>
-  <owner>mahmoudi@chromium.org</owner>
-  <owner>fredmello@chromium.org</owner>
+  <owner>ckitagawa@ch40m1um.qjz9zk</owner>
+  <owner>mahmoudi@ch40m1um.qjz9zk</owner>
+  <owner>fredmello@ch40m1um.qjz9zk</owner>
   <summary>
     Records a boolean indicating whether a capture attempt was successful.
   </summary>
@@ -82,9 +82,9 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Browser.PaintPreview.Capture.TotalCaptureDuration" units="ms"
     expires_after="2020-12-20">
-  <owner>ckitagawa@chromium.org</owner>
-  <owner>mahmoudi@chromium.org</owner>
-  <owner>fredmello@chromium.org</owner>
+  <owner>ckitagawa@ch40m1um.qjz9zk</owner>
+  <owner>mahmoudi@ch40m1um.qjz9zk</owner>
+  <owner>fredmello@ch40m1um.qjz9zk</owner>
   <summary>
     Records the total time spent capturing a paint preview of a page. This
     includes capture and serialization of all frames and IPC time.
@@ -93,9 +93,9 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Browser.PaintPreview.Capture.UncompressedOnDiskSize"
     units="KB" expires_after="2021-03-08">
-  <owner>ckitagawa@chromium.org</owner>
-  <owner>mahmoudi@chromium.org</owner>
-  <owner>fredmello@chromium.org</owner>
+  <owner>ckitagawa@ch40m1um.qjz9zk</owner>
+  <owner>mahmoudi@ch40m1um.qjz9zk</owner>
+  <owner>fredmello@ch40m1um.qjz9zk</owner>
   <summary>
     Records the size of an uncompressed on-disk capture for the paint preview
     after a proto is written to disk if not compressed.
@@ -104,9 +104,9 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Browser.PaintPreview.CaptureExperiment.CompressedOnDiskSize"
     units="KB" expires_after="2020-12-20">
-  <owner>ckitagawa@chromium.org</owner>
-  <owner>mahmoudi@chromium.org</owner>
-  <owner>fredmello@chromium.org</owner>
+  <owner>ckitagawa@ch40m1um.qjz9zk</owner>
+  <owner>mahmoudi@ch40m1um.qjz9zk</owner>
+  <owner>fredmello@ch40m1um.qjz9zk</owner>
   <summary>
     Records the compressed on-disk size of the capture if it succeeded for the
     capture experiment.
@@ -115,9 +115,9 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Browser.PaintPreview.CaptureExperiment.Success"
     enum="BooleanSuccess" expires_after="2020-12-20">
-  <owner>ckitagawa@chromium.org</owner>
-  <owner>mahmoudi@chromium.org</owner>
-  <owner>fredmello@chromium.org</owner>
+  <owner>ckitagawa@ch40m1um.qjz9zk</owner>
+  <owner>mahmoudi@ch40m1um.qjz9zk</owner>
+  <owner>fredmello@ch40m1um.qjz9zk</owner>
   <summary>
     Records the ratio of success to failure for the Paint Preview capture
     experiment.
@@ -126,9 +126,9 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Browser.PaintPreview.Player.CompositorProcessStartedCorrectly"
     units="BooleanSuccess" expires_after="2021-03-08">
-  <owner>ckitagawa@chromium.org</owner>
-  <owner>mahmoudi@chromium.org</owner>
-  <owner>fredmello@chromium.org</owner>
+  <owner>ckitagawa@ch40m1um.qjz9zk</owner>
+  <owner>mahmoudi@ch40m1um.qjz9zk</owner>
+  <owner>fredmello@ch40m1um.qjz9zk</owner>
   <summary>
     Records if the paint preview compositor process started correctly.
   </summary>
@@ -136,9 +136,9 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Browser.PaintPreview.Player.CompositorProcessStartupTime"
     units="ms" expires_after="2021-02-28">
-  <owner>ckitagawa@chromium.org</owner>
-  <owner>mahmoudi@chromium.org</owner>
-  <owner>fredmello@chromium.org</owner>
+  <owner>ckitagawa@ch40m1um.qjz9zk</owner>
+  <owner>mahmoudi@ch40m1um.qjz9zk</owner>
+  <owner>fredmello@ch40m1um.qjz9zk</owner>
   <summary>
     Records the time it took to start the paint preview compositor process.
   </summary>
@@ -146,17 +146,17 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Browser.PaintPreview.Player.LinkClicked"
     units="BooleanSuccess" expires_after="2021-02-14">
-  <owner>ckitagawa@chromium.org</owner>
-  <owner>mahmoudi@chromium.org</owner>
-  <owner>fredmello@chromium.org</owner>
+  <owner>ckitagawa@ch40m1um.qjz9zk</owner>
+  <owner>mahmoudi@ch40m1um.qjz9zk</owner>
+  <owner>fredmello@ch40m1um.qjz9zk</owner>
   <summary>Records when a link is clicked in the paint preview player.</summary>
 </histogram>
 
 <histogram name="Browser.PaintPreview.Player.TimeToFirstBitmap" units="ms"
     expires_after="2021-02-14">
-  <owner>ckitagawa@chromium.org</owner>
-  <owner>mahmoudi@chromium.org</owner>
-  <owner>fredmello@chromium.org</owner>
+  <owner>ckitagawa@ch40m1um.qjz9zk</owner>
+  <owner>mahmoudi@ch40m1um.qjz9zk</owner>
+  <owner>fredmello@ch40m1um.qjz9zk</owner>
   <summary>
     Records the time taken to from the request to start the compositor process
     to the first bitmap being loaded.
@@ -165,9 +165,9 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Browser.PaintPreview.TabbedPlayer.CompositorFailureReason"
     enum="TabbedPaintPreviewCompositorFailureReason" expires_after="2021-02-21">
-  <owner>ckitagawa@chromium.org</owner>
-  <owner>mahmoudi@chromium.org</owner>
-  <owner>fredmello@chromium.org</owner>
+  <owner>ckitagawa@ch40m1um.qjz9zk</owner>
+  <owner>mahmoudi@ch40m1um.qjz9zk</owner>
+  <owner>fredmello@ch40m1um.qjz9zk</owner>
   <summary>
     Records the the reason for exiting the compositor process for the
     TabbedPaintPreviewPlayer. Recorded when the compositor returns an error or
@@ -177,9 +177,9 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Browser.PaintPreview.TabbedPlayer.ExitCause"
     enum="TabbedPaintPreviewExitCause" expires_after="2021-02-14">
-  <owner>ckitagawa@chromium.org</owner>
-  <owner>mahmoudi@chromium.org</owner>
-  <owner>fredmello@chromium.org</owner>
+  <owner>ckitagawa@ch40m1um.qjz9zk</owner>
+  <owner>mahmoudi@ch40m1um.qjz9zk</owner>
+  <owner>fredmello@ch40m1um.qjz9zk</owner>
   <summary>
     Records the the reason for exiting TabbedPaintPreviewPlayer. Recorded when
     paint preview is removed.
@@ -188,9 +188,9 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Browser.PaintPreview.TabbedPlayer.FirstPaintBeforeTabLoad"
     units="Boolean" expires_after="2021-07-01">
-  <owner>ckitagawa@chromium.org</owner>
-  <owner>mahmoudi@chromium.org</owner>
-  <owner>fredmello@chromium.org</owner>
+  <owner>ckitagawa@ch40m1um.qjz9zk</owner>
+  <owner>mahmoudi@ch40m1um.qjz9zk</owner>
+  <owner>fredmello@ch40m1um.qjz9zk</owner>
   <summary>
     Records whether paint preview was drawn before the tab finished loading.
     Recorded when tab has finished loading.
@@ -199,9 +199,9 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Browser.PaintPreview.TabbedPlayer.HadCapture" units="Boolean"
     expires_after="2021-07-01">
-  <owner>ckitagawa@chromium.org</owner>
-  <owner>mahmoudi@chromium.org</owner>
-  <owner>fredmello@chromium.org</owner>
+  <owner>ckitagawa@ch40m1um.qjz9zk</owner>
+  <owner>mahmoudi@ch40m1um.qjz9zk</owner>
+  <owner>fredmello@ch40m1um.qjz9zk</owner>
   <summary>
     Records whether a paint preview exists. Recorded when attempting to show a
     preview on startup. This in conjuction with CompositorFailureReason gives
@@ -211,9 +211,9 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Browser.PaintPreview.TabbedPlayer.SnackbarCount" units="units"
     expires_after="2021-02-28">
-  <owner>ckitagawa@chromium.org</owner>
-  <owner>mahmoudi@chromium.org</owner>
-  <owner>fredmello@chromium.org</owner>
+  <owner>ckitagawa@ch40m1um.qjz9zk</owner>
+  <owner>mahmoudi@ch40m1um.qjz9zk</owner>
+  <owner>fredmello@ch40m1um.qjz9zk</owner>
   <summary>
     Records the number of times that the upgrade snackbar was shown in a session
     of TabbedPaintPreviewPlayer. Recorded when paint preview is removed.
@@ -222,9 +222,9 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Browser.PaintPreview.TabbedPlayer.TimeToFirstBitmap"
     units="ms" expires_after="2021-02-19">
-  <owner>ckitagawa@chromium.org</owner>
-  <owner>mahmoudi@chromium.org</owner>
-  <owner>fredmello@chromium.org</owner>
+  <owner>ckitagawa@ch40m1um.qjz9zk</owner>
+  <owner>mahmoudi@ch40m1um.qjz9zk</owner>
+  <owner>fredmello@ch40m1um.qjz9zk</owner>
   <summary>
     Records the time taken to from actvity creation to the first bitmap being
     shown. Recorded on first paint preview paint event.
@@ -233,9 +233,9 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram base="true" name="Browser.PaintPreview.TabbedPlayer.UpTime"
     units="ms" expires_after="2021-02-14">
-  <owner>ckitagawa@chromium.org</owner>
-  <owner>mahmoudi@chromium.org</owner>
-  <owner>fredmello@chromium.org</owner>
+  <owner>ckitagawa@ch40m1um.qjz9zk</owner>
+  <owner>mahmoudi@ch40m1um.qjz9zk</owner>
+  <owner>fredmello@ch40m1um.qjz9zk</owner>
   <summary>
     Records the length of the time that a session of TabbedPaintPreviewPlayer
     lasts. Recorded when paint preview is removed.
@@ -244,9 +244,9 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Browser.PaintPreview.TabService.DiskUsageAtStartup" units="KB"
     expires_after="2021-02-28">
-  <owner>ckitagawa@chromium.org</owner>
-  <owner>mahmoudi@chromium.org</owner>
-  <owner>fredmello@chromium.org</owner>
+  <owner>ckitagawa@ch40m1um.qjz9zk</owner>
+  <owner>mahmoudi@ch40m1um.qjz9zk</owner>
+  <owner>fredmello@ch40m1um.qjz9zk</owner>
   <summary>
     Records the total disk usage by the Paint Preview Tab Service at startup of
     the profile keyed service.
@@ -255,8 +255,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Browser.Responsiveness.IOJanksTotalPerMinute" units="janks"
     expires_after="2021-01-31">
-  <owner>gab@chromium.org</owner>
-  <owner>olivierli@chromium.org</owner>
+  <owner>gab@ch40m1um.qjz9zk</owner>
+  <owner>olivierli@ch40m1um.qjz9zk</owner>
   <summary>
     Similar to Browser.Responsiveness.IOJankyIntervalsPerMinute but sums janky
     events across all foreground threads over the monitored minute rather than
@@ -269,8 +269,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Browser.Responsiveness.IOJankyIntervalsPerMinute"
     units="janks" expires_after="2021-01-31">
-  <owner>gab@chromium.org</owner>
-  <owner>olivierli@chromium.org</owner>
+  <owner>gab@ch40m1um.qjz9zk</owner>
+  <owner>olivierli@ch40m1um.qjz9zk</owner>
   <summary>
     This metric is emitted every minute. It reports a number between 0 and 60
     which corresponds to the number of 1 second intervals during the monitored
@@ -290,14 +290,14 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
     units="janks" expires_after="never">
 <!-- expires-never: guiding metric (internal: go/chrome-browser-guiding-metrics) -->
 
-  <owner>erikchen@chromium.org</owner>
-  <owner>tdresser@chromium.org</owner>
-  <owner>chrome-analysis-team@google.com</owner>
+  <owner>erikchen@ch40m1um.qjz9zk</owner>
+  <owner>tdresser@ch40m1um.qjz9zk</owner>
+  <owner>chrome-analysis-team@9oo91e.qjz9zk</owner>
   <summary>
     This metric is emitted every 30 seconds [when there is user activity]. Each
     30 second duration is divided into 100ms intervals. This metric counts the
     number of these intervals that were &quot;janky&quot;. See
-    https://docs.google.com/document/d/1vDSGFvJblh7yJ3U3RVB_7qZLubyfTbQdQjuN1GoUNkc/edit
+    https://docs.9oo91e.qjz9zk/document/d/1vDSGFvJblh7yJ3U3RVB_7qZLubyfTbQdQjuN1GoUNkc/edit
     for more details.
 
     On desktop platforms, this metric measures native events, as well as tasks
@@ -318,7 +318,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
     are testing a new metric
     Browser.Responsiveness.JankyIntervalsPerThirtySeconds2 that correctly
     accounts for queueing time. See
-    https://groups.google.com/a/google.com/forum/#!topic/chrome-scheduler/X32gKl6fW2A
+    https://groups.9oo91e.qjz9zk/a/9oo91e.qjz9zk/forum/#!topic/chrome-scheduler/X32gKl6fW2A
     for more details.
 
     This histogram is of special interest to the chrome-analysis-team@. Do not
@@ -330,10 +330,10 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
     units="janks" expires_after="never">
 <!-- expires-never: guiding metric (internal: go/chrome-browser-guiding-metrics) -->
 
-  <owner>erikchen@chromium.org</owner>
-  <owner>tdresser@chromium.org</owner>
-  <owner>fdoray@chromium.org</owner>
-  <owner>chrome-analysis-team@google.com</owner>
+  <owner>erikchen@ch40m1um.qjz9zk</owner>
+  <owner>tdresser@ch40m1um.qjz9zk</owner>
+  <owner>fdoray@ch40m1um.qjz9zk</owner>
+  <owner>chrome-analysis-team@9oo91e.qjz9zk</owner>
   <summary>
     This metric is emitted every 30 seconds after main message loop start, when
     there is user activity. Each 30 second duration is divided into 100ms
@@ -342,7 +342,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
     executes an &quot;important&quot; task that was queued more than 100 ms ago,
     or a non-important task or a native event handler that started executing
     more than 100 ms ago. See
-    https://docs.google.com/document/d/1vDSGFvJblh7yJ3U3RVB_7qZLubyfTbQdQjuN1GoUNkc/edit
+    https://docs.9oo91e.qjz9zk/document/d/1vDSGFvJblh7yJ3U3RVB_7qZLubyfTbQdQjuN1GoUNkc/edit
     for more details.
 
     Update (M82 March 2020): Stopped recording background intervals on Android.
@@ -356,8 +356,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
     units="microseconds" expires_after="2019-08-31">
 <!-- Name completed by histogram_suffixes name="TabSwitchInputLatency" -->
 
-  <owner>ejoe@google.com</owner>
-  <owner>jonross@chromium.org</owner>
+  <owner>ejoe@9oo91e.qjz9zk</owner>
+  <owner>jonross@ch40m1um.qjz9zk</owner>
   <summary>
     The time between input event timestamp for tab switch and when the
     TabStripModel begins processing the switch.
@@ -366,8 +366,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Browser.Tabs.SelectionToVisibilityRequestTime"
     units="microseconds" expires_after="2021-02-07">
-  <owner>sadrul@chromium.org</owner>
-  <owner>sky@chromium.org</owner>
+  <owner>sadrul@ch40m1um.qjz9zk</owner>
+  <owner>sky@ch40m1um.qjz9zk</owner>
   <summary>
     The time it takes for the browser to request a tab to be visible. Note that
     this only measures the time from the browser deciding to make the tab
@@ -382,7 +382,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
     enum="TabSwitchResult" expires_after="2021-03-07">
 <!-- Name completed by histogram_suffixes name="TabSwitchingType" -->
 
-  <owner>fdoray@chromium.org</owner>
+  <owner>fdoray@ch40m1um.qjz9zk</owner>
   <summary>Whether a frame was presented after a tab switch event.</summary>
 </histogram>
 
@@ -390,8 +390,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
     units="ms" expires_after="2021-02-21">
 <!-- Name completed by histogram_suffixes name="TabSwitchingType" -->
 
-  <owner>fdoray@chromium.org</owner>
-  <owner>jonross@chromium.org</owner>
+  <owner>fdoray@ch40m1um.qjz9zk</owner>
+  <owner>jonross@ch40m1um.qjz9zk</owner>
   <summary>
     The time between a tab switch input event timestamp and when the tab is
     hidden, if no frame is presented in the meantime.
@@ -402,8 +402,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
     expires_after="2021-02-21">
 <!-- Name completed by histogram_suffixes name="TabSwitchingType" -->
 
-  <owner>ejoe@google.com</owner>
-  <owner>jonross@chromium.org</owner>
+  <owner>ejoe@9oo91e.qjz9zk</owner>
+  <owner>jonross@ch40m1um.qjz9zk</owner>
   <summary>
     The time between the input event timestamp and the frame presentation time
     on a tab switch.
@@ -412,8 +412,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Browser.WindowCount.Guest" units="units"
     expires_after="2021-06-01">
-  <owner>rhalavati@chromium.org</owner>
-  <owner>chrome-privacy-core@google.com</owner>
+  <owner>rhalavati@ch40m1um.qjz9zk</owner>
+  <owner>chrome-privacy-core@9oo91e.qjz9zk</owner>
   <summary>
     Number of open guest windows at the same time. Recorded when a new guest
     window is created. Please note that this metric double counts the lower
@@ -424,8 +424,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Browser.WindowCount.Incognito" units="units"
     expires_after="2021-06-01">
-  <owner>rhalavati@chromium.org</owner>
-  <owner>chrome-privacy-core@google.com</owner>
+  <owner>rhalavati@ch40m1um.qjz9zk</owner>
+  <owner>chrome-privacy-core@9oo91e.qjz9zk</owner>
   <summary>
     Number of open incognito windows at the same time. Recorded when a new
     incognito window is created. Please note that this metric double counts the
@@ -436,8 +436,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="BrowserDialogs.ExternalProtocol.HandleState"
     enum="HandleStateType" expires_after="2021-03-28">
-  <owner>dominickn@chromium.org</owner>
-  <owner>meacer@chromium.org</owner>
+  <owner>dominickn@ch40m1um.qjz9zk</owner>
+  <owner>meacer@ch40m1um.qjz9zk</owner>
   <summary>
     Whether or not the user checked the option in the external protocol dialog
     to remember their choice of opening or not opening the specified app.
@@ -448,8 +448,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="BrowserRenderProcessHost.BackgroundTime" units="ms"
     expires_after="2021-01-31">
-  <owner>ericrobinson@chromium.org</owner>
-  <owner>johnidel@chromium.org</owner>
+  <owner>ericrobinson@ch40m1um.qjz9zk</owner>
+  <owner>johnidel@ch40m1um.qjz9zk</owner>
   <summary>
     Record the time spent in the background after RenderProcessHost
     initialization of the process. Recorded when the RenderProcessHost for the
@@ -461,7 +461,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
     enum="RendererType" expires_after="never">
 <!-- expires-never: For monitoring stability regressions. -->
 
-  <owner>wfh@chromium.org</owner>
+  <owner>wfh@ch40m1um.qjz9zk</owner>
   <summary>
     Count of renderer process terminations due to a code integrity failure,
     grouped by type. This is only reported on Windows.
@@ -470,19 +470,19 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="BrowserRenderProcessHost.ChildCrashes" enum="RendererType"
     expires_after="2021-03-15">
-  <owner>wfh@chromium.org</owner>
+  <owner>wfh@ch40m1um.qjz9zk</owner>
   <summary>Count of renderer process crashes grouped by type.</summary>
 </histogram>
 
 <histogram name="BrowserRenderProcessHost.ChildKills" enum="RendererType"
     expires_after="2020-12-27">
-  <owner>wfh@chromium.org</owner>
+  <owner>wfh@ch40m1um.qjz9zk</owner>
   <summary>Count of renderer process kills grouped by type.</summary>
 </histogram>
 
 <histogram name="BrowserRenderProcessHost.ChildKills.OOM" enum="RendererType"
     expires_after="2021-01-03">
-  <owner>oshima@chromium.org</owner>
+  <owner>oshima@ch40m1um.qjz9zk</owner>
   <summary>
     Out of BrowserRenderProcessHost.ChildKills, numer of kills due to SIGKILL,
     which is a strong signal of out of memory on Chrome OS, grouped by renderer
@@ -494,7 +494,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
     enum="LaunchErrorCodes" expires_after="never">
 <!-- expires-never: For monitoring stability regressions. -->
 
-  <owner>wfh@chromium.org</owner>
+  <owner>wfh@ch40m1um.qjz9zk</owner>
   <summary>
     The launch error codes for failed renderer process launches.
   </summary>
@@ -504,7 +504,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
     enum="RendererType" expires_after="never">
 <!-- expires-never: For monitoring stability regressions. -->
 
-  <owner>wfh@chromium.org</owner>
+  <owner>wfh@ch40m1um.qjz9zk</owner>
   <summary>Count of renderer process launch failures grouped by type.</summary>
 </histogram>
 
@@ -512,7 +512,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
     enum="RendererType" expires_after="never">
 <!-- expires-never: For monitoring stability regressions. -->
 
-  <owner>wfh@chromium.org</owner>
+  <owner>wfh@ch40m1um.qjz9zk</owner>
   <summary>
     Count of renderer process crashes that we miscounted because we took the
     exit code too early. Grouped by type.
@@ -521,8 +521,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="BrowserRenderProcessHost.FramePrioritiesSeen"
     enum="FramePrioritiesSeen" expires_after="2021-02-07">
-  <owner>ericrobinson@chromium.org</owner>
-  <owner>csharrison@chromium.org</owner>
+  <owner>ericrobinson@ch40m1um.qjz9zk</owner>
+  <owner>csharrison@ch40m1um.qjz9zk</owner>
   <summary>
     Determines what combination of low and normal priority frames were attached
     to a render process during its lifetime. Recorded when the host for the
@@ -532,8 +532,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="BrowserRenderProcessHost.InvisibleMediaStreamFrameDepth"
     units="frame_depth" expires_after="M72">
-  <owner>boliu@chromium.org</owner>
-  <owner>alexmos@chromium.org</owner>
+  <owner>boliu@ch40m1um.qjz9zk</owner>
+  <owner>alexmos@ch40m1um.qjz9zk</owner>
   <summary>
     Recorded at most once per renderer process when it first becomes invisible
     and has media stream. Record the frame depth of the process. Note this
@@ -544,8 +544,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="BrowserRenderProcessHost.SpareProcessMaybeTakeAction"
     enum="SpareProcessMaybeTakeAction" expires_after="2021-02-21">
-  <owner>alexmos@chromium.org</owner>
-  <owner>lukasza@chromium.org</owner>
+  <owner>alexmos@ch40m1um.qjz9zk</owner>
+  <owner>lukasza@ch40m1um.qjz9zk</owner>
   <summary>
     Records what happens when an attempt is made to use a spare
     RenderProcessHost - logs that either the attempt succeeded or why it failed.
@@ -554,8 +554,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="BrowserRenderProcessHost.TotalTime" units="ms"
     expires_after="2021-02-21">
-  <owner>ericrobinson@chromium.org</owner>
-  <owner>johnidel@chromium.org</owner>
+  <owner>ericrobinson@ch40m1um.qjz9zk</owner>
+  <owner>johnidel@ch40m1um.qjz9zk</owner>
   <summary>
     Record the lifetime of the RenderProcessHost after initialization of the
     process. Recorded when the RenderProcessHost for the process is destroyed.
@@ -564,8 +564,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="BrowserServices.BrowsableIntentCheck" units="ms"
     expires_after="M88">
-  <owner>peconn@chromium.org</owner>
-  <owner>peter@chromium.org</owner>
+  <owner>peconn@ch40m1um.qjz9zk</owner>
+  <owner>peter@ch40m1um.qjz9zk</owner>
   <summary>
     Triggered when we check whether a Trusted Web Activity client app can handle
     Browsable Intents. It measures how long consulting the Android
@@ -575,8 +575,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="BrowserServices.ClientAppDataLoad" units="ms"
     expires_after="M88">
-  <owner>peconn@chromium.org</owner>
-  <owner>peter@chromium.org</owner>
+  <owner>peconn@ch40m1um.qjz9zk</owner>
+  <owner>peter@ch40m1um.qjz9zk</owner>
   <summary>
     Triggered when any Android app is uninstalled or has its data cleared. This
     measures how long it takes to read data from Preferences to determine
@@ -586,8 +586,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="BrowserServices.ServiceTabResolveInfoQuery" units="ms"
     expires_after="M88">
-  <owner>peconn@chromium.org</owner>
-  <owner>peter@chromium.org</owner>
+  <owner>peconn@ch40m1um.qjz9zk</owner>
+  <owner>peter@ch40m1um.qjz9zk</owner>
   <summary>
     Triggered when an Android background service attempts to create a Tab. We
     time how long the Android package manager queryIntentActivities call takes.
@@ -595,8 +595,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 </histogram>
 
 <histogram name="BrowserServices.TwaOpenTime.V2" units="ms" expires_after="M88">
-  <owner>peconn@chromium.org</owner>
-  <owner>peter@chromium.org</owner>
+  <owner>peconn@ch40m1um.qjz9zk</owner>
+  <owner>peter@ch40m1um.qjz9zk</owner>
   <summary>
     Triggered when a TrustedWebActivity is paused, recording the time since it
     had been resumed.
@@ -605,8 +605,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="BrowserServices.VerificationResult"
     enum="BrowserServicesVerificationResult" expires_after="M88">
-  <owner>peconn@chromium.org</owner>
-  <owner>peter@chromium.org</owner>
+  <owner>peconn@ch40m1um.qjz9zk</owner>
+  <owner>peter@ch40m1um.qjz9zk</owner>
   <summary>
     The result of Digital Asset Link verification performed when starting a
     Trusted Web Activity.
@@ -615,8 +615,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="BrowserServices.VerificationTime.Offline" units="ms"
     expires_after="M88">
-  <owner>peconn@chromium.org</owner>
-  <owner>peter@chromium.org</owner>
+  <owner>peconn@ch40m1um.qjz9zk</owner>
+  <owner>peter@ch40m1um.qjz9zk</owner>
   <summary>
     Triggered when Trusted Web Activity verification completes. Records how long
     it takes the device to realise it is offline and fall back to the cached
@@ -626,8 +626,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="BrowserServices.VerificationTime.Online" units="ms"
     expires_after="M88">
-  <owner>peconn@chromium.org</owner>
-  <owner>peter@chromium.org</owner>
+  <owner>peconn@ch40m1um.qjz9zk</owner>
+  <owner>peter@ch40m1um.qjz9zk</owner>
   <summary>
     Triggered when Trusted Web Activity verification completes. Records how long
     verification took when online.
@@ -636,8 +636,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="BrowserSwitcher.AlternativeBrowser" enum="BrowserType"
     expires_after="2020-12-18">
-  <owner>nicolaso@chromium.org</owner>
-  <owner>pastarmovj@chromium.org</owner>
+  <owner>nicolaso@ch40m1um.qjz9zk</owner>
+  <owner>pastarmovj@ch40m1um.qjz9zk</owner>
   <summary>
     Records which browser the Legacy Browser Support feature is configured to
     open (which defaults to IE). Recorded on browser startup, and when the value
@@ -648,8 +648,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="BrowserSwitcher.CacheFile.MkDirSuccess" enum="BooleanSuccess"
     expires_after="2020-12-18">
-  <owner>nicolaso@chromium.org</owner>
-  <owner>pastarmovj@chromium.org</owner>
+  <owner>nicolaso@ch40m1um.qjz9zk</owner>
+  <owner>pastarmovj@ch40m1um.qjz9zk</owner>
   <summary>
     Records whether the &quot;AppData/Local/Google/BrowserSwitcher&quot;
     directory was successfully created. Windows only.
@@ -658,8 +658,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="BrowserSwitcher.CacheFile.MkTempSuccess" enum="BooleanSuccess"
     expires_after="2020-12-18">
-  <owner>nicolaso@chromium.org</owner>
-  <owner>pastarmovj@chromium.org</owner>
+  <owner>nicolaso@ch40m1um.qjz9zk</owner>
+  <owner>pastarmovj@ch40m1um.qjz9zk</owner>
   <summary>
     Records whether a temp file in
     &quot;AppData/Local/Google/BrowserSwitcher&quot; the directory was
@@ -669,8 +669,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="BrowserSwitcher.CacheFile.MoveSuccess" enum="BooleanSuccess"
     expires_after="2020-12-18">
-  <owner>nicolaso@chromium.org</owner>
-  <owner>pastarmovj@chromium.org</owner>
+  <owner>nicolaso@ch40m1um.qjz9zk</owner>
+  <owner>pastarmovj@ch40m1um.qjz9zk</owner>
   <summary>
     Records whether the temp file in
     &quot;AppData/Local/Google/BrowserSwitcher&quot; directory was successfully
@@ -681,8 +681,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="BrowserSwitcher.Decision" enum="BooleanBrowserSwitch"
     expires_after="2020-12-18">
-  <owner>nicolaso@chromium.org</owner>
-  <owner>pastarmovj@chromium.org</owner>
+  <owner>nicolaso@ch40m1um.qjz9zk</owner>
+  <owner>pastarmovj@ch40m1um.qjz9zk</owner>
   <summary>
     On navigation and redirect, whether to switch browsers or not. Only measured
     when Legacy Browser Support is enabled via the BrowserSwitcher* policies.
@@ -693,8 +693,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="BrowserSwitcher.DecisionTime" units="ms"
     expires_after="2020-12-18">
-  <owner>nicolaso@chromium.org</owner>
-  <owner>pastarmovj@chromium.org</owner>
+  <owner>nicolaso@ch40m1um.qjz9zk</owner>
+  <owner>pastarmovj@ch40m1um.qjz9zk</owner>
   <summary>
     On navigation and redirect, records how long it took to compute a decision
     (stay in Chrome/open in IE). Only measured when Legacy Browser Support is
@@ -704,8 +704,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="BrowserSwitcher.ExternalGreylistSize" units="rules"
     expires_after="2020-12-18">
-  <owner>nicolaso@chromium.org</owner>
-  <owner>pastarmovj@chromium.org</owner>
+  <owner>nicolaso@ch40m1um.qjz9zk</owner>
+  <owner>pastarmovj@ch40m1um.qjz9zk</owner>
   <summary>
     Number of rules that come from an external greylist XML file. Measured when
     the sitelist is loaded during browser startup. Desktop Chrome only.
@@ -714,8 +714,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="BrowserSwitcher.ExternalSitelistSize" units="rules"
     expires_after="2021-03-21">
-  <owner>nicolaso@chromium.org</owner>
-  <owner>pastarmovj@chromium.org</owner>
+  <owner>nicolaso@ch40m1um.qjz9zk</owner>
+  <owner>pastarmovj@ch40m1um.qjz9zk</owner>
   <summary>
     Number of rules that come from an external sitelist XML file. Measured when
     the sitelist is loaded during browser startup. Desktop Chrome only.
@@ -724,8 +724,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="BrowserSwitcher.GreylistSize" units="rules"
     expires_after="2020-12-18">
-  <owner>nicolaso@chromium.org</owner>
-  <owner>pastarmovj@chromium.org</owner>
+  <owner>nicolaso@ch40m1um.qjz9zk</owner>
+  <owner>pastarmovj@ch40m1um.qjz9zk</owner>
   <summary>
     Number of rules in the BrowserSwitcherUrlGreylist policy. Measured when the
     policy is loaded. Desktop Chrome only.
@@ -734,8 +734,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="BrowserSwitcher.GreylistWildcard" enum="BooleanPresent"
     expires_after="2020-12-18">
-  <owner>nicolaso@chromium.org</owner>
-  <owner>pastarmovj@chromium.org</owner>
+  <owner>nicolaso@ch40m1um.qjz9zk</owner>
+  <owner>pastarmovj@ch40m1um.qjz9zk</owner>
   <summary>
     Whether there is a wildcard (&quot;*&quot;) rule in the
     BrowserSwitcherUrlGreylist policy. Measured when the
@@ -745,8 +745,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="BrowserSwitcher.IeemSitelistSize" units="rules"
     expires_after="2020-12-18">
-  <owner>nicolaso@chromium.org</owner>
-  <owner>pastarmovj@chromium.org</owner>
+  <owner>nicolaso@ch40m1um.qjz9zk</owner>
+  <owner>pastarmovj@ch40m1um.qjz9zk</owner>
   <summary>
     Number of rules that come from Internet Explorer Enterprise Mode's sitelist.
     Measured when the sitelist is loaded during browser startup. Windows only.
@@ -755,8 +755,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="BrowserSwitcher.LaunchSuccess" enum="BooleanSuccess"
     expires_after="2020-11-15">
-  <owner>nicolaso@chromium.org</owner>
-  <owner>pastarmovj@chromium.org</owner>
+  <owner>nicolaso@ch40m1um.qjz9zk</owner>
+  <owner>pastarmovj@ch40m1um.qjz9zk</owner>
   <summary>
     Records whether an attempt to launch an alternate browser failed or
     succeeded. Desktop Chrome only.
@@ -765,8 +765,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="BrowserSwitcher.LaunchTime" units="ms"
     expires_after="2021-02-07">
-  <owner>nicolaso@chromium.org</owner>
-  <owner>pastarmovj@chromium.org</owner>
+  <owner>nicolaso@ch40m1um.qjz9zk</owner>
+  <owner>pastarmovj@ch40m1um.qjz9zk</owner>
   <summary>
     Records how long it took to launch an alternate browser (regardless of
     whether it failed or succeeded). Desktop Chrome only.
@@ -775,8 +775,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="BrowserSwitcher.UrlListSize" units="rules"
     expires_after="2020-12-18">
-  <owner>nicolaso@chromium.org</owner>
-  <owner>pastarmovj@chromium.org</owner>
+  <owner>nicolaso@ch40m1um.qjz9zk</owner>
+  <owner>pastarmovj@ch40m1um.qjz9zk</owner>
   <summary>
     Number of rules in the BrowserSwitcherUrlList policy. Measured when the
     policy gets updated. Desktop Chrome only.
@@ -785,8 +785,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="BrowserSwitcher.UrlListWildcard" enum="BooleanPresent"
     expires_after="2021-03-21">
-  <owner>nicolaso@chromium.org</owner>
-  <owner>pastarmovj@chromium.org</owner>
+  <owner>nicolaso@ch40m1um.qjz9zk</owner>
+  <owner>pastarmovj@ch40m1um.qjz9zk</owner>
   <summary>
     Whether there is a wildcard (&quot;*&quot;) rule in the
     BrowserSwitcherUrlList policy. Measured when the BrowserSwitcherUrlList

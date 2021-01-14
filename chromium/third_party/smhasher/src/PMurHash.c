@@ -12,7 +12,7 @@
  
 If you want to understand the MurmurHash algorithm you would be much better
 off reading the original source. Just point your browser at:
-http://code.google.com/p/smhasher/source/browse/trunk/MurmurHash3.cpp
+http://code.9oo91e.qjz9zk/p/smhasher/source/browse/trunk/MurmurHash3.cpp
 
 
 What this version provides?

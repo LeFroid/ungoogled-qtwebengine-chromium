@@ -9,9 +9,9 @@ This file is used to generate a comprehensive list of Quickoffice histograms
 along with a detailed description for each histogram.
 
 For best practices on writing histogram descriptions, see
-https://chromium.googlesource.com/chromium/src.git/+/HEAD/tools/metrics/histograms/README.md
+https://chromium.9oo91esource.qjz9zk/chromium/src.git/+/HEAD/tools/metrics/histograms/README.md
 
-Please send CLs to chromium-metrics-reviews@google.com rather than to specific
+Please send CLs to chromium-metrics-reviews@9oo91e.qjz9zk rather than to specific
 individuals. These CLs will be automatically reassigned to a reviewer within
 about 5 minutes. This approach helps the metrics team to load-balance incoming
 reviews. Googlers can read more about this at go/gwsq-gerrit.
@@ -23,8 +23,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Quickoffice.csvFormattedCellCount" units="units"
     expires_after="2021-02-15">
-  <owner>dpnkar@google.com</owner>
-  <owner>meenakshiv@google.com</owner>
+  <owner>dpnkar@9oo91e.qjz9zk</owner>
+  <owner>meenakshiv@9oo91e.qjz9zk</owner>
   <summary>
     Records the number of cells that contain formatting data in the default
     worksheet when a comma separated value spreadsheet is opened.
@@ -33,8 +33,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Quickoffice.csvNonEmptyCellCount" units="units"
     expires_after="2021-02-15">
-  <owner>dpnkar@google.com</owner>
-  <owner>meenakshiv@google.com</owner>
+  <owner>dpnkar@9oo91e.qjz9zk</owner>
+  <owner>meenakshiv@9oo91e.qjz9zk</owner>
   <summary>
     Records the number of non-empty cells in the default worksheet when a comma
     separated value spreadsheet is opened.
@@ -43,8 +43,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Quickoffice.csvSheetCount" units="units"
     expires_after="2021-02-15">
-  <owner>dpnkar@google.com</owner>
-  <owner>meenakshiv@google.com</owner>
+  <owner>dpnkar@9oo91e.qjz9zk</owner>
+  <owner>meenakshiv@9oo91e.qjz9zk</owner>
   <summary>
     Records the number of worksheets when a comma separated value spreadsheet is
     opened.
@@ -53,8 +53,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Quickoffice.docPageCount" units="units"
     expires_after="2021-02-15">
-  <owner>dpnkar@google.com</owner>
-  <owner>meenakshiv@google.com</owner>
+  <owner>dpnkar@9oo91e.qjz9zk</owner>
+  <owner>meenakshiv@9oo91e.qjz9zk</owner>
   <summary>
     Records the page count when a compound binary format document is opened.
   </summary>
@@ -62,8 +62,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Quickoffice.docParagraphCount" units="units"
     expires_after="2021-02-15">
-  <owner>dpnkar@google.com</owner>
-  <owner>meenakshiv@google.com</owner>
+  <owner>dpnkar@9oo91e.qjz9zk</owner>
+  <owner>meenakshiv@9oo91e.qjz9zk</owner>
   <summary>
     Records the paragraph count when a compound binary format document is
     opened.
@@ -72,8 +72,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Quickoffice.docSectionCount" units="units"
     expires_after="2021-02-15">
-  <owner>dpnkar@google.com</owner>
-  <owner>meenakshiv@google.com</owner>
+  <owner>dpnkar@9oo91e.qjz9zk</owner>
+  <owner>meenakshiv@9oo91e.qjz9zk</owner>
   <summary>
     Records the section count when a compound binary format document is opened.
   </summary>
@@ -81,8 +81,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Quickoffice.docxPageCount" units="units"
     expires_after="2021-02-15">
-  <owner>dpnkar@google.com</owner>
-  <owner>meenakshiv@google.com</owner>
+  <owner>dpnkar@9oo91e.qjz9zk</owner>
+  <owner>meenakshiv@9oo91e.qjz9zk</owner>
   <summary>
     Records the page count when an OOXML format document is opened.
   </summary>
@@ -90,8 +90,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Quickoffice.docxParagraphCount" units="units"
     expires_after="2021-02-15">
-  <owner>dpnkar@google.com</owner>
-  <owner>meenakshiv@google.com</owner>
+  <owner>dpnkar@9oo91e.qjz9zk</owner>
+  <owner>meenakshiv@9oo91e.qjz9zk</owner>
   <summary>
     Records the paragraph count when an OOXML format document is opened.
   </summary>
@@ -99,8 +99,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Quickoffice.docxSectionCount" units="units"
     expires_after="2021-02-15">
-  <owner>dpnkar@google.com</owner>
-  <owner>meenakshiv@google.com</owner>
+  <owner>dpnkar@9oo91e.qjz9zk</owner>
+  <owner>meenakshiv@9oo91e.qjz9zk</owner>
   <summary>
     Records the section count when an OOXML format document is opened.
   </summary>
@@ -108,8 +108,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Quickoffice.ErrorTypes" enum="QuickofficeErrorTypes"
     expires_after="2021-02-15">
-  <owner>dpnkar@google.com</owner>
-  <owner>meenakshiv@google.com</owner>
+  <owner>dpnkar@9oo91e.qjz9zk</owner>
+  <owner>meenakshiv@9oo91e.qjz9zk</owner>
   <summary>
     Records the various different error types encountered when opening and
     reading MS Office file formats in the Quickoffice viewer. These range from
@@ -121,8 +121,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Quickoffice.FileFormat" enum="QuickofficeFileFormat"
     expires_after="2021-02-15">
-  <owner>dpnkar@google.com</owner>
-  <owner>meenakshiv@google.com</owner>
+  <owner>dpnkar@9oo91e.qjz9zk</owner>
+  <owner>meenakshiv@9oo91e.qjz9zk</owner>
   <summary>
     Records the various different file types supported by Quickoffice (like MS
     Word, Excel, Powerpoint files) when they opened in the browser to measure
@@ -132,8 +132,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Quickoffice.pptMasterCount" units="units"
     expires_after="2021-02-15">
-  <owner>dpnkar@google.com</owner>
-  <owner>meenakshiv@google.com</owner>
+  <owner>dpnkar@9oo91e.qjz9zk</owner>
+  <owner>meenakshiv@9oo91e.qjz9zk</owner>
   <summary>
     Records the number of slide masters when a compound binary format
     presentation is opened.
@@ -142,8 +142,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Quickoffice.pptSlideCount" units="units"
     expires_after="2021-02-15">
-  <owner>dpnkar@google.com</owner>
-  <owner>meenakshiv@google.com</owner>
+  <owner>dpnkar@9oo91e.qjz9zk</owner>
+  <owner>meenakshiv@9oo91e.qjz9zk</owner>
   <summary>
     Records the slide count when a compound binary format presentation is
     opened.
@@ -152,8 +152,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Quickoffice.pptxMasterCount" units="units"
     expires_after="2021-02-15">
-  <owner>dpnkar@google.com</owner>
-  <owner>meenakshiv@google.com</owner>
+  <owner>dpnkar@9oo91e.qjz9zk</owner>
+  <owner>meenakshiv@9oo91e.qjz9zk</owner>
   <summary>
     Records the number of slide masters when an OOXML format presentation is
     opened.
@@ -162,8 +162,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Quickoffice.pptxSlideCount" units="units"
     expires_after="2021-02-15">
-  <owner>dpnkar@google.com</owner>
-  <owner>meenakshiv@google.com</owner>
+  <owner>dpnkar@9oo91e.qjz9zk</owner>
+  <owner>meenakshiv@9oo91e.qjz9zk</owner>
   <summary>
     Records the slide count when an OOXML format presentation is opened.
   </summary>
@@ -171,8 +171,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Quickoffice.xlsFormattedCellCount" units="units"
     expires_after="2021-02-15">
-  <owner>dpnkar@google.com</owner>
-  <owner>meenakshiv@google.com</owner>
+  <owner>dpnkar@9oo91e.qjz9zk</owner>
+  <owner>meenakshiv@9oo91e.qjz9zk</owner>
   <summary>
     Records the number of cells that contain formatting data in the default
     worksheet when a compound binary format spreadsheet is opened.
@@ -181,8 +181,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Quickoffice.xlsNonEmptyCellCount" units="units"
     expires_after="2021-02-15">
-  <owner>dpnkar@google.com</owner>
-  <owner>meenakshiv@google.com</owner>
+  <owner>dpnkar@9oo91e.qjz9zk</owner>
+  <owner>meenakshiv@9oo91e.qjz9zk</owner>
   <summary>
     Records the number of non-empty cells in the default worksheet when a
     compound binary format spreadsheet is opened.
@@ -191,8 +191,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Quickoffice.xlsSheetCount" units="units"
     expires_after="2021-02-15">
-  <owner>dpnkar@google.com</owner>
-  <owner>meenakshiv@google.com</owner>
+  <owner>dpnkar@9oo91e.qjz9zk</owner>
+  <owner>meenakshiv@9oo91e.qjz9zk</owner>
   <summary>
     Records the number of worksheets when a compound binary format spreadsheet
     is opened.
@@ -201,8 +201,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Quickoffice.xlsxFormattedCellCount" units="units"
     expires_after="2021-02-15">
-  <owner>dpnkar@google.com</owner>
-  <owner>meenakshiv@google.com</owner>
+  <owner>dpnkar@9oo91e.qjz9zk</owner>
+  <owner>meenakshiv@9oo91e.qjz9zk</owner>
   <summary>
     Records the number of cells that contain formatting data in the default
     worksheet when an OOXML format spreadsheet is opened.
@@ -211,8 +211,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Quickoffice.xlsxNonEmptyCellCount" units="units"
     expires_after="2021-02-15">
-  <owner>dpnkar@google.com</owner>
-  <owner>meenakshiv@google.com</owner>
+  <owner>dpnkar@9oo91e.qjz9zk</owner>
+  <owner>meenakshiv@9oo91e.qjz9zk</owner>
   <summary>
     Records the number of non-empty cells when an OOXML format spreadsheet is
     opened.
@@ -221,8 +221,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Quickoffice.xlsxSheetCount" units="units"
     expires_after="2021-02-15">
-  <owner>dpnkar@google.com</owner>
-  <owner>meenakshiv@google.com</owner>
+  <owner>dpnkar@9oo91e.qjz9zk</owner>
+  <owner>meenakshiv@9oo91e.qjz9zk</owner>
   <summary>
     Records the number of worksheets when an OOXML format spreadsheet is opened.
   </summary>

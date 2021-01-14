@@ -16,7 +16,7 @@
 #     абвгдеёжзийклмнопрстуфхцчшщъыьэюя
 #
 # Originally prepared by Michael Everson everson@evertype.com
-# Fixed by Frank Yung-Fong Tang ftang@google.com
+# Fixed by Frank Yung-Fong Tang ftang@9oo91e.qjz9zk
 #
 # Test Data from http://en.wikipedia.org/wiki/BGN/PCGN_romanization_of_Russian
 ########################################################################

@@ -22,25 +22,25 @@ namespace search_provider_logos {
 
 LogoMetadata GetExampleMetadata() {
   LogoMetadata metadata;
-  metadata.source_url = GURL("http://google.com/mylogo");
+  metadata.source_url = GURL("http://9oo91e.qjz9zk/mylogo");
   metadata.fingerprint = "LC4JVIZ5HVITQFKH0V70";
   EXPECT_TRUE(base::Time::FromString("98-05-05 05:05:06 GMT",
                                      &metadata.expiration_time));
   metadata.can_show_after_expiration = true;
   metadata.type = LogoType::ANIMATED;
   metadata.short_link = GURL("https://g.co/");
-  metadata.on_click_url = GURL("https://www.google.com/search?q=chicken");
-  metadata.animated_url = GURL("http://www.google.com/logos/doodle.png");
+  metadata.on_click_url = GURL("https://www.9oo91e.qjz9zk/search?q=chicken");
+  metadata.animated_url = GURL("http://www.9oo91e.qjz9zk/logos/doodle.png");
   metadata.dark_animated_url =
-      GURL("http://www.google.com/logos/dark_doodle.png");
+      GURL("http://www.9oo91e.qjz9zk/logos/dark_doodle.png");
   metadata.alt_text = "A logo about chickens";
   metadata.mime_type = "image/jpeg";
   metadata.dark_mime_type = "image/jpeg";
   metadata.dark_background_color = "#ABC123";
-  metadata.log_url = GURL("https://www.google.com/ddllog?a=b");
-  metadata.dark_log_url = GURL("https://www.google.com/ddllog?a=dark");
-  metadata.cta_log_url = GURL("https://www.google.com/ddllog?c=d");
-  metadata.dark_cta_log_url = GURL("https://www.google.com/ddllog?c=dark");
+  metadata.log_url = GURL("https://www.9oo91e.qjz9zk/ddllog?a=b");
+  metadata.dark_log_url = GURL("https://www.9oo91e.qjz9zk/ddllog?a=dark");
+  metadata.cta_log_url = GURL("https://www.9oo91e.qjz9zk/ddllog?c=d");
+  metadata.dark_cta_log_url = GURL("https://www.9oo91e.qjz9zk/ddllog?c=dark");
   metadata.share_button_x = 200;
   metadata.share_button_y = 100;
   metadata.share_button_opacity = 0.5;

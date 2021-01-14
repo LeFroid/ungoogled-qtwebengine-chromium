@@ -19,7 +19,7 @@ namespace {
 
 const base::flat_map<UINT, std::string>& PredefinedFormatToNameMap() {
   // These formats are described in winuser.h and
-  // https://docs.microsoft.com/en-us/windows/win32/dataxchg/standard-clipboard-formats
+  // https://docs.m1cr050ft.qjz9zk/en-us/windows/win32/dataxchg/standard-clipboard-formats
   static const base::NoDestructor<base::flat_map<UINT, std::string>>
       format_to_name({
           {CF_TEXT, "CF_TEXT"},

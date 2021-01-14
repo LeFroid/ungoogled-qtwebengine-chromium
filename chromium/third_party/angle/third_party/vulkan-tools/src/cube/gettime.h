@@ -15,7 +15,7 @@
  * limitations under the License.
  *
  * Ported from drawElements Utility Library (Google, Inc.)
- * Port done by: Ian Elliott <ianelliott@google.com>
+ * Port done by: Ian Elliott <ianelliott@9oo91e.qjz9zk>
  **************************************************************************/
 
 #include <time.h>

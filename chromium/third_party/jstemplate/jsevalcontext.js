@@ -12,7 +12,7 @@
 // implied. See the License for the specific language governing
 // permissions and limitations under the License.
 /**
- * Author: Steffen Meschkat <mesch@google.com>
+ * Author: Steffen Meschkat <mesch@9oo91e.qjz9zk>
  *
  * @fileoverview This class is used to evaluate expressions in a local
  * context. Used by JstProcessor.

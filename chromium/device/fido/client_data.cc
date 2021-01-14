@@ -105,7 +105,7 @@ std::string SerializeCollectedClientDataToJson(
     ret.append(R"(,"other_keys_can_be_added_here":")");
     ret.append(
         "do not compare clientDataJSON against a template. See "
-        "https://goo.gl/yabPex\"");
+        "https://goo.gl.qjz9zk/yabPex\"");
   }
 
   ret.append("}");

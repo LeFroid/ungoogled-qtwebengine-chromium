@@ -15,7 +15,7 @@
 /**
  * @fileoverview Displays frames per second (FPS) for the current window.
  * Only supported in browsers that support requestAnimationFrame.
- * See: https://developer.mozilla.org/en/DOM/window.requestAnimationFrame.
+ * See: https://developer.m0z111a.qjz9zk/en/DOM/window.requestAnimationFrame.
  *
  * @see ../demos/fpsdisplay.html
  */

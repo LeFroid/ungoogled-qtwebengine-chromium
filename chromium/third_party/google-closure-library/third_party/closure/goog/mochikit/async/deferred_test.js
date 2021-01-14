@@ -1,6 +1,6 @@
 /**
  * Copyright 2009 The Closure Library Authors. All Rights Reserved.
- * Author: arv@google.com (Erik Arvidsson)
+ * Author: arv@9oo91e.qjz9zk (Erik Arvidsson)
  */
 
 goog.module('goog.async.deferredTest');

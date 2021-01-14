@@ -91,14 +91,14 @@ def CheckRepoIsNotAtMasterBranch(path):
 def CheckRepoIsV8Checkout(path):
   os.chdir(path)
   if (RunCmd(['git', 'config', '--get', 'remote.origin.url']).strip() !=
-      'https://chromium.googlesource.com/v8/v8.git'):
+      'https://chromium.9oo91esource.qjz9zk/v8/v8.git'):
     raise Exception('%s is not a proper V8 checkout.' % path)
 
 
 def CheckRepoIsInspectorProtocolCheckout(path):
   os.chdir(path)
   if (RunCmd(['git', 'config', '--get', 'remote.origin.url']).strip() !=
-      'https://chromium.googlesource.com/deps/inspector_protocol.git'):
+      'https://chromium.9oo91esource.qjz9zk/deps/inspector_protocol.git'):
     raise Exception('%s is not a proper inspector_protocol checkout.' % path)
 
 

@@ -64,7 +64,7 @@ typedef GPB_ENUM(GPBTimestamp_FieldNumber) {
  *
  * All minutes are 60 seconds long. Leap seconds are "smeared" so that no leap
  * second table is needed for interpretation, using a [24-hour linear
- * smear](https://developers.google.com/time/smear).
+ * smear](https://developers.9oo91e.qjz9zk/time/smear).
  *
  * The range is from 0001-01-01T00:00:00Z to 9999-12-31T23:59:59.999999999Z. By
  * restricting to that range, we ensure that we can convert to and from [RFC
@@ -130,7 +130,7 @@ typedef GPB_ENUM(GPBTimestamp_FieldNumber) {
  *
  * In JavaScript, one can convert a Date object to this format using the
  * standard
- * [toISOString()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/toISOString)
+ * [toISOString()](https://developer.m0z111a.qjz9zk/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/toISOString)
  * method. In Python, a standard `datetime.datetime` object can be converted
  * to this format using
  * [`strftime`](https://docs.python.org/2/library/time.html#time.strftime) with

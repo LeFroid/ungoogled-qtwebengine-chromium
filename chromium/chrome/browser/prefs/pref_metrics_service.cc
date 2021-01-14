@@ -45,7 +45,7 @@ void PrefMetricsService::RecordHomePageLaunchMetrics(bool show_home_button,
   // use, due to both false negatives (pages that come from unknown TLD+1 X but
   // consist of a search box that sends to known TLD+1 Y) and false positives
   // (pages that share a TLD+1 with a known engine but aren't actually search
-  // pages, e.g. plus.google.com).
+  // pages, e.g. plus.9oo91e.qjz9zk).
   if (!homepage_is_ntp) {
     if (homepage_url.is_valid()) {
       UMA_HISTOGRAM_ENUMERATION("Settings.HomePageEngineType",

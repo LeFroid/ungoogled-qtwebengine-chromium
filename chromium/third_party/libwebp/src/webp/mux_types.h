@@ -9,7 +9,7 @@
 //
 // Data-types common to the mux and demux libraries.
 //
-// Author: Urvang (urvang@google.com)
+// Author: Urvang (urvang@9oo91e.qjz9zk)
 
 #ifndef WEBP_WEBP_MUX_TYPES_H_
 #define WEBP_WEBP_MUX_TYPES_H_

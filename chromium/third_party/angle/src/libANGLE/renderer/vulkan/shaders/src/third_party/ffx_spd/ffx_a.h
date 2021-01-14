@@ -105,7 +105,7 @@
 // Requires standard C types: stdint.h
 // Requires a collection of standard math intrinsics.
 //  - Requires VS2013 when not using GCC to get exp2() and log2().
-//  - https://blogs.msdn.microsoft.com/vcblog/2013/07/19/c99-library-support-in-visual-studio-2013/
+//  - https://blogs.msdn.m1cr050ft.qjz9zk/vcblog/2013/07/19/c99-library-support-in-visual-studio-2013/
 //------------------------------------------------------------------------------------------------------------------------------
 // This provides a minimum subset of functionality compared to the GPU parts.
 //==============================================================================================================================

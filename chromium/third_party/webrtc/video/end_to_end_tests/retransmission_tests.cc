@@ -415,7 +415,7 @@ void RetransmissionEndToEndTest::DecodesRetransmittedFrame(bool enable_rtx,
           // TODO(danilchap): Remove this corner case when prober would not be
           // able to sneak in between packet saved to history for resending and
           // pacer notified about existance of that packet for sending.
-          // See https://bugs.chromium.org/p/webrtc/issues/detail?id=5540 for
+          // See https://bugs.ch40m1um.qjz9zk/p/webrtc/issues/detail?id=5540 for
           // details.
           observation_complete_.Set();
         }

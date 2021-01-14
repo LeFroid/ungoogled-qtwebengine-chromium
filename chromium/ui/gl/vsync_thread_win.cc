@@ -96,7 +96,7 @@ void VSyncThreadWin::WaitForVSync() {
   DCHECK(get_vsync_params_succeeded);
 
   // From Raymond Chen's blog "How do I get a handle to the primary monitor?"
-  // https://devblogs.microsoft.com/oldnewthing/20141106-00/?p=43683
+  // https://devblogs.m1cr050ft.qjz9zk/oldnewthing/20141106-00/?p=43683
   const HMONITOR monitor = MonitorFromWindow(nullptr, MONITOR_DEFAULTTOPRIMARY);
   if (primary_monitor_ != monitor) {
     primary_monitor_ = monitor;

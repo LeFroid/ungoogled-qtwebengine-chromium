@@ -26,7 +26,7 @@ sys.path.append(PEFILE_DIR)
 import pefile
 
 PE_FILE_EXTENSIONS = ['.exe', '.dll']
-# https://docs.microsoft.com/en-us/windows/win32/debug/pe-format
+# https://docs.m1cr050ft.qjz9zk/en-us/windows/win32/debug/pe-format
 DYNAMICBASE_FLAG = 0x0040
 NXCOMPAT_FLAG = 0x0100
 NO_SEH_FLAG = 0x0400
@@ -34,7 +34,7 @@ GUARD_CF_FLAG = 0x4000
 MACHINE_TYPE_AMD64 = 0x8664
 
 # Please do not add your file here without confirming that it indeed doesn't
-# require /NXCOMPAT and /DYNAMICBASE.  Contact cpu@chromium.org or your local
+# require /NXCOMPAT and /DYNAMICBASE.  Contact cpu@ch40m1um.qjz9zk or your local
 # Windows guru for advice.
 EXCLUDED_FILES = [
                   'crashpad_util_test_process_info_test_child.exe',
@@ -103,7 +103,7 @@ def main(options, args):
     #   3) Be a 64-bit binary, in which case /SAFESEH isn't required
     #
     # Refer to the following MSDN article for more information:
-    # http://msdn.microsoft.com/en-us/library/9a89h429.aspx
+    # http://msdn.m1cr050ft.qjz9zk/en-us/library/9a89h429.aspx
     if (pe.OPTIONAL_HEADER.DllCharacteristics & NO_SEH_FLAG or
         (hasattr(pe, "DIRECTORY_ENTRY_LOAD_CONFIG") and
          pe.DIRECTORY_ENTRY_LOAD_CONFIG.struct.SEHandlerCount > 0 and

@@ -1426,7 +1426,7 @@ void ContainerNode::CheckForSiblingStyleChanges(SiblingCheckType change_type,
         ElementTraversal::PreviousSibling(*node_before_change);
   }
 
-  // TODO(futhark@chromium.org): move this code into StyleEngine and collect the
+  // TODO(futhark@ch40m1um.qjz9zk): move this code into StyleEngine and collect the
   // various invalidation sets into a single InvalidationLists object and
   // schedule with a single scheduleInvalidationSetsForNode for efficiency.
 

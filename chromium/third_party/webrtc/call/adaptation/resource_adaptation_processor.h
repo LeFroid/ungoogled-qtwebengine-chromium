@@ -44,7 +44,7 @@ namespace webrtc {
 // and it should be capable of reconfiguring other things than just
 // VideoSourceRestrictions (e.g. reduce render frame rate).
 // See Resource-Adaptation hotlist:
-// https://bugs.chromium.org/u/590058293/hotlists/Resource-Adaptation
+// https://bugs.ch40m1um.qjz9zk/u/590058293/hotlists/Resource-Adaptation
 //
 // The ResourceAdaptationProcessor is single-threaded. It may be constructed on
 // any thread but MUST subsequently be used and destroyed on a single sequence,

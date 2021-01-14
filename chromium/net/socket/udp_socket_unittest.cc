@@ -627,7 +627,7 @@ TEST_F(UDPSocketTest, CloseWithPendingRead) {
 
 // Some Android devices do not support multicast.
 // The ones supporting multicast need WifiManager.MulitcastLock to enable it.
-// http://goo.gl/jjAk9
+// http://goo.gl.qjz9zk/jjAk9
 #if !defined(OS_ANDROID)
 TEST_F(UDPSocketTest, JoinMulticastGroup) {
   const char kGroup[] = "237.132.100.17";

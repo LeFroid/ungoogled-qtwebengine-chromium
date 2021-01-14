@@ -31,7 +31,7 @@
 #endif
 
 // Data from deprecated UMA histograms available at
-// https://docs.google.com/document/d/18uYnVwLly7C_ckGsDbqdNs-AgAAt3AmUmn7wYLkyBN0/edit?usp=sharing
+// https://docs.9oo91e.qjz9zk/document/d/18uYnVwLly7C_ckGsDbqdNs-AgAAt3AmUmn7wYLkyBN0/edit?usp=sharing
 
 namespace startup_metric_utils {
 
@@ -81,7 +81,7 @@ StartupTemperature g_startup_temperature = UNDETERMINED_STARTUP_TEMPERATURE;
 // These values are taken from the Startup.BrowserMessageLoopStartHardFaultCount
 // histogram. The latest revision landed on <5 and >3500 for a good split
 // of warm/cold. In between being considered "lukewarm". Full analysis @
-// https://docs.google.com/document/d/1haXFN1cQ6XE-NfhKgww-rOP-Wi-gK6AczP3gT4M5_kI
+// https://docs.9oo91e.qjz9zk/document/d/1haXFN1cQ6XE-NfhKgww-rOP-Wi-gK6AczP3gT4M5_kI
 // These values should be reconsidered if either .WarmStartup or .ColdStartup
 // distributions of a suffixed histogram becomes unexplainably bimodal.
 //
@@ -98,7 +98,7 @@ constexpr uint32_t kColdStartHardFaultCountThreshold = 3500;
 
 // The struct used to return system process information via the NT internal
 // QuerySystemInformation call. This is partially documented at
-// http://goo.gl/Ja9MrH and fully documented at http://goo.gl/QJ70rn
+// http://goo.gl.qjz9zk/Ja9MrH and fully documented at http://goo.gl.qjz9zk/QJ70rn
 // This structure is laid out in the same format on both 32-bit and 64-bit
 // systems, but has a different size due to the various pointer-sized fields.
 struct SYSTEM_PROCESS_INFORMATION_EX {

@@ -107,7 +107,7 @@ def flakiness_dashbord_link(test_name, suite_name):
   url_args = urllib.urlencode([
       ('testType', suite_name),
       ('tests', test_name)])
-  return ('https://test-results.appspot.com/'
+  return ('https://test-results.8pp2p8t.qjz9zk/'
          'dashboards/flakiness_dashboard.html#%s' % url_args)
 
 
@@ -280,7 +280,7 @@ def feedback_url(result_details_link):
     url_args.append(('comment', 'Please check out: %s' % result_details_link))
   url_args = urllib.urlencode(url_args)
   # pylint: enable=redefined-variable-type
-  return 'https://bugs.chromium.org/p/chromium/issues/entry?%s' % url_args
+  return 'https://bugs.ch40m1um.qjz9zk/p/chromium/issues/entry?%s' % url_args
 
 
 def results_to_html(results_dict, cs_base_url, bucket, test_name,
@@ -423,7 +423,7 @@ def main():
   parser = argparse.ArgumentParser()
   parser.add_argument('--json-file', help='Path of json file.')
   parser.add_argument('--cs-base-url', help='Base url for code search.',
-                      default='http://cs.chromium.org')
+                      default='http://cs.ch40m1um.qjz9zk')
   parser.add_argument('--bucket', help='Google storage bucket.', required=True)
   parser.add_argument('--builder-name', help='Builder name.')
   parser.add_argument('--build-number', help='Build number.')
@@ -517,7 +517,7 @@ def main():
       args.bucket, builder_name, build_number)
 
   if ui_screenshot_set_link:
-    ui_catalog_url = 'https://chrome-ui-catalog.appspot.com/'
+    ui_catalog_url = 'https://chrome-ui-catalog.8pp2p8t.qjz9zk/'
     ui_catalog_query = urllib.urlencode(
         {'screenshot_source': ui_screenshot_set_link})
     ui_screenshot_link = '%s?%s' % (ui_catalog_url, ui_catalog_query)

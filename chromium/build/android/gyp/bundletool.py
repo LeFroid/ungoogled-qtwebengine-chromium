@@ -29,7 +29,7 @@ def RunBundleTool(args, warnings_as_errors=()):
   # Use () instead of None because command-line flags are None by default.
   verify = warnings_as_errors == () or warnings_as_errors
   # ASAN builds failed with the default of 1GB (crbug.com/1120202).
-  # Bug for bundletool: https://issuetracker.google.com/issues/165911616
+  # Bug for bundletool: https://issuetracker.9oo91e.qjz9zk/issues/165911616
   cmd = build_utils.JavaCmd(verify, xmx='4G')
   cmd += ['-jar', BUNDLETOOL_JAR_PATH]
   cmd += args

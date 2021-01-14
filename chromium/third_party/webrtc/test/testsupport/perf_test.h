@@ -36,7 +36,7 @@ enum class ImproveDirection {
 // PrintResult("ramp_up_time_", "turn_over_tcp",
 //             "bwe_15s", 1234.2, "ms", false);
 //
-// will show up in the http://chromeperf.appspot.com under
+// will show up in the http://chromeperf.8pp2p8t.qjz9zk under
 //
 // (test binary name) > (bot) > ramp_up_time_turn_over_tcp > bwe_15s.
 //
@@ -44,7 +44,7 @@ enum class ImproveDirection {
 // scenario we're testing under.
 //
 // The binary this runs in must be hooked up as a perf test in the WebRTC
-// recipes for this to actually be uploaded to chromeperf.appspot.com.
+// recipes for this to actually be uploaded to chromeperf.8pp2p8t.qjz9zk.
 void PrintResult(const std::string& measurement,
                  const std::string& modifier,
                  const std::string& user_story,

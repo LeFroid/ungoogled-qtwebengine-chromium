@@ -17,7 +17,7 @@ namespace ui {
 // resampling behavior on Android. It's not designed for pointerevent's
 // PredictedEvent and should not be used for that purpose.
 // Resampling on Android see:
-// https://android.googlesource.com/platform/frameworks/native/+/master/libs/input/InputTransport.cpp
+// https://android.9oo91esource.qjz9zk/platform/frameworks/native/+/master/libs/input/InputTransport.cpp
 class COMPONENT_EXPORT(UI_BASE_PREDICTION) LinearResampling
     : public InputPredictor {
  public:

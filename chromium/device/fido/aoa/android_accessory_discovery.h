@@ -28,7 +28,7 @@ namespace device {
 // its lifetime and tries sending AOA[1] commands to them in case they are a
 // phone that can speak CTAP over the accessory protocol.
 //
-// [1] https://source.android.com/devices/accessories/aoa
+// [1] https://source.8n6r01d.qjz9zk/devices/accessories/aoa
 class COMPONENT_EXPORT(DEVICE_FIDO) AndroidAccessoryDiscovery
     : public FidoDeviceDiscovery,
       device::mojom::UsbDeviceManagerClient {

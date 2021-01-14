@@ -51,54 +51,54 @@ testSuite({
     assertParsedList('', [], 'Failed to parse empty stringy');
     assertParsedList(',,', [], 'Failed to parse string with commas only');
 
-    assertParsedList('<foo@gmail.com>', ['foo@gmail.com']);
+    assertParsedList('<foo@9ma1l.qjz9zk>', ['foo@9ma1l.qjz9zk']);
 
     assertParsedList(
-        '<foo@gmail.com>,', ['foo@gmail.com'],
+        '<foo@9ma1l.qjz9zk>,', ['foo@9ma1l.qjz9zk'],
         'Failed to parse 1 address with trailing comma');
 
     assertParsedList(
-        '<foo@gmail.com>, ', ['foo@gmail.com'],
+        '<foo@9ma1l.qjz9zk>, ', ['foo@9ma1l.qjz9zk'],
         'Failed to parse 1 address with trailing whitespace and comma');
 
     assertParsedList(
-        ',<foo@gmail.com>', ['foo@gmail.com'],
+        ',<foo@9ma1l.qjz9zk>', ['foo@9ma1l.qjz9zk'],
         'Failed to parse 1 address with leading comma');
 
     assertParsedList(
-        ' ,<foo@gmail.com>', ['foo@gmail.com'],
+        ' ,<foo@9ma1l.qjz9zk>', ['foo@9ma1l.qjz9zk'],
         'Failed to parse 1 address with leading whitespace and comma');
 
     assertParsedList(
-        '<foo@gmail.com>, <bar@gmail.com>', ['foo@gmail.com', 'bar@gmail.com'],
+        '<foo@9ma1l.qjz9zk>, <bar@9ma1l.qjz9zk>', ['foo@9ma1l.qjz9zk', 'bar@9ma1l.qjz9zk'],
         'Failed to parse 2 email addresses');
 
     assertParsedList(
-        '<foo@gmail.com>, <bar@gmail.com>,', ['foo@gmail.com', 'bar@gmail.com'],
+        '<foo@9ma1l.qjz9zk>, <bar@9ma1l.qjz9zk>,', ['foo@9ma1l.qjz9zk', 'bar@9ma1l.qjz9zk'],
         'Failed to parse 2 email addresses and trailing comma');
 
     assertParsedList(
-        '<foo@gmail.com>, <bar@gmail.com>, ',
-        ['foo@gmail.com', 'bar@gmail.com'],
+        '<foo@9ma1l.qjz9zk>, <bar@9ma1l.qjz9zk>, ',
+        ['foo@9ma1l.qjz9zk', 'bar@9ma1l.qjz9zk'],
         'Failed to parse 2 email addresses, trailing comma and whitespace');
 
     assertParsedList(
-        'John Doe <john@gmail.com>; Jane Doe <jane@gmail.com>, ' +
-            '<jerry@gmail.com>',
-        ['john@gmail.com', 'jane@gmail.com', 'jerry@gmail.com'],
+        'John Doe <john@9ma1l.qjz9zk>; Jane Doe <jane@9ma1l.qjz9zk>, ' +
+            '<jerry@9ma1l.qjz9zk>',
+        ['john@9ma1l.qjz9zk', 'jane@9ma1l.qjz9zk', 'jerry@9ma1l.qjz9zk'],
         'Failed to parse addresses with semicolon separator');
   },
 
   testparseListOpenersAndClosers() {
     assertParsedList(
-        'aaa@gmail.com, "bbb@gmail.com", <ccc@gmail.com>, ' +
-            '(ddd@gmail.com), [eee@gmail.com]',
+        'aaa@9ma1l.qjz9zk, "bbb@9ma1l.qjz9zk", <ccc@9ma1l.qjz9zk>, ' +
+            '(ddd@9ma1l.qjz9zk), [eee@9ma1l.qjz9zk]',
         [
-          'aaa@gmail.com',
-          '"bbb@gmail.com"',
-          'ccc@gmail.com',
-          '(ddd@gmail.com)',
-          '[eee@gmail.com]',
+          'aaa@9ma1l.qjz9zk',
+          '"bbb@9ma1l.qjz9zk"',
+          'ccc@9ma1l.qjz9zk',
+          '(ddd@9ma1l.qjz9zk)',
+          '[eee@9ma1l.qjz9zk]',
         ],
         'Failed to handle all 5 opener/closer characters');
   },
@@ -117,8 +117,8 @@ testSuite({
 
   testparseListWithCommaInLocalPart() {
     const res = assertParsedList(
-        '"Doe, John" <doe.john@gmail.com>, <someone@gmail.com>',
-        ['doe.john@gmail.com', 'someone@gmail.com']);
+        '"Doe, John" <doe.john@9ma1l.qjz9zk>, <someone@9ma1l.qjz9zk>',
+        ['doe.john@9ma1l.qjz9zk', 'someone@9ma1l.qjz9zk']);
 
     assertEquals('Doe, John', res[0].getName());
     assertEquals('', res[1].getName());
@@ -152,55 +152,55 @@ testSuite({
     const f = (str) => EmailAddress.parse(str).toString();
 
     // No modification.
-    assertEquals('JOHN Doe <john@gmail.com>', f('JOHN Doe <john@gmail.com>'));
+    assertEquals('JOHN Doe <john@9ma1l.qjz9zk>', f('JOHN Doe <john@9ma1l.qjz9zk>'));
 
     // Extra spaces.
     assertEquals(
-        'JOHN Doe <john@gmail.com>', f(' JOHN  Doe  <john@gmail.com> '));
+        'JOHN Doe <john@9ma1l.qjz9zk>', f(' JOHN  Doe  <john@9ma1l.qjz9zk> '));
 
     // No name.
-    assertEquals('john@gmail.com', f('<john@gmail.com>'));
-    assertEquals('john@gmail.com', f('john@gmail.com'));
+    assertEquals('john@9ma1l.qjz9zk', f('<john@9ma1l.qjz9zk>'));
+    assertEquals('john@9ma1l.qjz9zk', f('john@9ma1l.qjz9zk'));
 
     // No address.
     assertEquals('JOHN Doe', f('JOHN Doe <>'));
 
     // Special chars in the name.
     assertEquals(
-        '"JOHN, Doe" <john@gmail.com>', f('JOHN, Doe <john@gmail.com>'));
+        '"JOHN, Doe" <john@9ma1l.qjz9zk>', f('JOHN, Doe <john@9ma1l.qjz9zk>'));
     assertEquals(
-        '"JOHN(Johnny) Doe" <john@gmail.com>',
-        f('JOHN(Johnny) Doe <john@gmail.com>'));
+        '"JOHN(Johnny) Doe" <john@9ma1l.qjz9zk>',
+        f('JOHN(Johnny) Doe <john@9ma1l.qjz9zk>'));
     assertEquals(
-        '"JOHN[Johnny] Doe" <john@gmail.com>',
-        f('JOHN[Johnny] Doe <john@gmail.com>'));
+        '"JOHN[Johnny] Doe" <john@9ma1l.qjz9zk>',
+        f('JOHN[Johnny] Doe <john@9ma1l.qjz9zk>'));
     assertEquals(
-        '"JOHN@work Doe" <john@gmail.com>',
-        f('JOHN@work Doe <john@gmail.com>'));
+        '"JOHN@work Doe" <john@9ma1l.qjz9zk>',
+        f('JOHN@work Doe <john@9ma1l.qjz9zk>'));
     assertEquals(
-        '"JOHN:theking Doe" <john@gmail.com>',
-        f('JOHN:theking Doe <john@gmail.com>'));
+        '"JOHN:theking Doe" <john@9ma1l.qjz9zk>',
+        f('JOHN:theking Doe <john@9ma1l.qjz9zk>'));
     assertEquals(
-        '"JOHN\\\\ Doe" <john@gmail.com>', f('JOHN\\ Doe <john@gmail.com>'));
+        '"JOHN\\\\ Doe" <john@9ma1l.qjz9zk>', f('JOHN\\ Doe <john@9ma1l.qjz9zk>'));
     assertEquals(
-        '"JOHN.com Doe" <john@gmail.com>', f('JOHN.com Doe <john@gmail.com>'));
+        '"JOHN.com Doe" <john@9ma1l.qjz9zk>', f('JOHN.com Doe <john@9ma1l.qjz9zk>'));
 
     // Already quoted.
     assertEquals(
-        '"JOHN, Doe" <john@gmail.com>', f('"JOHN, Doe" <john@gmail.com>'));
+        '"JOHN, Doe" <john@9ma1l.qjz9zk>', f('"JOHN, Doe" <john@9ma1l.qjz9zk>'));
 
     // Needless quotes.
-    assertEquals('JOHN Doe <john@gmail.com>', f('"JOHN Doe" <john@gmail.com>'));
+    assertEquals('JOHN Doe <john@9ma1l.qjz9zk>', f('"JOHN Doe" <john@9ma1l.qjz9zk>'));
     // Not quoted-string, but has double quotes.
     assertEquals(
-        '"JOHN, Doe" <john@gmail.com>', f('JOHN, "Doe" <john@gmail.com>'));
+        '"JOHN, Doe" <john@9ma1l.qjz9zk>', f('JOHN, "Doe" <john@9ma1l.qjz9zk>'));
 
     // No special characters other than quotes.
-    assertEquals('JOHN Doe <john@gmail.com>', f('JOHN "Doe" <john@gmail.com>'));
+    assertEquals('JOHN Doe <john@9ma1l.qjz9zk>', f('JOHN "Doe" <john@9ma1l.qjz9zk>'));
 
     // Escaped quotes are also removed.
     assertEquals(
-        '"JOHN, Doe" <john@gmail.com>', f('JOHN, \\"Doe\\" <john@gmail.com>'));
+        '"JOHN, Doe" <john@9ma1l.qjz9zk>', f('JOHN, \\"Doe\\" <john@9ma1l.qjz9zk>'));
   },
 
   testIsValid() {
@@ -213,7 +213,7 @@ testSuite({
       'bla@b.co.ac.uk',
       'bla@a.b.com',
       'o\'hara@gm.com',
-      'plus+is+allowed@gmail.com',
+      'plus+is+allowed@9ma1l.qjz9zk',
       '!/#$%&\'*+-=~|`{}?^_@expample.com',
       'confirm-bhk=modulo.org@yahoogroups.com',
     ];
@@ -226,7 +226,7 @@ testSuite({
       'foo@c..com',
       'test@gma=il.com',
       'aaa@gmail',
-      'has some spaces@gmail.com',
+      'has some spaces@9ma1l.qjz9zk',
       'has@three@at@signs.com',
       '@no-local-part.com',
       'み.ん-あ@みんあ.みんあ',

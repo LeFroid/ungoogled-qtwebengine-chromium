@@ -288,7 +288,7 @@ goog.dom.browserrange.W3cRange.prototype.removeContents = function() {
     // an extra text node instead of modifying the nodeValue of the start node.
     // We normalize for that behavior here, similar to code in
     // goog.dom.browserrange.IeRange#removeContents
-    // See https://connect.microsoft.com/IE/feedback/details/746591
+    // See https://connect.m1cr050ft.qjz9zk/IE/feedback/details/746591
     var startNode = this.getStartNode();
     var startOffset = this.getStartOffset();
     var endNode = this.getEndNode();

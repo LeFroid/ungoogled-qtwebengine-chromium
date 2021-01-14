@@ -21,7 +21,9 @@ struct FileTypePoliciesSingletonTrait
     : public base::DefaultSingletonTraits<FileTypePolicies> {
   static FileTypePolicies* New() {
     FileTypePolicies* instance = new FileTypePolicies();
+#if BUILDFLAG(FULL_SAFE_BROWSING)
     instance->PopulateFromResourceBundle();
+#endif // BUILDFLAG(FULL_SAFE_BROWSING)
     return instance;
   }
 };
@@ -48,10 +50,12 @@ FileTypePolicies::~FileTypePolicies() {
   AutoLock lock(lock_);  // DCHECK fail if the lock is held.
 }
 
+#if BUILDFLAG(FULL_SAFE_BROWSING)
 std::string FileTypePolicies::ReadResourceBundle() {
   ui::ResourceBundle& bundle = ui::ResourceBundle::GetSharedInstance();
   return bundle.LoadDataResourceString(IDR_DOWNLOAD_FILE_TYPES_PB);
 }
+#endif // BUILDFLAG(FULL_SAFE_BROWSING)
 
 void FileTypePolicies::RecordUpdateMetrics(UpdateResult result,
                                            const std::string& src_name) {
@@ -67,12 +71,14 @@ void FileTypePolicies::RecordUpdateMetrics(UpdateResult result,
   }
 }
 
+#if BUILDFLAG(FULL_SAFE_BROWSING)
 void FileTypePolicies::PopulateFromResourceBundle() {
   AutoLock lock(lock_);
   std::string binary_pb = ReadResourceBundle();
   UpdateResult result = PopulateFromBinaryPb(binary_pb);
   RecordUpdateMetrics(result, "ResourceBundle");
 }
+#endif // BUILDFLAG(FULL_SAFE_BROWSING)
 
 void FileTypePolicies::PopulateFromDynamicUpdate(const std::string& binary_pb) {
   AutoLock lock(lock_);

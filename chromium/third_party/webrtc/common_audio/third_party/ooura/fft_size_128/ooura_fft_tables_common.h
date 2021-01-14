@@ -16,7 +16,7 @@
 namespace webrtc {
 
 // This tables used to be computed at run-time. For example, refer to:
-// https://code.google.com/p/webrtc/source/browse/trunk/webrtc/modules/audio_processing/utility/apm_rdft.c?r=6564
+// https://code.9oo91e.qjz9zk/p/webrtc/source/browse/trunk/webrtc/modules/audio_processing/utility/apm_rdft.c?r=6564
 // to see the initialization code.
 // Constants shared by all paths (C, SSE2, NEON).
 const float rdft_w[64] = {

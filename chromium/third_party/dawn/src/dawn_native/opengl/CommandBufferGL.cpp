@@ -768,7 +768,7 @@ namespace dawn_native { namespace opengl {
                     bindGroupTracker.Apply(gl);
 
                     gl.DispatchCompute(dispatch->x, dispatch->y, dispatch->z);
-                    // TODO(cwallez@chromium.org): add barriers to the API
+                    // TODO(cwallez@ch40m1um.qjz9zk): add barriers to the API
                     gl.MemoryBarrier(GL_ALL_BARRIER_BITS);
                     break;
                 }
@@ -782,7 +782,7 @@ namespace dawn_native { namespace opengl {
 
                     gl.BindBuffer(GL_DISPATCH_INDIRECT_BUFFER, indirectBuffer->GetHandle());
                     gl.DispatchComputeIndirect(static_cast<GLintptr>(indirectBufferOffset));
-                    // TODO(cwallez@chromium.org): add barriers to the API
+                    // TODO(cwallez@ch40m1um.qjz9zk): add barriers to the API
                     gl.MemoryBarrier(GL_ALL_BARRIER_BITS);
                     break;
                 }
@@ -835,12 +835,12 @@ namespace dawn_native { namespace opengl {
 
         // Create the framebuffer used for this render pass and calls the correct glDrawBuffers
         {
-            // TODO(kainino@chromium.org): This is added to possibly work around an issue seen on
+            // TODO(kainino@ch40m1um.qjz9zk): This is added to possibly work around an issue seen on
             // Windows/Intel. It should break any feedback loop before the clears, even if there
             // shouldn't be any negative effects from this. Investigate whether it's actually
             // needed.
             gl.BindFramebuffer(GL_READ_FRAMEBUFFER, 0);
-            // TODO(kainino@chromium.org): possible future optimization: create these framebuffers
+            // TODO(kainino@ch40m1um.qjz9zk): possible future optimization: create these framebuffers
             // at Framebuffer build time (or maybe CommandBuffer build time) so they don't have to
             // be created and destroyed at draw time.
             gl.GenFramebuffers(1, &fbo);
@@ -883,7 +883,7 @@ namespace dawn_native { namespace opengl {
 
                 // Attach depth/stencil buffer.
                 GLenum glAttachment = 0;
-                // TODO(kainino@chromium.org): it may be valid to just always use
+                // TODO(kainino@ch40m1um.qjz9zk): it may be valid to just always use
                 // GL_DEPTH_STENCIL_ATTACHMENT here.
                 if (format.aspects == (Aspect::Depth | Aspect::Stencil)) {
                     glAttachment = GL_DEPTH_STENCIL_ATTACHMENT;
@@ -947,7 +947,7 @@ namespace dawn_native { namespace opengl {
                 }
 
                 if (attachmentInfo->storeOp == wgpu::StoreOp::Clear) {
-                    // TODO(natlee@microsoft.com): call glDiscard to do optimization
+                    // TODO(natlee@m1cr050ft.qjz9zk): call glDiscard to do optimization
                 }
             }
 

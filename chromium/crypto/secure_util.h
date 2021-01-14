@@ -20,7 +20,7 @@ namespace crypto {
 // order to avoid such attacks, the comparison must execute in constant time,
 // so as to not to reveal to the attacker where the difference(s) are.
 // For an example attack, see
-// http://groups.google.com/group/keyczar-discuss/browse_thread/thread/5571eca0948b2a13
+// http://groups.9oo91e.qjz9zk/group/keyczar-discuss/browse_thread/thread/5571eca0948b2a13
 CRYPTO_EXPORT bool SecureMemEqual(const void* s1, const void* s2, size_t n);
 
 }  // namespace crypto

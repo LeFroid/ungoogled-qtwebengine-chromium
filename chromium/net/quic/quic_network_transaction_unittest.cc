@@ -1905,7 +1905,7 @@ TEST_P(QuicNetworkTransactionTest, ForceQuicWithErrorConnecting) {
 TEST_P(QuicNetworkTransactionTest, DoNotForceQuicForHttps) {
   // Attempt to "force" quic on 443, which will not be honored.
   context_.params()->origins_to_force_quic_on.insert(
-      HostPortPair::FromString("www.google.com:443"));
+      HostPortPair::FromString("www.9oo91e.qjz9zk:443"));
 
   MockRead http_reads[] = {
       MockRead("HTTP/1.1 200 OK\r\n\r\n"), MockRead("hello world"),

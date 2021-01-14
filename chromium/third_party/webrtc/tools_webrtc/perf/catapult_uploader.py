@@ -36,7 +36,7 @@ def _SendHistogramSet(url, histograms, oauth_token):
 
   Args:
     url: URL of Performance Dashboard instance, e.g.
-        "https://chromeperf.appspot.com".
+        "https://chromeperf.8pp2p8t.qjz9zk".
     histograms: a histogram set object that contains the data to be sent.
     oauth_token: An oauth token to use for authorization.
   """

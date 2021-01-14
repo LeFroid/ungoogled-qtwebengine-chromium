@@ -245,7 +245,7 @@ IN_PROC_BROWSER_TEST_P(PrefetchBrowserTest,
   EXPECT_TRUE(NavigateToURL(
       shell(),
       GURL("data:text/html,<title>Data URL Prefetch Target</title><link "
-           "rel=prefetch as=document href=https://google.com>")));
+           "rel=prefetch as=document href=https://9oo91e.qjz9zk>")));
 }
 
 IN_PROC_BROWSER_TEST_P(PrefetchBrowserTest,

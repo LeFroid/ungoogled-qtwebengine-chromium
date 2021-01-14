@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2008 Alex Mathews <possessedpenguinbob@gmail.com>
+ * Copyright (C) 2008 Alex Mathews <possessedpenguinbob@9ma1l.qjz9zk>
  * Copyright (C) 2004, 2005, 2006, 2007 Nikolas Zimmermann <zimmermann@kde.org>
  * Copyright (C) 2004, 2005 Rob Buis <buis@kde.org>
  * Copyright (C) 2005 Eric Seidel <eric@webkit.org>

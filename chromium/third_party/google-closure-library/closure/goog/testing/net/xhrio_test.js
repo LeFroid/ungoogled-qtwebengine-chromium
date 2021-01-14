@@ -149,10 +149,10 @@ testSuite({
 
     xhr.send(
         'http://www.example.com/', undefined, undefined,
-        {'From': 'page@google.com'});
+        {'From': 'page@9oo91e.qjz9zk'});
     assertObjectEquals(
         'Request sent with extra headers, headers saved',
-        {'From': 'page@google.com'}, xhr.getLastRequestHeaders());
+        {'From': 'page@9oo91e.qjz9zk'}, xhr.getLastRequestHeaders());
     xhr.simulateResponse(200, '');
 
     xhr.send('http://www.example.com');

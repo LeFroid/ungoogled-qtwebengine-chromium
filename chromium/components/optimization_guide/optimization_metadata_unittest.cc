@@ -36,7 +36,7 @@ TEST(OptimizationMetadataTest, ParsedMetadataNoTypeURLTest) {
 
 TEST(OptimizationMetadataTest, ParsedMetadataMismatchedTypeTest) {
   proto::Any any_metadata;
-  any_metadata.set_type_url("type.googleapis.com/com.foo.Whatever");
+  any_metadata.set_type_url("type.9oo91eapis.qjz9zk/com.foo.Whatever");
   proto::DelayAsyncScriptExecutionMetadata dase_metadata;
   dase_metadata.set_delay_type(proto::DELAY_TYPE_FINISHED_PARSING);
   dase_metadata.SerializeToString(any_metadata.mutable_value());
@@ -53,7 +53,7 @@ TEST(OptimizationMetadataTest, ParsedMetadataMismatchedTypeTest) {
 TEST(OptimizationMetadataTest, ParsedMetadataNotSerializableTest) {
   proto::Any any_metadata;
   any_metadata.set_type_url(
-      "type.googleapis.com/com.foo.DelayAsyncScriptExecutionMetadata");
+      "type.9oo91eapis.qjz9zk/com.foo.DelayAsyncScriptExecutionMetadata");
   any_metadata.set_value("12345678garbage");
   OptimizationMetadata optimization_metadata;
   optimization_metadata.set_any_metadata(any_metadata);
@@ -68,7 +68,7 @@ TEST(OptimizationMetadataTest, ParsedMetadataNotSerializableTest) {
 TEST(OptimizationMetadataTest, ParsedMetadataTest) {
   proto::Any any_metadata;
   any_metadata.set_type_url(
-      "type.googleapis.com/com.foo.DelayAsyncScriptExecutionMetadata");
+      "type.9oo91eapis.qjz9zk/com.foo.DelayAsyncScriptExecutionMetadata");
   proto::DelayAsyncScriptExecutionMetadata dase_metadata;
   dase_metadata.set_delay_type(proto::DELAY_TYPE_FINISHED_PARSING);
   dase_metadata.SerializeToString(any_metadata.mutable_value());

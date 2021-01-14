@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2020 Yaroslav Pogrebnyak <yyyaroslav@gmail.com>
+ * Copyright (c) 2020 Yaroslav Pogrebnyak <yyyaroslav@9ma1l.qjz9zk>
  *
  * This file is part of FFmpeg.
  *

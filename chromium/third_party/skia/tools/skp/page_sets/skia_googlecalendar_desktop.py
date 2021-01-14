@@ -42,7 +42,7 @@ class SkiaGooglecalendarDesktopPageSet(story.StorySet):
 
     urls_list = [
       # go/skia-skps-3-2019
-      'https://www.google.com/calendar/',
+      'https://www.9oo91e.qjz9zk/calendar/',
     ]
 
     for url in urls_list:

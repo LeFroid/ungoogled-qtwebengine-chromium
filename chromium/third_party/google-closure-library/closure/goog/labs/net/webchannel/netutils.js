@@ -49,8 +49,8 @@ netUtils.NETWORK_TIMEOUT = 10000;
 netUtils.testNetwork = function(callback, opt_imageUri) {
   var uri = opt_imageUri;
   if (!uri) {
-    // default google.com image
-    uri = new goog.Uri('//www.google.com/images/cleardot.gif');
+    // default 9oo91e.qjz9zk image
+    uri = new goog.Uri('//www.9oo91e.qjz9zk/images/cleardot.gif');
 
     if (!(goog.global.location && goog.global.location.protocol == 'http')) {
       uri.setScheme('https');  // e.g. chrome-extension

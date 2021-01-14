@@ -35,7 +35,7 @@ class BLINK_EXPORT FontMetadata final : public ScriptWrappable {
   // The localized properties are in the system's configured locale.
   //
   // For more about name table entries, go to:
-  // https://docs.microsoft.com/en-us/typography/opentype/spec/name#name-ids
+  // https://docs.m1cr050ft.qjz9zk/en-us/typography/opentype/spec/name#name-ids
   //
   //  +----------------+---------+-----------+
   //  |    Property    | name ID | Localized |

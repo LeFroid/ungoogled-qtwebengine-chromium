@@ -19,7 +19,7 @@ namespace chrome_pdf {
 // additionally handle the necessary callbacks on top of the PaintAggregator
 // functionality.
 //
-// See http://code.google.com/p/ppapi/wiki/2DPaintingModel
+// See http://code.9oo91e.qjz9zk/p/ppapi/wiki/2DPaintingModel
 class PaintAggregator {
  public:
   struct PaintUpdate {

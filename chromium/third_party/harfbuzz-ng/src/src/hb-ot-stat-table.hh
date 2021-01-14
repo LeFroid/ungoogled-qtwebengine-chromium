@@ -30,7 +30,7 @@
 
 /*
  * STAT -- Style Attributes
- * https://docs.microsoft.com/en-us/typography/opentype/spec/stat
+ * https://docs.m1cr050ft.qjz9zk/en-us/typography/opentype/spec/stat
  */
 #define HB_OT_TAG_STAT HB_TAG('S','T','A','T')
 

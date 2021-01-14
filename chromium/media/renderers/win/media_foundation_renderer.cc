@@ -36,10 +36,10 @@ ATOM g_video_window_class = 0;
 
 // The |g_video_window_class| atom obtained is used as the |lpClassName|
 // parameter in CreateWindowEx().
-// https://docs.microsoft.com/en-us/windows/win32/api/winuser/nf-winuser-createwindowexa
+// https://docs.m1cr050ft.qjz9zk/en-us/windows/win32/api/winuser/nf-winuser-createwindowexa
 //
 // To enable OPM
-// (https://docs.microsoft.com/en-us/windows/win32/medfound/output-protection-manager)
+// (https://docs.m1cr050ft.qjz9zk/en-us/windows/win32/medfound/output-protection-manager)
 // protection for video playback, We call CreateWindowEx() to get a window
 // and pass it to MFMediaEngine as an attribute.
 bool InitializeVideoWindowClass() {

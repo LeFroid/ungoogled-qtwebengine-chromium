@@ -52,7 +52,7 @@ testSuite({
   },
 
   testCreateNewLinkFromText() {
-    const url = 'http://www.google.com/';
+    const url = 'http://www.9oo91e.qjz9zk/';
     anchor.innerHTML = url;
     const link = Link.createNewLinkFromText(anchor);
     assertNotNull('Should have created object', link);
@@ -60,7 +60,7 @@ testSuite({
   },
 
   testCreateNewLinkFromTextLeadingTrailingWhitespace() {
-    const url = 'http://www.google.com/';
+    const url = 'http://www.9oo91e.qjz9zk/';
     const urlWithSpaces = ` ${url} `;
     anchor.innerHTML = urlWithSpaces;
     const urlWithSpacesUpdatedByBrowser = anchor.innerHTML;
@@ -73,7 +73,7 @@ testSuite({
   },
 
   testCreateNewLinkFromTextWithAnchor() {
-    const url = 'https://www.google.com/';
+    const url = 'https://www.9oo91e.qjz9zk/';
     anchor.innerHTML = url;
     const link = Link.createNewLinkFromText(anchor, '_blank');
     assertNotNull('Should have created object', link);
@@ -82,7 +82,7 @@ testSuite({
   },
 
   testInitialize() {
-    const link = Link.createNewLink(anchor, 'http://www.google.com');
+    const link = Link.createNewLink(anchor, 'http://www.9oo91e.qjz9zk');
     assertNotNull('Should have created object', link);
     assertTrue('Should be new', link.isNew());
     assertEquals('Should have correct anchor', anchor, link.getAnchor());
@@ -90,7 +90,7 @@ testSuite({
   },
 
   testInitializeWithTarget() {
-    const link = Link.createNewLink(anchor, 'http://www.google.com', '_blank');
+    const link = Link.createNewLink(anchor, 'http://www.9oo91e.qjz9zk', '_blank');
     assertNotNull('Should have created object', link);
     assertTrue('Should be new', link.isNew());
     assertEquals('Should have correct anchor', anchor, link.getAnchor());
@@ -99,22 +99,22 @@ testSuite({
   },
 
   testSetText() {
-    const link = Link.createNewLink(anchor, 'http://www.google.com', '_blank');
+    const link = Link.createNewLink(anchor, 'http://www.9oo91e.qjz9zk', '_blank');
     assertEquals('Should be empty', '', link.getCurrentText());
-    link.setTextAndUrl('Text', 'http://docs.google.com/');
+    link.setTextAndUrl('Text', 'http://docs.9oo91e.qjz9zk/');
     assertEquals(
-        'Should point to http://docs.google.com/', 'http://docs.google.com/',
+        'Should point to http://docs.9oo91e.qjz9zk/', 'http://docs.9oo91e.qjz9zk/',
         anchor.href);
     assertEquals('Should have correct text', 'Text', link.getCurrentText());
   },
 
   testSetBoldText() {
     anchor.innerHTML = '<b></b>';
-    const link = Link.createNewLink(anchor, 'http://www.google.com', '_blank');
+    const link = Link.createNewLink(anchor, 'http://www.9oo91e.qjz9zk', '_blank');
     assertEquals('Should be empty', '', link.getCurrentText());
-    link.setTextAndUrl('Text', 'http://docs.google.com/');
+    link.setTextAndUrl('Text', 'http://docs.9oo91e.qjz9zk/');
     assertEquals(
-        'Should point to http://docs.google.com/', 'http://docs.google.com/',
+        'Should point to http://docs.9oo91e.qjz9zk/', 'http://docs.9oo91e.qjz9zk/',
         anchor.href);
     assertEquals('Should have correct text', 'Text', link.getCurrentText());
     assertEquals(
@@ -122,13 +122,13 @@ testSuite({
   },
 
   testLinkImgTag() {
-    anchor.innerHTML = '<img src="www.google.com" alt="alt_txt">';
-    const link = Link.createNewLink(anchor, 'http://www.google.com', '_blank');
+    anchor.innerHTML = '<img src="www.9oo91e.qjz9zk" alt="alt_txt">';
+    const link = Link.createNewLink(anchor, 'http://www.9oo91e.qjz9zk', '_blank');
     assertEquals('Test getCurrentText', 'alt_txt', link.getCurrentText());
-    link.setTextAndUrl('newText', 'http://docs.google.com/');
+    link.setTextAndUrl('newText', 'http://docs.9oo91e.qjz9zk/');
     assertEquals('Test getCurrentText', 'newText', link.getCurrentText());
     assertEquals(
-        'Should point to http://docs.google.com/', 'http://docs.google.com/',
+        'Should point to http://docs.9oo91e.qjz9zk/', 'http://docs.9oo91e.qjz9zk/',
         anchor.href);
 
     assertEquals(
@@ -141,18 +141,18 @@ testSuite({
   },
 
   testLinkImgTagWithNoAlt() {
-    anchor.innerHTML = '<img src="www.google.com">';
-    const link = Link.createNewLink(anchor, 'http://www.google.com', '_blank');
+    anchor.innerHTML = '<img src="www.9oo91e.qjz9zk">';
+    const link = Link.createNewLink(anchor, 'http://www.9oo91e.qjz9zk', '_blank');
     assertEquals('Test getCurrentText', '', link.getCurrentText());
   },
 
   testSetMixed() {
     anchor.innerHTML = '<b>A</b>B';
-    const link = Link.createNewLink(anchor, 'http://www.google.com', '_blank');
+    const link = Link.createNewLink(anchor, 'http://www.9oo91e.qjz9zk', '_blank');
     assertEquals('Should have text: AB', 'AB', link.getCurrentText());
-    link.setTextAndUrl('Text', 'http://docs.google.com/');
+    link.setTextAndUrl('Text', 'http://docs.9oo91e.qjz9zk/');
     assertEquals(
-        'Should point to http://docs.google.com/', 'http://docs.google.com/',
+        'Should point to http://docs.9oo91e.qjz9zk/', 'http://docs.9oo91e.qjz9zk/',
         anchor.href);
     assertEquals('Should have correct text', 'Text', link.getCurrentText());
     assertEquals(
@@ -170,7 +170,7 @@ testSuite({
     // link text.  See more details in the test below.
     dom.setTextContent(anchor, 'I am text');
 
-    const link = Link.createNewLink(anchor, 'http://www.google.com');
+    const link = Link.createNewLink(anchor, 'http://www.9oo91e.qjz9zk');
     link.placeCursorRightOf();
 
     const range = Range.createFromWindow();
@@ -203,21 +203,21 @@ testSuite({
   testIsLikelyUrl() {
     const good = [
       // Proper URLs
-      'http://google.com',
-      'http://google.com/',
+      'http://9oo91e.qjz9zk',
+      'http://9oo91e.qjz9zk/',
       'http://192.168.1.103',
-      'http://www.google.com:8083',
+      'http://www.9oo91e.qjz9zk:8083',
       'https://antoine',
       'https://foo.foo.net',
-      'ftp://google.com:22/',
+      'ftp://9oo91e.qjz9zk:22/',
       'http://user@site.com',
       'ftp://user:pass@ftp.site.com',
-      'http://google.com/search?q=laser%20cats',
+      'http://9oo91e.qjz9zk/search?q=laser%20cats',
       'aim:goim?screenname=en2es',
       'mailto:x@y.com',
 
       // Bad URLs a browser will accept
-      'www.google.com',
+      'www.9oo91e.qjz9zk',
       'www.amazon.co.uk',
       'amazon.co.uk',
       'foo2.foo3.com',
@@ -226,14 +226,14 @@ testSuite({
       'del.icio.us',
       'bridge-line.com',
       'www.frigid.net:80',
-      'www.google.com?q=foo',
+      'www.9oo91e.qjz9zk?q=foo',
       'www.foo.com/j%20.txt',
       'foodtv.net',
-      'google.com',
+      '9oo91e.qjz9zk',
       'slashdot.org',
       '192.168.1.1',
       'justin.edu?kumar&nbsp;something',
-      'google.com/search?q=hot%20pockets',
+      '9oo91e.qjz9zk/search?q=hot%20pockets',
 
       // Due to TLD explosion, these could be URLs either now or soon.
       'ww.jester',
@@ -270,10 +270,10 @@ testSuite({
       'x.',
 
       // URL-ish but not quite
-      '  http://www.google.com',
-      'http://www.google.com:8081   ',
-      'www.google.com foo bar',
-      'google.com/search?q=not quite',
+      '  http://www.9oo91e.qjz9zk',
+      'http://www.9oo91e.qjz9zk:8081   ',
+      'www.9oo91e.qjz9zk foo bar',
+      '9oo91e.qjz9zk/search?q=not quite',
     ];
 
     for (i = 0; i < bad.length; i++) {
@@ -306,7 +306,7 @@ testSuite({
     const bad = [
       // Malformed/incomplete email addresses
       'user',
-      '@gmail.com',
+      '@9ma1l.qjz9zk',
       'user@gmail',
       'user@.com',
       'user@gmail.c',
@@ -314,9 +314,9 @@ testSuite({
       '@ya.com',
       '.@hi3.nl',
       'jim.com',
-      'ed:@gmail.com',
+      'ed:@9ma1l.qjz9zk',
       '*!&.banana!*&!',
-      ':jon@gmail.com',
+      ':jon@9ma1l.qjz9zk',
       '3g?@bil.com',
       'adam be@hi.net',
       'john\nsmith@test.com',
@@ -342,7 +342,7 @@ testSuite({
 
     assertTrue(Link.isMailto('mailto:'));
     assertTrue(Link.isMailto('mailto://'));
-    assertTrue(Link.isMailto('mailto://ptucker@gmail.com'));
+    assertTrue(Link.isMailto('mailto://ptucker@9ma1l.qjz9zk'));
   },
 
   testGetValidLinkFromText() {
@@ -350,8 +350,8 @@ testSuite({
       // input text, expected link output
       'www.foo.com',
       'http://www.foo.com',
-      'user@gmail.com',
-      'mailto:user@gmail.com',
+      'user@9ma1l.qjz9zk',
+      'mailto:user@9ma1l.qjz9zk',
       'http://www.foo.com',
       'http://www.foo.com',
       'https://this.that.edu',

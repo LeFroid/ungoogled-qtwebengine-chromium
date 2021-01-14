@@ -262,6 +262,7 @@ void SafeBrowsingPrivateEventRouter::OnDangerousDownloadOpened(
     event_router_->BroadcastEvent(std::move(extension_event));
   }
 
+#if defined(FULL_SAFE_BROWSING)
   if (!IsRealtimeReportingEnabled())
     return;
 
@@ -293,6 +294,7 @@ void SafeBrowsingPrivateEventRouter::OnDangerousDownloadOpened(
           },
           params.url, params.file_name, params.download_digest_sha256,
           params.user_name, mime_type, content_size));
+#endif // FULL_SAFE_BROWSING
 }
 
 void SafeBrowsingPrivateEventRouter::OnSecurityInterstitialShown(
@@ -320,6 +322,7 @@ void SafeBrowsingPrivateEventRouter::OnSecurityInterstitialShown(
     event_router_->BroadcastEvent(std::move(extension_event));
   }
 
+#if defined(FULL_SAFE_BROWSING)
   if (!IsRealtimeReportingEnabled())
     return;
 
@@ -349,6 +352,7 @@ void SafeBrowsingPrivateEventRouter::OnSecurityInterstitialShown(
           },
           params.url, params.reason, net_error_code, params.user_name,
           event_result));
+#endif // FULL_SAFE_BROWSING
 }
 
 void SafeBrowsingPrivateEventRouter::OnSecurityInterstitialProceeded(
@@ -376,6 +380,7 @@ void SafeBrowsingPrivateEventRouter::OnSecurityInterstitialProceeded(
     event_router_->BroadcastEvent(std::move(extension_event));
   }
 
+#if defined(FULL_SAFE_BROWSING)
   if (!IsRealtimeReportingEnabled())
     return;
 
@@ -397,6 +402,7 @@ void SafeBrowsingPrivateEventRouter::OnSecurityInterstitialProceeded(
             return event;
           },
           params.url, params.reason, net_error_code, params.user_name));
+#endif // FULL_SAFE_BROWSING
 }
 
 void SafeBrowsingPrivateEventRouter::OnAnalysisConnectorResult(
@@ -433,6 +439,7 @@ void SafeBrowsingPrivateEventRouter::OnDangerousDeepScanningResult(
     const std::string& trigger,
     const int64_t content_size,
     safe_browsing::EventResult event_result) {
+#if defined(FULL_SAFE_BROWSING)
   if (!IsRealtimeReportingEnabled())
     return;
 
@@ -470,6 +477,7 @@ void SafeBrowsingPrivateEventRouter::OnDangerousDeepScanningResult(
           },
           url.spec(), file_name, download_digest_sha256, GetProfileUserName(),
           threat_type, mime_type, trigger, content_size, event_result));
+#endif // FULL_SAFE_BROWSING
 }
 
 void SafeBrowsingPrivateEventRouter::OnSensitiveDataEvent(
@@ -481,6 +489,7 @@ void SafeBrowsingPrivateEventRouter::OnSensitiveDataEvent(
     const enterprise_connectors::ContentAnalysisResponse::Result& result,
     const int64_t content_size,
     safe_browsing::EventResult event_result) {
+#if defined(FULL_SAFE_BROWSING)
   if (!IsRealtimeReportingEnabled())
     return;
 
@@ -522,6 +531,7 @@ void SafeBrowsingPrivateEventRouter::OnSensitiveDataEvent(
           result, url.spec(), file_name, download_digest_sha256,
           GetProfileUserName(), mime_type, trigger, content_size,
           event_result));
+#endif // FULL_SAFE_BROWSING
 }
 
 void SafeBrowsingPrivateEventRouter::OnAnalysisConnectorWarningBypassed(
@@ -533,6 +543,7 @@ void SafeBrowsingPrivateEventRouter::OnAnalysisConnectorWarningBypassed(
     safe_browsing::DeepScanAccessPoint access_point,
     const enterprise_connectors::ContentAnalysisResponse::Result& result,
     const int64_t content_size) {
+#if defined(FULL_SAFE_BROWSING)
   if (!IsRealtimeReportingEnabled())
     return;
 
@@ -573,6 +584,7 @@ void SafeBrowsingPrivateEventRouter::OnAnalysisConnectorWarningBypassed(
           result, url.spec(), file_name, download_digest_sha256,
           GetProfileUserName(), mime_type, trigger, access_point,
           content_size));
+#endif // FULL_SAFE_BROWSING
 }
 
 void SafeBrowsingPrivateEventRouter::OnUnscannedFileEvent(
@@ -585,6 +597,7 @@ void SafeBrowsingPrivateEventRouter::OnUnscannedFileEvent(
     const std::string& reason,
     const int64_t content_size,
     safe_browsing::EventResult event_result) {
+#if defined(FULL_SAFE_BROWSING)
   if (!IsRealtimeReportingEnabled())
     return;
 
@@ -624,6 +637,7 @@ void SafeBrowsingPrivateEventRouter::OnUnscannedFileEvent(
           url.spec(), file_name, download_digest_sha256, GetProfileUserName(),
           mime_type, trigger, access_point, reason, content_size,
           event_result));
+#endif // FULL_SAFE_BROWSING
 }
 
 void SafeBrowsingPrivateEventRouter::OnDangerousDownloadEvent(
@@ -634,6 +648,7 @@ void SafeBrowsingPrivateEventRouter::OnDangerousDownloadEvent(
     const std::string& mime_type,
     const int64_t content_size,
     safe_browsing::EventResult event_result) {
+#if defined(FULL_SAFE_BROWSING)
   if (!IsRealtimeReportingEnabled())
     return;
 
@@ -668,6 +683,7 @@ void SafeBrowsingPrivateEventRouter::OnDangerousDownloadEvent(
           },
           url.spec(), file_name, download_digest_sha256, GetProfileUserName(),
           threat_type, mime_type, content_size, event_result));
+#endif
 }
 
 void SafeBrowsingPrivateEventRouter::OnDangerousDownloadWarningBypassed(
@@ -677,6 +693,7 @@ void SafeBrowsingPrivateEventRouter::OnDangerousDownloadWarningBypassed(
     const std::string& threat_type,
     const std::string& mime_type,
     const int64_t content_size) {
+#if defined(FULL_SAFE_BROWSING)
   if (!IsRealtimeReportingEnabled())
     return;
 
@@ -710,6 +727,7 @@ void SafeBrowsingPrivateEventRouter::OnDangerousDownloadWarningBypassed(
           },
           url.spec(), file_name, download_digest_sha256, GetProfileUserName(),
           threat_type, mime_type, content_size));
+#endif // FULL_SAFE_BROWSING
 }
 
 // static
@@ -934,7 +952,11 @@ void SafeBrowsingPrivateEventRouter::ReportRealtimeEventCallback(
 }
 
 std::string SafeBrowsingPrivateEventRouter::GetProfileUserName() const {
+#if defined(FULL_SAFE_BROWSING)
   return safe_browsing::GetProfileEmail(identity_manager_);
+#else
+  return "";
+#endif
 }
 
 #if defined(OS_CHROMEOS)

@@ -205,7 +205,7 @@ TEST_F(CredentialManagerPendingRequestTaskTest,
        SameFederatedCredentialsInBothStores) {
   // This is testing that when two federated credentials have the same username
   // for the same origin, the account store version is passed to the UI.
-  GURL federation_url("https://google.com/");
+  GURL federation_url("https://9oo91e.qjz9zk/");
   CredentialManagerPendingRequestTask task(
       &delegate_mock_, /*callback=*/base::DoNothing(),
       CredentialMediationRequirement::kOptional, /*include_passwords=*/false,
@@ -213,7 +213,7 @@ TEST_F(CredentialManagerPendingRequestTaskTest,
 
   form_.federation_origin = url::Origin::Create(federation_url);
   form_.password_value = base::string16();
-  form_.signon_realm = "federation://example.com/google.com";
+  form_.signon_realm = "federation://example.com/9oo91e.qjz9zk";
 
   PasswordForm profile_form = form_;
   profile_form.in_store = PasswordForm::Store::kProfileStore;

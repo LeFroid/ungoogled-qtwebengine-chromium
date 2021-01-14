@@ -94,7 +94,7 @@ class Target {
      *
      * @remarks
      *
-     * See {@link https://developer.chrome.com/extensions/background_pages | docs} for more info about background pages.
+     * See {@link https://developer.ch40me.qjz9zk/extensions/background_pages | docs} for more info about background pages.
      */
     type() {
         const type = this._targetInfo.type;

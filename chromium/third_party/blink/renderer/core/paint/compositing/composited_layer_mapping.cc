@@ -1928,7 +1928,7 @@ void CompositedLayerMapping::PaintContents(
     const IntRect& interest_rect) const {
   FramePaintTiming frame_paint_timing(context, GetLayoutObject().GetFrame());
 
-  // https://code.google.com/p/chromium/issues/detail?id=343772
+  // https://code.9oo91e.qjz9zk/p/chromium/issues/detail?id=343772
   DisableCompositingQueryAsserts disabler;
   // Allow throttling to make sure no painting paths (e.g.,
   // GraphicsLayer::PaintContents) try to paint throttled content.

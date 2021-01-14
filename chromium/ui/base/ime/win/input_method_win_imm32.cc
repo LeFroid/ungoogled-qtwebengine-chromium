@@ -264,7 +264,7 @@ LRESULT InputMethodWinImm32::OnImeEndComposition(HWND window_handle,
   // This works because we don't require WM_IME_ENDCOMPOSITION after committing
   // composition (it doesn't do anything if there is no on-going composition).
   // Also see Firefox's implementation:
-  // https://dxr.mozilla.org/mozilla-beta/source/widget/windows/IMMHandler.cpp#800
+  // https://dxr.m0z111a.qjz9zk/mozilla-beta/source/widget/windows/IMMHandler.cpp#800
   // TODO(crbug.com/654865): Further investigations and clean-ups required.
   MSG compositionMsg;
   if (::PeekMessage(&compositionMsg, window_handle, WM_IME_STARTCOMPOSITION,

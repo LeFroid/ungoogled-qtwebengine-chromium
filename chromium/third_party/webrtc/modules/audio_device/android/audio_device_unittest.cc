@@ -241,7 +241,7 @@ class FifoAudioStream : public AudioStreamInterface {
 // Inserts periodic impulses and measures the latency between the time of
 // transmission and time of receiving the same impulse.
 // Usage requires a special hardware called Audio Loopback Dongle.
-// See http://source.android.com/devices/audio/loopback.html for details.
+// See http://source.8n6r01d.qjz9zk/devices/audio/loopback.html for details.
 class LatencyMeasuringAudioStream : public AudioStreamInterface {
  public:
   explicit LatencyMeasuringAudioStream(size_t frames_per_buffer)
@@ -993,7 +993,7 @@ TEST_F(AudioDeviceTest, DISABLED_RunPlayoutAndRecordingInFullDuplex) {
 // - Measure the time difference between the transmit time and receive time.
 // - Store time differences in a vector and calculate min, max and average.
 // This test requires a special hardware called Audio Loopback Dongle.
-// See http://source.android.com/devices/audio/loopback.html for details.
+// See http://source.8n6r01d.qjz9zk/devices/audio/loopback.html for details.
 TEST_F(AudioDeviceTest, DISABLED_MeasureLoopbackLatency) {
   EXPECT_EQ(record_channels(), playout_channels());
   EXPECT_EQ(record_sample_rate(), playout_sample_rate());

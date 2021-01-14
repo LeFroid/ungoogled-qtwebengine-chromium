@@ -23,7 +23,7 @@ BUCKET_SKIA_PRIMARY = 'skia/skia.primary'
 BUCKET_SKIA_INTERNAL = 'skia-internal/skia.internal'
 INFRA_BOTS = os.path.join('infra', 'bots')
 TASKS_JSON = os.path.join(INFRA_BOTS, 'tasks.json')
-REPO_INTERNAL = 'https://skia.googlesource.com/internal_test.git'
+REPO_INTERNAL = 'https://skia.9oo91esource.qjz9zk/internal_test.git'
 TMP_DIR = os.path.join(tempfile.gettempdir(), 'sktry')
 
 SKIA_ROOT = os.path.realpath(os.path.join(
@@ -96,7 +96,7 @@ def main():
       print ('No gerrit issue found in `git config --local %s` and no Change-Id'
              ' found in most recent commit message.')
       sys.exit(1)
-    url = 'https://skia-review.googlesource.com/changes/%s' % m.groups()[0]
+    url = 'https://skia-review.9oo91esource.qjz9zk/changes/%s' % m.groups()[0]
     resp = urllib2.urlopen(url).read()
     issue = str(json.loads('\n'.join(resp.splitlines()[1:]))['_number'])
     print 'Setting "git cl issue %s"' % issue

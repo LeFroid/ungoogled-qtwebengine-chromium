@@ -733,7 +733,7 @@ goog.ui.Tooltip.prototype.getAnchorFromElement = function(el) {
   // code does not have sufficient permissions to read properties on that
   // magic element and thus will throw an error in this call to
   // getAnchorFromElement_().  In that case we swallow the error.
-  // See https://bugzilla.mozilla.org/show_bug.cgi?id=330961
+  // See https://bugzilla.m0z111a.qjz9zk/show_bug.cgi?id=330961
   try {
     while (el && !this.elements_.contains(el)) {
       el = /** @type {Element} */ (el.parentNode);

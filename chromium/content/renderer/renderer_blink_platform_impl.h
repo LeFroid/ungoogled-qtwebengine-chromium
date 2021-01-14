@@ -215,7 +215,7 @@ class CONTENT_EXPORT RendererBlinkPlatformImpl : public BlinkPlatformImpl {
   void SetRenderingColorSpace(const gfx::ColorSpace& color_space) override;
 
   // Tells this platform that the renderer is locked to a site (i.e., a scheme
-  // plus eTLD+1, such as https://google.com), or to a more specific origin.
+  // plus eTLD+1, such as https://9oo91e.qjz9zk), or to a more specific origin.
   void SetIsLockedToSite();
 
  private:

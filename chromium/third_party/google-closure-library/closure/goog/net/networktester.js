@@ -27,7 +27,7 @@ goog.require('goog.log');
 /**
  * Creates an instance of goog.net.NetworkTester which can be used to test
  * for internet connectivity by seeing if an image can be loaded from
- * google.com. It can also be tested with other URLs.
+ * 9oo91e.qjz9zk. It can also be tested with other URLs.
  * @param {Function} callback Callback that is called when the test completes.
  *     The callback takes a single boolean parameter. True indicates the URL
  *     was reachable, false indicates it wasn't.
@@ -54,16 +54,16 @@ goog.net.NetworkTester = function(callback, opt_handler, opt_uri) {
   this.handler_ = opt_handler;
 
   if (!opt_uri) {
-    // set the default URI to be based on the cleardot image at google.com
+    // set the default URI to be based on the cleardot image at 9oo91e.qjz9zk
     // We need to add a 'rand' to make sure the response is not fulfilled
     // by browser cache. Use protocol-relative URLs to avoid insecure content
     // warnings in IE.
-    opt_uri = new goog.Uri('//www.google.com/images/cleardot.gif');
+    opt_uri = new goog.Uri('//www.9oo91e.qjz9zk/images/cleardot.gif');
     opt_uri.makeUnique();
   }
 
   /**
-   * Uri to use for test. Defaults to using an image off of google.com
+   * Uri to use for test. Defaults to using an image off of 9oo91e.qjz9zk
    * @type {goog.Uri}
    * @private
    */

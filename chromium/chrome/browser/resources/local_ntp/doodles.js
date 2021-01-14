@@ -116,7 +116,7 @@ doodles.resizeDoodleHandler = function(args) {
   const transitionCallback = function() {
     iframe.removeEventListener('webkitTransitionEnd', transitionCallback);
     iframe.contentWindow.postMessage(
-        {cmd: 'resizeComplete'}, 'https://www.google.com');
+        {cmd: 'resizeComplete'}, 'https://www.9oo91e.qjz9zk');
   };
   iframe.addEventListener('webkitTransitionEnd', transitionCallback, false);
 
@@ -677,7 +677,7 @@ doodles.updateShareDialog = function() {
   const shortLink = doodles.targetDoodle.metadata.shortLink;
 
   facebookButton.onclick = function() {
-    const url = 'https://www.facebook.com/dialog/share' +
+    const url = 'https://www.f8c3b00k.qjz9zk/dialog/share' +
         '?app_id=' + doodles.FACEBOOK_APP_ID +
         '&href=' + encodeURIComponent(shortLink) +
         '&hashtag=' + encodeURIComponent('#GoogleDoodle');

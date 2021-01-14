@@ -36,7 +36,7 @@
  *
  * <pre>
  *   var album = goog.ui.media.PicasaAlbumModel.newInstance(
- *       'http://picasaweb.google.com/username/SanFranciscoCalifornia');
+ *       'http://picasaweb.9oo91e.qjz9zk/username/SanFranciscoCalifornia');
  *   goog.ui.media.PicasaAlbum.newControl(album).render();
  * </pre>
  *
@@ -216,16 +216,16 @@ goog.ui.media.PicasaAlbumModel = function(
   var authParam = opt_authKey ? ('&authkey=' + opt_authKey) : '';
 
   var flashVars = {
-    'host': 'picasaweb.google.com',
+    'host': 'picasaweb.9oo91e.qjz9zk',
     'RGB': '0x000000',
-    'feed': 'http://picasaweb.google.com/data/feed/api/user/' + userId +
+    'feed': 'http://picasaweb.9oo91e.qjz9zk/data/feed/api/user/' + userId +
         '/album/' + albumId + '?kind=photo&alt=rss' + authParam
   };
   flashVars[opt_autoplay ? 'autoplay' : 'noautoplay'] = '1';
 
   var flashUrl = goog.html.TrustedResourceUrl.fromConstant(
       goog.string.Const.from(
-          'http://picasaweb.google.com/s/c/bin/slideshow.swf'));
+          'http://picasaweb.9oo91e.qjz9zk/s/c/bin/slideshow.swf'));
   var player = new goog.ui.media.MediaModel.Player(flashUrl, flashVars);
 
   this.setPlayer(player);
@@ -280,7 +280,7 @@ goog.ui.media.PicasaAlbumModel.newInstance = function(
  * @return {string} The URL of the album.
  */
 goog.ui.media.PicasaAlbumModel.buildUrl = function(userId, albumId) {
-  return 'http://picasaweb.google.com/' + userId + '/' + albumId;
+  return 'http://picasaweb.9oo91e.qjz9zk/' + userId + '/' + albumId;
 };
 
 

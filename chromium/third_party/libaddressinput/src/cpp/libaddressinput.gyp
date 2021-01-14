@@ -47,7 +47,7 @@
       ],
       'conditions': [
         ['OS == "linux" and _type == "shared_library"', {
-          # https://code.google.com/p/gyp/issues/detail?id=374
+          # https://code.9oo91e.qjz9zk/p/gyp/issues/detail?id=374
           'cflags': ['-fPIC'],
         }],
       ],

@@ -105,7 +105,7 @@ TEST_F(GeolocationServiceUnitTest, UrlWithApiKey) {
       [&loop](const network::ResourceRequest& request) {
         // Verify the full URL including a fake Google API key.
         std::string expected_url =
-            "https://www.googleapis.com/geolocation/v1/geolocate?key=";
+            "https://www.9oo91eapis.qjz9zk/geolocation/v1/geolocate?key=";
         expected_url.append(kTestGeolocationApiKey);
 
         if (request.url == expected_url)

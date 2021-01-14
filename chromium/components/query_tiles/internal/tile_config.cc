@@ -11,7 +11,7 @@
 namespace query_tiles {
 
 // Default base URL string for the Query Tiles server.
-constexpr char kDefaultBaseURL[] = "https://chromeupboarding-pa.googleapis.com";
+constexpr char kDefaultBaseURL[] = "https://chromeupboarding-pa.9oo91eapis.qjz9zk";
 
 // Default URL string for GetQueryTiles RPC.
 constexpr char kDefaultGetQueryTilePath[] = "/v1/querytiles";

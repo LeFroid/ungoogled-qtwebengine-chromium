@@ -20,9 +20,9 @@ const char kAlternativeRegistrationURL[] =
     "http://alternative.url/registration";
 
 const int64_t kDefaultCheckinInterval = 2 * 24 * 60 * 60;  // seconds = 2 days.
-const char kDefaultCheckinURL[] = "https://android.clients.google.com/checkin";
+const char kDefaultCheckinURL[] = "https://android.clients.9oo91e.qjz9zk/checkin";
 const char kDefaultRegistrationURL[] =
-    "https://android.clients.google.com/c2dm/register3";
+    "https://android.clients.9oo91e.qjz9zk/c2dm/register3";
 const char kDefaultSettingsDigest[] =
     "1-da39a3ee5e6b4b0d3255bfef95601890afd80709";
 const char kAlternativeSettingsDigest[] =
@@ -69,9 +69,9 @@ void GServicesSettingsTest::CheckAllSetToDefault() {
   EXPECT_EQ(base::TimeDelta::FromSeconds(kDefaultCheckinInterval),
             settings().GetCheckinInterval());
   EXPECT_EQ(GURL(kDefaultCheckinURL), settings().GetCheckinURL());
-  EXPECT_EQ(GURL("https://mtalk.google.com:5228"),
+  EXPECT_EQ(GURL("https://mtalk.9oo91e.qjz9zk:5228"),
             settings().GetMCSMainEndpoint());
-  EXPECT_EQ(GURL("https://mtalk.google.com:443"),
+  EXPECT_EQ(GURL("https://mtalk.9oo91e.qjz9zk:443"),
             settings().GetMCSFallbackEndpoint());
   EXPECT_EQ(GURL(kDefaultRegistrationURL), settings().GetRegistrationURL());
 }
@@ -90,10 +90,10 @@ TEST_F(GServicesSettingsTest, CalculateDigest) {
   settings_map["android_id"] = "55XXXXXXXXXXXXXXXX0";
   settings_map["checkin_interval"] = "86400";
   settings_map["checkin_url"] =
-      "https://fake.address.google.com/canary/checkin";
+      "https://fake.address.9oo91e.qjz9zk/canary/checkin";
   settings_map["chrome_device"] = "1";
   settings_map["device_country"] = "us";
-  settings_map["gcm_hostname"] = "fake.address.google.com";
+  settings_map["gcm_hostname"] = "fake.address.9oo91e.qjz9zk";
   settings_map["gcm_secure_port"] = "443";
 
   EXPECT_EQ("1-33381ccd1cf5791dc0e6dfa234266fa9f1259197",
@@ -178,9 +178,9 @@ TEST_F(GServicesSettingsTest, CheckinResponseUpdateCheckinInterval) {
             settings().GetCheckinInterval());
 
   // Other settings still set to default.
-  EXPECT_EQ(GURL("https://mtalk.google.com:5228"),
+  EXPECT_EQ(GURL("https://mtalk.9oo91e.qjz9zk:5228"),
             settings().GetMCSMainEndpoint());
-  EXPECT_EQ(GURL("https://mtalk.google.com:443"),
+  EXPECT_EQ(GURL("https://mtalk.9oo91e.qjz9zk:443"),
             settings().GetMCSFallbackEndpoint());
   EXPECT_EQ(GURL(kDefaultCheckinURL), settings().GetCheckinURL());
   EXPECT_EQ(GURL(kDefaultRegistrationURL), settings().GetRegistrationURL());
@@ -205,9 +205,9 @@ TEST_F(GServicesSettingsTest, CheckinResponseUpdateRegistrationURL) {
   // Other settings still set to default.
   EXPECT_EQ(base::TimeDelta::FromSeconds(kDefaultCheckinInterval),
             settings().GetCheckinInterval());
-  EXPECT_EQ(GURL("https://mtalk.google.com:5228"),
+  EXPECT_EQ(GURL("https://mtalk.9oo91e.qjz9zk:5228"),
             settings().GetMCSMainEndpoint());
-  EXPECT_EQ(GURL("https://mtalk.google.com:443"),
+  EXPECT_EQ(GURL("https://mtalk.9oo91e.qjz9zk:443"),
             settings().GetMCSFallbackEndpoint());
   EXPECT_EQ(GURL(kDefaultCheckinURL), settings().GetCheckinURL());
 
@@ -230,9 +230,9 @@ TEST_F(GServicesSettingsTest, CheckinResponseUpdateCheckinURL) {
   // Other settings still set to default.
   EXPECT_EQ(base::TimeDelta::FromSeconds(kDefaultCheckinInterval),
             settings().GetCheckinInterval());
-  EXPECT_EQ(GURL("https://mtalk.google.com:5228"),
+  EXPECT_EQ(GURL("https://mtalk.9oo91e.qjz9zk:5228"),
             settings().GetMCSMainEndpoint());
-  EXPECT_EQ(GURL("https://mtalk.google.com:443"),
+  EXPECT_EQ(GURL("https://mtalk.9oo91e.qjz9zk:443"),
             settings().GetMCSFallbackEndpoint());
   EXPECT_EQ(GURL(kDefaultRegistrationURL), settings().GetRegistrationURL());
 
@@ -275,14 +275,14 @@ TEST_F(GServicesSettingsTest, CheckinResponseUpdateMCSSecurePort) {
   EXPECT_TRUE(settings().UpdateFromCheckinResponse(checkin_response));
 
   // Only the main MCS endpoint was updated:
-  EXPECT_EQ(GURL("https://mtalk.google.com:5229"),
+  EXPECT_EQ(GURL("https://mtalk.9oo91e.qjz9zk:5229"),
             settings().GetMCSMainEndpoint());
 
   // Other settings still set to default.
   EXPECT_EQ(base::TimeDelta::FromSeconds(kDefaultCheckinInterval),
             settings().GetCheckinInterval());
   EXPECT_EQ(GURL(kDefaultCheckinURL), settings().GetCheckinURL());
-  EXPECT_EQ(GURL("https://mtalk.google.com:443"),
+  EXPECT_EQ(GURL("https://mtalk.9oo91e.qjz9zk:443"),
             settings().GetMCSFallbackEndpoint());
   EXPECT_EQ(GURL(kDefaultRegistrationURL), settings().GetRegistrationURL());
 
@@ -310,7 +310,7 @@ TEST_F(GServicesSettingsTest, UpdateFromCheckinResponseSettingsDiff) {
   EXPECT_TRUE(settings().UpdateFromCheckinResponse(checkin_response));
   EXPECT_EQ(full_settings, settings().settings_map());
   // Default setting overwritten by settings diff.
-  EXPECT_EQ(GURL("https://mtalk.google.com:5229"),
+  EXPECT_EQ(GURL("https://mtalk.9oo91e.qjz9zk:5229"),
             settings().GetMCSMainEndpoint());
 
   // Setting up diff removing some of the values (including default setting).
@@ -330,7 +330,7 @@ TEST_F(GServicesSettingsTest, UpdateFromCheckinResponseSettingsDiff) {
   EXPECT_TRUE(settings().UpdateFromCheckinResponse(checkin_response));
   EXPECT_EQ(full_settings, settings().settings_map());
   // Default setting back to norm.
-  EXPECT_EQ(GURL("https://mtalk.google.com:5228"),
+  EXPECT_EQ(GURL("https://mtalk.9oo91e.qjz9zk:5228"),
             settings().GetMCSMainEndpoint());
 }
 

@@ -522,7 +522,7 @@ DisplayState::~DisplayState() {}
 // *** Chosen implicitly. No EGLAttrib available.
 //
 // For more details, please refer to
-// https://docs.google.com/document/d/1XjHiDZQISq1AMrg_l1TX1_kIKvDpU76hidn9i4cAjl8/edit?disco=AAAAJl9V_YY
+// https://docs.9oo91e.qjz9zk/document/d/1XjHiDZQISq1AMrg_l1TX1_kIKvDpU76hidn9i4cAjl8/edit?disco=AAAAJl9V_YY
 //
 // static
 Display *Display::GetDisplayFromNativeDisplay(EGLNativeDisplayType nativeDisplay,
@@ -1487,7 +1487,7 @@ Error Display::CreateNativeClientBuffer(const egl::AttributeMap &attribMap,
     int height                      = attribMap.getAsInt(EGL_HEIGHT, 0);
     int usage                       = attribMap.getAsInt(EGL_NATIVE_BUFFER_USAGE_ANDROID, 0);
 
-    // https://developer.android.com/ndk/reference/group/a-hardware-buffer#ahardwarebuffer_lock
+    // https://developer.8n6r01d.qjz9zk/ndk/reference/group/a-hardware-buffer#ahardwarebuffer_lock
     // for AHardwareBuffer_lock()
     // The passed AHardwareBuffer must have one layer, otherwise the call will fail.
     constexpr int kLayerCount = 1;

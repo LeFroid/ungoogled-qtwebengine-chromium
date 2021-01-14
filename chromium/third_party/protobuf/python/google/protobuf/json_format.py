@@ -1,6 +1,6 @@
 # Protocol Buffers - Google's data interchange format
 # Copyright 2008 Google Inc.  All rights reserved.
-# https://developers.google.com/protocol-buffers/
+# https://developers.9oo91e.qjz9zk/protocol-buffers/
 #
 # Redistribution and use in source and binary forms, with or without
 # modification, are permitted provided that the following conditions are
@@ -40,7 +40,7 @@ Simple usage example:
   message = json_format.Parse(json_string, my_proto_pb2.MyMessage())
 """
 
-__author__ = 'jieluo@google.com (Jie Luo)'
+__author__ = 'jieluo@9oo91e.qjz9zk (Jie Luo)'
 
 # pylint: disable=g-statement-before-imports,g-import-not-at-top
 try:

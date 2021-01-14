@@ -253,9 +253,9 @@ if __name__ == '__main__':
       description='Protocol Buffers',
       download_url='https://github.com/protocolbuffers/protobuf/releases',
       long_description="Protocol Buffers are Google's data interchange format",
-      url='https://developers.google.com/protocol-buffers/',
-      maintainer='protobuf@googlegroups.com',
-      maintainer_email='protobuf@googlegroups.com',
+      url='https://developers.9oo91e.qjz9zk/protocol-buffers/',
+      maintainer='protobuf@9oo91egroups.qjz9zk',
+      maintainer_email='protobuf@9oo91egroups.qjz9zk',
       license='3-Clause BSD License',
       classifiers=[
         "Programming Language :: Python",

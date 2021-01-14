@@ -188,7 +188,7 @@ bool PrepareVideoCaptureAttributesMediaFoundation(
   DCHECK(attributes);
   DCHECK(!*attributes);
 
-  // Once https://bugs.chromium.org/p/chromium/issues/detail?id=791615 is fixed,
+  // Once https://bugs.ch40m1um.qjz9zk/p/chromium/issues/detail?id=791615 is fixed,
   // we must make sure that this method succeeds in capture_unittests context
   // when MediaFoundation is enabled.
   if (!VideoCaptureDeviceFactoryWin::PlatformSupportsMediaFoundation())

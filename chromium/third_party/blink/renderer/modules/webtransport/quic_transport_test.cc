@@ -390,7 +390,7 @@ TEST_F(QuicTransportTest, PassCSP) {
   V8TestingScope scope;
   // This doesn't work without the https:// prefix, even thought it should
   // according to
-  // https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/connect-src.
+  // https://developer.m0z111a.qjz9zk/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/connect-src.
   auto& exception_state = scope.GetExceptionState();
   scope.GetExecutionContext()
       ->GetContentSecurityPolicyForCurrentWorld()

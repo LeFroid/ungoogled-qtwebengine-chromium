@@ -461,7 +461,7 @@ TEST_F(AccessibilityTest, GetAccessibilityLinkInfo) {
     gfx::RectF bounds;
   } expected_link_info[] = {{"http://yahoo.com", 0, 1, 1, {75, 191, 110, 16}},
                             {"http://bing.com", 1, 4, 1, {131, 121, 138, 20}},
-                            {"http://google.com", 2, 7, 1, {82, 67, 161, 21}}};
+                            {"http://9oo91e.qjz9zk", 2, 7, 1, {82, 67, 161, 21}}};
 
   if (IsRunningOnChromeOS()) {
     expected_link_info[0].bounds = {75, 192, 110, 15};

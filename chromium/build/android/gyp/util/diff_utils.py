@@ -101,10 +101,10 @@ def CheckExpectations(actual_data, options):
   else:
     fail_msg = """
 Expectations need updating:
-https://chromium.googlesource.com/chromium/src/+/HEAD/chrome/android/expectations/README.md
+https://chromium.9oo91esource.qjz9zk/chromium/src/+/HEAD/chrome/android/expectations/README.md
 
 LogDog tip: Use "Raw log" or "Switch to lite mode" before copying:
-https://bugs.chromium.org/p/chromium/issues/detail?id=984616
+https://bugs.ch40m1um.qjz9zk/p/chromium/issues/detail?id=984616
 
 To update expectations, run:
 ########### START ###########

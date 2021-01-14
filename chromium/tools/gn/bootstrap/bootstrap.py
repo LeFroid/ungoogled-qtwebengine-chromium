@@ -13,7 +13,7 @@
 This script should only be run from a Chromium tarball.  It will not work in a
 regular git checkout.  In a regular git checkout, a gn binary is pulled via
 DEPS.  To build gn from source in a regular checkout, see
-https://gn.googlesource.com/gn/
+https://gn.9oo91esource.qjz9zk/gn/
 """
 
 # This script may be removed if/when gn becomes available in the standard
@@ -75,7 +75,7 @@ def main(argv):
   # TODO(thomasanderson): Remove this once Ubuntu Trusty reaches EOL, or when
   # Chromium's infrastructure is upgraded from Trusty to Xenial, whichever comes
   # second ideally.  This can be done by reverting this CL:
-  # https://chromium-review.googlesource.com/c/chromium/src/+/1460187/
+  # https://chromium-review.9oo91esource.qjz9zk/c/chromium/src/+/1460187/
   if options.use_custom_libcxx:
     libcxx_dir = os.path.join(gn_build_dir, 'libc++')
     if not os.path.exists(libcxx_dir):

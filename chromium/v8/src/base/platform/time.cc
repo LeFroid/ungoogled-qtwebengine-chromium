@@ -134,7 +134,7 @@ V8_INLINE uint64_t QPCNowRaw() {
   LARGE_INTEGER perf_counter_now = {};
   // According to the MSDN documentation for QueryPerformanceCounter(), this
   // will never fail on systems that run XP or later.
-  // https://msdn.microsoft.com/library/windows/desktop/ms644904.aspx
+  // https://msdn.m1cr050ft.qjz9zk/library/windows/desktop/ms644904.aspx
   BOOL result = ::QueryPerformanceCounter(&perf_counter_now);
   DCHECK(result);
   USE(result);
@@ -873,7 +873,7 @@ double ThreadTicks::TSCTicksPerSecond() {
   //   stddev of less than 1 tick/us between multiple runs.
   // Note: According to the MSDN documentation for QueryPerformanceFrequency(),
   //   this will never fail on systems that run XP or later.
-  //   https://msdn.microsoft.com/library/windows/desktop/ms644905.aspx
+  //   https://msdn.m1cr050ft.qjz9zk/library/windows/desktop/ms644905.aspx
   LARGE_INTEGER perf_counter_frequency = {};
   ::QueryPerformanceFrequency(&perf_counter_frequency);
   DCHECK_GE(perf_counter_now, perf_counter_initial);

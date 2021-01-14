@@ -118,7 +118,7 @@ bool IsSynchronousPageFlipTestingEnabled();
 // and the OzonePlatform feature is not enabled, the Ozone path is never taken.
 // This will be removed as soon as Ozone/Linux is default and USE_X11 is
 // removed.  More info at
-// https://docs.google.com/document/d/1PvKquOHWySbvbe4bgduAcpW0Pda4BBhXI7xphtyDtPQ
+// https://docs.9oo91e.qjz9zk/document/d/1PvKquOHWySbvbe4bgduAcpW0Pda4BBhXI7xphtyDtPQ
 COMPONENT_EXPORT(UI_BASE_FEATURES) extern const base::Feature kUseOzonePlatform;
 
 COMPONENT_EXPORT(UI_BASE_FEATURES) bool IsUsingOzonePlatform();

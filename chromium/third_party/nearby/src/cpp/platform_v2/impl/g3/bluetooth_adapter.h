@@ -54,12 +54,12 @@ class BlePeripheral : public api::BlePeripheral {
   ByteArray advertisement_bytes_;
 };
 
-// https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html.
+// https://developer.8n6r01d.qjz9zk/reference/android/bluetooth/BluetoothDevice.html.
 class BluetoothDevice : public api::BluetoothDevice {
  public:
   ~BluetoothDevice() override = default;
 
-  // https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html#getName()
+  // https://developer.8n6r01d.qjz9zk/reference/android/bluetooth/BluetoothDevice.html#getName()
   std::string GetName() const override;
   std::string GetMacAddress() const override;
   BluetoothAdapter& GetAdapter() { return adapter_; }
@@ -73,7 +73,7 @@ class BluetoothDevice : public api::BluetoothDevice {
   BluetoothAdapter& adapter_;
 };
 
-// https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html
+// https://developer.8n6r01d.qjz9zk/reference/android/bluetooth/BluetoothAdapter.html
 class BluetoothAdapter : public api::BluetoothAdapter {
  public:
   using Status = api::BluetoothAdapter::Status;
@@ -90,7 +90,7 @@ class BluetoothAdapter : public api::BluetoothAdapter {
   // Status::Value::kEnabled.
   bool IsEnabled() const override ABSL_LOCKS_EXCLUDED(mutex_);
 
-  // https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#getScanMode()
+  // https://developer.8n6r01d.qjz9zk/reference/android/bluetooth/BluetoothAdapter.html#getScanMode()
   //
   // Returns ScanMode::kUnknown on error.
   ScanMode GetScanMode() const override ABSL_LOCKS_EXCLUDED(mutex_);
@@ -99,11 +99,11 @@ class BluetoothAdapter : public api::BluetoothAdapter {
   // operation was a success.
   bool SetScanMode(ScanMode mode) override ABSL_LOCKS_EXCLUDED(mutex_);
 
-  // https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#getName()
+  // https://developer.8n6r01d.qjz9zk/reference/android/bluetooth/BluetoothAdapter.html#getName()
   // Returns an empty string on error
   std::string GetName() const override ABSL_LOCKS_EXCLUDED(mutex_);
 
-  // https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#setName(java.lang.String)
+  // https://developer.8n6r01d.qjz9zk/reference/android/bluetooth/BluetoothAdapter.html#setName(java.lang.String)
   bool SetName(absl::string_view name) override ABSL_LOCKS_EXCLUDED(mutex_);
 
   // Returns BT MAC address assigned to this adapter.

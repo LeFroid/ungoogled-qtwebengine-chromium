@@ -13,13 +13,13 @@ TEST_SUFFIX_OBSOLETION_XML_CONTENT = """
 <histogram-configuration>
 <histograms>
   <histogram name="Test.Test1" units="units" expires_after="2019-01-01">
-    <owner>chrome-metrics-team@google.com</owner>
+    <owner>chrome-metrics-team@9oo91e.qjz9zk</owner>
     <summary>
       Sample description.
     </summary>
   </histogram>
   <histogram name="Test.Test2" units="units" expires_after="2019-01-01">
-    <owner>chrome-metrics-team@google.com</owner>
+    <owner>chrome-metrics-team@9oo91e.qjz9zk</owner>
     <summary>
       Sample description.
     </summary>
@@ -67,14 +67,14 @@ TEST_BASE_HISTOGRAM_XML_CONTENT = """
 <histograms>
   <histogram base="true" name="Test.Base" units="units"
       expires_after="2211-11-22">
-    <owner>chrome-metrics-team@google.com</owner>
+    <owner>chrome-metrics-team@9oo91e.qjz9zk</owner>
     <summary>
       Base histogram.
     </summary>
   </histogram>
   <histogram base="true" name="Test.Base.Obsolete" units="units"
       expires_after="2019-01-01">
-    <owner>chrome-metrics-team@google.com</owner>
+    <owner>chrome-metrics-team@9oo91e.qjz9zk</owner>
     <summary>
       Obsolete base histogram.
     </summary>
@@ -84,14 +84,14 @@ TEST_BASE_HISTOGRAM_XML_CONTENT = """
   </histogram>
   <histogram base="false" name="Test.NotBase.Explicit" units="units"
       expires_after="2019-01-01">
-    <owner>chrome-metrics-team@google.com</owner>
+    <owner>chrome-metrics-team@9oo91e.qjz9zk</owner>
     <summary>
       Not a base histogram: base attribute explicitly set to "false".
     </summary>
   </histogram>
   <histogram name="Test.NotBase.Implicit" units="units"
       expires_after="M100">
-    <owner>chrome-metrics-team@google.com</owner>
+    <owner>chrome-metrics-team@9oo91e.qjz9zk</owner>
     <summary>
       Not a base histogram: no base attribute specified.
     </summary>
@@ -122,7 +122,7 @@ TEST_HISTOGRAM_WITH_TOKENS = """
 <histogram-configuration>
 <histograms>
 <histogram name="HistogramName.{Color}{Size}" expires_after="2017-10-16">
-  <owner>me@chromium.org</owner>
+  <owner>me@ch40m1um.qjz9zk</owner>
   <summary>
     This is a histogram for button of {Color} color and {Size} size.
   </summary>
@@ -133,13 +133,13 @@ TEST_HISTOGRAM_WITH_TOKENS = """
       </obsolete>
     </variant>
     <variant name="green">
-      <owner>green@chromium.org</owner>
+      <owner>green@ch40m1um.qjz9zk</owner>
     </variant>
   </token>
   <token key="Size">
     <variant name="" summary="all"/>
     <variant name=".small" summary="small">
-      <owner>small@chromium.org</owner>
+      <owner>small@ch40m1um.qjz9zk</owner>
       <obsolete>
         Obsolete small
       </obsolete>
@@ -158,7 +158,7 @@ TEST_HISTOGRAM_WITH_VARIANTS = """
 <variants name="HistogramNameSize">
   <variant name="" summary="all"/>
   <variant name=".small" summary="small">
-    <owner>small@chromium.org</owner>
+    <owner>small@ch40m1um.qjz9zk</owner>
     <obsolete>
       Obsolete small
     </obsolete>
@@ -168,7 +168,7 @@ TEST_HISTOGRAM_WITH_VARIANTS = """
 </variants>
 
 <histogram name="HistogramName.{Color}{Size}" expires_after="2017-10-16">
-  <owner>me@chromium.org</owner>
+  <owner>me@ch40m1um.qjz9zk</owner>
   <summary>
     This is a histogram for button of {Color} color and {Size} size.
   </summary>
@@ -179,7 +179,7 @@ TEST_HISTOGRAM_WITH_VARIANTS = """
       </obsolete>
     </variant>
     <variant name="green">
-      <owner>green@chromium.org</owner>
+      <owner>green@ch40m1um.qjz9zk</owner>
     </variant>
   </token>
   <token key="Size" variants="HistogramNameSize"/>
@@ -193,7 +193,7 @@ TEST_HISTOGRAM_TOKENS_DUPLICATE = """
 <histograms>
 <histogram name="Histogram{Color}{Size}" units="things"
     expires_after="2017-10-16">
-  <owner>me@chromium.org</owner>
+  <owner>me@ch40m1um.qjz9zk</owner>
   <summary>
     This is a histogram for button of {Color} color and {Size} size.
   </summary>
@@ -227,7 +227,7 @@ TEST_HISTOGRAM_VARIANTS_DUPLICATE = """
 <histograms>
 <histogram name="Histogram{Color}{Size}" units="things"
     expires_after="2017-10-16">
-  <owner>me@chromium.org</owner>
+  <owner>me@ch40m1um.qjz9zk</owner>
   <summary>
     This is a histogram for button of {Color} color and {Size} size.
   </summary>
@@ -319,7 +319,7 @@ class ExtractHistogramsTest(unittest.TestCase):
 <histograms>
 
 <histogram name="Histogram.Name" units="units" {}>
-  <owner>SomeOne@google.com</owner>
+  <owner>SomeOne@9oo91e.qjz9zk</owner>
   <summary>Summary</summary>
 </histogram>
 
@@ -374,7 +374,7 @@ class ExtractHistogramsTest(unittest.TestCase):
 <histograms>
 
 <histogram name="Histogram.Name" units="units" {}>
-  <owner>SomeOne@google.com</owner>
+  <owner>SomeOne@9oo91e.qjz9zk</owner>
   <summary>Summary</summary>
 </histogram>
 
@@ -412,7 +412,7 @@ class ExtractHistogramsTest(unittest.TestCase):
 <histograms>
   <histogram name="MultiParagraphTest.Test1" units="units"
       expires_after="2019-01-01">
-    <owner>chrome-metrics-team@google.com</owner>
+    <owner>chrome-metrics-team@9oo91e.qjz9zk</owner>
     <summary>
       Sample description
       Sample description.
@@ -421,7 +421,7 @@ class ExtractHistogramsTest(unittest.TestCase):
 
   <histogram name="MultiParagraphTest.Test2" units="units"
       expires_after="2019-01-01">
-    <owner>chrome-metrics-team@google.com</owner>
+    <owner>chrome-metrics-team@9oo91e.qjz9zk</owner>
     <summary>
       Multi-paragraph sample description UI&gt;Browser.
       Words.
@@ -450,7 +450,7 @@ class ExtractHistogramsTest(unittest.TestCase):
 <histogram-configuration>
 <histograms>
  <histogram name="Test.Histogram" units="things" expires_after="2019-01-01">
-   <owner>person@chromium.org</owner>
+   <owner>person@ch40m1um.qjz9zk</owner>
  </histogram>
 </histograms>
 </histogram-configuration>
@@ -464,7 +464,7 @@ class ExtractHistogramsTest(unittest.TestCase):
 <histogram-configuration>
 <histograms>
  <histogram name="Test.Histogram" units="things" expires_after="2019-01-01">
-   <owner>person@chromium.org</owner>
+   <owner>person@ch40m1um.qjz9zk</owner>
    <summary/>
  </histogram>
 </histograms>
@@ -479,7 +479,7 @@ class ExtractHistogramsTest(unittest.TestCase):
 <histogram-configuration>
 <histograms>
  <histogram name="Test.Histogram" expires_after="2019-01-01">
-  <owner>chrome-metrics-team@google.com</owner>
+  <owner>chrome-metrics-team@9oo91e.qjz9zk</owner>
   <summary> This is a summary </summary>
  </histogram>
 </histograms>
@@ -495,7 +495,7 @@ class ExtractHistogramsTest(unittest.TestCase):
 <histograms>
  <histogram name="Test.Histogram" enum="MyEnumType" unit="things"
     expires_after="2019-01-01">
-  <owner>chrome-metrics-team@google.com</owner>
+  <owner>chrome-metrics-team@9oo91e.qjz9zk</owner>
   <summary> This is a summary </summary>
  </histogram>
 </histograms>
@@ -519,7 +519,7 @@ class ExtractHistogramsTest(unittest.TestCase):
 <histograms>
  <histogram name="Test.Histogram.Enum" enum="MyEnumType"
     expires_after="2019-01-01">
-  <owner>chrome-metrics-team@google.com</owner>
+  <owner>chrome-metrics-team@9oo91e.qjz9zk</owner>
   <summary> This is a summary </summary>
  </histogram>
 </histograms>
@@ -534,7 +534,7 @@ class ExtractHistogramsTest(unittest.TestCase):
 <histogram-configuration>
 <histograms>
  <histogram name="Test.Histogram" units="units" expires_after="2019-01-01">
-  <owner>chrome-metrics-team@google.com</owner>
+  <owner>chrome-metrics-team@9oo91e.qjz9zk</owner>
   <summary> This is a summary </summary>
  </histogram>
 </histograms>
@@ -578,7 +578,7 @@ class ExtractHistogramsTest(unittest.TestCase):
 <histogram-configuration>
 <histograms>
  <histogram name="Test.Histogram" units="things" expires_after="2019-01-01">
-  <owner>cait@chromium.org, paul@chromium.org</owner>
+  <owner>cait@ch40m1um.qjz9zk, paul@ch40m1um.qjz9zk</owner>
   <summary> This is a summary </summary>
  </histogram>
 </histograms>
@@ -743,21 +743,21 @@ class ExtractHistogramsTest(unittest.TestCase):
     histograms_dict, _ = extract_histograms._UpdateHistogramsWithTokens(
         histograms_dict)
 
-    self.assertEqual(['small@chromium.org'],
+    self.assertEqual(['small@ch40m1um.qjz9zk'],
                      histograms_dict['HistogramName.red.small']['owners'])
-    self.assertEqual(['me@chromium.org'],
+    self.assertEqual(['me@ch40m1um.qjz9zk'],
                      histograms_dict['HistogramName.red.medium']['owners'])
-    self.assertEqual(['me@chromium.org'],
+    self.assertEqual(['me@ch40m1um.qjz9zk'],
                      histograms_dict['HistogramName.red.large']['owners'])
-    self.assertEqual(['me@chromium.org'],
+    self.assertEqual(['me@ch40m1um.qjz9zk'],
                      histograms_dict['HistogramName.red']['owners'])
-    self.assertEqual(['green@chromium.org', 'small@chromium.org'],
+    self.assertEqual(['green@ch40m1um.qjz9zk', 'small@ch40m1um.qjz9zk'],
                      histograms_dict['HistogramName.green.small']['owners'])
-    self.assertEqual(['green@chromium.org'],
+    self.assertEqual(['green@ch40m1um.qjz9zk'],
                      histograms_dict['HistogramName.green.medium']['owners'])
-    self.assertEqual(['green@chromium.org'],
+    self.assertEqual(['green@ch40m1um.qjz9zk'],
                      histograms_dict['HistogramName.green.large']['owners'])
-    self.assertEqual(['green@chromium.org'],
+    self.assertEqual(['green@ch40m1um.qjz9zk'],
                      histograms_dict['HistogramName.green']['owners'])
 
   @parameterized.expand([
@@ -807,7 +807,7 @@ class ExtractHistogramsTest(unittest.TestCase):
 <histograms>
 <histogram name="Histogram{Color}{SizeNone}" units="things"
     expires_after="2017-10-16">
-  <owner>me@chromium.org</owner>
+  <owner>me@ch40m1um.qjz9zk</owner>
   <summary>
     This is a histogram for button of {Color} color and {SizeNone} size.
   </summary>

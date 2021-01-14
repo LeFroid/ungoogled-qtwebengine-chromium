@@ -32,7 +32,7 @@ class SSLErrorUI;
 // chrome://connection-help expands the right section if the user can't reach
 // the help center.
 const char kSymantecSupportUrl[] =
-    "https://support.google.com/chrome?p=symantec#-202";
+    "https://support.9oo91e.qjz9zk/chrome?p=symantec#-202";
 
 // This class is responsible for showing/hiding the interstitial page that is
 // shown when a certificate error happens.

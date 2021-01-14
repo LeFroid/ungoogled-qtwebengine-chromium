@@ -33,7 +33,7 @@ class DummyModuleElement extends PolymerElement {
           {
             label: 'item1',
             value: 'foo',
-            imageUrl: 'https://lh4.googleusercontent.com/proxy/' +
+            imageUrl: 'https://lh4.9oo91eusercontent.qjz9zk/proxy/' +
                 'kFIJNnm2DMbS3B5LXaIdm2JKI6twGWwmzQbcJCfqTfuaH_' +
                 'ULD50v1Z3BGPEF32xTPRvgGLx492zcy_kcatCde2wmz-9Z' +
                 'YFqifbJRMl2DzyE=w170-h85-p-k-no-nd-mv',
@@ -41,7 +41,7 @@ class DummyModuleElement extends PolymerElement {
           {
             label: 'item2',
             value: 'bar',
-            imageUrl: 'https://lh6.googleusercontent.com/proxy/' +
+            imageUrl: 'https://lh6.9oo91eusercontent.qjz9zk/proxy/' +
                 'KyyCsF6dIQ783r3Znmvdo76QY2RgzcR5t4rnA5kKjsmrlp' +
                 'sb_pWGndQkyuAI4mv68X_9ZX2Edd-0FP4iQZRFm8UAW3oD' +
                 'X8Coqk3C85UNAX3H4Eh_5wGyDB0SY6HOQjOXVQ=w170-h85-p-k-no-nd-mv',
@@ -49,7 +49,7 @@ class DummyModuleElement extends PolymerElement {
           {
             label: 'item3',
             value: 'baz',
-            imageUrl: 'https://lh6.googleusercontent.com/proxy/' +
+            imageUrl: 'https://lh6.9oo91eusercontent.qjz9zk/proxy/' +
                 '4IP40Q18w6aDF4oS4WRnUj0MlCCKPK-vLHqSd4r-RfS6Jx' +
                 'gblG5WJuRYpkJkoTzLMS0qv3Sxhf9wdaKkn3vHnyy6oe7Ah' +
                 '5y0=w170-h85-p-k-no-nd-mv',
@@ -57,7 +57,7 @@ class DummyModuleElement extends PolymerElement {
           {
             label: 'item4',
             value: 'foo',
-            imageUrl: 'https://lh3.googleusercontent.com/proxy/' +
+            imageUrl: 'https://lh3.9oo91eusercontent.qjz9zk/proxy/' +
                 'd_4gDNBtm9Ddv8zqqm0MVY93_j-_e5M-bGgH-bSAfIR65F' +
                 'YGacJTemvNp9fDT0eiIbi3bzrf7HMMsupe2QIIfm5H7BMH' +
                 'Y3AI5rkYUpx-lQ=w170-h85-p-k-no-nd-mv',
@@ -65,7 +65,7 @@ class DummyModuleElement extends PolymerElement {
           {
             label: 'item5',
             value: 'bar',
-            imageUrl: 'https://lh5.googleusercontent.com/proxy/' +
+            imageUrl: 'https://lh5.9oo91eusercontent.qjz9zk/proxy/' +
                 'xvtq6_782kBajCBr0GISHpujOb51XLKUeEOJ2lLPKh12-x' +
                 'NBTCtsoHT14NQcaH9l4JhatcXEMBkqgUeCWhb3XhdLnD1B' +
                 'iNzQ_LVydwg=w170-h85-p-k-no-nd-mv',
@@ -73,7 +73,7 @@ class DummyModuleElement extends PolymerElement {
           {
             label: 'item6',
             value: 'baz',
-            imageUrl: 'https://lh6.googleusercontent.com/proxy/' +
+            imageUrl: 'https://lh6.9oo91eusercontent.qjz9zk/proxy/' +
                 'fUx750lchxFJb3f37v_-4iJPzcTKtJbd5LDRO7S9Xy7nkP' +
                 'zh7HFU61tN36j4Diaa9Yk3K7kWshRwmqcrulnhbeJrRpIn' +
                 '79PjHN-N=w170-h85-p-k-no-nd-mv',

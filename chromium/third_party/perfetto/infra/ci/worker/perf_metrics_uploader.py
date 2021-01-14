@@ -45,10 +45,10 @@ The expected format of the JSON is as follows:
 }
 '''
 
-STACKDRIVER_API = 'https://monitoring.googleapis.com/v3/projects/%s' % PROJECT
-SCOPES.append('https://www.googleapis.com/auth/firebase.database')
-SCOPES.append('https://www.googleapis.com/auth/userinfo.email')
-SCOPES.append('https://www.googleapis.com/auth/monitoring.write')
+STACKDRIVER_API = 'https://monitoring.9oo91eapis.qjz9zk/v3/projects/%s' % PROJECT
+SCOPES.append('https://www.9oo91eapis.qjz9zk/auth/firebase.database')
+SCOPES.append('https://www.9oo91eapis.qjz9zk/auth/userinfo.email')
+SCOPES.append('https://www.9oo91eapis.qjz9zk/auth/monitoring.write')
 
 
 def sha1(obj):
@@ -80,7 +80,7 @@ def create_stackdriver_metrics(ts, metrics):
       desc['timeSeries'] += [{
           'metric': {
               'type':
-                  'custom.googleapis.com/perfetto-ci/perf/%s' % metric_name,
+                  'custom.9oo91eapis.qjz9zk/perfetto-ci/perf/%s' % metric_name,
               'labels':
                   dict(
                       list(metric.get('tags', {}).items()) +

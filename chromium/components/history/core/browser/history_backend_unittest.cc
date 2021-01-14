@@ -501,7 +501,7 @@ class InMemoryHistoryBackendTest : public HistoryBackendTestBase {
   }
 
   static URLRow CreateTestTypedURL() {
-    URLRow url_row(GURL("https://www.google.com/"));
+    URLRow url_row(GURL("https://www.9oo91e.qjz9zk/"));
     url_row.set_id(10);
     url_row.set_title(base::UTF8ToUTF16("Google Search"));
     url_row.set_typed_count(1);
@@ -511,7 +511,7 @@ class InMemoryHistoryBackendTest : public HistoryBackendTestBase {
   }
 
   static URLRow CreateAnotherTestTypedURL() {
-    URLRow url_row(GURL("https://maps.google.com/"));
+    URLRow url_row(GURL("https://maps.9oo91e.qjz9zk/"));
     url_row.set_id(20);
     url_row.set_title(base::UTF8ToUTF16("Google Maps"));
     url_row.set_typed_count(2);
@@ -521,7 +521,7 @@ class InMemoryHistoryBackendTest : public HistoryBackendTestBase {
   }
 
   static URLRow CreateTestNonTypedURL() {
-    URLRow url_row(GURL("https://news.google.com/"));
+    URLRow url_row(GURL("https://news.9oo91e.qjz9zk/"));
     url_row.set_id(30);
     url_row.set_title(base::UTF8ToUTF16("Google News"));
     url_row.set_visit_count(5);
@@ -564,8 +564,8 @@ TEST_F(HistoryBackendTest, DeleteAll) {
   // adding favicon1. This is so that favicon1 one gets ID 2 autoassigned to
   // the database, which will change when the other one is deleted. This way
   // we can test that updating works properly.
-  GURL favicon_url1("http://www.google.com/favicon.ico");
-  GURL favicon_url2("http://news.google.com/favicon.ico");
+  GURL favicon_url1("http://www.9oo91e.qjz9zk/favicon.ico");
+  GURL favicon_url2("http://news.9oo91e.qjz9zk/favicon.ico");
   favicon_base::FaviconID favicon2 =
       favicon_db()->AddFavicon(favicon_url2, IconType::kFavicon);
   favicon_base::FaviconID favicon1 =
@@ -591,13 +591,13 @@ TEST_F(HistoryBackendTest, DeleteAll) {
       base::Time::Now(), kLargeSize));
 
   // First visit two URLs.
-  URLRow row1(GURL("http://www.google.com/"));
+  URLRow row1(GURL("http://www.9oo91e.qjz9zk/"));
   row1.set_visit_count(2);
   row1.set_typed_count(1);
   row1.set_last_visit(base::Time::Now());
   favicon_db()->AddIconMapping(row1.url(), favicon1);
 
-  URLRow row2(GURL("http://news.google.com/"));
+  URLRow row2(GURL("http://news.9oo91e.qjz9zk/"));
   row2.set_visit_count(1);
   row2.set_last_visit(base::Time::Now());
   favicon_db()->AddIconMapping(row2.url(), favicon2);
@@ -702,8 +702,8 @@ TEST_F(HistoryBackendTest, DeleteAll) {
 TEST_F(HistoryBackendTest, DeleteAllURLPreviouslyDeleted) {
   ASSERT_TRUE(backend_.get());
 
-  GURL kPageURL("http://www.google.com");
-  GURL kFaviconURL("http://www.google.com/favicon.ico");
+  GURL kPageURL("http://www.9oo91e.qjz9zk");
+  GURL kFaviconURL("http://www.9oo91e.qjz9zk/favicon.ico");
 
   // Setup: Add visit for |kPageURL|.
   URLRow row(kPageURL);
@@ -756,7 +756,7 @@ TEST_F(HistoryBackendTest, DeleteAllThenAddData) {
   ASSERT_TRUE(backend_.get());
 
   base::Time visit_time = base::Time::Now();
-  GURL url("http://www.google.com/");
+  GURL url("http://www.9oo91e.qjz9zk/");
   HistoryAddPageArgs request(url, visit_time, nullptr, 0, GURL(),
                              history::RedirectList(),
                              ui::PAGE_TRANSITION_KEYWORD_GENERATED, false,
@@ -797,8 +797,8 @@ TEST_F(HistoryBackendTest, DeleteAllThenAddData) {
 }
 
 TEST_F(HistoryBackendTest, URLsNoLongerBookmarked) {
-  GURL favicon_url1("http://www.google.com/favicon.ico");
-  GURL favicon_url2("http://news.google.com/favicon.ico");
+  GURL favicon_url1("http://www.9oo91e.qjz9zk/favicon.ico");
+  GURL favicon_url2("http://news.9oo91e.qjz9zk/favicon.ico");
 
   std::vector<unsigned char> data;
   data.push_back('1');
@@ -812,13 +812,13 @@ TEST_F(HistoryBackendTest, URLsNoLongerBookmarked) {
       FaviconBitmapType::ON_VISIT, base::Time::Now(), gfx::Size());
 
   // First visit two URLs.
-  URLRow row1(GURL("http://www.google.com/"));
+  URLRow row1(GURL("http://www.9oo91e.qjz9zk/"));
   row1.set_visit_count(2);
   row1.set_typed_count(1);
   row1.set_last_visit(base::Time::Now());
   EXPECT_TRUE(favicon_db()->AddIconMapping(row1.url(), favicon1));
 
-  URLRow row2(GURL("http://news.google.com/"));
+  URLRow row2(GURL("http://news.9oo91e.qjz9zk/"));
   row2.set_visit_count(1);
   row2.set_last_visit(base::Time::Now());
   EXPECT_TRUE(favicon_db()->AddIconMapping(row2.url(), favicon2));
@@ -887,7 +887,7 @@ TEST_F(HistoryBackendTest, URLsNoLongerBookmarked) {
 TEST_F(HistoryBackendTest, KeywordGenerated) {
   ASSERT_TRUE(backend_.get());
 
-  GURL url("http://google.com");
+  GURL url("http://9oo91e.qjz9zk");
 
   base::Time visit_time = base::Time::Now() - base::TimeDelta::FromDays(1);
   HistoryAddPageArgs request(url, visit_time, nullptr, 0, GURL(),
@@ -952,20 +952,20 @@ TEST_F(HistoryBackendTest, ClientRedirect) {
   int transition2;
 
   // Initial transition to page A.
-  GURL url_a("http://google.com/a");
+  GURL url_a("http://9oo91e.qjz9zk/a");
   AddClientRedirect(GURL(), url_a, false, base::Time(),
                     &transition1, &transition2);
   EXPECT_TRUE(transition2 & ui::PAGE_TRANSITION_CHAIN_END);
 
   // User initiated redirect to page B.
-  GURL url_b("http://google.com/b");
+  GURL url_b("http://9oo91e.qjz9zk/b");
   AddClientRedirect(url_a, url_b, false, base::Time(),
                     &transition1, &transition2);
   EXPECT_TRUE(transition1 & ui::PAGE_TRANSITION_CHAIN_END);
   EXPECT_TRUE(transition2 & ui::PAGE_TRANSITION_CHAIN_END);
 
   // Non-user initiated redirect to page C.
-  GURL url_c("http://google.com/c");
+  GURL url_c("http://9oo91e.qjz9zk/c");
   AddClientRedirect(url_b, url_c, true, base::Time(),
                     &transition1, &transition2);
   EXPECT_FALSE(transition1 & ui::PAGE_TRANSITION_CHAIN_END);
@@ -976,17 +976,17 @@ TEST_F(HistoryBackendTest, AddPagesWithDetails) {
   ASSERT_TRUE(backend_.get());
 
   // Import one non-typed URL, and two recent and one expired typed URLs.
-  URLRow row1(GURL("https://news.google.com/"));
+  URLRow row1(GURL("https://news.9oo91e.qjz9zk/"));
   row1.set_visit_count(1);
   row1.set_last_visit(base::Time::Now());
-  URLRow row2(GURL("https://www.google.com/"));
+  URLRow row2(GURL("https://www.9oo91e.qjz9zk/"));
   row2.set_typed_count(1);
   row2.set_last_visit(base::Time::Now());
-  URLRow row3(GURL("https://mail.google.com/"));
+  URLRow row3(GURL("https://mail.9oo91e.qjz9zk/"));
   row3.set_visit_count(1);
   row3.set_typed_count(1);
   row3.set_last_visit(base::Time::Now() - base::TimeDelta::FromDays(7 - 1));
-  URLRow row4(GURL("https://maps.google.com/"));
+  URLRow row4(GURL("https://maps.9oo91e.qjz9zk/"));
   row4.set_visit_count(1);
   row4.set_typed_count(1);
   row4.set_last_visit(base::Time::Now() - base::TimeDelta::FromDays(365 + 2));
@@ -1035,13 +1035,13 @@ TEST_F(HistoryBackendTest, UpdateURLs) {
   ASSERT_TRUE(backend_.get());
 
   // Add three pages directly to the database.
-  URLRow row1(GURL("https://news.google.com/"));
+  URLRow row1(GURL("https://news.9oo91e.qjz9zk/"));
   row1.set_visit_count(1);
   row1.set_last_visit(base::Time::Now());
-  URLRow row2(GURL("https://maps.google.com/"));
+  URLRow row2(GURL("https://maps.9oo91e.qjz9zk/"));
   row2.set_visit_count(2);
   row2.set_last_visit(base::Time::Now());
-  URLRow row3(GURL("https://www.google.com/"));
+  URLRow row3(GURL("https://www.9oo91e.qjz9zk/"));
   row3.set_visit_count(3);
   row3.set_last_visit(base::Time::Now());
 
@@ -1104,10 +1104,10 @@ TEST_F(HistoryBackendTest, SetPageTitleFiresNotificationWithCorrectDetails) {
   ASSERT_TRUE(backend_.get());
 
   // Add two pages, then change the title of the second one.
-  URLRow row1(GURL("https://news.google.com/"));
+  URLRow row1(GURL("https://news.9oo91e.qjz9zk/"));
   row1.set_typed_count(1);
   row1.set_last_visit(base::Time::Now());
-  URLRow row2(GURL("https://www.google.com/"));
+  URLRow row2(GURL("https://www.9oo91e.qjz9zk/"));
   row2.set_visit_count(2);
   row2.set_last_visit(base::Time::Now());
 
@@ -1137,19 +1137,19 @@ TEST_F(HistoryBackendTest, SetPageTitleFiresNotificationWithCorrectDetails) {
 TEST_F(HistoryBackendTest, ImportedFaviconsTest) {
   // Setup test data - two Urls in the history, one with favicon assigned and
   // one without.
-  GURL favicon_url1("http://www.google.com/favicon.ico");
+  GURL favicon_url1("http://www.9oo91e.qjz9zk/favicon.ico");
   std::vector<unsigned char> data;
   data.push_back('1');
   favicon_base::FaviconID favicon1 = favicon_db()->AddFavicon(
       favicon_url1, IconType::kFavicon,
       base::RefCountedBytes::TakeVector(&data), FaviconBitmapType::ON_VISIT,
       base::Time::Now(), gfx::Size());
-  URLRow row1(GURL("http://www.google.com/"));
+  URLRow row1(GURL("http://www.9oo91e.qjz9zk/"));
   row1.set_visit_count(1);
   row1.set_last_visit(base::Time::Now());
   EXPECT_TRUE(favicon_db()->AddIconMapping(row1.url(), favicon1));
 
-  URLRow row2(GURL("http://news.google.com/"));
+  URLRow row2(GURL("http://news.9oo91e.qjz9zk/"));
   row2.set_visit_count(1);
   row2.set_last_visit(base::Time::Now());
   URLRows rows;
@@ -1167,7 +1167,7 @@ TEST_F(HistoryBackendTest, ImportedFaviconsTest) {
   // a favicon.
   favicon_base::FaviconUsageDataList favicons;
   favicon_base::FaviconUsageData favicon;
-  favicon.favicon_url = GURL("http://news.google.com/favicon.ico");
+  favicon.favicon_url = GURL("http://news.9oo91e.qjz9zk/favicon.ico");
   favicon.png_data.push_back('2');
   favicon.urls.insert(row1.url());
   favicon.urls.insert(row2.url());
@@ -1191,9 +1191,9 @@ TEST_F(HistoryBackendTest, ImportedFaviconsTest) {
 
   // A URL should not be added to history (to store favicon), if
   // the URL is not bookmarked.
-  GURL url3("http://mail.google.com");
+  GURL url3("http://mail.9oo91e.qjz9zk");
   favicons.clear();
-  favicon.favicon_url = GURL("http://mail.google.com/favicon.ico");
+  favicon.favicon_url = GURL("http://mail.9oo91e.qjz9zk/favicon.ico");
   favicon.png_data.push_back('3');
   favicon.urls.insert(url3);
   favicons.push_back(favicon);
@@ -1212,8 +1212,8 @@ TEST_F(HistoryBackendTest, ImportedFaviconsTest) {
 TEST_F(HistoryBackendTest, StripUsernamePasswordTest) {
   ASSERT_TRUE(backend_.get());
 
-  GURL url("http://anyuser:anypass@www.google.com");
-  GURL stripped_url("http://www.google.com");
+  GURL url("http://anyuser:anypass@www.9oo91e.qjz9zk");
+  GURL stripped_url("http://www.9oo91e.qjz9zk");
 
   // Clear all history.
   backend_->DeleteAllHistory();
@@ -1234,7 +1234,7 @@ TEST_F(HistoryBackendTest, StripUsernamePasswordTest) {
 TEST_F(HistoryBackendTest, AddPageVisitBackForward) {
   ASSERT_TRUE(backend_.get());
 
-  GURL url("http://www.google.com");
+  GURL url("http://www.9oo91e.qjz9zk");
 
   // Clear all history.
   backend_->DeleteAllHistory();
@@ -1268,8 +1268,8 @@ TEST_F(HistoryBackendTest, AddPageVisitBackForward) {
 TEST_F(HistoryBackendTest, AddPageVisitRedirectBackForward) {
   ASSERT_TRUE(backend_.get());
 
-  GURL url1("http://www.google.com");
-  GURL url2("http://www.chromium.org");
+  GURL url1("http://www.9oo91e.qjz9zk");
+  GURL url2("http://www.ch40m1um.qjz9zk");
 
   // Clear all history.
   backend_->DeleteAllHistory();
@@ -1309,7 +1309,7 @@ TEST_F(HistoryBackendTest, AddPageVisitRedirectBackForward) {
 TEST_F(HistoryBackendTest, AddPageVisitSource) {
   ASSERT_TRUE(backend_.get());
 
-  GURL url("http://www.google.com");
+  GURL url("http://www.9oo91e.qjz9zk");
 
   // Clear all history.
   backend_->DeleteAllHistory();
@@ -1356,7 +1356,7 @@ TEST_F(HistoryBackendTest, AddPageVisitSource) {
 TEST_F(HistoryBackendTest, AddPageVisitNotLastVisit) {
   ASSERT_TRUE(backend_.get());
 
-  GURL url("http://www.google.com");
+  GURL url("http://www.9oo91e.qjz9zk");
 
   // Clear all history.
   backend_->DeleteAllHistory();
@@ -1390,8 +1390,8 @@ TEST_F(HistoryBackendTest, AddPageVisitNotLastVisit) {
 TEST_F(HistoryBackendTest, AddPageVisitFiresNotificationWithCorrectDetails) {
   ASSERT_TRUE(backend_.get());
 
-  GURL url1("http://www.google.com");
-  GURL url2("http://maps.google.com");
+  GURL url1("http://www.9oo91e.qjz9zk");
+  GURL url2("http://maps.9oo91e.qjz9zk");
 
   // Clear all history.
   backend_->DeleteAllHistory();
@@ -1691,10 +1691,10 @@ TEST_F(HistoryBackendTest, MigrationVisitSource) {
 // client redirects. In this case, a server-side redirect is followed by a
 // client-side one.
 TEST_F(HistoryBackendTest, RecentRedirectsForClientRedirects) {
-  GURL server_redirect_url("http://google.com/a");
-  GURL client_redirect_url("http://google.com/b");
-  GURL landing_url("http://google.com/c");
-  GURL clicked_url("http://google.com/d");
+  GURL server_redirect_url("http://9oo91e.qjz9zk/a");
+  GURL client_redirect_url("http://9oo91e.qjz9zk/b");
+  GURL landing_url("http://9oo91e.qjz9zk/c");
+  GURL clicked_url("http://9oo91e.qjz9zk/d");
 
   // Page A is browsed by user and server redirects to B.
   HistoryAddPageArgs request(
@@ -1727,10 +1727,10 @@ TEST_F(HistoryBackendTest, RecentRedirectsForClientRedirects) {
 // - Does not send a notification that the favicon for the icon URL has changed
 //   as there are no other page URLs which use the icon URL.
 TEST_F(HistoryBackendTest, FaviconChangedNotificationNewFavicon) {
-  GURL page_url1("http://www.google.com/a");
-  GURL icon_url1("http://www.google.com/favicon1.ico");
-  GURL page_url2("http://www.google.com/b");
-  GURL icon_url2("http://www.google.com/favicon2.ico");
+  GURL page_url1("http://www.9oo91e.qjz9zk/a");
+  GURL icon_url1("http://www.9oo91e.qjz9zk/favicon1.ico");
+  GURL page_url2("http://www.9oo91e.qjz9zk/b");
+  GURL icon_url2("http://www.9oo91e.qjz9zk/favicon2.ico");
 
   // SetFavicons()
   {
@@ -1762,8 +1762,8 @@ TEST_F(HistoryBackendTest, FaviconChangedNotificationNewFavicon) {
 // - Sends a notification that the favicon for the icon URL has changed (Several
 //   page URLs may be mapped to the icon URL).
 TEST_F(HistoryBackendTest, FaviconChangedNotificationBitmapDataChanged) {
-  GURL page_url("http://www.google.com");
-  GURL icon_url("http://www.google.com/favicon.ico");
+  GURL page_url("http://www.9oo91e.qjz9zk");
+  GURL icon_url("http://www.9oo91e.qjz9zk/favicon.ico");
 
   // Setup
   {
@@ -1802,12 +1802,12 @@ TEST_F(HistoryBackendTest, FaviconChangedNotificationBitmapDataChanged) {
 // - Sends a notification that the favicon for the page URL has changed.
 // - Does not send a notification that the favicon for the icon URL has changed.
 TEST_F(HistoryBackendTest, FaviconChangedNotificationIconMappingChanged) {
-  GURL page_url1("http://www.google.com/a");
-  GURL page_url2("http://www.google.com/b");
-  GURL page_url3("http://www.google.com/c");
-  GURL page_url4("http://www.google.com/d");
-  GURL icon_url1("http://www.google.com/favicon1.ico");
-  GURL icon_url2("http://www.google.com/favicon2.ico");
+  GURL page_url1("http://www.9oo91e.qjz9zk/a");
+  GURL page_url2("http://www.9oo91e.qjz9zk/b");
+  GURL page_url3("http://www.9oo91e.qjz9zk/c");
+  GURL page_url4("http://www.9oo91e.qjz9zk/d");
+  GURL icon_url1("http://www.9oo91e.qjz9zk/favicon1.ico");
+  GURL icon_url2("http://www.9oo91e.qjz9zk/favicon2.ico");
 
   SkBitmap bitmap(CreateBitmap(SK_ColorBLUE, kSmallEdgeSize));
   std::vector<SkBitmap> bitmaps;
@@ -1862,11 +1862,11 @@ TEST_F(HistoryBackendTest, FaviconChangedNotificationIconMappingChanged) {
 // sends notifications that the favicon for each page URL has changed.
 TEST_F(HistoryBackendTest,
        FaviconChangedNotificationIconMappingChangedForMultiplePages) {
-  GURL page_url1("http://www.google.com/a");
-  GURL page_url2("http://www.google.com/b");
-  GURL page_url3("http://www.google.com/c");
-  GURL page_url4("http://www.google.com/d");
-  GURL icon_url("http://www.google.com/favicon.ico");
+  GURL page_url1("http://www.9oo91e.qjz9zk/a");
+  GURL page_url2("http://www.9oo91e.qjz9zk/b");
+  GURL page_url3("http://www.9oo91e.qjz9zk/c");
+  GURL page_url4("http://www.9oo91e.qjz9zk/d");
+  GURL icon_url("http://www.9oo91e.qjz9zk/favicon.ico");
 
   SkBitmap bitmap(CreateBitmap(SK_ColorBLUE, kSmallEdgeSize));
   std::vector<SkBitmap> bitmaps;
@@ -1912,11 +1912,11 @@ TEST_F(HistoryBackendTest,
 // URL have changed.
 TEST_F(HistoryBackendTest,
        FaviconChangedNotificationIconMappingAndBitmapDataChanged) {
-  GURL page_url1("http://www.google.com/a");
-  GURL page_url2("http://www.google.com/b");
-  GURL page_url3("http://www.google.com/c");
-  GURL icon_url1("http://www.google.com/favicon1.ico");
-  GURL icon_url2("http://www.google.com/favicon2.ico");
+  GURL page_url1("http://www.9oo91e.qjz9zk/a");
+  GURL page_url2("http://www.9oo91e.qjz9zk/b");
+  GURL page_url3("http://www.9oo91e.qjz9zk/c");
+  GURL icon_url1("http://www.9oo91e.qjz9zk/favicon1.ico");
+  GURL icon_url2("http://www.9oo91e.qjz9zk/favicon2.ico");
 
   // Setup
   {
@@ -1965,10 +1965,10 @@ TEST_F(HistoryBackendTest,
 // another that a notification is sent that the favicon at the destination
 // icon URL has changed.
 TEST_F(HistoryBackendTest, FaviconChangedNotificationsMergeCopy) {
-  GURL page_url1("http://www.google.com/a");
-  GURL icon_url1("http://www.google.com/favicon1.ico");
-  GURL page_url2("http://www.google.com/b");
-  GURL icon_url2("http://www.google.com/favicon2.ico");
+  GURL page_url1("http://www.9oo91e.qjz9zk/a");
+  GURL icon_url1("http://www.9oo91e.qjz9zk/favicon1.ico");
+  GURL page_url2("http://www.9oo91e.qjz9zk/b");
+  GURL icon_url2("http://www.9oo91e.qjz9zk/favicon2.ico");
   std::vector<unsigned char> png_bytes1;
   png_bytes1.push_back('a');
   std::vector<unsigned char> png_bytes2;
@@ -2002,8 +2002,8 @@ TEST_F(HistoryBackendTest, FaviconChangedNotificationsMergeCopy) {
 // MergeFavicon() / UpdateFaviconMappingsAndFetch() did not alter the Favicon
 // database data (with the exception of the "last updated time").
 TEST_F(HistoryBackendTest, NoFaviconChangedNotifications) {
-  GURL page_url("http://www.google.com");
-  GURL icon_url("http://www.google.com/favicon.ico");
+  GURL page_url("http://www.9oo91e.qjz9zk");
+  GURL icon_url("http://www.9oo91e.qjz9zk/favicon.ico");
 
   SkBitmap bitmap(CreateBitmap(SK_ColorBLUE, kSmallEdgeSize));
   std::vector<SkBitmap> bitmaps;
@@ -2038,11 +2038,11 @@ TEST_F(HistoryBackendTest, NoFaviconChangedNotifications) {
 // Test that CloneFaviconMappingsForPages() propagates favicon mappings to the
 // provided pages and their redirects.
 TEST_F(HistoryBackendTest, CloneFaviconMappingsForPages) {
-  const GURL landing_page_url1("http://www.google.com/landing");
+  const GURL landing_page_url1("http://www.9oo91e.qjz9zk/landing");
   const GURL landing_page_url2("http://www.google.ca/landing");
-  const GURL redirecting_page_url1("http://www.google.com/redirect");
+  const GURL redirecting_page_url1("http://www.9oo91e.qjz9zk/redirect");
   const GURL redirecting_page_url2("http://www.google.ca/redirect");
-  const GURL icon_url("http://www.google.com/icon.png");
+  const GURL icon_url("http://www.9oo91e.qjz9zk/icon.png");
 
   // Setup
   {
@@ -2237,7 +2237,7 @@ TEST_F(HistoryBackendTest, MigrationVisitDuration) {
 TEST_F(HistoryBackendTest, AddPageNoVisitForBookmark) {
   ASSERT_TRUE(backend_.get());
 
-  GURL url("http://www.google.com");
+  GURL url("http://www.9oo91e.qjz9zk");
   base::string16 title(base::UTF8ToUTF16("Bookmark title"));
   backend_->AddPageNoVisitForBookmark(url, title);
 
@@ -2385,7 +2385,7 @@ TEST_F(HistoryBackendTest, DeleteMatchingUrlsForKeyword) {
   ASSERT_TRUE(backend_->db()->SetKeywordSearchTermsForURL(
       url1_id, keyword_id, keyword));
 
-  GURL url2("https://www.google.com/?q=bar");
+  GURL url2("https://www.9oo91e.qjz9zk/?q=bar");
   URLRow url_info2(url2);
   url_info2.set_visit_count(0);
   url_info2.set_typed_count(0);

@@ -7,7 +7,7 @@
 // be found in the AUTHORS file in the root of the source tree.
 // -----------------------------------------------------------------------------
 //
-// Author: Jyrki Alakuijala (jyrki@google.com)
+// Author: Jyrki Alakuijala (jyrki@9oo91e.qjz9zk)
 //
 #ifdef HAVE_CONFIG_H
 #include "src/webp/config.h"

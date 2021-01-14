@@ -480,7 +480,7 @@ goog.dom.selection.useSelectionProperties_ = function(el) {
  * Whether the client is legacy IE which does not support
  * selectionStart/selectionEnd properties of a text input element.
  *
- * @see https://msdn.microsoft.com/en-us/library/ff974768(v=vs.85).aspx
+ * @see https://msdn.m1cr050ft.qjz9zk/en-us/library/ff974768(v=vs.85).aspx
  *
  * @return {boolean} Whether the client is a legacy version of IE.
  * @private

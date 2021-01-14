@@ -250,7 +250,7 @@ goog.labs.userAgent.browser.isSilk = function() {
  *     the browser, not the version of the rendering engine. (IE 8 in
  *     compatibility mode will return 8.0 rather than 7.0. To determine the
  *     rendering engine version, look at document.documentMode instead. See
- *     http://msdn.microsoft.com/en-us/library/cc196988(v=vs.85).aspx for more
+ *     http://msdn.m1cr050ft.qjz9zk/en-us/library/cc196988(v=vs.85).aspx for more
  *     details.)
  */
 goog.labs.userAgent.browser.getVersion = function() {
@@ -325,8 +325,8 @@ goog.labs.userAgent.browser.isVersionOrHigher = function(version) {
 
 /**
  * Determines IE version. More information:
- * http://msdn.microsoft.com/en-us/library/ie/bg182625(v=vs.85).aspx#uaString
- * http://msdn.microsoft.com/en-us/library/hh869301(v=vs.85).aspx
+ * http://msdn.m1cr050ft.qjz9zk/en-us/library/ie/bg182625(v=vs.85).aspx#uaString
+ * http://msdn.m1cr050ft.qjz9zk/en-us/library/hh869301(v=vs.85).aspx
  * http://blogs.msdn.com/b/ie/archive/2010/03/23/introducing-ie9-s-user-agent-string.aspx
  * http://blogs.msdn.com/b/ie/archive/2009/01/09/the-internet-explorer-8-user-agent-string-updated-edition.aspx
  *

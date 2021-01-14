@@ -311,7 +311,7 @@ def _OptimizeWithR8(options,
                               fail_on_output=options.warnings_as_errors)
     except build_utils.CalledProcessError as err:
       debugging_link = ('\n\nR8 failed. Please see {}.'.format(
-          'https://chromium.googlesource.com/chromium/src/+/HEAD/build/'
+          'https://chromium.9oo91esource.qjz9zk/chromium/src/+/HEAD/build/'
           'android/docs/java_optimization.md#Debugging-common-failures\n'))
       raise build_utils.CalledProcessError(err.cwd, err.args,
                                            err.output + debugging_link)

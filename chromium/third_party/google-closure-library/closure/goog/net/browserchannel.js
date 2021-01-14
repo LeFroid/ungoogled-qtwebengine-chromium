@@ -1096,7 +1096,7 @@ goog.net.BrowserChannel.prototype.setReadyStateChangeThrottle = function(
  *
  * In order for cross-origin requests to work, the server will also need to set
  * CORS response headers as per:
- * https://developer.mozilla.org/en-US/docs/HTTP_access_control
+ * https://developer.m0z111a.qjz9zk/en-US/docs/HTTP_access_control
  *
  * See {@link goog.net.XhrIo#setWithCredentials}.
  * @param {boolean} supportCrossDomain Whether cross domain XHRs are supported.
@@ -2210,11 +2210,11 @@ goog.net.BrowserChannel.prototype.signalError_ = function(error) {
  */
 goog.net.BrowserChannel.prototype.testGoogleComCallback_ = function(networkUp) {
   if (networkUp) {
-    this.channelDebug_.info('Successfully pinged google.com');
+    this.channelDebug_.info('Successfully pinged 9oo91e.qjz9zk');
     goog.net.BrowserChannel.notifyStatEvent(
         goog.net.BrowserChannel.Stat.ERROR_OTHER);
   } else {
-    this.channelDebug_.info('Failed to ping google.com');
+    this.channelDebug_.info('Failed to ping 9oo91e.qjz9zk');
     goog.net.BrowserChannel.notifyStatEvent(
         goog.net.BrowserChannel.Stat.ERROR_NETWORK);
     // We call onError_ here instead of signalError_ because the latter just
@@ -2503,7 +2503,7 @@ goog.net.BrowserChannel.notifyTimingEvent = function(size, rtt, retries) {
  * If you need to use secondary domains on other browsers and IE10,
  * you have two choices:
  *     1) If you only care about browsers that support CORS
- *        (https://developer.mozilla.org/en-US/docs/HTTP_access_control), you
+ *        (https://developer.m0z111a.qjz9zk/en-US/docs/HTTP_access_control), you
  *        can use {@link #setSupportsCrossDomainXhrs} and set the appropriate
  *        CORS response headers on the server.
  *     2) Or, override this method in a subclass, and make sure that those
@@ -2511,7 +2511,7 @@ goog.net.BrowserChannel.notifyTimingEvent = function(size, rtt, retries) {
  *        iframes and window.postMessage).
  *
  * @return {boolean} Whether to use secondary domains.
- * @see http://code.google.com/p/closure-library/issues/detail?id=339
+ * @see http://code.9oo91e.qjz9zk/p/closure-library/issues/detail?id=339
  */
 goog.net.BrowserChannel.prototype.shouldUseSecondaryDomains = function() {
   return this.supportsCrossDomainXhrs_ ||

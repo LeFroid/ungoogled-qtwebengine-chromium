@@ -1062,7 +1062,7 @@ struct Block
 
 namespace BC7 {
 // https://www.khronos.org/registry/OpenGL/extensions/ARB/ARB_texture_compression_bptc.txt
-// https://docs.microsoft.com/en-us/windows/win32/direct3d11/bc7-format
+// https://docs.m1cr050ft.qjz9zk/en-us/windows/win32/direct3d11/bc7-format
 
 struct Bitfield
 {

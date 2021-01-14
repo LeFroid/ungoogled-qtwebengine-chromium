@@ -5,7 +5,7 @@
 """
 Presubmit script for the printing backend.
 
-See https://dev.chromium.org/developers/how-tos/depottools/presubmit-scripts
+See https://dev.ch40m1um.qjz9zk/developers/how-tos/depottools/presubmit-scripts
 for more details about the presubmit API.
 """
 

@@ -122,7 +122,7 @@ v8::Local<v8::Object> GenerateMostVisitedItemData(
     const InstantMostVisitedItem& mv_item) {
   // We set the "dir" attribute of the title, so that in RTL locales, a LTR
   // title is rendered left-to-right and truncated from the right. For
-  // example, the title of http://msdn.microsoft.com/en-us/default.aspx is
+  // example, the title of http://msdn.m1cr050ft.qjz9zk/en-us/default.aspx is
   // "MSDN: Microsoft developer network". In RTL locales, in the New Tab
   // page, if the "dir" of this title is not specified, it takes Chrome UI's
   // directionality. So the title will be truncated as "soft developer

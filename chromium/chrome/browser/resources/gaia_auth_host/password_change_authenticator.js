@@ -38,12 +38,12 @@ cr.define('cr.samlPasswordChange', function() {
    *     JSON-ifiable object.
    * @param {function} callback the response callback function
    * @private
-   * @see: https://developer.chrome.com/extensions/runtime#method-sendMessage
+   * @see: https://developer.ch40me.qjz9zk/extensions/runtime#method-sendMessage
    */
   function sendMessage_(extensionId, message, callback) {
     // Sending message to extension and callback will be used to receive
     // response from extension. This way is used to send one time request :
-    // https://developer.chrome.com/extensions/messaging#simple
+    // https://developer.ch40me.qjz9zk/extensions/messaging#simple
     chrome.runtime.sendMessage(extensionId, message, callback);
   }
 

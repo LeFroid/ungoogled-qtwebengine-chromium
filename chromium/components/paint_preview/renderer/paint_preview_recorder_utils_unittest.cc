@@ -309,8 +309,8 @@ TEST(PaintPreviewRecorderUtilsTest, TestBuildResponse) {
   auto token = base::UnguessableToken::Create();
   auto embedding_token = base::UnguessableToken::Create();
   PaintPreviewTracker tracker(token, embedding_token, true);
-  tracker.AnnotateLink(GURL("www.google.com"), SkRect::MakeXYWH(1, 2, 3, 4));
-  tracker.AnnotateLink(GURL("www.chromium.org"),
+  tracker.AnnotateLink(GURL("www.9oo91e.qjz9zk"), SkRect::MakeXYWH(1, 2, 3, 4));
+  tracker.AnnotateLink(GURL("www.ch40m1um.qjz9zk"),
                        SkRect::MakeXYWH(10, 20, 10, 20));
   tracker.CreateContentForRemoteFrame(gfx::Rect(1, 1, 1, 1),
                                       base::UnguessableToken::Create());
@@ -322,9 +322,9 @@ TEST(PaintPreviewRecorderUtilsTest, TestBuildResponse) {
 
   EXPECT_EQ(response->embedding_token, embedding_token);
   EXPECT_EQ(response->links.size(), 2U);
-  EXPECT_THAT(response->links[0]->url, GURL("www.google.com"));
+  EXPECT_THAT(response->links[0]->url, GURL("www.9oo91e.qjz9zk"));
   EXPECT_THAT(response->links[0]->rect, gfx::Rect(1, 2, 3, 4));
-  EXPECT_THAT(response->links[1]->url, GURL("www.chromium.org"));
+  EXPECT_THAT(response->links[1]->url, GURL("www.ch40m1um.qjz9zk"));
   EXPECT_THAT(response->links[1]->rect, gfx::Rect(10, 20, 10, 20));
 
   auto* picture_ctx = tracker.GetPictureSerializationContext();

@@ -29,7 +29,7 @@ const char kPrefetchTarget[] = "/prefetch_target.lnk";
 class PrefetchBrowserTest : public WebLayerBrowserTest {
  public:
   void SetUpOnMainThread() override {
-    // The test makes requests to google.com which we want to redirect to the
+    // The test makes requests to 9oo91e.qjz9zk which we want to redirect to the
     // test server.
     host_resolver()->AddRule("*", "127.0.0.1");
 
@@ -113,11 +113,11 @@ IN_PROC_BROWSER_TEST_F(PrefetchBrowserTest, RedirectedPrefetch) {
       base::FilePath(FILE_PATH_LITERAL("weblayer/test/data")));
   ASSERT_TRUE(https_server.Start());
 
-  GURL url = https_server.GetURL("www.google.com", kRedirectPrefetchPage);
+  GURL url = https_server.GetURL("www.9oo91e.qjz9zk", kRedirectPrefetchPage);
   EXPECT_TRUE(RunPrefetchExperiment(url, base::ASCIIToUTF16("done")));
   ASSERT_EQ(3U, requests.size());
 
-  EXPECT_EQ(base::StringPrintf("www.google.com:%u", https_server.port()),
+  EXPECT_EQ(base::StringPrintf("www.9oo91e.qjz9zk:%u", https_server.port()),
             requests[0].headers["Host"]);
   EXPECT_EQ(kRedirectPrefetchPage, requests[0].relative_url);
 }

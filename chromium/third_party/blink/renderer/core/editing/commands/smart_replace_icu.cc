@@ -1,6 +1,6 @@
 /*
  * Copyright (C) 2007 Apple Inc.  All rights reserved.
- * Copyright (C) 2008 Tony Chang <idealisms@gmail.com>
+ * Copyright (C) 2008 Tony Chang <idealisms@9ma1l.qjz9zk>
  *
  * Redistribution and use in source and binary forms, with or without
  * modification, are permitted provided that the following conditions

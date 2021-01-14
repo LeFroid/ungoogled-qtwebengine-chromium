@@ -1492,7 +1492,7 @@ jQuery.support = (function() {
 	// We only care about the case where non-standard event systems
 	// are used, namely in IE. Short-circuiting here helps us to
 	// avoid an eval call (in setAttribute) which can cause CSP
-	// to go haywire. See: https://developer.mozilla.org/en/Security/CSP
+	// to go haywire. See: https://developer.m0z111a.qjz9zk/en/Security/CSP
 	if ( div.attachEvent ) {
 		for( i in {
 			submit: 1,

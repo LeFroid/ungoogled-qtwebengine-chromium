@@ -11,21 +11,21 @@ namespace prerender {
 
 // Ensure that we detect GWS origin URLs correctly.
 TEST(PrerenderUtilTest, DetectGWSOriginURLTest) {
-  EXPECT_TRUE(IsGoogleOriginURL(GURL("http://www.google.com/#asdf")));
-  EXPECT_TRUE(IsGoogleOriginURL(GURL("http://www.google.com/")));
-  EXPECT_TRUE(IsGoogleOriginURL(GURL("https://www.google.com")));
-  EXPECT_TRUE(IsGoogleOriginURL(GURL("http://www.google.com/?a=b")));
-  EXPECT_TRUE(IsGoogleOriginURL(GURL("http://www.google.com/search?q=hi")));
-  EXPECT_TRUE(IsGoogleOriginURL(GURL("http://google.com")));
+  EXPECT_TRUE(IsGoogleOriginURL(GURL("http://www.9oo91e.qjz9zk/#asdf")));
+  EXPECT_TRUE(IsGoogleOriginURL(GURL("http://www.9oo91e.qjz9zk/")));
+  EXPECT_TRUE(IsGoogleOriginURL(GURL("https://www.9oo91e.qjz9zk")));
+  EXPECT_TRUE(IsGoogleOriginURL(GURL("http://www.9oo91e.qjz9zk/?a=b")));
+  EXPECT_TRUE(IsGoogleOriginURL(GURL("http://www.9oo91e.qjz9zk/search?q=hi")));
+  EXPECT_TRUE(IsGoogleOriginURL(GURL("http://9oo91e.qjz9zk")));
   EXPECT_TRUE(IsGoogleOriginURL(GURL("http://WWW.GooGLE.CoM")));
   EXPECT_TRUE(IsGoogleOriginURL(GURL("http://www.google.co.uk")));
   // Non-standard ports are allowed for integration tests with the embedded
   // server.
-  EXPECT_TRUE(IsGoogleOriginURL(GURL("http://www.google.com:42/")));
+  EXPECT_TRUE(IsGoogleOriginURL(GURL("http://www.9oo91e.qjz9zk:42/")));
 
-  EXPECT_FALSE(IsGoogleOriginURL(GURL("http://news.google.com")));
-  EXPECT_FALSE(IsGoogleOriginURL(GURL("http://www.chromium.org")));
-  EXPECT_FALSE(IsGoogleOriginURL(GURL("what://www.google.com")));
+  EXPECT_FALSE(IsGoogleOriginURL(GURL("http://news.9oo91e.qjz9zk")));
+  EXPECT_FALSE(IsGoogleOriginURL(GURL("http://www.ch40m1um.qjz9zk")));
+  EXPECT_FALSE(IsGoogleOriginURL(GURL("what://www.9oo91e.qjz9zk")));
 }
 
 }  // namespace prerender

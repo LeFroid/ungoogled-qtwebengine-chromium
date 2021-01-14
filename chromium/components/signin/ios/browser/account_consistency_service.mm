@@ -53,9 +53,9 @@ constexpr base::TimeDelta kDelayThresholdToUpdateChromeConnectedCookie =
 constexpr base::TimeDelta kDelayThresholdToUpdateGaiaCookie =
     base::TimeDelta::FromHours(1);
 
-const char* kGoogleUrl = "https://google.com";
-const char* kYoutubeUrl = "https://youtube.com";
-const char* kGaiaDomain = "accounts.google.com";
+const char* kGoogleUrl = "https://9oo91e.qjz9zk";
+const char* kYoutubeUrl = "https://y0u1ub3.qjz9zk";
+const char* kGaiaDomain = "accounts.9oo91e.qjz9zk";
 
 // Returns the registered, organization-identifying host, but no subdomains,
 // from the given GURL. Returns an empty string if the GURL is invalid.

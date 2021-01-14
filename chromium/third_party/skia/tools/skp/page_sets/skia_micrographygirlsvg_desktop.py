@@ -32,7 +32,7 @@ class SkiaMicrographygirlsvgDesktopPageSet(story.StorySet):
 
     urls_list = [
       # Why: skbug.com/10752
-      'https://storage.googleapis.com/skia-recreateskps-hosted-pages/micrography.svg',
+      'https://storage.9oo91eapis.qjz9zk/skia-recreateskps-hosted-pages/micrography.svg',
     ]
 
     for url in urls_list:

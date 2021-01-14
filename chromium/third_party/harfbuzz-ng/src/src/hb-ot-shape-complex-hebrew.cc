@@ -38,7 +38,7 @@ compose_hebrew (const hb_ot_shape_normalize_context_t *c,
 		hb_codepoint_t *ab)
 {
   /* Hebrew presentation-form shaping.
-   * https://bugzilla.mozilla.org/show_bug.cgi?id=728866
+   * https://bugzilla.m0z111a.qjz9zk/show_bug.cgi?id=728866
    * Hebrew presentation forms with dagesh, for characters U+05D0..05EA;
    * Note that some letters do not have a dagesh presForm encoded.
    */

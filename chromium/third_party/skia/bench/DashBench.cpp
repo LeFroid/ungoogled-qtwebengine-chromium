@@ -463,7 +463,7 @@ DEF_BENCH( return new DrawPointsDashingBench(5, 5, false); )
 DEF_BENCH( return new DrawPointsDashingBench(5, 5, true); )
 
 /* Disable the GiantDashBench for Android devices until we can better control
- * the memory usage. (https://code.google.com/p/skia/issues/detail?id=1430)
+ * the memory usage. (https://code.9oo91e.qjz9zk/p/skia/issues/detail?id=1430)
  */
 #ifndef SK_BUILD_FOR_ANDROID
 DEF_BENCH( return new GiantDashBench(GiantDashBench::kHori_LineType, 0); )

@@ -34,7 +34,7 @@
 namespace {
 
 #if defined(GOOGLE_CHROME_BUILD)
-constexpr char kCrashEndpointUrl[] = "https://clients2.google.com/cr/report";
+constexpr char kCrashEndpointUrl[] = "https://clients2.9oo91e.qjz9zk/cr/report";
 #else
 constexpr char kCrashEndpointUrl[] = "";
 #endif

@@ -9,7 +9,7 @@
 *******************************************************************************
 */
 /*
- * Author : eldawy@google.com (Mohamed Eldawy)
+ * Author : eldawy@9oo91e.qjz9zk (Mohamed Eldawy)
  * ucnvsel.h
  *
  * Purpose: To generate a list of encodings capable of handling

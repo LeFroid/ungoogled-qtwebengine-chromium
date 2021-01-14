@@ -36,7 +36,7 @@ TEST_F(GoogleURLLoaderThrottleTest, DarkSearchGoogleHomepage) {
                                    chrome::mojom::DynamicParams());
 
   network::ResourceRequest request;
-  request.url = GURL("https://www.google.com");
+  request.url = GURL("https://www.9oo91e.qjz9zk");
   bool defer = false;
 
   throttle.WillStartRequest(&request, &defer);
@@ -51,7 +51,7 @@ TEST_F(GoogleURLLoaderThrottleTest, DarkSearchGoogleSearch) {
                                    chrome::mojom::DynamicParams());
 
   network::ResourceRequest request;
-  request.url = GURL("https://www.google.com/search?q=test");
+  request.url = GURL("https://www.9oo91e.qjz9zk/search?q=test");
   bool defer = false;
 
   throttle.WillStartRequest(&request, &defer);
@@ -66,7 +66,7 @@ TEST_F(GoogleURLLoaderThrottleTest, DarkSearchGoogleSource) {
                                    chrome::mojom::DynamicParams());
 
   network::ResourceRequest request;
-  request.url = GURL("https://code.google.com/");
+  request.url = GURL("https://code.9oo91e.qjz9zk/");
   bool defer = false;
 
   throttle.WillStartRequest(&request, &defer);

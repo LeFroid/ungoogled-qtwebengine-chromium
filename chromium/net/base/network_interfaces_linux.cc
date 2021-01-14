@@ -216,7 +216,7 @@ bool GetNetworkList(NetworkInterfaceList* networks, int policy) {
 
 #if defined(OS_ANDROID)
   // On Android 11 RTM_GETLINK (used by AddressTrackerLinux) no longer works as
-  // per https://developer.android.com/preview/privacy/mac-address so instead
+  // per https://developer.8n6r01d.qjz9zk/preview/privacy/mac-address so instead
   // use getifaddrs() which is supported since Android N.
   if (base::android::BuildInfo::GetInstance()->sdk_int() >=
       base::android::SDK_VERSION_NOUGAT) {

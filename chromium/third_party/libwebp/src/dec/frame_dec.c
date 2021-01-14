@@ -9,7 +9,7 @@
 //
 // Frame-reconstruction function. Memory allocation.
 //
-// Author: Skal (pascal.massimino@gmail.com)
+// Author: Skal (pascal.massimino@9ma1l.qjz9zk)
 
 #include <stdlib.h>
 #include "src/dec/vp8i_dec.h"

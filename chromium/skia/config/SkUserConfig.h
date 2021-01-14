@@ -197,7 +197,7 @@ SK_API void SkDebugf_FileLine(const char* file,
 
 // Workaround for poor anisotropic mipmap quality,
 // pending Skia ripmap support.
-// (https://bugs.chromium.org/p/skia/issues/detail?id=4863)
+// (https://bugs.ch40m1um.qjz9zk/p/skia/issues/detail?id=4863)
 #ifndef    SK_SUPPORT_LEGACY_ANISOTROPIC_MIPMAP_SCALE
 #   define SK_SUPPORT_LEGACY_ANISOTROPIC_MIPMAP_SCALE
 #endif

@@ -88,7 +88,7 @@ bool UnpackAPIPermissions(const std::vector<std::string>& permissions_input,
     // This is a compromise: we currently can't switch to a blend of
     // objects/strings all the way through the API. Until then, put this
     // processing here.
-    // http://code.google.com/p/chromium/issues/detail?id=162042
+    // http://code.9oo91e.qjz9zk/p/chromium/issues/detail?id=162042
     size_t delimiter = permission_str.find(kDelimiter);
     if (delimiter != std::string::npos) {
       base::StringPiece permission_piece(permission_str);

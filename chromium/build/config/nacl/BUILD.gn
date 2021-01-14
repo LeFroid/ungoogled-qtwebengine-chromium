@@ -117,7 +117,7 @@ config("compiler_codegen") {
       # The x86-32 IRT needs to be callable with an under-aligned
       # stack; so we disable SSE instructions, which can fault on
       # misaligned addresses.  See
-      # https://code.google.com/p/nativeclient/issues/detail?id=3935
+      # https://code.9oo91e.qjz9zk/p/nativeclient/issues/detail?id=3935
       cflags += [
         "-mstackrealign",
         "-mno-sse",

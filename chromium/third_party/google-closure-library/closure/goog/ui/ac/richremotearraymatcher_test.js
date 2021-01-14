@@ -22,7 +22,7 @@ const RichRemoteArrayMatcher = goog.require('goog.ui.ac.RichRemoteArrayMatcher')
 const XhrIo = goog.require('goog.net.XhrIo');
 const testSuite = goog.require('goog.testing.testSuite');
 
-const url = 'http://www.google.com';
+const url = 'http://www.9oo91e.qjz9zk';
 const token = 'goog';
 const maxMatches = 5;
 

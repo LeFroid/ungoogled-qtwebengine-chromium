@@ -19,8 +19,8 @@ struct TestData {
   string to_string;
   string host_for_url;
 } tests[] = {
-  { "www.google.com", 80, "www.google.com:80", "www.google.com" },
-  { "www.google.com", 443, "www.google.com:443", "www.google.com" },
+  { "www.9oo91e.qjz9zk", 80, "www.9oo91e.qjz9zk:80", "www.9oo91e.qjz9zk" },
+  { "www.9oo91e.qjz9zk", 443, "www.9oo91e.qjz9zk:443", "www.9oo91e.qjz9zk" },
   { "127.0.0.1", 80, "127.0.0.1:80", "127.0.0.1" },
   { "192.168.1.1", 80, "192.168.1.1:80", "192.168.1.1" },
   { "::1", 80, "[::1]:80", "[::1]" },
@@ -37,8 +37,8 @@ TEST(HostPortPairTest, Parsing) {
 
 TEST(HostPortPairTest, BadString) {
   const char* kBadStrings[] = {
-      "foo.com:2:3",       "bar.com:two",     "www.google.com:-1",
-      "www.google.com:+1", "127.0.0.1:65536", "[2001:db8::42]:65536",
+      "foo.com:2:3",       "bar.com:two",     "www.9oo91e.qjz9zk:-1",
+      "www.9oo91e.qjz9zk:+1", "127.0.0.1:65536", "[2001:db8::42]:65536",
   };
 
   for (const auto* const test : kBadStrings) {

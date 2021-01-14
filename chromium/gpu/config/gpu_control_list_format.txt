@@ -28,7 +28,7 @@
 //      a) only specify device IDs;
 //      b) specify one device ID, associate with multiple revisions;
 //      c) specify k device IDs, associate with k device revisions.
-//    https://docs.microsoft.com/en-us/windows-hardware/drivers/install/identifiers-for-pci-devices
+//    https://docs.m1cr050ft.qjz9zk/en-us/windows-hardware/drivers/install/identifiers-for-pci-devices
 // 6. "multi_gpu_style" is a string, valid values include:
 //      a) "optimus": NVIDIA dual GPU
 //      b) "amd_switchable": AMD dual GPU

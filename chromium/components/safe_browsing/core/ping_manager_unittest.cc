@@ -59,7 +59,7 @@ TEST_F(PingManagerTest, TestSafeBrowsingHitUrl) {
     hp.is_enhanced_protection = true;
 
     EXPECT_EQ(
-        "https://safebrowsing.google.com/safebrowsing/report?client=unittest&"
+        "https://safebrowsing.9oo91e.qjz9zk/safebrowsing/report?client=unittest&"
         "appver=1.0&pver=4.0" +
             key_param_ +
             "&ext=1&enh=1&evts=malblhit&evtd=http%3A%2F%2Fmalicious.url.com%2F&"
@@ -77,7 +77,7 @@ TEST_F(PingManagerTest, TestSafeBrowsingHitUrl) {
     hp.is_metrics_reporting_active = true;
     hp.is_enhanced_protection = false;
     EXPECT_EQ(
-        "https://safebrowsing.google.com/safebrowsing/report?client=unittest&"
+        "https://safebrowsing.9oo91e.qjz9zk/safebrowsing/report?client=unittest&"
         "appver=1.0&pver=4.0" +
             key_param_ +
             "&ext=1&evts=phishblhit&"
@@ -96,7 +96,7 @@ TEST_F(PingManagerTest, TestSafeBrowsingHitUrl) {
     hp.is_metrics_reporting_active = true;
     hp.is_enhanced_protection = true;
     EXPECT_EQ(
-        "https://safebrowsing.google.com/safebrowsing/report?client=unittest&"
+        "https://safebrowsing.9oo91e.qjz9zk/safebrowsing/report?client=unittest&"
         "appver=1.0&pver=4.0" +
             key_param_ +
             "&ext=2&enh=1&evts=phishblhit&"
@@ -115,7 +115,7 @@ TEST_F(PingManagerTest, TestSafeBrowsingHitUrl) {
     hp.is_subresource = false;
     hp.is_enhanced_protection = true;
     EXPECT_EQ(
-        "https://safebrowsing.google.com/safebrowsing/report?client=unittest&"
+        "https://safebrowsing.9oo91e.qjz9zk/safebrowsing/report?client=unittest&"
         "appver=1.0&pver=4.0" +
             key_param_ +
             "&ext=0&enh=1&evts=binurlhit&"
@@ -134,7 +134,7 @@ TEST_F(PingManagerTest, TestSafeBrowsingHitUrl) {
     hp.is_subresource = false;
     hp.is_enhanced_protection = true;
     EXPECT_EQ(
-        "https://safebrowsing.google.com/safebrowsing/report?client=unittest&"
+        "https://safebrowsing.9oo91e.qjz9zk/safebrowsing/report?client=unittest&"
         "appver=1.0&pver=4.0" +
             key_param_ +
             "&ext=0&enh=1&evts=phishcsdhit&"
@@ -153,7 +153,7 @@ TEST_F(PingManagerTest, TestSafeBrowsingHitUrl) {
     hp.is_subresource = true;
     hp.is_enhanced_protection = true;
     EXPECT_EQ(
-        "https://safebrowsing.google.com/safebrowsing/report?client=unittest&"
+        "https://safebrowsing.9oo91e.qjz9zk/safebrowsing/report?client=unittest&"
         "appver=1.0&pver=4.0" +
             key_param_ +
             "&ext=0&enh=1&evts=malcsdhit&"
@@ -174,7 +174,7 @@ TEST_F(PingManagerTest, TestSafeBrowsingHitUrl) {
     hp.population_id = "foo bar";
     hp.is_enhanced_protection = true;
     EXPECT_EQ(
-        "https://safebrowsing.google.com/safebrowsing/report?client=unittest&"
+        "https://safebrowsing.9oo91e.qjz9zk/safebrowsing/report?client=unittest&"
         "appver=1.0&pver=4.0" +
             key_param_ +
             "&ext=0&enh=1&evts=malcsdhit&"
@@ -187,7 +187,7 @@ TEST_F(PingManagerTest, TestSafeBrowsingHitUrl) {
 
 TEST_F(PingManagerTest, TestThreatDetailsUrl) {
   EXPECT_EQ(
-      "https://safebrowsing.google.com/safebrowsing/clientreport/malware?"
+      "https://safebrowsing.9oo91e.qjz9zk/safebrowsing/clientreport/malware?"
       "client=unittest&appver=1.0&pver=4.0" +
           key_param_,
       ping_manager()->ThreatDetailsUrl().spec());

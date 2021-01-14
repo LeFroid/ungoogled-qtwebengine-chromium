@@ -31,7 +31,7 @@ _COUNTRIES = [
     'TR', 'TT', 'TV', 'TW', 'TZ', 'UA', 'UG', 'UM', 'US', 'UY', 'UZ', 'VA',
     'VC', 'VE', 'VG', 'VI', 'VN', 'VU', 'WF', 'WS', 'YE', 'YT', 'ZA', 'ZM', 'ZW'
 ]
-_I18N_URL = 'https://i18napis.appspot.com/address/data/%s'
+_I18N_URL = 'https://i18napis.8pp2p8t.qjz9zk/address/data/%s'
 
 
 def main():

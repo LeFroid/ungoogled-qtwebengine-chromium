@@ -9,9 +9,9 @@ This file is used to generate a comprehensive list of Mobile histograms
 along with a detailed description for each histogram.
 
 For best practices on writing histogram descriptions, see
-https://chromium.googlesource.com/chromium/src.git/+/HEAD/tools/metrics/histograms/README.md
+https://chromium.9oo91esource.qjz9zk/chromium/src.git/+/HEAD/tools/metrics/histograms/README.md
 
-Please send CLs to chromium-metrics-reviews@google.com rather than to specific
+Please send CLs to chromium-metrics-reviews@9oo91e.qjz9zk rather than to specific
 individuals. These CLs will be automatically reassigned to a reviewer within
 about 5 minutes. This approach helps the metrics team to load-balance incoming
 reviews. Googlers can read more about this at go/gwsq-gerrit.
@@ -28,8 +28,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Mobile.AppMenu.TimeToTakeAction.Abandoned" units="ms"
     expires_after="M93">
-  <owner>gangwu@chromium.org</owner>
-  <owner>twellington@chromium.org</owner>
+  <owner>gangwu@ch40m1um.qjz9zk</owner>
+  <owner>twellington@ch40m1um.qjz9zk</owner>
   <summary>
     The time it takes for the user to abandon the app menu after it's shown by
     pressing back or touching outside the menu. This is only logged if the menu
@@ -41,8 +41,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Mobile.AppMenu.TimeToTakeAction.SelectedItem" units="ms"
     expires_after="M93">
-  <owner>gangwu@chromium.org</owner>
-  <owner>twellington@chromium.org</owner>
+  <owner>gangwu@ch40m1um.qjz9zk</owner>
+  <owner>twellington@ch40m1um.qjz9zk</owner>
   <summary>
     The time it takes for the user to select an item. This is only logged if the
     menu is closed as a result of the user clicking a menu item. See
@@ -53,8 +53,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Mobile.CanonicalURLResult" enum="CanonicalURLResult"
     expires_after="M87">
-  <owner>pkl@chromium.org</owner>
-  <owner>tedchoc@chromium.org</owner>
+  <owner>pkl@ch40m1um.qjz9zk</owner>
+  <owner>tedchoc@ch40m1um.qjz9zk</owner>
   <summary>
     The result of the operation to retrieve the page's canonical URL.
   </summary>
@@ -62,8 +62,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Mobile.ContextMenu.EntryPoints" enum="IOSMenuScenario"
     expires_after="2021-07-01">
-  <owner>seblalancette@chromium.org</owner>
-  <owner>gambard@chromium.org</owner>
+  <owner>seblalancette@ch40m1um.qjz9zk</owner>
+  <owner>gambard@ch40m1um.qjz9zk</owner>
   <summary>
     Tracks which context menu was shown. To drill down into a specific context
     menu's usage, take a look at its actions' histogram (the format for actions
@@ -73,8 +73,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Mobile.ContextMenu.{EntryPoint}.Actions" enum="IOSMenuAction"
     expires_after="2021-07-01">
-  <owner>seblalancette@chromium.org</owner>
-  <owner>gambard@chromium.org</owner>
+  <owner>seblalancette@ch40m1um.qjz9zk</owner>
+  <owner>gambard@ch40m1um.qjz9zk</owner>
   <summary>
     Tracks which action was selected in the context menu shown for a
     {EntryPoint}. To view how often this context menu was shown, take a look at
@@ -97,8 +97,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <!-- expires-never: Used to keep track of Android browser ecosystem. -->
 
-  <owner>dtrainor@chromium.org</owner>
-  <owner>nyquist@chromium.org</owner>
+  <owner>dtrainor@ch40m1um.qjz9zk</owner>
+  <owner>nyquist@ch40m1um.qjz9zk</owner>
   <summary>
     Android: The number of browsers installed on the device. Logged when a new
     session is started.
@@ -109,8 +109,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
     expires_after="never">
 <!-- expires-never: Used to keep track of Android browser ecosystem. -->
 
-  <owner>dtrainor@chromium.org</owner>
-  <owner>nyquist@chromium.org</owner>
+  <owner>dtrainor@ch40m1um.qjz9zk</owner>
+  <owner>nyquist@ch40m1um.qjz9zk</owner>
   <summary>
     Android: Whether or not the device has a default browser and whether or not
     it is a system installed browser. Logged when a new session is started.
@@ -124,8 +124,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <!-- expires-never: Used to keep track of Android browser ecosystem. -->
 
-  <owner>dtrainor@chromium.org</owner>
-  <owner>nyquist@chromium.org</owner>
+  <owner>dtrainor@ch40m1um.qjz9zk</owner>
+  <owner>nyquist@ch40m1um.qjz9zk</owner>
   <summary>
     Android: The number of system installed browsers. Logged when a new session
     is started.
@@ -134,8 +134,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Mobile.Legacy.Translate.Toggle.Delay" units="ms"
     expires_after="2020-12-13">
-  <owner>sczs@chromium.org</owner>
-  <owner>thegreenfrog@chromium.org</owner>
+  <owner>sczs@ch40m1um.qjz9zk</owner>
+  <owner>thegreenfrog@ch40m1um.qjz9zk</owner>
   <summary>
     Records the time between tapping the target and source language in a legacy
     infobar. If only one of either is tapped, nothing is logged.
@@ -144,8 +144,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Mobile.Legacy.Translate.Unused.Duration" units="ms"
     expires_after="2020-10-11">
-  <owner>sczs@chromium.org</owner>
-  <owner>thegreenfrog@chromium.org</owner>
+  <owner>sczs@ch40m1um.qjz9zk</owner>
+  <owner>thegreenfrog@ch40m1um.qjz9zk</owner>
   <summary>
     Records the time an unused legacy infobar persists on screen. This is logged
     when the infobar is closed.
@@ -156,8 +156,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
     enum="MobileMessagesBadgeState" expires_after="2021-03-20">
 <!-- Name completed by histogram_suffixes name="Mobile.Messages.Type" -->
 
-  <owner>sczs@chromium.org</owner>
-  <owner>thegreenfrog@chromium.org</owner>
+  <owner>sczs@ch40m1um.qjz9zk</owner>
+  <owner>thegreenfrog@ch40m1um.qjz9zk</owner>
   <summary>Records the state of a badge when it was tapped.</summary>
 </histogram>
 
@@ -165,8 +165,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
     enum="MobileMessagesBannerDismissType" expires_after="2021-03-20">
 <!-- Name completed by histogram_suffixes name="Mobile.Messages.Type" -->
 
-  <owner>sczs@chromium.org</owner>
-  <owner>thegreenfrog@chromium.org</owner>
+  <owner>sczs@ch40m1um.qjz9zk</owner>
+  <owner>thegreenfrog@ch40m1um.qjz9zk</owner>
   <summary>Records the reason why a Banner was dismissed.</summary>
 </histogram>
 
@@ -174,15 +174,15 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
     enum="MobileMessagesBannerEvent" expires_after="2021-03-20">
 <!-- Name completed by histogram_suffixes name="Mobile.Messages.Type" -->
 
-  <owner>sczs@chromium.org</owner>
-  <owner>thegreenfrog@chromium.org</owner>
+  <owner>sczs@ch40m1um.qjz9zk</owner>
+  <owner>thegreenfrog@ch40m1um.qjz9zk</owner>
   <summary>Records Infobar Banner events.</summary>
 </histogram>
 
 <histogram name="Mobile.Messages.Banner.OnScreenTime" units="ms"
     expires_after="2021-03-20">
-  <owner>sczs@chromium.org</owner>
-  <owner>thegreenfrog@google.com</owner>
+  <owner>sczs@ch40m1um.qjz9zk</owner>
+  <owner>thegreenfrog@9oo91e.qjz9zk</owner>
   <summary>
     Records the time an Infobar (Messages) Banner is visible on screen. Used to
     know how long it takes a user to act on the banner before it gets
@@ -192,8 +192,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Mobile.Messages.ConcurrentPresented" units="infobars"
     expires_after="2021-03-20">
-  <owner>sczs@chromium.org</owner>
-  <owner>thegreenfrog@chromium.org</owner>
+  <owner>sczs@ch40m1um.qjz9zk</owner>
+  <owner>thegreenfrog@ch40m1um.qjz9zk</owner>
   <summary>
     Tracks the number of multiple Infobars being presented at the same time.
     This will be recorded everytime an Infobar is presented.
@@ -204,8 +204,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
     expires_after="2021-03-20">
 <!-- Name completed by histogram_suffixes name="Mobile.Messages.Confirm.Type" -->
 
-  <owner>sczs@chromium.org</owner>
-  <owner>thegreenfrog@chromium.org</owner>
+  <owner>sczs@ch40m1um.qjz9zk</owner>
+  <owner>thegreenfrog@ch40m1um.qjz9zk</owner>
   <summary>
     Records the time between the Infobar Delegate is created, and the user
     accepts a Confirm Infobar action.
@@ -216,8 +216,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
     enum="MobileMessagesConfirmInfobarEvents" expires_after="2021-03-20">
 <!-- Name completed by histogram_suffixes name="Mobile.Messages.Confirm.Type" -->
 
-  <owner>sczs@chromium.org</owner>
-  <owner>thegreenfrog@chromium.org</owner>
+  <owner>sczs@ch40m1um.qjz9zk</owner>
+  <owner>thegreenfrog@ch40m1um.qjz9zk</owner>
   <summary>
     Records the events related to Confirm Infobars (e.g. Presented, Accepted,
     Dismissed,etc.)
@@ -228,15 +228,15 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
     enum="MobileMessagesModalEvent" expires_after="2021-03-20">
 <!-- Name completed by histogram_suffixes name="Mobile.Messages.Type" -->
 
-  <owner>sczs@chromium.org</owner>
-  <owner>thegreenfrog@chromium.org</owner>
+  <owner>sczs@ch40m1um.qjz9zk</owner>
+  <owner>thegreenfrog@ch40m1um.qjz9zk</owner>
   <summary>Records generic Infobar Modal events.</summary>
 </histogram>
 
 <histogram base="true" name="Mobile.Messages.OverflowRow.Tapped"
     enum="MobileMessagesInfobarType" expires_after="2021-03-20">
-  <owner>sczs@chromium.org</owner>
-  <owner>thegreenfrog@chromium.org</owner>
+  <owner>sczs@ch40m1um.qjz9zk</owner>
+  <owner>thegreenfrog@ch40m1um.qjz9zk</owner>
   <summary>Records a tap on an Infobar overflow menu row.</summary>
 </histogram>
 
@@ -244,8 +244,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
     enum="MobileMessagesPasswordsModalDismiss" expires_after="2022-05-01">
 <!-- Name completed by histogram_suffixes name="Mobile.Messages.Password.Type" -->
 
-  <owner>sczs@chromium.org</owner>
-  <owner>thegreenfrog@chromium.org</owner>
+  <owner>sczs@ch40m1um.qjz9zk</owner>
+  <owner>thegreenfrog@ch40m1um.qjz9zk</owner>
   <summary>Records the reason why a Password Modal was dismissed.</summary>
 </histogram>
 
@@ -253,8 +253,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
     enum="MobileMessagesPasswordsModalEvent" expires_after="2021-03-20">
 <!-- Name completed by histogram_suffixes name="Mobile.Messages.Password.Type" -->
 
-  <owner>sczs@chromium.org</owner>
-  <owner>thegreenfrog@chromium.org</owner>
+  <owner>sczs@ch40m1um.qjz9zk</owner>
+  <owner>thegreenfrog@ch40m1um.qjz9zk</owner>
   <summary>Records Password specific Infobar Modal events.</summary>
 </histogram>
 
@@ -262,22 +262,22 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
     enum="MobileMessagesPasswordsModalPresent" expires_after="2021-03-20">
 <!-- Name completed by histogram_suffixes name="Mobile.Messages.Password.Type" -->
 
-  <owner>sczs@chromium.org</owner>
-  <owner>thegreenfrog@chromium.org</owner>
+  <owner>sczs@ch40m1um.qjz9zk</owner>
+  <owner>thegreenfrog@ch40m1um.qjz9zk</owner>
   <summary>Records the context when a Password Modal was presented.</summary>
 </histogram>
 
 <histogram name="Mobile.Messages.Save.Card.Modal.Event"
     enum="MobileMessagesSaveCardModalEvent" expires_after="2021-03-20">
-  <owner>sczs@chromium.org</owner>
-  <owner>thegreenfrog@chromium.org</owner>
+  <owner>sczs@ch40m1um.qjz9zk</owner>
+  <owner>thegreenfrog@ch40m1um.qjz9zk</owner>
   <summary>Records Save Card specific Infobar Modal events.</summary>
 </histogram>
 
 <histogram name="Mobile.Messages.Translate.Banner.Event"
     enum="MobileMessagesTranslateBannerEvent" expires_after="2021-03-20">
-  <owner>sczs@chromium.org</owner>
-  <owner>thegreenfrog@chromium.org</owner>
+  <owner>sczs@ch40m1um.qjz9zk</owner>
+  <owner>thegreenfrog@ch40m1um.qjz9zk</owner>
   <summary>
     Records the context when an iOS user taps on a Translate Banner Action
     Button.
@@ -286,8 +286,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Mobile.Messages.Translate.Modal.Event"
     enum="MobileMessagesTranslateModalEvent" expires_after="2021-03-20">
-  <owner>sczs@chromium.org</owner>
-  <owner>thegreenfrog@chromium.org</owner>
+  <owner>sczs@ch40m1um.qjz9zk</owner>
+  <owner>thegreenfrog@ch40m1um.qjz9zk</owner>
   <summary>
     Records when an iOS user initiates an Translate specific Infobar Modal
     event.
@@ -296,8 +296,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Mobile.Messages.Translate.Modal.Present"
     enum="MobileMessagesTranslateModalPresent" expires_after="2021-03-20">
-  <owner>sczs@chromium.org</owner>
-  <owner>thegreenfrog@chromium.org</owner>
+  <owner>sczs@ch40m1um.qjz9zk</owner>
+  <owner>thegreenfrog@ch40m1um.qjz9zk</owner>
   <summary>
     Records the context when an iOS user initiates a Translate Modal
     presentation.
@@ -306,8 +306,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Mobile.RecentTabsManager.TotalTabsFromOtherDevicesOpenAll"
     units="count" expires_after="2022-04-19">
-  <owner>sczs@chromium.org</owner>
-  <owner>edchin@chromium.org</owner>
+  <owner>sczs@ch40m1um.qjz9zk</owner>
+  <owner>edchin@ch40m1um.qjz9zk</owner>
   <summary>
     Records the total number of tabs opened when Open all was selected from
     other devices in Recent Tabs.
@@ -316,8 +316,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Mobile.Share.EntryPoints" enum="IOSActivityScenario"
     expires_after="2021-06-01">
-  <owner>seblalancette@chromium.org</owner>
-  <owner>chrome-sharing-core@google.com</owner>
+  <owner>seblalancette@ch40m1um.qjz9zk</owner>
+  <owner>chrome-sharing-core@9oo91e.qjz9zk</owner>
   <summary>
     Tracks which sharing entry point was triggered. To view the outcome of these
     sharing scenarios, take a look at their actions' histogram (the format is
@@ -327,8 +327,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Mobile.Share.{EntryPoint}.Actions" enum="IOSShareAction"
     expires_after="2021-06-01">
-  <owner>seblalancette@chromium.org</owner>
-  <owner>chrome-sharing-core@google.com</owner>
+  <owner>seblalancette@ch40m1um.qjz9zk</owner>
+  <owner>chrome-sharing-core@9oo91e.qjz9zk</owner>
   <summary>
     Tracks the sharing actions executed when the sharing scenario was initiated
     for a {EntryPoint}. To view how often this sharing scenario was triggered,
@@ -350,8 +350,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
     enum="SystemNotificationActionType" expires_after="never">
 <!-- expires-never: Core Android notification metrics. Used by multiple teams. -->
 
-  <owner>dtrainor@chromium.org</owner>
-  <owner>xingliu@chromium.org</owner>
+  <owner>dtrainor@ch40m1um.qjz9zk</owner>
+  <owner>xingliu@ch40m1um.qjz9zk</owner>
   <summary>
     Records which Android notifications users interact with. Recorded when an
     user taps the button in a notification, for any Chrome-generated
@@ -366,8 +366,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <!-- expires-never: Core Android notification metrics. Used by multiple teams. -->
 
-  <owner>dtrainor@chromium.org</owner>
-  <owner>xingliu@chromium.org</owner>
+  <owner>dtrainor@ch40m1um.qjz9zk</owner>
+  <owner>xingliu@ch40m1um.qjz9zk</owner>
   <summary>
     Records the duration in minutes from the time when the system notification
     is shown to the time that the user clicked on an action button on the
@@ -379,8 +379,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
     enum="SystemNotificationType" expires_after="never">
 <!-- expires-never: Core Android notification metrics. Used by multiple teams. -->
 
-  <owner>dtrainor@chromium.org</owner>
-  <owner>xingliu@chromium.org</owner>
+  <owner>dtrainor@ch40m1um.qjz9zk</owner>
+  <owner>xingliu@ch40m1um.qjz9zk</owner>
   <summary>
     Android: Represents the number of system notifications that were blocked and
     could not be shown by type.
@@ -391,8 +391,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
     enum="SystemNotificationType" expires_after="never">
 <!-- expires-never: Core Android notification metrics. Used by multiple teams. -->
 
-  <owner>dtrainor@chromium.org</owner>
-  <owner>xingliu@chromium.org</owner>
+  <owner>dtrainor@ch40m1um.qjz9zk</owner>
+  <owner>xingliu@ch40m1um.qjz9zk</owner>
   <summary>
     Android: Represents the type of notification that was last shown before the
     user disabled notification permissions on Chrome. This is only logged the
@@ -404,8 +404,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
     enum="SystemNotificationType" expires_after="never">
 <!-- expires-never: Core Android notification metrics. Used by multiple teams. -->
 
-  <owner>peter@chromium.org</owner>
-  <owner>xingliu@chromium.org</owner>
+  <owner>peter@ch40m1um.qjz9zk</owner>
+  <owner>xingliu@ch40m1um.qjz9zk</owner>
   <summary>
     Android: Represents the number of system notifications by type that we
     attempted to show but were blocked, due to their notification channel being
@@ -417,8 +417,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
     enum="SystemNotificationType" expires_after="never">
 <!-- expires-never: part of top-line metric (internal: go/chrome-browser-nsm) -->
 
-  <owner>xingliu@chromium.org</owner>
-  <owner>chrome-analysis-team@google.com</owner>
+  <owner>xingliu@ch40m1um.qjz9zk</owner>
+  <owner>chrome-analysis-team@9oo91e.qjz9zk</owner>
   <summary>
     Records the type of notification when the user clicks the body of Android
     notification. This does not include clicks on notification action buttons.
@@ -435,8 +435,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <!-- expires-never: Core Android notification metrics. Used by multiple teams. -->
 
-  <owner>dtrainor@chromium.org</owner>
-  <owner>xingliu@chromium.org</owner>
+  <owner>dtrainor@ch40m1um.qjz9zk</owner>
+  <owner>xingliu@ch40m1um.qjz9zk</owner>
   <summary>
     Records the duration in minutes from the time when the system notification
     is shown to the time that the user clicked the notification on Android.
@@ -447,8 +447,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
     enum="SystemNotificationType" expires_after="never">
 <!-- expires-never: Core Android notification metrics. Used by multiple teams. -->
 
-  <owner>dtrainor@chromium.org</owner>
-  <owner>xingliu@chromium.org</owner>
+  <owner>dtrainor@ch40m1um.qjz9zk</owner>
+  <owner>xingliu@ch40m1um.qjz9zk</owner>
   <summary>
     Records the type of notification when the user dismisses the Android
     notification.
@@ -462,8 +462,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <!-- expires-never: Core Android notification metrics. Used by multiple teams. -->
 
-  <owner>dtrainor@chromium.org</owner>
-  <owner>xingliu@chromium.org</owner>
+  <owner>dtrainor@ch40m1um.qjz9zk</owner>
+  <owner>xingliu@ch40m1um.qjz9zk</owner>
   <summary>
     Records the duration in minutes from the time when the system notification
     is shown to the time that the user dismissed the notification on Android.
@@ -472,8 +472,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Mobile.SystemNotification.NotifyFailure"
     enum="SystemNotificationType" expires_after="2021-06-01">
-  <owner>knollr@chromium.org</owner>
-  <owner>xingliu@chromium.org</owner>
+  <owner>knollr@ch40m1um.qjz9zk</owner>
+  <owner>xingliu@ch40m1um.qjz9zk</owner>
   <summary>
     Android: Represents the number of system notifications failed to be notified
     by Android NotificationManager API. Recorded when the notification is shown
@@ -485,8 +485,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
     expires_after="never">
 <!-- expires-never: Core Android notification metrics. Used by multiple teams. -->
 
-  <owner>dtrainor@chromium.org</owner>
-  <owner>xingliu@chromium.org</owner>
+  <owner>dtrainor@ch40m1um.qjz9zk</owner>
+  <owner>xingliu@ch40m1um.qjz9zk</owner>
   <summary>
     Android: Represents the number of system notifications that will be
     successfully shown to the user by type.
@@ -495,8 +495,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Mobile.Translate.Unused.Count" units="units"
     expires_after="2021-03-20">
-  <owner>sczs@chromium.org</owner>
-  <owner>thegreenfrog@chromium.org</owner>
+  <owner>sczs@ch40m1um.qjz9zk</owner>
+  <owner>thegreenfrog@ch40m1um.qjz9zk</owner>
   <summary>
     Records a histogram for an infobar (both legacy and Messages) that the user
     did not interact with throughout its lifetime.
@@ -505,9 +505,9 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="MobileDownload.Background"
     enum="MobileDownloadBackgroundDownloadEvent" expires_after="2020-10-11">
-  <owner>hnakashima@chromium.org</owner>
-  <owner>hanxi@chromium.org</owner>
-  <owner>yfriedman@chromium.org</owner>
+  <owner>hnakashima@ch40m1um.qjz9zk</owner>
+  <owner>hanxi@ch40m1um.qjz9zk</owner>
+  <owner>yfriedman@ch40m1um.qjz9zk</owner>
   <summary>
     Android: Records events for downloads started from the background, that is,
     while the browser process is not running. Used to measure completion rate of
@@ -518,8 +518,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram name="MobileDownload.Background.TargetDeterminationResult"
     enum="MobileDownloadBackgroundTargetDeterminationResult"
     expires_after="2020-12-13">
-  <owner>qinmin@chromium.org</owner>
-  <owner>xingliu@chromium.org</owner>
+  <owner>qinmin@ch40m1um.qjz9zk</owner>
+  <owner>xingliu@ch40m1um.qjz9zk</owner>
   <summary>
     Android: Records the target determination result for downloads started in
     the background, that is, while the browser process is not running.
@@ -528,7 +528,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="MobileDownload.ContextMenu.SaveImage"
     enum="ContextMenuSaveImage" expires_after="M85">
-  <owner>qinmin@chromium.org</owner>
+  <owner>qinmin@ch40m1um.qjz9zk</owner>
   <summary>
     Android: Records various counts related to the save image context menu
     option.
@@ -537,8 +537,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="MobileDownload.DownloadLaterPromptStatus"
     enum="DownloadLaterPromptStatus" expires_after="2021-06-01">
-  <owner>xingliu@chromium.org</owner>
-  <owner>clank-downloads@google.com</owner>
+  <owner>xingliu@ch40m1um.qjz9zk</owner>
+  <owner>clank-downloads@9oo91e.qjz9zk</owner>
   <summary>
     Android: Records whether download later dialog will be shown to the user.
     Recorded when the download later preference is initialized in native.
@@ -547,8 +547,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="MobileDownload.DownloadPromptStatus"
     enum="DownloadPromptStatus" expires_after="2021-04-01">
-  <owner>xingliu@chromium.org</owner>
-  <owner>clank-downloads@google.com</owner>
+  <owner>xingliu@ch40m1um.qjz9zk</owner>
+  <owner>clank-downloads@9oo91e.qjz9zk</owner>
   <summary>
     Android: Records whether download dialog will be shown to the user. Recorded
     when the download preference is initialized in native.
@@ -557,8 +557,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="MobileDownload.Location.Dialog.DirectoryType"
     enum="DownloadLocationDirectoryType" expires_after="2021-03-01">
-  <owner>xingliu@chromium.org</owner>
-  <owner>clank-downloads@google.com</owner>
+  <owner>xingliu@ch40m1um.qjz9zk</owner>
+  <owner>clank-downloads@9oo91e.qjz9zk</owner>
   <summary>
     Records the directory type when the user selects the download directory
     through download location dialog. May be recorded even when the user didn't
@@ -568,8 +568,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="MobileDownload.Location.Dialog.Result"
     enum="DownloadLocationDialogResult" expires_after="2021-03-01">
-  <owner>xingliu@chromium.org</owner>
-  <owner>clank-downloads@google.com</owner>
+  <owner>xingliu@ch40m1um.qjz9zk</owner>
+  <owner>clank-downloads@9oo91e.qjz9zk</owner>
   <summary>
     Records whether the user accepted or dismissed the dialog to select a
     download location.
@@ -578,8 +578,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="MobileDownload.Location.Dialog.Type"
     enum="DownloadLocationDialogType" expires_after="2021-03-01">
-  <owner>xingliu@chromium.org</owner>
-  <owner>clank-downloads@google.com</owner>
+  <owner>xingliu@ch40m1um.qjz9zk</owner>
+  <owner>clank-downloads@9oo91e.qjz9zk</owner>
   <summary>
     Records the download location dialog type when the dialog is shown to the
     user.
@@ -588,9 +588,9 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="MobileDownload.Location.DirectoryType"
     enum="DownloadLocationDirectoryType" expires_after="2021-03-01">
-  <owner>xingliu@chromium.org</owner>
-  <owner>dtrainor@chromium.org</owner>
-  <owner>qinmin@chromium.org</owner>
+  <owner>xingliu@ch40m1um.qjz9zk</owner>
+  <owner>dtrainor@ch40m1um.qjz9zk</owner>
+  <owner>qinmin@ch40m1um.qjz9zk</owner>
   <summary>
     Records the directory type shown when a user opens download location dialog
     or download location setting. This is recorded when the directory provider
@@ -600,15 +600,15 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="MobileDownload.Location.Download.DirectoryType"
     enum="DownloadLocationDirectoryType" expires_after="2021-03-01">
-  <owner>xingliu@chromium.org</owner>
-  <owner>clank-downloads@google.com</owner>
+  <owner>xingliu@ch40m1um.qjz9zk</owner>
+  <owner>clank-downloads@9oo91e.qjz9zk</owner>
   <summary>Records the directory type when download is completed.</summary>
 </histogram>
 
 <histogram name="MobileDownload.Location.Setting.DirectoryType"
     enum="DownloadLocationDirectoryType" expires_after="2021-03-01">
-  <owner>xingliu@chromium.org</owner>
-  <owner>clank-downloads@google.com</owner>
+  <owner>xingliu@ch40m1um.qjz9zk</owner>
+  <owner>clank-downloads@9oo91e.qjz9zk</owner>
   <summary>
     Records the directory type when the user selects the download directory
     through download preference. May be recorded even when the user didn't
@@ -618,7 +618,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram base="true" name="MobileDownload.ResumptionsCount" units="units"
     expires_after="2020-04-05">
-  <owner>qinmin@chromium.org</owner>
+  <owner>qinmin@ch40m1um.qjz9zk</owner>
   <summary>
     Android: Records the number of resumptions for a download by resumption
     type. For all resumption types, this is recorded when a download is
@@ -630,7 +630,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="MobileDownload.StoragePermission"
     enum="MobileDownloadStoragePermission" expires_after="M82">
-  <owner>qinmin@chromium.org</owner>
+  <owner>qinmin@ch40m1um.qjz9zk</owner>
   <summary>
     Android: Records various counts when requesting the storage permission.
   </summary>
@@ -639,8 +639,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram
     name="MobileFre.CctTos.EnterprisePolicyCheckSpeed{MobileFreInflationSpeedComparison}"
     units="ms" expires_after="2021-07-31">
-  <owner>skym@chromium.org</owner>
-  <owner>wenyufu@chromium.org</owner>
+  <owner>skym@ch40m1um.qjz9zk</owner>
+  <owner>wenyufu@ch40m1um.qjz9zk</owner>
   <summary>
     Android: Records the time it takes from object initialization to the
     enterprise policy check completing. This check is often skipped when its
@@ -654,8 +654,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram
     name="MobileFre.CctTos.IsDeviceOwnedCheckSpeed{MobileFreInflationSpeedComparison}"
     units="ms" expires_after="2021-07-31">
-  <owner>skym@chromium.org</owner>
-  <owner>wenyufu@chromium.org</owner>
+  <owner>skym@ch40m1um.qjz9zk</owner>
+  <owner>wenyufu@ch40m1um.qjz9zk</owner>
   <summary>
     Android: Records the time it takes from object initialization to the device
     ownership check completing. Histogram has suffixes depending if the timing
@@ -667,8 +667,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="MobileFre.CctTos.LoadingDuration" units="ms"
     expires_after="2021-07-31">
-  <owner>skym@chromium.org</owner>
-  <owner>wenyufu@chromium.org</owner>
+  <owner>skym@ch40m1um.qjz9zk</owner>
+  <owner>wenyufu@ch40m1um.qjz9zk</owner>
   <summary>
     Android: Records how long it takes to load the enterprise CCT/ToS fragment.
   </summary>
@@ -676,8 +676,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="MobileFre.ChildAccountStatusDuration" units="ms"
     expires_after="2021-07-31">
-  <owner>skym@chromium.org</owner>
-  <owner>wenyufu@chromium.org</owner>
+  <owner>skym@ch40m1um.qjz9zk</owner>
+  <owner>wenyufu@ch40m1um.qjz9zk</owner>
   <summary>
     Android: The amount of time spent fetching child account status during the
     FRE. Not applicable for light weight FRE.
@@ -686,8 +686,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram base="true" name="MobileFre.FragmentInflationSpeed" units="ms"
     expires_after="2021-07-31">
-  <owner>skym@chromium.org</owner>
-  <owner>wenyufu@chromium.org</owner>
+  <owner>skym@ch40m1um.qjz9zk</owner>
+  <owner>wenyufu@ch40m1um.qjz9zk</owner>
   <summary>
     Android: Enterprise FRE cannot fully show the first page until the
     appRestrictions call returns. This suffixed histogram measures when fragment
@@ -699,8 +699,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram base="true" name="MobileFre.FromLaunch" units="ms"
     expires_after="2021-07-31">
-  <owner>skym@chromium.org</owner>
-  <owner>wenyufu@chromium.org</owner>
+  <owner>skym@ch40m1um.qjz9zk</owner>
+  <owner>wenyufu@ch40m1um.qjz9zk</owner>
   <summary>
     Android: This suffixed histogram represents the amount of time from when the
     FRE intent was initially constructed, until some event in the future occurs.
@@ -710,11 +710,11 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="MobileFre.Progress" enum="MobileFreProgress"
     expires_after="2021-02-14">
-  <owner>bsazonov@chromium.org</owner>
-  <owner>msarda@chromium.org</owner>
-  <owner>droger@chromium.org</owner>
-  <owner>gogerald@chromium.org</owner>
-  <owner>chrome-signin-team@google.com</owner>
+  <owner>bsazonov@ch40m1um.qjz9zk</owner>
+  <owner>msarda@ch40m1um.qjz9zk</owner>
+  <owner>droger@ch40m1um.qjz9zk</owner>
+  <owner>gogerald@ch40m1um.qjz9zk</owner>
+  <owner>chrome-signin-team@9oo91e.qjz9zk</owner>
   <summary>
     Android: Records which states of the &quot;first run experience&quot; have
     been reached. Each bucket represents a state and recorded everytime the
@@ -725,7 +725,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="MobileFre.SignInChoice" enum="MobileFreSignInChoice"
     expires_after="M82">
-  <owner>aruslan@chromium.org</owner>
+  <owner>aruslan@ch40m1um.qjz9zk</owner>
   <summary>
     Android: How the user left the sign-in part of the &quot;first run
     experience&quot; activity (M-38+).
@@ -734,7 +734,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="MobileFullscreenVideo.DurationAfterPotraitRotation" units="ms"
     expires_after="M85">
-  <owner>qinmin@chromium.org</owner>
+  <owner>qinmin@ch40m1um.qjz9zk</owner>
   <summary>
     Android: Records the duration that a fullscreen video is played after device
     rotates from portrait to landscape mode for the first time, and before it
@@ -748,7 +748,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="MobileFullscreenVideo.LandscapeDuration" units="ms"
     expires_after="M85">
-  <owner>qinmin@chromium.org</owner>
+  <owner>qinmin@ch40m1um.qjz9zk</owner>
   <summary>
     Android: Records the duration that a fullscreen video is played in landscape
     mode. If a video starts playing in landscape mode, and then it is switched
@@ -760,7 +760,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="MobileFullscreenVideo.LandscapeRotation" enum="BooleanEnabled"
     expires_after="M85">
-  <owner>qinmin@chromium.org</owner>
+  <owner>qinmin@ch40m1um.qjz9zk</owner>
   <summary>
     Android: Records whether a fullscreen video is switched from landscape to
     portrait mode at any point during playback.
@@ -769,7 +769,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="MobileFullscreenVideo.OrientationPortrait"
     enum="BooleanEnabled" expires_after="M85">
-  <owner>qinmin@chromium.org</owner>
+  <owner>qinmin@ch40m1um.qjz9zk</owner>
   <summary>
     Android: Records the device orientation when a video enters fullscreen. The
     value is true if device orientation is portrait, or false otherwise. The
@@ -779,7 +779,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="MobileFullscreenVideo.PortraitDuration" units="ms"
     expires_after="M85">
-  <owner>qinmin@chromium.org</owner>
+  <owner>qinmin@ch40m1um.qjz9zk</owner>
   <summary>
     Android: Records the duration that a fullscreen video is played in portrait
     mode. If a video starts playing in portrait mode, and then it is switched
@@ -791,7 +791,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="MobileFullscreenVideo.PortraitRotation" enum="BooleanEnabled"
     expires_after="M85">
-  <owner>qinmin@chromium.org</owner>
+  <owner>qinmin@ch40m1um.qjz9zk</owner>
   <summary>
     Android: Records whether a fullscreen video is switched from portrait to
     landscape mode at any point during playback.
@@ -800,7 +800,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="MobileFullscreenVideo.VideoPortrait" enum="BooleanEnabled"
     expires_after="M85">
-  <owner>qinmin@chromium.org</owner>
+  <owner>qinmin@ch40m1um.qjz9zk</owner>
   <summary>
     Android: Records whether a video has a larger height than width when it
     enters the fullscreen mode.
@@ -809,8 +809,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="MobileIntent.FirstPartyToInternalScheme" enum="Boolean"
     expires_after="2021-01-01">
-  <owner>peconn@chromium.org</owner>
-  <owner>peter@chromium.org</owner>
+  <owner>peconn@ch40m1um.qjz9zk</owner>
+  <owner>peter@ch40m1um.qjz9zk</owner>
   <summary>
     Recorded when Chrome on Android is launched to an internal Chrome scheme
     (chrome://, chrome-native://, about://) by a first party app (not Chrome).
@@ -823,7 +823,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
     expires_after="never">
 <!-- expires-never: Navigation (external-apps) heartbeat metric for Android. -->
 
-  <owner>tedchoc@chromium.org</owner>
+  <owner>tedchoc@ch40m1um.qjz9zk</owner>
   <summary>
     Android: Count of page loads started by intents from external apps. In M87
     the reporting of this histogram was updated to exclude intents sent from
@@ -833,8 +833,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="MobileOmnibox.LongPressPasteAge" units="ms"
     expires_after="2021-02-14">
-  <owner>gangwu@chromium.org</owner>
-  <owner>jdonnelly@chromium.org</owner>
+  <owner>gangwu@ch40m1um.qjz9zk</owner>
+  <owner>jdonnelly@ch40m1um.qjz9zk</owner>
   <summary>
     Recorded when user long presses and pastes clipboard content into omnibox.
     The value indicates the estimated age of the clipboard.
@@ -845,9 +845,9 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="MobileOmnibox.PopupOpenDuration" units="ms"
     expires_after="2022-02-02">
-  <owner>stkhapugin@chromium.org</owner>
-  <owner>mpearson@chromium.org</owner>
-  <owner>jdonnelly@chromium.org</owner>
+  <owner>stkhapugin@ch40m1um.qjz9zk</owner>
+  <owner>mpearson@ch40m1um.qjz9zk</owner>
+  <owner>jdonnelly@ch40m1um.qjz9zk</owner>
   <summary>
     Recorded when the omnibox popup is closed. Indicates the duration it was
     open.
@@ -856,8 +856,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="MobileOmnibox.PressedClipboardSuggestionAge" units="ms"
     expires_after="2021-02-14">
-  <owner>jdonnelly@chromium.org</owner>
-  <owner>mpearson@chromium.org</owner>
+  <owner>jdonnelly@ch40m1um.qjz9zk</owner>
+  <owner>mpearson@ch40m1um.qjz9zk</owner>
   <summary>
     When a user presses an omnibox suggestion based on the content of the
     clipboard, this histograms records how long ago Chrome detected a change in
@@ -872,8 +872,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="MobileSignInPromo.BookmarkManager.ImpressionsTilDismiss"
     units="impressions" expires_after="2021-04-20">
-  <owner>jlebel@chromium.org</owner>
-  <owner>chrome-signin-team@google.com</owner>
+  <owner>jlebel@ch40m1um.qjz9zk</owner>
+  <owner>chrome-signin-team@9oo91e.qjz9zk</owner>
   <summary>
     Counts how many times the signin promo is implicitly dismissed (by closing
     the bookmark manager) per impression.
@@ -882,8 +882,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="MobileSignInPromo.BookmarkManager.ImpressionsTilSigninButtons"
     units="impressions" expires_after="2021-04-20">
-  <owner>jlebel@chromium.org</owner>
-  <owner>chrome-signin-team@google.com</owner>
+  <owner>jlebel@ch40m1um.qjz9zk</owner>
+  <owner>chrome-signin-team@9oo91e.qjz9zk</owner>
   <summary>
     Counts how many times one of the &quot;sign in&quot; buttons (any of the
     signed-out &quot;Sign in to Chrome&quot; button, the &quot;Continue as
@@ -894,8 +894,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="MobileSignInPromo.BookmarkManager.ImpressionsTilXButton"
     units="impressions" expires_after="2021-04-20">
-  <owner>jlebel@chromium.org</owner>
-  <owner>chrome-signin-team@google.com</owner>
+  <owner>jlebel@ch40m1um.qjz9zk</owner>
+  <owner>chrome-signin-team@9oo91e.qjz9zk</owner>
   <summary>
     Counts how many times the explicit &quot;X&quot;-to-close button is clicked
     per impression.
@@ -904,8 +904,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="MobileSignInPromo.SettingsManager.ImpressionsTilDismiss"
     units="impressions" expires_after="2021-04-20">
-  <owner>jlebel@chromium.org</owner>
-  <owner>chrome-signin-team@google.com</owner>
+  <owner>jlebel@ch40m1um.qjz9zk</owner>
+  <owner>chrome-signin-team@9oo91e.qjz9zk</owner>
   <summary>
     Counts how many times the signin promo is implicitly dismissed (by closing
     the settings view) per impression.
@@ -914,8 +914,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="MobileSignInPromo.SettingsManager.ImpressionsTilSigninButtons"
     units="impressions" expires_after="2021-04-20">
-  <owner>jlebel@chromium.org</owner>
-  <owner>chrome-signin-team@google.com</owner>
+  <owner>jlebel@ch40m1um.qjz9zk</owner>
+  <owner>chrome-signin-team@9oo91e.qjz9zk</owner>
   <summary>
     Counts how many times one of the &quot;sign in&quot; buttons (any of the
     signed-out &quot;Sign in to Chrome&quot; button, the &quot;Continue as
@@ -926,8 +926,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="MobileSignInPromo.SettingsManager.ImpressionsTilXButton"
     units="impressions" expires_after="2021-04-20">
-  <owner>jlebel@chromium.org</owner>
-  <owner>chrome-signin-team@google.com</owner>
+  <owner>jlebel@ch40m1um.qjz9zk</owner>
+  <owner>chrome-signin-team@9oo91e.qjz9zk</owner>
   <summary>
     Counts how many times the explicit &quot;X&quot;-to-close button is clicked
     per impression.
@@ -936,8 +936,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="MobileStartup.DailyLaunchCount" units="units"
     expires_after="2021-03-01">
-  <owner>tedchoc@chromium.org</owner>
-  <owner>twellington@chromium.org</owner>
+  <owner>tedchoc@ch40m1um.qjz9zk</owner>
+  <owner>twellington@ch40m1um.qjz9zk</owner>
   <summary>
     Android only.
 
@@ -969,9 +969,9 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="MobileStartup.IntentToCreationTime" units="ms"
     expires_after="2021-03-01">
-  <owner>tedchoc@chromium.org</owner>
-  <owner>twellington@chromium.org</owner>
-  <owner>yfriedman@chromium.org</owner>
+  <owner>tedchoc@ch40m1um.qjz9zk</owner>
+  <owner>twellington@ch40m1um.qjz9zk</owner>
+  <owner>yfriedman@ch40m1um.qjz9zk</owner>
   <summary>
     Android: The time it takes from creating an intent for ChromeActivity to
     activity creation. This includes activity creation time spent in the
@@ -981,8 +981,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="MobileStartup.LaunchType" enum="LaunchType"
     expires_after="2021-03-01">
-  <owner>tedchoc@chromium.org</owner>
-  <owner>twellington@chromium.org</owner>
+  <owner>tedchoc@ch40m1um.qjz9zk</owner>
+  <owner>twellington@ch40m1um.qjz9zk</owner>
   <summary>
     The type of launching Chrome mobile app, e.g launch by hitting icon.
 
@@ -993,7 +993,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram base="true" name="MobileStartup.ToolbarInflationTime" units="ms"
     expires_after="M82">
-  <owner>pasko@chromium.org</owner>
+  <owner>pasko@ch40m1um.qjz9zk</owner>
   <summary>
     Android: The time spent performing toolbar layout inflation.
   </summary>

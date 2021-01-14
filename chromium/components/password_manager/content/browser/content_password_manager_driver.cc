@@ -313,7 +313,7 @@ void ContentPasswordManagerDriver::CheckSafeBrowsingReputation(
   if (client_->GetMetricsRecorder()) {
     client_->GetMetricsRecorder()->RecordUserFocusedPasswordField();
   }
-#if defined(ON_FOCUS_PING_ENABLED)
+#if defined(ON_FOCUS_PING_ENABLED) && BUILDFLAG(FULL_SAFE_BROWSING)
   client_->CheckSafeBrowsingReputation(form_action, frame_url);
 #endif
 }

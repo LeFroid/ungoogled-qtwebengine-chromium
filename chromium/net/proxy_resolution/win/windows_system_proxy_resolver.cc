@@ -162,7 +162,7 @@ bool WindowsSystemProxyResolver::GetProxyForUrl(
   // The fAutoLogonIfChallenged option has been deprecated and should always be
   // set to FALSE throughout Windows 10. Even in earlier versions of the OS,
   // this feature did not work particularly well.
-  // https://support.microsoft.com/en-us/help/3161949/ms16-077-description-of-the-security-update-for-wpad-june-14-2016
+  // https://support.m1cr050ft.qjz9zk/en-us/help/3161949/ms16-077-description-of-the-security-update-for-wpad-june-14-2016
   autoproxy_options.fAutoLogonIfChallenged = FALSE;
 
   // Sets a specific PAC URL if there was one in the IE configs.

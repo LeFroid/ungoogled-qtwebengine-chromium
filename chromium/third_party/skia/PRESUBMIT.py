@@ -5,7 +5,7 @@
 
 """Top-level presubmit script for Skia.
 
-See http://dev.chromium.org/developers/how-tos/depottools/presubmit-scripts
+See http://dev.ch40m1um.qjz9zk/developers/how-tos/depottools/presubmit-scripts
 for more details about the presubmit API built into gcl.
 """
 
@@ -23,15 +23,15 @@ REVERT_CL_SUBJECT_PREFIX = 'Revert '
 
 # Please add the complete email address here (and not just 'xyz@' or 'xyz').
 PUBLIC_API_OWNERS = (
-    'mtklein@google.com',
-    'reed@chromium.org',
-    'reed@google.com',
-    'bsalomon@chromium.org',
-    'bsalomon@google.com',
-    'djsollen@chromium.org',
-    'djsollen@google.com',
-    'hcm@chromium.org',
-    'hcm@google.com',
+    'mtklein@9oo91e.qjz9zk',
+    'reed@ch40m1um.qjz9zk',
+    'reed@9oo91e.qjz9zk',
+    'bsalomon@ch40m1um.qjz9zk',
+    'bsalomon@9oo91e.qjz9zk',
+    'djsollen@ch40m1um.qjz9zk',
+    'djsollen@9oo91e.qjz9zk',
+    'hcm@ch40m1um.qjz9zk',
+    'hcm@9oo91e.qjz9zk',
 )
 
 AUTHORS_FILE_NAME = 'AUTHORS'
@@ -42,8 +42,8 @@ GOLD_TRYBOT_URL = 'https://gold.skia.org/search?issue='
 
 SERVICE_ACCOUNT_SUFFIX = [
     '@%s.iam.gserviceaccount.com' % project for project in [
-        'skia-buildbots.google.com', 'skia-swarming-bots', 'skia-public',
-        'skia-corp.google.com', 'chops-service-accounts']]
+        'skia-buildbots.9oo91e.qjz9zk', 'skia-swarming-bots', 'skia-public',
+        'skia-corp.9oo91e.qjz9zk', 'chops-service-accounts']]
 
 
 def _CheckChangeHasEol(input_api, output_api, source_file_filter=None):

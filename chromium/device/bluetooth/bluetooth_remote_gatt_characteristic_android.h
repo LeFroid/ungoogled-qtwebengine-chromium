@@ -114,7 +114,7 @@ class DEVICE_BLUETOOTH_EXPORT BluetoothRemoteGattCharacteristicAndroid
 
  private:
   // Android API characteristic write type flags.
-  // https://developer.android.com/reference/android/bluetooth/BluetoothGattCharacteristic.html
+  // https://developer.8n6r01d.qjz9zk/reference/android/bluetooth/BluetoothGattCharacteristic.html
   enum class AndroidWriteType {
     kNone = 0,
     kNoResponse = 1 << 0,

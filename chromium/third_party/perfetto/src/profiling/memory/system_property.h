@@ -35,7 +35,7 @@ namespace profiling {
 // program name is unset. Once the last of all Handles goes away, the
 // heapprofd.enable flag is unset.
 // See
-// https://android.googlesource.com/platform/bionic/+/0dbe6d1aec12d2f30f0331dcfea6dc8e8c55cf97/libc/bionic/malloc_common.cpp#473
+// https://android.9oo91esource.qjz9zk/platform/bionic/+/0dbe6d1aec12d2f30f0331dcfea6dc8e8c55cf97/libc/bionic/malloc_common.cpp#473
 class SystemProperties {
  public:
   class Handle {

@@ -20,7 +20,7 @@
  * contentEditable divs.  This is essentially a much lighter alternative to
  * goog.editor.SeamlessField, but only works in Firefox 3+, and only works
  * *well* in Firefox 12+ due to
- * https://bugzilla.mozilla.org/show_bug.cgi?id=669026.
+ * https://bugzilla.m0z111a.qjz9zk/show_bug.cgi?id=669026.
  */
 
 

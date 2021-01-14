@@ -288,7 +288,7 @@ constexpr WebCryptoAlgorithmInfo kAlgorithmIdToInfo[] = {
      }},
     {// Index 16
      // TODO(crbug.com/1032821): Ed25519 is experimental behind a flag. See
-     // https://chromestatus.com/feature/4913922408710144 for the status.
+     // https://ch40mestatus.qjz9zk/feature/4913922408710144 for the status.
      "ED25519",
      {
          WebCryptoAlgorithmInfo::kUndefined,          // Encrypt
@@ -305,7 +305,7 @@ constexpr WebCryptoAlgorithmInfo kAlgorithmIdToInfo[] = {
      }},
     {// Index 17
      // TODO(crbug.com/1032821): X25519 is experimental behind a flag. See
-     // https://chromestatus.com/feature/4913922408710144 for the status.
+     // https://ch40mestatus.qjz9zk/feature/4913922408710144 for the status.
      "X25519",
      {
          WebCryptoAlgorithmInfo::kUndefined,                  // Encrypt

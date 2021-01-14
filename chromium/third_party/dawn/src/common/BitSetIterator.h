@@ -23,7 +23,7 @@
 #include <limits>
 
 // This is ANGLE's BitSetIterator class with a customizable return type
-// TODO(cwallez@chromium.org): it could be optimized, in particular when N <= 64
+// TODO(cwallez@ch40m1um.qjz9zk): it could be optimized, in particular when N <= 64
 
 template <typename T>
 T roundUp(const T value, const T alignment) {

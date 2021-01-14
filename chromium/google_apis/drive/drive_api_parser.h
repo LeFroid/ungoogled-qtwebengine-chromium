@@ -33,7 +33,7 @@ class RepeatedMessageConverter;
 namespace google_apis {
 
 // About resource represents the account information about the current user.
-// https://developers.google.com/drive/v2/reference/about
+// https://developers.9oo91e.qjz9zk/drive/v2/reference/about
 class AboutResource {
  public:
   AboutResource();
@@ -90,7 +90,7 @@ class AboutResource {
 // Capabilities of a Team Drive indicate the permissions granted to the user
 // for the Team Drive and items within the Team Drive.
 // See "capabilities" in
-// https://developers.google.com/drive/v2/reference/teamdrives#resource.
+// https://developers.9oo91e.qjz9zk/drive/v2/reference/teamdrives#resource.
 class TeamDriveCapabilities {
  public:
   TeamDriveCapabilities();
@@ -225,7 +225,7 @@ class TeamDriveResource {
 };
 
 // TeamDriveList represents a collection of Team Drives.
-// https://developers.google.com/drive/v2/reference/teamdrives/list
+// https://developers.9oo91e.qjz9zk/drive/v2/reference/teamdrives/list
 class TeamDriveList {
  public:
   TeamDriveList();
@@ -273,7 +273,7 @@ class TeamDriveList {
 };
 
 // ParentReference represents a directory.
-// https://developers.google.com/drive/v2/reference/parents
+// https://developers.9oo91e.qjz9zk/drive/v2/reference/parents
 class ParentReference {
  public:
   ParentReference();
@@ -301,7 +301,7 @@ class ParentReference {
 };
 
 // FileLabels represents labels for file or folder.
-// https://developers.google.com/drive/v2/reference/files
+// https://developers.9oo91e.qjz9zk/drive/v2/reference/files
 class FileLabels {
  public:
   FileLabels();
@@ -335,7 +335,7 @@ class FileLabels {
 };
 
 // ImageMediaMetadata represents image metadata for a file.
-// https://developers.google.com/drive/v2/reference/files
+// https://developers.9oo91e.qjz9zk/drive/v2/reference/files
 class ImageMediaMetadata {
  public:
   ImageMediaMetadata();
@@ -376,7 +376,7 @@ class ImageMediaMetadata {
 // Capabilities of a file resource indicate the permissions granted to the user
 // for the file (or items within the folder).
 // See "capabilities" in
-// https://developers.google.com/drive/v2/reference/files#resource.
+// https://developers.9oo91e.qjz9zk/drive/v2/reference/files#resource.
 class FileResourceCapabilities {
  public:
   FileResourceCapabilities();
@@ -498,7 +498,7 @@ class FileResourceCapabilities {
 };
 
 // FileResource represents a file or folder metadata in Drive.
-// https://developers.google.com/drive/v2/reference/files
+// https://developers.9oo91e.qjz9zk/drive/v2/reference/files
 class FileResource {
  public:
   // Link to open a file resource on a web app with |app_id|.
@@ -688,7 +688,7 @@ class FileResource {
 };
 
 // FileList represents a collection of files and folders.
-// https://developers.google.com/drive/v2/reference/files/list
+// https://developers.9oo91e.qjz9zk/drive/v2/reference/files/list
 class FileList {
  public:
   FileList();
@@ -736,7 +736,7 @@ class FileList {
 };
 
 // ChangeResource represents a change in a file.
-// https://developers.google.com/drive/v2/reference/changes
+// https://developers.9oo91e.qjz9zk/drive/v2/reference/changes
 class ChangeResource {
  public:
   enum ChangeType {
@@ -848,7 +848,7 @@ class ChangeResource {
 };
 
 // ChangeList represents a set of changes in the drive.
-// https://developers.google.com/drive/v2/reference/changes/list
+// https://developers.9oo91e.qjz9zk/drive/v2/reference/changes/list
 class ChangeList {
  public:
   ChangeList();
@@ -914,7 +914,7 @@ class ChangeList {
 
 // StartPageToken represets the starting pageToken for listing changes in the
 // users corpus or in a team drive.
-// https://developers.google.com/drive/v2/reference/changes/getStartPageToken
+// https://developers.9oo91e.qjz9zk/drive/v2/reference/changes/getStartPageToken
 class StartPageToken {
  public:
   StartPageToken();

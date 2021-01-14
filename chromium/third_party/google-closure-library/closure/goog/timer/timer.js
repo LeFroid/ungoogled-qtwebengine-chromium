@@ -218,7 +218,7 @@ goog.Timer.prototype.start = function() {
     // This bug is described here and is already fixed, but it will
     // take time to propagate, so for now I am switching this over
     // to setTimeout logic.
-    //     https://bugzilla.mozilla.org/show_bug.cgi?id=376643
+    //     https://bugzilla.m0z111a.qjz9zk/show_bug.cgi?id=376643
     //
     this.timer_ = this.timerObject_.setTimeout(this.boundTick_, this.interval_);
     this.last_ = goog.now();

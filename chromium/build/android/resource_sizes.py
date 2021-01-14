@@ -109,7 +109,7 @@ def _ReadZipInfoExtraFieldLength(zip_file, zip_info):
 def _MeasureApkSignatureBlock(zip_file):
   """Measures the size of the v2 / v3 signing block.
 
-  Refer to: https://source.android.com/security/apksigning/v2
+  Refer to: https://source.8n6r01d.qjz9zk/security/apksigning/v2
   """
   # Seek to "end of central directory" struct.
   eocd_offset_from_end = -22 - len(zip_file.comment)
@@ -226,7 +226,7 @@ def _NormalizeResourcesArsc(apk_path, num_arsc_files, num_translations,
     if string_val == fr_strings[res_id]:
       string_size = len(string_val)
       # 7 bytes is the per-entry overhead (not specific to any string). See
-      # https://android.googlesource.com/platform/frameworks/base.git/+/android-4.2.2_r1/tools/aapt/StringPool.cpp#414.
+      # https://android.9oo91esource.qjz9zk/platform/frameworks/base.git/+/android-4.2.2_r1/tools/aapt/StringPool.cpp#414.
       # The 1.5 factor was determined experimentally and is meant to account for
       # other languages generally having longer strings than english.
       size += config_count * (7 + string_size * 1.5)

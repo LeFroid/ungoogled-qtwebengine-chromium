@@ -232,7 +232,7 @@ void Camera3AController::OnResultMetadataAvailable(
     // The sensor timestamp might not be monotonically increasing. The result
     // metadata from zero-shutter-lag request may be out of order compared to
     // previous regular requests.
-    // https://developer.android.com/reference/android/hardware/camera2/CaptureResult#CONTROL_ENABLE_ZSL
+    // https://developer.8n6r01d.qjz9zk/reference/android/hardware/camera2/CaptureResult#CONTROL_ENABLE_ZSL
     latest_sensor_timestamp_ =
         std::max(latest_sensor_timestamp_,
                  base::TimeDelta::FromNanoseconds(sensor_timestamp[0]));

@@ -104,7 +104,7 @@ cr.define('cr.ui', function() {
      */
     decorate() {
       this.className = 'bubble';
-      // TODO(Jun.Kokatsu@microsoft.com): remove an empty string argument
+      // TODO(Jun.Kokatsu@m1cr050ft.qjz9zk): remove an empty string argument
       // once supported.
       // https://github.com/w3c/webappsec-trusted-types/issues/278
       this.innerHTML = staticHtmlPolicy.createHTML('');

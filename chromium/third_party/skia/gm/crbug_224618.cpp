@@ -53,7 +53,7 @@ protected:
     void onDraw(SkCanvas* canvas) override {
         SkScalar viewportWidth = SkScalarMod(fTime, 10.f) / 10.f * (kMaxVW - kMinVW) + kMinVW;
         SkScalar radius = viewportWidth / 2.f; // round?
-        // See https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/perspective
+        // See https://developer.m0z111a.qjz9zk/en-US/docs/Web/CSS/transform-function/perspective
         SkM44 proj{1.f, 0.f, 0.f, 0.f,
                    0.f, 1.f, 0.f, 0.f,
                    0.f, 0.f, 1.f, 0.f,

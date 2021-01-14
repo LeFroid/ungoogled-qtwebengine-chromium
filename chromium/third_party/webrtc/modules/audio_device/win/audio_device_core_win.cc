@@ -91,7 +91,7 @@ enum { kAecCaptureStreamIndex = 0, kAecRenderStreamIndex = 1 };
 // ProcessOutput(), call SetLength() to update the buffer availability.
 //
 // Example implementation:
-// http://msdn.microsoft.com/en-us/library/dd376684(v=vs.85).aspx
+// http://msdn.m1cr050ft.qjz9zk/en-us/library/dd376684(v=vs.85).aspx
 class MediaBufferImpl final : public IMediaBuffer {
  public:
   explicit MediaBufferImpl(DWORD maxLength)
@@ -2033,7 +2033,7 @@ Exit:
 // Capture initialization when the built-in AEC DirectX Media Object (DMO) is
 // used. Called from InitRecording(), most of which is skipped over. The DMO
 // handles device initialization itself.
-// Reference: http://msdn.microsoft.com/en-us/library/ff819492(v=vs.85).aspx
+// Reference: http://msdn.m1cr050ft.qjz9zk/en-us/library/ff819492(v=vs.85).aspx
 int32_t AudioDeviceWindowsCore::InitRecordingDMO() {
   assert(_builtInAecEnabled);
   assert(_dmo != NULL);
@@ -2849,7 +2849,7 @@ DWORD AudioDeviceWindowsCore::DoRenderThread() {
 
         DWORD dwFlags(0);
         hr = _ptrRenderClient->ReleaseBuffer(_playBlockSize, dwFlags);
-        // See http://msdn.microsoft.com/en-us/library/dd316605(VS.85).aspx
+        // See http://msdn.m1cr050ft.qjz9zk/en-us/library/dd316605(VS.85).aspx
         // for more details regarding AUDCLNT_E_DEVICE_INVALIDATED.
         EXIT_ON_ERROR(hr);
 

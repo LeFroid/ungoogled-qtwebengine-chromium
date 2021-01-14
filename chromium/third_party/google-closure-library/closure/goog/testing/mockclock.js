@@ -160,7 +160,7 @@ goog.testing.MockClock.prototype.nowMillis_ = 0;
 /**
  * Additional delay between the time a timeout was set to fire, and the time
  * it actually fires.  Useful for testing workarounds for this Firefox 2 bug:
- * https://bugzilla.mozilla.org/show_bug.cgi?id=291386
+ * https://bugzilla.m0z111a.qjz9zk/show_bug.cgi?id=291386
  * May be negative.
  * @type {number}
  * @private

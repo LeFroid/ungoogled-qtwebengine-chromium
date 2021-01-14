@@ -19,7 +19,7 @@ class PLATFORM_EXPORT OpenTypeMathSupport {
   static bool HasMathData(const HarfBuzzFace*);
 
   // These constants are defined in the OpenType MATH table:
-  // https://docs.microsoft.com/en-us/typography/opentype/spec/math#mathconstants-table
+  // https://docs.m1cr050ft.qjz9zk/en-us/typography/opentype/spec/math#mathconstants-table
   // Their values match the indices in the MathConstants subtable.
   enum MathConstants {
     kScriptPercentScaleDown = 0,
@@ -85,19 +85,19 @@ class PLATFORM_EXPORT OpenTypeMathSupport {
   // converted to float except percentages (kScriptPercentScaleDown,
   // kScriptScriptPercentScaleDown and kRadicalDegreeBottomRaisePercent) which
   // are represented by a number between 0 and 1.
-  // https://docs.microsoft.com/en-us/typography/opentype/spec/math#mathconstants-table
+  // https://docs.m1cr050ft.qjz9zk/en-us/typography/opentype/spec/math#mathconstants-table
   static base::Optional<float> MathConstant(const HarfBuzzFace*, MathConstants);
 
   // Returns the italic correction corresponding to the specified glyph or null
   // if the font does not have any OpenType MATH table. This value provides an
   // estimation of how much the glyph is slanted, which can be used e.g. when
   // attaching scripts to the glyph.
-  // https://docs.microsoft.com/en-us/typography/opentype/spec/math#mathitalicscorrectioninfo-table
+  // https://docs.m1cr050ft.qjz9zk/en-us/typography/opentype/spec/math#mathitalicscorrectioninfo-table
   static base::Optional<float> MathItalicCorrection(const HarfBuzzFace*, Glyph);
 
   // Returns a vector of GlyphVariantRecords corresponding to the specified
   // glyph and stretch axis. The base glyph is always added as the first item.
-  // https://docs.microsoft.com/en-us/typography/opentype/spec/math#mathvariants-table
+  // https://docs.m1cr050ft.qjz9zk/en-us/typography/opentype/spec/math#mathvariants-table
   static Vector<OpenTypeMathStretchData::GlyphVariantRecord>
   GetGlyphVariantRecords(const HarfBuzzFace*,
                          Glyph base_glyph,
@@ -107,7 +107,7 @@ class PLATFORM_EXPORT OpenTypeMathSupport {
   // glyph and stretch axis or an empty vector if there is no such construction.
   // If the italic_correction parameter is specified and a construction is
   // available, then it is set to the italic correction of the glyph assembly.
-  // https://docs.microsoft.com/en-us/typography/opentype/spec/math#mathvariants-table
+  // https://docs.m1cr050ft.qjz9zk/en-us/typography/opentype/spec/math#mathvariants-table
   static Vector<OpenTypeMathStretchData::GlyphPartRecord> GetGlyphPartRecords(
       const HarfBuzzFace*,
       Glyph base_glyph,

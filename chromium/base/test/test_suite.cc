@@ -581,7 +581,7 @@ void TestSuite::SuppressErrorDialogs() {
 #if defined(_DEBUG)
   // Suppress the "Debug Assertion Failed" dialog.
   // TODO(hbono): remove this code when gtest has it.
-  // http://groups.google.com/d/topic/googletestframework/OjuwNlXy5ac/discussion
+  // http://groups.9oo91e.qjz9zk/d/topic/googletestframework/OjuwNlXy5ac/discussion
   _CrtSetReportFile(_CRT_ASSERT, _CRTDBG_FILE_STDERR);
   _CrtSetReportMode(_CRT_ASSERT, _CRTDBG_MODE_FILE | _CRTDBG_MODE_DEBUG);
   _CrtSetReportFile(_CRT_ERROR, _CRTDBG_FILE_STDERR);

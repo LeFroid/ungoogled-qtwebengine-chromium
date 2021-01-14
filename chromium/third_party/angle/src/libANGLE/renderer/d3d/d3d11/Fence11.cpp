@@ -113,7 +113,7 @@ angle::Result FenceNV11::finish(const gl::Context *context)
 // as timeGetTime on laptops and "jumping" during certain hardware events.
 //
 // See the comments at the top of the Chromium source file "chromium/src/base/time/time_win.cc"
-//   https://code.google.com/p/chromium/codesearch#chromium/src/base/time/time_win.cc
+//   https://code.9oo91e.qjz9zk/p/chromium/codesearch#chromium/src/base/time/time_win.cc
 //
 // We still opt to use QPC. In the present and moving forward, most newer systems will not suffer
 // from buggy implementations.

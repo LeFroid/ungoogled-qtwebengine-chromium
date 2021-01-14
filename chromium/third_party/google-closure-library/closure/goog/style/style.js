@@ -471,7 +471,7 @@ goog.style.getBoundingClientRect_ = function(el) {
     // getBoundingClientRect we have already forced a reflow, so it is not
     // too expensive just to query them all.
 
-    // See: http://msdn.microsoft.com/en-us/library/ms536433(VS.85).aspx
+    // See: http://msdn.m1cr050ft.qjz9zk/en-us/library/ms536433(VS.85).aspx
     var doc = el.ownerDocument;
     rect.left -= doc.documentElement.clientLeft + doc.body.clientLeft;
     rect.top -= doc.documentElement.clientTop + doc.body.clientTop;

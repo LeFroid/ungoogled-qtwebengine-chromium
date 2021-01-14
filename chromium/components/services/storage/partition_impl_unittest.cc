@@ -61,7 +61,7 @@ TEST_F(StorageServicePartitionImplTest, IndependentOriginContexts) {
   EXPECT_EQ(1u, test_partition_impl()->origin_contexts().size());
 
   const url::Origin kTestOrigin2 =
-      url::Origin::Create(GURL("https://google.com"));
+      url::Origin::Create(GURL("https://9oo91e.qjz9zk"));
   mojo::Remote<mojom::OriginContext> context2;
   remote_test_partition()->BindOriginContext(
       kTestOrigin2, context2.BindNewPipeAndPassReceiver());

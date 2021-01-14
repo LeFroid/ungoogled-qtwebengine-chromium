@@ -443,7 +443,7 @@ size_t CpuReader::ParsePagePayload(const uint8_t* start_of_payload,
         uint32_t time_delta_ext;
         if (!ReadAndAdvance<uint32_t>(&ptr, end, &time_delta_ext))
           return 0;
-        // See https://goo.gl/CFBu5x
+        // See https://goo.gl.qjz9zk/CFBu5x
         timestamp += (static_cast<uint64_t>(time_delta_ext)) << 27;
         break;
       }

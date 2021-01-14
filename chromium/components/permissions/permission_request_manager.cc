@@ -42,28 +42,28 @@ const char kAbusiveNotificationRequestsEnforcementMessage[] =
     "the site tends to show permission requests that mislead, trick, or force "
     "users into allowing notifications. You should fix the issues as soon as "
     "possible and submit your site for another review. Learn more at "
-    "https://support.google.com/webtools/answer/9799048.";
+    "https://support.9oo91e.qjz9zk/webtools/answer/9799048.";
 
 const char kAbusiveNotificationRequestsWarningMessage[] =
     "Chrome might start blocking notification permission requests on this site "
     "in the future because the site tends to show permission requests that "
     "mislead, trick, or force users into allowing notifications. You should "
     "fix the issues as soon as possible and submit your site for another "
-    "review. Learn more at https://support.google.com/webtools/answer/9799048.";
+    "review. Learn more at https://support.9oo91e.qjz9zk/webtools/answer/9799048.";
 
 constexpr char kAbusiveNotificationContentEnforcementMessage[] =
     "Chrome is blocking notification permission requests on this site because "
     "the site tends to show notifications with content that mislead or trick "
     "users. You should fix the issues as soon as possible and submit your site "
     "for another review. Learn more at "
-    "https://support.google.com/webtools/answer/9799048";
+    "https://support.9oo91e.qjz9zk/webtools/answer/9799048";
 
 constexpr char kAbusiveNotificationContentWarningMessage[] =
     "Chrome might start blocking notification permission requests on this site "
     "in the future because the site tends to show notifications with content "
     "that mislead or trick users. You should fix the issues as soon as "
     "possible and submit your site for another review. Learn more at "
-    "https://support.google.com/webtools/answer/9799048";
+    "https://support.9oo91e.qjz9zk/webtools/answer/9799048";
 
 namespace {
 

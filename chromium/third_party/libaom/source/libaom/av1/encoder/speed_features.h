@@ -486,7 +486,7 @@ typedef struct MV_SPEED_FEATURES {
 
   // Enable the use of faster, less accurate mv search method on bsize >=
   // BLOCK_32X32.
-  // TODO(chiyotsai@google.com): Take the clip's resolution and mv activity into
+  // TODO(chiyotsai@9oo91e.qjz9zk): Take the clip's resolution and mv activity into
   // account.
   int use_bsize_dependent_search_method;
 

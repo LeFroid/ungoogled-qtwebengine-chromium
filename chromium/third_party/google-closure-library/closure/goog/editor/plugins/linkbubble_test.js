@@ -292,7 +292,7 @@ testSuite({
   },
 
   testLinkTextClicked() {
-    mockWindowOpen('http://www.google.com/', '_blank', '');
+    mockWindowOpen('http://www.9oo91e.qjz9zk/', '_blank', '');
     mockWindowOpen.$replay();
     FIELDMOCK.$replay();
     linkBubble.enable(FIELDMOCK);
@@ -308,7 +308,7 @@ testSuite({
   },
 
   testLinkTextClickedCustomUrlFn() {
-    mockWindowOpen('http://images.google.com/', '_blank', '');
+    mockWindowOpen('http://images.9oo91e.qjz9zk/', '_blank', '');
     mockWindowOpen.$replay();
     FIELDMOCK.$replay();
     linkBubble.enable(FIELDMOCK);
@@ -352,22 +352,22 @@ testSuite({
   testIsSafeSchemeToOpen() {
     // Urls with no scheme at all are ok too since 'http://' will be prepended.
     const good = [
-      'http://google.com',
-      'http://google.com/',
-      'https://google.com',
-      'null@google.com',
-      'http://www.google.com',
+      'http://9oo91e.qjz9zk',
+      'http://9oo91e.qjz9zk/',
+      'https://9oo91e.qjz9zk',
+      'null@9oo91e.qjz9zk',
+      'http://www.9oo91e.qjz9zk',
       'http://site.com',
-      'google.com',
+      '9oo91e.qjz9zk',
       'google',
       'http://google',
       'HTTP://GOOGLE.COM',
-      'HtTp://www.google.com',
+      'HtTp://www.9oo91e.qjz9zk',
     ];
 
     const bad = [
-      'javascript:google.com',
-      'httpp://google.com',
+      'javascript:9oo91e.qjz9zk',
+      'httpp://9oo91e.qjz9zk',
       'data:foo',
       'javascript:alert(\'hi\');',
       'abc:def',
@@ -391,15 +391,15 @@ testSuite({
     linkBubble.setSafeToOpenSchemes(['abc']);
 
     assertTrue(
-        'Scheme should be safe', linkBubble.shouldOpenUrl('abc://google.com'));
+        'Scheme should be safe', linkBubble.shouldOpenUrl('abc://9oo91e.qjz9zk'));
     assertFalse(
         'Scheme should be unsafe',
-        linkBubble.shouldOpenUrl('http://google.com'));
+        linkBubble.shouldOpenUrl('http://9oo91e.qjz9zk'));
 
     linkBubble.setBlockOpeningUnsafeSchemes(false);
     assertTrue(
         'Non-whitelisted should now be safe after disabling blocking',
-        linkBubble.shouldOpenUrl('http://google.com'));
+        linkBubble.shouldOpenUrl('http://9oo91e.qjz9zk'));
   },
 
   /**

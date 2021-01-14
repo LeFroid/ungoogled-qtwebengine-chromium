@@ -1486,7 +1486,7 @@ void AddPrivacyStrings(content::WebUIDataSource* html_source,
   // The link to the Advanced Protection Program landing page, with a referrer
   // from Chrome settings.
   GURL advanced_protection_url(
-      "https://landing.google.com/advancedprotection/");
+      "https://landing.9oo91e.qjz9zk/advancedprotection/");
   advanced_protection_url = net::AppendQueryParameter(advanced_protection_url,
                                                       "utm_source", "Chrome");
   advanced_protection_url = net::AppendQueryParameter(

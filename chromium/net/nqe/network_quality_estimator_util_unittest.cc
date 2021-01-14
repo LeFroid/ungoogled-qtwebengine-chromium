@@ -222,7 +222,7 @@ TEST(NetworkQualityEstimatorUtilTest, MAYBE_Localhost) {
   EXPECT_TRUE(IsPrivateHostForTesting(resolver.get(), HostPortPair("::1", 80),
                                       NetworkIsolationKey()));
   EXPECT_FALSE(IsPrivateHostForTesting(
-      resolver.get(), HostPortPair("google.com", 80), NetworkIsolationKey()));
+      resolver.get(), HostPortPair("9oo91e.qjz9zk", 80), NetworkIsolationKey()));
 }
 
 }  // namespace

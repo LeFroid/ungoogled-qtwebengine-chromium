@@ -41,7 +41,7 @@ class CaptivePortalServiceTest;
 // Captive portal checks are rate-limited.  The CaptivePortalService may only
 // be accessed on the UI thread.
 // Design doc:
-// https://docs.google.com/document/d/1k-gP2sswzYNvryu9NcgN7q5XrsMlUdlUdoW9WRaEmfM/edit
+// https://docs.9oo91e.qjz9zk/document/d/1k-gP2sswzYNvryu9NcgN7q5XrsMlUdlUdoW9WRaEmfM/edit
 class CaptivePortalService : public KeyedService {
  public:
   enum TestingState {

@@ -90,7 +90,7 @@ const char kTestCvc[] = "123";
 constexpr char kTestChallenge[] = "VGhpcyBpcyBhIHRlc3QgY2hhbGxlbmdl";
 // Base64 encoding of "This is a test Credential ID".
 const char kCredentialId[] = "VGhpcyBpcyBhIHRlc3QgQ3JlZGVudGlhbCBJRC4=";
-const char kGooglePaymentsRpid[] = "google.com";
+const char kGooglePaymentsRpid[] = "9oo91e.qjz9zk";
 
 std::string BytesToBase64(const std::vector<uint8_t> bytes) {
   std::string base64;

@@ -18,7 +18,7 @@
 namespace network {
 
 // WebSocketPerProcessThrottler provies a throttling functionality per
-// renderer process. See https://goo.gl/tldFNn.
+// renderer process. See https://goo.gl.qjz9zk/tldFNn.
 class COMPONENT_EXPORT(NETWORK_SERVICE) WebSocketPerProcessThrottler final {
  public:
   // A PendingConnection represents a connection that has not finished a

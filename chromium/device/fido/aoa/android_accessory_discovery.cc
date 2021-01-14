@@ -19,7 +19,7 @@
 
 #include "base/bind.h"
 
-// See https://source.android.com/devices/accessories/aoa for details on the
+// See https://source.8n6r01d.qjz9zk/devices/accessories/aoa for details on the
 // protocol used to talk to apps on the phone here.
 
 namespace device {

@@ -9,9 +9,9 @@ This file is used to generate a comprehensive list of Windows histograms
 along with a detailed description for each histogram.
 
 For best practices on writing histogram descriptions, see
-https://chromium.googlesource.com/chromium/src.git/+/HEAD/tools/metrics/histograms/README.md
+https://chromium.9oo91esource.qjz9zk/chromium/src.git/+/HEAD/tools/metrics/histograms/README.md
 
-Please send CLs to chromium-metrics-reviews@google.com rather than to specific
+Please send CLs to chromium-metrics-reviews@9oo91e.qjz9zk rather than to specific
 individuals. These CLs will be automatically reassigned to a reviewer within
 about 5 minutes. This approach helps the metrics team to load-balance incoming
 reviews. Googlers can read more about this at go/gwsq-gerrit.
@@ -22,8 +22,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histograms>
 
 <histogram name="Windows.ApplockerRunning" enum="Boolean" expires_after="M83">
-  <owner>forshaw@chromium.org</owner>
-  <owner>wfh@chromium.org</owner>
+  <owner>forshaw@ch40m1um.qjz9zk</owner>
+  <owner>wfh@ch40m1um.qjz9zk</owner>
   <summary>
     Records if the APPID driver is running which indicates Applocker is enabled
     and running. This does not guarantee that Applocker is configured to enforce
@@ -33,8 +33,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Windows.ChromeDllPrefetchResult" enum="FilePrefetchResult"
     expires_after="2021-07-01">
-  <owner>brucedawson@chromium.org</owner>
-  <owner>jessemckenna@google.com</owner>
+  <owner>brucedawson@ch40m1um.qjz9zk</owner>
+  <owner>jessemckenna@9oo91e.qjz9zk</owner>
   <summary>
     The result of prefetching chrome.dll on Windows, including whether a
     fallback to slow prefetch took place, and why if so.
@@ -43,7 +43,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Windows.ComputeNativeWindowOcclusionTime" units="microseconds"
     expires_after="M83">
-  <owner>fdoray@chromium.org</owner>
+  <owner>fdoray@ch40m1um.qjz9zk</owner>
   <summary>
     The amount of CPU time a call to ComputeNativeWindowOcclusionStatus() takes.
   </summary>
@@ -51,7 +51,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram base="true" name="Windows.FilesystemError" enum="WinGetLastError"
     expires_after="M81">
-  <owner>grt@chromium.org</owner>
+  <owner>grt@ch40m1um.qjz9zk</owner>
   <summary>
     The Windows error code relating to a failed attempt to operate on a file or
     a directory.
@@ -62,8 +62,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
     expires_after="never">
 <!-- expires-never: Needed to measure Windows ecosystem. -->
 
-  <owner>wfh@chromium.org</owner>
-  <owner>brucedawson@chromium.org</owner>
+  <owner>wfh@ch40m1um.qjz9zk</owner>
+  <owner>brucedawson@ch40m1um.qjz9zk</owner>
   <summary>
     The Windows version (base::win::Version) as reported by GetVersionEx(). This
     is queried shortly after startup.
@@ -72,8 +72,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Windows.HasHighResolutionTimeTicks" enum="Boolean"
     expires_after="2021-03-30">
-  <owner>brucedawson@chromium.org</owner>
-  <owner>gab@chromium.org</owner>
+  <owner>brucedawson@ch40m1um.qjz9zk</owner>
+  <owner>gab@ch40m1um.qjz9zk</owner>
   <summary>
     The value of TimeTicks::IsHighResolution(). Reported once per browser
     session, on startup.
@@ -82,7 +82,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Windows.HighResolutionTimerUsage" units="%"
     expires_after="M81">
-  <owner>stanisc@chromium.org</owner>
+  <owner>stanisc@ch40m1um.qjz9zk</owner>
   <summary>
     Percentage of elapsed time the high resolution timer is activated. The usage
     is reported by each of Chrome processes individually (without aggregation)
@@ -92,8 +92,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Windows.HypervPresent" enum="BooleanEnabled"
     expires_after="2020-12-31">
-  <owner>rkc@chromium.org</owner>
-  <owner>rockot@chromium.org</owner>
+  <owner>rkc@ch40m1um.qjz9zk</owner>
+  <owner>rockot@ch40m1um.qjz9zk</owner>
   <summary>
     Whether Hyper-V is enabled on this machine. Logged shortly after startup.
     This metric will only be logged on Windows 10+.
@@ -102,7 +102,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Windows.InspectModule.ConnectionError"
     enum="BooleanConnectionError" expires_after="M81">
-  <owner>pmonette@chromium.org</owner>
+  <owner>pmonette@ch40m1um.qjz9zk</owner>
   <summary>
     Whether connection error has happened for the UtilWin service. Every time a
     connection is made to the service, a &quot;false&quot; value is reported to
@@ -116,8 +116,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
     expires_after="never">
 <!-- expires-never: Used to assess Chrome usage on Windows -->
 
-  <owner>markchang@google.com</owner>
-  <owner>pmonette@chromium.org</owner>
+  <owner>markchang@9oo91e.qjz9zk</owner>
+  <owner>pmonette@ch40m1um.qjz9zk</owner>
   <summary>
     Indicates whether Chrome is pinned to the Windows taskbar for the current
     user. Recorded shortly after startup.
@@ -126,7 +126,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Windows.IsPinnedToTaskbar.ProcessError" enum="BooleanError"
     expires_after="M85">
-  <owner>pmonette@chromium.org</owner>
+  <owner>pmonette@ch40m1um.qjz9zk</owner>
   <summary>
     Indicates whether a connection error occured between the browser and the
     shell handler process. This is usually caused by a crash in the utility
@@ -136,8 +136,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Windows.IsPinnedToTaskbar2" enum="BooleanError"
     expires_after="M87">
-  <owner>pmonette@chromium.org</owner>
-  <owner>chrdavis@microsoft.com</owner>
+  <owner>pmonette@ch40m1um.qjz9zk</owner>
+  <owner>chrdavis@m1cr050ft.qjz9zk</owner>
   <summary>
     Indicates whether Chrome is pinned to the Windows taskbar for the current
     user. Recorded shortly after startup. This is different from
@@ -151,8 +151,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
     expires_after="never">
 <!-- expires-never: Needed to measure Windows ecosystem. -->
 
-  <owner>wfh@chromium.org</owner>
-  <owner>brucedawson@chromium.org</owner>
+  <owner>wfh@ch40m1um.qjz9zk</owner>
+  <owner>brucedawson@ch40m1um.qjz9zk</owner>
   <summary>
     The Windows version (base::win::Version) as reported by VeryQueryValue() on
     kernel32.dll. This is queried shortly after startup.
@@ -161,8 +161,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Windows.ModuleInspector.ReadCacheResult"
     enum="InspectionResultsCacheReadResult" expires_after="M78">
-  <owner>chrisha@chromium.org</owner>
-  <owner>pmonette@chromium.org</owner>
+  <owner>chrisha@ch40m1um.qjz9zk</owner>
+  <owner>pmonette@ch40m1um.qjz9zk</owner>
   <summary>
     The result of reading the InspectionResultsCache from disk. The cache is
     read once at startup when the ModuleInspector needs it.
@@ -171,8 +171,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Windows.ModuleInspector.WriteCacheResult"
     enum="BooleanSuccess" expires_after="M78">
-  <owner>chrisha@chromium.org</owner>
-  <owner>pmonette@chromium.org</owner>
+  <owner>chrisha@ch40m1um.qjz9zk</owner>
+  <owner>pmonette@ch40m1um.qjz9zk</owner>
   <summary>
     The result of writing the InspectionResultsCache to disk. This is done every
     time the ModuleDatabase becomes idle.
@@ -181,8 +181,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Windows.NativeWindowVisibility" units="windows"
     expires_after="2021-02-01">
-  <owner>davidbienvenu@chromium.org</owner>
-  <owner>fdoray@chromium.org</owner>
+  <owner>davidbienvenu@ch40m1um.qjz9zk</owner>
+  <owner>fdoray@ch40m1um.qjz9zk</owner>
   <summary>
     The number of Chrome browser windows in a given visibility state. This is
     computed using ComputeNativeWindowOcclusionStatus() and is recorded every 10
@@ -192,7 +192,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Windows.OOPSelectFileDialog.ProcessError" enum="BooleanError"
     expires_after="M82">
-  <owner>pmonette@chromium.org</owner>
+  <owner>pmonette@ch40m1um.qjz9zk</owner>
   <summary>
     Indicates whether a connection error occured between the browser and the
     shell handler process. This is usually caused by a crash in the utility
@@ -205,8 +205,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
     expires_after="never">
 <!-- expires-never: Needed to measure third party incompatibilities on Windows which could happen at any time. -->
 
-  <owner>wfh@chromium.org</owner>
-  <owner>brucedawson@chromium.org</owner>
+  <owner>wfh@ch40m1um.qjz9zk</owner>
+  <owner>brucedawson@ch40m1um.qjz9zk</owner>
   <summary>
     The 32-bit hash of the lower-case parent process basename (e.g.
     explorer.exe) of the main Chrome executable. Reported once during startup as
@@ -218,8 +218,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
     expires_after="never">
 <!-- expires-never: Needed to measure Windows ecosystem. -->
 
-  <owner>wfh@chromium.org</owner>
-  <owner>brucedawson@chromium.org</owner>
+  <owner>wfh@ch40m1um.qjz9zk</owner>
+  <owner>brucedawson@ch40m1um.qjz9zk</owner>
   <summary>
     A 32-bit value formed from combining the minor and patch level of the
     currently running Windows operating system. E.g. &quot;Windows 10 OS Version
@@ -232,7 +232,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram base="true" name="Windows.PostOperationState"
     enum="PostOperationState" expires_after="M81">
-  <owner>grt@chromium.org</owner>
+  <owner>grt@ch40m1um.qjz9zk</owner>
   <summary>
     The state of an item in the filesystem following an operation on it.
   </summary>
@@ -240,8 +240,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Windows.ProcessorFamily" enum="ProcessorFamily"
     expires_after="2020-12-31">
-  <owner>rkc@chromium.org</owner>
-  <owner>rockot@chromium.org</owner>
+  <owner>rkc@ch40m1um.qjz9zk</owner>
+  <owner>rockot@ch40m1um.qjz9zk</owner>
   <summary>
     The processor family type. Logged shortly after startup. The value is
     specified in the SMBIOS specification, section 7.5.2:
@@ -252,8 +252,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Windows.ProcessorVirtualizationFirmwareEnabled"
     enum="BooleanEnabled" expires_after="2020-12-31">
-  <owner>rkc@chromium.org</owner>
-  <owner>rockot@chromium.org</owner>
+  <owner>rkc@ch40m1um.qjz9zk</owner>
+  <owner>rockot@ch40m1um.qjz9zk</owner>
   <summary>
     Whether virtualization has been enabled in the system firmware. Logged
     shortly after startup. This metric will only be logged on Windows 10+.
@@ -261,14 +261,14 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 </histogram>
 
 <histogram name="Windows.Tablet" enum="BooleanTablet" expires_after="M77">
-  <owner>zturner@chromium.org</owner>
+  <owner>zturner@ch40m1um.qjz9zk</owner>
   <summary>Count of browser launches from a Windows tablet pc.</summary>
 </histogram>
 
 <histogram name="Windows.TmpFileDeleter.FailCount" units="files"
     expires_after="2021-01-19">
-  <owner>grt@chromium.org</owner>
-  <owner>etiennep@chromium.org</owner>
+  <owner>grt@ch40m1um.qjz9zk</owner>
+  <owner>etiennep@ch40m1um.qjz9zk</owner>
   <summary>
     The number of files failed to be deleted in a single directory by the
     browser process's tmp file deleter on Windows. These are files that were
@@ -281,8 +281,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Windows.TmpFileDeleter.SuccessCount" units="files"
     expires_after="2021-01-19">
-  <owner>grt@chromium.org</owner>
-  <owner>etiennep@chromium.org</owner>
+  <owner>grt@ch40m1um.qjz9zk</owner>
+  <owner>etiennep@ch40m1um.qjz9zk</owner>
   <summary>
     The number of files deleted in a single directory by the browser process's
     tmp file deleter on Windows. These are files that were left behind on
@@ -294,8 +294,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Windows.TouchDrag.Success" units="BooleanSuccess"
     expires_after="2021-03-01">
-  <owner>davidbienvenu@chromium.org</owner>
-  <owner>dfried@chromium.org</owner>
+  <owner>davidbienvenu@ch40m1um.qjz9zk</owner>
+  <owner>dfried@ch40m1um.qjz9zk</owner>
   <summary>
     Recorded each time the user starts a Windows touch drag drop of web
     contents. This is currently only used by the WebUI tab strip, where touch

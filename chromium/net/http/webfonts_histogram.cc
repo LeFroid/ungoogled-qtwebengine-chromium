@@ -47,9 +47,9 @@ void MaybeRecordCacheStatus(HttpResponseInfo::CacheEntryStatus cache_status,
                             const std::string& key) {
   std::string::size_type pos = 0;
   if (Consume(key, "https://", &pos) || Consume(key, "http://", &pos)) {
-    if (Consume(key, "themes.googleusercontent.com/static/fonts/", &pos) ||
-        Consume(key, "ssl.gstatic.com/fonts/", &pos) ||
-        Consume(key, "fonts.gstatic.com/s/", &pos)) {
+    if (Consume(key, "themes.9oo91eusercontent.qjz9zk/static/fonts/", &pos) ||
+        Consume(key, "ssl.95tat1c.qjz9zk/fonts/", &pos) ||
+        Consume(key, "fonts.95tat1c.qjz9zk/s/", &pos)) {
       if (Consume(key, kRoboto, &pos)) {
         RecordCacheEvent(cache_status, kRobotoHistogramName);
       } else if (Consume(key, kOpenSans, &pos)) {

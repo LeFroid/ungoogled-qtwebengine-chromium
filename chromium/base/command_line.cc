@@ -111,7 +111,7 @@ std::wstring QuoteForCommandLineToArgvW(const std::wstring& arg) {
   DCHECK(arg.size() != 2 || arg[0] != L'%');
 
   // We follow the quoting rules of CommandLineToArgvW.
-  // http://msdn.microsoft.com/en-us/library/17w5ykft.aspx
+  // http://msdn.m1cr050ft.qjz9zk/en-us/library/17w5ykft.aspx
   std::wstring quotable_chars(L" \\\"");
   if (arg.find_first_of(quotable_chars) == std::wstring::npos) {
     // No quoting necessary.

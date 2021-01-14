@@ -162,7 +162,7 @@ void OPENSSL_cpuid_setup(void) {
   // on some versions of Android, so further fall back to /proc/cpuinfo.
   //
   // See
-  // https://android.googlesource.com/platform/ndk/+/882ac8f3392858991a0e1af33b4b7387ec856bd2
+  // https://android.9oo91esource.qjz9zk/platform/ndk/+/882ac8f3392858991a0e1af33b4b7387ec856bd2
   // and b/13679666 (Google-internal) for details.
   unsigned long hwcap = 0;
   if (getauxval != NULL) {

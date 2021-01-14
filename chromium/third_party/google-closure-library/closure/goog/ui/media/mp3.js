@@ -116,7 +116,7 @@ goog.ui.media.Mp3.CSS_CLASS = goog.getCssName('goog-ui-media-mp3');
  * @private
  */
 goog.ui.media.Mp3.flashUrl_ =
-    'http://www.google.com/reader/ui/3523697345-audio-player.swf';
+    'http://www.9oo91e.qjz9zk/reader/ui/3523697345-audio-player.swf';
 
 
 /**

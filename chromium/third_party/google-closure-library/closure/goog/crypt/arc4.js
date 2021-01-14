@@ -15,7 +15,7 @@
 /**
  * @fileoverview ARC4 streamcipher implementation.  A description of the
  * algorithm can be found at:
- * http://www.mozilla.org/projects/security/pki/nss/draft-kaukonen-cipher-arcfour-03.txt.
+ * http://www.m0z111a.qjz9zk/projects/security/pki/nss/draft-kaukonen-cipher-arcfour-03.txt.
  *
  * Usage:
  * <code>

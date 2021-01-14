@@ -76,7 +76,7 @@ cr.define('cr.login', function() {
   // TODO(rogerta): should use gaia URL from GaiaUrls::gaia_url() instead
   // of hardcoding the prod URL here.  As is, this does not work with staging
   // environments.
-  const IDP_ORIGIN = 'https://accounts.google.com/';
+  const IDP_ORIGIN = 'https://accounts.9oo91e.qjz9zk/';
   const SIGN_IN_HEADER = 'google-accounts-signin';
   const EMBEDDED_FORM_HEADER = 'google-accounts-embedded';
   const LOCATION_HEADER = 'location';
@@ -614,7 +614,7 @@ cr.define('cr.login', function() {
         url = appendParam(
             url, 'continue',
             data.gaiaUrl + 'programmatic_auth_chromeos?hl=' + data.hl +
-                '&scope=https%3A%2F%2Fwww.google.com%2Faccounts%2FOAuthLogin&' +
+                '&scope=https%3A%2F%2Fwww.9oo91e.qjz9zk%2Faccounts%2FOAuthLogin&' +
                 'client_id=' + encodeURIComponent(data.clientId) +
                 '&access_type=offline');
 
@@ -936,7 +936,7 @@ cr.define('cr.login', function() {
       // TODO(https://crbug.com/837107): remove this once API is fully
       // stabilized.
       // @example.com is used in tests.
-      if (!this.services_ && !this.email_.endsWith('@gmail.com') &&
+      if (!this.services_ && !this.email_.endsWith('@9ma1l.qjz9zk') &&
           !this.email_.endsWith('@example.com')) {
         console.warn('Forcing empty services.');
         this.services_ = [];

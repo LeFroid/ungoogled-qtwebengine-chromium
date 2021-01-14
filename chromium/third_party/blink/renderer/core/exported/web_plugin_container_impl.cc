@@ -242,7 +242,7 @@ void WebPluginContainerImpl::Hide() {
 
 void WebPluginContainerImpl::HandleEvent(Event& event) {
   // The events we pass are defined at:
-  //    http://devedge-temp.mozilla.org/library/manuals/2002/plugin/1.0/structures5.html#1000000
+  //    http://devedge-temp.m0z111a.qjz9zk/library/manuals/2002/plugin/1.0/structures5.html#1000000
   // Don't take the documentation as truth, however.  There are many cases
   // where mozilla behaves differently than the spec.
   if (auto* mouse_event = DynamicTo<MouseEvent>(event))

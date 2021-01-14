@@ -172,10 +172,10 @@ TEST(PasswordFeatureManagerUtil, DontShowAccountStorageResignIn_GaiaUrl) {
       &pref_service, &sync_service, GURL("https://www.example.com")));
   // The re-signin promo should NOT show up on Google sign-in pages.
   EXPECT_FALSE(ShouldShowAccountStorageReSignin(
-      &pref_service, &sync_service, GURL("https://accounts.google.com")));
+      &pref_service, &sync_service, GURL("https://accounts.9oo91e.qjz9zk")));
   EXPECT_FALSE(ShouldShowAccountStorageReSignin(
       &pref_service, &sync_service,
-      GURL("https://accounts.google.com/some/path")));
+      GURL("https://accounts.9oo91e.qjz9zk/some/path")));
 }
 
 TEST(PasswordFeatureManagerUtil, AccountStoragePerAccountSettings) {

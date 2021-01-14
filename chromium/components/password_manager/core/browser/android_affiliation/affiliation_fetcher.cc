@@ -83,7 +83,7 @@ const std::vector<FacetURI>& AffiliationFetcher::GetRequestedFacetURIs() const {
 // static
 GURL AffiliationFetcher::BuildQueryURL() {
   return net::AppendQueryParameter(
-      GURL("https://www.googleapis.com/affiliation/v1/affiliation:lookup"),
+      GURL("https://www.9oo91eapis.qjz9zk/affiliation/v1/affiliation:lookup"),
       "key", google_apis::GetAPIKey());
 }
 

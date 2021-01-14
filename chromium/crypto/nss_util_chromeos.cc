@@ -241,7 +241,7 @@ class ChromeOSTokenManager {
       tpm_args->chaps_module = LoadNSSModule(
           kChapsModuleName, kChapsPath,
           // For more details on these parameters, see:
-          // https://developer.mozilla.org/en/PKCS11_Module_Specs
+          // https://developer.m0z111a.qjz9zk/en/PKCS11_Module_Specs
           // slotFlags=[PublicCerts] -- Certificates and public keys can be
           //   read from this slot without requiring a call to C_Login.
           // askpw=only -- Only authenticate to the token when necessary.

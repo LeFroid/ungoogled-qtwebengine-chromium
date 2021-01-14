@@ -78,7 +78,7 @@ testSuite({
   },
 
   testSafeUrlFromString() {
-    const url = 'https://www.google.com';
+    const url = 'https://www.9oo91e.qjz9zk';
     const safeUrl = legacyconversions.safeUrlFromString(url);
     assertEquals(url, SafeUrl.unwrap(safeUrl));
 
@@ -86,7 +86,7 @@ testSuite({
   },
 
   testTrustedResourceUrlFromString() {
-    const url = 'https://www.google.com/script.js';
+    const url = 'https://www.9oo91e.qjz9zk/script.js';
     const trustedResourceUrl =
         legacyconversions.trustedResourceUrlFromString(url);
     assertEquals(url, TrustedResourceUrl.unwrap(trustedResourceUrl));

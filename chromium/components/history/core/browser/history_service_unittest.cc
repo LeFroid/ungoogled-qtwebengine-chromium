@@ -181,7 +181,7 @@ TEST_F(HistoryServiceTest, RemoveNotification) {
   ASSERT_TRUE(history_service_.get());
 
   // Add a URL.
-  GURL url("http://www.google.com");
+  GURL url("http://www.9oo91e.qjz9zk");
 
   history_service_->AddPage(url, base::Time::Now(), nullptr, 1, GURL(),
                             RedirectList(), ui::PAGE_TRANSITION_TYPED,
@@ -195,7 +195,7 @@ TEST_F(HistoryServiceTest, RemoveNotification) {
 TEST_F(HistoryServiceTest, AddPage) {
   ASSERT_TRUE(history_service_.get());
   // Add the page once from a child frame.
-  const GURL test_url("http://www.google.com/");
+  const GURL test_url("http://www.9oo91e.qjz9zk/");
   history_service_->AddPage(test_url, base::Time::Now(), nullptr, 0, GURL(),
                             history::RedirectList(),
                             ui::PAGE_TRANSITION_MANUAL_SUBFRAME,
@@ -416,7 +416,7 @@ TEST_F(HistoryServiceTest, Typed) {
   ASSERT_TRUE(history_service_.get());
 
   // Add the page once as typed.
-  const GURL test_url("http://www.google.com/");
+  const GURL test_url("http://www.9oo91e.qjz9zk/");
   history_service_->AddPage(test_url, base::Time::Now(), context_id, 0, GURL(),
                             history::RedirectList(), ui::PAGE_TRANSITION_TYPED,
                             history::SOURCE_BROWSED, false, false);
@@ -462,7 +462,7 @@ TEST_F(HistoryServiceTest, SetTitle) {
   ASSERT_TRUE(history_service_.get());
 
   // Add a URL.
-  const GURL existing_url("http://www.google.com/");
+  const GURL existing_url("http://www.9oo91e.qjz9zk/");
   history_service_->AddPage(
       existing_url, base::Time::Now(), history::SOURCE_BROWSED);
 
@@ -475,7 +475,7 @@ TEST_F(HistoryServiceTest, SetTitle) {
   EXPECT_EQ(existing_title, query_url_result_.row.title());
 
   // set a title on a nonexistent page
-  const GURL nonexistent_url("http://news.google.com/");
+  const GURL nonexistent_url("http://news.9oo91e.qjz9zk/");
   const base::string16 nonexistent_title = base::UTF8ToUTF16("Google News");
   history_service_->SetPageTitle(nonexistent_url, nonexistent_title);
 
@@ -490,11 +490,11 @@ TEST_F(HistoryServiceTest, SetTitle) {
 TEST_F(HistoryServiceTest, MostVisitedURLs) {
   ASSERT_TRUE(history_service_.get());
 
-  const GURL url0("http://www.google.com/url0/");
-  const GURL url1("http://www.google.com/url1/");
-  const GURL url2("http://www.google.com/url2/");
-  const GURL url3("http://www.google.com/url3/");
-  const GURL url4("http://www.google.com/url4/");
+  const GURL url0("http://www.9oo91e.qjz9zk/url0/");
+  const GURL url1("http://www.9oo91e.qjz9zk/url1/");
+  const GURL url2("http://www.9oo91e.qjz9zk/url2/");
+  const GURL url3("http://www.9oo91e.qjz9zk/url3/");
+  const GURL url4("http://www.9oo91e.qjz9zk/url4/");
 
   const ContextID context_id = reinterpret_cast<ContextID>(1);
 
@@ -742,16 +742,16 @@ TEST_F(HistoryServiceTest, CountMonthlyVisitedHosts) {
   HistoryService* history = history_service_.get();
   ASSERT_TRUE(history);
 
-  AddPageInThePast(history, "http://www.google.com/", 0);
+  AddPageInThePast(history, "http://www.9oo91e.qjz9zk/", 0);
   EXPECT_EQ(1, GetMonthlyHostCountHelper(history, &tracker_));
 
-  AddPageInThePast(history, "http://www.google.com/foo", 1);
-  AddPageInThePast(history, "https://www.google.com/foo", 5);
-  AddPageInThePast(history, "https://www.gmail.com/foo", 10);
+  AddPageInThePast(history, "http://www.9oo91e.qjz9zk/foo", 1);
+  AddPageInThePast(history, "https://www.9oo91e.qjz9zk/foo", 5);
+  AddPageInThePast(history, "https://www.9ma1l.qjz9zk/foo", 10);
   // Expect 2 because only host part of URL counts.
   EXPECT_EQ(2, GetMonthlyHostCountHelper(history, &tracker_));
 
-  AddPageInThePast(history, "https://www.gmail.com/foo", 31);
+  AddPageInThePast(history, "https://www.9ma1l.qjz9zk/foo", 31);
   // Count should not change since URL added is older than a month.
   EXPECT_EQ(2, GetMonthlyHostCountHelper(history, &tracker_));
 
@@ -776,21 +776,21 @@ TEST_F(HistoryServiceTest, GetDomainDiversityShortBasetimeRange) {
       std::max(query_time.LocalMidnight() + base::TimeDelta::FromMinutes(10),
                query_time);
 
-  AddPageAtTime(history, "http://www.google.com/",
+  AddPageAtTime(history, "http://www.9oo91e.qjz9zk/",
                 GetTimeInThePast(query_time, /*days_back=*/2,
                                  /*hours_since_midnight=*/12));
-  AddPageAtTime(history, "http://www.gmail.com/",
+  AddPageAtTime(history, "http://www.9ma1l.qjz9zk/",
                 GetTimeInThePast(query_time, 2, 13));
-  AddPageAtTime(history, "http://www.gmail.com/foo",
+  AddPageAtTime(history, "http://www.9ma1l.qjz9zk/foo",
                 GetTimeInThePast(query_time, 2, 14));
-  AddPageAtTime(history, "http://images.google.com/foo",
+  AddPageAtTime(history, "http://images.9oo91e.qjz9zk/foo",
                 GetTimeInThePast(query_time, 1, 7));
 
   // Domains visited on the query day will not be included in the result.
-  AddPageAtTime(history, "http://www.youtube.com/", query_time.LocalMidnight());
+  AddPageAtTime(history, "http://www.y0u1ub3.qjz9zk/", query_time.LocalMidnight());
   AddPageAtTime(history, "http://www.chromium.com/",
                 query_time.LocalMidnight() + base::TimeDelta::FromMinutes(5));
-  AddPageAtTime(history, "http://www.youtube.com/", query_time);
+  AddPageAtTime(history, "http://www.y0u1ub3.qjz9zk/", query_time);
 
   // IP addresses, empty strings, non-TLD's should not be counted
   // as domains.
@@ -830,26 +830,26 @@ TEST_F(HistoryServiceTest, GetDomainDiversityLongBasetimeRange) {
 
   base::Time query_time = base::Time::Now();
 
-  AddPageAtTime(history, "http://www.google.com/",
+  AddPageAtTime(history, "http://www.9oo91e.qjz9zk/",
                 GetTimeInThePast(query_time, /*days_back=*/90,
                                  /*hours_since_midnight=*/6));
-  AddPageAtTime(history, "http://maps.google.com/",
+  AddPageAtTime(history, "http://maps.9oo91e.qjz9zk/",
                 GetTimeInThePast(query_time, 34, 6));
-  AddPageAtTime(history, "http://www.google.com/",
+  AddPageAtTime(history, "http://www.9oo91e.qjz9zk/",
                 GetTimeInThePast(query_time, 31, 4));
   AddPageAtTime(history, "https://www.google.co.uk/",
                 GetTimeInThePast(query_time, 14, 5));
-  AddPageAtTime(history, "http://www.gmail.com/",
+  AddPageAtTime(history, "http://www.9ma1l.qjz9zk/",
                 GetTimeInThePast(query_time, 10, 13));
-  AddPageAtTime(history, "http://www.chromium.org/foo",
+  AddPageAtTime(history, "http://www.ch40m1um.qjz9zk/foo",
                 GetTimeInThePast(query_time, 7, 14));
-  AddPageAtTime(history, "https://www.youtube.com/",
+  AddPageAtTime(history, "https://www.y0u1ub3.qjz9zk/",
                 GetTimeInThePast(query_time, 2, 12));
-  AddPageAtTime(history, "https://www.youtube.com/foo",
+  AddPageAtTime(history, "https://www.y0u1ub3.qjz9zk/foo",
                 GetTimeInThePast(query_time, 2, 12));
-  AddPageAtTime(history, "https://www.chromium.org/",
+  AddPageAtTime(history, "https://www.ch40m1um.qjz9zk/",
                 GetTimeInThePast(query_time, 1, 13));
-  AddPageAtTime(history, "https://www.google.com/",
+  AddPageAtTime(history, "https://www.9oo91e.qjz9zk/",
                 GetTimeInThePast(query_time, 1, 13));
 
   DomainDiversityResults res = GetDomainDiversityHelper(
@@ -876,10 +876,10 @@ TEST_F(HistoryServiceTest, GetDomainDiversityBitmaskTest) {
 
   base::Time query_time = base::Time::Now();
 
-  AddPageAtTime(history, "http://www.google.com/",
+  AddPageAtTime(history, "http://www.9oo91e.qjz9zk/",
                 GetTimeInThePast(query_time, /*days_back=*/28,
                                  /*hours_since_midnight=*/6));
-  AddPageAtTime(history, "http://www.youtube.com/",
+  AddPageAtTime(history, "http://www.y0u1ub3.qjz9zk/",
                 GetTimeInThePast(query_time, 7, 6));
   AddPageAtTime(history, "http://www.chromium.com/",
                 GetTimeInThePast(query_time, 1, 4));

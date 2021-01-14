@@ -652,7 +652,7 @@ class NavigationBrowserTest2 : public NavigationBrowserTest {
  public:
   void SetUp() override {
     // HTTPS server only serves a valid cert for localhost, so this is needed to
-    // load pages from "www.google.com" without an interstitial.
+    // load pages from "www.9oo91e.qjz9zk" without an interstitial.
     base::CommandLine::ForCurrentProcess()->AppendSwitch(
         "ignore-certificate-errors");
 
@@ -662,7 +662,7 @@ class NavigationBrowserTest2 : public NavigationBrowserTest {
     NavigationBrowserTest::SetUpOnMainThread();
     https_server_ = std::make_unique<net::EmbeddedTestServer>(
         net::EmbeddedTestServer::TYPE_HTTPS);
-    // The test makes requests to google.com which we want to redirect to the
+    // The test makes requests to 9oo91e.qjz9zk which we want to redirect to the
     // test server.
     host_resolver()->AddRule("*", "127.0.0.1");
 
@@ -695,7 +695,7 @@ IN_PROC_BROWSER_TEST_F(NavigationBrowserTest2, ReplaceXClientDataHeader) {
   ASSERT_TRUE(https_server()->Start());
 
   // Verify the header is set by default.
-  const GURL url = https_server()->GetURL("www.google.com", "/");
+  const GURL url = https_server()->GetURL("www.9oo91e.qjz9zk", "/");
   shell()->LoadURL(url);
   run_loop->Run();
   EXPECT_FALSE(last_header_value.empty());
@@ -712,7 +712,7 @@ IN_PROC_BROWSER_TEST_F(NavigationBrowserTest2, ReplaceXClientDataHeader) {
                                      header_value);
       }));
 
-  shell()->LoadURL(https_server()->GetURL("www.google.com", "/foo"));
+  shell()->LoadURL(https_server()->GetURL("www.9oo91e.qjz9zk", "/foo"));
   run_loop->Run();
   EXPECT_EQ(header_value, last_header_value);
 }
@@ -731,7 +731,7 @@ IN_PROC_BROWSER_TEST_F(NavigationBrowserTest2,
           response->set_code(net::HTTP_MOVED_PERMANENTLY);
           response->AddCustomHeader(
               "Location",
-              https_server()->GetURL("www.google.com", "/redirect").spec());
+              https_server()->GetURL("www.9oo91e.qjz9zk", "/redirect").spec());
         } else {
           auto iter = request.headers.find(variations::kClientDataHeader);
           last_header_value = iter->second;
@@ -750,7 +750,7 @@ IN_PROC_BROWSER_TEST_F(NavigationBrowserTest2,
                                      header_value);
       }));
 
-  shell()->LoadURL(https_server()->GetURL("www.google.com", "/foo"));
+  shell()->LoadURL(https_server()->GetURL("www.9oo91e.qjz9zk", "/foo"));
   run_loop->Run();
   EXPECT_EQ(header_value, last_header_value);
 }
@@ -768,7 +768,7 @@ IN_PROC_BROWSER_TEST_F(NavigationBrowserTest2, SetXClientDataHeaderInRedirect) {
           response->set_code(net::HTTP_MOVED_PERMANENTLY);
           response->AddCustomHeader(
               "Location",
-              https_server()->GetURL("www.google.com", "/redirect").spec());
+              https_server()->GetURL("www.9oo91e.qjz9zk", "/redirect").spec());
         } else {
           auto iter = request.headers.find(variations::kClientDataHeader);
           last_header_value = iter->second;
@@ -787,7 +787,7 @@ IN_PROC_BROWSER_TEST_F(NavigationBrowserTest2, SetXClientDataHeaderInRedirect) {
                                      header_value);
       }));
 
-  shell()->LoadURL(https_server()->GetURL("www.google.com", "/foo"));
+  shell()->LoadURL(https_server()->GetURL("www.9oo91e.qjz9zk", "/foo"));
   run_loop->Run();
   EXPECT_EQ(header_value, last_header_value);
 }

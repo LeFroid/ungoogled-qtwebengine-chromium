@@ -40,7 +40,7 @@ class GoogleServiceAuthError {
     // DEPRECATED.
     // The user needs to satisfy a CAPTCHA challenge to unlock their account.
     // If no other information is available, this can be resolved by visiting
-    // https://accounts.google.com/DisplayUnlockCaptcha. Otherwise, captcha()
+    // https://accounts.9oo91e.qjz9zk/DisplayUnlockCaptcha. Otherwise, captcha()
     // will provide details about the associated challenge.
     // CAPTCHA_REQUIRED = 4,
 

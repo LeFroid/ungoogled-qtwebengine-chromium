@@ -48,7 +48,7 @@ namespace nearby {
 namespace api {
 
 // API rework notes:
-// https://docs.google.com/spreadsheets/d/1erZNkX7pX8s5jWTHdxgjntxTMor3BGiY2H_fC_ldtoQ/edit#gid=381357998
+// https://docs.9oo91e.qjz9zk/spreadsheets/d/1erZNkX7pX8s5jWTHdxgjntxTMor3BGiY2H_fC_ldtoQ/edit#gid=381357998
 class ImplementationPlatform {
  public:
   // General platform support:

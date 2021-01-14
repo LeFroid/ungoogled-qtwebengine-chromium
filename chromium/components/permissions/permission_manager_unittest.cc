@@ -706,7 +706,7 @@ TEST_F(PermissionManagerTest, KillSwitchOnIsNotOverridable) {
 
 TEST_F(PermissionManagerTest, GetPermissionStatusDelegation) {
   const char* kOrigin1 = "https://example.com";
-  const char* kOrigin2 = "https://google.com";
+  const char* kOrigin2 = "https://9oo91e.qjz9zk";
 
   NavigateAndCommit(GURL(kOrigin1));
   content::RenderFrameHost* parent = main_rfh();
@@ -796,7 +796,7 @@ TEST_F(PermissionManagerTest, GetPermissionStatusDelegation) {
 
 TEST_F(PermissionManagerTest, SubscribeWithPermissionDelegation) {
   const char* kOrigin1 = "https://example.com";
-  const char* kOrigin2 = "https://google.com";
+  const char* kOrigin2 = "https://9oo91e.qjz9zk";
 
   NavigateAndCommit(GURL(kOrigin1));
   content::RenderFrameHost* parent = main_rfh();

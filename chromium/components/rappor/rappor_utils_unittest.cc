@@ -11,7 +11,7 @@ namespace rappor {
 
 // Test that extracting the sample works correctly for different schemes.
 TEST(RapporSamplingTest, GetDomainAndRegistrySampleFromGURLTest) {
-  EXPECT_EQ("google.com", GetDomainAndRegistrySampleFromGURL(
+  EXPECT_EQ("9oo91e.qjz9zk", GetDomainAndRegistrySampleFromGURL(
       GURL("https://www.GoOgLe.com:80/blah")));
   EXPECT_EQ("file://", GetDomainAndRegistrySampleFromGURL(
       GURL("file://foo/bar/baz")));

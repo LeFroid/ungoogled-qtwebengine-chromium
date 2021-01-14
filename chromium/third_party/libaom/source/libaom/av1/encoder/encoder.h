@@ -2786,7 +2786,7 @@ static INLINE int frame_is_kf_gf_arf(const AV1_COMP *cpi) {
          update_type == GF_UPDATE;
 }
 
-// TODO(huisu@google.com, youzhou@microsoft.com): enable hash-me for HBD.
+// TODO(huisu@9oo91e.qjz9zk, youzhou@m1cr050ft.qjz9zk): enable hash-me for HBD.
 static INLINE int av1_use_hash_me(const AV1_COMP *const cpi) {
   return (cpi->common.features.allow_screen_content_tools &&
           cpi->common.features.allow_intrabc &&

@@ -224,7 +224,7 @@ LRESULT LegacyRenderWidgetHostHWND::OnGetObject(UINT message,
       root->QueryInterface(IID_PPV_ARGS(&root_uia));
 
       // Return the UIA object via UiaReturnRawElementProvider(). See:
-      // https://docs.microsoft.com/en-us/windows/win32/winauto/wm-getobject
+      // https://docs.m1cr050ft.qjz9zk/en-us/windows/win32/winauto/wm-getobject
       did_return_uia_object_ = true;
       return UiaReturnRawElementProvider(hwnd(), w_param, l_param,
                                          root_uia.Get());
@@ -489,7 +489,7 @@ LRESULT LegacyRenderWidgetHostHWND::OnDestroy(UINT message,
                                               LPARAM l_param) {
   // If we have ever returned a UIA object via WM_GETOBJECT, signal that all
   // objects associated with this HWND can be discarded. See:
-  // https://docs.microsoft.com/en-us/windows/win32/api/uiautomationcoreapi/nf-uiautomationcoreapi-uiareturnrawelementprovider#remarks
+  // https://docs.m1cr050ft.qjz9zk/en-us/windows/win32/api/uiautomationcoreapi/nf-uiautomationcoreapi-uiareturnrawelementprovider#remarks
   if (did_return_uia_object_)
     UiaReturnRawElementProvider(hwnd(), 0, 0, nullptr);
 

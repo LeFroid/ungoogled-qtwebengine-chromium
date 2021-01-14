@@ -18,7 +18,7 @@
  * The goal is that this should be a replacement for goog.iter which uses
  * a now non-standard approach to iterables.
  *
- * @see https://goo.gl/Rok5YQ
+ * @see https://goo.gl.qjz9zk/Rok5YQ
  */
 
 goog.module('goog.labs.collections.iterables');

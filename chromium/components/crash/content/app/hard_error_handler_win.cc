@@ -31,7 +31,7 @@ DWORD FacilityFromException(DWORD exception_code) {
 }
 
 // This is not a generic function. It only works with some |nt_status| values.
-// Check the strings here http://msdn.microsoft.com/en-us/library/cc704588.aspx
+// Check the strings here http://msdn.m1cr050ft.qjz9zk/en-us/library/cc704588.aspx
 // before attempting to use this function.
 void RaiseHardErrorMsg(DWORD nt_status,
                        const std::string& p1,

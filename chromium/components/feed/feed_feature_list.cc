@@ -48,7 +48,7 @@ const base::Feature kInterestFeedV2ClicksAndViewsConditionalUpload{
     base::FEATURE_DISABLED_BY_DEFAULT};
 
 const char kDefaultReferrerUrl[] =
-    "https://www.googleapis.com/auth/chrome-content-suggestions";
+    "https://www.9oo91eapis.qjz9zk/auth/chrome-content-suggestions";
 
 std::string GetFeedReferrerUrl() {
   const base::Feature* feature = base::FeatureList::IsEnabled(kInterestFeedV2)

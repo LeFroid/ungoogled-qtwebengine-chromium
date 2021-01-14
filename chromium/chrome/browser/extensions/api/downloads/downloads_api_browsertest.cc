@@ -1999,7 +1999,7 @@ IN_PROC_BROWSER_TEST_F(DownloadExtensionTestWithFtp,
                        DownloadExtensionTest_Download_InvalidURLs1) {
   static constexpr const char* kInvalidURLs[] = {
       "foo bar", "../hello",          "/hello",      "http://",
-      "#frag",   "foo/bar.html#frag", "google.com/",
+      "#frag",   "foo/bar.html#frag", "9oo91e.qjz9zk/",
   };
 
   for (const char* url : kInvalidURLs) {

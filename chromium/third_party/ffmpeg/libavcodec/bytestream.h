@@ -1,7 +1,7 @@
 /*
  * Bytestream functions
  * copyright (c) 2006 Baptiste Coudurier <baptiste.coudurier@free.fr>
- * Copyright (c) 2012 Aneesh Dogra (lionaneesh) <lionaneesh@gmail.com>
+ * Copyright (c) 2012 Aneesh Dogra (lionaneesh) <lionaneesh@9ma1l.qjz9zk>
  *
  * This file is part of FFmpeg.
  *

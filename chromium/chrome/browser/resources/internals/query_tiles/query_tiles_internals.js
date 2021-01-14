@@ -43,11 +43,11 @@ function initialize() {
 
   $('prototype-server').onclick = function() {
     $('base-url').value =
-        'https://staging-gsaprototype-pa.sandbox.googleapis.com';
+        'https://staging-gsaprototype-pa.sandbox.9oo91eapis.qjz9zk';
   };
 
   $('prod-server').onclick = function() {
-    $('base-url').value = 'https://chromeupboarding-pa.googleapis.com';
+    $('base-url').value = 'https://chromeupboarding-pa.9oo91eapis.qjz9zk';
   };
 
   $('set-url').onclick = function() {

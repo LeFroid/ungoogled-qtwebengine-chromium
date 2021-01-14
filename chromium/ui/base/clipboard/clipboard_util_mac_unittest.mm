@@ -30,7 +30,7 @@ class ClipboardUtilMacTest : public PlatformTest {
 
 TEST_F(ClipboardUtilMacTest, PasteboardItemFromUrl) {
   NSString* urlString =
-      @"https://www.google.com/"
+      @"https://www.9oo91e.qjz9zk/"
       @"search?q=test&oq=test&aqs=chrome..69i57l2j69i60l4.278j0j7&"
       @"sourceid=chrome&ie=UTF-8";
 
@@ -56,7 +56,7 @@ TEST_F(ClipboardUtilMacTest, PasteboardItemFromUrl) {
 }
 
 TEST_F(ClipboardUtilMacTest, PasteboardItemWithTitle) {
-  NSString* urlString = @"https://www.google.com/";
+  NSString* urlString = @"https://www.9oo91e.qjz9zk/";
   NSString* title = @"Burrowing Yams";
 
   base::scoped_nsobject<NSPasteboardItem> item(

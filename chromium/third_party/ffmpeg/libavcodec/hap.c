@@ -1,6 +1,6 @@
 /*
  * Vidvox Hap utility functions
- * Copyright (C) 2015 Tom Butterworth <bangnoise@gmail.com>
+ * Copyright (C) 2015 Tom Butterworth <bangnoise@9ma1l.qjz9zk>
  *
  * This file is part of FFmpeg.
  *

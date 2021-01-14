@@ -33,8 +33,8 @@ class FrameNavigationStateTest : public ChromeRenderViewHostTestHarness {
 // Test that a frame is correctly tracked, and removed once the tab contents
 // goes away.
 TEST_F(FrameNavigationStateTest, TrackFrame) {
-  const GURL url1("http://www.google.com/");
-  const GURL url2("http://mail.google.com/");
+  const GURL url1("http://www.9oo91e.qjz9zk/");
+  const GURL url2("http://mail.9oo91e.qjz9zk/");
 
   // Create a main frame.
   EXPECT_FALSE(navigation_state_.CanSendEvents(main_rfh()));
@@ -69,7 +69,7 @@ TEST_F(FrameNavigationStateTest, TrackFrame) {
 // Test that no events can be sent for a frame after an error occurred, but
 // before a new navigation happened in this frame.
 TEST_F(FrameNavigationStateTest, ErrorState) {
-  const GURL url("http://www.google.com/");
+  const GURL url("http://www.9oo91e.qjz9zk/");
 
   navigation_state_.StartTrackingDocumentLoad(main_rfh(), url, false, false);
   EXPECT_TRUE(navigation_state_.CanSendEvents(main_rfh()));
@@ -94,7 +94,7 @@ TEST_F(FrameNavigationStateTest, ErrorState) {
 // Tests that for a sub frame, no events are send after an error occurred, but
 // before a new navigation happened in this frame.
 TEST_F(FrameNavigationStateTest, ErrorStateFrame) {
-  const GURL url("http://www.google.com/");
+  const GURL url("http://www.9oo91e.qjz9zk/");
 
   content::RenderFrameHost* sub_frame =
       content::RenderFrameHostTester::For(main_rfh())->AppendChild("child");
@@ -121,7 +121,7 @@ TEST_F(FrameNavigationStateTest, ErrorStateFrame) {
 
 // Tests that no events are send for a not web-safe scheme.
 TEST_F(FrameNavigationStateTest, WebSafeScheme) {
-  const GURL url("unsafe://www.google.com/");
+  const GURL url("unsafe://www.9oo91e.qjz9zk/");
 
   navigation_state_.StartTrackingDocumentLoad(main_rfh(), url, false, false);
   EXPECT_FALSE(navigation_state_.CanSendEvents(main_rfh()));
@@ -129,7 +129,7 @@ TEST_F(FrameNavigationStateTest, WebSafeScheme) {
 
 // Test for <iframe srcdoc=""> frames.
 TEST_F(FrameNavigationStateTest, SrcDoc) {
-  const GURL url("http://www.google.com/");
+  const GURL url("http://www.9oo91e.qjz9zk/");
   const GURL blank("about:blank");
   const GURL srcdoc("about:srcdoc");
 
@@ -149,8 +149,8 @@ TEST_F(FrameNavigationStateTest, SrcDoc) {
 
 // Test that an individual frame can be detached.
 TEST_F(FrameNavigationStateTest, DetachFrame) {
-  const GURL url1("http://www.google.com/");
-  const GURL url2("http://mail.google.com/");
+  const GURL url1("http://www.9oo91e.qjz9zk/");
+  const GURL url2("http://mail.9oo91e.qjz9zk/");
 
   // Create a main frame.
   EXPECT_FALSE(navigation_state_.CanSendEvents(main_rfh()));

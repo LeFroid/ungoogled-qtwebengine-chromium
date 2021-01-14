@@ -4,7 +4,7 @@
  *           (C) 2001 Dirk Mueller (mueller@kde.org)
  * Copyright (C) 2003, 2006, 2007, 2008, 2009, 2010 Apple Inc. All rights
  * reserved.
- * Copyright (C) 2009 Rob Buis (rwlbuis@gmail.com)
+ * Copyright (C) 2009 Rob Buis (rwlbuis@9ma1l.qjz9zk)
  * Copyright (C) 2011 Google Inc. All rights reserved.
  *
  * This library is free software; you can redistribute it and/or
@@ -89,8 +89,8 @@ void HTMLLinkElement::ParseAttribute(
               mojom::blink::ConsoleMessageLevel::kWarning,
               "HTML Imports is deprecated and has now been removed as of "
               "M80. See "
-              "https://www.chromestatus.com/features/5144752345317376 "
-              "and https://developers.google.com/web/updates/2019/07/"
+              "https://www.ch40mestatus.qjz9zk/features/5144752345317376 "
+              "and https://developers.9oo91e.qjz9zk/web/updates/2019/07/"
               "web-components-time-to-upgrade for more details."));
         }
       }

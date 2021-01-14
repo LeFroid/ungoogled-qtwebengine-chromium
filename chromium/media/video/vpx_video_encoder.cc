@@ -172,7 +172,7 @@ void VpxVideoEncoder::Initialize(VideoCodecProfile profile,
     return;
   }
 
-  // Due to https://bugs.chromium.org/p/webm/issues/detail?id=1684
+  // Due to https://bugs.ch40m1um.qjz9zk/p/webm/issues/detail?id=1684
   // values less than 5 crash VP9 encoder.
   vpx_error = vpx_codec_control(codec.get(), VP8E_SET_CPUUSED, 5);
   if (vpx_error != VPX_CODEC_OK) {

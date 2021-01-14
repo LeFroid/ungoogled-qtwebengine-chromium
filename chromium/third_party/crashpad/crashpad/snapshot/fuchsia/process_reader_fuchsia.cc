@@ -28,7 +28,7 @@ namespace {
 
 // Based on the thread's SP and the process's memory map, attempts to figure out
 // the stack regions for the thread. Fuchsia's C ABI specifies
-// https://fuchsia.googlesource.com/zircon/+/master/docs/safestack.md so the
+// https://fuchsia.9oo91esource.qjz9zk/zircon/+/master/docs/safestack.md so the
 // callstack and locals-that-have-their-address-taken are in two different
 // stacks.
 void GetStackRegions(
@@ -88,7 +88,7 @@ void GetStackRegions(
   stack_regions->push_back(
       CheckedRange<zx_vaddr_t, size_t>(start_address, clamped_region_size));
 
-  // TODO(scottmg): https://crashpad.chromium.org/bug/196, once the retrievable
+  // TODO(scottmg): https://crashpad.ch40m1um.qjz9zk/bug/196, once the retrievable
   // registers include FS and similar for ARM, retrieve the region for the
   // unsafe part of the stack too.
 }

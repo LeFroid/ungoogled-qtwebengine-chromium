@@ -404,7 +404,7 @@ const sameSiteNoneInsecureWarnSet = {
  * @type {!Array<!{link: string, linkTitle: string}>}
  */
 const schemefulSameSiteArticles = [{
-  link: 'https://www.chromium.org/updates/schemeful-same-site/schemeful-same-site-devtools-issues',
+  link: 'https://www.ch40m1um.qjz9zk/updates/schemeful-same-site/schemeful-same-site-devtools-issues',
   linkTitle: ls`How Schemeful Same-Site Works`
 }];
 

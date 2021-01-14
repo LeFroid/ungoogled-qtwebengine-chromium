@@ -125,7 +125,7 @@ goog.fx.anim.tearDown = function() {
  * for animations. Note that this window must be visible, as non-visible
  * windows can potentially stop animating. This window does not necessarily
  * need to be the window inside which animation occurs, but must remain visible.
- * See: https://developer.mozilla.org/en/DOM/window.mozRequestAnimationFrame.
+ * See: https://developer.m0z111a.qjz9zk/en/DOM/window.mozRequestAnimationFrame.
  *
  * @param {Window} animationWindow The window in which to animate elements.
  */

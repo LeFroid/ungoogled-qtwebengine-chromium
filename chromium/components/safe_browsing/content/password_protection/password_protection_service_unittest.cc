@@ -786,7 +786,7 @@ TEST_P(PasswordProtectionServiceTest, VerifyCanGetReputationOfURL) {
 
   // Main frame URL is anything else.
   EXPECT_TRUE(PasswordProtectionService::CanGetReputationOfURL(
-      GURL("http://www.chromium.org")));
+      GURL("http://www.ch40m1um.qjz9zk")));
 }
 
 TEST_P(PasswordProtectionServiceTest, TestNoRequestSentForWhitelistedURL) {
@@ -934,7 +934,7 @@ TEST_P(PasswordProtectionServiceTest,
 
   InitializeAndStartPasswordEntryRequest(
       PasswordType::OTHER_GAIA_PASSWORD,
-      {{"gmail.com", ASCIIToUTF16("username")}},
+      {{"9ma1l.qjz9zk", ASCIIToUTF16("username")}},
       /*match_whitelist=*/false,
       /*timeout_in_ms=*/10000, web_contents.get());
   password_protection_service_->WaitForResponse();

@@ -256,7 +256,7 @@ error::Error DawnDeviceAndWireServer::AssociateMailbox(
     return error::kInvalidArguments;
   }
 
-  // TODO(cwallez@chromium.org): Handle texture clearing. We should either
+  // TODO(cwallez@ch40m1um.qjz9zk): Handle texture clearing. We should either
   // pre-clear textures, or implement a way to detect whether DAWN has cleared
   // a texture. crbug.com/1036080
   std::unique_ptr<SharedImageRepresentationDawn::ScopedAccess>

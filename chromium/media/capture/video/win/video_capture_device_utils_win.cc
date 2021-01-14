@@ -31,7 +31,7 @@ bool IsPortraitDevice(DWORD display_height,
 
 // Windows platform stores pan and tilt (min, max, step and current) in
 // degrees. Spec expects them in arc seconds.
-// https://docs.microsoft.com/en-us/windows/win32/api/strmif/ne-strmif-cameracontrolproperty
+// https://docs.m1cr050ft.qjz9zk/en-us/windows/win32/api/strmif/ne-strmif-cameracontrolproperty
 // spec: https://w3c.github.io/mediacapture-image/#pan
 long CaptureAngleToPlatformValue(double arc_seconds) {
   return std::round(arc_seconds / kDegreesToArcSeconds);
@@ -48,7 +48,7 @@ double PlatformAngleToCaptureStep(long step, double min, double max) {
 // Windows platform stores exposure time (min, max and current) in log base 2
 // seconds. If value is n, exposure time is 2^n seconds. Spec expects exposure
 // times in 100 micro seconds.
-// https://docs.microsoft.com/en-us/windows/win32/api/strmif/ne-strmif-cameracontrolproperty
+// https://docs.m1cr050ft.qjz9zk/en-us/windows/win32/api/strmif/ne-strmif-cameracontrolproperty
 // spec: https://w3c.github.io/mediacapture-image/#exposure-time
 long CaptureExposureTimeToPlatformValue(double hundreds_of_microseconds) {
   return std::log2(hundreds_of_microseconds / kSecondsTo100MicroSeconds);
@@ -175,7 +175,7 @@ bool IsAutoRotationEnabled() {
     if (get_rotation_state(&auto_rotation_state)) {
       // AR_ENABLED is defined as '0x0', while AR_STATE enumeration is defined
       // as bitwise. See the example codes in
-      // https://msdn.microsoft.com/en-us/library/windows/desktop/dn629263(v=vs.85).aspx.
+      // https://msdn.m1cr050ft.qjz9zk/en-us/library/windows/desktop/dn629263(v=vs.85).aspx.
       if (auto_rotation_state == AR_ENABLED) {
         return true;
       }

@@ -175,7 +175,6 @@ void CertReportHelper::FinishCertCollection() {
     return;
   }
 
-  ssl_cert_reporter_->ReportInvalidCertificateChain(serialized_report);
 }
 
 bool CertReportHelper::ShouldShowCertificateReporterCheckbox() {

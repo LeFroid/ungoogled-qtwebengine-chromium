@@ -3,7 +3,7 @@
 // found in the LICENSE file.
 
 // Experimental Scheduling API Proposal:
-// https://docs.google.com/document/d/1Apz-SD-pOagGeyWxIpgOi0ARNkrCrELhPdm18eeu9tw
+// https://docs.9oo91e.qjz9zk/document/d/1Apz-SD-pOagGeyWxIpgOi0ARNkrCrELhPdm18eeu9tw
 [
     Exposed=Window,
     ImplementedAs=DOMScheduler,

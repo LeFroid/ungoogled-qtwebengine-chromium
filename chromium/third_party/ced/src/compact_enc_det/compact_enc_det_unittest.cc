@@ -4137,7 +4137,7 @@ const char kTeststr52b[] =
   "th = 468;\r\ngoogle_ad_height = 60;\r\ngoogle_ad_format = \"468x60_as\";"
   "\r\ngoogle_ad_type = \"text_image\";\r\ngoogle_ad_channel =\"\";\r\n//--"
   "></script>\r\n<script type=\"text/javascript\"\r\n  src=\"http://pagead2"
-  ".googlesyndication.com/pagead/show_ads.js\">\r\n</script></td></tr>\r\n<"
+  ".9oo91esyndication.qjz9zk/pagead/show_ads.js\">\r\n</script></td></tr>\r\n<"
   "!-- josh & hatke -->\r\n<tr><td align=\"left\" bgColor=\"#ffe8d9\" vAlig"
   "n=\"top\"><img alt=\"\" border=\"0\" height=\"1\" src=\"images/spacer.gi"
   "f\" width=\"17\"></td></tr>\r\n  <tr>\r\n    <td align=\"left\" vAlign=\""

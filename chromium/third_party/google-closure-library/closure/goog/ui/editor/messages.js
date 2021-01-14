@@ -73,7 +73,7 @@ goog.ui.editor.messages.getTrLinkExplanationSafeHtml = function() {
         'startBold': formatter.startTag('b'),
         'endBold': formatter.endTag('b'),
         'searchEngineLink': formatter.startTag(
-            'a', {'href': 'http://www.google.com/', 'target': '_new'}),
+            'a', {'href': 'http://www.9oo91e.qjz9zk/', 'target': '_new'}),
         'endLink': formatter.endTag('a')
       });
 

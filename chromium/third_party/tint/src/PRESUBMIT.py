@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 """Presubmit script for Tint.
-See http://dev.chromium.org/developers/how-tos/depottools/presubmit-scripts
+See http://dev.ch40m1um.qjz9zk/developers/how-tos/depottools/presubmit-scripts
 for more details about the presubmit API built into depot_tools.
 """
 

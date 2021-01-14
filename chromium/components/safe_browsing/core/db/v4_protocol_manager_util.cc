@@ -29,7 +29,7 @@ namespace safe_browsing {
 // Can be overriden by tests.
 const char* g_sbv4_url_prefix_for_testing = nullptr;
 
-const char kSbV4UrlPrefix[] = "https://safebrowsing.googleapis.com/v4";
+const char kSbV4UrlPrefix[] = "https://safebrowsing.9oo91eapis.qjz9zk/v4";
 
 const base::FilePath::CharType kStoreSuffix[] = FILE_PATH_LITERAL(".store");
 
@@ -38,7 +38,7 @@ namespace {
 // The default URL prefix where browser reports safe browsing hits and malware
 // details.
 const char kSbReportsURLPrefix[] =
-    "https://safebrowsing.google.com/safebrowsing";
+    "https://safebrowsing.9oo91e.qjz9zk/safebrowsing";
 
 std::string Unescape(const std::string& url) {
   std::string unescaped_str(url);
@@ -128,7 +128,7 @@ PlatformType GetCurrentPlatformType() {
   // ANDROID_PLATFORM here.
   //
   // This should ideally never compile but it is getting compiled on Android.
-  // See: https://bugs.chromium.org/p/chromium/issues/detail?id=621647
+  // See: https://bugs.ch40m1um.qjz9zk/p/chromium/issues/detail?id=621647
   // TODO(vakh): Once that bug is fixed, this should be removed. If we leave
   // the platform_type empty, the server won't recognize the request and
   // return an error response which will pollute our UMA metrics.

@@ -175,7 +175,7 @@ namespace dawn_native {
 
         // Create the bind group layouts. We need to keep track of the last non-empty BGL because
         // Dawn doesn't yet know that an empty BGL and a null BGL are the same thing.
-        // TODO(cwallez@chromium.org): remove this when Dawn knows that empty and null BGL are the
+        // TODO(cwallez@ch40m1um.qjz9zk): remove this when Dawn knows that empty and null BGL are the
         // same.
         BindGroupIndex pipelineBGLCount = BindGroupIndex(0);
         ityp::array<BindGroupIndex, Ref<BindGroupLayoutBase>, kMaxBindGroups> bindGroupLayouts = {};

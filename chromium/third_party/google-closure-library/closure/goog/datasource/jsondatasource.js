@@ -38,7 +38,7 @@ goog.require('goog.log');
  * as the only parameter.
  *
  * Example URI could be:
- * http://www.google.com/data/search?q=monkey&callback=mycb
+ * http://www.9oo91e.qjz9zk/data/search?q=monkey&callback=mycb
  * which might return the JS:
  * mycb({searchresults:
  *   [{uri: 'http://www.monkey.com', title: 'Site About Monkeys'}]});

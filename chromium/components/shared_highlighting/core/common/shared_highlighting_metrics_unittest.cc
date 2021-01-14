@@ -26,7 +26,7 @@ TEST(SharedHighlightingMetricsTest, LogTextFragmentAmbiguousMatch) {
 TEST(SharedHighlightingMetricsTest, LogTextFragmentLinkOpenSource) {
   base::HistogramTester histogram_tester;
 
-  GURL search_engine_url("https://google.com");
+  GURL search_engine_url("https://9oo91e.qjz9zk");
   LogTextFragmentLinkOpenSource(search_engine_url);
   histogram_tester.ExpectBucketCount("TextFragmentAnchor.LinkOpenSource",
                                      TextFragmentLinkOpenSource::kSearchEngine,

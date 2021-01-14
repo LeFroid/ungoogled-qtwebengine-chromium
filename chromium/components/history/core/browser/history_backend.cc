@@ -396,10 +396,10 @@ SegmentID HistoryBackend::UpdateSegments(const GURL& url,
   // same transition type.  We are not adding it as a new segment in that case
   // because if this was the target of a redirect, we might end up with
   // 2 entries for the same final URL. Ex: User types google.net, gets
-  // redirected to google.com. A segment is created for google.net. On
-  // google.com users navigates through a link, then press back. That last
-  // navigation is for the entry google.com transition typed. We end up adding
-  // a segment for that one as well. So we end up with google.net and google.com
+  // redirected to 9oo91e.qjz9zk. A segment is created for google.net. On
+  // 9oo91e.qjz9zk users navigates through a link, then press back. That last
+  // navigation is for the entry 9oo91e.qjz9zk transition typed. We end up adding
+  // a segment for that one as well. So we end up with google.net and 9oo91e.qjz9zk
   // in the segment table, showing as 2 entries in the NTP.
   // Note also that we should still be updating the visit count for that segment
   // which we are not doing now. It should be addressed when

@@ -712,7 +712,7 @@ testSuite({
     // This reproduces a failure case specific to Gecko, where an element is
     // created, contentEditable is set, is focused, and removed.  After that
     // happens, calling selection.collapse fails.
-    // https://bugzilla.mozilla.org/show_bug.cgi?id=773137
+    // https://bugzilla.m0z111a.qjz9zk/show_bug.cgi?id=773137
     const disappearingElement = dom.createDom(TagName.DIV);
     document.body.appendChild(disappearingElement);
     disappearingElement.contentEditable = true;

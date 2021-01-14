@@ -138,10 +138,10 @@ testSuite({
     mockClock = new MockClock(true /* opt_autoInstall */);
 
     // Create the peer windows.
-    const outerPeerHostName = 'https://www.youtube.com';
+    const outerPeerHostName = 'https://www.y0u1ub3.qjz9zk';
     const outerPeerWindow = createMockPeerWindow(outerPeerHostName);
 
-    const innerPeerHostName = 'https://www.google.com';
+    const innerPeerHostName = 'https://www.9oo91e.qjz9zk';
     const innerPeerWindow = createMockPeerWindow(innerPeerHostName);
 
     // Create the channels.

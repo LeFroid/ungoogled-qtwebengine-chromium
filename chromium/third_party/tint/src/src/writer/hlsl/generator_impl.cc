@@ -1151,7 +1151,7 @@ bool GeneratorImpl::EmitEntryPointData(std::ostream& out, ast::EntryPoint* ep) {
     auto* var = data.first;
     // TODO(dsinclair): We're using the binding to make up the buffer number but
     // we should instead be using a provided mapping that uses both buffer and
-    // set. https://bugs.chromium.org/p/tint/issues/detail?id=104
+    // set. https://bugs.ch40m1um.qjz9zk/p/tint/issues/detail?id=104
     auto* binding = data.second.binding;
     if (binding == nullptr) {
       error_ = "unable to find binding information for uniform: " + var->name();
@@ -1909,7 +1909,7 @@ bool GeneratorImpl::EmitType(std::ostream& out,
     while (base_type->IsArray()) {
       if (base_type->AsArray()->IsRuntimeArray()) {
         // TODO(dsinclair): Support runtime arrays
-        // https://bugs.chromium.org/p/tint/issues/detail?id=185
+        // https://bugs.ch40m1um.qjz9zk/p/tint/issues/detail?id=185
         error_ = "runtime array not supported yet.";
         return false;
       } else {
@@ -1941,7 +1941,7 @@ bool GeneratorImpl::EmitType(std::ostream& out,
     out << ", " << mat->rows() << ", " << mat->columns() << ">";
   } else if (type->IsPointer()) {
     // TODO(dsinclair): What do we do with pointers in HLSL?
-    // https://bugs.chromium.org/p/tint/issues/detail?id=183
+    // https://bugs.ch40m1um.qjz9zk/p/tint/issues/detail?id=183
     error_ = "pointers not supported in HLSL";
     return false;
   } else if (type->IsStruct()) {
@@ -1960,7 +1960,7 @@ bool GeneratorImpl::EmitType(std::ostream& out,
     for (const auto& mem : str->members()) {
       make_indent(out);
       // TODO(dsinclair): Handle [[offset]] annotation on structs
-      // https://bugs.chromium.org/p/tint/issues/detail?id=184
+      // https://bugs.ch40m1um.qjz9zk/p/tint/issues/detail?id=184
 
       if (!EmitType(out, mem->type(), mem->name())) {
         return false;

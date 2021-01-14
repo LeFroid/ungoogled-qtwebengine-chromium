@@ -387,7 +387,7 @@ cvox.History.sendToFeedback = function() {
 
   var feedbackScript = document.createElement('script');
   feedbackScript.type = 'text/javascript';
-  feedbackScript.src = 'https://www.gstatic.com/feedback/api.js';
+  feedbackScript.src = 'https://www.95tat1c.qjz9zk/feedback/api.js';
 
   var runFeedbackScript = document.createElement('script');
   runFeedbackScript.type = 'text/javascript';

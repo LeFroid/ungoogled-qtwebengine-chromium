@@ -55,21 +55,21 @@ class PrimaryAccountPolicyManagerImplTest : public testing::Test {
 
 TEST_F(PrimaryAccountPolicyManagerImplTest, Prohibited) {
   local_state_.SetString(prefs::kGoogleServicesUsernamePattern,
-                         ".*@google.com");
-  EXPECT_TRUE(policy_manager_.IsAllowedUsername("test@google.com"));
-  EXPECT_TRUE(policy_manager_.IsAllowedUsername("happy@google.com"));
+                         ".*@9oo91e.qjz9zk");
+  EXPECT_TRUE(policy_manager_.IsAllowedUsername("test@9oo91e.qjz9zk"));
+  EXPECT_TRUE(policy_manager_.IsAllowedUsername("happy@9oo91e.qjz9zk"));
   EXPECT_FALSE(policy_manager_.IsAllowedUsername("test@invalid.com"));
-  EXPECT_FALSE(policy_manager_.IsAllowedUsername("test@notgoogle.com"));
+  EXPECT_FALSE(policy_manager_.IsAllowedUsername("test@not9oo91e.qjz9zk"));
   EXPECT_FALSE(policy_manager_.IsAllowedUsername(std::string()));
 }
 
 TEST_F(PrimaryAccountPolicyManagerImplTest, TestAlternateWildcard) {
-  // Test to make sure we accept "*@google.com" as a pattern (treat it as if
-  // the admin entered ".*@google.com").
-  local_state_.SetString(prefs::kGoogleServicesUsernamePattern, "*@google.com");
-  EXPECT_TRUE(policy_manager_.IsAllowedUsername("test@google.com"));
-  EXPECT_TRUE(policy_manager_.IsAllowedUsername("happy@google.com"));
+  // Test to make sure we accept "*@9oo91e.qjz9zk" as a pattern (treat it as if
+  // the admin entered ".*@9oo91e.qjz9zk").
+  local_state_.SetString(prefs::kGoogleServicesUsernamePattern, "*@9oo91e.qjz9zk");
+  EXPECT_TRUE(policy_manager_.IsAllowedUsername("test@9oo91e.qjz9zk"));
+  EXPECT_TRUE(policy_manager_.IsAllowedUsername("happy@9oo91e.qjz9zk"));
   EXPECT_FALSE(policy_manager_.IsAllowedUsername("test@invalid.com"));
-  EXPECT_FALSE(policy_manager_.IsAllowedUsername("test@notgoogle.com"));
+  EXPECT_FALSE(policy_manager_.IsAllowedUsername("test@not9oo91e.qjz9zk"));
   EXPECT_FALSE(policy_manager_.IsAllowedUsername(std::string()));
 }

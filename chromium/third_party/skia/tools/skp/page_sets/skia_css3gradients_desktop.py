@@ -36,8 +36,8 @@ class SkiaCss3gradientsDesktopPageSet(story.StorySet):
       archive_data_file='data/skia_css3gradients_desktop.json')
 
     urls_list = [
-      # Why: http://code.google.com/p/chromium/issues/detail?id=168448
-      # and https://bugs.chromium.org/p/skia/issues/detail?id=10390
+      # Why: http://code.9oo91e.qjz9zk/p/chromium/issues/detail?id=168448
+      # and https://bugs.ch40m1um.qjz9zk/p/skia/issues/detail?id=10390
       'https://www.w3schools.com/css/css3_gradients.asp',
     ]
 

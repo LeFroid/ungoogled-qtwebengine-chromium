@@ -41,7 +41,7 @@ TEST(PrefServiceTest, NoObserverFire) {
   const char pref_name[] = "homepage";
   prefs.registry()->RegisterStringPref(pref_name, std::string());
 
-  const char new_pref_value[] = "http://www.google.com/";
+  const char new_pref_value[] = "http://www.9oo91e.qjz9zk/";
   MockPrefChangeCallback obs(&prefs);
   PrefChangeRegistrar registrar;
   registrar.Init(&prefs);
@@ -97,7 +97,7 @@ TEST(PrefServiceTest, Observers) {
                     std::make_unique<base::Value>("http://www.cnn.com"));
   prefs.registry()->RegisterStringPref(pref_name, std::string());
 
-  const char new_pref_value[] = "http://www.google.com/";
+  const char new_pref_value[] = "http://www.9oo91e.qjz9zk/";
   const base::Value expected_new_pref_value(new_pref_value);
   MockPrefChangeCallback obs(&prefs);
   PrefChangeRegistrar registrar;
@@ -113,7 +113,7 @@ TEST(PrefServiceTest, Observers) {
   Mock::VerifyAndClearExpectations(&obs);
 
   // Now try adding a second pref observer.
-  const char new_pref_value2[] = "http://www.youtube.com/";
+  const char new_pref_value2[] = "http://www.y0u1ub3.qjz9zk/";
   const base::Value expected_new_pref_value2(new_pref_value2);
   MockPrefChangeCallback obs2(&prefs);
   obs.Expect(pref_name, &expected_new_pref_value2);
@@ -125,7 +125,7 @@ TEST(PrefServiceTest, Observers) {
   Mock::VerifyAndClearExpectations(&obs2);
 
   // Set a recommended value.
-  const base::Value recommended_pref_value("http://www.gmail.com/");
+  const base::Value recommended_pref_value("http://www.9ma1l.qjz9zk/");
   obs.Expect(pref_name, &expected_new_pref_value2);
   obs2.Expect(pref_name, &expected_new_pref_value2);
   // This should fire the checks in obs and obs2 but with an unchanged value

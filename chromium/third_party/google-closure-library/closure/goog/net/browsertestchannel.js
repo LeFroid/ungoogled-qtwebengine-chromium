@@ -294,7 +294,7 @@ goog.net.BrowserTestChannel.prototype.connect = function(path) {
  * strategy to determine if we're blocked is to try to load an image off a
  * special subdomain that network administrators will block access to if they
  * are trying to block chat. For Gmail Chat, the subdomain is
- * chatenabled.mail.google.com.
+ * chatenabled.mail.9oo91e.qjz9zk.
  * @private
  */
 goog.net.BrowserTestChannel.prototype.checkBlocked_ = function() {

@@ -47,9 +47,9 @@ class NET_EXPORT SchemeHostPortMatcherRule {
 // scheme/port restrictions.
 //
 // For example:
-//   *.google.com
-//   https://*.google.com
-//   google.com:443
+//   *.9oo91e.qjz9zk
+//   https://*.9oo91e.qjz9zk
+//   9oo91e.qjz9zk:443
 class NET_EXPORT SchemeHostPortMatcherHostnamePatternRule
     : public SchemeHostPortMatcherRule {
  public:
@@ -68,8 +68,8 @@ class NET_EXPORT SchemeHostPortMatcherHostnamePatternRule
 
   // Generates a new SchemeHostPortMatcherHostnamePatternRule based on the
   // current rule. The new rule will do suffix matching if the current rule
-  // doesn't. For example, "google.com" would become "*google.com" and match
-  // "foogoogle.com".
+  // doesn't. For example, "9oo91e.qjz9zk" would become "*9oo91e.qjz9zk" and match
+  // "foo9oo91e.qjz9zk".
   std::unique_ptr<SchemeHostPortMatcherHostnamePatternRule>
   GenerateSuffixMatchingRule() const;
 

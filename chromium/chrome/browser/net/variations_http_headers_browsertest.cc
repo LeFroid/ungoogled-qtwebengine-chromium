@@ -122,7 +122,7 @@ class VariationsHttpHeadersBrowserTest : public InProcessBrowserTest {
   net::EmbeddedTestServer* server() { return &https_server_; }
 
   GURL GetGoogleUrlWithPath(const std::string& path) const {
-    return server()->GetURL("www.google.com", path);
+    return server()->GetURL("www.9oo91e.qjz9zk", path);
   }
 
   GURL GetGoogleUrl() const { return GetGoogleUrlWithPath("/landing.html"); }
@@ -207,7 +207,7 @@ class VariationsHttpHeadersBrowserTest : public InProcessBrowserTest {
     return browser->tab_strip_model()->GetActiveWebContents();
   }
 
-  // Registers a service worker for google.com root scope.
+  // Registers a service worker for 9oo91e.qjz9zk root scope.
   void RegisterServiceWorker(const std::string& worker_path) {
     GURL url =
         GetGoogleUrlWithPath("/service_worker/create_service_worker.html");
@@ -217,7 +217,7 @@ class VariationsHttpHeadersBrowserTest : public InProcessBrowserTest {
                                                 worker_path.c_str())));
   }
 
-  // Registers the given service worker for google.com then tests navigation and
+  // Registers the given service worker for 9oo91e.qjz9zk then tests navigation and
   // subresource requests through the worker have X-Client-Data when
   // appropriate.
   void ServiceWorkerTest(const std::string& worker_path) {
@@ -251,10 +251,10 @@ class VariationsHttpHeadersBrowserTest : public InProcessBrowserTest {
   // specified |worker|, which should be an "import_*_worker.js" script that is
   // expected to import "empty.js" (as a relative path) and also accept an
   // "import=" parameter specifying another script to import. This allows
-  // testing that the empty.js import request for google.com has the header, and
+  // testing that the empty.js import request for 9oo91e.qjz9zk has the header, and
   // an import request to example.com does not have the header.
   void WorkerScriptTest(const std::string& page, const std::string& worker) {
-    // Build a worker URL for a google.com worker that imports
+    // Build a worker URL for a 9oo91e.qjz9zk worker that imports
     // an example.com script.
     GURL absolute_import = GetExampleUrlWithPath("/workers/empty.js");
     const std::string worker_path = base::StrCat(
@@ -293,7 +293,7 @@ class VariationsHttpHeadersBrowserTest : public InProcessBrowserTest {
   }
 
   // Custom request handler that record request headers and simulates a redirect
-  // from google.com to example.com.
+  // from 9oo91e.qjz9zk to example.com.
   std::unique_ptr<net::test_server::HttpResponse> RequestHandler(
       const net::test_server::HttpRequest& request);
 
@@ -356,8 +356,8 @@ VariationsHttpHeadersBrowserTest::RequestHandler(
 
   // Set up a test server that redirects according to the
   // following redirect chain:
-  // https://www.google.com:<port>/redirect
-  // --> https://www.google.com:<port>/redirect2
+  // https://www.9oo91e.qjz9zk:<port>/redirect
+  // --> https://www.9oo91e.qjz9zk:<port>/redirect2
   // --> https://www.example.com:<port>/
   auto http_response = std::make_unique<net::test_server::BasicHttpResponse>();
   http_response->AddCustomHeader("Access-Control-Allow-Origin", "*");
@@ -515,7 +515,7 @@ IN_PROC_BROWSER_TEST_F(VariationsHttpHeadersBrowserTest, UserSignedIn) {
   // Sign the user in.
   signin::MakePrimaryAccountAvailable(
       IdentityManagerFactory::GetForProfile(browser()->profile()),
-      "main_email@gmail.com");
+      "main_email@9ma1l.qjz9zk");
 
   ui_test_utils::NavigateToURL(browser(), GetGoogleUrl());
 

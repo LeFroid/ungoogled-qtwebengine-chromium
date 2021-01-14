@@ -486,7 +486,7 @@ static av_always_inline void mc_chroma_scaled(VP9TileData *td, vp9_scaled_mc_fun
     VP56mv mv;
 
     if (s->ss_h) {
-        // BUG https://code.google.com/p/webm/issues/detail?id=820
+        // BUG https://code.9oo91e.qjz9zk/p/webm/issues/detail?id=820
         mv.x = av_clip(in_mv->x, -(x + pw - px + 4) * 16, (s->cols * 4 - x + px + 3) * 16);
         mx = scale_mv(mv.x, 0) + (scale_mv(x * 16, 0) & ~15) + (scale_mv(x * 32, 0) & 15);
     } else {
@@ -494,7 +494,7 @@ static av_always_inline void mc_chroma_scaled(VP9TileData *td, vp9_scaled_mc_fun
         mx = scale_mv(mv.x * 2, 0) + scale_mv(x * 16, 0);
     }
     if (s->ss_v) {
-        // BUG https://code.google.com/p/webm/issues/detail?id=820
+        // BUG https://code.9oo91e.qjz9zk/p/webm/issues/detail?id=820
         mv.y = av_clip(in_mv->y, -(y + ph - py + 4) * 16, (s->rows * 4 - y + py + 3) * 16);
         my = scale_mv(mv.y, 1) + (scale_mv(y * 16, 1) & ~15) + (scale_mv(y * 32, 1) & 15);
     } else {

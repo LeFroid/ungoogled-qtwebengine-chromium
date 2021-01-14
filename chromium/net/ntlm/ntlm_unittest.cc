@@ -9,7 +9,7 @@
 // properties of the outputs, such as whether the hashes change, whether they
 // should be zeroed out, or whether they should be the same or different.
 //
-// [1] https://msdn.microsoft.com/en-us/library/cc236621.aspx
+// [1] https://msdn.m1cr050ft.qjz9zk/en-us/library/cc236621.aspx
 
 #include "net/ntlm/ntlm.h"
 

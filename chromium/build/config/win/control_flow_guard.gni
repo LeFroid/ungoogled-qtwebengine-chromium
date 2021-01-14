@@ -12,7 +12,7 @@ declare_args() {
 
 if (win_enable_cfg_guards) {
   # Control Flow Guard (CFG)
-  # https://msdn.microsoft.com/en-us/library/windows/desktop/mt637065.aspx
+  # https://msdn.m1cr050ft.qjz9zk/en-us/library/windows/desktop/mt637065.aspx
   # /DYNAMICBASE (ASLR) is turned off in debug builds, therefore CFG can't be
   # turned on either.
   # ASan and CFG leads to slow process startup. Chromium's test runner uses

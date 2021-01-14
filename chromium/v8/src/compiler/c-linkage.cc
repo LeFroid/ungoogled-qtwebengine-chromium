@@ -141,7 +141,7 @@ namespace {
 
 #ifdef V8_TARGET_OS_WIN
 // As defined in
-// https://docs.microsoft.com/en-us/cpp/build/x64-calling-convention?view=vs-2019#parameter-passing,
+// https://docs.m1cr050ft.qjz9zk/en-us/cpp/build/x64-calling-convention?view=vs-2019#parameter-passing,
 // Windows calling convention doesn't differentiate between GP and FP params
 // when counting how many of them should be placed in registers. That's why
 // we use the same counter {i} for both types here.

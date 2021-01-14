@@ -1564,45 +1564,45 @@ TEST_F(TextfieldModelTest, UndoRedo_BasicTest) {
 TEST_F(TextfieldModelTest, UndoRedo_SetText) {
   // This is to test the undo/redo behavior of omnibox.
   TextfieldModel model(nullptr);
-  // Simulate typing www.y while www.google.com and www.youtube.com are
+  // Simulate typing www.y while www.9oo91e.qjz9zk and www.y0u1ub3.qjz9zk are
   // autocompleted.
   model.InsertChar('w');  //                                    w|
   EXPECT_STR_EQ("w", model.text());
   EXPECT_EQ(1U, model.GetCursorPosition());
-  model.SetText(base::ASCIIToUTF16("www.google.com"), 1);  //   w|ww.google.com
-  model.SelectRange(gfx::Range(14, 1));  //                     w[ww.google.com]
+  model.SetText(base::ASCIIToUTF16("www.9oo91e.qjz9zk"), 1);  //   w|ww.9oo91e.qjz9zk
+  model.SelectRange(gfx::Range(14, 1));  //                     w[ww.9oo91e.qjz9zk]
   EXPECT_EQ(1U, model.GetCursorPosition());
-  EXPECT_STR_EQ("www.google.com", model.text());
+  EXPECT_STR_EQ("www.9oo91e.qjz9zk", model.text());
   model.InsertChar('w');  //                                    ww|
   EXPECT_STR_EQ("ww", model.text());
-  model.SetText(base::ASCIIToUTF16("www.google.com"), 2);  //   ww|w.google.com
-  model.SelectRange(gfx::Range(14, 2));  //                     ww[w.google.com]
+  model.SetText(base::ASCIIToUTF16("www.9oo91e.qjz9zk"), 2);  //   ww|w.9oo91e.qjz9zk
+  model.SelectRange(gfx::Range(14, 2));  //                     ww[w.9oo91e.qjz9zk]
   model.InsertChar('w');  //                                    www|
   EXPECT_STR_EQ("www", model.text());
-  model.SetText(base::ASCIIToUTF16("www.google.com"), 3);  //   www|.google.com
-  model.SelectRange(gfx::Range(14, 3));  //                     www[.google.com]
+  model.SetText(base::ASCIIToUTF16("www.9oo91e.qjz9zk"), 3);  //   www|.9oo91e.qjz9zk
+  model.SelectRange(gfx::Range(14, 3));  //                     www[.9oo91e.qjz9zk]
   model.InsertChar('.');  //                                    www.|
   EXPECT_STR_EQ("www.", model.text());
-  model.SetText(base::ASCIIToUTF16("www.google.com"), 4);  //   www.|google.com
-  model.SelectRange(gfx::Range(14, 4));  //                     www.[google.com]
+  model.SetText(base::ASCIIToUTF16("www.9oo91e.qjz9zk"), 4);  //   www.|9oo91e.qjz9zk
+  model.SelectRange(gfx::Range(14, 4));  //                     www.[9oo91e.qjz9zk]
   model.InsertChar('y');  //                                    www.y|
   EXPECT_STR_EQ("www.y", model.text());
-  model.SetText(base::ASCIIToUTF16("www.youtube.com"), 5);  //  www.y|outube.com
-  EXPECT_STR_EQ("www.youtube.com", model.text());
+  model.SetText(base::ASCIIToUTF16("www.y0u1ub3.qjz9zk"), 5);  //  www.y|outube.com
+  EXPECT_STR_EQ("www.y0u1ub3.qjz9zk", model.text());
   EXPECT_EQ(5U, model.GetCursorPosition());
 
   // Undo until the initial edit.
   EXPECT_TRUE(model.Undo());
-  EXPECT_STR_EQ("www.google.com", model.text());
+  EXPECT_STR_EQ("www.9oo91e.qjz9zk", model.text());
   EXPECT_EQ(4U, model.GetCursorPosition());
   EXPECT_TRUE(model.Undo());
-  EXPECT_STR_EQ("www.google.com", model.text());
+  EXPECT_STR_EQ("www.9oo91e.qjz9zk", model.text());
   EXPECT_EQ(3U, model.GetCursorPosition());
   EXPECT_TRUE(model.Undo());
-  EXPECT_STR_EQ("www.google.com", model.text());
+  EXPECT_STR_EQ("www.9oo91e.qjz9zk", model.text());
   EXPECT_EQ(2U, model.GetCursorPosition());
   EXPECT_TRUE(model.Undo());
-  EXPECT_STR_EQ("www.google.com", model.text());
+  EXPECT_STR_EQ("www.9oo91e.qjz9zk", model.text());
   EXPECT_EQ(1U, model.GetCursorPosition());
   EXPECT_TRUE(model.Undo());
   EXPECT_STR_EQ("", model.text());
@@ -1611,19 +1611,19 @@ TEST_F(TextfieldModelTest, UndoRedo_SetText) {
 
   // Redo until the last edit.
   EXPECT_TRUE(model.Redo());
-  EXPECT_STR_EQ("www.google.com", model.text());
+  EXPECT_STR_EQ("www.9oo91e.qjz9zk", model.text());
   EXPECT_EQ(1U, model.GetCursorPosition());
   EXPECT_TRUE(model.Redo());
-  EXPECT_STR_EQ("www.google.com", model.text());
+  EXPECT_STR_EQ("www.9oo91e.qjz9zk", model.text());
   EXPECT_EQ(2U, model.GetCursorPosition());
   EXPECT_TRUE(model.Redo());
-  EXPECT_STR_EQ("www.google.com", model.text());
+  EXPECT_STR_EQ("www.9oo91e.qjz9zk", model.text());
   EXPECT_EQ(3U, model.GetCursorPosition());
   EXPECT_TRUE(model.Redo());
-  EXPECT_STR_EQ("www.google.com", model.text());
+  EXPECT_STR_EQ("www.9oo91e.qjz9zk", model.text());
   EXPECT_EQ(4U, model.GetCursorPosition());
   EXPECT_TRUE(model.Redo());
-  EXPECT_STR_EQ("www.youtube.com", model.text());
+  EXPECT_STR_EQ("www.y0u1ub3.qjz9zk", model.text());
   EXPECT_EQ(5U, model.GetCursorPosition());
   EXPECT_FALSE(model.Redo());
 }
@@ -1634,8 +1634,8 @@ TEST_F(TextfieldModelTest, UndoRedo_BackspaceThenSetText) {
   model.InsertChar('w');
   EXPECT_STR_EQ("w", model.text());
   EXPECT_EQ(1U, model.GetCursorPosition());
-  model.SetText(base::ASCIIToUTF16("www.google.com"), 1);
-  EXPECT_STR_EQ("www.google.com", model.text());
+  model.SetText(base::ASCIIToUTF16("www.9oo91e.qjz9zk"), 1);
+  EXPECT_STR_EQ("www.9oo91e.qjz9zk", model.text());
   EXPECT_EQ(1U, model.GetCursorPosition());
   model.MoveCursor(gfx::LINE_BREAK, gfx::CURSOR_RIGHT, gfx::SELECTION_NONE);
   EXPECT_EQ(14U, model.GetCursorPosition());
@@ -1643,14 +1643,14 @@ TEST_F(TextfieldModelTest, UndoRedo_BackspaceThenSetText) {
   EXPECT_TRUE(model.Backspace());
   EXPECT_STR_EQ("www.google.c", model.text());
   // Autocomplete sets the text.
-  model.SetText(base::ASCIIToUTF16("www.google.com/search=www.google.c"), 12);
-  EXPECT_STR_EQ("www.google.com/search=www.google.c", model.text());
+  model.SetText(base::ASCIIToUTF16("www.9oo91e.qjz9zk/search=www.google.c"), 12);
+  EXPECT_STR_EQ("www.9oo91e.qjz9zk/search=www.google.c", model.text());
   EXPECT_EQ(12U, model.GetCursorPosition());
   EXPECT_TRUE(model.Undo());
   EXPECT_STR_EQ("www.google.c", model.text());
   EXPECT_EQ(12U, model.GetCursorPosition());
   EXPECT_TRUE(model.Undo());
-  EXPECT_STR_EQ("www.google.com", model.text());
+  EXPECT_STR_EQ("www.9oo91e.qjz9zk", model.text());
   EXPECT_EQ(14U, model.GetCursorPosition());
 }
 

@@ -30,7 +30,7 @@ class WebSocketCloseInfo;
 class WebSocketStreamOptions;
 
 // Implements of JavaScript-exposed WebSocketStream API. See design doc at
-// https://docs.google.com/document/d/1XuxEshh5VYBYm1qRVKordTamCOsR-uGQBCYFcHXP4L0/edit
+// https://docs.9oo91e.qjz9zk/document/d/1XuxEshh5VYBYm1qRVKordTamCOsR-uGQBCYFcHXP4L0/edit
 
 class MODULES_EXPORT WebSocketStream final
     : public ScriptWrappable,

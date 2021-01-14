@@ -9,9 +9,9 @@ This file is used to generate a comprehensive list of Security histograms
 along with a detailed description for each histogram.
 
 For best practices on writing histogram descriptions, see
-https://chromium.googlesource.com/chromium/src.git/+/HEAD/tools/metrics/histograms/README.md
+https://chromium.9oo91esource.qjz9zk/chromium/src.git/+/HEAD/tools/metrics/histograms/README.md
 
-Please send CLs to chromium-metrics-reviews@google.com rather than to specific
+Please send CLs to chromium-metrics-reviews@9oo91e.qjz9zk rather than to specific
 individuals. These CLs will be automatically reassigned to a reviewer within
 about 5 minutes. This approach helps the metrics team to load-balance incoming
 reviews. Googlers can read more about this at go/gwsq-gerrit.
@@ -24,7 +24,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram
     name="Security.CertificateTransparency.MainFrameNavigationCompliance"
     enum="CTComplianceStatus" expires_after="M78">
-  <owner>estark@chromium.org</owner>
+  <owner>estark@ch40m1um.qjz9zk</owner>
   <summary>
     The compliance of each main frame navigation's connection with the
     Certificate Transparency policy. Recorded whenever a main-frame,
@@ -37,7 +37,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Security.ClientAuth.CertificateSelectionSource"
     enum="ClientCertSelectionResult" expires_after="2020-08-16">
-  <owner>jdeblasio@chromium.org</owner>
+  <owner>jdeblasio@ch40m1um.qjz9zk</owner>
   <summary>
     When TLS client authentication is requested by the server, Chrome must
     choose whether to return a certificate or to abort the handshake. This
@@ -53,8 +53,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Security.LegacyTLS.DownloadStarted" enum="Boolean"
     expires_after="M88">
-  <owner>cthomp@chromium.org</owner>
-  <owner>security-enamel@chromium.org</owner>
+  <owner>cthomp@ch40m1um.qjz9zk</owner>
+  <owner>security-enamel@ch40m1um.qjz9zk</owner>
   <summary>
     Records whether the page would have a legacy TLS warning (if the user were
     in the appropriate field trial) when a download is initiated from the page
@@ -67,8 +67,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Security.LegacyTLS.FormSubmission" enum="Boolean"
     expires_after="M88">
-  <owner>cthomp@chromium.org</owner>
-  <owner>security-enamel@chromium.org</owner>
+  <owner>cthomp@ch40m1um.qjz9zk</owner>
+  <owner>security-enamel@ch40m1um.qjz9zk</owner>
   <summary>
     Records whether the page would have a legacy TLS warning (if the user were
     in the appropriate field trial) when submitting a form. This is recorded
@@ -79,9 +79,9 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Security.LegacyTLS.OnCommit" enum="Boolean"
     expires_after="M88">
-  <owner>cthomp@chromium.org</owner>
-  <owner>estark@chromium.org</owner>
-  <owner>security-enamel@chromium.org</owner>
+  <owner>cthomp@ch40m1um.qjz9zk</owner>
+  <owner>estark@ch40m1um.qjz9zk</owner>
+  <owner>security-enamel@ch40m1um.qjz9zk</owner>
   <summary>
     Records whether the page would have a legacy TLS warning (if the user were
     in the appropriate field trial) when the navigation to the page commits.
@@ -90,8 +90,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Security.LegacyTLS.PageInfo.Action"
     enum="WebsiteSettingsAction" expires_after="M88">
-  <owner>cthomp@chromium.org</owner>
-  <owner>security-enamel@chromium.org</owner>
+  <owner>cthomp@ch40m1um.qjz9zk</owner>
+  <owner>security-enamel@ch40m1um.qjz9zk</owner>
   <summary>
     Tracks Page Info bubble actions along with whether the page would have a
     legacy TLS warning (if the user were in the appropriate field trial).
@@ -100,8 +100,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram base="true" name="Security.PageEndReason" enum="PageEndReason"
     expires_after="2021-02-01">
-  <owner>cthomp@chromium.org</owner>
-  <owner>security-enamel@chromium.org</owner>
+  <owner>cthomp@ch40m1um.qjz9zk</owner>
+  <owner>security-enamel@ch40m1um.qjz9zk</owner>
   <summary>
     Records the reason the page visit ended (e.g., reload, tab closed, new
     navigation, etc.) for page loads that committed.
@@ -110,7 +110,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Security.PageInfo.Action.HttpsUrl.Dangerous"
     enum="WebsiteSettingsAction" expires_after="M77">
-  <owner>estark@chromium.org</owner>
+  <owner>estark@ch40m1um.qjz9zk</owner>
   <summary>
     Tracks Page Info bubble actions that take place on an HTTPS URL that has
     been marked dangerous or not secure (such as for malware or broken HTTPS).
@@ -119,7 +119,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Security.PageInfo.Action.HttpsUrl.Downgraded"
     enum="WebsiteSettingsAction" expires_after="M81">
-  <owner>estark@chromium.org</owner>
+  <owner>estark@ch40m1um.qjz9zk</owner>
   <summary>
     Tracks Page Info bubble actions that take place on a valid HTTPS URL that
     has a security issue (e.g. mixed content).
@@ -128,7 +128,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Security.PageInfo.Action.HttpsUrl.ValidEV"
     enum="WebsiteSettingsAction" expires_after="M81">
-  <owner>estark@chromium.org</owner>
+  <owner>estark@ch40m1um.qjz9zk</owner>
   <summary>
     Tracks Page Info bubble actions that take place on a valid HTTPS URL with no
     security issues (e.g. no mixed content) and an Extended Validation
@@ -138,7 +138,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Security.PageInfo.Action.HttpsUrl.ValidNonEV"
     enum="WebsiteSettingsAction" expires_after="M81">
-  <owner>estark@chromium.org</owner>
+  <owner>estark@ch40m1um.qjz9zk</owner>
   <summary>
     Tracks Page Info bubble actions that take place on a valid HTTPS URL with no
     security issues (e.g. no mixed content), but no Extended Validation
@@ -148,7 +148,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Security.PageInfo.Action.HttpUrl.Dangerous"
     enum="WebsiteSettingsAction" expires_after="M81">
-  <owner>estark@chromium.org</owner>
+  <owner>estark@ch40m1um.qjz9zk</owner>
   <summary>
     Tracks Page Info bubble actions that take place on an HTTP URL that has been
     marked dangerous (such as for malware).
@@ -157,7 +157,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Security.PageInfo.Action.HttpUrl.Neutral"
     enum="WebsiteSettingsAction" expires_after="M81">
-  <owner>estark@chromium.org</owner>
+  <owner>estark@ch40m1um.qjz9zk</owner>
   <summary>
     Tracks Page Info bubble actions that take place on an HTTP URL that does not
     have an omnibox security indicator warning associated with it.
@@ -166,7 +166,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Security.PageInfo.Action.HttpUrl.Warning"
     enum="WebsiteSettingsAction" expires_after="M81">
-  <owner>estark@chromium.org</owner>
+  <owner>estark@ch40m1um.qjz9zk</owner>
   <summary>
     Tracks Page Info bubble actions that take place on an HTTP URL that has been
     given a &quot;Not secure&quot; warning in the omnibox.
@@ -175,8 +175,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Security.PageInfo.TimeOpen" units="units"
     expires_after="2021-02-01">
-  <owner>cthomp@chromium.org</owner>
-  <owner>security-enamel@chromium.org</owner>
+  <owner>cthomp@ch40m1um.qjz9zk</owner>
+  <owner>security-enamel@ch40m1um.qjz9zk</owner>
   <summary>
     Records the amount of time the Page Info bubble is open before the user
     closes it or takes an action which closes it.
@@ -185,8 +185,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Security.PageInfo.TimeOpen.Action" units="units"
     expires_after="2021-02-01">
-  <owner>cthomp@chromium.org</owner>
-  <owner>security-enamel@chromium.org</owner>
+  <owner>cthomp@ch40m1um.qjz9zk</owner>
+  <owner>security-enamel@ch40m1um.qjz9zk</owner>
   <summary>
     Records the amount of time the Page Info bubble is open before the user
     closes it, for cases where the user has performed an action inside it.
@@ -195,8 +195,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Security.PageInfo.TimeOpen.NoAction" units="units"
     expires_after="2021-02-01">
-  <owner>cthomp@chromium.org</owner>
-  <owner>security-enamel@chromium.org</owner>
+  <owner>cthomp@ch40m1um.qjz9zk</owner>
+  <owner>security-enamel@ch40m1um.qjz9zk</owner>
   <summary>
     Records the amount of time the Page Info bubble is open before the user
     closes it, for cases where the user performed no action inside it.
@@ -205,8 +205,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Security.PasswordEntry.SiteEngagementLevel"
     enum="SiteEngagementLevel" expires_after="2021-01-31">
-  <owner>meacer@chromium.org</owner>
-  <owner>security-enamel@chromium.org</owner>
+  <owner>meacer@ch40m1um.qjz9zk</owner>
+  <owner>security-enamel@ch40m1um.qjz9zk</owner>
   <summary>
     Site engagement level of the URL of the top frame of the navigation when the
     user modifies a password field on the page. Only recorded once per
@@ -216,8 +216,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Security.PasswordFocus.SiteEngagementLevel"
     enum="SiteEngagementLevel" expires_after="2021-01-31">
-  <owner>meacer@chromium.org</owner>
-  <owner>security-enamel@chromium.org</owner>
+  <owner>meacer@ch40m1um.qjz9zk</owner>
+  <owner>security-enamel@ch40m1um.qjz9zk</owner>
   <summary>
     Site engagement level of the URL of the top frame of the navigation when the
     user focuses on a password field on the page. Only recorded once per
@@ -227,8 +227,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Security.SafetyTips.DownloadStarted" enum="SafetyTipStatus"
     expires_after="M90">
-  <owner>jdeblasio@chromium.org</owner>
-  <owner>estark@chromium.org</owner>
+  <owner>jdeblasio@ch40m1um.qjz9zk</owner>
+  <owner>estark@ch40m1um.qjz9zk</owner>
   <summary>
     Records the Safety Tip status on a page that initiated a download (*not* the
     Safety Tip status of the download URL itself). This is recorded regardless
@@ -240,8 +240,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Security.SafetyTips.FormSubmission" enum="SafetyTipStatus"
     expires_after="M90">
-  <owner>jdeblasio@chromium.org</owner>
-  <owner>estark@chromium.org</owner>
+  <owner>jdeblasio@ch40m1um.qjz9zk</owner>
+  <owner>estark@ch40m1um.qjz9zk</owner>
   <summary>
     Records the Safety Tip status of a page when submitting a form. This
     histogram is recorded whenever a form submission navigation begins. The
@@ -253,8 +253,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Security.SafetyTips.Interaction" enum="SafetyTipInteraction"
     expires_after="M90">
-  <owner>jdeblasio@chromium.org</owner>
-  <owner>estark@chromium.org</owner>
+  <owner>jdeblasio@ch40m1um.qjz9zk</owner>
+  <owner>estark@ch40m1um.qjz9zk</owner>
   <summary>
     Records a user's interaction with a Safety Tip. Recorded every time a user
     uses one of the Safety Tip's buttons or dismisses it explicitly. Can be
@@ -265,8 +265,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Security.SafetyTips.OpenTime.CloseTab" units="ms"
     expires_after="M90">
-  <owner>jdeblasio@chromium.org</owner>
-  <owner>estark@chromium.org</owner>
+  <owner>jdeblasio@ch40m1um.qjz9zk</owner>
+  <owner>estark@ch40m1um.qjz9zk</owner>
   <summary>
     Records the amount of time a Safety Tip bubble is open, for cases where the
     user closed the tab.
@@ -275,8 +275,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Security.SafetyTips.OpenTime.Dismiss" units="ms"
     expires_after="M90">
-  <owner>jdeblasio@chromium.org</owner>
-  <owner>estark@chromium.org</owner>
+  <owner>jdeblasio@ch40m1um.qjz9zk</owner>
+  <owner>estark@ch40m1um.qjz9zk</owner>
   <summary>
     Records the amount of time a Safety Tip bubble is open, for cases where the
     user explicitly closed the bubble. This is recorded in addition to the more
@@ -286,9 +286,9 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Security.SafetyTips.OpenTime.DismissWithClose" units="ms"
     expires_after="M90">
-  <owner>jdeblasio@chromium.org</owner>
-  <owner>estark@chromium.org</owner>
-  <owner>livvielin@chromium.org</owner>
+  <owner>jdeblasio@ch40m1um.qjz9zk</owner>
+  <owner>estark@ch40m1um.qjz9zk</owner>
+  <owner>livvielin@ch40m1um.qjz9zk</owner>
   <summary>
     Records the amount of time a Safety Tip bubble is open, for cases where the
     user explicitly closed the bubble with the close button. This is recorded in
@@ -298,9 +298,9 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Security.SafetyTips.OpenTime.DismissWithEsc" units="ms"
     expires_after="M90">
-  <owner>jdeblasio@chromium.org</owner>
-  <owner>estark@chromium.org</owner>
-  <owner>livvielin@chromium.org</owner>
+  <owner>jdeblasio@ch40m1um.qjz9zk</owner>
+  <owner>estark@ch40m1um.qjz9zk</owner>
+  <owner>livvielin@ch40m1um.qjz9zk</owner>
   <summary>
     Records the amount of time a Safety Tip bubble is open, for cases where the
     user explicitly closed the bubble with the esc key. This is recorded in
@@ -310,9 +310,9 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Security.SafetyTips.OpenTime.DismissWithIgnore" units="ms"
     expires_after="M90">
-  <owner>jdeblasio@chromium.org</owner>
-  <owner>estark@chromium.org</owner>
-  <owner>livvielin@chromium.org</owner>
+  <owner>jdeblasio@ch40m1um.qjz9zk</owner>
+  <owner>estark@ch40m1um.qjz9zk</owner>
+  <owner>livvielin@ch40m1um.qjz9zk</owner>
   <summary>
     Records the amount of time a Safety Tip bubble is open, for cases where the
     user explicitly closed the bubble with the ignore button. This is recorded
@@ -322,8 +322,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Security.SafetyTips.OpenTime.LeaveSite" units="ms"
     expires_after="M90">
-  <owner>jdeblasio@chromium.org</owner>
-  <owner>estark@chromium.org</owner>
+  <owner>jdeblasio@ch40m1um.qjz9zk</owner>
+  <owner>estark@ch40m1um.qjz9zk</owner>
   <summary>
     Records the amount of time a Safety Tip bubble is open, for cases where the
     user closed the bubble by heeding the call-to-action to leave the site.
@@ -332,8 +332,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Security.SafetyTips.OpenTime.NoAction" units="ms"
     expires_after="M90">
-  <owner>jdeblasio@chromium.org</owner>
-  <owner>estark@chromium.org</owner>
+  <owner>jdeblasio@ch40m1um.qjz9zk</owner>
+  <owner>estark@ch40m1um.qjz9zk</owner>
   <summary>
     Records the amount of time a Safety Tip bubble is open, for cases where the
     user did not dismiss or take action in the bubble.
@@ -342,8 +342,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Security.SafetyTips.OpenTime.StartNewNavigation" units="ms"
     expires_after="M90">
-  <owner>jdeblasio@chromium.org</owner>
-  <owner>estark@chromium.org</owner>
+  <owner>jdeblasio@ch40m1um.qjz9zk</owner>
+  <owner>estark@ch40m1um.qjz9zk</owner>
   <summary>
     Records the amount of time a Safety Tip bubble is open, for cases where the
     user started a new navigation in the same tab.
@@ -352,8 +352,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Security.SafetyTips.OpenTime.SwitchTab" units="ms"
     expires_after="M90">
-  <owner>jdeblasio@chromium.org</owner>
-  <owner>estark@chromium.org</owner>
+  <owner>jdeblasio@ch40m1um.qjz9zk</owner>
+  <owner>estark@ch40m1um.qjz9zk</owner>
   <summary>
     Records the amount of time a Safety Tip bubble is open, for cases where the
     user switched tabs.
@@ -362,8 +362,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Security.SafetyTips.PageInfo.Action"
     enum="WebsiteSettingsAction" expires_after="M90">
-  <owner>estark@chromium.org</owner>
-  <owner>jdeblasio@chromium.org</owner>
+  <owner>estark@ch40m1um.qjz9zk</owner>
+  <owner>jdeblasio@ch40m1um.qjz9zk</owner>
   <summary>
     Tracks Page Info bubble actions along with the Safety Tip status of the
     page.
@@ -372,7 +372,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram base="true" name="Security.SafetyTips.ReputationCheckComplete"
     enum="SafetyTipStatus" expires_after="M90">
-  <owner>jdeblasio@chromium.org</owner>
+  <owner>jdeblasio@ch40m1um.qjz9zk</owner>
   <owner>src/chrome/browser/reputation/OWNERS</owner>
   <summary>
     Records the Safety Tip status of a page after navigation commit or page
@@ -383,8 +383,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Security.SafetyTips.SafetyTipIgnoredPageLoad"
     enum="SafetyTipStatus" expires_after="M90">
-  <owner>jdeblasio@chromium.org</owner>
-  <owner>livvielin@chromium.org</owner>
+  <owner>jdeblasio@ch40m1um.qjz9zk</owner>
+  <owner>livvielin@ch40m1um.qjz9zk</owner>
   <summary>
     Records the Safety Tip status of a page after navigation commit for a page
     where the Safety Tip has previously been ignored.
@@ -393,8 +393,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Security.SafetyTips.SafetyTipShown" enum="SafetyTipStatus"
     expires_after="M90">
-  <owner>jdeblasio@chromium.org</owner>
-  <owner>livvielin@chromium.org</owner>
+  <owner>jdeblasio@ch40m1um.qjz9zk</owner>
+  <owner>livvielin@ch40m1um.qjz9zk</owner>
   <summary>
     Records the Safety Tip status of a page after navigation commit or page
     visibility change.
@@ -403,7 +403,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram base="true" name="Security.SafetyTips.SafetyTipShown_AfterFlag"
     enum="SafetyTipStatus" expires_after="M90">
-  <owner>jdeblasio@chromium.org</owner>
+  <owner>jdeblasio@ch40m1um.qjz9zk</owner>
   <owner>src/chrome/browser/reputation/OWNERS</owner>
   <summary>
     TEMPORARY histogram that records the Safety Tip status of a page after
@@ -415,8 +415,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Security.SafetyTips.StatusWithInitiator.{SafetyTipInitiator}"
     enum="SafetyTipStatus" expires_after="M90">
-  <owner>jdeblasio@chromium.org</owner>
-  <owner>meacer@chromium.org</owner>
+  <owner>jdeblasio@ch40m1um.qjz9zk</owner>
+  <owner>meacer@ch40m1um.qjz9zk</owner>
   <summary>
     Records the Safety Tip status of a page after navigation commit, alongside
     how the corresponding navigation was initiated. Only recorded on navigations
@@ -434,8 +434,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Security.SCTAuditing.OptIn.CacheHWM" units="reports"
     expires_after="M92">
-  <owner>cthomp@chromium.org</owner>
-  <owner>security-enamel@chromium.org</owner>
+  <owner>cthomp@ch40m1um.qjz9zk</owner>
+  <owner>security-enamel@ch40m1um.qjz9zk</owner>
   <summary>
     Records the high-water-mark of the number of reports in the SCT auditing
     cache size over each browser session. Recorded when the SCT auditing cache
@@ -446,8 +446,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Security.SCTAuditing.OptIn.ReportDeduplicated" enum="Boolean"
     expires_after="M92">
-  <owner>cthomp@chromium.org</owner>
-  <owner>security-enamel@chromium.org</owner>
+  <owner>cthomp@ch40m1um.qjz9zk</owner>
+  <owner>security-enamel@ch40m1um.qjz9zk</owner>
   <summary>
     Records whether a report was deduplicated (i.e., the SCTs were already in
     the cache) or not. Recorded on each new report seen by the SCT auditing
@@ -457,8 +457,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Security.SCTAuditing.OptIn.ReportSampled" enum="Boolean"
     expires_after="M92">
-  <owner>cthomp@chromium.org</owner>
-  <owner>security-enamel@chromium.org</owner>
+  <owner>cthomp@ch40m1um.qjz9zk</owner>
+  <owner>security-enamel@ch40m1um.qjz9zk</owner>
   <summary>
     Records whether a report was sampled to be sent to Safe Browsing. Recorded
     for each new report seen by the SCT auditing cache that was not
@@ -468,8 +468,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Security.SCTAuditing.OptIn.ReportSize" units="bytes"
     expires_after="M92">
-  <owner>cthomp@chromium.org</owner>
-  <owner>security-enamel@chromium.org</owner>
+  <owner>cthomp@ch40m1um.qjz9zk</owner>
+  <owner>security-enamel@ch40m1um.qjz9zk</owner>
   <summary>
     Records the size of an SCT auditing report that will be sent to Safe
     Browsing (i.e., was not deduplicated and was sampled).
@@ -478,8 +478,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Security.SCTAuditing.OptIn.ReportSuccess" enum="Boolean"
     expires_after="M92">
-  <owner>cthomp@chromium.org</owner>
-  <owner>security-enamel@chromium.org</owner>
+  <owner>cthomp@ch40m1um.qjz9zk</owner>
+  <owner>security-enamel@ch40m1um.qjz9zk</owner>
   <summary>
     Records whether sending an SCT auditing report succeeded or not. This is
     recorded after we receive the headers from the server (or we stop due to a
@@ -489,7 +489,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Security.SecurityLevel.CryptographicScheme"
     enum="SecurityLevel" expires_after="M81">
-  <owner>estark@chromium.org</owner>
+  <owner>estark@ch40m1um.qjz9zk</owner>
   <summary>
     Records the security level of a page with a cryptographic scheme (e.g.
     https). This histogram is recorded once at navigation commit time, and can
@@ -508,8 +508,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Security.SecurityLevel.DownloadStarted" enum="SecurityLevel"
     expires_after="2021-02-01">
-  <owner>cthomp@chromium.org</owner>
-  <owner>security-enamel@chromium.org</owner>
+  <owner>cthomp@ch40m1um.qjz9zk</owner>
+  <owner>security-enamel@ch40m1um.qjz9zk</owner>
   <summary>
     Records the security level of the page that initiated a download (rather
     than the security state of the connection to the download URL itself). The
@@ -522,8 +522,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Security.SecurityLevel.FormSubmission" enum="SecurityLevel"
     expires_after="2021-02-01">
-  <owner>carlosil@chromium.org</owner>
-  <owner>cthomp@chromium.org</owner>
+  <owner>carlosil@ch40m1um.qjz9zk</owner>
+  <owner>cthomp@ch40m1um.qjz9zk</owner>
   <summary>
     Records the security level of a page when submitting a form. This histogram
     is recorded whenever a form submission navigation begins. The recorded
@@ -534,8 +534,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Security.SecurityLevel.InsecureMainFrameFormSubmission"
     enum="SecurityLevel" expires_after="M89">
-  <owner>estark@chromium.org</owner>
-  <owner>livvielin@chromium.org</owner>
+  <owner>estark@ch40m1um.qjz9zk</owner>
+  <owner>livvielin@ch40m1um.qjz9zk</owner>
   <summary>
     Records the security level of a page when submitting a form on a top-frame
     navigation with a non-cryptographic scheme. This histogram is recorded
@@ -547,8 +547,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Security.SecurityLevel.InsecureMainFrameNonFormNavigation"
     enum="SecurityLevel" expires_after="M89">
-  <owner>estark@chromium.org</owner>
-  <owner>livvielin@chromium.org</owner>
+  <owner>estark@ch40m1um.qjz9zk</owner>
+  <owner>livvielin@ch40m1um.qjz9zk</owner>
   <summary>
     Records the security level of a page on top-frame navigations with a
     non-cryptographic scheme that are not form submissions. This histogram is
@@ -558,7 +558,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Security.SecurityLevel.NoncryptographicScheme"
     enum="SecurityLevel" expires_after="M77">
-  <owner>estark@chromium.org</owner>
+  <owner>estark@ch40m1um.qjz9zk</owner>
   <summary>
     Records the security level of a page with a non-cryptographic scheme (e.g.
     http). This histogram is recorded once at navigation commit time, and can be
@@ -577,8 +577,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Security.SecurityLevel.OnCommit" enum="SecurityLevel"
     expires_after="2021-02-01">
-  <owner>cthomp@chromium.org</owner>
-  <owner>security-enamel@chromium.org</owner>
+  <owner>cthomp@ch40m1um.qjz9zk</owner>
+  <owner>security-enamel@ch40m1um.qjz9zk</owner>
   <summary>
     Records the security level of a page at the time the navigation commits.
     Note that the security level of a page can change after commit time, so this
@@ -589,8 +589,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Security.SecurityLevel.OnComplete" enum="SecurityLevel"
     expires_after="2021-02-01">
-  <owner>cthomp@chromium.org</owner>
-  <owner>security-enamel@chromium.org</owner>
+  <owner>cthomp@ch40m1um.qjz9zk</owner>
+  <owner>security-enamel@ch40m1um.qjz9zk</owner>
   <summary>
     Records the security level of a page at the end of the page visit (i.e.,
     navigating away from the page, reloading the page, clicking a link, closing
@@ -602,8 +602,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram base="true" name="Security.SiteEngagement" units="units"
     expires_after="2021-02-01">
-  <owner>cthomp@chromium.org</owner>
-  <owner>security-enamel@chromium.org</owner>
+  <owner>cthomp@ch40m1um.qjz9zk</owner>
+  <owner>security-enamel@ch40m1um.qjz9zk</owner>
   <summary>
     The final Site Engagement score (0 to 100) of a URL during a visit to a
     page. Recorded when the user closes the page or initiates a new navigation.
@@ -612,8 +612,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram base="true" name="Security.SiteEngagementDelta" units="units"
     expires_after="2021-02-01">
-  <owner>cthomp@chromium.org</owner>
-  <owner>security-enamel@chromium.org</owner>
+  <owner>cthomp@ch40m1um.qjz9zk</owner>
+  <owner>security-enamel@ch40m1um.qjz9zk</owner>
   <summary>
     The change in Site Engagement score for a site between the page navigation
     committing and the user closing the page or navigating away. Recorded when
@@ -627,8 +627,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram base="true" name="Security.TimeOnPage2" units="units"
     expires_after="2021-02-01">
-  <owner>cthomp@chromium.org</owner>
-  <owner>security-enamel@chromium.org</owner>
+  <owner>cthomp@ch40m1um.qjz9zk</owner>
+  <owner>security-enamel@ch40m1um.qjz9zk</owner>
   <summary>
     Records the time spent on the page (the time that the page was in the
     foreground from the start of the navigation to the page visit completing due
@@ -640,8 +640,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Security.XFrameOptions" enum="XFrameOptions"
     expires_after="M85">
-  <owner>mkwst@chromium.org</owner>
-  <owner>arthursonzogni@chromium.org</owner>
+  <owner>mkwst@ch40m1um.qjz9zk</owner>
+  <owner>arthursonzogni@ch40m1um.qjz9zk</owner>
   <summary>
     Record uses of the X-Frame-Options header when a page is loaded as an
     iframe.

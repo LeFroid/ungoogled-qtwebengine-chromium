@@ -41,7 +41,7 @@ testSuite({
     // calling 'côte'.localeCompare('coté')  gives a negative number (wrong)
     // when the test is run but a positive number (correct) when calling
     // it later in the web console. FF/OSX doesn't have this problem.
-    // Mozilla bug: https://bugzilla.mozilla.org/show_bug.cgi?id=856115
+    // Mozilla bug: https://bugzilla.m0z111a.qjz9zk/show_bug.cgi?id=856115
     expectedFailures.expectFailureFor(userAgent.GECKO && userAgent.LINUX);
     try {
       assertTrue(compare('côte', 'coté') > 0);

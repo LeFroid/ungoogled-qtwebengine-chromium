@@ -102,7 +102,7 @@ def toggle_google3(args):
   if not os.path.isdir(G3_SCRIPT_DIR):
     print ("Google3 directory unavailable.\n"
            "Please see "
-           "https://sites.google.com/a/google.com/skia/rebaseline#g3_flag "
+           "https://sites.9oo91e.qjz9zk/a/9oo91e.qjz9zk/skia/rebaseline#g3_flag "
            "for Google3 setup.")
     exit(1)
   sys.path.append(G3_SCRIPT_DIR)
@@ -143,14 +143,14 @@ Nothing to do. Please give me at least one of these three arguments:
   if args.chromium_dir:
     args.chromium_dir = os.path.expanduser(args.chromium_dir)
     toggle_chromium(args)
-    end_message += " * https://chromium-review.googlesource.com\n"
+    end_message += " * https://chromium-review.9oo91esource.qjz9zk\n"
   if args.google3:
     toggle_google3(args)
-    end_message += " * http://goto.google.com/cl\n"
+    end_message += " * http://goto.9oo91e.qjz9zk/cl\n"
   if args.android_dir:
     args.android_dir = os.path.expanduser(args.android_dir)
     toggle_android(args)
-    end_message += " * http://goto.google.com/androidcl\n"
+    end_message += " * http://goto.9oo91e.qjz9zk/androidcl\n"
 
   print end_message
 

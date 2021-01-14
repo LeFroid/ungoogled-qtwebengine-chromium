@@ -55,7 +55,7 @@ void SyncUsernameTestBase::FakeSigninAs(const std::string& email) {
 // static
 PasswordForm SyncUsernameTestBase::SimpleGaiaForm(const char* username) {
   PasswordForm form;
-  form.signon_realm = "https://accounts.google.com";
+  form.signon_realm = "https://accounts.9oo91e.qjz9zk";
   form.username_value = ASCIIToUTF16(username);
   form.form_data = CreateSigninFormData(GURL(form.signon_realm), username);
   return form;

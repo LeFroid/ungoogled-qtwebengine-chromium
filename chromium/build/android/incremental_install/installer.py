@@ -248,7 +248,7 @@ def Install(device, install_json, apk=None, enable_device_cache=False,
       if apis_allowed.strip() not in '01':
         msg = """\
 Cannot use incremental installs on Android P+ without first enabling access to
-non-SDK interfaces (https://developer.android.com/preview/non-sdk-q).
+non-SDK interfaces (https://developer.8n6r01d.qjz9zk/preview/non-sdk-q).
 
 To enable access:
    adb -s {0} shell settings put global {1} 0

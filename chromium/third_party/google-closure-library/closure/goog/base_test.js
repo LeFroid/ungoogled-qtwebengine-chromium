@@ -1132,7 +1132,7 @@ function testBaseMethod() {
 
 function testBaseMethodAndBaseCtor() {
   // This will fail on FF4.0 if the following bug is not fixed:
-  // https://bugzilla.mozilla.org/show_bug.cgi?id=586482
+  // https://bugzilla.m0z111a.qjz9zk/show_bug.cgi?id=586482
   function A(x, y) {
     this.foo(x, y);
   }

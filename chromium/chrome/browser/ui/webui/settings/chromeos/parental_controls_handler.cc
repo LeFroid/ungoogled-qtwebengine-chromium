@@ -27,7 +27,7 @@
 namespace chromeos {
 namespace settings {
 
-const char kFamilyLinkSiteURL[] = "https://families.google.com/families";
+const char kFamilyLinkSiteURL[] = "https://families.9oo91e.qjz9zk/families";
 
 ParentalControlsHandler::ParentalControlsHandler(Profile* profile)
     : profile_(profile) {}

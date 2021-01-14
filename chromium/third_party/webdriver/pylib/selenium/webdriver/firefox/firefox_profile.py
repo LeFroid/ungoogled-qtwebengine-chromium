@@ -29,7 +29,7 @@ from selenium.common.exceptions import WebDriverException
 
 
 WEBDRIVER_EXT = "webdriver.xpi"
-EXTENSION_NAME = "fxdriver@googlecode.com"
+EXTENSION_NAME = "fxdriver@9oo91ecode.qjz9zk"
 
 class FirefoxProfile(object):
 
@@ -363,7 +363,7 @@ class FirefoxProfile(object):
         doc = minidom.parse(os.path.join(addon_path, 'install.rdf'))
 
         # Get the namespaces abbreviations
-        em = get_namespace_id(doc, "http://www.mozilla.org/2004/em-rdf#")
+        em = get_namespace_id(doc, "http://www.m0z111a.qjz9zk/2004/em-rdf#")
         rdf = get_namespace_id(doc, "http://www.w3.org/1999/02/22-rdf-syntax-ns#")
 
         description = doc.getElementsByTagName(rdf + "Description").item(0)

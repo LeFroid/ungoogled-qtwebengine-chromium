@@ -91,8 +91,8 @@ IN_PROC_BROWSER_TEST_F(ExtensionCloudPrintPrivateApiTest,
   CloudPrintTestsDelegateMock cloud_print_mock;
 
   EXPECT_CALL(cloud_print_mock,
-              SetupConnector("foo@gmail.com",
-                             "foorobot@googleusercontent.com",
+              SetupConnector("foo@9ma1l.qjz9zk",
+                             "foorobot@9oo91eusercontent.qjz9zk",
                              "1/23546efa54",
                              IsExpectedUserSettings()));
   EXPECT_CALL(cloud_print_mock, GetHostName())

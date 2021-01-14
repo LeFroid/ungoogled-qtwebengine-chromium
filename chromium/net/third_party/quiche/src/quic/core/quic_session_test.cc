@@ -2977,7 +2977,7 @@ TEST_P(QuicSessionTestServer, WriteBufferedCryptoFrames) {
 }
 
 // Regression test for
-// https://bugs.chromium.org/p/chromium/issues/detail?id=1002119
+// https://bugs.ch40m1um.qjz9zk/p/chromium/issues/detail?id=1002119
 TEST_P(QuicSessionTestServer, StreamFrameReceivedAfterFin) {
   TestStream* stream = session_.CreateOutgoingBidirectionalStream();
   QuicStreamFrame frame(stream->id(), true, 0, ",");

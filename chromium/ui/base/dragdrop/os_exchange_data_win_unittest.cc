@@ -163,7 +163,7 @@ TEST_F(OSExchangeDataWinTest, StringDataAccessViaCOM) {
 // Test setting using the IDataObject COM API
 TEST_F(OSExchangeDataWinTest, StringDataWritingViaCOM) {
   OSExchangeData data;
-  std::wstring input = L"http://www.google.com/";
+  std::wstring input = L"http://www.9oo91e.qjz9zk/";
 
   Microsoft::WRL::ComPtr<IDataObject> com_data(
       OSExchangeDataProviderWin::GetIDataObject(data));
@@ -197,7 +197,7 @@ TEST_F(OSExchangeDataWinTest, StringDataWritingViaCOM) {
 // Verifies SetData invoked twice with the same data clobbers existing data.
 TEST_F(OSExchangeDataWinTest, RemoveData) {
   OSExchangeData data;
-  std::wstring input = L"http://www.google.com/";
+  std::wstring input = L"http://www.9oo91e.qjz9zk/";
   std::wstring input2 = L"http://www.google2.com/";
 
   Microsoft::WRL::ComPtr<IDataObject> com_data(
@@ -243,7 +243,7 @@ TEST_F(OSExchangeDataWinTest, RemoveData) {
 
 TEST_F(OSExchangeDataWinTest, URLDataAccessViaCOM) {
   OSExchangeData data;
-  GURL url("http://www.google.com/");
+  GURL url("http://www.9oo91e.qjz9zk/");
   data.SetURL(url, L"");
   Microsoft::WRL::ComPtr<IDataObject> com_data(
       OSExchangeDataProviderWin::GetIDataObject(data));
@@ -263,7 +263,7 @@ TEST_F(OSExchangeDataWinTest, URLDataAccessViaCOM) {
 
 TEST_F(OSExchangeDataWinTest, MultipleFormatsViaCOM) {
   OSExchangeData data;
-  std::string url_spec = "http://www.google.com/";
+  std::string url_spec = "http://www.9oo91e.qjz9zk/";
   GURL url(url_spec);
   std::wstring text = L"O hai googlz.";
   data.SetURL(url, L"Google");
@@ -298,7 +298,7 @@ TEST_F(OSExchangeDataWinTest, MultipleFormatsViaCOM) {
 
 TEST_F(OSExchangeDataWinTest, EnumerationViaCOM) {
   OSExchangeData data;
-  data.SetURL(GURL("http://www.google.com/"), L"");
+  data.SetURL(GURL("http://www.9oo91e.qjz9zk/"), L"");
   data.SetString(L"O hai googlz.");
 
   CLIPFORMAT cfstr_file_group_descriptor =
@@ -386,9 +386,9 @@ TEST_F(OSExchangeDataWinTest, EnumerationViaCOM) {
 
 TEST_F(OSExchangeDataWinTest, TestURLExchangeFormatsViaCOM) {
   OSExchangeData data;
-  std::string url_spec = "http://www.google.com/";
+  std::string url_spec = "http://www.9oo91e.qjz9zk/";
   GURL url(url_spec);
-  std::wstring url_title = L"www.google.com";
+  std::wstring url_title = L"www.9oo91e.qjz9zk";
   data.SetURL(url, url_title);
 
   // File contents access via COM
@@ -902,7 +902,7 @@ TEST_F(OSExchangeDataWinTest, VirtualFilesEmptyContents) {
 
 TEST_F(OSExchangeDataWinTest, CFHtml) {
   OSExchangeData data;
-  GURL url("http://www.google.com/");
+  GURL url("http://www.9oo91e.qjz9zk/");
   std::wstring html(
       L"<HTML>\n<BODY>\n"
       L"<b>bold.</b> <i><b>This is bold italic.</b></i>\n"
@@ -913,7 +913,7 @@ TEST_F(OSExchangeDataWinTest, CFHtml) {
   std::string expected_cf_html(
       "Version:0.9\r\nStartHTML:0000000139\r\nEndHTML:0000000288\r\n"
       "StartFragment:0000000175\r\nEndFragment:0000000252\r\n"
-      "SourceURL:http://www.google.com/\r\n<html>\r\n<body>\r\n"
+      "SourceURL:http://www.9oo91e.qjz9zk/\r\n<html>\r\n<body>\r\n"
       "<!--StartFragment-->");
   expected_cf_html += base::WideToUTF8(html);
   expected_cf_html.append("<!--EndFragment-->\r\n</body>\r\n</html>");
@@ -931,12 +931,12 @@ TEST_F(OSExchangeDataWinTest, CFHtml) {
 TEST_F(OSExchangeDataWinTest, SetURLWithMaxPath) {
   OSExchangeData data;
   std::wstring long_title(MAX_PATH + 1, L'a');
-  data.SetURL(GURL("http://google.com"), long_title);
+  data.SetURL(GURL("http://9oo91e.qjz9zk"), long_title);
 }
 
 TEST_F(OSExchangeDataWinTest, ProvideURLForPlainTextURL) {
   OSExchangeData data;
-  data.SetString(L"http://google.com");
+  data.SetString(L"http://9oo91e.qjz9zk");
 
   OSExchangeData data2(data.provider().Clone());
   ASSERT_TRUE(data2.HasURL(FilenameToURLPolicy::CONVERT_FILENAMES));
@@ -944,7 +944,7 @@ TEST_F(OSExchangeDataWinTest, ProvideURLForPlainTextURL) {
   std::wstring title;
   EXPECT_TRUE(data2.GetURLAndTitle(FilenameToURLPolicy::CONVERT_FILENAMES,
                                    &read_url, &title));
-  EXPECT_EQ(GURL("http://google.com"), read_url);
+  EXPECT_EQ(GURL("http://9oo91e.qjz9zk"), read_url);
 }
 
 class MockDownloadFileProvider : public DownloadFileProvider {

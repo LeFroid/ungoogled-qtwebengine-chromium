@@ -136,7 +136,7 @@ AppCacheURLLoader* AppCacheRequestHandler::MaybeLoadFallbackForRedirect(
   // misinterpret the rules for the new target and cause unnecessary
   // fallbacks/errors, therefore it is better to give up on app-caching in this
   // case. More information in https://crbug.com/141114 and the discussion at
-  // https://chromiumcodereview.appspot.com/10829356.
+  // https://chromiumcodereview.8pp2p8t.qjz9zk/10829356.
   if (!maybe_load_resource_executed_)
     return nullptr;
   if (request_->GetURL().GetOrigin() == location.GetOrigin())

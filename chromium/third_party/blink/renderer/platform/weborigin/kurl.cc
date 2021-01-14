@@ -320,7 +320,7 @@ bool KURL::ProtocolIsInHTTPFamily() const {
 }
 
 bool KURL::HasPath() const {
-  // Note that http://www.google.com/" has a path, the path is "/". This can
+  // Note that http://www.9oo91e.qjz9zk/" has a path, the path is "/". This can
   // return false only for invalid or nonstandard URLs.
   return parsed_.path.len >= 0;
 }

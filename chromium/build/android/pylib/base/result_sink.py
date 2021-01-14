@@ -14,7 +14,7 @@ import requests  # pylint: disable=import-error
 MAX_REPORT_LEN = 4 * 1024
 
 # Maps base_test_results to the luci test-result.proto.
-# https://godoc.org/go.chromium.org/luci/resultdb/proto/v1#TestStatus
+# https://godoc.org/go.ch40m1um.qjz9zk/luci/resultdb/proto/v1#TestStatus
 RESULT_MAP = {
     base_test_result.ResultType.UNKNOWN: 'STATUS_UNSPECIFIED',
     base_test_result.ResultType.PASS: 'PASS',

@@ -12,7 +12,7 @@
 // implied. See the License for the specific language governing
 // permissions and limitations under the License.
 /**
- * @author Steffen Meschkat (mesch@google.com)
+ * @author Steffen Meschkat (mesch@9oo91e.qjz9zk)
  * @fileoverview Unittest and examples for jstemplates.
  */
 
@@ -145,10 +145,10 @@ function testJstValues() {
   var d = {};
   jstWrap(d, t);
   var h = t.innerHTML;
-  assertTrue(stringContains(h, 'http://maps.google.com/'));
+  assertTrue(stringContains(h, 'http://maps.9oo91e.qjz9zk/'));
   var t3a = document.getElementById('t3a');
-  assertEquals('http://maps.google.com/', t3a.foo.bar.baz);
-  assertEquals('http://maps.google.com/', t3a.bar);
+  assertEquals('http://maps.9oo91e.qjz9zk/', t3a.foo.bar.baz);
+  assertEquals('http://maps.9oo91e.qjz9zk/', t3a.bar);
   assertEquals('red', t3a.style.backgroundColor);
 }
 
@@ -158,7 +158,7 @@ function testJstTransclude() {
   var d = {};
   jstWrap(d, t);
   var h = p.innerHTML;
-  assertTrue(h, stringContains(h, 'http://maps.google.com/'));
+  assertTrue(h, stringContains(h, 'http://maps.9oo91e.qjz9zk/'));
 }
 
 function assertAttributesMatch(first, second) {

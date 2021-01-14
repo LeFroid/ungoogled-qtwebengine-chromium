@@ -2817,7 +2817,7 @@ TEST_F(SpdySessionTest, VerifyDomainAuthentication) {
   EXPECT_TRUE(session_->VerifyDomainAuthentication("www.example.org"));
   EXPECT_TRUE(session_->VerifyDomainAuthentication("mail.example.org"));
   EXPECT_TRUE(session_->VerifyDomainAuthentication("mail.example.com"));
-  EXPECT_FALSE(session_->VerifyDomainAuthentication("mail.google.com"));
+  EXPECT_FALSE(session_->VerifyDomainAuthentication("mail.9oo91e.qjz9zk"));
 }
 
 // Check that VerifyDomainAuthentication respects Expect-CT failures, and uses
@@ -2857,7 +2857,7 @@ TEST_F(SpdySessionTest, VerifyDomainAuthenticationExpectCT) {
   EXPECT_TRUE(session_->VerifyDomainAuthentication("www.example.org"));
   EXPECT_TRUE(session_->VerifyDomainAuthentication("mail.example.org"));
   EXPECT_TRUE(session_->VerifyDomainAuthentication("mail.example.com"));
-  EXPECT_FALSE(session_->VerifyDomainAuthentication("mail.google.com"));
+  EXPECT_FALSE(session_->VerifyDomainAuthentication("mail.9oo91e.qjz9zk"));
 
   // Add Expect-CT data for all three hosts that passed the above checks, using
   // different NetworkIsolationKeys.
@@ -6923,7 +6923,7 @@ TEST(CanPoolTest, CanPool) {
                                    "www.example.org", "mail.example.com",
                                    NetworkIsolationKey()));
   EXPECT_FALSE(SpdySession::CanPool(&tss, ssl_info, ssl_config_service,
-                                    "www.example.org", "mail.google.com",
+                                    "www.example.org", "mail.9oo91e.qjz9zk",
                                     NetworkIsolationKey()));
 }
 

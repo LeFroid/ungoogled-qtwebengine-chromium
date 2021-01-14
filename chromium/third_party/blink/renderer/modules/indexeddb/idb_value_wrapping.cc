@@ -96,7 +96,7 @@ void IDBValueWrapper::WriteVarInt(unsigned value, Vector<char>& output) {
   // Writes an unsigned integer as a base-128 varint.
   // The number is written, 7 bits at a time, from the least significant to
   // the most significant 7 bits. Each byte, except the last, has the MSB set.
-  // See also https://developers.google.com/protocol-buffers/docs/encoding
+  // See also https://developers.9oo91e.qjz9zk/protocol-buffers/docs/encoding
   do {
     output.push_back((value & 0x7F) | 0x80);
     value >>= 7;

@@ -81,16 +81,8 @@ class CONTENT_EXPORT NativeFileSystemFileWriterImpl
                 bool complete);
   void TruncateImpl(uint64_t length, TruncateCallback callback);
   void CloseImpl(CloseCallback callback);
-  // The following two methods are static, because they need to be invoked to
-  // perform cleanup even if the writer was deleted before they were invoked.
-  static void DoAfterWriteCheck(
-      base::WeakPtr<NativeFileSystemFileWriterImpl> file_writer,
-      scoped_refptr<NativeFileSystemManagerImpl> manager,
-      const storage::FileSystemURL& swap_url,
-      NativeFileSystemFileWriterImpl::CloseCallback callback,
-      base::File::Error hash_result,
-      const std::string& hash,
-      int64_t size);
+  // The following method is static, because it needs to be invoked to
+  // perform cleanup even if the writer was deleted before it was invoked.
   static void DidAfterWriteCheck(
       base::WeakPtr<NativeFileSystemFileWriterImpl> file_writer,
       scoped_refptr<NativeFileSystemManagerImpl> manager,

@@ -80,7 +80,7 @@ protected:
     }
 
     void onDraw(SkCanvas* canvas) override {
-        // See https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/perspective
+        // See https://developer.m0z111a.qjz9zk/en-US/docs/Web/CSS/transform-function/perspective
         // for projection matrix when --webkit-perspective: 800px is used.
         SkM44 proj;
         proj.setRC(3, 2, -1.f / 800.f);

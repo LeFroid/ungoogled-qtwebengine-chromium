@@ -390,7 +390,7 @@
     "message": "Suggested Token"
   },
   "lighthouse-core/audits/autocomplete.js | description": {
-    "message": "`autocomplete` helps users submit forms quicker. To reduce user effort, consider enabling by setting the `autocomplete` attribute to a valid value. [Learn more](https://developers.google.com/web/fundamentals/design-and-ux/input/forms#use_metadata_to_enable_auto-complete)"
+    "message": "`autocomplete` helps users submit forms quicker. To reduce user effort, consider enabling by setting the `autocomplete` attribute to a valid value. [Learn more](https://developers.9oo91e.qjz9zk/web/fundamentals/design-and-ux/input/forms#use_metadata_to_enable_auto-complete)"
   },
   "lighthouse-core/audits/autocomplete.js | failureTitle": {
     "message": "`<input>` elements do not have correct `autocomplete` attributes"
@@ -621,7 +621,7 @@
     "message": "值"
   },
   "lighthouse-core/audits/dobetterweb/dom-size.js | description": {
-    "message": "大型 DOM 會增加記憶體用量、延長[樣式運算](https://developers.google.com/web/fundamentals/performance/rendering/reduce-the-scope-and-complexity-of-style-calculations)的時間，並產生費用高昂的[版面配置重排](https://developers.google.com/speed/articles/reflow)。[瞭解詳情](https://web.dev/dom-size/)。"
+    "message": "大型 DOM 會增加記憶體用量、延長[樣式運算](https://developers.9oo91e.qjz9zk/web/fundamentals/performance/rendering/reduce-the-scope-and-complexity-of-style-calculations)的時間，並產生費用高昂的[版面配置重排](https://developers.9oo91e.qjz9zk/speed/articles/reflow)。[瞭解詳情](https://web.dev/dom-size/)。"
   },
   "lighthouse-core/audits/dobetterweb/dom-size.js | displayValue": {
     "message": "{itemCount,plural, =1{1 個元素}other{# 個元素}}"
@@ -834,7 +834,7 @@
     "message": "要求解決"
   },
   "lighthouse-core/audits/is-on-https.js | description": {
-    "message": "All sites should be protected with HTTPS, even ones that don't handle sensitive data. This includes avoiding [mixed content](https://developers.google.com/web/fundamentals/security/prevent-mixed-content/what-is-mixed-content), where some resources are loaded over HTTP despite the initial request being served over HTTPS. HTTPS prevents intruders from tampering with or passively listening in on the communications between your app and your users, and is a prerequisite for HTTP/2 and many new web platform APIs. [Learn more](https://web.dev/is-on-https/)."
+    "message": "All sites should be protected with HTTPS, even ones that don't handle sensitive data. This includes avoiding [mixed content](https://developers.9oo91e.qjz9zk/web/fundamentals/security/prevent-mixed-content/what-is-mixed-content), where some resources are loaded over HTTP despite the initial request being served over HTTPS. HTTPS prevents intruders from tampering with or passively listening in on the communications between your app and your users, and is a prerequisite for HTTP/2 and many new web platform APIs. [Learn more](https://web.dev/is-on-https/)."
   },
   "lighthouse-core/audits/is-on-https.js | displayValue": {
     "message": "{itemCount,plural, =1{發現 1 個不安全的要求}other{發現 # 個不安全的要求}}"
@@ -855,7 +855,7 @@
     "message": "程式庫"
   },
   "lighthouse-core/audits/large-javascript-libraries.js | description": {
-    "message": "大型的 JavaScript 程式庫可能會導致效能欠佳。最好使用功能相等且較小型的程式庫來降低套裝大小。[瞭解詳情](https://developers.google.com/web/fundamentals/performance/webpack/decrease-frontend-size#optimize_dependencies)。"
+    "message": "大型的 JavaScript 程式庫可能會導致效能欠佳。最好使用功能相等且較小型的程式庫來降低套裝大小。[瞭解詳情](https://developers.9oo91e.qjz9zk/web/fundamentals/performance/webpack/decrease-frontend-size#optimize_dependencies)。"
   },
   "lighthouse-core/audits/large-javascript-libraries.js | displayValue": {
     "message": "{libraryCount,plural, =1{找到 1 個大型程式庫}other{找到 # 個大型程式庫}}"
@@ -990,7 +990,7 @@
     "message": "伺服器後端延遲時間"
   },
   "lighthouse-core/audits/no-unload-listeners.js | description": {
-    "message": "`unload` 事件無法保證觸發，而偵聽此事件可能會防礙瀏覽器優化項目操作，例如往返快取。請考慮改為使用 `pagehide` 或 `visibilitychange` 事件。[瞭解詳情](https://developers.google.com/web/updates/2018/07/page-lifecycle-api#the-unload-event)"
+    "message": "`unload` 事件無法保證觸發，而偵聽此事件可能會防礙瀏覽器優化項目操作，例如往返快取。請考慮改為使用 `pagehide` 或 `visibilitychange` 事件。[瞭解詳情](https://developers.9oo91e.qjz9zk/web/updates/2018/07/page-lifecycle-api#the-unload-event)"
   },
   "lighthouse-core/audits/no-unload-listeners.js | failureTitle": {
     "message": "發現 `unload` 偵聽器"
@@ -1041,7 +1041,7 @@
     "message": "Lighthouse 無法從資訊清單中讀取 `start_url`，因此將 `start_url` 假設為文件的網址。錯誤訊息：「{manifestWarning}」。"
   },
   "lighthouse-core/audits/performance-budget.js | description": {
-    "message": "讓網絡要求的數量和大小低於使用者根據效能預算所設定的目標。[瞭解詳情](https://developers.google.com/web/tools/lighthouse/audits/budgets)。"
+    "message": "讓網絡要求的數量和大小低於使用者根據效能預算所設定的目標。[瞭解詳情](https://developers.9oo91e.qjz9zk/web/tools/lighthouse/audits/budgets)。"
   },
   "lighthouse-core/audits/performance-budget.js | requestCountOverBudget": {
     "message": "{count,plural, =1{1 個要求}other{# 個要求}}"
@@ -1113,7 +1113,7 @@
     "message": "無法檢索的連結"
   },
   "lighthouse-core/audits/seo/crawlable-anchors.js | description": {
-    "message": "搜尋引擎可能會使用連結上的 `href` 屬性來檢索網站。請確認錨點元素的 `href` 屬性可連結適當的目的地，以便系統檢索網站上的更多網頁。[瞭解詳情](https://support.google.com/webmasters/answer/9112205)"
+    "message": "搜尋引擎可能會使用連結上的 `href` 屬性來檢索網站。請確認錨點元素的 `href` 屬性可連結適當的目的地，以便系統檢索網站上的更多網頁。[瞭解詳情](https://support.9oo91e.qjz9zk/webmasters/answer/9112205)"
   },
   "lighthouse-core/audits/seo/crawlable-anchors.js | failureTitle": {
     "message": "無法檢索的連結"
@@ -1197,7 +1197,7 @@
     "message": "連結具有說明文字"
   },
   "lighthouse-core/audits/seo/manual/structured-data.js | description": {
-    "message": "執行[結構化資料測試工具](https://search.google.com/structured-data/testing-tool/)和[結構化資料 Linter](http://linter.structured-data.org/) 來驗證結構化資料。[瞭解詳情](https://web.dev/structured-data/)。"
+    "message": "執行[結構化資料測試工具](https://search.9oo91e.qjz9zk/structured-data/testing-tool/)和[結構化資料 Linter](http://linter.structured-data.org/) 來驗證結構化資料。[瞭解詳情](https://web.dev/structured-data/)。"
   },
   "lighthouse-core/audits/seo/manual/structured-data.js | title": {
     "message": "結構化資料有效"
@@ -1320,7 +1320,7 @@
     "message": "第三方"
   },
   "lighthouse-core/audits/third-party-summary.js | description": {
-    "message": "第三方程式碼可能會嚴重影響載入效能。請盡量減少不必要的第三方供應商，並在網頁的主要內容載入完成後，再載入第三方程式碼。[瞭解詳情](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/loading-third-party-javascript/)。"
+    "message": "第三方程式碼可能會嚴重影響載入效能。請盡量減少不必要的第三方供應商，並在網頁的主要內容載入完成後，再載入第三方程式碼。[瞭解詳情](https://developers.9oo91e.qjz9zk/web/fundamentals/performance/optimizing-content-efficiency/loading-third-party-javascript/)。"
   },
   "lighthouse-core/audits/third-party-summary.js | displayValue": {
     "message": "第三方程式碼將主要執行緒封鎖了 {timeInMs, number, milliseconds} 毫秒"
@@ -1341,7 +1341,7 @@
     "message": "數據"
   },
   "lighthouse-core/audits/timing-budget.js | description": {
-    "message": "設定時間預算可助您隨時留意網站的效能。效能穩定的網站能快速載入網頁，並迅速回應使用者的輸入事件。[瞭解詳情](https://developers.google.com/web/tools/lighthouse/audits/budgets)。"
+    "message": "設定時間預算可助您隨時留意網站的效能。效能穩定的網站能快速載入網頁，並迅速回應使用者的輸入事件。[瞭解詳情](https://developers.9oo91e.qjz9zk/web/tools/lighthouse/audits/budgets)。"
   },
   "lighthouse-core/audits/timing-budget.js | title": {
     "message": "時間預算"
@@ -1395,7 +1395,7 @@
     "message": "對應網址"
   },
   "lighthouse-core/audits/valid-source-maps.js | description": {
-    "message": "來源對應會將經壓縮的程式碼轉譯成原始碼。這項功能可協助開發人員在正式版本中偵錯。此外，Lighthouse 亦能提供進一步的分析資料。建議您部署來源對應，以善用這些優勢。[瞭解詳情](https://developers.google.com/web/tools/chrome-devtools/javascript/source-maps)。"
+    "message": "來源對應會將經壓縮的程式碼轉譯成原始碼。這項功能可協助開發人員在正式版本中偵錯。此外，Lighthouse 亦能提供進一步的分析資料。建議您部署來源對應，以善用這些優勢。[瞭解詳情](https://developers.9oo91e.qjz9zk/web/tools/chrome-devtools/javascript/source-maps)。"
   },
   "lighthouse-core/audits/valid-source-maps.js | failureTitle": {
     "message": "缺少大型第一方 JavaScript 的來源對應"
@@ -1464,10 +1464,10 @@
     "message": "最佳做法"
   },
   "lighthouse-core/config/default-config.js | a11yCategoryDescription": {
-    "message": "這些檢查會提供[網頁應用程式無障礙功能的改善建議](https://developers.google.com/web/fundamentals/accessibility)。系統只能自動偵測一部分的無障礙功能問題，因此建議您另行手動測試。"
+    "message": "這些檢查會提供[網頁應用程式無障礙功能的改善建議](https://developers.9oo91e.qjz9zk/web/fundamentals/accessibility)。系統只能自動偵測一部分的無障礙功能問題，因此建議您另行手動測試。"
   },
   "lighthouse-core/config/default-config.js | a11yCategoryManualDescription": {
-    "message": "這些審核項目會檢查自動化測試工具未涵蓋的區域。詳情請參閱[無障礙功能審查的執行指南](https://developers.google.com/web/fundamentals/accessibility/how-to-review)。"
+    "message": "這些審核項目會檢查自動化測試工具未涵蓋的區域。詳情請參閱[無障礙功能審查的執行指南](https://developers.9oo91e.qjz9zk/web/fundamentals/accessibility/how-to-review)。"
   },
   "lighthouse-core/config/default-config.js | a11yCategoryTitle": {
     "message": "無障礙功能"
@@ -1554,10 +1554,10 @@
     "message": "效能"
   },
   "lighthouse-core/config/default-config.js | pwaCategoryDescription": {
-    "message": "這些檢查項目可驗證漸進式網絡應用程式的不同層面。[瞭解詳情](https://developers.google.com/web/progressive-web-apps/checklist)。"
+    "message": "這些檢查項目可驗證漸進式網絡應用程式的不同層面。[瞭解詳情](https://developers.9oo91e.qjz9zk/web/progressive-web-apps/checklist)。"
   },
   "lighthouse-core/config/default-config.js | pwaCategoryManualDescription": {
-    "message": "這些是基本 [PWA 檢查清單](https://developers.google.com/web/progressive-web-apps/checklist)規定的檢查項目，但 Lighthouse 不會自動檢查這些項目。它們不會影響您的分數，但請務必手動驗證這些項目。"
+    "message": "這些是基本 [PWA 檢查清單](https://developers.9oo91e.qjz9zk/web/progressive-web-apps/checklist)規定的檢查項目，但 Lighthouse 不會自動檢查這些項目。它們不會影響您的分數，但請務必手動驗證這些項目。"
   },
   "lighthouse-core/config/default-config.js | pwaCategoryTitle": {
     "message": "漸進式網絡應用程式"
@@ -1572,7 +1572,7 @@
     "message": "已優化 PWA"
   },
   "lighthouse-core/config/default-config.js | seoCategoryDescription": {
-    "message": "這些檢查可確保網頁採用已優化的搜尋引擎結果排名設定。部分其他因素不在 Lighthouse 檢查範圍內，仍可能會影響您的搜尋排名。[瞭解詳情](https://support.google.com/webmasters/answer/35769)。"
+    "message": "這些檢查可確保網頁採用已優化的搜尋引擎結果排名設定。部分其他因素不在 Lighthouse 檢查範圍內，仍可能會影響您的搜尋排名。[瞭解詳情](https://support.9oo91e.qjz9zk/webmasters/answer/35769)。"
   },
   "lighthouse-core/config/default-config.js | seoCategoryManualDescription": {
     "message": "在您的網站上執行這些額外的驗證工具，以檢查其他 SEO 最佳做法。"
@@ -1593,7 +1593,7 @@
     "message": "檢索和加入索引"
   },
   "lighthouse-core/config/default-config.js | seoMobileGroupDescription": {
-    "message": "請確保您的頁面適合透過流動裝置瀏覽，讓使用者無需兩指縮放或放大螢幕即可閱讀網頁內容。[瞭解詳情](https://developers.google.com/search/mobile-sites/)。"
+    "message": "請確保您的頁面適合透過流動裝置瀏覽，讓使用者無需兩指縮放或放大螢幕即可閱讀網頁內容。[瞭解詳情](https://developers.9oo91e.qjz9zk/search/mobile-sites/)。"
   },
   "lighthouse-core/config/default-config.js | seoMobileGroupTitle": {
     "message": "適合透過流動裝置瀏覽"
@@ -1836,7 +1836,7 @@
     "message": "實驗室數據"
   },
   "lighthouse-core/report/html/renderer/util.js | lsPerformanceCategoryDescription": {
-    "message": "[Lighthouse](https://developers.google.com/web/tools/lighthouse/) 在模擬流動網絡上對目前網頁進行的分析。此為預計值，可能與實際值有所不同。"
+    "message": "[Lighthouse](https://developers.9oo91e.qjz9zk/web/tools/lighthouse/) 在模擬流動網絡上對目前網頁進行的分析。此為預計值，可能與實際值有所不同。"
   },
   "lighthouse-core/report/html/renderer/util.js | manualAuditsGroupTitle": {
     "message": "其他手動檢查項目"
@@ -1983,10 +1983,10 @@
     "message": "請確保您已啟用「管理 » 設定 » 開發」頁面上的「彙整 JavaScript 檔案」。您亦可透過[額外模組](https://www.drupal.org/project/project_module?f%5B0%5D=&f%5B1%5D=&f%5B2%5D=im_vid_3%3A123&f%5B3%5D=&f%5B4%5D=sm_field_project_type%3Afull&f%5B5%5D=&f%5B6%5D=&text=javascript+aggregation&solrsort=iss_project_release_usage+desc&op=Search)設定更進階的彙整選項，從而透過串連、縮小及壓縮 JavaScript 資產來提升網站速度。"
   },
   "node_modules/lighthouse-stack-packs/packs/drupal.js | unused-css-rules": {
-    "message": "建議移除未使用的 CSS 規則，並只將需要的 Drupal 程式庫附加至相關頁面或頁面內的組件。查看 [Drupal 文件連結](https://www.drupal.org/docs/8/creating-custom-modules/adding-stylesheets-css-and-javascript-js-to-a-drupal-8-module#library)即可瞭解詳情。如要找出會新增多餘 CSS 的附加程式庫，請嘗試在 Chrome DevTools 中執行[程式碼覆蓋率](https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverage)。您可在 Drupal 網站上停用 CSS 彙整時，透過樣式表網址找出有問題的主題/模組。請留意清單中包含很多樣式表，且程式碼覆蓋率中有大量紅色標示的主題/模組。主題/模組應只將網頁上實際使用的樣式表加入清單。"
+    "message": "建議移除未使用的 CSS 規則，並只將需要的 Drupal 程式庫附加至相關頁面或頁面內的組件。查看 [Drupal 文件連結](https://www.drupal.org/docs/8/creating-custom-modules/adding-stylesheets-css-and-javascript-js-to-a-drupal-8-module#library)即可瞭解詳情。如要找出會新增多餘 CSS 的附加程式庫，請嘗試在 Chrome DevTools 中執行[程式碼覆蓋率](https://developers.9oo91e.qjz9zk/web/updates/2017/04/devtools-release-notes#coverage)。您可在 Drupal 網站上停用 CSS 彙整時，透過樣式表網址找出有問題的主題/模組。請留意清單中包含很多樣式表，且程式碼覆蓋率中有大量紅色標示的主題/模組。主題/模組應只將網頁上實際使用的樣式表加入清單。"
   },
   "node_modules/lighthouse-stack-packs/packs/drupal.js | unused-javascript": {
-    "message": "Consider removing unused JavaScript assets and only attach the needed Drupal libraries to the relevant page or component in a page. See the [Drupal documentation link](https://www.drupal.org/docs/8/creating-custom-modules/adding-stylesheets-css-and-javascript-js-to-a-drupal-8-module#library) for details. To identify attached libraries that are adding extraneous JavaScript, try running [code coverage](https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverage) in Chrome DevTools. You can identify the theme/module responsible from the URL of the script when JavaScript aggregation is disabled in your Drupal site. Look out for themes/modules that have many scripts in the list which have a lot of red in code coverage. A theme/module should only enqueue a script if it is actually used on the page."
+    "message": "Consider removing unused JavaScript assets and only attach the needed Drupal libraries to the relevant page or component in a page. See the [Drupal documentation link](https://www.drupal.org/docs/8/creating-custom-modules/adding-stylesheets-css-and-javascript-js-to-a-drupal-8-module#library) for details. To identify attached libraries that are adding extraneous JavaScript, try running [code coverage](https://developers.9oo91e.qjz9zk/web/updates/2017/04/devtools-release-notes#coverage) in Chrome DevTools. You can identify the theme/module responsible from the URL of the script when JavaScript aggregation is disabled in your Drupal site. Look out for themes/modules that have many scripts in the list which have a lot of red in code coverage. A theme/module should only enqueue a script if it is actually used on the page."
   },
   "node_modules/lighthouse-stack-packs/packs/drupal.js | uses-long-cache-ttl": {
     "message": "在「管理 » 設定 » 開發」頁面中設定「瀏覽器和 Proxy 快取最大期限」。讀取 [Drupal 快取並優化效能](https://www.drupal.org/docs/7/managing-site-performance-and-scalability/caching-to-improve-performance/caching-overview#s-drupal-performance-resources)。"
@@ -2025,10 +2025,10 @@
     "message": "部分 [Joomla 擴充程式](https://extensions.joomla.org/instant-search/?jed_live%5Bquery%5D=performance)可透過串連、縮小及壓縮指令碼來提升網站速度。部分範本亦提供此功能。"
   },
   "node_modules/lighthouse-stack-packs/packs/joomla.js | unused-css-rules": {
-    "message": "部分 [Joomla 擴充程式](https://extensions.joomla.org/)會在網頁中載入未使用的 CSS，建議您減少這類擴充程式的數量，或改用其他擴充程式。如要找出會新增多餘 CSS 的擴充程式，請嘗試在 Chrome DevTools 中執行[程式碼覆蓋率](https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverage)。您可透過樣式表網址找出有問題的主題/外掛程式。請留意清單中包含很多樣式表，且程式碼覆蓋率中有大量紅色標示的外掛程式。外掛程式應只將網頁上實際使用的樣式表加入清單。"
+    "message": "部分 [Joomla 擴充程式](https://extensions.joomla.org/)會在網頁中載入未使用的 CSS，建議您減少這類擴充程式的數量，或改用其他擴充程式。如要找出會新增多餘 CSS 的擴充程式，請嘗試在 Chrome DevTools 中執行[程式碼覆蓋率](https://developers.9oo91e.qjz9zk/web/updates/2017/04/devtools-release-notes#coverage)。您可透過樣式表網址找出有問題的主題/外掛程式。請留意清單中包含很多樣式表，且程式碼覆蓋率中有大量紅色標示的外掛程式。外掛程式應只將網頁上實際使用的樣式表加入清單。"
   },
   "node_modules/lighthouse-stack-packs/packs/joomla.js | unused-javascript": {
-    "message": "部分 [Joomla 擴充程式](https://extensions.joomla.org/)會在網頁中載入未使用的 JavaScript，建議您減少這類擴充程式的數量，或改用其他擴充程式。如要找出會新增多餘 JS 的外掛程式，請嘗試在 Chrome DevTools 中執行[程式碼覆蓋率](https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverage)。您可透過指令碼網址找出有問題的擴充程式。請留意清單中包含很多指令碼，且程式碼覆蓋率中有大量紅色標示的擴充程式。擴充程式應只將網頁上實際使用的指令碼加入清單。"
+    "message": "部分 [Joomla 擴充程式](https://extensions.joomla.org/)會在網頁中載入未使用的 JavaScript，建議您減少這類擴充程式的數量，或改用其他擴充程式。如要找出會新增多餘 JS 的外掛程式，請嘗試在 Chrome DevTools 中執行[程式碼覆蓋率](https://developers.9oo91e.qjz9zk/web/updates/2017/04/devtools-release-notes#coverage)。您可透過指令碼網址找出有問題的擴充程式。請留意清單中包含很多指令碼，且程式碼覆蓋率中有大量紅色標示的擴充程式。擴充程式應只將網頁上實際使用的指令碼加入清單。"
   },
   "node_modules/lighthouse-stack-packs/packs/joomla.js | uses-long-cache-ttl": {
     "message": "瞭解 [Joomla 的瀏覽器快取功能](https://docs.joomla.org/Cache)。"
@@ -2124,10 +2124,10 @@
     "message": "部分 [WordPress 外掛程式](https://wordpress.org/plugins/search/minify+javascript/) 可透過串連、縮小及壓縮指令碼來提升網站速度。可以的話，您亦可建立流程來直接進行此壓縮操作。"
   },
   "node_modules/lighthouse-stack-packs/packs/wordpress.js | unused-css-rules": {
-    "message": "部分 [WordPress 外掛程式](https://wordpress.org/plugins/)會在網頁中載入未使用的 CSS，建議你減少這類外掛程式的數量，或改用其他外掛程式。如要找出會新增多餘 CSS 的外掛程式，請嘗試在 Chrome DevTools 中執[程式碼覆蓋率](https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverage)。您可透過樣式表網址找出有問題的主題/外掛程式。請留意清單中包含很多樣式表，且程式碼覆蓋率中有大量紅色標示的外掛程式。外掛程式應只將網頁上實際使用的樣式表加入清單。"
+    "message": "部分 [WordPress 外掛程式](https://wordpress.org/plugins/)會在網頁中載入未使用的 CSS，建議你減少這類外掛程式的數量，或改用其他外掛程式。如要找出會新增多餘 CSS 的外掛程式，請嘗試在 Chrome DevTools 中執[程式碼覆蓋率](https://developers.9oo91e.qjz9zk/web/updates/2017/04/devtools-release-notes#coverage)。您可透過樣式表網址找出有問題的主題/外掛程式。請留意清單中包含很多樣式表，且程式碼覆蓋率中有大量紅色標示的外掛程式。外掛程式應只將網頁上實際使用的樣式表加入清單。"
   },
   "node_modules/lighthouse-stack-packs/packs/wordpress.js | unused-javascript": {
-    "message": "部分 [WordPress 外掛程式](https://wordpress.org/plugins/)會在網頁中載入未使用的 JavaScript，建議你減少這類外掛程式的數量，或改用其他外掛程式。如要找出會新增多餘 JS 的外掛程式，請嘗試在 Chrome DevTools 中執[程式碼覆蓋率](https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverage)。您可透過指令碼網址找出有問題的主題/外掛程式。請留意清單中包含很多指令碼，且程式碼覆蓋率中有大量紅色標示的外掛程式。外掛程式應只將網頁上實際使用的指令碼加入清單。"
+    "message": "部分 [WordPress 外掛程式](https://wordpress.org/plugins/)會在網頁中載入未使用的 JavaScript，建議你減少這類外掛程式的數量，或改用其他外掛程式。如要找出會新增多餘 JS 的外掛程式，請嘗試在 Chrome DevTools 中執[程式碼覆蓋率](https://developers.9oo91e.qjz9zk/web/updates/2017/04/devtools-release-notes#coverage)。您可透過指令碼網址找出有問題的主題/外掛程式。請留意清單中包含很多指令碼，且程式碼覆蓋率中有大量紅色標示的外掛程式。外掛程式應只將網頁上實際使用的指令碼加入清單。"
   },
   "node_modules/lighthouse-stack-packs/packs/wordpress.js | uses-long-cache-ttl": {
     "message": "瞭解 [WordPress 的瀏覽器快取功能](https://wordpress.org/support/article/optimization/#browser-caching)。"

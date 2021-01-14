@@ -358,7 +358,7 @@ StackFrameX86* StackwalkerX86::GetCallerByWindowsFrameInfo(
   // The code that follows assumes that .raSearchStart is supposed to point
   // at the saved return address (ebp + 4).
   // For some more details on this topic, take a look at the following thread:
-  // https://groups.google.com/forum/#!topic/google-breakpad-dev/ZP1FA9B1JjM
+  // https://groups.9oo91e.qjz9zk/forum/#!topic/google-breakpad-dev/ZP1FA9B1JjM
   if ((StackFrameX86::CONTEXT_VALID_EBP & last_frame->context_validity) != 0 &&
       program_string.find('@') != string::npos) {
     raSearchStart = last_frame->context.ebp + 4;

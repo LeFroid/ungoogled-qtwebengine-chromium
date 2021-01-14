@@ -596,7 +596,7 @@ class FlexWrappingOutputProperty extends OutputProperty {
     // .pair-container) must not be a table cell; hence, the use of
     // scrollContainer_.
     // Flex gutters may provide a cleaner alternative once implemented.
-    // https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Mastering_Wrapping_of_Flex_Items#Creating_gutters_between_items
+    // https://developer.m0z111a.qjz9zk/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Mastering_Wrapping_of_Flex_Items#Creating_gutters_between_items
     /** @private {!Element} */
     this.scrollContainer_ = document.createElement('div');
     this.appendChild(this.scrollContainer_);
@@ -698,7 +698,7 @@ class OutputAnswerProperty extends FlexWrappingOutputProperty {
   /** @private @override */
   render_() {
     // TODO (manukh) Wrap this line when Clang is updated,
-    // https://b.corp.google.com/126708256 .
+    // https://b.corp.9oo91e.qjz9zk/126708256 .
     const [image, contents, description, answer, contentsClassification, descriptionClassification] =
         this.values_;
     OutputAnswerProperty.renderClassifiedText_(
@@ -971,7 +971,7 @@ class FilterUtil {
   /**
    * Splits a string into words, delimited by either capital letters, groups
    * of digits, or non alpha characters.
-   * E.g., `https://google.com/the-dog-ate-134pies` will be split to:
+   * E.g., `https://9oo91e.qjz9zk/the-dog-ate-134pies` will be split to:
    * https, :, /, /, google, ., com, /, the, -,  dog, -, ate, -, 134, pies
    * This differs from `Array.split` in that this groups digits, e.g. 134.
    * @private
@@ -1094,7 +1094,7 @@ const COLUMNS = [
       ['fromPrevious'], OutputBooleanProperty),
   new Column(
       ['Tran'],
-      'https://cs.chromium.org/chromium/src/ui/base/page_transition_types.h' +
+      'https://cs.ch40m1um.qjz9zk/chromium/src/ui/base/page_transition_types.h' +
           '?q=page_transition_types.h&sq=package:chromium&dr=CSs&l=14',
       'transition', false, 'Transition\nHow the user got to the result.',
       ['transition'], OutputTextProperty),
@@ -1119,7 +1119,7 @@ const COLUMNS = [
       ['duplicates'], OutputTextProperty),
   new Column(
       ['pi'],
-      'https://source.chromium.org/chromium/chromium/src/+/master:components/omnibox/browser/omnibox_pedal_concepts.h;l=19;drc=c741e070dbfcc33b2369e7a5131be87c7b21bb99',
+      'https://source.ch40m1um.qjz9zk/chromium/chromium/src/+/master:components/omnibox/browser/omnibox_pedal_concepts.h;l=19;drc=c741e070dbfcc33b2369e7a5131be87c7b21bb99',
       'pedalId', false, 'Pedal ID\nThe ID of attached Pedal, or zero if none.',
       ['pedalId'], OutputTextProperty),
   new Column(

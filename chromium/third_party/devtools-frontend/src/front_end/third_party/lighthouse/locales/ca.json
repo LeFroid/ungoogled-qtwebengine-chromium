@@ -390,7 +390,7 @@
     "message": "Suggested Token"
   },
   "lighthouse-core/audits/autocomplete.js | description": {
-    "message": "`autocomplete` helps users submit forms quicker. To reduce user effort, consider enabling by setting the `autocomplete` attribute to a valid value. [Learn more](https://developers.google.com/web/fundamentals/design-and-ux/input/forms#use_metadata_to_enable_auto-complete)"
+    "message": "`autocomplete` helps users submit forms quicker. To reduce user effort, consider enabling by setting the `autocomplete` attribute to a valid value. [Learn more](https://developers.9oo91e.qjz9zk/web/fundamentals/design-and-ux/input/forms#use_metadata_to_enable_auto-complete)"
   },
   "lighthouse-core/audits/autocomplete.js | failureTitle": {
     "message": "`<input>` elements do not have correct `autocomplete` attributes"
@@ -621,7 +621,7 @@
     "message": "Valor"
   },
   "lighthouse-core/audits/dobetterweb/dom-size.js | description": {
-    "message": "Un DOM gran augmentarà l'ús de la memòria, provocarà [càlculs d'estil](https://developers.google.com/web/fundamentals/performance/rendering/reduce-the-scope-and-complexity-of-style-calculations) més llargs i produirà [reinicis de reflux del disseny](https://developers.google.com/speed/articles/reflow) costosos. [Obtén més informació](https://web.dev/dom-size/)."
+    "message": "Un DOM gran augmentarà l'ús de la memòria, provocarà [càlculs d'estil](https://developers.9oo91e.qjz9zk/web/fundamentals/performance/rendering/reduce-the-scope-and-complexity-of-style-calculations) més llargs i produirà [reinicis de reflux del disseny](https://developers.9oo91e.qjz9zk/speed/articles/reflow) costosos. [Obtén més informació](https://web.dev/dom-size/)."
   },
   "lighthouse-core/audits/dobetterweb/dom-size.js | displayValue": {
     "message": "{itemCount,plural, =1{Un element}other{# elements}}"
@@ -834,7 +834,7 @@
     "message": "Resolució de sol·licituds"
   },
   "lighthouse-core/audits/is-on-https.js | description": {
-    "message": "All sites should be protected with HTTPS, even ones that don't handle sensitive data. This includes avoiding [mixed content](https://developers.google.com/web/fundamentals/security/prevent-mixed-content/what-is-mixed-content), where some resources are loaded over HTTP despite the initial request being served over HTTPS. HTTPS prevents intruders from tampering with or passively listening in on the communications between your app and your users, and is a prerequisite for HTTP/2 and many new web platform APIs. [Learn more](https://web.dev/is-on-https/)."
+    "message": "All sites should be protected with HTTPS, even ones that don't handle sensitive data. This includes avoiding [mixed content](https://developers.9oo91e.qjz9zk/web/fundamentals/security/prevent-mixed-content/what-is-mixed-content), where some resources are loaded over HTTP despite the initial request being served over HTTPS. HTTPS prevents intruders from tampering with or passively listening in on the communications between your app and your users, and is a prerequisite for HTTP/2 and many new web platform APIs. [Learn more](https://web.dev/is-on-https/)."
   },
   "lighthouse-core/audits/is-on-https.js | displayValue": {
     "message": "{itemCount,plural, =1{S'ha trobat 1 sol·licitud no segura}other{S'han trobat # sol·licituds no segures}}"
@@ -855,7 +855,7 @@
     "message": "Biblioteca"
   },
   "lighthouse-core/audits/large-javascript-libraries.js | description": {
-    "message": "Les biblioteques grans de JavaScript poden comportar un rendiment baix. Per reduir la mida del paquet, dona preferència a les biblioteques més petites que tinguin funcions equivalents. [Obtén més informació](https://developers.google.com/web/fundamentals/performance/webpack/decrease-frontend-size#optimize_dependencies)."
+    "message": "Les biblioteques grans de JavaScript poden comportar un rendiment baix. Per reduir la mida del paquet, dona preferència a les biblioteques més petites que tinguin funcions equivalents. [Obtén més informació](https://developers.9oo91e.qjz9zk/web/fundamentals/performance/webpack/decrease-frontend-size#optimize_dependencies)."
   },
   "lighthouse-core/audits/large-javascript-libraries.js | displayValue": {
     "message": "{libraryCount,plural, =1{1 biblioteca gran trobada}other{# biblioteques grans trobades}}"
@@ -990,7 +990,7 @@
     "message": "Latències dorsals del servidor"
   },
   "lighthouse-core/audits/no-unload-listeners.js | description": {
-    "message": "L'esdeveniment `unload` no es pot activar amb fiabilitat i detectar-lo pot impedir optimitzacions del navegador, com ara la memòria cau Back-Forward. També pots fer servir els esdeveniments `pagehide` o `visibilitychange`. [Més informació](https://developers.google.com/web/updates/2018/07/page-lifecycle-api#the-unload-event)"
+    "message": "L'esdeveniment `unload` no es pot activar amb fiabilitat i detectar-lo pot impedir optimitzacions del navegador, com ara la memòria cau Back-Forward. També pots fer servir els esdeveniments `pagehide` o `visibilitychange`. [Més informació](https://developers.9oo91e.qjz9zk/web/updates/2018/07/page-lifecycle-api#the-unload-event)"
   },
   "lighthouse-core/audits/no-unload-listeners.js | failureTitle": {
     "message": "Registra un detector de `unload`"
@@ -1041,7 +1041,7 @@
     "message": "Lighthouse no ha pogut llegir l'atribut `start_url` del fitxer de manifest, de manera que s'ha donat per fet que `start_url` era l'URL del document. Missatge d'error: \"{manifestWarning}\"."
   },
   "lighthouse-core/audits/performance-budget.js | description": {
-    "message": "Manté la quantitat i la mida de les sol·licituds de xarxa ajustades als objectius establerts al pressupost de rendiment que s'ha proporcionat. [Obtén més informació](https://developers.google.com/web/tools/lighthouse/audits/budgets)."
+    "message": "Manté la quantitat i la mida de les sol·licituds de xarxa ajustades als objectius establerts al pressupost de rendiment que s'ha proporcionat. [Obtén més informació](https://developers.9oo91e.qjz9zk/web/tools/lighthouse/audits/budgets)."
   },
   "lighthouse-core/audits/performance-budget.js | requestCountOverBudget": {
     "message": "{count,plural, =1{1 sol·licitud}other{# sol·licituds}}"
@@ -1113,7 +1113,7 @@
     "message": "Enllaç que no es pot rastrejar"
   },
   "lighthouse-core/audits/seo/crawlable-anchors.js | description": {
-    "message": "És possible que els motors de cerca utilitzin atributs `href` als enllaços per rastrejar llocs web. Assegura't que l'atribut `href` dels elements d'ancoratge enllaci a la destinació adequada. D'aquesta manera, es podran detectar més pàgines del lloc web. [Més informació](https://support.google.com/webmasters/answer/9112205)"
+    "message": "És possible que els motors de cerca utilitzin atributs `href` als enllaços per rastrejar llocs web. Assegura't que l'atribut `href` dels elements d'ancoratge enllaci a la destinació adequada. D'aquesta manera, es podran detectar més pàgines del lloc web. [Més informació](https://support.9oo91e.qjz9zk/webmasters/answer/9112205)"
   },
   "lighthouse-core/audits/seo/crawlable-anchors.js | failureTitle": {
     "message": "Els enllaços no es poden rastrejar"
@@ -1197,7 +1197,7 @@
     "message": "Els enllaços tenen text descriptiu"
   },
   "lighthouse-core/audits/seo/manual/structured-data.js | description": {
-    "message": "Executa l'[eina de proves de dades estructurades](https://search.google.com/structured-data/testing-tool/) i l'[eina Structured Data Linter](http://linter.structured-data.org/) per validar aquest tipus de dades. [Obtén més informació](https://web.dev/structured-data/)."
+    "message": "Executa l'[eina de proves de dades estructurades](https://search.9oo91e.qjz9zk/structured-data/testing-tool/) i l'[eina Structured Data Linter](http://linter.structured-data.org/) per validar aquest tipus de dades. [Obtén més informació](https://web.dev/structured-data/)."
   },
   "lighthouse-core/audits/seo/manual/structured-data.js | title": {
     "message": "Les dades estructurades són vàlides"
@@ -1320,7 +1320,7 @@
     "message": "Tercers"
   },
   "lighthouse-core/audits/third-party-summary.js | description": {
-    "message": "El codi de tercers pot afectar significativament el rendiment de la càrrega. Limita el nombre de proveïdors externs redundants i prova de carregar codi de tercers quan la càrrega principal de la pàgina ha finalitzat. [Obtén més informació](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/loading-third-party-javascript/)."
+    "message": "El codi de tercers pot afectar significativament el rendiment de la càrrega. Limita el nombre de proveïdors externs redundants i prova de carregar codi de tercers quan la càrrega principal de la pàgina ha finalitzat. [Obtén més informació](https://developers.9oo91e.qjz9zk/web/fundamentals/performance/optimizing-content-efficiency/loading-third-party-javascript/)."
   },
   "lighthouse-core/audits/third-party-summary.js | displayValue": {
     "message": "El codi de tercers ha bloquejat el fil principal durant {timeInMs, number, milliseconds} ms"
@@ -1341,7 +1341,7 @@
     "message": "Mètrica"
   },
   "lighthouse-core/audits/timing-budget.js | description": {
-    "message": "Defineix un pressupost de temps perquè t'ajudi a fer un seguiment del rendiment del teu lloc web. Els llocs webs que funcionen bé es carreguen ràpidament i responen de pressa als esdeveniments d'entrada dels usuaris. [Obtén més informació](https://developers.google.com/web/tools/lighthouse/audits/budgets)."
+    "message": "Defineix un pressupost de temps perquè t'ajudi a fer un seguiment del rendiment del teu lloc web. Els llocs webs que funcionen bé es carreguen ràpidament i responen de pressa als esdeveniments d'entrada dels usuaris. [Obtén més informació](https://developers.9oo91e.qjz9zk/web/tools/lighthouse/audits/budgets)."
   },
   "lighthouse-core/audits/timing-budget.js | title": {
     "message": "Pressupost de temps"
@@ -1395,7 +1395,7 @@
     "message": "URL del mapa"
   },
   "lighthouse-core/audits/valid-source-maps.js | description": {
-    "message": "Els mapes d'origen tradueixen el codi reduït al codi font original. Això ajuda els desenvolupadors a depurar durant la producció. A més, Lighthouse pot proporcionar estadístiques addicionals. Planteja't implementar mapes d'origen per treure partit d'aquests avantatges. [Obtén més informació](https://developers.google.com/web/tools/chrome-devtools/javascript/source-maps)."
+    "message": "Els mapes d'origen tradueixen el codi reduït al codi font original. Això ajuda els desenvolupadors a depurar durant la producció. A més, Lighthouse pot proporcionar estadístiques addicionals. Planteja't implementar mapes d'origen per treure partit d'aquests avantatges. [Obtén més informació](https://developers.9oo91e.qjz9zk/web/tools/chrome-devtools/javascript/source-maps)."
   },
   "lighthouse-core/audits/valid-source-maps.js | failureTitle": {
     "message": "Falten mapes d'origen per a un fitxer JavaScript propi gran"
@@ -1464,10 +1464,10 @@
     "message": "Pràctiques recomanades"
   },
   "lighthouse-core/config/default-config.js | a11yCategoryDescription": {
-    "message": "Aquestes comprovacions destaquen les oportunitats per [millorar l'accessibilitat de l'aplicació web](https://developers.google.com/web/fundamentals/accessibility). Només poden detectar un subconjunt de problemes d'accessibilitat automàticament, de manera que et recomanem que també hi facis proves manuals."
+    "message": "Aquestes comprovacions destaquen les oportunitats per [millorar l'accessibilitat de l'aplicació web](https://developers.9oo91e.qjz9zk/web/fundamentals/accessibility). Només poden detectar un subconjunt de problemes d'accessibilitat automàticament, de manera que et recomanem que també hi facis proves manuals."
   },
   "lighthouse-core/config/default-config.js | a11yCategoryManualDescription": {
-    "message": "Aquests elements tracten àrees que les eines de proves automatitzades no poden cobrir. Obtén més informació a la nostra guia sobre [com es duen a terme ressenyes d'accessibilitat](https://developers.google.com/web/fundamentals/accessibility/how-to-review)."
+    "message": "Aquests elements tracten àrees que les eines de proves automatitzades no poden cobrir. Obtén més informació a la nostra guia sobre [com es duen a terme ressenyes d'accessibilitat](https://developers.9oo91e.qjz9zk/web/fundamentals/accessibility/how-to-review)."
   },
   "lighthouse-core/config/default-config.js | a11yCategoryTitle": {
     "message": "Accessibilitat"
@@ -1554,10 +1554,10 @@
     "message": "Rendiment"
   },
   "lighthouse-core/config/default-config.js | pwaCategoryDescription": {
-    "message": "Aquestes validacions verifiquen els aspectes de les aplicacions web progressives. [Obtén més informació](https://developers.google.com/web/progressive-web-apps/checklist)."
+    "message": "Aquestes validacions verifiquen els aspectes de les aplicacions web progressives. [Obtén més informació](https://developers.9oo91e.qjz9zk/web/progressive-web-apps/checklist)."
   },
   "lighthouse-core/config/default-config.js | pwaCategoryManualDescription": {
-    "message": "La [llista de comprovació de referència per a aplicacions web progressives](https://developers.google.com/web/progressive-web-apps/checklist) requereix aquestes validacions, però Lighthouse no les verifica automàticament. Tot i que no afecten la teva puntuació, és important que les verifiquis manualment."
+    "message": "La [llista de comprovació de referència per a aplicacions web progressives](https://developers.9oo91e.qjz9zk/web/progressive-web-apps/checklist) requereix aquestes validacions, però Lighthouse no les verifica automàticament. Tot i que no afecten la teva puntuació, és important que les verifiquis manualment."
   },
   "lighthouse-core/config/default-config.js | pwaCategoryTitle": {
     "message": "Aplicació web progressiva"
@@ -1572,7 +1572,7 @@
     "message": "Optimitzat per a PWA"
   },
   "lighthouse-core/config/default-config.js | seoCategoryDescription": {
-    "message": "Aquestes comprovacions garanteixen que la pàgina estigui optimitzada per classificar els resultats del motor de cerca. Hi ha factors addicionals que Lighthouse no comprova i que és possible que afectin la teva classificació a les cerques. [Obtén més informació](https://support.google.com/webmasters/answer/35769)."
+    "message": "Aquestes comprovacions garanteixen que la pàgina estigui optimitzada per classificar els resultats del motor de cerca. Hi ha factors addicionals que Lighthouse no comprova i que és possible que afectin la teva classificació a les cerques. [Obtén més informació](https://support.9oo91e.qjz9zk/webmasters/answer/35769)."
   },
   "lighthouse-core/config/default-config.js | seoCategoryManualDescription": {
     "message": "Executa aquestes validacions addicionals al lloc web per comprovar les pràctiques addicionals recomanades per a SEO."
@@ -1593,7 +1593,7 @@
     "message": "Rastreig i indexació"
   },
   "lighthouse-core/config/default-config.js | seoMobileGroupDescription": {
-    "message": "Comprova que les pàgines estiguin adaptades per a mòbils, de manera que els usuaris no hagin de pinçar o ampliar les pàgines de contingut per poder llegir-les. [Obtén més informació](https://developers.google.com/search/mobile-sites/)."
+    "message": "Comprova que les pàgines estiguin adaptades per a mòbils, de manera que els usuaris no hagin de pinçar o ampliar les pàgines de contingut per poder llegir-les. [Obtén més informació](https://developers.9oo91e.qjz9zk/search/mobile-sites/)."
   },
   "lighthouse-core/config/default-config.js | seoMobileGroupTitle": {
     "message": "Adaptació per a mòbils"
@@ -1836,7 +1836,7 @@
     "message": "Dades de laboratori"
   },
   "lighthouse-core/report/html/renderer/util.js | lsPerformanceCategoryDescription": {
-    "message": "Anàlisi amb [Lighthouse](https://developers.google.com/web/tools/lighthouse/) de la pàgina actual mitjançant una xarxa mòbil emulada. Els valors són estimacions i poden variar."
+    "message": "Anàlisi amb [Lighthouse](https://developers.9oo91e.qjz9zk/web/tools/lighthouse/) de la pàgina actual mitjançant una xarxa mòbil emulada. Els valors són estimacions i poden variar."
   },
   "lighthouse-core/report/html/renderer/util.js | manualAuditsGroupTitle": {
     "message": "Elements addicionals per comprovar manualment"
@@ -1983,10 +1983,10 @@
     "message": "Comprova que hagis activat Aggregate JavaScript files (Fitxers JavaScript agregats) a la pàgina Administration > Configuration > Development (Administració > Configuració > Desenvolupament). També pots configurar opcions d'agregació més avançades mitjançant [mòduls addicionals](https://www.drupal.org/project/project_module?f%5B0%5D=&f%5B1%5D=&f%5B2%5D=im_vid_3%3A123&f%5B3%5D=&f%5B4%5D=sm_field_project_type%3Afull&f%5B5%5D=&f%5B6%5D=&text=javascript+aggregation&solrsort=iss_project_release_usage+desc&op=Search) per accelerar el teu lloc web. Per fer-ho, concatenen, redueixen i comprimeixen els recursos de JavaScript."
   },
   "node_modules/lighthouse-stack-packs/packs/drupal.js | unused-css-rules": {
-    "message": "Pots suprimir les regles de CSS no utilitzades i adjuntar només les biblioteques de Drupal necessàries a la pàgina o al component rellevants d'una pàgina. Per obtenir-ne informació, segueix l'[enllaç a la documentació de Drupal](https://www.drupal.org/docs/8/creating-custom-modules/adding-stylesheets-css-and-javascript-js-to-a-drupal-8-module#library). Per identificar les biblioteques adjuntes que afegeixen fitxers CSS externs, prova d'executar la [cobertura de codi](https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverage) a Chrome DevTools. Pots identificar el tema o el mòdul responsable a partir de l'URL del full d'estil quan l'agregació de CSS estigui desactivada al teu lloc web de Drupal. Posa atenció als temes o els mòduls que tinguin molts fulls d'estil a la llista amb molt de vermell a la cobertura de codi. Un tema o mòdul només hauria de tenir un full d'estil a la cua si es fa servir a la pàgina."
+    "message": "Pots suprimir les regles de CSS no utilitzades i adjuntar només les biblioteques de Drupal necessàries a la pàgina o al component rellevants d'una pàgina. Per obtenir-ne informació, segueix l'[enllaç a la documentació de Drupal](https://www.drupal.org/docs/8/creating-custom-modules/adding-stylesheets-css-and-javascript-js-to-a-drupal-8-module#library). Per identificar les biblioteques adjuntes que afegeixen fitxers CSS externs, prova d'executar la [cobertura de codi](https://developers.9oo91e.qjz9zk/web/updates/2017/04/devtools-release-notes#coverage) a Chrome DevTools. Pots identificar el tema o el mòdul responsable a partir de l'URL del full d'estil quan l'agregació de CSS estigui desactivada al teu lloc web de Drupal. Posa atenció als temes o els mòduls que tinguin molts fulls d'estil a la llista amb molt de vermell a la cobertura de codi. Un tema o mòdul només hauria de tenir un full d'estil a la cua si es fa servir a la pàgina."
   },
   "node_modules/lighthouse-stack-packs/packs/drupal.js | unused-javascript": {
-    "message": "Consider removing unused JavaScript assets and only attach the needed Drupal libraries to the relevant page or component in a page. See the [Drupal documentation link](https://www.drupal.org/docs/8/creating-custom-modules/adding-stylesheets-css-and-javascript-js-to-a-drupal-8-module#library) for details. To identify attached libraries that are adding extraneous JavaScript, try running [code coverage](https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverage) in Chrome DevTools. You can identify the theme/module responsible from the URL of the script when JavaScript aggregation is disabled in your Drupal site. Look out for themes/modules that have many scripts in the list which have a lot of red in code coverage. A theme/module should only enqueue a script if it is actually used on the page."
+    "message": "Consider removing unused JavaScript assets and only attach the needed Drupal libraries to the relevant page or component in a page. See the [Drupal documentation link](https://www.drupal.org/docs/8/creating-custom-modules/adding-stylesheets-css-and-javascript-js-to-a-drupal-8-module#library) for details. To identify attached libraries that are adding extraneous JavaScript, try running [code coverage](https://developers.9oo91e.qjz9zk/web/updates/2017/04/devtools-release-notes#coverage) in Chrome DevTools. You can identify the theme/module responsible from the URL of the script when JavaScript aggregation is disabled in your Drupal site. Look out for themes/modules that have many scripts in the list which have a lot of red in code coverage. A theme/module should only enqueue a script if it is actually used on the page."
   },
   "node_modules/lighthouse-stack-packs/packs/drupal.js | uses-long-cache-ttl": {
     "message": "Defineix l'opció Browser and proxy cache maximum age (Antiguitat màxima de la memòria cau del navegador i del servidor intermediari) a la pàgina Administration > Configuration > Development (Administració > Configuració > Desenvolupament). Obtén informació sobre [l'optimització per a un bon rendiment i la memòria cau de Drupal](https://www.drupal.org/docs/7/managing-site-performance-and-scalability/caching-to-improve-performance/caching-overview#s-drupal-performance-resources)."
@@ -2025,10 +2025,10 @@
     "message": "Hi ha diverses [extensions de Joomla](https://extensions.joomla.org/instant-search/?jed_live%5Bquery%5D=performance) que poden accelerar el teu lloc web. Per fer-ho, concatenen, redueixen i comprimeixen els scripts. També hi ha plantilles que ofereixen aquesta funcionalitat."
   },
   "node_modules/lighthouse-stack-packs/packs/joomla.js | unused-css-rules": {
-    "message": "Pots reduir o canviar el nombre d'[extensions de Joomla](https://extensions.joomla.org/) que carreguen fitxers CSS no utilitzats a la pàgina. Per identificar les extensions que afegeixen fitxers CSS externs, prova d'executar la [cobertura de codi](https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverage) a Chrome DevTools. Pots identificar el tema o el connector responsable a partir de l'URL del full d'estil. Posa atenció als connectors que tinguin molts fulls d'estil a la llista amb molt de vermell a la cobertura de codi. Un connector només hauria de tenir un full d'estil a la cua si es fa servir a la pàgina."
+    "message": "Pots reduir o canviar el nombre d'[extensions de Joomla](https://extensions.joomla.org/) que carreguen fitxers CSS no utilitzats a la pàgina. Per identificar les extensions que afegeixen fitxers CSS externs, prova d'executar la [cobertura de codi](https://developers.9oo91e.qjz9zk/web/updates/2017/04/devtools-release-notes#coverage) a Chrome DevTools. Pots identificar el tema o el connector responsable a partir de l'URL del full d'estil. Posa atenció als connectors que tinguin molts fulls d'estil a la llista amb molt de vermell a la cobertura de codi. Un connector només hauria de tenir un full d'estil a la cua si es fa servir a la pàgina."
   },
   "node_modules/lighthouse-stack-packs/packs/joomla.js | unused-javascript": {
-    "message": "Pots reduir o canviar el nombre d'[extensions de Joomla](https://extensions.joomla.org/) que carreguen fitxers JavaScript no utilitzats a la pàgina. Per identificar els connectors que afegeixen fitxers JavaScript externs, prova d'executar la [cobertura de codi](https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverage) a Chrome DevTools. Pots identificar l'extensió responsable a partir de l'URL de l'script. Posa atenció a les extensions que tinguin molts scripts a la llista amb molt de vermell a la cobertura de codi. Una extensió només hauria de tenir un script a la cua si es fa servir a la pàgina."
+    "message": "Pots reduir o canviar el nombre d'[extensions de Joomla](https://extensions.joomla.org/) que carreguen fitxers JavaScript no utilitzats a la pàgina. Per identificar els connectors que afegeixen fitxers JavaScript externs, prova d'executar la [cobertura de codi](https://developers.9oo91e.qjz9zk/web/updates/2017/04/devtools-release-notes#coverage) a Chrome DevTools. Pots identificar l'extensió responsable a partir de l'URL de l'script. Posa atenció a les extensions que tinguin molts scripts a la llista amb molt de vermell a la cobertura de codi. Una extensió només hauria de tenir un script a la cua si es fa servir a la pàgina."
   },
   "node_modules/lighthouse-stack-packs/packs/joomla.js | uses-long-cache-ttl": {
     "message": "Obtén informació sobre la [memòria cau del navegador a Joomla](https://docs.joomla.org/Cache)."
@@ -2124,10 +2124,10 @@
     "message": "Hi ha diversos [connectors de WordPress](https://wordpress.org/plugins/search/minify+javascript/) que poden accelerar el teu lloc web. Per fer-ho, concatenen, redueixen i comprimeixen els scripts. També et recomanem que utilitzis un procés de compilació per fer aquesta minimització de manera anticipada, si és possible."
   },
   "node_modules/lighthouse-stack-packs/packs/wordpress.js | unused-css-rules": {
-    "message": "Pots reduir o canviar el nombre de [connectors de WordPress](https://wordpress.org/plugins/) que carreguen fitxers CSS no utilitzats a la pàgina. Per identificar els connectors que afegeixen fitxers CSS externs, prova d'executar la [cobertura de codi](https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverage) a Chrome DevTools. Pots identificar el tema o el connector responsable a partir de l'URL del full d'estil. Posa atenció als connectors que tinguin molts fulls d'estil a la llista amb molt de vermell a la cobertura de codi. Un connector només hauria de tenir un full d'estil a la cua si es fa servir a la pàgina."
+    "message": "Pots reduir o canviar el nombre de [connectors de WordPress](https://wordpress.org/plugins/) que carreguen fitxers CSS no utilitzats a la pàgina. Per identificar els connectors que afegeixen fitxers CSS externs, prova d'executar la [cobertura de codi](https://developers.9oo91e.qjz9zk/web/updates/2017/04/devtools-release-notes#coverage) a Chrome DevTools. Pots identificar el tema o el connector responsable a partir de l'URL del full d'estil. Posa atenció als connectors que tinguin molts fulls d'estil a la llista amb molt de vermell a la cobertura de codi. Un connector només hauria de tenir un full d'estil a la cua si es fa servir a la pàgina."
   },
   "node_modules/lighthouse-stack-packs/packs/wordpress.js | unused-javascript": {
-    "message": "Pots reduir o canviar el nombre de [connectors de WordPress](https://wordpress.org/plugins/) que carreguen fitxers JavaScript no utilitzats a la pàgina. Per identificar els connectors que afegeixen fitxers JavaScript externs, prova d'executar la [cobertura de codi](https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverage) a Chrome DevTools. Pots identificar el tema o el connector responsable a partir de l'URL de l'script. Posa atenció als connectors que tinguin molts scripts a la llista amb molt de vermell a la cobertura de codi. Un connector només hauria de tenir un script a la cua si es fa servir a la pàgina."
+    "message": "Pots reduir o canviar el nombre de [connectors de WordPress](https://wordpress.org/plugins/) que carreguen fitxers JavaScript no utilitzats a la pàgina. Per identificar els connectors que afegeixen fitxers JavaScript externs, prova d'executar la [cobertura de codi](https://developers.9oo91e.qjz9zk/web/updates/2017/04/devtools-release-notes#coverage) a Chrome DevTools. Pots identificar el tema o el connector responsable a partir de l'URL de l'script. Posa atenció als connectors que tinguin molts scripts a la llista amb molt de vermell a la cobertura de codi. Un connector només hauria de tenir un script a la cua si es fa servir a la pàgina."
   },
   "node_modules/lighthouse-stack-packs/packs/wordpress.js | uses-long-cache-ttl": {
     "message": "Obtén informació sobre la [memòria cau del navegador a WordPress](https://wordpress.org/support/article/optimization/#browser-caching)."

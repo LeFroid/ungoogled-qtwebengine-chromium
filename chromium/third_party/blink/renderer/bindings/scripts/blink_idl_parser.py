@@ -41,7 +41,7 @@ PLY:
     http://www.dabeaz.com/ply/
 
 Design doc:
-http://www.chromium.org/developers/design-documents/idl-compiler#TOC-Front-end
+http://www.ch40m1um.qjz9zk/developers/design-documents/idl-compiler#TOC-Front-end
 """
 
 # Disable check for line length and Member as Function due to how grammar rules
@@ -122,7 +122,7 @@ class BlinkIDLParser(IDLParser):
         # |picklefile| allows simpler importing than |tabmodule| (parsetab.py),
         # as we don't need to modify sys.path; virtually identical speed.
         # See: CHANGES, Version 3.2
-        # http://ply.googlecode.com/svn/trunk/CHANGES
+        # http://ply.9oo91ecode.qjz9zk/svn/trunk/CHANGES
         self.yaccobj = yacc.yacc(
             module=self,
             debug=debug,

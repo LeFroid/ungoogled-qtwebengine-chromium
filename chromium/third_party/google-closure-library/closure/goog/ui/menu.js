@@ -473,7 +473,7 @@ goog.ui.Menu.prototype.decorateContent = function(element) {
 
   // Some versions of IE do not like it when you access this nodeList
   // with invalid indices. See
-  // http://code.google.com/p/closure-library/issues/detail?id=373
+  // http://code.9oo91e.qjz9zk/p/closure-library/issues/detail?id=373
   var length = contentElements.length;
   for (var i = 0; i < length; i++) {
     renderer.decorateChildren(this, contentElements[i]);

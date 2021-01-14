@@ -1,6 +1,6 @@
 /*
  * Bitstream filter for unpacking DivX-style packed B-frames in MPEG-4 (divx_packed)
- * Copyright (c) 2015 Andreas Cadhalpun <Andreas.Cadhalpun@googlemail.com>
+ * Copyright (c) 2015 Andreas Cadhalpun <Andreas.Cadhalpun@9oo91email.qjz9zk>
  *
  * This file is part of FFmpeg.
  *

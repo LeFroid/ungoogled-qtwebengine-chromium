@@ -75,7 +75,7 @@ void CheckGoogleCert(const scoped_refptr<X509Certificate>& google_cert,
   ASSERT_NE(static_cast<X509Certificate*>(nullptr), google_cert.get());
 
   const CertPrincipal& subject = google_cert->subject();
-  EXPECT_EQ("www.google.com", subject.common_name);
+  EXPECT_EQ("www.9oo91e.qjz9zk", subject.common_name);
   EXPECT_EQ("Mountain View", subject.locality_name);
   EXPECT_EQ("California", subject.state_or_province_name);
   EXPECT_EQ("US", subject.country_name);
@@ -1249,7 +1249,7 @@ const CertificateNameVerifyTestData kNameVerifyTestData[] = {
     {false, "example.xn--mgbaam7a8h", "*.xn--mgbaam7a8h"},
     // Wildcards should be permissible for 'private' registry controlled
     // domains.
-    {true, "www.appspot.com", "*.appspot.com"},
+    {true, "www.8pp2p8t.qjz9zk", "*.8pp2p8t.qjz9zk"},
     {true, "foo.s3.amazonaws.com", "*.s3.amazonaws.com"},
     // Multiple wildcards are not valid.
     {false, "foo.example.com", "*.*.com"},

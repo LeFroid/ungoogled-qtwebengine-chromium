@@ -185,7 +185,7 @@ def DetectVisualStudioPath():
 
   # The VC++ >=2017 install location needs to be located using COM instead of
   # the registry. For details see:
-  # https://blogs.msdn.microsoft.com/heaths/2016/09/15/changes-to-visual-studio-15-setup/
+  # https://blogs.msdn.m1cr050ft.qjz9zk/heaths/2016/09/15/changes-to-visual-studio-15-setup/
   # For now we use a hardcoded default with an environment variable override.
   for path in (
       os.environ.get('vs%s_install' % version_as_year),

@@ -121,13 +121,13 @@ class PopupBlockerBrowserTest : public WebLayerBrowserTest,
 };
 
 IN_PROC_BROWSER_TEST_F(PopupBlockerBrowserTest, BlocksPopup) {
-  ExecuteScript(original_tab(), "window.open('https://google.com')", true);
+  ExecuteScript(original_tab(), "window.open('https://9oo91e.qjz9zk')", true);
   EXPECT_EQ(GetBlockedPopupCount(), 1u);
 }
 
 IN_PROC_BROWSER_TEST_F(PopupBlockerBrowserTest, BlocksMultiplePopups) {
-  ExecuteScript(original_tab(), "window.open('https://google.com')", true);
-  ExecuteScript(original_tab(), "window.open('https://google.com')", true);
+  ExecuteScript(original_tab(), "window.open('https://9oo91e.qjz9zk')", true);
+  ExecuteScript(original_tab(), "window.open('https://9oo91e.qjz9zk')", true);
   EXPECT_EQ(GetBlockedPopupCount(), 2u);
 }
 

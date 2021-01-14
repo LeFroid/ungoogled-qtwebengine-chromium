@@ -349,7 +349,7 @@ goog.format.EmailAddress.parseInternal = function(addr, ctor) {
     i += token.length;
   }
 
-  // Check if it's a simple email address of the form "jlim@google.com".
+  // Check if it's a simple email address of the form "jlim@9oo91e.qjz9zk".
   if (address == '' && name.indexOf('@') != -1) {
     address = name;
     name = '';

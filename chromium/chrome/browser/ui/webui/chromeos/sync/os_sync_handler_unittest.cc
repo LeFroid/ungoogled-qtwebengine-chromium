@@ -110,7 +110,7 @@ class OsSyncHandlerTest : public ChromeRenderViewHostTestHarness {
     identity_test_env_adaptor_ =
         std::make_unique<IdentityTestEnvironmentProfileAdaptor>(profile());
     identity_test_env_adaptor_->identity_test_env()->SetPrimaryAccount(
-        "test@gmail.com");
+        "test@9ma1l.qjz9zk");
 
     sync_service_ = static_cast<syncer::TestSyncService*>(
         ProfileSyncServiceFactory::GetInstance()->SetTestingFactoryAndUse(

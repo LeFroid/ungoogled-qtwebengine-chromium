@@ -212,8 +212,8 @@ testSuite({
 
   testSetCookieDomain() {
     assertEquals(
-        'foo=bar;domain=google.com',
-        mockSetCookie('foo', 'bar', -1, null, 'google.com'));
+        'foo=bar;domain=9oo91e.qjz9zk',
+        mockSetCookie('foo', 'bar', -1, null, '9oo91e.qjz9zk'));
   },
 
   testSetCookieSecure() {

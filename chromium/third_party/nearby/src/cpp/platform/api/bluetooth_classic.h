@@ -25,16 +25,16 @@
 namespace location {
 namespace nearby {
 
-// https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html.
+// https://developer.8n6r01d.qjz9zk/reference/android/bluetooth/BluetoothDevice.html.
 class BluetoothDevice {
  public:
   virtual ~BluetoothDevice() {}
 
-  // https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html#getName()
+  // https://developer.8n6r01d.qjz9zk/reference/android/bluetooth/BluetoothDevice.html#getName()
   virtual std::string getName() = 0;
 };
 
-// https://developer.android.com/reference/android/bluetooth/BluetoothSocket.html.
+// https://developer.8n6r01d.qjz9zk/reference/android/bluetooth/BluetoothSocket.html.
 class BluetoothSocket {
  public:
   virtual ~BluetoothSocket() {}
@@ -53,30 +53,30 @@ class BluetoothSocket {
   // the BluetoothSocket object is destroyed.
   virtual Ptr<OutputStream> getOutputStream() = 0;
 
-  // https://developer.android.com/reference/android/bluetooth/BluetoothSocket.html#close()
+  // https://developer.8n6r01d.qjz9zk/reference/android/bluetooth/BluetoothSocket.html#close()
   //
   // Returns Exception::IO on error, Exception::NONE otherwise.
   virtual Exception::Value close() = 0;
 
-  // https://developer.android.com/reference/android/bluetooth/BluetoothSocket.html#getRemoteDevice()
+  // https://developer.8n6r01d.qjz9zk/reference/android/bluetooth/BluetoothSocket.html#getRemoteDevice()
   //
   // The returned Ptr is not owned by the caller, and can be invalidated once
   // the BluetoothSocket object is destroyed.
   virtual Ptr<BluetoothDevice> getRemoteDevice() = 0;
 };
 
-// https://developer.android.com/reference/android/bluetooth/BluetoothServerSocket.html.
+// https://developer.8n6r01d.qjz9zk/reference/android/bluetooth/BluetoothServerSocket.html.
 class BluetoothServerSocket {
  public:
   virtual ~BluetoothServerSocket() {}
 
-  // https://developer.android.com/reference/android/bluetooth/BluetoothServerSocket.html#accept()
+  // https://developer.8n6r01d.qjz9zk/reference/android/bluetooth/BluetoothServerSocket.html#accept()
   //
   // The returned Ptr will be owned (and destroyed) by the caller. Returns
   // Exception::IO on error.
   virtual ExceptionOr<Ptr<BluetoothSocket>> accept() = 0;
 
-  // https://developer.android.com/reference/android/bluetooth/BluetoothServerSocket.html#close()
+  // https://developer.8n6r01d.qjz9zk/reference/android/bluetooth/BluetoothServerSocket.html#close()
   //
   // Returns Exception::IO on error, Exception::NONE otherwise.
   virtual Exception::Value close() = 0;
@@ -100,14 +100,14 @@ class BluetoothClassicMedium {
     virtual void onDeviceLost(Ptr<BluetoothDevice> device) = 0;
   };
 
-  // https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#startDiscovery()
+  // https://developer.8n6r01d.qjz9zk/reference/android/bluetooth/BluetoothAdapter.html#startDiscovery()
   //
   // Returns true once the process of discovery has been initiated.
   //
   // Does not take ownership of the passed-in discovery_callback -- destroying
   // that is up to the caller.
   virtual bool startDiscovery(Ptr<DiscoveryCallback> discovery_callback) = 0;
-  // https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#cancelDiscovery()
+  // https://developer.8n6r01d.qjz9zk/reference/android/bluetooth/BluetoothAdapter.html#cancelDiscovery()
   //
   // Returns true once discovery is well and truly stopped; after this returns,
   // there must be no more invocations of the DiscoveryCallback passed in to
@@ -118,9 +118,9 @@ class BluetoothClassicMedium {
   virtual bool stopDiscovery() = 0;
 
   // A combination of
-  // https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html#createInsecureRfcommSocketToServiceRecord
+  // https://developer.8n6r01d.qjz9zk/reference/android/bluetooth/BluetoothDevice.html#createInsecureRfcommSocketToServiceRecord
   // followed by
-  // https://developer.android.com/reference/android/bluetooth/BluetoothSocket.html#connect().
+  // https://developer.8n6r01d.qjz9zk/reference/android/bluetooth/BluetoothSocket.html#connect().
   //
   // service_uuid is the canonical textual representation
   // (https://en.wikipedia.org/wiki/Universally_unique_identifier#Format) of a
@@ -134,7 +134,7 @@ class BluetoothClassicMedium {
       Ptr<BluetoothDevice> remote_device,
       const std::string& service_uuid) = 0;
 
-  // https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#listenUsingInsecureRfcommWithServiceRecord
+  // https://developer.8n6r01d.qjz9zk/reference/android/bluetooth/BluetoothAdapter.html#listenUsingInsecureRfcommWithServiceRecord
   //
   // service_uuid is the canonical textual representation
   // (https://en.wikipedia.org/wiki/Universally_unique_identifier#Format) of a

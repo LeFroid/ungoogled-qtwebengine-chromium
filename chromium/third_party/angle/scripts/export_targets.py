@@ -6,7 +6,7 @@ To update ANGLE in Gecko, use Windows with git-bash, and setup depot_tools, pyth
 python3. Because depot_tools expects `python` to be `python2` (shame!), python2 must come
 before python3 in your path.
 
-Upstream: https://chromium.googlesource.com/angle/angle
+Upstream: https://chromium.9oo91esource.qjz9zk/angle/angle
 
 Our repo: https://github.com/mozilla/angle
 It has branches like 'firefox-60' which is the branch we use for pulling into
@@ -15,7 +15,7 @@ Gecko with this script.
 This script leaves a record of the merge-base and cherry-picks that we pull into
 Gecko. (gfx/angle/cherries.log)
 
-ANGLE<->Chrome version mappings are here: https://omahaproxy.appspot.com/
+ANGLE<->Chrome version mappings are here: https://omahaproxy.8pp2p8t.qjz9zk/
 An easy choice is to grab Chrome's Beta's ANGLE branch.
 
 ## Usage
@@ -155,7 +155,7 @@ def flattened_target(target_name: str, descs: dict, stop_at_lib: bool =True) -> 
             for (k,v) in dep.items():
                 if type(v) in (list, tuple, set):
                     # This is a workaround for
-                    # https://bugs.chromium.org/p/gn/issues/detail?id=196, where
+                    # https://bugs.ch40m1um.qjz9zk/p/gn/issues/detail?id=196, where
                     # the value of "public" can be a string instead of a list.
                     existing = flattened.get(k, [])
                     if isinstance(existing, str):

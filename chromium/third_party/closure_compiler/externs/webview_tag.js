@@ -9,7 +9,7 @@
  * @typedef {{
  *   since: (number|undefined)
  * }}
- * @see https://developer.chrome.com/apps/tags/webview#type-ClearDataOptions
+ * @see https://developer.ch40me.qjz9zk/apps/tags/webview#type-ClearDataOptions
  */
 var ClearDataOptions;
 
@@ -22,7 +22,7 @@ var ClearDataOptions;
  *   localStorage: (boolean|undefined),
  *   webSQL: (boolean|undefined)
  * }}
- * @see https://developer.chrome.com/apps/tags/webview#type-ClearDataTypeSet
+ * @see https://developer.ch40me.qjz9zk/apps/tags/webview#type-ClearDataTypeSet
  */
 var ClearDataTypeSet;
 
@@ -31,13 +31,13 @@ var ClearDataTypeSet;
  *   code: (string|undefined),
  *   file: (string|undefined)
  * }}
- * @see https://developer.chrome.com/apps/tags/webview#type-InjectDetails
+ * @see https://developer.ch40me.qjz9zk/apps/tags/webview#type-InjectDetails
  */
 var InjectDetails;
 
 /**
  * @constructor
- * @see https://developer.chrome.com/apps/tags/webview#type-ContentWindow
+ * @see https://developer.ch40me.qjz9zk/apps/tags/webview#type-ContentWindow
  */
 function ContentWindow() {}
 
@@ -49,7 +49,7 @@ ContentWindow.prototype.postMessage = function(message, targetOrigin) {};
 
 /**
  * @constructor
- * @see https://developer.chrome.com/apps/tags/webview#type-DialogController
+ * @see https://developer.ch40me.qjz9zk/apps/tags/webview#type-DialogController
  */
 function DialogController() {}
 
@@ -67,7 +67,7 @@ DialogController.prototype.cancel = function() {};
  *   selectionRect: SelectionRect,
  *   canceled: boolean
  * }}
- * @see https://developer.chrome.com/apps/tags/webview#type-FindCallbackResults
+ * @see https://developer.ch40me.qjz9zk/apps/tags/webview#type-FindCallbackResults
  */
 var FindCallbackResults;
 
@@ -76,13 +76,13 @@ var FindCallbackResults;
  *   backward: (boolean|undefined),
  *   matchCase: (boolean|undefined)
  * }}
- * @see https://developer.chrome.com/apps/tags/webview#type-FindOptions
+ * @see https://developer.ch40me.qjz9zk/apps/tags/webview#type-FindOptions
  */
 var FindOptions;
 
 /**
  * @constructor
- * @see https://developer.chrome.com/apps/tags/webview#type-NewWindow
+ * @see https://developer.ch40me.qjz9zk/apps/tags/webview#type-NewWindow
  */
 function NewWindow() {}
 
@@ -95,7 +95,7 @@ NewWindow.prototype.discard = function() {};
 
 /**
  * @constructor
- * @see https://developer.chrome.com/apps/tags/webview#type-MediaPermissionRequest
+ * @see https://developer.ch40me.qjz9zk/apps/tags/webview#type-MediaPermissionRequest
  */
 function MediaPermissionRequest() {}
 
@@ -108,7 +108,7 @@ MediaPermissionRequest.prototype.deny = function() {};
 
 /**
  * @constructor
- * @see https://developer.chrome.com/apps/tags/webview#type-GeolocationPermissionRequest
+ * @see https://developer.ch40me.qjz9zk/apps/tags/webview#type-GeolocationPermissionRequest
  */
 function GeolocationPermissionRequest() {}
 
@@ -121,7 +121,7 @@ GeolocationPermissionRequest.prototype.deny = function() {};
 
 /**
  * @constructor
- * @see https://developer.chrome.com/apps/tags/webview#type-PointerLockPermissionRequest
+ * @see https://developer.ch40me.qjz9zk/apps/tags/webview#type-PointerLockPermissionRequest
  */
 function PointerLockPermissionRequest() {}
 
@@ -136,7 +136,7 @@ PointerLockPermissionRequest.prototype.url;
 
 /**
  * @constructor
- * @see https://developer.chrome.com/apps/tags/webview#type-DownloadPermissionRequest
+ * @see https://developer.ch40me.qjz9zk/apps/tags/webview#type-DownloadPermissionRequest
  */
 function DownloadPermissionRequest() {}
 
@@ -152,7 +152,7 @@ DownloadPermissionRequest.prototype.deny = function() {};
 
 /**
  * @constructor
- * @see https://developer.chrome.com/apps/tags/webview#type-FileSystemPermissionRequest
+ * @see https://developer.ch40me.qjz9zk/apps/tags/webview#type-FileSystemPermissionRequest
  */
 function FileSystemPermissionRequest() {}
 
@@ -165,7 +165,7 @@ FileSystemPermissionRequest.prototype.deny = function() {};
 
 /**
  * @constructor
- * @see https://developer.chrome.com/apps/tags/webview#type-LoadPluginPermissionRequest
+ * @see https://developer.ch40me.qjz9zk/apps/tags/webview#type-LoadPluginPermissionRequest
  */
 function LoadPluginPermissionRequest() {}
 
@@ -191,7 +191,7 @@ var SelectionRect;
 
 /**
  * @constructor
- * @see https://developer.chrome.com/apps/tags/webview#type-WebRequestEventInterface
+ * @see https://developer.ch40me.qjz9zk/apps/tags/webview#type-WebRequestEventInterface
  */
 function WebRequestEventInterface() {}
 
@@ -218,19 +218,19 @@ function WebView() {}
 
 /**
  * @type {ContentWindow}
- * @see https://developer.chrome.com/apps/tags/webview#property-contentWindow
+ * @see https://developer.ch40me.qjz9zk/apps/tags/webview#property-contentWindow
  */
 WebView.prototype.contentWindow;
 
 /**
  * @type {!WebRequestEventInterface}
- * @see https://developer.chrome.com/apps/tags/webview#property-request
+ * @see https://developer.ch40me.qjz9zk/apps/tags/webview#property-request
  */
 WebView.prototype.request;
 
 /**
  * @constructor
- * @see https://developer.chrome.com/apps/tags/webview#type-ContextMenus
+ * @see https://developer.ch40me.qjz9zk/apps/tags/webview#type-ContextMenus
  */
 function ContextMenus() {}
 ContextMenus.prototype.onShow;
@@ -238,7 +238,7 @@ ContextMenus.prototype.onShow.addListener = function() {};
 
 /**
  * @type {ContextMenus}
- * @see https://developer.chrome.com/apps/tags/webview#property-contextMenus
+ * @see https://developer.ch40me.qjz9zk/apps/tags/webview#property-contextMenus
  */
 WebView.prototype.contextMenus;
 
@@ -247,7 +247,7 @@ WebView.prototype.contextMenus;
  *   code: ?string,
  *   files: ?Array<string>
  * }}
- * @see https://developer.chrome.com/apps/tags/webview#type-InjectionItems
+ * @see https://developer.ch40me.qjz9zk/apps/tags/webview#type-InjectionItems
  */
 var InjectionItems;
 
@@ -265,30 +265,30 @@ var InjectionItems;
  *   include_globs: ?Array<string>,
  *   exclude_globs: ?Array<string>,
  * }}
- * @see https://developer.chrome.com/apps/tags/webview#type-ContentScriptDetails
+ * @see https://developer.ch40me.qjz9zk/apps/tags/webview#type-ContentScriptDetails
  */
 var ContentScriptDetails;
 
 /**
  * @param {Array<ContentScriptDetails>} contentScriptList
- * @see https://developer.chrome.com/apps/tags/webview#method-addContentScripts
+ * @see https://developer.ch40me.qjz9zk/apps/tags/webview#method-addContentScripts
  */
 WebView.prototype.addContentScripts = function(contentScriptList) {};
 
 /**
- * @see https://developer.chrome.com/apps/tags/webview#method-back
+ * @see https://developer.ch40me.qjz9zk/apps/tags/webview#method-back
  */
 WebView.prototype.back = function() {};
 
 /**
  * @return {boolean}
- * @see https://developer.chrome.com/apps/tags/webview#method-canGoBack
+ * @see https://developer.ch40me.qjz9zk/apps/tags/webview#method-canGoBack
  */
 WebView.prototype.canGoBack = function() {};
 
 /**
  * @return {boolean}
- * @see https://developer.chrome.com/apps/tags/webview#method-canGoBack
+ * @see https://developer.ch40me.qjz9zk/apps/tags/webview#method-canGoBack
  */
 WebView.prototype.canGoForward = function() {};
 
@@ -296,14 +296,14 @@ WebView.prototype.canGoForward = function() {};
  * @param {ClearDataOptions} options
  * @param {ClearDataTypeSet} types
  * @param {Function=} opt_callback
- * @see https://developer.chrome.com/apps/tags/webview#method-clearData
+ * @see https://developer.ch40me.qjz9zk/apps/tags/webview#method-clearData
  */
 WebView.prototype.clearData = function(options, types, opt_callback) {};
 
 /**
  * @param {InjectDetails} details
  * @param {Function=} opt_callback
- * @see https://developer.chrome.com/apps/tags/webview#method-executeScript
+ * @see https://developer.ch40me.qjz9zk/apps/tags/webview#method-executeScript
  */
 WebView.prototype.executeScript = function(details, opt_callback) {};
 
@@ -311,92 +311,92 @@ WebView.prototype.executeScript = function(details, opt_callback) {};
  * @param {string} searchText
  * @param {FindOptions=} opt_options
  * @param {Function=} opt_callback
- * @see https://developer.chrome.com/apps/tags/webview#method-find
+ * @see https://developer.ch40me.qjz9zk/apps/tags/webview#method-find
  */
 WebView.prototype.find = function(searchText, opt_options, opt_callback) {};
 
 /**
- * @see https://developer.chrome.com/apps/tags/webview#method-forward
+ * @see https://developer.ch40me.qjz9zk/apps/tags/webview#method-forward
  */
 WebView.prototype.forward = function() {};
 
 /**
  * @return {number}
- * @see https://developer.chrome.com/apps/tags/webview#method-getProcessId
+ * @see https://developer.ch40me.qjz9zk/apps/tags/webview#method-getProcessId
  */
 WebView.prototype.getProcessId = function() {};
 
 /**
  * @return {string}
- * @see https://developer.chrome.com/apps/tags/webview#method-getUserAgent
+ * @see https://developer.ch40me.qjz9zk/apps/tags/webview#method-getUserAgent
  */
 WebView.prototype.getUserAgent = function() {};
 
 /**
  * @param {Function} callback
- * @see https://developer.chrome.com/apps/tags/webview#method-getZoom
+ * @see https://developer.ch40me.qjz9zk/apps/tags/webview#method-getZoom
  */
 WebView.prototype.getZoom = function(callback) {};
 
 /**
  * @param {number} relativeIndex
  * @param {Function=} opt_callback
- * @see https://developer.chrome.com/apps/tags/webview#method-go
+ * @see https://developer.ch40me.qjz9zk/apps/tags/webview#method-go
  */
 WebView.prototype.go = function(relativeIndex, opt_callback) {};
 
 /**
  * @param {InjectDetails} details
  * @param {Function=} opt_callback
- * @see https://developer.chrome.com/apps/tags/webview#method-insertCSS
+ * @see https://developer.ch40me.qjz9zk/apps/tags/webview#method-insertCSS
  */
 WebView.prototype.insertCSS = function(details, opt_callback) {};
 
 /**
  * @return {boolean}
- * @see https://developer.chrome.com/apps/tags/webview#method-isUserAgentOverridden
+ * @see https://developer.ch40me.qjz9zk/apps/tags/webview#method-isUserAgentOverridden
  */
 WebView.prototype.isUserAgentOverridden = function() {};
 
 /**
- * @see https://developer.chrome.com/apps/tags/webview#method-print
+ * @see https://developer.ch40me.qjz9zk/apps/tags/webview#method-print
  */
 WebView.prototype.print = function() {};
 
 /**
- * @see https://developer.chrome.com/apps/tags/webview#method-reload
+ * @see https://developer.ch40me.qjz9zk/apps/tags/webview#method-reload
  */
 WebView.prototype.reload = function() {};
 
 /**
  * @param {Array<string>} contentScriptList
- * @see https://developer.chrome.com/apps/tags/webview#method-removeContentScripts
+ * @see https://developer.ch40me.qjz9zk/apps/tags/webview#method-removeContentScripts
  */
 WebView.prototype.removeContentScripts = function(contentScriptList) {};
 
 /**
  * @param {string} userAgent
- * @see https://developer.chrome.com/apps/tags/webview#method-setUserAgentOverride
+ * @see https://developer.ch40me.qjz9zk/apps/tags/webview#method-setUserAgentOverride
  */
 WebView.prototype.setUserAgentOverride = function(userAgent) {};
 
 /**
  * @param {number} zoomFactor
  * @param {Function=} opt_callback
- * @see https://developer.chrome.com/apps/tags/webview#method-setZoom
+ * @see https://developer.ch40me.qjz9zk/apps/tags/webview#method-setZoom
  */
 WebView.prototype.setZoom = function(zoomFactor, opt_callback) {};
 
 /**
  * @param {string} zoomMode Allowed values: "per-origin", "per-view", "disabled"
- * @see https://developer.chrome.com/apps/tags/webview#type-ZoomMode
+ * @see https://developer.ch40me.qjz9zk/apps/tags/webview#type-ZoomMode
  * @param {Function=} opt_callback
- * @see https://developer.chrome.com/apps/tags/webview#method-setZoomMode
+ * @see https://developer.ch40me.qjz9zk/apps/tags/webview#method-setZoomMode
  */
 WebView.prototype.setZoomMode = function(zoomMode, opt_callback) {};
 
 /**
- * @see https://developer.chrome.com/apps/tags/webview#method-stop
+ * @see https://developer.ch40me.qjz9zk/apps/tags/webview#method-stop
  */
 WebView.prototype.stop = function() {};
 
@@ -409,13 +409,13 @@ WebView.prototype.stopFinding = function(opt_action) {};
  * @param {string} dataUrl
  * @param {string} baseUrl
  * @param {string=} opt_virtualUrl
- * @see https://developer.chrome.com/apps/tags/webview#method-stopFinding
+ * @see https://developer.ch40me.qjz9zk/apps/tags/webview#method-stopFinding
  */
 WebView.prototype.loadDataWithBaseUrl =
     function(dataUrl, baseUrl, opt_virtualUrl) {};
 
 /**
- * @see https://developer.chrome.com/apps/tags/webview#method-terminate
+ * @see https://developer.ch40me.qjz9zk/apps/tags/webview#method-terminate
  */
 WebView.prototype.terminate = function() {};
 
@@ -448,7 +448,7 @@ NewWindowEvent.prototype.name;
  *   code: number,
  *   reason: string
  * }}
- * @see https://developer.chrome.com/apps/tags/webview#event-loadabort
+ * @see https://developer.ch40me.qjz9zk/apps/tags/webview#event-loadabort
  */
 var WebviewLoadAbortEventData;
 
@@ -496,7 +496,7 @@ WebView.prototype.loadstop;
  *   name: string,
  *   windowOpenDisposition: string
  * }}
- * @see https://developer.chrome.com/apps/tags/webview#event-newwindow
+ * @see https://developer.ch40me.qjz9zk/apps/tags/webview#event-newwindow
  */
 var NewWindowProperties;
 

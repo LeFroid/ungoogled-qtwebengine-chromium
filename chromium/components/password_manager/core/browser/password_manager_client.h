@@ -321,13 +321,14 @@ class PasswordManagerClient {
   // Returns the current best guess as to the page's display language.
   virtual std::string GetPageLanguage() const;
 
-#if defined(ON_FOCUS_PING_ENABLED) || defined(PASSWORD_REUSE_DETECTION_ENABLED)
+#if (defined(ON_FOCUS_PING_ENABLED) || defined(PASSWORD_REUSE_DETECTION_ENABLED)) && \
+    BUILDFLAG(FULL_SAFE_BROWSING)
   // Return the PasswordProtectionService associated with this instance.
   virtual safe_browsing::PasswordProtectionService*
   GetPasswordProtectionService() const = 0;
 #endif
 
-#if defined(ON_FOCUS_PING_ENABLED)
+#if defined(ON_FOCUS_PING_ENABLED) && BUILDFLAG(FULL_SAFE_BROWSING)
   // Checks the safe browsing reputation of the webpage when the
   // user focuses on a username/password field. This is used for reporting
   // only, and won't trigger a warning.

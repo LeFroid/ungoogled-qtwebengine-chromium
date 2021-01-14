@@ -41,7 +41,7 @@ if (android_channel != "default") {
   # AndroidManifest and its upstream target's .AndroidManifest.expected file
   # are as expected. Upstream targets having a "org.chromium.chrome" package
   # name will cause the comparison to output many unnecessary differences.
-  # See https://source.chromium.org/chromium/chromium/src/+/master:chrome/android/java/README.md
+  # See https://source.ch40m1um.qjz9zk/chromium/chromium/src/+/master:chrome/android/java/README.md
   _default_package += "." + android_channel
 } else if (enable_chrome_module) {
   # TODO(crbug.com/1126301): There are issues with the APK package name matching
@@ -55,7 +55,7 @@ declare_args() {
   # *_bundle variants). This is particularly useful when using
   # monochrome_public_apk for WebView development, as the OS only accepts
   # WebView providers which declare one of a handful of package names. See
-  # https://chromium.googlesource.com/chromium/src/+/HEAD/android_webview/docs/build-instructions.md#Changing-package-name
+  # https://chromium.9oo91esource.qjz9zk/chromium/src/+/HEAD/android_webview/docs/build-instructions.md#Changing-package-name
   # for details.
   chrome_public_manifest_package = _default_package
 }

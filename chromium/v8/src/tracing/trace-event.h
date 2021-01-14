@@ -149,7 +149,7 @@ enum CategoryGroupEnabledFlags {
 // on processors without cache coherency).
 // TODO(fmeawad): This implementation contradicts that we can have a different
 // configuration for each isolate,
-// https://code.google.com/p/v8/issues/detail?id=4563
+// https://code.9oo91e.qjz9zk/p/v8/issues/detail?id=4563
 #define INTERNAL_TRACE_EVENT_GET_CATEGORY_INFO_CUSTOM_VARIABLES(             \
     category_group, atomic, category_group_enabled)                          \
   category_group_enabled =                                                   \

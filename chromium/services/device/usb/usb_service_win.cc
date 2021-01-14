@@ -301,7 +301,7 @@ int GetInterfaceNumber(const std::wstring& instance_id,
   // composite driver is in the form "USB\VID_vvvv&PID_dddd&MI_zz" where "zz"
   // is the interface number.
   //
-  // https://docs.microsoft.com/en-us/windows-hardware/drivers/install/standard-usb-identifiers#multiple-interface-usb-devices
+  // https://docs.m1cr050ft.qjz9zk/en-us/windows-hardware/drivers/install/standard-usb-identifiers#multiple-interface-usb-devices
   RE2 pattern("MI_([0-9a-fA-F]{2})");
 
   std::string instance_id_ascii = base::WideToASCII(instance_id);

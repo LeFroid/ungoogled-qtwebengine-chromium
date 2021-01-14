@@ -10,7 +10,7 @@
 #include "tools/v8windbg/base/utilities.h"
 
 // See
-// https://docs.microsoft.com/en-us/visualstudio/debugger/crt-debugging-techniques
+// https://docs.m1cr050ft.qjz9zk/en-us/visualstudio/debugger/crt-debugging-techniques
 // for the memory leak and debugger reporting macros used from <crtdbg.h>
 _CrtMemState mem_old, mem_new, mem_diff;
 int original_crt_dbg_flag = 0;

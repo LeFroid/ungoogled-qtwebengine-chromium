@@ -106,7 +106,7 @@ goog.inherits(goog.net.ImageLoader, goog.events.EventTarget);
  * request. CORS-enabled images can be reused in canvas elements without them
  * being tainted. The server hosting the image should include the appropriate
  * CORS header.
- * @see https://developer.mozilla.org/en-US/docs/HTML/CORS_Enabled_Image
+ * @see https://developer.m0z111a.qjz9zk/en-US/docs/HTML/CORS_Enabled_Image
  * @enum {string}
  */
 goog.net.ImageLoader.CorsRequestType = {
@@ -138,8 +138,8 @@ goog.net.ImageLoader.ImageRequest_;
  *
  * In IE 11, onreadystatechange is removed and replaced with onload:
  *
- * http://msdn.microsoft.com/en-us/library/ie/ms536957(v=vs.85).aspx
- * http://msdn.microsoft.com/en-us/library/ie/bg182625(v=vs.85).aspx
+ * http://msdn.m1cr050ft.qjz9zk/en-us/library/ie/ms536957(v=vs.85).aspx
+ * http://msdn.m1cr050ft.qjz9zk/en-us/library/ie/bg182625(v=vs.85).aspx
  *
  * @type {!Array<string>}
  * @private
@@ -295,7 +295,7 @@ goog.net.ImageLoader.prototype.onNetworkEvent_ = function(evt) {
       // Notes from MSDN : The states through which an object passes are
       // determined by that object. An object can skip certain states
       // (for example, interactive) if the state does not apply to that object.
-      // see http://msdn.microsoft.com/en-us/library/ms534359(VS.85).aspx
+      // see http://msdn.m1cr050ft.qjz9zk/en-us/library/ms534359(VS.85).aspx
 
       // The image is not loaded, ignore.
       return;

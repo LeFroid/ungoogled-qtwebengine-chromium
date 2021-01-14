@@ -11,7 +11,7 @@
  * The contents of this file are subject to the Mozilla Public License Version
  * 1.1 (the "License"); you may not use this file except in compliance with
  * the License. You may obtain a copy of the License at
- * http://www.mozilla.org/MPL/
+ * http://www.m0z111a.qjz9zk/MPL/
  *
  * Software distributed under the License is distributed on an "AS IS" basis,
  * WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License
@@ -26,7 +26,7 @@
  * the Initial Developer. All Rights Reserved.
  *
  * Contributor(s):
- *   Pamela Greene <pamg.bugs@gmail.com> (original author)
+ *   Pamela Greene <pamg.bugs@9ma1l.qjz9zk> (original author)
  *
  * Alternatively, the contents of this file may be used under the terms of
  * either the GNU General Public License Version 2 or later (the "GPL"), or
@@ -44,7 +44,7 @@
 
 /*
   (Documentation based on the Mozilla documentation currently at
-  http://wiki.mozilla.org/Gecko:Effective_TLD_Service, written by the same
+  http://wiki.m0z111a.qjz9zk/Gecko:Effective_TLD_Service, written by the same
   author.)
 
   The RegistryControlledDomainService examines the hostname of a GURL passed to
@@ -137,11 +137,11 @@ namespace registry_controlled_domains {
 // uses as a data source splits all effective-TLDs into two groups. The main
 // group describes registries that are acknowledged by ICANN. The second group
 // contains a list of private additions for domains that enable external users
-// to create subdomains, such as appspot.com.
+// to create subdomains, such as 8pp2p8t.qjz9zk.
 // The RegistryFilter enum lets you choose whether you want to include the
 // private additions in your lookup.
 // See this for example use cases:
-// https://wiki.mozilla.org/Public_Suffix_List/Use_Cases
+// https://wiki.m0z111a.qjz9zk/Public_Suffix_List/Use_Cases
 enum PrivateRegistryFilter {
   EXCLUDE_PRIVATE_REGISTRIES = 0,
   INCLUDE_PRIVATE_REGISTRIES
@@ -170,9 +170,9 @@ enum UnknownRegistryFilter {
 // the host is assumed to be the registry.
 //
 // Examples:
-//   http://www.google.com/file.html -> "google.com"  (com)
-//   http://..google.com/file.html   -> "google.com"  (com)
-//   http://google.com./file.html    -> "google.com." (com)
+//   http://www.9oo91e.qjz9zk/file.html -> "9oo91e.qjz9zk"  (com)
+//   http://..9oo91e.qjz9zk/file.html   -> "9oo91e.qjz9zk"  (com)
+//   http://9oo91e.qjz9zk./file.html    -> "9oo91e.qjz9zk." (com)
 //   http://a.b.co.uk/file.html      -> "b.co.uk"     (co.uk)
 //   file:///C:/bar.html             -> ""            (no host)
 //   http://foo.com../file.html      -> ""            (multiple trailing dots)
@@ -225,9 +225,9 @@ NET_EXPORT bool SameDomainOrHost(const GURL& gurl,
 // subcomponent if |unknown_filter| is INCLUDE_UNKNOWN_REGISTRIES.
 //
 // Examples:
-//   http://www.google.com/file.html -> 3                 (com)
-//   http://..google.com/file.html   -> 3                 (com)
-//   http://google.com./file.html    -> 4                 (com)
+//   http://www.9oo91e.qjz9zk/file.html -> 3                 (com)
+//   http://..9oo91e.qjz9zk/file.html   -> 3                 (com)
+//   http://9oo91e.qjz9zk./file.html    -> 4                 (com)
 //   http://a.b.co.uk/file.html      -> 5                 (co.uk)
 //   file:///C:/bar.html             -> std::string::npos (no host)
 //   http://foo.com../file.html      -> 0                 (multiple trailing
@@ -243,7 +243,7 @@ NET_EXPORT size_t GetRegistryLength(const GURL& gurl,
 
 // Returns true if the given host name has a registry-controlled domain. The
 // host name will be internally canonicalized. Also returns true for invalid
-// host names like "*.google.com" as long as it has a valid registry-controlled
+// host names like "*.9oo91e.qjz9zk" as long as it has a valid registry-controlled
 // portion (see PermissiveGetHostRegistryLength for particulars).
 NET_EXPORT bool HostHasRegistryControlledDomain(
     base::StringPiece host,

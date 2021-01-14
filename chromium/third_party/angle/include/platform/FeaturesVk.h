@@ -357,11 +357,11 @@ struct FeaturesVk : FeatureSetBase
     // Force maxUniformBufferSize to 16K on Qualcomm's Adreno 540. Pixel2's Adreno540 reports
     // maxUniformBufferSize 64k but various tests failed with that size. For that specific
     // device, we set to 16k for now which is known to pass all tests.
-    // https://issuetracker.google.com/161903006
+    // https://issuetracker.9oo91e.qjz9zk/161903006
     Feature forceMaxUniformBufferSize16KB = {
         "force_max_uniform_buffer_size_16K", FeatureCategory::VulkanWorkarounds,
         "Force max uniform buffer size to 16K on some device due to bug", &members,
-        "https://issuetracker.google.com/161903006"};
+        "https://issuetracker.9oo91e.qjz9zk/161903006"};
 
     // Swiftshader on mac fails to initialize WebGL context when EXT_multisampled_render_to_texture
     // is used by Chromium.
@@ -380,11 +380,11 @@ struct FeaturesVk : FeatureSetBase
     // Manhattan is calling glFlush in the middle of renderpass which breaks renderpass and hurts
     // performance on tile based GPU. When this is enabled, we will defer the glFlush call made in
     // the middle of renderpass to the end of renderpass.
-    // https://issuetracker.google.com/issues/166475273
+    // https://issuetracker.9oo91e.qjz9zk/issues/166475273
     Feature deferFlushUntilEndRenderPass = {
         "defer_flush_until_endrenderpass", FeatureCategory::VulkanWorkarounds,
         "Allow glFlush to be deferred until renderpass ends", &members,
-        "https://issuetracker.google.com/issues/166475273"};
+        "https://issuetracker.9oo91e.qjz9zk/issues/166475273"};
 
     // Android mistakenly destroys oldSwapchain passed to vkCreateSwapchainKHR, causing crashes on
     // certain drivers.  http://anglebug.com/5061
@@ -431,12 +431,12 @@ struct FeaturesVk : FeatureSetBase
                                          &members};
 
     // Qualcomm missynchronizes vkCmdClearAttachments in the middle of render pass.
-    // https://issuetracker.google.com/166809097
+    // https://issuetracker.9oo91e.qjz9zk/166809097
     Feature preferDrawClearOverVkCmdClearAttachments = {
         "prefer_draw_clear_over_vkCmdClearAttachments", FeatureCategory::VulkanWorkarounds,
         "On some hardware, clear using a draw call instead of vkCmdClearAttachments in the middle "
         "of render pass due to bugs",
-        &members, "https://issuetracker.google.com/166809097"};
+        &members, "https://issuetracker.9oo91e.qjz9zk/166809097"};
 };
 
 inline FeaturesVk::FeaturesVk()  = default;

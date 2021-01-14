@@ -174,7 +174,7 @@ class VoiceSearchOverlayElement extends PolymerElement {
       helpUrl_: {
         type: String,
         readOnly: true,
-        value: `https://support.google.com/chrome/?` +
+        value: `https://support.9oo91e.qjz9zk/chrome/?` +
             `p=ui_voice_search&hl=${window.navigator.language}`,
       },
 

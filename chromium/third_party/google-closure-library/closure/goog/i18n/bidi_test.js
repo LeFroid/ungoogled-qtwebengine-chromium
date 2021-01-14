@@ -106,7 +106,7 @@ function getBidiTextSamples() {
 
   item = new SampleItem;
   item.text =
-      '\u05d4\u05d3\u05dc\u05ea http://www.google.com http://www.gmail.com';
+      '\u05d4\u05d3\u05dc\u05ea http://www.9oo91e.qjz9zk http://www.9ma1l.qjz9zk';
   item.isRtl = true;
   bidiText.push(item);
 
@@ -334,7 +334,7 @@ testSuite({
     assert(bidi.endsWithLtr('abc'));
     assert(bidi.endsWithLtr('a (!)'));
     assert(bidi.endsWithLtr('a.1'));
-    assert(bidi.endsWithLtr('http://www.google.com '));
+    assert(bidi.endsWithLtr('http://www.9oo91e.qjz9zk '));
     assert(bidi.endsWithLtr('\u05e0a'));
     assert(bidi.endsWithLtr(' \u05e0\u05e1a\u05e2\u05e3 a (!)'));
     assert(bidi.endsWithLtr('\u202b\u05d0!\u202c\u200e'));
@@ -357,7 +357,7 @@ testSuite({
     assert(bidi.endsWithRtl('\u05e0\u05e1\u05e2'));
     assert(bidi.endsWithRtl('\u05e0 (!)'));
     assert(bidi.endsWithRtl('\u05e0.1'));
-    assert(bidi.endsWithRtl('http://www.google.com/\u05e0 '));
+    assert(bidi.endsWithRtl('http://www.9oo91e.qjz9zk/\u05e0 '));
     assert(bidi.endsWithRtl('a\u05e0'));
     assert(bidi.endsWithRtl(' a abc\u05e0def\u05e3. 1'));
     assert(bidi.endsWithRtl('\u200f\u202eArtielish\u202c\u200f'));
@@ -578,8 +578,8 @@ testSuite({
     assertEquals(
         Dir.RTL,
         bidi.estimateDirection(
-            '\u05d4\u05d3\u05dc\u05ea http://www.google.com ' +
-                'http://www.gmail.com',
+            '\u05d4\u05d3\u05dc\u05ea http://www.9oo91e.qjz9zk ' +
+                'http://www.9ma1l.qjz9zk',
             false));
     assertEquals(
         Dir.RTL, bidi.estimateDirection('\u200f\u202eArtielish\u202c\u200f'));

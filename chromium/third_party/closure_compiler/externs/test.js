@@ -7,7 +7,7 @@
 // NOTE: The format of types has changed. 'FooType' is now
 //   'chrome.test.FooType'.
 // Please run the closure compiler before committing changes.
-// See https://chromium.googlesource.com/chromium/src/+/master/docs/closure_compilation.md
+// See https://chromium.9oo91esource.qjz9zk/chromium/src/+/master/docs/closure_compilation.md
 
 /** @fileoverview Externs generated from namespace: test */
 
@@ -31,7 +31,7 @@ chrome.test = {};
  *     isScreenLocked: (boolean|undefined)
  *   }|undefined)
  * }): void} callback
- * @see https://developer.chrome.com/extensions/test#method-getConfig
+ * @see https://developer.ch40me.qjz9zk/extensions/test#method-getConfig
  */
 chrome.test.getConfig = function(callback) {};
 
@@ -39,7 +39,7 @@ chrome.test.getConfig = function(callback) {};
  * Notifies the browser process that test code running in the extension failed.
  * This is only used for internal unit testing.
  * @param {string} message
- * @see https://developer.chrome.com/extensions/test#method-notifyFail
+ * @see https://developer.ch40me.qjz9zk/extensions/test#method-notifyFail
  */
 chrome.test.notifyFail = function(message) {};
 
@@ -47,14 +47,14 @@ chrome.test.notifyFail = function(message) {};
  * Notifies the browser process that test code running in the extension passed.
  * This is only used for internal unit testing.
  * @param {string=} message
- * @see https://developer.chrome.com/extensions/test#method-notifyPass
+ * @see https://developer.ch40me.qjz9zk/extensions/test#method-notifyPass
  */
 chrome.test.notifyPass = function(message) {};
 
 /**
  * Logs a message during internal unit testing.
  * @param {string} message
- * @see https://developer.chrome.com/extensions/test#method-log
+ * @see https://developer.ch40me.qjz9zk/extensions/test#method-log
  */
 chrome.test.log = function(message) {};
 
@@ -63,29 +63,29 @@ chrome.test.log = function(message) {};
  * C++ test code can wait for.
  * @param {string} message
  * @param {function(string): void=} callback
- * @see https://developer.chrome.com/extensions/test#method-sendMessage
+ * @see https://developer.ch40me.qjz9zk/extensions/test#method-sendMessage
  */
 chrome.test.sendMessage = function(message, callback) {};
 
 /**
- * @see https://developer.chrome.com/extensions/test#method-callbackAdded
+ * @see https://developer.ch40me.qjz9zk/extensions/test#method-callbackAdded
  */
 chrome.test.callbackAdded = function() {};
 
 /**
- * @see https://developer.chrome.com/extensions/test#method-runNextTest
+ * @see https://developer.ch40me.qjz9zk/extensions/test#method-runNextTest
  */
 chrome.test.runNextTest = function() {};
 
 /**
  * @param {*=} message
- * @see https://developer.chrome.com/extensions/test#method-fail
+ * @see https://developer.ch40me.qjz9zk/extensions/test#method-fail
  */
 chrome.test.fail = function(message) {};
 
 /**
  * @param {*=} message
- * @see https://developer.chrome.com/extensions/test#method-succeed
+ * @see https://developer.ch40me.qjz9zk/extensions/test#method-succeed
  */
 chrome.test.succeed = function(message) {};
 
@@ -93,21 +93,21 @@ chrome.test.succeed = function(message) {};
  * Returns an instance of the module system for the given context.
  * @param {*} context
  * @return {*} The module system
- * @see https://developer.chrome.com/extensions/test#method-getModuleSystem
+ * @see https://developer.ch40me.qjz9zk/extensions/test#method-getModuleSystem
  */
 chrome.test.getModuleSystem = function(context) {};
 
 /**
  * @param {(string|boolean)} test
  * @param {string=} message
- * @see https://developer.chrome.com/extensions/test#method-assertTrue
+ * @see https://developer.ch40me.qjz9zk/extensions/test#method-assertTrue
  */
 chrome.test.assertTrue = function(test, message) {};
 
 /**
  * @param {(string|boolean)} test
  * @param {string=} message
- * @see https://developer.chrome.com/extensions/test#method-assertFalse
+ * @see https://developer.ch40me.qjz9zk/extensions/test#method-assertFalse
  */
 chrome.test.assertFalse = function(test, message) {};
 
@@ -115,14 +115,14 @@ chrome.test.assertFalse = function(test, message) {};
  * @param {(string|boolean)} test
  * @param {boolean} expected
  * @param {string=} message
- * @see https://developer.chrome.com/extensions/test#method-assertBool
+ * @see https://developer.ch40me.qjz9zk/extensions/test#method-assertBool
  */
 chrome.test.assertBool = function(test, expected, message) {};
 
 /**
  * @param {*=} expected
  * @param {*=} actual
- * @see https://developer.chrome.com/extensions/test#method-checkDeepEq
+ * @see https://developer.ch40me.qjz9zk/extensions/test#method-checkDeepEq
  */
 chrome.test.checkDeepEq = function(expected, actual) {};
 
@@ -130,18 +130,18 @@ chrome.test.checkDeepEq = function(expected, actual) {};
  * @param {*=} expected
  * @param {*=} actual
  * @param {string=} message
- * @see https://developer.chrome.com/extensions/test#method-assertEq
+ * @see https://developer.ch40me.qjz9zk/extensions/test#method-assertEq
  */
 chrome.test.assertEq = function(expected, actual, message) {};
 
 /**
- * @see https://developer.chrome.com/extensions/test#method-assertNoLastError
+ * @see https://developer.ch40me.qjz9zk/extensions/test#method-assertNoLastError
  */
 chrome.test.assertNoLastError = function() {};
 
 /**
  * @param {string} expectedError
- * @see https://developer.chrome.com/extensions/test#method-assertLastError
+ * @see https://developer.ch40me.qjz9zk/extensions/test#method-assertLastError
  */
 chrome.test.assertLastError = function(expectedError) {};
 
@@ -150,70 +150,70 @@ chrome.test.assertLastError = function(expectedError) {};
  * @param {?Object|undefined} self
  * @param {!Array<*>} args
  * @param {(string|RegExp)=} message
- * @see https://developer.chrome.com/extensions/test#method-assertThrows
+ * @see https://developer.ch40me.qjz9zk/extensions/test#method-assertThrows
  */
 chrome.test.assertThrows = function(fn, self, args, message) {};
 
 /**
  * @param {function(): void=} func
  * @param {string=} expectedError
- * @see https://developer.chrome.com/extensions/test#method-callback
+ * @see https://developer.ch40me.qjz9zk/extensions/test#method-callback
  */
 chrome.test.callback = function(func, expectedError) {};
 
 /**
  * @param {*} event
  * @param {function(): void} func
- * @see https://developer.chrome.com/extensions/test#method-listenOnce
+ * @see https://developer.ch40me.qjz9zk/extensions/test#method-listenOnce
  */
 chrome.test.listenOnce = function(event, func) {};
 
 /**
  * @param {*} event
  * @param {function(): void} func
- * @see https://developer.chrome.com/extensions/test#method-listenForever
+ * @see https://developer.ch40me.qjz9zk/extensions/test#method-listenForever
  */
 chrome.test.listenForever = function(event, func) {};
 
 /**
  * @param {function(): void=} func
- * @see https://developer.chrome.com/extensions/test#method-callbackPass
+ * @see https://developer.ch40me.qjz9zk/extensions/test#method-callbackPass
  */
 chrome.test.callbackPass = function(func) {};
 
 /**
  * @param {string} expectedError
  * @param {function(): void=} func
- * @see https://developer.chrome.com/extensions/test#method-callbackFail
+ * @see https://developer.ch40me.qjz9zk/extensions/test#method-callbackFail
  */
 chrome.test.callbackFail = function(expectedError, func) {};
 
 /**
  * @param {!Array<function(): void>} tests
- * @see https://developer.chrome.com/extensions/test#method-runTests
+ * @see https://developer.ch40me.qjz9zk/extensions/test#method-runTests
  */
 chrome.test.runTests = function(tests) {};
 
 /**
- * @see https://developer.chrome.com/extensions/test#method-getApiFeatures
+ * @see https://developer.ch40me.qjz9zk/extensions/test#method-getApiFeatures
  */
 chrome.test.getApiFeatures = function() {};
 
 /**
  * @param {!Array<string>=} apiNames
- * @see https://developer.chrome.com/extensions/test#method-getApiDefinitions
+ * @see https://developer.ch40me.qjz9zk/extensions/test#method-getApiDefinitions
  */
 chrome.test.getApiDefinitions = function(apiNames) {};
 
 /**
- * @see https://developer.chrome.com/extensions/test#method-isProcessingUserGesture
+ * @see https://developer.ch40me.qjz9zk/extensions/test#method-isProcessingUserGesture
  */
 chrome.test.isProcessingUserGesture = function() {};
 
 /**
  * Runs the callback in the context of a user gesture.
  * @param {function(): void} callback
- * @see https://developer.chrome.com/extensions/test#method-runWithUserGesture
+ * @see https://developer.ch40me.qjz9zk/extensions/test#method-runWithUserGesture
  */
 chrome.test.runWithUserGesture = function(callback) {};
 
@@ -222,7 +222,7 @@ chrome.test.runWithUserGesture = function(callback) {};
  * process and back.
  * @param {string} message
  * @param {function(string): void} callback
- * @see https://developer.chrome.com/extensions/test#method-waitForRoundTrip
+ * @see https://developer.ch40me.qjz9zk/extensions/test#method-waitForRoundTrip
  */
 chrome.test.waitForRoundTrip = function(message, callback) {};
 
@@ -231,7 +231,7 @@ chrome.test.waitForRoundTrip = function(message, callback) {};
  * function which fails the test. This is reset for every test run through
  * $ref:test.runTests.
  * @param {function(string, *): void} callback
- * @see https://developer.chrome.com/extensions/test#method-setExceptionHandler
+ * @see https://developer.ch40me.qjz9zk/extensions/test#method-setExceptionHandler
  */
 chrome.test.setExceptionHandler = function(callback) {};
 
@@ -240,13 +240,13 @@ chrome.test.setExceptionHandler = function(callback) {};
  * extension's event page.
  * @return {function(): void} The API function which wakes the extension's event
  *     page
- * @see https://developer.chrome.com/extensions/test#method-getWakeEventPage
+ * @see https://developer.ch40me.qjz9zk/extensions/test#method-getWakeEventPage
  */
 chrome.test.getWakeEventPage = function() {};
 
 /**
  * Used to test sending messages to extensions.
  * @type {!ChromeEvent}
- * @see https://developer.chrome.com/extensions/test#event-onMessage
+ * @see https://developer.ch40me.qjz9zk/extensions/test#event-onMessage
  */
 chrome.test.onMessage;

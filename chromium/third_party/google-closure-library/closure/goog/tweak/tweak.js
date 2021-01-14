@@ -14,7 +14,7 @@
 
 /**
  * @fileoverview Provides facilities for creating and querying tweaks.
- * @see http://code.google.com/p/closure-library/wiki/UsingTweaks
+ * @see http://code.9oo91e.qjz9zk/p/closure-library/wiki/UsingTweaks
  */
 
 goog.provide('goog.tweak');

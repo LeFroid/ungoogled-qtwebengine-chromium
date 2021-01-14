@@ -70,7 +70,7 @@ namespace dawn_native { namespace metal {
         // be updated.
         spirv_cross::CompilerMSL::Options options_msl;
 
-        // Disable PointSize builtin for https://bugs.chromium.org/p/dawn/issues/detail?id=146
+        // Disable PointSize builtin for https://bugs.ch40m1um.qjz9zk/p/dawn/issues/detail?id=146
         // Because Metal will reject PointSize builtin if the shader is compiled into a render
         // pipeline that uses a non-point topology.
         // TODO (hao.x.li@intel.com): Remove this once WebGPU requires there is no

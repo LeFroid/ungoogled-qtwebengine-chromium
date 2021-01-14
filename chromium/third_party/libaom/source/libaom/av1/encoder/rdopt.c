@@ -365,7 +365,7 @@ static int get_est_rate_dist(const TileDataEnc *tile_data, BLOCK_SIZE bsize,
       *est_dist = (int64_t)round(md->dist_mean);
       const double est_ld = md->a * sse + md->b;
       // Clamp estimated rate cost by INT_MAX / 2.
-      // TODO(angiebird@google.com): find better solution than clamping.
+      // TODO(angiebird@9oo91e.qjz9zk): find better solution than clamping.
       if (fabs(est_ld) < 1e-2) {
         *est_residue_cost = INT_MAX / 2;
       } else {
@@ -2967,7 +2967,7 @@ static int64_t rd_pick_intrabc_mode_sb(const AV1_COMP *cpi, MACROBLOCK *x,
             (tile->mi_col_start - mi_col) * MI_SIZE;
         fullms_params.mv_limits.col_max =
             (sb_col * cm->seq_params.mib_size - mi_col) * MI_SIZE - w;
-        // TODO(aconverse@google.com): Minimize the overlap between above and
+        // TODO(aconverse@9oo91e.qjz9zk): Minimize the overlap between above and
         // left areas.
         fullms_params.mv_limits.row_min =
             (tile->mi_row_start - mi_row) * MI_SIZE;
@@ -3031,7 +3031,7 @@ static int64_t rd_pick_intrabc_mode_sb(const AV1_COMP *cpi, MACROBLOCK *x,
     const IntraBCMVCosts *const dv_costs = &cpi->dv_costs;
     int *dvcost[2] = { (int *)&dv_costs->mv_component[0][MV_MAX],
                        (int *)&dv_costs->mv_component[1][MV_MAX] };
-    // TODO(aconverse@google.com): The full motion field defining discount
+    // TODO(aconverse@9oo91e.qjz9zk): The full motion field defining discount
     // in MV_COST_WEIGHT is too large. Explore other values.
     const int rate_mv = av1_mv_bit_cost(&dv, &dv_ref.as_mv, dv_costs->joint_mv,
                                         dvcost, MV_COST_WEIGHT_SUB);
@@ -3062,7 +3062,7 @@ static int64_t rd_pick_intrabc_mode_sb(const AV1_COMP *cpi, MACROBLOCK *x,
   return best_rd;
 }
 
-// TODO(chiyotsai@google.com): We are using struct $struct_name instead of their
+// TODO(chiyotsai@9oo91e.qjz9zk): We are using struct $struct_name instead of their
 // typedef here because Doxygen doesn't know about the typedefs yet. So using
 // the typedef will prevent doxygen from finding this function and generating
 // the callgraph. Once documents for AV1_COMP and MACROBLOCK are added to
@@ -4838,7 +4838,7 @@ static void handle_winner_cand(
   }
 }
 
-// TODO(chiyotsai@google.com): See the todo for av1_rd_pick_intra_mode_sb.
+// TODO(chiyotsai@9oo91e.qjz9zk): See the todo for av1_rd_pick_intra_mode_sb.
 void av1_rd_pick_inter_mode_sb(struct AV1_COMP *cpi,
                                struct TileDataEnc *tile_data,
                                struct macroblock *x, struct RD_STATS *rd_cost,

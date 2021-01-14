@@ -13,7 +13,7 @@
 // limitations under the License.
 //
 
-// Author: ericv@google.com (Eric Veach)
+// Author: ericv@9oo91e.qjz9zk (Eric Veach)
 
 // Needed on Windows to get |M_PI| from math.h.
 #ifdef _WIN32

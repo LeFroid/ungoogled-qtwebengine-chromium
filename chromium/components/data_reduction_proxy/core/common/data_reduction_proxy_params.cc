@@ -33,7 +33,7 @@ const char kEnabled[] = "Enabled";
 
 // Default URL for retrieving the Data Reduction Proxy configuration.
 const char kClientConfigURL[] =
-    "https://datasaver.googleapis.com/v1/clientConfigs";
+    "https://datasaver.9oo91eapis.qjz9zk/v1/clientConfigs";
 
 const char kExperimentsOption[] = "exp";
 

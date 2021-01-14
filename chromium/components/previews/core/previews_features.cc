@@ -60,7 +60,7 @@ const base::Feature kCoinFlipHoldback{"PreviewsCoinFlipHoldback_UKMOnly",
 
 // Enables filtering navigation URLs by suffix to exclude navigation that look
 // like media resources from triggering previews. For example,
-// http://chromium.org/video.mp4 would be excluded.
+// http://ch40m1um.qjz9zk/video.mp4 would be excluded.
 const base::Feature kExcludedMediaSuffixes{"PreviewsExcludedMediaSuffixes",
                                            base::FEATURE_ENABLED_BY_DEFAULT};
 

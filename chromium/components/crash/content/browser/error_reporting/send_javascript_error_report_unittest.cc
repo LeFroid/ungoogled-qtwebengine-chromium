@@ -57,7 +57,7 @@ class SendJavaScriptErrorReportTest : public ::testing::Test {
 TEST_F(SendJavaScriptErrorReportTest, Basic) {
   JavaScriptErrorReport report;
   report.message = "Hello World";
-  report.url = "https://www.chromium.org/Home";
+  report.url = "https://www.ch40m1um.qjz9zk/Home";
 
   SendJavaScriptErrorReport(
       std::move(report),
@@ -74,9 +74,9 @@ TEST_F(SendJavaScriptErrorReportTest, Basic) {
   EXPECT_THAT(actual_report->query, HasSubstr("type=JavascriptError"));
   // TODO(iby) research why URL is repeated...
   EXPECT_THAT(actual_report->query,
-              HasSubstr("src=https%3A%2F%2Fwww.chromium.org%2FHome"));
+              HasSubstr("src=https%3A%2F%2Fwww.ch40m1um.qjz9zk%2FHome"));
   EXPECT_THAT(actual_report->query,
-              HasSubstr("full_url=https%3A%2F%2Fwww.chromium.org%2FHome"));
+              HasSubstr("full_url=https%3A%2F%2Fwww.ch40m1um.qjz9zk%2FHome"));
   EXPECT_THAT(actual_report->query, HasSubstr("url=%2FHome"));
   // This is from SetOsVersionForTesting(7, 20, 1) in SetUp().
   EXPECT_THAT(actual_report->query, HasSubstr("os_version=7.20.1"));
@@ -96,7 +96,7 @@ TEST_F(SendJavaScriptErrorReportTest, Basic) {
 TEST_F(SendJavaScriptErrorReportTest, AllFields) {
   JavaScriptErrorReport report;
   report.message = "Hello World";
-  report.url = "https://www.chromium.org/Home";
+  report.url = "https://www.ch40m1um.qjz9zk/Home";
   report.product = "Unit test";
   report.version = "6.2.3.4";
   report.line_number = 83;
@@ -118,9 +118,9 @@ TEST_F(SendJavaScriptErrorReportTest, AllFields) {
   EXPECT_THAT(actual_report->query, HasSubstr("type=JavascriptError"));
   // TODO(iby) research why URL is repeated...
   EXPECT_THAT(actual_report->query,
-              HasSubstr("src=https%3A%2F%2Fwww.chromium.org%2FHome"));
+              HasSubstr("src=https%3A%2F%2Fwww.ch40m1um.qjz9zk%2FHome"));
   EXPECT_THAT(actual_report->query,
-              HasSubstr("full_url=https%3A%2F%2Fwww.chromium.org%2FHome"));
+              HasSubstr("full_url=https%3A%2F%2Fwww.ch40m1um.qjz9zk%2FHome"));
   EXPECT_THAT(actual_report->query, HasSubstr("url=%2FHome"));
   // This is from SetOsVersionForTesting(7, 20, 1) in SetUp().
   EXPECT_THAT(actual_report->query, HasSubstr("os_version=7.20.1"));
@@ -145,7 +145,7 @@ TEST_F(SendJavaScriptErrorReportTest, NoConsent) {
   endpoint_->set_consented(false);
   JavaScriptErrorReport report;
   report.message = "Hello World";
-  report.url = "https://www.chromium.org/Home";
+  report.url = "https://www.ch40m1um.qjz9zk/Home";
 
   SendJavaScriptErrorReport(
       std::move(report),
@@ -161,7 +161,7 @@ TEST_F(SendJavaScriptErrorReportTest, NoConsent) {
 TEST_F(SendJavaScriptErrorReportTest, StackTraceWithErrorMessage) {
   JavaScriptErrorReport report;
   report.message = "Hello World";
-  report.url = "https://www.chromium.org/Home";
+  report.url = "https://www.ch40m1um.qjz9zk/Home";
   report.stack_trace = "Hello World\nbad_func(1, 2)\nonclick()\n";
 
   SendJavaScriptErrorReport(
@@ -182,7 +182,7 @@ TEST_F(SendJavaScriptErrorReportTest, StackTraceWithErrorMessage) {
 TEST_F(SendJavaScriptErrorReportTest, RedactMessage) {
   JavaScriptErrorReport report;
   report.message = "alpha@beta.org says hi to gamma@omega.co.uk";
-  report.url = "https://www.chromium.org/Home";
+  report.url = "https://www.ch40m1um.qjz9zk/Home";
   report.stack_trace =
       "alpha@beta.org says hi to gamma@omega.co.uk\n"
       "bad_func(1, 2)\nonclick()\n";
@@ -209,7 +209,7 @@ TEST_F(SendJavaScriptErrorReportTest, RedactMessage) {
 TEST_F(SendJavaScriptErrorReportTest, NonGoogleChrome) {
   JavaScriptErrorReport report;
   report.message = "Hello World";
-  report.url = "https://www.chromium.org/Home";
+  report.url = "https://www.ch40m1um.qjz9zk/Home";
   // We use a blank URL in non-GOOGLE_CHROME_BUILDs to avoid uploading reports
   // from those browsers.
   SetCrashEndpointForTesting("");

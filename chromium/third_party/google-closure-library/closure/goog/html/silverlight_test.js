@@ -29,12 +29,12 @@ function assertSameHtml(expected, html) {
 testSuite({
   testCreateObjectForSilverlight() {
     const trustedResourceUrl = TrustedResourceUrl.fromConstant(
-        Const.from('https://google.com/trusted&'));
+        Const.from('https://9oo91e.qjz9zk/trusted&'));
     assertSameHtml(
         '<object data="data:application/x-silverlight-2," ' +
             'type="application/x-silverlight-2" typemustmatch="" ' +
             'class="test&lt;">' +
-            '<param name="source" value="https://google.com/trusted&amp;">' +
+            '<param name="source" value="https://9oo91e.qjz9zk/trusted&amp;">' +
             '<param name="onload" value="onload&lt;">' +
             '</object>',
         silverlight.createObject(

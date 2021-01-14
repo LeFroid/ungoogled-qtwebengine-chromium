@@ -204,7 +204,7 @@ void RawInputDataFetcher::EnumerateDevices() {
         // The presence of "IG_" in the device name indicates that this is an
         // XInput Gamepad. Skip enumerating these devices and let the XInput
         // path handle it.
-        // http://msdn.microsoft.com/en-us/library/windows/desktop/ee417014.aspx
+        // http://msdn.m1cr050ft.qjz9zk/en-us/library/windows/desktop/ee417014.aspx
         const std::wstring device_name = new_device->GetDeviceName();
         if (filter_xinput_ && device_name.find(L"IG_") != std::wstring::npos) {
           new_device->Shutdown();

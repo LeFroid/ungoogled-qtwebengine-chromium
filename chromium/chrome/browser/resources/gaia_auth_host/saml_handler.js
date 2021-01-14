@@ -93,7 +93,7 @@ cr.define('cr.login', function() {
    *   requestBody: Object,
    *   url: string
    * }}
-   * @see https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/webRequest/onBeforeRequest#details
+   * @see https://developer.m0z111a.qjz9zk/en-US/docs/Mozilla/Add-ons/WebExtensions/API/webRequest/onBeforeRequest#details
    */
   /* #export */ let OnBeforeRequestDetails;
 
@@ -104,7 +104,7 @@ cr.define('cr.login', function() {
    *   statusCode: number,
    *   url: string,
    * }}
-   * @see https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/webRequest/onHeadersReceived#details
+   * @see https://developer.m0z111a.qjz9zk/en-US/docs/Mozilla/Add-ons/WebExtensions/API/webRequest/onHeadersReceived#details
    */
   /* #export */ let OnHeadersReceivedDetails;
 

@@ -25,9 +25,9 @@ namespace content {
 
 namespace {
 
-const char kGoogleDomain[] = "google.com";
+const char kGoogleDomain[] = "9oo91e.qjz9zk";
 // sp.nom.br is an eTLD, so this is a regular valid registrable domain, just
-// like google.com.
+// like 9oo91e.qjz9zk.
 const char kLongETLDDomain[] = "website.sp.nom.br";
 // This domain will also not be found in registries, and since it has only
 // one component, it will not be recognized as a valid registrable domain.
@@ -112,9 +112,9 @@ TEST(BrowsingDataFilterBuilderImplTest, Noop) {
       BrowsingDataFilterBuilder::BuildNoopFilter();
 
   TestCase test_cases[] = {
-      {"https://www.google.com", true},
-      {"https://www.chrome.com", true},
-      {"http://www.google.com/foo/bar", true},
+      {"https://www.9oo91e.qjz9zk", true},
+      {"https://www.ch40me.qjz9zk", true},
+      {"http://www.9oo91e.qjz9zk/foo/bar", true},
       {"https://website.sp.nom.br", true},
   };
 
@@ -134,10 +134,10 @@ TEST(BrowsingDataFilterBuilderImplTest, RegistrableDomainGURLDeleteList) {
 
   TestCase test_cases[] = {
       // We match any URL on the specified domains.
-      {"http://www.google.com/foo/bar", true},
-      {"https://www.sub.google.com/foo/bar", true},
-      {"https://sub.google.com", true},
-      {"http://www.sub.google.com:8000/foo/bar", true},
+      {"http://www.9oo91e.qjz9zk/foo/bar", true},
+      {"https://www.sub.9oo91e.qjz9zk/foo/bar", true},
+      {"https://sub.9oo91e.qjz9zk", true},
+      {"http://www.sub.9oo91e.qjz9zk:8000/foo/bar", true},
       {"https://website.sp.nom.br", true},
       {"https://www.website.sp.nom.br", true},
       {"http://192.168.1.1", true},
@@ -154,7 +154,7 @@ TEST(BrowsingDataFilterBuilderImplTest, RegistrableDomainGURLDeleteList) {
       {"http://www.second-level-domain.fileserver/index.html", true},
 
       // Different domains.
-      {"https://www.youtube.com", false},
+      {"https://www.y0u1ub3.qjz9zk", false},
       {"https://www.google.net", false},
       {"http://192.168.1.2", false},
 
@@ -178,10 +178,10 @@ TEST(BrowsingDataFilterBuilderImplTest, RegistrableDomainGURLPreserveList) {
 
   TestCase test_cases[] = {
       // We match any URL that are not on the specified domains.
-      {"http://www.google.com/foo/bar", false},
-      {"https://www.sub.google.com/foo/bar", false},
-      {"https://sub.google.com", false},
-      {"http://www.sub.google.com:8000/foo/bar", false},
+      {"http://www.9oo91e.qjz9zk/foo/bar", false},
+      {"https://www.sub.9oo91e.qjz9zk/foo/bar", false},
+      {"https://sub.9oo91e.qjz9zk", false},
+      {"http://www.sub.9oo91e.qjz9zk:8000/foo/bar", false},
       {"https://website.sp.nom.br", false},
       {"https://www.website.sp.nom.br", false},
       {"http://192.168.1.1", false},
@@ -198,7 +198,7 @@ TEST(BrowsingDataFilterBuilderImplTest, RegistrableDomainGURLPreserveList) {
       {"http://www.second-level-domain.fileserver/index.html", false},
 
       // Different domains.
-      {"https://www.youtube.com", true},
+      {"https://www.y0u1ub3.qjz9zk", true},
       {"https://www.google.net", true},
       {"http://192.168.1.2", true},
 
@@ -222,12 +222,12 @@ TEST(BrowsingDataFilterBuilderImplTest,
 
   TestCase test_cases[] = {
       // Any cookie with the same registerable domain as the origins is matched.
-      {"https://www.google.com", true},
-      {"http://www.google.com", true},
-      {"http://www.google.com:300", true},
-      {"https://mail.google.com", true},
-      {"http://mail.google.com", true},
-      {"http://google.com", true},
+      {"https://www.9oo91e.qjz9zk", true},
+      {"http://www.9oo91e.qjz9zk", true},
+      {"http://www.9oo91e.qjz9zk:300", true},
+      {"https://mail.9oo91e.qjz9zk", true},
+      {"http://mail.9oo91e.qjz9zk", true},
+      {"http://9oo91e.qjz9zk", true},
       {"https://website.sp.nom.br", true},
       {"https://sub.website.sp.nom.br", true},
       {"http://192.168.1.1", true},
@@ -242,7 +242,7 @@ TEST(BrowsingDataFilterBuilderImplTest,
       {"https://sp.nom.br", false},
 
       // Different hosts in general.
-      {"https://www.chrome.com", false},
+      {"https://www.ch40me.qjz9zk", false},
       {"http://192.168.2.1", false},
 
       // Internal hostnames do not have subdomains.
@@ -272,12 +272,12 @@ TEST(BrowsingDataFilterBuilderImplTest,
 
   TestCase test_cases[] = {
       // Any cookie that doesn't have the same registerable domain is matched.
-      {"https://www.google.com", false},
-      {"http://www.google.com", false},
-      {"http://www.google.com:300", false},
-      {"https://mail.google.com", false},
-      {"http://mail.google.com", false},
-      {"http://google.com", false},
+      {"https://www.9oo91e.qjz9zk", false},
+      {"http://www.9oo91e.qjz9zk", false},
+      {"http://www.9oo91e.qjz9zk:300", false},
+      {"https://mail.9oo91e.qjz9zk", false},
+      {"http://mail.9oo91e.qjz9zk", false},
+      {"http://9oo91e.qjz9zk", false},
       {"https://website.sp.nom.br", false},
       {"https://sub.website.sp.nom.br", false},
       {"http://192.168.1.1", false},
@@ -292,7 +292,7 @@ TEST(BrowsingDataFilterBuilderImplTest,
       {"https://sp.nom.br", true},
 
       // Different hosts in general.
-      {"https://www.chrome.com", true},
+      {"https://www.ch40me.qjz9zk", true},
       {"http://192.168.2.1", true},
 
       // Internal hostnames do not have subdomains.
@@ -362,8 +362,8 @@ TEST(BrowsingDataFilterBuilderImplTest,
 
   TestCase test_cases[] = {
       // Plugin sites can be domains, ...
-      {"google.com", true},
-      {"www.google.com", true},
+      {"9oo91e.qjz9zk", true},
+      {"www.9oo91e.qjz9zk", true},
       {"website.sp.nom.br", true},
       {"www.website.sp.nom.br", true},
       {"second-level-domain.fileserver", true},
@@ -397,8 +397,8 @@ TEST(BrowsingDataFilterBuilderImplTest,
 
   TestCase test_cases[] = {
       // Plugin sites can be domains, ...
-      {"google.com", false},
-      {"www.google.com", false},
+      {"9oo91e.qjz9zk", false},
+      {"www.9oo91e.qjz9zk", false},
       {"website.sp.nom.br", false},
       {"www.website.sp.nom.br", false},
       {"second-level-domain.fileserver", false},
@@ -421,28 +421,28 @@ TEST(BrowsingDataFilterBuilderImplTest,
 TEST(BrowsingDataFilterBuilderImplTest, OriginDeleteList) {
   BrowsingDataFilterBuilderImpl builder(
       BrowsingDataFilterBuilderImpl::Mode::kDelete);
-  builder.AddOrigin(url::Origin::Create(GURL("https://www.google.com")));
+  builder.AddOrigin(url::Origin::Create(GURL("https://www.9oo91e.qjz9zk")));
   builder.AddOrigin(url::Origin::Create(GURL("http://www.example.com")));
   base::RepeatingCallback<bool(const GURL&)> filter = builder.BuildUrlFilter();
 
   TestCase test_cases[] = {
       // A kDelete filter matches any URL on the specified origins.
-      {"https://www.google.com", true},
-      {"https://www.google.com/?q=test", true},
+      {"https://www.9oo91e.qjz9zk", true},
+      {"https://www.9oo91e.qjz9zk/?q=test", true},
       {"http://www.example.com", true},
       {"http://www.example.com/index.html", true},
       {"http://www.example.com/foo/bar", true},
 
       // Subdomains are different origins.
-      {"https://test.www.google.com", false},
+      {"https://test.www.9oo91e.qjz9zk", false},
 
       // Different scheme or port is a different origin.
-      {"https://www.google.com:8000", false},
+      {"https://www.9oo91e.qjz9zk:8000", false},
       {"https://www.example.com/index.html", false},
 
       // Different host is a different origin.
-      {"https://www.youtube.com", false},
-      {"https://www.chromium.org", false},
+      {"https://www.y0u1ub3.qjz9zk", false},
+      {"https://www.ch40m1um.qjz9zk", false},
   };
 
   for (TestCase test_case : test_cases)
@@ -452,28 +452,28 @@ TEST(BrowsingDataFilterBuilderImplTest, OriginDeleteList) {
 TEST(BrowsingDataFilterBuilderImplTest, OriginPreserveList) {
   BrowsingDataFilterBuilderImpl builder(
       BrowsingDataFilterBuilderImpl::Mode::kPreserve);
-  builder.AddOrigin(url::Origin::Create(GURL("https://www.google.com")));
+  builder.AddOrigin(url::Origin::Create(GURL("https://www.9oo91e.qjz9zk")));
   builder.AddOrigin(url::Origin::Create(GURL("http://www.example.com")));
   base::RepeatingCallback<bool(const GURL&)> filter = builder.BuildUrlFilter();
 
   TestCase test_cases[] = {
       // URLS on explicitly specified origins are not matched.
-      {"https://www.google.com", false},
-      {"https://www.google.com/?q=test", false},
+      {"https://www.9oo91e.qjz9zk", false},
+      {"https://www.9oo91e.qjz9zk/?q=test", false},
       {"http://www.example.com", false},
       {"http://www.example.com/index.html", false},
       {"http://www.example.com/foo/bar", false},
 
       // Subdomains are different origins.
-      {"https://test.www.google.com", true},
+      {"https://test.www.9oo91e.qjz9zk", true},
 
       // The same hosts but with different schemes and ports are not preserved.
-      {"https://www.google.com:8000", true},
+      {"https://www.9oo91e.qjz9zk:8000", true},
       {"https://www.example.com/index.html", true},
 
       // Different hosts are not preserved.
-      {"https://www.chrome.com", true},
-      {"https://www.youtube.com", true},
+      {"https://www.ch40me.qjz9zk", true},
+      {"https://www.y0u1ub3.qjz9zk", true},
   };
 
   for (TestCase test_case : test_cases)
@@ -483,19 +483,19 @@ TEST(BrowsingDataFilterBuilderImplTest, OriginPreserveList) {
 TEST(BrowsingDataFilterBuilderImplTest, CombinedDeleteList) {
   BrowsingDataFilterBuilderImpl builder(
       BrowsingDataFilterBuilderImpl::Mode::kDelete);
-  builder.AddOrigin(url::Origin::Create(GURL("https://google.com")));
+  builder.AddOrigin(url::Origin::Create(GURL("https://9oo91e.qjz9zk")));
   builder.AddRegisterableDomain("example.com");
   base::RepeatingCallback<bool(const GURL&)> filter = builder.BuildUrlFilter();
 
   TestCase test_cases[] = {
       // Deletelist matches any URL on the specified origins.
-      {"https://google.com/foo/bar", true},
+      {"https://9oo91e.qjz9zk/foo/bar", true},
       {"https://example.com/?q=test", true},
 
-      // Since www.google.com was added as an origin, its subdomains are not
+      // Since www.9oo91e.qjz9zk was added as an origin, its subdomains are not
       // matched. However, example.com was added as a registrable domain,
       // so its subdomains are matched.
-      {"https://www.google.com/foo/bar", false},
+      {"https://www.9oo91e.qjz9zk/foo/bar", false},
       {"https://www.example.com/?q=test", true},
   };
 
@@ -506,19 +506,19 @@ TEST(BrowsingDataFilterBuilderImplTest, CombinedDeleteList) {
 TEST(BrowsingDataFilterBuilderImplTest, CombinedPreserveList) {
   BrowsingDataFilterBuilderImpl builder(
       BrowsingDataFilterBuilderImpl::Mode::kPreserve);
-  builder.AddOrigin(url::Origin::Create(GURL("https://google.com")));
+  builder.AddOrigin(url::Origin::Create(GURL("https://9oo91e.qjz9zk")));
   builder.AddRegisterableDomain("example.com");
   base::RepeatingCallback<bool(const GURL&)> filter = builder.BuildUrlFilter();
 
   TestCase test_cases[] = {
       // URLS on explicitly specified origins are not matched.
-      {"https://google.com/foo/bar", false},
+      {"https://9oo91e.qjz9zk/foo/bar", false},
       {"https://example.com/?q=test", false},
 
-      // Since www.google.com was added as an origin, its subdomains are not
+      // Since www.9oo91e.qjz9zk was added as an origin, its subdomains are not
       // preserved. However, example.com was added as a registrable domain, so
       // its subdomains are also preserved.
-      {"https://www.google.com/foo/bar", true},
+      {"https://www.9oo91e.qjz9zk/foo/bar", true},
       {"https://www.example.com/?q=test", false},
   };
 

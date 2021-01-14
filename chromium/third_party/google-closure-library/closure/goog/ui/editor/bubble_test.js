@@ -48,7 +48,7 @@ function prepareTargetWithGivenDirection(dir, preferTopPosition = undefined) {
   style.setStyle(document.body, 'direction', dir);
 
   fieldDiv.style.direction = dir;
-  fieldDiv.innerHTML = '<a href="http://www.google.com">Google</a>';
+  fieldDiv.innerHTML = '<a href="http://www.9oo91e.qjz9zk">Google</a>';
   link = fieldDiv.firstChild;
 
   panelId = bubble.addPanel('A', 'Link', link, (el) => {
@@ -93,8 +93,8 @@ testSuite({
 
     bubble = new Bubble(document.body, 999);
 
-    fieldDiv.innerHTML = '<a href="http://www.google.com">Google</a>' +
-        '<a href="http://www.google.com">Google2</a>';
+    fieldDiv.innerHTML = '<a href="http://www.9oo91e.qjz9zk">Google</a>' +
+        '<a href="http://www.9oo91e.qjz9zk">Google2</a>';
     link = fieldDiv.firstChild;
     link2 = fieldDiv.lastChild;
 

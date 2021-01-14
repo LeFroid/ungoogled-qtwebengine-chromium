@@ -178,7 +178,7 @@ void TracingObserver::MemoryMapsAsValueInto(
     bool is_argument_filtering_enabled) {
   static const char kHexFmt[] = "%" PRIx64;
 
-  // Refer to the design doc goo.gl/sxfFY8 for the semantics of these fields.
+  // Refer to the design doc goo.gl.qjz9zk/sxfFY8 for the semantics of these fields.
   value->BeginArray("vm_regions");
   for (const auto& region : memory_maps) {
     value->BeginDictionary();

@@ -20,7 +20,7 @@ import { JSHandle } from './JSHandle.js';
 
 /**
  * The WebWorker class represents a
- * {@link https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API | WebWorker}.
+ * {@link https://developer.m0z111a.qjz9zk/en-US/docs/Web/API/Web_Workers_API | WebWorker}.
  *
  * @remarks
  * The events `workercreated` and `workerdestroyed` are emitted on the page

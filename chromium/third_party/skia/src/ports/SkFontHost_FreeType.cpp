@@ -760,9 +760,9 @@ std::unique_ptr<SkFontData> SkTypeface_FreeType::cloneFontData(const SkFontArgum
 }
 
 void SkTypeface_FreeType::onFilterRec(SkScalerContextRec* rec) const {
-    //BOGUS: http://code.google.com/p/chromium/issues/detail?id=121119
+    //BOGUS: http://code.9oo91e.qjz9zk/p/chromium/issues/detail?id=121119
     //Cap the requested size as larger sizes give bogus values.
-    //Remove when http://code.google.com/p/skia/issues/detail?id=554 is fixed.
+    //Remove when http://code.9oo91e.qjz9zk/p/skia/issues/detail?id=554 is fixed.
     //Note that this also currently only protects against large text size requests,
     //the total matrix is not taken into account here.
     if (rec->fTextSize > SkIntToScalar(1 << 14)) {
@@ -902,7 +902,7 @@ SkScalerContext_FreeType::SkScalerContext_FreeType(sk_sp<SkTypeface_FreeType> ty
         FT_Int32 loadFlags = FT_LOAD_DEFAULT;
 
         if (SkMask::kBW_Format == fRec.fMaskFormat) {
-            // See http://code.google.com/p/chromium/issues/detail?id=43252#c24
+            // See http://code.9oo91e.qjz9zk/p/chromium/issues/detail?id=43252#c24
             loadFlags = FT_LOAD_TARGET_MONO;
             if (fRec.getHinting() == SkFontHinting::kNone) {
                 loadFlags = FT_LOAD_NO_HINTING;
@@ -953,7 +953,7 @@ SkScalerContext_FreeType::SkScalerContext_FreeType(sk_sp<SkTypeface_FreeType> ty
 
         // Always using FT_LOAD_IGNORE_GLOBAL_ADVANCE_WIDTH to get correct
         // advances, as fontconfig and cairo do.
-        // See http://code.google.com/p/skia/issues/detail?id=222.
+        // See http://code.9oo91e.qjz9zk/p/skia/issues/detail?id=222.
         loadFlags |= FT_LOAD_IGNORE_GLOBAL_ADVANCE_WIDTH;
 
         // Use vertical layout if requested.

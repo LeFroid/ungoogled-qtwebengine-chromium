@@ -44,8 +44,8 @@ class TestChooserContext : public ChooserContextBase {
 class ChooserContextBaseTest : public testing::Test {
  public:
   ChooserContextBaseTest()
-      : url1_("https://google.com"),
-        url2_("https://chromium.org"),
+      : url1_("https://9oo91e.qjz9zk"),
+        url2_("https://ch40m1um.qjz9zk"),
         origin1_(url::Origin::Create(url1_)),
         origin2_(url::Origin::Create(url2_)),
         object1_(base::Value::Type::DICTIONARY),

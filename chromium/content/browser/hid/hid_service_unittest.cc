@@ -32,9 +32,9 @@ namespace content {
 
 namespace {
 
-const char kTestUrl[] = "https://www.google.com";
+const char kTestUrl[] = "https://www.9oo91e.qjz9zk";
 const char kTestGuid[] = "test-guid";
-const char kCrossOriginTestUrl[] = "https://www.chromium.org";
+const char kCrossOriginTestUrl[] = "https://www.ch40m1um.qjz9zk";
 
 class FakeHidConnectionClient : public device::mojom::HidConnectionClient {
  public:

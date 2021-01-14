@@ -9,7 +9,7 @@
 //
 // SSE4 code common to several files.
 //
-// Author: Vincent Rabaud (vrabaud@google.com)
+// Author: Vincent Rabaud (vrabaud@9oo91e.qjz9zk)
 
 #ifndef WEBP_DSP_COMMON_SSE41_H_
 #define WEBP_DSP_COMMON_SSE41_H_

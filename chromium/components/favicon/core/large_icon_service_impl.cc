@@ -39,7 +39,7 @@ using favicon_base::GoogleFaviconServerRequestStatus;
 
 const char kImageFetcherUmaClient[] = "LargeIconService";
 
-const char kGoogleServerV2Url[] = "https://t0.gstatic.com/faviconV2";
+const char kGoogleServerV2Url[] = "https://t0.95tat1c.qjz9zk/faviconV2";
 
 const char kGoogleServerV2RequestFormat[] =
     "%s?client=%s&nfrp=2&%ssize=%d&min_size=%d&max_size=%d&"

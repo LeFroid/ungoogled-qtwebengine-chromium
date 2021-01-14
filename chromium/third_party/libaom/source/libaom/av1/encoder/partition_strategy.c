@@ -48,7 +48,7 @@ static INLINE int convert_bsize_to_idx(BLOCK_SIZE bsize) {
 }
 
 #if !CONFIG_REALTIME_ONLY
-// TODO(chiyotsai@google.com): This is very much a work in progress. We still
+// TODO(chiyotsai@9oo91e.qjz9zk): This is very much a work in progress. We still
 // need to the following:
 //   -- add support for hdres
 //   -- add support for pruning rectangular partitions
@@ -568,7 +568,7 @@ void av1_simple_motion_search_early_term_none(
     AV1_COMP *const cpi, MACROBLOCK *x, SIMPLE_MOTION_DATA_TREE *sms_tree,
     int mi_row, int mi_col, BLOCK_SIZE bsize, const RD_STATS *none_rdc,
     int *early_terminate) {
-  // TODO(chiyotsai@google.com): There are other features we can extract from
+  // TODO(chiyotsai@9oo91e.qjz9zk): There are other features we can extract from
   // PARTITION_NONE. Play with this later.
   float features[FEATURE_SIZE_SMS_TERM_NONE] = { 0.0f };
   simple_motion_search_prune_part_features(cpi, x, sms_tree, mi_row, mi_col,
@@ -1453,7 +1453,7 @@ void av1_prune_ab_partitions(
   // current best partition and source variance.
   if (cpi->sf.part_sf.prune_ext_partition_types_search_level) {
     if (cpi->sf.part_sf.prune_ext_partition_types_search_level == 1) {
-      // TODO(debargha,huisu@google.com): may need to tune the threshold for
+      // TODO(debargha,huisu@9oo91e.qjz9zk): may need to tune the threshold for
       // pb_source_variance.
       horzab_partition_allowed &= (pc_tree->partitioning == PARTITION_HORZ ||
                                    (pc_tree->partitioning == PARTITION_NONE &&
@@ -1525,7 +1525,7 @@ void av1_prune_ab_partitions(
   // sub-blocks from previous basic partition types.
   if (cpi->sf.part_sf.ml_prune_ab_partition && ext_partition_allowed &&
       partition_horz_allowed && partition_vert_allowed) {
-    // TODO(huisu@google.com): x->source_variance may not be the current
+    // TODO(huisu@9oo91e.qjz9zk): x->source_variance may not be the current
     // block's variance. The correct one to use is pb_source_variance. Need to
     // re-train the model to fix it.
     av1_ml_prune_ab_partition(bsize, pc_tree->partitioning,

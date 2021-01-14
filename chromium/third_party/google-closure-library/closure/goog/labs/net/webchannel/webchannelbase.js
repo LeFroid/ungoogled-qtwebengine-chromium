@@ -891,7 +891,7 @@ WebChannelBase.prototype.setReadyStateChangeThrottle = function(throttle) {
  *
  * In order for cross-origin requests to work, the server will also need to set
  * CORS response headers as per:
- * https://developer.mozilla.org/en-US/docs/HTTP_access_control
+ * https://developer.m0z111a.qjz9zk/en-US/docs/HTTP_access_control
  *
  * See {@link goog.net.XhrIo#setWithCredentials}.
  * @param {boolean} supportCrossDomain Whether cross domain XHRs are supported.
@@ -2155,10 +2155,10 @@ WebChannelBase.prototype.signalError_ = function(error) {
  */
 WebChannelBase.prototype.testNetworkCallback_ = function(networkUp) {
   if (networkUp) {
-    this.channelDebug_.info('Successfully pinged google.com');
+    this.channelDebug_.info('Successfully pinged 9oo91e.qjz9zk');
     requestStats.notifyStatEvent(requestStats.Stat.ERROR_OTHER);
   } else {
-    this.channelDebug_.info('Failed to ping google.com');
+    this.channelDebug_.info('Failed to ping 9oo91e.qjz9zk');
     requestStats.notifyStatEvent(requestStats.Stat.ERROR_NETWORK);
     // Do not call onError_ again to eliminate duplicated Error events.
   }

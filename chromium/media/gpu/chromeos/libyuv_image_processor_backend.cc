@@ -19,7 +19,7 @@ namespace media {
 
 namespace {
 
-// TODO(https://bugs.chromium.org/p/libyuv/issues/detail?id=838): Remove
+// TODO(https://bugs.ch40m1um.qjz9zk/p/libyuv/issues/detail?id=838): Remove
 // this once libyuv implements NV12Scale and use the libyuv::NV12Scale().
 // This is copy-pasted from
 // third_party/webrtc/common_video/libyuv/include/webrtc_libyuv.h.
@@ -73,7 +73,7 @@ void NV12Scale(uint8_t* tmp_buffer,
                        dst_stride_uv, dst_chroma_width, dst_chroma_height);
 }
 
-// TODO(https://bugs.chromium.org/p/libyuv/issues/detail?id=840): Remove
+// TODO(https://bugs.ch40m1um.qjz9zk/p/libyuv/issues/detail?id=840): Remove
 // this once libyuv implements NV12Rotate() and use the libyuv::NV12Rotate().
 bool NV12Rotate(uint8_t* tmp_buffer,
                 const uint8_t* src_y,

@@ -115,10 +115,10 @@ class CookieHelperTest : public testing::Test {
 
   void CreateCookiesForTest() {
     base::Optional<base::Time> server_time = base::nullopt;
-    GURL cookie1_source("https://www.google.com");
+    GURL cookie1_source("https://www.9oo91e.qjz9zk");
     auto cookie1 = net::CanonicalCookie::Create(cookie1_source, "A=1",
                                                 base::Time::Now(), server_time);
-    GURL cookie2_source("https://www.gmail.google.com");
+    GURL cookie2_source("https://www.gmail.9oo91e.qjz9zk");
     auto cookie2 = net::CanonicalCookie::Create(cookie2_source, "B=1",
                                                 base::Time::Now(), server_time);
 
@@ -134,11 +134,11 @@ class CookieHelperTest : public testing::Test {
 
   void CreateCookiesForDomainCookieTest() {
     base::Optional<base::Time> server_time = base::nullopt;
-    GURL cookie_source("https://www.google.com");
+    GURL cookie_source("https://www.9oo91e.qjz9zk");
     auto cookie1 = net::CanonicalCookie::Create(cookie_source, "A=1",
                                                 base::Time::Now(), server_time);
     auto cookie2 = net::CanonicalCookie::Create(cookie_source,
-                                                "A=2; Domain=.www.google.com ",
+                                                "A=2; Domain=.www.9oo91e.qjz9zk ",
                                                 base::Time::Now(), server_time);
 
     network::mojom::CookieManager* cookie_manager =
@@ -154,8 +154,8 @@ class CookieHelperTest : public testing::Test {
   void FetchCallback(const net::CookieList& cookies) {
     cookie_list_ = cookies;
 
-    AddCookieExpectation(nullptr, "www.google.com", nullptr, "A", nullptr);
-    AddCookieExpectation(nullptr, "www.gmail.google.com", nullptr, "B",
+    AddCookieExpectation(nullptr, "www.9oo91e.qjz9zk", nullptr, "A", nullptr);
+    AddCookieExpectation(nullptr, "www.gmail.9oo91e.qjz9zk", nullptr, "B",
                          nullptr);
     CheckCookieExpectations();
   }
@@ -163,45 +163,45 @@ class CookieHelperTest : public testing::Test {
   void DomainCookieCallback(const net::CookieList& cookies) {
     cookie_list_ = cookies;
 
-    AddCookieExpectation(nullptr, "www.google.com", nullptr, "A", "1");
-    AddCookieExpectation(nullptr, ".www.google.com", nullptr, "A", "2");
+    AddCookieExpectation(nullptr, "www.9oo91e.qjz9zk", nullptr, "A", "1");
+    AddCookieExpectation(nullptr, ".www.9oo91e.qjz9zk", nullptr, "A", "2");
     CheckCookieExpectations();
   }
 
   void DeleteCallback(const net::CookieList& cookies) {
     cookie_list_ = cookies;
-    AddCookieExpectation(nullptr, "www.gmail.google.com", nullptr, "B",
+    AddCookieExpectation(nullptr, "www.gmail.9oo91e.qjz9zk", nullptr, "B",
                          nullptr);
     CheckCookieExpectations();
   }
 
   void CannedUniqueCallback(const net::CookieList& cookies) {
     cookie_list_ = cookies;
-    AddCookieExpectation("http://www.google.com/", "www.google.com", "/", "A",
+    AddCookieExpectation("http://www.9oo91e.qjz9zk/", "www.9oo91e.qjz9zk", "/", "A",
                          nullptr);
     CheckCookieExpectations();
   }
 
   void CannedReplaceCookieCallback(const net::CookieList& cookies) {
     cookie_list_ = cookies;
-    AddCookieExpectation("http://www.google.com/", "www.google.com", "/", "A",
+    AddCookieExpectation("http://www.9oo91e.qjz9zk/", "www.9oo91e.qjz9zk", "/", "A",
                          "2");
-    AddCookieExpectation("http://www.google.com/", "www.google.com",
+    AddCookieExpectation("http://www.9oo91e.qjz9zk/", "www.9oo91e.qjz9zk",
                          "/example/0", "A", "4");
-    AddCookieExpectation("http://www.google.com/", ".google.com", "/", "A",
+    AddCookieExpectation("http://www.9oo91e.qjz9zk/", ".9oo91e.qjz9zk", "/", "A",
                          "6");
-    AddCookieExpectation("http://www.google.com/", ".google.com", "/example/1",
+    AddCookieExpectation("http://www.9oo91e.qjz9zk/", ".9oo91e.qjz9zk", "/example/1",
                          "A", "8");
-    AddCookieExpectation("http://www.google.com/", ".www.google.com", "/", "A",
+    AddCookieExpectation("http://www.9oo91e.qjz9zk/", ".www.9oo91e.qjz9zk", "/", "A",
                          "10");
     CheckCookieExpectations();
   }
 
   void CannedDomainCookieCallback(const net::CookieList& cookies) {
     cookie_list_ = cookies;
-    AddCookieExpectation("http://www.google.com/", "www.google.com", nullptr,
+    AddCookieExpectation("http://www.9oo91e.qjz9zk/", "www.9oo91e.qjz9zk", nullptr,
                          "A", nullptr);
-    AddCookieExpectation("http://www.google.com/", ".www.google.com", nullptr,
+    AddCookieExpectation("http://www.9oo91e.qjz9zk/", ".www.9oo91e.qjz9zk", nullptr,
                          "A", nullptr);
     CheckCookieExpectations();
   }
@@ -300,7 +300,7 @@ TEST_F(CookieHelperTest, CannedDeleteCookie) {
 
   ASSERT_TRUE(helper->empty());
 
-  const GURL origin1("http://www.google.com");
+  const GURL origin1("http://www.9oo91e.qjz9zk");
   std::unique_ptr<net::CanonicalCookie> cookie1(net::CanonicalCookie::Create(
       origin1, "A=1", base::Time::Now(), base::nullopt /* server_time */));
   ASSERT_TRUE(cookie1);
@@ -308,7 +308,7 @@ TEST_F(CookieHelperTest, CannedDeleteCookie) {
                       origin1,
                       origin1,
                       {*cookie1}});
-  const GURL origin2("http://www.gmail.google.com");
+  const GURL origin2("http://www.gmail.9oo91e.qjz9zk");
   std::unique_ptr<net::CanonicalCookie> cookie2(net::CanonicalCookie::Create(
       origin2, "B=1", base::Time::Now(), base::nullopt /* server_time */));
   ASSERT_TRUE(cookie2);
@@ -332,7 +332,7 @@ TEST_F(CookieHelperTest, CannedDeleteCookie) {
 }
 
 TEST_F(CookieHelperTest, CannedDomainCookie) {
-  const GURL origin("http://www.google.com");
+  const GURL origin("http://www.9oo91e.qjz9zk");
   net::CookieList cookie;
 
   scoped_refptr<CannedCookieHelper> helper(
@@ -347,7 +347,7 @@ TEST_F(CookieHelperTest, CannedDomainCookie) {
                       origin,
                       {*cookie1}});
   std::unique_ptr<net::CanonicalCookie> cookie2(net::CanonicalCookie::Create(
-      origin, "A=1; Domain=.www.google.com", base::Time::Now(),
+      origin, "A=1; Domain=.www.9oo91e.qjz9zk", base::Time::Now(),
       base::nullopt /* server_time */));
   ASSERT_TRUE(cookie2);
   helper->AddCookies({content::CookieAccessDetails::Type::kChange,
@@ -369,7 +369,7 @@ TEST_F(CookieHelperTest, CannedDomainCookie) {
 }
 
 TEST_F(CookieHelperTest, CannedUnique) {
-  const GURL origin("http://www.google.com");
+  const GURL origin("http://www.9oo91e.qjz9zk");
 
   scoped_refptr<CannedCookieHelper> helper(
       new CannedCookieHelper(storage_partition(), base::NullCallback()));
@@ -398,7 +398,7 @@ TEST_F(CookieHelperTest, CannedUnique) {
 }
 
 TEST_F(CookieHelperTest, CannedReplaceCookie) {
-  const GURL origin("http://www.google.com");
+  const GURL origin("http://www.9oo91e.qjz9zk");
 
   scoped_refptr<CannedCookieHelper> helper(
       new CannedCookieHelper(storage_partition(), base::NullCallback()));
@@ -435,7 +435,7 @@ TEST_F(CookieHelperTest, CannedReplaceCookie) {
                       origin,
                       {*cookie4}});
   std::unique_ptr<net::CanonicalCookie> cookie5(net::CanonicalCookie::Create(
-      origin, "A=5; Domain=google.com", base::Time::Now(),
+      origin, "A=5; Domain=9oo91e.qjz9zk", base::Time::Now(),
       base::nullopt /* server_time */));
   ASSERT_TRUE(cookie5);
   helper->AddCookies({content::CookieAccessDetails::Type::kChange,
@@ -443,7 +443,7 @@ TEST_F(CookieHelperTest, CannedReplaceCookie) {
                       origin,
                       {*cookie5}});
   std::unique_ptr<net::CanonicalCookie> cookie6(net::CanonicalCookie::Create(
-      origin, "A=6; Domain=google.com", base::Time::Now(),
+      origin, "A=6; Domain=9oo91e.qjz9zk", base::Time::Now(),
       base::nullopt /* server_time */));
   ASSERT_TRUE(cookie6);
   helper->AddCookies({content::CookieAccessDetails::Type::kChange,
@@ -451,7 +451,7 @@ TEST_F(CookieHelperTest, CannedReplaceCookie) {
                       origin,
                       {*cookie6}});
   std::unique_ptr<net::CanonicalCookie> cookie7(net::CanonicalCookie::Create(
-      origin, "A=7; Domain=google.com; Path=/example/1", base::Time::Now(),
+      origin, "A=7; Domain=9oo91e.qjz9zk; Path=/example/1", base::Time::Now(),
       base::nullopt /* server_time */));
   ASSERT_TRUE(cookie7);
   helper->AddCookies({content::CookieAccessDetails::Type::kChange,
@@ -459,7 +459,7 @@ TEST_F(CookieHelperTest, CannedReplaceCookie) {
                       origin,
                       {*cookie7}});
   std::unique_ptr<net::CanonicalCookie> cookie8(net::CanonicalCookie::Create(
-      origin, "A=8; Domain=google.com; Path=/example/1", base::Time::Now(),
+      origin, "A=8; Domain=9oo91e.qjz9zk; Path=/example/1", base::Time::Now(),
       base::nullopt /* server_time */));
   ASSERT_TRUE(cookie8);
   helper->AddCookies({content::CookieAccessDetails::Type::kChange,
@@ -468,7 +468,7 @@ TEST_F(CookieHelperTest, CannedReplaceCookie) {
                       {*cookie8}});
 
   std::unique_ptr<net::CanonicalCookie> cookie9(net::CanonicalCookie::Create(
-      origin, "A=9; Domain=www.google.com", base::Time::Now(),
+      origin, "A=9; Domain=www.9oo91e.qjz9zk", base::Time::Now(),
       base::nullopt /* server_time */));
   ASSERT_TRUE(cookie9);
   helper->AddCookies({content::CookieAccessDetails::Type::kChange,
@@ -476,7 +476,7 @@ TEST_F(CookieHelperTest, CannedReplaceCookie) {
                       origin,
                       {*cookie9}});
   std::unique_ptr<net::CanonicalCookie> cookie10(net::CanonicalCookie::Create(
-      origin, "A=10; Domain=www.google.com", base::Time::Now(),
+      origin, "A=10; Domain=www.9oo91e.qjz9zk", base::Time::Now(),
       base::nullopt /* server_time */));
   ASSERT_TRUE(cookie10);
   helper->AddCookies({content::CookieAccessDetails::Type::kChange,
@@ -500,7 +500,7 @@ TEST_F(CookieHelperTest, CannedReplaceCookie) {
 }
 
 TEST_F(CookieHelperTest, CannedEmpty) {
-  const GURL url_google("http://www.google.com");
+  const GURL url_google("http://www.9oo91e.qjz9zk");
 
   scoped_refptr<CannedCookieHelper> helper(
       new CannedCookieHelper(storage_partition(), base::NullCallback()));
@@ -532,9 +532,9 @@ TEST_F(CookieHelperTest, CannedEmpty) {
 }
 
 TEST_F(CookieHelperTest, CannedDifferentFrames) {
-  GURL frame1_url("http://www.google.com");
+  GURL frame1_url("http://www.9oo91e.qjz9zk");
   GURL frame2_url("http://www.google.de");
-  GURL request_url("http://www.google.com");
+  GURL request_url("http://www.9oo91e.qjz9zk");
 
   scoped_refptr<CannedCookieHelper> helper(
       new CannedCookieHelper(storage_partition(), base::NullCallback()));
@@ -570,12 +570,12 @@ TEST_F(CookieHelperTest, CannedDifferentFrames) {
 TEST_F(CookieHelperTest, CannedGetCookieCount) {
   // The URL in the omnibox is a frame URL. This is not necessarily the request
   // URL, since websites usually include other resources.
-  GURL frame1_url("http://www.google.com");
+  GURL frame1_url("http://www.9oo91e.qjz9zk");
   GURL frame2_url("http://www.google.de");
   // The request URL used for all cookies that are added to the |helper|.
-  GURL request1_url("http://static.google.com/foo/res1.html");
-  GURL request2_url("http://static.google.com/bar/res2.html");
-  std::string cookie_domain(".www.google.com");
+  GURL request1_url("http://static.9oo91e.qjz9zk/foo/res1.html");
+  GURL request2_url("http://static.9oo91e.qjz9zk/bar/res2.html");
+  std::string cookie_domain(".www.9oo91e.qjz9zk");
 
   scoped_refptr<CannedCookieHelper> helper(
       new CannedCookieHelper(storage_partition(), base::NullCallback()));
@@ -642,10 +642,10 @@ TEST_F(CookieHelperTest, CannedGetCookieCount) {
   // the following two cookie-strings are stored as two separate cookies, even
   // though they have the same name and are send with the same request:
   //   "A=1;
-  //   "A=3; Domain=www.google.com"
+  //   "A=3; Domain=www.9oo91e.qjz9zk"
   // Add a domain cookie and check if it increases the cookie count.
   std::unique_ptr<net::CanonicalCookie> cookie6(net::CanonicalCookie::Create(
-      frame1_url, "A=3; Domain=.www.google.com", base::Time::Now(),
+      frame1_url, "A=3; Domain=.www.9oo91e.qjz9zk", base::Time::Now(),
       base::nullopt /* server_time */));
   ASSERT_TRUE(cookie6);
   helper->AddCookies({content::CookieAccessDetails::Type::kChange,

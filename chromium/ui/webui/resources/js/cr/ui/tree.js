@@ -310,7 +310,7 @@ cr.define('cr.ui', function() {
       const staticHtmlPolicy = trustedTypes.createPolicy(
           'cr-ui-tree-js-static', {createHTML: () => htmlString});
 
-      // TODO(Jun.Kokatsu@microsoft.com): remove an empty string argument
+      // TODO(Jun.Kokatsu@m1cr050ft.qjz9zk): remove an empty string argument
       // once supported.
       // https://github.com/w3c/webappsec-trusted-types/issues/278
       treeItem.innerHTML = staticHtmlPolicy.createHTML('');

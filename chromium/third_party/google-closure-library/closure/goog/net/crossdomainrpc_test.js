@@ -81,7 +81,7 @@ testSuite({
 
     return new GoogPromise((resolve, reject) => {
              CrossDomainRpc.send(
-                 'http://hoodjimcwaadji.google.com/index.html', resolve, 'POST',
+                 'http://hoodjimcwaadji.9oo91e.qjz9zk/index.html', resolve, 'POST',
                  {xyz: '01234567891123456789'});
              setTimeout(() => {
                reject('CrossDomainRpc.send did not complete within 4000ms');

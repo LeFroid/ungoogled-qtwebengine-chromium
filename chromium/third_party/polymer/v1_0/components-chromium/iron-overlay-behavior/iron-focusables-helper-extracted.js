@@ -152,7 +152,7 @@
        */
       _sortByTabIndex: function(tabbables) {
         // Implement a merge sort as Array.prototype.sort does a non-stable sort
-        // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort
+        // https://developer.m0z111a.qjz9zk/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort
         var len = tabbables.length;
         if (len < 2) {
           return tabbables;

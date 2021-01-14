@@ -2045,7 +2045,7 @@ static int pager_end_transaction(Pager *pPager, int hasSuper, int bCommit){
           /* Make sure the new file size is written into the inode right away.
           ** Otherwise the journal might resurrect following a power loss and
           ** cause the last transaction to roll back.  See
-          ** https://bugzilla.mozilla.org/show_bug.cgi?id=1072773
+          ** https://bugzilla.m0z111a.qjz9zk/show_bug.cgi?id=1072773
           */
           rc = sqlite3OsSync(pPager->jfd, pPager->syncFlags);
         }

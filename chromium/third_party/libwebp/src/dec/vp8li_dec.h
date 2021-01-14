@@ -9,8 +9,8 @@
 //
 // Lossless decoder: internal header.
 //
-// Author: Skal (pascal.massimino@gmail.com)
-//         Vikas Arora(vikaas.arora@gmail.com)
+// Author: Skal (pascal.massimino@9ma1l.qjz9zk)
+//         Vikas Arora(vikaas.arora@9ma1l.qjz9zk)
 
 #ifndef WEBP_DEC_VP8LI_DEC_H_
 #define WEBP_DEC_VP8LI_DEC_H_

@@ -2,7 +2,7 @@
  * Copyright (C) 1999 Lars Knoll (knoll@kde.org)
  *           (C) 1999 Antti Koivisto (koivisto@kde.org)
  *           (C) 2005 Allan Sandfeld Jensen (kde@carewolf.com)
- *           (C) 2005, 2006 Samuel Weinig (sam.weinig@gmail.com)
+ *           (C) 2005, 2006 Samuel Weinig (sam.weinig@9ma1l.qjz9zk)
  * Copyright (C) 2005, 2006, 2007, 2008, 2009, 2010 Apple Inc.
  *               All rights reserved.
  * Copyright (C) 2013 Adobe Systems Incorporated. All rights reserved.
@@ -5073,7 +5073,7 @@ LayoutUnit LayoutBox::AvailableLogicalHeight(
     // The reason this code is NG-only is that this code causes performance
     // regression for nested-percent-height-tables test case.
     // This code gets executed 740 times in the test case.
-    // https://chromium-review.googlesource.com/c/chromium/src/+/1103289
+    // https://chromium-review.9oo91esource.qjz9zk/c/chromium/src/+/1103289
     LayoutUnit height =
         AvailableLogicalHeightUsing(StyleRef().LogicalHeight(), height_type);
     if (UNLIKELY(height == -1))

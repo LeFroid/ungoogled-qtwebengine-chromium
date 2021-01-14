@@ -144,7 +144,7 @@ class GFX_EXPORT IconUtil {
   // the icon file structures in any of the Windows header files so we need to
   // define these structure within the class. We must make sure we use 2 byte
   // packing so that the structures are laid out properly within the file.
-  // See: http://msdn.microsoft.com/en-us/library/ms997538.aspx
+  // See: http://msdn.m1cr050ft.qjz9zk/en-us/library/ms997538.aspx
 #pragma pack(push)
 #pragma pack(2)
 

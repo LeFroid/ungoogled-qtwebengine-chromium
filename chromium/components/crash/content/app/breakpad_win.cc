@@ -48,7 +48,7 @@
 #pragma intrinsic(_ReturnAddress)
 
 #ifdef _WIN64
-// See http://msdn.microsoft.com/en-us/library/ddssxxy8.aspx
+// See http://msdn.m1cr050ft.qjz9zk/en-us/library/ddssxxy8.aspx
 typedef struct _UNWIND_INFO {
   unsigned char Version : 3;
   unsigned char Flags : 5;

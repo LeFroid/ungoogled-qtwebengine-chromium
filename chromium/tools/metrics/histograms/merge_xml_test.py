@@ -52,7 +52,7 @@ class MergeXmlTest(unittest.TestCase):
 
 <histogram name="Foo.Bar" units="xxxxxxxxxxxxxxxxxxyyyyyyyyyyyyyyyyyyyyyyzzzz"
     expires_after="M85">
-  <owner>person@chromium.org</owner>
+  <owner>person@ch40m1um.qjz9zk</owner>
   <summary>Foo</summary>
 </histogram>
 
@@ -60,7 +60,7 @@ class MergeXmlTest(unittest.TestCase):
   <obsolete>
     Obsolete message
   </obsolete>
-  <owner>uma@chromium.org</owner>
+  <owner>uma@ch40m1um.qjz9zk</owner>
   <summary>A enum histogram.</summary>
 </histogram>
 
@@ -68,7 +68,7 @@ class MergeXmlTest(unittest.TestCase):
   <obsolete>
     Removed 6/2020.
   </obsolete>
-  <owner>person@chromium.org</owner>
+  <owner>person@ch40m1um.qjz9zk</owner>
   <summary>Summary 2</summary>
 </histogram>
 
@@ -77,7 +77,7 @@ class MergeXmlTest(unittest.TestCase):
   <obsolete>
     Removed 6/2020.
   </obsolete>
-  <owner>person@chromium.org</owner>
+  <owner>person@ch40m1um.qjz9zk</owner>
   <summary>Summary 2</summary>
   <token key="TestToken" variants="TestToken"/>
 </histogram>
@@ -151,7 +151,7 @@ class MergeXmlTest(unittest.TestCase):
 
 <histogram name="Foo.Bar" units="xxxxxxxxxxxxxxxxxxyyyyyyyyyyyyyyyyyyyyyyzzzz"
     expires_after="M85">
-  <owner>person@chromium.org</owner>
+  <owner>person@ch40m1um.qjz9zk</owner>
   <summary>Foo</summary>
 </histogram>
 
@@ -159,7 +159,7 @@ class MergeXmlTest(unittest.TestCase):
   <obsolete>
     Obsolete message
   </obsolete>
-  <owner>uma@chromium.org</owner>
+  <owner>uma@ch40m1um.qjz9zk</owner>
   <summary>A enum histogram.</summary>
 </histogram>
 
@@ -167,7 +167,7 @@ class MergeXmlTest(unittest.TestCase):
   <obsolete>
     Removed 6/2020.
   </obsolete>
-  <owner>person@chromium.org</owner>
+  <owner>person@ch40m1um.qjz9zk</owner>
   <summary>Summary 2</summary>
 </histogram>
 
@@ -176,7 +176,7 @@ class MergeXmlTest(unittest.TestCase):
   <obsolete>
     Removed 6/2020.
   </obsolete>
-  <owner>person@chromium.org</owner>
+  <owner>person@ch40m1um.qjz9zk</owner>
   <summary>Summary 2</summary>
   <token key="TestToken" variants="TestToken"/>
 </histogram>

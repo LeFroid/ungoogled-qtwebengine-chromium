@@ -9,7 +9,7 @@ setup(
     license='apache-2.0',
     description='Python API for Perfetto\'s Trace Processor',
     author='Perfetto',
-    author_email='perfetto-pypi@google.com',
+    author_email='perfetto-pypi@9oo91e.qjz9zk',
     url='https://perfetto.dev/',
     download_url='https://github.com/google/perfetto/archive/v6.0.tar.gz',
     keywords=['trace processor', 'tracing', 'perfetto'],

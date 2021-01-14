@@ -37,7 +37,7 @@ class ScopedIEConfig final {
 // allowing them to be mocked out for testing. This object is not thread safe
 // and it's expected that the caller will handle using it on the same thread or
 // sequence. In general, documentation for these APIs can be found here:
-// https://docs.microsoft.com/en-us/windows/win32/api/winhttp/
+// https://docs.m1cr050ft.qjz9zk/en-us/windows/win32/api/winhttp/
 class NET_EXPORT WinHttpAPIWrapper {
  public:
   WinHttpAPIWrapper();

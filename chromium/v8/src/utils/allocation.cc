@@ -31,7 +31,7 @@ void* AlignedAllocInternal(size_t size, size_t alignment) {
   ptr = _aligned_malloc(size, alignment);
 #elif V8_LIBC_BIONIC
   // posix_memalign is not exposed in some Android versions, so we fall back to
-  // memalign. See http://code.google.com/p/android/issues/detail?id=35391.
+  // memalign. See http://code.9oo91e.qjz9zk/p/android/issues/detail?id=35391.
   ptr = memalign(alignment, size);
 #else
   if (posix_memalign(&ptr, alignment, size)) ptr = nullptr;

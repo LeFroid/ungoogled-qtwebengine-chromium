@@ -76,7 +76,7 @@ constexpr int32_t kFrameProxyRouteId = 22;
 
 const char kParentFrameHTML[] = "Parent frame <iframe name='frame'></iframe>";
 
-const char kAutoplayTestOrigin[] = "https://www.google.com";
+const char kAutoplayTestOrigin[] = "https://www.9oo91e.qjz9zk";
 }  // namespace
 
 // RenderFrameImplTest creates a RenderFrameImpl that is a child of the

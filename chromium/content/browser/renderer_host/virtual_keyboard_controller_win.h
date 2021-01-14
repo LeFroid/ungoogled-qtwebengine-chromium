@@ -31,7 +31,7 @@ class RenderWidgetHostViewAura;
 // is obscured by the on screen keyboard.
 // TryShow/TryHide APIs are Windows system APIs that are used to show/hide VK
 // respectively.
-// https://docs.microsoft.com/en-us/uwp/api/windows.ui.viewmanagement.inputpane?view=winrt-18362
+// https://docs.m1cr050ft.qjz9zk/en-us/uwp/api/windows.ui.viewmanagement.inputpane?view=winrt-18362
 class VirtualKeyboardControllerWin
     : public ui::InputMethodKeyboardControllerObserver {
  public:

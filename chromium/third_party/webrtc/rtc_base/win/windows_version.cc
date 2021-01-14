@@ -267,7 +267,7 @@ OSInfo::OSInfo()
   // Windows 8 OS version value (6.2). Once an application is manifested for a
   // given operating system version, GetVersionEx() will always return the
   // version that the application is manifested for in future releases.
-  // https://docs.microsoft.com/en-us/windows/desktop/SysInfo/targeting-your-application-at-windows-8-1.
+  // https://docs.m1cr050ft.qjz9zk/en-us/windows/desktop/SysInfo/targeting-your-application-at-windows-8-1.
   // https://www.codeproject.com/Articles/678606/Part-Overcoming-Windows-s-deprecation-of-GetVe.
   ::GetVersionExW(reinterpret_cast<OSVERSIONINFOW*>(&version_info));
   version_number_.major = version_info.dwMajorVersion;

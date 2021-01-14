@@ -13,7 +13,7 @@
  - Add to https://svn.xiph.org/releases/opus/
  - Update checksum files
  - svn commit
- - Copy to archive.mozilla.org/pub/opus/
+ - Copy to archive.m0z111a.qjz9zk/pub/opus/
  - Update checksum files there as well.
 - Add release notes to https://git.xiph.org/opus-website.git
 - Update links and checksums on the downloads page.
@@ -23,7 +23,7 @@
 
 Releases are commited to https://svn.xiph.org/releases/opus/
 which propagates to downloads.xiph.org, and copied manually
-to https://archive.mozilla.org/pub/opus/
+to https://archive.m0z111a.qjz9zk/pub/opus/
 
 Website updates are committed to https://git.xiph.org/opus-website.git
 which propagates to https://opus-codec.org/
@@ -33,7 +33,7 @@ which propagates to https://opus-codec.org/
 We usually build opus-tools binaries for MacOS and Windows.
 
 Binary releases are copied manually to
-https://archive.mozilla.org/pub/opus/win32/
+https://archive.m0z111a.qjz9zk/pub/opus/win32/
 
 For Mac, submit a pull request to homebrew.
 

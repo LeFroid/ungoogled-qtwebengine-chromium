@@ -390,7 +390,7 @@
     "message": "Suggested Token"
   },
   "lighthouse-core/audits/autocomplete.js | description": {
-    "message": "`autocomplete` helps users submit forms quicker. To reduce user effort, consider enabling by setting the `autocomplete` attribute to a valid value. [Learn more](https://developers.google.com/web/fundamentals/design-and-ux/input/forms#use_metadata_to_enable_auto-complete)"
+    "message": "`autocomplete` helps users submit forms quicker. To reduce user effort, consider enabling by setting the `autocomplete` attribute to a valid value. [Learn more](https://developers.9oo91e.qjz9zk/web/fundamentals/design-and-ux/input/forms#use_metadata_to_enable_auto-complete)"
   },
   "lighthouse-core/audits/autocomplete.js | failureTitle": {
     "message": "`<input>` elements do not have correct `autocomplete` attributes"
@@ -621,7 +621,7 @@
     "message": "값"
   },
   "lighthouse-core/audits/dobetterweb/dom-size.js | description": {
-    "message": "DOM이 크면 메모리 사용량이 늘어나고 [스타일 계산](https://developers.google.com/web/fundamentals/performance/rendering/reduce-the-scope-and-complexity-of-style-calculations) 시간이 길어질 수 있으며 큰 비용이 드는 [레이아웃 리플로우](https://developers.google.com/speed/articles/reflow)가 발생할 수 있습니다. [자세히 알아보기](https://web.dev/dom-size/)"
+    "message": "DOM이 크면 메모리 사용량이 늘어나고 [스타일 계산](https://developers.9oo91e.qjz9zk/web/fundamentals/performance/rendering/reduce-the-scope-and-complexity-of-style-calculations) 시간이 길어질 수 있으며 큰 비용이 드는 [레이아웃 리플로우](https://developers.9oo91e.qjz9zk/speed/articles/reflow)가 발생할 수 있습니다. [자세히 알아보기](https://web.dev/dom-size/)"
   },
   "lighthouse-core/audits/dobetterweb/dom-size.js | displayValue": {
     "message": "{itemCount,plural, =1{요소 1개}other{요소 #개}}"
@@ -834,7 +834,7 @@
     "message": "해결 요청"
   },
   "lighthouse-core/audits/is-on-https.js | description": {
-    "message": "All sites should be protected with HTTPS, even ones that don't handle sensitive data. This includes avoiding [mixed content](https://developers.google.com/web/fundamentals/security/prevent-mixed-content/what-is-mixed-content), where some resources are loaded over HTTP despite the initial request being served over HTTPS. HTTPS prevents intruders from tampering with or passively listening in on the communications between your app and your users, and is a prerequisite for HTTP/2 and many new web platform APIs. [Learn more](https://web.dev/is-on-https/)."
+    "message": "All sites should be protected with HTTPS, even ones that don't handle sensitive data. This includes avoiding [mixed content](https://developers.9oo91e.qjz9zk/web/fundamentals/security/prevent-mixed-content/what-is-mixed-content), where some resources are loaded over HTTP despite the initial request being served over HTTPS. HTTPS prevents intruders from tampering with or passively listening in on the communications between your app and your users, and is a prerequisite for HTTP/2 and many new web platform APIs. [Learn more](https://web.dev/is-on-https/)."
   },
   "lighthouse-core/audits/is-on-https.js | displayValue": {
     "message": "{itemCount,plural, =1{안전하지 않은 요청 1건 검색됨}other{안전하지 않은 요청 #건 검색됨}}"
@@ -855,7 +855,7 @@
     "message": "라이브러리"
   },
   "lighthouse-core/audits/large-javascript-libraries.js | description": {
-    "message": "큰 자바스크립트 라이브러리는 성능을 저하시킬 수 있습니다. 기능은 동일하되 크기가 작은 라이브러리를 사용하여 번들 크기를 줄이세요. [자세히 알아보기](https://developers.google.com/web/fundamentals/performance/webpack/decrease-frontend-size#optimize_dependencies)"
+    "message": "큰 자바스크립트 라이브러리는 성능을 저하시킬 수 있습니다. 기능은 동일하되 크기가 작은 라이브러리를 사용하여 번들 크기를 줄이세요. [자세히 알아보기](https://developers.9oo91e.qjz9zk/web/fundamentals/performance/webpack/decrease-frontend-size#optimize_dependencies)"
   },
   "lighthouse-core/audits/large-javascript-libraries.js | displayValue": {
     "message": "{libraryCount,plural, =1{큰 라이브러리 1개 발견됨}other{큰 라이브러리 #개 발견됨}}"
@@ -990,7 +990,7 @@
     "message": "서버 백엔드 지연 시간"
   },
   "lighthouse-core/audits/no-unload-listeners.js | description": {
-    "message": "`unload` 이벤트는 안정적으로 실행되지 않으며 이 이벤트를 리스닝하면 '뒤로-앞으로' 캐시와 같은 브라우저 최적화 기능을 사용하지 못할 수 있습니다. `pagehide` 또는 `visibilitychange` 이벤트를 대신 사용해 보세요. [자세히 알아보기](https://developers.google.com/web/updates/2018/07/page-lifecycle-api#the-unload-event)"
+    "message": "`unload` 이벤트는 안정적으로 실행되지 않으며 이 이벤트를 리스닝하면 '뒤로-앞으로' 캐시와 같은 브라우저 최적화 기능을 사용하지 못할 수 있습니다. `pagehide` 또는 `visibilitychange` 이벤트를 대신 사용해 보세요. [자세히 알아보기](https://developers.9oo91e.qjz9zk/web/updates/2018/07/page-lifecycle-api#the-unload-event)"
   },
   "lighthouse-core/audits/no-unload-listeners.js | failureTitle": {
     "message": "`unload` 리스너 등록"
@@ -1041,7 +1041,7 @@
     "message": "Lighthouse가 매니페스트에서 `start_url`을(를) 읽지 못했습니다. 그 결과 `start_url`은(는) 문서 URL인 것으로 간주되었습니다. 오류 메시지는 '{manifestWarning}'입니다."
   },
   "lighthouse-core/audits/performance-budget.js | description": {
-    "message": "네트워크 요청의 양과 크기는 제공된 성능 예산에 따라 설정된 목표치 아래로 유지하세요. [자세히 알아보기](https://developers.google.com/web/tools/lighthouse/audits/budgets)"
+    "message": "네트워크 요청의 양과 크기는 제공된 성능 예산에 따라 설정된 목표치 아래로 유지하세요. [자세히 알아보기](https://developers.9oo91e.qjz9zk/web/tools/lighthouse/audits/budgets)"
   },
   "lighthouse-core/audits/performance-budget.js | requestCountOverBudget": {
     "message": "{count,plural, =1{요청 1건}other{요청 #건}}"
@@ -1113,7 +1113,7 @@
     "message": "크롤링할 수 없는 링크"
   },
   "lighthouse-core/audits/seo/crawlable-anchors.js | description": {
-    "message": "검색엔진에서 링크에 대해 `href` 속성을 사용하여 웹사이트를 크롤링할 수 있습니다. 앵커 요소의 `href` 속성이 적절한 대상에 연결되어 사이트에서 더 많은 페이지가 검색되도록 하세요. [자세히 알아보기](https://support.google.com/webmasters/answer/9112205)"
+    "message": "검색엔진에서 링크에 대해 `href` 속성을 사용하여 웹사이트를 크롤링할 수 있습니다. 앵커 요소의 `href` 속성이 적절한 대상에 연결되어 사이트에서 더 많은 페이지가 검색되도록 하세요. [자세히 알아보기](https://support.9oo91e.qjz9zk/webmasters/answer/9112205)"
   },
   "lighthouse-core/audits/seo/crawlable-anchors.js | failureTitle": {
     "message": "링크를 크롤링할 수 없음"
@@ -1197,7 +1197,7 @@
     "message": "링크에 설명 텍스트가 있음"
   },
   "lighthouse-core/audits/seo/manual/structured-data.js | description": {
-    "message": "[구조화된 데이터용 테스트 도구](https://search.google.com/structured-data/testing-tool/)와 [구조화된 데이터 Linter](http://linter.structured-data.org/)를 실행하여 구조화된 데이터를 검증합니다. [자세히 알아보기](https://web.dev/structured-data/)"
+    "message": "[구조화된 데이터용 테스트 도구](https://search.9oo91e.qjz9zk/structured-data/testing-tool/)와 [구조화된 데이터 Linter](http://linter.structured-data.org/)를 실행하여 구조화된 데이터를 검증합니다. [자세히 알아보기](https://web.dev/structured-data/)"
   },
   "lighthouse-core/audits/seo/manual/structured-data.js | title": {
     "message": "구조화된 데이터가 유효함"
@@ -1320,7 +1320,7 @@
     "message": "타사"
   },
   "lighthouse-core/audits/third-party-summary.js | description": {
-    "message": "타사 코드는 로드 성능에 크게 영향을 미칠 수 있습니다. 페이지에서 먼저 로딩을 끝낸 후 중복되는 타사 공급업체의 수를 제한하고 타사 코드를 로드해 보세요. [자세히 알아보기](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/loading-third-party-javascript/)"
+    "message": "타사 코드는 로드 성능에 크게 영향을 미칠 수 있습니다. 페이지에서 먼저 로딩을 끝낸 후 중복되는 타사 공급업체의 수를 제한하고 타사 코드를 로드해 보세요. [자세히 알아보기](https://developers.9oo91e.qjz9zk/web/fundamentals/performance/optimizing-content-efficiency/loading-third-party-javascript/)"
   },
   "lighthouse-core/audits/third-party-summary.js | displayValue": {
     "message": "타사 코드가 {timeInMs, number, milliseconds} ms 동안 기본 스레드를 차단했습니다."
@@ -1341,7 +1341,7 @@
     "message": "측정항목"
   },
   "lighthouse-core/audits/timing-budget.js | description": {
-    "message": "시기 예산을 설정하면 사이트 실적을 확인하는 데 도움이 됩니다. 성능 기준에 맞는 사이트는 빠르게 로드되고 사용자 입력 이벤트에 빠르게 응답합니다. [자세히 알아보기](https://developers.google.com/web/tools/lighthouse/audits/budgets)"
+    "message": "시기 예산을 설정하면 사이트 실적을 확인하는 데 도움이 됩니다. 성능 기준에 맞는 사이트는 빠르게 로드되고 사용자 입력 이벤트에 빠르게 응답합니다. [자세히 알아보기](https://developers.9oo91e.qjz9zk/web/tools/lighthouse/audits/budgets)"
   },
   "lighthouse-core/audits/timing-budget.js | title": {
     "message": "시기 예산"
@@ -1395,7 +1395,7 @@
     "message": "맵 URL"
   },
   "lighthouse-core/audits/valid-source-maps.js | description": {
-    "message": "소스 맵은 축소된 코드를 원본 소스 코드로 변환합니다. 이는 프로덕션 단계에서 개발자의 디버깅에 도움이 됩니다. 또한 Lighthouse에서 더 많은 정보를 확인할 수 있습니다. 소스 맵을 배포하여 이러한 이점을 활용해 보세요. [자세히 알아보기](https://developers.google.com/web/tools/chrome-devtools/javascript/source-maps)"
+    "message": "소스 맵은 축소된 코드를 원본 소스 코드로 변환합니다. 이는 프로덕션 단계에서 개발자의 디버깅에 도움이 됩니다. 또한 Lighthouse에서 더 많은 정보를 확인할 수 있습니다. 소스 맵을 배포하여 이러한 이점을 활용해 보세요. [자세히 알아보기](https://developers.9oo91e.qjz9zk/web/tools/chrome-devtools/javascript/source-maps)"
   },
   "lighthouse-core/audits/valid-source-maps.js | failureTitle": {
     "message": "큰 자사 자바스크립트에 소스 맵이 누락됨"
@@ -1464,10 +1464,10 @@
     "message": "권장사항"
   },
   "lighthouse-core/config/default-config.js | a11yCategoryDescription": {
-    "message": "이 검사에서는 [웹 앱의 접근성을 개선](https://developers.google.com/web/fundamentals/accessibility)하도록 추천된 사항을 강조합니다. 접근성 문제의 일부만 자동으로 감지되므로 직접 테스트하는 것도 좋습니다."
+    "message": "이 검사에서는 [웹 앱의 접근성을 개선](https://developers.9oo91e.qjz9zk/web/fundamentals/accessibility)하도록 추천된 사항을 강조합니다. 접근성 문제의 일부만 자동으로 감지되므로 직접 테스트하는 것도 좋습니다."
   },
   "lighthouse-core/config/default-config.js | a11yCategoryManualDescription": {
-    "message": "자동화된 테스트 도구가 처리할 수 없는 영역을 다루는 항목입니다. [접근성 검토 실시](https://developers.google.com/web/fundamentals/accessibility/how-to-review)에 관한 가이드에서 자세히 알아보세요."
+    "message": "자동화된 테스트 도구가 처리할 수 없는 영역을 다루는 항목입니다. [접근성 검토 실시](https://developers.9oo91e.qjz9zk/web/fundamentals/accessibility/how-to-review)에 관한 가이드에서 자세히 알아보세요."
   },
   "lighthouse-core/config/default-config.js | a11yCategoryTitle": {
     "message": "접근성"
@@ -1554,10 +1554,10 @@
     "message": "성능"
   },
   "lighthouse-core/config/default-config.js | pwaCategoryDescription": {
-    "message": "이 검사는 프로그레시브 웹 앱의 요소를 검사합니다. [자세히 알아보기](https://developers.google.com/web/progressive-web-apps/checklist)"
+    "message": "이 검사는 프로그레시브 웹 앱의 요소를 검사합니다. [자세히 알아보기](https://developers.9oo91e.qjz9zk/web/progressive-web-apps/checklist)"
   },
   "lighthouse-core/config/default-config.js | pwaCategoryManualDescription": {
-    "message": "이 검사는 기준 [PWA 체크리스트](https://developers.google.com/web/progressive-web-apps/checklist)의 필수 항목이지만 Lighthouse에서 자동으로 확인되지는 않습니다. 점수에 영향을 미치지는 않지만 직접 확인하는 것이 중요합니다."
+    "message": "이 검사는 기준 [PWA 체크리스트](https://developers.9oo91e.qjz9zk/web/progressive-web-apps/checklist)의 필수 항목이지만 Lighthouse에서 자동으로 확인되지는 않습니다. 점수에 영향을 미치지는 않지만 직접 확인하는 것이 중요합니다."
   },
   "lighthouse-core/config/default-config.js | pwaCategoryTitle": {
     "message": "프로그레시브 웹 앱"
@@ -1572,7 +1572,7 @@
     "message": "PWA 최적화됨"
   },
   "lighthouse-core/config/default-config.js | seoCategoryDescription": {
-    "message": "이와 같은 검사를 통해 페이지가 검색엔진 결과 순위에 최적화되도록 할 수 있습니다. Lighthouse에서 점검하지 않는 추가적인 요소가 검색 순위에 영향을 줄 수도 있습니다. [자세히 알아보기](https://support.google.com/webmasters/answer/35769)"
+    "message": "이와 같은 검사를 통해 페이지가 검색엔진 결과 순위에 최적화되도록 할 수 있습니다. Lighthouse에서 점검하지 않는 추가적인 요소가 검색 순위에 영향을 줄 수도 있습니다. [자세히 알아보기](https://support.9oo91e.qjz9zk/webmasters/answer/35769)"
   },
   "lighthouse-core/config/default-config.js | seoCategoryManualDescription": {
     "message": "사이트에서 이러한 추가 검증 도구를 실행하여 추가적인 검색엔진 최적화 권장사항을 확인합니다."
@@ -1593,7 +1593,7 @@
     "message": "크롤링 및 색인 생성"
   },
   "lighthouse-core/config/default-config.js | seoMobileGroupDescription": {
-    "message": "사용자가 콘텐츠를 읽기 위해 페이지를 확대하거나 축소할 필요가 없도록 모바일 친화적인 페이지를 지원하세요. [자세히 알아보기](https://developers.google.com/search/mobile-sites/)"
+    "message": "사용자가 콘텐츠를 읽기 위해 페이지를 확대하거나 축소할 필요가 없도록 모바일 친화적인 페이지를 지원하세요. [자세히 알아보기](https://developers.9oo91e.qjz9zk/search/mobile-sites/)"
   },
   "lighthouse-core/config/default-config.js | seoMobileGroupTitle": {
     "message": "모바일 친화적"
@@ -1836,7 +1836,7 @@
     "message": "실험실 데이터"
   },
   "lighthouse-core/report/html/renderer/util.js | lsPerformanceCategoryDescription": {
-    "message": "에뮬레이션된 모바일 네트워크에서 분석한 현재 페이지의 [Lighthouse](https://developers.google.com/web/tools/lighthouse/) 결과입니다. 값은 추정치이며 달라질 수 있습니다."
+    "message": "에뮬레이션된 모바일 네트워크에서 분석한 현재 페이지의 [Lighthouse](https://developers.9oo91e.qjz9zk/web/tools/lighthouse/) 결과입니다. 값은 추정치이며 달라질 수 있습니다."
   },
   "lighthouse-core/report/html/renderer/util.js | manualAuditsGroupTitle": {
     "message": "직접 확인해야 하는 추가 항목"
@@ -1983,10 +1983,10 @@
     "message": "'Administration(관리) » Configuration(구성) » Development(개발)' 페이지에서 'Aggregate JavaScript files(자바스크립트 파일 집계)'를 사용 설정했는지 확인합니다. [추가 모듈](https://www.drupal.org/project/project_module?f%5B0%5D=&f%5B1%5D=&f%5B2%5D=im_vid_3%3A123&f%5B3%5D=&f%5B4%5D=sm_field_project_type%3Afull&f%5B5%5D=&f%5B6%5D=&text=javascript+aggregation&solrsort=iss_project_release_usage+desc&op=Search)을 통해 고급 집계 옵션을 구성하면 자바스크립트 애셋을 연결, 축소, 압축함으로써 사이트 속도를 높일 수 있습니다."
   },
   "node_modules/lighthouse-stack-packs/packs/drupal.js | unused-css-rules": {
-    "message": "미사용 CSS 규칙을 삭제하는 방안을 고려하고, 관련 페이지 또는 페이지의 구성요소에 필요한 Drupal 라이브러리만 연결합니다. 자세한 정보는 [Drupal 문서 링크](https://www.drupal.org/docs/8/creating-custom-modules/adding-stylesheets-css-and-javascript-js-to-a-drupal-8-module#library)를 참고하세요. 연결된 라이브러리 중 불필요한 CSS를 추가하는 라이브러리를 확인하려면 Chrome DevTools의 [코드 범위](https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverage)를 실행해 보세요. Drupal 사이트에서 CSS 집계가 사용 중지되어 있으면 스타일시트의 URL에서 원인이 되는 테마 또는 모듈을 확인할 수 있습니다. 목록에서 코드 범위에 빨간색이 많이 보이는 스타일시트가 여러 개 있는 테마 또는 모듈을 찾아보세요. 테마 또는 모듈은 페이지에서 실제 사용되는 스타일시트만 대기열에 포함해야 합니다."
+    "message": "미사용 CSS 규칙을 삭제하는 방안을 고려하고, 관련 페이지 또는 페이지의 구성요소에 필요한 Drupal 라이브러리만 연결합니다. 자세한 정보는 [Drupal 문서 링크](https://www.drupal.org/docs/8/creating-custom-modules/adding-stylesheets-css-and-javascript-js-to-a-drupal-8-module#library)를 참고하세요. 연결된 라이브러리 중 불필요한 CSS를 추가하는 라이브러리를 확인하려면 Chrome DevTools의 [코드 범위](https://developers.9oo91e.qjz9zk/web/updates/2017/04/devtools-release-notes#coverage)를 실행해 보세요. Drupal 사이트에서 CSS 집계가 사용 중지되어 있으면 스타일시트의 URL에서 원인이 되는 테마 또는 모듈을 확인할 수 있습니다. 목록에서 코드 범위에 빨간색이 많이 보이는 스타일시트가 여러 개 있는 테마 또는 모듈을 찾아보세요. 테마 또는 모듈은 페이지에서 실제 사용되는 스타일시트만 대기열에 포함해야 합니다."
   },
   "node_modules/lighthouse-stack-packs/packs/drupal.js | unused-javascript": {
-    "message": "Consider removing unused JavaScript assets and only attach the needed Drupal libraries to the relevant page or component in a page. See the [Drupal documentation link](https://www.drupal.org/docs/8/creating-custom-modules/adding-stylesheets-css-and-javascript-js-to-a-drupal-8-module#library) for details. To identify attached libraries that are adding extraneous JavaScript, try running [code coverage](https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverage) in Chrome DevTools. You can identify the theme/module responsible from the URL of the script when JavaScript aggregation is disabled in your Drupal site. Look out for themes/modules that have many scripts in the list which have a lot of red in code coverage. A theme/module should only enqueue a script if it is actually used on the page."
+    "message": "Consider removing unused JavaScript assets and only attach the needed Drupal libraries to the relevant page or component in a page. See the [Drupal documentation link](https://www.drupal.org/docs/8/creating-custom-modules/adding-stylesheets-css-and-javascript-js-to-a-drupal-8-module#library) for details. To identify attached libraries that are adding extraneous JavaScript, try running [code coverage](https://developers.9oo91e.qjz9zk/web/updates/2017/04/devtools-release-notes#coverage) in Chrome DevTools. You can identify the theme/module responsible from the URL of the script when JavaScript aggregation is disabled in your Drupal site. Look out for themes/modules that have many scripts in the list which have a lot of red in code coverage. A theme/module should only enqueue a script if it is actually used on the page."
   },
   "node_modules/lighthouse-stack-packs/packs/drupal.js | uses-long-cache-ttl": {
     "message": "'Administration(관리) » Configuration(구성) » Development(개발)' 페이지에서 'Browser and proxy cache maximum age(브라우저 및 프록시 캐시 최대 기간)'를 설정합니다. [Drupal 캐시 및 성능 최적화](https://www.drupal.org/docs/7/managing-site-performance-and-scalability/caching-to-improve-performance/caching-overview#s-drupal-performance-resources)에 관해 읽어 보세요."
@@ -2025,10 +2025,10 @@
     "message": "다양한 [Joomla 확장 프로그램](https://extensions.joomla.org/instant-search/?jed_live%5Bquery%5D=performance)을 사용해 스크립트를 연결, 축소, 압축함으로써 사이트 속도를 높일 수 있습니다. 이 기능을 제공하는 템플릿도 있습니다."
   },
   "node_modules/lighthouse-stack-packs/packs/joomla.js | unused-css-rules": {
-    "message": "페이지에서 사용되지 않는 CSS를 로드하는 [Joomla 확장 프로그램](https://extensions.joomla.org/) 개수를 줄이거나 전환하는 것이 좋습니다. 불필요한 CSS를 추가하는 확장 프로그램을 확인하려면 Chrome DevTools의 [코드 범위](https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverage)를 실행해 보세요. 스타일시트의 URL에서 원인이 되는 테마 또는 플러그인을 확인할 수 있습니다. 목록에서 코드 범위에 빨간색이 많이 보이는 스타일시트가 여러 개 있는 플러그인을 찾아보세요. 플러그인은 페이지에서 실제 사용되는 스타일시트만 대기열에 포함해야 합니다."
+    "message": "페이지에서 사용되지 않는 CSS를 로드하는 [Joomla 확장 프로그램](https://extensions.joomla.org/) 개수를 줄이거나 전환하는 것이 좋습니다. 불필요한 CSS를 추가하는 확장 프로그램을 확인하려면 Chrome DevTools의 [코드 범위](https://developers.9oo91e.qjz9zk/web/updates/2017/04/devtools-release-notes#coverage)를 실행해 보세요. 스타일시트의 URL에서 원인이 되는 테마 또는 플러그인을 확인할 수 있습니다. 목록에서 코드 범위에 빨간색이 많이 보이는 스타일시트가 여러 개 있는 플러그인을 찾아보세요. 플러그인은 페이지에서 실제 사용되는 스타일시트만 대기열에 포함해야 합니다."
   },
   "node_modules/lighthouse-stack-packs/packs/joomla.js | unused-javascript": {
-    "message": "페이지에서 사용되지 않는 자바스크립트를 로드하는 [Joomla 확장 프로그램](https://extensions.joomla.org/) 개수를 줄이거나 전환하는 것이 좋습니다. 불필요한 JS를 추가하는 플러그인을 확인하려면 Chrome DevTools의 [코드 범위](https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverage)를 실행해 보세요. 스크립트의 URL에서 원인이 되는 확장 프로그램을 확인할 수 있습니다. 목록에서 코드 범위에 빨간색이 많이 보이는 스크립트가 여러 개 있는 확장 프로그램을 찾아보세요. 확장 프로그램은 페이지에서 실제 사용되는 스크립트만 대기열에 포함해야 합니다."
+    "message": "페이지에서 사용되지 않는 자바스크립트를 로드하는 [Joomla 확장 프로그램](https://extensions.joomla.org/) 개수를 줄이거나 전환하는 것이 좋습니다. 불필요한 JS를 추가하는 플러그인을 확인하려면 Chrome DevTools의 [코드 범위](https://developers.9oo91e.qjz9zk/web/updates/2017/04/devtools-release-notes#coverage)를 실행해 보세요. 스크립트의 URL에서 원인이 되는 확장 프로그램을 확인할 수 있습니다. 목록에서 코드 범위에 빨간색이 많이 보이는 스크립트가 여러 개 있는 확장 프로그램을 찾아보세요. 확장 프로그램은 페이지에서 실제 사용되는 스크립트만 대기열에 포함해야 합니다."
   },
   "node_modules/lighthouse-stack-packs/packs/joomla.js | uses-long-cache-ttl": {
     "message": "[Joomla 브라우저 캐싱](https://docs.joomla.org/Cache)에 관해 자세히 알아보세요."
@@ -2124,10 +2124,10 @@
     "message": "다양한 [WordPress 플러그인](https://wordpress.org/plugins/search/minify+javascript/)을 사용해 스크립트를 연결, 축소, 압축함으로써 사이트 속도를 높일 수 있습니다. 또한 가능한 경우 빌드 프로세스를 사용하여 축소 작업을 미리 실행할 수도 있습니다."
   },
   "node_modules/lighthouse-stack-packs/packs/wordpress.js | unused-css-rules": {
-    "message": "페이지에서 사용되지 않는 CSS를 로드하는 [WordPress 플러그인](https://wordpress.org/plugins/) 개수를 줄이거나 전환하는 것이 좋습니다. 과도한 CSS를 부가하는 플러그인이 무엇인지 확인하려면 Chrome DevTools의 [코드 범위](https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverage)를 실행해 보세요. 스타일시트의 URL에서 관련된 테마 또는 플러그인을 확인할 수 있습니다. 목록에서 코드 범위에 빨간색이 길게 표시된 스타일시트가 있는 플러그인을 찾아보세요. 실제로 페이지에서 사용되는 플러그인은 대기열에 하나의 스타일시트만 포함해야 합니다."
+    "message": "페이지에서 사용되지 않는 CSS를 로드하는 [WordPress 플러그인](https://wordpress.org/plugins/) 개수를 줄이거나 전환하는 것이 좋습니다. 과도한 CSS를 부가하는 플러그인이 무엇인지 확인하려면 Chrome DevTools의 [코드 범위](https://developers.9oo91e.qjz9zk/web/updates/2017/04/devtools-release-notes#coverage)를 실행해 보세요. 스타일시트의 URL에서 관련된 테마 또는 플러그인을 확인할 수 있습니다. 목록에서 코드 범위에 빨간색이 길게 표시된 스타일시트가 있는 플러그인을 찾아보세요. 실제로 페이지에서 사용되는 플러그인은 대기열에 하나의 스타일시트만 포함해야 합니다."
   },
   "node_modules/lighthouse-stack-packs/packs/wordpress.js | unused-javascript": {
-    "message": "페이지에서 사용되지 않는 JavaScript를 로드하는 [WordPress 플러그인](https://wordpress.org/plugins/) 개수를 줄이거나 전환하는 것이 좋습니다. 과도한 JS를 부가하는 플러그인이 무엇인지 확인하려면 Chrome DevTools의 [코드 범위](https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverage)를 실행해 보세요. 스크립트의 URL에서 관련 테마 또는 플러그인을 확인할 수 있습니다. 목록에서 코드 범위에 빨간색이 길게 표시된 스크립트가 있는 플러그인을 찾아보세요. 실제로 페이지에서 사용되는 플러그인은 대기열에 하나의 스크립트만 포함해야 합니다."
+    "message": "페이지에서 사용되지 않는 JavaScript를 로드하는 [WordPress 플러그인](https://wordpress.org/plugins/) 개수를 줄이거나 전환하는 것이 좋습니다. 과도한 JS를 부가하는 플러그인이 무엇인지 확인하려면 Chrome DevTools의 [코드 범위](https://developers.9oo91e.qjz9zk/web/updates/2017/04/devtools-release-notes#coverage)를 실행해 보세요. 스크립트의 URL에서 관련 테마 또는 플러그인을 확인할 수 있습니다. 목록에서 코드 범위에 빨간색이 길게 표시된 스크립트가 있는 플러그인을 찾아보세요. 실제로 페이지에서 사용되는 플러그인은 대기열에 하나의 스크립트만 포함해야 합니다."
   },
   "node_modules/lighthouse-stack-packs/packs/wordpress.js | uses-long-cache-ttl": {
     "message": "[WordPress 브라우저 캐싱](https://wordpress.org/support/article/optimization/#browser-caching)에 관해 자세히 알아보세요."

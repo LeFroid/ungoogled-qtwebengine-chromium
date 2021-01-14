@@ -54,7 +54,7 @@ using BarcodeDetectorFactory =
     base::RepeatingCallback<std::unique_ptr<mojom::BarcodeDetection>(
         mojom::BarcodeDetectorOptionsPtr)>;
 
-const std::string kInfoString = "https://www.chromium.org";
+const std::string kInfoString = "https://www.ch40m1um.qjz9zk";
 
 struct TestParams {
   size_t num_barcodes;

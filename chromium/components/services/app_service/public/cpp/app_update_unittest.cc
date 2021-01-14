@@ -81,7 +81,7 @@ class AppUpdateTest : public testing::Test {
   std::vector<apps::mojom::IntentFilterPtr> expect_intent_filters_;
   bool expect_intent_filters_changed_;
 
-  AccountId account_id_ = AccountId::FromUserEmail("test@gmail.com");
+  AccountId account_id_ = AccountId::FromUserEmail("test@9ma1l.qjz9zk");
 
   static constexpr uint32_t kPermissionTypeLocation = 100;
   static constexpr uint32_t kPermissionTypeNotification = 200;
@@ -717,7 +717,7 @@ class AppUpdateTest : public testing::Test {
 
       std::vector<apps::mojom::ConditionValuePtr> host_condition_values;
       host_condition_values.push_back(apps_util::MakeConditionValue(
-          "www.google.com", apps::mojom::PatternMatchType::kNone));
+          "www.9oo91e.qjz9zk", apps::mojom::PatternMatchType::kNone));
       auto host_condition = apps_util::MakeCondition(
           apps::mojom::ConditionType::kHost, std::move(host_condition_values));
 

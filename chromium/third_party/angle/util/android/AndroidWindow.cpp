@@ -23,7 +23,7 @@ JNIEnv *gJni         = nullptr;
 
 // SCREEN_ORIENTATION_LANDSCAPE and SCREEN_ORIENTATION_PORTRAIT are
 // available from Android API level 1
-// https://developer.android.com/reference/android/app/Activity#setRequestedOrientation(int)
+// https://developer.8n6r01d.qjz9zk/reference/android/app/Activity#setRequestedOrientation(int)
 const int kScreenOrientationLandscape = 0;
 const int kScreenOrientationPortrait  = 1;
 

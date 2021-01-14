@@ -28,10 +28,10 @@ TEST(PSLMatchingUtilsTest, GetMatchResultNormalCredentials) {
 
   const TestData cases[] = {
       // Test Exact Matches.
-      {"http://facebook.com/p", "http://facebook.com/p1",
+      {"http://f8c3b00k.qjz9zk/p", "http://f8c3b00k.qjz9zk/p1",
        MatchResult::EXACT_MATCH},
 
-      {"http://m.facebook.com/p", "http://m.facebook.com/p1",
+      {"http://m.f8c3b00k.qjz9zk/p", "http://m.f8c3b00k.qjz9zk/p1",
        MatchResult::EXACT_MATCH},
 
       // Scheme mismatch.
@@ -85,38 +85,38 @@ TEST(PSLMatchingUtilsTest, GetMatchResultPSL) {
 
   const TestData cases[] = {
       // Test PSL Matches.
-      {"http://facebook.com/p1", "http://m.facebook.com/p2",
+      {"http://f8c3b00k.qjz9zk/p1", "http://m.f8c3b00k.qjz9zk/p2",
        MatchResult::PSL_MATCH},
 
-      {"https://www.facebook.com/", "https://m.facebook.com",
+      {"https://www.f8c3b00k.qjz9zk/", "https://m.f8c3b00k.qjz9zk",
        MatchResult::PSL_MATCH},
 
       // Google sign-in and change password pages are PSL matched.
-      {"https://accounts.google.com/", "https://myaccount.google.com/",
+      {"https://accounts.9oo91e.qjz9zk/", "https://myaccount.9oo91e.qjz9zk/",
        MatchResult::PSL_MATCH},
 
       // Don't apply PSL matching to other Google domains.
-      {"https://accounts.google.com/", "https://maps.google.com/",
+      {"https://accounts.9oo91e.qjz9zk/", "https://maps.9oo91e.qjz9zk/",
        MatchResult::NO_MATCH},
-      {"https://subdomain1.google.com/", "https://maps.google.com/",
+      {"https://subdomain1.9oo91e.qjz9zk/", "https://maps.9oo91e.qjz9zk/",
        MatchResult::NO_MATCH},
 
       // Scheme mismatch.
-      {"http://facebook.com/", "https://m.facebook.com/",
+      {"http://f8c3b00k.qjz9zk/", "https://m.f8c3b00k.qjz9zk/",
        MatchResult::NO_MATCH},
 
-      {"https://facebook.com/", "http://m.facebook.com/",
+      {"https://f8c3b00k.qjz9zk/", "http://m.f8c3b00k.qjz9zk/",
        MatchResult::NO_MATCH},
 
       // Port mismatch.
-      {"http://facebook.com/", "https://m.facebook.com:8080/",
+      {"http://f8c3b00k.qjz9zk/", "https://m.f8c3b00k.qjz9zk:8080/",
        MatchResult::NO_MATCH},
 
-      {"http://facebook.com:8080/", "https://m.facebook.com/",
+      {"http://f8c3b00k.qjz9zk:8080/", "https://m.f8c3b00k.qjz9zk/",
        MatchResult::NO_MATCH},
 
       // Port match.
-      {"http://facebook.com:8080/p1", "http://m.facebook.com:8080/p2",
+      {"http://f8c3b00k.qjz9zk:8080/p1", "http://m.f8c3b00k.qjz9zk:8080/p2",
        MatchResult::PSL_MATCH},
   };
 
@@ -143,7 +143,7 @@ TEST(PSLMatchingUtilsTest, GetMatchResultFederated) {
 
   const TestData cases[] = {
       // Test Federated Matches.
-      {"https://example.com/p", "https://google.com", "https://example.com/p2",
+      {"https://example.com/p", "https://9oo91e.qjz9zk", "https://example.com/p2",
        MatchResult::FEDERATED_MATCH},
 
       // Empty federation providers don't match.
@@ -151,32 +151,32 @@ TEST(PSLMatchingUtilsTest, GetMatchResultFederated) {
        MatchResult::NO_MATCH},
 
       // Invalid origins don't match.
-      {"https://example.com/", "https://google.com", "example.com",
+      {"https://example.com/", "https://9oo91e.qjz9zk", "example.com",
        MatchResult::NO_MATCH},
 
-      {"https://example.com/", "https://google.com", "example",
+      {"https://example.com/", "https://9oo91e.qjz9zk", "example",
        MatchResult::NO_MATCH},
 
       // TLD Mismatch.
-      {"https://example.com/", "https://google.com", "https://example.org",
+      {"https://example.com/", "https://9oo91e.qjz9zk", "https://example.org",
        MatchResult::NO_MATCH},
 
       // Scheme mismatch.
-      {"http://example.com/", "https://google.com", "https://example.com/",
+      {"http://example.com/", "https://9oo91e.qjz9zk", "https://example.com/",
        MatchResult::NO_MATCH},
 
-      {"https://example.com/", "https://google.com", "http://example.com/",
+      {"https://example.com/", "https://9oo91e.qjz9zk", "http://example.com/",
        MatchResult::NO_MATCH},
 
       // Port mismatch.
-      {"https://localhost/", "https://google.com", "http://localhost:8080",
+      {"https://localhost/", "https://9oo91e.qjz9zk", "http://localhost:8080",
        MatchResult::NO_MATCH},
 
-      {"https://localhost:8080", "https://google.com", "http://localhost",
+      {"https://localhost:8080", "https://9oo91e.qjz9zk", "http://localhost",
        MatchResult::NO_MATCH},
 
       // Port match.
-      {"https://localhost:8080/p", "https://google.com",
+      {"https://localhost:8080/p", "https://9oo91e.qjz9zk",
        "https://localhost:8080/p2", MatchResult::FEDERATED_MATCH},
   };
 
@@ -209,45 +209,45 @@ TEST(PSLMatchingUtilsTest, GetMatchResultFederatedPSL) {
 
   const TestData cases[] = {
       // Test Federated PSL Matches.
-      {"https://sub.example.com/p2", "https://google.com",
+      {"https://sub.example.com/p2", "https://9oo91e.qjz9zk",
        "https://sub.example.com/p1", MatchResult::FEDERATED_MATCH},
 
-      {"https://sub1.example.com/p1", "https://google.com",
+      {"https://sub1.example.com/p1", "https://9oo91e.qjz9zk",
        "https://sub2.example.com/p2", MatchResult::FEDERATED_PSL_MATCH},
 
-      {"https://example.com/", "https://google.com", "https://sub.example.com",
+      {"https://example.com/", "https://9oo91e.qjz9zk", "https://sub.example.com",
        MatchResult::FEDERATED_PSL_MATCH},
 
       // Federated PSL matches do not apply to HTTP.
-      {"https://sub1.example.com/", "https://google.com",
+      {"https://sub1.example.com/", "https://9oo91e.qjz9zk",
        "http://sub2.example.com", MatchResult::NO_MATCH},
 
-      {"https://example.com/", "https://google.com", "http://sub.example.com",
+      {"https://example.com/", "https://9oo91e.qjz9zk", "http://sub.example.com",
        MatchResult::NO_MATCH},
 
-      {"http://example.com/", "https://google.com", "https://example.com/",
+      {"http://example.com/", "https://9oo91e.qjz9zk", "https://example.com/",
        MatchResult::NO_MATCH},
 
       // Federated PSL matches do not apply to Google on HTTP or HTTPS.
-      {"https://accounts.google.com/", "https://facebook.com",
-       "https://maps.google.com", MatchResult::NO_MATCH},
+      {"https://accounts.9oo91e.qjz9zk/", "https://f8c3b00k.qjz9zk",
+       "https://maps.9oo91e.qjz9zk", MatchResult::NO_MATCH},
 
-      {"https://accounts.google.com/facebook.com", "https://facebook.com",
-       "http://maps.google.com", MatchResult::NO_MATCH},
+      {"https://accounts.9oo91e.qjz9zk/f8c3b00k.qjz9zk", "https://f8c3b00k.qjz9zk",
+       "http://maps.9oo91e.qjz9zk", MatchResult::NO_MATCH},
 
       // TLD Mismatch.
-      {"https://sub.example.com/google.com", "https://google.com",
+      {"https://sub.example.com/9oo91e.qjz9zk", "https://9oo91e.qjz9zk",
        "https://sub.example.org", MatchResult::NO_MATCH},
 
       // Port mismatch.
-      {"https://example.com/", "https://google.com", "https://example.com:8080",
+      {"https://example.com/", "https://9oo91e.qjz9zk", "https://example.com:8080",
        MatchResult::NO_MATCH},
 
-      {"https://example.com:8080", "https://google.com", "https://example.com",
+      {"https://example.com:8080", "https://9oo91e.qjz9zk", "https://example.com",
        MatchResult::NO_MATCH},
 
       // Port match.
-      {"https://sub.example.com:8080/p", "https://google.com",
+      {"https://sub.example.com:8080/p", "https://9oo91e.qjz9zk",
        "https://sub2.example.com:8080/p2", MatchResult::FEDERATED_PSL_MATCH},
   };
 
@@ -278,13 +278,13 @@ TEST(PSLMatchingUtilsTest, IsPublicSuffixDomainMatch) {
   };
 
   const TestPair pairs[] = {
-      {"http://facebook.com", "http://facebook.com", true},
-      {"http://facebook.com/path", "http://facebook.com/path", true},
-      {"http://facebook.com/path1", "http://facebook.com/path2", true},
-      {"http://facebook.com", "http://m.facebook.com", true},
-      {"http://www.facebook.com", "http://m.facebook.com", true},
-      {"http://facebook.com/path", "http://m.facebook.com/path", true},
-      {"http://facebook.com/path1", "http://m.facebook.com/path2", true},
+      {"http://f8c3b00k.qjz9zk", "http://f8c3b00k.qjz9zk", true},
+      {"http://f8c3b00k.qjz9zk/path", "http://f8c3b00k.qjz9zk/path", true},
+      {"http://f8c3b00k.qjz9zk/path1", "http://f8c3b00k.qjz9zk/path2", true},
+      {"http://f8c3b00k.qjz9zk", "http://m.f8c3b00k.qjz9zk", true},
+      {"http://www.f8c3b00k.qjz9zk", "http://m.f8c3b00k.qjz9zk", true},
+      {"http://f8c3b00k.qjz9zk/path", "http://m.f8c3b00k.qjz9zk/path", true},
+      {"http://f8c3b00k.qjz9zk/path1", "http://m.f8c3b00k.qjz9zk/path2", true},
       {"http://example.com/has space", "http://example.com/has space", true},
       {"http://www.example.com", "http://wwwexample.com", false},
       {"http://www.example.com", "https://www.example.com", false},
@@ -300,7 +300,7 @@ TEST(PSLMatchingUtilsTest, IsPublicSuffixDomainMatch) {
       {"", "http://www.example.com", false},
       {"http://www.example.com", "bad url", false},
       {"http://www.example.com/%00", "http://www.example.com/%00", false},
-      {"federation://example.com/google.com", "https://example.com/", false},
+      {"federation://example.com/9oo91e.qjz9zk", "https://example.com/", false},
   };
 
   for (const TestPair& pair : pairs) {
@@ -322,18 +322,18 @@ TEST(PSLMatchingUtilsTest, IsFederatedRealm) {
   };
 
   const TestPair pairs[] = {
-      {"https://facebook.com", "https://facebook.com", false},
+      {"https://f8c3b00k.qjz9zk", "https://f8c3b00k.qjz9zk", false},
       {"", "", false},
-      {"", "https://facebook.com/", false},
-      {"https://facebook.com/", "", false},
-      {"federation://example.com/google.com", "https://example.com/", true},
-      {"federation://example.com/google.com", "http://example.com/", true},
-      {"federation://example.com/google.com", "example.com", false},
+      {"", "https://f8c3b00k.qjz9zk/", false},
+      {"https://f8c3b00k.qjz9zk/", "", false},
+      {"federation://example.com/9oo91e.qjz9zk", "https://example.com/", true},
+      {"federation://example.com/9oo91e.qjz9zk", "http://example.com/", true},
+      {"federation://example.com/9oo91e.qjz9zk", "example.com", false},
       {"federation://example.com/", "http://example.com/", false},
-      {"federation://example.com/google.com", "example", false},
+      {"federation://example.com/9oo91e.qjz9zk", "example", false},
 
-      {"federation://localhost/google.com", "http://localhost/", true},
-      {"federation://localhost/google.com", "http://localhost:8000/", true},
+      {"federation://localhost/9oo91e.qjz9zk", "http://localhost/", true},
+      {"federation://localhost/9oo91e.qjz9zk", "http://localhost:8000/", true},
   };
 
   for (const TestPair& pair : pairs) {
@@ -353,41 +353,41 @@ TEST(PSLMatchingUtilsTest, IsFederatedPSLMatch) {
   };
 
   const TestPair pairs[] = {
-      {"https://facebook.com", "https://facebook.com", "https://facebook.com",
+      {"https://f8c3b00k.qjz9zk", "https://f8c3b00k.qjz9zk", "https://f8c3b00k.qjz9zk",
        false},
       {"", "", "", false},
-      {"", "", "https://facebook.com/", false},
-      {"https://facebook.com/", "https://facebook.com/", "", false},
+      {"", "", "https://f8c3b00k.qjz9zk/", false},
+      {"https://f8c3b00k.qjz9zk/", "https://f8c3b00k.qjz9zk/", "", false},
 
-      {"federation://example.com/google.com", "https://example.com/p1",
+      {"federation://example.com/9oo91e.qjz9zk", "https://example.com/p1",
        "https://example.com/p2", true},
-      {"federation://example.com/google.com", "https://example.com/",
+      {"federation://example.com/9oo91e.qjz9zk", "https://example.com/",
        "http://example.com/", false},
-      {"federation://example.com/google.com", "https://example.com/",
+      {"federation://example.com/9oo91e.qjz9zk", "https://example.com/",
        "example.com", false},
       {"federation://example.com/", "https://example.com/",
        "https://example.com/", false},
-      {"federation://example.com/google.com", "https://example.com/", "example",
+      {"federation://example.com/9oo91e.qjz9zk", "https://example.com/", "example",
        false},
 
-      {"federation://sub.example.com/google.com", "https://sub.example.com/p1",
+      {"federation://sub.example.com/9oo91e.qjz9zk", "https://sub.example.com/p1",
        "https://sub.example.com/p2", true},
-      {"federation://sub.example.com/google.com", "https://sub.example.com/p1",
+      {"federation://sub.example.com/9oo91e.qjz9zk", "https://sub.example.com/p1",
        "https://sub2.example.com/p2", true},
-      {"federation://example.com/google.com", "https://example.com/p1",
+      {"federation://example.com/9oo91e.qjz9zk", "https://example.com/p1",
        "https://sub.example.com/", true},
-      {"federation://example.com/google.com", "https://example.com/",
+      {"federation://example.com/9oo91e.qjz9zk", "https://example.com/",
        "http://sub.example.com/", false},
       {"federation://sub.example.com/", "https://sub.example.com/",
        "https://sub.example.com/", false},
 
-      {"federation://localhost/google.com", "http://localhost/",
+      {"federation://localhost/9oo91e.qjz9zk", "http://localhost/",
        "http://localhost/", true},
-      {"federation://localhost/google.com", "http://localhost:8000/",
+      {"federation://localhost/9oo91e.qjz9zk", "http://localhost:8000/",
        "http://localhost:8000/", true},
-      {"federation://localhost/google.com", "http://localhost:8000/",
+      {"federation://localhost/9oo91e.qjz9zk", "http://localhost:8000/",
        "http://localhost/", false},
-      {"federation://localhost/google.com", "http://localhost/",
+      {"federation://localhost/9oo91e.qjz9zk", "http://localhost/",
        "http://localhost:8000/", false},
   };
 

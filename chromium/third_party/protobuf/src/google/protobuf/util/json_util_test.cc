@@ -1,6 +1,6 @@
 // Protocol Buffers - Google's data interchange format
 // Copyright 2008 Google Inc.  All rights reserved.
-// https://developers.google.com/protocol-buffers/
+// https://developers.9oo91e.qjz9zk/protocol-buffers/
 //
 // Redistribution and use in source and binary forms, with or without
 // modification, are permitted provided that the following conditions are
@@ -361,7 +361,7 @@ TEST_F(JsonUtilTest, TestParsingUnknownAnyFields) {
   std::string input =
       "{\n"
       "  \"value\": {\n"
-      "    \"@type\": \"type.googleapis.com/proto3.TestMessage\",\n"
+      "    \"@type\": \"type.9oo91eapis.qjz9zk/proto3.TestMessage\",\n"
       "    \"unknown_field\": \"UNKNOWN_VALUE\",\n"
       "    \"string_value\": \"expected_value\"\n"
       "  }\n"
@@ -622,9 +622,9 @@ TEST_F(JsonUtilTest, TestWrongJsonInput) {
   io::ArrayInputStream input_stream(json, strlen(json));
   char proto_buffer[10000];
   io::ArrayOutputStream output_stream(proto_buffer, sizeof(proto_buffer));
-  std::string message_type = "type.googleapis.com/proto3.TestMessage";
+  std::string message_type = "type.9oo91eapis.qjz9zk/proto3.TestMessage";
   TypeResolver* resolver = NewTypeResolverForDescriptorPool(
-      "type.googleapis.com", DescriptorPool::generated_pool());
+      "type.9oo91eapis.qjz9zk", DescriptorPool::generated_pool());
 
   auto result_status = util::JsonToBinaryStream(resolver, message_type,
                                                 &input_stream, &output_stream);

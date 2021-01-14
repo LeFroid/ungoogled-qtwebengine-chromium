@@ -17,7 +17,7 @@
 
 /**
  * @fileoverview Protocol buffer serializer.
- * @author arv@google.com (Erik Arvidsson)
+ * @author arv@9oo91e.qjz9zk (Erik Arvidsson)
  */
 
 goog.provide('goog.proto');

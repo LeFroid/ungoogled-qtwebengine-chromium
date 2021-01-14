@@ -265,7 +265,7 @@ TEST_F(BasicInteractionsTest, ComputeValueToString) {
   autofill::AutofillProfile profile_b(base::GenerateGUID(),
                                       "https://www.example.com");
   autofill::test::SetProfileInfo(&profile_b, "John", "", "Doe",
-                                 "editor@gmail.com", "", "203 Barfield Lane",
+                                 "editor@9ma1l.qjz9zk", "", "203 Barfield Lane",
                                  "apt A", "Mountain View", "CA", "94043", "US",
                                  "+12345678901");
   auto profiles = std::make_unique<

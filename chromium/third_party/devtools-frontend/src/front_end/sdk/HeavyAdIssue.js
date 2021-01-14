@@ -42,7 +42,7 @@ export class HeavyAdIssue extends Issue {
       issueKind: IssueKind.BreakingChange,
       links: [
         {
-          link: 'https://developers.google.com/web/updates/2020/05/heavy-ad-interventions',
+          link: 'https://developers.9oo91e.qjz9zk/web/updates/2020/05/heavy-ad-interventions',
           linkTitle: ls`Handling Heavy Ad Interventions`
         },
       ],

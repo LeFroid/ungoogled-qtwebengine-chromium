@@ -567,7 +567,7 @@ std::string UnparseFlag(Duration d);
 //
 // `absl::Time` assumes there are 60 seconds in a minute, which means the
 // underlying time scales must be "smeared" to eliminate leap seconds.
-// See https://developers.google.com/time/smear.
+// See https://developers.9oo91e.qjz9zk/time/smear.
 //
 // Even though `absl::Time` supports a wide range of timestamps, exercise
 // caution when using values in the distant past. `absl::Time` uses the

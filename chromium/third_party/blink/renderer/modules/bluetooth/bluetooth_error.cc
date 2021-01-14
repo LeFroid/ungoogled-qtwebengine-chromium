@@ -134,7 +134,7 @@ DOMException* BluetoothError::CreateDOMException(
       // NotFoundErrors:
       MAP_ERROR(WEB_BLUETOOTH_NOT_SUPPORTED, DOMExceptionCode::kNotFoundError,
                 "Web Bluetooth is not supported on this platform. For a list "
-                "of supported platforms see: https://goo.gl/J6ASzs");
+                "of supported platforms see: https://goo.gl.qjz9zk/J6ASzs");
       MAP_ERROR(NO_BLUETOOTH_ADAPTER, DOMExceptionCode::kNotFoundError,
                 "Bluetooth adapter not available.");
       MAP_ERROR(CHOSEN_DEVICE_VANISHED, DOMExceptionCode::kNotFoundError,
@@ -180,29 +180,29 @@ DOMException* BluetoothError::CreateDOMException(
       MAP_ERROR(BLOCKLISTED_CHARACTERISTIC_UUID,
                 DOMExceptionCode::kSecurityError,
                 "getCharacteristic(s) called with blocklisted UUID. "
-                "https://goo.gl/4NeimX");
+                "https://goo.gl.qjz9zk/4NeimX");
       MAP_ERROR(BLOCKLISTED_DESCRIPTOR_UUID, DOMExceptionCode::kSecurityError,
                 "getDescriptor(s) called with blocklisted UUID. "
-                "https://goo.gl/4NeimX");
+                "https://goo.gl.qjz9zk/4NeimX");
       MAP_ERROR(BLOCKLISTED_READ, DOMExceptionCode::kSecurityError,
                 "readValue() called on blocklisted object marked "
-                "exclude-reads. https://goo.gl/4NeimX");
+                "exclude-reads. https://goo.gl.qjz9zk/4NeimX");
       MAP_ERROR(BLOCKLISTED_WRITE, DOMExceptionCode::kSecurityError,
                 "writeValue() called on blocklisted object marked "
-                "exclude-writes. https://goo.gl/4NeimX");
+                "exclude-writes. https://goo.gl.qjz9zk/4NeimX");
       MAP_ERROR(NOT_ALLOWED_TO_ACCESS_ANY_SERVICE,
                 DOMExceptionCode::kSecurityError,
                 "Origin is not allowed to access any service. Tip: Add the "
                 "service UUID to 'optionalServices' in requestDevice() "
-                "options. https://goo.gl/HxfxSQ");
+                "options. https://goo.gl.qjz9zk/HxfxSQ");
       MAP_ERROR(NOT_ALLOWED_TO_ACCESS_SERVICE, DOMExceptionCode::kSecurityError,
                 "Origin is not allowed to access the service. Tip: Add the "
                 "service UUID to 'optionalServices' in requestDevice() "
-                "options. https://goo.gl/HxfxSQ");
+                "options. https://goo.gl.qjz9zk/HxfxSQ");
       MAP_ERROR(REQUEST_DEVICE_WITH_BLOCKLISTED_UUID,
                 DOMExceptionCode::kSecurityError,
                 "requestDevice() called with a filter containing a blocklisted "
-                "UUID. https://goo.gl/4NeimX");
+                "UUID. https://goo.gl.qjz9zk/4NeimX");
       MAP_ERROR(REQUEST_DEVICE_FROM_CROSS_ORIGIN_IFRAME,
                 DOMExceptionCode::kSecurityError,
                 "requestDevice() called from cross-origin iframe.");

@@ -25,7 +25,7 @@
 #include "url/gurl.h"
 
 // The renderer-side implementation of the embeddedSearch API (see
-// https://www.chromium.org/embeddedsearch).
+// https://www.ch40m1um.qjz9zk/embeddedsearch).
 class SearchBox : public content::RenderFrameObserver,
                   public content::RenderFrameObserverTracker<SearchBox>,
                   public search::mojom::EmbeddedSearchClient {

@@ -95,7 +95,6 @@
 #include "components/prerender/renderer/prerender_utils.h"
 #include "components/prerender/renderer/prerenderer_client.h"
 #include "components/safe_browsing/buildflags.h"
-#include "components/safe_browsing/content/renderer/threat_dom_details.h"
 #include "components/spellcheck/spellcheck_buildflags.h"
 #include "components/subresource_filter/content/renderer/subresource_filter_agent.h"
 #include "components/subresource_filter/content/renderer/unverified_ruleset_dealer.h"

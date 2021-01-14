@@ -869,7 +869,7 @@ TEST_F(PersonalDataManagerTest, AddProfile_CrazyCharacters) {
   profile1.SetRawInfo(NAME_MIDDLE, base::WideToUTF16(L"BANK\xcBERF\xc4LLE"));
   profile1.SetRawInfo(EMAIL_ADDRESS,
                       base::WideToUTF16(L"\uacbd\uc81c \ub274\uc2a4 "
-                                        L"\ub354\ubcf4\uae30@google.com"));
+                                        L"\ub354\ubcf4\uae30@9oo91e.qjz9zk"));
   profile1.SetRawInfo(
       ADDRESS_HOME_LINE1,
       base::WideToUTF16(L"\uad6d\uc815\uc6d0\xb7\uac80\ucc30, "
@@ -1424,7 +1424,7 @@ TEST_F(PersonalDataManagerTest, KeepExistingLocalDataOnSignIn) {
   EXPECT_EQ(1U, personal_data_->GetCreditCards().size());
 
   // Sign in.
-  identity_test_env_.SetPrimaryAccount("test@gmail.com");
+  identity_test_env_.SetPrimaryAccount("test@9ma1l.qjz9zk");
   sync_service_.SetIsAuthenticatedAccountPrimary(true);
   sync_service_.SetActiveDataTypes(
       syncer::ModelTypeSet(syncer::AUTOFILL_WALLET_DATA));
@@ -7250,7 +7250,7 @@ TEST_F(PersonalDataManagerMockTest, UpdateClientValidityStates_AlreadyUpdated) {
       profiles[0]->GetValidityState(EMAIL_ADDRESS, AutofillProfile::CLIENT));
 
   // Change the email, the validity update would turn false.
-  profiles[0]->SetRawInfo(EMAIL_ADDRESS, base::UTF8ToUTF16("alice@gmail.com"));
+  profiles[0]->SetRawInfo(EMAIL_ADDRESS, base::UTF8ToUTF16("alice@9ma1l.qjz9zk"));
   EXPECT_FALSE(profiles[0]->is_client_validity_states_updated());
   // Pretend that the validity states are updated.
   profiles[0]->set_is_client_validity_states_updated(true);
@@ -7670,7 +7670,7 @@ TEST_F(PersonalDataManagerTest, ShouldShowCardsFromAccountOption) {
 TEST_F(PersonalDataManagerTest, GetSyncSigninState) {
   // Make a non-primary account available with both a refresh token and cookie
   // for the first few tests.
-  identity_test_env_.SetPrimaryAccount("test@gmail.com");
+  identity_test_env_.SetPrimaryAccount("test@9ma1l.qjz9zk");
   sync_service_.SetIsAuthenticatedAccountPrimary(false);
   sync_service_.SetActiveDataTypes(
       syncer::ModelTypeSet(syncer::AUTOFILL_WALLET_DATA));

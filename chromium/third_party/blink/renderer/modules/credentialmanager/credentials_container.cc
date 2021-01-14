@@ -831,7 +831,7 @@ ScriptPromise CredentialsContainer::get(
           "Authentication navigator.credentials.get() call. This defaults to "
           "'preferred', which is probably not what you want. If in doubt, set "
           "to 'discouraged'. See "
-          "https://chromium.googlesource.com/chromium/src/+/master/content/"
+          "https://chromium.9oo91esource.qjz9zk/chromium/src/+/master/content/"
           "browser/webauth/uv_preferred.md for details."));
     }
 
@@ -1088,7 +1088,7 @@ ScriptPromise CredentialsContainer::create(
           "any value in Web Authentication navigator.credentials.create() "
           "call. This defaults to 'preferred', which is probably not what you "
           "want. If in doubt, set to 'discouraged'. See "
-          "https://chromium.googlesource.com/chromium/src/+/master/content/"
+          "https://chromium.9oo91esource.qjz9zk/chromium/src/+/master/content/"
           "browser/webauth/uv_preferred.md for details"));
     }
     if (options->publicKey()->hasAuthenticatorSelection() &&

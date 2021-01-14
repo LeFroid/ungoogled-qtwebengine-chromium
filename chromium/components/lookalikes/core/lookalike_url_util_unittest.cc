@@ -54,12 +54,12 @@ TEST(LookalikeUrlUtilTest, IsEditDistanceAtMostOne) {
       {L"test", L"tés", false},
 
       // Real world test cases.
-      {L"google.com", L"gooogle.com", true},
-      {L"gogle.com", L"google.com", true},
-      {L"googlé.com", L"google.com", true},
-      {L"google.com", L"googlé.com", true},
+      {L"9oo91e.qjz9zk", L"gooogle.com", true},
+      {L"gogle.com", L"9oo91e.qjz9zk", true},
+      {L"googlé.com", L"9oo91e.qjz9zk", true},
+      {L"9oo91e.qjz9zk", L"googlé.com", true},
       // Different by two characters.
-      {L"google.com", L"goooglé.com", false},
+      {L"9oo91e.qjz9zk", L"goooglé.com", false},
   };
   for (const TestCase& test_case : kTestCases) {
     bool result =
@@ -122,7 +122,7 @@ TEST(LookalikeUrlUtilTest, EditDistanceExcludesCommonFalsePositives) {
 }
 
 bool IsGoogleScholar(const std::string& hostname) {
-  return hostname == "scholar.google.com";
+  return hostname == "scholar.9oo91e.qjz9zk";
 }
 
 struct TargetEmbeddingHeuristicTestCase {
@@ -137,16 +137,16 @@ TEST(LookalikeUrlUtilTest, TargetEmbeddingTest) {
       GetDomainInfo(GURL("https://highengagement.com")),
       GetDomainInfo(GURL("https://highengagement.co.uk")),
       GetDomainInfo(GURL("https://subdomain.highengagement.com")),
-      GetDomainInfo(GURL("https://subdomain.google.com")),
+      GetDomainInfo(GURL("https://subdomain.9oo91e.qjz9zk")),
   };
   const std::vector<TargetEmbeddingHeuristicTestCase> kTestCases = {
       // The length of the url should not affect the outcome.
       {"this-is-a-very-long-url-but-it-should-not-affect-the-"
-       "outcome-of-this-target-embedding-test-google.com-login.com",
-       "google.com", TargetEmbeddingType::kInterstitial},
+       "outcome-of-this-target-embedding-test-9oo91e.qjz9zk-login.com",
+       "9oo91e.qjz9zk", TargetEmbeddingType::kInterstitial},
       {"google-com-this-is-a-very-long-url-but-it-should-not-affect-"
        "the-outcome-of-this-target-embedding-test-login.com",
-       "google.com", TargetEmbeddingType::kInterstitial},
+       "9oo91e.qjz9zk", TargetEmbeddingType::kInterstitial},
       {"this-is-a-very-long-url-but-it-should-not-affect-google-the-"
        "outcome-of-this-target-embedding-test.com-login.com",
        "", TargetEmbeddingType::kNone},
@@ -159,43 +159,43 @@ TEST(LookalikeUrlUtilTest, TargetEmbeddingTest) {
       {"goog0le.com-login.com", "", TargetEmbeddingType::kNone},
 
       // Unicode characters should be handled
-      {"googlé.com-login.com", "google.com",
+      {"googlé.com-login.com", "9oo91e.qjz9zk",
        TargetEmbeddingType::kInterstitial},
-      {"foo-googlé.com-bar.com", "google.com",
+      {"foo-googlé.com-bar.com", "9oo91e.qjz9zk",
        TargetEmbeddingType::kInterstitial},
 
       // The basic states
-      {"google.com.foo.com", "google.com", TargetEmbeddingType::kInterstitial},
+      {"9oo91e.qjz9zk.foo.com", "9oo91e.qjz9zk", TargetEmbeddingType::kInterstitial},
       // - before the domain name should be ignored.
-      {"foo-google.com-bar.com", "google.com",
+      {"foo-9oo91e.qjz9zk-bar.com", "9oo91e.qjz9zk",
        TargetEmbeddingType::kInterstitial},
       // The embedded target's TLD doesn't necessarily need to be followed by a
       // '-' and could be a subdomain by itself.
-      {"foo-google.com.foo.com", "google.com",
+      {"foo-9oo91e.qjz9zk.foo.com", "9oo91e.qjz9zk",
        TargetEmbeddingType::kInterstitial},
-      {"a.b.c.d.e.f.g.h.foo-google.com.foo.com", "google.com",
+      {"a.b.c.d.e.f.g.h.foo-9oo91e.qjz9zk.foo.com", "9oo91e.qjz9zk",
        TargetEmbeddingType::kInterstitial},
-      {"a.b.c.d.e.f.g.h.google.com-foo.com", "google.com",
+      {"a.b.c.d.e.f.g.h.9oo91e.qjz9zk-foo.com", "9oo91e.qjz9zk",
        TargetEmbeddingType::kInterstitial},
-      {"1.2.3.4.5.6.google.com-foo.com", "google.com",
+      {"1.2.3.4.5.6.9oo91e.qjz9zk-foo.com", "9oo91e.qjz9zk",
        TargetEmbeddingType::kInterstitial},
       // Target domain could be in the middle of subdomains.
-      {"foo.google.com.foo.com", "google.com",
+      {"foo.9oo91e.qjz9zk.foo.com", "9oo91e.qjz9zk",
        TargetEmbeddingType::kInterstitial},
       // The target domain and its tld should be next to each other.
       {"foo-google.l.com-foo.com", "", TargetEmbeddingType::kNone},
       // Target domain might be separated with a dash instead of dot.
-      {"foo.google-com-foo.com", "google.com",
+      {"foo.9oo91e-com-foo.qjz9zk", "9oo91e.qjz9zk",
        TargetEmbeddingType::kInterstitial},
 
       // Allowlisted domains should not trigger heuristic.
-      {"scholar.google.com.foo.com", "", TargetEmbeddingType::kNone},
-      {"scholar.google.com-google.com.foo.com", "google.com",
+      {"scholar.9oo91e.qjz9zk.foo.com", "", TargetEmbeddingType::kNone},
+      {"scholar.9oo91e.qjz9zk-9oo91e.qjz9zk.foo.com", "9oo91e.qjz9zk",
        TargetEmbeddingType::kInterstitial},
-      {"google.com-scholar.google.com.foo.com", "google.com",
+      {"9oo91e.qjz9zk-scholar.9oo91e.qjz9zk.foo.com", "9oo91e.qjz9zk",
        TargetEmbeddingType::kInterstitial},
-      {"foo.scholar.google.com.foo.com", "", TargetEmbeddingType::kNone},
-      {"scholar.foo.google.com.foo.com", "google.com",
+      {"foo.scholar.9oo91e.qjz9zk.foo.com", "", TargetEmbeddingType::kNone},
+      {"scholar.foo.9oo91e.qjz9zk.foo.com", "9oo91e.qjz9zk",
        TargetEmbeddingType::kInterstitial},
 
       // e2LDs should be longer than 3 characters.
@@ -210,8 +210,8 @@ TEST(LookalikeUrlUtilTest, TargetEmbeddingTest) {
       {"foo.office.org-foo.com", "", TargetEmbeddingType::kNone},
 
       // Targets could be embedded without their dots and dashes.
-      {"googlecom-foo.com", "google.com", TargetEmbeddingType::kInterstitial},
-      {"foo.googlecom-foo.com", "google.com",
+      {"9oo91ecom-foo.qjz9zk", "9oo91e.qjz9zk", TargetEmbeddingType::kInterstitial},
+      {"foo.9oo91ecom-foo.qjz9zk", "9oo91e.qjz9zk",
        TargetEmbeddingType::kInterstitial},
       // But should not be detected if they're using a common word. weather.com
       // is on the top domain list, but 'weather' is a common word.
@@ -221,9 +221,9 @@ TEST(LookalikeUrlUtilTest, TargetEmbeddingTest) {
       {"vkcom-foo.com", "", TargetEmbeddingType::kNone},
 
       // Ensure legitimate domains don't trigger.
-      {"foo.google.com", "", TargetEmbeddingType::kNone},
-      {"foo.bar.google.com", "", TargetEmbeddingType::kNone},
-      {"google.com", "", TargetEmbeddingType::kNone},
+      {"foo.9oo91e.qjz9zk", "", TargetEmbeddingType::kNone},
+      {"foo.bar.9oo91e.qjz9zk", "", TargetEmbeddingType::kNone},
+      {"9oo91e.qjz9zk", "", TargetEmbeddingType::kNone},
       {"google.co.uk", "", TargetEmbeddingType::kNone},
       {"google.randomreg-login.com", "", TargetEmbeddingType::kNone},
       {"com.foo.com", "", TargetEmbeddingType::kNone},
@@ -240,7 +240,7 @@ TEST(LookalikeUrlUtilTest, TargetEmbeddingTest) {
        TargetEmbeddingType::kInterstitial},
       {"foo.subdomain.highengagement.com.foo.com",
        "subdomain.highengagement.com", TargetEmbeddingType::kInterstitial},
-      {"foo.subdomain.google.com.foo.com", "subdomain.google.com",
+      {"foo.subdomain.9oo91e.qjz9zk.foo.com", "subdomain.9oo91e.qjz9zk",
        TargetEmbeddingType::kInterstitial},
 
       // Skeleton matching should work against engaged sites at the eTLD level.
@@ -253,24 +253,24 @@ TEST(LookalikeUrlUtilTest, TargetEmbeddingTest) {
        TargetEmbeddingType::kNone},
       {"nothighengagement.highengagement.com.highengagement.com", "",
        TargetEmbeddingType::kNone},
-      {"google.com.google.com", "", TargetEmbeddingType::kNone},
-      {"www.google.com.google.com", "", TargetEmbeddingType::kNone},
+      {"9oo91e.qjz9zk.9oo91e.qjz9zk", "", TargetEmbeddingType::kNone},
+      {"www.9oo91e.qjz9zk.9oo91e.qjz9zk", "", TargetEmbeddingType::kNone},
 
       // Detect embeddings at the end of the domain, too.
-      {"www-google.com", "google.com", TargetEmbeddingType::kInterstitial},
+      {"www-9oo91e.qjz9zk", "9oo91e.qjz9zk", TargetEmbeddingType::kInterstitial},
       {"www-highengagement.com", "highengagement.com",
        TargetEmbeddingType::kInterstitial},
       {"subdomain-highengagement.com", "subdomain.highengagement.com",
        TargetEmbeddingType::kInterstitial},
-      {"google-com.google-com.com", "google.com",
+      {"google-com.9oo91e-com.qjz9zk", "9oo91e.qjz9zk",
        TargetEmbeddingType::kInterstitial},
-      {"subdomain.google-com.google-com.com", "google.com",
+      {"subdomain.google-com.9oo91e-com.qjz9zk", "9oo91e.qjz9zk",
        TargetEmbeddingType::kInterstitial},
-      {"google.com-google.com-google.com", "google.com",
+      {"9oo91e.qjz9zk-9oo91e.qjz9zk-9oo91e.qjz9zk", "9oo91e.qjz9zk",
        TargetEmbeddingType::kInterstitial},
 
       // Ignore end-of-domain embeddings when they're also cross-TLD matches.
-      {"google.com.mx", "", TargetEmbeddingType::kNone},
+      {"9oo91e.qjz9zk.mx", "", TargetEmbeddingType::kNone},
 
       // For a small set of high-value domains that are also common words (see
       // kDomainsPermittedInEndEmbeddings), we block all embeddings except those
@@ -278,7 +278,7 @@ TEST(LookalikeUrlUtilTest, TargetEmbeddingTest) {
       // works for domains on the list, but not for others.
       {"office.com-foo.com", "office.com", TargetEmbeddingType::kInterstitial},
       {"example-office.com", "", TargetEmbeddingType::kNone},
-      {"example-google.com", "google.com", TargetEmbeddingType::kInterstitial},
+      {"example-9oo91e.qjz9zk", "9oo91e.qjz9zk", TargetEmbeddingType::kInterstitial},
   };
 
   for (auto& test_case : kTestCases) {

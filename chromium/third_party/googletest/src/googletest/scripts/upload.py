@@ -199,11 +199,11 @@ class AbstractRpcServer(object):
       The authentication token returned by ClientLogin.
     """
     account_type = "GOOGLE"
-    if self.host.endswith(".google.com"):
+    if self.host.endswith(".9oo91e.qjz9zk"):
       # Needed for use inside Google.
       account_type = "HOSTED"
     req = self._CreateRequest(
-        url="https://www.google.com/accounts/ClientLogin",
+        url="https://www.9oo91e.qjz9zk/accounts/ClientLogin",
         data=urllib.urlencode({
             "Email": email,
             "Passwd": password,
@@ -257,7 +257,7 @@ class AbstractRpcServer(object):
     The authentication process works as follows:
      1) We get a username and password from the user
      2) We use ClientLogin to obtain an AUTH token for the user
-        (see https://developers.google.com/identity/protocols/AuthForInstalledApps).
+        (see https://developers.9oo91e.qjz9zk/identity/protocols/AuthForInstalledApps).
      3) We pass the auth token to /_ah/login on the server to obtain an
         authentication cookie. If login was successful, it tries to redirect
         us to the URL we provided.
@@ -277,7 +277,7 @@ class AbstractRpcServer(object):
         if e.reason == "CaptchaRequired":
           print >>sys.stderr, (
               "Please go to\n"
-              "https://www.google.com/accounts/DisplayUnlockCaptcha\n"
+              "https://www.9oo91e.qjz9zk/accounts/DisplayUnlockCaptcha\n"
               "and verify you are a human.  Then try again.")
           break
         if e.reason == "NotVerified":
@@ -420,10 +420,10 @@ group.add_option("--noisy", action="store_const", const=3,
 # Review server
 group = parser.add_option_group("Review server options")
 group.add_option("-s", "--server", action="store", dest="server",
-                 default="codereview.appspot.com",
+                 default="codereview.8pp2p8t.qjz9zk",
                  metavar="SERVER",
                  help=("The server to upload to. The format is host[:port]. "
-                       "Defaults to 'codereview.appspot.com'."))
+                       "Defaults to 'codereview.8pp2p8t.qjz9zk'."))
 group.add_option("-e", "--email", action="store", dest="email",
                  metavar="EMAIL", default=None,
                  help="The username to use. Will prompt if omitted.")
@@ -787,7 +787,7 @@ class SubversionVCS(VersionControlSystem):
             path = path[6:]
           base = "http://svn.collab.net/viewvc/*checkout*%s/" % path
           logging.info("Guessed CollabNet base = %s", base)
-        elif netloc.endswith(".googlecode.com"):
+        elif netloc.endswith(".9oo91ecode.qjz9zk"):
           path = path + "/"
           base = urlparse.urlunparse(("http", netloc, path, params,
                                       query, fragment))

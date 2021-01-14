@@ -9,9 +9,9 @@ This file is used to generate a comprehensive list of Instant histograms
 along with a detailed description for each histogram.
 
 For best practices on writing histogram descriptions, see
-https://chromium.googlesource.com/chromium/src.git/+/HEAD/tools/metrics/histograms/README.md
+https://chromium.9oo91esource.qjz9zk/chromium/src.git/+/HEAD/tools/metrics/histograms/README.md
 
-Please send CLs to chromium-metrics-reviews@google.com rather than to specific
+Please send CLs to chromium-metrics-reviews@9oo91e.qjz9zk rather than to specific
 individuals. These CLs will be automatically reassigned to a reviewer within
 about 5 minutes. This approach helps the metrics team to load-balance incoming
 reviews. Googlers can read more about this at go/gwsq-gerrit.
@@ -24,8 +24,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram name="InstantTethering.BluetoothAdvertisementRegistrationResult"
     enum="InstantTethering_BluetoothAdvertisementResult"
     expires_after="2021-02-02">
-  <owner>hansberry@chromium.org</owner>
-  <owner>better-together-dev@google.com</owner>
+  <owner>hansberry@ch40m1um.qjz9zk</owner>
+  <owner>better-together-dev@9oo91e.qjz9zk</owner>
   <summary>
     Provides a breakdown of how many times each possible Bluetooth advertisement
     registration result occurs.
@@ -39,8 +39,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram name="InstantTethering.BluetoothAdvertisementUnregistrationResult"
     enum="InstantTethering_BluetoothAdvertisementResult"
     expires_after="2021-02-02">
-  <owner>hansberry@chromium.org</owner>
-  <owner>better-together-dev@google.com</owner>
+  <owner>hansberry@ch40m1um.qjz9zk</owner>
+  <owner>better-together-dev@9oo91e.qjz9zk</owner>
   <summary>
     Provides a breakdown of how many times each possible Bluetooth advertisement
     unregistration result occurs.
@@ -53,8 +53,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="InstantTethering.BluetoothDiscoverySessionStarted"
     enum="BooleanSuccess" expires_after="2021-02-02">
-  <owner>hansberry@chromium.org</owner>
-  <owner>better-together-dev@google.com</owner>
+  <owner>hansberry@ch40m1um.qjz9zk</owner>
+  <owner>better-together-dev@9oo91e.qjz9zk</owner>
   <summary>
     Provides the success rate of starting a Bluetooth discovery session.
   </summary>
@@ -62,8 +62,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="InstantTethering.BluetoothDiscoverySessionStopped"
     enum="BooleanSuccess" expires_after="2021-02-02">
-  <owner>hansberry@chromium.org</owner>
-  <owner>better-together-dev@google.com</owner>
+  <owner>hansberry@ch40m1um.qjz9zk</owner>
+  <owner>better-together-dev@9oo91e.qjz9zk</owner>
   <summary>
     Provides the success rate of stopping a Bluetooth discovery session.
   </summary>
@@ -72,8 +72,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram name="InstantTethering.ConnectionToHostResult.Failure"
     enum="InstantTethering_ConnectionToHostResult_Failure"
     expires_after="2021-02-02">
-  <owner>hansberry@chromium.org</owner>
-  <owner>better-together-dev@google.com</owner>
+  <owner>hansberry@ch40m1um.qjz9zk</owner>
+  <owner>better-together-dev@9oo91e.qjz9zk</owner>
   <summary>
     Provides a top-level breakdown of the times a connection to a host has
     failed.
@@ -91,8 +91,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
     name="InstantTethering.ConnectionToHostResult.Failure.ClientConnection"
     enum="InstantTethering_ConnectionToHostResult_Failure_ClientConnection"
     expires_after="2021-02-02">
-  <owner>hansberry@chromium.org</owner>
-  <owner>better-together-dev@google.com</owner>
+  <owner>hansberry@ch40m1um.qjz9zk</owner>
+  <owner>better-together-dev@9oo91e.qjz9zk</owner>
   <summary>
     Breaks down the reasons why the client failed to connect to the hotspot, and
     the number of times they occurred.
@@ -111,8 +111,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
     name="InstantTethering.ConnectionToHostResult.Failure.TetheringTimeout"
     enum="InstantTethering_ConnectionToHostResult_Failure_TetheringTimeout"
     expires_after="2021-02-02">
-  <owner>hansberry@chromium.org</owner>
-  <owner>better-together-dev@google.com</owner>
+  <owner>hansberry@ch40m1um.qjz9zk</owner>
+  <owner>better-together-dev@9oo91e.qjz9zk</owner>
   <summary>
     Captures the number of times of whether or not first-time setup was required
     when tethering timed out.
@@ -143,8 +143,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
     name="InstantTethering.ConnectionToHostResult.ProvisioningFailureRate"
     enum="InstantTethering_ConnectionToHostResult_ProvisioningFailureRate"
     expires_after="2021-02-02">
-  <owner>hansberry@chromium.org</owner>
-  <owner>better-together-dev@google.com</owner>
+  <owner>hansberry@ch40m1um.qjz9zk</owner>
+  <owner>better-together-dev@9oo91e.qjz9zk</owner>
   <summary>
     Provides a breakdown of the times a connection to a host was either
     unsuccessful due to provisioning failure (the carrier disallows tethering)
@@ -163,8 +163,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
     name="InstantTethering.ConnectionToHostResult.SuccessRate.Background"
     enum="InstantTethering_ConnectionToHostResult_SuccessRate"
     expires_after="2021-02-02">
-  <owner>hansberry@chromium.org</owner>
-  <owner>better-together-dev@google.com</owner>
+  <owner>hansberry@ch40m1um.qjz9zk</owner>
+  <owner>better-together-dev@9oo91e.qjz9zk</owner>
   <summary>
     Captures the count of successful and failed connection attempts.
 
@@ -180,8 +180,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="InstantTethering.FeatureState"
     enum="InstantTethering_FeatureState" expires_after="2021-02-02">
-  <owner>hansberry@chromium.org</owner>
-  <owner>better-together-dev@google.com</owner>
+  <owner>hansberry@ch40m1um.qjz9zk</owner>
+  <owner>better-together-dev@9oo91e.qjz9zk</owner>
   <summary>
     Breaks down the state of Instant Tethering during user sessions. All states,
     except for 'Enabled', indicate that the feature was not active. This
@@ -196,8 +196,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="InstantTethering.HostScanBatchDuration" units="ms"
     expires_after="2021-02-02">
-  <owner>hansberry@chromium.org</owner>
-  <owner>better-together-dev@google.com</owner>
+  <owner>hansberry@ch40m1um.qjz9zk</owner>
+  <owner>better-together-dev@9oo91e.qjz9zk</owner>
   <summary>
     The duration of a batch of host scans. A batch is defined as a series of one
     or host scans separated by no more than one minute.
@@ -212,8 +212,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="InstantTethering.HostScanResult"
     enum="InstantTethering_HostScanResult" expires_after="2021-02-02">
-  <owner>hansberry@chromium.org</owner>
-  <owner>better-together-dev@google.com</owner>
+  <owner>hansberry@ch40m1um.qjz9zk</owner>
+  <owner>better-together-dev@9oo91e.qjz9zk</owner>
   <summary>
     Provides a breakdown of the results of each host scan. This metric is
     recorded after each host scan.
@@ -230,8 +230,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="InstantTethering.HotspotUsageDuration" units="ms"
     expires_after="2021-02-02">
-  <owner>hansberry@chromium.org</owner>
-  <owner>better-together-dev@google.com</owner>
+  <owner>hansberry@ch40m1um.qjz9zk</owner>
+  <owner>better-together-dev@9oo91e.qjz9zk</owner>
   <summary>
     The duration of time between the start and end of a Tether connection.
     Timing starts when the device connects to the Wi-Fi hotspot and ends when
@@ -241,8 +241,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="InstantTethering.KeepAliveTickle.Result" enum="BooleanSuccess"
     expires_after="2021-02-02">
-  <owner>hansberry@chromium.org</owner>
-  <owner>better-together-dev@google.com</owner>
+  <owner>hansberry@ch40m1um.qjz9zk</owner>
+  <owner>better-together-dev@9oo91e.qjz9zk</owner>
   <summary>
     Captures the count of successful and failed attempts to send a
     'KeepAliveTickle' message to the phone.
@@ -251,8 +251,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="InstantTethering.MultiDeviceFeatureState"
     enum="MultiDevice_FeatureState" expires_after="2021-02-02">
-  <owner>hansberry@chromium.org</owner>
-  <owner>better-together-dev@google.com</owner>
+  <owner>hansberry@ch40m1um.qjz9zk</owner>
+  <owner>better-together-dev@9oo91e.qjz9zk</owner>
   <summary>
     Indicates the feature state of the Instant Tethering feature. This metric is
     emitted to at the creation of the user session (when the user logs in), and
@@ -263,8 +263,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram name="InstantTethering.NotificationInteractionType"
     enum="InstantTethering_NotificationInteractionType"
     expires_after="2021-02-02">
-  <owner>hansberry@chromium.org</owner>
-  <owner>better-together-dev@google.com</owner>
+  <owner>hansberry@ch40m1um.qjz9zk</owner>
+  <owner>better-together-dev@9oo91e.qjz9zk</owner>
   <summary>
     Counts the number of interactions a user has with each of the Instant
     Tethering notifications.
@@ -273,8 +273,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="InstantTethering.Performance.ConnectTetheringResponseDuration"
     units="ms" expires_after="2021-02-02">
-  <owner>hansberry@chromium.org</owner>
-  <owner>better-together-dev@google.com</owner>
+  <owner>hansberry@ch40m1um.qjz9zk</owner>
+  <owner>better-together-dev@9oo91e.qjz9zk</owner>
   <summary>
     The duration of time between when a client authenticates with a host, and
     receives a ConnectTetheringResponse.
@@ -283,8 +283,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="InstantTethering.Performance.ConnectToHostDuration.Background"
     units="ms" expires_after="2021-02-02">
-  <owner>hansberry@chromium.org</owner>
-  <owner>better-together-dev@google.com</owner>
+  <owner>hansberry@ch40m1um.qjz9zk</owner>
+  <owner>better-together-dev@9oo91e.qjz9zk</owner>
   <summary>
     The duration of time it takes for the client to connect to the host, from
     the moment the user taps 'Connect', until the client connects to the host's
@@ -294,8 +294,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="InstantTethering.Performance.ConnectToHotspotDuration"
     units="ms" expires_after="2021-02-02">
-  <owner>hansberry@chromium.org</owner>
-  <owner>better-together-dev@google.com</owner>
+  <owner>hansberry@ch40m1um.qjz9zk</owner>
+  <owner>better-together-dev@9oo91e.qjz9zk</owner>
   <summary>
     The duration of time it takes for the client to connect to the provided
     hotspot after receiving a ConnectTetheringResponse. This does not include
@@ -306,8 +306,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram
     name="InstantTethering.Performance.DisconnectTetheringRequestDuration"
     units="ms" expires_after="2021-02-02">
-  <owner>hansberry@chromium.org</owner>
-  <owner>better-together-dev@google.com</owner>
+  <owner>hansberry@ch40m1um.qjz9zk</owner>
+  <owner>better-together-dev@9oo91e.qjz9zk</owner>
   <summary>
     The duration of time it takes for the client to send off a
     DisconnectTetheringRequest.
@@ -316,8 +316,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="InstantTethering.Performance.KeepAliveTickleResponseDuration"
     units="ms" expires_after="2021-02-02">
-  <owner>hansberry@chromium.org</owner>
-  <owner>better-together-dev@google.com</owner>
+  <owner>hansberry@ch40m1um.qjz9zk</owner>
+  <owner>better-together-dev@9oo91e.qjz9zk</owner>
   <summary>
     The duration of time between when a client authenticates with a host, and
     receives a KeepAliveTickleResponse.
@@ -327,8 +327,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram
     name="InstantTethering.Performance.TetherAvailabilityResponseDuration"
     units="ms" expires_after="2021-02-02">
-  <owner>hansberry@chromium.org</owner>
-  <owner>better-together-dev@google.com</owner>
+  <owner>hansberry@ch40m1um.qjz9zk</owner>
+  <owner>better-together-dev@9oo91e.qjz9zk</owner>
   <summary>
     The duration of time between when a client authenticates with a host, and
     receives a TetherAvailabilityResponse.
@@ -337,8 +337,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="InstantTethering.SessionCompletionReason"
     enum="InstantTethering_SessionCompletionReason" expires_after="2021-02-02">
-  <owner>hansberry@chromium.org</owner>
-  <owner>better-together-dev@google.com</owner>
+  <owner>hansberry@ch40m1um.qjz9zk</owner>
+  <owner>better-together-dev@9oo91e.qjz9zk</owner>
   <summary>
     Provides a breakdown of how each Tether session ended. A session begins when
     a device is first connected to a host's hotspot, and ends when the device is
@@ -349,8 +349,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="InstantTethering.UserPreference.OnStartup"
     enum="BooleanEnabled" expires_after="2021-02-02">
-  <owner>hansberry@chromium.org</owner>
-  <owner>better-together-dev@google.com</owner>
+  <owner>hansberry@ch40m1um.qjz9zk</owner>
+  <owner>better-together-dev@9oo91e.qjz9zk</owner>
   <summary>
     Provides the count of the number of users who have the Instant Tethering
     toggle enabled vs. disabled on startup. This metric is logged each time a
@@ -360,8 +360,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="InstantTethering.UserPreference.OnToggle"
     enum="BooleanEnabled" expires_after="2021-02-02">
-  <owner>hansberry@chromium.org</owner>
-  <owner>better-together-dev@google.com</owner>
+  <owner>hansberry@ch40m1um.qjz9zk</owner>
+  <owner>better-together-dev@9oo91e.qjz9zk</owner>
   <summary>
     Provides the count of the number of times users have enabled or disabled the
     user preference for Mobile data. This metric is logged each time the value

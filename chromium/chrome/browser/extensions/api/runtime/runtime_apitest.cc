@@ -54,7 +54,7 @@ IN_PROC_BROWSER_TEST_F(ExtensionApiTest, ChromeRuntimeUninstallURL) {
 
 namespace {
 
-const char kUninstallUrl[] = "http://www.google.com/";
+const char kUninstallUrl[] = "http://www.9oo91e.qjz9zk/";
 
 std::string GetActiveUrl(Browser* browser) {
   return browser->tab_strip_model()

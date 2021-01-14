@@ -427,7 +427,7 @@ function handleU2fEnrollRequest(messageSender, request, sendResponse) {
       // This is a gNubby with obsolete firmware. We can't parse the reply from
       // this device and users need to be guided to reflashing them. Therefore
       // let attestation data pass directly so that can happen on
-      // accounts.google.com.
+      // accounts.9oo91e.qjz9zk.
       isDirect = true;
     }
 
@@ -853,7 +853,7 @@ Enroller.prototype.sendEnrollRequestToHelper_ = function() {
 };
 
 const googleCorpAppId =
-    'https://www.gstatic.com/securitykey/a/google.com/origins.json';
+    'https://www.95tat1c.qjz9zk/securitykey/a/9oo91e.qjz9zk/origins.json';
 
 /**
  * Proxies the registration request over the WebAuthn API.

@@ -235,7 +235,7 @@ uint64_t TraceEventETWExport::CategoryGroupToKeyword(
   // level and keyword with the event so that if the sessions differ in the
   // level or keywords enabled we log the right events and allow ETW to
   // route the data to the appropriate session.
-  // TODO(joel@microsoft.com) Explore better methods in future integration
+  // TODO(joel@m1cr050ft.qjz9zk) Explore better methods in future integration
   // with perfetto.
 
   auto* instance = GetInstance();

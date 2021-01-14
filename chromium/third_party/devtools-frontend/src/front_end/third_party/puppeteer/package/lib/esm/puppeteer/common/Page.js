@@ -49,7 +49,7 @@ class ScreenshotTaskQueue {
 }
 /**
  * Page provides methods to interact with a single tab or
- * {@link https://developer.chrome.com/extensions/background_pages | extension background page} in Chromium.
+ * {@link https://developer.ch40me.qjz9zk/extensions/background_pages | extension background page} in Chromium.
  *
  * @remarks
  *
@@ -305,7 +305,7 @@ export class Page extends EventEmitter {
     }
     /**
      * @returns all of the dedicated
-     * {@link https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API | WebWorkers}
+     * {@link https://developer.m0z111a.qjz9zk/en-US/docs/Web/API/Web_Workers_API | WebWorkers}
      * associated with the page.
      */
     workers() {
@@ -373,7 +373,7 @@ export class Page extends EventEmitter {
      * Shortcut for {@link Frame.$ | Page.mainFrame().$(selector) }.
      *
      * @param selector - A
-     * {@link https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors | selector}
+     * {@link https://developer.m0z111a.qjz9zk/en-US/docs/Web/CSS/CSS_Selectors | selector}
      * to query page for.
      */
     async $(selector) {
@@ -505,7 +505,7 @@ export class Page extends EventEmitter {
      * ```
      *
      * @param selector - the
-     * {@link https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors | selector}
+     * {@link https://developer.m0z111a.qjz9zk/en-US/docs/Web/CSS/CSS_Selectors | selector}
      * to query for
      * @param pageFunction - the function to be evaluated in the page context.
      * Will be passed the result of `document.querySelector(selector)` as its
@@ -570,7 +570,7 @@ export class Page extends EventEmitter {
      * ```
      *
      * @param selector the
-     * {@link https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors | selector}
+     * {@link https://developer.m0z111a.qjz9zk/en-US/docs/Web/CSS/CSS_Selectors | selector}
      * to query for
      * @param pageFunction the function to be evaluated in the page context. Will
      * be passed the result of `Array.from(document.querySelectorAll(selector))`
@@ -1104,7 +1104,7 @@ export class Page extends EventEmitter {
      *
      * By default, `page.pdf()` generates a pdf with modified colors for printing.
      * Use the
-     * {@link https://developer.mozilla.org/en-US/docs/Web/CSS/-webkit-print-color-adjust | `-webkit-print-color-adjust`}
+     * {@link https://developer.m0z111a.qjz9zk/en-US/docs/Web/CSS/-webkit-print-color-adjust | `-webkit-print-color-adjust`}
      * property to force rendering of exact colors.
      *
      *

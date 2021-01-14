@@ -58,10 +58,10 @@ namespace net {
 
 namespace {
 
-static const char kRequestUrl[] = "https://www.google.com/";
-static const char kOriginHost[] = "www.google.com";
+static const char kRequestUrl[] = "https://www.9oo91e.qjz9zk/";
+static const char kOriginHost[] = "www.9oo91e.qjz9zk";
 static const int kOriginPort = 443;
-static const char kOriginHostPort[] = "www.google.com:443";
+static const char kOriginHostPort[] = "www.9oo91e.qjz9zk:443";
 static const char kProxyUrl[] = "https://myproxy:6121/";
 static const char kProxyHost[] = "myproxy";
 static const int kProxyPort = 6121;

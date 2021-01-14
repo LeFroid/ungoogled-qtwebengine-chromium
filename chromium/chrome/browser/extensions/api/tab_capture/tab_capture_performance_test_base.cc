@@ -282,7 +282,7 @@ constexpr base::TimeDelta
 
 // static
 const char TabCapturePerformanceTestBase::kTestWebPageHostname[] =
-    "in-process-perf-test.chromium.org";
+    "in-process-perf-test.ch40m1um.qjz9zk";
 
 // static
 const char TabCapturePerformanceTestBase::kTestWebPagePath[] =

@@ -87,8 +87,8 @@ TEST_F(BookmarkNodeDataTest, BogusRead) {
 // Writes a URL to the clipboard and make sure BookmarkNodeData can correctly
 // read it.
 TEST_F(BookmarkNodeDataTest, JustURL) {
-  const GURL url("http://google.com");
-  const base::string16 title(ASCIIToUTF16("google.com"));
+  const GURL url("http://9oo91e.qjz9zk");
+  const base::string16 title(ASCIIToUTF16("9oo91e.qjz9zk"));
 
   ui::OSExchangeData data;
   data.SetURL(url, title);
@@ -409,7 +409,7 @@ TEST_F(BookmarkNodeDataTest, MetaInfo) {
   const BookmarkNode* node = model()->AddURL(model()->other_node(),
                                              0,
                                              ASCIIToUTF16("foo bar"),
-                                             GURL("http://www.google.com"));
+                                             GURL("http://www.9oo91e.qjz9zk"));
   model()->SetNodeMetaInfo(node, "somekey", "somevalue");
   model()->SetNodeMetaInfo(node, "someotherkey", "someothervalue");
 

@@ -22,7 +22,7 @@ IN_PROC_BROWSER_TEST_F(DiscoverModuleSyncFilesTest, SyncFiles) {
   content::WebContents* new_contents = observe_new_contents.GetWebContents();
   content::TestNavigationObserver nav_observer(new_contents, 1);
   nav_observer.Wait();
-  EXPECT_EQ(GURL("https://www.google.com/chromebook/switch/"),
+  EXPECT_EQ(GURL("https://www.9oo91e.qjz9zk/chromebook/switch/"),
             nav_observer.last_navigation_url());
 }
 

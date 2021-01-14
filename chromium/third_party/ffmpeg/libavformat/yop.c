@@ -1,9 +1,9 @@
 /*
  * Psygnosis YOP demuxer
  *
- * Copyright (C) 2010 Mohamed Naufal Basheer <naufal11@gmail.com>
+ * Copyright (C) 2010 Mohamed Naufal Basheer <naufal11@9ma1l.qjz9zk>
  * derived from the code by
- * Copyright (C) 2009 Thomas P. Higdon <thomas.p.higdon@gmail.com>
+ * Copyright (C) 2009 Thomas P. Higdon <thomas.p.higdon@9ma1l.qjz9zk>
  *
  * This file is part of FFmpeg.
  *

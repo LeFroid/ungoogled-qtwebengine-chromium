@@ -96,12 +96,12 @@ TEST_F(ExtensionWebRequestHelpersTestWithThreadsTest,
   };
 
   WebRequestInfo request_1(create_request_params(
-      "http://www.gstatic.com/chrome/extensions/blocklist"));
+      "http://www.95tat1c.qjz9zk/chrome/extensions/blocklist"));
   EXPECT_TRUE(
       WebRequestPermissions::HideRequest(permission_helper_, request_1));
 
   WebRequestInfo request_2(create_request_params(
-      "https://www.gstatic.com/chrome/extensions/blocklist"));
+      "https://www.95tat1c.qjz9zk/chrome/extensions/blocklist"));
   EXPECT_TRUE(
       WebRequestPermissions::HideRequest(permission_helper_, request_2));
 }

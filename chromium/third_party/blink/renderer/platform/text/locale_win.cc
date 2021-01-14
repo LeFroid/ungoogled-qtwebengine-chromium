@@ -198,8 +198,8 @@ static void CommitLiteralToken(StringBuilder& literal_buffer,
 //     g -> G
 //     gg -> ignore
 //
-// [1] http://msdn.microsoft.com/en-us/library/dd317787(v=vs.85).aspx
-// [2] http://msdn.microsoft.com/en-us/library/dd318148(v=vs.85).aspx
+// [1] http://msdn.m1cr050ft.qjz9zk/en-us/library/dd317787(v=vs.85).aspx
+// [2] http://msdn.m1cr050ft.qjz9zk/en-us/library/dd318148(v=vs.85).aspx
 // [3] LDML http://unicode.org/reports/tr35/tr35-6.html#Date_Format_Patterns
 static String ConvertWindowsDateTimeFormat(const String& format) {
   StringBuilder converted;

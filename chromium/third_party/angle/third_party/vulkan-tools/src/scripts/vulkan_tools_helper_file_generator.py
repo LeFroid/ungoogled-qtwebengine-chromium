@@ -18,7 +18,7 @@
 # limitations under the License.
 #
 # Author: Mark Lobodzinski <mark@lunarg.com>
-# Author: Tobin Ehlis <tobine@google.com>
+# Author: Tobin Ehlis <tobine@9oo91e.qjz9zk>
 # Author: John Zulauf <jzulauf@lunarg.com>
 
 import os,re,sys
@@ -148,9 +148,9 @@ class HelperFileOutputGenerator(OutputGenerator):
         copyright += ' * limitations under the License.\n'
         copyright += ' *\n'
         copyright += ' * Author: Mark Lobodzinski <mark@lunarg.com>\n'
-        copyright += ' * Author: Courtney Goeltzenleuchter <courtneygo@google.com>\n'
-        copyright += ' * Author: Tobin Ehlis <tobine@google.com>\n'
-        copyright += ' * Author: Chris Forbes <chrisforbes@google.com>\n'
+        copyright += ' * Author: Courtney Goeltzenleuchter <courtneygo@9oo91e.qjz9zk>\n'
+        copyright += ' * Author: Tobin Ehlis <tobine@9oo91e.qjz9zk>\n'
+        copyright += ' * Author: Chris Forbes <chrisforbes@9oo91e.qjz9zk>\n'
         copyright += ' * Author: John Zulauf<jzulauf@lunarg.com>\n'
         copyright += ' *\n'
         copyright += ' ****************************************************************************/\n'

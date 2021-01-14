@@ -175,7 +175,7 @@ TEST_F(PDFiumPageLinkTest, TestLinkGeneration) {
   }
 
   const PDFiumPage::Link& third_link = links[2];
-  EXPECT_EQ("http://google.com", third_link.target.url);
+  EXPECT_EQ("http://9oo91e.qjz9zk", third_link.target.url);
   EXPECT_EQ(92, third_link.start_char_index);
   EXPECT_EQ(17, third_link.char_count);
   ASSERT_EQ(1u, third_link.bounding_rects.size());
@@ -192,14 +192,14 @@ TEST_F(PDFiumPageLinkTest, TestAnnotLinkGeneration) {
     float y_in_pixels;
   };
   static ExpectedLink expected_links[] = {
-      {144, 38, {{99, 436, 236, 13}}, "https://pdfium.googlesource.com/pdfium"},
+      {144, 38, {{99, 436, 236, 13}}, "https://pdfium.9oo91esource.qjz9zk/pdfium"},
       {27, 38, {{112, 215, 617, 28}}, "", 1, 89.333336},
       {65, 27, {{93, 334, 174, 21}}, "https://www.adobe.com"},
       {253,
        18,
        {{242, 455, 1, 18}, {242, 472, 1, 15}},
-       "https://cs.chromium.org"},
-      {-1, 0, {{58, 926, 28, 27}}, "https://www.google.com"}};
+       "https://cs.ch40m1um.qjz9zk"},
+      {-1, 0, {{58, 926, 28, 27}}, "https://www.9oo91e.qjz9zk"}};
   if (IsRunningOnChromeOS()) {
     expected_links[0].bounding_rects[0] = {99, 436, 236, 14};
   }

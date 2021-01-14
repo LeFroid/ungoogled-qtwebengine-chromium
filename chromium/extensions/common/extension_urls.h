@@ -18,7 +18,7 @@ class Origin;
 namespace extensions {
 
 // Determine whether or not a source came from an extension. |source| can link
-// to a page or a script, and can be external (e.g., "http://www.google.com"),
+// to a page or a script, and can be external (e.g., "http://www.9oo91e.qjz9zk"),
 // extension-related (e.g., "chrome-extension://<extension_id>/background.js"),
 // or internal (e.g., "event_bindings" or "schemaUtils").
 bool IsSourceFromAnExtension(const base::string16& source);

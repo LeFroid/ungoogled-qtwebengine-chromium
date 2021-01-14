@@ -537,7 +537,7 @@ IN_PROC_BROWSER_TEST_F(AccessibilityActionBrowserTest, ShowContextMenu) {
 IN_PROC_BROWSER_TEST_F(AccessibilityActionBrowserTest,
                        ShowContextMenuOnMultilineElement) {
   LoadInitialAccessibilityTreeFromHtml(R"HTML(
-      <a style="line-height: 16px" href='www.google.com'>
+      <a style="line-height: 16px" href='www.9oo91e.qjz9zk'>
       This is a <br><br><br><br>multiline link.</a>
       )HTML");
 
@@ -574,7 +574,7 @@ IN_PROC_BROWSER_TEST_F(AccessibilityActionBrowserTest,
 IN_PROC_BROWSER_TEST_F(AccessibilityActionBrowserTest,
                        ShowContextMenuOnOffscreenElement) {
   LoadInitialAccessibilityTreeFromHtml(R"HTML(
-      <a href='www.google.com'
+      <a href='www.9oo91e.qjz9zk'
       style='position: absolute; top: -1000px; left: -1000px'>
       Offscreen</a></div>
       )HTML");
@@ -609,7 +609,7 @@ IN_PROC_BROWSER_TEST_F(AccessibilityActionBrowserTest,
 IN_PROC_BROWSER_TEST_F(AccessibilityActionBrowserTest,
                        ShowContextMenuOnObscuredElement) {
   LoadInitialAccessibilityTreeFromHtml(R"HTML(
-      <a href='www.google.com'>Obscured</a>
+      <a href='www.9oo91e.qjz9zk'>Obscured</a>
       <div style="position: absolute; height: 100px; width: 100px; top: 0px;
                   left: 0px; background-color:red; line-height: 16px"></div>
       )HTML");

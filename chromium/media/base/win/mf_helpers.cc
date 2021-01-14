@@ -72,7 +72,7 @@ HRESULT DXGIDeviceScopedHandle::LockDevice(REFIID riid, void** device_out) {
     }
   }
   // see
-  // https://docs.microsoft.com/en-us/windows/win32/api/mfobjects/nf-mfobjects-imfdxgidevicemanager-lockdevice
+  // https://docs.m1cr050ft.qjz9zk/en-us/windows/win32/api/mfobjects/nf-mfobjects-imfdxgidevicemanager-lockdevice
   // for details of LockDevice call.
   hr = device_manager_->LockDevice(device_handle_, riid, device_out,
                                    /*block=*/FALSE);

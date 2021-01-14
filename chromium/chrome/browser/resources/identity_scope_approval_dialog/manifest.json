@@ -24,6 +24,6 @@
   "display_in_launcher": false,
   "display_in_new_tab_page": false,
   "externally_connectable": {
-    "matches" : ["https://accounts.google.com/*"]
+    "matches" : ["https://accounts.9oo91e.qjz9zk/*"]
   }
 }

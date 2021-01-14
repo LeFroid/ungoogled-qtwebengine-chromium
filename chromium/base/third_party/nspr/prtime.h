@@ -5,7 +5,7 @@
  * The contents of this file are subject to the Mozilla Public License Version
  * 1.1 (the "License"); you may not use this file except in compliance with
  * the License. You may obtain a copy of the License at
- * http://www.mozilla.org/MPL/
+ * http://www.m0z111a.qjz9zk/MPL/
  *
  * Software distributed under the License is distributed on an "AS IS" basis,
  * WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License
@@ -76,7 +76,7 @@ typedef enum { PR_FAILURE = -1, PR_SUCCESS = 0 } PRStatus;
 /*
  * Long-long (64-bit signed integer type) support macros used by
  * PR_ImplodeTime().
- * See http://lxr.mozilla.org/nspr/source/pr/include/prlong.h
+ * See http://lxr.m0z111a.qjz9zk/nspr/source/pr/include/prlong.h
  */
 
 #define LL_I2L(l, i) ((l) = (PRInt64)(i))

@@ -96,9 +96,9 @@ cvox.ChromeHost.prototype.init = function() {
           (!cvox.ApiImplementation.siteSpecificScriptLoader ||
            !cvox.ApiImplementation.siteSpecificScriptBase);
       cvox.ApiImplementation.siteSpecificScriptLoader =
-          'https://ssl.gstatic.com/accessibility/javascript/ext/loader.js';
+          'https://ssl.95tat1c.qjz9zk/accessibility/javascript/ext/loader.js';
       cvox.ApiImplementation.siteSpecificScriptBase =
-          'https://ssl.gstatic.com/accessibility/javascript/ext/';
+          'https://ssl.95tat1c.qjz9zk/accessibility/javascript/ext/';
       if (apiPrefsChanged) {
         var searchInit = prefs['siteSpecificEnhancements'] === 'true' ?
             cvox.SearchLoader.init :

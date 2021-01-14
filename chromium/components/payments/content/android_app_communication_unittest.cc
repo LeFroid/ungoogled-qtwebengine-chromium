@@ -138,7 +138,7 @@ TEST_F(AndroidAppCommunicationTest, TwoActivitiesInPackage) {
 
   support_->ExpectQueryListOfPaymentAppsAndRespond(
       createApp({"com.example.app.ActivityOne", "com.example.app.ActivityTwo"},
-                "https://play.google.com/billing", {}));
+                "https://play.9oo91e.qjz9zk/billing", {}));
 
   auto communication =
       AndroidAppCommunication::GetForBrowserContext(support_->context());
@@ -164,7 +164,7 @@ TEST_F(AndroidAppCommunicationTest, TwoServicesInPackage) {
   auto scoped_initialization = support_->CreateScopedInitialization();
 
   support_->ExpectQueryListOfPaymentAppsAndRespond(
-      createApp({"com.example.app.Activity"}, "https://play.google.com/billing",
+      createApp({"com.example.app.Activity"}, "https://play.9oo91e.qjz9zk/billing",
                 {"com.example.app.ServiceOne", "com.example.app.ServiceTwo"}));
 
   auto communication =
@@ -192,7 +192,7 @@ TEST_F(AndroidAppCommunicationTest, TwoServicesInPackage) {
     ASSERT_NE(nullptr, apps_.front()->activities.front().get());
     EXPECT_EQ("com.example.app.Activity",
               apps_.front()->activities.front()->name);
-    EXPECT_EQ("https://play.google.com/billing",
+    EXPECT_EQ("https://play.9oo91e.qjz9zk/billing",
               apps_.front()->activities.front()->default_payment_method);
   } else {
     EXPECT_TRUE(apps_.empty());
@@ -203,7 +203,7 @@ TEST_F(AndroidAppCommunicationTest, ActivityAndService) {
   auto scoped_initialization = support_->CreateScopedInitialization();
 
   support_->ExpectQueryListOfPaymentAppsAndRespond(
-      createApp({"com.example.app.Activity"}, "https://play.google.com/billing",
+      createApp({"com.example.app.Activity"}, "https://play.9oo91e.qjz9zk/billing",
                 {"com.example.app.Service"}));
 
   auto communication =
@@ -226,7 +226,7 @@ TEST_F(AndroidAppCommunicationTest, ActivityAndService) {
     ASSERT_NE(nullptr, apps_.front()->activities.front().get());
     EXPECT_EQ("com.example.app.Activity",
               apps_.front()->activities.front()->name);
-    EXPECT_EQ("https://play.google.com/billing",
+    EXPECT_EQ("https://play.9oo91e.qjz9zk/billing",
               apps_.front()->activities.front()->default_payment_method);
   } else {
     EXPECT_TRUE(apps_.empty());
@@ -237,7 +237,7 @@ TEST_F(AndroidAppCommunicationTest, OnlyActivity) {
   auto scoped_initialization = support_->CreateScopedInitialization();
 
   support_->ExpectQueryListOfPaymentAppsAndRespond(createApp(
-      {"com.example.app.Activity"}, "https://play.google.com/billing", {}));
+      {"com.example.app.Activity"}, "https://play.9oo91e.qjz9zk/billing", {}));
 
   auto communication =
       AndroidAppCommunication::GetForBrowserContext(support_->context());
@@ -258,7 +258,7 @@ TEST_F(AndroidAppCommunicationTest, OnlyActivity) {
     ASSERT_NE(nullptr, apps_.front()->activities.front().get());
     EXPECT_EQ("com.example.app.Activity",
               apps_.front()->activities.front()->name);
-    EXPECT_EQ("https://play.google.com/billing",
+    EXPECT_EQ("https://play.9oo91e.qjz9zk/billing",
               apps_.front()->activities.front()->default_payment_method);
   } else {
     EXPECT_TRUE(apps_.empty());
@@ -292,7 +292,7 @@ TEST_F(AndroidAppCommunicationTest, NoArcForIsReadyToPay) {
   communication->SetForTesting();
 
   std::map<std::string, std::set<std::string>> stringified_method_data;
-  stringified_method_data["https://play.google.com/billing"].insert("{}");
+  stringified_method_data["https://play.9oo91e.qjz9zk/billing"].insert("{}");
   communication->IsReadyToPay(
       "com.example.app", "com.example.app.Service", stringified_method_data,
       GURL("https://top-level-origin.com"),
@@ -343,9 +343,9 @@ TEST_F(AndroidAppCommunicationTest, MoreThanOnePaymentMethodDataNotReadyToPay) {
   communication->SetForTesting();
 
   std::map<std::string, std::set<std::string>> stringified_method_data;
-  stringified_method_data["https://play.google.com/billing"].insert(
+  stringified_method_data["https://play.9oo91e.qjz9zk/billing"].insert(
       "{\"product_id\": \"1\"}");
-  stringified_method_data["https://play.google.com/billing"].insert(
+  stringified_method_data["https://play.9oo91e.qjz9zk/billing"].insert(
       "{\"product_id\": \"2\"}");
   communication->IsReadyToPay(
       "com.example.app", "com.example.app.Service", stringified_method_data,
@@ -377,7 +377,7 @@ TEST_F(AndroidAppCommunicationTest, EmptyMethodDataIsReadyToPay) {
 
   std::map<std::string, std::set<std::string>> stringified_method_data;
   stringified_method_data.insert(std::make_pair(
-      "https://play.google.com/billing", std::set<std::string>()));
+      "https://play.9oo91e.qjz9zk/billing", std::set<std::string>()));
   communication->IsReadyToPay(
       "com.example.app", "com.example.app.Service", stringified_method_data,
       GURL("https://top-level-origin.com"),
@@ -405,7 +405,7 @@ TEST_F(AndroidAppCommunicationTest, NotReadyToPay) {
   communication->SetForTesting();
 
   std::map<std::string, std::set<std::string>> stringified_method_data;
-  stringified_method_data["https://play.google.com/billing"].insert("{}");
+  stringified_method_data["https://play.9oo91e.qjz9zk/billing"].insert("{}");
   communication->IsReadyToPay(
       "com.example.app", "com.example.app.Service", stringified_method_data,
       GURL("https://top-level-origin.com"),
@@ -433,7 +433,7 @@ TEST_F(AndroidAppCommunicationTest, ReadyToPay) {
   communication->SetForTesting();
 
   std::map<std::string, std::set<std::string>> stringified_method_data;
-  stringified_method_data["https://play.google.com/billing"].insert("{}");
+  stringified_method_data["https://play.9oo91e.qjz9zk/billing"].insert("{}");
   communication->IsReadyToPay(
       "com.example.app", "com.example.app.Service", stringified_method_data,
       GURL("https://top-level-origin.com"),
@@ -461,7 +461,7 @@ TEST_F(AndroidAppCommunicationTest, NoArcForInvokePaymentApp) {
   communication->SetForTesting();
 
   std::map<std::string, std::set<std::string>> stringified_method_data;
-  stringified_method_data["https://play.google.com/billing"].insert("{}");
+  stringified_method_data["https://play.9oo91e.qjz9zk/billing"].insert("{}");
   communication->InvokePaymentApp(
       "com.example.app", "com.example.app.Activity", stringified_method_data,
       GURL("https://top-level-origin.com"),
@@ -514,9 +514,9 @@ TEST_F(AndroidAppCommunicationTest, NoPaymentWithMoreThanOnePaymentMethodData) {
   communication->SetForTesting();
 
   std::map<std::string, std::set<std::string>> stringified_method_data;
-  stringified_method_data["https://play.google.com/billing"].insert(
+  stringified_method_data["https://play.9oo91e.qjz9zk/billing"].insert(
       "{\"product_id\": \"1\"}");
-  stringified_method_data["https://play.google.com/billing"].insert(
+  stringified_method_data["https://play.9oo91e.qjz9zk/billing"].insert(
       "{\"product_id\": \"2\"}");
   communication->InvokePaymentApp(
       "com.example.app", "com.example.app.Activity", stringified_method_data,
@@ -543,7 +543,7 @@ TEST_F(AndroidAppCommunicationTest, PaymentWithEmptyMethodData) {
 
   support_->ExpectInvokePaymentAppAndRespond(
       /*is_activity_result_ok=*/true,
-      /*payment_method_identifier=*/"https://play.google.com/billing",
+      /*payment_method_identifier=*/"https://play.9oo91e.qjz9zk/billing",
       /*stringified_details*/ "{\"status\": \"ok\"}");
 
   auto communication =
@@ -552,7 +552,7 @@ TEST_F(AndroidAppCommunicationTest, PaymentWithEmptyMethodData) {
 
   std::map<std::string, std::set<std::string>> stringified_method_data;
   stringified_method_data.insert(std::make_pair(
-      "https://play.google.com/billing", std::set<std::string>()));
+      "https://play.9oo91e.qjz9zk/billing", std::set<std::string>()));
   communication->InvokePaymentApp(
       "com.example.app", "com.example.app.Activity", stringified_method_data,
       GURL("https://top-level-origin.com"),
@@ -563,7 +563,7 @@ TEST_F(AndroidAppCommunicationTest, PaymentWithEmptyMethodData) {
   if (support_->AreAndroidAppsSupportedOnThisPlatform()) {
     EXPECT_FALSE(error_.has_value());
     EXPECT_TRUE(is_activity_result_ok_);
-    EXPECT_EQ("https://play.google.com/billing", payment_method_identifier_);
+    EXPECT_EQ("https://play.9oo91e.qjz9zk/billing", payment_method_identifier_);
     EXPECT_EQ("{\"status\": \"ok\"}", stringified_details_);
   } else {
     ASSERT_TRUE(error_.has_value());
@@ -576,7 +576,7 @@ TEST_F(AndroidAppCommunicationTest, UserCancelInvokePaymentApp) {
 
   support_->ExpectInvokePaymentAppAndRespond(
       /*is_activity_result_ok=*/false,
-      /*payment_method_identifier=*/"https://play.google.com/billing",
+      /*payment_method_identifier=*/"https://play.9oo91e.qjz9zk/billing",
       /*stringified_details*/ "{}");
 
   auto communication =
@@ -584,7 +584,7 @@ TEST_F(AndroidAppCommunicationTest, UserCancelInvokePaymentApp) {
   communication->SetForTesting();
 
   std::map<std::string, std::set<std::string>> stringified_method_data;
-  stringified_method_data["https://play.google.com/billing"].insert("{}");
+  stringified_method_data["https://play.9oo91e.qjz9zk/billing"].insert("{}");
   communication->InvokePaymentApp(
       "com.example.app", "com.example.app.Activity", stringified_method_data,
       GURL("https://top-level-origin.com"),
@@ -595,7 +595,7 @@ TEST_F(AndroidAppCommunicationTest, UserCancelInvokePaymentApp) {
   if (support_->AreAndroidAppsSupportedOnThisPlatform()) {
     EXPECT_FALSE(error_.has_value());
     EXPECT_FALSE(is_activity_result_ok_);
-    EXPECT_EQ("https://play.google.com/billing", payment_method_identifier_);
+    EXPECT_EQ("https://play.9oo91e.qjz9zk/billing", payment_method_identifier_);
     EXPECT_EQ("{}", stringified_details_);
   } else {
     ASSERT_TRUE(error_.has_value());
@@ -608,7 +608,7 @@ TEST_F(AndroidAppCommunicationTest, UserConfirmInvokePaymentApp) {
 
   support_->ExpectInvokePaymentAppAndRespond(
       /*is_activity_result_ok=*/true,
-      /*payment_method_identifier=*/"https://play.google.com/billing",
+      /*payment_method_identifier=*/"https://play.9oo91e.qjz9zk/billing",
       /*stringified_details*/ "{\"status\": \"ok\"}");
 
   auto communication =
@@ -616,7 +616,7 @@ TEST_F(AndroidAppCommunicationTest, UserConfirmInvokePaymentApp) {
   communication->SetForTesting();
 
   std::map<std::string, std::set<std::string>> stringified_method_data;
-  stringified_method_data["https://play.google.com/billing"].insert("{}");
+  stringified_method_data["https://play.9oo91e.qjz9zk/billing"].insert("{}");
   communication->InvokePaymentApp(
       "com.example.app", "com.example.app.Activity", stringified_method_data,
       GURL("https://top-level-origin.com"),
@@ -627,7 +627,7 @@ TEST_F(AndroidAppCommunicationTest, UserConfirmInvokePaymentApp) {
   if (support_->AreAndroidAppsSupportedOnThisPlatform()) {
     EXPECT_FALSE(error_.has_value());
     EXPECT_TRUE(is_activity_result_ok_);
-    EXPECT_EQ("https://play.google.com/billing", payment_method_identifier_);
+    EXPECT_EQ("https://play.9oo91e.qjz9zk/billing", payment_method_identifier_);
     EXPECT_EQ("{\"status\": \"ok\"}", stringified_details_);
   } else {
     ASSERT_TRUE(error_.has_value());

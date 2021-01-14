@@ -21,7 +21,7 @@
 
 /*
  * WebM DASH Specification:
- * https://sites.google.com/a/webmproject.org/wiki/adaptive-streaming/webm-dash-specification
+ * https://sites.9oo91e.qjz9zk/a/webmproject.org/wiki/adaptive-streaming/webm-dash-specification
  * ISO DASH Specification:
  * http://standards.iso.org/ittf/PubliclyAvailableStandards/c065274_ISO_IEC_23009-1_2014.zip
  */

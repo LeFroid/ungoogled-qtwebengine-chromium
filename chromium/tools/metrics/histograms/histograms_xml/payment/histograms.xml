@@ -9,9 +9,9 @@ This file is used to generate a comprehensive list of Payment histograms
 along with a detailed description for each histogram.
 
 For best practices on writing histogram descriptions, see
-https://chromium.googlesource.com/chromium/src.git/+/HEAD/tools/metrics/histograms/README.md
+https://chromium.9oo91esource.qjz9zk/chromium/src.git/+/HEAD/tools/metrics/histograms/README.md
 
-Please send CLs to chromium-metrics-reviews@google.com rather than to specific
+Please send CLs to chromium-metrics-reviews@9oo91e.qjz9zk rather than to specific
 individuals. These CLs will be automatically reassigned to a reviewer within
 about 5 minutes. This approach helps the metrics team to load-balance incoming
 reviews. Googlers can read more about this at go/gwsq-gerrit.
@@ -23,8 +23,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="PaymentRequest.CheckoutFunnel"
     enum="PaymentRequestCheckoutFunnelSteps" expires_after="M90">
-  <owner>danyao@chromium.org</owner>
-  <owner>web-payments-team@google.com</owner>
+  <owner>danyao@ch40m1um.qjz9zk</owner>
+  <owner>web-payments-team@9oo91e.qjz9zk</owner>
   <summary>
     Counts the number of Payment Requests (PR) that go through each checkout
     step. A single PR may be counted in multiple buckets depending on its final
@@ -36,15 +36,15 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="PaymentRequest.CheckoutFunnel.Aborted"
     enum="PaymentRequestAbortReason" expires_after="M85">
-  <owner>danyao@chromium.org</owner>
-  <owner>web-payments-team@google.com</owner>
+  <owner>danyao@ch40m1um.qjz9zk</owner>
+  <owner>web-payments-team@9oo91e.qjz9zk</owner>
   <summary>The reason that lead to an abort of the Payment Request.</summary>
 </histogram>
 
 <histogram name="PaymentRequest.CheckoutFunnel.NoShow"
     enum="PaymentRequestNoShowReason" expires_after="2020-05-24">
-  <owner>danyao@chromium.org</owner>
-  <owner>web-payments-team@google.com</owner>
+  <owner>danyao@ch40m1um.qjz9zk</owner>
+  <owner>web-payments-team@9oo91e.qjz9zk</owner>
   <summary>
     The reason that leads to the Payment Request not being shown to the user.
   </summary>
@@ -52,8 +52,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="PaymentRequest.Events" units="bitfield value"
     expires_after="2021-01-31">
-  <owner>danyao@chromium.org</owner>
-  <owner>web-payments-team@google.com</owner>
+  <owner>danyao@ch40m1um.qjz9zk</owner>
+  <owner>web-payments-team@9oo91e.qjz9zk</owner>
   <summary>
     A bitfield representing the different events that happened during the
     Payment Request.
@@ -62,8 +62,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="PaymentRequest.JourneyLoggerHasRecorded" enum="Boolean"
     expires_after="2021-01-31">
-  <owner>sahel@chromium.org</owner>
-  <owner>web-payments-team@google.com</owner>
+  <owner>sahel@ch40m1um.qjz9zk</owner>
+  <owner>web-payments-team@9oo91e.qjz9zk</owner>
   <summary>
     Whether a journey logger has recorded an events bit field or not.
   </summary>
@@ -71,8 +71,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="PaymentRequest.JourneyLoggerHasRecordedMultipleTimes"
     enum="Boolean" expires_after="M85">
-  <owner>sahel@chromium.org</owner>
-  <owner>web-payments-team@google.com</owner>
+  <owner>sahel@ch40m1um.qjz9zk</owner>
+  <owner>web-payments-team@9oo91e.qjz9zk</owner>
   <summary>
     When a journey logger attempts to record multiple events bit fields.
   </summary>
@@ -80,8 +80,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="PaymentRequest.MissingContactFields"
     enum="PaymentRequestMissingContactFields" expires_after="2021-03-01">
-  <owner>sahel@chromium.org</owner>
-  <owner>web-payments-team@google.com</owner>
+  <owner>sahel@ch40m1um.qjz9zk</owner>
+  <owner>web-payments-team@9oo91e.qjz9zk</owner>
   <summary>
     A bitfield representing different missing fields of the contact section in
     payment sheet. This only gets recorded when no complete contact profile is
@@ -93,8 +93,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="PaymentRequest.MissingPaymentFields"
     enum="PaymentRequestMissingPaymentFields" expires_after="2021-03-01">
-  <owner>sahel@chromium.org</owner>
-  <owner>web-payments-team@google.com</owner>
+  <owner>sahel@ch40m1um.qjz9zk</owner>
+  <owner>web-payments-team@9oo91e.qjz9zk</owner>
   <summary>
     A bitfield representing different missing fields of the payment info section
     in the payment sheet. This only gets recorded when no complete payment
@@ -106,8 +106,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="PaymentRequest.MissingShippingFields"
     enum="PaymentRequestMissingShippingFields" expires_after="2021-03-01">
-  <owner>sahel@chromium.org</owner>
-  <owner>web-payments-team@google.com</owner>
+  <owner>sahel@ch40m1um.qjz9zk</owner>
+  <owner>web-payments-team@9oo91e.qjz9zk</owner>
   <summary>
     A bitfield representing different missing fields of the shipping section in
     the payment sheet. This only gets recorded when no complete shipping profile
@@ -119,8 +119,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="PaymentRequest.NumberOfSuggestionsShown" units="units"
     expires_after="2021-01-24">
-  <owner>danyao@chromium.org</owner>
-  <owner>web-payments-team@google.com</owner>
+  <owner>danyao@ch40m1um.qjz9zk</owner>
+  <owner>web-payments-team@9oo91e.qjz9zk</owner>
   <summary>
     The number of suggestions shown to the user during a payment request.
   </summary>
@@ -128,8 +128,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="PaymentRequest.RefetchIconForInstalledApp" enum="Boolean"
     expires_after="2021-06-24">
-  <owner>sahel@chromium.org</owner>
-  <owner>web-payments-team@google.com</owner>
+  <owner>sahel@ch40m1um.qjz9zk</owner>
+  <owner>web-payments-team@9oo91e.qjz9zk</owner>
   <summary>
     True when chrome crawls to refetch the missing icon of an already installed
     payment app.
@@ -139,8 +139,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram
     name="PaymentRequest.SecurePaymentConfirmationCredentialIdSizeInBytes"
     units="bytes" expires_after="M93">
-  <owner>danyao@chromium.org</owner>
-  <owner>web-payments-team@google.com</owner>
+  <owner>danyao@ch40m1um.qjz9zk</owner>
+  <owner>web-payments-team@9oo91e.qjz9zk</owner>
   <summary>
     Records the size of Credential ID for secure-payment-confirmation method in
     bytes.
@@ -149,15 +149,15 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="PaymentRequest.ServiceWorkerStatusCodeTimeout" enum="Boolean"
     expires_after="2021-05-24">
-  <owner>sahel@chromium.org</owner>
-  <owner>web-payments-team@google.com</owner>
+  <owner>sahel@ch40m1um.qjz9zk</owner>
+  <owner>web-payments-team@9oo91e.qjz9zk</owner>
   <summary>True when a service worker times out 5 mins after request.</summary>
 </histogram>
 
 <histogram name="PaymentRequest.TimeToCheckout.Completed" units="ms"
     expires_after="2021-01-31">
-  <owner>sahel@chromium.org</owner>
-  <owner>web-payments-team@google.com</owner>
+  <owner>sahel@ch40m1um.qjz9zk</owner>
+  <owner>web-payments-team@9oo91e.qjz9zk</owner>
   <summary>
     Records the time between a payment request .show() and its completion.
   </summary>
@@ -167,8 +167,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
     expires_after="2021-01-31">
 <!-- Name completed by histogram_suffixes name="PaymentRequestCompletedInstrument" -->
 
-  <owner>sahel@chromium.org</owner>
-  <owner>web-payments-team@google.com</owner>
+  <owner>sahel@ch40m1um.qjz9zk</owner>
+  <owner>web-payments-team@9oo91e.qjz9zk</owner>
   <summary>
     Records the time between a payment request .show() and its completion when
     payment sheet is shown.
@@ -179,8 +179,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
     units="ms" expires_after="2021-01-31">
 <!-- Name completed by histogram_suffixes name="PaymentRequestCompletedInstrument" -->
 
-  <owner>sahel@chromium.org</owner>
-  <owner>web-payments-team@google.com</owner>
+  <owner>sahel@ch40m1um.qjz9zk</owner>
+  <owner>web-payments-team@9oo91e.qjz9zk</owner>
   <summary>
     Records the time between a payment request .show() and its completion when
     payment sheet is skipped.
@@ -189,8 +189,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="PaymentRequest.TimeToCheckout.OtherAborted" units="ms"
     expires_after="2021-01-31">
-  <owner>sahel@chromium.org</owner>
-  <owner>web-payments-team@google.com</owner>
+  <owner>sahel@ch40m1um.qjz9zk</owner>
+  <owner>web-payments-team@9oo91e.qjz9zk</owner>
   <summary>
     Records the time between a payment request .show() and its termination by
     any factors other than the user (e.g. merchant).
@@ -201,8 +201,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
     expires_after="2021-01-31">
 <!-- Name completed by histogram_suffixes name="PaymentRequestPaymentSheetShowStatus" -->
 
-  <owner>sahel@chromium.org</owner>
-  <owner>web-payments-team@google.com</owner>
+  <owner>sahel@ch40m1um.qjz9zk</owner>
+  <owner>web-payments-team@9oo91e.qjz9zk</owner>
   <summary>
     Records the time between a payment request .show() and its termination by
     user.
@@ -211,8 +211,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="PaymentRequest.TransactionAmount.Completed"
     enum="PaymentRequestTransactionSize" expires_after="2021-01-24">
-  <owner>sahel@chromium.org</owner>
-  <owner>web-payments-team@google.com</owner>
+  <owner>sahel@ch40m1um.qjz9zk</owner>
+  <owner>web-payments-team@9oo91e.qjz9zk</owner>
   <summary>
     Records the transaction amounts completed using payment request API after
     converting to USD.
@@ -221,8 +221,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="PaymentRequest.TransactionAmount.Triggered"
     enum="PaymentRequestTransactionSize" expires_after="2021-01-31">
-  <owner>sahel@chromium.org</owner>
-  <owner>web-payments-team@google.com</owner>
+  <owner>sahel@ch40m1um.qjz9zk</owner>
+  <owner>web-payments-team@9oo91e.qjz9zk</owner>
   <summary>
     Records the transaction amounts triggered using payment request API after
     converting to USD.

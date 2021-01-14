@@ -70,7 +70,7 @@ mr.MediaSourceUtils.CAST_APP_ID_ = '__castAppId__';
  * @private @const {!Array<string>}
  */
 mr.MediaSourceUtils.MIRROR_APP_ID_ORIGIN_WHITELIST_ = [
-  'https://docs.google.com',  // slides
+  'https://docs.9oo91e.qjz9zk',  // slides
 ];
 
 

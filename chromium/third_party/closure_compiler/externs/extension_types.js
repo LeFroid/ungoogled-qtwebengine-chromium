@@ -7,7 +7,7 @@
 // NOTE: The format of types has changed. 'FooType' is now
 //   'chrome.extensionTypes.FooType'.
 // Please run the closure compiler before committing changes.
-// See https://chromium.googlesource.com/chromium/src/+/master/docs/closure_compilation.md
+// See https://chromium.9oo91esource.qjz9zk/chromium/src/+/master/docs/closure_compilation.md
 
 /** @fileoverview Externs generated from namespace: extensionTypes */
 
@@ -16,7 +16,7 @@ chrome.extensionTypes = {};
 
 /**
  * @enum {string}
- * @see https://developer.chrome.com/extensions/extensionTypes#type-ImageFormat
+ * @see https://developer.ch40me.qjz9zk/extensions/extensionTypes#type-ImageFormat
  */
 chrome.extensionTypes.ImageFormat = {
   JPEG: 'jpeg',
@@ -29,13 +29,13 @@ chrome.extensionTypes.ImageFormat = {
  *   format: (!chrome.extensionTypes.ImageFormat|undefined),
  *   quality: (number|undefined)
  * }}
- * @see https://developer.chrome.com/extensions/extensionTypes#type-ImageDetails
+ * @see https://developer.ch40me.qjz9zk/extensions/extensionTypes#type-ImageDetails
  */
 chrome.extensionTypes.ImageDetails;
 
 /**
  * @enum {string}
- * @see https://developer.chrome.com/extensions/extensionTypes#type-RunAt
+ * @see https://developer.ch40me.qjz9zk/extensions/extensionTypes#type-RunAt
  */
 chrome.extensionTypes.RunAt = {
   DOCUMENT_START: 'document_start',
@@ -45,7 +45,7 @@ chrome.extensionTypes.RunAt = {
 
 /**
  * @enum {string}
- * @see https://developer.chrome.com/extensions/extensionTypes#type-CSSOrigin
+ * @see https://developer.ch40me.qjz9zk/extensions/extensionTypes#type-CSSOrigin
  */
 chrome.extensionTypes.CSSOrigin = {
   AUTHOR: 'author',
@@ -63,6 +63,6 @@ chrome.extensionTypes.CSSOrigin = {
  *   runAt: (!chrome.extensionTypes.RunAt|undefined),
  *   cssOrigin: (!chrome.extensionTypes.CSSOrigin|undefined)
  * }}
- * @see https://developer.chrome.com/extensions/extensionTypes#type-InjectDetails
+ * @see https://developer.ch40me.qjz9zk/extensions/extensionTypes#type-InjectDetails
  */
 chrome.extensionTypes.InjectDetails;

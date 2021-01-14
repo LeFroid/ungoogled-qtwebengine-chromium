@@ -38,7 +38,7 @@ Polymer({
   /** @private */
   onManageContacts_() {
     // TODO(vecore): this is not a final link
-    window.open('https://contacts.google.com', '_blank');
+    window.open('https://contacts.9oo91e.qjz9zk', '_blank');
   },
 
 });

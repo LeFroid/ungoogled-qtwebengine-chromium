@@ -30,7 +30,7 @@ TEST_WORKSPACE = os.path.join(tempfile.gettempdir(), 'test-v8-run-perf')
 
 V8_JSON = {
   'path': ['.'],
-  'owners': ['username@chromium.org'],
+  'owners': ['username@ch40m1um.qjz9zk'],
   'binary': 'd7',
   'timeout': 60,
   'flags': ['--flag'],
@@ -45,7 +45,7 @@ V8_JSON = {
 
 V8_NESTED_SUITES_JSON = {
   'path': ['.'],
-  'owners': ['username@chromium.org'],
+  'owners': ['username@ch40m1um.qjz9zk'],
   'flags': ['--flag'],
   'run_count': 1,
   'units': 'score',
@@ -82,7 +82,7 @@ V8_NESTED_SUITES_JSON = {
 
 V8_GENERIC_JSON = {
   'path': ['.'],
-  'owners': ['username@chromium.org'],
+  'owners': ['username@ch40m1um.qjz9zk'],
   'binary': 'cc',
   'flags': ['--flag'],
   'generic': True,

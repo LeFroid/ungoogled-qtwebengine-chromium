@@ -26,7 +26,7 @@
 #include "base/win/scoped_handle.h"
 
 // These structures and functions are documented in MSDN, see
-// http://msdn.microsoft.com/en-us/library/gg547638(v=vs.85).aspx
+// http://msdn.m1cr050ft.qjz9zk/en-us/library/gg547638(v=vs.85).aspx
 // there are however no headers or import libraries available in the
 // Platform SDK. They are declared outside of the anonymous namespace to
 // allow them to be forward declared in the header file.

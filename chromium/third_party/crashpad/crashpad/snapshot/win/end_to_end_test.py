@@ -424,7 +424,7 @@ def main(args):
             protocol = 'https' if platform.win32_ver()[0] != 'XP' else 'http'
             os.environ['_NT_SYMBOL_PATH'] = (
                 'SRV*' + symbol_dir + '*' + protocol +
-                '://msdl.microsoft.com/download/symbols')
+                '://msdl.m1cr050ft.qjz9zk/download/symbols')
 
         pipe_name = r'\\.\pipe\end-to-end_%s_%s' % (os.getpid(),
                                                     str(random.getrandbits(64)))

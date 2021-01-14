@@ -45,7 +45,7 @@
  * </pre>
  *
  * See also
- * https://developer.mozilla.org/en-US/docs/Web/API/window.requestAnimationFrame
+ * https://developer.m0z111a.qjz9zk/en-US/docs/Web/API/window.requestAnimationFrame
  */
 
 goog.provide('goog.dom.animationFrame');

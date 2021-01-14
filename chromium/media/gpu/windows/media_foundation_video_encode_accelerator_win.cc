@@ -40,7 +40,7 @@ const size_t kMaxResolutionWidth = 1920;
 const size_t kMaxResolutionHeight = 1088;
 const size_t kNumInputBuffers = 3;
 // Media Foundation uses 100 nanosecond units for time, see
-// https://msdn.microsoft.com/en-us/library/windows/desktop/ms697282(v=vs.85).aspx.
+// https://msdn.m1cr050ft.qjz9zk/en-us/library/windows/desktop/ms697282(v=vs.85).aspx.
 const size_t kOneMicrosecondInMFSampleTimeUnits = 10;
 const size_t kOutputSampleBufferSizeRatio = 4;
 
@@ -146,7 +146,7 @@ MediaFoundationVideoEncodeAccelerator::GetSupportedProfiles() {
   if (pp_activate) {
     // Release the enumerated instances if any.
     // According to Windows Dev Center,
-    // https://docs.microsoft.com/en-us/windows/win32/api/mfapi/nf-mfapi-mftenumex
+    // https://docs.m1cr050ft.qjz9zk/en-us/windows/win32/api/mfapi/nf-mfapi-mftenumex
     // The caller must release the pointers.
     for (UINT32 i = 0; i < encoder_count; i++) {
       if (pp_activate[i]) {
@@ -213,7 +213,7 @@ bool MediaFoundationVideoEncodeAccelerator::Initialize(const Config& config,
       if (pp_activate) {
         // Release the enumerated instances if any.
         // According to Windows Dev Center,
-        // https://docs.microsoft.com/en-us/windows/win32/api/mfapi/nf-mfapi-mftenumex
+        // https://docs.m1cr050ft.qjz9zk/en-us/windows/win32/api/mfapi/nf-mfapi-mftenumex
         // The caller must release the pointers.
         for (UINT32 i = 0; i < encoder_count; i++) {
           if (pp_activate[i]) {
@@ -229,7 +229,7 @@ bool MediaFoundationVideoEncodeAccelerator::Initialize(const Config& config,
     if (pp_activate) {
       // Release the enumerated instances if any.
       // According to Windows Dev Center,
-      // https://docs.microsoft.com/en-us/windows/win32/api/mfapi/nf-mfapi-mftenumex
+      // https://docs.m1cr050ft.qjz9zk/en-us/windows/win32/api/mfapi/nf-mfapi-mftenumex
       // The caller must release the pointers.
       for (UINT32 i = 0; i < encoder_count; i++) {
         if (pp_activate[i]) {
@@ -490,7 +490,7 @@ bool MediaFoundationVideoEncodeAccelerator::ActivateAsyncEncoder(
 
         // The component that calls ActivateObject is
         // responsible for calling ShutdownObject,
-        // https://docs.microsoft.com/en-us/windows/win32/api/mfobjects/nf-mfobjects-imfactivate-shutdownobject.
+        // https://docs.m1cr050ft.qjz9zk/en-us/windows/win32/api/mfobjects/nf-mfobjects-imfactivate-shutdownobject.
         pp_activate[i]->ShutdownObject();
       }
     }
@@ -505,7 +505,7 @@ bool MediaFoundationVideoEncodeAccelerator::ActivateAsyncEncoder(
   hr = encoder_->GetAttributes(&all_attributes);
   if (SUCCEEDED(hr)) {
     // An asynchronous MFT must support dynamic format changes,
-    // https://docs.microsoft.com/en-us/windows/win32/medfound/asynchronous-mfts#format-changes.
+    // https://docs.m1cr050ft.qjz9zk/en-us/windows/win32/medfound/asynchronous-mfts#format-changes.
     UINT32 dynamic = FALSE;
     hr = all_attributes->GetUINT32(MFT_SUPPORT_DYNAMIC_FORMAT_CHANGE, &dynamic);
     if (!dynamic) {
@@ -514,7 +514,7 @@ bool MediaFoundationVideoEncodeAccelerator::ActivateAsyncEncoder(
     }
 
     // Unlock the selected asynchronous MFTs,
-    // https://docs.microsoft.com/en-us/windows/win32/medfound/asynchronous-mfts#unlocking-asynchronous-mfts.
+    // https://docs.m1cr050ft.qjz9zk/en-us/windows/win32/medfound/asynchronous-mfts#unlocking-asynchronous-mfts.
     UINT32 async = FALSE;
     hr = all_attributes->GetUINT32(MF_TRANSFORM_ASYNC, &async);
     if (!async) {
@@ -624,7 +624,7 @@ bool MediaFoundationVideoEncodeAccelerator::SetEncoderModes() {
   if (!compatible_with_win7_) {
     // Though CODECAPI_AVEncCommonRateControlMode is supported by Windows 7, but
     // according to a discussion on MSDN,
-    // https://social.msdn.microsoft.com/Forums/windowsdesktop/en-US/6da521e9-7bb3-4b79-a2b6-b31509224638/win7-h264-encoder-imfsinkwriter-cant-use-quality-vbr-encoding?forum=mediafoundationdevelopment
+    // https://social.msdn.m1cr050ft.qjz9zk/Forums/windowsdesktop/en-US/6da521e9-7bb3-4b79-a2b6-b31509224638/win7-h264-encoder-imfsinkwriter-cant-use-quality-vbr-encoding?forum=mediafoundationdevelopment
     // setting it on Windows 7 returns error.
     RETURN_ON_HR_FAILURE(hr, "Couldn't set CommonRateControlMode", false);
   }

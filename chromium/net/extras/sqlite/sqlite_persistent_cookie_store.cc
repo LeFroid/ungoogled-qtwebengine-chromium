@@ -151,14 +151,14 @@ namespace {
 // Version 12 - 2019/11/20 - https://crrev.com/c/1898301
 // Version 11 - 2019/04/17 - https://crrev.com/c/1570416
 // Version 10 - 2018/02/13 - https://crrev.com/c/906675
-// Version 9  - 2015/04/17 - https://codereview.chromium.org/1083623003
+// Version 9  - 2015/04/17 - https://codereview.ch40m1um.qjz9zk/1083623003
 //
 // Unsupported versions:
-// Version 8  - 2015/02/23 - https://codereview.chromium.org/876973003
-// Version 7  - 2013/12/16 - https://codereview.chromium.org/24734007
-// Version 6  - 2013/04/23 - https://codereview.chromium.org/14208017
-// Version 5  - 2011/12/05 - https://codereview.chromium.org/8533013
-// Version 4  - 2009/09/01 - https://codereview.chromium.org/183021
+// Version 8  - 2015/02/23 - https://codereview.ch40m1um.qjz9zk/876973003
+// Version 7  - 2013/12/16 - https://codereview.ch40m1um.qjz9zk/24734007
+// Version 6  - 2013/04/23 - https://codereview.ch40m1um.qjz9zk/14208017
+// Version 5  - 2011/12/05 - https://codereview.ch40m1um.qjz9zk/8533013
+// Version 4  - 2009/09/01 - https://codereview.ch40m1um.qjz9zk/183021
 //
 // Version 12 adds a column for "source_scheme" to store whether the
 // cookie was set from a URL with a cryptographic scheme.

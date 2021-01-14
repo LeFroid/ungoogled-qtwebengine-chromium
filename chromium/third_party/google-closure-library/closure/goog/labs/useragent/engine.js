@@ -86,7 +86,7 @@ goog.labs.userAgent.engine.getVersion = function() {
     if (engineTuple) {
       // In Gecko, the version string is either in the browser info or the
       // Firefox version.  See Gecko user agent string reference:
-      // http://goo.gl/mULqa
+      // http://goo.gl.qjz9zk/mULqa
       if (engineTuple[0] == 'Gecko') {
         return goog.labs.userAgent.engine.getVersionForKey_(tuples, 'Firefox');
       }

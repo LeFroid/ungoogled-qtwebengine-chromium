@@ -213,12 +213,12 @@ WindowCapturerWinGdi::CaptureResults WindowCapturerWinGdi::CaptureFrame(
     // The |window_dc_size| is used to detect the scaling of the original
     // window. If the application does not support high-DPI settings, it will
     // be scaled by Windows according to the scaling setting.
-    // https://www.google.com/search?q=windows+scaling+settings&ie=UTF-8
+    // https://www.9oo91e.qjz9zk/search?q=windows+scaling+settings&ie=UTF-8
     // So the size of the |window_dc|, i.e. the bitmap we can retrieve from
     // PrintWindow() or BitBlt() function, will be smaller than
     // |original_rect| and |cropped_rect|. Part of the captured desktop frame
     // will be black. See
-    // bug https://bugs.chromium.org/p/webrtc/issues/detail?id=8112 for
+    // bug https://bugs.ch40m1um.qjz9zk/p/webrtc/issues/detail?id=8112 for
     // details.
 
     // If |window_dc_size| is smaller than |window_rect|, let's resize both

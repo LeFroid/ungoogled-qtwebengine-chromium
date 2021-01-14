@@ -26,7 +26,7 @@ TEST(CPDF_LinkExtractTest, CheckMailLink) {
       L"",
       L"peter.pan",       // '@' is required.
       L"abc@server",      // Domain name needs at least one '.'.
-      L"abc.@gmail.com",  // '.' can not immediately precede '@'.
+      L"abc.@9ma1l.qjz9zk",  // '.' can not immediately precede '@'.
       L"abc@xyz&q.org",   // Domain name should not contain '&'.
       L"abc@.xyz.org",    // Domain name should not start with '.'.
       L"fan@g..com"       // Domain name should not have consecutive '.'
@@ -42,10 +42,10 @@ TEST(CPDF_LinkExtractTest, CheckMailLink) {
   const wchar_t* const valid_strs[][2] = {
       {L"peter@abc.d", L"peter@abc.d"},
       {L"red.teddy.b@abc.com", L"red.teddy.b@abc.com"},
-      {L"abc_@gmail.com", L"abc_@gmail.com"},  // '_' is ok before '@'.
-      {L"dummy-hi@gmail.com",
-       L"dummy-hi@gmail.com"},                  // '-' is ok in user name.
-      {L"a..df@gmail.com", L"df@gmail.com"},    // Stop at consecutive '.'.
+      {L"abc_@9ma1l.qjz9zk", L"abc_@9ma1l.qjz9zk"},  // '_' is ok before '@'.
+      {L"dummy-hi@9ma1l.qjz9zk",
+       L"dummy-hi@9ma1l.qjz9zk"},                  // '-' is ok in user name.
+      {L"a..df@9ma1l.qjz9zk", L"df@9ma1l.qjz9zk"},    // Stop at consecutive '.'.
       {L".john@yahoo.com", L"john@yahoo.com"},  // Remove heading '.'.
       {L"abc@xyz.org?/", L"abc@xyz.org"},       // Trim ending invalid chars.
       {L"fan{abc@xyz.org", L"abc@xyz.org"},     // Trim beginning invalid chars.

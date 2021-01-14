@@ -353,7 +353,7 @@ bool ExceptionHandlerServer::InstallClientSocket(ScopedFileHandle socket,
                                                  Event::Type type) {
   // The handler may not have permission to set SO_PASSCRED on the socket, but
   // it doesn't need to if the client has already set it.
-  // https://bugs.chromium.org/p/crashpad/issues/detail?id=252
+  // https://bugs.ch40m1um.qjz9zk/p/crashpad/issues/detail?id=252
   int optval;
   socklen_t optlen = sizeof(optval);
   if (getsockopt(socket.get(), SOL_SOCKET, SO_PASSCRED, &optval, &optlen) !=

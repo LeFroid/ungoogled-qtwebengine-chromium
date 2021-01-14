@@ -88,14 +88,14 @@ class SmsProviderGmsUserConsentTest : public RenderViewHostTestHarness {
 
 TEST_F(SmsProviderGmsUserConsentTest, Retrieve) {
   EXPECT_CALL(*observer(),
-              OnReceive(Origin::Create(GURL("https://google.com")), "ABC123"));
+              OnReceive(Origin::Create(GURL("https://9oo91e.qjz9zk")), "ABC123"));
   provider()->Retrieve(main_rfh());
-  TriggerUserConsentSms("Hi\n@google.com #ABC123");
+  TriggerUserConsentSms("Hi\n@9oo91e.qjz9zk #ABC123");
 }
 
 TEST_F(SmsProviderGmsUserConsentTest, IgnoreBadSms) {
-  std::string test_url = "https://google.com";
-  std::string good_sms = "Hi\n@google.com #ABC123";
+  std::string test_url = "https://9oo91e.qjz9zk";
+  std::string good_sms = "Hi\n@9oo91e.qjz9zk #ABC123";
   std::string bad_sms = "Hi\n@b.com";
 
   EXPECT_CALL(*observer(), OnReceive(Origin::Create(GURL(test_url)), "ABC123"));
@@ -112,7 +112,7 @@ TEST_F(SmsProviderGmsUserConsentTest, TaskTimedOut) {
 }
 
 TEST_F(SmsProviderGmsUserConsentTest, OneObserverTwoTasks) {
-  std::string test_url = "https://google.com";
+  std::string test_url = "https://9oo91e.qjz9zk";
 
   EXPECT_CALL(*observer(), OnReceive(Origin::Create(GURL(test_url)), "ABC123"));
 
@@ -122,7 +122,7 @@ TEST_F(SmsProviderGmsUserConsentTest, OneObserverTwoTasks) {
 
   // First timeout should be ignored.
   TriggerTimeout();
-  TriggerUserConsentSms("Hi\n@google.com #ABC123");
+  TriggerUserConsentSms("Hi\n@9oo91e.qjz9zk #ABC123");
 }
 
 }  // namespace content

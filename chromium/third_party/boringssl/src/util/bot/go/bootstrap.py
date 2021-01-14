@@ -6,7 +6,7 @@
 # Modified from go/bootstrap.py in Chromium infrastructure's repository to patch
 # out everything but the core toolchain.
 #
-# https://chromium.googlesource.com/infra/infra/
+# https://chromium.9oo91esource.qjz9zk/infra/infra/
 
 """Prepares a local hermetic Go installation.
 
@@ -57,7 +57,7 @@ TOOLSET_VARIANTS = {
 }
 
 # Download URL root.
-DOWNLOAD_URL_PREFIX = 'https://storage.googleapis.com/golang'
+DOWNLOAD_URL_PREFIX = 'https://storage.9oo91eapis.qjz9zk/golang'
 
 
 class Failure(Exception):

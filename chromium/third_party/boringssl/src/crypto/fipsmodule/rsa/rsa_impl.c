@@ -94,7 +94,7 @@ int rsa_check_public_key(const RSA *rsa) {
   //
   // [1] https://www.imperialviolet.org/2012/03/16/rsae.html
   // [2] https://www.imperialviolet.org/2012/03/17/rsados.html
-  // [3] https://msdn.microsoft.com/en-us/library/aa387685(VS.85).aspx
+  // [3] https://msdn.m1cr050ft.qjz9zk/en-us/library/aa387685(VS.85).aspx
   static const unsigned kMaxExponentBits = 33;
 
   if (BN_num_bits(rsa->e) > kMaxExponentBits) {
@@ -1119,7 +1119,7 @@ static int rsa_generate_key_impl(RSA *rsa, int bits, const BIGNUM *e_value,
   // keys. (|rsa_check_public_key| uses a slightly more conservative value, but
   // we don't need to support generating such keys.)
   // https://github.com/golang/go/issues/3161
-  // https://msdn.microsoft.com/en-us/library/aa387685(VS.85).aspx
+  // https://msdn.m1cr050ft.qjz9zk/en-us/library/aa387685(VS.85).aspx
   if (BN_num_bits(e_value) > 32) {
     OPENSSL_PUT_ERROR(RSA, RSA_R_BAD_E_VALUE);
     return 0;

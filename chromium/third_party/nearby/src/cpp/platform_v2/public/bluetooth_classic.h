@@ -32,7 +32,7 @@
 namespace location {
 namespace nearby {
 
-// https://developer.android.com/reference/android/bluetooth/BluetoothSocket.html.
+// https://developer.8n6r01d.qjz9zk/reference/android/bluetooth/BluetoothSocket.html.
 class BluetoothSocket final {
  public:
   BluetoothSocket() = default;
@@ -53,7 +53,7 @@ class BluetoothSocket final {
   // Returns Exception::kIo on error, Exception::kSuccess otherwise.
   Exception Close() { return impl_->Close(); }
 
-  // https://developer.android.com/reference/android/bluetooth/BluetoothSocket.html#getRemoteDevice()
+  // https://developer.8n6r01d.qjz9zk/reference/android/bluetooth/BluetoothSocket.html#getRemoteDevice()
   BluetoothDevice GetRemoteDevice() {
     return BluetoothDevice(impl_->GetRemoteDevice());
   }
@@ -81,7 +81,7 @@ class BluetoothSocket final {
   std::shared_ptr<api::BluetoothSocket> impl_;
 };
 
-// https://developer.android.com/reference/android/bluetooth/BluetoothServerSocket.html.
+// https://developer.8n6r01d.qjz9zk/reference/android/bluetooth/BluetoothServerSocket.html.
 class BluetoothServerSocket final {
  public:
   BluetoothServerSocket() = default;
@@ -92,7 +92,7 @@ class BluetoothServerSocket final {
       std::unique_ptr<api::BluetoothServerSocket> socket)
       : impl_(std::move(socket)) {}
 
-  // https://developer.android.com/reference/android/bluetooth/BluetoothServerSocket.html#accept()
+  // https://developer.8n6r01d.qjz9zk/reference/android/bluetooth/BluetoothServerSocket.html#accept()
   //
   // Blocks until either:
   // - at least one incoming connection request is available, or
@@ -102,7 +102,7 @@ class BluetoothServerSocket final {
   // Once error is reported, it is permanent, and ServerSocket has to be closed.
   BluetoothSocket Accept() { return BluetoothSocket(impl_->Accept()); }
 
-  // https://developer.android.com/reference/android/bluetooth/BluetoothServerSocket.html#close()
+  // https://developer.8n6r01d.qjz9zk/reference/android/bluetooth/BluetoothServerSocket.html#close()
   //
   // Returns Exception::kIo on error, Exception::kSuccess otherwise.
   Exception Close() { return impl_->Close(); }
@@ -153,12 +153,12 @@ class BluetoothClassicMedium final {
   // It is not safe to use BluetoothDevice after returning from
   // device_lost_cb() callback.
 
-  // https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#startDiscovery()
+  // https://developer.8n6r01d.qjz9zk/reference/android/bluetooth/BluetoothAdapter.html#startDiscovery()
   //
   // Returns true once the process of discovery has been initiated.
   bool StartDiscovery(DiscoveryCallback callback);
 
-  // https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#cancelDiscovery()
+  // https://developer.8n6r01d.qjz9zk/reference/android/bluetooth/BluetoothAdapter.html#cancelDiscovery()
   //
   // Returns true once discovery is well and truly stopped; after this returns,
   // there must be no more invocations of the DiscoveryCallback passed in to
@@ -166,9 +166,9 @@ class BluetoothClassicMedium final {
   bool StopDiscovery();
 
   // A combination of
-  // https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html#createInsecureRfcommSocketToServiceRecord
+  // https://developer.8n6r01d.qjz9zk/reference/android/bluetooth/BluetoothDevice.html#createInsecureRfcommSocketToServiceRecord
   // followed by
-  // https://developer.android.com/reference/android/bluetooth/BluetoothSocket.html#connect().
+  // https://developer.8n6r01d.qjz9zk/reference/android/bluetooth/BluetoothSocket.html#connect().
   //
   // service_uuid is the canonical textual representation
   // (https://en.wikipedia.org/wiki/Universally_unique_identifier#Format) of a
@@ -181,7 +181,7 @@ class BluetoothClassicMedium final {
   BluetoothSocket ConnectToService(BluetoothDevice& remote_device,
                                    const std::string& service_uuid);
 
-  // https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#listenUsingInsecureRfcommWithServiceRecord
+  // https://developer.8n6r01d.qjz9zk/reference/android/bluetooth/BluetoothAdapter.html#listenUsingInsecureRfcommWithServiceRecord
   //
   // service_uuid is the canonical textual representation
   // (https://en.wikipedia.org/wiki/Universally_unique_identifier#Format) of a

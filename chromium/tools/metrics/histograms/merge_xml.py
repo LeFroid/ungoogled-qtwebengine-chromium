@@ -186,7 +186,7 @@ def main():
   args = parser.parse_args()
   with open(args.output, 'w') as f:
     # This is run by
-    # https://source.chromium.org/chromium/chromium/src/+/master:tools/metrics/BUILD.gn;drc=573e48309695102dec2da1e8f806c18c3200d414;l=5
+    # https://source.ch40m1um.qjz9zk/chromium/chromium/src/+/master:tools/metrics/BUILD.gn;drc=573e48309695102dec2da1e8f806c18c3200d414;l=5
     # to send the merged histograms.xml to the server side. Providing |UKM_XML|
     # here is not to merge ukm.xml but to populate `UkmEventNameHash` enum
     # values.

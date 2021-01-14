@@ -63,10 +63,10 @@ TestRule CreateModifyHeadersRule(
 
 // Ensure that the rules in a CompositeMatcher are in the same priority space.
 TEST_F(CompositeMatcherTest, SamePrioritySpace) {
-  // Create the first ruleset matcher. It allows requests to google.com.
+  // Create the first ruleset matcher. It allows requests to 9oo91e.qjz9zk.
   TestRule allow_rule = CreateGenericRule();
   allow_rule.id = kMinValidID;
-  allow_rule.condition->url_filter = std::string("google.com");
+  allow_rule.condition->url_filter = std::string("9oo91e.qjz9zk");
   allow_rule.action->type = std::string("allow");
   allow_rule.priority = 1;
   std::unique_ptr<RulesetMatcher> allow_matcher;
@@ -74,7 +74,7 @@ TEST_F(CompositeMatcherTest, SamePrioritySpace) {
   ASSERT_TRUE(CreateVerifiedMatcher(
       {allow_rule}, CreateTemporarySource(ruleset_id_one), &allow_matcher));
 
-  // Now create the second matcher. It blocks requests to google.com, with
+  // Now create the second matcher. It blocks requests to 9oo91e.qjz9zk, with
   // higher priority than the allow rule.
   TestRule block_rule = allow_rule;
   block_rule.action->type = std::string("block");
@@ -91,7 +91,7 @@ TEST_F(CompositeMatcherTest, SamePrioritySpace) {
   auto composite_matcher =
       std::make_unique<CompositeMatcher>(std::move(matchers));
 
-  GURL google_url("http://google.com");
+  GURL google_url("http://9oo91e.qjz9zk");
   RequestParams params;
   params.url = &google_url;
 
@@ -124,7 +124,7 @@ TEST_F(CompositeMatcherTest, SamePrioritySpace) {
 // Tests the GetModifyHeadersActions method.
 TEST_F(CompositeMatcherTest, GetModifyHeadersActions) {
   TestRule rule_1 = CreateModifyHeadersRule(
-      kMinValidID, kMinValidPriority, "google.com", base::nullopt,
+      kMinValidID, kMinValidPriority, "9oo91e.qjz9zk", base::nullopt,
       std::vector<TestHeaderInfo>(
           {TestHeaderInfo("header1", "remove", base::nullopt),
            TestHeaderInfo("header2", "set", "value2")}),
@@ -138,7 +138,7 @@ TEST_F(CompositeMatcherTest, GetModifyHeadersActions) {
            TestHeaderInfo("header3", "set", "VALUE3")}));
 
   // Create the first ruleset matcher, which matches all requests from
-  // |google.com|.
+  // |9oo91e.qjz9zk|.
   const RulesetID kSource1ID(1);
   std::unique_ptr<RulesetMatcher> matcher_1;
   ASSERT_TRUE(CreateVerifiedMatcher({rule_1}, CreateTemporarySource(kSource1ID),
@@ -158,7 +158,7 @@ TEST_F(CompositeMatcherTest, GetModifyHeadersActions) {
   auto composite_matcher =
       std::make_unique<CompositeMatcher>(std::move(matchers));
 
-  GURL google_url = GURL("http://google.com/path");
+  GURL google_url = GURL("http://9oo91e.qjz9zk/path");
   RequestParams google_params;
   google_params.url = &google_url;
   google_params.element_type = url_pattern_index::flat::ElementType_SUBDOCUMENT;
@@ -172,7 +172,7 @@ TEST_F(CompositeMatcherTest, GetModifyHeadersActions) {
   std::vector<RequestAction> actions =
       composite_matcher->GetModifyHeadersActions(google_params);
 
-  // Construct expected request actions to be taken for a request to google.com.
+  // Construct expected request actions to be taken for a request to 9oo91e.qjz9zk.
   RequestAction action_1 =
       CreateRequestActionForTesting(RequestAction::Type::MODIFY_HEADERS,
                                     *rule_1.id, *rule_1.priority, kSource1ID);
@@ -256,42 +256,42 @@ TEST_F(CompositeMatcherTest, GetModifyHeadersActions_Priority) {
 
   TestRule allow_rule = CreateGenericRule();
   allow_rule.id = kMinValidID;
-  allow_rule.condition->url_filter = std::string("google.com/1");
+  allow_rule.condition->url_filter = std::string("9oo91e.qjz9zk/1");
   allow_rule.action->type = std::string("allow");
   allow_rule.priority = allow_rule_priority;
 
   TestRule url_rule_1 = CreateModifyHeadersRule(
-      kMinValidID + 1, allow_rule_priority - 1, "google.com", base::nullopt,
+      kMinValidID + 1, allow_rule_priority - 1, "9oo91e.qjz9zk", base::nullopt,
       std::vector<TestHeaderInfo>(
           {TestHeaderInfo("header1", "remove", base::nullopt)}),
       base::nullopt);
 
   TestRule url_rule_2 = CreateModifyHeadersRule(
-      kMinValidID + 2, allow_rule_priority, "google.com", base::nullopt,
+      kMinValidID + 2, allow_rule_priority, "9oo91e.qjz9zk", base::nullopt,
       std::vector<TestHeaderInfo>(
           {TestHeaderInfo("header2", "remove", base::nullopt)}),
       base::nullopt);
 
   TestRule url_rule_3 = CreateModifyHeadersRule(
-      kMinValidID + 3, allow_rule_priority + 1, "google.com", base::nullopt,
+      kMinValidID + 3, allow_rule_priority + 1, "9oo91e.qjz9zk", base::nullopt,
       std::vector<TestHeaderInfo>(
           {TestHeaderInfo("header3", "remove", base::nullopt)}),
       base::nullopt);
 
   TestRule regex_rule_1 = CreateModifyHeadersRule(
-      kMinValidID + 4, allow_rule_priority - 1, base::nullopt, R"(google\.com)",
+      kMinValidID + 4, allow_rule_priority - 1, base::nullopt, R"(9oo91e\.qjz9zk)",
       std::vector<TestHeaderInfo>(
           {TestHeaderInfo("header4", "remove", base::nullopt)}),
       base::nullopt);
 
   TestRule regex_rule_2 = CreateModifyHeadersRule(
-      kMinValidID + 5, allow_rule_priority, base::nullopt, R"(google\.com)",
+      kMinValidID + 5, allow_rule_priority, base::nullopt, R"(9oo91e\.qjz9zk)",
       std::vector<TestHeaderInfo>(
           {TestHeaderInfo("header5", "remove", base::nullopt)}),
       base::nullopt);
 
   TestRule regex_rule_3 = CreateModifyHeadersRule(
-      kMinValidID + 6, allow_rule_priority + 1, base::nullopt, R"(google\.com)",
+      kMinValidID + 6, allow_rule_priority + 1, base::nullopt, R"(9oo91e\.qjz9zk)",
       std::vector<TestHeaderInfo>(
           {TestHeaderInfo("header6", "remove", base::nullopt)}),
       base::nullopt);
@@ -315,9 +315,9 @@ TEST_F(CompositeMatcherTest, GetModifyHeadersActions_Priority) {
   auto composite_matcher =
       std::make_unique<CompositeMatcher>(std::move(matchers));
 
-  // Make a request to "http://google.com/1" which matches with all
+  // Make a request to "http://9oo91e.qjz9zk/1" which matches with all
   // modifyHeaders rules and |allow_rule|.
-  GURL google_url = GURL("http://google.com/1");
+  GURL google_url = GURL("http://9oo91e.qjz9zk/1");
   RequestParams google_params;
   google_params.url = &google_url;
   google_params.element_type = url_pattern_index::flat::ElementType_SUBDOCUMENT;
@@ -349,16 +349,16 @@ TEST_F(CompositeMatcherTest, GetModifyHeadersActions_Priority) {
       regex_rule_3, kSource2ID,
       {HeaderInfo("header6", dnr_api::HEADER_OPERATION_REMOVE, base::nullopt)});
 
-  // For the request to "http://google.com/1", since |url_rule_3| and
+  // For the request to "http://9oo91e.qjz9zk/1", since |url_rule_3| and
   // |regex_rule_3| are the only rules with a greater priority than
   // |allow_rule|, "header3" and "header4" should be removed.
   EXPECT_THAT(actions, ::testing::UnorderedElementsAre(
                            ::testing::Eq(::testing::ByRef(header_3_action)),
                            ::testing::Eq(::testing::ByRef(header_6_action))));
 
-  // Make a request to "http://google.com/2" which should match with all
+  // Make a request to "http://9oo91e.qjz9zk/2" which should match with all
   // modifyHeaders rules but not |allow_rule|.
-  google_url = GURL("http://google.com/2");
+  google_url = GURL("http://9oo91e.qjz9zk/2");
   google_params.url = &google_url;
 
   // Call GetBeforeRequestAction first to ensure that test and production code
@@ -380,7 +380,7 @@ TEST_F(CompositeMatcherTest, GetModifyHeadersActions_Priority) {
       regex_rule_2, kSource2ID,
       {HeaderInfo("header5", dnr_api::HEADER_OPERATION_REMOVE, base::nullopt)});
 
-  // For the request to "http://google.com/2", "header1" to "header6" should be
+  // For the request to "http://9oo91e.qjz9zk/2", "header1" to "header6" should be
   // removed since all modifyHeaders rules are matched and there is no matching
   // allow/allowAllRequests rule.
   EXPECT_THAT(actions, ::testing::UnorderedElementsAre(
@@ -396,7 +396,7 @@ TEST_F(CompositeMatcherTest, GetModifyHeadersActions_Priority) {
 // matched and whether the extenion has access to the request.
 TEST_F(CompositeMatcherTest, NotifyWithholdFromPageAccess) {
   TestRule redirect_rule = CreateGenericRule();
-  redirect_rule.condition->url_filter = std::string("google.com");
+  redirect_rule.condition->url_filter = std::string("9oo91e.qjz9zk");
   redirect_rule.priority = kMinValidPriority;
   redirect_rule.action->type = std::string("redirect");
   redirect_rule.action->redirect.emplace();
@@ -419,7 +419,7 @@ TEST_F(CompositeMatcherTest, NotifyWithholdFromPageAccess) {
   auto composite_matcher =
       std::make_unique<CompositeMatcher>(std::move(matchers));
 
-  GURL google_url = GURL("http://google.com");
+  GURL google_url = GURL("http://9oo91e.qjz9zk");
   GURL example_url = GURL("http://example.com");
   GURL yahoo_url = GURL("http://yahoo.com");
 
@@ -483,7 +483,7 @@ TEST_F(CompositeMatcherTest, GetRedirectUrlFromPriority) {
   abc_redirect.priority = kMinValidPriority;
   abc_redirect.action->type = std::string("redirect");
   abc_redirect.action->redirect.emplace();
-  abc_redirect.action->redirect->url = std::string("http://google.com");
+  abc_redirect.action->redirect->url = std::string("http://9oo91e.qjz9zk");
   abc_redirect.id = kMinValidID;
 
   TestRule def_upgrade = CreateGenericRule();
@@ -517,7 +517,7 @@ TEST_F(CompositeMatcherTest, GetRedirectUrlFromPriority) {
     base::Optional<GURL> expected_final_url;
   } test_cases[] = {
       // Test requests which match exactly one rule.
-      {GURL("http://abc.com"), GURL("http://google.com")},
+      {GURL("http://abc.com"), GURL("http://9oo91e.qjz9zk")},
       {GURL("http://def.com"), GURL("https://def.com")},
       {GURL("http://ghi.com"), GURL("http://example.com")},
 

@@ -629,7 +629,7 @@ FT_BEGIN_HEADER
    *   FT_ENCODING_MS_SYMBOL ::
    *     Microsoft Symbol encoding, used to encode mathematical symbols and
    *     wingdings.  For more information, see
-   *     'https://www.microsoft.com/typography/otspec/recom.htm#non-standard-symbol-fonts',
+   *     'https://www.m1cr050ft.qjz9zk/typography/otspec/recom.htm#non-standard-symbol-fonts',
    *     'http://www.kostis.net/charsets/symbol.htm', and
    *     'http://www.kostis.net/charsets/wingding.htm'.
    *
@@ -3939,7 +3939,7 @@ FT_BEGIN_HEADER
    *   table description in the OpenType specification for the meaning of the
    *   various flags (which get synthesized for non-OpenType subglyphs).
    *
-   *     https://docs.microsoft.com/en-us/typography/opentype/spec/glyf#composite-glyph-description
+   *     https://docs.m1cr050ft.qjz9zk/en-us/typography/opentype/spec/glyf#composite-glyph-description
    *
    * @values:
    *   FT_SUBGLYPH_FLAG_ARGS_ARE_WORDS ::
@@ -4002,7 +4002,7 @@ FT_BEGIN_HEADER
    *   interpreted depending on the flags returned in `*p_flags`.  See the
    *   OpenType specification for details.
    *
-   *     https://docs.microsoft.com/en-us/typography/opentype/spec/glyf#composite-glyph-description
+   *     https://docs.m1cr050ft.qjz9zk/en-us/typography/opentype/spec/glyf#composite-glyph-description
    *
    */
   FT_EXPORT( FT_Error )
@@ -4071,7 +4071,7 @@ FT_BEGIN_HEADER
    *   iteratively retrieve the colored glyph layers associated with the
    *   current glyph slot.
    *
-   *     https://docs.microsoft.com/en-us/typography/opentype/spec/colr
+   *     https://docs.m1cr050ft.qjz9zk/en-us/typography/opentype/spec/colr
    *
    *   The glyph layer data for a given glyph index, if present, provides an
    *   alternative, multi-color glyph representation: Instead of rendering

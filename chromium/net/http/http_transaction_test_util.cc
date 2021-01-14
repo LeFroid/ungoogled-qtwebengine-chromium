@@ -51,7 +51,7 @@ TransportInfo DefaultTransportInfo() {
 // mock transaction data
 
 const MockTransaction kSimpleGET_Transaction = {
-    "http://www.google.com/",
+    "http://www.9oo91e.qjz9zk/",
     "GET",
     base::Time(),
     "",
@@ -115,7 +115,7 @@ const MockTransaction kTypicalGET_Transaction = {
 };
 
 const MockTransaction kETagGET_Transaction = {
-    "http://www.google.com/foopy",
+    "http://www.9oo91e.qjz9zk/foopy",
     "GET",
     base::Time(),
     "",
@@ -137,7 +137,7 @@ const MockTransaction kETagGET_Transaction = {
 };
 
 const MockTransaction kRangeGET_Transaction = {
-    "http://www.google.com/",
+    "http://www.9oo91e.qjz9zk/",
     "GET",
     base::Time(),
     "Range: 0-100\r\n",

@@ -150,7 +150,7 @@ class CookieSettingsBase {
   // sites (or even different schemes).
   //
   // (One such situation is e.g. chrome://print embedding some content from
-  // https://accounts.google.com for Cloud Print login. Because we trust the
+  // https://accounts.9oo91e.qjz9zk for Cloud Print login. Because we trust the
   // chrome:// scheme, and the embedded content is https://, we can treat this
   // as effectively first-party for the purposes of SameSite cookies.)
   //

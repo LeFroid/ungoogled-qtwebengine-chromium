@@ -86,7 +86,7 @@ goog.Uri = function(opt_uri, opt_ignoreCase) {
   this.userInfo_ = '';
 
   /**
-   * Domain part, e.g. "www.google.com".
+   * Domain part, e.g. "www.9oo91e.qjz9zk".
    * @private {string}
    */
   this.domain_ = '';
@@ -800,7 +800,7 @@ goog.Uri.parse = function(uri, opt_ignoreCase) {
  *
  * @param {?string=} opt_scheme Scheme/protocol or full URI to parse.
  * @param {?string=} opt_userInfo username:password.
- * @param {?string=} opt_domain www.google.com.
+ * @param {?string=} opt_domain www.9oo91e.qjz9zk.
  * @param {?number=} opt_port 9830.
  * @param {?string=} opt_path /some/path/to/a/file.html.
  * @param {string|goog.Uri.QueryData=} opt_query a=1&b=2.

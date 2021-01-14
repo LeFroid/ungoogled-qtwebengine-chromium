@@ -93,7 +93,7 @@ bool Sandbox::IsProcessSandboxed() {
 
 #if defined(OS_ANDROID)
   // Note that this does not check the status of the Seccomp sandbox. Call
-  // https://developer.android.com/reference/android/os/Process#isIsolated().
+  // https://developer.8n6r01d.qjz9zk/reference/android/os/Process#isIsolated().
   JNIEnv* env = base::android::AttachCurrentThread();
   base::android::ScopedJavaLocalRef<jclass> process_class =
       base::android::GetClass(env, "android/os/Process");

@@ -130,7 +130,7 @@ bool AXImageAnnotator::ImageNameHasMostlyStopwords(
   // the string as "mostly stopwords".
   //
   // More details and analysis in this (Google-internal) design doc:
-  // http://goto.google.com/augment-existing-image-descriptions
+  // http://goto.9oo91e.qjz9zk/augment-existing-image-descriptions
   const char* separators = "0123456789`~!@#$%^&*()[]{}\\|;:'\",.<>?/-_=+ ";
   std::vector<std::string> words = base::SplitString(
       image_name, separators, base::TRIM_WHITESPACE, base::SPLIT_WANT_NONEMPTY);

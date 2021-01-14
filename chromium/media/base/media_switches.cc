@@ -50,7 +50,7 @@ const char kAlsaOutputDevice[] = "alsa-output-device";
 // Use exclusive mode audio streaming for Windows Vista and higher.
 // Leads to lower latencies for audio streams which uses the
 // AudioParameters::AUDIO_PCM_LOW_LATENCY audio path.
-// See http://msdn.microsoft.com/en-us/library/windows/desktop/dd370844.aspx
+// See http://msdn.m1cr050ft.qjz9zk/en-us/library/windows/desktop/dd370844.aspx
 // for details.
 const char kEnableExclusiveAudio[] = "enable-exclusive-audio";
 
@@ -660,7 +660,7 @@ const base::Feature MEDIA_EXPORT kMediaFoundationVP8Decoding{
 // The audio stream is a 'raw' stream that bypasses all signal processing except
 // for endpoint specific, always-on processing in the Audio Processing Object
 // (APO), driver, and hardware.
-// https://docs.microsoft.com/en-us/windows/win32/api/audioclient/ne-audioclient-audclnt_streamoptions
+// https://docs.m1cr050ft.qjz9zk/en-us/windows/win32/api/audioclient/ne-audioclient-audclnt_streamoptions
 const base::Feature MEDIA_EXPORT kWasapiRawAudioCapture{
     "WASAPIRawAudioCapture", base::FEATURE_DISABLED_BY_DEFAULT};
 

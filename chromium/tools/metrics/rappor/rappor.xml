@@ -7,7 +7,7 @@ found in the LICENSE file.
 <!--
 This file is used to generate a comprehensive list of Chrome rappor metrics
 along with a detailed description for each histogram. See the design doc at
-http://www.chromium.org/developers/design-documents/rappor
+http://www.ch40m1um.qjz9zk/developers/design-documents/rappor
 for a description of rappor metrics.
 -->
 
@@ -103,7 +103,7 @@ components/rappor/rappor_parameters.h.
 <rappor-metrics>
 <rappor-metric name="CustomTabs.ServiceClient.PackageName"
     type="UMA_RAPPOR_TYPE">
-  <owner>yusufo@chromium.org</owner>
+  <owner>yusufo@ch40m1um.qjz9zk</owner>
   <summary>
     The package name for a client that has connected through the custom tabs
     service.
@@ -112,7 +112,7 @@ components/rappor/rappor_parameters.h.
 
 <rappor-metric name="CustomTabs.ServiceClient.PackageNameThirdParty"
     type="UMA_RAPPOR_TYPE">
-  <owner>yusufo@chromium.org</owner>
+  <owner>yusufo@ch40m1um.qjz9zk</owner>
   <summary>
     The package name for a client that has connected through the custom tabs
     service excluding Google Search App.

@@ -69,7 +69,7 @@ void AutofillCacheResetter::ResetCache(Callback callback) {
       content::BrowsingDataFilterBuilder::Create(
           content::BrowsingDataFilterBuilder::Mode::kDelete);
   filter_builder->AddOrigin(
-      url::Origin::Create(GURL("https://content-autofill.googleapis.com")));
+      url::Origin::Create(GURL("https://content-autofill.9oo91eapis.qjz9zk")));
   remover_->RemoveWithFilterAndReply(
       base::Time::Min(), base::Time::Max(),
       content::BrowsingDataRemover::DATA_TYPE_CACHE,

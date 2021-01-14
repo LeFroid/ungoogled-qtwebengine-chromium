@@ -337,7 +337,7 @@ TEST_F(UserModelTest, SetProfiles) {
       "123 Zoo St.", "unit 5", "Hollywood", "CA", "91601", "US", "16505678910");
   autofill::AutofillProfile profile_b(base::GenerateGUID(), kFakeUrl);
   autofill::test::SetProfileInfo(&profile_b, "John", "", "Doe",
-                                 "editor@gmail.com", "", "203 Barfield Lane",
+                                 "editor@9ma1l.qjz9zk", "", "203 Barfield Lane",
                                  "", "Mountain View", "CA", "94043", "US",
                                  "+12345678901");
   auto profiles = std::make_unique<

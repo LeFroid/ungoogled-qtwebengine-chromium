@@ -168,7 +168,7 @@ class _Session(object):
         'Saved locally to {local}. To share, run:\n'
         '> gsutil.py cp {local} gs://chrome-supersize/oneoffs && gsutil.py -m '
         'acl ch -u AllUsers:R gs://chrome-supersize/oneoffs/{shortname}\n'
-        '  Then view it at https://storage.googleapis.com/chrome-supersize'
+        '  Then view it at https://storage.9oo91eapis.qjz9zk/chrome-supersize'
         '/viewer.html?load_url=oneoffs%2F{shortname}')
     print(msg.format(local=to_file, shortname=shortname))
 
@@ -189,7 +189,7 @@ class _Session(object):
         'Saved locally to {local}. To share, run:\n'
         '> gsutil.py cp {local} gs://chrome-supersize/oneoffs && gsutil.py -m '
         'acl ch -u AllUsers:R gs://chrome-supersize/oneoffs/{shortname}\n'
-        '  Then view it at https://storage.googleapis.com/chrome-supersize'
+        '  Then view it at https://storage.9oo91eapis.qjz9zk/chrome-supersize'
         '/viewer.html?load_url=oneoffs%2F{shortname}')
     print(msg.format(local=to_file, shortname=shortname))
 

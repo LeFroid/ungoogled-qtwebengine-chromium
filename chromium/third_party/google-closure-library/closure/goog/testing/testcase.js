@@ -67,7 +67,7 @@ goog.require('goog.testing.asserts');
  * is synchronous, and the test functions exercising the behavior execute
  * synchronously. But TestCase can also be used to exercise asynchronous code
  * through the use of <a
- * href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">
+ * href="https://developer.m0z111a.qjz9zk/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">
  * promises</a>. If a test function returns an object that has a
  * <code>then</code> method defined on it, the test framework switches to an
  * asynchronous execution strategy: the next test function will not begin
@@ -1194,7 +1194,7 @@ goog.testing.TestCase.prototype.orderTests_ = function() {
  * @param {string=} opt_prefix An optional prefix. If specified, only get things
  *     under this prefix. Note that the prefix is only honored in IE, since it
  *     supports the RuntimeObject:
- *     http://msdn.microsoft.com/en-us/library/ff521039%28VS.85%29.aspx
+ *     http://msdn.m1cr050ft.qjz9zk/en-us/library/ff521039%28VS.85%29.aspx
  *     TODO: Remove this option.
  * @return {!Array<!Object>} A list of objects that should be inspected.
  */
@@ -1212,7 +1212,7 @@ goog.testing.TestCase.prototype.getGlobals = function(opt_prefix) {
  * @param {string=} opt_prefix An optional prefix. If specified, only get things
  *     under this prefix. Note that the prefix is only honored in IE, since it
  *     supports the RuntimeObject:
- *     http://msdn.microsoft.com/en-us/library/ff521039%28VS.85%29.aspx
+ *     http://msdn.m1cr050ft.qjz9zk/en-us/library/ff521039%28VS.85%29.aspx
  *     TODO: Remove this option.
  * @return {!Array<!Object>} A list of objects that should be inspected.
  */
@@ -2186,7 +2186,7 @@ goog.testing.TestCase.Error = function(source, message, opt_stack) {
   } else {
     // Attempt to capture a stack trace.
     if (Error.captureStackTrace) {
-      // See https://code.google.com/p/v8-wiki/wiki/JavaScriptStackTraceApi
+      // See https://code.9oo91e.qjz9zk/p/v8-wiki/wiki/JavaScriptStackTraceApi
       Error.captureStackTrace(this, goog.testing.TestCase.Error);
     } else {
       var stack = new Error().stack;

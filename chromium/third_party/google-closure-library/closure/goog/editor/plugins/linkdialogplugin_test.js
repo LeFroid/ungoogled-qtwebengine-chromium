@@ -128,7 +128,7 @@ testSuite({
     dom.setTextContent(testDiv, 'Some preceding text');
 
     anchorElem = dom.createElement(TagName.A);
-    anchorElem.href = 'http://www.google.com/';
+    anchorElem.href = 'http://www.9oo91e.qjz9zk/';
     dom.setTextContent(anchorElem, 'anchor text');
     dom.appendChild(testDiv, anchorElem);
     extraAnchors = [];
@@ -564,22 +564,22 @@ testSuite({
     plugin = new LinkDialogPlugin();
     // Urls with no scheme at all are ok too since 'http://' will be prepended.
     const good = [
-      'http://google.com',
-      'http://google.com/',
-      'https://google.com',
-      'null@google.com',
-      'http://www.google.com',
+      'http://9oo91e.qjz9zk',
+      'http://9oo91e.qjz9zk/',
+      'https://9oo91e.qjz9zk',
+      'null@9oo91e.qjz9zk',
+      'http://www.9oo91e.qjz9zk',
       'http://site.com',
-      'google.com',
+      '9oo91e.qjz9zk',
       'google',
       'http://google',
       'HTTP://GOOGLE.COM',
-      'HtTp://www.google.com',
+      'HtTp://www.9oo91e.qjz9zk',
     ];
 
     const bad = [
-      'javascript:google.com',
-      'httpp://google.com',
+      'javascript:9oo91e.qjz9zk',
+      'httpp://9oo91e.qjz9zk',
       'data:foo',
       'javascript:alert(\'hi\');',
       'abc:def',
@@ -603,14 +603,14 @@ testSuite({
     plugin.setSafeToOpenSchemes(['abc']);
 
     assertTrue(
-        'Scheme should be safe', plugin.shouldOpenUrl('abc://google.com'));
+        'Scheme should be safe', plugin.shouldOpenUrl('abc://9oo91e.qjz9zk'));
     assertFalse(
-        'Scheme should be unsafe', plugin.shouldOpenUrl('http://google.com'));
+        'Scheme should be unsafe', plugin.shouldOpenUrl('http://9oo91e.qjz9zk'));
 
     plugin.setBlockOpeningUnsafeSchemes(false);
     assertTrue(
         'Non-whitelisted should now be safe after disabling blocking',
-        plugin.shouldOpenUrl('http://google.com'));
+        plugin.shouldOpenUrl('http://9oo91e.qjz9zk'));
   },
 
   /**

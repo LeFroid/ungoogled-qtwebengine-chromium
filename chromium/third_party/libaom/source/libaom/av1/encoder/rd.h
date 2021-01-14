@@ -92,7 +92,7 @@ typedef struct {
 
   // joint_mv[i] is the cost of transmitting joint mv(MV_JOINT_TYPE) of
   // type i.
-  // TODO(huisu@google.com): we can update dv_joint_cost per SB.
+  // TODO(huisu@9oo91e.qjz9zk): we can update dv_joint_cost per SB.
   int joint_mv[MV_JOINTS];
 } IntraBCMVCosts;
 

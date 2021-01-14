@@ -1035,16 +1035,16 @@ TEST_F(ProtocolHandlerRegistryTest, TestMultiplePlaceholders) {
 TEST_F(ProtocolHandlerRegistryTest, InvalidHandlers) {
   // Invalid protocol.
   registry()->OnAcceptRegisterProtocolHandler(
-      CreateProtocolHandler("foo", GURL("https://www.google.com/handler%s")));
+      CreateProtocolHandler("foo", GURL("https://www.9oo91e.qjz9zk/handler%s")));
   ASSERT_FALSE(registry()->IsHandledProtocol("foo"));
   registry()->OnAcceptRegisterProtocolHandler(
-      CreateProtocolHandler("web", GURL("https://www.google.com/handler%s")));
+      CreateProtocolHandler("web", GURL("https://www.9oo91e.qjz9zk/handler%s")));
   ASSERT_FALSE(registry()->IsHandledProtocol("web"));
   registry()->OnAcceptRegisterProtocolHandler(
-      CreateProtocolHandler("web+", GURL("https://www.google.com/handler%s")));
+      CreateProtocolHandler("web+", GURL("https://www.9oo91e.qjz9zk/handler%s")));
   ASSERT_FALSE(registry()->IsHandledProtocol("web+"));
   registry()->OnAcceptRegisterProtocolHandler(
-      CreateProtocolHandler("https", GURL("https://www.google.com/handler%s")));
+      CreateProtocolHandler("https", GURL("https://www.9oo91e.qjz9zk/handler%s")));
   ASSERT_FALSE(registry()->IsHandledProtocol("https"));
 
   // Invalid handler URL.
@@ -1055,11 +1055,11 @@ TEST_F(ProtocolHandlerRegistryTest, InvalidHandlers) {
   ASSERT_FALSE(registry()->IsHandledProtocol("news"));
   // ftp:// URL.
   registry()->OnAcceptRegisterProtocolHandler(
-      CreateProtocolHandler("news", GURL("ftp://www.google.com/handler%s")));
+      CreateProtocolHandler("news", GURL("ftp://www.9oo91e.qjz9zk/handler%s")));
   ASSERT_FALSE(registry()->IsHandledProtocol("news"));
   // blob:// URL
   registry()->OnAcceptRegisterProtocolHandler(CreateProtocolHandler(
-      "news", GURL("blob:https://www.google.com/"
+      "news", GURL("blob:https://www.9oo91e.qjz9zk/"
                    "f2d8c47d-17d0-4bf5-8f0a-76e42cbed3bf/%s")));
   ASSERT_FALSE(registry()->IsHandledProtocol("news"));
 }
@@ -1076,28 +1076,28 @@ TEST_F(ProtocolHandlerRegistryTest, ExtensionHandler) {
 TEST_F(ProtocolHandlerRegistryTest, WebPlusPrefix) {
   // Not ASCII alphas.
   registry()->OnAcceptRegisterProtocolHandler(CreateProtocolHandler(
-      "web+***", GURL("https://www.google.com/handler%s")));
+      "web+***", GURL("https://www.9oo91e.qjz9zk/handler%s")));
   ASSERT_FALSE(registry()->IsHandledProtocol("web+***"));
   registry()->OnAcceptRegisterProtocolHandler(CreateProtocolHandler(
-      "web+123", GURL("https://www.google.com/handler%s")));
+      "web+123", GURL("https://www.9oo91e.qjz9zk/handler%s")));
   ASSERT_FALSE(registry()->IsHandledProtocol("web+123"));
   registry()->OnAcceptRegisterProtocolHandler(CreateProtocolHandler(
-      "web+   ", GURL("https://www.google.com/handler%s")));
+      "web+   ", GURL("https://www.9oo91e.qjz9zk/handler%s")));
   ASSERT_FALSE(registry()->IsHandledProtocol("web+   "));
   registry()->OnAcceptRegisterProtocolHandler(CreateProtocolHandler(
-      "web+name123", GURL("https://www.google.com/handler%s")));
+      "web+name123", GURL("https://www.9oo91e.qjz9zk/handler%s")));
   ASSERT_FALSE(registry()->IsHandledProtocol("web+name123"));
 
   // ASCII lower alphas.
   registry()->OnAcceptRegisterProtocolHandler(
       CreateProtocolHandler("web+abcdefghijklmnopqrstuvwxyz",
-                            GURL("https://www.google.com/handler%s")));
+                            GURL("https://www.9oo91e.qjz9zk/handler%s")));
   ASSERT_TRUE(registry()->IsHandledProtocol("web+abcdefghijklmnopqrstuvwxyz"));
 
   // ASCII upper alphas are lowercased.
   registry()->OnAcceptRegisterProtocolHandler(
       CreateProtocolHandler("web+ZYXWVUTSRQPONMLKJIHGFEDCBA",
-                            GURL("https://www.google.com/handler%s")));
+                            GURL("https://www.9oo91e.qjz9zk/handler%s")));
   ASSERT_TRUE(registry()->IsHandledProtocol("web+zyxwvutsrqponmlkjihgfedcba"));
 }
 

@@ -46,7 +46,7 @@ namespace content {
 // from billions of web pages, tokenizing, counting, and then manually
 // categorizing the top words, with the help of dictionaries and language
 // experts. More details in this (Google-internal) design doc:
-// http://goto.google.com/augment-existing-image-descriptions
+// http://goto.9oo91e.qjz9zk/augment-existing-image-descriptions
 class CONTENT_EXPORT AXImageStopwords {
  public:
   static AXImageStopwords& GetInstance();

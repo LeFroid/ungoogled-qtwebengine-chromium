@@ -133,44 +133,44 @@ TEST_F(HtmlBasedUsernameDetectorTest, DeveloperGroupAttributes) {
   const TestCase test_cases[] = {
       // There are both field name and id.
       {{"username", "x1d", "johnsmith"},
-       {"email", "y1d", "js@google.com"},
+       {"email", "y1d", "js@9oo91e.qjz9zk"},
        "x1d"},
       // there is no field id.
       {{"username", "x1d", "johnsmith"},
-       {"email", "y1d", "js@google.com"},
+       {"email", "y1d", "js@9oo91e.qjz9zk"},
        "x1d"},
       // Upper or mixed case shouldn't matter.
       {{"uSeRnAmE", "x1d", "johnsmith"},
-       {"email", "y1d", "js@google.com"},
+       {"email", "y1d", "js@9oo91e.qjz9zk"},
        "x1d"},
       // Check removal of special characters.
       {{"u1_s2-e3~r4/n5(a)6m#e", "x1d", "johnsmith"},
-       {"email", "y1d", "js@google.com"},
+       {"email", "y1d", "js@9oo91e.qjz9zk"},
        "x1d"},
       // Check guard between field name and field id.
-      {{"us", "ername", "johnsmith"}, {"email", "id", "js@google.com"}, "id"},
+      {{"us", "ername", "johnsmith"}, {"email", "id", "js@9oo91e.qjz9zk"}, "id"},
       // Check removal of fields with latin negative words in developer group.
-      {{"email", "x", "js@google.com"},
+      {{"email", "x", "js@9oo91e.qjz9zk"},
        {"fake_username", "y", "johnsmith"},
        "x"},
-      {{"email", "mail", "js@google.com"},
+      {{"email", "mail", "js@9oo91e.qjz9zk"},
        {"user_name", "fullname", "johnsmith"},
        "mail"},
       // Identify latin translations of "username".
       {{"benutzername", "x", "johnsmith"},
-       {"email", "y", "js@google.com"},
+       {"email", "y", "js@9oo91e.qjz9zk"},
        "x"},
       // Identify latin translations of "user".
       {{"utilizator", "x1d", "johnsmith"},
-       {"email", "y1d", "js@google.com"},
+       {"email", "y1d", "js@9oo91e.qjz9zk"},
        "x1d"},
       // Identify technical words.
       {{"loginid", "x1d", "johnsmith"},
-       {"email", "y1d", "js@google.com"},
+       {"email", "y1d", "js@9oo91e.qjz9zk"},
        "x1d"},
       // Identify weak words.
       {{"usrname", "x1d", "johnsmith"},
-       {"email", "y1d", "js@google.com"},
+       {"email", "y1d", "js@9oo91e.qjz9zk"},
        "y1d"},
       // If a word matches in maximum 2 fields, it is accepted.
       // First encounter is selected as username.
@@ -202,54 +202,54 @@ TEST_F(HtmlBasedUsernameDetectorTest, UserGroupAttributes) {
   const TestCase test_cases[] = {
       // Label information will decide username.
       {{"name1", "id1", "johnsmith", "Username:"},
-       {"name2", "id2", "js@google.com", "Email:"},
+       {"name2", "id2", "js@9oo91e.qjz9zk", "Email:"},
        "id1"},
       // Placeholder information will decide username.
-      {{"name1", "id1", "js@google.com", "Email:"},
+      {{"name1", "id1", "js@9oo91e.qjz9zk", "Email:"},
        {"name2", "id2", "johnsmith", "Username:"},
        "id2"},
       // Check removal of special characters.
       {{"name1", "id1", "johnsmith", "U s er n a m e:"},
-       {"name2", "id2", "js@google.com", "Email:"},
+       {"name2", "id2", "js@9oo91e.qjz9zk", "Email:"},
        "id1"},
       // Check removal of fields with latin negative words in user group.
       {{"name1", "id1", "johnsmith", "Username password:"},
-       {"name2", "id2", "js@google.com", "Email:"},
+       {"name2", "id2", "js@9oo91e.qjz9zk", "Email:"},
        "id2"},
       // Check removal of fields with non-latin negative words in user group.
-      {{"name1", "id1", "js@google.com", "Email:"},
+      {{"name1", "id1", "js@9oo91e.qjz9zk", "Email:"},
        {"name2", "id2", "johnsmith", "የይለፍቃልየይለፍቃል:"},
        "id1"},
       // Identify latin translations of "username".
       {{"name1", "id1", "johnsmith", "Username:"},
-       {"name2", "id2", "js@google.com", "Email:"},
+       {"name2", "id2", "js@9oo91e.qjz9zk", "Email:"},
        "id1"},
       // Identify non-latin translations of "username".
       {{"name1", "id1", "johnsmith", "用户名:"},
-       {"name2", "id2", "js@google.com", "Email:"},
+       {"name2", "id2", "js@9oo91e.qjz9zk", "Email:"},
        "id1"},
       // Identify latin translations of "user".
       {{"name1", "id1", "johnsmith", "Wosuta:"},
-       {"name2", "id2", "js@google.com", "Email:"},
+       {"name2", "id2", "js@9oo91e.qjz9zk", "Email:"},
        "id1"},
       // Identify non-latin translations of "user".
       {{"name1", "id1", "johnsmith", "истифода:"},
-       {"name2", "id2", "js@google.com", "Email:"},
+       {"name2", "id2", "js@9oo91e.qjz9zk", "Email:"},
        "id1"},
       // Identify weak words.
       {{"name1", "id1", "johnsmith", "Insert your login details:"},
-       {"name2", "id2", "js@google.com", "Insert your email:"},
+       {"name2", "id2", "js@9oo91e.qjz9zk", "Insert your email:"},
        "id1"},
       // Check user group priority, compared to developer group.
       // User group should have higher priority than developer group.
-      {{"email", "id1", "js@google.com", "Username:"},
+      {{"email", "id1", "js@9oo91e.qjz9zk", "Username:"},
        {"username", "id2", "johnsmith", "Email:"},
        "id1"},
       // Check treatment for short dictionary words. "uid" has higher priority,
       // but its occurrence is ignored because it is a part of another word.
       {
           {"name1", "noword", "johnsmith", "Insert your id:"},
-          {"name2", "uidentical", "js@google.com", "Insert something:"},
+          {"name2", "uidentical", "js@9oo91e.qjz9zk", "Insert something:"},
           "noword",
       }};
 

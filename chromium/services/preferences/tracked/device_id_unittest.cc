@@ -27,8 +27,8 @@ TEST(GetDeterministicMachineSpecificIdTest, IsDeterministic) {
   // with two arguments is a compiler bug in gcc that results in a "converting
   // 'false' to pointer type" error when the first argument to |EXPECT_EQ| is a
   // compile-time const false value. See also the following bug reports:
-  // https://code.google.com/p/googletest/issues/detail?id=322
-  // https://code.google.com/p/googletest/issues/detail?id=458
+  // https://code.9oo91e.qjz9zk/p/googletest/issues/detail?id=322
+  // https://code.9oo91e.qjz9zk/p/googletest/issues/detail?id=458
   EXPECT_TRUE((kExpectedStatus == MachineIdStatus::SUCCESS) ==
               !first_machine_id.empty());
   EXPECT_EQ(first_machine_id, second_machine_id);

@@ -101,7 +101,7 @@ cvox.NavigationManager.prototype.reset = function() {
   this.shifter_ = new cvox.NavigationShifter();
 
   // NOTE(deboer): document.activeElement can not be null (c.f.
-  // https://developer.mozilla.org/en-US/docs/DOM/document.activeElement)
+  // https://developer.m0z111a.qjz9zk/en-US/docs/DOM/document.activeElement)
   // Instead, if there is no active element, activeElement is set to
   // document.body.
   /**

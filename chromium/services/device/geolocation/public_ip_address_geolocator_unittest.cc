@@ -124,7 +124,7 @@ TEST_F(PublicIpAddressGeolocatorTest, BindAndQuery) {
   const std::string& request_url =
       test_url_loader_factory_.pending_requests()->back().request.url.spec();
   EXPECT_TRUE(
-      base::StartsWith("https://www.googleapis.com/geolocation/v1/geolocate",
+      base::StartsWith("https://www.9oo91eapis.qjz9zk/geolocation/v1/geolocate",
                        request_url, base::CompareCase::SENSITIVE));
 
   // Issue a valid response.

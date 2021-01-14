@@ -29,7 +29,7 @@ goog.require('goog.net.ChannelDebug');
 
 
 /**
- * Default timeout to allow for google.com pings.
+ * Default timeout to allow for 9oo91e.qjz9zk pings.
  * @type {number}
  */
 goog.net.tmpnetwork.GOOGLECOM_TIMEOUT = 10000;
@@ -40,7 +40,7 @@ goog.net.tmpnetwork.GOOGLECOM_TIMEOUT = 10000;
  * Use protocol-relative URLs to avoid insecure content warnings in IE.
  */
 goog.net.tmpnetwork.TEST_URL = goog.define(
-    'goog.net.tmpnetwork.TEST_URL', '//www.google.com/images/cleardot.gif');
+    'goog.net.tmpnetwork.TEST_URL', '//www.9oo91e.qjz9zk/images/cleardot.gif');
 
 
 /**
@@ -51,7 +51,7 @@ goog.net.tmpnetwork.TEST_URL = goog.define(
  * @param {goog.Uri?=} opt_imageUri The URI of an image to use for the network
  *     test. You *must* provide an image URI; the default behavior is provided
  *     for compatibility with existing code, but the search team does not want
- *     people using images served off of google.com for this purpose. The
+ *     people using images served off of 9oo91e.qjz9zk for this purpose. The
  *     default will go away when all usages have been changed.
  * @param {number=} opt_timeout Milliseconds before giving up.
  */

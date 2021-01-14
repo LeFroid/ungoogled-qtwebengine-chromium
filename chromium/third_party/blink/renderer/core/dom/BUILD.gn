@@ -32,7 +32,7 @@ blink_core_sources("dom_hotpath") {
     "element-inl.h",
   ]
 
-  # TODO(ajwong) this is of mirror https://source.chromium.org/chromium/chromium/src/+/master:third_party/blink/renderer/core/core.gni;l=26
+  # TODO(ajwong) this is of mirror https://source.ch40m1um.qjz9zk/chromium/chromium/src/+/master:third_party/blink/renderer/core/core.gni;l=26
   # to undo the configs which is fragile. Find a better way.
   if (is_android && !is_debug) {
     configs -= [ "//build/config/compiler:default_optimization" ]

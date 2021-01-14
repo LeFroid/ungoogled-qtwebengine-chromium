@@ -313,7 +313,7 @@ testSuite({
       'title': 'A title',
       'random': 'woop',
       'other-random': null,
-      'href': SafeUrl.sanitize('https://google.com'),
+      'href': SafeUrl.sanitize('https://9oo91e.qjz9zk'),
       'stringWithTypedStringProp': 'http://example.com/',
       'numberWithTypedStringProp': 123,
       'booleanWithTypedStringProp': true,
@@ -337,7 +337,7 @@ testSuite({
     assertEquals('test3', el.name);
     assertEquals('A title', el.title);
     assertEquals('woop', el.random);
-    assertEquals('https://google.com', el.href);
+    assertEquals('https://9oo91e.qjz9zk', el.href);
     assertEquals('http://example.com/', el.stringWithTypedStringProp);
     assertEquals(123, el.numberWithTypedStringProp);
     assertEquals(true, el.booleanWithTypedStringProp);

@@ -445,7 +445,7 @@ namespace dawn_native {
                 "bytesPerRow must not be less than the number of bytes per row");
         }
 
-        // TODO(tommek@google.com): to match the spec there should be another condition here
+        // TODO(tommek@9oo91e.qjz9zk): to match the spec there should be another condition here
         // on rowsPerImage >= copyExtent.height if copyExtent.depth > 1.
 
         // Validation for the copy being in-bounds:

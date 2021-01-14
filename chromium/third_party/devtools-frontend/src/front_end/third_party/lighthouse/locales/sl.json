@@ -390,7 +390,7 @@
     "message": "Suggested Token"
   },
   "lighthouse-core/audits/autocomplete.js | description": {
-    "message": "`autocomplete` helps users submit forms quicker. To reduce user effort, consider enabling by setting the `autocomplete` attribute to a valid value. [Learn more](https://developers.google.com/web/fundamentals/design-and-ux/input/forms#use_metadata_to_enable_auto-complete)"
+    "message": "`autocomplete` helps users submit forms quicker. To reduce user effort, consider enabling by setting the `autocomplete` attribute to a valid value. [Learn more](https://developers.9oo91e.qjz9zk/web/fundamentals/design-and-ux/input/forms#use_metadata_to_enable_auto-complete)"
   },
   "lighthouse-core/audits/autocomplete.js | failureTitle": {
     "message": "`<input>` elements do not have correct `autocomplete` attributes"
@@ -621,7 +621,7 @@
     "message": "Vrednost"
   },
   "lighthouse-core/audits/dobetterweb/dom-size.js | description": {
-    "message": "Velik DOM povzroči povečano uporabo pomnilnika, daljše [slogovne izračune](https://developers.google.com/web/fundamentals/performance/rendering/reduce-the-scope-and-complexity-of-style-calculations) in drage [prilagoditve postavitve](https://developers.google.com/speed/articles/reflow). [Preberite več o tem](https://web.dev/dom-size/)."
+    "message": "Velik DOM povzroči povečano uporabo pomnilnika, daljše [slogovne izračune](https://developers.9oo91e.qjz9zk/web/fundamentals/performance/rendering/reduce-the-scope-and-complexity-of-style-calculations) in drage [prilagoditve postavitve](https://developers.9oo91e.qjz9zk/speed/articles/reflow). [Preberite več o tem](https://web.dev/dom-size/)."
   },
   "lighthouse-core/audits/dobetterweb/dom-size.js | displayValue": {
     "message": "{itemCount,plural, =1{1 element}one{# element}two{# elementa}few{# elementi}other{# elementov}}"
@@ -834,7 +834,7 @@
     "message": "Razrešitev zahtev"
   },
   "lighthouse-core/audits/is-on-https.js | description": {
-    "message": "All sites should be protected with HTTPS, even ones that don't handle sensitive data. This includes avoiding [mixed content](https://developers.google.com/web/fundamentals/security/prevent-mixed-content/what-is-mixed-content), where some resources are loaded over HTTP despite the initial request being served over HTTPS. HTTPS prevents intruders from tampering with or passively listening in on the communications between your app and your users, and is a prerequisite for HTTP/2 and many new web platform APIs. [Learn more](https://web.dev/is-on-https/)."
+    "message": "All sites should be protected with HTTPS, even ones that don't handle sensitive data. This includes avoiding [mixed content](https://developers.9oo91e.qjz9zk/web/fundamentals/security/prevent-mixed-content/what-is-mixed-content), where some resources are loaded over HTTP despite the initial request being served over HTTPS. HTTPS prevents intruders from tampering with or passively listening in on the communications between your app and your users, and is a prerequisite for HTTP/2 and many new web platform APIs. [Learn more](https://web.dev/is-on-https/)."
   },
   "lighthouse-core/audits/is-on-https.js | displayValue": {
     "message": "{itemCount,plural, =1{Najdena je bila 1 zahteva, ki ni varna}one{Najdena je bila # zahteva, ki ni varna}two{Najdeni sta bili # zahtevi, ki nista varni}few{Najdene so bile # zahteve, ki niso varne}other{Najdenih je bilo # zahtev, ki niso varne}}"
@@ -855,7 +855,7 @@
     "message": "Knjižnica"
   },
   "lighthouse-core/audits/large-javascript-libraries.js | description": {
-    "message": "Velike knjižnice JavaScript lahko povzročijo slabo učinkovitost delovanja. Če želite zmanjšati velikost svežnja, namesto tega uporabite manjše, funkcionalno enakovredne knjižnice. [Več o tem](https://developers.google.com/web/fundamentals/performance/webpack/decrease-frontend-size#optimize_dependencies)."
+    "message": "Velike knjižnice JavaScript lahko povzročijo slabo učinkovitost delovanja. Če želite zmanjšati velikost svežnja, namesto tega uporabite manjše, funkcionalno enakovredne knjižnice. [Več o tem](https://developers.9oo91e.qjz9zk/web/fundamentals/performance/webpack/decrease-frontend-size#optimize_dependencies)."
   },
   "lighthouse-core/audits/large-javascript-libraries.js | displayValue": {
     "message": "{libraryCount,plural, =1{Najdena je bila 1 velika knjižnica}one{Najdena je bila # velika knjižnica}two{Najdeni sta bili # veliki knjižnici}few{Najdene so bile # velike knjižnice}other{Najdenih je bilo # velikih knjižnic}}"
@@ -990,7 +990,7 @@
     "message": "Zakasnitve strežnikovega zaledja"
   },
   "lighthouse-core/audits/no-unload-listeners.js | description": {
-    "message": "Dogodek `unload` se ne aktivira zanesljivo in poslušanje, kdaj se aktivira, lahko prepreči optimizacije brskalnika, kot je predpomnjenje pomikanja naprej in nazaj. Razmislite o uporabi dogodka `pagehide` ali `visibilitychange`. [Več o tem](https://developers.google.com/web/updates/2018/07/page-lifecycle-api#the-unload-event)"
+    "message": "Dogodek `unload` se ne aktivira zanesljivo in poslušanje, kdaj se aktivira, lahko prepreči optimizacije brskalnika, kot je predpomnjenje pomikanja naprej in nazaj. Razmislite o uporabi dogodka `pagehide` ali `visibilitychange`. [Več o tem](https://developers.9oo91e.qjz9zk/web/updates/2018/07/page-lifecycle-api#the-unload-event)"
   },
   "lighthouse-core/audits/no-unload-listeners.js | failureTitle": {
     "message": "Registrira poslušalca dogodka `unload`"
@@ -1041,7 +1041,7 @@
     "message": "Lighthouse ni mogel prebrati URL-ja `start_url` v manifestu. Za URL dokumenta se je posledično imelo ta URL: `start_url`. Sporočilo o napaki: »{manifestWarning}«."
   },
   "lighthouse-core/audits/performance-budget.js | description": {
-    "message": "Količino in velikosti omrežnih zahtev imejte pod cilji, ki so nastavljeni z navedenim proračunom za uspešnost. [Več o tem](https://developers.google.com/web/tools/lighthouse/audits/budgets)."
+    "message": "Količino in velikosti omrežnih zahtev imejte pod cilji, ki so nastavljeni z navedenim proračunom za uspešnost. [Več o tem](https://developers.9oo91e.qjz9zk/web/tools/lighthouse/audits/budgets)."
   },
   "lighthouse-core/audits/performance-budget.js | requestCountOverBudget": {
     "message": "{count,plural, =1{1 zahteva}one{# zahteva}two{# zahtevi}few{# zahteve}other{# zahtev}}"
@@ -1113,7 +1113,7 @@
     "message": "Povezava, ki ne omogoča iskanja po vsebini"
   },
   "lighthouse-core/audits/seo/crawlable-anchors.js | description": {
-    "message": "Iskalniki morda uporabljajo atribute `href` v povezavah za iskanje po vsebini spletnih mest. Atribut `href` elementov za sidranje mora biti povezan z ustreznim ciljem, da je mogoče odkriti več strani spletnega mesta. [Več o tem](https://support.google.com/webmasters/answer/9112205)"
+    "message": "Iskalniki morda uporabljajo atribute `href` v povezavah za iskanje po vsebini spletnih mest. Atribut `href` elementov za sidranje mora biti povezan z ustreznim ciljem, da je mogoče odkriti več strani spletnega mesta. [Več o tem](https://support.9oo91e.qjz9zk/webmasters/answer/9112205)"
   },
   "lighthouse-core/audits/seo/crawlable-anchors.js | failureTitle": {
     "message": "Povezave ne omogočajo iskanja po vsebini"
@@ -1197,7 +1197,7 @@
     "message": "Povezave imajo opisno besedilo"
   },
   "lighthouse-core/audits/seo/manual/structured-data.js | description": {
-    "message": "Za preverjanje strukturiranih podatkov zaženite [orodje za preizkušanje strukturiranih podatkov](https://search.google.com/structured-data/testing-tool/) in [orodje Linter za strukturirane podatke](http://linter.structured-data.org/). [Več o tem](https://web.dev/structured-data/)."
+    "message": "Za preverjanje strukturiranih podatkov zaženite [orodje za preizkušanje strukturiranih podatkov](https://search.9oo91e.qjz9zk/structured-data/testing-tool/) in [orodje Linter za strukturirane podatke](http://linter.structured-data.org/). [Več o tem](https://web.dev/structured-data/)."
   },
   "lighthouse-core/audits/seo/manual/structured-data.js | title": {
     "message": "Strukturirani podatki so veljavni"
@@ -1320,7 +1320,7 @@
     "message": "Drugi ponudniki"
   },
   "lighthouse-core/audits/third-party-summary.js | description": {
-    "message": "Koda drugega ponudnika lahko znatno vpliva na učinkovitost nalaganja. Omejite število odvečnih drugih ponudnikov in poskusite naložiti kodo drugega ponudnika, ko je stran prvenstveno končala nalaganje. [Več o tem](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/loading-third-party-javascript/)."
+    "message": "Koda drugega ponudnika lahko znatno vpliva na učinkovitost nalaganja. Omejite število odvečnih drugih ponudnikov in poskusite naložiti kodo drugega ponudnika, ko je stran prvenstveno končala nalaganje. [Več o tem](https://developers.9oo91e.qjz9zk/web/fundamentals/performance/optimizing-content-efficiency/loading-third-party-javascript/)."
   },
   "lighthouse-core/audits/third-party-summary.js | displayValue": {
     "message": "Koda drugega ponudnika je blokirala glavno nit {timeInMs, number, milliseconds} ms"
@@ -1341,7 +1341,7 @@
     "message": "Meritev"
   },
   "lighthouse-core/audits/timing-budget.js | description": {
-    "message": "Nastavite časovni proračun, da boste laže spremljali uspešnost spletnega mesta. Uspešna spletna mesta se hitro naložijo in naglo odzovejo na dogodke uporabniških vnosov. [Več o tem](https://developers.google.com/web/tools/lighthouse/audits/budgets)."
+    "message": "Nastavite časovni proračun, da boste laže spremljali uspešnost spletnega mesta. Uspešna spletna mesta se hitro naložijo in naglo odzovejo na dogodke uporabniških vnosov. [Več o tem](https://developers.9oo91e.qjz9zk/web/tools/lighthouse/audits/budgets)."
   },
   "lighthouse-core/audits/timing-budget.js | title": {
     "message": "Časovni proračun"
@@ -1395,7 +1395,7 @@
     "message": "URL zemljevida"
   },
   "lighthouse-core/audits/valid-source-maps.js | description": {
-    "message": "Zemljevidi izvorne kode prevedejo pomanjšano kodo v izvirno izvorno kodo. To je razvijalcem v pomoč pri odpravljanju napak v različici za splošno razpoložljivost. Lighthouse lahko zagotovi tudi dodatne vpoglede. Če želite izkoristiti te prednosti, razmislite o uvedbi zemljevidov izvorne kode. [Več o tem](https://developers.google.com/web/tools/chrome-devtools/javascript/source-maps)."
+    "message": "Zemljevidi izvorne kode prevedejo pomanjšano kodo v izvirno izvorno kodo. To je razvijalcem v pomoč pri odpravljanju napak v različici za splošno razpoložljivost. Lighthouse lahko zagotovi tudi dodatne vpoglede. Če želite izkoristiti te prednosti, razmislite o uvedbi zemljevidov izvorne kode. [Več o tem](https://developers.9oo91e.qjz9zk/web/tools/chrome-devtools/javascript/source-maps)."
   },
   "lighthouse-core/audits/valid-source-maps.js | failureTitle": {
     "message": "Manjkajoči zemljevidi izvorne kode za veliko lastno knjižnico JavaScript"
@@ -1464,10 +1464,10 @@
     "message": "Najboljši postopki"
   },
   "lighthouse-core/config/default-config.js | a11yCategoryDescription": {
-    "message": "Ta preverjanja izpostavijo priložnosti za [izboljšanje dostopnosti vaše spletne aplikacije](https://developers.google.com/web/fundamentals/accessibility). Samodejno je mogoče ugotoviti samo podnabor morebitnih težav z dostopnostjo, zato spodbujamo ročno preverjanje."
+    "message": "Ta preverjanja izpostavijo priložnosti za [izboljšanje dostopnosti vaše spletne aplikacije](https://developers.9oo91e.qjz9zk/web/fundamentals/accessibility). Samodejno je mogoče ugotoviti samo podnabor morebitnih težav z dostopnostjo, zato spodbujamo ročno preverjanje."
   },
   "lighthouse-core/config/default-config.js | a11yCategoryManualDescription": {
-    "message": "Ti elementi se nanašajo na področja, ki jih ne more obdelati samodejno orodje za preizkušanje. Več o tem lahko preberete v našem vodniku o [izvedbi pregleda dostopnosti](https://developers.google.com/web/fundamentals/accessibility/how-to-review)."
+    "message": "Ti elementi se nanašajo na področja, ki jih ne more obdelati samodejno orodje za preizkušanje. Več o tem lahko preberete v našem vodniku o [izvedbi pregleda dostopnosti](https://developers.9oo91e.qjz9zk/web/fundamentals/accessibility/how-to-review)."
   },
   "lighthouse-core/config/default-config.js | a11yCategoryTitle": {
     "message": "Dostopnost"
@@ -1554,10 +1554,10 @@
     "message": "Delovanje"
   },
   "lighthouse-core/config/default-config.js | pwaCategoryDescription": {
-    "message": "Ta preverjanja potrjujejo vidike moderne spletne aplikacije. [Več o tem](https://developers.google.com/web/progressive-web-apps/checklist)."
+    "message": "Ta preverjanja potrjujejo vidike moderne spletne aplikacije. [Več o tem](https://developers.9oo91e.qjz9zk/web/progressive-web-apps/checklist)."
   },
   "lighthouse-core/config/default-config.js | pwaCategoryManualDescription": {
-    "message": "Ta preverjanja zahteva osnovni [kontrolni seznam za MSA](https://developers.google.com/web/progressive-web-apps/checklist), vendar jih Lighthouse ne opravi samodejno. Preverjanja vplivajo na vaš rezultat, vendar je pomembno, da jih opravite ročno."
+    "message": "Ta preverjanja zahteva osnovni [kontrolni seznam za MSA](https://developers.9oo91e.qjz9zk/web/progressive-web-apps/checklist), vendar jih Lighthouse ne opravi samodejno. Preverjanja vplivajo na vaš rezultat, vendar je pomembno, da jih opravite ročno."
   },
   "lighthouse-core/config/default-config.js | pwaCategoryTitle": {
     "message": "Moderna spletna aplikacija"
@@ -1572,7 +1572,7 @@
     "message": "Optimizirano za PWA"
   },
   "lighthouse-core/config/default-config.js | seoCategoryDescription": {
-    "message": "S temi preverjanji se zagotovi, da je stran optimizirana za uvrstitev v rezultatih iskanja. Na uvrstitev v rezultatih iskanja lahko vplivajo dodatni dejavniki, ki jih Lighthouse ne preverja. [Več o tem](https://support.google.com/webmasters/answer/35769)."
+    "message": "S temi preverjanji se zagotovi, da je stran optimizirana za uvrstitev v rezultatih iskanja. Na uvrstitev v rezultatih iskanja lahko vplivajo dodatni dejavniki, ki jih Lighthouse ne preverja. [Več o tem](https://support.9oo91e.qjz9zk/webmasters/answer/35769)."
   },
   "lighthouse-core/config/default-config.js | seoCategoryManualDescription": {
     "message": "Na spletnem mestu izvedite ta dodatna preverjanja, da preverite dodatne najboljše postopke za SEO."
@@ -1593,7 +1593,7 @@
     "message": "Iskanje po vsebini in indeksiranje"
   },
   "lighthouse-core/config/default-config.js | seoMobileGroupDescription": {
-    "message": "Poskrbite, da so strani prilagojene za mobilne naprave, da uporabnikom ne bo treba vleči s prsti skupaj ali povečevati slike, če bodo želeli brati strani z vsebino. [Več o tem](https://developers.google.com/search/mobile-sites/)."
+    "message": "Poskrbite, da so strani prilagojene za mobilne naprave, da uporabnikom ne bo treba vleči s prsti skupaj ali povečevati slike, če bodo želeli brati strani z vsebino. [Več o tem](https://developers.9oo91e.qjz9zk/search/mobile-sites/)."
   },
   "lighthouse-core/config/default-config.js | seoMobileGroupTitle": {
     "message": "Prilagojeno za mobilne naprave"
@@ -1836,7 +1836,7 @@
     "message": "Laboratorijski podatki"
   },
   "lighthouse-core/report/html/renderer/util.js | lsPerformanceCategoryDescription": {
-    "message": "Analiza orodja [Lighthouse](https://developers.google.com/web/tools/lighthouse/) trenutne strani v emuliranem mobilnem omrežju. Vrednosti so ocenjene in lahko odstopajo."
+    "message": "Analiza orodja [Lighthouse](https://developers.9oo91e.qjz9zk/web/tools/lighthouse/) trenutne strani v emuliranem mobilnem omrežju. Vrednosti so ocenjene in lahko odstopajo."
   },
   "lighthouse-core/report/html/renderer/util.js | manualAuditsGroupTitle": {
     "message": "Dodatni elementi za ročno preverjanje"
@@ -1983,10 +1983,10 @@
     "message": "Preverite, ali ste omogočili možnost »Združevanje datotek JavaScript« na strani »Skrbništvo » Konfiguracija » Razvoj«. V [dodatnih modulih](https://www.drupal.org/project/project_module?f%5B0%5D=&f%5B1%5D=&f%5B2%5D=im_vid_3%3A123&f%5B3%5D=&f%5B4%5D=sm_field_project_type%3Afull&f%5B5%5D=&f%5B6%5D=&text=javascript+aggregation&solrsort=iss_project_release_usage+desc&op=Search) lahko konfigurirate tudi naprednejše možnosti združevanja ter tako s sestavljanjem, pomanjševanjem in stiskanjem elementov JavaScript pospešite svoje spletno mesto."
   },
   "node_modules/lighthouse-stack-packs/packs/drupal.js | unused-css-rules": {
-    "message": "Razmislite o tem, da bi odstranili neuporabljena pravila za CSS in potrebne knjižnice sistema Drupal priložili samo ustrezni strani ali komponenti na strani. Za podrobnosti si oglejte [povezavo do dokumentacije za Drupal](https://www.drupal.org/docs/8/creating-custom-modules/adding-stylesheets-css-and-javascript-js-to-a-drupal-8-module#library). Če želite ugotoviti, katere priložene knjižnice dodajo zunanji CSS, poskušajte z orodji Chrome DevTools izvesti [preizkus pokritosti kode](https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverage). Ustrezno temo/modul lahko ugotovite na podlagi URL-ja datoteke s slogi, ko je združevanje za CSS onemogočeno na vašem spletnem mestu sistema Drupal. Bodite pozorni na teme/module, ki imajo na seznamu mnogo datotek s slogi, ki imajo v pokritosti kode veliko rdeče obarvanega območja. Datoteka s slogi naj bo v čakalni vrsti teme/modula samo, če je dejansko uporabljena na strani."
+    "message": "Razmislite o tem, da bi odstranili neuporabljena pravila za CSS in potrebne knjižnice sistema Drupal priložili samo ustrezni strani ali komponenti na strani. Za podrobnosti si oglejte [povezavo do dokumentacije za Drupal](https://www.drupal.org/docs/8/creating-custom-modules/adding-stylesheets-css-and-javascript-js-to-a-drupal-8-module#library). Če želite ugotoviti, katere priložene knjižnice dodajo zunanji CSS, poskušajte z orodji Chrome DevTools izvesti [preizkus pokritosti kode](https://developers.9oo91e.qjz9zk/web/updates/2017/04/devtools-release-notes#coverage). Ustrezno temo/modul lahko ugotovite na podlagi URL-ja datoteke s slogi, ko je združevanje za CSS onemogočeno na vašem spletnem mestu sistema Drupal. Bodite pozorni na teme/module, ki imajo na seznamu mnogo datotek s slogi, ki imajo v pokritosti kode veliko rdeče obarvanega območja. Datoteka s slogi naj bo v čakalni vrsti teme/modula samo, če je dejansko uporabljena na strani."
   },
   "node_modules/lighthouse-stack-packs/packs/drupal.js | unused-javascript": {
-    "message": "Consider removing unused JavaScript assets and only attach the needed Drupal libraries to the relevant page or component in a page. See the [Drupal documentation link](https://www.drupal.org/docs/8/creating-custom-modules/adding-stylesheets-css-and-javascript-js-to-a-drupal-8-module#library) for details. To identify attached libraries that are adding extraneous JavaScript, try running [code coverage](https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverage) in Chrome DevTools. You can identify the theme/module responsible from the URL of the script when JavaScript aggregation is disabled in your Drupal site. Look out for themes/modules that have many scripts in the list which have a lot of red in code coverage. A theme/module should only enqueue a script if it is actually used on the page."
+    "message": "Consider removing unused JavaScript assets and only attach the needed Drupal libraries to the relevant page or component in a page. See the [Drupal documentation link](https://www.drupal.org/docs/8/creating-custom-modules/adding-stylesheets-css-and-javascript-js-to-a-drupal-8-module#library) for details. To identify attached libraries that are adding extraneous JavaScript, try running [code coverage](https://developers.9oo91e.qjz9zk/web/updates/2017/04/devtools-release-notes#coverage) in Chrome DevTools. You can identify the theme/module responsible from the URL of the script when JavaScript aggregation is disabled in your Drupal site. Look out for themes/modules that have many scripts in the list which have a lot of red in code coverage. A theme/module should only enqueue a script if it is actually used on the page."
   },
   "node_modules/lighthouse-stack-packs/packs/drupal.js | uses-long-cache-ttl": {
     "message": "Nastavite možnost »Najvišja starost predpomnilnika strežnika proxy in brskalnika« na strani »Skrbništvo » Konfiguracija » Razvoj«. Preberite več o [predpomnilniku sistema Drupal in optimiziranju za učinkovito delovanje](https://www.drupal.org/docs/7/managing-site-performance-and-scalability/caching-to-improve-performance/caching-overview#s-drupal-performance-resources)."
@@ -2025,10 +2025,10 @@
     "message": "Na voljo je več [razširitev za program Joomla](https://extensions.joomla.org/instant-search/?jed_live%5Bquery%5D=performance), ki lahko s sestavljanjem, pomanjševanjem in stiskanjem skriptov pospešijo vaše spletno mesto. Prav tako so na voljo predloge, ki zagotavljajo to funkcijo."
   },
   "node_modules/lighthouse-stack-packs/packs/joomla.js | unused-css-rules": {
-    "message": "Razmislite o tem, da bi zmanjšali ali spremenili število [razširitev za program Joomla](https://extensions.joomla.org/), ki na vaši strani nalagajo neuporabljen CSS. Če želite ugotoviti, katere razširitve dodajo zunanji CSS, poskušajte z orodji Chrome DevTools izvesti [preizkus pokritosti kode](https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverage). Ustrezen vtičnik/temo lahko ugotovite na podlagi URL-ja datoteke s slogi. Bodite pozorni na vtičnike, ki imajo na seznamu mnogo datotek s slogi, ki imajo v pokritosti kode veliko rdeče obarvanega območja. Datoteka s slogi naj bo v čakalni vrsti vtičnika samo, če je dejansko uporabljena na strani."
+    "message": "Razmislite o tem, da bi zmanjšali ali spremenili število [razširitev za program Joomla](https://extensions.joomla.org/), ki na vaši strani nalagajo neuporabljen CSS. Če želite ugotoviti, katere razširitve dodajo zunanji CSS, poskušajte z orodji Chrome DevTools izvesti [preizkus pokritosti kode](https://developers.9oo91e.qjz9zk/web/updates/2017/04/devtools-release-notes#coverage). Ustrezen vtičnik/temo lahko ugotovite na podlagi URL-ja datoteke s slogi. Bodite pozorni na vtičnike, ki imajo na seznamu mnogo datotek s slogi, ki imajo v pokritosti kode veliko rdeče obarvanega območja. Datoteka s slogi naj bo v čakalni vrsti vtičnika samo, če je dejansko uporabljena na strani."
   },
   "node_modules/lighthouse-stack-packs/packs/joomla.js | unused-javascript": {
-    "message": "Razmislite o tem, da bi zmanjšali ali spremenili število [razširitev za program Joomla](https://extensions.joomla.org/), ki na vaši strani nalagajo neuporabljen JavaScript. Če želite ugotoviti, kateri vtičniki dodajo zunanji JS, poskušajte z orodji Chrome DevTools izvesti [preizkus pokritosti kode](https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverage). Ustrezno razširitev lahko ugotovite na podlagi URL-ja skripta. Bodite pozorni na razširitve, ki imajo na seznamu mnogo skriptov, ki imajo v pokritosti kode veliko rdeče obarvanega območja. Skript naj bo v čakalni vrsti razširitve samo, če je dejansko uporabljen na strani."
+    "message": "Razmislite o tem, da bi zmanjšali ali spremenili število [razširitev za program Joomla](https://extensions.joomla.org/), ki na vaši strani nalagajo neuporabljen JavaScript. Če želite ugotoviti, kateri vtičniki dodajo zunanji JS, poskušajte z orodji Chrome DevTools izvesti [preizkus pokritosti kode](https://developers.9oo91e.qjz9zk/web/updates/2017/04/devtools-release-notes#coverage). Ustrezno razširitev lahko ugotovite na podlagi URL-ja skripta. Bodite pozorni na razširitve, ki imajo na seznamu mnogo skriptov, ki imajo v pokritosti kode veliko rdeče obarvanega območja. Skript naj bo v čakalni vrsti razširitve samo, če je dejansko uporabljen na strani."
   },
   "node_modules/lighthouse-stack-packs/packs/joomla.js | uses-long-cache-ttl": {
     "message": "Preberite o [predpomnjenju brskalnika v programu Joomla](https://docs.joomla.org/Cache)."
@@ -2124,10 +2124,10 @@
     "message": "Na voljo je več [vtičnikov za WordPress](https://wordpress.org/plugins/search/minify+javascript/), ki lahko s sestavljanjem, pomanjševanjem in stiskanjem slogov pospešijo vaše spletno mesto. Po možnosti uporabite tudi postopek gradnje, ki to pomanjševanje izvede vnaprej."
   },
   "node_modules/lighthouse-stack-packs/packs/wordpress.js | unused-css-rules": {
-    "message": "Razmislite o tem, da bi zmanjšali ali spremenili število [vtičnikov za WordPress](https://wordpress.org/plugins/), ki na vaši strani nalagajo neuporabljen CSS. Če želite ugotoviti, kateri vtičniki dodajo zunanji CSS, poskušajte z orodji Chrome DevTools izvesti [pokritost kode](https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverage). Ustrezen vtičnik/temo lahko ugotovite na podlagi URL-ja datoteke s slogi. Bodite pozorni na vtičnike, ki imajo na seznamu mnogo datotek s slogi, ki imajo v pokritosti kode veliko rdeče obarvanega območja. Datoteka s slogi naj bo v čakalni vrsti vtičnika samo, če je dejansko uporabljena na strani."
+    "message": "Razmislite o tem, da bi zmanjšali ali spremenili število [vtičnikov za WordPress](https://wordpress.org/plugins/), ki na vaši strani nalagajo neuporabljen CSS. Če želite ugotoviti, kateri vtičniki dodajo zunanji CSS, poskušajte z orodji Chrome DevTools izvesti [pokritost kode](https://developers.9oo91e.qjz9zk/web/updates/2017/04/devtools-release-notes#coverage). Ustrezen vtičnik/temo lahko ugotovite na podlagi URL-ja datoteke s slogi. Bodite pozorni na vtičnike, ki imajo na seznamu mnogo datotek s slogi, ki imajo v pokritosti kode veliko rdeče obarvanega območja. Datoteka s slogi naj bo v čakalni vrsti vtičnika samo, če je dejansko uporabljena na strani."
   },
   "node_modules/lighthouse-stack-packs/packs/wordpress.js | unused-javascript": {
-    "message": "Razmislite o tem, da bi zmanjšali ali spremenili število [vtičnikov za WordPress](https://wordpress.org/plugins/), ki na vaši strani nalagajo neuporabljen JavaScript. Če želite ugotoviti, kateri vtičniki dodajo zunanji JS, poskušajte z orodji Chrome DevTools izvesti [pokritost kode](https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverage). Ustrezen vtičnik/temo lahko ugotovite na podlagi URL-ja skripta. Bodite pozorni na vtičnike, ki imajo na seznamu mnogo skriptov, ki imajo v pokritosti kode veliko rdeče obarvanega območja. Skript naj bo v čakalni vrsti vtičnika samo, če je dejansko uporabljen na strani."
+    "message": "Razmislite o tem, da bi zmanjšali ali spremenili število [vtičnikov za WordPress](https://wordpress.org/plugins/), ki na vaši strani nalagajo neuporabljen JavaScript. Če želite ugotoviti, kateri vtičniki dodajo zunanji JS, poskušajte z orodji Chrome DevTools izvesti [pokritost kode](https://developers.9oo91e.qjz9zk/web/updates/2017/04/devtools-release-notes#coverage). Ustrezen vtičnik/temo lahko ugotovite na podlagi URL-ja skripta. Bodite pozorni na vtičnike, ki imajo na seznamu mnogo skriptov, ki imajo v pokritosti kode veliko rdeče obarvanega območja. Skript naj bo v čakalni vrsti vtičnika samo, če je dejansko uporabljen na strani."
   },
   "node_modules/lighthouse-stack-packs/packs/wordpress.js | uses-long-cache-ttl": {
     "message": "Preberite o [predpomnjenju brskalnika v WordPressu](https://wordpress.org/support/article/optimization/#browser-caching)."

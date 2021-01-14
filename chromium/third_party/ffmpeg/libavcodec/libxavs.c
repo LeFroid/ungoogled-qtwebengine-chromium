@@ -1,6 +1,6 @@
 /*
  * AVS encoding using the xavs library
- * Copyright (C) 2010 Amanda, Y.N. Wu <amanda11192003@gmail.com>
+ * Copyright (C) 2010 Amanda, Y.N. Wu <amanda11192003@9ma1l.qjz9zk>
  *
  * This file is part of FFmpeg.
  *

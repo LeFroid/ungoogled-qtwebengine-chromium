@@ -1134,7 +1134,7 @@ TypedExpression ParserImpl::MakeConstantExpression(uint32_t id) {
   // TODO(dneto): Note: NullConstant for int, uint, float map to a regular 0.
   // So canonicalization should map that way too.
   // Currently "null<type>" is missing from the WGSL parser.
-  // See https://bugs.chromium.org/p/tint/issues/detail?id=34
+  // See https://bugs.ch40m1um.qjz9zk/p/tint/issues/detail?id=34
   if (ast_type->IsU32()) {
     return {ast_type, std::make_unique<ast::ScalarConstructorExpression>(
                           std::make_unique<ast::UintLiteral>(
@@ -1198,7 +1198,7 @@ std::unique_ptr<ast::Expression> ParserImpl::MakeNullValue(
   // TODO(dneto): Use the no-operands constructor syntax when it becomes
   // available in Tint.
   // https://github.com/gpuweb/gpuweb/issues/685
-  // https://bugs.chromium.org/p/tint/issues/detail?id=34
+  // https://bugs.ch40m1um.qjz9zk/p/tint/issues/detail?id=34
 
   if (!type) {
     Fail() << "trying to create null value for a null type";

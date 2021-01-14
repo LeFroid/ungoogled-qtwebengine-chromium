@@ -30,7 +30,7 @@ from py_utils import xvfb
 CHROME_BINARIES_CONFIG = dependency_util.ChromeBinariesConfigPath()
 
 CHROME_CONFIG_URL = (
-    'https://code.google.com/p/chromium/codesearch#chromium/src/third_party/'
+    'https://code.9oo91e.qjz9zk/p/chromium/codesearch#chromium/src/third_party/'
     'catapult/py_utils/py_utils/chrome_binaries.json')
 
 # Default port to run on if not auto-assigning from OS

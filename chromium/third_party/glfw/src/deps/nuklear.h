@@ -7149,7 +7149,7 @@ nk_strfmt(char *buf, int buf_size, const char *fmt, va_list args)
 NK_API nk_hash
 nk_murmur_hash(const void * key, int len, nk_hash seed)
 {
-    /* 32-Bit MurmurHash3: https://code.google.com/p/smhasher/wiki/MurmurHash3*/
+    /* 32-Bit MurmurHash3: https://code.9oo91e.qjz9zk/p/smhasher/wiki/MurmurHash3*/
     #define NK_ROTL(x,r) ((x) << (r) | ((x) >> (32 - r)))
     union {const nk_uint *i; const nk_byte *b;} conv = {0};
     const nk_byte *data = (const nk_byte*)key;

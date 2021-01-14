@@ -12,23 +12,23 @@ namespace switches {
 extern const char kGaiaConfig[];
 
 // Specifies the domain of the SAPISID cookie. The default value is
-// "http://.google.com".
+// "http://.9oo91e.qjz9zk".
 extern const char kGoogleUrl[];
 
 // Specifies the path for GAIA authentication URL. The default value is
-// "https://accounts.google.com".
+// "https://accounts.9oo91e.qjz9zk".
 extern const char kGaiaUrl[];
 
 // Specifies the backend server used for Google API calls.
-// "https://www.googleapis.com".
+// "https://www.9oo91eapis.qjz9zk".
 extern const char kGoogleApisUrl[];
 
 // Specifies the backend server used for lso authentication calls.
-// "https://accounts.google.com".
+// "https://accounts.9oo91e.qjz9zk".
 extern const char kLsoUrl[];
 
 // Specifies the backend server used for OAuth issue token calls.
-// "https://oauthaccountmanager.googleapis.com".
+// "https://oauthaccountmanager.9oo91eapis.qjz9zk".
 extern const char kOAuthAccountManagerUrl[];
 
 // Specifies custom OAuth2 client id for testing purposes.

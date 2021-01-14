@@ -44,7 +44,7 @@ TEST(FieldFormatterTest, FormatString) {
 TEST(FieldFormatterTest, AutofillProfile) {
   autofill::AutofillProfile profile(base::GenerateGUID(), kFakeUrl);
   autofill::test::SetProfileInfo(
-      &profile, "John", "", "Doe", "editor@gmail.com", "", "203 Barfield Lane",
+      &profile, "John", "", "Doe", "editor@9ma1l.qjz9zk", "", "203 Barfield Lane",
       "", "Mountain View", "CA", "94043", "US", "+12345678901");
 
   // NAME_FIRST NAME_LAST
@@ -113,7 +113,7 @@ TEST(FieldFormatterTest, CreditCard) {
 TEST(FieldFormatterTest, SpecialCases) {
   autofill::AutofillProfile profile(base::GenerateGUID(), kFakeUrl);
   autofill::test::SetProfileInfo(
-      &profile, "John", "", "Doe", "editor@gmail.com", "", "203 Barfield Lane",
+      &profile, "John", "", "Doe", "editor@9ma1l.qjz9zk", "", "203 Barfield Lane",
       "", "Mountain View", "CA", "94043", "US", "+12345678901");
 
   EXPECT_EQ(*FormatString("", CreateAutofillMappings(profile, "en-US")),
@@ -137,7 +137,7 @@ TEST(FieldFormatterTest, SpecialCases) {
 TEST(FieldFormatterTest, DifferentLocales) {
   autofill::AutofillProfile profile(base::GenerateGUID(), kFakeUrl);
   autofill::test::SetProfileInfo(
-      &profile, "John", "", "Doe", "editor@gmail.com", "", "203 Barfield Lane",
+      &profile, "John", "", "Doe", "editor@9ma1l.qjz9zk", "", "203 Barfield Lane",
       "", "Mountain View", "CA", "94043", "US", "+12345678901");
   auto mappings = CreateAutofillMappings(profile, "de-DE");
 
@@ -162,7 +162,7 @@ TEST(FieldFormatterTest, AddsAllProfileFields) {
       {"5", "Gamma"},
       {"6", "B"},
       {"7", "Alpha Beta Gamma"},
-      {"9", "alpha@google.com"},
+      {"9", "alpha@9oo91e.qjz9zk"},
       {"10", "1234567"},
       {"11", "79"},
       {"12", "41"},
@@ -179,7 +179,7 @@ TEST(FieldFormatterTest, AddsAllProfileFields) {
 
   autofill::AutofillProfile profile(base::GenerateGUID(), kFakeUrl);
   autofill::test::SetProfileInfo(
-      &profile, "Alpha", "Beta", "Gamma", "alpha@google.com", "Google",
+      &profile, "Alpha", "Beta", "Gamma", "alpha@9oo91e.qjz9zk", "Google",
       "Brandschenkestrasse 110", "Google Building 110", "Zurich",
       "Canton Zurich", "8002", "CH", "+41791234567");
 

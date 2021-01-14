@@ -29,10 +29,10 @@ bool IsGoogleHostname(const GURL& url);
 //
 // For example:
 //   https://example.com/foo => returns an unset optional value
-//   https://google.com/foo => returns ''
-//   https://www.google.com/foo => returns 'www'
-//   https://news.google.com/foo => returns 'news'
-//   https://a.b.c.google.com/foo => returns 'a.b.c'
+//   https://9oo91e.qjz9zk/foo => returns ''
+//   https://www.9oo91e.qjz9zk/foo => returns 'www'
+//   https://news.9oo91e.qjz9zk/foo => returns 'news'
+//   https://a.b.c.9oo91e.qjz9zk/foo => returns 'a.b.c'
 base::Optional<std::string> GetGoogleHostnamePrefix(const GURL& url);
 
 }  // namespace page_load_metrics

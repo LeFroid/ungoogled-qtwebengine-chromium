@@ -890,14 +890,14 @@ testSuite({
 
   testOnlyAllowTags() {
     const result = '<div><span></span>' +
-        '<a href="http://www.google.com">hi</a>' +
+        '<a href="http://www.9oo91e.qjz9zk">hi</a>' +
         '<br>Test.<span></span><div align="right">Test</div></div>';
     // If we were mimicing goog.labs.html.sanitizer, our output would be
     // '<div><a>hi</a><br>Test.<div>Test</div></div>';
     assertSanitizedHtml(
         '<div><img id="bar" name=foo class="c d" ' +
             'src="http://wherever.com">' +
-            '<a href=" http://www.google.com">hi</a>' +
+            '<a href=" http://www.9oo91e.qjz9zk">hi</a>' +
             '<br>Test.<hr><div align="right">Test</div></div>',
         result, new Builder().onlyAllowTags(['bR', 'a', 'DIV']).build());
   },
@@ -909,23 +909,23 @@ testSuite({
   },
 
   testDefaultPoliciesAreApplied() {
-    const result = '<img /><a href="http://www.google.com">hi</a>' +
+    const result = '<img /><a href="http://www.9oo91e.qjz9zk">hi</a>' +
         '<a href="ftp://whatever.com">another</a>';
     assertSanitizedHtml(
         '<img id="bar" name=foo class="c d" ' +
             'src="http://wherever.com">' +
-            '<a href=" http://www.google.com">hi</a>' +
+            '<a href=" http://www.9oo91e.qjz9zk">hi</a>' +
             '<a href=ftp://whatever.com>another</a>',
         result);
   },
 
   testCustomNamePolicyIsApplied() {
     const result = '<img name="myOwnPrefix-foo" />' +
-        '<a href="http://www.google.com">hi</a>' +
+        '<a href="http://www.9oo91e.qjz9zk">hi</a>' +
         '<a href="ftp://whatever.com">another</a>';
     assertSanitizedHtml(
         '<img id="bar" name=foo class="c d" ' +
-            'src="http://wherever.com"><a href=" http://www.google.com">hi</a>' +
+            'src="http://wherever.com"><a href=" http://www.9oo91e.qjz9zk">hi</a>' +
             '<a href=ftp://whatever.com>another</a>',
         result,
         new Builder()
@@ -936,11 +936,11 @@ testSuite({
   testCustomTokenPolicyIsApplied() {
     const result = '<img id="myOwnPrefix-bar" ' +
         'class="myOwnPrefix-c myOwnPrefix-d" />' +
-        '<a href="http://www.google.com">hi</a>' +
+        '<a href="http://www.9oo91e.qjz9zk">hi</a>' +
         '<a href="ftp://whatever.com">another</a>';
     assertSanitizedHtml(
         '<img id="bar" name=foo class="c d" ' +
-            'src="http://wherever.com"><a href=" http://www.google.com">hi</a>' +
+            'src="http://wherever.com"><a href=" http://www.9oo91e.qjz9zk">hi</a>' +
             '<a href=ftp://whatever.com>another</a>',
         result,
         new Builder()
@@ -951,11 +951,11 @@ testSuite({
   testMultipleCustomPoliciesAreApplied() {
     const result = '<img id="plarpalarp-bar" name="larlarlar-foo" ' +
         'class="plarpalarp-c plarpalarp-d" />' +
-        '<a href="http://www.google.com">hi</a>' +
+        '<a href="http://www.9oo91e.qjz9zk">hi</a>' +
         '<a href="ftp://whatever.com">another</a>';
     assertSanitizedHtml(
         '<img id="bar" name=foo class="c d" ' +
-            'src="http://wherever.com"><a href=" http://www.google.com">hi</a>' +
+            'src="http://wherever.com"><a href=" http://www.9oo91e.qjz9zk">hi</a>' +
             '<a href=ftp://whatever.com>another</a>',
         result,
         new Builder()
@@ -966,11 +966,11 @@ testSuite({
 
   testNonTrivialCustomPolicy() {
     const result =
-        '<img /><a href="http://www.google.com" name="Alacrity">hi</a>' +
+        '<img /><a href="http://www.9oo91e.qjz9zk" name="Alacrity">hi</a>' +
         '<a href="ftp://whatever.com">another</a>';
     assertSanitizedHtml(
         '<img id="bar" name=foo class="c d" src="http://wherever.com">' +
-            '<a href=" http://www.google.com" name=Alacrity>hi</a>' +
+            '<a href=" http://www.9oo91e.qjz9zk" name=Alacrity>hi</a>' +
             '<a href=ftp://whatever.com>another</a>',
         result,
         new Builder()
@@ -982,13 +982,13 @@ testSuite({
     const result = '<img src="http://wherever.com" />' +
         '<img src="https://secure.wherever.com" />' +
         '<img alt="test" src="//wherever.com" />' +
-        '<a href="http://www.google.com">hi</a>' +
+        '<a href="http://www.9oo91e.qjz9zk">hi</a>' +
         '<a href="ftp://whatever.com">another</a>';
     assertSanitizedHtml(
         '<img id="bar" name=foo class="c d" src="http://wherever.com">' +
             '<img src="https://secure.wherever.com">' +
             '<img alt="test" src="//wherever.com">' +
-            '<a href=" http://www.google.com">hi</a>' +
+            '<a href=" http://www.9oo91e.qjz9zk">hi</a>' +
             '<a href=ftp://whatever.com>another</a>',
         result,
         new Builder()
@@ -1054,9 +1054,9 @@ testSuite({
               if (!/^https:\/\//i.test(url)) {
                 return null;
               }
-              // CSS background URLs may only come from google.com.
+              // CSS background URLs may only come from 9oo91e.qjz9zk.
               if (policyHints.cssProperty === 'background-image') {
-                if (!/^https:\/\/www\.google\.com\//i.test(url)) {
+                if (!/^https:\/\/www\.9oo91e\.qjz9zk\//i.test(url)) {
                   return null;
                 }
               }
@@ -1064,7 +1064,7 @@ testSuite({
             })
             .build();
 
-    const googleUrl = 'https://www.google.com/i.png';
+    const googleUrl = 'https://www.9oo91e.qjz9zk/i.png';
     let html =
         '<div style="background-image: url(\'' + googleUrl + '\')"></div>';
     assertSanitizedHtml(html, html, sanitizer);
@@ -1073,7 +1073,7 @@ testSuite({
     html = '<div style="background-image: url(\'' + otherUrl + '\')"></div>';
     assertSanitizedHtml(html, '<div></div>', sanitizer);
 
-    let sanitizedHtml = '<img src="https://www.google.com/i.png">';
+    let sanitizedHtml = '<img src="https://www.9oo91e.qjz9zk/i.png">';
     assertSanitizedHtml(sanitizedHtml, sanitizedHtml, sanitizer);
 
     sanitizedHtml = '<img src="https://wherever/">';

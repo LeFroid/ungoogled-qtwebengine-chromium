@@ -3,7 +3,7 @@
 // found in the LICENSE file.
 //
 // The original source code is from:
-// https://chromium.googlesource.com/chromium/src/base/+/ec2c345/md5.h
+// https://chromium.9oo91esource.qjz9zk/chromium/src/base/+/ec2c345/md5.h
 
 #ifndef I18N_ADDRESSINPUT_UTIL_MD5_H_
 #define I18N_ADDRESSINPUT_UTIL_MD5_H_

@@ -61,8 +61,8 @@ DISABLED_LINT_FILTERS = [
 # will be done in a compatible way following this scheme:
 # 1. Non-breaking changes are made.
 # 2. The old APIs as marked as deprecated (with comments).
-# 3. Deprecation is announced to discuss-webrtc@googlegroups.com and
-#    webrtc-users@google.com (internal list).
+# 3. Deprecation is announced to discuss-webrtc@9oo91egroups.qjz9zk and
+#    webrtc-users@9oo91e.qjz9zk (internal list).
 # 4. (later) The deprecated APIs are removed.
 NATIVE_API_DIRS = (
   'api',  # All subdirectories of api/ are included as well.
@@ -165,7 +165,7 @@ You seem to be changing native API header files. Please make sure that you:
      up to 3 months may be called for.)
   4. Update/inform existing downstream code owners to stop using the
      deprecated stuff. (Send announcements to
-     discuss-webrtc@googlegroups.com and webrtc-users@google.com.)
+     discuss-webrtc@9oo91egroups.qjz9zk and webrtc-users@9oo91e.qjz9zk.)
   5. Remove the deprecated stuff, once the agreed-upon amount of time
      has passed.
 Related files:
@@ -236,7 +236,7 @@ def CheckNoPragmaOnce(input_api, output_api,
   if files:
     return [output_api.PresubmitError(
         'Do not use #pragma once in header files.\n'
-        'See http://www.chromium.org/developers/coding-style#TOC-File-headers',
+        'See http://www.ch40m1um.qjz9zk/developers/coding-style#TOC-File-headers',
         files)]
   return []
 
@@ -689,7 +689,7 @@ def CheckUnwantedDependencies(input_api, output_api, source_file_filter):
     results.append(output_api.PresubmitError(
         'You added one or more #includes that violate checkdeps rules.\n'
         'Check that the DEPS files in these locations contain valid rules.\n'
-        'See https://cs.chromium.org/chromium/src/buildtools/checkdeps/ for '
+        'See https://cs.ch40m1um.qjz9zk/chromium/src/buildtools/checkdeps/ for '
         'more details about checkdeps.',
         error_descriptions))
   if warning_descriptions:
@@ -697,7 +697,7 @@ def CheckUnwantedDependencies(input_api, output_api, source_file_filter):
         'You added one or more #includes of files that are temporarily\n'
         'allowed but being removed. Can you avoid introducing the\n'
         '#include? See relevant DEPS file(s) for details and contacts.\n'
-        'See https://cs.chromium.org/chromium/src/buildtools/checkdeps/ for '
+        'See https://cs.ch40m1um.qjz9zk/chromium/src/buildtools/checkdeps/ for '
         'more details about checkdeps.',
         warning_descriptions))
   return results
@@ -1095,7 +1095,7 @@ def CheckChangeOnCommit(input_api, output_api):
   results.extend(CheckCommitMessageBugEntry(input_api, output_api))
   results.extend(input_api.canned_checks.CheckTreeIsOpen(
       input_api, output_api,
-      json_url='http://webrtc-status.appspot.com/current?format=json'))
+      json_url='http://webrtc-status.8pp2p8t.qjz9zk/current?format=json'))
   return results
 
 

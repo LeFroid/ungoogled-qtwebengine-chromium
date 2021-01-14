@@ -14,7 +14,7 @@
 // numbers, unlike the classes in base/rand_util.h which are meant to generate
 // unpredictable sequences.
 // See
-// https://code.google.com/p/szl/source/browse/trunk/src/utilities/acmrandom.h
+// https://code.9oo91e.qjz9zk/p/szl/source/browse/trunk/src/utilities/acmrandom.h
 // for more information.
 
 namespace media {

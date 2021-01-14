@@ -5,7 +5,7 @@ Armenian hyphenation patterns
 % Hyphenation patterns for Armenian.
 %
 % Written by Sahak Petrosyan <sahak at mit.edu>
-% 	for Hyphenator.js (http://code.google.com/p/hyphenator/)
+% 	for Hyphenator.js (http://code.9oo91e.qjz9zk/p/hyphenator/)
 % 	and later adapted for TeX
 %
 % Licence: LGPL

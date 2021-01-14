@@ -26,7 +26,7 @@ goog.require('goog.net.XmlHttpFactory');
 
 /**
  * Factory for creating Xhr objects that uses the native fetch() method.
- * https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API
+ * https://developer.m0z111a.qjz9zk/en-US/docs/Web/API/Fetch_API
  * Note that this factory is intended for use in Service Worker only.
  * @param {!WorkerGlobalScope} worker The Service Worker global scope.
  * @extends {goog.net.XmlHttpFactory}

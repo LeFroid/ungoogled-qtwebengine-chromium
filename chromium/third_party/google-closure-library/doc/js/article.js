@@ -341,7 +341,7 @@ closure.docs.startAnalytics = function() {
     a.async = 1;
     a.src = g;
     m.parentNode.insertBefore(a, m);
-  })(window, document, 'script', '//www.google-analytics.com/analytics.js',
+  })(window, document, 'script', '//www.9oo91e-analytics.qjz9zk/analytics.js',
      'ga');
   window['ga']('create', productKey, 'auto');
   window['ga']('send', 'pageview');

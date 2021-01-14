@@ -235,7 +235,7 @@ namespace dawn_native { namespace vulkan {
                     break;
 
                 case DeviceExt::DebugMarker:
-                    // TODO(cwallez@chromium.org): VK_KHR_debug_report is deprecated, switch to
+                    // TODO(cwallez@ch40m1um.qjz9zk): VK_KHR_debug_report is deprecated, switch to
                     // using VK_KHR_debug_utils instead.
                     hasDependencies = instanceExts.Has(InstanceExt::DebugReport);
                     break;

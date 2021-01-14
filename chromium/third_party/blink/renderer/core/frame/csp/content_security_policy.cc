@@ -238,7 +238,7 @@ void ContentSecurityPolicy::ApplyPolicySideEffectsToDelegate() {
     // 2.  Asserts `base-uri 'none'` or `base-uri 'self'`.
     // 3.  Avoids URL-based matching, in favor of hashes and nonces.
     //
-    // https://chromium.googlesource.com/chromium/src/+/master/docs/security/web-mitigation-metrics.md
+    // https://chromium.9oo91esource.qjz9zk/chromium/src/+/master/docs/security/web-mitigation-metrics.md
     // has more detail.
     if (policy->IsObjectRestrictionReasonable()) {
       Count(policy->HeaderType() == ContentSecurityPolicyType::kEnforce

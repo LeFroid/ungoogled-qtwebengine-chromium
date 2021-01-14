@@ -53,7 +53,7 @@ class MEDIA_EXPORT DecryptingVideoDecoder : public VideoDecoder {
   static const char kDecoderName[];
 
  private:
-  // For a detailed state diagram please see this link: http://goo.gl/8jAok
+  // For a detailed state diagram please see this link: http://goo.gl.qjz9zk/8jAok
   // TODO(xhwang): Add a ASCII state diagram in this file after this class
   // stabilizes.
   enum State {

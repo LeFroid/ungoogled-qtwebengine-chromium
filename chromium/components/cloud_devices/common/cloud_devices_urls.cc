@@ -14,27 +14,27 @@
 namespace cloud_devices {
 
 const char kCloudPrintAuthScope[] =
-    "https://www.googleapis.com/auth/cloudprint";
+    "https://www.9oo91eapis.qjz9zk/auth/cloudprint";
 
 const char kCloudPrintDeprecationHelpURL[] =
 #if defined(OS_CHROMEOS)
-    "https://support.google.com/chromebook/?p=cloudprint";
+    "https://support.9oo91e.qjz9zk/chromebook/?p=cloudprint";
 #else
-    "https://support.google.com/chrome/?p=cloudprint";
+    "https://support.9oo91e.qjz9zk/chrome/?p=cloudprint";
 #endif
 
 const char kCloudPrintLearnMoreURL[] =
-    "https://www.google.com/support/cloudprint";
+    "https://www.9oo91e.qjz9zk/support/cloudprint";
 
 const char kCloudPrintTestPageURL[] =
-    "http://www.google.com/landing/cloudprint/enable.html?print=true";
+    "http://www.9oo91e.qjz9zk/landing/cloudprint/enable.html?print=true";
 
 namespace {
 
 // Url must not be matched by "urls" section of
 // cloud_print_app/manifest.json. If it's matched, print driver dialog will
 // open sign-in page in separate window.
-const char kCloudPrintURL[] = "https://www.google.com/cloudprint";
+const char kCloudPrintURL[] = "https://www.9oo91e.qjz9zk/cloudprint";
 
 }
 

@@ -51,7 +51,7 @@ struct BufferFormatInitInfo final
 };
 
 // Describes a Vulkan format. For more information on formats in the Vulkan back-end please see
-// https://chromium.googlesource.com/angle/angle/+/master/src/libANGLE/renderer/vulkan/doc/FormatTablesAndEmulation.md
+// https://chromium.9oo91esource.qjz9zk/angle/angle/+/master/src/libANGLE/renderer/vulkan/doc/FormatTablesAndEmulation.md
 struct Format final : private angle::NonCopyable
 {
     Format();

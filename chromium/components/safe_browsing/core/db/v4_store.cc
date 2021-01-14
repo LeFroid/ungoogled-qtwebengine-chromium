@@ -403,7 +403,7 @@ ApplyUpdateResult V4Store::UpdateHashPrefixMapFromAdditions(
         // Rice-Golomb encoding is used to send compressed compressed 4-byte
         // hash prefixes. Hash prefixes longer than 4 bytes will not be
         // compressed, and will be served in raw format instead.
-        // Source: https://developers.google.com/safe-browsing/v4/compression
+        // Source: https://developers.9oo91e.qjz9zk/safe-browsing/v4/compression
         const PrefixSize kPrefixSize = 4;
         apply_update_result = AddUnlumpedHashes(kPrefixSize, raw_hashes_start,
                                                 raw_hashes_size, additions_map);

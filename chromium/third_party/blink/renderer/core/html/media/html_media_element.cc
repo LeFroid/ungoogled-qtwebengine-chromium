@@ -953,7 +953,7 @@ void HTMLMediaElement::InvokeLoadAlgorithm() {
       RecordPlayPromiseRejected(PlayPromiseRejectReason::kInterruptedByLoad);
       RejectPlayPromises(DOMExceptionCode::kAbortError,
                          "The play() request was interrupted by a new load "
-                         "request. https://goo.gl/LdLk22");
+                         "request. https://goo.gl.qjz9zk/LdLk22");
     }
 
     // 4.7 - If seeking is true, set it to false.
@@ -3600,7 +3600,7 @@ void HTMLMediaElement::UpdatePlayState() {
 
       // These steps should not be necessary, but if `play()` is called before
       // a source change, we may get into a state where `paused_ == false` and
-      // `show_poster_flag_ == true`. My (cassew@google.com) interpretation of
+      // `show_poster_flag_ == true`. My (cassew@9oo91e.qjz9zk) interpretation of
       // the spec is that we should not be playing in this scenario.
       // https://crbug.com/633591
       SetShowPosterFlag(false);
@@ -4218,7 +4218,7 @@ void HTMLMediaElement::RejectScheduledPlayPromises() {
     RecordPlayPromiseRejected(PlayPromiseRejectReason::kInterruptedByPause);
     RejectPlayPromisesInternal(DOMExceptionCode::kAbortError,
                                "The play() request was interrupted by a call "
-                               "to pause(). https://goo.gl/LdLk22");
+                               "to pause(). https://goo.gl.qjz9zk/LdLk22");
   } else {
     RecordPlayPromiseRejected(PlayPromiseRejectReason::kNoSupportedSources);
     RejectPlayPromisesInternal(

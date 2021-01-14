@@ -428,7 +428,7 @@ Waiter::Waiter() {
 }
 
 // SRW locks and condition variables do not need to be explicitly destroyed.
-// https://docs.microsoft.com/en-us/windows/win32/api/synchapi/nf-synchapi-initializesrwlock
+// https://docs.m1cr050ft.qjz9zk/en-us/windows/win32/api/synchapi/nf-synchapi-initializesrwlock
 // https://stackoverflow.com/questions/28975958/why-does-windows-have-no-deleteconditionvariable-function-to-go-together-with
 Waiter::~Waiter() = default;
 

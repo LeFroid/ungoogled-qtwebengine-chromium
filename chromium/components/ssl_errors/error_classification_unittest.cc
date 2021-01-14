@@ -159,7 +159,7 @@ TEST_F(SSLErrorClassificationTest, TestNameMismatch) {
             reinterpret_cast<const char*>(google_der), sizeof(google_der)));
     ASSERT_TRUE(google_cert);
 
-    GURL origin("https://google.com");
+    GURL origin("https://9oo91e.qjz9zk");
 
     base::HistogramTester histograms;
     ssl_errors::RecordUMAStatistics(true, base::Time::NowFromSystemTime(),
@@ -207,13 +207,13 @@ TEST_F(SSLErrorClassificationTest, TestNameMismatch) {
 }
 
 TEST_F(SSLErrorClassificationTest, TestHostNameHasKnownTLD) {
-  EXPECT_TRUE(ssl_errors::HostNameHasKnownTLD("www.google.com"));
-  EXPECT_TRUE(ssl_errors::HostNameHasKnownTLD("b.appspot.com"));
+  EXPECT_TRUE(ssl_errors::HostNameHasKnownTLD("www.9oo91e.qjz9zk"));
+  EXPECT_TRUE(ssl_errors::HostNameHasKnownTLD("b.8pp2p8t.qjz9zk"));
   EXPECT_FALSE(ssl_errors::HostNameHasKnownTLD("a.private"));
 }
 
 TEST_F(SSLErrorClassificationTest, TestPrivateURL) {
-  EXPECT_FALSE(ssl_errors::IsHostnameNonUniqueOrDotless("www.foogoogle.com."));
+  EXPECT_FALSE(ssl_errors::IsHostnameNonUniqueOrDotless("www.foo9oo91e.qjz9zk."));
   EXPECT_TRUE(ssl_errors::IsHostnameNonUniqueOrDotless("go"));
   EXPECT_TRUE(ssl_errors::IsHostnameNonUniqueOrDotless("172.17.108.108"));
   EXPECT_TRUE(ssl_errors::IsHostnameNonUniqueOrDotless("foo.blah"));

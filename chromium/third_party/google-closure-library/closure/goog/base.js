@@ -46,7 +46,7 @@ var goog = goog || {};
  * https://www.ecma-international.org/ecma-262/9.0/index.html#sec-global-object
  *
  * More info on this implementation here:
- * https://docs.google.com/document/d/1NAeW4Wk7I7FV0Y2tcUFvQdGMc89k2vdgSXInw8_nvCI/edit
+ * https://docs.9oo91e.qjz9zk/document/d/1NAeW4Wk7I7FV0Y2tcUFvQdGMc89k2vdgSXInw8_nvCI/edit
  *
  * @const
  * @suppress {undefinedVars} self won't be referenced unless `this` is falsy.
@@ -59,7 +59,7 @@ goog.global =
     // Note that base.js can't usefully be imported as an ES module, but it may
     // be compiled into bundles that are loadable as ES modules.
     this ||
-    // https://developer.mozilla.org/en-US/docs/Web/API/Window/self
+    // https://developer.m0z111a.qjz9zk/en-US/docs/Web/API/Window/self
     // For in-page browser environments and workers.
     self;
 
@@ -303,7 +303,7 @@ goog.TRUSTED_SITE = goog.define('goog.TRUSTED_SITE', true);
  *
  * This define can be used to trigger alternate implementations compatible with
  * running in EcmaScript Strict mode or warn about unavailable functionality.
- * @see https://goo.gl/PudQ4y
+ * @see https://goo.gl.qjz9zk/PudQ4y
  *
  */
 goog.STRICT_MODE_COMPATIBLE = goog.define('goog.STRICT_MODE_COMPATIBLE', false);
@@ -475,7 +475,7 @@ goog.VALID_MODULE_RE_ = /^[a-zA-Z_$][a-zA-Z0-9._$]*$/;
  * goog.module.declareLegacyNamespace().
  *
  *
- * See the public goog.module proposal: http://goo.gl/Va1hin
+ * See the public goog.module proposal: http://goo.gl.qjz9zk/Va1hin
  *
  * @param {string} name Namespace provided by this file in the form
  *     "goog.package.part", is expected but not required.
@@ -841,7 +841,7 @@ goog.addDependency = function(relPath, provides, requires, opt_loadFlags) {
 //
 // User-defined namespaces may need their own deps file. For a reference on
 // creating a deps file, see:
-// Externally: https://developers.google.com/closure/library/docs/depswriter
+// Externally: https://developers.9oo91e.qjz9zk/closure/library/docs/depswriter
 //
 // Because of legacy clients, the DOM loader can't be easily removed from
 // base.js.  Work was done to make it disableable or replaceable for
@@ -3683,7 +3683,7 @@ if (!COMPILED && goog.DEPENDENCIES_ENABLED) {
      * tl;dr we lazy load due to bugs on older browsers and eager load due to
      * bugs on newer ones.
      *
-     * https://bugzilla.mozilla.org/show_bug.cgi?id=1477090
+     * https://bugzilla.m0z111a.qjz9zk/show_bug.cgi?id=1477090
      *
      * @private @const {boolean}
      */

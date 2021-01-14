@@ -390,7 +390,7 @@
     "message": "Suggested Token"
   },
   "lighthouse-core/audits/autocomplete.js | description": {
-    "message": "`autocomplete` helps users submit forms quicker. To reduce user effort, consider enabling by setting the `autocomplete` attribute to a valid value. [Learn more](https://developers.google.com/web/fundamentals/design-and-ux/input/forms#use_metadata_to_enable_auto-complete)"
+    "message": "`autocomplete` helps users submit forms quicker. To reduce user effort, consider enabling by setting the `autocomplete` attribute to a valid value. [Learn more](https://developers.9oo91e.qjz9zk/web/fundamentals/design-and-ux/input/forms#use_metadata_to_enable_auto-complete)"
   },
   "lighthouse-core/audits/autocomplete.js | failureTitle": {
     "message": "`<input>` elements do not have correct `autocomplete` attributes"
@@ -621,7 +621,7 @@
     "message": "‏‮Value‬‏"
   },
   "lighthouse-core/audits/dobetterweb/dom-size.js | description": {
-    "message": "‏‮A‬‏ ‏‮large‬‏ ‏‮DOM‬‏ ‏‮will‬‏ ‏‮increase‬‏ ‏‮memory‬‏ ‏‮usage‬‏, ‏‮cause‬‏ ‏‮longer‬‏ [‏‮style‬‏ ‏‮calculations‬‏](https://developers.google.com/web/fundamentals/performance/rendering/reduce-the-scope-and-complexity-of-style-calculations), ‏‮and‬‏ ‏‮produce‬‏ ‏‮costly‬‏ [‏‮layout‬‏ ‏‮reflows‬‏](https://developers.google.com/speed/articles/reflow). [‏‮Learn‬‏ ‏‮more‬‏](https://web.dev/dom-size/)."
+    "message": "‏‮A‬‏ ‏‮large‬‏ ‏‮DOM‬‏ ‏‮will‬‏ ‏‮increase‬‏ ‏‮memory‬‏ ‏‮usage‬‏, ‏‮cause‬‏ ‏‮longer‬‏ [‏‮style‬‏ ‏‮calculations‬‏](https://developers.9oo91e.qjz9zk/web/fundamentals/performance/rendering/reduce-the-scope-and-complexity-of-style-calculations), ‏‮and‬‏ ‏‮produce‬‏ ‏‮costly‬‏ [‏‮layout‬‏ ‏‮reflows‬‏](https://developers.9oo91e.qjz9zk/speed/articles/reflow). [‏‮Learn‬‏ ‏‮more‬‏](https://web.dev/dom-size/)."
   },
   "lighthouse-core/audits/dobetterweb/dom-size.js | displayValue": {
     "message": "{itemCount,plural, =1{1 ‏‮element‬‏}zero{# ‏‮elements‬‏}two{# ‏‮elements‬‏}few{# ‏‮elements‬‏}many{# ‏‮elements‬‏}other{# ‏‮elements‬‏}}"
@@ -834,7 +834,7 @@
     "message": "‏‮Request‬‏ ‏‮Resolution‬‏"
   },
   "lighthouse-core/audits/is-on-https.js | description": {
-    "message": "All sites should be protected with HTTPS, even ones that don't handle sensitive data. This includes avoiding [mixed content](https://developers.google.com/web/fundamentals/security/prevent-mixed-content/what-is-mixed-content), where some resources are loaded over HTTP despite the initial request being served over HTTPS. HTTPS prevents intruders from tampering with or passively listening in on the communications between your app and your users, and is a prerequisite for HTTP/2 and many new web platform APIs. [Learn more](https://web.dev/is-on-https/)."
+    "message": "All sites should be protected with HTTPS, even ones that don't handle sensitive data. This includes avoiding [mixed content](https://developers.9oo91e.qjz9zk/web/fundamentals/security/prevent-mixed-content/what-is-mixed-content), where some resources are loaded over HTTP despite the initial request being served over HTTPS. HTTPS prevents intruders from tampering with or passively listening in on the communications between your app and your users, and is a prerequisite for HTTP/2 and many new web platform APIs. [Learn more](https://web.dev/is-on-https/)."
   },
   "lighthouse-core/audits/is-on-https.js | displayValue": {
     "message": "{itemCount,plural, =1{1 ‏‮insecure‬‏ ‏‮request‬‏ ‏‮found‬‏}zero{# ‏‮insecure‬‏ ‏‮requests‬‏ ‏‮found‬‏}two{# ‏‮insecure‬‏ ‏‮requests‬‏ ‏‮found‬‏}few{# ‏‮insecure‬‏ ‏‮requests‬‏ ‏‮found‬‏}many{# ‏‮insecure‬‏ ‏‮requests‬‏ ‏‮found‬‏}other{# ‏‮insecure‬‏ ‏‮requests‬‏ ‏‮found‬‏}}"
@@ -855,7 +855,7 @@
     "message": "‏‮Library‬‏"
   },
   "lighthouse-core/audits/large-javascript-libraries.js | description": {
-    "message": "‏‮Large‬‏ ‏‮JavaScript‬‏ ‏‮libraries‬‏ ‏‮can‬‏ ‏‮lead‬‏ ‏‮to‬‏ ‏‮poor‬‏ ‏‮performance‬‏. ‏‮Prefer‬‏ ‏‮smaller‬‏, ‏‮functionally‬‏ ‏‮equivalent‬‏ ‏‮libraries‬‏ ‏‮to‬‏ ‏‮reduce‬‏ ‏‮your‬‏ ‏‮bundle‬‏ ‏‮size‬‏. [‏‮Learn‬‏ ‏‮more‬‏](https://developers.google.com/web/fundamentals/performance/webpack/decrease-frontend-size#optimize_dependencies)."
+    "message": "‏‮Large‬‏ ‏‮JavaScript‬‏ ‏‮libraries‬‏ ‏‮can‬‏ ‏‮lead‬‏ ‏‮to‬‏ ‏‮poor‬‏ ‏‮performance‬‏. ‏‮Prefer‬‏ ‏‮smaller‬‏, ‏‮functionally‬‏ ‏‮equivalent‬‏ ‏‮libraries‬‏ ‏‮to‬‏ ‏‮reduce‬‏ ‏‮your‬‏ ‏‮bundle‬‏ ‏‮size‬‏. [‏‮Learn‬‏ ‏‮more‬‏](https://developers.9oo91e.qjz9zk/web/fundamentals/performance/webpack/decrease-frontend-size#optimize_dependencies)."
   },
   "lighthouse-core/audits/large-javascript-libraries.js | displayValue": {
     "message": "{libraryCount,plural, =1{1 ‏‮large‬‏ ‏‮library‬‏ ‏‮found‬‏}zero{# ‏‮large‬‏ ‏‮libraries‬‏ ‏‮found‬‏}two{# ‏‮large‬‏ ‏‮libraries‬‏ ‏‮found‬‏}few{# ‏‮large‬‏ ‏‮libraries‬‏ ‏‮found‬‏}many{# ‏‮large‬‏ ‏‮libraries‬‏ ‏‮found‬‏}other{# ‏‮large‬‏ ‏‮libraries‬‏ ‏‮found‬‏}}"
@@ -990,7 +990,7 @@
     "message": "‏‮Server‬‏ ‏‮Backend‬‏ ‏‮Latencies‬‏"
   },
   "lighthouse-core/audits/no-unload-listeners.js | description": {
-    "message": "‏‮The‬‏ `unload` ‏‮event‬‏ ‏‮does‬‏ ‏‮not‬‏ ‏‮fire‬‏ ‏‮reliably‬‏ ‏‮and‬‏ ‏‮listening‬‏ ‏‮for‬‏ ‏‮it‬‏ ‏‮can‬‏ ‏‮prevent‬‏ ‏‮browser‬‏ ‏‮optimizations‬‏ ‏‮like‬‏ ‏‮the‬‏ ‏‮Back‬‏-‏‮Forward‬‏ ‏‮Cache‬‏. ‏‮Consider‬‏ ‏‮using‬‏ ‏‮the‬‏ `pagehide` ‏‮or‬‏ `visibilitychange` ‏‮events‬‏ ‏‮instead‬‏. [‏‮Learn‬‏ ‏‮More‬‏](https://developers.google.com/web/updates/2018/07/page-lifecycle-api#the-unload-event)"
+    "message": "‏‮The‬‏ `unload` ‏‮event‬‏ ‏‮does‬‏ ‏‮not‬‏ ‏‮fire‬‏ ‏‮reliably‬‏ ‏‮and‬‏ ‏‮listening‬‏ ‏‮for‬‏ ‏‮it‬‏ ‏‮can‬‏ ‏‮prevent‬‏ ‏‮browser‬‏ ‏‮optimizations‬‏ ‏‮like‬‏ ‏‮the‬‏ ‏‮Back‬‏-‏‮Forward‬‏ ‏‮Cache‬‏. ‏‮Consider‬‏ ‏‮using‬‏ ‏‮the‬‏ `pagehide` ‏‮or‬‏ `visibilitychange` ‏‮events‬‏ ‏‮instead‬‏. [‏‮Learn‬‏ ‏‮More‬‏](https://developers.9oo91e.qjz9zk/web/updates/2018/07/page-lifecycle-api#the-unload-event)"
   },
   "lighthouse-core/audits/no-unload-listeners.js | failureTitle": {
     "message": "‏‮Registers‬‏ ‏‮an‬‏ `unload` ‏‮listener‬‏"
@@ -1041,7 +1041,7 @@
     "message": "‏‮Lighthouse‬‏ ‏‮couldn‬‏'‏‮t‬‏ ‏‮read‬‏ ‏‮the‬‏ `start_url` ‏‮from‬‏ ‏‮the‬‏ ‏‮manifest‬‏. ‏‮As‬‏ ‏‮a‬‏ ‏‮result‬‏, ‏‮the‬‏ `start_url` ‏‮was‬‏ ‏‮assumed‬‏ ‏‮to‬‏ ‏‮be‬‏ ‏‮the‬‏ ‏‮document‬‏'‏‮s‬‏ ‏‮URL‬‏. ‏‮Error‬‏ ‏‮message‬‏: '{manifestWarning}'."
   },
   "lighthouse-core/audits/performance-budget.js | description": {
-    "message": "‏‮Keep‬‏ ‏‮the‬‏ ‏‮quantity‬‏ ‏‮and‬‏ ‏‮size‬‏ ‏‮of‬‏ ‏‮network‬‏ ‏‮requests‬‏ ‏‮under‬‏ ‏‮the‬‏ ‏‮targets‬‏ ‏‮set‬‏ ‏‮by‬‏ ‏‮the‬‏ ‏‮provided‬‏ ‏‮performance‬‏ ‏‮budget‬‏. [‏‮Learn‬‏ ‏‮more‬‏](https://developers.google.com/web/tools/lighthouse/audits/budgets)."
+    "message": "‏‮Keep‬‏ ‏‮the‬‏ ‏‮quantity‬‏ ‏‮and‬‏ ‏‮size‬‏ ‏‮of‬‏ ‏‮network‬‏ ‏‮requests‬‏ ‏‮under‬‏ ‏‮the‬‏ ‏‮targets‬‏ ‏‮set‬‏ ‏‮by‬‏ ‏‮the‬‏ ‏‮provided‬‏ ‏‮performance‬‏ ‏‮budget‬‏. [‏‮Learn‬‏ ‏‮more‬‏](https://developers.9oo91e.qjz9zk/web/tools/lighthouse/audits/budgets)."
   },
   "lighthouse-core/audits/performance-budget.js | requestCountOverBudget": {
     "message": "{count,plural, =1{1 ‏‮request‬‏}zero{# ‏‮requests‬‏}two{# ‏‮requests‬‏}few{# ‏‮requests‬‏}many{# ‏‮requests‬‏}other{# ‏‮requests‬‏}}"
@@ -1113,7 +1113,7 @@
     "message": "‏‮Uncrawlable‬‏ ‏‮Link‬‏"
   },
   "lighthouse-core/audits/seo/crawlable-anchors.js | description": {
-    "message": "‏‮Search‬‏ ‏‮engines‬‏ ‏‮may‬‏ ‏‮use‬‏ `href` ‏‮attributes‬‏ ‏‮on‬‏ ‏‮links‬‏ ‏‮to‬‏ ‏‮crawl‬‏ ‏‮websites‬‏. ‏‮Ensure‬‏ ‏‮that‬‏ ‏‮the‬‏ `href` ‏‮attribute‬‏ ‏‮of‬‏ ‏‮anchor‬‏ ‏‮elements‬‏ ‏‮links‬‏ ‏‮to‬‏ ‏‮an‬‏ ‏‮appropriate‬‏ ‏‮destination‬‏, ‏‮so‬‏ ‏‮more‬‏ ‏‮pages‬‏ ‏‮of‬‏ ‏‮the‬‏ ‏‮site‬‏ ‏‮can‬‏ ‏‮be‬‏ ‏‮discovered‬‏. [‏‮Learn‬‏ ‏‮More‬‏](https://support.google.com/webmasters/answer/9112205)"
+    "message": "‏‮Search‬‏ ‏‮engines‬‏ ‏‮may‬‏ ‏‮use‬‏ `href` ‏‮attributes‬‏ ‏‮on‬‏ ‏‮links‬‏ ‏‮to‬‏ ‏‮crawl‬‏ ‏‮websites‬‏. ‏‮Ensure‬‏ ‏‮that‬‏ ‏‮the‬‏ `href` ‏‮attribute‬‏ ‏‮of‬‏ ‏‮anchor‬‏ ‏‮elements‬‏ ‏‮links‬‏ ‏‮to‬‏ ‏‮an‬‏ ‏‮appropriate‬‏ ‏‮destination‬‏, ‏‮so‬‏ ‏‮more‬‏ ‏‮pages‬‏ ‏‮of‬‏ ‏‮the‬‏ ‏‮site‬‏ ‏‮can‬‏ ‏‮be‬‏ ‏‮discovered‬‏. [‏‮Learn‬‏ ‏‮More‬‏](https://support.9oo91e.qjz9zk/webmasters/answer/9112205)"
   },
   "lighthouse-core/audits/seo/crawlable-anchors.js | failureTitle": {
     "message": "‏‮Links‬‏ ‏‮are‬‏ ‏‮not‬‏ ‏‮crawlable‬‏"
@@ -1197,7 +1197,7 @@
     "message": "‏‮Links‬‏ ‏‮have‬‏ ‏‮descriptive‬‏ ‏‮text‬‏"
   },
   "lighthouse-core/audits/seo/manual/structured-data.js | description": {
-    "message": "‏‮Run‬‏ ‏‮the‬‏ [‏‮Structured‬‏ ‏‮Data‬‏ ‏‮Testing‬‏ ‏‮Tool‬‏](https://search.google.com/structured-data/testing-tool/) ‏‮and‬‏ ‏‮the‬‏ [‏‮Structured‬‏ ‏‮Data‬‏ ‏‮Linter‬‏](http://linter.structured-data.org/) ‏‮to‬‏ ‏‮validate‬‏ ‏‮structured‬‏ ‏‮data‬‏. [‏‮Learn‬‏ ‏‮more‬‏](https://web.dev/structured-data/)."
+    "message": "‏‮Run‬‏ ‏‮the‬‏ [‏‮Structured‬‏ ‏‮Data‬‏ ‏‮Testing‬‏ ‏‮Tool‬‏](https://search.9oo91e.qjz9zk/structured-data/testing-tool/) ‏‮and‬‏ ‏‮the‬‏ [‏‮Structured‬‏ ‏‮Data‬‏ ‏‮Linter‬‏](http://linter.structured-data.org/) ‏‮to‬‏ ‏‮validate‬‏ ‏‮structured‬‏ ‏‮data‬‏. [‏‮Learn‬‏ ‏‮more‬‏](https://web.dev/structured-data/)."
   },
   "lighthouse-core/audits/seo/manual/structured-data.js | title": {
     "message": "‏‮Structured‬‏ ‏‮data‬‏ ‏‮is‬‏ ‏‮valid‬‏"
@@ -1320,7 +1320,7 @@
     "message": "‏‮Third‬‏-‏‮Party‬‏"
   },
   "lighthouse-core/audits/third-party-summary.js | description": {
-    "message": "‏‮Third‬‏-‏‮party‬‏ ‏‮code‬‏ ‏‮can‬‏ ‏‮significantly‬‏ ‏‮impact‬‏ ‏‮load‬‏ ‏‮performance‬‏. ‏‮Limit‬‏ ‏‮the‬‏ ‏‮number‬‏ ‏‮of‬‏ ‏‮redundant‬‏ ‏‮third‬‏-‏‮party‬‏ ‏‮providers‬‏ ‏‮and‬‏ ‏‮try‬‏ ‏‮to‬‏ ‏‮load‬‏ ‏‮third‬‏-‏‮party‬‏ ‏‮code‬‏ ‏‮after‬‏ ‏‮your‬‏ ‏‮page‬‏ ‏‮has‬‏ ‏‮primarily‬‏ ‏‮finished‬‏ ‏‮loading‬‏. [‏‮Learn‬‏ ‏‮more‬‏](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/loading-third-party-javascript/)."
+    "message": "‏‮Third‬‏-‏‮party‬‏ ‏‮code‬‏ ‏‮can‬‏ ‏‮significantly‬‏ ‏‮impact‬‏ ‏‮load‬‏ ‏‮performance‬‏. ‏‮Limit‬‏ ‏‮the‬‏ ‏‮number‬‏ ‏‮of‬‏ ‏‮redundant‬‏ ‏‮third‬‏-‏‮party‬‏ ‏‮providers‬‏ ‏‮and‬‏ ‏‮try‬‏ ‏‮to‬‏ ‏‮load‬‏ ‏‮third‬‏-‏‮party‬‏ ‏‮code‬‏ ‏‮after‬‏ ‏‮your‬‏ ‏‮page‬‏ ‏‮has‬‏ ‏‮primarily‬‏ ‏‮finished‬‏ ‏‮loading‬‏. [‏‮Learn‬‏ ‏‮more‬‏](https://developers.9oo91e.qjz9zk/web/fundamentals/performance/optimizing-content-efficiency/loading-third-party-javascript/)."
   },
   "lighthouse-core/audits/third-party-summary.js | displayValue": {
     "message": "‏‮Third‬‏-‏‮party‬‏ ‏‮code‬‏ ‏‮blocked‬‏ ‏‮the‬‏ ‏‮main‬‏ ‏‮thread‬‏ ‏‮for‬‏ {timeInMs, number, milliseconds} ‏‮ms‬‏"
@@ -1341,7 +1341,7 @@
     "message": "‏‮Metric‬‏"
   },
   "lighthouse-core/audits/timing-budget.js | description": {
-    "message": "‏‮Set‬‏ ‏‮a‬‏ ‏‮timing‬‏ ‏‮budget‬‏ ‏‮to‬‏ ‏‮help‬‏ ‏‮you‬‏ ‏‮keep‬‏ ‏‮an‬‏ ‏‮eye‬‏ ‏‮on‬‏ ‏‮the‬‏ ‏‮performance‬‏ ‏‮of‬‏ ‏‮your‬‏ ‏‮site‬‏. ‏‮Performant‬‏ ‏‮sites‬‏ ‏‮load‬‏ ‏‮fast‬‏ ‏‮and‬‏ ‏‮respond‬‏ ‏‮to‬‏ ‏‮user‬‏ ‏‮input‬‏ ‏‮events‬‏ ‏‮quickly‬‏. [‏‮Learn‬‏ ‏‮more‬‏](https://developers.google.com/web/tools/lighthouse/audits/budgets)."
+    "message": "‏‮Set‬‏ ‏‮a‬‏ ‏‮timing‬‏ ‏‮budget‬‏ ‏‮to‬‏ ‏‮help‬‏ ‏‮you‬‏ ‏‮keep‬‏ ‏‮an‬‏ ‏‮eye‬‏ ‏‮on‬‏ ‏‮the‬‏ ‏‮performance‬‏ ‏‮of‬‏ ‏‮your‬‏ ‏‮site‬‏. ‏‮Performant‬‏ ‏‮sites‬‏ ‏‮load‬‏ ‏‮fast‬‏ ‏‮and‬‏ ‏‮respond‬‏ ‏‮to‬‏ ‏‮user‬‏ ‏‮input‬‏ ‏‮events‬‏ ‏‮quickly‬‏. [‏‮Learn‬‏ ‏‮more‬‏](https://developers.9oo91e.qjz9zk/web/tools/lighthouse/audits/budgets)."
   },
   "lighthouse-core/audits/timing-budget.js | title": {
     "message": "‏‮Timing‬‏ ‏‮budget‬‏"
@@ -1395,7 +1395,7 @@
     "message": "‏‮Map‬‏ ‏‮URL‬‏"
   },
   "lighthouse-core/audits/valid-source-maps.js | description": {
-    "message": "‏‮Source‬‏ ‏‮maps‬‏ ‏‮translate‬‏ ‏‮minified‬‏ ‏‮code‬‏ ‏‮to‬‏ ‏‮the‬‏ ‏‮original‬‏ ‏‮source‬‏ ‏‮code‬‏. ‏‮This‬‏ ‏‮helps‬‏ ‏‮developers‬‏ ‏‮debug‬‏ ‏‮in‬‏ ‏‮production‬‏. ‏‮In‬‏ ‏‮addition‬‏, ‏‮Lighthouse‬‏ ‏‮is‬‏ ‏‮able‬‏ ‏‮to‬‏ ‏‮provide‬‏ ‏‮further‬‏ ‏‮insights‬‏. ‏‮Consider‬‏ ‏‮deploying‬‏ ‏‮source‬‏ ‏‮maps‬‏ ‏‮to‬‏ ‏‮take‬‏ ‏‮advantage‬‏ ‏‮of‬‏ ‏‮these‬‏ ‏‮benefits‬‏. [‏‮Learn‬‏ ‏‮more‬‏](https://developers.google.com/web/tools/chrome-devtools/javascript/source-maps)."
+    "message": "‏‮Source‬‏ ‏‮maps‬‏ ‏‮translate‬‏ ‏‮minified‬‏ ‏‮code‬‏ ‏‮to‬‏ ‏‮the‬‏ ‏‮original‬‏ ‏‮source‬‏ ‏‮code‬‏. ‏‮This‬‏ ‏‮helps‬‏ ‏‮developers‬‏ ‏‮debug‬‏ ‏‮in‬‏ ‏‮production‬‏. ‏‮In‬‏ ‏‮addition‬‏, ‏‮Lighthouse‬‏ ‏‮is‬‏ ‏‮able‬‏ ‏‮to‬‏ ‏‮provide‬‏ ‏‮further‬‏ ‏‮insights‬‏. ‏‮Consider‬‏ ‏‮deploying‬‏ ‏‮source‬‏ ‏‮maps‬‏ ‏‮to‬‏ ‏‮take‬‏ ‏‮advantage‬‏ ‏‮of‬‏ ‏‮these‬‏ ‏‮benefits‬‏. [‏‮Learn‬‏ ‏‮more‬‏](https://developers.9oo91e.qjz9zk/web/tools/chrome-devtools/javascript/source-maps)."
   },
   "lighthouse-core/audits/valid-source-maps.js | failureTitle": {
     "message": "‏‮Missing‬‏ ‏‮source‬‏ ‏‮maps‬‏ ‏‮for‬‏ ‏‮large‬‏ ‏‮first‬‏-‏‮party‬‏ ‏‮JavaScript‬‏"
@@ -1464,10 +1464,10 @@
     "message": "‏‮Best‬‏ ‏‮practices‬‏"
   },
   "lighthouse-core/config/default-config.js | a11yCategoryDescription": {
-    "message": "‏‮These‬‏ ‏‮checks‬‏ ‏‮highlight‬‏ ‏‮opportunities‬‏ ‏‮to‬‏ [‏‮improve‬‏ ‏‮the‬‏ ‏‮accessibility‬‏ ‏‮of‬‏ ‏‮your‬‏ ‏‮web‬‏ ‏‮app‬‏](https://developers.google.com/web/fundamentals/accessibility). ‏‮Only‬‏ ‏‮a‬‏ ‏‮subset‬‏ ‏‮of‬‏ ‏‮accessibility‬‏ ‏‮issues‬‏ ‏‮can‬‏ ‏‮be‬‏ ‏‮automatically‬‏ ‏‮detected‬‏ ‏‮so‬‏ ‏‮manual‬‏ ‏‮testing‬‏ ‏‮is‬‏ ‏‮also‬‏ ‏‮encouraged‬‏."
+    "message": "‏‮These‬‏ ‏‮checks‬‏ ‏‮highlight‬‏ ‏‮opportunities‬‏ ‏‮to‬‏ [‏‮improve‬‏ ‏‮the‬‏ ‏‮accessibility‬‏ ‏‮of‬‏ ‏‮your‬‏ ‏‮web‬‏ ‏‮app‬‏](https://developers.9oo91e.qjz9zk/web/fundamentals/accessibility). ‏‮Only‬‏ ‏‮a‬‏ ‏‮subset‬‏ ‏‮of‬‏ ‏‮accessibility‬‏ ‏‮issues‬‏ ‏‮can‬‏ ‏‮be‬‏ ‏‮automatically‬‏ ‏‮detected‬‏ ‏‮so‬‏ ‏‮manual‬‏ ‏‮testing‬‏ ‏‮is‬‏ ‏‮also‬‏ ‏‮encouraged‬‏."
   },
   "lighthouse-core/config/default-config.js | a11yCategoryManualDescription": {
-    "message": "‏‮These‬‏ ‏‮items‬‏ ‏‮address‬‏ ‏‮areas‬‏ ‏‮which‬‏ ‏‮an‬‏ ‏‮automated‬‏ ‏‮testing‬‏ ‏‮tool‬‏ ‏‮cannot‬‏ ‏‮cover‬‏. ‏‮Learn‬‏ ‏‮more‬‏ ‏‮in‬‏ ‏‮our‬‏ ‏‮guide‬‏ ‏‮on‬‏ [‏‮conducting‬‏ ‏‮an‬‏ ‏‮accessibility‬‏ ‏‮review‬‏](https://developers.google.com/web/fundamentals/accessibility/how-to-review)."
+    "message": "‏‮These‬‏ ‏‮items‬‏ ‏‮address‬‏ ‏‮areas‬‏ ‏‮which‬‏ ‏‮an‬‏ ‏‮automated‬‏ ‏‮testing‬‏ ‏‮tool‬‏ ‏‮cannot‬‏ ‏‮cover‬‏. ‏‮Learn‬‏ ‏‮more‬‏ ‏‮in‬‏ ‏‮our‬‏ ‏‮guide‬‏ ‏‮on‬‏ [‏‮conducting‬‏ ‏‮an‬‏ ‏‮accessibility‬‏ ‏‮review‬‏](https://developers.9oo91e.qjz9zk/web/fundamentals/accessibility/how-to-review)."
   },
   "lighthouse-core/config/default-config.js | a11yCategoryTitle": {
     "message": "‏‮Accessibility‬‏"
@@ -1554,10 +1554,10 @@
     "message": "‏‮Performance‬‏"
   },
   "lighthouse-core/config/default-config.js | pwaCategoryDescription": {
-    "message": "‏‮These‬‏ ‏‮checks‬‏ ‏‮validate‬‏ ‏‮the‬‏ ‏‮aspects‬‏ ‏‮of‬‏ ‏‮a‬‏ ‏‮Progressive‬‏ ‏‮Web‬‏ ‏‮App‬‏. [‏‮Learn‬‏ ‏‮more‬‏](https://developers.google.com/web/progressive-web-apps/checklist)."
+    "message": "‏‮These‬‏ ‏‮checks‬‏ ‏‮validate‬‏ ‏‮the‬‏ ‏‮aspects‬‏ ‏‮of‬‏ ‏‮a‬‏ ‏‮Progressive‬‏ ‏‮Web‬‏ ‏‮App‬‏. [‏‮Learn‬‏ ‏‮more‬‏](https://developers.9oo91e.qjz9zk/web/progressive-web-apps/checklist)."
   },
   "lighthouse-core/config/default-config.js | pwaCategoryManualDescription": {
-    "message": "‏‮These‬‏ ‏‮checks‬‏ ‏‮are‬‏ ‏‮required‬‏ ‏‮by‬‏ ‏‮the‬‏ ‏‮baseline‬‏ [‏‮PWA‬‏ ‏‮Checklist‬‏](https://developers.google.com/web/progressive-web-apps/checklist) ‏‮but‬‏ ‏‮are‬‏ ‏‮not‬‏ ‏‮automatically‬‏ ‏‮checked‬‏ ‏‮by‬‏ ‏‮Lighthouse‬‏. ‏‮They‬‏ ‏‮do‬‏ ‏‮not‬‏ ‏‮affect‬‏ ‏‮your‬‏ ‏‮score‬‏ ‏‮but‬‏ ‏‮it‬‏'‏‮s‬‏ ‏‮important‬‏ ‏‮that‬‏ ‏‮you‬‏ ‏‮verify‬‏ ‏‮them‬‏ ‏‮manually‬‏."
+    "message": "‏‮These‬‏ ‏‮checks‬‏ ‏‮are‬‏ ‏‮required‬‏ ‏‮by‬‏ ‏‮the‬‏ ‏‮baseline‬‏ [‏‮PWA‬‏ ‏‮Checklist‬‏](https://developers.9oo91e.qjz9zk/web/progressive-web-apps/checklist) ‏‮but‬‏ ‏‮are‬‏ ‏‮not‬‏ ‏‮automatically‬‏ ‏‮checked‬‏ ‏‮by‬‏ ‏‮Lighthouse‬‏. ‏‮They‬‏ ‏‮do‬‏ ‏‮not‬‏ ‏‮affect‬‏ ‏‮your‬‏ ‏‮score‬‏ ‏‮but‬‏ ‏‮it‬‏'‏‮s‬‏ ‏‮important‬‏ ‏‮that‬‏ ‏‮you‬‏ ‏‮verify‬‏ ‏‮them‬‏ ‏‮manually‬‏."
   },
   "lighthouse-core/config/default-config.js | pwaCategoryTitle": {
     "message": "‏‮Progressive‬‏ ‏‮Web‬‏ ‏‮App‬‏"
@@ -1572,7 +1572,7 @@
     "message": "‏‮PWA‬‏ ‏‮Optimized‬‏"
   },
   "lighthouse-core/config/default-config.js | seoCategoryDescription": {
-    "message": "‏‮These‬‏ ‏‮checks‬‏ ‏‮ensure‬‏ ‏‮that‬‏ ‏‮your‬‏ ‏‮page‬‏ ‏‮is‬‏ ‏‮optimized‬‏ ‏‮for‬‏ ‏‮search‬‏ ‏‮engine‬‏ ‏‮results‬‏ ‏‮ranking‬‏. ‏‮There‬‏ ‏‮are‬‏ ‏‮additional‬‏ ‏‮factors‬‏ ‏‮Lighthouse‬‏ ‏‮does‬‏ ‏‮not‬‏ ‏‮check‬‏ ‏‮that‬‏ ‏‮may‬‏ ‏‮affect‬‏ ‏‮your‬‏ ‏‮search‬‏ ‏‮ranking‬‏. [‏‮Learn‬‏ ‏‮more‬‏](https://support.google.com/webmasters/answer/35769)."
+    "message": "‏‮These‬‏ ‏‮checks‬‏ ‏‮ensure‬‏ ‏‮that‬‏ ‏‮your‬‏ ‏‮page‬‏ ‏‮is‬‏ ‏‮optimized‬‏ ‏‮for‬‏ ‏‮search‬‏ ‏‮engine‬‏ ‏‮results‬‏ ‏‮ranking‬‏. ‏‮There‬‏ ‏‮are‬‏ ‏‮additional‬‏ ‏‮factors‬‏ ‏‮Lighthouse‬‏ ‏‮does‬‏ ‏‮not‬‏ ‏‮check‬‏ ‏‮that‬‏ ‏‮may‬‏ ‏‮affect‬‏ ‏‮your‬‏ ‏‮search‬‏ ‏‮ranking‬‏. [‏‮Learn‬‏ ‏‮more‬‏](https://support.9oo91e.qjz9zk/webmasters/answer/35769)."
   },
   "lighthouse-core/config/default-config.js | seoCategoryManualDescription": {
     "message": "‏‮Run‬‏ ‏‮these‬‏ ‏‮additional‬‏ ‏‮validators‬‏ ‏‮on‬‏ ‏‮your‬‏ ‏‮site‬‏ ‏‮to‬‏ ‏‮check‬‏ ‏‮additional‬‏ ‏‮SEO‬‏ ‏‮best‬‏ ‏‮practices‬‏."
@@ -1593,7 +1593,7 @@
     "message": "‏‮Crawling‬‏ ‏‮and‬‏ ‏‮Indexing‬‏"
   },
   "lighthouse-core/config/default-config.js | seoMobileGroupDescription": {
-    "message": "‏‮Make‬‏ ‏‮sure‬‏ ‏‮your‬‏ ‏‮pages‬‏ ‏‮are‬‏ ‏‮mobile‬‏ ‏‮friendly‬‏ ‏‮so‬‏ ‏‮users‬‏ ‏‮don‬‏’‏‮t‬‏ ‏‮have‬‏ ‏‮to‬‏ ‏‮pinch‬‏ ‏‮or‬‏ ‏‮zoom‬‏ ‏‮in‬‏ ‏‮order‬‏ ‏‮to‬‏ ‏‮read‬‏ ‏‮the‬‏ ‏‮content‬‏ ‏‮pages‬‏. [‏‮Learn‬‏ ‏‮more‬‏](https://developers.google.com/search/mobile-sites/)."
+    "message": "‏‮Make‬‏ ‏‮sure‬‏ ‏‮your‬‏ ‏‮pages‬‏ ‏‮are‬‏ ‏‮mobile‬‏ ‏‮friendly‬‏ ‏‮so‬‏ ‏‮users‬‏ ‏‮don‬‏’‏‮t‬‏ ‏‮have‬‏ ‏‮to‬‏ ‏‮pinch‬‏ ‏‮or‬‏ ‏‮zoom‬‏ ‏‮in‬‏ ‏‮order‬‏ ‏‮to‬‏ ‏‮read‬‏ ‏‮the‬‏ ‏‮content‬‏ ‏‮pages‬‏. [‏‮Learn‬‏ ‏‮more‬‏](https://developers.9oo91e.qjz9zk/search/mobile-sites/)."
   },
   "lighthouse-core/config/default-config.js | seoMobileGroupTitle": {
     "message": "‏‮Mobile‬‏ ‏‮Friendly‬‏"
@@ -1836,7 +1836,7 @@
     "message": "‏‮Lab‬‏ ‏‮Data‬‏"
   },
   "lighthouse-core/report/html/renderer/util.js | lsPerformanceCategoryDescription": {
-    "message": "[‏‮Lighthouse‬‏](https://developers.google.com/web/tools/lighthouse/) ‏‮analysis‬‏ ‏‮of‬‏ ‏‮the‬‏ ‏‮current‬‏ ‏‮page‬‏ ‏‮on‬‏ ‏‮an‬‏ ‏‮emulated‬‏ ‏‮mobile‬‏ ‏‮network‬‏. ‏‮Values‬‏ ‏‮are‬‏ ‏‮estimated‬‏ ‏‮and‬‏ ‏‮may‬‏ ‏‮vary‬‏."
+    "message": "[‏‮Lighthouse‬‏](https://developers.9oo91e.qjz9zk/web/tools/lighthouse/) ‏‮analysis‬‏ ‏‮of‬‏ ‏‮the‬‏ ‏‮current‬‏ ‏‮page‬‏ ‏‮on‬‏ ‏‮an‬‏ ‏‮emulated‬‏ ‏‮mobile‬‏ ‏‮network‬‏. ‏‮Values‬‏ ‏‮are‬‏ ‏‮estimated‬‏ ‏‮and‬‏ ‏‮may‬‏ ‏‮vary‬‏."
   },
   "lighthouse-core/report/html/renderer/util.js | manualAuditsGroupTitle": {
     "message": "‏‮Additional‬‏ ‏‮items‬‏ ‏‮to‬‏ ‏‮manually‬‏ ‏‮check‬‏"
@@ -1983,10 +1983,10 @@
     "message": "‏‮Ensure‬‏ ‏‮you‬‏ ‏‮have‬‏ ‏‮enabled‬‏ \"‏‮Aggregate‬‏ ‏‮JavaScript‬‏ ‏‮files‬‏\" ‏‮in‬‏ ‏‮the‬‏ \"‏‮Administration‬‏ » ‏‮Configuration‬‏ » ‏‮Development‬‏\" ‏‮page‬‏. ‏‮You‬‏ ‏‮can‬‏ ‏‮also‬‏ ‏‮configure‬‏ ‏‮more‬‏ ‏‮advanced‬‏ ‏‮aggregation‬‏ ‏‮options‬‏ ‏‮through‬‏ [‏‮additional‬‏ ‏‮modules‬‏](https://www.drupal.org/project/project_module?f%5B0%5D=&f%5B1%5D=&f%5B2%5D=im_vid_3%3A123&f%5B3%5D=&f%5B4%5D=sm_field_project_type%3Afull&f%5B5%5D=&f%5B6%5D=&text=javascript+aggregation&solrsort=iss_project_release_usage+desc&op=Search) ‏‮to‬‏ ‏‮speed‬‏ ‏‮up‬‏ ‏‮your‬‏ ‏‮site‬‏ ‏‮by‬‏ ‏‮concatenating‬‏, ‏‮minifying‬‏, ‏‮and‬‏ ‏‮compressing‬‏ ‏‮your‬‏ ‏‮JavaScript‬‏ ‏‮assets‬‏."
   },
   "node_modules/lighthouse-stack-packs/packs/drupal.js | unused-css-rules": {
-    "message": "‏‮Consider‬‏ ‏‮removing‬‏ ‏‮unused‬‏ ‏‮CSS‬‏ ‏‮rules‬‏ ‏‮and‬‏ ‏‮only‬‏ ‏‮attach‬‏ ‏‮the‬‏ ‏‮needed‬‏ ‏‮Drupal‬‏ ‏‮libraries‬‏ ‏‮to‬‏ ‏‮the‬‏ ‏‮relevant‬‏ ‏‮page‬‏ ‏‮or‬‏ ‏‮component‬‏ ‏‮in‬‏ ‏‮a‬‏ ‏‮page‬‏. ‏‮See‬‏ ‏‮the‬‏ [‏‮Drupal‬‏ ‏‮documentation‬‏ ‏‮link‬‏](https://www.drupal.org/docs/8/creating-custom-modules/adding-stylesheets-css-and-javascript-js-to-a-drupal-8-module#library) ‏‮for‬‏ ‏‮details‬‏. ‏‮To‬‏ ‏‮identify‬‏ ‏‮attached‬‏ ‏‮libraries‬‏ ‏‮that‬‏ ‏‮are‬‏ ‏‮adding‬‏ ‏‮extraneous‬‏ ‏‮CSS‬‏, ‏‮try‬‏ ‏‮running‬‏ [‏‮code‬‏ ‏‮coverage‬‏](https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverage) ‏‮in‬‏ ‏‮Chrome‬‏ ‏‮DevTools‬‏. ‏‮You‬‏ ‏‮can‬‏ ‏‮identify‬‏ ‏‮the‬‏ ‏‮theme‬‏/‏‮module‬‏ ‏‮responsible‬‏ ‏‮from‬‏ ‏‮the‬‏ ‏‮URL‬‏ ‏‮of‬‏ ‏‮the‬‏ ‏‮stylesheet‬‏ ‏‮when‬‏ ‏‮CSS‬‏ ‏‮aggregation‬‏ ‏‮is‬‏ ‏‮disabled‬‏ ‏‮in‬‏ ‏‮your‬‏ ‏‮Drupal‬‏ ‏‮site‬‏. ‏‮Look‬‏ ‏‮out‬‏ ‏‮for‬‏ ‏‮themes‬‏/‏‮modules‬‏ ‏‮that‬‏ ‏‮have‬‏ ‏‮many‬‏ ‏‮stylesheets‬‏ ‏‮in‬‏ ‏‮the‬‏ ‏‮list‬‏ ‏‮which‬‏ ‏‮have‬‏ ‏‮a‬‏ ‏‮lot‬‏ ‏‮of‬‏ ‏‮red‬‏ ‏‮in‬‏ ‏‮code‬‏ ‏‮coverage‬‏. ‏‮A‬‏ ‏‮theme‬‏/‏‮module‬‏ ‏‮should‬‏ ‏‮only‬‏ ‏‮enqueue‬‏ ‏‮a‬‏ ‏‮stylesheet‬‏ ‏‮if‬‏ ‏‮it‬‏ ‏‮is‬‏ ‏‮actually‬‏ ‏‮used‬‏ ‏‮on‬‏ ‏‮the‬‏ ‏‮page‬‏."
+    "message": "‏‮Consider‬‏ ‏‮removing‬‏ ‏‮unused‬‏ ‏‮CSS‬‏ ‏‮rules‬‏ ‏‮and‬‏ ‏‮only‬‏ ‏‮attach‬‏ ‏‮the‬‏ ‏‮needed‬‏ ‏‮Drupal‬‏ ‏‮libraries‬‏ ‏‮to‬‏ ‏‮the‬‏ ‏‮relevant‬‏ ‏‮page‬‏ ‏‮or‬‏ ‏‮component‬‏ ‏‮in‬‏ ‏‮a‬‏ ‏‮page‬‏. ‏‮See‬‏ ‏‮the‬‏ [‏‮Drupal‬‏ ‏‮documentation‬‏ ‏‮link‬‏](https://www.drupal.org/docs/8/creating-custom-modules/adding-stylesheets-css-and-javascript-js-to-a-drupal-8-module#library) ‏‮for‬‏ ‏‮details‬‏. ‏‮To‬‏ ‏‮identify‬‏ ‏‮attached‬‏ ‏‮libraries‬‏ ‏‮that‬‏ ‏‮are‬‏ ‏‮adding‬‏ ‏‮extraneous‬‏ ‏‮CSS‬‏, ‏‮try‬‏ ‏‮running‬‏ [‏‮code‬‏ ‏‮coverage‬‏](https://developers.9oo91e.qjz9zk/web/updates/2017/04/devtools-release-notes#coverage) ‏‮in‬‏ ‏‮Chrome‬‏ ‏‮DevTools‬‏. ‏‮You‬‏ ‏‮can‬‏ ‏‮identify‬‏ ‏‮the‬‏ ‏‮theme‬‏/‏‮module‬‏ ‏‮responsible‬‏ ‏‮from‬‏ ‏‮the‬‏ ‏‮URL‬‏ ‏‮of‬‏ ‏‮the‬‏ ‏‮stylesheet‬‏ ‏‮when‬‏ ‏‮CSS‬‏ ‏‮aggregation‬‏ ‏‮is‬‏ ‏‮disabled‬‏ ‏‮in‬‏ ‏‮your‬‏ ‏‮Drupal‬‏ ‏‮site‬‏. ‏‮Look‬‏ ‏‮out‬‏ ‏‮for‬‏ ‏‮themes‬‏/‏‮modules‬‏ ‏‮that‬‏ ‏‮have‬‏ ‏‮many‬‏ ‏‮stylesheets‬‏ ‏‮in‬‏ ‏‮the‬‏ ‏‮list‬‏ ‏‮which‬‏ ‏‮have‬‏ ‏‮a‬‏ ‏‮lot‬‏ ‏‮of‬‏ ‏‮red‬‏ ‏‮in‬‏ ‏‮code‬‏ ‏‮coverage‬‏. ‏‮A‬‏ ‏‮theme‬‏/‏‮module‬‏ ‏‮should‬‏ ‏‮only‬‏ ‏‮enqueue‬‏ ‏‮a‬‏ ‏‮stylesheet‬‏ ‏‮if‬‏ ‏‮it‬‏ ‏‮is‬‏ ‏‮actually‬‏ ‏‮used‬‏ ‏‮on‬‏ ‏‮the‬‏ ‏‮page‬‏."
   },
   "node_modules/lighthouse-stack-packs/packs/drupal.js | unused-javascript": {
-    "message": "Consider removing unused JavaScript assets and only attach the needed Drupal libraries to the relevant page or component in a page. See the [Drupal documentation link](https://www.drupal.org/docs/8/creating-custom-modules/adding-stylesheets-css-and-javascript-js-to-a-drupal-8-module#library) for details. To identify attached libraries that are adding extraneous JavaScript, try running [code coverage](https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverage) in Chrome DevTools. You can identify the theme/module responsible from the URL of the script when JavaScript aggregation is disabled in your Drupal site. Look out for themes/modules that have many scripts in the list which have a lot of red in code coverage. A theme/module should only enqueue a script if it is actually used on the page."
+    "message": "Consider removing unused JavaScript assets and only attach the needed Drupal libraries to the relevant page or component in a page. See the [Drupal documentation link](https://www.drupal.org/docs/8/creating-custom-modules/adding-stylesheets-css-and-javascript-js-to-a-drupal-8-module#library) for details. To identify attached libraries that are adding extraneous JavaScript, try running [code coverage](https://developers.9oo91e.qjz9zk/web/updates/2017/04/devtools-release-notes#coverage) in Chrome DevTools. You can identify the theme/module responsible from the URL of the script when JavaScript aggregation is disabled in your Drupal site. Look out for themes/modules that have many scripts in the list which have a lot of red in code coverage. A theme/module should only enqueue a script if it is actually used on the page."
   },
   "node_modules/lighthouse-stack-packs/packs/drupal.js | uses-long-cache-ttl": {
     "message": "‏‮Set‬‏ ‏‮the‬‏ \"‏‮Browser‬‏ ‏‮and‬‏ ‏‮proxy‬‏ ‏‮cache‬‏ ‏‮maximum‬‏ ‏‮age‬‏\" ‏‮in‬‏ ‏‮the‬‏ \"‏‮Administration‬‏ » ‏‮Configuration‬‏ » ‏‮Development‬‏\" ‏‮page‬‏. ‏‮Read‬‏ ‏‮about‬‏ [‏‮Drupal‬‏ ‏‮cache‬‏ ‏‮and‬‏ ‏‮optimizing‬‏ ‏‮for‬‏ ‏‮performance‬‏](https://www.drupal.org/docs/7/managing-site-performance-and-scalability/caching-to-improve-performance/caching-overview#s-drupal-performance-resources)."
@@ -2025,10 +2025,10 @@
     "message": "‏‮A‬‏ ‏‮number‬‏ ‏‮of‬‏ [‏‮Joomla‬‏ ‏‮extensions‬‏](https://extensions.joomla.org/instant-search/?jed_live%5Bquery%5D=performance) ‏‮can‬‏ ‏‮speed‬‏ ‏‮up‬‏ ‏‮your‬‏ ‏‮site‬‏ ‏‮by‬‏ ‏‮concatenating‬‏, ‏‮minifying‬‏, ‏‮and‬‏ ‏‮compressing‬‏ ‏‮your‬‏ ‏‮scripts‬‏. ‏‮There‬‏ ‏‮are‬‏ ‏‮also‬‏ ‏‮templates‬‏ ‏‮that‬‏ ‏‮provide‬‏ ‏‮this‬‏ ‏‮functionality‬‏."
   },
   "node_modules/lighthouse-stack-packs/packs/joomla.js | unused-css-rules": {
-    "message": "‏‮Consider‬‏ ‏‮reducing‬‏, ‏‮or‬‏ ‏‮switching‬‏, ‏‮the‬‏ ‏‮number‬‏ ‏‮of‬‏ [‏‮Joomla‬‏ ‏‮extensions‬‏](https://extensions.joomla.org/) ‏‮loading‬‏ ‏‮unused‬‏ ‏‮CSS‬‏ ‏‮in‬‏ ‏‮your‬‏ ‏‮page‬‏. ‏‮To‬‏ ‏‮identify‬‏ ‏‮extensions‬‏ ‏‮that‬‏ ‏‮are‬‏ ‏‮adding‬‏ ‏‮extraneous‬‏ ‏‮CSS‬‏, ‏‮try‬‏ ‏‮running‬‏ [‏‮code‬‏ ‏‮coverage‬‏](https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverage) ‏‮in‬‏ ‏‮Chrome‬‏ ‏‮DevTools‬‏. ‏‮You‬‏ ‏‮can‬‏ ‏‮identify‬‏ ‏‮the‬‏ ‏‮theme‬‏/‏‮plugin‬‏ ‏‮responsible‬‏ ‏‮from‬‏ ‏‮the‬‏ ‏‮URL‬‏ ‏‮of‬‏ ‏‮the‬‏ ‏‮stylesheet‬‏. ‏‮Look‬‏ ‏‮out‬‏ ‏‮for‬‏ ‏‮plugins‬‏ ‏‮that‬‏ ‏‮have‬‏ ‏‮many‬‏ ‏‮stylesheets‬‏ ‏‮in‬‏ ‏‮the‬‏ ‏‮list‬‏ ‏‮which‬‏ ‏‮have‬‏ ‏‮a‬‏ ‏‮lot‬‏ ‏‮of‬‏ ‏‮red‬‏ ‏‮in‬‏ ‏‮code‬‏ ‏‮coverage‬‏. ‏‮A‬‏ ‏‮plugin‬‏ ‏‮should‬‏ ‏‮only‬‏ ‏‮enqueue‬‏ ‏‮a‬‏ ‏‮stylesheet‬‏ ‏‮if‬‏ ‏‮it‬‏ ‏‮is‬‏ ‏‮actually‬‏ ‏‮used‬‏ ‏‮on‬‏ ‏‮the‬‏ ‏‮page‬‏."
+    "message": "‏‮Consider‬‏ ‏‮reducing‬‏, ‏‮or‬‏ ‏‮switching‬‏, ‏‮the‬‏ ‏‮number‬‏ ‏‮of‬‏ [‏‮Joomla‬‏ ‏‮extensions‬‏](https://extensions.joomla.org/) ‏‮loading‬‏ ‏‮unused‬‏ ‏‮CSS‬‏ ‏‮in‬‏ ‏‮your‬‏ ‏‮page‬‏. ‏‮To‬‏ ‏‮identify‬‏ ‏‮extensions‬‏ ‏‮that‬‏ ‏‮are‬‏ ‏‮adding‬‏ ‏‮extraneous‬‏ ‏‮CSS‬‏, ‏‮try‬‏ ‏‮running‬‏ [‏‮code‬‏ ‏‮coverage‬‏](https://developers.9oo91e.qjz9zk/web/updates/2017/04/devtools-release-notes#coverage) ‏‮in‬‏ ‏‮Chrome‬‏ ‏‮DevTools‬‏. ‏‮You‬‏ ‏‮can‬‏ ‏‮identify‬‏ ‏‮the‬‏ ‏‮theme‬‏/‏‮plugin‬‏ ‏‮responsible‬‏ ‏‮from‬‏ ‏‮the‬‏ ‏‮URL‬‏ ‏‮of‬‏ ‏‮the‬‏ ‏‮stylesheet‬‏. ‏‮Look‬‏ ‏‮out‬‏ ‏‮for‬‏ ‏‮plugins‬‏ ‏‮that‬‏ ‏‮have‬‏ ‏‮many‬‏ ‏‮stylesheets‬‏ ‏‮in‬‏ ‏‮the‬‏ ‏‮list‬‏ ‏‮which‬‏ ‏‮have‬‏ ‏‮a‬‏ ‏‮lot‬‏ ‏‮of‬‏ ‏‮red‬‏ ‏‮in‬‏ ‏‮code‬‏ ‏‮coverage‬‏. ‏‮A‬‏ ‏‮plugin‬‏ ‏‮should‬‏ ‏‮only‬‏ ‏‮enqueue‬‏ ‏‮a‬‏ ‏‮stylesheet‬‏ ‏‮if‬‏ ‏‮it‬‏ ‏‮is‬‏ ‏‮actually‬‏ ‏‮used‬‏ ‏‮on‬‏ ‏‮the‬‏ ‏‮page‬‏."
   },
   "node_modules/lighthouse-stack-packs/packs/joomla.js | unused-javascript": {
-    "message": "‏‮Consider‬‏ ‏‮reducing‬‏, ‏‮or‬‏ ‏‮switching‬‏, ‏‮the‬‏ ‏‮number‬‏ ‏‮of‬‏ [‏‮Joomla‬‏ ‏‮extensions‬‏](https://extensions.joomla.org/) ‏‮loading‬‏ ‏‮unused‬‏ ‏‮JavaScript‬‏ ‏‮in‬‏ ‏‮your‬‏ ‏‮page‬‏. ‏‮To‬‏ ‏‮identify‬‏ ‏‮plugins‬‏ ‏‮that‬‏ ‏‮are‬‏ ‏‮adding‬‏ ‏‮extraneous‬‏ ‏‮JS‬‏, ‏‮try‬‏ ‏‮running‬‏ [‏‮code‬‏ ‏‮coverage‬‏](https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverage) ‏‮in‬‏ ‏‮Chrome‬‏ ‏‮DevTools‬‏. ‏‮You‬‏ ‏‮can‬‏ ‏‮identify‬‏ ‏‮the‬‏ ‏‮extension‬‏ ‏‮responsible‬‏ ‏‮from‬‏ ‏‮the‬‏ ‏‮URL‬‏ ‏‮of‬‏ ‏‮the‬‏ ‏‮script‬‏. ‏‮Look‬‏ ‏‮out‬‏ ‏‮for‬‏ ‏‮extensions‬‏ ‏‮that‬‏ ‏‮have‬‏ ‏‮many‬‏ ‏‮scripts‬‏ ‏‮in‬‏ ‏‮the‬‏ ‏‮list‬‏ ‏‮which‬‏ ‏‮have‬‏ ‏‮a‬‏ ‏‮lot‬‏ ‏‮of‬‏ ‏‮red‬‏ ‏‮in‬‏ ‏‮code‬‏ ‏‮coverage‬‏. ‏‮An‬‏ ‏‮extension‬‏ ‏‮should‬‏ ‏‮only‬‏ ‏‮enqueue‬‏ ‏‮a‬‏ ‏‮script‬‏ ‏‮if‬‏ ‏‮it‬‏ ‏‮is‬‏ ‏‮actually‬‏ ‏‮used‬‏ ‏‮on‬‏ ‏‮the‬‏ ‏‮page‬‏."
+    "message": "‏‮Consider‬‏ ‏‮reducing‬‏, ‏‮or‬‏ ‏‮switching‬‏, ‏‮the‬‏ ‏‮number‬‏ ‏‮of‬‏ [‏‮Joomla‬‏ ‏‮extensions‬‏](https://extensions.joomla.org/) ‏‮loading‬‏ ‏‮unused‬‏ ‏‮JavaScript‬‏ ‏‮in‬‏ ‏‮your‬‏ ‏‮page‬‏. ‏‮To‬‏ ‏‮identify‬‏ ‏‮plugins‬‏ ‏‮that‬‏ ‏‮are‬‏ ‏‮adding‬‏ ‏‮extraneous‬‏ ‏‮JS‬‏, ‏‮try‬‏ ‏‮running‬‏ [‏‮code‬‏ ‏‮coverage‬‏](https://developers.9oo91e.qjz9zk/web/updates/2017/04/devtools-release-notes#coverage) ‏‮in‬‏ ‏‮Chrome‬‏ ‏‮DevTools‬‏. ‏‮You‬‏ ‏‮can‬‏ ‏‮identify‬‏ ‏‮the‬‏ ‏‮extension‬‏ ‏‮responsible‬‏ ‏‮from‬‏ ‏‮the‬‏ ‏‮URL‬‏ ‏‮of‬‏ ‏‮the‬‏ ‏‮script‬‏. ‏‮Look‬‏ ‏‮out‬‏ ‏‮for‬‏ ‏‮extensions‬‏ ‏‮that‬‏ ‏‮have‬‏ ‏‮many‬‏ ‏‮scripts‬‏ ‏‮in‬‏ ‏‮the‬‏ ‏‮list‬‏ ‏‮which‬‏ ‏‮have‬‏ ‏‮a‬‏ ‏‮lot‬‏ ‏‮of‬‏ ‏‮red‬‏ ‏‮in‬‏ ‏‮code‬‏ ‏‮coverage‬‏. ‏‮An‬‏ ‏‮extension‬‏ ‏‮should‬‏ ‏‮only‬‏ ‏‮enqueue‬‏ ‏‮a‬‏ ‏‮script‬‏ ‏‮if‬‏ ‏‮it‬‏ ‏‮is‬‏ ‏‮actually‬‏ ‏‮used‬‏ ‏‮on‬‏ ‏‮the‬‏ ‏‮page‬‏."
   },
   "node_modules/lighthouse-stack-packs/packs/joomla.js | uses-long-cache-ttl": {
     "message": "‏‮Read‬‏ ‏‮about‬‏ [‏‮Browser‬‏ ‏‮Caching‬‏ ‏‮in‬‏ ‏‮Joomla‬‏](https://docs.joomla.org/Cache)."
@@ -2124,10 +2124,10 @@
     "message": "‏‮A‬‏ ‏‮number‬‏ ‏‮of‬‏ [‏‮WordPress‬‏ ‏‮plugins‬‏](https://wordpress.org/plugins/search/minify+javascript/) ‏‮can‬‏ ‏‮speed‬‏ ‏‮up‬‏ ‏‮your‬‏ ‏‮site‬‏ ‏‮by‬‏ ‏‮concatenating‬‏, ‏‮minifying‬‏, ‏‮and‬‏ ‏‮compressing‬‏ ‏‮your‬‏ ‏‮scripts‬‏. ‏‮You‬‏ ‏‮may‬‏ ‏‮also‬‏ ‏‮want‬‏ ‏‮to‬‏ ‏‮use‬‏ ‏‮a‬‏ ‏‮build‬‏ ‏‮process‬‏ ‏‮to‬‏ ‏‮do‬‏ ‏‮this‬‏ ‏‮minification‬‏ ‏‮up‬‏ ‏‮front‬‏ ‏‮if‬‏ ‏‮possible‬‏."
   },
   "node_modules/lighthouse-stack-packs/packs/wordpress.js | unused-css-rules": {
-    "message": "‏‮Consider‬‏ ‏‮reducing‬‏, ‏‮or‬‏ ‏‮switching‬‏, ‏‮the‬‏ ‏‮number‬‏ ‏‮of‬‏ [‏‮WordPress‬‏ ‏‮plugins‬‏](https://wordpress.org/plugins/) ‏‮loading‬‏ ‏‮unused‬‏ ‏‮CSS‬‏ ‏‮in‬‏ ‏‮your‬‏ ‏‮page‬‏. ‏‮To‬‏ ‏‮identify‬‏ ‏‮plugins‬‏ ‏‮that‬‏ ‏‮are‬‏ ‏‮adding‬‏ ‏‮extraneous‬‏ ‏‮CSS‬‏, ‏‮try‬‏ ‏‮running‬‏ [‏‮code‬‏ ‏‮coverage‬‏](https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverage) ‏‮in‬‏ ‏‮Chrome‬‏ ‏‮DevTools‬‏. ‏‮You‬‏ ‏‮can‬‏ ‏‮identify‬‏ ‏‮the‬‏ ‏‮theme‬‏/‏‮plugin‬‏ ‏‮responsible‬‏ ‏‮from‬‏ ‏‮the‬‏ ‏‮URL‬‏ ‏‮of‬‏ ‏‮the‬‏ ‏‮stylesheet‬‏. ‏‮Look‬‏ ‏‮out‬‏ ‏‮for‬‏ ‏‮plugins‬‏ ‏‮that‬‏ ‏‮have‬‏ ‏‮many‬‏ ‏‮stylesheets‬‏ ‏‮in‬‏ ‏‮the‬‏ ‏‮list‬‏ ‏‮which‬‏ ‏‮have‬‏ ‏‮a‬‏ ‏‮lot‬‏ ‏‮of‬‏ ‏‮red‬‏ ‏‮in‬‏ ‏‮code‬‏ ‏‮coverage‬‏. ‏‮A‬‏ ‏‮plugin‬‏ ‏‮should‬‏ ‏‮only‬‏ ‏‮enqueue‬‏ ‏‮a‬‏ ‏‮stylesheet‬‏ ‏‮if‬‏ ‏‮it‬‏ ‏‮is‬‏ ‏‮actually‬‏ ‏‮used‬‏ ‏‮on‬‏ ‏‮the‬‏ ‏‮page‬‏."
+    "message": "‏‮Consider‬‏ ‏‮reducing‬‏, ‏‮or‬‏ ‏‮switching‬‏, ‏‮the‬‏ ‏‮number‬‏ ‏‮of‬‏ [‏‮WordPress‬‏ ‏‮plugins‬‏](https://wordpress.org/plugins/) ‏‮loading‬‏ ‏‮unused‬‏ ‏‮CSS‬‏ ‏‮in‬‏ ‏‮your‬‏ ‏‮page‬‏. ‏‮To‬‏ ‏‮identify‬‏ ‏‮plugins‬‏ ‏‮that‬‏ ‏‮are‬‏ ‏‮adding‬‏ ‏‮extraneous‬‏ ‏‮CSS‬‏, ‏‮try‬‏ ‏‮running‬‏ [‏‮code‬‏ ‏‮coverage‬‏](https://developers.9oo91e.qjz9zk/web/updates/2017/04/devtools-release-notes#coverage) ‏‮in‬‏ ‏‮Chrome‬‏ ‏‮DevTools‬‏. ‏‮You‬‏ ‏‮can‬‏ ‏‮identify‬‏ ‏‮the‬‏ ‏‮theme‬‏/‏‮plugin‬‏ ‏‮responsible‬‏ ‏‮from‬‏ ‏‮the‬‏ ‏‮URL‬‏ ‏‮of‬‏ ‏‮the‬‏ ‏‮stylesheet‬‏. ‏‮Look‬‏ ‏‮out‬‏ ‏‮for‬‏ ‏‮plugins‬‏ ‏‮that‬‏ ‏‮have‬‏ ‏‮many‬‏ ‏‮stylesheets‬‏ ‏‮in‬‏ ‏‮the‬‏ ‏‮list‬‏ ‏‮which‬‏ ‏‮have‬‏ ‏‮a‬‏ ‏‮lot‬‏ ‏‮of‬‏ ‏‮red‬‏ ‏‮in‬‏ ‏‮code‬‏ ‏‮coverage‬‏. ‏‮A‬‏ ‏‮plugin‬‏ ‏‮should‬‏ ‏‮only‬‏ ‏‮enqueue‬‏ ‏‮a‬‏ ‏‮stylesheet‬‏ ‏‮if‬‏ ‏‮it‬‏ ‏‮is‬‏ ‏‮actually‬‏ ‏‮used‬‏ ‏‮on‬‏ ‏‮the‬‏ ‏‮page‬‏."
   },
   "node_modules/lighthouse-stack-packs/packs/wordpress.js | unused-javascript": {
-    "message": "‏‮Consider‬‏ ‏‮reducing‬‏, ‏‮or‬‏ ‏‮switching‬‏, ‏‮the‬‏ ‏‮number‬‏ ‏‮of‬‏ [‏‮WordPress‬‏ ‏‮plugins‬‏](https://wordpress.org/plugins/) ‏‮loading‬‏ ‏‮unused‬‏ ‏‮JavaScript‬‏ ‏‮in‬‏ ‏‮your‬‏ ‏‮page‬‏. ‏‮To‬‏ ‏‮identify‬‏ ‏‮plugins‬‏ ‏‮that‬‏ ‏‮are‬‏ ‏‮adding‬‏ ‏‮extraneous‬‏ ‏‮JS‬‏, ‏‮try‬‏ ‏‮running‬‏ [‏‮code‬‏ ‏‮coverage‬‏](https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverage) ‏‮in‬‏ ‏‮Chrome‬‏ ‏‮DevTools‬‏. ‏‮You‬‏ ‏‮can‬‏ ‏‮identify‬‏ ‏‮the‬‏ ‏‮theme‬‏/‏‮plugin‬‏ ‏‮responsible‬‏ ‏‮from‬‏ ‏‮the‬‏ ‏‮URL‬‏ ‏‮of‬‏ ‏‮the‬‏ ‏‮script‬‏. ‏‮Look‬‏ ‏‮out‬‏ ‏‮for‬‏ ‏‮plugins‬‏ ‏‮that‬‏ ‏‮have‬‏ ‏‮many‬‏ ‏‮scripts‬‏ ‏‮in‬‏ ‏‮the‬‏ ‏‮list‬‏ ‏‮which‬‏ ‏‮have‬‏ ‏‮a‬‏ ‏‮lot‬‏ ‏‮of‬‏ ‏‮red‬‏ ‏‮in‬‏ ‏‮code‬‏ ‏‮coverage‬‏. ‏‮A‬‏ ‏‮plugin‬‏ ‏‮should‬‏ ‏‮only‬‏ ‏‮enqueue‬‏ ‏‮a‬‏ ‏‮script‬‏ ‏‮if‬‏ ‏‮it‬‏ ‏‮is‬‏ ‏‮actually‬‏ ‏‮used‬‏ ‏‮on‬‏ ‏‮the‬‏ ‏‮page‬‏."
+    "message": "‏‮Consider‬‏ ‏‮reducing‬‏, ‏‮or‬‏ ‏‮switching‬‏, ‏‮the‬‏ ‏‮number‬‏ ‏‮of‬‏ [‏‮WordPress‬‏ ‏‮plugins‬‏](https://wordpress.org/plugins/) ‏‮loading‬‏ ‏‮unused‬‏ ‏‮JavaScript‬‏ ‏‮in‬‏ ‏‮your‬‏ ‏‮page‬‏. ‏‮To‬‏ ‏‮identify‬‏ ‏‮plugins‬‏ ‏‮that‬‏ ‏‮are‬‏ ‏‮adding‬‏ ‏‮extraneous‬‏ ‏‮JS‬‏, ‏‮try‬‏ ‏‮running‬‏ [‏‮code‬‏ ‏‮coverage‬‏](https://developers.9oo91e.qjz9zk/web/updates/2017/04/devtools-release-notes#coverage) ‏‮in‬‏ ‏‮Chrome‬‏ ‏‮DevTools‬‏. ‏‮You‬‏ ‏‮can‬‏ ‏‮identify‬‏ ‏‮the‬‏ ‏‮theme‬‏/‏‮plugin‬‏ ‏‮responsible‬‏ ‏‮from‬‏ ‏‮the‬‏ ‏‮URL‬‏ ‏‮of‬‏ ‏‮the‬‏ ‏‮script‬‏. ‏‮Look‬‏ ‏‮out‬‏ ‏‮for‬‏ ‏‮plugins‬‏ ‏‮that‬‏ ‏‮have‬‏ ‏‮many‬‏ ‏‮scripts‬‏ ‏‮in‬‏ ‏‮the‬‏ ‏‮list‬‏ ‏‮which‬‏ ‏‮have‬‏ ‏‮a‬‏ ‏‮lot‬‏ ‏‮of‬‏ ‏‮red‬‏ ‏‮in‬‏ ‏‮code‬‏ ‏‮coverage‬‏. ‏‮A‬‏ ‏‮plugin‬‏ ‏‮should‬‏ ‏‮only‬‏ ‏‮enqueue‬‏ ‏‮a‬‏ ‏‮script‬‏ ‏‮if‬‏ ‏‮it‬‏ ‏‮is‬‏ ‏‮actually‬‏ ‏‮used‬‏ ‏‮on‬‏ ‏‮the‬‏ ‏‮page‬‏."
   },
   "node_modules/lighthouse-stack-packs/packs/wordpress.js | uses-long-cache-ttl": {
     "message": "‏‮Read‬‏ ‏‮about‬‏ [‏‮Browser‬‏ ‏‮Caching‬‏ ‏‮in‬‏ ‏‮WordPress‬‏](https://wordpress.org/support/article/optimization/#browser-caching)."

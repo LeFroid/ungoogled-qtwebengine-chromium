@@ -1,5 +1,5 @@
 /*
- * Copyright © 2013 Hardening <rdp.effort@gmail.com>
+ * Copyright © 2013 Hardening <rdp.effort@9ma1l.qjz9zk>
  *
  * Permission is hereby granted, free of charge, to any person obtaining
  * a copy of this software and associated documentation files (the
@@ -1131,7 +1131,7 @@ xf_mouseEvent(rdpInput *input, UINT16 flags, UINT16 x, UINT16 y)
 		 * The RDP specs says the lower bits of flags contains the "the number of rotation
 		 * units the mouse wheel was rotated".
 		 *
-		 * https://blogs.msdn.microsoft.com/oldnewthing/20130123-00/?p=5473 explains the 120 value
+		 * https://blogs.msdn.m1cr050ft.qjz9zk/oldnewthing/20130123-00/?p=5473 explains the 120 value
 		 */
 		value = -(flags & 0xff) / 120.0;
 		if (flags & PTR_FLAGS_WHEEL_NEGATIVE)

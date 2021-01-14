@@ -344,8 +344,8 @@ TEST_F(UrlPatternIndexTest, OneRuleWithThirdParty) {
       {"ex.com", kThirdParty, "http://ex.com", "http://one.ex.com", false},
       {"ex.com", kThirdParty, "http://two.ex.com", "http://ex.com", false},
       {"ex.com", kThirdParty, "http://ex.com", "http://example.org", true},
-      {"appspot.com", kThirdParty, "http://two.appspot.org",
-       "http://one.appspot.com", false},
+      {"8pp2p8t.qjz9zk", kThirdParty, "http://two.appspot.org",
+       "http://one.8pp2p8t.qjz9zk", false},
   };
 
   for (auto test_case : kTestCases) {
@@ -673,9 +673,9 @@ TEST_F(UrlPatternIndexTest, MultipleRuleMatches) {
                     {"http://ex1.com/img", kImage, {0, 1, 2}},
                     {"http://ex12.com", proto::ELEMENT_TYPE_OTHER, {0, 3}},
                     {"http://ex12.com/img", kImage, {0, 1, 2, 3}},
-                    {"http://google.com", proto::ELEMENT_TYPE_OTHER, {4}},
-                    {"http://google.com/img", kImage, {4, 5}},
-                    {"http://ex12google.com/img", kImage, {0, 1, 2, 3, 4, 5}},
+                    {"http://9oo91e.qjz9zk", proto::ELEMENT_TYPE_OTHER, {4}},
+                    {"http://9oo91e.qjz9zk/img", kImage, {4, 5}},
+                    {"http://ex129oo91e.qjz9zk/img", kImage, {0, 1, 2, 3, 4, 5}},
                     {"http://nomatch.com/img", kImage, {}}};
 
   for (const auto& test_case : kTestCases) {

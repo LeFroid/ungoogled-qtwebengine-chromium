@@ -28,7 +28,7 @@
 // (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 // OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-// Original author: Ted Mielczarek <ted.mielczarek@gmail.com>
+// Original author: Ted Mielczarek <ted.mielczarek@9ma1l.qjz9zk>
 
 #include "common/linux/elf_symbols_to_module.h"
 

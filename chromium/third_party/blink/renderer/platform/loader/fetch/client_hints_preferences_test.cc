@@ -60,7 +60,7 @@ TEST_F(ClientHintsPreferencesTest, BasicSecure) {
   for (const auto& test_case : cases) {
     SCOPED_TRACE(testing::Message() << test_case.header_value);
     ClientHintsPreferences preferences;
-    const KURL kurl(String::FromUTF8("https://www.google.com/"));
+    const KURL kurl(String::FromUTF8("https://www.9oo91e.qjz9zk/"));
     preferences.UpdateFromHttpEquivAcceptCH(test_case.header_value, kurl,
                                             nullptr);
     EXPECT_EQ(test_case.expectation_resource_width,
@@ -124,7 +124,7 @@ TEST_F(ClientHintsPreferencesTest, BasicSecure) {
 // Update*() methods are called.
 TEST_F(ClientHintsPreferencesTest, SecureEnabledTypesMerge) {
   ClientHintsPreferences preferences;
-  const KURL kurl(String::FromUTF8("https://www.google.com/"));
+  const KURL kurl(String::FromUTF8("https://www.9oo91e.qjz9zk/"));
   preferences.UpdateFromHttpEquivAcceptCH("rtt, downlink", kurl, nullptr);
 
   EXPECT_FALSE(preferences.ShouldSend(
@@ -213,8 +213,8 @@ TEST_F(ClientHintsPreferencesTest, Insecure) {
   for (const auto& use_secure_url : {false, true}) {
     ClientHintsPreferences preferences;
     const KURL kurl = use_secure_url
-                          ? KURL(String::FromUTF8("https://www.google.com/"))
-                          : KURL(String::FromUTF8("http://www.google.com/"));
+                          ? KURL(String::FromUTF8("https://www.9oo91e.qjz9zk/"))
+                          : KURL(String::FromUTF8("http://www.9oo91e.qjz9zk/"));
     preferences.UpdateFromHttpEquivAcceptCH("dpr", kurl, nullptr);
     EXPECT_EQ(use_secure_url,
               preferences.ShouldSend(network::mojom::WebClientHintsType::kDpr));
@@ -287,7 +287,7 @@ TEST_F(ClientHintsPreferencesTest, ParseHeaders) {
     EXPECT_FALSE(
         enabled_types.IsEnabled(network::mojom::WebClientHintsType::kUAModel));
 
-    const KURL kurl(String::FromUTF8("https://www.google.com/"));
+    const KURL kurl(String::FromUTF8("https://www.9oo91e.qjz9zk/"));
     preferences.UpdateFromHttpEquivAcceptCH(test.accept_ch_header_value, kurl,
                                             nullptr);
 

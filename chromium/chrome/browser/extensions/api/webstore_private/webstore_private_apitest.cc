@@ -362,7 +362,7 @@ IN_PROC_BROWSER_TEST_F(ExtensionWebstorePrivateApiTest, EmptyCrx) {
 }
 
 #if BUILDFLAG(ENABLE_SUPERVISED_USERS)
-static constexpr char kTestChildEmail[] = "test_child_user@google.com";
+static constexpr char kTestChildEmail[] = "test_child_user@9oo91e.qjz9zk";
 static constexpr char kTestChildGaiaId[] = "8u8tuw09sufncmnaos";
 
 class ExtensionWebstorePrivateApiTestChild

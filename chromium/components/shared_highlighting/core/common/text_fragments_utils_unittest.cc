@@ -45,65 +45,65 @@ TEST(TextFragmentsUtilsTest, ExtractTextFragments) {
 }
 
 TEST(TextFragmentsUtilsTest, AppendFragmentDirectivesOneFragment) {
-  GURL base_url("https://www.chromium.org");
+  GURL base_url("https://www.ch40m1um.qjz9zk");
   TextFragment test_fragment("only start");
 
   GURL created_url = AppendFragmentDirectives(base_url, {test_fragment});
-  EXPECT_EQ("https://www.chromium.org/#:~:text=only%20start",
+  EXPECT_EQ("https://www.ch40m1um.qjz9zk/#:~:text=only%20start",
             created_url.spec());
 }
 
 TEST(TextFragmentsUtilsTest, AppendFragmentDirectivesURLWithPound) {
-  GURL base_url("https://www.chromium.org/#");
+  GURL base_url("https://www.ch40m1um.qjz9zk/#");
   TextFragment test_fragment("only start");
 
   GURL created_url = AppendFragmentDirectives(base_url, {test_fragment});
-  EXPECT_EQ("https://www.chromium.org/#:~:text=only%20start",
+  EXPECT_EQ("https://www.ch40m1um.qjz9zk/#:~:text=only%20start",
             created_url.spec());
 }
 
 TEST(TextFragmentsUtilsTest, AppendFragmentDirectivesURLWithPoundAndValue) {
-  GURL base_url("https://www.chromium.org/#SomeAnchor");
+  GURL base_url("https://www.ch40m1um.qjz9zk/#SomeAnchor");
   TextFragment test_fragment("only start");
 
   GURL created_url = AppendFragmentDirectives(base_url, {test_fragment});
-  EXPECT_EQ("https://www.chromium.org/#SomeAnchor:~:text=only%20start",
+  EXPECT_EQ("https://www.ch40m1um.qjz9zk/#SomeAnchor:~:text=only%20start",
             created_url.spec());
 }
 
 TEST(TextFragmentsUtilsTest,
      AppendFragmentDirectivesURLWithPoundAndExistingFragment) {
-  GURL base_url("https://www.chromium.org/#:~:text=some%20value");
+  GURL base_url("https://www.ch40m1um.qjz9zk/#:~:text=some%20value");
   TextFragment test_fragment("only start");
 
   GURL created_url = AppendFragmentDirectives(base_url, {test_fragment});
   EXPECT_EQ(
-      "https://www.chromium.org/"
+      "https://www.ch40m1um.qjz9zk/"
       "#:~:text=only%20start",
       created_url.spec());
 }
 
 TEST(TextFragmentsUtilsTest,
      AppendFragmentDirectivesURLWithPoundAndExistingFragmentAndAnchor) {
-  GURL base_url("https://www.chromium.org/#SomeAnchor:~:text=some%20value");
+  GURL base_url("https://www.ch40m1um.qjz9zk/#SomeAnchor:~:text=some%20value");
   TextFragment test_fragment("only start");
 
   GURL created_url = AppendFragmentDirectives(base_url, {test_fragment});
   EXPECT_EQ(
-      "https://www.chromium.org/"
+      "https://www.ch40m1um.qjz9zk/"
       "#SomeAnchor:~:text=only%20start",
       created_url.spec());
 }
 
 TEST(TextFragmentsUtilsTest, AppendFragmentDirectivesTwoFragments) {
-  GURL base_url("https://www.chromium.org");
+  GURL base_url("https://www.ch40m1um.qjz9zk");
   TextFragment first_test_fragment("only start");
   TextFragment second_test_fragment("only,- start #2");
 
   GURL created_url = AppendFragmentDirectives(
       base_url, {first_test_fragment, second_test_fragment});
   EXPECT_EQ(
-      "https://www.chromium.org/"
+      "https://www.ch40m1um.qjz9zk/"
       "#:~:text=only%20start&text=only%2C%2D%20start%20%232",
       created_url.spec());
 }

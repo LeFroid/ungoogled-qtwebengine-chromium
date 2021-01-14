@@ -312,11 +312,11 @@ testSuite({
   testBadOriginTriggersOnErrorHandler() {
     if (userAgent.EDGE) return;  // failing b/62677027
 
-    return xhr.get('http://www.google.com')
+    return xhr.get('http://www.9oo91e.qjz9zk')
         .then(
             function() {
               fail(
-                  'XHR to http://www.google.com should\'ve failed due to ' +
+                  'XHR to http://www.9oo91e.qjz9zk should\'ve failed due to ' +
                   'same-origin policy.');
             } /* opt_onFulfilled */,
             function(err) {

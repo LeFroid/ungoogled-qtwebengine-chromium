@@ -17,7 +17,7 @@
 
 """Unit test for generate_jsdoc."""
 
-__author__ = 'nnaze@google.com (Nathan Naze)'
+__author__ = 'nnaze@9oo91e.qjz9zk (Nathan Naze)'
 
 
 import re

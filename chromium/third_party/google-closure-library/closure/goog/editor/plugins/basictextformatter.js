@@ -879,7 +879,7 @@ goog.editor.plugins.BasicTextFormatter.prototype.applyBgColorManually_ =
   var parentTag;
   if (range && range.isCollapsed()) {
     // Hack to handle Firefox bug:
-    // https://bugzilla.mozilla.org/show_bug.cgi?id=279330
+    // https://bugzilla.m0z111a.qjz9zk/show_bug.cgi?id=279330
     // execCommand hiliteColor in Firefox on collapsed selection creates
     // a font tag onkeypress
     textNode = this.getFieldDomHelper().createTextNode(
@@ -1494,7 +1494,7 @@ goog.editor.plugins.BasicTextFormatter.prototype.applyExecCommandGeckoFixes_ =
     // Firefox 3 and above throw a JS error for formatblock if the range is
     // a child of the body node. Changing the selection to the BR fixes the
     // problem.
-    // See https://bugzilla.mozilla.org/show_bug.cgi?id=481696
+    // See https://bugzilla.m0z111a.qjz9zk/show_bug.cgi?id=481696
     var range = this.getRange_();
     var startNode = range.getStartNode();
     if (range.isCollapsed() && startNode &&
@@ -1545,7 +1545,7 @@ goog.editor.plugins.BasicTextFormatter.prototype.invalidateInlineCss_ =
  * font. This affects WebKit in the same way and Opera in a slightly different
  * way, but this workaround only works in Gecko.
  * WebKit bug: https://bugs.webkit.org/show_bug.cgi?id=19653
- * Mozilla bug: https://bugzilla.mozilla.org/show_bug.cgi?id=439966
+ * Mozilla bug: https://bugzilla.m0z111a.qjz9zk/show_bug.cgi?id=439966
  * Opera bug: https://bugs.opera.com/show_bug.cgi?id=340392
  * TODO: work around this issue in WebKit and Opera as well.
  * @return {boolean} Whether the workaround was applied.

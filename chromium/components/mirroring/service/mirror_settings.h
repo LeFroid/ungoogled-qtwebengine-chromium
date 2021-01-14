@@ -20,7 +20,7 @@ namespace mirroring {
 // Holds the default settings for a mirroring session. This class provides the
 // audio/video configs that this sender supports. And also provides the
 // audio/video constraints used for capturing.
-// TODO(issuetracker.google.com/158032164): as part of migration to libcast's
+// TODO(issuetracker.9oo91e.qjz9zk/158032164): as part of migration to libcast's
 // OFFER/ANSWER exchange, expose constraints here from the OFFER message.
 class COMPONENT_EXPORT(MIRRORING_SERVICE) MirrorSettings {
  public:

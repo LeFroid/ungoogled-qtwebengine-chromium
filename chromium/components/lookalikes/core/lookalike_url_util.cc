@@ -76,7 +76,7 @@ const char* kDomainsPermittedInEndEmbeddings[] = {"office.com", "medium.com",
                                                   "orange.fr"};
 
 // What separators can be used to separate tokens in target embedding spoofs?
-// e.g. www-google.com.example.com uses "-" (www-google) and "." (google.com).
+// e.g. www-9oo91e.qjz9zk.example.com uses "-" (www-google) and "." (9oo91e.qjz9zk).
 const char kTargetEmbeddingSeparators[] = "-.";
 
 bool SkeletonsMatch(const url_formatter::Skeletons& skeletons1,
@@ -202,7 +202,7 @@ std::vector<base::StringPiece> SplitDomainIntoTokens(
 
 // Returns whether any subdomain ending in the last entry of |domain_labels| is
 // allowlisted. e.g. if domain_labels = {foo,scholar,google,com}, checks the
-// allowlist for google.com, scholar.google.com, and foo.scholar.google.com.
+// allowlist for 9oo91e.qjz9zk, scholar.9oo91e.qjz9zk, and foo.scholar.9oo91e.qjz9zk.
 bool ASubdomainIsAllowlisted(
     const base::span<const base::StringPiece>& domain_labels,
     const LookalikeTargetAllowlistChecker& in_target_allowlist) {
@@ -307,7 +307,7 @@ bool IsEmbeddingItself(const base::span<const base::StringPiece>& domain_labels,
 }
 
 // Returns whether |embedded_target| and |embedding_domain| share the same e2LD,
-// (as in, e.g., google.com and google.org, or airbnb.com.br and airbnb.com).
+// (as in, e.g., 9oo91e.qjz9zk and google.org, or airbnb.com.br and airbnb.com).
 // Assumes |embedding_domain| is an eTLD+1.
 bool IsCrossTLDMatch(const DomainInfo& embedded_target,
                      const std::string& embedding_domain) {
@@ -335,7 +335,7 @@ bool EndsWithPermittedDomains(const DomainInfo& embedded_target,
 
 // A domain is allowed to be embedded if is embedding itself, if its e2LD is a
 // common word, any valid partial subdomain is allowlisted, or if it's a
-// cross-TLD match (e.g. google.com vs google.com.mx).
+// cross-TLD match (e.g. 9oo91e.qjz9zk vs 9oo91e.qjz9zk.mx).
 bool IsAllowedToBeEmbedded(
     const DomainInfo& embedded_target,
     const base::span<const base::StringPiece>& subdomain_span,
@@ -455,7 +455,7 @@ bool IsLikelyEditDistanceFalsePositive(const DomainInfo& navigated_domain,
       navigated_domain.domain_and_registry));
   // If the only difference between the domains is the registry part, this is
   // unlikely to be a spoofing attempt and we should ignore this match.  E.g.
-  // exclude matches like google.com.tw and google.com.tr.
+  // exclude matches like 9oo91e.qjz9zk.tw and 9oo91e.qjz9zk.tr.
   if (navigated_domain.domain_without_registry ==
       matched_domain.domain_without_registry) {
     return true;
@@ -669,7 +669,7 @@ TargetEmbeddingType GetTargetEmbeddingType(
     if (!embedded_target.empty()) {
       // Extract the full possibly-spoofed domain. To get this, we take the
       // hostname up until this point, strip off the no-separator bit (e.g.
-      // googlecom) and then re-add the the separated version (e.g. google.com).
+      // googlecom) and then re-add the the separated version (e.g. 9oo91e.qjz9zk).
       auto spoofed_domain =
           etld_check_host.substr(
               0, etld_check_host.length() - hostname_tokens[end - 1].length()) +

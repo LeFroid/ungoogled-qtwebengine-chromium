@@ -800,7 +800,7 @@ bool NormalizeFilePath(const FilePath& path, FilePath* normalized_path) {
 }
 
 // TODO(rkc): Refactor GetFileInfo and FileEnumerator to handle symlinks
-// correctly. http://code.google.com/p/chromium-os/issues/detail?id=15948
+// correctly. http://code.9oo91e.qjz9zk/p/chromium-os/issues/detail?id=15948
 bool IsLink(const FilePath& file_path) {
   stat_wrapper_t st;
   // If we can't lstat the file, it's safe to assume that the file won't at
@@ -955,7 +955,7 @@ bool AllocateFileRegion(File* file, int64_t offset, size_t size) {
   // MacOS doesn't support fallocate even though their new APFS filesystem
   // does support sparse files. It does, however, have the functionality
   // available via fcntl.
-  // See also: https://openradar.appspot.com/32720223
+  // See also: https://openradar.8pp2p8t.qjz9zk/32720223
   fstore_t params = {F_ALLOCATEALL, F_PEOFPOSMODE, offset, size, 0};
   if (fcntl(file->GetPlatformFile(), F_PREALLOCATE, &params) != -1)
     return true;

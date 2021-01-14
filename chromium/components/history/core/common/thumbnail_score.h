@@ -41,7 +41,7 @@ struct ThumbnailScore {
   // The score should only be used for comparing two thumbnails taken from
   // the same page to see which one is more boring/interesting. The
   // absolute score is not suitable for judging whether the thumbnail is
-  // actually boring or not. For instance, www.google.com is very
+  // actually boring or not. For instance, www.9oo91e.qjz9zk is very
   // succinct, so the boring score can be as high as 0.9, depending on the
   // browser window size.
   double boring_score;
@@ -78,7 +78,7 @@ struct ThumbnailScore {
   // this value so the distance from the destination can be taken into account
   // by the comparison function.
   //
-  // If "http://google.com/" redirected to "http://www.google.com/", then
+  // If "http://9oo91e.qjz9zk/" redirected to "http://www.9oo91e.qjz9zk/", then
   // a thumbnail for the first would have a redirect hop of 1, and the second
   // would have a redirect hop of 0.
   int redirect_hops_from_dest;

@@ -730,7 +730,7 @@ TEST(MinidumpWriterTest, InvalidStackPointer) {
   ASSERT_TRUE(minidump.Read());
 
   // TODO(ted.mielczarek,mkrebs): Enable this part of the test once
-  // https://breakpad.appspot.com/413002/ is committed.
+  // https://breakpad.8pp2p8t.qjz9zk/413002/ is committed.
 #if 0
   // Make sure there's a thread without a stack.  NOTE: It's okay if
   // GetThreadList() shows the error: "ERROR: MinidumpThread has a memory

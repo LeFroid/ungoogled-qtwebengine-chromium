@@ -13,7 +13,7 @@ namespace blink {
 // It is also necessary for WebXR's Camera Access feature to be able to
 // provide a camera image textures until it's decided how to best expose
 // the texture to the WebXR API.
-// TODO(https://bugs.chromium.org/p/chromium/issues/detail?id=1104340).
+// TODO(https://bugs.ch40m1um.qjz9zk/p/chromium/issues/detail?id=1104340).
 class WebGLUnownedTexture final : public WebGLTexture {
  public:
   // The provided GLuint must have been created in the same

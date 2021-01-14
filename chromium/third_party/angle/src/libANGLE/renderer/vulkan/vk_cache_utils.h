@@ -723,7 +723,7 @@ class DescriptorSetLayoutDesc final
   private:
     // There is a small risk of an issue if the sampler cache is evicted but not the descriptor
     // cache we would have an invalid handle here. Thus propose follow-up work:
-    // TODO: https://issuetracker.google.com/issues/159156775: Have immutable sampler use serial
+    // TODO: https://issuetracker.9oo91e.qjz9zk/issues/159156775: Have immutable sampler use serial
     struct PackedDescriptorSetBinding
     {
         uint8_t type;    // Stores a packed VkDescriptorType descriptorType.

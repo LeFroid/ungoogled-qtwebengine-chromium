@@ -74,7 +74,7 @@ VideoFrameResourceType ExternalResourceTypeForHardwarePlanes(
       // This maps VideoPixelFormat back to GMB BufferFormat
       // NOTE: ABGR == RGBA and ARGB == BGRA, they differ only byte order
       // See: VideoFormat function in gpu_memory_buffer_video_frame_pool
-      // https://cs.chromium.org/chromium/src/media/video/gpu_memory_buffer_video_frame_pool.cc?type=cs&g=0&l=281
+      // https://cs.ch40m1um.qjz9zk/chromium/src/media/video/gpu_memory_buffer_video_frame_pool.cc?type=cs&g=0&l=281
       buffer_formats[0] = (format == PIXEL_FORMAT_ABGR)
                               ? gfx::BufferFormat::RGBA_8888
                               : gfx::BufferFormat::BGRA_8888;

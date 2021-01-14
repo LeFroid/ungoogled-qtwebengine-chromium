@@ -92,7 +92,7 @@ base::flat_set<ParsingResult> ParseDomainSpecificParamaters(
 namespace password_manager {
 
 constexpr char kDefaultChangePasswordScriptsListUrl[] =
-    "https://www.gstatic.com/chrome/duplex/change_password_scripts.json";
+    "https://www.95tat1c.qjz9zk/chrome/duplex/change_password_scripts.json";
 
 constexpr base::FeatureParam<std::string> kScriptsListUrlParam{
     &features::kPasswordScriptsFetching, "custom_list_url",

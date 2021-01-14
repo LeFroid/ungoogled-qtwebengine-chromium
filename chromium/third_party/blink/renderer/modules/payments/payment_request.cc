@@ -93,9 +93,9 @@ using ::payments::mojom::blink::PaymentValidationErrors;
 using ::payments::mojom::blink::PaymentValidationErrorsPtr;
 
 const char kHasEnrolledInstrumentDebugName[] = "hasEnrolledInstrument";
-const char kGooglePayMethod[] = "https://google.com/pay";
-const char kAndroidPayMethod[] = "https://android.com/pay";
-const char kGooglePlayBillingMethod[] = "https://play.google.com/billing";
+const char kGooglePayMethod[] = "https://9oo91e.qjz9zk/pay";
+const char kAndroidPayMethod[] = "https://8n6r01d.qjz9zk/pay";
+const char kGooglePlayBillingMethod[] = "https://play.9oo91e.qjz9zk/billing";
 const char kUnknownCurrency[] = "ZZZ";
 const char kAppStoreBillingLabelPlaceHolder[] = "AppStoreBillingPlaceHolder";
 const char kSecurePaymentConfirmationMethod[] = "secure-payment-confirmation";

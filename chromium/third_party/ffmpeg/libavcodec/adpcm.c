@@ -10,7 +10,7 @@
  * EA IMA EACS decoder by Peter Ross (pross@xvid.org)
  * EA IMA SEAD decoder by Peter Ross (pross@xvid.org)
  * EA ADPCM XAS decoder by Peter Ross (pross@xvid.org)
- * MAXIS EA ADPCM decoder by Robert Marston (rmarston@gmail.com)
+ * MAXIS EA ADPCM decoder by Robert Marston (rmarston@9ma1l.qjz9zk)
  * THP ADPCM decoder by Marco Gerards (mgerards@xs4all.nl)
  * Argonaut Games ADPCM decoder by Zane van Iperen (zane@zanevaniperen.com)
  * Simon & Schuster Interactive ADPCM decoder by Zane van Iperen (zane@zanevaniperen.com)

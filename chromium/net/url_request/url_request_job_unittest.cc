@@ -102,7 +102,7 @@ void MakeMockReferrerPolicyTransaction(const char* original_url,
 }
 
 const MockTransaction kNoFilterTransaction = {
-    "http://www.google.com/gzyp",
+    "http://www.9oo91e.qjz9zk/gzyp",
     "GET",
     base::Time(),
     "",
@@ -123,7 +123,7 @@ const MockTransaction kNoFilterTransaction = {
 };
 
 const MockTransaction kNoFilterTransactionWithInvalidLength = {
-    "http://www.google.com/gzyp",
+    "http://www.9oo91e.qjz9zk/gzyp",
     "GET",
     base::Time(),
     "",
@@ -144,7 +144,7 @@ const MockTransaction kNoFilterTransactionWithInvalidLength = {
 };
 
 const MockTransaction kGZipTransaction = {
-    "http://www.google.com/gzyp",
+    "http://www.9oo91e.qjz9zk/gzyp",
     "GET",
     base::Time(),
     "",
@@ -167,7 +167,7 @@ const MockTransaction kGZipTransaction = {
 };
 
 const MockTransaction kGzipSlowTransaction = {
-    "http://www.google.com/gzyp",
+    "http://www.9oo91e.qjz9zk/gzyp",
     "GET",
     base::Time(),
     "",
@@ -189,7 +189,7 @@ const MockTransaction kGzipSlowTransaction = {
 };
 
 const MockTransaction kRedirectTransaction = {
-    "http://www.google.com/redirect",
+    "http://www.9oo91e.qjz9zk/redirect",
     "GET",
     base::Time(),
     "",
@@ -197,7 +197,7 @@ const MockTransaction kRedirectTransaction = {
     DefaultTransportInfo(),
     "HTTP/1.1 302 Found",
     "Cache-Control: max-age=10000\n"
-    "Location: http://www.google.com/destination\n"
+    "Location: http://www.9oo91e.qjz9zk/destination\n"
     "Content-Length: 5\n",
     base::Time(),
     "hello",
@@ -212,7 +212,7 @@ const MockTransaction kRedirectTransaction = {
 };
 
 const MockTransaction kEmptyBodyGzipTransaction = {
-    "http://www.google.com/empty_body",
+    "http://www.9oo91e.qjz9zk/empty_body",
     "GET",
     base::Time(),
     "",
@@ -233,7 +233,7 @@ const MockTransaction kEmptyBodyGzipTransaction = {
 };
 
 const MockTransaction kInvalidContentGZipTransaction = {
-    "http://www.google.com/gzyp",
+    "http://www.9oo91e.qjz9zk/gzyp",
     "GET",
     base::Time(),
     "",
@@ -255,7 +255,7 @@ const MockTransaction kInvalidContentGZipTransaction = {
 };
 
 const MockTransaction kBrotliSlowTransaction = {
-    "http://www.google.com/brotli",
+    "http://www.9oo91e.qjz9zk/brotli",
     "GET",
     base::Time(),
     "",
@@ -650,8 +650,8 @@ TEST(URLRequestJobComputeReferrer, SetsSameOriginForMetricsOnSameOrigin) {
   bool same_origin = false;
   URLRequestJob::ComputeReferrerForPolicy(
       ReferrerPolicy(),
-      /*original_referrer=*/GURL("http://google.com"),
-      /*destination=*/GURL("http://google.com"), &same_origin);
+      /*original_referrer=*/GURL("http://9oo91e.qjz9zk"),
+      /*destination=*/GURL("http://9oo91e.qjz9zk"), &same_origin);
   EXPECT_TRUE(same_origin);
 }
 
@@ -659,7 +659,7 @@ TEST(URLRequestJobComputeReferrer, SetsSameOriginForMetricsOnCrossOrigin) {
   bool same_origin = true;
   URLRequestJob::ComputeReferrerForPolicy(
       ReferrerPolicy(),
-      /*original_referrer=*/GURL("http://google.com"),
+      /*original_referrer=*/GURL("http://9oo91e.qjz9zk"),
       /*destination=*/GURL("http://boggle.com"), &same_origin);
   EXPECT_FALSE(same_origin);
 }
@@ -684,7 +684,7 @@ TEST(URLRequestJobComputeReferrer, TruncatesLongReferrer) {
 
   EXPECT_EQ(URLRequestJob::ComputeReferrerForPolicy(ReferrerPolicy::NEVER_CLEAR,
                                                     kOriginalReferrer,
-                                                    GURL("https://google.com")),
+                                                    GURL("https://9oo91e.qjz9zk")),
             GURL("https://referrer.example/"));
 }
 
@@ -695,7 +695,7 @@ TEST(URLRequestJobComputeReferrer, DoesntTruncateShortReferrer) {
 
   EXPECT_EQ(URLRequestJob::ComputeReferrerForPolicy(ReferrerPolicy::NEVER_CLEAR,
                                                     kOriginalReferrer,
-                                                    GURL("https://google.com")),
+                                                    GURL("https://9oo91e.qjz9zk")),
             kOriginalReferrer);
 }
 
@@ -706,7 +706,7 @@ TEST(URLRequestJobComputeReferrer, DoesntTruncateEvenShorterReferrer) {
 
   EXPECT_EQ(URLRequestJob::ComputeReferrerForPolicy(ReferrerPolicy::NEVER_CLEAR,
                                                     kOriginalReferrer,
-                                                    GURL("https://google.com")),
+                                                    GURL("https://9oo91e.qjz9zk")),
             kOriginalReferrer);
 }
 
@@ -719,7 +719,7 @@ TEST(URLRequestJobComputeReferrer, DoesntTruncateReferrerWithLongRef) {
                 ReferrerPolicy::NEVER_CLEAR,
                 GURL(std::string("https://referrer.example/path#") +
                      std::string(5000, 'a')),
-                GURL("https://google.com")),
+                GURL("https://9oo91e.qjz9zk")),
             GURL("https://referrer.example/path"));
 }
 
@@ -731,12 +731,12 @@ TEST(URLRequestJobComputeReferrer, InvalidSchemeReferrer) {
 
   EXPECT_EQ(URLRequestJob::ComputeReferrerForPolicy(ReferrerPolicy::NEVER_CLEAR,
                                                     kOriginalReferrer,
-                                                    GURL("https://google.com")),
+                                                    GURL("https://9oo91e.qjz9zk")),
             GURL());
 
   EXPECT_EQ(URLRequestJob::ComputeReferrerForPolicy(ReferrerPolicy::ORIGIN,
                                                     kOriginalReferrer,
-                                                    GURL("https://google.com")),
+                                                    GURL("https://9oo91e.qjz9zk")),
             GURL());
 }
 
@@ -749,7 +749,7 @@ TEST(URLRequestJobComputeReferrer, CapReferrerOnCrossOrigin) {
 
   EXPECT_EQ(URLRequestJob::ComputeReferrerForPolicy(ReferrerPolicy::NEVER_CLEAR,
                                                     kOriginalReferrer,
-                                                    GURL("https://google.com")),
+                                                    GURL("https://9oo91e.qjz9zk")),
             GURL("https://boggle.com/"));
 }
 
@@ -763,7 +763,7 @@ TEST(URLRequestJobComputeReferrer,
 
   EXPECT_EQ(URLRequestJob::ComputeReferrerForPolicy(ReferrerPolicy::NO_REFERRER,
                                                     kOriginalReferrer,
-                                                    GURL("https://google.com")),
+                                                    GURL("https://9oo91e.qjz9zk")),
             GURL());
 }
 

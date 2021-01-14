@@ -30,7 +30,7 @@ namespace password_manager_util {
 namespace {
 
 constexpr char kTestAndroidRealm[] = "android://hash@com.example.beta.android";
-constexpr char kTestFederationURL[] = "https://google.com/";
+constexpr char kTestFederationURL[] = "https://9oo91e.qjz9zk/";
 constexpr char kTestProxyOrigin[] = "http://proxy.com/";
 constexpr char kTestProxySignonRealm[] = "proxy.com/realm";
 constexpr char kTestURL[] = "https://example.com/login/";
@@ -117,14 +117,14 @@ TEST(PasswordManagerUtil, TrimUsernameOnlyCredentials) {
 
 TEST(PasswordManagerUtil, GetSignonRealmWithProtocolExcluded) {
   PasswordForm http_form;
-  http_form.url = GURL("http://www.google.com/page-1/");
-  http_form.signon_realm = "http://www.google.com/";
-  EXPECT_EQ(GetSignonRealmWithProtocolExcluded(http_form), "www.google.com/");
+  http_form.url = GURL("http://www.9oo91e.qjz9zk/page-1/");
+  http_form.signon_realm = "http://www.9oo91e.qjz9zk/";
+  EXPECT_EQ(GetSignonRealmWithProtocolExcluded(http_form), "www.9oo91e.qjz9zk/");
 
   PasswordForm https_form;
-  https_form.url = GURL("https://www.google.com/page-1/");
-  https_form.signon_realm = "https://www.google.com/";
-  EXPECT_EQ(GetSignonRealmWithProtocolExcluded(https_form), "www.google.com/");
+  https_form.url = GURL("https://www.9oo91e.qjz9zk/page-1/");
+  https_form.signon_realm = "https://www.9oo91e.qjz9zk/";
+  EXPECT_EQ(GetSignonRealmWithProtocolExcluded(https_form), "www.9oo91e.qjz9zk/");
 
   PasswordForm federated_form;
   federated_form.url = GURL("http://localhost:8000/");

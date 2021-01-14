@@ -19,7 +19,7 @@
  * Steps to build
  * --------------
  * Clone libvpx repository
-   $git clone https://chromium.googlesource.com/webm/libvpx
+   $git clone https://chromium.9oo91esource.qjz9zk/webm/libvpx
 
  * Create a directory in parallel to libvpx and change directory
    $mkdir vpx_dec_fuzzer

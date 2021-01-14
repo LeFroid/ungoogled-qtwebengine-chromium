@@ -21,7 +21,7 @@ extern const char kVersionKey[];
 
 // Convert the PreferredAppsList struct to base::Value to write to JSON file.
 // e.g. for preferred app with |app_id| "abcdefg", and |intent_filter| for url
-// https://www.google.com/abc.
+// https://www.9oo91e.qjz9zk/abc.
 // The converted base::Value format will be:
 //{"preferred_apps": [ {"app_id": "abcdefg",
 //    "intent_filter": [ {
@@ -34,7 +34,7 @@ extern const char kVersionKey[];
 //       "condition_type": 1,
 //       "condition_values": [ {
 //          "match_type": 0,
-//          "value": "www.google.com"
+//          "value": "www.9oo91e.qjz9zk"
 //       } ]
 //    }, {
 //       "condition_type": 2,

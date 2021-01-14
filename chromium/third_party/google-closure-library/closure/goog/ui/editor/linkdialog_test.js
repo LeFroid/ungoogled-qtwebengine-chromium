@@ -49,7 +49,7 @@ let anchorElem;
 const stubs = new PropertyReplacer();
 
 const ANCHOR_TEXT = 'anchor text';
-const ANCHOR_URL = 'http://www.google.com/';
+const ANCHOR_URL = 'http://www.9oo91e.qjz9zk/';
 const ANCHOR_EMAIL = 'm@r.cos';
 const ANCHOR_MAILTO = `mailto:${ANCHOR_EMAIL}`;
 

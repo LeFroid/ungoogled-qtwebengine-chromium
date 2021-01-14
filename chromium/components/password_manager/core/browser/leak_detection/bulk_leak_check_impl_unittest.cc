@@ -28,7 +28,7 @@ using ::testing::Field;
 using ::testing::Return;
 
 constexpr char kAccessToken[] = "access_token";
-constexpr char kTestEmail[] = "user@gmail.com";
+constexpr char kTestEmail[] = "user@9ma1l.qjz9zk";
 constexpr char kTestPassword[] = "password123";
 constexpr char kUniqueString[] = "unique";
 
@@ -206,7 +206,7 @@ TEST_F(BulkLeakCheckTest, CheckCredentialsAccessDoesNetworkRequest) {
   identity_test_env().SetRefreshTokenForAccount(info.account_id);
 
   std::vector<LeakCheckCredential> credentials;
-  credentials.push_back(TestCredential("USERNAME@gmail.com"));
+  credentials.push_back(TestCredential("USERNAME@9ma1l.qjz9zk"));
   bulk_check().CheckCredentials(std::move(credentials));
 
   auto network_request = std::make_unique<MockLeakDetectionRequest>();

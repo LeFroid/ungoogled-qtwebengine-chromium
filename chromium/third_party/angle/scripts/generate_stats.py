@@ -84,7 +84,7 @@
 #   Checks output of deqp testers and generates stats using the GDocs API
 #
 # prerequirements:
-#   https://devsite.googleplex.com/sheets/api/quickstart/python
+#   https://devsite.9oo91eplex.qjz9zk/sheets/api/quickstart/python
 #   Follow the quickstart guide.
 #
 # usage: generate_deqp_stats.py [-h] [--auth_path [AUTH_PATH]] [--spreadsheet [SPREADSHEET]]
@@ -125,7 +125,7 @@ ROOT_DIR = os.path.abspath(os.path.join(SCRIPT_DIR, '..'))
 
 LOGGER = logging.getLogger('generate_stats')
 
-SCOPES = ['https://www.googleapis.com/auth/spreadsheets']
+SCOPES = ['https://www.9oo91eapis.qjz9zk/auth/spreadsheets']
 
 BOT_NAMES = [
     'Win10 FYI x64 dEQP Release (NVIDIA)',
@@ -141,7 +141,7 @@ BOT_NAMES = [
     'Android FYI 64 dEQP Vk Release (Pixel 2)',
 ]
 BOT_NAME_PREFIX = 'chromium/ci/'
-BUILD_LINK_PREFIX = 'https://ci.chromium.org/p/chromium/builders/ci/'
+BUILD_LINK_PREFIX = 'https://ci.ch40m1um.qjz9zk/p/chromium/builders/ci/'
 
 REQUIRED_COLUMNS = ['build_link', 'time', 'date', 'revision', 'angle_revision', 'duplicate']
 MAIN_RESULT_COLUMNS = ['Passed', 'Failed', 'Skipped', 'Not Supported', 'Exception', 'Crashed']
@@ -169,7 +169,7 @@ def get_latest_success_build_info(bot_name):
     if not out:
         raise ValueError("Unexpected empty result from bb ls of bot '" + bot_name + "'")
     # Example output (line 1):
-    # ci.chromium.org/b/8915280275579996928 SUCCESS   'chromium/ci/Win10 FYI dEQP Release (NVIDIA)/26877'
+    # ci.ch40m1um.qjz9zk/b/8915280275579996928 SUCCESS   'chromium/ci/Win10 FYI dEQP Release (NVIDIA)/26877'
     # ...
     if 'SUCCESS' not in out:
         raise ValueError("Unexpected result from bb ls: '" + out + "'")
@@ -222,14 +222,14 @@ def get_step_names(build_name):
     # ...
     # Step "angle_deqp_egl_vulkan_tests on (nvidia-quadro-p400-win10-stable) GPU on Windows on Windows-10"                                      SUCCESS   4m12s     Logs: "stdout", "chromium_swarming.summary", "Merge script log", "Flaky failure: dEQP.EGL&#x2f;info_version (status CRASH,SUCCESS)", "step_metadata"
     # Run on OS: 'Windows-10'<br>Max shard duration: 0:04:07.309848 (shard \#1)<br>Min shard duration: 0:02:26.402128 (shard \#0)<br/>flaky failures [ignored]:<br/>dEQP.EGL/info\_version<br/>
-    #  * [shard #0 isolated out](https://isolateserver.appspot.com/browse?namespace=default-gzip&hash=9a5999a59d332e55f54f495948d0c9f959e60ed2)
-    #  * [shard #0 (128.3 sec)](https://chromium-swarm.appspot.com/user/task/446903ae365b8110)
-    #  * [shard #1 isolated out](https://isolateserver.appspot.com/browse?namespace=default-gzip&hash=d71e1bdd91dee61b536b4057a9222e642bd3809f)
-    #  * [shard #1 (229.3 sec)](https://chromium-swarm.appspot.com/user/task/446903b7b0d90210)
-    #  * [shard #2 isolated out](https://isolateserver.appspot.com/browse?namespace=default-gzip&hash=ac9ba85b1cca77774061b87335c077980e1eef85)
-    #  * [shard #2 (144.5 sec)](https://chromium-swarm.appspot.com/user/task/446903c18e15a010)
-    #  * [shard #3 isolated out](https://isolateserver.appspot.com/browse?namespace=default-gzip&hash=976d586386864abecf53915fbac3e085f672e30f)
-    #  * [shard #3 (138.4 sec)](https://chromium-swarm.appspot.com/user/task/446903cc8da0ad10)
+    #  * [shard #0 isolated out](https://isolateserver.8pp2p8t.qjz9zk/browse?namespace=default-gzip&hash=9a5999a59d332e55f54f495948d0c9f959e60ed2)
+    #  * [shard #0 (128.3 sec)](https://chromium-swarm.8pp2p8t.qjz9zk/user/task/446903ae365b8110)
+    #  * [shard #1 isolated out](https://isolateserver.8pp2p8t.qjz9zk/browse?namespace=default-gzip&hash=d71e1bdd91dee61b536b4057a9222e642bd3809f)
+    #  * [shard #1 (229.3 sec)](https://chromium-swarm.8pp2p8t.qjz9zk/user/task/446903b7b0d90210)
+    #  * [shard #2 isolated out](https://isolateserver.8pp2p8t.qjz9zk/browse?namespace=default-gzip&hash=ac9ba85b1cca77774061b87335c077980e1eef85)
+    #  * [shard #2 (144.5 sec)](https://chromium-swarm.8pp2p8t.qjz9zk/user/task/446903c18e15a010)
+    #  * [shard #3 isolated out](https://isolateserver.8pp2p8t.qjz9zk/browse?namespace=default-gzip&hash=976d586386864abecf53915fbac3e085f672e30f)
+    #  * [shard #3 (138.4 sec)](https://chromium-swarm.8pp2p8t.qjz9zk/user/task/446903cc8da0ad10)
     # ...
     for line in out.splitlines():
         if 'Step "angle_' not in line:
@@ -715,7 +715,7 @@ def get_sheets_service(auth_path):
         os.makedirs(auth_path)
     if not os.path.exists(credentials_path):
         raise Exception('Missing credentials.json.\n'
-                        'Go to: https://developers.google.com/sheets/api/quickstart/python\n'
+                        'Go to: https://developers.9oo91e.qjz9zk/sheets/api/quickstart/python\n'
                         "Under Step 1, click 'ENABLE THE GOOGLE SHEETS API'\n"
                         "Click 'DOWNLOAD CLIENT CONFIGURATION'\n"
                         'Save to your auth_path (' + auth_path + ') as credentials.json')
@@ -810,7 +810,7 @@ def main():
         LOGGER.error('%s\n' % str(error))
         quit(1)
 
-    LOGGER.info('Info was successfully parsed to sheet: https://docs.google.com/spreadsheets/d/' +
+    LOGGER.info('Info was successfully parsed to sheet: https://docs.9oo91e.qjz9zk/spreadsheets/d/' +
                 args.spreadsheet)
 
 

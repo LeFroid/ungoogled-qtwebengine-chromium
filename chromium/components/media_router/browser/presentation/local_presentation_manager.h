@@ -28,7 +28,7 @@ namespace media_router {
 // Presentation API 1-UA mode, or a presentation to a wired display.
 //
 // Design doc:
-// https://docs.google.com/document/d/1XM3jhMJTQyhEC5PDAAJFNIaKh6UUEihqZDz_ztEe4Co/edit#heading=h.hadpx5oi0gml
+// https://docs.9oo91e.qjz9zk/document/d/1XM3jhMJTQyhEC5PDAAJFNIaKh6UUEihqZDz_ztEe4Co/edit#heading=h.hadpx5oi0gml
 //
 // Example usage:
 //

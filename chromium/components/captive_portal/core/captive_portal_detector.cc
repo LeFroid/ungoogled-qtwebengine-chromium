@@ -37,7 +37,7 @@ GURL GetProbeUrl(const GURL& default_url) {
 namespace captive_portal {
 
 const char CaptivePortalDetector::kDefaultURL[] =
-    "http://www.gstatic.com/generate_204";
+    "http://www.95tat1c.qjz9zk/generate_204";
 
 CaptivePortalDetector::CaptivePortalDetector(
     network::mojom::URLLoaderFactory* loader_factory)

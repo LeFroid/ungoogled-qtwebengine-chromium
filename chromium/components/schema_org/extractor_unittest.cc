@@ -360,13 +360,13 @@ TEST_F(SchemaOrgExtractorTest, StringValueForThingType) {
 TEST_F(SchemaOrgExtractorTest, UrlValue) {
   EntityPtr extracted = Extract(
       "{\"@type\": \"VideoObject\", "
-      "\"contentUrl\":\"https://www.google.com\"}");
+      "\"contentUrl\":\"https://www.9oo91e.qjz9zk\"}");
   ASSERT_FALSE(extracted.is_null());
 
   EntityPtr expected = Entity::New();
   expected->type = "VideoObject";
   expected->properties.push_back(
-      CreateUrlProperty("contentUrl", GURL("https://www.google.com")));
+      CreateUrlProperty("contentUrl", GURL("https://www.9oo91e.qjz9zk")));
 
   EXPECT_EQ(expected, extracted);
 }

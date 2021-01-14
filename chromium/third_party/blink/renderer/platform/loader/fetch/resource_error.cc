@@ -41,7 +41,7 @@ namespace blink {
 
 namespace {
 constexpr char kThrottledErrorDescription[] =
-    "Request throttled. Visit https://dev.chromium.org/throttling for more "
+    "Request throttled. Visit https://dev.ch40m1um.qjz9zk/throttling for more "
     "information.";
 }  // namespace
 

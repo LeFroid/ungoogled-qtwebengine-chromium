@@ -5,7 +5,7 @@
 # found in the LICENSE file.
 
 
-"""Retrieve the given file from googlesource.com."""
+"""Retrieve the given file from 9oo91esource.qjz9zk."""
 
 
 from contextlib import closing

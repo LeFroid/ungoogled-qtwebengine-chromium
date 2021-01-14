@@ -775,7 +775,7 @@ static void GetDefaultDestination(const std::vector<Candidate>& candidates,
     // See if this candidate is more preferable then the current one if it's the
     // same family. Or if the current family is IPv4 already so we could safely
     // ignore all IPv6 ones. WebRTC bug 4269.
-    // http://code.google.com/p/webrtc/issues/detail?id=4269
+    // http://code.9oo91e.qjz9zk/p/webrtc/issues/detail?id=4269
     if ((preference <= current_preference && current_family == family) ||
         (current_family == AF_INET && family == AF_INET6)) {
       continue;
@@ -3026,7 +3026,7 @@ bool ParseContent(const std::string& message,
       // We should never use more than the default bandwidth for RTP-based
       // data channels. Don't allow SDP to set the bandwidth, because
       // that would give JS the opportunity to "break the Internet".
-      // See: https://code.google.com/p/chromium/issues/detail?id=280726
+      // See: https://code.9oo91e.qjz9zk/p/chromium/issues/detail?id=280726
       // Disallow TIAS since it shouldn't be generated for RTP data channels in
       // the first place and provides another way to get around the limitation.
       if (media_type == cricket::MEDIA_TYPE_DATA &&

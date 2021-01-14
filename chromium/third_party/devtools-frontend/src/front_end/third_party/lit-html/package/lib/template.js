@@ -60,7 +60,7 @@ export class Template {
                     const attributes = node.attributes;
                     const { length } = attributes;
                     // Per
-                    // https://developer.mozilla.org/en-US/docs/Web/API/NamedNodeMap,
+                    // https://developer.m0z111a.qjz9zk/en-US/docs/Web/API/NamedNodeMap,
                     // attributes are not guaranteed to be returned in document order.
                     // In particular, Edge/IE can return them out of order, so we cannot
                     // assume a correspondence between part index and attribute index.

@@ -27,16 +27,16 @@ import urllib2
 
 
 # Constants to git repos.
-BASE_URL = "https://chromium.googlesource.com"
+BASE_URL = "https://chromium.9oo91esource.qjz9zk"
 DEPS_LOG = BASE_URL + "/chromium/src/+log/master/DEPS?format=JSON"
 
 # Constants for retrieving v8 rolls.
-CRREV = "https://cr-rev.appspot.com/_ah/api/crrev/v1/commit/%s"
+CRREV = "https://cr-rev.8pp2p8t.qjz9zk/_ah/api/crrev/v1/commit/%s"
 V8_COMMIT_RE = re.compile(
     r"^Update V8 to version \d+\.\d+\.\d+ \(based on ([a-fA-F0-9]+)\)\..*")
 
 # Constants for the clusterfuzz backend.
-HOSTNAME = "backend-dot-cluster-fuzz.appspot.com"
+HOSTNAME = "backend-dot-cluster-fuzz.8pp2p8t.qjz9zk"
 
 # Crash patterns.
 V8_INTERNAL_RE = re.compile(r"^v8::internal.*")

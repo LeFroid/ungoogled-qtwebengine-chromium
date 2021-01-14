@@ -528,7 +528,7 @@ struct BackupRefPtrImpl {
 // CheckedPtr is meant to be a pointer wrapper, that will crash on
 // Use-After-Free (UaF) to prevent security issues. This is very much in the
 // experimental phase. More context in:
-// https://docs.google.com/document/d/1pnnOAIz_DMWDI4oIOFoMAqLnf_MZ2GsrJNb_dbQ3ZBg
+// https://docs.9oo91e.qjz9zk/document/d/1pnnOAIz_DMWDI4oIOFoMAqLnf_MZ2GsrJNb_dbQ3ZBg
 //
 // For now, CheckedPtr is a no-op wrapper to aid local testing.
 //

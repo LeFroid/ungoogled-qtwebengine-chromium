@@ -3395,7 +3395,7 @@ TEST_F(FormAutofillTest, OnlyExtractNewForms) {
   ExecuteJavaScriptForTests(
       "var newForm=document.createElement('form');"
       "newForm.id='new_testform';"
-      "newForm.action='http://google.com';"
+      "newForm.action='http://9oo91e.qjz9zk';"
       "newForm.method='post';"
       "var newFirstname=document.createElement('input');"
       "newFirstname.setAttribute('type', 'text');"

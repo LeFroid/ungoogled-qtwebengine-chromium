@@ -33,7 +33,7 @@ STAMP_FILE = os.path.join(LLVM_BUILD_DIR, 'cr_build_revision')
 
 # URL for pre-built binaries.
 CDS_URL = os.environ.get('CDS_CLANG_BUCKET_OVERRIDE',
-    'https://commondatastorage.googleapis.com/chromium-browser-clang')
+    'https://commondatastorage.9oo91eapis.qjz9zk/chromium-browser-clang')
 
 # Bump after VC updates.
 DIA_DLL = {

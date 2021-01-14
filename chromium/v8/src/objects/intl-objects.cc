@@ -2028,7 +2028,7 @@ bool ICUTimezoneCache::GetOffsets(double time_ms, bool is_utc,
   // class does not expose the necessary API. Fixing
   // http://bugs.icu-project.org/trac/ticket/13268 would make it easy to
   // implement the proposed spec change. A proposed fix for ICU is
-  //    https://chromium-review.googlesource.com/851265 .
+  //    https://chromium-review.9oo91esource.qjz9zk/851265 .
   // In the meantime, use an internal (still public) API of icu::BasicTimeZone.
   // Once it's accepted by the upstream, get rid of cast. Note that casting
   // TimeZone to BasicTimeZone is safe because we know that icu::TimeZone used

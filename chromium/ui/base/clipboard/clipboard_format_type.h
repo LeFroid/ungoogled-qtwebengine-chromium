@@ -70,7 +70,7 @@ class COMPONENT_EXPORT(UI_BASE_CLIPBOARD_TYPES) ClipboardFormatType {
 #if defined(OS_WIN) && !defined(TOOLKIT_QT)
   // ANSI formats. Only Windows differentiates between ANSI and UNICODE formats
   // in ClipboardFormatType. Reference:
-  // https://docs.microsoft.com/en-us/windows/win32/learnwin32/working-with-strings
+  // https://docs.m1cr050ft.qjz9zk/en-us/windows/win32/learnwin32/working-with-strings
   static const ClipboardFormatType& GetUrlAType();
   static const ClipboardFormatType& GetPlainTextAType();
   static const ClipboardFormatType& GetFilenameAType();
@@ -131,7 +131,7 @@ class COMPONENT_EXPORT(UI_BASE_CLIPBOARD_TYPES) ClipboardFormatType {
   static std::map<LONG, ClipboardFormatType>& GetFileContentTypeMap();
 
   // FORMATETC:
-  // https://docs.microsoft.com/en-us/windows/desktop/com/the-formatetc-structure
+  // https://docs.m1cr050ft.qjz9zk/en-us/windows/desktop/com/the-formatetc-structure
   FORMATETC data_;
 #elif defined(USE_AURA) || defined(OS_ANDROID) || defined(OS_FUCHSIA) || defined(TOOLKIT_QT)
   explicit ClipboardFormatType(const std::string& native_format);

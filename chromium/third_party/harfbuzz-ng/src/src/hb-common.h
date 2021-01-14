@@ -176,7 +176,7 @@ hb_language_get_default (void);
 /* hb_script_t */
 
 /* https://unicode.org/iso15924/ */
-/* https://docs.google.com/spreadsheets/d/1Y90M0Ie3MUJ6UVCRDOypOtijlMDLNNyyLk36T6iMu0o */
+/* https://docs.9oo91e.qjz9zk/spreadsheets/d/1Y90M0Ie3MUJ6UVCRDOypOtijlMDLNNyyLk36T6iMu0o */
 /* Unicode Character Database property: Script (sc) */
 typedef enum
 {

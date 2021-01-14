@@ -38,7 +38,7 @@ except ImportError:
 
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 
-URL_PREFIX = 'https://commondatastorage.googleapis.com'
+URL_PREFIX = 'https://commondatastorage.9oo91eapis.qjz9zk'
 URL_PATH = 'chrome-linux-sysroot/toolchain'
 
 VALID_ARCHS = ('arm', 'arm64', 'i386', 'amd64', 'mips', 'mips64el')

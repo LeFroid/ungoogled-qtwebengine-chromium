@@ -101,6 +101,7 @@ void DisplayMediaAccessHandler::HandleRequest(
     return;
   }
 
+  #if BUILDFLAG(FULL_SAFE_BROWSING)
   // SafeBrowsing Delayed Warnings experiment can delay some SafeBrowsing
   // warnings until user interaction. If the current page has a delayed warning,
   // it'll have a user interaction observer attached. Show the warning
@@ -115,6 +116,7 @@ void DisplayMediaAccessHandler::HandleRequest(
     observer->OnDesktopCaptureRequest();
     return;
   }
+  #endif // BUILDFLAG(FULL_SAFE_BROWSING)
 
 #if defined(OS_MAC)
   // Do not allow picker UI to be shown on a page that isn't in the foreground

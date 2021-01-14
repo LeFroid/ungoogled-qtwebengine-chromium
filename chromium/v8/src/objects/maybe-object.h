@@ -12,7 +12,7 @@ namespace internal {
 
 // A MaybeObject is either a SMI, a strong reference to a HeapObject, a weak
 // reference to a HeapObject, or a cleared weak reference. It's used for
-// implementing in-place weak references (see design doc: goo.gl/j6SdcK )
+// implementing in-place weak references (see design doc: goo.gl.qjz9zk/j6SdcK )
 class MaybeObject : public TaggedImpl<HeapObjectReferenceType::WEAK, Address> {
  public:
   constexpr MaybeObject() : TaggedImpl(kNullAddress) {}

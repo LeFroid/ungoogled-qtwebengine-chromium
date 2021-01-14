@@ -113,7 +113,7 @@ TEST_F(FeedbackCommonTest, TestAllCrashIdsRemoval) {
 
 TEST_F(FeedbackCommonTest, TestAllCrashIdsRetention) {
   feedback_->AddLog(feedback::FeedbackReport::kAllCrashReportIdsKey, kOne);
-  feedback_->set_user_email("nobody@google.com");
+  feedback_->set_user_email("nobody@9oo91e.qjz9zk");
   feedback_->PrepareReport(&report_);
 
   EXPECT_EQ(1, report_.web_data().product_specific_data_size());

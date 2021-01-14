@@ -8,7 +8,6 @@ devtools_pre_built("wasm_source_map") {
   sources = [
     "pkg/wasm_source_map.d.ts",
     "pkg/wasm_source_map.js",
-    "pkg/wasm_source_map_bg.wasm",
     "wasm_source_map-tsconfig.json",
   ]
 }

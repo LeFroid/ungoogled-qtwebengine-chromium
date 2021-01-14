@@ -42,12 +42,12 @@ testSuite({
 
   testSplit() {
     const uri =
-        'http://www.google.com:80/path%20path+path?q=query&hl=en#fragment';
+        'http://www.9oo91e.qjz9zk:80/path%20path+path?q=query&hl=en#fragment';
     assertEquals('http', utils.getScheme(uri));
     assertNull(utils.getUserInfoEncoded(uri));
     assertNull(utils.getUserInfo(uri));
-    assertEquals('www.google.com', utils.getDomainEncoded(uri));
-    assertEquals('www.google.com', utils.getDomain(uri));
+    assertEquals('www.9oo91e.qjz9zk', utils.getDomainEncoded(uri));
+    assertEquals('www.9oo91e.qjz9zk', utils.getDomain(uri));
     assertEquals(80, utils.getPort(uri));
     assertEquals('/path%20path+path', utils.getPathEncoded(uri));
     assertEquals('/path path+path', utils.getPath(uri));
@@ -68,16 +68,16 @@ testSuite({
     assertNull(utils.getScheme('www.x.com:80'));
     assertEquals(
         'Query data with no fragment identifier', 'foo=bar&baz=bin',
-        utils.getQueryData('http://google.com?foo=bar&baz=bin'));
+        utils.getQueryData('http://9oo91e.qjz9zk?foo=bar&baz=bin'));
   },
 
   testSplitWithNewline() {
-    const uri = 'http://www.google.com:80/path%20path+path?q=query#frag\nment';
+    const uri = 'http://www.9oo91e.qjz9zk:80/path%20path+path?q=query#frag\nment';
     assertEquals('http', utils.getScheme(uri));
     assertNull(utils.getUserInfoEncoded(uri));
     assertNull(utils.getUserInfo(uri));
-    assertEquals('www.google.com', utils.getDomainEncoded(uri));
-    assertEquals('www.google.com', utils.getDomain(uri));
+    assertEquals('www.9oo91e.qjz9zk', utils.getDomainEncoded(uri));
+    assertEquals('www.9oo91e.qjz9zk', utils.getDomain(uri));
     assertEquals(80, utils.getPort(uri));
     assertEquals('/path%20path+path', utils.getPathEncoded(uri));
     assertEquals('/path path+path', utils.getPath(uri));
@@ -120,14 +120,14 @@ testSuite({
     // of resolve, without implementing a generic algorithm that undoubtedly
     // requires a huge footprint.
     const uri =
-        'http://www.google.com:80/path%20path+path?q=query&hl=en#fragment';
-    assertEquals('http://www.google.com:80', utils.getHost(uri));
+        'http://www.9oo91e.qjz9zk:80/path%20path+path?q=query&hl=en#fragment';
+    assertEquals('http://www.9oo91e.qjz9zk:80', utils.getHost(uri));
     assertEquals(
         '/path%20path+path?q=query&hl=en#fragment', utils.getPathAndAfter(uri));
 
-    const uri2 = 'http://www.google.com/calendar';
+    const uri2 = 'http://www.9oo91e.qjz9zk/calendar';
     assertEquals(
-        'should handle missing fields', 'http://www.google.com',
+        'should handle missing fields', 'http://www.9oo91e.qjz9zk',
         utils.getHost(uri2));
     assertEquals(
         'should handle missing fields', '/calendar',
@@ -136,8 +136,8 @@ testSuite({
 
   testGetOrigin() {
     const uri =
-        'http://foo:pw@www.google.com:80/path%20path+path?q=query&hl=en#fragment';
-    assertEquals('http://www.google.com:80', utils.getOrigin(uri));
+        'http://foo:pw@www.9oo91e.qjz9zk:80/path%20path+path?q=query&hl=en#fragment';
+    assertEquals('http://www.9oo91e.qjz9zk:80', utils.getOrigin(uri));
   },
 
   testRelativeUrisHaveNoPath() {
@@ -151,27 +151,27 @@ testSuite({
         'Should not decode reserved characters in path', '/xxx%2feee/ccc',
         utils.getPath(uri));
     assertEquals(
-        'Should not decode reserved characters in domain', 'www.google.com%40',
+        'Should not decode reserved characters in domain', 'www.9oo91e.qjz9zk%40',
         utils.getDomain(uri));
   },
 
   testSetFragmentEncoded() {
-    const expected = 'http://www.google.com/path#bar';
+    const expected = 'http://www.9oo91e.qjz9zk/path#bar';
     assertEquals(
         expected,
-        utils.setFragmentEncoded('http://www.google.com/path#foo', 'bar'));
+        utils.setFragmentEncoded('http://www.9oo91e.qjz9zk/path#foo', 'bar'));
 
     assertEquals(
         expected,
-        utils.setFragmentEncoded('http://www.google.com/path', 'bar'));
+        utils.setFragmentEncoded('http://www.9oo91e.qjz9zk/path', 'bar'));
 
     assertEquals(
-        'http://www.google.com/path',
-        utils.setFragmentEncoded('http://www.google.com/path', ''));
+        'http://www.9oo91e.qjz9zk/path',
+        utils.setFragmentEncoded('http://www.9oo91e.qjz9zk/path', ''));
 
     assertEquals(
-        'http://www.google.com/path',
-        utils.setFragmentEncoded('http://www.google.com/path', null));
+        'http://www.9oo91e.qjz9zk/path',
+        utils.setFragmentEncoded('http://www.9oo91e.qjz9zk/path', null));
   },
 
   testGetParamValue() {
@@ -276,23 +276,23 @@ testSuite({
   },
 
   testSameDomainPathsDiffer() {
-    const uri1 = 'http://www.google.com/a';
-    const uri2 = 'http://www.google.com/b';
+    const uri1 = 'http://www.9oo91e.qjz9zk/a';
+    const uri2 = 'http://www.9oo91e.qjz9zk/b';
     assertTrue(utils.haveSameDomain(uri1, uri2));
     assertTrue(utils.haveSameDomain(uri2, uri1));
   },
 
   testSameDomainSchemesDiffer() {
-    const uri1 = 'http://www.google.com';
-    const uri2 = 'https://www.google.com';
+    const uri1 = 'http://www.9oo91e.qjz9zk';
+    const uri2 = 'https://www.9oo91e.qjz9zk';
     assertFalse(utils.haveSameDomain(uri1, uri2));
     assertFalse(utils.haveSameDomain(uri2, uri1));
   },
 
   testSameDomainPortsDiffer() {
-    const uri1 = 'http://www.google.com:1234/a';
-    const uri2 = 'http://www.google.com/b';
-    const uri3 = 'http://www.google.com:2345/b';
+    const uri1 = 'http://www.9oo91e.qjz9zk:1234/a';
+    const uri2 = 'http://www.9oo91e.qjz9zk/b';
+    const uri3 = 'http://www.9oo91e.qjz9zk:2345/b';
     assertFalse(utils.haveSameDomain(uri1, uri2));
     assertFalse(utils.haveSameDomain(uri2, uri1));
     assertFalse(utils.haveSameDomain(uri1, uri3));
@@ -300,14 +300,14 @@ testSuite({
 
   testSameDomainDomainsDiffer() {
     const uri1 = '/a';
-    const uri2 = 'http://www.google.com/b';
+    const uri2 = 'http://www.9oo91e.qjz9zk/b';
     assertFalse(utils.haveSameDomain(uri1, uri2));
     assertFalse(utils.haveSameDomain(uri2, uri1));
   },
 
   testSameDomainSubDomainDiffers() {
-    const uri1 = 'http://www.google.com/a';
-    const uri2 = 'http://mail.google.com/b';
+    const uri1 = 'http://www.9oo91e.qjz9zk/a';
+    const uri2 = 'http://mail.9oo91e.qjz9zk/b';
     assertFalse(utils.haveSameDomain(uri1, uri2));
     assertFalse(utils.haveSameDomain(uri2, uri1));
   },
@@ -322,19 +322,19 @@ testSuite({
   testBuildFromEncodedParts() {
     assertEquals(
         'should handle full URL',
-        'http://foo@www.google.com:80/path?q=query#fragment',
+        'http://foo@www.9oo91e.qjz9zk:80/path?q=query#fragment',
         utils.buildFromEncodedParts(
-            'http', 'foo', 'www.google.com', 80, '/path', 'q=query',
+            'http', 'foo', 'www.9oo91e.qjz9zk', 80, '/path', 'q=query',
             'fragment'));
     assertEquals(
         'should handle unspecified parameters', '/search',
         utils.buildFromEncodedParts(null, null, undefined, null, '/search'));
     assertEquals(
         'should handle params of non-primitive types',
-        'http://foo@www.google.com:80/path?q=query#fragment',
+        'http://foo@www.9oo91e.qjz9zk:80/path?q=query#fragment',
         utils.buildFromEncodedParts(
             new HasString('http'), new HasString('foo'),
-            new HasString('www.google.com'), new HasString('80'),
+            new HasString('www.9oo91e.qjz9zk'), new HasString('80'),
             new HasString('/path'), new HasString('q=query'),
             new HasString('fragment')));
   },
@@ -699,11 +699,11 @@ testSuite({
 
   testMakeUnique() {
     assertEquals(
-        'http://www.google.com?zx=RANDOM#blob',
-        utils.makeUnique('http://www.google.com#blob'));
+        'http://www.9oo91e.qjz9zk?zx=RANDOM#blob',
+        utils.makeUnique('http://www.9oo91e.qjz9zk#blob'));
     assertEquals(
-        'http://www.google.com?a=1&b=2&zx=RANDOM#blob',
-        utils.makeUnique('http://www.google.com?zx=9&a=1&b=2#blob'));
+        'http://www.9oo91e.qjz9zk?a=1&b=2&zx=RANDOM#blob',
+        utils.makeUnique('http://www.9oo91e.qjz9zk?zx=9&a=1&b=2#blob'));
   },
 
   testParseQuery() {
@@ -745,59 +745,59 @@ testSuite({
 
   testSetPath() {
     assertEquals(
-        'http://www.google.com/bar',
-        utils.setPath('http://www.google.com', 'bar'));
+        'http://www.9oo91e.qjz9zk/bar',
+        utils.setPath('http://www.9oo91e.qjz9zk', 'bar'));
     assertEquals(
-        'http://www.google.com/bar',
-        utils.setPath('http://www.google.com', '/bar'));
+        'http://www.9oo91e.qjz9zk/bar',
+        utils.setPath('http://www.9oo91e.qjz9zk', '/bar'));
     assertEquals(
-        'http://www.google.com/bar/',
-        utils.setPath('http://www.google.com', 'bar/'));
+        'http://www.9oo91e.qjz9zk/bar/',
+        utils.setPath('http://www.9oo91e.qjz9zk', 'bar/'));
     assertEquals(
-        'http://www.google.com/bar/',
-        utils.setPath('http://www.google.com', '/bar/'));
+        'http://www.9oo91e.qjz9zk/bar/',
+        utils.setPath('http://www.9oo91e.qjz9zk', '/bar/'));
     assertEquals(
-        'http://www.google.com/bar?q=t',
-        utils.setPath('http://www.google.com/?q=t', '/bar'));
+        'http://www.9oo91e.qjz9zk/bar?q=t',
+        utils.setPath('http://www.9oo91e.qjz9zk/?q=t', '/bar'));
     assertEquals(
-        'http://www.google.com/bar?q=t',
-        utils.setPath('http://www.google.com/?q=t', 'bar'));
+        'http://www.9oo91e.qjz9zk/bar?q=t',
+        utils.setPath('http://www.9oo91e.qjz9zk/?q=t', 'bar'));
     assertEquals(
-        'http://www.google.com/bar/?q=t',
-        utils.setPath('http://www.google.com/?q=t', 'bar/'));
+        'http://www.9oo91e.qjz9zk/bar/?q=t',
+        utils.setPath('http://www.9oo91e.qjz9zk/?q=t', 'bar/'));
     assertEquals(
-        'http://www.google.com/bar/?q=t',
-        utils.setPath('http://www.google.com/?q=t', '/bar/'));
+        'http://www.9oo91e.qjz9zk/bar/?q=t',
+        utils.setPath('http://www.9oo91e.qjz9zk/?q=t', '/bar/'));
     assertEquals(
-        'http://www.google.com/bar?q=t',
-        utils.setPath('http://www.google.com/foo?q=t', 'bar'));
+        'http://www.9oo91e.qjz9zk/bar?q=t',
+        utils.setPath('http://www.9oo91e.qjz9zk/foo?q=t', 'bar'));
     assertEquals(
-        'http://www.google.com/bar?q=t',
-        utils.setPath('http://www.google.com/foo?q=t', '/bar'));
+        'http://www.9oo91e.qjz9zk/bar?q=t',
+        utils.setPath('http://www.9oo91e.qjz9zk/foo?q=t', '/bar'));
     assertEquals(
-        'https://www.google.com/bar?q=t&q1=y',
-        utils.setPath('https://www.google.com/foo?q=t&q1=y', 'bar'));
+        'https://www.9oo91e.qjz9zk/bar?q=t&q1=y',
+        utils.setPath('https://www.9oo91e.qjz9zk/foo?q=t&q1=y', 'bar'));
     assertEquals(
-        'https://www.google.com:8113/bar?q=t&q1=y',
-        utils.setPath('https://www.google.com:8113?q=t&q1=y', 'bar'));
+        'https://www.9oo91e.qjz9zk:8113/bar?q=t&q1=y',
+        utils.setPath('https://www.9oo91e.qjz9zk:8113?q=t&q1=y', 'bar'));
     assertEquals(
-        'https://www.google.com:8113/foo/bar?q=t&q1=y',
+        'https://www.9oo91e.qjz9zk:8113/foo/bar?q=t&q1=y',
         utils.setPath(
-            'https://www.google.com:8113/foobar?q=t&q1=y', 'foo/bar'));
+            'https://www.9oo91e.qjz9zk:8113/foobar?q=t&q1=y', 'foo/bar'));
     assertEquals(
-        'https://www.google.com:8113/foo/bar?q=t&q1=y',
+        'https://www.9oo91e.qjz9zk:8113/foo/bar?q=t&q1=y',
         utils.setPath(
-            'https://www.google.com:8113/foobar?q=t&q1=y', '/foo/bar'));
+            'https://www.9oo91e.qjz9zk:8113/foobar?q=t&q1=y', '/foo/bar'));
     assertEquals(
-        'https://www.google.com:8113/foo/bar/?q=t&q1=y',
+        'https://www.9oo91e.qjz9zk:8113/foo/bar/?q=t&q1=y',
         utils.setPath(
-            'https://www.google.com:8113/foobar?q=t&q1=y', 'foo/bar/'));
+            'https://www.9oo91e.qjz9zk:8113/foobar?q=t&q1=y', 'foo/bar/'));
     assertEquals(
-        'https://www.google.com:8113/foo/bar/?q=t&q1=y',
+        'https://www.9oo91e.qjz9zk:8113/foo/bar/?q=t&q1=y',
         utils.setPath(
-            'https://www.google.com:8113/foobar?q=t&q1=y', '/foo/bar/'));
+            'https://www.9oo91e.qjz9zk:8113/foobar?q=t&q1=y', '/foo/bar/'));
     assertEquals(
-        'https://www.google.com:8113/?q=t&q1=y',
-        utils.setPath('https://www.google.com:8113/foobar?q=t&q1=y', ''));
+        'https://www.9oo91e.qjz9zk:8113/?q=t&q1=y',
+        utils.setPath('https://www.9oo91e.qjz9zk:8113/foobar?q=t&q1=y', ''));
   },
 });

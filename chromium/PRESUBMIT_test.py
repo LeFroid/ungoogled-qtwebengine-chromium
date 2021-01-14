@@ -1542,10 +1542,10 @@ class GoogleAnswerUrlFormatTest(unittest.TestCase):
     input_api.files = [
       MockFile('somewhere/file.cc',
                ['char* host = '
-                '  "https://support.google.com/chrome/answer/123456";']),
+                '  "https://support.9oo91e.qjz9zk/chrome/answer/123456";']),
       MockFile('somewhere_else/file.cc',
                ['char* host = '
-                '  "https://support.google.com/chrome/a/answer/123456";']),
+                '  "https://support.9oo91e.qjz9zk/chrome/a/answer/123456";']),
     ]
 
     warnings = PRESUBMIT.CheckGoogleSupportAnswerUrlOnUpload(
@@ -1558,7 +1558,7 @@ class GoogleAnswerUrlFormatTest(unittest.TestCase):
     input_api.files = [
       MockFile('somewhere/file.cc',
                ['char* host = '
-                '  "https://support.google.com/chrome/?p=cpn_crash_reports";']),
+                '  "https://support.9oo91e.qjz9zk/chrome/?p=cpn_crash_reports";']),
     ]
 
     warnings = PRESUBMIT.CheckGoogleSupportAnswerUrlOnUpload(
@@ -1572,11 +1572,11 @@ class HardcodedGoogleHostsTest(unittest.TestCase):
     input_api = MockInputApi()
     input_api.files = [
       MockFile('content/file.cc',
-               ['char* host = "https://www.google.com";']),
+               ['char* host = "https://www.9oo91e.qjz9zk";']),
       MockFile('content/file.cc',
-               ['char* host = "https://www.googleapis.com";']),
+               ['char* host = "https://www.9oo91eapis.qjz9zk";']),
       MockFile('content/file.cc',
-               ['char* host = "https://clients1.google.com";']),
+               ['char* host = "https://clients1.9oo91e.qjz9zk";']),
     ]
 
     warnings = PRESUBMIT.CheckHardcodedGoogleHostsInLowerLayers(
@@ -1588,7 +1588,7 @@ class HardcodedGoogleHostsTest(unittest.TestCase):
     input_api = MockInputApi()
     input_api.files = [
       MockFile('content/file.cc',
-               ['char* host = "https://www.aol.com"; // google.com'])
+               ['char* host = "https://www.aol.com"; // 9oo91e.qjz9zk'])
     ]
 
     warnings = PRESUBMIT.CheckHardcodedGoogleHostsInLowerLayers(
@@ -2188,7 +2188,7 @@ class SecurityChangeTest(unittest.TestCase):
       self.email_regexp = '.*'
 
     def owners_rooted_at_file(self, f):
-      return ['apple@chromium.org', 'orange@chromium.org']
+      return ['apple@ch40m1um.qjz9zk', 'orange@ch40m1um.qjz9zk']
 
   def _mockChangeOwnerAndReviewers(self, input_api, owner, reviewers):
     def __MockOwnerAndReviewers(input_api, email_regexp, approval_needed=False):
@@ -2252,7 +2252,7 @@ class SecurityChangeTest(unittest.TestCase):
     ]
     mock_output_api = MockOutputApi()
     self._mockChangeOwnerAndReviewers(
-        mock_input_api, 'owner@chromium.org', ['banana@chromium.org'])
+        mock_input_api, 'owner@ch40m1um.qjz9zk', ['banana@ch40m1um.qjz9zk'])
     result = PRESUBMIT.CheckSecurityChanges(mock_input_api, mock_output_api)
     self.assertEquals(1, len(result))
     self.assertEquals(result[0].type, 'notify')
@@ -2271,7 +2271,7 @@ class SecurityChangeTest(unittest.TestCase):
     ]
     mock_output_api = MockOutputApi()
     self._mockChangeOwnerAndReviewers(
-        mock_input_api, 'owner@chromium.org', ['banana@chromium.org'])
+        mock_input_api, 'owner@ch40m1um.qjz9zk', ['banana@ch40m1um.qjz9zk'])
     result = PRESUBMIT.CheckSecurityChanges(mock_input_api, mock_output_api)
     self.assertEquals(1, len(result))
     self.assertEquals(result[0].type, 'error')
@@ -2289,8 +2289,8 @@ class SecurityChangeTest(unittest.TestCase):
     ]
     mock_output_api = MockOutputApi()
     self._mockChangeOwnerAndReviewers(
-        mock_input_api, 'owner@chromium.org',
-        ['apple@chromium.org', 'banana@chromium.org'])
+        mock_input_api, 'owner@ch40m1um.qjz9zk',
+        ['apple@ch40m1um.qjz9zk', 'banana@ch40m1um.qjz9zk'])
     result = PRESUBMIT.CheckSecurityChanges(mock_input_api, mock_output_api)
     self.assertEquals(0, len(result))
 
@@ -2302,7 +2302,7 @@ class SecurityChangeTest(unittest.TestCase):
     ]
     mock_output_api = MockOutputApi()
     self._mockChangeOwnerAndReviewers(
-        mock_input_api, 'orange@chromium.org', ['pear@chromium.org'])
+        mock_input_api, 'orange@ch40m1um.qjz9zk', ['pear@ch40m1um.qjz9zk'])
     result = PRESUBMIT.CheckSecurityChanges(mock_input_api, mock_output_api)
     self.assertEquals(1, len(result))
 
@@ -2950,7 +2950,7 @@ class StringTest(unittest.TestCase):
                                'files. Remove:')
   ICU_SYNTAX_ERROR_MESSAGE = ('ICU syntax errors were found in the following '
                               'strings (problems or feedback? Contact '
-                              'rainhard@chromium.org):')
+                              'rainhard@ch40m1um.qjz9zk):')
 
   def makeInputApi(self, files):
     input_api = MockInputApi()
@@ -3600,9 +3600,9 @@ class SetNoParentTest(unittest.TestCase):
       MockAffectedFile('goat/OWNERS',
                        [
                          'set noparent',
-                         'jochen@chromium.org',
+                         'jochen@ch40m1um.qjz9zk',
                          'per-file *.json=set noparent',
-                         'per-file *.json=jochen@chromium.org',
+                         'per-file *.json=jochen@ch40m1um.qjz9zk',
                        ])
     ]
     mock_output_api = MockOutputApi()

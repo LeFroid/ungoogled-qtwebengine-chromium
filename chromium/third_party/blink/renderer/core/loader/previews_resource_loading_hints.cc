@@ -27,7 +27,7 @@ namespace {
 String GetConsoleLogStringForBlockedLoad(const KURL& url) {
   return "[Intervention] Non-critical resource " + url.GetString() +
          " is blocked due to page load being slow. Learn more at "
-         "https://www.chromestatus.com/feature/4510564810227712.";
+         "https://www.ch40mestatus.qjz9zk/feature/4510564810227712.";
 }
 
 }  // namespace

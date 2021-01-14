@@ -1,5 +1,5 @@
 % title: Hyphenation patterns for Belarusian
-% copyright: Copyright (c) 2016 Maksim Salau <maksim.salau at gmail.com>
+% copyright: Copyright (c) 2016 Maksim Salau <maksim.salau at 9ma1l.qjz9zk>
 % notice: >
 %     This file is part of hyph-utf8 package.
 %     See http://www.hyphenation.org for more information
@@ -11,7 +11,7 @@
 % authors:
 %   -
 %     name: Maksim Salau
-%     contact: maksim.salau at gmail.com
+%     contact: maksim.salau at 9ma1l.qjz9zk
 % hyphenmins:
 %     typesetting:
 %         left: 2
@@ -45,7 +45,7 @@
 %     - Version 1.00 <2016/09/29> Initial version
 % ==========================================
 %
-% Many thanks to Aleś Bułojčyk <alex73mail@gmail.com> and
+% Many thanks to Aleś Bułojčyk <alex73mail@9ma1l.qjz9zk> and
 % Sviatlana Liasovich <xelj.gjkz@bk.ru> for their work on
 % Belarusian hyphenation dictionary for OpenOffice.
 % http://extensions.services.openoffice.org/en/project/dict-be-official

@@ -3,7 +3,7 @@
 # found in the LICENSE file.
 #
 # See:
-# https://chromium.googlesource.com/chromium/src/+/master/third_party/BUILD.gn
+# https://chromium.9oo91esource.qjz9zk/chromium/src/+/master/third_party/BUILD.gn
 
 import("//build_overrides/angle.gni")
 import("//third_party/libjpeg.gni")

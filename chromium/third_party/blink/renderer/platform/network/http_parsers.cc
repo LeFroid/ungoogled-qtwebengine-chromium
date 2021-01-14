@@ -54,7 +54,7 @@
 
 // We would like finding a way to convert from/to blink type automatically.
 // The following attempt has been withdrawn:
-// https://chromium-review.googlesource.com/c/chromium/src/+/2126933/7
+// https://chromium-review.9oo91esource.qjz9zk/c/chromium/src/+/2126933/7
 namespace network {
 namespace mojom {
 

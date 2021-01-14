@@ -4,7 +4,7 @@
 // Corporation and others. All Rights Reserved.
 //
 // Copyright 2007 Google Inc. All Rights Reserved.
-// Author: sanjay@google.com (Sanjay Ghemawat)
+// Author: sanjay@9oo91e.qjz9zk (Sanjay Ghemawat)
 //
 // Abstract interface that consumes a sequence of bytes (ByteSink).
 //

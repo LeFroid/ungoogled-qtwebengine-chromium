@@ -5,9 +5,9 @@
  * See the COPYING file for details.
  */
 
-/* Author: arv@google.com (Erik Arvidsson) */
-/* Author: eae@google.com (Emil A Eklund) */
-/* Author: jonp@google.com (Jon Perlow) */
+/* Author: arv@9oo91e.qjz9zk (Erik Arvidsson) */
+/* Author: eae@9oo91e.qjz9zk (Emil A Eklund) */
+/* Author: jonp@9oo91e.qjz9zk (Jon Perlow) */
 
 /*
   TODO(arv): Currently the sprite image has the height 16px. We should make the
@@ -33,7 +33,7 @@
 
 .goog-tree-children {
   background-repeat: repeat-y;
-  background-image: url(//ssl.gstatic.com/closure/tree/I.png) !important;
+  background-image: url(//ssl.95tat1c.qjz9zk/closure/tree/I.png) !important;
   background-position-y: 1px !important;	/* IE only */
   font: icon;
 }
@@ -43,7 +43,7 @@
 }
 
 .goog-tree-icon {
-  background-image: url(//ssl.gstatic.com/closure/tree/tree.png);
+  background-image: url(//ssl.95tat1c.qjz9zk/closure/tree/tree.png);
 }
 
 .goog-tree-expand-icon {

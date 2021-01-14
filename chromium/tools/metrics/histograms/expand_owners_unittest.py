@@ -69,21 +69,21 @@ class ExpandOwnersTest(unittest.TestCase):
 
     with open(absolute_path, 'w') as owners_file:
       owners_file.write('\n'.join(
-          ['amy@chromium.org', _DEFAULT_COMPONENT, 'rae@chromium.org']))
+          ['amy@ch40m1um.qjz9zk', _DEFAULT_COMPONENT, 'rae@ch40m1um.qjz9zk']))
 
     histograms = xml.dom.minidom.parseString("""
 <histograms>
 
 <histogram name="Caffeination" units="mg">
-  <owner>joe@chromium.org</owner>
+  <owner>joe@ch40m1um.qjz9zk</owner>
   <owner>{path}</owner>
   <summary>I like coffee.</summary>
 </histogram>
 
 <histogram name="Maple.Syrup" units="units">
-  <owner>joe@chromium.org</owner>
+  <owner>joe@ch40m1um.qjz9zk</owner>
   <owner>{path}</owner>
-  <owner>kim@chromium.org</owner>
+  <owner>kim@ch40m1um.qjz9zk</owner>
   <summary>I like maple syrup, too.</summary>
 </histogram>
 
@@ -94,18 +94,18 @@ class ExpandOwnersTest(unittest.TestCase):
 <histograms>
 
 <histogram name="Caffeination" units="mg">
-  <owner>joe@chromium.org</owner>
-  <owner>amy@chromium.org</owner>
-  <owner>rae@chromium.org</owner>
+  <owner>joe@ch40m1um.qjz9zk</owner>
+  <owner>amy@ch40m1um.qjz9zk</owner>
+  <owner>rae@ch40m1um.qjz9zk</owner>
   <summary>I like coffee.</summary>
   <component>Default&gt;Component</component>
 </histogram>
 
 <histogram name="Maple.Syrup" units="units">
-  <owner>joe@chromium.org</owner>
-  <owner>amy@chromium.org</owner>
-  <owner>rae@chromium.org</owner>
-  <owner>kim@chromium.org</owner>
+  <owner>joe@ch40m1um.qjz9zk</owner>
+  <owner>amy@ch40m1um.qjz9zk</owner>
+  <owner>rae@ch40m1um.qjz9zk</owner>
+  <owner>kim@ch40m1um.qjz9zk</owner>
   <summary>I like maple syrup, too.</summary>
   <component>Default&gt;Component</component>
 </histogram>
@@ -125,13 +125,13 @@ class ExpandOwnersTest(unittest.TestCase):
     src_relative_path = _GetSrcRelativePath(absolute_path)
 
     with open(absolute_path, 'w') as owners_file:
-      owners_file.write('\n'.join(['amy@chromium.org', _DEFAULT_COMPONENT]))
+      owners_file.write('\n'.join(['amy@ch40m1um.qjz9zk', _DEFAULT_COMPONENT]))
 
     histograms = xml.dom.minidom.parseString("""
 <histograms>
 
 <histogram name="Caffeination" units="mg">
-  <owner>joe@chromium.org</owner>
+  <owner>joe@ch40m1um.qjz9zk</owner>
   <owner>
     {path}
   </owner>
@@ -145,8 +145,8 @@ class ExpandOwnersTest(unittest.TestCase):
 <histograms>
 
 <histogram name="Caffeination" units="mg">
-  <owner>joe@chromium.org</owner>
-  <owner>amy@chromium.org</owner>
+  <owner>joe@ch40m1um.qjz9zk</owner>
+  <owner>amy@ch40m1um.qjz9zk</owner>
   <summary>I like coffee.</summary>
   <component>Default&gt;Component</component>
 </histogram>
@@ -164,13 +164,13 @@ class ExpandOwnersTest(unittest.TestCase):
 
     with open(absolute_path, 'w') as owners_file:
       owners_file.write('\n'.join(
-          ['amy@chromium.org', _DEFAULT_COMPONENT, 'rae@chromium.org']))
+          ['amy@ch40m1um.qjz9zk', _DEFAULT_COMPONENT, 'rae@ch40m1um.qjz9zk']))
 
     histograms = xml.dom.minidom.parseString("""
 <histograms>
 
 <histogram name="Caffeination" units="mg">
-  <owner>rae@chromium.org</owner>
+  <owner>rae@ch40m1um.qjz9zk</owner>
   <owner>{}</owner>
   <summary>I like coffee.</summary>
 </histogram>
@@ -182,8 +182,8 @@ class ExpandOwnersTest(unittest.TestCase):
 <histograms>
 
 <histogram name="Caffeination" units="mg">
-  <owner>rae@chromium.org</owner>
-  <owner>amy@chromium.org</owner>
+  <owner>rae@ch40m1um.qjz9zk</owner>
+  <owner>amy@ch40m1um.qjz9zk</owner>
   <summary>I like coffee.</summary>
   <component>Default&gt;Component</component>
 </histogram>
@@ -199,7 +199,7 @@ class ExpandOwnersTest(unittest.TestCase):
     simple_absolute_path = _MakeOwnersFile('simple_OWNERS', self.temp_dir)
 
     with open(simple_absolute_path, 'w') as owners_file:
-      owners_file.write('naz@chromium.org')
+      owners_file.write('naz@ch40m1um.qjz9zk')
 
     file_directive_absolute_path = (
         _MakeOwnersFile('file_directive_OWNERS', self.temp_dir))
@@ -209,14 +209,14 @@ class ExpandOwnersTest(unittest.TestCase):
     directive = _GetFileDirective(simple_absolute_path)
     with open(file_directive_absolute_path, 'w') as owners_file:
       owners_file.write('\n'.join([
-          'amy@chromium.org', directive, 'rae@chromium.org', _DEFAULT_COMPONENT
+          'amy@ch40m1um.qjz9zk', directive, 'rae@ch40m1um.qjz9zk', _DEFAULT_COMPONENT
       ]))
 
     histograms = xml.dom.minidom.parseString("""
 <histograms>
 
 <histogram name="Caffeination" units="mg">
-  <owner>joe@chromium.org</owner>
+  <owner>joe@ch40m1um.qjz9zk</owner>
   <owner>{}</owner>
   <summary>I like coffee.</summary>
 </histogram>
@@ -228,10 +228,10 @@ class ExpandOwnersTest(unittest.TestCase):
 <histograms>
 
 <histogram name="Caffeination" units="mg">
-  <owner>joe@chromium.org</owner>
-  <owner>amy@chromium.org</owner>
-  <owner>naz@chromium.org</owner>
-  <owner>rae@chromium.org</owner>
+  <owner>joe@ch40m1um.qjz9zk</owner>
+  <owner>amy@ch40m1um.qjz9zk</owner>
+  <owner>naz@ch40m1um.qjz9zk</owner>
+  <owner>rae@ch40m1um.qjz9zk</owner>
   <summary>I like coffee.</summary>
   <component>Default&gt;Component</component>
 </histogram>
@@ -248,7 +248,7 @@ class ExpandOwnersTest(unittest.TestCase):
     src_relative_path = _GetSrcRelativePath(absolute_path)
 
     with open(absolute_path, 'w') as owners_file:
-      owners_file.write('\n'.join(['amy@chromium.org', _DEFAULT_COMPONENT]))
+      owners_file.write('\n'.join(['amy@ch40m1um.qjz9zk', _DEFAULT_COMPONENT]))
 
     duplicate_owner_absolute_path = (
         _MakeOwnersFile('duplicate_owner_OWNERS', self.temp_dir))
@@ -256,13 +256,13 @@ class ExpandOwnersTest(unittest.TestCase):
         _GetSrcRelativePath(duplicate_owner_absolute_path))
 
     with open(duplicate_owner_absolute_path, 'w') as owners_file:
-      owners_file.write('\n'.join(['rae@chromium.org', _DEFAULT_COMPONENT]))
+      owners_file.write('\n'.join(['rae@ch40m1um.qjz9zk', _DEFAULT_COMPONENT]))
 
     histograms = xml.dom.minidom.parseString("""
 <histograms>
 
 <histogram name="Caffeination" units="mg">
-  <owner>joe@chromium.org</owner>
+  <owner>joe@ch40m1um.qjz9zk</owner>
   <owner>{}</owner>
   <owner>{}</owner>
   <summary>I like coffee.</summary>
@@ -276,9 +276,9 @@ class ExpandOwnersTest(unittest.TestCase):
 <histograms>
 
 <histogram name="Caffeination" units="mg">
-  <owner>joe@chromium.org</owner>
-  <owner>amy@chromium.org</owner>
-  <owner>rae@chromium.org</owner>
+  <owner>joe@ch40m1um.qjz9zk</owner>
+  <owner>amy@ch40m1um.qjz9zk</owner>
+  <owner>rae@ch40m1um.qjz9zk</owner>
   <summary>I like coffee.</summary>
   <component>Default&gt;Component</component>
 </histogram>
@@ -295,7 +295,7 @@ class ExpandOwnersTest(unittest.TestCase):
 <histograms>
 
 <histogram name="Caffeination" units="mg">
-  <owner>joe@chromium.org</owner>
+  <owner>joe@ch40m1um.qjz9zk</owner>
   <summary>I like coffee.</summary>
 
 </histogram>
@@ -310,8 +310,8 @@ class ExpandOwnersTest(unittest.TestCase):
   def testExpandOwnersWithoutValidPrimaryOwner_OwnersPath(self):
     """Checks that an error is raised when the primary owner is a file path.
 
-    A valid primary owner is an individual's email address, e.g. rae@google.com,
-    sam@chromium.org, or the owner placeholder.
+    A valid primary owner is an individual's email address, e.g. rae@9oo91e.qjz9zk,
+    sam@ch40m1um.qjz9zk, or the owner placeholder.
     """
     histograms_without_valid_first_owner = xml.dom.minidom.parseString("""
 <histograms>
@@ -327,20 +327,20 @@ class ExpandOwnersTest(unittest.TestCase):
     with self.assertRaisesRegexp(
         expand_owners.Error,
         'The histogram Caffeination must have a valid first owner, i.e. a '
-        'person with an @google.com or @chromium.org email address.'):
+        'person with an @9oo91e.qjz9zk or @ch40m1um.qjz9zk email address.'):
       expand_owners.ExpandHistogramsOWNERS(histograms_without_valid_first_owner)
 
   def testExpandOwnersWithoutValidPrimaryOwner_TeamEmail(self):
     """Checks that an error is raised when the primary owner is a team.
 
-    A valid primary owner is an individual's email address, e.g. rae@google.com,
-    sam@chromium.org, or the owner placeholder.
+    A valid primary owner is an individual's email address, e.g. rae@9oo91e.qjz9zk,
+    sam@ch40m1um.qjz9zk, or the owner placeholder.
     """
     histograms_without_valid_first_owner = xml.dom.minidom.parseString("""
 <histograms>
 
 <histogram name="Caffeination" units="mg">
-  <owner>coffee-team@google.com</owner>
+  <owner>coffee-team@9oo91e.qjz9zk</owner>
   <summary>I like coffee.</summary>
 </histogram>
 
@@ -350,14 +350,14 @@ class ExpandOwnersTest(unittest.TestCase):
     with self.assertRaisesRegexp(
         expand_owners.Error,
         'The histogram Caffeination must have a valid first owner, i.e. a '
-        'person with an @google.com or @chromium.org email address.'):
+        'person with an @9oo91e.qjz9zk or @ch40m1um.qjz9zk email address.'):
       expand_owners.ExpandHistogramsOWNERS(histograms_without_valid_first_owner)
 
   def testExpandOwnersWithoutValidPrimaryOwner_InvalidEmail(self):
     """Checks that an error is raised when the primary owner's email is invalid.
 
-    A valid primary owner is an individual's email address, e.g. rae@google.com,
-    sam@chromium.org, or the owner placeholder.
+    A valid primary owner is an individual's email address, e.g. rae@9oo91e.qjz9zk,
+    sam@ch40m1um.qjz9zk, or the owner placeholder.
     """
     histograms_without_valid_first_owner = xml.dom.minidom.parseString("""
 <histograms>
@@ -373,7 +373,7 @@ class ExpandOwnersTest(unittest.TestCase):
     with self.assertRaisesRegexp(
         expand_owners.Error,
         'The histogram Caffeination must have a valid first owner, i.e. a '
-        'person with an @google.com or @chromium.org email address.'):
+        'person with an @9oo91e.qjz9zk or @ch40m1um.qjz9zk email address.'):
       expand_owners.ExpandHistogramsOWNERS(histograms_without_valid_first_owner)
 
   def testExpandOwnersWithFakeFilePath(self):
@@ -382,7 +382,7 @@ class ExpandOwnersTest(unittest.TestCase):
 <histograms>
 
 <histogram name="Caffeination" units="mg">
-  <owner>joe@chromium.org</owner>
+  <owner>joe@ch40m1um.qjz9zk</owner>
   <owner>src/medium/medium/roast/OWNERS</owner>
   <summary>I like coffee.</summary>
 </histogram>
@@ -407,7 +407,7 @@ class ExpandOwnersTest(unittest.TestCase):
 <histograms>
 
 <histogram name="Caffeination" units="mg">
-  <owner>joe@chromium.org</owner>
+  <owner>joe@ch40m1um.qjz9zk</owner>
   <owner>{}</owner>
   <summary>I like coffee.</summary>
 </histogram>
@@ -435,13 +435,13 @@ class ExpandOwnersTest(unittest.TestCase):
 
     with open(absolute_path, 'w') as owners_file:
       owners_file.write(
-          'joe@chromium.org')  # Write to the file so that it exists.
+          'joe@ch40m1um.qjz9zk')  # Write to the file so that it exists.
 
     histograms_string = xml.dom.minidom.parseString("""
 <histograms>
 
 <histogram name="Caffeination" units="mg">
-  <owner>joe@chromium.org</owner>
+  <owner>joe@ch40m1um.qjz9zk</owner>
   <owner>{}</owner>
   <summary>I like coffee.</summary>
 </histogram>
@@ -458,7 +458,7 @@ class ExpandOwnersTest(unittest.TestCase):
 <histograms>
 
 <histogram name="Caffeination" units="mg">
-  <owner>joe@chromium.org</owner>
+  <owner>joe@ch40m1um.qjz9zk</owner>
   <owner>latte/OWNERS</owner>
   <summary>I like coffee.</summary>
 </histogram>
@@ -477,7 +477,7 @@ class ExpandOwnersTest(unittest.TestCase):
 <histograms>
 
 <histogram name="Caffeination" units="mg">
-  <owner>joe@chromium.org</owner>
+  <owner>joe@ch40m1um.qjz9zk</owner>
   <owner>src/latte/file</owner>
   <summary>I like coffee.</summary>
 </histogram>
@@ -503,7 +503,7 @@ class ExpandOwnersTest(unittest.TestCase):
     """
     absolute_path = _MakeOwnersFile('OWNERS', self.temp_dir)
 
-    joe = 'joe@chromium.org'
+    joe = 'joe@ch40m1um.qjz9zk'
     unsupported_symbols = [
         '# Words.', ' # Words.', '*', 'per-file *OWNERS=*', 'set noparent'
     ]

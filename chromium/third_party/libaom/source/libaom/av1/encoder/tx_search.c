@@ -892,7 +892,7 @@ static int get_est_rate_dist(const TileDataEnc *tile_data, BLOCK_SIZE bsize,
       *est_dist = (int64_t)round(md->dist_mean);
       const double est_ld = md->a * sse + md->b;
       // Clamp estimated rate cost by INT_MAX / 2.
-      // TODO(angiebird@google.com): find better solution than clamping.
+      // TODO(angiebird@9oo91e.qjz9zk): find better solution than clamping.
       if (fabs(est_ld) < 1e-2) {
         *est_residue_cost = INT_MAX / 2;
       } else {

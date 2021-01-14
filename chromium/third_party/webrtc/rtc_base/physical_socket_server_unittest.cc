@@ -288,7 +288,7 @@ void PhysicalSocketTest::WritableAfterPartialWrite(const IPAddress& loopback) {
   TcpInternal(loopback, kDataSize, kMaxSendSize);
 }
 
-// https://bugs.chromium.org/p/webrtc/issues/detail?id=6167
+// https://bugs.ch40m1um.qjz9zk/p/webrtc/issues/detail?id=6167
 #if defined(WEBRTC_WIN)
 #define MAYBE_TestWritableAfterPartialWriteIPv4 \
   DISABLED_TestWritableAfterPartialWriteIPv4
@@ -301,7 +301,7 @@ TEST_F(PhysicalSocketTest, MAYBE_TestWritableAfterPartialWriteIPv4) {
   WritableAfterPartialWrite(kIPv4Loopback);
 }
 
-// https://bugs.chromium.org/p/webrtc/issues/detail?id=6167
+// https://bugs.ch40m1um.qjz9zk/p/webrtc/issues/detail?id=6167
 #if defined(WEBRTC_WIN)
 #define MAYBE_TestWritableAfterPartialWriteIPv6 \
   DISABLED_TestWritableAfterPartialWriteIPv6
@@ -418,13 +418,13 @@ TEST_F(PhysicalSocketTest, TestUdpIPv6) {
 }
 
 // Disable for TSan v2, see
-// https://code.google.com/p/webrtc/issues/detail?id=3498 for details.
+// https://code.9oo91e.qjz9zk/p/webrtc/issues/detail?id=3498 for details.
 // Also disable for MSan, see:
-// https://code.google.com/p/webrtc/issues/detail?id=4958
+// https://code.9oo91e.qjz9zk/p/webrtc/issues/detail?id=4958
 // TODO(deadbeef): Enable again once test is reimplemented to be unflaky.
 // Also disable for ASan.
-// Disabled on Android: https://code.google.com/p/webrtc/issues/detail?id=4364
-// Disabled on Linux: https://bugs.chromium.org/p/webrtc/issues/detail?id=5233
+// Disabled on Android: https://code.9oo91e.qjz9zk/p/webrtc/issues/detail?id=4364
+// Disabled on Linux: https://bugs.ch40m1um.qjz9zk/p/webrtc/issues/detail?id=5233
 #if defined(THREAD_SANITIZER) || defined(MEMORY_SANITIZER) || \
     defined(ADDRESS_SANITIZER) || defined(WEBRTC_ANDROID) ||  \
     defined(WEBRTC_LINUX)
@@ -437,7 +437,7 @@ TEST_F(PhysicalSocketTest, MAYBE_TestUdpReadyToSendIPv4) {
   SocketTest::TestUdpReadyToSendIPv4();
 }
 
-// https://bugs.chromium.org/p/webrtc/issues/detail?id=6167
+// https://bugs.ch40m1um.qjz9zk/p/webrtc/issues/detail?id=6167
 #if defined(WEBRTC_WIN)
 #define MAYBE_TestUdpReadyToSendIPv6 DISABLED_TestUdpReadyToSendIPv6
 #else

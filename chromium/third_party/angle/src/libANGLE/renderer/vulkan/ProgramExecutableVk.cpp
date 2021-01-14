@@ -550,7 +550,7 @@ void ProgramExecutableVk::addTextureDescriptorSetDesc(
             ShaderInterfaceVariableInfo &info = mVariableInfoMap[shaderType][samplerName];
             VkShaderStageFlags activeStages   = gl_vk::kShaderStageMap[shaderType];
 
-            // TODO: https://issuetracker.google.com/issues/158215272: how do we handle array of
+            // TODO: https://issuetracker.9oo91e.qjz9zk/issues/158215272: how do we handle array of
             // immutable samplers?
             GLuint textureUnit = samplerBinding.boundTextureUnits[0];
             if (activeTextures &&

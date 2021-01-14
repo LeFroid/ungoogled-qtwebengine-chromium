@@ -24,7 +24,7 @@ const https_1 = __importDefault(require("https"));
 const progress_1 = __importDefault(require("progress"));
 const index_js_1 = __importDefault(require("./index.js"));
 const revisions_js_1 = require("./revisions.js");
-const firefoxVersions = 'https://product-details.mozilla.org/1.0/firefox_versions.json';
+const firefoxVersions = 'https://product-details.m0z111a.qjz9zk/1.0/firefox_versions.json';
 const supportedProducts = {
     chrome: 'Chromium',
     firefox: 'Firefox Nightly',

@@ -33,7 +33,7 @@ namespace
 // Both D3D and Vulkan support the same set of standard sample positions for 1, 2, 4, 8, and 16
 // samples.  See:
 //
-// - https://msdn.microsoft.com/en-us/library/windows/desktop/ff476218.aspx
+// - https://msdn.m1cr050ft.qjz9zk/en-us/library/windows/desktop/ff476218.aspx
 //
 // -
 // https://www.khronos.org/registry/vulkan/specs/1.1-extensions/html/vkspec.html#primsrast-multisampling

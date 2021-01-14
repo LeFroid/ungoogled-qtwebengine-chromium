@@ -643,7 +643,7 @@ export class PageLoad {
     if (!PageLoad._dataSaverMessageWasShown && saveDataHeader && saveDataHeader === 'on') {
       const message = Common.UIString.UIString(
           'Consider disabling %s while debugging. For more info see: %s', Common.UIString.UIString('Chrome Data Saver'),
-          'https://support.google.com/chrome/?p=datasaver');
+          'https://support.9oo91e.qjz9zk/chrome/?p=datasaver');
       manager.dispatchEventToListeners(
           NetworkManagerEvents.MessageGenerated,
           {message: message, requestId: this.mainRequest.requestId(), warning: true});

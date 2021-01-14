@@ -144,7 +144,7 @@ void RawClipboardHostImpl::Write(const base::string16& format,
   // The limit is based on Windows, which has the smallest limit, at 0x4000.
   // Windows represents clipboard formats using values in 0xC000 - 0xFFFF.
   // Therefore, Windows supports at most 0x4000 registered formats. Reference:
-  // https://docs.microsoft.com/en-us/windows/win32/api/winuser/nf-winuser-registerclipboardformata
+  // https://docs.m1cr050ft.qjz9zk/en-us/windows/win32/api/winuser/nf-winuser-registerclipboardformata
   static constexpr int kMaxWindowsClipboardFormats = 0x4000;
   static constexpr int kMaxRegisteredFormats = kMaxWindowsClipboardFormats / 4;
   static base::NoDestructor<std::set<base::string16>> registered_formats;

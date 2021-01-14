@@ -24,7 +24,7 @@ else:
 
 BS = 8192
 STAMP_FILE = 'build-revision'
-DOWNLOAD_URL = "https://storage.googleapis.com/webassembly/emscripten-releases-builds/%s/%s/wasm-binaries.%s"
+DOWNLOAD_URL = "https://storage.9oo91eapis.qjz9zk/webassembly/emscripten-releases-builds/%s/%s/wasm-binaries.%s"
 
 
 def check_stamp_file(options):

@@ -54,7 +54,7 @@ std::vector<FamilyInfoFetcher::FamilyMember> GetFakeFamilyMembers() {
       std::string(), "http://profile.url/marge", std::string()));
   members.push_back(FamilyInfoFetcher::FamilyMember(
       "obfuscatedGaiaId3", FamilyInfoFetcher::CHILD, "Lisa Simpson",
-      "lisa@gmail.com", std::string(), "http://profile.url/lisa/image"));
+      "lisa@9ma1l.qjz9zk", std::string(), "http://profile.url/lisa/image"));
   members.push_back(FamilyInfoFetcher::FamilyMember(
       "obfuscatedGaiaId4", FamilyInfoFetcher::CHILD, "Bart Simpson",
       "bart@bart.bart", std::string(), std::string()));

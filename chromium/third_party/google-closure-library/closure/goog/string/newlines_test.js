@@ -35,7 +35,7 @@ testSuite({
       assertElementsEquals(expected, lines);
     }
 
-    // Test values borrowed from Python's splitlines. http://goo.gl/iwawx
+    // Test values borrowed from Python's splitlines. http://goo.gl.qjz9zk/iwawx
     assertSplitLines(['abc', 'def', '', 'ghi'], 'abc\ndef\n\rghi');
     assertSplitLines(['abc', 'def', '', 'ghi'], 'abc\ndef\n\r\nghi');
     assertSplitLines(['abc', 'def', 'ghi'], 'abc\ndef\r\nghi');

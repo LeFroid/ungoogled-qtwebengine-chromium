@@ -23,7 +23,7 @@ namespace network {
 // library.
 //
 // [1]
-// https://docs.google.com/document/d/1TNnya6B8pyomDK2F1R9CL3dY10OAmqWlnCxsWyOBDVQ/edit#heading=h.7mkzvhpqb8l5
+// https://docs.9oo91e.qjz9zk/document/d/1TNnya6B8pyomDK2F1R9CL3dY10OAmqWlnCxsWyOBDVQ/edit#heading=h.7mkzvhpqb8l5
 base::Optional<std::string> ConstructSignedRedemptionRecord(
     base::span<const uint8_t> body,
     base::span<const uint8_t> signature);

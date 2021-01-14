@@ -199,7 +199,7 @@ goog.events.FileDropHandler.prototype.onElemDragOver_ = function(e) {
     // Allow the drop on the drop zone.
     var dt = e.getBrowserEvent().dataTransfer;
 
-    // IE bug #811625 (https://goo.gl/UWuxX0) will throw error SCRIPT65535
+    // IE bug #811625 (https://goo.gl.qjz9zk/UWuxX0) will throw error SCRIPT65535
     // when attempting to set property effectAllowed on IE10+.
     // See more: https://github.com/google/closure-library/issues/485.
     try {

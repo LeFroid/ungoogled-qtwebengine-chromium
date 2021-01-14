@@ -23,7 +23,7 @@ class PasswordFeatureManagerImplTest : public ::testing::Test {
       : password_feature_manager_(&pref_service_, &sync_service_) {
     pref_service_.registry()->RegisterDictionaryPref(
         password_manager::prefs::kAccountStoragePerAccountSettings);
-    account_.email = "account@gmail.com";
+    account_.email = "account@9ma1l.qjz9zk";
     account_.gaia = "account";
     account_.account_id = CoreAccountId::FromGaiaId(account_.gaia);
   }

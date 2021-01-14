@@ -20,10 +20,10 @@
 namespace media {
 
 // IMFMediaSource implementation
-// (https://docs.microsoft.com/en-us/windows/win32/api/mfidl/nn-mfidl-imfmediasource)
+// (https://docs.m1cr050ft.qjz9zk/en-us/windows/win32/api/mfidl/nn-mfidl-imfmediasource)
 // based on the given |media_resource|.
 // Please also refer to "Writing a Custom Media Source" from
-// https://docs.microsoft.com/en-us/windows/win32/medfound/writing-a-custom-media-source
+// https://docs.m1cr050ft.qjz9zk/en-us/windows/win32/medfound/writing-a-custom-media-source
 //
 // Note: The methods in this class can be called on two different threads -
 //       Chromium thread and MF threadpool thread.

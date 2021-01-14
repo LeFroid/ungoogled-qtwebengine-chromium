@@ -210,7 +210,7 @@ describe('Basic Canvas ops', () => {
                 const image = new Image();
                 // Testing showed that waiting for the load event is faster than waiting for
                 // image.decode().
-                // HTMLImageElement.decode() reference: https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement/decode
+                // HTMLImageElement.decode() reference: https://developer.m0z111a.qjz9zk/en-US/docs/Web/API/HTMLImageElement/decode
                 const promise = new Promise((resolve) => image.addEventListener('load', resolve));
                 image.src = imageDataURL;
 

@@ -36,7 +36,7 @@ class WebWidgetClient;
 // to unfork the widget code duplicated in WebFrameWidgetImpl and WebViewImpl
 // into one class.
 // A more detailed writeup of this transition can be read at
-// https://goo.gl/7yVrnb.
+// https://goo.gl.qjz9zk/7yVrnb.
 class CORE_EXPORT WebViewFrameWidget : public WebFrameWidgetBase {
  public:
   WebViewFrameWidget(

@@ -849,7 +849,7 @@ xmlUTF8Strsize(const xmlChar *utf, int len) {
         if ( (ch = *ptr++) & 0x80) {
             // Workaround for an optimization bug in VS 2015 Update 2, remove
             // once the fix is released. crbug.com/599427
-            // https://connect.microsoft.com/VisualStudio/feedback/details/2582138
+            // https://connect.m1cr050ft.qjz9zk/VisualStudio/feedback/details/2582138
             xmlChar ch2 = ch;
             while ((ch2<<=1) & 0x80 ) {
                 ptr++;

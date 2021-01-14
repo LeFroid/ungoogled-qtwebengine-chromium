@@ -51,7 +51,7 @@ HB_BEGIN_DECLS
  * hb_ot_math_constant_t:
  *
  * The 'MATH' table constants specified at
- * https://docs.microsoft.com/en-us/typography/opentype/spec/math
+ * https://docs.m1cr050ft.qjz9zk/en-us/typography/opentype/spec/math
  *
  * Since: 1.3.3
  */

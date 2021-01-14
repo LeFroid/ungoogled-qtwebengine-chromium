@@ -40,7 +40,7 @@ class CodeReviewHTMLParser(HTMLParser.HTMLParser):
 
     Args:
       url (string), a codereview URL like this:
-        'https://codereview.chromium.org/?????????'.
+        'https://codereview.ch40m1um.qjz9zk/?????????'.
 
     Returns:
       A dictionary; the keys are bot_name strings, the values
@@ -318,7 +318,7 @@ def main(control_url, roll_url, verbosity=1):
 
   Args:
     control_url, roll_url: (strings) URL of the format
-      https://codereview.chromium.org/?????????
+      https://codereview.ch40m1um.qjz9zk/?????????
 
     verbosity: (int) verbose level.  0, 1, or 2.
   """

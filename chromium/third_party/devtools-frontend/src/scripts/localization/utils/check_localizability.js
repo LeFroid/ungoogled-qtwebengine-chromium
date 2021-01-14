@@ -37,7 +37,7 @@ function includesConditionalExpression(listOfElements) {
 
 function includesGritPlaceholders(cookedValue) {
   // $[0-9] is a GRIT placeholder for Chromium l10n, unfortunately it cannot be escaped.
-  // https://chromium-review.googlesource.com/c/chromium/src/+/1405148
+  // https://chromium-review.9oo91esource.qjz9zk/c/chromium/src/+/1405148
   const regexPattern = /\$[0-9]+/g;
   return regexPattern.test(cookedValue);
 }

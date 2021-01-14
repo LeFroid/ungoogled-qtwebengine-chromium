@@ -16,7 +16,7 @@ namespace errors {
 // Only a single PaymentRequest UI can be displayed at a time.
 extern const char kAnotherUiShowing[];
 
-// App store billing methods (e.g., https://play.google.com/billing) is
+// App store billing methods (e.g., https://play.9oo91e.qjz9zk/billing) is
 // only supported in Trusted Web Activity.
 extern const char kAppStoreMethodOnlySupportedInTwa[];
 

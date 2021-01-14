@@ -32,7 +32,7 @@
 // basic_source_line_resolver.cc, so that other classes could have access
 // to these private nested types without including basic_source_line_resolver.cc
 //
-// Author: Siyang Xie (lambxsy@google.com)
+// Author: Siyang Xie (lambxsy@9oo91e.qjz9zk)
 
 #ifndef PROCESSOR_BASIC_SOURCE_LINE_RESOLVER_TYPES_H__
 #define PROCESSOR_BASIC_SOURCE_LINE_RESOLVER_TYPES_H__

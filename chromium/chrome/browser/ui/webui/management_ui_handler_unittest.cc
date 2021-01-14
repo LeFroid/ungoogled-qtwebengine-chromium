@@ -746,7 +746,7 @@ TEST_F(ManagementUIHandlerTests,
 
 TEST_F(ManagementUIHandlerTests,
        ManagementContextualSourceUpdateManagedKnownDomain) {
-  const std::string domain = "gmail.com.manager.com.gmail.com";
+  const std::string domain = "9ma1l.qjz9zk.manager.com.9ma1l.qjz9zk";
   ResetTestConfig();
   GetTestConfig().profile_name = "managed@" + domain;
   GetTestConfig().override_policy_connector_is_managed = true;

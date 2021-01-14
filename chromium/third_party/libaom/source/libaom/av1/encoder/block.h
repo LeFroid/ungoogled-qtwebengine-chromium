@@ -384,7 +384,7 @@ typedef struct {
 
 /*! \brief Holds some parameters related to partitioning schemes in AV1.
  */
-// TODO(chiyotsai@google.com): Consolidate this with SIMPLE_MOTION_DATA_TREE
+// TODO(chiyotsai@9oo91e.qjz9zk): Consolidate this with SIMPLE_MOTION_DATA_TREE
 typedef struct {
 #if !CONFIG_REALTIME_ONLY
   // The following 4 parameters are used for cnn-based partitioning on intra
@@ -540,7 +540,7 @@ typedef struct {
    * of the whole frame. The main usage is that if txb_split_count is zero, then
    * we can signal TX_MODE_LARGEST at frame level.
    */
-  // TODO(chiyotsai@google.com): Move this to a more appropriate location such
+  // TODO(chiyotsai@9oo91e.qjz9zk): Move this to a more appropriate location such
   // as ThreadData.
   unsigned int txb_split_count;
 #if CONFIG_SPEED_STATS
@@ -928,7 +928,7 @@ typedef struct macroblock {
    ****************************************************************************/
   /**@{*/
   //! Information on a whole superblock level.
-  // TODO(chiyotsai@google.com): Refactor this out of macroblock
+  // TODO(chiyotsai@9oo91e.qjz9zk): Refactor this out of macroblock
   SuperBlockEnc sb_enc;
 
   /*! \brief Characteristics of the current superblock.

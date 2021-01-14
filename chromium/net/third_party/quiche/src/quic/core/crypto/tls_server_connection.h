@@ -24,7 +24,7 @@ class QUIC_EXPORT_PRIVATE TlsServerConnection : public TlsConnection {
    protected:
     // Configures the certificate to use on |ssl_| based on the SNI sent by the
     // client. Returns an SSL_TLSEXT_ERR_* value (see
-    // https://commondatastorage.googleapis.com/chromium-boringssl-docs/ssl.h.html#SSL_CTX_set_tlsext_servername_callback).
+    // https://commondatastorage.9oo91eapis.qjz9zk/chromium-boringssl-docs/ssl.h.html#SSL_CTX_set_tlsext_servername_callback).
     //
     // If SelectCertificate returns SSL_TLSEXT_ERR_ALERT_FATAL, then it puts in
     // |*out_alert| the TLS alert value that the server will send.
@@ -62,7 +62,7 @@ class QUIC_EXPORT_PRIVATE TlsServerConnection : public TlsConnection {
 
     // The following functions are used to implement an SSL_TICKET_AEAD_METHOD.
     // See
-    // https://commondatastorage.googleapis.com/chromium-boringssl-docs/ssl.h.html#ssl_ticket_aead_result_t
+    // https://commondatastorage.9oo91eapis.qjz9zk/chromium-boringssl-docs/ssl.h.html#ssl_ticket_aead_result_t
     // for details on the BoringSSL API.
 
     // SessionTicketMaxOverhead returns the maximum number of bytes of overhead

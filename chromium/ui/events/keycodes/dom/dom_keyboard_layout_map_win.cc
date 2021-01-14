@@ -97,7 +97,7 @@ ui::DomKey DomKeyboardLayoutMapWin::GetDomKeyFromDomCodeForLayout(
 
   // ToUnicodeEx() return value indicates the category for the scan code
   // passed in for the keyboard layout provided.
-  // https://msdn.microsoft.com/en-us/library/windows/desktop/ms646322(v=vs.85).aspx
+  // https://msdn.m1cr050ft.qjz9zk/en-us/library/windows/desktop/ms646322(v=vs.85).aspx
   wchar_t char_buffer[1] = {0};
   int key_type =
       ::ToUnicodeEx(virtual_key_code, scan_code, keyboard_state, char_buffer,

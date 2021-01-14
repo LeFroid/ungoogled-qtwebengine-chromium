@@ -63,7 +63,7 @@ namespace dawn_native { namespace vulkan {
 
         // Transitions the texture to be used as `usage`, recording any necessary barrier in
         // `commands`.
-        // TODO(cwallez@chromium.org): coalesce barriers and do them early when possible.
+        // TODO(cwallez@ch40m1um.qjz9zk): coalesce barriers and do them early when possible.
         void TransitionFullUsage(CommandRecordingContext* recordingContext,
                                  wgpu::TextureUsage usage);
 

@@ -540,7 +540,7 @@ void XWindow::Activate() {
   ignore_keyboard_input_ = false;
 
   // wmii says that it supports _NET_ACTIVE_WINDOW but does not.
-  // https://code.google.com/p/wmii/issues/detail?id=266
+  // https://code.9oo91e.qjz9zk/p/wmii/issues/detail?id=266
   static bool wm_supports_active_window =
       GuessWindowManager() != WM_WMII &&
       WmSupportsHint(gfx::GetAtom("_NET_ACTIVE_WINDOW"));

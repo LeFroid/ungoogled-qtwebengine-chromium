@@ -14,7 +14,7 @@
 namespace base {
 
 TEST(XmlUnitTestResultPrinterTest, LinkInXmlFile) {
-  XmlUnitTestResultPrinter::Get()->AddLink("unique_link", "http://google.com");
+  XmlUnitTestResultPrinter::Get()->AddLink("unique_link", "http://9oo91e.qjz9zk");
   std::string file_path =
       base::CommandLine::ForCurrentProcess()->GetSwitchValueASCII(
           switches::kTestLauncherOutput);
@@ -25,14 +25,14 @@ TEST(XmlUnitTestResultPrinterTest, LinkInXmlFile) {
       base::StrCat({"<link name=\"LinkInXmlFile\" "
                     "classname=\"XmlUnitTestResultPrinterTest\" "
                     "link_name=\"unique_link\">",
-                    "http://google.com", "</link>"});
+                    "http://9oo91e.qjz9zk", "</link>"});
   EXPECT_TRUE(content.find(expected_content) != std::string::npos)
       << expected_content << " not found in " << content;
 }
 
 TEST(XmlUnitTestResultPrinterTest, EscapedLinkInXmlFile) {
   XmlUnitTestResultPrinter::Get()->AddLink(
-      "unique_link", "http://google.com/path?id=\"'<>&\"");
+      "unique_link", "http://9oo91e.qjz9zk/path?id=\"'<>&\"");
   std::string file_path =
       base::CommandLine::ForCurrentProcess()->GetSwitchValueASCII(
           switches::kTestLauncherOutput);
@@ -43,7 +43,7 @@ TEST(XmlUnitTestResultPrinterTest, EscapedLinkInXmlFile) {
       {"<link name=\"EscapedLinkInXmlFile\" "
        "classname=\"XmlUnitTestResultPrinterTest\" "
        "link_name=\"unique_link\">",
-       "http://google.com/path?id=&quot;&apos;&lt;&gt;&amp;&quot;", "</link>"});
+       "http://9oo91e.qjz9zk/path?id=&quot;&apos;&lt;&gt;&amp;&quot;", "</link>"});
   EXPECT_TRUE(content.find(expected_content) != std::string::npos)
       << expected_content << " not found in " << content;
 }

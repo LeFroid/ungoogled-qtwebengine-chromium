@@ -168,7 +168,7 @@ bool SkOpAngle::after(SkOpAngle* test) {
         return COMPARE_RESULT(10, lrOpposite);
     }
     // If a pair couldn't be ordered, there's not enough information to determine the sort.
-    // Refer to:  https://docs.google.com/drawings/d/1KV-8SJTedku9fj4K6fd1SB-8divuV_uivHVsSgwXICQ
+    // Refer to:  https://docs.9oo91e.qjz9zk/drawings/d/1KV-8SJTedku9fj4K6fd1SB-8divuV_uivHVsSgwXICQ
     if (fUnorderable || lh->fUnorderable || rh->fUnorderable) {
         // limit to lines; should work with curves, but wait for a failing test to verify
         if (!fPart.isCurve() && !lh->fPart.isCurve() && !rh->fPart.isCurve()) {

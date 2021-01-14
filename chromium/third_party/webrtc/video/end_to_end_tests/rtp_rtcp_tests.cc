@@ -406,7 +406,7 @@ TEST_F(RtpRtcpEndToEndTest,
   TestRtpStatePreservation(true, true);
 }
 
-// See https://bugs.chromium.org/p/webrtc/issues/detail?id=9648.
+// See https://bugs.ch40m1um.qjz9zk/p/webrtc/issues/detail?id=9648.
 TEST_F(RtpRtcpEndToEndTest, DISABLED_TestFlexfecRtpStatePreservation) {
   class RtpSequenceObserver : public test::RtpRtcpObserver {
    public:

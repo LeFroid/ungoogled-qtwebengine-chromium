@@ -390,7 +390,7 @@
     "message": "Ŝúĝǵêśt̂éd̂ T́ôḱêń"
   },
   "lighthouse-core/audits/autocomplete.js | description": {
-    "message": "`autocomplete` ĥél̂ṕŝ úŝér̂ś ŝúb̂ḿît́ f̂ór̂ḿŝ q́ûíĉḱêŕ. T̂ó r̂éd̂úĉé ûśêŕ êf́f̂ór̂t́, ĉón̂śîd́êŕ êńâb́l̂ín̂ǵ b̂ý ŝét̂t́îńĝ t́ĥé `autocomplete` ât́t̂ŕîb́ût́ê t́ô á v̂ál̂íd̂ v́âĺûé. [L̂éâŕn̂ ḿôŕê](https://developers.google.com/web/fundamentals/design-and-ux/input/forms#use_metadata_to_enable_auto-complete)"
+    "message": "`autocomplete` ĥél̂ṕŝ úŝér̂ś ŝúb̂ḿît́ f̂ór̂ḿŝ q́ûíĉḱêŕ. T̂ó r̂éd̂úĉé ûśêŕ êf́f̂ór̂t́, ĉón̂śîd́êŕ êńâb́l̂ín̂ǵ b̂ý ŝét̂t́îńĝ t́ĥé `autocomplete` ât́t̂ŕîb́ût́ê t́ô á v̂ál̂íd̂ v́âĺûé. [L̂éâŕn̂ ḿôŕê](https://developers.9oo91e.qjz9zk/web/fundamentals/design-and-ux/input/forms#use_metadata_to_enable_auto-complete)"
   },
   "lighthouse-core/audits/autocomplete.js | failureTitle": {
     "message": "`<input>` êĺêḿêńt̂ś d̂ó n̂ót̂ h́âv́ê ćôŕr̂éĉt́ `autocomplete` ât́t̂ŕîb́ût́êś"
@@ -621,7 +621,7 @@
     "message": "V̂ál̂úê"
   },
   "lighthouse-core/audits/dobetterweb/dom-size.js | description": {
-    "message": "Â ĺâŕĝé D̂ÓM̂ ẃîĺl̂ ín̂ćr̂éâśê ḿêḿôŕŷ úŝáĝé, ĉáûśê ĺôńĝér̂ [śt̂ýl̂é ĉál̂ćûĺât́îón̂ś](https://developers.google.com/web/fundamentals/performance/rendering/reduce-the-scope-and-complexity-of-style-calculations), âńd̂ ṕr̂ód̂úĉé ĉóŝt́l̂ý [l̂áŷóût́ r̂éf̂ĺôẃŝ](https://developers.google.com/speed/articles/reflow). [Ĺêár̂ń m̂ór̂é](https://web.dev/dom-size/)."
+    "message": "Â ĺâŕĝé D̂ÓM̂ ẃîĺl̂ ín̂ćr̂éâśê ḿêḿôŕŷ úŝáĝé, ĉáûśê ĺôńĝér̂ [śt̂ýl̂é ĉál̂ćûĺât́îón̂ś](https://developers.9oo91e.qjz9zk/web/fundamentals/performance/rendering/reduce-the-scope-and-complexity-of-style-calculations), âńd̂ ṕr̂ód̂úĉé ĉóŝt́l̂ý [l̂áŷóût́ r̂éf̂ĺôẃŝ](https://developers.9oo91e.qjz9zk/speed/articles/reflow). [Ĺêár̂ń m̂ór̂é](https://web.dev/dom-size/)."
   },
   "lighthouse-core/audits/dobetterweb/dom-size.js | displayValue": {
     "message": "{itemCount, plural,\n    =1 {1 êĺêḿêńt̂}\n    other {# él̂ém̂én̂t́ŝ}\n    }"
@@ -834,7 +834,7 @@
     "message": "R̂éq̂úêśt̂ Ŕêśôĺût́îón̂"
   },
   "lighthouse-core/audits/is-on-https.js | description": {
-    "message": "Âĺl̂ śît́êś ŝh́ôúl̂d́ b̂é p̂ŕôt́êćt̂éd̂ ẃît́ĥ H́T̂T́P̂Ś, êv́êń ôńêś t̂h́ât́ d̂ón̂'t́ ĥán̂d́l̂é ŝén̂śît́îv́ê d́ât́â. T́ĥíŝ ín̂ćl̂úd̂éŝ áv̂óîd́îńĝ [ḿîx́êd́ ĉón̂t́êńt̂](https://developers.google.com/web/fundamentals/security/prevent-mixed-content/what-is-mixed-content), ẃĥér̂é ŝóm̂é r̂éŝóûŕĉéŝ ár̂é l̂óâd́êd́ ôv́êŕ ĤT́T̂Ṕ d̂éŝṕît́ê t́ĥé îńît́îál̂ ŕêq́ûéŝt́ b̂éîńĝ śêŕv̂éd̂ óv̂ér̂ H́T̂T́P̂Ś. ĤT́T̂ṔŜ ṕr̂év̂én̂t́ŝ ín̂t́r̂úd̂ér̂ś f̂ŕôḿ t̂ám̂ṕêŕîńĝ ẃît́ĥ ór̂ ṕâśŝív̂él̂ý l̂íŝt́êńîńĝ ín̂ ón̂ t́ĥé ĉóm̂ḿûńîćât́îón̂ś b̂ét̂ẃêén̂ ýôúr̂ áp̂ṕ âńd̂ ýôúr̂ úŝér̂ś, âńd̂ íŝ á p̂ŕêŕêq́ûíŝít̂é f̂ór̂ H́T̂T́P̂/2 án̂d́ m̂án̂ý n̂éŵ ẃêb́ p̂ĺât́f̂ór̂ḿ ÂṔÎś. [L̂éâŕn̂ ḿôŕê](https://web.dev/is-on-https/)."
+    "message": "Âĺl̂ śît́êś ŝh́ôúl̂d́ b̂é p̂ŕôt́êćt̂éd̂ ẃît́ĥ H́T̂T́P̂Ś, êv́êń ôńêś t̂h́ât́ d̂ón̂'t́ ĥán̂d́l̂é ŝén̂śît́îv́ê d́ât́â. T́ĥíŝ ín̂ćl̂úd̂éŝ áv̂óîd́îńĝ [ḿîx́êd́ ĉón̂t́êńt̂](https://developers.9oo91e.qjz9zk/web/fundamentals/security/prevent-mixed-content/what-is-mixed-content), ẃĥér̂é ŝóm̂é r̂éŝóûŕĉéŝ ár̂é l̂óâd́êd́ ôv́êŕ ĤT́T̂Ṕ d̂éŝṕît́ê t́ĥé îńît́îál̂ ŕêq́ûéŝt́ b̂éîńĝ śêŕv̂éd̂ óv̂ér̂ H́T̂T́P̂Ś. ĤT́T̂ṔŜ ṕr̂év̂én̂t́ŝ ín̂t́r̂úd̂ér̂ś f̂ŕôḿ t̂ám̂ṕêŕîńĝ ẃît́ĥ ór̂ ṕâśŝív̂él̂ý l̂íŝt́êńîńĝ ín̂ ón̂ t́ĥé ĉóm̂ḿûńîćât́îón̂ś b̂ét̂ẃêén̂ ýôúr̂ áp̂ṕ âńd̂ ýôúr̂ úŝér̂ś, âńd̂ íŝ á p̂ŕêŕêq́ûíŝít̂é f̂ór̂ H́T̂T́P̂/2 án̂d́ m̂án̂ý n̂éŵ ẃêb́ p̂ĺât́f̂ór̂ḿ ÂṔÎś. [L̂éâŕn̂ ḿôŕê](https://web.dev/is-on-https/)."
   },
   "lighthouse-core/audits/is-on-https.js | displayValue": {
     "message": "{itemCount, plural,\n    =1 {1 îńŝéĉúr̂é r̂éq̂úêśt̂ f́ôún̂d́}\n    other {# îńŝéĉúr̂é r̂éq̂úêśt̂ś f̂óûńd̂}\n    }"
@@ -855,7 +855,7 @@
     "message": "L̂íb̂ŕâŕŷ"
   },
   "lighthouse-core/audits/large-javascript-libraries.js | description": {
-    "message": "L̂ár̂ǵê J́âv́âŚĉŕîṕt̂ ĺîb́r̂ár̂íêś ĉán̂ ĺêád̂ t́ô ṕôór̂ ṕêŕf̂ór̂ḿâńĉé. P̂ŕêf́êŕ ŝḿâĺl̂ér̂, f́ûńĉt́îón̂ál̂ĺŷ éq̂úîv́âĺêńt̂ ĺîb́r̂ár̂íêś t̂ó r̂éd̂úĉé ŷóûŕ b̂ún̂d́l̂é ŝíẑé. [L̂éâŕn̂ ḿôŕê](https://developers.google.com/web/fundamentals/performance/webpack/decrease-frontend-size#optimize_dependencies)."
+    "message": "L̂ár̂ǵê J́âv́âŚĉŕîṕt̂ ĺîb́r̂ár̂íêś ĉán̂ ĺêád̂ t́ô ṕôór̂ ṕêŕf̂ór̂ḿâńĉé. P̂ŕêf́êŕ ŝḿâĺl̂ér̂, f́ûńĉt́îón̂ál̂ĺŷ éq̂úîv́âĺêńt̂ ĺîb́r̂ár̂íêś t̂ó r̂éd̂úĉé ŷóûŕ b̂ún̂d́l̂é ŝíẑé. [L̂éâŕn̂ ḿôŕê](https://developers.9oo91e.qjz9zk/web/fundamentals/performance/webpack/decrease-frontend-size#optimize_dependencies)."
   },
   "lighthouse-core/audits/large-javascript-libraries.js | displayValue": {
     "message": "{libraryCount, plural,\n    =1 {1 l̂ár̂ǵê ĺîb́r̂ár̂ý f̂óûńd̂}\n    other {# ĺâŕĝé l̂íb̂ŕâŕîéŝ f́ôún̂d́}\n    }"
@@ -990,7 +990,7 @@
     "message": "Ŝér̂v́êŕ B̂áĉḱêńd̂ Ĺât́êńĉíêś"
   },
   "lighthouse-core/audits/no-unload-listeners.js | description": {
-    "message": "T̂h́ê `unload` év̂én̂t́ d̂óêś n̂ót̂ f́îŕê ŕêĺîáb̂ĺŷ án̂d́ l̂íŝt́êńîńĝ f́ôŕ ît́ ĉán̂ ṕr̂év̂én̂t́ b̂ŕôẃŝér̂ óp̂t́îḿîźât́îón̂ś l̂ík̂é t̂h́ê B́âćk̂-F́ôŕŵár̂d́ Ĉáĉh́ê. Ćôńŝíd̂ér̂ úŝín̂ǵ t̂h́ê `pagehide` ór̂ `visibilitychange` év̂én̂t́ŝ ín̂śt̂éâd́. [L̂éâŕn̂ Ḿôŕê](https://developers.google.com/web/updates/2018/07/page-lifecycle-api#the-unload-event)"
+    "message": "T̂h́ê `unload` év̂én̂t́ d̂óêś n̂ót̂ f́îŕê ŕêĺîáb̂ĺŷ án̂d́ l̂íŝt́êńîńĝ f́ôŕ ît́ ĉán̂ ṕr̂év̂én̂t́ b̂ŕôẃŝér̂ óp̂t́îḿîźât́îón̂ś l̂ík̂é t̂h́ê B́âćk̂-F́ôŕŵár̂d́ Ĉáĉh́ê. Ćôńŝíd̂ér̂ úŝín̂ǵ t̂h́ê `pagehide` ór̂ `visibilitychange` év̂én̂t́ŝ ín̂śt̂éâd́. [L̂éâŕn̂ Ḿôŕê](https://developers.9oo91e.qjz9zk/web/updates/2018/07/page-lifecycle-api#the-unload-event)"
   },
   "lighthouse-core/audits/no-unload-listeners.js | failureTitle": {
     "message": "R̂éĝíŝt́êŕŝ án̂ `unload` ĺîśt̂én̂ér̂"
@@ -1041,7 +1041,7 @@
     "message": "L̂íĝh́t̂h́ôúŝé ĉóûĺd̂ń't̂ ŕêád̂ t́ĥé `start_url` f̂ŕôḿ t̂h́ê ḿâńîf́êśt̂. Áŝ á r̂éŝúl̂t́, t̂h́ê `start_url` ẃâś âśŝúm̂éd̂ t́ô b́ê t́ĥé d̂óĉúm̂én̂t́'ŝ ÚR̂Ĺ. Êŕr̂ór̂ ḿêśŝáĝé: '{manifestWarning}'."
   },
   "lighthouse-core/audits/performance-budget.js | description": {
-    "message": "K̂éêṕ t̂h́ê q́ûán̂t́ît́ŷ án̂d́ ŝíẑé ôf́ n̂ét̂ẃôŕk̂ ŕêq́ûéŝt́ŝ ún̂d́êŕ t̂h́ê t́âŕĝét̂ś ŝét̂ b́ŷ t́ĥé p̂ŕôv́îd́êd́ p̂ér̂f́ôŕm̂án̂ćê b́ûd́ĝét̂. [Ĺêár̂ń m̂ór̂é](https://developers.google.com/web/tools/lighthouse/audits/budgets)."
+    "message": "K̂éêṕ t̂h́ê q́ûán̂t́ît́ŷ án̂d́ ŝíẑé ôf́ n̂ét̂ẃôŕk̂ ŕêq́ûéŝt́ŝ ún̂d́êŕ t̂h́ê t́âŕĝét̂ś ŝét̂ b́ŷ t́ĥé p̂ŕôv́îd́êd́ p̂ér̂f́ôŕm̂án̂ćê b́ûd́ĝét̂. [Ĺêár̂ń m̂ór̂é](https://developers.9oo91e.qjz9zk/web/tools/lighthouse/audits/budgets)."
   },
   "lighthouse-core/audits/performance-budget.js | requestCountOverBudget": {
     "message": "{count, plural,\n    =1 {1 r̂éq̂úêśt̂}\n    other {# ŕêq́ûéŝt́ŝ}\n   }"
@@ -1113,7 +1113,7 @@
     "message": "Ûńĉŕâẃl̂áb̂ĺê Ĺîńk̂"
   },
   "lighthouse-core/audits/seo/crawlable-anchors.js | description": {
-    "message": "Ŝéâŕĉh́ êńĝín̂éŝ ḿâý ûśê `href` át̂t́r̂íb̂út̂éŝ ón̂ ĺîńk̂ś t̂ó ĉŕâẃl̂ ẃêb́ŝít̂éŝ. Én̂śûŕê t́ĥát̂ t́ĥé `href` ât́t̂ŕîb́ût́ê óf̂ án̂ćĥór̂ él̂ém̂én̂t́ŝ ĺîńk̂ś t̂ó âń âṕp̂ŕôṕr̂íât́ê d́êśt̂ín̂át̂íôń, ŝó m̂ór̂é p̂áĝéŝ óf̂ t́ĥé ŝít̂é ĉán̂ b́ê d́îśĉóv̂ér̂éd̂. [Ĺêár̂ń M̂ór̂é](https://support.google.com/webmasters/answer/9112205)"
+    "message": "Ŝéâŕĉh́ êńĝín̂éŝ ḿâý ûśê `href` át̂t́r̂íb̂út̂éŝ ón̂ ĺîńk̂ś t̂ó ĉŕâẃl̂ ẃêb́ŝít̂éŝ. Én̂śûŕê t́ĥát̂ t́ĥé `href` ât́t̂ŕîb́ût́ê óf̂ án̂ćĥór̂ él̂ém̂én̂t́ŝ ĺîńk̂ś t̂ó âń âṕp̂ŕôṕr̂íât́ê d́êśt̂ín̂át̂íôń, ŝó m̂ór̂é p̂áĝéŝ óf̂ t́ĥé ŝít̂é ĉán̂ b́ê d́îśĉóv̂ér̂éd̂. [Ĺêár̂ń M̂ór̂é](https://support.9oo91e.qjz9zk/webmasters/answer/9112205)"
   },
   "lighthouse-core/audits/seo/crawlable-anchors.js | failureTitle": {
     "message": "L̂ín̂ḱŝ ár̂é n̂ót̂ ćr̂áŵĺâb́l̂é"
@@ -1197,7 +1197,7 @@
     "message": "L̂ín̂ḱŝ h́âv́ê d́êśĉŕîṕt̂ív̂é t̂éx̂t́"
   },
   "lighthouse-core/audits/seo/manual/structured-data.js | description": {
-    "message": "R̂ún̂ t́ĥé [Ŝt́r̂úĉt́ûŕêd́ D̂át̂á T̂éŝt́îńĝ T́ôól̂](https://search.google.com/structured-data/testing-tool/) án̂d́ t̂h́ê [Śt̂ŕûćt̂úr̂éd̂ D́ât́â Ĺîńt̂ér̂](http://linter.structured-data.org/) t́ô v́âĺîd́ât́ê śt̂ŕûćt̂úr̂éd̂ d́ât́â. [Ĺêár̂ń m̂ór̂é](https://web.dev/structured-data/)."
+    "message": "R̂ún̂ t́ĥé [Ŝt́r̂úĉt́ûŕêd́ D̂át̂á T̂éŝt́îńĝ T́ôól̂](https://search.9oo91e.qjz9zk/structured-data/testing-tool/) án̂d́ t̂h́ê [Śt̂ŕûćt̂úr̂éd̂ D́ât́â Ĺîńt̂ér̂](http://linter.structured-data.org/) t́ô v́âĺîd́ât́ê śt̂ŕûćt̂úr̂éd̂ d́ât́â. [Ĺêár̂ń m̂ór̂é](https://web.dev/structured-data/)."
   },
   "lighthouse-core/audits/seo/manual/structured-data.js | title": {
     "message": "Ŝt́r̂úĉt́ûŕêd́ d̂át̂á îś v̂ál̂íd̂"
@@ -1320,7 +1320,7 @@
     "message": "T̂h́îŕd̂-Ṕâŕt̂ý"
   },
   "lighthouse-core/audits/third-party-summary.js | description": {
-    "message": "T̂h́îŕd̂-ṕâŕt̂ý ĉód̂é ĉán̂ śîǵn̂íf̂íĉán̂t́l̂ý îḿp̂áĉt́ l̂óâd́ p̂ér̂f́ôŕm̂án̂ćê. Ĺîḿît́ t̂h́ê ńûḿb̂ér̂ óf̂ ŕêd́ûńd̂án̂t́ t̂h́îŕd̂-ṕâŕt̂ý p̂ŕôv́îd́êŕŝ án̂d́ t̂ŕŷ t́ô ĺôád̂ t́ĥír̂d́-p̂ár̂t́ŷ ćôd́ê áf̂t́êŕ ŷóûŕ p̂áĝé ĥáŝ ṕr̂ím̂ár̂íl̂ý f̂ín̂íŝh́êd́ l̂óâd́îńĝ. [Ĺêár̂ń m̂ór̂é](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/loading-third-party-javascript/)."
+    "message": "T̂h́îŕd̂-ṕâŕt̂ý ĉód̂é ĉán̂ śîǵn̂íf̂íĉán̂t́l̂ý îḿp̂áĉt́ l̂óâd́ p̂ér̂f́ôŕm̂án̂ćê. Ĺîḿît́ t̂h́ê ńûḿb̂ér̂ óf̂ ŕêd́ûńd̂án̂t́ t̂h́îŕd̂-ṕâŕt̂ý p̂ŕôv́îd́êŕŝ án̂d́ t̂ŕŷ t́ô ĺôád̂ t́ĥír̂d́-p̂ár̂t́ŷ ćôd́ê áf̂t́êŕ ŷóûŕ p̂áĝé ĥáŝ ṕr̂ím̂ár̂íl̂ý f̂ín̂íŝh́êd́ l̂óâd́îńĝ. [Ĺêár̂ń m̂ór̂é](https://developers.9oo91e.qjz9zk/web/fundamentals/performance/optimizing-content-efficiency/loading-third-party-javascript/)."
   },
   "lighthouse-core/audits/third-party-summary.js | displayValue": {
     "message": "T̂h́îŕd̂-ṕâŕt̂ý ĉód̂é b̂ĺôćk̂éd̂ t́ĥé m̂áîń t̂h́r̂éâd́ f̂ór̂ {timeInMs, number, milliseconds} ḿŝ"
@@ -1341,7 +1341,7 @@
     "message": "M̂ét̂ŕîć"
   },
   "lighthouse-core/audits/timing-budget.js | description": {
-    "message": "Ŝét̂ á t̂ím̂ín̂ǵ b̂úd̂ǵêt́ t̂ó ĥél̂ṕ ŷóû ḱêép̂ án̂ éŷé ôń t̂h́ê ṕêŕf̂ór̂ḿâńĉé ôf́ ŷóûŕ ŝít̂é. P̂ér̂f́ôŕm̂án̂t́ ŝít̂éŝ ĺôád̂ f́âśt̂ án̂d́ r̂éŝṕôńd̂ t́ô úŝér̂ ín̂ṕût́ êv́êńt̂ś q̂úîćk̂ĺŷ. [Ĺêár̂ń m̂ór̂é](https://developers.google.com/web/tools/lighthouse/audits/budgets)."
+    "message": "Ŝét̂ á t̂ím̂ín̂ǵ b̂úd̂ǵêt́ t̂ó ĥél̂ṕ ŷóû ḱêép̂ án̂ éŷé ôń t̂h́ê ṕêŕf̂ór̂ḿâńĉé ôf́ ŷóûŕ ŝít̂é. P̂ér̂f́ôŕm̂án̂t́ ŝít̂éŝ ĺôád̂ f́âśt̂ án̂d́ r̂éŝṕôńd̂ t́ô úŝér̂ ín̂ṕût́ êv́êńt̂ś q̂úîćk̂ĺŷ. [Ĺêár̂ń m̂ór̂é](https://developers.9oo91e.qjz9zk/web/tools/lighthouse/audits/budgets)."
   },
   "lighthouse-core/audits/timing-budget.js | title": {
     "message": "T̂ím̂ín̂ǵ b̂úd̂ǵêt́"
@@ -1395,7 +1395,7 @@
     "message": "M̂áp̂ ÚR̂Ĺ"
   },
   "lighthouse-core/audits/valid-source-maps.js | description": {
-    "message": "Ŝóûŕĉé m̂áp̂ś t̂ŕâńŝĺât́ê ḿîńîf́îéd̂ ćôd́ê t́ô t́ĥé ôŕîǵîńâĺ ŝóûŕĉé ĉód̂é. T̂h́îś ĥél̂ṕŝ d́êv́êĺôṕêŕŝ d́êb́ûǵ îń p̂ŕôd́ûćt̂íôń. Îń âd́d̂ít̂íôń, L̂íĝh́t̂h́ôúŝé îś âb́l̂é t̂ó p̂ŕôv́îd́ê f́ûŕt̂h́êŕ îńŝíĝh́t̂ś. Ĉón̂śîd́êŕ d̂ép̂ĺôýîńĝ śôúr̂ćê ḿâṕŝ t́ô t́âḱê ád̂v́âńt̂áĝé ôf́ t̂h́êśê b́êńêf́ît́ŝ. [Ĺêár̂ń m̂ór̂é](https://developers.google.com/web/tools/chrome-devtools/javascript/source-maps)."
+    "message": "Ŝóûŕĉé m̂áp̂ś t̂ŕâńŝĺât́ê ḿîńîf́îéd̂ ćôd́ê t́ô t́ĥé ôŕîǵîńâĺ ŝóûŕĉé ĉód̂é. T̂h́îś ĥél̂ṕŝ d́êv́êĺôṕêŕŝ d́êb́ûǵ îń p̂ŕôd́ûćt̂íôń. Îń âd́d̂ít̂íôń, L̂íĝh́t̂h́ôúŝé îś âb́l̂é t̂ó p̂ŕôv́îd́ê f́ûŕt̂h́êŕ îńŝíĝh́t̂ś. Ĉón̂śîd́êŕ d̂ép̂ĺôýîńĝ śôúr̂ćê ḿâṕŝ t́ô t́âḱê ád̂v́âńt̂áĝé ôf́ t̂h́êśê b́êńêf́ît́ŝ. [Ĺêár̂ń m̂ór̂é](https://developers.9oo91e.qjz9zk/web/tools/chrome-devtools/javascript/source-maps)."
   },
   "lighthouse-core/audits/valid-source-maps.js | failureTitle": {
     "message": "M̂íŝśîńĝ śôúr̂ćê ḿâṕŝ f́ôŕ l̂ár̂ǵê f́îŕŝt́-p̂ár̂t́ŷ J́âv́âŚĉŕîṕt̂"
@@ -1464,10 +1464,10 @@
     "message": "B̂éŝt́ p̂ŕâćt̂íĉéŝ"
   },
   "lighthouse-core/config/default-config.js | a11yCategoryDescription": {
-    "message": "T̂h́êśê ćĥéĉḱŝ h́îǵĥĺîǵĥt́ ôṕp̂ór̂t́ûńît́îéŝ t́ô [ím̂ṕr̂óv̂é t̂h́ê áĉćêśŝíb̂íl̂ít̂ý ôf́ ŷóûŕ ŵéb̂ áp̂ṕ](https://developers.google.com/web/fundamentals/accessibility). Ôńl̂ý â śûb́ŝét̂ óf̂ áĉćêśŝíb̂íl̂ít̂ý îśŝúêś ĉán̂ b́ê áût́ôḿât́îćâĺl̂ý d̂ét̂éĉt́êd́ ŝó m̂án̂úâĺ t̂éŝt́îńĝ íŝ ál̂śô én̂ćôúr̂áĝéd̂."
+    "message": "T̂h́êśê ćĥéĉḱŝ h́îǵĥĺîǵĥt́ ôṕp̂ór̂t́ûńît́îéŝ t́ô [ím̂ṕr̂óv̂é t̂h́ê áĉćêśŝíb̂íl̂ít̂ý ôf́ ŷóûŕ ŵéb̂ áp̂ṕ](https://developers.9oo91e.qjz9zk/web/fundamentals/accessibility). Ôńl̂ý â śûb́ŝét̂ óf̂ áĉćêśŝíb̂íl̂ít̂ý îśŝúêś ĉán̂ b́ê áût́ôḿât́îćâĺl̂ý d̂ét̂éĉt́êd́ ŝó m̂án̂úâĺ t̂éŝt́îńĝ íŝ ál̂śô én̂ćôúr̂áĝéd̂."
   },
   "lighthouse-core/config/default-config.js | a11yCategoryManualDescription": {
-    "message": "T̂h́êśê ít̂ém̂ś âd́d̂ŕêśŝ ár̂éâś ŵh́îćĥ án̂ áût́ôḿât́êd́ t̂éŝt́îńĝ t́ôól̂ ćâńn̂ót̂ ćôv́êŕ. L̂éâŕn̂ ḿôŕê ín̂ óûŕ ĝúîd́ê ón̂ [ćôńd̂úĉt́îńĝ án̂ áĉćêśŝíb̂íl̂ít̂ý r̂év̂íêẃ](https://developers.google.com/web/fundamentals/accessibility/how-to-review)."
+    "message": "T̂h́êśê ít̂ém̂ś âd́d̂ŕêśŝ ár̂éâś ŵh́îćĥ án̂ áût́ôḿât́êd́ t̂éŝt́îńĝ t́ôól̂ ćâńn̂ót̂ ćôv́êŕ. L̂éâŕn̂ ḿôŕê ín̂ óûŕ ĝúîd́ê ón̂ [ćôńd̂úĉt́îńĝ án̂ áĉćêśŝíb̂íl̂ít̂ý r̂év̂íêẃ](https://developers.9oo91e.qjz9zk/web/fundamentals/accessibility/how-to-review)."
   },
   "lighthouse-core/config/default-config.js | a11yCategoryTitle": {
     "message": "Âćĉéŝśîb́îĺît́ŷ"
@@ -1554,10 +1554,10 @@
     "message": "P̂ér̂f́ôŕm̂án̂ćê"
   },
   "lighthouse-core/config/default-config.js | pwaCategoryDescription": {
-    "message": "T̂h́êśê ćĥéĉḱŝ v́âĺîd́ât́ê t́ĥé âśp̂éĉt́ŝ óf̂ á P̂ŕôǵr̂éŝśîv́ê Ẃêb́ Âṕp̂. [Ĺêár̂ń m̂ór̂é](https://developers.google.com/web/progressive-web-apps/checklist)."
+    "message": "T̂h́êśê ćĥéĉḱŝ v́âĺîd́ât́ê t́ĥé âśp̂éĉt́ŝ óf̂ á P̂ŕôǵr̂éŝśîv́ê Ẃêb́ Âṕp̂. [Ĺêár̂ń m̂ór̂é](https://developers.9oo91e.qjz9zk/web/progressive-web-apps/checklist)."
   },
   "lighthouse-core/config/default-config.js | pwaCategoryManualDescription": {
-    "message": "T̂h́êśê ćĥéĉḱŝ ár̂é r̂éq̂úîŕêd́ b̂ý t̂h́ê b́âśêĺîńê [ṔŴÁ Ĉh́êćk̂ĺîśt̂](https://developers.google.com/web/progressive-web-apps/checklist) b́ût́ âŕê ńôt́ âút̂óm̂át̂íĉál̂ĺŷ ćĥéĉḱêd́ b̂ý L̂íĝh́t̂h́ôúŝé. T̂h́êý d̂ó n̂ót̂ áf̂f́êćt̂ ýôúr̂ śĉór̂é b̂út̂ ít̂'ś îḿp̂ór̂t́âńt̂ t́ĥát̂ ýôú v̂ér̂íf̂ý t̂h́êḿ m̂án̂úâĺl̂ý."
+    "message": "T̂h́êśê ćĥéĉḱŝ ár̂é r̂éq̂úîŕêd́ b̂ý t̂h́ê b́âśêĺîńê [ṔŴÁ Ĉh́êćk̂ĺîśt̂](https://developers.9oo91e.qjz9zk/web/progressive-web-apps/checklist) b́ût́ âŕê ńôt́ âút̂óm̂át̂íĉál̂ĺŷ ćĥéĉḱêd́ b̂ý L̂íĝh́t̂h́ôúŝé. T̂h́êý d̂ó n̂ót̂ áf̂f́êćt̂ ýôúr̂ śĉór̂é b̂út̂ ít̂'ś îḿp̂ór̂t́âńt̂ t́ĥát̂ ýôú v̂ér̂íf̂ý t̂h́êḿ m̂án̂úâĺl̂ý."
   },
   "lighthouse-core/config/default-config.js | pwaCategoryTitle": {
     "message": "P̂ŕôǵr̂éŝśîv́ê Ẃêb́ Âṕp̂"
@@ -1572,7 +1572,7 @@
     "message": "P̂ẂÂ Óp̂t́îḿîźêd́"
   },
   "lighthouse-core/config/default-config.js | seoCategoryDescription": {
-    "message": "T̂h́êśê ćĥéĉḱŝ én̂śûŕê t́ĥát̂ ýôúr̂ ṕâǵê íŝ óp̂t́îḿîźêd́ f̂ór̂ śêár̂ćĥ én̂ǵîńê ŕêśûĺt̂ś r̂án̂ḱîńĝ. T́ĥér̂é âŕê ád̂d́ît́îón̂ál̂ f́âćt̂ór̂ś L̂íĝh́t̂h́ôúŝé d̂óêś n̂ót̂ ćĥéĉḱ t̂h́ât́ m̂áŷ áf̂f́êćt̂ ýôúr̂ śêár̂ćĥ ŕâńk̂ín̂ǵ. [L̂éâŕn̂ ḿôŕê](https://support.google.com/webmasters/answer/35769)."
+    "message": "T̂h́êśê ćĥéĉḱŝ én̂śûŕê t́ĥát̂ ýôúr̂ ṕâǵê íŝ óp̂t́îḿîźêd́ f̂ór̂ śêár̂ćĥ én̂ǵîńê ŕêśûĺt̂ś r̂án̂ḱîńĝ. T́ĥér̂é âŕê ád̂d́ît́îón̂ál̂ f́âćt̂ór̂ś L̂íĝh́t̂h́ôúŝé d̂óêś n̂ót̂ ćĥéĉḱ t̂h́ât́ m̂áŷ áf̂f́êćt̂ ýôúr̂ śêár̂ćĥ ŕâńk̂ín̂ǵ. [L̂éâŕn̂ ḿôŕê](https://support.9oo91e.qjz9zk/webmasters/answer/35769)."
   },
   "lighthouse-core/config/default-config.js | seoCategoryManualDescription": {
     "message": "R̂ún̂ t́ĥéŝé âd́d̂ít̂íôńâĺ v̂ál̂íd̂át̂ór̂ś ôń ŷóûŕ ŝít̂é t̂ó ĉh́êćk̂ ád̂d́ît́îón̂ál̂ ŚÊÓ b̂éŝt́ p̂ŕâćt̂íĉéŝ."
@@ -1593,7 +1593,7 @@
     "message": "Ĉŕâẃl̂ín̂ǵ âńd̂ Ín̂d́êx́îńĝ"
   },
   "lighthouse-core/config/default-config.js | seoMobileGroupDescription": {
-    "message": "M̂ák̂é ŝúr̂é ŷóûŕ p̂áĝéŝ ár̂é m̂ób̂íl̂é f̂ŕîén̂d́l̂ý ŝó ûśêŕŝ d́ôń’t̂ h́âv́ê t́ô ṕîńĉh́ ôŕ ẑóôḿ îń ôŕd̂ér̂ t́ô ŕêád̂ t́ĥé ĉón̂t́êńt̂ ṕâǵêś. [L̂éâŕn̂ ḿôŕê](https://developers.google.com/search/mobile-sites/)."
+    "message": "M̂ák̂é ŝúr̂é ŷóûŕ p̂áĝéŝ ár̂é m̂ób̂íl̂é f̂ŕîén̂d́l̂ý ŝó ûśêŕŝ d́ôń’t̂ h́âv́ê t́ô ṕîńĉh́ ôŕ ẑóôḿ îń ôŕd̂ér̂ t́ô ŕêád̂ t́ĥé ĉón̂t́êńt̂ ṕâǵêś. [L̂éâŕn̂ ḿôŕê](https://developers.9oo91e.qjz9zk/search/mobile-sites/)."
   },
   "lighthouse-core/config/default-config.js | seoMobileGroupTitle": {
     "message": "M̂ób̂íl̂é F̂ŕîén̂d́l̂ý"
@@ -1839,7 +1839,7 @@
     "message": "L̂áb̂ D́ât́â"
   },
   "lighthouse-core/report/html/renderer/util.js | lsPerformanceCategoryDescription": {
-    "message": "[L̂íĝh́t̂h́ôúŝé](https://developers.google.com/web/tools/lighthouse/) âńâĺŷśîś ôf́ t̂h́ê ćûŕr̂én̂t́ p̂áĝé ôń âń êḿûĺât́êd́ m̂ób̂íl̂é n̂ét̂ẃôŕk̂. V́âĺûéŝ ár̂é êśt̂ím̂át̂éd̂ án̂d́ m̂áŷ v́âŕŷ."
+    "message": "[L̂íĝh́t̂h́ôúŝé](https://developers.9oo91e.qjz9zk/web/tools/lighthouse/) âńâĺŷśîś ôf́ t̂h́ê ćûŕr̂én̂t́ p̂áĝé ôń âń êḿûĺât́êd́ m̂ób̂íl̂é n̂ét̂ẃôŕk̂. V́âĺûéŝ ár̂é êśt̂ím̂át̂éd̂ án̂d́ m̂áŷ v́âŕŷ."
   },
   "lighthouse-core/report/html/renderer/util.js | manualAuditsGroupTitle": {
     "message": "Âd́d̂ít̂íôńâĺ ît́êḿŝ t́ô ḿâńûál̂ĺŷ ćĥéĉḱ"
@@ -1986,10 +1986,10 @@
     "message": "Êńŝúr̂é ŷóû h́âv́ê én̂áb̂ĺêd́ \"Âǵĝŕêǵât́ê J́âv́âŚĉŕîṕt̂ f́îĺêś\" îń t̂h́ê \"Ád̂ḿîńîśt̂ŕât́îón̂ » Ćôńf̂íĝúr̂át̂íôń » D̂év̂él̂óp̂ḿêńt̂\" ṕâǵê. Ýôú ĉán̂ ál̂śô ćôńf̂íĝúr̂é m̂ór̂é âd́v̂án̂ćêd́ âǵĝŕêǵât́îón̂ óp̂t́îón̂ś t̂h́r̂óûǵĥ [ád̂d́ît́îón̂ál̂ ḿôd́ûĺêś](https://www.drupal.org/project/project_module?f%5B0%5D=&f%5B1%5D=&f%5B2%5D=im_vid_3%3A123&f%5B3%5D=&f%5B4%5D=sm_field_project_type%3Afull&f%5B5%5D=&f%5B6%5D=&text=javascript+aggregation&solrsort=iss_project_release_usage+desc&op=Search) t̂ó ŝṕêéd̂ úp̂ ýôúr̂ śît́ê b́ŷ ćôńĉát̂én̂át̂ín̂ǵ, m̂ín̂íf̂ýîńĝ, án̂d́ ĉóm̂ṕr̂éŝśîńĝ ýôúr̂ J́âv́âŚĉŕîṕt̂ áŝśêt́ŝ."
   },
   "node_modules/lighthouse-stack-packs/packs/drupal.js | unused-css-rules": {
-    "message": "Ĉón̂śîd́êŕ r̂ém̂óv̂ín̂ǵ ûńûśêd́ ĈŚŜ ŕûĺêś âńd̂ ón̂ĺŷ át̂t́âćĥ t́ĥé n̂éêd́êd́ D̂ŕûṕâĺ l̂íb̂ŕâŕîéŝ t́ô t́ĥé r̂él̂év̂án̂t́ p̂áĝé ôŕ ĉóm̂ṕôńêńt̂ ín̂ á p̂áĝé. Ŝéê t́ĥé [D̂ŕûṕâĺ d̂óĉúm̂én̂t́ât́îón̂ ĺîńk̂](https://www.drupal.org/docs/8/creating-custom-modules/adding-stylesheets-css-and-javascript-js-to-a-drupal-8-module#library) f́ôŕ d̂ét̂áîĺŝ. T́ô íd̂én̂t́îf́ŷ át̂t́âćĥéd̂ ĺîb́r̂ár̂íêś t̂h́ât́ âŕê ád̂d́îńĝ éx̂t́r̂án̂éôúŝ ĆŜŚ, t̂ŕŷ ŕûńn̂ín̂ǵ [ĉód̂é ĉóv̂ér̂áĝé](https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverage) îń Ĉh́r̂óm̂é D̂év̂T́ôól̂ś. Ŷóû ćâń îd́êńt̂íf̂ý t̂h́ê t́ĥém̂é/m̂ód̂úl̂é r̂éŝṕôńŝíb̂ĺê f́r̂óm̂ t́ĥé ÛŔL̂ óf̂ t́ĥé ŝt́ŷĺêśĥéêt́ ŵh́êń ĈŚŜ áĝǵr̂éĝát̂íôń îś d̂íŝáb̂ĺêd́ îń ŷóûŕ D̂ŕûṕâĺ ŝít̂é. L̂óôḱ ôút̂ f́ôŕ t̂h́êḿêś/m̂ód̂úl̂éŝ t́ĥát̂ h́âv́ê ḿâńŷ śt̂ýl̂éŝh́êét̂ś îń t̂h́ê ĺîśt̂ ẃĥíĉh́ ĥáv̂é â ĺôt́ ôf́ r̂éd̂ ín̂ ćôd́ê ćôv́êŕâǵê. Á t̂h́êḿê/ḿôd́ûĺê śĥóûĺd̂ ón̂ĺŷ én̂q́ûéûé â śt̂ýl̂éŝh́êét̂ íf̂ ít̂ íŝ áĉt́ûál̂ĺŷ úŝéd̂ ón̂ t́ĥé p̂áĝé."
+    "message": "Ĉón̂śîd́êŕ r̂ém̂óv̂ín̂ǵ ûńûśêd́ ĈŚŜ ŕûĺêś âńd̂ ón̂ĺŷ át̂t́âćĥ t́ĥé n̂éêd́êd́ D̂ŕûṕâĺ l̂íb̂ŕâŕîéŝ t́ô t́ĥé r̂él̂év̂án̂t́ p̂áĝé ôŕ ĉóm̂ṕôńêńt̂ ín̂ á p̂áĝé. Ŝéê t́ĥé [D̂ŕûṕâĺ d̂óĉúm̂én̂t́ât́îón̂ ĺîńk̂](https://www.drupal.org/docs/8/creating-custom-modules/adding-stylesheets-css-and-javascript-js-to-a-drupal-8-module#library) f́ôŕ d̂ét̂áîĺŝ. T́ô íd̂én̂t́îf́ŷ át̂t́âćĥéd̂ ĺîb́r̂ár̂íêś t̂h́ât́ âŕê ád̂d́îńĝ éx̂t́r̂án̂éôúŝ ĆŜŚ, t̂ŕŷ ŕûńn̂ín̂ǵ [ĉód̂é ĉóv̂ér̂áĝé](https://developers.9oo91e.qjz9zk/web/updates/2017/04/devtools-release-notes#coverage) îń Ĉh́r̂óm̂é D̂év̂T́ôól̂ś. Ŷóû ćâń îd́êńt̂íf̂ý t̂h́ê t́ĥém̂é/m̂ód̂úl̂é r̂éŝṕôńŝíb̂ĺê f́r̂óm̂ t́ĥé ÛŔL̂ óf̂ t́ĥé ŝt́ŷĺêśĥéêt́ ŵh́êń ĈŚŜ áĝǵr̂éĝát̂íôń îś d̂íŝáb̂ĺêd́ îń ŷóûŕ D̂ŕûṕâĺ ŝít̂é. L̂óôḱ ôút̂ f́ôŕ t̂h́êḿêś/m̂ód̂úl̂éŝ t́ĥát̂ h́âv́ê ḿâńŷ śt̂ýl̂éŝh́êét̂ś îń t̂h́ê ĺîśt̂ ẃĥíĉh́ ĥáv̂é â ĺôt́ ôf́ r̂éd̂ ín̂ ćôd́ê ćôv́êŕâǵê. Á t̂h́êḿê/ḿôd́ûĺê śĥóûĺd̂ ón̂ĺŷ én̂q́ûéûé â śt̂ýl̂éŝh́êét̂ íf̂ ít̂ íŝ áĉt́ûál̂ĺŷ úŝéd̂ ón̂ t́ĥé p̂áĝé."
   },
   "node_modules/lighthouse-stack-packs/packs/drupal.js | unused-javascript": {
-    "message": "Ĉón̂śîd́êŕ r̂ém̂óv̂ín̂ǵ ûńûśêd́ Ĵáv̂áŜćr̂íp̂t́ âśŝét̂ś âńd̂ ón̂ĺŷ át̂t́âćĥ t́ĥé n̂éêd́êd́ D̂ŕûṕâĺ l̂íb̂ŕâŕîéŝ t́ô t́ĥé r̂él̂év̂án̂t́ p̂áĝé ôŕ ĉóm̂ṕôńêńt̂ ín̂ á p̂áĝé. Ŝéê t́ĥé [D̂ŕûṕâĺ d̂óĉúm̂én̂t́ât́îón̂ ĺîńk̂](https://www.drupal.org/docs/8/creating-custom-modules/adding-stylesheets-css-and-javascript-js-to-a-drupal-8-module#library) f́ôŕ d̂ét̂áîĺŝ. T́ô íd̂én̂t́îf́ŷ át̂t́âćĥéd̂ ĺîb́r̂ár̂íêś t̂h́ât́ âŕê ád̂d́îńĝ éx̂t́r̂án̂éôúŝ J́âv́âŚĉŕîṕt̂, t́r̂ý r̂ún̂ńîńĝ [ćôd́ê ćôv́êŕâǵê](https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverage) ín̂ Ćĥŕôḿê D́êv́T̂óôĺŝ. Ýôú ĉán̂ íd̂én̂t́îf́ŷ t́ĥé t̂h́êḿê/ḿôd́ûĺê ŕêśp̂ón̂śîb́l̂é f̂ŕôḿ t̂h́ê ÚR̂Ĺ ôf́ t̂h́ê śĉŕîṕt̂ ẃĥén̂ J́âv́âŚĉŕîṕt̂ áĝǵr̂éĝát̂íôń îś d̂íŝáb̂ĺêd́ îń ŷóûŕ D̂ŕûṕâĺ ŝít̂é. L̂óôḱ ôút̂ f́ôŕ t̂h́êḿêś/m̂ód̂úl̂éŝ t́ĥát̂ h́âv́ê ḿâńŷ śĉŕîṕt̂ś îń t̂h́ê ĺîśt̂ ẃĥíĉh́ ĥáv̂é â ĺôt́ ôf́ r̂éd̂ ín̂ ćôd́ê ćôv́êŕâǵê. Á t̂h́êḿê/ḿôd́ûĺê śĥóûĺd̂ ón̂ĺŷ én̂q́ûéûé â śĉŕîṕt̂ íf̂ ít̂ íŝ áĉt́ûál̂ĺŷ úŝéd̂ ón̂ t́ĥé p̂áĝé."
+    "message": "Ĉón̂śîd́êŕ r̂ém̂óv̂ín̂ǵ ûńûśêd́ Ĵáv̂áŜćr̂íp̂t́ âśŝét̂ś âńd̂ ón̂ĺŷ át̂t́âćĥ t́ĥé n̂éêd́êd́ D̂ŕûṕâĺ l̂íb̂ŕâŕîéŝ t́ô t́ĥé r̂él̂év̂án̂t́ p̂áĝé ôŕ ĉóm̂ṕôńêńt̂ ín̂ á p̂áĝé. Ŝéê t́ĥé [D̂ŕûṕâĺ d̂óĉúm̂én̂t́ât́îón̂ ĺîńk̂](https://www.drupal.org/docs/8/creating-custom-modules/adding-stylesheets-css-and-javascript-js-to-a-drupal-8-module#library) f́ôŕ d̂ét̂áîĺŝ. T́ô íd̂én̂t́îf́ŷ át̂t́âćĥéd̂ ĺîb́r̂ár̂íêś t̂h́ât́ âŕê ád̂d́îńĝ éx̂t́r̂án̂éôúŝ J́âv́âŚĉŕîṕt̂, t́r̂ý r̂ún̂ńîńĝ [ćôd́ê ćôv́êŕâǵê](https://developers.9oo91e.qjz9zk/web/updates/2017/04/devtools-release-notes#coverage) ín̂ Ćĥŕôḿê D́êv́T̂óôĺŝ. Ýôú ĉán̂ íd̂én̂t́îf́ŷ t́ĥé t̂h́êḿê/ḿôd́ûĺê ŕêśp̂ón̂śîb́l̂é f̂ŕôḿ t̂h́ê ÚR̂Ĺ ôf́ t̂h́ê śĉŕîṕt̂ ẃĥén̂ J́âv́âŚĉŕîṕt̂ áĝǵr̂éĝát̂íôń îś d̂íŝáb̂ĺêd́ îń ŷóûŕ D̂ŕûṕâĺ ŝít̂é. L̂óôḱ ôút̂ f́ôŕ t̂h́êḿêś/m̂ód̂úl̂éŝ t́ĥát̂ h́âv́ê ḿâńŷ śĉŕîṕt̂ś îń t̂h́ê ĺîśt̂ ẃĥíĉh́ ĥáv̂é â ĺôt́ ôf́ r̂éd̂ ín̂ ćôd́ê ćôv́êŕâǵê. Á t̂h́êḿê/ḿôd́ûĺê śĥóûĺd̂ ón̂ĺŷ én̂q́ûéûé â śĉŕîṕt̂ íf̂ ít̂ íŝ áĉt́ûál̂ĺŷ úŝéd̂ ón̂ t́ĥé p̂áĝé."
   },
   "node_modules/lighthouse-stack-packs/packs/drupal.js | uses-long-cache-ttl": {
     "message": "Ŝét̂ t́ĥé \"B̂ŕôẃŝér̂ án̂d́ p̂ŕôx́ŷ ćâćĥé m̂áx̂ím̂úm̂ áĝé\" îń t̂h́ê \"Ád̂ḿîńîśt̂ŕât́îón̂ » Ćôńf̂íĝúr̂át̂íôń » D̂év̂él̂óp̂ḿêńt̂\" ṕâǵê. Ŕêád̂ áb̂óût́ [D̂ŕûṕâĺ ĉáĉh́ê án̂d́ ôṕt̂ím̂íẑín̂ǵ f̂ór̂ ṕêŕf̂ór̂ḿâńĉé](https://www.drupal.org/docs/7/managing-site-performance-and-scalability/caching-to-improve-performance/caching-overview#s-drupal-performance-resources)."
@@ -2028,10 +2028,10 @@
     "message": "Â ńûḿb̂ér̂ óf̂ [J́ôóm̂ĺâ éx̂t́êńŝíôńŝ](https://extensions.joomla.org/instant-search/?jed_live%5Bquery%5D=performance) ćâń ŝṕêéd̂ úp̂ ýôúr̂ śît́ê b́ŷ ćôńĉát̂én̂át̂ín̂ǵ, m̂ín̂íf̂ýîńĝ, án̂d́ ĉóm̂ṕr̂éŝśîńĝ ýôúr̂ śĉŕîṕt̂ś. T̂h́êŕê ár̂é âĺŝó t̂ém̂ṕl̂át̂éŝ t́ĥát̂ ṕr̂óv̂íd̂é t̂h́îś f̂ún̂ćt̂íôńâĺît́ŷ."
   },
   "node_modules/lighthouse-stack-packs/packs/joomla.js | unused-css-rules": {
-    "message": "Ĉón̂śîd́êŕ r̂éd̂úĉín̂ǵ, ôŕ ŝẃît́ĉh́îńĝ, t́ĥé n̂úm̂b́êŕ ôf́ [Ĵóôḿl̂á êx́t̂én̂śîón̂ś](https://extensions.joomla.org/) l̂óâd́îńĝ ún̂úŝéd̂ ĆŜŚ îń ŷóûŕ p̂áĝé. T̂ó îd́êńt̂íf̂ý êx́t̂én̂śîón̂ś t̂h́ât́ âŕê ád̂d́îńĝ éx̂t́r̂án̂éôúŝ ĆŜŚ, t̂ŕŷ ŕûńn̂ín̂ǵ [ĉód̂é ĉóv̂ér̂áĝé](https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverage) îń Ĉh́r̂óm̂é D̂év̂T́ôól̂ś. Ŷóû ćâń îd́êńt̂íf̂ý t̂h́ê t́ĥém̂é/p̂ĺûǵîń r̂éŝṕôńŝíb̂ĺê f́r̂óm̂ t́ĥé ÛŔL̂ óf̂ t́ĥé ŝt́ŷĺêśĥéêt́. L̂óôḱ ôút̂ f́ôŕ p̂ĺûǵîńŝ t́ĥát̂ h́âv́ê ḿâńŷ śt̂ýl̂éŝh́êét̂ś îń t̂h́ê ĺîśt̂ ẃĥíĉh́ ĥáv̂é â ĺôt́ ôf́ r̂éd̂ ín̂ ćôd́ê ćôv́êŕâǵê. Á p̂ĺûǵîń ŝh́ôúl̂d́ ôńl̂ý êńq̂úêúê á ŝt́ŷĺêśĥéêt́ îf́ ît́ îś âćt̂úâĺl̂ý ûśêd́ ôń t̂h́ê ṕâǵê."
+    "message": "Ĉón̂śîd́êŕ r̂éd̂úĉín̂ǵ, ôŕ ŝẃît́ĉh́îńĝ, t́ĥé n̂úm̂b́êŕ ôf́ [Ĵóôḿl̂á êx́t̂én̂śîón̂ś](https://extensions.joomla.org/) l̂óâd́îńĝ ún̂úŝéd̂ ĆŜŚ îń ŷóûŕ p̂áĝé. T̂ó îd́êńt̂íf̂ý êx́t̂én̂śîón̂ś t̂h́ât́ âŕê ád̂d́îńĝ éx̂t́r̂án̂éôúŝ ĆŜŚ, t̂ŕŷ ŕûńn̂ín̂ǵ [ĉód̂é ĉóv̂ér̂áĝé](https://developers.9oo91e.qjz9zk/web/updates/2017/04/devtools-release-notes#coverage) îń Ĉh́r̂óm̂é D̂év̂T́ôól̂ś. Ŷóû ćâń îd́êńt̂íf̂ý t̂h́ê t́ĥém̂é/p̂ĺûǵîń r̂éŝṕôńŝíb̂ĺê f́r̂óm̂ t́ĥé ÛŔL̂ óf̂ t́ĥé ŝt́ŷĺêśĥéêt́. L̂óôḱ ôút̂ f́ôŕ p̂ĺûǵîńŝ t́ĥát̂ h́âv́ê ḿâńŷ śt̂ýl̂éŝh́êét̂ś îń t̂h́ê ĺîśt̂ ẃĥíĉh́ ĥáv̂é â ĺôt́ ôf́ r̂éd̂ ín̂ ćôd́ê ćôv́êŕâǵê. Á p̂ĺûǵîń ŝh́ôúl̂d́ ôńl̂ý êńq̂úêúê á ŝt́ŷĺêśĥéêt́ îf́ ît́ îś âćt̂úâĺl̂ý ûśêd́ ôń t̂h́ê ṕâǵê."
   },
   "node_modules/lighthouse-stack-packs/packs/joomla.js | unused-javascript": {
-    "message": "Ĉón̂śîd́êŕ r̂éd̂úĉín̂ǵ, ôŕ ŝẃît́ĉh́îńĝ, t́ĥé n̂úm̂b́êŕ ôf́ [Ĵóôḿl̂á êx́t̂én̂śîón̂ś](https://extensions.joomla.org/) l̂óâd́îńĝ ún̂úŝéd̂ J́âv́âŚĉŕîṕt̂ ín̂ ýôúr̂ ṕâǵê. T́ô íd̂én̂t́îf́ŷ ṕl̂úĝín̂ś t̂h́ât́ âŕê ád̂d́îńĝ éx̂t́r̂án̂éôúŝ J́Ŝ, t́r̂ý r̂ún̂ńîńĝ [ćôd́ê ćôv́êŕâǵê](https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverage) ín̂ Ćĥŕôḿê D́êv́T̂óôĺŝ. Ýôú ĉán̂ íd̂én̂t́îf́ŷ t́ĥé êx́t̂én̂śîón̂ ŕêśp̂ón̂śîb́l̂é f̂ŕôḿ t̂h́ê ÚR̂Ĺ ôf́ t̂h́ê śĉŕîṕt̂. Ĺôók̂ óût́ f̂ór̂ éx̂t́êńŝíôńŝ t́ĥát̂ h́âv́ê ḿâńŷ śĉŕîṕt̂ś îń t̂h́ê ĺîśt̂ ẃĥíĉh́ ĥáv̂é â ĺôt́ ôf́ r̂éd̂ ín̂ ćôd́ê ćôv́êŕâǵê. Án̂ éx̂t́êńŝíôń ŝh́ôúl̂d́ ôńl̂ý êńq̂úêúê á ŝćr̂íp̂t́ îf́ ît́ îś âćt̂úâĺl̂ý ûśêd́ ôń t̂h́ê ṕâǵê."
+    "message": "Ĉón̂śîd́êŕ r̂éd̂úĉín̂ǵ, ôŕ ŝẃît́ĉh́îńĝ, t́ĥé n̂úm̂b́êŕ ôf́ [Ĵóôḿl̂á êx́t̂én̂śîón̂ś](https://extensions.joomla.org/) l̂óâd́îńĝ ún̂úŝéd̂ J́âv́âŚĉŕîṕt̂ ín̂ ýôúr̂ ṕâǵê. T́ô íd̂én̂t́îf́ŷ ṕl̂úĝín̂ś t̂h́ât́ âŕê ád̂d́îńĝ éx̂t́r̂án̂éôúŝ J́Ŝ, t́r̂ý r̂ún̂ńîńĝ [ćôd́ê ćôv́êŕâǵê](https://developers.9oo91e.qjz9zk/web/updates/2017/04/devtools-release-notes#coverage) ín̂ Ćĥŕôḿê D́êv́T̂óôĺŝ. Ýôú ĉán̂ íd̂én̂t́îf́ŷ t́ĥé êx́t̂én̂śîón̂ ŕêśp̂ón̂śîb́l̂é f̂ŕôḿ t̂h́ê ÚR̂Ĺ ôf́ t̂h́ê śĉŕîṕt̂. Ĺôók̂ óût́ f̂ór̂ éx̂t́êńŝíôńŝ t́ĥát̂ h́âv́ê ḿâńŷ śĉŕîṕt̂ś îń t̂h́ê ĺîśt̂ ẃĥíĉh́ ĥáv̂é â ĺôt́ ôf́ r̂éd̂ ín̂ ćôd́ê ćôv́êŕâǵê. Án̂ éx̂t́êńŝíôń ŝh́ôúl̂d́ ôńl̂ý êńq̂úêúê á ŝćr̂íp̂t́ îf́ ît́ îś âćt̂úâĺl̂ý ûśêd́ ôń t̂h́ê ṕâǵê."
   },
   "node_modules/lighthouse-stack-packs/packs/joomla.js | uses-long-cache-ttl": {
     "message": "R̂éâd́ âb́ôút̂ [B́r̂óŵśêŕ Ĉáĉh́îńĝ ín̂ J́ôóm̂ĺâ](https://docs.joomla.org/Cache)."
@@ -2127,10 +2127,10 @@
     "message": "Â ńûḿb̂ér̂ óf̂ [Ẃôŕd̂Ṕr̂éŝś p̂ĺûǵîńŝ](https://wordpress.org/plugins/search/minify+javascript/) ćâń ŝṕêéd̂ úp̂ ýôúr̂ śît́ê b́ŷ ćôńĉát̂én̂át̂ín̂ǵ, m̂ín̂íf̂ýîńĝ, án̂d́ ĉóm̂ṕr̂éŝśîńĝ ýôúr̂ śĉŕîṕt̂ś. Ŷóû ḿâý âĺŝó ŵán̂t́ t̂ó ûśê á b̂úîĺd̂ ṕr̂óĉéŝś t̂ó d̂ó t̂h́îś m̂ín̂íf̂íĉát̂íôń ûṕ f̂ŕôńt̂ íf̂ ṕôśŝíb̂ĺê."
   },
   "node_modules/lighthouse-stack-packs/packs/wordpress.js | unused-css-rules": {
-    "message": "Ĉón̂śîd́êŕ r̂éd̂úĉín̂ǵ, ôŕ ŝẃît́ĉh́îńĝ, t́ĥé n̂úm̂b́êŕ ôf́ [Ŵór̂d́P̂ŕêśŝ ṕl̂úĝín̂ś](https://wordpress.org/plugins/) l̂óâd́îńĝ ún̂úŝéd̂ ĆŜŚ îń ŷóûŕ p̂áĝé. T̂ó îd́êńt̂íf̂ý p̂ĺûǵîńŝ t́ĥát̂ ár̂é âd́d̂ín̂ǵ êx́t̂ŕâńêóûś ĈŚŜ, t́r̂ý r̂ún̂ńîńĝ [ćôd́ê ćôv́êŕâǵê](https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverage) ín̂ Ćĥŕôḿê D́êv́T̂óôĺŝ. Ýôú ĉán̂ íd̂én̂t́îf́ŷ t́ĥé t̂h́êḿê/ṕl̂úĝín̂ ŕêśp̂ón̂śîb́l̂é f̂ŕôḿ t̂h́ê ÚR̂Ĺ ôf́ t̂h́ê śt̂ýl̂éŝh́êét̂. Ĺôók̂ óût́ f̂ór̂ ṕl̂úĝín̂ś t̂h́ât́ ĥáv̂é m̂án̂ý ŝt́ŷĺêśĥéêt́ŝ ín̂ t́ĥé l̂íŝt́ ŵh́îćĥ h́âv́ê á l̂ót̂ óf̂ ŕêd́ îń ĉód̂é ĉóv̂ér̂áĝé. Â ṕl̂úĝín̂ śĥóûĺd̂ ón̂ĺŷ én̂q́ûéûé â śt̂ýl̂éŝh́êét̂ íf̂ ít̂ íŝ áĉt́ûál̂ĺŷ úŝéd̂ ón̂ t́ĥé p̂áĝé."
+    "message": "Ĉón̂śîd́êŕ r̂éd̂úĉín̂ǵ, ôŕ ŝẃît́ĉh́îńĝ, t́ĥé n̂úm̂b́êŕ ôf́ [Ŵór̂d́P̂ŕêśŝ ṕl̂úĝín̂ś](https://wordpress.org/plugins/) l̂óâd́îńĝ ún̂úŝéd̂ ĆŜŚ îń ŷóûŕ p̂áĝé. T̂ó îd́êńt̂íf̂ý p̂ĺûǵîńŝ t́ĥát̂ ár̂é âd́d̂ín̂ǵ êx́t̂ŕâńêóûś ĈŚŜ, t́r̂ý r̂ún̂ńîńĝ [ćôd́ê ćôv́êŕâǵê](https://developers.9oo91e.qjz9zk/web/updates/2017/04/devtools-release-notes#coverage) ín̂ Ćĥŕôḿê D́êv́T̂óôĺŝ. Ýôú ĉán̂ íd̂én̂t́îf́ŷ t́ĥé t̂h́êḿê/ṕl̂úĝín̂ ŕêśp̂ón̂śîb́l̂é f̂ŕôḿ t̂h́ê ÚR̂Ĺ ôf́ t̂h́ê śt̂ýl̂éŝh́êét̂. Ĺôók̂ óût́ f̂ór̂ ṕl̂úĝín̂ś t̂h́ât́ ĥáv̂é m̂án̂ý ŝt́ŷĺêśĥéêt́ŝ ín̂ t́ĥé l̂íŝt́ ŵh́îćĥ h́âv́ê á l̂ót̂ óf̂ ŕêd́ îń ĉód̂é ĉóv̂ér̂áĝé. Â ṕl̂úĝín̂ śĥóûĺd̂ ón̂ĺŷ én̂q́ûéûé â śt̂ýl̂éŝh́êét̂ íf̂ ít̂ íŝ áĉt́ûál̂ĺŷ úŝéd̂ ón̂ t́ĥé p̂áĝé."
   },
   "node_modules/lighthouse-stack-packs/packs/wordpress.js | unused-javascript": {
-    "message": "Ĉón̂śîd́êŕ r̂éd̂úĉín̂ǵ, ôŕ ŝẃît́ĉh́îńĝ, t́ĥé n̂úm̂b́êŕ ôf́ [Ŵór̂d́P̂ŕêśŝ ṕl̂úĝín̂ś](https://wordpress.org/plugins/) l̂óâd́îńĝ ún̂úŝéd̂ J́âv́âŚĉŕîṕt̂ ín̂ ýôúr̂ ṕâǵê. T́ô íd̂én̂t́îf́ŷ ṕl̂úĝín̂ś t̂h́ât́ âŕê ád̂d́îńĝ éx̂t́r̂án̂éôúŝ J́Ŝ, t́r̂ý r̂ún̂ńîńĝ [ćôd́ê ćôv́êŕâǵê](https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverage) ín̂ Ćĥŕôḿê D́êv́T̂óôĺŝ. Ýôú ĉán̂ íd̂én̂t́îf́ŷ t́ĥé t̂h́êḿê/ṕl̂úĝín̂ ŕêśp̂ón̂śîb́l̂é f̂ŕôḿ t̂h́ê ÚR̂Ĺ ôf́ t̂h́ê śĉŕîṕt̂. Ĺôók̂ óût́ f̂ór̂ ṕl̂úĝín̂ś t̂h́ât́ ĥáv̂é m̂án̂ý ŝćr̂íp̂t́ŝ ín̂ t́ĥé l̂íŝt́ ŵh́îćĥ h́âv́ê á l̂ót̂ óf̂ ŕêd́ îń ĉód̂é ĉóv̂ér̂áĝé. Â ṕl̂úĝín̂ śĥóûĺd̂ ón̂ĺŷ én̂q́ûéûé â śĉŕîṕt̂ íf̂ ít̂ íŝ áĉt́ûál̂ĺŷ úŝéd̂ ón̂ t́ĥé p̂áĝé."
+    "message": "Ĉón̂śîd́êŕ r̂éd̂úĉín̂ǵ, ôŕ ŝẃît́ĉh́îńĝ, t́ĥé n̂úm̂b́êŕ ôf́ [Ŵór̂d́P̂ŕêśŝ ṕl̂úĝín̂ś](https://wordpress.org/plugins/) l̂óâd́îńĝ ún̂úŝéd̂ J́âv́âŚĉŕîṕt̂ ín̂ ýôúr̂ ṕâǵê. T́ô íd̂én̂t́îf́ŷ ṕl̂úĝín̂ś t̂h́ât́ âŕê ád̂d́îńĝ éx̂t́r̂án̂éôúŝ J́Ŝ, t́r̂ý r̂ún̂ńîńĝ [ćôd́ê ćôv́êŕâǵê](https://developers.9oo91e.qjz9zk/web/updates/2017/04/devtools-release-notes#coverage) ín̂ Ćĥŕôḿê D́êv́T̂óôĺŝ. Ýôú ĉán̂ íd̂én̂t́îf́ŷ t́ĥé t̂h́êḿê/ṕl̂úĝín̂ ŕêśp̂ón̂śîb́l̂é f̂ŕôḿ t̂h́ê ÚR̂Ĺ ôf́ t̂h́ê śĉŕîṕt̂. Ĺôók̂ óût́ f̂ór̂ ṕl̂úĝín̂ś t̂h́ât́ ĥáv̂é m̂án̂ý ŝćr̂íp̂t́ŝ ín̂ t́ĥé l̂íŝt́ ŵh́îćĥ h́âv́ê á l̂ót̂ óf̂ ŕêd́ îń ĉód̂é ĉóv̂ér̂áĝé. Â ṕl̂úĝín̂ śĥóûĺd̂ ón̂ĺŷ én̂q́ûéûé â śĉŕîṕt̂ íf̂ ít̂ íŝ áĉt́ûál̂ĺŷ úŝéd̂ ón̂ t́ĥé p̂áĝé."
   },
   "node_modules/lighthouse-stack-packs/packs/wordpress.js | uses-long-cache-ttl": {
     "message": "R̂éâd́ âb́ôút̂ [B́r̂óŵśêŕ Ĉáĉh́îńĝ ín̂ Ẃôŕd̂Ṕr̂éŝś](https://wordpress.org/support/article/optimization/#browser-caching)."

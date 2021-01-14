@@ -38,7 +38,7 @@ class PaymentApp {
     AUTOFILL,
     // A 3rd-party platform-specific mobile app, such as an Android app
     // integrated via
-    // https://developers.google.com/web/fundamentals/payments/payment-apps-developer-guide/android-payment-apps
+    // https://developers.9oo91e.qjz9zk/web/fundamentals/payments/payment-apps-developer-guide/android-payment-apps
     NATIVE_MOBILE_APP,
     // A 3rd-party cross-platform service worked based payment app.
     SERVICE_WORKER_APP,
@@ -51,7 +51,7 @@ class PaymentApp {
    public:
     virtual ~Delegate() {}
 
-    // Should be called with method name (e.g., "https://google.com/pay") and
+    // Should be called with method name (e.g., "https://9oo91e.qjz9zk/pay") and
     // json-serialized stringified details.
     virtual void OnInstrumentDetailsReady(
         const std::string& method_name,

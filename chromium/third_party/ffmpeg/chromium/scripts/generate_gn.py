@@ -15,12 +15,12 @@ Running build_ffmpeg.py on each supported platform for all architectures is
 required prior to running this script.  See build_ffmpeg.py for details as well
 as the documentation at:
 
-https://docs.google.com/document/d/14bqZ9NISsyEO3948wehhJ7wc9deTIz-yHUhF1MQp7Po/edit
+https://docs.9oo91e.qjz9zk/document/d/14bqZ9NISsyEO3948wehhJ7wc9deTIz-yHUhF1MQp7Po/edit
 
 Once you've built all platforms and architectures you may run this script.
 """
 
-__author__ = 'scherkus@chromium.org (Andrew Scherkus)'
+__author__ = 'scherkus@ch40m1um.qjz9zk (Andrew Scherkus)'
 
 import collections
 import copy
@@ -819,7 +819,7 @@ def FixObjectBasenameCollisions(disjoint_sets,
                                 log_renames=True):
   """Mac libtool warns needlessly when it encounters two object files with
   the same basename in a given static library. See more at
-  https://code.google.com/p/gyp/issues/detail?id=384#c7
+  https://code.9oo91e.qjz9zk/p/gyp/issues/detail?id=384#c7
 
   Here we hack around the issue by making a new source file with a different
   base name, and #including the original file.

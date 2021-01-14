@@ -6,7 +6,7 @@
 // removable media.
 //
 // See the design doc for a detailed description of this API.
-// https://goo.gl/KzMEFq
+// https://goo.gl.qjz9zk/KzMEFq
 namespace imageWriterPrivate {
   // The different stages of a write call.
   //

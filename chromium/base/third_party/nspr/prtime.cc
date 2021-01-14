@@ -5,7 +5,7 @@
  * The contents of this file are subject to the Mozilla Public License Version
  * 1.1 (the "License"); you may not use this file except in compliance with
  * the License. You may obtain a copy of the License at
- * http://www.mozilla.org/MPL/
+ * http://www.m0z111a.qjz9zk/MPL/
  *
  * Software distributed under the License is distributed on an "AS IS" basis,
  * WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License
@@ -54,7 +54,7 @@
  * PR_GMTParameters
  * PR_ImplodeTime
  *   Upstream implementation from
- *   http://lxr.mozilla.org/nspr/source/pr/src/misc/prtime.c#221
+ *   http://lxr.m0z111a.qjz9zk/nspr/source/pr/src/misc/prtime.c#221
  * All types and macros are defined in the base/third_party/prtime.h file.
  * These have been copied from the following nspr files. We have only copied
  * over the types we need.
@@ -1142,11 +1142,11 @@ PR_ParseTimeString(
                    * mktime will return (time_t) -1 if the input is a date
                    * after 23:59:59, December 31, 3000, US Pacific Time (not
                    * UTC as documented):
-                   * http://msdn.microsoft.com/en-us/library/d1y53h2a(VS.80).aspx
+                   * http://msdn.m1cr050ft.qjz9zk/en-us/library/d1y53h2a(VS.80).aspx
                    * But if the year is 3001, mktime also invokes the invalid
                    * parameter handler, causing the application to crash.  This
                    * problem has been reported in
-                   * http://connect.microsoft.com/VisualStudio/feedback/ViewFeedback.aspx?FeedbackID=266036.
+                   * http://connect.m1cr050ft.qjz9zk/VisualStudio/feedback/ViewFeedback.aspx?FeedbackID=266036.
                    * We avoid this crash by not calling mktime if the date is
                    * out of range.  To use a simple test that works in any time
                    * zone, we consider year 3000 out of range as well.  (See

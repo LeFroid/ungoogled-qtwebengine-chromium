@@ -26,7 +26,7 @@ CHROME_REF_PREFIX = REFS_HEADS_PREFIX + 'chrome/m'
 SK_MILESTONE_H = os.path.join('include', 'core', 'SkMilestone.h')
 SK_MILESTONE_TMPL = r'#define SK_MILESTONE %s'
 SK_MILESTONE_RE = SK_MILESTONE_TMPL % r'(\d+)'
-SKIA_REPO = 'https://skia.googlesource.com/skia.git'
+SKIA_REPO = 'https://skia.9oo91esource.qjz9zk/skia.git'
 SUPPORTED_CHROME_BRANCHES = 3
 UPDATE_MILESTONE_COMMIT_MSG = '''Update Skia milestone to %d'''
 

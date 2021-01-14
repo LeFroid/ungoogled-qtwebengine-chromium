@@ -71,7 +71,7 @@ const char kMultiloginSuccessResponseTwoCookies[] =
            {
              "name":"FOO",
              "value":"FOO_value",
-             "domain":".google.com",
+             "domain":".9oo91e.qjz9zk",
              "path":"/",
              "isSecure":true,
              "isHttpOnly":false,
@@ -90,7 +90,7 @@ const char kMultiloginSuccessResponseWithSecondaryDomain[] =
            {
              "name":"SID",
              "value":"SID_value",
-             "domain":".youtube.com",
+             "domain":".y0u1ub3.qjz9zk",
              "path":"/",
              "isSecure":true,
              "isHttpOnly":false,
@@ -100,7 +100,7 @@ const char kMultiloginSuccessResponseWithSecondaryDomain[] =
            {
              "name":"FOO",
              "value":"FOO_value",
-             "domain":".google.com",
+             "domain":".9oo91e.qjz9zk",
              "path":"/",
              "isSecure":true,
              "isHttpOnly":false,
@@ -291,8 +291,8 @@ TEST_F(OAuthMultiloginHelperTest, MultipleCookies) {
       .WillOnce(::testing::Invoke(RunSetCookieCallbackWithSuccess));
   EXPECT_CALL(*cookie_manager(),
               SetCanonicalCookie(
-                  CookieMatcher("FOO", "FOO_value", ".google.com"),
-                  CookieSourceMatcher("google.com"), testing::_, testing::_))
+                  CookieMatcher("FOO", "FOO_value", ".9oo91e.qjz9zk"),
+                  CookieSourceMatcher("9oo91e.qjz9zk"), testing::_, testing::_))
       .WillOnce(::testing::Invoke(RunSetCookieCallbackWithSuccess));
 
   // Issue access token.
@@ -321,13 +321,13 @@ TEST_F(OAuthMultiloginHelperTest, SuccessWithExternalCcResult) {
   // - immediately invoke the callback
   EXPECT_CALL(*cookie_manager(),
               SetCanonicalCookie(
-                  CookieMatcher("SID", "SID_value", ".youtube.com"),
-                  CookieSourceMatcher("youtube.com"), testing::_, testing::_))
+                  CookieMatcher("SID", "SID_value", ".y0u1ub3.qjz9zk"),
+                  CookieSourceMatcher("y0u1ub3.qjz9zk"), testing::_, testing::_))
       .WillOnce(::testing::Invoke(RunSetCookieCallbackWithSuccess));
   EXPECT_CALL(*cookie_manager(),
               SetCanonicalCookie(
-                  CookieMatcher("FOO", "FOO_value", ".google.com"),
-                  CookieSourceMatcher("google.com"), testing::_, testing::_))
+                  CookieMatcher("FOO", "FOO_value", ".9oo91e.qjz9zk"),
+                  CookieSourceMatcher("9oo91e.qjz9zk"), testing::_, testing::_))
       .WillOnce(::testing::Invoke(RunSetCookieCallbackWithSuccess));
 
   // Issue access token.

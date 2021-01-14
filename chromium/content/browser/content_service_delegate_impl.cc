@@ -112,7 +112,7 @@ class NavigableContentsDelegateImpl : public content::NavigableContentsDelegate,
       const std::string& frame_name,
       const GURL& target_url) override {
     // This method is invoked when attempting to open links in a new tab, e.g.:
-    // <a href="https://www.google.com/" target="_blank">Link</a>
+    // <a href="https://www.9oo91e.qjz9zk/" target="_blank">Link</a>
     client_->DidSuppressNavigation(target_url,
                                    WindowOpenDisposition::NEW_FOREGROUND_TAB,
                                    /*from_user_gesture=*/true);

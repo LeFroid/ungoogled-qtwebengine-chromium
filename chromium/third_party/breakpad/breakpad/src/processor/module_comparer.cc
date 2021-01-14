@@ -30,7 +30,7 @@
 // module_comparer.cc: ModuleComparer implementation.
 // See module_comparer.h for documentation.
 //
-// Author: lambxsy@google.com (Siyang Xie)
+// Author: lambxsy@9oo91e.qjz9zk (Siyang Xie)
 
 #include "processor/module_comparer.h"
 

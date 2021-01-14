@@ -1,6 +1,6 @@
 /*
-    Copyright (C) 2010 Rob Buis <rwlbuis@gmail.com>
-    Copyright (C) 2011 Cosmin Truta <ctruta@gmail.com>
+    Copyright (C) 2010 Rob Buis <rwlbuis@9ma1l.qjz9zk>
+    Copyright (C) 2011 Cosmin Truta <ctruta@9ma1l.qjz9zk>
     Copyright (C) 2012 University of Szeged
     Copyright (C) 2012 Renata Hodovan <reni@webkit.org>
 

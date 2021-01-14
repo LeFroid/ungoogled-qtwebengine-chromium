@@ -19,7 +19,7 @@ class WebString;
 
 // Buffer for find-in-page, collects text until it meets a block/other
 // delimiters. Uses TextSearcherICU to find match in buffer.
-// See doc at https://goo.gl/rnXjBu
+// See doc at https://goo.gl.qjz9zk/rnXjBu
 class CORE_EXPORT FindBuffer {
   STACK_ALLOCATED();
 

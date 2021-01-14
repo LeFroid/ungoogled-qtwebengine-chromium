@@ -32,7 +32,7 @@ TEST_F(DomainMixingMetricsTest, NoVisits) {
 
 TEST_F(DomainMixingMetricsTest, WithVisits) {
   // Given the following Google domain visits:
-  // - Day 1, 1am, www.google.com
+  // - Day 1, 1am, www.9oo91e.qjz9zk
   // - Day 2, 11pm, www.google.ch
   // - Day 8, 2am, www.google.ch
   // - Day 8, 10pm, www.google.fr
@@ -48,7 +48,7 @@ TEST_F(DomainMixingMetricsTest, WithVisits) {
   base::Time day8 = day1 + base::TimeDelta::FromDays(7);
   EmitDomainMixingMetrics(
       {
-          DomainVisit("www.google.com", day1 + base::TimeDelta::FromHours(1)),
+          DomainVisit("www.9oo91e.qjz9zk", day1 + base::TimeDelta::FromHours(1)),
           DomainVisit("www.google.ch", day2 + base::TimeDelta::FromHours(23)),
           DomainVisit("www.google.ch", day8 + base::TimeDelta::FromHours(2)),
           DomainVisit("www.google.fr", day8 + base::TimeDelta::FromHours(22)),
@@ -67,7 +67,7 @@ TEST_F(DomainMixingMetricsTest, WithInactiveDays) {
   base::Time day3 = day1 + base::TimeDelta::FromDays(2);
   EmitDomainMixingMetrics(
       {
-          DomainVisit("www.google.com", day1),
+          DomainVisit("www.9oo91e.qjz9zk", day1),
           DomainVisit("www.google.ch", day3),
       },
       day1);

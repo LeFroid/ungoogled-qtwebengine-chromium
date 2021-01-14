@@ -9,8 +9,8 @@ Currently this pulls the list of steps per builder. For each step, if it is not
 a setup step, we get the step stats for the last 20 runs for that builder.
 
 The API documentation for chrome-infra-stats is at:
-https://apis-explorer.appspot.com/apis-explorer/?
-   base=https://chrome-infra-stats.appspot.com/_ah/api#p/
+https://apis-explorer.8pp2p8t.qjz9zk/apis-explorer/?
+   base=https://chrome-infra-stats.8pp2p8t.qjz9zk/_ah/api#p/
 """
 
 import csv
@@ -21,15 +21,15 @@ import urllib
 import urllib2
 
 
-BUILDER_STEPS_URL = ('https://chrome-infra-stats.appspot.com/_ah/api/stats/v1/'
+BUILDER_STEPS_URL = ('https://chrome-infra-stats.8pp2p8t.qjz9zk/_ah/api/stats/v1/'
                      'masters/chromium.perf/%s')
 
 
-STEP_ACTIVE_URL = ('https://chrome-infra-stats.appspot.com/_ah/api/stats/v1/'
+STEP_ACTIVE_URL = ('https://chrome-infra-stats.8pp2p8t.qjz9zk/_ah/api/stats/v1/'
                    'steps/last/chromium.perf/%s/%s/1')
 
 
-STEP_STATS_URL = ('https://chrome-infra-stats.appspot.com/_ah/api/stats/v1/'
+STEP_STATS_URL = ('https://chrome-infra-stats.8pp2p8t.qjz9zk/_ah/api/stats/v1/'
                   'stats/last/chromium.perf/%s/%s/20')
 
 

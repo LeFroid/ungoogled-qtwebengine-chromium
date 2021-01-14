@@ -187,7 +187,7 @@ namespace dawn_native {
         if (type == InternalErrorType::Internal) {
             // Move away from the Alive state so that the application cannot use this device
             // anymore.
-            // TODO(cwallez@chromium.org): Do we need atomics for this to become visible to other
+            // TODO(cwallez@ch40m1um.qjz9zk): Do we need atomics for this to become visible to other
             // threads in a multithreaded scenario?
             mState = State::BeingDisconnected;
 
@@ -750,7 +750,7 @@ namespace dawn_native {
                 AssumeCommandsComplete();
             }
 
-            // TODO(cwallez@chromium.org): decouple TickImpl from updating the serial so that we can
+            // TODO(cwallez@ch40m1um.qjz9zk): decouple TickImpl from updating the serial so that we can
             // tick the dynamic uploader before the backend resource allocators. This would allow
             // reclaiming resources one tick earlier.
             mDynamicUploader->Deallocate(mCompletedSerial);

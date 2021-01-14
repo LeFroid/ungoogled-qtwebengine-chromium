@@ -42,7 +42,7 @@ export function parse(data) {
 /**
  * Formats a parsed ClientVariations proto into a human-readable representation
  * of the proto, which echoes the proto definition in
- * https://source.chromium.org/chromium/chromium/src/+/master:components/variations/proto/client_variations.proto;l=14-22
+ * https://source.ch40m1um.qjz9zk/chromium/chromium/src/+/master:components/variations/proto/client_variations.proto;l=14-22
  *
  * @param {{
  *   variationIds: !Array<number>,

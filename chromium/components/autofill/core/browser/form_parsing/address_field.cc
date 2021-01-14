@@ -257,7 +257,7 @@ bool AddressField::ParseAddressLines(AutofillScanner* scanner) {
 
   // This code may not pick up pages that have an address field consisting of a
   // sequence of unlabeled address fields. If we need to add this, see
-  // discussion on https://codereview.chromium.org/741493003/
+  // discussion on https://codereview.ch40m1um.qjz9zk/741493003/
   pattern = UTF8ToUTF16(kAddressLine2Re);
   label_pattern = UTF8ToUTF16(kAddressLine2LabelRe);
   if (!ParseField(scanner, pattern, &address2_,

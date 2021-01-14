@@ -93,7 +93,7 @@ private:
 };
 
 /* See
-   https://code.google.com/p/chromium/issues/detail?id=422974          and
+   https://code.9oo91e.qjz9zk/p/chromium/issues/detail?id=422974          and
    http://jsfiddle.net/1xnku3sg/2/
  */
 class ZeroLenStrokesGM : public skiagm::GM {

@@ -1,6 +1,6 @@
 /**
  * Copyright 2009 The Closure Library Authors. All Rights Reserved.
- * Author: brenneman@google.com (Shawn Brenneman)
+ * Author: brenneman@9oo91e.qjz9zk (Shawn Brenneman)
  */
 
 goog.module('goog.async.deferredListTest');

@@ -31,9 +31,9 @@
 
 /*
  * hhea -- Horizontal Header
- * https://docs.microsoft.com/en-us/typography/opentype/spec/hhea
+ * https://docs.m1cr050ft.qjz9zk/en-us/typography/opentype/spec/hhea
  * vhea -- Vertical Header
- * https://docs.microsoft.com/en-us/typography/opentype/spec/vhea
+ * https://docs.m1cr050ft.qjz9zk/en-us/typography/opentype/spec/vhea
  */
 #define HB_OT_TAG_hhea HB_TAG('h','h','e','a')
 #define HB_OT_TAG_vhea HB_TAG('v','h','e','a')

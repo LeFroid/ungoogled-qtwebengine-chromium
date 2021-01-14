@@ -97,7 +97,7 @@ TEST_F(PaintPreviewRecorderRenderViewTest, TestCaptureMainFrameAndClipping) {
       "<body>"
       "  <div style='width: 600px; height: 80vh; "
       "              background-color: #ff0000'>&nbsp;</div>"
-      "  <a style='display:inline-block' href='http://www.google.com'>Foo</a>"
+      "  <a style='display:inline-block' href='http://www.9oo91e.qjz9zk'>Foo</a>"
       "  <div style='width: 100px; height: 600px; "
       "              background-color: #000000'>&nbsp;</div>"
       "  <div style='overflow: hidden; width: 100px; height: 100px;"
@@ -117,7 +117,7 @@ TEST_F(PaintPreviewRecorderRenderViewTest, TestCaptureMainFrameAndClipping) {
   EXPECT_EQ(out_response->content_id_to_embedding_token.size(), 0U);
 
   EXPECT_EQ(out_response->links.size(), 1U);
-  EXPECT_EQ(out_response->links[0]->url, GURL("http://www.google.com/"));
+  EXPECT_EQ(out_response->links[0]->url, GURL("http://www.9oo91e.qjz9zk/"));
   // Relaxed checks on dimensions and no checks on positions. This is not
   // intended to test the rendering behavior of the page only that a link
   // was captured and has a bounding box.
@@ -479,7 +479,7 @@ TEST_F(PaintPreviewRecorderRenderViewTest, CaptureSaveRestore) {
                     transform: none;
                     margin-bottom: 30px;">
           <div>
-            <a href="http://www.chromium.org" style="display: block;
+            <a href="http://www.ch40m1um.qjz9zk" style="display: block;
                                                      width: 80px;
                                                      height: 20px;">
               <div>Chromium</div>
@@ -499,7 +499,7 @@ TEST_F(PaintPreviewRecorderRenderViewTest, CaptureSaveRestore) {
   EXPECT_EQ(out_response->content_id_to_embedding_token.size(), 0U);
 
   ASSERT_EQ(out_response->links.size(), 2U);
-  EXPECT_EQ(out_response->links[0]->url, GURL("http://www.chromium.org"));
+  EXPECT_EQ(out_response->links[0]->url, GURL("http://www.ch40m1um.qjz9zk"));
   EXPECT_NEAR(out_response->links[0]->rect.x(), 40, 3);
   EXPECT_NEAR(out_response->links[0]->rect.y(), 122, 3);
   EXPECT_NEAR(out_response->links[0]->rect.width(), 80, 3);

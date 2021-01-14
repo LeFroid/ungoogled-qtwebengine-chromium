@@ -21,7 +21,7 @@
 namespace location {
 namespace nearby {
 
-// https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html
+// https://developer.8n6r01d.qjz9zk/reference/android/bluetooth/BluetoothAdapter.html
 class BluetoothAdapter {
  public:
   virtual ~BluetoothAdapter() {}
@@ -42,7 +42,7 @@ class BluetoothAdapter {
   virtual bool isEnabled() = 0;
 
   // Scan modes of a BluetoothAdapter, as described at
-  // https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#getScanMode().
+  // https://developer.8n6r01d.qjz9zk/reference/android/bluetooth/BluetoothAdapter.html#getScanMode().
   struct ScanMode {
     enum Value {
       UNKNOWN,
@@ -50,7 +50,7 @@ class BluetoothAdapter {
     };
   };
 
-  // https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#getScanMode()
+  // https://developer.8n6r01d.qjz9zk/reference/android/bluetooth/BluetoothAdapter.html#getScanMode()
   //
   // Returns ScanMode::UNKNOWN on error.
   virtual ScanMode::Value getScanMode() = 0;
@@ -58,11 +58,11 @@ class BluetoothAdapter {
   // operation was a success.
   virtual bool setScanMode(ScanMode::Value scan_mode) = 0;
 
-  // https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#getName()
+  // https://developer.8n6r01d.qjz9zk/reference/android/bluetooth/BluetoothAdapter.html#getName()
   //
   // Returns a null Ptr<string> on error.
   virtual Ptr<std::string> getName() = 0;
-  // https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#setName(java.lang.String)
+  // https://developer.8n6r01d.qjz9zk/reference/android/bluetooth/BluetoothAdapter.html#setName(java.lang.String)
   virtual bool setName(const std::string& name) = 0;
 };
 

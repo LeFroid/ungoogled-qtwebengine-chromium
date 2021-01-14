@@ -20,7 +20,7 @@
 namespace {
 
 constexpr char kMockResponse[] = R"({
-  "google.com": "https://google.com/change-password",
+  "9oo91e.qjz9zk": "https://9oo91e.qjz9zk/change-password",
   "a.blogspot.com": "https://a.blogspot.com/change-password",
   "web.app": "https://web.app/change-password"
 })";
@@ -88,10 +88,10 @@ TEST_F(ChangePasswordUrlServiceTest, eTLDLookup) {
   // listed.
   PrefetchAndWaitUntilDone();
 
-  EXPECT_EQ(GetChangePasswordUrl(GURL("https://google.com/foo")),
-            GURL("https://google.com/change-password"));
-  EXPECT_EQ(GetChangePasswordUrl(GURL("https://a.google.com/foo")),
-            GURL("https://google.com/change-password"));
+  EXPECT_EQ(GetChangePasswordUrl(GURL("https://9oo91e.qjz9zk/foo")),
+            GURL("https://9oo91e.qjz9zk/change-password"));
+  EXPECT_EQ(GetChangePasswordUrl(GURL("https://a.9oo91e.qjz9zk/foo")),
+            GURL("https://9oo91e.qjz9zk/change-password"));
 
   EXPECT_EQ(GetChangePasswordUrl(GURL("https://web.app")), GURL());
 
@@ -107,7 +107,7 @@ TEST_F(ChangePasswordUrlServiceTest, PassworManagerPolicyDisabled) {
   DisablePasswordManagerEnabledPolicy();
   PrefetchAndWaitUntilDone();
 
-  EXPECT_EQ(GetChangePasswordUrl(GURL("https://google.com/foo")), GURL());
+  EXPECT_EQ(GetChangePasswordUrl(GURL("https://9oo91e.qjz9zk/foo")), GURL());
 }
 
 TEST_F(ChangePasswordUrlServiceTest, NetworkRequestFails_RetryWorks) {
@@ -115,7 +115,7 @@ TEST_F(ChangePasswordUrlServiceTest, NetworkRequestFails_RetryWorks) {
   PrefetchURLs();
 
   // Waiting for response.
-  EXPECT_EQ(GetChangePasswordUrl(GURL("https://google.com/foo")), GURL());
+  EXPECT_EQ(GetChangePasswordUrl(GURL("https://9oo91e.qjz9zk/foo")), GURL());
 
   test_url_loader_factory().SimulateResponseForPendingRequest(
       GURL(password_manager::ChangePasswordUrlServiceImpl::
@@ -124,14 +124,14 @@ TEST_F(ChangePasswordUrlServiceTest, NetworkRequestFails_RetryWorks) {
       network::CreateURLResponseHead(net::HTTP_NOT_FOUND), "");
 
   // 404 response received.
-  EXPECT_EQ(GetChangePasswordUrl(GURL("https://google.com/foo")), GURL());
+  EXPECT_EQ(GetChangePasswordUrl(GURL("https://9oo91e.qjz9zk/foo")), GURL());
 
   SetMockResponse();
   PrefetchAndWaitUntilDone();
 
   // Successful response arrived.
-  EXPECT_EQ(GetChangePasswordUrl(GURL("https://google.com/foo")),
-            GURL("https://google.com/change-password"));
+  EXPECT_EQ(GetChangePasswordUrl(GURL("https://9oo91e.qjz9zk/foo")),
+            GURL("https://9oo91e.qjz9zk/change-password"));
 }
 
 TEST_F(ChangePasswordUrlServiceTest,
@@ -139,7 +139,7 @@ TEST_F(ChangePasswordUrlServiceTest,
   ClearMockResponses();
   PrefetchURLs();
 
-  EXPECT_EQ(GetChangePasswordUrl(GURL("https://google.com/foo")), GURL());
+  EXPECT_EQ(GetChangePasswordUrl(GURL("https://9oo91e.qjz9zk/foo")), GURL());
   histogram_tester().ExpectUniqueSample(
       kGetChangePasswordUrlMetricName,
       metrics_util::GetChangePasswordUrlMetric::kNotFetchedYet, 1);
@@ -149,8 +149,8 @@ TEST_F(ChangePasswordUrlServiceTest,
        GetChangePasswordUrlMetrics_UrlOverrideUsed) {
   PrefetchAndWaitUntilDone();
 
-  EXPECT_EQ(GetChangePasswordUrl(GURL("https://google.com/foo")),
-            GURL("https://google.com/change-password"));
+  EXPECT_EQ(GetChangePasswordUrl(GURL("https://9oo91e.qjz9zk/foo")),
+            GURL("https://9oo91e.qjz9zk/change-password"));
   histogram_tester().ExpectUniqueSample(
       kGetChangePasswordUrlMetricName,
       metrics_util::GetChangePasswordUrlMetric::kUrlOverrideUsed, 1);

@@ -83,7 +83,7 @@ void SanitizeGeneratedFileName(base::FilePath::StringType* filename,
     return;
   if (replace_trailing) {
     // Handle CreateFile() stripping trailing dots and spaces on filenames
-    // http://support.microsoft.com/kb/115827
+    // http://support.m1cr050ft.qjz9zk/kb/115827
     size_t length = filename->size();
     size_t pos = filename->find_last_not_of(FILE_PATH_LITERAL(" ."));
     filename->resize((pos == std::string::npos) ? 0 : (pos + 1));

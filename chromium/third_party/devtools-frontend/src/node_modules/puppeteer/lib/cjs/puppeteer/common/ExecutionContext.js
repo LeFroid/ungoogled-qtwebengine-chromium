@@ -25,15 +25,15 @@ const SOURCE_URL_REGEX = /^[\040\t]*\/\/[@#] sourceURL=\s*(\S*?)\s*$/m;
  * This class represents a context for JavaScript execution. A [Page] might have
  * many execution contexts:
  * - each
- *   {@link https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe |
+ *   {@link https://developer.m0z111a.qjz9zk/en-US/docs/Web/HTML/Element/iframe |
  *   frame } has "default" execution context that is always created after frame is
  *   attached to DOM. This context is returned by the
  *   {@link frame.executionContext()} method.
- * - {@link https://developer.chrome.com/extensions | Extension}'s content scripts
+ * - {@link https://developer.ch40me.qjz9zk/extensions | Extension}'s content scripts
  *   create additional execution contexts.
  *
  * Besides pages, execution contexts can be found in
- * {@link https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API |
+ * {@link https://developer.m0z111a.qjz9zk/en-US/docs/Web/API/Web_Workers_API |
  * workers }.
  *
  * @public

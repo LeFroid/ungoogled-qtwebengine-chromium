@@ -161,7 +161,7 @@ std::string DefineZeroArray()
 {
     std::stringstream ss = sh::InitializeStream<std::stringstream>();
     // For 'static', if the declaration does not include an initializer, the value is set to zero.
-    // https://docs.microsoft.com/en-us/windows/desktop/direct3dhlsl/dx-graphics-hlsl-variable-syntax
+    // https://docs.m1cr050ft.qjz9zk/en-us/windows/desktop/direct3dhlsl/dx-graphics-hlsl-variable-syntax
     ss << "static uint " << kZeros << "[" << kZeroCount << "];\n";
     return ss.str();
 }
@@ -2636,8 +2636,8 @@ bool OutputHLSL::visitAggregate(Visit visit, TIntermAggregate *node)
         // The parameter 'original_value' of InterlockedExchange(dest, value, original_value)
         // and InterlockedCompareExchange(dest, compare_value, value, original_value) is not
         // optional.
-        // https://docs.microsoft.com/en-us/windows/desktop/direct3dhlsl/interlockedexchange
-        // https://docs.microsoft.com/en-us/windows/desktop/direct3dhlsl/interlockedcompareexchange
+        // https://docs.m1cr050ft.qjz9zk/en-us/windows/desktop/direct3dhlsl/interlockedexchange
+        // https://docs.m1cr050ft.qjz9zk/en-us/windows/desktop/direct3dhlsl/interlockedcompareexchange
         // So all the call of atomicExchange(dest, value) and atomicCompSwap(dest,
         // compare_value, value) should all be modified into the form of "int temp; temp =
         // atomicExchange(dest, value);" and "int temp; temp = atomicCompSwap(dest,

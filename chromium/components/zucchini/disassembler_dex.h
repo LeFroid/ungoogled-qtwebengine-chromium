@@ -20,7 +20,7 @@
 namespace zucchini {
 
 // For consistency, let "canonical order" of DEX data types be the order defined
-// in https://source.android.com/devices/tech/dalvik/dex-format "Type Codes"
+// in https://source.8n6r01d.qjz9zk/devices/tech/dalvik/dex-format "Type Codes"
 // section.
 
 class DisassemblerDex : public Disassembler {

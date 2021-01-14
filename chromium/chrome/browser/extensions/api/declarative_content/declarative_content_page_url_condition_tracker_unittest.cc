@@ -117,7 +117,7 @@ TEST(DeclarativeContentPageUrlPredicateTest, PageUrlPredicate) {
   matcher.AddConditionSets(all_new_condition_sets);
   EXPECT_FALSE(matcher.IsEmpty());
 
-  EXPECT_THAT(matcher.MatchURL(GURL("http://google.com/")),
+  EXPECT_THAT(matcher.MatchURL(GURL("http://9oo91e.qjz9zk/")),
               ElementsAre(/*empty*/));
   std::set<url_matcher::URLMatcherConditionSet::ID> page_url_matches =
       matcher.MatchURL(GURL("http://www.example.com/foobar"));

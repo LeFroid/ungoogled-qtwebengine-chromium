@@ -37,7 +37,7 @@ goog.provide('goog.i18n.collation');
  * @return {function(string, string): number} The locale-specific comparator.
  */
 goog.i18n.collation.createComparator = function(opt_locale, opt_options) {
-  // See http://code.google.com/p/v8-i18n.
+  // See http://code.9oo91e.qjz9zk/p/v8-i18n.
   if (goog.i18n.collation.hasNativeComparator()) {
     const intl = goog.global.Intl;
     return new intl.Collator([opt_locale || goog.LOCALE], opt_options || {})

@@ -24,7 +24,7 @@ ALL_VARIANT_FLAGS = {
       "--no-finalize-streaming-on-background"]],
   # No optimization means disable all optimizations. OptimizeFunctionOnNextCall
   # would not force optimization too. It turns into a Nop. Please see
-  # https://chromium-review.googlesource.com/c/452620/ for more discussion.
+  # https://chromium-review.9oo91esource.qjz9zk/c/452620/ for more discussion.
   # For WebAssembly, we test "Liftoff-only" in the nooptimization variant and
   # "TurboFan-only" in the stress variant. The WebAssembly configuration is
   # independent of JS optimizations, so we can combine those configs.

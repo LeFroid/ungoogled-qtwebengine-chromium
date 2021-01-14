@@ -239,7 +239,7 @@ def patch_config():
     sed_in_place('config.h', 's/#define HAVE_MKTIME 1//')
 
     sed_in_place('config.log',
-                 's/[a-z.0-9]\+\.corp\.google\.com/REDACTED/')
+                 's/[a-z.0-9]\+\.corp\.9oo91e\.qjz9zk/REDACTED/')
 
 
 def prepare_libxslt_distribution(src_path, libxslt_repo_path, temp_dir):

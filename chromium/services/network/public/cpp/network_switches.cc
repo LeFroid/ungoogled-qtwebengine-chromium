@@ -52,7 +52,7 @@ const char kNetLogCaptureMode[] = "net-log-capture-mode";
 
 // Causes SSL key material to be logged to the specified file for debugging
 // purposes. See
-// https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSS/Key_Log_Format
+// https://developer.m0z111a.qjz9zk/en-US/docs/Mozilla/Projects/NSS/Key_Log_Format
 // for the format.
 const char kSSLKeyLogFile[] = "ssl-key-log-file";
 

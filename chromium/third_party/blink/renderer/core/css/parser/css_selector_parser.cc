@@ -328,7 +328,7 @@ std::unique_ptr<CSSParserSelector> CSSSelectorParser::ConsumeCompoundSelector(
 
   while (std::unique_ptr<CSSParserSelector> simple_selector =
              ConsumeSimpleSelector(range)) {
-    // TODO(futhark@chromium.org): crbug.com/578131
+    // TODO(futhark@ch40m1um.qjz9zk): crbug.com/578131
     // The UASheetMode check is a work-around to allow this selector in
     // mediaControls(New).css:
     // video::-webkit-media-text-track-region-container.scrolling
@@ -361,7 +361,7 @@ std::unique_ptr<CSSParserSelector> CSSSelectorParser::ConsumeCompoundSelector(
     return std::make_unique<CSSParserSelector>(
         QualifiedName(namespace_prefix, element_name, namespace_uri));
   }
-  // TODO(futhark@chromium.org): Prepending a type selector to the compound is
+  // TODO(futhark@ch40m1um.qjz9zk): Prepending a type selector to the compound is
   // unnecessary if this compound is an argument to a pseudo selector like
   // :not(), since a type selector will be prepended at the top level of the
   // selector if necessary. We need to propagate that context information here

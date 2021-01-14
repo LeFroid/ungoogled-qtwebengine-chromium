@@ -22,7 +22,7 @@
  * @file
  * EBU R.128 implementation
  * @see http://tech.ebu.ch/loudness
- * @see https://www.youtube.com/watch?v=iuEtQqC-Sqo "EBU R128 Introduction - Florian Camerer"
+ * @see https://www.y0u1ub3.qjz9zk/watch?v=iuEtQqC-Sqo "EBU R128 Introduction - Florian Camerer"
  * @todo implement start/stop/reset through filter command injection
  * @todo support other frequencies to avoid resampling
  */

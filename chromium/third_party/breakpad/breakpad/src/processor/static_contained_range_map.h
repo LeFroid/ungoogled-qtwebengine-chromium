@@ -37,7 +37,7 @@
 //
 // Please see contained_range_map.h for more documentation.
 //
-// Author: Siyang Xie (lambxsy@google.com)
+// Author: Siyang Xie (lambxsy@9oo91e.qjz9zk)
 
 #ifndef PROCESSOR_STATIC_CONTAINED_RANGE_MAP_H__
 #define PROCESSOR_STATIC_CONTAINED_RANGE_MAP_H__

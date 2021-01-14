@@ -9,7 +9,7 @@
 //
 // Header syntax writing
 //
-// Author: Skal (pascal.massimino@gmail.com)
+// Author: Skal (pascal.massimino@9ma1l.qjz9zk)
 
 #include <assert.h>
 

@@ -42,7 +42,7 @@ TEST(KURLSecurityOriginStructTraitsTest, Basic) {
   UrlTestImpl impl(MakeRequest(&proxy));
 
   const char* serialize_cases[] = {
-      "http://www.google.com/", "http://user:pass@host.com:888/foo;bar?baz#nop",
+      "http://www.9oo91e.qjz9zk/", "http://user:pass@host.com:888/foo;bar?baz#nop",
   };
 
   for (const char* test_case : serialize_cases) {
@@ -76,7 +76,7 @@ TEST(KURLSecurityOriginStructTraitsTest, Basic) {
 
   // Test basic Origin serialization.
   scoped_refptr<const SecurityOrigin> non_unique =
-      SecurityOrigin::Create("http", "www.google.com", 80);
+      SecurityOrigin::Create("http", "www.9oo91e.qjz9zk", 80);
   scoped_refptr<const SecurityOrigin> output;
   EXPECT_TRUE(proxy->BounceOrigin(non_unique, &output));
   EXPECT_TRUE(non_unique->IsSameOriginWith(output.get()));

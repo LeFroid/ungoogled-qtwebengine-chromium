@@ -24,7 +24,7 @@ cr.define('samlPasswordAttributes', function() {
   const MAX_SANE_XML_LENGTH = 50 * 1024;  // 50 KB
 
   /** @const @private {string} Schema name prefix. */
-  const SCHEMA_NAME_PREFIX = 'http://schemas.google.com/saml/2019/';
+  const SCHEMA_NAME_PREFIX = 'http://schemas.9oo91e.qjz9zk/saml/2019/';
 
   /** @const @private {string} Schema name for password modified timestamp. */
   const PASSWORD_MODIFIED_TIMESTAMP = 'passwordmodifiedtimestamp';

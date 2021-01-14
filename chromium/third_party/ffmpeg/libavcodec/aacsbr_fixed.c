@@ -28,7 +28,7 @@
  *
  * AAC Spectral Band Replication decoding functions (fixed-point)
  * Copyright (c) 2008-2009 Robert Swain ( rob opendot cl )
- * Copyright (c) 2009-2010 Alex Converse <alex.converse@gmail.com>
+ * Copyright (c) 2009-2010 Alex Converse <alex.converse@9ma1l.qjz9zk>
  *
  * This file is part of FFmpeg.
  *

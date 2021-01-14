@@ -9,9 +9,9 @@ This file is used to generate a comprehensive list of MultiDevice histograms
 along with a detailed description for each histogram.
 
 For best practices on writing histogram descriptions, see
-https://chromium.googlesource.com/chromium/src.git/+/HEAD/tools/metrics/histograms/README.md
+https://chromium.9oo91esource.qjz9zk/chromium/src.git/+/HEAD/tools/metrics/histograms/README.md
 
-Please send CLs to chromium-metrics-reviews@google.com rather than to specific
+Please send CLs to chromium-metrics-reviews@9oo91e.qjz9zk rather than to specific
 individuals. These CLs will be automatically reassigned to a reviewer within
 about 5 minutes. This approach helps the metrics team to load-balance incoming
 reviews. Googlers can read more about this at go/gwsq-gerrit.
@@ -23,8 +23,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="MultiDevice.BetterTogetherSuite.MultiDeviceFeatureState"
     enum="MultiDevice_FeatureState" expires_after="2021-02-02">
-  <owner>vecore@google.com</owner>
-  <owner>better-together-dev@google.com</owner>
+  <owner>vecore@9oo91e.qjz9zk</owner>
+  <owner>better-together-dev@9oo91e.qjz9zk</owner>
   <summary>
     Indicates the feature state of the Better Together Suite feature. This
     metric is emitted to at the creation of the user session (when the user logs
@@ -34,8 +34,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="MultiDevice.DeviceSyncService.FindEligibleDevices.Result"
     enum="BooleanSuccess" expires_after="2021-02-02">
-  <owner>vecore@google.com</owner>
-  <owner>better-together-dev@google.com</owner>
+  <owner>vecore@9oo91e.qjz9zk</owner>
+  <owner>better-together-dev@9oo91e.qjz9zk</owner>
   <summary>Result of trying to find eligible devices.</summary>
 </histogram>
 
@@ -43,8 +43,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
     name="MultiDevice.DeviceSyncService.FindEligibleDevices.Result.FailureReason"
     enum="MultiDevice_DeviceSyncService_DeviceSyncRequestFailureReason"
     expires_after="2021-02-02">
-  <owner>vecore@google.com</owner>
-  <owner>better-together-dev@google.com</owner>
+  <owner>vecore@9oo91e.qjz9zk</owner>
+  <owner>better-together-dev@9oo91e.qjz9zk</owner>
   <summary>
     Breaks down the percentages of reasons when failure occurs on
     FindEligibleDevices.
@@ -54,24 +54,24 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram name="MultiDevice.DeviceSyncService.ForceEnrollmentNow.Result"
     enum="MultiDevice_DeviceSyncService_ForceCryptAuthOperationResult"
     expires_after="2021-02-02">
-  <owner>vecore@google.com</owner>
-  <owner>better-together-dev@google.com</owner>
+  <owner>vecore@9oo91e.qjz9zk</owner>
+  <owner>better-together-dev@9oo91e.qjz9zk</owner>
   <summary>Result for when ForceEnrollmentNow is called.</summary>
 </histogram>
 
 <histogram name="MultiDevice.DeviceSyncService.ForceSyncNow.Result"
     enum="MultiDevice_DeviceSyncService_ForceCryptAuthOperationResult"
     expires_after="2021-02-02">
-  <owner>vecore@google.com</owner>
-  <owner>better-together-dev@google.com</owner>
+  <owner>vecore@9oo91e.qjz9zk</owner>
+  <owner>better-together-dev@9oo91e.qjz9zk</owner>
   <summary>Result for when ForceSyncNow is called.</summary>
 </histogram>
 
 <histogram
     name="MultiDevice.DeviceSyncService.SetSoftwareFeatureState.Disable.FailedFeature"
     enum="MultiDevice_DeviceSyncService_Features" expires_after="2021-02-02">
-  <owner>vecore@google.com</owner>
-  <owner>better-together-dev@google.com</owner>
+  <owner>vecore@9oo91e.qjz9zk</owner>
+  <owner>better-together-dev@9oo91e.qjz9zk</owner>
   <summary>
     Breaks down which features failed when attempted to disable.
   </summary>
@@ -80,15 +80,15 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram
     name="MultiDevice.DeviceSyncService.SetSoftwareFeatureState.Enable.FailedFeature"
     enum="MultiDevice_DeviceSyncService_Features" expires_after="2021-02-02">
-  <owner>vecore@google.com</owner>
-  <owner>better-together-dev@google.com</owner>
+  <owner>vecore@9oo91e.qjz9zk</owner>
+  <owner>better-together-dev@9oo91e.qjz9zk</owner>
   <summary>Breaks down which features failed when attempted to enable.</summary>
 </histogram>
 
 <histogram name="MultiDevice.DeviceSyncService.SetSoftwareFeatureState.Result"
     enum="BooleanSuccess" expires_after="2021-02-02">
-  <owner>vecore@google.com</owner>
-  <owner>better-together-dev@google.com</owner>
+  <owner>vecore@9oo91e.qjz9zk</owner>
+  <owner>better-together-dev@9oo91e.qjz9zk</owner>
   <summary>Result of enabling and disabling features for devices.</summary>
 </histogram>
 
@@ -96,8 +96,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
     name="MultiDevice.DeviceSyncService.SetSoftwareFeatureState.Result.FailureReason"
     enum="MultiDevice_DeviceSyncService_DeviceSyncRequestFailureReason"
     expires_after="2021-02-02">
-  <owner>vecore@google.com</owner>
-  <owner>better-together-dev@google.com</owner>
+  <owner>vecore@9oo91e.qjz9zk</owner>
+  <owner>better-together-dev@9oo91e.qjz9zk</owner>
   <summary>
     Breaks down the percentages of reasons when failure occurs on
     SetSoftwareFeatureState.
@@ -107,8 +107,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram name="MultiDevice.ForgetHostConfirmed"
     enum="MultiDevice_VerifyAndForgetHostConfirmationState"
     expires_after="2021-02-02">
-  <owner>vecore@google.com</owner>
-  <owner>better-together-dev@google.com</owner>
+  <owner>vecore@9oo91e.qjz9zk</owner>
+  <owner>better-together-dev@9oo91e.qjz9zk</owner>
   <summary>
     Compares when the Forget Host Button is pressed and when setup completes.
   </summary>
@@ -116,8 +116,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="MultiDevice.PostOOBESetupFlow.PageShown"
     enum="MultiDevice_PostOOBESetupFlow_Page" expires_after="2021-02-02">
-  <owner>vecore@google.com</owner>
-  <owner>better-together-dev@google.com</owner>
+  <owner>vecore@9oo91e.qjz9zk</owner>
+  <owner>better-together-dev@9oo91e.qjz9zk</owner>
   <summary>
     Provides a count of how many times each page of the MultiDevice setup flow
     was reached. This allows analysis of user dropoff between subsequent pages.
@@ -133,8 +133,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram
     name="MultiDevice.SecureChannel.BLE.GattConnectionToAuthentication.EffectiveSuccessRateWithRetries"
     enum="BooleanSuccess" expires_after="2021-02-02">
-  <owner>vecore@google.com</owner>
-  <owner>better-together-dev@google.com</owner>
+  <owner>vecore@9oo91e.qjz9zk</owner>
+  <owner>better-together-dev@9oo91e.qjz9zk</owner>
   <summary>
     A histogram measuring the success rate of authenticating a BLE channel once
     a GATT connection has been established. This metric measures the effective
@@ -146,8 +146,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram
     name="MultiDevice.SecureChannel.BLE.Performance.ConnectionToAuthenticationDuration.Background"
     units="ms" expires_after="2021-02-02">
-  <owner>vecore@google.com</owner>
-  <owner>better-together-dev@google.com</owner>
+  <owner>vecore@9oo91e.qjz9zk</owner>
+  <owner>better-together-dev@9oo91e.qjz9zk</owner>
   <summary>
     A time histogram measuring the time from the moment a GATT connection is
     made to the remote device, to the moment that an authenticated channel is
@@ -162,8 +162,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram
     name="MultiDevice.SecureChannel.BLE.Performance.ReceiveAdvertisementToConnectionDuration.Background"
     units="ms" expires_after="2021-02-02">
-  <owner>vecore@google.com</owner>
-  <owner>better-together-dev@google.com</owner>
+  <owner>vecore@9oo91e.qjz9zk</owner>
+  <owner>better-together-dev@9oo91e.qjz9zk</owner>
   <summary>
     A time histogram measuring the time from the moment a background
     advertisement is received, to the moment that a GATT connection is made to
@@ -178,8 +178,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram
     name="MultiDevice.SecureChannel.BLE.Performance.StartScanToAuthenticationDuration.Background"
     units="ms" expires_after="2021-02-02">
-  <owner>vecore@google.com</owner>
-  <owner>better-together-dev@google.com</owner>
+  <owner>vecore@9oo91e.qjz9zk</owner>
+  <owner>better-together-dev@9oo91e.qjz9zk</owner>
   <summary>
     A time histogram measuring the time it takes to create a secure connection
     to a remote device, from the moment a SecureChannelService client asks for a
@@ -195,8 +195,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram
     name="MultiDevice.SecureChannel.BLE.Performance.StartScanToConnectionDuration.Background"
     units="ms" expires_after="2021-02-02">
-  <owner>vecore@google.com</owner>
-  <owner>better-together-dev@google.com</owner>
+  <owner>vecore@9oo91e.qjz9zk</owner>
+  <owner>better-together-dev@9oo91e.qjz9zk</owner>
   <summary>
     A time histogram measuring the time it from the moment SecureChannelService
     starts scanning for a background advertisement, to the moment that it
@@ -211,8 +211,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram
     name="MultiDevice.SecureChannel.BLE.Performance.StartScanToReceiveAdvertisementDuration.Background"
     units="ms" expires_after="2021-02-02">
-  <owner>vecore@google.com</owner>
-  <owner>better-together-dev@google.com</owner>
+  <owner>vecore@9oo91e.qjz9zk</owner>
+  <owner>better-together-dev@9oo91e.qjz9zk</owner>
   <summary>
     A time histogram measuring the time it from the moment SecureChannelService
     starts scanning for a background advertisement, to the moment that it
@@ -227,8 +227,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram
     name="MultiDevice.SecureChannel.BLE.ReceiveAdvertisementToAuthentication.EffectiveSuccessRateWithRetries"
     enum="BooleanSuccess" expires_after="2021-02-02">
-  <owner>vecore@google.com</owner>
-  <owner>better-together-dev@google.com</owner>
+  <owner>vecore@9oo91e.qjz9zk</owner>
+  <owner>better-together-dev@9oo91e.qjz9zk</owner>
   <summary>
     A histogram measuring the success rate of authenticating a BLE channel once
     an advertisement has been received. This metric measures the effective rate;
@@ -239,8 +239,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram
     name="MultiDevice.SecureChannel.BLE.ReceiveAdvertisementToGattConnection.EffectiveSuccessRateWithRetries"
     enum="BooleanSuccess" expires_after="2021-02-02">
-  <owner>vecore@google.com</owner>
-  <owner>better-together-dev@google.com</owner>
+  <owner>vecore@9oo91e.qjz9zk</owner>
+  <owner>better-together-dev@9oo91e.qjz9zk</owner>
   <summary>
     A histogram measuring the success rate of creating a GATT connection once an
     advertisement has been received. This metric measures the effective rate;
@@ -250,8 +250,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="MultiDevice.Setup.HostStatus"
     enum="MultiDevice_Setup_HostStatus" expires_after="2021-02-02">
-  <owner>vecore@google.com</owner>
-  <owner>better-together-dev@google.com</owner>
+  <owner>vecore@9oo91e.qjz9zk</owner>
+  <owner>better-together-dev@9oo91e.qjz9zk</owner>
   <summary>
     Breaks down percentages of host statuses. This metric is emitted to at the
     creation of the user session (when the user logs in), and when host status
@@ -261,8 +261,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="MultiDevice.Setup.HostVerifier.DoesHostHaveCryptoData"
     enum="Boolean" expires_after="2021-02-02">
-  <owner>nohle@chromium.org</owner>
-  <owner>better-together-dev@google.com</owner>
+  <owner>nohle@ch40m1um.qjz9zk</owner>
+  <owner>better-together-dev@9oo91e.qjz9zk</owner>
   <summary>
     Records if a multi-device host device has all of the crypto data necessary
     for secure communication via Bluetooth. This will be false if v2 DeviceSync
@@ -276,8 +276,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram name="MultiDevice.VerifyButtonClicked"
     enum="MultiDevice_VerifyAndForgetHostConfirmationState"
     expires_after="2021-02-02">
-  <owner>vecore@google.com</owner>
-  <owner>better-together-dev@google.com</owner>
+  <owner>vecore@9oo91e.qjz9zk</owner>
+  <owner>better-together-dev@9oo91e.qjz9zk</owner>
   <summary>
     Compares when the Verify Host Button is pressed to when setup completes.
   </summary>
@@ -285,8 +285,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="MultiDevice.WifiSync.MultiDeviceFeatureState"
     enum="MultiDevice_FeatureState" expires_after="2021-09-01">
-  <owner>cvandermerwe@google.com</owner>
-  <owner>better-together-dev@google.com</owner>
+  <owner>cvandermerwe@9oo91e.qjz9zk</owner>
+  <owner>better-together-dev@9oo91e.qjz9zk</owner>
   <summary>
     Indicates the feature state of the Wifi Sync V2 feature. This metric is
     emitted to at the creation of the user session (when the user logs in), and

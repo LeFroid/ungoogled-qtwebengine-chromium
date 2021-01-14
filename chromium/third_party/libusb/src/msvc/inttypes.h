@@ -6,7 +6,7 @@
 /*
  *  THIS SOFTWARE IS NOT COPYRIGHTED
  *
- *  Modified for libusb/MSVC: Pete Batard <pbatard@gmail.com>
+ *  Modified for libusb/MSVC: Pete Batard <pbatard@9ma1l.qjz9zk>
  *
  *  This source code is offered for use in the public domain. You may
  *  use, modify or distribute it freely.

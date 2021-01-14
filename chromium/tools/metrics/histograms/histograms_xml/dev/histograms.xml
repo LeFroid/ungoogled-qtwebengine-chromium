@@ -9,9 +9,9 @@ This file is used to generate a comprehensive list of Dev histograms
 along with a detailed description for each histogram.
 
 For best practices on writing histogram descriptions, see
-https://chromium.googlesource.com/chromium/src.git/+/HEAD/tools/metrics/histograms/README.md
+https://chromium.9oo91esource.qjz9zk/chromium/src.git/+/HEAD/tools/metrics/histograms/README.md
 
-Please send CLs to chromium-metrics-reviews@google.com rather than to specific
+Please send CLs to chromium-metrics-reviews@9oo91e.qjz9zk rather than to specific
 individuals. These CLs will be automatically reassigned to a reviewer within
 about 5 minutes. This approach helps the metrics team to load-balance incoming
 reviews. Googlers can read more about this at go/gwsq-gerrit.
@@ -23,17 +23,17 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="DevTools.ActionTaken" enum="DevToolsAction"
     expires_after="2021-07-31">
-  <owner>alph@chromium.org</owner>
-  <owner>yangguo@chromium.org</owner>
-  <owner>bmeurer@chromium.org</owner>
+  <owner>alph@ch40m1um.qjz9zk</owner>
+  <owner>yangguo@ch40m1um.qjz9zk</owner>
+  <owner>bmeurer@ch40m1um.qjz9zk</owner>
   <summary>Specified DevTools action has been taken.</summary>
 </histogram>
 
 <histogram name="DevTools.BackgroundService.ClearEvents"
     enum="ServiceWorkerStatusCode" expires_after="M87">
-  <owner>yangguo@chromium.org</owner>
-  <owner>rayankans@chromium.org</owner>
-  <owner>bmeurer@chromium.org</owner>
+  <owner>yangguo@ch40m1um.qjz9zk</owner>
+  <owner>rayankans@ch40m1um.qjz9zk</owner>
+  <owner>bmeurer@ch40m1um.qjz9zk</owner>
   <summary>
     The result of clearing all stored events for a Background Service feature.
     This is called if a developer clicks on a delete button in a Background
@@ -43,9 +43,9 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="DevTools.BackgroundService.GetEvents"
     enum="ServiceWorkerStatusCode" expires_after="M87">
-  <owner>rayankans@chromium.org</owner>
-  <owner>yangguo@chromium.org</owner>
-  <owner>bmeurer@chromium.org</owner>
+  <owner>rayankans@ch40m1um.qjz9zk</owner>
+  <owner>yangguo@ch40m1um.qjz9zk</owner>
+  <owner>bmeurer@ch40m1um.qjz9zk</owner>
   <summary>
     The result of loading all stored events for a Background Service feature.
     This is called when the a Bakground Service DevTools panel is opened.
@@ -54,9 +54,9 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="DevTools.BackgroundService.LogEvent"
     enum="ServiceWorkerStatusCode" expires_after="M87">
-  <owner>rayankans@chromium.org</owner>
-  <owner>yangguo@chromium.org</owner>
-  <owner>bmeurer@chromium.org</owner>
+  <owner>rayankans@ch40m1um.qjz9zk</owner>
+  <owner>yangguo@ch40m1um.qjz9zk</owner>
+  <owner>bmeurer@ch40m1um.qjz9zk</owner>
   <summary>
     The result of logging a Background Service event. An event is logged if
     `Recording` mode is on and a relevant Background Service event is taking
@@ -66,9 +66,9 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="DevTools.BackgroundService.StartRecording"
     enum="DevToolsBackgroundService" expires_after="M87">
-  <owner>yangguo@chromium.org</owner>
-  <owner>bmeurer@chromium.org</owner>
-  <owner>rayankans@chromium.org</owner>
+  <owner>yangguo@ch40m1um.qjz9zk</owner>
+  <owner>bmeurer@ch40m1um.qjz9zk</owner>
+  <owner>rayankans@ch40m1um.qjz9zk</owner>
   <summary>
     Records the Background Service for which `Recording` mode was enabled. This
     is called if the developer toggles the record button in the relevant
@@ -78,9 +78,9 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="DevTools.ColorPicker.FixedColor"
     enum="DevToolsColorPickerFixedColor" expires_after="2021-03-17">
-  <owner>yangguo@chromium.org</owner>
-  <owner>mathias@chromium.org</owner>
-  <owner>alexrudenko@chromium.org</owner>
+  <owner>yangguo@ch40m1um.qjz9zk</owner>
+  <owner>mathias@ch40m1um.qjz9zk</owner>
+  <owner>alexrudenko@ch40m1um.qjz9zk</owner>
   <summary>
     Records which color contrast threshold was fixed by the user in the Color
     Picker.
@@ -89,9 +89,9 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="DevTools.ComputedStyleGrouping"
     enum="DevToolsComputedStyleGrouping" expires_after="M87">
-  <owner>changhaohan@chromium.org</owner>
-  <owner>yangguo@chromium.org</owner>
-  <owner>mathias@chromium.org</owner>
+  <owner>changhaohan@ch40m1um.qjz9zk</owner>
+  <owner>yangguo@ch40m1um.qjz9zk</owner>
+  <owner>mathias@ch40m1um.qjz9zk</owner>
   <summary>
     Records state changes for DevTools computed style grouping toggled from the
     Computed pane.
@@ -100,9 +100,9 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="DevTools.CSSGridSettings2" enum="DevtoolsGridSettingChanged2"
     expires_after="M88">
-  <owner>yangguo@chromium.org</owner>
-  <owner>brgoddar@microsoft.com</owner>
-  <owner>leo.lee@microsoft.com</owner>
+  <owner>yangguo@ch40m1um.qjz9zk</owner>
+  <owner>brgoddar@m1cr050ft.qjz9zk</owner>
+  <owner>leo.lee@m1cr050ft.qjz9zk</owner>
   <summary>
     DevTools settings for CSS grid recorded on launch of the DevTools.
   </summary>
@@ -110,9 +110,9 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="DevTools.DualScreenDeviceEmulated"
     enum="DevToolsDualScreenDeviceEmulated" expires_after="M87">
-  <owner>yangguo@chromium.org</owner>
-  <owner>soxia@microsoft.com</owner>
-  <owner>leo.lee@microsoft.com</owner>
+  <owner>yangguo@ch40m1um.qjz9zk</owner>
+  <owner>soxia@m1cr050ft.qjz9zk</owner>
+  <owner>leo.lee@m1cr050ft.qjz9zk</owner>
   <summary>
     Records the usage of dual screen device emulation: a dual screen or fold
     device is selected for emulation; the span button is hit; or the platform
@@ -122,9 +122,9 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="DevTools.ExperimentDisabled" enum="DevtoolsExperiments"
     expires_after="2021-07-31">
-  <owner>yangguo@chromium.org</owner>
-  <owner>brgoddar@microsoft.com</owner>
-  <owner>shanejc@microsoft.com</owner>
+  <owner>yangguo@ch40m1um.qjz9zk</owner>
+  <owner>brgoddar@m1cr050ft.qjz9zk</owner>
+  <owner>shanejc@m1cr050ft.qjz9zk</owner>
   <summary>
     Fired when a devtools experiment is disabled from the experiments tab.
   </summary>
@@ -132,9 +132,9 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="DevTools.ExperimentEnabled" enum="DevtoolsExperiments"
     expires_after="2021-07-31">
-  <owner>yangguo@chromium.org</owner>
-  <owner>brgoddar@microsoft.com</owner>
-  <owner>shanejc@microsoft.com</owner>
+  <owner>yangguo@ch40m1um.qjz9zk</owner>
+  <owner>brgoddar@m1cr050ft.qjz9zk</owner>
+  <owner>shanejc@m1cr050ft.qjz9zk</owner>
   <summary>
     Fired when a devtools experiment is enabled from the experiments tab.
   </summary>
@@ -142,9 +142,9 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="DevTools.ExperimentEnabledAtLaunch" enum="DevtoolsExperiments"
     expires_after="2021-07-31">
-  <owner>yangguo@chromium.org</owner>
-  <owner>brgoddar@microsoft.com</owner>
-  <owner>shanejc@microsoft.com</owner>
+  <owner>yangguo@ch40m1um.qjz9zk</owner>
+  <owner>brgoddar@m1cr050ft.qjz9zk</owner>
+  <owner>shanejc@m1cr050ft.qjz9zk</owner>
   <summary>
     Fires for each experiment that is enabled at the time of Devtools Launch.
   </summary>
@@ -152,9 +152,9 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="DevTools.GridOverlayOpenedFrom"
     enum="DevToolsGridOverlayOpenedFrom" expires_after="M88">
-  <owner>changhaohan@chromium.org</owner>
-  <owner>yangguo@chromium.org</owner>
-  <owner>mathias@chromium.org</owner>
+  <owner>changhaohan@ch40m1um.qjz9zk</owner>
+  <owner>yangguo@ch40m1um.qjz9zk</owner>
+  <owner>mathias@ch40m1um.qjz9zk</owner>
   <summary>
     Records which UI element is being used to open Grid overlays.
   </summary>
@@ -162,9 +162,9 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="DevTools.HighlightedPersistentCSSGridCount"
     enum="DevToolsHighlightedPersistentCSSGridCount" expires_after="M88">
-  <owner>yangguo@chromium.org</owner>
-  <owner>patrick.brosset@microsoft.com</owner>
-  <owner>leo.lee@microsoft.com</owner>
+  <owner>yangguo@ch40m1um.qjz9zk</owner>
+  <owner>patrick.brosset@m1cr050ft.qjz9zk</owner>
+  <owner>leo.lee@m1cr050ft.qjz9zk</owner>
   <summary>
     Number of simultaneous persistent CSS grid overlays in DevTools, recorded
     after each change.
@@ -172,9 +172,9 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 </histogram>
 
 <histogram name="DevTools.InspectElement" units="ms" expires_after="2021-07-31">
-  <owner>alph@chromium.org</owner>
-  <owner>yangguo@chromium.org</owner>
-  <owner>bmeurer@chromium.org</owner>
+  <owner>alph@ch40m1um.qjz9zk</owner>
+  <owner>yangguo@ch40m1um.qjz9zk</owner>
+  <owner>bmeurer@ch40m1um.qjz9zk</owner>
   <summary>
     Time to load Developer Tools when user clicks Inspect Element in the context
     menu.
@@ -183,8 +183,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="DevTools.IssuesPanelIssueExpanded"
     enum="DevToolsIssuesPanelIssueExpanded" expires_after="2021-08-27">
-  <owner>yangguo@chromium.org</owner>
-  <owner>jegarc@microsoft.com</owner>
+  <owner>yangguo@ch40m1um.qjz9zk</owner>
+  <owner>jegarc@m1cr050ft.qjz9zk</owner>
   <summary>
     Records which type of issue is expanded in the issues panel.
   </summary>
@@ -192,8 +192,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="DevTools.IssuesPanelOpenedFrom"
     enum="DevToolsIssuesPanelOpenedFrom" expires_after="2021-03-28">
-  <owner>yangguo@chromium.org</owner>
-  <owner>bmeurer@chromium.org</owner>
+  <owner>yangguo@ch40m1um.qjz9zk</owner>
+  <owner>bmeurer@ch40m1um.qjz9zk</owner>
   <summary>
     Records which UI element is being used to open the Issues Panel.
   </summary>
@@ -201,8 +201,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="DevTools.IssuesPanelResourceOpened"
     enum="DevToolsIssuesPanelResourceOpened" expires_after="2021-08-27">
-  <owner>yangguo@chromium.org</owner>
-  <owner>jegarc@microsoft.com</owner>
+  <owner>yangguo@ch40m1um.qjz9zk</owner>
+  <owner>jegarc@m1cr050ft.qjz9zk</owner>
   <summary>
     Records which resource from what issue category is opened in the issue
     panel.
@@ -211,9 +211,9 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="DevTools.KeybindSetSettingChanged" enum="DevToolsKeybindSets"
     expires_after="2021-10-31">
-  <owner>yangguo@chromium.org</owner>
-  <owner>jalyn@microsoft.com</owner>
-  <owner>leo.lee@microsoft.com</owner>
+  <owner>yangguo@ch40m1um.qjz9zk</owner>
+  <owner>jalyn@m1cr050ft.qjz9zk</owner>
+  <owner>leo.lee@m1cr050ft.qjz9zk</owner>
   <summary>
     Recorded when the user changes which keyboard shortcut presets they are
     using in the DevTools.
@@ -222,9 +222,9 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="DevTools.KeyboardShortcutFired"
     enum="DevToolsKeyboardShortcutAction" expires_after="2021-10-31">
-  <owner>yangguo@chromium.org</owner>
-  <owner>jalyn@microsoft.com</owner>
-  <owner>leo.lee@microsoft.com</owner>
+  <owner>yangguo@ch40m1um.qjz9zk</owner>
+  <owner>jalyn@m1cr050ft.qjz9zk</owner>
+  <owner>leo.lee@m1cr050ft.qjz9zk</owner>
   <summary>
     Recorded when a DevTools keyboard shortcut has been processed and
     successfully executed its action.
@@ -234,8 +234,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram base="true" name="DevTools.Launch" units="ms" expires_after="M94">
 <!-- Name completed by histogram_suffixes name="DevToolsLaunchPanels" -->
 
-  <owner>yangguo@chromium.org</owner>
-  <owner>bmeurer@chromium.org</owner>
+  <owner>yangguo@ch40m1um.qjz9zk</owner>
+  <owner>bmeurer@ch40m1um.qjz9zk</owner>
   <summary>
     Measures the time until a given tool is interactive during a cold start of
     the DevTools.
@@ -243,33 +243,33 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 </histogram>
 
 <histogram name="DevTools.PanelClosed" enum="DevToolsPanel" expires_after="M94">
-  <owner>yangguo@chromium.org</owner>
-  <owner>joselea@microsoft.com</owner>
-  <owner>shanejc@microsoft.com</owner>
+  <owner>yangguo@ch40m1um.qjz9zk</owner>
+  <owner>joselea@m1cr050ft.qjz9zk</owner>
+  <owner>shanejc@m1cr050ft.qjz9zk</owner>
   <summary>Specified DevTools panel was closed.</summary>
 </histogram>
 
 <histogram name="DevTools.PanelShown" enum="DevToolsPanel"
     expires_after="2021-07-31">
-  <owner>alph@chromium.org</owner>
-  <owner>yangguo@chromium.org</owner>
-  <owner>bmeurer@chromium.org</owner>
+  <owner>alph@ch40m1um.qjz9zk</owner>
+  <owner>yangguo@ch40m1um.qjz9zk</owner>
+  <owner>bmeurer@ch40m1um.qjz9zk</owner>
   <summary>Specified DevTools panel was shown.</summary>
 </histogram>
 
 <histogram name="DevTools.SettingChanged" enum="DevToolsSetting"
     expires_after="2021-07-31">
-  <owner>alph@chromium.org</owner>
-  <owner>yangguo@chromium.org</owner>
-  <owner>bmeurer@chromium.org</owner>
+  <owner>alph@ch40m1um.qjz9zk</owner>
+  <owner>yangguo@ch40m1um.qjz9zk</owner>
+  <owner>bmeurer@ch40m1um.qjz9zk</owner>
   <summary>Specified DevTools setting was changed.</summary>
 </histogram>
 
 <histogram name="DevTools.SidebarPaneShown" enum="DevToolsSidebarPane"
     expires_after="2021-07-31">
-  <owner>changhaohan@chromium.org</owner>
-  <owner>yangguo@chromium.org</owner>
-  <owner>bmeurer@chromium.org</owner>
+  <owner>changhaohan@ch40m1um.qjz9zk</owner>
+  <owner>yangguo@ch40m1um.qjz9zk</owner>
+  <owner>bmeurer@ch40m1um.qjz9zk</owner>
   <summary>Specified DevTools sidebar pane was shown.</summary>
 </histogram>
 

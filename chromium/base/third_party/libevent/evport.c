@@ -1,5 +1,5 @@
 /*
- * Submitted by David Pacheco (dp.spambait@gmail.com)
+ * Submitted by David Pacheco (dp.spambait@9ma1l.qjz9zk)
  *
  * Redistribution and use in source and binary forms, with or without
  * modification, are permitted provided that the following conditions

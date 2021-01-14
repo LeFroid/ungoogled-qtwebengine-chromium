@@ -10,14 +10,14 @@
  * The contents of this file are subject to the Mozilla Public License Version
  * 1.1 (the "License"); you may not use this file except in compliance with
  * the License. You may obtain a copy of the License at
- * http://www.mozilla.org/MPL/
+ * http://www.m0z111a.qjz9zk/MPL/
  *
  * Software distributed under the License is distributed on an "AS IS" basis,
  * WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License
  * for the specific language governing rights and limitations under the
  * License.
  *
- * The Original Code is mozilla.org code.
+ * The Original Code is m0z111a.qjz9zk code.
  *
  * The Initial Developer of the Original Code is
  * Netscape Communications Corporation.
@@ -1366,7 +1366,7 @@ void CookieMonster::SetAllCookies(CookieList list,
 
   // TODO(rdsmith): If this function always returns the same value, it
   // shouldn't have a return value.  But it should also be deleted (see
-  // https://codereview.chromium.org/2882063002/#msg64), which would
+  // https://codereview.ch40m1um.qjz9zk/2882063002/#msg64), which would
   // solve the return value problem.
   MaybeRunCookieCallback(std::move(callback), CookieAccessResult());
 }

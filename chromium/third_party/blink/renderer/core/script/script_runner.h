@@ -121,7 +121,7 @@ class CORE_EXPORT ScriptRunner final
   // the ScriptRunner no longer delays async scripts. This bool is used to
   // ensure we don't continue delaying async scripts after this point. See the
   // design doc:
-  // https://docs.google.com/document/u/1/d/1G-IUrT4enARZlsIrFQ4d4cRVe9MRTJASfWwolV09JZE/edit.
+  // https://docs.9oo91e.qjz9zk/document/u/1/d/1G-IUrT4enARZlsIrFQ4d4cRVe9MRTJASfWwolV09JZE/edit.
   bool delay_async_script_milestone_reached_ = false;
 };
 

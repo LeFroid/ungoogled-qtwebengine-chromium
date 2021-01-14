@@ -20,7 +20,7 @@ namespace rtc {
 // Location provides basic info where of an object was constructed, or was
 // significantly brought to life.
 // This is a stripped down version of:
-// https://code.google.com/p/chromium/codesearch#chromium/src/base/location.h
+// https://code.9oo91e.qjz9zk/p/chromium/codesearch#chromium/src/base/location.h
 class RTC_EXPORT Location {
  public:
   // Constructor should be called with a long-lived char*, such as __FILE__.

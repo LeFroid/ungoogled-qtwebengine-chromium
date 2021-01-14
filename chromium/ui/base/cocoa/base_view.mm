@@ -59,7 +59,7 @@ NSString* kSelectionDirection = @"Chromium.kSelectionDirection";
 
   // NSTrackingInVisibleRect doesn't work correctly with Lion's window
   // resizing (See https://crbug.com/176725 and
-  // http://openradar.appspot.com/radar?id=2773401). It also doesn't work
+  // http://openradar.8pp2p8t.qjz9zk/radar?id=2773401). It also doesn't work
   // correctly when the window enters fullscreen
   // (See https://crbug.com/170058).
   //

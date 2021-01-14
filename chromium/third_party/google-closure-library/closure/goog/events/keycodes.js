@@ -251,7 +251,7 @@ goog.events.KeyCodes.isTextModifyingKeyEvent = function(e) {
  * That's not entirely correct though, for instance there's no distinction
  * between upper and lower case letters.
  *
- * [1] http://msdn2.microsoft.com/en-us/library/ms536939(VS.85).aspx)
+ * [1] http://msdn2.m1cr050ft.qjz9zk/en-us/library/ms536939(VS.85).aspx)
  *
  * Safari is similar to IE, but does not fire keypress for ESC.
  *

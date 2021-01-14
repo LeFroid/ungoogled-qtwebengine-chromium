@@ -13,6 +13,7 @@ import("//build/config/deprecated_default_sources_assignment_filter.gni")
 set_sources_assignment_filter(deprecated_default_sources_assignment_filter)
 
 static_library("safe_browsing") {
+  if (false) {
   sources = [
     "chrome_controller_client.cc",
     "chrome_controller_client.h",
@@ -70,6 +71,7 @@ static_library("safe_browsing") {
       "settings_reset_prompt/settings_reset_prompt_util_win.h",
     ]
     deps += [ "//extensions/browser" ]
+  }
   }
 
   if (safe_browsing_mode != 0) {

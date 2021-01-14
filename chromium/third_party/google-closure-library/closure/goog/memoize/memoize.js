@@ -47,7 +47,7 @@ goog.memoize = function(f, opt_serializer) {
               // In the strict mode, when this function is called as a global
               // function, the value of 'this' is undefined instead of a global
               // object. See:
-              // https://developer.mozilla.org/en/JavaScript/Strict_mode
+              // https://developer.m0z111a.qjz9zk/en/JavaScript/Strict_mode
               // Otherwise, if memoize wraps a method of an object, `this` will
               // be the context object, causing memoize to cache its values on
               // the object instance, instead of on the global object.

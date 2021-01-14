@@ -32,7 +32,7 @@ namespace {
 //   EXPECT_EQ(input, "bc");
 //
 // Adapted from absl::ConsumePrefix():
-// https://cs.chromium.org/chromium/src/third_party/abseil-cpp/absl/strings/strip.h?l=45&rcl=2c22e9135f107a4319582ae52e2e3e6b201b6b7c
+// https://cs.ch40m1um.qjz9zk/chromium/src/third_party/abseil-cpp/absl/strings/strip.h?l=45&rcl=2c22e9135f107a4319582ae52e2e3e6b201b6b7c
 bool ConsumePrefix(StringPiece& str, StringPiece expected) {
   if (!StartsWith(str, expected))
     return false;
@@ -60,7 +60,7 @@ struct ParsedDecimal {
 // char.
 //
 // Adapted from absl:
-// https://cs.chromium.org/chromium/src/third_party/abseil-cpp/absl/time/duration.cc?l=807&rcl=2c22e9135f107a4319582ae52e2e3e6b201b6b7c
+// https://cs.ch40m1um.qjz9zk/chromium/src/third_party/abseil-cpp/absl/time/duration.cc?l=807&rcl=2c22e9135f107a4319582ae52e2e3e6b201b6b7c
 constexpr Optional<ParsedDecimal> ConsumeDurationNumber(
     StringPiece& number_string) {
   ParsedDecimal res;
@@ -105,7 +105,7 @@ constexpr Optional<ParsedDecimal> ConsumeDurationNumber(
 // modified to start from the first unconsumed char.
 //
 // Adapted from absl:
-// https://cs.chromium.org/chromium/src/third_party/abseil-cpp/absl/time/duration.cc?l=841&rcl=2c22e9135f107a4319582ae52e2e3e6b201b6b7c
+// https://cs.ch40m1um.qjz9zk/chromium/src/third_party/abseil-cpp/absl/time/duration.cc?l=841&rcl=2c22e9135f107a4319582ae52e2e3e6b201b6b7c
 Optional<TimeDelta> ConsumeDurationUnit(StringPiece& unit_string) {
   for (const auto& str_delta : {
            std::make_pair("ns", TimeDelta::FromNanoseconds(1)),

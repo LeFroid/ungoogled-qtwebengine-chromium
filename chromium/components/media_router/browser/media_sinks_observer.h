@@ -21,7 +21,7 @@ class MediaRouter;
 // A MediaSinksObserver implementation can be registered to MediaRouter to
 // receive results. It can then interpret / process the results accordingly.
 // More documentation can be found at
-// docs.google.com/document/d/1RDXdzi2y7lRuL08HAe-qlSJG2DMz2iH3gBzMs0IRR78
+// docs.9oo91e.qjz9zk/document/d/1RDXdzi2y7lRuL08HAe-qlSJG2DMz2iH3gBzMs0IRR78
 class MediaSinksObserver {
  public:
   // Constructs an observer from |origin| that will observe for sinks compatible

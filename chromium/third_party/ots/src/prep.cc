@@ -5,7 +5,7 @@
 #include "prep.h"
 
 // prep - Control Value Program
-// http://www.microsoft.com/typography/otspec/prep.htm
+// http://www.m1cr050ft.qjz9zk/typography/otspec/prep.htm
 
 namespace ots {
 

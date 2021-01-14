@@ -96,7 +96,7 @@ const net::BackoffEntry::Policy kAutofillBackoffPolicy = {
 };
 
 const char kDefaultAutofillServerURL[] =
-    "https://content-autofill.googleapis.com/";
+    "https://content-autofill.9oo91eapis.qjz9zk/";
 
 // The default number of days after which to reset the registry of autofill
 // events for which an upload has been sent.
@@ -815,7 +815,7 @@ AutofillDownloadManager::GetRequestURLAndMethodForApi(
   }
 
   // Make the canonical URL to query the API, e.g.,
-  // https://autofill.googleapis.com/v1/forms/1234?alt=proto.
+  // https://autofill.9oo91eapis.qjz9zk/v1/forms/1234?alt=proto.
   GURL url = autofill_server_url_.Resolve(
       GetAPIMethodUrl(request_data.request_type, resource_id, method));
 

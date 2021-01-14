@@ -61,7 +61,7 @@ goog.crypt.byteArrayToString = function(bytes) {
 
   // The remaining logic splits conversion by chunks since
   // Function#apply() has a maximum parameter count.
-  // See discussion: http://goo.gl/LrWmZ9
+  // See discussion: http://goo.gl.qjz9zk/LrWmZ9
 
   var str = '';
   for (var i = 0; i < bytes.length; i += CHUNK_SIZE) {

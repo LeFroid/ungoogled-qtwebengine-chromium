@@ -64,7 +64,7 @@ using google_breakpad::WindowsStringUtils;
 
 const char* kMissingStringDelimiters = "|";
 const char* kLocalCachePath = "c:\\symbols";
-const char* kNoExeMSSSServer = "http://msdl.microsoft.com/download/symbols/";
+const char* kNoExeMSSSServer = "http://msdl.m1cr050ft.qjz9zk/download/symbols/";
 
 // Windows stdio doesn't do line buffering.  Use this function to flush after
 // writing to stdout and stderr so that a log will be available if the

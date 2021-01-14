@@ -7039,7 +7039,7 @@ AXPlatformNodeWin* AXPlatformNodeWin::ComputeUIALabeledBy() {
 
 bool AXPlatformNodeWin::CanHaveUIALabeledBy() {
   // Not all control types expect a value for this property. See
-  // https://docs.microsoft.com/en-us/windows/win32/winauto/uiauto-supportinguiautocontroltypes
+  // https://docs.m1cr050ft.qjz9zk/en-us/windows/win32/winauto/uiauto-supportinguiautocontroltypes
   // for a complete list of control types. Each one of them has specific
   // expectations regarding the UIA_LabeledByPropertyId.
   switch (ComputeUIAControlType()) {
@@ -7125,7 +7125,7 @@ bool AXPlatformNodeWin::IsUIAControl() const {
     }  // end of text only case.
 
     const AXNodeData& data = GetData();
-    // https://docs.microsoft.com/en-us/windows/win32/winauto/uiauto-treeoverview#control-view
+    // https://docs.m1cr050ft.qjz9zk/en-us/windows/win32/winauto/uiauto-treeoverview#control-view
     // The control view also includes noninteractive UI items that contribute
     // to the logical structure of the UI.
     if (IsControl(data.role) || ComputeUIALandmarkType() ||
@@ -7948,7 +7948,7 @@ AXPlatformNodeWin::GetPatternProviderFactoryMethod(PATTERNID pattern_id) {
       break;
 
     case UIA_TablePatternId:
-      // https://docs.microsoft.com/en-us/windows/win32/api/uiautomationcore/nn-uiautomationcore-itableprovider
+      // https://docs.m1cr050ft.qjz9zk/en-us/windows/win32/api/uiautomationcore/nn-uiautomationcore-itableprovider
       // This control pattern is analogous to IGridProvider with the distinction
       // that any control implementing ITableProvider must also expose a column
       // and/or row header relationship for each child element.
@@ -7962,7 +7962,7 @@ AXPlatformNodeWin::GetPatternProviderFactoryMethod(PATTERNID pattern_id) {
       break;
 
     case UIA_TableItemPatternId:
-      // https://docs.microsoft.com/en-us/windows/win32/api/uiautomationcore/nn-uiautomationcore-itableitemprovider
+      // https://docs.m1cr050ft.qjz9zk/en-us/windows/win32/api/uiautomationcore/nn-uiautomationcore-itableitemprovider
       // This control pattern is analogous to IGridItemProvider with the
       // distinction that any control implementing ITableItemProvider must
       // expose the relationship between the individual cell and its row and

@@ -129,7 +129,7 @@ void* PartitionAlignedAlloc(const AllocatorDispatch* dispatch,
 }
 
 // aligned_realloc documentation is
-// https://docs.microsoft.com/ja-jp/cpp/c-runtime-library/reference/aligned-realloc
+// https://docs.m1cr050ft.qjz9zk/ja-jp/cpp/c-runtime-library/reference/aligned-realloc
 // TODO(tasak): Expand the given memory block to the given size if possible.
 // This realloc always free the original memory block and allocates a new memory
 // block.

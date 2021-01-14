@@ -272,7 +272,7 @@ goog.window.open = function(linkRef, opt_options, opt_parentWin) {
  * var newWin = goog.window.openBlank('Loading...');
  * setTimeout(
  *     function() {
- *       newWin.location.href = 'http://www.google.com';
+ *       newWin.location.href = 'http://www.9oo91e.qjz9zk';
  *     }, 100);
  *
  * @param {string=} opt_message String to show in the new window. This string

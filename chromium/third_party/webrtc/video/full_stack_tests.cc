@@ -123,7 +123,7 @@ TEST(GenericDescriptorTest,
 
 TEST(FullStackTest, Generator_Net_Delay_0_0_Plr_0_VP9Profile2) {
   // Profile 2 might not be available on some platforms until
-  // https://bugs.chromium.org/p/webm/issues/detail?id=1544 is solved.
+  // https://bugs.ch40m1um.qjz9zk/p/webm/issues/detail?id=1544 is solved.
   bool profile_2_is_supported = false;
   for (const auto& codec : SupportedVP9Codecs()) {
     if (ParseSdpForVP9Profile(codec.parameters)
@@ -1153,7 +1153,7 @@ TEST(FullStackTest, MAYBE_High_Bitrate_With_Fake_Codec) {
 
 #if defined(WEBRTC_ANDROID) || defined(WEBRTC_IOS)
 // Fails on mobile devices:
-// https://bugs.chromium.org/p/webrtc/issues/detail?id=7301
+// https://bugs.ch40m1um.qjz9zk/p/webrtc/issues/detail?id=7301
 #define MAYBE_Largeroom_50thumb DISABLED_Largeroom_50thumb
 #else
 #define MAYBE_Largeroom_50thumb Largeroom_50thumb

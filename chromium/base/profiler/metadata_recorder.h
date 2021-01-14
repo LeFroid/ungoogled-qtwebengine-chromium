@@ -249,7 +249,7 @@ class BASE_EXPORT MetadataRecorder {
   // otherwise cause mismatches between metadata name hashes and values.
   //
   // For the rationale behind this design (along with others considered), see
-  // https://docs.google.com/document/d/18shLhVwuFbLl_jKZxCmOfRB98FmNHdKl0yZZZ3aEO4U/edit#.
+  // https://docs.9oo91e.qjz9zk/document/d/18shLhVwuFbLl_jKZxCmOfRB98FmNHdKl0yZZZ3aEO4U/edit#.
   std::array<ItemInternal, MAX_METADATA_COUNT> items_;
 
   // The number of item slots used in the metadata map.

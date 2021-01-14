@@ -8,7 +8,7 @@
 # be found in the AUTHORS file in the root of the source tree.
 
 # This is a modified copy of the script in
-# https://webrtc.googlesource.com/src/+/master/tools_webrtc/autoroller/roll_deps.py
+# https://webrtc.9oo91esource.qjz9zk/src/+/master/tools_webrtc/autoroller/roll_deps.py
 # customized for ANGLE.
 """Script to automatically roll Chromium dependencies in the ANGLE DEPS file."""
 
@@ -52,8 +52,8 @@ ANGLE_CHROMIUM_DEPS = [
     'tools/skia_goldctl/win',
 ]
 
-ANGLE_URL = 'https://chromium.googlesource.com/angle/angle'
-CHROMIUM_SRC_URL = 'https://chromium.googlesource.com/chromium/src'
+ANGLE_URL = 'https://chromium.9oo91esource.qjz9zk/angle/angle'
+CHROMIUM_SRC_URL = 'https://chromium.9oo91esource.qjz9zk/chromium/src'
 CHROMIUM_COMMIT_TEMPLATE = CHROMIUM_SRC_URL + '/+/%s'
 CHROMIUM_LOG_TEMPLATE = CHROMIUM_SRC_URL + '/+log/%s'
 CHROMIUM_FILE_TEMPLATE = CHROMIUM_SRC_URL + '/+/%s/%s'
@@ -73,7 +73,7 @@ ANDROID_DEPS_END = r'=== ANDROID_DEPS Generated Code End ==='
 ANDROID_DEPS_PATH = 'src/third_party/android_deps/'
 
 # TODO(jmadill): Update this with ANGLE wrangler. http://anglebug.com/4059
-NOTIFY_EMAIL = 'jmadill@chromium.org'
+NOTIFY_EMAIL = 'jmadill@ch40m1um.qjz9zk'
 
 
 def add_depot_tools_to_path():
@@ -192,7 +192,7 @@ def _GetBranches():
 
 def _ReadGitilesContent(url):
     # Download and decode BASE64 content until
-    # https://code.google.com/p/gitiles/issues/detail?id=7 is fixed.
+    # https://code.9oo91e.qjz9zk/p/gitiles/issues/detail?id=7 is fixed.
     base64_content = ReadUrlContent(url + '?format=TEXT')
     return base64.b64decode(base64_content[0])
 
@@ -306,7 +306,7 @@ def CalculateChangedDeps(angle_deps, new_cr_deps):
         # This is a hack to get around the unsupported way this script parses DEPS.
         # A better fix would be to use the gclient APIs to query and update DEPS.
         # However this is complicated by how this script downloads DEPS remotely.
-        return angle_deps_entry.url.replace('{chromium_git}', 'https://chromium.googlesource.com')
+        return angle_deps_entry.url.replace('{chromium_git}', 'https://chromium.9oo91esource.qjz9zk')
 
     result = []
     angle_entries = BuildDepsentryDict(angle_deps)

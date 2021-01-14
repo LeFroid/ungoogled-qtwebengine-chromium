@@ -87,9 +87,9 @@ def _Commit(chromium_dir, hash_diff):
   desc="""Roll abseil_revision {0}
 
 Change Log:
-https://chromium.googlesource.com/external/github.com/abseil/abseil-cpp/+log/{0}
+https://chromium.9oo91esource.qjz9zk/external/github.com/abseil/abseil-cpp/+log/{0}
 Full diff:
-https://chromium.googlesource.com/external/github.com/abseil/abseil-cpp/+/{0}
+https://chromium.9oo91esource.qjz9zk/external/github.com/abseil/abseil-cpp/+/{0}
 Bug: None""".format(hash_diff)
 
   subprocess.check_call(['git', 'add', 'third_party/abseil-cpp'], cwd=chromium_dir)

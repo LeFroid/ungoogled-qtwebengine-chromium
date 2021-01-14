@@ -21,7 +21,7 @@ using testing::Return;
 namespace media_router {
 
 namespace {
-constexpr char kOrigin[] = "https://google.com";
+constexpr char kOrigin[] = "https://9oo91e.qjz9zk";
 }  // namespace
 
 class PresentationMediaSinksObserverTest : public ::testing::Test {

@@ -29,10 +29,10 @@ function assertSameHtml(expected, html) {
 testSuite({
   testCreateEmbed() {
     const trustedResourceUrl = TrustedResourceUrl.fromConstant(
-        Const.from('https://google.com/trusted&'));
+        Const.from('https://9oo91e.qjz9zk/trusted&'));
     assertSameHtml(
         '<embed ' +
-            'src="https://google.com/trusted&amp;" ' +
+            'src="https://9oo91e.qjz9zk/trusted&amp;" ' +
             'type="application/x-shockwave-flash" ' +
             'pluginspage="https://www.macromedia.com/go/getflashplayer" ' +
             'allownetworking="none" ' +
@@ -50,9 +50,9 @@ testSuite({
 
   testCreateObject() {
     const trustedResourceUrl = TrustedResourceUrl.fromConstant(
-        Const.from('https://google.com/trusted&'));
+        Const.from('https://9oo91e.qjz9zk/trusted&'));
     assertSameHtml(
-        '<object data="https://google.com/trusted&amp;" ' +
+        '<object data="https://9oo91e.qjz9zk/trusted&amp;" ' +
             'type="application/x-shockwave-flash" typemustmatch="" ' +
             'class="test&lt;">' +
             '<param name="allownetworking" value="none">' +
@@ -75,12 +75,12 @@ testSuite({
 
   testCreateObjectForOldIe() {
     const trustedResourceUrl = TrustedResourceUrl.fromConstant(
-        Const.from('https://google.com/trusted&'));
+        Const.from('https://9oo91e.qjz9zk/trusted&'));
     assertSameHtml(
         '<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" ' +
             'class="test&lt;">' +
             '<param name="allownetworking" value="none">' +
-            '<param name="movie" value="https://google.com/trusted&amp;">' +
+            '<param name="movie" value="https://9oo91e.qjz9zk/trusted&amp;">' +
             '<param name="allowScriptAccess" value="always&lt;">' +
             '</object>',
         flash.createObjectForOldIe(

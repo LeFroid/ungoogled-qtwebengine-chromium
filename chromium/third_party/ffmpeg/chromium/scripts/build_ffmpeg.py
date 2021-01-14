@@ -55,7 +55,7 @@ If no target architecture is specified all will be built.
 Platform specific build notes:
   android:
     Script can be run on a normal x64 Ubuntu box with an Android-ready Chromium
-    checkout: https://chromium.googlesource.com/chromium/src/+/master/docs/android_build_instructions.md
+    checkout: https://chromium.9oo91esource.qjz9zk/chromium/src/+/master/docs/android_build_instructions.md
 
   linux ia32/x64:
     Script can run on a normal Ubuntu box.
@@ -85,7 +85,7 @@ Platform specific build notes:
   win:
     Script may be run unders Linux or Windows; if cross-compiling you will need
     to follow the Chromium instruction for Cross-compiling Chrome/win:
-    https://chromium.googlesource.com/chromium/src/+/master/docs/win_cross.md
+    https://chromium.9oo91esource.qjz9zk/chromium/src/+/master/docs/win_cross.md
 
     Once you have a working Chromium build that can cross-compile, you'll also
     need to run $chrome_dir/tools/clang/scripts/update.py --package=objdump to
@@ -919,7 +919,7 @@ def ConfigureAndBuild(target_arch, target_os, host_os, host_arch, parallel_jobs,
 
   # Google ChromeOS specific configuration.
   # We want to make sure to play everything Android generates and plays.
-  # http://developer.android.com/guide/appendix/media-formats.html
+  # http://developer.8n6r01d.qjz9zk/guide/appendix/media-formats.html
   configure_flags['ChromeOS'].extend([
       # Enable playing avi files.
       '--enable-decoder=mpeg4',

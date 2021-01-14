@@ -21,7 +21,7 @@
 // We maintain 16-byte alignment at calls. There is an 8-byte return address
 // on the stack and we push 72 bytes which maintains 16-byte stack alignment
 // at the call.
-// Source: https://docs.microsoft.com/en-us/cpp/build/x64-calling-convention
+// Source: https://docs.m1cr050ft.qjz9zk/en-us/cpp/build/x64-calling-convention
 asm(".globl PushAllRegistersAndIterateStack             \n"
     "PushAllRegistersAndIterateStack:                   \n"
     // rbp is callee-saved. Maintain proper frame pointer for debugging.

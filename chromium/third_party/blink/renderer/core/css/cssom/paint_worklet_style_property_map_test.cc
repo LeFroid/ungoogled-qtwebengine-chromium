@@ -202,7 +202,7 @@ TEST_F(PaintWorkletStylePropertyMapTest, UnsupportedCrossThreadData) {
   Vector<CSSPropertyID> native_properties1;
   Vector<AtomicString> custom_properties1({"--foo", "--bar", "--loo"});
   css_test_helpers::RegisterProperty(GetDocument(), "--foo", "<url>",
-                                     "url(https://google.com)", false);
+                                     "url(https://9oo91e.qjz9zk)", false);
   css_test_helpers::RegisterProperty(GetDocument(), "--bar", "<number>", "42",
                                      false);
   css_test_helpers::RegisterProperty(GetDocument(), "--loo", "test", "test",

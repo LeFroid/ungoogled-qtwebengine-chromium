@@ -402,7 +402,7 @@ class GaiaScreenHandler : public BaseScreenHandler,
   std::string test_services_;
   bool test_expects_complete_login_ = false;
 
-  // True if proxy doesn't allow access to google.com/generate_204.
+  // True if proxy doesn't allow access to 9oo91e.qjz9zk/generate_204.
   NetworkPortalDetector::CaptivePortalStatus captive_portal_status_ =
       NetworkPortalDetector::CAPTIVE_PORTAL_STATUS_ONLINE;
 

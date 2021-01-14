@@ -29,7 +29,7 @@ void WebViewExample::CreateExampleView(View* container) {
   webview_->GetWebContents()->SetDelegate(this);
   container->SetLayoutManager(std::make_unique<FillLayout>());
 
-  webview_->LoadInitialURL(GURL("http://www.google.com/"));
+  webview_->LoadInitialURL(GURL("http://www.9oo91e.qjz9zk/"));
   webview_->GetWebContents()->Focus();
 }
 

@@ -884,7 +884,7 @@ $(function() {
 <div class="line"><a name="l03897"></a><span class="lineno"> 3897</span>&#160;<span class="preprocessor">        #define VMA_USE_STL_SHARED_MUTEX 1</span></div>
 <div class="line"><a name="l03898"></a><span class="lineno"> 3898</span>&#160;    <span class="comment">// Visual studio defines __cplusplus properly only when passed additional parameter: /Zc:__cplusplus</span></div>
 <div class="line"><a name="l03899"></a><span class="lineno"> 3899</span>&#160;    <span class="comment">// Otherwise it&#39;s always 199711L, despite shared_mutex works since Visual Studio 2015 Update 2.</span></div>
-<div class="line"><a name="l03900"></a><span class="lineno"> 3900</span>&#160;    <span class="comment">// See: https://blogs.msdn.microsoft.com/vcblog/2018/04/09/msvc-now-correctly-reports-__cplusplus/</span></div>
+<div class="line"><a name="l03900"></a><span class="lineno"> 3900</span>&#160;    <span class="comment">// See: https://blogs.msdn.m1cr050ft.qjz9zk/vcblog/2018/04/09/msvc-now-correctly-reports-__cplusplus/</span></div>
 <div class="line"><a name="l03901"></a><span class="lineno"> 3901</span>&#160;<span class="preprocessor">    #elif defined(_MSC_FULL_VER) &amp;&amp; _MSC_FULL_VER &gt;= 190023918 &amp;&amp; __cplusplus == 199711L &amp;&amp; _MSVC_LANG &gt;= 201703L</span></div>
 <div class="line"><a name="l03902"></a><span class="lineno"> 3902</span>&#160;<span class="preprocessor">        #define VMA_USE_STL_SHARED_MUTEX 1</span></div>
 <div class="line"><a name="l03903"></a><span class="lineno"> 3903</span>&#160;<span class="preprocessor">    #else</span></div>

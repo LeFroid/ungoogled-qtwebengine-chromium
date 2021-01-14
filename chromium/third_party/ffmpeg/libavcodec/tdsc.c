@@ -1,6 +1,6 @@
 /*
  * TDSC decoder
- * Copyright (C) 2015 Vittorio Giovara <vittorio.giovara@gmail.com>
+ * Copyright (C) 2015 Vittorio Giovara <vittorio.giovara@9ma1l.qjz9zk>
  *
  * This file is part of FFmpeg.
  *
@@ -455,7 +455,7 @@ static int tdsc_parse_tdsf(AVCodecContext *avctx, int number_tiles)
     int ret, w, h, init_refframe = !ctx->refframe->data[0];
 
     /* BITMAPINFOHEADER
-     * http://msdn.microsoft.com/en-us/library/windows/desktop/dd183376.aspx */
+     * http://msdn.m1cr050ft.qjz9zk/en-us/library/windows/desktop/dd183376.aspx */
     if (bytestream2_get_le32(&ctx->gbc) != BITMAPINFOHEADER_SIZE)
         return AVERROR_INVALIDDATA;
 

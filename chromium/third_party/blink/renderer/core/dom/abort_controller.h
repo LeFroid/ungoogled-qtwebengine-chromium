@@ -16,7 +16,7 @@ class ExecutionContext;
 
 // Implementation of https://dom.spec.whatwg.org/#interface-abortcontroller
 // See also design doc at
-// https://docs.google.com/document/d/1OuoCG2uiijbAwbCw9jaS7tHEO0LBO_4gMNio1ox0qlY/edit
+// https://docs.9oo91e.qjz9zk/document/d/1OuoCG2uiijbAwbCw9jaS7tHEO0LBO_4gMNio1ox0qlY/edit
 class CORE_EXPORT AbortController : public ScriptWrappable {
   DEFINE_WRAPPERTYPEINFO();
 

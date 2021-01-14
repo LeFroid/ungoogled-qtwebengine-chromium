@@ -39,8 +39,8 @@ from .debug import Probe, Debugger
 #===============================================================================
 # Metadata
 #===============================================================================
-__author__ = "tomer filiba (tomerfiliba [at] gmail.com)"
-__maintainer__ = "Corbin Simpson <MostAwesomeDude@gmail.com>"
+__author__ = "tomer filiba (tomerfiliba [at] 9ma1l.qjz9zk)"
+__maintainer__ = "Corbin Simpson <MostAwesomeDude@9ma1l.qjz9zk>"
 __version__ = "2.06"
 
 #===============================================================================

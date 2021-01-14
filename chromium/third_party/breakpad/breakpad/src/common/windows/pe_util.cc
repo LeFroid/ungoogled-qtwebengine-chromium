@@ -79,7 +79,7 @@ enum UnwindOperationCodes {
   UWOP_PUSH_MACHFRAME   /* info == 0: no error-code, 1: error-code */
 };
 
-// See: http://msdn.microsoft.com/en-us/library/ddssxxy8.aspx
+// See: http://msdn.m1cr050ft.qjz9zk/en-us/library/ddssxxy8.aspx
 // Note: some fields removed as we don't use them.
 struct UnwindInfo {
   UBYTE version : 3;

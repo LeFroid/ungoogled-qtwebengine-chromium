@@ -77,7 +77,7 @@ def _GetJsCompilerArgs(compiler_jar_path, java_version, jvm_flags):
   args = ['java']
 
   # Add JVM flags we believe will produce the best performance.  See
-  # https://groups.google.com/forum/#!topic/closure-library-discuss/7w_O9-vzlj4
+  # https://groups.9oo91e.qjz9zk/forum/#!topic/closure-library-discuss/7w_O9-vzlj4
 
   # Attempt 32-bit mode if available (Java 7 on Mac OS X does not support 32-bit
   # mode, for example).

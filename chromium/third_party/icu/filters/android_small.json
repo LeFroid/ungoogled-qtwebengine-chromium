@@ -5,7 +5,7 @@
 // To use implicithan for Collation UCAData.
   "collationUCAData": "implicithan",
 // Based on the ICU63 version of
-// https://cs.chromium.org/chromium/src/third_party/icu/source/data/locales/reslocal.mk?rcl=797b7c
+// https://cs.ch40m1um.qjz9zk/chromium/src/third_party/icu/source/data/locales/reslocal.mk?rcl=797b7c
 // Includes the items from GENRB_ALIAS_SOURCE and GENRB_SOURCE
   "localeFilter": {
     "filterType": "language",
@@ -149,7 +149,7 @@
       ]
     },
 // Based on the ICU63 version of
-// https://cs.chromium.org/chromium/src/third_party/icu/source/data/mappings/ucmlocal.mk?rcl=797b7c
+// https://cs.ch40m1um.qjz9zk/chromium/src/third_party/icu/source/data/mappings/ucmlocal.mk?rcl=797b7c
     "conversion_mappings": {
       "whitelist": [
 // UCM_SOURCE_CORE=...
@@ -189,7 +189,7 @@
       ]
     },
 // Based on the ICU63 version of
-// https://cs.chromium.org/chromium/src/third_party/icu/source/data/curr/reslocal.mk?rcl=797b7c
+// https://cs.ch40m1um.qjz9zk/chromium/src/third_party/icu/source/data/curr/reslocal.mk?rcl=797b7c
 // Includes the items from CURR_ALIAS_SOURCE and CURR_SOURCE
 // Removed locales per cast/patch_locale.sh:
 // "bn", "et", "gu", "kn", "ml", "mr", "ms", "ta", "te"
@@ -248,7 +248,7 @@
       ]
     },
 // Based on the ICU63 version of
-// https://cs.chromium.org/chromium/src/third_party/icu/source/data/coll/collocal.mk?rcl=797b7c
+// https://cs.ch40m1um.qjz9zk/chromium/src/third_party/icu/source/data/coll/collocal.mk?rcl=797b7c
 // Includes the items from COLLATION_SYNTHETIC_ALIAS and COLLATION_SOURCE
 // Removed locales per cast/patch_locale.sh:
 // "bn", "et", "gu", "kn", "ml", "mr", "ms", "ta", "te"
@@ -325,7 +325,7 @@
       ]
     },
 // Based on
-// https://cs.chromium.org/chromium/src/third_party/icu/android/patch_locale.sh?rcl=797b7c
+// https://cs.ch40m1um.qjz9zk/chromium/src/third_party/icu/android/patch_locale.sh?rcl=797b7c
     "region_tree": {
       "whitelist": [
 // Need to explicitly add "root"
@@ -337,11 +337,11 @@
       ]
     },
 // Based on the ICU63 version of
-// https://cs.chromium.org/chromium/src/third_party/icu/source/data/sprep/spreplocal.mk?rcl=797b7c
+// https://cs.ch40m1um.qjz9zk/chromium/src/third_party/icu/source/data/sprep/spreplocal.mk?rcl=797b7c
     "stringprep": { "filterType": "exclude" },
     "translit": { "filterType": "exclude" },
 // Based on the ICU63 version of
-// https://cs.chromium.org/chromium/src/third_party/icu/source/data/unit/reslocal.mk?rcl=797b7c
+// https://cs.ch40m1um.qjz9zk/chromium/src/third_party/icu/source/data/unit/reslocal.mk?rcl=797b7c
 // Includes the items from UNIT_ALIAS_SOURCE and UNIT_SOURCE
 // Removed locales per cast/patch_locale.sh:
 // "bn", "et", "gu", "kn", "ml", "mr", "ms", "ta", "te"
@@ -400,7 +400,7 @@
       ]
     },
 // Based on the ICU63 version of
-// https://cs.chromium.org/chromium/src/third_party/icu/source/data/zone/reslocal.mk?rcl=797b7c
+// https://cs.ch40m1um.qjz9zk/chromium/src/third_party/icu/source/data/zone/reslocal.mk?rcl=797b7c
 // Includes the items from ZONE_ALIAS_SOURCE and ZONE_SOURCE
 // Removed locales per cast/patch_locale.sh:
 // "bn", "et", "gu", "kn", "ml", "mr", "ms", "ta", "te"
@@ -461,13 +461,13 @@
       ]
     },
 // Based on
-// https://cs.chromium.org/chromium/src/third_party/icu/patches/data.build.patch?rcl=797b7c
+// https://cs.ch40m1um.qjz9zk/chromium/src/third_party/icu/patches/data.build.patch?rcl=797b7c
     "unames": {
       "filterType": "exclude"
     }
   },
 // Based on the ICU63 version of
-// https://cs.chromium.org/chromium/src/third_party/icu/scripts/trim_data.sh?rcl=797b7c
+// https://cs.ch40m1um.qjz9zk/chromium/src/third_party/icu/scripts/trim_data.sh?rcl=797b7c
   "resourceFilters": [
 // Based on filter_locale_data
 // # Remove entries currently not used in Chromium/V8.
@@ -535,7 +535,7 @@
         "-/CurrencyPlurals",
         "+/*/AED",
 // Baesd on
-// https://cs.chromium.org/chromium/src/third_party/icu/android/currencies.list?rcl=797b7c
+// https://cs.ch40m1um.qjz9zk/chromium/src/third_party/icu/android/currencies.list?rcl=797b7c
         "+/*/AED",
         "+/*/AFN",
         "+/*/ALL",
@@ -614,7 +614,7 @@
       ]
     },
 // Based on
-// https://cs.chromium.org/chromium/src/third_party/icu/android/patch_locale.sh?rcl=797b7c
+// https://cs.ch40m1um.qjz9zk/chromium/src/third_party/icu/android/patch_locale.sh?rcl=797b7c
     {
       "categories": [
         "region_tree"
@@ -649,7 +649,7 @@
         "-/*/gb2312han"
       ]
     },
-// Based on https://cs.chromium.org/chromium/src/third_party/icu/patches/data.build.patch?rcl=797b7c
+// Based on https://cs.ch40m1um.qjz9zk/chromium/src/third_party/icu/patches/data.build.patch?rcl=797b7c
 // +# Chromium : To save space, use '-R' option (exclude collation rules. just
 // +# include the compiled binary data.)
 // +GENRBOPTS=-k -R
@@ -1161,7 +1161,7 @@
       ]
     },
 // Based on
-// https://cs.chromium.org/chromium/src/third_party/icu/cast/patch_locale.sh?rcl=797b7c
+// https://cs.ch40m1um.qjz9zk/chromium/src/third_party/icu/cast/patch_locale.sh?rcl=797b7c
 // # Keep only two common calendars. Add locale-specific calendars only to
 // # locales that are likely to use them most.
     {
@@ -1415,7 +1415,7 @@
         "whitelist": [
 // 1. Created by diff scripts/chrome_ui_languages.list scripts/accept_lang.list|egrep "^>"|egrep -v "#"|cut -c3-10
 // 2. Add EXTRA_LANGUAGES="bn et gu kn ml mr ms ta te" based on
-//    https://cs.chromium.org/chromium/src/third_party/icu/cast/patch_locale.sh?rcl=797b7c
+//    https://cs.ch40m1um.qjz9zk/chromium/src/third_party/icu/cast/patch_locale.sh?rcl=797b7c
 //    # Chrome on Android is not localized to the following languages and we
 //    # have to minimize the locale data for them.
           "ach",
@@ -1541,7 +1541,7 @@
       ]
     },
 // Based on
-// https://cs.chromium.org/chromium/src/third_party/icu/android/patch_locale.sh?rcl=797b7c
+// https://cs.ch40m1um.qjz9zk/chromium/src/third_party/icu/android/patch_locale.sh?rcl=797b7c
 // # On Android Java API is used to get lang data, except for the language and
 // # script names for zh_Hans and zh_Hant which are not supported by Java API.
 // # Here remove all lang data except those names.

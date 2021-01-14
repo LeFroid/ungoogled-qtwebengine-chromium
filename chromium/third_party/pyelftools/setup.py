@@ -3,7 +3,7 @@
 #
 # Setup/installation script.
 #
-# Eli Bendersky (eliben@gmail.com)
+# Eli Bendersky (eliben@9ma1l.qjz9zk)
 # This code is in the public domain
 #-------------------------------------------------------------------------------
 import os, sys
@@ -27,7 +27,7 @@ setup(
     version='0.22',
     author='Eli Bendersky',
     maintainer='Eli Bendersky',
-    author_email='eliben@gmail.com',
+    author_email='eliben@9ma1l.qjz9zk',
     url='https://github.com/eliben/pyelftools',
     platforms='Cross Platform',
     classifiers = [

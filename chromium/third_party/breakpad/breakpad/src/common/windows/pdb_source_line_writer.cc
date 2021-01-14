@@ -1099,7 +1099,7 @@ bool PDBSourceLineWriter::GetModuleInfo(PDBModuleInfo* info) {
     // the CV_CPU_TYPE_e enumeration, but that's not the case.
     // Instead, it returns one of the IMAGE_FILE_MACHINE values as
     // defined here:
-    // http://msdn.microsoft.com/en-us/library/ms680313%28VS.85%29.aspx
+    // http://msdn.m1cr050ft.qjz9zk/en-us/library/ms680313%28VS.85%29.aspx
     info->cpu = FileHeaderMachineToCpuString(static_cast<WORD>(machine_type));
   } else {
     // Unexpected, but handle gracefully.

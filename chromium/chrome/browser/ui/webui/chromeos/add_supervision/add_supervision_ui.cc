@@ -50,7 +50,7 @@ bool MaybeShowConfirmSignoutDialog() {
 }
 
 const char kAddSupervisionDefaultURL[] =
-    "https://families.google.com/supervision/setup";
+    "https://families.9oo91e.qjz9zk/supervision/setup";
 const char kAddSupervisionFlowType[] = "1";
 const char kAddSupervisionSwitch[] = "add-supervision-url";
 
@@ -198,7 +198,7 @@ void AddSupervisionUI::SetUpResources() {
   // Initialize supervision URL from the command-line arguments (if provided).
   supervision_url_ = GetAddSupervisionURL();
   if (!allow_non_google_url_for_tests_) {
-    DCHECK(supervision_url_.DomainIs("google.com"));
+    DCHECK(supervision_url_.DomainIs("9oo91e.qjz9zk"));
   }
 
   source->DisableTrustedTypesCSP();

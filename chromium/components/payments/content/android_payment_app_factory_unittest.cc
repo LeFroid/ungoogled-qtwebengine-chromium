@@ -36,7 +36,7 @@ class MockPaymentAppFactoryDelegate : public PaymentAppFactory::Delegate {
       : web_contents_(web_contents_factory_.CreateWebContents(context)),
         top_origin_("https://top-origin.test"),
         frame_origin_("https://frame-origin.test") {
-    SetRequestedPaymentMethod("https://play.google.com/billing");
+    SetRequestedPaymentMethod("https://play.9oo91e.qjz9zk/billing");
   }
 
   ~MockPaymentAppFactoryDelegate() override = default;
@@ -182,7 +182,7 @@ TEST_F(AndroidPaymentAppFactoryTest, FindAppsThatDoNotHaveReadyToPayService) {
   EXPECT_CALL(delegate_,
               OnPaymentAppCreated(PaymentAppMatches(
                   PaymentApp::Type::NATIVE_MOBILE_APP, "com.example.app",
-                  "https://play.google.com/billing")))
+                  "https://play.9oo91e.qjz9zk/billing")))
       .Times(support_->AreAndroidAppsSupportedOnThisPlatform() ? 1 : 0);
 
   // This app does not have an IS_READY_TO_PAY service.
@@ -193,7 +193,7 @@ TEST_F(AndroidPaymentAppFactoryTest, FindAppsThatDoNotHaveReadyToPayService) {
       std::make_unique<AndroidActivityDescription>());
   apps.back()->activities.back()->name = "com.example.app.Activity";
   apps.back()->activities.back()->default_payment_method =
-      "https://play.google.com/billing";
+      "https://play.9oo91e.qjz9zk/billing";
   support_->ExpectQueryListOfPaymentAppsAndRespond(std::move(apps));
 
   // There is no IS_READY_TO_PAY service to invoke.
@@ -221,7 +221,7 @@ TEST_F(AndroidPaymentAppFactoryTest,
   EXPECT_CALL(delegate_,
               OnPaymentAppCreated(PaymentAppMatches(
                   PaymentApp::Type::NATIVE_MOBILE_APP, "com.example.app",
-                  "https://play.google.com/billing")))
+                  "https://play.9oo91e.qjz9zk/billing")))
       .Times(support_->AreAndroidAppsSupportedOnThisPlatform() ? 1 : 0);
 
   std::vector<std::unique_ptr<AndroidAppDescription>> apps;
@@ -232,7 +232,7 @@ TEST_F(AndroidPaymentAppFactoryTest,
       std::make_unique<AndroidActivityDescription>());
   apps.back()->activities.back()->name = "com.example.app.Activity";
   apps.back()->activities.back()->default_payment_method =
-      "https://play.google.com/billing";
+      "https://play.9oo91e.qjz9zk/billing";
   support_->ExpectQueryListOfPaymentAppsAndRespond(std::move(apps));
 
   // The IS_READY_TO_PAY service should not be invoked when off the record.
@@ -256,7 +256,7 @@ TEST_F(AndroidPaymentAppFactoryTest,
 
   EXPECT_CALL(delegate_, OnPaymentAppCreated(PaymentAppMatches(
                              PaymentApp::Type::NATIVE_MOBILE_APP, "com.twa.app",
-                             "https://play.google.com/billing")))
+                             "https://play.9oo91e.qjz9zk/billing")))
       .Times(support_->AreAndroidAppsSupportedOnThisPlatform() ? 1 : 0);
 
   std::vector<std::unique_ptr<AndroidAppDescription>> apps;
@@ -267,7 +267,7 @@ TEST_F(AndroidPaymentAppFactoryTest,
       std::make_unique<AndroidActivityDescription>());
   apps.back()->activities.back()->name = "com.twa.app.Activity";
   apps.back()->activities.back()->default_payment_method =
-      "https://play.google.com/billing";
+      "https://play.9oo91e.qjz9zk/billing";
   support_->ExpectQueryListOfPaymentAppsAndRespond(std::move(apps));
   support_->ExpectQueryIsReadyToPayAndRespond(/*is_ready_to_pay=*/true);
 
@@ -294,7 +294,7 @@ TEST_F(AndroidPaymentAppFactoryTest, IgnoreAppsThatAreNotReadyToPay) {
       std::make_unique<AndroidActivityDescription>());
   apps.back()->activities.back()->name = "com.example.app.Activity";
   apps.back()->activities.back()->default_payment_method =
-      "https://play.google.com/billing";
+      "https://play.9oo91e.qjz9zk/billing";
   support_->ExpectQueryListOfPaymentAppsAndRespond(std::move(apps));
   support_->ExpectQueryIsReadyToPayAndRespond(/*is_ready_to_pay=*/false);
 
@@ -316,12 +316,12 @@ TEST_F(AndroidPaymentAppFactoryTest, FindTheCorrectTwaAppInTwaMode) {
   EXPECT_CALL(delegate_,
               OnPaymentAppCreated(PaymentAppMatches(
                   PaymentApp::Type::NATIVE_MOBILE_APP, "com.correct-twa.app",
-                  "https://play.google.com/billing")))
+                  "https://play.9oo91e.qjz9zk/billing")))
       .Times(support_->AreAndroidAppsSupportedOnThisPlatform() ? 1 : 0);
   EXPECT_CALL(delegate_,
               OnPaymentAppCreated(PaymentAppMatches(
                   PaymentApp::Type::NATIVE_MOBILE_APP, "com.different.app",
-                  "https://play.google.com/billing")))
+                  "https://play.9oo91e.qjz9zk/billing")))
       .Times(0);
 
   std::vector<std::unique_ptr<AndroidAppDescription>> apps;
@@ -332,7 +332,7 @@ TEST_F(AndroidPaymentAppFactoryTest, FindTheCorrectTwaAppInTwaMode) {
       std::make_unique<AndroidActivityDescription>());
   apps.back()->activities.back()->name = "com.correct-twa.app.Activity";
   apps.back()->activities.back()->default_payment_method =
-      "https://play.google.com/billing";
+      "https://play.9oo91e.qjz9zk/billing";
 
   apps.emplace_back(std::make_unique<AndroidAppDescription>());
   apps.back()->package = "com.different.app";
@@ -341,7 +341,7 @@ TEST_F(AndroidPaymentAppFactoryTest, FindTheCorrectTwaAppInTwaMode) {
       std::make_unique<AndroidActivityDescription>());
   apps.back()->activities.back()->name = "com.different.app.Activity";
   apps.back()->activities.back()->default_payment_method =
-      "https://play.google.com/billing";
+      "https://play.9oo91e.qjz9zk/billing";
 
   support_->ExpectQueryListOfPaymentAppsAndRespond(std::move(apps));
   support_->ExpectQueryIsReadyToPayAndRespond(/*is_ready_to_pay=*/true);
@@ -369,7 +369,7 @@ TEST_F(AndroidPaymentAppFactoryTest, IgnoreNonTwaAppsInTwaMode) {
       std::make_unique<AndroidActivityDescription>());
   apps.back()->activities.back()->name = "com.non-twa.app.Activity";
   apps.back()->activities.back()->default_payment_method =
-      "https://play.google.com/billing";
+      "https://play.9oo91e.qjz9zk/billing";
   support_->ExpectQueryListOfPaymentAppsAndRespond(std::move(apps));
   support_->ExpectNoIsReadyToPayQuery();
 
@@ -452,7 +452,7 @@ TEST_F(AndroidPaymentAppFactoryTest,
   EXPECT_CALL(delegate_, OnPaymentAppCreationError(testing::_)).Times(0);
   EXPECT_CALL(delegate_, OnPaymentAppCreated(PaymentAppMatches(
                              PaymentApp::Type::NATIVE_MOBILE_APP, "com.twa.app",
-                             "https://play.google.com/billing")))
+                             "https://play.9oo91e.qjz9zk/billing")))
       .Times(support_->AreAndroidAppsSupportedOnThisPlatform() ? 1 : 0);
   EXPECT_CALL(delegate_, OnPaymentAppCreated(PaymentAppMatches(
                              PaymentApp::Type::NATIVE_MOBILE_APP, "com.twa.app",
@@ -468,7 +468,7 @@ TEST_F(AndroidPaymentAppFactoryTest,
       std::make_unique<AndroidActivityDescription>());
   apps.back()->activities.back()->name = "com.twa.app.ActivityOne";
   apps.back()->activities.back()->default_payment_method =
-      "https://play.google.com/billing";
+      "https://play.9oo91e.qjz9zk/billing";
 
   apps.back()->activities.emplace_back(
       std::make_unique<AndroidActivityDescription>());
@@ -510,7 +510,7 @@ TEST_F(AndroidPaymentAppFactoryTest, ReturnErrorWhenMoreThanOneServiceInApp) {
       std::make_unique<AndroidActivityDescription>());
   apps.back()->activities.back()->name = "com.example.app.Activity";
   apps.back()->activities.back()->default_payment_method =
-      "https://play.google.com/billing";
+      "https://play.9oo91e.qjz9zk/billing";
   support_->ExpectQueryListOfPaymentAppsAndRespond(std::move(apps));
   support_->ExpectNoIsReadyToPayQuery();
 

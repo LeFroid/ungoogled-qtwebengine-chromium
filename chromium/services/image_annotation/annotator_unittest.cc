@@ -45,8 +45,8 @@ MATCHER_P3(AnnotatorEq, type, score, text, "") {
   return (arg.type == type && arg.score == score && arg.text == text);
 }
 
-constexpr char kTestServerUrl[] = "https://ia-pa.googleapis.com/v1/annotation";
-constexpr char kLangsServerUrl[] = "https://ia-pa.googleapis.com/v1/langs";
+constexpr char kTestServerUrl[] = "https://ia-pa.9oo91eapis.qjz9zk/v1/annotation";
+constexpr char kLangsServerUrl[] = "https://ia-pa.9oo91eapis.qjz9zk/v1/langs";
 
 // Example image URLs.
 
@@ -418,7 +418,7 @@ TEST(AnnotatorTest, OcrSuccessAndCache) {
   base::test::TaskEnvironment test_task_env(
       base::test::TaskEnvironment::TimeSource::MOCK_TIME);
   TestServerURLLoaderFactory test_url_factory(
-      "https://ia-pa.googleapis.com/v1/");
+      "https://ia-pa.9oo91eapis.qjz9zk/v1/");
   data_decoder::test::InProcessDataDecoder in_process_data_decoder;
   base::HistogramTester histogram_tester;
 
@@ -525,7 +525,7 @@ TEST(AnnotatorTest, DescriptionSuccess) {
   base::test::TaskEnvironment test_task_env(
       base::test::TaskEnvironment::TimeSource::MOCK_TIME);
   TestServerURLLoaderFactory test_url_factory(
-      "https://ia-pa.googleapis.com/v1/");
+      "https://ia-pa.9oo91eapis.qjz9zk/v1/");
   data_decoder::test::InProcessDataDecoder in_process_data_decoder;
   base::HistogramTester histogram_tester;
 
@@ -633,7 +633,7 @@ TEST(AnnotatorTest, DoubleOcrResult) {
   base::test::TaskEnvironment test_task_env(
       base::test::TaskEnvironment::TimeSource::MOCK_TIME);
   TestServerURLLoaderFactory test_url_factory(
-      "https://ia-pa.googleapis.com/v1/");
+      "https://ia-pa.9oo91eapis.qjz9zk/v1/");
   data_decoder::test::InProcessDataDecoder in_process_data_decoder;
   base::HistogramTester histogram_tester;
 
@@ -749,7 +749,7 @@ TEST(AnnotatorTest, HttpError) {
   base::test::TaskEnvironment test_task_env(
       base::test::TaskEnvironment::TimeSource::MOCK_TIME);
   TestServerURLLoaderFactory test_url_factory(
-      "https://ia-pa.googleapis.com/v1/");
+      "https://ia-pa.9oo91eapis.qjz9zk/v1/");
   data_decoder::test::InProcessDataDecoder in_process_data_decoder;
   base::HistogramTester histogram_tester;
 
@@ -806,7 +806,7 @@ TEST(AnnotatorTest, BackendError) {
   base::test::TaskEnvironment test_task_env(
       base::test::TaskEnvironment::TimeSource::MOCK_TIME);
   TestServerURLLoaderFactory test_url_factory(
-      "https://ia-pa.googleapis.com/v1/");
+      "https://ia-pa.9oo91eapis.qjz9zk/v1/");
   data_decoder::test::InProcessDataDecoder in_process_data_decoder;
   base::HistogramTester histogram_tester;
 
@@ -890,7 +890,7 @@ TEST(AnnotatorTest, OcrBackendError) {
   base::test::TaskEnvironment test_task_env(
       base::test::TaskEnvironment::TimeSource::MOCK_TIME);
   TestServerURLLoaderFactory test_url_factory(
-      "https://ia-pa.googleapis.com/v1/");
+      "https://ia-pa.9oo91eapis.qjz9zk/v1/");
   data_decoder::test::InProcessDataDecoder in_process_data_decoder;
   base::HistogramTester histogram_tester;
 
@@ -985,7 +985,7 @@ TEST(AnnotatorTest, DescriptionBackendError) {
   base::test::TaskEnvironment test_task_env(
       base::test::TaskEnvironment::TimeSource::MOCK_TIME);
   TestServerURLLoaderFactory test_url_factory(
-      "https://ia-pa.googleapis.com/v1/");
+      "https://ia-pa.9oo91eapis.qjz9zk/v1/");
   data_decoder::test::InProcessDataDecoder in_process_data_decoder;
   base::HistogramTester histogram_tester;
 
@@ -1076,7 +1076,7 @@ TEST(AnnotatorTest, ServerError) {
   base::test::TaskEnvironment test_task_env(
       base::test::TaskEnvironment::TimeSource::MOCK_TIME);
   TestServerURLLoaderFactory test_url_factory(
-      "https://ia-pa.googleapis.com/v1/");
+      "https://ia-pa.9oo91eapis.qjz9zk/v1/");
   data_decoder::test::InProcessDataDecoder in_process_data_decoder;
   base::HistogramTester histogram_tester;
 
@@ -1135,7 +1135,7 @@ TEST(AnnotatorTest, AdultError) {
   base::test::TaskEnvironment test_task_env(
       base::test::TaskEnvironment::TimeSource::MOCK_TIME);
   TestServerURLLoaderFactory test_url_factory(
-      "https://ia-pa.googleapis.com/v1/");
+      "https://ia-pa.9oo91eapis.qjz9zk/v1/");
   data_decoder::test::InProcessDataDecoder in_process_data_decoder;
   base::HistogramTester histogram_tester;
 
@@ -1211,7 +1211,7 @@ TEST(AnnotatorTest, ProcessorFails) {
   base::test::TaskEnvironment test_task_env(
       base::test::TaskEnvironment::TimeSource::MOCK_TIME);
   TestServerURLLoaderFactory test_url_factory(
-      "https://ia-pa.googleapis.com/v1/");
+      "https://ia-pa.9oo91eapis.qjz9zk/v1/");
   data_decoder::test::InProcessDataDecoder in_process_data_decoder;
   base::HistogramTester histogram_tester;
 
@@ -1292,7 +1292,7 @@ TEST(AnnotatorTest, ProcessorFailedPreviously) {
   base::test::TaskEnvironment test_task_env(
       base::test::TaskEnvironment::TimeSource::MOCK_TIME);
   TestServerURLLoaderFactory test_url_factory(
-      "https://ia-pa.googleapis.com/v1/");
+      "https://ia-pa.9oo91eapis.qjz9zk/v1/");
   data_decoder::test::InProcessDataDecoder in_process_data_decoder;
   base::HistogramTester histogram_tester;
 
@@ -1362,7 +1362,7 @@ TEST(AnnotatorTest, ProcessorDies) {
   base::test::TaskEnvironment test_task_env(
       base::test::TaskEnvironment::TimeSource::MOCK_TIME);
   TestServerURLLoaderFactory test_url_factory(
-      "https://ia-pa.googleapis.com/v1/");
+      "https://ia-pa.9oo91eapis.qjz9zk/v1/");
   data_decoder::test::InProcessDataDecoder in_process_data_decoder;
   base::HistogramTester histogram_tester;
 
@@ -1438,7 +1438,7 @@ TEST(AnnotatorTest, ConcurrentSameBatch) {
   base::test::TaskEnvironment test_task_env(
       base::test::TaskEnvironment::TimeSource::MOCK_TIME);
   TestServerURLLoaderFactory test_url_factory(
-      "https://ia-pa.googleapis.com/v1/");
+      "https://ia-pa.9oo91eapis.qjz9zk/v1/");
   data_decoder::test::InProcessDataDecoder in_process_data_decoder;
   base::HistogramTester histogram_tester;
 
@@ -1526,7 +1526,7 @@ TEST(AnnotatorTest, ConcurrentSeparateBatches) {
   base::test::TaskEnvironment test_task_env(
       base::test::TaskEnvironment::TimeSource::MOCK_TIME);
   TestServerURLLoaderFactory test_url_factory(
-      "https://ia-pa.googleapis.com/v1/");
+      "https://ia-pa.9oo91eapis.qjz9zk/v1/");
   data_decoder::test::InProcessDataDecoder in_process_data_decoder;
   base::HistogramTester histogram_tester;
 
@@ -1671,7 +1671,7 @@ TEST(AnnotatorTest, DuplicateWork) {
   base::test::TaskEnvironment test_task_env(
       base::test::TaskEnvironment::TimeSource::MOCK_TIME);
   TestServerURLLoaderFactory test_url_factory(
-      "https://ia-pa.googleapis.com/v1/");
+      "https://ia-pa.9oo91eapis.qjz9zk/v1/");
   data_decoder::test::InProcessDataDecoder in_process_data_decoder;
   base::HistogramTester histogram_tester;
 
@@ -1780,7 +1780,7 @@ TEST(AnnotatorTest, DescPolicy) {
   base::test::TaskEnvironment test_task_env(
       base::test::TaskEnvironment::TimeSource::MOCK_TIME);
   TestServerURLLoaderFactory test_url_factory(
-      "https://ia-pa.googleapis.com/v1/");
+      "https://ia-pa.9oo91eapis.qjz9zk/v1/");
   data_decoder::test::InProcessDataDecoder in_process_data_decoder;
   base::HistogramTester histogram_tester;
 
@@ -1983,7 +1983,7 @@ TEST(AnnotatorTest, DescLanguage) {
   base::test::TaskEnvironment test_task_env(
       base::test::TaskEnvironment::TimeSource::MOCK_TIME);
   TestServerURLLoaderFactory test_url_factory(
-      "https://ia-pa.googleapis.com/v1/");
+      "https://ia-pa.9oo91eapis.qjz9zk/v1/");
   data_decoder::test::InProcessDataDecoder in_process_data_decoder;
   base::HistogramTester histogram_tester;
 
@@ -2179,7 +2179,7 @@ TEST(AnnotatorTest, LanguageFallback) {
   base::test::TaskEnvironment test_task_env(
       base::test::TaskEnvironment::TimeSource::MOCK_TIME);
   TestServerURLLoaderFactory test_url_factory(
-      "https://ia-pa.googleapis.com/v1/");
+      "https://ia-pa.9oo91eapis.qjz9zk/v1/");
   data_decoder::test::InProcessDataDecoder in_process_data_decoder;
   base::HistogramTester histogram_tester;
 
@@ -2285,7 +2285,7 @@ TEST(AnnotatorTest, ApiKey) {
   // key.
   {
     TestServerURLLoaderFactory test_url_factory(
-        "https://ia-pa.googleapis.com/v1/");
+        "https://ia-pa.9oo91eapis.qjz9zk/v1/");
 
     Annotator annotator(GURL(kTestServerUrl), GURL(""), "my_api_key", kThrottle,
                         1 /* batch_size */, 1.0 /* min_ocr_confidence */,
@@ -2318,9 +2318,9 @@ TEST(AnnotatorTest, ApiKey) {
   {
     // Note: not HTTPS.
     TestServerURLLoaderFactory test_url_factory(
-        "http://ia-pa.googleapis.com/v1/");
+        "http://ia-pa.9oo91eapis.qjz9zk/v1/");
 
-    Annotator annotator(GURL("http://ia-pa.googleapis.com/v1/annotation"),
+    Annotator annotator(GURL("http://ia-pa.9oo91eapis.qjz9zk/v1/annotation"),
                         GURL(""), "my_api_key", kThrottle, 1 /* batch_size */,
                         1.0 /* min_ocr_confidence */,
                         test_url_factory.AsSharedURLLoaderFactory(),
@@ -2385,7 +2385,7 @@ TEST(AnnotatorTest, ApiKey) {
 TEST(AnnotatorTest, ComputePreferredLanguage) {
   TestAnnotatorClient* annotator_client = new TestAnnotatorClient();
   TestServerURLLoaderFactory test_url_factory(
-      "https://ia-pa.googleapis.com/v1/");
+      "https://ia-pa.9oo91eapis.qjz9zk/v1/");
   Annotator annotator(GURL("https://datascraper.com/annotation"), GURL(""),
                       "my_api_key", kThrottle, 1 /* batch_size */,
                       1.0 /* min_ocr_confidence */,
@@ -2451,7 +2451,7 @@ TEST(AnnotatorTest, FetchServerLanguages) {
   base::test::TaskEnvironment test_task_env(
       base::test::TaskEnvironment::TimeSource::MOCK_TIME);
   TestServerURLLoaderFactory test_url_factory(
-      "https://ia-pa.googleapis.com/v1/");
+      "https://ia-pa.9oo91eapis.qjz9zk/v1/");
   data_decoder::test::InProcessDataDecoder in_process_data_decoder;
 
   Annotator annotator(GURL(kTestServerUrl), GURL(kLangsServerUrl),
@@ -2486,7 +2486,7 @@ TEST(AnnotatorTest, ServerLanguagesMustContainEnglish) {
   base::test::TaskEnvironment test_task_env(
       base::test::TaskEnvironment::TimeSource::MOCK_TIME);
   TestServerURLLoaderFactory test_url_factory(
-      "https://ia-pa.googleapis.com/v1/");
+      "https://ia-pa.9oo91eapis.qjz9zk/v1/");
   data_decoder::test::InProcessDataDecoder in_process_data_decoder;
 
   Annotator annotator(GURL(kTestServerUrl), GURL(kLangsServerUrl),

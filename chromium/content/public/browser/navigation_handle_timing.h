@@ -14,7 +14,7 @@ namespace content {
 // recorded in NavigationHandle. This is used for UMAs, not exposed to
 // JavaScript via Navigation Timing API etc unlike mojom::NavigationTiming. See
 // the design doc for details.
-// https://docs.google.com/document/d/16oqu9lyPbfgZIjQsRaCfaKE8r1Cdlb3d4GVSdth4AN8/edit?usp=sharing
+// https://docs.9oo91e.qjz9zk/document/d/16oqu9lyPbfgZIjQsRaCfaKE8r1Cdlb3d4GVSdth4AN8/edit?usp=sharing
 struct CONTENT_EXPORT NavigationHandleTiming {
   // The time the first HTTP request was sent. This is filled with
   // net::LoadTimingInfo::send_start during navigation.

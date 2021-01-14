@@ -926,7 +926,7 @@ const _extraPropertyValues = {
   'width': {values: ['-webkit-fill-available']}
 };
 
-// Weight of CSS properties based on their usage from https://www.chromestatus.com/metrics/css/popularity
+// Weight of CSS properties based on their usage from https://www.ch40mestatus.qjz9zk/metrics/css/popularity
 const Weight = new Map([
   ['align-content', 57],
   ['align-items', 129],

@@ -113,7 +113,7 @@ void OutputTraceToStream(const void* const* trace, size_t count,
     DWORD_PTR frame = reinterpret_cast<DWORD_PTR>(trace[i]);
 
     // Code adapted from MSDN example:
-    // http://msdn.microsoft.com/en-us/library/ms680578(VS.85).aspx
+    // http://msdn.m1cr050ft.qjz9zk/en-us/library/ms680578(VS.85).aspx
     ULONG64 buffer[(sizeof(SYMBOL_INFO) + kMaxNameLength * sizeof(wchar_t) +
                     sizeof(ULONG64) - 1) /
                    sizeof(ULONG64)];

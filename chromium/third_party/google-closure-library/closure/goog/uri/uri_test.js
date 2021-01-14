@@ -44,25 +44,25 @@ function assertResolvedEquals(expected, base, other) {
 }
 testSuite({
   testUriParse() {
-    const uri = new Uri('http://www.google.com:80/path?q=query#fragmento');
+    const uri = new Uri('http://www.9oo91e.qjz9zk:80/path?q=query#fragmento');
     assertEquals('http', uri.getScheme());
     assertEquals('', uri.getUserInfo());
-    assertEquals('www.google.com', uri.getDomain());
+    assertEquals('www.9oo91e.qjz9zk', uri.getDomain());
     assertEquals(80, uri.getPort());
     assertEquals('/path', uri.getPath());
     assertEquals('q=query', uri.getQuery());
     assertEquals('fragmento', uri.getFragment());
 
     assertEquals(
-        'terer258+foo@gmail.com',
-        Uri.parse('mailto:terer258+foo@gmail.com').getPath());
+        'terer258+foo@9ma1l.qjz9zk',
+        Uri.parse('mailto:terer258+foo@9ma1l.qjz9zk').getPath());
   },
 
   testUriParseWithNewline() {
-    const uri = new Uri('http://www.google.com:80/path?q=query#frag\nmento');
+    const uri = new Uri('http://www.9oo91e.qjz9zk:80/path?q=query#frag\nmento');
     assertEquals('http', uri.getScheme());
     assertEquals('', uri.getUserInfo());
-    assertEquals('www.google.com', uri.getDomain());
+    assertEquals('www.9oo91e.qjz9zk', uri.getDomain());
     assertEquals(80, uri.getPort());
     assertEquals('/path', uri.getPath());
     assertEquals('q=query', uri.getQuery());
@@ -71,51 +71,51 @@ testSuite({
 
   testUriParseAcceptsThingsWithToString() {
     // Ensure that the goog.Uri constructor coerces random types to strings.
-    const uriStr = 'http://www.google.com:80/path?q=query#fragmento';
+    const uriStr = 'http://www.9oo91e.qjz9zk:80/path?q=query#fragmento';
     const uri = new Uri({
       toString: function() {
         return uriStr;
       }
     });
     assertEquals(
-        'http://www.google.com:80/path?q=query#fragmento', uri.toString());
+        'http://www.9oo91e.qjz9zk:80/path?q=query#fragmento', uri.toString());
   },
 
   testUriCreate() {
     assertEquals(
-        'http://www.google.com:81/search%20path?q=what%20to%20eat%2Bdrink%3F',
+        'http://www.9oo91e.qjz9zk:81/search%20path?q=what%20to%20eat%2Bdrink%3F',
         Uri.create(
-               'http', null, 'www.google.com', 81, '/search path',
+               'http', null, 'www.9oo91e.qjz9zk', 81, '/search path',
                (new Uri.QueryData).set('q', 'what to eat+drink?'), null)
             .toString());
 
     assertEquals(
-        'http://www.google.com:80/search%20path?q=what%20to%20eat%2Bdrink%3F',
+        'http://www.9oo91e.qjz9zk:80/search%20path?q=what%20to%20eat%2Bdrink%3F',
         Uri.create(
-               'http', null, 'www.google.com', 80, '/search path',
+               'http', null, 'www.9oo91e.qjz9zk', 80, '/search path',
                (new Uri.QueryData).set('q', 'what to eat+drink?'), null)
             .toString());
 
     assertEquals(
-        'http://www.google.com/search%20path?q=what%20to%20eat%2Bdrink%3F',
+        'http://www.9oo91e.qjz9zk/search%20path?q=what%20to%20eat%2Bdrink%3F',
         Uri.create(
-               'http', null, 'www.google.com', null, '/search path',
+               'http', null, 'www.9oo91e.qjz9zk', null, '/search path',
                (new Uri.QueryData).set('q', 'what to eat+drink?'), null)
             .toString());
 
     const createdUri = Uri.create(
-        'http', null, 'www.google.com', null, '/search path',
+        'http', null, 'www.9oo91e.qjz9zk', null, '/search path',
         new Uri.QueryData(null, null, true).set('Q', 'what to eat+drink?'),
         null);
 
     assertEquals(
-        'http://www.google.com/search%20path?q=what%20to%20eat%2Bdrink%3F',
+        'http://www.9oo91e.qjz9zk/search%20path?q=what%20to%20eat%2Bdrink%3F',
         createdUri.toString());
   },
 
   testClone() {
     const uri1 =
-        new Uri('http://user:pass@www.google.com:8080/foo?a=1&b=2#c=3');
+        new Uri('http://user:pass@www.9oo91e.qjz9zk:8080/foo?a=1&b=2#c=3');
     // getCount forces instantiation of internal data structures to more
     // thoroughly test clone.
     uri1.getQueryData().getCount();
@@ -134,83 +134,83 @@ testSuite({
   },
 
   testAbsolutePathResolution() {
-    const uri1 = new Uri('http://www.google.com:8080/path?q=query#fragmento');
+    const uri1 = new Uri('http://www.9oo91e.qjz9zk:8080/path?q=query#fragmento');
 
     assertEquals(
-        'http://www.google.com:8080/foo',
+        'http://www.9oo91e.qjz9zk:8080/foo',
         uri1.resolve(new Uri('/foo')).toString());
 
     assertEquals(
-        'http://www.google.com:8080/foo/bar',
-        Uri.resolve('http://www.google.com:8080/search/', '/foo/bar')
+        'http://www.9oo91e.qjz9zk:8080/foo/bar',
+        Uri.resolve('http://www.9oo91e.qjz9zk:8080/search/', '/foo/bar')
             .toString());
 
     assertEquals(
-        'http://www.google.com:8080/path?q=que%2Br%20y#fragmento',
+        'http://www.9oo91e.qjz9zk:8080/path?q=que%2Br%20y#fragmento',
         Uri.resolve(
-               'http://www.google.com:8080/', '/path?q=que%2Br%20y#fragmento')
+               'http://www.9oo91e.qjz9zk:8080/', '/path?q=que%2Br%20y#fragmento')
             .toString());
   },
 
   testRelativePathResolution() {
-    const uri1 = new Uri('http://www.google.com:8080/path?q=query#fragmento');
+    const uri1 = new Uri('http://www.9oo91e.qjz9zk:8080/path?q=query#fragmento');
     assertEquals(
-        'http://www.google.com:8080/foo',
+        'http://www.9oo91e.qjz9zk:8080/foo',
         uri1.resolve(Uri.parse('foo')).toString());
 
-    const uri2 = new Uri('http://www.google.com:8080/search');
+    const uri2 = new Uri('http://www.9oo91e.qjz9zk:8080/search');
     assertEquals(
-        'http://www.google.com:8080/foo/bar',
+        'http://www.9oo91e.qjz9zk:8080/foo/bar',
         uri2.resolve(new Uri('foo/bar')).toString());
 
-    const uri3 = new Uri('http://www.google.com:8080/search/');
+    const uri3 = new Uri('http://www.9oo91e.qjz9zk:8080/search/');
     assertEquals(
-        'http://www.google.com:8080/search/foo/bar',
+        'http://www.9oo91e.qjz9zk:8080/search/foo/bar',
         uri3.resolve(new Uri('foo/bar')).toString());
 
     const uri4 = new Uri('foo');
     assertEquals('bar', uri4.resolve(new Uri('bar')).toString());
 
     assertEquals(
-        'http://www.google.com:8080/search/..%2ffoo/bar',
+        'http://www.9oo91e.qjz9zk:8080/search/..%2ffoo/bar',
         uri3.resolve(new Uri('..%2ffoo/bar')).toString());
   },
 
   testDomainResolution() {
     assertEquals(
-        'https://www.google.com/foo/bar',
+        'https://www.9oo91e.qjz9zk/foo/bar',
         new Uri('https://www.fark.com:443/search/')
-            .resolve(new Uri('//www.google.com/foo/bar'))
+            .resolve(new Uri('//www.9oo91e.qjz9zk/foo/bar'))
             .toString());
 
     assertEquals(
-        'http://www.google.com/',
-        Uri.resolve('http://www.fark.com/search/', '//www.google.com/')
+        'http://www.9oo91e.qjz9zk/',
+        Uri.resolve('http://www.fark.com/search/', '//www.9oo91e.qjz9zk/')
             .toString());
   },
 
   testQueryResolution() {
     assertEquals(
-        'http://www.google.com/search?q=new%20search',
-        Uri.parse('http://www.google.com/search?q=old+search')
+        'http://www.9oo91e.qjz9zk/search?q=new%20search',
+        Uri.parse('http://www.9oo91e.qjz9zk/search?q=old+search')
             .resolve(Uri.parse('?q=new%20search'))
             .toString());
 
     assertEquals(
-        'http://www.google.com/search?q=new%20search',
-        Uri.parse('http://www.google.com/search?q=old+search#hi')
+        'http://www.9oo91e.qjz9zk/search?q=new%20search',
+        Uri.parse('http://www.9oo91e.qjz9zk/search?q=old+search#hi')
             .resolve(Uri.parse('?q=new%20search'))
             .toString());
   },
 
   testFragmentResolution() {
     assertEquals(
-        'http://www.google.com/foo/bar?q=hi#there',
-        Uri.resolve('http://www.google.com/foo/bar?q=hi', '#there').toString());
+        'http://www.9oo91e.qjz9zk/foo/bar?q=hi#there',
+        Uri.resolve('http://www.9oo91e.qjz9zk/foo/bar?q=hi', '#there').toString());
 
     assertEquals(
-        'http://www.google.com/foo/bar?q=hi#there',
-        Uri.resolve('http://www.google.com/foo/bar?q=hi#you', '#there')
+        'http://www.9oo91e.qjz9zk/foo/bar?q=hi#there',
+        Uri.resolve('http://www.9oo91e.qjz9zk/foo/bar?q=hi#you', '#there')
             .toString());
   },
 
@@ -422,34 +422,34 @@ testSuite({
   },
 
   testSetScheme() {
-    const uri = new Uri('http://www.google.com:80/path?q=query#fragmento');
+    const uri = new Uri('http://www.9oo91e.qjz9zk:80/path?q=query#fragmento');
 
     uri.setScheme('https');
     assertTrue(uri.hasScheme());
     assertEquals('https', uri.getScheme());
     assertEquals(
-        'https://www.google.com:80/path?q=query#fragmento', uri.toString());
+        'https://www.9oo91e.qjz9zk:80/path?q=query#fragmento', uri.toString());
 
     uri.setScheme(encodeURIComponent('ab cd'), true);
     assertTrue(uri.hasScheme());
     assertEquals('ab cd', uri.getScheme());
     assertEquals(
-        'ab%20cd://www.google.com:80/path?q=query#fragmento', uri.toString());
+        'ab%20cd://www.9oo91e.qjz9zk:80/path?q=query#fragmento', uri.toString());
 
     uri.setScheme('http:');
     assertTrue(uri.hasScheme());
     assertEquals('http', uri.getScheme());
     assertEquals(
-        'http://www.google.com:80/path?q=query#fragmento', uri.toString());
+        'http://www.9oo91e.qjz9zk:80/path?q=query#fragmento', uri.toString());
 
     uri.setScheme('');
     assertFalse(uri.hasScheme());
     assertEquals('', uri.getScheme());
-    assertEquals('//www.google.com:80/path?q=query#fragmento', uri.toString());
+    assertEquals('//www.9oo91e.qjz9zk:80/path?q=query#fragmento', uri.toString());
   },
 
   testSetDomain() {
-    const uri = new Uri('http://www.google.com:80/path?q=query#fragmento');
+    const uri = new Uri('http://www.9oo91e.qjz9zk:80/path?q=query#fragmento');
 
     uri.setDomain('\u1e21oogle.com');
     assertTrue(uri.hasDomain());
@@ -470,7 +470,7 @@ testSuite({
   },
 
   testSetPort() {
-    const uri = new Uri('http://www.google.com:80/path?q=query#fragmento');
+    const uri = new Uri('http://www.9oo91e.qjz9zk:80/path?q=query#fragmento');
 
     assertThrows(() => {
       uri.setPort(-1);
@@ -486,7 +486,7 @@ testSuite({
     assertTrue(uri.hasPort());
     assertEquals(443, uri.getPort());
     assertEquals(
-        'http://www.google.com:443/path?q=query#fragmento', uri.toString());
+        'http://www.9oo91e.qjz9zk:443/path?q=query#fragmento', uri.toString());
 
     // TODO(chrishenry): This is undocumented, but exist in previous unit
     // test. We should clarify whether this is intended (alternatively,
@@ -495,121 +495,121 @@ testSuite({
     assertFalse(uri.hasPort());
     assertEquals(null, uri.getPort());
     assertEquals(
-        'http://www.google.com/path?q=query#fragmento', uri.toString());
+        'http://www.9oo91e.qjz9zk/path?q=query#fragmento', uri.toString());
   },
 
   testSetPath() {
-    const uri = new Uri('http://www.google.com:80/path?q=query#fragmento');
+    const uri = new Uri('http://www.9oo91e.qjz9zk:80/path?q=query#fragmento');
 
     uri.setPath('/search path/');
     assertTrue(uri.hasPath());
     assertEquals('/search path/', uri.getPath());
     assertEquals(
-        'http://www.google.com:80/search%20path/?q=query#fragmento',
+        'http://www.9oo91e.qjz9zk:80/search%20path/?q=query#fragmento',
         uri.toString());
 
     uri.setPath(encodeURIComponent('search path 2/'), true);
     assertTrue(uri.hasPath());
     assertEquals('search path 2%2F', uri.getPath());
     assertEquals(
-        'http://www.google.com:80/search%20path%202%2F?q=query#fragmento',
+        'http://www.9oo91e.qjz9zk:80/search%20path%202%2F?q=query#fragmento',
         uri.toString());
 
     uri.setPath('');
     assertFalse(uri.hasPath());
     assertEquals('', uri.getPath());
-    assertEquals('http://www.google.com:80?q=query#fragmento', uri.toString());
+    assertEquals('http://www.9oo91e.qjz9zk:80?q=query#fragmento', uri.toString());
   },
 
   testSetFragment() {
-    const uri = new Uri('http://www.google.com:80/path?q=query#fragmento');
+    const uri = new Uri('http://www.9oo91e.qjz9zk:80/path?q=query#fragmento');
 
     uri.setFragment('foo?bar=a b&baz=2');
     assertTrue(uri.hasFragment());
     assertEquals('foo?bar=a b&baz=2', uri.getFragment());
     assertEquals(
-        'http://www.google.com:80/path?q=query#foo?bar=a%20b&baz=2',
+        'http://www.9oo91e.qjz9zk:80/path?q=query#foo?bar=a%20b&baz=2',
         uri.toString());
 
     uri.setFragment(encodeURIComponent('foo?bar=a b&baz=3'), true);
     assertTrue(uri.hasFragment());
     assertEquals('foo?bar=a b&baz=3', uri.getFragment());
     assertEquals(
-        'http://www.google.com:80/path?q=query#foo?bar=a%20b&baz=3',
+        'http://www.9oo91e.qjz9zk:80/path?q=query#foo?bar=a%20b&baz=3',
         uri.toString());
 
     uri.setFragment('');
     assertFalse(uri.hasFragment());
     assertEquals('', uri.getFragment());
-    assertEquals('http://www.google.com:80/path?q=query', uri.toString());
+    assertEquals('http://www.9oo91e.qjz9zk:80/path?q=query', uri.toString());
   },
 
   testSetUserInfo() {
-    const uri = new Uri('http://www.google.com:80/path?q=query#fragmento');
+    const uri = new Uri('http://www.9oo91e.qjz9zk:80/path?q=query#fragmento');
 
     uri.setUserInfo('user:pw d');
     assertTrue(uri.hasUserInfo());
     assertEquals('user:pw d', uri.getUserInfo());
     assertEquals(
-        'http://user:pw%20d@www.google.com:80/path?q=query#fragmento',
+        'http://user:pw%20d@www.9oo91e.qjz9zk:80/path?q=query#fragmento',
         uri.toString());
 
     uri.setUserInfo(encodeURIComponent('user:pw d2'), true);
     assertTrue(uri.hasUserInfo());
     assertEquals('user:pw d2', uri.getUserInfo());
     assertEquals(
-        'http://user:pw%20d2@www.google.com:80/path?q=query#fragmento',
+        'http://user:pw%20d2@www.9oo91e.qjz9zk:80/path?q=query#fragmento',
         uri.toString());
 
     uri.setUserInfo('user');
     assertTrue(uri.hasUserInfo());
     assertEquals('user', uri.getUserInfo());
     assertEquals(
-        'http://user@www.google.com:80/path?q=query#fragmento', uri.toString());
+        'http://user@www.9oo91e.qjz9zk:80/path?q=query#fragmento', uri.toString());
 
     uri.setUserInfo('');
     assertFalse(uri.hasUserInfo());
     assertEquals('', uri.getUserInfo());
     assertEquals(
-        'http://www.google.com:80/path?q=query#fragmento', uri.toString());
+        'http://www.9oo91e.qjz9zk:80/path?q=query#fragmento', uri.toString());
   },
 
   testSetParameterValues() {
-    const uri = new Uri('http://www.google.com:80/path?q=query#fragmento');
+    const uri = new Uri('http://www.9oo91e.qjz9zk:80/path?q=query#fragmento');
 
     uri.setParameterValues('q', ['foo', 'other query']);
     assertEquals(
-        'http://www.google.com:80/path?q=foo&q=other%20query#fragmento',
+        'http://www.9oo91e.qjz9zk:80/path?q=foo&q=other%20query#fragmento',
         uri.toString());
 
     uri.setParameterValues('lang', 'en');
     assertEquals(
-        'http://www.google.com:80/path?q=foo&q=other%20query&lang=en#fragmento',
+        'http://www.9oo91e.qjz9zk:80/path?q=foo&q=other%20query&lang=en#fragmento',
         uri.toString());
   },
 
   testTreatmentOfAt1() {
-    let uri = new Uri('http://www.google.com?q=johndoe@gmail.com');
+    let uri = new Uri('http://www.9oo91e.qjz9zk?q=johndoe@9ma1l.qjz9zk');
     assertEquals('http', uri.getScheme());
-    assertEquals('www.google.com', uri.getDomain());
-    assertEquals('johndoe@gmail.com', uri.getParameterValue('q'));
+    assertEquals('www.9oo91e.qjz9zk', uri.getDomain());
+    assertEquals('johndoe@9ma1l.qjz9zk', uri.getParameterValue('q'));
 
     uri = Uri.create(
-        'http', null, 'www.google.com', null, null, 'q=johndoe@gmail.com',
+        'http', null, 'www.9oo91e.qjz9zk', null, null, 'q=johndoe@9ma1l.qjz9zk',
         null);
-    assertEquals('http://www.google.com?q=johndoe%40gmail.com', uri.toString());
+    assertEquals('http://www.9oo91e.qjz9zk?q=johndoe%409ma1l.qjz9zk', uri.toString());
   },
 
   testTreatmentOfAt2() {
-    const uri = new Uri('http://test/~johndoe@gmail.com/foo');
+    const uri = new Uri('http://test/~johndoe@9ma1l.qjz9zk/foo');
     assertEquals('http', uri.getScheme());
     assertEquals('test', uri.getDomain());
-    assertEquals('/~johndoe@gmail.com/foo', uri.getPath());
+    assertEquals('/~johndoe@9ma1l.qjz9zk/foo', uri.getPath());
 
     assertEquals(
-        'http://test/~johndoe@gmail.com/foo',
+        'http://test/~johndoe@9ma1l.qjz9zk/foo',
         Uri.create(
-               'http', null, 'test', null, '/~johndoe@gmail.com/foo', null,
+               'http', null, 'test', null, '/~johndoe@9ma1l.qjz9zk/foo', null,
                null)
             .toString());
   },
@@ -639,36 +639,36 @@ testSuite({
   },
 
   testSameDomain1() {
-    const uri1 = 'http://www.google.com/a';
-    const uri2 = 'http://www.google.com/b';
+    const uri1 = 'http://www.9oo91e.qjz9zk/a';
+    const uri2 = 'http://www.9oo91e.qjz9zk/b';
     assertTrue(Uri.haveSameDomain(uri1, uri2));
     assertTrue(Uri.haveSameDomain(uri2, uri1));
   },
 
   testSameDomain2() {
-    const uri1 = 'http://www.google.com:1234/a';
-    const uri2 = 'http://www.google.com/b';
+    const uri1 = 'http://www.9oo91e.qjz9zk:1234/a';
+    const uri2 = 'http://www.9oo91e.qjz9zk/b';
     assertFalse(Uri.haveSameDomain(uri1, uri2));
     assertFalse(Uri.haveSameDomain(uri2, uri1));
   },
 
   testSameDomain3() {
-    const uri1 = 'www.google.com/a';
-    const uri2 = 'http://www.google.com/b';
+    const uri1 = 'www.9oo91e.qjz9zk/a';
+    const uri2 = 'http://www.9oo91e.qjz9zk/b';
     assertFalse(Uri.haveSameDomain(uri1, uri2));
     assertFalse(Uri.haveSameDomain(uri2, uri1));
   },
 
   testSameDomain4() {
     const uri1 = '/a';
-    const uri2 = 'http://www.google.com/b';
+    const uri2 = 'http://www.9oo91e.qjz9zk/b';
     assertFalse(Uri.haveSameDomain(uri1, uri2));
     assertFalse(Uri.haveSameDomain(uri2, uri1));
   },
 
   testSameDomain5() {
-    const uri1 = 'http://www.google.com/a';
-    const uri2 = 'http://mail.google.com/b';
+    const uri1 = 'http://www.9oo91e.qjz9zk/a';
+    const uri2 = 'http://mail.9oo91e.qjz9zk/b';
     assertFalse(Uri.haveSameDomain(uri1, uri2));
     assertFalse(Uri.haveSameDomain(uri2, uri1));
   },
@@ -681,16 +681,16 @@ testSuite({
   },
 
   testMakeUnique() {
-    const uri1 = new Uri('http://www.google.com/setgmail');
+    const uri1 = new Uri('http://www.9oo91e.qjz9zk/setgmail');
     uri1.makeUnique();
-    const uri2 = new Uri('http://www.google.com/setgmail');
+    const uri2 = new Uri('http://www.9oo91e.qjz9zk/setgmail');
     uri2.makeUnique();
     assertTrue(uri1.getQueryData().containsKey(Uri.RANDOM_PARAM));
     assertTrue(uri1.toString() != uri2.toString());
   },
 
   testSetReadOnly() {
-    const uri = new Uri('http://www.google.com/setgmail');
+    const uri = new Uri('http://www.9oo91e.qjz9zk/setgmail');
     uri.setReadOnly(true);
     assertThrows(() => {
       uri.setParameterValue('cant', 'dothis');
@@ -698,7 +698,7 @@ testSuite({
   },
 
   testSetReadOnlyChained() {
-    const uri = new Uri('http://www.google.com/setgmail').setReadOnly(true);
+    const uri = new Uri('http://www.9oo91e.qjz9zk/setgmail').setReadOnly(true);
     assertThrows(() => {
       uri.setParameterValue('cant', 'dothis');
     });

@@ -1076,7 +1076,7 @@ TEST_F(PortTest, TestLocalToSymNat) {
   TestLocalToStun(NAT_SYMMETRIC);
 }
 
-// Flaky: https://code.google.com/p/webrtc/issues/detail?id=3316.
+// Flaky: https://code.9oo91e.qjz9zk/p/webrtc/issues/detail?id=3316.
 TEST_F(PortTest, DISABLED_TestLocalToTurn) {
   TestLocalToRelay(PROTO_UDP);
 }

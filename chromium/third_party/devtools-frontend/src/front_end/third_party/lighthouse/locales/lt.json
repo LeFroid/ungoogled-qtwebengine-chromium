@@ -390,7 +390,7 @@
     "message": "Suggested Token"
   },
   "lighthouse-core/audits/autocomplete.js | description": {
-    "message": "`autocomplete` helps users submit forms quicker. To reduce user effort, consider enabling by setting the `autocomplete` attribute to a valid value. [Learn more](https://developers.google.com/web/fundamentals/design-and-ux/input/forms#use_metadata_to_enable_auto-complete)"
+    "message": "`autocomplete` helps users submit forms quicker. To reduce user effort, consider enabling by setting the `autocomplete` attribute to a valid value. [Learn more](https://developers.9oo91e.qjz9zk/web/fundamentals/design-and-ux/input/forms#use_metadata_to_enable_auto-complete)"
   },
   "lighthouse-core/audits/autocomplete.js | failureTitle": {
     "message": "`<input>` elements do not have correct `autocomplete` attributes"
@@ -621,7 +621,7 @@
     "message": "Vertė"
   },
   "lighthouse-core/audits/dobetterweb/dom-size.js | description": {
-    "message": "Dėl didelio DOM elementų skaičiaus bus sunaudojama daugiau atminties, ilgiau [skaičiuojami stiliai](https://developers.google.com/web/fundamentals/performance/rendering/reduce-the-scope-and-complexity-of-style-calculations) ir gali reikėti brangių [išdėstymo perskaičiavimų](https://developers.google.com/speed/articles/reflow). [Sužinokite daugiau](https://web.dev/dom-size/)."
+    "message": "Dėl didelio DOM elementų skaičiaus bus sunaudojama daugiau atminties, ilgiau [skaičiuojami stiliai](https://developers.9oo91e.qjz9zk/web/fundamentals/performance/rendering/reduce-the-scope-and-complexity-of-style-calculations) ir gali reikėti brangių [išdėstymo perskaičiavimų](https://developers.9oo91e.qjz9zk/speed/articles/reflow). [Sužinokite daugiau](https://web.dev/dom-size/)."
   },
   "lighthouse-core/audits/dobetterweb/dom-size.js | displayValue": {
     "message": "{itemCount,plural, =1{1 elementas}one{# elementas}few{# elementai}many{# elemento}other{# elementų}}"
@@ -834,7 +834,7 @@
     "message": "Užklausos sprendimas"
   },
   "lighthouse-core/audits/is-on-https.js | description": {
-    "message": "All sites should be protected with HTTPS, even ones that don't handle sensitive data. This includes avoiding [mixed content](https://developers.google.com/web/fundamentals/security/prevent-mixed-content/what-is-mixed-content), where some resources are loaded over HTTP despite the initial request being served over HTTPS. HTTPS prevents intruders from tampering with or passively listening in on the communications between your app and your users, and is a prerequisite for HTTP/2 and many new web platform APIs. [Learn more](https://web.dev/is-on-https/)."
+    "message": "All sites should be protected with HTTPS, even ones that don't handle sensitive data. This includes avoiding [mixed content](https://developers.9oo91e.qjz9zk/web/fundamentals/security/prevent-mixed-content/what-is-mixed-content), where some resources are loaded over HTTP despite the initial request being served over HTTPS. HTTPS prevents intruders from tampering with or passively listening in on the communications between your app and your users, and is a prerequisite for HTTP/2 and many new web platform APIs. [Learn more](https://web.dev/is-on-https/)."
   },
   "lighthouse-core/audits/is-on-https.js | displayValue": {
     "message": "{itemCount,plural, =1{Rasta 1 nesaugi užklausa}one{Rasta # nesaugi užklausa}few{Rastos # nesaugios užklausos}many{Rasta # nesaugos užklausos}other{Rasta # nesaugių užklausų}}"
@@ -855,7 +855,7 @@
     "message": "Biblioteka"
   },
   "lighthouse-core/audits/large-javascript-libraries.js | description": {
-    "message": "Dėl didelių „JavaScript“ bibliotekų našumas gali būti prastas. Pirmenybę teikite mažesnėms atitinkamoms bibliotekoms, kad sumažintumėte rinkinio dydį. [Sužinokite daugiau](https://developers.google.com/web/fundamentals/performance/webpack/decrease-frontend-size#optimize_dependencies)"
+    "message": "Dėl didelių „JavaScript“ bibliotekų našumas gali būti prastas. Pirmenybę teikite mažesnėms atitinkamoms bibliotekoms, kad sumažintumėte rinkinio dydį. [Sužinokite daugiau](https://developers.9oo91e.qjz9zk/web/fundamentals/performance/webpack/decrease-frontend-size#optimize_dependencies)"
   },
   "lighthouse-core/audits/large-javascript-libraries.js | displayValue": {
     "message": "{libraryCount,plural, =1{Rasta 1 didelė biblioteka}one{Rasta # didelė biblioteka}few{Rastos # didelės bibliotekos}many{Rasta # didelės bibliotekos}other{Rasta # didelių bibliotekų}}"
@@ -990,7 +990,7 @@
     "message": "Serverio vidinės pusės delsa"
   },
   "lighthouse-core/audits/no-unload-listeners.js | description": {
-    "message": "Įvykis „`unload`“ patikimai nesuaktyvinamas ir jį apdorojant gali būti neleidžiama optimizuoti naršyklės, pvz., persiuntimo atgal ir pirmyn talpyklos. Apsvarstykite galimybę naudoti įvykius „`pagehide`“ arba „`visibilitychange`“. [Sužinokite daugiau](https://developers.google.com/web/updates/2018/07/page-lifecycle-api#the-unload-event)"
+    "message": "Įvykis „`unload`“ patikimai nesuaktyvinamas ir jį apdorojant gali būti neleidžiama optimizuoti naršyklės, pvz., persiuntimo atgal ir pirmyn talpyklos. Apsvarstykite galimybę naudoti įvykius „`pagehide`“ arba „`visibilitychange`“. [Sužinokite daugiau](https://developers.9oo91e.qjz9zk/web/updates/2018/07/page-lifecycle-api#the-unload-event)"
   },
   "lighthouse-core/audits/no-unload-listeners.js | failureTitle": {
     "message": "Užregistruojama „`unload`“ apdorojimo priemonė"
@@ -1041,7 +1041,7 @@
     "message": "„Lighthouse“ nepavyko nuskaityti `start_url` iš aprašo. Dėl to `start_url` buvo laikomas dokumento URL. Klaidos pranešimas: „{manifestWarning}“."
   },
   "lighthouse-core/audits/performance-budget.js | description": {
-    "message": "Tinklo užklausų kiekis ir dydis neturi viršyti tikslinių verčių, nustatytų našumo biudžete. [Sužinokite daugiau](https://developers.google.com/web/tools/lighthouse/audits/budgets)."
+    "message": "Tinklo užklausų kiekis ir dydis neturi viršyti tikslinių verčių, nustatytų našumo biudžete. [Sužinokite daugiau](https://developers.9oo91e.qjz9zk/web/tools/lighthouse/audits/budgets)."
   },
   "lighthouse-core/audits/performance-budget.js | requestCountOverBudget": {
     "message": "{count,plural, =1{1 užklausa}one{# užklausa}few{# užklausos}many{# užklausos}other{# užklausų}}"
@@ -1113,7 +1113,7 @@
     "message": "Netikrinama nuoroda"
   },
   "lighthouse-core/audits/seo/crawlable-anchors.js | description": {
-    "message": "Paieškos varikliuose, nuorodose į tikrinimo svetaines, gali būti naudojami „`href`“ atributai. Įsitikinkite, kad prieraišo elementų „`href`“ atributas susieja su tinkama paskirties vieta, kad būtų galima rasti daugiau svetainės puslapių. [Sužinokite daugiau](https://support.google.com/webmasters/answer/9112205)"
+    "message": "Paieškos varikliuose, nuorodose į tikrinimo svetaines, gali būti naudojami „`href`“ atributai. Įsitikinkite, kad prieraišo elementų „`href`“ atributas susieja su tinkama paskirties vieta, kad būtų galima rasti daugiau svetainės puslapių. [Sužinokite daugiau](https://support.9oo91e.qjz9zk/webmasters/answer/9112205)"
   },
   "lighthouse-core/audits/seo/crawlable-anchors.js | failureTitle": {
     "message": "Nuorodos netikrinamos"
@@ -1197,7 +1197,7 @@
     "message": "Nuorodose yra aprašomojo teksto"
   },
   "lighthouse-core/audits/seo/manual/structured-data.js | description": {
-    "message": "Paleiskite [struktūrinių duomenų bandymo įrankį](https://search.google.com/structured-data/testing-tool/) ir [„Structured Data Linter“](http://linter.structured-data.org/), kad būtų patvirtinti struktūriniai duomenys. [Sužinokite daugiau](https://web.dev/structured-data/)."
+    "message": "Paleiskite [struktūrinių duomenų bandymo įrankį](https://search.9oo91e.qjz9zk/structured-data/testing-tool/) ir [„Structured Data Linter“](http://linter.structured-data.org/), kad būtų patvirtinti struktūriniai duomenys. [Sužinokite daugiau](https://web.dev/structured-data/)."
   },
   "lighthouse-core/audits/seo/manual/structured-data.js | title": {
     "message": "Struktūriniai duomenys tinkami"
@@ -1320,7 +1320,7 @@
     "message": "Trečioji šalis"
   },
   "lighthouse-core/audits/third-party-summary.js | description": {
-    "message": "Trečiosios šalies kodas gali smarkiai paveikti įkėlimo našumą. Apribokite trečiosios šalies teikėjų skaičių ir pabandykite įkelti trečiosios šalies kodą, kai puslapis bus įkeltas. [Sužinokite daugiau](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/loading-third-party-javascript/)."
+    "message": "Trečiosios šalies kodas gali smarkiai paveikti įkėlimo našumą. Apribokite trečiosios šalies teikėjų skaičių ir pabandykite įkelti trečiosios šalies kodą, kai puslapis bus įkeltas. [Sužinokite daugiau](https://developers.9oo91e.qjz9zk/web/fundamentals/performance/optimizing-content-efficiency/loading-third-party-javascript/)."
   },
   "lighthouse-core/audits/third-party-summary.js | displayValue": {
     "message": "Trečiosios šalies kodas {timeInMs, number, milliseconds} ms užblokavo pagrindinę grupę"
@@ -1341,7 +1341,7 @@
     "message": "Metrika"
   },
   "lighthouse-core/audits/timing-budget.js | description": {
-    "message": "Nustatykite laiko biudžetą, kad galėtumėte lengviau stebėti svetainės našumą. Našios svetainės įkeliamos sparčiau ir greičiau reaguoja į naudotojų įvesties įvykius. [Sužinokite daugiau](https://developers.google.com/web/tools/lighthouse/audits/budgets)."
+    "message": "Nustatykite laiko biudžetą, kad galėtumėte lengviau stebėti svetainės našumą. Našios svetainės įkeliamos sparčiau ir greičiau reaguoja į naudotojų įvesties įvykius. [Sužinokite daugiau](https://developers.9oo91e.qjz9zk/web/tools/lighthouse/audits/budgets)."
   },
   "lighthouse-core/audits/timing-budget.js | title": {
     "message": "Laiko biudžetas"
@@ -1395,7 +1395,7 @@
     "message": "Žemėlapio URL"
   },
   "lighthouse-core/audits/valid-source-maps.js | description": {
-    "message": "Šaltinio žemėlapiai išverčia sumažintą kodą į originalų šaltinio kodą. Tai kūrėjams padeda derinti kuriant gamybinę versiją. Be to, „Lighthouse“ gali pateikti daugiau įžvalgų. Apsvarstykite galimybę pritaikyti šaltinio žemėlapius ir pasinaudoti šiais privalumais. [Sužinokite daugiau](https://developers.google.com/web/tools/chrome-devtools/javascript/source-maps)"
+    "message": "Šaltinio žemėlapiai išverčia sumažintą kodą į originalų šaltinio kodą. Tai kūrėjams padeda derinti kuriant gamybinę versiją. Be to, „Lighthouse“ gali pateikti daugiau įžvalgų. Apsvarstykite galimybę pritaikyti šaltinio žemėlapius ir pasinaudoti šiais privalumais. [Sužinokite daugiau](https://developers.9oo91e.qjz9zk/web/tools/chrome-devtools/javascript/source-maps)"
   },
   "lighthouse-core/audits/valid-source-maps.js | failureTitle": {
     "message": "Trūksta didelio pirmosios šalies „JavaScript“ failo šaltinio žemėlapių"
@@ -1464,10 +1464,10 @@
     "message": "Geriausia praktika"
   },
   "lighthouse-core/config/default-config.js | a11yCategoryDescription": {
-    "message": "Atlikę šias patikras sužinosite, kaip galite [geriau pritaikyti žiniatinklio programą](https://developers.google.com/web/fundamentals/accessibility). Automatiškai galima aptikti tik dalį pritaikomumo problemų, todėl rekomenduojama atlikti ir neautomatinį tikrinimą."
+    "message": "Atlikę šias patikras sužinosite, kaip galite [geriau pritaikyti žiniatinklio programą](https://developers.9oo91e.qjz9zk/web/fundamentals/accessibility). Automatiškai galima aptikti tik dalį pritaikomumo problemų, todėl rekomenduojama atlikti ir neautomatinį tikrinimą."
   },
   "lighthouse-core/config/default-config.js | a11yCategoryManualDescription": {
-    "message": "Šie elementai apima sritis, kurių automatinio bandymo įrankis negali aprėpti. Mūsų vadove sužinokite daugiau apie tai, kaip [atlikti pritaikomumo peržiūrą](https://developers.google.com/web/fundamentals/accessibility/how-to-review)."
+    "message": "Šie elementai apima sritis, kurių automatinio bandymo įrankis negali aprėpti. Mūsų vadove sužinokite daugiau apie tai, kaip [atlikti pritaikomumo peržiūrą](https://developers.9oo91e.qjz9zk/web/fundamentals/accessibility/how-to-review)."
   },
   "lighthouse-core/config/default-config.js | a11yCategoryTitle": {
     "message": "Pritaikomumas"
@@ -1554,10 +1554,10 @@
     "message": "Našumas"
   },
   "lighthouse-core/config/default-config.js | pwaCategoryDescription": {
-    "message": "Per šias patikras vertinami laipsniškosios žiniatinklio programos aspektai. [Sužinokite daugiau](https://developers.google.com/web/progressive-web-apps/checklist)"
+    "message": "Per šias patikras vertinami laipsniškosios žiniatinklio programos aspektai. [Sužinokite daugiau](https://developers.9oo91e.qjz9zk/web/progressive-web-apps/checklist)"
   },
   "lighthouse-core/config/default-config.js | pwaCategoryManualDescription": {
-    "message": "Šios patikros būtinos pagal pradinį [LŽP kontrolinį sąrašą](https://developers.google.com/web/progressive-web-apps/checklist), tačiau „Lighthouse“ jų neatlieka automatiškai. Jos neturi įtakos jūsų rezultatui, tačiau svarbu, kad patvirtintumėte patys."
+    "message": "Šios patikros būtinos pagal pradinį [LŽP kontrolinį sąrašą](https://developers.9oo91e.qjz9zk/web/progressive-web-apps/checklist), tačiau „Lighthouse“ jų neatlieka automatiškai. Jos neturi įtakos jūsų rezultatui, tačiau svarbu, kad patvirtintumėte patys."
   },
   "lighthouse-core/config/default-config.js | pwaCategoryTitle": {
     "message": "Laipsniškoji žiniatinklio programa"
@@ -1572,7 +1572,7 @@
     "message": "Optimizuota PWA"
   },
   "lighthouse-core/config/default-config.js | seoCategoryDescription": {
-    "message": "Šios patikros užtikrina, kad jūsų puslapis optimizuotas paieškos variklio rezultatams reitinguoti. Yra papildomų veiksnių, galinčių paveikti paieškos reitingavimą, kurių „Lighthouse“ netikrina. [Sužinokite daugiau](https://support.google.com/webmasters/answer/35769)."
+    "message": "Šios patikros užtikrina, kad jūsų puslapis optimizuotas paieškos variklio rezultatams reitinguoti. Yra papildomų veiksnių, galinčių paveikti paieškos reitingavimą, kurių „Lighthouse“ netikrina. [Sužinokite daugiau](https://support.9oo91e.qjz9zk/webmasters/answer/35769)."
   },
   "lighthouse-core/config/default-config.js | seoCategoryManualDescription": {
     "message": "Paleiskite šias papildomas patvirtinimo priemones svetainėje, kad patikrintumėte papildomus PVO geriausios praktikos metodus."
@@ -1593,7 +1593,7 @@
     "message": "Tikrinimas ir indeksavimas"
   },
   "lighthouse-core/config/default-config.js | seoMobileGroupDescription": {
-    "message": "Įsitikinkite, kad puslapiai yra pritaikyti mobiliesiems, kad naudotojams nereikėtų suėmus artinti ar keisti mastelio norint perskaityti puslapių turinį. [Sužinokite daugiau](https://developers.google.com/search/mobile-sites/)."
+    "message": "Įsitikinkite, kad puslapiai yra pritaikyti mobiliesiems, kad naudotojams nereikėtų suėmus artinti ar keisti mastelio norint perskaityti puslapių turinį. [Sužinokite daugiau](https://developers.9oo91e.qjz9zk/search/mobile-sites/)."
   },
   "lighthouse-core/config/default-config.js | seoMobileGroupTitle": {
     "message": "Pritaikyta mobiliesiems"
@@ -1836,7 +1836,7 @@
     "message": "Laboratorijos duomenys"
   },
   "lighthouse-core/report/html/renderer/util.js | lsPerformanceCategoryDescription": {
-    "message": "[„Lighthouse“](https://developers.google.com/web/tools/lighthouse/) dabartinio puslapio analizė emuliuotame mobiliojo ryšio tinkle. Vertės yra apytikslės ir gali skirtis."
+    "message": "[„Lighthouse“](https://developers.9oo91e.qjz9zk/web/tools/lighthouse/) dabartinio puslapio analizė emuliuotame mobiliojo ryšio tinkle. Vertės yra apytikslės ir gali skirtis."
   },
   "lighthouse-core/report/html/renderer/util.js | manualAuditsGroupTitle": {
     "message": "Papildomi elementai, kuriuos reikia patikrinti neautomatiškai"
@@ -1983,10 +1983,10 @@
     "message": "Būtinai įgalinkite funkciją „Apibendrinti „JavaScript“ failus“ puslapyje „Administravimas“ » „Konfigūravimas“ » „Diegimas“. Be to, galite konfigūruoti išplėstines apibendrinimo parinktis naudodami [papildomus modulius](https://www.drupal.org/project/project_module?f%5B0%5D=&f%5B1%5D=&f%5B2%5D=im_vid_3%3A123&f%5B3%5D=&f%5B4%5D=sm_field_project_type%3Afull&f%5B5%5D=&f%5B6%5D=&text=javascript+aggregation&solrsort=iss_project_release_usage+desc&op=Search), kad svetainė sparčiau veiktų, sujungiant, suglaudinant „JavaScript“ išteklius ir pašalinant jų nereikalingus duomenis."
   },
   "node_modules/lighthouse-stack-packs/packs/drupal.js | unused-css-rules": {
-    "message": "Apsvarstykite galimybę pašalinti nenaudojamas CSS kalbos taisykles ir pridėti tik reikalingas „Drupal“ bibliotekas prie atitinkamo puslapio ar komponento puslapyje. Jei reikia išsamios informacijos, žr. [„Drupal“ dokumentų nuorodą](https://www.drupal.org/docs/8/creating-custom-modules/adding-stylesheets-css-and-javascript-js-to-a-drupal-8-module#library). Kad nustatytumėte pridėtas bibliotekas, pridedančias nesusijusios CSS kalbos, pabandykite vykdyti [kodo aprėpties procesą](https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverage) naudodami „Chrome DevTools“. Susijusią temą ir (arba) modulį galite nustatyti pagal stiliaus aprašo URL, kai CSS kalbos apibendrinimas išjungtas „Drupal“ svetainėje. Ieškokite temų ir (arba) modulių, kurių sąraše pateikta daug stiliaus aprašų, kurių kodo aprėptyje yra daug raudonos spalvos. Tema ir (arba) modulis įtraukti stiliaus aprašą į eilę turėtų tik tokiu atveju, jei jis tikrai naudojamas puslapyje."
+    "message": "Apsvarstykite galimybę pašalinti nenaudojamas CSS kalbos taisykles ir pridėti tik reikalingas „Drupal“ bibliotekas prie atitinkamo puslapio ar komponento puslapyje. Jei reikia išsamios informacijos, žr. [„Drupal“ dokumentų nuorodą](https://www.drupal.org/docs/8/creating-custom-modules/adding-stylesheets-css-and-javascript-js-to-a-drupal-8-module#library). Kad nustatytumėte pridėtas bibliotekas, pridedančias nesusijusios CSS kalbos, pabandykite vykdyti [kodo aprėpties procesą](https://developers.9oo91e.qjz9zk/web/updates/2017/04/devtools-release-notes#coverage) naudodami „Chrome DevTools“. Susijusią temą ir (arba) modulį galite nustatyti pagal stiliaus aprašo URL, kai CSS kalbos apibendrinimas išjungtas „Drupal“ svetainėje. Ieškokite temų ir (arba) modulių, kurių sąraše pateikta daug stiliaus aprašų, kurių kodo aprėptyje yra daug raudonos spalvos. Tema ir (arba) modulis įtraukti stiliaus aprašą į eilę turėtų tik tokiu atveju, jei jis tikrai naudojamas puslapyje."
   },
   "node_modules/lighthouse-stack-packs/packs/drupal.js | unused-javascript": {
-    "message": "Consider removing unused JavaScript assets and only attach the needed Drupal libraries to the relevant page or component in a page. See the [Drupal documentation link](https://www.drupal.org/docs/8/creating-custom-modules/adding-stylesheets-css-and-javascript-js-to-a-drupal-8-module#library) for details. To identify attached libraries that are adding extraneous JavaScript, try running [code coverage](https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverage) in Chrome DevTools. You can identify the theme/module responsible from the URL of the script when JavaScript aggregation is disabled in your Drupal site. Look out for themes/modules that have many scripts in the list which have a lot of red in code coverage. A theme/module should only enqueue a script if it is actually used on the page."
+    "message": "Consider removing unused JavaScript assets and only attach the needed Drupal libraries to the relevant page or component in a page. See the [Drupal documentation link](https://www.drupal.org/docs/8/creating-custom-modules/adding-stylesheets-css-and-javascript-js-to-a-drupal-8-module#library) for details. To identify attached libraries that are adding extraneous JavaScript, try running [code coverage](https://developers.9oo91e.qjz9zk/web/updates/2017/04/devtools-release-notes#coverage) in Chrome DevTools. You can identify the theme/module responsible from the URL of the script when JavaScript aggregation is disabled in your Drupal site. Look out for themes/modules that have many scripts in the list which have a lot of red in code coverage. A theme/module should only enqueue a script if it is actually used on the page."
   },
   "node_modules/lighthouse-stack-packs/packs/drupal.js | uses-long-cache-ttl": {
     "message": "Nustatykite parinktį „Naršyklės ir tarpinio serverio talpyklos maksimalus amžius“ puslapyje „Administravimas“ » „Konfigūravimas“ » „Diegimas“. Skaitykite apie [„Drupal“ talpyklą ir našumo optimizavimą](https://www.drupal.org/docs/7/managing-site-performance-and-scalability/caching-to-improve-performance/caching-overview#s-drupal-performance-resources)."
@@ -2025,10 +2025,10 @@
     "message": "Įvairūs [„Joomla“ plėtiniai](https://extensions.joomla.org/instant-search/?jed_live%5Bquery%5D=performance) gali padėti svetainei sparčiau veikti sujungdami, suglaudindami scenarijus ar pašalindami jų nereikalingus duomenis. Be to, yra šias funkcijas teikiančių šablonų."
   },
   "node_modules/lighthouse-stack-packs/packs/joomla.js | unused-css-rules": {
-    "message": "Apsvarstykite galimybę sumažinti [„Joomla“ plėtinių](https://extensions.joomla.org/), įkeliančių nenaudojamą CSS kalbą jūsų puslapyje, skaičių arba juos pakeisti. Kad nustatytumėte plėtinius, pridedančius nesusijusios CSS kalbos, pabandykite vykdyti [kodo aprėpties procesą](https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverage) naudodami „Chrome DevTools“. Susijusią temą ir (arba) papildinį galite nustatyti pagal stiliaus aprašo URL. Ieškokite papildinių, kurių sąraše pateikta daug stiliaus aprašų, kurių kodo aprėptyje yra daug raudonos spalvos. Papildinys turėtų įtraukti į eilę stiliaus aprašą, tik jei jis tikrai naudojamas puslapyje."
+    "message": "Apsvarstykite galimybę sumažinti [„Joomla“ plėtinių](https://extensions.joomla.org/), įkeliančių nenaudojamą CSS kalbą jūsų puslapyje, skaičių arba juos pakeisti. Kad nustatytumėte plėtinius, pridedančius nesusijusios CSS kalbos, pabandykite vykdyti [kodo aprėpties procesą](https://developers.9oo91e.qjz9zk/web/updates/2017/04/devtools-release-notes#coverage) naudodami „Chrome DevTools“. Susijusią temą ir (arba) papildinį galite nustatyti pagal stiliaus aprašo URL. Ieškokite papildinių, kurių sąraše pateikta daug stiliaus aprašų, kurių kodo aprėptyje yra daug raudonos spalvos. Papildinys turėtų įtraukti į eilę stiliaus aprašą, tik jei jis tikrai naudojamas puslapyje."
   },
   "node_modules/lighthouse-stack-packs/packs/joomla.js | unused-javascript": {
-    "message": "Apsvarstykite galimybę sumažinti [„Joomla“ plėtinių](https://extensions.joomla.org/), įkeliančių nenaudojamą „JavaScript“ jūsų puslapyje, skaičių arba juos pakeisti. Kad nustatytumėte papildinius, pridedančius nesusijusios JS, pabandykite vykdyti [kodo aprėpties procesą](https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverage) naudodami „Chrome DevTools“. Susijusį plėtinį galite nustatyti pagal scenarijaus URL. Ieškokite plėtinių, kurių sąraše pateikta daug scenarijų, kurių kodo aprėptyje yra daug raudonos spalvos. Plėtinys įtraukti scenarijų į eilę turėtų tik tokiu atveju, jei jis tikrai naudojamas puslapyje."
+    "message": "Apsvarstykite galimybę sumažinti [„Joomla“ plėtinių](https://extensions.joomla.org/), įkeliančių nenaudojamą „JavaScript“ jūsų puslapyje, skaičių arba juos pakeisti. Kad nustatytumėte papildinius, pridedančius nesusijusios JS, pabandykite vykdyti [kodo aprėpties procesą](https://developers.9oo91e.qjz9zk/web/updates/2017/04/devtools-release-notes#coverage) naudodami „Chrome DevTools“. Susijusį plėtinį galite nustatyti pagal scenarijaus URL. Ieškokite plėtinių, kurių sąraše pateikta daug scenarijų, kurių kodo aprėptyje yra daug raudonos spalvos. Plėtinys įtraukti scenarijų į eilę turėtų tik tokiu atveju, jei jis tikrai naudojamas puslapyje."
   },
   "node_modules/lighthouse-stack-packs/packs/joomla.js | uses-long-cache-ttl": {
     "message": "Skaitykite apie [naršyklės saugojimo talpykloje funkciją sistemoje „Joomla“](https://docs.joomla.org/Cache)."
@@ -2124,10 +2124,10 @@
     "message": "Įvairūs [„WordPress“ papildiniai](https://wordpress.org/plugins/search/minify+javascript/) gali padėti svetainei sparčiau veikti sujungdami, sumažindami ar suglaudindami scenarijus. Be to, galbūt norėsite pasinaudoti kūrimo procesu, kad sumažintumėte iš anksto (jei tai įmanoma)."
   },
   "node_modules/lighthouse-stack-packs/packs/wordpress.js | unused-css-rules": {
-    "message": "Apsvarstykite galimybę sumažinti [„WordPress“ papildinių](https://wordpress.org/plugins/), įkeliančių nenaudojamą CSS kalbą jūsų puslapyje, skaičių arba juos pakeisti. Kad nustatytumėte papildinius, pridedančius nesusijusios CSS kalbos, pabandykite vykdyti [kodo aprėpties procesą](https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverage) naudodami „Chrome DevTools“. Susijusią temą / papildinį galite nustatyti pagal stiliaus failo URL. Ieškokite papildinių, kurių sąraše pateikta daug stiliaus failų, kurių kodo aprėptyje yra daug raudonos spalvos. Papildinys įtraukti stiliaus failą į eilę turėtų tik tokiu atveju, jei jis tikrai naudojamas puslapyje."
+    "message": "Apsvarstykite galimybę sumažinti [„WordPress“ papildinių](https://wordpress.org/plugins/), įkeliančių nenaudojamą CSS kalbą jūsų puslapyje, skaičių arba juos pakeisti. Kad nustatytumėte papildinius, pridedančius nesusijusios CSS kalbos, pabandykite vykdyti [kodo aprėpties procesą](https://developers.9oo91e.qjz9zk/web/updates/2017/04/devtools-release-notes#coverage) naudodami „Chrome DevTools“. Susijusią temą / papildinį galite nustatyti pagal stiliaus failo URL. Ieškokite papildinių, kurių sąraše pateikta daug stiliaus failų, kurių kodo aprėptyje yra daug raudonos spalvos. Papildinys įtraukti stiliaus failą į eilę turėtų tik tokiu atveju, jei jis tikrai naudojamas puslapyje."
   },
   "node_modules/lighthouse-stack-packs/packs/wordpress.js | unused-javascript": {
-    "message": "Apsvarstykite galimybę sumažinti [„WordPress“ papildinių](https://wordpress.org/plugins/), įkeliančių nenaudojamą „JavaScript“ jūsų puslapyje, skaičių arba juos pakeisti. Kad nustatytumėte papildinius, pridedančius nesusijusios JS, pabandykite vykdyti [kodo aprėpties procesą](https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverage) naudodami „Chrome DevTools“. Susijusią temą / papildinį galite nustatyti pagal scenarijaus URL. Ieškokite papildinių, kurių sąraše pateikta daug scenarijų, kurių kodo aprėptyje yra daug raudonos spalvos. Papildinys įtraukti scenarijų į eilę turėtų tik tokiu atveju, jei jis tikrai naudojamas puslapyje."
+    "message": "Apsvarstykite galimybę sumažinti [„WordPress“ papildinių](https://wordpress.org/plugins/), įkeliančių nenaudojamą „JavaScript“ jūsų puslapyje, skaičių arba juos pakeisti. Kad nustatytumėte papildinius, pridedančius nesusijusios JS, pabandykite vykdyti [kodo aprėpties procesą](https://developers.9oo91e.qjz9zk/web/updates/2017/04/devtools-release-notes#coverage) naudodami „Chrome DevTools“. Susijusią temą / papildinį galite nustatyti pagal scenarijaus URL. Ieškokite papildinių, kurių sąraše pateikta daug scenarijų, kurių kodo aprėptyje yra daug raudonos spalvos. Papildinys įtraukti scenarijų į eilę turėtų tik tokiu atveju, jei jis tikrai naudojamas puslapyje."
   },
   "node_modules/lighthouse-stack-packs/packs/wordpress.js | uses-long-cache-ttl": {
     "message": "Skaitykite apie [naršyklės saugojimo talpykloje funkciją sistemoje „WordPress“](https://wordpress.org/support/article/optimization/#browser-caching)."

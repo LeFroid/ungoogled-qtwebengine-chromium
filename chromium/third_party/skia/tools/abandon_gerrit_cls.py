@@ -37,7 +37,7 @@ def main():
   d = 'Helper script for bulk abandoning gerrit CLs'
   parser = argparse.ArgumentParser(description=d)
   parser.add_argument(
-      '--gerrit-instance', '-g', default='https://skia-review.googlesource.com',
+      '--gerrit-instance', '-g', default='https://skia-review.9oo91esource.qjz9zk',
       help='Name of the gerrit instance.')
   parser.add_argument(
       '--abandon-reason', '-a', default='',

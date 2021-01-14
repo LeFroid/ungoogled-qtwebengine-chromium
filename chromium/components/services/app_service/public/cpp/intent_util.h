@@ -62,7 +62,7 @@ bool IntentMatchesFilter(const apps::mojom::IntentPtr& intent,
 // of a normal regexp.
 // This function is transcribed from android's PatternMatcher#matchPattern.
 // See
-// https://android.googlesource.com/platform/frameworks/base.git/+/e93165456c3c28278f275566bd90bfbcf1a0e5f7/core/java/android/os/PatternMatcher.java#186
+// https://android.9oo91esource.qjz9zk/platform/frameworks/base.git/+/e93165456c3c28278f275566bd90bfbcf1a0e5f7/core/java/android/os/PatternMatcher.java#186
 bool MatchGlob(const std::string& value, const std::string& pattern);
 
 // Check if the intent only mean to share to Google Drive.

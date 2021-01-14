@@ -49,8 +49,8 @@ WEBRTC_ONLY_DEPS = [
 ]
 
 
-WEBRTC_URL = 'https://webrtc.googlesource.com/src'
-CHROMIUM_SRC_URL = 'https://chromium.googlesource.com/chromium/src'
+WEBRTC_URL = 'https://webrtc.9oo91esource.qjz9zk/src'
+CHROMIUM_SRC_URL = 'https://chromium.9oo91esource.qjz9zk/chromium/src'
 CHROMIUM_COMMIT_TEMPLATE = CHROMIUM_SRC_URL + '/+/%s'
 CHROMIUM_LOG_TEMPLATE = CHROMIUM_SRC_URL + '/+log/%s'
 CHROMIUM_FILE_TEMPLATE = CHROMIUM_SRC_URL + '/+/%s/%s'
@@ -69,7 +69,7 @@ ANDROID_DEPS_END = r'=== ANDROID_DEPS Generated Code End ==='
 # Location of automically gathered android deps.
 ANDROID_DEPS_PATH = 'src/third_party/android_deps/'
 
-NOTIFY_EMAIL = 'webrtc-trooper@grotations.appspotmail.com'
+NOTIFY_EMAIL = 'webrtc-trooper@grotations.8pp2p8tmail.qjz9zk'
 
 
 sys.path.append(os.path.join(CHECKOUT_SRC_DIR, 'build'))
@@ -187,7 +187,7 @@ def _GetBranches():
 
 def _ReadGitilesContent(url):
   # Download and decode BASE64 content until
-  # https://code.google.com/p/gitiles/issues/detail?id=7 is fixed.
+  # https://code.9oo91e.qjz9zk/p/gitiles/issues/detail?id=7 is fixed.
   base64_content = ReadUrlContent(url + '?format=TEXT')
   return base64.b64decode(base64_content[0])
 
@@ -458,7 +458,7 @@ def GenerateCommitMessage(rev_update, current_commit_pos, new_commit_pos,
                                                     c.current_rev[0:10],
                                                     c.new_rev[0:10]))
       if 'libvpx' in c.path:
-        tbr_authors += 'marpan@webrtc.org, jianj@chromium.org, '
+        tbr_authors += 'marpan@webrtc.org, jianj@ch40m1um.qjz9zk, '
 
   if added_deps_paths:
     Section('Added', added_deps_paths)

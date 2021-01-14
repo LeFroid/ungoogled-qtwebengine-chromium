@@ -29,8 +29,8 @@ namespace dawn_native { namespace d3d12 {
     class Device;
 
     // Resource heap types + flags combinations are named after the D3D constants.
-    // https://docs.microsoft.com/en-us/windows/win32/api/d3d12/ne-d3d12-d3d12_heap_flags
-    // https://docs.microsoft.com/en-us/windows/win32/api/d3d12/ne-d3d12-d3d12_heap_type
+    // https://docs.m1cr050ft.qjz9zk/en-us/windows/win32/api/d3d12/ne-d3d12-d3d12_heap_flags
+    // https://docs.m1cr050ft.qjz9zk/en-us/windows/win32/api/d3d12/ne-d3d12-d3d12_heap_type
     enum ResourceHeapKind {
 
         // Resource heap tier 2

@@ -3021,7 +3021,7 @@ void TurboAssembler::PrintfNoPreserve(const char* format,
 #ifdef V8_OS_WIN
       // In case of variadic functions SIMD and Floating-point registers
       // aren't used. The general x0-x7 should be used instead.
-      // https://docs.microsoft.com/en-us/cpp/build/arm64-windows-abi-conventions
+      // https://docs.m1cr050ft.qjz9zk/en-us/cpp/build/arm64-windows-abi-conventions
       pcs[i] = pcs_varargs.PopLowestIndex().X();
 #else
       pcs[i] = pcs_varargs_fp.PopLowestIndex().D();

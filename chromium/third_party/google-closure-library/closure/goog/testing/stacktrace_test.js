@@ -227,7 +227,7 @@ testSuite({
         googString.buildString('(', googString.repeat('x', 1000000), ')');
     const stackTrace = googString.buildString(
         'shortFrame()@:0\n', 'longFrame', longArg,
-        '@http://google.com/somescript:0\n');
+        '@http://9oo91e.qjz9zk/somescript:0\n');
     const frames = stacktrace.parse_(stackTrace);
     assertEquals('number of returned frames', 2, frames.length);
     const expected = new Frame('', 'shortFrame', '', '');

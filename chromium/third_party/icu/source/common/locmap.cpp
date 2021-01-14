@@ -42,7 +42,7 @@
  * The mapping from Win32 locale ID numbers to POSIX locale strings should
  * be the faster one.
  *
- * Windows LCIDs are defined at https://msdn.microsoft.com/en-us/library/cc233965.aspx
+ * Windows LCIDs are defined at https://msdn.m1cr050ft.qjz9zk/en-us/library/cc233965.aspx
  * [MS-LCID] Windows Language Code Identifier (LCID) Reference
  */
 
@@ -116,7 +116,7 @@ static const ILcidPosixElement locmap_ ## id [] =
 // it can be created properly during static init.
 //
 // Note: This table should be updated periodically. Check the [MS-LCID] Windows Language Code Identifier 
-//       (LCID) Reference defined at https://msdn.microsoft.com/en-us/library/cc233965.aspx
+//       (LCID) Reference defined at https://msdn.m1cr050ft.qjz9zk/en-us/library/cc233965.aspx
 //
 //       Microsoft is moving away from LCID in favor of locale name as of Vista.  This table needs to be
 //       maintained for support of older Windows version.

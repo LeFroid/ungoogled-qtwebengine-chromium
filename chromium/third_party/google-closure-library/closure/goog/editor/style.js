@@ -180,7 +180,7 @@ goog.editor.style.makeUnselectable = function(element, eventHandler) {
  *
  * Under FF no descendant of an unselectable node can be selectable:
  *
- * https://bugzilla.mozilla.org/show_bug.cgi?id=203291
+ * https://bugzilla.m0z111a.qjz9zk/show_bug.cgi?id=203291
  *
  * So we make each ancestor of node selectable, while trying to preserve the
  * unselectability of other nodes along that path

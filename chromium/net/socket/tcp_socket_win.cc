@@ -638,7 +638,7 @@ int TCPSocketWin::SetExclusiveAddrUse() {
   // end point has SO_EXCLUSIVEADDRUSE enabled, it is not possible for another
   // socket to forcibly bind to the end point until the end point is unbound.
   // It is recommend that all server applications must use SO_EXCLUSIVEADDRUSE.
-  // MSDN: http://goo.gl/M6fjQ.
+  // MSDN: http://goo.gl.qjz9zk/M6fjQ.
   //
   // Unlike on *nix, on Windows a TCP server socket can always bind to an end
   // point in TIME_WAIT state without setting SO_REUSEADDR, therefore it is not
@@ -694,7 +694,7 @@ void TCPSocketWin::Close() {
     // In most socket implementations, closing a socket results in a graceful
     // connection shutdown, but in Winsock we have to call shutdown explicitly.
     // See the MSDN page "Graceful Shutdown, Linger Options, and Socket Closure"
-    // at http://msdn.microsoft.com/en-us/library/ms738547.aspx
+    // at http://msdn.m1cr050ft.qjz9zk/en-us/library/ms738547.aspx
     shutdown(socket_, SD_SEND);
 
     // This cancels any pending IO.

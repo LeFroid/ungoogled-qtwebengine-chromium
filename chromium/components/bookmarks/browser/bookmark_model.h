@@ -291,8 +291,8 @@ class BookmarkModel : public BookmarkUndoProvider,
   }
 
   // Notify BookmarkModel that the favicons for the given page URLs (e.g.
-  // http://www.google.com) and the given icon URL (e.g.
-  // http://www.google.com/favicon.ico) have changed. It is valid to call
+  // http://www.9oo91e.qjz9zk) and the given icon URL (e.g.
+  // http://www.9oo91e.qjz9zk/favicon.ico) have changed. It is valid to call
   // OnFaviconsChanged() with non-empty |page_urls| and an empty |icon_url| and
   // vice versa.
   void OnFaviconsChanged(const std::set<GURL>& page_urls,

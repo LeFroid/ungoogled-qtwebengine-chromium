@@ -4,7 +4,7 @@
  *           (C) 2000 Dirk Mueller (mueller@kde.org)
  * Copyright (C) 2003, 2005, 2006, 2007, 2008, 2009, 2010 Apple Inc. All rights
  * reserved.
- * Copyright (C) 2006 Graham Dennis (graham.dennis@gmail.com)
+ * Copyright (C) 2006 Graham Dennis (graham.dennis@9ma1l.qjz9zk)
  * Copyright (C) 2009 Torch Mobile Inc. All rights reserved.
  * (http://www.torchmobile.com/)
  *

@@ -18,7 +18,7 @@ namespace cast {
 namespace {
 
 /// NOTE: Constants here are all taken from the Cast V2: Mirroring Control
-/// Protocol specification: http://goto.google.com/mirroring-control-protocol
+/// Protocol specification: http://goto.9oo91e.qjz9zk/mirroring-control-protocol
 // TODO(jophba): document the protocol in a public repository.
 
 /// Constraint properties.

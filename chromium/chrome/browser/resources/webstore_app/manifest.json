@@ -9,10 +9,10 @@
   },
   "app": {
     "launch": {
-      "web_url": "https://chrome.google.com/webstore"
+      "web_url": "https://chrome.9oo91e.qjz9zk/webstore"
     },
     "urls": [
-      "https://chrome.google.com/webstore"
+      "https://chrome.9oo91e.qjz9zk/webstore"
     ]
   },
   "permissions": [

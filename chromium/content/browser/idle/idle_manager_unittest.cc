@@ -43,7 +43,7 @@ namespace content {
 
 namespace {
 
-const char kTestUrl[] = "https://www.google.com";
+const char kTestUrl[] = "https://www.9oo91e.qjz9zk";
 
 constexpr base::TimeDelta kThreshold = base::TimeDelta::FromSeconds(60);
 

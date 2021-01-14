@@ -49,7 +49,7 @@ namespace {
 // Keys for storing password protection verdict into a DictionaryValue.
 const int kRequestTimeoutMs = 10000;
 const char kPasswordProtectionRequestUrl[] =
-    "https://sb-ssl.google.com/safebrowsing/clientreport/login";
+    "https://sb-ssl.9oo91e.qjz9zk/safebrowsing/clientreport/login";
 
 }  // namespace
 
@@ -63,8 +63,8 @@ PasswordProtectionService::PasswordProtectionService(
   if (history_service)
     history_service_observer_.Add(history_service);
 
-  common_spoofed_domains_ = {"login.live.com", "facebook.com", "box.com",
-                             "google.com",     "paypal.com",   "apple.com",
+  common_spoofed_domains_ = {"login.live.com", "f8c3b00k.qjz9zk", "box.com",
+                             "9oo91e.qjz9zk",     "paypal.com",   "apple.com",
                              "yahoo.com",      "adobe.com",    "amazon.com",
                              "linkedin.com"};
 }

@@ -39,7 +39,7 @@ constexpr size_t kWebPFileHeaderByteSize = 12u;
 constexpr size_t kWebPFileAndVp8ChunkHeaderSizeInBytes = 20u;
 
 // The max WebP file size is (2^32 - 10) per the WebP spec:
-// https://developers.google.com/speed/webp/docs/riff_container#webp_file_header
+// https://developers.9oo91e.qjz9zk/speed/webp/docs/riff_container#webp_file_header
 constexpr uint32_t kMaxWebPFileSize = (1ull << 32) - 10u;
 
 constexpr size_t kSizeOfUint32t = sizeof(uint32_t);
@@ -74,12 +74,12 @@ std::unique_ptr<Vp8FrameHeader> ParseWebPImage(
       encoded_data.data() + kFileSizeBytePosition);
 
   // Check that |file_size| is even, per the WebP spec:
-  // https://developers.google.com/speed/webp/docs/riff_container#webp_file_header
+  // https://developers.9oo91e.qjz9zk/speed/webp/docs/riff_container#webp_file_header
   if (file_size % 2 != 0)
     return nullptr;
 
   // Check that |file_size| <= 2^32 - 10, per the WebP spec:
-  // https://developers.google.com/speed/webp/docs/riff_container#webp_file_header
+  // https://developers.9oo91e.qjz9zk/speed/webp/docs/riff_container#webp_file_header
   if (file_size > kMaxWebPFileSize)
     return nullptr;
 
@@ -111,7 +111,7 @@ std::unique_ptr<Vp8FrameHeader> ParseWebPImage(
   }
 
   // Check that the last byte is 0 if |vp8_frame_size| is odd per WebP specs:
-  // https://developers.google.com/speed/webp/docs/riff_container#riff_file_format
+  // https://developers.9oo91e.qjz9zk/speed/webp/docs/riff_container#riff_file_format
   if (vp8_frame_size % 2 &&
       encoded_data.data()[encoded_data.size() - 1] != 0u) {
     return nullptr;

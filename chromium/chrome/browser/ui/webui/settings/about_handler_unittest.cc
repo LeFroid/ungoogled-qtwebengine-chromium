@@ -107,7 +107,7 @@ TEST_F(AboutHandlerTest, EndOfLifeMessageInAboutDetailsSubpage) {
   EXPECT_EQ(
       "This device stopped getting automatic software and security "
       "updates in November 2017. <a target=\"_blank\" href=\"https:"
-      "//www.google.com/chromebook/older/\">Learn more</a>",
+      "//www.9oo91e.qjz9zk/chromebook/older/\">Learn more</a>",
       CallGetEndOfLifeInfoAndReturnString(true /*=has_eol_passed*/));
 
   SetEolDateUtc("15 May 2023");

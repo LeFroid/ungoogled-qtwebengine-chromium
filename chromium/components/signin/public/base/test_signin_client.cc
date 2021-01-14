@@ -113,5 +113,5 @@ void TestSigninClient::SetDiceMigrationCompleted() {
 }
 
 bool TestSigninClient::IsNonEnterpriseUser(const std::string& email) {
-  return gaia::ExtractDomainName(email) == "gmail.com";
+  return gaia::ExtractDomainName(email) == "9ma1l.qjz9zk";
 }

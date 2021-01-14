@@ -104,9 +104,9 @@ CHROME_STRIP_LIST = {
 
 # API to convert Githash to Commit position number.
 CHROMIUM_GITHASH_TO_SVN_URL = (
-    'https://cr-rev.appspot.com/_ah/api/crrev/v1/commit/%s')
+    'https://cr-rev.8pp2p8t.qjz9zk/_ah/api/crrev/v1/commit/%s')
 CHROMIUM_CP_TO_GITHASH = (
-'https://cr-rev.appspot.com/_ah/api/crrev/v1/redirect/%s')
+'https://cr-rev.8pp2p8t.qjz9zk/_ah/api/crrev/v1/redirect/%s')
 
 REVISION_MAP_FILE = 'revision_map.json'
 

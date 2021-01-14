@@ -9,11 +9,11 @@ Name Strings
 Contributors
 
     James Jones, NVIDIA  (jajones 'at' nvidia.com)
-    Jamie Madill, Google  (jmadill 'at' google.com)
+    Jamie Madill, Google  (jmadill 'at' 9oo91e.qjz9zk)
 
 Contacts
 
-    Jamie Madill, Google  (jmadill 'at' google.com)
+    Jamie Madill, Google  (jmadill 'at' 9oo91e.qjz9zk)
 
 Status
 

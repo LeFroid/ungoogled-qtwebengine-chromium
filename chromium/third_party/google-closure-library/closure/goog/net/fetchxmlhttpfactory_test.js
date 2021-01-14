@@ -52,7 +52,7 @@ function verifySend(
     if (isArrayBuffer) {
       xhr.responseType = 'arraybuffer';
     }
-    xhr.open(sendMethod, 'https://www.google.com', true /* opt_async */);
+    xhr.open(sendMethod, 'https://www.9oo91e.qjz9zk', true /* opt_async */);
     let lastState;
     let lastBufferSize = 0;
     let numberOfUpdates = 0;
@@ -190,7 +190,7 @@ testSuite({
 
     const onReadyStateChangeHandler = new recordFunction();
     xhr.onreadystatechange = onReadyStateChangeHandler;
-    xhr.open('GET', 'https://www.google.com', true /* opt_async */);
+    xhr.open('GET', 'https://www.9oo91e.qjz9zk', true /* opt_async */);
     assertEquals(xhr.readyState, FetchXmlHttp.RequestState.OPENED);
     onReadyStateChangeHandler.assertCallCount(1);
 
@@ -202,9 +202,9 @@ testSuite({
     mockControl.$replayAll();
 
     const xhr = factory.createInstance();
-    xhr.open('GET', 'https://www.google.com', true /* opt_async */);
+    xhr.open('GET', 'https://www.9oo91e.qjz9zk', true /* opt_async */);
     assertThrows(() => {
-      xhr.open('GET', 'https://www.google.com', true /* opt_async */);
+      xhr.open('GET', 'https://www.9oo91e.qjz9zk', true /* opt_async */);
     });
 
     mockControl.$verifyAll();
@@ -217,7 +217,7 @@ testSuite({
     const xhr = factory.createInstance();
 
     assertThrows(() => {
-      xhr.open('GET', 'https://www.google.com', false /* opt_async */);
+      xhr.open('GET', 'https://www.9oo91e.qjz9zk', false /* opt_async */);
     });
 
     mockControl.$verifyAll();
@@ -228,7 +228,7 @@ testSuite({
    * @return {!Promise<void>}
    */
   testSend() {
-    fetchMock(new Request('https://www.google.com', {
+    fetchMock(new Request('https://www.9oo91e.qjz9zk', {
       headers: new Headers(),
       method: 'GET',
     })).$returns(Promise.resolve(createSuccessResponse()));
@@ -242,7 +242,7 @@ testSuite({
    * @return {!Promise<void>}
    */
   testSendPost() {
-    fetchMock(new Request('https://www.google.com', {
+    fetchMock(new Request('https://www.9oo91e.qjz9zk', {
       headers: new Headers(),
       method: 'POST',
     })).$returns(Promise.resolve(createSuccessResponse()));
@@ -258,7 +258,7 @@ testSuite({
   testSend_includeCredentials() {
     factory = new FetchXmlHttpFactory(worker);
     factory.setCredentialsMode(/** @type {RequestCredentials} */ ('include'));
-    fetchMock(new Request('https://www.google.com', {
+    fetchMock(new Request('https://www.9oo91e.qjz9zk', {
       headers: new Headers(),
       method: 'POST',
       credentials: 'include',
@@ -275,7 +275,7 @@ testSuite({
   testSend_setCacheMode() {
     factory = new FetchXmlHttpFactory(worker);
     factory.setCacheMode(/** @type {RequestCache} */ ('no-cache'));
-    fetchMock(new Request('https://www.google.com', {
+    fetchMock(new Request('https://www.9oo91e.qjz9zk', {
       headers: new Headers(),
       method: 'POST',
       cache: 'no-cache',
@@ -290,7 +290,7 @@ testSuite({
    * @return {!Promise<void>}
    */
   testSend_error() {
-    fetchMock(new Request('https://www.google.com', {
+    fetchMock(new Request('https://www.9oo91e.qjz9zk', {
       headers: new Headers(),
       method: 'GET',
     })).$returns(Promise.resolve(createFailedResponse()));
@@ -305,7 +305,7 @@ testSuite({
    * @return {!Promise<void>}
    */
   testSend_streaming() {
-    fetchMock(new Request('https://www.google.com', {
+    fetchMock(new Request('https://www.9oo91e.qjz9zk', {
       headers: new Headers(),
       method: 'POST',
     })).$returns(Promise.resolve(createSuccessStreamingResponse()));
@@ -320,7 +320,7 @@ testSuite({
    * @return {!Promise<void>}
    */
   testSend_arrayBuffer() {
-    fetchMock(new Request('https://www.google.com', {
+    fetchMock(new Request('https://www.9oo91e.qjz9zk', {
       headers: new Headers(),
       method: 'POST',
     })).$returns(Promise.resolve(createArrayBufferResponse()));
@@ -338,7 +338,7 @@ testSuite({
     const failedPromise = new Promise(() => {
       throw new Error('failed to fetch');
     });
-    fetchMock(new Request('https://www.google.com', {
+    fetchMock(new Request('https://www.9oo91e.qjz9zk', {
       headers: new Headers(),
       method: 'GET',
     })).$returns(failedPromise);
@@ -346,7 +346,7 @@ testSuite({
     mockControl.$replayAll();
     return new Promise((resolve) => {
       const xhr = factory.createInstance();
-      xhr.open('GET', 'https://www.google.com', true /* opt_async */);
+      xhr.open('GET', 'https://www.9oo91e.qjz9zk', true /* opt_async */);
       xhr.onreadystatechange = () => {
         assertEquals(xhr.readyState, FetchXmlHttp.RequestState.DONE);
         assertEquals(0, xhr.status);

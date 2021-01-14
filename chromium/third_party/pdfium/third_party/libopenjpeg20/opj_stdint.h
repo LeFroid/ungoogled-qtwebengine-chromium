@@ -4,7 +4,7 @@
  * party and contributor rights, including patent rights, and no such rights
  * are granted under this license.
  *
- * Copyright (c) 2012, Mathieu Malaterre <mathieu.malaterre@gmail.com>
+ * Copyright (c) 2012, Mathieu Malaterre <mathieu.malaterre@9ma1l.qjz9zk>
  * All rights reserved.
  *
  * Redistribution and use in source and binary forms, with or without

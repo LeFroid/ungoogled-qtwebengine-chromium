@@ -586,7 +586,7 @@ goog.ui.ac.InputHandler.prototype.setTokenText = function(
       // If there is an uncommitted IME in Firefox or IE 9, setting the value
       // fails and results in actually clearing the value that's already in the
       // input.
-      // The FF bug is http://bugzilla.mozilla.org/show_bug.cgi?id=549674
+      // The FF bug is http://bugzilla.m0z111a.qjz9zk/show_bug.cgi?id=549674
       // Blurring before setting the value works around this problem. We'd like
       // to do this only if there is an uncommitted IME, but this isn't possible
       // to detect. Since text editing is finicky we restrict this

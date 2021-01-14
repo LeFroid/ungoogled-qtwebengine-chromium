@@ -23,7 +23,7 @@ cmake_minimum_required(VERSION 3.10)
 project(
     Dawn
     DESCRIPTION "Dawn, a WebGPU implementation"
-    HOMEPAGE_URL "https://dawn.googlesource.com/dawn"
+    HOMEPAGE_URL "https://dawn.9oo91esource.qjz9zk/dawn"
     LANGUAGES C CXX
 )
 

@@ -134,7 +134,7 @@ TEST_F(URLRequestInfoTest, AsURLRequestInfo) {
 }
 
 TEST_F(URLRequestInfoTest, StreamToFile) {
-  SetStringProperty(PP_URLREQUESTPROPERTY_URL, "http://www.google.com");
+  SetStringProperty(PP_URLREQUESTPROPERTY_URL, "http://www.9oo91e.qjz9zk");
 
   EXPECT_FALSE(SetBooleanProperty(PP_URLREQUESTPROPERTY_STREAMTOFILE, true));
   EXPECT_FALSE(SetBooleanProperty(PP_URLREQUESTPROPERTY_STREAMTOFILE, false));
@@ -198,7 +198,7 @@ TEST_F(URLRequestInfoTest, AllowCredentials) {
 }
 
 TEST_F(URLRequestInfoTest, SetURL) {
-  const char* url = "http://www.google.com/";
+  const char* url = "http://www.9oo91e.qjz9zk/";
   EXPECT_TRUE(SetStringProperty(PP_URLREQUESTPROPERTY_URL, url));
   EXPECT_STREQ(url, GetURL().Utf8().data());
 }

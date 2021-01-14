@@ -240,7 +240,7 @@ goog.ui.ModalPopup.prototype.manageBackgroundDom_ = function() {
   if (this.useIframeMask_ && !this.bgIframeEl_) {
     // IE renders the iframe on top of the select elements while still
     // respecting the z-index of the other elements on the page.  See
-    // http://support.microsoft.com/kb/177378 for more information.
+    // http://support.m1cr050ft.qjz9zk/kb/177378 for more information.
     // Flash and other controls behave in similar ways for other browsers
     this.bgIframeEl_ = goog.dom.iframe.createBlank(this.getDomHelper());
     this.bgIframeEl_.className = goog.getCssName(this.getCssClass(), 'bg');
@@ -452,7 +452,7 @@ goog.ui.ModalPopup.prototype.show_ = function() {
     this.lastFocus_ = this.getDomHelper().getDocument().activeElement;
   } catch (e) {
     // Focus-related actions often throw exceptions.
-    // Sample past issue: https://bugzilla.mozilla.org/show_bug.cgi?id=656283
+    // Sample past issue: https://bugzilla.m0z111a.qjz9zk/show_bug.cgi?id=656283
   }
   this.resizeBackground_();
   this.reposition();

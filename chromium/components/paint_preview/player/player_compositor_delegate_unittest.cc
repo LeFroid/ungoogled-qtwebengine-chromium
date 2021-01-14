@@ -273,7 +273,7 @@ TEST_F(PlayerCompositorDelegateTest, OnClick) {
   GURL url("www.example.com");
   PaintPreviewProto proto = CreateValidProto(url);
 
-  GURL root_frame_link("www.chromium.org");
+  GURL root_frame_link("www.ch40m1um.qjz9zk");
   auto root_frame_id = base::UnguessableToken::Create();
 
   auto* root_frame = proto.mutable_root_frame();
@@ -387,7 +387,7 @@ TEST_F(PlayerCompositorDelegateTest, OldVersion) {
   auto* service = GetBaseService();
   auto file_manager = service->GetFileManager();
   auto key = file_manager->CreateKey(1U);
-  GURL url("https://www.chromium.org/");
+  GURL url("https://www.ch40m1um.qjz9zk/");
   auto proto = CreateValidProto(url);
   proto.mutable_metadata()->set_version(kPaintPreviewVersion - 1);
   SerializeProtoAndCreateRootSkp(&proto, key);
@@ -408,7 +408,7 @@ TEST_F(PlayerCompositorDelegateTest, URLMismatch) {
   auto* service = GetBaseService();
   auto file_manager = service->GetFileManager();
   auto key = file_manager->CreateKey(1U);
-  GURL url("https://www.chromium.org/");
+  GURL url("https://www.ch40m1um.qjz9zk/");
   auto proto = CreateValidProto(url);
   SerializeProtoAndCreateRootSkp(&proto, key);
   {
@@ -428,7 +428,7 @@ TEST_F(PlayerCompositorDelegateTest, ServiceDisconnect) {
   auto* service = GetBaseService();
   auto file_manager = service->GetFileManager();
   auto key = file_manager->CreateKey(1U);
-  GURL url("https://www.chromium.org/");
+  GURL url("https://www.ch40m1um.qjz9zk/");
   auto proto = CreateValidProto(url);
   SerializeProtoAndCreateRootSkp(&proto, key);
   {
@@ -459,7 +459,7 @@ TEST_F(PlayerCompositorDelegateTest, ClientDisconnect) {
   auto* service = GetBaseService();
   auto file_manager = service->GetFileManager();
   auto key = file_manager->CreateKey(1U);
-  GURL url("https://www.chromium.org/");
+  GURL url("https://www.ch40m1um.qjz9zk/");
   auto proto = CreateValidProto(url);
   SerializeProtoAndCreateRootSkp(&proto, key);
   {
@@ -489,7 +489,7 @@ TEST_F(PlayerCompositorDelegateTest, InvalidCompositeRequest) {
   auto* service = GetBaseService();
   auto file_manager = service->GetFileManager();
   auto key = file_manager->CreateKey(1U);
-  GURL url("https://www.chromium.org/");
+  GURL url("https://www.ch40m1um.qjz9zk/");
   auto proto = CreateValidProto(url);
   base::RunLoop loop;
   file_manager->GetTaskRunner()->PostTask(
@@ -520,7 +520,7 @@ TEST_F(PlayerCompositorDelegateTest, CompositorDeserializationError) {
   auto* service = GetBaseService();
   auto file_manager = service->GetFileManager();
   auto key = file_manager->CreateKey(1U);
-  GURL url("https://www.chromium.org/");
+  GURL url("https://www.ch40m1um.qjz9zk/");
   auto proto = CreateValidProto(url);
   SerializeProtoAndCreateRootSkp(&proto, key);
   {
@@ -544,7 +544,7 @@ TEST_F(PlayerCompositorDelegateTest, InvalidRootSkp) {
   auto* service = GetBaseService();
   auto file_manager = service->GetFileManager();
   auto key = file_manager->CreateKey(1U);
-  GURL url("https://www.chromium.org/");
+  GURL url("https://www.ch40m1um.qjz9zk/");
   auto proto = CreateValidProto(url);
   SerializeProtoAndCreateRootSkp(&proto, key);
   {

@@ -99,7 +99,7 @@ export LD_LIBRARY_PATH=$ICU_ROOT/dbg/icu4c/lib
 * for manual diffs and for Unicode Tools input data updates:
   remove version suffixes from the file names
     ~$ unidata/desuffixucd.py $UNICODE_DATA
-  (see https://sites.google.com/site/unicodetools/inputdata)
+  (see https://sites.9oo91e.qjz9zk/site/unicodetools/inputdata)
 
 * process and/or copy files
 - $ICU_SRC/tools/unicode$ py/preparseucd.py $UNICODE_DATA $ICU_SRC
@@ -220,7 +220,7 @@ set(ICU4C_SRC_DIR /usr/local/google/home/mscherer/icu/uni/src/icu4c)
 * collation: CLDR collation root, UCA DUCET
 
 - UCA DUCET goes into Mark's Unicode tools, see
-    https://sites.google.com/site/unicodetools/home#TOC-UCA
+    https://sites.9oo91e.qjz9zk/site/unicodetools/home#TOC-UCA
   diff the main mapping file, look for bad changes
   (for example, more bytes per weight for common characters)
     ~/svn.unitools/trunk$ sed -r -f ~/cldr/uni/src/tools/scripts/uca/blankweights.sed ../Generated/UCA/13.0.0/CollationAuxiliary/FractionalUCA.txt > ../frac-13.0.txt
@@ -254,7 +254,7 @@ set(ICU4C_SRC_DIR /usr/local/google/home/mscherer/icu/uni/src/icu4c)
 - rebuild ICU4C
 
 * Unihan collators
-    https://sites.google.com/site/unicodetools/unihan
+    https://sites.9oo91e.qjz9zk/site/unicodetools/unihan
 - run Unicode Tools
     org.unicode.draft.GenerateUnihanCollators
   with VM arguments
@@ -415,7 +415,7 @@ export LD_LIBRARY_PATH=$ICU_ROOT/dbg/icu4c/lib
 * for manual diffs and for Unicode Tools input data updates:
   remove version suffixes from the file names
     ~$ unidata/desuffixucd.py $UNICODE_DATA
-  (see https://sites.google.com/site/unicodetools/inputdata)
+  (see https://sites.9oo91e.qjz9zk/site/unicodetools/inputdata)
 
 * process and/or copy files
 - $ICU_SRC/tools/unicode$ py/preparseucd.py $UNICODE_DATA $ICU_SRC
@@ -489,7 +489,7 @@ set(ICU4C_SRC_DIR /usr/local/google/home/mscherer/icu/uni/src/icu4c)
 * collation: CLDR collation root, UCA DUCET
 
 - UCA DUCET goes into Mark's Unicode tools, see
-    https://sites.google.com/site/unicodetools/home#TOC-UCA
+    https://sites.9oo91e.qjz9zk/site/unicodetools/home#TOC-UCA
   diff the main mapping file, look for bad changes
   (for example, more bytes per weight for common characters)
     ~/svn.unitools/trunk$ sed -r -f ~/svn.cldr/uni/tools/scripts/uca/blankweights.sed ../Generated/UCA/12.1.0/CollationAuxiliary/FractionalUCA.txt > ../frac-12.1.txt
@@ -520,7 +520,7 @@ set(ICU4C_SRC_DIR /usr/local/google/home/mscherer/icu/uni/src/icu4c)
 - rebuild ICU4C
 
 * Unihan collators
-    https://sites.google.com/site/unicodetools/unihan
+    https://sites.9oo91e.qjz9zk/site/unicodetools/unihan
 - run Unicode Tools
     org.unicode.draft.GenerateUnihanCollators
   with VM arguments
@@ -689,7 +689,7 @@ export LD_LIBRARY_PATH=$ICU_ROOT/dbg/icu4c/lib
 * for manual diffs and for Unicode Tools input data updates:
   remove version suffixes from the file names
     ~$ unidata/desuffixucd.py $UNICODE_DATA
-  (see https://sites.google.com/site/unicodetools/inputdata)
+  (see https://sites.9oo91e.qjz9zk/site/unicodetools/inputdata)
 
 * process and/or copy files
 - $ICU_SRC/tools/unicode$ py/preparseucd.py $UNICODE_DATA $ICU_SRC
@@ -807,7 +807,7 @@ set(ICU4C_SRC_DIR /usr/local/google/home/mscherer/icu/uni/src/icu4c)
 * collation: CLDR collation root, UCA DUCET
 
 - UCA DUCET goes into Mark's Unicode tools, see
-    https://sites.google.com/site/unicodetools/home#TOC-UCA
+    https://sites.9oo91e.qjz9zk/site/unicodetools/home#TOC-UCA
   diff the main mapping file, look for bad changes
   (for example, more bytes per weight for common characters)
     ~/svn.unitools/trunk$ sed -r -f ~/svn.cldr/uni/tools/scripts/uca/blankweights.sed ../Generated/UCA/12.0.0/CollationAuxiliary/FractionalUCA.txt > ../frac-12.txt
@@ -845,7 +845,7 @@ set(ICU4C_SRC_DIR /usr/local/google/home/mscherer/icu/uni/src/icu4c)
 - rebuild ICU4C
 
 * Unihan collators
-    https://sites.google.com/site/unicodetools/unihan
+    https://sites.9oo91e.qjz9zk/site/unicodetools/unihan
 - run Unicode Tools
     org.unicode.draft.GenerateUnihanCollators
   with VM arguments
@@ -1134,7 +1134,7 @@ export LD_LIBRARY_PATH=$ICU_ROOT/dbg/icu4c/lib
 * for manual diffs and for Unicode Tools input data updates:
   remove version suffixes from the file names
     ~$ unidata/desuffixucd.py $UNICODE_DATA
-  (see https://sites.google.com/site/unicodetools/inputdata)
+  (see https://sites.9oo91e.qjz9zk/site/unicodetools/inputdata)
 
 * process and/or copy files
 - $ICU_SRC/tools/unicode$ py/preparseucd.py $UNICODE_DATA $ICU_SRC
@@ -1314,7 +1314,7 @@ set(ICU4C_SRC_DIR /usr/local/google/home/mscherer/svn.icu/uni/src/icu4c)
 * collation: CLDR collation root, UCA DUCET
 
 - UCA DUCET goes into Mark's Unicode tools, see
-    https://sites.google.com/site/unicodetools/home#TOC-UCA
+    https://sites.9oo91e.qjz9zk/site/unicodetools/home#TOC-UCA
   diff the main mapping file, look for bad changes
   (for example, more bytes per weight for common characters)
     ~/svn.unitools/trunk$ sed -r -f ~/svn.cldr/uni/tools/scripts/uca/blankweights.sed ../Generated/uca/11.0.0/CollationAuxiliary/FractionalUCA.txt > ../frac-11.txt
@@ -1355,7 +1355,7 @@ set(ICU4C_SRC_DIR /usr/local/google/home/mscherer/svn.icu/uni/src/icu4c)
 - rebuild ICU4C
 
 * Unihan collators
-    https://sites.google.com/site/unicodetools/unihan
+    https://sites.9oo91e.qjz9zk/site/unicodetools/unihan
 - run Unicode Tools
     org.unicode.draft.GenerateUnihanCollators
   with VM arguments
@@ -1527,7 +1527,7 @@ export LD_LIBRARY_PATH=$ICU_ROOT/dbg/icu4c/lib
 
 * for manual diffs: remove version suffixes from the file names
   ~$ unidata/desuffixucd.py $UNICODE_DATA
-  (see https://sites.google.com/site/unicodetools/inputdata)
+  (see https://sites.9oo91e.qjz9zk/site/unicodetools/inputdata)
 
 * process and/or copy files
 - $ICU_SRC/tools/unicode$ py/preparseucd.py $UNICODE_DATA $ICU_SRC
@@ -1677,7 +1677,7 @@ set(ICU4C_SRC_DIR /usr/local/google/home/mscherer/svn.icu/uni10/src/icu4c)
 * collation: CLDR collation root, UCA DUCET
 
 - UCA DUCET goes into Mark's Unicode tools, see
-  https://sites.google.com/site/unicodetools/home#TOC-UCA
+  https://sites.9oo91e.qjz9zk/site/unicodetools/home#TOC-UCA
 - CLDR root data files are checked into $CLDR_SRC/common/uca/
     cp (Unicode Tools UCA generated)/CollationAuxiliary/* $CLDR_SRC/common/uca/
 
@@ -1713,7 +1713,7 @@ set(ICU4C_SRC_DIR /usr/local/google/home/mscherer/svn.icu/uni10/src/icu4c)
 - rebuild ICU4C
 
 * Unihan collators
-    https://sites.google.com/site/unicodetools/unihan
+    https://sites.9oo91e.qjz9zk/site/unicodetools/unihan
 - run Unicode Tools
     org.unicode.draft.GenerateUnihanCollators
   with VM arguments
@@ -2001,7 +2001,7 @@ http://www.unicode.org/reports/tr44/tr44-17.html
   includes a copy of the latest IdnaMappingTable.txt (can be in some subfolder)
 - only for manual diffs: remove version suffixes from the file names
   ~/unidata/uni70/20140403$ ../../desuffixucd.py .
-  (see https://sites.google.com/site/unicodetools/inputdata)
+  (see https://sites.9oo91e.qjz9zk/site/unicodetools/inputdata)
 - only for manual diffs: extract Unihan.zip to "here" (.../ucd/Unihan/*.txt), delete Unihan.zip
 - ~/svn.icutools/trunk/src/unicode$ py/preparseucd.py ~/unidata/uni90/20160603 $ICU_SRC_DIR ~/svn.icutools/trunk/src
 - This writes files (especially ppucd.txt) to the ICU4C unidata and testdata subfolders.
@@ -2145,7 +2145,7 @@ http://www.unicode.org/reports/tr44/tr44-17.html
 * collation: CLDR collation root, UCA DUCET
 
 - UCA DUCET goes into Mark's Unicode tools, see
-  https://sites.google.com/site/unicodetools/home#TOC-UCA
+  https://sites.9oo91e.qjz9zk/site/unicodetools/home#TOC-UCA
 - CLDR root data files are checked into (CLDR UCA branch)/common/uca/
     cp (UCA generated)/CollationAuxiliary/* ~/svn.cldr/trunk/common/uca/
 
@@ -2450,7 +2450,7 @@ http://www.unicode.org/reports/tr44/tr44-15.html
   includes a copy of the latest IdnaMappingTable.txt (can be in some subfolder)
 - only for manual diffs: remove version suffixes from the file names
   ~/unidata/uni70/20140403$ ../../desuffixucd.py .
-  (see https://sites.google.com/site/unicodetools/inputdata)
+  (see https://sites.9oo91e.qjz9zk/site/unicodetools/inputdata)
 - only for manual diffs: extract Unihan.zip to "here" (.../ucd/Unihan/*.txt), delete Unihan.zip
 - ~/svn.icutools/trunk/src/unicode$ py/preparseucd.py ~/unidata/uni80/20150415 $ICU_SRC_DIR ~/svn.icutools/trunk/src
 - This writes files (especially ppucd.txt) to the ICU4C unidata and testdata subfolders.
@@ -2568,7 +2568,7 @@ http://www.unicode.org/reports/tr44/tr44-15.html
 * collation: CLDR collation root, UCA DUCET
 
 - UCA DUCET goes into Mark's Unicode tools, see
-  https://sites.google.com/site/unicodetools/home#TOC-UCA
+  https://sites.9oo91e.qjz9zk/site/unicodetools/home#TOC-UCA
 - CLDR root data files are checked into (CLDR UCA branch)/common/uca/
 - cd (CLDR UCA branch)/common/uca/
 - update source/data/unidata/FractionalUCA.txt with FractionalUCA_SHORT.txt
@@ -2742,7 +2742,7 @@ http://www.unicode.org/reports/tr44/tr44-13.html
   includes a copy of the latest IdnaMappingTable.txt (can be in some subfolder)
 - only for manual diffs: remove version suffixes from the file names
   ~/unidata/uni70/20140403$ ../../desuffixucd.py .
-  (see https://sites.google.com/site/unicodetools/inputdata)
+  (see https://sites.9oo91e.qjz9zk/site/unicodetools/inputdata)
 - only for manual diffs: extract Unihan.zip to "here" (.../ucd/Unihan/*.txt), delete Unihan.zip
 - ~/svn.icutools/trunk/src/unicode$ py/preparseucd.py ~/unidata/uni70/20140403 $ICU_SRC_DIR ~/svn.icutools/trunk/src
 - This writes files (especially ppucd.txt) to the ICU4C unidata and testdata subfolders.
@@ -2995,9 +2995,9 @@ set(ICU_SRC_DIR /home/mscherer/svn.icu/uni70/src)
 * UCA
 
 - download UCA files (mostly allkeys.txt) from http://www.unicode.org/Public/UCA/<beta version>/
-- run desuffixucd.py (see https://sites.google.com/site/unicodetools/inputdata)
+- run desuffixucd.py (see https://sites.9oo91e.qjz9zk/site/unicodetools/inputdata)
 - update the input files for Mark's UCA tools, in ~/svn.unitools/trunk/data/uca/7.0.0/
-- run Mark's UCA Main: https://sites.google.com/site/unicodetools/home#TOC-UCA
+- run Mark's UCA Main: https://sites.9oo91e.qjz9zk/site/unicodetools/home#TOC-UCA
 - output files are in ~/svn.unitools/Generated/uca/7.0.0/
 - review data; compare files, use blankweights.sed or similar
   ~/svn.unitools$ sed -r -f blankweights.sed Generated/uca/7.0.0/CollationAuxiliary/FractionalUCA.txt > frac-7.0.txt

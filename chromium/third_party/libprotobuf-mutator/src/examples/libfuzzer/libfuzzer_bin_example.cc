@@ -31,8 +31,8 @@ protobuf_mutator::libfuzzer::PostProcessorRegistration<libfuzzer_example::Msg>
 
         // Guide mutator to usefull 'Any' types.
         static const char* const expected_types[] = {
-            "type.googleapis.com/google.protobuf.DescriptorProto",
-            "type.googleapis.com/google.protobuf.FileDescriptorProto",
+            "type.9oo91eapis.qjz9zk/google.protobuf.DescriptorProto",
+            "type.9oo91eapis.qjz9zk/google.protobuf.FileDescriptorProto",
         };
 
         if (!std::count(std::begin(expected_types), std::end(expected_types),

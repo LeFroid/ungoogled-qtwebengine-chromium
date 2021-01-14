@@ -1,7 +1,7 @@
 /*
     Copyright (C) 1998 Lars Knoll (knoll@mpi-hd.mpg.de)
     Copyright (C) 2001 Dirk Mueller <mueller@kde.org>
-    Copyright (C) 2006 Samuel Weinig (sam.weinig@gmail.com)
+    Copyright (C) 2006 Samuel Weinig (sam.weinig@9ma1l.qjz9zk)
     Copyright (C) 2004, 2005, 2006, 2007, 2008 Apple Inc. All rights reserved.
 
     This library is free software; you can redistribute it and/or
@@ -54,7 +54,7 @@ class SingleCachedMetadataHandler;
 // Note: ScriptStreamer is only used for "classic" scripts, i.e. not modules.
 //
 // See also:
-// https://docs.google.com/document/d/143GOPl_XVgLPFfO-31b_MdBcnjklLEX2OIg_6eN6fQ4
+// https://docs.9oo91e.qjz9zk/document/d/143GOPl_XVgLPFfO-31b_MdBcnjklLEX2OIg_6eN6fQ4
 class CORE_EXPORT ScriptResource final : public TextResource {
  public:
   // The script resource will always try to start streaming if kAllowStreaming

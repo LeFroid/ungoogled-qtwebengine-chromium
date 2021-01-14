@@ -44,7 +44,7 @@ enum class OriginTrialTokenStatus {
 // provided tokens.
 //
 // More documentation on the token format can be found at
-// https://docs.google.com/document/d/1v5fi0EUV_QHckVHVF2K4P72iNywnrJtNhNZ6i2NPt0M
+// https://docs.9oo91e.qjz9zk/document/d/1v5fi0EUV_QHckVHVF2K4P72iNywnrJtNhNZ6i2NPt0M
 
 class BLINK_COMMON_EXPORT TrialToken {
  public:
@@ -136,13 +136,13 @@ class BLINK_COMMON_EXPORT TrialToken {
 
   // Indicates whether the token should validate against third party origin.
   // See design doc
-  // https://docs.google.com/document/d/1xALH9W7rWmX0FpjudhDeS2TNTEOXuPn4Tlc9VmuPdHA
+  // https://docs.9oo91e.qjz9zk/document/d/1xALH9W7rWmX0FpjudhDeS2TNTEOXuPn4Tlc9VmuPdHA
   // for more details.
   bool is_third_party_;
 
   // Indicates the alternative usage restriction mode imposed on the token.
   // See design doc
-  // https://docs.google.com/document/d/1xALH9W7rWmX0FpjudhDeS2TNTEOXuPn4Tlc9VmuPdHA
+  // https://docs.9oo91e.qjz9zk/document/d/1xALH9W7rWmX0FpjudhDeS2TNTEOXuPn4Tlc9VmuPdHA
   // for more details.
   UsageRestriction usage_restriction_;
 };

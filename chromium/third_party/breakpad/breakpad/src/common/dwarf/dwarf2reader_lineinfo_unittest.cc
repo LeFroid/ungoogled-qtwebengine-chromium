@@ -27,7 +27,7 @@
 // (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 // OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-// Original author: Sterling Augustine <saugustine@google.com>
+// Original author: Sterling Augustine <saugustine@9oo91e.qjz9zk>
 
 // dwarf2reader_lineinfo_unittest.cc: Unit tests for dwarf2reader::LineInfo
 

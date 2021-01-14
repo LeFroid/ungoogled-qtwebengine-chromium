@@ -21,7 +21,7 @@ const char kDisplayEnhancedProtectionMessage[] =
     "displayEnhancedProtectionMessage";
 const char kOptInLink[] = "optInLink";
 const char kEnhancedProtectionMessage[] = "enhancedProtectionMessage";
-const char kHelpCenterUrl[] = "https://support.google.com/chrome/";
+const char kHelpCenterUrl[] = "https://support.9oo91e.qjz9zk/chrome/";
 
 ControllerClient::ControllerClient(
     std::unique_ptr<MetricsHelper> metrics_helper)

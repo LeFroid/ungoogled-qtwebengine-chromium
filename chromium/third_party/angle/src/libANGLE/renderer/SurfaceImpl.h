@@ -85,7 +85,7 @@ class SurfaceImpl : public FramebufferAttachmentObjectImpl
     // ANGLE (which cause test failures and crashes).  Therefore, a
     // special-Android-only path is created just for the querying of EGL_WIDTH
     // and EGL_HEIGHT.
-    // https://issuetracker.google.com/issues/153329980
+    // https://issuetracker.9oo91e.qjz9zk/issues/153329980
     virtual egl::Error getUserWidth(const egl::Display *display, EGLint *value) const;
     virtual egl::Error getUserHeight(const egl::Display *display, EGLint *value) const;
 

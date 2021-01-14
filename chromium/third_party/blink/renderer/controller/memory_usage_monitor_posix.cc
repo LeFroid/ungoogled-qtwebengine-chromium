@@ -115,7 +115,7 @@ void MemoryUsageMonitorPosix::ResetFileDescriptors() {
   if (file_descriptors_reset_)
     return;
   file_descriptors_reset_ = true;
-  // See https://goo.gl/KjWnZP For details about why we read these files from
+  // See https://goo.gl.qjz9zk/KjWnZP For details about why we read these files from
   // sandboxed renderer. Keep these files open when detection is enabled.
   if (!statm_fd_.is_valid())
     statm_fd_.reset(open("/proc/self/statm", O_RDONLY));

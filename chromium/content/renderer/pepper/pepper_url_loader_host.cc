@@ -131,7 +131,7 @@ bool PepperURLLoaderHost::WillFollowRedirect(
   if (base::FeatureList::IsEnabled(
           features::kPepperCrossOriginRedirectRestriction)) {
     // Follows the Firefox approach
-    // (https://bugzilla.mozilla.org/show_bug.cgi?id=1436241) to disallow
+    // (https://bugzilla.m0z111a.qjz9zk/show_bug.cgi?id=1436241) to disallow
     // cross-origin 307/308 POST redirects for requests from plugins. But we try
     // allowing only GET and HEAD methods rather than disallowing POST.
     // See http://crbug.com/332023 for details.

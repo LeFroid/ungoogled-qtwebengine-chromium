@@ -390,7 +390,7 @@
     "message": "Suggested Token"
   },
   "lighthouse-core/audits/autocomplete.js | description": {
-    "message": "`autocomplete` helps users submit forms quicker. To reduce user effort, consider enabling by setting the `autocomplete` attribute to a valid value. [Learn more](https://developers.google.com/web/fundamentals/design-and-ux/input/forms#use_metadata_to_enable_auto-complete)"
+    "message": "`autocomplete` helps users submit forms quicker. To reduce user effort, consider enabling by setting the `autocomplete` attribute to a valid value. [Learn more](https://developers.9oo91e.qjz9zk/web/fundamentals/design-and-ux/input/forms#use_metadata_to_enable_auto-complete)"
   },
   "lighthouse-core/audits/autocomplete.js | failureTitle": {
     "message": "`<input>` elements do not have correct `autocomplete` attributes"
@@ -621,7 +621,7 @@
     "message": "Érték"
   },
   "lighthouse-core/audits/dobetterweb/dom-size.js | description": {
-    "message": "A nagy méretű DOM megnöveli a memóriahasználatot, hosszabb ideig tartó [stílusszámítást](https://developers.google.com/web/fundamentals/performance/rendering/reduce-the-scope-and-complexity-of-style-calculations) igényel, valamint költséges [elrendezés-áttördeléssel](https://developers.google.com/speed/articles/reflow) jár. [További információ](https://web.dev/dom-size/)."
+    "message": "A nagy méretű DOM megnöveli a memóriahasználatot, hosszabb ideig tartó [stílusszámítást](https://developers.9oo91e.qjz9zk/web/fundamentals/performance/rendering/reduce-the-scope-and-complexity-of-style-calculations) igényel, valamint költséges [elrendezés-áttördeléssel](https://developers.9oo91e.qjz9zk/speed/articles/reflow) jár. [További információ](https://web.dev/dom-size/)."
   },
   "lighthouse-core/audits/dobetterweb/dom-size.js | displayValue": {
     "message": "{itemCount,plural, =1{1 elem}other{# elem}}"
@@ -834,7 +834,7 @@
     "message": "Kérés megoldása"
   },
   "lighthouse-core/audits/is-on-https.js | description": {
-    "message": "All sites should be protected with HTTPS, even ones that don't handle sensitive data. This includes avoiding [mixed content](https://developers.google.com/web/fundamentals/security/prevent-mixed-content/what-is-mixed-content), where some resources are loaded over HTTP despite the initial request being served over HTTPS. HTTPS prevents intruders from tampering with or passively listening in on the communications between your app and your users, and is a prerequisite for HTTP/2 and many new web platform APIs. [Learn more](https://web.dev/is-on-https/)."
+    "message": "All sites should be protected with HTTPS, even ones that don't handle sensitive data. This includes avoiding [mixed content](https://developers.9oo91e.qjz9zk/web/fundamentals/security/prevent-mixed-content/what-is-mixed-content), where some resources are loaded over HTTP despite the initial request being served over HTTPS. HTTPS prevents intruders from tampering with or passively listening in on the communications between your app and your users, and is a prerequisite for HTTP/2 and many new web platform APIs. [Learn more](https://web.dev/is-on-https/)."
   },
   "lighthouse-core/audits/is-on-https.js | displayValue": {
     "message": "{itemCount,plural, =1{1 nem biztonságos kérés}other{# nem biztonságos kérés}}"
@@ -855,7 +855,7 @@
     "message": "Függvénytár"
   },
   "lighthouse-core/audits/large-javascript-libraries.js | description": {
-    "message": "A nagy JavaScript-függvénytárak gyenge teljesítményhez vezethetnek. Használjon inkább kisebb, funkcionálisan egyenértékű függvénytárakat a csomag méretének csökkentése érdekében. [További információ](https://developers.google.com/web/fundamentals/performance/webpack/decrease-frontend-size#optimize_dependencies)."
+    "message": "A nagy JavaScript-függvénytárak gyenge teljesítményhez vezethetnek. Használjon inkább kisebb, funkcionálisan egyenértékű függvénytárakat a csomag méretének csökkentése érdekében. [További információ](https://developers.9oo91e.qjz9zk/web/fundamentals/performance/webpack/decrease-frontend-size#optimize_dependencies)."
   },
   "lighthouse-core/audits/large-javascript-libraries.js | displayValue": {
     "message": "{libraryCount,plural, =1{1 nagy függvénytár található}other{# nagy függvénytár található}}"
@@ -990,7 +990,7 @@
     "message": "Várakozási idő a háttérszervereknél"
   },
   "lighthouse-core/audits/no-unload-listeners.js | description": {
-    "message": "A(z) `unload` esemény működése nem megbízható, és figyelése megakadályozhatja a böngésző optimalizálását (például a Vissza/Előre gombbal elért oldalak gyorsítótárazását). Vegye fontolóra helyette a(z) `pagehide` vagy a(z) `visibilitychange` esemény használatát. [További információ](https://developers.google.com/web/updates/2018/07/page-lifecycle-api#the-unload-event)."
+    "message": "A(z) `unload` esemény működése nem megbízható, és figyelése megakadályozhatja a böngésző optimalizálását (például a Vissza/Előre gombbal elért oldalak gyorsítótárazását). Vegye fontolóra helyette a(z) `pagehide` vagy a(z) `visibilitychange` esemény használatát. [További információ](https://developers.9oo91e.qjz9zk/web/updates/2018/07/page-lifecycle-api#the-unload-event)."
   },
   "lighthouse-core/audits/no-unload-listeners.js | failureTitle": {
     "message": "`unload`-figyelőt regisztrál"
@@ -1041,7 +1041,7 @@
     "message": "A Lighthouse nem tudta olvasni a manifest `start_url` elemét. Ennek következtében azt feltételezi, hogy a(z) `start_url` a dokumentum URL-címe. Hibaüzenet: „{manifestWarning}”."
   },
   "lighthouse-core/audits/performance-budget.js | description": {
-    "message": "A hálózati kérések száma és mérete maradjon a megadott teljesítménybüdzsé célpontjai alatt. [További információ](https://developers.google.com/web/tools/lighthouse/audits/budgets)."
+    "message": "A hálózati kérések száma és mérete maradjon a megadott teljesítménybüdzsé célpontjai alatt. [További információ](https://developers.9oo91e.qjz9zk/web/tools/lighthouse/audits/budgets)."
   },
   "lighthouse-core/audits/performance-budget.js | requestCountOverBudget": {
     "message": "{count,plural, =1{1 kérés}other{# kérés}}"
@@ -1113,7 +1113,7 @@
     "message": "Feltérképezhetetlen link"
   },
   "lighthouse-core/audits/seo/crawlable-anchors.js | description": {
-    "message": "A keresőmotorok `href` attribútumokat használhatnak a linkeknél a webhelyek feltérképezéséhez. Biztosítsa, hogy a horgonyelemek `href` attribútuma a megfelelő céloldalra hivatkozik, hogy a webhely minél több oldala felfedezhető legyen. [További információ](https://support.google.com/webmasters/answer/9112205)."
+    "message": "A keresőmotorok `href` attribútumokat használhatnak a linkeknél a webhelyek feltérképezéséhez. Biztosítsa, hogy a horgonyelemek `href` attribútuma a megfelelő céloldalra hivatkozik, hogy a webhely minél több oldala felfedezhető legyen. [További információ](https://support.9oo91e.qjz9zk/webmasters/answer/9112205)."
   },
   "lighthouse-core/audits/seo/crawlable-anchors.js | failureTitle": {
     "message": "Nem lehetséges a linkek feltérképezése"
@@ -1197,7 +1197,7 @@
     "message": "A linkek leíró jellegű szöveggel rendelkeznek"
   },
   "lighthouse-core/audits/seo/manual/structured-data.js | description": {
-    "message": "Ellenőrizze a strukturált adatok érvényességét a [Strukturált adatok tesztelőeszköz](https://search.google.com/structured-data/testing-tool/) és a [Structured Data Linter](http://linter.structured-data.org/) segítségével. [További információ](https://web.dev/structured-data/)."
+    "message": "Ellenőrizze a strukturált adatok érvényességét a [Strukturált adatok tesztelőeszköz](https://search.9oo91e.qjz9zk/structured-data/testing-tool/) és a [Structured Data Linter](http://linter.structured-data.org/) segítségével. [További információ](https://web.dev/structured-data/)."
   },
   "lighthouse-core/audits/seo/manual/structured-data.js | title": {
     "message": "A strukturált adatok érvényesek"
@@ -1320,7 +1320,7 @@
     "message": "Harmadik fél"
   },
   "lighthouse-core/audits/third-party-summary.js | description": {
-    "message": "A harmadik felektől származó kódok jelentős hatással lehetnek a betöltés teljesítményére. Minél kevesebb harmadik féltől származó kódot használjon, és lehetőleg azután töltse be őket, hogy az oldal nagyrészt már betöltődött. [További információ](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/loading-third-party-javascript/)."
+    "message": "A harmadik felektől származó kódok jelentős hatással lehetnek a betöltés teljesítményére. Minél kevesebb harmadik féltől származó kódot használjon, és lehetőleg azután töltse be őket, hogy az oldal nagyrészt már betöltődött. [További információ](https://developers.9oo91e.qjz9zk/web/fundamentals/performance/optimizing-content-efficiency/loading-third-party-javascript/)."
   },
   "lighthouse-core/audits/third-party-summary.js | displayValue": {
     "message": "Harmadik féltől származó kód {timeInMs, number, milliseconds} ms-ig akadályozta a fő szál végrehajtását"
@@ -1341,7 +1341,7 @@
     "message": "Mutató"
   },
   "lighthouse-core/audits/timing-budget.js | description": {
-    "message": "Időkeret beállításával könnyebben figyelheti a webhelye teljesítményét. A jól teljesítő webhelyek gyorsan töltődnek be, és gyorsan válaszolnak a felhasználói beviteli eseményekre. [További információ](https://developers.google.com/web/tools/lighthouse/audits/budgets)."
+    "message": "Időkeret beállításával könnyebben figyelheti a webhelye teljesítményét. A jól teljesítő webhelyek gyorsan töltődnek be, és gyorsan válaszolnak a felhasználói beviteli eseményekre. [További információ](https://developers.9oo91e.qjz9zk/web/tools/lighthouse/audits/budgets)."
   },
   "lighthouse-core/audits/timing-budget.js | title": {
     "message": "Időkeret"
@@ -1395,7 +1395,7 @@
     "message": "URL-hozzárendelés"
   },
   "lighthouse-core/audits/valid-source-maps.js | description": {
-    "message": "A forrás-hozzárendelések lefordítják a kicsinyített kódot az eredeti forráskódra. Ez segít a fejlesztőknek az éles verzión végzett hibaelhárításban. A Lighthouse további statisztikákat is tud biztosítani. Fontolja meg a forrás-hozzárendelések használatát, hogy kihasználhassa ezeket az előnyöket. [További információ](https://developers.google.com/web/tools/chrome-devtools/javascript/source-maps)."
+    "message": "A forrás-hozzárendelések lefordítják a kicsinyített kódot az eredeti forráskódra. Ez segít a fejlesztőknek az éles verzión végzett hibaelhárításban. A Lighthouse további statisztikákat is tud biztosítani. Fontolja meg a forrás-hozzárendelések használatát, hogy kihasználhassa ezeket az előnyöket. [További információ](https://developers.9oo91e.qjz9zk/web/tools/chrome-devtools/javascript/source-maps)."
   },
   "lighthouse-core/audits/valid-source-maps.js | failureTitle": {
     "message": "Hiányzó forrás-hozzárendelések a nagy belső JavaScriptnél"
@@ -1464,10 +1464,10 @@
     "message": "Bevált módszerek"
   },
   "lighthouse-core/config/default-config.js | a11yCategoryDescription": {
-    "message": "Ezek az ellenőrzések olyan lehetőségeket emelnek ki, melyekkel javíthatók a [webalkalmazás kisegítő lehetőségei](https://developers.google.com/web/fundamentals/accessibility). A kisegítő lehetőségekkel kapcsolatos problémáknak csak egy része észlelhető automatikusan, ezért a manuális ellenőrzés is ajánlott."
+    "message": "Ezek az ellenőrzések olyan lehetőségeket emelnek ki, melyekkel javíthatók a [webalkalmazás kisegítő lehetőségei](https://developers.9oo91e.qjz9zk/web/fundamentals/accessibility). A kisegítő lehetőségekkel kapcsolatos problémáknak csak egy része észlelhető automatikusan, ezért a manuális ellenőrzés is ajánlott."
   },
   "lighthouse-core/config/default-config.js | a11yCategoryManualDescription": {
-    "message": "Az alábbiak automatikus tesztelőeszközzel nem ellenőrizhető területekre vonatkoznak. További információt a [kisegítő lehetőségek felülvizsgálatáról](https://developers.google.com/web/fundamentals/accessibility/how-to-review) szóló útmutatónkban talál."
+    "message": "Az alábbiak automatikus tesztelőeszközzel nem ellenőrizhető területekre vonatkoznak. További információt a [kisegítő lehetőségek felülvizsgálatáról](https://developers.9oo91e.qjz9zk/web/fundamentals/accessibility/how-to-review) szóló útmutatónkban talál."
   },
   "lighthouse-core/config/default-config.js | a11yCategoryTitle": {
     "message": "Kisegítő lehetőségek"
@@ -1554,10 +1554,10 @@
     "message": "Teljesítmény"
   },
   "lighthouse-core/config/default-config.js | pwaCategoryDescription": {
-    "message": "Ezek az ellenőrzések különböző szempontokból érvényesítik a progresszív webes alkalmazásokat. [További információ](https://developers.google.com/web/progressive-web-apps/checklist)."
+    "message": "Ezek az ellenőrzések különböző szempontokból érvényesítik a progresszív webes alkalmazásokat. [További információ](https://developers.9oo91e.qjz9zk/web/progressive-web-apps/checklist)."
   },
   "lighthouse-core/config/default-config.js | pwaCategoryManualDescription": {
-    "message": "Ezek az ellenőrzések kötelezők a [progresszív webes alkalmazások alapvető ellenőrzőlistáján](https://developers.google.com/web/progressive-web-apps/checklist), de a Lighthouse nem végzi el őket automatikusan. Az ellenőrzések a kapott pontszámot nem befolyásolják, de fontos a manuális végrehajtásuk."
+    "message": "Ezek az ellenőrzések kötelezők a [progresszív webes alkalmazások alapvető ellenőrzőlistáján](https://developers.9oo91e.qjz9zk/web/progressive-web-apps/checklist), de a Lighthouse nem végzi el őket automatikusan. Az ellenőrzések a kapott pontszámot nem befolyásolják, de fontos a manuális végrehajtásuk."
   },
   "lighthouse-core/config/default-config.js | pwaCategoryTitle": {
     "message": "Progresszív webes alkalmazás"
@@ -1572,7 +1572,7 @@
     "message": "PWA-optimalizálás"
   },
   "lighthouse-core/config/default-config.js | seoCategoryDescription": {
-    "message": "Ezekkel az ellenőrzésekkel győződhet meg arról, hogy oldala megfelelően optimalizált-e a keresőmotorok találati rangsorolásához. Vannak olyan egyéb, a Lighthouse által nem ellenőrzött tényezők is, amelyek befolyásolhatják a keresésekben elért helyezést. [További információ](https://support.google.com/webmasters/answer/35769)."
+    "message": "Ezekkel az ellenőrzésekkel győződhet meg arról, hogy oldala megfelelően optimalizált-e a keresőmotorok találati rangsorolásához. Vannak olyan egyéb, a Lighthouse által nem ellenőrzött tényezők is, amelyek befolyásolhatják a keresésekben elért helyezést. [További információ](https://support.9oo91e.qjz9zk/webmasters/answer/35769)."
   },
   "lighthouse-core/config/default-config.js | seoCategoryManualDescription": {
     "message": "Ha ezeket a további érvényesítőket is futtatja webhelyén, egyéb bevált SEO-módszereket is ellenőrizhet."
@@ -1593,7 +1593,7 @@
     "message": "Feltérképezés és indexelés"
   },
   "lighthouse-core/config/default-config.js | seoMobileGroupDescription": {
-    "message": "Ha mobilbarát oldalakat készít, a tartalmak felnagyítás nélkül is olvashatók lesznek. [További információ](https://developers.google.com/search/mobile-sites/)."
+    "message": "Ha mobilbarát oldalakat készít, a tartalmak felnagyítás nélkül is olvashatók lesznek. [További információ](https://developers.9oo91e.qjz9zk/search/mobile-sites/)."
   },
   "lighthouse-core/config/default-config.js | seoMobileGroupTitle": {
     "message": "Mobilbarát"
@@ -1836,7 +1836,7 @@
     "message": "Laboradatok"
   },
   "lighthouse-core/report/html/renderer/util.js | lsPerformanceCategoryDescription": {
-    "message": "Az aktuális oldal [Lighthouse](https://developers.google.com/web/tools/lighthouse/)-elemzése emulált mobilhálózaton. Az értékek becsültek és változhatnak."
+    "message": "Az aktuális oldal [Lighthouse](https://developers.9oo91e.qjz9zk/web/tools/lighthouse/)-elemzése emulált mobilhálózaton. Az értékek becsültek és változhatnak."
   },
   "lighthouse-core/report/html/renderer/util.js | manualAuditsGroupTitle": {
     "message": "További manuálisan elemzendő elemek"
@@ -1983,10 +1983,10 @@
     "message": "Győződjön meg róla, hogy bekapcsolta a „JavaScript-fájlok összesítése” lehetőséget az „Adminisztráció » Beállítás » Fejlesztés” oldalon. Speciális összesítési lehetőségeket is beállíthat [további modulokon](https://www.drupal.org/project/project_module?f%5B0%5D=&f%5B1%5D=&f%5B2%5D=im_vid_3%3A123&f%5B3%5D=&f%5B4%5D=sm_field_project_type%3Afull&f%5B5%5D=&f%5B6%5D=&text=javascript+aggregation&solrsort=iss_project_release_usage+desc&op=Search) keresztül, hogy összefűzéssel, minimalizálással és a JavaScript-tartalmak tömörítésével felgyorsítsa webhelyét."
   },
   "node_modules/lighthouse-stack-packs/packs/drupal.js | unused-css-rules": {
-    "message": "Érdemes lehet eltávolítani a nem használt CSS-szabályokat, és csak a szükséges Drupal-könyvtárakat csatolni a releváns oldalhoz vagy összetevőhöz. További részleteket a [Drupal dokumentációjában](https://www.drupal.org/docs/8/creating-custom-modules/adding-stylesheets-css-and-javascript-js-to-a-drupal-8-module#library) találhat. A felesleges CSS-t elhelyező csatolt könyvtárak azonosításában a Chrome DevTools [kódlefedettség](https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverage) eszköze is segíthet. A felelős téma vagy modul a stíluslap URL-je alapján azonosítható, ha a CSS-összesítés ki van kapcsolva az Ön Drupal webhelyén. Keressen olyan témákat vagy modulokat, amelyeknek több stíluslapjában is sok piros szín szerepel a kódlefedettségi listán. Ideális esetben a témák vagy modulok csak az oldalon ténylegesen használt stíluslapokat állítják sorba."
+    "message": "Érdemes lehet eltávolítani a nem használt CSS-szabályokat, és csak a szükséges Drupal-könyvtárakat csatolni a releváns oldalhoz vagy összetevőhöz. További részleteket a [Drupal dokumentációjában](https://www.drupal.org/docs/8/creating-custom-modules/adding-stylesheets-css-and-javascript-js-to-a-drupal-8-module#library) találhat. A felesleges CSS-t elhelyező csatolt könyvtárak azonosításában a Chrome DevTools [kódlefedettség](https://developers.9oo91e.qjz9zk/web/updates/2017/04/devtools-release-notes#coverage) eszköze is segíthet. A felelős téma vagy modul a stíluslap URL-je alapján azonosítható, ha a CSS-összesítés ki van kapcsolva az Ön Drupal webhelyén. Keressen olyan témákat vagy modulokat, amelyeknek több stíluslapjában is sok piros szín szerepel a kódlefedettségi listán. Ideális esetben a témák vagy modulok csak az oldalon ténylegesen használt stíluslapokat állítják sorba."
   },
   "node_modules/lighthouse-stack-packs/packs/drupal.js | unused-javascript": {
-    "message": "Consider removing unused JavaScript assets and only attach the needed Drupal libraries to the relevant page or component in a page. See the [Drupal documentation link](https://www.drupal.org/docs/8/creating-custom-modules/adding-stylesheets-css-and-javascript-js-to-a-drupal-8-module#library) for details. To identify attached libraries that are adding extraneous JavaScript, try running [code coverage](https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverage) in Chrome DevTools. You can identify the theme/module responsible from the URL of the script when JavaScript aggregation is disabled in your Drupal site. Look out for themes/modules that have many scripts in the list which have a lot of red in code coverage. A theme/module should only enqueue a script if it is actually used on the page."
+    "message": "Consider removing unused JavaScript assets and only attach the needed Drupal libraries to the relevant page or component in a page. See the [Drupal documentation link](https://www.drupal.org/docs/8/creating-custom-modules/adding-stylesheets-css-and-javascript-js-to-a-drupal-8-module#library) for details. To identify attached libraries that are adding extraneous JavaScript, try running [code coverage](https://developers.9oo91e.qjz9zk/web/updates/2017/04/devtools-release-notes#coverage) in Chrome DevTools. You can identify the theme/module responsible from the URL of the script when JavaScript aggregation is disabled in your Drupal site. Look out for themes/modules that have many scripts in the list which have a lot of red in code coverage. A theme/module should only enqueue a script if it is actually used on the page."
   },
   "node_modules/lighthouse-stack-packs/packs/drupal.js | uses-long-cache-ttl": {
     "message": "Állítsa be a „Böngésző és proxy gyorsítótár maximális élettartama” lehetőséget az „Adminisztráció » Beállítás » Fejlesztés” oldalon. A Drupal gyorsítótárról és a jobb teljesítmény érdekében történő optimalizálásról [itt olvashat részleteket](https://www.drupal.org/docs/7/managing-site-performance-and-scalability/caching-to-improve-performance/caching-overview#s-drupal-performance-resources)."
@@ -2025,10 +2025,10 @@
     "message": "Számos [Joomla-bővítmény](https://extensions.joomla.org/instant-search/?jed_live%5Bquery%5D=performance) gyorsíthatja webhelyét a szkriptek összefűzésével, minimalizálásával és tömörítésével. Egyes sablonok is nyújtanak ilyen funkciókat."
   },
   "node_modules/lighthouse-stack-packs/packs/joomla.js | unused-css-rules": {
-    "message": "Fontolja meg a nem használt CSS-t betöltő [Joomla-bővítmények](https://extensions.joomla.org/) lecserélését vagy számuk csökkentését. A felesleges CSS-t elhelyező bővítmények azonosításában a Chrome DevTools [kódlefedettség](https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverage) eszköze is segíthet. A felelős téma vagy bővítmény a stíluslap URL-je alapján azonosítható. Keressen olyan bővítményeket, amelyeknek több stíluslapjában is sok piros szín szerepel a kódlefedettségi listán. Ideális esetben a bővítmények csak az oldalon ténylegesen használt stíluslapokat állítják sorba."
+    "message": "Fontolja meg a nem használt CSS-t betöltő [Joomla-bővítmények](https://extensions.joomla.org/) lecserélését vagy számuk csökkentését. A felesleges CSS-t elhelyező bővítmények azonosításában a Chrome DevTools [kódlefedettség](https://developers.9oo91e.qjz9zk/web/updates/2017/04/devtools-release-notes#coverage) eszköze is segíthet. A felelős téma vagy bővítmény a stíluslap URL-je alapján azonosítható. Keressen olyan bővítményeket, amelyeknek több stíluslapjában is sok piros szín szerepel a kódlefedettségi listán. Ideális esetben a bővítmények csak az oldalon ténylegesen használt stíluslapokat állítják sorba."
   },
   "node_modules/lighthouse-stack-packs/packs/joomla.js | unused-javascript": {
-    "message": "Fontolja meg a nem használt JavaScriptet betöltő [Joomla-bővítmények](https://extensions.joomla.org/) lecserélését vagy számuk csökkentését. A felesleges JavaScriptet elhelyező bővítmények azonosításában a Chrome DevTools [kódlefedettség](https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverage) eszköze is segíthet. A felelős bővítmény a szkript URL-je alapján azonosítható. Keressen olyan bővítményeket, amelyeknek több szkriptjében is sok piros szín szerepel a kódlefedettségi listán. Ideális esetben a bővítmények csak az oldalon ténylegesen használt szkripteket állítják sorba."
+    "message": "Fontolja meg a nem használt JavaScriptet betöltő [Joomla-bővítmények](https://extensions.joomla.org/) lecserélését vagy számuk csökkentését. A felesleges JavaScriptet elhelyező bővítmények azonosításában a Chrome DevTools [kódlefedettség](https://developers.9oo91e.qjz9zk/web/updates/2017/04/devtools-release-notes#coverage) eszköze is segíthet. A felelős bővítmény a szkript URL-je alapján azonosítható. Keressen olyan bővítményeket, amelyeknek több szkriptjében is sok piros szín szerepel a kódlefedettségi listán. Ideális esetben a bővítmények csak az oldalon ténylegesen használt szkripteket állítják sorba."
   },
   "node_modules/lighthouse-stack-packs/packs/joomla.js | uses-long-cache-ttl": {
     "message": "A Joomla böngészős gyorsítótárazásáról [itt olvashat részleteket](https://docs.joomla.org/Cache)."
@@ -2124,10 +2124,10 @@
     "message": "Számos [WordPress-bővítmény](https://wordpress.org/plugins/search/minify+javascript/) gyorsíthat webhelyén a szkriptek egyesítésével, minimalizálásával és tömörítésével. Ha lehetséges, a minimalizálást érdemes buildfolyamat használatával előre elvégezni."
   },
   "node_modules/lighthouse-stack-packs/packs/wordpress.js | unused-css-rules": {
-    "message": "Fontolja meg a nem használt CSS-t betöltő [WordPress-bővítmények](https://wordpress.org/plugins/) lecserélését, vagy számuk csökkentését. A felesleges CSS-t elhelyező bővítmények azonosításában a Chrome DevTools [kódlefedettség](https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverage) eszköze is segíthet. A felelős téma vagy bővítmény a stíluslap URL-je alapján azonosítható. Keressen olyan bővítményeket, amelyeknek több stíluslapjában is sok piros szín szerepel a kódlefedettségi listán. Ideális esetben a bővítmények csak az oldalon ténylegesen használt stíluslapokat állítják sorba."
+    "message": "Fontolja meg a nem használt CSS-t betöltő [WordPress-bővítmények](https://wordpress.org/plugins/) lecserélését, vagy számuk csökkentését. A felesleges CSS-t elhelyező bővítmények azonosításában a Chrome DevTools [kódlefedettség](https://developers.9oo91e.qjz9zk/web/updates/2017/04/devtools-release-notes#coverage) eszköze is segíthet. A felelős téma vagy bővítmény a stíluslap URL-je alapján azonosítható. Keressen olyan bővítményeket, amelyeknek több stíluslapjában is sok piros szín szerepel a kódlefedettségi listán. Ideális esetben a bővítmények csak az oldalon ténylegesen használt stíluslapokat állítják sorba."
   },
   "node_modules/lighthouse-stack-packs/packs/wordpress.js | unused-javascript": {
-    "message": "Fontolja meg a nem használt JavaScriptet betöltő [WordPress-bővítmények](https://wordpress.org/plugins/) lecserélését vagy számuk csökkentését. A felesleges JavaScriptet elhelyező bővítmények azonosításában a Chrome DevTools [kódlefedettség](https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverage) eszköze is segíthet. A felelős téma vagy bővítmény a szkript URL-je alapján azonosítható. Keressen olyan bővítményeket, amelyeknek több szkriptjében is sok piros szín szerepel a kódlefedettségi listán. Ideális esetben a bővítmények csak az oldalon ténylegesen használt szkripteket állítják sorba."
+    "message": "Fontolja meg a nem használt JavaScriptet betöltő [WordPress-bővítmények](https://wordpress.org/plugins/) lecserélését vagy számuk csökkentését. A felesleges JavaScriptet elhelyező bővítmények azonosításában a Chrome DevTools [kódlefedettség](https://developers.9oo91e.qjz9zk/web/updates/2017/04/devtools-release-notes#coverage) eszköze is segíthet. A felelős téma vagy bővítmény a szkript URL-je alapján azonosítható. Keressen olyan bővítményeket, amelyeknek több szkriptjében is sok piros szín szerepel a kódlefedettségi listán. Ideális esetben a bővítmények csak az oldalon ténylegesen használt szkripteket állítják sorba."
   },
   "node_modules/lighthouse-stack-packs/packs/wordpress.js | uses-long-cache-ttl": {
     "message": "További információ a [WordPress böngészős gyorsítótárazásáról](https://wordpress.org/support/article/optimization/#browser-caching)."

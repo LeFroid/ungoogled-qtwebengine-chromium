@@ -4851,7 +4851,7 @@ void CompilerHLSL::emit_instruction(const Instruction &instruction)
 	case OpFUnordEqual:
 	{
 		// HLSL != operator is unordered.
-		// https://docs.microsoft.com/en-us/windows/win32/direct3d10/d3d10-graphics-programming-guide-resources-float-rules.
+		// https://docs.m1cr050ft.qjz9zk/en-us/windows/win32/direct3d10/d3d10-graphics-programming-guide-resources-float-rules.
 		// isnan() is apparently implemented as x != x as well.
 		// We cannot implement UnordEqual as !(OrdNotEqual), as HLSL cannot express OrdNotEqual.
 		// HACK: FUnordEqual will be implemented as FOrdEqual.
@@ -4883,7 +4883,7 @@ void CompilerHLSL::emit_instruction(const Instruction &instruction)
 	case OpFUnordNotEqual:
 	{
 		// HLSL != operator is unordered.
-		// https://docs.microsoft.com/en-us/windows/win32/direct3d10/d3d10-graphics-programming-guide-resources-float-rules.
+		// https://docs.m1cr050ft.qjz9zk/en-us/windows/win32/direct3d10/d3d10-graphics-programming-guide-resources-float-rules.
 		// isnan() is apparently implemented as x != x as well.
 
 		// FIXME: FOrdNotEqual cannot be implemented in a crisp and simple way here.

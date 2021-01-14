@@ -23,8 +23,8 @@ XML_RIGHT_ORDER = """
   <obsolete>
     Obsolete text
   </obsolete>
-  <owner>owner1@chromium.org</owner>
-  <owner>owner2@chromium.org</owner>
+  <owner>owner1@ch40m1um.qjz9zk</owner>
+  <owner>owner2@ch40m1um.qjz9zk</owner>
   <summary>Summary text</summary>
 </histogram>
 
@@ -32,8 +32,8 @@ XML_RIGHT_ORDER = """
   <obsolete>
     Obsolete text
   </obsolete>
-  <owner>owner1@chromium.org</owner>
-  <owner>owner2@chromium.org</owner>
+  <owner>owner1@ch40m1um.qjz9zk</owner>
+  <owner>owner2@ch40m1um.qjz9zk</owner>
   <summary>Summary text</summary>
 </histogram>
 
@@ -41,8 +41,8 @@ XML_RIGHT_ORDER = """
   <obsolete>
     Obsolete text
   </obsolete>
-  <owner>owner1@chromium.org</owner>
-  <owner>owner2@chromium.org</owner>
+  <owner>owner1@ch40m1um.qjz9zk</owner>
+  <owner>owner2@ch40m1um.qjz9zk</owner>
   <summary>Summary text</summary>
 </histogram>
 
@@ -82,8 +82,8 @@ PRETTY_XML = """
   <obsolete>
     Obsolete text
   </obsolete>
-  <owner>owner1@chromium.org</owner>
-  <owner>owner2@chromium.org</owner>
+  <owner>owner1@ch40m1um.qjz9zk</owner>
+  <owner>owner2@ch40m1um.qjz9zk</owner>
   <summary>Summary text</summary>
 </histogram>
 
@@ -117,8 +117,8 @@ XML_WRONG_ATTRIBUTE_ORDER = """
   <obsolete>
     Obsolete text
   </obsolete>
-  <owner>owner1@chromium.org</owner>
-  <owner>owner2@chromium.org</owner>
+  <owner>owner1@ch40m1um.qjz9zk</owner>
+  <owner>owner2@ch40m1um.qjz9zk</owner>
   <summary>Summary text</summary>
 </histogram>
 
@@ -152,8 +152,8 @@ XML_MISSING_SEPARATOR = """
   <obsolete>
     Obsolete text
   </obsolete>
-  <owner>owner1@chromium.org</owner>
-  <owner>owner2@chromium.org</owner>
+  <owner>owner1@ch40m1um.qjz9zk</owner>
+  <owner>owner2@ch40m1um.qjz9zk</owner>
   <summary>Summary text</summary>
 </histogram>
 
@@ -187,8 +187,8 @@ XML_WRONG_INDENT = """
     <obsolete>
       Obsolete text
     </obsolete>
-      <owner>owner1@chromium.org</owner>
-      <owner>owner2@chromium.org</owner>
+      <owner>owner1@ch40m1um.qjz9zk</owner>
+      <owner>owner2@ch40m1um.qjz9zk</owner>
     <summary>Summary text</summary>
   </histogram>
 
@@ -221,9 +221,9 @@ XML_WRONG_SINGLELINE = """
 
   <obsolete>Obsolete text</obsolete>
   <owner>
-    owner1@chromium.org
+    owner1@ch40m1um.qjz9zk
   </owner>
-  <owner>owner2@chromium.org</owner>
+  <owner>owner2@ch40m1um.qjz9zk</owner>
   <summary>
     Summary text
   </summary>
@@ -257,8 +257,8 @@ XML_WRONG_LINEBREAK = """
   <obsolete>
     Obsolete text
   </obsolete>
-  <owner>owner1@chromium.org</owner>
-  <owner>owner2@chromium.org</owner>
+  <owner>owner1@ch40m1um.qjz9zk</owner>
+  <owner>owner2@ch40m1um.qjz9zk</owner>
   <summary>Summary text</summary>
 
 </histogram>
@@ -291,8 +291,8 @@ XML_WRONG_CHILDREN_ORDER = """
     Obsolete text
   </obsolete>
   <summary>Summary text</summary>
-  <owner>owner1@chromium.org</owner>
-  <owner>owner2@chromium.org</owner>
+  <owner>owner1@ch40m1um.qjz9zk</owner>
+  <owner>owner2@ch40m1um.qjz9zk</owner>
 </histogram>
 
 </histograms>
@@ -323,8 +323,8 @@ XML_WRONG_ORDER = """
   <obsolete>
     Obsolete text
   </obsolete>
-  <owner>owner1@chromium.org</owner>
-  <owner>owner2@chromium.org</owner>
+  <owner>owner1@ch40m1um.qjz9zk</owner>
+  <owner>owner2@ch40m1um.qjz9zk</owner>
   <summary>Summary text</summary>
 </histogram>
 
@@ -332,8 +332,8 @@ XML_WRONG_ORDER = """
   <obsolete>
     Obsolete text
   </obsolete>
-  <owner>owner1@chromium.org</owner>
-  <owner>owner2@chromium.org</owner>
+  <owner>owner1@ch40m1um.qjz9zk</owner>
+  <owner>owner2@ch40m1um.qjz9zk</owner>
   <summary>Summary text</summary>
 </histogram>
 
@@ -341,8 +341,8 @@ XML_WRONG_ORDER = """
   <obsolete>
     Obsolete text
   </obsolete>
-  <owner>owner1@chromium.org</owner>
-  <owner>owner2@chromium.org</owner>
+  <owner>owner1@ch40m1um.qjz9zk</owner>
+  <owner>owner2@ch40m1um.qjz9zk</owner>
   <summary>Summary text</summary>
 </histogram>
 
@@ -391,7 +391,7 @@ PRETTY_XML_WITH_TOKEN = """
   <obsolete>
     Obsolete text
   </obsolete>
-  <owner>me@google.com</owner>
+  <owner>me@9oo91e.qjz9zk</owner>
   <summary>
     The length of time taken by {version} of {content} provider's synchronous
     pass.
@@ -402,7 +402,7 @@ PRETTY_XML_WITH_TOKEN = """
       <obsolete>
         Obsolete variant
       </obsolete>
-      <owner>you@google.com</owner>
+      <owner>you@9oo91e.qjz9zk</owner>
     </variant>
     <variant name=".HistoryContents" summary="HistoryContents"/>
     <variant name=".HistoryQuick" summary="HistoryQuick"/>
@@ -436,7 +436,7 @@ XML_WRONG_VARIANT_CHILDREN_ORDER = """
   <obsolete>
     Obsolete text
   </obsolete>
-  <owner>me@google.com</owner>
+  <owner>me@9oo91e.qjz9zk</owner>
   <summary>
     The length of time taken by {version} of {content} provider's synchronous
     pass.
@@ -444,7 +444,7 @@ XML_WRONG_VARIANT_CHILDREN_ORDER = """
   <token key="version" variants="OmniboxProviderVersion"/>
   <token key="content">
     <variant name=".ExtensionApp" summary="ExtensionApp">
-      <owner>you@google.com</owner>
+      <owner>you@9oo91e.qjz9zk</owner>
       <obsolete>
         Obsolete variant
       </obsolete>
@@ -481,7 +481,7 @@ XML_WRONG_VARIANT_ORDER = """
   <obsolete>
     Obsolete text
   </obsolete>
-  <owner>me@google.com</owner>
+  <owner>me@9oo91e.qjz9zk</owner>
   <summary>
     The length of time taken by {version} of {content} provider's synchronous
     pass.
@@ -492,7 +492,7 @@ XML_WRONG_VARIANT_ORDER = """
       <obsolete>
         Obsolete variant
       </obsolete>
-      <owner>you@google.com</owner>
+      <owner>you@9oo91e.qjz9zk</owner>
     </variant>
     <variant name=".HistoryQuick" summary="HistoryQuick"/>
     <variant name=".HistoryContents" summary="HistoryContents"/>
@@ -516,7 +516,7 @@ XML_WRONG_HISTOGRAM_VARIANTS_ORDER = """
   <obsolete>
     Obsolete text
   </obsolete>
-  <owner>me@google.com</owner>
+  <owner>me@9oo91e.qjz9zk</owner>
   <summary>
     The length of time taken by {version} of {content} provider's synchronous
     pass.
@@ -527,7 +527,7 @@ XML_WRONG_HISTOGRAM_VARIANTS_ORDER = """
       <obsolete>
         Obsolete variant
       </obsolete>
-      <owner>you@google.com</owner>
+      <owner>you@9oo91e.qjz9zk</owner>
     </variant>
     <variant name=".HistoryContents" summary="HistoryContents"/>
     <variant name=".HistoryQuick" summary="HistoryQuick"/>

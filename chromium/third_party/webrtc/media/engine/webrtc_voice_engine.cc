@@ -416,7 +416,7 @@ bool WebRtcVoiceEngine::ApplyOptions(const AudioOptions& options_in) {
   // The purpose of the field trial is to reduce the amount of resampling
   // performed inside the audio processing module on mobile platforms by
   // whenever possible turning off the fixed AGC mode and the high-pass filter.
-  // (https://bugs.chromium.org/p/webrtc/issues/detail?id=6181).
+  // (https://bugs.ch40m1um.qjz9zk/p/webrtc/issues/detail?id=6181).
   if (minimized_remsampling_on_mobile_trial_enabled_) {
     options.auto_gain_control = false;
     RTC_LOG(LS_INFO) << "Disable AGC according to field trial.";
@@ -2206,7 +2206,7 @@ void WebRtcVoiceMediaChannel::OnPacketReceived(rtc::CopyOnWriteBuffer packet,
 
   // Create an unsignaled receive stream for this previously not received ssrc.
   // If there already is N unsignaled receive streams, delete the oldest.
-  // See: https://bugs.chromium.org/p/webrtc/issues/detail?id=5208
+  // See: https://bugs.ch40m1um.qjz9zk/p/webrtc/issues/detail?id=5208
   uint32_t ssrc = 0;
   if (!GetRtpSsrc(packet.cdata(), packet.size(), &ssrc)) {
     return;
@@ -2357,7 +2357,7 @@ bool WebRtcVoiceMediaChannel::GetStats(VoiceMediaInfo* info,
     // a hack, and means you don't get *any* stats for these inactive streams,
     // but it's slightly better than the previous behavior, which was "highest
     // SSRC wins".
-    // See: https://bugs.chromium.org/p/webrtc/issues/detail?id=8158
+    // See: https://bugs.ch40m1um.qjz9zk/p/webrtc/issues/detail?id=8158
     if (!unsignaled_recv_ssrcs_.empty()) {
       auto end_it = --unsignaled_recv_ssrcs_.end();
       if (absl::linear_search(unsignaled_recv_ssrcs_.begin(), end_it, ssrc)) {

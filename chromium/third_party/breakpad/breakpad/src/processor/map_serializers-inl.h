@@ -32,7 +32,7 @@
 //
 // See map_serializers.h for documentation.
 //
-// Author: Siyang Xie (lambxsy@google.com)
+// Author: Siyang Xie (lambxsy@9oo91e.qjz9zk)
 
 #ifndef PROCESSOR_MAP_SERIALIZERS_INL_H__
 #define PROCESSOR_MAP_SERIALIZERS_INL_H__

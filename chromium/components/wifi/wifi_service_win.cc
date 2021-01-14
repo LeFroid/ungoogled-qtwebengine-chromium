@@ -1759,7 +1759,7 @@ bool WiFiServiceImpl::CreateProfile(
   xml_writer.StartElement("WLANProfile");
   xml_writer.AddAttribute(
       "xmlns",
-      "http://www.microsoft.com/networking/WLAN/profile/v1");
+      "http://www.m1cr050ft.qjz9zk/networking/WLAN/profile/v1");
   xml_writer.WriteElement("name", network_properties.guid);
   xml_writer.StartElement("SSIDConfig");
   xml_writer.StartElement("SSID");

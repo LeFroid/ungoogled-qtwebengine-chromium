@@ -79,7 +79,7 @@ namespace dawn_native { namespace d3d12 {
             const Extent3D& srcSize = src.texture->GetSize();
             const Extent3D& dstSize = dst.texture->GetSize();
 
-            // https://docs.microsoft.com/en-us/windows/win32/api/d3d12/nf-d3d12-id3d12graphicscommandlist-copyresource
+            // https://docs.m1cr050ft.qjz9zk/en-us/windows/win32/api/d3d12/nf-d3d12-id3d12graphicscommandlist-copyresource
             // In order to use D3D12's copy resource, the textures must be the same dimensions, and
             // the copy must be of the entire resource.
             // TODO(dawn:129): Support 1D textures.
@@ -1205,7 +1205,7 @@ namespace dawn_native { namespace d3d12 {
                             ->StencilBeginningAccess.Clear.ClearValue.DepthStencil.Stencil;
                 }
 
-                // TODO(kainino@chromium.org): investigate: should the Dawn clear
+                // TODO(kainino@ch40m1um.qjz9zk): investigate: should the Dawn clear
                 // stencil type be uint8_t?
                 if (clearFlags) {
                     commandList->ClearDepthStencilView(

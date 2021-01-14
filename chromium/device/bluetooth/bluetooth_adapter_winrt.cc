@@ -112,7 +112,7 @@ bool ResolveCoreWinRT() {
 }
 
 // Query string for powered Bluetooth radios. GUID Reference:
-// https://docs.microsoft.com/en-us/windows-hardware/drivers/install/guid-bthport-device-interface
+// https://docs.m1cr050ft.qjz9zk/en-us/windows-hardware/drivers/install/guid-bthport-device-interface
 // TODO(https://crbug.com/821766): Consider adding WindowsCreateStringReference
 // to base::win::ScopedHString to avoid allocating memory for this string.
 constexpr wchar_t kPoweredRadiosAqsFilter[] =

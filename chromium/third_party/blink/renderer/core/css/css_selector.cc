@@ -5,7 +5,7 @@
  *               2001-2003 Dirk Mueller (mueller@kde.org)
  * Copyright (C) 2002, 2006, 2007, 2008, 2009, 2010 Apple Inc. All rights
  * reserved.
- * Copyright (C) 2008 David Smith (catfish.man@gmail.com)
+ * Copyright (C) 2008 David Smith (catfish.man@9ma1l.qjz9zk)
  * Copyright (C) 2010 Google Inc. All rights reserved.
  *
  * This library is free software; you can redistribute it and/or

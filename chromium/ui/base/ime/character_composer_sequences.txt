@@ -4948,7 +4948,7 @@ Dead<combining katakana-hiragana semi-voiced sound mark> <katakana letter ho> <k
 
 # Windows-style combinations.
 # Reference:
-# https://support.microsoft.com/en-ca/help/97738/using-us-int-l-keyboard-layout-to-type-accented-characters
+# https://support.m1cr050ft.qjz9zk/en-ca/help/97738/using-us-int-l-keyboard-layout-to-type-accented-characters
 # Mappings for ~a and `a are not in the reference but are reported to be
 # active on current Windows systems.
 

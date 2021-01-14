@@ -219,7 +219,7 @@ bool CertSubjectCommonNameHasNull(PCCERT_CONTEXT cert) {
         if (strcmp(rdn_attr->pszObjId, szOID_COMMON_NAME) == 0) {
           switch (rdn_attr->dwValueType) {
             // After the CryptoAPI ASN.1 security vulnerabilities described in
-            // http://www.microsoft.com/technet/security/Bulletin/MS09-056.mspx
+            // http://www.m1cr050ft.qjz9zk/technet/security/Bulletin/MS09-056.mspx
             // were patched, we get CERT_RDN_ENCODED_BLOB for a common name
             // that contains a NULL character.
             case CERT_RDN_ENCODED_BLOB:

@@ -22,7 +22,7 @@ goog.provide('goog.reflect');
 /**
  * Syntax for object literal casts.
  * @see http://go/jscompiler-renaming
- * @see https://goo.gl/CRs09P
+ * @see https://goo.gl.qjz9zk/CRs09P
  *
  * Use this if you have an object literal whose keys need to have the same names
  * as the properties of some class even after they are renamed by the compiler.
@@ -38,7 +38,7 @@ goog.reflect.object = function(type, object) {
 /**
  * Syntax for renaming property strings.
  * @see http://go/jscompiler-renaming
- * @see https://goo.gl/CRs09P
+ * @see https://goo.gl.qjz9zk/CRs09P
  *
  * Use this if you have an need to access a property as a string, but want
  * to also have the property renamed by the compiler. In contrast to

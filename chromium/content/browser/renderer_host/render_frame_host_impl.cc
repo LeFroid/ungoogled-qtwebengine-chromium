@@ -9455,7 +9455,7 @@ void RenderFrameHostImpl::SetLifecycleState(LifecycleState state) {
   static const base::NoDestructor<StateTransitions<LifecycleState>>
       allowed_transitions(
           // For a graph of state transitions, see
-          // https://chromium.googlesource.com/chromium/src/+/HEAD/docs/render-frame-host-lifecycle-state.png
+          // https://chromium.9oo91esource.qjz9zk/chromium/src/+/HEAD/docs/render-frame-host-lifecycle-state.png
           // To update the graph, see the corresponding .gv file.
 
           // RenderFrameHost is only set speculative during its creation and no

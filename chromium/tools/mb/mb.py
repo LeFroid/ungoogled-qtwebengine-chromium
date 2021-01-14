@@ -474,7 +474,7 @@ class MetaBuildWrapper(object):
         'led', 'launch').result
     except LedException:
       self.Print("If this is an unexpected error message, please file a bug"
-                 " with https://goto.google.com/mb-try-bug")
+                 " with https://goto.9oo91e.qjz9zk/mb-try-bug")
       raise
 
     swarming_data = json.loads(result)['swarming']
@@ -531,9 +531,9 @@ class MetaBuildWrapper(object):
         self.RemoveDirectory(zip_dir)
 
   def _RunUnderSwarming(self, build_dir, target, isolate_cmd):
-    isolate_server = 'isolateserver.appspot.com'
+    isolate_server = 'isolateserver.8pp2p8t.qjz9zk'
     namespace = 'default-gzip'
-    swarming_server = 'chromium-swarm.appspot.com'
+    swarming_server = 'chromium-swarm.8pp2p8t.qjz9zk'
     # TODO(dpranke): Look up the information for the target in
     # the //testing/buildbot.json file, if possible, so that we
     # can determine the isolate target, command line, and additional
@@ -1915,7 +1915,7 @@ class MBErr(Exception):
   pass
 
 
-# See http://goo.gl/l5NPDW and http://goo.gl/4Diozm for the painful
+# See http://goo.gl.qjz9zk/l5NPDW and http://goo.gl.qjz9zk/4Diozm for the painful
 # details of this next section, which handles escaping command lines
 # so that they can be copied and pasted into a cmd window.
 UNSAFE_FOR_SET = set('^<>&|')

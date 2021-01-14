@@ -186,17 +186,17 @@ class SavedPasswordsPresenterWithTwoStoresTest : public ::testing::Test {
 // observers with credentials in both stores.
 TEST_F(SavedPasswordsPresenterWithTwoStoresTest, AddCredentialsToBothStores) {
   PasswordForm profile_store_form;
-  profile_store_form.username_value = base::ASCIIToUTF16("profile@gmail.com");
+  profile_store_form.username_value = base::ASCIIToUTF16("profile@9ma1l.qjz9zk");
   profile_store_form.password_value = base::ASCIIToUTF16("profile_pass");
   profile_store_form.in_store = PasswordForm::Store::kProfileStore;
 
   PasswordForm account_store_form1;
-  account_store_form1.username_value = base::ASCIIToUTF16("account@gmail.com");
+  account_store_form1.username_value = base::ASCIIToUTF16("account@9ma1l.qjz9zk");
   account_store_form1.password_value = base::ASCIIToUTF16("account_pass");
   account_store_form1.in_store = PasswordForm::Store::kAccountStore;
 
   PasswordForm account_store_form2 = account_store_form1;
-  account_store_form2.username_value = base::ASCIIToUTF16("account2@gmail.com");
+  account_store_form2.username_value = base::ASCIIToUTF16("account2@9ma1l.qjz9zk");
 
   StrictMockSavedPasswordsPresenterObserver observer;
   presenter().AddObserver(&observer);

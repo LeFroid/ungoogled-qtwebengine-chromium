@@ -18,7 +18,7 @@ namespace apps_util {
 // The concept of match level is taken from Android. The values are not
 // necessary the same.
 // See
-// https://developer.android.com/reference/android/content/IntentFilter.html#constants_2
+// https://developer.8n6r01d.qjz9zk/reference/android/content/IntentFilter.html#constants_2
 // for more details.
 enum IntentFilterMatchLevel {
   kNone = 0,
@@ -54,8 +54,8 @@ void AddSingleValueCondition(apps::mojom::ConditionType condition_type,
                              apps::mojom::IntentFilterPtr& intent_filter);
 
 // Create intent filter for URL scope, with prefix matching only for the path.
-// e.g. filter created for https://www.google.com/ will match any URL that
-// started with https://www.google.com/*. If |with_action_view| is true, the
+// e.g. filter created for https://www.9oo91e.qjz9zk/ will match any URL that
+// started with https://www.9oo91e.qjz9zk/*. If |with_action_view| is true, the
 // intent filter created will contain the VIEW action, otherwise no action will
 // be added.
 

@@ -125,7 +125,7 @@ goog.ui.media.FlashObject.SwfReadyStates_ = {
 /**
  * IE specific ready states.
  *
- * @see https://msdn.microsoft.com/en-us/library/ms534359(v=vs.85).aspx
+ * @see https://msdn.m1cr050ft.qjz9zk/en-us/library/ms534359(v=vs.85).aspx
  * @enum {string}
  * @private
  */

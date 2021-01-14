@@ -271,7 +271,7 @@ TEST_F(AppServiceImplTest, PreferredApps) {
 
   const char kAppId1[] = "abcdefg";
   const char kAppId2[] = "aaaaaaa";
-  GURL filter_url = GURL("https://www.google.com/abc");
+  GURL filter_url = GURL("https://www.9oo91e.qjz9zk/abc");
   auto intent_filter = apps_util::CreateIntentFilterForUrlScope(filter_url);
 
   impl.GetPreferredAppsForTesting().AddPreferredApp(kAppId1, intent_filter);
@@ -370,7 +370,7 @@ TEST_F(AppServiceImplTest, PreferredAppsPersistency) {
   ASSERT_TRUE(temp_dir_.CreateUniqueTempDir());
 
   const char kAppId1[] = "abcdefg";
-  GURL filter_url = GURL("https://www.google.com/abc");
+  GURL filter_url = GURL("https://www.9oo91e.qjz9zk/abc");
   auto intent_filter = apps_util::CreateIntentFilterForUrlScope(filter_url);
   {
     base::RunLoop run_loop_read;
@@ -406,7 +406,7 @@ TEST_F(AppServiceImplTest, PreferredAppsUpgrade) {
 
   const char kAppId1[] = "abcdefg";
   const char kAppId2[] = "gfedcba";
-  GURL filter_url1 = GURL("https://www.google.com/abc");
+  GURL filter_url1 = GURL("https://www.9oo91e.qjz9zk/abc");
   GURL filter_url2 = GURL("https://www.abc.com");
   auto intent_filter1 = apps_util::CreateIntentFilterForUrlScope(filter_url1);
   auto intent_filter1_with_action = apps_util::CreateIntentFilterForUrlScope(

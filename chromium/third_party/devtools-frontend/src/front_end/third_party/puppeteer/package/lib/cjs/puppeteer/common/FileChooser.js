@@ -44,7 +44,7 @@ class FileChooser {
         this._multiple = event.mode !== 'selectSingle';
     }
     /**
-     * Whether file chooser allow for {@link https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/file#attr-multiple | multiple} file selection.
+     * Whether file chooser allow for {@link https://developer.m0z111a.qjz9zk/en-US/docs/Web/HTML/Element/input/file#attr-multiple | multiple} file selection.
      */
     isMultiple() {
         return this._multiple;

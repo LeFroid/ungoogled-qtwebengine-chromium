@@ -9,9 +9,9 @@ This file is used to generate a comprehensive list of Holding Space histograms
 along with a detailed description for each histogram.
 
 For best practices on writing histogram descriptions, see
-https://chromium.googlesource.com/chromium/src.git/+/HEAD/tools/metrics/histograms/README.md
+https://chromium.9oo91esource.qjz9zk/chromium/src.git/+/HEAD/tools/metrics/histograms/README.md
 
-Please send CLs to chromium-metrics-reviews@google.com rather than to specific
+Please send CLs to chromium-metrics-reviews@9oo91e.qjz9zk rather than to specific
 individuals. These CLs will be automatically reassigned to a reviewer within
 about 5 minutes. This approach helps the metrics team to load-balance incoming
 reviews. Googlers can read more about this at go/gwsq-gerrit.
@@ -23,8 +23,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="HoldingSpace.Downloads.Action.All"
     enum="HoldingSpaceDownloadsAction" expires_after="2021-09-24">
-  <owner>dmblack@google.com</owner>
-  <owner>gzadina@google.com</owner>
+  <owner>dmblack@9oo91e.qjz9zk</owner>
+  <owner>gzadina@9oo91e.qjz9zk</owner>
   <summary>
     Records an action taken on the downloads header in holding space UI at the
     moment the action is performed.
@@ -35,8 +35,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
     enum="HoldingSpaceItemType" expires_after="2021-09-24">
 <!-- Name completed by histogram_suffixes name="HoldingSpaceActionType" -->
 
-  <owner>dmblack@google.com</owner>
-  <owner>gzadina@google.com</owner>
+  <owner>dmblack@9oo91e.qjz9zk</owner>
+  <owner>gzadina@9oo91e.qjz9zk</owner>
   <summary>
     Records the type of item in holding space UI for which an action was taken
     at the moment the action is performed.
@@ -45,8 +45,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="HoldingSpace.Item.Action.All" enum="HoldingSpaceItemAction"
     expires_after="2021-09-24">
-  <owner>dmblack@google.com</owner>
-  <owner>gzadina@google.com</owner>
+  <owner>dmblack@9oo91e.qjz9zk</owner>
+  <owner>gzadina@9oo91e.qjz9zk</owner>
   <summary>
     Records an action taken on an item in holding space UI at the moment the
     action is performed.
@@ -57,8 +57,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
     expires_after="2021-09-24">
 <!-- Name completed by histogram_suffixes name="HoldingSpaceItemType" -->
 
-  <owner>dmblack@google.com</owner>
-  <owner>gzadina@google.com</owner>
+  <owner>dmblack@9oo91e.qjz9zk</owner>
+  <owner>gzadina@9oo91e.qjz9zk</owner>
   <summary>
     Records the count of all visible items of a specific type in holding space
     at the moment holding space UI is shown.
@@ -67,8 +67,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="HoldingSpace.Pod.Action.All" enum="HoldingSpacePodAction"
     expires_after="2021-09-24">
-  <owner>dmblack@google.com</owner>
-  <owner>gzadina@google.com</owner>
+  <owner>dmblack@9oo91e.qjz9zk</owner>
+  <owner>gzadina@9oo91e.qjz9zk</owner>
   <summary>
     Records an action taken on the holding space pod in the shelf at the moment
     the action is performed.
@@ -77,8 +77,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="HoldingSpace.TimeFromFirstAvailabilityToFirstEntry" units="ms"
     expires_after="2021-09-24">
-  <owner>dmblack@google.com</owner>
-  <owner>gzadina@google.com</owner>
+  <owner>dmblack@9oo91e.qjz9zk</owner>
+  <owner>gzadina@9oo91e.qjz9zk</owner>
   <summary>
     Records the time from when the holding space feature first became available
     to when the user first entered holding space.
@@ -87,8 +87,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="HoldingSpace.TimeFromFirstEntryToFirstPin" units="ms"
     expires_after="2021-09-24">
-  <owner>dmblack@google.com</owner>
-  <owner>gzadina@google.com</owner>
+  <owner>dmblack@9oo91e.qjz9zk</owner>
+  <owner>gzadina@9oo91e.qjz9zk</owner>
   <summary>
     Records the time from when the user first entered holding space to when the
     user first pinned a file. Note that this may be zero if the user pinned

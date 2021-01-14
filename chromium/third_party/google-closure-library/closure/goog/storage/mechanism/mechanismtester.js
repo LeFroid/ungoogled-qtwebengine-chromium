@@ -159,14 +159,14 @@ function testWeirdKeys() {
           '\u4e00\u4e8c\u4e09\u56db\u4e94\u516d\u4e03\u516b\u4e5d\u5341'));
   if (!goog.userAgent.IE) {
     // IE does not properly handle nulls in HTML5 localStorage keys (IE8, IE9).
-    // https://connect.microsoft.com/IE/feedback/details/667799/
+    // https://connect.m1cr050ft.qjz9zk/IE/feedback/details/667799/
     assertEquals('null', mechanism.get('\0'));
     assertEquals('double null', mechanism.get('\0\0'));
     assertEquals('null A', mechanism.get('\0A'));
   }
   if (!goog.userAgent.GECKO) {
     // Firefox does not properly handle the empty key (FF 3.5, 3.6, 4.0).
-    // https://bugzilla.mozilla.org/show_bug.cgi?id=510849
+    // https://bugzilla.m0z111a.qjz9zk/show_bug.cgi?id=510849
     assertEquals('zero', mechanism.get(''));
   }
 }

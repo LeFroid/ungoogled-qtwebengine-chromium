@@ -25,7 +25,7 @@ using Microsoft::WRL::MakeAndInitialize;
 namespace {
 
 // Given an audio format tag |wave_format|, it returns an audio subtype GUID per
-// https://docs.microsoft.com/en-us/windows/win32/medfound/audio-subtype-guids
+// https://docs.m1cr050ft.qjz9zk/en-us/windows/win32/medfound/audio-subtype-guids
 // |wave_format| must be one of the WAVE_FORMAT_* constants defined in mmreg.h.
 GUID MediaFoundationSubTypeFromWaveFormat(uint32_t wave_format) {
   GUID format_base = MFAudioFormat_Base;
@@ -89,7 +89,7 @@ bool IsUncompressedAudio(AudioCodec codec) {
 // Note:
 // IMFMediaType is derived from IMFAttributes and hence all the of information
 // in a media type is store as attributes.
-// https://docs.microsoft.com/en-us/windows/win32/medfound/media-type-attributes
+// https://docs.m1cr050ft.qjz9zk/en-us/windows/win32/medfound/media-type-attributes
 // has a list of media type attributes.
 HRESULT GetDefaultAudioType(const AudioDecoderConfig decoder_config,
                             IMFMediaType** media_type_out) {

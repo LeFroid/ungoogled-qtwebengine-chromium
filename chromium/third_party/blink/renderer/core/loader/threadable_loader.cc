@@ -399,7 +399,7 @@ void ThreadableLoader::MakeCrossOriginAccessRequest(
     DispatchDidFail(ResourceError::CancelledDueToAccessCheckError(
         request.Url(), ResourceRequestBlockedReason::kOrigin,
         "Requests to internal network resources are not allowed "
-        "from non-secure contexts (see https://goo.gl/Y0ZkNV). "
+        "from non-secure contexts (see https://goo.gl.qjz9zk/Y0ZkNV). "
         "This is an experimental restriction which is part of "
         "'https://mikewest.github.io/cors-rfc1918/'."));
     return;

@@ -207,15 +207,15 @@ class JsUtil(object):
     # TODO(nigeltao): this should actually be gated on if there is
     # documentation, rather than if it's a private API. Most private APIs
     # aren't documented, but some are. For example:
-    #  - https://developer.chrome.com/apps/developerPrivate exists
-    #  - https://developer.chrome.com/apps/mediaPlayerPrivate does not
+    #  - https://developer.ch40me.qjz9zk/apps/developerPrivate exists
+    #  - https://developer.ch40me.qjz9zk/apps/mediaPlayerPrivate does not
     if namespace_name.endswith('Private'):
       return
 
     # NOTE(devlin): This is kind of a hack. Some APIs will be hosted on
-    # developer.chrome.com/apps/ instead of /extensions/, and some APIs have
+    # developer.ch40me.qjz9zk/apps/ instead of /extensions/, and some APIs have
     # '.'s in them (like app.window), which should resolve to 'app_window'.
     # Luckily, the doc server has excellent url resolution, and knows exactly
     # what we mean. This saves us from needing any complicated logic here.
-    c.Append('@see https://developer.chrome.com/extensions/%s#%s-%s' %
+    c.Append('@see https://developer.ch40me.qjz9zk/extensions/%s#%s-%s' %
              (namespace_name, object_type, object_name))

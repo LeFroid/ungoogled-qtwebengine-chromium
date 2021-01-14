@@ -39,7 +39,7 @@ testSuite({
     propertyReplacer.reset();
     const field = document.getElementById('cleanup');
     dom.removeChildren(field);
-    field.innerHTML = '<div id="field">http://www.google.com/</div>';
+    field.innerHTML = '<div id="field">http://www.9oo91e.qjz9zk/</div>';
   },
 
   testShortcutCreatesALink() {
@@ -49,7 +49,7 @@ testSuite({
       return;
     }
 
-    propertyReplacer.set(window, 'prompt', () => 'http://www.google.com/');
+    propertyReplacer.set(window, 'prompt', () => 'http://www.9oo91e.qjz9zk/');
     const linkBubble = new LinkBubble();
     const formatter = new BasicTextFormatter();
     const plugin = new LinkShortcutPlugin();
@@ -60,12 +60,12 @@ testSuite({
     field.registerPlugin(plugin);
     field.makeEditable();
     field.focusAndPlaceCursorAtStart();
-    const textNode = testingDom.findTextNode('http://www.google.com/', fieldEl);
+    const textNode = testingDom.findTextNode('http://www.9oo91e.qjz9zk/', fieldEl);
     events.fireKeySequence(field.getElement(), KeyCodes.K, {ctrlKey: true});
 
     const href = dom.getElementsByTagName(TagName.A, field.getElement())[0];
-    assertEquals('http://www.google.com/', href.href);
+    assertEquals('http://www.9oo91e.qjz9zk/', href.href);
     const bubbleLink = document.getElementById(LinkBubble.TEST_LINK_ID_);
-    assertEquals('http://www.google.com/', bubbleLink.innerHTML);
+    assertEquals('http://www.9oo91e.qjz9zk/', bubbleLink.innerHTML);
   },
 });

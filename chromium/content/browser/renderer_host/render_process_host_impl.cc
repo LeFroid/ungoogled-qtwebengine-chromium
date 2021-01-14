@@ -1937,7 +1937,7 @@ void RenderProcessHostImpl::InitializeChannelProxy() {
   // Note that Channel send is effectively paused and unpaused at various points
   // during startup, and existing code relies on a fragile relative message
   // ordering resulting from some early messages being queued until process
-  // launch while others are sent immediately. See https://goo.gl/REW75h for
+  // launch while others are sent immediately. See https://goo.gl.qjz9zk/REW75h for
   // details.
   //
   // We acquire a few associated interface proxies here -- before the channel is

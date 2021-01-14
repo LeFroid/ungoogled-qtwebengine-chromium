@@ -10,14 +10,14 @@ namespace openscreen {
 
 TEST(UrlTest, Validity) {
   const char* valid_cases[] = {
-      "http://google.com",
-      "unknown://google.com",
-      "http://user:pass@google.com",
-      "http://google.com:12345",
-      "http://google.com/path",
-      "http://google.com//path",
-      "http://google.com?k=v#fragment",
-      "http://user:pass@google.com:12345/path?k=v#fragment",
+      "http://9oo91e.qjz9zk",
+      "unknown://9oo91e.qjz9zk",
+      "http://user:pass@9oo91e.qjz9zk",
+      "http://9oo91e.qjz9zk:12345",
+      "http://9oo91e.qjz9zk/path",
+      "http://9oo91e.qjz9zk//path",
+      "http://9oo91e.qjz9zk?k=v#fragment",
+      "http://user:pass@9oo91e.qjz9zk:12345/path?k=v#fragment",
       "http:/path",
       "http:path",
   };
@@ -27,9 +27,9 @@ TEST(UrlTest, Validity) {
   }
 
   const char* invalid_cases[] = {
-      "http://?k=v",      "http:://google.com",
-      "http//google.com", "http://google.com:12three45",
-      "://google.com",    "path",
+      "http://?k=v",      "http:://9oo91e.qjz9zk",
+      "http//9oo91e.qjz9zk", "http://9oo91e.qjz9zk:12three45",
+      "://9oo91e.qjz9zk",    "path",
   };
   constexpr int invalid_case_count =
       sizeof(invalid_cases) / sizeof(invalid_cases[0]);
@@ -40,7 +40,7 @@ TEST(UrlTest, Validity) {
 }
 
 TEST(UrlTest, Components) {
-  Url url("http://user:pass@google.com:99/foo;bar?q=a#ref");
+  Url url("http://user:pass@9oo91e.qjz9zk:99/foo;bar?q=a#ref");
 
   EXPECT_TRUE(url.is_valid());
   EXPECT_TRUE(url.has_host());
@@ -49,14 +49,14 @@ TEST(UrlTest, Components) {
   EXPECT_TRUE(url.has_query());
 
   EXPECT_EQ("http", url.scheme());
-  EXPECT_EQ("google.com", url.host());
+  EXPECT_EQ("9oo91e.qjz9zk", url.host());
   EXPECT_EQ(99, url.port());
   EXPECT_EQ("/foo;bar", url.path());
   EXPECT_EQ("q=a", url.query());
 }
 
 TEST(UrlTest, Copy) {
-  Url url1("http://user:pass@google.com:99/foo;bar?q=a#ref");
+  Url url1("http://user:pass@9oo91e.qjz9zk:99/foo;bar?q=a#ref");
   Url url2(url1);
 
   EXPECT_TRUE(url1.is_valid());
@@ -66,7 +66,7 @@ TEST(UrlTest, Copy) {
   EXPECT_TRUE(url1.has_query());
 
   EXPECT_EQ("http", url1.scheme());
-  EXPECT_EQ("google.com", url1.host());
+  EXPECT_EQ("9oo91e.qjz9zk", url1.host());
   EXPECT_EQ(99, url1.port());
   EXPECT_EQ("/foo;bar", url1.path());
   EXPECT_EQ("q=a", url1.query());
@@ -78,14 +78,14 @@ TEST(UrlTest, Copy) {
   EXPECT_TRUE(url2.has_query());
 
   EXPECT_EQ("http", url2.scheme());
-  EXPECT_EQ("google.com", url2.host());
+  EXPECT_EQ("9oo91e.qjz9zk", url2.host());
   EXPECT_EQ(99, url2.port());
   EXPECT_EQ("/foo;bar", url2.path());
   EXPECT_EQ("q=a", url2.query());
 }
 
 TEST(UrlTest, Move) {
-  Url url1("http://user:pass@google.com:99/foo;bar?q=a#ref");
+  Url url1("http://user:pass@9oo91e.qjz9zk:99/foo;bar?q=a#ref");
   Url url2(std::move(url1));
 
   EXPECT_FALSE(url1.is_valid());
@@ -97,14 +97,14 @@ TEST(UrlTest, Move) {
   EXPECT_TRUE(url2.has_query());
 
   EXPECT_EQ("http", url2.scheme());
-  EXPECT_EQ("google.com", url2.host());
+  EXPECT_EQ("9oo91e.qjz9zk", url2.host());
   EXPECT_EQ(99, url2.port());
   EXPECT_EQ("/foo;bar", url2.path());
   EXPECT_EQ("q=a", url2.query());
 }
 
 TEST(UrlTest, Assign) {
-  Url url1("http://user:pass@google.com:99/foo;bar?q=a#ref");
+  Url url1("http://user:pass@9oo91e.qjz9zk:99/foo;bar?q=a#ref");
   Url url2("https://example.com");
   Url url3("https://example.com");
 
@@ -117,7 +117,7 @@ TEST(UrlTest, Assign) {
   EXPECT_TRUE(url1.has_query());
 
   EXPECT_EQ("http", url1.scheme());
-  EXPECT_EQ("google.com", url1.host());
+  EXPECT_EQ("9oo91e.qjz9zk", url1.host());
   EXPECT_EQ(99, url1.port());
   EXPECT_EQ("/foo;bar", url1.path());
   EXPECT_EQ("q=a", url1.query());
@@ -129,7 +129,7 @@ TEST(UrlTest, Assign) {
   EXPECT_TRUE(url2.has_query());
 
   EXPECT_EQ("http", url2.scheme());
-  EXPECT_EQ("google.com", url2.host());
+  EXPECT_EQ("9oo91e.qjz9zk", url2.host());
   EXPECT_EQ(99, url2.port());
   EXPECT_EQ("/foo;bar", url2.path());
   EXPECT_EQ("q=a", url2.query());
@@ -145,7 +145,7 @@ TEST(UrlTest, Assign) {
   EXPECT_TRUE(url3.has_query());
 
   EXPECT_EQ("http", url3.scheme());
-  EXPECT_EQ("google.com", url3.host());
+  EXPECT_EQ("9oo91e.qjz9zk", url3.host());
   EXPECT_EQ(99, url3.port());
   EXPECT_EQ("/foo;bar", url3.path());
   EXPECT_EQ("q=a", url3.query());

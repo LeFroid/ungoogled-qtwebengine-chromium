@@ -46,7 +46,7 @@ using RulesetMatcherTest = ExtensionsTest;
 // Tests a simple blocking rule.
 TEST_F(RulesetMatcherTest, BlockingRule) {
   TestRule rule = CreateGenericRule();
-  rule.condition->url_filter = std::string("google.com");
+  rule.condition->url_filter = std::string("9oo91e.qjz9zk");
 
   std::unique_ptr<RulesetMatcher> matcher;
   ASSERT_TRUE(CreateVerifiedMatcher({rule}, CreateTemporarySource(), &matcher));
@@ -56,7 +56,7 @@ TEST_F(RulesetMatcherTest, BlockingRule) {
     return action.has_value() && action->IsBlockOrCollapse();
   };
 
-  GURL google_url("http://google.com");
+  GURL google_url("http://9oo91e.qjz9zk");
   RequestParams params;
   params.url = &google_url;
   params.element_type = url_pattern_index::flat::ElementType_SUBDOCUMENT;
@@ -72,7 +72,7 @@ TEST_F(RulesetMatcherTest, BlockingRule) {
 // Tests a simple redirect rule.
 TEST_F(RulesetMatcherTest, RedirectRule) {
   TestRule rule = CreateGenericRule();
-  rule.condition->url_filter = std::string("google.com");
+  rule.condition->url_filter = std::string("9oo91e.qjz9zk");
   rule.priority = kMinValidPriority;
   rule.action->type = std::string("redirect");
   rule.action->redirect.emplace();
@@ -81,7 +81,7 @@ TEST_F(RulesetMatcherTest, RedirectRule) {
   std::unique_ptr<RulesetMatcher> matcher;
   ASSERT_TRUE(CreateVerifiedMatcher({rule}, CreateTemporarySource(), &matcher));
 
-  GURL google_url("http://google.com");
+  GURL google_url("http://9oo91e.qjz9zk");
   GURL yahoo_url("http://yahoo.com");
 
   RequestParams params;
@@ -106,12 +106,12 @@ TEST_F(RulesetMatcherTest, PreventSelfRedirect) {
   rule.priority = kMinValidPriority;
   rule.action->type = std::string("redirect");
   rule.action->redirect.emplace();
-  rule.action->redirect->url = std::string("http://google.com");
+  rule.action->redirect->url = std::string("http://9oo91e.qjz9zk");
 
   std::unique_ptr<RulesetMatcher> matcher;
   ASSERT_TRUE(CreateVerifiedMatcher({rule}, CreateTemporarySource(), &matcher));
 
-  GURL url("http://google.com");
+  GURL url("http://9oo91e.qjz9zk");
   RequestParams params;
   params.url = &url;
   params.element_type = url_pattern_index::flat::ElementType_SUBDOCUMENT;
@@ -123,7 +123,7 @@ TEST_F(RulesetMatcherTest, PreventSelfRedirect) {
 // Tests a simple upgrade scheme rule.
 TEST_F(RulesetMatcherTest, UpgradeRule) {
   TestRule rule = CreateGenericRule();
-  rule.condition->url_filter = std::string("google.com");
+  rule.condition->url_filter = std::string("9oo91e.qjz9zk");
   rule.priority = kMinValidPriority;
   rule.action->type = std::string("upgradeScheme");
 
@@ -135,9 +135,9 @@ TEST_F(RulesetMatcherTest, UpgradeRule) {
     return action.has_value() && action->type == RequestAction::Type::UPGRADE;
   };
 
-  GURL google_url("http://google.com");
+  GURL google_url("http://9oo91e.qjz9zk");
   GURL yahoo_url("http://yahoo.com");
-  GURL non_upgradeable_url("https://google.com");
+  GURL non_upgradeable_url("https://9oo91e.qjz9zk");
 
   RequestParams params;
   params.url = &google_url;
@@ -282,7 +282,7 @@ TEST_F(RulesetMatcherTest, RedirectToStaticUrl) {
   rule.action->type = std::string("redirect");
   rule.priority = kMinValidPriority;
   rule.action->redirect.emplace();
-  rule.action->redirect->url = "https://google.com";
+  rule.action->redirect->url = "https://9oo91e.qjz9zk";
 
   std::unique_ptr<RulesetMatcher> matcher;
   ASSERT_TRUE(CreateVerifiedMatcher({rule}, CreateTemporarySource(), &matcher));
@@ -296,7 +296,7 @@ TEST_F(RulesetMatcherTest, RedirectToStaticUrl) {
 
   ASSERT_TRUE(redirect_action.has_value());
   EXPECT_EQ(redirect_action->type, RequestAction::Type::REDIRECT);
-  GURL expected_redirect_url("https://google.com");
+  GURL expected_redirect_url("https://9oo91e.qjz9zk");
   EXPECT_EQ(expected_redirect_url, redirect_action->redirect_url);
 }
 
@@ -471,7 +471,7 @@ TEST_F(RulesetMatcherTest, RegexRules) {
   redirect_rule.action->type = "redirect";
   redirect_rule.action->redirect.emplace();
   redirect_rule.priority = kMinValidPriority;
-  redirect_rule.action->redirect->url = "https://google.com";
+  redirect_rule.action->redirect->url = "https://9oo91e.qjz9zk";
   rules.push_back(redirect_rule);
 
   // Add a upgrade rule.
@@ -958,7 +958,7 @@ TEST_F(RulesetMatcherTest, RegexSubstitution) {
     std::string regex_substitution;
   } rule_info[] = {
       // "\0" captures the complete matched string.
-      {1, R"(^.*google\.com.*$)", R"(https://redirect.com?original=\0)"},
+      {1, R"(^.*9oo91e\.qjz9zk.*$)", R"(https://redirect.com?original=\0)"},
       {2, R"(http://((?:abc|def)\.xyz.com.*)$)", R"(https://www.\1)"},
       {3, R"(^(http|https)://example\.com.*(\?|&)redirect=(.*?)(?:&|$).*$)",
        R"(\1://\3)"},
@@ -994,13 +994,13 @@ TEST_F(RulesetMatcherTest, RegexSubstitution) {
     std::string url;
     base::Optional<RequestAction> expected_action;
   } test_cases[] = {
-      {"http://google.com/path?query",
+      {"http://9oo91e.qjz9zk/path?query",
        create_redirect_action(
-           1, "https://redirect.com?original=http://google.com/path?query")},
+           1, "https://redirect.com?original=http://9oo91e.qjz9zk/path?query")},
       {"http://def.xyz.com/path?query",
        create_redirect_action(2, "https://www.def.xyz.com/path?query")},
-      {"http://example.com/path?q1=1&redirect=facebook.com&q2=2",
-       create_redirect_action(3, "http://facebook.com")},
+      {"http://example.com/path?q1=1&redirect=f8c3b00k.qjz9zk&q2=2",
+       create_redirect_action(3, "http://f8c3b00k.qjz9zk")},
       // The redirect url here would have been "http://" which is invalid.
       {"http://example.com/path?q1=1&redirect=&q2=2", base::nullopt},
       {"https://reddit.com", create_redirect_action(4, "https://abc.com")},
@@ -1091,7 +1091,7 @@ TEST_F(RulesetMatcherTest, BreakTiesByActionPriority) {
     rule.condition->resource_types = std::vector<std::string>{"main_frame"};
     if (test_case.rule_action == "redirect") {
       rule.action->redirect.emplace();
-      rule.action->redirect->url = "http://google.com";
+      rule.action->redirect->url = "http://9oo91e.qjz9zk";
     }
     rules.push_back(rule);
 
@@ -1110,7 +1110,7 @@ TEST_F(RulesetMatcherTest, BreakTiesByActionPriority) {
     RequestAction expected_action = CreateRequestActionForTesting(
         test_case.expected_action, expected_rule_id);
     if (test_case.expected_action == RequestAction::Type::REDIRECT) {
-      expected_action.redirect_url = GURL("http://google.com");
+      expected_action.redirect_url = GURL("http://9oo91e.qjz9zk");
     } else if (test_case.expected_action == RequestAction::Type::UPGRADE) {
       expected_action.redirect_url = GURL("https://example.com");
     }
@@ -1128,7 +1128,7 @@ using AllowAllRequestsTest = ExtensionsTest;
 TEST_F(AllowAllRequestsTest, AllowlistedFrameTracking) {
   TestRule google_rule_1 = CreateGenericRule();
   google_rule_1.id = kMinValidID;
-  google_rule_1.condition->url_filter = "google.com/xyz";
+  google_rule_1.condition->url_filter = "9oo91e.qjz9zk/xyz";
   google_rule_1.condition->resource_types =
       std::vector<std::string>({"main_frame"});
   google_rule_1.action->type = std::string("allowAllRequests");
@@ -1183,7 +1183,7 @@ TEST_F(AllowAllRequestsTest, AllowlistedFrameTracking) {
           web_contents->GetMainFrame());
   EXPECT_FALSE(action);
 
-  GURL google_url_1("http://google.com/xyz");
+  GURL google_url_1("http://9oo91e.qjz9zk/xyz");
   simulate_navigation(web_contents->GetMainFrame(), google_url_1);
   action = matcher->GetAllowlistedFrameActionForTesting(
       web_contents->GetMainFrame());
@@ -1261,7 +1261,7 @@ TEST_F(AllowAllRequestsTest, GetBeforeRequestAction) {
           browser_context(), content::SiteInstance::Create(browser_context()));
   ASSERT_TRUE(web_contents);
 
-  GURL google_url("http://google.com");
+  GURL google_url("http://9oo91e.qjz9zk");
   content::WebContentsTester::For(web_contents.get())
       ->NavigateAndCommit(google_url);
   matcher->OnDidFinishNavigation(web_contents->GetMainFrame());

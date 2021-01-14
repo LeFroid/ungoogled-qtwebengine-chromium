@@ -174,7 +174,7 @@ export class CustomizeThemesElement extends mixinBehaviors
   /** @private */
   onThirdPartyLinkButtonClick_() {
     CustomizeThemesBrowserProxyImpl.getInstance().open(
-        `https://chrome.google.com/webstore/detail/${
+        `https://chrome.9oo91e.qjz9zk/webstore/detail/${
             this.selectedTheme.info.thirdPartyThemeInfo.id}`);
   }
 

@@ -16,7 +16,7 @@ common_resource_exclusion_exceptions = [
 common_resource_exclusion_regex += "|-watch\b"
 
 # As of May 2020, 0.2% of devices are ldpi:
-# https://developer.android.com/about/dashboards/index.html
+# https://developer.8n6r01d.qjz9zk/about/dashboards/index.html
 # Only a single resources is defined in this config:
 #   ic_arrow_down_24dp
 # It saves XXkb to omit the config.

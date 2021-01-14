@@ -125,8 +125,8 @@
 #define U_PF_LINUX 4000
 /**
  * Native Client is pretty close to Linux.
- * See https://developer.chrome.com/native-client and
- *  http://www.chromium.org/nativeclient
+ * See https://developer.ch40me.qjz9zk/native-client and
+ *  http://www.ch40m1um.qjz9zk/nativeclient
  *  @internal
  */
 #define U_PF_BROWSER_NATIVE_CLIENT 4020

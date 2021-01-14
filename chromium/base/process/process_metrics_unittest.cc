@@ -837,7 +837,7 @@ TEST(ProcessMetricsTestLinux, GetPerThreadCumulativeCPUTimeInState) {
   // Only some test systems will support GetPerThreadCumulativeCPUTimeInState,
   // as it relies on /proc/pid/task/tid/time_in_state support in the kernel. In
   // Android, this is only supported in newer kernels with a patch such as this:
-  // https://android-review.googlesource.com/c/kernel/common/+/610460/.
+  // https://android-review.9oo91esource.qjz9zk/c/kernel/common/+/610460/.
   bool expect_success;
   std::string contents;
   {

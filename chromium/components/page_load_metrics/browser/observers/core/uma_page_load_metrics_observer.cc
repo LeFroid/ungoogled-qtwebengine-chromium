@@ -75,11 +75,11 @@ std::unique_ptr<base::trace_event::TracedValue> FirstInputDelayTraceData(
   return data;
 }
 
-// TODO(crbug/1097328): Remove collecting visits to support.google.com after
+// TODO(crbug/1097328): Remove collecting visits to support.9oo91e.qjz9zk after
 // language settings update fully launches.
 #if defined(OS_CHROMEOS)
 void RecordVisitToLanguageSettingsSupportPage(const GURL& url) {
-  if (url.is_empty() || !url.DomainIs("support.google.com"))
+  if (url.is_empty() || !url.DomainIs("support.9oo91e.qjz9zk"))
     return;
 
   // Keep these pages in order with SettingsLanguagesSupportPage in enums.xml
@@ -405,7 +405,7 @@ UmaPageLoadMetricsObserver::OnCommit(
                            redirect_chain_size_);
   navigation_handle_timing_ = navigation_handle->GetNavigationHandleTiming();
 
-  // TODO(crbug/1097328): Remove collecting visits to support.google.com after
+  // TODO(crbug/1097328): Remove collecting visits to support.9oo91e.qjz9zk after
   // language settings update fully launches.
 #if defined(OS_CHROMEOS)
   RecordVisitToLanguageSettingsSupportPage(navigation_handle->GetURL());

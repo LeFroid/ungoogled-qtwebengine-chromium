@@ -47,7 +47,7 @@ TRANSLATION_EXPECTATIONS_PATH = os.path.join('tools', 'gritsettings',
                                              'translation_expectations.pyl')
 
 # URL of the bucket used for storing screenshots.
-# This is writable by @google.com accounts, readable by everyone.
+# This is writable by @9oo91e.qjz9zk accounts, readable by everyone.
 BUCKET_URL = 'gs://chromium-translation-screenshots'
 
 if sys.platform.startswith('win'):

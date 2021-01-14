@@ -85,7 +85,7 @@ struct TraceCategory {
   // These fields should not be accessed directly, not even by tracing code.
   // The only reason why these are not private is because it makes it impossible
   // to have a global array of TraceCategory in category_registry.cc without
-  // creating initializers. See discussion on goo.gl/qhZN94 and
+  // creating initializers. See discussion on goo.gl.qjz9zk/qhZN94 and
   // crbug.com/{660967,660828}.
 
   // The enabled state. TRACE_EVENT* macros will capture events if any of the

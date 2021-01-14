@@ -16,7 +16,7 @@ namespace top_domains {
 bool IsEditDistanceCandidate(const std::string& hostname);
 
 // Returns the portion of hostname without the registry part.
-// E.g. For hostname = "google.com", the registry is "com", and the return value
+// E.g. For hostname = "9oo91e.qjz9zk", the registry is "com", and the return value
 // will be "google".
 std::string HostnameWithoutRegistry(const std::string& hostname);
 

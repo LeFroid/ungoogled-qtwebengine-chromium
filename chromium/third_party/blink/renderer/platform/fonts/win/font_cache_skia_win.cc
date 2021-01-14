@@ -511,7 +511,7 @@ static bool TypefacesHasWeightSuffix(const AtomicString& family,
     FontSelectionValue weight;
   };
   // Mapping from suffix to weight from the DirectWrite documentation.
-  // http://msdn.microsoft.com/en-us/library/windows/desktop/dd368082.aspx
+  // http://msdn.m1cr050ft.qjz9zk/en-us/library/windows/desktop/dd368082.aspx
   const static FamilyWeightSuffix kVariantForSuffix[] = {
       {L" thin", 5, FontSelectionValue(100)},
       {L" extralight", 11, FontSelectionValue(200)},
@@ -549,7 +549,7 @@ static bool TypefacesHasStretchSuffix(const AtomicString& family,
     FontSelectionValue stretch;
   };
   // Mapping from suffix to stretch value from the DirectWrite documentation.
-  // http://msdn.microsoft.com/en-us/library/windows/desktop/dd368078.aspx
+  // http://msdn.m1cr050ft.qjz9zk/en-us/library/windows/desktop/dd368078.aspx
   // Also includes Narrow as a synonym for Condensed to to support Arial
   // Narrow and other fonts following the same naming scheme.
   const static FamilyStretchSuffix kVariantForSuffix[] = {

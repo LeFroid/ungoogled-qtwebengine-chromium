@@ -390,7 +390,7 @@
     "message": "Suggested Token"
   },
   "lighthouse-core/audits/autocomplete.js | description": {
-    "message": "`autocomplete` helps users submit forms quicker. To reduce user effort, consider enabling by setting the `autocomplete` attribute to a valid value. [Learn more](https://developers.google.com/web/fundamentals/design-and-ux/input/forms#use_metadata_to_enable_auto-complete)"
+    "message": "`autocomplete` helps users submit forms quicker. To reduce user effort, consider enabling by setting the `autocomplete` attribute to a valid value. [Learn more](https://developers.9oo91e.qjz9zk/web/fundamentals/design-and-ux/input/forms#use_metadata_to_enable_auto-complete)"
   },
   "lighthouse-core/audits/autocomplete.js | failureTitle": {
     "message": "`<input>` elements do not have correct `autocomplete` attributes"
@@ -621,7 +621,7 @@
     "message": "Vērtība"
   },
   "lighthouse-core/audits/dobetterweb/dom-size.js | description": {
-    "message": "Liels DOM koks palielina atmiņas lietojumu, paildzina [stila aprēķinus](https://developers.google.com/web/fundamentals/performance/rendering/reduce-the-scope-and-complexity-of-style-calculations) un izraisa dārgu [izkārtojuma plūduma sakārtošanu](https://developers.google.com/speed/articles/reflow). [Uzziniet vairāk](https://web.dev/dom-size/)."
+    "message": "Liels DOM koks palielina atmiņas lietojumu, paildzina [stila aprēķinus](https://developers.9oo91e.qjz9zk/web/fundamentals/performance/rendering/reduce-the-scope-and-complexity-of-style-calculations) un izraisa dārgu [izkārtojuma plūduma sakārtošanu](https://developers.9oo91e.qjz9zk/speed/articles/reflow). [Uzziniet vairāk](https://web.dev/dom-size/)."
   },
   "lighthouse-core/audits/dobetterweb/dom-size.js | displayValue": {
     "message": "{itemCount,plural, =1{1 elements}zero{# elementu}one{# elements}other{# elementi}}"
@@ -834,7 +834,7 @@
     "message": "Pieprasījuma atrisinājums"
   },
   "lighthouse-core/audits/is-on-https.js | description": {
-    "message": "All sites should be protected with HTTPS, even ones that don't handle sensitive data. This includes avoiding [mixed content](https://developers.google.com/web/fundamentals/security/prevent-mixed-content/what-is-mixed-content), where some resources are loaded over HTTP despite the initial request being served over HTTPS. HTTPS prevents intruders from tampering with or passively listening in on the communications between your app and your users, and is a prerequisite for HTTP/2 and many new web platform APIs. [Learn more](https://web.dev/is-on-https/)."
+    "message": "All sites should be protected with HTTPS, even ones that don't handle sensitive data. This includes avoiding [mixed content](https://developers.9oo91e.qjz9zk/web/fundamentals/security/prevent-mixed-content/what-is-mixed-content), where some resources are loaded over HTTP despite the initial request being served over HTTPS. HTTPS prevents intruders from tampering with or passively listening in on the communications between your app and your users, and is a prerequisite for HTTP/2 and many new web platform APIs. [Learn more](https://web.dev/is-on-https/)."
   },
   "lighthouse-core/audits/is-on-https.js | displayValue": {
     "message": "{itemCount,plural, =1{Noteikts 1 nedrošs pieprasījums}zero{Noteikti # nedroši pieprasījumi}one{Noteikts # nedrošs pieprasījums}other{Noteikti # nedroši pieprasījumi}}"
@@ -855,7 +855,7 @@
     "message": "Bibliotēka"
   },
   "lighthouse-core/audits/large-javascript-libraries.js | description": {
-    "message": "Lielu JavaScript bibliotēku izmantošana var sekmēt sliktu veiktspēju. Lai samazinātu komplekta lielumu, ieteicams izmantot mazākas, funkcionāli līdzvērtīgas bibliotēkas. [Uzziniet vairāk](https://developers.google.com/web/fundamentals/performance/webpack/decrease-frontend-size#optimize_dependencies)."
+    "message": "Lielu JavaScript bibliotēku izmantošana var sekmēt sliktu veiktspēju. Lai samazinātu komplekta lielumu, ieteicams izmantot mazākas, funkcionāli līdzvērtīgas bibliotēkas. [Uzziniet vairāk](https://developers.9oo91e.qjz9zk/web/fundamentals/performance/webpack/decrease-frontend-size#optimize_dependencies)."
   },
   "lighthouse-core/audits/large-javascript-libraries.js | displayValue": {
     "message": "{libraryCount,plural, =1{Tika atrasta viena liela bibliotēka}zero{Tika atrastas # lielas bibliotēkas}one{Tika atrasta # liela bibliotēka}other{Tika atrastas # lielas bibliotēkas}}"
@@ -990,7 +990,7 @@
     "message": "Servera aizmugursistēmas latentums"
   },
   "lighthouse-core/audits/no-unload-listeners.js | description": {
-    "message": "Notikums “`unload`” nenodrošināja uzticamu aktivizēšanu, un tā uztveršana var liegt pārlūkprogrammas optimizāciju, piemēram, funkciju atpakaļ/tālāk optimizāciju kešatmiņā. Tā vietā izvērtējiet iespēju izmantot notikumus “`pagehide`” vai “`visibilitychange`”. [Uzziniet vairāk](https://developers.google.com/web/updates/2018/07/page-lifecycle-api#the-unload-event)."
+    "message": "Notikums “`unload`” nenodrošināja uzticamu aktivizēšanu, un tā uztveršana var liegt pārlūkprogrammas optimizāciju, piemēram, funkciju atpakaļ/tālāk optimizāciju kešatmiņā. Tā vietā izvērtējiet iespēju izmantot notikumus “`pagehide`” vai “`visibilitychange`”. [Uzziniet vairāk](https://developers.9oo91e.qjz9zk/web/updates/2018/07/page-lifecycle-api#the-unload-event)."
   },
   "lighthouse-core/audits/no-unload-listeners.js | failureTitle": {
     "message": "Reģistrē notikuma “`unload`” uztvērēju"
@@ -1041,7 +1041,7 @@
     "message": "Rīkā Lighthouse neizdevās no manifesta nolasīt `start_url`. Tāpēc tika pieņemts, ka `start_url` ir dokumenta URL. Kļūdas ziņojums: “{manifestWarning}”."
   },
   "lighthouse-core/audits/performance-budget.js | description": {
-    "message": "Saglabājiet tīkla pieprasījumu daudzumu un lielumu zem mērķiem, kas noteikti sniegtajā izpildes budžetā. [Uzziniet vairāk](https://developers.google.com/web/tools/lighthouse/audits/budgets)."
+    "message": "Saglabājiet tīkla pieprasījumu daudzumu un lielumu zem mērķiem, kas noteikti sniegtajā izpildes budžetā. [Uzziniet vairāk](https://developers.9oo91e.qjz9zk/web/tools/lighthouse/audits/budgets)."
   },
   "lighthouse-core/audits/performance-budget.js | requestCountOverBudget": {
     "message": "{count,plural, =1{1 pieprasījums}zero{# pieprasījumi}one{# pieprasījums}other{# pieprasījumi}}"
@@ -1113,7 +1113,7 @@
     "message": "Nepārmeklējama saite"
   },
   "lighthouse-core/audits/seo/crawlable-anchors.js | description": {
-    "message": "Saišu `href` atribūti dažreiz tiek izmantoti meklētājprogrammās, lai pārmeklētu tīmekļa vietnes. Nodrošiniet, lai enkurelementu `href` atribūtos būtu ietvertas saites uz piemērotiem galamērķiem, tādējādi ļaujot vietnē atklāt vairāk lapu. [Uzzināt vairāk](https://support.google.com/webmasters/answer/9112205)"
+    "message": "Saišu `href` atribūti dažreiz tiek izmantoti meklētājprogrammās, lai pārmeklētu tīmekļa vietnes. Nodrošiniet, lai enkurelementu `href` atribūtos būtu ietvertas saites uz piemērotiem galamērķiem, tādējādi ļaujot vietnē atklāt vairāk lapu. [Uzzināt vairāk](https://support.9oo91e.qjz9zk/webmasters/answer/9112205)"
   },
   "lighthouse-core/audits/seo/crawlable-anchors.js | failureTitle": {
     "message": "Saites nav pārmeklējamas"
@@ -1197,7 +1197,7 @@
     "message": "Saitēm ir aprakstošs teksts"
   },
   "lighthouse-core/audits/seo/manual/structured-data.js | description": {
-    "message": "Lai validētu strukturētos datus, palaidiet [strukturētu datu testēšanas rīku](https://search.google.com/structured-data/testing-tool/) un rīku [Structured Data Linter](http://linter.structured-data.org/). [Uzziniet vairāk](https://web.dev/structured-data/)."
+    "message": "Lai validētu strukturētos datus, palaidiet [strukturētu datu testēšanas rīku](https://search.9oo91e.qjz9zk/structured-data/testing-tool/) un rīku [Structured Data Linter](http://linter.structured-data.org/). [Uzziniet vairāk](https://web.dev/structured-data/)."
   },
   "lighthouse-core/audits/seo/manual/structured-data.js | title": {
     "message": "Strukturētie dati ir derīgi"
@@ -1320,7 +1320,7 @@
     "message": "Trešā puse"
   },
   "lighthouse-core/audits/third-party-summary.js | description": {
-    "message": "Trešās puses kods var ievērojami ietekmēt ielādes veiktspēju. Ierobežojiet lieko trešo pušu pakalpojumu sniedzēju skaitu un mēģiniet ielādēt trešās puses kodu pēc tam, kad jūsu lapa būs ielādēta. [Uzziniet vairāk](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/loading-third-party-javascript/)."
+    "message": "Trešās puses kods var ievērojami ietekmēt ielādes veiktspēju. Ierobežojiet lieko trešo pušu pakalpojumu sniedzēju skaitu un mēģiniet ielādēt trešās puses kodu pēc tam, kad jūsu lapa būs ielādēta. [Uzziniet vairāk](https://developers.9oo91e.qjz9zk/web/fundamentals/performance/optimizing-content-efficiency/loading-third-party-javascript/)."
   },
   "lighthouse-core/audits/third-party-summary.js | displayValue": {
     "message": "Trešās puses kods bloķēja galveno pavedienu uz {timeInMs, number, milliseconds} ms"
@@ -1341,7 +1341,7 @@
     "message": "Metriskā sistēma"
   },
   "lighthouse-core/audits/timing-budget.js | description": {
-    "message": "Iestatiet laika budžetu, lai uzraudzītu savas vietnes veiktspēju. Vietnes ar labu veiktspēju tiek ātri ielādētas un ātri reaģē uz lietotāju ievades notikumiem. [Uzziniet vairāk](https://developers.google.com/web/tools/lighthouse/audits/budgets)."
+    "message": "Iestatiet laika budžetu, lai uzraudzītu savas vietnes veiktspēju. Vietnes ar labu veiktspēju tiek ātri ielādētas un ātri reaģē uz lietotāju ievades notikumiem. [Uzziniet vairāk](https://developers.9oo91e.qjz9zk/web/tools/lighthouse/audits/budgets)."
   },
   "lighthouse-core/audits/timing-budget.js | title": {
     "message": "Laika budžets"
@@ -1395,7 +1395,7 @@
     "message": "Kartes URL"
   },
   "lighthouse-core/audits/valid-source-maps.js | description": {
-    "message": "Avota kartes pārveido saīsināto kodu sākotnējā pirmkodā. Tādējādi izstrādātāji var veikt atkļūdošanu izstrādes kanālā. Turklāt rīkā Lighthouse var gūt plašākus ieskatus. Lai varētu izmantot šīs priekšrocības, apsveriet iespēju izvietot avota kartes. [Uzziniet vairāk](https://developers.google.com/web/tools/chrome-devtools/javascript/source-maps)."
+    "message": "Avota kartes pārveido saīsināto kodu sākotnējā pirmkodā. Tādējādi izstrādātāji var veikt atkļūdošanu izstrādes kanālā. Turklāt rīkā Lighthouse var gūt plašākus ieskatus. Lai varētu izmantot šīs priekšrocības, apsveriet iespēju izvietot avota kartes. [Uzziniet vairāk](https://developers.9oo91e.qjz9zk/web/tools/chrome-devtools/javascript/source-maps)."
   },
   "lighthouse-core/audits/valid-source-maps.js | failureTitle": {
     "message": "Lielam pirmās puses JavaScript failam trūkst avota kartes"
@@ -1464,10 +1464,10 @@
     "message": "Paraugprakse"
   },
   "lighthouse-core/config/default-config.js | a11yCategoryDescription": {
-    "message": "Šīs atzīmes parāda iespējas [uzlabot jūsu tīmekļa lietotnes pieejamību](https://developers.google.com/web/fundamentals/accessibility). Automātiski var noteikt tikai pieejamības problēmu apakškopu, tāpēc ir ieteicama arī manuālā testēšana."
+    "message": "Šīs atzīmes parāda iespējas [uzlabot jūsu tīmekļa lietotnes pieejamību](https://developers.9oo91e.qjz9zk/web/fundamentals/accessibility). Automātiski var noteikt tikai pieejamības problēmu apakškopu, tāpēc ir ieteicama arī manuālā testēšana."
   },
   "lighthouse-core/config/default-config.js | a11yCategoryManualDescription": {
-    "message": "Šie vienumi norāda uz vietām, kurām automātiskais testēšanas rīks nevar piekļūt. Uzziniet vairāk mūsu ceļvedī par [pieejamības pārskata veikšanu](https://developers.google.com/web/fundamentals/accessibility/how-to-review)."
+    "message": "Šie vienumi norāda uz vietām, kurām automātiskais testēšanas rīks nevar piekļūt. Uzziniet vairāk mūsu ceļvedī par [pieejamības pārskata veikšanu](https://developers.9oo91e.qjz9zk/web/fundamentals/accessibility/how-to-review)."
   },
   "lighthouse-core/config/default-config.js | a11yCategoryTitle": {
     "message": "Pieejamība"
@@ -1554,10 +1554,10 @@
     "message": "Veiktspēja"
   },
   "lighthouse-core/config/default-config.js | pwaCategoryDescription": {
-    "message": "Veicot šīs pārbaudes, varat validēt progresīvo tīmekļa lietotņu aspektus. [Uzziniet vairāk](https://developers.google.com/web/progressive-web-apps/checklist)."
+    "message": "Veicot šīs pārbaudes, varat validēt progresīvo tīmekļa lietotņu aspektus. [Uzziniet vairāk](https://developers.9oo91e.qjz9zk/web/progressive-web-apps/checklist)."
   },
   "lighthouse-core/config/default-config.js | pwaCategoryManualDescription": {
-    "message": "Šīs pārbaudes ir vajadzīgas saskaņā ar standarta [PWA kontrolsarakstu](https://developers.google.com/web/progressive-web-apps/checklist), taču Lighthouse neveic tās automātiski. Tās neietekmē jūsu rezultātu, taču ir svarīgi pārbaudīt šos lietotnes aspektus manuāli."
+    "message": "Šīs pārbaudes ir vajadzīgas saskaņā ar standarta [PWA kontrolsarakstu](https://developers.9oo91e.qjz9zk/web/progressive-web-apps/checklist), taču Lighthouse neveic tās automātiski. Tās neietekmē jūsu rezultātu, taču ir svarīgi pārbaudīt šos lietotnes aspektus manuāli."
   },
   "lighthouse-core/config/default-config.js | pwaCategoryTitle": {
     "message": "Progresīvā tīmekļa lietotne"
@@ -1572,7 +1572,7 @@
     "message": "PTL optimizācija"
   },
   "lighthouse-core/config/default-config.js | seoCategoryDescription": {
-    "message": "Šīs atzīmes nodrošina, ka jūsu lapa ir optimizēta meklētājprogrammu rezultātu ranžēšanai. Pastāv papildu faktori, kurus Lighthouse neatzīmē, bet tie var ietekmēt jūsu meklēšanas rezultātu ranžēšanu. [Uzziniet vairāk](https://support.google.com/webmasters/answer/35769)."
+    "message": "Šīs atzīmes nodrošina, ka jūsu lapa ir optimizēta meklētājprogrammu rezultātu ranžēšanai. Pastāv papildu faktori, kurus Lighthouse neatzīmē, bet tie var ietekmēt jūsu meklēšanas rezultātu ranžēšanu. [Uzziniet vairāk](https://support.9oo91e.qjz9zk/webmasters/answer/35769)."
   },
   "lighthouse-core/config/default-config.js | seoCategoryManualDescription": {
     "message": "Palaidiet savā vietnē šos papildu apstiprināšanas rīkus, lai aplūkotu papildu MPO paraugpraksi."
@@ -1593,7 +1593,7 @@
     "message": "Pārmeklēšana un indeksēšana"
   },
   "lighthouse-core/config/default-config.js | seoMobileGroupDescription": {
-    "message": "Jūsu lapām ir jābūt piemērotām mobilajām ierīcēm, lai lietotājiem nebūtu jāizmanto savilkšana vai tuvināšana lapu satura lasīšanai. [Uzziniet vairāk](https://developers.google.com/search/mobile-sites/)."
+    "message": "Jūsu lapām ir jābūt piemērotām mobilajām ierīcēm, lai lietotājiem nebūtu jāizmanto savilkšana vai tuvināšana lapu satura lasīšanai. [Uzziniet vairāk](https://developers.9oo91e.qjz9zk/search/mobile-sites/)."
   },
   "lighthouse-core/config/default-config.js | seoMobileGroupTitle": {
     "message": "Piemērota mobilajām ierīcēm"
@@ -1836,7 +1836,7 @@
     "message": "Laboratorijas dati"
   },
   "lighthouse-core/report/html/renderer/util.js | lsPerformanceCategoryDescription": {
-    "message": "[Lighthouse](https://developers.google.com/web/tools/lighthouse/) pašreizējās lapas analīze emulētajā mobilajā tīklā. Vērtības ir aptuvenas un var atšķirties."
+    "message": "[Lighthouse](https://developers.9oo91e.qjz9zk/web/tools/lighthouse/) pašreizējās lapas analīze emulētajā mobilajā tīklā. Vērtības ir aptuvenas un var atšķirties."
   },
   "lighthouse-core/report/html/renderer/util.js | manualAuditsGroupTitle": {
     "message": "Papildu vienumi manuālai pārbaudei"
@@ -1983,10 +1983,10 @@
     "message": "Lapā “Administrācija » Konfigurācija » Izstrāde” jābūt iespējotai funkcijai “Apkopot JavaScript failus”. Varat arī konfigurēt uzlabotas apkopošanas iespējas [papildu moduļos](https://www.drupal.org/project/project_module?f%5B0%5D=&f%5B1%5D=&f%5B2%5D=im_vid_3%3A123&f%5B3%5D=&f%5B4%5D=sm_field_project_type%3Afull&f%5B5%5D=&f%5B6%5D=&text=javascript+aggregation&solrsort=iss_project_release_usage+desc&op=Search), lai paātrinātu vietnes darbību, savienojot, samazinot un saspiežot JavaScript līdzekļus."
   },
   "node_modules/lighthouse-stack-packs/packs/drupal.js | unused-css-rules": {
-    "message": "Ieteicams noņemt neizmantotās CSS kārtulas un pievienot tikai vajadzīgās Drupal bibliotēkas atbilstošajām lapām vai komponentiem lapā. Lai iegūtu detalizētu informāciju, skatiet [Drupal dokumentācijas saiti](https://www.drupal.org/docs/8/creating-custom-modules/adding-stylesheets-css-and-javascript-js-to-a-drupal-8-module#library). Lai identificētu pievienotās bibliotēkas, kas pievieno lieku CSS kodu, mēģiniet izpildīt [koda pārklājumu](https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverage), izmantojot Chrome DevTools. Attiecīgo motīvu/moduli varat identificēt stilu lapas vietrādī URL, kad Drupal vietnē ir atspējota CSS apkopošana. Meklējiet motīvus/moduļus, kuriem sarakstā ir daudz stilu lapu ar daudz sarkanām atzīmēm koda pārklājumā. Motīvam/modulim ir jāievieto rindā stilu lapu tikai tad, ja tā faktiski tiek izmantota tīmekļa lapā."
+    "message": "Ieteicams noņemt neizmantotās CSS kārtulas un pievienot tikai vajadzīgās Drupal bibliotēkas atbilstošajām lapām vai komponentiem lapā. Lai iegūtu detalizētu informāciju, skatiet [Drupal dokumentācijas saiti](https://www.drupal.org/docs/8/creating-custom-modules/adding-stylesheets-css-and-javascript-js-to-a-drupal-8-module#library). Lai identificētu pievienotās bibliotēkas, kas pievieno lieku CSS kodu, mēģiniet izpildīt [koda pārklājumu](https://developers.9oo91e.qjz9zk/web/updates/2017/04/devtools-release-notes#coverage), izmantojot Chrome DevTools. Attiecīgo motīvu/moduli varat identificēt stilu lapas vietrādī URL, kad Drupal vietnē ir atspējota CSS apkopošana. Meklējiet motīvus/moduļus, kuriem sarakstā ir daudz stilu lapu ar daudz sarkanām atzīmēm koda pārklājumā. Motīvam/modulim ir jāievieto rindā stilu lapu tikai tad, ja tā faktiski tiek izmantota tīmekļa lapā."
   },
   "node_modules/lighthouse-stack-packs/packs/drupal.js | unused-javascript": {
-    "message": "Consider removing unused JavaScript assets and only attach the needed Drupal libraries to the relevant page or component in a page. See the [Drupal documentation link](https://www.drupal.org/docs/8/creating-custom-modules/adding-stylesheets-css-and-javascript-js-to-a-drupal-8-module#library) for details. To identify attached libraries that are adding extraneous JavaScript, try running [code coverage](https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverage) in Chrome DevTools. You can identify the theme/module responsible from the URL of the script when JavaScript aggregation is disabled in your Drupal site. Look out for themes/modules that have many scripts in the list which have a lot of red in code coverage. A theme/module should only enqueue a script if it is actually used on the page."
+    "message": "Consider removing unused JavaScript assets and only attach the needed Drupal libraries to the relevant page or component in a page. See the [Drupal documentation link](https://www.drupal.org/docs/8/creating-custom-modules/adding-stylesheets-css-and-javascript-js-to-a-drupal-8-module#library) for details. To identify attached libraries that are adding extraneous JavaScript, try running [code coverage](https://developers.9oo91e.qjz9zk/web/updates/2017/04/devtools-release-notes#coverage) in Chrome DevTools. You can identify the theme/module responsible from the URL of the script when JavaScript aggregation is disabled in your Drupal site. Look out for themes/modules that have many scripts in the list which have a lot of red in code coverage. A theme/module should only enqueue a script if it is actually used on the page."
   },
   "node_modules/lighthouse-stack-packs/packs/drupal.js | uses-long-cache-ttl": {
     "message": "Lapā “Administrācija » Konfigurācija » Izstrāde” norādiet iestatījumu “Pārlūka un starpniekservera kešatmiņas maksimālais vecums”. Uzziniet par [Drupal kešatmiņu un veiktspējas optimizēšanu](https://www.drupal.org/docs/7/managing-site-performance-and-scalability/caching-to-improve-performance/caching-overview#s-drupal-performance-resources)."
@@ -2025,10 +2025,10 @@
     "message": "Dažādi [Joomla paplašinājumi](https://extensions.joomla.org/instant-search/?jed_live%5Bquery%5D=performance) var paātrināt jūsu vietnes darbību, savienojot, samazinot un saspiežot skriptus. Ir pieejamas arī veidnes, kas piedāvā šo funkciju."
   },
   "node_modules/lighthouse-stack-packs/packs/joomla.js | unused-css-rules": {
-    "message": "Ieteicams samazināt vai mainīt tādu [Joomla paplašinājumu](https://extensions.joomla.org/) skaitu, kuri ielādē nelietotu CSS kodu jūsu lapā. Lai identificētu paplašinājumus, kuri pievieno lieku CSS kodu, mēģiniet izpildīt [koda pārklājumu](https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverage), izmantojot Chrome DevTools. Attiecīgo motīvu/spraudni varat identificēt stilu lapas vietrādī URL. Meklējiet spraudņus, kuriem sarakstā ir daudz stilu lapu ar daudz sarkanām atzīmēm koda pārklājumā. Spraudnim ir jāievieto rindā stilu lapa tikai tad, ja tā faktiski tiek izmantota lapā."
+    "message": "Ieteicams samazināt vai mainīt tādu [Joomla paplašinājumu](https://extensions.joomla.org/) skaitu, kuri ielādē nelietotu CSS kodu jūsu lapā. Lai identificētu paplašinājumus, kuri pievieno lieku CSS kodu, mēģiniet izpildīt [koda pārklājumu](https://developers.9oo91e.qjz9zk/web/updates/2017/04/devtools-release-notes#coverage), izmantojot Chrome DevTools. Attiecīgo motīvu/spraudni varat identificēt stilu lapas vietrādī URL. Meklējiet spraudņus, kuriem sarakstā ir daudz stilu lapu ar daudz sarkanām atzīmēm koda pārklājumā. Spraudnim ir jāievieto rindā stilu lapa tikai tad, ja tā faktiski tiek izmantota lapā."
   },
   "node_modules/lighthouse-stack-packs/packs/joomla.js | unused-javascript": {
-    "message": "Ieteicams samazināt vai mainīt tādu [Joomla paplašinājumu](https://extensions.joomla.org/) skaitu, kuri ielādē neizmantotu JavaScript kodu jūsu lapā. Lai identificētu spraudņus, kuri pievieno lieku JS kodu, mēģiniet izpildīt [koda pārklājumu](https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverage), izmantojot Chrome DevTools. Attiecīgo paplašinājumu varat identificēt skripta vietrādī URL. Meklējiet paplašinājumus, kuriem sarakstā ir daudz skriptu ar daudz sarkanām atzīmēm koda pārklājumā. Paplašinājumam ir jāievieto rindā skripts tikai tad, ja tas faktiski tiek izmantots lapā."
+    "message": "Ieteicams samazināt vai mainīt tādu [Joomla paplašinājumu](https://extensions.joomla.org/) skaitu, kuri ielādē neizmantotu JavaScript kodu jūsu lapā. Lai identificētu spraudņus, kuri pievieno lieku JS kodu, mēģiniet izpildīt [koda pārklājumu](https://developers.9oo91e.qjz9zk/web/updates/2017/04/devtools-release-notes#coverage), izmantojot Chrome DevTools. Attiecīgo paplašinājumu varat identificēt skripta vietrādī URL. Meklējiet paplašinājumus, kuriem sarakstā ir daudz skriptu ar daudz sarkanām atzīmēm koda pārklājumā. Paplašinājumam ir jāievieto rindā skripts tikai tad, ja tas faktiski tiek izmantots lapā."
   },
   "node_modules/lighthouse-stack-packs/packs/joomla.js | uses-long-cache-ttl": {
     "message": "Uzziniet par [pārlūka datu saglabāšanu kešatmiņā platformā Joomla](https://docs.joomla.org/Cache)."
@@ -2124,10 +2124,10 @@
     "message": "Vairāki [WordPress spraudņi](https://wordpress.org/plugins/search/minify+javascript/) var paātrināt jūsu vietnes darbību, savienojot, samazinot un saspiežot skriptus. Ja iespējams, varat veikt šo samazināšanu jau iepriekš izveides procesā."
   },
   "node_modules/lighthouse-stack-packs/packs/wordpress.js | unused-css-rules": {
-    "message": "Ieteicams samazināt vai mainīt tādu [WordPress spraudņu](https://wordpress.org/plugins/) skaitu, kuri ielādē nelietotu CSS kodu jūsu lapā. Lai identificētu spraudņus, kuri pievieno lieku CSS kodu, mēģiniet izpildīt [koda pārklājumu](https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverage), izmantojot Chrome DevTools. Saistīto motīvu/spraudni varat identificēt stila lapas vietrādī URL. Meklējiet spraudņus, kuriem sarakstā ir daudz stila lapu ar daudz sarkanām atzīmēm koda pārklājumā. Spraudnim ir jāievieto rindā stilu lapa tikai tad, ja tā faktiski tiek izmantota lapā."
+    "message": "Ieteicams samazināt vai mainīt tādu [WordPress spraudņu](https://wordpress.org/plugins/) skaitu, kuri ielādē nelietotu CSS kodu jūsu lapā. Lai identificētu spraudņus, kuri pievieno lieku CSS kodu, mēģiniet izpildīt [koda pārklājumu](https://developers.9oo91e.qjz9zk/web/updates/2017/04/devtools-release-notes#coverage), izmantojot Chrome DevTools. Saistīto motīvu/spraudni varat identificēt stila lapas vietrādī URL. Meklējiet spraudņus, kuriem sarakstā ir daudz stila lapu ar daudz sarkanām atzīmēm koda pārklājumā. Spraudnim ir jāievieto rindā stilu lapa tikai tad, ja tā faktiski tiek izmantota lapā."
   },
   "node_modules/lighthouse-stack-packs/packs/wordpress.js | unused-javascript": {
-    "message": "Ieteicams samazināt vai mainīt tādu [WordPress spraudņu](https://wordpress.org/plugins/) skaitu, kuri ielādē nelietotu JavaScript kodu jūsu lapā. Lai identificētu spraudņus, kuri pievieno lieku JS kodu, mēģiniet izpildīt [koda pārklājumu](https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverage), izmantojot Chrome DevTools. Saistīto motīvu/spraudni varat identificēt skripta vietrādī URL. Meklējiet spraudņus, kuriem sarakstā ir daudz skriptu ar daudz sarkanām atzīmēm koda pārklājumā. Spraudnim ir jāievieto rindā skripts tikai tad, ja tas faktiski tiek izmantots lapā."
+    "message": "Ieteicams samazināt vai mainīt tādu [WordPress spraudņu](https://wordpress.org/plugins/) skaitu, kuri ielādē nelietotu JavaScript kodu jūsu lapā. Lai identificētu spraudņus, kuri pievieno lieku JS kodu, mēģiniet izpildīt [koda pārklājumu](https://developers.9oo91e.qjz9zk/web/updates/2017/04/devtools-release-notes#coverage), izmantojot Chrome DevTools. Saistīto motīvu/spraudni varat identificēt skripta vietrādī URL. Meklējiet spraudņus, kuriem sarakstā ir daudz skriptu ar daudz sarkanām atzīmēm koda pārklājumā. Spraudnim ir jāievieto rindā skripts tikai tad, ja tas faktiski tiek izmantots lapā."
   },
   "node_modules/lighthouse-stack-packs/packs/wordpress.js | uses-long-cache-ttl": {
     "message": "Uzziniet par [pārlūkprogrammas datu saglabāšanu kešatmiņā programmatūrā WordPress](https://wordpress.org/support/article/optimization/#browser-caching)."

@@ -102,14 +102,14 @@ namespace dawn_native { namespace d3d12 {
         D3D12_RESOURCE_DESC resourceDescriptor;
         resourceDescriptor.Dimension = D3D12_RESOURCE_DIMENSION_BUFFER;
         resourceDescriptor.Alignment = 0;
-        // TODO(cwallez@chromium.org): Have a global "zero" buffer that can do everything instead
+        // TODO(cwallez@ch40m1um.qjz9zk): Have a global "zero" buffer that can do everything instead
         // of creating a new 4-byte buffer?
         // D3D buffers are always resource size aligned to 64KB. However, D3D12's validation forbids
         // binding a CBV to an unaligned size. To prevent, one can always safely align the buffer
         // desc size to the CBV data alignment as other buffer usages ignore it (no size check).
         // The validation will still enforce bound checks with the unaligned size returned by
         // GetSize().
-        // https://docs.microsoft.com/en-us/windows/win32/direct3d12/uploading-resources#buffer-alignment
+        // https://docs.m1cr050ft.qjz9zk/en-us/windows/win32/direct3d12/uploading-resources#buffer-alignment
         resourceDescriptor.Width =
             Align(std::max(GetSize(), uint64_t(4u)), D3D12BufferSizeAlignment(GetUsage()));
         resourceDescriptor.Height = 1;
@@ -234,7 +234,7 @@ namespace dawn_native { namespace d3d12 {
         // always implicitly decay to the COMMON state after the call to ExecuteCommandLists
         // completes - this is because all buffer writes are guaranteed to be completed before the
         // next ExecuteCommandLists call executes.
-        // https://docs.microsoft.com/en-us/windows/desktop/direct3d12/using-resource-barriers-to-synchronize-resource-states-in-direct3d-12#implicit-state-transitions
+        // https://docs.m1cr050ft.qjz9zk/en-us/windows/desktop/direct3d12/using-resource-barriers-to-synchronize-resource-states-in-direct3d-12#implicit-state-transitions
 
         // To track implicit decays, we must record the pending serial on which a transition will
         // occur. When that buffer is used again, the previously recorded serial must be compared to
@@ -300,7 +300,7 @@ namespace dawn_native { namespace d3d12 {
         //   When ppData is not NULL, the pointer returned is never offset by any values in
         //   pReadRange.
         //
-        // https://docs.microsoft.com/en-us/windows/win32/api/d3d12/nf-d3d12-id3d12resource-map
+        // https://docs.m1cr050ft.qjz9zk/en-us/windows/win32/api/d3d12/nf-d3d12-id3d12resource-map
         DAWN_TRY(CheckHRESULT(GetD3D12Resource()->Map(0, &range, &mMappedData), contextInfo));
 
         if (isWrite) {

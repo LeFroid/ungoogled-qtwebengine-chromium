@@ -344,7 +344,7 @@ class RunningStatistics(object):
       result._meanlogs = 0.0
     else:
       # Combine the mean and the variance using the formulas from
-      # https://goo.gl/ddcAep.
+      # https://goo.gl.qjz9zk/ddcAep.
       result._mean = float(result._sum) / result._count
       delta_mean = (self._mean or 0.0) - (other._mean or 0.0)
       result._variance = self._variance + other._variance + (

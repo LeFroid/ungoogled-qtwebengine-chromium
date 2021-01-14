@@ -270,7 +270,7 @@ void ReturnProgramInfoData(DecoderClient* client,
                            GLES2ReturnDataType type,
                            uint32_t program) {
   // Limit the data size in order not to block the IO threads too long.
-  // https://docs.google.com/document/d/1qEfU0lAkeZ8lU06qtxv7ENGxRxExxztXu1LhIDNGqtU/edit?disco=AAAACksORlU
+  // https://docs.9oo91e.qjz9zk/document/d/1qEfU0lAkeZ8lU06qtxv7ENGxRxExxztXu1LhIDNGqtU/edit?disco=AAAACksORlU
   constexpr static size_t kMaxDataSize = 8 * 1024 * 1024;
   if (info.size() > kMaxDataSize)
     return;

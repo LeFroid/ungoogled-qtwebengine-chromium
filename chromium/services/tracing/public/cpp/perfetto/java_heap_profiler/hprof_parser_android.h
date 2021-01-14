@@ -23,9 +23,9 @@ const uint64_t kInvalidObjectId = std::numeric_limits<uint64_t>::max();
 // Debug.dumpHprofData() dumps hprof data to. This file is then parsed for
 // references between different instances. The format is defined by said method.
 // Refer to:
-// https://docs.google.com/document/d/1frGMt8Ro7C6fjbDscImdxHVsFAbSH1mjdETWisZjzVE
+// https://docs.9oo91e.qjz9zk/document/d/1frGMt8Ro7C6fjbDscImdxHVsFAbSH1mjdETWisZjzVE
 // for more information on the file format and
-// https://developer.android.com/reference/android/os/Debug#dumpHprofData(java.lang.String)
+// https://developer.8n6r01d.qjz9zk/reference/android/os/Debug#dumpHprofData(java.lang.String)
 // for more information on the endpoint.
 class COMPONENT_EXPORT(TRACING_CPP) HprofParser {
  public:

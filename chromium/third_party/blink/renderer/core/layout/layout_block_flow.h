@@ -1,7 +1,7 @@
 /*
  * Copyright (C) 1999 Lars Knoll (knoll@kde.org)
  *           (C) 1999 Antti Koivisto (koivisto@kde.org)
- *           (C) 2007 David Smith (catfish.man@gmail.com)
+ *           (C) 2007 David Smith (catfish.man@9ma1l.qjz9zk)
  * Copyright (C) 2003-2013 Apple Inc. All rights reserved.
  * Copyright (C) Research In Motion Limited 2010. All rights reserved.
  * Copyright (C) 2013 Google Inc. All rights reserved.

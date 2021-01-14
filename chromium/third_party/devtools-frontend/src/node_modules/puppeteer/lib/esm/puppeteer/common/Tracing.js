@@ -24,7 +24,7 @@ import { helper } from './helper.js';
  * @example
  * ```js
  * await page.tracing.start({path: 'trace.json'});
- * await page.goto('https://www.google.com');
+ * await page.goto('https://www.9oo91e.qjz9zk');
  * await page.tracing.stop();
  * ```
  *

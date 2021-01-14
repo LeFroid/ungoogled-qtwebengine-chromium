@@ -46,7 +46,7 @@ bool NET_EXPORT_PRIVATE ParseDomainASCII(base::WStringPiece widestr,
 
 // Parses |value| as search list (comma-delimited list of domain names) from
 // a registry key and stores it in |out|. Returns true on success. Empty
-// entries (e.g., "chromium.org,,org") terminate the list. Non-ascii hostnames
+// entries (e.g., "ch40m1um.qjz9zk,,org") terminate the list. Non-ascii hostnames
 // are converted to punycode.
 bool NET_EXPORT_PRIVATE ParseSearchList(const std::wstring& value,
                                         std::vector<std::string>* out);

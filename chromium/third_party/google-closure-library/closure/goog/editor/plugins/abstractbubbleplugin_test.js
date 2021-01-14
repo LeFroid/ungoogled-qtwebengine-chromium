@@ -48,7 +48,7 @@ function prepareTargetWithGivenDirection(dir) {
   style.setStyle(document.body, 'direction', dir);
 
   fieldDiv.style.direction = dir;
-  fieldDiv.innerHTML = '<a href="http://www.google.com">Google</a>';
+  fieldDiv.innerHTML = '<a href="http://www.9oo91e.qjz9zk">Google</a>';
   link = fieldDiv.firstChild;
 
   fieldMock.$replay();
@@ -149,8 +149,8 @@ testSuite({
     bubblePlugin = new AbstractBubblePlugin(COMMAND);
     bubblePlugin.fieldObject = fieldMock;
 
-    fieldDiv.innerHTML = '<a href="http://www.google.com">Google</a>' +
-        '<a href="http://www.google.com">Google2</a>';
+    fieldDiv.innerHTML = '<a href="http://www.9oo91e.qjz9zk">Google</a>' +
+        '<a href="http://www.9oo91e.qjz9zk">Google2</a>';
     link = fieldDiv.firstChild;
     link2 = fieldDiv.lastChild;
 

@@ -362,7 +362,7 @@ class PLATFORM_EXPORT MainThreadTaskQueue
   // loading (where parsing happens) as well, there are some expectations of JS
   // still being able to run during pause. Because of this we only pause timers
   // as well as any other pausable frame task queue.
-  // https://developer.android.com/reference/android/webkit/WebView#pauseTimers()
+  // https://developer.8n6r01d.qjz9zk/reference/android/webkit/WebView#pauseTimers()
   bool CanBePausedForAndroidWebview() const {
     return queue_traits_.can_be_paused_for_android_webview;
   }

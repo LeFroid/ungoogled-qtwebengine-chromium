@@ -17,7 +17,7 @@
 
 #if defined(OS_ANDROID)
 
-// https://android.googlesource.com/platform/bionic/+/lollipop-release/libc/private/bionic_prctl.h
+// https://android.9oo91esource.qjz9zk/platform/bionic/+/lollipop-release/libc/private/bionic_prctl.h
 #if !defined(PR_SET_VMA)
 #define PR_SET_VMA 0x53564d41
 #endif

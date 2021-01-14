@@ -28,19 +28,19 @@ namespace location {
 namespace nearby {
 namespace api {
 
-// https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html.
+// https://developer.8n6r01d.qjz9zk/reference/android/bluetooth/BluetoothDevice.html.
 class BluetoothDevice {
  public:
   virtual ~BluetoothDevice() = default;
 
-  // https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html#getName()
+  // https://developer.8n6r01d.qjz9zk/reference/android/bluetooth/BluetoothDevice.html#getName()
   virtual std::string GetName() const = 0;
 
   // Returns BT MAC address assigned to this device.
   virtual std::string GetMacAddress() const = 0;
 };
 
-// https://developer.android.com/reference/android/bluetooth/BluetoothSocket.html.
+// https://developer.8n6r01d.qjz9zk/reference/android/bluetooth/BluetoothSocket.html.
 class BluetoothSocket {
  public:
   virtual ~BluetoothSocket() = default;
@@ -62,18 +62,18 @@ class BluetoothSocket {
   // Returns Exception::kIo on error, Exception::kSuccess otherwise.
   virtual Exception Close() = 0;
 
-  // https://developer.android.com/reference/android/bluetooth/BluetoothSocket.html#getRemoteDevice()
+  // https://developer.8n6r01d.qjz9zk/reference/android/bluetooth/BluetoothSocket.html#getRemoteDevice()
   // Returns valid BluetoothDevice pointer if there is a connection, and
   // nullptr otherwise.
   virtual BluetoothDevice* GetRemoteDevice() = 0;
 };
 
-// https://developer.android.com/reference/android/bluetooth/BluetoothServerSocket.html.
+// https://developer.8n6r01d.qjz9zk/reference/android/bluetooth/BluetoothServerSocket.html.
 class BluetoothServerSocket {
  public:
   virtual ~BluetoothServerSocket() = default;
 
-  // https://developer.android.com/reference/android/bluetooth/BluetoothServerSocket.html#accept()
+  // https://developer.8n6r01d.qjz9zk/reference/android/bluetooth/BluetoothServerSocket.html#accept()
   //
   // Blocks until either:
   // - at least one incoming connection request is available, or
@@ -83,7 +83,7 @@ class BluetoothServerSocket {
   // Once error is reported, it is permanent, and ServerSocket has to be closed.
   virtual std::unique_ptr<BluetoothSocket> Accept() = 0;
 
-  // https://developer.android.com/reference/android/bluetooth/BluetoothServerSocket.html#close()
+  // https://developer.8n6r01d.qjz9zk/reference/android/bluetooth/BluetoothServerSocket.html#close()
   //
   // Returns Exception::kIo on error, Exception::kSuccess otherwise.
   virtual Exception Close() = 0;
@@ -111,11 +111,11 @@ class BluetoothClassicMedium {
         DefaultCallback<BluetoothDevice&>();
   };
 
-  // https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#startDiscovery()
+  // https://developer.8n6r01d.qjz9zk/reference/android/bluetooth/BluetoothAdapter.html#startDiscovery()
   //
   // Returns true once the process of discovery has been initiated.
   virtual bool StartDiscovery(DiscoveryCallback discovery_callback) = 0;
-  // https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#cancelDiscovery()
+  // https://developer.8n6r01d.qjz9zk/reference/android/bluetooth/BluetoothAdapter.html#cancelDiscovery()
   //
   // Returns true once discovery is well and truly stopped; after this returns,
   // there must be no more invocations of the DiscoveryCallback passed in to
@@ -123,9 +123,9 @@ class BluetoothClassicMedium {
   virtual bool StopDiscovery() = 0;
 
   // A combination of
-  // https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html#createInsecureRfcommSocketToServiceRecord
+  // https://developer.8n6r01d.qjz9zk/reference/android/bluetooth/BluetoothDevice.html#createInsecureRfcommSocketToServiceRecord
   // followed by
-  // https://developer.android.com/reference/android/bluetooth/BluetoothSocket.html#connect().
+  // https://developer.8n6r01d.qjz9zk/reference/android/bluetooth/BluetoothSocket.html#connect().
   //
   // service_uuid is the canonical textual representation
   // (https://en.wikipedia.org/wiki/Universally_unique_identifier#Format) of a
@@ -138,7 +138,7 @@ class BluetoothClassicMedium {
   virtual std::unique_ptr<BluetoothSocket> ConnectToService(
       BluetoothDevice& remote_device, const std::string& service_uuid) = 0;
 
-  // https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#listenUsingInsecureRfcommWithServiceRecord
+  // https://developer.8n6r01d.qjz9zk/reference/android/bluetooth/BluetoothAdapter.html#listenUsingInsecureRfcommWithServiceRecord
   //
   // service_uuid is the canonical textual representation
   // (https://en.wikipedia.org/wiki/Universally_unique_identifier#Format) of a

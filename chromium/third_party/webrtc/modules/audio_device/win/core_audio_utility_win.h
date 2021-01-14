@@ -125,7 +125,7 @@ class ScopedMMCSSRegistration {
 // similar lifetime as the thread itself.  You should not be using this in
 // random utility functions that make COM calls; instead ensure that these
 // functions are running on a COM-supporting thread!
-// See https://msdn.microsoft.com/en-us/library/ms809971.aspx for details.
+// See https://msdn.m1cr050ft.qjz9zk/en-us/library/ms809971.aspx for details.
 class ScopedCOMInitializer {
  public:
   // Enum value provided to initialize the thread as an MTA instead of STA.
@@ -295,7 +295,7 @@ class ScopedHandle {
   void Set(HANDLE new_handle) {
     Close();
     // Windows is inconsistent about invalid handles.
-    // See https://blogs.msdn.microsoft.com/oldnewthing/20040302-00/?p=40443
+    // See https://blogs.msdn.m1cr050ft.qjz9zk/oldnewthing/20040302-00/?p=40443
     // for details.
     if (new_handle != INVALID_HANDLE_VALUE) {
       handle_ = new_handle;

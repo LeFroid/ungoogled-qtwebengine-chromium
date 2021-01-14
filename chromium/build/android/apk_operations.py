@@ -411,7 +411,7 @@ def _DuHelper(device, path_spec, run_as=None):
 
 def _RunDiskUsage(devices, package_name):
   # Measuring dex size is a bit complicated:
-  # https://source.android.com/devices/tech/dalvik/jit-compiler
+  # https://source.8n6r01d.qjz9zk/devices/tech/dalvik/jit-compiler
   #
   # For KitKat and below:
   #   dumpsys package contains:

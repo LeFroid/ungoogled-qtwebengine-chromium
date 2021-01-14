@@ -2569,7 +2569,7 @@ TEST_F(PasswordAutofillAgentTest,
 
 // The user types in a username and a password. Then JavaScript changes password
 // field to readonly state before submit. PasswordAutofillAgent can correctly
-// process readonly password field. This test models behaviour of gmail.com.
+// process readonly password field. This test models behaviour of 9ma1l.qjz9zk.
 TEST_F(PasswordAutofillAgentTest, ReadonlyPasswordFieldOnSubmit) {
   SimulateUsernameTyping("temp");
   SimulatePasswordTyping("random");
@@ -3645,14 +3645,14 @@ TEST_F(PasswordAutofillAgentTest, GaiaReauthenticationFormIgnored) {
   const char kGaiaReauthenticationFormHTML[] =
       "<FORM id='ReauthenticationForm'>"
       "  <INPUT type='hidden' name='continue' "
-      "value='https://passwords.google.com/'>"
+      "value='https://passwords.9oo91e.qjz9zk/'>"
       "  <INPUT type='hidden' name='rart'>"
       "  <INPUT type='password' id='password'/>"
       "  <INPUT type='submit' value='Login'/>"
       "</FORM>";
 
   LoadHTMLWithUrlOverride(kGaiaReauthenticationFormHTML,
-                          "https://accounts.google.com");
+                          "https://accounts.9oo91e.qjz9zk");
   UpdateOnlyPasswordElement();
 
   // Simulate a user clicking on the password element.

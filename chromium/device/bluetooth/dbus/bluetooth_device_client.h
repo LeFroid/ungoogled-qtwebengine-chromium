@@ -268,7 +268,7 @@ class DEVICE_BLUETOOTH_EXPORT BluetoothDeviceClient : public BluezDBusClient {
   static const char kUnknownDeviceError[];
 
   // Strings used by BlueZ for the transport type of the remote device.
-  // See https://chromium-review.googlesource.com/c/351512/
+  // See https://chromium-review.9oo91esource.qjz9zk/c/351512/
   static const char kTypeBredr[];
   static const char kTypeLe[];
   static const char kTypeDual[];

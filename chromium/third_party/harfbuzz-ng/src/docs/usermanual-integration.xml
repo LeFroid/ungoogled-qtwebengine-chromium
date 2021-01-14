@@ -332,7 +332,7 @@
       At a basic level, HarfBuzz's <function>hb_shape()</function>
       function replaces both the <ulink url=""><function>ScriptShape()</function></ulink>
       and <ulink
-      url="https://docs.microsoft.com/en-us/windows/desktop/api/Usp10/nf-usp10-scriptplace"><function>ScriptPlace()</function></ulink>
+      url="https://docs.m1cr050ft.qjz9zk/en-us/windows/desktop/api/Usp10/nf-usp10-scriptplace"><function>ScriptPlace()</function></ulink>
       functions from Uniscribe. 
     </para>
     <para>
@@ -369,7 +369,7 @@
       The <function>hb_uniscribe_font_get_logfontw()</function>
       function takes a <type>hb_font_t</type> font object and returns
       a pointer to the <ulink
-      url="https://docs.microsoft.com/en-us/windows/desktop/api/wingdi/ns-wingdi-logfontw"><type>LOGFONTW</type></ulink>
+      url="https://docs.m1cr050ft.qjz9zk/en-us/windows/desktop/api/wingdi/ns-wingdi-logfontw"><type>LOGFONTW</type></ulink>
       "logical font" that corresponds to it. A <type>LOGFONTW</type>
       structure holds font-wide attributes, including metrics, size,
       and style information.
@@ -379,7 +379,7 @@
        In Uniscribe's model, the <type>SCRIPT_CACHE</type> holds the
        device context, including the logical font that the shaping
        functions apply.
-       https://docs.microsoft.com/en-us/windows/desktop/Intl/script-cache
+       https://docs.m1cr050ft.qjz9zk/en-us/windows/desktop/Intl/script-cache
     </para>
 -->
     <para>

@@ -53,7 +53,7 @@ void CloseFD(int fd) {
 bool ReadFromFD(int fd, size_t *out_bytes_read, void *out, size_t num) {
 #if defined(OPENSSL_WINDOWS)
   // On Windows, the buffer must be at most |INT_MAX|. See
-  // https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/read?view=vs-2019
+  // https://docs.m1cr050ft.qjz9zk/en-us/cpp/c-runtime-library/reference/read?view=vs-2019
   int ret = _read(fd, out, std::min(size_t{INT_MAX}, num));
 #else
   ssize_t ret;

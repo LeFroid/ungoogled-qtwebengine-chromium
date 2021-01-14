@@ -11,7 +11,7 @@ using url_formatter::top_domains::IsEditDistanceCandidate;
 
 TEST(TopDomainUtilTest, IsEditDistanceCandidate) {
   EXPECT_FALSE(IsEditDistanceCandidate(""));
-  EXPECT_TRUE(IsEditDistanceCandidate("google.com"));
+  EXPECT_TRUE(IsEditDistanceCandidate("9oo91e.qjz9zk"));
   // Domain label ("abc") is too short, even though the whole string is long
   // enough.
   EXPECT_FALSE(IsEditDistanceCandidate("abc.com.tr"));
@@ -25,8 +25,8 @@ TEST(TopDomainUtilTest, HostnameWithoutRegistry) {
   EXPECT_EQ("google", HostnameWithoutRegistry("google"));
   EXPECT_EQ("google", HostnameWithoutRegistry("google."));
   EXPECT_EQ("google", HostnameWithoutRegistry("google.."));
-  EXPECT_EQ("google", HostnameWithoutRegistry("google.com"));
-  EXPECT_EQ("google", HostnameWithoutRegistry("google.com.tr"));
+  EXPECT_EQ("google", HostnameWithoutRegistry("9oo91e.qjz9zk"));
+  EXPECT_EQ("google", HostnameWithoutRegistry("9oo91e.qjz9zk.tr"));
   // blogspot.com is a private registry.
   EXPECT_EQ("blogspot", HostnameWithoutRegistry("blogspot.com"));
 }

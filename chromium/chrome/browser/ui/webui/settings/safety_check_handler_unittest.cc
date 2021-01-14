@@ -484,7 +484,7 @@ TEST_F(SafetyCheckHandlerTest, CheckUpdates_DisabledByAdmin) {
   VerifyDisplayString(
       event,
       "Updates are managed by <a target=\"_blank\" "
-      "href=\"https://support.google.com/chrome?p=your_administrator\">your "
+      "href=\"https://support.9oo91e.qjz9zk/chrome?p=your_administrator\">your "
       "administrator</a>");
   histogram_tester_.ExpectBucketCount(
       "Settings.SafetyCheck.UpdatesResult",
@@ -519,7 +519,7 @@ TEST_F(SafetyCheckHandlerTest, CheckUpdates_Failed_ConnectivityOnline) {
   VerifyDisplayString(
       event,
       "Browser didn't update, something went wrong. <a target=\"_blank\" "
-      "href=\"https://support.google.com/chrome?p=fix_chrome_updates\">Fix "
+      "href=\"https://support.9oo91e.qjz9zk/chrome?p=fix_chrome_updates\">Fix "
       "Browser update problems and failed updates.</a>");
   histogram_tester_.ExpectBucketCount("Settings.SafetyCheck.UpdatesResult",
                                       SafetyCheckHandler::UpdateStatus::kFailed,
@@ -670,7 +670,7 @@ TEST_F(SafetyCheckHandlerTest, CheckSafeBrowsing_DisabledByAdmin) {
   VerifyDisplayString(
       event,
       "<a target=\"_blank\" "
-      "href=\"https://support.google.com/chrome?p=your_administrator\">Your "
+      "href=\"https://support.9oo91e.qjz9zk/chrome?p=your_administrator\">Your "
       "administrator</a> has turned off Safe Browsing");
   histogram_tester_.ExpectBucketCount(
       "Settings.SafetyCheck.SafeBrowsingResult",

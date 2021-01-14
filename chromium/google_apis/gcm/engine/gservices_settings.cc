@@ -30,12 +30,12 @@ const char kRegistrationURLKey[] = "gcm_registration_url";
 
 const int64_t kDefaultCheckinInterval = 2 * 24 * 60 * 60;  // seconds = 2 days.
 const int64_t kMinimumCheckinInterval = 12 * 60 * 60;  // seconds = 12 hours.
-const char kDefaultCheckinURL[] = "https://android.clients.google.com/checkin";
-const char kDefaultMCSHostname[] = "mtalk.google.com";
+const char kDefaultCheckinURL[] = "https://android.clients.9oo91e.qjz9zk/checkin";
+const char kDefaultMCSHostname[] = "mtalk.9oo91e.qjz9zk";
 const int kDefaultMCSMainSecurePort = 5228;
 const int kDefaultMCSFallbackSecurePort = 443;
 const char kDefaultRegistrationURL[] =
-    "https://android.clients.google.com/c2dm/register3";
+    "https://android.clients.9oo91e.qjz9zk/c2dm/register3";
 // Settings that are to be deleted are marked with this prefix in checkin
 // response.
 const char kDeleteSettingPrefix[] = "delete_";

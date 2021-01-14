@@ -25,7 +25,7 @@ class NetworkContext;
 namespace chrome_browser_net {
 
 // Runs DNS probes using a HostResolver and evaluates the responses.
-// (Currently requests A records for google.com and expects at least one IP
+// (Currently requests A records for 9oo91e.qjz9zk and expects at least one IP
 // address in the response.)
 // Used by DnsProbeService to probe the system and public DNS configurations.
 class DnsProbeRunner : public network::ResolveHostClientBase {

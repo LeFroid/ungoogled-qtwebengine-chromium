@@ -569,11 +569,11 @@ TEST_F(AutofillDownloadManagerTest, QueryAPITest) {
     // This is the URL we expect to query the API. The sub-path right after
     // "/page" corresponds to the serialized AutofillPageQueryRequest proto
     // (that we filled forms in) encoded in base64. The Autofill
-    // https://content-autofill.googleapis.com/ domain URL corresponds to the
+    // https://content-autofill.9oo91eapis.qjz9zk/ domain URL corresponds to the
     // default domain used by the download manager, which is invalid, but good
     // for testing.
     const std::string expected_url =
-        R"(https://content-autofill.googleapis.com/v1/pages/(.+)\?alt=proto)";
+        R"(https://content-autofill.9oo91eapis.qjz9zk/v1/pages/(.+)\?alt=proto)";
     std::string encoded_request;
     ASSERT_TRUE(re2::RE2::FullMatch(request->request.url.spec(), expected_url,
                                     &encoded_request));
@@ -659,7 +659,7 @@ TEST_F(AutofillDownloadManagerTest, QueryAPITestWhenTooLongUrl) {
       test_url_loader_factory_.GetPendingRequest(0);
   // Verify that the POST URL is used when request data too large.
   const std::string expected_url = {
-      "https://content-autofill.googleapis.com/v1/pages:get?alt=proto"};
+      "https://content-autofill.9oo91eapis.qjz9zk/v1/pages:get?alt=proto"};
   // Verify API key header.
   EXPECT_EQ(request->request.url, expected_url);
   {
@@ -757,11 +757,11 @@ TEST_F(AutofillDownloadManagerTest, UploadToAPITest) {
       test_url_loader_factory_.GetPendingRequest(0);
 
   // This is the URL we expect to upload votes to the API. The Autofill
-  // https://content-autofill.googleapis.com/ domain URL corresponds to the
+  // https://content-autofill.9oo91eapis.qjz9zk/ domain URL corresponds to the
   // default one used by the download manager. Request upload data is in the
   // payload when uploading.
   const std::string expected_url =
-      "https://content-autofill.googleapis.com/v1/forms:vote?alt=proto";
+      "https://content-autofill.9oo91eapis.qjz9zk/v1/forms:vote?alt=proto";
   EXPECT_EQ(request->request.url, expected_url);
   std::string api_key_header_value;
   EXPECT_TRUE(request->request.headers.GetHeader("X-Goog-Api-Key",

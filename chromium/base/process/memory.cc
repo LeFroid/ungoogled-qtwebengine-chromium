@@ -29,7 +29,7 @@ NOINLINE void OnNoMemoryInternal(size_t size) {
 #if defined(OS_WIN)
   // Kill the process. This is important for security since most of code
   // does not check the result of memory allocation.
-  // https://msdn.microsoft.com/en-us/library/het71c37.aspx
+  // https://msdn.m1cr050ft.qjz9zk/en-us/library/het71c37.aspx
   // Pass the size of the failed request in an exception argument.
   ULONG_PTR exception_args[] = {size};
   ::RaiseException(base::win::kOomExceptionCode, EXCEPTION_NONCONTINUABLE,

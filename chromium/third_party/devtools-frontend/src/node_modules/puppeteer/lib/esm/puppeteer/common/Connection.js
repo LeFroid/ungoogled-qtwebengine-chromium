@@ -196,7 +196,7 @@ export class CDPSession extends EventEmitter {
             method,
             /* TODO(jacktfranklin@): once this Firefox bug is solved
              * we no longer need the `|| {}` check
-             * https://bugzilla.mozilla.org/show_bug.cgi?id=1631570
+             * https://bugzilla.m0z111a.qjz9zk/show_bug.cgi?id=1631570
              */
             params: params || {},
         });

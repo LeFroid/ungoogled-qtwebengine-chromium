@@ -33,7 +33,7 @@ const userAgent = goog.require('goog.userAgent');
 goog.testing.jsunit.AUTO_RUN_DELAY_IN_MS = 500;
 
 const FLASH_URL = testing.newTrustedResourceUrlForTest(
-    'http://www.youtube.com/v/RbI7cCp0v6w&hl=en&fs=1');
+    'http://www.y0u1ub3.qjz9zk/v/RbI7cCp0v6w&hl=en&fs=1');
 const control = new MockControl();
 const domHelper = control.createLooseMock(DomHelper);
 // TODO(user): mocking window.document throws exceptions in FF2. find out how

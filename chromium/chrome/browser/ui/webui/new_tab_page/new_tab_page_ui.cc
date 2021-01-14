@@ -200,11 +200,11 @@ content::WebUIDataSource* CreateNewTabPageUiHtmlSource(Profile* profile) {
   source->AddString("modulesShoppingTasksInfo1",
                     l10n_util::GetStringFUTF16(
                         IDS_NTP_MODULES_SHOPPING_TASKS_INFO_1,
-                        base::UTF8ToUTF16("https://myactivity.google.com/")));
+                        base::UTF8ToUTF16("https://myactivity.9oo91e.qjz9zk/")));
   source->AddString("modulesShoppingTasksInfo2",
                     l10n_util::GetStringFUTF16(
                         IDS_NTP_MODULES_SHOPPING_TASKS_INFO_2,
-                        base::UTF8ToUTF16("https://policies.google.com/")));
+                        base::UTF8ToUTF16("https://policies.9oo91e.qjz9zk/")));
 
   // Register images that are purposefully not inlined in the HTML and instead
   // are set in Javascript.

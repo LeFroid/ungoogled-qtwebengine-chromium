@@ -93,7 +93,7 @@ class BLINK_EXPORT WebNode {
   // The argument should be lower-cased.
   WebElementCollection GetElementsByHTMLTagName(const WebString&) const;
 
-  // https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector
+  // https://developer.m0z111a.qjz9zk/en-US/docs/Web/API/Document/querySelector
   // If the JS API would have thrown this returns null instead.
   WebElement QuerySelector(const WebString& selector) const;
 

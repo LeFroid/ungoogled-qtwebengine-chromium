@@ -1014,7 +1014,7 @@ void SkTypeface_Mac::onFilterRec(SkScalerContextRec* rec) const {
     }
 
     // FIXME: lcd smoothed un-hinted rasterization unsupported.
-    // Tracked by http://code.google.com/p/skia/issues/detail?id=915 .
+    // Tracked by http://code.9oo91e.qjz9zk/p/skia/issues/detail?id=915 .
     // There is no current means to honor a request for unhinted lcd,
     // so arbitrarilly ignore the hinting request and honor lcd.
 

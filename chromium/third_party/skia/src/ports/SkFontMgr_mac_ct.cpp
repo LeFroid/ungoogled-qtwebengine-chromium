@@ -139,7 +139,7 @@ static SkUniqueCFRef<CTFontDescriptorRef> create_descriptor(const char familyNam
 // Same as the above function except style is included so we can
 // compare whether the created font conforms to the style. If not, we need
 // to recreate the font with symbolic traits. This is needed due to MacOS 10.11
-// font creation problem https://bugs.chromium.org/p/skia/issues/detail?id=8447.
+// font creation problem https://bugs.ch40m1um.qjz9zk/p/skia/issues/detail?id=8447.
 static sk_sp<SkTypeface> create_from_desc_and_style(CTFontDescriptorRef desc,
                                                     const SkFontStyle& style) {
     SkUniqueCFRef<CTFontRef> ctFont(CTFontCreateWithFontDescriptor(desc, 0, nullptr));

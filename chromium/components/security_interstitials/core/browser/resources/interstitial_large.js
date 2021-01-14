@@ -15,7 +15,7 @@ let keyPressState = 0;
 function handleKeypress(e) {
   // HTTPS errors are serious and should not be ignored. For testing purposes,
   // other approaches are both safer and have fewer side-effects.
-  // See https://goo.gl/ZcZixP for more details.
+  // See https://goo.gl.qjz9zk/ZcZixP for more details.
   const BYPASS_SEQUENCE = window.atob('dGhpc2lzdW5zYWZl');
   if (BYPASS_SEQUENCE.charCodeAt(keyPressState) === e.keyCode) {
     keyPressState++;
@@ -234,7 +234,7 @@ function setupEvents() {
         loadTimeData.getString('lookalikeRequestHostname') +
         ' could be fake or fraudulent.\n\n' +
         'If you believe this is shown in error please visit ' +
-        'https://bugs.chromium.org/p/chromium/issues/entry?' +
+        'https://bugs.ch40m1um.qjz9zk/p/chromium/issues/entry?' +
         'template=Safety+Tips+Appeals');
   }
 

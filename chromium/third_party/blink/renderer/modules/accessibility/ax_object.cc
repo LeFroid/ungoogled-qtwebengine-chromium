@@ -1909,7 +1909,7 @@ bool AXObject::CanSetFocusAttribute() const {
 
   // TODO(accessibility) Focusable: scrollable with the keyboard.
   // Keyboard-focusable scroll containers feature:
-  // https://www.chromestatus.com/feature/5231964663578624
+  // https://www.ch40mestatus.qjz9zk/feature/5231964663578624
   // When adding here, remove similar check from ::NameFromContents().
   // if (RuntimeEnabledFeatures::KeyboardFocusableScrollersEnabled() &&
   //     IsUserScrollable()) {

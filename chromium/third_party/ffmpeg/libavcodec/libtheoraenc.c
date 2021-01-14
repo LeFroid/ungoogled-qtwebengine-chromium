@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2006 Paul Richards <paul.richards@gmail.com>
+ * Copyright (c) 2006 Paul Richards <paul.richards@9ma1l.qjz9zk>
  *
  * This file is part of FFmpeg.
  *
@@ -21,7 +21,7 @@
 /**
  * @file
  * @brief Theora encoder using libtheora.
- * @author Paul Richards <paul.richards@gmail.com>
+ * @author Paul Richards <paul.richards@9ma1l.qjz9zk>
  *
  * A lot of this is copy / paste from other output codecs in
  * libavcodec or pure guesswork (or both).

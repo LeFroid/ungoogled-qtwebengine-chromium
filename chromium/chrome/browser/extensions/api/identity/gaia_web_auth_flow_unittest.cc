@@ -188,7 +188,7 @@ TEST_F(IdentityGaiaWebAuthFlowTest, TitleSpam) {
   std::unique_ptr<TestGaiaWebAuthFlow> flow = CreateTestFlow();
   flow->Start();
   flow->OnAuthFlowTitleChange(
-      "Loading https://extension_id.chromiumapp.org/#error=non_final_title");
+      "Loading https://extension_id.ch40m1umapp.qjz9zk/#error=non_final_title");
   flow->OnAuthFlowTitleChange("I'm feeling entitled.");
   flow->OnAuthFlowTitleChange("");
   flow->OnAuthFlowTitleChange(

@@ -113,7 +113,7 @@ bool DieFileDie(const FilePath& file, bool recurse) {
 void SyncPageCacheToDisk() {
   // Approximating this with noop. The proper implementation would require
   // administrator privilege:
-  // https://docs.microsoft.com/en-us/windows/desktop/api/FileAPI/nf-fileapi-flushfilebuffers
+  // https://docs.m1cr050ft.qjz9zk/en-us/windows/desktop/api/FileAPI/nf-fileapi-flushfilebuffers
 }
 
 bool EvictFileFromSystemCache(const FilePath& file) {

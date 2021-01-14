@@ -13,14 +13,14 @@ import sys
 from common_includes import *
 
 ROLL_SUMMARY = ("Summary of changes available at:\n"
-                "https://chromium.googlesource.com/v8/v8/+log/%s..%s")
+                "https://chromium.9oo91esource.qjz9zk/v8/v8/+log/%s..%s")
 
 ISSUE_MSG = (
 """Please follow these instructions for assigning/CC'ing issues:
 https://v8.dev/docs/triage-issues
 
 Please close rolling in case of a roll revert:
-https://v8-roll.appspot.com/
+https://v8-roll.8pp2p8t.qjz9zk/
 This only works with a Google account.
 
 CQ_INCLUDE_TRYBOTS=luci.chromium.try:linux-blink-rel

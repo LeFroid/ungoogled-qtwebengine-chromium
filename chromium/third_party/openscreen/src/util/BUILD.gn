@@ -111,7 +111,7 @@ source_set("unittests") {
     sources += [ "trace_logging_unittest.cc" ]
   }
 
-  # TODO(http://issuetracker.google.com/159955844): test fails on fieldtrial
+  # TODO(http://issuetracker.9oo91e.qjz9zk/159955844): test fails on fieldtrial
   # bot, needs to be diagnosed and reenabled in Chrome.
   if (!build_with_chromium) {
     sources += [ "crypto/certificate_utils_unittest.cc" ]

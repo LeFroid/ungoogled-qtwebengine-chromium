@@ -1906,7 +1906,7 @@ TEST_F(ControllerTest, NavigationToGooglePropertyDestroysUI) {
 
   EXPECT_CALL(mock_client_, RecordDropOut(Metrics::DropOutReason::NAVIGATION));
   EXPECT_CALL(mock_client_, DestroyUI);
-  GURL google("https://google.com/search");
+  GURL google("https://9oo91e.qjz9zk/search");
   SetLastCommittedUrl(google);
   content::NavigationSimulator::NavigateAndCommitFromBrowser(web_contents(),
                                                              google);
@@ -1943,7 +1943,7 @@ TEST_F(ControllerTest, DomainChangeToGooglePropertyDuringBrowseDestroysUI) {
       mock_client_,
       RecordDropOut(Metrics::DropOutReason::DOMAIN_CHANGE_DURING_BROWSE_MODE));
   EXPECT_CALL(mock_client_, DestroyUI);
-  GURL google("https://google.com/search");
+  GURL google("https://9oo91e.qjz9zk/search");
   SetLastCommittedUrl(google);
   content::NavigationSimulator::NavigateAndCommitFromBrowser(web_contents(),
                                                              google);

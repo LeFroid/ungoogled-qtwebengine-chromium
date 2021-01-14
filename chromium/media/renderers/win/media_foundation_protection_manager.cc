@@ -82,9 +82,9 @@ HRESULT MediaFoundationProtectionManager::BeginEnableContent(
       enabler_activate->ActivateObject(IID_PPV_ARGS(&unknown_object)));
 
   // |enabler_type| can be obtained from IMFContentEnabler
-  // (https://docs.microsoft.com/en-us/windows/win32/api/mfidl/nn-mfidl-imfcontentenabler).
+  // (https://docs.m1cr050ft.qjz9zk/en-us/windows/win32/api/mfidl/nn-mfidl-imfcontentenabler).
   // If not, try IMediaProtectionServiceRequest
-  // (https://docs.microsoft.com/en-us/uwp/api/windows.media.protection.imediaprotectionservicerequest).
+  // (https://docs.m1cr050ft.qjz9zk/en-us/uwp/api/windows.media.protection.imediaprotectionservicerequest).
   GUID enabler_type = GUID_NULL;
   ComPtr<IMFContentEnabler> content_enabler;
   if (SUCCEEDED(unknown_object.As(&content_enabler))) {

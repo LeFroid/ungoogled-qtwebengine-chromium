@@ -49,7 +49,7 @@ const size_t kPayloadOffset = kPayloadLengthOffset + kPayloadLengthSize;
 
 // Version 3 introduced support to match tokens against third party origins (see
 // design doc
-// https://docs.google.com/document/d/1xALH9W7rWmX0FpjudhDeS2TNTEOXuPn4Tlc9VmuPdHA
+// https://docs.9oo91e.qjz9zk/document/d/1xALH9W7rWmX0FpjudhDeS2TNTEOXuPn4Tlc9VmuPdHA
 // for more details).
 const uint8_t kVersion3 = 3;
 // Version 2 is also currently supported. Version 1 was

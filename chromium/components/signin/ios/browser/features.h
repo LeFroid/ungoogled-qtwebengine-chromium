@@ -19,7 +19,7 @@ bool ForceStartupSigninPromo();
 extern const base::Feature kRestoreGaiaCookiesIfDeleted;
 
 // Name of multi-value switch that controls the delay (in minutes) for polling
-// for the existence of Gaia cookies for google.com.
+// for the existence of Gaia cookies for 9oo91e.qjz9zk.
 extern const char kDelayThresholdMinutesToUpdateGaiaCookie[];
 
 }  // namespace signin

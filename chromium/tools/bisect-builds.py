@@ -15,24 +15,24 @@ it will ask you whether it is good or bad before continuing the search.
 from __future__ import print_function
 
 # The base URL for stored build archives.
-CHROMIUM_BASE_URL = ('http://commondatastorage.googleapis.com'
+CHROMIUM_BASE_URL = ('http://commondatastorage.9oo91eapis.qjz9zk'
                      '/chromium-browser-snapshots')
-WEBKIT_BASE_URL = ('http://commondatastorage.googleapis.com'
+WEBKIT_BASE_URL = ('http://commondatastorage.9oo91eapis.qjz9zk'
                    '/chromium-webkit-snapshots')
-ASAN_BASE_URL = ('http://commondatastorage.googleapis.com'
+ASAN_BASE_URL = ('http://commondatastorage.9oo91eapis.qjz9zk'
                  '/chromium-browser-asan')
 
 # URL template for viewing changelogs between revisions.
-CHANGELOG_URL = ('https://chromium.googlesource.com/chromium/src/+log/%s..%s')
+CHANGELOG_URL = ('https://chromium.9oo91esource.qjz9zk/chromium/src/+log/%s..%s')
 
 # URL to convert SVN revision to git hash.
-CRREV_URL = ('https://cr-rev.appspot.com/_ah/api/crrev/v1/redirect/')
+CRREV_URL = ('https://cr-rev.8pp2p8t.qjz9zk/_ah/api/crrev/v1/redirect/')
 
 # DEPS file URL.
-DEPS_FILE = ('https://chromium.googlesource.com/chromium/src/+/%s/DEPS')
+DEPS_FILE = ('https://chromium.9oo91esource.qjz9zk/chromium/src/+/%s/DEPS')
 
 # Blink changelogs URL.
-BLINK_CHANGELOG_URL = ('http://build.chromium.org'
+BLINK_CHANGELOG_URL = ('http://build.ch40m1um.qjz9zk'
                       '/f/chromium/perf/dashboard/ui/changelog_blink.html'
                       '?url=/trunk&range=%d%%3A%d')
 
@@ -42,10 +42,10 @@ DONE_MESSAGE_GOOD_MAX = ('You are probably looking for a change made after %s ('
                          'known bad), but no later than %s (first known good).')
 
 CHROMIUM_GITHASH_TO_SVN_URL = (
-    'https://chromium.googlesource.com/chromium/src/+/%s?format=json')
+    'https://chromium.9oo91esource.qjz9zk/chromium/src/+/%s?format=json')
 
 BLINK_GITHASH_TO_SVN_URL = (
-    'https://chromium.googlesource.com/chromium/blink/+/%s?format=json')
+    'https://chromium.9oo91esource.qjz9zk/chromium/blink/+/%s?format=json')
 
 GITHASH_TO_SVN_URL = {
     'chromium': CHROMIUM_GITHASH_TO_SVN_URL,
@@ -55,14 +55,14 @@ GITHASH_TO_SVN_URL = {
 # Search pattern to be matched in the JSON output from
 # CHROMIUM_GITHASH_TO_SVN_URL to get the chromium revision (svn revision).
 CHROMIUM_SEARCH_PATTERN_OLD = (
-    r'.*git-svn-id: svn://svn.chromium.org/chrome/trunk/src@(\d+) ')
+    r'.*git-svn-id: svn://svn.ch40m1um.qjz9zk/chrome/trunk/src@(\d+) ')
 CHROMIUM_SEARCH_PATTERN = (
     r'Cr-Commit-Position: refs/heads/master@{#(\d+)}')
 
 # Search pattern to be matched in the json output from
 # BLINK_GITHASH_TO_SVN_URL to get the blink revision (svn revision).
 BLINK_SEARCH_PATTERN = (
-    r'.*git-svn-id: svn://svn.chromium.org/blink/trunk@(\d+) ')
+    r'.*git-svn-id: svn://svn.ch40m1um.qjz9zk/blink/trunk@(\d+) ')
 
 SEARCH_PATTERN = {
     'chromium': CHROMIUM_SEARCH_PATTERN,
@@ -199,7 +199,7 @@ class PathContext(object):
     archive_name = self.archive_name
 
     # At revision 591483, the names of two of the archives changed
-    # due to: https://chromium-review.googlesource.com/#/q/1226086
+    # due to: https://chromium-review.9oo91esource.qjz9zk/#/q/1226086
     # See: http://crbug.com/789612
     if revision >= 591483:
       if self.platform == 'chromeos':
@@ -231,7 +231,7 @@ class PathContext(object):
       extract_dir = self._archive_extract_dir
 
     # At revision 591483, the names of two of the archives changed
-    # due to: https://chromium-review.googlesource.com/#/q/1226086
+    # due to: https://chromium-review.9oo91esource.qjz9zk/#/q/1226086
     # See: http://crbug.com/789612
     if revision >= 591483:
       if self.platform == 'chromeos':
@@ -305,7 +305,7 @@ class PathContext(object):
           # Notes:
           # Ignore hash in chromium-browser-snapshots as they are invalid
           # Resulting in 404 error in fetching pages:
-          # https://chromium.googlesource.com/chromium/src/+/[rev_hash]
+          # https://chromium.9oo91esource.qjz9zk/chromium/src/+/[rev_hash]
           except ValueError:
             pass
       return (revisions, next_marker, githash_svn_dict)
@@ -1072,7 +1072,7 @@ def main():
            '\n'
            'Revision numbers should use\n'
            '  SVN revisions (e.g. 123456) for chromium builds, from trunk.\n'
-           '    Use base_trunk_revision from http://omahaproxy.appspot.com/\n'
+           '    Use base_trunk_revision from http://omahaproxy.8pp2p8t.qjz9zk/\n'
            '    for earlier revs.\n'
            '    Chrome\'s about: build number and omahaproxy branch_revision\n'
            '    are incorrect, they are from branches.\n'

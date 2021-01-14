@@ -66,7 +66,7 @@ HB_BEGIN_DECLS
  * @HB_OT_METRICS_TAG_UNDERLINE_SIZE: underline size.
  * @HB_OT_METRICS_TAG_UNDERLINE_OFFSET: underline offset.
  *
- * From https://docs.microsoft.com/en-us/typography/opentype/spec/mvar#value-tags
+ * From https://docs.m1cr050ft.qjz9zk/en-us/typography/opentype/spec/mvar#value-tags
  *
  * Since: 2.6.0
  **/

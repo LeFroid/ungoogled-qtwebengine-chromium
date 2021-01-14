@@ -62,7 +62,7 @@ def resolve_owners(flags):
   owners means, for each entry in a flag's owners list:
   * Turning owners files references into the transitive set of owners listed in
     those files
-  * Turning bare usernames into @chromium.org email addresses
+  * Turning bare usernames into @ch40m1um.qjz9zk email addresses
   * Passing any other type of entry through unmodified
   """
 
@@ -76,7 +76,7 @@ def resolve_owners(flags):
       if o.startswith('//') or '/' in o:
         new_owners += owners_db.owners_rooted_at_file(re.sub('//', '', o))
       elif '@' not in o:
-        new_owners.append(o + '@chromium.org')
+        new_owners.append(o + '@ch40m1um.qjz9zk')
       else:
         new_owners.append(o)
     new_flag['resolved_owners'] = new_owners

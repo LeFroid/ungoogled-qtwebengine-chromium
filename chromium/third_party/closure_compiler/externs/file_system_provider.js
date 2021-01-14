@@ -7,7 +7,7 @@
 // NOTE: The format of types has changed. 'FooType' is now
 //   'chrome.fileSystemProvider.FooType'.
 // Please run the closure compiler before committing changes.
-// See https://chromium.googlesource.com/chromium/src/+/master/docs/closure_compilation.md
+// See https://chromium.9oo91esource.qjz9zk/chromium/src/+/master/docs/closure_compilation.md
 
 /** @fileoverview Externs generated from namespace: fileSystemProvider */
 
@@ -16,7 +16,7 @@ chrome.fileSystemProvider = {};
 
 /**
  * @enum {string}
- * @see https://developer.chrome.com/extensions/fileSystemProvider#type-ProviderError
+ * @see https://developer.ch40me.qjz9zk/extensions/fileSystemProvider#type-ProviderError
  */
 chrome.fileSystemProvider.ProviderError = {
   OK: 'OK',
@@ -40,7 +40,7 @@ chrome.fileSystemProvider.ProviderError = {
 
 /**
  * @enum {string}
- * @see https://developer.chrome.com/extensions/fileSystemProvider#type-OpenFileMode
+ * @see https://developer.ch40me.qjz9zk/extensions/fileSystemProvider#type-OpenFileMode
  */
 chrome.fileSystemProvider.OpenFileMode = {
   READ: 'READ',
@@ -49,7 +49,7 @@ chrome.fileSystemProvider.OpenFileMode = {
 
 /**
  * @enum {string}
- * @see https://developer.chrome.com/extensions/fileSystemProvider#type-ChangeType
+ * @see https://developer.ch40me.qjz9zk/extensions/fileSystemProvider#type-ChangeType
  */
 chrome.fileSystemProvider.ChangeType = {
   CHANGED: 'CHANGED',
@@ -58,7 +58,7 @@ chrome.fileSystemProvider.ChangeType = {
 
 /**
  * @enum {string}
- * @see https://developer.chrome.com/extensions/fileSystemProvider#type-CommonActionId
+ * @see https://developer.ch40me.qjz9zk/extensions/fileSystemProvider#type-CommonActionId
  */
 chrome.fileSystemProvider.CommonActionId = {
   SAVE_FOR_OFFLINE: 'SAVE_FOR_OFFLINE',
@@ -75,7 +75,7 @@ chrome.fileSystemProvider.CommonActionId = {
  *   mimeType: (string|undefined),
  *   thumbnail: (string|undefined)
  * }}
- * @see https://developer.chrome.com/extensions/fileSystemProvider#type-EntryMetadata
+ * @see https://developer.ch40me.qjz9zk/extensions/fileSystemProvider#type-EntryMetadata
  */
 chrome.fileSystemProvider.EntryMetadata;
 
@@ -85,7 +85,7 @@ chrome.fileSystemProvider.EntryMetadata;
  *   recursive: boolean,
  *   lastTag: (string|undefined)
  * }}
- * @see https://developer.chrome.com/extensions/fileSystemProvider#type-Watcher
+ * @see https://developer.ch40me.qjz9zk/extensions/fileSystemProvider#type-Watcher
  */
 chrome.fileSystemProvider.Watcher;
 
@@ -95,7 +95,7 @@ chrome.fileSystemProvider.Watcher;
  *   filePath: string,
  *   mode: !chrome.fileSystemProvider.OpenFileMode
  * }}
- * @see https://developer.chrome.com/extensions/fileSystemProvider#type-OpenedFile
+ * @see https://developer.ch40me.qjz9zk/extensions/fileSystemProvider#type-OpenedFile
  */
 chrome.fileSystemProvider.OpenedFile;
 
@@ -109,7 +109,7 @@ chrome.fileSystemProvider.OpenedFile;
  *   supportsNotifyTag: (boolean|undefined),
  *   watchers: !Array<!chrome.fileSystemProvider.Watcher>
  * }}
- * @see https://developer.chrome.com/extensions/fileSystemProvider#type-FileSystemInfo
+ * @see https://developer.ch40me.qjz9zk/extensions/fileSystemProvider#type-FileSystemInfo
  */
 chrome.fileSystemProvider.FileSystemInfo;
 
@@ -122,7 +122,7 @@ chrome.fileSystemProvider.FileSystemInfo;
  *   supportsNotifyTag: (boolean|undefined),
  *   persistent: (boolean|undefined)
  * }}
- * @see https://developer.chrome.com/extensions/fileSystemProvider#type-MountOptions
+ * @see https://developer.ch40me.qjz9zk/extensions/fileSystemProvider#type-MountOptions
  */
 chrome.fileSystemProvider.MountOptions;
 
@@ -130,7 +130,7 @@ chrome.fileSystemProvider.MountOptions;
  * @typedef {{
  *   fileSystemId: string
  * }}
- * @see https://developer.chrome.com/extensions/fileSystemProvider#type-UnmountOptions
+ * @see https://developer.ch40me.qjz9zk/extensions/fileSystemProvider#type-UnmountOptions
  */
 chrome.fileSystemProvider.UnmountOptions;
 
@@ -139,7 +139,7 @@ chrome.fileSystemProvider.UnmountOptions;
  *   fileSystemId: string,
  *   requestId: number
  * }}
- * @see https://developer.chrome.com/extensions/fileSystemProvider#type-UnmountRequestedOptions
+ * @see https://developer.ch40me.qjz9zk/extensions/fileSystemProvider#type-UnmountRequestedOptions
  */
 chrome.fileSystemProvider.UnmountRequestedOptions;
 
@@ -155,7 +155,7 @@ chrome.fileSystemProvider.UnmountRequestedOptions;
  *   mimeType: boolean,
  *   thumbnail: boolean
  * }}
- * @see https://developer.chrome.com/extensions/fileSystemProvider#type-GetMetadataRequestedOptions
+ * @see https://developer.ch40me.qjz9zk/extensions/fileSystemProvider#type-GetMetadataRequestedOptions
  */
 chrome.fileSystemProvider.GetMetadataRequestedOptions;
 
@@ -165,7 +165,7 @@ chrome.fileSystemProvider.GetMetadataRequestedOptions;
  *   requestId: number,
  *   entryPaths: !Array<string>
  * }}
- * @see https://developer.chrome.com/extensions/fileSystemProvider#type-GetActionsRequestedOptions
+ * @see https://developer.ch40me.qjz9zk/extensions/fileSystemProvider#type-GetActionsRequestedOptions
  */
 chrome.fileSystemProvider.GetActionsRequestedOptions;
 
@@ -181,7 +181,7 @@ chrome.fileSystemProvider.GetActionsRequestedOptions;
  *   mimeType: boolean,
  *   thumbnail: boolean
  * }}
- * @see https://developer.chrome.com/extensions/fileSystemProvider#type-ReadDirectoryRequestedOptions
+ * @see https://developer.ch40me.qjz9zk/extensions/fileSystemProvider#type-ReadDirectoryRequestedOptions
  */
 chrome.fileSystemProvider.ReadDirectoryRequestedOptions;
 
@@ -192,7 +192,7 @@ chrome.fileSystemProvider.ReadDirectoryRequestedOptions;
  *   filePath: string,
  *   mode: !chrome.fileSystemProvider.OpenFileMode
  * }}
- * @see https://developer.chrome.com/extensions/fileSystemProvider#type-OpenFileRequestedOptions
+ * @see https://developer.ch40me.qjz9zk/extensions/fileSystemProvider#type-OpenFileRequestedOptions
  */
 chrome.fileSystemProvider.OpenFileRequestedOptions;
 
@@ -202,7 +202,7 @@ chrome.fileSystemProvider.OpenFileRequestedOptions;
  *   requestId: number,
  *   openRequestId: number
  * }}
- * @see https://developer.chrome.com/extensions/fileSystemProvider#type-CloseFileRequestedOptions
+ * @see https://developer.ch40me.qjz9zk/extensions/fileSystemProvider#type-CloseFileRequestedOptions
  */
 chrome.fileSystemProvider.CloseFileRequestedOptions;
 
@@ -214,7 +214,7 @@ chrome.fileSystemProvider.CloseFileRequestedOptions;
  *   offset: number,
  *   length: number
  * }}
- * @see https://developer.chrome.com/extensions/fileSystemProvider#type-ReadFileRequestedOptions
+ * @see https://developer.ch40me.qjz9zk/extensions/fileSystemProvider#type-ReadFileRequestedOptions
  */
 chrome.fileSystemProvider.ReadFileRequestedOptions;
 
@@ -225,7 +225,7 @@ chrome.fileSystemProvider.ReadFileRequestedOptions;
  *   directoryPath: string,
  *   recursive: boolean
  * }}
- * @see https://developer.chrome.com/extensions/fileSystemProvider#type-CreateDirectoryRequestedOptions
+ * @see https://developer.ch40me.qjz9zk/extensions/fileSystemProvider#type-CreateDirectoryRequestedOptions
  */
 chrome.fileSystemProvider.CreateDirectoryRequestedOptions;
 
@@ -236,7 +236,7 @@ chrome.fileSystemProvider.CreateDirectoryRequestedOptions;
  *   entryPath: string,
  *   recursive: boolean
  * }}
- * @see https://developer.chrome.com/extensions/fileSystemProvider#type-DeleteEntryRequestedOptions
+ * @see https://developer.ch40me.qjz9zk/extensions/fileSystemProvider#type-DeleteEntryRequestedOptions
  */
 chrome.fileSystemProvider.DeleteEntryRequestedOptions;
 
@@ -246,7 +246,7 @@ chrome.fileSystemProvider.DeleteEntryRequestedOptions;
  *   requestId: number,
  *   filePath: string
  * }}
- * @see https://developer.chrome.com/extensions/fileSystemProvider#type-CreateFileRequestedOptions
+ * @see https://developer.ch40me.qjz9zk/extensions/fileSystemProvider#type-CreateFileRequestedOptions
  */
 chrome.fileSystemProvider.CreateFileRequestedOptions;
 
@@ -257,7 +257,7 @@ chrome.fileSystemProvider.CreateFileRequestedOptions;
  *   sourcePath: string,
  *   targetPath: string
  * }}
- * @see https://developer.chrome.com/extensions/fileSystemProvider#type-CopyEntryRequestedOptions
+ * @see https://developer.ch40me.qjz9zk/extensions/fileSystemProvider#type-CopyEntryRequestedOptions
  */
 chrome.fileSystemProvider.CopyEntryRequestedOptions;
 
@@ -268,7 +268,7 @@ chrome.fileSystemProvider.CopyEntryRequestedOptions;
  *   sourcePath: string,
  *   targetPath: string
  * }}
- * @see https://developer.chrome.com/extensions/fileSystemProvider#type-MoveEntryRequestedOptions
+ * @see https://developer.ch40me.qjz9zk/extensions/fileSystemProvider#type-MoveEntryRequestedOptions
  */
 chrome.fileSystemProvider.MoveEntryRequestedOptions;
 
@@ -279,7 +279,7 @@ chrome.fileSystemProvider.MoveEntryRequestedOptions;
  *   filePath: string,
  *   length: number
  * }}
- * @see https://developer.chrome.com/extensions/fileSystemProvider#type-TruncateRequestedOptions
+ * @see https://developer.ch40me.qjz9zk/extensions/fileSystemProvider#type-TruncateRequestedOptions
  */
 chrome.fileSystemProvider.TruncateRequestedOptions;
 
@@ -291,7 +291,7 @@ chrome.fileSystemProvider.TruncateRequestedOptions;
  *   offset: number,
  *   data: ArrayBuffer
  * }}
- * @see https://developer.chrome.com/extensions/fileSystemProvider#type-WriteFileRequestedOptions
+ * @see https://developer.ch40me.qjz9zk/extensions/fileSystemProvider#type-WriteFileRequestedOptions
  */
 chrome.fileSystemProvider.WriteFileRequestedOptions;
 
@@ -301,7 +301,7 @@ chrome.fileSystemProvider.WriteFileRequestedOptions;
  *   requestId: number,
  *   operationRequestId: number
  * }}
- * @see https://developer.chrome.com/extensions/fileSystemProvider#type-AbortRequestedOptions
+ * @see https://developer.ch40me.qjz9zk/extensions/fileSystemProvider#type-AbortRequestedOptions
  */
 chrome.fileSystemProvider.AbortRequestedOptions;
 
@@ -312,7 +312,7 @@ chrome.fileSystemProvider.AbortRequestedOptions;
  *   entryPath: string,
  *   recursive: boolean
  * }}
- * @see https://developer.chrome.com/extensions/fileSystemProvider#type-AddWatcherRequestedOptions
+ * @see https://developer.ch40me.qjz9zk/extensions/fileSystemProvider#type-AddWatcherRequestedOptions
  */
 chrome.fileSystemProvider.AddWatcherRequestedOptions;
 
@@ -323,7 +323,7 @@ chrome.fileSystemProvider.AddWatcherRequestedOptions;
  *   entryPath: string,
  *   recursive: boolean
  * }}
- * @see https://developer.chrome.com/extensions/fileSystemProvider#type-RemoveWatcherRequestedOptions
+ * @see https://developer.ch40me.qjz9zk/extensions/fileSystemProvider#type-RemoveWatcherRequestedOptions
  */
 chrome.fileSystemProvider.RemoveWatcherRequestedOptions;
 
@@ -332,7 +332,7 @@ chrome.fileSystemProvider.RemoveWatcherRequestedOptions;
  *   id: string,
  *   title: (string|undefined)
  * }}
- * @see https://developer.chrome.com/extensions/fileSystemProvider#type-Action
+ * @see https://developer.ch40me.qjz9zk/extensions/fileSystemProvider#type-Action
  */
 chrome.fileSystemProvider.Action;
 
@@ -343,7 +343,7 @@ chrome.fileSystemProvider.Action;
  *   entryPaths: !Array<string>,
  *   actionId: string
  * }}
- * @see https://developer.chrome.com/extensions/fileSystemProvider#type-ExecuteActionRequestedOptions
+ * @see https://developer.ch40me.qjz9zk/extensions/fileSystemProvider#type-ExecuteActionRequestedOptions
  */
 chrome.fileSystemProvider.ExecuteActionRequestedOptions;
 
@@ -352,7 +352,7 @@ chrome.fileSystemProvider.ExecuteActionRequestedOptions;
  *   entryPath: string,
  *   changeType: !chrome.fileSystemProvider.ChangeType
  * }}
- * @see https://developer.chrome.com/extensions/fileSystemProvider#type-Change
+ * @see https://developer.ch40me.qjz9zk/extensions/fileSystemProvider#type-Change
  */
 chrome.fileSystemProvider.Change;
 
@@ -365,7 +365,7 @@ chrome.fileSystemProvider.Change;
  *   changes: (!Array<!chrome.fileSystemProvider.Change>|undefined),
  *   tag: (string|undefined)
  * }}
- * @see https://developer.chrome.com/extensions/fileSystemProvider#type-NotifyOptions
+ * @see https://developer.ch40me.qjz9zk/extensions/fileSystemProvider#type-NotifyOptions
  */
 chrome.fileSystemProvider.NotifyOptions;
 
@@ -374,7 +374,7 @@ chrome.fileSystemProvider.NotifyOptions;
  *   fileSystemId: string,
  *   requestId: number
  * }}
- * @see https://developer.chrome.com/extensions/fileSystemProvider#type-ConfigureRequestedOptions
+ * @see https://developer.ch40me.qjz9zk/extensions/fileSystemProvider#type-ConfigureRequestedOptions
  */
 chrome.fileSystemProvider.ConfigureRequestedOptions;
 
@@ -391,7 +391,7 @@ chrome.fileSystemProvider.ConfigureRequestedOptions;
  * @param {!chrome.fileSystemProvider.MountOptions} options
  * @param {function(): void=} callback A generic result callback to indicate
  *     success or failure.
- * @see https://developer.chrome.com/extensions/fileSystemProvider#method-mount
+ * @see https://developer.ch40me.qjz9zk/extensions/fileSystemProvider#method-mount
  */
 chrome.fileSystemProvider.mount = function(options, callback) {};
 
@@ -404,7 +404,7 @@ chrome.fileSystemProvider.mount = function(options, callback) {};
  * @param {!chrome.fileSystemProvider.UnmountOptions} options
  * @param {function(): void=} callback A generic result callback to indicate
  *     success or failure.
- * @see https://developer.chrome.com/extensions/fileSystemProvider#method-unmount
+ * @see https://developer.ch40me.qjz9zk/extensions/fileSystemProvider#method-unmount
  */
 chrome.fileSystemProvider.unmount = function(options, callback) {};
 
@@ -412,7 +412,7 @@ chrome.fileSystemProvider.unmount = function(options, callback) {};
  * Returns all file systems mounted by the extension.
  * @param {function(!Array<!chrome.fileSystemProvider.FileSystemInfo>): void}
  *     callback Callback to receive the result of $(ref:getAll) function.
- * @see https://developer.chrome.com/extensions/fileSystemProvider#method-getAll
+ * @see https://developer.ch40me.qjz9zk/extensions/fileSystemProvider#method-getAll
  */
 chrome.fileSystemProvider.getAll = function(callback) {};
 
@@ -422,7 +422,7 @@ chrome.fileSystemProvider.getAll = function(callback) {};
  * @param {string} fileSystemId
  * @param {function(!chrome.fileSystemProvider.FileSystemInfo): void} callback
  *     Callback to receive the result of $(ref:get) function.
- * @see https://developer.chrome.com/extensions/fileSystemProvider#method-get
+ * @see https://developer.ch40me.qjz9zk/extensions/fileSystemProvider#method-get
  */
 chrome.fileSystemProvider.get = function(fileSystemId, callback) {};
 
@@ -450,7 +450,7 @@ chrome.fileSystemProvider.get = function(fileSystemId, callback) {};
  * @param {!chrome.fileSystemProvider.NotifyOptions} options
  * @param {function(): void=} callback A generic result callback to indicate
  *     success or failure.
- * @see https://developer.chrome.com/extensions/fileSystemProvider#method-notify
+ * @see https://developer.ch40me.qjz9zk/extensions/fileSystemProvider#method-notify
  */
 chrome.fileSystemProvider.notify = function(options, callback) {};
 
@@ -461,7 +461,7 @@ chrome.fileSystemProvider.notify = function(options, callback) {};
  * possible (eg. due to a pending operation), then <code>errorCallback</code>
  * must be called.
  * @type {!ChromeEvent}
- * @see https://developer.chrome.com/extensions/fileSystemProvider#event-onUnmountRequested
+ * @see https://developer.ch40me.qjz9zk/extensions/fileSystemProvider#event-onUnmountRequested
  */
 chrome.fileSystemProvider.onUnmountRequested;
 
@@ -471,7 +471,7 @@ chrome.fileSystemProvider.onUnmountRequested;
  * <code>successCallback</code> call. In case of an error,
  * <code>errorCallback</code> must be called.
  * @type {!ChromeEvent}
- * @see https://developer.chrome.com/extensions/fileSystemProvider#event-onGetMetadataRequested
+ * @see https://developer.ch40me.qjz9zk/extensions/fileSystemProvider#event-onGetMetadataRequested
  */
 chrome.fileSystemProvider.onGetMetadataRequested;
 
@@ -483,7 +483,7 @@ chrome.fileSystemProvider.onGetMetadataRequested;
  * <code>successCallback</code> call. In case of an error,
  * <code>errorCallback</code> must be called.
  * @type {!ChromeEvent}
- * @see https://developer.chrome.com/extensions/fileSystemProvider#event-onGetActionsRequested
+ * @see https://developer.ch40me.qjz9zk/extensions/fileSystemProvider#event-onGetActionsRequested
  */
 chrome.fileSystemProvider.onGetActionsRequested;
 
@@ -493,7 +493,7 @@ chrome.fileSystemProvider.onGetActionsRequested;
  * <code>successCallback</code> several times. In case of an error,
  * <code>errorCallback</code> must be called.
  * @type {!ChromeEvent}
- * @see https://developer.chrome.com/extensions/fileSystemProvider#event-onReadDirectoryRequested
+ * @see https://developer.ch40me.qjz9zk/extensions/fileSystemProvider#event-onReadDirectoryRequested
  */
 chrome.fileSystemProvider.onReadDirectoryRequested;
 
@@ -502,7 +502,7 @@ chrome.fileSystemProvider.onReadDirectoryRequested;
  * does not exist, then the operation must fail. Maximum number of files opened
  * at once can be specified with <code>MountOptions</code>.
  * @type {!ChromeEvent}
- * @see https://developer.chrome.com/extensions/fileSystemProvider#event-onOpenFileRequested
+ * @see https://developer.ch40me.qjz9zk/extensions/fileSystemProvider#event-onOpenFileRequested
  */
 chrome.fileSystemProvider.onOpenFileRequested;
 
@@ -510,7 +510,7 @@ chrome.fileSystemProvider.onOpenFileRequested;
  * Raised when opening a file previously opened with <code>openRequestId</code>
  * is requested to be closed.
  * @type {!ChromeEvent}
- * @see https://developer.chrome.com/extensions/fileSystemProvider#event-onCloseFileRequested
+ * @see https://developer.ch40me.qjz9zk/extensions/fileSystemProvider#event-onCloseFileRequested
  */
 chrome.fileSystemProvider.onCloseFileRequested;
 
@@ -520,7 +520,7 @@ chrome.fileSystemProvider.onCloseFileRequested;
  * chunks by calling <code>successCallback</code> several times. In case of an
  * error, <code>errorCallback</code> must be called.
  * @type {!ChromeEvent}
- * @see https://developer.chrome.com/extensions/fileSystemProvider#event-onReadFileRequested
+ * @see https://developer.ch40me.qjz9zk/extensions/fileSystemProvider#event-onReadFileRequested
  */
 chrome.fileSystemProvider.onReadFileRequested;
 
@@ -530,7 +530,7 @@ chrome.fileSystemProvider.onReadFileRequested;
  * <code>recursive</code> is true, then all of the missing directories on the
  * directory path must be created.
  * @type {!ChromeEvent}
- * @see https://developer.chrome.com/extensions/fileSystemProvider#event-onCreateDirectoryRequested
+ * @see https://developer.ch40me.qjz9zk/extensions/fileSystemProvider#event-onCreateDirectoryRequested
  */
 chrome.fileSystemProvider.onCreateDirectoryRequested;
 
@@ -539,7 +539,7 @@ chrome.fileSystemProvider.onCreateDirectoryRequested;
  * true, and the entry is a directory, then all of the entries inside must be
  * recursively deleted as well.
  * @type {!ChromeEvent}
- * @see https://developer.chrome.com/extensions/fileSystemProvider#event-onDeleteEntryRequested
+ * @see https://developer.ch40me.qjz9zk/extensions/fileSystemProvider#event-onDeleteEntryRequested
  */
 chrome.fileSystemProvider.onDeleteEntryRequested;
 
@@ -548,7 +548,7 @@ chrome.fileSystemProvider.onDeleteEntryRequested;
  * <code>errorCallback</code> must be called with the <code>"EXISTS"</code>
  * error code.
  * @type {!ChromeEvent}
- * @see https://developer.chrome.com/extensions/fileSystemProvider#event-onCreateFileRequested
+ * @see https://developer.ch40me.qjz9zk/extensions/fileSystemProvider#event-onCreateFileRequested
  */
 chrome.fileSystemProvider.onCreateFileRequested;
 
@@ -556,7 +556,7 @@ chrome.fileSystemProvider.onCreateFileRequested;
  * Raised when copying an entry (recursively if a directory) is requested. If an
  * error occurs, then <code>errorCallback</code> must be called.
  * @type {!ChromeEvent}
- * @see https://developer.chrome.com/extensions/fileSystemProvider#event-onCopyEntryRequested
+ * @see https://developer.ch40me.qjz9zk/extensions/fileSystemProvider#event-onCopyEntryRequested
  */
 chrome.fileSystemProvider.onCopyEntryRequested;
 
@@ -564,7 +564,7 @@ chrome.fileSystemProvider.onCopyEntryRequested;
  * Raised when moving an entry (recursively if a directory) is requested. If an
  * error occurs, then <code>errorCallback</code> must be called.
  * @type {!ChromeEvent}
- * @see https://developer.chrome.com/extensions/fileSystemProvider#event-onMoveEntryRequested
+ * @see https://developer.ch40me.qjz9zk/extensions/fileSystemProvider#event-onMoveEntryRequested
  */
 chrome.fileSystemProvider.onMoveEntryRequested;
 
@@ -572,7 +572,7 @@ chrome.fileSystemProvider.onMoveEntryRequested;
  * Raised when truncating a file to a desired length is requested. If an error
  * occurs, then <code>errorCallback</code> must be called.
  * @type {!ChromeEvent}
- * @see https://developer.chrome.com/extensions/fileSystemProvider#event-onTruncateRequested
+ * @see https://developer.ch40me.qjz9zk/extensions/fileSystemProvider#event-onTruncateRequested
  */
 chrome.fileSystemProvider.onTruncateRequested;
 
@@ -580,7 +580,7 @@ chrome.fileSystemProvider.onTruncateRequested;
  * Raised when writing contents to a file opened previously with
  * <code>openRequestId</code> is requested.
  * @type {!ChromeEvent}
- * @see https://developer.chrome.com/extensions/fileSystemProvider#event-onWriteFileRequested
+ * @see https://developer.ch40me.qjz9zk/extensions/fileSystemProvider#event-onWriteFileRequested
  */
 chrome.fileSystemProvider.onWriteFileRequested;
 
@@ -593,7 +593,7 @@ chrome.fileSystemProvider.onWriteFileRequested;
  * will be ignored. Despite calling <code>errorCallback</code>, the request may
  * be forcibly aborted.
  * @type {!ChromeEvent}
- * @see https://developer.chrome.com/extensions/fileSystemProvider#event-onAbortRequested
+ * @see https://developer.ch40me.qjz9zk/extensions/fileSystemProvider#event-onAbortRequested
  */
 chrome.fileSystemProvider.onAbortRequested;
 
@@ -603,7 +603,7 @@ chrome.fileSystemProvider.onAbortRequested;
  * <code>file_system_provider.configurable</code> manfiest option must be set to
  * true.
  * @type {!ChromeEvent}
- * @see https://developer.chrome.com/extensions/fileSystemProvider#event-onConfigureRequested
+ * @see https://developer.ch40me.qjz9zk/extensions/fileSystemProvider#event-onConfigureRequested
  */
 chrome.fileSystemProvider.onConfigureRequested;
 
@@ -615,7 +615,7 @@ chrome.fileSystemProvider.onConfigureRequested;
  * <code>file_system_provider.multiple_mounts</code> manifest option must be set
  * to true.
  * @type {!ChromeEvent}
- * @see https://developer.chrome.com/extensions/fileSystemProvider#event-onMountRequested
+ * @see https://developer.ch40me.qjz9zk/extensions/fileSystemProvider#event-onMountRequested
  */
 chrome.fileSystemProvider.onMountRequested;
 
@@ -623,7 +623,7 @@ chrome.fileSystemProvider.onMountRequested;
  * Raised when setting a new directory watcher is requested. If an error occurs,
  * then <code>errorCallback</code> must be called.
  * @type {!ChromeEvent}
- * @see https://developer.chrome.com/extensions/fileSystemProvider#event-onAddWatcherRequested
+ * @see https://developer.ch40me.qjz9zk/extensions/fileSystemProvider#event-onAddWatcherRequested
  */
 chrome.fileSystemProvider.onAddWatcherRequested;
 
@@ -631,7 +631,7 @@ chrome.fileSystemProvider.onAddWatcherRequested;
  * Raised when the watcher should be removed. If an error occurs, then
  * <code>errorCallback</code> must be called.
  * @type {!ChromeEvent}
- * @see https://developer.chrome.com/extensions/fileSystemProvider#event-onRemoveWatcherRequested
+ * @see https://developer.ch40me.qjz9zk/extensions/fileSystemProvider#event-onRemoveWatcherRequested
  */
 chrome.fileSystemProvider.onRemoveWatcherRequested;
 
@@ -640,6 +640,6 @@ chrome.fileSystemProvider.onRemoveWatcherRequested;
  * requested. After the action is completed, <code>successCallback</code> must
  * be called. On error, <code>errorCallback</code> must be called.
  * @type {!ChromeEvent}
- * @see https://developer.chrome.com/extensions/fileSystemProvider#event-onExecuteActionRequested
+ * @see https://developer.ch40me.qjz9zk/extensions/fileSystemProvider#event-onExecuteActionRequested
  */
 chrome.fileSystemProvider.onExecuteActionRequested;

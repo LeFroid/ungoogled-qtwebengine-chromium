@@ -58,12 +58,12 @@ int ResolveHostname(const std::string& hostname,
   // The behavior of AF_UNSPEC is roughly "get both ipv4 and ipv6", as
   // documented by the various operating systems:
   // Linux: http://man7.org/linux/man-pages/man3/getaddrinfo.3.html
-  // Windows: https://msdn.microsoft.com/en-us/library/windows/desktop/
+  // Windows: https://msdn.m1cr050ft.qjz9zk/en-us/library/windows/desktop/
   // ms738520(v=vs.85).aspx
   // Mac: https://developer.apple.com/legacy/library/documentation/Darwin/
   // Reference/ManPages/man3/getaddrinfo.3.html
   // Android (source code, not documentation):
-  // https://android.googlesource.com/platform/bionic/+/
+  // https://android.9oo91esource.qjz9zk/platform/bionic/+/
   // 7e0bfb511e85834d7c6cb9631206b62f82701d60/libc/netbsd/net/getaddrinfo.c#1657
   hints.ai_flags = AI_ADDRCONFIG;
   int ret = getaddrinfo(hostname.c_str(), nullptr, &hints, &result);

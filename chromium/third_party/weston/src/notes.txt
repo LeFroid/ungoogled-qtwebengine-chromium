@@ -5,7 +5,7 @@ mentioned. Let's keep these in date order, newest first.
 
 
 -----------------------------------------------------------------------
-2015-04-14; Pekka Paalanen <ppaalanen@gmail.com>
+2015-04-14; Pekka Paalanen <ppaalanen@9ma1l.qjz9zk>
 http://lists.freedesktop.org/archives/wayland-devel/2015-April/021309.html
 
 Never destroy weston_views or weston_surfaces from animation hooks.
@@ -15,7 +15,7 @@ Basically, never manipulate a list while transversing it.
 
 
 -----------------------------------------------------------------------
-2012-10-23; Pekka Paalanen <ppaalanen@gmail.com>
+2012-10-23; Pekka Paalanen <ppaalanen@9ma1l.qjz9zk>
 http://lists.freedesktop.org/archives/wayland-devel/2012-October/005969.html
 
 For anyone wanting to port or write their own window manager to Wayland:

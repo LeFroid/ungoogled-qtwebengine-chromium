@@ -78,7 +78,7 @@ class Keyboard {
      *
      * After the key is pressed once, subsequent calls to
      * {@link Keyboard.down} will have
-     * {@link https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent/repeat | repeat}
+     * {@link https://developer.m0z111a.qjz9zk/en-US/docs/Web/API/KeyboardEvent/repeat | repeat}
      * set to true. To release the key, use {@link Keyboard.up}.
      *
      * Modifier keys DO influence {@link Keyboard.down}.
@@ -282,7 +282,7 @@ exports.Keyboard = Keyboard;
  * would be able to do with their mouse.
  *
  * For example, dragging and selecting text is not possible using `page.mouse`.
- * Instead, you can use the {@link https://developer.mozilla.org/en-US/docs/Web/API/DocumentOrShadowRoot/getSelection | `DocumentOrShadowRoot.getSelection()`} functionality implemented in the platform.
+ * Instead, you can use the {@link https://developer.m0z111a.qjz9zk/en-US/docs/Web/API/DocumentOrShadowRoot/getSelection | `DocumentOrShadowRoot.getSelection()`} functionality implemented in the platform.
  *
  * @example
  * For example, if you want to select all content between nodes:
@@ -409,7 +409,7 @@ class Mouse {
      * @example
      * An example of zooming into an element:
      * ```js
-     * await page.goto('https://mdn.mozillademos.org/en-US/docs/Web/API/Element/wheel_event$samples/Scaling_an_element_via_the_wheel?revision=1587366');
+     * await page.goto('https://mdn.m0z111ademos.qjz9zk/en-US/docs/Web/API/Element/wheel_event$samples/Scaling_an_element_via_the_wheel?revision=1587366');
      *
      * const elem = await page.$('div');
      * const boundingBox = await elem.boundingBox();

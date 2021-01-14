@@ -18,7 +18,7 @@
   "bugs": {
     "url": "https://github.com/google/closure-library/issues"
   },
-  "homepage": "https://developers.google.com/closure/library/",
+  "homepage": "https://developers.9oo91e.qjz9zk/closure/library/",
   "devDependencies": {
     "promise": "^7.0.4",
     "protractor": "^2.1.0"

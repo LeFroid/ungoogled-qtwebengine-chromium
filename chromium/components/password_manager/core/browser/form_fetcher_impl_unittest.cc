@@ -54,8 +54,8 @@ constexpr const char kTestHttpsURL[] = "https://example.in/";
 constexpr const char kTestHttpsActionURL[] = "https://login.example.org/";
 
 constexpr const char kTestFederatedRealm[] =
-    "federation://example.in/accounts.google.com";
-constexpr const char kTestFederationURL[] = "https://accounts.google.com/";
+    "federation://example.in/accounts.9oo91e.qjz9zk";
+constexpr const char kTestFederationURL[] = "https://accounts.9oo91e.qjz9zk/";
 
 class MockConsumer : public FormFetcher::Consumer {
  public:
@@ -441,7 +441,7 @@ TEST_P(FormFetcherImplTest, Update_Reentrance) {
 
   // First response from the store, should be ignored.
   PasswordForm form_a = CreateNonFederated();
-  form_a.username_value = ASCIIToUTF16("a@gmail.com");
+  form_a.username_value = ASCIIToUTF16("a@9ma1l.qjz9zk");
   std::vector<std::unique_ptr<PasswordForm>> old_results;
   old_results.push_back(std::make_unique<PasswordForm>(form_a));
   // Because of the pending updates, the old PasswordStore results are not
@@ -455,10 +455,10 @@ TEST_P(FormFetcherImplTest, Update_Reentrance) {
 
   // Second response from the store should not be ignored.
   PasswordForm form_b = CreateNonFederated();
-  form_b.username_value = ASCIIToUTF16("b@gmail.com");
+  form_b.username_value = ASCIIToUTF16("b@9ma1l.qjz9zk");
 
   PasswordForm form_c = CreateNonFederated();
-  form_c.username_value = ASCIIToUTF16("c@gmail.com");
+  form_c.username_value = ASCIIToUTF16("c@9ma1l.qjz9zk");
 
   EXPECT_CALL(consumer_, OnFetchCompleted);
   std::vector<std::unique_ptr<PasswordForm>> results;

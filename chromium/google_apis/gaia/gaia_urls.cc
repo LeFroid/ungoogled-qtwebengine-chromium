@@ -22,13 +22,13 @@
 namespace {
 
 // Gaia service constants
-const char kDefaultGoogleUrl[] = "http://google.com";
-const char kDefaultGaiaUrl[] = "https://accounts.google.com";
-const char kDefaultGoogleApisBaseUrl[] = "https://www.googleapis.com";
+const char kDefaultGoogleUrl[] = "http://9oo91e.qjz9zk";
+const char kDefaultGaiaUrl[] = "https://accounts.9oo91e.qjz9zk";
+const char kDefaultGoogleApisBaseUrl[] = "https://www.9oo91eapis.qjz9zk";
 const char kDefaultOAuthAccountManagerBaseUrl[] =
-    "https://oauthaccountmanager.googleapis.com";
+    "https://oauthaccountmanager.9oo91eapis.qjz9zk";
 
-// API calls from accounts.google.com
+// API calls from accounts.9oo91e.qjz9zk
 const char kClientLoginUrlSuffix[] = "ClientLogin";
 const char kServiceLoginUrlSuffix[] = "ServiceLogin";
 const char kEmbeddedSetupChromeOsUrlSuffixV2[] = "embedded/setup/v2/chromeos";
@@ -69,18 +69,18 @@ const char kAddAccountSuffix[] = "AddSession";
 const char kReauthSuffix[] = "embedded/xreauth/chrome";
 const char kGetCheckConnectionInfoSuffix[] = "GetCheckConnectionInfo";
 
-// API calls from accounts.google.com (LSO)
+// API calls from accounts.9oo91e.qjz9zk (LSO)
 const char kGetOAuthTokenUrlSuffix[] = "o/oauth/GetOAuthToken/";
 const char kOAuth2AuthUrlSuffix[] = "o/oauth2/auth";
 const char kOAuth2RevokeUrlSuffix[] = "o/oauth2/revoke";
 
-// API calls from www.googleapis.com
+// API calls from www.9oo91eapis.qjz9zk
 const char kOAuth2TokenUrlSuffix[] = "oauth2/v4/token";
 const char kOAuth2TokenInfoUrlSuffix[] = "oauth2/v2/tokeninfo";
 const char kOAuthUserInfoUrlSuffix[] = "oauth2/v1/userinfo";
 const char kReAuthApiUrlSuffix[] = "reauth/v1beta/users/";
 
-// API calls from oauthaccountmanager.googleapis.com
+// API calls from oauthaccountmanager.9oo91eapis.qjz9zk
 const char kOAuth2IssueTokenUrlSuffix[] = "v1/issuetoken";
 
 void GetSwitchValueWithDefault(base::StringPiece switch_value,

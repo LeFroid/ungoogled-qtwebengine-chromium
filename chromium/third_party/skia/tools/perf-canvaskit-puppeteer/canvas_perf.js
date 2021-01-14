@@ -344,7 +344,7 @@ for (const testImageFilename of ['test_64x64.png', 'test_512x512.png', 'test_150
             // image.decode().
             // Despite the name, both of them would decode the image, it was loaded in setup.
             // HTMLImageElement.decode() reference:
-            // https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement/decode
+            // https://developer.m0z111a.qjz9zk/en-US/docs/Web/API/HTMLImageElement/decode
             const promise = new Promise((resolve) => image.addEventListener('load', resolve));
             image.src = ctx.imageDataURL;
             await promise;

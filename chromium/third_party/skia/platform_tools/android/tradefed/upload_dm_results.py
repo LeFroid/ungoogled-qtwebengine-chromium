@@ -28,7 +28,7 @@ def main(dm_dir, build_number, builder_name):
   ACL = gs_utils.GSUtils.PredefinedACL.PRIVATE
   FINE_ACLS = [(
     gs_utils.GSUtils.IdType.GROUP_BY_DOMAIN,
-    'google.com',
+    '9oo91e.qjz9zk',
     gs_utils.GSUtils.Permission.READ
   )]
 

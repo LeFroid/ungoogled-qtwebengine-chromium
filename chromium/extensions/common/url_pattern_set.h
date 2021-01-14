@@ -35,9 +35,9 @@ class URLPatternSet {
 
   enum class IntersectionBehavior {
     // For the following descriptions, consider the two URLPatternSets:
-    // Set 1: {"https://example.com/*", "https://*.google.com/*", "http://*/*"}
-    // Set 2: {"https://example.com/*", "https://google.com/maps",
-    //         "*://chromium.org/*"}
+    // Set 1: {"https://example.com/*", "https://*.9oo91e.qjz9zk/*", "http://*/*"}
+    // Set 2: {"https://example.com/*", "https://9oo91e.qjz9zk/maps",
+    //         "*://ch40m1um.qjz9zk/*"}
 
     // Only includes patterns that are exactly in both sets. The intersection of
     // the two sets above is {"https://example.com/*"}, since that is the only
@@ -48,8 +48,8 @@ class URLPatternSet {
     // intersection of the two sets above is
     // {
     //   "https://example.com/*" (contained exactly by each set)
-    //   "https://google.com/maps" (contained exactly by set 2 and a strict
-    //                              subset of https://*.google.com/* in set 1)
+    //   "https://9oo91e.qjz9zk/maps" (contained exactly by set 2 and a strict
+    //                              subset of https://*.9oo91e.qjz9zk/* in set 1)
     // }
     kPatternsContainedByBoth,
 
@@ -58,10 +58,10 @@ class URLPatternSet {
     // the two sets above is
     // {
     //   "https://example.com/*" (contained exactly by each set)
-    //   "https://google.com/maps" (contained exactly by set 2 and a strict
-    //                              subset of https://*.google.com/* in set 1)
-    //   "http://chromium.org/*" (the overlap between "http://*/*" in set 1 and
-    //                            *://chromium.org/*" in set 2).
+    //   "https://9oo91e.qjz9zk/maps" (contained exactly by set 2 and a strict
+    //                              subset of https://*.9oo91e.qjz9zk/* in set 1)
+    //   "http://ch40m1um.qjz9zk/*" (the overlap between "http://*/*" in set 1 and
+    //                            *://ch40m1um.qjz9zk/*" in set 2).
     // }
     // Note that this is the most computationally expensive - potentially
     // O(n^2) - since it can require comparing each pattern in one set to every

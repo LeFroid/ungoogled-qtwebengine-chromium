@@ -7,7 +7,7 @@
 // NOTE: The format of types has changed. 'FooType' is now
 //   'chrome.bookmarks.FooType'.
 // Please run the closure compiler before committing changes.
-// See https://chromium.googlesource.com/chromium/src/+/master/docs/closure_compilation.md
+// See https://chromium.9oo91esource.qjz9zk/chromium/src/+/master/docs/closure_compilation.md
 
 /** @fileoverview Externs generated from namespace: bookmarks */
 
@@ -16,7 +16,7 @@ chrome.bookmarks = {};
 
 /**
  * @enum {string}
- * @see https://developer.chrome.com/extensions/bookmarks#type-BookmarkTreeNodeUnmodifiable
+ * @see https://developer.ch40me.qjz9zk/extensions/bookmarks#type-BookmarkTreeNodeUnmodifiable
  */
 chrome.bookmarks.BookmarkTreeNodeUnmodifiable = {
   MANAGED: 'managed',
@@ -35,7 +35,7 @@ chrome.bookmarks.BookmarkTreeNodeUnmodifiable = {
  *   unmodifiable: (!chrome.bookmarks.BookmarkTreeNodeUnmodifiable|undefined),
  *   children: (!Array<!chrome.bookmarks.BookmarkTreeNode>|undefined)
  * }}
- * @see https://developer.chrome.com/extensions/bookmarks#type-BookmarkTreeNode
+ * @see https://developer.ch40me.qjz9zk/extensions/bookmarks#type-BookmarkTreeNode
  */
 chrome.bookmarks.BookmarkTreeNode;
 
@@ -47,19 +47,19 @@ chrome.bookmarks.BookmarkTreeNode;
  *   title: (string|undefined),
  *   url: (string|undefined)
  * }}
- * @see https://developer.chrome.com/extensions/bookmarks#type-CreateDetails
+ * @see https://developer.ch40me.qjz9zk/extensions/bookmarks#type-CreateDetails
  */
 chrome.bookmarks.CreateDetails;
 
 /**
  * @type {number}
- * @see https://developer.chrome.com/extensions/bookmarks#type-MAX_WRITE_OPERATIONS_PER_HOUR
+ * @see https://developer.ch40me.qjz9zk/extensions/bookmarks#type-MAX_WRITE_OPERATIONS_PER_HOUR
  */
 chrome.bookmarks.MAX_WRITE_OPERATIONS_PER_HOUR;
 
 /**
  * @type {number}
- * @see https://developer.chrome.com/extensions/bookmarks#type-MAX_SUSTAINED_WRITE_OPERATIONS_PER_MINUTE
+ * @see https://developer.ch40me.qjz9zk/extensions/bookmarks#type-MAX_SUSTAINED_WRITE_OPERATIONS_PER_MINUTE
  */
 chrome.bookmarks.MAX_SUSTAINED_WRITE_OPERATIONS_PER_MINUTE;
 
@@ -68,7 +68,7 @@ chrome.bookmarks.MAX_SUSTAINED_WRITE_OPERATIONS_PER_MINUTE;
  * @param {(string|!Array<string>)} idOrIdList A single string-valued id, or an
  *     array of string-valued ids
  * @param {function(!Array<!chrome.bookmarks.BookmarkTreeNode>):void} callback
- * @see https://developer.chrome.com/extensions/bookmarks#method-get
+ * @see https://developer.ch40me.qjz9zk/extensions/bookmarks#method-get
  */
 chrome.bookmarks.get = function(idOrIdList, callback) {};
 
@@ -76,7 +76,7 @@ chrome.bookmarks.get = function(idOrIdList, callback) {};
  * Retrieves the children of the specified BookmarkTreeNode id.
  * @param {string} id
  * @param {function(!Array<!chrome.bookmarks.BookmarkTreeNode>):void} callback
- * @see https://developer.chrome.com/extensions/bookmarks#method-getChildren
+ * @see https://developer.ch40me.qjz9zk/extensions/bookmarks#method-getChildren
  */
 chrome.bookmarks.getChildren = function(id, callback) {};
 
@@ -84,14 +84,14 @@ chrome.bookmarks.getChildren = function(id, callback) {};
  * Retrieves the recently added bookmarks.
  * @param {number} numberOfItems The maximum number of items to return.
  * @param {function(!Array<!chrome.bookmarks.BookmarkTreeNode>):void} callback
- * @see https://developer.chrome.com/extensions/bookmarks#method-getRecent
+ * @see https://developer.ch40me.qjz9zk/extensions/bookmarks#method-getRecent
  */
 chrome.bookmarks.getRecent = function(numberOfItems, callback) {};
 
 /**
  * Retrieves the entire Bookmarks hierarchy.
  * @param {function(!Array<!chrome.bookmarks.BookmarkTreeNode>):void} callback
- * @see https://developer.chrome.com/extensions/bookmarks#method-getTree
+ * @see https://developer.ch40me.qjz9zk/extensions/bookmarks#method-getTree
  */
 chrome.bookmarks.getTree = function(callback) {};
 
@@ -99,7 +99,7 @@ chrome.bookmarks.getTree = function(callback) {};
  * Retrieves part of the Bookmarks hierarchy, starting at the specified node.
  * @param {string} id The ID of the root of the subtree to retrieve.
  * @param {function(!Array<!chrome.bookmarks.BookmarkTreeNode>):void} callback
- * @see https://developer.chrome.com/extensions/bookmarks#method-getSubTree
+ * @see https://developer.ch40me.qjz9zk/extensions/bookmarks#method-getSubTree
  */
 chrome.bookmarks.getSubTree = function(id, callback) {};
 
@@ -116,7 +116,7 @@ chrome.bookmarks.getSubTree = function(id, callback) {};
  *     may be specified and bookmarks matching all specified properties will be
  *     produced.
  * @param {function(!Array<!chrome.bookmarks.BookmarkTreeNode>):void} callback
- * @see https://developer.chrome.com/extensions/bookmarks#method-search
+ * @see https://developer.ch40me.qjz9zk/extensions/bookmarks#method-search
  */
 chrome.bookmarks.search = function(query, callback) {};
 
@@ -125,7 +125,7 @@ chrome.bookmarks.search = function(query, callback) {};
  * missing, it will be a folder.
  * @param {!chrome.bookmarks.CreateDetails} bookmark
  * @param {function(!chrome.bookmarks.BookmarkTreeNode):void=} callback
- * @see https://developer.chrome.com/extensions/bookmarks#method-create
+ * @see https://developer.ch40me.qjz9zk/extensions/bookmarks#method-create
  */
 chrome.bookmarks.create = function(bookmark, callback) {};
 
@@ -137,7 +137,7 @@ chrome.bookmarks.create = function(bookmark, callback) {};
  *   index: (number|undefined)
  * }} destination
  * @param {function(!chrome.bookmarks.BookmarkTreeNode):void=} callback
- * @see https://developer.chrome.com/extensions/bookmarks#method-move
+ * @see https://developer.ch40me.qjz9zk/extensions/bookmarks#method-move
  */
 chrome.bookmarks.move = function(id, destination, callback) {};
 
@@ -151,7 +151,7 @@ chrome.bookmarks.move = function(id, destination, callback) {};
  *   url: (string|undefined)
  * }} changes
  * @param {function(!chrome.bookmarks.BookmarkTreeNode):void=} callback
- * @see https://developer.chrome.com/extensions/bookmarks#method-update
+ * @see https://developer.ch40me.qjz9zk/extensions/bookmarks#method-update
  */
 chrome.bookmarks.update = function(id, changes, callback) {};
 
@@ -159,7 +159,7 @@ chrome.bookmarks.update = function(id, changes, callback) {};
  * Removes a bookmark or an empty bookmark folder.
  * @param {string} id
  * @param {function():void=} callback
- * @see https://developer.chrome.com/extensions/bookmarks#method-remove
+ * @see https://developer.ch40me.qjz9zk/extensions/bookmarks#method-remove
  */
 chrome.bookmarks.remove = function(id, callback) {};
 
@@ -167,28 +167,28 @@ chrome.bookmarks.remove = function(id, callback) {};
  * Recursively removes a bookmark folder.
  * @param {string} id
  * @param {function():void=} callback
- * @see https://developer.chrome.com/extensions/bookmarks#method-removeTree
+ * @see https://developer.ch40me.qjz9zk/extensions/bookmarks#method-removeTree
  */
 chrome.bookmarks.removeTree = function(id, callback) {};
 
 /**
  * Imports bookmarks from a chrome html bookmark file
  * @param {function():void=} callback
- * @see https://developer.chrome.com/extensions/bookmarks#method-import
+ * @see https://developer.ch40me.qjz9zk/extensions/bookmarks#method-import
  */
 chrome.bookmarks.import = function(callback) {};
 
 /**
  * Exports bookmarks to a chrome html bookmark file
  * @param {function():void=} callback
- * @see https://developer.chrome.com/extensions/bookmarks#method-export
+ * @see https://developer.ch40me.qjz9zk/extensions/bookmarks#method-export
  */
 chrome.bookmarks.export = function(callback) {};
 
 /**
  * Fired when a bookmark or folder is created.
  * @type {!ChromeEvent}
- * @see https://developer.chrome.com/extensions/bookmarks#event-onCreated
+ * @see https://developer.ch40me.qjz9zk/extensions/bookmarks#event-onCreated
  */
 chrome.bookmarks.onCreated;
 
@@ -197,7 +197,7 @@ chrome.bookmarks.onCreated;
  * recursively, a single notification is fired for the folder, and none for its
  * contents.
  * @type {!ChromeEvent}
- * @see https://developer.chrome.com/extensions/bookmarks#event-onRemoved
+ * @see https://developer.ch40me.qjz9zk/extensions/bookmarks#event-onRemoved
  */
 chrome.bookmarks.onRemoved;
 
@@ -205,14 +205,14 @@ chrome.bookmarks.onRemoved;
  * Fired when a bookmark or folder changes.  <b>Note:</b> Currently, only title
  * and url changes trigger this.
  * @type {!ChromeEvent}
- * @see https://developer.chrome.com/extensions/bookmarks#event-onChanged
+ * @see https://developer.ch40me.qjz9zk/extensions/bookmarks#event-onChanged
  */
 chrome.bookmarks.onChanged;
 
 /**
  * Fired when a bookmark or folder is moved to a different parent folder.
  * @type {!ChromeEvent}
- * @see https://developer.chrome.com/extensions/bookmarks#event-onMoved
+ * @see https://developer.ch40me.qjz9zk/extensions/bookmarks#event-onMoved
  */
 chrome.bookmarks.onMoved;
 
@@ -220,7 +220,7 @@ chrome.bookmarks.onMoved;
  * Fired when the children of a folder have changed their order due to the order
  * being sorted in the UI.  This is not called as a result of a move().
  * @type {!ChromeEvent}
- * @see https://developer.chrome.com/extensions/bookmarks#event-onChildrenReordered
+ * @see https://developer.ch40me.qjz9zk/extensions/bookmarks#event-onChildrenReordered
  */
 chrome.bookmarks.onChildrenReordered;
 
@@ -229,13 +229,13 @@ chrome.bookmarks.onChildrenReordered;
  * ignore onCreated updates until onImportEnded is fired.  Observers should
  * still handle other notifications immediately.
  * @type {!ChromeEvent}
- * @see https://developer.chrome.com/extensions/bookmarks#event-onImportBegan
+ * @see https://developer.ch40me.qjz9zk/extensions/bookmarks#event-onImportBegan
  */
 chrome.bookmarks.onImportBegan;
 
 /**
  * Fired when a bookmark import session is ended.
  * @type {!ChromeEvent}
- * @see https://developer.chrome.com/extensions/bookmarks#event-onImportEnded
+ * @see https://developer.ch40me.qjz9zk/extensions/bookmarks#event-onImportEnded
  */
 chrome.bookmarks.onImportEnded;

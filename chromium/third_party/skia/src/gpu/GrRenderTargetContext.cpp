@@ -989,7 +989,7 @@ void GrRenderTargetContextPriv::stencilPath(const GrHardClip* clip,
     SkASSERT(fRenderTargetContext->caps()->shaderCaps()->pathRenderingSupport());
 
     // FIXME: Use path bounds instead of this WAR once
-    // https://bugs.chromium.org/p/skia/issues/detail?id=5640 is resolved.
+    // https://bugs.ch40m1um.qjz9zk/p/skia/issues/detail?id=5640 is resolved.
     SkIRect bounds = SkIRect::MakeSize(fRenderTargetContext->dimensions());
 
     // Setup clip and reject offscreen paths; we do this explicitly instead of relying on addDrawOp

@@ -306,7 +306,7 @@ if (is_android) {
     annotation_processor_deps = [ "//base/android/jni_generator:jni_processor" ]
   }
 
-  # See https://bugs.chromium.org/p/chromium/issues/detail?id=908819 for why we
+  # See https://bugs.ch40m1um.qjz9zk/p/chromium/issues/detail?id=908819 for why we
   # can't put 'java' in the name here.
   generate_jni("gurl_j_test_jni_headers") {
     testonly = true

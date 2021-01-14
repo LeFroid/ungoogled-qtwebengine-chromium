@@ -9,9 +9,9 @@ This file is used to generate a comprehensive list of Extensions histograms
 along with a detailed description for each histogram.
 
 For best practices on writing histogram descriptions, see
-https://chromium.googlesource.com/chromium/src.git/+/HEAD/tools/metrics/histograms/README.md
+https://chromium.9oo91esource.qjz9zk/chromium/src.git/+/HEAD/tools/metrics/histograms/README.md
 
-Please send CLs to chromium-metrics-reviews@google.com rather than to specific
+Please send CLs to chromium-metrics-reviews@9oo91e.qjz9zk rather than to specific
 individuals. These CLs will be automatically reassigned to a reviewer within
 about 5 minutes. This approach helps the metrics team to load-balance incoming
 reviews. Googlers can read more about this at go/gwsq-gerrit.
@@ -23,8 +23,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Extensions.ActionSetIconFailureType"
     enum="ExtensionActionSetIconFailureType" expires_after="M88">
-  <owner>rdevlin.cronin@chromium.org</owner>
-  <owner>extensions-core@chromium.org</owner>
+  <owner>rdevlin.cronin@ch40m1um.qjz9zk</owner>
+  <owner>extensions-core@ch40m1um.qjz9zk</owner>
   <summary>
     The cause for the failure in the setIcon() extension API function. This is
     temporary logging to help track down the cause of a crash.
@@ -33,8 +33,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Extensions.ActiveScriptController.DeniedExtensions"
     units="Extension Count" expires_after="2021-06-01">
-  <owner>rdevlin.cronin@chromium.org</owner>
-  <owner>extensions-core@chromium.org</owner>
+  <owner>rdevlin.cronin@ch40m1um.qjz9zk</owner>
+  <owner>extensions-core@ch40m1um.qjz9zk</owner>
   <summary>
     The number of extensions on a page that wanted to execute a script, required
     explicit user consent, and were denied permission.
@@ -43,8 +43,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Extensions.ActiveScriptController.PermittedExtensions"
     units="Extension Count" expires_after="2021-06-01">
-  <owner>rdevlin.cronin@chromium.org</owner>
-  <owner>extensions-core@chromium.org</owner>
+  <owner>rdevlin.cronin@ch40m1um.qjz9zk</owner>
+  <owner>extensions-core@ch40m1um.qjz9zk</owner>
   <summary>
     The number of extensions on a page that wanted to execute a script, required
     explicit user consent, and were granted permission.
@@ -53,8 +53,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Extensions.ApiBindingGenerationTime" units="ms"
     expires_after="2021-06-01">
-  <owner>rdevlin.cronin@chromium.org</owner>
-  <owner>extensions-core@chromium.org</owner>
+  <owner>rdevlin.cronin@ch40m1um.qjz9zk</owner>
+  <owner>extensions-core@ch40m1um.qjz9zk</owner>
   <summary>
     The amount of time it takes to generate the JavaScript API bindings for a
     particular extension API. This includes the time from when a JavaScript
@@ -66,8 +66,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Extensions.ApiBindingObjectGenerationTime"
     units="microseconds" expires_after="2021-06-01">
-  <owner>rdevlin.cronin@chromium.org</owner>
-  <owner>extensions-core@chromium.org</owner>
+  <owner>rdevlin.cronin@ch40m1um.qjz9zk</owner>
+  <owner>extensions-core@ch40m1um.qjz9zk</owner>
   <summary>
     The amount of time it takes to create the JavaScript binding object using
     the binding.js module. This is a strict subset of
@@ -83,7 +83,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Extensions.ApiTabUpdateJavascript" enum="Boolean"
     expires_after="M78">
-  <owner>dbertoni@chromium.org</owner>
+  <owner>dbertoni@ch40m1um.qjz9zk</owner>
   <summary>
     Reports whether a tab was updated to a javascript:-scheme URL from the
     extensions tabs.update API. Reported once per call to tabs.update().
@@ -92,9 +92,9 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Extensions.AppLaunch" enum="AppLaunch"
     expires_after="2022-06-30">
-  <owner>benwells@chromium.org</owner>
-  <owner>dominickn@chromium.org</owner>
-  <owner>tapted@chromium.org</owner>
+  <owner>benwells@ch40m1um.qjz9zk</owner>
+  <owner>dominickn@ch40m1um.qjz9zk</owner>
+  <owner>tapted@ch40m1um.qjz9zk</owner>
   <summary>
     The number of times v1 apps are launched grouped by
     extension_misc::AppLaunchBuckets. See also Apps.AppLaunch for v2 apps.
@@ -103,8 +103,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Extensions.AppLaunchSource" enum="AppLaunchSource"
     expires_after="2022-06-30">
-  <owner>benwells@chromium.org</owner>
-  <owner>cylee@chromium.org</owner>
+  <owner>benwells@ch40m1um.qjz9zk</owner>
+  <owner>cylee@ch40m1um.qjz9zk</owner>
   <summary>
     The number of times apps are launched grouped by
     extensions::AppLaunchSource.
@@ -113,7 +113,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Extensions.AppLoadedInTab" enum="AppLoadedInTabSource"
     expires_after="M77">
-  <owner>lazyboy@chromium.org</owner>
+  <owner>lazyboy@ch40m1um.qjz9zk</owner>
   <summary>
     A platform app ended up in a regular tab either by the app page or its
     background page. Note that this happens unexpectedly right now and we wish
@@ -123,8 +123,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Extensions.AppLocation" enum="ExtensionLocation"
     expires_after="2022-06-30">
-  <owner>benwells@chromium.org</owner>
-  <owner>tapted@chromium.org</owner>
+  <owner>benwells@ch40m1um.qjz9zk</owner>
+  <owner>tapted@ch40m1um.qjz9zk</owner>
   <summary>
     The number of apps loaded at startup time grouped by Extension::Location.
   </summary>
@@ -132,8 +132,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Extensions.AppsPromo" enum="AppPromoAction"
     expires_after="2022-06-30">
-  <owner>benwells@chromium.org</owner>
-  <owner>tapted@chromium.org</owner>
+  <owner>benwells@ch40m1um.qjz9zk</owner>
+  <owner>tapted@ch40m1um.qjz9zk</owner>
   <summary>
     The actions taken in the NTP apps promo grouped by
     extension_misc::AppsPromoBuckets.
@@ -142,8 +142,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Extensions.AppTabLaunchType" enum="ExtensionLaunchType"
     expires_after="2022-06-30">
-  <owner>benwells@chromium.org</owner>
-  <owner>tapted@chromium.org</owner>
+  <owner>benwells@ch40m1um.qjz9zk</owner>
+  <owner>tapted@ch40m1um.qjz9zk</owner>
   <summary>
     The number of apps launched grouped by extensions::LaunchType.
   </summary>
@@ -151,8 +151,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Extensions.AttemptedToDowngradeVersionLocation"
     enum="ExtensionLocation" expires_after="2021-06-01">
-  <owner>rdevlin.cronin@chromium.org</owner>
-  <owner>extensions-core@chromium.org</owner>
+  <owner>rdevlin.cronin@ch40m1um.qjz9zk</owner>
+  <owner>extensions-core@ch40m1um.qjz9zk</owner>
   <summary>
     The extension install location of an extension that Chrome attempted to add,
     but failed because it would downgrade the version. Tracking for
@@ -162,8 +162,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Extensions.AttemptedToDowngradeVersionType"
     enum="ExtensionType" expires_after="2021-06-01">
-  <owner>rdevlin.cronin@chromium.org</owner>
-  <owner>extensions-core@chromium.org</owner>
+  <owner>rdevlin.cronin@ch40m1um.qjz9zk</owner>
+  <owner>extensions-core@ch40m1um.qjz9zk</owner>
   <summary>
     The extension item type of an extension that Chrome attempted to add, but
     failed because it would downgrade the version. Tracking for
@@ -173,8 +173,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Extensions.BackgroundPageLoadTime2" units="ms"
     expires_after="2020-12-01">
-  <owner>rdevlin.cronin@chromium.org</owner>
-  <owner>extensions-core@chromium.org</owner>
+  <owner>rdevlin.cronin@ch40m1um.qjz9zk</owner>
+  <owner>extensions-core@ch40m1um.qjz9zk</owner>
   <summary>
     The time taken for an extension's persistent background page to load its
     initial URL.
@@ -185,8 +185,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
     units="ExtensionBackgroundPageType" expires_after="never">
 <!-- expires-never: Used for monitoring user extension usage. -->
 
-  <owner>rdevlin.cronin@chromium.org</owner>
-  <owner>extensions-core@chromium.org</owner>
+  <owner>rdevlin.cronin@ch40m1um.qjz9zk</owner>
+  <owner>extensions-core@ch40m1um.qjz9zk</owner>
   <summary>
     The type (if any) of background page the extension has. Recorded for
     installed extensions on startup.
@@ -197,8 +197,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
     expires_after="never">
 <!-- expires-never: Monitoring core extension system health. -->
 
-  <owner>rdevlin.cronin@chromium.org</owner>
-  <owner>extensions-core@chromium.org</owner>
+  <owner>rdevlin.cronin@ch40m1um.qjz9zk</owner>
+  <owner>extensions-core@ch40m1um.qjz9zk</owner>
   <summary>
     The number of times each Extension function call sends a bad message,
     killing the renderer. This may indicate a bug in that API's implementation
@@ -211,8 +211,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
     expires_after="never">
 <!-- expires-never: Monitoring core extension system health. -->
 
-  <owner>rdevlin.cronin@chromium.org</owner>
-  <owner>extensions-core@chromium.org</owner>
+  <owner>rdevlin.cronin@ch40m1um.qjz9zk</owner>
+  <owner>extensions-core@ch40m1um.qjz9zk</owner>
   <summary>
     The reason a valid ExtensionSyncData could not be parsed from a SyncData
     received from sync.
@@ -221,8 +221,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Extensions.Bindings.NativeBindingCreationTime"
     units="microseconds" expires_after="2020-12-01">
-  <owner>rdevlin.cronin@chromium.org</owner>
-  <owner>extensions-core@chromium.org</owner>
+  <owner>rdevlin.cronin@ch40m1um.qjz9zk</owner>
+  <owner>extensions-core@ch40m1um.qjz9zk</owner>
   <summary>
     The elapsed time to create a new full instance of an extension API's
     bindings using native bindings.
@@ -237,8 +237,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Extensions.Bindings.UpdateBindingsForContextTime"
     units="microseconds" expires_after="2021-01-31">
-  <owner>rdevlin.cronin@chromium.org</owner>
-  <owner>extensions-core@chromium.org</owner>
+  <owner>rdevlin.cronin@ch40m1um.qjz9zk</owner>
+  <owner>extensions-core@ch40m1um.qjz9zk</owner>
   <summary>
     The elapsed time to update the bindings for a new or existing v8::Context.
     The suffix indicates which type of context the bindings are for.
@@ -253,17 +253,17 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Extensions.BookmarkAppLaunchContainer"
     enum="AppLaunchContainer" expires_after="2021-01-31">
-  <owner>benwells@chromium.org</owner>
-  <owner>dominickn@chromium.org</owner>
+  <owner>benwells@ch40m1um.qjz9zk</owner>
+  <owner>dominickn@ch40m1um.qjz9zk</owner>
   <summary>Records the container used for a bookmark app launch.</summary>
 </histogram>
 
 <histogram name="Extensions.BookmarkAppLaunchSource" enum="AppLaunchSource"
     expires_after="2021-01-31">
-  <owner>benwells@chromium.org</owner>
-  <owner>dominickn@chromium.org</owner>
-  <owner>mgiuca@chromium.org</owner>
-  <owner>ortuno@chromium.org</owner>
+  <owner>benwells@ch40m1um.qjz9zk</owner>
+  <owner>dominickn@ch40m1um.qjz9zk</owner>
+  <owner>mgiuca@ch40m1um.qjz9zk</owner>
+  <owner>ortuno@ch40m1um.qjz9zk</owner>
   <summary>
     The number of times Bookmark Apps are launched, grouped by
     extensions::AppLaunchSource. The equivalent histogram on Android is called
@@ -273,7 +273,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Extensions.CheckForExternalUpdatesTime" units="ms"
     expires_after="M77">
-  <owner>rkaplow@chromium.org</owner>
+  <owner>rkaplow@ch40m1um.qjz9zk</owner>
   <summary>
     The amount of time that elapsed during
     ExtensionService::CheckForExternalUpdates.
@@ -282,8 +282,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Extensions.Checkup.NtpPromoClicked"
     enum="ExtensionCheckupMessage" expires_after="M85">
-  <owner>archanasimha@chromium.org</owner>
-  <owner>extensions-core@chromium.org</owner>
+  <owner>archanasimha@ch40m1um.qjz9zk</owner>
+  <owner>extensions-core@ch40m1um.qjz9zk</owner>
   <summary>
     Records every time the user clicks on the extensions checkup middle slot
     promo link. The user is served the promo if they are part of the
@@ -297,8 +297,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Extensions.Checkup.NtpPromoShown"
     enum="ExtensionCheckupMessage" expires_after="M85">
-  <owner>archanasimha@chromium.org</owner>
-  <owner>extensions-core@chromium.org</owner>
+  <owner>archanasimha@ch40m1um.qjz9zk</owner>
+  <owner>extensions-core@ch40m1um.qjz9zk</owner>
   <summary>
     Records every time the user is served the extensions checkup middle slot
     promo on the NTP. The user is served the promo if they are part of the
@@ -311,8 +311,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 </histogram>
 
 <histogram name="Extensions.Checkup.TimeSpent" units="ms" expires_after="M85">
-  <owner>archanasimha@chromium.org</owner>
-  <owner>extensions-core@chromium.org</owner>
+  <owner>archanasimha@ch40m1um.qjz9zk</owner>
+  <owner>extensions-core@ch40m1um.qjz9zk</owner>
   <summary>
     The amount of time passed from when the chrome://extensions page has
     finished loading till it is closed. We record the time elapsed once the
@@ -322,8 +322,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Extensions.ChromeExtensionsClientInitTime2"
     units="microseconds" expires_after="2019-12-01">
-  <owner>dbertoni@chromium.org</owner>
-  <owner>extensions-core@chromium.org</owner>
+  <owner>dbertoni@ch40m1um.qjz9zk</owner>
+  <owner>extensions-core@ch40m1um.qjz9zk</owner>
   <summary>
     The amount of elapsed time taken to initialize the ChromeExtensionsClient.
     Recorded once per client initialization, which happens once per instance of
@@ -333,9 +333,9 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Extensions.ContentVerification.ComputedHashesInitTime"
     units="ms" expires_after="2020-11-30">
-  <owner>lazyboy@chromium.org</owner>
-  <owner>rdevlin.cronin@chromium.org</owner>
-  <owner>extensions-core@chromium.org</owner>
+  <owner>lazyboy@ch40m1um.qjz9zk</owner>
+  <owner>rdevlin.cronin@ch40m1um.qjz9zk</owner>
+  <owner>extensions-core@ch40m1um.qjz9zk</owner>
   <summary>
     How long a successful initialization of computed_hashes.json file takes.
     Recorded when content verification needs to retrieve block hashes.
@@ -344,9 +344,9 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Extensions.ContentVerification.ComputedHashesReadResult"
     enum="BooleanSuccess" expires_after="2020-11-30">
-  <owner>lazyboy@chromium.org</owner>
-  <owner>rdevlin.cronin@chromium.org</owner>
-  <owner>extensions-core@chromium.org</owner>
+  <owner>lazyboy@ch40m1um.qjz9zk</owner>
+  <owner>rdevlin.cronin@ch40m1um.qjz9zk</owner>
+  <owner>extensions-core@ch40m1um.qjz9zk</owner>
   <summary>
     Whether or not computed_hashes.json file read and parse succeeded. Recorded
     when content verification needs to retrieve block hashes.
@@ -355,10 +355,10 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Extensions.ContentVerification.ComputeHashesOnInstallResult"
     enum="BooleanSuccess" expires_after="2021-02-28">
-  <owner>burunduk@chromium.org</owner>
-  <owner>lazyboy@chromium.org</owner>
-  <owner>rdevlin.cronin@chromium.org</owner>
-  <owner>extensions-core@chromium.org</owner>
+  <owner>burunduk@ch40m1um.qjz9zk</owner>
+  <owner>lazyboy@ch40m1um.qjz9zk</owner>
+  <owner>rdevlin.cronin@ch40m1um.qjz9zk</owner>
+  <owner>extensions-core@ch40m1um.qjz9zk</owner>
   <summary>
     Whether or not computed_hashes.json file was successfully generated and
     written during extension installation. Recorded during installation of an
@@ -371,10 +371,10 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Extensions.ContentVerification.ComputeHashesOnInstallTime"
     units="ms" expires_after="2021-02-28">
-  <owner>burunduk@chromium.org</owner>
-  <owner>lazyboy@chromium.org</owner>
-  <owner>rdevlin.cronin@chromium.org</owner>
-  <owner>extensions-core@chromium.org</owner>
+  <owner>burunduk@ch40m1um.qjz9zk</owner>
+  <owner>lazyboy@ch40m1um.qjz9zk</owner>
+  <owner>rdevlin.cronin@ch40m1um.qjz9zk</owner>
+  <owner>extensions-core@ch40m1um.qjz9zk</owner>
   <summary>
     The time taken to successfully create the computed_hashes.json file for an
     extension upon installation. The histogram is collected with
@@ -385,9 +385,9 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Extensions.ContentVerification.FetchResult"
     enum="BooleanSuccess" expires_after="2021-03-28">
-  <owner>lazyboy@chromium.org</owner>
-  <owner>rdevlin.cronin@chromium.org</owner>
-  <owner>extensions-core@chromium.org</owner>
+  <owner>lazyboy@ch40m1um.qjz9zk</owner>
+  <owner>rdevlin.cronin@ch40m1um.qjz9zk</owner>
+  <owner>extensions-core@ch40m1um.qjz9zk</owner>
   <summary>
     Whether or not fetching verified_contents.json succeeded. Recorded when the
     file wasn't available locally and we needed to fetch it from network.
@@ -396,8 +396,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Extensions.ContentVerification.ReadContentHashTime" units="ms"
     expires_after="2020-11-30">
-  <owner>lazyboy@chromium.org</owner>
-  <owner>rdevlin.cronin@chromium.org</owner>
+  <owner>lazyboy@ch40m1um.qjz9zk</owner>
+  <owner>rdevlin.cronin@ch40m1um.qjz9zk</owner>
   <summary>
     Time spent by ContentVerifier for a request to create a ContentHash
     instance. Recorded during an extension load completion or during an on
@@ -407,9 +407,9 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Extensions.ContentVerification.VerifiedContentsInitResult"
     enum="BooleanSuccess" expires_after="2020-11-30">
-  <owner>lazyboy@chromium.org</owner>
-  <owner>rdevlin.cronin@chromium.org</owner>
-  <owner>extensions-core@chromium.org</owner>
+  <owner>lazyboy@ch40m1um.qjz9zk</owner>
+  <owner>rdevlin.cronin@ch40m1um.qjz9zk</owner>
+  <owner>extensions-core@ch40m1um.qjz9zk</owner>
   <summary>
     Whether or not initializing verified_contents.json succeeded. Recorded
     during an extension load completion or during an on demand content
@@ -419,9 +419,9 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Extensions.ContentVerification.VerifiedContentsInitTime"
     units="ms" expires_after="2020-11-30">
-  <owner>lazyboy@chromium.org</owner>
-  <owner>rdevlin.cronin@chromium.org</owner>
-  <owner>extensions-core@chromium.org</owner>
+  <owner>lazyboy@ch40m1um.qjz9zk</owner>
+  <owner>rdevlin.cronin@ch40m1um.qjz9zk</owner>
+  <owner>extensions-core@ch40m1um.qjz9zk</owner>
   <summary>
     How long a successful initialization of verified_contents.json file takes.
     Recorded if Extensions.ContentVerification.VerifiedContentsInitResult = true
@@ -433,8 +433,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
     enum="ExtensionContextMenuAction" expires_after="never">
 <!-- expires-never: Monitoring extension usage. -->
 
-  <owner>rdevlin.cronin@chromium.org</owner>
-  <owner>karandeepb@chromium.org</owner>
+  <owner>rdevlin.cronin@ch40m1um.qjz9zk</owner>
+  <owner>karandeepb@ch40m1um.qjz9zk</owner>
   <summary>
     Records the action taken by the user from the extension icon context menu.
   </summary>
@@ -442,8 +442,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Extensions.CorruptExtensionBecameDisabled" units="units"
     expires_after="M85">
-  <owner>lazyboy@chromium.org</owner>
-  <owner>extensions-core@chromium.org</owner>
+  <owner>lazyboy@ch40m1um.qjz9zk</owner>
+  <owner>extensions-core@ch40m1um.qjz9zk</owner>
   <summary>
     Fired each time an extension was detected to be corrupted (contents not
     matching an expected content hash from the webstore) and was disabled.
@@ -452,9 +452,9 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Extensions.CorruptExtensionDisabledReason"
     enum="CorruptExtensionDisabledReason" expires_after="2021-09-21">
-  <owner>lazyboy@chromium.org</owner>
-  <owner>rockot@chromium.org</owner>
-  <owner>extensions-core@chromium.org</owner>
+  <owner>lazyboy@ch40m1um.qjz9zk</owner>
+  <owner>rockot@ch40m1um.qjz9zk</owner>
+  <owner>extensions-core@ch40m1um.qjz9zk</owner>
   <summary>
     The reason why an extension was detected to be corrupted. Recorded each time
     an extension is disabled due to corruption detection.
@@ -465,8 +465,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
     expires_after="never">
 <!-- expires-never: Used for monitoring corrupt extensions. -->
 
-  <owner>lazyboy@chromium.org</owner>
-  <owner>extensions-core@chromium.org</owner>
+  <owner>lazyboy@ch40m1um.qjz9zk</owner>
+  <owner>extensions-core@ch40m1um.qjz9zk</owner>
   <summary>
     Logged once at startup, this is the value of a counter that is incremented
     anytime we disable a corrupted extension because its content didn't match an
@@ -476,8 +476,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Extensions.CorruptExtensionWouldBeDisabled" units="units"
     expires_after="M85">
-  <owner>lazyboy@chromium.org</owner>
-  <owner>extensions-core@chromium.org</owner>
+  <owner>lazyboy@ch40m1um.qjz9zk</owner>
+  <owner>extensions-core@ch40m1um.qjz9zk</owner>
   <summary>
     Simiar to Extensions.CorruptExtensionBecameDisabled, but fires when we're in
     a bootstrapping mode and would have disabled an extension.
@@ -486,10 +486,10 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Extensions.CorruptPolicyExtensionDetected3"
     enum="ExtensionPolicyReinstallReason" expires_after="2020-11-30">
-  <owner>burunduk@chromium.org</owner>
-  <owner>lazyboy@chromium.org</owner>
-  <owner>poromov@chromium.org</owner>
-  <owner>extensions-core@chromium.org</owner>
+  <owner>burunduk@ch40m1um.qjz9zk</owner>
+  <owner>lazyboy@ch40m1um.qjz9zk</owner>
+  <owner>poromov@ch40m1um.qjz9zk</owner>
+  <owner>extensions-core@ch40m1um.qjz9zk</owner>
   <summary>
     Fires when we suspect corruption in an enterprise policy forced install
     extension and begin the process of reinstalling it, saving reason of such
@@ -503,10 +503,10 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Extensions.CorruptPolicyExtensionResolved" units="ms"
     expires_after="2021-03-28">
-  <owner>burunduk@chromium.org</owner>
-  <owner>lazyboy@chromium.org</owner>
-  <owner>extensions-core@chromium.org</owner>
-  <owner>managed-devices@google.com</owner>
+  <owner>burunduk@ch40m1um.qjz9zk</owner>
+  <owner>lazyboy@ch40m1um.qjz9zk</owner>
+  <owner>extensions-core@ch40m1um.qjz9zk</owner>
+  <owner>managed-devices@9oo91e.qjz9zk</owner>
   <summary>
     Fires when we've successfully resinstalled a corrupt enterprise policy
     force-installed extension, with a value indicating how long it took
@@ -516,7 +516,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Extensions.Database.Database.Restore"
     enum="LevelDBDatabaseCorruptionRestoreValue" expires_after="M85">
-  <owner>cmumford@chromium.org</owner>
+  <owner>cmumford@ch40m1um.qjz9zk</owner>
   <summary>
     The result of an attempt to recover from an attempt to open a database that
     failed as a result of corruption.
@@ -527,14 +527,14 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
     expires_after="never">
 <!-- expires-never: core storage metric; consumed in separate dashboard (go/chrome-storage-dashboard) -->
 
-  <owner>dmurph@chromium.org</owner>
-  <owner>pwnall@chromium.org</owner>
+  <owner>dmurph@ch40m1um.qjz9zk</owner>
+  <owner>pwnall@ch40m1um.qjz9zk</owner>
   <summary>The result of an open attempt to an Extensions database.</summary>
 </histogram>
 
 <histogram name="Extensions.Database.Value.Restore"
     enum="LevelDBValueCorruptionDeleteValue" expires_after="M85">
-  <owner>cmumford@chromium.org</owner>
+  <owner>cmumford@ch40m1um.qjz9zk</owner>
   <summary>
     The result of an attempt to delete a corrupted value from a database.
   </summary>
@@ -544,7 +544,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
     enum="DeclarativeAPIFunctionType" expires_after="never">
 <!-- expires-never: For monitoring usage of declarative APIs. -->
 
-  <owner>karandeepb@chromium.org</owner>
+  <owner>karandeepb@ch40m1um.qjz9zk</owner>
   <summary>
     Number of calls to the declarative API extension functions. This includes
     the declarativeContent and declarativeWebRequest APIs. Emitted when the
@@ -554,8 +554,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Extensions.DeclarativeContentActionCreated"
     enum="DeclarativeContentActionType" expires_after="2021-09-20">
-  <owner>kelvinjiang@chromium.org</owner>
-  <owner>extensions-core@chromium.org</owner>
+  <owner>kelvinjiang@ch40m1um.qjz9zk</owner>
+  <owner>extensions-core@ch40m1um.qjz9zk</owner>
   <summary>
     Number of times a declarative content action is created within an extension.
     Emitted when a new declarative content action is created.
@@ -564,8 +564,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Extensions.DeclarativeNetRequest.CreateVerifiedMatcherTime"
     units="ms" expires_after="2021-02-28">
-  <owner>karandeepb@chromium.org</owner>
-  <owner>extensions-core@chromium.org</owner>
+  <owner>karandeepb@ch40m1um.qjz9zk</owner>
+  <owner>extensions-core@ch40m1um.qjz9zk</owner>
   <summary>
     Measures the time taken to load a single indexed ruleset in the browser
     process for an extension. This includes reading the indexed ruleset file and
@@ -576,8 +576,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram
     name="Extensions.DeclarativeNetRequest.EvaluateBeforeRequestTime.SingleExtension2"
     units="microseconds" expires_after="2021-01-31">
-  <owner>karandeepb@chromium.org</owner>
-  <owner>extensions-core@chromium.org</owner>
+  <owner>karandeepb@ch40m1um.qjz9zk</owner>
+  <owner>extensions-core@ch40m1um.qjz9zk</owner>
   <summary>
     Time taken to evaluate the before-request action for a network request for a
     single extension ruleset. Emitted for each network request that is visible
@@ -589,8 +589,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram
     name="Extensions.DeclarativeNetRequest.EvaluateRequestTime.AllExtensions3"
     units="microseconds" expires_after="2021-01-31">
-  <owner>karandeepb@chromium.org</owner>
-  <owner>extensions-core@chromium.org</owner>
+  <owner>karandeepb@ch40m1um.qjz9zk</owner>
+  <owner>extensions-core@ch40m1um.qjz9zk</owner>
   <summary>
     Time taken to evaluate the action to take for the network request as per the
     Declarative Net Request API. This includes the time taken to evaluate all
@@ -602,8 +602,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Extensions.DeclarativeNetRequest.IndexAndPersistRulesTime"
     units="ms" expires_after="2020-12-30">
-  <owner>karandeepb@chromium.org</owner>
-  <owner>lazyboy@chromium.org</owner>
+  <owner>karandeepb@ch40m1um.qjz9zk</owner>
+  <owner>lazyboy@ch40m1um.qjz9zk</owner>
   <summary>
     Time taken to index and persist to disk, the deserialized json rules
     provided by an extension manifest for the Declarative Net Request API. This
@@ -614,8 +614,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Extensions.DeclarativeNetRequest.IsLargeRegexRule"
     enum="RegexRuleStatus" expires_after="2021-03-31">
-  <owner>karandeepb@chromium.org</owner>
-  <owner>extensions-core@chromium.org</owner>
+  <owner>karandeepb@ch40m1um.qjz9zk</owner>
+  <owner>extensions-core@ch40m1um.qjz9zk</owner>
   <summary>
     Logs whether a regex rule wasn't indexed since it exceeded the per-rule
     memory limit. Emitted for every regex rule an extension adds.
@@ -624,8 +624,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Extensions.DeclarativeNetRequest.LoadRulesetResult"
     enum="LoadRulesetResult" expires_after="2021-02-28">
-  <owner>karandeepb@chromium.org</owner>
-  <owner>extensions-core@chromium.org</owner>
+  <owner>karandeepb@ch40m1um.qjz9zk</owner>
+  <owner>extensions-core@ch40m1um.qjz9zk</owner>
   <summary>
     Records the result of loading an extension ruleset for the Declarative Net
     Request API. Emitted whenever a single extension ruleset is loaded.
@@ -634,8 +634,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Extensions.DeclarativeNetRequest.ManifestEnabledRulesCount2"
     units="rules" expires_after="2021-03-31">
-  <owner>karandeepb@chromium.org</owner>
-  <owner>extensions-core@chromium.org</owner>
+  <owner>karandeepb@ch40m1um.qjz9zk</owner>
+  <owner>extensions-core@ch40m1um.qjz9zk</owner>
   <summary>
     The number of enabled indexed declarative rules provided by an extension
     manifest for the Declarative Net Request API. This is emitted whenever a
@@ -645,8 +645,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Extensions.DeclarativeNetRequest.ManifestRulesCount2"
     units="rules" expires_after="2021-03-31">
-  <owner>karandeepb@chromium.org</owner>
-  <owner>extensions-core@chromium.org</owner>
+  <owner>karandeepb@ch40m1um.qjz9zk</owner>
+  <owner>extensions-core@ch40m1um.qjz9zk</owner>
   <summary>
     The number of indexed declarative rules provided by an extension manifest
     for the Declarative Net Request API. This also includes rules from disabled
@@ -657,8 +657,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Extensions.DeclarativeNetRequest.ReadDynamicRulesJSONStatus"
     enum="ReadDynamicRulesJSONStatus" expires_after="2020-12-30">
-  <owner>karandeepb@chromium.org</owner>
-  <owner>rdevlin.cronin@chromium.org</owner>
+  <owner>karandeepb@ch40m1um.qjz9zk</owner>
+  <owner>rdevlin.cronin@ch40m1um.qjz9zk</owner>
   <summary>
     Indicates the result of reading the dynamic JSON rules for an extension from
     the disk. Logged whenever an extension calls the getDynamicRules extension
@@ -669,9 +669,9 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Extensions.DeclarativeNetRequest.RequestHeaderAdded"
     enum="WebRequest.RequestHeader" expires_after="2021-07-01">
-  <owner>karandeepb@chromium.org</owner>
-  <owner>rdevlin.cronin@chromium.org</owner>
-  <owner>kelvinjiang@chromium.org</owner>
+  <owner>karandeepb@ch40m1um.qjz9zk</owner>
+  <owner>rdevlin.cronin@ch40m1um.qjz9zk</owner>
+  <owner>kelvinjiang@ch40m1um.qjz9zk</owner>
   <summary>
     Records the request header added by extensions using the
     DeclarativeNetRequest API. Recorded for each network request during the
@@ -681,9 +681,9 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Extensions.DeclarativeNetRequest.RequestHeaderChanged"
     enum="WebRequest.RequestHeader" expires_after="2021-07-01">
-  <owner>karandeepb@chromium.org</owner>
-  <owner>rdevlin.cronin@chromium.org</owner>
-  <owner>kelvinjiang@chromium.org</owner>
+  <owner>karandeepb@ch40m1um.qjz9zk</owner>
+  <owner>rdevlin.cronin@ch40m1um.qjz9zk</owner>
+  <owner>kelvinjiang@ch40m1um.qjz9zk</owner>
   <summary>
     Records the request header modified by extensions using the
     DeclarativeNetRequest API. Recorded for each network request during the
@@ -693,9 +693,9 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Extensions.DeclarativeNetRequest.RequestHeaderRemoved"
     enum="WebRequest.RequestHeader" expires_after="2021-07-01">
-  <owner>karandeepb@chromium.org</owner>
-  <owner>rdevlin.cronin@chromium.org</owner>
-  <owner>kelvinjiang@chromium.org</owner>
+  <owner>karandeepb@ch40m1um.qjz9zk</owner>
+  <owner>rdevlin.cronin@ch40m1um.qjz9zk</owner>
+  <owner>kelvinjiang@ch40m1um.qjz9zk</owner>
   <summary>
     Records the request header removed by extensions using the
     DeclarativeNetRequest API. Recorded for each network request during the
@@ -705,9 +705,9 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Extensions.DeclarativeNetRequest.ResponseHeaderAdded"
     enum="WebRequest.ResponseHeader" expires_after="2021-07-01">
-  <owner>karandeepb@chromium.org</owner>
-  <owner>rdevlin.cronin@chromium.org</owner>
-  <owner>kelvinjiang@chromium.org</owner>
+  <owner>karandeepb@ch40m1um.qjz9zk</owner>
+  <owner>rdevlin.cronin@ch40m1um.qjz9zk</owner>
+  <owner>kelvinjiang@ch40m1um.qjz9zk</owner>
   <summary>
     Records the response header added by extensions using the
     DeclarativeNetRequest API. Recorded for each network request during the
@@ -717,9 +717,9 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Extensions.DeclarativeNetRequest.ResponseHeaderChanged"
     enum="WebRequest.ResponseHeader" expires_after="2021-07-01">
-  <owner>karandeepb@chromium.org</owner>
-  <owner>rdevlin.cronin@chromium.org</owner>
-  <owner>kelvinjiang@chromium.org</owner>
+  <owner>karandeepb@ch40m1um.qjz9zk</owner>
+  <owner>rdevlin.cronin@ch40m1um.qjz9zk</owner>
+  <owner>kelvinjiang@ch40m1um.qjz9zk</owner>
   <summary>
     Records the response header modified by extensions using the
     DeclarativeNetRequest API. Recorded for each network request during the
@@ -729,9 +729,9 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Extensions.DeclarativeNetRequest.ResponseHeaderRemoved"
     enum="WebRequest.ResponseHeader" expires_after="2021-07-01">
-  <owner>karandeepb@chromium.org</owner>
-  <owner>rdevlin.cronin@chromium.org</owner>
-  <owner>kelvinjiang@chromium.org</owner>
+  <owner>karandeepb@ch40m1um.qjz9zk</owner>
+  <owner>rdevlin.cronin@ch40m1um.qjz9zk</owner>
+  <owner>kelvinjiang@ch40m1um.qjz9zk</owner>
   <summary>
     Records the response header removed by extensions using the
     DeclarativeNetRequest API. Recorded for each network request during the
@@ -741,8 +741,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Extensions.DeclarativeNetRequest.RulesetReindexSuccessful"
     enum="BooleanSuccess" expires_after="2020-12-30">
-  <owner>karandeepb@chromium.org</owner>
-  <owner>lazyboy@chromium.org</owner>
+  <owner>karandeepb@ch40m1um.qjz9zk</owner>
+  <owner>lazyboy@ch40m1um.qjz9zk</owner>
   <summary>
     Indicates whether reindexing of a Declarative Net Request ruleset was
     successful. Called whenever a JSON ruleset for an extension is reindexed,
@@ -753,8 +753,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Extensions.DeclarativeNetRequest.UpdateDynamicRulesStatus"
     enum="UpdateDynamicRulesStatus" expires_after="2020-12-30">
-  <owner>karandeepb@chromium.org</owner>
-  <owner>rdevlin.cronin@chromium.org</owner>
+  <owner>karandeepb@ch40m1um.qjz9zk</owner>
+  <owner>rdevlin.cronin@ch40m1um.qjz9zk</owner>
   <summary>
     Indicates the result of an extension function call to add or remove dynamic
     rules. Logged every time an extension calls the addDynamicRules or
@@ -770,8 +770,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Extensions.DeclarativeSetIconWasVisible" enum="BooleanVisible"
     expires_after="2019-09-07">
-  <owner>dbertoni@chromium.org</owner>
-  <owner>extensions-core@chromium.org</owner>
+  <owner>dbertoni@ch40m1um.qjz9zk</owner>
+  <owner>extensions-core@ch40m1um.qjz9zk</owner>
   <summary>
     Reports whether an icon specified in the declarativeContent.SetIcon API is
     considered visible by our icon analysis code. This stat is emitted when we
@@ -782,8 +782,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Extensions.DeclarativeSetIconWasVisibleRendered"
     enum="BooleanVisible" expires_after="2019-09-07">
-  <owner>dbertoni@chromium.org</owner>
-  <owner>extensions-core@chromium.org</owner>
+  <owner>dbertoni@ch40m1um.qjz9zk</owner>
+  <owner>extensions-core@ch40m1um.qjz9zk</owner>
   <summary>
     Reports whether an icon specified in the declarativeContent.SetIcon API is
     considered visible by our icon analysis code. This stat is emitted when we
@@ -799,8 +799,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Extensions.DidCreateScriptContext_Blessed" units="ms"
     expires_after="2020-12-01">
-  <owner>rdevlin.cronin@chromium.org</owner>
-  <owner>extensions-core@chromium.org</owner>
+  <owner>rdevlin.cronin@ch40m1um.qjz9zk</owner>
+  <owner>extensions-core@ch40m1um.qjz9zk</owner>
   <summary>
     Part of the suite of Extensions.DidCreateScriptContext_* metrics. Records
     the time taken to install Extension JavaScript bindings per blessed
@@ -811,8 +811,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Extensions.DidCreateScriptContext_BlessedWebPage" units="ms"
     expires_after="2020-12-01">
-  <owner>rdevlin.cronin@chromium.org</owner>
-  <owner>extensions-core@chromium.org</owner>
+  <owner>rdevlin.cronin@ch40m1um.qjz9zk</owner>
+  <owner>extensions-core@ch40m1um.qjz9zk</owner>
   <summary>
     Part of the suite of Extensions.DidCreateScriptContext_* metrics. Records
     the time taken to install Extension JavaScript bindings per blessed web page
@@ -822,8 +822,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Extensions.DidCreateScriptContext_ContentScript" units="ms"
     expires_after="2020-12-01">
-  <owner>rdevlin.cronin@chromium.org</owner>
-  <owner>extensions-core@chromium.org</owner>
+  <owner>rdevlin.cronin@ch40m1um.qjz9zk</owner>
+  <owner>extensions-core@ch40m1um.qjz9zk</owner>
   <summary>
     Part of the suite of Extensions.DidCreateScriptContext_* metrics. Records
     the time taken to install Extension JavaScript bindings per content script
@@ -833,8 +833,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Extensions.DidCreateScriptContext_LockScreenExtension"
     units="units" expires_after="2020-12-01">
-  <owner>rdevlin.cronin@chromium.org</owner>
-  <owner>extensions-core@chromium.org</owner>
+  <owner>rdevlin.cronin@ch40m1um.qjz9zk</owner>
+  <owner>extensions-core@ch40m1um.qjz9zk</owner>
   <summary>
     Part of the suite of Extensions.DidCreateScriptContext_* metrics. Records
     the time taken to install Extension JavaScript bindings per content script
@@ -846,8 +846,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Extensions.DidCreateScriptContext_Unblessed" units="ms"
     expires_after="2020-12-01">
-  <owner>rdevlin.cronin@chromium.org</owner>
-  <owner>extensions-core@chromium.org</owner>
+  <owner>rdevlin.cronin@ch40m1um.qjz9zk</owner>
+  <owner>extensions-core@ch40m1um.qjz9zk</owner>
   <summary>
     Part of the suite of Extensions.DidCreateScriptContext_* metrics. Records
     the time taken to install Extension JavaScript bindings per unblessed
@@ -857,8 +857,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Extensions.DidCreateScriptContext_Unspecified" units="ms"
     expires_after="2020-12-01">
-  <owner>rdevlin.cronin@chromium.org</owner>
-  <owner>extensions-core@chromium.org</owner>
+  <owner>rdevlin.cronin@ch40m1um.qjz9zk</owner>
+  <owner>extensions-core@ch40m1um.qjz9zk</owner>
   <summary>
     Part of the suite of Extensions.DidCreateScriptContext_* metrics. Records
     the time taken to install Extension JavaScript bindings in an unknown type
@@ -868,8 +868,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Extensions.DidCreateScriptContext_WebPage" units="ms"
     expires_after="2020-12-01">
-  <owner>rdevlin.cronin@chromium.org</owner>
-  <owner>extensions-core@chromium.org</owner>
+  <owner>rdevlin.cronin@ch40m1um.qjz9zk</owner>
+  <owner>extensions-core@ch40m1um.qjz9zk</owner>
   <summary>
     Part of the suite of Extensions.DidCreateScriptContext_* metrics. Records
     the time taken to install Extension JavaScript bindings per web page context
@@ -879,8 +879,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Extensions.DidCreateScriptContext_WebUI" units="ms"
     expires_after="2020-12-01">
-  <owner>rdevlin.cronin@chromium.org</owner>
-  <owner>extensions-core@chromium.org</owner>
+  <owner>rdevlin.cronin@ch40m1um.qjz9zk</owner>
+  <owner>extensions-core@ch40m1um.qjz9zk</owner>
   <summary>
     Part of the suite of Extensions.DidCreateScriptContext_* metrics. Records
     the time taken to install Extension JavaScript bindings per WebUI context
@@ -890,8 +890,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Extensions.DidInitializeServiceWorkerContextOnWorkerThread"
     units="ms" expires_after="2020-12-01">
-  <owner>rdevlin.cronin@chromium.org</owner>
-  <owner>extensions-core@chromium.org</owner>
+  <owner>rdevlin.cronin@ch40m1um.qjz9zk</owner>
+  <owner>extensions-core@ch40m1um.qjz9zk</owner>
   <summary>
     Records the time taken to install Extension JavaScript bindings per service
     worker context.
@@ -901,7 +901,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram name="Extensions.Disabled" units="units" expires_after="never">
 <!-- expires-never: Used for monitoring user extension usage. -->
 
-  <owner>rdevlin.cronin@chromium.org</owner>
+  <owner>rdevlin.cronin@ch40m1um.qjz9zk</owner>
   <summary>
     The number of extensions that are disabled at browser startup.
   </summary>
@@ -911,7 +911,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
     expires_after="never">
 <!-- expires-never: Used for monitoring user extension usage. -->
 
-  <owner>rdevlin.cronin@chromium.org</owner>
+  <owner>rdevlin.cronin@ch40m1um.qjz9zk</owner>
   <summary>
     The number of extensions that are disabled at browser startup due to
     permissions increases.
@@ -920,7 +920,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Extensions.DisabledUIUserResponse2"
     enum="ExtensionDisabledUIUserResponse" expires_after="M77">
-  <owner>catmullings@chromium.org</owner>
+  <owner>catmullings@ch40m1um.qjz9zk</owner>
   <summary>
     User response to the dialog shown when an extension is disabled due to an
     update requiring more permissions. A count is recorded when the user takes
@@ -931,7 +931,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Extensions.DisabledUIUserResponseRemoteInstall2"
     enum="ExtensionDisabledUIUserResponse" expires_after="M77">
-  <owner>catmullings@chromium.org</owner>
+  <owner>catmullings@ch40m1um.qjz9zk</owner>
   <summary>
     User response to the dialog shown when an extension is disabled due to it
     having been installed remotely. A count is recorded when the user takes an
@@ -942,8 +942,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Extensions.DisableReason" enum="ExtensionDisableReason"
     expires_after="2021-01-31">
-  <owner>rdevlin.cronin@chromium.org</owner>
-  <owner>extensions-core@chromium.org</owner>
+  <owner>rdevlin.cronin@ch40m1um.qjz9zk</owner>
+  <owner>extensions-core@ch40m1um.qjz9zk</owner>
   <summary>
     The count of disabled extensions at startup grouped by disble reason from
     disable_reason::DisableReason. When an extension is disabled, it can be for
@@ -955,8 +955,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Extensions.DynamicExtensionActionIconWasVisible"
     enum="BooleanVisible" expires_after="2019-09-07">
-  <owner>dbertoni@chromium.org</owner>
-  <owner>extensions-core@chromium.org</owner>
+  <owner>dbertoni@ch40m1um.qjz9zk</owner>
+  <owner>extensions-core@ch40m1um.qjz9zk</owner>
   <summary>
     Reports whether a call to set a dynamic icon in the toolbar passed an icon
     considered visible by our icon analysis code.
@@ -965,8 +965,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Extensions.DynamicExtensionActionIconWasVisibleRendered"
     enum="BooleanVisible" expires_after="2019-09-07">
-  <owner>dbertoni@chromium.org</owner>
-  <owner>extensions-core@chromium.org</owner>
+  <owner>dbertoni@ch40m1um.qjz9zk</owner>
+  <owner>extensions-core@ch40m1um.qjz9zk</owner>
   <summary>
     Reports whether a call to set a dynamic icon in the toolbar passed an icon
     considered visible by our icon analysis code.
@@ -980,8 +980,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Extensions.ErrorCodeFromCrxOpen" units="units"
     expires_after="M85">
-  <owner>rdevlin.cronin@chromium.org</owner>
-  <owner>extensions-core@chromium.org</owner>
+  <owner>rdevlin.cronin@ch40m1um.qjz9zk</owner>
+  <owner>extensions-core@ch40m1um.qjz9zk</owner>
   <summary>
     If opening the CRX file for unpacking fails, this integer is the error code
     given by the OS.
@@ -990,8 +990,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Extensions.EventlessEventPages" units="units"
     expires_after="2021-06-01">
-  <owner>rdevlin.cronin@chromium.org</owner>
-  <owner>extensions-core@chromium.org</owner>
+  <owner>rdevlin.cronin@ch40m1um.qjz9zk</owner>
+  <owner>extensions-core@ch40m1um.qjz9zk</owner>
   <summary>
     The number of extensions with event pages that have no registered event
     listeners at profile startup. (This may indicate something has gone wrong;
@@ -1003,8 +1003,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
     expires_after="never">
 <!-- expires-never: Monitoring core extensions platform behavior. -->
 
-  <owner>rdevlin.cronin@chromium.org</owner>
-  <owner>extensions-core@chromium.org</owner>
+  <owner>rdevlin.cronin@ch40m1um.qjz9zk</owner>
+  <owner>extensions-core@ch40m1um.qjz9zk</owner>
   <summary>
     The time between an extension's event page loading its first URL and the
     event page later shutting down.
@@ -1013,8 +1013,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Extensions.EventPageIdleTime" units="ms"
     expires_after="2020-12-01">
-  <owner>rdevlin.cronin@chromium.org</owner>
-  <owner>extensions-core@chromium.org</owner>
+  <owner>rdevlin.cronin@ch40m1um.qjz9zk</owner>
+  <owner>extensions-core@ch40m1um.qjz9zk</owner>
   <summary>The time an extension's event page has spent unloaded.</summary>
 </histogram>
 
@@ -1022,8 +1022,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
     expires_after="never">
 <!-- expires-never: Monitoring core extensions platform behavior. -->
 
-  <owner>rdevlin.cronin@chromium.org</owner>
-  <owner>extensions-core@chromium.org</owner>
+  <owner>rdevlin.cronin@ch40m1um.qjz9zk</owner>
+  <owner>extensions-core@ch40m1um.qjz9zk</owner>
   <summary>
     The time taken for an extension's event page to load its initial URL.
   </summary>
@@ -1033,15 +1033,15 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
     expires_after="never">
 <!-- expires-never: Monitoring core extensions platform behavior. -->
 
-  <owner>rdevlin.cronin@chromium.org</owner>
-  <owner>extensions-core@chromium.org</owner>
+  <owner>rdevlin.cronin@ch40m1um.qjz9zk</owner>
+  <owner>extensions-core@ch40m1um.qjz9zk</owner>
   <summary>Recorded every time an event is dispatched to an extension.</summary>
 </histogram>
 
 <histogram name="Extensions.Events.DispatchToComponent" enum="ExtensionEvents"
     expires_after="2021-06-01">
-  <owner>rdevlin.cronin@chromium.org</owner>
-  <owner>extensions-core@chromium.org</owner>
+  <owner>rdevlin.cronin@ch40m1um.qjz9zk</owner>
+  <owner>extensions-core@ch40m1um.qjz9zk</owner>
   <summary>
     Recorded every time an event is dispatched to a *component* extension.
     Otherwise identical to Extensions.Events.Dispatched.
@@ -1052,8 +1052,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
     enum="ExtensionEvents" expires_after="never">
 <!-- expires-never: Monitoring core extensions platform behavior. -->
 
-  <owner>rdevlin.cronin@chromium.org</owner>
-  <owner>extensions-core@chromium.org</owner>
+  <owner>rdevlin.cronin@ch40m1um.qjz9zk</owner>
+  <owner>extensions-core@ch40m1um.qjz9zk</owner>
   <summary>
     Recorded every time an event is dispatched to an extension with a persistent
     background page. The event may or may not have been dispatched to the
@@ -1067,8 +1067,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
     enum="ExtensionEvents" expires_after="never">
 <!-- expires-never: Monitoring core extensions platform behavior. -->
 
-  <owner>rdevlin.cronin@chromium.org</owner>
-  <owner>extensions-core@chromium.org</owner>
+  <owner>rdevlin.cronin@ch40m1um.qjz9zk</owner>
+  <owner>extensions-core@ch40m1um.qjz9zk</owner>
   <summary>
     Recorded every time an event is dispatched to an extension with an event
     page that was already running (i.e. at some point had been woken from its
@@ -1081,8 +1081,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Extensions.Events.DispatchWithServiceWorkerBackground"
     enum="ExtensionEvents" expires_after="2021-10-01">
-  <owner>lazyboy@chromium.org</owner>
-  <owner>dbertoni@chromium.org</owner>
+  <owner>lazyboy@ch40m1um.qjz9zk</owner>
+  <owner>dbertoni@ch40m1um.qjz9zk</owner>
   <summary>
     Recorded every time an event is dispatched to a service worker based
     extension background context. When this metric is recorded,
@@ -1094,8 +1094,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
     enum="ExtensionEvents" expires_after="never">
 <!-- expires-never: Monitoring core extensions platform behavior. -->
 
-  <owner>rdevlin.cronin@chromium.org</owner>
-  <owner>extensions-core@chromium.org</owner>
+  <owner>rdevlin.cronin@ch40m1um.qjz9zk</owner>
+  <owner>extensions-core@ch40m1um.qjz9zk</owner>
   <summary>
     Recorded every time an event is dispatched to an extension with an event
     page that was suspended. This implies that firing this event woke up the
@@ -1108,8 +1108,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Extensions.ExtensionAddDisabledRemotelyReason"
     enum="ExtensionUpdateCheckDataKey" expires_after="2021-02-01">
-  <owner>bdea@chromium.org</owner>
-  <owner>chrome-safebrowsing-alerts@google.com</owner>
+  <owner>bdea@ch40m1um.qjz9zk</owner>
+  <owner>chrome-safebrowsing-alerts@9oo91e.qjz9zk</owner>
   <summary>
     Recorded when an extension is already disabled and a new disable reason is
     added to the extension. The new disable reason is retrieved from the update
@@ -1119,9 +1119,9 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Extensions.ExtensionCacheCount" units="units"
     expires_after="2021-01-31">
-  <owner>burunduk@chromium.org</owner>
-  <owner>snijhara@google.com</owner>
-  <owner>managed-devices@google.com</owner>
+  <owner>burunduk@ch40m1um.qjz9zk</owner>
+  <owner>snijhara@9oo91e.qjz9zk</owner>
+  <owner>managed-devices@9oo91e.qjz9zk</owner>
   <summary>
     Number of cached extensions on disk. Reported on Chrome OS during user
     session start.
@@ -1130,9 +1130,9 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Extensions.ExtensionCacheSize" units="MB"
     expires_after="2021-01-31">
-  <owner>burunduk@chromium.org</owner>
-  <owner>snijhara@google.com</owner>
-  <owner>managed-devices@google.com</owner>
+  <owner>burunduk@ch40m1um.qjz9zk</owner>
+  <owner>snijhara@9oo91e.qjz9zk</owner>
+  <owner>managed-devices@9oo91e.qjz9zk</owner>
   <summary>
     Total size of .crx files in cache on disk. Reported on Chrome OS during user
     session start.
@@ -1141,8 +1141,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Extensions.ExtensionDisabledRemotely"
     enum="ExtensionUpdateCheckDataKey" expires_after="2021-02-01">
-  <owner>bdea@chromium.org</owner>
-  <owner>chrome-safebrowsing-alerts@google.com</owner>
+  <owner>bdea@ch40m1um.qjz9zk</owner>
+  <owner>chrome-safebrowsing-alerts@9oo91e.qjz9zk</owner>
   <summary>
     The update service data key reasons that the update service encounters
     during an update check session using update client when disabling an
@@ -1154,7 +1154,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
     expires_after="never">
 <!-- expires-never: Monitoring core extension usage. -->
 
-  <owner>rdevlin.cronin@chromium.org</owner>
+  <owner>rdevlin.cronin@ch40m1um.qjz9zk</owner>
   <summary>
     Emitted when an extension is downloaded by the user (including webstore
     installs).
@@ -1165,7 +1165,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
     expires_after="never">
 <!-- expires-never: Monitoring core extension usage. -->
 
-  <owner>rdevlin.cronin@chromium.org</owner>
+  <owner>rdevlin.cronin@ch40m1um.qjz9zk</owner>
   <summary>
     The install location for a given extension. Recorded once per enabled
     extension on profile initialization.
@@ -1174,8 +1174,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Extensions.ExtensionReenabledRemotely" units="count"
     expires_after="2021-02-01">
-  <owner>bdea@chromium.org</owner>
-  <owner>chrome-safebrowsing-alerts@google.com</owner>
+  <owner>bdea@ch40m1um.qjz9zk</owner>
+  <owner>chrome-safebrowsing-alerts@9oo91e.qjz9zk</owner>
   <summary>
     Recorded when an extension that was previously only disabled remotely is
     re-enabled remotely during an update service session.
@@ -1192,8 +1192,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Extensions.ExtensionServiceInitTime" units="units"
     expires_after="2020-12-01">
-  <owner>rdevlin.cronin@chromium.org</owner>
-  <owner>extensions-core@chromium.org</owner>
+  <owner>rdevlin.cronin@ch40m1um.qjz9zk</owner>
+  <owner>extensions-core@ch40m1um.qjz9zk</owner>
   <summary>
     Time taken for the ExtensionService to initialize, including the time it
     takes to load the extensions for the service's profile and parse their
@@ -1204,8 +1204,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Extensions.ExtensionServiceNotifyReadyListenersTime"
     units="units" expires_after="2020-12-01">
-  <owner>rdevlin.cronin@chromium.org</owner>
-  <owner>extensions-core@chromium.org</owner>
+  <owner>rdevlin.cronin@ch40m1um.qjz9zk</owner>
+  <owner>extensions-core@ch40m1um.qjz9zk</owner>
   <summary>
     Time taken for the ExtensionService to notify all ready listeners that the
     extension system is now ready. This happens as part of the total
@@ -1216,8 +1216,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Extensions.ExtensionUninstalled" units="units"
     expires_after="2021-01-31">
-  <owner>rdevlin.cronin@chromium.org</owner>
-  <owner>extensions-core@chromium.org</owner>
+  <owner>rdevlin.cronin@ch40m1um.qjz9zk</owner>
+  <owner>extensions-core@ch40m1um.qjz9zk</owner>
   <summary>An extension has been uninstalled.</summary>
 </histogram>
 
@@ -1250,8 +1250,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Extensions.FaviconResourceRequested" enum="ExtensionType"
     expires_after="2021-01-31">
-  <owner>archanasimha@chromium.org</owner>
-  <owner>extensions-core@chromium.org</owner>
+  <owner>archanasimha@ch40m1um.qjz9zk</owner>
+  <owner>extensions-core@ch40m1um.qjz9zk</owner>
   <summary>
     Records when an extension with the chrome://favicon host permission makes a
     network level request for a favicon resource.
@@ -1260,8 +1260,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Extensions.FeatureProviderStaticInitTime" units="ms"
     expires_after="M90">
-  <owner>rdevlin.cronin@chromium.org</owner>
-  <owner>extensions-core@chromium.org</owner>
+  <owner>rdevlin.cronin@ch40m1um.qjz9zk</owner>
+  <owner>extensions-core@ch40m1um.qjz9zk</owner>
   <summary>
     The amount of time that elapsed during extensions::FeatureProvider::Static.
     Only measured while in the browser process.
@@ -1270,7 +1270,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Extensions.FileAccessAllowed" units="units"
     expires_after="2018-08-30">
-  <owner>rdevlin.cronin@chromium.org</owner>
+  <owner>rdevlin.cronin@ch40m1um.qjz9zk</owner>
   <summary>
     The number of extensions (and friends) that could have been given access to
     the file:// scheme, and were, for users that have at least one extension
@@ -1283,7 +1283,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Extensions.FileAccessNotAllowed" units="units"
     expires_after="2018-08-30">
-  <owner>rdevlin.cronin@chromium.org</owner>
+  <owner>rdevlin.cronin@ch40m1um.qjz9zk</owner>
   <summary>
     The number of extensions (and friends) that could have been given access to
     the file:// scheme, but weren't, for users that have at least one extension
@@ -1296,9 +1296,9 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Extensions.ForceInstalledAndBlackListed" units="count"
     expires_after="2021-03-28">
-  <owner>swapnilgupta@google.com</owner>
-  <owner>burunduk@chromium.org</owner>
-  <owner>managed-devices@google.com</owner>
+  <owner>swapnilgupta@9oo91e.qjz9zk</owner>
+  <owner>burunduk@ch40m1um.qjz9zk</owner>
+  <owner>managed-devices@9oo91e.qjz9zk</owner>
   <summary>
     Number of enterprise policy forced extensions that are blacklisted and thus
     not loaded after 5 minutes if at least one of policy forced extensions is
@@ -1309,9 +1309,9 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram name="Extensions.ForceInstalledCacheStatus"
     enum="ExtensionInstallationDownloadingCacheStatus"
     expires_after="2021-03-28">
-  <owner>swapnilgupta@google.com</owner>
-  <owner>burunduk@chromium.org</owner>
-  <owner>poromov@chromium.org</owner>
+  <owner>swapnilgupta@9oo91e.qjz9zk</owner>
+  <owner>burunduk@ch40m1um.qjz9zk</owner>
+  <owner>poromov@ch40m1um.qjz9zk</owner>
   <summary>
     Status of cache entry about enterprise policy forced extension. Recorded for
     each forced extension.
@@ -1320,9 +1320,9 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Extensions.ForceInstalledCreationStage"
     enum="ExtensionInstallCreationStage" expires_after="2021-01-24">
-  <owner>swapnilgupta@google.com</owner>
-  <owner>burunduk@chromium.org</owner>
-  <owner>managed-devices@google.com</owner>
+  <owner>swapnilgupta@9oo91e.qjz9zk</owner>
+  <owner>burunduk@ch40m1um.qjz9zk</owner>
+  <owner>managed-devices@9oo91e.qjz9zk</owner>
   <summary>
     The last known intermediate stage of extension when the extension
     installation stage if CREATED if failure reason was not recorded
@@ -1335,9 +1335,9 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Extensions.ForceInstalledDownloadingStage"
     enum="ExtensionInstallationDownloadingStage" expires_after="2021-03-28">
-  <owner>burunduk@chromium.org</owner>
-  <owner>swapnilgupta@google.com</owner>
-  <owner>managed-devices@google.com</owner>
+  <owner>burunduk@ch40m1um.qjz9zk</owner>
+  <owner>swapnilgupta@9oo91e.qjz9zk</owner>
+  <owner>managed-devices@9oo91e.qjz9zk</owner>
   <summary>
     The last known downloading stage of extension downloading process if failure
     reason was not recorded and installing stage is DOWNLOADING, so it's
@@ -1351,9 +1351,9 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram name="Extensions.ForceInstalledFailureCacheStatus"
     enum="ExtensionInstallationDownloadingCacheStatus"
     expires_after="2021-03-28">
-  <owner>burunduk@chromium.org</owner>
-  <owner>swapnilgupta@google.com</owner>
-  <owner>managed-devices@google.com</owner>
+  <owner>burunduk@ch40m1um.qjz9zk</owner>
+  <owner>swapnilgupta@9oo91e.qjz9zk</owner>
+  <owner>managed-devices@9oo91e.qjz9zk</owner>
   <summary>
     Status of cache entry about enterprise policy forced extension which failed
     to install. Recorded for each forced extension that failed to install after
@@ -1365,9 +1365,9 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Extensions.ForceInstalledFailureCrxInstallError"
     enum="ExtensionInstallationCrxInstallError" expires_after="2021-03-28">
-  <owner>burunduk@chromium.org</owner>
-  <owner>swapnilgupta@google.com</owner>
-  <owner>managed-devices@google.com</owner>
+  <owner>burunduk@ch40m1um.qjz9zk</owner>
+  <owner>swapnilgupta@9oo91e.qjz9zk</owner>
+  <owner>managed-devices@9oo91e.qjz9zk</owner>
   <summary>
     Detailed reason why CRX installation failed for enterprise policy forced
     extensions. Recorded for each forced extension that failed to install after
@@ -1378,9 +1378,9 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Extensions.ForceInstalledFailureManifestInvalidAppStatusError"
     enum="ManifestInvalidAppStatusError" expires_after="2021-03-15">
-  <owner>swapnilgupta@google.com</owner>
-  <owner>burunduk@chromium.org</owner>
-  <owner>managed-devices@google.com</owner>
+  <owner>swapnilgupta@9oo91e.qjz9zk</owner>
+  <owner>burunduk@ch40m1um.qjz9zk</owner>
+  <owner>managed-devices@9oo91e.qjz9zk</owner>
   <summary>
     The detailed reason why enterprise policy forced extensions had failed to
     install because fetched update manifest was invalid due to app status error.
@@ -1393,9 +1393,9 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Extensions.ForceInstalledFailureManifestInvalidErrorDetail2"
     enum="ManifestInvalidError" expires_after="2021-03-15">
-  <owner>swapnilgupta@google.com</owner>
-  <owner>burunduk@chromium.org</owner>
-  <owner>managed-devices@google.com</owner>
+  <owner>swapnilgupta@9oo91e.qjz9zk</owner>
+  <owner>burunduk@ch40m1um.qjz9zk</owner>
+  <owner>managed-devices@9oo91e.qjz9zk</owner>
   <summary>
     The detailed reason why enterprise policy forced extensions had failed to
     install because fetched update manifest was invalid. Recorded for each
@@ -1410,10 +1410,10 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Extensions.ForceInstalledFailureNoUpdatesInfo"
     enum="ExtensionNoUpdatesInfo" expires_after="2021-01-31">
-  <owner>snijhara@google.com</owner>
-  <owner>swapnilgupta@google.com</owner>
-  <owner>burunduk@chromium.org</owner>
-  <owner>managed-devices@google.com</owner>
+  <owner>snijhara@9oo91e.qjz9zk</owner>
+  <owner>swapnilgupta@9oo91e.qjz9zk</owner>
+  <owner>burunduk@ch40m1um.qjz9zk</owner>
+  <owner>managed-devices@9oo91e.qjz9zk</owner>
   <summary>
     The info field in the update manifest fetched from the server for enterprise
     policy forced extensions. Recorded for each forced extension for which the
@@ -1428,9 +1428,9 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
     enum="ExtensionInstallationFailureReason" expires_after="2021-03-28">
 <!-- Name completed by histogram_suffixes name="ExtensionSource" -->
 
-  <owner>burunduk@chromium.org</owner>
-  <owner>swapnilgupta@google.com</owner>
-  <owner>managed-devices@google.com</owner>
+  <owner>burunduk@ch40m1um.qjz9zk</owner>
+  <owner>swapnilgupta@9oo91e.qjz9zk</owner>
+  <owner>managed-devices@9oo91e.qjz9zk</owner>
   <summary>
     The reason why enterprise policy forced extensions were not installed.
     Recorded for each forced extension that failed to install after 5 minutes.
@@ -1445,9 +1445,9 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Extensions.ForceInstalledFailureSandboxUnpackFailureReason"
     enum="ExtensionUnpackFailureReason" expires_after="2021-03-28">
-  <owner>burunduk@chromium.org</owner>
-  <owner>swapnilgupta@google.com</owner>
-  <owner>managed-devices@google.com</owner>
+  <owner>burunduk@ch40m1um.qjz9zk</owner>
+  <owner>swapnilgupta@9oo91e.qjz9zk</owner>
+  <owner>managed-devices@9oo91e.qjz9zk</owner>
   <summary>
     The reason why enterprise policy forced extensions had failed to unpack.
     Recorded for each forced extension that failed to install after 5 minutes
@@ -1458,9 +1458,9 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Extensions.ForceInstalledFailureSessionType"
     enum="SessionType" expires_after="2021-03-28">
-  <owner>burunduk@chromium.org</owner>
-  <owner>swapnilgupta@google.com</owner>
-  <owner>managed-devices@google.com</owner>
+  <owner>burunduk@ch40m1um.qjz9zk</owner>
+  <owner>swapnilgupta@9oo91e.qjz9zk</owner>
+  <owner>managed-devices@9oo91e.qjz9zk</owner>
   <summary>
     The type of session in case enterprise policy forced extensions were not
     installed. Recorded for each force installed extension which failed to
@@ -1472,9 +1472,9 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram name="Extensions.ForceInstalledFailureWithCrxHeaderInvalidIsCWS"
     enum="IsForceInstalledExtensionFailedWithCrxHeaderInvalidFromCWSBoolean"
     expires_after="2021-01-24">
-  <owner>swapnilgupta@google.com</owner>
-  <owner>burunduk@chromium.org</owner>
-  <owner>managed-devices@google.com</owner>
+  <owner>swapnilgupta@9oo91e.qjz9zk</owner>
+  <owner>burunduk@ch40m1um.qjz9zk</owner>
+  <owner>managed-devices@9oo91e.qjz9zk</owner>
   <summary>
     Records whether the extension is from the Chrome Web Store or not. Recorded
     for each forced extension that failed to install after 5 minutes with
@@ -1486,10 +1486,10 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram
     name="Extensions.ForceInstalledFailureWithCrxHeaderInvalidIsFromCache"
     enum="BooleanCacheHit" expires_after="2021-01-24">
-  <owner>swapnilgupta@google.com</owner>
-  <owner>burunduk@chromium.org</owner>
-  <owner>snijhara@google.com</owner>
-  <owner>managed-devices@google.com</owner>
+  <owner>swapnilgupta@9oo91e.qjz9zk</owner>
+  <owner>burunduk@ch40m1um.qjz9zk</owner>
+  <owner>snijhara@9oo91e.qjz9zk</owner>
+  <owner>managed-devices@9oo91e.qjz9zk</owner>
   <summary>
     Records whether the extension is downloaded from cache or not. Recorded for
     each forced extension that failed to install after 5 minutes with
@@ -1500,9 +1500,9 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Extensions.ForceInstalledFetchTries" units="retries"
     expires_after="2021-03-28">
-  <owner>burunduk@chromium.org</owner>
-  <owner>swapnilgupta@google.com</owner>
-  <owner>managed-devices@google.com</owner>
+  <owner>burunduk@ch40m1um.qjz9zk</owner>
+  <owner>swapnilgupta@9oo91e.qjz9zk</owner>
+  <owner>managed-devices@9oo91e.qjz9zk</owner>
   <summary>
     Number of fetch retries made when CRX fetch failed for enterprise policy
     forced extensions. Recorded for each forced extension that failed to install
@@ -1514,9 +1514,9 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Extensions.ForceInstalledHttpErrorCode2"
     enum="HttpResponseCode" expires_after="2021-01-24">
-  <owner>burunduk@chromium.org</owner>
-  <owner>swapnilgupta@google.com</owner>
-  <owner>managed-devices@google.com</owner>
+  <owner>burunduk@ch40m1um.qjz9zk</owner>
+  <owner>swapnilgupta@9oo91e.qjz9zk</owner>
+  <owner>managed-devices@9oo91e.qjz9zk</owner>
   <summary>
     HTTP error code for the last retry attempt when CRX fetch failed for
     enterprise policy forced extensions. Recorded for each forced extension that
@@ -1531,9 +1531,9 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Extensions.ForceInstalledLoadTime" units="ms"
     expires_after="2021-03-28">
-  <owner>burunduk@chromium.org</owner>
-  <owner>swapnilgupta@google.com</owner>
-  <owner>managed-devices@google.com</owner>
+  <owner>burunduk@ch40m1um.qjz9zk</owner>
+  <owner>swapnilgupta@9oo91e.qjz9zk</owner>
+  <owner>managed-devices@9oo91e.qjz9zk</owner>
   <summary>
     The amount of time elapsed during installation of enterprise policy forced
     extensions.
@@ -1542,9 +1542,9 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Extensions.ForceInstalledManifestFetchFailedFetchTries"
     units="retries" expires_after="2021-03-28">
-  <owner>burunduk@chromium.org</owner>
-  <owner>swapnilgupta@google.com</owner>
-  <owner>managed-devices@google.com</owner>
+  <owner>burunduk@ch40m1um.qjz9zk</owner>
+  <owner>swapnilgupta@9oo91e.qjz9zk</owner>
+  <owner>managed-devices@9oo91e.qjz9zk</owner>
   <summary>
     Number of fetch retries made when Manifest fetch failed for enterprise
     policy forced extensions. Recorded for each forced extension that failed to
@@ -1556,9 +1556,9 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Extensions.ForceInstalledManifestFetchFailedHttpErrorCode2"
     enum="HttpResponseCode" expires_after="2021-01-24">
-  <owner>burunduk@chromium.org</owner>
-  <owner>swapnilgupta@google.com</owner>
-  <owner>managed-devices@google.com</owner>
+  <owner>burunduk@ch40m1um.qjz9zk</owner>
+  <owner>swapnilgupta@9oo91e.qjz9zk</owner>
+  <owner>managed-devices@9oo91e.qjz9zk</owner>
   <summary>
     HTTP error code for the last retry attempt when Manifest fetch failed for
     enterprise policy forced extensions. Recorded for each forced extension that
@@ -1574,9 +1574,9 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Extensions.ForceInstalledManifestFetchFailedNetworkErrorCode"
     enum="NetErrorCodes" expires_after="2021-03-28">
-  <owner>burunduk@chromium.org</owner>
-  <owner>swapnilgupta@google.com</owner>
-  <owner>managed-devices@google.com</owner>
+  <owner>burunduk@ch40m1um.qjz9zk</owner>
+  <owner>swapnilgupta@9oo91e.qjz9zk</owner>
+  <owner>managed-devices@9oo91e.qjz9zk</owner>
   <summary>
     Network error code for the last retry attempt when Manifest fetch failed for
     enterprise policy forced extensions. Recorded for each forced extension that
@@ -1588,9 +1588,9 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Extensions.ForceInstalledNetworkErrorCode"
     enum="NetErrorCodes" expires_after="2021-03-28">
-  <owner>burunduk@chromium.org</owner>
-  <owner>swapnilgupta@google.com</owner>
-  <owner>managed-devices@google.com</owner>
+  <owner>burunduk@ch40m1um.qjz9zk</owner>
+  <owner>swapnilgupta@9oo91e.qjz9zk</owner>
+  <owner>managed-devices@9oo91e.qjz9zk</owner>
   <summary>
     Network error code for the last retry attempt when CRX fetch failed for
     enterprise policy forced extensions. Recorded for each forced extension that
@@ -1602,9 +1602,9 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Extensions.ForceInstalledNotLoadedDisableReason"
     enum="ExtensionDisableReason" expires_after="2021-03-28">
-  <owner>swapnilgupta@google.com</owner>
-  <owner>burunduk@chromium.org</owner>
-  <owner>managed-devices@google.com</owner>
+  <owner>swapnilgupta@9oo91e.qjz9zk</owner>
+  <owner>burunduk@ch40m1um.qjz9zk</owner>
+  <owner>managed-devices@9oo91e.qjz9zk</owner>
   <summary>
     Records the disable reason for the enterpise policy forced extensions.
     Recorded for each forced extension that installed but failed to load after 5
@@ -1615,10 +1615,10 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Extensions.ForceInstalledReadyTime" units="ms"
     expires_after="2021-01-24">
-  <owner>snijhara@google.com</owner>
-  <owner>burunduk@chromium.org</owner>
-  <owner>swapnilgupta@google.com</owner>
-  <owner>managed-devices@google.com</owner>
+  <owner>snijhara@9oo91e.qjz9zk</owner>
+  <owner>burunduk@ch40m1um.qjz9zk</owner>
+  <owner>swapnilgupta@9oo91e.qjz9zk</owner>
+  <owner>managed-devices@9oo91e.qjz9zk</owner>
   <summary>
     The amount of time elapsed for enterprise policy forced extensions to become
     ready for use.
@@ -1628,9 +1628,9 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram
     name="Extensions.ForceInstalledSessionsWithNonMisconfigurationFailureOccured"
     enum="Boolean" expires_after="2021-03-28">
-  <owner>burunduk@chromium.org</owner>
-  <owner>swapnilgupta@google.com</owner>
-  <owner>managed-devices@google.com</owner>
+  <owner>burunduk@ch40m1um.qjz9zk</owner>
+  <owner>swapnilgupta@9oo91e.qjz9zk</owner>
+  <owner>managed-devices@9oo91e.qjz9zk</owner>
   <summary>
     Records whether there was a possible non-misconfiguration failure for the
     enterprise policy forced extensions. Records true if in a session at least
@@ -1644,9 +1644,9 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Extensions.ForceInstalledStage2"
     enum="ExtensionInstallationStage" expires_after="2021-01-24">
-  <owner>burunduk@chromium.org</owner>
-  <owner>swapnilgupta@google.com</owner>
-  <owner>managed-devices@google.com</owner>
+  <owner>burunduk@ch40m1um.qjz9zk</owner>
+  <owner>swapnilgupta@9oo91e.qjz9zk</owner>
+  <owner>managed-devices@9oo91e.qjz9zk</owner>
   <summary>
     The last known stage of extension installation process if failure reason was
     not recorded (installation of an extension was neither yet finished nor
@@ -1662,9 +1662,9 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram base="true" name="Extensions.ForceInstalledTime" units="ms"
     expires_after="2021-03-15">
-  <owner>swapnilgupta@google.com</owner>
-  <owner>burunduk@chromium.org</owner>
-  <owner>managed-devices@google.com</owner>
+  <owner>swapnilgupta@9oo91e.qjz9zk</owner>
+  <owner>burunduk@ch40m1um.qjz9zk</owner>
+  <owner>managed-devices@9oo91e.qjz9zk</owner>
   <summary>
     The amount of time elapsed during different stage of the installation
     process for the enterprise policy forced extensions.
@@ -1673,9 +1673,9 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Extensions.ForceInstalledTimedOutAndNotInstalledCount"
     units="units" expires_after="2021-03-28">
-  <owner>burunduk@chromium.org</owner>
-  <owner>swapnilgupta@google.com</owner>
-  <owner>managed-devices@google.com</owner>
+  <owner>burunduk@ch40m1um.qjz9zk</owner>
+  <owner>swapnilgupta@9oo91e.qjz9zk</owner>
+  <owner>managed-devices@9oo91e.qjz9zk</owner>
   <summary>
     Number of enterprise policy forced extensions that are not installed after 5
     minutes if at least one of policy forced extensions is not yet enabled.
@@ -1684,9 +1684,9 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Extensions.ForceInstalledTimedOutCount" units="units"
     expires_after="2021-03-28">
-  <owner>burunduk@chromium.org</owner>
-  <owner>swapnilgupta@google.com</owner>
-  <owner>managed-devices@google.com</owner>
+  <owner>burunduk@ch40m1um.qjz9zk</owner>
+  <owner>swapnilgupta@9oo91e.qjz9zk</owner>
+  <owner>managed-devices@9oo91e.qjz9zk</owner>
   <summary>
     Number of enterprise policy forced extensions that are not loaded after 5
     minutes timeout, while might be already installed.
@@ -1695,9 +1695,9 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Extensions.ForceInstalledTotalCandidateCount" units="units"
     expires_after="2021-03-28">
-  <owner>burunduk@chromium.org</owner>
-  <owner>swapnilgupta@google.com</owner>
-  <owner>managed-devices@google.com</owner>
+  <owner>burunduk@ch40m1um.qjz9zk</owner>
+  <owner>swapnilgupta@9oo91e.qjz9zk</owner>
+  <owner>managed-devices@9oo91e.qjz9zk</owner>
   <summary>
     Total amount of extensions in force installed list. Gets recorded on profile
     open (which happens on every startup and when user logs in) and tries to
@@ -1721,8 +1721,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
     enum="ExtensionFunctions" expires_after="never">
 <!-- expires-never: Used for monitoring extension API usage. -->
 
-  <owner>rdevlin.cronin@chromium.org</owner>
-  <owner>extensions-core@chromium.org</owner>
+  <owner>rdevlin.cronin@ch40m1um.qjz9zk</owner>
+  <owner>extensions-core@ch40m1um.qjz9zk</owner>
   <summary>
     Recorded when a component extension calls an extension API. Recorded once
     per function call. See also Extensions.Functions.WebUICalls and
@@ -1734,8 +1734,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
     expires_after="never">
 <!-- expires-never: Used for monitoring extension API usage. -->
 
-  <owner>rdevlin.cronin@chromium.org</owner>
-  <owner>extensions-core@chromium.org</owner>
+  <owner>rdevlin.cronin@ch40m1um.qjz9zk</owner>
+  <owner>extensions-core@ch40m1um.qjz9zk</owner>
   <summary>
     Recorded when a non-component extension calls an extension API. Recorded
     once per function call. See also Extensions.Functions.WebUICalls and
@@ -1745,10 +1745,10 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Extensions.Functions.ExtensionServiceWorkerCalls"
     enum="ExtensionFunctions" expires_after="2021-01-31">
-  <owner>lazyboy@chromium.org</owner>
-  <owner>dbertoni@chromium.org</owner>
-  <owner>rdevlin.cronin@chromium.org</owner>
-  <owner>extensions-core@chromium.org</owner>
+  <owner>lazyboy@ch40m1um.qjz9zk</owner>
+  <owner>dbertoni@ch40m1um.qjz9zk</owner>
+  <owner>rdevlin.cronin@ch40m1um.qjz9zk</owner>
+  <owner>extensions-core@ch40m1um.qjz9zk</owner>
   <summary>
     Recorded when an extension service worker calls an extension API. Note that
     the function would also be included in either
@@ -1759,8 +1759,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Extensions.Functions.FailedTime" enum="ExtensionFunctions"
     expires_after="2021-01-31">
-  <owner>rdevlin.cronin@chromium.org</owner>
-  <owner>extensions-core@chromium.org</owner>
+  <owner>rdevlin.cronin@ch40m1um.qjz9zk</owner>
+  <owner>extensions-core@ch40m1um.qjz9zk</owner>
   <summary>
     Recorded when an extension function call fails and finishes execution. The
     suffix indicates the exact bucket the function is in. See also
@@ -1770,8 +1770,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Extensions.Functions.FailedTotalExecutionTime" units="ms"
     expires_after="2021-01-31">
-  <owner>rdevlin.cronin@chromium.org</owner>
-  <owner>extensions-core@chromium.org</owner>
+  <owner>rdevlin.cronin@ch40m1um.qjz9zk</owner>
+  <owner>extensions-core@ch40m1um.qjz9zk</owner>
   <summary>
     The total amount of time it took to execute an extension function that
     failed from the time the extension function is called to the time the
@@ -1785,8 +1785,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
     expires_after="never">
 <!-- expires-never: Used for monitoring extension API performance. -->
 
-  <owner>rdevlin.cronin@chromium.org</owner>
-  <owner>extensions-core@chromium.org</owner>
+  <owner>rdevlin.cronin@ch40m1um.qjz9zk</owner>
+  <owner>extensions-core@ch40m1um.qjz9zk</owner>
   <summary>
     The amount of time it takes to handle a response for an extension API
     request. Recorded on the renderer side once we receive the response IPC from
@@ -1799,8 +1799,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
     expires_after="never">
 <!-- expires-never: Used for monitoring extension API performance. -->
 
-  <owner>rdevlin.cronin@chromium.org</owner>
-  <owner>extensions-core@chromium.org</owner>
+  <owner>rdevlin.cronin@ch40m1um.qjz9zk</owner>
+  <owner>extensions-core@ch40m1um.qjz9zk</owner>
   <summary>
     The amount of time it takes to start an extension API request. Recorded on
     the renderer side after we perform JS pre-processing, but includes all
@@ -1811,8 +1811,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Extensions.Functions.SucceededTime" enum="ExtensionFunctions"
     expires_after="2021-01-31">
-  <owner>rdevlin.cronin@chromium.org</owner>
-  <owner>extensions-core@chromium.org</owner>
+  <owner>rdevlin.cronin@ch40m1um.qjz9zk</owner>
+  <owner>extensions-core@ch40m1um.qjz9zk</owner>
   <summary>
     Recorded when an extension function call succeeds and finishes execution.
     The suffix indicates the exact bucket the function is in. See also
@@ -1822,8 +1822,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Extensions.Functions.SucceededTotalExecutionTime" units="ms"
     expires_after="2021-01-31">
-  <owner>rdevlin.cronin@chromium.org</owner>
-  <owner>extensions-core@chromium.org</owner>
+  <owner>rdevlin.cronin@ch40m1um.qjz9zk</owner>
+  <owner>extensions-core@ch40m1um.qjz9zk</owner>
   <summary>
     The total amount of time it took to execute an extension function that
     succeeded from the time the extension function is called to the time the
@@ -1835,8 +1835,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Extensions.Functions.SynchronousExecutionTime" units="ms"
     expires_after="2021-01-31">
-  <owner>rdevlin.cronin@chromium.org</owner>
-  <owner>extensions-core@chromium.org</owner>
+  <owner>rdevlin.cronin@ch40m1um.qjz9zk</owner>
+  <owner>extensions-core@ch40m1um.qjz9zk</owner>
   <summary>
     The synchronous amount of time an extension function takes. Note that many
     extension functions run asynchronously; see also
@@ -1848,8 +1848,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
     expires_after="never">
 <!-- expires-never: Used for monitoring extension API usage. -->
 
-  <owner>rdevlin.cronin@chromium.org</owner>
-  <owner>extensions-core@chromium.org</owner>
+  <owner>rdevlin.cronin@ch40m1um.qjz9zk</owner>
+  <owner>extensions-core@ch40m1um.qjz9zk</owner>
   <summary>
     Recorded when a WebUI context calls an extension API. Recorded once per
     function call. See also Extensions.Functions.ComponentExtensionCalls and
@@ -1859,8 +1859,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Extensions.GoogleDocOffline.AvailabilityOnResourceRequest"
     enum="GoogleDocsExtensionAvailablity" expires_after="M90">
-  <owner>rhalavati@chromium.org</owner>
-  <owner>chrome-privacy-core@google.com</owner>
+  <owner>rhalavati@ch40m1um.qjz9zk</owner>
+  <owner>chrome-privacy-core@9oo91e.qjz9zk</owner>
   <summary>
     This histogram records requests to use resources from Google Docs Offline
     extension, along with whether the extension has been available or not and
@@ -1871,8 +1871,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Extensions.HasPermissions_AutoDisable3" enum="Boolean"
     expires_after="2018-08-30">
-  <owner>rdevlin.cronin@chromium.org</owner>
-  <owner>extensions-core@chromium.org</owner>
+  <owner>rdevlin.cronin@ch40m1um.qjz9zk</owner>
+  <owner>extensions-core@ch40m1um.qjz9zk</owner>
   <summary>
     Whether there were any permissions present in an extension when it is
     automatically disabled due to a permission increase (e.g., after an
@@ -1888,8 +1888,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
     expires_after="never">
 <!-- expires-never: Monitoring extension usage. -->
 
-  <owner>rdevlin.cronin@chromium.org</owner>
-  <owner>extensions-core@chromium.org</owner>
+  <owner>rdevlin.cronin@ch40m1um.qjz9zk</owner>
+  <owner>extensions-core@ch40m1um.qjz9zk</owner>
   <summary>
     Whether there were any permissions present in an extension when it was
     installed. To find places where this histogram may be emitted, look for
@@ -1900,8 +1900,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Extensions.HasPermissions_InstallAbort3" enum="Boolean"
     expires_after="2021-06-01">
-  <owner>rdevlin.cronin@chromium.org</owner>
-  <owner>extensions-core@chromium.org</owner>
+  <owner>rdevlin.cronin@ch40m1um.qjz9zk</owner>
+  <owner>extensions-core@ch40m1um.qjz9zk</owner>
   <summary>
     Whether there were any permissions present in an extension when installation
     was aborted (e.g. because the parent window of the confirmation dialog went
@@ -1914,8 +1914,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Extensions.HasPermissions_InstallCancel3" enum="Boolean"
     expires_after="2018-08-30">
-  <owner>rdevlin.cronin@chromium.org</owner>
-  <owner>extensions-core@chromium.org</owner>
+  <owner>rdevlin.cronin@ch40m1um.qjz9zk</owner>
+  <owner>extensions-core@ch40m1um.qjz9zk</owner>
   <summary>
     Whether there were any permissions present in an extension when installation
     was canceled. To find places where this histogram may be emitted, look for
@@ -1928,8 +1928,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
     expires_after="never">
 <!-- expires-never: Monitoring extension usage. -->
 
-  <owner>rdevlin.cronin@chromium.org</owner>
-  <owner>extensions-core@chromium.org</owner>
+  <owner>rdevlin.cronin@ch40m1um.qjz9zk</owner>
+  <owner>extensions-core@ch40m1um.qjz9zk</owner>
   <summary>
     Whether there were any permissions present in an extension when it was
     loaded (which happens at profile open or extension install). To find places
@@ -1940,8 +1940,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Extensions.HasPermissions_ReEnable3" enum="Boolean"
     expires_after="2018-08-30">
-  <owner>rdevlin.cronin@chromium.org</owner>
-  <owner>extensions-core@chromium.org</owner>
+  <owner>rdevlin.cronin@ch40m1um.qjz9zk</owner>
+  <owner>extensions-core@ch40m1um.qjz9zk</owner>
   <summary>
     Whether there were any permissions present in an extension when it was
     re-enabled from a confirmation prompt. To find places where this histogram
@@ -1953,8 +1953,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Extensions.HasPermissions_ReEnableAbort3" enum="Boolean"
     expires_after="2018-08-30">
-  <owner>rdevlin.cronin@chromium.org</owner>
-  <owner>extensions-core@chromium.org</owner>
+  <owner>rdevlin.cronin@ch40m1um.qjz9zk</owner>
+  <owner>extensions-core@ch40m1um.qjz9zk</owner>
   <summary>
     Whether there were any permissions present in an extension when the
     re-enable prompt was aborted (e.g. because the parent window of the
@@ -1967,8 +1967,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Extensions.HasPermissions_ReEnableCancel3" enum="Boolean"
     expires_after="2018-08-30">
-  <owner>rdevlin.cronin@chromium.org</owner>
-  <owner>extensions-core@chromium.org</owner>
+  <owner>rdevlin.cronin@ch40m1um.qjz9zk</owner>
+  <owner>extensions-core@ch40m1um.qjz9zk</owner>
   <summary>
     Whether there were any permissions present in an extension when the
     re-enable was canceled from the confirmation prompt. To find places where
@@ -1980,8 +1980,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Extensions.HasPermissions_Uninstall3" enum="Boolean"
     expires_after="2018-08-30">
-  <owner>rdevlin.cronin@chromium.org</owner>
-  <owner>extensions-core@chromium.org</owner>
+  <owner>rdevlin.cronin@ch40m1um.qjz9zk</owner>
+  <owner>extensions-core@ch40m1um.qjz9zk</owner>
   <summary>
     Whether there were any permissions present in an extension when it was
     uninstalled. To find places where this histogram may be emitted, look for
@@ -1992,8 +1992,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Extensions.HasPermissions_WebStoreInstall3" enum="Boolean"
     expires_after="2021-06-01">
-  <owner>rdevlin.cronin@chromium.org</owner>
-  <owner>extensions-core@chromium.org</owner>
+  <owner>rdevlin.cronin@ch40m1um.qjz9zk</owner>
+  <owner>extensions-core@ch40m1um.qjz9zk</owner>
   <summary>
     Whether there were any permissions present in an extension when it was
     installed through the web store. To find places where this histogram may be
@@ -2006,8 +2006,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Extensions.HasPermissions_WebStoreInstallCancel3"
     enum="Boolean" expires_after="2021-06-01">
-  <owner>rdevlin.cronin@chromium.org</owner>
-  <owner>extensions-core@chromium.org</owner>
+  <owner>rdevlin.cronin@ch40m1um.qjz9zk</owner>
+  <owner>extensions-core@ch40m1um.qjz9zk</owner>
   <summary>
     Whether there were any permissions present in an extension when installation
     from the web store was canceled. To find places where this histogram may be
@@ -2019,8 +2019,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Extensions.HomepageOverrides" units="units"
     expires_after="2021-06-01">
-  <owner>rdevlin.cronin@chromium.org</owner>
-  <owner>kelvinjiang@chromium.org</owner>
+  <owner>rdevlin.cronin@ch40m1um.qjz9zk</owner>
+  <owner>kelvinjiang@ch40m1um.qjz9zk</owner>
   <summary>
     The number of enabled extensions with a homepage override specified in their
     manifest. Recorded once per profile at profile initialization.
@@ -2029,8 +2029,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Extensions.HostedAppLaunchContainer" enum="AppLaunchContainer"
     expires_after="2021-01-31">
-  <owner>benwells@chromium.org</owner>
-  <owner>dominickn@chromium.org</owner>
+  <owner>benwells@ch40m1um.qjz9zk</owner>
+  <owner>dominickn@ch40m1um.qjz9zk</owner>
   <summary>
     Records the container used for a hosted app launch. The definition of
     'launch' for the purposes of this histogram is different to that used for
@@ -2046,7 +2046,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
     expires_after="never">
 <!-- expires-never: Monitoring extension usage. -->
 
-  <owner>rdevlin.cronin@chromium.org</owner>
+  <owner>rdevlin.cronin@ch40m1um.qjz9zk</owner>
   <summary>
     The number of extensions (and friends) that could have been allowed in
     incognito, and were, for users that have at least one extension that could
@@ -2059,7 +2059,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Extensions.IncognitoNotAllowed" units="units"
     expires_after="2018-08-30">
-  <owner>rdevlin.cronin@chromium.org</owner>
+  <owner>rdevlin.cronin@ch40m1um.qjz9zk</owner>
   <summary>
     The number of extensions (and friends) that could have been allowed in
     incognito, but weren't, for users that have at least one extension that
@@ -2072,8 +2072,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Extensions.InitPrefGetExtensionsTime" units="ms"
     expires_after="M90">
-  <owner>rdevlin.cronin@chromium.org</owner>
-  <owner>extensions-core@chromium.org</owner>
+  <owner>rdevlin.cronin@ch40m1um.qjz9zk</owner>
+  <owner>extensions-core@ch40m1um.qjz9zk</owner>
   <summary>
     The amount of time that elapsed during the GetExtensions call within
     ExtensionPrefs::InitPrefStore.
@@ -2083,8 +2083,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram name="Extensions.InjectCssTime" units="ms" expires_after="never">
 <!-- expires-never: Used for monitoring extension API performance. -->
 
-  <owner>rdevlin.cronin@chromium.org</owner>
-  <owner>extensions-core@chromium.org</owner>
+  <owner>rdevlin.cronin@ch40m1um.qjz9zk</owner>
+  <owner>extensions-core@ch40m1um.qjz9zk</owner>
   <summary>
     The amount of time for a CSS file to be injected into a page.
   </summary>
@@ -2094,8 +2094,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
     expires_after="never">
 <!-- expires-never: Monitoring performance of a core extension API. -->
 
-  <owner>rdevlin.cronin@chromium.org</owner>
-  <owner>extensions-core@chromium.org</owner>
+  <owner>rdevlin.cronin@ch40m1um.qjz9zk</owner>
+  <owner>extensions-core@ch40m1um.qjz9zk</owner>
   <summary>
     Time taken to execute all scripts for one location within an extension.
     Recorded every time content scripts injected by extensions are executed.
@@ -2108,7 +2108,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
     expires_after="never">
 <!-- expires-never: Monitoring core extensions performance. -->
 
-  <owner>rdevlin.cronin@chromium.org</owner>
+  <owner>rdevlin.cronin@ch40m1um.qjz9zk</owner>
   <summary>
     Number of blocking scripts injected at document end by extensions.
   </summary>
@@ -2118,15 +2118,15 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
     expires_after="never">
 <!-- expires-never: Monitoring core extensions performance. -->
 
-  <owner>rdevlin.cronin@chromium.org</owner>
+  <owner>rdevlin.cronin@ch40m1um.qjz9zk</owner>
   <summary>Number of scripts injected at document end by extensions.</summary>
 </histogram>
 
 <histogram name="Extensions.InjectEnd_Time" units="ms" expires_after="never">
 <!-- expires-never: Used for monitoring extension API performance. -->
 
-  <owner>rdevlin.cronin@chromium.org</owner>
-  <owner>extensions-core@chromium.org</owner>
+  <owner>rdevlin.cronin@ch40m1um.qjz9zk</owner>
+  <owner>extensions-core@ch40m1um.qjz9zk</owner>
   <summary>
     Time taken to inject all scripts at document end by extensions. Not reported
     if scripts are executed asynchronously.
@@ -2137,7 +2137,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
     expires_after="never">
 <!-- expires-never: Monitoring core extensions performance. -->
 
-  <owner>rdevlin.cronin@chromium.org</owner>
+  <owner>rdevlin.cronin@ch40m1um.qjz9zk</owner>
   <summary>
     Number of blocking scripts injected at document idle by extensions.
   </summary>
@@ -2147,15 +2147,15 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
     expires_after="never">
 <!-- expires-never: Monitoring core extensions performance. -->
 
-  <owner>rdevlin.cronin@chromium.org</owner>
+  <owner>rdevlin.cronin@ch40m1um.qjz9zk</owner>
   <summary>Number of scripts injected at document idle by extensions.</summary>
 </histogram>
 
 <histogram name="Extensions.InjectIdle_Time" units="ms" expires_after="never">
 <!-- expires-never: Used for monitoring extension API performance. -->
 
-  <owner>rdevlin.cronin@chromium.org</owner>
-  <owner>extensions-core@chromium.org</owner>
+  <owner>rdevlin.cronin@ch40m1um.qjz9zk</owner>
+  <owner>extensions-core@ch40m1um.qjz9zk</owner>
   <summary>
     Time taken to inject all scripts at document idle by extensions. Not
     reported if scripts are executed asynchronously.
@@ -2166,8 +2166,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
     expires_after="never">
 <!-- expires-never: Used for monitoring extension API performance. -->
 
-  <owner>rdevlin.cronin@chromium.org</owner>
-  <owner>extensions-core@chromium.org</owner>
+  <owner>rdevlin.cronin@ch40m1um.qjz9zk</owner>
+  <owner>extensions-core@ch40m1um.qjz9zk</owner>
   <summary>
     Number of blocking scripts injected at document start by extensions.
   </summary>
@@ -2177,7 +2177,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
     expires_after="never">
 <!-- expires-never: Monitors core extension performance. -->
 
-  <owner>rdevlin.cronin@chromium.org</owner>
+  <owner>rdevlin.cronin@ch40m1um.qjz9zk</owner>
   <summary>Number of css files injected by extensions.</summary>
 </histogram>
 
@@ -2185,15 +2185,15 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
     expires_after="never">
 <!-- expires-never: Used for monitoring extension API performance. -->
 
-  <owner>rdevlin.cronin@chromium.org</owner>
-  <owner>extensions-core@chromium.org</owner>
+  <owner>rdevlin.cronin@ch40m1um.qjz9zk</owner>
+  <owner>extensions-core@ch40m1um.qjz9zk</owner>
   <summary>Number of scripts injected at document start by extensions.</summary>
 </histogram>
 
 <histogram name="Extensions.InjectStart_Time" units="ms" expires_after="never">
 <!-- expires-never: Monitors core extension performance. -->
 
-  <owner>rdevlin.cronin@chromium.org</owner>
+  <owner>rdevlin.cronin@ch40m1um.qjz9zk</owner>
   <summary>
     Time taken to inject css/scripts at document start by extensions. Not
     reported if scripts are executed asynchronously.
@@ -2202,8 +2202,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Extensions.InstallPrompt.TimeToCancel" units="ms"
     expires_after="M95">
-  <owner>kelvinjiang@chromium.org</owner>
-  <owner>extensions-core@chromium.org</owner>
+  <owner>kelvinjiang@ch40m1um.qjz9zk</owner>
+  <owner>extensions-core@ch40m1um.qjz9zk</owner>
   <summary>
     Time from first display of the extension installation prompt until the user
     aborts the installation through clicking the cancel button or dismissing the
@@ -2213,8 +2213,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Extensions.InstallPrompt.TimeToInstall" units="ms"
     expires_after="M95">
-  <owner>kelvinjiang@chromium.org</owner>
-  <owner>extensions-core@chromium.org</owner>
+  <owner>kelvinjiang@ch40m1um.qjz9zk</owner>
+  <owner>extensions-core@ch40m1um.qjz9zk</owner>
   <summary>
     Time from first display of the extension installation prompt until the user
     accepts the installation. Will always be greater than 500ms as the install
@@ -2224,8 +2224,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Extensions.InstallPrompt.Type2"
     enum="ExtensionInstallPromptType" expires_after="2021-06-01">
-  <owner>meacer@chromium.org</owner>
-  <owner>rdevlin.cronin@chromium.org</owner>
+  <owner>meacer@ch40m1um.qjz9zk</owner>
+  <owner>rdevlin.cronin@ch40m1um.qjz9zk</owner>
   <summary>
     Type of the extension install prompt displayed when an extension
     installation is triggered. Replaced Extensions.InstallPrompt.Type 2019-07.
@@ -2234,7 +2234,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Extensions.InstallPromptExperiment.ShowDetails"
     enum="ExtensionInstallPromptExperimentLinkAction" expires_after="M85">
-  <owner>meacer@chromium.org</owner>
+  <owner>meacer@ch40m1um.qjz9zk</owner>
   <summary>
     Actions on the show details link grouped by action type when the install
     prompt trial is running.
@@ -2243,7 +2243,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Extensions.InstallPromptExperiment.ShowPermissions"
     enum="ExtensionInstallPromptExperimentLinkAction" expires_after="M85">
-  <owner>meacer@chromium.org</owner>
+  <owner>meacer@ch40m1um.qjz9zk</owner>
   <summary>
     Actions on the show permissions link grouped by action type when the install
     prompt trial is running.
@@ -2254,8 +2254,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
     expires_after="never">
 <!-- expires-never: Monitoring core extension usage. -->
 
-  <owner>rdevlin.cronin@chromium.org</owner>
-  <owner>extensions-core@chromium.org</owner>
+  <owner>rdevlin.cronin@ch40m1um.qjz9zk</owner>
+  <owner>extensions-core@ch40m1um.qjz9zk</owner>
   <summary>Installs grouped by the location property in prefs.</summary>
 </histogram>
 
@@ -2263,13 +2263,13 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
     expires_after="never">
 <!-- expires-never: Monitoring extension usage. -->
 
-  <owner>rdevlin.cronin@chromium.org</owner>
+  <owner>rdevlin.cronin@ch40m1um.qjz9zk</owner>
   <summary>Installs grouped by Extension::HistogramType.</summary>
 </histogram>
 
 <histogram name="Extensions.InstanceID.GetToken.OptionsCount" units="options"
     expires_after="2019-01-30">
-  <owner>peter@chromium.org</owner>
+  <owner>peter@ch40m1um.qjz9zk</owner>
   <summary>
     The number of options provided to the GetToken request. Recorded when the
     extension has made a call to chrome.instanceID.getToken().
@@ -2278,8 +2278,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Extensions.IsRenderedIconSufficientlyVisibleTime"
     units="microseconds" expires_after="2019-12-01">
-  <owner>dbertoni@chromium.org</owner>
-  <owner>extensions-core@chromium.org</owner>
+  <owner>dbertoni@ch40m1um.qjz9zk</owner>
+  <owner>extensions-core@ch40m1um.qjz9zk</owner>
   <summary>
     The amount of elapsed time taken to render an icon against a specified
     background color and determine whether it would be visible to the user.
@@ -2290,7 +2290,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram name="Extensions.LoadAll" units="units" expires_after="never">
 <!-- expires-never: Monitoring extension usage. -->
 
-  <owner>rdevlin.cronin@chromium.org</owner>
+  <owner>rdevlin.cronin@ch40m1um.qjz9zk</owner>
   <summary>The number of extensions and themes loaded at profile open.</summary>
 </histogram>
 
@@ -2298,7 +2298,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
     expires_after="never">
 <!-- expires-never: Monitoring extension usage. -->
 
-  <owner>rdevlin.cronin@chromium.org</owner>
+  <owner>rdevlin.cronin@ch40m1um.qjz9zk</owner>
   <summary>
     Time taken to load all component extensions at profile open. This happens as
     part of the total initialization time of ExtensionService, measured in
@@ -2309,7 +2309,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram name="Extensions.LoadAllTime2" units="ms" expires_after="never">
 <!-- expires-never: Monitoring core extensions system performance. -->
 
-  <owner>rdevlin.cronin@chromium.org</owner>
+  <owner>rdevlin.cronin@ch40m1um.qjz9zk</owner>
   <summary>
     Time taken to load all non-component extensions at profile open and record
     metrics. This happens as part of the total initialization time of
@@ -2320,7 +2320,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram name="Extensions.LoadApp" units="units" expires_after="never">
 <!-- expires-never: Monitoring extension usage. -->
 
-  <owner>rdevlin.cronin@chromium.org</owner>
+  <owner>rdevlin.cronin@ch40m1um.qjz9zk</owner>
   <summary>The number of apps loaded by each user at profile open.</summary>
 </histogram>
 
@@ -2328,7 +2328,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
     expires_after="never">
 <!-- expires-never: Monitoring extension usage. -->
 
-  <owner>rdevlin.cronin@chromium.org</owner>
+  <owner>rdevlin.cronin@ch40m1um.qjz9zk</owner>
   <summary>
     The number of externally managed apps loaded by each user at profile open.
   </summary>
@@ -2337,7 +2337,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram name="Extensions.LoadAppUser" units="units" expires_after="never">
 <!-- expires-never: Monitoring extension usage. -->
 
-  <owner>rdevlin.cronin@chromium.org</owner>
+  <owner>rdevlin.cronin@ch40m1um.qjz9zk</owner>
   <summary>
     The number of user-installed apps loaded by each user at profile open.
   </summary>
@@ -2347,7 +2347,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
     expires_after="never">
 <!-- expires-never: Monitoring extension usage. -->
 
-  <owner>rdevlin.cronin@chromium.org</owner>
+  <owner>rdevlin.cronin@ch40m1um.qjz9zk</owner>
   <summary>
     The number of browser action extensions loaded at profile open.
   </summary>
@@ -2355,7 +2355,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Extensions.LoadCreationFlags" enum="ExtensionCreationFlags"
     expires_after="2020-06-01">
-  <owner>calamity@chromium.org</owner>
+  <owner>calamity@ch40m1um.qjz9zk</owner>
   <summary>
     The creation flags of all extensions loaded at profile open grouped by
     Extension::InitFromValueFlags.
@@ -2365,7 +2365,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram name="Extensions.LoadExtension" units="units" expires_after="never">
 <!-- expires-never: Monitoring extension usage. -->
 
-  <owner>rdevlin.cronin@chromium.org</owner>
+  <owner>rdevlin.cronin@ch40m1um.qjz9zk</owner>
   <summary>The number of extensions loaded at profile open.</summary>
 </histogram>
 
@@ -2373,7 +2373,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
     expires_after="never">
 <!-- expires-never: Monitoring extension usage. -->
 
-  <owner>rdevlin.cronin@chromium.org</owner>
+  <owner>rdevlin.cronin@ch40m1um.qjz9zk</owner>
   <summary>
     The number of externally managed extensions loaded at profile open.
   </summary>
@@ -2383,8 +2383,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
     expires_after="never">
 <!-- expires-never: Monitoring extension usage. -->
 
-  <owner>rdevlin.cronin@chromium.org</owner>
-  <owner>extensions-core@chromium.org</owner>
+  <owner>rdevlin.cronin@ch40m1um.qjz9zk</owner>
+  <owner>extensions-core@ch40m1um.qjz9zk</owner>
   <summary>
     The number of user-installed extensions loaded at profile open.
   </summary>
@@ -2393,7 +2393,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram name="Extensions.LoadExternal" units="units" expires_after="never">
 <!-- expires-never: Monitoring extension usage. -->
 
-  <owner>rdevlin.cronin@chromium.org</owner>
+  <owner>rdevlin.cronin@ch40m1um.qjz9zk</owner>
   <summary>
     The number of externally managed extensions and apps loaded at profile open.
   </summary>
@@ -2402,7 +2402,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram name="Extensions.LoadHostedApp" units="units" expires_after="never">
 <!-- expires-never: Monitoring extension usage. -->
 
-  <owner>rdevlin.cronin@chromium.org</owner>
+  <owner>rdevlin.cronin@ch40m1um.qjz9zk</owner>
   <summary>
     The number of hosted apps loaded by each user at profile open.
   </summary>
@@ -2412,7 +2412,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
     expires_after="never">
 <!-- expires-never: Monitoring extension usage. -->
 
-  <owner>rdevlin.cronin@chromium.org</owner>
+  <owner>rdevlin.cronin@ch40m1um.qjz9zk</owner>
   <summary>
     The number of extensions that had neither a page nor browser action
     specified in their manifest. Recorded at profile open.
@@ -2421,8 +2421,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Extensions.LoadOffStoreItems" units="Number of items"
     expires_after="2021-06-01">
-  <owner>rdevlin.cronin@chromium.org</owner>
-  <owner>extensions-core@chromium.org</owner>
+  <owner>rdevlin.cronin@ch40m1um.qjz9zk</owner>
+  <owner>extensions-core@ch40m1um.qjz9zk</owner>
   <summary>
     The number of enabled extensions or apps the user has installed that do not
     update from the Chrome Web Store. Recorded during profile initialization.
@@ -2433,7 +2433,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
     expires_after="never">
 <!-- expires-never: Monitoring extension usage. -->
 
-  <owner>rdevlin.cronin@chromium.org</owner>
+  <owner>rdevlin.cronin@ch40m1um.qjz9zk</owner>
   <summary>
     The number of legacy packaged apps loaded by each user at profile open.
   </summary>
@@ -2443,20 +2443,20 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
     expires_after="never">
 <!-- expires-never: Monitoring extension usage. -->
 
-  <owner>rdevlin.cronin@chromium.org</owner>
+  <owner>rdevlin.cronin@ch40m1um.qjz9zk</owner>
   <summary>The number of platform apps loaded at profile open.</summary>
 </histogram>
 
 <histogram name="Extensions.LoadTheme" units="units" expires_after="2021-01-31">
-  <owner>rdevlin.cronin@chromium.org</owner>
-  <owner>extensions-core@chromium.org</owner>
+  <owner>rdevlin.cronin@ch40m1um.qjz9zk</owner>
+  <owner>extensions-core@ch40m1um.qjz9zk</owner>
   <summary>The number of themes loaded at profile open.</summary>
 </histogram>
 
 <histogram name="Extensions.LoadType" enum="ExtensionType"
     expires_after="2021-03-21">
-  <owner>rdevlin.cronin@chromium.org</owner>
-  <owner>extensions-core@chromium.org</owner>
+  <owner>rdevlin.cronin@ch40m1um.qjz9zk</owner>
+  <owner>extensions-core@ch40m1um.qjz9zk</owner>
   <summary>
     The number of extensions loaded at profile open grouped by
     Extension::HistogramType.
@@ -2465,8 +2465,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Extensions.LoadUserScript" units="units"
     expires_after="2020-12-01">
-  <owner>rdevlin.cronin@chromium.org</owner>
-  <owner>extensions-core@chromium.org</owner>
+  <owner>rdevlin.cronin@ch40m1um.qjz9zk</owner>
+  <owner>extensions-core@ch40m1um.qjz9zk</owner>
   <summary>
     The number of converted user scripts loaded at profile open.
   </summary>
@@ -2474,8 +2474,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Extensions.LockedFullscreenStateRequest"
     enum="LockedFullscreenState" expires_after="2020-01-01">
-  <owner>isandrk@chromium.org</owner>
-  <owner>jhastings@chromium.org</owner>
+  <owner>isandrk@ch40m1um.qjz9zk</owner>
+  <owner>jhastings@ch40m1um.qjz9zk</owner>
   <summary>
     Records requests to enter or exit locked fullscreen mode through extension
     APIs. Used only on Chrome OS.
@@ -2487,7 +2487,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
   <owner>Please list the metric's owners. Add more owner tags as needed.</owner>
   <summary>
     Number of times chrome retried to download an extension update manifest with
-    a url on a google.com domain, before eventually giving up.
+    a url on a 9oo91e.qjz9zk domain, before eventually giving up.
   </summary>
 </histogram>
 
@@ -2496,7 +2496,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
   <owner>Please list the metric's owners. Add more owner tags as needed.</owner>
   <summary>
     Number of times chrome retried to download an extension update manifest with
-    a url on a non google.com domain, before eventually giving up.
+    a url on a non 9oo91e.qjz9zk domain, before eventually giving up.
   </summary>
 </histogram>
 
@@ -2505,7 +2505,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
   <owner>Please list the metric's owners. Add more owner tags as needed.</owner>
   <summary>
     Number of times chrome retried to download an extension update manifest with
-    a url on a google.com domain, before eventually succeeding.
+    a url on a 9oo91e.qjz9zk domain, before eventually succeeding.
   </summary>
 </histogram>
 
@@ -2514,14 +2514,14 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
   <owner>Please list the metric's owners. Add more owner tags as needed.</owner>
   <summary>
     Number of times chrome retried to download an extension update manifest with
-    a url on a non google.com domain, before eventually succeeding.
+    a url on a non 9oo91e.qjz9zk domain, before eventually succeeding.
   </summary>
 </histogram>
 
 <histogram name="Extensions.ManifestIconSetIconWasVisibleForPacked"
     enum="BooleanVisible" expires_after="2019-09-07">
-  <owner>dbertoni@chromium.org</owner>
-  <owner>extensions-core@chromium.org</owner>
+  <owner>dbertoni@ch40m1um.qjz9zk</owner>
+  <owner>extensions-core@ch40m1um.qjz9zk</owner>
   <summary>
     Reports whether an icon that's specified in the manifest is considered
     visible by our icon analysis code. This stat is only for packed extensions,
@@ -2533,8 +2533,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Extensions.ManifestIconSetIconWasVisibleForPackedRendered"
     enum="BooleanVisible" expires_after="2019-09-07">
-  <owner>dbertoni@chromium.org</owner>
-  <owner>extensions-core@chromium.org</owner>
+  <owner>dbertoni@ch40m1um.qjz9zk</owner>
+  <owner>extensions-core@ch40m1um.qjz9zk</owner>
   <summary>
     Reports whether an icon that's specified in the manifest is considered
     visible by our icon analysis code. This stat is only for packed extensions,
@@ -2551,8 +2551,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Extensions.ManifestIconSetIconWasVisibleForUnpacked"
     enum="BooleanVisible" expires_after="2019-09-07">
-  <owner>dbertoni@chromium.org</owner>
-  <owner>extensions-core@chromium.org</owner>
+  <owner>dbertoni@ch40m1um.qjz9zk</owner>
+  <owner>extensions-core@ch40m1um.qjz9zk</owner>
   <summary>
     Reports whether loading an icon declarated in the extension's manifest icon
     set is considered visible by our icon analysis code. This stat is only for
@@ -2562,8 +2562,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Extensions.ManifestIconSetIconWasVisibleForUnpackedRendered"
     enum="BooleanVisible" expires_after="2019-09-07">
-  <owner>dbertoni@chromium.org</owner>
-  <owner>extensions-core@chromium.org</owner>
+  <owner>dbertoni@ch40m1um.qjz9zk</owner>
+  <owner>extensions-core@ch40m1um.qjz9zk</owner>
   <summary>
     Reports whether loading an icon declarated in the extension's manifest icon
     set is considered visible by our icon analysis code. This stat is only for
@@ -2607,13 +2607,13 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
     expires_after="never">
 <!-- expires-never: Monitoring extension usage. -->
 
-  <owner>rdevlin.cronin@chromium.org</owner>
+  <owner>rdevlin.cronin@ch40m1um.qjz9zk</owner>
   <summary>The manifest version of each loaded extension.</summary>
 </histogram>
 
 <histogram name="Extensions.Messaging.ExtensionPortsCreated"
     units="number of ports" expires_after="M85">
-  <owner>rdevlin.cronin@chromium.org</owner>
+  <owner>rdevlin.cronin@ch40m1um.qjz9zk</owner>
   <summary>
     The number of ports created in a given script context at a specific time.
     Recorded once at the destruction of the script context (when no more ports
@@ -2625,7 +2625,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Extensions.Messaging.GetPortIdAsyncTime" units="ms"
     expires_after="M85">
-  <owner>rdevlin.cronin@chromium.org</owner>
+  <owner>rdevlin.cronin@ch40m1um.qjz9zk</owner>
   <summary>
     The total amount of time between when an extension opens a new channel and
     when it receives the global port id from the browser and can begin sending
@@ -2635,7 +2635,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Extensions.Messaging.GetPortIdSyncTime" units="ms"
     expires_after="M85">
-  <owner>rdevlin.cronin@chromium.org</owner>
+  <owner>rdevlin.cronin@ch40m1um.qjz9zk</owner>
   <summary>
     The amount of synchronous time taken for the renderer to request an
     extension message port id from the browser when a new channel is first
@@ -2645,8 +2645,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Extensions.Messaging.MessageSize" units="bytes"
     expires_after="2020-12-01">
-  <owner>rdevlin.cronin@chromium.org</owner>
-  <owner>extensions-core@chromium.org</owner>
+  <owner>rdevlin.cronin@ch40m1um.qjz9zk</owner>
+  <owner>extensions-core@ch40m1um.qjz9zk</owner>
   <summary>
     The size, in bytes, of a message sent from an extension using one of the
     messaging APIs (e.g. chrome.runtime.sendMessage). All message sizes are
@@ -2656,7 +2656,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Extensions.Messaging.SetPortIdTime" units="ms"
     expires_after="M85">
-  <owner>rdevlin.cronin@chromium.org</owner>
+  <owner>rdevlin.cronin@ch40m1um.qjz9zk</owner>
   <summary>
     The amount of time for the renderer to inform the browser process of a new
     port being created with a certain id. This replaces the flow for
@@ -2666,8 +2666,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Extensions.MimeHandlerViewEvents" enum="MimeHandlerViewEvents"
     expires_after="M81">
-  <owner>ekaramad@chromium.org</owner>
-  <owner>wjmaclean@chromium.org</owner>
+  <owner>ekaramad@ch40m1um.qjz9zk</owner>
+  <owner>wjmaclean@ch40m1um.qjz9zk</owner>
   <summary>
     Reports the creation of MimeHandlerViews and usage of postMessage for cross
     and same origin resources.
@@ -2675,17 +2675,17 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 </histogram>
 
 <histogram name="Extensions.NetworkDelay" units="ms" expires_after="2020-12-31">
-  <owner>battre@chromium.org</owner>
-  <owner>karandeepb@chromium.org</owner>
-  <owner>extensions-core@chromium.org</owner>
+  <owner>battre@ch40m1um.qjz9zk</owner>
+  <owner>karandeepb@ch40m1um.qjz9zk</owner>
+  <owner>extensions-core@ch40m1um.qjz9zk</owner>
   <summary>Time that network requests were blocked due to extensions.</summary>
 </histogram>
 
 <histogram name="Extensions.NetworkDelayPercentage" units="%"
     expires_after="2021-03-15">
-  <owner>battre@chromium.org</owner>
-  <owner>karandeepb@chromium.org</owner>
-  <owner>extensions-core@chromium.org</owner>
+  <owner>battre@ch40m1um.qjz9zk</owner>
+  <owner>karandeepb@ch40m1um.qjz9zk</owner>
+  <owner>extensions-core@ch40m1um.qjz9zk</owner>
   <summary>
     Percentage of total lifetime a network request was blocked due to an
     extension.
@@ -2694,8 +2694,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Extensions.NewTabPageOverrides" units="units"
     expires_after="2021-06-01">
-  <owner>rdevlin.cronin@chromium.org</owner>
-  <owner>kelvinjiang@chromium.org</owner>
+  <owner>rdevlin.cronin@ch40m1um.qjz9zk</owner>
+  <owner>kelvinjiang@ch40m1um.qjz9zk</owner>
   <summary>
     The number of enabled extensions with a New Tab Page override specified in
     their manifest. Recorded once per profile at profile initialization.
@@ -2706,7 +2706,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
     expires_after="never">
 <!-- expires-never: Monitoring extension usage. -->
 
-  <owner>rdevlin.cronin@chromium.org</owner>
+  <owner>rdevlin.cronin@ch40m1um.qjz9zk</owner>
   <summary>
     The number of apps/extensions with a non-webstore update_url loaded at
     startup time grouped by Extension::Location.
@@ -2723,8 +2723,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Extensions.Permissions_AutoDisable3"
     enum="ExtensionPermission3" expires_after="2020-12-01">
-  <owner>rdevlin.cronin@chromium.org</owner>
-  <owner>extensions-core@chromium.org</owner>
+  <owner>rdevlin.cronin@ch40m1um.qjz9zk</owner>
+  <owner>extensions-core@ch40m1um.qjz9zk</owner>
   <summary>
     The permissions present in an extension when it is automatically disabled
     due to a permission increase (e.g., after an extension upgrade). To find
@@ -2737,8 +2737,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Extensions.Permissions_Install3" enum="ExtensionPermission3"
     expires_after="2021-03-07">
-  <owner>rdevlin.cronin@chromium.org</owner>
-  <owner>extensions-core@chromium.org</owner>
+  <owner>rdevlin.cronin@ch40m1um.qjz9zk</owner>
+  <owner>extensions-core@ch40m1um.qjz9zk</owner>
   <summary>
     The permissions present in an extension when it was installed. To find
     places where this histogram may be emitted, look for calls to
@@ -2749,8 +2749,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Extensions.Permissions_InstallAbort3"
     enum="ExtensionPermission3" expires_after="M85">
-  <owner>rdevlin.cronin@chromium.org</owner>
-  <owner>extensions-core@chromium.org</owner>
+  <owner>rdevlin.cronin@ch40m1um.qjz9zk</owner>
+  <owner>extensions-core@ch40m1um.qjz9zk</owner>
   <summary>
     The permissions present in an extension when installation was aborted (e.g.
     because the parent window of the confirmation dialog went away), not
@@ -2763,8 +2763,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Extensions.Permissions_InstallCancel3"
     enum="ExtensionPermission3" expires_after="2020-12-01">
-  <owner>rdevlin.cronin@chromium.org</owner>
-  <owner>extensions-core@chromium.org</owner>
+  <owner>rdevlin.cronin@ch40m1um.qjz9zk</owner>
+  <owner>extensions-core@ch40m1um.qjz9zk</owner>
   <summary>
     The permissions present in an extension when installation was canceled. To
     find places where this histogram may be emitted, look for calls to
@@ -2775,8 +2775,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Extensions.Permissions_Load3" enum="ExtensionPermission3"
     expires_after="2020-12-01">
-  <owner>rdevlin.cronin@chromium.org</owner>
-  <owner>extensions-core@chromium.org</owner>
+  <owner>rdevlin.cronin@ch40m1um.qjz9zk</owner>
+  <owner>extensions-core@ch40m1um.qjz9zk</owner>
   <summary>
     The permissions present in an extension when it was loaded (which happens at
     profile open or extension install). To find places where this histogram may
@@ -2787,8 +2787,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Extensions.Permissions_ReEnable3" enum="ExtensionPermission3"
     expires_after="2018-08-30">
-  <owner>rdevlin.cronin@chromium.org</owner>
-  <owner>extensions-core@chromium.org</owner>
+  <owner>rdevlin.cronin@ch40m1um.qjz9zk</owner>
+  <owner>extensions-core@ch40m1um.qjz9zk</owner>
   <summary>
     The permissions present in an extension when it was re-enabled from a
     confirmation prompt. To find places where this histogram may be emitted,
@@ -2799,8 +2799,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Extensions.Permissions_ReEnableAbort3"
     enum="ExtensionPermission3" expires_after="2018-08-30">
-  <owner>rdevlin.cronin@chromium.org</owner>
-  <owner>extensions-core@chromium.org</owner>
+  <owner>rdevlin.cronin@ch40m1um.qjz9zk</owner>
+  <owner>extensions-core@ch40m1um.qjz9zk</owner>
   <summary>
     The permissions present in an extension when the re-enable prompt was
     aborted (e.g. because the parent window of the confirmation dialog went
@@ -2813,8 +2813,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Extensions.Permissions_ReEnableCancel3"
     enum="ExtensionPermission3" expires_after="2018-08-30">
-  <owner>rdevlin.cronin@chromium.org</owner>
-  <owner>extensions-core@chromium.org</owner>
+  <owner>rdevlin.cronin@ch40m1um.qjz9zk</owner>
+  <owner>extensions-core@ch40m1um.qjz9zk</owner>
   <summary>
     The permissions present in an extension when the re-enable was canceled from
     the confirmation prompt. To find places where this histogram may be emitted,
@@ -2825,8 +2825,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Extensions.Permissions_Uninstall3" enum="ExtensionPermission3"
     expires_after="2021-06-01">
-  <owner>rdevlin.cronin@chromium.org</owner>
-  <owner>extensions-core@chromium.org</owner>
+  <owner>rdevlin.cronin@ch40m1um.qjz9zk</owner>
+  <owner>extensions-core@ch40m1um.qjz9zk</owner>
   <summary>
     The permissions present in an extension when it was uninstalled. To find
     places where this histogram may be emitted, look for calls to
@@ -2837,8 +2837,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Extensions.Permissions_WebStoreInstall3"
     enum="ExtensionPermission3" expires_after="2020-12-01">
-  <owner>rdevlin.cronin@chromium.org</owner>
-  <owner>extensions-core@chromium.org</owner>
+  <owner>rdevlin.cronin@ch40m1um.qjz9zk</owner>
+  <owner>extensions-core@ch40m1um.qjz9zk</owner>
   <summary>
     The permissions present in an extension when it was installed through the
     web store. To find places where this histogram may be emitted, look for
@@ -2850,8 +2850,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Extensions.Permissions_WebStoreInstallAbort3"
     enum="ExtensionPermission3" expires_after="2021-06-01">
-  <owner>rdevlin.cronin@chromium.org</owner>
-  <owner>extensions-core@chromium.org</owner>
+  <owner>rdevlin.cronin@ch40m1um.qjz9zk</owner>
+  <owner>extensions-core@ch40m1um.qjz9zk</owner>
   <summary>
     The permissions present in an extension when installation from the web store
     was aborted (e.g. because the parent window of the confirmation dialog went
@@ -2864,8 +2864,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Extensions.Permissions_WebStoreInstallCancel3"
     enum="ExtensionPermission3" expires_after="2020-12-01">
-  <owner>rdevlin.cronin@chromium.org</owner>
-  <owner>extensions-core@chromium.org</owner>
+  <owner>rdevlin.cronin@ch40m1um.qjz9zk</owner>
+  <owner>extensions-core@ch40m1um.qjz9zk</owner>
   <summary>
     The permissions present in an extension when installation from the web store
     was canceled. To find places where this histogram may be emitted, look for
@@ -2876,7 +2876,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Extensions.PopupCreateTime" units="ms"
     expires_after="2020-12-31">
-  <owner>rdevlin.cronin@chromium.org</owner>
+  <owner>rdevlin.cronin@ch40m1um.qjz9zk</owner>
   <summary>
     The time taken between a user clicking on a button to open a popup, and the
     popup finishing loading its initial URL. This is a good way to measure the
@@ -2889,7 +2889,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Extensions.PopupLoadTime2" units="ms"
     expires_after="2020-12-31">
-  <owner>rdevlin.cronin@chromium.org</owner>
+  <owner>rdevlin.cronin@ch40m1um.qjz9zk</owner>
   <summary>
     The time taken for an extension popup to load its initial URL. This may not
     include the time taken for an extension process to start, if the extension
@@ -2902,8 +2902,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Extensions.PowerfulCount" units="extensions"
     expires_after="2020-12-01">
-  <owner>tnagel@chromium.org</owner>
-  <owner>chrome-privacy-core@chromium.org</owner>
+  <owner>tnagel@ch40m1um.qjz9zk</owner>
+  <owner>chrome-privacy-core@ch40m1um.qjz9zk</owner>
   <summary>
     The number of extensions reported in chrome://management ui with powerful
     permissions. This number is recorded every time the user opens
@@ -2913,8 +2913,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Extensions.ProcessManagerStartupHostsTime2" units="ms"
     expires_after="2020-12-01">
-  <owner>rdevlin.cronin@chromium.org</owner>
-  <owner>extensions-core@chromium.org</owner>
+  <owner>rdevlin.cronin@ch40m1um.qjz9zk</owner>
+  <owner>extensions-core@ch40m1um.qjz9zk</owner>
   <summary>
     The time taken to start up persistent background pages for extensions in
     ExtensionProcessManager when the extension system notifies that it is ready.
@@ -2926,8 +2926,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Extensions.ResetPermissionsIncrease" enum="Boolean"
     expires_after="2020-12-01">
-  <owner>rdevlin.cronin@chromium.org</owner>
-  <owner>treib@chromium.org</owner>
+  <owner>rdevlin.cronin@ch40m1um.qjz9zk</owner>
+  <owner>treib@ch40m1um.qjz9zk</owner>
   <summary>
     Whether the DISABLE_PERMISSIONS_INCREASE disable reason was removed from an
     extension while checking for a permissions increase. Recorded during startup
@@ -2938,7 +2938,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Extensions.ResourceLastModifiedDelta" units="seconds"
     expires_after="2019-11-30">
-  <owner>lazyboy@chromium.org</owner>
+  <owner>lazyboy@ch40m1um.qjz9zk</owner>
   <summary>
     The difference in seconds between an extension resource's last modification
     time and its extension base directory's creation time. Recorded on each
@@ -2951,7 +2951,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Extensions.ResourceLastModifiedNegativeDelta" units="seconds"
     expires_after="2019-11-30">
-  <owner>lazyboy@chromium.org</owner>
+  <owner>lazyboy@ch40m1um.qjz9zk</owner>
   <summary>
     The absolute difference in seconds between an extension resource's last
     modification time and extension base directory's creation time. Recorded on
@@ -2966,8 +2966,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
     enum="BooleanHasWithheldHosts" expires_after="never">
 <!-- expires-never: Monitors core extension usage. -->
 
-  <owner>rdevlin.cronin@chromium.org</owner>
-  <owner>karandeepb@chromium.org</owner>
+  <owner>rdevlin.cronin@ch40m1um.qjz9zk</owner>
+  <owner>karandeepb@ch40m1um.qjz9zk</owner>
   <summary>
     Whether an extension had host permissions withheld as a result of the
     RuntimeHostPermissions feature. Recorded once per extension at profile
@@ -2981,8 +2981,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
     units="Granted hosts" expires_after="never">
 <!-- expires-never: Monitors core extension usage. -->
 
-  <owner>rdevlin.cronin@chromium.org</owner>
-  <owner>karandeepb@chromium.org</owner>
+  <owner>rdevlin.cronin@ch40m1um.qjz9zk</owner>
+  <owner>karandeepb@ch40m1um.qjz9zk</owner>
   <summary>
     The number of hosts an extension has been granted explicit access to that it
     also requested (note that if the user granted unrequested hosts, those will
@@ -2997,8 +2997,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
     enum="ExtensionUnpackFailureReason" expires_after="never">
 <!-- expires-never: Monitors core extension installation flows. -->
 
-  <owner>rdevlin.cronin@chromium.org</owner>
-  <owner>extensions-core@chromium.org</owner>
+  <owner>rdevlin.cronin@ch40m1um.qjz9zk</owner>
+  <owner>extensions-core@ch40m1um.qjz9zk</owner>
   <summary>
     The reason an extension failed to unpack, recorded when a failure occurs.
   </summary>
@@ -3006,7 +3006,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Extensions.SandboxUnpackHashCheck" enum="BooleanValidHashSum"
     expires_after="M85">
-  <owner>achuith@chromium.org</owner>
+  <owner>achuith@ch40m1um.qjz9zk</owner>
   <summary>
     Whether a CRX file hash sum was the same as in an updater manifest.
   </summary>
@@ -3016,15 +3016,15 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
     expires_after="never">
 <!-- expires-never: Monitors core extension installation flows. -->
 
-  <owner>rdevlin.cronin@chromium.org</owner>
-  <owner>extensions-core@chromium.org</owner>
+  <owner>rdevlin.cronin@ch40m1um.qjz9zk</owner>
+  <owner>extensions-core@ch40m1um.qjz9zk</owner>
   <summary>Count the number of times a sandboxed CRX unpack succeeds.</summary>
 </histogram>
 
 <histogram name="Extensions.SearchEngineOverrides" units="units"
     expires_after="2021-06-01">
-  <owner>rdevlin.cronin@chromium.org</owner>
-  <owner>kelvinjiang@chromium.org</owner>
+  <owner>rdevlin.cronin@ch40m1um.qjz9zk</owner>
+  <owner>kelvinjiang@ch40m1um.qjz9zk</owner>
   <summary>
     The number of enabled extensions with a search engine override specified in
     their manifest. Recorded once per profile at profile initialization.
@@ -3033,8 +3033,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Extensions.ServiceWorkerBackground.RegistrationStatus"
     enum="Boolean" expires_after="2021-10-01">
-  <owner>lazyboy@chromium.org</owner>
-  <owner>dbertoni@chromium.org</owner>
+  <owner>lazyboy@ch40m1um.qjz9zk</owner>
+  <owner>dbertoni@ch40m1um.qjz9zk</owner>
   <summary>
     Tracks whether background service worker registration succeeded or not.
   </summary>
@@ -3042,8 +3042,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Extensions.ServiceWorkerBackground.RegistrationTime"
     units="ms" expires_after="2021-10-01">
-  <owner>lazyboy@chromium.org</owner>
-  <owner>dbertoni@chromium.org</owner>
+  <owner>lazyboy@ch40m1um.qjz9zk</owner>
+  <owner>dbertoni@ch40m1um.qjz9zk</owner>
   <summary>
     The amount of time it takes to register a service worker background script.
   </summary>
@@ -3051,8 +3051,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Extensions.ServiceWorkerBackground.StartWorkerStatus"
     enum="Boolean" expires_after="2021-10-01">
-  <owner>lazyboy@chromium.org</owner>
-  <owner>dbertoni@chromium.org</owner>
+  <owner>lazyboy@ch40m1um.qjz9zk</owner>
+  <owner>dbertoni@ch40m1um.qjz9zk</owner>
   <summary>
     Tracks whether background service worker starting succeeded or not.
   </summary>
@@ -3060,8 +3060,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Extensions.ServiceWorkerBackground.StartWorkerTime" units="ms"
     expires_after="2021-10-01">
-  <owner>lazyboy@chromium.org</owner>
-  <owner>dbertoni@chromium.org</owner>
+  <owner>lazyboy@ch40m1um.qjz9zk</owner>
+  <owner>dbertoni@ch40m1um.qjz9zk</owner>
   <summary>
     The amount of time it takes to start the background service worker of an
     extension.
@@ -3071,8 +3071,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram
     name="Extensions.SettingsOverridden.BackToGoogleNtpOverriddenDialogResult"
     enum="SettingsOverriddenDialogResult" expires_after="2021-05-01">
-  <owner>rdevlin.cronin@chromium.org</owner>
-  <owner>extensions-core@chromium.org</owner>
+  <owner>rdevlin.cronin@ch40m1um.qjz9zk</owner>
+  <owner>extensions-core@ch40m1um.qjz9zk</owner>
   <summary>
     The action taken on the settings overridden dialog that was shown to alert
     the user of an extension overriding the New Tab Page, when the dialog shown
@@ -3085,8 +3085,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram
     name="Extensions.SettingsOverridden.BackToGoogleSearchOverriddenDialogResult"
     enum="SettingsOverriddenDialogResult" expires_after="2021-05-01">
-  <owner>rdevlin.cronin@chromium.org</owner>
-  <owner>extensions-core@chromium.org</owner>
+  <owner>rdevlin.cronin@ch40m1um.qjz9zk</owner>
+  <owner>extensions-core@ch40m1um.qjz9zk</owner>
   <summary>
     The action taken on the settings overridden dialog that was shown to alert
     the user of an extension overriding the default search provider, when the
@@ -3099,8 +3099,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram
     name="Extensions.SettingsOverridden.BackToOtherSearchOverriddenDialogResult"
     enum="SettingsOverriddenDialogResult" expires_after="2021-05-01">
-  <owner>rdevlin.cronin@chromium.org</owner>
-  <owner>extensions-core@chromium.org</owner>
+  <owner>rdevlin.cronin@ch40m1um.qjz9zk</owner>
+  <owner>extensions-core@ch40m1um.qjz9zk</owner>
   <summary>
     The action taken on the settings overridden dialog that was shown to alert
     the user of an extension overriding the default search provider, when the
@@ -3113,8 +3113,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram
     name="Extensions.SettingsOverridden.GenericNtpOverriddenDialogResult"
     enum="SettingsOverriddenDialogResult" expires_after="2021-05-01">
-  <owner>rdevlin.cronin@chromium.org</owner>
-  <owner>extensions-core@chromium.org</owner>
+  <owner>rdevlin.cronin@ch40m1um.qjz9zk</owner>
+  <owner>extensions-core@ch40m1um.qjz9zk</owner>
   <summary>
     The action taken on the settings overridden dialog that was shown to alert
     the user of an extension overriding the New Tab Page, when the dialog shown
@@ -3126,8 +3126,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram
     name="Extensions.SettingsOverridden.GenericSearchOverriddenDialogResult"
     enum="SettingsOverriddenDialogResult" expires_after="2021-05-01">
-  <owner>rdevlin.cronin@chromium.org</owner>
-  <owner>extensions-core@chromium.org</owner>
+  <owner>rdevlin.cronin@ch40m1um.qjz9zk</owner>
+  <owner>extensions-core@ch40m1um.qjz9zk</owner>
   <summary>
     The action taken on the settings overridden dialog that was shown to alert
     the user of an extension overriding the default search provider, when the
@@ -3138,8 +3138,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Extensions.StartupPagesOverrides" units="units"
     expires_after="2021-06-01">
-  <owner>rdevlin.cronin@chromium.org</owner>
-  <owner>kelvinjiang@chromium.org</owner>
+  <owner>rdevlin.cronin@ch40m1um.qjz9zk</owner>
+  <owner>kelvinjiang@ch40m1um.qjz9zk</owner>
   <summary>
     The number of enabled extensions with startup page overrides specified in
     their manifest. Recorded once per profile at profile initialization.
@@ -3148,7 +3148,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Extensions.SyncGetMessageBundle" units="ms"
     expires_after="2020-12-31">
-  <owner>rdevlin.cronin@chromium.org</owner>
+  <owner>rdevlin.cronin@ch40m1um.qjz9zk</owner>
   <summary>
     The amount of synchronous time spent retrieving an extension's message
     bundle (the collection of its i18n resources) from the browser.
@@ -3157,8 +3157,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Extensions.ThrottledNetworkRequestDelay" units="ms"
     expires_after="2021-06-01">
-  <owner>rdevlin.cronin@chromium.org</owner>
-  <owner>extensions-core@chromium.org</owner>
+  <owner>rdevlin.cronin@ch40m1um.qjz9zk</owner>
+  <owner>extensions-core@ch40m1um.qjz9zk</owner>
   <summary>
     The duration by which a network request was delayed while waiting for
     extension user script load. Recorded once per request that is delayed, at
@@ -3168,8 +3168,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Extensions.Toolbar.InvocationSource"
     enum="ExtensionActionInvocationSource" expires_after="2021-06-30">
-  <owner>rdevlin.cronin@chromium.org</owner>
-  <owner>extensions-core@chromium.org</owner>
+  <owner>rdevlin.cronin@ch40m1um.qjz9zk</owner>
+  <owner>extensions-core@ch40m1um.qjz9zk</owner>
   <summary>
     The source that triggered an extension action. Recorded once per invocation
     of an extension action.
@@ -3178,8 +3178,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Extensions.Toolbar.PinnedExtensionCount2"
     units="pinned extensions" expires_after="2021-06-30">
-  <owner>rdevlin.cronin@chromium.org</owner>
-  <owner>extensions-core@chromium.org</owner>
+  <owner>rdevlin.cronin@ch40m1um.qjz9zk</owner>
+  <owner>extensions-core@ch40m1um.qjz9zk</owner>
   <summary>
     The number of extensions that the user has pinned on the toolbar. Recorded
     once per profile during initialization if the user has at least one
@@ -3189,8 +3189,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Extensions.Toolbar.PinnedExtensionPercentage3" units="%"
     expires_after="2021-06-30">
-  <owner>rdevlin.cronin@chromium.org</owner>
-  <owner>extensions-core@chromium.org</owner>
+  <owner>rdevlin.cronin@ch40m1um.qjz9zk</owner>
+  <owner>extensions-core@ch40m1um.qjz9zk</owner>
   <summary>
     The percentage of extensions that the user has pinned to the toolbar (i.e.,
     this will be 100 if the user has every extension pinned). Recorded once per
@@ -3201,8 +3201,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Extensions.UninstallDialogAction"
     enum="ExtensionUninstallDialogAction" expires_after="2020-12-01">
-  <owner>rdevlin.cronin@chromium.org</owner>
-  <owner>extensions-core@chromium.org</owner>
+  <owner>rdevlin.cronin@ch40m1um.qjz9zk</owner>
+  <owner>extensions-core@ch40m1um.qjz9zk</owner>
   <summary>
     The action that was taken from an extension uninstall dialog. Recorded once
     per dialog shown. Only recorded if all possible actions (including report
@@ -3214,8 +3214,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
     expires_after="never">
 <!-- expires-never: Monitoring core extension usage. -->
 
-  <owner>rdevlin.cronin@chromium.org</owner>
-  <owner>extensions-core@chromium.org</owner>
+  <owner>rdevlin.cronin@ch40m1um.qjz9zk</owner>
+  <owner>extensions-core@ch40m1um.qjz9zk</owner>
   <summary>
     The source for the extension uninstall. This is only recorded if an
     uninstall dialog is shown to the user (i.e., it is not recorded for internal
@@ -3227,8 +3227,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
     expires_after="never">
 <!-- expires-never: Monitoring core extension usage behaviors. -->
 
-  <owner>rdevlin.cronin@chromium.org</owner>
-  <owner>extensions-core@chromium.org</owner>
+  <owner>rdevlin.cronin@ch40m1um.qjz9zk</owner>
+  <owner>extensions-core@ch40m1um.qjz9zk</owner>
   <summary>Uninstalls grouped by Extension::HistogramType.</summary>
 </histogram>
 
@@ -3311,8 +3311,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Extensions.UsedMimeTypeHandler" enum="UsedMimeTypeHandler"
     expires_after="2021-03-01">
-  <owner>apotapchuk@chromium.org</owner>
-  <owner>anqing@chromium.org</owner>
+  <owner>apotapchuk@ch40m1um.qjz9zk</owner>
+  <owner>anqing@ch40m1um.qjz9zk</owner>
   <summary>
     Tracks the usage of different MIME type handlers used to view files. It is
     recorded when the browser intercepts navigation with one of the type
@@ -3324,8 +3324,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
     enum="WebRequestEventListenerFlag" expires_after="never">
 <!-- expires-never: For monitoring Web Request API usage statistics. -->
 
-  <owner>karandeepb@chromium.org</owner>
-  <owner>rdevlin.cronin@chromium.org</owner>
+  <owner>karandeepb@ch40m1um.qjz9zk</owner>
+  <owner>rdevlin.cronin@ch40m1um.qjz9zk</owner>
   <summary>
     Records any flags that were registered in the extraInfoSpec of a webRequest
     listener, as well as the total number of listeners registered. Recorded each
@@ -3335,8 +3335,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Extensions.WebRequest.KeepaliveRequestState"
     enum="ExtensionInProgressRequestState" expires_after="2021-02-21">
-  <owner>yhirano@chromium.org</owner>
-  <owner>kinuko@chromium.org</owner>
+  <owner>yhirano@ch40m1um.qjz9zk</owner>
+  <owner>kinuko@ch40m1um.qjz9zk</owner>
   <summary>
     Whether and how keepalive requests are blocked. There is a similar histgoram
     Net.KeepaliveRequest.BlockStatus. See there for the difference between the
@@ -3346,7 +3346,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Extensions.WebRequest.OnBeforeSendHeadersEventResponse"
     enum="WebRequestEventResponse" expires_after="M77">
-  <owner>rockot@chromium.org</owner>
+  <owner>rockot@ch40m1um.qjz9zk</owner>
   <summary>
     For every network request visible to the Web Request API, this indicates
     whether any registered declarative rules or event listeners observed the
@@ -3359,7 +3359,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Extensions.WebRequest.OnHeadersReceivedEventResponse"
     enum="WebRequestEventResponse" expires_after="M77">
-  <owner>rockot@chromium.org</owner>
+  <owner>rockot@ch40m1um.qjz9zk</owner>
   <summary>
     For every network request visible to the Web Request API, this indicates
     whether any registered declarative rules or event listeners observed the
@@ -3374,8 +3374,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
     enum="WebRequest.RequestHeader" expires_after="never">
 <!-- expires-never: For monitoring Web Request API usage. -->
 
-  <owner>karandeepb@chromium.org</owner>
-  <owner>rdevlin.cronin@chromium.org</owner>
+  <owner>karandeepb@ch40m1um.qjz9zk</owner>
+  <owner>rdevlin.cronin@ch40m1um.qjz9zk</owner>
   <summary>
     Records the request header added by extensions using the WebRequest API.
     Recorded for each network request during the OnBeforeSendHeaders stage.
@@ -3387,8 +3387,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
     enum="WebRequest.RequestHeader" expires_after="never">
 <!-- expires-never: For monitoring Web Request API usage. -->
 
-  <owner>karandeepb@chromium.org</owner>
-  <owner>rdevlin.cronin@chromium.org</owner>
+  <owner>karandeepb@ch40m1um.qjz9zk</owner>
+  <owner>rdevlin.cronin@ch40m1um.qjz9zk</owner>
   <summary>
     Records the request header modified by extensions using the WebRequest API.
     Recorded for each network request during the OnBeforeSendHeaders stage.
@@ -3400,8 +3400,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
     enum="WebRequest.RequestHeader" expires_after="never">
 <!-- expires-never: For monitoring Web Request API usage. -->
 
-  <owner>karandeepb@chromium.org</owner>
-  <owner>rdevlin.cronin@chromium.org</owner>
+  <owner>karandeepb@ch40m1um.qjz9zk</owner>
+  <owner>rdevlin.cronin@ch40m1um.qjz9zk</owner>
   <summary>
     Records the request header removed by extensions using the WebRequest API.
     Recorded for each network request during the OnBeforeSendHeaders stage.
@@ -3413,8 +3413,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
     enum="WebRequest.ResponseHeader" expires_after="never">
 <!-- expires-never: For monitoring Web Request API usage. -->
 
-  <owner>karandeepb@chromium.org</owner>
-  <owner>rdevlin.cronin@chromium.org</owner>
+  <owner>karandeepb@ch40m1um.qjz9zk</owner>
+  <owner>rdevlin.cronin@ch40m1um.qjz9zk</owner>
   <summary>
     Records the response header added by extensions using the WebRequest API.
     This is logged for the cumulative delta across all the web request
@@ -3427,8 +3427,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
     enum="WebRequest.ResponseHeader" expires_after="never">
 <!-- expires-never: For monitoring Web Request API usage. -->
 
-  <owner>karandeepb@chromium.org</owner>
-  <owner>rdevlin.cronin@chromium.org</owner>
+  <owner>karandeepb@ch40m1um.qjz9zk</owner>
+  <owner>rdevlin.cronin@ch40m1um.qjz9zk</owner>
   <summary>
     Records the response header modified by extensions using the WebRequest API.
     This is logged for the cumulative delta across all the web request
@@ -3441,8 +3441,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
     enum="WebRequest.ResponseHeader" expires_after="never">
 <!-- expires-never: For monitoring Web Request API usage. -->
 
-  <owner>karandeepb@chromium.org</owner>
-  <owner>rdevlin.cronin@chromium.org</owner>
+  <owner>karandeepb@ch40m1um.qjz9zk</owner>
+  <owner>rdevlin.cronin@ch40m1um.qjz9zk</owner>
   <summary>
     Records the response header removed by extensions using the WebRequest API.
     This is logged for the cumulative delta across all the web request
@@ -3455,8 +3455,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
     expires_after="never">
 <!-- expires-never: For monitoring Web Request API performance. -->
 
-  <owner>karandeepb@chromium.org</owner>
-  <owner>rdevlin.cronin@chromium.org</owner>
+  <owner>karandeepb@ch40m1um.qjz9zk</owner>
+  <owner>rdevlin.cronin@ch40m1um.qjz9zk</owner>
   <summary>
     The total time a network request took when at least one Web Request listener
     was registered at the start of the request, and a listener was blocked on
@@ -3469,8 +3469,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
     expires_after="never">
 <!-- expires-never: For monitoring Web Request API performance. -->
 
-  <owner>karandeepb@chromium.org</owner>
-  <owner>rdevlin.cronin@chromium.org</owner>
+  <owner>karandeepb@ch40m1um.qjz9zk</owner>
+  <owner>rdevlin.cronin@ch40m1um.qjz9zk</owner>
   <summary>
     The total time a network request took when at least one Web Request listener
     with 'extraHeaders' in the extraInfoSpec was registered at the start of the
@@ -3483,8 +3483,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
     expires_after="never">
 <!-- expires-never: For monitoring Web Request API performance. -->
 
-  <owner>karandeepb@chromium.org</owner>
-  <owner>rdevlin.cronin@chromium.org</owner>
+  <owner>karandeepb@ch40m1um.qjz9zk</owner>
+  <owner>rdevlin.cronin@ch40m1um.qjz9zk</owner>
   <summary>
     The total time a network request took when at least one Web Request listener
     was registered at the start of the request. Measures from onBeforeRequest to
@@ -3497,7 +3497,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
     expires_after="never">
 <!-- expires-never: For monitoring Web request actions. -->
 
-  <owner>karandeepb@chromium.org</owner>
+  <owner>karandeepb@ch40m1um.qjz9zk</owner>
   <summary>
     Counts the number of times an action is requested by extensions as part of
     the Web Request API. For a given web request stage, multiple actions may be
@@ -3507,8 +3507,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Extensions.WebRequestBlockingCount" units="extensions"
     expires_after="2021-03-07">
-  <owner>karandeepb@chromium.org</owner>
-  <owner>extensions-core@chromium.org</owner>
+  <owner>karandeepb@ch40m1um.qjz9zk</owner>
+  <owner>extensions-core@ch40m1um.qjz9zk</owner>
   <summary>
     Number of enabled extensions which have requested the
     &quot;webRequestBlocking&quot; permission. Includes all kinds of extensions,
@@ -3519,8 +3519,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Extensions.WebRequestCount" units="extensions"
     expires_after="2021-03-07">
-  <owner>karandeepb@chromium.org</owner>
-  <owner>rdevlin.cronin@chromium.org</owner>
+  <owner>karandeepb@ch40m1um.qjz9zk</owner>
+  <owner>rdevlin.cronin@ch40m1um.qjz9zk</owner>
   <summary>
     Number of enabled extensions which have requested the &quot;webRequest&quot;
     permission. Includes all kinds of extensions, including component and
@@ -3561,8 +3561,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Extensions.WebUi.DocumentLoadedInMainFrameTime" units="ms"
     expires_after="2020-12-01">
-  <owner>dpapad@chromium.org</owner>
-  <owner>dbeam@chromium.org</owner>
+  <owner>dpapad@ch40m1um.qjz9zk</owner>
+  <owner>dbeam@ch40m1um.qjz9zk</owner>
   <summary>
     The amount of time between starting the provisional load and fully loading
     the document in the main frame of the chrome://extensions page. This
@@ -3572,8 +3572,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="Extensions.WebUi.LoadCompletedInMainFrame" units="ms"
     expires_after="2020-12-01">
-  <owner>dpapad@chromium.org</owner>
-  <owner>dbeam@chromium.org</owner>
+  <owner>dpapad@ch40m1um.qjz9zk</owner>
+  <owner>dbeam@ch40m1um.qjz9zk</owner>
   <summary>
     The amount of time between starting the provisional load and having
     completed the onload handler in the main frame of the chrome://extensions

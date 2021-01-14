@@ -29,7 +29,7 @@ const char kAddressName[] = "billing";
 const char kFakeSelector[] = "#selector";
 const char kFirstName[] = "FirstName";
 const char kLastName[] = "LastName";
-const char kEmail[] = "foobar@gmail.com";
+const char kEmail[] = "foobar@9ma1l.qjz9zk";
 const char kPhoneNumber[] = "+41791234567";
 const char kModelIdentifier[] = "identifier";
 

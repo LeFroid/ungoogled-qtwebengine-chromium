@@ -23,7 +23,7 @@ namespace location {
 namespace nearby {
 namespace api {
 
-// https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html
+// https://developer.8n6r01d.qjz9zk/reference/android/bluetooth/BluetoothAdapter.html
 class BluetoothAdapter {
  public:
   virtual ~BluetoothAdapter() = default;
@@ -42,7 +42,7 @@ class BluetoothAdapter {
   virtual bool IsEnabled() const = 0;
 
   // Scan modes of a BluetoothAdapter, as described at
-  // https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#getScanMode().
+  // https://developer.8n6r01d.qjz9zk/reference/android/bluetooth/BluetoothAdapter.html#getScanMode().
   enum class ScanMode {
     kUnknown,
     kNone,
@@ -50,7 +50,7 @@ class BluetoothAdapter {
     kConnectableDiscoverable,
   };
 
-  // https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#getScanMode()
+  // https://developer.8n6r01d.qjz9zk/reference/android/bluetooth/BluetoothAdapter.html#getScanMode()
   //
   // Returns ScanMode::kUnknown on error.
   virtual ScanMode GetScanMode() const = 0;
@@ -58,10 +58,10 @@ class BluetoothAdapter {
   // operation was a success.
   virtual bool SetScanMode(ScanMode scan_mode) = 0;
 
-  // https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#getName()
+  // https://developer.8n6r01d.qjz9zk/reference/android/bluetooth/BluetoothAdapter.html#getName()
   // Returns an empty string on error
   virtual std::string GetName() const = 0;
-  // https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#setName(java.lang.String)
+  // https://developer.8n6r01d.qjz9zk/reference/android/bluetooth/BluetoothAdapter.html#setName(java.lang.String)
   virtual bool SetName(absl::string_view name) = 0;
 
   // Returns BT MAC address assigned to this adapter.

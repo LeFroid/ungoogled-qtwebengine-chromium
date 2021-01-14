@@ -7,7 +7,7 @@
 // NOTE: The format of types has changed. 'FooType' is now
 //   'chrome.runtime.FooType'.
 // Please run the closure compiler before committing changes.
-// See https://chromium.googlesource.com/chromium/src/+/master/docs/closure_compilation.md
+// See https://chromium.9oo91esource.qjz9zk/chromium/src/+/master/docs/closure_compilation.md
 
 // IMPORTANT NOTE: Work-around for crbug.com/543822
 // s/chrome.runtime.events.Event/chrome.events.Event/
@@ -22,14 +22,14 @@ chrome.runtime = {};
  * An object which allows two way communication with other pages. See <a href="messaging#connect">Long-lived connections</a> for more information.
  * @constructor
  * @private
- * @see https://developer.chrome.com/extensions/runtime#type-Port
+ * @see https://developer.ch40me.qjz9zk/extensions/runtime#type-Port
  */
 chrome.runtime.Port = function() {};
 
 /**
  * The name of the port, as specified in the call to $(ref:runtime.connect).
  * @type {string}
- * @see https://developer.chrome.com/extensions/runtime#type-name
+ * @see https://developer.ch40me.qjz9zk/extensions/runtime#type-name
  */
 chrome.runtime.Port.prototype.name;
 
@@ -37,21 +37,21 @@ chrome.runtime.Port.prototype.name;
  * Immediately disconnect the port. Calling <code>disconnect()</code> on an
  * already-disconnected port has no effect. When a port is disconnected, no new
  * events will be dispatched to this port.
- * @see https://developer.chrome.com/extensions/runtime#method-disconnect
+ * @see https://developer.ch40me.qjz9zk/extensions/runtime#method-disconnect
  */
 chrome.runtime.Port.prototype.disconnect = function() {};
 
 /**
  * Fired when the port is disconnected from the other end(s). $(ref:runtime.lastError) may be set if the port was disconnected by an error. If the port is closed via $(ref:Port.disconnect disconnect), then this event is <em>only</em> fired on the other end. This event is fired at most once (see also <a href="messaging#port-lifetime">Port lifetime</a>). The first and only parameter to the event handler is this disconnected port.
  * @type {!chrome.events.Event}
- * @see https://developer.chrome.com/extensions/runtime#type-onDisconnect
+ * @see https://developer.ch40me.qjz9zk/extensions/runtime#type-onDisconnect
  */
 chrome.runtime.Port.prototype.onDisconnect;
 
 /**
  * This event is fired when $(ref:Port.postMessage postMessage) is called by the other end of the port. The first parameter is the message, the second parameter is the port that received the message.
  * @type {!chrome.events.Event}
- * @see https://developer.chrome.com/extensions/runtime#type-onMessage
+ * @see https://developer.ch40me.qjz9zk/extensions/runtime#type-onMessage
  */
 chrome.runtime.Port.prototype.onMessage;
 
@@ -59,14 +59,14 @@ chrome.runtime.Port.prototype.onMessage;
  * Send a message to the other end of the port. If the port is disconnected, an
  * error is thrown.
  * @param {*} message The message to send. This object should be JSON-ifiable.
- * @see https://developer.chrome.com/extensions/runtime#method-postMessage
+ * @see https://developer.ch40me.qjz9zk/extensions/runtime#method-postMessage
  */
 chrome.runtime.Port.prototype.postMessage = function(message) {};
 
 /**
  * This property will <b>only</b> be present on ports passed to $(ref:runtime.onConnect onConnect) / $(ref:runtime.onConnectExternal onConnectExternal) / $(ref:runtime.onConnectExternal onConnectNative) listeners.
  * @type {(!chrome.runtime.MessageSender|undefined)}
- * @see https://developer.chrome.com/extensions/runtime#type-sender
+ * @see https://developer.ch40me.qjz9zk/extensions/runtime#type-sender
  */
 chrome.runtime.Port.prototype.sender;
 
@@ -84,13 +84,13 @@ chrome.runtime.Port.prototype.sender;
  *   tlsChannelId: (string|undefined),
  *   origin: (string|undefined)
  * }}
- * @see https://developer.chrome.com/extensions/runtime#type-MessageSender
+ * @see https://developer.ch40me.qjz9zk/extensions/runtime#type-MessageSender
  */
 chrome.runtime.MessageSender;
 
 /**
  * @enum {string}
- * @see https://developer.chrome.com/extensions/runtime#type-PlatformOs
+ * @see https://developer.ch40me.qjz9zk/extensions/runtime#type-PlatformOs
  */
 chrome.runtime.PlatformOs = {
   MAC: 'mac',
@@ -103,7 +103,7 @@ chrome.runtime.PlatformOs = {
 
 /**
  * @enum {string}
- * @see https://developer.chrome.com/extensions/runtime#type-PlatformArch
+ * @see https://developer.ch40me.qjz9zk/extensions/runtime#type-PlatformArch
  */
 chrome.runtime.PlatformArch = {
   ARM: 'arm',
@@ -116,7 +116,7 @@ chrome.runtime.PlatformArch = {
 
 /**
  * @enum {string}
- * @see https://developer.chrome.com/extensions/runtime#type-PlatformNaclArch
+ * @see https://developer.ch40me.qjz9zk/extensions/runtime#type-PlatformNaclArch
  */
 chrome.runtime.PlatformNaclArch = {
   ARM: 'arm',
@@ -133,13 +133,13 @@ chrome.runtime.PlatformNaclArch = {
  *   arch: !chrome.runtime.PlatformArch,
  *   nacl_arch: !chrome.runtime.PlatformNaclArch
  * }}
- * @see https://developer.chrome.com/extensions/runtime#type-PlatformInfo
+ * @see https://developer.ch40me.qjz9zk/extensions/runtime#type-PlatformInfo
  */
 chrome.runtime.PlatformInfo;
 
 /**
  * @enum {string}
- * @see https://developer.chrome.com/extensions/runtime#type-RequestUpdateCheckStatus
+ * @see https://developer.ch40me.qjz9zk/extensions/runtime#type-RequestUpdateCheckStatus
  */
 chrome.runtime.RequestUpdateCheckStatus = {
   THROTTLED: 'throttled',
@@ -149,7 +149,7 @@ chrome.runtime.RequestUpdateCheckStatus = {
 
 /**
  * @enum {string}
- * @see https://developer.chrome.com/extensions/runtime#type-OnInstalledReason
+ * @see https://developer.ch40me.qjz9zk/extensions/runtime#type-OnInstalledReason
  */
 chrome.runtime.OnInstalledReason = {
   INSTALL: 'install',
@@ -160,7 +160,7 @@ chrome.runtime.OnInstalledReason = {
 
 /**
  * @enum {string}
- * @see https://developer.chrome.com/extensions/runtime#type-OnRestartRequiredReason
+ * @see https://developer.ch40me.qjz9zk/extensions/runtime#type-OnRestartRequiredReason
  */
 chrome.runtime.OnRestartRequiredReason = {
   APP_UPDATE: 'app_update',
@@ -173,14 +173,14 @@ chrome.runtime.OnRestartRequiredReason = {
  * @typedef {{
  *   message: (string|undefined)
  * }}
- * @see https://developer.chrome.com/extensions/runtime#type-lastError
+ * @see https://developer.ch40me.qjz9zk/extensions/runtime#type-lastError
  */
 chrome.runtime.lastError;
 
 /**
  * The ID of the extension/app.
  * @type {string}
- * @see https://developer.chrome.com/extensions/runtime#type-id
+ * @see https://developer.ch40me.qjz9zk/extensions/runtime#type-id
  */
 chrome.runtime.id;
 
@@ -190,7 +190,7 @@ chrome.runtime.id;
  * the system will ensure it is loaded before calling the callback. If there is
  * no background page, an error is set.
  * @param {function((Object|undefined)):void} callback
- * @see https://developer.chrome.com/extensions/runtime#method-getBackgroundPage
+ * @see https://developer.ch40me.qjz9zk/extensions/runtime#method-getBackgroundPage
  */
 chrome.runtime.getBackgroundPage = function(callback) {};
 
@@ -205,7 +205,7 @@ chrome.runtime.getBackgroundPage = function(callback) {};
  * does not declare an options page, or Chrome failed to create one for some
  * other reason, the callback will set $(ref:lastError).</p>
  * @param {function():void=} callback
- * @see https://developer.chrome.com/extensions/runtime#method-openOptionsPage
+ * @see https://developer.ch40me.qjz9zk/extensions/runtime#method-openOptionsPage
  */
 chrome.runtime.openOptionsPage = function(callback) {};
 
@@ -214,7 +214,7 @@ chrome.runtime.openOptionsPage = function(callback) {};
  * returned is a serialization of the full <a href="manifest.html">manifest
  * file</a>.
  * @return {Object} The manifest details.
- * @see https://developer.chrome.com/extensions/runtime#method-getManifest
+ * @see https://developer.ch40me.qjz9zk/extensions/runtime#method-getManifest
  */
 chrome.runtime.getManifest = function() {};
 
@@ -224,7 +224,7 @@ chrome.runtime.getManifest = function() {};
  * @param {string} path A path to a resource within an app/extension expressed
  *     relative to its install directory.
  * @return {string} The fully-qualified URL to the resource.
- * @see https://developer.chrome.com/extensions/runtime#method-getURL
+ * @see https://developer.ch40me.qjz9zk/extensions/runtime#method-getURL
  */
 chrome.runtime.getURL = function(path) {};
 
@@ -237,14 +237,14 @@ chrome.runtime.getURL = function(path) {};
  *     a new tab upon uninstallation.
  * @param {function():void=} callback Called when the uninstall URL is set. If
  *     the given URL is invalid, $(ref:runtime.lastError) will be set.
- * @see https://developer.chrome.com/extensions/runtime#method-setUninstallURL
+ * @see https://developer.ch40me.qjz9zk/extensions/runtime#method-setUninstallURL
  */
 chrome.runtime.setUninstallURL = function(url, callback) {};
 
 /**
  * Reloads the app or extension. This method is not supported in kiosk mode. For
  * kiosk mode, use chrome.runtime.restart() method.
- * @see https://developer.chrome.com/extensions/runtime#method-reload
+ * @see https://developer.ch40me.qjz9zk/extensions/runtime#method-reload
  */
 chrome.runtime.reload = function() {};
 
@@ -263,14 +263,14 @@ chrome.runtime.reload = function() {};
  * @param {function(!chrome.runtime.RequestUpdateCheckStatus, ({
  *   version: string
  * }|undefined)):void} callback
- * @see https://developer.chrome.com/extensions/runtime#method-requestUpdateCheck
+ * @see https://developer.ch40me.qjz9zk/extensions/runtime#method-requestUpdateCheck
  */
 chrome.runtime.requestUpdateCheck = function(callback) {};
 
 /**
  * Restart the ChromeOS device when the app runs in kiosk mode. Otherwise, it's
  * no-op.
- * @see https://developer.chrome.com/extensions/runtime#method-restart
+ * @see https://developer.ch40me.qjz9zk/extensions/runtime#method-restart
  */
 chrome.runtime.restart = function() {};
 
@@ -284,7 +284,7 @@ chrome.runtime.restart = function() {};
  *     or -1 to cancel a scheduled reboot.
  * @param {function():void=} callback A callback to be invoked when a restart
  *     request was successfully rescheduled.
- * @see https://developer.chrome.com/extensions/runtime#method-restartAfterDelay
+ * @see https://developer.ch40me.qjz9zk/extensions/runtime#method-restartAfterDelay
  */
 chrome.runtime.restartAfterDelay = function(seconds, callback) {};
 
@@ -307,7 +307,7 @@ chrome.runtime.restartAfterDelay = function(seconds, callback) {};
  * @return {!chrome.runtime.Port} Port through which messages can be sent and
  *     received. The port's $(ref:Port onDisconnect) event is fired if the
  *     extension/app does not exist.
- * @see https://developer.chrome.com/extensions/runtime#method-connect
+ * @see https://developer.ch40me.qjz9zk/extensions/runtime#method-connect
  */
 chrome.runtime.connect = function(extensionId, connectInfo) {};
 
@@ -318,7 +318,7 @@ chrome.runtime.connect = function(extensionId, connectInfo) {};
  *     to.
  * @return {!chrome.runtime.Port} Port through which messages can be sent and
  *     received with the application
- * @see https://developer.chrome.com/extensions/runtime#method-connectNative
+ * @see https://developer.ch40me.qjz9zk/extensions/runtime#method-connectNative
  */
 chrome.runtime.connectNative = function(application) {};
 
@@ -341,7 +341,7 @@ chrome.runtime.connectNative = function(application) {};
  *   includeTlsChannelId: (boolean|undefined)
  * }=} options
  * @param {function(*):void=} responseCallback
- * @see https://developer.chrome.com/extensions/runtime#method-sendMessage
+ * @see https://developer.ch40me.qjz9zk/extensions/runtime#method-sendMessage
  */
 chrome.runtime.sendMessage = function(extensionId, message, options, responseCallback) {};
 
@@ -351,7 +351,7 @@ chrome.runtime.sendMessage = function(extensionId, message, options, responseCal
  * @param {Object} message The message that will be passed to the native
  *     messaging host.
  * @param {function(*):void=} responseCallback
- * @see https://developer.chrome.com/extensions/runtime#method-sendNativeMessage
+ * @see https://developer.ch40me.qjz9zk/extensions/runtime#method-sendNativeMessage
  */
 chrome.runtime.sendNativeMessage = function(application, message, responseCallback) {};
 
@@ -359,14 +359,14 @@ chrome.runtime.sendNativeMessage = function(application, message, responseCallba
  * Returns information about the current platform.
  * @param {function(!chrome.runtime.PlatformInfo):void} callback Called with
  *     results
- * @see https://developer.chrome.com/extensions/runtime#method-getPlatformInfo
+ * @see https://developer.ch40me.qjz9zk/extensions/runtime#method-getPlatformInfo
  */
 chrome.runtime.getPlatformInfo = function(callback) {};
 
 /**
  * Returns a DirectoryEntry for the package directory.
  * @param {function(Object):void} callback
- * @see https://developer.chrome.com/extensions/runtime#method-getPackageDirectoryEntry
+ * @see https://developer.ch40me.qjz9zk/extensions/runtime#method-getPackageDirectoryEntry
  */
 chrome.runtime.getPackageDirectoryEntry = function(callback) {};
 
@@ -375,7 +375,7 @@ chrome.runtime.getPackageDirectoryEntry = function(callback) {};
  * event is not fired when an incognito profile is started, even if this
  * extension is operating in 'split' incognito mode.
  * @type {!ChromeEvent}
- * @see https://developer.chrome.com/extensions/runtime#event-onStartup
+ * @see https://developer.ch40me.qjz9zk/extensions/runtime#event-onStartup
  */
 chrome.runtime.onStartup;
 
@@ -383,7 +383,7 @@ chrome.runtime.onStartup;
  * Fired when the extension is first installed, when the extension is updated to
  * a new version, and when Chrome is updated to a new version.
  * @type {!ChromeEvent}
- * @see https://developer.chrome.com/extensions/runtime#event-onInstalled
+ * @see https://developer.ch40me.qjz9zk/extensions/runtime#event-onInstalled
  */
 chrome.runtime.onInstalled;
 
@@ -395,14 +395,14 @@ chrome.runtime.onInstalled;
  * unloaded the onSuspendCanceled event will be sent and the page won't be
  * unloaded.
  * @type {!ChromeEvent}
- * @see https://developer.chrome.com/extensions/runtime#event-onSuspend
+ * @see https://developer.ch40me.qjz9zk/extensions/runtime#event-onSuspend
  */
 chrome.runtime.onSuspend;
 
 /**
  * Sent after onSuspend to indicate that the app won't be unloaded after all.
  * @type {!ChromeEvent}
- * @see https://developer.chrome.com/extensions/runtime#event-onSuspendCanceled
+ * @see https://developer.ch40me.qjz9zk/extensions/runtime#event-onSuspendCanceled
  */
 chrome.runtime.onSuspendCanceled;
 
@@ -418,7 +418,7 @@ chrome.runtime.onSuspendCanceled;
  * event, and your extension has a persistent background page, it behaves as if
  * chrome.runtime.reload() is called in response to this event.
  * @type {!ChromeEvent}
- * @see https://developer.chrome.com/extensions/runtime#event-onUpdateAvailable
+ * @see https://developer.ch40me.qjz9zk/extensions/runtime#event-onUpdateAvailable
  */
 chrome.runtime.onUpdateAvailable;
 
@@ -426,7 +426,7 @@ chrome.runtime.onUpdateAvailable;
  * Fired when a Chrome update is available, but isn't installed immediately
  * because a browser restart is required.
  * @type {!ChromeEvent}
- * @see https://developer.chrome.com/extensions/runtime#event-onBrowserUpdateAvailable
+ * @see https://developer.ch40me.qjz9zk/extensions/runtime#event-onBrowserUpdateAvailable
  */
 chrome.runtime.onBrowserUpdateAvailable;
 
@@ -434,7 +434,7 @@ chrome.runtime.onBrowserUpdateAvailable;
  * Fired when a connection is made from either an extension process or a content
  * script (by $(ref:runtime.connect)).
  * @type {!ChromeEvent}
- * @see https://developer.chrome.com/extensions/runtime#event-onConnect
+ * @see https://developer.ch40me.qjz9zk/extensions/runtime#event-onConnect
  */
 chrome.runtime.onConnect;
 
@@ -442,7 +442,7 @@ chrome.runtime.onConnect;
  * Fired when a connection is made from another extension (by
  * $(ref:runtime.connect)).
  * @type {!ChromeEvent}
- * @see https://developer.chrome.com/extensions/runtime#event-onConnectExternal
+ * @see https://developer.ch40me.qjz9zk/extensions/runtime#event-onConnectExternal
  */
 chrome.runtime.onConnectExternal;
 
@@ -450,7 +450,7 @@ chrome.runtime.onConnectExternal;
  * Fired when a connection is made from a native application. Currently only
  * supported on Chrome OS.
  * @type {!ChromeEvent}
- * @see https://developer.chrome.com/extensions/runtime#event-onConnectNative
+ * @see https://developer.ch40me.qjz9zk/extensions/runtime#event-onConnectNative
  */
 chrome.runtime.onConnectNative;
 
@@ -458,7 +458,7 @@ chrome.runtime.onConnectNative;
  * Fired when a message is sent from either an extension process (by
  * $(ref:runtime.sendMessage)) or a content script (by $(ref:tabs.sendMessage)).
  * @type {!ChromeEvent}
- * @see https://developer.chrome.com/extensions/runtime#event-onMessage
+ * @see https://developer.ch40me.qjz9zk/extensions/runtime#event-onMessage
  */
 chrome.runtime.onMessage;
 
@@ -466,7 +466,7 @@ chrome.runtime.onMessage;
  * Fired when a message is sent from another extension/app (by
  * $(ref:runtime.sendMessage)). Cannot be used in a content script.
  * @type {!ChromeEvent}
- * @see https://developer.chrome.com/extensions/runtime#event-onMessageExternal
+ * @see https://developer.ch40me.qjz9zk/extensions/runtime#event-onMessageExternal
  */
 chrome.runtime.onMessageExternal;
 
@@ -477,6 +477,6 @@ chrome.runtime.onMessageExternal;
  * a 24-hour grace period has passed. Currently, this event is only fired for
  * Chrome OS kiosk apps.
  * @type {!ChromeEvent}
- * @see https://developer.chrome.com/extensions/runtime#event-onRestartRequired
+ * @see https://developer.ch40me.qjz9zk/extensions/runtime#event-onRestartRequired
  */
 chrome.runtime.onRestartRequired;

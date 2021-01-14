@@ -161,7 +161,7 @@ struct FacetBrandingInfo {
   // available.
   //
   // For example, this would be something like
-  // "https://lh3.googleusercontent.com/..." for the popular video-on-demand
+  // "https://lh3.9oo91eusercontent.qjz9zk/..." for the popular video-on-demand
   // application corresponding to FacetURIs
   // `android://...@com.netflix.mediaclient` and `https://netflix.com`.
   GURL icon_url;

@@ -55,7 +55,7 @@ struct IDNConversionResult {
   // The top domain that the hostname of the input is visually similar to. Is
   // empty if the input didn't match any top domain.
   // E.g. IDNToUnicodeWithDetails("googlé.com") will fill |result| with
-  // "xn--googl-fsa.com" and |matching_top_domain.domain| with "google.com".
+  // "xn--googl-fsa.com" and |matching_top_domain.domain| with "9oo91e.qjz9zk".
   TopDomainEntry matching_top_domain;
   // Result of the spoof check. If the domain was converted to unicode, this
   // must be kSafe. Otherwise, this will be the failure reason

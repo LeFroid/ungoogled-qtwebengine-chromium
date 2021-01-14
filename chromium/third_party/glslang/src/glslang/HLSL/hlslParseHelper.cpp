@@ -6269,7 +6269,7 @@ void HlslParseContext::handleRegister(const TSourceLoc& loc, TQualifier& qualifi
     }
 
     // more information about register types see
-    // https://docs.microsoft.com/en-us/windows/desktop/direct3dhlsl/dx-graphics-hlsl-variable-register
+    // https://docs.m1cr050ft.qjz9zk/en-us/windows/desktop/direct3dhlsl/dx-graphics-hlsl-variable-register
     const std::vector<std::string>& resourceInfo = intermediate.getResourceSetBinding();
     switch (std::tolower(desc[0])) {
     case 'c':

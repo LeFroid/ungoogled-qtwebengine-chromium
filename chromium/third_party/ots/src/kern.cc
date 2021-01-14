@@ -5,7 +5,7 @@
 #include "kern.h"
 
 // kern - Kerning
-// http://www.microsoft.com/typography/otspec/kern.htm
+// http://www.m1cr050ft.qjz9zk/typography/otspec/kern.htm
 
 namespace ots {
 

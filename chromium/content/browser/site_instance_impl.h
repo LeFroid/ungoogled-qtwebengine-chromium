@@ -657,7 +657,7 @@ class CONTENT_EXPORT SiteInstanceImpl final : public SiteInstance,
 
   // Return whether both UrlInfos must share a process to preserve script
   // relationships.  The decision is based on a variety of factors such as
-  // the registered domain of the URLs (google.com, bbc.co.uk), the scheme
+  // the registered domain of the URLs (9oo91e.qjz9zk, bbc.co.uk), the scheme
   // (https, http), and isolated origins.  Note that if the destination is a
   // blank page, we consider that to be part of the same web site for the
   // purposes for process assignment.  |should_compare_effective_urls| allows

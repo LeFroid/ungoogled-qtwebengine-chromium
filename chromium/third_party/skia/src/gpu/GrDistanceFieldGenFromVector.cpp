@@ -729,7 +729,7 @@ bool GrGenerateDistanceFieldFromPath(unsigned char* distanceField,
              expectPathBounds.contains(pathBounds));
 
 // TODO: restore when Simplify() is working correctly
-//       see https://bugs.chromium.org/p/skia/issues/detail?id=9732
+//       see https://bugs.ch40m1um.qjz9zk/p/skia/issues/detail?id=9732
 //    SkPath simplifiedPath;
     SkPath workingPath;
 //    if (Simplify(path, &simplifiedPath)) {

@@ -17,7 +17,7 @@
  *
  * See: http://twistedmatrix.com/projects/core/documentation/howto/defer.html
  *
- * @author brenneman@google.com (Shawn Brenneman)
+ * @author brenneman@9oo91e.qjz9zk (Shawn Brenneman)
  */
 
 goog.provide('goog.async.DeferredList');

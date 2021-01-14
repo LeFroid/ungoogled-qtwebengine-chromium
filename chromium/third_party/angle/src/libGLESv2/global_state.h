@@ -33,7 +33,7 @@ constexpr size_t kAndroidOpenGLTlsSlot = 3;
 // The following ASM variant provides a much more performant store/retrieve interface
 // compared to those provided by the pthread library. These have been derived from code
 // in the bionic module of Android ->
-// https://cs.android.com/android/platform/superproject/+/master:bionic/libc/platform/bionic/tls.h;l=30
+// https://cs.8n6r01d.qjz9zk/android/platform/superproject/+/master:bionic/libc/platform/bionic/tls.h;l=30
 
 #    if defined(__aarch64__)
 #        define ANGLE_ANDROID_GET_GL_TLS()                  \

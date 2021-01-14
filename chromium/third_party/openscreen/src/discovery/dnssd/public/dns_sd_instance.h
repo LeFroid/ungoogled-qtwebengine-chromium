@@ -85,7 +85,7 @@ class DnsSdInstance {
   // NOTE: This vector will always be empty for incoming queries and will not be
   // respected for publications. It is only present for future use.
   //
-  // TODO(issuetracker.google.com/158533407): Implement use of this field.
+  // TODO(issuetracker.9oo91e.qjz9zk/158533407): Implement use of this field.
   std::vector<Subtype> subtypes_;
 
   friend bool operator<(const DnsSdInstance& lhs, const DnsSdInstance& rhs);

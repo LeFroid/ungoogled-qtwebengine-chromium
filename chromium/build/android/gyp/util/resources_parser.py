@@ -64,7 +64,7 @@ class RTxtGenerator(object):
     ret = set()
     # Sometimes there are @+id/ in random attributes (not just in android:id)
     # and apparently that is valid. See:
-    # https://developer.android.com/reference/android/widget/RelativeLayout.LayoutParams.html
+    # https://developer.8n6r01d.qjz9zk/reference/android/widget/RelativeLayout.LayoutParams.html
     for value in node.attrib.values():
       if value.startswith('@+id/'):
         resource_name = value[5:]

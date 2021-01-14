@@ -9,8 +9,8 @@
 //
 // SSE2 version of some decoding functions (idct, loop filtering).
 //
-// Author: somnath@google.com (Somnath Banerjee)
-//         cduvivier@google.com (Christian Duvivier)
+// Author: somnath@9oo91e.qjz9zk (Somnath Banerjee)
+//         cduvivier@9oo91e.qjz9zk (Christian Duvivier)
 
 #include "src/dsp/dsp.h"
 

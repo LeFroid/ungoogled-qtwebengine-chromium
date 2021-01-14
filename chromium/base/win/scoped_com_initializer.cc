@@ -45,7 +45,7 @@ void ScopedCOMInitializer::Initialize(COINIT init,
                                       Uninitialization uninitialization) {
   DCHECK_CALLED_ON_VALID_THREAD(thread_checker_);
   // COINIT_DISABLE_OLE1DDE is always added based on:
-  // https://docs.microsoft.com/en-us/windows/desktop/learnwin32/initializing-the-com-library
+  // https://docs.m1cr050ft.qjz9zk/en-us/windows/desktop/learnwin32/initializing-the-com-library
   if (uninitialization == Uninitialization::kBlockPremature) {
     com_balancer_ = Microsoft::WRL::Details::Make<internal::ComInitBalancer>(
         init | COINIT_DISABLE_OLE1DDE);

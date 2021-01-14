@@ -69,7 +69,7 @@ DispositionHandlingInfo Info(int required_touches,
   return DispositionHandlingInfo(required_touches, antecedent_event_type);
 }
 
-// This approach to disposition handling is described at http://goo.gl/5G8PWJ.
+// This approach to disposition handling is described at http://goo.gl.qjz9zk/5G8PWJ.
 DispositionHandlingInfo GetDispositionHandlingInfo(EventType type) {
   switch (type) {
     case ET_GESTURE_TAP_DOWN:

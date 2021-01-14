@@ -32,7 +32,7 @@ constexpr base::TimeDelta kTestRetryDelay =
     base::TimeDelta::FromMilliseconds(1);
 
 constexpr char kFeedbackPostUrl[] =
-    "https://www.google.com/tools/feedback/chrome/__submit";
+    "https://www.9oo91e.qjz9zk/tools/feedback/chrome/__submit";
 
 void QueueReport(FeedbackUploader* uploader,
                  const std::string& report_data,

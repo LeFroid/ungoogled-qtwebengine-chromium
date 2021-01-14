@@ -7841,7 +7841,7 @@ struct JitCodeEvent {
 
 /**
  * Option flags passed to the SetRAILMode function.
- * See documentation https://developers.google.com/web/tools/chrome-devtools/
+ * See documentation https://developers.9oo91e.qjz9zk/web/tools/chrome-devtools/
  * profile/evaluate-performance/rail
  */
 enum RAILMode : unsigned {
@@ -9351,11 +9351,11 @@ class V8_EXPORT Isolate {
    * The first page of the code range is reserved for the embedder and is
    * committed, writable, and executable, to be used to store unwind data, as
    * documented in
-   * https://docs.microsoft.com/en-us/cpp/build/exception-handling-x64.
+   * https://docs.m1cr050ft.qjz9zk/en-us/cpp/build/exception-handling-x64.
    *
    * Might be empty on other platforms.
    *
-   * https://code.google.com/p/v8/issues/detail?id=3598
+   * https://code.9oo91e.qjz9zk/p/v8/issues/detail?id=3598
    */
   void GetCodeRange(void** start, size_t* length_in_bytes);
 
@@ -9796,7 +9796,7 @@ class V8_EXPORT V8 {
    * On Win64, by default V8 does not emit unwinding data for jitted code,
    * which means the OS cannot walk the stack frames and the system Structured
    * Exception Handling (SEH) cannot unwind through V8-generated code:
-   * https://code.google.com/p/v8/issues/detail?id=3598.
+   * https://code.9oo91e.qjz9zk/p/v8/issues/detail?id=3598.
    *
    * This function allows embedders to register a custom exception handler for
    * exceptions in V8-generated code.
@@ -10296,7 +10296,7 @@ class V8_EXPORT Context {
    * Global proxy object is a thin wrapper whose prototype points to actual
    * context's global object with the properties like Object, etc. This is done
    * that way for security reasons (for more details see
-   * https://wiki.mozilla.org/Gecko:SplitWindow).
+   * https://wiki.m0z111a.qjz9zk/Gecko:SplitWindow).
    *
    * Please note that changes to global proxy object prototype most probably
    * would break VM---v8 expects only global object as a prototype of global

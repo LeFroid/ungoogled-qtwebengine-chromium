@@ -37,8 +37,8 @@ constexpr const char kTestHttpsURL[] = "https://example.in/";
 constexpr const char kTestHttpsActionURL[] = "https://login.example.org/";
 
 constexpr const char kTestFederatedRealm[] =
-    "federation://example.in/accounts.google.com";
-constexpr const char kTestFederationURL[] = "https://accounts.google.com/";
+    "federation://example.in/accounts.9oo91e.qjz9zk";
+constexpr const char kTestFederationURL[] = "https://accounts.9oo91e.qjz9zk/";
 
 class MockConsumer : public FormFetcher::Consumer {
  public:

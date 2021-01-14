@@ -65,7 +65,7 @@ HANDLE g_job_object_handle = NULL;
 // versions of the dll name only if the dll has an extension.
 // For more information about how this list is generated, and how to get off
 // of it, see:
-// https://sites.google.com/a/chromium.org/dev/Home/third-party-developers
+// https://sites.9oo91e.qjz9zk/a/ch40m1um.qjz9zk/dev/Home/third-party-developers
 const wchar_t* const kTroublesomeDlls[] = {
     L"adialhk.dll",                // Kaspersky Internet Security.
     L"acpiz.dll",                  // Unknown.
@@ -333,7 +333,7 @@ bool ShouldSetJobLevel(const base::CommandLine& cmd_line) {
   // Chrome in remote sessions we do this check explicitly here.
   // According to MS this flag can be false for a remote session only on Windows
   // Server 2012 and newer so if we do the check last we should be on the safe
-  // side. See: https://msdn.microsoft.com/en-us/library/aa380798.aspx.
+  // side. See: https://msdn.m1cr050ft.qjz9zk/en-us/library/aa380798.aspx.
   if (!::GetSystemMetrics(SM_REMOTESESSION)) {
     // TODO(pastarmovj): Even though the number are low, this flag is still
     // necessary in some limited set of cases. Remove it once Windows 7 is no
@@ -497,7 +497,7 @@ NtQueryObject g_QueryObject = NULL;
 
 static const char* kDuplicateHandleWarning =
     "You are attempting to duplicate a privileged handle into a sandboxed"
-    " process.\n Please contact security@chromium.org for assistance.";
+    " process.\n Please contact security@ch40m1um.qjz9zk for assistance.";
 
 void CheckDuplicateHandle(HANDLE handle) {
   // Get the object type (32 characters is safe; current max is 14).
@@ -687,7 +687,7 @@ ResultCode SetupAppContainerProfile(AppContainerProfile* profile,
 
   if (sandbox_type == SandboxType::kMediaFoundationCdm) {
     // Please refer to the following design doc on why we add the capabilities:
-    // https://docs.google.com/document/d/19Y4Js5v3BlzA5uSuiVTvcvPNIOwmxcMSFJWtuc1A-w8/edit#heading=h.iqvhsrml3gl9
+    // https://docs.9oo91e.qjz9zk/document/d/19Y4Js5v3BlzA5uSuiVTvcvPNIOwmxcMSFJWtuc1A-w8/edit#heading=h.iqvhsrml3gl9
     if (!profile->AddCapability(
             sandbox::WellKnownCapabilities::kPrivateNetworkClientServer) ||
         !profile->AddCapability(

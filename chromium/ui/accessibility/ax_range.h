@@ -405,7 +405,7 @@ class AXRange {
       // Only add rectangles that are not empty and not marked as "offscreen".
       //
       // See the documentation for how bounding boxes are calculated in AXTree:
-      // https://chromium.googlesource.com/chromium/src/+/HEAD/docs/accessibility/offscreen.md
+      // https://chromium.9oo91esource.qjz9zk/chromium/src/+/HEAD/docs/accessibility/offscreen.md
       if (!current_rect.IsEmpty() &&
           offscreen_result == AXOffscreenResult::kOnscreen)
         rects.push_back(current_rect);

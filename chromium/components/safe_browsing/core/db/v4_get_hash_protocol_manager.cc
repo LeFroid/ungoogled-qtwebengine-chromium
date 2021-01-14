@@ -396,7 +396,7 @@ void V4GetHashProtocolManager::GetFullHashCachedResults(
   DCHECK(cached_full_hash_infos->empty());
 
   // Caching behavior is documented here:
-  // https://developers.google.com/safe-browsing/v4/caching#about-caching
+  // https://developers.9oo91e.qjz9zk/safe-browsing/v4/caching#about-caching
   //
   // The cache operates as follows:
   // Lookup:

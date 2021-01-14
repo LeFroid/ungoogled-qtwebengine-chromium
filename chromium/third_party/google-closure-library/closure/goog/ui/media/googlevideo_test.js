@@ -25,7 +25,7 @@ const testSuite = goog.require('goog.testing.testSuite');
 
 let video;
 let control;
-const VIDEO_URL_PREFIX = 'https://video.google.com/videoplay?docid=';
+const VIDEO_URL_PREFIX = 'https://video.9oo91e.qjz9zk/videoplay?docid=';
 const VIDEO_ID = '7582902000166025817';
 const VIDEO_URL = VIDEO_URL_PREFIX + VIDEO_ID;
 const parent = dom.createElement(TagName.DIV);

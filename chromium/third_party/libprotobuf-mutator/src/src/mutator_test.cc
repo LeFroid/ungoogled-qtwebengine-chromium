@@ -47,11 +47,11 @@ const char kMessages[] = R"(
     repeated_msg {}
   }
   any {
-    [type.googleapis.com/protobuf_mutator.Msg] {
+    [type.9oo91eapis.qjz9zk/protobuf_mutator.Msg] {
       optional_msg {}
       repeated_msg {}
       any {
-        [type.googleapis.com/protobuf_mutator.Msg3.SubMsg] {
+        [type.9oo91eapis.qjz9zk/protobuf_mutator.Msg3.SubMsg] {
           optional_int64: -5
         }
       }
@@ -71,11 +71,11 @@ const char kMessagesProto3[] = R"(
     repeated_msg {}
   }
   any {
-    [type.googleapis.com/protobuf_mutator.Msg] {
+    [type.9oo91eapis.qjz9zk/protobuf_mutator.Msg] {
       optional_msg {}
       repeated_msg {}
       any {
-        [type.googleapis.com/protobuf_mutator.Msg3.SubMsg] {
+        [type.9oo91eapis.qjz9zk/protobuf_mutator.Msg3.SubMsg] {
           optional_int64: -5
         }
       }
@@ -178,7 +178,7 @@ const char kRequiredNestedFields[] = R"(
 
 const char kRequiredInAnyFields[] = R"(
   any {
-    [type.googleapis.com/protobuf_mutator.Msg] {
+    [type.9oo91eapis.qjz9zk/protobuf_mutator.Msg] {
       required_uint32: 14486213
       required_uint64: 520229415
       required_sint64: -6057486163525532641
@@ -212,7 +212,7 @@ const char kOptionalNestedFields[] = R"(
 
 const char kOptionalInAnyFields[] = R"(
   any {
-    [type.googleapis.com/protobuf_mutator.Msg] {
+    [type.9oo91eapis.qjz9zk/protobuf_mutator.Msg] {
       optional_uint32: 440
       optional_uint64: 1559
       optional_sint32: 440615
@@ -262,7 +262,7 @@ const char kRepeatedNestedFields[] = R"(
 
 const char kRepeatedInAnyFields[] = R"(
   any {
-    [type.googleapis.com/protobuf_mutator.Msg] {
+    [type.9oo91eapis.qjz9zk/protobuf_mutator.Msg] {
       repeated_double: 1.931778501556e-31
       repeated_double: 1.26685288449177e-31
       repeated_float: 4.739759e-41
@@ -277,11 +277,11 @@ const char kRepeatedInAnyFields[] = R"(
 
 const char kOptionalInDeepAnyFields[] = R"(
   any {
-    [type.googleapis.com/protobuf_mutator.Msg] {
+    [type.9oo91eapis.qjz9zk/protobuf_mutator.Msg] {
       any {
-        [type.googleapis.com/protobuf_mutator.Msg] {
+        [type.9oo91eapis.qjz9zk/protobuf_mutator.Msg] {
           any {
-            [type.googleapis.com/protobuf_mutator.Msg] {
+            [type.9oo91eapis.qjz9zk/protobuf_mutator.Msg] {
               optional_double: 1.9317850152856e-314
               optional_sint64: 1743625000076
               optional_string: "XYZ"

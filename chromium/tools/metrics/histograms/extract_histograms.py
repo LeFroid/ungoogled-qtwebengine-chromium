@@ -18,14 +18,14 @@ XML below will generate the following five histograms:
 <histograms>
 
 <histogram name="HistogramTime" units="milliseconds">
-  <owner>person@chromium.org</owner>
-  <owner>some-team@chromium.org</owner>
+  <owner>person@ch40m1um.qjz9zk</owner>
+  <owner>some-team@ch40m1um.qjz9zk</owner>
   <summary>A brief description.</summary>
   <details>This is a more thorough description of this histogram.</details>
 </histogram>
 
 <histogram name="HistogramEnum" enum="MyEnumType">
-  <owner>person@chromium.org</owner>
+  <owner>person@ch40m1um.qjz9zk</owner>
   <summary>This histogram sports an enum value type.</summary>
 </histogram>
 
@@ -346,7 +346,7 @@ def _ExtractOwners(node):
     node: A DOM Element.
 
   Returns:
-    A tuple of owner-related info, e.g. (['alice@chromium.org'], True)
+    A tuple of owner-related info, e.g. (['alice@ch40m1um.qjz9zk'], True)
 
     The first element is a list of the owners' email addresses, excluding the
     owner placeholder string. The second element is a boolean indicating
@@ -409,7 +409,7 @@ def _ProcessBaseHistogramAttribute(node, histogram_entry):
 #   'name': 'variant_name',
 #   'summary': 'variant_summary',
 #   'obsolete': 'Obsolete text.',
-#   'owners': ['me@chromium.org', 'you@chromium.org']
+#   'owners': ['me@ch40m1um.qjz9zk', 'you@ch40m1um.qjz9zk']
 # }
 #
 # Variants: an analog of <variants> tag, represented as a JSON object like:

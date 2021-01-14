@@ -76,7 +76,7 @@ class MediaDevicesPermissionCheckerTest : public RenderViewHostImplTestHarness {
     std::move(quit_closure_).Run();
   }
 
-  url::Origin origin_ = url::Origin::Create(GURL("https://www.google.com"));
+  url::Origin origin_ = url::Origin::Create(GURL("https://www.9oo91e.qjz9zk"));
 
   base::OnceClosure quit_closure_;
   bool callback_result_ = false;

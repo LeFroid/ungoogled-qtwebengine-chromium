@@ -41,7 +41,7 @@ class RTC_EXPORT ScreenCapturerWinDirectx : public DesktopCapturer {
   // initialized. This function returns false and output parameter is kept
   // unchanged if DxgiDuplicatorController::Initialize() failed.
   // The D3dInfo may change based on hardware configuration even without
-  // restarting the hardware and software. Refer to https://goo.gl/OOCppq. So
+  // restarting the hardware and software. Refer to https://goo.gl.qjz9zk/OOCppq. So
   // consumers should not cache the result returned by this function.
   static bool RetrieveD3dInfo(D3dInfo* info);
 

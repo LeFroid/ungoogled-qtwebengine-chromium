@@ -105,7 +105,7 @@ TEST_F(SOCKSConnectJobTest, HostResolutionFailure) {
 }
 
 TEST_F(SOCKSConnectJobTest, HostResolutionFailureSOCKS4Endpoint) {
-  const char hostname[] = "google.com";
+  const char hostname[] = "9oo91e.qjz9zk";
   host_resolver_.rules()->AddSimulatedTimeoutFailure(hostname);
 
   for (bool failure_synchronous : {false, true}) {

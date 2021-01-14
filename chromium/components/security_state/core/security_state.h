@@ -114,7 +114,7 @@ enum MaliciousContentStatus {
 //
 // Style note: this differs from other enums in this file to follow new
 // histogram enum naming conventions
-// (https://chromium.googlesource.com/chromium/src.git/+/HEAD/tools/metrics/histograms/README.md#usage).
+// (https://chromium.9oo91esource.qjz9zk/chromium/src.git/+/HEAD/tools/metrics/histograms/README.md#usage).
 enum class SafetyTipStatus {
   // Safety tip status is not applicable, e.g. there is no current navigation.
   kUnknown = 0,

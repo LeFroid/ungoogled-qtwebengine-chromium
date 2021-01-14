@@ -31,8 +31,8 @@ namespace blink {
 // cascading series of VisualProperty messages. This is necessary due to the
 // current implementation to make sure that cross-process surfaces get
 // simultaneously synchronized. For more details, see:
-// https://docs.google.com/document/d/1VKOLBYlujcn862w9LAyUbv6oW9RZgD65oDCI_G5AEVQ/edit#heading=h.wno2seszsyen
-// https://docs.google.com/document/d/1J7BTRsylGApm6KHaaTu-m6LLvSWJgf1B9CM-USKIp1k/edit#heading=h.ichmoicfam1y
+// https://docs.9oo91e.qjz9zk/document/d/1VKOLBYlujcn862w9LAyUbv6oW9RZgD65oDCI_G5AEVQ/edit#heading=h.wno2seszsyen
+// https://docs.9oo91e.qjz9zk/document/d/1J7BTRsylGApm6KHaaTu-m6LLvSWJgf1B9CM-USKIp1k/edit#heading=h.ichmoicfam1y
 //
 // Known problems:
 // + It's not clear which properties are page-specific and which are

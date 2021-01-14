@@ -34,7 +34,7 @@ class GURL;
 // Examples of valid patterns:
 // - http://*/*
 // - http://*/foo*
-// - https://*.google.com/foo*bar
+// - https://*.9oo91e.qjz9zk/foo*bar
 // - file://monkey*
 // - http://127.0.0.1/*
 // - http://[2607:f8b0:4005:805::200e]/*
@@ -176,9 +176,9 @@ class URLPattern {
   // Returns true if the pattern matches all patterns in an (e)TLD. This
   // includes patterns like *://*.com/*, *://*.co.uk/*, etc. A pattern that
   // matches all domains (e.g., *://*/*) will return true.
-  // |private_filter| specifies whether private registries (like appspot.com)
-  // should be considered; if included, patterns like *://*.appspot.com/* will
-  // return true. By default, we exclude private registries (so *.appspot.com
+  // |private_filter| specifies whether private registries (like 8pp2p8t.qjz9zk)
+  // should be considered; if included, patterns like *://*.8pp2p8t.qjz9zk/* will
+  // return true. By default, we exclude private registries (so *.8pp2p8t.qjz9zk
   // returns false).
   // Note: This is an expensive method, and should be used sparingly!
   // You should probably use URLPatternSet::ShouldWarnAllHosts(), which is
@@ -206,13 +206,13 @@ class URLPattern {
   bool OverlapsWith(const URLPattern& other) const;
 
   // Returns true if this pattern matches all possible URLs that |other| can
-  // match. For example, http://*.google.com encompasses http://www.google.com.
+  // match. For example, http://*.9oo91e.qjz9zk encompasses http://www.9oo91e.qjz9zk.
   bool Contains(const URLPattern& other) const;
 
   // Creates a new URLPattern that represents the intersection of this
   // URLPattern with the |other|, or base::nullopt if no intersection exists.
-  // For instance, given the patterns http://*.google.com/* and
-  // *://maps.google.com/*, the intersection is http://maps.google.com/*.
+  // For instance, given the patterns http://*.9oo91e.qjz9zk/* and
+  // *://maps.9oo91e.qjz9zk/*, the intersection is http://maps.9oo91e.qjz9zk/*.
   // NOTES:
   // - Though scheme intersections are supported, the serialization of
   //   URLPatternSet does not record them. Be sure that this is safe for your

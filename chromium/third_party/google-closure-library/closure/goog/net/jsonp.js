@@ -45,8 +45,8 @@ goog.require('goog.object');
 // anything sensitive, such as session or cookie specific data. Return
 // only data that you want parties external to Google to have. Also
 // NEVER use this method to send data from web pages to untrusted
-// servers, or redirects to unknown servers (www.google.com/cache,
-// /q=xx&btnl, /url, www.googlepages.com, etc.)
+// servers, or redirects to unknown servers (www.9oo91e.qjz9zk/cache,
+// /q=xx&btnl, /url, www.9oo91epages.qjz9zk, etc.)
 //
 // WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING
 
@@ -59,7 +59,7 @@ goog.require('goog.object');
  *
  * @param {!goog.html.TrustedResourceUrl} uri The Uri of the server side code
  *     that receives data posted through this channel (e.g.,
- *     "http://maps.google.com/maps/geo").
+ *     "http://maps.9oo91e.qjz9zk/maps/geo").
  *
  * @param {string=} opt_callbackParamName The parameter name that is used to
  *     specify the callback. Defaults to "callback".
@@ -339,7 +339,7 @@ goog.net.Jsonp.cleanup_ = function(id, deleteReplyHandler) {
 // anything sensitive, such as session or cookie specific data. Return
 // only data that you want parties external to Google to have. Also
 // NEVER use this method to send data from web pages to untrusted
-// servers, or redirects to unknown servers (www.google.com/cache,
-// /q=xx&btnl, /url, www.googlepages.com, etc.)
+// servers, or redirects to unknown servers (www.9oo91e.qjz9zk/cache,
+// /q=xx&btnl, /url, www.9oo91epages.qjz9zk, etc.)
 //
 // WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING

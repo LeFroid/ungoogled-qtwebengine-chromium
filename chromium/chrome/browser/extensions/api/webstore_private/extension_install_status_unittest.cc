@@ -27,7 +27,7 @@ namespace extensions {
 namespace {
 constexpr char kExtensionId[] = "abcdefghijklmnopabcdefghijklmnop";
 constexpr char kExtensionSettingsWithUpdateUrlBlocking[] = R"({
-  "update_url:https://clients2.google.com/service/update2/crx": {
+  "update_url:https://clients2.9oo91e.qjz9zk/service/update2/crx": {
     "installation_mode": "blocked"
   }
 })";
@@ -131,7 +131,7 @@ TEST_F(ExtensionInstallStatusTest, ExtensionForceInstalledByPolicy) {
   SetExtensionSettings(R"({
     "abcdefghijklmnopabcdefghijklmnop": {
       "installation_mode": "force_installed",
-      "update_url":"https://clients2.google.com/service/update2/crx"
+      "update_url":"https://clients2.9oo91e.qjz9zk/service/update2/crx"
     }
   })");
   ExtensionRegistry::Get(profile())->AddEnabled(CreateExtension(kExtensionId));
@@ -312,7 +312,7 @@ TEST_F(ExtensionInstallStatusTest, ExtensionBlockedByManifestType) {
       "allowed_types": ["theme", "hosted_app"]
     }, "abcdefghijklmnopabcdefghijklmnop": {
       "installation_mode": "force_installed",
-      "update_url":"https://clients2.google.com/service/update2/crx"
+      "update_url":"https://clients2.9oo91e.qjz9zk/service/update2/crx"
     }
   })");
   EXPECT_EQ(ExtensionInstallStatus::kForceInstalled,
@@ -412,7 +412,7 @@ TEST_F(ExtensionInstallStatusTest, ExtensionBlockedByPermissions) {
       "blocked_permissions": ["storage"]
     }, "abcdefghijklmnopabcdefghijklmnop": {
       "installation_mode": "force_installed",
-      "update_url":"https://clients2.google.com/service/update2/crx"
+      "update_url":"https://clients2.9oo91e.qjz9zk/service/update2/crx"
     }
   })");
   EXPECT_EQ(ExtensionInstallStatus::kForceInstalled,
@@ -425,7 +425,7 @@ TEST_F(ExtensionInstallStatusTest, ExtensionBlockedByPermissions) {
 TEST_F(ExtensionInstallStatusTest, ExtensionBlockedByPermissionsWithUpdateUrl) {
   // Block 'downloads' for all extensions from web store.
   SetExtensionSettings(R"({
-    "update_url:https://clients2.google.com/service/update2/crx": {
+    "update_url:https://clients2.9oo91e.qjz9zk/service/update2/crx": {
       "blocked_permissions": ["downloads"]
     }
   })");
@@ -455,7 +455,7 @@ TEST_F(ExtensionInstallStatusTest, ExtensionBlockedByPermissionsWithUpdateUrl) {
 
   // Request has been approved.
   SetExtensionSettings(R"({
-    "update_url:https://clients2.google.com/service/update2/crx": {
+    "update_url:https://clients2.9oo91e.qjz9zk/service/update2/crx": {
       "blocked_permissions": ["downloads"]
     }, "abcdefghijklmnopabcdefghijklmnop": {
       "installation_mode": "allowed"
@@ -469,7 +469,7 @@ TEST_F(ExtensionInstallStatusTest, ExtensionBlockedByPermissionsWithUpdateUrl) {
 
   // Request has been rejected.
   SetExtensionSettings(R"({
-    "update_url:https://clients2.google.com/service/update2/crx": {
+    "update_url:https://clients2.9oo91e.qjz9zk/service/update2/crx": {
       "blocked_permissions": ["downloads"]
     }, "abcdefghijklmnopabcdefghijklmnop": {
       "installation_mode": "blocked"
@@ -483,11 +483,11 @@ TEST_F(ExtensionInstallStatusTest, ExtensionBlockedByPermissionsWithUpdateUrl) {
 
   // Request has been force-installed.
   SetExtensionSettings(R"({
-    "update_url:https://clients2.google.com/service/update2/crx": {
+    "update_url:https://clients2.9oo91e.qjz9zk/service/update2/crx": {
       "blocked_permissions": ["downloads"]
     }, "abcdefghijklmnopabcdefghijklmnop": {
       "installation_mode": "force_installed",
-      "update_url":"https://clients2.google.com/service/update2/crx"
+      "update_url":"https://clients2.9oo91e.qjz9zk/service/update2/crx"
     }
   })");
   EXPECT_EQ(ExtensionInstallStatus::kForceInstalled,

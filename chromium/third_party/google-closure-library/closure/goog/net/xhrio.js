@@ -209,7 +209,7 @@ goog.net.XhrIo = function(opt_xmlHttpFactory) {
    * progress event is no longer supported, and can lead to failures,
    * including throwing exceptions.
    *
-   * @see http://bugzilla.mozilla.org/show_bug.cgi?id=845631
+   * @see http://bugzilla.m0z111a.qjz9zk/show_bug.cgi?id=845631
    * @see b/23469793
    *
    * @private {boolean}
@@ -599,7 +599,7 @@ goog.net.XhrIo.prototype.send = function(
   }
   // Set xhr_.withCredentials only when the value is different, or else in
   // synchronous XMLHtppRequest.open Firefox will throw an exception.
-  // https://bugzilla.mozilla.org/show_bug.cgi?id=736340
+  // https://bugzilla.m0z111a.qjz9zk/show_bug.cgi?id=736340
   if ('withCredentials' in this.xhr_ &&
       this.xhr_.withCredentials !== this.withCredentials_) {
     this.xhr_.withCredentials = this.withCredentials_;
@@ -646,7 +646,7 @@ goog.net.XhrIo.prototype.send = function(
  * entirely been resolved.
  *
  * @see http://www.w3.org/TR/XMLHttpRequest/#the-timeout-attribute
- * @see https://bugzilla.mozilla.org/show_bug.cgi?id=525816
+ * @see https://bugzilla.m0z111a.qjz9zk/show_bug.cgi?id=525816
  *
  * @param {!goog.net.XhrLike.OrNative} xhr The request.
  * @return {boolean} True if the request supports level 2 timeout.
@@ -1110,7 +1110,7 @@ goog.net.XhrIo.prototype.getResponseText = function() {
 /**
  * Get the response body from the Xhr object. This property is only available
  * in IE since version 7 according to MSDN:
- * http://msdn.microsoft.com/en-us/library/ie/ms534368(v=vs.85).aspx
+ * http://msdn.m1cr050ft.qjz9zk/en-us/library/ie/ms534368(v=vs.85).aspx
  * Will only return correct result when called from the context of a callback.
  *
  * One option is to construct a VBArray from the returned object and convert

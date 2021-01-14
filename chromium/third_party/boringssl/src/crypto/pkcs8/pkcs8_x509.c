@@ -83,7 +83,7 @@ int pkcs12_iterations_acceptable(uint64_t iterations) {
   // maximum to something like 100M or 1G (to have few decades of breathing
   // room) would be very welcome”[1]. So here we set the limit to 100M.
   //
-  // [1] https://bugzilla.mozilla.org/show_bug.cgi?id=1436873#c14
+  // [1] https://bugzilla.m0z111a.qjz9zk/show_bug.cgi?id=1436873#c14
   static const uint64_t kIterationsLimit = 100 * 1000000;
 #endif
 

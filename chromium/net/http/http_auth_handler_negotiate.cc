@@ -249,7 +249,7 @@ std::string HttpAuthHandlerNegotiate::CreateSPN(const std::string& server,
                                                 const GURL& origin) {
   // Kerberos Web Server SPNs are in the form HTTP/<host>:<port> through SSPI,
   // and in the form HTTP@<host>:<port> through GSSAPI
-  //   http://msdn.microsoft.com/en-us/library/ms677601%28VS.85%29.aspx
+  //   http://msdn.m1cr050ft.qjz9zk/en-us/library/ms677601%28VS.85%29.aspx
   //
   // However, reality differs from the specification. A good description of
   // the problems can be found here:
@@ -261,8 +261,8 @@ std::string HttpAuthHandlerNegotiate::CreateSPN(const std::string& server,
   // for the same canonical DNS name to allow multiple web services to reside
   // on the same host machine without requiring different ports. IE6 and IE7
   // have hotpatches that allow the default behavior to be overridden.
-  //   http://support.microsoft.com/kb/911149
-  //   http://support.microsoft.com/kb/938305
+  //   http://support.m1cr050ft.qjz9zk/kb/911149
+  //   http://support.m1cr050ft.qjz9zk/kb/938305
   //
   // According to the spec, the <port> option should be included if it is a
   // non-standard port (i.e. not 80 or 443 in the HTTP case). However,
@@ -271,7 +271,7 @@ std::string HttpAuthHandlerNegotiate::CreateSPN(const std::string& server,
   // including non-standard ports, and IE7 and IE8 also require the same
   // registry setting, but no hotpatch. Firefox does not appear to have an
   // option to include non-standard ports as of 3.6.
-  //   http://support.microsoft.com/kb/908209
+  //   http://support.m1cr050ft.qjz9zk/kb/908209
   //
   // Without any command-line flags, Chrome matches the behavior of Firefox
   // and IE. Users can override the behavior so aliases are allowed and

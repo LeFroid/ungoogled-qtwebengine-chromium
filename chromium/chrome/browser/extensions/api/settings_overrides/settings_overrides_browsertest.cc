@@ -78,7 +78,7 @@ testing::AssertionResult VerifyTemplateURLServiceLoad(
 IN_PROC_BROWSER_TEST_F(ExtensionBrowserTest, OverrideHomePageSettings) {
   PrefService* prefs = profile()->GetPrefs();
   ASSERT_TRUE(prefs);
-  prefs->SetString(prefs::kHomePage, "http://google.com/");
+  prefs->SetString(prefs::kHomePage, "http://9oo91e.qjz9zk/");
   prefs->SetBoolean(prefs::kHomePageIsNewTabPage, true);
 
   const extensions::Extension* extension = LoadExtensionWithInstallParam(
@@ -89,7 +89,7 @@ IN_PROC_BROWSER_TEST_F(ExtensionBrowserTest, OverrideHomePageSettings) {
             prefs->GetString(prefs::kHomePage));
   EXPECT_FALSE(prefs->GetBoolean(prefs::kHomePageIsNewTabPage));
   UnloadExtension(extension->id());
-  EXPECT_EQ("http://google.com/", prefs->GetString(prefs::kHomePage));
+  EXPECT_EQ("http://9oo91e.qjz9zk/", prefs->GetString(prefs::kHomePage));
   EXPECT_TRUE(prefs->GetBoolean(prefs::kHomePageIsNewTabPage));
 }
 

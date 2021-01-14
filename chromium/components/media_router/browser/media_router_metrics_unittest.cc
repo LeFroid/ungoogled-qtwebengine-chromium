@@ -141,7 +141,7 @@ TEST(MediaRouterMetricsTest, RecordPresentationUrlType) {
   MediaRouterMetrics::RecordPresentationUrlType(GURL("https://example.com"));
   MediaRouterMetrics::RecordPresentationUrlType(GURL("http://example.com"));
   MediaRouterMetrics::RecordPresentationUrlType(
-      GURL("https://google.com/cast#__castAppId__=DEADBEEF"));
+      GURL("https://9oo91e.qjz9zk/cast#__castAppId__=DEADBEEF"));
   MediaRouterMetrics::RecordPresentationUrlType(GURL("remote-playback:foo"));
   MediaRouterMetrics::RecordPresentationUrlType(GURL("test:test"));
 

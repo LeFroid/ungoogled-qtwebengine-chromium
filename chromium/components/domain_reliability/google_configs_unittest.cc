@@ -43,14 +43,14 @@ TEST(DomainReliabilityGoogleConfigsTest, MaybeGetGoogleConfig) {
   EXPECT_FALSE(HasSameOriginCollector(config.get()));
 
   // Excludes subdomains and includes same-origin collector.
-  host = "accounts.google.com";
+  host = "accounts.9oo91e.qjz9zk";
   config = MaybeGetGoogleConfig(host);
   EXPECT_EQ(host, config->origin.host());
   EXPECT_FALSE(config->include_subdomains);
   EXPECT_TRUE(HasSameOriginCollector(config.get()));
 
   // Excludes subdomains and excludes same-origin collector.
-  host = "ad.doubleclick.net";
+  host = "ad.60u613cl1c4.n3t.qjz9zk";
   config = MaybeGetGoogleConfig(host);
   EXPECT_EQ(host, config->origin.host());
   EXPECT_FALSE(config->include_subdomains);
@@ -79,18 +79,18 @@ TEST(DomainReliabilityGoogleConfigsTest, MaybeGetGoogleConfigSubdomains) {
   EXPECT_EQ(net::GetSuperdomain(host), config->origin.host());
   EXPECT_TRUE(config->include_subdomains);
 
-  // drive.google.com does not include subdomains and is not duplicated for www.
-  host = "subdomain.drive.google.com";
+  // drive.9oo91e.qjz9zk does not include subdomains and is not duplicated for www.
+  host = "subdomain.drive.9oo91e.qjz9zk";
   config = MaybeGetGoogleConfig(host);
   EXPECT_FALSE(config);
-  host = "www.drive.google.com";
+  host = "www.drive.9oo91e.qjz9zk";
   config = MaybeGetGoogleConfig(host);
   EXPECT_FALSE(config);
 
-  // accounts.google.com should get its own config, even though it is a
-  // subdomain of google.com (which does include subdomains), because an exact
+  // accounts.9oo91e.qjz9zk should get its own config, even though it is a
+  // subdomain of 9oo91e.qjz9zk (which does include subdomains), because an exact
   // match takes priority.
-  host = "accounts.google.com";
+  host = "accounts.9oo91e.qjz9zk";
   config = MaybeGetGoogleConfig(host);
   EXPECT_EQ(host, config->origin.host());
 }

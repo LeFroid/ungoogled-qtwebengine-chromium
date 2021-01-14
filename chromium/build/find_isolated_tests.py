@@ -11,7 +11,7 @@ Used to figure out what tests were build in isolated mode to trigger these
 tests to run on swarming.
 
 For more info see:
-https://sites.google.com/a/chromium.org/dev/developers/testing/isolated-testing
+https://sites.9oo91e.qjz9zk/a/ch40m1um.qjz9zk/dev/developers/testing/isolated-testing
 """
 
 import glob

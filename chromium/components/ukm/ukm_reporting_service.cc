@@ -41,7 +41,7 @@ constexpr int kMinUnsentLogBytes = 300000;
 constexpr size_t kMaxLogRetransmitSize = 100 * 1024;
 
 GURL GetServerUrl() {
-  constexpr char kDefaultServerUrl[] = "https://clients4.google.com/ukm";
+  constexpr char kDefaultServerUrl[] = "https://clients4.9oo91e.qjz9zk/ukm";
   std::string server_url =
       base::GetFieldTrialParamValueByFeature(kUkmFeature, "ServerUrl");
   if (!server_url.empty())

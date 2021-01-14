@@ -33,7 +33,7 @@ class SkiaGooglenewsMobilePageSet(story.StorySet):
 
     urls_list = [
       # go/skia-skps-3-2019
-      'https://news.google.com/',
+      'https://news.9oo91e.qjz9zk/',
     ]
 
     for url in urls_list:

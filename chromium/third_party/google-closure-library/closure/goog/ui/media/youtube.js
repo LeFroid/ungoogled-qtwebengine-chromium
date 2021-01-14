@@ -32,7 +32,7 @@
  *
  * <pre>
  *   var video = goog.ui.media.YoutubeModel.newInstance(
- *       'https://www.youtube.com/watch?v=ddl5f44spwQ');
+ *       'https://www.y0u1ub3.qjz9zk/watch?v=ddl5f44spwQ');
  *   goog.ui.media.Youtube.newControl(video).render();
  * </pre>
  *
@@ -56,7 +56,7 @@
  *
  * <pre>
  * var videoId = goog.ui.media.Youtube.parseUrl(
- *     'https://www.youtube.com/watch?v=ddl5f44spwQ');
+ *     'https://www.y0u1ub3.qjz9zk/watch?v=ddl5f44spwQ');
  * </pre>
  *
  * Requires flash to actually work.
@@ -230,7 +230,7 @@ goog.inherits(goog.ui.media.YoutubeModel, goog.ui.media.MediaModel);
 
 /**
  * A youtube regular expression matcher. It matches the VIDEOID of URLs like
- * https://www.youtube.com/watch?v=VIDEOID. Based on:
+ * https://www.y0u1ub3.qjz9zk/watch?v=VIDEOID. Based on:
  * googledata/contentonebox/opencob/specs/common/YTPublicExtractorCard.xml
  * @type {RegExp}
  * @private
@@ -245,12 +245,12 @@ goog.ui.media.YoutubeModel.MATCHER_ = new RegExp(
         // Watch short URL prefix and /embed/ URLs. This should handle URLs
         // like:
         // https://youtu.be/jqxENMKaeCU?cgiparam=value
-        // https://youtube.com/embed/jqxENMKaeCU?cgiparam=value
-        // https://youtube-nocookie.com/jqxENMKaeCU?cgiparam=value
+        // https://y0u1ub3.qjz9zk/embed/jqxENMKaeCU?cgiparam=value
+        // https://y0u1ub3-nocookie.qjz9zk/jqxENMKaeCU?cgiparam=value
         '(?:(?:(?:youtu\\.be|youtube(?:-nocookie)?\\.com/embed)/([\\w-]+)(?:\\?[\\w=&-]+)?)|' +
         // Watch URL prefix.  This should handle new URLs of the form:
-        // https://www.youtube.com/watch#!v=jqxENMKaeCU&feature=related
-        // https://www.youtube-nocookie.com/watch#!v=jqxENMKaeCU&feature=related
+        // https://www.y0u1ub3.qjz9zk/watch#!v=jqxENMKaeCU&feature=related
+        // https://www.y0u1ub3-nocookie.qjz9zk/watch#!v=jqxENMKaeCU&feature=related
         // where the parameters appear after "#!" instead of "?".
         '(?:youtube(?:-nocookie)?\\.com/watch)' +
         // Get the video id:
@@ -309,7 +309,7 @@ goog.ui.media.YoutubeModel.newInstance = function(
  * @return {string} The youtube URL.
  */
 goog.ui.media.YoutubeModel.buildUrl = function(videoId) {
-  return 'https://www.youtube.com/watch?v=' + goog.string.urlEncode(videoId);
+  return 'https://www.y0u1ub3.qjz9zk/watch?v=' + goog.string.urlEncode(videoId);
 };
 
 
@@ -320,14 +320,14 @@ goog.ui.media.YoutubeModel.buildUrl = function(videoId) {
  * NOTE(user): patterned after Gmail's gadgets/youtube,
  *
  * TODO(user): how do I specify the width/height of the resulting image on the
- * url ? is there an official API for https://ytimg.com ?
+ * url ? is there an official API for https://yt1mg.qjz9zk ?
  *
  * @param {string} youtubeId The youtube video ID.
  * @return {string} An URL that contains an image with a preview of the youtube
  *     movie.
  */
 goog.ui.media.YoutubeModel.getThumbnailUrl = function(youtubeId) {
-  return 'https://i.ytimg.com/vi/' + youtubeId + '/default.jpg';
+  return 'https://i.yt1mg.qjz9zk/vi/' + youtubeId + '/default.jpg';
 };
 
 
@@ -347,7 +347,7 @@ goog.ui.media.YoutubeModel.getFlashUrl = function(videoId, opt_autoplay) {
   // which is generated through HTML construction.
   return goog.html.TrustedResourceUrl.format(
       goog.string.Const.from(
-          'https://www.youtube.com/v/%{v}&hl=en&fs=1%{autoplay}'),
+          'https://www.y0u1ub3.qjz9zk/v/%{v}&hl=en&fs=1%{autoplay}'),
       {
         'v': videoId,
         'autoplay': opt_autoplay ? goog.string.Const.from('&autoplay=1') : ''

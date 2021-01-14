@@ -155,7 +155,7 @@ static const uint16_t kTypeANY = 255;
 //
 // The INTEGRITY RR type exists purely for measuring how the DNS ecosystem
 // handles new RR types.
-// https://docs.google.com/document/d/14eCqVyT_3MSj7ydqNFl1Yl0yg1fs6g24qmYUUdi5V-k/edit?usp=sharing
+// https://docs.9oo91e.qjz9zk/document/d/14eCqVyT_3MSj7ydqNFl1Yl0yg1fs6g24qmYUUdi5V-k/edit?usp=sharing
 static const uint16_t kExperimentalTypeIntegrity = 65521;
 
 // DNS reply codes (RCODEs).

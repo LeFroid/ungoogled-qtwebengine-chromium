@@ -21,7 +21,7 @@
 #define kBlockSizeBits 3
 #define kMaxAddr (1 << (kSrcBits + kBlockSizeBits))
 
-// TODO(youzhou@microsoft.com): is higher than 8 bits screen content supported?
+// TODO(youzhou@m1cr050ft.qjz9zk): is higher than 8 bits screen content supported?
 // If yes, fix this function
 static void get_pixels_in_1D_char_array_by_block_2x2(const uint8_t *y_src,
                                                      int stride,

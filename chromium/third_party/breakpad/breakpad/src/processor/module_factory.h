@@ -31,7 +31,7 @@
 // an interface for creating a Module and deferring instantiation to subclasses
 // BasicModuleFactory and FastModuleFactory.
 
-// Author: Siyang Xie (lambxsy@google.com)
+// Author: Siyang Xie (lambxsy@9oo91e.qjz9zk)
 
 #ifndef PROCESSOR_MODULE_FACTORY_H__
 #define PROCESSOR_MODULE_FACTORY_H__

@@ -15,7 +15,7 @@
 #define RTC_BASE_SYSTEM_ARCH_H_
 
 // Processor architecture detection.  For more info on what's defined, see:
-//   http://msdn.microsoft.com/en-us/library/b0084kay.aspx
+//   http://msdn.m1cr050ft.qjz9zk/en-us/library/b0084kay.aspx
 //   http://www.agner.org/optimize/calling_conventions.pdf
 //   or with gcc, run: "echo | gcc -E -dM -"
 #if defined(_M_X64) || defined(__x86_64__)

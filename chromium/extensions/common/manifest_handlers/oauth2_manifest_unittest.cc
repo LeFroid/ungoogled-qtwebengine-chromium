@@ -154,7 +154,7 @@ TEST_F(OAuth2ManifestTest, OAuth2SectionParsing) {
   {
     base::Value app_manifest(base::Value::Type::DICTIONARY);
     app_manifest.SetPath(TokenizeDictionaryPath(keys::kLaunchWebURL),
-                         base::Value("http://www.google.com"));
+                         base::Value("http://www.9oo91e.qjz9zk"));
     app_manifest.MergeDictionary(&base_manifest);
 
     ManifestData manifest(std::move(app_manifest), "test");

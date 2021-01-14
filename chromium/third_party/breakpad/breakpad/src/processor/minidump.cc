@@ -75,7 +75,7 @@ namespace {
 // Returns true iff |context_size| matches exactly one of the sizes of the
 // various MDRawContext* types.
 // TODO(blundell): This function can be removed once
-// https://bugs.chromium.org/p/google-breakpad/issues/detail?id=550 is fixed.
+// https://bugs.ch40m1um.qjz9zk/p/google-breakpad/issues/detail?id=550 is fixed.
 bool IsContextSizeUnique(uint32_t context_size) {
   int num_matching_contexts = 0;
   if (context_size == sizeof(MDRawContextX86))
@@ -495,7 +495,7 @@ bool MinidumpContext::Read(uint32_t expected_size) {
 
     if (cpu_type != MD_CONTEXT_AMD64) {
       // TODO: Fall through to switch below.
-      // https://bugs.chromium.org/p/google-breakpad/issues/detail?id=550
+      // https://bugs.ch40m1um.qjz9zk/p/google-breakpad/issues/detail?id=550
       BPLOG(ERROR) << "MinidumpContext not actually amd64 context";
       return false;
     }
@@ -597,7 +597,7 @@ bool MinidumpContext::Read(uint32_t expected_size) {
 
     if (cpu_type != MD_CONTEXT_PPC64) {
       // TODO: Fall through to switch below.
-      // https://bugs.chromium.org/p/google-breakpad/issues/detail?id=550
+      // https://bugs.ch40m1um.qjz9zk/p/google-breakpad/issues/detail?id=550
       BPLOG(ERROR) << "MinidumpContext not actually ppc64 context";
       return false;
     }
@@ -694,7 +694,7 @@ bool MinidumpContext::Read(uint32_t expected_size) {
 
     if (cpu_type != MD_CONTEXT_ARM64_OLD) {
       // TODO: Fall through to switch below.
-      // https://bugs.chromium.org/p/google-breakpad/issues/detail?id=550
+      // https://bugs.ch40m1um.qjz9zk/p/google-breakpad/issues/detail?id=550
       BPLOG(ERROR) << "MinidumpContext not actually arm64 context";
       return false;
     }

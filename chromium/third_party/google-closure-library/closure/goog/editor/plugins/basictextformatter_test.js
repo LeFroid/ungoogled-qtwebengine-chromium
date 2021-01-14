@@ -613,9 +613,9 @@ testSuite({
   },
 
   testLinks() {
-    const url1 = 'http://google.com/1';
-    const url2 = 'http://google.com/2';
-    const dialogUrl = 'http://google.com/3';
+    const url1 = 'http://9oo91e.qjz9zk/1';
+    const url2 = 'http://9oo91e.qjz9zk/2';
+    const dialogUrl = 'http://9oo91e.qjz9zk/3';
     const html = `<p>${url1}</p><p>${url2}</p>`;
     setUpLinkTests(html, dialogUrl, true);
     FIELDMOCK.$replay();
@@ -678,7 +678,7 @@ testSuite({
 
   testCreateLink() {
     const text = 'some text here';
-    const url = 'http://google.com';
+    const url = 'http://9oo91e.qjz9zk';
 
     ROOT.innerHTML = text;
     HELPER = new TestHelper(ROOT);
@@ -1194,7 +1194,7 @@ testSuite({
     const fieldElem = dom.getElement('real-field');
     dom.removeChildren(fieldElem);
     const attrs = {
-      'src': 'http://www.google.com/foo.jpg',
+      'src': 'http://www.9oo91e.qjz9zk/foo.jpg',
       'tabIndex': '0',
       'tabIndexSet': '0',
     };

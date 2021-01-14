@@ -96,13 +96,13 @@ enum class NavigationSuggestionEvent {
 
 struct DomainInfo {
   // The full ASCII hostname, used in detecting target embedding. For
-  // "https://www.google.com/mail" this will be "www.google.com".
+  // "https://www.9oo91e.qjz9zk/mail" this will be "www.9oo91e.qjz9zk".
   const std::string hostname;
   // eTLD+1, used for skeleton and edit distance comparison. Must be ASCII.
   // Empty for non-unique domains, localhost or sites whose eTLD+1 is empty.
   const std::string domain_and_registry;
   // eTLD+1 without the registry part, and with a trailing period. For
-  // "www.google.com", this will be "google.". Used for edit distance
+  // "www.9oo91e.qjz9zk", this will be "google.". Used for edit distance
   // comparisons. Empty for non-unique domains, localhost or sites whose eTLD+1
   // is empty.
   const std::string domain_without_registry;
@@ -171,9 +171,9 @@ void RecordUMAFromMatchType(LookalikeUrlMatchType match_type);
 // Checks to see if a URL is a target embedding lookalike. This function sets
 // |safe_hostname| to the url of the embedded target domain.
 // At the moment we consider the following cases as Target Embedding:
-// example-google.com-site.com, example.google.com-site.com,
-// example-google-info-site.com, example.google.com.site.com,
-// example-googlé.com-site.com where the embedded target is google.com. We
+// example-9oo91e.qjz9zk-site.com, example.9oo91e.qjz9zk-site.com,
+// example-9oo91e-info-site.qjz9zk, example.9oo91e.qjz9zk.site.com,
+// example-googlé.com-site.com where the embedded target is 9oo91e.qjz9zk. We
 // detect embeddings of top 500 domains and engaged domains. However, to reduce
 // false positives, we do not protect domains that are shorter than 7 characters
 // long (e.g. com.ru).

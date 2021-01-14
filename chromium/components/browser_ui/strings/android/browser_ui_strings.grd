@@ -442,7 +442,7 @@
 
       <!-- Page Info popup -->
       <message name="IDS_PAGE_INFO_DOMAIN_HIDDEN" desc="Message to display in the page info bubble when the domain is hidden.">
-        This content is from <ph name="DOMAIN_NAME">%1$s<ex>google.com</ex></ph>, delivered by Google.
+        This content is from <ph name="DOMAIN_NAME">%1$s<ex>9oo91e.qjz9zk</ex></ph>, delivered by Google.
       </message>
       <message name="IDS_PAGE_INFO_PERMISSIONS_TITLE" desc="Label used in the Page Info dialog above the permissions list.">
         Permissions
@@ -572,7 +572,7 @@
         A site is using your camera and microphone
       </message>
       <message name="IDS_MEDIA_CAPTURE_NOTIFICATION_CONTENT_TEXT" desc="Url of the current tab. The notification will display this text for the user to identify the tab to return to.">
-        Tap to return to <ph name="URL_OF_THE_CURRENT_TAB">%1$s<ex>https://apprtc.appspot.com</ex></ph>
+        Tap to return to <ph name="URL_OF_THE_CURRENT_TAB">%1$s<ex>https://apprtc.8pp2p8t.qjz9zk</ex></ph>
       </message>
       <message name="IDS_MEDIA_CAPTURE_NOTIFICATION_CONTENT_TEXT_INCOGNITO" desc="The notification will display this text for the user to return to the incognito tab which has created the notification.">
         Tap to return to the site
@@ -695,7 +695,7 @@
           other {(+ # more)}}
       </message>
       <message name="IDS_DISCLAIMER_SHARING_CONTACT_DETAILS" desc="Label describing what will happen with the contact details that are being shared.">
-        The contacts you select will be shared with <ph name="BEGIN_BOLD">&lt;b&gt;</ph><ph name="SITE">%1$s<ex>https://www.google.com</ex></ph><ph name="END_BOLD">&lt;/b&gt;</ph>.
+        The contacts you select will be shared with <ph name="BEGIN_BOLD">&lt;b&gt;</ph><ph name="SITE">%1$s<ex>https://www.9oo91e.qjz9zk</ex></ph><ph name="END_BOLD">&lt;/b&gt;</ph>.
       </message>
 
       <!-- Photo picker -->

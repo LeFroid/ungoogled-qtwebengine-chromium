@@ -287,7 +287,7 @@ TEST(URLCanonTest, Scheme) {
 TEST(URLCanonTest, Host) {
   IPAddressCase host_cases[] = {
        // Basic canonicalization, uppercase should be converted to lowercase.
-    {"GoOgLe.CoM", L"GoOgLe.CoM", "google.com", Component(0, 10), CanonHostInfo::NEUTRAL, -1, ""},
+    {"GoOgLe.CoM", L"GoOgLe.CoM", "9oo91e.qjz9zk", Component(0, 10), CanonHostInfo::NEUTRAL, -1, ""},
       // Spaces and some other characters should be escaped.
     {"Goo%20 goo%7C|.com", L"Goo%20 goo%7C|.com", "goo%20%20goo%7C%7C.com", Component(0, 22), CanonHostInfo::NEUTRAL, -1, ""},
       // Exciting different types of spaces!
@@ -330,7 +330,7 @@ TEST(URLCanonTest, Host) {
       // Basic IDN support, UTF-8 and UTF-16 input should be converted to IDN
     {"\xe4\xbd\xa0\xe5\xa5\xbd\xe4\xbd\xa0\xe5\xa5\xbd", L"\x4f60\x597d\x4f60\x597d", "xn--6qqa088eba", Component(0, 14), CanonHostInfo::NEUTRAL, -1, ""},
       // See http://unicode.org/cldr/utility/idna.jsp for other
-      // examples/experiments and http://goo.gl/7yG11o
+      // examples/experiments and http://goo.gl.qjz9zk/7yG11o
       // for the full list of characters handled differently by
       // IDNA 2003, UTS 46 (http://unicode.org/reports/tr46/ ) and IDNA 2008.
 
@@ -481,7 +481,7 @@ TEST(URLCanonTest, Host) {
     {"\xef\xbc\x90%Ef%bc\xb8%ef%Bd%83\xef\xbc\x90%EF%BC%8E\xef\xbc\x90\xef\xbc\x92\xef\xbc\x95\xef\xbc\x90\xef\xbc%8E\xef\xbc\x90\xef\xbc\x91", L"\xff10\xff38\xff43\xff10\xff0e\xff10\xff12\xff15\xff10\xff0e\xff10\xff11", "192.168.0.1", Component(0, 11), CanonHostInfo::IPV4, 3, "C0A80001"},
       // Broken IP addresses get marked as such.
     {"192.168.0.257", L"192.168.0.257", "192.168.0.257", Component(0, 13), CanonHostInfo::BROKEN, -1, ""},
-    {"[google.com]", L"[google.com]", "[google.com]", Component(0, 12), CanonHostInfo::BROKEN, -1, ""},
+    {"[9oo91e.qjz9zk]", L"[9oo91e.qjz9zk]", "[9oo91e.qjz9zk]", Component(0, 12), CanonHostInfo::BROKEN, -1, ""},
       // Cyrillic letter followed by '(' should return punycode for '(' escaped
       // before punycode string was created. I.e.
       // if '(' is escaped after punycode is created we would get xn--%28-8tb
@@ -1362,14 +1362,14 @@ TEST(URLCanonTest, CanonicalizeStandardURL) {
     const char* expected;
     bool expected_success;
   } cases[] = {
-      {"http://www.google.com/foo?bar=baz#",
-       "http://www.google.com/foo?bar=baz#", true},
-      {"http://[www.google.com]/", "http://[www.google.com]/", false},
-      {"ht\ttp:@www.google.com:80/;p?#", "ht%09tp://www.google.com:80/;p?#",
+      {"http://www.9oo91e.qjz9zk/foo?bar=baz#",
+       "http://www.9oo91e.qjz9zk/foo?bar=baz#", true},
+      {"http://[www.9oo91e.qjz9zk]/", "http://[www.9oo91e.qjz9zk]/", false},
+      {"ht\ttp:@www.9oo91e.qjz9zk:80/;p?#", "ht%09tp://www.9oo91e.qjz9zk:80/;p?#",
        false},
-      {"http:////////user:@google.com:99?foo", "http://user@google.com:99/?foo",
+      {"http:////////user:@9oo91e.qjz9zk:99?foo", "http://user@9oo91e.qjz9zk:99/?foo",
        true},
-      {"www.google.com", ":www.google.com/", false},
+      {"www.9oo91e.qjz9zk", ":www.9oo91e.qjz9zk/", false},
       {"http://192.0x00A80001", "http://192.168.0.1/", true},
       {"http://www/foo%2Ehtml", "http://www/foo.html", true},
       {"http://user:pass@/", "http://user:pass@/", false},
@@ -1377,11 +1377,11 @@ TEST(URLCanonTest, CanonicalizeStandardURL) {
        "http://%25DOMAIN:foobar@foodomain.com/", true},
 
       // Backslashes should get converted to forward slashes.
-      {"http:\\\\www.google.com\\foo", "http://www.google.com/foo", true},
+      {"http:\\\\www.9oo91e.qjz9zk\\foo", "http://www.9oo91e.qjz9zk/foo", true},
 
       // Busted refs shouldn't make the whole thing fail.
-      {"http://www.google.com/asdf#\xc2",
-       "http://www.google.com/asdf#%EF%BF%BD", true},
+      {"http://www.9oo91e.qjz9zk/asdf#\xc2",
+       "http://www.9oo91e.qjz9zk/asdf#%EF%BF%BD", true},
 
       // Basic port tests.
       {"http://foo:80/", "http://foo/", true},
@@ -1437,14 +1437,14 @@ TEST(URLCanonTest, CanonicalizeStandardURL) {
 TEST(URLCanonTest, ReplaceStandardURL) {
   ReplaceCase replace_cases[] = {
       // Common case of truncating the path.
-    {"http://www.google.com/foo?bar=baz#ref", NULL, NULL, NULL, NULL, NULL, "/", kDeleteComp, kDeleteComp, "http://www.google.com/"},
+    {"http://www.9oo91e.qjz9zk/foo?bar=baz#ref", NULL, NULL, NULL, NULL, NULL, "/", kDeleteComp, kDeleteComp, "http://www.9oo91e.qjz9zk/"},
       // Replace everything
-    {"http://a:b@google.com:22/foo;bar?baz@cat", "https", "me", "pw", "host.com", "99", "/path", "query", "ref", "https://me:pw@host.com:99/path?query#ref"},
+    {"http://a:b@9oo91e.qjz9zk:22/foo;bar?baz@cat", "https", "me", "pw", "host.com", "99", "/path", "query", "ref", "https://me:pw@host.com:99/path?query#ref"},
       // Replace nothing
-    {"http://a:b@google.com:22/foo?baz@cat", NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, "http://a:b@google.com:22/foo?baz@cat"},
+    {"http://a:b@9oo91e.qjz9zk:22/foo?baz@cat", NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, "http://a:b@9oo91e.qjz9zk:22/foo?baz@cat"},
       // Replace scheme with filesystem. The result is garbage, but you asked
       // for it.
-    {"http://a:b@google.com:22/foo?baz@cat", "filesystem", NULL, NULL, NULL, NULL, NULL, NULL, NULL, "filesystem://a:b@google.com:22/foo?baz@cat"},
+    {"http://a:b@9oo91e.qjz9zk:22/foo?baz@cat", "filesystem", NULL, NULL, NULL, NULL, NULL, NULL, NULL, "filesystem://a:b@9oo91e.qjz9zk:22/foo?baz@cat"},
   };
 
   for (size_t i = 0; i < base::size(replace_cases); i++) {
@@ -1480,7 +1480,7 @@ TEST(URLCanonTest, ReplaceStandardURL) {
 
   // The path pointer should be ignored if the address is invalid.
   {
-    const char src[] = "http://www.google.com/here_is_the_path";
+    const char src[] = "http://www.9oo91e.qjz9zk/here_is_the_path";
     int src_len = static_cast<int>(strlen(src));
 
     Parsed parsed;
@@ -1497,7 +1497,7 @@ TEST(URLCanonTest, ReplaceStandardURL) {
                        SCHEME_WITH_HOST_PORT_AND_USER_INFORMATION, NULL,
                        &output1, &new_parsed);
     output1.Complete();
-    EXPECT_STREQ("http://www.google.com/", out_str1.c_str());
+    EXPECT_STREQ("http://www.9oo91e.qjz9zk/", out_str1.c_str());
 
     // Same with an "invalid" path.
     r.SetPath(reinterpret_cast<char*>(0x00000001), Component());
@@ -1507,7 +1507,7 @@ TEST(URLCanonTest, ReplaceStandardURL) {
                        SCHEME_WITH_HOST_PORT_AND_USER_INFORMATION, NULL,
                        &output2, &new_parsed);
     output2.Complete();
-    EXPECT_STREQ("http://www.google.com/", out_str2.c_str());
+    EXPECT_STREQ("http://www.9oo91e.qjz9zk/", out_str2.c_str());
   }
 }
 

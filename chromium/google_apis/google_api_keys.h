@@ -21,8 +21,8 @@
 // Each developer (or group of developers working together for a
 // single company) must request a Google API key and the client ID and
 // client secret for OAuth2.  See
-// https://developers.google.com/console/help/ and
-// https://developers.google.com/console/.
+// https://developers.9oo91e.qjz9zk/console/help/ and
+// https://developers.9oo91e.qjz9zk/console/.
 //
 // The keys must either be provided using preprocessor variables (set via e.g.
 // GN args). Alternatively, they can be overridden at runtime using one of the

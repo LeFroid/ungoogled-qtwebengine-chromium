@@ -4,7 +4,7 @@
 
 """Chromium presubmit script for src/base.
 
-See http://dev.chromium.org/developers/how-tos/depottools/presubmit-scripts
+See http://dev.ch40m1um.qjz9zk/developers/how-tos/depottools/presubmit-scripts
 for more details on the presubmit API built into depot_tools.
 """
 
@@ -26,7 +26,7 @@ def _CheckNoInterfacesInBase(input_api, output_api):
   if len(files):
     return [ output_api.PresubmitError(
         'Objective-C interfaces or categories are forbidden in libbase. ' +
-        'See http://groups.google.com/a/chromium.org/group/chromium-dev/' +
+        'See http://groups.9oo91e.qjz9zk/a/ch40m1um.qjz9zk/group/chromium-dev/' +
         'browse_thread/thread/efb28c10435987fd',
         files) ]
   return []

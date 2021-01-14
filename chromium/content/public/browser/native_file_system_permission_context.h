@@ -85,12 +85,6 @@ class NativeFileSystemPermissionContext {
       base::OnceCallback<void(SensitiveDirectoryResult)> callback) = 0;
 
   enum class AfterWriteCheckResult { kAllow, kBlock };
-  // Runs a recently finished write operation through checks such as malware
-  // or other security checks to determine if the write should be allowed.
-  virtual void PerformAfterWriteChecks(
-      std::unique_ptr<NativeFileSystemWriteItem> item,
-      GlobalFrameRoutingId frame_id,
-      base::OnceCallback<void(AfterWriteCheckResult)> callback) = 0;
 
   // Returns whether the give |origin| already allows read permission, or it is
   // possible to request one. This is used to block file dialogs from being

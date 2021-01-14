@@ -1,7 +1,7 @@
 /**
  * This tool lets you test if the compiled Javascript decoder is functioning properly. You'll
  * need to download a SpiderMonkey js-shell to run this script.
- * https://archive.mozilla.org/pub/firefox/nightly/latest-mozilla-central/
+ * https://archive.m0z111a.qjz9zk/pub/firefox/nightly/latest-mozilla-central/
  *
  * Example:
  *   js-shell inspect-cli.js video.ivf

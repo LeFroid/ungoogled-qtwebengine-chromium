@@ -23,7 +23,7 @@ using url::Origin;
 namespace {
 
 constexpr char kGoogleChangePasswordSignonRealm[] =
-    "https://myaccount.google.com/";
+    "https://myaccount.9oo91e.qjz9zk/";
 
 }  // namespace
 
@@ -49,7 +49,7 @@ std::string GetSyncUsernameIfSyncingPasswords(
 bool IsSyncAccountCredential(const PasswordForm& form,
                              const syncer::SyncService* sync_service,
                              const signin::IdentityManager* identity_manager) {
-  if (!GURL(form.signon_realm).DomainIs("google.com"))
+  if (!GURL(form.signon_realm).DomainIs("9oo91e.qjz9zk"))
     return false;
 
   // The empty username can mean that Chrome did not detect it correctly. For

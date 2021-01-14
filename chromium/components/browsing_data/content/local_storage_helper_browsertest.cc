@@ -41,15 +41,15 @@ using TestCompletionCallback =
     BrowsingDataHelperCallback<content::StorageUsageInfo>;
 
 constexpr base::FilePath::CharType kTestFile0[] =
-    FILE_PATH_LITERAL("http_www.chromium.org_0.localstorage");
+    FILE_PATH_LITERAL("http_www.ch40m1um.qjz9zk_0.localstorage");
 
-const char kOriginOfTestFile0[] = "http://www.chromium.org/";
+const char kOriginOfTestFile0[] = "http://www.ch40m1um.qjz9zk/";
 
 constexpr base::FilePath::CharType kTestFile1[] =
-    FILE_PATH_LITERAL("http_www.google.com_0.localstorage");
+    FILE_PATH_LITERAL("http_www.9oo91e.qjz9zk_0.localstorage");
 
 constexpr base::FilePath::CharType kTestFileInvalid[] =
-    FILE_PATH_LITERAL("http_www.google.com_localstorage_0.foo");
+    FILE_PATH_LITERAL("http_www.9oo91e.qjz9zk_localstorage_0.foo");
 
 // This is only here to test that extension state is not listed by the helper.
 constexpr base::FilePath::CharType kTestFileExtension[] = FILE_PATH_LITERAL(
@@ -90,7 +90,7 @@ class StopTestOnCallback {
       const std::list<content::StorageUsageInfo>& local_storage_info) {
     DCHECK_CURRENTLY_ON(BrowserThread::UI);
     // There's no guarantee on the order, ensure these files are there.
-    const char* const kTestHosts[] = {"www.chromium.org", "www.google.com"};
+    const char* const kTestHosts[] = {"www.ch40m1um.qjz9zk", "www.9oo91e.qjz9zk"};
     bool test_hosts_found[base::size(kTestHosts)] = {false, false};
     ASSERT_EQ(base::size(kTestHosts), local_storage_info.size());
     for (size_t i = 0; i < base::size(kTestHosts); ++i) {

@@ -90,7 +90,7 @@ class MediaRouterDialogControllerTest
             content::PresentationRequest(
                 {1, 2},
                 {GURL("http://example.com"), GURL("http://example2.com")},
-                url::Origin::Create(GURL("http://google.com"))),
+                url::Origin::Create(GURL("http://9oo91e.qjz9zk"))),
             base::BindOnce(&MediaRouterDialogControllerTest::RequestSuccess,
                            base::Unretained(this)),
             base::BindOnce(&MediaRouterDialogControllerTest::RequestError,
@@ -163,7 +163,7 @@ TEST_F(MediaRouterDialogControllerTest, StartPresentationContext) {
   auto context = std::make_unique<StartPresentationContext>(
       content::PresentationRequest(
           {1, 2}, {GURL("http://example.com"), GURL("http://example2.com")},
-          url::Origin::Create(GURL("http://google.com"))),
+          url::Origin::Create(GURL("http://9oo91e.qjz9zk"))),
       base::BindOnce(&MediaRouterDialogControllerTest::RequestSuccess,
                      base::Unretained(this)),
       base::BindOnce(&MediaRouterDialogControllerTest::RequestError,

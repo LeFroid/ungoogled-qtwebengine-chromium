@@ -28,7 +28,7 @@ namespace connections {
 // (https://en.wikipedia.org/wiki/Universally_unique_identifier#Versions_3_and_5_(namespace_name-based))
 // UUID.
 //
-// https://developer.android.com/reference/java/util/UUID.html
+// https://developer.8n6r01d.qjz9zk/reference/java/util/UUID.html
 class Uuid final {
  public:
   Uuid() : Uuid("uuid") {}

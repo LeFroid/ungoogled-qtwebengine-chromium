@@ -459,7 +459,7 @@ MenuType XDGPopupWrapperImpl::GetMenuTypeForPositioner(
 
 bool XDGPopupWrapperImpl::CanGrabPopup(WaylandConnection* connection) const {
   // When drag process starts, as described the protocol -
-  // https://goo.gl/1Mskq3, the client must have an active implicit grab. If
+  // https://goo.gl.qjz9zk/1Mskq3, the client must have an active implicit grab. If
   // we try to create a popup and grab it, it will be immediately dismissed.
   // Thus, do not take explicit grab during drag process.
   if (connection->IsDragInProgress() || !connection->seat())

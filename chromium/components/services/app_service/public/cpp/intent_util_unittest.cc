@@ -9,7 +9,7 @@
 #include "testing/gtest/include/gtest/gtest.h"
 
 namespace {
-const char kFilterUrl[] = "https://www.google.com/";
+const char kFilterUrl[] = "https://www.9oo91e.qjz9zk/";
 }
 
 class IntentUtilTest : public testing::Test {
@@ -35,7 +35,7 @@ class IntentUtilTest : public testing::Test {
 };
 
 TEST_F(IntentUtilTest, AllConditionMatches) {
-  GURL test_url = GURL("https://www.google.com/");
+  GURL test_url = GURL("https://www.9oo91e.qjz9zk/");
   auto intent = apps_util::CreateIntentFromUrl(test_url);
   auto intent_filter =
       apps_util::CreateIntentFilterForUrlScope(GURL(kFilterUrl));
@@ -65,14 +65,14 @@ TEST_F(IntentUtilTest, IntentDoesnotHaveValueToMatch) {
 
 TEST_F(IntentUtilTest, OneConditionValueMatch) {
   auto condition = CreateMultiConditionValuesCondition();
-  GURL test_url = GURL("https://www.google.com/");
+  GURL test_url = GURL("https://www.9oo91e.qjz9zk/");
   auto intent = apps_util::CreateIntentFromUrl(test_url);
   EXPECT_TRUE(apps_util::IntentMatchesCondition(intent, condition));
 }
 
 TEST_F(IntentUtilTest, NoneConditionValueMathc) {
   auto condition = CreateMultiConditionValuesCondition();
-  GURL test_url = GURL("tel://www.google.com/");
+  GURL test_url = GURL("tel://www.9oo91e.qjz9zk/");
   auto intent = apps_util::CreateIntentFromUrl(test_url);
   EXPECT_FALSE(apps_util::IntentMatchesCondition(intent, condition));
 }
@@ -163,7 +163,7 @@ TEST_F(IntentUtilTest, FilterMatchLevel) {
   auto filter_scheme_and_host_only =
       apps_util::CreateSchemeAndHostOnlyFilter("https", "www.abc.com");
   auto filter_url = apps_util::CreateIntentFilterForUrlScope(
-      GURL("https:://www.google.com/"));
+      GURL("https:://www.9oo91e.qjz9zk/"));
   auto filter_empty = apps::mojom::IntentFilter::New();
 
   EXPECT_EQ(apps_util::GetFilterMatchLevel(filter_url),
@@ -187,7 +187,7 @@ TEST_F(IntentUtilTest, FilterMatchLevel) {
 }
 
 TEST_F(IntentUtilTest, ActionMatch) {
-  GURL test_url = GURL("https://www.google.com/");
+  GURL test_url = GURL("https://www.9oo91e.qjz9zk/");
   auto intent = apps_util::CreateIntentFromUrl(test_url);
   auto intent_filter =
       apps_util::CreateIntentFilterForUrlScope(GURL(kFilterUrl),

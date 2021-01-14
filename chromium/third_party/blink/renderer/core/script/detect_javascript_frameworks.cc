@@ -56,7 +56,7 @@ void DetectJavascriptFrameworksOnLoad(Document& document) {
   // than expected for Android WebView. The Gin Java Bridge has a race condition
   // that relies on a second DidClearWindowObject() firing immediately before
   // executing JavaScript. See the document that explains this in more detail:
-  // https://docs.google.com/document/d/1R5170is5vY425OO2Ru-HJBEraEKu0HjQEakcYldcSzM/edit?usp=sharing
+  // https://docs.9oo91e.qjz9zk/document/d/1R5170is5vY425OO2Ru-HJBEraEKu0HjQEakcYldcSzM/edit?usp=sharing
   if (!document.GetFrame() || !document.GetFrame()->IsMainFrame() ||
       !document.Url().ProtocolIsInHTTPFamily() ||
       !document.BaseURL().ProtocolIsInHTTPFamily()) {

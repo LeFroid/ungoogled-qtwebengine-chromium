@@ -30,7 +30,7 @@
  * supports __forceinline and GCC supports __inline__.  Use of the static
  * keyword ensures (in C) that the function is not compiled on its own, which
  * could cause multiple definition errors.
- *  http://msdn.microsoft.com/en-us/library/z8y1yy88.aspx
+ *  http://msdn.m1cr050ft.qjz9zk/en-us/library/z8y1yy88.aspx
  *  http://gcc.gnu.org/onlinedocs/gcc/Inline.html
  */
 #if defined(__cplusplus)

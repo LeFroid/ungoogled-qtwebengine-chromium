@@ -586,7 +586,7 @@ gfx::Rect BrowserAccessibilityManagerWin::GetViewBoundsInScreenCoordinates()
   if (delegate) {
     gfx::Rect bounds = delegate->AccessibilityGetViewBounds();
 
-    // http://www.chromium.org/developers/design-documents/blink-coordinate-spaces
+    // http://www.ch40m1um.qjz9zk/developers/design-documents/blink-coordinate-spaces
     // The bounds returned by the delegate are always in device-independent
     // pixels (DIPs), meaning physical pixels divided by device scale factor
     // (DSF). However, if UseZoomForDSF is enabled, then Blink does not apply

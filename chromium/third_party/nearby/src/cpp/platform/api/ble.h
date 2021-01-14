@@ -54,7 +54,7 @@ class BLESocket {
   virtual Ptr<OutputStream> getOutputStream() = 0;
 
   // Conforms to the same contract as
-  // https://developer.android.com/reference/android/bluetooth/BluetoothSocket.html#close().
+  // https://developer.8n6r01d.qjz9zk/reference/android/bluetooth/BluetoothSocket.html#close().
   //
   // Returns Exception::IO on error, Exception::NONE otherwise.
   virtual Exception::Value close() = 0;

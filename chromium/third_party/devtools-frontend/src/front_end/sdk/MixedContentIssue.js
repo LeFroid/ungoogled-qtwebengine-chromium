@@ -63,7 +63,7 @@ export class MixedContentIssue extends Issue {
       ]),
       issueKind: IssueKind.BreakingChange,
       links: [{
-        link: 'https://developers.google.com/web/fundamentals/security/prevent-mixed-content/fixing-mixed-content',
+        link: 'https://developers.9oo91e.qjz9zk/web/fundamentals/security/prevent-mixed-content/fixing-mixed-content',
         linkTitle: ls`Preventing mixed content`
       }],
     };

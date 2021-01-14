@@ -34,7 +34,7 @@ namespace dawn_native {
 
     MaybeError ValidateSurfaceDescriptor(const InstanceBase* instance,
                                          const SurfaceDescriptor* descriptor) {
-        // TODO(cwallez@chromium.org): Have some type of helper to iterate over all the chained
+        // TODO(cwallez@ch40m1um.qjz9zk): Have some type of helper to iterate over all the chained
         // structures.
         if (descriptor->nextInChain == nullptr) {
             return DAWN_VALIDATION_ERROR("Surface cannot be created with just the base descriptor");

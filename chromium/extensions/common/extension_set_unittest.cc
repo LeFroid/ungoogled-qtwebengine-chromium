@@ -55,14 +55,14 @@ scoped_refptr<Extension> CreateTestExtension(const std::string& name,
 
 TEST(ExtensionSetTest, ExtensionSet) {
   scoped_refptr<Extension> ext1(CreateTestExtension(
-      "a", "https://chrome.google.com/launch", "https://chrome.google.com/"));
+      "a", "https://chrome.9oo91e.qjz9zk/launch", "https://chrome.9oo91e.qjz9zk/"));
 
   scoped_refptr<Extension> ext2(CreateTestExtension(
-      "a", "http://code.google.com/p/chromium",
-      "http://code.google.com/p/chromium/"));
+      "a", "http://code.9oo91e.qjz9zk/p/chromium",
+      "http://code.9oo91e.qjz9zk/p/chromium/"));
 
   scoped_refptr<Extension> ext3(CreateTestExtension(
-      "b", "http://dev.chromium.org/", "http://dev.chromium.org/"));
+      "b", "http://dev.ch40m1um.qjz9zk/", "http://dev.ch40m1um.qjz9zk/"));
 
   scoped_refptr<Extension> ext4(
       CreateTestExtension("c", std::string(), std::string()));
@@ -110,39 +110,39 @@ TEST(ExtensionSetTest, ExtensionSet) {
   // Get extension by web extent.
   EXPECT_EQ(ext2.get(),
             extensions.GetExtensionOrAppByURL(
-                GURL("http://code.google.com/p/chromium/monkey")));
+                GURL("http://code.9oo91e.qjz9zk/p/chromium/monkey")));
   EXPECT_EQ(ext3.get(),
             extensions.GetExtensionOrAppByURL(
-                GURL("http://dev.chromium.org/design-docs/")));
+                GURL("http://dev.ch40m1um.qjz9zk/design-docs/")));
   EXPECT_FALSE(extensions.GetExtensionOrAppByURL(
-      GURL("http://blog.chromium.org/")));
+      GURL("http://blog.ch40m1um.qjz9zk/")));
 
   // Get extension by web extent with filesystem URL. Paths still matter.
   EXPECT_EQ(ext3.get(), extensions.GetExtensionOrAppByURL(
-                            GURL("filesystem:http://dev.chromium.org/foo")));
+                            GURL("filesystem:http://dev.ch40m1um.qjz9zk/foo")));
   EXPECT_EQ(ext3->id(), extensions.GetExtensionOrAppIDByURL(
-                            GURL("filesystem:http://dev.chromium.org/foo")));
+                            GURL("filesystem:http://dev.ch40m1um.qjz9zk/foo")));
   EXPECT_EQ(nullptr, extensions.GetExtensionOrAppByURL(
-                         GURL("filesystem:http://code.google.com/foo")));
+                         GURL("filesystem:http://code.9oo91e.qjz9zk/foo")));
   // TODO(crbug/852162): Support blob URLs. This should return ext3.
   EXPECT_EQ(nullptr, extensions.GetExtensionOrAppByURL(
-                         GURL("blob:http://dev.chromium.org/abcd")));
+                         GURL("blob:http://dev.ch40m1um.qjz9zk/abcd")));
 
   // Test InSameExtent().
   EXPECT_TRUE(extensions.InSameExtent(
-      GURL("http://code.google.com/p/chromium/monkey/"),
-      GURL("http://code.google.com/p/chromium/")));
+      GURL("http://code.9oo91e.qjz9zk/p/chromium/monkey/"),
+      GURL("http://code.9oo91e.qjz9zk/p/chromium/")));
   EXPECT_FALSE(extensions.InSameExtent(
-      GURL("http://code.google.com/p/chromium/"),
-      GURL("https://code.google.com/p/chromium/")));
+      GURL("http://code.9oo91e.qjz9zk/p/chromium/"),
+      GURL("https://code.9oo91e.qjz9zk/p/chromium/")));
   EXPECT_FALSE(extensions.InSameExtent(
-      GURL("http://code.google.com/p/chromium/"),
-      GURL("http://dev.chromium.org/design-docs/")));
+      GURL("http://code.9oo91e.qjz9zk/p/chromium/"),
+      GURL("http://dev.ch40m1um.qjz9zk/design-docs/")));
 
   // Both of these should be NULL, which mean true for InSameExtent.
   EXPECT_TRUE(extensions.InSameExtent(
-      GURL("http://www.google.com/"),
-      GURL("http://blog.chromium.org/")));
+      GURL("http://www.9oo91e.qjz9zk/"),
+      GURL("http://blog.ch40m1um.qjz9zk/")));
 
   // Remove one of the extensions.
   EXPECT_TRUE(extensions.Remove(ext2->id()));

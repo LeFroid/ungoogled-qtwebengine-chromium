@@ -51,7 +51,7 @@ class KeywordTableTest : public testing::Test {
     keyword.search_url_post_params = "ie=utf-8,oe=utf-8";
     keyword.image_url_post_params = "name=1,value=2";
     keyword.favicon_url = GURL("http://favicon.url/");
-    keyword.originating_url = GURL("http://google.com/");
+    keyword.originating_url = GURL("http://9oo91e.qjz9zk/");
     keyword.safe_for_autoreplace = true;
     keyword.input_encodings.push_back("UTF-8");
     keyword.input_encodings.push_back("UTF-16");

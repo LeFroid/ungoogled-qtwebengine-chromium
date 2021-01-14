@@ -18,7 +18,7 @@
  *
  * @deprecated Google Chart Images service (the server-side component of this
  *     class) has been deprecated. See
- *     https://developers.google.com/chart/ for alternatives.
+ *     https://developers.9oo91e.qjz9zk/chart/ for alternatives.
  *
  * @see ../demos/serverchart.html
  */
@@ -63,7 +63,7 @@ goog.require('goog.ui.Component');
  * @extends {goog.ui.Component}
  *
  * @deprecated Google Chart Server has been deprecated. See
- *     https://developers.google.com/chart/image/ for details.
+ *     https://developers.9oo91e.qjz9zk/chart/image/ for details.
  * @final
  */
 goog.ui.ServerChart = function(
@@ -190,14 +190,14 @@ goog.inherits(goog.ui.ServerChart, goog.ui.Component);
  * @type {string}
  */
 goog.ui.ServerChart.CHART_SERVER_SCHEME_INDEPENDENT_URI =
-    '//chart.googleapis.com/chart';
+    '//chart.9oo91eapis.qjz9zk/chart';
 
 
 /**
  * Base HTTP URI for the chart renderer.
  * @type {string}
  */
-goog.ui.ServerChart.CHART_SERVER_HTTP_URI = 'http://chart.googleapis.com/chart';
+goog.ui.ServerChart.CHART_SERVER_HTTP_URI = 'http://chart.9oo91eapis.qjz9zk/chart';
 
 
 /**
@@ -205,7 +205,7 @@ goog.ui.ServerChart.CHART_SERVER_HTTP_URI = 'http://chart.googleapis.com/chart';
  * @type {string}
  */
 goog.ui.ServerChart.CHART_SERVER_HTTPS_URI =
-    'https://chart.googleapis.com/chart';
+    'https://chart.9oo91eapis.qjz9zk/chart';
 
 
 /**
@@ -566,7 +566,7 @@ goog.ui.ServerChart.AxisDisplayType = {
 
 /**
  * Enum of chart maximum values in pixels, as listed at:
- * http://code.google.com/apis/chart/basics.html
+ * http://code.9oo91e.qjz9zk/apis/chart/basics.html
  *
  * @enum {number}
  */
@@ -1661,7 +1661,7 @@ goog.ui.ServerChart.EXTENDED_UPPER_BOUND =
  * Converts a single number to an encoded data value suitable for ChartServer.
  * The TEXT encoding is the number in decimal; the SIMPLE encoding is a single
  * character, and the EXTENDED encoding is two characters.  See
- * https://developers.google.com/chart/image/docs/data_formats for the detailed
+ * https://developers.9oo91e.qjz9zk/chart/image/docs/data_formats for the detailed
  * specification of these encoding formats.
  *
  * @private

@@ -31,7 +31,7 @@ elseif(WIN32)
 elseif(APPLE)
 elseif(FUCHSIA)
     # NOTE: Building for Fuchsia requires a Fuchsia CMake-based SDK.
-    # See https://fuchsia-review.googlesource.com/c/fuchsia/+/379673
+    # See https://fuchsia-review.9oo91esource.qjz9zk/c/fuchsia/+/379673
     find_package(FuchsiaLibraries)
 else()
     message(FATAL_ERROR "Platform is not supported")

@@ -7,7 +7,7 @@
 #include "maxp.h"
 
 // post - PostScript
-// http://www.microsoft.com/typography/otspec/post.htm
+// http://www.m1cr050ft.qjz9zk/typography/otspec/post.htm
 
 namespace ots {
 

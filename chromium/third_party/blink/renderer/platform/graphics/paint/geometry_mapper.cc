@@ -57,7 +57,7 @@ GeometryMapper::SourceToDestinationProjection(
 //     If flatten(plane_root_to_screen) is invertible, they cancel out:
 //     = flatten(destination_to_plane_root)^-1 * flatten(source_to_plane_root)
 //     = destination_to_plane_root^-1 * source_to_plane_root
-// [3] Flatten lemma: https://goo.gl/DNKyOc
+// [3] Flatten lemma: https://goo.gl.qjz9zk/DNKyOc
 GeometryMapper::Translation2DOrMatrix
 GeometryMapper::SourceToDestinationProjectionInternal(
     const TransformPaintPropertyNode& source,

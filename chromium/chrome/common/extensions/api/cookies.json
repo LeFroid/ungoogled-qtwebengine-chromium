@@ -20,7 +20,7 @@
         "properties": {
           "name": {"type": "string", "description": "The name of the cookie."},
           "value": {"type": "string", "description": "The value of the cookie."},
-          "domain": {"type": "string", "description": "The domain of the cookie (e.g. \"www.google.com\", \"example.com\")."},
+          "domain": {"type": "string", "description": "The domain of the cookie (e.g. \"www.9oo91e.qjz9zk\", \"example.com\")."},
           "hostOnly": {"type": "boolean", "description": "True if the cookie is a host-only cookie (i.e. a request's host must exactly match the domain of the cookie)."},
           "path": {"type": "string", "description": "The path of the cookie."},
           "secure": {"type": "boolean", "description": "True if the cookie is marked as Secure (i.e. its scope is limited to secure channels, typically HTTPS)."},

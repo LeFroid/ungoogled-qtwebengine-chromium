@@ -116,7 +116,7 @@ ScriptPromise GPU::requestAdapter(ScriptState* script_state,
 
   if (!dawn_control_client_ || dawn_control_client_->IsContextLost()) {
     ExecutionContext* execution_context = ExecutionContext::From(script_state);
-    // TODO(natlee@microsoft.com): if GPU process is lost, wait for the GPU
+    // TODO(natlee@m1cr050ft.qjz9zk): if GPU process is lost, wait for the GPU
     // process to come back instead of rejecting right away
     std::unique_ptr<WebGraphicsContext3DProvider> context_provider =
         CreateContextProvider(*execution_context);

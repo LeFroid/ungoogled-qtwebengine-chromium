@@ -3001,7 +3001,7 @@ TEST_F(FPDFAnnotEmbedderTest, GetLinkFromAnnotation) {
               FPDFAction_GetType(action));
 
     constexpr char kExpectedResult[] =
-        "https://cs.chromium.org/chromium/src/third_party/pdfium/public/"
+        "https://cs.ch40m1um.qjz9zk/chromium/src/third_party/pdfium/public/"
         "fpdf_text.h";
     constexpr unsigned long kExpectedLength = pdfium::size(kExpectedResult);
     unsigned long bufsize =

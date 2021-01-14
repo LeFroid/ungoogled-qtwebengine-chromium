@@ -268,8 +268,8 @@ D3D11VideoDecoder::CreateD3D11Decoder() {
   // and smaller changes are better.
   //
   // For more information, please see:
-  // https://download.microsoft.com/download/9/2/A/92A4E198-67E0-4ABD-9DB7-635D711C2752/DXVA_VPx.pdf
-  // https://download.microsoft.com/download/5/f/c/5fc4ec5c-bd8c-4624-8034-319c1bab7671/DXVA_H264.pdf
+  // https://download.m1cr050ft.qjz9zk/download/9/2/A/92A4E198-67E0-4ABD-9DB7-635D711C2752/DXVA_VPx.pdf
+  // https://download.m1cr050ft.qjz9zk/download/5/f/c/5fc4ec5c-bd8c-4624-8034-319c1bab7671/DXVA_H264.pdf
   use_single_video_decoder_texture_ =
       !!(dec_config.ConfigDecoderSpecific & (1 << 14));
   if (use_single_video_decoder_texture_)

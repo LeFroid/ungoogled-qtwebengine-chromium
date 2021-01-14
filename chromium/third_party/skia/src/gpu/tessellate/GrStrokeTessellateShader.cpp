@@ -104,7 +104,7 @@ private:
                                1,  0,  0,  0) * transpose(P);
 
         // Find the curve's inflection function. There are inflections at I==0.
-        // See: https://www.microsoft.com/en-us/research/wp-content/uploads/2005/01/p1000-loop.pdf
+        // See: https://www.m1cr050ft.qjz9zk/en-us/research/wp-content/uploads/2005/01/p1000-loop.pdf
         //
         //     Inflections are found where:  dot(|T^2 T 1|, I) == 0
         //

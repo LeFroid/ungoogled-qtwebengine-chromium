@@ -42,7 +42,7 @@ TEST_F(ClientContextTest, Initialize) {
   EXPECT_CALL(mock_client_, GetDeviceContext())
       .WillOnce(Return(device_context_));
   EXPECT_CALL(mock_client_, GetChromeSignedInEmailAddress())
-      .WillOnce(Return("john.doe@chromium.org"));
+      .WillOnce(Return("john.doe@ch40m1um.qjz9zk"));
   EXPECT_CALL(mock_client_, IsAccessibilityEnabled()).WillOnce(Return(true));
 
   ClientContextImpl client_context(&mock_client_);
@@ -98,13 +98,13 @@ TEST_F(ClientContextTest, UpdateWithTriggerContext) {
 
 TEST_F(ClientContextTest, AccountMatching) {
   EXPECT_CALL(mock_client_, GetChromeSignedInEmailAddress())
-      .WillRepeatedly(Return("john.doe@chromium.org"));
+      .WillRepeatedly(Return("john.doe@ch40m1um.qjz9zk"));
 
   ClientContextImpl client_context(&mock_client_);
   EXPECT_THAT(client_context.AsProto().accounts_matching_status(),
               Eq(ClientContextProto::UNKNOWN));
 
-  // Should match john.doe@chromium.org.
+  // Should match john.doe@ch40m1um.qjz9zk.
   TriggerContextImpl trigger_context;
   trigger_context.SetCallerAccountHash(
       "2c8fa87717fab622bb5cc4d18135fe30dae339efd274b450022d361be92b48c3");
@@ -127,7 +127,7 @@ TEST_F(ClientContextTest, SignedInStatus) {
               Eq(ClientContextProto::NOT_SIGNED_IN));
 
   EXPECT_CALL(mock_client_, GetChromeSignedInEmailAddress())
-      .WillOnce(Return("john.doe@chromium.org"));
+      .WillOnce(Return("john.doe@ch40m1um.qjz9zk"));
   ClientContextImpl client_context_b(&mock_client_);
   EXPECT_THAT(client_context_b.AsProto().signed_into_chrome_status(),
               Eq(ClientContextProto::SIGNED_IN));

@@ -1453,7 +1453,7 @@ TEST_F(DnsTransactionTest, ConnectFailure) {
   socket_factory_->AddSocketDataProvider(&data_provider);
 
   transaction_ids_.push_back(0);  // Needed to make a DnsUDPAttempt.
-  TransactionHelper helper0("www.chromium.org", dns_protocol::kTypeA,
+  TransactionHelper helper0("www.ch40m1um.qjz9zk", dns_protocol::kTypeA,
                             false /* secure */, ERR_CONNECTION_REFUSED,
                             resolve_context_.get());
 
@@ -1471,7 +1471,7 @@ TEST_F(DnsTransactionTest, ConnectFailure_SocketLimitReached) {
   socket_factory_->AddSocketDataProvider(&data_provider);
 
   transaction_ids_.push_back(0);  // Needed to make a DnsUDPAttempt.
-  TransactionHelper helper0("www.chromium.org", dns_protocol::kTypeA,
+  TransactionHelper helper0("www.ch40m1um.qjz9zk", dns_protocol::kTypeA,
                             false /* secure */, ERR_CONNECTION_REFUSED,
                             resolve_context_.get());
 

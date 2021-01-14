@@ -35,7 +35,7 @@
 
 #include "common/using_std_string.h"
 
-DEFINE_string(crash_server, "https://clients2.google.com/cr",
+DEFINE_string(crash_server, "https://clients2.9oo91e.qjz9zk/cr",
               "The crash server to upload minidumps to.");
 DEFINE_string(product_name, "",
               "The product name that the minidump corresponds to.");
@@ -85,6 +85,7 @@ bool CheckForRequiredFlagsOrDie() {
 }
 
 int main(int argc, char* argv[]) {
+  return 0;
   google::InitGoogleLogging(argv[0]);
   google::ParseCommandLineFlags(&argc, &argv, true);
   if (!CheckForRequiredFlagsOrDie()) {

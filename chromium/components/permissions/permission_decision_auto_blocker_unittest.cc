@@ -23,7 +23,7 @@ namespace permissions {
 namespace {
 
 bool FilterGoogle(const GURL& url) {
-  return url == "https://www.google.com/";
+  return url == "https://www.9oo91e.qjz9zk/";
 }
 
 bool FilterAll(const GURL& url) {
@@ -77,7 +77,7 @@ class PermissionDecisionAutoBlockerUnitTest : public testing::Test {
 // that it doesn't interfere with other embargoed permissions or the same
 // permission embargoed on other sites.
 TEST_F(PermissionDecisionAutoBlockerUnitTest, RemoveEmbargoAndResetCounts) {
-  GURL url1("https://www.google.com");
+  GURL url1("https://www.9oo91e.qjz9zk");
   GURL url2("https://www.example.com");
 
   // Record dismissals for location and notifications in |url1|.
@@ -174,7 +174,7 @@ TEST_F(PermissionDecisionAutoBlockerUnitTest,
 
 TEST_F(PermissionDecisionAutoBlockerUnitTest,
        NonembargoedOriginRemoveEmbargoCounts) {
-  GURL gurl_to_embargo("https://www.google.com");
+  GURL gurl_to_embargo("https://www.9oo91e.qjz9zk");
 
   // Make sure that an origin's Dismiss count is 0.
   EXPECT_EQ(0, autoblocker()->GetDismissCount(
@@ -211,7 +211,7 @@ TEST_F(PermissionDecisionAutoBlockerUnitTest,
 }
 
 TEST_F(PermissionDecisionAutoBlockerUnitTest, RemoveEmbargoCounts) {
-  GURL gurl_to_embargo("https://www.google.com");
+  GURL gurl_to_embargo("https://www.9oo91e.qjz9zk");
 
   // Add an origin under embargo for 2 dismissed and 1 ignored
   // ContentSettingsType.
@@ -262,7 +262,7 @@ TEST_F(PermissionDecisionAutoBlockerUnitTest, RemoveEmbargoCounts) {
 }
 
 TEST_F(PermissionDecisionAutoBlockerUnitTest, RemoveEmbargoAndResetCounts_All) {
-  GURL url1("https://www.google.com");
+  GURL url1("https://www.9oo91e.qjz9zk");
   GURL url2("https://www.example.com");
 
   // Record some dismissals.
@@ -383,7 +383,7 @@ TEST_F(PermissionDecisionAutoBlockerUnitTest, RemoveEmbargoAndResetCounts_All) {
 // should be triggered only when necessary by Html5ByDefault.
 TEST_F(PermissionDecisionAutoBlockerUnitTest,
        PluginsNotEmbargoedByMultipleDismissesOrIgnores) {
-  GURL url("https://www.google.com");
+  GURL url("https://www.9oo91e.qjz9zk");
 
   // Check dismisses first.
   autoblocker()->RecordDismissAndEmbargo(url, ContentSettingsType::PLUGINS,
@@ -458,8 +458,8 @@ TEST_F(PermissionDecisionAutoBlockerUnitTest,
 // Check that GetEmbargoedOrigins only returns origins where embargo is the
 // effective permission enforcement mechanism.
 TEST_F(PermissionDecisionAutoBlockerUnitTest, CheckEmbargoedOrigins) {
-  GURL url1("https://www.google.com");
-  GURL url2("https://www.google.com:8443");
+  GURL url1("https://www.9oo91e.qjz9zk");
+  GURL url2("https://www.9oo91e.qjz9zk:8443");
   std::vector<ContentSettingsType> content_types = {
       ContentSettingsType::GEOLOCATION, ContentSettingsType::NOTIFICATIONS};
   std::set<GURL> origins;
@@ -510,7 +510,7 @@ TEST_F(PermissionDecisionAutoBlockerUnitTest, CheckEmbargoedOrigins) {
 // Check that GetEmbargoResult returns the correct value when the embargo is set
 // and expires.
 TEST_F(PermissionDecisionAutoBlockerUnitTest, CheckEmbargoStatus) {
-  GURL url("https://www.google.com");
+  GURL url("https://www.9oo91e.qjz9zk");
   clock()->SetNow(base::Time::Now());
 
   // Check the default state.
@@ -581,7 +581,7 @@ TEST_F(PermissionDecisionAutoBlockerUnitTest, CheckEmbargoStatus) {
 // Check that GetEmbargoStartTime returns the correct time for embargoes whether
 // they are nonexistent, expired or active.
 TEST_F(PermissionDecisionAutoBlockerUnitTest, CheckEmbargoStartTime) {
-  GURL url("https://www.google.com");
+  GURL url("https://www.9oo91e.qjz9zk");
 
   // The time recorded for embargoes will be stored as a double, which will
   // cause aliasing to a limited set of base::Time values upon retrieval. We
@@ -697,7 +697,7 @@ TEST_F(PermissionDecisionAutoBlockerUnitTest, CheckEmbargoStartTime) {
 // chance to request the permission, but if it is again dismissed it is placed
 // under embargo again and its permission requests blocked.
 TEST_F(PermissionDecisionAutoBlockerUnitTest, TestDismissEmbargoBackoff) {
-  GURL url("https://www.google.com");
+  GURL url("https://www.9oo91e.qjz9zk");
   clock()->SetNow(base::Time::Now());
   base::HistogramTester histograms;
 
@@ -756,7 +756,7 @@ TEST_F(PermissionDecisionAutoBlockerUnitTest, TestDismissEmbargoBackoff) {
 
 // Tests the alternating pattern of the block on multiple ignores behaviour.
 TEST_F(PermissionDecisionAutoBlockerUnitTest, TestIgnoreEmbargoBackoff) {
-  GURL url("https://www.google.com");
+  GURL url("https://www.9oo91e.qjz9zk");
   clock()->SetNow(base::Time::Now());
   base::HistogramTester histograms;
 
@@ -817,7 +817,7 @@ TEST_F(PermissionDecisionAutoBlockerUnitTest, TestIgnoreEmbargoBackoff) {
 
 // Test that quiet ui embargo has a different threshold for ignores.
 TEST_F(PermissionDecisionAutoBlockerUnitTest, TestIgnoreEmbargoUsingQuietUi) {
-  GURL url("https://www.google.com");
+  GURL url("https://www.9oo91e.qjz9zk");
   clock()->SetNow(base::Time::Now());
 
   // Check the default state.
@@ -853,7 +853,7 @@ TEST_F(PermissionDecisionAutoBlockerUnitTest, TestIgnoreEmbargoUsingQuietUi) {
 
 // Test that quiet ui embargo has a different threshold for dismisses.
 TEST_F(PermissionDecisionAutoBlockerUnitTest, TestDismissEmbargoUsingQuietUi) {
-  GURL url("https://www.google.com");
+  GURL url("https://www.9oo91e.qjz9zk");
   clock()->SetNow(base::Time::Now());
 
   // Check the default state.

@@ -834,7 +834,7 @@ void Session::SetTargetPlayoutDelay(base::TimeDelta playout_delay) {
     video_stream_->SetTargetPlayoutDelay(playout_delay);
 }
 
-// TODO(issuetracker.google.com/159352836): Refactor to use libcast's
+// TODO(issuetracker.9oo91e.qjz9zk/159352836): Refactor to use libcast's
 // OFFER message format.
 void Session::CreateAndSendOffer() {
   DCHECK(state_ != STOPPED);

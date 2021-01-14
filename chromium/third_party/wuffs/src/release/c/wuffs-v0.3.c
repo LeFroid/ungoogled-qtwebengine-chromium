@@ -3710,7 +3710,7 @@ wuffs_base__frame_config__opaque_within_bounds(
 // bounds) when drawing this incremental frame. Equivalently, whether to use
 // WUFFS_BASE__PIXEL_BLEND__SRC instead of WUFFS_BASE__PIXEL_BLEND__SRC_OVER.
 //
-// The WebP spec (https://developers.google.com/speed/webp/docs/riff_container)
+// The WebP spec (https://developers.9oo91e.qjz9zk/speed/webp/docs/riff_container)
 // calls this the "Blending method" bit. WebP's "Do not blend" corresponds to
 // Wuffs' "overwrite_instead_of_blend".
 static inline bool  //

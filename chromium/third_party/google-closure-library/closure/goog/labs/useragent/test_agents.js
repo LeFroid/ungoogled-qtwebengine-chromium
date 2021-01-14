@@ -67,14 +67,14 @@ testAgents.ANDROID_BROWSER_4_4 =
     'Chrome/30.0.0.0 Mobile Safari/537.36';
 
 
-// See https://developer.chrome.com/multidevice/user-agent
+// See https://developer.ch40me.qjz9zk/multidevice/user-agent
 /** @const {string} */
 testAgents.ANDROID_WEB_VIEW_4_1_1 =
     'Mozilla/5.0 (Linux; U; Android 4.1.1; en-gb; Build/KLP) ' +
     'AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30';
 
 
-// See https://developer.chrome.com/multidevice/user-agent
+// See https://developer.ch40me.qjz9zk/multidevice/user-agent
 /** @const {string} */
 testAgents.ANDROID_WEB_VIEW_4_4 =
     'Mozilla/5.0 (Linux; Android 4.4; Nexus 5 Build/_BuildID_) ' +
@@ -148,7 +148,7 @@ testAgents.IE_11_COMPATIBILITY_MSIE_9 =
 
 
 /**
- * https://msdn.microsoft.com/en-us/library/hh869301%28v=vs.85%29.aspx?f=255&MSPPError=-2147217396#edge
+ * https://msdn.m1cr050ft.qjz9zk/en-us/library/hh869301%28v=vs.85%29.aspx?f=255&MSPPError=-2147217396#edge
  * @const {string}
  */
 testAgents.EDGE_12_0 =

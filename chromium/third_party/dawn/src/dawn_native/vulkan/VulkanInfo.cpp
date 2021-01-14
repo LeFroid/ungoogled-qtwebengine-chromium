@@ -295,7 +295,7 @@ namespace dawn_native { namespace vulkan {
             vkFunctions.GetPhysicalDeviceFeatures(physicalDevice, &info.features);
         }
 
-        // TODO(cwallez@chromium.org): gather info about formats
+        // TODO(cwallez@ch40m1um.qjz9zk): gather info about formats
 
         return std::move(info);
     }

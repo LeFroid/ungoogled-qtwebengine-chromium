@@ -390,7 +390,7 @@
     "message": "Suggested Token"
   },
   "lighthouse-core/audits/autocomplete.js | description": {
-    "message": "`autocomplete` helps users submit forms quicker. To reduce user effort, consider enabling by setting the `autocomplete` attribute to a valid value. [Learn more](https://developers.google.com/web/fundamentals/design-and-ux/input/forms#use_metadata_to_enable_auto-complete)"
+    "message": "`autocomplete` helps users submit forms quicker. To reduce user effort, consider enabling by setting the `autocomplete` attribute to a valid value. [Learn more](https://developers.9oo91e.qjz9zk/web/fundamentals/design-and-ux/input/forms#use_metadata_to_enable_auto-complete)"
   },
   "lighthouse-core/audits/autocomplete.js | failureTitle": {
     "message": "`<input>` elements do not have correct `autocomplete` attributes"
@@ -621,7 +621,7 @@
     "message": "Wartość"
   },
   "lighthouse-core/audits/dobetterweb/dom-size.js | description": {
-    "message": "Duży DOM zwiększy wykorzystanie pamięci, wydłuży [obliczanie stylów](https://developers.google.com/web/fundamentals/performance/rendering/reduce-the-scope-and-complexity-of-style-calculations) i spowoduje kosztowne [przeformatowania układu](https://developers.google.com/speed/articles/reflow). [Więcej informacji](https://web.dev/dom-size/)"
+    "message": "Duży DOM zwiększy wykorzystanie pamięci, wydłuży [obliczanie stylów](https://developers.9oo91e.qjz9zk/web/fundamentals/performance/rendering/reduce-the-scope-and-complexity-of-style-calculations) i spowoduje kosztowne [przeformatowania układu](https://developers.9oo91e.qjz9zk/speed/articles/reflow). [Więcej informacji](https://web.dev/dom-size/)"
   },
   "lighthouse-core/audits/dobetterweb/dom-size.js | displayValue": {
     "message": "{itemCount,plural, =1{1 element}few{# elementy}many{# elementów}other{# elementu}}"
@@ -834,7 +834,7 @@
     "message": "Obsługa żądań"
   },
   "lighthouse-core/audits/is-on-https.js | description": {
-    "message": "All sites should be protected with HTTPS, even ones that don't handle sensitive data. This includes avoiding [mixed content](https://developers.google.com/web/fundamentals/security/prevent-mixed-content/what-is-mixed-content), where some resources are loaded over HTTP despite the initial request being served over HTTPS. HTTPS prevents intruders from tampering with or passively listening in on the communications between your app and your users, and is a prerequisite for HTTP/2 and many new web platform APIs. [Learn more](https://web.dev/is-on-https/)."
+    "message": "All sites should be protected with HTTPS, even ones that don't handle sensitive data. This includes avoiding [mixed content](https://developers.9oo91e.qjz9zk/web/fundamentals/security/prevent-mixed-content/what-is-mixed-content), where some resources are loaded over HTTP despite the initial request being served over HTTPS. HTTPS prevents intruders from tampering with or passively listening in on the communications between your app and your users, and is a prerequisite for HTTP/2 and many new web platform APIs. [Learn more](https://web.dev/is-on-https/)."
   },
   "lighthouse-core/audits/is-on-https.js | displayValue": {
     "message": "{itemCount,plural, =1{Wykryto 1 niezabezpieczone żądanie}few{Wykryto # niezabezpieczone żądania}many{Wykryto # niezabezpieczonych żądań}other{Wykryto # niezabezpieczonego żądania}}"
@@ -855,7 +855,7 @@
     "message": "Biblioteka"
   },
   "lighthouse-core/audits/large-javascript-libraries.js | description": {
-    "message": "Duże biblioteki JavaScript mogą obniżać wydajność. Aby zmniejszyć rozmiar pakietu, korzystaj z mniejszych bibliotek z takimi samymi funkcjami. [Więcej informacji](https://developers.google.com/web/fundamentals/performance/webpack/decrease-frontend-size#optimize_dependencies)"
+    "message": "Duże biblioteki JavaScript mogą obniżać wydajność. Aby zmniejszyć rozmiar pakietu, korzystaj z mniejszych bibliotek z takimi samymi funkcjami. [Więcej informacji](https://developers.9oo91e.qjz9zk/web/fundamentals/performance/webpack/decrease-frontend-size#optimize_dependencies)"
   },
   "lighthouse-core/audits/large-javascript-libraries.js | displayValue": {
     "message": "{libraryCount,plural, =1{Znaleziono 1 dużą bibliotekę}few{Znaleziono # duże biblioteki}many{Znaleziono # dużych bibliotek}other{Znaleziono # dużej biblioteki}}"
@@ -990,7 +990,7 @@
     "message": "Opóźnienia backendu serwera"
   },
   "lighthouse-core/audits/no-unload-listeners.js | description": {
-    "message": "Zdarzenie `unload` nie zawsze jest uruchamiane prawidłowo, a wykrywanie go może uniemożliwić działanie mechanizmów optymalizujących pracę przeglądarki takich jak np. Back-Forward Cache. Rozważ używanie zdarzeń `pagehide` lub `visibilitychange`. [Więcej informacji](https://developers.google.com/web/updates/2018/07/page-lifecycle-api#the-unload-event)"
+    "message": "Zdarzenie `unload` nie zawsze jest uruchamiane prawidłowo, a wykrywanie go może uniemożliwić działanie mechanizmów optymalizujących pracę przeglądarki takich jak np. Back-Forward Cache. Rozważ używanie zdarzeń `pagehide` lub `visibilitychange`. [Więcej informacji](https://developers.9oo91e.qjz9zk/web/updates/2018/07/page-lifecycle-api#the-unload-event)"
   },
   "lighthouse-core/audits/no-unload-listeners.js | failureTitle": {
     "message": "Zarejestrowanie detektora zdarzeń `unload`"
@@ -1041,7 +1041,7 @@
     "message": "Narzędziu Lighthouse nie udało się odczytać elementu `start_url` z pliku manifestu. Dlatego uznano, że `start_url` to URL dokumentu. Komunikat o błędzie: „{manifestWarning}”."
   },
   "lighthouse-core/audits/performance-budget.js | description": {
-    "message": "Liczba ani rozmiar żądań sieciowych nie mogą przekraczać wartości określonych przez podany budżet wydajności. [Więcej informacji](https://developers.google.com/web/tools/lighthouse/audits/budgets)"
+    "message": "Liczba ani rozmiar żądań sieciowych nie mogą przekraczać wartości określonych przez podany budżet wydajności. [Więcej informacji](https://developers.9oo91e.qjz9zk/web/tools/lighthouse/audits/budgets)"
   },
   "lighthouse-core/audits/performance-budget.js | requestCountOverBudget": {
     "message": "{count,plural, =1{1 żądanie}few{# żądania}many{# żądań}other{# żądania}}"
@@ -1113,7 +1113,7 @@
     "message": "Link niemożliwy do zindeksowania"
   },
   "lighthouse-core/audits/seo/crawlable-anchors.js | description": {
-    "message": "Wyszukiwarki mogą korzystać z atrybutów `href` w linkach, by móc indeksować witryny. Upewnij się, że atrybut `href` zakotwiczonych elementów prowadzi do odpowiedniego miejsca docelowego, by możliwe było odnalezienie większej liczby stron w witrynie. [Więcej informacji](https://support.google.com/webmasters/answer/9112205)"
+    "message": "Wyszukiwarki mogą korzystać z atrybutów `href` w linkach, by móc indeksować witryny. Upewnij się, że atrybut `href` zakotwiczonych elementów prowadzi do odpowiedniego miejsca docelowego, by możliwe było odnalezienie większej liczby stron w witrynie. [Więcej informacji](https://support.9oo91e.qjz9zk/webmasters/answer/9112205)"
   },
   "lighthouse-core/audits/seo/crawlable-anchors.js | failureTitle": {
     "message": "Linków  nie  można zindeksować"
@@ -1197,7 +1197,7 @@
     "message": "Linki mają tekst opisowy"
   },
   "lighthouse-core/audits/seo/manual/structured-data.js | description": {
-    "message": "Uruchom [Narzędzie do testowania uporządkowanych danych](https://search.google.com/structured-data/testing-tool/) i narzędzie [Structured Data Linter](http://linter.structured-data.org/), by sprawdzić uporządkowane dane. [Więcej informacji](https://web.dev/structured-data/)"
+    "message": "Uruchom [Narzędzie do testowania uporządkowanych danych](https://search.9oo91e.qjz9zk/structured-data/testing-tool/) i narzędzie [Structured Data Linter](http://linter.structured-data.org/), by sprawdzić uporządkowane dane. [Więcej informacji](https://web.dev/structured-data/)"
   },
   "lighthouse-core/audits/seo/manual/structured-data.js | title": {
     "message": "Uporządkowane dane są prawidłowe"
@@ -1320,7 +1320,7 @@
     "message": "Dostawca zewnętrzny"
   },
   "lighthouse-core/audits/third-party-summary.js | description": {
-    "message": "Kod spoza witryny może znacznie spowalniać wczytywanie stron. Ogranicz liczbę zewnętrznych dostawców kodu i spróbuj wczytywać kod spoza witryny dopiero po zakończeniu wczytywania podstawowej strony. [Więcej informacji](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/loading-third-party-javascript/)"
+    "message": "Kod spoza witryny może znacznie spowalniać wczytywanie stron. Ogranicz liczbę zewnętrznych dostawców kodu i spróbuj wczytywać kod spoza witryny dopiero po zakończeniu wczytywania podstawowej strony. [Więcej informacji](https://developers.9oo91e.qjz9zk/web/fundamentals/performance/optimizing-content-efficiency/loading-third-party-javascript/)"
   },
   "lighthouse-core/audits/third-party-summary.js | displayValue": {
     "message": "Kod spoza witryny zablokował główny wątek na {timeInMs, number, milliseconds} ms"
@@ -1341,7 +1341,7 @@
     "message": "Dane"
   },
   "lighthouse-core/audits/timing-budget.js | description": {
-    "message": "Ustaw budżet czasowy, by łatwiej monitorować wydajność witryny. Wydajne strony szybko się ładują i reagują na zdarzenia wejściowe użytkowników. [Więcej informacji](https://developers.google.com/web/tools/lighthouse/audits/budgets)"
+    "message": "Ustaw budżet czasowy, by łatwiej monitorować wydajność witryny. Wydajne strony szybko się ładują i reagują na zdarzenia wejściowe użytkowników. [Więcej informacji](https://developers.9oo91e.qjz9zk/web/tools/lighthouse/audits/budgets)"
   },
   "lighthouse-core/audits/timing-budget.js | title": {
     "message": "Budżet czasowy"
@@ -1395,7 +1395,7 @@
     "message": "URL mapy"
   },
   "lighthouse-core/audits/valid-source-maps.js | description": {
-    "message": "Mapy źródeł tłumaczą zminifikowany kod na oryginalny kod źródłowy. Ułatwia to programistom debugowanie w środowisku produkcyjnym. Oprócz tego Lighthouse może udostępniać dodatkowe statystyki. Warto wdrożyć mapy źródeł, aby korzystać z tych możliwości. [Więcej informacji](https://developers.google.com/web/tools/chrome-devtools/javascript/source-maps)"
+    "message": "Mapy źródeł tłumaczą zminifikowany kod na oryginalny kod źródłowy. Ułatwia to programistom debugowanie w środowisku produkcyjnym. Oprócz tego Lighthouse może udostępniać dodatkowe statystyki. Warto wdrożyć mapy źródeł, aby korzystać z tych możliwości. [Więcej informacji](https://developers.9oo91e.qjz9zk/web/tools/chrome-devtools/javascript/source-maps)"
   },
   "lighthouse-core/audits/valid-source-maps.js | failureTitle": {
     "message": "Brakuje map źródeł dla własnych dużych plików JavaScript"
@@ -1464,10 +1464,10 @@
     "message": "Sprawdzone metody"
   },
   "lighthouse-core/config/default-config.js | a11yCategoryDescription": {
-    "message": "Te testy wskazują możliwości [poprawy ułatwień dostępu Twojej aplikacji internetowej](https://developers.google.com/web/fundamentals/accessibility). Ponieważ wykryć automatycznie można tylko część problemów z ułatwieniami dostępu, wskazane jest przeprowadzenie też testów ręcznych."
+    "message": "Te testy wskazują możliwości [poprawy ułatwień dostępu Twojej aplikacji internetowej](https://developers.9oo91e.qjz9zk/web/fundamentals/accessibility). Ponieważ wykryć automatycznie można tylko część problemów z ułatwieniami dostępu, wskazane jest przeprowadzenie też testów ręcznych."
   },
   "lighthouse-core/config/default-config.js | a11yCategoryManualDescription": {
-    "message": "Te pozycje dotyczą obszarów, których narzędzie do testów automatycznych nie może zbadać. Więcej informacji w naszym przewodniku po [prowadzeniu przeglądu ułatwień dostępu](https://developers.google.com/web/fundamentals/accessibility/how-to-review)."
+    "message": "Te pozycje dotyczą obszarów, których narzędzie do testów automatycznych nie może zbadać. Więcej informacji w naszym przewodniku po [prowadzeniu przeglądu ułatwień dostępu](https://developers.9oo91e.qjz9zk/web/fundamentals/accessibility/how-to-review)."
   },
   "lighthouse-core/config/default-config.js | a11yCategoryTitle": {
     "message": "Ułatwienia dostępu"
@@ -1554,10 +1554,10 @@
     "message": "Wydajność"
   },
   "lighthouse-core/config/default-config.js | pwaCategoryDescription": {
-    "message": "Te testy służą do sprawdzenia różnych aspektów progresywnej aplikacji internetowej. [Więcej informacji](https://developers.google.com/web/progressive-web-apps/checklist)"
+    "message": "Te testy służą do sprawdzenia różnych aspektów progresywnej aplikacji internetowej. [Więcej informacji](https://developers.9oo91e.qjz9zk/web/progressive-web-apps/checklist)"
   },
   "lighthouse-core/config/default-config.js | pwaCategoryManualDescription": {
-    "message": "Te testy są wymagane w ramach podstawowej [listy kontrolnej PWA](https://developers.google.com/web/progressive-web-apps/checklist), ale narzędzie Lighthouse nie przeprowadza ich automatycznie. Nie mają wpływu na wynik, ale należy pamiętać o wykonaniu ich ręcznie."
+    "message": "Te testy są wymagane w ramach podstawowej [listy kontrolnej PWA](https://developers.9oo91e.qjz9zk/web/progressive-web-apps/checklist), ale narzędzie Lighthouse nie przeprowadza ich automatycznie. Nie mają wpływu na wynik, ale należy pamiętać o wykonaniu ich ręcznie."
   },
   "lighthouse-core/config/default-config.js | pwaCategoryTitle": {
     "message": "Progresywna aplikacja internetowa"
@@ -1572,7 +1572,7 @@
     "message": "Optymalizacja dla PWA"
   },
   "lighthouse-core/config/default-config.js | seoCategoryDescription": {
-    "message": "Te testy sprawdzają, czy strona jest zoptymalizowana pod kątem rankingu wyników wyszukiwarki. Na ranking mogą wpływać inne czynniki, których Lighthouse nie sprawdza. [Więcej informacji](https://support.google.com/webmasters/answer/35769)"
+    "message": "Te testy sprawdzają, czy strona jest zoptymalizowana pod kątem rankingu wyników wyszukiwarki. Na ranking mogą wpływać inne czynniki, których Lighthouse nie sprawdza. [Więcej informacji](https://support.9oo91e.qjz9zk/webmasters/answer/35769)"
   },
   "lighthouse-core/config/default-config.js | seoCategoryManualDescription": {
     "message": "Uruchom te dodatkowe walidatory w swojej witrynie, by skontrolować więcej sprawdzonych metod SEO."
@@ -1593,7 +1593,7 @@
     "message": "Skanowanie i indeksowanie"
   },
   "lighthouse-core/config/default-config.js | seoMobileGroupDescription": {
-    "message": "Dostosuj strony do komórek, by użytkownicy nie musieli pomniejszać ani powiększać ekranu, gdy będą chcieli coś przeczytać. [Więcej informacji](https://developers.google.com/search/mobile-sites/)"
+    "message": "Dostosuj strony do komórek, by użytkownicy nie musieli pomniejszać ani powiększać ekranu, gdy będą chcieli coś przeczytać. [Więcej informacji](https://developers.9oo91e.qjz9zk/search/mobile-sites/)"
   },
   "lighthouse-core/config/default-config.js | seoMobileGroupTitle": {
     "message": "Na komórki"
@@ -1836,7 +1836,7 @@
     "message": "Dane laboratoryjne"
   },
   "lighthouse-core/report/html/renderer/util.js | lsPerformanceCategoryDescription": {
-    "message": "Bieżąca strona została przeanalizowana przez narzędzie [Lighthouse](https://developers.google.com/web/tools/lighthouse/) wraz z emulacją sieci komórkowej. Wartości są szacunkowe i mogą się zmieniać."
+    "message": "Bieżąca strona została przeanalizowana przez narzędzie [Lighthouse](https://developers.9oo91e.qjz9zk/web/tools/lighthouse/) wraz z emulacją sieci komórkowej. Wartości są szacunkowe i mogą się zmieniać."
   },
   "lighthouse-core/report/html/renderer/util.js | manualAuditsGroupTitle": {
     "message": "Dodatkowe elementy do ręcznego sprawdzenia"
@@ -1983,10 +1983,10 @@
     "message": "Musisz mieć włączoną opcję „Aggregate JavaScript files” (Agreguj pliki JavaScript) na stronie „Administration » Configuration » Development” (Administracja » Konfiguracja » Programowanie). Istnieją też [dodatkowe moduły](https://www.drupal.org/project/project_module?f%5B0%5D=&f%5B1%5D=&f%5B2%5D=im_vid_3%3A123&f%5B3%5D=&f%5B4%5D=sm_field_project_type%3Afull&f%5B5%5D=&f%5B6%5D=&text=javascript+aggregation&solrsort=iss_project_release_usage+desc&op=Search), za pomocą których możesz skonfigurować bardziej zaawansowane opcje agregacji, aby przyspieszyć działanie strony dzięki konkatenacji, minifikacji i kompresji plików JavaScript."
   },
   "node_modules/lighthouse-stack-packs/packs/drupal.js | unused-css-rules": {
-    "message": "Sugerujemy usunięcie nieużywanych reguł CSS i dołączenie bibliotek Drupala tylko do tych stron lub komponentów na stronach, które ich potrzebują. Szczegółowe informacje znajdziesz w [dokumentacji Drupala](https://www.drupal.org/docs/8/creating-custom-modules/adding-stylesheets-css-and-javascript-js-to-a-drupal-8-module#library). Aby zidentyfikować dołączone biblioteki, które dodają nieistotny kod CSS, uruchom [zasięg kodu](https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverage) w Chrome DevTools. Motyw/moduł, który dołącza te biblioteki, możesz zidentyfikować na podstawie adresu URL arkusza stylów, gdy witryna Drupala ma wyłączoną agregację kodu CSS. Szukaj motywów/modułów, które mają na liście wiele arkuszy stylów z dużą ilością czerwonego koloru w zasięgu kodu. Motyw/moduł powinien umieszczać arkusz stylów w kolejce tylko wtedy, gdy rzeczywiście jest on używany na stronie."
+    "message": "Sugerujemy usunięcie nieużywanych reguł CSS i dołączenie bibliotek Drupala tylko do tych stron lub komponentów na stronach, które ich potrzebują. Szczegółowe informacje znajdziesz w [dokumentacji Drupala](https://www.drupal.org/docs/8/creating-custom-modules/adding-stylesheets-css-and-javascript-js-to-a-drupal-8-module#library). Aby zidentyfikować dołączone biblioteki, które dodają nieistotny kod CSS, uruchom [zasięg kodu](https://developers.9oo91e.qjz9zk/web/updates/2017/04/devtools-release-notes#coverage) w Chrome DevTools. Motyw/moduł, który dołącza te biblioteki, możesz zidentyfikować na podstawie adresu URL arkusza stylów, gdy witryna Drupala ma wyłączoną agregację kodu CSS. Szukaj motywów/modułów, które mają na liście wiele arkuszy stylów z dużą ilością czerwonego koloru w zasięgu kodu. Motyw/moduł powinien umieszczać arkusz stylów w kolejce tylko wtedy, gdy rzeczywiście jest on używany na stronie."
   },
   "node_modules/lighthouse-stack-packs/packs/drupal.js | unused-javascript": {
-    "message": "Consider removing unused JavaScript assets and only attach the needed Drupal libraries to the relevant page or component in a page. See the [Drupal documentation link](https://www.drupal.org/docs/8/creating-custom-modules/adding-stylesheets-css-and-javascript-js-to-a-drupal-8-module#library) for details. To identify attached libraries that are adding extraneous JavaScript, try running [code coverage](https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverage) in Chrome DevTools. You can identify the theme/module responsible from the URL of the script when JavaScript aggregation is disabled in your Drupal site. Look out for themes/modules that have many scripts in the list which have a lot of red in code coverage. A theme/module should only enqueue a script if it is actually used on the page."
+    "message": "Consider removing unused JavaScript assets and only attach the needed Drupal libraries to the relevant page or component in a page. See the [Drupal documentation link](https://www.drupal.org/docs/8/creating-custom-modules/adding-stylesheets-css-and-javascript-js-to-a-drupal-8-module#library) for details. To identify attached libraries that are adding extraneous JavaScript, try running [code coverage](https://developers.9oo91e.qjz9zk/web/updates/2017/04/devtools-release-notes#coverage) in Chrome DevTools. You can identify the theme/module responsible from the URL of the script when JavaScript aggregation is disabled in your Drupal site. Look out for themes/modules that have many scripts in the list which have a lot of red in code coverage. A theme/module should only enqueue a script if it is actually used on the page."
   },
   "node_modules/lighthouse-stack-packs/packs/drupal.js | uses-long-cache-ttl": {
     "message": "Ustaw opcję „Browser and proxy cache maximum age” (Maksymalny wiek przeglądarki i pamięci podręcznej serwera proxy) na stronie „Administration » Configuration » Development” (Administracja » Konfiguracja » Programowanie). Przeczytaj artykuł o [pamięci podręcznej Drupala i optymalizacji w celu zwiększenia wydajności](https://www.drupal.org/docs/7/managing-site-performance-and-scalability/caching-to-improve-performance/caching-overview#s-drupal-performance-resources)."
@@ -2025,10 +2025,10 @@
     "message": "Kilka [rozszerzeń Joomli](https://extensions.joomla.org/instant-search/?jed_live%5Bquery%5D=performance) może przyspieszyć działanie strony dzięki konkatenacji, minifikacji i kompresji skryptów. Istnieją też szablony z takimi funkcjami."
   },
   "node_modules/lighthouse-stack-packs/packs/joomla.js | unused-css-rules": {
-    "message": "Dobrym rozwiązaniem może być ograniczenie liczby [rozszerzeń Joomli](https://extensions.joomla.org/) wczytujących na stronie nieużywany kod CSS albo zmiana tych wtyczek na inne. Aby zidentyfikować rozszerzenia, które dodają nieistotny kod CSS, uruchom [zasięg kodu](https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverage) w Chrome DevTools. Możesz zidentyfikować taki motyw/wtyczkę w adresie URL arkusza stylów. Szukaj wtyczek, które mają na liście wiele arkuszy stylów z dużą ilością czerwonego koloru w zasięgu kodu. Wtyczka powinna umieszczać arkusz stylów w kolejce tylko wtedy, gdy rzeczywiście jest on używany na stronie."
+    "message": "Dobrym rozwiązaniem może być ograniczenie liczby [rozszerzeń Joomli](https://extensions.joomla.org/) wczytujących na stronie nieużywany kod CSS albo zmiana tych wtyczek na inne. Aby zidentyfikować rozszerzenia, które dodają nieistotny kod CSS, uruchom [zasięg kodu](https://developers.9oo91e.qjz9zk/web/updates/2017/04/devtools-release-notes#coverage) w Chrome DevTools. Możesz zidentyfikować taki motyw/wtyczkę w adresie URL arkusza stylów. Szukaj wtyczek, które mają na liście wiele arkuszy stylów z dużą ilością czerwonego koloru w zasięgu kodu. Wtyczka powinna umieszczać arkusz stylów w kolejce tylko wtedy, gdy rzeczywiście jest on używany na stronie."
   },
   "node_modules/lighthouse-stack-packs/packs/joomla.js | unused-javascript": {
-    "message": "Dobrym rozwiązaniem może być ograniczenie liczby [rozszerzeń Joomli](https://extensions.joomla.org/) wczytujących na stronie nieużywany kod JavaScript albo zmiana tych wtyczek na inne. Aby zidentyfikować wtyczki, które dodają nieistotny kod JS, uruchom [zasięg kodu](https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverage) w Chrome DevTools. Możesz zidentyfikować takie rozszerzenie na podstawie adresu URL skryptu. Szukaj rozszerzeń, które mają na liście wiele skryptów z dużą ilością czerwonego koloru w zasięgu kodu. Rozszerzenie powinno umieszczać skrypt w kolejce tylko wtedy, gdy rzeczywiście jest on używany na stronie."
+    "message": "Dobrym rozwiązaniem może być ograniczenie liczby [rozszerzeń Joomli](https://extensions.joomla.org/) wczytujących na stronie nieużywany kod JavaScript albo zmiana tych wtyczek na inne. Aby zidentyfikować wtyczki, które dodają nieistotny kod JS, uruchom [zasięg kodu](https://developers.9oo91e.qjz9zk/web/updates/2017/04/devtools-release-notes#coverage) w Chrome DevTools. Możesz zidentyfikować takie rozszerzenie na podstawie adresu URL skryptu. Szukaj rozszerzeń, które mają na liście wiele skryptów z dużą ilością czerwonego koloru w zasięgu kodu. Rozszerzenie powinno umieszczać skrypt w kolejce tylko wtedy, gdy rzeczywiście jest on używany na stronie."
   },
   "node_modules/lighthouse-stack-packs/packs/joomla.js | uses-long-cache-ttl": {
     "message": "Dowiedz się więcej o [pamięci podręcznej przeglądarki w Joomli](https://docs.joomla.org/Cache)."
@@ -2124,10 +2124,10 @@
     "message": "Kilka [wtyczek WordPressa](https://wordpress.org/plugins/search/minify+javascript/) może przyśpieszyć działanie strony dzięki konkatenacji, minifikacji i kompresji skryptów. Jeśli masz taką możliwość, przeprowadź minifikację, zanim opublikujesz skrypty."
   },
   "node_modules/lighthouse-stack-packs/packs/wordpress.js | unused-css-rules": {
-    "message": "Dobrym rozwiązaniem może być ograniczenie liczby [wtyczek WordPressa](https://wordpress.org/plugins/) wczytujących na stronie nieużywany kod CSS albo zmiana tych wtyczek na inne. Aby zidentyfikować wtyczki, które dodają nieistotny kod CSS, uruchom [zasięg kodu](https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverage) w Chrome DevTools. Możesz zidentyfikować taki motyw/wtyczkę w adresie URL arkusza stylów. Szukaj wtyczek, które mają na liście wiele arkuszy stylów z dużą ilością czerwonego koloru w zasięgu kodu. Wtyczka powinna umieszczać arkusz stylów w kolejce tylko wtedy, gdy rzeczywiście jest on używany na stronie."
+    "message": "Dobrym rozwiązaniem może być ograniczenie liczby [wtyczek WordPressa](https://wordpress.org/plugins/) wczytujących na stronie nieużywany kod CSS albo zmiana tych wtyczek na inne. Aby zidentyfikować wtyczki, które dodają nieistotny kod CSS, uruchom [zasięg kodu](https://developers.9oo91e.qjz9zk/web/updates/2017/04/devtools-release-notes#coverage) w Chrome DevTools. Możesz zidentyfikować taki motyw/wtyczkę w adresie URL arkusza stylów. Szukaj wtyczek, które mają na liście wiele arkuszy stylów z dużą ilością czerwonego koloru w zasięgu kodu. Wtyczka powinna umieszczać arkusz stylów w kolejce tylko wtedy, gdy rzeczywiście jest on używany na stronie."
   },
   "node_modules/lighthouse-stack-packs/packs/wordpress.js | unused-javascript": {
-    "message": "Dobrym rozwiązaniem może być ograniczenie liczby [wtyczek WordPressa](https://wordpress.org/plugins/) wczytujących na stronie nieużywany kod JavaScript albo zmiana tych wtyczek na inne. Aby zidentyfikować wtyczki, które dodają nieistotny kod JS, uruchom [zasięg kodu](https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverage) w Chrome DevTools. Możesz zidentyfikować taki motyw/wtyczkę w adresie URL skryptu. Szukaj wtyczek, które mają na liście wiele skryptów z dużą ilością czerwonego koloru w zasięgu kodu. Wtyczka powinna umieszczać skrypt w kolejce, tylko jeśli rzeczywiście jest on używany na stronie."
+    "message": "Dobrym rozwiązaniem może być ograniczenie liczby [wtyczek WordPressa](https://wordpress.org/plugins/) wczytujących na stronie nieużywany kod JavaScript albo zmiana tych wtyczek na inne. Aby zidentyfikować wtyczki, które dodają nieistotny kod JS, uruchom [zasięg kodu](https://developers.9oo91e.qjz9zk/web/updates/2017/04/devtools-release-notes#coverage) w Chrome DevTools. Możesz zidentyfikować taki motyw/wtyczkę w adresie URL skryptu. Szukaj wtyczek, które mają na liście wiele skryptów z dużą ilością czerwonego koloru w zasięgu kodu. Wtyczka powinna umieszczać skrypt w kolejce, tylko jeśli rzeczywiście jest on używany na stronie."
   },
   "node_modules/lighthouse-stack-packs/packs/wordpress.js | uses-long-cache-ttl": {
     "message": "Dowiedz się więcej o [pamięci podręcznej przeglądarki w WordPressie](https://wordpress.org/support/article/optimization/#browser-caching)."

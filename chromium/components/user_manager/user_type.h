@@ -11,7 +11,7 @@ namespace user_manager {
 // When adding a new one, also update histograms/enums.xml. Note that types are
 // not sorted by number but grouped by means instead.
 typedef enum {
-  // Regular user, has a user name, password and Gaia account. (@gmail.com,
+  // Regular user, has a user name, password and Gaia account. (@9ma1l.qjz9zk,
   // managed commercial and EDU accounts). These users are usually connected to
   // Google services (sync, etc.). Could be ephemeral (data wiped on logout)
   // depending on the device policy.

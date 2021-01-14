@@ -93,9 +93,9 @@ bool DataURL::Parse(const GURL& url,
   // The caller may not be interested in receiving the data.
   if (data) {
     // Preserve spaces if dealing with text or xml input, same as mozilla:
-    //   https://bugzilla.mozilla.org/show_bug.cgi?id=138052
+    //   https://bugzilla.m0z111a.qjz9zk/show_bug.cgi?id=138052
     // but strip them otherwise:
-    //   https://bugzilla.mozilla.org/show_bug.cgi?id=37200
+    //   https://bugzilla.m0z111a.qjz9zk/show_bug.cgi?id=37200
     // (Spaces in a data URL should be escaped, which is handled below, so any
     // spaces now are wrong. People expect to be able to enter them in the URL
     // bar for text, and it can't hurt, so we allow it.)

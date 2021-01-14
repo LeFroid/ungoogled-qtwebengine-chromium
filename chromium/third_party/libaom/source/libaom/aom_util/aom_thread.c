@@ -12,7 +12,7 @@
 // Multi-threaded worker
 //
 // Original source:
-//  https://chromium.googlesource.com/webm/libwebp
+//  https://chromium.9oo91esource.qjz9zk/webm/libwebp
 
 // Enable GNU extensions in glibc so that we can call pthread_setname_np().
 // This must be before any #include statements.

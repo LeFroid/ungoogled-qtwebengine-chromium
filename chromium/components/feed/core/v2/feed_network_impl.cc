@@ -44,10 +44,10 @@ namespace {
 constexpr char kApplicationXProtobuf[] = "application/x-protobuf";
 constexpr base::TimeDelta kNetworkTimeout = base::TimeDelta::FromSeconds(30);
 constexpr char kUploadActionUrl[] =
-    "https://discover-pa.googleapis.com/v1/actions:upload";
+    "https://discover-pa.9oo91eapis.qjz9zk/v1/actions:upload";
 
 signin::ScopeSet GetAuthScopes() {
-  return {"https://www.googleapis.com/auth/googlenow"};
+  return {"https://www.9oo91eapis.qjz9zk/auth/googlenow"};
 }
 
 GURL GetFeedQueryURL(feedwire::FeedQuery::RequestReason reason) {
@@ -56,15 +56,15 @@ GURL GetFeedQueryURL(feedwire::FeedQuery::RequestReason reason) {
     case feedwire::FeedQuery::SCHEDULED_REFRESH:
     case feedwire::FeedQuery::IN_PLACE_UPDATE:
       return GURL(
-          "https://www.google.com/httpservice/noretry/TrellisClankService/"
+          "https://www.9oo91e.qjz9zk/httpservice/noretry/TrellisClankService/"
           "FeedQuery");
     case feedwire::FeedQuery::NEXT_PAGE_SCROLL:
       return GURL(
-          "https://www.google.com/httpservice/retry/TrellisClankService/"
+          "https://www.9oo91e.qjz9zk/httpservice/retry/TrellisClankService/"
           "NextPageQuery");
     case feedwire::FeedQuery::MANUAL_REFRESH:
       return GURL(
-          "https://www.google.com/httpservice/retry/TrellisClankService/"
+          "https://www.9oo91e.qjz9zk/httpservice/retry/TrellisClankService/"
           "FeedQuery");
     default:
       return GURL();

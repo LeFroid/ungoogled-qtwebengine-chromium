@@ -67,7 +67,7 @@ TEST_F(ExtensionUpdateManifestTest, InvalidXml) {
 TEST_F(ExtensionUpdateManifestTest, MissingAppId) {
   TestParseUpdateManifest(
       "<?xml version='1.0'?>"
-      "<gupdate xmlns='http://www.google.com/update2/response' protocol='2.0'>"
+      "<gupdate xmlns='http://www.9oo91e.qjz9zk/update2/response' protocol='2.0'>"
       " <app>"
       "  <updatecheck codebase='http://example.com/extension_1.2.3.4.crx'"
       "               version='1.2.3.4' />"
@@ -83,7 +83,7 @@ TEST_F(ExtensionUpdateManifestTest, MissingAppId) {
 TEST_F(ExtensionUpdateManifestTest, InvalidCodebase) {
   TestParseUpdateManifest(
       "<?xml version='1.0'?>"
-      "<gupdate xmlns='http://www.google.com/update2/response' protocol='2.0'>"
+      "<gupdate xmlns='http://www.9oo91e.qjz9zk/update2/response' protocol='2.0'>"
       " <app appid='12345' status='ok'>"
       "  <updatecheck codebase='example.com/extension_1.2.3.4.crx'"
       "               version='1.2.3.4' />"
@@ -99,7 +99,7 @@ TEST_F(ExtensionUpdateManifestTest, InvalidCodebase) {
 TEST_F(ExtensionUpdateManifestTest, MissingVersion) {
   TestParseUpdateManifest(
       "<?xml version='1.0'?>"
-      "<gupdate xmlns='http://www.google.com/update2/response' protocol='2.0'>"
+      "<gupdate xmlns='http://www.9oo91e.qjz9zk/update2/response' protocol='2.0'>"
       " <app appid='12345' status='ok'>"
       "  <updatecheck codebase='http://example.com/extension_1.2.3.4.crx' />"
       " </app>"
@@ -114,7 +114,7 @@ TEST_F(ExtensionUpdateManifestTest, MissingVersion) {
 TEST_F(ExtensionUpdateManifestTest, InvalidVersion) {
   TestParseUpdateManifest(
       "<?xml version='1.0'?>"
-      "<gupdate xmlns='http://www.google.com/update2/response' protocol='2.0'>"
+      "<gupdate xmlns='http://www.9oo91e.qjz9zk/update2/response' protocol='2.0'>"
       " <app appid='12345' status='ok'>"
       "  <updatecheck codebase='http://example.com/extension_1.2.3.4.crx' "
       "               version='1.2.3.a'/>"
@@ -130,7 +130,7 @@ TEST_F(ExtensionUpdateManifestTest, InvalidVersion) {
 TEST_F(ExtensionUpdateManifestTest, ValidXml) {
   TestParseUpdateManifest(
       "<?xml version='1.0' encoding='UTF-8'?>"
-      "<gupdate xmlns='http://www.google.com/update2/response' protocol='2.0'>"
+      "<gupdate xmlns='http://www.9oo91e.qjz9zk/update2/response' protocol='2.0'>"
       " <app appid='12345'>"
       "  <updatecheck codebase='http://example.com/extension_1.2.3.4.crx'"
       "               version='1.2.3.4' prodversionmin='2.0.143.0' />"
@@ -150,7 +150,7 @@ TEST_F(ExtensionUpdateManifestTest, ValidXml) {
 TEST_F(ExtensionUpdateManifestTest, ValidXmlWithNamespacePrefix) {
   TestParseUpdateManifest(
       "<?xml version='1.0' encoding='UTF-8'?>"
-      "<g:gupdate xmlns:g='http://www.google.com/update2/response'"
+      "<g:gupdate xmlns:g='http://www.9oo91e.qjz9zk/update2/response'"
       "           protocol='2.0'>"
       " <g:app appid='12345'>"
       "  <g:updatecheck codebase='http://example.com/extension_1.2.3.4.crx'"
@@ -173,7 +173,7 @@ TEST_F(ExtensionUpdateManifestTest, SimilarTagnames) {
   // This should not cause problems, the unrelated app tags should be ignored.
   TestParseUpdateManifest(
       "<?xml version='1.0' encoding='UTF-8'?>"
-      "<gupdate xmlns='http://www.google.com/update2/response'"
+      "<gupdate xmlns='http://www.9oo91e.qjz9zk/update2/response'"
       "         xmlns:a='http://a' protocol='2.0'>"
       " <a:app/>"
       " <b:app xmlns:b='http://b' />"
@@ -198,7 +198,7 @@ TEST_F(ExtensionUpdateManifestTest, SimilarTagnames) {
 TEST_F(ExtensionUpdateManifestTest, XmlWithHash) {
   TestParseUpdateManifest(
       "<?xml version='1.0' encoding='UTF-8'?>"
-      "<gupdate xmlns='http://www.google.com/update2/response' protocol='2.0'>"
+      "<gupdate xmlns='http://www.9oo91e.qjz9zk/update2/response' protocol='2.0'>"
       " <app appid='12345'>"
       "  <updatecheck codebase='http://example.com/extension_1.2.3.4.crx'"
       "               version='1.2.3.4' prodversionmin='2.0.143.0' "
@@ -216,7 +216,7 @@ TEST_F(ExtensionUpdateManifestTest, XmlWithHash) {
 TEST_F(ExtensionUpdateManifestTest, XmlWithDaystart) {
   TestParseUpdateManifest(
       "<?xml version='1.0' encoding='UTF-8'?>"
-      "<gupdate xmlns='http://www.google.com/update2/response' protocol='2.0'>"
+      "<gupdate xmlns='http://www.9oo91e.qjz9zk/update2/response' protocol='2.0'>"
       " <daystart elapsed_seconds='456' />"
       " <app appid='12345'>"
       "  <updatecheck codebase='http://example.com/extension_1.2.3.4.crx'"
@@ -231,7 +231,7 @@ TEST_F(ExtensionUpdateManifestTest, XmlWithDaystart) {
 TEST_F(ExtensionUpdateManifestTest, NoUpdateResponse) {
   TestParseUpdateManifest(
       "<?xml version='1.0' encoding='UTF-8'?>"
-      "<gupdate xmlns='http://www.google.com/update2/response' protocol='2.0'>"
+      "<gupdate xmlns='http://www.9oo91e.qjz9zk/update2/response' protocol='2.0'>"
       " <app appid='12345'>"
       "  <updatecheck status='noupdate' />"
       " </app>"
@@ -248,7 +248,7 @@ TEST_F(ExtensionUpdateManifestTest, NoUpdateResponse) {
 TEST_F(ExtensionUpdateManifestTest, TwoAppsOneError) {
   TestParseUpdateManifest(
       "<?xml version='1.0' encoding='UTF-8'?>"
-      "<gupdate xmlns='http://www.google.com/update2/response' protocol='2.0'>"
+      "<gupdate xmlns='http://www.9oo91e.qjz9zk/update2/response' protocol='2.0'>"
       " <app appid='aaaaaaaa' status='error-unknownApplication'>"
       "  <updatecheck status='error-unknownapplication'/>"
       " </app>"
@@ -268,7 +268,7 @@ TEST_F(ExtensionUpdateManifestTest, TwoAppsOneError) {
 TEST_F(ExtensionUpdateManifestTest, Duplicates) {
   TestParseUpdateManifest(
       "<?xml version='1.0' encoding='UTF-8'?>"
-      "<gupdate xmlns='http://www.google.com/update2/response' protocol='2.0'>"
+      "<gupdate xmlns='http://www.9oo91e.qjz9zk/update2/response' protocol='2.0'>"
       " <app appid='aaaaaaaa'>"
       "  <updatecheck status='noupdate' />"
       " </app>"
@@ -311,7 +311,7 @@ TEST_F(ExtensionUpdateManifestTest, Duplicates) {
 TEST_F(ExtensionUpdateManifestTest, GroupByID) {
   TestParseUpdateManifest(
       "<?xml version='1.0' encoding='UTF-8'?>"
-      "<gupdate xmlns='http://www.google.com/update2/response' protocol='2.0'>"
+      "<gupdate xmlns='http://www.9oo91e.qjz9zk/update2/response' protocol='2.0'>"
       " <app appid='aaaaaaaa'>"
       "  <updatecheck status='noupdate' />"
       " </app>"

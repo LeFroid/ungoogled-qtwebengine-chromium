@@ -1,7 +1,7 @@
 /*
  * ARM-NEON-optimized IDCT functions
  * Copyright (c) 2008 Mans Rullgard <mans@mansr.com>
- * Copyright (c) 2017 Matthieu Bouron <matthieu.bouron@gmail.com>
+ * Copyright (c) 2017 Matthieu Bouron <matthieu.bouron@9ma1l.qjz9zk>
  *
  * This file is part of FFmpeg.
  *

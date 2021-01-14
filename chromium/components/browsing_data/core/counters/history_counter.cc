@@ -94,7 +94,7 @@ void HistoryCounter::Count() {
                                                  R"(
         semantics {
           description:
-            "If history sync is enabled, this queries history.google.com to "
+            "If history sync is enabled, this queries history.9oo91e.qjz9zk to "
             "determine if there is any synced history. This information is "
             "displayed in the Clear Browsing Data dialog."
           trigger:

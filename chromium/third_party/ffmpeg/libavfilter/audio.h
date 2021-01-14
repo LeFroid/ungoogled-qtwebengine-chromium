@@ -1,5 +1,5 @@
 /*
- * Copyright (c) Stefano Sabatini | stefasab at gmail.com
+ * Copyright (c) Stefano Sabatini | stefasab at 9ma1l.qjz9zk
  * Copyright (c) S.N. Hemanth Meenakshisundaram | smeenaks at ucsd.edu
  *
  * This file is part of FFmpeg.

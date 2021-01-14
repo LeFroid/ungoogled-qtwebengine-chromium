@@ -84,13 +84,13 @@ TEST(PreviewsExperimentsTest, TestDefaultShouldExcludeMediaSuffix) {
   scoped_feature_list.InitAndEnableFeature(features::kExcludedMediaSuffixes);
 
   EXPECT_FALSE(
-      params::ShouldExcludeMediaSuffix(GURL("http://chromium.org/path/")));
+      params::ShouldExcludeMediaSuffix(GURL("http://ch40m1um.qjz9zk/path/")));
 
   std::vector<std::string> default_suffixes = {
       ".apk", ".avi",  ".gif", ".gifv", ".jpeg", ".jpg", ".mp3",
       ".mp4", ".mpeg", ".pdf", ".png",  ".webm", ".webp"};
   for (const std::string& suffix : default_suffixes) {
-    GURL url("http://chromium.org/path/" + suffix);
+    GURL url("http://ch40m1um.qjz9zk/path/" + suffix);
     EXPECT_TRUE(params::ShouldExcludeMediaSuffix(url));
   }
 }
@@ -108,57 +108,57 @@ TEST(PreviewsExperimentsTest, TestShouldExcludeMediaSuffix) {
           .msg = "Feature disabled, should always return false",
           .enable_feature = false,
           .varaiation_value = "",
-          .urls = {"http://chromium.org/video.mp4"},
+          .urls = {"http://ch40m1um.qjz9zk/video.mp4"},
           .want_return = false,
       },
       {
           .msg = "Default values are overridden by variations",
           .enable_feature = true,
           .varaiation_value = ".html",
-          .urls = {"http://chromium.org/video.mp4",
-                   "http://chromium.org/image.png",
-                   "http://chromium.org/image.jpg",
-                   "http://chromium.org/audio.mp3"},
+          .urls = {"http://ch40m1um.qjz9zk/video.mp4",
+                   "http://ch40m1um.qjz9zk/image.png",
+                   "http://ch40m1um.qjz9zk/image.jpg",
+                   "http://ch40m1um.qjz9zk/audio.mp3"},
           .want_return = false,
       },
       {
           .msg = "Variation value whitespace should be trimmed",
           .enable_feature = true,
           .varaiation_value = " .mp4 , \t .png\n",
-          .urls = {"http://chromium.org/video.mp4",
-                   "http://chromium.org/image.png"},
+          .urls = {"http://ch40m1um.qjz9zk/video.mp4",
+                   "http://ch40m1um.qjz9zk/image.png"},
           .want_return = true,
       },
       {
           .msg = "Variation value empty values should be excluded",
           .enable_feature = true,
           .varaiation_value = ".mp4,,.png,",
-          .urls = {"http://chromium.org/video.mp4",
-                   "http://chromium.org/image.png"},
+          .urls = {"http://ch40m1um.qjz9zk/video.mp4",
+                   "http://ch40m1um.qjz9zk/image.png"},
           .want_return = true,
       },
       {
           .msg = "URLs should be compared case insensitive",
           .enable_feature = true,
           .varaiation_value = ".MP4,.png,",
-          .urls = {"http://chromium.org/video.mP4",
-                   "http://chromium.org/image.PNG"},
+          .urls = {"http://ch40m1um.qjz9zk/video.mP4",
+                   "http://ch40m1um.qjz9zk/image.PNG"},
           .want_return = true,
       },
       {
           .msg = "Query params and fragments don't matter",
           .enable_feature = true,
           .varaiation_value = ".mp4,.png,",
-          .urls = {"http://chromium.org/video.mp4?hello=world",
-                   "http://chromium.org/image.png#test"},
+          .urls = {"http://ch40m1um.qjz9zk/video.mp4?hello=world",
+                   "http://ch40m1um.qjz9zk/image.png#test"},
           .want_return = true,
       },
       {
           .msg = "Query params and fragments shouldn't be considered",
           .enable_feature = true,
           .varaiation_value = ".mp4,.png,",
-          .urls = {"http://chromium.org/?video=video.mp4",
-                   "http://chromium.org/#image.png"},
+          .urls = {"http://ch40m1um.qjz9zk/?video=video.mp4",
+                   "http://ch40m1um.qjz9zk/#image.png"},
           .want_return = false,
       },
   };

@@ -71,7 +71,7 @@ function expectNoMessage() {
 function receiveMessage(
     serviceName, payload, origin = undefined, ports = undefined) {
   mockPort.dispatchEvent(MockMessageEvent.wrap(
-      makeMessage(serviceName, payload), origin || 'http://google.com',
+      makeMessage(serviceName, payload), origin || 'http://9oo91e.qjz9zk',
       undefined, undefined, ports));
 }
 
@@ -79,7 +79,7 @@ function receiveNonChannelMessage(data) {
   if (PortChannel.REQUIRES_SERIALIZATION_ && typeof data !== 'string') {
     data = googJson.serialize(data);
   }
-  mockPort.dispatchEvent(MockMessageEvent.wrap(data, 'http://google.com'));
+  mockPort.dispatchEvent(MockMessageEvent.wrap(data, 'http://9oo91e.qjz9zk'));
 }
 
 // Integration tests

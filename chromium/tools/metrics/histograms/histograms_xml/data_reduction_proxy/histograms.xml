@@ -9,9 +9,9 @@ This file is used to generate a comprehensive list of DataReductionProxy histogr
 along with a detailed description for each histogram.
 
 For best practices on writing histogram descriptions, see
-https://chromium.googlesource.com/chromium/src.git/+/HEAD/tools/metrics/histograms/README.md
+https://chromium.9oo91esource.qjz9zk/chromium/src.git/+/HEAD/tools/metrics/histograms/README.md
 
-Please send CLs to chromium-metrics-reviews@google.com rather than to specific
+Please send CLs to chromium-metrics-reviews@9oo91e.qjz9zk rather than to specific
 individuals. These CLs will be automatically reassigned to a reviewer within
 about 5 minutes. This approach helps the metrics team to load-balance incoming
 reviews. Googlers can read more about this at go/gwsq-gerrit.
@@ -23,8 +23,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="DataReductionProxy.BypassedBytes" units="bytes"
     expires_after="M85">
-  <owner>bengr@chromium.org</owner>
-  <owner>tbansal@chromium.org</owner>
+  <owner>bengr@ch40m1um.qjz9zk</owner>
+  <owner>tbansal@ch40m1um.qjz9zk</owner>
   <summary>
     Counts the response bytes that did not go through the data reduction proxy
     as the result of a bypass event.
@@ -33,8 +33,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="DataReductionProxy.BypassedBytes.NotBypassed" units="bytes"
     expires_after="M85">
-  <owner>bengr@chromium.org</owner>
-  <owner>tbansal@chromium.org</owner>
+  <owner>bengr@ch40m1um.qjz9zk</owner>
+  <owner>tbansal@ch40m1um.qjz9zk</owner>
   <summary>
     Counts the response bytes that went through the data reduction proxy and
     were not bypassed.
@@ -43,8 +43,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="DataReductionProxy.ConfigService.AuthExpired"
     enum="BooleanExpired" expires_after="M90">
-  <owner>robertogden@chromium.org</owner>
-  <owner>tbansal@chromium.org</owner>
+  <owner>robertogden@ch40m1um.qjz9zk</owner>
+  <owner>tbansal@ch40m1um.qjz9zk</owner>
   <summary>
     Total number of authentication required responses received from the Data
     Reduction Proxy.
@@ -58,8 +58,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="DataReductionProxy.ConfigService.ConnectionSetupTime"
     units="ms" expires_after="M90">
-  <owner>robertogden@chromium.org</owner>
-  <owner>tbansal@chromium.org</owner>
+  <owner>robertogden@ch40m1um.qjz9zk</owner>
+  <owner>tbansal@ch40m1um.qjz9zk</owner>
   <summary>
     The time delta between connectStart and connectEnd of the client config
     request. This is recorded only on successful requests when connectStart and
@@ -70,8 +70,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram
     name="DataReductionProxy.ConfigService.FetchFailedAttemptsBeforeSuccess"
     units="units" expires_after="M90">
-  <owner>robertogden@chromium.org</owner>
-  <owner>tbansal@chromium.org</owner>
+  <owner>robertogden@ch40m1um.qjz9zk</owner>
+  <owner>tbansal@ch40m1um.qjz9zk</owner>
   <summary>
     The number of failed attempts when retrieving the configuration from the
     Data Reduction Proxy API before a successful attempt took place.
@@ -84,8 +84,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="DataReductionProxy.ConfigService.FetchLatency" units="ms"
     expires_after="M90">
-  <owner>robertogden@chromium.org</owner>
-  <owner>tbansal@chromium.org</owner>
+  <owner>robertogden@ch40m1um.qjz9zk</owner>
+  <owner>tbansal@ch40m1um.qjz9zk</owner>
   <summary>
     Time from when the Data Reduction Proxy configuration request starts until
     it completes.
@@ -96,8 +96,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="DataReductionProxy.ConfigService.FetchResponseCode"
     enum="HttpResponseCode" expires_after="M90">
-  <owner>robertogden@chromium.org</owner>
-  <owner>tbansal@chromium.org</owner>
+  <owner>robertogden@ch40m1um.qjz9zk</owner>
+  <owner>tbansal@ch40m1um.qjz9zk</owner>
   <summary>
     Count per HttpResponseCode when attempting to retrieve the Data Reduction
     Proxy configuration from the Data Reduction Proxy API.
@@ -106,8 +106,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="DataReductionProxy.ConfigService.HttpRequestRTT" units="ms"
     expires_after="M90">
-  <owner>robertogden@chromium.org</owner>
-  <owner>tbansal@chromium.org</owner>
+  <owner>robertogden@ch40m1um.qjz9zk</owner>
+  <owner>tbansal@ch40m1um.qjz9zk</owner>
   <summary>
     The time delta between requestStart and requestEnd of the client config
     request. This is recorded only on successful requests.
@@ -116,8 +116,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="DataReductionProxy.ConfigService.HTTPRequests"
     enum="DataReductionProxyConfigServiceHTTPRequests" expires_after="M90">
-  <owner>robertogden@chromium.org</owner>
-  <owner>tbansal@chromium.org</owner>
+  <owner>robertogden@ch40m1um.qjz9zk</owner>
+  <owner>tbansal@ch40m1um.qjz9zk</owner>
   <summary>
     Upper bound on the count of HTTP requests that did or did not go through the
     data saver proxy.
@@ -131,8 +131,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="DataReductionProxy.ConfigService.MainFrames"
     enum="DataReductionProxyConfigServiceMainFrames" expires_after="M90">
-  <owner>robertogden@chromium.org</owner>
-  <owner>tbansal@chromium.org</owner>
+  <owner>robertogden@ch40m1um.qjz9zk</owner>
+  <owner>tbansal@ch40m1um.qjz9zk</owner>
   <summary>
     Upper bound on the count of main frame requests that did or did not go
     through the data saver proxy.
@@ -146,8 +146,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="DataReductionProxy.DaysSinceEnabled" units="days"
     expires_after="2021-03-10">
-  <owner>rajendrant@chromium.org</owner>
-  <owner>tbansal@chromium.org</owner>
+  <owner>rajendrant@ch40m1um.qjz9zk</owner>
+  <owner>tbansal@ch40m1um.qjz9zk</owner>
   <summary>
     Records the number of days since data reduction proxy was last enabled by
     the user. Recorded only if the data reduction proxy was last enabled since
@@ -159,8 +159,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="DataReductionProxy.DeleteBrowsingHistory.NumBuckets"
     units="units" expires_after="M77">
-  <owner>robertogden@chromium.org</owner>
-  <owner>bengr@chromium.org</owner>
+  <owner>robertogden@ch40m1um.qjz9zk</owner>
+  <owner>bengr@ch40m1um.qjz9zk</owner>
   <summary>
     When the data savings are cleared because the user deletes their browsing
     history, record how many buckets were deleted. See also
@@ -171,8 +171,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="DataReductionProxy.EnabledState"
     enum="DataReductionProxyEnabledState" expires_after="2021-03-10">
-  <owner>rajendrant@chromium.org</owner>
-  <owner>tbansal@chromium.org</owner>
+  <owner>rajendrant@ch40m1um.qjz9zk</owner>
+  <owner>tbansal@ch40m1um.qjz9zk</owner>
   <summary>
     Samples of user interactions with the Data Saver settings menu across all
     platforms (android, IOS, desktop extension). Data is collected whenever user
@@ -185,7 +185,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="DataReductionProxy.HistoricalDataUsageLoadTime" units="ms"
     expires_after="M77">
-  <owner>kundaji@chromium.org</owner>
+  <owner>kundaji@ch40m1um.qjz9zk</owner>
   <summary>
     Time taken to load historical data usage from Level DB into memory. This UMA
     is reported each time the method to load historical data usage is called,
@@ -195,8 +195,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="DataReductionProxy.LastWeekAggregateKB.Services"
     enum="DataUseServicesHash" expires_after="M90">
-  <owner>rajendrant@chromium.org</owner>
-  <owner>bengr@chromium.org</owner>
+  <owner>rajendrant@ch40m1um.qjz9zk</owner>
+  <owner>bengr@ch40m1um.qjz9zk</owner>
   <summary>
     Records the aggregate data use of services for the last week. Different
     conditions are added as suffixes to this histogram. Recorded when Chrome is
@@ -210,8 +210,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram
     name="DataReductionProxy.LastWeekAggregateKB.UserTraffic.Downstream.ContentType"
     enum="DataUseContentType" expires_after="M90">
-  <owner>rajendrant@chromium.org</owner>
-  <owner>bengr@chromium.org</owner>
+  <owner>rajendrant@ch40m1um.qjz9zk</owner>
+  <owner>bengr@ch40m1um.qjz9zk</owner>
   <summary>
     Records the aggregate data use for the last week. This is the downstream
     data use of all user-initiated traffic. Recorded when Chrome is started, so
@@ -224,19 +224,19 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="DataReductionProxy.LevelDBOpenStatus"
     enum="DataReductionProxyStoreStatus" expires_after="M77">
-  <owner>kundaji@chromium.org</owner>
+  <owner>kundaji@ch40m1um.qjz9zk</owner>
   <summary>Status of calling Open() on Data Reduction Proxy LevelDB.</summary>
 </histogram>
 
 <histogram name="DataReductionProxy.LevelDBSize" units="KB" expires_after="M77">
-  <owner>kundaji@chromium.org</owner>
+  <owner>kundaji@ch40m1um.qjz9zk</owner>
   <summary>Size of Data Reduction Proxy LevelDB measured at startup.</summary>
 </histogram>
 
 <histogram name="DataReductionProxy.ProxyPrefMigrationResult"
     enum="DataReductionProxyProxyPrefMigrationResult"
     expires_after="2021-04-27">
-  <owner>sclittle@chromium.org</owner>
+  <owner>sclittle@ch40m1um.qjz9zk</owner>
   <owner>src/components/data_reduction_proxy/OWNERS</owner>
   <summary>
     Records the result of migrating the Data Reduction Proxy away from being
@@ -247,8 +247,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="DataReductionProxy.ReportSaveDataSavings.ParseResult"
     enum="Boolean" expires_after="2021-04-01">
-  <owner>rajendrant@chromium.org</owner>
-  <owner>tbansal@chromium.org</owner>
+  <owner>rajendrant@ch40m1um.qjz9zk</owner>
+  <owner>tbansal@ch40m1um.qjz9zk</owner>
   <summary>
     Whether the save-data savings JSON retrieved from field trial was parsed as
     a dictionary. Recorded on startup.
@@ -257,8 +257,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="DataReductionProxy.SavingsCleared.Reason"
     enum="DataReductionProxySavingsClearedReason" expires_after="M77">
-  <owner>robertogden@chromium.org</owner>
-  <owner>bengr@chromium.org</owner>
+  <owner>robertogden@ch40m1um.qjz9zk</owner>
+  <owner>bengr@ch40m1um.qjz9zk</owner>
   <summary>
     Records why the data reduction savings were cleared. See also
     DataReductionProxy.DeleteBrowsingHistory.NumBuckets.
@@ -267,8 +267,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="DataReductionProxy.SnackbarPromo.DataSavings" units="MB"
     expires_after="M85">
-  <owner>bengr@chromium.org</owner>
-  <owner>tbansal@chromium.org</owner>
+  <owner>bengr@ch40m1um.qjz9zk</owner>
+  <owner>tbansal@ch40m1um.qjz9zk</owner>
   <summary>
     Logs the data savings in MB of the data reduction proxy snackbar promo that
     was shown. The snackbar promo shows the user the amount of data Chrome has
@@ -278,8 +278,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="DataReductionProxy.StartupNegativeSavingsPercent" units="%"
     expires_after="2021-04-27">
-  <owner>rajendrant@chromium.org</owner>
-  <owner>mcrouse@chromium.org</owner>
+  <owner>rajendrant@ch40m1um.qjz9zk</owner>
+  <owner>mcrouse@ch40m1um.qjz9zk</owner>
   <summary>
     Records the negative data savings percentage at Chrome startup for data
     saver enabled users who have browsed a reasonable amount (at least 10MB
@@ -289,8 +289,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="DataReductionProxy.StartupSavingsPercent" units="%"
     expires_after="2021-04-27">
-  <owner>rajendrant@chromium.org</owner>
-  <owner>mcrouse@chromium.org</owner>
+  <owner>rajendrant@ch40m1um.qjz9zk</owner>
+  <owner>mcrouse@ch40m1um.qjz9zk</owner>
   <summary>
     Records the data savings percentage at Chrome startup for data saver enabled
     users who have browsed a reasonable amount (at least 10MB since data saver
@@ -300,8 +300,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="DataReductionProxy.StartupState"
     enum="DataReductionProxyStartupState" expires_after="2021-03-10">
-  <owner>rajendrant@chromium.org</owner>
-  <owner>tbansal@chromium.org</owner>
+  <owner>rajendrant@ch40m1um.qjz9zk</owner>
+  <owner>tbansal@ch40m1um.qjz9zk</owner>
   <summary>
     Samples of the state of the data reduction proxy on Chrome startup. The
     proxy will either be unavailable (the feature hasn't been rolled out to this
@@ -312,8 +312,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="DataReductionProxy.ThisWeekAggregateKB.Services"
     enum="DataUseServicesHash" expires_after="M90">
-  <owner>rajendrant@chromium.org</owner>
-  <owner>mcrouse@chromium.org</owner>
+  <owner>rajendrant@ch40m1um.qjz9zk</owner>
+  <owner>mcrouse@ch40m1um.qjz9zk</owner>
   <summary>
     Records the aggregate data use of services for the current week. Different
     conditions are added as suffixes to this histogram. Recorded when Chrome is
@@ -327,8 +327,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram
     name="DataReductionProxy.ThisWeekAggregateKB.UserTraffic.Downstream.ContentType"
     enum="DataUseContentType" expires_after="M90">
-  <owner>rajendrant@chromium.org</owner>
-  <owner>mcrouse@chromium.org</owner>
+  <owner>rajendrant@ch40m1um.qjz9zk</owner>
+  <owner>mcrouse@ch40m1um.qjz9zk</owner>
   <summary>
     Records the aggregate data use for the current week. This is the downstream
     data use of all user-initiated traffic. Recorded when Chrome is started, so
@@ -341,8 +341,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="DataReductionProxy.UIAction" enum="DataReductionProxyUIAction"
     expires_after="2021-04-27">
-  <owner>bengr@chromium.org</owner>
-  <owner>mcrouse@chromium.org</owner>
+  <owner>bengr@ch40m1um.qjz9zk</owner>
+  <owner>mcrouse@ch40m1um.qjz9zk</owner>
   <summary>
     Samples of user interactions with the Data Reduction Proxy promos, First Run
     Experience, main menu footer, and settings menu. All samples are mutually
@@ -385,8 +385,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="DataReductionProxy.UserViewedOriginalSize" units="KB"
     expires_after="2021-02-28">
-  <owner>rajendrant@chromium.org</owner>
-  <owner>robertogden@chromium.org</owner>
+  <owner>rajendrant@ch40m1um.qjz9zk</owner>
+  <owner>robertogden@ch40m1um.qjz9zk</owner>
   <owner>src/components/data_reduction_proxy/OWNERS</owner>
   <summary>
     The total original content size displayed to the user. Computed over the
@@ -396,8 +396,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="DataReductionProxy.UserViewedSavingsDifferenceWithBreakdown"
     units="%" expires_after="2021-03-15">
-  <owner>rajendrant@chromium.org</owner>
-  <owner>robertogden@chromium.org</owner>
+  <owner>rajendrant@ch40m1um.qjz9zk</owner>
+  <owner>robertogden@ch40m1um.qjz9zk</owner>
   <owner>src/components/data_reduction_proxy/OWNERS</owner>
   <summary>
     The difference between the total data savings as displayed to the user and
@@ -410,8 +410,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="DataReductionProxy.UserViewedSavingsSize" units="KB"
     expires_after="2021-02-28">
-  <owner>rajendrant@chromium.org</owner>
-  <owner>robertogden@chromium.org</owner>
+  <owner>rajendrant@ch40m1um.qjz9zk</owner>
+  <owner>robertogden@ch40m1um.qjz9zk</owner>
   <owner>src/components/data_reduction_proxy/OWNERS</owner>
   <summary>
     The total data saved displayed to the user. Computed over the last 30 days.
@@ -421,8 +421,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="DataReductionProxy.UserViewedUsageDifferenceWithBreakdown"
     units="%" expires_after="2021-03-15">
-  <owner>rajendrant@chromium.org</owner>
-  <owner>robertogden@chromium.org</owner>
+  <owner>rajendrant@ch40m1um.qjz9zk</owner>
+  <owner>robertogden@ch40m1um.qjz9zk</owner>
   <owner>src/components/data_reduction_proxy/OWNERS</owner>
   <summary>
     The difference between the total data usage as displayed to the user and the

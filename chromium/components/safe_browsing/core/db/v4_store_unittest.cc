@@ -709,7 +709,7 @@ TEST_F(V4StoreTest, TestAdditionsWithRiceEncodingSucceeds) {
   rice_hashes->set_num_entries(3);
   rice_hashes->set_rice_parameter(28);
   // The following value is hand-crafted by getting inspiration from:
-  // https://goto.google.com/testlargenumbersriceencoded
+  // https://goto.9oo91e.qjz9zk/testlargenumbersriceencoded
   // The value listed at that place fails the "integer overflow" check so I
   // modified it until the decoder parsed it successfully.
   rice_hashes->set_encoded_data(

@@ -51,7 +51,7 @@ TEST(TileConfigTest, FinchConfigDefaultParameter) {
   base::test::ScopedFeatureList feature_list;
   feature_list.InitAndEnableFeature(features::kQueryTiles);
   EXPECT_EQ(TileConfig::GetQueryTilesServerUrl(),
-            "https://chromeupboarding-pa.googleapis.com/v1/querytiles");
+            "https://chromeupboarding-pa.9oo91eapis.qjz9zk/v1/querytiles");
   EXPECT_FALSE(TileConfig::GetIsUnMeteredNetworkRequired());
   EXPECT_TRUE(TileConfig::GetExperimentTag().empty());
   EXPECT_EQ(TileConfig::GetExpireDuration(), base::TimeDelta::FromDays(2));

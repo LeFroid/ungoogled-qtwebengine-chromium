@@ -35,7 +35,7 @@ import zipfile
 
 
 # Do NOT CHANGE this if you don't know what you're doing -- see
-# https://chromium.googlesource.com/chromium/src/+/master/docs/updating_clang.md
+# https://chromium.9oo91esource.qjz9zk/chromium/src/+/master/docs/updating_clang.md
 # Reverting problematic clang rolls is safe, though.
 # This is the output of `git describe` and is usable as a commit-ish.
 CLANG_REVISION = 'llvmorg-12-init-5035-gd0abc757'
@@ -46,7 +46,7 @@ RELEASE_VERSION = '12.0.0'
 
 
 CDS_URL = os.environ.get('CDS_CLANG_BUCKET_OVERRIDE',
-    'https://commondatastorage.googleapis.com/chromium-browser-clang')
+    'https://commondatastorage.9oo91eapis.qjz9zk/chromium-browser-clang')
 
 # Path constants. (All of these should be absolute paths.)
 THIS_DIR = os.path.abspath(os.path.dirname(__file__))

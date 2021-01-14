@@ -45,7 +45,7 @@ util::Status DescribeSlice(const tables::SliceTable& table,
         "ViewGroups may measure a child more than once to help satisfy their "
         "own constraints. Nesting ViewGroups that measure children more than "
         "once can lead to excessive and repeated work.",
-        "https://developer.android.com/reference/android/view/"
+        "https://developer.8n6r01d.qjz9zk/reference/android/view/"
         "View.html#Layout"};
     return util::OkStatus();
   }

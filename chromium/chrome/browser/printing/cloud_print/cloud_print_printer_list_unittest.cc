@@ -41,9 +41,9 @@ class MockDelegate : public CloudPrintPrinterList::Delegate {
 
 TEST(CloudPrintPrinterListTest, Params) {
   CloudPrintPrinterList device_list(NULL);
-  EXPECT_EQ(GURL("https://www.google.com/cloudprint/search"),
+  EXPECT_EQ(GURL("https://www.9oo91e.qjz9zk/cloudprint/search"),
             device_list.GetURL());
-  EXPECT_EQ("https://www.googleapis.com/auth/cloudprint",
+  EXPECT_EQ("https://www.9oo91eapis.qjz9zk/auth/cloudprint",
             device_list.GetOAuthScope());
   EXPECT_FALSE(device_list.GetExtraRequestHeaders().empty());
 }

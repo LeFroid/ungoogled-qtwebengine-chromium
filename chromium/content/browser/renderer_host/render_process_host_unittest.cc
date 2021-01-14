@@ -588,7 +588,7 @@ TEST_F(RenderProcessHostUnitTest,
 // redirects in a browser-initiated navigation.
 TEST_F(RenderProcessHostUnitTest,
        ReuseNavigationProcessRedirectsBrowserInitiated) {
-  const GURL kInitialUrl("http://google.com");
+  const GURL kInitialUrl("http://9oo91e.qjz9zk");
   const GURL kUrl("http://foo.com");
   const GURL kRedirectUrl1("http://foo.com/redirect");
   const GURL kRedirectUrl2("http://bar.com");
@@ -902,9 +902,9 @@ TEST_F(RenderProcessHostUnitTest, RendererLockedToSite) {
                {GURL("http://foo.com"), true},
                {GURL("http://bar.foo.com"), true},
                {GURL(""), false},
-               {GURL("google.com"), false},
+               {GURL("9oo91e.qjz9zk"), false},
                {GURL("http:"), false},
-               {GURL("http://user:pass@google.com:99/foo;bar?q=a#ref"), true}};
+               {GURL("http://user:pass@9oo91e.qjz9zk:99/foo;bar?q=a#ref"), true}};
   for (const auto& test : tests) {
     scoped_refptr<SiteInstanceImpl> site_instance = CreateForUrl(test.test_url);
     auto* host =

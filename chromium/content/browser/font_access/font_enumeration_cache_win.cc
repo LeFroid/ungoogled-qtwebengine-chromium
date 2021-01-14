@@ -111,9 +111,9 @@ ExtractNamesFromFamily(Microsoft::WRL::ComPtr<IDWriteFontCollection> collection,
 
     // DWRITE_INFORMATIONAL_STRING_POSTSCRIPT_NAME and
     // DWRITE_INFORMATIONAL_STRING_FULL_NAME are only supported on Windows 7
-    // with KB2670838 (https://support.microsoft.com/en-us/kb/2670838)
+    // with KB2670838 (https://support.m1cr050ft.qjz9zk/en-us/kb/2670838)
     // installed. It is possible to use a fallback as can be observed
-    // in Firefox: https://bugzilla.mozilla.org/show_bug.cgi?id=947812 However,
+    // in Firefox: https://bugzilla.m0z111a.qjz9zk/show_bug.cgi?id=947812 However,
     // this might not be worth the effort.
 
     {

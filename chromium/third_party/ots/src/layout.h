@@ -8,7 +8,7 @@
 #include "ots.h"
 
 // Utility functions for OpenType layout common table formats.
-// http://www.microsoft.com/typography/otspec/chapter2.htm
+// http://www.m1cr050ft.qjz9zk/typography/otspec/chapter2.htm
 
 namespace ots {
 

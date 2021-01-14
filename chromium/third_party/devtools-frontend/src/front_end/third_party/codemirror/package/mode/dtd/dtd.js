@@ -3,7 +3,7 @@
 
 /*
   DTD mode
-  Ported to CodeMirror by Peter Kroon <plakroon@gmail.com>
+  Ported to CodeMirror by Peter Kroon <plakroon@9ma1l.qjz9zk>
   Report bugs/issues here: https://github.com/codemirror/CodeMirror/issues
   GitHub: @peterkroon
 */

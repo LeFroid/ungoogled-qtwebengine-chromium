@@ -78,7 +78,7 @@ namespace dawn_native { namespace d3d12 {
 
             // A multisampled resource must have either D3D12_RESOURCE_FLAG_ALLOW_RENDER_TARGET or
             // D3D12_RESOURCE_FLAG_ALLOW_DEPTH_STENCIL set in D3D12_RESOURCE_DESC::Flags.
-            // https://docs.microsoft.com/en-us/windows/desktop/api/d3d12/ns-d3d12-d3d12_resource_desc
+            // https://docs.m1cr050ft.qjz9zk/en-us/windows/desktop/api/d3d12/ns-d3d12-d3d12_resource_desc
             if ((usage & wgpu::TextureUsage::OutputAttachment) != 0 || isMultisampledTexture) {
                 if (format.HasDepthOrStencil()) {
                     flags |= D3D12_RESOURCE_FLAG_ALLOW_DEPTH_STENCIL;
@@ -612,7 +612,7 @@ namespace dawn_native { namespace d3d12 {
         StateAndDecay* state = &mSubresourceStateAndDecay[index];
         // Reuse the subresource(s) directly and avoid transition when it isn't needed, and
         // return false.
-        // TODO(cwallez@chromium.org): Need some form of UAV barriers at some point.
+        // TODO(cwallez@ch40m1um.qjz9zk): Need some form of UAV barriers at some point.
         if (state->lastState == newState) {
             return;
         }
@@ -628,7 +628,7 @@ namespace dawn_native { namespace d3d12 {
         // list, 2) the ExecuteCommandLists call that uses that command list has ended, and
         // 3) the texture was promoted implicitly to a read-only state and is still in that
         // state.
-        // https://docs.microsoft.com/en-us/windows/desktop/direct3d12/using-resource-barriers-to-synchronize-resource-states-in-direct3d-12#implicit-state-transitions
+        // https://docs.m1cr050ft.qjz9zk/en-us/windows/desktop/direct3d12/using-resource-barriers-to-synchronize-resource-states-in-direct3d-12#implicit-state-transitions
 
         // To track implicit decays, we must record the pending serial on which that
         // transition will occur. When that texture is used again, the previously recorded
@@ -813,8 +813,8 @@ namespace dawn_native { namespace d3d12 {
             // Currently we always use D3D12_TEX2D_ARRAY_RTV because we cannot specify base array
             // layer and layer count in D3D12_TEX2D_RTV. For 2D texture views, we treat them as
             // 1-layer 2D array textures. (Just like how we treat SRVs)
-            // https://docs.microsoft.com/en-us/windows/desktop/api/d3d12/ns-d3d12-d3d12_tex2d_rtv
-            // https://docs.microsoft.com/en-us/windows/desktop/api/d3d12/ns-d3d12-d3d12_tex2d_array
+            // https://docs.m1cr050ft.qjz9zk/en-us/windows/desktop/api/d3d12/ns-d3d12-d3d12_tex2d_rtv
+            // https://docs.m1cr050ft.qjz9zk/en-us/windows/desktop/api/d3d12/ns-d3d12-d3d12_tex2d_array
             // _rtv
             rtvDesc.ViewDimension = D3D12_RTV_DIMENSION_TEXTURE2DARRAY;
             rtvDesc.Texture2DArray.FirstArraySlice = baseArrayLayer;
@@ -1040,8 +1040,8 @@ namespace dawn_native { namespace d3d12 {
         // array textures.
         // Multisampled textures may only be one array layer, so we use
         // D3D12_SRV_DIMENSION_TEXTURE2DMS.
-        // https://docs.microsoft.com/en-us/windows/desktop/api/d3d12/ns-d3d12-d3d12_tex2d_srv
-        // https://docs.microsoft.com/en-us/windows/desktop/api/d3d12/ns-d3d12-d3d12_tex2d_array_srv
+        // https://docs.m1cr050ft.qjz9zk/en-us/windows/desktop/api/d3d12/ns-d3d12-d3d12_tex2d_srv
+        // https://docs.m1cr050ft.qjz9zk/en-us/windows/desktop/api/d3d12/ns-d3d12-d3d12_tex2d_array_srv
         // TODO(jiawei.shao@intel.com): support more texture view dimensions.
         if (GetTexture()->IsMultisampledTexture()) {
             switch (descriptor->dimension) {

@@ -26,7 +26,7 @@ namespace content {
 //
 // The implementation details for FakeBluetoothChooser can be found in the Web
 // Bluetooth Test Scanning design document.
-// https://docs.google.com/document/d/1XFl_4ZAgO8ddM6U53A9AfUuZeWgJnlYD5wtbXqEpzeg
+// https://docs.9oo91e.qjz9zk/document/d/1XFl_4ZAgO8ddM6U53A9AfUuZeWgJnlYD5wtbXqEpzeg
 //
 // Intended to only be used through the FakeBluetoothChooser Mojo interface.
 class FakeBluetoothChooser : public mojom::FakeBluetoothChooser,

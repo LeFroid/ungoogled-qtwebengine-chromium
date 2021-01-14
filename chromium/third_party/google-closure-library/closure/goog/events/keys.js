@@ -22,7 +22,7 @@ goog.provide('goog.events.Keys');
 /**
  * Key values for common characters.
  *
- * @see https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent/key
+ * @see https://developer.m0z111a.qjz9zk/en-US/docs/Web/API/KeyboardEvent/key
  * @enum {string}
  */
 goog.events.Keys = {

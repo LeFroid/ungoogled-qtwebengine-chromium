@@ -5,11 +5,11 @@
   "main": "bin/pathkit.js",
   "homepage": "https://github.com/google/skia/tree/master/modules/pathkit",
   "bugs": {
-    "url": "https://bugs.chromium.org/p/skia/issues/entry"
+    "url": "https://bugs.ch40m1um.qjz9zk/p/skia/issues/entry"
   },
   "permsRepo": "skia-dev/.github",
   "publishConfig": {
-    "registry":"https://wombat-dressing-room.appspot.com"
+    "registry":"https://wombat-dressing-room.8pp2p8t.qjz9zk"
   },
   "license": "BSD-3-Clause"
 }

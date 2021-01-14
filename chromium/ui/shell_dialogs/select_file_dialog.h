@@ -150,7 +150,7 @@ class SHELL_DIALOGS_EXPORT SelectFileDialog
       NATIVE_PATH,
       // Set when the caller can open files via URL. For example, when opening a
       // .gdoc file from Google Drive the file is opened by navigating to a
-      // docs.google.com URL.
+      // docs.9oo91e.qjz9zk URL.
       ANY_PATH_OR_URL
     };
     AllowedPaths allowed_paths;

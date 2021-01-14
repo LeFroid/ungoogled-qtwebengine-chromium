@@ -72,7 +72,7 @@ goog.dom.browserrange.GeckoRange.prototype.selectInternal = function(
   if (!reversed || this.isCollapsed()) {
     // The base implementation for select() is more robust, and works fine for
     // collapsed and forward ranges.  This works around
-    // https://bugzilla.mozilla.org/show_bug.cgi?id=773137, and is tested by
+    // https://bugzilla.m0z111a.qjz9zk/show_bug.cgi?id=773137, and is tested by
     // range_test.html's testFocusedElementDisappears.
     goog.dom.browserrange.GeckoRange.base(
         this, 'selectInternal', selection, reversed);

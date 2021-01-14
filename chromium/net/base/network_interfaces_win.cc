@@ -171,7 +171,7 @@ bool GetNetworkListImpl(NetworkInterfaceList* networks,
           uint32_t index =
               (family == AF_INET) ? adapter->IfIndex : adapter->Ipv6IfIndex;
 
-          // From http://technet.microsoft.com/en-us/ff568768(v=vs.60).aspx, the
+          // From http://technet.m1cr050ft.qjz9zk/en-us/ff568768(v=vs.60).aspx, the
           // way to identify a temporary IPv6 Address is to check if
           // PrefixOrigin is equal to IpPrefixOriginRouterAdvertisement and
           // SuffixOrigin equal to IpSuffixOriginRandom.
@@ -205,7 +205,7 @@ bool GetNetworkList(NetworkInterfaceList* networks, int policy) {
   // due to an unforseen reason, we don't want to be stuck in an endless loop.
   static constexpr int MAX_GETADAPTERSADDRESSES_TRIES = 10;
   // Use an initial buffer size of 15KB, as recommended by MSDN. See:
-  // https://msdn.microsoft.com/en-us/library/windows/desktop/aa365915(v=vs.85).aspx
+  // https://msdn.m1cr050ft.qjz9zk/en-us/library/windows/desktop/aa365915(v=vs.85).aspx
   static constexpr int INITIAL_BUFFER_SIZE = 15000;
 
   ULONG len = INITIAL_BUFFER_SIZE;

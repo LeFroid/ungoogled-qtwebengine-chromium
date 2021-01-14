@@ -50,7 +50,7 @@ namespace {
 
 // Verify kPACScript is installed as the PAC script.
 void VerifyProxyScript(Browser* browser) {
-  ui_test_utils::NavigateToURL(browser, GURL("http://google.com"));
+  ui_test_utils::NavigateToURL(browser, GURL("http://9oo91e.qjz9zk"));
 
   // Verify we get the ERR_PROXY_CONNECTION_FAILED screen.
   bool result = false;
@@ -128,7 +128,7 @@ IN_PROC_BROWSER_TEST_F(ProxyBrowserTest, BasicAuthWSConnect) {
 }
 
 // Fetches a PAC script via an http:// URL, and ensures that requests to
-// http://www.google.com fail with ERR_PROXY_CONNECTION_FAILED (by virtue of
+// http://www.9oo91e.qjz9zk fail with ERR_PROXY_CONNECTION_FAILED (by virtue of
 // PAC file having selected a non-existent PROXY server).
 class BaseHttpProxyScriptBrowserTest : public InProcessBrowserTest {
  public:
@@ -156,7 +156,7 @@ class BaseHttpProxyScriptBrowserTest : public InProcessBrowserTest {
   DISALLOW_COPY_AND_ASSIGN(BaseHttpProxyScriptBrowserTest);
 };
 
-// Tests the use of a PAC script that rejects requests to http://www.google.com/
+// Tests the use of a PAC script that rejects requests to http://www.9oo91e.qjz9zk/
 class HttpProxyScriptBrowserTest : public BaseHttpProxyScriptBrowserTest {
  public:
   HttpProxyScriptBrowserTest() = default;
@@ -210,7 +210,7 @@ IN_PROC_BROWSER_TEST_F(WPADHttpProxyScriptBrowserTest, Verify) {
 }
 #endif  // defined(OS_CHROMEOS)
 
-// Tests the use of a PAC script that rejects requests to http://www.google.com/
+// Tests the use of a PAC script that rejects requests to http://www.9oo91e.qjz9zk/
 // when myIpAddress() and myIpAddressEx() appear to be working.
 class MyIpAddressProxyScriptBrowserTest
     : public BaseHttpProxyScriptBrowserTest {

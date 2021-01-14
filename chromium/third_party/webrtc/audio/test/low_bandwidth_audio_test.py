@@ -36,7 +36,7 @@ NO_TOOLS_ERROR_MESSAGE = (
   'Note that these tools are Google-internal due to licensing, so in order to '
   'use them you will have to get your own license and manually put them in the '
   'right location.\n'
-  'See https://cs.chromium.org/chromium/src/third_party/webrtc/tools_webrtc/'
+  'See https://cs.ch40m1um.qjz9zk/chromium/src/third_party/webrtc/tools_webrtc/'
   'download_tools.py?rcl=bbceb76f540159e2dba0701ac03c514f01624130&l=13')
 
 

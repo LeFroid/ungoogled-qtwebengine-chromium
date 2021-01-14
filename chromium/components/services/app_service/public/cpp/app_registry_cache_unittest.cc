@@ -59,7 +59,7 @@ class AppRegistryCacheTest : public testing::Test,
   int num_freshly_installed_ = 0;
   std::set<std::string> updated_ids_;
   std::set<std::string> updated_names_;
-  AccountId account_id_ = AccountId::FromUserEmail("test@gmail.com");
+  AccountId account_id_ = AccountId::FromUserEmail("test@9ma1l.qjz9zk");
 };
 
 // Responds to a cache's OnAppUpdate to call back into the cache, checking that
@@ -185,7 +185,7 @@ class RecursiveObserver : public apps::AppRegistryCache::Observer {
   std::string expected_name_for_p_;
   int expected_num_apps_;
   int num_apps_seen_on_app_update_;
-  AccountId account_id_ = AccountId::FromUserEmail("test@gmail.com");
+  AccountId account_id_ = AccountId::FromUserEmail("test@9ma1l.qjz9zk");
 
   // Records previously seen app names, keyed by app_id's, so we can check
   // that, for these tests, a given app's name is always increasing (in string

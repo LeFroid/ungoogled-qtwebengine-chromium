@@ -332,7 +332,7 @@ TEST_F(DomainReliabilityMonitorTest, GoogleConfigOnDemand) {
   EXPECT_EQ(2u, CountQueuedBeacons(google_domain_context));
 
   // A domain with no Google config does not generate a new context.
-  OnRequestLegComplete(MakeFailedRequest(GURL("https://not-google.com")));
+  OnRequestLegComplete(MakeFailedRequest(GURL("https://not-9oo91e.qjz9zk")));
   EXPECT_EQ(2u, monitor_.contexts_size_for_testing());
 }
 

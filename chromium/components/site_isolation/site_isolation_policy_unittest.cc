@@ -864,13 +864,13 @@ TEST_F(BuiltInIsolatedOriginsTest, DefaultThreshold) {
   // Check that a couple of well-known origins are on the list.
   EXPECT_THAT(
       isolated_origins,
-      ::testing::Contains(url::Origin::Create(GURL("https://google.com/"))));
+      ::testing::Contains(url::Origin::Create(GURL("https://9oo91e.qjz9zk/"))));
   EXPECT_THAT(
       isolated_origins,
       ::testing::Contains(url::Origin::Create(GURL("https://amazon.com/"))));
   EXPECT_THAT(
       isolated_origins,
-      ::testing::Contains(url::Origin::Create(GURL("https://facebook.com/"))));
+      ::testing::Contains(url::Origin::Create(GURL("https://f8c3b00k.qjz9zk/"))));
 
   cpsp->ClearIsolatedOriginsForTesting();
 }

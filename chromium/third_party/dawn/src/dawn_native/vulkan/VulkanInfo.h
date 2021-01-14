@@ -46,7 +46,7 @@ namespace dawn_native { namespace vulkan {
     struct VulkanGlobalInfo : VulkanGlobalKnobs {
         std::vector<VkLayerProperties> layers;
         uint32_t apiVersion;
-        // TODO(cwallez@chromium.org): layer instance extensions
+        // TODO(cwallez@ch40m1um.qjz9zk): layer instance extensions
     };
 
     // Device information - gathered before the device is created.
@@ -70,7 +70,7 @@ namespace dawn_native { namespace vulkan {
         std::vector<VkMemoryHeap> memoryHeaps;
 
         std::vector<VkLayerProperties> layers;
-        // TODO(cwallez@chromium.org): layer instance extensions
+        // TODO(cwallez@ch40m1um.qjz9zk): layer instance extensions
     };
 
     struct VulkanSurfaceInfo {

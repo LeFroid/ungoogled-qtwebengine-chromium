@@ -47,33 +47,33 @@ const char kPermissionBlockedKillSwitchMessage[] =
 const char kPermissionBlockedRepeatedDismissalsMessage[] =
     "%s permission has been blocked as the user has dismissed the permission "
     "prompt several times. This can be reset in Site Settings. See "
-    "https://www.chromestatus.com/features/6443143280984064 for more "
+    "https://www.ch40mestatus.qjz9zk/features/6443143280984064 for more "
     "information.";
 
 const char kPermissionBlockedRepeatedIgnoresMessage[] =
     "%s permission has been blocked as the user has ignored the permission "
     "prompt several times. This can be reset in Site Settings. See "
-    "https://www.chromestatus.com/features/6443143280984064 for more "
+    "https://www.ch40mestatus.qjz9zk/features/6443143280984064 for more "
     "information.";
 #else
 const char kPermissionBlockedRepeatedDismissalsMessage[] =
     "%s permission has been blocked as the user has dismissed the permission "
     "prompt several times. This can be reset in Page Info which can be "
     "accessed by clicking the lock icon next to the URL. See "
-    "https://www.chromestatus.com/features/6443143280984064 for more "
+    "https://www.ch40mestatus.qjz9zk/features/6443143280984064 for more "
     "information.";
 
 const char kPermissionBlockedRepeatedIgnoresMessage[] =
     "%s permission has been blocked as the user has ignored the permission "
     "prompt several times. This can be reset in Page Info which can be "
     "accessed by clicking the lock icon next to the URL. See "
-    "https://www.chromestatus.com/features/6443143280984064 for more "
+    "https://www.ch40mestatus.qjz9zk/features/6443143280984064 for more "
     "information.";
 #endif
 
 const char kPermissionBlockedFeaturePolicyMessage[] =
     "%s permission has been blocked because of a Feature Policy applied to the "
-    "current document. See https://goo.gl/EuHzyv for more details.";
+    "current document. See https://goo.gl.qjz9zk/EuHzyv for more details.";
 
 const char kPermissionBlockedPortalsMessage[] =
     "%s permission has been blocked because it was requested inside a portal. "

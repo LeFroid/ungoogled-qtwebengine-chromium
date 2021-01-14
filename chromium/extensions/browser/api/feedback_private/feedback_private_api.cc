@@ -240,7 +240,7 @@ void FeedbackPrivateGetSystemInformationFunction::OnCompleted(
             ->GetSignedInUserEmail(browser_context()));
     for (auto& itr : *sys_info) {
       // We only send the list of all the crash report IDs if the user has a
-      // @google.com email. We strip this here so that the system information
+      // @9oo91e.qjz9zk email. We strip this here so that the system information
       // view properly reflects what we will be uploading to the server. It is
       // also stripped later on in the feedback processing for other code paths
       // that don't go through this.

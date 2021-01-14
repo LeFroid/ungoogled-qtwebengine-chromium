@@ -298,10 +298,10 @@ class PasswordFormManagerTest : public testing::Test,
 
     form_manager_->set_wait_for_server_predictions_for_filling(true);
 
-    GURL origin = GURL("https://accounts.google.com/a/ServiceLoginAuth");
-    GURL action = GURL("https://accounts.google.com/a/ServiceLogin");
-    GURL psl_origin = GURL("https://myaccounts.google.com/a/ServiceLoginAuth");
-    GURL psl_action = GURL("https://myaccounts.google.com/a/ServiceLogin");
+    GURL origin = GURL("https://accounts.9oo91e.qjz9zk/a/ServiceLoginAuth");
+    GURL action = GURL("https://accounts.9oo91e.qjz9zk/a/ServiceLogin");
+    GURL psl_origin = GURL("https://myaccounts.9oo91e.qjz9zk/a/ServiceLoginAuth");
+    GURL psl_action = GURL("https://myaccounts.9oo91e.qjz9zk/a/ServiceLogin");
 
     observed_form_.url = origin;
     observed_form_.action = action;
@@ -368,8 +368,8 @@ class PasswordFormManagerTest : public testing::Test,
 
     saved_match_.url = origin;
     saved_match_.action = action;
-    saved_match_.signon_realm = "https://accounts.google.com/";
-    saved_match_.username_value = ASCIIToUTF16("test@gmail.com");
+    saved_match_.signon_realm = "https://accounts.9oo91e.qjz9zk/";
+    saved_match_.username_value = ASCIIToUTF16("test@9ma1l.qjz9zk");
     saved_match_.username_element = ASCIIToUTF16("field1");
     saved_match_.password_value = ASCIIToUTF16("test1");
     saved_match_.password_element = ASCIIToUTF16("field2");
@@ -380,7 +380,7 @@ class PasswordFormManagerTest : public testing::Test,
     psl_saved_match_ = saved_match_;
     psl_saved_match_.url = psl_origin;
     psl_saved_match_.action = psl_action;
-    psl_saved_match_.signon_realm = "https://myaccounts.google.com/";
+    psl_saved_match_.signon_realm = "https://myaccounts.9oo91e.qjz9zk/";
     psl_saved_match_.is_public_suffix_match = true;
 
     parsed_observed_form_ = saved_match_;
@@ -800,8 +800,8 @@ TEST_P(PasswordFormManagerTest, CreatePendingCredentialsAlreadySaved) {
 TEST_P(PasswordFormManagerTest, CreatePendingCredentialsPSLMatchSaved) {
   PasswordForm expected = saved_match_;
 
-  saved_match_.url = GURL("https://m.accounts.google.com/auth");
-  saved_match_.signon_realm = "https://m.accounts.google.com/";
+  saved_match_.url = GURL("https://m.accounts.9oo91e.qjz9zk/auth");
+  saved_match_.signon_realm = "https://m.accounts.9oo91e.qjz9zk/";
   saved_match_.is_public_suffix_match = true;
 
   SetNonFederatedAndNotifyFetchCompleted({&saved_match_});
@@ -2308,7 +2308,7 @@ TEST_P(PasswordFormManagerTest, ProvisinallySavedOnSingleUsernameForm) {
 }
 
 TEST_P(PasswordFormManagerTest, NotMovableToAccountStoreWhenBlocked) {
-  const std::string kEmail = "email@gmail.com";
+  const std::string kEmail = "email@9ma1l.qjz9zk";
   const std::string kGaiaId = signin::GetTestGaiaIdForEmail(kEmail);
 
   PasswordForm saved_match(saved_match_);
@@ -2335,7 +2335,7 @@ TEST_P(PasswordFormManagerTest, NotMovableToAccountStoreWhenBlocked) {
 }
 
 TEST_P(PasswordFormManagerTest, MovableToAccountStore) {
-  const std::string kEmail = "email@gmail.com";
+  const std::string kEmail = "email@9ma1l.qjz9zk";
   const std::string kGaiaId = signin::GetTestGaiaIdForEmail(kEmail);
 
   PasswordForm saved_match(saved_match_);
@@ -2355,7 +2355,7 @@ TEST_P(PasswordFormManagerTest, MovableToAccountStore) {
       form_manager_->ProvisionallySave(submitted_form_, &driver_, nullptr));
 
   // If another user is signed in, credentials should be movable.
-  identity_test_env_.SetPrimaryAccount("another-user@gmail.com");
+  identity_test_env_.SetPrimaryAccount("another-user@9ma1l.qjz9zk");
   ON_CALL(client_, GetIdentityManager())
       .WillByDefault(Return(identity_test_env_.identity_manager()));
   EXPECT_TRUE(form_manager_->IsMovableToAccountStore());
@@ -2602,7 +2602,7 @@ TEST_F(PasswordFormManagerTestWithMockedSaver, MoveCredentialsToAccountStore) {
 
 TEST_F(PasswordFormManagerTestWithMockedSaver,
        BlockMovingCredentialsToAccountStore) {
-  const std::string kEmail = "email@gmail.com";
+  const std::string kEmail = "email@9ma1l.qjz9zk";
   const std::string kGaiaId = signin::GetTestGaiaIdForEmail(kEmail);
 
   PasswordForm saved_match(saved_match_);

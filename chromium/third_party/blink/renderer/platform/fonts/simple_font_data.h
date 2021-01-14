@@ -100,7 +100,7 @@ class PLATFORM_EXPORT SimpleFontData : public FontData {
   // |sTypoAscender| and |sTypoDescender| in |OS/2| table, normalized to 1em.
   // This metrics can simulate ideographics em-box when the font doesn't have
   // better ways to compute it.
-  // https://docs.microsoft.com/en-us/typography/opentype/spec/baselinetags#ideoembox
+  // https://docs.m1cr050ft.qjz9zk/en-us/typography/opentype/spec/baselinetags#ideoembox
   FontHeight NormalizedTypoAscentAndDescent(
       FontBaseline baseline_type = kAlphabeticBaseline) const;
   LayoutUnit NormalizedTypoAscent(FontBaseline = kAlphabeticBaseline) const;
@@ -220,7 +220,7 @@ class PLATFORM_EXPORT SimpleFontData : public FontData {
   mutable FontHeight normalized_typo_ascent_descent_;
 
 // See discussion on crbug.com/631032 and Skiaissue
-// https://bugs.chromium.org/p/skia/issues/detail?id=5328 :
+// https://bugs.ch40m1um.qjz9zk/p/skia/issues/detail?id=5328 :
 // On Mac we're still using path based glyph metrics, and they seem to be
 // too slow to be able to remove the caching layer we have here.
 #if defined(OS_MAC)

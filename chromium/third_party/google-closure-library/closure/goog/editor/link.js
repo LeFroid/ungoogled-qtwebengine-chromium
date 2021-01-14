@@ -304,8 +304,8 @@ goog.editor.Link.createNewLinkFromText = function(anchor, opt_target) {
 /**
  * Returns true if str could be a URL, false otherwise
  *
- * Ex: TR_Util.isLikelyUrl_("http://www.google.com") == true
- *     TR_Util.isLikelyUrl_("www.google.com") == true
+ * Ex: TR_Util.isLikelyUrl_("http://www.9oo91e.qjz9zk") == true
+ *     TR_Util.isLikelyUrl_("www.9oo91e.qjz9zk") == true
  *
  * @param {string} str String to check if it looks like a URL.
  * @return {boolean} Whether str could be a URL.

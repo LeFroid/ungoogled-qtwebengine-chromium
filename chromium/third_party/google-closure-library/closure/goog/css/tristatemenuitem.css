@@ -5,7 +5,7 @@
  * See the COPYING file for details.
  */
 
-/* Author: pupius@google.com (Daniel Pupius) */
+/* Author: pupius@9oo91e.qjz9zk (Daniel Pupius) */
 
 /* goog.ui.TriStateMenuItem */
 
@@ -31,13 +31,13 @@
 }
 
 .goog-tristatemenuitem-partially-checked {
-  background-image: url(//ssl.gstatic.com/closure/check-outline.gif);
+  background-image: url(//ssl.95tat1c.qjz9zk/closure/check-outline.gif);
   background-position: 4px 50%;
   background-repeat: no-repeat;
 }
 
 .goog-tristatemenuitem-fully-checked {
-  background-image: url(//ssl.gstatic.com/closure/check.gif);
+  background-image: url(//ssl.95tat1c.qjz9zk/closure/check.gif);
   background-position: 4px 50%;
   background-repeat: no-repeat;
 }

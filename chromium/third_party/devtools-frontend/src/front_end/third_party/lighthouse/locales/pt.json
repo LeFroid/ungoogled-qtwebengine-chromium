@@ -390,7 +390,7 @@
     "message": "Suggested Token"
   },
   "lighthouse-core/audits/autocomplete.js | description": {
-    "message": "`autocomplete` helps users submit forms quicker. To reduce user effort, consider enabling by setting the `autocomplete` attribute to a valid value. [Learn more](https://developers.google.com/web/fundamentals/design-and-ux/input/forms#use_metadata_to_enable_auto-complete)"
+    "message": "`autocomplete` helps users submit forms quicker. To reduce user effort, consider enabling by setting the `autocomplete` attribute to a valid value. [Learn more](https://developers.9oo91e.qjz9zk/web/fundamentals/design-and-ux/input/forms#use_metadata_to_enable_auto-complete)"
   },
   "lighthouse-core/audits/autocomplete.js | failureTitle": {
     "message": "`<input>` elements do not have correct `autocomplete` attributes"
@@ -621,7 +621,7 @@
     "message": "Valor"
   },
   "lighthouse-core/audits/dobetterweb/dom-size.js | description": {
-    "message": "Um DOM grande aumentará o uso da memória, causará [cálculos de estilo](https://developers.google.com/web/fundamentals/performance/rendering/reduce-the-scope-and-complexity-of-style-calculations) mais longos e produzirá [reflows de layout](https://developers.google.com/speed/articles/reflow) dispendiosos. [Saiba mais](https://web.dev/dom-size/)."
+    "message": "Um DOM grande aumentará o uso da memória, causará [cálculos de estilo](https://developers.9oo91e.qjz9zk/web/fundamentals/performance/rendering/reduce-the-scope-and-complexity-of-style-calculations) mais longos e produzirá [reflows de layout](https://developers.9oo91e.qjz9zk/speed/articles/reflow) dispendiosos. [Saiba mais](https://web.dev/dom-size/)."
   },
   "lighthouse-core/audits/dobetterweb/dom-size.js | displayValue": {
     "message": "{itemCount,plural, =1{1 elemento}one{# elemento}other{# elementos}}"
@@ -834,7 +834,7 @@
     "message": "Resolução da solicitação"
   },
   "lighthouse-core/audits/is-on-https.js | description": {
-    "message": "All sites should be protected with HTTPS, even ones that don't handle sensitive data. This includes avoiding [mixed content](https://developers.google.com/web/fundamentals/security/prevent-mixed-content/what-is-mixed-content), where some resources are loaded over HTTP despite the initial request being served over HTTPS. HTTPS prevents intruders from tampering with or passively listening in on the communications between your app and your users, and is a prerequisite for HTTP/2 and many new web platform APIs. [Learn more](https://web.dev/is-on-https/)."
+    "message": "All sites should be protected with HTTPS, even ones that don't handle sensitive data. This includes avoiding [mixed content](https://developers.9oo91e.qjz9zk/web/fundamentals/security/prevent-mixed-content/what-is-mixed-content), where some resources are loaded over HTTP despite the initial request being served over HTTPS. HTTPS prevents intruders from tampering with or passively listening in on the communications between your app and your users, and is a prerequisite for HTTP/2 and many new web platform APIs. [Learn more](https://web.dev/is-on-https/)."
   },
   "lighthouse-core/audits/is-on-https.js | displayValue": {
     "message": "{itemCount,plural, =1{1 solicitação não segura encontrada}one{# solicitação não segura encontrada}other{# solicitações não seguras encontradas}}"
@@ -855,7 +855,7 @@
     "message": "Biblioteca"
   },
   "lighthouse-core/audits/large-javascript-libraries.js | description": {
-    "message": "Bibliotecas grandes do JavaScript podem resultar em um desempenho fraco. Use bibliotecas menores com equivalência funcional para reduzir o tamanho do pacote. [Saiba mais](https://developers.google.com/web/fundamentals/performance/webpack/decrease-frontend-size#optimize_dependencies)."
+    "message": "Bibliotecas grandes do JavaScript podem resultar em um desempenho fraco. Use bibliotecas menores com equivalência funcional para reduzir o tamanho do pacote. [Saiba mais](https://developers.9oo91e.qjz9zk/web/fundamentals/performance/webpack/decrease-frontend-size#optimize_dependencies)."
   },
   "lighthouse-core/audits/large-javascript-libraries.js | displayValue": {
     "message": "{libraryCount,plural, =1{1 biblioteca grande encontrada}one{# biblioteca grande encontrada}other{# bibliotecas grandes encontradas}}"
@@ -990,7 +990,7 @@
     "message": "Latências do back-end do servidor"
   },
   "lighthouse-core/audits/no-unload-listeners.js | description": {
-    "message": "O evento `unload` não é acionado de maneira confiável, e a detecção dele pode evitar otimizações do navegador, como o Back-Forward Cache. Em vez disso, considere usar os eventos `pagehide` ou `visibilitychange`. [Saiba mais](https://developers.google.com/web/updates/2018/07/page-lifecycle-api#the-unload-event)"
+    "message": "O evento `unload` não é acionado de maneira confiável, e a detecção dele pode evitar otimizações do navegador, como o Back-Forward Cache. Em vez disso, considere usar os eventos `pagehide` ou `visibilitychange`. [Saiba mais](https://developers.9oo91e.qjz9zk/web/updates/2018/07/page-lifecycle-api#the-unload-event)"
   },
   "lighthouse-core/audits/no-unload-listeners.js | failureTitle": {
     "message": "Registra um listener `unload`"
@@ -1041,7 +1041,7 @@
     "message": "A propriedade `start_url` não pode ser lida pelo Lighthouse no manifesto. Como resultado, a URL do documento foi considerada como `start_url`. Mensagem de erro: \"{manifestWarning}\"."
   },
   "lighthouse-core/audits/performance-budget.js | description": {
-    "message": "Mantenha a quantidade e o tamanho de solicitações de rede de acordo com os destinos definidos pelo orçamento de desempenho informado. [Saiba mais](https://developers.google.com/web/tools/lighthouse/audits/budgets)."
+    "message": "Mantenha a quantidade e o tamanho de solicitações de rede de acordo com os destinos definidos pelo orçamento de desempenho informado. [Saiba mais](https://developers.9oo91e.qjz9zk/web/tools/lighthouse/audits/budgets)."
   },
   "lighthouse-core/audits/performance-budget.js | requestCountOverBudget": {
     "message": "{count,plural, =1{1 solicitação}one{# solicitação}other{# solicitações}}"
@@ -1113,7 +1113,7 @@
     "message": "Link não rastreável"
   },
   "lighthouse-core/audits/seo/crawlable-anchors.js | description": {
-    "message": "Os mecanismos de pesquisa podem usar atributos `href` em links para rastrear sites. Garanta que o atributo `href` de elementos de âncora esteja vinculado a um destino adequado para que mais páginas do site possam ser descobertas. [Saiba mais](https://support.google.com/webmasters/answer/9112205)"
+    "message": "Os mecanismos de pesquisa podem usar atributos `href` em links para rastrear sites. Garanta que o atributo `href` de elementos de âncora esteja vinculado a um destino adequado para que mais páginas do site possam ser descobertas. [Saiba mais](https://support.9oo91e.qjz9zk/webmasters/answer/9112205)"
   },
   "lighthouse-core/audits/seo/crawlable-anchors.js | failureTitle": {
     "message": "Os links não são rastreáveis"
@@ -1197,7 +1197,7 @@
     "message": "Os links têm texto descritivo"
   },
   "lighthouse-core/audits/seo/manual/structured-data.js | description": {
-    "message": "Execute a [Ferramenta de teste de dados estruturados](https://search.google.com/structured-data/testing-tool/) e a [Structured Data Linter](http://linter.structured-data.org/) para validar os dados estruturados. [Saiba mais](https://web.dev/structured-data/)."
+    "message": "Execute a [Ferramenta de teste de dados estruturados](https://search.9oo91e.qjz9zk/structured-data/testing-tool/) e a [Structured Data Linter](http://linter.structured-data.org/) para validar os dados estruturados. [Saiba mais](https://web.dev/structured-data/)."
   },
   "lighthouse-core/audits/seo/manual/structured-data.js | title": {
     "message": "Os dados estruturados são válidos"
@@ -1320,7 +1320,7 @@
     "message": "Terceiros"
   },
   "lighthouse-core/audits/third-party-summary.js | description": {
-    "message": "Código de terceiros pode afetar significativamente o desempenho de carregamento. Limite o número de provedores terceiros redundantes e carregue o código de terceiros depois que a página tiver sido carregada. [Saiba mais](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/loading-third-party-javascript/)."
+    "message": "Código de terceiros pode afetar significativamente o desempenho de carregamento. Limite o número de provedores terceiros redundantes e carregue o código de terceiros depois que a página tiver sido carregada. [Saiba mais](https://developers.9oo91e.qjz9zk/web/fundamentals/performance/optimizing-content-efficiency/loading-third-party-javascript/)."
   },
   "lighthouse-core/audits/third-party-summary.js | displayValue": {
     "message": "A linha de execução principal foi bloqueada por {timeInMs, number, milliseconds} ms pelo código de terceiros"
@@ -1341,7 +1341,7 @@
     "message": "Métrica"
   },
   "lighthouse-core/audits/timing-budget.js | description": {
-    "message": "Defina um orçamento de tempo para ajudar a monitorar o desempenho do seu site. Sites com bom desempenho carregam rapidamente e respondem a eventos de entrada do usuário mais depressa. [Saiba mais](https://developers.google.com/web/tools/lighthouse/audits/budgets)."
+    "message": "Defina um orçamento de tempo para ajudar a monitorar o desempenho do seu site. Sites com bom desempenho carregam rapidamente e respondem a eventos de entrada do usuário mais depressa. [Saiba mais](https://developers.9oo91e.qjz9zk/web/tools/lighthouse/audits/budgets)."
   },
   "lighthouse-core/audits/timing-budget.js | title": {
     "message": "Orçamento de tempo"
@@ -1395,7 +1395,7 @@
     "message": "URL do mapa"
   },
   "lighthouse-core/audits/valid-source-maps.js | description": {
-    "message": "Os mapas de origem traduzem códigos minificados para o código-fonte original. Isso ajuda desenvolvedores a depurar durante a produção. Além disso, o Lighthouse pode fornecer mais insights. Considere implantar mapas de origem para usar esses benefícios. [Saiba mais](https://developers.google.com/web/tools/chrome-devtools/javascript/source-maps)."
+    "message": "Os mapas de origem traduzem códigos minificados para o código-fonte original. Isso ajuda desenvolvedores a depurar durante a produção. Além disso, o Lighthouse pode fornecer mais insights. Considere implantar mapas de origem para usar esses benefícios. [Saiba mais](https://developers.9oo91e.qjz9zk/web/tools/chrome-devtools/javascript/source-maps)."
   },
   "lighthouse-core/audits/valid-source-maps.js | failureTitle": {
     "message": "Mapas de origem ausentes no JavaScript principal grande"
@@ -1464,10 +1464,10 @@
     "message": "Práticas recomendadas"
   },
   "lighthouse-core/config/default-config.js | a11yCategoryDescription": {
-    "message": "Essas verificações destacam oportunidades para [melhorar a acessibilidade do seu app da Web](https://developers.google.com/web/fundamentals/accessibility). Somente um subconjunto de problemas de acessibilidade pode ser detectado automaticamente, portanto, testes manuais também devem ser realizados."
+    "message": "Essas verificações destacam oportunidades para [melhorar a acessibilidade do seu app da Web](https://developers.9oo91e.qjz9zk/web/fundamentals/accessibility). Somente um subconjunto de problemas de acessibilidade pode ser detectado automaticamente, portanto, testes manuais também devem ser realizados."
   },
   "lighthouse-core/config/default-config.js | a11yCategoryManualDescription": {
-    "message": "Esses itens se referem a áreas que uma ferramenta de teste automatizada não pode cobrir. Saiba mais no nosso guia sobre [como realizar uma avaliação de acessibilidade](https://developers.google.com/web/fundamentals/accessibility/how-to-review)."
+    "message": "Esses itens se referem a áreas que uma ferramenta de teste automatizada não pode cobrir. Saiba mais no nosso guia sobre [como realizar uma avaliação de acessibilidade](https://developers.9oo91e.qjz9zk/web/fundamentals/accessibility/how-to-review)."
   },
   "lighthouse-core/config/default-config.js | a11yCategoryTitle": {
     "message": "Acessibilidade"
@@ -1554,10 +1554,10 @@
     "message": "Desempenho"
   },
   "lighthouse-core/config/default-config.js | pwaCategoryDescription": {
-    "message": "Estas verificações validam os aspectos de um Progressive Web App. [Saiba mais](https://developers.google.com/web/progressive-web-apps/checklist)."
+    "message": "Estas verificações validam os aspectos de um Progressive Web App. [Saiba mais](https://developers.9oo91e.qjz9zk/web/progressive-web-apps/checklist)."
   },
   "lighthouse-core/config/default-config.js | pwaCategoryManualDescription": {
-    "message": "Essas verificações são solicitadas pela [Lista de verificação de PWA](https://developers.google.com/web/progressive-web-apps/checklist) de referência, mas não são automaticamente realizadas pelo Lighthouse. Elas não afetam sua pontuação, mas é importante verificá-las manualmente."
+    "message": "Essas verificações são solicitadas pela [Lista de verificação de PWA](https://developers.9oo91e.qjz9zk/web/progressive-web-apps/checklist) de referência, mas não são automaticamente realizadas pelo Lighthouse. Elas não afetam sua pontuação, mas é importante verificá-las manualmente."
   },
   "lighthouse-core/config/default-config.js | pwaCategoryTitle": {
     "message": "Progressive Web App"
@@ -1572,7 +1572,7 @@
     "message": "Otimizado para PWA"
   },
   "lighthouse-core/config/default-config.js | seoCategoryDescription": {
-    "message": "Essas verificações garantem que sua página seja otimizada para a classificação dos resultados dos mecanismos de pesquisa. Existem outros fatores que o Lighthouse não verifica e que podem afetar a classificação da pesquisa. [Saiba mais](https://support.google.com/webmasters/answer/35769)."
+    "message": "Essas verificações garantem que sua página seja otimizada para a classificação dos resultados dos mecanismos de pesquisa. Existem outros fatores que o Lighthouse não verifica e que podem afetar a classificação da pesquisa. [Saiba mais](https://support.9oo91e.qjz9zk/webmasters/answer/35769)."
   },
   "lighthouse-core/config/default-config.js | seoCategoryManualDescription": {
     "message": "Execute estes validadores adicionais no seu site para verificar mais práticas recomendadas de SEO."
@@ -1593,7 +1593,7 @@
     "message": "Rastreamento e indexação"
   },
   "lighthouse-core/config/default-config.js | seoMobileGroupDescription": {
-    "message": "Suas páginas precisam ser compatíveis com dispositivos móveis, para que o usuário não tenha que usar gestos de pinça ou zoom para ler o conteúdo. [Saiba mais](https://developers.google.com/search/mobile-sites/)."
+    "message": "Suas páginas precisam ser compatíveis com dispositivos móveis, para que o usuário não tenha que usar gestos de pinça ou zoom para ler o conteúdo. [Saiba mais](https://developers.9oo91e.qjz9zk/search/mobile-sites/)."
   },
   "lighthouse-core/config/default-config.js | seoMobileGroupTitle": {
     "message": "Otimizada para dispositivos móveis"
@@ -1836,7 +1836,7 @@
     "message": "Dados de laboratório"
   },
   "lighthouse-core/report/html/renderer/util.js | lsPerformanceCategoryDescription": {
-    "message": "Análise do [Lighthouse](https://developers.google.com/web/tools/lighthouse/) da página atual em uma rede móvel emulada. Os valores são estimados e podem variar."
+    "message": "Análise do [Lighthouse](https://developers.9oo91e.qjz9zk/web/tools/lighthouse/) da página atual em uma rede móvel emulada. Os valores são estimados e podem variar."
   },
   "lighthouse-core/report/html/renderer/util.js | manualAuditsGroupTitle": {
     "message": "Outros itens para verificação manual"
@@ -1983,10 +1983,10 @@
     "message": "Não esqueça de ativar \"Agregar documentos JavaScript\" na página \"Administração » Configurações » Desenvolvimento\". É possível também configurar opções de agregação mais avançadas pelos [módulos adicionais](https://www.drupal.org/project/project_module?f%5B0%5D=&f%5B1%5D=&f%5B2%5D=im_vid_3%3A123&f%5B3%5D=&f%5B4%5D=sm_field_project_type%3Afull&f%5B5%5D=&f%5B6%5D=&text=javascript+aggregation&solrsort=iss_project_release_usage+desc&op=Search) para acelerar seu site por concatenação, minificação, e compactação dos recursos JavaScript."
   },
   "node_modules/lighthouse-stack-packs/packs/drupal.js | unused-css-rules": {
-    "message": "Remova as regras não utilizadas do CSS e anexe apenas as bibliotecas Drupal necessárias para a página ou para o componente da página. Veja o [link do documento Drupal](https://www.drupal.org/docs/8/creating-custom-modules/adding-stylesheets-css-and-javascript-js-to-a-drupal-8-module#library) para mais detalhes. Para identificar bibliotecas anexas que estão adicionando CSS externo, execute a [cobertura de código](https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverage) no Chrome DevTools. É possível identificar o tema/módulo responsável pelo URL da folha de estilo quando a agregação do CSS está desativada no seu site Drupal. Procure temas/módulos que tenham muitas folhas de estilo na lista, apresentando um nível alto de vermelho na cobertura do código. Um tema/módulo só deverá colocar uma folha de estilo na fila se ela for realmente usada na página."
+    "message": "Remova as regras não utilizadas do CSS e anexe apenas as bibliotecas Drupal necessárias para a página ou para o componente da página. Veja o [link do documento Drupal](https://www.drupal.org/docs/8/creating-custom-modules/adding-stylesheets-css-and-javascript-js-to-a-drupal-8-module#library) para mais detalhes. Para identificar bibliotecas anexas que estão adicionando CSS externo, execute a [cobertura de código](https://developers.9oo91e.qjz9zk/web/updates/2017/04/devtools-release-notes#coverage) no Chrome DevTools. É possível identificar o tema/módulo responsável pelo URL da folha de estilo quando a agregação do CSS está desativada no seu site Drupal. Procure temas/módulos que tenham muitas folhas de estilo na lista, apresentando um nível alto de vermelho na cobertura do código. Um tema/módulo só deverá colocar uma folha de estilo na fila se ela for realmente usada na página."
   },
   "node_modules/lighthouse-stack-packs/packs/drupal.js | unused-javascript": {
-    "message": "Consider removing unused JavaScript assets and only attach the needed Drupal libraries to the relevant page or component in a page. See the [Drupal documentation link](https://www.drupal.org/docs/8/creating-custom-modules/adding-stylesheets-css-and-javascript-js-to-a-drupal-8-module#library) for details. To identify attached libraries that are adding extraneous JavaScript, try running [code coverage](https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverage) in Chrome DevTools. You can identify the theme/module responsible from the URL of the script when JavaScript aggregation is disabled in your Drupal site. Look out for themes/modules that have many scripts in the list which have a lot of red in code coverage. A theme/module should only enqueue a script if it is actually used on the page."
+    "message": "Consider removing unused JavaScript assets and only attach the needed Drupal libraries to the relevant page or component in a page. See the [Drupal documentation link](https://www.drupal.org/docs/8/creating-custom-modules/adding-stylesheets-css-and-javascript-js-to-a-drupal-8-module#library) for details. To identify attached libraries that are adding extraneous JavaScript, try running [code coverage](https://developers.9oo91e.qjz9zk/web/updates/2017/04/devtools-release-notes#coverage) in Chrome DevTools. You can identify the theme/module responsible from the URL of the script when JavaScript aggregation is disabled in your Drupal site. Look out for themes/modules that have many scripts in the list which have a lot of red in code coverage. A theme/module should only enqueue a script if it is actually used on the page."
   },
   "node_modules/lighthouse-stack-packs/packs/drupal.js | uses-long-cache-ttl": {
     "message": "Configure o \"Idade máxima para cache de navegador e proxy\" na página \"Administração » Configurações » Desenvolvimento\". Leia sobre [cache Drupal e otimização de performance](https://www.drupal.org/docs/7/managing-site-performance-and-scalability/caching-to-improve-performance/caching-overview#s-drupal-performance-resources)."
@@ -2025,10 +2025,10 @@
     "message": "Várias [extensões Joomla](https://extensions.joomla.org/instant-search/?jed_live%5Bquery%5D=performance) podem acelerar seu site concatenando, reduzindo e compactando seus scripts. Há também modelos que fornecem essa função."
   },
   "node_modules/lighthouse-stack-packs/packs/joomla.js | unused-css-rules": {
-    "message": "Troque ou reduza o número de [extensões Joomla](https://extensions.joomla.org/) que carregam CSS não utilizado na sua página. Para identificar extensões que estão adicionando CSS externo, execute a [cobertura do código](https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverage) no Chrome DevTools. Você pode identificar o tema/plug-in responsável no URL da folha de estilo. Procure plug-ins que tenham muitas folhas de estilo na lista, apresentando um nível alto de vermelho na cobertura do código. Um plug-in só deverá colocar uma folha de estilo na fila se ela for realmente utilizada na página."
+    "message": "Troque ou reduza o número de [extensões Joomla](https://extensions.joomla.org/) que carregam CSS não utilizado na sua página. Para identificar extensões que estão adicionando CSS externo, execute a [cobertura do código](https://developers.9oo91e.qjz9zk/web/updates/2017/04/devtools-release-notes#coverage) no Chrome DevTools. Você pode identificar o tema/plug-in responsável no URL da folha de estilo. Procure plug-ins que tenham muitas folhas de estilo na lista, apresentando um nível alto de vermelho na cobertura do código. Um plug-in só deverá colocar uma folha de estilo na fila se ela for realmente utilizada na página."
   },
   "node_modules/lighthouse-stack-packs/packs/joomla.js | unused-javascript": {
-    "message": "Troque ou reduza o número de [extensões Joomla](https://extensions.joomla.org/) que carregam JavaScript não utilizado na sua página. Para identificar plug-ins que estão adicionando JS externo, execute a [cobertura do código](https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverage) no Chrome DevTools. É possível identificar a extensão responsável no URL do script. Procure extensões que tenham muitos scripts na lista, apresentando um nível alto de vermelho na cobertura do código. Uma extensão só deverá colocar um script na fila se ele realmente for utilizado na página."
+    "message": "Troque ou reduza o número de [extensões Joomla](https://extensions.joomla.org/) que carregam JavaScript não utilizado na sua página. Para identificar plug-ins que estão adicionando JS externo, execute a [cobertura do código](https://developers.9oo91e.qjz9zk/web/updates/2017/04/devtools-release-notes#coverage) no Chrome DevTools. É possível identificar a extensão responsável no URL do script. Procure extensões que tenham muitos scripts na lista, apresentando um nível alto de vermelho na cobertura do código. Uma extensão só deverá colocar um script na fila se ele realmente for utilizado na página."
   },
   "node_modules/lighthouse-stack-packs/packs/joomla.js | uses-long-cache-ttl": {
     "message": "Leia sobre o [Processo de cache do navegador no Joomla](https://docs.joomla.org/Cache)."
@@ -2124,10 +2124,10 @@
     "message": "Vários [plug-ins do WordPress](https://wordpress.org/plugins/search/minify+javascript/) podem acelerar seu site concatenando, reduzindo e compactando seus scripts. Você também pode usar um processo de compilação para fazer essa redução antecipadamente, se possível."
   },
   "node_modules/lighthouse-stack-packs/packs/wordpress.js | unused-css-rules": {
-    "message": "Reduza ou troque o número de [plug-ins do WordPress](https://wordpress.org/plugins/) que carregam CSS não utilizado na sua página. Para identificar plug-ins que estão adicionando CSS externo, execute a [cobertura do código](https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverage) no Chrome DevTools. Você pode identificar o tema/plug-in responsável a partir do URL da folha de estilo. Procure plug-ins que tenham muitas folhas de estilo na lista, apresentando um nível alto de vermelho na cobertura do código. Um plug-in só deverá colocar uma folha de estilo na fila se ela for realmente utilizada na página."
+    "message": "Reduza ou troque o número de [plug-ins do WordPress](https://wordpress.org/plugins/) que carregam CSS não utilizado na sua página. Para identificar plug-ins que estão adicionando CSS externo, execute a [cobertura do código](https://developers.9oo91e.qjz9zk/web/updates/2017/04/devtools-release-notes#coverage) no Chrome DevTools. Você pode identificar o tema/plug-in responsável a partir do URL da folha de estilo. Procure plug-ins que tenham muitas folhas de estilo na lista, apresentando um nível alto de vermelho na cobertura do código. Um plug-in só deverá colocar uma folha de estilo na fila se ela for realmente utilizada na página."
   },
   "node_modules/lighthouse-stack-packs/packs/wordpress.js | unused-javascript": {
-    "message": "Reduza ou troque o número de [plug-ins do WordPress](https://wordpress.org/plugins/) que carregam JavaScript não utilizado na sua página. Para identificar plug-ins que estão adicionando JS externo, execute a [cobertura do código](https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverage) no Chrome DevTools. Você pode identificar o tema/plug-in responsável a partir do URL do script. Procure plug-ins que tenham muitos scripts na lista, apresentando um nível alto de vermelho na cobertura do código. Um plug-in só deverá colocar um script na fila se ele for realmente usado na página."
+    "message": "Reduza ou troque o número de [plug-ins do WordPress](https://wordpress.org/plugins/) que carregam JavaScript não utilizado na sua página. Para identificar plug-ins que estão adicionando JS externo, execute a [cobertura do código](https://developers.9oo91e.qjz9zk/web/updates/2017/04/devtools-release-notes#coverage) no Chrome DevTools. Você pode identificar o tema/plug-in responsável a partir do URL do script. Procure plug-ins que tenham muitos scripts na lista, apresentando um nível alto de vermelho na cobertura do código. Um plug-in só deverá colocar um script na fila se ele for realmente usado na página."
   },
   "node_modules/lighthouse-stack-packs/packs/wordpress.js | uses-long-cache-ttl": {
     "message": "Leia sobre o [Processo de cache do navegador no WordPress](https://wordpress.org/support/article/optimization/#browser-caching)."

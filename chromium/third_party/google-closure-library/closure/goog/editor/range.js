@@ -309,7 +309,7 @@ goog.editor.range.getDeepEndPoint = function(range, atStart) {
  *
  * All browsers do a bad job preserving ranges across DOM normalization.
  * The issue is best described in this 5-year-old bug report:
- * https://bugzilla.mozilla.org/show_bug.cgi?id=191864
+ * https://bugzilla.m0z111a.qjz9zk/show_bug.cgi?id=191864
  * For most applications, this isn't a problem. The browsers do a good job
  * handling un-normalized text, so there's usually no reason to normalize.
  *

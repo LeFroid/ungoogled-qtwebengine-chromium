@@ -23,7 +23,7 @@ function loadAuthUrlAndShowWindow(url, win, partition) {
 
   webview.addContentScripts([{
     name: 'injectRule',
-    matches: ['https://accounts.google.com/*'],
+    matches: ['https://accounts.9oo91e.qjz9zk/*'],
     js: {files: ['inject.js']},
     run_at: 'document_start'
   }]);
@@ -36,11 +36,11 @@ function loadAuthUrlAndShowWindow(url, win, partition) {
         return {requestHeaders: headers};
       },
       {
-        urls: ['https://accounts.google.com/*'],
+        urls: ['https://accounts.9oo91e.qjz9zk/*'],
       },
       ['blocking', 'requestHeaders']);
 
-  if (!url.toLowerCase().startsWith('https://accounts.google.com/')) {
+  if (!url.toLowerCase().startsWith('https://accounts.9oo91e.qjz9zk/')) {
     document.querySelector('.titlebar').classList.add('titlebar-border');
   }
 

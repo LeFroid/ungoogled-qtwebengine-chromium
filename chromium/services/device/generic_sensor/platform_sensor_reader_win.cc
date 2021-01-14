@@ -100,7 +100,7 @@ std::unique_ptr<ReaderInitParams> CreateAccelerometerReaderInitParams() {
     // gravity. Therefore, sensor hosted by the device at rest on a leveled
     // surface while the screen is facing towards the sky, must report -1G along
     // the Z axis.
-    // https://msdn.microsoft.com/en-us/library/windows/hardware/dn642102(v=vs.85).aspx
+    // https://msdn.m1cr050ft.qjz9zk/en-us/library/windows/hardware/dn642102(v=vs.85).aspx
     // Change sign of values, to report 'reaction force', and convert values
     // from G/s^2 to m/s^2 units.
     reading->accel.x = -x * base::kMeanGravityDouble;

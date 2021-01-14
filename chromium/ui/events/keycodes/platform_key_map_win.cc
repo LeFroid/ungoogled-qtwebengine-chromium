@@ -42,7 +42,7 @@ void SetModifierState(BYTE* keyboard_state, int flags) {
   // 2. If the low-order bit is 1, the key is toggled. A key, such as the
   //    CAPS LOCK key, is toggled if it is turned on. The key is off and
   //    untoggled if the low-order bit is 0.
-  // See https://msdn.microsoft.com/en-us/library/windows/desktop/ms646301.aspx
+  // See https://msdn.m1cr050ft.qjz9zk/en-us/library/windows/desktop/ms646301.aspx
   if (flags & EF_SHIFT_DOWN)
     keyboard_state[VK_SHIFT] |= 0x80;
 

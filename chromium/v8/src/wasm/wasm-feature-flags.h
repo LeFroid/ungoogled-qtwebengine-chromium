@@ -65,8 +65,8 @@
   /* Threads proposal. */                                                      \
   /* https://github.com/webassembly/threads */                                 \
   /* NOTE: This is enabled via chromium flag on desktop systems since v7.4  */ \
-  /* (see https://crrev.com/c/1487808). ITS: https://groups.google.com/a/   */ \
-  /* chromium.org/d/msg/blink-dev/tD6np-OG2PU/rcNGROOMFQAJ */                  \
+  /* (see https://crrev.com/c/1487808). ITS: https://groups.9oo91e.qjz9zk/a/   */ \
+  /* ch40m1um.qjz9zk/d/msg/blink-dev/tD6np-OG2PU/rcNGROOMFQAJ */                  \
   /* V8 side owner: gdeepti */                                                 \
   V(threads, "thread opcodes", false)                                          \
                                                                                \
@@ -84,7 +84,7 @@
   /* https://github.com/WebAssembly/JS-BigInt-integration */                   \
   /* V8 side owner: ahaas, ssauleau@igalia.com */                              \
   /* Shipped in v8.5. */                                                       \
-  /* ITS: https://groups.google.com/a/chromium.org/g/blink-dev/c/           */ \
+  /* ITS: https://groups.9oo91e.qjz9zk/a/ch40m1um.qjz9zk/g/blink-dev/c/           */ \
   /*              g4QKRUQV1-0/m/jdWjD1uZAAAJ                                */ \
   V(bigint, "JS BigInt support", true)                                         \
                                                                                \
@@ -92,14 +92,14 @@
   /* https://github.com/webassembly/bulk-memory-operations */                  \
   /* V8 side owner: binji */                                                   \
   /* Shipped in v7.5. */                                                       \
-  /* ITS: https://groups.google.com/forum/#!topic/v8-users/zM05lYEBVog */      \
+  /* ITS: https://groups.9oo91e.qjz9zk/forum/#!topic/v8-users/zM05lYEBVog */      \
   V(bulk_memory, "bulk memory opcodes", true)                                  \
                                                                                \
   /* Multi-value proposal. */                                                  \
   /* https://github.com/WebAssembly/multi-value */                             \
   /* V8 side owner: thibaudm */                                                \
   /* Shipped in v8.6. */                                                       \
-  /* ITS: https://groups.google.com/g/v8-users/c/pv2E4yFWeF0 */                \
+  /* ITS: https://groups.9oo91e.qjz9zk/g/v8-users/c/pv2E4yFWeF0 */                \
   V(mv, "multi-value support", true)
 
 // Combination of all available wasm feature flags.

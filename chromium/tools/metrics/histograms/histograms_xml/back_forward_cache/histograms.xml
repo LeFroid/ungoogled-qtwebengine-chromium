@@ -9,9 +9,9 @@ This file is used to generate a comprehensive list of BackForwardCache histogram
 along with a detailed description for each histogram.
 
 For best practices on writing histogram descriptions, see
-https://chromium.googlesource.com/chromium/src.git/+/HEAD/tools/metrics/histograms/README.md
+https://chromium.9oo91esource.qjz9zk/chromium/src.git/+/HEAD/tools/metrics/histograms/README.md
 
-Please send CLs to chromium-metrics-reviews@google.com rather than to specific
+Please send CLs to chromium-metrics-reviews@9oo91e.qjz9zk rather than to specific
 individuals. These CLs will be automatically reassigned to a reviewer within
 about 5 minutes. This approach helps the metrics team to load-balance incoming
 reviews. Googlers can read more about this at go/gwsq-gerrit.
@@ -24,8 +24,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram name="BackForwardCache.AllSites.EvictedAfterDocumentRestoredReason"
     enum="BackForwardCacheEvictedAfterDocumentRestoredReason"
     expires_after="2020-10-01">
-  <owner>hajimehoshi@chromium.org</owner>
-  <owner>bfcache-dev@chromium.org</owner>
+  <owner>hajimehoshi@ch40m1um.qjz9zk</owner>
+  <owner>bfcache-dev@ch40m1um.qjz9zk</owner>
   <summary>
     Records the reason why the page is evicted from the back-forward cache but
     after the document is restored. This happens when there is a race between
@@ -39,8 +39,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="BackForwardCache.AllSites.HistoryNavigationOutcome"
     enum="BackForwardCacheHistoryNavigationOutcome" expires_after="2021-02-14">
-  <owner>hajimehoshi@chromium.org</owner>
-  <owner>bfcache-dev@chromium.org</owner>
+  <owner>hajimehoshi@ch40m1um.qjz9zk</owner>
+  <owner>bfcache-dev@ch40m1um.qjz9zk</owner>
   <summary>
     When navigating back to a page in the session history, this records whether
     the page was restored from the BackForwardCache or not.
@@ -53,8 +53,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram
     name="BackForwardCache.AllSites.HistoryNavigationOutcome.BlocklistedFeature"
     enum="WebSchedulerTrackedFeature" expires_after="2021-02-21">
-  <owner>hajimehoshi@chromium.org</owner>
-  <owner>bfcache-dev@chromium.org</owner>
+  <owner>hajimehoshi@ch40m1um.qjz9zk</owner>
+  <owner>bfcache-dev@ch40m1um.qjz9zk</owner>
   <summary>
     When navigating back to a page in the session history, this records what
     blocklisted features were used when the page was loaded and prevented this
@@ -70,8 +70,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
     name="BackForwardCache.AllSites.HistoryNavigationOutcome.BrowsingInstanceNotSwappedReason"
     enum="BackForwardCacheBrowsingInstanceNotSwappedReason"
     expires_after="2021-02-07">
-  <owner>hajimehoshi@chromium.org</owner>
-  <owner>bfcache-dev@chromium.org</owner>
+  <owner>hajimehoshi@ch40m1um.qjz9zk</owner>
+  <owner>bfcache-dev@ch40m1um.qjz9zk</owner>
   <summary>
     When navigating back to a page in the session history and the
     BackForwardCache wasn't used because of the related browsing instances, this
@@ -86,9 +86,9 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
     name="BackForwardCache.AllSites.HistoryNavigationOutcome.DisabledForRenderFrameHostReason"
     enum="BackForwardCacheDisabledForRenderFrameHostReason"
     expires_after="2020-10-01">
-  <owner>carlscab@chromium.org</owner>
-  <owner>hajimehoshi@chromium.org</owner>
-  <owner>bfcache-dev@chromium.org</owner>
+  <owner>carlscab@ch40m1um.qjz9zk</owner>
+  <owner>hajimehoshi@ch40m1um.qjz9zk</owner>
+  <owner>bfcache-dev@ch40m1um.qjz9zk</owner>
   <summary>
     For history navigations, records the reasons passed to
     BackForwardCache::DisableForRenderFrameHost calls. These reasons are
@@ -108,8 +108,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram
     name="BackForwardCache.AllSites.HistoryNavigationOutcome.NotRestoredReason"
     enum="BackForwardCacheNotRestoredReason" expires_after="2021-02-07">
-  <owner>hajimehoshi@chromium.org</owner>
-  <owner>bfcache-dev@chromium.org</owner>
+  <owner>hajimehoshi@ch40m1um.qjz9zk</owner>
+  <owner>bfcache-dev@ch40m1um.qjz9zk</owner>
   <summary>
     When navigating back to a page in the session history, record why it wasn't
     restored from the cache. The page might not have entered the back-forward in
@@ -124,8 +124,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram name="BackForwardCache.EvictedAfterDocumentRestoredReason"
     enum="BackForwardCacheEvictedAfterDocumentRestoredReason"
     expires_after="2021-02-07">
-  <owner>hajimehoshi@chromium.org</owner>
-  <owner>bfcache-dev@chromium.org</owner>
+  <owner>hajimehoshi@ch40m1um.qjz9zk</owner>
+  <owner>bfcache-dev@ch40m1um.qjz9zk</owner>
   <summary>
     Records the reason why the page is evicted from the back-forward cache but
     after the document is restored. This happens when there is a race between
@@ -140,8 +140,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="BackForwardCache.Eviction.TimeUntilProcessKilled" units="ms"
     expires_after="2020-10-01">
-  <owner>hajimehoshi@chromium.org</owner>
-  <owner>bfcache-dev@chromium.org</owner>
+  <owner>hajimehoshi@ch40m1um.qjz9zk</owner>
+  <owner>bfcache-dev@ch40m1um.qjz9zk</owner>
   <summary>
     Records the time duration between the last time when the entry goes to the
     back-forward cache and the time when the process is killed.
@@ -151,9 +151,9 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram
     name="BackForwardCache.Experimental.UnexpectedIPCMessagePostedToCachedFrame.MethodHash"
     enum="MojoInterfaceName" expires_after="2021-03-28">
-  <owner>hbolaria@chromium.org</owner>
-  <owner>altimin@chromium.org</owner>
-  <owner>bfcache-dev@chromium.org</owner>
+  <owner>hbolaria@ch40m1um.qjz9zk</owner>
+  <owner>altimin@ch40m1um.qjz9zk</owner>
+  <owner>bfcache-dev@ch40m1um.qjz9zk</owner>
   <summary>
     Track number of times an unexpected IPC message is posted to frames in the
     renderer process while they are frozen in the back-forward cache. IPC tasks
@@ -169,9 +169,9 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram
     name="BackForwardCache.Experimental.UnexpectedIPCMessagePostedToCachedFrame.TimeUntilIPCReceived"
     units="ms" expires_after="2021-03-28">
-  <owner>hbolaria@chromium.org</owner>
-  <owner>altimin@chromium.org</owner>
-  <owner>bfcache-dev@chromium.org</owner>
+  <owner>hbolaria@ch40m1um.qjz9zk</owner>
+  <owner>altimin@ch40m1um.qjz9zk</owner>
+  <owner>bfcache-dev@ch40m1um.qjz9zk</owner>
   <summary>
     Duration between start of page being stored in the back-forward cache and
     when the unexpected IPC call is received by a frame while in the cache.
@@ -184,8 +184,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="BackForwardCache.HistoryNavigationOutcome"
     enum="BackForwardCacheHistoryNavigationOutcome" expires_after="2020-10-01">
-  <owner>hajimehoshi@chromium.org</owner>
-  <owner>bfcache-dev@chromium.org</owner>
+  <owner>hajimehoshi@ch40m1um.qjz9zk</owner>
+  <owner>bfcache-dev@ch40m1um.qjz9zk</owner>
   <summary>
     When navigating back to a page in the session history, this records whether
     the page was restored from the BackForwardCache or not.
@@ -198,8 +198,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="BackForwardCache.HistoryNavigationOutcome.BlocklistedFeature"
     enum="WebSchedulerTrackedFeature" expires_after="2021-02-07">
-  <owner>hajimehoshi@chromium.org</owner>
-  <owner>bfcache-dev@chromium.org</owner>
+  <owner>hajimehoshi@ch40m1um.qjz9zk</owner>
+  <owner>bfcache-dev@ch40m1um.qjz9zk</owner>
   <summary>
     When navigating back to a page in the session history, this records what
     blocklisted features were used when the page was loaded and prevented this
@@ -216,8 +216,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
     name="BackForwardCache.HistoryNavigationOutcome.BrowsingInstanceNotSwappedReason"
     enum="BackForwardCacheBrowsingInstanceNotSwappedReason"
     expires_after="2021-02-07">
-  <owner>hajimehoshi@chromium.org</owner>
-  <owner>bfcache-dev@chromium.org</owner>
+  <owner>hajimehoshi@ch40m1um.qjz9zk</owner>
+  <owner>bfcache-dev@ch40m1um.qjz9zk</owner>
   <summary>
     When navigating back to a page in the session history and the
     BackForwardCache wasn't used because of the related browsing instances, this
@@ -233,9 +233,9 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
     name="BackForwardCache.HistoryNavigationOutcome.DisabledForRenderFrameHostReason"
     enum="BackForwardCacheDisabledForRenderFrameHostReason"
     expires_after="2021-02-07">
-  <owner>carlscab@chromium.org</owner>
-  <owner>hajimehoshi@chromium.org</owner>
-  <owner>bfcache-dev@chromium.org</owner>
+  <owner>carlscab@ch40m1um.qjz9zk</owner>
+  <owner>hajimehoshi@ch40m1um.qjz9zk</owner>
+  <owner>bfcache-dev@ch40m1um.qjz9zk</owner>
   <summary>
     For history navigations, records the reasons passed to
     BackForwardCache::DisableForRenderFrameHost calls. These reasons are
@@ -255,8 +255,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="BackForwardCache.HistoryNavigationOutcome.NotRestoredReason"
     enum="BackForwardCacheNotRestoredReason" expires_after="2021-02-07">
-  <owner>hajimehoshi@chromium.org</owner>
-  <owner>bfcache-dev@chromium.org</owner>
+  <owner>hajimehoshi@ch40m1um.qjz9zk</owner>
+  <owner>bfcache-dev@ch40m1um.qjz9zk</owner>
   <summary>
     When navigating back to a page in the session history, record why it wasn't
     restored from the cache. The page might not have entered the back-forward in
@@ -271,9 +271,9 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="BackForwardCache.MainFrameHasPageshowListenersOnRestore"
     enum="BooleanPresent" expires_after="M82">
-  <owner>altimin@chromium.org</owner>
-  <owner>hajimehoshi@chromium.org</owner>
-  <owner>bfcache-dev@chromium.org</owner>
+  <owner>altimin@ch40m1um.qjz9zk</owner>
+  <owner>hajimehoshi@ch40m1um.qjz9zk</owner>
+  <owner>bfcache-dev@ch40m1um.qjz9zk</owner>
   <summary>
     Records whether a page restored from the back-forward cache has pageshow
     handlers installed in its main frame. Recorded when the renderer resumes
@@ -284,9 +284,9 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram
     name="BackForwardCache.ProactiveSameSiteBISwap.EligibilityDuringCommit"
     enum="BackForwardCacheEligibilityDuringCommit" expires_after="M88">
-  <owner>rakina@chromium.org</owner>
-  <owner>altimin@chromium.org</owner>
-  <owner>bfcache-dev@chromium.org</owner>
+  <owner>rakina@ch40m1um.qjz9zk</owner>
+  <owner>altimin@ch40m1um.qjz9zk</owner>
+  <owner>bfcache-dev@ch40m1um.qjz9zk</owner>
   <summary>
     Records whether a page where we did a same-site proactive BrowsingInstance
     swap on (with the intention on storing it in the back-forward cache later)
@@ -300,9 +300,9 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram
     name="BackForwardCache.ProactiveSameSiteBISwap.SameSiteNavigationDidSwap"
     enum="BackForwardCacheSameSiteNavigationDidSwap" expires_after="M88">
-  <owner>rakina@chromium.org</owner>
-  <owner>altimin@chromium.org</owner>
-  <owner>bfcache-dev@chromium.org</owner>
+  <owner>rakina@ch40m1um.qjz9zk</owner>
+  <owner>altimin@ch40m1um.qjz9zk</owner>
+  <owner>bfcache-dev@ch40m1um.qjz9zk</owner>
   <summary>
     Records whether we did a same-site proactive BrowsingInstance swap or not
     for a same-site cross-document navigation. Recorded when we are committing
@@ -313,9 +313,9 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram
     name="BackForwardCache.ProactiveSameSiteBISwap.UnloadRunsAfterCommit"
     enum="BackForwardCacheUnloadRunsAfterCommit" expires_after="M88">
-  <owner>rakina@chromium.org</owner>
-  <owner>altimin@chromium.org</owner>
-  <owner>bfcache-dev@chromium.org</owner>
+  <owner>rakina@ch40m1um.qjz9zk</owner>
+  <owner>altimin@ch40m1um.qjz9zk</owner>
+  <owner>bfcache-dev@ch40m1um.qjz9zk</owner>
   <summary>
     Records whether a page where we did a same-site proactive BrowsingInstance
     swap on (with the intention on storing it in the back-forward cache later)
@@ -330,9 +330,9 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram name="BackForwardCache.ReloadsAfterHistoryNavigation"
     enum="BackForwardCacheReloadsAfterHistoryNavigation"
     expires_after="2020-10-01">
-  <owner>sreejakshetty@chromium.org</owner>
-  <owner>altimin@chromium.org</owner>
-  <owner>bfcache-dev@chromium.org</owner>
+  <owner>sreejakshetty@ch40m1um.qjz9zk</owner>
+  <owner>altimin@ch40m1um.qjz9zk</owner>
+  <owner>bfcache-dev@ch40m1um.qjz9zk</owner>
   <summary>
     Records the number of reloads after a history navigation both for the cases
     when page is served and not served from back-forward cache.
@@ -346,9 +346,9 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram name="BackForwardCache.ReloadsAndHistoryNavigations"
     enum="BackForwardCacheReloadsAndHistoryNavigations"
     expires_after="2020-10-01">
-  <owner>sreejakshetty@chromium.org</owner>
-  <owner>altimin@chromium.org</owner>
-  <owner>bfcache-dev@chromium.org</owner>
+  <owner>sreejakshetty@ch40m1um.qjz9zk</owner>
+  <owner>altimin@ch40m1um.qjz9zk</owner>
+  <owner>bfcache-dev@ch40m1um.qjz9zk</owner>
   <summary>
     Records the total number of history navigations along with the number of
     reloads if the previous navigation was a history one.
@@ -360,9 +360,9 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="BackForwardCache.Restore.NavigationToFirstPaint" units="ms"
     expires_after="2020-12-06">
-  <owner>sreejakshetty@chromium.org</owner>
-  <owner>altimin@chromium.org</owner>
-  <owner>bfcache-dev@chromium.org</owner>
+  <owner>sreejakshetty@ch40m1um.qjz9zk</owner>
+  <owner>altimin@ch40m1um.qjz9zk</owner>
+  <owner>bfcache-dev@ch40m1um.qjz9zk</owner>
   <summary>
     Duration between start of navigation restoring a document from back-forward
     cache and the first paint.
@@ -374,9 +374,9 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="BackForwardCache.SameSite.ActionAfterPagehide2"
     enum="BackForwardCacheActionAfterPagehide" expires_after="M88">
-  <owner>rakina@chromium.org</owner>
-  <owner>altimin@chromium.org</owner>
-  <owner>bfcache-dev@chromium.org</owner>
+  <owner>rakina@ch40m1um.qjz9zk</owner>
+  <owner>altimin@ch40m1um.qjz9zk</owner>
+  <owner>bfcache-dev@ch40m1um.qjz9zk</owner>
   <summary>
     Records occurences of certain actions triggered by script running on a page
     after the pagehide event gets dispatched in the page, which might be
@@ -397,8 +397,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram
     name="BackForwardCache.UnexpectedRendererToBrowserMessage.InterfaceName"
     enum="MojoInterfaceName" expires_after="2021-03-07">
-  <owner>carlscab@google.com</owner>
-  <owner>bfcache-dev@chromium.org</owner>
+  <owner>carlscab@9oo91e.qjz9zk</owner>
+  <owner>bfcache-dev@ch40m1um.qjz9zk</owner>
   <summary>
     Hash (base::HashMetricName) of a mojo interface name.
 

@@ -126,15 +126,15 @@ testSuite({
   },
 
   testSafeUrlFromFacebookMessengerUrl_fbMessengerShareUrl() {
-    const expected = 'fb-messenger://share?link=https%3A%2F%2Fwww.google.com';
+    const expected = 'fb-messenger://share?link=https%3A%2F%2Fwww.9oo91e.qjz9zk';
     const observed = SafeUrl.fromFacebookMessengerUrl(
-        'fb-messenger://share?link=https%3A%2F%2Fwww.google.com');
+        'fb-messenger://share?link=https%3A%2F%2Fwww.9oo91e.qjz9zk');
     assertEquals(expected, SafeUrl.unwrap(observed));
   },
 
   testSafeUrlFromFacebookMessengerUrl_fbMessengerEvilUrl() {
     const observed = SafeUrl.fromFacebookMessengerUrl(
-        'fb-messenger://evil?link=https%3A%2F%2Fwww.google.com');
+        'fb-messenger://evil?link=https%3A%2F%2Fwww.9oo91e.qjz9zk');
     assertEquals(SafeUrl.INNOCUOUS_STRING, SafeUrl.unwrap(observed));
   },
 
@@ -336,7 +336,7 @@ testSuite({
 
   testSafeUrlSanitize_idempotentForSafeUrlArgument() {
     // This matches the safe prefix.
-    let safeUrl = SafeUrl.sanitize('https://www.google.com/');
+    let safeUrl = SafeUrl.sanitize('https://www.9oo91e.qjz9zk/');
     let safeUrl2 = SafeUrl.sanitize(safeUrl);
     assertEquals(SafeUrl.unwrap(safeUrl), SafeUrl.unwrap(safeUrl2));
 

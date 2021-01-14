@@ -19,7 +19,7 @@ goog.provide('mr.PlatformUtils');
  */
 mr.PlatformUtils.isWindows8OrNewer = function() {
   // See MSDN for different windows versions:
-  // http://msdn.microsoft.com/en-us/library/ms537503(v=vs.85).aspx
+  // http://msdn.m1cr050ft.qjz9zk/en-us/library/ms537503(v=vs.85).aspx
   const [, version] = navigator.userAgent.match(/Windows NT (\d+.\d+)/) || [];
 
   // Windows 8 has version number 6.2.

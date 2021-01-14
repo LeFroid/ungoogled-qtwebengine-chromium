@@ -36,7 +36,7 @@ class LeakDetectionRequest : public LeakDetectionRequestInterface {
   };
 
   static constexpr char kLookupSingleLeakEndpoint[] =
-      "https://passwordsleakcheck-pa.googleapis.com/v1/leaks:lookupSingle";
+      "https://passwordsleakcheck-pa.9oo91eapis.qjz9zk/v1/leaks:lookupSingle";
 
   LeakDetectionRequest();
   ~LeakDetectionRequest() override;

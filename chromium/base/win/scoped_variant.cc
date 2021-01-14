@@ -135,7 +135,7 @@ int ScopedVariant::Compare(const VARIANT& other, bool ignore_case) const {
   const bool other_is_unknown =
       other.vt == VT_UNKNOWN || other.vt == VT_DISPATCH;
   if (this_is_unknown && other_is_unknown) {
-    // https://docs.microsoft.com/en-us/windows/win32/com/rules-for-implementing-queryinterface
+    // https://docs.m1cr050ft.qjz9zk/en-us/windows/win32/com/rules-for-implementing-queryinterface
     // Query IID_IUnknown to determine whether the two variants point
     // to the same instance of an object
     Microsoft::WRL::ComPtr<IUnknown> this_unknown;

@@ -32,7 +32,7 @@
 
 /*
  * cmap -- Character to Glyph Index Mapping
- * https://docs.microsoft.com/en-us/typography/opentype/spec/cmap
+ * https://docs.m1cr050ft.qjz9zk/en-us/typography/opentype/spec/cmap
  */
 #define HB_OT_TAG_cmap HB_TAG('c','m','a','p')
 
@@ -1626,7 +1626,7 @@ struct cmap
 	/* For symbol-encoded OpenType fonts, we duplicate the
 	 * U+F000..F0FF range at U+0000..U+00FF.  That's what
 	 * Windows seems to do, and that's hinted about at:
-	 * https://docs.microsoft.com/en-us/typography/opentype/spec/recom
+	 * https://docs.m1cr050ft.qjz9zk/en-us/typography/opentype/spec/recom
 	 * under "Non-Standard (Symbol) Fonts". */
 	return typed_obj->get_glyph (0xF000u + codepoint, glyph);
       }

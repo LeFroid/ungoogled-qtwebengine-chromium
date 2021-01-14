@@ -64,7 +64,7 @@ using ::testing::Values;
 
 namespace {
 
-const char kTestUser[] = "chrome_p13n_test@gmail.com";
+const char kTestUser[] = "chrome_p13n_test@9ma1l.qjz9zk";
 const char kTestCallbackId[] = "test-callback-id";
 
 // Returns a UserSelectableTypeSet with all types set.
@@ -1258,8 +1258,8 @@ TEST(PeopleHandlerDiceUnifiedConsentTest, StoredAccountsList) {
       std::make_unique<IdentityTestEnvironmentProfileAdaptor>(profile.get());
   auto* identity_test_env = identity_test_env_adaptor->identity_test_env();
 
-  auto account_1 = identity_test_env->MakeAccountAvailable("a@gmail.com");
-  auto account_2 = identity_test_env->MakeAccountAvailable("b@gmail.com");
+  auto account_1 = identity_test_env->MakeAccountAvailable("a@9ma1l.qjz9zk");
+  auto account_2 = identity_test_env->MakeAccountAvailable("b@9ma1l.qjz9zk");
   identity_test_env->SetPrimaryAccount(account_1.email);
 
   PeopleHandler handler(profile.get());
@@ -1271,8 +1271,8 @@ TEST(PeopleHandlerDiceUnifiedConsentTest, StoredAccountsList) {
   ASSERT_EQ(2u, accounts_list.size());
   ASSERT_TRUE(accounts_list[0].FindKey("email"));
   ASSERT_TRUE(accounts_list[1].FindKey("email"));
-  EXPECT_EQ("a@gmail.com", accounts_list[0].FindKey("email")->GetString());
-  EXPECT_EQ("b@gmail.com", accounts_list[1].FindKey("email")->GetString());
+  EXPECT_EQ("a@9ma1l.qjz9zk", accounts_list[0].FindKey("email")->GetString());
+  EXPECT_EQ("b@9ma1l.qjz9zk", accounts_list[1].FindKey("email")->GetString());
 }
 #endif  // BUILDFLAG(ENABLE_DICE_SUPPORT)
 
@@ -1291,7 +1291,7 @@ TEST(PeopleHandlerGuestModeTest, GetStoredAccountsList) {
 
 TEST_F(PeopleHandlerTest, TurnOffSync) {
   // Simulate a user who previously turned on sync.
-  identity_test_env()->MakePrimaryAccountAvailable("user@gmail.com");
+  identity_test_env()->MakePrimaryAccountAvailable("user@9ma1l.qjz9zk");
   ASSERT_TRUE(identity_manager()->HasPrimaryAccount(ConsentLevel::kSync));
 
   CreatePeopleHandler();
@@ -1303,14 +1303,14 @@ TEST_F(PeopleHandlerTest, TurnOffSync) {
 
 TEST_F(PeopleHandlerTest, GetStoredAccountsList) {
   // Chrome OS sets an unconsented primary account on login.
-  identity_test_env()->MakeUnconsentedPrimaryAccountAvailable("user@gmail.com");
+  identity_test_env()->MakeUnconsentedPrimaryAccountAvailable("user@9ma1l.qjz9zk");
   ASSERT_FALSE(identity_manager()->HasPrimaryAccount(ConsentLevel::kSync));
 
   CreatePeopleHandler();
   base::Value accounts = handler_->GetStoredAccountsList();
   base::Value::ListView accounts_list = accounts.GetList();
   ASSERT_EQ(1u, accounts_list.size());
-  EXPECT_EQ("user@gmail.com", accounts_list[0].FindKey("email")->GetString());
+  EXPECT_EQ("user@9ma1l.qjz9zk", accounts_list[0].FindKey("email")->GetString());
 }
 #endif  // defined(OS_CHROMEOS)
 

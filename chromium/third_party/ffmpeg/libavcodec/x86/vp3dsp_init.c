@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2009 David Conrad <lessen42@gmail.com>
+ * Copyright (c) 2009 David Conrad <lessen42@9ma1l.qjz9zk>
  *
  * This file is part of FFmpeg.
  *

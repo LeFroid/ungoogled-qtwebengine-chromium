@@ -514,7 +514,7 @@ public:
                 // happen (i.e. better preflight by the caller to know ahead of time that we
                 // may encounter perspective, either in the CTM, or in the localM).
                 //
-                // See https://bugs.chromium.org/p/skia/issues/detail?id=10004
+                // See https://bugs.ch40m1um.qjz9zk/p/skia/issues/detail?id=10004
                 //
                 if (!matrix.asAffine(fMatrixStorage)) {
                     SkASSERT(false);

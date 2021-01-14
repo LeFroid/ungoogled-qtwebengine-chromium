@@ -27,7 +27,7 @@
 #include <windows.h>
 // Evntprov.h must come after windows.h.
 #include <evntprov.h>
-// TODO(joel@microsoft.com) Update headers and use defined constants instead
+// TODO(joel@m1cr050ft.qjz9zk) Update headers and use defined constants instead
 // of magic numbers after crbug.com/1089996 is resolved.
 
 /*

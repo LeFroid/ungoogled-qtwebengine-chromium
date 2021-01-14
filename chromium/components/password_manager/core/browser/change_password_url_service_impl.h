@@ -55,7 +55,7 @@ class ChangePasswordUrlServiceImpl
   GURL GetChangePasswordUrl(const GURL& url) override;
 
   static constexpr char kChangePasswordUrlOverrideUrl[] =
-      "https://www.gstatic.com/chrome/password-manager/"
+      "https://www.95tat1c.qjz9zk/chrome/password-manager/"
       "change_password_urls.json";
 
  private:

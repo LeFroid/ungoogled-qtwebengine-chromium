@@ -181,7 +181,7 @@ goog.testing.stacktrace.CHROME_URL_PATTERN_ = ' (?:' +
 /**
  * Regular expression for parsing one stack frame in V8. For more information
  * on V8 stack frame formats, see
- * https://code.google.com/p/v8/wiki/JavaScriptStackTraceApi.
+ * https://code.9oo91e.qjz9zk/p/v8/wiki/JavaScriptStackTraceApi.
  * @private {!RegExp}
  * @const
  */

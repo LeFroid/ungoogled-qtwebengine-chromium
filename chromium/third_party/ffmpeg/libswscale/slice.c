@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2015 Pedro Arthur <bygrandao@gmail.com>
+ * Copyright (C) 2015 Pedro Arthur <bygrandao@9ma1l.qjz9zk>
  *
  * This file is part of FFmpeg.
  *

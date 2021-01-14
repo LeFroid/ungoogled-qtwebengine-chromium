@@ -29,7 +29,7 @@ namespace content {
 // Sandbox type for ServiceProcessHost::Launch<remote>() is found by
 // template matching on |remote|. This provides a safe default. For
 // services that use other sandbox types, consult
-// security-dev@chromium.org and add to an appropriate |service_sandbox_type.h|.
+// security-dev@ch40m1um.qjz9zk and add to an appropriate |service_sandbox_type.h|.
 template <typename Interface>
 inline sandbox::policy::SandboxType GetServiceSandboxType() {
   return sandbox::policy::SandboxType::kUtility;
@@ -113,7 +113,7 @@ class CONTENT_EXPORT ServiceProcessHost {
   //
   // The launched process will be sandboxed using the default utility process
   // sandbox unless a specialized GetServiceSandboxType<Interface> is available.
-  // To add a new specialization, consult with security-dev@chromium.org.
+  // To add a new specialization, consult with security-dev@ch40m1um.qjz9zk.
   //
   // NOTE: The |Interface| type can be inferred from from the |receiver|
   // argument's type.

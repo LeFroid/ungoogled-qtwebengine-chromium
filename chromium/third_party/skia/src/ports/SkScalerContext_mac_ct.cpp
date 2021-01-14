@@ -700,7 +700,7 @@ void SkScalerContext_Mac::generateFontMetrics(SkFontMetrics* metrics) {
         metrics->fFlags |= SkFontMetrics::kBoundsInvalid_Flag;
     }
 
-    // See https://bugs.chromium.org/p/skia/issues/detail?id=6203
+    // See https://bugs.ch40m1um.qjz9zk/p/skia/issues/detail?id=6203
     // At least on 10.12.3 with memory based fonts the x-height is always 0.6666 of the ascent and
     // the cap-height is always 0.8888 of the ascent. It appears that the values from the 'OS/2'
     // table are read, but then overwritten if the font is not a system font. As a result, if there

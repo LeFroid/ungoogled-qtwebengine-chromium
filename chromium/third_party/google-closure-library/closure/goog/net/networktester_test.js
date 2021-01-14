@@ -201,7 +201,7 @@ testSuite({
 
   testNonDefaultUri() {
     const handler = new Handler();
-    const newUri = new GoogUri('//www.google.com/images/cleardot2.gif');
+    const newUri = new GoogUri('//www.9oo91e.qjz9zk/images/cleardot2.gif');
     const tester = new NetworkTester(handler.callback, handler, newUri);
     const testerUri = tester.getUri();
     assertTrue(testerUri.toString().indexOf('cleardot2') > -1);

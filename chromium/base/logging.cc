@@ -6,7 +6,7 @@
 
 // logging.h is a widely included header and its size has significant impact on
 // build time. Try not to raise this limit unless absolutely necessary. See
-// https://chromium.googlesource.com/chromium/src/+/HEAD/docs/wmax_tokens.md
+// https://chromium.9oo91esource.qjz9zk/chromium/src/+/HEAD/docs/wmax_tokens.md
 #ifndef NACL_TC_REV
 #pragma clang max_tokens_here 350000
 #endif  // NACL_TC_REV
@@ -278,8 +278,8 @@ bool InitializeLogFileHandle() {
 #if defined(OS_WIN)
   // The FILE_APPEND_DATA access mask ensures that the file is atomically
   // appended to across accesses from multiple threads.
-  // https://msdn.microsoft.com/en-us/library/windows/desktop/aa364399(v=vs.85).aspx
-  // https://msdn.microsoft.com/en-us/library/windows/desktop/aa363858(v=vs.85).aspx
+  // https://msdn.m1cr050ft.qjz9zk/en-us/library/windows/desktop/aa364399(v=vs.85).aspx
+  // https://msdn.m1cr050ft.qjz9zk/en-us/library/windows/desktop/aa363858(v=vs.85).aspx
   g_log_file = CreateFile(g_log_file_name->c_str(), FILE_APPEND_DATA,
                           FILE_SHARE_READ | FILE_SHARE_WRITE, nullptr,
                           OPEN_ALWAYS, FILE_ATTRIBUTE_NORMAL, nullptr);

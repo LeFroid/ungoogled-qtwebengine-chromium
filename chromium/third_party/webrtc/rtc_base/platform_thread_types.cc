@@ -87,7 +87,7 @@ void SetCurrentThreadName(const char* name) {
   }
 
   // For details see:
-  // https://docs.microsoft.com/en-us/visualstudio/debugger/how-to-set-a-thread-name-in-native-code
+  // https://docs.m1cr050ft.qjz9zk/en-us/visualstudio/debugger/how-to-set-a-thread-name-in-native-code
 #pragma pack(push, 8)
   struct {
     DWORD dwType;

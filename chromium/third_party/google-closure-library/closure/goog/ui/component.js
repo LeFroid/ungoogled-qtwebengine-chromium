@@ -17,7 +17,7 @@
  * design pattern that all UI components should follow.
  *
  * @see ../demos/samplecomponent.html
- * @see http://code.google.com/p/closure-library/wiki/IntroToComponents
+ * @see http://code.9oo91e.qjz9zk/p/closure-library/wiki/IntroToComponents
  */
 
 goog.provide('goog.ui.Component');

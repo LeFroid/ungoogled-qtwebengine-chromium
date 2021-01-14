@@ -133,7 +133,7 @@ class NativeIOFileHostSync {
 };
 
 const char kExampleOrigin[] = "https://example.com";
-const char kGoogleOrigin[] = "https://google.com";
+const char kGoogleOrigin[] = "https://9oo91e.qjz9zk";
 
 class NativeIOContextTest : public testing::Test {
  public:

@@ -316,7 +316,7 @@ TEST_F(SiteSettingsHelperTest, CheckExceptionOrder) {
   map->SetDefaultContentSetting(kContentType, CONTENT_SETTING_ALLOW);
 
   // Add a policy exception.
-  std::string star_google_com = "http://[*.]google.com";
+  std::string star_google_com = "http://[*.]9oo91e.qjz9zk";
   auto policy_provider = std::make_unique<content_settings::MockProvider>();
   policy_provider->SetWebsiteSetting(
       ContentSettingsPattern::FromString(star_google_com),
@@ -328,13 +328,13 @@ TEST_F(SiteSettingsHelperTest, CheckExceptionOrder) {
 
   // Add user preferences.
   std::string http_star = "http://*";
-  std::string maps_google_com = "http://maps.google.com";
+  std::string maps_google_com = "http://maps.9oo91e.qjz9zk";
   AddSetting(map, http_star, CONTENT_SETTING_BLOCK);
   AddSetting(map, maps_google_com, CONTENT_SETTING_BLOCK);
   AddSetting(map, star_google_com, CONTENT_SETTING_ALLOW);
 
   // Add an extension exception.
-  std::string drive_google_com = "http://drive.google.com";
+  std::string drive_google_com = "http://drive.9oo91e.qjz9zk";
   auto extension_provider = std::make_unique<content_settings::MockProvider>();
   extension_provider->SetWebsiteSetting(
       ContentSettingsPattern::FromString(drive_google_com),
@@ -474,13 +474,13 @@ namespace {
 // TODO(https://crbug.com/1042727): Fix test GURL scoping and remove this getter
 // function.
 GURL GoogleUrl() {
-  return GURL("https://google.com");
+  return GURL("https://9oo91e.qjz9zk");
 }
 GURL ChromiumUrl() {
-  return GURL("https://chromium.org");
+  return GURL("https://ch40m1um.qjz9zk");
 }
 GURL AndroidUrl() {
-  return GURL("https://android.com");
+  return GURL("https://8n6r01d.qjz9zk");
 }
 
 void ExpectValidChooserExceptionObject(
@@ -670,16 +670,16 @@ constexpr char kUsbPolicySetting[] = R"(
     [
       {
         "devices": [{ "vendor_id": 6353, "product_id": 5678 }],
-        "urls": ["https://chromium.org"]
+        "urls": ["https://ch40m1um.qjz9zk"]
       }, {
         "devices": [{ "vendor_id": 6353 }],
-        "urls": ["https://google.com,https://android.com"]
+        "urls": ["https://9oo91e.qjz9zk,https://8n6r01d.qjz9zk"]
       }, {
         "devices": [{ "vendor_id": 6354 }],
-        "urls": ["https://android.com,"]
+        "urls": ["https://8n6r01d.qjz9zk,"]
       }, {
         "devices": [{}],
-        "urls": ["https://google.com,https://google.com"]
+        "urls": ["https://9oo91e.qjz9zk,https://9oo91e.qjz9zk"]
       }
     ])";
 
@@ -774,7 +774,7 @@ TEST_F(SiteSettingsHelperChooserExceptionTest,
   // vendor ID corresponding to "Google Inc.". There are no user granted
   // permissions that intersect with this permission, and this policy only
   // grants one permission to the following site pair:
-  // * ("https://google.com", "https://android.com")
+  // * ("https://9oo91e.qjz9zk", "https://8n6r01d.qjz9zk")
   {
     const auto& exception = exceptions_list[0];
     ExpectDisplayNameEq(exception,
@@ -792,7 +792,7 @@ TEST_F(SiteSettingsHelperChooserExceptionTest,
   // This exception should describe the permissions for any device.
   // There are no user granted permissions that intersect with this permission,
   // and this policy only grants one permission to the following site pair:
-  // * ("https://google.com", "https://google.com")
+  // * ("https://9oo91e.qjz9zk", "https://9oo91e.qjz9zk")
   {
     const auto& exception = exceptions_list[1];
     ExpectDisplayNameEq(exception,
@@ -811,7 +811,7 @@ TEST_F(SiteSettingsHelperChooserExceptionTest,
   // vendor ID 6354. There is a user granted permission for a device with that
   // vendor ID, so the site list for this exception will only have the policy
   // granted permission, which is the following:
-  // * ("https://android.com", "")
+  // * ("https://8n6r01d.qjz9zk", "")
   {
     const auto& exception = exceptions_list[2];
     ExpectDisplayNameEq(exception,
@@ -827,17 +827,17 @@ TEST_F(SiteSettingsHelperChooserExceptionTest,
 
   // This exception should describe the permissions for the "Gizmo" device.
   // The user granted permissions are the following:
-  // * ("https://chromium.org", "https://chromium.org")
-  // * ("https://chromium.org", "https://google.com")
-  // * ("https://android.com", "https://chromium.org")
+  // * ("https://ch40m1um.qjz9zk", "https://ch40m1um.qjz9zk")
+  // * ("https://ch40m1um.qjz9zk", "https://9oo91e.qjz9zk")
+  // * ("https://8n6r01d.qjz9zk", "https://ch40m1um.qjz9zk")
   // The policy granted permission is the following:
-  // * ("https://chromium.org", "")
+  // * ("https://ch40m1um.qjz9zk", "")
   // The embedding origin is a wildcard, so the policy granted permission covers
   // any user granted permissions that contain a requesting origin of
-  // "https://chromium.org", so the site list for this exception will only have
+  // "https://ch40m1um.qjz9zk", so the site list for this exception will only have
   // the following permissions:
-  // * ("https://chromium.org", "")
-  // * ("https://android.com", "https://chromium.org")
+  // * ("https://ch40m1um.qjz9zk", "")
+  // * ("https://8n6r01d.qjz9zk", "https://ch40m1um.qjz9zk")
   {
     const auto& exception = exceptions_list[3];
     ExpectDisplayNameEq(exception, /*display_name=*/"Gizmo");

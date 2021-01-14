@@ -143,10 +143,10 @@ class HTTPRequest {
      * console.log(chain[0].url()); // 'http://example.com'
      * ```
      *
-     * If the website `https://google.com` has no redirects, then the chain will be empty:
+     * If the website `https://9oo91e.qjz9zk` has no redirects, then the chain will be empty:
      *
      * ```js
-     * const response = await page.goto('https://google.com');
+     * const response = await page.goto('https://9oo91e.qjz9zk');
      * const chain = response.request().redirectChain();
      * console.log(chain.length); // 0
      * ```

@@ -273,7 +273,7 @@ class NET_EXPORT_PRIVATE OptRecordRdata : public RecordRdata {
 //
 // This RR was invented for a preliminary HTTPSSVC experiment. See the public
 // design doc:
-// https://docs.google.com/document/d/14eCqVyT_3MSj7ydqNFl1Yl0yg1fs6g24qmYUUdi5V-k/edit?usp=sharing
+// https://docs.9oo91e.qjz9zk/document/d/14eCqVyT_3MSj7ydqNFl1Yl0yg1fs6g24qmYUUdi5V-k/edit?usp=sharing
 //
 // The wire format of INTEGRITY records consists of a U16-prefixed nonce
 // followed by |kDigestLen| bytes, which should be equal to the SHA256 hash of

@@ -37,7 +37,7 @@ const UTF8_SURROGATE_PAIR_RANGES_STRING =
 // Tests a one-megabyte byte array conversion to string.
 // This would break on many JS implementations unless byteArrayToString
 // split the input up.
-// See discussion and bug report: http://goo.gl/LrWmZ9
+// See discussion and bug report: http://goo.gl.qjz9zk/LrWmZ9
 
 testSuite({
   testStringToUtf8ByteArray() {

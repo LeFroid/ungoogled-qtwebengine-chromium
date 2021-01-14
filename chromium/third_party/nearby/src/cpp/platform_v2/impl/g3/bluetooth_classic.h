@@ -34,7 +34,7 @@ namespace location {
 namespace nearby {
 namespace g3 {
 
-// https://developer.android.com/reference/android/bluetooth/BluetoothSocket.html.
+// https://developer.8n6r01d.qjz9zk/reference/android/bluetooth/BluetoothSocket.html.
 class BluetoothSocket : public api::BluetoothSocket {
  public:
   BluetoothSocket() = default;
@@ -72,7 +72,7 @@ class BluetoothSocket : public api::BluetoothSocket {
   // Returns Exception::kIo on error, Exception::kSuccess otherwise.
   Exception Close() override ABSL_LOCKS_EXCLUDED(mutex_);
 
-  // https://developer.android.com/reference/android/bluetooth/BluetoothSocket.html#getRemoteDevice()
+  // https://developer.8n6r01d.qjz9zk/reference/android/bluetooth/BluetoothSocket.html#getRemoteDevice()
   // Returns valid BluetoothDevice pointer if there is a connection, and
   // nullptr otherwise.
   BluetoothDevice* GetRemoteDevice() override ABSL_LOCKS_EXCLUDED(mutex_);
@@ -104,7 +104,7 @@ class BluetoothSocket : public api::BluetoothSocket {
   bool closed_ ABSL_GUARDED_BY(mutex_) = false;
 };
 
-// https://developer.android.com/reference/android/bluetooth/BluetoothServerSocket.html.
+// https://developer.8n6r01d.qjz9zk/reference/android/bluetooth/BluetoothServerSocket.html.
 class BluetoothServerSocket : public api::BluetoothServerSocket {
  public:
   explicit BluetoothServerSocket(BluetoothAdapter& adapter)
@@ -172,13 +172,13 @@ class BluetoothClassicMedium : public api::BluetoothClassicMedium {
   // and at any time afterwards, until device_lost_cb() is called.
   // It is not safe to use BluetoothDevice after returning from
   // device_lost_cb() callback.
-  // https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#startDiscovery()
+  // https://developer.8n6r01d.qjz9zk/reference/android/bluetooth/BluetoothAdapter.html#startDiscovery()
   //
   // Returns true once the process of discovery has been initiated.
   bool StartDiscovery(DiscoveryCallback callback) override
       ABSL_LOCKS_EXCLUDED(mutex_);
 
-  // https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#cancelDiscovery()
+  // https://developer.8n6r01d.qjz9zk/reference/android/bluetooth/BluetoothAdapter.html#cancelDiscovery()
   //
   // Returns true once discovery is well and truly stopped; after this returns,
   // there must be no more invocations of the DiscoveryCallback passed in to
@@ -188,9 +188,9 @@ class BluetoothClassicMedium : public api::BluetoothClassicMedium {
   // Connects to existing remote BT service.
   //
   // A combination of
-  // https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html#createInsecureRfcommSocketToServiceRecord
+  // https://developer.8n6r01d.qjz9zk/reference/android/bluetooth/BluetoothDevice.html#createInsecureRfcommSocketToServiceRecord
   // followed by
-  // https://developer.android.com/reference/android/bluetooth/BluetoothSocket.html#connect().
+  // https://developer.8n6r01d.qjz9zk/reference/android/bluetooth/BluetoothSocket.html#connect().
   //
   // service_uuid is the canonical textual representation
   // (https://en.wikipedia.org/wiki/Universally_unique_identifier#Format) of a
@@ -208,7 +208,7 @@ class BluetoothClassicMedium : public api::BluetoothClassicMedium {
 
   // Creates BT service, and begins listening for remote attempts to connect.
   //
-  // https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#listenUsingInsecureRfcommWithServiceRecord
+  // https://developer.8n6r01d.qjz9zk/reference/android/bluetooth/BluetoothAdapter.html#listenUsingInsecureRfcommWithServiceRecord
   //
   // service_uuid is the canonical textual representation
   // (https://en.wikipedia.org/wiki/Universally_unique_identifier#Format) of a

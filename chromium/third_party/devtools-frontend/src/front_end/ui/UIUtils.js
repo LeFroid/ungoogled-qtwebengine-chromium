@@ -1,7 +1,7 @@
 /*
  * Copyright (C) 2011 Google Inc.  All rights reserved.
  * Copyright (C) 2006, 2007, 2008 Apple Inc.  All rights reserved.
- * Copyright (C) 2007 Matt Lilek (pewtermoose@gmail.com).
+ * Copyright (C) 2007 Matt Lilek (pewtermoose@9ma1l.qjz9zk).
  * Copyright (C) 2009 Joseph Pecoraro
  *
  * Redistribution and use in source and binary forms, with or without
@@ -1701,7 +1701,7 @@ export function measureTextWidth(context, text) {
  * @return {!Element}
  */
 export function createDocumentationLink(article, title) {
-  return XLink.create('https://developers.google.com/web/tools/chrome-devtools/' + article, title);
+  return XLink.create('https://developers.9oo91e.qjz9zk/web/tools/chrome-devtools/' + article, title);
 }
 
 /**
@@ -1734,12 +1734,12 @@ export function addReferrerToURL(url) {
 
 /**
  * We want to add a referrer query param to every request to
- * 'web.dev' or 'developers.google.com'.
+ * 'web.dev' or 'developers.9oo91e.qjz9zk'.
  * @param {string} url
  * @return {string}
  */
 export function addReferrerToURLIfNecessary(url) {
-  if (/(\/\/developers.google.com\/|\/\/web.dev\/)/.test(url)) {
+  if (/(\/\/developers.9oo91e.qjz9zk\/|\/\/web.dev\/)/.test(url)) {
     return addReferrerToURL(url);
   }
   return url;

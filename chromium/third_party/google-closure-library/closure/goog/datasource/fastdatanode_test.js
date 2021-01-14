@@ -35,12 +35,12 @@ function verifyDataChangeEvents(expected) {
 
 testSuite({
   setUp() {
-    simpleObject = {Name: 'Jon Doe', Email: 'jon.doe@gmail.com'};
+    simpleObject = {Name: 'Jon Doe', Email: 'jon.doe@9ma1l.qjz9zk'};
     complexObject = {
       Name: 'Jon Doe',
-      Email: 'jon.doe@gmail.com',
+      Email: 'jon.doe@9ma1l.qjz9zk',
       Emails: [
-        {Address: 'jon.doe@gmail.com', Type: 'Home'},
+        {Address: 'jon.doe@9ma1l.qjz9zk', Type: 'Home'},
         {Address: 'jon.doe@workplace.com', Type: 'Work'},
       ],
       GroupIds: [23, 42],
@@ -74,7 +74,7 @@ testSuite({
     const name = node.getChildNode('Name');
     const email = node.getChildNode('Email');
     assertEquals('Jon Doe', name.get());
-    assertEquals('jon.doe@gmail.com', email.get());
+    assertEquals('jon.doe@9ma1l.qjz9zk', email.get());
 
     assertEquals('Name', name.getDataName());
     assertEquals('Simple/Name', name.getDataPath());
@@ -93,7 +93,7 @@ testSuite({
     }
     googArray.sort(childValues);
     assertEquals('Jon Doe', childValues[0]);
-    assertEquals('jon.doe@gmail.com', childValues[1]);
+    assertEquals('jon.doe@9ma1l.qjz9zk', childValues[1]);
   },
 
   testGetDistinguishesBetweenOverloads() {
@@ -113,7 +113,7 @@ testSuite({
     assertEquals('Jon Doe', node.getChildNodeValue('Name'));
     const emails = node.getChildNode('Emails');
     assertEquals(
-        'jon.doe@gmail.com',
+        'jon.doe@9ma1l.qjz9zk',
         emails.getChildNode('[0]').getChildNodeValue('Address'));
     assertEquals(
         'jon.doe@workplace.com',
@@ -130,7 +130,7 @@ testSuite({
     const childValues = emails.getChildNodes();
     assertEquals(2, childValues.getCount());
     assertEquals(
-        'jon.doe@gmail.com',
+        'jon.doe@9ma1l.qjz9zk',
         childValues.getByIndex(0).getChildNodeValue('Address'));
   },
 

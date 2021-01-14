@@ -78,10 +78,10 @@ class MultiStorePasswordSaveManagerTest : public testing::Test {
   MultiStorePasswordSaveManagerTest()
       : votes_uploader_(&client_,
                         false /* is_possible_change_password_form */) {
-    GURL origin = GURL("https://accounts.google.com/a/ServiceLoginAuth");
-    GURL action = GURL("https://accounts.google.com/a/ServiceLogin");
-    GURL psl_origin = GURL("https://myaccounts.google.com/a/ServiceLoginAuth");
-    GURL psl_action = GURL("https://myaccounts.google.com/a/ServiceLogin");
+    GURL origin = GURL("https://accounts.9oo91e.qjz9zk/a/ServiceLoginAuth");
+    GURL action = GURL("https://accounts.9oo91e.qjz9zk/a/ServiceLogin");
+    GURL psl_origin = GURL("https://myaccounts.9oo91e.qjz9zk/a/ServiceLoginAuth");
+    GURL psl_action = GURL("https://myaccounts.9oo91e.qjz9zk/a/ServiceLogin");
 
     observed_form_.url = origin;
     observed_form_.action = action;
@@ -117,8 +117,8 @@ class MultiStorePasswordSaveManagerTest : public testing::Test {
 
     saved_match_.url = origin;
     saved_match_.action = action;
-    saved_match_.signon_realm = "https://accounts.google.com/";
-    saved_match_.username_value = ASCIIToUTF16("test@gmail.com");
+    saved_match_.signon_realm = "https://accounts.9oo91e.qjz9zk/";
+    saved_match_.username_value = ASCIIToUTF16("test@9ma1l.qjz9zk");
     saved_match_.username_element = ASCIIToUTF16("field1");
     saved_match_.password_value = ASCIIToUTF16("test1");
     saved_match_.password_element = ASCIIToUTF16("field2");
@@ -128,7 +128,7 @@ class MultiStorePasswordSaveManagerTest : public testing::Test {
     psl_saved_match_ = saved_match_;
     psl_saved_match_.url = psl_origin;
     psl_saved_match_.action = psl_action;
-    psl_saved_match_.signon_realm = "https://myaccounts.google.com/";
+    psl_saved_match_.signon_realm = "https://myaccounts.9oo91e.qjz9zk/";
     psl_saved_match_.is_public_suffix_match = true;
 
     parsed_observed_form_ = saved_match_;
@@ -190,10 +190,10 @@ class MultiStorePasswordSaveManagerTest : public testing::Test {
   PasswordForm CreateSavedFederated() {
     PasswordForm federated;
     federated.url = GURL("https://example.in/login");
-    federated.signon_realm = "federation://example.in/google.com";
+    federated.signon_realm = "federation://example.in/9oo91e.qjz9zk";
     federated.type = PasswordForm::Type::kApi;
     federated.federation_origin =
-        url::Origin::Create(GURL("https://google.com/"));
+        url::Origin::Create(GURL("https://9oo91e.qjz9zk/"));
     federated.username_value = ASCIIToUTF16("federated_username");
     return federated;
   }
@@ -355,7 +355,7 @@ TEST_F(MultiStorePasswordSaveManagerTest, UpdateInBothStores) {
   PasswordForm saved_match_in_profile_store(saved_match_in_account_store);
   saved_match_in_profile_store.in_store = PasswordForm::Store::kProfileStore;
   autofill::GaiaIdHash user_id_hash =
-      autofill::GaiaIdHash::FromGaiaId("user@gmail.com");
+      autofill::GaiaIdHash::FromGaiaId("user@9ma1l.qjz9zk");
   saved_match_in_profile_store.moving_blocked_for_list.push_back(user_id_hash);
 
   SetNonFederatedAndNotifyFetchCompleted(
@@ -417,7 +417,7 @@ TEST_F(MultiStorePasswordSaveManagerTest, AutomaticSaveInBothStores) {
       base::Time::Now() - base::TimeDelta::FromDays(10);
   saved_match_in_profile_store.times_used = 10;
   saved_match_in_profile_store.moving_blocked_for_list.push_back(
-      autofill::GaiaIdHash::FromGaiaId("email@gmail.com"));
+      autofill::GaiaIdHash::FromGaiaId("email@9ma1l.qjz9zk"));
 
   PasswordForm saved_match_in_account_store(saved_match_in_profile_store);
   saved_match_in_account_store.in_store = PasswordForm::Store::kAccountStore;
@@ -766,7 +766,7 @@ TEST_F(MultiStorePasswordSaveManagerTest,
   PasswordForm saved_match_in_profile_store(saved_match_);
   saved_match_in_profile_store.in_store = PasswordForm::Store::kProfileStore;
   saved_match_in_profile_store.moving_blocked_for_list.push_back(
-      autofill::GaiaIdHash::FromGaiaId("user@gmail.com"));
+      autofill::GaiaIdHash::FromGaiaId("user@9ma1l.qjz9zk"));
   SetNonFederatedAndNotifyFetchCompleted({&saved_match_in_profile_store});
 
   password_save_manager()->CreatePendingCredentials(
@@ -794,7 +794,7 @@ TEST_F(MultiStorePasswordSaveManagerTest,
   PasswordForm saved_match_in_profile_store(saved_match_);
   saved_match_in_profile_store.in_store = PasswordForm::Store::kProfileStore;
   saved_match_in_profile_store.moving_blocked_for_list.push_back(
-      autofill::GaiaIdHash::FromGaiaId("user@gmail.com"));
+      autofill::GaiaIdHash::FromGaiaId("user@9ma1l.qjz9zk"));
   SetNonFederatedAndNotifyFetchCompleted({&saved_match_in_profile_store});
 
   password_save_manager()->CreatePendingCredentials(
@@ -937,9 +937,9 @@ TEST_F(MultiStorePasswordSaveManagerTest,
 
 TEST_F(MultiStorePasswordSaveManagerTest, BlockMovingWhenExistsInProfileStore) {
   autofill::GaiaIdHash user1_id_hash =
-      autofill::GaiaIdHash::FromGaiaId("user1@gmail.com");
+      autofill::GaiaIdHash::FromGaiaId("user1@9ma1l.qjz9zk");
   autofill::GaiaIdHash user2_id_hash =
-      autofill::GaiaIdHash::FromGaiaId("user2@gmail.com");
+      autofill::GaiaIdHash::FromGaiaId("user2@9ma1l.qjz9zk");
 
   PasswordForm profile_saved_match(saved_match_);
   profile_saved_match.username_value = parsed_submitted_form_.username_value;
@@ -967,9 +967,9 @@ TEST_F(MultiStorePasswordSaveManagerTest, BlockMovingWhenExistsInProfileStore) {
 
 TEST_F(MultiStorePasswordSaveManagerTest, BlockMovingWhenExistsInBothStores) {
   autofill::GaiaIdHash user1_id_hash =
-      autofill::GaiaIdHash::FromGaiaId("user1@gmail.com");
+      autofill::GaiaIdHash::FromGaiaId("user1@9ma1l.qjz9zk");
   autofill::GaiaIdHash user2_id_hash =
-      autofill::GaiaIdHash::FromGaiaId("user2@gmail.com");
+      autofill::GaiaIdHash::FromGaiaId("user2@9ma1l.qjz9zk");
 
   PasswordForm account_saved_match(saved_match_);
   account_saved_match.username_value = parsed_submitted_form_.username_value;

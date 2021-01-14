@@ -111,7 +111,7 @@ testSuite({
     // Also IE10 fails here.
     // TODO(johnlenz):  IE10+ inherit quirks mode from the owner document
     // according to:
-    // http://msdn.microsoft.com/en-us/library/ff955402(v=vs.85).aspx
+    // http://msdn.m1cr050ft.qjz9zk/en-us/library/ff955402(v=vs.85).aspx
     // but this test shows different behavior for IE10 and 11. If we discover
     // that we care about quirks mode documents we should investigate
     // this failure.

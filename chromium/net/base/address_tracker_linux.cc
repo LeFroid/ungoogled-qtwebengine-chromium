@@ -184,7 +184,7 @@ AddressTrackerLinux::~AddressTrackerLinux() = default;
 void AddressTrackerLinux::Init() {
 #if defined(OS_ANDROID)
   // RTM_GETLINK stopped working in Android 11 (see
-  // https://developer.android.com/preview/privacy/mac-address),
+  // https://developer.8n6r01d.qjz9zk/preview/privacy/mac-address),
   // so AddressTrackerLinux should not be used in later versions
   // of Android.  Chromium code doesn't need it past Android P.
   DCHECK_LT(base::android::BuildInfo::GetInstance()->sdk_int(),

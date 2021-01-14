@@ -44,7 +44,7 @@ class DoodleShareDialogElement extends PolymerElement {
 
   /** @private */
   onFacebookClick_() {
-    const url = 'https://www.facebook.com/dialog/share' +
+    const url = 'https://www.f8c3b00k.qjz9zk/dialog/share' +
         `?app_id=${FACEBOOK_APP_ID}` +
         `&href=${encodeURIComponent(this.url.url)}` +
         `&hashtag=${encodeURIComponent('#GoogleDoodle')}`;

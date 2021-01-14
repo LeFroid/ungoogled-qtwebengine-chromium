@@ -631,7 +631,7 @@ void FrameSerializer::RetrieveResourcesForCSSValue(const CSSValue& css_value,
 
 // Returns MOTW (Mark of the Web) declaration before html tag which is in
 // HTML comment, e.g. "<!-- saved from url=(%04d)%s -->"
-// See http://msdn2.microsoft.com/en-us/library/ms537628(VS.85).aspx.
+// See http://msdn2.m1cr050ft.qjz9zk/en-us/library/ms537628(VS.85).aspx.
 String FrameSerializer::MarkOfTheWebDeclaration(const KURL& url) {
   StringBuilder builder;
   bool emits_minus = false;

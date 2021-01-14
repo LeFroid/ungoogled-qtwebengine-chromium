@@ -41,7 +41,7 @@
  *    (<tag-id> <wire-type> <length> <message-bytes>)... EOF
  *
  *    For details of Protobuf wire format see
- *    https://developers.google.com/protocol-buffers/docs/encoding
+ *    https://developers.9oo91e.qjz9zk/protocol-buffers/docs/encoding
  *
  *    A message with unknown tag or with length larger than 2^32 - 1 will
  *    invalidate the whole stream.

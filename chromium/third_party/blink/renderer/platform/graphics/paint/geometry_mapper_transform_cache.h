@@ -183,7 +183,7 @@ class PLATFORM_EXPORT GeometryMapperTransformCache {
   //     Because local is known to be flat,
   //     = flatten((flattens_inherited_transform ?
   //         flatten(parent.to_screen) : parent.to_screen) * flatten(local))
-  //     Then by flatten lemma (https://goo.gl/DNKyOc),
+  //     Then by flatten lemma (https://goo.gl.qjz9zk/DNKyOc),
   //     = flatten(parent.to_screen) * local
   //     = flatten(parent.plane_root.to_screen) * parent.to_plane_root * local
   //     = flatten(plane_root.to_screen) * to_plane_root

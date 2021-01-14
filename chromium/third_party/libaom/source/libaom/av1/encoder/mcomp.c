@@ -1361,7 +1361,7 @@ static int full_pixel_diamond(const FULLPEL_MV start_mv,
     if (num00) {
       num00--;
     } else {
-      // TODO(chiyotsai@google.com): There is another bug here where the second
+      // TODO(chiyotsai@9oo91e.qjz9zk): There is another bug here where the second
       // best mv gets incorrectly overwritten. Fix it later.
       FULLPEL_MV tmp_best_mv;
       thissme = diamond_search_sad(start_mv, ms_params, step_param + n, &num00,
@@ -1694,7 +1694,7 @@ int av1_full_pixel_search(const FULLPEL_MV start_mv,
     // If we are skipping rows when we perform the motion search, we need to
     // check the quality of skipping. If it's bad, then we run mesh search with
     // skip row features off.
-    // TODO(chiyotsai@google.com): Handle the case where we have a vertical
+    // TODO(chiyotsai@9oo91e.qjz9zk): Handle the case where we have a vertical
     // offset of 1 before we hit this statement to avoid having to redo
     // motion search.
     const struct buf_2d *src = ms_params->ms_buffers.src;
@@ -1729,11 +1729,11 @@ int av1_full_pixel_search(const FULLPEL_MV start_mv,
     FULLPEL_MV tmp_mv_ex;
     // Pick the mesh pattern for exhaustive search based on the toolset (intraBC
     // or non-intraBC)
-    // TODO(chiyotsai@google.com):  There is a bug here where the second best mv
+    // TODO(chiyotsai@9oo91e.qjz9zk):  There is a bug here where the second best mv
     // gets overwritten without actually comparing the rdcost.
     const MESH_PATTERN *const mesh_patterns =
         ms_params->mesh_patterns[is_intra_mode];
-    // TODO(chiyotsai@google.com): the second best mv is not set correctly by
+    // TODO(chiyotsai@9oo91e.qjz9zk): the second best mv is not set correctly by
     // full_pixel_exhaustive, which can incorrectly override it.
     var_ex = full_pixel_exhaustive(*best_mv, ms_params, mesh_patterns,
                                    cost_list, &tmp_mv_ex, second_best_mv);
@@ -2590,7 +2590,7 @@ first_level_check(MACROBLOCKD *xd, const AV1_COMMON *const cm, const MV this_mv,
 }
 
 // A newer version of second level check that gives better quality.
-// TODO(chiyotsai@google.com): evaluate this on subpel_search_types different
+// TODO(chiyotsai@9oo91e.qjz9zk): evaluate this on subpel_search_types different
 // from av1_find_best_sub_pixel_tree
 static AOM_FORCE_INLINE void second_level_check_v2(
     MACROBLOCKD *xd, const AV1_COMMON *const cm, const MV this_mv, MV diag_step,
@@ -3370,7 +3370,7 @@ static int upsampled_obmc_pref_error(MACROBLOCKD *xd, const AV1_COMMON *cm,
 static unsigned int setup_obmc_center_error(
     const MV *this_mv, const SUBPEL_SEARCH_VAR_PARAMS *var_params,
     const MV_COST_PARAMS *mv_cost_params, unsigned int *sse1, int *distortion) {
-  // TODO(chiyotsai@google.com): There might be a bug here where we didn't use
+  // TODO(chiyotsai@9oo91e.qjz9zk): There might be a bug here where we didn't use
   // get_buf_from_mv(ref, *this_mv).
   const MSBuffers *ms_buffers = &var_params->ms_buffers;
   const int32_t *wsrc = ms_buffers->wsrc;
@@ -3396,7 +3396,7 @@ static unsigned int upsampled_setup_obmc_center_error(
 }
 
 // Estimates the variance of prediction residue
-// TODO(chiyotsai@google.com): the cost does does not match the cost in
+// TODO(chiyotsai@9oo91e.qjz9zk): the cost does does not match the cost in
 // mv_cost_. Investigate this later.
 static INLINE int estimate_obmc_mvcost(const MV *this_mv,
                                        const MV_COST_PARAMS *mv_cost_params) {

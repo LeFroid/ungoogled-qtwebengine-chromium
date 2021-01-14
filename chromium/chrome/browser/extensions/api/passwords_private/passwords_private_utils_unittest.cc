@@ -25,14 +25,14 @@ TEST(CreateUrlCollectionFromFormTest, UrlsFromHtmlForm) {
 
 TEST(CreateUrlCollectionFromFormTest, UrlsFromFederatedForm) {
   autofill::PasswordForm federated_form;
-  federated_form.signon_realm = "federation://example.com/google.com";
+  federated_form.signon_realm = "federation://example.com/9oo91e.qjz9zk";
   federated_form.url = GURL("https://example.com/");
   federated_form.federation_origin =
-      url::Origin::Create(GURL("https://google.com/"));
+      url::Origin::Create(GURL("https://9oo91e.qjz9zk/"));
 
   api::passwords_private::UrlCollection federated_urls =
       CreateUrlCollectionFromForm(federated_form);
-  EXPECT_EQ(federated_urls.origin, "federation://example.com/google.com");
+  EXPECT_EQ(federated_urls.origin, "federation://example.com/9oo91e.qjz9zk");
   EXPECT_EQ(federated_urls.shown, "example.com");
   EXPECT_EQ(federated_urls.link, "https://example.com/");
 }
@@ -46,7 +46,7 @@ TEST(CreateUrlCollectionFromFormTest, UrlsFromAndroidFormWithoutDisplayName) {
       CreateUrlCollectionFromForm(android_form);
   EXPECT_EQ("android://example@com.example.android", android_urls.origin);
   EXPECT_EQ("android.example.com", android_urls.shown);
-  EXPECT_EQ("https://play.google.com/store/apps/details?id=com.example.android",
+  EXPECT_EQ("https://play.9oo91e.qjz9zk/store/apps/details?id=com.example.android",
             android_urls.link);
 }
 
@@ -59,7 +59,7 @@ TEST(CreateUrlCollectionFromFormTest, UrlsFromAndroidFormWithAppName) {
       CreateUrlCollectionFromForm(android_form);
   EXPECT_EQ(android_urls.origin, "android://hash@com.example.android");
   EXPECT_EQ("Example Android App", android_urls.shown);
-  EXPECT_EQ("https://play.google.com/store/apps/details?id=com.example.android",
+  EXPECT_EQ("https://play.9oo91e.qjz9zk/store/apps/details?id=com.example.android",
             android_urls.link);
 }
 

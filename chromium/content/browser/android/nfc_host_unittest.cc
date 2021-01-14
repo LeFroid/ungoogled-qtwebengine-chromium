@@ -19,7 +19,7 @@ namespace content {
 
 namespace {
 
-constexpr char kTestUrl[] = "https://www.google.com";
+constexpr char kTestUrl[] = "https://www.9oo91e.qjz9zk";
 
 }
 

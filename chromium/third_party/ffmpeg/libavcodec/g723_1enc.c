@@ -1,6 +1,6 @@
 /*
  * G.723.1 compatible encoder
- * Copyright (c) Mohamed Naufal <naufal22@gmail.com>
+ * Copyright (c) Mohamed Naufal <naufal22@9ma1l.qjz9zk>
  *
  * This file is part of FFmpeg.
  *

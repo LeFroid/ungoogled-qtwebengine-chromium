@@ -11,6 +11,7 @@
 #include "base/files/file_path.h"
 #include "base/gtest_prod_util.h"
 #include "base/synchronization/lock.h"
+#include "components/safe_browsing/buildflags.h"
 #include "components/safe_browsing/core/proto/download_file_types.pb.h"
 
 namespace safe_browsing {
@@ -105,8 +106,10 @@ class FileTypePolicies {
   // only if it passes integrity checks.
   virtual UpdateResult PopulateFromBinaryPb(const std::string& binary_pb);
 
+#if BUILDFLAG(FULL_SAFE_BROWSING)
   // Fetch the blob from the main resource bundle.
   virtual std::string ReadResourceBundle();
+#endif // BUILDFLAG(FULL_SAFE_BROWSING)
 
   // Record the result of an update attempt.
   virtual void RecordUpdateMetrics(UpdateResult result,
@@ -124,10 +127,12 @@ class FileTypePolicies {
   void SwapConfig(std::unique_ptr<DownloadFileTypeConfig>& new_config);
   void SwapConfigLocked(std::unique_ptr<DownloadFileTypeConfig>& new_config);
 
+#if BUILDFLAG(FULL_SAFE_BROWSING)
   // Read data from the main ResourceBundle. This updates the internal list
   // only if the data passes integrity checks. This is normally called once
   // after construction.
   void PopulateFromResourceBundle();
+#endif // BUILDFLAG(FULL_SAFE_BROWSING)
 
   // The latest config we've committed. Starts out null.
   // Protected by lock_.

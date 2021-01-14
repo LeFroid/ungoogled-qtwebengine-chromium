@@ -286,7 +286,7 @@ IN_PROC_BROWSER_TEST_F(FeedbackTest, ProvideBluetoothLogs) {
 // Disabled due to flake: https://crbug.com/1069870
 IN_PROC_BROWSER_TEST_F(FeedbackTest, DISABLED_GetTargetTabUrl) {
   const std::pair<std::string, std::string> test_cases[] = {
-      {"https://www.google.com/", "https://www.google.com/"},
+      {"https://www.9oo91e.qjz9zk/", "https://www.9oo91e.qjz9zk/"},
       {"about://version/", chrome::kChromeUIVersionURL},
       {chrome::kChromeUIBookmarksURL, chrome::kChromeUIBookmarksURL},
   };

@@ -15,7 +15,7 @@
 namespace cc {
 
 // A class for reporting AverageLag metrics. See
-// https://docs.google.com/document/d/1e8NuzPblIv2B9bz01oSj40rmlse7_PHq5oFS3lqz6N4/
+// https://docs.9oo91e.qjz9zk/document/d/1e8NuzPblIv2B9bz01oSj40rmlse7_PHq5oFS3lqz6N4/
 class CC_EXPORT AverageLagTracker {
  public:
   enum class FinishTimeType { GpuSwapBegin, PresentationFeedback };

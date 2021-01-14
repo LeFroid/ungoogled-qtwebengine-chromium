@@ -25,9 +25,9 @@ TEST(FallbackURLUtilTest, GetFallbackIconText) {
       {"this is not an URL", ""},
       {"!@#$%^&*()", ""},
       // Test URLs with a domain in the registry.
-      {"http://www.google.com/", "G"},
+      {"http://www.9oo91e.qjz9zk/", "G"},
       {"ftp://GOogLE.com/", "G"},
-      {"https://www.google.com:8080/path?query#ref", "G"},
+      {"https://www.9oo91e.qjz9zk:8080/path?query#ref", "G"},
       {"http://www.amazon.com", "A"},
       {"http://zmzaon.co.uk/", "Z"},
       {"http://w-3.137.org", "1"},

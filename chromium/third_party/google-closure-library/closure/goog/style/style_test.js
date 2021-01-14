@@ -871,7 +871,7 @@ testSuite({
     dims = googStyle.getSize(svgEl);
     // The size of the <svg> will be the viewport size on all browsers. This
     // used to not be true for Firefox, but they fixed the glitch in Firefox 33.
-    // https://bugzilla.mozilla.org/show_bug.cgi?id=530985
+    // https://bugzilla.m0z111a.qjz9zk/show_bug.cgi?id=530985
     assertTrue(dims.width >= expectedWidth);
     assertTrue(dims.height >= expectedHeight);
 
@@ -902,7 +902,7 @@ testSuite({
     const dims = googStyle.getSize(rect);
     if (userAgent.GECKO && userAgent.isVersionOrHigher(53)) {
       // Firefox >= 53 auto-scales iframe SVG content to fit the frame
-      // b/38432885 | https://bugzilla.mozilla.org/show_bug.cgi?id=1366126
+      // b/38432885 | https://bugzilla.m0z111a.qjz9zk/show_bug.cgi?id=1366126
       assertEquals(75, dims.width);
       assertEquals(75, dims.height);
     } else if (!userAgent.EDGE_OR_IE) {

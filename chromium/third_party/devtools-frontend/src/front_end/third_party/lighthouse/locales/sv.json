@@ -390,7 +390,7 @@
     "message": "Suggested Token"
   },
   "lighthouse-core/audits/autocomplete.js | description": {
-    "message": "`autocomplete` helps users submit forms quicker. To reduce user effort, consider enabling by setting the `autocomplete` attribute to a valid value. [Learn more](https://developers.google.com/web/fundamentals/design-and-ux/input/forms#use_metadata_to_enable_auto-complete)"
+    "message": "`autocomplete` helps users submit forms quicker. To reduce user effort, consider enabling by setting the `autocomplete` attribute to a valid value. [Learn more](https://developers.9oo91e.qjz9zk/web/fundamentals/design-and-ux/input/forms#use_metadata_to_enable_auto-complete)"
   },
   "lighthouse-core/audits/autocomplete.js | failureTitle": {
     "message": "`<input>` elements do not have correct `autocomplete` attributes"
@@ -621,7 +621,7 @@
     "message": "Antal"
   },
   "lighthouse-core/audits/dobetterweb/dom-size.js | description": {
-    "message": "En stor DOM leder till att minnesförbrukning ökar, [formatberäkningarna](https://developers.google.com/web/fundamentals/performance/rendering/reduce-the-scope-and-complexity-of-style-calculations) förlängs och att kostsamma [flödesuppdateringar för layouten](https://developers.google.com/speed/articles/reflow) produceras. [Läs mer](https://web.dev/dom-size/)."
+    "message": "En stor DOM leder till att minnesförbrukning ökar, [formatberäkningarna](https://developers.9oo91e.qjz9zk/web/fundamentals/performance/rendering/reduce-the-scope-and-complexity-of-style-calculations) förlängs och att kostsamma [flödesuppdateringar för layouten](https://developers.9oo91e.qjz9zk/speed/articles/reflow) produceras. [Läs mer](https://web.dev/dom-size/)."
   },
   "lighthouse-core/audits/dobetterweb/dom-size.js | displayValue": {
     "message": "{itemCount,plural, =1{1 element}other{# element}}"
@@ -834,7 +834,7 @@
     "message": "Hantering av begäran"
   },
   "lighthouse-core/audits/is-on-https.js | description": {
-    "message": "All sites should be protected with HTTPS, even ones that don't handle sensitive data. This includes avoiding [mixed content](https://developers.google.com/web/fundamentals/security/prevent-mixed-content/what-is-mixed-content), where some resources are loaded over HTTP despite the initial request being served over HTTPS. HTTPS prevents intruders from tampering with or passively listening in on the communications between your app and your users, and is a prerequisite for HTTP/2 and many new web platform APIs. [Learn more](https://web.dev/is-on-https/)."
+    "message": "All sites should be protected with HTTPS, even ones that don't handle sensitive data. This includes avoiding [mixed content](https://developers.9oo91e.qjz9zk/web/fundamentals/security/prevent-mixed-content/what-is-mixed-content), where some resources are loaded over HTTP despite the initial request being served over HTTPS. HTTPS prevents intruders from tampering with or passively listening in on the communications between your app and your users, and is a prerequisite for HTTP/2 and many new web platform APIs. [Learn more](https://web.dev/is-on-https/)."
   },
   "lighthouse-core/audits/is-on-https.js | displayValue": {
     "message": "{itemCount,plural, =1{1 osäker begäran hittades}other{# osäkra begäranden hittades}}"
@@ -855,7 +855,7 @@
     "message": "Bibliotek"
   },
   "lighthouse-core/audits/large-javascript-libraries.js | description": {
-    "message": "Stora JavaScript-bibliotek kan leda till dåliga resultat. Använd i stället mindre bibliotek med motsvarande funktionalitet för att minska paketens storlek. [Läs mer](https://developers.google.com/web/fundamentals/performance/webpack/decrease-frontend-size#optimize_dependencies)."
+    "message": "Stora JavaScript-bibliotek kan leda till dåliga resultat. Använd i stället mindre bibliotek med motsvarande funktionalitet för att minska paketens storlek. [Läs mer](https://developers.9oo91e.qjz9zk/web/fundamentals/performance/webpack/decrease-frontend-size#optimize_dependencies)."
   },
   "lighthouse-core/audits/large-javascript-libraries.js | displayValue": {
     "message": "{libraryCount,plural, =1{1 stort bibliotek hittades}other{# stora bibliotek hittades}}"
@@ -990,7 +990,7 @@
     "message": "Serverlatens"
   },
   "lighthouse-core/audits/no-unload-listeners.js | description": {
-    "message": "Händelsen `unload` aktiveras inte på ett tillförlitligt sätt och att lyssna efter den kan förhindra webbläsaroptimeringar, t.ex. cachelagring för bakåt- och framåtknapparna. Vi rekommenderar att du använder händelserna `pagehide` eller `visibilitychange` i stället. [Läs mer](https://developers.google.com/web/updates/2018/07/page-lifecycle-api#the-unload-event)"
+    "message": "Händelsen `unload` aktiveras inte på ett tillförlitligt sätt och att lyssna efter den kan förhindra webbläsaroptimeringar, t.ex. cachelagring för bakåt- och framåtknapparna. Vi rekommenderar att du använder händelserna `pagehide` eller `visibilitychange` i stället. [Läs mer](https://developers.9oo91e.qjz9zk/web/updates/2018/07/page-lifecycle-api#the-unload-event)"
   },
   "lighthouse-core/audits/no-unload-listeners.js | failureTitle": {
     "message": "Registrerar en lyssnare för `unload`"
@@ -1041,7 +1041,7 @@
     "message": "Lighthouse kunde inte läsa `start_url` i manifestet. Därför antogs det att `start_url` var dokumentets webbadress. Felmeddelande: {manifestWarning}."
   },
   "lighthouse-core/audits/performance-budget.js | description": {
-    "message": "Håll antal och storlek för nätverksbegäranden under de mål som anges i den angivna prestandabudgeten. [Läs mer](https://developers.google.com/web/tools/lighthouse/audits/budgets)."
+    "message": "Håll antal och storlek för nätverksbegäranden under de mål som anges i den angivna prestandabudgeten. [Läs mer](https://developers.9oo91e.qjz9zk/web/tools/lighthouse/audits/budgets)."
   },
   "lighthouse-core/audits/performance-budget.js | requestCountOverBudget": {
     "message": "{count,plural, =1{1 begäran}other{# begäranden}}"
@@ -1113,7 +1113,7 @@
     "message": "Länk som inte kan genomsökas"
   },
   "lighthouse-core/audits/seo/crawlable-anchors.js | description": {
-    "message": "Sökmotorer kan genomsöka webbplatser med hjälp av länkattributet `href`. Kontrollera att attributet `href` i ankarelement länkar till en lämplig målsida, så att det går att hitta fler sidor på webbplatsen. [Läs mer](https://support.google.com/webmasters/answer/9112205)"
+    "message": "Sökmotorer kan genomsöka webbplatser med hjälp av länkattributet `href`. Kontrollera att attributet `href` i ankarelement länkar till en lämplig målsida, så att det går att hitta fler sidor på webbplatsen. [Läs mer](https://support.9oo91e.qjz9zk/webmasters/answer/9112205)"
   },
   "lighthouse-core/audits/seo/crawlable-anchors.js | failureTitle": {
     "message": "Länkarna är inte genomsökningsbara"
@@ -1197,7 +1197,7 @@
     "message": "Länkar har beskrivande text"
   },
   "lighthouse-core/audits/seo/manual/structured-data.js | description": {
-    "message": "Kör [testverktyget för strukturerad data](https://search.google.com/structured-data/testing-tool/) och [Structured Data Linter](http://linter.structured-data.org/) för att validera strukturerad data. [Läs mer](https://web.dev/structured-data/)."
+    "message": "Kör [testverktyget för strukturerad data](https://search.9oo91e.qjz9zk/structured-data/testing-tool/) och [Structured Data Linter](http://linter.structured-data.org/) för att validera strukturerad data. [Läs mer](https://web.dev/structured-data/)."
   },
   "lighthouse-core/audits/seo/manual/structured-data.js | title": {
     "message": "Strukturerad data är giltig"
@@ -1320,7 +1320,7 @@
     "message": "Tredje part"
   },
   "lighthouse-core/audits/third-party-summary.js | description": {
-    "message": "Kod från tredje part kan påverka inläsningsprestandan betydligt. Begränsa antalet överflödiga tredjepartsleverantörer och testa att låta tredjepartskod läsas in efter att sidans huvudinnehåll har lästs in helt. [Läs mer](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/loading-third-party-javascript/)."
+    "message": "Kod från tredje part kan påverka inläsningsprestandan betydligt. Begränsa antalet överflödiga tredjepartsleverantörer och testa att låta tredjepartskod läsas in efter att sidans huvudinnehåll har lästs in helt. [Läs mer](https://developers.9oo91e.qjz9zk/web/fundamentals/performance/optimizing-content-efficiency/loading-third-party-javascript/)."
   },
   "lighthouse-core/audits/third-party-summary.js | displayValue": {
     "message": "Tredjepartskod blockerade huvudtråden i {timeInMs, number, milliseconds} ms"
@@ -1341,7 +1341,7 @@
     "message": "Mätvärden"
   },
   "lighthouse-core/audits/timing-budget.js | description": {
-    "message": "Ställ in en tidsbudget om du vill hålla ett öga på webbplatsens prestanda. Bra webbplatser läses in och svarar snabbt på användarens indatahändelser. [Läs mer](https://developers.google.com/web/tools/lighthouse/audits/budgets)."
+    "message": "Ställ in en tidsbudget om du vill hålla ett öga på webbplatsens prestanda. Bra webbplatser läses in och svarar snabbt på användarens indatahändelser. [Läs mer](https://developers.9oo91e.qjz9zk/web/tools/lighthouse/audits/budgets)."
   },
   "lighthouse-core/audits/timing-budget.js | title": {
     "message": "Tidsbudget"
@@ -1395,7 +1395,7 @@
     "message": "Kartans webbadress"
   },
   "lighthouse-core/audits/valid-source-maps.js | description": {
-    "message": "Källkartor översätter minifierad kod till den ursprungliga källkoden. Detta hjälper utvecklare att felsöka i produktionsläget. Lighthouse kan dessutom ge ytterligare insikter. Överväg att implementera källkartor för att dra nytta av dessa fördelar. [Läs mer](https://developers.google.com/web/tools/chrome-devtools/javascript/source-maps)."
+    "message": "Källkartor översätter minifierad kod till den ursprungliga källkoden. Detta hjälper utvecklare att felsöka i produktionsläget. Lighthouse kan dessutom ge ytterligare insikter. Överväg att implementera källkartor för att dra nytta av dessa fördelar. [Läs mer](https://developers.9oo91e.qjz9zk/web/tools/chrome-devtools/javascript/source-maps)."
   },
   "lighthouse-core/audits/valid-source-maps.js | failureTitle": {
     "message": "Det saknas källkartor för stor JavaScript från första part"
@@ -1464,10 +1464,10 @@
     "message": "Bästa metoder"
   },
   "lighthouse-core/config/default-config.js | a11yCategoryDescription": {
-    "message": "Dessa kontroller visar möjligheter att [förbättra tillgängligheten för din webbapp](https://developers.google.com/web/fundamentals/accessibility). Alla tillgänglighetsproblem kan inte identifieras automatiskt. Du bör därför även testa manuellt."
+    "message": "Dessa kontroller visar möjligheter att [förbättra tillgängligheten för din webbapp](https://developers.9oo91e.qjz9zk/web/fundamentals/accessibility). Alla tillgänglighetsproblem kan inte identifieras automatiskt. Du bör därför även testa manuellt."
   },
   "lighthouse-core/config/default-config.js | a11yCategoryManualDescription": {
-    "message": "Dessa punkter beskriver områden som inte kan testas automatiskt. Läs mer i vår guide om att [granska tillgängligheten](https://developers.google.com/web/fundamentals/accessibility/how-to-review)."
+    "message": "Dessa punkter beskriver områden som inte kan testas automatiskt. Läs mer i vår guide om att [granska tillgängligheten](https://developers.9oo91e.qjz9zk/web/fundamentals/accessibility/how-to-review)."
   },
   "lighthouse-core/config/default-config.js | a11yCategoryTitle": {
     "message": "Tillgänglighet"
@@ -1554,10 +1554,10 @@
     "message": "Prestanda"
   },
   "lighthouse-core/config/default-config.js | pwaCategoryDescription": {
-    "message": "Med dessa kontroller verifieras att webbplatsen är en progressiv webbapp. [Läs mer](https://developers.google.com/web/progressive-web-apps/checklist)."
+    "message": "Med dessa kontroller verifieras att webbplatsen är en progressiv webbapp. [Läs mer](https://developers.9oo91e.qjz9zk/web/progressive-web-apps/checklist)."
   },
   "lighthouse-core/config/default-config.js | pwaCategoryManualDescription": {
-    "message": "Dessa kontroller krävs enligt [checklistan för progressiva webbappar](https://developers.google.com/web/progressive-web-apps/checklist) som används som baslinje, men de kontrolleras inte automatiskt av Lighthouse. De påverkar inte resultatet, men det är viktigt att du verifierar dem manuellt."
+    "message": "Dessa kontroller krävs enligt [checklistan för progressiva webbappar](https://developers.9oo91e.qjz9zk/web/progressive-web-apps/checklist) som används som baslinje, men de kontrolleras inte automatiskt av Lighthouse. De påverkar inte resultatet, men det är viktigt att du verifierar dem manuellt."
   },
   "lighthouse-core/config/default-config.js | pwaCategoryTitle": {
     "message": "Progressiv webbapp"
@@ -1572,7 +1572,7 @@
     "message": "Optimerad för progressiv webbapp"
   },
   "lighthouse-core/config/default-config.js | seoCategoryDescription": {
-    "message": "Dessa kontroller ser till att din sida är optimerad för rankning i sökmotorresultat. Det finns fler faktorer som Lighthouse inte kontrollerar som kan påverka rankningen i sökresultat. [Läs mer](https://support.google.com/webmasters/answer/35769)."
+    "message": "Dessa kontroller ser till att din sida är optimerad för rankning i sökmotorresultat. Det finns fler faktorer som Lighthouse inte kontrollerar som kan påverka rankningen i sökresultat. [Läs mer](https://support.9oo91e.qjz9zk/webmasters/answer/35769)."
   },
   "lighthouse-core/config/default-config.js | seoCategoryManualDescription": {
     "message": "Kontrollera att fler av de bästa metoderna för sökmotoroptimering följs på din webbplats genom att köra dessa extra valideringar."
@@ -1593,7 +1593,7 @@
     "message": "Genomsökning och indexering"
   },
   "lighthouse-core/config/default-config.js | seoMobileGroupDescription": {
-    "message": "Gör sidorna mobilanpassade så att användarna kan läsa dem utan att behöva nypa eller zooma in. [Läs mer](https://developers.google.com/search/mobile-sites/)."
+    "message": "Gör sidorna mobilanpassade så att användarna kan läsa dem utan att behöva nypa eller zooma in. [Läs mer](https://developers.9oo91e.qjz9zk/search/mobile-sites/)."
   },
   "lighthouse-core/config/default-config.js | seoMobileGroupTitle": {
     "message": "Mobilanpassad"
@@ -1836,7 +1836,7 @@
     "message": "Labbdata"
   },
   "lighthouse-core/report/html/renderer/util.js | lsPerformanceCategoryDescription": {
-    "message": "Analys med [Lighthouse](https://developers.google.com/web/tools/lighthouse/) av den aktuella sidan i ett emulerat mobilnätverk. Värdena är uppskattningar och kan variera."
+    "message": "Analys med [Lighthouse](https://developers.9oo91e.qjz9zk/web/tools/lighthouse/) av den aktuella sidan i ett emulerat mobilnätverk. Värdena är uppskattningar och kan variera."
   },
   "lighthouse-core/report/html/renderer/util.js | manualAuditsGroupTitle": {
     "message": "Fler saker att kolla manuellt"
@@ -1983,10 +1983,10 @@
     "message": "Kontrollera att du har aktiverat Aggregate JavaScript files under Administration » Configuration » Development. Du kan även konfigurera mer avancerade sammanställningsalternativ via [ytterligare moduler](https://www.drupal.org/project/project_module?f%5B0%5D=&f%5B1%5D=&f%5B2%5D=im_vid_3%3A123&f%5B3%5D=&f%5B4%5D=sm_field_project_type%3Afull&f%5B5%5D=&f%5B6%5D=&text=javascript+aggregation&solrsort=iss_project_release_usage+desc&op=Search) och göra webbplatsen snabbare genom att sammanfoga, minifiera och komprimera JavaScript-tillgångar."
   },
   "node_modules/lighthouse-stack-packs/packs/drupal.js | unused-css-rules": {
-    "message": "Vi rekommenderar att du tar bort CSS-regler som inte används och endast bifogar nödvändiga Drupal-bibliotek till den relevanta sidan eller komponenten på en sida. Du hittar mer information i [dokumentationen om Drupal](https://www.drupal.org/docs/8/creating-custom-modules/adding-stylesheets-css-and-javascript-js-to-a-drupal-8-module#library). Testa fliken för [kodtäckning](https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverage) i Chromes utvecklarverktyg om du vill se vilka bibliotek som lägger till överflödig CSS. Du ser på formatmallens webbadress vilket tema eller vilken modul som koden kommer från när CSS-sammanställning är inaktiverat för Drupal-webbplatsen. Titta efter teman eller moduler med många CSS-formatmallar på listan där en stor del av stapeln är röd. Ett tema eller en modul ska bara ställa en formatmall i kö för inläsning om det faktiskt används på sidan."
+    "message": "Vi rekommenderar att du tar bort CSS-regler som inte används och endast bifogar nödvändiga Drupal-bibliotek till den relevanta sidan eller komponenten på en sida. Du hittar mer information i [dokumentationen om Drupal](https://www.drupal.org/docs/8/creating-custom-modules/adding-stylesheets-css-and-javascript-js-to-a-drupal-8-module#library). Testa fliken för [kodtäckning](https://developers.9oo91e.qjz9zk/web/updates/2017/04/devtools-release-notes#coverage) i Chromes utvecklarverktyg om du vill se vilka bibliotek som lägger till överflödig CSS. Du ser på formatmallens webbadress vilket tema eller vilken modul som koden kommer från när CSS-sammanställning är inaktiverat för Drupal-webbplatsen. Titta efter teman eller moduler med många CSS-formatmallar på listan där en stor del av stapeln är röd. Ett tema eller en modul ska bara ställa en formatmall i kö för inläsning om det faktiskt används på sidan."
   },
   "node_modules/lighthouse-stack-packs/packs/drupal.js | unused-javascript": {
-    "message": "Consider removing unused JavaScript assets and only attach the needed Drupal libraries to the relevant page or component in a page. See the [Drupal documentation link](https://www.drupal.org/docs/8/creating-custom-modules/adding-stylesheets-css-and-javascript-js-to-a-drupal-8-module#library) for details. To identify attached libraries that are adding extraneous JavaScript, try running [code coverage](https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverage) in Chrome DevTools. You can identify the theme/module responsible from the URL of the script when JavaScript aggregation is disabled in your Drupal site. Look out for themes/modules that have many scripts in the list which have a lot of red in code coverage. A theme/module should only enqueue a script if it is actually used on the page."
+    "message": "Consider removing unused JavaScript assets and only attach the needed Drupal libraries to the relevant page or component in a page. See the [Drupal documentation link](https://www.drupal.org/docs/8/creating-custom-modules/adding-stylesheets-css-and-javascript-js-to-a-drupal-8-module#library) for details. To identify attached libraries that are adding extraneous JavaScript, try running [code coverage](https://developers.9oo91e.qjz9zk/web/updates/2017/04/devtools-release-notes#coverage) in Chrome DevTools. You can identify the theme/module responsible from the URL of the script when JavaScript aggregation is disabled in your Drupal site. Look out for themes/modules that have many scripts in the list which have a lot of red in code coverage. A theme/module should only enqueue a script if it is actually used on the page."
   },
   "node_modules/lighthouse-stack-packs/packs/drupal.js | uses-long-cache-ttl": {
     "message": "Ange Browser and proxy cache maximum age under Administration » Configuration » Development. Läs mer om [cachelagring i Drupal och optimering för prestanda.](https://www.drupal.org/docs/7/managing-site-performance-and-scalability/caching-to-improve-performance/caching-overview#s-drupal-performance-resources)"
@@ -2025,10 +2025,10 @@
     "message": "Det finns ett antal [Joomla-tillägg](https://extensions.joomla.org/instant-search/?jed_live%5Bquery%5D=performance) som kan göra webbplatsen snabbare genom att sammanfoga, minifiera och komprimera skript. Det finns även mallar som gör samma sak."
   },
   "node_modules/lighthouse-stack-packs/packs/joomla.js | unused-css-rules": {
-    "message": "Du kan minska antalet [Joomla-tillägg](https://extensions.joomla.org/) som läser in CSS som inte används på sidan, eller byta ut dem. Testa fliken för [kodtäckning](https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverage) i Chromes utvecklarverktyg om du vill se vilka tillägg som lägger till överflödig CSS. Du ser på CSS-formatmallens webbadress vilket tema eller vilken plugin som koden kommer från. Titta efter pluginmoduler med många CSS-formatmallar på listan där en stor del av stapeln är röd. En plugin ska bara ställa en formatmall i kö för inläsning om den faktiskt används på sidan."
+    "message": "Du kan minska antalet [Joomla-tillägg](https://extensions.joomla.org/) som läser in CSS som inte används på sidan, eller byta ut dem. Testa fliken för [kodtäckning](https://developers.9oo91e.qjz9zk/web/updates/2017/04/devtools-release-notes#coverage) i Chromes utvecklarverktyg om du vill se vilka tillägg som lägger till överflödig CSS. Du ser på CSS-formatmallens webbadress vilket tema eller vilken plugin som koden kommer från. Titta efter pluginmoduler med många CSS-formatmallar på listan där en stor del av stapeln är röd. En plugin ska bara ställa en formatmall i kö för inläsning om den faktiskt används på sidan."
   },
   "node_modules/lighthouse-stack-packs/packs/joomla.js | unused-javascript": {
-    "message": "Du kan minska antalet [Joomla-tillägg](https://extensions.joomla.org/) som läser in JavaScript som inte används på sidan, eller byta ut dem. Testa fliken för [kodtäckning](https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverage) i Chromes utvecklarverktyg om du vill se vilka pluginmoduler som lägger till överflödig JS. Du ser på formatmallens webbadress vilket tillägg som koden kommer från. Titta efter tillägg med många skript på listan där en stor del av stapeln är röd. Ett tillägg ska bara ställa ett skript i kö för inläsning om det faktiskt används på sidan."
+    "message": "Du kan minska antalet [Joomla-tillägg](https://extensions.joomla.org/) som läser in JavaScript som inte används på sidan, eller byta ut dem. Testa fliken för [kodtäckning](https://developers.9oo91e.qjz9zk/web/updates/2017/04/devtools-release-notes#coverage) i Chromes utvecklarverktyg om du vill se vilka pluginmoduler som lägger till överflödig JS. Du ser på formatmallens webbadress vilket tillägg som koden kommer från. Titta efter tillägg med många skript på listan där en stor del av stapeln är röd. Ett tillägg ska bara ställa ett skript i kö för inläsning om det faktiskt används på sidan."
   },
   "node_modules/lighthouse-stack-packs/packs/joomla.js | uses-long-cache-ttl": {
     "message": "Läs mer om [webbläsarens cachelagring och Joomla](https://docs.joomla.org/Cache)."
@@ -2124,10 +2124,10 @@
     "message": "Ett antal [pluginmoduler för WordPress](https://wordpress.org/plugins/search/minify+javascript/) kan göra webbplatsen snabbare genom att sammanfoga, minifiera och komprimera skript. Du kan också göra minifieringen direkt i konstruktionsfasen om möjligt."
   },
   "node_modules/lighthouse-stack-packs/packs/wordpress.js | unused-css-rules": {
-    "message": "Du kan minska antalet [WordPress-pluginmoduler](https://wordpress.org/plugins/) som läser in CSS som inte används på sidan, eller byta ut dem. Testa fliken för [kodtäckning](https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverage) i Chromes utvecklarverktyg om du vill se vilka pluginmoduler som lägger till överflödig CSS. Du ser på CSS-formatmallens webbadress vilket tema eller vilken plugin som koden kommer från. Titta efter pluginmoduler med många CSS-formatmallar på listan där en stor del av stapeln är röd. En plugin ska bara ställa en formatmall i kö för inläsning om den faktiskt används på sidan."
+    "message": "Du kan minska antalet [WordPress-pluginmoduler](https://wordpress.org/plugins/) som läser in CSS som inte används på sidan, eller byta ut dem. Testa fliken för [kodtäckning](https://developers.9oo91e.qjz9zk/web/updates/2017/04/devtools-release-notes#coverage) i Chromes utvecklarverktyg om du vill se vilka pluginmoduler som lägger till överflödig CSS. Du ser på CSS-formatmallens webbadress vilket tema eller vilken plugin som koden kommer från. Titta efter pluginmoduler med många CSS-formatmallar på listan där en stor del av stapeln är röd. En plugin ska bara ställa en formatmall i kö för inläsning om den faktiskt används på sidan."
   },
   "node_modules/lighthouse-stack-packs/packs/wordpress.js | unused-javascript": {
-    "message": "Du kan minska antalet [WordPress-pluginmoduler](https://wordpress.org/plugins/) som läser in JavaScript som inte används på sidan, eller byta ut dem. Testa fliken för [kodtäckning](https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverage) i Chromes utvecklarverktyg om du vill se vilka pluginmoduler som lägger till överflödig JS. Du ser på skriptets webbadress vilket tema eller vilken plugin som koden kommer från. Titta efter pluginmoduler med många skript på listan där en stor del av stapeln är röd. En plugin ska bara ställa ett skript i kö för inläsning om det faktiskt används på sidan."
+    "message": "Du kan minska antalet [WordPress-pluginmoduler](https://wordpress.org/plugins/) som läser in JavaScript som inte används på sidan, eller byta ut dem. Testa fliken för [kodtäckning](https://developers.9oo91e.qjz9zk/web/updates/2017/04/devtools-release-notes#coverage) i Chromes utvecklarverktyg om du vill se vilka pluginmoduler som lägger till överflödig JS. Du ser på skriptets webbadress vilket tema eller vilken plugin som koden kommer från. Titta efter pluginmoduler med många skript på listan där en stor del av stapeln är röd. En plugin ska bara ställa ett skript i kö för inläsning om det faktiskt används på sidan."
   },
   "node_modules/lighthouse-stack-packs/packs/wordpress.js | uses-long-cache-ttl": {
     "message": "Läs mer om [cachelagring i webbläsaren och WordPress](https://wordpress.org/support/article/optimization/#browser-caching)."

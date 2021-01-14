@@ -23,7 +23,7 @@ class PreferredAppListTest : public testing::Test {
       const std::string& pattern,
       apps::mojom::PatternMatchType match_type) {
     auto intent_filter =
-        apps_util::CreateSchemeAndHostOnlyFilter("https", "www.google.com");
+        apps_util::CreateSchemeAndHostOnlyFilter("https", "www.9oo91e.qjz9zk");
     auto pattern_condition =
         apps_util::MakeCondition(apps::mojom::ConditionType::kPattern,
                                  std::vector<apps::mojom::ConditionValuePtr>());
@@ -41,16 +41,16 @@ class PreferredAppListTest : public testing::Test {
 // and find (or not find) the correct preferred app id for different
 // URLs.
 TEST_F(PreferredAppListTest, AddPreferredAppForURL) {
-  GURL filter_url = GURL("https://www.google.com/abc");
+  GURL filter_url = GURL("https://www.9oo91e.qjz9zk/abc");
   auto intent_filter = apps_util::CreateIntentFilterForUrlScope(filter_url);
   preferred_apps_.AddPreferredApp(kAppId1, intent_filter);
 
   EXPECT_EQ(kAppId1, preferred_apps_.FindPreferredAppForUrl(filter_url));
 
-  GURL url_in_scope = GURL("https://www.google.com/abcde");
+  GURL url_in_scope = GURL("https://www.9oo91e.qjz9zk/abcde");
   EXPECT_EQ(kAppId1, preferred_apps_.FindPreferredAppForUrl(url_in_scope));
 
-  GURL url_wrong_scheme = GURL("tel://www.google.com/");
+  GURL url_wrong_scheme = GURL("tel://www.9oo91e.qjz9zk/");
   EXPECT_EQ(base::nullopt,
             preferred_apps_.FindPreferredAppForUrl(url_wrong_scheme));
 
@@ -58,7 +58,7 @@ TEST_F(PreferredAppListTest, AddPreferredAppForURL) {
   EXPECT_EQ(base::nullopt,
             preferred_apps_.FindPreferredAppForUrl(url_wrong_host));
 
-  GURL url_not_in_scope = GURL("https://www.google.com/a");
+  GURL url_not_in_scope = GURL("https://www.9oo91e.qjz9zk/a");
   EXPECT_EQ(base::nullopt,
             preferred_apps_.FindPreferredAppForUrl(url_not_in_scope));
 }
@@ -72,7 +72,7 @@ TEST_F(PreferredAppListTest, TopLayerFilters) {
   GURL url_in_scope = GURL("tel://1234556/");
   EXPECT_EQ(kAppId1, preferred_apps_.FindPreferredAppForUrl(url_in_scope));
 
-  GURL url_not_in_scope = GURL("http://www.google.com");
+  GURL url_not_in_scope = GURL("http://www.9oo91e.qjz9zk");
   EXPECT_EQ(base::nullopt,
             preferred_apps_.FindPreferredAppForUrl(url_not_in_scope));
 }
@@ -88,12 +88,12 @@ TEST_F(PreferredAppListTest, MixLayerFilters) {
   preferred_apps_.AddPreferredApp(kAppId2, intent_filter_scheme_host);
 
   auto intent_filter_url =
-      apps_util::CreateIntentFilterForUrlScope(GURL("https://www.google.com/"));
+      apps_util::CreateIntentFilterForUrlScope(GURL("https://www.9oo91e.qjz9zk/"));
   preferred_apps_.AddPreferredApp(kAppId3, intent_filter_url);
 
   GURL url_1 = GURL("tel://1234556/");
   GURL url_2 = GURL("http://www.abc.com/");
-  GURL url_3 = GURL("https://www.google.com/");
+  GURL url_3 = GURL("https://www.9oo91e.qjz9zk/");
   GURL url_out_scope = GURL("https://www.abc.com/");
 
   EXPECT_EQ(kAppId1, preferred_apps_.FindPreferredAppForUrl(url_1));
@@ -106,7 +106,7 @@ TEST_F(PreferredAppListTest, MixLayerFilters) {
 // Test that when there are multiple preferred apps for one intent, the best
 // matching one will be picked.
 TEST_F(PreferredAppListTest, MultiplePreferredApps) {
-  GURL url = GURL("https://www.google.com/");
+  GURL url = GURL("https://www.9oo91e.qjz9zk/");
 
   auto intent_filter_scheme = apps_util::CreateSchemeOnlyFilter("https");
   preferred_apps_.AddPreferredApp(kAppId1, intent_filter_scheme);
@@ -114,13 +114,13 @@ TEST_F(PreferredAppListTest, MultiplePreferredApps) {
   EXPECT_EQ(kAppId1, preferred_apps_.FindPreferredAppForUrl(url));
 
   auto intent_filter_scheme_host =
-      apps_util::CreateSchemeAndHostOnlyFilter("https", "www.google.com");
+      apps_util::CreateSchemeAndHostOnlyFilter("https", "www.9oo91e.qjz9zk");
   preferred_apps_.AddPreferredApp(kAppId2, intent_filter_scheme_host);
 
   EXPECT_EQ(kAppId2, preferred_apps_.FindPreferredAppForUrl(url));
 
   auto intent_filter_url =
-      apps_util::CreateIntentFilterForUrlScope(GURL("https://www.google.com/"));
+      apps_util::CreateIntentFilterForUrlScope(GURL("https://www.9oo91e.qjz9zk/"));
   preferred_apps_.AddPreferredApp(kAppId3, intent_filter_url);
 
   EXPECT_EQ(kAppId3, preferred_apps_.FindPreferredAppForUrl(url));
@@ -130,15 +130,15 @@ TEST_F(PreferredAppListTest, MultiplePreferredApps) {
 // condition values for a condition type.
 TEST_F(PreferredAppListTest, MultipleConditionValues) {
   auto intent_filter =
-      apps_util::CreateIntentFilterForUrlScope(GURL("https://www.google.com/"));
+      apps_util::CreateIntentFilterForUrlScope(GURL("https://www.9oo91e.qjz9zk/"));
   intent_filter->conditions[0]->condition_values.push_back(
       apps_util::MakeConditionValue("http",
                                     apps::mojom::PatternMatchType::kNone));
 
   preferred_apps_.AddPreferredApp(kAppId1, intent_filter);
 
-  GURL url_https = GURL("https://www.google.com/");
-  GURL url_http = GURL("http://www.google.com/");
+  GURL url_https = GURL("https://www.9oo91e.qjz9zk/");
+  GURL url_http = GURL("http://www.9oo91e.qjz9zk/");
   GURL url_http_out_of_scope = GURL("http://www.abc.com/");
   GURL url_wrong_scheme = GURL("tel://1234567/");
 
@@ -163,10 +163,10 @@ TEST_F(PreferredAppListTest, DifferentPatterns) {
   preferred_apps_.AddPreferredApp(kAppId2, intent_filter_prefix);
   preferred_apps_.AddPreferredApp(kAppId3, intent_filter_glob);
 
-  GURL url_1 = GURL("https://www.google.com/bc");
-  GURL url_2 = GURL("https://www.google.com/abbb");
-  GURL url_3 = GURL("https://www.google.com/ccccccd");
-  GURL url_out_scope = GURL("https://www.google.com/dfg");
+  GURL url_1 = GURL("https://www.9oo91e.qjz9zk/bc");
+  GURL url_2 = GURL("https://www.9oo91e.qjz9zk/abbb");
+  GURL url_3 = GURL("https://www.9oo91e.qjz9zk/ccccccd");
+  GURL url_out_scope = GURL("https://www.9oo91e.qjz9zk/dfg");
 
   EXPECT_EQ(kAppId1, preferred_apps_.FindPreferredAppForUrl(url_1));
   EXPECT_EQ(kAppId2, preferred_apps_.FindPreferredAppForUrl(url_2));
@@ -177,7 +177,7 @@ TEST_F(PreferredAppListTest, DifferentPatterns) {
 
 // Test that for same intent filter, the app id will overwrite the old setting.
 TEST_F(PreferredAppListTest, OverwritePreferredApp) {
-  GURL filter_url = GURL("https://www.google.com/abc");
+  GURL filter_url = GURL("https://www.9oo91e.qjz9zk/abc");
   auto intent_filter = apps_util::CreateIntentFilterForUrlScope(filter_url);
   preferred_apps_.AddPreferredApp(kAppId1, intent_filter);
 
@@ -190,8 +190,8 @@ TEST_F(PreferredAppListTest, OverwritePreferredApp) {
 
 // Test that when overlap happens, the previous setting will be removed.
 TEST_F(PreferredAppListTest, OverlapPreferredApp) {
-  GURL filter_url_1 = GURL("https://www.google.com/abc");
-  GURL filter_url_2 = GURL("http://www.google.com.au/abc");
+  GURL filter_url_1 = GURL("https://www.9oo91e.qjz9zk/abc");
+  GURL filter_url_2 = GURL("http://www.9oo91e.qjz9zk.au/abc");
   auto intent_filter_1 = apps_util::CreateIntentFilterForUrlScope(filter_url_1);
   intent_filter_1->conditions[0]->condition_values.push_back(
       apps_util::MakeConditionValue(filter_url_2.scheme(),
@@ -220,8 +220,8 @@ TEST_F(PreferredAppListTest, OverlapPreferredApp) {
 
 // Test that the replaced app preferences is correct.
 TEST_F(PreferredAppListTest, ReplacedAppPreference) {
-  GURL filter_url_1 = GURL("https://www.google.com/abc");
-  GURL filter_url_2 = GURL("http://www.google.com.au/abc");
+  GURL filter_url_1 = GURL("https://www.9oo91e.qjz9zk/abc");
+  GURL filter_url_2 = GURL("http://www.9oo91e.qjz9zk.au/abc");
   auto intent_filter_1 = apps_util::CreateIntentFilterForUrlScope(filter_url_1);
   intent_filter_1->conditions[0]->condition_values.push_back(
       apps_util::MakeConditionValue(filter_url_2.scheme(),
@@ -299,7 +299,7 @@ TEST_F(PreferredAppListTest, ReplacedAppPreference) {
 // Test that for a single preferred app with URL filter, we can delete
 // the preferred app id.
 TEST_F(PreferredAppListTest, DeletePreferredAppForURL) {
-  GURL filter_url = GURL("https://www.google.com/abc");
+  GURL filter_url = GURL("https://www.9oo91e.qjz9zk/abc");
   auto intent_filter = apps_util::CreateIntentFilterForUrlScope(filter_url);
   preferred_apps_.AddPreferredApp(kAppId1, intent_filter);
 
@@ -331,15 +331,15 @@ TEST_F(PreferredAppListTest, DeleteForTopLayerFilters) {
 // condition values for a condition type.
 TEST_F(PreferredAppListTest, DeleteMultipleConditionValues) {
   auto intent_filter =
-      apps_util::CreateIntentFilterForUrlScope(GURL("https://www.google.com/"));
+      apps_util::CreateIntentFilterForUrlScope(GURL("https://www.9oo91e.qjz9zk/"));
   intent_filter->conditions[0]->condition_values.push_back(
       apps_util::MakeConditionValue("http",
                                     apps::mojom::PatternMatchType::kNone));
 
   preferred_apps_.AddPreferredApp(kAppId1, intent_filter);
 
-  GURL url_https = GURL("https://www.google.com/");
-  GURL url_http = GURL("http://www.google.com/");
+  GURL url_https = GURL("https://www.9oo91e.qjz9zk/");
+  GURL url_http = GURL("http://www.9oo91e.qjz9zk/");
   EXPECT_EQ(kAppId1, preferred_apps_.FindPreferredAppForUrl(url_https));
   EXPECT_EQ(kAppId1, preferred_apps_.FindPreferredAppForUrl(url_http));
 
@@ -361,9 +361,9 @@ TEST_F(PreferredAppListTest, DeleteDifferentPatterns) {
   preferred_apps_.AddPreferredApp(kAppId2, intent_filter_prefix);
   preferred_apps_.AddPreferredApp(kAppId3, intent_filter_glob);
 
-  GURL url_1 = GURL("https://www.google.com/bc");
-  GURL url_2 = GURL("https://www.google.com/abbb");
-  GURL url_3 = GURL("https://www.google.com/ccccccd");
+  GURL url_1 = GURL("https://www.9oo91e.qjz9zk/bc");
+  GURL url_2 = GURL("https://www.9oo91e.qjz9zk/abbb");
+  GURL url_3 = GURL("https://www.9oo91e.qjz9zk/ccccccd");
 
   EXPECT_EQ(kAppId1, preferred_apps_.FindPreferredAppForUrl(url_1));
   EXPECT_EQ(kAppId2, preferred_apps_.FindPreferredAppForUrl(url_2));
@@ -384,17 +384,17 @@ TEST_F(PreferredAppListTest, DeleteDifferentPatterns) {
 // to delete has more condition values compare with filter that was set.
 TEST_F(PreferredAppListTest, DeleteForNotCompletedFilter) {
   auto intent_filter_set =
-      apps_util::CreateIntentFilterForUrlScope(GURL("https://www.google.com/"));
+      apps_util::CreateIntentFilterForUrlScope(GURL("https://www.9oo91e.qjz9zk/"));
 
   auto intent_filter_to_delete =
-      apps_util::CreateIntentFilterForUrlScope(GURL("http://www.google.com/"));
+      apps_util::CreateIntentFilterForUrlScope(GURL("http://www.9oo91e.qjz9zk/"));
   intent_filter_to_delete->conditions[0]->condition_values.push_back(
       apps_util::MakeConditionValue("https",
                                     apps::mojom::PatternMatchType::kNone));
 
   preferred_apps_.AddPreferredApp(kAppId1, intent_filter_set);
 
-  GURL url = GURL("https://www.google.com/");
+  GURL url = GURL("https://www.9oo91e.qjz9zk/");
 
   EXPECT_EQ(kAppId1, preferred_apps_.FindPreferredAppForUrl(url));
 
@@ -405,8 +405,8 @@ TEST_F(PreferredAppListTest, DeleteForNotCompletedFilter) {
 
 // Test that when there are more than one entry has overlap filter.
 TEST_F(PreferredAppListTest, DeleteOverlapFilters) {
-  GURL filter_url_1 = GURL("https://www.google.com/abc");
-  GURL filter_url_2 = GURL("http://www.google.com.au/abc");
+  GURL filter_url_1 = GURL("https://www.9oo91e.qjz9zk/abc");
+  GURL filter_url_2 = GURL("http://www.9oo91e.qjz9zk.au/abc");
   GURL filter_url_3 = GURL("https://www.abc.com/abc");
   GURL filter_url_4 = GURL("http://www.example.com/abc");
 
@@ -459,7 +459,7 @@ TEST_F(PreferredAppListTest, DeleteOverlapFilters) {
 
 // Test that DeleteAppId() can delete the setting for one filter.
 TEST_F(PreferredAppListTest, DeleteAppIdForOneFilter) {
-  GURL filter_url = GURL("https://www.google.com/abc");
+  GURL filter_url = GURL("https://www.9oo91e.qjz9zk/abc");
   auto intent_filter = apps_util::CreateIntentFilterForUrlScope(filter_url);
   preferred_apps_.AddPreferredApp(kAppId1, intent_filter);
 
@@ -473,7 +473,7 @@ TEST_F(PreferredAppListTest, DeleteAppIdForOneFilter) {
 // Test that when multiple filters set to the same app id, DeleteAppId() can
 // delete all of them.
 TEST_F(PreferredAppListTest, DeleteAppIdForMultipleFilters) {
-  GURL filter_url_1 = GURL("https://www.google.com/abc");
+  GURL filter_url_1 = GURL("https://www.9oo91e.qjz9zk/abc");
   auto intent_filter_1 = apps_util::CreateIntentFilterForUrlScope(filter_url_1);
   preferred_apps_.AddPreferredApp(kAppId1, intent_filter_1);
 
@@ -505,15 +505,15 @@ TEST_F(PreferredAppListTest, DeleteAppIdForMultipleFilters) {
 // delete them all.
 TEST_F(PreferredAppListTest, DeleteAppIdForMultipleConditionValues) {
   auto intent_filter =
-      apps_util::CreateIntentFilterForUrlScope(GURL("https://www.google.com/"));
+      apps_util::CreateIntentFilterForUrlScope(GURL("https://www.9oo91e.qjz9zk/"));
   intent_filter->conditions[0]->condition_values.push_back(
       apps_util::MakeConditionValue("http",
                                     apps::mojom::PatternMatchType::kNone));
 
   preferred_apps_.AddPreferredApp(kAppId1, intent_filter);
 
-  GURL url_https = GURL("https://www.google.com/");
-  GURL url_http = GURL("http://www.google.com/");
+  GURL url_https = GURL("https://www.9oo91e.qjz9zk/");
+  GURL url_http = GURL("http://www.9oo91e.qjz9zk/");
   EXPECT_EQ(kAppId1, preferred_apps_.FindPreferredAppForUrl(url_https));
   EXPECT_EQ(kAppId1, preferred_apps_.FindPreferredAppForUrl(url_http));
 
@@ -525,7 +525,7 @@ TEST_F(PreferredAppListTest, DeleteAppIdForMultipleConditionValues) {
 // Test that for multiple filters set to different app ids, DeleteAppId() only
 // deletes the correct app id.
 TEST_F(PreferredAppListTest, DeleteAppIdForMultipleAppIds) {
-  GURL filter_url_1 = GURL("https://www.google.com/abc");
+  GURL filter_url_1 = GURL("https://www.9oo91e.qjz9zk/abc");
   auto intent_filter_1 = apps_util::CreateIntentFilterForUrlScope(filter_url_1);
   preferred_apps_.AddPreferredApp(kAppId1, intent_filter_1);
 
@@ -543,7 +543,7 @@ TEST_F(PreferredAppListTest, DeleteAppIdForMultipleAppIds) {
 
   EXPECT_EQ(kAppId2, preferred_apps_.FindPreferredAppForUrl(filter_url_3));
 
-  GURL filter_url_4 = GURL("https://www.google.com.au/");
+  GURL filter_url_4 = GURL("https://www.9oo91e.qjz9zk.au/");
   auto intent_filter_4 = apps_util::CreateIntentFilterForUrlScope(filter_url_4);
   preferred_apps_.AddPreferredApp(kAppId2, intent_filter_4);
 

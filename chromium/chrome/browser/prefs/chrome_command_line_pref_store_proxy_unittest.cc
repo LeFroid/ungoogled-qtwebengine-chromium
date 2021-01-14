@@ -113,7 +113,7 @@ static const CommandLineTestParams kCommandLineTestParams[] = {
         {
             {switches::kProxyServer, "http=httpproxy:8888;ftp=ftpproxy:8889"},
             {switches::kProxyBypassList,
-             ".google.com, foo.com:99, 1.2.3.4:22, 127.0.0.1/8"},
+             ".9oo91e.qjz9zk, foo.com:99, 1.2.3.4:22, 127.0.0.1/8"},
         },
         // Expected result
         false,  // is_null
@@ -123,7 +123,7 @@ static const CommandLineTestParams kCommandLineTestParams[] = {
             "httpproxy:8888",  // http
             "",                // https
             "ftpproxy:8889",   // ftp
-            "*.google.com,foo.com:99,1.2.3.4:22,127.0.0.1/8"),
+            "*.9oo91e.qjz9zk,foo.com:99,1.2.3.4:22,127.0.0.1/8"),
     },
     {
         "Pac URL",

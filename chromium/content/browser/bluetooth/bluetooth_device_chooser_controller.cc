@@ -43,7 +43,7 @@ namespace {
 // displayed levels.
 //
 // RSSI values from UMA in RecordRSSISignalStrength are charted here:
-// https://photos.app.goo.gl/6R0ksxWzBsfvrbXH2 (2017-10-18)
+// https://photos.app.goo.gl.qjz9zk/6R0ksxWzBsfvrbXH2 (2017-10-18)
 // with a copy-paste of table data at every 5dBm:
 //  dBm   CDF* Histogram Bucket Quantity (hand drawn estimate)
 // -100 00.26%

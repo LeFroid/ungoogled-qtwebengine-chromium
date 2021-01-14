@@ -390,7 +390,7 @@
     "message": "Suggested Token"
   },
   "lighthouse-core/audits/autocomplete.js | description": {
-    "message": "`autocomplete` helps users submit forms quicker. To reduce user effort, consider enabling by setting the `autocomplete` attribute to a valid value. [Learn more](https://developers.google.com/web/fundamentals/design-and-ux/input/forms#use_metadata_to_enable_auto-complete)"
+    "message": "`autocomplete` helps users submit forms quicker. To reduce user effort, consider enabling by setting the `autocomplete` attribute to a valid value. [Learn more](https://developers.9oo91e.qjz9zk/web/fundamentals/design-and-ux/input/forms#use_metadata_to_enable_auto-complete)"
   },
   "lighthouse-core/audits/autocomplete.js | failureTitle": {
     "message": "`<input>` elements do not have correct `autocomplete` attributes"
@@ -621,7 +621,7 @@
     "message": "Value"
   },
   "lighthouse-core/audits/dobetterweb/dom-size.js | description": {
-    "message": "Kapag malaki ang DOM, madaragdagan ang paggamit ng memory, magkakaroon ng mas mahahabang [pagkalkula ng istilo](https://developers.google.com/web/fundamentals/performance/rendering/reduce-the-scope-and-complexity-of-style-calculations), at lilikha ito ng mga magastos na [reflow ng layout](https://developers.google.com/speed/articles/reflow). [Matuto pa](https://web.dev/dom-size/)."
+    "message": "Kapag malaki ang DOM, madaragdagan ang paggamit ng memory, magkakaroon ng mas mahahabang [pagkalkula ng istilo](https://developers.9oo91e.qjz9zk/web/fundamentals/performance/rendering/reduce-the-scope-and-complexity-of-style-calculations), at lilikha ito ng mga magastos na [reflow ng layout](https://developers.9oo91e.qjz9zk/speed/articles/reflow). [Matuto pa](https://web.dev/dom-size/)."
   },
   "lighthouse-core/audits/dobetterweb/dom-size.js | displayValue": {
     "message": "{itemCount,plural, =1{1 element}one{# element}other{# na element}}"
@@ -834,7 +834,7 @@
     "message": "Humiling ng Pasya"
   },
   "lighthouse-core/audits/is-on-https.js | description": {
-    "message": "All sites should be protected with HTTPS, even ones that don't handle sensitive data. This includes avoiding [mixed content](https://developers.google.com/web/fundamentals/security/prevent-mixed-content/what-is-mixed-content), where some resources are loaded over HTTP despite the initial request being served over HTTPS. HTTPS prevents intruders from tampering with or passively listening in on the communications between your app and your users, and is a prerequisite for HTTP/2 and many new web platform APIs. [Learn more](https://web.dev/is-on-https/)."
+    "message": "All sites should be protected with HTTPS, even ones that don't handle sensitive data. This includes avoiding [mixed content](https://developers.9oo91e.qjz9zk/web/fundamentals/security/prevent-mixed-content/what-is-mixed-content), where some resources are loaded over HTTP despite the initial request being served over HTTPS. HTTPS prevents intruders from tampering with or passively listening in on the communications between your app and your users, and is a prerequisite for HTTP/2 and many new web platform APIs. [Learn more](https://web.dev/is-on-https/)."
   },
   "lighthouse-core/audits/is-on-https.js | displayValue": {
     "message": "{itemCount,plural, =1{1 hindi secure na kahilingan ang nakita}one{# hindi secure na kahilingan ang nakita}other{# na hindi secure na kahilingan ang nakita}}"
@@ -855,7 +855,7 @@
     "message": "Library"
   },
   "lighthouse-core/audits/large-javascript-libraries.js | description": {
-    "message": "Kapag malalaki ang JavaScript library, posibleng maging hindi maganda ang performance. Gumamit ng mas maliliit na library na ganoon din ang function para mabawasan ang laki ng iyong bundle. [Matuto pa](https://developers.google.com/web/fundamentals/performance/webpack/decrease-frontend-size#optimize_dependencies)."
+    "message": "Kapag malalaki ang JavaScript library, posibleng maging hindi maganda ang performance. Gumamit ng mas maliliit na library na ganoon din ang function para mabawasan ang laki ng iyong bundle. [Matuto pa](https://developers.9oo91e.qjz9zk/web/fundamentals/performance/webpack/decrease-frontend-size#optimize_dependencies)."
   },
   "lighthouse-core/audits/large-javascript-libraries.js | displayValue": {
     "message": "{libraryCount,plural, =1{1 malaking library ang nakita}one{# malaking library ang nakita}other{# na malaking library ang nakita}}"
@@ -990,7 +990,7 @@
     "message": "Mga Latency sa Backend ng Server"
   },
   "lighthouse-core/audits/no-unload-listeners.js | description": {
-    "message": "Hindi palaging gumagana nang maayos ang event na `unload` at puwedeng mahadlangan ng pag-listen dito ang mga pag-optimize ng browser tulad ng Back-Forward Cache. Pag-isipang gamitin na lang ang event na `pagehide` o ang event na `visibilitychange`. [Matuto Pa](https://developers.google.com/web/updates/2018/07/page-lifecycle-api#the-unload-event)"
+    "message": "Hindi palaging gumagana nang maayos ang event na `unload` at puwedeng mahadlangan ng pag-listen dito ang mga pag-optimize ng browser tulad ng Back-Forward Cache. Pag-isipang gamitin na lang ang event na `pagehide` o ang event na `visibilitychange`. [Matuto Pa](https://developers.9oo91e.qjz9zk/web/updates/2018/07/page-lifecycle-api#the-unload-event)"
   },
   "lighthouse-core/audits/no-unload-listeners.js | failureTitle": {
     "message": "Nagrerehistro ng listener na `unload`"
@@ -1041,7 +1041,7 @@
     "message": "Hindi mabasa ng Lighthouse ang `start_url` na galing sa manifest. Dahil dito, ipinagpapalagay na `start_url` ang URL ng dokumento. Mensahe ng error: '{manifestWarning}.'"
   },
   "lighthouse-core/audits/performance-budget.js | description": {
-    "message": "Panatilihin ang dami at laki ng mga kahilingan sa network sa ilalim ng mga target na itinakda ng ibinigay na badyet sa performance. [Matuto pa](https://developers.google.com/web/tools/lighthouse/audits/budgets)."
+    "message": "Panatilihin ang dami at laki ng mga kahilingan sa network sa ilalim ng mga target na itinakda ng ibinigay na badyet sa performance. [Matuto pa](https://developers.9oo91e.qjz9zk/web/tools/lighthouse/audits/budgets)."
   },
   "lighthouse-core/audits/performance-budget.js | requestCountOverBudget": {
     "message": "{count,plural, =1{1 kahilingan}one{# kahilingan}other{# na kahilingan}}"
@@ -1113,7 +1113,7 @@
     "message": "Hindi Nako-crawl na Link"
   },
   "lighthouse-core/audits/seo/crawlable-anchors.js | description": {
-    "message": "Puwedeng gumamit ng mga attribute na `href` ang mga search engine sa mga link para mag-crawl ng mga website. Tiyaking naka-link ang attribute na `href` ng mga anchor element sa isang naaangkop na destinasyon, para mas marami pang page ng site ang matuklasan. [Matuto Pa](https://support.google.com/webmasters/answer/9112205)"
+    "message": "Puwedeng gumamit ng mga attribute na `href` ang mga search engine sa mga link para mag-crawl ng mga website. Tiyaking naka-link ang attribute na `href` ng mga anchor element sa isang naaangkop na destinasyon, para mas marami pang page ng site ang matuklasan. [Matuto Pa](https://support.9oo91e.qjz9zk/webmasters/answer/9112205)"
   },
   "lighthouse-core/audits/seo/crawlable-anchors.js | failureTitle": {
     "message": "Hindi nako-crawl ang mga link"
@@ -1197,7 +1197,7 @@
     "message": "May naglalarawang text ang mga link"
   },
   "lighthouse-core/audits/seo/manual/structured-data.js | description": {
-    "message": "Patakbuhin ang [Tool sa Pag-test ng Structured Data](https://search.google.com/structured-data/testing-tool/) at ang [Structured Data Linter](http://linter.structured-data.org/) para i-validate ang structured data. [Matuto pa](https://web.dev/structured-data/)."
+    "message": "Patakbuhin ang [Tool sa Pag-test ng Structured Data](https://search.9oo91e.qjz9zk/structured-data/testing-tool/) at ang [Structured Data Linter](http://linter.structured-data.org/) para i-validate ang structured data. [Matuto pa](https://web.dev/structured-data/)."
   },
   "lighthouse-core/audits/seo/manual/structured-data.js | title": {
     "message": "Valid ang structured data"
@@ -1320,7 +1320,7 @@
     "message": "Third-Party"
   },
   "lighthouse-core/audits/third-party-summary.js | description": {
-    "message": "Puwedeng lubos na makaapekto ang code ng third party sa performance ng pag-load. Limitahan ang bilang ng paulit-ulit na mga third-party na provider at subukang i-load ang code ng third party pagkatapos ng pangunahing pag-load ng iyong page. [Matuto pa](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/loading-third-party-javascript/)."
+    "message": "Puwedeng lubos na makaapekto ang code ng third party sa performance ng pag-load. Limitahan ang bilang ng paulit-ulit na mga third-party na provider at subukang i-load ang code ng third party pagkatapos ng pangunahing pag-load ng iyong page. [Matuto pa](https://developers.9oo91e.qjz9zk/web/fundamentals/performance/optimizing-content-efficiency/loading-third-party-javascript/)."
   },
   "lighthouse-core/audits/third-party-summary.js | displayValue": {
     "message": "Na-block ng code ng third party ang pangunahing thread sa loob ng {timeInMs, number, milliseconds} ms"
@@ -1341,7 +1341,7 @@
     "message": "Sukatan"
   },
   "lighthouse-core/audits/timing-budget.js | description": {
-    "message": "Magtakda ng badyet sa timing para matulungan kang subaybayan ang performance ng iyong site. Mabilis na naglo-load ang mga site na maayos na gumagana at mabilis na tumutugon ang mga ito sa mga input event ng user. [Matuto pa](https://developers.google.com/web/tools/lighthouse/audits/budgets)."
+    "message": "Magtakda ng badyet sa timing para matulungan kang subaybayan ang performance ng iyong site. Mabilis na naglo-load ang mga site na maayos na gumagana at mabilis na tumutugon ang mga ito sa mga input event ng user. [Matuto pa](https://developers.9oo91e.qjz9zk/web/tools/lighthouse/audits/budgets)."
   },
   "lighthouse-core/audits/timing-budget.js | title": {
     "message": "Badyet sa timing"
@@ -1395,7 +1395,7 @@
     "message": "URL ng Map"
   },
   "lighthouse-core/audits/valid-source-maps.js | description": {
-    "message": "Tina-translate ng mga source map ang pinaliit na code sa orihinal na source code. Nakakatulong ito sa mga developer na mag-debug sa produksyon. Dagdag pa rito, nakakapagbigay ang Lighthouse ng higit pang insight. Pag-isipang mag-deploy ng mga source map para masulit ang mga benepisyong ito. [Matuto pa](https://developers.google.com/web/tools/chrome-devtools/javascript/source-maps)."
+    "message": "Tina-translate ng mga source map ang pinaliit na code sa orihinal na source code. Nakakatulong ito sa mga developer na mag-debug sa produksyon. Dagdag pa rito, nakakapagbigay ang Lighthouse ng higit pang insight. Pag-isipang mag-deploy ng mga source map para masulit ang mga benepisyong ito. [Matuto pa](https://developers.9oo91e.qjz9zk/web/tools/chrome-devtools/javascript/source-maps)."
   },
   "lighthouse-core/audits/valid-source-maps.js | failureTitle": {
     "message": "Nawawala ang mga source map para sa malaking first-party na JavaScript"
@@ -1464,10 +1464,10 @@
     "message": "Pinakamahuhusay na kagawian"
   },
   "lighthouse-core/config/default-config.js | a11yCategoryDescription": {
-    "message": "Hina-highlight ng mga pagsusuring ito ang mga pagkakataong [gawing mas accessible ng iyong web app](https://developers.google.com/web/fundamentals/accessibility). Isang subset lang ng mga isyu sa pagiging accessible ang awtomatikong matutukoy kaya hinihikayat din ang manual na pagsusuri."
+    "message": "Hina-highlight ng mga pagsusuring ito ang mga pagkakataong [gawing mas accessible ng iyong web app](https://developers.9oo91e.qjz9zk/web/fundamentals/accessibility). Isang subset lang ng mga isyu sa pagiging accessible ang awtomatikong matutukoy kaya hinihikayat din ang manual na pagsusuri."
   },
   "lighthouse-core/config/default-config.js | a11yCategoryManualDescription": {
-    "message": "Tinutugunan ng mga item na ito ang mga bahaging hindi masasakop ng naka-automate na tool sa pagsusuri. Matuto pa sa aming gabay sa [pagsasagawa ng pagsusuri sa pagiging accessible](https://developers.google.com/web/fundamentals/accessibility/how-to-review)."
+    "message": "Tinutugunan ng mga item na ito ang mga bahaging hindi masasakop ng naka-automate na tool sa pagsusuri. Matuto pa sa aming gabay sa [pagsasagawa ng pagsusuri sa pagiging accessible](https://developers.9oo91e.qjz9zk/web/fundamentals/accessibility/how-to-review)."
   },
   "lighthouse-core/config/default-config.js | a11yCategoryTitle": {
     "message": "Pagiging accessible"
@@ -1554,10 +1554,10 @@
     "message": "Performance"
   },
   "lighthouse-core/config/default-config.js | pwaCategoryDescription": {
-    "message": "Vina-validate ng mga pagsusuring ito ang mga aspeto ng isang Progressive Web App. [Matuto pa](https://developers.google.com/web/progressive-web-apps/checklist)."
+    "message": "Vina-validate ng mga pagsusuring ito ang mga aspeto ng isang Progressive Web App. [Matuto pa](https://developers.9oo91e.qjz9zk/web/progressive-web-apps/checklist)."
   },
   "lighthouse-core/config/default-config.js | pwaCategoryManualDescription": {
-    "message": "Kinakailangan ang mga pagsusuring ito ng baseline na [Checklist ng PWA ](https://developers.google.com/web/progressive-web-apps/checklist) pero hindi ito awtomatikong sinusuri ng Lighthouse. Hindi nakakaapekto ang mga ito sa iyong score pero mahalagang ma-verify mo ang mga ito nang manual."
+    "message": "Kinakailangan ang mga pagsusuring ito ng baseline na [Checklist ng PWA ](https://developers.9oo91e.qjz9zk/web/progressive-web-apps/checklist) pero hindi ito awtomatikong sinusuri ng Lighthouse. Hindi nakakaapekto ang mga ito sa iyong score pero mahalagang ma-verify mo ang mga ito nang manual."
   },
   "lighthouse-core/config/default-config.js | pwaCategoryTitle": {
     "message": "Progressive Web App"
@@ -1572,7 +1572,7 @@
     "message": "Na-optimize ang PWA"
   },
   "lighthouse-core/config/default-config.js | seoCategoryDescription": {
-    "message": "Tinitiyak ng mga pagsusuring ito na naka-optimize ang iyong page para sa ranking ng mga resulta ng search engine. May mga karagdagang salik na hindi sinusuri ng Lighthouse na puwedeng makaapekto sa iyong ranking sa paghahanap. [Matuto pa](https://support.google.com/webmasters/answer/35769)."
+    "message": "Tinitiyak ng mga pagsusuring ito na naka-optimize ang iyong page para sa ranking ng mga resulta ng search engine. May mga karagdagang salik na hindi sinusuri ng Lighthouse na puwedeng makaapekto sa iyong ranking sa paghahanap. [Matuto pa](https://support.9oo91e.qjz9zk/webmasters/answer/35769)."
   },
   "lighthouse-core/config/default-config.js | seoCategoryManualDescription": {
     "message": "Paganahin ang mga karagdagang validator na ito sa iyong site para tingnan ang karagdagang pinakamahuhusay na kagawian sa SEO."
@@ -1593,7 +1593,7 @@
     "message": "Pag-crawl at Pag-index"
   },
   "lighthouse-core/config/default-config.js | seoMobileGroupDescription": {
-    "message": "Tiyaking pang-mobile ang iyong mga page para hindi na kailangang mag-pinch o mag-zoom in ng mga user para mabasa ang mga page ng content. [Matuto pa](https://developers.google.com/search/mobile-sites/)."
+    "message": "Tiyaking pang-mobile ang iyong mga page para hindi na kailangang mag-pinch o mag-zoom in ng mga user para mabasa ang mga page ng content. [Matuto pa](https://developers.9oo91e.qjz9zk/search/mobile-sites/)."
   },
   "lighthouse-core/config/default-config.js | seoMobileGroupTitle": {
     "message": "Pang-mobile"
@@ -1836,7 +1836,7 @@
     "message": "Data ng Lab"
   },
   "lighthouse-core/report/html/renderer/util.js | lsPerformanceCategoryDescription": {
-    "message": "Ang pagsusuri ng [Lighthouse](https://developers.google.com/web/tools/lighthouse/) ng kasalukuyang page sa isang na-emulate na mobile network. Tinantya at puwedeng mag-iba ang mga value."
+    "message": "Ang pagsusuri ng [Lighthouse](https://developers.9oo91e.qjz9zk/web/tools/lighthouse/) ng kasalukuyang page sa isang na-emulate na mobile network. Tinantya at puwedeng mag-iba ang mga value."
   },
   "lighthouse-core/report/html/renderer/util.js | manualAuditsGroupTitle": {
     "message": "Mga karagdagang item na manual na susuriin"
@@ -1983,10 +1983,10 @@
     "message": "Tiyaking na-enable mo ang \"Pagsama-samahin ang mga file sa JavaScript\" sa page na \"Pangangasiwa » Configuration » Pag-develop.\" Puwede mo ring i-configure ang mga mas advanced na opsyon sa pagsasama-sama sa pamamagitan ng [mga karagdagang module](https://www.drupal.org/project/project_module?f%5B0%5D=&f%5B1%5D=&f%5B2%5D=im_vid_3%3A123&f%5B3%5D=&f%5B4%5D=sm_field_project_type%3Afull&f%5B5%5D=&f%5B6%5D=&text=javascript+aggregation&solrsort=iss_project_release_usage+desc&op=Search) para pabilisin ang iyong site sa pamamagitan ng pag-concatenate, pagpapaliit, at pag-compress sa mga asset ng JavaScript mo."
   },
   "node_modules/lighthouse-stack-packs/packs/drupal.js | unused-css-rules": {
-    "message": "Pag-isipang alisin ang mga hindi ginagamit na panuntunan sa CSS at i-attach lang ang mga kinakailangang library ng Drupal sa kaugnay na page o component sa isang page. Tingnan ang [link ng dokumentasyon ng Drupal](https://www.drupal.org/docs/8/creating-custom-modules/adding-stylesheets-css-and-javascript-js-to-a-drupal-8-module#library) para sa mga detalye. Para tukuyin ang mga naka-attach na library na nagdaragdag ng hindi nauugnay na CSS, subukang patakbuhin ang [sakop ng code](https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverage) sa Chrome DevTools. Puwede mong tukuyin ang tema/module na responsable mula sa URL ng stylesheet kapag naka-disable ang pagsasama-sama sa CSS sa iyong site ng Drupal. Abangan ang mga tema/module na maraming stylesheet sa listahang mayroong maraming pula sa sakop ng code. Dapat lang i-enqueue ng tema/module ang isang stylesheet kung talagang ginagamit ito sa page."
+    "message": "Pag-isipang alisin ang mga hindi ginagamit na panuntunan sa CSS at i-attach lang ang mga kinakailangang library ng Drupal sa kaugnay na page o component sa isang page. Tingnan ang [link ng dokumentasyon ng Drupal](https://www.drupal.org/docs/8/creating-custom-modules/adding-stylesheets-css-and-javascript-js-to-a-drupal-8-module#library) para sa mga detalye. Para tukuyin ang mga naka-attach na library na nagdaragdag ng hindi nauugnay na CSS, subukang patakbuhin ang [sakop ng code](https://developers.9oo91e.qjz9zk/web/updates/2017/04/devtools-release-notes#coverage) sa Chrome DevTools. Puwede mong tukuyin ang tema/module na responsable mula sa URL ng stylesheet kapag naka-disable ang pagsasama-sama sa CSS sa iyong site ng Drupal. Abangan ang mga tema/module na maraming stylesheet sa listahang mayroong maraming pula sa sakop ng code. Dapat lang i-enqueue ng tema/module ang isang stylesheet kung talagang ginagamit ito sa page."
   },
   "node_modules/lighthouse-stack-packs/packs/drupal.js | unused-javascript": {
-    "message": "Consider removing unused JavaScript assets and only attach the needed Drupal libraries to the relevant page or component in a page. See the [Drupal documentation link](https://www.drupal.org/docs/8/creating-custom-modules/adding-stylesheets-css-and-javascript-js-to-a-drupal-8-module#library) for details. To identify attached libraries that are adding extraneous JavaScript, try running [code coverage](https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverage) in Chrome DevTools. You can identify the theme/module responsible from the URL of the script when JavaScript aggregation is disabled in your Drupal site. Look out for themes/modules that have many scripts in the list which have a lot of red in code coverage. A theme/module should only enqueue a script if it is actually used on the page."
+    "message": "Consider removing unused JavaScript assets and only attach the needed Drupal libraries to the relevant page or component in a page. See the [Drupal documentation link](https://www.drupal.org/docs/8/creating-custom-modules/adding-stylesheets-css-and-javascript-js-to-a-drupal-8-module#library) for details. To identify attached libraries that are adding extraneous JavaScript, try running [code coverage](https://developers.9oo91e.qjz9zk/web/updates/2017/04/devtools-release-notes#coverage) in Chrome DevTools. You can identify the theme/module responsible from the URL of the script when JavaScript aggregation is disabled in your Drupal site. Look out for themes/modules that have many scripts in the list which have a lot of red in code coverage. A theme/module should only enqueue a script if it is actually used on the page."
   },
   "node_modules/lighthouse-stack-packs/packs/drupal.js | uses-long-cache-ttl": {
     "message": "Itakda ang \"Maximum na tagal ng cache ng browser at proxy\" sa page na \"Pangangasiwa » Configuration » Pag-develop.\" Magbasa tungkol sa [Cache ng Drupal at pag-optimize para sa performance](https://www.drupal.org/docs/7/managing-site-performance-and-scalability/caching-to-improve-performance/caching-overview#s-drupal-performance-resources)."
@@ -2025,10 +2025,10 @@
     "message": "Mapapabilis ng ilang [extension ng Joomla](https://extensions.joomla.org/instant-search/?jed_live%5Bquery%5D=performance) ang iyong site sa pamamagitan ng pag-concatenate, pagpapaliit, at pag-compress sa mga script mo. Mayroon ding mga template na nagbibigay ng functionality na ito."
   },
   "node_modules/lighthouse-stack-packs/packs/joomla.js | unused-css-rules": {
-    "message": "Pag-isipang bawasan, o baguhin, ang bilang ng [mga extension ng Joomla](https://extensions.joomla.org/) na naglo-load ng hindi ginagamit na CSS sa iyong page. Para tukuyin ang mga extension na nagdaragdag ng hindi nauugnay na CSS, subukang patakbuhin ang [sakop ng code](https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverage) sa Chrome DevTools. Puwede mong tukuyin ang tema/plugin na responsable mula sa URL ng stylesheet. Abangan ang mga plugin na maraming stylesheet sa listahang mayroong maraming pula sa sakop ng code. Dapat lang i-enqueue ng plugin ang isang stylesheet kung talagang ginagamit ito sa page."
+    "message": "Pag-isipang bawasan, o baguhin, ang bilang ng [mga extension ng Joomla](https://extensions.joomla.org/) na naglo-load ng hindi ginagamit na CSS sa iyong page. Para tukuyin ang mga extension na nagdaragdag ng hindi nauugnay na CSS, subukang patakbuhin ang [sakop ng code](https://developers.9oo91e.qjz9zk/web/updates/2017/04/devtools-release-notes#coverage) sa Chrome DevTools. Puwede mong tukuyin ang tema/plugin na responsable mula sa URL ng stylesheet. Abangan ang mga plugin na maraming stylesheet sa listahang mayroong maraming pula sa sakop ng code. Dapat lang i-enqueue ng plugin ang isang stylesheet kung talagang ginagamit ito sa page."
   },
   "node_modules/lighthouse-stack-packs/packs/joomla.js | unused-javascript": {
-    "message": "Pag-isipang bawasan, o baguhin, ang bilang ng [mga extension ng Joomla](https://extensions.joomla.org/) na naglo-load ng hindi ginagamit na JavaScript sa iyong page. Para tukuyin ang mga plugin na nagdaragdag ng hindi nauugnay na JS, subukang patakbuhin ang [sakop ng code](https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverage) sa Chrome DevTools. Puwede mong tukuyin ang extension na responsable mula sa URL ng script. Abangan ang mga extension na maraming script sa listahang mayroong maraming pula sa sakop ng code. Dapat lang i-enqueue ng extension ang isang script kung talagang ginagamit ito sa page."
+    "message": "Pag-isipang bawasan, o baguhin, ang bilang ng [mga extension ng Joomla](https://extensions.joomla.org/) na naglo-load ng hindi ginagamit na JavaScript sa iyong page. Para tukuyin ang mga plugin na nagdaragdag ng hindi nauugnay na JS, subukang patakbuhin ang [sakop ng code](https://developers.9oo91e.qjz9zk/web/updates/2017/04/devtools-release-notes#coverage) sa Chrome DevTools. Puwede mong tukuyin ang extension na responsable mula sa URL ng script. Abangan ang mga extension na maraming script sa listahang mayroong maraming pula sa sakop ng code. Dapat lang i-enqueue ng extension ang isang script kung talagang ginagamit ito sa page."
   },
   "node_modules/lighthouse-stack-packs/packs/joomla.js | uses-long-cache-ttl": {
     "message": "Magbasa tungkol sa [Pag-cache ng Browser sa Joomla](https://docs.joomla.org/Cache)."
@@ -2124,10 +2124,10 @@
     "message": "Puwedeng pabilisin ng ilang [plugin sa WordPress](https://wordpress.org/plugins/search/minify+javascript/) ang iyong site sa pamamagitan ng pagsasama-sama, pagpapaliit, at pagko-compress ng mga script mo. Puwede ka ring gumamit ng proseso ng pagbuo para gawin ang pagpapaliit na ito nang mas maaga kung posible."
   },
   "node_modules/lighthouse-stack-packs/packs/wordpress.js | unused-css-rules": {
-    "message": "Pag-isipang bawasan, o baguhin, ang bilang ng [mga plugin sa WordPress](https://wordpress.org/plugins/) na naglo-load ng mga hindi ginagamit na CSS sa iyong page. Para tukuyin ang mga plugin na nagdaragdag ng mga hindi nauugnay na CSS, subukang patakbuhin ang [sakop ng code](https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverage) sa Chrome DevTools. Puwede mong tukuyin ang tema/plugin na sanhi nito mula sa URL ng stylesheet. Abangan ang mga plugin na maraming stylesheet sa listahang maraming pula sa sakop ng code. Dapat lang i-enqueue ng plugin ang isang stylesheet kung talagang ginagamit ito sa page."
+    "message": "Pag-isipang bawasan, o baguhin, ang bilang ng [mga plugin sa WordPress](https://wordpress.org/plugins/) na naglo-load ng mga hindi ginagamit na CSS sa iyong page. Para tukuyin ang mga plugin na nagdaragdag ng mga hindi nauugnay na CSS, subukang patakbuhin ang [sakop ng code](https://developers.9oo91e.qjz9zk/web/updates/2017/04/devtools-release-notes#coverage) sa Chrome DevTools. Puwede mong tukuyin ang tema/plugin na sanhi nito mula sa URL ng stylesheet. Abangan ang mga plugin na maraming stylesheet sa listahang maraming pula sa sakop ng code. Dapat lang i-enqueue ng plugin ang isang stylesheet kung talagang ginagamit ito sa page."
   },
   "node_modules/lighthouse-stack-packs/packs/wordpress.js | unused-javascript": {
-    "message": "Pag-isipang bawasan, o baguhin, ang bilang ng [mga plugin sa WordPress](https://wordpress.org/plugins/) na naglo-load ng mga hindi ginagamit na JavaScript sa iyong page. Para tukuyin ang mga plugin na nagdaragdag ng mga hindi nauugnay na JS, subukang patakbuhin ang [sakop ng code](https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverage) sa Chrome DevTools. Puwede mong tukuyin ang tema/plugin na sanhi nito mula sa URL ng script. Abangan ang mga plugin na maraming script sa listahang may maraming pula sa sakop ng code. Dapat lang i-enqueue ng plugin ang isang script kung talagang ginagamit ito sa page."
+    "message": "Pag-isipang bawasan, o baguhin, ang bilang ng [mga plugin sa WordPress](https://wordpress.org/plugins/) na naglo-load ng mga hindi ginagamit na JavaScript sa iyong page. Para tukuyin ang mga plugin na nagdaragdag ng mga hindi nauugnay na JS, subukang patakbuhin ang [sakop ng code](https://developers.9oo91e.qjz9zk/web/updates/2017/04/devtools-release-notes#coverage) sa Chrome DevTools. Puwede mong tukuyin ang tema/plugin na sanhi nito mula sa URL ng script. Abangan ang mga plugin na maraming script sa listahang may maraming pula sa sakop ng code. Dapat lang i-enqueue ng plugin ang isang script kung talagang ginagamit ito sa page."
   },
   "node_modules/lighthouse-stack-packs/packs/wordpress.js | uses-long-cache-ttl": {
     "message": "Magbasa tungkol sa [Pag-cache ng Browser sa WordPress](https://wordpress.org/support/article/optimization/#browser-caching)."

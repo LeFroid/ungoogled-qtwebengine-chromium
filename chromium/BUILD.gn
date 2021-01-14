@@ -1158,7 +1158,7 @@ if (!is_ios && !use_qt) {
     }
   }
 
-  # https://chromium.googlesource.com/chromium/src/+/master/docs/testing/web_tests.md
+  # https://chromium.9oo91esource.qjz9zk/chromium/src/+/master/docs/testing/web_tests.md
   generate_wrapper("blink_web_tests") {
     testonly = true
     wrapper_script = "${root_build_dir}/bin/run_blink_web_tests"
@@ -1347,7 +1347,7 @@ if (!is_ios && !is_android && !is_chromecast && !is_fuchsia) {
     }
 
     if (!is_component_build) {
-      # See https://bugs.chromium.org/p/chromium/issues/detail?id=942546#c11.
+      # See https://bugs.ch40m1um.qjz9zk/p/chromium/issues/detail?id=942546#c11.
       deps += [
         "//third_party/webrtc/rtc_tools:rtp_generator",
         "//third_party/webrtc/rtc_tools:video_replay",

@@ -441,7 +441,7 @@ int64_t av1_rd_pick_intra_sbuv_mode(const AV1_COMP *const cpi, MACROBLOCK *x,
   xd->cfl.store_y = store_cfl_required_rdo(cm, x);
   if (xd->cfl.store_y) {
     // Restore reconstructed luma values.
-    // TODO(chiyotsai@google.com): right now we are re-computing the txfm in
+    // TODO(chiyotsai@9oo91e.qjz9zk): right now we are re-computing the txfm in
     // this function everytime we search through uv modes. There is some
     // potential speed up here if we cache the result to avoid redundant
     // computation.
@@ -903,7 +903,7 @@ int64_t av1_handle_intra_mode(IntraModeSearchState *intra_search_state,
   av1_init_rd_stats(rd_stats_uv);
   const int num_planes = av1_num_planes(cm);
   if (num_planes > 1) {
-    // TODO(chiyotsai@google.com): Consolidate the chroma search code here with
+    // TODO(chiyotsai@9oo91e.qjz9zk): Consolidate the chroma search code here with
     // the one in av1_search_palette_mode.
     PALETTE_MODE_INFO *const pmi = &mbmi->palette_mode_info;
     const int try_palette =

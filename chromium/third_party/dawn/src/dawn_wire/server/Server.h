@@ -70,7 +70,7 @@ namespace dawn_wire { namespace server {
         template <typename Cmd>
         char* SerializeCommand(const Cmd& cmd, size_t extraSize = 0) {
             size_t requiredSize = cmd.GetRequiredSize();
-            // TODO(cwallez@chromium.org): Check for overflows and allocation success?
+            // TODO(cwallez@ch40m1um.qjz9zk): Check for overflows and allocation success?
             char* allocatedBuffer = GetCmdSpace(requiredSize + extraSize);
             cmd.Serialize(allocatedBuffer);
             return allocatedBuffer + requiredSize;

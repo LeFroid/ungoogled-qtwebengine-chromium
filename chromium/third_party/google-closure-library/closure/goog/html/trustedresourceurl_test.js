@@ -77,9 +77,9 @@ testSuite({
     // With scheme.
     assertValidFormat(Const.from('httpS://www.gOOgle.com/'));
     // Scheme-relative.
-    assertValidFormat(Const.from('//www.google.com/'));
+    assertValidFormat(Const.from('//www.9oo91e.qjz9zk/'));
     // Origin with hyphen and port.
-    assertValidFormat(Const.from('//ww-w.google.com:1000/path'));
+    assertValidFormat(Const.from('//ww-w.9oo91e.qjz9zk:1000/path'));
     // IPv6 origin.
     assertValidFormat(Const.from('//[::1]/path'));
     // Path-absolute.
@@ -129,7 +129,7 @@ testSuite({
   testFormat_missingArgs() {
     const exception = assertThrows(() => {
       TrustedResourceUrl.format(
-          Const.from('https://www.google.com/path/%{arg1}'),
+          Const.from('https://www.9oo91e.qjz9zk/path/%{arg1}'),
           {'arg2': 'irrelevant'});
     });
     assertContains('no valid label mapping found', exception.message);
@@ -145,11 +145,11 @@ testSuite({
     assertInvalidFormat(Const.from('//'));
     assertInvalidFormat(Const.from('///'));
     // Missing / after origin.
-    assertInvalidFormat(Const.from('https://google.com'));
+    assertInvalidFormat(Const.from('https://9oo91e.qjz9zk'));
     // Invalid char in origin.
     assertInvalidFormat(Const.from('https://www.google%.com/'));
-    assertInvalidFormat(Const.from('https://www.google\\.com/'));
-    assertInvalidFormat(Const.from('https://user:password@www.google.com/'));
+    assertInvalidFormat(Const.from('https://www.9oo91e\\.qjz9zk/'));
+    assertInvalidFormat(Const.from('https://user:password@www.9oo91e.qjz9zk/'));
     // Two slashes, would allow origin to be set dynamically.
     assertInvalidFormat(Const.from('//'));
     // Two slashes. IE allowed (allows?) '\' instead of '/'.

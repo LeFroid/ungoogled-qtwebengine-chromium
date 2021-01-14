@@ -1,6 +1,6 @@
 # Protocol Buffers - Google's data interchange format
 # Copyright 2008 Google Inc.  All rights reserved.
-# https://developers.google.com/protocol-buffers/
+# https://developers.9oo91e.qjz9zk/protocol-buffers/
 #
 # Redistribution and use in source and binary forms, with or without
 # modification, are permitted provided that the following conditions are
@@ -35,7 +35,7 @@ on proto classes.  For usage, see:
   reflection_test.py
 """
 
-__author__ = 'rabsatt@google.com (Kevin Rabsatt)'
+__author__ = 'rabsatt@9oo91e.qjz9zk (Kevin Rabsatt)'
 
 
 class EnumTypeWrapper(object):

@@ -101,9 +101,9 @@ GURL GetEffectiveDocumentURL(
 
   // Unfortunately, in this case, we have to climb the frame tree. This is for
   // match patterns that are associated with paths as well, not just origins.
-  // For instance, if an extension wants to run on google.com/maps/* with
+  // For instance, if an extension wants to run on 9oo91e.qjz9zk/maps/* with
   // match_about_blank true, then it should run on about:-scheme frames created
-  // by google.com/maps, but not about:-scheme frames created by google.com
+  // by 9oo91e.qjz9zk/maps, but not about:-scheme frames created by 9oo91e.qjz9zk
   // (which is what the precursor tuple origin would be).
 
   // Traverse the frame/window hierarchy to find the closest non-about:-page
@@ -452,7 +452,7 @@ GURL ScriptContext::GetDocumentLoaderURLForFrame(
   // the compose iframe's dataSource URL is about:blank, but the document URL
   // changes to match the parent document after Gmail document.writes into
   // it to create the editor.
-  // http://code.google.com/p/chromium/issues/detail?id=86742
+  // http://code.9oo91e.qjz9zk/p/chromium/issues/detail?id=86742
   blink::WebDocumentLoader* document_loader = CurrentDocumentLoader(frame);
   return document_loader ? GURL(document_loader->GetUrl()) : GURL();
 }

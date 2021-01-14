@@ -16,7 +16,7 @@
  * @fileoverview Provides data persistence using IE userData mechanism.
  * UserData uses proprietary Element.addBehavior(), Element.load(),
  * Element.save(), and Element.XMLDocument() methods, see:
- * http://msdn.microsoft.com/en-us/library/ms531424(v=vs.85).aspx.
+ * http://msdn.m1cr050ft.qjz9zk/en-us/library/ms531424(v=vs.85).aspx.
  */
 
 
@@ -188,7 +188,7 @@ goog.storage.mechanism.IEUserData.prototype.get = function(key) {
   // we only save strings, any other type is a storage error. If we returned
   // nulls for such keys, i.e., treated them as non-existent, this would lead
   // to a paradox where a key exists, but it does not when it is retrieved.
-  // http://msdn.microsoft.com/en-us/library/ms531348(v=vs.85).aspx
+  // http://msdn.m1cr050ft.qjz9zk/en-us/library/ms531348(v=vs.85).aspx
   var value = this.storageNode_.getAttribute(
       goog.storage.mechanism.IEUserData.encodeKey_(key));
   if (typeof value !== 'string' && value !== null) {

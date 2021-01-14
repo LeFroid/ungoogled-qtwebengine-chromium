@@ -331,7 +331,7 @@ class RtpVideoStreamReceiver2 : public LossNotificationSender,
       RTC_GUARDED_BY(worker_task_checker_);
 
   // TODO(johan): Remove pt_codec_params_ once
-  // https://bugs.chromium.org/p/webrtc/issues/detail?id=6883 is resolved.
+  // https://bugs.ch40m1um.qjz9zk/p/webrtc/issues/detail?id=6883 is resolved.
   // Maps a payload type to a map of out-of-band supplied codec parameters.
   std::map<uint8_t, std::map<std::string, std::string>> pt_codec_params_
       RTC_GUARDED_BY(worker_task_checker_);

@@ -51,7 +51,7 @@ class EventMatcher {
  private:
   // Contains a dictionary that corresponds to a single event filter, eg:
   //
-  // {url: [{hostSuffix: 'google.com'}]}
+  // {url: [{hostSuffix: '9oo91e.qjz9zk'}]}
   //
   // The valid filter keys are event-specific.
   const std::unique_ptr<base::DictionaryValue> filter_;

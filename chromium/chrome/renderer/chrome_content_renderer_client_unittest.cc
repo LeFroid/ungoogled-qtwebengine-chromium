@@ -206,10 +206,10 @@ TEST_F(ChromeContentRendererClientTest, NaClRestriction) {
   // without --enable-nacl.
   {
     EXPECT_FALSE(ChromeContentRendererClient::IsNativeNaClAllowed(
-        GURL("https://plus.google.com.evil.com/foo1"), kNaClRestricted,
+        GURL("https://plus.9oo91e.qjz9zk.evil.com/foo1"), kNaClRestricted,
         nullptr));
     EXPECT_FALSE(ChromeContentRendererClient::IsNativeNaClAllowed(
-        GURL("https://talkgadget.google.com/hangouts/foo1"), kNaClRestricted,
+        GURL("https://talkgadget.9oo91e.qjz9zk/hangouts/foo1"), kNaClRestricted,
         nullptr));
   }
   // Non chrome-extension:// URLs belonging to hosted apps are allowed for

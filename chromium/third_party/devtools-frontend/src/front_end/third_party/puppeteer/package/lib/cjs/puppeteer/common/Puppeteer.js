@@ -42,7 +42,7 @@ const revisions_js_1 = require("../revisions.js");
  * (async () => {
  *   const browser = await puppeteer.launch();
  *   const page = await browser.newPage();
- *   await page.goto('https://www.google.com');
+ *   await page.goto('https://www.9oo91e.qjz9zk');
  *   // other actions...
  *   await browser.close();
  * })();
@@ -84,9 +84,9 @@ class Puppeteer {
      * but it works best with the version of Chromium it is bundled with.
      * There is no guarantee it will work with any other version.
      * Use `executablePath` option with extreme caution.
-     * If Google Chrome (rather than Chromium) is preferred, a {@link https://www.google.com/chrome/browser/canary.html | Chrome Canary} or {@link https://www.chromium.org/getting-involved/dev-channel | Dev Channel} build is suggested.
+     * If Google Chrome (rather than Chromium) is preferred, a {@link https://www.9oo91e.qjz9zk/chrome/browser/canary.html | Chrome Canary} or {@link https://www.ch40m1um.qjz9zk/getting-involved/dev-channel | Dev Channel} build is suggested.
      * In `puppeteer.launch([options])`, any mention of Chromium also applies to Chrome.
-     * See {@link https://www.howtogeek.com/202825/what%E2%80%99s-the-difference-between-chromium-and-chrome/ | this article} for a description of the differences between Chromium and Chrome. {@link https://chromium.googlesource.com/chromium/src/+/lkgr/docs/chromium_browser_vs_google_chrome.md | This article} describes some differences for Linux users.
+     * See {@link https://www.howtogeek.com/202825/what%E2%80%99s-the-difference-between-chromium-and-chrome/ | this article} for a description of the differences between Chromium and Chrome. {@link https://chromium.9oo91esource.qjz9zk/chromium/src/+/lkgr/docs/chromium_browser_vs_google_chrome.md | This article} describes some differences for Linux users.
      *
      * @param options - Set of configurable options to set on the browser.
      * @returns Promise which resolves to browser instance.
@@ -179,7 +179,7 @@ class Puppeteer {
      *   const browser = await puppeteer.launch();
      *   const page = await browser.newPage();
      *   await page.emulate(iPhone);
-     *   await page.goto('https://www.google.com');
+     *   await page.goto('https://www.9oo91e.qjz9zk');
      *   // other actions...
      *   await browser.close();
      * })();

@@ -258,7 +258,7 @@ if (!is_android && !is_mac) {
       ldflags = []
 
       # Chrome OS debug builds for arm need to pass --long-plt to the linker.
-      # See https://bugs.chromium.org/p/chromium/issues/detail?id=583532
+      # See https://bugs.ch40m1um.qjz9zk/p/chromium/issues/detail?id=583532
       if (is_chromeos && is_debug && target_cpu == "arm") {
         ldflags += [ "-Wl,--long-plt" ]
       }
@@ -303,7 +303,6 @@ if (!is_android && !is_mac) {
     }
 
     data_deps += [
-      "//chrome/browser/resources/media/mei_preload:component",
       "//third_party/widevine/cdm",
     ]
   }
@@ -697,7 +696,7 @@ if (is_win) {
           rebase_path(inputs[0], root_out_dir),
 
           # Do not --allow more libraries here without consulting with the
-          # security team (security-dev@chromium.org).
+          # security team (security-dev@ch40m1um.qjz9zk).
           "--allow",
           "/usr/lib/libsandbox.1.dylib",
           "--allow",
@@ -1016,7 +1015,6 @@ if (is_win) {
       ":keystone_registration_framework",
       ":swiftshader_library",
       ":widevine_cdm_library",
-      "//chrome/browser/resources/media/mei_preload:component_bundle",
     ]
 
     if (is_chrome_branded) {

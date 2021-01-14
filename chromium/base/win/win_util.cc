@@ -129,7 +129,7 @@ bool SetProcessDpiAwarenessWrapper(PROCESS_DPI_AWARENESS value) {
 // Windows to scale dialogs, comctl32 controls, context menus, and non-client
 // area owned by this process on a per-monitor basis. If per-monitor V2 is not
 // available (i.e., prior to Windows 10 1703) or fails, returns false.
-// https://docs.microsoft.com/en-us/windows/desktop/hidpi/dpi-awareness-context
+// https://docs.m1cr050ft.qjz9zk/en-us/windows/desktop/hidpi/dpi-awareness-context
 bool EnablePerMonitorV2() {
   if (!IsUser32AndGdi32Available())
     return false;
@@ -392,7 +392,7 @@ bool GetUserSidString(std::wstring* user_sid) {
 bool UserAccountControlIsEnabled() {
   // This can be slow if Windows ends up going to disk.  Should watch this key
   // for changes and only read it once, preferably on the file thread.
-  //   http://code.google.com/p/chromium/issues/detail?id=61644
+  //   http://code.9oo91e.qjz9zk/p/chromium/issues/detail?id=61644
   ThreadRestrictions::ScopedAllowIO allow_io;
 
   RegKey key(HKEY_LOCAL_MACHINE,
@@ -451,7 +451,7 @@ bool SetAppIdForPropertyStore(IPropertyStore* property_store,
   // App id should be less than 128 chars and contain no space. And recommended
   // format is CompanyName.ProductName[.SubProduct.ProductNumber].
   // See
-  // https://docs.microsoft.com/en-us/windows/win32/shell/appids#how-to-form-an-application-defined-appusermodelid
+  // https://docs.m1cr050ft.qjz9zk/en-us/windows/win32/shell/appids#how-to-form-an-application-defined-appusermodelid
   DCHECK_LT(lstrlen(app_id), 128);
   DCHECK_EQ(wcschr(app_id, L' '), nullptr);
 
@@ -548,7 +548,7 @@ bool IsDeviceUsedAsATablet(std::string* reason) {
   // If the device is not supporting rotation, it's unlikely to be a tablet,
   // a convertible or a detachable.
   // See
-  // https://msdn.microsoft.com/en-us/library/windows/desktop/dn629263(v=vs.85).aspx
+  // https://msdn.m1cr050ft.qjz9zk/en-us/library/windows/desktop/dn629263(v=vs.85).aspx
   using GetAutoRotationStateType = decltype(GetAutoRotationState)*;
   static const auto get_auto_rotation_state_func =
       reinterpret_cast<GetAutoRotationStateType>(
@@ -783,7 +783,7 @@ bool IsRunningUnderDesktopName(WStringPiece desktop_name) {
 
 // This method is used to detect whether current session is a remote session.
 // See:
-// https://docs.microsoft.com/en-us/windows/desktop/TermServ/detecting-the-terminal-services-environment
+// https://docs.m1cr050ft.qjz9zk/en-us/windows/desktop/TermServ/detecting-the-terminal-services-environment
 bool IsCurrentSessionRemote() {
   if (::GetSystemMetrics(SM_REMOTESESSION))
     return true;

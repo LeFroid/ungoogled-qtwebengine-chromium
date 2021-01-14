@@ -464,7 +464,7 @@ goog.html.SafeHtml.verifyTagName = function(tagName) {
  * browsers. If a sandbox is essential to security (e.g. for third-party
  * frames), use createSandboxIframe which checks for browser support.
  *
- * @see https://developer.mozilla.org/en/docs/Web/HTML/Element/iframe#attr-sandbox
+ * @see https://developer.m0z111a.qjz9zk/en/docs/Web/HTML/Element/iframe#attr-sandbox
  *
  * @param {?goog.html.TrustedResourceUrl=} opt_src The value of the src
  *     attribute. If null or undefined src will not be set.
@@ -513,7 +513,7 @@ goog.html.SafeHtml.createIframe = function(
  * user interaction on Chrome (though only a few, further attempts are blocked).
  * Firefox and IE will block all downloads from the sandbox.
  *
- * @see https://developer.mozilla.org/en/docs/Web/HTML/Element/iframe#attr-sandbox
+ * @see https://developer.m0z111a.qjz9zk/en/docs/Web/HTML/Element/iframe#attr-sandbox
  * @see https://lists.w3.org/Archives/Public/public-whatwg-archive/2013Feb/0112.html
  *
  * @param {string|!goog.html.SafeUrl=} opt_src The value of the src

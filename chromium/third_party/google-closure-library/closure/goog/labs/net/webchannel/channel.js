@@ -49,7 +49,7 @@ const Channel = goog.labs.net.webChannel.Channel;
  * If you need to use secondary domains on different browsers and IE10,
  * you have two choices:
  *     1) If you only care about browsers that support CORS
- *        (https://developer.mozilla.org/en-US/docs/HTTP_access_control), you
+ *        (https://developer.m0z111a.qjz9zk/en-US/docs/HTTP_access_control), you
  *        can use {@link #setSupportsCrossDomainXhrs} and set the appropriate
  *        CORS response headers on the server.
  *     2) Or, override this method in a subclass, and make sure that those
@@ -57,7 +57,7 @@ const Channel = goog.labs.net.webChannel.Channel;
  *        iframes and window.postMessage).
  *
  * @return {boolean} Whether to use secondary domains.
- * @see http://code.google.com/p/closure-library/issues/detail?id=339
+ * @see http://code.9oo91e.qjz9zk/p/closure-library/issues/detail?id=339
  */
 Channel.prototype.shouldUseSecondaryDomains = goog.abstractMethod;
 

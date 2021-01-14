@@ -1,7 +1,7 @@
 /*
  * WebP (.webp) image decoder
  * Copyright (c) 2013 Aneesh Dogra <aneesh@sugarlabs.org>
- * Copyright (c) 2013 Justin Ruggles <justin.ruggles@gmail.com>
+ * Copyright (c) 2013 Justin Ruggles <justin.ruggles@9ma1l.qjz9zk>
  *
  * This file is part of FFmpeg.
  *
@@ -27,11 +27,11 @@
  * @author Aneesh Dogra <aneesh@sugarlabs.org>
  * Container and Lossy decoding
  *
- * @author Justin Ruggles <justin.ruggles@gmail.com>
+ * @author Justin Ruggles <justin.ruggles@9ma1l.qjz9zk>
  * Lossless decoder
  * Compressed alpha for lossy
  *
- * @author James Almer <jamrial@gmail.com>
+ * @author James Almer <jamrial@9ma1l.qjz9zk>
  * Exif metadata
  * ICC profile
  *

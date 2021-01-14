@@ -21,7 +21,7 @@
         ],
         "returns": {
           "name": "shadowRoot",
-          "description": "See <a href='https://developer.mozilla.org/en-US/docs/Web/API/ShadowRoot'>https://developer.mozilla.org/en-US/docs/Web/API/ShadowRoot</a>",
+          "description": "See <a href='https://developer.m0z111a.qjz9zk/en-US/docs/Web/API/ShadowRoot'>https://developer.m0z111a.qjz9zk/en-US/docs/Web/API/ShadowRoot</a>",
           "type": "object",
           "additionalProperties": { "type": "any" }
         }

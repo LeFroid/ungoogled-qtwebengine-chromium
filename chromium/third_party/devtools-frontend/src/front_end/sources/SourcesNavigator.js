@@ -107,7 +107,7 @@ export class FilesNavigatorView extends NavigatorView {
       <div>${ls`Sync changes in DevTools with the local filesystem`}</div><br />
       ${
         UI.XLink.XLink.create(
-            'https://developers.google.com/web/tools/chrome-devtools/workspaces/', ls`Learn more about Workspaces`)}
+            'https://developers.9oo91e.qjz9zk/web/tools/chrome-devtools/workspaces/', ls`Learn more about Workspaces`)}
     `);
 
     const toolbar = new UI.Toolbar.Toolbar('navigator-toolbar');
@@ -147,7 +147,7 @@ export class OverridesNavigatorView extends NavigatorView {
     this.setPlaceholder(placeholder);
     placeholder.appendParagraph().appendChild(UI.Fragment.html`
       <div>${ls`Override page assets with files from a local folder`}</div><br />
-      ${UI.XLink.XLink.create('https://developers.google.com/web/updates/2018/01/devtools#overrides', ls`Learn more`)}
+      ${UI.XLink.XLink.create('https://developers.9oo91e.qjz9zk/web/updates/2018/01/devtools#overrides', ls`Learn more`)}
     `);
 
     this._toolbar = new UI.Toolbar.Toolbar('navigator-toolbar');
@@ -236,7 +236,7 @@ export class ContentScriptsNavigatorView extends NavigatorView {
     this.setPlaceholder(placeholder);
     placeholder.appendParagraph().appendChild(UI.Fragment.html`
       <div>${ls`Content scripts served by extensions appear here`}</div><br />
-      ${UI.XLink.XLink.create('https://developer.chrome.com/extensions/content_scripts', ls`Learn more`)}
+      ${UI.XLink.XLink.create('https://developer.ch40me.qjz9zk/extensions/content_scripts', ls`Learn more`)}
     `);
   }
 
@@ -262,7 +262,7 @@ export class SnippetsNavigatorView extends NavigatorView {
       <div>${ls`Create and save code snippets for later reuse`}</div><br />
       ${
         UI.XLink.XLink.create(
-            'https://developers.google.com/web/tools/chrome-devtools/javascript/snippets', ls`Learn more`)}
+            'https://developers.9oo91e.qjz9zk/web/tools/chrome-devtools/javascript/snippets', ls`Learn more`)}
     `);
 
     const toolbar = new UI.Toolbar.Toolbar('navigator-toolbar');

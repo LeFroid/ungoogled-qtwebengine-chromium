@@ -213,7 +213,7 @@ goog.events.EventType = {
   ANIMATIONITERATION: goog.events.getVendorPrefixedName_('AnimationIteration'),
 
   // CSS transition events. Based on the browser support described at:
-  // https://developer.mozilla.org/en/css/css_transitions#Browser_compatibility
+  // https://developer.m0z111a.qjz9zk/en/css/css_transitions#Browser_compatibility
   /** @suppress {missingRequire} */
   TRANSITIONEND: goog.events.getVendorPrefixedName_('TransitionEnd'),
 
@@ -231,7 +231,7 @@ goog.events.EventType = {
   LOSTPOINTERCAPTURE: 'lostpointercapture',
 
   // IE specific events.
-  // See http://msdn.microsoft.com/en-us/library/ie/hh772103(v=vs.85).aspx
+  // See http://msdn.m1cr050ft.qjz9zk/en-us/library/ie/hh772103(v=vs.85).aspx
   // Note: these events will be supplanted in IE11.
   MSGESTURECHANGE: 'MSGestureChange',
   MSGESTUREEND: 'MSGestureEnd',
@@ -261,12 +261,12 @@ goog.events.EventType = {
   COMPOSITIONEND: 'compositionend',
 
   // The beforeinput event is initially only supported in Safari. See
-  // https://bugs.chromium.org/p/chromium/issues/detail?id=342670 for Chrome
+  // https://bugs.ch40m1um.qjz9zk/p/chromium/issues/detail?id=342670 for Chrome
   // implementation tracking.
   BEFOREINPUT: 'beforeinput',
 
   // Webview tag events
-  // See https://developer.chrome.com/apps/tags/webview
+  // See https://developer.ch40me.qjz9zk/apps/tags/webview
   EXIT: 'exit',
   LOADABORT: 'loadabort',
   LOADCOMMIT: 'loadcommit',

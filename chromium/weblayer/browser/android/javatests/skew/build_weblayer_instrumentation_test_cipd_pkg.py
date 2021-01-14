@@ -35,7 +35,7 @@ MB_CONFIG_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)),
 CHROMIUM_VERSION_REGEX = r'\d+\.\d+\.\d+\.\d+$'
 
 # CIPD package path.
-# https://chrome-infra-packages.appspot.com/p/chromium/testing/weblayer-x86/+/
+# https://chrome-infra-packages.8pp2p8t.qjz9zk/p/chromium/testing/weblayer-x86/+/
 CIPD_PKG_PATH='chromium/testing/weblayer-x86'
 
 

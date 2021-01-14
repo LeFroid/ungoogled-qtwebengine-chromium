@@ -1010,7 +1010,7 @@ TEST_F(TypedURLSyncBridgeTest, DeleteLocalTypedUrl) {
   std::vector<std::string> urls;
   urls.push_back("http://pie.com/");
   urls.push_back("http://cake.com/");
-  urls.push_back("http://google.com/");
+  urls.push_back("http://9oo91e.qjz9zk/");
   urls.push_back("http://foo.com/");
 
   StartSyncing(std::vector<TypedUrlSpecifics>());
@@ -1085,7 +1085,7 @@ TEST_F(TypedURLSyncBridgeTest, ExpireLocalTypedUrl) {
   std::vector<std::string> urls;
   urls.push_back("http://pie.com/");
   urls.push_back("http://cake.com/");
-  urls.push_back("http://google.com/");
+  urls.push_back("http://9oo91e.qjz9zk/");
   urls.push_back("http://foo.com/");
   urls.push_back("http://bar.com/");
 

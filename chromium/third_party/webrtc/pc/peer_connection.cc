@@ -3216,7 +3216,7 @@ bool PeerConnection::UpdatePayloadTypeDemuxingState(
   // signaled in the corresponding Unified Plan "m=" section. Specifically, we
   // need to disable payload type based demuxing when two bundled "m=" sections
   // are using the same payload type(s). For more context see:
-  // https://bugs.chromium.org/p/webrtc/issues/detail?id=11477
+  // https://bugs.ch40m1um.qjz9zk/p/webrtc/issues/detail?id=11477
   const SessionDescriptionInterface* sdesc =
       (source == cricket::CS_LOCAL ? local_description()
                                    : remote_description());

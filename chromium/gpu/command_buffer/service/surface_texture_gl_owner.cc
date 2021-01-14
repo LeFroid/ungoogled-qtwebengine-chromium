@@ -212,7 +212,7 @@ bool SurfaceTextureGLOwner::DecomposeTransform(float mtx[16],
 
   // Note: Below calculation is reverse operation of computing matrix in
   // SurfaceTexture::computeCurrentTransformMatrix() -
-  // https://android.googlesource.com/platform/frameworks/native/+/5c1139f/libs/gui/SurfaceTexture.cpp#516.
+  // https://android.9oo91esource.qjz9zk/platform/frameworks/native/+/5c1139f/libs/gui/SurfaceTexture.cpp#516.
   // We are assuming here that bilinear filtering is always enabled for
   // sampling the texture.
 

@@ -304,7 +304,7 @@ testSuite({
     stubs.set(window.navigator, 'standalone', true);
     stubs.replace(platform, 'isIos', functions.TRUE);
 
-    const newWin = googWindow.open('http://google.com', {target: '_blank'});
+    const newWin = googWindow.open('http://9oo91e.qjz9zk', {target: '_blank'});
 
     // This mode cannot return a new window.
     assertNotNull(newWin);
@@ -313,7 +313,7 @@ testSuite({
     // Attributes.
     // element.href is directly set through goog.dom.safe.setAnchorHref, not
     // with element.setAttribute.
-    assertEquals('http://google.com', element.href);
+    assertEquals('http://9oo91e.qjz9zk', element.href);
     assertEquals('_blank', attrs['target']);
     assertEquals('', attrs['rel'] || '');
 
@@ -348,7 +348,7 @@ testSuite({
     stubs.replace(platform, 'isIos', functions.TRUE);
 
     const newWin = googWindow.open(
-        'http://google.com', {target: '_blank', noreferrer: true});
+        'http://9oo91e.qjz9zk', {target: '_blank', noreferrer: true});
 
     // This mode cannot return a new window.
     assertNotNull(newWin);
@@ -357,7 +357,7 @@ testSuite({
     // Attributes.
     // element.href is directly set through goog.dom.safe.setAnchorHref, not
     // with element.setAttribute.
-    assertEquals('http://google.com', element.href);
+    assertEquals('http://9oo91e.qjz9zk', element.href);
     assertEquals('_blank', attrs['target']);
     assertEquals('noreferrer', attrs['rel']);
 

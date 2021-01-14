@@ -7,7 +7,7 @@
 // NOTE: The format of types has changed. 'FooType' is now
 //   'chrome.windows.FooType'.
 // Please run the closure compiler before committing changes.
-// See https://chromium.googlesource.com/chromium/src/+/master/docs/closure_compilation.md
+// See https://chromium.9oo91esource.qjz9zk/chromium/src/+/master/docs/closure_compilation.md
 
 // IMPORTANT NOTE: Work-around for crbug.com/543822
 // s/chrome.windows.tabs.Tab/chrome.tabs.Tab/
@@ -19,7 +19,7 @@ chrome.windows = {};
 
 /**
  * @enum {string}
- * @see https://developer.chrome.com/extensions/windows#type-WindowType
+ * @see https://developer.ch40me.qjz9zk/extensions/windows#type-WindowType
  */
 chrome.windows.WindowType = {
   NORMAL: 'normal',
@@ -31,7 +31,7 @@ chrome.windows.WindowType = {
 
 /**
  * @enum {string}
- * @see https://developer.chrome.com/extensions/windows#type-WindowState
+ * @see https://developer.ch40me.qjz9zk/extensions/windows#type-WindowState
  */
 chrome.windows.WindowState = {
   NORMAL: 'normal',
@@ -56,13 +56,13 @@ chrome.windows.WindowState = {
  *   alwaysOnTop: boolean,
  *   sessionId: (string|undefined)
  * }}
- * @see https://developer.chrome.com/extensions/windows#type-Window
+ * @see https://developer.ch40me.qjz9zk/extensions/windows#type-Window
  */
 chrome.windows.Window;
 
 /**
  * @enum {string}
- * @see https://developer.chrome.com/extensions/windows#type-CreateType
+ * @see https://developer.ch40me.qjz9zk/extensions/windows#type-CreateType
  */
 chrome.windows.CreateType = {
   NORMAL: 'normal',
@@ -73,14 +73,14 @@ chrome.windows.CreateType = {
 /**
  * The windowId value that represents the absence of a chrome browser window.
  * @type {number}
- * @see https://developer.chrome.com/extensions/windows#type-WINDOW_ID_NONE
+ * @see https://developer.ch40me.qjz9zk/extensions/windows#type-WINDOW_ID_NONE
  */
 chrome.windows.WINDOW_ID_NONE;
 
 /**
  * The windowId value that represents the <a href='windows#current-window'>current window</a>.
  * @type {number}
- * @see https://developer.chrome.com/extensions/windows#type-WINDOW_ID_CURRENT
+ * @see https://developer.ch40me.qjz9zk/extensions/windows#type-WINDOW_ID_CURRENT
  */
 chrome.windows.WINDOW_ID_CURRENT;
 
@@ -93,7 +93,7 @@ chrome.windows.WINDOW_ID_CURRENT;
 }|undefined}
  *     getInfo
  * @param {function(!chrome.windows.Window):void} callback
- * @see https://developer.chrome.com/extensions/windows#method-get
+ * @see https://developer.ch40me.qjz9zk/extensions/windows#method-get
  */
 chrome.windows.get = function(windowId, getInfo, callback) {};
 
@@ -105,7 +105,7 @@ chrome.windows.get = function(windowId, getInfo, callback) {};
 }|undefined}
  *     getInfo
  * @param {function(!chrome.windows.Window):void} callback
- * @see https://developer.chrome.com/extensions/windows#method-getCurrent
+ * @see https://developer.ch40me.qjz9zk/extensions/windows#method-getCurrent
  */
 chrome.windows.getCurrent = function(getInfo, callback) {};
 
@@ -118,7 +118,7 @@ chrome.windows.getCurrent = function(getInfo, callback) {};
 }|undefined}
  *     getInfo
  * @param {function(!chrome.windows.Window):void} callback
- * @see https://developer.chrome.com/extensions/windows#method-getLastFocused
+ * @see https://developer.ch40me.qjz9zk/extensions/windows#method-getLastFocused
  */
 chrome.windows.getLastFocused = function(getInfo, callback) {};
 
@@ -130,7 +130,7 @@ chrome.windows.getLastFocused = function(getInfo, callback) {};
 }|undefined}
  *     getInfo
  * @param {function(!Array<!chrome.windows.Window>):void} callback
- * @see https://developer.chrome.com/extensions/windows#method-getAll
+ * @see https://developer.ch40me.qjz9zk/extensions/windows#method-getAll
  */
 chrome.windows.getAll = function(getInfo, callback) {};
 
@@ -151,7 +151,7 @@ chrome.windows.getAll = function(getInfo, callback) {};
  *   setSelfAsOpener: (boolean|undefined)
  * }=} createData
  * @param {function((!chrome.windows.Window|undefined)):void=} callback
- * @see https://developer.chrome.com/extensions/windows#method-create
+ * @see https://developer.ch40me.qjz9zk/extensions/windows#method-create
  */
 chrome.windows.create = function(createData, callback) {};
 
@@ -169,7 +169,7 @@ chrome.windows.create = function(createData, callback) {};
  *   state: (!chrome.windows.WindowState|undefined)
  * }} updateInfo
  * @param {function(!chrome.windows.Window):void=} callback
- * @see https://developer.chrome.com/extensions/windows#method-update
+ * @see https://developer.ch40me.qjz9zk/extensions/windows#method-update
  */
 chrome.windows.update = function(windowId, updateInfo, callback) {};
 
@@ -177,21 +177,21 @@ chrome.windows.update = function(windowId, updateInfo, callback) {};
  * Removes (closes) a window and all the tabs inside it.
  * @param {number} windowId
  * @param {function():void=} callback
- * @see https://developer.chrome.com/extensions/windows#method-remove
+ * @see https://developer.ch40me.qjz9zk/extensions/windows#method-remove
  */
 chrome.windows.remove = function(windowId, callback) {};
 
 /**
  * Fired when a window is created.
  * @type {!ChromeEvent}
- * @see https://developer.chrome.com/extensions/windows#event-onCreated
+ * @see https://developer.ch40me.qjz9zk/extensions/windows#event-onCreated
  */
 chrome.windows.onCreated;
 
 /**
  * Fired when a window is removed (closed).
  * @type {!ChromeEvent}
- * @see https://developer.chrome.com/extensions/windows#event-onRemoved
+ * @see https://developer.ch40me.qjz9zk/extensions/windows#event-onRemoved
  */
 chrome.windows.onRemoved;
 
@@ -202,6 +202,6 @@ chrome.windows.onRemoved;
  * <code>WINDOW_ID_NONE</code> is always sent immediately preceding a switch
  * from one Chrome window to another.
  * @type {!ChromeEvent}
- * @see https://developer.chrome.com/extensions/windows#event-onFocusChanged
+ * @see https://developer.ch40me.qjz9zk/extensions/windows#event-onFocusChanged
  */
 chrome.windows.onFocusChanged;

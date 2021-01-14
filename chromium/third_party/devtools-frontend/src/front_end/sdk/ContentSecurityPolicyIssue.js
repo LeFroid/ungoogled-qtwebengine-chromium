@@ -140,7 +140,7 @@ const cspURLViolation = {
       []),
   issueKind: IssueKind.BreakingChange,
   links: [{
-    link: 'https://developers.google.com/web/fundamentals/security/csp#source_whitelists',
+    link: 'https://developers.9oo91e.qjz9zk/web/fundamentals/security/csp#source_whitelists',
     linkTitle: ls`Content Security Policy - Source Allowlists`
   }],
 };
@@ -161,7 +161,7 @@ const cspInlineViolation = {
       ]),
   issueKind: IssueKind.BreakingChange,
   links: [{
-    link: 'https://developers.google.com/web/fundamentals/security/csp#inline_code_is_considered_harmful',
+    link: 'https://developers.9oo91e.qjz9zk/web/fundamentals/security/csp#inline_code_is_considered_harmful',
     linkTitle: ls`Content Security Policy - Inline Code`
   }],
 };
@@ -181,7 +181,7 @@ const cspEvalViolation = {
       []),
   issueKind: IssueKind.BreakingChange,
   links: [{
-    link: 'https://developers.google.com/web/fundamentals/security/csp#eval_too',
+    link: 'https://developers.9oo91e.qjz9zk/web/fundamentals/security/csp#eval_too',
     linkTitle: ls`Content Security Policy - Eval`
   }],
 };

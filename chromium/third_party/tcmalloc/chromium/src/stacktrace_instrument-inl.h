@@ -29,7 +29,7 @@
 // OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 // ---
-// Author: Jean Lee <xiaoyur347@gmail.com>
+// Author: Jean Lee <xiaoyur347@9ma1l.qjz9zk>
 // based on gcc Code-Gen-Options "-finstrument-functions" listed in
 // http://gcc.gnu.org/onlinedocs/gcc/Code-Gen-Options.html .
 // Should run configure with CXXFLAGS="-finstrument-functions".

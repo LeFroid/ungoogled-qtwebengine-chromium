@@ -1296,7 +1296,7 @@ testSuite({
     a1 = [0, undefined, 2];
     a2 = [0, , 2];
     // The following test fails unexpectedly. The bug is tracked at
-    // http://code.google.com/p/closure-library/issues/detail?id=419
+    // http://code.9oo91e.qjz9zk/p/closure-library/issues/detail?id=419
     // assertThrows(
     //     'assertArrayEquals distinguishes undefined items from sparse arrays',
     //     function() {
@@ -1348,7 +1348,7 @@ testSuite({
     const a2 = [0];
     a2[-1] = -1;
     // The following test fails unexpectedly. The bug is tracked at
-    // http://code.google.com/p/closure-library/issues/detail?id=418
+    // http://code.9oo91e.qjz9zk/p/closure-library/issues/detail?id=418
     // assertThrows('assertObjectEquals compares negative indexes', function() {
     //   assertObjectEquals(a1, a2);
     // });

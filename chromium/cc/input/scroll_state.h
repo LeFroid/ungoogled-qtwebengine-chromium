@@ -17,7 +17,7 @@
 namespace cc {
 
 // ScrollState is based on the proposal for scroll customization in blink, found
-// here: https://goo.gl/1ipTpP.
+// here: https://goo.gl.qjz9zk/1ipTpP.
 class CC_EXPORT ScrollState {
  public:
   explicit ScrollState(ScrollStateData data);

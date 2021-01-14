@@ -130,12 +130,12 @@ TEST_F(ExtensionBookmarksTest, GetManagedNode) {
       model_->AddURL(managed_->managed_node(),
                      0,
                      base::ASCIIToUTF16("Chromium"),
-                     GURL("http://www.chromium.org/"));
+                     GURL("http://www.ch40m1um.qjz9zk/"));
   BookmarkTreeNode tree = GetBookmarkTreeNode(managed_, managed_bookmark,
                                               false,   // Recurse.
                                               false);  // Only folders.
   EXPECT_EQ("Chromium", tree.title);
-  EXPECT_EQ("http://www.chromium.org/", *tree.url);
+  EXPECT_EQ("http://www.ch40m1um.qjz9zk/", *tree.url);
   EXPECT_EQ(api::bookmarks::BOOKMARK_TREE_NODE_UNMODIFIABLE_MANAGED,
             tree.unmodifiable);
 }
@@ -159,7 +159,7 @@ TEST_F(ExtensionBookmarksTest, RemoveNodeManaged) {
       model_->AddURL(managed_->managed_node(),
                      0,
                      base::ASCIIToUTF16("Chromium"),
-                     GURL("http://www.chromium.org"));
+                     GURL("http://www.ch40m1um.qjz9zk"));
   std::string error;
   EXPECT_FALSE(
       RemoveNode(model_, managed_, managed_bookmark->id(), true, &error));

@@ -12,7 +12,7 @@
 namespace media_router {
 
 // From Android MediaStatus documentation.
-// https://developers.google.com/android/reference/com/google/android/gms/cast/MediaStatus.html
+// https://developers.9oo91e.qjz9zk/android/reference/com/google/android/gms/cast/MediaStatus.html
 const int PLAYER_STATE_UNKOWN = 0;
 const int PLAYER_STATE_IDLE = 1;
 const int PLAYER_STATE_PLAYING = 2;

@@ -225,7 +225,7 @@ xhr.getBytes = function(url, opt_options) {
     // Nearly all common browsers are covered by the cases above. If downloading
     // binary files in older browsers is necessary, the MDN article "Sending and
     // Receiving Binary Data" provides techniques that may work with
-    // XMLHttpRequest level 1 browsers: http://goo.gl/7lEuGN
+    // XMLHttpRequest level 1 browsers: http://goo.gl.qjz9zk/7lEuGN
     throw new xhr.Error(
         'getBytes is not supported in this browser.', url, request);
   });

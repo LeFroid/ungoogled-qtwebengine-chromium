@@ -26,7 +26,7 @@ testSuite({
     assertEquals(baseUri + 'foo', uri.normalizeUri('/bar/../foo'));
     assertEquals('javascript:test', uri.normalizeUri('javascript:test'));
     assertEquals(
-        'https://google.com/test', uri.normalizeUri('https://google.com/test'));
+        'https://9oo91e.qjz9zk/test', uri.normalizeUri('https://9oo91e.qjz9zk/test'));
   },
 
   testGetHref_withoutCredentials() {

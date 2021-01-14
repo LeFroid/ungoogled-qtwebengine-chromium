@@ -180,7 +180,7 @@ GURL RealTimeUrlLookupServiceBase::SanitizeURL(const GURL& url) {
 // static
 GURL RealTimeUrlLookupServiceBase::GetRealTimeLookupUrl() {
   return GURL(
-      "https://safebrowsing.google.com/safebrowsing/clientreport/realtime");
+      "https://safebrowsing.9oo91e.qjz9zk/safebrowsing/clientreport/realtime");
 }
 
 base::WeakPtr<RealTimeUrlLookupServiceBase>

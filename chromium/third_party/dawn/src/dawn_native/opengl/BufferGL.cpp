@@ -35,7 +35,7 @@ namespace dawn_native { namespace opengl {
 
     Buffer::Buffer(Device* device, const BufferDescriptor* descriptor)
         : BufferBase(device, descriptor) {
-        // TODO(cwallez@chromium.org): Have a global "zero" buffer instead of creating a new 4-byte
+        // TODO(cwallez@ch40m1um.qjz9zk): Have a global "zero" buffer instead of creating a new 4-byte
         // buffer?
         uint64_t size = GetAppliedSize();
 
@@ -69,7 +69,7 @@ namespace dawn_native { namespace opengl {
     }
 
     uint64_t Buffer::GetAppliedSize() const {
-        // TODO(cwallez@chromium.org): Have a global "zero" buffer instead of creating a new 4-byte
+        // TODO(cwallez@ch40m1um.qjz9zk): Have a global "zero" buffer instead of creating a new 4-byte
         // buffer?
         return std::max(GetSize(), uint64_t(4u));
     }
@@ -151,7 +151,7 @@ namespace dawn_native { namespace opengl {
 
         EnsureDataInitialized();
 
-        // TODO(cwallez@chromium.org): this does GPU->CPU synchronization, we could require a high
+        // TODO(cwallez@ch40m1um.qjz9zk): this does GPU->CPU synchronization, we could require a high
         // version of OpenGL that would let us map the buffer unsynchronized.
         gl.BindBuffer(GL_ARRAY_BUFFER, mBuffer);
         void* mappedData = nullptr;

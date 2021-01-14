@@ -250,7 +250,7 @@ void StackTrace::PrintWithPrefix(const char* prefix_string) const {
 }
 
 // Emits stack trace data using the symbolizer markup format specified at:
-// https://fuchsia.googlesource.com/zircon/+/master/docs/symbolizer_markup.md
+// https://fuchsia.9oo91esource.qjz9zk/zircon/+/master/docs/symbolizer_markup.md
 void StackTrace::OutputToStreamWithPrefix(std::ostream* os,
                                           const char* prefix_string) const {
   SymbolMap map;

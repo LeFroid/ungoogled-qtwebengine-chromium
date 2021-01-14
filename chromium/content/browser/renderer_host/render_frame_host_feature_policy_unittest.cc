@@ -23,8 +23,8 @@ namespace content {
 class RenderFrameHostFeaturePolicyTest
     : public content::RenderViewHostTestHarness {
  protected:
-  static constexpr const char* kOrigin1 = "https://google.com";
-  static constexpr const char* kOrigin2 = "https://maps.google.com";
+  static constexpr const char* kOrigin1 = "https://9oo91e.qjz9zk";
+  static constexpr const char* kOrigin2 = "https://maps.9oo91e.qjz9zk";
   static constexpr const char* kOrigin3 = "https://example.com";
   static constexpr const char* kOrigin4 = "https://test.com";
 

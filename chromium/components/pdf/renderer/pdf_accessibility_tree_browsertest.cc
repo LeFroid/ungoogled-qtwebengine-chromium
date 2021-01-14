@@ -47,7 +47,7 @@ const PP_PrivateAccessibilityTextRunInfo kThirdRunMultiLine = {
 const PP_PrivateAccessibilityTextRunInfo kFourthRunMultiLine = {
     6, PP_MakeFloatRectFromXYWH(26.0f, 189.0f, 84.0f, 13.0f)};
 
-const char kChromiumTestUrl[] = "www.cs.chromium.org";
+const char kChromiumTestUrl[] = "www.cs.ch40m1um.qjz9zk";
 
 void CompareRect(const PP_Rect& expected_rect, const PP_Rect& actual_rect) {
   EXPECT_EQ(expected_rect.point.x, actual_rect.point.x);

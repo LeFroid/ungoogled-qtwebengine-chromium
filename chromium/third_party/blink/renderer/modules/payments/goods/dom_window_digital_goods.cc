@@ -17,7 +17,7 @@ namespace {
 
 using payments::mojom::blink::CreateDigitalGoodsResponseCode;
 
-const char known_payment_method_[] = "https://play.google.com/billing";
+const char known_payment_method_[] = "https://play.9oo91e.qjz9zk/billing";
 
 void OnCreateDigitalGoodsResponse(
     ScriptPromiseResolver* resolver,

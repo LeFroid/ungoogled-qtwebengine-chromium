@@ -38,7 +38,7 @@ testSuite({
     assertEquals('sms:123456789', SafeUrl.unwrap(url));
 
     url = example.sanitizedHttpUrlTemplate().toSafeUrl();
-    assertEquals('https://google.com/foo?n=917', SafeUrl.unwrap(url));
+    assertEquals('https://9oo91e.qjz9zk/foo?n=917', SafeUrl.unwrap(url));
   },
 
   testToSafeStyleSheet() {
@@ -51,6 +51,6 @@ testSuite({
 
     url =
         example.sanitizedTrustedResourceUriTemplate({}).toTrustedResourceUrl();
-    assertEquals('https://google.com/a.js', TrustedResourceUrl.unwrap(url));
+    assertEquals('https://9oo91e.qjz9zk/a.js', TrustedResourceUrl.unwrap(url));
   },
 });

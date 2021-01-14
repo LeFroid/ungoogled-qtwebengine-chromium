@@ -9,9 +9,9 @@ This file is used to generate a comprehensive list of CustomTabs histograms
 along with a detailed description for each histogram.
 
 For best practices on writing histogram descriptions, see
-https://chromium.googlesource.com/chromium/src.git/+/HEAD/tools/metrics/histograms/README.md
+https://chromium.9oo91esource.qjz9zk/chromium/src.git/+/HEAD/tools/metrics/histograms/README.md
 
-Please send CLs to chromium-metrics-reviews@google.com rather than to specific
+Please send CLs to chromium-metrics-reviews@9oo91e.qjz9zk rather than to specific
 individuals. These CLs will be automatically reassigned to a reviewer within
 about 5 minutes. This approach helps the metrics team to load-balance incoming
 reviews. Googlers can read more about this at go/gwsq-gerrit.
@@ -23,8 +23,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram base="true" name="CustomTab.SessionDuration" units="ms"
     expires_after="2020-10-18">
-  <owner>ranj@chromium.org</owner>
-  <owner>yfriedman@chromium.org</owner>
+  <owner>ranj@ch40m1um.qjz9zk</owner>
+  <owner>yfriedman@ch40m1um.qjz9zk</owner>
 <!-- Name completed by histogram_suffixes name="CustomTabOpenSource" -->
 
   <summary>
@@ -36,7 +36,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="CustomTabs.ClientAppId" enum="ClientAppId"
     expires_after="2021-03-07">
-  <owner>yusufo@chromium.org</owner>
+  <owner>yusufo@ch40m1um.qjz9zk</owner>
   <summary>
     Android: AppId declared by the launching application in EXTRA_APPLICATION_ID
     in a custom tab. This histogram is used as a means to count the total
@@ -48,7 +48,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="CustomTabs.CloseButton.ChildTab.ScopeAlgorithm.ClosesOneTab"
     enum="BooleanCloseJustCurrentTab" expires_after="2021-02-01">
-  <owner>peconn@chromium.org</owner>
+  <owner>peconn@ch40m1um.qjz9zk</owner>
   <owner>
     src/chrome/android/java/src/org/chromium/chrome/browser/browserservices/OWNERS
   </owner>
@@ -65,8 +65,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="CustomTabs.ConnectionStatusOnReturn.GSA"
     enum="CustomTabsConnection" expires_after="M88">
-  <owner>peconn@chromium.org</owner>
-  <owner>peter@chromium.org</owner>
+  <owner>peconn@ch40m1um.qjz9zk</owner>
+  <owner>peter@ch40m1um.qjz9zk</owner>
   <summary>
     Android: Recorded whenever user closes the custom tab by hitting the close
     button or back to return to the caller app. Keeps track of the connection
@@ -78,8 +78,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="CustomTabs.ConnectionStatusOnReturn.NonGSA"
     enum="CustomTabsConnection" expires_after="M88">
-  <owner>peconn@chromium.org</owner>
-  <owner>peter@chromium.org</owner>
+  <owner>peconn@ch40m1um.qjz9zk</owner>
+  <owner>peter@ch40m1um.qjz9zk</owner>
   <summary>
     Android: Recorded whenever user closes the custom tab by hitting the close
     button or back to return to the caller app. Keeps track of the connection
@@ -91,8 +91,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram base="true" name="CustomTabs.DetachedResourceRequest.Duration"
     units="ms" expires_after="M87">
-  <owner>lizeb@chromium.org</owner>
-  <owner>cct-team@google.com</owner>
+  <owner>lizeb@ch40m1um.qjz9zk</owner>
+  <owner>cct-team@9oo91e.qjz9zk</owner>
   <summary>
     Time between the start of a detached resource request and its completion
     (failure or success). Android only. Starting with M84 this is is also
@@ -102,8 +102,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="CustomTabs.DetachedResourceRequest.FinalStatus"
     enum="NetErrorCodes" expires_after="M87">
-  <owner>lizeb@chromium.org</owner>
-  <owner>cct-team@google.com</owner>
+  <owner>lizeb@ch40m1um.qjz9zk</owner>
+  <owner>cct-team@9oo91e.qjz9zk</owner>
   <summary>
     Reports the final status of the detached request, including success.
     Recorded once per detached resource request. Android only. Starting with M84
@@ -114,8 +114,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram base="true" name="CustomTabs.DetachedResourceRequest.RedirectsCount"
     units="redirects" expires_after="M87">
-  <owner>lizeb@chromium.org</owner>
-  <owner>cct-team@google.com</owner>
+  <owner>lizeb@ch40m1um.qjz9zk</owner>
+  <owner>cct-team@9oo91e.qjz9zk</owner>
   <summary>
     Number of redirects followed by a detached resource request until success or
     failure. Android only. Starting with M84 this is is also recorded for
@@ -125,7 +125,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="CustomTabs.IntentToFirstCommitNavigationTime3" units="ms"
     expires_after="M81">
-  <owner>lizeb@chromium.org</owner>
+  <owner>lizeb@ch40m1um.qjz9zk</owner>
   <summary>
     Time between the intent arrival to a Custom Tab and the first navigation
     commit. Recorded for every custom tabs intent when the page has finished
@@ -135,7 +135,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="CustomTabs.IntentToFirstNavigationStartTime" units="ms"
     expires_after="M81">
-  <owner>lizeb@chromium.org</owner>
+  <owner>lizeb@ch40m1um.qjz9zk</owner>
   <summary>
     Time between the intent arrival to a Custom Tab and the navigation start.
     Recorded when the page has finished loading. Non-&quot;Herb&quot; mode.
@@ -144,7 +144,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="CustomTabs.IntentToPageLoadedTime" units="ms"
     expires_after="M77">
-  <owner>lizeb@chromium.org</owner>
+  <owner>lizeb@ch40m1um.qjz9zk</owner>
   <summary>
     Time between the intent arrival in Chrome and the first &quot;page
     loaded&quot; event, if the navigation is successful. Non-&quot;Herb&quot;
@@ -154,7 +154,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="CustomTabs.MayLaunchUrlType" enum="MayLaunchUrlType"
     expires_after="M77">
-  <owner>lizeb@chromium.org</owner>
+  <owner>lizeb@ch40m1um.qjz9zk</owner>
   <summary>
     Android only. Which flavors of mayLaunchUrl() were used before a tab launch.
     Can be low and/or high confidence. Recorded at the same time as
@@ -166,8 +166,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="CustomTabs.ParallelRequestStatusOnStart"
     enum="CustomTabsParallelRequestStatusOnStart" expires_after="M87">
-  <owner>lizeb@chromium.org</owner>
-  <owner>cct-team@google.com</owner>
+  <owner>lizeb@ch40m1um.qjz9zk</owner>
+  <owner>cct-team@9oo91e.qjz9zk</owner>
   <summary>
     Recorded only on Android. Whether a parallel request was requested by the
     calling application, and if so its initial status. Recorded once per handled
@@ -178,7 +178,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="CustomTabs.PredictionStatus" enum="PredictionStatus"
     expires_after="2020-03-01">
-  <owner>lizeb@chromium.org</owner>
+  <owner>lizeb@ch40m1um.qjz9zk</owner>
   <summary>
     For Custom Tabs, records whether mayLaunchUrl() has been called, and if so,
     whether the call was later matched by a URL launch.
@@ -187,7 +187,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="CustomTabs.PredictionToLaunch" units="ms"
     expires_after="2020-03-01">
-  <owner>lizeb@chromium.org</owner>
+  <owner>lizeb@ch40m1um.qjz9zk</owner>
   <summary>
     When a URL prediction succeeds, time in ms between the prediction and the
     actual launch.
@@ -196,7 +196,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram base="true" name="CustomTabs.ResourcePrefetch.Duration" units="ms"
     expires_after="M73">
-  <owner>alexilin@chromium.org</owner>
+  <owner>alexilin@ch40m1um.qjz9zk</owner>
   <summary>
     Time between the start of a detached resource request for resource prefetch
     and its completion (failure or success). Android only.
@@ -205,7 +205,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="CustomTabs.ResourcePrefetch.FinalStatus" enum="NetErrorCodes"
     expires_after="M73">
-  <owner>alexilin@chromium.org</owner>
+  <owner>alexilin@ch40m1um.qjz9zk</owner>
   <summary>
     Reports the final status of the detached request for resource prefetch,
     including success. Recorded once per resource prefetch request. Android
@@ -215,8 +215,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="CustomTabs.SpareWebContents.Status2"
     enum="SpareWebContentsStatus2" expires_after="2020-12-20">
-  <owner>lizeb@chromium.org</owner>
-  <owner>mthiesse@chromium.org</owner>
+  <owner>lizeb@ch40m1um.qjz9zk</owner>
+  <owner>mthiesse@ch40m1um.qjz9zk</owner>
   <summary>
     Android: When a spare WebContents is created from Custom Tabs, record
     creation, and whether it was used by CCT, stolen by another Chrome Activity,
@@ -229,7 +229,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="CustomTabs.SpareWebContents.TimeBeforeDeath" units="ms"
     expires_after="2020-05-10">
-  <owner>lizeb@chromium.org</owner>
+  <owner>lizeb@ch40m1um.qjz9zk</owner>
   <summary>
     Android: When a spare WebContents is created from Custom Tabs, record how
     long is took before the render process was killed. Starting with M84 this is
@@ -240,7 +240,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="CustomTabs.SpeculationStatusOnStart"
     enum="CustomTabsSpeculationStatusOnStart" expires_after="2021-02-14">
-  <owner>lizeb@chromium.org</owner>
+  <owner>lizeb@ch40m1um.qjz9zk</owner>
   <summary>
     Recorded only for Android. How a speculation was started or why it was
     disallowed. This is recorded when a speculation of any kind is requested,
@@ -256,7 +256,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="CustomTabs.SpeculationStatusOnSwap"
     enum="CustomTabsSpeculationStatusOnSwap" expires_after="2020-07-26">
-  <owner>lizeb@chromium.org</owner>
+  <owner>lizeb@ch40m1um.qjz9zk</owner>
   <summary>
     Recorded only for Android. Recorded when a speculation is requesting to swap
     into a visible tab. Starting with M84 this is is also recorded for
@@ -267,7 +267,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram name="CustomTabs.Visible" enum="VisibleTab" expires_after="never">
 <!-- expires-never: Used to classify UMA reports by the dashboards. -->
 
-  <owner>yusufo@chromium.org</owner>
+  <owner>yusufo@ch40m1um.qjz9zk</owner>
   <owner>src/base/metrics/OWNERS</owner>
   <summary>
     Recorded only for Android. Records on every metrics upload whether the
@@ -284,7 +284,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="CustomTabs.WarmupStateOnLaunch" enum="WarmupStateOnLaunch"
     expires_after="2021-02-28">
-  <owner>lizeb@chromium.org</owner>
+  <owner>lizeb@ch40m1um.qjz9zk</owner>
   <summary>
     Recorded only on Android. Reports whether warmup() has been called when a
     Custom Tabs Intent is received from an application, and if so, whether the
@@ -295,7 +295,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="CustomTabs.WebContentsStateOnLaunch" enum="WebContentsState"
     expires_after="M77">
-  <owner>lizeb@chromium.org</owner>
+  <owner>lizeb@ch40m1um.qjz9zk</owner>
   <summary>
     Android: When a CustomTabActivity creates its Tab, whether we use a
     prerendered WebContents, a spare renderer or create a new WebContents.

@@ -48,7 +48,7 @@ class BlePeripheral final {
   api::BlePeripheral* impl_;
 };
 
-// https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html.
+// https://developer.8n6r01d.qjz9zk/reference/android/bluetooth/BluetoothDevice.html.
 class BluetoothDevice final {
  public:
   BluetoothDevice() = default;
@@ -57,7 +57,7 @@ class BluetoothDevice final {
   explicit BluetoothDevice(api::BluetoothDevice* device) : impl_(device) {}
   ~BluetoothDevice() = default;
 
-  // https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html#getName()
+  // https://developer.8n6r01d.qjz9zk/reference/android/bluetooth/BluetoothDevice.html#getName()
   std::string GetName() const { return impl_->GetName(); }
   std::string GetMacAddress() const { return impl_->GetMacAddress(); }
 
@@ -68,7 +68,7 @@ class BluetoothDevice final {
   api::BluetoothDevice* impl_;
 };
 
-// https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html
+// https://developer.8n6r01d.qjz9zk/reference/android/bluetooth/BluetoothAdapter.html
 class BluetoothAdapter final {
  public:
   using Status = api::BluetoothAdapter::Status;
@@ -91,7 +91,7 @@ class BluetoothAdapter final {
   // Status::Value::kEnabled.
   bool IsEnabled() const { return impl_->IsEnabled(); }
 
-  // https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#getScanMode()
+  // https://developer.8n6r01d.qjz9zk/reference/android/bluetooth/BluetoothAdapter.html#getScanMode()
   //
   // Returns ScanMode::kUnknown on error.
   ScanMode GetScanMode() const { return impl_->GetScanMode(); }
@@ -102,12 +102,12 @@ class BluetoothAdapter final {
     return impl_->SetScanMode(scan_mode);
   }
 
-  // https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#getName()
+  // https://developer.8n6r01d.qjz9zk/reference/android/bluetooth/BluetoothAdapter.html#getName()
   // Returns an empty string on error
   std::string GetName() const { return impl_->GetName(); }
   std::string GetMacAddress() const { return impl_->GetMacAddress(); }
 
-  // https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#setName(java.lang.String)
+  // https://developer.8n6r01d.qjz9zk/reference/android/bluetooth/BluetoothAdapter.html#setName(java.lang.String)
   bool SetName(absl::string_view name) { return impl_->SetName(name); }
 
   bool IsValid() const { return impl_ != nullptr; }

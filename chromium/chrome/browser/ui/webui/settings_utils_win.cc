@@ -105,7 +105,7 @@ void OpenConnectionDialogCallback() {
 void ShowNetworkProxySettings(content::WebContents* web_contents) {
   if (base::win::GetVersion() >= base::win::Version::WIN10) {
     // See
-    // https://docs.microsoft.com/en-us/windows/uwp/launch-resume/launch-settings-app#network--internet
+    // https://docs.m1cr050ft.qjz9zk/en-us/windows/uwp/launch-resume/launch-settings-app#network--internet
     platform_util::OpenExternal(
         Profile::FromBrowserContext(web_contents->GetBrowserContext()),
         GURL("ms-settings:network-proxy"));

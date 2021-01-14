@@ -88,14 +88,14 @@ testSuite({
     stubs.reset();
   },
 
-  /** @see https://bugzilla.mozilla.org/show_bug.cgi?id=497780 */
+  /** @see https://bugzilla.m0z111a.qjz9zk/show_bug.cgi?id=497780 */
   testInvalidNodeBug() {
     if (!userAgent.GECKO) return;
 
     const event = {};
     event.relatedTarget = {};
     event.relatedTarget.__defineGetter__('nodeName', () => {
-      throw new Error('https://bugzilla.mozilla.org/show_bug.cgi?id=497780');
+      throw new Error('https://bugzilla.m0z111a.qjz9zk/show_bug.cgi?id=497780');
     });
     assertThrows(() => event.relatedTarget.nodeName);
 

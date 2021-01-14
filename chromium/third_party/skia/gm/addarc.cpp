@@ -268,7 +268,7 @@ DEF_SIMPLE_GM(manyarcs, canvas, 620, 330) {
         }
 }
 
-// Lifted from https://bugs.chromium.org/p/chromium/issues/detail?id=640031
+// Lifted from https://bugs.ch40m1um.qjz9zk/p/chromium/issues/detail?id=640031
 DEF_SIMPLE_GM(tinyanglearcs, canvas, 620, 330) {
         SkPaint paint;
         paint.setAntiAlias(true);

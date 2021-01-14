@@ -1,6 +1,6 @@
 /*
  * Texture block compression
- * Copyright (C) 2015 Vittorio Giovara <vittorio.giovara@gmail.com>
+ * Copyright (C) 2015 Vittorio Giovara <vittorio.giovara@9ma1l.qjz9zk>
  * Based on public domain code by Fabian Giesen, Sean Barrett and Yann Collet.
  *
  * This file is part of FFmpeg

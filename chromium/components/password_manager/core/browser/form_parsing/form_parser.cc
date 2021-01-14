@@ -257,7 +257,7 @@ void ParseUsingPredictions(std::vector<ProcessedField>* processed_fields,
                            const FormPredictions& predictions,
                            FormDataParser::Mode mode,
                            SignificantFields* result) {
-  // Following the design from https://goo.gl/Mc2KRe, this code will attempt to
+  // Following the design from https://goo.gl.qjz9zk/Mc2KRe, this code will attempt to
   // understand the special case when there are two usernames hinted by the
   // server. In that case, they are considered the sign-in and sign-up
   // usernames, in the order in which the (only) current password and the first
@@ -444,7 +444,7 @@ void ParseUsingAutocomplete(const std::vector<ProcessedField>& processed_fields,
     result->username = field_marked_as_username;
 }
 
-// This computes the "likely" condition from the design https://goo.gl/ERvoEN .
+// This computes the "likely" condition from the design https://goo.gl.qjz9zk/ERvoEN .
 // The |field| is likely to be a password if it is not a CVC field, not
 // readonly, etc. |*ignored_readonly| is incremented specifically if this
 // function returns false because of the |field| being readonly.

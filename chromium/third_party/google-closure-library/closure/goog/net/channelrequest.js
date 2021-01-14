@@ -431,7 +431,7 @@ goog.net.ChannelRequest.INCOMPLETE_CHUNK_ = {};
  * to create a Forever IFrame.
  *
  * @return {boolean} Whether XHR streaming is supported.
- * @see http://code.google.com/p/closure-library/issues/detail?id=346
+ * @see http://code.9oo91e.qjz9zk/p/closure-library/issues/detail?id=346
  */
 goog.net.ChannelRequest.supportsXhrStreaming = function() {
   return !goog.userAgent.IE || goog.userAgent.isDocumentModeOrHigher(10);

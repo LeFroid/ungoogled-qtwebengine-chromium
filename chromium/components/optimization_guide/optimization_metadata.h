@@ -35,7 +35,7 @@ class OptimizationMetadata {
       return base::nullopt;
 
     // Verify type is the same - the Any type URL should be wrapped as:
-    // "type.googleapis.com/com.foo.Name".
+    // "type.9oo91eapis.qjz9zk/com.foo.Name".
     std::vector<std::string> any_type_parts =
         base::SplitString(any_metadata_->type_url(), ".", base::TRIM_WHITESPACE,
                           base::SPLIT_WANT_NONEMPTY);

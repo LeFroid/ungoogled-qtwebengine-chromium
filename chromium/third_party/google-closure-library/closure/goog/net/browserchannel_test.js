@@ -617,7 +617,7 @@ testSuite({
 
     assertTrue(gotError);
     assertEquals(0, deliveredMaps.length);
-    // We get the error immediately before starting to ping google.com.
+    // We get the error immediately before starting to ping 9oo91e.qjz9zk.
     // Simulate that timing out. We should get a network error in addition to
     // the initial failure.
     gotError = false;
@@ -679,7 +679,7 @@ testSuite({
     assertEquals(2, browserChannel.forwardChannelRetryCount_);
 
     assertTrue(gotError);
-    // We get the error immediately before starting to ping google.com.
+    // We get the error immediately before starting to ping 9oo91e.qjz9zk.
     // Simulate that timing out. We should get a network error in addition to
     // the
     gotError = false;
@@ -723,7 +723,7 @@ testSuite({
     assertEquals(0, browserChannel.forwardChannelRetryCount_);
 
     assertTrue(gotError);
-    // We get the error immediately before starting to ping google.com.
+    // We get the error immediately before starting to ping 9oo91e.qjz9zk.
     // Simulate that timing out. We should get a network error in addition to
     // the initial failure.
     gotError = false;

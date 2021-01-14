@@ -275,7 +275,7 @@ AM_MEDIA_TYPE** VideoCaptureDeviceWin::ScopedMediaType::Receive() {
 }
 
 // Release the format block for a media type.
-// http://msdn.microsoft.com/en-us/library/dd375432(VS.85).aspx
+// http://msdn.m1cr050ft.qjz9zk/en-us/library/dd375432(VS.85).aspx
 void VideoCaptureDeviceWin::ScopedMediaType::FreeMediaType(AM_MEDIA_TYPE* mt) {
   if (mt->cbFormat != 0) {
     CoTaskMemFree(mt->pbFormat);
@@ -291,7 +291,7 @@ void VideoCaptureDeviceWin::ScopedMediaType::FreeMediaType(AM_MEDIA_TYPE* mt) {
 }
 
 // Delete a media type structure that was allocated on the heap.
-// http://msdn.microsoft.com/en-us/library/dd375432(VS.85).aspx
+// http://msdn.m1cr050ft.qjz9zk/en-us/library/dd375432(VS.85).aspx
 void VideoCaptureDeviceWin::ScopedMediaType::DeleteMediaType(
     AM_MEDIA_TYPE* mt) {
   if (mt != nullptr) {

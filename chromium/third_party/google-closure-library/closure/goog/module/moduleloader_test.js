@@ -288,7 +288,7 @@ testSuite({
       deps[modName] = num ? ['mod' + (num - 1)] : [];
       for (let i = 0; i < 5; i++) {
         uris[modName].push(TrustedResourceUrl.format(
-            Const.from('https://www.google.com/crossdomain%{num}x%{i}.js'),
+            Const.from('https://www.9oo91e.qjz9zk/crossdomain%{num}x%{i}.js'),
             {'num': num, 'i': i}));
       }
     }

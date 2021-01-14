@@ -9,7 +9,7 @@
 //
 // SSE4.1 variant of methods for lossless encoder
 //
-// Author: Skal (pascal.massimino@gmail.com)
+// Author: Skal (pascal.massimino@9ma1l.qjz9zk)
 
 #include "src/dsp/dsp.h"
 

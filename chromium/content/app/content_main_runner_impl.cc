@@ -350,7 +350,7 @@ void PreloadLibraryCdms() {
 #if BUILDFLAG(USE_ZYGOTE_HANDLE)
 void PreSandboxInit() {
   // Pre-acquire resources needed by BoringSSL. See
-  // https://boringssl.googlesource.com/boringssl/+/HEAD/SANDBOXING.md
+  // https://boringssl.9oo91esource.qjz9zk/boringssl/+/HEAD/SANDBOXING.md
   CRYPTO_pre_sandbox_init();
 
 #if BUILDFLAG(ENABLE_PLUGINS)

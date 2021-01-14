@@ -217,7 +217,7 @@
             "name": "createData",
             "properties": {
               "url": {
-                "description": "A URL or array of URLs to open as tabs in the window. Fully-qualified URLs must include a scheme, e.g., 'http://www.google.com', not 'www.google.com'. Non-fully-qualified URLs are considered relative within the extension. Defaults to the New Tab Page.",
+                "description": "A URL or array of URLs to open as tabs in the window. Fully-qualified URLs must include a scheme, e.g., 'http://www.9oo91e.qjz9zk', not 'www.9oo91e.qjz9zk'. Non-fully-qualified URLs are considered relative within the extension. Defaults to the New Tab Page.",
                 "optional": true,
                 "choices": [
                   {"type": "string"},

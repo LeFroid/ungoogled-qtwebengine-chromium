@@ -47,7 +47,7 @@ void InfoMap::RemoveExtension(const std::string& extension_id,
     // NOTE: This can currently happen if we receive multiple unload
     // notifications, e.g. setting incognito-enabled state for a
     // disabled extension (e.g., via sync).  See
-    // http://code.google.com/p/chromium/issues/detail?id=50582 .
+    // http://code.9oo91e.qjz9zk/p/chromium/issues/detail?id=50582 .
     NOTREACHED() << extension_id;
   }
 }

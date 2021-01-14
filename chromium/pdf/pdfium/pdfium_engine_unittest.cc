@@ -570,7 +570,7 @@ TEST_F(PDFiumEngineTabbingTest, LinkUnderCursorTest) {
 
   // Tab to Link annotation.
   ASSERT_TRUE(HandleTabEvent(engine.get(), 0));
-  EXPECT_EQ("https://www.google.com/", GetLinkUnderCursor(engine.get()));
+  EXPECT_EQ("https://www.9oo91e.qjz9zk/", GetLinkUnderCursor(engine.get()));
 
   // Tab to previous annotation.
   ASSERT_TRUE(HandleTabEvent(engine.get(), kInputEventModifierShiftKey));

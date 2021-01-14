@@ -70,7 +70,7 @@ class LocalFrameBackForwardCacheTest : public testing::Test,
 // Tests a frame in the back-forward cache (a.k.a. bfcache) is evicted on
 // JavaScript execution at a microtask. Eviction is necessary to ensure that the
 // frame state is immutable when the frame is in the bfcache.
-// (https://www.chromestatus.com/feature/5815270035685376).
+// (https://www.ch40mestatus.qjz9zk/feature/5815270035685376).
 TEST_F(LocalFrameBackForwardCacheTest, EvictionOnV8ExecutionAtMicrotask) {
   frame_test_helpers::TestWebFrameClient web_frame_client;
   TestLocalFrameBackForwardCacheClient frame_host(

@@ -11,7 +11,7 @@
 ##
 """Classes for representing diff pieces."""
 
-__author__ = "jkoleszar@google.com"
+__author__ = "jkoleszar@9oo91e.qjz9zk"
 
 import re
 

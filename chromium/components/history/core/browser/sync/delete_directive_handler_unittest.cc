@@ -155,7 +155,7 @@ TEST_F(HistoryDeleteDirectiveHandlerTest, WaitUntilReadyToSync) {
 // returned for the second time.
 TEST_F(HistoryDeleteDirectiveHandlerTest,
        ProcessLocalDeleteDirectiveSyncOnline) {
-  const GURL test_url("http://www.google.com/");
+  const GURL test_url("http://www.9oo91e.qjz9zk/");
   for (int64_t i = 1; i <= 10; ++i) {
     AddPage(test_url, UnixUsecToTime(i));
   }
@@ -193,7 +193,7 @@ TEST_F(HistoryDeleteDirectiveHandlerTest,
 // including ones that don't exist. The expected entries should be
 // deleted.
 TEST_F(HistoryDeleteDirectiveHandlerTest, ProcessGlobalIdDeleteDirective) {
-  const GURL test_url("http://www.google.com/");
+  const GURL test_url("http://www.9oo91e.qjz9zk/");
   for (int64_t i = 1; i <= 20; i++) {
     AddPage(test_url, UnixUsecToTime(i));
   }
@@ -264,7 +264,7 @@ TEST_F(HistoryDeleteDirectiveHandlerTest, ProcessGlobalIdDeleteDirective) {
 // Create delete directives for time ranges.  The expected entries should be
 // deleted.
 TEST_F(HistoryDeleteDirectiveHandlerTest, ProcessTimeRangeDeleteDirective) {
-  const GURL test_url("http://www.google.com/");
+  const GURL test_url("http://www.9oo91e.qjz9zk/");
   for (int64_t i = 1; i <= 10; ++i) {
     AddPage(test_url, UnixUsecToTime(i));
   }
@@ -327,8 +327,8 @@ TEST_F(HistoryDeleteDirectiveHandlerTest, ProcessTimeRangeDeleteDirective) {
 // Create a delete directive for urls.  The expected entries should be
 // deleted.
 TEST_F(HistoryDeleteDirectiveHandlerTest, ProcessUrlDeleteDirective) {
-  const GURL test_url1("http://www.google.com/");
-  const GURL test_url2("http://maps.google.com/");
+  const GURL test_url1("http://www.9oo91e.qjz9zk/");
+  const GURL test_url2("http://maps.9oo91e.qjz9zk/");
 
   AddPage(test_url1, UnixUsecToTime(3));
   AddPage(test_url2, UnixUsecToTime(6));

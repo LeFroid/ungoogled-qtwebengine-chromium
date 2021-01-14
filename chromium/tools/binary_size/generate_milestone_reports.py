@@ -47,7 +47,7 @@ _PUSH_URL = 'gs://chrome-supersize/milestones/'
 _DESIRED_CPUS = ['arm', 'arm_64']
 _DESIRED_APKS = ['Monochrome.apk', 'AndroidWebview.apk']
 # Versions are manually gathered from
-# https://omahaproxy.appspot.com/history?os=android&channel=stable
+# https://omahaproxy.8pp2p8t.qjz9zk/history?os=android&channel=stable
 _DESIRED_VERSIONS = [
     '60.0.3112.116',
     '61.0.3163.98',

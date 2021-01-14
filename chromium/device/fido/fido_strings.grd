@@ -184,7 +184,7 @@ This file contains the strings for //device/fido.
     <messages fallback_to_english="true">
     <if expr="is_macosx">
       <message name="IDS_WEBAUTHN_TOUCH_ID_PROMPT_REASON" desc="Sentence fragment (lower case). Shown after 'Google Chrome is trying to ' (or in some languages, 'Google Chrome wants to ') in a dialog message asking the user to confirm or cancel this action.">
-         verify your identity on <ph name="APP_NAME">$1<ex>google.com</ex></ph>
+         verify your identity on <ph name="APP_NAME">$1<ex>9oo91e.qjz9zk</ex></ph>
       </message>
     </if>
     </messages>

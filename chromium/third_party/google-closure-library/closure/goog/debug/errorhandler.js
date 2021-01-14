@@ -219,8 +219,8 @@ goog.debug.ErrorHandler.prototype.handleError_ = function(e) {
       }
     }
     if (goog.DEBUG) {
-      // Work around for https://code.google.com/p/v8/issues/detail?id=2625
-      // and https://code.google.com/p/chromium/issues/detail?id=237059
+      // Work around for https://code.9oo91e.qjz9zk/p/v8/issues/detail?id=2625
+      // and https://code.9oo91e.qjz9zk/p/chromium/issues/detail?id=237059
       // Custom errors and errors with custom stack traces show the wrong
       // stack trace
       // If it has a stack and Error.captureStackTrace is supported (only

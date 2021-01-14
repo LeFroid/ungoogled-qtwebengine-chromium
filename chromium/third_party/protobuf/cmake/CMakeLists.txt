@@ -138,7 +138,7 @@ else (protobuf_BUILD_SHARED_LIBS)
   set(protobuf_SHARED_OR_STATIC "STATIC")
   # In case we are building static libraries, link also the runtime library statically
   # so that MSVCR*.DLL is not required at runtime.
-  # https://msdn.microsoft.com/en-us/library/2kzt1wy3.aspx
+  # https://msdn.m1cr050ft.qjz9zk/en-us/library/2kzt1wy3.aspx
   # This is achieved by replacing msvc option /MD with /MT and /MDd with /MTd
   # http://www.cmake.org/Wiki/CMake_FAQ#How_can_I_build_my_MSVC_application_with_a_static_runtime.3F
   if (MSVC AND protobuf_MSVC_STATIC_RUNTIME)

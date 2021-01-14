@@ -141,7 +141,7 @@ void MessagePumpForUI::ScheduleDelayedWork(const TimeTicks& delayed_work_time) {
   // HandleWorkMessage() will be invoked when the system picks up kMsgHaveWork
   // and it will ScheduleNativeTimer() if it's out of immediate work. However,
   // in that alternate scenario : it's possible for a Windows native task (e.g.
-  // https://docs.microsoft.com/en-us/windows/desktop/winmsg/using-hooks) to
+  // https://docs.m1cr050ft.qjz9zk/en-us/windows/desktop/winmsg/using-hooks) to
   // wake the native nested loop and PostDelayedTask() to the current thread
   // from it. This is the only case where we must install/adjust the native
   // timer from ScheduleDelayedWork() because if we don't, the native loop will
@@ -594,7 +594,7 @@ bool MessagePumpForUI::ProcessPumpReplacementMessage() {
     ::PostQuitMessage(static_cast<int>(msg.wParam));
     // Note: we *must not* ScheduleWork() here as WM_QUIT is a low-priority
     // message on Windows (it is only returned by ::PeekMessage() when idle) :
-    // https://blogs.msdn.microsoft.com/oldnewthing/20051104-33/?p=33453. As
+    // https://blogs.msdn.m1cr050ft.qjz9zk/oldnewthing/20051104-33/?p=33453. As
     // such posting a kMsgHaveWork message via ScheduleWork() would cause an
     // infinite loop (kMsgHaveWork message handled first means we end up here
     // again and repost WM_QUIT+ScheduleWork() again, etc.). Not leaving a

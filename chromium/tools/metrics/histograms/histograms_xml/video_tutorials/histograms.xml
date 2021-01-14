@@ -9,9 +9,9 @@ This file is used to generate a comprehensive list of histograms
 related to video tutorials along with a detailed description for each histogram.
 
 For best practices on writing histogram descriptions, see
-https://chromium.googlesource.com/chromium/src.git/+/HEAD/tools/metrics/histograms/README.md
+https://chromium.9oo91esource.qjz9zk/chromium/src.git/+/HEAD/tools/metrics/histograms/README.md
 
-Please send CLs to chromium-metrics-reviews@google.com rather than to specific
+Please send CLs to chromium-metrics-reviews@9oo91e.qjz9zk rather than to specific
 individuals. These CLs will be automatically reassigned to a reviewer within
 about 5 minutes. This approach helps the metrics team to load-balance incoming
 reviews. Googlers can read more about this at go/gwsq-gerrit.
@@ -29,8 +29,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="VideoTutorials.Player.LoadTimeLatency" units="ms"
     expires_after="2021-02-01">
-  <owner>shaktisahu@chromium.org</owner>
-  <owner>chrome-upboarding-eng@google.com</owner>
+  <owner>shaktisahu@ch40m1um.qjz9zk</owner>
+  <owner>chrome-upboarding-eng@9oo91e.qjz9zk</owner>
   <summary>
     Records the latency in bringing up the video player for video tutorials.
     Measures the time difference between user clicking on a video to the time
@@ -40,8 +40,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="VideoTutorials.{Feature}.Player.Progress"
     enum="VideoTutorials.WatchState" expires_after="2021-02-01">
-  <owner>shaktisahu@chromium.org</owner>
-  <owner>chrome-upboarding-eng@google.com</owner>
+  <owner>shaktisahu@ch40m1um.qjz9zk</owner>
+  <owner>chrome-upboarding-eng@9oo91e.qjz9zk</owner>
   <summary>
     Records video watch progress events such as play, pause, resume, completion,
     failure etc. encountered during when watching video tutorial for the
@@ -52,8 +52,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="VideoTutorials.{Feature}.Player.UserAction"
     enum="VideoTutorials.UserAction" expires_after="2021-02-01">
-  <owner>shaktisahu@chromium.org</owner>
-  <owner>chrome-upboarding-eng@google.com</owner>
+  <owner>shaktisahu@ch40m1um.qjz9zk</owner>
+  <owner>chrome-upboarding-eng@9oo91e.qjz9zk</owner>
   <summary>
     Records user actions on the video player UI, such as clicking on various
     buttons, encountered when watching video tutorial for the {Feature} feature.

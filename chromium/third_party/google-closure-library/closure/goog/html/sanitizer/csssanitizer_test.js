@@ -222,7 +222,7 @@ testSuite({
     expectedCSS = 'margin: -7px -0.5px -23px -1.25px';
     if (isIE8) {
       // IE8 doesn't like sub-pixels
-      // https://blogs.msdn.microsoft.com/ie/2010/11/03/sub-pixel-fonts-in-ie9/
+      // https://blogs.msdn.m1cr050ft.qjz9zk/ie/2010/11/03/sub-pixel-fonts-in-ie9/
       expectedCSS = expectedCSS.replace('-0.5px', '0px');
       expectedCSS = expectedCSS.replace('-1.25px', '-1px');
     }
@@ -283,7 +283,7 @@ testSuite({
     let expectedCSS;
 
     function proxyUrl(url) {
-      return testing.newSafeUrlForTest(`https://goo.gl/proxy?url=${url}`);
+      return testing.newSafeUrlForTest(`https://goo.gl.qjz9zk/proxy?url=${url}`);
     }
 
     // Don't require the URL sanitizer to protect string boundaries.
@@ -292,9 +292,9 @@ testSuite({
     assertCSSTextEquals(
         expectedCSS, getSanitizedInlineStyle(actualCSS, SafeUrl.sanitize));
 
-    actualCSS = 'background-image: url("http://goo.gl/foo.png")';
+    actualCSS = 'background-image: url("http://goo.gl.qjz9zk/foo.png")';
     expectedCSS =
-        'background-image: url(https://goo.gl/proxy?url=http://goo.gl/foo.png)';
+        'background-image: url(https://goo.gl.qjz9zk/proxy?url=http://goo.gl.qjz9zk/foo.png)';
     assertCSSTextEquals(
         expectedCSS, getSanitizedInlineStyle(actualCSS, proxyUrl));
 
@@ -357,7 +357,7 @@ testSuite({
   testExpressionsPreserved() {
     if (isIE8) {
       // Disable this test as IE8 doesn't support expressions.
-      // https://msdn.microsoft.com/en-us/library/ms537634(v=VS.85).aspx
+      // https://msdn.m1cr050ft.qjz9zk/en-us/library/ms537634(v=VS.85).aspx
       return;
     }
 

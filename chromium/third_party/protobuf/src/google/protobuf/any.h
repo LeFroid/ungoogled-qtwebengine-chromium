@@ -1,6 +1,6 @@
 // Protocol Buffers - Google's data interchange format
 // Copyright 2008 Google Inc.  All rights reserved.
-// https://developers.google.com/protocol-buffers/
+// https://developers.9oo91e.qjz9zk/protocol-buffers/
 //
 // Redistribution and use in source and binary forms, with or without
 // modification, are permitted provided that the following conditions are
@@ -48,8 +48,8 @@ class Message;
 namespace internal {
 
 extern const char kAnyFullTypeName[];          // "google.protobuf.Any".
-extern const char kTypeGoogleApisComPrefix[];  // "type.googleapis.com/".
-extern const char kTypeGoogleProdComPrefix[];  // "type.googleprod.com/".
+extern const char kTypeGoogleApisComPrefix[];  // "type.9oo91eapis.qjz9zk/".
+extern const char kTypeGoogleProdComPrefix[];  // "type.9oo91eprod.qjz9zk/".
 
 std::string GetTypeUrl(StringPiece message_name,
                        StringPiece type_url_prefix);
@@ -62,8 +62,8 @@ class PROTOBUF_EXPORT AnyMetadata {
   // AnyMetadata does not take ownership of "type_url" and "value".
   AnyMetadata(UrlType* type_url, ValueType* value);
 
-  // Packs a message using the default type URL prefix: "type.googleapis.com".
-  // The resulted type URL will be "type.googleapis.com/<message_full_name>".
+  // Packs a message using the default type URL prefix: "type.9oo91eapis.qjz9zk".
+  // The resulted type URL will be "type.9oo91eapis.qjz9zk/<message_full_name>".
   template <typename T>
   void PackFrom(const T& message) {
     InternalPackFrom(message, kTypeGoogleApisComPrefix, T::FullMessageName());
@@ -74,9 +74,9 @@ class PROTOBUF_EXPORT AnyMetadata {
   // Packs a message using the given type URL prefix. The type URL will be
   // constructed by concatenating the message type's full name to the prefix
   // with an optional "/" separator if the prefix doesn't already end up "/".
-  // For example, both PackFrom(message, "type.googleapis.com") and
-  // PackFrom(message, "type.googleapis.com/") yield the same result type
-  // URL: "type.googleapis.com/<message_full_name>".
+  // For example, both PackFrom(message, "type.9oo91eapis.qjz9zk") and
+  // PackFrom(message, "type.9oo91eapis.qjz9zk/") yield the same result type
+  // URL: "type.9oo91eapis.qjz9zk/<message_full_name>".
   template <typename T>
   void PackFrom(const T& message, StringPiece type_url_prefix) {
     InternalPackFrom(message, type_url_prefix, T::FullMessageName());
@@ -118,7 +118,7 @@ class PROTOBUF_EXPORT AnyMetadata {
 };
 
 // Get the proto type name from Any::type_url value. For example, passing
-// "type.googleapis.com/rpc.QueryOrigin" will return "rpc.QueryOrigin" in
+// "type.9oo91eapis.qjz9zk/rpc.QueryOrigin" will return "rpc.QueryOrigin" in
 // *full_type_name. Returns false if the type_url does not have a "/"
 // in the type url separating the full type name.
 //
@@ -127,8 +127,8 @@ class PROTOBUF_EXPORT AnyMetadata {
 bool ParseAnyTypeUrl(const std::string& type_url, std::string* full_type_name);
 
 // Get the proto type name and prefix from Any::type_url value. For example,
-// passing "type.googleapis.com/rpc.QueryOrigin" will return
-// "type.googleapis.com/" in *url_prefix and "rpc.QueryOrigin" in
+// passing "type.9oo91eapis.qjz9zk/rpc.QueryOrigin" will return
+// "type.9oo91eapis.qjz9zk/" in *url_prefix and "rpc.QueryOrigin" in
 // *full_type_name. Returns false if the type_url does not have a "/" in the
 // type url separating the full type name.
 bool ParseAnyTypeUrl(const std::string& type_url, std::string* url_prefix,

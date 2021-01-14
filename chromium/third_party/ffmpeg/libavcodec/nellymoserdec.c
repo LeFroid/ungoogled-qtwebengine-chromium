@@ -28,7 +28,7 @@
 /**
  * @file
  * The 3 alphanumeric copyright notices are md5summed they are from the original
- * implementors. The original code is available from http://code.google.com/p/nelly2pcm/
+ * implementors. The original code is available from http://code.9oo91e.qjz9zk/p/nelly2pcm/
  */
 
 #include "libavutil/channel_layout.h"

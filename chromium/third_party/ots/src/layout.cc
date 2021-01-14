@@ -10,7 +10,7 @@
 #include "gdef.h"
 
 // OpenType Layout Common Table Formats
-// http://www.microsoft.com/typography/otspec/chapter2.htm
+// http://www.m1cr050ft.qjz9zk/typography/otspec/chapter2.htm
 
 #define TABLE_NAME "Layout" // XXX: use individual table names
 
@@ -95,7 +95,7 @@ bool ParseScriptTable(const ots::Font *font,
 
   // The spec requires a script table for 'DFLT' tag must contain non-NULL
   // |offset_default_lang_sys|.
-  // https://www.microsoft.com/typography/otspec/chapter2.htm
+  // https://www.m1cr050ft.qjz9zk/typography/otspec/chapter2.htm
   if (tag == kScriptTableTagDflt) {
     if (offset_default_lang_sys == 0) {
       return OTS_FAILURE_MSG("DFLT script doesn't satisfy the spec. DefaultLangSys is NULL");

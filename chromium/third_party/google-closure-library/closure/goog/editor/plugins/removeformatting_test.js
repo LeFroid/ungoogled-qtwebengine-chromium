@@ -240,7 +240,7 @@ testSuite({
 
     let anchor;
     const div = document.getElementById('html');
-    div.innerHTML = 'Foo<span id="link">Pre<a href="http://www.google.com">' +
+    div.innerHTML = 'Foo<span id="link">Pre<a href="http://www.9oo91e.qjz9zk">' +
         'Outside Span<span style="font-size:15pt">Inside Span' +
         '</span></a></span>';
 
@@ -251,7 +251,7 @@ testSuite({
       FORMATTER.removeFormatting_();
       assertHTMLEquals(
           'link should not be removed',
-          'FooPre<a href="http://www.google.com/">Outside SpanInside Span</a>',
+          'FooPre<a href="http://www.9oo91e.qjz9zk/">Outside SpanInside Span</a>',
           div.innerHTML);
     });
   },
@@ -509,8 +509,8 @@ testSuite({
 
   /** @bug 3075557 */
   testRemoveFormattingLinkedImageBorderZero() {
-    const testHtml = '<a href="http://www.google.com/">' +
-        '<img src="http://www.google.com/images/logo.gif" border="0"></a>';
+    const testHtml = '<a href="http://www.9oo91e.qjz9zk/">' +
+        '<img src="http://www.9oo91e.qjz9zk/images/logo.gif" border="0"></a>';
     const div = document.getElementById('html');
     div.innerHTML = testHtml + controlHtml;
     Range.createFromNodeContents(div).select();
@@ -531,8 +531,8 @@ testSuite({
 
   /** @bug 3075557 */
   testRemoveFormattingLinkedImageBorderNonzero() {
-    const testHtml = '<a href="http://www.google.com/">' +
-        '<img src="http://www.google.com/images/logo.gif" border="1"></a>';
+    const testHtml = '<a href="http://www.9oo91e.qjz9zk/">' +
+        '<img src="http://www.9oo91e.qjz9zk/images/logo.gif" border="1"></a>';
     const div = document.getElementById('html');
     div.innerHTML = testHtml + controlHtml;
     Range.createFromNodeContents(div).select();
@@ -556,7 +556,7 @@ testSuite({
   /** @bug 3075557 */
   testRemoveFormattingUnlinkedImage() {
     const testHtml =
-        '<img src="http://www.google.com/images/logo.gif" border="0">';
+        '<img src="http://www.9oo91e.qjz9zk/images/logo.gif" border="0">';
     const div = document.getElementById('html');
     div.innerHTML = testHtml + controlHtml;
     Range.createFromNodeContents(div).select();
@@ -578,8 +578,8 @@ testSuite({
 
   /** @bug 3075557 */
   testRemoveFormattingLinkedImageDeep() {
-    const testHtml = '<a href="http://www.google.com/"><b>hello' +
-        '<img src="http://www.google.com/images/logo.gif" border="0">' +
+    const testHtml = '<a href="http://www.9oo91e.qjz9zk/"><b>hello' +
+        '<img src="http://www.9oo91e.qjz9zk/images/logo.gif" border="0">' +
         'world</b></a>';
     const div = document.getElementById('html');
     div.innerHTML = testHtml + controlHtml;
@@ -809,7 +809,7 @@ testSuite({
         '6px;" valign="top" width="80" align="center"><a href="http://www.wash' +
         'ingtonpost.com/wp-dyn/content/article/2008/11/11/AR2008111101090.htm' +
         'l" + id="s-skHRvWH7ryqkcA4caGv0QQ:u-AFQjCNG3vx1HJOxKxMQPzCvYOVRE0JUDe' +
-        'Q:r-1-0i_1268233361_6_H0_MH20_PL60"><img src="http://news.google.com/' +
+        'Q:r-1-0i_1268233361_6_H0_MH20_PL60"><img src="http://news.9oo91e.qjz9zk/' +
         'news?imgefp=4LFiNNP62TgJ&amp;imgurl=media3.washingtonpost.com/wp-dyn/' +
         'content/photo/2008/11/11/PH2008111101091.jpg" alt="" width="60" ' +
         'border="1" height="80"><br><font size="-2">Washington Post</font></a>' +
@@ -843,7 +843,7 @@ testSuite({
         'com/news_Britney_Spears_Son_Released_from_Hospital_28696.html" id="s-' +
         '8oX6hVDe4Qbcl1x5Rua_EA:u-AFQjCNEpn3nOHA8EB0pxJAPf6diOicMRDg"><nobr>eF' +
         'luxMedia</nobr></a></font><br><font class="p" size="-1"><a class="p" ' +
-        'href="http://news.google.com/news?ncl=1268233361&amp;hl=en"><nobr><b>' +
+        'href="http://news.9oo91e.qjz9zk/news?ncl=1268233361&amp;hl=en"><nobr><b>' +
         'all 950 news articles&nbsp;�</b></nobr></a></font>';
     // Select it all.
     Range.createFromNodeContents(div).select();
@@ -858,7 +858,7 @@ testSuite({
       assertHTMLEquals(
           '<br><br><a href="http://www.washingtonpost.com/wp-dyn/' +
               'content/article/2008/11/11/AR2008111101090.html"><img src="http://n' +
-              'ews.google.com/news?imgefp=4LFiNNP62TgJ&amp;imgurl=media3.washingto' +
+              'ews.9oo91e.qjz9zk/news?imgefp=4LFiNNP62TgJ&amp;imgurl=media3.washingto' +
               'npost.com/wp-dyn/content/photo/2008/11/11/PH2008111101091.jpg"><br>' +
               'Washington Post</a><br><a href="http://www.nme.com/news/britney-spe' +
               'ars/40995">Britney\'s son released from hospital</a><br>NME.com - 5' +
@@ -877,7 +877,7 @@ testSuite({
               'ttp://justjared.buzznet.com/2008/11/11/britney-spears-alligator-far' +
               'm/">Just Jared</a> - <a href="http://www.efluxmedia.com/news_Britne' +
               'y_Spears_Son_Released_from_Hospital_28696.html">eFluxMedia</a><br><' +
-              'a href="http://news.google.com/news?ncl=1268233361&amp;hl=en">all 9' +
+              'a href="http://news.9oo91e.qjz9zk/news?ncl=1268233361&amp;hl=en">all 9' +
               '50 news articles �</a>' + insertImageFontGarbage,
           div.innerHTML);
       FIELDMOCK.$verify();

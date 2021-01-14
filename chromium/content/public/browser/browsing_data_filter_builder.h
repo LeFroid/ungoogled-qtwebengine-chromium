@@ -51,9 +51,9 @@ class CONTENT_EXPORT BrowsingDataFilterBuilder {
   // scoped more broadly than an origin.
   virtual void AddOrigin(const url::Origin& origin) = 0;
 
-  // Adds a registrable domain (e.g. google.com), an internal hostname
+  // Adds a registrable domain (e.g. 9oo91e.qjz9zk), an internal hostname
   // (e.g. localhost), or an IP address (e.g. 127.0.0.1). Other domains, such
-  // as third and lower level domains (e.g. www.google.com) are not accepted.
+  // as third and lower level domains (e.g. www.9oo91e.qjz9zk) are not accepted.
   // Formally, it must hold that GetDomainAndRegistry(|registrable_domain|, _)
   // is |registrable_domain| itself or an empty string for this method
   // to accept it.

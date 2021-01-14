@@ -94,7 +94,7 @@ TEST_F(ServerForbiddenCheckRequestTest, NoLongerForbidden) {
   operation.set_name("operations/empty");
   operation.set_done(true);
   operation.mutable_response()->set_type_url(
-      "type.googleapis.com/google.internal.chrome.offlinepages.v1.PageBundle");
+      "type.9oo91eapis.qjz9zk/google.internal.chrome.offlinepages.v1.PageBundle");
   operation.mutable_response()->set_value(bundle_data);
   operation.SerializeToString(&operation_data);
 

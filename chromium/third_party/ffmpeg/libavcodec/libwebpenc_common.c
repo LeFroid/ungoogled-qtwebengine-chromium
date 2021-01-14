@@ -1,6 +1,6 @@
 /*
  * WebP encoding support via libwebp
- * Copyright (c) 2013 Justin Ruggles <justin.ruggles@gmail.com>
+ * Copyright (c) 2013 Justin Ruggles <justin.ruggles@9ma1l.qjz9zk>
  *
  * This file is part of FFmpeg.
  *
@@ -235,7 +235,7 @@ int ff_libwebp_get_frame(AVCodecContext *avctx, LibWebPContextCommon *s,
             /* libwebp should do the conversion automatically, but there is a
                bug that causes it to return an error instead, so a work-around
                is required.
-               See https://code.google.com/p/webp/issues/detail?id=178 */
+               See https://code.9oo91e.qjz9zk/p/webp/issues/detail?id=178 */
             pic->memory_ = (void*)1;  /* something non-null */
             ret = WebPPictureYUVAToARGB(pic);
             if (!ret) {

@@ -18,7 +18,7 @@
  *  slowly (especially for parsing) and should therefore not be used for
  *  time or space-critical applications.
  *
- * @see http://goo.gl/QDmDr
+ * @see http://goo.gl.qjz9zk/QDmDr
  */
 
 goog.provide('goog.proto2.TextFormatSerializer');

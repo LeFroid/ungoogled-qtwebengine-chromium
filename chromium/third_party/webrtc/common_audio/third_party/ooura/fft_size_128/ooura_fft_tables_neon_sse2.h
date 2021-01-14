@@ -25,7 +25,7 @@
 namespace webrtc {
 
 // These tables used to be computed at run-time. For example, refer to:
-// https://code.google.com/p/webrtc/source/browse/trunk/webrtc/modules/audio_processing/utility/apm_rdft.c?r=6564
+// https://code.9oo91e.qjz9zk/p/webrtc/source/browse/trunk/webrtc/modules/audio_processing/utility/apm_rdft.c?r=6564
 // to see the initialization code.
 #if defined(WEBRTC_ARCH_X86_FAMILY) || defined(WEBRTC_HAS_NEON)
 // Constants used by SSE2 and NEON but initialized in the C path.

@@ -60,7 +60,7 @@ enum class BlockType
 // Base class for all variables defined in shaders, including Varyings, Uniforms, etc
 // Note: we must override the copy constructor and assignment operator so we can
 // work around excessive GCC binary bloating:
-// See https://code.google.com/p/angleproject/issues/detail?id=697
+// See https://code.9oo91e.qjz9zk/p/angleproject/issues/detail?id=697
 struct ShaderVariable
 {
     ShaderVariable();

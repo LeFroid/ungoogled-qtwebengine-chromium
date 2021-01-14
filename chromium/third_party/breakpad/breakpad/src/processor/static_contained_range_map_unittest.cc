@@ -30,7 +30,7 @@
 // static_contained_range_map_unittest.cc: Unit tests for
 // StaticContainedRangeMap.
 //
-// Author: Siyang Xie (lambxsy@google.com)
+// Author: Siyang Xie (lambxsy@9oo91e.qjz9zk)
 
 #include "breakpad_googletest_includes.h"
 #include "common/scoped_ptr.h"

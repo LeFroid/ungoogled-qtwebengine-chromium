@@ -32,7 +32,7 @@ static MESH_PATTERN
       { { 64, 16 }, { 24, 8 }, { 12, 4 }, { 7, 1 } },
     };
 
-// TODO(huisu@google.com): These settings are pretty relaxed, tune them for
+// TODO(huisu@9oo91e.qjz9zk): These settings are pretty relaxed, tune them for
 // each speed setting
 static MESH_PATTERN intrabc_mesh_patterns[MAX_MESH_SPEED + 1][MAX_MESH_STEP] = {
   { { 256, 1 }, { 256, 1 }, { 0, 0 }, { 0, 0 } },
@@ -151,7 +151,7 @@ static void set_good_speed_feature_framesize_dependent(
     sf->part_sf.default_min_partition_size = BLOCK_8X8;
   }
 
-  // TODO(huisu@google.com): train models for 720P and above.
+  // TODO(huisu@9oo91e.qjz9zk): train models for 720P and above.
   if (!is_720p_or_larger) {
     sf->part_sf.ml_partition_search_breakout_thresh[0] = 200;  // BLOCK_8X8
     sf->part_sf.ml_partition_search_breakout_thresh[1] = 250;  // BLOCK_16X16
@@ -162,7 +162,7 @@ static void set_good_speed_feature_framesize_dependent(
   }
 
   if (is_720p_or_larger) {
-    // TODO(chiyotsai@google.com): make this speed feature adaptive based on
+    // TODO(chiyotsai@9oo91e.qjz9zk): make this speed feature adaptive based on
     // current block's vertical texture instead of hardcoded with resolution
     sf->mv_sf.use_downsampled_sad = 1;
   }
@@ -441,7 +441,7 @@ static void set_good_speed_features_framesize_independent(
     sf->mv_sf.auto_mv_step_size = 1;
     sf->mv_sf.subpel_iters_per_step = 1;
 
-    // TODO(chiyotsai@google.com): We can get 10% speed up if we move
+    // TODO(chiyotsai@9oo91e.qjz9zk): We can get 10% speed up if we move
     // adaptive_rd_thresh to speed 1. But currently it performs poorly on some
     // clips (e.g. 5% loss on dinner_1080p). We need to examine the sequence a
     // bit more closely to figure out why.

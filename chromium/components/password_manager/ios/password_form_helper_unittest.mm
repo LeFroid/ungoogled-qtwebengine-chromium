@@ -227,7 +227,7 @@ TEST_F(PasswordFormHelperTest, FillPasswordFormWithFillData) {
   EXPECT_TRUE(ExecuteJavaScript(@"__gCrWeb.passwords.findPasswordForms();"));
   const std::string base_url = BaseUrl();
   FillData fill_data;
-  SetFillData(base_url, 0, 1, "john.doe@gmail.com", 2, "super!secret",
+  SetFillData(base_url, 0, 1, "john.doe@9ma1l.qjz9zk", 2, "super!secret",
               &fill_data);
 
   __block int call_counter = 0;
@@ -240,7 +240,7 @@ TEST_F(PasswordFormHelperTest, FillPasswordFormWithFillData) {
     return call_counter == 1;
   }));
   id result = ExecuteJavaScript(kInputFieldValueVerificationScript);
-  EXPECT_NSEQ(@"u1=john.doe@gmail.com;p1=super!secret;", result);
+  EXPECT_NSEQ(@"u1=john.doe@9ma1l.qjz9zk;p1=super!secret;", result);
 }
 
 // Tests that a form is found and the found form is filled in with the given
@@ -255,7 +255,7 @@ TEST_F(PasswordFormHelperTest, FindAndFillOnePasswordForm) {
 
   PasswordFormFillData form_data;
   SetPasswordFormFillData(BaseUrl(), "gChrome~form~0", 0, "u1", 1,
-                          "john.doe@gmail.com", "p1", 2, "super!secret",
+                          "john.doe@9ma1l.qjz9zk", "p1", 2, "super!secret",
                           nullptr, nullptr, false, &form_data);
 
   __block int call_counter = 0;
@@ -272,7 +272,7 @@ TEST_F(PasswordFormHelperTest, FindAndFillOnePasswordForm) {
   }));
   EXPECT_EQ(1, success_counter);
   id result = ExecuteJavaScript(kInputFieldValueVerificationScript);
-  EXPECT_NSEQ(@"u1=john.doe@gmail.com;p1=super!secret;", result);
+  EXPECT_NSEQ(@"u1=john.doe@9ma1l.qjz9zk;p1=super!secret;", result);
 }
 
 // Tests that extractPasswordFormData extracts wanted form on page with mutiple
@@ -334,7 +334,7 @@ TEST_F(PasswordFormHelperTest, RefillFormFilledOnUserTrigger) {
   // Fill the form on user trigger.
   const std::string base_url = BaseUrl();
   FillData fill_data;
-  SetFillData(base_url, 0, 1, "john.doe@gmail.com", 2, "super!secret",
+  SetFillData(base_url, 0, 1, "john.doe@9ma1l.qjz9zk", 2, "super!secret",
               &fill_data);
   __block int call_counter = 0;
   [helper_ fillPasswordFormWithFillData:fill_data
@@ -374,9 +374,9 @@ TEST_F(PasswordFormHelperTest, RefillFormWithUserTypedInput) {
   EXPECT_TRUE(ExecuteJavaScript(@"__gCrWeb.passwords.findPasswordForms();"));
 
   ExecuteJavaScript(
-      @"document.getElementById('u1').value = 'john.doe@gmail.com';");
+      @"document.getElementById('u1').value = 'john.doe@9ma1l.qjz9zk';");
   [helper_ updateFieldDataOnUserInput:FieldRendererId(1)
-                           inputValue:@"john.doe@gmail.com"];
+                           inputValue:@"john.doe@9ma1l.qjz9zk"];
 
   ExecuteJavaScript(@"document.getElementById('p1').value = 'super!secret';");
   [helper_ updateFieldDataOnUserInput:FieldRendererId(2)

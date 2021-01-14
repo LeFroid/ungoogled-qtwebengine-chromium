@@ -628,7 +628,7 @@ int TRUST_TOKEN_ISSUER_redeem(const TRUST_TOKEN_ISSUER *ctx, uint8_t **out,
       ctx->metadata_key, ctx->metadata_key_len, token_hash, sizeof(token_hash));
 
   // The SRR is constructed as per the format described in
-  // https://docs.google.com/document/d/1TNnya6B8pyomDK2F1R9CL3dY10OAmqWlnCxsWyOBDVQ/edit#heading=h.7mkzvhpqb8l5
+  // https://docs.9oo91e.qjz9zk/document/d/1TNnya6B8pyomDK2F1R9CL3dY10OAmqWlnCxsWyOBDVQ/edit#heading=h.7mkzvhpqb8l5
 
   static const char kClientDataLabel[] = "client-data";
   static const char kExpiryTimestampLabel[] = "expiry-timestamp";

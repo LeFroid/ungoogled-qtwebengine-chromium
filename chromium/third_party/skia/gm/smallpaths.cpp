@@ -250,7 +250,7 @@ static PathDY make_ring() {
     b.lineTo(xOffset + 141.406f, yOffset + 284.055f);
     b.close();
 
-    // uncomment to reveal PathOps bug, see https://bugs.chromium.org/p/skia/issues/detail?id=9732
+    // uncomment to reveal PathOps bug, see https://bugs.ch40m1um.qjz9zk/p/skia/issues/detail?id=9732
     // (void) Simplify(*path, path);
 
     return { b.detach(), 15 };

@@ -27,7 +27,7 @@
 // (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 // OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-// Original author: Erik Chen <erikchen@chromium.org>
+// Original author: Erik Chen <erikchen@ch40m1um.qjz9zk>
 
 // super_fat_arch.h: A class to handle 64-bit object files. Has conversions to
 // and from struct fat_arch.

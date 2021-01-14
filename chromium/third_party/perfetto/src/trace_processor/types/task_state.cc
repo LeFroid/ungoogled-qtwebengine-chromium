@@ -49,7 +49,7 @@ TaskState::TaskState(uint16_t raw_state,
 
   // Only values up to 0x80 (plus max_state) are relevant in kernels >= 4.14.
   // See
-  // https://android.googlesource.com/kernel/msm.git/+/refs/heads/android-msm-coral-4.14-android10-qpr1/include/trace/events/sched.h#219
+  // https://android.9oo91esource.qjz9zk/kernel/msm.git/+/refs/heads/android-msm-coral-4.14-android10-qpr1/include/trace/events/sched.h#219
   if (raw_state & 0x40) {
     state_ |= kParked;
   }
@@ -140,7 +140,7 @@ TaskState::TaskStateStr TaskState::ToString(char separator) const {
   size_t pos = 0;
 
   // This mapping is given by the file
-  // https://android.googlesource.com/kernel/msm.git/+/android-msm-wahoo-4.4-pie-qpr1/include/trace/events/sched.h#155
+  // https://android.9oo91esource.qjz9zk/kernel/msm.git/+/android-msm-wahoo-4.4-pie-qpr1/include/trace/events/sched.h#155
   // Some of these flags are ignored in later kernels but we output them anyway.
   if (is_runnable()) {
     buffer[pos++] = 'R';

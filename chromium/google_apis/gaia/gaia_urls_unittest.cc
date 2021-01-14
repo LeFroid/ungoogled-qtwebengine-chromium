@@ -60,97 +60,97 @@ class GaiaUrlsTest : public ::testing::Test {
 };
 
 TEST_F(GaiaUrlsTest, InitializeDefault_AllUrls) {
-  EXPECT_EQ(gaia_urls()->google_url().spec(), "http://google.com/");
-  EXPECT_EQ(gaia_urls()->secure_google_url().spec(), "https://google.com/");
-  EXPECT_EQ(gaia_urls()->gaia_url().spec(), "https://accounts.google.com/");
+  EXPECT_EQ(gaia_urls()->google_url().spec(), "http://9oo91e.qjz9zk/");
+  EXPECT_EQ(gaia_urls()->secure_google_url().spec(), "https://9oo91e.qjz9zk/");
+  EXPECT_EQ(gaia_urls()->gaia_url().spec(), "https://accounts.9oo91e.qjz9zk/");
   EXPECT_EQ(gaia_urls()->captcha_base_url().spec(),
-            "http://accounts.google.com/");
+            "http://accounts.9oo91e.qjz9zk/");
   EXPECT_EQ(gaia_urls()->client_login_url().spec(),
-            "https://accounts.google.com/ClientLogin");
+            "https://accounts.9oo91e.qjz9zk/ClientLogin");
   EXPECT_EQ(gaia_urls()->service_login_url().spec(),
-            "https://accounts.google.com/ServiceLogin");
+            "https://accounts.9oo91e.qjz9zk/ServiceLogin");
   EXPECT_EQ(gaia_urls()->embedded_setup_chromeos_url(2U).spec(),
-            "https://accounts.google.com/embedded/setup/v2/chromeos");
+            "https://accounts.9oo91e.qjz9zk/embedded/setup/v2/chromeos");
   EXPECT_EQ(gaia_urls()->embedded_setup_chromeos_kid_signup_url().spec(),
-            "https://accounts.google.com/embedded/setup/kidsignup/chromeos");
+            "https://accounts.9oo91e.qjz9zk/embedded/setup/kidsignup/chromeos");
   EXPECT_EQ(gaia_urls()->embedded_setup_chromeos_kid_signin_url().spec(),
-            "https://accounts.google.com/embedded/setup/kidsignin/chromeos");
+            "https://accounts.9oo91e.qjz9zk/embedded/setup/kidsignin/chromeos");
   EXPECT_EQ(gaia_urls()->embedded_setup_windows_url().spec(),
-            "https://accounts.google.com/embedded/setup/windows");
+            "https://accounts.9oo91e.qjz9zk/embedded/setup/windows");
   EXPECT_EQ(gaia_urls()->signin_chrome_sync_dice().spec(),
-            "https://accounts.google.com/signin/chrome/sync?ssp=1");
+            "https://accounts.9oo91e.qjz9zk/signin/chrome/sync?ssp=1");
   EXPECT_EQ(gaia_urls()->signin_chrome_sync_keys_url().spec(),
-            std::string("https://accounts.google.com/encryption/unlock/") +
+            std::string("https://accounts.9oo91e.qjz9zk/encryption/unlock/") +
                 kSigninChromeSyncKeysPlatformSuffix);
   EXPECT_EQ(gaia_urls()->service_login_auth_url().spec(),
-            "https://accounts.google.com/ServiceLoginAuth");
+            "https://accounts.9oo91e.qjz9zk/ServiceLoginAuth");
   EXPECT_EQ(gaia_urls()->service_logout_url().spec(),
-            "https://accounts.google.com/Logout");
+            "https://accounts.9oo91e.qjz9zk/Logout");
   EXPECT_EQ(gaia_urls()->LogOutURLWithSource("").spec(),
-            "https://accounts.google.com/Logout?continue=https://"
-            "accounts.google.com/chrome/blank.html");
+            "https://accounts.9oo91e.qjz9zk/Logout?continue=https://"
+            "accounts.9oo91e.qjz9zk/chrome/blank.html");
   EXPECT_EQ(gaia_urls()->get_user_info_url().spec(),
-            "https://accounts.google.com/GetUserInfo");
+            "https://accounts.9oo91e.qjz9zk/GetUserInfo");
   EXPECT_EQ(gaia_urls()->token_auth_url().spec(),
-            "https://accounts.google.com/TokenAuth");
+            "https://accounts.9oo91e.qjz9zk/TokenAuth");
   EXPECT_EQ(gaia_urls()->merge_session_url().spec(),
-            "https://accounts.google.com/MergeSession");
+            "https://accounts.9oo91e.qjz9zk/MergeSession");
   EXPECT_EQ(gaia_urls()->get_oauth_token_url().spec(),
-            "https://accounts.google.com/o/oauth/GetOAuthToken/");
+            "https://accounts.9oo91e.qjz9zk/o/oauth/GetOAuthToken/");
   EXPECT_EQ(gaia_urls()->oauth_get_access_token_url().spec(),
-            "https://accounts.google.com/OAuthGetAccessToken");
+            "https://accounts.9oo91e.qjz9zk/OAuthGetAccessToken");
   EXPECT_EQ(gaia_urls()->oauth_wrap_bridge_url().spec(),
-            "https://accounts.google.com/OAuthWrapBridge");
+            "https://accounts.9oo91e.qjz9zk/OAuthWrapBridge");
   EXPECT_EQ(gaia_urls()->oauth_multilogin_url().spec(),
-            "https://accounts.google.com/oauth/multilogin");
+            "https://accounts.9oo91e.qjz9zk/oauth/multilogin");
   EXPECT_EQ(gaia_urls()->oauth_user_info_url().spec(),
-            "https://www.googleapis.com/oauth2/v1/userinfo");
+            "https://www.9oo91eapis.qjz9zk/oauth2/v1/userinfo");
   EXPECT_EQ(gaia_urls()->oauth_revoke_token_url().spec(),
-            "https://accounts.google.com/AuthSubRevokeToken");
+            "https://accounts.9oo91e.qjz9zk/AuthSubRevokeToken");
   EXPECT_EQ(gaia_urls()->oauth1_login_url().spec(),
-            "https://accounts.google.com/OAuthLogin");
+            "https://accounts.9oo91e.qjz9zk/OAuthLogin");
   EXPECT_EQ(gaia_urls()->ListAccountsURLWithSource("").spec(),
-            "https://accounts.google.com/ListAccounts?json=standard");
+            "https://accounts.9oo91e.qjz9zk/ListAccounts?json=standard");
   EXPECT_EQ(gaia_urls()->embedded_signin_url().spec(),
-            "https://accounts.google.com/embedded/setup/chrome/usermenu");
+            "https://accounts.9oo91e.qjz9zk/embedded/setup/chrome/usermenu");
   EXPECT_EQ(gaia_urls()->add_account_url().spec(),
-            "https://accounts.google.com/AddSession");
+            "https://accounts.9oo91e.qjz9zk/AddSession");
   EXPECT_EQ(gaia_urls()->reauth_url().spec(),
-            "https://accounts.google.com/embedded/xreauth/chrome");
+            "https://accounts.9oo91e.qjz9zk/embedded/xreauth/chrome");
   EXPECT_EQ(gaia_urls()->GetCheckConnectionInfoURLWithSource("").spec(),
-            "https://accounts.google.com/GetCheckConnectionInfo");
+            "https://accounts.9oo91e.qjz9zk/GetCheckConnectionInfo");
   EXPECT_EQ(gaia_urls()->oauth2_auth_url().spec(),
-            "https://accounts.google.com/o/oauth2/auth");
+            "https://accounts.9oo91e.qjz9zk/o/oauth2/auth");
   EXPECT_EQ(gaia_urls()->oauth2_token_url().spec(),
-            "https://www.googleapis.com/oauth2/v4/token");
+            "https://www.9oo91eapis.qjz9zk/oauth2/v4/token");
   EXPECT_EQ(gaia_urls()->oauth2_issue_token_url().spec(),
-            "https://oauthaccountmanager.googleapis.com/v1/issuetoken");
+            "https://oauthaccountmanager.9oo91eapis.qjz9zk/v1/issuetoken");
   EXPECT_EQ(gaia_urls()->oauth2_token_info_url().spec(),
-            "https://www.googleapis.com/oauth2/v2/tokeninfo");
+            "https://www.9oo91eapis.qjz9zk/oauth2/v2/tokeninfo");
   EXPECT_EQ(gaia_urls()->oauth2_revoke_url().spec(),
-            "https://accounts.google.com/o/oauth2/revoke");
+            "https://accounts.9oo91e.qjz9zk/o/oauth2/revoke");
   EXPECT_EQ(gaia_urls()->reauth_api_url().spec(),
-            "https://www.googleapis.com/reauth/v1beta/users/");
+            "https://www.9oo91eapis.qjz9zk/reauth/v1beta/users/");
   EXPECT_EQ(gaia_urls()->gaia_login_form_realm().spec(),
-            "https://accounts.google.com/");
+            "https://accounts.9oo91e.qjz9zk/");
 }
 
 TEST_F(GaiaUrlsTest, InitializeDefault_URLSwitches) {
   base::test::ScopedCommandLine command_line;
   command_line.GetProcessCommandLine()->AppendSwitchASCII(
-      "google-url", "http://test-google.com");
+      "google-url", "http://test-9oo91e.qjz9zk");
   command_line.GetProcessCommandLine()->AppendSwitchASCII(
       "gaia-url", "https://test-gaia.com");
   command_line.GetProcessCommandLine()->AppendSwitchASCII(
-      "google-apis-url", "https://test-googleapis.com");
+      "google-apis-url", "https://test-9oo91eapis.qjz9zk");
   command_line.GetProcessCommandLine()->AppendSwitchASCII(
       "lso-url", "https://test-lso.com");
   command_line.GetProcessCommandLine()->AppendSwitchASCII(
       "oauth-account-manager-url", "https://test-oauthaccountmanager.com");
 
-  EXPECT_EQ(gaia_urls()->google_url().spec(), "http://test-google.com/");
+  EXPECT_EQ(gaia_urls()->google_url().spec(), "http://test-9oo91e.qjz9zk/");
   EXPECT_EQ(gaia_urls()->secure_google_url().spec(),
-            "https://test-google.com/");
+            "https://test-9oo91e.qjz9zk/");
   EXPECT_EQ(gaia_urls()->gaia_url().spec(), "https://test-gaia.com/");
   EXPECT_EQ(gaia_urls()->captcha_base_url().spec(), "http://test-gaia.com/");
   EXPECT_EQ(gaia_urls()->client_login_url().spec(),
@@ -192,7 +192,7 @@ TEST_F(GaiaUrlsTest, InitializeDefault_URLSwitches) {
   EXPECT_EQ(gaia_urls()->oauth_multilogin_url().spec(),
             "https://test-gaia.com/oauth/multilogin");
   EXPECT_EQ(gaia_urls()->oauth_user_info_url().spec(),
-            "https://test-googleapis.com/oauth2/v1/userinfo");
+            "https://test-9oo91eapis.qjz9zk/oauth2/v1/userinfo");
   EXPECT_EQ(gaia_urls()->oauth_revoke_token_url().spec(),
             "https://test-gaia.com/AuthSubRevokeToken");
   EXPECT_EQ(gaia_urls()->oauth1_login_url().spec(),
@@ -210,15 +210,15 @@ TEST_F(GaiaUrlsTest, InitializeDefault_URLSwitches) {
   EXPECT_EQ(gaia_urls()->oauth2_auth_url().spec(),
             "https://test-lso.com/o/oauth2/auth");
   EXPECT_EQ(gaia_urls()->oauth2_token_url().spec(),
-            "https://test-googleapis.com/oauth2/v4/token");
+            "https://test-9oo91eapis.qjz9zk/oauth2/v4/token");
   EXPECT_EQ(gaia_urls()->oauth2_issue_token_url().spec(),
             "https://test-oauthaccountmanager.com/v1/issuetoken");
   EXPECT_EQ(gaia_urls()->oauth2_token_info_url().spec(),
-            "https://test-googleapis.com/oauth2/v2/tokeninfo");
+            "https://test-9oo91eapis.qjz9zk/oauth2/v2/tokeninfo");
   EXPECT_EQ(gaia_urls()->oauth2_revoke_url().spec(),
             "https://test-lso.com/o/oauth2/revoke");
   EXPECT_EQ(gaia_urls()->reauth_api_url().spec(),
-            "https://test-googleapis.com/reauth/v1beta/users/");
+            "https://test-9oo91eapis.qjz9zk/reauth/v1beta/users/");
   EXPECT_EQ(gaia_urls()->gaia_login_form_realm().spec(),
             "https://test-gaia.com/");
 }
@@ -233,7 +233,7 @@ TEST_F(GaiaUrlsTest, InitializeFromConfig_OneUrl) {
             "https://accounts.example.com/ExampleClientLogin");
   // All other URLs should have default values.
   EXPECT_EQ(gaia_urls()->service_login_url().spec(),
-            "https://accounts.google.com/ServiceLogin");
+            "https://accounts.9oo91e.qjz9zk/ServiceLogin");
 }
 
 TEST_F(GaiaUrlsTest, InitializeFromConfig_OneBaseUrl) {
@@ -250,7 +250,7 @@ TEST_F(GaiaUrlsTest, InitializeFromConfig_OneBaseUrl) {
             "https://accounts.example.com/ServiceLogin");
   // All other URLs should have default values.
   EXPECT_EQ(gaia_urls()->get_oauth_token_url().spec(),
-            "https://accounts.google.com/o/oauth/GetOAuthToken/");
+            "https://accounts.9oo91e.qjz9zk/o/oauth/GetOAuthToken/");
 }
 
 TEST_F(GaiaUrlsTest, InitializeFromConfig_PrecedenceOverSwitches) {
@@ -430,7 +430,7 @@ TEST_F(GaiaUrlsTest, InitializeFromConfig_BadUrl) {
       "gaia-config", GetTestFilePath("bad_url.json"));
 
   // A bad URL should be ignored and fallback to the default URL.
-  EXPECT_EQ(gaia_urls()->google_url().spec(), "http://google.com/");
+  EXPECT_EQ(gaia_urls()->google_url().spec(), "http://9oo91e.qjz9zk/");
 }
 
 TEST_F(GaiaUrlsTest, InitializeFromConfig_BadUrlKey) {
@@ -439,7 +439,7 @@ TEST_F(GaiaUrlsTest, InitializeFromConfig_BadUrlKey) {
       "gaia-config", GetTestFilePath("bad_url_key.json"));
 
   // Fallback to the default URL.
-  EXPECT_EQ(gaia_urls()->google_url().spec(), "http://google.com/");
+  EXPECT_EQ(gaia_urls()->google_url().spec(), "http://9oo91e.qjz9zk/");
 }
 
 TEST_F(GaiaUrlsTest, InitializeFromConfig_BadUrlsKey) {
@@ -448,7 +448,7 @@ TEST_F(GaiaUrlsTest, InitializeFromConfig_BadUrlsKey) {
       "gaia-config", GetTestFilePath("bad_urls_key.json"));
 
   // Fallback to the default URL.
-  EXPECT_EQ(gaia_urls()->google_url().spec(), "http://google.com/");
+  EXPECT_EQ(gaia_urls()->google_url().spec(), "http://9oo91e.qjz9zk/");
 }
 
 TEST_F(GaiaUrlsTest, InitializeFromConfig_FileNotFound) {
@@ -457,7 +457,7 @@ TEST_F(GaiaUrlsTest, InitializeFromConfig_FileNotFound) {
       "gaia-config", GetTestFilePath("no_such_file.json"));
 
   // Fallback to the default URL.
-  EXPECT_EQ(gaia_urls()->google_url().spec(), "http://google.com/");
+  EXPECT_EQ(gaia_urls()->google_url().spec(), "http://9oo91e.qjz9zk/");
 }
 
 TEST_F(GaiaUrlsTest, InitializeFromConfig_NotAJson) {
@@ -466,5 +466,5 @@ TEST_F(GaiaUrlsTest, InitializeFromConfig_NotAJson) {
       "gaia-config", GetTestFilePath("not_a_json.txt"));
 
   // Fallback to the default URL.
-  EXPECT_EQ(gaia_urls()->google_url().spec(), "http://google.com/");
+  EXPECT_EQ(gaia_urls()->google_url().spec(), "http://9oo91e.qjz9zk/");
 }

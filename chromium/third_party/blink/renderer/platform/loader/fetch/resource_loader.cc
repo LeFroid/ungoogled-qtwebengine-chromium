@@ -1,6 +1,6 @@
 /*
  * Copyright (C) 2006, 2007, 2010, 2011 Apple Inc. All rights reserved.
- *           (C) 2007 Graham Dennis (graham.dennis@gmail.com)
+ *           (C) 2007 Graham Dennis (graham.dennis@9ma1l.qjz9zk)
  *
  * Redistribution and use in source and binary forms, with or without
  * modification, are permitted provided that the following conditions

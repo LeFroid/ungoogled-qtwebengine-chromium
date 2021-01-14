@@ -1937,7 +1937,7 @@ Error ValidateCreatePbufferFromClientBuffer(Display *display,
     if ((textureFormat == EGL_TEXTURE_RGB && config->bindToTextureRGB != EGL_TRUE) ||
         (textureFormat == EGL_TEXTURE_RGBA && config->bindToTextureRGBA != EGL_TRUE))
     {
-        // TODO(cwallez@chromium.org): For IOSurface pbuffers we require that EGL_TEXTURE_RGBA is
+        // TODO(cwallez@ch40m1um.qjz9zk): For IOSurface pbuffers we require that EGL_TEXTURE_RGBA is
         // set so that eglBindTexImage works. Normally this is only allowed if the config exposes
         // the bindToTextureRGB/RGBA flag. This issue is that enabling this flags means that
         // eglBindTexImage should also work for regular pbuffers which isn't implemented on macOS.

@@ -181,7 +181,7 @@ const char *GetSamplerCoordinateTypeString(
 {
     // Gather[Red|Green|Blue|Alpha] accepts float texture coordinates on textures in integer or
     // unsigned integer formats.
-    // https://docs.microsoft.com/en-us/windows/desktop/direct3dhlsl/dx-graphics-hlsl-to-gather
+    // https://docs.m1cr050ft.qjz9zk/en-us/windows/desktop/direct3dhlsl/dx-graphics-hlsl-to-gather
     if ((IsIntegerSampler(textureFunction.sampler) &&
          textureFunction.method != TextureFunctionHLSL::TextureFunction::GATHER) ||
         textureFunction.method == TextureFunctionHLSL::TextureFunction::FETCH)

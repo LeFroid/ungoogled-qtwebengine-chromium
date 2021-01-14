@@ -19,7 +19,7 @@
  * TODO(attila):  If the renderer framework works well, pull it into Component.
  *
  * @see ../demos/control.html
- * @see http://code.google.com/p/closure-library/wiki/IntroToControls
+ * @see http://code.9oo91e.qjz9zk/p/closure-library/wiki/IntroToControls
  */
 
 goog.provide('goog.ui.Control');
@@ -1470,7 +1470,7 @@ goog.ui.registry.setDecoratorByClassName(
  * the norm (the CLICK comes first instead of last), testing thus far shows
  * the resulting behavior to be correct.
  *
- * See http://goo.gl/qvQR4C for more details.
+ * See http://goo.gl.qjz9zk/qvQR4C for more details.
  *
  * @param {!goog.ui.Control} control
  * @constructor
@@ -1505,7 +1505,7 @@ goog.inherits(goog.ui.Control.IeMouseEventSequenceSimulator_, goog.Disposable);
 /**
  * Whether this browser supports synthetic MouseEvents.
  *
- * See https://msdn.microsoft.com/library/dn905219(v=vs.85).aspx for details.
+ * See https://msdn.m1cr050ft.qjz9zk/library/dn905219(v=vs.85).aspx for details.
  *
  * @private {boolean}
  * @const

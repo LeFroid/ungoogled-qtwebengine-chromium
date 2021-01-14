@@ -462,51 +462,7 @@ void NativeFileSystemFileWriterImpl::CloseImpl(CloseCallback callback) {
   // swap file even if the writer was destroyed at that point.
   state_ = State::kClosePending;
 
-  if (!RequireSecurityChecks() || !manager()->permission_context()) {
-    DidPassAfterWriteCheck(std::move(callback));
-    return;
-  }
-
-  ComputeHashForSwapFile(base::BindOnce(
-      &NativeFileSystemFileWriterImpl::DoAfterWriteCheck,
-      weak_factory_.GetWeakPtr(), base::WrapRefCounted(manager()), swap_url(),
-      std::move(callback)));
-}
-
-// static
-void NativeFileSystemFileWriterImpl::DoAfterWriteCheck(
-    base::WeakPtr<NativeFileSystemFileWriterImpl> file_writer,
-    scoped_refptr<NativeFileSystemManagerImpl> manager,
-    const storage::FileSystemURL& swap_url,
-    NativeFileSystemFileWriterImpl::CloseCallback callback,
-    base::File::Error hash_result,
-    const std::string& hash,
-    int64_t size) {
-  if (!file_writer || hash_result != base::File::FILE_OK) {
-    // If writer was deleted, or calculating the hash failed try deleting the
-    // swap file and invoke the callback.
-    manager->operation_runner().PostTaskWithThisObject(
-        FROM_HERE, base::BindOnce(&RemoveSwapFile, swap_url));
-    std::move(callback).Run(native_file_system_error::FromStatus(
-        NativeFileSystemStatus::kOperationAborted,
-        "Failed to perform Safe Browsing check."));
-    return;
-  }
-
-  DCHECK_CALLED_ON_VALID_SEQUENCE(file_writer->sequence_checker_);
-
-  auto item = std::make_unique<NativeFileSystemWriteItem>();
-  item->target_file_path = file_writer->url().path();
-  item->full_path = file_writer->swap_url().path();
-  item->sha256_hash = hash;
-  item->size = size;
-  item->frame_url = file_writer->context().url;
-  item->has_user_gesture = file_writer->has_transient_user_activation_;
-  file_writer->manager()->permission_context()->PerformAfterWriteChecks(
-      std::move(item), file_writer->context().frame_id,
-      base::BindOnce(&NativeFileSystemFileWriterImpl::DidAfterWriteCheck,
-                     file_writer, std::move(manager), swap_url,
-                     std::move(callback)));
+  DidPassAfterWriteCheck(std::move(callback));
 }
 
 // static

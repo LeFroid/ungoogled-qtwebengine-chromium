@@ -27,7 +27,7 @@ TEST_F(QuicHostnameUtilsTest, IsValidSNI) {
   EXPECT_FALSE(QuicHostnameUtils::IsValidSNI(""));
 
   // Valid SNI
-  EXPECT_TRUE(QuicHostnameUtils::IsValidSNI("test.google.com"));
+  EXPECT_TRUE(QuicHostnameUtils::IsValidSNI("test.9oo91e.qjz9zk"));
 }
 
 TEST_F(QuicHostnameUtilsTest, NormalizeHostname) {
@@ -36,28 +36,28 @@ TEST_F(QuicHostnameUtilsTest, NormalizeHostname) {
     const char *input, *expected;
   } tests[] = {
       {
-          "www.google.com",
-          "www.google.com",
+          "www.9oo91e.qjz9zk",
+          "www.9oo91e.qjz9zk",
       },
       {
           "WWW.GOOGLE.COM",
-          "www.google.com",
+          "www.9oo91e.qjz9zk",
       },
       {
-          "www.google.com.",
-          "www.google.com",
+          "www.9oo91e.qjz9zk.",
+          "www.9oo91e.qjz9zk",
       },
       {
           "www.google.COM.",
-          "www.google.com",
+          "www.9oo91e.qjz9zk",
       },
       {
-          "www.google.com..",
-          "www.google.com",
+          "www.9oo91e.qjz9zk..",
+          "www.9oo91e.qjz9zk",
       },
       {
-          "www.google.com........",
-          "www.google.com",
+          "www.9oo91e.qjz9zk........",
+          "www.9oo91e.qjz9zk",
       },
       {
           "",
@@ -72,8 +72,8 @@ TEST_F(QuicHostnameUtilsTest, NormalizeHostname) {
           "",
       },
       {
-          "\xe5\x85\x89.google.com",
-          "xn--54q.google.com",
+          "\xe5\x85\x89.9oo91e.qjz9zk",
+          "xn--54q.9oo91e.qjz9zk",
       },
   };
   // clang-format on

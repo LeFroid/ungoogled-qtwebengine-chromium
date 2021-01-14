@@ -75,7 +75,7 @@ bool NamedPipeDispatcher::CreateNamedPipe(IPCInfo* ipc,
   // "For file I/O, the "\\?\" prefix to a path string tells the Windows APIs to
   // disable all string parsing and to send the string that follows it straight
   // to the file system."
-  // http://msdn.microsoft.com/en-us/library/aa365247(VS.85).aspx
+  // http://msdn.m1cr050ft.qjz9zk/en-us/library/aa365247(VS.85).aspx
   // This ensures even if there is a path traversal in the pipe name, and it is
   // able to get past the checks above, it will still not be allowed to escape
   // our allowed namespace.

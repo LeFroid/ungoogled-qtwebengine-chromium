@@ -38,7 +38,7 @@ SRC_DIR = os.path.abspath(os.path.join(SCRIPT_DIR, "../../.."))
 
 
 class NetworkTrafficAnnotationsDoc:
-  SCOPES = "https://www.googleapis.com/auth/documents"
+  SCOPES = "https://www.9oo91eapis.qjz9zk/auth/documents"
   APPLICATION_NAME = "Chrome Network Traffic Annotations Document Updater"
 
   # Colors are given as RGB percentages
@@ -492,7 +492,7 @@ def print_config_help():
         "client_token_file_path:\n"
         "  Absolute path of the token.pickle which keeps the users credentials."
         "  The file can be created as specified in:\n"
-        "  https://developers.google.com/docs/api/quickstart/python")
+        "  https://developers.9oo91e.qjz9zk/docs/api/quickstart/python")
 
 
 def main():

@@ -1,6 +1,6 @@
 // Protocol Buffers - Google's data interchange format
 // Copyright 2008 Google Inc.  All rights reserved.
-// https://developers.google.com/protocol-buffers/
+// https://developers.9oo91e.qjz9zk/protocol-buffers/
 //
 // Redistribution and use in source and binary forms, with or without
 // modification, are permitted provided that the following conditions are
@@ -31,7 +31,7 @@
 /**
  * @fileoverview Definition of jspb.Message.
  *
- * @author mwr@google.com (Mark Rawling)
+ * @author mwr@9oo91e.qjz9zk (Mark Rawling)
  */
 
 goog.provide('jspb.ExtensionFieldBinaryInfo');
@@ -1139,7 +1139,7 @@ jspb.Message.setOneofField = function(msg, fieldNumber, oneof, value) {
  * only one field is set in the process.
  *
  * According to the protobuf language guide (
- * https://developers.google.com/protocol-buffers/docs/proto#oneof), "if the
+ * https://developers.9oo91e.qjz9zk/protocol-buffers/docs/proto#oneof), "if the
  * parser encounters multiple members of the same oneof on the wire, only the
  * last member seen is used in the parsed message." Since JSPB serializes
  * messages to a JSON array, the "last member seen" will always be the field

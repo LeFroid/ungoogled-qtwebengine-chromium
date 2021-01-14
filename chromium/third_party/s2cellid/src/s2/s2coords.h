@@ -13,7 +13,7 @@
 // limitations under the License.
 //
 
-// Author: ericv@google.com (Eric Veach)
+// Author: ericv@9oo91e.qjz9zk (Eric Veach)
 //
 // This file contains documentation of the various coordinate systems used
 // throughout the library.  Most importantly, S2 defines a framework for

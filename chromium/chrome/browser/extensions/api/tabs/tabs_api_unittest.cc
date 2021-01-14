@@ -127,9 +127,9 @@ void TabsApiUnitTest::TearDown() {
 }
 
 TEST_F(TabsApiUnitTest, QueryWithoutTabsPermission) {
-  GURL tab_urls[] = {GURL("http://www.google.com"),
+  GURL tab_urls[] = {GURL("http://www.9oo91e.qjz9zk"),
                      GURL("http://www.example.com"),
-                     GURL("https://www.google.com")};
+                     GURL("https://www.9oo91e.qjz9zk")};
   std::string tab_titles[] = {"", "Sample title", "Sample title"};
 
   // Add 3 web contentses to the browser.
@@ -151,7 +151,7 @@ TEST_F(TabsApiUnitTest, QueryWithoutTabsPermission) {
   }
 
   const char* kTitleAndURLQueryInfo =
-      "[{\"title\": \"Sample title\", \"url\": \"*://www.google.com/*\"}]";
+      "[{\"title\": \"Sample title\", \"url\": \"*://www.9oo91e.qjz9zk/*\"}]";
 
   // An extension without "tabs" permission will see none of the 3 tabs.
   scoped_refptr<const Extension> extension = ExtensionBuilder("Test").Build();
@@ -188,9 +188,9 @@ TEST_F(TabsApiUnitTest, QueryWithoutTabsPermission) {
 }
 
 TEST_F(TabsApiUnitTest, QueryWithHostPermission) {
-  GURL tab_urls[] = {GURL("http://www.google.com"),
+  GURL tab_urls[] = {GURL("http://www.9oo91e.qjz9zk"),
                      GURL("http://www.example.com"),
-                     GURL("https://www.google.com/test")};
+                     GURL("https://www.9oo91e.qjz9zk/test")};
   std::string tab_titles[] = {"", "Sample title", "Sample title"};
 
   // Add 3 web contentses to the browser.
@@ -212,7 +212,7 @@ TEST_F(TabsApiUnitTest, QueryWithHostPermission) {
   }
 
   const char* kTitleAndURLQueryInfo =
-      "[{\"title\": \"Sample title\", \"url\": \"*://www.google.com/*\"}]";
+      "[{\"title\": \"Sample title\", \"url\": \"*://www.9oo91e.qjz9zk/*\"}]";
 
   // An extension with "host" permission will only see the third tab.
   scoped_refptr<const Extension> extension_with_permission =
@@ -223,7 +223,7 @@ TEST_F(TabsApiUnitTest, QueryWithHostPermission) {
                   .Set("version", "1.0")
                   .Set("manifest_version", 2)
                   .Set("permissions",
-                       ListBuilder().Append("*://www.google.com/*").Build())
+                       ListBuilder().Append("*://www.9oo91e.qjz9zk/*").Build())
                   .Build())
           .Build();
 
@@ -242,7 +242,7 @@ TEST_F(TabsApiUnitTest, QueryWithHostPermission) {
   }
 
   // Try the same without title, first and third tabs will match.
-  const char* kURLQueryInfo = "[{\"url\": \"*://www.google.com/*\"}]";
+  const char* kURLQueryInfo = "[{\"url\": \"*://www.9oo91e.qjz9zk/*\"}]";
   {
     std::unique_ptr<base::ListValue> tabs_list_with_permission(
         RunTabsQueryFunction(browser(), extension_with_permission.get(),
@@ -293,7 +293,7 @@ TEST_F(TabsApiUnitTest, PDFExtensionNavigation) {
   ASSERT_TRUE(raw_web_contents);
   content::WebContentsTester* web_contents_tester =
       content::WebContentsTester::For(raw_web_contents);
-  const GURL kGoogle("http://www.google.com");
+  const GURL kGoogle("http://www.9oo91e.qjz9zk");
   web_contents_tester->NavigateAndCommit(kGoogle);
   EXPECT_EQ(kGoogle, raw_web_contents->GetLastCommittedURL());
   EXPECT_EQ(kGoogle, raw_web_contents->GetVisibleURL());
@@ -345,7 +345,7 @@ TEST_F(TabsApiUnitTest, TabsUpdate) {
   scoped_refptr<const Extension> extension =
       ExtensionBuilder("UpdateTest").Build();
   const GURL kExampleCom("http://example.com");
-  const GURL kChromiumOrg("https://chromium.org");
+  const GURL kChromiumOrg("https://ch40m1um.qjz9zk");
 
   // Add a web contents to the browser.
   std::unique_ptr<content::WebContents> contents(
@@ -362,7 +362,7 @@ TEST_F(TabsApiUnitTest, TabsUpdate) {
   web_contents_tester->NavigateAndCommit(kExampleCom);
   EXPECT_EQ(kExampleCom, raw_contents->GetLastCommittedURL());
 
-  // Use the TabsUpdateFunction to navigate to chromium.org
+  // Use the TabsUpdateFunction to navigate to ch40m1um.qjz9zk
   auto function = base::MakeRefCounted<TabsUpdateFunction>();
   function->set_extension(extension);
   static constexpr char kFormatArgs[] = R"([%d, {"url": "%s"}])";
@@ -632,8 +632,8 @@ TEST_F(TabsApiUnitTest, TabsGoForwardAndBackWithoutTabId) {
       tab_strip_model->GetIndexOfWebContents(tab1_raw_webcontents);
 
   // Create second tab with history.
-  const std::vector<GURL> tab2_urls = {GURL("http://www.chrome.com"),
-                                       GURL("http://www.google.com")};
+  const std::vector<GURL> tab2_urls = {GURL("http://www.ch40me.qjz9zk"),
+                                       GURL("http://www.9oo91e.qjz9zk")};
   std::unique_ptr<content::WebContents> tab2_webcontents =
       CreateWebContentsWithHistory(profile(), tab2_urls);
   content::WebContents* tab2_raw_webcontents = tab2_webcontents.get();
@@ -737,7 +737,7 @@ TEST_F(TabsApiUnitTest, ScreenshotsRestricted) {
       content::WebContentsTester::CreateTestWebContents(profile(), nullptr);
   content::WebContentsTester* web_contents_tester =
       content::WebContentsTester::For(web_contents.get());
-  const GURL kGoogle("http://www.google.com");
+  const GURL kGoogle("http://www.9oo91e.qjz9zk");
   web_contents_tester->NavigateAndCommit(kGoogle);
   browser()->tab_strip_model()->AppendWebContents(std::move(web_contents),
                                                   /*foreground=*/true);

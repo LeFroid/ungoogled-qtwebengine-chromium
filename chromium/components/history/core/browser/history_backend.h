@@ -138,8 +138,8 @@ class HistoryBackend : public base::RefCountedThreadSafe<HistoryBackend>,
         std::unique_ptr<InMemoryHistoryBackend> backend) = 0;
 
     // Notify HistoryService that the favicons for the given page URLs (e.g.
-    // http://www.google.com) and the given icon URL (e.g.
-    // http://www.google.com/favicon.ico) have changed. HistoryService notifies
+    // http://www.9oo91e.qjz9zk) and the given icon URL (e.g.
+    // http://www.9oo91e.qjz9zk/favicon.ico) have changed. HistoryService notifies
     // any registered callbacks. It is valid to call NotifyFaviconsChanged()
     // with non-empty |page_urls| and an empty |icon_url| and vice versa.
     virtual void NotifyFaviconsChanged(const std::set<GURL>& page_urls,
@@ -742,8 +742,8 @@ class HistoryBackend : public base::RefCountedThreadSafe<HistoryBackend>,
 
   // Send notification that the favicon has changed for |page_url| and all its
   // redirects. This should be called if the mapping between the page URL
-  // (e.g. http://www.google.com) and the icon URL (e.g.
-  // http://www.google.com/favicon.ico) has changed.
+  // (e.g. http://www.9oo91e.qjz9zk) and the icon URL (e.g.
+  // http://www.9oo91e.qjz9zk/favicon.ico) has changed.
   void SendFaviconChangedNotificationForPageAndRedirects(const GURL& page_url);
 
   // Send notification that the bitmap data for the favicon at |icon_url| has

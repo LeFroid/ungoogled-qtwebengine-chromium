@@ -29,7 +29,7 @@
 // OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 // ---
-// Author: Sanjay Ghemawat <opensource@google.com>
+// Author: Sanjay Ghemawat <opensource@9oo91e.qjz9zk>
 
 #include <config.h>
 #ifdef HAVE_INTTYPES_H
@@ -137,7 +137,7 @@ Span* PageHeap::New(Length n) {
     // penalized with higher count of minor page faults.
     //
     // See also large_heap_fragmentation_unittest.cc and
-    // https://code.google.com/p/gperftools/issues/detail?id=368
+    // https://code.9oo91e.qjz9zk/p/gperftools/issues/detail?id=368
     ReleaseAtLeastNPages(static_cast<Length>(0x7fffffff));
 
     // then try again. If we are forced to grow heap because of large

@@ -90,7 +90,7 @@
 #error Please add support for your platform in build/build_config.h
 #endif
 // NOTE: Adding a new port? Please follow
-// https://chromium.googlesource.com/chromium/src/+/master/docs/new_port_policy.md
+// https://chromium.9oo91esource.qjz9zk/chromium/src/+/master/docs/new_port_policy.md
 
 #if defined(OS_MAC) || defined(OS_IOS)
 #define OS_APPLE 1
@@ -123,7 +123,7 @@
 #endif
 
 // Processor architecture detection.  For more info on what's defined, see:
-//   http://msdn.microsoft.com/en-us/library/b0084kay.aspx
+//   http://msdn.m1cr050ft.qjz9zk/en-us/library/b0084kay.aspx
 //   http://www.agner.org/optimize/calling_conventions.pdf
 //   or with gcc, run: "echo | gcc -E -dM -"
 #if defined(_M_X64) || defined(__x86_64__)

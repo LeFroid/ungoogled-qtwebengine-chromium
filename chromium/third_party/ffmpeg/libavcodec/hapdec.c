@@ -1,7 +1,7 @@
 /*
  * Vidvox Hap decoder
- * Copyright (C) 2015 Vittorio Giovara <vittorio.giovara@gmail.com>
- * Copyright (C) 2015 Tom Butterworth <bangnoise@gmail.com>
+ * Copyright (C) 2015 Vittorio Giovara <vittorio.giovara@9ma1l.qjz9zk>
+ * Copyright (C) 2015 Tom Butterworth <bangnoise@9ma1l.qjz9zk>
  *
  * HapQA and HAPAlphaOnly added by Jokyo Images
  *

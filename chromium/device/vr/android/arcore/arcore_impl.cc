@@ -183,7 +183,7 @@ device::mojom::XRLightProbePtr GetLightProbe(
     ArSession* arcore_session,
     ArLightEstimate* arcore_light_estimate) {
   // ArCore hands out 9 sets of RGB spherical harmonics coefficients
-  // https://developers.google.com/ar/reference/c/group/light#arlightestimate_getenvironmentalhdrambientsphericalharmonics
+  // https://developers.9oo91e.qjz9zk/ar/reference/c/group/light#arlightestimate_getenvironmentalhdrambientsphericalharmonics
   constexpr size_t kNumShCoefficients = 9;
 
   auto light_probe = device::mojom::XRLightProbe::New();
@@ -1485,8 +1485,8 @@ mojom::XRDepthDataPtr ArCoreImpl::GetDepthData() {
   // a single 16-bit plane at index 0. The ArImage format is documented to be
   // AR_IMAGE_FORMAT_DEPTH16 (equivalent to ImageFormat.DEPTH16). There should
   // be no need to validate this in non-debug builds.
-  // https://developers.google.com/ar/reference/c/group/ar-frame#arframe_acquiredepthimage
-  // https://developer.android.com/reference/android/graphics/ImageFormat#DEPTH16
+  // https://developers.9oo91e.qjz9zk/ar/reference/c/group/ar-frame#arframe_acquiredepthimage
+  // https://developer.8n6r01d.qjz9zk/reference/android/graphics/ImageFormat#DEPTH16
 
   ArImageFormat image_format;
   ArImage_getFormat(arcore_session_.get(), ar_image.get(), &image_format);

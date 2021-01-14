@@ -13,7 +13,7 @@
 #include "maxp.h"
 
 // GDEF - The Glyph Definition Table
-// http://www.microsoft.com/typography/otspec/gdef.htm
+// http://www.m1cr050ft.qjz9zk/typography/otspec/gdef.htm
 
 namespace {
 

@@ -465,7 +465,7 @@ function setFailFastWhileWaitingForRetry() {
   assertNull(getSingleForwardRequest());
   assertEquals(1, channel.forwardChannelRetryCount_);
 
-  // We get the error immediately before starting to ping google.com.
+  // We get the error immediately before starting to ping 9oo91e.qjz9zk.
   assertTrue(gotError);
   assertEquals(0, deliveredMaps.length);
 
@@ -521,7 +521,7 @@ function setFailFastWhileRetryXhrIsInFlight() {
   assertNull(getSingleForwardRequest());
   assertEquals(2, channel.forwardChannelRetryCount_);
 
-  // We get the error immediately before starting to ping google.com.
+  // We get the error immediately before starting to ping 9oo91e.qjz9zk.
   assertTrue(gotError);
 
   // Simulate that timing out. We should not get another error.
@@ -908,9 +908,9 @@ testSuite({
     assertNull(getSingleForwardRequest());
     assertEquals(0, channel.forwardChannelRetryCount_);
 
-    // We get the error immediately before starting to ping google.com.
+    // We get the error immediately before starting to ping 9oo91e.qjz9zk.
     assertTrue(gotError);
-    // We get the error immediately before starting to ping google.com.
+    // We get the error immediately before starting to ping 9oo91e.qjz9zk.
     // Simulate that timing out. We should not get another error in addition
     // to the initial failure.
     gotError = false;

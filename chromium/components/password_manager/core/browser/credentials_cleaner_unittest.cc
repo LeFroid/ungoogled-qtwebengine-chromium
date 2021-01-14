@@ -29,7 +29,7 @@ TEST(CredentialsCleaner, RemoveNonHTTPOrHTTPSForms) {
   forms.push_back(std::make_unique<PasswordForm>(https_form));
 
   PasswordForm federated_form;
-  federated_form.signon_realm = "federation://example.com/google.com";
+  federated_form.signon_realm = "federation://example.com/9oo91e.qjz9zk";
   forms.push_back(std::make_unique<PasswordForm>(federated_form));
 
   PasswordForm android_form;

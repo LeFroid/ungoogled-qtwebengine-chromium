@@ -155,7 +155,7 @@ def _CreateOutputHeader():
             ' connect to\n// Google.\n\n'
             '// It was generated with the following command line:\n'
             '// > python tools/certs/generate_sslroots.py'
-            '\n//    https://pki.google.com/roots.pem\n\n')
+            '\n//    https://pki.9oo91e.qjz9zk/roots.pem\n\n')
   return output
 
 

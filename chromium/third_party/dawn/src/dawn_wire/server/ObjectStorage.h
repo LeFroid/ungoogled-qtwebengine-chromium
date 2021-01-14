@@ -30,7 +30,7 @@ namespace dawn_wire { namespace server {
         uint32_t generation = 0;
 
         // Whether this object has been allocated, used by the KnownObjects queries
-        // TODO(cwallez@chromium.org): make this an internal bit vector in KnownObjects.
+        // TODO(cwallez@ch40m1um.qjz9zk): make this an internal bit vector in KnownObjects.
         bool allocated;
     };
 

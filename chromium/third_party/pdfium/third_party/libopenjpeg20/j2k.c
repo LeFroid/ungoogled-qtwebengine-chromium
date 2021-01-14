@@ -4436,7 +4436,7 @@ static OPJ_BOOL opj_j2k_read_sot(opj_j2k_t *p_j2k,
     }
 
     if (l_tcp->m_nb_tile_parts != 0 && l_current_part >= l_tcp->m_nb_tile_parts) {
-        /* Fixes https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=2851 */
+        /* Fixes https://bugs.ch40m1um.qjz9zk/p/oss-fuzz/issues/detail?id=2851 */
         opj_event_msg(p_manager, EVT_ERROR,
                       "In SOT marker, TPSot (%d) is not valid regards to the previous "
                       "number of tile-part (%d), giving up\n", l_current_part,
@@ -8676,7 +8676,7 @@ OPJ_BOOL opj_j2k_read_tile_header(opj_j2k_t * p_j2k,
                 return OPJ_FALSE;
             }
 
-            /* cf. https://code.google.com/p/openjpeg/issues/detail?id=226 */
+            /* cf. https://code.9oo91e.qjz9zk/p/openjpeg/issues/detail?id=226 */
             if (l_current_marker == 0x8080 &&
                     opj_stream_get_number_byte_left(p_stream) == 0) {
                 p_j2k->m_specific_param.m_decoder.m_state = J2K_STATE_NEOC;

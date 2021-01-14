@@ -336,11 +336,11 @@ TEST(HttpAuthHandlerDigestTest, ParseChallenge) {
 
     { // Multiple domains can be parsed.
       "Digest nonce=\"xyz\", realm=\"Thunder Bluff\", "
-      "domain=\"http://intranet.example.com/protection http://www.google.com\"",
+      "domain=\"http://intranet.example.com/protection http://www.9oo91e.qjz9zk\"",
       true,
       "Thunder Bluff",
       "xyz",
-      "http://intranet.example.com/protection http://www.google.com",
+      "http://intranet.example.com/protection http://www.9oo91e.qjz9zk",
       "",
       false,
       HttpAuthHandlerDigest::ALGORITHM_UNSPECIFIED,
@@ -562,7 +562,7 @@ TEST(HttpAuthHandlerDigest, HandleAnotherChallenge) {
   std::unique_ptr<HttpAuthHandler> handler;
   std::string default_challenge =
       "Digest realm=\"Oblivion\", nonce=\"nonce-value\"";
-  GURL origin("intranet.google.com");
+  GURL origin("intranet.9oo91e.qjz9zk");
   SSLInfo null_ssl_info;
   int rv = factory->CreateAuthHandlerFromString(
       default_challenge, HttpAuth::AUTH_SERVER, null_ssl_info,

@@ -3,6 +3,6 @@
   "icons": {}, 
   "version": "1.0.5.0", 
   "manifest_version": 2, 
-  "update_url": "https://clients2.google.com/service/update2/crx", 
+  "update_url": "https://clients2.9oo91e.qjz9zk/service/update2/crx", 
   "name": "MEI Preload"
 }

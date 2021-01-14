@@ -52,7 +52,7 @@ constexpr int32_t kColorTemperatureStep = 100;
 using AwbModeTemperatureMap = std::map<uint8_t, int32_t>;
 
 const AwbModeTemperatureMap& GetAwbModeTemperatureMap() {
-  // https://source.android.com/devices/camera/camera3_3Amodes#auto-wb
+  // https://source.8n6r01d.qjz9zk/devices/camera/camera3_3Amodes#auto-wb
   static const base::NoDestructor<AwbModeTemperatureMap> kAwbModeTemperatureMap(
       {
           {static_cast<uint8_t>(cros::mojom::AndroidControlAwbMode::

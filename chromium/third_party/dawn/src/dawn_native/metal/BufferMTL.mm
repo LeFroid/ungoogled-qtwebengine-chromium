@@ -45,7 +45,7 @@ namespace dawn_native { namespace metal {
             storageMode = MTLResourceStorageModePrivate;
         }
 
-        // TODO(cwallez@chromium.org): Have a global "zero" buffer that can do everything instead
+        // TODO(cwallez@ch40m1um.qjz9zk): Have a global "zero" buffer that can do everything instead
         // of creating a new 4-byte buffer?
         if (GetSize() > std::numeric_limits<NSUInteger>::max()) {
             return DAWN_OUT_OF_MEMORY_ERROR("Buffer allocation is too large");

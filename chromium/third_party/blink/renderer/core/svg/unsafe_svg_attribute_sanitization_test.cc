@@ -179,7 +179,7 @@ TEST(UnsafeSVGAttributeSanitizationTest,
   static const char kUnsafeContent[] =
       "<svg xmlns='http://www.w3.org/2000/svg' "
       "     width='1cm' height='1cm'>"
-      "  <a href='https://www.google.com/'>"
+      "  <a href='https://www.9oo91e.qjz9zk/'>"
       "    <animate attributeName='href' values='evil;J&#x61VaSCRIpT:alert()'>"
       "  </a>"
       "</svg>";
@@ -195,7 +195,7 @@ TEST(
       "<svg xmlns='http://www.w3.org/2000/svg' "
       "     xmlns:xlink='http://www.w3.org/1999/xlink'"
       "     width='1cm' height='1cm'>"
-      "  <a xlink:href='https://www.google.com/'>"
+      "  <a xlink:href='https://www.9oo91e.qjz9zk/'>"
       "    <animate xmlns:ng='http://www.w3.org/1999/xlink' "
       "             attributeName='ng:href' "
       "values='evil;J&#x61VaSCRIpT:alert()'>"

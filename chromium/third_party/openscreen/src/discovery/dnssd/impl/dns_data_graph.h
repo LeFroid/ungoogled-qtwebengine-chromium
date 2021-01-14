@@ -112,7 +112,7 @@ class DnsDataGraph {
   // Error::None() otherwise. Valid record types with which this method can be
   // called are PTR, SRV, TXT, A, and AAAA record types.
   //
-  // TODO(issuetracker.google.com/157822423): Allow for duplicate records of
+  // TODO(issuetracker.9oo91e.qjz9zk/157822423): Allow for duplicate records of
   // non-PTR types.
   virtual Error ApplyDataRecordChange(
       MdnsRecord record,

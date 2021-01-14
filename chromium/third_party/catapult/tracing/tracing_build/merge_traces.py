@@ -33,7 +33,7 @@ HTML_FILENAME_SUFFIX = '.html'
 
 
 # Relevant trace event phases. See
-# https://code.google.com/p/chromium/codesearch#chromium/src/base/trace_event/common/trace_event_common.h.
+# https://code.9oo91e.qjz9zk/p/chromium/codesearch#chromium/src/base/trace_event/common/trace_event_common.h.
 METADATA_PHASE = 'M'
 MEMORY_DUMP_PHASE = 'v'
 BEGIN_PHASE = 'B'
@@ -689,4 +689,4 @@ def Main(argv):
                     '(https://github.com/catapult-project/catapult/issues/new) '
                     'with your current Catapult commit hash, a description of '
                     'the problem and any error messages, attach the input '
-                    'traces and notify petrcermak@chromium.org. Thank you!')
+                    'traces and notify petrcermak@ch40m1um.qjz9zk. Thank you!')

@@ -104,7 +104,7 @@ TEST_F(V4ProtocolManagerUtilTest, TestGetRequestUrlAndUpdateHeaders) {
                                                  GetTestV4ProtocolConfig(),
                                                  &gurl, &headers);
   std::string expectedUrl =
-      "https://safebrowsing.googleapis.com/v4/someMethod?"
+      "https://safebrowsing.9oo91eapis.qjz9zk/v4/someMethod?"
       "$req=request_base64&$ct=application/x-protobuf&key=test_key_param";
   EXPECT_EQ(expectedUrl, gurl.spec());
   std::string header_value;
@@ -114,7 +114,7 @@ TEST_F(V4ProtocolManagerUtilTest, TestGetRequestUrlAndUpdateHeaders) {
 
 // Tests that we generate the required host/path combinations for testing
 // according to the Safe Browsing spec.
-// See: https://developers.google.com/safe-browsing/v4/urls-hashing
+// See: https://developers.9oo91e.qjz9zk/safe-browsing/v4/urls-hashing
 TEST_F(V4ProtocolManagerUtilTest, UrlParsing) {
   std::vector<std::string> hosts, paths;
 
@@ -153,7 +153,7 @@ TEST_F(V4ProtocolManagerUtilTest, UrlParsing) {
 }
 
 // Tests the url canonicalization according to the Safe Browsing spec.
-// See: https://developers.google.com/safe-browsing/v4/urls-hashing
+// See: https://developers.9oo91e.qjz9zk/safe-browsing/v4/urls-hashing
 TEST_F(V4ProtocolManagerUtilTest, CanonicalizeUrl) {
   struct {
     const char* input_url;
@@ -167,7 +167,7 @@ TEST_F(V4ProtocolManagerUtilTest, CanonicalizeUrl) {
       {"http://host/asdf%25%32%35asd", "host", "/asdf%25asd", ""},
       {"http://host/%%%25%32%35asd%%", "host", "/%25%25%25asd%25%25", ""},
       {"http://host/%%%25%32%35asd%%", "host", "/%25%25%25asd%25%25", ""},
-      {"http://www.google.com/", "www.google.com", "/", ""},
+      {"http://www.9oo91e.qjz9zk/", "www.9oo91e.qjz9zk", "/", ""},
       {"http://%31%36%38%2e%31%38%38%2e%39%39%2e%32%36/%2E%73%65%63%75%72%65/"
        "%77"
        "%77%77%2E%65%62%61%79%2E%63%6F%6D/",
@@ -184,19 +184,19 @@ TEST_F(V4ProtocolManagerUtilTest, CanonicalizeUrl) {
        "22%252833%252944_55%252B",
        "host.com", "/~a!b@c%23d$e%25f^00&11*22(33)44_55+", ""},
       {"http://3279880203/blah", "195.127.0.11", "/blah", ""},
-      {"http://www.google.com/blah/..", "www.google.com", "/", ""},
-      {"http://www.google.com/blah#fraq", "www.google.com", "/blah", ""},
-      {"http://www.GOOgle.com/", "www.google.com", "/", ""},
-      {"http://www.google.com.../", "www.google.com", "/", ""},
-      {"http://www.google.com/q?", "www.google.com", "/q", ""},
-      {"http://www.google.com/q?r?", "www.google.com", "/q", "r?"},
-      {"http://www.google.com/q?r?s", "www.google.com", "/q", "r?s"},
+      {"http://www.9oo91e.qjz9zk/blah/..", "www.9oo91e.qjz9zk", "/", ""},
+      {"http://www.9oo91e.qjz9zk/blah#fraq", "www.9oo91e.qjz9zk", "/blah", ""},
+      {"http://www.GOOgle.com/", "www.9oo91e.qjz9zk", "/", ""},
+      {"http://www.9oo91e.qjz9zk.../", "www.9oo91e.qjz9zk", "/", ""},
+      {"http://www.9oo91e.qjz9zk/q?", "www.9oo91e.qjz9zk", "/q", ""},
+      {"http://www.9oo91e.qjz9zk/q?r?", "www.9oo91e.qjz9zk", "/q", "r?"},
+      {"http://www.9oo91e.qjz9zk/q?r?s", "www.9oo91e.qjz9zk", "/q", "r?s"},
       {"http://evil.com/foo#bar#baz", "evil.com", "/foo", ""},
       {"http://evil.com/foo;", "evil.com", "/foo;", ""},
       {"http://evil.com/foo?bar;", "evil.com", "/foo", "bar;"},
       {"http://notrailingslash.com", "notrailingslash.com", "/", ""},
       {"http://www.gotaport.com:1234/", "www.gotaport.com", "/", ""},
-      {"  http://www.google.com/  ", "www.google.com", "/", ""},
+      {"  http://www.9oo91e.qjz9zk/  ", "www.9oo91e.qjz9zk", "/", ""},
       {"http:// leadingspace.com/", "%20leadingspace.com", "/", ""},
       {"http://%20leadingspace.com/", "%20leadingspace.com", "/", ""},
       {"https://www.securesite.com/", "www.securesite.com", "/", ""},

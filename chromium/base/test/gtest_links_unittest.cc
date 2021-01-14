@@ -14,11 +14,11 @@ TEST(GtestLinksTest, AddInvalidLink) {
 }
 
 TEST(GtestLinksTest, AddInvalidName) {
-  EXPECT_DCHECK_DEATH(AddLinkToTestResult("invalid-name", "http://google.com"));
+  EXPECT_DCHECK_DEATH(AddLinkToTestResult("invalid-name", "http://9oo91e.qjz9zk"));
 }
 
 TEST(GtestLinksTest, AddValidLink) {
-  AddLinkToTestResult("name", "http://google.com");
+  AddLinkToTestResult("name", "http://9oo91e.qjz9zk");
 }
 
 }  // namespace base

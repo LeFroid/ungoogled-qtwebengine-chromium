@@ -245,25 +245,25 @@ testSuite({
   testSafeHtmlCreate_urlAttributes() {
     // TrustedResourceUrl is allowed.
     const trustedResourceUrl = TrustedResourceUrl.fromConstant(
-        Const.from('https://google.com/trusted'));
+        Const.from('https://9oo91e.qjz9zk/trusted'));
     assertSameHtml(
-        '<img src="https://google.com/trusted">',
+        '<img src="https://9oo91e.qjz9zk/trusted">',
         SafeHtml.create('img', {'src': trustedResourceUrl}));
     // SafeUrl is allowed.
-    const safeUrl = SafeUrl.sanitize('https://google.com/safe');
+    const safeUrl = SafeUrl.sanitize('https://9oo91e.qjz9zk/safe');
     assertSameHtml(
-        '<imG src="https://google.com/safe">',
+        '<imG src="https://9oo91e.qjz9zk/safe">',
         SafeHtml.create('imG', {'src': safeUrl}));
     // Const is allowed.
-    const constUrl = Const.from('https://google.com/const');
+    const constUrl = Const.from('https://9oo91e.qjz9zk/const');
     assertSameHtml(
-        '<a href="https://google.com/const"></a>',
+        '<a href="https://9oo91e.qjz9zk/const"></a>',
         SafeHtml.create('a', {'href': constUrl}));
 
     // string is allowed but escaped.
     assertSameHtml(
-        '<a href="http://google.com/safe&quot;"></a>',
-        SafeHtml.create('a', {'href': 'http://google.com/safe"'}));
+        '<a href="http://9oo91e.qjz9zk/safe&quot;"></a>',
+        SafeHtml.create('a', {'href': 'http://9oo91e.qjz9zk/safe"'}));
 
     // string is allowed but sanitized.
     const badUrl = 'javascript:evil();';
@@ -286,9 +286,9 @@ testSuite({
   testSafeHtmlCreateIframe() {
     // Setting src and srcdoc.
     const url = TrustedResourceUrl.fromConstant(
-        Const.from('https://google.com/trusted<'));
+        Const.from('https://9oo91e.qjz9zk/trusted<'));
     assertSameHtml(
-        '<iframe src="https://google.com/trusted&lt;"></iframe>',
+        '<iframe src="https://9oo91e.qjz9zk/trusted&lt;"></iframe>',
         SafeHtml.createIframe(url, null, {'sandbox': null}));
     const srcdoc = SafeHtml.BR;
     assertSameHtml(
@@ -336,9 +336,9 @@ testSuite({
     }
 
     // Setting src and srcdoc.
-    const url = SafeUrl.fromConstant(Const.from('https://google.com/trusted<'));
+    const url = SafeUrl.fromConstant(Const.from('https://9oo91e.qjz9zk/trusted<'));
     assertSameHtmlIfSupportsSandbox(
-        '<iframe src="https://google.com/trusted&lt;" sandbox=""></iframe>',
+        '<iframe src="https://9oo91e.qjz9zk/trusted&lt;" sandbox=""></iframe>',
         () => SafeHtml.createSandboxIframe(url, null));
 
     // If set with a string, src is sanitized.
@@ -433,14 +433,14 @@ testSuite({
   /** @suppress {checkTypes} */
   testSafeHtmlCreateScriptSrc() {
     const url = TrustedResourceUrl.fromConstant(
-        Const.from('https://google.com/trusted<'));
+        Const.from('https://9oo91e.qjz9zk/trusted<'));
 
     assertSameHtml(
-        '<script src="https://google.com/trusted&lt;"></script>',
+        '<script src="https://9oo91e.qjz9zk/trusted&lt;"></script>',
         SafeHtml.createScriptSrc(url));
 
     assertSameHtml(
-        '<script src="https://google.com/trusted&lt;" defer="defer"></script>',
+        '<script src="https://9oo91e.qjz9zk/trusted&lt;" defer="defer"></script>',
         SafeHtml.createScriptSrc(url, {'defer': 'defer'}));
 
     // Unsafe src.
@@ -460,37 +460,37 @@ testSuite({
   },
 
   testSafeHtmlCreateMeta() {
-    const url = SafeUrl.fromConstant(Const.from('https://google.com/trusted<'));
+    const url = SafeUrl.fromConstant(Const.from('https://9oo91e.qjz9zk/trusted<'));
 
     // SafeUrl with no timeout gets properly escaped.
     assertSameHtml(
         '<meta http-equiv="refresh" ' +
-            'content="0; url=https://google.com/trusted&lt;">',
+            'content="0; url=https://9oo91e.qjz9zk/trusted&lt;">',
         SafeHtml.createMetaRefresh(url));
 
     // SafeUrl with 0 timeout also gets properly escaped.
     assertSameHtml(
         '<meta http-equiv="refresh" ' +
-            'content="0; url=https://google.com/trusted&lt;">',
+            'content="0; url=https://9oo91e.qjz9zk/trusted&lt;">',
         SafeHtml.createMetaRefresh(url, 0));
 
     // Positive timeouts are supported.
     assertSameHtml(
         '<meta http-equiv="refresh" ' +
-            'content="1337; url=https://google.com/trusted&lt;">',
+            'content="1337; url=https://9oo91e.qjz9zk/trusted&lt;">',
         SafeHtml.createMetaRefresh(url, 1337));
 
     // Negative timeouts are also kept, though they're not correct HTML.
     assertSameHtml(
         '<meta http-equiv="refresh" ' +
-            'content="-1337; url=https://google.com/trusted&lt;">',
+            'content="-1337; url=https://9oo91e.qjz9zk/trusted&lt;">',
         SafeHtml.createMetaRefresh(url, -1337));
 
     // String-based URLs work out of the box.
     assertSameHtml(
         '<meta http-equiv="refresh" ' +
-            'content="0; url=https://google.com/trusted&lt;">',
-        SafeHtml.createMetaRefresh('https://google.com/trusted<'));
+            'content="0; url=https://9oo91e.qjz9zk/trusted&lt;">',
+        SafeHtml.createMetaRefresh('https://9oo91e.qjz9zk/trusted<'));
 
     // Sanitization happens.
     assertSameHtml(

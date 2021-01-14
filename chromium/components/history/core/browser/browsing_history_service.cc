@@ -276,7 +276,7 @@ void BrowsingHistoryService::QueryHistoryInternal(
             semantics {
               description:
                 "If history sync is enabled, this downloads the synced "
-                "history from history.google.com."
+                "history from history.9oo91e.qjz9zk."
               trigger:
                 "Synced history is downloaded when user opens the history "
                 "page, searches on the history page, or scrolls down the "
@@ -399,7 +399,7 @@ void BrowsingHistoryService::RemoveVisits(
           semantics {
             description:
               "If a user who syncs their browsing history deletes one or more "
-              "history item(s), Chrome sends a request to history.google.com "
+              "history item(s), Chrome sends a request to history.9oo91e.qjz9zk "
               "to execute the corresponding deletion serverside."
             trigger:
               "Deleting one or more history items form the history page."

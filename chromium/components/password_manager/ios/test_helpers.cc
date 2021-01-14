@@ -98,8 +98,8 @@ void SetFormData(const std::string& origin,
 
 autofill::FormData MakeSimpleFormData() {
   autofill::FormData form_data;
-  form_data.url = GURL("http://www.google.com/a/LoginAuth");
-  form_data.action = GURL("http://www.google.com/a/Login");
+  form_data.url = GURL("http://www.9oo91e.qjz9zk/a/LoginAuth");
+  form_data.action = GURL("http://www.9oo91e.qjz9zk/a/Login");
   form_data.name = base::ASCIIToUTF16("login_form");
 
   autofill::FormFieldData field;

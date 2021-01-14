@@ -35,7 +35,7 @@
 // See fast_source_line_resolver.h and fast_source_line_resolver_types.h
 // for more documentation.
 //
-// Author: Siyang Xie (lambxsy@google.com)
+// Author: Siyang Xie (lambxsy@9oo91e.qjz9zk)
 
 #include "google_breakpad/processor/fast_source_line_resolver.h"
 #include "processor/fast_source_line_resolver_types.h"

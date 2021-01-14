@@ -25,8 +25,8 @@ TEST(OfflineURLUtilsTest, OfflineRootDirectoryPathTest) {
 
 // Checks the offline page directory is the MD5 of the URL
 TEST(OfflineURLUtilsTest, OfflineURLDirectoryIDTest) {
-  GURL url("http://www.google.com/test");
-  // MD5 of "http://www.google.com/test"
+  GURL url("http://www.9oo91e.qjz9zk/test");
+  // MD5 of "http://www.9oo91e.qjz9zk/test"
   std::string md5 = "0090071ef710946a1263c276284bb3b8";
   std::string directory_id = reading_list::OfflineURLDirectoryID(url);
   EXPECT_EQ(md5, directory_id);
@@ -37,7 +37,7 @@ TEST(OfflineURLUtilsTest, OfflineURLDirectoryIDTest) {
 TEST(OfflineURLUtilsTest, OfflineURLDirectoryAbsolutePathTest) {
   base::FilePath::StringType separator(&base::FilePath::kSeparators[0], 1);
   base::FilePath profile_path(FILE_PATH_LITERAL("profile_path"));
-  GURL url("http://www.google.com/test");
+  GURL url("http://www.9oo91e.qjz9zk/test");
   base::FilePath offline_directory =
       reading_list::OfflineURLDirectoryAbsolutePath(profile_path, url);
   // Expected value: profile_path/Offline/0090071ef710946a1263c276284bb3b8
@@ -69,7 +69,7 @@ TEST(OfflineURLUtilsTest, AbsolutePathForRelativePathTest) {
 // Checks the offline page path is OfflineURLDirectoryID/page.html;
 TEST(OfflineURLUtilsTest, OfflinePagePathTest) {
   base::FilePath::StringType separator(&base::FilePath::kSeparators[0], 1);
-  GURL url("http://www.google.com/test");
+  GURL url("http://www.9oo91e.qjz9zk/test");
   base::FilePath offline_page =
       reading_list::OfflinePagePath(url, reading_list::OFFLINE_TYPE_HTML);
   // Expected value: 0090071ef710946a1263c276284bb3b8/page.html

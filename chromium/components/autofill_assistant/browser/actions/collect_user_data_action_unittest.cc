@@ -1583,7 +1583,7 @@ TEST_F(CollectUserDataActionTest, AttachesProfiles) {
 
   autofill::AutofillProfile profile;
   autofill::test::SetProfileInfo(&profile, "Adam", "", "West",
-                                 "adam.west@gmail.com", "", "", "", "", "", "",
+                                 "adam.west@9ma1l.qjz9zk", "", "", "", "", "", "",
                                  "", "");
 
   ON_CALL(mock_personal_data_manager_, GetProfiles)
@@ -1623,7 +1623,7 @@ TEST_F(CollectUserDataActionTest, InitialSelectsProfileAndShippingAddress) {
 
   autofill::AutofillProfile profile;
   autofill::test::SetProfileInfo(&profile, "Adam", "", "West",
-                                 "adam.west@gmail.com", "", "Main St. 18", "",
+                                 "adam.west@9ma1l.qjz9zk", "", "Main St. 18", "",
                                  "abc", "New York", "NY", "10001", "us", "");
 
   ON_CALL(mock_personal_data_manager_, GetProfiles)
@@ -1741,12 +1741,12 @@ TEST_F(CollectUserDataActionTest, InitialSelectsProfileFromDefaultEmail) {
 
   autofill::AutofillProfile profile_a;
   autofill::test::SetProfileInfo(&profile_a, "Adam", "", "West",
-                                 "adam.west@gmail.com", "", "", "", "", "", "",
+                                 "adam.west@9ma1l.qjz9zk", "", "", "", "", "", "",
                                  "", "");
 
   autofill::AutofillProfile profile_b;
   autofill::test::SetProfileInfo(&profile_b, "Berta", "", "West",
-                                 "berta.west@gmail.com", "", "", "", "", "", "",
+                                 "berta.west@9ma1l.qjz9zk", "", "", "", "", "", "",
                                  "", "");
 
   ON_CALL(mock_personal_data_manager_, GetProfiles)
@@ -1773,7 +1773,7 @@ TEST_F(CollectUserDataActionTest, InitialSelectsProfileFromDefaultEmail) {
   contact_details->set_contact_details_name("profile");
 
   ON_CALL(mock_action_delegate_, GetEmailAddressForAccessTokenAccount())
-      .WillByDefault(Return("berta.west@gmail.com"));
+      .WillByDefault(Return("berta.west@9ma1l.qjz9zk"));
 
   EXPECT_CALL(
       callback_,
@@ -1788,7 +1788,7 @@ TEST_F(CollectUserDataActionTest, KeepsSelectedProfileAndShippingAddress) {
 
   autofill::AutofillProfile profile;
   autofill::test::SetProfileInfo(&profile, "Adam", "", "West",
-                                 "adam.west@gmail.com", "", "Main St. 18", "",
+                                 "adam.west@9ma1l.qjz9zk", "", "Main St. 18", "",
                                  "abc", "New York", "NY", "10001", "us", "");
 
   ON_CALL(mock_personal_data_manager_, GetProfiles)
@@ -1836,7 +1836,7 @@ TEST_F(CollectUserDataActionTest, ResetsContactAndShippingIfNoLongerInList) {
 
   autofill::AutofillProfile profile;
   autofill::test::SetProfileInfo(&profile, "Adam", "", "West",
-                                 "adam.west@gmail.com", "", "", "", "", "", "",
+                                 "adam.west@9ma1l.qjz9zk", "", "", "", "", "", "",
                                  "", "");
 
   ON_CALL(mock_personal_data_manager_, GetProfiles)
@@ -1866,7 +1866,7 @@ TEST_F(CollectUserDataActionTest, ResetsContactAndShippingIfNoLongerInList) {
   // Set previous user data.
   autofill::AutofillProfile selected_profile;
   autofill::test::SetProfileInfo(&selected_profile, "Berta", "", "West",
-                                 "berta.west@gmail.com", "", "", "", "", "", "",
+                                 "berta.west@9ma1l.qjz9zk", "", "", "", "", "", "",
                                  "", "");
 
   user_data_.selected_addresses_["profile"] =
@@ -1886,7 +1886,7 @@ TEST_F(CollectUserDataActionTest, AttachesCreditCardsWithAddress) {
 
   autofill::AutofillProfile billing_address;
   autofill::test::SetProfileInfo(&billing_address, "Adam", "", "West",
-                                 "adam.west@gmail.com", "", "Baker Street 221b",
+                                 "adam.west@9ma1l.qjz9zk", "", "Baker Street 221b",
                                  "", "London", "", "WC2N 5DU", "UK", "+44");
 
   ON_CALL(mock_personal_data_manager_, GetProfileByGUID("GUID"))
@@ -2019,7 +2019,7 @@ TEST_F(CollectUserDataActionTest, InitialSelectsCardAndAddress) {
 
   autofill::AutofillProfile billing_address;
   autofill::test::SetProfileInfo(&billing_address, "Adam", "", "West",
-                                 "adam.west@gmail.com", "", "Baker Street 221b",
+                                 "adam.west@9ma1l.qjz9zk", "", "Baker Street 221b",
                                  "", "London", "", "WC2N 5DU", "UK", "+44");
 
   ON_CALL(mock_personal_data_manager_, GetProfileByGUID("GUID"))
@@ -2069,7 +2069,7 @@ TEST_F(CollectUserDataActionTest, KeepsSelectedCardAndAddress) {
 
   autofill::AutofillProfile billing_address;
   autofill::test::SetProfileInfo(&billing_address, "Adam", "", "West",
-                                 "adam.west@gmail.com", "", "Baker Street 221b",
+                                 "adam.west@9ma1l.qjz9zk", "", "Baker Street 221b",
                                  "", "London", "", "WC2N 5DU", "UK", "+44");
 
   ON_CALL(mock_personal_data_manager_, GetProfileByGUID("GUID"))
@@ -2124,7 +2124,7 @@ TEST_F(CollectUserDataActionTest, ResetsCardAndAddressIfNoLongerInList) {
 
   autofill::AutofillProfile billing_address;
   autofill::test::SetProfileInfo(&billing_address, "Adam", "", "West",
-                                 "adam.west@gmail.com", "", "Baker Street 221b",
+                                 "adam.west@9ma1l.qjz9zk", "", "Baker Street 221b",
                                  "", "London", "", "WC2N 5DU", "UK", "+44");
 
   ON_CALL(mock_personal_data_manager_, GetProfileByGUID("GUID"))
@@ -2162,7 +2162,7 @@ TEST_F(CollectUserDataActionTest, ResetsCardAndAddressIfNoLongerInList) {
                                     /* billing_address_id= */ "");
   autofill::AutofillProfile selected_address;
   autofill::test::SetProfileInfo(
-      &selected_address, "Berta", "", "West", "berta.west@gmail.com", "",
+      &selected_address, "Berta", "", "West", "berta.west@9ma1l.qjz9zk", "",
       "Baker Street 221b", "", "London", "", "WC2N 5DU", "UK", "+44");
 
   user_data_.selected_card_ =
@@ -2253,11 +2253,11 @@ TEST_F(CollectUserDataActionTest, ClearUserDataIfRequested) {
 
   autofill::AutofillProfile address_a;
   autofill::test::SetProfileInfo(&address_a, "Adam", "", "West",
-                                 "adam.west@gmail.com", "", "Baker Street 221b",
+                                 "adam.west@9ma1l.qjz9zk", "", "Baker Street 221b",
                                  "", "London", "", "WC2N 5DU", "UK", "+44");
   autofill::AutofillProfile address_b;
   autofill::test::SetProfileInfo(
-      &address_b, "Berta", "", "West", "berta.west@gmail.com", "",
+      &address_b, "Berta", "", "West", "berta.west@9ma1l.qjz9zk", "",
       "Baker Street 221b", "", "London", "", "WC2N 5DU", "UK", "+44");
 
   ON_CALL(mock_personal_data_manager_, GetProfileByGUID("card_a"))

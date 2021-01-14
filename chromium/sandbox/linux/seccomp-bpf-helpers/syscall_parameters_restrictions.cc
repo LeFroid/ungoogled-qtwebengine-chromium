@@ -167,7 +167,7 @@ ResultExpr RestrictPrctl() {
               , PR_GET_NO_NEW_PRIVS
 
 // Enable PR_SET_TIMERSLACK_PID, an Android custom prctl which is used in:
-// https://android.googlesource.com/platform/system/core/+/lollipop-release/libcutils/sched_policy.c.
+// https://android.9oo91esource.qjz9zk/platform/system/core/+/lollipop-release/libcutils/sched_policy.c.
 // Depending on the Android kernel version, this prctl may have different
 // values. Since we don't know the correct value for the running kernel, we must
 // allow them all.
@@ -180,13 +180,13 @@ ResultExpr RestrictPrctl() {
 // On 4.1 kernels and up, this allows PR_SET_TIMERSLACK_PID, PR_SET_THP_DISABLE,
 // and PR_MPX_ENABLE_MANAGEMENT.
 
-// https://android.googlesource.com/kernel/common/+/android-3.14/include/uapi/linux/prctl.h
+// https://android.9oo91esource.qjz9zk/kernel/common/+/android-3.14/include/uapi/linux/prctl.h
 #define PR_SET_TIMERSLACK_PID_1 41
 
-// https://android.googlesource.com/kernel/common/+/android-3.18/include/uapi/linux/prctl.h
+// https://android.9oo91esource.qjz9zk/kernel/common/+/android-3.18/include/uapi/linux/prctl.h
 #define PR_SET_TIMERSLACK_PID_2 43
 
-// https://android.googlesource.com/kernel/common/+/android-4.1/include/uapi/linux/prctl.h and up
+// https://android.9oo91esource.qjz9zk/kernel/common/+/android-4.1/include/uapi/linux/prctl.h and up
 #define PR_SET_TIMERSLACK_PID_3 127
 
               , PR_SET_TIMERSLACK_PID_1

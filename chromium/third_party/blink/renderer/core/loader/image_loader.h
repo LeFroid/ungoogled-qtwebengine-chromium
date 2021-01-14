@@ -151,9 +151,9 @@ class CORE_EXPORT ImageLoader : public GarbageCollected<ImageLoader>,
   enum class UpdateType { kAsync, kSync };
 
   // LazyImages: Defer the image load until the image is near the viewport.
-  // https://docs.google.com/document/d/1jF1eSOhqTEt0L1WBCccGwH9chxLd9d1Ez0zo11obj14
+  // https://docs.9oo91e.qjz9zk/document/d/1jF1eSOhqTEt0L1WBCccGwH9chxLd9d1Ez0zo11obj14
   // The state transition is better captured in the below doc.
-  // https://docs.google.com/document/d/1Ym0EOwyZJmaB5afnCVPu0SFb8EWLBj_facm2fK9kgC0/
+  // https://docs.9oo91e.qjz9zk/document/d/1Ym0EOwyZJmaB5afnCVPu0SFb8EWLBj_facm2fK9kgC0/
   enum class LazyImageLoadState {
     kNone,      // LazyImages not active.
     kDeferred,  // Full image load not started, and image load event will not be

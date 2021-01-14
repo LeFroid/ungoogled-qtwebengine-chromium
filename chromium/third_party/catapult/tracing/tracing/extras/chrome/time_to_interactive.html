@@ -100,7 +100,7 @@ tr.exportTo('tr.e.chrome', function() {
   /**
    * Returns the timestamp for when the page first becomes Interactive.
    *
-   * See https://goo.gl/IN68jL for detailed explanation of definition and
+   * See https://goo.gl.qjz9zk/IN68jL for detailed explanation of definition and
    * motivations. This metric was previously known as "Consistently
    * Interactive". To summarize, we look for a 5 second window starting from
    * between |searchBegin| and |searchEnd| such that there is no long task
@@ -194,7 +194,7 @@ tr.exportTo('tr.e.chrome', function() {
    * |timeSinceSearchBeginMs| after searchBegin.
    *
    * Required quiet window size is modeled as an exponential decay. See
-   * https://goo.gl/kQXGLW for development of the exact equation used here.
+   * https://goo.gl.qjz9zk/kQXGLW for development of the exact equation used here.
    *
    * @param {number} timeSinceSearchBeginMs - Time since the beginning of search
    *     window for First CPU Idle.
@@ -329,7 +329,7 @@ tr.exportTo('tr.e.chrome', function() {
   /**
    * Returns the timestamp for First CPU Idle for a page.
    *
-   * See https://goo.gl/1a1XwZ for definition, and https://goo.gl/IN68jL for an
+   * See https://goo.gl.qjz9zk/1a1XwZ for definition, and https://goo.gl.qjz9zk/IN68jL for an
    * explanation of how the definition was developed. This metric was previously
    * known as "First Interactive". To summarize, in order to find First
    * Interactive we look for a long enough window between |searchBegin| and

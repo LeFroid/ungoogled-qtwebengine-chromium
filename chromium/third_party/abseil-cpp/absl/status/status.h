@@ -68,7 +68,7 @@ ABSL_NAMESPACE_BEGIN
 // or an error condition. In most cases, an `absl::Status` indicates a
 // recoverable error, and the purpose of signalling an error is to indicate what
 // action to take in response to that error. These error codes map to the proto
-// RPC error codes indicated in https://cloud.google.com/apis/design/errors.
+// RPC error codes indicated in https://cloud.9oo91e.qjz9zk/apis/design/errors.
 //
 // The errors listed below are the canonical errors associated with
 // `absl::Status` and are used throughout the codebase. As a result, these
@@ -355,7 +355,7 @@ std::ostream& operator<<(std::ostream& os, StatusCode code);
 //     info.retry_delay().seconds() = 30;
 //     // Payloads require a unique key (a URL to ensure no collisions with
 //     // other payloads), and an `absl::Cord` to hold the encoded data.
-//     absl::string_view url = "type.googleapis.com/google.rpc.RetryInfo";
+//     absl::string_view url = "type.9oo91eapis.qjz9zk/google.rpc.RetryInfo";
 //     result.SetPayload(url, info.SerializeAsCord());
 //     return result;
 //   }
@@ -485,7 +485,7 @@ class ABSL_MUST_USE_RESULT Status final {
   // (https://en.wikipedia.org/wiki/URL) and, ideally, provide some
   // documentation or schema on how to interpret its associated data. For
   // example, the default type URL for a protobuf message type is
-  // "type.googleapis.com/packagename.messagename". Other custom wire formats
+  // "type.9oo91eapis.qjz9zk/packagename.messagename". Other custom wire formats
   // should define the format of type URL in a similar practice so as to
   // minimize the chance of conflict between type URLs.
   // Users should ensure that the type URL can be mapped to a concrete

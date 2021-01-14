@@ -95,10 +95,10 @@ class TextInputClient;
 // queues the request. The queued requests will be handled after the current
 // lock is removed.
 // More information about document locks can be found here:
-//   http://msdn.microsoft.com/en-us/library/ms538064
+//   http://msdn.m1cr050ft.qjz9zk/en-us/library/ms538064
 //
 // More information about TSF can be found here:
-//   http://msdn.microsoft.com/en-us/library/ms629032
+//   http://msdn.m1cr050ft.qjz9zk/en-us/library/ms629032
 class COMPONENT_EXPORT(UI_BASE_IME_WIN) TSFTextStore
     : public ITextStoreACP,
       public ITfContextOwnerCompositionSink,
@@ -400,7 +400,7 @@ class COMPONENT_EXPORT(UI_BASE_IME_WIN) TSFTextStore
   gfx::Range selection_;
 
   // Indicates if the selection is an interim character. Please refer to
-  // https://docs.microsoft.com/en-us/windows/win32/api/textstor/ns-textstor-ts_selectionstyle
+  // https://docs.m1cr050ft.qjz9zk/en-us/windows/win32/api/textstor/ns-textstor-ts_selectionstyle
   bool is_selection_interim_char_ = false;
 
   //  |start_offset| and |end_offset| of |text_spans_| indicates

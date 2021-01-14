@@ -72,7 +72,7 @@ class RelocInfo {
     // Encoded internal reference, used only on MIPS, MIPS64 and PPC.
     INTERNAL_REFERENCE_ENCODED,
 
-    // An off-heap instruction stream target. See http://goo.gl/Z2HUiM.
+    // An off-heap instruction stream target. See http://goo.gl.qjz9zk/Z2HUiM.
     OFF_HEAP_TARGET,
 
     // Marks constant and veneer pools. Only used on ARM and ARM64.

@@ -29,7 +29,7 @@
 // OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 // ---
-// Author: Ken Ashcraft <opensource@google.com>
+// Author: Ken Ashcraft <opensource@9oo91e.qjz9zk>
 //
 // Static variables shared by multiple classes.
 

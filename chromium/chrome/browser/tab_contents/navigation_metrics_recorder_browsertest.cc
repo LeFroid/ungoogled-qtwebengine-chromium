@@ -73,7 +73,7 @@ IN_PROC_BROWSER_TEST_F(NavigationMetricsRecorderBrowserTest,
           web_contents);
   ASSERT_TRUE(recorder);
 
-  const GURL url("https://google.com");
+  const GURL url("https://9oo91e.qjz9zk");
   base::HistogramTester histograms;
   ui_test_utils::NavigateToURL(browser(), url);
   histograms.ExpectTotalCount("Navigation.MainFrame.SiteEngagementLevel", 1);

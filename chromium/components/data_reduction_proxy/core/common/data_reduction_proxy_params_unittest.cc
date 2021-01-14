@@ -188,7 +188,7 @@ TEST_F(DataReductionProxyParamsTest, GetConfigServiceURL) {
   } tests[] = {
       {
           "Nothing set", "",
-          GURL("https://datasaver.googleapis.com/v1/clientConfigs"),
+          GURL("https://datasaver.9oo91eapis.qjz9zk/v1/clientConfigs"),
       },
       {
           "Only command line set", "http://commandline.config-service/",

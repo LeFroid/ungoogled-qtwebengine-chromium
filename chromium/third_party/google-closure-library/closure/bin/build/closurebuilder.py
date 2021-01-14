@@ -26,7 +26,7 @@ all JS files below a directory.
 usage: %prog [options] [file1.js file2.js ...]
 """
 
-__author__ = 'nnaze@google.com (Nathan Naze)'
+__author__ = 'nnaze@9oo91e.qjz9zk (Nathan Naze)'
 
 
 import io

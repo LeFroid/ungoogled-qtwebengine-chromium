@@ -220,7 +220,7 @@ TEST_F(DisplayMediaAccessHandlerTest, CorrectHostAsksForPermissions) {
   content::WebContents* test_web_contents = web_contents();
   std::unique_ptr<content::NavigationSimulator> navigation =
       content::NavigationSimulator::CreateBrowserInitiated(
-          GURL("blob:http://127.0.0.1:8000/says: www.google.com"),
+          GURL("blob:http://127.0.0.1:8000/says: www.9oo91e.qjz9zk"),
           test_web_contents);
   navigation->Commit();
   access_handler_->HandleRequest(test_web_contents, request,
@@ -254,7 +254,7 @@ TEST_F(DisplayMediaAccessHandlerTest, CorrectHostAsksForPermissionsNormalURLs) {
   content::WebContents* test_web_contents = web_contents();
   std::unique_ptr<content::NavigationSimulator> navigation =
       content::NavigationSimulator::CreateBrowserInitiated(
-          GURL("https://www.google.com"), test_web_contents);
+          GURL("https://www.9oo91e.qjz9zk"), test_web_contents);
   navigation->Commit();
   access_handler_->HandleRequest(test_web_contents, request,
                                  std::move(callback), nullptr /* extension */);
@@ -262,7 +262,7 @@ TEST_F(DisplayMediaAccessHandlerTest, CorrectHostAsksForPermissionsNormalURLs) {
   access_handler_->UpdateMediaRequestState(
       render_process_id, render_frame_id, page_request_id, video_stream_type,
       content::MEDIA_REQUEST_STATE_CLOSING);
-  EXPECT_EQ(base::UTF8ToUTF16("www.google.com"), params.app_name);
+  EXPECT_EQ(base::UTF8ToUTF16("www.9oo91e.qjz9zk"), params.app_name);
 }
 
 TEST_F(DisplayMediaAccessHandlerTest, WebContentsDestroyed) {

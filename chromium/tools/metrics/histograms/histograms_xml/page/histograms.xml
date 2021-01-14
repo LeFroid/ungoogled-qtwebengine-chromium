@@ -9,9 +9,9 @@ This file is used to generate a comprehensive list of Page histograms
 along with a detailed description for each histogram.
 
 For best practices on writing histogram descriptions, see
-https://chromium.googlesource.com/chromium/src.git/+/HEAD/tools/metrics/histograms/README.md
+https://chromium.9oo91esource.qjz9zk/chromium/src.git/+/HEAD/tools/metrics/histograms/README.md
 
-Please send CLs to chromium-metrics-reviews@google.com rather than to specific
+Please send CLs to chromium-metrics-reviews@9oo91e.qjz9zk rather than to specific
 individuals. These CLs will be automatically reassigned to a reviewer within
 about 5 minutes. This approach helps the metrics team to load-balance incoming
 reviews. Googlers can read more about this at go/gwsq-gerrit.
@@ -23,8 +23,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="PageActionController.ExtensionsWithPageActions" units="units"
     expires_after="2020-12-01">
-  <owner>rdevlin.cronin@chromium.org</owner>
-  <owner>extensions-core@chromium.org</owner>
+  <owner>rdevlin.cronin@ch40m1um.qjz9zk</owner>
+  <owner>extensions-core@ch40m1um.qjz9zk</owner>
   <summary>
     The number of Extensions that have Page Actions. Measured once per startup
     per profile.
@@ -34,8 +34,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram base="true"
     name="PageLoad.AdPaintTiming.NavigationToFirstContentfulPaint2" units="ms"
     expires_after="2021-07-31">
-  <owner>jkarlin@chromium.org</owner>
-  <owner>johnidel@chromium.org</owner>
+  <owner>jkarlin@ch40m1um.qjz9zk</owner>
+  <owner>johnidel@ch40m1um.qjz9zk</owner>
   <summary>
     Records the time from frame navigation start to FirstContentfulPaint of each
     ad frame that receives a FirstContentfulPaint. The time could be quite
@@ -49,9 +49,9 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="PageLoad.BackForwardCache.Event"
     enum="PageLoadBackForwardCacheEvent" expires_after="2021-04-01">
-  <owner>altimin@chromium.org</owner>
-  <owner>bmcquade@chromium.org</owner>
-  <owner>hajimehoshi@chromium.org</owner>
+  <owner>altimin@ch40m1um.qjz9zk</owner>
+  <owner>bmcquade@ch40m1um.qjz9zk</owner>
+  <owner>hajimehoshi@ch40m1um.qjz9zk</owner>
   <summary>
     Counts the events related to the back-forward cache, like when the page is
     put into the back-forward cache.
@@ -60,8 +60,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram base="true" name="PageLoad.Bytes" units="units"
     expires_after="2022-01-05">
-  <owner>jkarlin@chromium.org</owner>
-  <owner>johnidel@chromium.org</owner>
+  <owner>jkarlin@ch40m1um.qjz9zk</owner>
+  <owner>johnidel@ch40m1um.qjz9zk</owner>
   <summary>
     Only recorded if the page has at least one identified ad frame. Recorded in
     PageLoadMetrics when the page is destroyed. Bytes include all bytes used by
@@ -75,8 +75,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="PageLoad.Clients.Ads.AdDensity.MaxPercentByArea" units="%"
     expires_after="2021-03-28">
-  <owner>justinmron@chromium.org</owner>
-  <owner>johnidel@chromium.org</owner>
+  <owner>justinmron@ch40m1um.qjz9zk</owner>
+  <owner>johnidel@ch40m1um.qjz9zk</owner>
   <summary>
     The page's maximum ad density by area over its lifecycle as a percent from
     0-100. The density measurement is throttled in page load metrics propagation
@@ -88,8 +88,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="PageLoad.Clients.Ads.AdDensity.MaxPercentByHeight" units="%"
     expires_after="2021-03-28">
-  <owner>justinmron@chromium.org</owner>
-  <owner>johnidel@chromium.org</owner>
+  <owner>justinmron@ch40m1um.qjz9zk</owner>
+  <owner>johnidel@ch40m1um.qjz9zk</owner>
   <summary>
     The page's maximum ad density by height over its lifecycle as a percent from
     0-100. The density measurement is throttled in page load metrics propagation
@@ -101,8 +101,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="PageLoad.Clients.Ads.AdDensity.Recorded" units="Boolean"
     expires_after="2021-03-28">
-  <owner>justinmron@chromium.org</owner>
-  <owner>johnidel@chromium.org</owner>
+  <owner>justinmron@ch40m1um.qjz9zk</owner>
+  <owner>johnidel@ch40m1um.qjz9zk</owner>
   <summary>
     Whether the ad density was recorded on the page for both density by area and
     density by height. Recorded at the time a page is destroyed.
@@ -111,8 +111,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="PageLoad.Clients.Ads.AllPages.NonAdNetworkBytes" units="KB"
     expires_after="2021-05-20">
-  <owner>alexmt@chromium.org</owner>
-  <owner>johnidel@chromium.org</owner>
+  <owner>alexmt@ch40m1um.qjz9zk</owner>
+  <owner>johnidel@ch40m1um.qjz9zk</owner>
   <summary>
     Total number of network bytes that went towards loading non-ad resources for
     a single page over its entire lifetime. This includes resources that did not
@@ -124,8 +124,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="PageLoad.Clients.Ads.AllPages.PercentNetworkBytesAds"
     units="%" expires_after="2021-03-28">
-  <owner>alexmt@chromium.org</owner>
-  <owner>johnidel@chromium.org</owner>
+  <owner>alexmt@ch40m1um.qjz9zk</owner>
+  <owner>johnidel@ch40m1um.qjz9zk</owner>
   <summary>
     The percentage of network bytes loaded by the page that are attributed to ad
     resources (including ad resources in the main frame) across the entire page
@@ -137,8 +137,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="PageLoad.Clients.Ads.AllPages.PercentTotalBytesAds" units="%"
     expires_after="2021-03-28">
-  <owner>alexmt@chromium.org</owner>
-  <owner>johnidel@chromium.org</owner>
+  <owner>alexmt@ch40m1um.qjz9zk</owner>
+  <owner>johnidel@ch40m1um.qjz9zk</owner>
   <summary>
     The percentage of all bytes loaded by the page that are attributed to ad
     resources (including ad resources in the main frame) across the entire page
@@ -150,8 +150,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="PageLoad.Clients.Ads.FrameCounts.IgnoredByRestrictedAdTagging"
     enum="BooleanIgnored" expires_after="2021-01-29">
-  <owner>johnidel@chromium.org</owner>
-  <owner>jkarlin@chromium.org</owner>
+  <owner>johnidel@ch40m1um.qjz9zk</owner>
+  <owner>jkarlin@ch40m1um.qjz9zk</owner>
   <summary>
     Records whether a frame that was created by ad script was ignored by
     restricted AdTagging heuristics. This can occur if the frame was navigated
@@ -166,8 +166,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="PageLoad.Clients.Ads.HeavyAds.DisallowedByBlocklist"
     enum="BooleanBlocked" expires_after="2021-03-28">
-  <owner>johnidel@chromium.org</owner>
-  <owner>jkarlin@chromium.org</owner>
+  <owner>johnidel@ch40m1um.qjz9zk</owner>
+  <owner>jkarlin@ch40m1um.qjz9zk</owner>
   <summary>
     Records whether the heavy ad intervention was disallowed by the blocklist on
     a frame. Only recorded when the heavy ad blocklist is enabled and available
@@ -177,8 +177,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="PageLoad.Clients.Ads.HeavyAds.FrameRemovedPriorToPageEnd"
     enum="BooleanRemoved" expires_after="2021-03-28">
-  <owner>johnidel@chromium.org</owner>
-  <owner>jkarlin@chromium.org</owner>
+  <owner>johnidel@ch40m1um.qjz9zk</owner>
+  <owner>jkarlin@ch40m1um.qjz9zk</owner>
   <summary>
     Records whether a heavy ad frame was deleted prior to the page being
     destroyed/navigated. Recorded per-frame, only if the frame is considered a
@@ -190,8 +190,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="PageLoad.Clients.Ads.HeavyAds.IgnoredByReload"
     enum="BooleanIgnored" expires_after="2021-03-28">
-  <owner>johnidel@chromium.org</owner>
-  <owner>jkarlin@chromium.org</owner>
+  <owner>johnidel@ch40m1um.qjz9zk</owner>
+  <owner>jkarlin@ch40m1um.qjz9zk</owner>
   <summary>
     Records whether a possible intervention was ignored because the page was the
     result of a reload. This is checked prior to checking whether a given site
@@ -204,8 +204,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="PageLoad.Clients.Ads.HeavyAds.NetworkBytesAtFrameUnload"
     units="bytes" expires_after="2021-02-01">
-  <owner>johnidel@chromium.org</owner>
-  <owner>justinmiron@google.com</owner>
+  <owner>johnidel@ch40m1um.qjz9zk</owner>
+  <owner>justinmiron@9oo91e.qjz9zk</owner>
   <summary>
     Records the number of network bytes used by a heavy ad unloaded due to
     network usage by the heavy ad intervention. It is recorded at the time of
@@ -216,8 +216,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="PageLoad.Clients.Ads.HeavyAds.UserDidReload"
     enum="BooleanReloaded" expires_after="2021-03-28">
-  <owner>johnidel@chromium.org</owner>
-  <owner>jkarlin@chromium.org</owner>
+  <owner>johnidel@ch40m1um.qjz9zk</owner>
+  <owner>jkarlin@ch40m1um.qjz9zk</owner>
   <summary>
     Records whether a page with a heavy ad is reloaded or navigated/destroyed
     for any other reason. Only recorded for pages that had at least one heavy ad
@@ -228,8 +228,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="PageLoad.Clients.Ads.Resources.Bytes.Ads2" units="KB"
     expires_after="2021-09-05">
-  <owner>johnidel@chromium.org</owner>
-  <owner>jkarlin@chromium.org</owner>
+  <owner>johnidel@ch40m1um.qjz9zk</owner>
+  <owner>jkarlin@ch40m1um.qjz9zk</owner>
   <summary>
     Total number of network bytes that went towards loading ad resources for a
     single page over it's entire lifetime. This includes resources that did not
@@ -240,7 +240,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram
     name="PageLoad.Clients.AMP.Experimental.PageTiming.InputToNavigation.Subframe"
     units="ms" expires_after="M78">
-  <owner>bmcquade@chromium.org</owner>
+  <owner>bmcquade@ch40m1um.qjz9zk</owner>
   <summary>
     The time from the user input that triggers the top-level navigation for an
     AMP document to the time that the navigation for the AMP document is
@@ -252,7 +252,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram
     name="PageLoad.Clients.AMP.Experimental.PageTiming.MainFrameToSubFrameNavigationDelta.Subframe"
     units="ms" expires_after="M78">
-  <owner>bmcquade@chromium.org</owner>
+  <owner>bmcquade@ch40m1um.qjz9zk</owner>
   <summary>
     The time from the main frame navigation to the subsequent subframe
     navigation for the AMP document. Only recorded for non-same-page
@@ -263,7 +263,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram
     name="PageLoad.Clients.AMP.Experimental.PageTiming.NavigationToInput.Subframe"
     units="ms" expires_after="M78">
-  <owner>bmcquade@chromium.org</owner>
+  <owner>bmcquade@ch40m1um.qjz9zk</owner>
   <summary>
     The time from navigation in the AMP frame to the user input that triggers
     the top-level navigation for that AMP document. This gives insight into the
@@ -275,12 +275,12 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram
     name="PageLoad.Clients.AMP.InteractiveTiming.FirstInputDelay4.Subframe"
     units="ms" expires_after="M85">
-  <owner>bmcquade@chromium.org</owner>
+  <owner>bmcquade@ch40m1um.qjz9zk</owner>
   <summary>
     Measures First Input Delay, the duration between the hardware timestamp and
     the start of event processing on the main thread for the first meaningful
     input per navigation, in an AMP subframe document. Recorded on first page
-    interaction. See https://goo.gl/tr1oTZ for a detailed explanation. Excludes
+    interaction. See https://goo.gl.qjz9zk/tr1oTZ for a detailed explanation. Excludes
     scrolls. Only same-document navigations are included.
   </summary>
 </histogram>
@@ -288,12 +288,12 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram
     name="PageLoad.Clients.AMP.InteractiveTiming.FirstInputDelay4.Subframe.FullNavigation"
     units="ms" expires_after="M85">
-  <owner>bmcquade@chromium.org</owner>
+  <owner>bmcquade@ch40m1um.qjz9zk</owner>
   <summary>
     Measures First Input Delay, the duration between the hardware timestamp and
     the start of event processing on the main thread for the first meaningful
     input per navigation, in an AMP subframe document. Recorded on first page
-    interaction. See https://goo.gl/tr1oTZ for a detailed explanation. Excludes
+    interaction. See https://goo.gl.qjz9zk/tr1oTZ for a detailed explanation. Excludes
     scrolls. Only non-same-document navigations are included.
   </summary>
 </histogram>
@@ -301,8 +301,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram
     name="PageLoad.Clients.AMP.LayoutInstability.CumulativeShiftScore.Subframe"
     units="scorex10" expires_after="2019-09-10">
-  <owner>bmcquade@chromium.org</owner>
-  <owner>skobes@chromium.org</owner>
+  <owner>bmcquade@ch40m1um.qjz9zk</owner>
+  <owner>skobes@ch40m1um.qjz9zk</owner>
   <summary>
     Measures the cumulative layout shift score (bit.ly/lsm-explainer) that has
     occurred in the AMP subframe. Recorded for same-document AMP navigations in
@@ -314,8 +314,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram
     name="PageLoad.Clients.AMP.LayoutInstability.CumulativeShiftScore.Subframe.FullNavigation"
     units="scorex10" expires_after="2019-09-10">
-  <owner>bmcquade@chromium.org</owner>
-  <owner>skobes@chromium.org</owner>
+  <owner>bmcquade@ch40m1um.qjz9zk</owner>
+  <owner>skobes@ch40m1um.qjz9zk</owner>
   <summary>
     Measures the cumulative layout shift score (bit.ly/lsm-explainer) that has
     occurred in the AMP subframe. Recorded for non same-document AMP navigations
@@ -327,7 +327,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram
     name="PageLoad.Clients.AMP.PaintTiming.InputToFirstContentfulPaint.Subframe"
     units="ms" expires_after="M85">
-  <owner>bmcquade@chromium.org</owner>
+  <owner>bmcquade@ch40m1um.qjz9zk</owner>
   <summary>
     The time from user input to first &quot;contentful&quot; paint in an AMP
     subframe document. Will be zero or near-zero in cases where the AMP subframe
@@ -338,7 +338,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram
     name="PageLoad.Clients.AMP.PaintTiming.InputToFirstContentfulPaint.Subframe.FullNavigation"
     units="ms" expires_after="M85">
-  <owner>bmcquade@chromium.org</owner>
+  <owner>bmcquade@ch40m1um.qjz9zk</owner>
   <summary>
     The time from user input to first &quot;contentful&quot; paint in an AMP
     subframe document. Only non-same-document navigations are included.
@@ -348,7 +348,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram
     name="PageLoad.Clients.AMP.PaintTiming.InputToLargestContentfulPaint.Subframe"
     units="ms" expires_after="2020-01-24">
-  <owner>bmcquade@chromium.org</owner>
+  <owner>bmcquade@ch40m1um.qjz9zk</owner>
   <summary>
     The time from user input to largest &quot;contentful&quot; paint in an AMP
     subframe document. Only same-document navigations are included.
@@ -365,7 +365,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram
     name="PageLoad.Clients.AMP.PaintTiming.InputToLargestContentfulPaint.Subframe.FullNavigation"
     units="ms" expires_after="2020-01-24">
-  <owner>bmcquade@chromium.org</owner>
+  <owner>bmcquade@ch40m1um.qjz9zk</owner>
   <summary>
     The time from user input to largest &quot;contentful&quot; paint in an AMP
     subframe document. Only non-same-document navigations are included.
@@ -378,7 +378,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="PageLoad.Clients.DocWrite.Block.Count" enum="Boolean"
     expires_after="M85">
-  <owner>bmcquade@chromium.org</owner>
+  <owner>bmcquade@ch40m1um.qjz9zk</owner>
   <summary>
     Counts the number of pages where a script loaded via document.write could
     have been blocked.
@@ -387,9 +387,9 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="PageLoad.Clients.DocWrite.Block.DocumentWriteLoadingBehavior"
     enum="DocumentWriteLoadingBehavior" expires_after="M77">
-  <owner>shivanisha@chromium.org</owner>
-  <owner>bmcquade@chromium.org</owner>
-  <owner>jkarlin@chromium.org</owner>
+  <owner>shivanisha@ch40m1um.qjz9zk</owner>
+  <owner>bmcquade@ch40m1um.qjz9zk</owner>
+  <owner>jkarlin@ch40m1um.qjz9zk</owner>
   <summary>
     This metric measures the counts of pages for various loading behaviors of
     document.written scripts.
@@ -398,8 +398,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="PageLoad.Clients.DocWrite.Block.ReloadCount" units="units"
     expires_after="M77">
-  <owner>shivanisha@chromium.org</owner>
-  <owner>bmcquade@chromium.org</owner>
+  <owner>shivanisha@ch40m1um.qjz9zk</owner>
+  <owner>bmcquade@ch40m1um.qjz9zk</owner>
   <summary>
     This metric measures reloads in pages that have synchronous, cross-origin
     document.written scripts that could be blocked if document.write script
@@ -409,7 +409,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="PageLoad.Clients.Scheme.HTTP.PaintTiming.UnderStat"
     enum="PageLoadTimingUnderStat" expires_after="2021-07-22">
-  <owner>tbansal@chromium.org</owner>
+  <owner>tbansal@ch40m1um.qjz9zk</owner>
   <summary>
     Records if the time from navigation to first contentful paint was less than
     the specified threshold. Also, records the total number of first contentful
@@ -422,8 +422,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram
     name="PageLoad.Clients.Scheme.HTTP.PaintTiming.UnderStat.UserInitiated.NewNavigation"
     enum="PageLoadTimingUnderStat" expires_after="2020-12-31">
-  <owner>dougarnett@chromium.org</owner>
-  <owner>tbansal@chromium.org</owner>
+  <owner>dougarnett@ch40m1um.qjz9zk</owner>
+  <owner>tbansal@ch40m1um.qjz9zk</owner>
   <summary>
     Records if the time from navigation to first contentful paint was less than
     the specified threshold. Also, records the total number of first contentful
@@ -437,7 +437,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="PageLoad.Clients.Scheme.HTTPS.PaintTiming.UnderStat"
     enum="PageLoadTimingUnderStat" expires_after="2021-07-22">
-  <owner>tbansal@chromium.org</owner>
+  <owner>tbansal@ch40m1um.qjz9zk</owner>
   <summary>
     Records if the time from navigation to first contentful paint was less than
     the specified threshold. Also, records the total number of first contentful
@@ -450,8 +450,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram
     name="PageLoad.Clients.Scheme.HTTPS.PaintTiming.UnderStat.UserInitiated.NewNavigation"
     enum="PageLoadTimingUnderStat" expires_after="2020-12-31">
-  <owner>dougarnett@chromium.org</owner>
-  <owner>tbansal@chromium.org</owner>
+  <owner>dougarnett@ch40m1um.qjz9zk</owner>
+  <owner>tbansal@ch40m1um.qjz9zk</owner>
   <summary>
     Records if the time from navigation to first contentful paint was less than
     the specified threshold. Also, records the total number of first contentful
@@ -465,7 +465,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="PageLoad.Clients.ServiceWorker2.PageTransition"
     enum="CorePageTransition" expires_after="M85">
-  <owner>falken@chromium.org</owner>
+  <owner>falken@ch40m1um.qjz9zk</owner>
   <summary>
     The core transition type for main frame page loads controlled by a service
     worker that has a fetch event handler.
@@ -475,8 +475,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram base="true"
     name="PageLoad.Clients.StaleWhileRevalidate.PaintTiming.FirstContentfulPaint"
     units="ms" expires_after="M75">
-  <owner>dtapuska@chromium.org</owner>
-  <owner>kenjibaheux@google.com</owner>
+  <owner>dtapuska@ch40m1um.qjz9zk</owner>
+  <owner>kenjibaheux@9oo91e.qjz9zk</owner>
   <summary>
     Measures the time from navigation start to first contentful paint. Recorded
     for pages that contain a resource that may benefit from stale while
@@ -487,8 +487,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram base="true"
     name="PageLoad.Clients.StaleWhileRevalidate.PaintTiming.ParseToFirstContentfulPaint"
     units="ms" expires_after="M75">
-  <owner>dtapuska@chromium.org</owner>
-  <owner>kenjibaheux@google.com</owner>
+  <owner>dtapuska@ch40m1um.qjz9zk</owner>
+  <owner>kenjibaheux@9oo91e.qjz9zk</owner>
   <summary>
     Measures the time from parse start to first contentful paint. Recorded for
     pages that contain a resource that may benefit from stale while revalidate.
@@ -497,8 +497,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="PageLoad.Clients.SubresourceLoading.CookiesQueryTime"
     units="ms" expires_after="M90">
-  <owner>robertogden@chromium.org</owner>
-  <owner>tbansal@chromium.org</owner>
+  <owner>robertogden@ch40m1um.qjz9zk</owner>
+  <owner>tbansal@ch40m1um.qjz9zk</owner>
   <summary>
     How long the query to the cookie manager took to complete. Recorded on every
     query response.
@@ -508,8 +508,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram
     name="PageLoad.Clients.SubresourceLoading.DaysSinceLastVisitToOrigin"
     units="days" expires_after="M90">
-  <owner>robertogden@chromium.org</owner>
-  <owner>tbansal@chromium.org</owner>
+  <owner>robertogden@ch40m1um.qjz9zk</owner>
+  <owner>tbansal@ch40m1um.qjz9zk</owner>
   <summary>
     The number of days since any origin in the redirect chain was last visited,
     according to the history service. Recorded whenever there was a previous
@@ -519,8 +519,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="PageLoad.Clients.SubresourceLoading.HasPreviousVisitToOrigin"
     enum="BooleanPreviouslyVisited" expires_after="M90">
-  <owner>robertogden@chromium.org</owner>
-  <owner>tbansal@chromium.org</owner>
+  <owner>robertogden@ch40m1um.qjz9zk</owner>
+  <owner>tbansal@ch40m1um.qjz9zk</owner>
   <summary>
     Whether or not there was a previous visit to any origin in the redirect
     chain, as reported by the history service. Each positive entry corresponds
@@ -532,8 +532,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="PageLoad.Clients.SubresourceLoading.HistoryQueryTime"
     units="ms" expires_after="M90">
-  <owner>robertogden@chromium.org</owner>
-  <owner>tbansal@chromium.org</owner>
+  <owner>robertogden@ch40m1um.qjz9zk</owner>
+  <owner>tbansal@ch40m1um.qjz9zk</owner>
   <summary>
     How long the query to the history service took to complete. Recorded on
     every query response.
@@ -543,8 +543,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram
     name="PageLoad.Clients.SubresourceLoading.LoadedCSSJSBeforeFCP.Cached"
     units="count of subresources" expires_after="M90">
-  <owner>robertogden@chromium.org</owner>
-  <owner>tbansal@chromium.org</owner>
+  <owner>robertogden@ch40m1um.qjz9zk</owner>
+  <owner>tbansal@ch40m1um.qjz9zk</owner>
   <summary>
     The count of CSS or JS subresources on a page that were loaded from cache
     before FCP occurred. Only recorded for Lite mode (AKA Data Saver) users.
@@ -554,8 +554,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram
     name="PageLoad.Clients.SubresourceLoading.LoadedCSSJSBeforeFCP.Noncached"
     units="count of subresources" expires_after="M90">
-  <owner>robertogden@chromium.org</owner>
-  <owner>tbansal@chromium.org</owner>
+  <owner>robertogden@ch40m1um.qjz9zk</owner>
+  <owner>tbansal@ch40m1um.qjz9zk</owner>
   <summary>
     The count of CSS or JS subresources on a page that were loaded from the
     network before FCP occurred. Only recorded for Lite mode (AKA Data Saver)
@@ -565,8 +565,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="PageLoad.Clients.SubresourceLoading.MainFrameHadCookies"
     enum="Boolean" expires_after="M90">
-  <owner>robertogden@chromium.org</owner>
-  <owner>tbansal@chromium.org</owner>
+  <owner>robertogden@ch40m1um.qjz9zk</owner>
+  <owner>tbansal@ch40m1um.qjz9zk</owner>
   <summary>
     Whether or not any main frame request in the redirect chain had cookies.
   </summary>
@@ -575,8 +575,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram
     name="PageLoad.Clients.ThirdParty.Frames.NavigationToFirstContentfulPaint3"
     units="ms" expires_after="2021-02-14">
-  <owner>jkarlin@chromium.org</owner>
-  <owner>johnidel@chromium.org</owner>
+  <owner>jkarlin@ch40m1um.qjz9zk</owner>
+  <owner>johnidel@ch40m1um.qjz9zk</owner>
   <summary>
     The time from navigation start to the first contentful paint of third-party
     (in respect to scheme://eTLD+1) frames on pages. Note that this can be
@@ -586,8 +586,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="PageLoad.Clients.ThirdParty.Origins.CookieRead2" units="Count"
     expires_after="2021-03-28">
-  <owner>jkarlin@chromium.org</owner>
-  <owner>yaoxia@chromium.org</owner>
+  <owner>jkarlin@ch40m1um.qjz9zk</owner>
+  <owner>yaoxia@ch40m1um.qjz9zk</owner>
   <summary>
     The number of third party (in respect to scheme://eTLD+1) origins on a page
     that read cookies either via resource request headers or document.cookie.
@@ -596,8 +596,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="PageLoad.Clients.ThirdParty.Origins.CookieWrite2"
     units="Count" expires_after="2021-03-28">
-  <owner>jkarlin@chromium.org</owner>
-  <owner>yaoxia@chromium.org</owner>
+  <owner>jkarlin@ch40m1um.qjz9zk</owner>
+  <owner>yaoxia@ch40m1um.qjz9zk</owner>
   <summary>
     The number of third party (in respect to scheme://eTLD+1) origins on a page
     that changed cookies either via resource response headers or
@@ -607,8 +607,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="PageLoad.Clients.ThirdParty.Origins.LocalStorageAccess2"
     units="Count" expires_after="2021-01-22">
-  <owner>yaoxia@chromium.org</owner>
-  <owner>jkarlin@chromium.org</owner>
+  <owner>yaoxia@ch40m1um.qjz9zk</owner>
+  <owner>jkarlin@ch40m1um.qjz9zk</owner>
   <summary>
     The number of third-parties (in respect to scheme://eTLD+1) on a page that
     access local storage via window.localStorage.
@@ -617,8 +617,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="PageLoad.Clients.ThirdParty.Origins.SessionStorageAccess2"
     units="Count" expires_after="2021-01-22">
-  <owner>yaoxia@chromium.org</owner>
-  <owner>jkarlin@chromium.org</owner>
+  <owner>yaoxia@ch40m1um.qjz9zk</owner>
+  <owner>jkarlin@ch40m1um.qjz9zk</owner>
   <summary>
     The number of third-parties (in respect to scheme://eTLD+1) on a page that
     access session storage via window.sessionStorage.
@@ -628,8 +628,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram
     name="PageLoad.Clients.ThirdParty.PaintTiming.NavigationToLargestContentfulPaint.HasThirdPartyFont"
     units="ms" expires_after="2020-12-31">
-  <owner>shivanisha@chromium.org</owner>
-  <owner>jkarlin@chromium.org</owner>
+  <owner>shivanisha@ch40m1um.qjz9zk</owner>
+  <owner>jkarlin@ch40m1um.qjz9zk</owner>
   <summary>
     Records the largest contentful paint only for pages that load a third party
     font and whose largest contentful resource type is text. See
@@ -639,8 +639,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram base="true" name="PageLoad.Cpu" units="units"
     expires_after="2022-01-05">
-  <owner>ericrobinson@chromium.org</owner>
-  <owner>csharrison@chromium.org</owner>
+  <owner>ericrobinson@ch40m1um.qjz9zk</owner>
+  <owner>csharrison@ch40m1um.qjz9zk</owner>
   <summary>
     Only recorded if the page has at least one identified ad frame. Recorded in
     PageLoadMetrics when the page is destroyed. Cpu measures the wall time of
@@ -654,8 +654,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 </histogram>
 
 <histogram name="PageLoad.Cpu.TotalUsage" units="ms" expires_after="2021-01-31">
-  <owner>alexmt@chromium.org</owner>
-  <owner>johnidel@chromium.org</owner>
+  <owner>alexmt@ch40m1um.qjz9zk</owner>
+  <owner>johnidel@ch40m1um.qjz9zk</owner>
   <summary>
     Recorded when the page is destroyed or the app is backgrounded on mobile.
     Records the total wall time of tasks attributable to the page across its
@@ -666,8 +666,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="PageLoad.Cpu.TotalUsageForegrounded" units="ms"
     expires_after="2020-11-18">
-  <owner>alexmt@chromium.org</owner>
-  <owner>johnidel@chromium.org</owner>
+  <owner>alexmt@ch40m1um.qjz9zk</owner>
+  <owner>johnidel@ch40m1um.qjz9zk</owner>
   <summary>
     Recorded when the page is destroyed or the app is backgrounded on mobile.
     Records the total wall time of tasks attributable to the page across its
@@ -678,8 +678,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram
     name="PageLoad.DocumentTiming.NavigationToDOMContentLoadedEventFired"
     units="ms" expires_after="2021-01-31">
-  <owner>bmcquade@chromium.org</owner>
-  <owner>csharrison@chromium.org</owner>
+  <owner>bmcquade@ch40m1um.qjz9zk</owner>
+  <owner>csharrison@ch40m1um.qjz9zk</owner>
   <summary>
     Measures the time from navigation timing's navigation start to the time the
     DOMContentLoaded event is fired, for main frame documents.
@@ -688,8 +688,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="PageLoad.DocumentTiming.NavigationToLoadEventFired" units="ms"
     expires_after="2021-01-31">
-  <owner>bmcquade@chromium.org</owner>
-  <owner>csharrison@chromium.org</owner>
+  <owner>bmcquade@ch40m1um.qjz9zk</owner>
+  <owner>csharrison@ch40m1um.qjz9zk</owner>
   <summary>
     Measures the time from navigation timing's navigation start to the time the
     load event is fired, for main frame documents.
@@ -698,8 +698,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram base="true" name="PageLoad.Experimental.AbortTiming.Background"
     units="ms" expires_after="2021-01-31">
-  <owner>bmcquade@chromium.org</owner>
-  <owner>csharrison@chromium.org</owner>
+  <owner>bmcquade@ch40m1um.qjz9zk</owner>
+  <owner>csharrison@ch40m1um.qjz9zk</owner>
   <summary>
     This metric is still experimental and not yet ready to be relied upon.
     Measures the time from navigation start to the time the page load was
@@ -709,7 +709,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram base="true" name="PageLoad.Experimental.AbortTiming.Close"
     units="ms" expires_after="2021-01-31">
-  <owner>csharrison@chromium.org</owner>
+  <owner>csharrison@ch40m1um.qjz9zk</owner>
   <summary>
     This metric is still experimental and not yet ready to be relied upon.
     Measures the time from navigation start to the time the page load was
@@ -720,7 +720,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram base="true"
     name="PageLoad.Experimental.AbortTiming.ForwardBackNavigation" units="ms"
     expires_after="2021-01-31">
-  <owner>csharrison@chromium.org</owner>
+  <owner>csharrison@ch40m1um.qjz9zk</owner>
   <summary>
     This metric is still experimental and not yet ready to be relied upon.
     Measures the time from navigation start to the time the page load was
@@ -730,7 +730,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram base="true" name="PageLoad.Experimental.AbortTiming.NewNavigation"
     units="ms" expires_after="2021-01-31">
-  <owner>csharrison@chromium.org</owner>
+  <owner>csharrison@ch40m1um.qjz9zk</owner>
   <summary>
     This metric is still experimental and not yet ready to be relied upon.
     Measures the time from navigation start to the time the page load was
@@ -740,7 +740,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram base="true" name="PageLoad.Experimental.AbortTiming.Other"
     units="ms" expires_after="M81">
-  <owner>csharrison@chromium.org</owner>
+  <owner>csharrison@ch40m1um.qjz9zk</owner>
   <summary>
     This metric is still experimental and not yet ready to be relied upon.
     Measures the time from navigation start to the time the page load was
@@ -750,7 +750,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram base="true" name="PageLoad.Experimental.AbortTiming.Reload"
     units="ms" expires_after="2021-01-31">
-  <owner>csharrison@chromium.org</owner>
+  <owner>csharrison@ch40m1um.qjz9zk</owner>
   <summary>
     This metric is still experimental and not yet ready to be relied upon.
     Measures the time from navigation start to the time the page load was
@@ -760,7 +760,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram base="true" name="PageLoad.Experimental.AbortTiming.Stop" units="ms"
     expires_after="2021-01-31">
-  <owner>csharrison@chromium.org</owner>
+  <owner>csharrison@ch40m1um.qjz9zk</owner>
   <summary>
     This metric is still experimental and not yet ready to be relied upon.
     Measures the time from navigation start to the time the page load was
@@ -770,8 +770,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="PageLoad.Experimental.Bytes.Cache2" units="KB"
     expires_after="2020-05-30">
-  <owner>jkarlin@chromium.org</owner>
-  <owner>johnidel@chromium.org</owner>
+  <owner>jkarlin@ch40m1um.qjz9zk</owner>
+  <owner>johnidel@ch40m1um.qjz9zk</owner>
   <summary>
     The number of prefiltered (e.g., compressed) response body KiloBytes loaded
     from the cache via the browser process for a page load. Recorded when the
@@ -782,7 +782,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="PageLoad.Experimental.Bytes.Network" units="KB"
     expires_after="2021-01-31">
-  <owner>jkarlin@chromium.org</owner>
+  <owner>jkarlin@ch40m1um.qjz9zk</owner>
   <summary>
     The number of prefiltered (e.g., compressed) response body KiloBytes loaded
     over the network via the browser process for a page load. Does not include
@@ -793,7 +793,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="PageLoad.Experimental.Bytes.NetworkIncludingHeaders"
     units="KB" expires_after="2021-01-31">
-  <owner>jkarlin@chromium.org</owner>
+  <owner>jkarlin@ch40m1um.qjz9zk</owner>
   <summary>
     The number of prefiltered (e.g., compressed) KiloBytes loaded over the
     network via the browser process for a page load. This includes network
@@ -804,8 +804,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="PageLoad.Experimental.Bytes.Total2" units="KB"
     expires_after="2021-03-28">
-  <owner>jkarlin@chromium.org</owner>
-  <owner>johnidel@chromium.org</owner>
+  <owner>jkarlin@ch40m1um.qjz9zk</owner>
+  <owner>johnidel@ch40m1um.qjz9zk</owner>
   <summary>
     The number of prefiltered (e.g., compressed) response body KiloBytes loaded
     via the browser process for a page load. Does not include any header or
@@ -816,8 +816,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="PageLoad.Experimental.Bytes.Unfinished" units="KB"
     expires_after="2021-04-05">
-  <owner>johnidel@chromium.org</owner>
-  <owner>jkarlin@chromium.org</owner>
+  <owner>johnidel@ch40m1um.qjz9zk</owner>
+  <owner>jkarlin@ch40m1um.qjz9zk</owner>
   <summary>
     Total number of network bytes that were used to load resources that did not
     finish loading on the page (e.g. ongoing video). This includes resource
@@ -828,9 +828,9 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="PageLoad.Experimental.ClickInputBurst" units="count"
     expires_after="2021-03-01">
-  <owner>dougarnett@chromium.org</owner>
-  <owner>tbansal@chromium.org</owner>
-  <owner>tdresser@chromium.org</owner>
+  <owner>dougarnett@ch40m1um.qjz9zk</owner>
+  <owner>tbansal@ch40m1um.qjz9zk</owner>
+  <owner>tdresser@ch40m1um.qjz9zk</owner>
   <summary>
     The maximum size click input burst for the page load. A click input burst is
     a sequence of user click inputs at approximately the same screen position
@@ -841,8 +841,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="PageLoad.Experimental.CompletedResources.Cache2"
     units="resources" expires_after="2020-05-30">
-  <owner>johnidel@chromium.org</owner>
-  <owner>jkarlin@chromium.org</owner>
+  <owner>johnidel@ch40m1um.qjz9zk</owner>
+  <owner>jkarlin@ch40m1um.qjz9zk</owner>
   <summary>
     The number of completed resources loaded from the cache via the browser
     process for a page load. Recorded when the page load is terminated. Includes
@@ -852,8 +852,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="PageLoad.Experimental.CompletedResources.Network"
     units="resources" expires_after="M77">
-  <owner>johnidel@chromium.org</owner>
-  <owner>jkarlin@chromium.org</owner>
+  <owner>johnidel@ch40m1um.qjz9zk</owner>
+  <owner>jkarlin@ch40m1um.qjz9zk</owner>
   <summary>
     The number of completed resources loaded from the network via the browser
     process for a page load. Recorded when the page load is terminated.
@@ -862,8 +862,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="PageLoad.Experimental.CompletedResources.Total2"
     units="resources" expires_after="2020-05-30">
-  <owner>johnidel@chromium.org</owner>
-  <owner>jkarlin@chromium.org</owner>
+  <owner>johnidel@ch40m1um.qjz9zk</owner>
+  <owner>jkarlin@ch40m1um.qjz9zk</owner>
   <summary>
     The total number of completed resources loaded via the browser process for a
     page load. Recorded when the page load is terminated.
@@ -873,8 +873,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram
     name="PageLoad.Experimental.EarlyHints.EarlyHintsToFinalResponseStart"
     units="ms" expires_after="2021-06-11">
-  <owner>nhiroki@chromium.org</owner>
-  <owner>chrome-loading@google.com</owner>
+  <owner>nhiroki@ch40m1um.qjz9zk</owner>
+  <owner>chrome-loading@9oo91e.qjz9zk</owner>
   <summary>
     The interval between when the headers of the 103 Early Hints response is
     received in reply to the final HTTP request and when the headers of the
@@ -886,8 +886,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram
     name="PageLoad.Experimental.EarlyHints.FinalRequestStartToEarlyHints"
     units="ms" expires_after="2021-06-11">
-  <owner>nhiroki@chromium.org</owner>
-  <owner>chrome-loading@google.com</owner>
+  <owner>nhiroki@ch40m1um.qjz9zk</owner>
+  <owner>chrome-loading@9oo91e.qjz9zk</owner>
   <summary>
     The interval between when the final HTTP request is sent and when the
     headers of the 103 Early Hints response is received in reply to the request
@@ -898,8 +898,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram
     name="PageLoad.Experimental.EarlyHints.FirstRequestStartToEarlyHints"
     units="ms" expires_after="2021-06-11">
-  <owner>nhiroki@chromium.org</owner>
-  <owner>chrome-loading@google.com</owner>
+  <owner>nhiroki@ch40m1um.qjz9zk</owner>
+  <owner>chrome-loading@9oo91e.qjz9zk</owner>
   <summary>
     The interval between when the first HTTP request is sent and when the
     headers of the 103 Early Hints response is received in reply to the request
@@ -909,8 +909,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="PageLoad.Experimental.InputTiming.InputToNavigationStart"
     units="ms" expires_after="2021-02-14">
-  <owner>sullivan@chromium.org</owner>
-  <owner>tdresser@chromium.org</owner>
+  <owner>sullivan@ch40m1um.qjz9zk</owner>
+  <owner>tdresser@ch40m1um.qjz9zk</owner>
   <summary>
     The time between the OS-level input event that initiated a navigation, and
     the navigation actually starting.
@@ -920,8 +920,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram
     name="PageLoad.Experimental.InputTiming.InputToNavigationStart.Background"
     units="ms" expires_after="2020-09-05">
-  <owner>sullivan@chromium.org</owner>
-  <owner>tdresser@chromium.org</owner>
+  <owner>sullivan@ch40m1um.qjz9zk</owner>
+  <owner>tdresser@ch40m1um.qjz9zk</owner>
   <summary>
     The time between the OS-level input event that initiated a navigation, and
     the navigation actually starting, for background loads.
@@ -931,8 +931,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram
     name="PageLoad.Experimental.InputTiming.InputToNavigationStart.FromLinkClick"
     units="ms" expires_after="2020-09-05">
-  <owner>sullivan@chromium.org</owner>
-  <owner>tdresser@chromium.org</owner>
+  <owner>sullivan@ch40m1um.qjz9zk</owner>
+  <owner>tdresser@ch40m1um.qjz9zk</owner>
   <summary>
     The time between the OS-level click/tap event and navigation start, for
     clicks on links in the renderer.
@@ -942,8 +942,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram
     name="PageLoad.Experimental.InputTiming.InputToNavigationStart.FromOmnibox"
     units="ms" expires_after="2020-09-05">
-  <owner>sullivan@chromium.org</owner>
-  <owner>tdresser@chromium.org</owner>
+  <owner>sullivan@ch40m1um.qjz9zk</owner>
+  <owner>tdresser@ch40m1um.qjz9zk</owner>
   <summary>
     The time between the OS-level keypress/tap event in the omnibox and
     navigation start, for navigations from the omnibox.
@@ -953,8 +953,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram
     name="PageLoad.Experimental.NavigationTiming.FinalLoaderCallbackToNavigationCommitSent"
     units="ms" expires_after="2021-05-08">
-  <owner>nhiroki@chromium.org</owner>
-  <owner>chrome-loading@google.com</owner>
+  <owner>nhiroki@ch40m1um.qjz9zk</owner>
+  <owner>chrome-loading@9oo91e.qjz9zk</owner>
   <summary>
     The interval between when a callback for the navigation loader is last
     invoked and when navigation commit message is sent to a renderer process for
@@ -965,8 +965,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram
     name="PageLoad.Experimental.NavigationTiming.FinalRequestStartToFinalResponseStart"
     units="ms" expires_after="2021-05-08">
-  <owner>nhiroki@chromium.org</owner>
-  <owner>chrome-loading@google.com</owner>
+  <owner>nhiroki@ch40m1um.qjz9zk</owner>
+  <owner>chrome-loading@9oo91e.qjz9zk</owner>
   <summary>
     The interval between when the final HTTP request is sent and when the
     headers of the final HTTP response is received for the main resource of a
@@ -977,8 +977,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram
     name="PageLoad.Experimental.NavigationTiming.FinalResponseStartToFinalLoaderCallback"
     units="ms" expires_after="2021-05-08">
-  <owner>nhiroki@chromium.org</owner>
-  <owner>chrome-loading@google.com</owner>
+  <owner>nhiroki@ch40m1um.qjz9zk</owner>
+  <owner>chrome-loading@9oo91e.qjz9zk</owner>
   <summary>
     The interval between when the headers of the final HTTP response is received
     and when a callback for the navigation loader is last invoked for the main
@@ -989,8 +989,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram
     name="PageLoad.Experimental.NavigationTiming.FirstRequestStartToFirstResponseStart"
     units="ms" expires_after="2021-05-08">
-  <owner>nhiroki@chromium.org</owner>
-  <owner>chrome-loading@google.com</owner>
+  <owner>nhiroki@ch40m1um.qjz9zk</owner>
+  <owner>chrome-loading@9oo91e.qjz9zk</owner>
   <summary>
     The interval between when the first HTTP request is sent and when the
     headers of the first HTTP response is received for the main resource of a
@@ -1001,8 +1001,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram
     name="PageLoad.Experimental.NavigationTiming.FirstResponseStartToFirstLoaderCallback"
     units="ms" expires_after="2021-05-08">
-  <owner>nhiroki@chromium.org</owner>
-  <owner>chrome-loading@google.com</owner>
+  <owner>nhiroki@ch40m1um.qjz9zk</owner>
+  <owner>chrome-loading@9oo91e.qjz9zk</owner>
   <summary>
     The interval between when the headers of the first HTTP response is received
     and when a callback for the navigation loader is first invoked for the main
@@ -1013,8 +1013,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram
     name="PageLoad.Experimental.NavigationTiming.NavigationStartToFinalLoaderCallback"
     units="ms" expires_after="2021-05-08">
-  <owner>nhiroki@chromium.org</owner>
-  <owner>chrome-loading@google.com</owner>
+  <owner>nhiroki@ch40m1um.qjz9zk</owner>
+  <owner>chrome-loading@9oo91e.qjz9zk</owner>
   <summary>
     The time relative to navigation start that a callback for the navigation
     loader is last invoked for the main resource of a main frame navigation.
@@ -1024,8 +1024,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram
     name="PageLoad.Experimental.NavigationTiming.NavigationStartToFinalRequestStart"
     units="ms" expires_after="2021-05-08">
-  <owner>nhiroki@chromium.org</owner>
-  <owner>chrome-loading@google.com</owner>
+  <owner>nhiroki@ch40m1um.qjz9zk</owner>
+  <owner>chrome-loading@9oo91e.qjz9zk</owner>
   <summary>
     The time relative to navigation start that the final HTTP request is sent
     for the main resource of a main frame navigation.
@@ -1035,8 +1035,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram
     name="PageLoad.Experimental.NavigationTiming.NavigationStartToFinalResponseStart"
     units="ms" expires_after="2021-05-08">
-  <owner>nhiroki@chromium.org</owner>
-  <owner>chrome-loading@google.com</owner>
+  <owner>nhiroki@ch40m1um.qjz9zk</owner>
+  <owner>chrome-loading@9oo91e.qjz9zk</owner>
   <summary>
     The time relative to navigation start that the headers of the final HTTP
     response is received for the main resource of a main frame navigation.
@@ -1046,8 +1046,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram
     name="PageLoad.Experimental.NavigationTiming.NavigationStartToFirstLoaderCallback"
     units="ms" expires_after="2021-05-08">
-  <owner>nhiroki@chromium.org</owner>
-  <owner>chrome-loading@google.com</owner>
+  <owner>nhiroki@ch40m1um.qjz9zk</owner>
+  <owner>chrome-loading@9oo91e.qjz9zk</owner>
   <summary>
     The time relative to navigation start that a callback for the navigation
     loader is first invoked for the main resource of a main frame navigation.
@@ -1057,8 +1057,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram
     name="PageLoad.Experimental.NavigationTiming.NavigationStartToFirstRequestStart"
     units="ms" expires_after="2021-05-08">
-  <owner>nhiroki@chromium.org</owner>
-  <owner>chrome-loading@google.com</owner>
+  <owner>nhiroki@ch40m1um.qjz9zk</owner>
+  <owner>chrome-loading@9oo91e.qjz9zk</owner>
   <summary>
     The time relative to navigation start that the first HTTP request is sent
     for the main resource of a main frame navigation.
@@ -1068,8 +1068,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram
     name="PageLoad.Experimental.NavigationTiming.NavigationStartToFirstResponseStart"
     units="ms" expires_after="2021-05-08">
-  <owner>nhiroki@chromium.org</owner>
-  <owner>chrome-loading@google.com</owner>
+  <owner>nhiroki@ch40m1um.qjz9zk</owner>
+  <owner>chrome-loading@9oo91e.qjz9zk</owner>
   <summary>
     The time relative to navigation start that the headers of the first HTTP
     response is received for the main resource of a main frame navigation.
@@ -1079,8 +1079,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram
     name="PageLoad.Experimental.NavigationTiming.NavigationStartToNavigationCommitSent"
     units="ms" expires_after="2021-05-08">
-  <owner>nhiroki@chromium.org</owner>
-  <owner>chrome-loading@google.com</owner>
+  <owner>nhiroki@ch40m1um.qjz9zk</owner>
+  <owner>chrome-loading@9oo91e.qjz9zk</owner>
   <summary>
     The time relative to navigation start that navigation commit message for a
     main frame navigation is sent to a renderer process.
@@ -1089,8 +1089,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="PageLoad.Experimental.PageLoadType" enum="PageLoadType"
     expires_after="2021-01-30">
-  <owner>npm@chromium.org</owner>
-  <owner>speed-metrics-dev@chromium.org</owner>
+  <owner>npm@ch40m1um.qjz9zk</owner>
+  <owner>speed-metrics-dev@ch40m1um.qjz9zk</owner>
   <summary>
     Determines the PageLoadType for this page load. That is, records whether the
     page was never foregrounded, was foregrounded but did not reach FCP, or did
@@ -1103,8 +1103,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="PageLoad.Experimental.PaintTiming.FirstMeaningfulPaintStatus"
     enum="FirstMeaningfulPaintStatus" expires_after="2021-01-31">
-  <owner>ksakamoto@chromium.org</owner>
-  <owner>speed-metrics-dev@chromium.org</owner>
+  <owner>ksakamoto@ch40m1um.qjz9zk</owner>
+  <owner>speed-metrics-dev@ch40m1um.qjz9zk</owner>
   <summary>
     Records whether the First Meaningful Paint metric was reported for the page
     load, or why it wasn't if not. See http://bit.ly/ttfmp-doc for the
@@ -1114,7 +1114,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="PageLoad.Experimental.PaintTiming.InputToFirstContentfulPaint"
     units="ms" expires_after="2021-01-31">
-  <owner>sullivan@chromium.org</owner>
+  <owner>sullivan@ch40m1um.qjz9zk</owner>
   <summary>
     The time between the OS-level input event that initiated a navigation, and
     the first contentful paint of the page that was loaded in the navigation.
@@ -1124,7 +1124,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram
     name="PageLoad.Experimental.PaintTiming.InputToFirstContentfulPaint.Background"
     units="ms" expires_after="2020-09-05">
-  <owner>sullivan@chromium.org</owner>
+  <owner>sullivan@ch40m1um.qjz9zk</owner>
   <summary>
     The time between the OS-level input event that initiated a navigation, and
     the first contentful paint of the page that was loaded in the navigation,
@@ -1134,7 +1134,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="PageLoad.Experimental.PaintTiming.InputToFirstPaint"
     units="ms" expires_after="2020-09-05">
-  <owner>sullivan@chromium.org</owner>
+  <owner>sullivan@ch40m1um.qjz9zk</owner>
   <summary>
     The time between the OS-level input event that initiated a navigation, and
     the first paint of the page that was loaded in the navigation.
@@ -1144,7 +1144,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram
     name="PageLoad.Experimental.PaintTiming.InputToFirstPaint.Background"
     units="ms" expires_after="2020-09-05">
-  <owner>sullivan@chromium.org</owner>
+  <owner>sullivan@ch40m1um.qjz9zk</owner>
   <summary>
     The time between the OS-level input event that initiated a navigation, and
     the first paint of the page that was loaded in the navigation, for
@@ -1155,22 +1155,22 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram
     name="PageLoad.Experimental.PaintTiming.NavigationToFirstMeaningfulPaint"
     units="ms" expires_after="2021-01-31">
-  <owner>ksakamoto@chromium.org</owner>
-  <owner>speed-metrics-dev@chromium.org</owner>
+  <owner>ksakamoto@ch40m1um.qjz9zk</owner>
+  <owner>speed-metrics-dev@ch40m1um.qjz9zk</owner>
   <summary>
     Measures the time from navigation timing's navigation start to the first
     meaningful paint (http://bit.ly/ttfmp-doc), for main frame documents.
 
     Do not modify this metric in any way without contacting
-    speed-metrics-dev@chromium.org.
+    speed-metrics-dev@ch40m1um.qjz9zk.
   </summary>
 </histogram>
 
 <histogram
     name="PageLoad.Experimental.PaintTiming.ParseStartToFirstMeaningfulPaint"
     units="ms" expires_after="2021-03-27">
-  <owner>ksakamoto@chromium.org</owner>
-  <owner>speed-metrics-dev@chromium.org</owner>
+  <owner>ksakamoto@ch40m1um.qjz9zk</owner>
+  <owner>speed-metrics-dev@ch40m1um.qjz9zk</owner>
   <summary>
     Measures the time from when the HTML parser started, to the first meaningful
     paint (http://bit.ly/ttfmp-doc), for main frame documents.
@@ -1179,8 +1179,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="PageLoad.Experimental.TotalForegroundDuration" units="ms"
     expires_after="2021-01-30">
-  <owner>npm@chromium.org</owner>
-  <owner>speed-metrics-dev@chromium.org</owner>
+  <owner>npm@ch40m1um.qjz9zk</owner>
+  <owner>speed-metrics-dev@ch40m1um.qjz9zk</owner>
   <summary>
     The total amount of time the page spent in the foreground. Note that this
     metric adds all foreground durations occurring for the page. For example: if
@@ -1195,8 +1195,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="PageLoad.FrameCounts.AdFrames.PerFrame.CreativeOriginStatus"
     enum="CrossOriginCreativeStatus" expires_after="2020-12-31">
-  <owner>cammie@chromium.org</owner>
-  <owner>jkarlin@chromium.org</owner>
+  <owner>cammie@ch40m1um.qjz9zk</owner>
+  <owner>jkarlin@ch40m1um.qjz9zk</owner>
   <summary>
     For each identified ad frame, whether the origin of the ad creative frame
     matches or differs from the origin of the main frame.
@@ -1211,8 +1211,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram
     name="PageLoad.FrameCounts.AdFrames.PerFrame.CreativeOriginStatusWithThrottling"
     enum="CrossOriginCreativeStatusWithThrottling" expires_after="2020-12-31">
-  <owner>cammie@chromium.org</owner>
-  <owner>jkarlin@chromium.org</owner>
+  <owner>cammie@ch40m1um.qjz9zk</owner>
+  <owner>jkarlin@ch40m1um.qjz9zk</owner>
   <summary>
     For each identified ad frame, whether the origin of the ad creative frame
     matches or differs from the origin of the main frame, further split by
@@ -1230,7 +1230,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="PageLoad.FrameCounts.AdFrames.PerFrame.OriginStatus"
     enum="CrossOriginAdStatus" expires_after="M88">
-  <owner>ericrobinson@chromium.org</owner>
+  <owner>ericrobinson@ch40m1um.qjz9zk</owner>
   <summary>
     For each identified ad frame, whether the origin of the ad matches the
     origin of the main frame, differs from the origin of the main frame, or is
@@ -1246,8 +1246,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram base="true"
     name="PageLoad.FrameCounts.AdFrames.PerFrame.SqrtNumberOfPixels"
     units="pixels" expires_after="2021-01-30">
-  <owner>johnidel@chromium.org</owner>
-  <owner>jkarlin@chromium.org</owner>
+  <owner>johnidel@ch40m1um.qjz9zk</owner>
+  <owner>jkarlin@ch40m1um.qjz9zk</owner>
   <summary>
     The square root of the area of a root adframe in pixels. Only recorded for
     ad frames with non-zero total bytes. Recorded when the page is destroyed or
@@ -1259,8 +1259,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="PageLoad.FrameCounts.AdFrames.PerFrame.UserActivation"
     enum="AdUserActivationStatus" expires_after="2021-01-17">
-  <owner>johnidel@chromium.org</owner>
-  <owner>csharrison@chromium.org</owner>
+  <owner>johnidel@ch40m1um.qjz9zk</owner>
+  <owner>csharrison@ch40m1um.qjz9zk</owner>
   <summary>
     For each identified ad frame, whether the sticky user activation bit was
     ever set on the frame. Recorded for each ad frame when the page is destroyed
@@ -1275,7 +1275,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="PageLoad.FrameCounts.AdFrames.Total" units="Ad frames"
     expires_after="2020-10-01">
-  <owner>jkarlin@chromium.org</owner>
+  <owner>jkarlin@ch40m1um.qjz9zk</owner>
   <summary>
     The number of frames on the page that have loaded more than 0 bytes of
     content or had non-zero CPU usage.
@@ -1290,8 +1290,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram base="true" name="PageLoad.HeavyAds.ComputedType2"
     enum="HeavyAdStatus2" expires_after="2021-02-01">
-  <owner>johnidel@chromium.org</owner>
-  <owner>jkarlin@chromium.org</owner>
+  <owner>johnidel@ch40m1um.qjz9zk</owner>
+  <owner>jkarlin@ch40m1um.qjz9zk</owner>
   <summary>
     Records heavy ad type for each ad frame, as determined by the first
     threshold hit (see FrameData::HeavyadStatus). This is recorded regardless of
@@ -1306,8 +1306,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram base="true" name="PageLoad.HeavyAds.ComputedTypeWithThresholdNoise"
     enum="HeavyAdStatus2" expires_after="2021-02-01">
-  <owner>johnidel@chromium.org</owner>
-  <owner>jkarlin@chromium.org</owner>
+  <owner>johnidel@ch40m1um.qjz9zk</owner>
+  <owner>jkarlin@ch40m1um.qjz9zk</owner>
   <summary>
     Records heavy ad type for each ad frame, as determined by the first
     threshold hit (see FrameData::HeavyadStatus). This is recorded regardless of
@@ -1326,8 +1326,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram base="true" name="PageLoad.HeavyAds.InterventionType2"
     enum="HeavyAdStatus2" expires_after="2021-02-01">
-  <owner>johnidel@chromium.org</owner>
-  <owner>jkarlin@chromium.org</owner>
+  <owner>johnidel@ch40m1um.qjz9zk</owner>
+  <owner>jkarlin@ch40m1um.qjz9zk</owner>
   <summary>
     Records the type of heavy ad unloaded by the heavy ad intervention. Heavy ad
     type is determined by the first threshold hit. This is not recorded for ad
@@ -1342,7 +1342,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="PageLoad.InputTiming.NavigationToFirstNonScroll.AfterPaint"
     units="ms" expires_after="M77">
-  <owner>tdresser@chromium.org</owner>
+  <owner>tdresser@ch40m1um.qjz9zk</owner>
   <summary>
     Measures the time to first non-scroll input after the first paint.
   </summary>
@@ -1350,8 +1350,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="PageLoad.InputTiming.NavigationToFirstScroll.AfterPaint"
     units="ms" expires_after="2021-06-22">
-  <owner>tdresser@chromium.org</owner>
-  <owner>input-dev@chromium.org</owner>
+  <owner>tdresser@ch40m1um.qjz9zk</owner>
+  <owner>input-dev@ch40m1um.qjz9zk</owner>
   <summary>
     Measures the time to first scroll input after the first paint.
   </summary>
@@ -1360,15 +1360,15 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram
     name="PageLoad.InteractiveTiming.FirstInputDelay.AfterBackForwardCacheRestore"
     units="ms" expires_after="2021-06-30">
-  <owner>altimin@chromium.org</owner>
-  <owner>hajimehoshi@chromium.org</owner>
-  <owner>bfcache-dev@chromium.org</owner>
-  <owner>speed-metrics-dev@chromium.org</owner>
+  <owner>altimin@ch40m1um.qjz9zk</owner>
+  <owner>hajimehoshi@ch40m1um.qjz9zk</owner>
+  <owner>bfcache-dev@ch40m1um.qjz9zk</owner>
+  <owner>speed-metrics-dev@ch40m1um.qjz9zk</owner>
   <summary>
     Measures First Input Delay, the duration between the hardware timestamp and
     the start of event processing on the main thread for the first meaningful
     input per back-forward navigation. Recorded on first page interaction after
-    the page is restored from the back-forward cache. See https://goo.gl/tr1oTZ
+    the page is restored from the back-forward cache. See https://goo.gl.qjz9zk/tr1oTZ
     for a detailed explanation. Excludes scrolls.
   </summary>
 </histogram>
@@ -1377,17 +1377,17 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
     expires_after="never">
 <!-- expires-never: guiding metric (internal: go/chrome-browser-guiding-metrics) -->
 
-  <owner>tdresser@chromium.org</owner>
-  <owner>speed-metrics-dev@chromium.org</owner>
-  <owner>chrome-analysis-team@google.com</owner>
+  <owner>tdresser@ch40m1um.qjz9zk</owner>
+  <owner>speed-metrics-dev@ch40m1um.qjz9zk</owner>
+  <owner>chrome-analysis-team@9oo91e.qjz9zk</owner>
   <summary>
     Measures First Input Delay, the duration between the hardware timestamp and
     the start of event processing on the main thread for the first meaningful
     input per navigation. Recorded on first page interaction. See
-    https://goo.gl/tr1oTZ for a detailed explanation. Excludes scrolls.
+    https://goo.gl.qjz9zk/tr1oTZ for a detailed explanation. Excludes scrolls.
 
     Do not modify this metric in any way without contacting
-    speed-metrics-dev@chromium.org AND chrome-analysis-team@google.com.
+    speed-metrics-dev@ch40m1um.qjz9zk AND chrome-analysis-team@9oo91e.qjz9zk.
 
     Log of major changes: http://bit.ly/chrome-speed-metrics-changelog
   </summary>
@@ -1395,12 +1395,12 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="PageLoad.InteractiveTiming.FirstInputTimestamp4" units="ms"
     expires_after="2021-02-21">
-  <owner>tdresser@chromium.org</owner>
-  <owner>speed-metrics-dev@chromium.org</owner>
+  <owner>tdresser@ch40m1um.qjz9zk</owner>
+  <owner>speed-metrics-dev@ch40m1um.qjz9zk</owner>
   <summary>
     The duration between navigation start and the hardware timestamp of the
     first meaningful input per navigation. Recorded on first page interaction.
-    See https://goo.gl/tr1oTZ for a detailed explanation. Excludes scrolls.
+    See https://goo.gl.qjz9zk/tr1oTZ for a detailed explanation. Excludes scrolls.
   </summary>
 </histogram>
 
@@ -1408,15 +1408,15 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
     expires_after="never">
 <!-- expires-never: guiding metric (internal: go/chrome-browser-guiding-metrics) -->
 
-  <owner>tdresser@chromium.org</owner>
-  <owner>speed-metrics-dev@chromium.org</owner>
-  <owner>chrome-analysis-team@google.com</owner>
+  <owner>tdresser@ch40m1um.qjz9zk</owner>
+  <owner>speed-metrics-dev@ch40m1um.qjz9zk</owner>
+  <owner>chrome-analysis-team@9oo91e.qjz9zk</owner>
   <summary>
     The duration between the hardware timestamp and the start of event
     processing on the main thread for a meaningful input. Excludes scrolls.
 
     Do not modify this metric in any way without contacting
-    speed-metrics-dev@chromium.org AND chrome-analysis-team@google.com.
+    speed-metrics-dev@ch40m1um.qjz9zk AND chrome-analysis-team@9oo91e.qjz9zk.
 
     WARNING: The long tail of this metric is buggy on Mac (overflows for a
     subset of users) which can lead to surprising false regressions or
@@ -1428,8 +1428,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
     expires_after="never">
 <!-- expires-never: diagnostic to InputDelay3 guiding metric (internal: go/chrome-browser-guiding-metrics) -->
 
-  <owner>sullivan@chromium.org</owner>
-  <owner>speed-metrics-dev@chromium.org</owner>
+  <owner>sullivan@ch40m1um.qjz9zk</owner>
+  <owner>speed-metrics-dev@ch40m1um.qjz9zk</owner>
   <summary>
     The duration between navigation start and the hardware timestamp of a
     meaningful input. Excludes scrolls.
@@ -1438,8 +1438,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="PageLoad.InteractiveTiming.LongestInputDelay4" units="ms"
     expires_after="2021-01-23">
-  <owner>sullivan@chromium.org</owner>
-  <owner>speed-metrics-dev@chromium.org</owner>
+  <owner>sullivan@ch40m1um.qjz9zk</owner>
+  <owner>speed-metrics-dev@ch40m1um.qjz9zk</owner>
   <summary>
     Measures longest Input Delay, the longest duration between the hardware
     timestamp and the start of event processing on the main thread for the
@@ -1449,8 +1449,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="PageLoad.InteractiveTiming.LongestInputTimestamp4" units="ms"
     expires_after="2021-01-23">
-  <owner>sullivan@chromium.org</owner>
-  <owner>speed-metrics-dev@chromium.org</owner>
+  <owner>sullivan@ch40m1um.qjz9zk</owner>
+  <owner>speed-metrics-dev@ch40m1um.qjz9zk</owner>
   <summary>
     The duration between navigation start and the hardware timestamp of the
     meaningful input with longest queuing delay per navigation. Excludes
@@ -1460,32 +1460,32 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="PageLoad.Internal.ClientRedirect.FirstPaintToNavigation"
     units="ms" expires_after="M77">
-  <owner>bmcquade@chromium.org</owner>
+  <owner>bmcquade@ch40m1um.qjz9zk</owner>
   <summary>
     The delay between first paint and a client-side redirect navigation, for
     pages that reported a first paint. This metric is only intended to help in
     choosing a heuristic delay to distinguish between client-side redirects and
     other client initiated navigations, and will be deprecated in M54. Please
-    contact bmcquade@chromium.org before using this metric.
+    contact bmcquade@ch40m1um.qjz9zk before using this metric.
   </summary>
 </histogram>
 
 <histogram name="PageLoad.Internal.ClientRedirect.NavigationWithoutPaint"
     enum="Boolean" expires_after="2021-02-14">
-  <owner>bmcquade@chromium.org</owner>
+  <owner>bmcquade@ch40m1um.qjz9zk</owner>
   <summary>
     Counts how often a client-side redirect was initiated from a page that did
     not report a first paint. This metric is only intended to help in choosing a
     heuristic delay to distinguish between client-side redirects and other
     client initiated navigations, and will be deprecated in M54. Please contact
-    bmcquade@chromium.org before using this metric.
+    bmcquade@ch40m1um.qjz9zk before using this metric.
   </summary>
 </histogram>
 
 <histogram name="PageLoad.Internal.ErrorCode" enum="InternalErrorLoadEvent"
     expires_after="2021-01-31">
-  <owner>csharrison@chromium.org</owner>
-  <owner>bmcquade@chromium.org</owner>
+  <owner>csharrison@ch40m1um.qjz9zk</owner>
+  <owner>bmcquade@ch40m1um.qjz9zk</owner>
   <summary>
     Counts of various internal error conditions in the page_load_metrics system.
   </summary>
@@ -1493,13 +1493,13 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="PageLoad.Internal.NavigationStartedInForeground"
     enum="BooleanForeground" expires_after="2021-01-31">
-  <owner>bmcquade@chromium.org</owner>
+  <owner>bmcquade@ch40m1um.qjz9zk</owner>
   <summary>Whether a navigation started in the foreground.</summary>
 </histogram>
 
 <histogram name="PageLoad.Internal.OutOfOrderInterFrameTiming" units="ms"
     expires_after="M77">
-  <owner>bmcquade@chromium.org</owner>
+  <owner>bmcquade@ch40m1um.qjz9zk</owner>
   <summary>
     The difference in magnitude between existing and updated timing, for
     inter-frame timings that are received out of order. Page load metrics
@@ -1511,7 +1511,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="PageLoad.Internal.PageLoadCompleted.AfterAppBackground"
     enum="BooleanStartedCompleted" expires_after="M81">
-  <owner>bmcquade@chromium.org</owner>
+  <owner>bmcquade@ch40m1um.qjz9zk</owner>
   <summary>
     Whether a page load completed after the app entered the background. We log a
     'Started' value for each PageLoadTracker that is active when the app enters
@@ -1520,14 +1520,14 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
     trackers are destroyed while the app is in the background before they are
     able to run their destructor. This metric is only intended to help in
     understanding how often app background leads to data loss, and will be
-    deprecated in a subsequent release. Please contact bmcquade@chromium.org
+    deprecated in a subsequent release. Please contact bmcquade@ch40m1um.qjz9zk
     before using this metric.
   </summary>
 </histogram>
 
 <histogram name="PageLoad.Internal.PageLoadTimingStatus"
     enum="PageLoadTimingStatus" expires_after="2021-01-31">
-  <owner>bmcquade@chromium.org</owner>
+  <owner>bmcquade@ch40m1um.qjz9zk</owner>
   <summary>
     The status of PageLoadTiming structs received from the render process over
     IPC.
@@ -1537,8 +1537,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram
     name="PageLoad.Internal.PaintTiming.ExperimentalLargestContentfulPaint.ContentType"
     enum="LargestContentType" expires_after="2020-12-11">
-  <owner>npm@chromium.org</owner>
-  <owner>speed-metrics-dev@chromium.org</owner>
+  <owner>npm@ch40m1um.qjz9zk</owner>
+  <owner>speed-metrics-dev@ch40m1um.qjz9zk</owner>
   <summary>
     Measures whether the largest contentful paint, whose timestamp is measured
     by PageLoad.PaintTiming.NavigationToExperimentalLargestContentfulPaint,
@@ -1551,8 +1551,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram
     name="PageLoad.Internal.PaintTiming.ExperimentalLargestContentfulPaint.MainFrame.ContentType"
     enum="LargestContentType" expires_after="2020-12-11">
-  <owner>npm@chromium.org</owner>
-  <owner>speed-metrics-dev@chromium.org</owner>
+  <owner>npm@ch40m1um.qjz9zk</owner>
+  <owner>speed-metrics-dev@ch40m1um.qjz9zk</owner>
   <summary>
     Measures whether the largest content paint in the main frame, whose
     timestamp is measured by
@@ -1566,9 +1566,9 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram
     name="PageLoad.Internal.PaintTiming.LargestContentfulPaint.ContentType"
     enum="LargestContentType" expires_after="2021-01-31">
-  <owner>maxlg@chromium.org</owner>
-  <owner>npm@chromium.org</owner>
-  <owner>speed-metrics-dev@chromium.org</owner>
+  <owner>maxlg@ch40m1um.qjz9zk</owner>
+  <owner>npm@ch40m1um.qjz9zk</owner>
+  <owner>speed-metrics-dev@ch40m1um.qjz9zk</owner>
   <summary>
     Measures whether the largest contentful paint, whose timestamp is measured
     by PageLoad.PaintTiming.NavigationToLargestContentfulPaint, comes from text
@@ -1580,9 +1580,9 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram
     name="PageLoad.Internal.PaintTiming.LargestContentfulPaint.MainFrame.ContentType"
     enum="LargestContentType" expires_after="2021-01-31">
-  <owner>maxlg@chromium.org</owner>
-  <owner>npm@chromium.org</owner>
-  <owner>speed-metrics-dev@chromium.org</owner>
+  <owner>maxlg@ch40m1um.qjz9zk</owner>
+  <owner>npm@ch40m1um.qjz9zk</owner>
+  <owner>speed-metrics-dev@ch40m1um.qjz9zk</owner>
   <summary>
     Measures whether the largest content paint in the main frame, whose
     timestamp is measured by
@@ -1596,7 +1596,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram
     name="PageLoad.Internal.PaintTiming.NavigationToFirstContentfulPaint.InitiatingProcess"
     enum="ProcessType2" expires_after="2020-09-05">
-  <owner>sullivan@chromium.org</owner>
+  <owner>sullivan@ch40m1um.qjz9zk</owner>
   <summary>
     Breakdown of NavigationToFirstContentfulPaint counts by process that
     initiated the navigation (this will only be renderer or browser).
@@ -1605,7 +1605,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="PageLoad.Internal.Prerender" enum="BooleanHit"
     expires_after="M77">
-  <owner>bmcquade@chromium.org</owner>
+  <owner>bmcquade@ch40m1um.qjz9zk</owner>
   <summary>
     Counts the number of prerender navigations. Only logs true values.
   </summary>
@@ -1613,7 +1613,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="PageLoad.Internal.ProvisionalAbortChainSize.ForwardBack"
     units="length" expires_after="2018-08-30">
-  <owner>csharrison@chromium.org</owner>
+  <owner>csharrison@ch40m1um.qjz9zk</owner>
   <summary>
     This histogram counts the number of provisional loads aborted by other
     navigations, until a final forward back navigation commits.
@@ -1622,7 +1622,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="PageLoad.Internal.ProvisionalAbortChainSize.NewNavigation"
     units="length" expires_after="M77">
-  <owner>csharrison@chromium.org</owner>
+  <owner>csharrison@ch40m1um.qjz9zk</owner>
   <summary>
     This histogram counts the number of provisional loads aborted by new
     navigations, until a final new navigation commits.
@@ -1631,7 +1631,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="PageLoad.Internal.ProvisionalAbortChainSize.NoCommit"
     units="length" expires_after="2018-08-30">
-  <owner>csharrison@chromium.org</owner>
+  <owner>csharrison@ch40m1um.qjz9zk</owner>
   <summary>
     This histogram counts the number of provisional loads aborted by new
     navigations. In this case the chain never ends with a commit. This is logged
@@ -1641,7 +1641,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="PageLoad.Internal.ProvisionalAbortChainSize.Reload"
     units="length" expires_after="2018-08-30">
-  <owner>csharrison@chromium.org</owner>
+  <owner>csharrison@ch40m1um.qjz9zk</owner>
   <summary>
     This histogram counts the number of provisional loads aborted by other
     navigations, until a final reload navigation commits.
@@ -1650,7 +1650,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="PageLoad.Internal.ProvisionalAbortChainSize.SameURL"
     units="length" expires_after="2018-08-30">
-  <owner>csharrison@chromium.org</owner>
+  <owner>csharrison@ch40m1um.qjz9zk</owner>
   <summary>
     This histogram counts the number of consecutive provisional loads aborted by
     other navigations with the same url (before redirects). It's logged when a
@@ -1661,7 +1661,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="PageLoad.Internal.Renderer.PaintTiming.SwapResult"
     enum="SwapResult" expires_after="M81">
-  <owner>panicker@chromium.org</owner>
+  <owner>panicker@ch40m1um.qjz9zk</owner>
   <summary>
     For first paint, first contentful paint, first meaningful paint, first text
     paint, and first image paint, we use the swap timestamp of the corresponding
@@ -1677,7 +1677,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="PageLoad.Internal.Renderer.PresentationTime.DeltaFromSwapTime"
     units="ms" expires_after="2020-09-27">
-  <owner>sadrul@chromium.org</owner>
+  <owner>sadrul@ch40m1um.qjz9zk</owner>
   <summary>
     'Swap time' is the timestamp of the renderer submitting a CompositorFrame,
     and 'Presentation time' is the timestamp of the frame becoming visible on
@@ -1693,7 +1693,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="PageLoad.Internal.Renderer.PresentationTime.Valid"
     enum="Boolean" expires_after="2020-09-27">
-  <owner>sadrul@chromium.org</owner>
+  <owner>sadrul@ch40m1um.qjz9zk</owner>
   <summary>
     This boolean keeps track of whether a valid presentation-timestamp was
     received or not. This is reported only for compositor-frames that report a
@@ -1704,8 +1704,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="PageLoad.LayoutInstability.CumulativeShiftScore"
     units="scorex10" expires_after="2021-01-31">
-  <owner>bmcquade@chromium.org</owner>
-  <owner>skobes@chromium.org</owner>
+  <owner>bmcquade@ch40m1um.qjz9zk</owner>
+  <owner>skobes@ch40m1um.qjz9zk</owner>
   <summary>
     Measures the cumulative layout shift score (bit.ly/lsm-explainer) that has
     occurred on the page (including all subframes). Recorded at the end of the
@@ -1720,9 +1720,9 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram
     name="PageLoad.LayoutInstability.CumulativeShiftScore.AfterBackForwardCacheRestore"
     units="scorex10" expires_after="2021-06-30">
-  <owner>altimin@chromium.org</owner>
-  <owner>hajimehoshi@chromium.org</owner>
-  <owner>bfcache-dev@chromium.org</owner>
+  <owner>altimin@ch40m1um.qjz9zk</owner>
+  <owner>hajimehoshi@ch40m1um.qjz9zk</owner>
+  <owner>bfcache-dev@ch40m1um.qjz9zk</owner>
   <summary>
     Measures the cumulative layout shift score (bit.ly/3fQz29y) that has
     occurred on the page (including all subframes) after the page is restored
@@ -1733,8 +1733,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="PageLoad.LayoutInstability.CumulativeShiftScore.MainFrame"
     units="scorex10" expires_after="2021-01-31">
-  <owner>bmcquade@chromium.org</owner>
-  <owner>skobes@chromium.org</owner>
+  <owner>bmcquade@ch40m1um.qjz9zk</owner>
+  <owner>skobes@ch40m1um.qjz9zk</owner>
   <summary>
     Measures the cumulative layout shift score (bit.ly/lsm-explainer) that has
     occurred in the main frame. Recorded at the end of the page lifetime, such
@@ -1745,9 +1745,9 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram
     name="PageLoad.LayoutInstability.CumulativeShiftScore.MainFrame.AfterBackForwardCacheRestore"
     units="scorex10" expires_after="2021-06-30">
-  <owner>altimin@chromium.org</owner>
-  <owner>hajimehoshi@chromium.org</owner>
-  <owner>bfcache-dev@chromium.org</owner>
+  <owner>altimin@ch40m1um.qjz9zk</owner>
+  <owner>hajimehoshi@ch40m1um.qjz9zk</owner>
+  <owner>bfcache-dev@ch40m1um.qjz9zk</owner>
   <summary>
     Measures the cumulative layout shift score (bit.ly/3fQz29y) that has
     occurred in the main frame after the page is restored from the back-forward
@@ -1758,7 +1758,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="PageLoad.Navigation.RedirectChainLength" units="urls"
     expires_after="M77">
-  <owner>csharrison@chromium.org</owner>
+  <owner>csharrison@ch40m1um.qjz9zk</owner>
   <summary>
     The number of URLs in the redirect chain for this navigation. This excludes
     the first URL.
@@ -1767,7 +1767,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="PageLoad.PageTiming.ForegroundDuration" units="ms"
     expires_after="2021-01-31">
-  <owner>bmcquade@chromium.org</owner>
+  <owner>bmcquade@ch40m1um.qjz9zk</owner>
   <summary>
     For page loads that start in the foreground, measures the duration of time
     until one of the following events occurs: the load of the main resource
@@ -1783,7 +1783,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram
     name="PageLoad.PageTiming.ForegroundDuration.PageEndReason.ForwardBackNavigation.UserGesture"
     units="ms" expires_after="M81">
-  <owner>jkarlin@chromium.org</owner>
+  <owner>jkarlin@ch40m1um.qjz9zk</owner>
   <summary>
     The time since navigation start before the user presses the back button on a
     page. Only measures page loads that remained in foreground and were created
@@ -1793,8 +1793,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="PageLoad.PageTiming.NavigationToFailedProvisionalLoad"
     units="ms" expires_after="M77">
-  <owner>bmcquade@chromium.org</owner>
-  <owner>shivanisha@chromium.org</owner>
+  <owner>bmcquade@ch40m1um.qjz9zk</owner>
+  <owner>shivanisha@ch40m1um.qjz9zk</owner>
   <summary>
     Measures the time from navigation timing's navigation start to the time the
     provisional load failed. Only measures provisional loads that failed in the
@@ -1804,8 +1804,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="PageLoad.PageTiming.NavigationToFirstForeground" units="ms"
     expires_after="2021-01-31">
-  <owner>bmcquade@chromium.org</owner>
-  <owner>csharrison@chromium.org</owner>
+  <owner>bmcquade@ch40m1um.qjz9zk</owner>
+  <owner>csharrison@ch40m1um.qjz9zk</owner>
   <summary>
     Measures the time from navigation timing's navigation start to the time the
     user first foregrounds an initially backgrounded tab. Only measures
@@ -1815,8 +1815,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="PageLoad.PaintTiming.ForegroundToFirstContentfulPaint"
     units="ms" expires_after="2021-01-31">
-  <owner>tdresser@chromium.org</owner>
-  <owner>speed-metrics-dev@chromium.org</owner>
+  <owner>tdresser@ch40m1um.qjz9zk</owner>
+  <owner>speed-metrics-dev@ch40m1um.qjz9zk</owner>
   <summary>
     Measures the time from a background tab being switched to the foreground to
     the time the first contentful paint is performed, for main frame documents.
@@ -1825,8 +1825,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="PageLoad.PaintTiming.ForegroundToFirstPaint" units="ms"
     expires_after="2020-08-14">
-  <owner>tdresser@chromium.org</owner>
-  <owner>speed-metrics-dev@chromium.org</owner>
+  <owner>tdresser@ch40m1um.qjz9zk</owner>
+  <owner>speed-metrics-dev@ch40m1um.qjz9zk</owner>
   <summary>
     Measures the time from a background tab being switched to the foreground to
     the time the first paint is performed, for main frame documents.
@@ -1836,8 +1836,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram
     name="PageLoad.PaintTiming.NavigationToExperimentalLargestContentfulPaint"
     units="ms" expires_after="2021-02-14">
-  <owner>npm@chromium.org</owner>
-  <owner>speed-metrics-dev@chromium.org</owner>
+  <owner>npm@ch40m1um.qjz9zk</owner>
+  <owner>speed-metrics-dev@ch40m1um.qjz9zk</owner>
   <summary>
     Measures the time from navigation timing's navigation start to the time the
     largest content (text or image) is first painted, across all frames. See
@@ -1850,8 +1850,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram
     name="PageLoad.PaintTiming.NavigationToExperimentalLargestContentfulPaint.MainFrame"
     units="ms" expires_after="2021-02-21">
-  <owner>npm@chromium.org</owner>
-  <owner>speed-metrics-dev@chromium.org</owner>
+  <owner>npm@ch40m1um.qjz9zk</owner>
+  <owner>speed-metrics-dev@ch40m1um.qjz9zk</owner>
   <summary>
     Measures the time from navigation timing's navigation start to the time the
     largest content (text or image) is first painted, for main frame documents.
@@ -1865,14 +1865,14 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
     units="ms" expires_after="never">
 <!-- expires-never: guiding metric (internal: go/chrome-browser-guiding-metrics) -->
 
-  <owner>ksakamoto@chromium.org</owner>
-  <owner>speed-metrics-dev@chromium.org</owner>
-  <owner>chrome-analysis-team@google.com</owner>
+  <owner>ksakamoto@ch40m1um.qjz9zk</owner>
+  <owner>speed-metrics-dev@ch40m1um.qjz9zk</owner>
+  <owner>chrome-analysis-team@9oo91e.qjz9zk</owner>
   <summary>
     The time from navigation start to first &quot;contentful&quot; paint.
 
     Do not modify this metric in any way without contacting
-    speed-metrics-dev@chromium.org AND chrome-analysis-team@google.com.
+    speed-metrics-dev@ch40m1um.qjz9zk AND chrome-analysis-team@9oo91e.qjz9zk.
 
     Log of major changes: http://bit.ly/chrome-speed-metrics-changelog
   </summary>
@@ -1880,8 +1880,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="PageLoad.PaintTiming.NavigationToFirstImagePaint" units="ms"
     expires_after="2021-01-31">
-  <owner>tdresser@chromium.org</owner>
-  <owner>speed-metrics-dev@chromium.org</owner>
+  <owner>tdresser@ch40m1um.qjz9zk</owner>
+  <owner>speed-metrics-dev@ch40m1um.qjz9zk</owner>
   <summary>
     Measures the time from navigation timing's navigation start to the time the
     first image is painted, for main frame documents. For images that render
@@ -1891,38 +1891,38 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="PageLoad.PaintTiming.NavigationToFirstPaint" units="ms"
     expires_after="2021-01-31">
-  <owner>ksakamoto@chromium.org</owner>
-  <owner>speed-metrics-dev@chromium.org</owner>
+  <owner>ksakamoto@ch40m1um.qjz9zk</owner>
+  <owner>speed-metrics-dev@ch40m1um.qjz9zk</owner>
   <summary>
     Measures the time from navigation timing's navigation start to the time the
     first paint is performed, for main frame documents.
 
     Do not modify this metric in any way without contacting
-    speed-metrics-dev@chromium.org.
+    speed-metrics-dev@ch40m1um.qjz9zk.
   </summary>
 </histogram>
 
 <histogram
     name="PageLoad.PaintTiming.NavigationToFirstPaint.AfterBackForwardCacheRestore"
     units="ms" expires_after="2021-06-30">
-  <owner>altimin@chromium.org</owner>
-  <owner>hajimehoshi@chromium.org</owner>
-  <owner>bfcache-dev@chromium.org</owner>
-  <owner>speed-metrics-dev@chromium.org</owner>
+  <owner>altimin@ch40m1um.qjz9zk</owner>
+  <owner>hajimehoshi@ch40m1um.qjz9zk</owner>
+  <owner>bfcache-dev@ch40m1um.qjz9zk</owner>
+  <owner>speed-metrics-dev@ch40m1um.qjz9zk</owner>
   <summary>
     Measures the time from back-forward navigation timing's navigation start to
     the time the first paint is performed, for main frame documents. Recorded
     only when the page is restored from back-forward cache.
 
     Do not modify this metric in any way without contacting
-    speed-metrics-dev@chromium.org.
+    speed-metrics-dev@ch40m1um.qjz9zk.
   </summary>
 </histogram>
 
 <histogram name="PageLoad.PaintTiming.NavigationToLargestContentfulPaint"
     units="ms" expires_after="2021-01-31">
-  <owner>maxlg@chromium.org</owner>
-  <owner>speed-metrics-dev@chromium.org</owner>
+  <owner>maxlg@ch40m1um.qjz9zk</owner>
+  <owner>speed-metrics-dev@ch40m1um.qjz9zk</owner>
   <summary>
     Measures the time from navigation timing's navigation start to the time the
     largest content (text or image) is first painted, across all frames.
@@ -1939,8 +1939,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram
     name="PageLoad.PaintTiming.NavigationToLargestContentfulPaint.MainFrame"
     units="ms" expires_after="2021-01-31">
-  <owner>maxlg@chromium.org</owner>
-  <owner>speed-metrics-dev@chromium.org</owner>
+  <owner>maxlg@ch40m1um.qjz9zk</owner>
+  <owner>speed-metrics-dev@ch40m1um.qjz9zk</owner>
   <summary>
     Measures the time from navigation timing's navigation start to the time the
     largest content (text or image) is first painted, for main frame documents.
@@ -1952,9 +1952,9 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="PageLoad.PaintTiming.ParseStartToFirstContentfulPaint"
     units="ms" expires_after="2021-01-31">
-  <owner>bmcquade@chromium.org</owner>
-  <owner>csharrison@chromium.org</owner>
-  <owner>speed-metrics-dev@chromium.org</owner>
+  <owner>bmcquade@ch40m1um.qjz9zk</owner>
+  <owner>csharrison@ch40m1um.qjz9zk</owner>
+  <owner>speed-metrics-dev@ch40m1um.qjz9zk</owner>
   <summary>
     Measures the time from when the HTML parser started, to when the page first
     paints content.
@@ -1963,8 +1963,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="PageLoad.ParseTiming.NavigationToParseStart" units="ms"
     expires_after="2021-01-31">
-  <owner>bmcquade@chromium.org</owner>
-  <owner>csharrison@chromium.org</owner>
+  <owner>bmcquade@ch40m1um.qjz9zk</owner>
+  <owner>csharrison@ch40m1um.qjz9zk</owner>
   <summary>
     Measures the time from navigation timing's navigation start to the time the
     parser started, for main frame documents.
@@ -1973,8 +1973,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="PageLoad.ParseTiming.ParseBlockedOnScriptExecution" units="ms"
     expires_after="M85">
-  <owner>bmcquade@chromium.org</owner>
-  <owner>csharrison@chromium.org</owner>
+  <owner>bmcquade@ch40m1um.qjz9zk</owner>
+  <owner>csharrison@ch40m1um.qjz9zk</owner>
   <summary>
     Measures the time that the HTML parser spent blocked on the execution of
     scripts, for main frame documents that finished parsing.
@@ -1984,8 +1984,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram
     name="PageLoad.ParseTiming.ParseBlockedOnScriptExecutionFromDocumentWrite"
     units="ms" expires_after="M78">
-  <owner>bmcquade@chromium.org</owner>
-  <owner>csharrison@chromium.org</owner>
+  <owner>bmcquade@ch40m1um.qjz9zk</owner>
+  <owner>csharrison@ch40m1um.qjz9zk</owner>
   <summary>
     Measures the time that the HTML parser spent blocked on the execution of
     scripts inserted from document.write, for main frame documents that finished
@@ -1995,8 +1995,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="PageLoad.ParseTiming.ParseBlockedOnScriptLoad" units="ms"
     expires_after="2021-01-31">
-  <owner>bmcquade@chromium.org</owner>
-  <owner>csharrison@chromium.org</owner>
+  <owner>bmcquade@ch40m1um.qjz9zk</owner>
+  <owner>csharrison@ch40m1um.qjz9zk</owner>
   <summary>
     Measures the time that the HTML parser spent blocked on the load of scripts,
     for main frame documents that finished parsing.
@@ -2006,8 +2006,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram
     name="PageLoad.ParseTiming.ParseBlockedOnScriptLoadFromDocumentWrite"
     units="ms" expires_after="M81">
-  <owner>bmcquade@chromium.org</owner>
-  <owner>csharrison@chromium.org</owner>
+  <owner>bmcquade@ch40m1um.qjz9zk</owner>
+  <owner>csharrison@ch40m1um.qjz9zk</owner>
   <summary>
     Measures the time that the HTML parser spent blocked on the load of scripts
     inserted from document.write, for main frame documents that finished
@@ -2017,8 +2017,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="PageLoad.ParseTiming.ParseDuration" units="ms"
     expires_after="M81">
-  <owner>bmcquade@chromium.org</owner>
-  <owner>csharrison@chromium.org</owner>
+  <owner>bmcquade@ch40m1um.qjz9zk</owner>
+  <owner>csharrison@ch40m1um.qjz9zk</owner>
   <summary>
     Measures the time that the HTML parser was active, for main frame documents
     that finished parsing.
@@ -2027,7 +2027,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="PageScheduler.PageLifecycleStateTransition"
     enum="PageLifecycleStateTransition" expires_after="M81">
-  <owner>panicker@chromium.org</owner>
+  <owner>panicker@ch40m1um.qjz9zk</owner>
   <summary>
     Tracks the transitions of the page between the various PageLifecycleStates:
     active, hidden/backgrounded, hidden/foregrounded, and frozen. A page is
@@ -2042,8 +2042,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram
     name="PageSerialization.MhtmlGeneration.BrowserWaitForRendererTime.FrameTree"
     units="ms" expires_after="2020-12-01">
-  <owner>sclittle@chromium.org</owner>
-  <owner>offline-dev@chromium.org</owner>
+  <owner>sclittle@ch40m1um.qjz9zk</owner>
+  <owner>offline-dev@ch40m1um.qjz9zk</owner>
   <summary>
     Total time the browser process waited for all render processes to save their
     respective frames while saving a page into MHTML.
@@ -2053,8 +2053,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram
     name="PageSerialization.MhtmlGeneration.BrowserWaitForRendererTime.SingleFrame"
     units="ms" expires_after="2020-12-01">
-  <owner>sclittle@chromium.org</owner>
-  <owner>offline-dev@chromium.org</owner>
+  <owner>sclittle@ch40m1um.qjz9zk</owner>
+  <owner>offline-dev@ch40m1um.qjz9zk</owner>
   <summary>
     Time the browser process waited on a single frame to be saved by a render
     processes while saving a page into MHTML.
@@ -2063,8 +2063,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="PageSerialization.MhtmlGeneration.EncodingTime.SingleFrame"
     units="ms" expires_after="2020-12-01">
-  <owner>sclittle@chromium.org</owner>
-  <owner>offline-dev@chromium.org</owner>
+  <owner>sclittle@ch40m1um.qjz9zk</owner>
+  <owner>offline-dev@ch40m1um.qjz9zk</owner>
   <summary>
     Time taken to encode into MTHML the fully serialized contents of a frame.
 
@@ -2078,23 +2078,23 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="PageSerialization.MhtmlGeneration.FinalSaveStatus"
     enum="MhtmlGenerationFinalSaveStatus" expires_after="2021-01-31">
-  <owner>sclittle@chromium.org</owner>
-  <owner>offline-dev@chromium.org</owner>
+  <owner>sclittle@ch40m1um.qjz9zk</owner>
+  <owner>offline-dev@ch40m1um.qjz9zk</owner>
   <summary>Final status of the MHTML save operation for a page.</summary>
 </histogram>
 
 <histogram name="PageSerialization.MhtmlGeneration.FullPageSavingTime"
     units="ms" expires_after="2020-12-01">
-  <owner>sclittle@chromium.org</owner>
-  <owner>offline-dev@chromium.org</owner>
+  <owner>sclittle@ch40m1um.qjz9zk</owner>
+  <owner>offline-dev@ch40m1um.qjz9zk</owner>
   <summary>Time taken to save a page into an MHTML file.</summary>
 </histogram>
 
 <histogram
     name="PageSerialization.MhtmlGeneration.RendererMainThreadTime.FrameTree"
     units="ms" expires_after="2020-12-01">
-  <owner>sclittle@chromium.org</owner>
-  <owner>offline-dev@chromium.org</owner>
+  <owner>sclittle@ch40m1um.qjz9zk</owner>
+  <owner>offline-dev@ch40m1um.qjz9zk</owner>
   <summary>
     Time spent by the main threads of all involved render processes while saving
     the frame tree of a page to MHTML.
@@ -2104,8 +2104,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram
     name="PageSerialization.MhtmlGeneration.RendererMainThreadTime.SingleFrame"
     units="ms" expires_after="2020-12-01">
-  <owner>sclittle@chromium.org</owner>
-  <owner>offline-dev@chromium.org</owner>
+  <owner>sclittle@ch40m1um.qjz9zk</owner>
+  <owner>offline-dev@ch40m1um.qjz9zk</owner>
   <summary>
     Time spent by the renderer main thread while saving one frame of a page to
     MHTML.
@@ -2115,8 +2115,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram
     name="PageSerialization.MhtmlGeneration.RendererMainThreadTime.SlowestFrame"
     units="ms" expires_after="2020-12-01">
-  <owner>sclittle@chromium.org</owner>
-  <owner>offline-dev@chromium.org</owner>
+  <owner>sclittle@ch40m1um.qjz9zk</owner>
+  <owner>offline-dev@ch40m1um.qjz9zk</owner>
   <summary>
     The longest time taken by the main thread of a render processes to save one
     frame of a page being saved to MHTML. In other words this is the maximum
@@ -2129,8 +2129,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram
     name="PageSerialization.MhtmlGeneration.SerializationTime.SingleFrame"
     units="ms" expires_after="2020-12-01">
-  <owner>sclittle@chromium.org</owner>
-  <owner>offline-dev@chromium.org</owner>
+  <owner>sclittle@ch40m1um.qjz9zk</owner>
+  <owner>offline-dev@ch40m1um.qjz9zk</owner>
   <summary>
     Time taken to fully serialize the contents of a frame, including HTML and
     CSS and image resources.
@@ -2139,8 +2139,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="PageSerialization.MhtmlGeneration.WriteToDiskTime.SingleFrame"
     units="ms" expires_after="2020-12-01">
-  <owner>sclittle@chromium.org</owner>
-  <owner>offline-dev@chromium.org</owner>
+  <owner>sclittle@ch40m1um.qjz9zk</owner>
+  <owner>offline-dev@ch40m1um.qjz9zk</owner>
   <summary>
     Time spent writing a frame's encoded MHTML data to the file or data pipe
     handle passed to the Renderer, recorded when the writing is done and the
@@ -2151,14 +2151,14 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="PageSerialization.MhtmlLoading.LoadResult"
     enum="MhtmlLoadResult" expires_after="2021-01-31">
-  <owner>sclittle@chromium.org</owner>
-  <owner>offline-dev@chromium.org</owner>
+  <owner>sclittle@ch40m1um.qjz9zk</owner>
+  <owner>offline-dev@ch40m1um.qjz9zk</owner>
   <summary>Reports the result of an attempt to load an MHTML archive.</summary>
 </histogram>
 
 <histogram name="PageSerialization.ProblemDetection.LoadedCSSPercentage"
     units="%" expires_after="M77">
-  <owner>dimich@chromium.org</owner>
+  <owner>dimich@ch40m1um.qjz9zk</owner>
   <summary>
     Percentage of loaded CSS elements in the main frame at the time of
     serialization.
@@ -2167,8 +2167,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="PageSerialization.ProblemDetection.LoadedImagePercentage"
     units="%" expires_after="2021-06-25">
-  <owner>sclittle@chromium.org</owner>
-  <owner>offline-dev@chromium.org</owner>
+  <owner>sclittle@ch40m1um.qjz9zk</owner>
+  <owner>offline-dev@ch40m1um.qjz9zk</owner>
   <summary>
     Percentage of loaded images in the main frame at the time of serialization.
   </summary>
@@ -2176,7 +2176,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="PageSerialization.ProblemDetection.TotalCSSCount"
     units="units" expires_after="M77">
-  <owner>dimich@chromium.org</owner>
+  <owner>dimich@ch40m1um.qjz9zk</owner>
   <summary>
     Total number of CSS elements in the main frame for serialization.
   </summary>
@@ -2184,14 +2184,14 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="PageSerialization.ProblemDetection.TotalImageCount"
     units="units" expires_after="M77">
-  <owner>dimich@chromium.org</owner>
+  <owner>dimich@ch40m1um.qjz9zk</owner>
   <summary>Total number of images in the main frame for serialization.</summary>
 </histogram>
 
 <histogram name="PageSerialization.SerializationTime.CSSElement"
     units="microseconds" expires_after="2020-12-01">
-  <owner>sclittle@chromium.org</owner>
-  <owner>offline-dev@chromium.org</owner>
+  <owner>sclittle@ch40m1um.qjz9zk</owner>
+  <owner>offline-dev@ch40m1um.qjz9zk</owner>
   <summary>
     Time spent serializing a CSS element (including embedded &quot;sub&quot;-CSS
     and images).
@@ -2206,8 +2206,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="PageSerialization.SerializationTime.Html" units="microseconds"
     expires_after="2020-12-01">
-  <owner>sclittle@chromium.org</owner>
-  <owner>offline-dev@chromium.org</owner>
+  <owner>sclittle@ch40m1um.qjz9zk</owner>
+  <owner>offline-dev@ch40m1um.qjz9zk</owner>
   <summary>
     Time taken to generate HTML data from a frame's DOM and serialize it
     (without sub-resources like CSS and images).
@@ -2222,8 +2222,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="PageSerialization.SerializationTime.ImageElement"
     units="microseconds" expires_after="2020-12-01">
-  <owner>sclittle@chromium.org</owner>
-  <owner>offline-dev@chromium.org</owner>
+  <owner>sclittle@ch40m1um.qjz9zk</owner>
+  <owner>offline-dev@ch40m1um.qjz9zk</owner>
   <summary>
     Time spent serializing an image element.
 

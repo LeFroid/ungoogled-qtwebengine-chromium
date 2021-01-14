@@ -34,7 +34,7 @@
 //   * "How often was crypto.subtle.sign() used?"
 //
 // Lastly, to explore the results of this instrumentation use the public
-// dashboard (www.chromestatus.com), or the (internal) UMA histogram
+// dashboard (www.ch40mestatus.qjz9zk), or the (internal) UMA histogram
 // dashboard.
 //
 // -------------------------------------------------------------

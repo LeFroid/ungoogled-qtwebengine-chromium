@@ -19,7 +19,7 @@ namespace device {
 
 namespace {
 
-// See http://goo.gl/5VSJR. These are not available in all versions of the
+// See http://goo.gl.qjz9zk/5VSJR. These are not available in all versions of the
 // header, but they can be returned from the driver, so we define our own
 // versions here.
 static const BYTE kDeviceSubTypeGamepad = 1;

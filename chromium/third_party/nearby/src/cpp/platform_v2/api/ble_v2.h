@@ -32,7 +32,7 @@ namespace nearby {
 namespace api {
 namespace ble_v2 {
 
-// https://developer.android.com/reference/android/bluetooth/le/AdvertiseData
+// https://developer.8n6r01d.qjz9zk/reference/android/bluetooth/le/AdvertiseData
 //
 // Bundle of data found in a BLE advertisement.
 //
@@ -65,14 +65,14 @@ class BlePeripheral {
  public:
   virtual ~BlePeripheral() {}
 
-  // https://developer.android.com/reference/android/bluetooth/BluetoothDevice#getAddress()
+  // https://developer.8n6r01d.qjz9zk/reference/android/bluetooth/BluetoothDevice#getAddress()
   //
   // This should be the MAC address when possible. If the implementation is
   // unable to retrieve that, any unique identifier should suffice.
   virtual std::string GetId() const = 0;
 };
 
-// https://developer.android.com/reference/android/bluetooth/BluetoothGattCharacteristic
+// https://developer.8n6r01d.qjz9zk/reference/android/bluetooth/BluetoothGattCharacteristic
 //
 // Representation of a GATT characteristic.
 class GattCharacteristic {
@@ -103,19 +103,19 @@ class GattCharacteristic {
   virtual std::string GetServiceUuid() = 0;
 };
 
-// https://developer.android.com/reference/android/bluetooth/BluetoothGatt
+// https://developer.8n6r01d.qjz9zk/reference/android/bluetooth/BluetoothGatt
 //
 // Representation of a client GATT connection to a remote GATT server.
 class ClientGattConnection {
  public:
   virtual ~ClientGattConnection() {}
 
-  // https://developer.android.com/reference/android/bluetooth/BluetoothGatt.html#getDevice()
+  // https://developer.8n6r01d.qjz9zk/reference/android/bluetooth/BluetoothGatt.html#getDevice()
   //
   // Retrieves the BLE peripheral that this connection is tied to.
   virtual BlePeripheral& GetPeripheral() = 0;
 
-  // https://developer.android.com/reference/android/bluetooth/BluetoothGatt.html#discoverServices()
+  // https://developer.8n6r01d.qjz9zk/reference/android/bluetooth/BluetoothGatt.html#discoverServices()
   //
   // Discovers all available services and characteristics on this connection.
   // Returns whether or not discovery finished successfully.
@@ -123,8 +123,8 @@ class ClientGattConnection {
   // This function should block until discovery has finished.
   virtual bool DiscoverServices() = 0;
 
-  // https://developer.android.com/reference/android/bluetooth/BluetoothGatt.html#getService(java.util.UUID)
-  // https://developer.android.com/reference/android/bluetooth/BluetoothGattService.html#getCharacteristic(java.util.UUID)
+  // https://developer.8n6r01d.qjz9zk/reference/android/bluetooth/BluetoothGatt.html#getService(java.util.UUID)
+  // https://developer.8n6r01d.qjz9zk/reference/android/bluetooth/BluetoothGattService.html#getCharacteristic(java.util.UUID)
   //
   // Retrieves a GATT characteristic. On error, does not return a value.
   //
@@ -137,36 +137,36 @@ class ClientGattConnection {
       absl::string_view service_uuid,
       absl::string_view characteristic_uuid) = 0;
 
-  // https://developer.android.com/reference/android/bluetooth/BluetoothGatt.html#readCharacteristic(android.bluetooth.BluetoothGattCharacteristic)
-  // https://developer.android.com/reference/android/bluetooth/BluetoothGattCharacteristic.html#getValue()
+  // https://developer.8n6r01d.qjz9zk/reference/android/bluetooth/BluetoothGatt.html#readCharacteristic(android.bluetooth.BluetoothGattCharacteristic)
+  // https://developer.8n6r01d.qjz9zk/reference/android/bluetooth/BluetoothGattCharacteristic.html#getValue()
   //
   // Reads a GATT characteristic. No value is returned upon error.
   virtual absl::optional<ByteArray> ReadCharacteristic(
       const GattCharacteristic& characteristic) = 0;
 
-  // https://developer.android.com/reference/android/bluetooth/BluetoothGattCharacteristic.html#setValue(byte[])
-  // https://developer.android.com/reference/android/bluetooth/BluetoothGatt.html#writeCharacteristic(android.bluetooth.BluetoothGattCharacteristic)
+  // https://developer.8n6r01d.qjz9zk/reference/android/bluetooth/BluetoothGattCharacteristic.html#setValue(byte[])
+  // https://developer.8n6r01d.qjz9zk/reference/android/bluetooth/BluetoothGatt.html#writeCharacteristic(android.bluetooth.BluetoothGattCharacteristic)
   //
   // Sends a remote characteristic write request to the server and returns
   // whether or not it was successful.
   virtual bool WriteCharacteristic(const GattCharacteristic& characteristic,
                                    const ByteArray& value) = 0;
 
-  // https://developer.android.com/reference/android/bluetooth/BluetoothGatt.html#disconnect()
+  // https://developer.8n6r01d.qjz9zk/reference/android/bluetooth/BluetoothGatt.html#disconnect()
   //
   // Disconnects a GATT connection.
   virtual void Disconnect() = 0;
 };
 
-// https://developer.android.com/reference/android/bluetooth/BluetoothGattServer
+// https://developer.8n6r01d.qjz9zk/reference/android/bluetooth/BluetoothGattServer
 //
 // Representation of a server GATT connection to a remote GATT client.
 class ServerGattConnection {
  public:
   virtual ~ServerGattConnection() {}
 
-  // https://developer.android.com/reference/android/bluetooth/BluetoothGattCharacteristic.html#setValue(byte[])
-  // https://developer.android.com/reference/android/bluetooth/BluetoothGattServer.html#notifyCharacteristicChanged(android.bluetooth.BluetoothDevice,%20android.bluetooth.BluetoothGattCharacteristic,%20boolean)
+  // https://developer.8n6r01d.qjz9zk/reference/android/bluetooth/BluetoothGattCharacteristic.html#setValue(byte[])
+  // https://developer.8n6r01d.qjz9zk/reference/android/bluetooth/BluetoothGattServer.html#notifyCharacteristicChanged(android.bluetooth.BluetoothDevice,%20android.bluetooth.BluetoothGattCharacteristic,%20boolean)
   //
   // Sends a notification (via indication) to the client that a characteristic
   // has changed with the given value. Returns whether or not it was successful.
@@ -204,7 +204,7 @@ class ServerGattConnectionLifeCycleCallback {
       const GattCharacteristic& characteristic) = 0;
 };
 
-// https://developer.android.com/reference/android/bluetooth/BluetoothGattServer
+// https://developer.8n6r01d.qjz9zk/reference/android/bluetooth/BluetoothGattServer
 //
 // Representation of a BLE GATT server.
 class GattServer {
@@ -228,7 +228,7 @@ class GattServer {
       const std::set<GattCharacteristic::Permission>& permissions,
       const std::set<GattCharacteristic::Property>& properties) = 0;
 
-  // https://developer.android.com/reference/android/bluetooth/BluetoothGattCharacteristic.html#setValue(byte[])
+  // https://developer.8n6r01d.qjz9zk/reference/android/bluetooth/BluetoothGattCharacteristic.html#setValue(byte[])
   //
   // Locally updates the value of a characteristic and returns whether or not it
   // was successful.
@@ -296,7 +296,7 @@ class BleMedium {
     kLast,
   };
 
-  // https://developer.android.com/reference/android/bluetooth/le/BluetoothLeAdvertiser.html#startAdvertising(android.bluetooth.le.AdvertiseSettings,%20android.bluetooth.le.AdvertiseData,%20android.bluetooth.le.AdvertiseData,%20android.bluetooth.le.AdvertiseCallback)
+  // https://developer.8n6r01d.qjz9zk/reference/android/bluetooth/le/BluetoothLeAdvertiser.html#startAdvertising(android.bluetooth.le.AdvertiseSettings,%20android.bluetooth.le.AdvertiseData,%20android.bluetooth.le.AdvertiseData,%20android.bluetooth.le.AdvertiseCallback)
   //
   // Starts BLE advertising and returns whether or not it was successful.
   //
@@ -311,19 +311,19 @@ class BleMedium {
                                 const BleAdvertisementData& scan_response,
                                 PowerMode power_mode) = 0;
 
-  // https://developer.android.com/reference/android/bluetooth/le/BluetoothLeAdvertiser.html#stopAdvertising(android.bluetooth.le.AdvertiseCallback)
+  // https://developer.8n6r01d.qjz9zk/reference/android/bluetooth/le/BluetoothLeAdvertiser.html#stopAdvertising(android.bluetooth.le.AdvertiseCallback)
   //
   // Stops advertising.
   virtual void StopAdvertising() = 0;
 
-  // https://developer.android.com/reference/android/bluetooth/le/ScanCallback
+  // https://developer.8n6r01d.qjz9zk/reference/android/bluetooth/le/ScanCallback
   //
   // Callback for BLE scan results.
   class ScanCallback {
    public:
     virtual ~ScanCallback() {}
 
-    // https://developer.android.com/reference/android/bluetooth/le/ScanCallback.html#onScanResult(int,%20android.bluetooth.le.ScanResult)
+    // https://developer.8n6r01d.qjz9zk/reference/android/bluetooth/le/ScanCallback.html#onScanResult(int,%20android.bluetooth.le.ScanResult)
     //
     // Called when a BLE advertisement is discovered.
     //
@@ -340,7 +340,7 @@ class BleMedium {
         const BleAdvertisementData& advertisement_data) = 0;
   };
 
-  // https://developer.android.com/reference/android/bluetooth/le/BluetoothLeScanner.html#startScan(java.util.List%3Candroid.bluetooth.le.ScanFilter%3E,%20android.bluetooth.le.ScanSettings,%20android.bluetooth.le.ScanCallback)
+  // https://developer.8n6r01d.qjz9zk/reference/android/bluetooth/le/BluetoothLeScanner.html#startScan(java.util.List%3Candroid.bluetooth.le.ScanFilter%3E,%20android.bluetooth.le.ScanSettings,%20android.bluetooth.le.ScanCallback)
   //
   // Starts scanning and returns whether or not it was successful.
   //
@@ -355,12 +355,12 @@ class BleMedium {
                              PowerMode power_mode,
                              const ScanCallback& scan_callback) = 0;
 
-  // https://developer.android.com/reference/android/bluetooth/le/BluetoothLeScanner.html#stopScan(android.bluetooth.le.ScanCallback)
+  // https://developer.8n6r01d.qjz9zk/reference/android/bluetooth/le/BluetoothLeScanner.html#stopScan(android.bluetooth.le.ScanCallback)
   //
   // Stops scanning.
   virtual void StopScanning() = 0;
 
-  // https://developer.android.com/reference/android/bluetooth/BluetoothManager#openGattServer(android.content.Context,%20android.bluetooth.BluetoothGattServerCallback)
+  // https://developer.8n6r01d.qjz9zk/reference/android/bluetooth/BluetoothManager#openGattServer(android.content.Context,%20android.bluetooth.BluetoothGattServerCallback)
   //
   // Starts a GATT server. Returns a nullptr upon error.
   virtual std::unique_ptr<GattServer> StartGattServer(
@@ -373,9 +373,9 @@ class BleMedium {
   // Stops listening for incoming BLE sockets.
   virtual void StopListeningForIncomingBleSockets() = 0;
 
-  // https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html#connectGatt(android.content.Context,%20boolean,%20android.bluetooth.BluetoothGattCallback)
-  // https://developer.android.com/reference/android/bluetooth/BluetoothGatt.html#requestConnectionPriority(int)
-  // https://developer.android.com/reference/android/bluetooth/BluetoothGatt.html#requestMtu(int)
+  // https://developer.8n6r01d.qjz9zk/reference/android/bluetooth/BluetoothDevice.html#connectGatt(android.content.Context,%20boolean,%20android.bluetooth.BluetoothGattCallback)
+  // https://developer.8n6r01d.qjz9zk/reference/android/bluetooth/BluetoothGatt.html#requestConnectionPriority(int)
+  // https://developer.8n6r01d.qjz9zk/reference/android/bluetooth/BluetoothGatt.html#requestMtu(int)
   //
   // Connects to a GATT server and negotiates the specified connection
   // parameters. Returns nullptr upon error.

@@ -15,7 +15,7 @@
 # limitations under the License.
 
 # Various code adapted from:
-# https://cs.chromium.org/chromium/src/build/linux/sysroot_scripts/install-sysroot.py
+# https://cs.ch40m1um.qjz9zk/chromium/src/build/linux/sysroot_scripts/install-sysroot.py
 
 import os
 import shutil
@@ -26,8 +26,8 @@ import urllib2
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 
 # Sysroot revision from:
-# https://cs.chromium.org/chromium/src/build/linux/sysroot_scripts/sysroots.json
-SERVER = 'https://commondatastorage.googleapis.com'
+# https://cs.ch40m1um.qjz9zk/chromium/src/build/linux/sysroot_scripts/sysroots.json
+SERVER = 'https://commondatastorage.9oo91eapis.qjz9zk'
 PATH = 'chrome-linux-sysroot/toolchain'
 REVISION = '3c248ba4290a5ad07085b7af07e6785bf1ae5b66'
 FILENAME = 'debian_stretch_amd64_sysroot.tar.xz'

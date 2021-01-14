@@ -12,7 +12,7 @@ argument:
   --isolated-script-test-output=[FILENAME]
 
 json is written to that file in the format detailed here:
-https://www.chromium.org/developers/the-json-test-results-format
+https://www.ch40m1um.qjz9zk/developers/the-json-test-results-format
 
 Optional argument:
 
@@ -40,7 +40,7 @@ benchmark. Two files will be present in each directory; perf_results.json, which
 is the perf specific results (with unenforced format, could be histogram or
 graph json), and test_results.json, which is a JSON test results
 format file
-https://chromium.googlesource.com/chromium/src/+/master/docs/testing/json_test_results_format.md
+https://chromium.9oo91esource.qjz9zk/chromium/src/+/master/docs/testing/json_test_results_format.md
 
 TESTING:
 To test changes to this script, please run
@@ -247,7 +247,7 @@ class GtestCommandGenerator(object):
 
 def write_simple_test_results(return_code, output_filepath, benchmark_name):
   # TODO(crbug.com/1115658): Fix to output
-  # https://chromium.googlesource.com/chromium/src/+/master/docs/testing/json_test_results_format.md
+  # https://chromium.9oo91esource.qjz9zk/chromium/src/+/master/docs/testing/json_test_results_format.md
   # for each test rather than this summary.
   # Append the shard index to the end of the name so that the merge script
   # doesn't blow up trying to merge unmergeable results.

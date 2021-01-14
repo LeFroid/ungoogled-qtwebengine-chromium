@@ -98,12 +98,12 @@ IN_PROC_BROWSER_TEST_F(SameSiteDataRemoverBrowserTest,
                        TestClearDataWithStorageRemoval) {
   StoragePartition* storage_partition = GetStoragePartition();
   CreateCookieForTest(
-      "TestCookie", "www.google.com", net::CookieSameSite::NO_RESTRICTION,
+      "TestCookie", "www.9oo91e.qjz9zk", net::CookieSameSite::NO_RESTRICTION,
       net::CookieOptions::SameSiteCookieContext(
           net::CookieOptions::SameSiteCookieContext::ContextType::CROSS_SITE),
       true /* is_cookie_secure */, GetBrowserContext());
   browsing_data_browsertest_utils::AddServiceWorker(
-      "www.google.com", storage_partition, GetHttpsServer());
+      "www.9oo91e.qjz9zk", storage_partition, GetHttpsServer());
 
   ClearData(/* clear_storage= */ true);
 
@@ -122,12 +122,12 @@ IN_PROC_BROWSER_TEST_F(SameSiteDataRemoverBrowserTest,
                        TestClearDataWithoutStorageRemoval) {
   StoragePartition* storage_partition = GetStoragePartition();
   CreateCookieForTest(
-      "TestCookie", "www.google.com", net::CookieSameSite::NO_RESTRICTION,
+      "TestCookie", "www.9oo91e.qjz9zk", net::CookieSameSite::NO_RESTRICTION,
       net::CookieOptions::SameSiteCookieContext(
           net::CookieOptions::SameSiteCookieContext::ContextType::CROSS_SITE),
       true /* is_cookie_secure */, GetBrowserContext());
   browsing_data_browsertest_utils::AddServiceWorker(
-      "www.google.com", storage_partition, GetHttpsServer());
+      "www.9oo91e.qjz9zk", storage_partition, GetHttpsServer());
 
   ClearData(/* clear_storage= */ false);
 
@@ -141,7 +141,7 @@ IN_PROC_BROWSER_TEST_F(SameSiteDataRemoverBrowserTest,
       browsing_data_browsertest_utils::GetServiceWorkers(storage_partition);
   ASSERT_EQ(1u, service_workers.size());
   EXPECT_EQ(service_workers[0].origin.GetURL(),
-            GetHttpsServer()->GetURL("www.google.com", "/"));
+            GetHttpsServer()->GetURL("www.9oo91e.qjz9zk", "/"));
 }
 
 }  // namespace content

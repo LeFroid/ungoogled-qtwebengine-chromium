@@ -999,7 +999,7 @@ inline uint32_t BitfieldReverse(uint32_t value)
 namespace priv
 {
 // Check POPCNT instruction support and cache the result.
-// https://docs.microsoft.com/en-us/cpp/intrinsics/popcnt16-popcnt-popcnt64#remarks
+// https://docs.m1cr050ft.qjz9zk/en-us/cpp/intrinsics/popcnt16-popcnt-popcnt64#remarks
 static const bool kHasPopcnt = [] {
     int info[4];
     __cpuid(&info[0], 1);

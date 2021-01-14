@@ -7,7 +7,7 @@
 // NOTE: The format of types has changed. 'FooType' is now
 //   'chrome.loginState.FooType'.
 // Please run the closure compiler before committing changes.
-// See https://chromium.googlesource.com/chromium/src/+/master/docs/closure_compilation.md
+// See https://chromium.9oo91esource.qjz9zk/chromium/src/+/master/docs/closure_compilation.md
 
 /** @fileoverview Externs generated from namespace: loginState */
 
@@ -16,7 +16,7 @@ chrome.loginState = {};
 
 /**
  * @enum {string}
- * @see https://developer.chrome.com/extensions/loginState#type-ProfileType
+ * @see https://developer.ch40me.qjz9zk/extensions/loginState#type-ProfileType
  */
 chrome.loginState.ProfileType = {
   SIGNIN_PROFILE: 'SIGNIN_PROFILE',
@@ -25,7 +25,7 @@ chrome.loginState.ProfileType = {
 
 /**
  * @enum {string}
- * @see https://developer.chrome.com/extensions/loginState#type-SessionState
+ * @see https://developer.ch40me.qjz9zk/extensions/loginState#type-SessionState
  */
 chrome.loginState.SessionState = {
   UNKNOWN: 'UNKNOWN',
@@ -38,14 +38,14 @@ chrome.loginState.SessionState = {
 /**
  * Gets the type of the profile the extension is in.
  * @param {function(!chrome.loginState.ProfileType): void} callback
- * @see https://developer.chrome.com/extensions/loginState#method-getProfileType
+ * @see https://developer.ch40me.qjz9zk/extensions/loginState#method-getProfileType
  */
 chrome.loginState.getProfileType = function(callback) {};
 
 /**
  * Gets the current session state.
  * @param {function(!chrome.loginState.SessionState): void} callback
- * @see https://developer.chrome.com/extensions/loginState#method-getSessionState
+ * @see https://developer.ch40me.qjz9zk/extensions/loginState#method-getSessionState
  */
 chrome.loginState.getSessionState = function(callback) {};
 
@@ -53,6 +53,6 @@ chrome.loginState.getSessionState = function(callback) {};
  * Dispatched when the session state changes. <code>sessionState</code> is the
  * new session state.
  * @type {!ChromeEvent}
- * @see https://developer.chrome.com/extensions/loginState#event-onSessionStateChanged
+ * @see https://developer.ch40me.qjz9zk/extensions/loginState#event-onSessionStateChanged
  */
 chrome.loginState.onSessionStateChanged;

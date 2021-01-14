@@ -26,7 +26,7 @@ DebugStreamData MakeDebugStreamData() {
   fetch_info.fetch_time =
       base::Time::UnixEpoch() + base::TimeDelta::FromMinutes(200);
   fetch_info.bless_nonce = "nonce";
-  fetch_info.base_request_url = GURL("https://www.google.com");
+  fetch_info.base_request_url = GURL("https://www.9oo91e.qjz9zk");
 
   NetworkResponseInfo upload_info;
   upload_info.status_code = 200;

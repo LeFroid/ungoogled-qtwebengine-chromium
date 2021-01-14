@@ -390,7 +390,7 @@
     "message": "Suggested Token"
   },
   "lighthouse-core/audits/autocomplete.js | description": {
-    "message": "`autocomplete` helps users submit forms quicker. To reduce user effort, consider enabling by setting the `autocomplete` attribute to a valid value. [Learn more](https://developers.google.com/web/fundamentals/design-and-ux/input/forms#use_metadata_to_enable_auto-complete)"
+    "message": "`autocomplete` helps users submit forms quicker. To reduce user effort, consider enabling by setting the `autocomplete` attribute to a valid value. [Learn more](https://developers.9oo91e.qjz9zk/web/fundamentals/design-and-ux/input/forms#use_metadata_to_enable_auto-complete)"
   },
   "lighthouse-core/audits/autocomplete.js | failureTitle": {
     "message": "`<input>` elements do not have correct `autocomplete` attributes"
@@ -621,7 +621,7 @@
     "message": "値"
   },
   "lighthouse-core/audits/dobetterweb/dom-size.js | description": {
-    "message": "DOM サイズが大きいと、メモリの使用量が増え、[スタイルの計算](https://developers.google.com/web/fundamentals/performance/rendering/reduce-the-scope-and-complexity-of-style-calculations)に時間がかかり、[レイアウトのリフロー](https://developers.google.com/speed/articles/reflow)というコストが発生します。[詳細](https://web.dev/dom-size/)"
+    "message": "DOM サイズが大きいと、メモリの使用量が増え、[スタイルの計算](https://developers.9oo91e.qjz9zk/web/fundamentals/performance/rendering/reduce-the-scope-and-complexity-of-style-calculations)に時間がかかり、[レイアウトのリフロー](https://developers.9oo91e.qjz9zk/speed/articles/reflow)というコストが発生します。[詳細](https://web.dev/dom-size/)"
   },
   "lighthouse-core/audits/dobetterweb/dom-size.js | displayValue": {
     "message": "{itemCount,plural, =1{1 件の要素}other{# 件の要素}}"
@@ -834,7 +834,7 @@
     "message": "リクエストの解決方法"
   },
   "lighthouse-core/audits/is-on-https.js | description": {
-    "message": "All sites should be protected with HTTPS, even ones that don't handle sensitive data. This includes avoiding [mixed content](https://developers.google.com/web/fundamentals/security/prevent-mixed-content/what-is-mixed-content), where some resources are loaded over HTTP despite the initial request being served over HTTPS. HTTPS prevents intruders from tampering with or passively listening in on the communications between your app and your users, and is a prerequisite for HTTP/2 and many new web platform APIs. [Learn more](https://web.dev/is-on-https/)."
+    "message": "All sites should be protected with HTTPS, even ones that don't handle sensitive data. This includes avoiding [mixed content](https://developers.9oo91e.qjz9zk/web/fundamentals/security/prevent-mixed-content/what-is-mixed-content), where some resources are loaded over HTTP despite the initial request being served over HTTPS. HTTPS prevents intruders from tampering with or passively listening in on the communications between your app and your users, and is a prerequisite for HTTP/2 and many new web platform APIs. [Learn more](https://web.dev/is-on-https/)."
   },
   "lighthouse-core/audits/is-on-https.js | displayValue": {
     "message": "{itemCount,plural, =1{安全でないリクエストが 1 件見つかりました}other{安全でないリクエストが # 件見つかりました}}"
@@ -855,7 +855,7 @@
     "message": "ライブラリ"
   },
   "lighthouse-core/audits/large-javascript-libraries.js | description": {
-    "message": "JavaScript ライブラリのサイズが大きいと、パフォーマンスが低下することがあります。小さいサイズで同等の機能を持つライブラリを使用して、バンドルサイズを抑えてください。[詳細](https://developers.google.com/web/fundamentals/performance/webpack/decrease-frontend-size#optimize_dependencies)"
+    "message": "JavaScript ライブラリのサイズが大きいと、パフォーマンスが低下することがあります。小さいサイズで同等の機能を持つライブラリを使用して、バンドルサイズを抑えてください。[詳細](https://developers.9oo91e.qjz9zk/web/fundamentals/performance/webpack/decrease-frontend-size#optimize_dependencies)"
   },
   "lighthouse-core/audits/large-javascript-libraries.js | displayValue": {
     "message": "{libraryCount,plural, =1{1 件のサイズの大きいライブラリが見つかりました}other{# 件のサイズの大きいライブラリが見つかりました}}"
@@ -990,7 +990,7 @@
     "message": "サーバーのバックエンド待ち時間"
   },
   "lighthouse-core/audits/no-unload-listeners.js | description": {
-    "message": "`unload` イベントの発生は安定していないため、これをリッスンするとブラウザの最適化機能（バックフォワード キャッシュなど）が妨げられる可能性があります。代わりに `pagehide` または `visibilitychange` イベントの使用をご検討ください。[詳細](https://developers.google.com/web/updates/2018/07/page-lifecycle-api#the-unload-event)"
+    "message": "`unload` イベントの発生は安定していないため、これをリッスンするとブラウザの最適化機能（バックフォワード キャッシュなど）が妨げられる可能性があります。代わりに `pagehide` または `visibilitychange` イベントの使用をご検討ください。[詳細](https://developers.9oo91e.qjz9zk/web/updates/2018/07/page-lifecycle-api#the-unload-event)"
   },
   "lighthouse-core/audits/no-unload-listeners.js | failureTitle": {
     "message": "`unload` リスナーの登録"
@@ -1041,7 +1041,7 @@
     "message": "Lighthouse でマニフェストから `start_url` を読み取れませんでした。その結果、`start_url` はドキュメントの URL と認識されています。エラー メッセージ: 「{manifestWarning}」。"
   },
   "lighthouse-core/audits/performance-budget.js | description": {
-    "message": "ネットワーク リクエストの数とサイズが、指定したパフォーマンス予算の設定目標内に収まるよう維持します。[詳細](https://developers.google.com/web/tools/lighthouse/audits/budgets)"
+    "message": "ネットワーク リクエストの数とサイズが、指定したパフォーマンス予算の設定目標内に収まるよう維持します。[詳細](https://developers.9oo91e.qjz9zk/web/tools/lighthouse/audits/budgets)"
   },
   "lighthouse-core/audits/performance-budget.js | requestCountOverBudget": {
     "message": "{count,plural, =1{1 件のリクエスト}other{# 件のリクエスト}}"
@@ -1113,7 +1113,7 @@
     "message": "クロール不可のリンク"
   },
   "lighthouse-core/audits/seo/crawlable-anchors.js | description": {
-    "message": "検索エンジンでは、ウェブサイトのクロールにリンクの `href` 属性を使用する場合があります。アンカー要素の `href` 属性に適切なリンク先が設定されていて、ウェブサイトの他のページを見つけられるようになっていることを確認してください。[詳細](https://support.google.com/webmasters/answer/9112205)"
+    "message": "検索エンジンでは、ウェブサイトのクロールにリンクの `href` 属性を使用する場合があります。アンカー要素の `href` 属性に適切なリンク先が設定されていて、ウェブサイトの他のページを見つけられるようになっていることを確認してください。[詳細](https://support.9oo91e.qjz9zk/webmasters/answer/9112205)"
   },
   "lighthouse-core/audits/seo/crawlable-anchors.js | failureTitle": {
     "message": "リンクはクロールできません"
@@ -1197,7 +1197,7 @@
     "message": "リンクにわかりやすいテキストが設定されています"
   },
   "lighthouse-core/audits/seo/manual/structured-data.js | description": {
-    "message": "[構造化データ テストツール](https://search.google.com/structured-data/testing-tool/)と[構造化データ用 Linter](http://linter.structured-data.org/) を実行して構造化データを検証してください。[詳細](https://web.dev/structured-data/)"
+    "message": "[構造化データ テストツール](https://search.9oo91e.qjz9zk/structured-data/testing-tool/)と[構造化データ用 Linter](http://linter.structured-data.org/) を実行して構造化データを検証してください。[詳細](https://web.dev/structured-data/)"
   },
   "lighthouse-core/audits/seo/manual/structured-data.js | title": {
     "message": "構造化データが無効です"
@@ -1320,7 +1320,7 @@
     "message": "第三者"
   },
   "lighthouse-core/audits/third-party-summary.js | description": {
-    "message": "第三者コードによって、読み込み速度が著しく低下する可能性があります。重複する第三者プロバイダの数を制限したうえで、ページのメインの部分を読み込み終えた後に第三者コードを読み込んでみてください。[詳細](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/loading-third-party-javascript/)"
+    "message": "第三者コードによって、読み込み速度が著しく低下する可能性があります。重複する第三者プロバイダの数を制限したうえで、ページのメインの部分を読み込み終えた後に第三者コードを読み込んでみてください。[詳細](https://developers.9oo91e.qjz9zk/web/fundamentals/performance/optimizing-content-efficiency/loading-third-party-javascript/)"
   },
   "lighthouse-core/audits/third-party-summary.js | displayValue": {
     "message": "第三者コードによってメインスレッドが {timeInMs, number, milliseconds} ミリ秒間ブロックされました"
@@ -1341,7 +1341,7 @@
     "message": "指標"
   },
   "lighthouse-core/audits/timing-budget.js | description": {
-    "message": "タイミング予算を設定すると、サイトのパフォーマンス管理に役立ちます。パフォーマンスが高いサイトは読み込みが早く、ユーザーの入力イベントにすばやく応答できます。[詳細](https://developers.google.com/web/tools/lighthouse/audits/budgets)"
+    "message": "タイミング予算を設定すると、サイトのパフォーマンス管理に役立ちます。パフォーマンスが高いサイトは読み込みが早く、ユーザーの入力イベントにすばやく応答できます。[詳細](https://developers.9oo91e.qjz9zk/web/tools/lighthouse/audits/budgets)"
   },
   "lighthouse-core/audits/timing-budget.js | title": {
     "message": "タイミング予算"
@@ -1395,7 +1395,7 @@
     "message": "マップ URL"
   },
   "lighthouse-core/audits/valid-source-maps.js | description": {
-    "message": "ソースマップは軽量化したコードを元のソースコードに変換するもので、デベロッパーが本番環境でデバッグする際に役立ちます。また、Lighthouse で詳しい分析情報を提供することも可能になります。このようなメリットをふまえ、ソースマップの導入をご検討ください。[詳細](https://developers.google.com/web/tools/chrome-devtools/javascript/source-maps)"
+    "message": "ソースマップは軽量化したコードを元のソースコードに変換するもので、デベロッパーが本番環境でデバッグする際に役立ちます。また、Lighthouse で詳しい分析情報を提供することも可能になります。このようなメリットをふまえ、ソースマップの導入をご検討ください。[詳細](https://developers.9oo91e.qjz9zk/web/tools/chrome-devtools/javascript/source-maps)"
   },
   "lighthouse-core/audits/valid-source-maps.js | failureTitle": {
     "message": "サイズの大きいファーストパーティの JavaScript でソースマップが使用されていません"
@@ -1464,10 +1464,10 @@
     "message": "おすすめの方法"
   },
   "lighthouse-core/config/default-config.js | a11yCategoryDescription": {
-    "message": "これらのチェックにより、[ウェブアプリのユーザー補助機能の改善点](https://developers.google.com/web/fundamentals/accessibility)が明確になります。自動的に検出できるユーザー補助の問題は一部に過ぎないため、手動テストも実施することをおすすめします。"
+    "message": "これらのチェックにより、[ウェブアプリのユーザー補助機能の改善点](https://developers.9oo91e.qjz9zk/web/fundamentals/accessibility)が明確になります。自動的に検出できるユーザー補助の問題は一部に過ぎないため、手動テストも実施することをおすすめします。"
   },
   "lighthouse-core/config/default-config.js | a11yCategoryManualDescription": {
-    "message": "ここに、自動テストツールではカバーできない範囲に対処する項目が表示されます。詳しくは、[ユーザー補助機能の審査を実施する](https://developers.google.com/web/fundamentals/accessibility/how-to-review)方法についてのガイドをご覧ください。"
+    "message": "ここに、自動テストツールではカバーできない範囲に対処する項目が表示されます。詳しくは、[ユーザー補助機能の審査を実施する](https://developers.9oo91e.qjz9zk/web/fundamentals/accessibility/how-to-review)方法についてのガイドをご覧ください。"
   },
   "lighthouse-core/config/default-config.js | a11yCategoryTitle": {
     "message": "ユーザー補助"
@@ -1554,10 +1554,10 @@
     "message": "パフォーマンス"
   },
   "lighthouse-core/config/default-config.js | pwaCategoryDescription": {
-    "message": "これらのチェックではプログレッシブ ウェブアプリのさまざまな側面が検証されます。[詳細](https://developers.google.com/web/progressive-web-apps/checklist)"
+    "message": "これらのチェックではプログレッシブ ウェブアプリのさまざまな側面が検証されます。[詳細](https://developers.9oo91e.qjz9zk/web/progressive-web-apps/checklist)"
   },
   "lighthouse-core/config/default-config.js | pwaCategoryManualDescription": {
-    "message": "これらのチェック項目は基本の [PWA チェックリスト](https://developers.google.com/web/progressive-web-apps/checklist)で必須とされていますが、Lighthouse では自動的にチェックされません。スコアには影響しませんが、手動で確認することが重要です。"
+    "message": "これらのチェック項目は基本の [PWA チェックリスト](https://developers.9oo91e.qjz9zk/web/progressive-web-apps/checklist)で必須とされていますが、Lighthouse では自動的にチェックされません。スコアには影響しませんが、手動で確認することが重要です。"
   },
   "lighthouse-core/config/default-config.js | pwaCategoryTitle": {
     "message": "プログレッシブ ウェブアプリ"
@@ -1572,7 +1572,7 @@
     "message": "PWA の最適化"
   },
   "lighthouse-core/config/default-config.js | seoCategoryDescription": {
-    "message": "これらのチェックを実行することで、ページが検索エンジンの検索結果ランキングに対し最適化されていることを確認できます。Lighthouse ではチェックされない、検索結果ランキングに影響する可能性がある他の要因もあります。[詳細](https://support.google.com/webmasters/answer/35769)"
+    "message": "これらのチェックを実行することで、ページが検索エンジンの検索結果ランキングに対し最適化されていることを確認できます。Lighthouse ではチェックされない、検索結果ランキングに影響する可能性がある他の要因もあります。[詳細](https://support.9oo91e.qjz9zk/webmasters/answer/35769)"
   },
   "lighthouse-core/config/default-config.js | seoCategoryManualDescription": {
     "message": "サイトでこれらの他の検証ツールを実行し、SEO のその他のおすすめの方法をご確認ください。"
@@ -1593,7 +1593,7 @@
     "message": "クロールとインデックス登録"
   },
   "lighthouse-core/config/default-config.js | seoMobileGroupDescription": {
-    "message": "ページをスマホ対応にして、ピンチ操作や拡大操作なしでコンテンツを読めるようにします。[詳細](https://developers.google.com/search/mobile-sites/)"
+    "message": "ページをスマホ対応にして、ピンチ操作や拡大操作なしでコンテンツを読めるようにします。[詳細](https://developers.9oo91e.qjz9zk/search/mobile-sites/)"
   },
   "lighthouse-core/config/default-config.js | seoMobileGroupTitle": {
     "message": "スマホ対応"
@@ -1836,7 +1836,7 @@
     "message": "ラボデータ"
   },
   "lighthouse-core/report/html/renderer/util.js | lsPerformanceCategoryDescription": {
-    "message": "エミュレート済みモバイル ネットワークでの現在のページに関する [Lighthouse](https://developers.google.com/web/tools/lighthouse/) 分析です。推定値のため変動する可能性があります。"
+    "message": "エミュレート済みモバイル ネットワークでの現在のページに関する [Lighthouse](https://developers.9oo91e.qjz9zk/web/tools/lighthouse/) 分析です。推定値のため変動する可能性があります。"
   },
   "lighthouse-core/report/html/renderer/util.js | manualAuditsGroupTitle": {
     "message": "個別の検証が必要な他の項目"
@@ -1983,10 +1983,10 @@
     "message": "[Administration] > [Configuration] > [Development] ページで [Aggregate JavaScript files] を有効にしていることを確認してください。[追加のモジュール](https://www.drupal.org/project/project_module?f%5B0%5D=&f%5B1%5D=&f%5B2%5D=im_vid_3%3A123&f%5B3%5D=&f%5B4%5D=sm_field_project_type%3Afull&f%5B5%5D=&f%5B6%5D=&text=javascript+aggregation&solrsort=iss_project_release_usage+desc&op=Search)を使用してより高度な集約オプションを設定し、JavaScript アセットを結合、軽量化、圧縮してサイトの動作を速くすることもできます。"
   },
   "node_modules/lighthouse-stack-packs/packs/drupal.js | unused-css-rules": {
-    "message": "使用されていない CSS ルールの削除を検討し、必要な Drupal ライブラリのみを関連性の高いページまたはページのコンポーネントに接続してください。詳しくは、[Drupal のドキュメントのリンク](https://www.drupal.org/docs/8/creating-custom-modules/adding-stylesheets-css-and-javascript-js-to-a-drupal-8-module#library)をご覧ください。不要な CSS を読み込んでいる接続済みライブラリを特定するには、Chrome DevTools で[コードの Coverage](https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverage) を確認します。Drupal のサイトで CSS の集約が無効になっている場合、スタイルシートの URL から、該当のテーマやモジュールを特定できます。多くのスタイルシートを使用しているテーマやモジュール（コードの Coverage で赤色の部分が多いもの）をリストで探します。テーマやモジュールによってキューに追加されるスタイルシートは、実際にページで使用されるもののみにする必要があります。"
+    "message": "使用されていない CSS ルールの削除を検討し、必要な Drupal ライブラリのみを関連性の高いページまたはページのコンポーネントに接続してください。詳しくは、[Drupal のドキュメントのリンク](https://www.drupal.org/docs/8/creating-custom-modules/adding-stylesheets-css-and-javascript-js-to-a-drupal-8-module#library)をご覧ください。不要な CSS を読み込んでいる接続済みライブラリを特定するには、Chrome DevTools で[コードの Coverage](https://developers.9oo91e.qjz9zk/web/updates/2017/04/devtools-release-notes#coverage) を確認します。Drupal のサイトで CSS の集約が無効になっている場合、スタイルシートの URL から、該当のテーマやモジュールを特定できます。多くのスタイルシートを使用しているテーマやモジュール（コードの Coverage で赤色の部分が多いもの）をリストで探します。テーマやモジュールによってキューに追加されるスタイルシートは、実際にページで使用されるもののみにする必要があります。"
   },
   "node_modules/lighthouse-stack-packs/packs/drupal.js | unused-javascript": {
-    "message": "Consider removing unused JavaScript assets and only attach the needed Drupal libraries to the relevant page or component in a page. See the [Drupal documentation link](https://www.drupal.org/docs/8/creating-custom-modules/adding-stylesheets-css-and-javascript-js-to-a-drupal-8-module#library) for details. To identify attached libraries that are adding extraneous JavaScript, try running [code coverage](https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverage) in Chrome DevTools. You can identify the theme/module responsible from the URL of the script when JavaScript aggregation is disabled in your Drupal site. Look out for themes/modules that have many scripts in the list which have a lot of red in code coverage. A theme/module should only enqueue a script if it is actually used on the page."
+    "message": "Consider removing unused JavaScript assets and only attach the needed Drupal libraries to the relevant page or component in a page. See the [Drupal documentation link](https://www.drupal.org/docs/8/creating-custom-modules/adding-stylesheets-css-and-javascript-js-to-a-drupal-8-module#library) for details. To identify attached libraries that are adding extraneous JavaScript, try running [code coverage](https://developers.9oo91e.qjz9zk/web/updates/2017/04/devtools-release-notes#coverage) in Chrome DevTools. You can identify the theme/module responsible from the URL of the script when JavaScript aggregation is disabled in your Drupal site. Look out for themes/modules that have many scripts in the list which have a lot of red in code coverage. A theme/module should only enqueue a script if it is actually used on the page."
   },
   "node_modules/lighthouse-stack-packs/packs/drupal.js | uses-long-cache-ttl": {
     "message": "[Administration] > [Configuration] > [Development] ページで [Browser and proxy cache maximum age] を設定してください。[Drupal のキャッシュとパフォーマンスの最適化](https://www.drupal.org/docs/7/managing-site-performance-and-scalability/caching-to-improve-performance/caching-overview#s-drupal-performance-resources)についてご確認ください。"
@@ -2025,10 +2025,10 @@
     "message": "スクリプトを結合、軽量化、圧縮してサイトの動作を速くする、さまざまな [Joomla 拡張機能](https://extensions.joomla.org/instant-search/?jed_live%5Bquery%5D=performance)があります。この機能を提供するテンプレートもあります。"
   },
   "node_modules/lighthouse-stack-packs/packs/joomla.js | unused-css-rules": {
-    "message": "ページで使用されていない CSS を読み込む [Joomla 拡張機能](https://extensions.joomla.org/)の数を減らすか、他の拡張機能に切り替えることをご検討ください。不要な CSS を読み込んでいる拡張機能を特定するには、Chrome DevTools で[コードの Coverage](https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverage) を確認します。該当するテーマやプラグインは、スタイルシートの URL から特定できます。多くのスタイルシートを使用しているプラグイン（コードの Coverage で赤色の部分が多いもの）をリストで探します。プラグインによってキューに追加されるスタイルシートは、実際にページで使用されるもののみにする必要があります。"
+    "message": "ページで使用されていない CSS を読み込む [Joomla 拡張機能](https://extensions.joomla.org/)の数を減らすか、他の拡張機能に切り替えることをご検討ください。不要な CSS を読み込んでいる拡張機能を特定するには、Chrome DevTools で[コードの Coverage](https://developers.9oo91e.qjz9zk/web/updates/2017/04/devtools-release-notes#coverage) を確認します。該当するテーマやプラグインは、スタイルシートの URL から特定できます。多くのスタイルシートを使用しているプラグイン（コードの Coverage で赤色の部分が多いもの）をリストで探します。プラグインによってキューに追加されるスタイルシートは、実際にページで使用されるもののみにする必要があります。"
   },
   "node_modules/lighthouse-stack-packs/packs/joomla.js | unused-javascript": {
-    "message": "ページで使用されていない JavaScript を読み込む [Joomla 拡張機能](https://extensions.joomla.org/)の数を減らすか、他の拡張機能に切り替えることをご検討ください。不要な JavaScript を読み込んでいるプラグインを特定するには、Chrome DevTools で[コードの Coverage](https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverage) を確認します。該当する拡張機能は、スクリプトの URL から特定できます。多くのスクリプトを使用している拡張機能（コードの Coverage で赤色の部分が多いもの）をリストで探します。拡張機能によってキューに追加されるスクリプトは、実際にページで使用されるもののみにする必要があります。"
+    "message": "ページで使用されていない JavaScript を読み込む [Joomla 拡張機能](https://extensions.joomla.org/)の数を減らすか、他の拡張機能に切り替えることをご検討ください。不要な JavaScript を読み込んでいるプラグインを特定するには、Chrome DevTools で[コードの Coverage](https://developers.9oo91e.qjz9zk/web/updates/2017/04/devtools-release-notes#coverage) を確認します。該当する拡張機能は、スクリプトの URL から特定できます。多くのスクリプトを使用している拡張機能（コードの Coverage で赤色の部分が多いもの）をリストで探します。拡張機能によってキューに追加されるスクリプトは、実際にページで使用されるもののみにする必要があります。"
   },
   "node_modules/lighthouse-stack-packs/packs/joomla.js | uses-long-cache-ttl": {
     "message": "[Joomla のブラウザ キャッシング](https://docs.joomla.org/Cache)についてご確認ください。"
@@ -2124,10 +2124,10 @@
     "message": "スクリプトを結合、軽量化、圧縮してサイトの動作を速くする、さまざまな [WordPress プラグイン](https://wordpress.org/plugins/search/minify+javascript/)があります。可能な場合は、ビルド処理で事前に軽量化しておくこともおすすめします。"
   },
   "node_modules/lighthouse-stack-packs/packs/wordpress.js | unused-css-rules": {
-    "message": "ページで使用されていない CSS を読み込む [WordPress プラグイン](https://wordpress.org/plugins/)の数を減らすか、他のプラグインに切り替えることをご検討ください。不要な CSS を読み込んでいるプラグインを特定するには、Chrome DevTools で[コードの Coverage](https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverage) を確認します。スタイルシートの URL から、それを使用しているテーマやプラグインを特定できます。多くのスタイルシートを使用しているプラグイン（コードの Coverage で赤色の部分が多いもの）をリストで探します。プラグインによってキューに追加されるスタイルシートは、実際にページで使用されるもののみにする必要があります。"
+    "message": "ページで使用されていない CSS を読み込む [WordPress プラグイン](https://wordpress.org/plugins/)の数を減らすか、他のプラグインに切り替えることをご検討ください。不要な CSS を読み込んでいるプラグインを特定するには、Chrome DevTools で[コードの Coverage](https://developers.9oo91e.qjz9zk/web/updates/2017/04/devtools-release-notes#coverage) を確認します。スタイルシートの URL から、それを使用しているテーマやプラグインを特定できます。多くのスタイルシートを使用しているプラグイン（コードの Coverage で赤色の部分が多いもの）をリストで探します。プラグインによってキューに追加されるスタイルシートは、実際にページで使用されるもののみにする必要があります。"
   },
   "node_modules/lighthouse-stack-packs/packs/wordpress.js | unused-javascript": {
-    "message": "ページで使用されていない JavaScript を読み込む [WordPress プラグイン](https://wordpress.org/plugins/)の数を減らすか、他のプラグインに切り替えることをご検討ください。不要な JavaScript を読み込んでいるプラグインを特定するには、Chrome DevTools で[コードの Coverage](https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverage) を確認します。スクリプトの URL から、該当のテーマやプラグインを特定できます。多くのスクリプトを使用しているプラグイン（コードの Coverage で赤色の部分が多いもの）をリストで探します。プラグインによってキューに追加されるスクリプトは、実際にページで使用されるもののみにする必要があります。"
+    "message": "ページで使用されていない JavaScript を読み込む [WordPress プラグイン](https://wordpress.org/plugins/)の数を減らすか、他のプラグインに切り替えることをご検討ください。不要な JavaScript を読み込んでいるプラグインを特定するには、Chrome DevTools で[コードの Coverage](https://developers.9oo91e.qjz9zk/web/updates/2017/04/devtools-release-notes#coverage) を確認します。スクリプトの URL から、該当のテーマやプラグインを特定できます。多くのスクリプトを使用しているプラグイン（コードの Coverage で赤色の部分が多いもの）をリストで探します。プラグインによってキューに追加されるスクリプトは、実際にページで使用されるもののみにする必要があります。"
   },
   "node_modules/lighthouse-stack-packs/packs/wordpress.js | uses-long-cache-ttl": {
     "message": "[WordPress のブラウザ キャッシング](https://wordpress.org/support/article/optimization/#browser-caching)についてご確認ください。"

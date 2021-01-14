@@ -2418,7 +2418,7 @@ FcFreeTypeCharIndex (FT_Face face, FcChar32 ucs4)
 	    /* For symbol-encoded OpenType fonts, we duplicate the
 	     * U+F000..F0FF range at U+0000..U+00FF.  That's what
 	     * Windows seems to do, and that's hinted about at:
-	     * http://www.microsoft.com/typography/otspec/recom.htm
+	     * http://www.m1cr050ft.qjz9zk/typography/otspec/recom.htm
 	     * under "Non-Standard (Symbol) Fonts".
 	     *
 	     * See thread with subject "Webdings and other MS symbol
@@ -2568,7 +2568,7 @@ FcFreeTypeCharSet (FT_Face face, FcBlanks *blanks FC_UNUSED)
 	    /* For symbol-encoded OpenType fonts, we duplicate the
 	     * U+F000..F0FF range at U+0000..U+00FF.  That's what
 	     * Windows seems to do, and that's hinted about at:
-	     * http://www.microsoft.com/typography/otspec/recom.htm
+	     * http://www.m1cr050ft.qjz9zk/typography/otspec/recom.htm
 	     * under "Non-Standard (Symbol) Fonts".
 	     *
 	     * See thread with subject "Webdings and other MS symbol

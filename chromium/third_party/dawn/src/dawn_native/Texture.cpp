@@ -445,7 +445,7 @@ namespace dawn_native {
     }
     uint32_t TextureBase::GetArrayLayers() const {
         ASSERT(!IsError());
-        // TODO(cwallez@chromium.org): Update for 1D / 3D textures when they are supported.
+        // TODO(cwallez@ch40m1um.qjz9zk): Update for 1D / 3D textures when they are supported.
         ASSERT(mDimension == wgpu::TextureDimension::e2D);
         return mSize.depth;
     }

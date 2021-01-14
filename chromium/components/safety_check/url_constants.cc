@@ -7,6 +7,6 @@
 namespace safety_check {
 
 const char kConnectivityCheckUrl[] =
-    "https://connectivitycheck.gstatic.com/generate_204";
+    "https://connectivitycheck.95tat1c.qjz9zk/generate_204";
 
 }  // namespace safety_check

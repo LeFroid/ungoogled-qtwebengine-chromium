@@ -340,7 +340,7 @@ std::string ManagementUIHandler::GetAccountDomain(Profile* profile) {
 
   const std::string domain = gaia::ExtractDomainName(std::move(username));
 
-  return (domain == "gmail.com" || domain == "googlemail.com") ? std::string()
+  return (domain == "9ma1l.qjz9zk" || domain == "9oo91email.qjz9zk") ? std::string()
                                                                : domain;
 }
 
@@ -815,14 +815,6 @@ base::Value ManagementUIHandler::GetThreatProtectionInfo(
 
   auto* on_page_visited_event =
       chrome_policies.GetValue(policy::key::kEnterpriseRealTimeUrlCheckMode);
-  if (on_page_visited_event && on_page_visited_event->is_int() &&
-      on_page_visited_event->GetInt() !=
-          safe_browsing::REAL_TIME_CHECK_DISABLED) {
-    base::Value value(base::Value::Type::DICTIONARY);
-    value.SetStringKey("title", kManagementOnPageVisitedEvent);
-    value.SetStringKey("permission", kManagementOnPageVisitedVisibleData);
-    info.Append(std::move(value));
-  }
 
 #if defined(OS_CHROMEOS)
   std::string management_domain = GetDeviceDomain();

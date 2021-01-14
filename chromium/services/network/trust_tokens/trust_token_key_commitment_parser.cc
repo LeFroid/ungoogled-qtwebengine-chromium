@@ -142,7 +142,7 @@ const char kTrustTokenKeyCommitmentSrrkeyField[] = "srrkey";
 const char kTrustTokenKeyCommitmentExpiryField[] = "expiry";
 const char kTrustTokenKeyCommitmentKeyField[] = "Y";
 
-// https://docs.google.com/document/d/1TNnya6B8pyomDK2F1R9CL3dY10OAmqWlnCxsWyOBDVQ/edit#bookmark=id.6wh9crbxdizi
+// https://docs.9oo91e.qjz9zk/document/d/1TNnya6B8pyomDK2F1R9CL3dY10OAmqWlnCxsWyOBDVQ/edit#bookmark=id.6wh9crbxdizi
 // {
 //   "batchsize" : ..., // Batch size; value of type int.
 //   "srrkey" : ...,    // Required Signed Redemption Record (SRR)

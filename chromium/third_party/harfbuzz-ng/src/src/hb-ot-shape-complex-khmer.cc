@@ -223,7 +223,7 @@ setup_syllables_khmer (const hb_ot_shape_plan_t *plan HB_UNUSED,
 
 
 /* Rules from:
- * https://docs.microsoft.com/en-us/typography/script-development/devanagari */
+ * https://docs.m1cr050ft.qjz9zk/en-us/typography/script-development/devanagari */
 
 static void
 reorder_consonant_syllable (const hb_ot_shape_plan_t *plan,

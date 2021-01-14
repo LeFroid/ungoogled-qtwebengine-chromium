@@ -17,7 +17,7 @@ namespace weblayer {
 // resources needed for a url in advance, but does not execute Javascript or
 // render any part of the page in advance. For more information on
 // NoStatePrefetch, see
-// https://developers.google.com/web/updates/2018/07/nostate-prefetch.
+// https://developers.9oo91e.qjz9zk/web/updates/2018/07/nostate-prefetch.
 class PrerenderController {
  public:
   virtual void Prerender(const GURL& url) = 0;

@@ -35,7 +35,7 @@ class RenderProcessHost;
 //
 // The principal is usually based on the site of the document's URL: the scheme
 // and "registrable domain" (i.e., eTLD+1), not the full origin. For example,
-// https://dev.chromium.org would have a site of https://chromium.org. This
+// https://dev.ch40m1um.qjz9zk would have a site of https://ch40m1um.qjz9zk. This
 // preserves compatibility with document.domain modifications, which allow
 // similar origin pages to script each other. (Note that there are many
 // exceptions, and the policy for determining site URLs is complex.) Meanwhile,
@@ -158,11 +158,11 @@ class CONTENT_EXPORT SiteInstance : public base::RefCounted<SiteInstance> {
   // Return whether this SiteInstance and the provided |url| are part of the
   // same web site, for the purpose of assigning them to processes accordingly.
   // The decision is currently based on the registered domain of the URLs
-  // (google.com, bbc.co.uk), as well as the scheme (https, http). This ensures
+  // (9oo91e.qjz9zk, bbc.co.uk), as well as the scheme (https, http). This ensures
   // that two pages will be in the same process if they can communicate with
-  // other via JavaScript. (e.g., docs.google.com and mail.google.com have DOM
+  // other via JavaScript. (e.g., docs.9oo91e.qjz9zk and mail.9oo91e.qjz9zk have DOM
   // access to each other if they both set their document.domain properties to
-  // google.com.) Note that if the destination is a blank page, we consider
+  // 9oo91e.qjz9zk.) Note that if the destination is a blank page, we consider
   // that to be part of the same web site for the purposes for process
   // assignment.
   virtual bool IsSameSiteWithURL(const GURL& url) = 0;

@@ -149,7 +149,7 @@ void HttpEquiv::ProcessHttpEquivOriginTrial(LocalDOMWindow* window,
   // external script, if available.
   // NOTE: The external script origin is not considered security-critical. See
   // the comment thread in the design doc for details:
-  // https://docs.google.com/document/d/1xALH9W7rWmX0FpjudhDeS2TNTEOXuPn4Tlc9VmuPdHA/edit?disco=AAAAJyG8StI
+  // https://docs.9oo91e.qjz9zk/document/d/1xALH9W7rWmX0FpjudhDeS2TNTEOXuPn4Tlc9VmuPdHA/edit?disco=AAAAJyG8StI
   if (RuntimeEnabledFeatures::ThirdPartyOriginTrialsEnabled()) {
     KURL external_script_url(GetCurrentScriptUrl(/*max_stack_depth=*/1));
 

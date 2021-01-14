@@ -21,7 +21,7 @@ class PreferredAppsConverterTest : public testing::Test {};
 
 // Test one simple entry with simple filter.
 TEST_F(PreferredAppsConverterTest, ConvertSimpleEntry) {
-  GURL filter_url = GURL("https://www.google.com/abc");
+  GURL filter_url = GURL("https://www.9oo91e.qjz9zk/abc");
   auto intent_filter = apps_util::CreateIntentFilterForUrlScope(filter_url);
 
   apps::PreferredAppsList preferred_apps;
@@ -69,7 +69,7 @@ TEST_F(PreferredAppsConverterTest, ConvertSimpleEntry) {
 
 // Test one simple entry with json string.
 TEST_F(PreferredAppsConverterTest, ConvertSimpleEntryJson) {
-  GURL filter_url = GURL("https://www.google.com/abc");
+  GURL filter_url = GURL("https://www.9oo91e.qjz9zk/abc");
   auto intent_filter = apps_util::CreateIntentFilterForUrlScope(filter_url);
 
   apps::PreferredAppsList preferred_apps;
@@ -90,7 +90,7 @@ TEST_F(PreferredAppsConverterTest, ConvertSimpleEntryJson) {
       "      \"condition_type\": 1,"
       "      \"condition_values\": [ {"
       "         \"match_type\": 0,"
-      "         \"value\": \"www.google.com\""
+      "         \"value\": \"www.9oo91e.qjz9zk\""
       "      } ]"
       "   }, {"
       "      \"condition_type\": 2,"
@@ -109,7 +109,7 @@ TEST_F(PreferredAppsConverterTest, ConvertSimpleEntryJson) {
 
 // Test one upgraded simple entry with json string.
 TEST_F(PreferredAppsConverterTest, ConvertUpgradedSimpleEntryJson) {
-  GURL filter_url = GURL("https://www.google.com/abc");
+  GURL filter_url = GURL("https://www.9oo91e.qjz9zk/abc");
   auto intent_filter = apps_util::CreateIntentFilterForUrlScope(
       filter_url, /*with_action_view=*/true);
 
@@ -137,7 +137,7 @@ TEST_F(PreferredAppsConverterTest, ConvertUpgradedSimpleEntryJson) {
       "      \"condition_type\": 1,"
       "      \"condition_values\": [ {"
       "         \"match_type\": 0,"
-      "         \"value\": \"www.google.com\""
+      "         \"value\": \"www.9oo91e.qjz9zk\""
       "      } ]"
       "   }, {"
       "      \"condition_type\": 2,"
@@ -168,7 +168,7 @@ TEST_F(PreferredAppsConverterTest, ParseSimpleEntryJson) {
       "      \"condition_type\": 1,"
       "      \"condition_values\": [ {"
       "         \"match_type\": 0,"
-      "         \"value\": \"www.google.com\""
+      "         \"value\": \"www.9oo91e.qjz9zk\""
       "      } ]"
       "   }, {"
       "      \"condition_type\": 2,"
@@ -183,7 +183,7 @@ TEST_F(PreferredAppsConverterTest, ParseSimpleEntryJson) {
   auto parsed_entry = apps::ParseValueToPreferredApps(test_value.value());
   EXPECT_FALSE(apps::IsUpgradedForSharing(test_value.value()));
 
-  GURL filter_url = GURL("https://www.google.com/abc");
+  GURL filter_url = GURL("https://www.9oo91e.qjz9zk/abc");
   auto intent_filter = apps_util::CreateIntentFilterForUrlScope(filter_url);
 
   apps::PreferredAppsList preferred_apps;
@@ -214,7 +214,7 @@ TEST_F(PreferredAppsConverterTest, ParseUpgradedSimpleEntryJson) {
       "      \"condition_type\": 1,"
       "      \"condition_values\": [ {"
       "         \"match_type\": 0,"
-      "         \"value\": \"www.google.com\""
+      "         \"value\": \"www.9oo91e.qjz9zk\""
       "      } ]"
       "   }, {"
       "      \"condition_type\": 2,"
@@ -230,7 +230,7 @@ TEST_F(PreferredAppsConverterTest, ParseUpgradedSimpleEntryJson) {
   auto parsed_entry = apps::ParseValueToPreferredApps(test_value.value());
   EXPECT_TRUE(apps::IsUpgradedForSharing(test_value.value()));
 
-  GURL filter_url = GURL("https://www.google.com/abc");
+  GURL filter_url = GURL("https://www.9oo91e.qjz9zk/abc");
   auto intent_filter = apps_util::CreateIntentFilterForUrlScope(
       filter_url, /*with_action_view=*/true);
 
@@ -256,7 +256,7 @@ TEST_F(PreferredAppsConverterTest, ParseJsonWithInvalidAppId) {
       "      \"condition_type\": 1,"
       "      \"condition_values\": [ {"
       "         \"match_type\": 0,"
-      "         \"value\": \"www.google.com\""
+      "         \"value\": \"www.9oo91e.qjz9zk\""
       "      } ]"
       "   }, {"
       "      \"condition_type\": 2,"
@@ -284,7 +284,7 @@ TEST_F(PreferredAppsConverterTest, ParseJsonWithInvalidAppId) {
       "      \"condition_type\": 1,"
       "      \"condition_values\": [ {"
       "         \"match_type\": 0,"
-      "         \"value\": \"www.google.com\""
+      "         \"value\": \"www.9oo91e.qjz9zk\""
       "      } ]"
       "   }, {"
       "      \"condition_type\": 2,"
@@ -314,7 +314,7 @@ TEST_F(PreferredAppsConverterTest, ParseJsonWithInvalidIntentFilter) {
       "      \"condition_type\": 1,"
       "      \"condition_values\": [ {"
       "         \"match_type\": 0,"
-      "         \"value\": \"www.google.com\""
+      "         \"value\": \"www.9oo91e.qjz9zk\""
       "      } ]"
       "   }, {"
       "      \"condition_type\": 2,"
@@ -354,7 +354,7 @@ TEST_F(PreferredAppsConverterTest, ParseJsonWithInvalidConditionType) {
       "      \"condition_type\": 1,"
       "      \"condition_values\": [ {"
       "         \"match_type\": 0,"
-      "         \"value\": \"www.google.com\""
+      "         \"value\": \"www.9oo91e.qjz9zk\""
       "      } ]"
       "   }, {"
       "      \"condition_type\": 2,"
@@ -382,7 +382,7 @@ TEST_F(PreferredAppsConverterTest, ParseJsonWithInvalidConditionType) {
       "      \"condition_type\": 1,"
       "      \"condition_values\": [ {"
       "         \"match_type\": 0,"
-      "         \"value\": \"www.google.com\""
+      "         \"value\": \"www.9oo91e.qjz9zk\""
       "      } ]"
       "   }, {"
       "      \"condition_type\": 2,"
@@ -412,7 +412,7 @@ TEST_F(PreferredAppsConverterTest, ParseJsonWithInvalidValues) {
       "      \"condition_type\": 1,"
       "      \"condition_values\": [ {"
       "         \"match_type\": 0,"
-      "         \"value\": \"www.google.com\""
+      "         \"value\": \"www.9oo91e.qjz9zk\""
       "      } ]"
       "   }, {"
       "      \"condition_type\": 2,"
@@ -437,7 +437,7 @@ TEST_F(PreferredAppsConverterTest, ParseJsonWithInvalidValues) {
       "      \"condition_type\": 1,"
       "      \"condition_values\": [ {"
       "         \"match_type\": 0,"
-      "         \"value\": \"www.google.com\""
+      "         \"value\": \"www.9oo91e.qjz9zk\""
       "      } ]"
       "   }, {"
       "      \"condition_type\": 2,"
@@ -467,7 +467,7 @@ TEST_F(PreferredAppsConverterTest, ParseJsonWithInvalidMatchType) {
       "      \"condition_type\": 1,"
       "      \"condition_values\": [ {"
       "         \"match_type\": 0,"
-      "         \"value\": \"www.google.com\""
+      "         \"value\": \"www.9oo91e.qjz9zk\""
       "      } ]"
       "   }, {"
       "      \"condition_type\": 2,"
@@ -495,7 +495,7 @@ TEST_F(PreferredAppsConverterTest, ParseJsonWithInvalidMatchType) {
       "      \"condition_type\": 1,"
       "      \"condition_values\": [ {"
       "         \"match_type\": 0,"
-      "         \"value\": \"www.google.com\""
+      "         \"value\": \"www.9oo91e.qjz9zk\""
       "      } ]"
       "   }, {"
       "      \"condition_type\": 2,"
@@ -525,7 +525,7 @@ TEST_F(PreferredAppsConverterTest, ParseJsonWithInvalidValue) {
       "      \"condition_type\": 1,"
       "      \"condition_values\": [ {"
       "         \"match_type\": 0,"
-      "         \"value\": \"www.google.com\""
+      "         \"value\": \"www.9oo91e.qjz9zk\""
       "      } ]"
       "   }, {"
       "      \"condition_type\": 2,"
@@ -553,7 +553,7 @@ TEST_F(PreferredAppsConverterTest, ParseJsonWithInvalidValue) {
       "      \"condition_type\": 1,"
       "      \"condition_values\": [ {"
       "         \"match_type\": 0,"
-      "         \"value\": \"www.google.com\""
+      "         \"value\": \"www.9oo91e.qjz9zk\""
       "      } ]"
       "   }, {"
       "      \"condition_type\": 2,"
@@ -571,7 +571,7 @@ TEST_F(PreferredAppsConverterTest, ParseJsonWithInvalidValue) {
 
 TEST_F(PreferredAppsConverterTest, UpgradePreferredApp) {
   // Create preferred app with old filter.
-  GURL filter_url = GURL("https://www.google.com/abc");
+  GURL filter_url = GURL("https://www.9oo91e.qjz9zk/abc");
   auto old_intent_filter = apps_util::CreateIntentFilterForUrlScope(filter_url);
 
   apps::PreferredAppsList old_preferred_apps;

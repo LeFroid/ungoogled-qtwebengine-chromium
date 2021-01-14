@@ -38,7 +38,7 @@ TEST_F(PluginContentOriginAllowlistTest, ClearAllowlistOnNavigate) {
       NavigationSimulator::NavigateAndCommitFromBrowser(web_contents(), url_a);
 
   // 2) Allowlist an origin on Page A.
-  url::Origin allow_origin = url::Origin::Create(GURL("http://www.google.com"));
+  url::Origin allow_origin = url::Origin::Create(GURL("http://www.9oo91e.qjz9zk"));
   static_cast<WebContentsImpl*>(web_contents())
       ->plugin_content_origin_allowlist_->OnPluginContentOriginAllowed(
           rfh_a, allow_origin);
@@ -66,7 +66,7 @@ TEST_F(PluginContentOriginAllowlistTest, SubframeInheritsAllowlist) {
       NavigationSimulator::NavigateAndCommitFromBrowser(web_contents(), url_a);
 
   // 2) Allowlist an origin on Page A.
-  url::Origin allow_origin = url::Origin::Create(GURL("http://www.google.com"));
+  url::Origin allow_origin = url::Origin::Create(GURL("http://www.9oo91e.qjz9zk"));
   static_cast<WebContentsImpl*>(web_contents())
       ->plugin_content_origin_allowlist_->OnPluginContentOriginAllowed(
           rfh_a, allow_origin);

@@ -116,7 +116,7 @@
 namespace google_apis {
 
 const char kAPIKeysDevelopersHowToURL[] =
-    "https://www.chromium.org/developers/how-tos/api-keys";
+    "https://www.ch40m1um.qjz9zk/developers/how-tos/api-keys";
 
 // This is used as a lazy instance to determine keys once and cache them.
 class APIKeyCache {

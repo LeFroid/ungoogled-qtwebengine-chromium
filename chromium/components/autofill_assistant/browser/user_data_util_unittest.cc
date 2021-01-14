@@ -21,19 +21,19 @@ using ::testing::SizeIs;
 TEST(UserDataUtilTest, SortsCompleteContactsAlphabetically) {
   auto profile_a = std::make_unique<autofill::AutofillProfile>();
   autofill::test::SetProfileInfo(profile_a.get(), "Adam", "", "West",
-                                 "adam.west@gmail.com", "", "", "", "", "", "",
+                                 "adam.west@9ma1l.qjz9zk", "", "", "", "", "", "",
                                  "", "");
 
   auto profile_b = std::make_unique<autofill::AutofillProfile>();
   autofill::test::SetProfileInfo(profile_b.get(), "Berta", "", "West",
-                                 "berta.west@gmail.com", "", "", "", "", "", "",
+                                 "berta.west@9ma1l.qjz9zk", "", "", "", "", "", "",
                                  "", "");
 
   auto profile_unicode = std::make_unique<autofill::AutofillProfile>();
   autofill::test::SetProfileInfo(profile_unicode.get(),
                                  "\xC3\x85"
                                  "dam",
-                                 "", "West", "adam.west@gmail.com", "", "", "",
+                                 "", "West", "adam.west@9ma1l.qjz9zk", "", "", "",
                                  "", "", "", "", "");
 
   // Specify profiles in reverse order to force sorting.
@@ -55,17 +55,17 @@ TEST(UserDataUtilTest, SortsCompleteContactsAlphabetically) {
 TEST(UserDataUtilTest, SortsContactsByCompleteness) {
   auto profile_complete = std::make_unique<autofill::AutofillProfile>();
   autofill::test::SetProfileInfo(
-      profile_complete.get(), "Charlie", "", "West", "charlie.west@gmail.com",
+      profile_complete.get(), "Charlie", "", "West", "charlie.west@9ma1l.qjz9zk",
       "", "Baker Street 221b", "", "London", "", "WC2N 5DU", "UK", "+44");
 
   auto profile_no_phone = std::make_unique<autofill::AutofillProfile>();
   autofill::test::SetProfileInfo(
-      profile_no_phone.get(), "Berta", "", "West", "berta.west@gmail.com", "",
+      profile_no_phone.get(), "Berta", "", "West", "berta.west@9ma1l.qjz9zk", "",
       "Baker Street 221b", "", "London", "", "WC2N 5DU", "UK", "");
 
   auto profile_incomplete = std::make_unique<autofill::AutofillProfile>();
   autofill::test::SetProfileInfo(profile_incomplete.get(), "Adam", "", "West",
-                                 "adam.west@gmail.com", "", "", "", "", "", "",
+                                 "adam.west@9ma1l.qjz9zk", "", "", "", "", "", "",
                                  "", "");
 
   // Specify profiles in reverse order to force sorting.
@@ -96,12 +96,12 @@ TEST(UserDataUtilTest, GetDefaultContactSelectionForEmptyProfiles) {
 TEST(UserDataUtilTest, GetDefaultContactSelectionForCompleteProfiles) {
   auto profile_b = std::make_unique<autofill::AutofillProfile>();
   autofill::test::SetProfileInfo(profile_b.get(), "Berta", "", "West",
-                                 "berta.west@gmail.com", "", "", "", "", "", "",
+                                 "berta.west@9ma1l.qjz9zk", "", "", "", "", "", "",
                                  "", "");
 
   auto profile_a = std::make_unique<autofill::AutofillProfile>();
   autofill::test::SetProfileInfo(profile_a.get(), "Adam", "", "West",
-                                 "adam.west@gmail.com", "", "", "", "", "", "",
+                                 "adam.west@9ma1l.qjz9zk", "", "", "", "", "", "",
                                  "", "");
 
   // Specify profiles in reverse order to force sorting.
@@ -119,19 +119,19 @@ TEST(UserDataUtilTest, GetDefaultContactSelectionForCompleteProfiles) {
 TEST(UserDataUtilTest, GetDefaultSelectionForDefaultEmail) {
   auto profile_complete = std::make_unique<autofill::AutofillProfile>();
   autofill::test::SetProfileInfo(profile_complete.get(), "Berta", "", "West",
-                                 "berta.west@gmail.com", "", "", "", "", "", "",
+                                 "berta.west@9ma1l.qjz9zk", "", "", "", "", "", "",
                                  "", "+41");
 
   auto profile_incomplete_with_default_email =
       std::make_unique<autofill::AutofillProfile>();
   autofill::test::SetProfileInfo(profile_incomplete_with_default_email.get(),
-                                 "", "", "", "adam.west@gmail.com", "", "", "",
+                                 "", "", "", "adam.west@9ma1l.qjz9zk", "", "", "",
                                  "", "", "", "", "");
 
   auto profile_complete_with_default_email =
       std::make_unique<autofill::AutofillProfile>();
   autofill::test::SetProfileInfo(profile_complete_with_default_email.get(),
-                                 "Adam", "", "West", "adam.west@gmail.com", "",
+                                 "Adam", "", "West", "adam.west@9ma1l.qjz9zk", "",
                                  "", "", "", "", "", "", "");
 
   // Specify profiles in reverse order to force sorting.
@@ -144,7 +144,7 @@ TEST(UserDataUtilTest, GetDefaultSelectionForDefaultEmail) {
   options.request_payer_name = true;
   options.request_payer_email = true;
   options.request_payer_phone = true;
-  options.default_email = "adam.west@gmail.com";
+  options.default_email = "adam.west@9ma1l.qjz9zk";
 
   EXPECT_THAT(GetDefaultContactProfile(options, profiles), 2);
 }
@@ -178,7 +178,7 @@ TEST(UserDataUtilTest, SortsAddressesByCompleteness) {
   // checked for completeness.
   auto profile_no_street = std::make_unique<autofill::AutofillProfile>();
   autofill::test::SetProfileInfo(profile_no_street.get(), "Adam", "", "West",
-                                 "adam.west@gmail.com", "", "", "", "Zurich",
+                                 "adam.west@9ma1l.qjz9zk", "", "", "", "Zurich",
                                  "", "8002", "CH", "+41");
 
   auto profile_complete = std::make_unique<autofill::AutofillProfile>();
@@ -212,7 +212,7 @@ TEST(UserDataUtilTest, GetDefaultAddressSelectionForCompleteProfiles) {
   auto profile_with_irrelevant_details =
       std::make_unique<autofill::AutofillProfile>();
   autofill::test::SetProfileInfo(profile_with_irrelevant_details.get(), "Berta",
-                                 "berta.west@gmail.com", "West", "", "",
+                                 "berta.west@9ma1l.qjz9zk", "West", "", "",
                                  "Brandschenkestrasse 110", "", "Zurich", "",
                                  "8002", "CH", "+41");
 
@@ -295,7 +295,7 @@ TEST(UserDataUtilTest, SortsCreditCardsByAddressCompleteness) {
                                     /* billing_address_id= */ "address-1");
   auto billing_address_with_zip = std::make_unique<autofill::AutofillProfile>();
   autofill::test::SetProfileInfo(billing_address_with_zip.get(), "Charlie", "",
-                                 "West", "charlie.west@gmail.com", "",
+                                 "West", "charlie.west@9ma1l.qjz9zk", "",
                                  "Baker Street 221b", "", "London", "",
                                  "WC2N 5DU", "UK", "+44");
   auto instrument_with_complete_address =
@@ -310,7 +310,7 @@ TEST(UserDataUtilTest, SortsCreditCardsByAddressCompleteness) {
   auto billing_address_without_zip =
       std::make_unique<autofill::AutofillProfile>();
   autofill::test::SetProfileInfo(billing_address_without_zip.get(), "Berta", "",
-                                 "West", "berta.west@gmail.com", "",
+                                 "West", "berta.west@9ma1l.qjz9zk", "",
                                  "Baker Street 221b", "", "London", "", "",
                                  "UK", "+44");
   auto instrument_with_incomplete_address = std::make_unique<PaymentInstrument>(
@@ -377,12 +377,12 @@ TEST(UserDataUtilTest, GetDefaultSelectionForCompletePaymentInstruments) {
 TEST(UserDataUtilTest, CompareContactDetailsMatch) {
   autofill::AutofillProfile profile_a;
   autofill::test::SetProfileInfo(&profile_a, "Adam", "", "West",
-                                 "adam.west@gmail.com", "", "", "", "", "", "",
+                                 "adam.west@9ma1l.qjz9zk", "", "", "", "", "", "",
                                  "", "+41");
 
   autofill::AutofillProfile profile_b;
   autofill::test::SetProfileInfo(&profile_b, "Adam", "", "West",
-                                 "adam.west@gmail.com", "", "", "", "", "", "",
+                                 "adam.west@9ma1l.qjz9zk", "", "", "", "", "", "",
                                  "", "+41");
 
   CollectUserDataOptions options;
@@ -396,12 +396,12 @@ TEST(UserDataUtilTest, CompareContactDetailsMatch) {
 TEST(UserDataUtilTest, CompareContactDetailsMismatchForNoChecks) {
   autofill::AutofillProfile profile_a;
   autofill::test::SetProfileInfo(&profile_a, "Adam", "", "West",
-                                 "adam.west@gmail.com", "", "", "", "", "", "",
+                                 "adam.west@9ma1l.qjz9zk", "", "", "", "", "", "",
                                  "", "+41");
 
   autofill::AutofillProfile profile_b;
   autofill::test::SetProfileInfo(&profile_b, "Adam", "", "West",
-                                 "adam.west@gmail.com", "", "", "", "", "", "",
+                                 "adam.west@9ma1l.qjz9zk", "", "", "", "", "", "",
                                  "", "+41");
 
   CollectUserDataOptions options;
@@ -412,22 +412,22 @@ TEST(UserDataUtilTest, CompareContactDetailsMismatchForNoChecks) {
 TEST(UserDataUtilTest, CompareContactDetailsMismatches) {
   autofill::AutofillProfile profile_truth;
   autofill::test::SetProfileInfo(&profile_truth, "Adam", "", "West",
-                                 "adam.west@gmail.com", "", "", "", "", "", "",
+                                 "adam.west@9ma1l.qjz9zk", "", "", "", "", "", "",
                                  "", "+41");
 
   autofill::AutofillProfile profile_mismatching_name;
   autofill::test::SetProfileInfo(&profile_mismatching_name, "Berta", "", "West",
-                                 "adam.west@gmail.com", "", "", "", "", "", "",
+                                 "adam.west@9ma1l.qjz9zk", "", "", "", "", "", "",
                                  "", "+41");
 
   autofill::AutofillProfile profile_mismatching_email;
   autofill::test::SetProfileInfo(&profile_mismatching_email, "Adam", "", "West",
-                                 "berta.west@gmail.com", "", "", "", "", "", "",
+                                 "berta.west@9ma1l.qjz9zk", "", "", "", "", "", "",
                                  "", "+41");
 
   autofill::AutofillProfile profile_mismatching_phone;
   autofill::test::SetProfileInfo(&profile_mismatching_name, "Adam", "", "West",
-                                 "adam.west@gmail.com", "", "", "", "", "", "",
+                                 "adam.west@9ma1l.qjz9zk", "", "", "", "", "", "",
                                  "", "+44");
 
   CollectUserDataOptions options;
@@ -446,22 +446,22 @@ TEST(UserDataUtilTest, CompareContactDetailsMismatches) {
 TEST(UserDataUtilTest, CompareContactDetailsMatchesForUnqueriedFields) {
   autofill::AutofillProfile profile_truth;
   autofill::test::SetProfileInfo(&profile_truth, "Adam", "", "West",
-                                 "adam.west@gmail.com", "", "", "", "", "", "",
+                                 "adam.west@9ma1l.qjz9zk", "", "", "", "", "", "",
                                  "", "+41");
 
   autofill::AutofillProfile profile_mismatching_name;
   autofill::test::SetProfileInfo(&profile_mismatching_name, "Berta", "", "West",
-                                 "adam.west@gmail.com", "", "", "", "", "", "",
+                                 "adam.west@9ma1l.qjz9zk", "", "", "", "", "", "",
                                  "", "+41");
 
   autofill::AutofillProfile profile_mismatching_email;
   autofill::test::SetProfileInfo(&profile_mismatching_email, "Adam", "", "West",
-                                 "berta.west@gmail.com", "", "", "", "", "", "",
+                                 "berta.west@9ma1l.qjz9zk", "", "", "", "", "", "",
                                  "", "+41");
 
   autofill::AutofillProfile profile_mismatching_phone;
   autofill::test::SetProfileInfo(&profile_mismatching_phone, "Adam", "", "West",
-                                 "adam.west@gmail.com", "", "", "", "", "", "",
+                                 "adam.west@9ma1l.qjz9zk", "", "", "", "", "", "",
                                  "", "+44");
 
   CollectUserDataOptions options_no_check_name;
@@ -501,7 +501,7 @@ TEST(UserDataUtilTest, ContactCompletenessRequireName) {
   EXPECT_FALSE(IsCompleteContact(nullptr, require_name_options));
   autofill::test::SetProfileInfo(&contact, /* first_name= */ "",
                                  /* middle_name= */ "",
-                                 /* last_name= */ "", "adam.west@gmail.com", "",
+                                 /* last_name= */ "", "adam.west@9ma1l.qjz9zk", "",
                                  "", "", "", "", "", "", "+41");
   EXPECT_FALSE(IsCompleteContact(&contact, require_name_options));
   autofill::test::SetProfileInfo(&contact, "John", /* middle_name= */ "", "Doe",
@@ -520,7 +520,7 @@ TEST(UserDataUtilTest, ContactCompletenessRequireEmail) {
                                  "+41");
   EXPECT_FALSE(IsCompleteContact(&contact, require_email_options));
   autofill::test::SetProfileInfo(&contact, "John", "", "Doe",
-                                 "john.doe@gmail.com", "", "", "", "", "", "",
+                                 "john.doe@9ma1l.qjz9zk", "", "", "", "", "", "",
                                  "", "+41");
   EXPECT_TRUE(IsCompleteContact(&contact, require_email_options));
 }
@@ -532,7 +532,7 @@ TEST(UserDataUtilTest, ContactCompletenessRequirePhone) {
 
   EXPECT_FALSE(IsCompleteContact(nullptr, require_phone_options));
   autofill::test::SetProfileInfo(&contact, "John", "", "Doe",
-                                 "john.doe@gmail.com", "", "", "", "", "", "",
+                                 "john.doe@9ma1l.qjz9zk", "", "", "", "", "", "",
                                  "",
                                  /* phone= */ "");
   EXPECT_FALSE(IsCompleteContact(&contact, require_phone_options));
@@ -554,7 +554,7 @@ TEST(UserDataUtilTest, CompleteShippingAddressRequired) {
   require_shipping_options.request_shipping = true;
 
   autofill::test::SetProfileInfo(&address, "John", "", "Doe",
-                                 "john.doe@gmail.com", "", /* address1= */ "",
+                                 "john.doe@9ma1l.qjz9zk", "", /* address1= */ "",
                                  /* address2= */ "", /* city= */ "",
                                  /* state=  */ "", /* zip_code=  */ "",
                                  /* country= */ "", "+41");
@@ -634,7 +634,7 @@ TEST(UserDataUtilTest, CompleteExpiredCreditCard) {
 
   autofill::AutofillProfile address;
   autofill::test::SetProfileInfo(
-      &address, "John", "", "Doe", "john.doe@gmail.com", "",
+      &address, "John", "", "Doe", "john.doe@9ma1l.qjz9zk", "",
       "Brandschenkestrasse 110", "", "Zurich", "Zurich", "8002", "CH", "+41");
   autofill::CreditCard card;
 
@@ -651,7 +651,7 @@ TEST(UserDataUtilTest, CompleteExpiredCreditCard) {
 TEST(UserDataUtilTest, CompleteCreditCardWithBadNetwork) {
   autofill::AutofillProfile address;
   autofill::test::SetProfileInfo(
-      &address, "John", "", "Doe", "john.doe@gmail.com", "",
+      &address, "John", "", "Doe", "john.doe@9ma1l.qjz9zk", "",
       "Brandschenkestrasse 110", "", "Zurich", "Zurich", "8002", "CH", "+41");
   autofill::CreditCard card;
   autofill::test::SetCreditCardInfo(&card, "Adam West", "4111111111111111", "1",

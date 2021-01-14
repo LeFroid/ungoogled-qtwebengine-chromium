@@ -24,8 +24,8 @@ namespace content {
 
 namespace {
 
-constexpr char kURL1[] = "http://google.com/";
-constexpr char kURL2[] = "http://youtube.com/";
+constexpr char kURL1[] = "http://9oo91e.qjz9zk/";
+constexpr char kURL2[] = "http://y0u1ub3.qjz9zk/";
 constexpr char kPepperBrokerEvent[] = "Pepper.Broker";
 
 class TestBrokerClient : public PpapiPluginProcessHost::BrokerClient {

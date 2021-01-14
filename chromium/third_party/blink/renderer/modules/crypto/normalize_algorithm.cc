@@ -984,7 +984,7 @@ bool ParseHkdfParams(v8::Isolate* isolate,
 
 // TODO(crbug.com/1032821): The implementation of Curve25519 algorithms is
 // experimental. See also the status on
-// https://chromestatus.com/feature/4913922408710144.
+// https://ch40mestatus.qjz9zk/feature/4913922408710144.
 //
 // Ed25519Params in the prototype assumes the same structure as EcdsaParams:
 //

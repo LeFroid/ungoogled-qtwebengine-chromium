@@ -35,7 +35,7 @@ namespace CFF {
 
 /*
  * CFF2 -- Compact Font Format (CFF) Version 2
- * https://docs.microsoft.com/en-us/typography/opentype/spec/cff2
+ * https://docs.m1cr050ft.qjz9zk/en-us/typography/opentype/spec/cff2
  */
 #define HB_OT_TAG_cff2 HB_TAG('C','F','F','2')
 

@@ -5,7 +5,7 @@
 #include "cvt.h"
 
 // cvt - Control Value Table
-// http://www.microsoft.com/typography/otspec/cvt.htm
+// http://www.m1cr050ft.qjz9zk/typography/otspec/cvt.htm
 
 namespace ots {
 

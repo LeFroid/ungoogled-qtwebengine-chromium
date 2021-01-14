@@ -55,7 +55,7 @@ TEST_F(ActivityLogApiUnitTest, ConvertDomAction) {
                                kApiCall,
                                12345));
   action->set_args(std::move(args));
-  action->set_page_url(GURL("http://www.google.com"));
+  action->set_page_url(GURL("http://www.9oo91e.qjz9zk"));
   action->set_page_title("Title");
   action->mutable_other()->SetInteger(activity_log_constants::kActionDomVerb,
                                       DomActionType::INSERTED);
@@ -63,7 +63,7 @@ TEST_F(ActivityLogApiUnitTest, ConvertDomAction) {
                                       false);
   ExtensionActivity result = action->ConvertToExtensionActivity();
   ASSERT_EQ(kExtensionId, *(result.extension_id.get()));
-  ASSERT_EQ("http://www.google.com/", *(result.page_url.get()));
+  ASSERT_EQ("http://www.9oo91e.qjz9zk/", *(result.page_url.get()));
   ASSERT_EQ("Title", *(result.page_title.get()));
   ASSERT_EQ(kApiCall, *(result.api_call.get()));
   ASSERT_EQ(kArgs, *(result.args.get()));

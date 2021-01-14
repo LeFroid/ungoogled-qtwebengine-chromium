@@ -1,6 +1,6 @@
 // Protocol Buffers - Google's data interchange format
 // Copyright 2008 Google Inc.  All rights reserved.
-// https://developers.google.com/protocol-buffers/
+// https://developers.9oo91e.qjz9zk/protocol-buffers/
 //
 // Redistribution and use in source and binary forms, with or without
 // modification, are permitted provided that the following conditions are
@@ -59,7 +59,7 @@ using google::protobuf::Option;
 using google::protobuf::Type;
 using google::protobuf::UInt64Value;
 
-static const char kUrlPrefix[] = "type.googleapis.com";
+static const char kUrlPrefix[] = "type.9oo91eapis.qjz9zk";
 
 class DescriptorPoolTypeResolverTest : public testing::Test {
  public:

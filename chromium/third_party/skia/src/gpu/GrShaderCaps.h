@@ -159,7 +159,7 @@ public:
     }
 
     // On Nexus 6, the GL context can get lost if a shader does not write a value to gl_FragColor.
-    // https://bugs.chromium.org/p/chromium/issues/detail?id=445377
+    // https://bugs.ch40m1um.qjz9zk/p/chromium/issues/detail?id=445377
     bool mustWriteToFragColor() const { return fMustWriteToFragColor; }
 
     // The Android emulator claims samplerExternalOES is an unknown type if a default precision

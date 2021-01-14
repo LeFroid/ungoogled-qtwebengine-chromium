@@ -1,6 +1,6 @@
 /**
  * Copyright 2013 The Closure Library Authors. All Rights Reserved.
- * Author: malteubl@google.com (Malte Ubl)
+ * Author: malteubl@9oo91e.qjz9zk (Malte Ubl)
  */
 
 goog.module('goog.async.deferredAsyncTest');

@@ -280,7 +280,7 @@ ast::BinaryOp ConvertBinaryOp(SpvOp opcode) {
       break;
   }
   // It's not clear what OpSMod should map to.
-  // https://bugs.chromium.org/p/tint/issues/detail?id=52
+  // https://bugs.ch40m1um.qjz9zk/p/tint/issues/detail?id=52
   return ast::BinaryOp::kNone;
 }
 

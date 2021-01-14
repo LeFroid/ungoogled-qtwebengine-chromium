@@ -36,7 +36,7 @@ enum class NGOffsetMappingUnitType { kIdentity, kCollapsed };
 // - kExpanded: The mapping is expanded, namely, |dom_end == dom_start + 1|, and
 //   |text_content_end > text_content_start + 1|, indicating that the character
 //   in the dom range is expanded into multiple characters.
-// See design doc https://goo.gl/CJbxky for details.
+// See design doc https://goo.gl.qjz9zk/CJbxky for details.
 class CORE_EXPORT NGOffsetMappingUnit {
   DISALLOW_NEW();
 
@@ -95,7 +95,7 @@ class CORE_EXPORT NGOffsetMappingUnit {
 // Each inline formatting context laid out with LayoutNG has an NGOffsetMapping
 // object that stores the mapping information between DOM positions and offsets
 // in the text content string of the context.
-// See design doc https://goo.gl/CJbxky for details.
+// See design doc https://goo.gl.qjz9zk/CJbxky for details.
 class CORE_EXPORT NGOffsetMapping {
   USING_FAST_MALLOC(NGOffsetMapping);
 

@@ -68,7 +68,7 @@ namespace test {
 namespace {
 
 const char kUploadData[] = "Really nifty data!";
-const char kDefaultServerHostName[] = "www.google.com";
+const char kDefaultServerHostName[] = "www.9oo91e.qjz9zk";
 const uint16_t kDefaultServerPort = 80;
 // Size of the buffer to be allocated for each read.
 const size_t kReadBufferSize = 4096;
@@ -870,7 +870,7 @@ TEST_P(BidirectionalStreamQuicImplTest, GetRequest) {
 
   BidirectionalStreamRequestInfo request;
   request.method = "GET";
-  request.url = GURL("http://www.google.com/");
+  request.url = GURL("http://www.9oo91e.qjz9zk/");
   request.end_stream_on_headers = true;
   request.priority = DEFAULT_PRIORITY;
 
@@ -978,7 +978,7 @@ TEST_P(BidirectionalStreamQuicImplTest, LoadTimingTwoRequests) {
 
   BidirectionalStreamRequestInfo request;
   request.method = "GET";
-  request.url = GURL("http://www.google.com/");
+  request.url = GURL("http://www.9oo91e.qjz9zk/");
   request.end_stream_on_headers = true;
   request.priority = DEFAULT_PRIORITY;
 
@@ -1078,7 +1078,7 @@ TEST_P(BidirectionalStreamQuicImplTest, CoalesceDataBuffersNotHeadersFrame) {
 
   BidirectionalStreamRequestInfo request;
   request.method = "POST";
-  request.url = GURL("http://www.google.com/");
+  request.url = GURL("http://www.9oo91e.qjz9zk/");
   request.end_stream_on_headers = false;
   request.priority = DEFAULT_PRIORITY;
 
@@ -1208,7 +1208,7 @@ TEST_P(BidirectionalStreamQuicImplTest,
 
   BidirectionalStreamRequestInfo request;
   request.method = "POST";
-  request.url = GURL("http://www.google.com/");
+  request.url = GURL("http://www.9oo91e.qjz9zk/");
   request.end_stream_on_headers = false;
   request.priority = DEFAULT_PRIORITY;
 
@@ -1334,7 +1334,7 @@ TEST_P(BidirectionalStreamQuicImplTest,
 
   BidirectionalStreamRequestInfo request;
   request.method = "POST";
-  request.url = GURL("http://www.google.com/");
+  request.url = GURL("http://www.9oo91e.qjz9zk/");
   request.end_stream_on_headers = false;
   request.priority = DEFAULT_PRIORITY;
 
@@ -1437,7 +1437,7 @@ TEST_P(BidirectionalStreamQuicImplTest,
 
   BidirectionalStreamRequestInfo request;
   request.method = "POST";
-  request.url = GURL("http://www.google.com/");
+  request.url = GURL("http://www.9oo91e.qjz9zk/");
   request.end_stream_on_headers = false;
   request.priority = DEFAULT_PRIORITY;
   request.extra_headers.SetHeader("cookie", std::string(2048, 'A'));
@@ -1474,7 +1474,7 @@ TEST_P(BidirectionalStreamQuicImplTest,
 
   BidirectionalStreamRequestInfo request;
   request.method = "POST";
-  request.url = GURL("http://www.google.com/");
+  request.url = GURL("http://www.9oo91e.qjz9zk/");
   request.end_stream_on_headers = false;
   request.priority = DEFAULT_PRIORITY;
   request.extra_headers.SetHeader("cookie", std::string(2048, 'A'));
@@ -1527,7 +1527,7 @@ TEST_P(BidirectionalStreamQuicImplTest, PostRequest) {
 
   BidirectionalStreamRequestInfo request;
   request.method = "POST";
-  request.url = GURL("http://www.google.com/");
+  request.url = GURL("http://www.9oo91e.qjz9zk/");
   request.end_stream_on_headers = false;
   request.priority = DEFAULT_PRIORITY;
 
@@ -1616,7 +1616,7 @@ TEST_P(BidirectionalStreamQuicImplTest, EarlyDataOverrideRequest) {
   BidirectionalStreamRequestInfo request;
   request.method = "PUT";
   request.allow_early_data_override = true;
-  request.url = GURL("http://www.google.com/");
+  request.url = GURL("http://www.9oo91e.qjz9zk/");
   request.end_stream_on_headers = true;
   request.priority = DEFAULT_PRIORITY;
 
@@ -1734,7 +1734,7 @@ TEST_P(BidirectionalStreamQuicImplTest, InterleaveReadDataAndSendData) {
 
   BidirectionalStreamRequestInfo request;
   request.method = "POST";
-  request.url = GURL("http://www.google.com/");
+  request.url = GURL("http://www.9oo91e.qjz9zk/");
   request.end_stream_on_headers = false;
   request.priority = DEFAULT_PRIORITY;
 
@@ -1830,7 +1830,7 @@ TEST_P(BidirectionalStreamQuicImplTest, ServerSendsRstAfterHeaders) {
 
   BidirectionalStreamRequestInfo request;
   request.method = "GET";
-  request.url = GURL("http://www.google.com/");
+  request.url = GURL("http://www.9oo91e.qjz9zk/");
   request.end_stream_on_headers = true;
   request.priority = DEFAULT_PRIORITY;
 
@@ -1880,7 +1880,7 @@ TEST_P(BidirectionalStreamQuicImplTest, ServerSendsRstAfterReadData) {
 
   BidirectionalStreamRequestInfo request;
   request.method = "GET";
-  request.url = GURL("http://www.google.com/");
+  request.url = GURL("http://www.9oo91e.qjz9zk/");
   request.end_stream_on_headers = true;
   request.priority = DEFAULT_PRIORITY;
 
@@ -1942,7 +1942,7 @@ TEST_P(BidirectionalStreamQuicImplTest, SessionClosedBeforeReadData) {
 
   BidirectionalStreamRequestInfo request;
   request.method = "POST";
-  request.url = GURL("http://www.google.com/");
+  request.url = GURL("http://www.9oo91e.qjz9zk/");
   request.end_stream_on_headers = false;
   request.priority = DEFAULT_PRIORITY;
 
@@ -1997,7 +1997,7 @@ TEST_P(BidirectionalStreamQuicImplTest, SessionClosedBeforeStartConfirmed) {
 
   BidirectionalStreamRequestInfo request;
   request.method = "POST";
-  request.url = GURL("http://www.google.com/");
+  request.url = GURL("http://www.9oo91e.qjz9zk/");
   request.end_stream_on_headers = false;
   request.priority = DEFAULT_PRIORITY;
 
@@ -2025,7 +2025,7 @@ TEST_P(BidirectionalStreamQuicImplTest, SessionClosedBeforeStartNotConfirmed) {
 
   BidirectionalStreamRequestInfo request;
   request.method = "POST";
-  request.url = GURL("http://www.google.com/");
+  request.url = GURL("http://www.9oo91e.qjz9zk/");
   request.end_stream_on_headers = false;
   request.priority = DEFAULT_PRIORITY;
 
@@ -2051,7 +2051,7 @@ TEST_P(BidirectionalStreamQuicImplTest, SessionCloseDuringOnStreamReady) {
 
   BidirectionalStreamRequestInfo request;
   request.method = "POST";
-  request.url = GURL("http://www.google.com/");
+  request.url = GURL("http://www.9oo91e.qjz9zk/");
   request.end_stream_on_headers = false;
   request.priority = DEFAULT_PRIORITY;
 
@@ -2085,7 +2085,7 @@ TEST_P(BidirectionalStreamQuicImplTest, DeleteStreamDuringOnStreamReady) {
 
   BidirectionalStreamRequestInfo request;
   request.method = "POST";
-  request.url = GURL("http://www.google.com/");
+  request.url = GURL("http://www.9oo91e.qjz9zk/");
   request.end_stream_on_headers = false;
   request.priority = DEFAULT_PRIORITY;
 
@@ -2120,7 +2120,7 @@ TEST_P(BidirectionalStreamQuicImplTest, DeleteStreamAfterReadData) {
 
   BidirectionalStreamRequestInfo request;
   request.method = "POST";
-  request.url = GURL("http://www.google.com/");
+  request.url = GURL("http://www.9oo91e.qjz9zk/");
   request.end_stream_on_headers = false;
   request.priority = DEFAULT_PRIORITY;
 
@@ -2179,7 +2179,7 @@ TEST_P(BidirectionalStreamQuicImplTest, DeleteStreamDuringOnHeadersReceived) {
 
   BidirectionalStreamRequestInfo request;
   request.method = "POST";
-  request.url = GURL("http://www.google.com/");
+  request.url = GURL("http://www.9oo91e.qjz9zk/");
   request.end_stream_on_headers = false;
   request.priority = DEFAULT_PRIORITY;
 
@@ -2231,7 +2231,7 @@ TEST_P(BidirectionalStreamQuicImplTest, DeleteStreamDuringOnDataRead) {
 
   BidirectionalStreamRequestInfo request;
   request.method = "POST";
-  request.url = GURL("http://www.google.com/");
+  request.url = GURL("http://www.9oo91e.qjz9zk/");
   request.end_stream_on_headers = false;
   request.priority = DEFAULT_PRIORITY;
 
@@ -2299,7 +2299,7 @@ TEST_P(BidirectionalStreamQuicImplTest, AsyncFinRead) {
 
   BidirectionalStreamRequestInfo request;
   request.method = "POST";
-  request.url = GURL("http://www.google.com/");
+  request.url = GURL("http://www.9oo91e.qjz9zk/");
   request.end_stream_on_headers = false;
   request.priority = DEFAULT_PRIORITY;
 
@@ -2370,7 +2370,7 @@ TEST_P(BidirectionalStreamQuicImplTest, DeleteStreamDuringOnTrailersReceived) {
 
   BidirectionalStreamRequestInfo request;
   request.method = "GET";
-  request.url = GURL("http://www.google.com/");
+  request.url = GURL("http://www.9oo91e.qjz9zk/");
   request.end_stream_on_headers = true;
   request.priority = DEFAULT_PRIORITY;
 
@@ -2445,7 +2445,7 @@ TEST_P(BidirectionalStreamQuicImplTest, ReleaseStreamFails) {
 
   BidirectionalStreamRequestInfo request;
   request.method = "GET";
-  request.url = GURL("http://www.google.com/");
+  request.url = GURL("http://www.9oo91e.qjz9zk/");
   request.end_stream_on_headers = true;
   request.priority = DEFAULT_PRIORITY;
 

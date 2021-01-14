@@ -2072,7 +2072,7 @@ TEST(CanonicalCookieTest, CreateSanitizedCookie_Logic) {
       base::Time(), base::Time(), false /*secure*/, false /*httponly*/,
       CookieSameSite::NO_RESTRICTION, COOKIE_PRIORITY_DEFAULT));
   EXPECT_FALSE(CanonicalCookie::CreateSanitizedCookie(
-      GURL("http://.chromium.org"), "A", "B", ".chromium.org", "/",
+      GURL("http://.ch40m1um.qjz9zk"), "A", "B", ".ch40m1um.qjz9zk", "/",
       base::Time(), base::Time(), base::Time(), false /*secure*/,
       false /*httponly*/, CookieSameSite::NO_RESTRICTION,
       COOKIE_PRIORITY_DEFAULT));

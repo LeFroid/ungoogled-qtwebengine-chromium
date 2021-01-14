@@ -375,7 +375,7 @@ TEST_F(WebContentsImplTest, SimpleNavigation) {
   EXPECT_EQ(nullptr, contents()->GetPendingMainFrame());
 
   // Navigate until ready to commit.
-  const GURL url("http://www.google.com");
+  const GURL url("http://www.9oo91e.qjz9zk");
   auto navigation =
       NavigationSimulator::CreateBrowserInitiated(url, contents());
   navigation->ReadyToCommit();
@@ -453,7 +453,7 @@ TEST_F(WebContentsImplTest, CrossSiteBoundaries) {
   SiteInstance* instance1 = contents()->GetSiteInstance();
 
   // Navigate to URL.  First URL should use first RenderViewHost.
-  const GURL url("http://www.google.com");
+  const GURL url("http://www.9oo91e.qjz9zk");
   NavigationSimulator::NavigateAndCommitFromBrowser(contents(), url);
 
   // Keep the number of active frames in orig_rfh's SiteInstance non-zero so
@@ -540,7 +540,7 @@ TEST_F(WebContentsImplTest, CrossSiteBoundariesAfterCrash) {
   SiteInstance* instance1 = contents()->GetSiteInstance();
 
   // Navigate to URL.  First URL should use first RenderViewHost.
-  const GURL url("http://www.google.com");
+  const GURL url("http://www.9oo91e.qjz9zk");
   NavigationSimulator::NavigateAndCommitFromBrowser(contents(), url);
   EXPECT_FALSE(contents()->CrossProcessNavigationPending());
   EXPECT_EQ(orig_rfh->GetRenderViewHost(), contents()->GetRenderViewHost());
@@ -582,7 +582,7 @@ TEST_F(WebContentsImplTest, NavigateTwoTabsCrossSite) {
   SiteInstance* instance1 = contents()->GetSiteInstance();
 
   // Navigate to URL.  First URL should use first RenderViewHost.
-  const GURL url("http://www.google.com");
+  const GURL url("http://www.9oo91e.qjz9zk");
   NavigationSimulator::NavigateAndCommitFromBrowser(contents(), url);
 
   // Open a new contents with the same SiteInstance, navigated to the same site.
@@ -648,7 +648,7 @@ TEST_F(WebContentsImplTest, NavigateFromSitelessUrl) {
   EXPECT_FALSE(orig_instance->HasSite());
 
   // Navigate to new site (should keep same site instance).
-  const GURL url("http://www.google.com");
+  const GURL url("http://www.9oo91e.qjz9zk");
   browser_client.set_assign_site_for_url(true, url);
   auto navigation1 =
       NavigationSimulator::CreateBrowserInitiated(url, contents());
@@ -689,7 +689,7 @@ TEST_F(WebContentsImplTest, NavigateFromSitelessUrl) {
     EXPECT_TRUE(contents()->GetSiteInstance()->IsDefaultSiteInstance());
   } else {
     EXPECT_TRUE(
-        contents()->GetSiteInstance()->GetSiteURL().DomainIs("google.com"));
+        contents()->GetSiteInstance()->GetSiteURL().DomainIs("9oo91e.qjz9zk"));
   }
   EXPECT_EQ(url, contents()->GetLastCommittedURL());
 
@@ -759,7 +759,7 @@ TEST_F(WebContentsImplTest, NavigateFromRestoredSitelessUrl) {
   EXPECT_FALSE(orig_instance->HasSite());
 
   // Navigate to a regular site and verify that the SiteInstance was kept.
-  const GURL url("http://www.google.com");
+  const GURL url("http://www.9oo91e.qjz9zk");
   browser_client.set_assign_site_for_url(true, url);
   NavigationSimulator::NavigateAndCommitFromBrowser(contents(), url);
   EXPECT_EQ(orig_instance, contents()->GetSiteInstance());
@@ -803,7 +803,7 @@ TEST_F(WebContentsImplTest, NavigateFromRestoredRegularUrl) {
             orig_instance->IsDefaultSiteInstance());
 
   // Navigate to another site and verify that a new SiteInstance was created.
-  const GURL url("http://www.google.com");
+  const GURL url("http://www.9oo91e.qjz9zk");
   NavigationSimulator::NavigateAndCommitFromBrowser(contents(), url);
   if (AreDefaultSiteInstancesEnabled()) {
     // Verify this remains the default SiteInstance since |url| does
@@ -828,7 +828,7 @@ TEST_F(WebContentsImplTest, NavigateFromRestoredRegularUrl) {
 TEST_F(WebContentsImplTest, FindOpenerRVHWhenPending) {
 
   // Navigate to a URL.
-  const GURL url("http://www.google.com");
+  const GURL url("http://www.9oo91e.qjz9zk");
   NavigationSimulator::NavigateAndCommitFromBrowser(contents(), url);
 
   // Start to navigate first tab to a new site, so that it has a pending RVH.
@@ -879,7 +879,7 @@ TEST_F(WebContentsImplTest, CrossSiteComparesAgainstCurrentPage) {
   TestRenderFrameHost* orig_rfh = main_test_rfh();
   SiteInstanceImpl* instance1 = contents()->GetSiteInstance();
 
-  const GURL url("http://www.google.com");
+  const GURL url("http://www.9oo91e.qjz9zk");
 
   // Navigate to URL.
   NavigationSimulator::NavigateAndCommitFromBrowser(contents(), url);
@@ -925,7 +925,7 @@ TEST_F(WebContentsImplTest, CrossSiteUnloadHandlers) {
   SiteInstance* instance1 = contents()->GetSiteInstance();
 
   // Navigate to URL.  First URL should use first RenderViewHost.
-  const GURL url("http://www.google.com");
+  const GURL url("http://www.9oo91e.qjz9zk");
   NavigationSimulator::NavigateAndCommitFromBrowser(contents(), url);
   EXPECT_FALSE(contents()->CrossProcessNavigationPending());
   EXPECT_EQ(orig_rfh, main_test_rfh());
@@ -967,7 +967,7 @@ TEST_F(WebContentsImplTest, CrossSiteNavigationPreempted) {
   SiteInstance* instance1 = contents()->GetSiteInstance();
 
   // Navigate to URL.  First URL should use first RenderFrameHost.
-  const GURL url("http://www.google.com");
+  const GURL url("http://www.9oo91e.qjz9zk");
   NavigationSimulator::NavigateAndCommitFromBrowser(contents(), url);
   EXPECT_FALSE(contents()->CrossProcessNavigationPending());
   EXPECT_EQ(orig_rfh, main_test_rfh());
@@ -980,7 +980,7 @@ TEST_F(WebContentsImplTest, CrossSiteNavigationPreempted) {
   EXPECT_TRUE(contents()->CrossProcessNavigationPending());
 
   // Suppose the original renderer navigates before the new one is ready.
-  const GURL url3("http://www.google.com/foo");
+  const GURL url3("http://www.9oo91e.qjz9zk/foo");
   NavigationSimulator::NavigateAndCommitFromDocument(url3, orig_rfh);
 
   // Verify that the pending navigation is cancelled.
@@ -1028,7 +1028,7 @@ TEST_F(WebContentsImplTest, CrossSiteNavigationBackPreempted) {
   EXPECT_TRUE(webui_rfh->GetEnabledBindings() & BINDINGS_POLICY_WEB_UI);
 
   // Navigate to new site.
-  const GURL url2("http://www.google.com");
+  const GURL url2("http://www.9oo91e.qjz9zk");
   NavigationSimulator::NavigateAndCommitFromBrowser(contents(), url2);
   TestRenderFrameHost* google_rfh = main_test_rfh();
   NavigationEntry* entry2 = controller().GetLastCommittedEntry();
@@ -1043,7 +1043,7 @@ TEST_F(WebContentsImplTest, CrossSiteNavigationBackPreempted) {
   EXPECT_FALSE(google_rfh->GetEnabledBindings() & BINDINGS_POLICY_WEB_UI);
 
   // Navigate to third page on same site.
-  const GURL url3("http://news.google.com");
+  const GURL url3("http://news.9oo91e.qjz9zk");
   NavigationSimulator::NavigateAndCommitFromBrowser(contents(), url3);
   NavigationEntry* entry3 = controller().GetLastCommittedEntry();
   SiteInstance* instance3 = contents()->GetSiteInstance();
@@ -1153,7 +1153,7 @@ TEST_F(WebContentsImplTest, CrossSiteNavigationBackOldNavigationIgnored) {
   EXPECT_TRUE(webui_rfh->GetEnabledBindings() & BINDINGS_POLICY_WEB_UI);
 
   // Navigate to new site.
-  const GURL url2("http://www.google.com");
+  const GURL url2("http://www.9oo91e.qjz9zk");
   NavigationSimulator::NavigateAndCommitFromBrowser(contents(), url2);
   TestRenderFrameHost* google_rfh = main_test_rfh();
   NavigationEntry* entry2 = controller().GetLastCommittedEntry();
@@ -1168,7 +1168,7 @@ TEST_F(WebContentsImplTest, CrossSiteNavigationBackOldNavigationIgnored) {
   EXPECT_FALSE(google_rfh->GetEnabledBindings() & BINDINGS_POLICY_WEB_UI);
 
   // Navigate to third page on same site.
-  const GURL url3("http://google.com/foo");
+  const GURL url3("http://9oo91e.qjz9zk/foo");
   NavigationSimulator::NavigateAndCommitFromBrowser(contents(), url3);
   NavigationEntry* entry3 = controller().GetLastCommittedEntry();
   SiteInstance* instance3 = contents()->GetSiteInstance();
@@ -1242,7 +1242,7 @@ TEST_F(WebContentsImplTest, CrossSiteNavigationNotPreemptedByFrame) {
   TestRenderFrameHost* orig_rfh = main_test_rfh();
 
   // Navigate to URL.  First URL should use the original RenderFrameHost.
-  const GURL url("http://www.google.com");
+  const GURL url("http://www.9oo91e.qjz9zk");
   NavigationSimulator::NavigateAndCommitFromBrowser(contents(), url);
   EXPECT_FALSE(contents()->CrossProcessNavigationPending());
   EXPECT_EQ(orig_rfh, main_test_rfh());
@@ -1256,7 +1256,7 @@ TEST_F(WebContentsImplTest, CrossSiteNavigationNotPreemptedByFrame) {
   // waiting for a before unload response.
   TestRenderFrameHost* child_rfh = orig_rfh->AppendChild("subframe");
   child_rfh->SendNavigateWithTransition(0, false,
-                                        GURL("http://google.com/frame"),
+                                        GURL("http://9oo91e.qjz9zk/frame"),
                                         ui::PAGE_TRANSITION_AUTO_SUBFRAME);
   EXPECT_TRUE(orig_rfh->is_waiting_for_beforeunload_completion());
 
@@ -1330,7 +1330,7 @@ TEST_F(WebContentsImplTest, CrossSiteNotPreemptedDuringBeforeUnload) {
 TEST_F(WebContentsImplTest, NavigationEntryContentState) {
 
   // Navigate to URL.  There should be no committed entry yet.
-  const GURL url("http://www.google.com");
+  const GURL url("http://www.9oo91e.qjz9zk");
   auto navigation =
       NavigationSimulator::CreateBrowserInitiated(url, contents());
   navigation->ReadyToCommit();
@@ -1343,7 +1343,7 @@ TEST_F(WebContentsImplTest, NavigationEntryContentState) {
   EXPECT_TRUE(entry->GetPageState().IsValid());
 
   // Navigate to same site.
-  const GURL url2("http://images.google.com");
+  const GURL url2("http://images.9oo91e.qjz9zk");
   auto navigation2 =
       NavigationSimulator::CreateBrowserInitiated(url2, contents());
   navigation2->ReadyToCommit();
@@ -1382,7 +1382,7 @@ TEST_F(WebContentsImplTest, NavigationEntryContentStateNewWindow) {
   int32_t site_instance_id = entry_impl->site_instance()->GetId();
 
   // Navigating to a normal page should not cause a process swap.
-  const GURL new_url("http://www.google.com");
+  const GURL new_url("http://www.9oo91e.qjz9zk");
   NavigationSimulator::NavigateAndCommitFromBrowser(contents(), new_url);
 
   EXPECT_EQ(orig_rfh, main_test_rfh());
@@ -1412,7 +1412,7 @@ TEST_F(WebContentsImplTest, NavigationExitsFullscreen) {
   TestRenderFrameHost* orig_rfh = main_test_rfh();
 
   // Navigate to a site.
-  const GURL url("http://www.google.com");
+  const GURL url("http://www.9oo91e.qjz9zk");
   NavigationSimulator::NavigateAndCommitFromBrowser(contents(), url);
   EXPECT_EQ(orig_rfh, main_test_rfh());
 
@@ -1446,12 +1446,12 @@ TEST_F(WebContentsImplTest, HistoryNavigationExitsFullscreen) {
   TestRenderFrameHost* orig_rfh = main_test_rfh();
 
   // Navigate to a site.
-  const GURL url("http://www.google.com");
+  const GURL url("http://www.9oo91e.qjz9zk");
   NavigationSimulator::NavigateAndCommitFromBrowser(contents(), url);
   EXPECT_EQ(orig_rfh, main_test_rfh());
 
   // Now, navigate to another page on the same site.
-  const GURL url2("http://www.google.com/search?q=kittens");
+  const GURL url2("http://www.9oo91e.qjz9zk/search?q=kittens");
   NavigationSimulator::NavigateAndCommitFromBrowser(contents(), url2);
   if (CanSameSiteMainFrameNavigationsChangeRenderFrameHosts()) {
     // If ProactivelySwapBrowsingInstance is enabled on same-site navigations,
@@ -1496,7 +1496,7 @@ TEST_F(WebContentsImplTest, CrashExitsFullscreen) {
   contents()->SetDelegate(&fake_delegate);
 
   // Navigate to a site.
-  const GURL url("http://www.google.com");
+  const GURL url("http://www.9oo91e.qjz9zk");
   NavigationSimulator::NavigateAndCommitFromBrowser(contents(), url);
 
   // Toggle fullscreen mode on (as if initiated via IPC from renderer).
@@ -1526,7 +1526,7 @@ TEST_F(WebContentsImplTest,
   contents()->SetDelegate(&fake_delegate);
 
   // Navigate to a site.
-  const GURL url("http://www.google.com");
+  const GURL url("http://www.9oo91e.qjz9zk");
   NavigationSimulator::NavigateAndCommitFromBrowser(contents(), url);
 
   // Toggle fullscreen mode on (as if initiated via IPC from renderer).
@@ -2127,9 +2127,9 @@ TEST_F(WebContentsImplTestWithSiteIsolation, StartStopEventsBalance) {
   // navigation of subframes is only possible in --site-per-process mode within
   // unit tests.
   const GURL initial_url("about:blank");
-  const GURL main_url("http://www.chromium.org");
-  const GURL foo_url("http://foo.chromium.org");
-  const GURL bar_url("http://bar.chromium.org");
+  const GURL main_url("http://www.ch40m1um.qjz9zk");
+  const GURL foo_url("http://foo.ch40m1um.qjz9zk");
+  const GURL bar_url("http://bar.ch40m1um.qjz9zk");
   TestRenderFrameHost* orig_rfh = main_test_rfh();
 
   // Use a WebContentsObserver to observe the behavior of the tab's spinner.
@@ -2212,7 +2212,7 @@ TEST_F(WebContentsImplTestWithSiteIsolation, StartStopEventsBalance) {
 // frame loads. Browser-initiated navigation of subframes is only possible in
 // --site-per-process mode within unit tests.
 TEST_F(WebContentsImplTestWithSiteIsolation, IsLoadingToDifferentDocument) {
-  const GURL main_url("http://www.chromium.org");
+  const GURL main_url("http://www.ch40m1um.qjz9zk");
   TestRenderFrameHost* orig_rfh = main_test_rfh();
 
   // Navigate the main RenderFrame and commit. The frame should still be
@@ -2252,9 +2252,9 @@ TEST_F(WebContentsImplTestWithSiteIsolation, IsLoadingToDifferentDocument) {
 // navigation no longer kills the speculative RenderFrameHost. See
 // https://crbug.com/889039.
 TEST_F(WebContentsImplTest, DISABLED_NoEarlyStop) {
-  const GURL kUrl1("http://www.chromium.org");
-  const GURL kUrl2("http://www.google.com");
-  const GURL kUrl3("http://www.chromium.org/foo");
+  const GURL kUrl1("http://www.ch40m1um.qjz9zk");
+  const GURL kUrl2("http://www.9oo91e.qjz9zk");
+  const GURL kUrl3("http://www.ch40m1um.qjz9zk/foo");
 
   contents()->NavigateAndCommit(kUrl1);
 
@@ -2439,8 +2439,8 @@ class TestJavaScriptDialogManager : public JavaScriptDialogManager {
 }  // namespace
 
 TEST_F(WebContentsImplTest, ResetJavaScriptDialogOnUserNavigate) {
-  const GURL kUrl("http://www.google.com");
-  const GURL kUrl2("http://www.google.com/sub");
+  const GURL kUrl("http://www.9oo91e.qjz9zk");
+  const GURL kUrl2("http://www.9oo91e.qjz9zk/sub");
   TestJavaScriptDialogManager dialog_manager;
   contents()->SetJavaScriptDialogManagerForTesting(&dialog_manager);
 
@@ -2535,8 +2535,8 @@ TEST_F(WebContentsImplTest, RegisterProtocolHandlerDifferentOrigin) {
   MockWebContentsDelegate delegate;
   contents()->SetDelegate(&delegate);
 
-  GURL url("https://www.google.com");
-  GURL handler_url1("https://www.google.com/handler/%s");
+  GURL url("https://www.9oo91e.qjz9zk");
+  GURL handler_url1("https://www.9oo91e.qjz9zk/handler/%s");
   GURL handler_url2("https://www.example.com/handler/%s");
 
   contents()->NavigateAndCommit(url);

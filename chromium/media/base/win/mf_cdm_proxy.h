@@ -19,14 +19,14 @@ IMFCdmProxy : public IUnknown {
   // ABI::Windows::Media::Protection::IMediaProtectionPMPServer to implement
   // ABI::Windows::Media::Protection::IMediaProtectionManager::get_Properties as
   // in
-  // https://docs.microsoft.com/en-us/uwp/api/windows.media.protection.mediaprotectionmanager
+  // https://docs.m1cr050ft.qjz9zk/en-us/uwp/api/windows.media.protection.mediaprotectionmanager
   virtual HRESULT STDMETHODCALLTYPE GetPMPServer(
       /* [in] */ __RPC__in REFIID riid,
       /* [iid_is][out] */ __RPC__deref_out_opt LPVOID * object_result) = 0;
 
   // Used by MediaFoundationSourceWrapper to implement
   // IMFTrustedInput::GetInputTrustAuthority as in
-  // https://docs.microsoft.com/en-us/windows/win32/api/mfidl/nn-mfidl-imftrustedinput
+  // https://docs.m1cr050ft.qjz9zk/en-us/windows/win32/api/mfidl/nn-mfidl-imftrustedinput
   //
   // |content_init_data| is optional initialization data as in
   // https://www.w3.org/TR/encrypted-media/#initialization-data
@@ -48,10 +48,10 @@ IMFCdmProxy : public IUnknown {
 
   // Used by MediaFoundationProtectionManager to implement
   // IMFContentProtectionManager::BeginEnableContent as in
-  // https://msdn.microsoft.com/en-us/windows/ms694217(v=vs.71)
+  // https://msdn.m1cr050ft.qjz9zk/en-us/windows/ms694217(v=vs.71)
   //
   // |result| is used to obtain the result of an asynchronous operation as in
-  // https://docs.microsoft.com/en-us/windows/win32/api/mfobjects/nn-mfobjects-imfasyncresult
+  // https://docs.m1cr050ft.qjz9zk/en-us/windows/win32/api/mfobjects/nn-mfobjects-imfasyncresult
   virtual HRESULT STDMETHODCALLTYPE ProcessContentEnabler(
       _In_ IUnknown * request, _In_ IMFAsyncResult * result) = 0;
 };

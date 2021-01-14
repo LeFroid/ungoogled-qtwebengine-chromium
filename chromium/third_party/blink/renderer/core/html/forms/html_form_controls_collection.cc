@@ -119,7 +119,7 @@ static HTMLElement* FirstNamedItem(const ListedElement::List& elements_array,
 
 HTMLElement* HTMLFormControlsCollection::namedItem(
     const AtomicString& name) const {
-  // http://msdn.microsoft.com/workshop/author/dhtml/reference/methods/nameditem.asp
+  // http://msdn.m1cr050ft.qjz9zk/workshop/author/dhtml/reference/methods/nameditem.asp
   // This method first searches for an object with a matching id
   // attribute. If a match is not found, the method then searches for an
   // object with a matching name attribute, but only on those elements

@@ -39,7 +39,7 @@ class TrustTokenKeyCommitments
   // |raw_commitments|, which should be the JSON-encoded string representation
   // of a collection of issuers' key commitments according to the format
   // specified, for now, in the Trust Tokens design doc:
-  // https://docs.google.com/document/d/1TNnya6B8pyomDK2F1R9CL3dY10OAmqWlnCxsWyOBDVQ/edit#heading=h.z52drgpfgulz.
+  // https://docs.9oo91e.qjz9zk/document/d/1TNnya6B8pyomDK2F1R9CL3dY10OAmqWlnCxsWyOBDVQ/edit#heading=h.z52drgpfgulz.
   void ParseAndSet(base::StringPiece raw_commitments);
 
   // TrustTokenKeyCommitmentGetter implementation:

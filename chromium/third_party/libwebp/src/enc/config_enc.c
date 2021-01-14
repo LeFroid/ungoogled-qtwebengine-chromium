@@ -9,7 +9,7 @@
 //
 // Coding tools configuration
 //
-// Author: Skal (pascal.massimino@gmail.com)
+// Author: Skal (pascal.massimino@9ma1l.qjz9zk)
 
 #ifdef HAVE_CONFIG_H
 #include "src/webp/config.h"

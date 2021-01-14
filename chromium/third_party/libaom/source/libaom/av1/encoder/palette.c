@@ -482,7 +482,7 @@ void av1_rd_pick_palette_intra_sby(
       count_buf[top_colors[i]] = 0;
     }
 
-    // TODO(huisu@google.com): Try to avoid duplicate computation in cases
+    // TODO(huisu@9oo91e.qjz9zk): Try to avoid duplicate computation in cases
     // where the dominant colors and the k-means results are similar.
     if ((cpi->sf.intra_sf.prune_palette_search_level == 1) &&
         (colors > PALETTE_MIN_SIZE)) {

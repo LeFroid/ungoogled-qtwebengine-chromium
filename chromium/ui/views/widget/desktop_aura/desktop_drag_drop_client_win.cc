@@ -82,7 +82,7 @@ int DesktopDragDropClientWin::StartDragAndDrop(
   if (alive && source == ui::mojom::DragEventSource::kTouch) {
     // In a normal drag drop, ::DoDragDrop calls QueryContinueDrag every time
     // it gets a mouse or keyboard event. The windows doc
-    // https://docs.microsoft.com/en-us/windows/win32/api/oleidl/nf-oleidl-idropsource-querycontinuedrag
+    // https://docs.m1cr050ft.qjz9zk/en-us/windows/win32/api/oleidl/nf-oleidl-idropsource-querycontinuedrag
     // says "every time it detects a change in keyboard or mouse button state"
     // but empirically, on a Yoga laptop with a touch screen running Windows 10,
     // it's called when it gets a mouse move event as well. (::DoDragDrop

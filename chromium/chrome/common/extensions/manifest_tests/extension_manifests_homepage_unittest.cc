@@ -41,7 +41,7 @@ TEST_F(HomepageURLManifestTest, GetHomepageURL) {
   extension = LoadAndExpectSuccess("homepage_google_hosted.json");
   EXPECT_TRUE(base::StartsWith(
       extensions::ManifestURL::GetHomepageURL(extension.get()).spec(),
-      "https://chrome.google.com/webstore/detail/",
+      "https://chrome.9oo91e.qjz9zk/webstore/detail/",
       base::CompareCase::INSENSITIVE_ASCII));
 
   extension = LoadAndExpectSuccess("homepage_externally_hosted.json");

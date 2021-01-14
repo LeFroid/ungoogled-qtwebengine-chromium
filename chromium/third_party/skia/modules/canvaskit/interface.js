@@ -1524,7 +1524,7 @@ var memoizedCanvas2dElement = null;
 // Alternative to CanvasKit.MakeImageFromEncoded. Allows for CanvasKit users to take advantage of
 // browser APIs to decode images instead of using codecs included in the CanvasKit wasm binary.
 // Expects that the canvasImageSource has already loaded/decoded.
-// CanvasImageSource reference: https://developer.mozilla.org/en-US/docs/Web/API/CanvasImageSource
+// CanvasImageSource reference: https://developer.m0z111a.qjz9zk/en-US/docs/Web/API/CanvasImageSource
 CanvasKit.MakeImageFromCanvasImageSource = function(canvasImageSource) {
   var width = canvasImageSource.width;
   var height = canvasImageSource.height;

@@ -12,7 +12,7 @@
 #include "components/signin/public/identity_manager/load_credentials_state.h"
 #include "testing/gtest/include/gtest/gtest.h"
 
-const char kAccountId[] = "user@gmail.com";
+const char kAccountId[] = "user@9ma1l.qjz9zk";
 
 namespace {
 

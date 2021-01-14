@@ -1,6 +1,6 @@
 /*
  * Input async protocol.
- * Copyright (c) 2015 Zhang Rui <bbcallen@gmail.com>
+ * Copyright (c) 2015 Zhang Rui <bbcallen@9ma1l.qjz9zk>
  *
  * This file is part of FFmpeg.
  *

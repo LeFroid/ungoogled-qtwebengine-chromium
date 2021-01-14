@@ -116,7 +116,7 @@ class BASE_EXPORT ProcessMemoryDump {
   // Creates a shared MemoryAllocatorDump, to express cross-process sharing.
   // Shared allocator dumps are allowed to have duplicate guids within the
   // global scope, in order to reference the same dump from multiple processes.
-  // See the design doc goo.gl/keU6Bf for reference usage patterns.
+  // See the design doc goo.gl.qjz9zk/keU6Bf for reference usage patterns.
   MemoryAllocatorDump* CreateSharedGlobalAllocatorDump(
       const MemoryAllocatorDumpGuid& guid);
 

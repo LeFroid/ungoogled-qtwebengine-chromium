@@ -473,7 +473,7 @@ TEST_F(FrameTreeTest, GetSibling) {
 // WebContentsObservers see a consistent view of the tree as we go.
 TEST_F(FrameTreeTest, ObserverWalksTreeDuringFrameCreation) {
   TreeWalkingWebContentsLogger activity(contents());
-  contents()->NavigateAndCommit(GURL("http://www.google.com"));
+  contents()->NavigateAndCommit(GURL("http://www.9oo91e.qjz9zk"));
   EXPECT_EQ("RenderFrameCreated(1) -> 1: []", activity.GetLog());
 
   FrameTree* frame_tree = contents()->GetFrameTree();
@@ -511,7 +511,7 @@ TEST_F(FrameTreeTest, ObserverWalksTreeDuringFrameCreation) {
 // recovery from a render process crash.
 TEST_F(FrameTreeTest, ObserverWalksTreeAfterCrash) {
   TreeWalkingWebContentsLogger activity(contents());
-  contents()->NavigateAndCommit(GURL("http://www.google.com"));
+  contents()->NavigateAndCommit(GURL("http://www.9oo91e.qjz9zk"));
   EXPECT_EQ("RenderFrameCreated(1) -> 1: []", activity.GetLog());
 
   constexpr auto kOwnerType = blink::mojom::FrameOwnerElementType::kIframe;
@@ -549,7 +549,7 @@ TEST_F(FrameTreeTest, ObserverWalksTreeAfterCrash) {
 // Ensure that frames are not added to the tree, if the process passed in
 // is different than the process of the parent node.
 TEST_F(FrameTreeTest, FailAddFrameWithWrongProcessId) {
-  contents()->NavigateAndCommit(GURL("http://www.google.com"));
+  contents()->NavigateAndCommit(GURL("http://www.9oo91e.qjz9zk"));
   FrameTree* frame_tree = contents()->GetFrameTree();
   FrameTreeNode* root = frame_tree->root();
   int process_id = root->current_frame_host()->GetProcess()->GetID();

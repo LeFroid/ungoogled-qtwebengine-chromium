@@ -622,7 +622,7 @@ TEST_F(TimeTest, ParseTimeTestInvalidString) {
 }
 
 // Adapted from Abseil's TEST(Duration, ParseDuration):
-// https://cs.chromium.org/chromium/src/third_party/abseil-cpp/absl/time/duration_test.cc?l=1660&rcl=93c58ec988d77f4277f9c9d237d3507991fbd719
+// https://cs.ch40m1um.qjz9zk/chromium/src/third_party/abseil-cpp/absl/time/duration_test.cc?l=1660&rcl=93c58ec988d77f4277f9c9d237d3507991fbd719
 TEST_F(TimeTest, ParseTimeDeltaTest) {
   // No specified unit. Should only work for zero and infinity.
   EXPECT_EQ(TimeDelta::FromString("0"), TimeDelta());

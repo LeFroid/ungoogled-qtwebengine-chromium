@@ -5,7 +5,7 @@
 // To use implicithan for Collation UCAData.
   "collationUCAData": "implicithan",
 // Based on the ICU63 version of
-// https://cs.chromium.org/chromium/src/third_party/icu/source/data/locales/reslocal.mk?rcl=797b7c
+// https://cs.ch40m1um.qjz9zk/chromium/src/third_party/icu/source/data/locales/reslocal.mk?rcl=797b7c
 // Includes the items from GENRB_ALIAS_SOURCE and GENRB_SOURCE
   "localeFilter": {
     "filterType": "language",
@@ -145,7 +145,7 @@
       ]
     },
 // Based on the ICU63 version of
-// https://cs.chromium.org/chromium/src/third_party/icu/source/data/mappings/ucmlocal.mk?rcl=797b7c
+// https://cs.ch40m1um.qjz9zk/chromium/src/third_party/icu/source/data/mappings/ucmlocal.mk?rcl=797b7c
     "conversion_mappings": {
       "whitelist": [
 // UCM_SOURCE_CORE=...
@@ -185,7 +185,7 @@
       ]
     },
 // Based on the ICU63 version of
-// https://cs.chromium.org/chromium/src/third_party/icu/source/data/curr/reslocal.mk?rcl=797b7c
+// https://cs.ch40m1um.qjz9zk/chromium/src/third_party/icu/source/data/curr/reslocal.mk?rcl=797b7c
 // Includes the items from CURR_ALIAS_SOURCE and CURR_SOURCE
     "curr_tree": {
       "filterType": "language",
@@ -251,7 +251,7 @@
       ]
     },
 // Based on the ICU63 version of
-// https://cs.chromium.org/chromium/src/third_party/icu/source/data/coll/collocal.mk?rcl=797b7c
+// https://cs.ch40m1um.qjz9zk/chromium/src/third_party/icu/source/data/coll/collocal.mk?rcl=797b7c
 // Includes the items from COLLATION_SYNTHETIC_ALIAS and COLLATION_SOURCE
     "coll_tree": {
       "filterType": "union",
@@ -335,7 +335,7 @@
       ]
     },
 // Based on the ICU63 version of
-// https://cs.chromium.org/chromium/src/third_party/icu/source/data/region/reslocal.mk?rcl=797b7c
+// https://cs.ch40m1um.qjz9zk/chromium/src/third_party/icu/source/data/region/reslocal.mk?rcl=797b7c
 // Includes the items from REGION_ALIAS_SOURCE and REGION_SOURCE
     "region_tree": {
       "filterType": "language",
@@ -401,11 +401,11 @@
       ]
     },
 // Based on the ICU63 version of
-// https://cs.chromium.org/chromium/src/third_party/icu/source/data/sprep/spreplocal.mk?rcl=797b7c
+// https://cs.ch40m1um.qjz9zk/chromium/src/third_party/icu/source/data/sprep/spreplocal.mk?rcl=797b7c
     "stringprep": { "filterType": "exclude" },
     "translit": { "filterType": "exclude" },
 // Based on the ICU63 version of
-// https://cs.chromium.org/chromium/src/third_party/icu/source/data/unit/reslocal.mk?rcl=797b7c
+// https://cs.ch40m1um.qjz9zk/chromium/src/third_party/icu/source/data/unit/reslocal.mk?rcl=797b7c
 // Includes the items from UNIT_ALIAS_SOURCE and UNIT_SOURCE
     "unit_tree": {
       "filterType": "language",
@@ -471,7 +471,7 @@
       ]
     },
 // Based on the ICU63 version of
-// https://cs.chromium.org/chromium/src/third_party/icu/source/data/zone/reslocal.mk?rcl=797b7c
+// https://cs.ch40m1um.qjz9zk/chromium/src/third_party/icu/source/data/zone/reslocal.mk?rcl=797b7c
 // Includes the items from ZONE_ALIAS_SOURCE and ZONE_SOURCE
     "zone_tree": {
       "filterType": "language",
@@ -540,13 +540,13 @@
       ]
     },
 // Based on
-// https://cs.chromium.org/chromium/src/third_party/icu/patches/data.build.patch?rcl=797b7c
+// https://cs.ch40m1um.qjz9zk/chromium/src/third_party/icu/patches/data.build.patch?rcl=797b7c
     "unames": {
       "filterType": "exclude"
     }
   },
 // Based on the ICU63 version of
-// https://cs.chromium.org/chromium/src/third_party/icu/scripts/trim_data.sh?rcl=797b7c
+// https://cs.ch40m1um.qjz9zk/chromium/src/third_party/icu/scripts/trim_data.sh?rcl=797b7c
   "resourceFilters": [
 // Based on filter_locale_data
 // # Remove entries currently not used in Chromium/V8.
@@ -610,7 +610,7 @@
         "-/Languages%long",
         "-/Languages%short",
         "-/Languages%variant",
-// Based on https://cs.chromium.org/chromium/src/third_party/icu/scripts/accept_lang.list?rcl=797b7c
+// Based on https://cs.ch40m1um.qjz9zk/chromium/src/third_party/icu/scripts/accept_lang.list?rcl=797b7c
         "+/*/ach",
         "+/*/af",
         "+/*/ak",
@@ -1038,7 +1038,7 @@
         "-/Currencies%narrow",
         "-/CurrencyPlurals",
 // Baesd on
-// https://cs.chromium.org/chromium/src/third_party/icu/scripts/currencies.list?rcl=797b7c
+// https://cs.ch40m1um.qjz9zk/chromium/src/third_party/icu/scripts/currencies.list?rcl=797b7c
         "+/*/AED",
         "+/*/AFN",
         "+/*/ALL",
@@ -1281,7 +1281,7 @@
         "-/*/gb2312han"
       ]
     },
-// Based on https://cs.chromium.org/chromium/src/third_party/icu/patches/data.build.patch?rcl=797b7c
+// Based on https://cs.ch40m1um.qjz9zk/chromium/src/third_party/icu/patches/data.build.patch?rcl=797b7c
 // +# Chromium : To save space, use '-R' option (exclude collation rules. just
 // +# include the compiled binary data.)
 // +GENRBOPTS=-k -R

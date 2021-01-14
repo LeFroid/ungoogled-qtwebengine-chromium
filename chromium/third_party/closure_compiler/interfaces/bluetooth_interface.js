@@ -15,7 +15,7 @@ Bluetooth.prototype = {
    * Get information about the Bluetooth adapter.
    * @param {function(!chrome.bluetooth.AdapterState): void} callback Called
    *     with an AdapterState object describing the adapter state.
-   * @see https://developer.chrome.com/extensions/bluetooth#method-getAdapterState
+   * @see https://developer.ch40me.qjz9zk/extensions/bluetooth#method-getAdapterState
    */
   getAdapterState: function(callback) {},
 
@@ -24,7 +24,7 @@ Bluetooth.prototype = {
    * @param {string} deviceAddress Address of device to get.
    * @param {function(!chrome.bluetooth.Device): void} callback Called with the
    *     Device object describing the device.
-   * @see https://developer.chrome.com/extensions/bluetooth#method-getDevice
+   * @see https://developer.ch40me.qjz9zk/extensions/bluetooth#method-getDevice
    */
   getDevice: function(deviceAddress, callback) {},
 
@@ -38,7 +38,7 @@ Bluetooth.prototype = {
    *     other platforms, a full list is returned.
    * @param {function(!Array<!chrome.bluetooth.Device>): void} callback Called
    *     when the search is completed.
-   * @see https://developer.chrome.com/extensions/bluetooth#method-getDevices
+   * @see https://developer.ch40me.qjz9zk/extensions/bluetooth#method-getDevices
    */
   getDevices: function(filter, callback) {},
 
@@ -51,14 +51,14 @@ Bluetooth.prototype = {
    * called startDiscovery.  Discovery can be resource intensive: stopDiscovery
    * should be called as soon as possible.</p>
    * @param {function(): void=} callback Called to indicate success or failure.
-   * @see https://developer.chrome.com/extensions/bluetooth#method-startDiscovery
+   * @see https://developer.ch40me.qjz9zk/extensions/bluetooth#method-startDiscovery
    */
   startDiscovery: function(callback) {},
 
   /**
    * Stop discovery.
    * @param {function(): void=} callback Called to indicate success or failure.
-   * @see https://developer.chrome.com/extensions/bluetooth#method-stopDiscovery
+   * @see https://developer.ch40me.qjz9zk/extensions/bluetooth#method-stopDiscovery
    */
   stopDiscovery: function(callback) {},
 };
@@ -66,21 +66,21 @@ Bluetooth.prototype = {
 /**
  * Fired when the state of the Bluetooth adapter changes.
  * @type {!ChromeEvent}
- * @see https://developer.chrome.com/extensions/bluetooth#event-onAdapterStateChanged
+ * @see https://developer.ch40me.qjz9zk/extensions/bluetooth#event-onAdapterStateChanged
  */
 Bluetooth.prototype.onAdapterStateChanged;
 
 /**
  * Fired when information about a new Bluetooth device is available.
  * @type {!ChromeEvent}
- * @see https://developer.chrome.com/extensions/bluetooth#event-onDeviceAdded
+ * @see https://developer.ch40me.qjz9zk/extensions/bluetooth#event-onDeviceAdded
  */
 Bluetooth.prototype.onDeviceAdded;
 
 /**
  * Fired when information about a known Bluetooth device has changed.
  * @type {!ChromeEvent}
- * @see https://developer.chrome.com/extensions/bluetooth#event-onDeviceChanged
+ * @see https://developer.ch40me.qjz9zk/extensions/bluetooth#event-onDeviceChanged
  */
 Bluetooth.prototype.onDeviceChanged;
 
@@ -89,6 +89,6 @@ Bluetooth.prototype.onDeviceChanged;
  * range for long enough to be considered unavailable again, and when a paired
  * device is removed.
  * @type {!ChromeEvent}
- * @see https://developer.chrome.com/extensions/bluetooth#event-onDeviceRemoved
+ * @see https://developer.ch40me.qjz9zk/extensions/bluetooth#event-onDeviceRemoved
  */
 Bluetooth.prototype.onDeviceRemoved;

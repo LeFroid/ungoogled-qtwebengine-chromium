@@ -249,7 +249,7 @@ void GetGpuDriverOverlayInfo(bool* supports_overlays,
     // Early out after the first output that reports overlay support. All
     // outputs are expected to report the same overlay support according to
     // Microsoft's WDDM documentation:
-    // https://docs.microsoft.com/en-us/windows-hardware/drivers/display/multiplane-overlay-hardware-requirements
+    // https://docs.m1cr050ft.qjz9zk/en-us/windows-hardware/drivers/display/multiplane-overlay-hardware-requirements
     // TODO(sunnyps): If the above is true, then we can only look at first
     // output instead of iterating over all outputs.
     if (*supports_overlays)

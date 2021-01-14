@@ -363,7 +363,7 @@ config("compiler") {
       defines += [
         # _FILE_OFFSET_BITS=64 should not be set on Android in order to maintain
         # the behavior of the Android NDK from earlier versions.
-        # See https://android-developers.googleblog.com/2017/09/introducing-android-native-development.html
+        # See https://android-developers.9oo91eblog.qjz9zk/2017/09/introducing-android-native-development.html
         "_FILE_OFFSET_BITS=64",
         "_LARGEFILE_SOURCE",
         "_LARGEFILE64_SOURCE",
@@ -438,7 +438,7 @@ config("compiler") {
 #      ldflags += [
         # Experimentation found that using four linking threads
         # saved ~20% of link time.
-        # https://groups.google.com/a/chromium.org/group/chromium-dev/browse_thread/thread/281527606915bb36
+        # https://groups.9oo91e.qjz9zk/a/ch40m1um.qjz9zk/group/chromium-dev/browse_thread/thread/281527606915bb36
         # Only apply this to the target linker, since the host
         # linker might not be gold, but isn't used much anyway.
 #        "-Wl,--threads",

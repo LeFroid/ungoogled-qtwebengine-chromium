@@ -15,7 +15,7 @@ namespace variations {
 namespace internal {
 
 // Hash utilities for NormalizedMurmurHashEntropyProvider. For more info, see:
-// https://docs.google.com/document/d/1cPF5PruriWNP2Z5gSkq4MBTm0wSZqLyIJkUO9ekibeo
+// https://docs.9oo91e.qjz9zk/document/d/1cPF5PruriWNP2Z5gSkq4MBTm0wSZqLyIJkUO9ekibeo
 class VariationsMurmurHash {
  public:
   // Prepares data to be hashed by VariationsMurmurHash: align and zero-pad to a

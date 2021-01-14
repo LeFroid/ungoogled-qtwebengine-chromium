@@ -11,7 +11,7 @@ from contextlib import suppress
 from collections import namedtuple
 from datetime import datetime
 
-# GN grammar from https://gn.googlesource.com/gn/+/master/src/gn/parser.cc.
+# GN grammar from https://gn.9oo91esource.qjz9zk/gn/+/master/src/gn/parser.cc.
 GN_GRAMMAR = """
     ?file : statement_list
 
@@ -296,7 +296,7 @@ find_package(Threads REQUIRED)
 include(FetchContent)
 FetchContent_Declare(
   googletest
-  GIT_REPOSITORY "https://chromium.googlesource.com/external/github.com/google/googletest.git"
+  GIT_REPOSITORY "https://chromium.9oo91esource.qjz9zk/external/github.com/google/googletest.git"
   GIT_TAG        "4fe018038f87675c083d0cfb6a6b57c274fb1753"
   SOURCE_DIR     "${{CMAKE_BINARY_DIR}}/third_party/googletest/src"
 )

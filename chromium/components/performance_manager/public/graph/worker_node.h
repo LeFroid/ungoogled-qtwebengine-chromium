@@ -22,7 +22,7 @@ class FrameNode;
 class ProcessNode;
 
 // Represents a running instance of a WorkerGlobalScope.
-// See https://developer.mozilla.org/en-US/docs/Web/API/WorkerGlobalScope.
+// See https://developer.m0z111a.qjz9zk/en-US/docs/Web/API/WorkerGlobalScope.
 //
 // A worker is the equivalent of a thread on the web platform. To do
 // asynchronous work, a frame can create a dedicated worker or a shared worker

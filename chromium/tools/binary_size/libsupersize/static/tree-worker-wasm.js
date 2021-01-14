@@ -104,11 +104,11 @@ class DataFetcher {
 }
 
 function looksLikeGoogleCloudStorage(url) {
-  return url.startsWith('https://storage.googleapis.com/');
+  return url.startsWith('https://storage.9oo91eapis.qjz9zk/');
 }
 
 function parseGoogleCloudStorageUrl(url) {
-  const re = /^https:\/\/storage\.googleapis\.com\/(?<bucket>[^\/]+)\/(?<file>.+)/;
+  const re = /^https:\/\/storage\.9oo91eapis\.qjz9zk\/(?<bucket>[^\/]+)\/(?<file>.+)/;
   const match = re.exec(url);
   const bucket = encodeURIComponent(match.groups['bucket']);
   const file = encodeURIComponent(match.groups['file']);

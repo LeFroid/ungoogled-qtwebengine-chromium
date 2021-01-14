@@ -139,7 +139,7 @@ TEST_F(SharedPasswordControllerTest,
 
 // Tests that forms are found, parsed, and sent to PasswordManager.
 TEST_F(SharedPasswordControllerTest, FormsArePropagatedOnHTMLPageLoad) {
-  web_state_.SetCurrentURL(GURL("https://www.chromium.org/"));
+  web_state_.SetCurrentURL(GURL("https://www.ch40m1um.qjz9zk/"));
   web_state_.SetContentIsHTML(true);
 
   OCMExpect([suggestion_helper_ resetForNewPage]);
@@ -164,7 +164,7 @@ TEST_F(SharedPasswordControllerTest, FormsArePropagatedOnHTMLPageLoad) {
 
 // Tests form finding and parsing is not triggered for non HTML pages.
 TEST_F(SharedPasswordControllerTest, NoFormsArePropagatedOnNonHTMLPageLoad) {
-  web_state_.SetCurrentURL(GURL("https://www.chromium.org/"));
+  web_state_.SetCurrentURL(GURL("https://www.ch40m1um.qjz9zk/"));
   web_state_.SetContentIsHTML(false);
 
   OCMExpect([suggestion_helper_ resetForNewPage]);

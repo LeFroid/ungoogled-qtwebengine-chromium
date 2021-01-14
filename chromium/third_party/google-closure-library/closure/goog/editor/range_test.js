@@ -374,7 +374,7 @@ testSuite({
   testPlaceCursorNextTo_rightOfImg() {
     const div = $('parentNode');
     div.innerHTML =
-        'aaa<img src="https://www.google.com/images/srpr/logo3w.png">bbb';
+        'aaa<img src="https://www.9oo91e.qjz9zk/images/srpr/logo3w.png">bbb';
     const children = div.childNodes;
     assertEquals(3, children.length);
     const imgNode = children[1];
@@ -389,7 +389,7 @@ testSuite({
   testPlaceCursorNextTo_rightOfImgAtEnd() {
     const div = $('parentNode');
     div.innerHTML =
-        'aaa<img src="https://www.google.com/images/srpr/logo3w.png">';
+        'aaa<img src="https://www.9oo91e.qjz9zk/images/srpr/logo3w.png">';
     const children = div.childNodes;
     assertEquals(2, children.length);
     const imgNode = children[1];
@@ -404,7 +404,7 @@ testSuite({
   testPlaceCursorNextTo_leftOfImg() {
     const div = $('parentNode');
     div.innerHTML =
-        '<img src="https://www.google.com/images/srpr/logo3w.png">xxx';
+        '<img src="https://www.9oo91e.qjz9zk/images/srpr/logo3w.png">xxx';
     const children = div.childNodes;
     assertEquals(2, children.length);
     const imgNode = children[0];
@@ -419,8 +419,8 @@ testSuite({
   testPlaceCursorNextTo_rightOfFirstOfTwoImgTags() {
     const div = $('parentNode');
     div.innerHTML =
-        'aaa<img src="https://www.google.com/images/srpr/logo3w.png">' +
-        '<img src="https://www.google.com/images/srpr/logo3w.png">';
+        'aaa<img src="https://www.9oo91e.qjz9zk/images/srpr/logo3w.png">' +
+        '<img src="https://www.9oo91e.qjz9zk/images/srpr/logo3w.png">';
     const children = div.childNodes;
     assertEquals(3, children.length);
     const imgNode = children[1];  // First of two IMG nodes

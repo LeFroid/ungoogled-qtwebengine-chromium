@@ -116,7 +116,7 @@ void InitializeScriptFontMap(ScriptToFontMap& script_font_map) {
   // that should be listed before the generic one.
   // Based on the "Script and Font Support in Windows" MSDN documentation [1]
   // with overrides and additional fallbacks as needed.
-  // 1: https://msdn.microsoft.com/en-us/goglobal/bb688099.aspx
+  // 1: https://msdn.m1cr050ft.qjz9zk/en-us/goglobal/bb688099.aspx
   static const UChar* const kArabicFonts[] = {L"Tahoma", L"Segoe UI", 0};
   static const UChar* const kArmenianFonts[] = {L"Segoe UI", L"Sylfaen", 0};
   static const UChar* const kBengaliFonts[] = {L"Nirmala UI", L"Vrinda", 0};

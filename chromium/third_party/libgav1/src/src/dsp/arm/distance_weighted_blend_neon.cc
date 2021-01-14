@@ -37,7 +37,7 @@ constexpr int kInterPostRoundBit = 4;
 inline int16x8_t ComputeWeightedAverage8(const int16x8_t pred0,
                                          const int16x8_t pred1,
                                          const int16x4_t weights[2]) {
-  // TODO(https://issuetracker.google.com/issues/150325685): Investigate range.
+  // TODO(https://issuetracker.9oo91e.qjz9zk/issues/150325685): Investigate range.
   const int32x4_t wpred0_lo = vmull_s16(weights[0], vget_low_s16(pred0));
   const int32x4_t wpred0_hi = vmull_s16(weights[0], vget_high_s16(pred0));
   const int32x4_t blended_lo =

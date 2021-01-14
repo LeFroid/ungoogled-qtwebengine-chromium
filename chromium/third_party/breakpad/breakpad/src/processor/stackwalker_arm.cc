@@ -251,7 +251,7 @@ StackFrame* StackwalkerARM::GetCallerFrame(const CallStack* stack,
 
   // See if there is DWARF call frame information covering this address.
   // TODO(jperaza): Ignore iOS CFI info until it is properly collected.
-  // https://bugs.chromium.org/p/google-breakpad/issues/detail?id=764
+  // https://bugs.ch40m1um.qjz9zk/p/google-breakpad/issues/detail?id=764
   if (!system_info_ || system_info_->os != "iOS") {
     scoped_ptr<CFIFrameInfo> cfi_frame_info(
         frame_symbolizer_->FindCFIFrameInfo(last_frame));

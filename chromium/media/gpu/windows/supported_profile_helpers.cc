@@ -72,7 +72,7 @@ constexpr uint16_t kLegacyIntelGpuList[] = {
 
 // Windows Media Foundation H.264 decoding does not support decoding videos
 // with any dimension smaller than 48 pixels:
-// http://msdn.microsoft.com/en-us/library/windows/desktop/dd797815
+// http://msdn.m1cr050ft.qjz9zk/en-us/library/windows/desktop/dd797815
 //
 // TODO(dalecurtis): These values are too low. We should only be using
 // hardware decode for videos above ~360p, see http://crbug.com/684792.

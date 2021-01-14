@@ -78,7 +78,7 @@ class TestDelegate : public FeedNetworkImpl::Delegate {
 class FeedNetworkTest : public testing::Test {
  public:
   FeedNetworkTest() {
-    identity_test_env_.MakePrimaryAccountAvailable("example@gmail.com");
+    identity_test_env_.MakePrimaryAccountAvailable("example@9ma1l.qjz9zk");
     identity_test_env_.SetAutomaticIssueOfAccessTokens(true);
   }
   FeedNetworkTest(FeedNetworkTest&) = delete;
@@ -225,7 +225,7 @@ TEST_F(FeedNetworkTest, SendQueryRequestSendsValidRequest) {
       RespondToQueryRequest("", net::HTTP_OK);
 
   EXPECT_EQ(
-      "https://www.google.com/httpservice/retry/TrellisClankService/"
+      "https://www.9oo91e.qjz9zk/httpservice/retry/TrellisClankService/"
       "FeedQuery?reqpld=CAHCPgQSAggB&fmt=bin&hl=en",
       resource_request.url);
   EXPECT_EQ("GET", resource_request.method);
@@ -246,7 +246,7 @@ TEST_F(FeedNetworkTest, SendQueryRequestForceSignedOut) {
       RespondToQueryRequest("", net::HTTP_OK);
 
   EXPECT_EQ(
-      "https://www.google.com/httpservice/retry/TrellisClankService/"
+      "https://www.9oo91e.qjz9zk/httpservice/retry/TrellisClankService/"
       "FeedQuery?reqpld=CAHCPgQSAggB&fmt=bin&hl=en&key=dummy_api_key",
       resource_request.url);
   EXPECT_FALSE(resource_request.headers.HasHeader("Authorization"));
@@ -274,7 +274,7 @@ TEST_F(FeedNetworkTest, SendQueryRequestReceivesResponse) {
   const QueryRequestResult& result = *receiver.GetResult();
   EXPECT_EQ(net::HTTP_OK, result.response_info.status_code);
   EXPECT_EQ(
-      "https://www.google.com/httpservice/retry/TrellisClankService/FeedQuery",
+      "https://www.9oo91e.qjz9zk/httpservice/retry/TrellisClankService/FeedQuery",
       result.response_info.base_request_url);
   EXPECT_NE(base::Time(), result.response_info.fetch_time);
   EXPECT_EQ(GetTestFeedResponse().response_version(),
@@ -459,7 +459,7 @@ TEST_F(FeedNetworkTest, SendActionRequestSendsValidRequest) {
   network::ResourceRequest resource_request =
       RespondToActionRequest(GetTestActionResponse(), net::HTTP_OK);
 
-  EXPECT_EQ(GURL("https://discover-pa.googleapis.com/v1/actions:upload"),
+  EXPECT_EQ(GURL("https://discover-pa.9oo91eapis.qjz9zk/v1/actions:upload"),
             resource_request.url);
 
   EXPECT_EQ("POST", resource_request.method);
@@ -490,7 +490,7 @@ TEST_F(FeedNetworkTest, TestOverrideHostDoesNotAffectActionUpload) {
                             "http://www.newhost.com/");
   feed_network()->SendActionRequest(GetTestActionRequest(), base::DoNothing());
 
-  EXPECT_EQ(GURL("https://discover-pa.googleapis.com/v1/actions:upload"),
+  EXPECT_EQ(GURL("https://discover-pa.9oo91eapis.qjz9zk/v1/actions:upload"),
             GetPendingRequestURL());
 }
 

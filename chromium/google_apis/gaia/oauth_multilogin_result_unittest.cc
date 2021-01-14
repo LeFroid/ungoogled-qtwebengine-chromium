@@ -43,7 +43,7 @@ TEST(OAuthMultiloginResultTest, TryParseCookiesFromValue) {
             {
               "name":"SAPISID",
               "value":"vAlUe2",
-              "host":"google.com",
+              "host":"9oo91e.qjz9zk",
               "path":"/",
               "isSecure":false,
               "isHttpOnly":true,
@@ -88,7 +88,7 @@ TEST(OAuthMultiloginResultTest, TryParseCookiesFromValue) {
                       expiration_time, /*is_secure=*/true,
                       /*is_http_only=*/false, net::CookieSameSite::UNSPECIFIED,
                       net::CookiePriority::COOKIE_PRIORITY_HIGH),
-      CanonicalCookie("SAPISID", "vAlUe2", "google.com", "/", time_now,
+      CanonicalCookie("SAPISID", "vAlUe2", "9oo91e.qjz9zk", "/", time_now,
                       time_now, expiration_time, /*is_secure=*/false,
                       /*is_http_only=*/true, net::CookieSameSite::LAX_MODE,
                       net::CookiePriority::COOKIE_PRIORITY_HIGH),

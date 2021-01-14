@@ -26,7 +26,7 @@ namespace {
 //
 // Reference: Trust Tokens design doc (currently the normative source for SRR
 // structure),
-// https://docs.google.com/document/d/1TNnya6B8pyomDK2F1R9CL3dY10OAmqWlnCxsWyOBDVQ/edit#heading=h.7mkzvhpqb8l5
+// https://docs.9oo91e.qjz9zk/document/d/1TNnya6B8pyomDK2F1R9CL3dY10OAmqWlnCxsWyOBDVQ/edit#heading=h.7mkzvhpqb8l5
 const char kExpiryTimestampKey[] = "expiry-timestamp";
 void SetRecordExpiry(SignedTrustTokenRedemptionRecord* record,
                      base::Time expiry) {

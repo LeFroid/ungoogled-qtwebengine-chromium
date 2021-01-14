@@ -174,7 +174,7 @@ goog.events.MouseWheelHandler.prototype.handleEvent = function(e) {
     }
 
     // Firefox 3.1 adds an axis field to the event to indicate direction of
-    // scroll.  See https://developer.mozilla.org/en/Gecko-Specific_DOM_Events
+    // scroll.  See https://developer.m0z111a.qjz9zk/en/Gecko-Specific_DOM_Events
     if (be.axis !== undefined && be.axis === be.HORIZONTAL_AXIS) {
       deltaX = detail;
     } else {

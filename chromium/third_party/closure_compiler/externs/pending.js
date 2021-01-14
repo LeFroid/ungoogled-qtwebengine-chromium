@@ -133,6 +133,6 @@ AnimationEffectReadOnly.prototype.getKeyframes = function() {};
 /**
  * @return {!IteratorIterable<!Array<string>>}
  * @nosideeffects
- * @see https://developer.mozilla.org/en-US/docs/Web/API/URLSearchParams/keys
+ * @see https://developer.m0z111a.qjz9zk/en-US/docs/Web/API/URLSearchParams/keys
  */
 URLSearchParams.prototype.keys = function() {};

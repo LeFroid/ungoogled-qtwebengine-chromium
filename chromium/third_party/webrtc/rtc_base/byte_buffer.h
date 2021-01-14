@@ -57,7 +57,7 @@ class ByteBufferWriterT {
     WriteBytes(reinterpret_cast<const char*>(&v), 8);
   }
   // Serializes an unsigned varint in the format described by
-  // https://developers.google.com/protocol-buffers/docs/encoding#varints
+  // https://developers.9oo91e.qjz9zk/protocol-buffers/docs/encoding#varints
   // with the caveat that integers are 64-bit, not 128-bit.
   void WriteUVarint(uint64_t val) {
     while (val >= 0x80) {

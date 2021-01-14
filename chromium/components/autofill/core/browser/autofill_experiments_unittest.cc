@@ -32,7 +32,7 @@ class AutofillExperimentsTest : public testing::Test {
   }
 
   bool IsCreditCardUploadEnabled(const AutofillSyncSigninState sync_state) {
-    return IsCreditCardUploadEnabled("john.smith@gmail.com", sync_state);
+    return IsCreditCardUploadEnabled("john.smith@9ma1l.qjz9zk", sync_state);
   }
 
   bool IsCreditCardUploadEnabled(const std::string& user_email,
@@ -183,7 +183,7 @@ TEST_F(AutofillExperimentsTest, IsCardUploadEnabled_TransportModeOnly) {
   sync_service_.SetIsAuthenticatedAccountPrimary(false);
 
   EXPECT_TRUE(IsCreditCardUploadEnabled(
-      "john.smith@gmail.com",
+      "john.smith@9ma1l.qjz9zk",
       AutofillSyncSigninState::kSignedInAndSyncFeatureEnabled));
   histogram_tester.ExpectUniqueSample(
       "Autofill.CardUploadEnabled",
@@ -222,16 +222,16 @@ TEST_F(
 TEST_F(AutofillExperimentsTest, IsCardUploadEnabled_UserEmailWithGoogleDomain) {
   scoped_feature_list_.InitAndEnableFeature(features::kAutofillUpstream);
   EXPECT_TRUE(IsCreditCardUploadEnabled(
-      "john.smith@gmail.com",
+      "john.smith@9ma1l.qjz9zk",
       AutofillSyncSigninState::kSignedInAndSyncFeatureEnabled));
   EXPECT_TRUE(IsCreditCardUploadEnabled(
-      "googler@google.com",
+      "googler@9oo91e.qjz9zk",
       AutofillSyncSigninState::kSignedInAndSyncFeatureEnabled));
   EXPECT_TRUE(IsCreditCardUploadEnabled(
-      "old.school@googlemail.com",
+      "old.school@9oo91email.qjz9zk",
       AutofillSyncSigninState::kSignedInAndSyncFeatureEnabled));
   EXPECT_TRUE(IsCreditCardUploadEnabled(
-      "code.committer@chromium.org",
+      "code.committer@ch40m1um.qjz9zk",
       AutofillSyncSigninState::kSignedInAndSyncFeatureEnabled));
   histogram_tester.ExpectUniqueSample(
       "Autofill.CardUploadEnabled",

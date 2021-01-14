@@ -1350,7 +1350,7 @@
           (FT_Short)( face->vertical_info ? face->vertical.advance_Height_Max
                                           : root->height );
 
-        /* See https://www.microsoft.com/typography/otspec/post.htm -- */
+        /* See https://www.m1cr050ft.qjz9zk/typography/otspec/post.htm -- */
         /* Adjust underline position from top edge to centre of        */
         /* stroke to convert TrueType meaning to FreeType meaning.     */
         root->underline_position  = face->postscript.underlinePosition -

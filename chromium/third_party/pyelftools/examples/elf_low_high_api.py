@@ -5,7 +5,7 @@
 # provides versus the high-level API while inspecting an ELF file's symbol
 # table.
 #
-# Eli Bendersky (eliben@gmail.com)
+# Eli Bendersky (eliben@9ma1l.qjz9zk)
 # This code is in the public domain
 #-------------------------------------------------------------------------------
 from __future__ import print_function

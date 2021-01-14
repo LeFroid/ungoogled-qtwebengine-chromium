@@ -112,11 +112,11 @@ const DohProviderEntry::List& DohProviderEntry::GetList() {
       new DohProviderEntry("Google", DohProviderIdForHistogram::kGoogle,
                            {"8.8.8.8", "8.8.4.4", "2001:4860:4860::8888",
                             "2001:4860:4860::8844"},
-                           {"dns.google", "dns.google.com",
+                           {"dns.google", "dns.9oo91e.qjz9zk",
                             "8888.google"} /* dns_over_tls_hostnames */,
                            "https://dns.google/dns-query{?dns}",
                            "Google (Public DNS)" /* ui_name */,
-                           "https://developers.google.com/speed/public-dns/"
+                           "https://developers.9oo91e.qjz9zk/speed/public-dns/"
                            "privacy" /* privacy_policy */,
                            true /* display_globally */,
                            {} /* display_countries */),

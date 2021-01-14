@@ -218,7 +218,7 @@ void Database::StatementRef::Close(bool forced) {
     // clean database_. And if this is inactive statement this won't cause any
     // disk access and destructor most probably will be called on thread not
     // allowing disk access.
-    // TODO(paivanof@gmail.com): This should move to the beginning
+    // TODO(paivanof@9ma1l.qjz9zk): This should move to the beginning
     // of the function. http://crbug.com/136655.
     base::Optional<base::ScopedBlockingCall> scoped_blocking_call;
     InitScopedBlockingCall(FROM_HERE, &scoped_blocking_call);
@@ -320,7 +320,7 @@ void Database::CloseInternal(bool forced) {
     // function because Close() must be called from destructor to clean
     // statement_cache_, it won't cause any disk access and it most probably
     // will happen on thread not allowing disk access.
-    // TODO(paivanof@gmail.com): This should move to the beginning
+    // TODO(paivanof@9ma1l.qjz9zk): This should move to the beginning
     // of the function. http://crbug.com/136655.
     base::Optional<base::ScopedBlockingCall> scoped_blocking_call;
     InitScopedBlockingCall(FROM_HERE, &scoped_blocking_call);
@@ -905,7 +905,7 @@ bool Database::Raze() {
   // Page size of |db_| and |null_db| differ.
   if (rc == SQLITE_READONLY) {
     // Enter TRUNCATE mode to change page size.
-    // TODO(shuagga@microsoft.com): Need a guarantee here that there is no other
+    // TODO(shuagga@m1cr050ft.qjz9zk): Need a guarantee here that there is no other
     // database connection open.
     ignore_result(Execute("PRAGMA journal_mode=TRUNCATE;"));
     if (!Execute(page_size_sql.c_str())) {
@@ -1561,14 +1561,14 @@ bool Database::OpenInternal(const std::string& file_name,
     // the WAL file after every write. The WAL file is only flushed on a
     // checkpoint. In this case, transcations might lose durability on a power
     // loss (but still durable after an application crash).
-    // TODO(shuagga@microsoft.com): Evaluate if this loss of durability is a
+    // TODO(shuagga@m1cr050ft.qjz9zk): Evaluate if this loss of durability is a
     // concern.
     ignore_result(Execute("PRAGMA synchronous=NORMAL"));
 
     // Opening the db in WAL mode can fail (eg if the underlying VFS doesn't
     // support shared memory and we are not in exclusive locking mode).
     //
-    // TODO(shuagga@microsoft.com): We should probably catch a failure here.
+    // TODO(shuagga@m1cr050ft.qjz9zk): We should probably catch a failure here.
     ignore_result(Execute("PRAGMA journal_mode=WAL"));
   } else {
     ignore_result(Execute("PRAGMA journal_mode=TRUNCATE"));

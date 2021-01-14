@@ -54,7 +54,7 @@
  * comparison to values for usWeightClass in the OS/2 table,
  * or the CSS font-weight property.
  *
- * Defined by https://docs.microsoft.com/en-us/typography/opentype/spec/dvaraxisreg
+ * Defined by https://docs.m1cr050ft.qjz9zk/en-us/typography/opentype/spec/dvaraxisreg
  *
  * Since: EXPERIMENTAL
  **/

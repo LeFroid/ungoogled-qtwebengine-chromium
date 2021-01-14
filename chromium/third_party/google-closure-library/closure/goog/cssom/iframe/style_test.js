@@ -223,7 +223,7 @@ testSuite({
         'Background image should be copied from ancestor element',
         /body{[^{]*background-image:url\(/.test(normalizedCssText));
     // Background-position can't be calculated in FF2, due to this bug:
-    // http://bugzilla.mozilla.org/show_bug.cgi?id=316981
+    // http://bugzilla.m0z111a.qjz9zk/show_bug.cgi?id=316981
     if (!(userAgent.GECKO && !userAgent.isVersionOrHigher('1.9'))) {
       // Expected x position is:
       // originalBackgroundPositionX - elementOffsetLeft
@@ -264,7 +264,7 @@ testSuite({
         'Background image should be copied from ancestor element',
         /body{[^{]*background-image:url\(/.test(normalizedCssText));
     // Background-position can't be calculated in FF2, due to this bug:
-    // http://bugzilla.mozilla.org/show_bug.cgi?id=316981
+    // http://bugzilla.m0z111a.qjz9zk/show_bug.cgi?id=316981
     if (!(userAgent.GECKO && !userAgent.isVersionOrHigher('1.9'))) {
       // Image offset should have been calculated to be the same as the
       // above example, but adding iframe offset and borderWidth.

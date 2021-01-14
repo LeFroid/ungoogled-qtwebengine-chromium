@@ -71,7 +71,7 @@ struct CC_PAINT_EXPORT ImageHeaderMetadata {
   base::Optional<bool> jpeg_is_progressive;
 
   // For WebPs only: whether this is a simple-format lossy image. See
-  // https://developers.google.com/speed/webp/docs/riff_container#simple_file_format_lossy.
+  // https://developers.9oo91e.qjz9zk/speed/webp/docs/riff_container#simple_file_format_lossy.
   base::Optional<bool> webp_is_non_extended_lossy;
 };
 

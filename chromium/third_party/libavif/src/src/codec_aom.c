@@ -393,7 +393,7 @@ static avifResult aomCodecEncodeImage(avifCodec * codec,
             //
             // Context:
             //   * https://github.com/AOMediaCodec/libavif/issues/49
-            //   * https://bugs.chromium.org/p/aomedia/issues/detail?id=2587
+            //   * https://bugs.ch40m1um.qjz9zk/p/aomedia/issues/detail?id=2587
             //
             // Continued bug tracking here:
             //   * https://github.com/AOMediaCodec/libavif/issues/56
@@ -447,7 +447,7 @@ static avifResult aomCodecEncodeImage(avifCodec * codec,
             // master and applejack branches. This ensures that the next version *after* 2.0.0 will
             // have the fix, and we must avoid cfg.monochrome until then.
             //
-            // Bugfix Change-Id: https://aomedia-review.googlesource.com/q/I26a39791f820b4d4e1d63ff7141f594c3c7181f5
+            // Bugfix Change-Id: https://aomedia-review.9oo91esource.qjz9zk/q/I26a39791f820b4d4e1d63ff7141f594c3c7181f5
 
             if (alpha || (image->yuvFormat == AVIF_PIXEL_FORMAT_YUV400)) {
                 codec->internal->monochromeEnabled = AVIF_TRUE;

@@ -9,9 +9,9 @@ This file is used to generate a comprehensive list of History histograms
 along with a detailed description for each histogram.
 
 For best practices on writing histogram descriptions, see
-https://chromium.googlesource.com/chromium/src.git/+/HEAD/tools/metrics/histograms/README.md
+https://chromium.9oo91esource.qjz9zk/chromium/src.git/+/HEAD/tools/metrics/histograms/README.md
 
-Please send CLs to chromium-metrics-reviews@google.com rather than to specific
+Please send CLs to chromium-metrics-reviews@9oo91e.qjz9zk rather than to specific
 individuals. These CLs will be automatically reassigned to a reviewer within
 about 5 minutes. This approach helps the metrics team to load-balance incoming
 reviews. Googlers can read more about this at go/gwsq-gerrit.
@@ -23,8 +23,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="History.AttemptedToFixProfileError" units="units"
     expires_after="M77">
-  <owner>sky@chromium.org</owner>
-  <owner>sdefresne@chromium.org</owner>
+  <owner>sky@ch40m1um.qjz9zk</owner>
+  <owner>sdefresne@ch40m1um.qjz9zk</owner>
   <summary>
     Logged whenever history database initialization fails. The frequency of
     logging will tell you the total failure rate. True indicate that we think
@@ -41,8 +41,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
     units="ms" expires_after="never">
 <!-- expires-never: tracked as an important privacy metric. -->
 
-  <owner>dullweber@chromium.org</owner>
-  <owner>msramek@chromium.org</owner>
+  <owner>dullweber@ch40m1um.qjz9zk</owner>
+  <owner>msramek@ch40m1um.qjz9zk</owner>
   <summary>
     The time that passed while performing a browsing data deletion with an
     origin filter. The deletion might be for all time or specific time range.
@@ -53,8 +53,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
     expires_after="never">
 <!-- expires-never: tracked as an important privacy metric. -->
 
-  <owner>dullweber@chromium.org</owner>
-  <owner>msramek@chromium.org</owner>
+  <owner>dullweber@ch40m1um.qjz9zk</owner>
+  <owner>msramek@ch40m1um.qjz9zk</owner>
   <summary>
     The time that passed while performing a full browsing data deletion.
   </summary>
@@ -64,8 +64,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
     expires_after="never">
 <!-- expires-never: tracked as an important privacy metric. -->
 
-  <owner>dullweber@chromium.org</owner>
-  <owner>msramek@chromium.org</owner>
+  <owner>dullweber@ch40m1um.qjz9zk</owner>
+  <owner>msramek@ch40m1um.qjz9zk</owner>
   <summary>
     The time that passed while performing a browsing data deletion for a set of
     origins.
@@ -76,8 +76,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
     enum="BrowsingDataRemoverTasks" expires_after="never">
 <!-- expires-never: tracked as an important privacy metric. -->
 
-  <owner>dullweber@chromium.org</owner>
-  <owner>msramek@chromium.org</owner>
+  <owner>dullweber@ch40m1um.qjz9zk</owner>
+  <owner>msramek@ch40m1um.qjz9zk</owner>
   <summary>
     Record tasks from BrowsingDataRemoverImpl that took more than 180s to
     finish.
@@ -88,8 +88,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
     enum="ChromeBrowsingDataRemoverTasks" expires_after="never">
 <!-- expires-never: tracked as an important privacy metric. -->
 
-  <owner>dullweber@chromium.org</owner>
-  <owner>msramek@chromium.org</owner>
+  <owner>dullweber@ch40m1um.qjz9zk</owner>
+  <owner>msramek@ch40m1um.qjz9zk</owner>
   <summary>
     Record tasks from ChromeBrowsingDataRemoverDelegate that took more than 180s
     to finish.
@@ -101,8 +101,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
     enum="StoragePartitionRemoverTasks" expires_after="never">
 <!-- expires-never: tracked as an important privacy metric. -->
 
-  <owner>dullweber@chromium.org</owner>
-  <owner>msramek@chromium.org</owner>
+  <owner>dullweber@ch40m1um.qjz9zk</owner>
+  <owner>msramek@ch40m1um.qjz9zk</owner>
   <summary>
     Record tasks from StoragePartition that took more than 180s to finish.
   </summary>
@@ -112,8 +112,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
     units="ms" expires_after="never">
 <!-- expires-never: tracked as an important privacy metric. -->
 
-  <owner>dullweber@chromium.org</owner>
-  <owner>msramek@chromium.org</owner>
+  <owner>dullweber@ch40m1um.qjz9zk</owner>
+  <owner>msramek@ch40m1um.qjz9zk</owner>
   <summary>
     The time that passed while performing a browsing data deletion for a
     restricted amount of time (e.g. &quot;Last hour&quot;) without an origin
@@ -123,8 +123,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="History.ClearBrowsingData.FailedTasksChrome"
     enum="ChromeBrowsingDataRemoverTasks" expires_after="2021-02-01">
-  <owner>dullweber@chromium.org</owner>
-  <owner>msramek@chromium.org</owner>
+  <owner>dullweber@ch40m1um.qjz9zk</owner>
+  <owner>msramek@ch40m1um.qjz9zk</owner>
   <summary>
     Records tasks from ChromeBrowsingDataRemoverDelegate that did not complete
     successfully, i.e. where some data that was supposed to be deleted was left
@@ -135,7 +135,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram
     name="History.ClearBrowsingData.HistoryNoticeShownInFooterWhenUpdated"
     enum="BooleanShown" expires_after="M81">
-  <owner>msramek@chromium.org</owner>
+  <owner>msramek@ch40m1um.qjz9zk</owner>
   <summary>
     Whether a notice about other forms of browsing history was shown in the
     footer of the Clear Browsing Data dialog. This is recorded every time the
@@ -145,8 +145,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="History.ClearBrowsingData.ImportantDeselectedNum"
     units="units" expires_after="M95">
-  <owner>dmurph@chromium.org</owner>
-  <owner>chrome-owp-storage@google.com</owner>
+  <owner>dmurph@ch40m1um.qjz9zk</owner>
+  <owner>chrome-owp-storage@9oo91e.qjz9zk</owner>
   <summary>
     Recorded when the user presses the 'clear' button when presented with the
     list of important sites they might want to exclude from clearing browsing
@@ -157,8 +157,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="History.ClearBrowsingData.ImportantDeselectedPercent"
     units="%/5" expires_after="M95">
-  <owner>dmurph@chromium.org</owner>
-  <owner>chrome-owp-storage@google.com</owner>
+  <owner>dmurph@ch40m1um.qjz9zk</owner>
+  <owner>chrome-owp-storage@9oo91e.qjz9zk</owner>
   <summary>
     Recorded when the user presses the 'clear' button when presented with the
     list of important sites they might want to exclude from clearing browsing
@@ -170,7 +170,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="History.ClearBrowsingData.ImportantDialogShown"
     enum="BooleanShown" expires_after="M95">
-  <owner>dmurph@chromium.org</owner>
+  <owner>dmurph@ch40m1um.qjz9zk</owner>
   <summary>
     Recorded when the user presses the 'clear' button in the clear browsing
     dialog. We record 'true' if the important sites dialog is shown.
@@ -179,8 +179,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="History.ClearBrowsingData.InstalledAppExcluded"
     units="Boolean" expires_after="2021-03-12">
-  <owner>jarrydg@chromium.org</owner>
-  <owner>chrome-owp-storage@google.com</owner>
+  <owner>jarrydg@ch40m1um.qjz9zk</owner>
+  <owner>chrome-owp-storage@9oo91e.qjz9zk</owner>
   <summary>
     Recorded when the user presses the 'clear' button when presented with the
     list of installed apps they might want to exclude from clearing browsing
@@ -192,8 +192,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="History.ClearBrowsingData.InstalledDeselectedNum"
     units="units" expires_after="2021-03-12">
-  <owner>jarrydg@chromium.org</owner>
-  <owner>chrome-owp-storage@google.com</owner>
+  <owner>jarrydg@ch40m1um.qjz9zk</owner>
+  <owner>chrome-owp-storage@9oo91e.qjz9zk</owner>
   <summary>
     Recorded when the user presses the 'clear' button when presented with the
     list of installed apps they might want to exclude from clearing browsing
@@ -204,8 +204,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="History.ClearBrowsingData.InstalledDeselectedPercent"
     units="%" expires_after="2021-03-12">
-  <owner>jarrydg@chromium.org</owner>
-  <owner>chrome-owp-storage@google.com</owner>
+  <owner>jarrydg@ch40m1um.qjz9zk</owner>
+  <owner>chrome-owp-storage@9oo91e.qjz9zk</owner>
   <summary>
     Recorded when the user presses the 'clear' button when presented with the
     list of installed apps they might want to exclude from clearing browsing
@@ -216,8 +216,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="History.ClearBrowsingData.NumImportant" units="units"
     expires_after="M95">
-  <owner>dmurph@chromium.org</owner>
-  <owner>chrome-owp-storage@google.com</owner>
+  <owner>dmurph@ch40m1um.qjz9zk</owner>
+  <owner>chrome-owp-storage@9oo91e.qjz9zk</owner>
   <summary>
     Recorded when we successfuly fetched important sites in the clear browsing
     data screen. This is the number of sites that we think are important to the
@@ -227,8 +227,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="History.ClearBrowsingData.NumInstalled" units="units"
     expires_after="M95">
-  <owner>jarrydg@chromium.org</owner>
-  <owner>chrome-owp-storage@google.com</owner>
+  <owner>jarrydg@ch40m1um.qjz9zk</owner>
+  <owner>chrome-owp-storage@9oo91e.qjz9zk</owner>
   <summary>
     Recorded when we successfuly fetched installed apps in the clear browsing
     data screen. This is the number of apps that we think are important to the
@@ -239,7 +239,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 <histogram
     name="History.ClearBrowsingData.PasswordsDeletion.AdditionalDatatypesCount"
     units="units" expires_after="M85">
-  <owner>msramek@chromium.org</owner>
+  <owner>msramek@ch40m1um.qjz9zk</owner>
   <summary>
     Recorded when the user deletes their passwords in the ClearBrowsingData
     dialog. Counts how many other data types were selected for deletion.
@@ -248,7 +248,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="History.ClearBrowsingData.ShownHistoryNoticeAfterClearing"
     enum="BooleanShown" expires_after="M81">
-  <owner>msramek@chromium.org</owner>
+  <owner>msramek@ch40m1um.qjz9zk</owner>
   <summary>
     Whether a dialog with a notice about other forms of browsing history was
     shown after the user deleted data from the Clear Browsing Data dialog.
@@ -259,8 +259,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
     expires_after="never">
 <!-- expires-never: tracked as an important privacy metric. -->
 
-  <owner>dullweber@chromium.org</owner>
-  <owner>msramek@chromium.org</owner>
+  <owner>dullweber@ch40m1um.qjz9zk</owner>
+  <owner>msramek@ch40m1um.qjz9zk</owner>
   <summary>
     The number of tasks that are in the task queue when the BrowsingDataRemover
     is destroyed.
@@ -269,8 +269,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="History.ClearBrowsingData.TimeSpentInDialog" units="ms"
     expires_after="M85">
-  <owner>dullweber@chromium.org</owner>
-  <owner>msramek@chromium.org</owner>
+  <owner>dullweber@ch40m1um.qjz9zk</owner>
+  <owner>msramek@ch40m1um.qjz9zk</owner>
   <summary>
     Time spent in Clear Browsing Data dialog. From opening the dialog until data
     is cleared. This does not record users who exit the dialog without clearing.
@@ -281,7 +281,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
     enum="CookieOrCacheDeletion" expires_after="never">
 <!-- expires-never: tracked as an important privacy metric. -->
 
-  <owner>msramek@chromium.org</owner>
+  <owner>msramek@ch40m1um.qjz9zk</owner>
   <summary>
     Recorded when the user deletes their browsing data. Shows whether cookies
     and/or cache were among the selected data types.
@@ -292,7 +292,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
     enum="CookieOrCacheDeletion" expires_after="never">
 <!-- expires-never: tracked as an important privacy metric. -->
 
-  <owner>msramek@chromium.org</owner>
+  <owner>msramek@ch40m1um.qjz9zk</owner>
   <summary>
     Recorded when the user deletes their browsing data manually from the
     ClearBrowsingData dialog. Shows whether cookies and/or cache were among the
@@ -302,8 +302,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="History.ClearBrowsingData.UserDeletedFromTab"
     enum="ClearBrowsingDataTab" expires_after="2021-03-28">
-  <owner>dullweber@chromium.org</owner>
-  <owner>msramek@chromium.org</owner>
+  <owner>dullweber@ch40m1um.qjz9zk</owner>
+  <owner>msramek@ch40m1um.qjz9zk</owner>
   <summary>
     Recorded when the user deletes their browsing data. Shows which tab was used
     to perform the deletion.
@@ -312,7 +312,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="History.DatabaseAdvancedMetricsTime" units="ms"
     expires_after="M77">
-  <owner>shess@chromium.org</owner>
+  <owner>shess@ch40m1um.qjz9zk</owner>
   <summary>
     Time spent on advanced History DB metrics calculation (weekly and monthly
     URL, host, and category counts). Advanced metrics are logged on
@@ -322,7 +322,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="History.DatabaseBasicMetricsTime" units="ms"
     expires_after="M77">
-  <owner>shess@chromium.org</owner>
+  <owner>shess@ch40m1um.qjz9zk</owner>
   <summary>
     Time spent on basic History DB metrics calculation (file size and table
     counts). Basic metrics are logged on initialization of the History DB on 1%
@@ -331,7 +331,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 </histogram>
 
 <histogram name="History.DatabaseFileMB" units="MB" expires_after="M85">
-  <owner>shess@chromium.org</owner>
+  <owner>shess@ch40m1um.qjz9zk</owner>
   <summary>
     Size of History DB file. Duplicate of Profile.HistorySize and
     Sqlite.SizeKB.History. Logged on initialization of the History DB on 1% of
@@ -341,7 +341,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="History.DatabaseMonthlyHostCountTime" units="ms"
     expires_after="2020-03-01">
-  <owner>dimich@chromium.org</owner>
+  <owner>dimich@ch40m1um.qjz9zk</owner>
   <summary>
     Time spent on computing the monthly count of hosts visited. Reported every
     time computation is performed, which in turn is done approximately weekly.
@@ -360,9 +360,9 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="History.DomainCount1Day" units="domains"
     expires_after="2021-01-31">
-  <owner>mpearson@chromium.org</owner>
-  <owner>mjzhang@chromium.org</owner>
-  <owner>chrome-analysis-team@google.com</owner>
+  <owner>mpearson@ch40m1um.qjz9zk</owner>
+  <owner>mjzhang@ch40m1um.qjz9zk</owner>
+  <owner>chrome-analysis-team@9oo91e.qjz9zk</owner>
   <summary>
     Number of unique domains visited by the user within a calendar day in user's
     local timezone. For each profile, reported at profile open (which usually
@@ -385,9 +385,9 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="History.DomainCount28Day" units="domains"
     expires_after="2021-01-31">
-  <owner>mpearson@chromium.org</owner>
-  <owner>mjzhang@chromium.org</owner>
-  <owner>chrome-analysis-team@google.com</owner>
+  <owner>mpearson@ch40m1um.qjz9zk</owner>
+  <owner>mjzhang@ch40m1um.qjz9zk</owner>
+  <owner>chrome-analysis-team@9oo91e.qjz9zk</owner>
   <summary>
     Number of unique domains visited by the user within a 28 calendar day period
     in user's local timezone. For each profile, reported at profile open (which
@@ -411,9 +411,9 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="History.DomainCount7Day" units="domains"
     expires_after="2021-01-31">
-  <owner>mpearson@chromium.org</owner>
-  <owner>mjzhang@chromium.org</owner>
-  <owner>chrome-analysis-team@google.com</owner>
+  <owner>mpearson@ch40m1um.qjz9zk</owner>
+  <owner>mjzhang@ch40m1um.qjz9zk</owner>
+  <owner>chrome-analysis-team@9oo91e.qjz9zk</owner>
   <summary>
     Number of unique domains visited by the user within a 7 calendar day period
     in user's local timezone. For each profile, reported at profile open (which
@@ -437,9 +437,9 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="History.DomainCountQueryTime" units="ms"
     expires_after="2021-01-31">
-  <owner>mpearson@chromium.org</owner>
-  <owner>mjzhang@chromium.org</owner>
-  <owner>chrome-analysis-team@google.com</owner>
+  <owner>mpearson@ch40m1um.qjz9zk</owner>
+  <owner>mjzhang@ch40m1um.qjz9zk</owner>
+  <owner>chrome-analysis-team@9oo91e.qjz9zk</owner>
   <summary>
     Time spent on a scheduled computation task of domain visit counts. Each such
     task computes a number of (at least 1 and up to 7) sets of domain counts,
@@ -453,7 +453,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="History.ExpireVisits.GetRedirectsDurationPercentage" units="%"
     expires_after="M90">
-  <owner>calamity@chromium.org</owner>
+  <owner>calamity@ch40m1um.qjz9zk</owner>
   <summary>
     The percentage of time taken in ExpireHistoryBackend::ExpireVisits for
     calculating the redirect parent.
@@ -462,7 +462,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="History.ExpireVisits.TotalDuration" units="ms"
     expires_after="M90">
-  <owner>calamity@chromium.org</owner>
+  <owner>calamity@ch40m1um.qjz9zk</owner>
   <summary>
     The time taken to expire a list of visits. This is not scaled to the number
     of visits deleted, but gives an idea of how long a single request to
@@ -472,7 +472,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="History.FaviconDatabaseAdvancedMetricsTime" units="ticks"
     expires_after="M77">
-  <owner>rogerm@chromium.org</owner>
+  <owner>rogerm@ch40m1um.qjz9zk</owner>
   <summary>
     The wall-clock time taken to gather favicon database metrics. Metrics are
     logged on initialization of the Favicon DB on 1% of starts.
@@ -480,7 +480,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 </histogram>
 
 <histogram name="History.FaviconDatabaseSizeMB" units="MB" expires_after="M77">
-  <owner>rogerm@chromium.org</owner>
+  <owner>rogerm@ch40m1um.qjz9zk</owner>
   <summary>
     Size of the Favicons database in MB. This is calculated as the number of
     pages consumed by the database multiplied by the page size. Logged on
@@ -490,7 +490,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="History.FirstSetTopSitesDeltaSize" units="units"
     expires_after="M77">
-  <owner>yiyaoliu@chromium.org</owner>
+  <owner>yiyaoliu@ch40m1um.qjz9zk</owner>
   <summary>
     The count of differences between cached top sites and up-to-date top sites
     when function TopSitesImpl::SetTopSites is firstly called at startup.
@@ -498,7 +498,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 </histogram>
 
 <histogram name="History.FirstUpdateTime" units="ms" expires_after="2020-02-02">
-  <owner>yiyaoliu@chromium.org</owner>
+  <owner>yiyaoliu@ch40m1um.qjz9zk</owner>
   <summary>
     The amount of time for function
     history::TopSitesBackend::UpdateTopSitesOnDBThread to execute when this
@@ -515,7 +515,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="History.HistoryPageView" enum="HistoryPageView"
     expires_after="2021-03-01">
-  <owner>calamity@chromium.org</owner>
+  <owner>calamity@ch40m1um.qjz9zk</owner>
   <owner>src/chrome/browser/resources/history/OWNERS</owner>
   <summary>
     The page of the History page shown to the user. Logged each time the user
@@ -525,8 +525,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="History.InitializationFailureStep" enum="HistoryInitStep"
     expires_after="M77">
-  <owner>sky@chromium.org</owner>
-  <owner>sdefresne@chromium.org</owner>
+  <owner>sky@ch40m1um.qjz9zk</owner>
+  <owner>sdefresne@ch40m1um.qjz9zk</owner>
   <summary>
     The phase of history initialization that failed. This histogram is only
     logged on database initialization failure.
@@ -542,8 +542,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="History.InMemoryDBItemCount" units="units"
     expires_after="2021-07-30">
-  <owner>sky@chromium.org</owner>
-  <owner>mpearson@chromium.org</owner>
+  <owner>sky@ch40m1um.qjz9zk</owner>
+  <owner>mpearson@ch40m1um.qjz9zk</owner>
   <summary>
     The number of typed URLs in the history database that are read into the
     &quot;in memory&quot; history database. This in memory copy of the typed
@@ -555,8 +555,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="History.InMemoryDBKeywordTermsCount" units="units"
     expires_after="2020-02-16">
-  <owner>sky@chromium.org</owner>
-  <owner>mpearson@chromium.org</owner>
+  <owner>sky@ch40m1um.qjz9zk</owner>
+  <owner>mpearson@ch40m1um.qjz9zk</owner>
   <summary>
     Number of items in in-memory keyword_search_terms table. Recorded on profile
     open.
@@ -565,8 +565,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="History.InMemoryDBKeywordURLItemCount" units="units"
     expires_after="2020-02-16">
-  <owner>sky@chromium.org</owner>
-  <owner>mpearson@chromium.org</owner>
+  <owner>sky@ch40m1um.qjz9zk</owner>
+  <owner>mpearson@ch40m1um.qjz9zk</owner>
   <summary>
     Number of items in in-memory urls table. Recorded on profile open.
   </summary>
@@ -574,8 +574,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="History.InMemoryDBPopulate" units="units"
     expires_after="2021-07-30">
-  <owner>sky@chromium.org</owner>
-  <owner>mpearson@chromium.org</owner>
+  <owner>sky@ch40m1um.qjz9zk</owner>
+  <owner>mpearson@ch40m1um.qjz9zk</owner>
   <summary>
     The time it takes to read the typed URLs from the main history database into
     the &quot;in memory&quot; history database. This in memory copy of the typed
@@ -587,8 +587,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="History.InMemoryURLHistoryItems" units="units"
     expires_after="2021-08-03">
-  <owner>mpearson@chromium.org</owner>
-  <owner>chrome-omnibox-team@google.com</owner>
+  <owner>mpearson@ch40m1um.qjz9zk</owner>
+  <owner>chrome-omnibox-team@9oo91e.qjz9zk</owner>
   <summary>
     Number of history items in the in-memory url index. Recorded on profile open
     when restoring from a cache file and again shortly after profile open when
@@ -598,8 +598,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="History.InMemoryURLIndexingTime" units="ms"
     expires_after="2021-03-30">
-  <owner>mpearson@chromium.org</owner>
-  <owner>ssid@chromium.org</owner>
+  <owner>mpearson@ch40m1um.qjz9zk</owner>
+  <owner>ssid@ch40m1um.qjz9zk</owner>
   <summary>
     Time to rebuild in-memory url index from main history database. Recorded
     once shortly after profile open.
@@ -608,8 +608,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="History.MigrateFailureFromVersion" units="units"
     expires_after="M77">
-  <owner>sky@chromium.org</owner>
-  <owner>sdefresne@chromium.org</owner>
+  <owner>sky@ch40m1um.qjz9zk</owner>
+  <owner>sdefresne@ch40m1um.qjz9zk</owner>
   <summary>
     History database version from which history migration failed. If there are
     higher than normal migration failures, this histogram will indicate which
@@ -619,8 +619,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="History.MonthlyHostCount" units="hosts"
     expires_after="2021-01-31">
-  <owner>mpearson@chromium.org</owner>
-  <owner>sky@chromium.org</owner>
+  <owner>mpearson@ch40m1um.qjz9zk</owner>
+  <owner>sky@ch40m1um.qjz9zk</owner>
   <summary>
     Unique hostnames in History database urls table with last-visit times in the
     last 30 days. Metrics are logged on initialization of the History DB on 0.3%
@@ -632,8 +632,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="History.MonthlyURLCount" units="urls"
     expires_after="2021-03-28">
-  <owner>mpearson@chromium.org</owner>
-  <owner>sky@chromium.org</owner>
+  <owner>mpearson@ch40m1um.qjz9zk</owner>
+  <owner>sky@ch40m1um.qjz9zk</owner>
   <summary>
     Unique URLs in History database urls table with last-visit times in the last
     30 days. Metrics are logged on initialization of the History DB on 0.3% of
@@ -643,8 +643,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="History.MonthlyVisitCount" units="visits"
     expires_after="2021-03-28">
-  <owner>mpearson@chromium.org</owner>
-  <owner>sky@chromium.org</owner>
+  <owner>mpearson@ch40m1um.qjz9zk</owner>
+  <owner>sky@ch40m1um.qjz9zk</owner>
   <summary>
     Number of rows in History visits table with visit times in the last 30 days.
     Metrics are logged on initialization of the History DB on 1% of starts.
@@ -653,7 +653,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="History.NumFaviconBitmapsInDB" units="units"
     expires_after="M77">
-  <owner>rogerm@chromium.org</owner>
+  <owner>rogerm@ch40m1um.qjz9zk</owner>
   <summary>
     The total number of favicon bitmaps (of all sizes) cached in a user's
     Favicon database. A given favicon URL may be associated with multiple
@@ -664,18 +664,18 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="History.NumFaviconMappingsInDB" units="units"
     expires_after="M77">
-  <owner>rogerm@chromium.org</owner>
+  <owner>rogerm@ch40m1um.qjz9zk</owner>
   <summary>
-    The number of page URL (e.g., http://www.google.com) to favicon URL (e.g.,
-    http://www.google.com/favicon.ico) mappings stored in a user's Favicon
+    The number of page URL (e.g., http://www.9oo91e.qjz9zk) to favicon URL (e.g.,
+    http://www.9oo91e.qjz9zk/favicon.ico) mappings stored in a user's Favicon
     database. Logged on initialization of the Favicon DB on 1% of starts.
   </summary>
 </histogram>
 
 <histogram name="History.NumFaviconsInDB" units="units" expires_after="M77">
-  <owner>rogerm@chromium.org</owner>
+  <owner>rogerm@ch40m1um.qjz9zk</owner>
   <summary>
-    The total number of favicon URLs (e.g. http://www.google.com/favicon.ico)
+    The total number of favicon URLs (e.g. http://www.9oo91e.qjz9zk/favicon.ico)
     tracked in a user's Favicon database. This metric tracks knowledge of a
     favicon URL not whether there are cached bitmaps for that favicon URL. See
     History.NumFaviconBitmapsInDB for that. Logged on initialization of the
@@ -685,7 +685,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="History.NumLargeFaviconBitmapsInDB" units="units"
     expires_after="M77">
-  <owner>rogerm@chromium.org</owner>
+  <owner>rogerm@ch40m1um.qjz9zk</owner>
   <summary>
     The total number of large (&gt;= 64 pixels wide) favicons being tracked in a
     user's Favicon database. This is a subset of History.NumFaviconBitmapsInDB,
@@ -695,7 +695,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 </histogram>
 
 <histogram name="History.NumTouchIconsInDB" units="units" expires_after="M85">
-  <owner>rogerm@chromium.org</owner>
+  <owner>rogerm@ch40m1um.qjz9zk</owner>
   <summary>
     The total number of touch icons being tracked in a user's Favicon database.
     This is a subset of History.NumFaviconsInDB, which includes all icon types
@@ -705,7 +705,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="History.QueryMostVisitedURLsTime" units="ms"
     expires_after="M81">
-  <owner>chengx@chromium.org</owner>
+  <owner>chengx@ch40m1um.qjz9zk</owner>
   <summary>
     The amount of time for function HistoryBackend::QueryMostVisitedURLs to
     execute. Excludes the case where local HistoryDatabase db_ is unavailable,
@@ -714,8 +714,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 </histogram>
 
 <histogram name="History.ResultsRenderedTime" units="ms" expires_after="M90">
-  <owner>calamity@chromium.org</owner>
-  <owner>dbeam@chromium.org</owner>
+  <owner>calamity@ch40m1um.qjz9zk</owner>
+  <owner>dbeam@ch40m1um.qjz9zk</owner>
   <summary>
     Records the time taken to load the history Web UI and render (at least) a
     screen full of items. This is roughly equivalent to 'time to first
@@ -725,7 +725,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="History.ShownHeaderAboutOtherFormsOfBrowsingHistory"
     enum="BooleanShown" expires_after="M77">
-  <owner>msramek@chromium.org</owner>
+  <owner>msramek@ch40m1um.qjz9zk</owner>
   <summary>
     Whether the notice about other forms of browsing history was shown in the
     header of the History page when the header was displayed. The header is
@@ -766,8 +766,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="History.URLTableCount" units="units"
     expires_after="2021-02-21">
-  <owner>mpearson@chromium.org</owner>
-  <owner>sky@chromium.org</owner>
+  <owner>mpearson@ch40m1um.qjz9zk</owner>
+  <owner>sky@ch40m1um.qjz9zk</owner>
   <summary>
     Number of rows in urls table in History DB. Metrics are logged on
     initialization of the History DB on 1% of starts.
@@ -776,8 +776,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="History.VisitTableCount" units="units"
     expires_after="2020-11-30">
-  <owner>mpearson@chromium.org</owner>
-  <owner>sky@chromium.org</owner>
+  <owner>mpearson@ch40m1um.qjz9zk</owner>
+  <owner>sky@ch40m1um.qjz9zk</owner>
   <summary>
     Number of rows in visits table in History DB. Metrics are logged on
     initialization of the History DB on 1% of starts.
@@ -786,8 +786,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="History.WeeklyHostCount" units="units"
     expires_after="2021-01-31">
-  <owner>mpearson@chromium.org</owner>
-  <owner>sky@chromium.org</owner>
+  <owner>mpearson@ch40m1um.qjz9zk</owner>
+  <owner>sky@ch40m1um.qjz9zk</owner>
   <summary>
     Unique hostnames in History database urls table with last-visit times in the
     last 7 days. Metrics are logged on initialization of the History DB on 0.3%
@@ -797,8 +797,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="History.WeeklyURLCount" units="units"
     expires_after="2021-02-21">
-  <owner>mpearson@chromium.org</owner>
-  <owner>sky@chromium.org</owner>
+  <owner>mpearson@ch40m1um.qjz9zk</owner>
+  <owner>sky@ch40m1um.qjz9zk</owner>
   <summary>
     Unique URLs in History database urls table with last-visit times in the last
     7 days. Metrics are logged on initialization of the History DB on 0.3% of
@@ -808,8 +808,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="History.WeeklyVisitCount" units="units"
     expires_after="2020-11-30">
-  <owner>mpearson@chromium.org</owner>
-  <owner>sky@chromium.org</owner>
+  <owner>mpearson@ch40m1um.qjz9zk</owner>
+  <owner>sky@ch40m1um.qjz9zk</owner>
   <summary>
     Number of rows in History visits table with visit times in the last 7 days.
     Metrics are logged on initialization of the History DB on 1% of starts.
@@ -818,8 +818,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="HistoryPage.ClickAgeInDays" units="units"
     expires_after="2020-02-29">
-  <owner>msramek@chromium.org</owner>
-  <owner>dullweber@chromium.org</owner>
+  <owner>msramek@ch40m1um.qjz9zk</owner>
+  <owner>dullweber@ch40m1um.qjz9zk</owner>
   <summary>
     Recorded each time an entry on the history page is clicked. Measures the age
     in days (defined as 24 hour periods, not using local time) of that entry.
@@ -829,8 +829,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="HistoryPage.ClickAgeInDaysSubset" units="units"
     expires_after="2020-02-29">
-  <owner>msramek@chromium.org</owner>
-  <owner>dullweber@chromium.org</owner>
+  <owner>msramek@ch40m1um.qjz9zk</owner>
+  <owner>dullweber@ch40m1um.qjz9zk</owner>
   <summary>
     Subset of the HistoryPage.ClickAgeInDays histogram, with better bucket
     resolution at lower numbers.
@@ -839,7 +839,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="HistoryPage.ClickPosition" units="units"
     expires_after="2020-02-23">
-  <owner>rpop@google.com</owner>
+  <owner>rpop@9oo91e.qjz9zk</owner>
   <summary>
     Number of entries that the clicked entry is older than in History page. Last
     bucket is any entry of that value or higher.
@@ -848,7 +848,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="HistoryPage.ClickPositionSubset" units="units"
     expires_after="M81">
-  <owner>rpop@google.com</owner>
+  <owner>rpop@9oo91e.qjz9zk</owner>
   <summary>
     Subset of the Click Position histogram. Contains only the first smaller
     subset of entries on the page. Number of entries that the clicked entry is
@@ -860,8 +860,8 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
     expires_after="never">
 <!-- expires-never: part of top-line metric (internal: go/chrome-browser-nsm) -->
 
-  <owner>rpop@google.com</owner>
-  <owner>chrome-analysis-team@google.com</owner>
+  <owner>rpop@9oo91e.qjz9zk</owner>
+  <owner>chrome-analysis-team@9oo91e.qjz9zk</owner>
   <summary>
     Histogram for usage of the section in the history page that allows the user
     to access tabs from other devices.
@@ -875,7 +875,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="HistoryPage.OtherDevicesMenu.OpenAll.TabsPerWindow"
     units="units" expires_after="2020-07-01">
-  <owner>markchang@chromium.org</owner>
+  <owner>markchang@ch40m1um.qjz9zk</owner>
   <summary>
     The number of tabs created in each window when a user executes &quot;Open
     all&quot; menu item from a session menu in the &quot;Tabs from other
@@ -885,7 +885,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="HistoryPage.OtherDevicesMenu.OpenAll.TotalTabs" units="units"
     expires_after="2020-07-01">
-  <owner>markchang@chromium.org</owner>
+  <owner>markchang@ch40m1um.qjz9zk</owner>
   <summary>
     Total number of tabs opened when a user executes &quot;Open all&quot; menu
     item from a session menu in the &quot;Tabs from other devices&quot; section
@@ -895,7 +895,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="HistoryPage.OtherDevicesMenu.OpenAll.TotalWindows"
     units="units" expires_after="2020-07-01">
-  <owner>markchang@chromium.org</owner>
+  <owner>markchang@ch40m1um.qjz9zk</owner>
   <summary>
     Total number of windows opened when a user executes &quot;Open all&quot;
     menu item from a session menu in the &quot;Tabs from other devices&quot;
@@ -905,7 +905,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="HistoryPage.RemoveEntryPosition" units="units"
     expires_after="M81">
-  <owner>rpop@google.com</owner>
+  <owner>rpop@9oo91e.qjz9zk</owner>
   <summary>
     Number of entries that the deleted entry is older than in History page. Last
     bucket is any entry of that value or higher. Confirmed removal is not
@@ -915,7 +915,7 @@ reviews. Googlers can read more about this at go/gwsq-gerrit.
 
 <histogram name="HistoryPage.RemoveEntryPositionSubset" units="units"
     expires_after="M81">
-  <owner>rpop@google.com</owner>
+  <owner>rpop@9oo91e.qjz9zk</owner>
   <summary>
     Subset of Remove Entry Position histogram. Contains only the first smaller
     subset of entries on the page. Number of entries that the deleted entry is

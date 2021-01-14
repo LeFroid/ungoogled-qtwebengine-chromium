@@ -332,7 +332,7 @@ bool SimpleFontData::TrySetNormalizedTypoAscentAndDescent(float ascent,
   // While the OpenType specification recommends the sum of sTypoAscender and
   // sTypoDescender to equal 1em, most fonts do not follow. Most Latin fonts
   // set to smaller than 1em, and many tall scripts set to larger than 1em.
-  // https://www.microsoft.com/typography/otspec/recom.htm#OS2
+  // https://www.m1cr050ft.qjz9zk/typography/otspec/recom.htm#OS2
   // To ensure the sum of ascent and descent is the "em height", normalize by
   // keeping the ratio of sTypoAscender:sTypoDescender.
   // This matches to how Gecko computes "em height":

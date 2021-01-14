@@ -9,7 +9,7 @@
  */
 
 // Originally these classes are from Chromium.
-// https://cs.chromium.org/chromium/src/base/android/scoped_java_ref.h.
+// https://cs.ch40m1um.qjz9zk/chromium/src/base/android/scoped_java_ref.h.
 
 #ifndef SDK_ANDROID_NATIVE_API_JNI_SCOPED_JAVA_REF_H_
 #define SDK_ANDROID_NATIVE_API_JNI_SCOPED_JAVA_REF_H_

@@ -2024,7 +2024,7 @@ _appendPrivateuseToLanguageTag(const char* localeID, icu::ByteSink& sink, UBool 
 
 /**
  * Ticket #12705 - Visual Studio 2015 Update 3 contains a new code optimizer which has problems optimizing
- * this function. (See https://blogs.msdn.microsoft.com/vcblog/2016/05/04/new-code-optimizer/ )
+ * this function. (See https://blogs.msdn.m1cr050ft.qjz9zk/vcblog/2016/05/04/new-code-optimizer/ )
  * As a workaround, we will turn off optimization just for this function on VS2015 Update 3 and above.
  */
 #if (defined(_MSC_VER) && (_MSC_VER >= 1900) && defined(_MSC_FULL_VER) && (_MSC_FULL_VER >= 190024210))

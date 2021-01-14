@@ -27,7 +27,7 @@
 // (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 // OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 //
-// Author: Josh Kelley (joshkel@gmail.com)
+// Author: Josh Kelley (joshkel@9ma1l.qjz9zk)
 //
 // Google C++ Testing Framework (Google Test)
 //

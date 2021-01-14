@@ -390,7 +390,7 @@
     "message": "Suggested Token"
   },
   "lighthouse-core/audits/autocomplete.js | description": {
-    "message": "`autocomplete` helps users submit forms quicker. To reduce user effort, consider enabling by setting the `autocomplete` attribute to a valid value. [Learn more](https://developers.google.com/web/fundamentals/design-and-ux/input/forms#use_metadata_to_enable_auto-complete)"
+    "message": "`autocomplete` helps users submit forms quicker. To reduce user effort, consider enabling by setting the `autocomplete` attribute to a valid value. [Learn more](https://developers.9oo91e.qjz9zk/web/fundamentals/design-and-ux/input/forms#use_metadata_to_enable_auto-complete)"
   },
   "lighthouse-core/audits/autocomplete.js | failureTitle": {
     "message": "`<input>` elements do not have correct `autocomplete` attributes"
@@ -621,7 +621,7 @@
     "message": "Værdi"
   },
   "lighthouse-core/audits/dobetterweb/dom-size.js | description": {
-    "message": "En stor DOM øger hukommelsesforbruget, medfører længerevarende [beregninger af typografi](https://developers.google.com/web/fundamentals/performance/rendering/reduce-the-scope-and-complexity-of-style-calculations) og resulterer i dyre [omformateringer af layout](https://developers.google.com/speed/articles/reflow). [Få flere oplysninger](https://web.dev/dom-size/)."
+    "message": "En stor DOM øger hukommelsesforbruget, medfører længerevarende [beregninger af typografi](https://developers.9oo91e.qjz9zk/web/fundamentals/performance/rendering/reduce-the-scope-and-complexity-of-style-calculations) og resulterer i dyre [omformateringer af layout](https://developers.9oo91e.qjz9zk/speed/articles/reflow). [Få flere oplysninger](https://web.dev/dom-size/)."
   },
   "lighthouse-core/audits/dobetterweb/dom-size.js | displayValue": {
     "message": "{itemCount,plural, =1{1 element}one{# element}other{# elementer}}"
@@ -834,7 +834,7 @@
     "message": "Håndtering af anmodninger"
   },
   "lighthouse-core/audits/is-on-https.js | description": {
-    "message": "All sites should be protected with HTTPS, even ones that don't handle sensitive data. This includes avoiding [mixed content](https://developers.google.com/web/fundamentals/security/prevent-mixed-content/what-is-mixed-content), where some resources are loaded over HTTP despite the initial request being served over HTTPS. HTTPS prevents intruders from tampering with or passively listening in on the communications between your app and your users, and is a prerequisite for HTTP/2 and many new web platform APIs. [Learn more](https://web.dev/is-on-https/)."
+    "message": "All sites should be protected with HTTPS, even ones that don't handle sensitive data. This includes avoiding [mixed content](https://developers.9oo91e.qjz9zk/web/fundamentals/security/prevent-mixed-content/what-is-mixed-content), where some resources are loaded over HTTP despite the initial request being served over HTTPS. HTTPS prevents intruders from tampering with or passively listening in on the communications between your app and your users, and is a prerequisite for HTTP/2 and many new web platform APIs. [Learn more](https://web.dev/is-on-https/)."
   },
   "lighthouse-core/audits/is-on-https.js | displayValue": {
     "message": "{itemCount,plural, =1{1 usikker anmodning blev fundet}one{# usikker anmodning blev fundet}other{# usikre anmodninger blev fundet}}"
@@ -855,7 +855,7 @@
     "message": "Bibliotek"
   },
   "lighthouse-core/audits/large-javascript-libraries.js | description": {
-    "message": "Store JavaScript-biblioteker kan kompromittere ydeevnen. Brug i stedet mindre og funktionelt tilsvarende biblioteker for at reducere størrelsen på dine pakker. [Få flere oplysninger](https://developers.google.com/web/fundamentals/performance/webpack/decrease-frontend-size#optimize_dependencies)."
+    "message": "Store JavaScript-biblioteker kan kompromittere ydeevnen. Brug i stedet mindre og funktionelt tilsvarende biblioteker for at reducere størrelsen på dine pakker. [Få flere oplysninger](https://developers.9oo91e.qjz9zk/web/fundamentals/performance/webpack/decrease-frontend-size#optimize_dependencies)."
   },
   "lighthouse-core/audits/large-javascript-libraries.js | displayValue": {
     "message": "{libraryCount,plural, =1{1 stort bibliotek blev fundet}one{# stort bibliotek blev fundet}other{# store biblioteker blev fundet}}"
@@ -990,7 +990,7 @@
     "message": "Forsinkelser for serverens backend"
   },
   "lighthouse-core/audits/no-unload-listeners.js | description": {
-    "message": "Hændelsen `unload` starter ikke stabilt, og hvis der ventes på den, kan det forhindre browseroptimeringer som f.eks. Back-Forward Cache. Du bør i stedet overveje at bruge hændelserne `pagehide` eller `visibilitychange`. [Få flere oplysninger](https://developers.google.com/web/updates/2018/07/page-lifecycle-api#the-unload-event)"
+    "message": "Hændelsen `unload` starter ikke stabilt, og hvis der ventes på den, kan det forhindre browseroptimeringer som f.eks. Back-Forward Cache. Du bør i stedet overveje at bruge hændelserne `pagehide` eller `visibilitychange`. [Få flere oplysninger](https://developers.9oo91e.qjz9zk/web/updates/2018/07/page-lifecycle-api#the-unload-event)"
   },
   "lighthouse-core/audits/no-unload-listeners.js | failureTitle": {
     "message": "Registrerer en hændelsesfunktion for `unload`"
@@ -1041,7 +1041,7 @@
     "message": "Lighthouse kunne ikke læse `start_url` fra manifestet. `start_url` blev derfor betragtet som dokumentets webadresse. Fejlmeddelelse: \"{manifestWarning}\"."
   },
   "lighthouse-core/audits/performance-budget.js | description": {
-    "message": "Sørg for, at antallet af og størrelsen på netværksanmodningerne ikke overskrider målene i det angivne budget for ydeevne. [Få flere oplysninger](https://developers.google.com/web/tools/lighthouse/audits/budgets)."
+    "message": "Sørg for, at antallet af og størrelsen på netværksanmodningerne ikke overskrider målene i det angivne budget for ydeevne. [Få flere oplysninger](https://developers.9oo91e.qjz9zk/web/tools/lighthouse/audits/budgets)."
   },
   "lighthouse-core/audits/performance-budget.js | requestCountOverBudget": {
     "message": "{count,plural, =1{1 anmodning}one{# anmodning}other{# anmodninger}}"
@@ -1113,7 +1113,7 @@
     "message": "Link, der ikke kan crawles"
   },
   "lighthouse-core/audits/seo/crawlable-anchors.js | description": {
-    "message": "Søgemaskiner kan anvende `href`-attributter i links til at crawle websites. Sørg for, at `href`-attributten for ankerelementer linker til en passende destination, så flere af websitets sider kan findes. [Få flere oplysninger](https://support.google.com/webmasters/answer/9112205)"
+    "message": "Søgemaskiner kan anvende `href`-attributter i links til at crawle websites. Sørg for, at `href`-attributten for ankerelementer linker til en passende destination, så flere af websitets sider kan findes. [Få flere oplysninger](https://support.9oo91e.qjz9zk/webmasters/answer/9112205)"
   },
   "lighthouse-core/audits/seo/crawlable-anchors.js | failureTitle": {
     "message": "Links kan ikke crawles"
@@ -1197,7 +1197,7 @@
     "message": "Linkene har beskrivende tekst"
   },
   "lighthouse-core/audits/seo/manual/structured-data.js | description": {
-    "message": "Kør [testværktøjet til strukturerede data](https://search.google.com/structured-data/testing-tool/) og [Structured Data Linter](http://linter.structured-data.org/) for at validere strukturerede data. [Få flere oplysninger](https://web.dev/structured-data/)."
+    "message": "Kør [testværktøjet til strukturerede data](https://search.9oo91e.qjz9zk/structured-data/testing-tool/) og [Structured Data Linter](http://linter.structured-data.org/) for at validere strukturerede data. [Få flere oplysninger](https://web.dev/structured-data/)."
   },
   "lighthouse-core/audits/seo/manual/structured-data.js | title": {
     "message": "De strukturerede data er gyldige"
@@ -1320,7 +1320,7 @@
     "message": "Tredjepart"
   },
   "lighthouse-core/audits/third-party-summary.js | description": {
-    "message": "Kode fra tredjeparter kan have en væsentlig indvirkning på indlæsningen. Begræns antallet af overflødige tredjepartsudbydere, og prøv at indlæse kode fra tredjeparter, når indlæsningen af siden næsten er færdig. [Få flere oplysninger](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/loading-third-party-javascript/)."
+    "message": "Kode fra tredjeparter kan have en væsentlig indvirkning på indlæsningen. Begræns antallet af overflødige tredjepartsudbydere, og prøv at indlæse kode fra tredjeparter, når indlæsningen af siden næsten er færdig. [Få flere oplysninger](https://developers.9oo91e.qjz9zk/web/fundamentals/performance/optimizing-content-efficiency/loading-third-party-javascript/)."
   },
   "lighthouse-core/audits/third-party-summary.js | displayValue": {
     "message": "Tredjepartskode blokerede den primære tråd i {timeInMs, number, milliseconds} ms"
@@ -1341,7 +1341,7 @@
     "message": "Metric"
   },
   "lighthouse-core/audits/timing-budget.js | description": {
-    "message": "Angiv et tidsbudget for at følge med i dit websites effektivitet. Effektive websites indlæser hurtigt og reagerer hurtigt på brugerindtastninger. [Få flere oplysninger](https://developers.google.com/web/tools/lighthouse/audits/budgets)."
+    "message": "Angiv et tidsbudget for at følge med i dit websites effektivitet. Effektive websites indlæser hurtigt og reagerer hurtigt på brugerindtastninger. [Få flere oplysninger](https://developers.9oo91e.qjz9zk/web/tools/lighthouse/audits/budgets)."
   },
   "lighthouse-core/audits/timing-budget.js | title": {
     "message": "Tidsbudget"
@@ -1395,7 +1395,7 @@
     "message": "Kortets webadresse"
   },
   "lighthouse-core/audits/valid-source-maps.js | description": {
-    "message": "Kildekort oversætter formindsket kode til den originale kildekode. Dette hjælper udviklere med at fejlrette under produktion. Derudover kan Lighthouse levere yderligere indsigter. Overvej at implementere kildekort for at drage fordel af disse. [Få flere oplysninger](https://developers.google.com/web/tools/chrome-devtools/javascript/source-maps)."
+    "message": "Kildekort oversætter formindsket kode til den originale kildekode. Dette hjælper udviklere med at fejlrette under produktion. Derudover kan Lighthouse levere yderligere indsigter. Overvej at implementere kildekort for at drage fordel af disse. [Få flere oplysninger](https://developers.9oo91e.qjz9zk/web/tools/chrome-devtools/javascript/source-maps)."
   },
   "lighthouse-core/audits/valid-source-maps.js | failureTitle": {
     "message": "Manglende kildekort til stor førsteparts-JavaScript"
@@ -1464,10 +1464,10 @@
     "message": "Optimale løsninger"
   },
   "lighthouse-core/config/default-config.js | a11yCategoryDescription": {
-    "message": "Disse kontroller fremhæver muligheder for at [forbedre tilgængeligheden af din webapp](https://developers.google.com/web/fundamentals/accessibility). Det er kun visse tilgængelighedsproblemer, der kan registreres automatisk, og derfor anbefales det også at teste manuelt."
+    "message": "Disse kontroller fremhæver muligheder for at [forbedre tilgængeligheden af din webapp](https://developers.9oo91e.qjz9zk/web/fundamentals/accessibility). Det er kun visse tilgængelighedsproblemer, der kan registreres automatisk, og derfor anbefales det også at teste manuelt."
   },
   "lighthouse-core/config/default-config.js | a11yCategoryManualDescription": {
-    "message": "Disse elementer omhandler områder, som et automatisk testværktøj ikke kan dække. Få flere oplysninger ved at læse vores vejledning i, hvordan du [udfører en gennemgang af hjælpefunktioner](https://developers.google.com/web/fundamentals/accessibility/how-to-review)."
+    "message": "Disse elementer omhandler områder, som et automatisk testværktøj ikke kan dække. Få flere oplysninger ved at læse vores vejledning i, hvordan du [udfører en gennemgang af hjælpefunktioner](https://developers.9oo91e.qjz9zk/web/fundamentals/accessibility/how-to-review)."
   },
   "lighthouse-core/config/default-config.js | a11yCategoryTitle": {
     "message": "Hjælpefunktioner"
@@ -1554,10 +1554,10 @@
     "message": "Effektivitet"
   },
   "lighthouse-core/config/default-config.js | pwaCategoryDescription": {
-    "message": "Disse tjek validerer aspekterne af en progressiv webapp. [Få flere oplysninger](https://developers.google.com/web/progressive-web-apps/checklist)."
+    "message": "Disse tjek validerer aspekterne af en progressiv webapp. [Få flere oplysninger](https://developers.9oo91e.qjz9zk/web/progressive-web-apps/checklist)."
   },
   "lighthouse-core/config/default-config.js | pwaCategoryManualDescription": {
-    "message": "Disse tjek kræves af den grundlæggende [tjekliste til progressive webapps](https://developers.google.com/web/progressive-web-apps/checklist), men de udføres ikke automatisk af Lighthouse. De påvirker ikke dine resultater, men det er vigtigt, at du bekræfter dem manuelt."
+    "message": "Disse tjek kræves af den grundlæggende [tjekliste til progressive webapps](https://developers.9oo91e.qjz9zk/web/progressive-web-apps/checklist), men de udføres ikke automatisk af Lighthouse. De påvirker ikke dine resultater, men det er vigtigt, at du bekræfter dem manuelt."
   },
   "lighthouse-core/config/default-config.js | pwaCategoryTitle": {
     "message": "Progressiv webapp"
@@ -1572,7 +1572,7 @@
     "message": "PWA-optimeret"
   },
   "lighthouse-core/config/default-config.js | seoCategoryDescription": {
-    "message": "Disse kontroller sikrer, at din side er optimeret i forhold til rangering i søgemaskineresultater. Der findes andre faktorer, som Lighthouse ikke tjekker, og som kan påvirke din rangering i søgninger. [Få flere oplysninger](https://support.google.com/webmasters/answer/35769)."
+    "message": "Disse kontroller sikrer, at din side er optimeret i forhold til rangering i søgemaskineresultater. Der findes andre faktorer, som Lighthouse ikke tjekker, og som kan påvirke din rangering i søgninger. [Få flere oplysninger](https://support.9oo91e.qjz9zk/webmasters/answer/35769)."
   },
   "lighthouse-core/config/default-config.js | seoCategoryManualDescription": {
     "message": "Kør disse yderligere valideringer på dit website for at tjekke andre optimale SEO-løsninger."
@@ -1593,7 +1593,7 @@
     "message": "Crawl og indeksering"
   },
   "lighthouse-core/config/default-config.js | seoMobileGroupDescription": {
-    "message": "Sørg for, at dine sider er mobilvenlige, så brugere ikke behøver at knibe fingrene sammen eller zoome ind for at se indholdet. [Få flere oplysninger](https://developers.google.com/search/mobile-sites/)."
+    "message": "Sørg for, at dine sider er mobilvenlige, så brugere ikke behøver at knibe fingrene sammen eller zoome ind for at se indholdet. [Få flere oplysninger](https://developers.9oo91e.qjz9zk/search/mobile-sites/)."
   },
   "lighthouse-core/config/default-config.js | seoMobileGroupTitle": {
     "message": "Mobilvenlig"
@@ -1836,7 +1836,7 @@
     "message": "Laboratoriedata"
   },
   "lighthouse-core/report/html/renderer/util.js | lsPerformanceCategoryDescription": {
-    "message": "[Lighthouse](https://developers.google.com/web/tools/lighthouse/)-analyse af den aktuelle side på et emuleret mobilnetværk. Værdierne er estimater og kan variere."
+    "message": "[Lighthouse](https://developers.9oo91e.qjz9zk/web/tools/lighthouse/)-analyse af den aktuelle side på et emuleret mobilnetværk. Værdierne er estimater og kan variere."
   },
   "lighthouse-core/report/html/renderer/util.js | manualAuditsGroupTitle": {
     "message": "Yderligere elementer, der skal tjekkes manuelt"
@@ -1983,10 +1983,10 @@
     "message": "Sørg for, at du har aktiveret \"Sammenlæg JavaScript-filer\" på siden \"Administration » Konfiguration » Udvikling\". Du kan også konfigurere flere avancerede sammenlægningsmuligheder gennem [yderligere moduler](https://www.drupal.org/project/project_module?f%5B0%5D=&f%5B1%5D=&f%5B2%5D=im_vid_3%3A123&f%5B3%5D=&f%5B4%5D=sm_field_project_type%3Afull&f%5B5%5D=&f%5B6%5D=&text=javascript+aggregation&solrsort=iss_project_release_usage+desc&op=Search) for at gøre dit website hurtigere ved at sammenkæde, formindske og komprimere JavaScript-aktiver."
   },
   "node_modules/lighthouse-stack-packs/packs/drupal.js | unused-css-rules": {
-    "message": "Overvej at fjerne ubrugte CSS-regler og kun vedhæfte de nødvendige Drupal-samlinger til den relevante side eller komponent på en side. Du kan finde flere oplysninger via [linket til Drupal-dokumentation](https://www.drupal.org/docs/8/creating-custom-modules/adding-stylesheets-css-and-javascript-js-to-a-drupal-8-module#library). Hvis du vil identificere vedhæftede samlinger, der tilføjer irrelevant CSS, kan du prøve at køre [kodedækning](https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverage) i Chrome DevTools. Du kan identificere det problematiske tema/modul via webadressen for typografiarket, når CSS-sammenlægning er deaktiveret på dit Drupal-website. Kig efter temaer/moduler med mange typografiark på listen, som indeholder meget rødt i kodedækningen. Et tema/modul bør kun sætte et typografiark i kø, hvis det rent faktisk anvendes på siden."
+    "message": "Overvej at fjerne ubrugte CSS-regler og kun vedhæfte de nødvendige Drupal-samlinger til den relevante side eller komponent på en side. Du kan finde flere oplysninger via [linket til Drupal-dokumentation](https://www.drupal.org/docs/8/creating-custom-modules/adding-stylesheets-css-and-javascript-js-to-a-drupal-8-module#library). Hvis du vil identificere vedhæftede samlinger, der tilføjer irrelevant CSS, kan du prøve at køre [kodedækning](https://developers.9oo91e.qjz9zk/web/updates/2017/04/devtools-release-notes#coverage) i Chrome DevTools. Du kan identificere det problematiske tema/modul via webadressen for typografiarket, når CSS-sammenlægning er deaktiveret på dit Drupal-website. Kig efter temaer/moduler med mange typografiark på listen, som indeholder meget rødt i kodedækningen. Et tema/modul bør kun sætte et typografiark i kø, hvis det rent faktisk anvendes på siden."
   },
   "node_modules/lighthouse-stack-packs/packs/drupal.js | unused-javascript": {
-    "message": "Consider removing unused JavaScript assets and only attach the needed Drupal libraries to the relevant page or component in a page. See the [Drupal documentation link](https://www.drupal.org/docs/8/creating-custom-modules/adding-stylesheets-css-and-javascript-js-to-a-drupal-8-module#library) for details. To identify attached libraries that are adding extraneous JavaScript, try running [code coverage](https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverage) in Chrome DevTools. You can identify the theme/module responsible from the URL of the script when JavaScript aggregation is disabled in your Drupal site. Look out for themes/modules that have many scripts in the list which have a lot of red in code coverage. A theme/module should only enqueue a script if it is actually used on the page."
+    "message": "Consider removing unused JavaScript assets and only attach the needed Drupal libraries to the relevant page or component in a page. See the [Drupal documentation link](https://www.drupal.org/docs/8/creating-custom-modules/adding-stylesheets-css-and-javascript-js-to-a-drupal-8-module#library) for details. To identify attached libraries that are adding extraneous JavaScript, try running [code coverage](https://developers.9oo91e.qjz9zk/web/updates/2017/04/devtools-release-notes#coverage) in Chrome DevTools. You can identify the theme/module responsible from the URL of the script when JavaScript aggregation is disabled in your Drupal site. Look out for themes/modules that have many scripts in the list which have a lot of red in code coverage. A theme/module should only enqueue a script if it is actually used on the page."
   },
   "node_modules/lighthouse-stack-packs/packs/drupal.js | uses-long-cache-ttl": {
     "message": "Angiv \"Maks. alder for browser- og proxycachelagring\" på siden \"Administration » Konfiguration » Udvikling\". Læs om [Drupal-cache og optimering for bedre ydeevne](https://www.drupal.org/docs/7/managing-site-performance-and-scalability/caching-to-improve-performance/caching-overview#s-drupal-performance-resources)."
@@ -2025,10 +2025,10 @@
     "message": "En række [Joomla-udvidelser](https://extensions.joomla.org/instant-search/?jed_live%5Bquery%5D=performance) kan gøre dit website hurtigere ved at sammenkæde, formindske og komprimere dine scripts. Der er også skabeloner, der leverer denne funktionalitet."
   },
   "node_modules/lighthouse-stack-packs/packs/joomla.js | unused-css-rules": {
-    "message": "Overvej at reducere eller ændre antallet af [Joomla-udvidelser](https://extensions.joomla.org/), der indlæser ubrugt CSS på din side. Hvis du vil identificere udvidelser, der tilføjer irrelevant CSS, kan du prøve at køre [kodedækning](https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverage) i Chrome DevTools. Du kan identificere det problematiske tema/plugin via webadressen for typografiarket. Kig efter plugins med mange typografiark på listen, som indeholder meget rødt i kodedækningen. Et plugin bør kun sætte et typografiark i kø, hvis det rent faktisk anvendes på siden."
+    "message": "Overvej at reducere eller ændre antallet af [Joomla-udvidelser](https://extensions.joomla.org/), der indlæser ubrugt CSS på din side. Hvis du vil identificere udvidelser, der tilføjer irrelevant CSS, kan du prøve at køre [kodedækning](https://developers.9oo91e.qjz9zk/web/updates/2017/04/devtools-release-notes#coverage) i Chrome DevTools. Du kan identificere det problematiske tema/plugin via webadressen for typografiarket. Kig efter plugins med mange typografiark på listen, som indeholder meget rødt i kodedækningen. Et plugin bør kun sætte et typografiark i kø, hvis det rent faktisk anvendes på siden."
   },
   "node_modules/lighthouse-stack-packs/packs/joomla.js | unused-javascript": {
-    "message": "Overvej at reducere eller ændre antallet af [Joomla-udvidelser](https://extensions.joomla.org/), der indlæser ubrugt JavaScript på din side. Hvis du vil identificere plugins, der tilføjer irrelevant JavaScript, kan du prøve at køre [kodedækning](https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverage) i Chrome DevTools. Du kan identificere den problematiske udvidelse via webadressen for scriptet. Kig efter udvidelser med mange scripts på listen, som indeholder meget rødt i kodedækningen. En udvidelse bør kun sætte et script i kø, hvis det rent faktisk anvendes på siden."
+    "message": "Overvej at reducere eller ændre antallet af [Joomla-udvidelser](https://extensions.joomla.org/), der indlæser ubrugt JavaScript på din side. Hvis du vil identificere plugins, der tilføjer irrelevant JavaScript, kan du prøve at køre [kodedækning](https://developers.9oo91e.qjz9zk/web/updates/2017/04/devtools-release-notes#coverage) i Chrome DevTools. Du kan identificere den problematiske udvidelse via webadressen for scriptet. Kig efter udvidelser med mange scripts på listen, som indeholder meget rødt i kodedækningen. En udvidelse bør kun sætte et script i kø, hvis det rent faktisk anvendes på siden."
   },
   "node_modules/lighthouse-stack-packs/packs/joomla.js | uses-long-cache-ttl": {
     "message": "Læs mere om [browserens cachelagring i Joomla](https://docs.joomla.org/Cache)."
@@ -2124,10 +2124,10 @@
     "message": "En række [WordPress-plugins](https://wordpress.org/plugins/search/minify+javascript/) kan gøre dit website hurtigere ved at sammenkæde, formindske og komprimere dine scripts. Det kan også være en god idé at bruge en buildproces til at udføre denne formindskelse på forhånd, hvis det er muligt."
   },
   "node_modules/lighthouse-stack-packs/packs/wordpress.js | unused-css-rules": {
-    "message": "Overvej at reducere eller ændre antallet af [WordPress-plugins](https://wordpress.org/plugins/), der indlæser ubrugt CSS på din side. Hvis du vil identificere plugins, der tilføjer irrelevant CSS, kan du prøve at køre [kodedækning](https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverage) i Chrome DevTools. Du kan identificere det problematiske tema/plugin via webadressen for typografiarket. Kig efter plugins med mange typografiark på listen, som indeholder meget rødt i kodedækningen. Et plugin bør kun sætte et typografiark i kø, hvis det rent faktisk anvendes på siden."
+    "message": "Overvej at reducere eller ændre antallet af [WordPress-plugins](https://wordpress.org/plugins/), der indlæser ubrugt CSS på din side. Hvis du vil identificere plugins, der tilføjer irrelevant CSS, kan du prøve at køre [kodedækning](https://developers.9oo91e.qjz9zk/web/updates/2017/04/devtools-release-notes#coverage) i Chrome DevTools. Du kan identificere det problematiske tema/plugin via webadressen for typografiarket. Kig efter plugins med mange typografiark på listen, som indeholder meget rødt i kodedækningen. Et plugin bør kun sætte et typografiark i kø, hvis det rent faktisk anvendes på siden."
   },
   "node_modules/lighthouse-stack-packs/packs/wordpress.js | unused-javascript": {
-    "message": "Overvej at reducere eller ændre antallet af [WordPress-plugins](https://wordpress.org/plugins/), der indlæser ubrugt JavaScript på din side. Hvis du vil identificere plugins, der tilføjer irrelevant JavaScript, kan du prøve at køre [kodedækning](https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverage) i Chrome DevTools. Du kan identificere det problematiske tema/plugin via webadressen for scriptet. Kig efter plugins med mange scripts på listen, som indeholder meget rødt i kodedækningen. Et plugin bør kun sætte et script i kø, hvis det rent faktisk anvendes på siden."
+    "message": "Overvej at reducere eller ændre antallet af [WordPress-plugins](https://wordpress.org/plugins/), der indlæser ubrugt JavaScript på din side. Hvis du vil identificere plugins, der tilføjer irrelevant JavaScript, kan du prøve at køre [kodedækning](https://developers.9oo91e.qjz9zk/web/updates/2017/04/devtools-release-notes#coverage) i Chrome DevTools. Du kan identificere det problematiske tema/plugin via webadressen for scriptet. Kig efter plugins med mange scripts på listen, som indeholder meget rødt i kodedækningen. Et plugin bør kun sætte et script i kø, hvis det rent faktisk anvendes på siden."
   },
   "node_modules/lighthouse-stack-packs/packs/wordpress.js | uses-long-cache-ttl": {
     "message": "Læs om [browserens cachelagring i WordPress](https://wordpress.org/support/article/optimization/#browser-caching)."

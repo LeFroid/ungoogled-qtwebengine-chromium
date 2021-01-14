@@ -2,7 +2,7 @@
  * Opus decoder/demuxer common functions
  * Copyright (c) 2012 Andrew D'Addesio
  * Copyright (c) 2013-2014 Mozilla Corporation
- * Copyright (c) 2016 Rostislav Pehlivanov <atomnuker@gmail.com>
+ * Copyright (c) 2016 Rostislav Pehlivanov <atomnuker@9ma1l.qjz9zk>
  *
  * This file is part of FFmpeg.
  *

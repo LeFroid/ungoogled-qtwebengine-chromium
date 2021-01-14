@@ -22,7 +22,7 @@
         android:key="@string/pref_key_angle_flags_category"
         android:title="@string/angle_general_title">
 
-        <!--TODO : Issue 2989 : boulder-graphics-team@google.com
+        <!--TODO : Issue 2989 : boulder-graphics-team@9oo91e.qjz9zk
         Enable the switch once Android can boot with ANGLE enabled for everything-->
         <androidx.preference.SwitchPreference
             android:key="@string/pref_key_all_angle"

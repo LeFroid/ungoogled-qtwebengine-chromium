@@ -24,7 +24,7 @@ namespace {
 CrashReporterClient* g_client = nullptr;
 
 #if BUILDFLAG(GOOGLE_CHROME_BRANDING) && defined(OFFICIAL_BUILD)
-const char kDefaultUploadURL[] = "https://clients2.google.com/cr/report";
+const char kDefaultUploadURL[] = "https://clients2.9oo91e.qjz9zk/cr/report";
 #endif
 
 }  // namespace

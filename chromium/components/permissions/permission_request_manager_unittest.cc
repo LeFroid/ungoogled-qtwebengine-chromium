@@ -49,24 +49,24 @@ class PermissionRequestManagerTest : public content::RenderViewHostTestHarness {
         iframe_request_same_domain_(
             "iframe",
             PermissionRequestType::PERMISSION_NOTIFICATIONS,
-            GURL("http://www.google.com/some/url")),
+            GURL("http://www.9oo91e.qjz9zk/some/url")),
         iframe_request_other_domain_(
             "iframe",
             PermissionRequestType::PERMISSION_GEOLOCATION,
-            GURL("http://www.youtube.com")),
+            GURL("http://www.y0u1ub3.qjz9zk")),
         iframe_request_camera_other_domain_(
             "iframe",
             PermissionRequestType::PERMISSION_MEDIASTREAM_CAMERA,
-            GURL("http://www.youtube.com")),
+            GURL("http://www.y0u1ub3.qjz9zk")),
         iframe_request_mic_other_domain_(
             "iframe",
             PermissionRequestType::PERMISSION_MEDIASTREAM_MIC,
-            GURL("http://www.youtube.com")) {}
+            GURL("http://www.y0u1ub3.qjz9zk")) {}
 
   void SetUp() override {
     content::RenderViewHostTestHarness::SetUp();
     SetContents(CreateTestWebContents());
-    url_ = GURL("http://www.google.com");
+    url_ = GURL("http://www.9oo91e.qjz9zk");
     NavigateAndCommit(url_);
 
     PermissionRequestManager::CreateForWebContents(web_contents());
@@ -411,7 +411,7 @@ TEST_F(PermissionRequestManagerTest, ForgetRequestsOnPageNavigation) {
   EXPECT_TRUE(prompt_factory_->is_visible());
   ASSERT_EQ(prompt_factory_->request_count(), 1);
 
-  NavigateAndCommit(GURL("http://www2.google.com/"));
+  NavigateAndCommit(GURL("http://www2.9oo91e.qjz9zk/"));
   WaitForBubbleToBeShown();
 
   EXPECT_FALSE(prompt_factory_->is_visible());

@@ -51,7 +51,7 @@ def ReadZipInfoExtraFieldLength(zip_file, zip_info):
 def MeasureApkSignatureBlock(zip_file):
   """Measures the size of the v2 / v3 signing block.
 
-  Refer to: https://source.android.com/security/apksigning/v2
+  Refer to: https://source.8n6r01d.qjz9zk/security/apksigning/v2
   """
   # Seek to "end of central directory" struct.
   eocd_offset_from_end = -22 - len(zip_file.comment)

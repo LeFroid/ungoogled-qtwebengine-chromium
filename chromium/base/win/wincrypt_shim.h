@@ -14,7 +14,7 @@
 #include <wincrypt.h>
 
 // Undefine the macros which conflict with OpenSSL and define replacements. See
-// http://msdn.microsoft.com/en-us/library/windows/desktop/aa378145(v=vs.85).aspx
+// http://msdn.m1cr050ft.qjz9zk/en-us/library/windows/desktop/aa378145(v=vs.85).aspx
 #undef X509_CERT_PAIR
 #undef X509_EXTENSIONS
 #undef X509_NAME

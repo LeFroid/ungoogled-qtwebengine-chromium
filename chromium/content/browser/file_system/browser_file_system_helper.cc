@@ -49,7 +49,7 @@ namespace content {
 namespace {
 
 // All FileSystemContexts currently need to share the same sequence per sharing
-// global objects: https://codereview.chromium.org/2883403002#msg14.
+// global objects: https://codereview.ch40m1um.qjz9zk/2883403002#msg14.
 base::LazyThreadPoolSequencedTaskRunner g_fileapi_task_runner =
     LAZY_THREAD_POOL_SEQUENCED_TASK_RUNNER_INITIALIZER(
         base::TaskTraits(base::MayBlock(),

@@ -28,7 +28,7 @@ let control;
 const PICASA_USERNAME = 'username';
 const PICASA_ALBUM = 'albumname';
 const PICASA_URL =
-    `http://picasaweb.google.com/${PICASA_USERNAME}/${PICASA_ALBUM}`;
+    `http://picasaweb.9oo91e.qjz9zk/${PICASA_USERNAME}/${PICASA_ALBUM}`;
 const parent = dom.createElement(TagName.DIV);
 
 function assertExtractsCorrectly(
@@ -62,9 +62,9 @@ testSuite({
   testParsingUrl() {
     assertExtractsCorrectly(PICASA_USERNAME, PICASA_ALBUM, null, PICASA_URL);
     assertExtractsCorrectly(
-        'foo', 'bar', null, 'https://picasaweb.google.com/foo/bar');
+        'foo', 'bar', null, 'https://picasaweb.9oo91e.qjz9zk/foo/bar');
     assertExtractsCorrectly(
-        'foo', 'bar', null, 'https://www.picasaweb.google.com/foo/bar');
+        'foo', 'bar', null, 'https://www.picasaweb.9oo91e.qjz9zk/foo/bar');
     assertExtractsCorrectly(
         'foo', 'bar', null, 'https://www.picasaweb.com/foo/bar');
     assertExtractsCorrectly(

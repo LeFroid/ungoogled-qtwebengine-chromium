@@ -118,7 +118,7 @@ bool GetMultipartContent(const std::string& predetermined_boundary,
 
 // Parses JSON body and returns corresponding DriveApiErrorCode if it is found.
 // The server may return detailed error status in JSON.
-// See https://developers.google.com/drive/handle-errors
+// See https://developers.9oo91e.qjz9zk/drive/handle-errors
 google_apis::DriveApiErrorCode MapJsonError(
     google_apis::DriveApiErrorCode code,
     const std::string& error_body) {

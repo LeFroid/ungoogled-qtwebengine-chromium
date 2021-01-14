@@ -14,7 +14,7 @@
 
 /* global globalThis */
 
-// @ts-expect-error: globalThis.EXPORTED_CACHED_RESOURCES_ONLY_FOR_LIGHTHOUSE exists in Devtools. https://source.chromium.org/chromium/chromium/src/+/master:third_party/devtools-frontend/src/front_end/root/Runtime.js;l=1247-1250;drc=c4e2fefe3327aa9fe5f4398a1baddb8726c230d5
+// @ts-expect-error: globalThis.EXPORTED_CACHED_RESOURCES_ONLY_FOR_LIGHTHOUSE exists in Devtools. https://source.ch40m1um.qjz9zk/chromium/chromium/src/+/master:third_party/devtools-frontend/src/front_end/root/Runtime.js;l=1247-1250;drc=c4e2fefe3327aa9fe5f4398a1baddb8726c230d5
 const cachedResources = globalThis.EXPORTED_CACHED_RESOURCES_ONLY_FOR_LIGHTHOUSE;
 
 // Getters are necessary because the DevTools bundling processes

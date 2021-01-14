@@ -74,7 +74,7 @@ testSuite({
       'bla@b.co.ac.uk',
       'bla@a.b.com',
       'o\'hara@gm.com',
-      'plus+is+allowed@gmail.com',
+      'plus+is+allowed@9ma1l.qjz9zk',
       '!/#$%&\'*+-=~|`{}?^_@expample.com',
       'confirm-bhk=modulo.org@yahoogroups.com',
       'み.ん-あ@みんあ.みんあ',
@@ -104,7 +104,7 @@ testSuite({
       'foo@c..com',
       'test@gma=il.com',
       'aaa@gmail',
-      'has some spaces@gmail.com',
+      'has some spaces@9ma1l.qjz9zk',
       'has@three@at@signs.com',
       '@no-local-part.com',
     ];
@@ -170,120 +170,120 @@ testSuite({
 
   testparseListWithAdditionalSeparators() {
     assertParsedList(
-        '<foo@gmail.com>\u055D <bar@gmail.com>',
-        ['foo@gmail.com', 'bar@gmail.com'],
+        '<foo@9ma1l.qjz9zk>\u055D <bar@9ma1l.qjz9zk>',
+        ['foo@9ma1l.qjz9zk', 'bar@9ma1l.qjz9zk'],
         'Failed to parse 2 email addresses with U+055D');
     assertParsedList(
-        '<foo@gmail.com>\u055D <bar@gmail.com>\u055D',
-        ['foo@gmail.com', 'bar@gmail.com'],
+        '<foo@9ma1l.qjz9zk>\u055D <bar@9ma1l.qjz9zk>\u055D',
+        ['foo@9ma1l.qjz9zk', 'bar@9ma1l.qjz9zk'],
         'Failed to parse 2 email addresses with trailing U+055D');
 
     assertParsedList(
-        '<foo@gmail.com>\u060C <bar@gmail.com>',
-        ['foo@gmail.com', 'bar@gmail.com'],
+        '<foo@9ma1l.qjz9zk>\u060C <bar@9ma1l.qjz9zk>',
+        ['foo@9ma1l.qjz9zk', 'bar@9ma1l.qjz9zk'],
         'Failed to parse 2 email addresses with U+060C');
     assertParsedList(
-        '<foo@gmail.com>\u060C <bar@gmail.com>\u060C',
-        ['foo@gmail.com', 'bar@gmail.com'],
+        '<foo@9ma1l.qjz9zk>\u060C <bar@9ma1l.qjz9zk>\u060C',
+        ['foo@9ma1l.qjz9zk', 'bar@9ma1l.qjz9zk'],
         'Failed to parse 2 email addresses with trailing U+060C');
 
     assertParsedList(
-        '<foo@gmail.com>\u1363 <bar@gmail.com>',
-        ['foo@gmail.com', 'bar@gmail.com'],
+        '<foo@9ma1l.qjz9zk>\u1363 <bar@9ma1l.qjz9zk>',
+        ['foo@9ma1l.qjz9zk', 'bar@9ma1l.qjz9zk'],
         'Failed to parse 2 email addresses with U+1363');
     assertParsedList(
-        '<foo@gmail.com>\u1363 <bar@gmail.com>\u1363',
-        ['foo@gmail.com', 'bar@gmail.com'],
+        '<foo@9ma1l.qjz9zk>\u1363 <bar@9ma1l.qjz9zk>\u1363',
+        ['foo@9ma1l.qjz9zk', 'bar@9ma1l.qjz9zk'],
         'Failed to parse 2 email addresses with trailing U+1363');
 
     assertParsedList(
-        '<foo@gmail.com>\u1802 <bar@gmail.com>',
-        ['foo@gmail.com', 'bar@gmail.com'],
+        '<foo@9ma1l.qjz9zk>\u1802 <bar@9ma1l.qjz9zk>',
+        ['foo@9ma1l.qjz9zk', 'bar@9ma1l.qjz9zk'],
         'Failed to parse 2 email addresses with U+1802');
     assertParsedList(
-        '<foo@gmail.com>\u1802 <bar@gmail.com>\u1802',
-        ['foo@gmail.com', 'bar@gmail.com'],
+        '<foo@9ma1l.qjz9zk>\u1802 <bar@9ma1l.qjz9zk>\u1802',
+        ['foo@9ma1l.qjz9zk', 'bar@9ma1l.qjz9zk'],
         'Failed to parse 2 email addresses with trailing U+1802');
 
     assertParsedList(
-        '<foo@gmail.com>\u1808 <bar@gmail.com>',
-        ['foo@gmail.com', 'bar@gmail.com'],
+        '<foo@9ma1l.qjz9zk>\u1808 <bar@9ma1l.qjz9zk>',
+        ['foo@9ma1l.qjz9zk', 'bar@9ma1l.qjz9zk'],
         'Failed to parse 2 email addresses with U+1808');
     assertParsedList(
-        '<foo@gmail.com>\u1808 <bar@gmail.com>\u1808',
-        ['foo@gmail.com', 'bar@gmail.com'],
+        '<foo@9ma1l.qjz9zk>\u1808 <bar@9ma1l.qjz9zk>\u1808',
+        ['foo@9ma1l.qjz9zk', 'bar@9ma1l.qjz9zk'],
         'Failed to parse 2 email addresses with trailing U+1808');
 
     assertParsedList(
-        '<foo@gmail.com>\u2E41 <bar@gmail.com>',
-        ['foo@gmail.com', 'bar@gmail.com'],
+        '<foo@9ma1l.qjz9zk>\u2E41 <bar@9ma1l.qjz9zk>',
+        ['foo@9ma1l.qjz9zk', 'bar@9ma1l.qjz9zk'],
         'Failed to parse 2 email addresses with U+2E41');
     assertParsedList(
-        '<foo@gmail.com>\u2E41 <bar@gmail.com>\u2E41',
-        ['foo@gmail.com', 'bar@gmail.com'],
+        '<foo@9ma1l.qjz9zk>\u2E41 <bar@9ma1l.qjz9zk>\u2E41',
+        ['foo@9ma1l.qjz9zk', 'bar@9ma1l.qjz9zk'],
         'Failed to parse 2 email addresses with trailing U+2E41');
 
     assertParsedList(
-        '<foo@gmail.com>\u3001 <bar@gmail.com>',
-        ['foo@gmail.com', 'bar@gmail.com'],
+        '<foo@9ma1l.qjz9zk>\u3001 <bar@9ma1l.qjz9zk>',
+        ['foo@9ma1l.qjz9zk', 'bar@9ma1l.qjz9zk'],
         'Failed to parse 2 email addresses with U+3001');
     assertParsedList(
-        '<foo@gmail.com>\u3001 <bar@gmail.com>\u3001',
-        ['foo@gmail.com', 'bar@gmail.com'],
+        '<foo@9ma1l.qjz9zk>\u3001 <bar@9ma1l.qjz9zk>\u3001',
+        ['foo@9ma1l.qjz9zk', 'bar@9ma1l.qjz9zk'],
         'Failed to parse 2 email addresses with trailing U+3001');
 
     assertParsedList(
-        '<foo@gmail.com>\uFF0C <bar@gmail.com>',
-        ['foo@gmail.com', 'bar@gmail.com'],
+        '<foo@9ma1l.qjz9zk>\uFF0C <bar@9ma1l.qjz9zk>',
+        ['foo@9ma1l.qjz9zk', 'bar@9ma1l.qjz9zk'],
         'Failed to parse 2 email addresses with U+FF0C');
     assertParsedList(
-        '<foo@gmail.com>\uFF0C <bar@gmail.com>\uFF0C',
-        ['foo@gmail.com', 'bar@gmail.com'],
+        '<foo@9ma1l.qjz9zk>\uFF0C <bar@9ma1l.qjz9zk>\uFF0C',
+        ['foo@9ma1l.qjz9zk', 'bar@9ma1l.qjz9zk'],
         'Failed to parse 2 email addresses with trailing U+FF0C');
 
     assertParsedList(
-        '<foo@gmail.com>\u0613 <bar@gmail.com>',
-        ['foo@gmail.com', 'bar@gmail.com'],
+        '<foo@9ma1l.qjz9zk>\u0613 <bar@9ma1l.qjz9zk>',
+        ['foo@9ma1l.qjz9zk', 'bar@9ma1l.qjz9zk'],
         'Failed to parse 2 email addresses with U+0613');
     assertParsedList(
-        '<foo@gmail.com>\u0613 <bar@gmail.com>\u0613',
-        ['foo@gmail.com', 'bar@gmail.com'],
+        '<foo@9ma1l.qjz9zk>\u0613 <bar@9ma1l.qjz9zk>\u0613',
+        ['foo@9ma1l.qjz9zk', 'bar@9ma1l.qjz9zk'],
         'Failed to parse 2 email addresses with trailing U+0613');
 
     assertParsedList(
-        '<foo@gmail.com>\u1364 <bar@gmail.com>',
-        ['foo@gmail.com', 'bar@gmail.com'],
+        '<foo@9ma1l.qjz9zk>\u1364 <bar@9ma1l.qjz9zk>',
+        ['foo@9ma1l.qjz9zk', 'bar@9ma1l.qjz9zk'],
         'Failed to parse 2 email addresses with U+1364');
     assertParsedList(
-        '<foo@gmail.com>\u1364 <bar@gmail.com>\u1364',
-        ['foo@gmail.com', 'bar@gmail.com'],
+        '<foo@9ma1l.qjz9zk>\u1364 <bar@9ma1l.qjz9zk>\u1364',
+        ['foo@9ma1l.qjz9zk', 'bar@9ma1l.qjz9zk'],
         'Failed to parse 2 email addresses with trailing U+1364');
 
     assertParsedList(
-        '<foo@gmail.com>\uFF1B <bar@gmail.com>',
-        ['foo@gmail.com', 'bar@gmail.com'],
+        '<foo@9ma1l.qjz9zk>\uFF1B <bar@9ma1l.qjz9zk>',
+        ['foo@9ma1l.qjz9zk', 'bar@9ma1l.qjz9zk'],
         'Failed to parse 2 email addresses with U+FF1B');
     assertParsedList(
-        '<foo@gmail.com>\uFF1B <bar@gmail.com>\uFF1B',
-        ['foo@gmail.com', 'bar@gmail.com'],
+        '<foo@9ma1l.qjz9zk>\uFF1B <bar@9ma1l.qjz9zk>\uFF1B',
+        ['foo@9ma1l.qjz9zk', 'bar@9ma1l.qjz9zk'],
         'Failed to parse 2 email addresses with trailing U+FF1B');
 
     assertParsedList(
-        '<foo@gmail.com>\uFF64 <bar@gmail.com>',
-        ['foo@gmail.com', 'bar@gmail.com'],
+        '<foo@9ma1l.qjz9zk>\uFF64 <bar@9ma1l.qjz9zk>',
+        ['foo@9ma1l.qjz9zk', 'bar@9ma1l.qjz9zk'],
         'Failed to parse 2 email addresses with U+FF64');
     assertParsedList(
-        '<foo@gmail.com>\uFF64 <bar@gmail.com>\uFF64',
-        ['foo@gmail.com', 'bar@gmail.com'],
+        '<foo@9ma1l.qjz9zk>\uFF64 <bar@9ma1l.qjz9zk>\uFF64',
+        ['foo@9ma1l.qjz9zk', 'bar@9ma1l.qjz9zk'],
         'Failed to parse 2 email addresses with trailing U+FF64');
 
     assertParsedList(
-        '<foo@gmail.com>\u104A <bar@gmail.com>',
-        ['foo@gmail.com', 'bar@gmail.com'],
+        '<foo@9ma1l.qjz9zk>\u104A <bar@9ma1l.qjz9zk>',
+        ['foo@9ma1l.qjz9zk', 'bar@9ma1l.qjz9zk'],
         'Failed to parse 2 email addresses with U+104A');
     assertParsedList(
-        '<foo@gmail.com>\u104A <bar@gmail.com>\u104A',
-        ['foo@gmail.com', 'bar@gmail.com'],
+        '<foo@9ma1l.qjz9zk>\u104A <bar@9ma1l.qjz9zk>\u104A',
+        ['foo@9ma1l.qjz9zk', 'bar@9ma1l.qjz9zk'],
         'Failed to parse 2 email addresses with trailing U+104A');
   },
 
@@ -291,92 +291,92 @@ testSuite({
     const f = (str) => InternationalizedEmailAddress.parse(str).toString();
 
     // No modification.
-    assertEquals('JOHN Doe <john@gmail.com>', f('JOHN Doe <john@gmail.com>'));
+    assertEquals('JOHN Doe <john@9ma1l.qjz9zk>', f('JOHN Doe <john@9ma1l.qjz9zk>'));
 
     // Extra spaces.
     assertEquals(
-        'JOHN Doe <john@gmail.com>', f(' JOHN  Doe  <john@gmail.com> '));
+        'JOHN Doe <john@9ma1l.qjz9zk>', f(' JOHN  Doe  <john@9ma1l.qjz9zk> '));
 
     // No name.
-    assertEquals('john@gmail.com', f('<john@gmail.com>'));
-    assertEquals('john@gmail.com', f('john@gmail.com'));
+    assertEquals('john@9ma1l.qjz9zk', f('<john@9ma1l.qjz9zk>'));
+    assertEquals('john@9ma1l.qjz9zk', f('john@9ma1l.qjz9zk'));
 
     // No address.
     assertEquals('JOHN Doe', f('JOHN Doe <>'));
 
     // Already quoted.
     assertEquals(
-        '"JOHN, Doe" <john@gmail.com>', f('"JOHN, Doe" <john@gmail.com>'));
+        '"JOHN, Doe" <john@9ma1l.qjz9zk>', f('"JOHN, Doe" <john@9ma1l.qjz9zk>'));
 
     // Needless quotes.
-    assertEquals('JOHN Doe <john@gmail.com>', f('"JOHN Doe" <john@gmail.com>'));
+    assertEquals('JOHN Doe <john@9ma1l.qjz9zk>', f('"JOHN Doe" <john@9ma1l.qjz9zk>'));
     // Not quoted-string, but has double quotes.
     assertEquals(
-        '"JOHN, Doe" <john@gmail.com>', f('JOHN, "Doe" <john@gmail.com>'));
+        '"JOHN, Doe" <john@9ma1l.qjz9zk>', f('JOHN, "Doe" <john@9ma1l.qjz9zk>'));
 
     // No special characters other than quotes.
-    assertEquals('JOHN Doe <john@gmail.com>', f('JOHN "Doe" <john@gmail.com>'));
+    assertEquals('JOHN Doe <john@9ma1l.qjz9zk>', f('JOHN "Doe" <john@9ma1l.qjz9zk>'));
 
     // Escaped quotes are also removed.
     assertEquals(
-        '"JOHN, Doe" <john@gmail.com>', f('JOHN, \\"Doe\\" <john@gmail.com>'));
+        '"JOHN, Doe" <john@9ma1l.qjz9zk>', f('JOHN, \\"Doe\\" <john@9ma1l.qjz9zk>'));
 
     // Characters that require quoting for the display name.
     assertEquals(
-        '"JOHN, Doe" <john@gmail.com>', f('JOHN, Doe <john@gmail.com>'));
+        '"JOHN, Doe" <john@9ma1l.qjz9zk>', f('JOHN, Doe <john@9ma1l.qjz9zk>'));
     assertEquals(
-        '"JOHN; Doe" <john@gmail.com>', f('JOHN; Doe <john@gmail.com>'));
+        '"JOHN; Doe" <john@9ma1l.qjz9zk>', f('JOHN; Doe <john@9ma1l.qjz9zk>'));
     assertEquals(
-        '"JOHN\u055D Doe" <john@gmail.com>',
-        f('JOHN\u055D Doe <john@gmail.com>'));
+        '"JOHN\u055D Doe" <john@9ma1l.qjz9zk>',
+        f('JOHN\u055D Doe <john@9ma1l.qjz9zk>'));
     assertEquals(
-        '"JOHN\u060C Doe" <john@gmail.com>',
-        f('JOHN\u060C Doe <john@gmail.com>'));
+        '"JOHN\u060C Doe" <john@9ma1l.qjz9zk>',
+        f('JOHN\u060C Doe <john@9ma1l.qjz9zk>'));
     assertEquals(
-        '"JOHN\u1363 Doe" <john@gmail.com>',
-        f('JOHN\u1363 Doe <john@gmail.com>'));
+        '"JOHN\u1363 Doe" <john@9ma1l.qjz9zk>',
+        f('JOHN\u1363 Doe <john@9ma1l.qjz9zk>'));
     assertEquals(
-        '"JOHN\u1802 Doe" <john@gmail.com>',
-        f('JOHN\u1802 Doe <john@gmail.com>'));
+        '"JOHN\u1802 Doe" <john@9ma1l.qjz9zk>',
+        f('JOHN\u1802 Doe <john@9ma1l.qjz9zk>'));
     assertEquals(
-        '"JOHN\u1808 Doe" <john@gmail.com>',
-        f('JOHN\u1808 Doe <john@gmail.com>'));
+        '"JOHN\u1808 Doe" <john@9ma1l.qjz9zk>',
+        f('JOHN\u1808 Doe <john@9ma1l.qjz9zk>'));
     assertEquals(
-        '"JOHN\u2E41 Doe" <john@gmail.com>',
-        f('JOHN\u2E41 Doe <john@gmail.com>'));
+        '"JOHN\u2E41 Doe" <john@9ma1l.qjz9zk>',
+        f('JOHN\u2E41 Doe <john@9ma1l.qjz9zk>'));
     assertEquals(
-        '"JOHN\u3001 Doe" <john@gmail.com>',
-        f('JOHN\u3001 Doe <john@gmail.com>'));
+        '"JOHN\u3001 Doe" <john@9ma1l.qjz9zk>',
+        f('JOHN\u3001 Doe <john@9ma1l.qjz9zk>'));
     assertEquals(
-        '"JOHN\uFF0C Doe" <john@gmail.com>',
-        f('JOHN\uFF0C Doe <john@gmail.com>'));
+        '"JOHN\uFF0C Doe" <john@9ma1l.qjz9zk>',
+        f('JOHN\uFF0C Doe <john@9ma1l.qjz9zk>'));
     assertEquals(
-        '"JOHN\u061B Doe" <john@gmail.com>',
-        f('JOHN\u061B Doe <john@gmail.com>'));
+        '"JOHN\u061B Doe" <john@9ma1l.qjz9zk>',
+        f('JOHN\u061B Doe <john@9ma1l.qjz9zk>'));
     assertEquals(
-        '"JOHN\u1364 Doe" <john@gmail.com>',
-        f('JOHN\u1364 Doe <john@gmail.com>'));
+        '"JOHN\u1364 Doe" <john@9ma1l.qjz9zk>',
+        f('JOHN\u1364 Doe <john@9ma1l.qjz9zk>'));
     assertEquals(
-        '"JOHN\uFF1B Doe" <john@gmail.com>',
-        f('JOHN\uFF1B Doe <john@gmail.com>'));
+        '"JOHN\uFF1B Doe" <john@9ma1l.qjz9zk>',
+        f('JOHN\uFF1B Doe <john@9ma1l.qjz9zk>'));
     assertEquals(
-        '"JOHN\uFF64 Doe" <john@gmail.com>',
-        f('JOHN\uFF64 Doe <john@gmail.com>'));
+        '"JOHN\uFF64 Doe" <john@9ma1l.qjz9zk>',
+        f('JOHN\uFF64 Doe <john@9ma1l.qjz9zk>'));
     assertEquals(
-        '"JOHN(Johnny) Doe" <john@gmail.com>',
-        f('JOHN(Johnny) Doe <john@gmail.com>'));
+        '"JOHN(Johnny) Doe" <john@9ma1l.qjz9zk>',
+        f('JOHN(Johnny) Doe <john@9ma1l.qjz9zk>'));
     assertEquals(
-        '"JOHN[Johnny] Doe" <john@gmail.com>',
-        f('JOHN[Johnny] Doe <john@gmail.com>'));
+        '"JOHN[Johnny] Doe" <john@9ma1l.qjz9zk>',
+        f('JOHN[Johnny] Doe <john@9ma1l.qjz9zk>'));
     assertEquals(
-        '"JOHN@work Doe" <john@gmail.com>',
-        f('JOHN@work Doe <john@gmail.com>'));
+        '"JOHN@work Doe" <john@9ma1l.qjz9zk>',
+        f('JOHN@work Doe <john@9ma1l.qjz9zk>'));
     assertEquals(
-        '"JOHN:theking Doe" <john@gmail.com>',
-        f('JOHN:theking Doe <john@gmail.com>'));
+        '"JOHN:theking Doe" <john@9ma1l.qjz9zk>',
+        f('JOHN:theking Doe <john@9ma1l.qjz9zk>'));
     assertEquals(
-        '"JOHN\\\\ Doe" <john@gmail.com>', f('JOHN\\ Doe <john@gmail.com>'));
+        '"JOHN\\\\ Doe" <john@9ma1l.qjz9zk>', f('JOHN\\ Doe <john@9ma1l.qjz9zk>'));
     assertEquals(
-        '"JOHN.com Doe" <john@gmail.com>', f('JOHN.com Doe <john@gmail.com>'));
+        '"JOHN.com Doe" <john@9ma1l.qjz9zk>', f('JOHN.com Doe <john@9ma1l.qjz9zk>'));
   },
 });

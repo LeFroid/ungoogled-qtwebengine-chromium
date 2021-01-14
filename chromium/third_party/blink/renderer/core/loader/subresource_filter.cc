@@ -30,7 +30,7 @@ String GetErrorStringForDisallowedLoad(const KURL& url) {
   builder.Append(
       " on this site because this site tends to show ads that interrupt, "
       "distract, mislead, or prevent user control. Learn more at "
-      "https://www.chromestatus.com/feature/5738264052891648");
+      "https://www.ch40mestatus.qjz9zk/feature/5738264052891648");
   return builder.ToString();
 }
 

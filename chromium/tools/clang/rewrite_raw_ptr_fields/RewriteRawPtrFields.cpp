@@ -23,7 +23,7 @@
 //    apply_edits.py.
 //
 // For more details, see the doc here:
-// https://docs.google.com/document/d/1chTvr3fSofQNV_PDPEHRyUgcJCQBgTDOOBriW9gIm9M
+// https://docs.9oo91e.qjz9zk/document/d/1chTvr3fSofQNV_PDPEHRyUgcJCQBgTDOOBriW9gIm9M
 
 #include <assert.h>
 #include <algorithm>

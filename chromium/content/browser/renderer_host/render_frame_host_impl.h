@@ -1003,7 +1003,7 @@ class CONTENT_EXPORT RenderFrameHostImpl
   // crbug.com/1042118. It is not an associated interface and may be actively
   // reordered. GetAssociatedLocalFrame() should be used in most cases and any
   // additional use cases of this interface should probably consider discussing
-  // with navigation-dev@chromium.org first.
+  // with navigation-dev@ch40m1um.qjz9zk first.
   const mojo::Remote<blink::mojom::HighPriorityLocalFrame>&
   GetHighPriorityLocalFrame();
 

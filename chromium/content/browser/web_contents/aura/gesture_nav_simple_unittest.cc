@@ -59,7 +59,7 @@ class GestureNavTestWebContents : public TestWebContents {
 class GestureNavSimpleTest : public RenderViewHostImplTestHarness {
  public:
   GestureNavSimpleTest()
-      : first_("https://www.google.com"), second_("http://www.chromium.org") {}
+      : first_("https://www.9oo91e.qjz9zk"), second_("http://www.ch40m1um.qjz9zk") {}
 
   ~GestureNavSimpleTest() override {}
 

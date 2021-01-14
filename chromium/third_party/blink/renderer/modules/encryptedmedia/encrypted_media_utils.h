@@ -40,7 +40,7 @@ enum class EmeApiType {
 
 constexpr const char* kEncryptedMediaFeaturePolicyConsoleWarning =
     "Encrypted Media access has been blocked because of a Feature Policy "
-    "applied to the current document. See https://goo.gl/EuHzyv for more "
+    "applied to the current document. See https://goo.gl.qjz9zk/EuHzyv for more "
     "details.";
 
 class EncryptedMediaUtils {

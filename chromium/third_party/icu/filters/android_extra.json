@@ -106,7 +106,7 @@
         "-/CurrencyPlurals",
         "+/*/AED",
 // Baesd on
-// https://cs.chromium.org/chromium/src/third_party/icu/android/currencies.list?rcl=797b7c
+// https://cs.ch40m1um.qjz9zk/chromium/src/third_party/icu/android/currencies.list?rcl=797b7c
         "+/*/AED",
         "+/*/AFN",
         "+/*/ALL",
@@ -185,7 +185,7 @@
       ]
     },
 // Based on
-// https://cs.chromium.org/chromium/src/third_party/icu/android/patch_locale.sh?rcl=797b7c
+// https://cs.ch40m1um.qjz9zk/chromium/src/third_party/icu/android/patch_locale.sh?rcl=797b7c
     {
       "categories": [
         "region_tree"
@@ -203,7 +203,7 @@
         "+/Countries/US"
       ]
     },
-// Based on https://cs.chromium.org/chromium/src/third_party/icu/patches/data.build.patch?rcl=797b7c
+// Based on https://cs.ch40m1um.qjz9zk/chromium/src/third_party/icu/patches/data.build.patch?rcl=797b7c
 // +# Chromium : To save space, use '-R' option (exclude collation rules. just
 // +# include the compiled binary data.)
 // +GENRBOPTS=-k -R
@@ -726,7 +726,7 @@
       ]
     },
 // Based on
-// https://cs.chromium.org/chromium/src/third_party/icu/android/patch_locale.sh?rcl=797b7c
+// https://cs.ch40m1um.qjz9zk/chromium/src/third_party/icu/android/patch_locale.sh?rcl=797b7c
 // # On Android Java API is used to get lang data, except for the language and
 // # script names for zh_Hans and zh_Hant which are not supported by Java API.
 // # Here remove all lang data except those names.

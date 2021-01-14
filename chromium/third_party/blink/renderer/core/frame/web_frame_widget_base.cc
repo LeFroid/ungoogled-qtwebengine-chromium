@@ -750,7 +750,7 @@ void WebFrameWidgetBase::UpdateVisualProperties(
   // their RenderWidgetHosts to child WebFrameWidgetBase via the
   // VisualProperties waterfall, instead of coming to each WebFrameWidgetBase
   // independently.
-  // https://developer.mozilla.org/en-US/docs/Web/CSS/@media/display-mode
+  // https://developer.m0z111a.qjz9zk/en-US/docs/Web/CSS/@media/display-mode
   SetDisplayMode(visual_properties.display_mode);
 
   SetAutoResizeMode(visual_properties.auto_resize_enabled,

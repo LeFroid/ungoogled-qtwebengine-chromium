@@ -40,10 +40,10 @@ enum Options {
 class CSPParser {
  public:
   // Represents a CSP directive.
-  // E.g. for the directive "script-src 'self' www.google.com"
-  // |directive_string| is "script-src 'self' www.google.com".
+  // E.g. for the directive "script-src 'self' www.9oo91e.qjz9zk"
+  // |directive_string| is "script-src 'self' www.9oo91e.qjz9zk".
   // |directive_name| is "script_src".
-  // |directive_values| is ["'self'", "www.google.com"].
+  // |directive_values| is ["'self'", "www.9oo91e.qjz9zk"].
   struct Directive {
     Directive(base::StringPiece directive_string,
               std::string directive_name,

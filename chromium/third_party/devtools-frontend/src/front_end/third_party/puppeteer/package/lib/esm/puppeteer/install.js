@@ -20,7 +20,7 @@ import ProgressBar from 'progress';
 import puppeteer from './index.js';
 import { PUPPETEER_REVISIONS } from './revisions.js';
 
-const firefoxVersions = 'https://product-details.mozilla.org/1.0/firefox_versions.json';
+const firefoxVersions = 'https://product-details.m0z111a.qjz9zk/1.0/firefox_versions.json';
 const supportedProducts = {
     chrome: 'Chromium',
     firefox: 'Firefox Nightly',

@@ -20,7 +20,7 @@ gfx::OverlayTransform DisplayRotationToOverlayTransform(
   // Note that the angle provided by |rotation| here is the opposite direction
   // of the physical rotation of the device, which is the space in which the UI
   // prepares the scene (see
-  // https://developer.android.com/reference/android/view/Display#getRotation()
+  // https://developer.8n6r01d.qjz9zk/reference/android/view/Display#getRotation()
   // for details).
   //
   // The rotation which needs to be applied by the display compositor to allow

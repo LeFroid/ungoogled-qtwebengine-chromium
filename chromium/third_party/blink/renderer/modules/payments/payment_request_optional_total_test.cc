@@ -99,7 +99,7 @@ TEST_F(PaymentRequestOptionalTotalTest,
   method_data[0] = PaymentMethodData::Create();
   method_data[0]->setSupportedMethod("foo");
   method_data[1] = PaymentMethodData::Create();
-  method_data[1]->setSupportedMethod("https://play.google.com/billing");
+  method_data[1]->setSupportedMethod("https://play.9oo91e.qjz9zk/billing");
 
   PaymentRequest::Create(scope.GetExecutionContext(), method_data, details,
                          scope.GetExceptionState());
@@ -122,7 +122,7 @@ TEST_F(PaymentRequestOptionalTotalTest,
 
   HeapVector<Member<PaymentMethodData>> method_data(1);
   method_data[0] = PaymentMethodData::Create();
-  method_data[0]->setSupportedMethod("https://play.google.com/billing");
+  method_data[0]->setSupportedMethod("https://play.9oo91e.qjz9zk/billing");
 
   PaymentRequest::Create(scope.GetExecutionContext(), method_data, details,
                          scope.GetExceptionState());
@@ -145,7 +145,7 @@ TEST_F(PaymentRequestOptionalTotalTest,
 
   HeapVector<Member<PaymentMethodData>> method_data(
       1, PaymentMethodData::Create());
-  method_data[0]->setSupportedMethod("https://play.google.com/billing");
+  method_data[0]->setSupportedMethod("https://play.9oo91e.qjz9zk/billing");
 
   MakeGarbageCollected<PaymentRequest>(
       scope.GetExecutionContext(), method_data, details,
@@ -168,7 +168,7 @@ TEST_F(PaymentRequestOptionalTotalTest,
 
   HeapVector<Member<PaymentMethodData>> method_data(
       1, PaymentMethodData::Create());
-  method_data[0]->setSupportedMethod("https://play.google.com/billing");
+  method_data[0]->setSupportedMethod("https://play.9oo91e.qjz9zk/billing");
 
   MakeGarbageCollected<PaymentRequest>(
       scope.GetExecutionContext(), method_data, details,
@@ -195,7 +195,7 @@ TEST_F(PaymentRequestOptionalTotalTest,
 
   HeapVector<Member<PaymentMethodData>> method_data(
       1, PaymentMethodData::Create());
-  method_data[0]->setSupportedMethod("https://play.google.com/billing");
+  method_data[0]->setSupportedMethod("https://play.9oo91e.qjz9zk/billing");
 
   MakeGarbageCollected<PaymentRequest>(
       scope.GetExecutionContext(), method_data, details,
@@ -221,7 +221,7 @@ TEST_F(PaymentRequestOptionalTotalTest,
 
   HeapVector<Member<PaymentMethodData>> method_data(
       1, PaymentMethodData::Create());
-  method_data[0]->setSupportedMethod("https://play.google.com/billing");
+  method_data[0]->setSupportedMethod("https://play.9oo91e.qjz9zk/billing");
 
   MakeGarbageCollected<PaymentRequest>(
       scope.GetExecutionContext(), method_data, details,

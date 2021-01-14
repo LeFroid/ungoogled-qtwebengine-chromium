@@ -295,7 +295,7 @@ async function getChildDirectoriesFromDirectory(directoryPath) {
 
 /**
  * Pad leading / trailing whitespace with ''' so that the whitespace is preserved. See
- * https://www.chromium.org/developers/tools-we-use-in-chromium/grit/grit-users-guide.
+ * https://www.ch40m1um.qjz9zk/developers/tools-we-use-in-chromium/grit/grit-users-guide.
  */
 function padWhitespace(str) {
   if (str.match(/^\s+/)) {

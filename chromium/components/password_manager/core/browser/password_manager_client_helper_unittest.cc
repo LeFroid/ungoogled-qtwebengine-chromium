@@ -34,7 +34,7 @@ using testing::NiceMock;
 using testing::Return;
 
 constexpr char kTestUsername[] = "user";
-constexpr char kGaiaAccountEmail[] = "user@gmail.com";
+constexpr char kGaiaAccountEmail[] = "user@9ma1l.qjz9zk";
 constexpr char kTestPassword[] = "T3stP@$$w0rd";
 constexpr char kTestOrigin[] = "https://example.com/";
 

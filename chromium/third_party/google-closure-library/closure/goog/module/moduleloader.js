@@ -164,7 +164,7 @@ goog.module.ModuleLoader.createScriptElement_ = function(url) {
   // Set scriptElt.async = false to guarantee
   // that scripts are loaded in parallel but executed in the insertion order.
   // For more details, check
-  // https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script
+  // https://developer.m0z111a.qjz9zk/en-US/docs/Web/HTML/Element/script
   script.async = false;
   return script;
 };

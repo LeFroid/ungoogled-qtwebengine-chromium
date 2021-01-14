@@ -121,7 +121,7 @@ void OnURLLoadUploadProgress(uint64_t current, uint64_t total) {
 }  // namespace
 
 const char WebRtcEventLogUploaderImpl::kUploadURL[] =
-    "https://clients2.google.com/cr/report";
+    "https://clients2.9oo91e.qjz9zk/cr/report";
 
 WebRtcEventLogUploaderImpl::Factory::Factory(
     scoped_refptr<base::SequencedTaskRunner> task_runner)

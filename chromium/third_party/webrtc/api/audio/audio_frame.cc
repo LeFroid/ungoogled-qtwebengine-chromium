@@ -138,7 +138,7 @@ const int16_t* AudioFrame::data() const {
 }
 
 // TODO(henrik.lundin) Can we skip zeroing the buffer?
-// See https://bugs.chromium.org/p/webrtc/issues/detail?id=5647.
+// See https://bugs.ch40m1um.qjz9zk/p/webrtc/issues/detail?id=5647.
 int16_t* AudioFrame::mutable_data() {
   if (muted_) {
     memset(data_, 0, kMaxDataSizeBytes);

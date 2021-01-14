@@ -265,7 +265,7 @@ TEST_F(ResolveProxyHelperTest, CancelPendingRequests) {
 
 // Issue a request that fails.
 TEST_F(ResolveProxyHelperTest, RequestFails) {
-  GURL url("http://www.google.com/");
+  GURL url("http://www.9oo91e.qjz9zk/");
 
   base::Optional<std::string> result_proxy_list;
   helper_->ResolveProxy(url,
@@ -286,7 +286,7 @@ TEST_F(ResolveProxyHelperTest, RequestFails) {
 
 // Issue a request, only to have the Mojo pipe closed.
 TEST_F(ResolveProxyHelperTest, PipeClosed) {
-  GURL url("http://www.google.com/");
+  GURL url("http://www.9oo91e.qjz9zk/");
 
   base::Optional<std::string> result_proxy_list;
   helper_->ResolveProxy(url,
@@ -308,7 +308,7 @@ TEST_F(ResolveProxyHelperTest, PipeClosed) {
 
 // Fail to send a request to the network service.
 TEST_F(ResolveProxyHelperTest, FailToSendRequest) {
-  GURL url("http://www.google.com/");
+  GURL url("http://www.9oo91e.qjz9zk/");
 
   helper_->set_fail_to_send_request(true);
 

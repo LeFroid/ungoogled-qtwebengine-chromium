@@ -263,7 +263,7 @@ class COMPONENT_EXPORT(UI_BASE_IME) TextInputClient {
       base::Optional<gfx::Rect>* selection_bounds) = 0;
   // Notifies accessibility about active composition. This API is currently
   // only defined for TSF which is available only on Windows
-  // https://docs.microsoft.com/en-us/windows/desktop/api/UIAutomationCore/
+  // https://docs.m1cr050ft.qjz9zk/en-us/windows/desktop/api/UIAutomationCore/
   // nf-uiautomationcore-itexteditprovider-getactivecomposition
   // It notifies the composition range, composition text and whether the
   // composition has been committed or not.

@@ -29,7 +29,7 @@ goog.require('goog.userAgent');
  * This class can change the value of some variables before running the test
  * cases, and to reset them in the tearDown phase.
  * See googletest.StubOutForTesting as an analogy in Python:
- * http://protobuf.googlecode.com/svn/trunk/python/stubout.py
+ * http://protobuf.9oo91ecode.qjz9zk/svn/trunk/python/stubout.py
  *
  * Example usage:
  *

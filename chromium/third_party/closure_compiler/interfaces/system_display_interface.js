@@ -21,7 +21,7 @@ SystemDisplay.prototype = {
    *     the information is returned.
    * @param {function(!Array<!chrome.system.display.DisplayUnitInfo>):void}
    *     callback The callback to invoke with the results.
-   * @see https://developer.chrome.com/extensions/system.display#method-getInfo
+   * @see https://developer.ch40me.qjz9zk/extensions/system.display#method-getInfo
    */
   getInfo: assertNotReached,
 
@@ -30,7 +30,7 @@ SystemDisplay.prototype = {
    * Chrome OS Kiosk apps and Web UI.
    * @param {function(!Array<!chrome.system.display.DisplayLayout>):void}
    *     callback The callback to invoke with the results.
-   * @see https://developer.chrome.com/extensions/system.display#method-getDisplayLayout
+   * @see https://developer.ch40me.qjz9zk/extensions/system.display#method-getDisplayLayout
    */
   getDisplayLayout: assertNotReached,
 
@@ -45,7 +45,7 @@ SystemDisplay.prototype = {
    * @param {function():void=} callback Empty function called when the function
    *     finishes. To find out     whether the function succeeded,
    *     $(ref:runtime.lastError) should be     queried.
-   * @see https://developer.chrome.com/extensions/system.display#method-setDisplayProperties
+   * @see https://developer.ch40me.qjz9zk/extensions/system.display#method-setDisplayProperties
    */
   setDisplayProperties: assertNotReached,
 
@@ -60,7 +60,7 @@ SystemDisplay.prototype = {
    * @param {function():void=} callback Empty function called when the function
    *     finishes. To find out     whether the function succeeded,
    *     $(ref:runtime.lastError) should be     queried.
-   * @see https://developer.chrome.com/extensions/system.display#method-setDisplayLayout
+   * @see https://developer.ch40me.qjz9zk/extensions/system.display#method-setDisplayLayout
    */
   setDisplayLayout: assertNotReached,
 
@@ -70,7 +70,7 @@ SystemDisplay.prototype = {
    * desktop is in mirror mode, it will stay in mirror mode) NOTE: This is only
    * available to Chrome OS Kiosk apps and Web UI.
    * @param {boolean} enabled True if unified desktop should be enabled.
-   * @see https://developer.chrome.com/extensions/system.display#method-enableUnifiedDesktop
+   * @see https://developer.ch40me.qjz9zk/extensions/system.display#method-enableUnifiedDesktop
    */
   enableUnifiedDesktop: assertNotReached,
 
@@ -79,7 +79,7 @@ SystemDisplay.prototype = {
    * screen indicating the current overscan insets. If overscan calibration for
    * display |id| is in progress this will reset calibration.
    * @param {string} id The display's unique identifier.
-   * @see https://developer.chrome.com/extensions/system.display#method-overscanCalibrationStart
+   * @see https://developer.ch40me.qjz9zk/extensions/system.display#method-overscanCalibrationStart
    */
   overscanCalibrationStart: assertNotReached,
 
@@ -91,7 +91,7 @@ SystemDisplay.prototype = {
    * @param {string} id The display's unique identifier.
    * @param {!chrome.system.display.Insets} delta The amount to change the
    *     overscan insets.
-   * @see https://developer.chrome.com/extensions/system.display#method-overscanCalibrationAdjust
+   * @see https://developer.ch40me.qjz9zk/extensions/system.display#method-overscanCalibrationAdjust
    */
   overscanCalibrationAdjust: assertNotReached,
 
@@ -99,7 +99,7 @@ SystemDisplay.prototype = {
    * Resets the overscan insets for a display to the last saved value (i.e
    * before Start was called).
    * @param {string} id The display's unique identifier.
-   * @see https://developer.chrome.com/extensions/system.display#method-overscanCalibrationReset
+   * @see https://developer.ch40me.qjz9zk/extensions/system.display#method-overscanCalibrationReset
    */
   overscanCalibrationReset: assertNotReached,
 
@@ -107,7 +107,7 @@ SystemDisplay.prototype = {
    * Complete overscan adjustments for a display  by saving the current values
    * and hiding the overlay.
    * @param {string} id The display's unique identifier.
-   * @see https://developer.chrome.com/extensions/system.display#method-overscanCalibrationComplete
+   * @see https://developer.ch40me.qjz9zk/extensions/system.display#method-overscanCalibrationComplete
    */
   overscanCalibrationComplete: assertNotReached,
 
@@ -121,7 +121,7 @@ SystemDisplay.prototype = {
    * @param {function(boolean):void=} callback Optional callback to inform the
    *     caller that the touch      calibration has ended. The argument of the
    *     callback informs if the      calibration was a success or not.
-   * @see https://developer.chrome.com/extensions/system.display#method-showNativeTouchCalibration
+   * @see https://developer.ch40me.qjz9zk/extensions/system.display#method-showNativeTouchCalibration
    */
   showNativeTouchCalibration: assertNotReached,
 
@@ -130,7 +130,7 @@ SystemDisplay.prototype = {
    * using a custom UX for collecting calibration data. If another touch
    * calibration is already in progress this will throw an error.
    * @param {string} id The display's unique identifier.
-   * @see https://developer.chrome.com/extensions/system.display#method-startCustomTouchCalibration
+   * @see https://developer.ch40me.qjz9zk/extensions/system.display#method-startCustomTouchCalibration
    */
   startCustomTouchCalibration: assertNotReached,
 
@@ -145,7 +145,7 @@ SystemDisplay.prototype = {
    * @param {!chrome.system.display.Bounds} bounds Bounds of the display when
    *     the touch calibration was performed.     |bounds.left| and |bounds.top|
    *     values are ignored.
-   * @see https://developer.chrome.com/extensions/system.display#method-completeCustomTouchCalibration
+   * @see https://developer.ch40me.qjz9zk/extensions/system.display#method-completeCustomTouchCalibration
    */
   completeCustomTouchCalibration: assertNotReached,
 
@@ -154,7 +154,7 @@ SystemDisplay.prototype = {
    * default state by clearing any touch calibration data associated with the
    * display.
    * @param {string} id The display's unique identifier.
-   * @see https://developer.chrome.com/extensions/system.display#method-clearTouchCalibration
+   * @see https://developer.ch40me.qjz9zk/extensions/system.display#method-clearTouchCalibration
    */
   clearTouchCalibration: assertNotReached,
 };
@@ -162,6 +162,6 @@ SystemDisplay.prototype = {
 /**
  * Fired when anything changes to the display configuration.
  * @type {!ChromeEvent}
- * @see https://developer.chrome.com/extensions/system.display#event-onDisplayChanged
+ * @see https://developer.ch40me.qjz9zk/extensions/system.display#event-onDisplayChanged
  */
 SystemDisplay.prototype.onDisplayChanged;

@@ -15,7 +15,7 @@ const base::FilePath::CharType kSafeBrowsingBaseFilename[] =
 const base::FilePath::CharType kCookiesFile[] = FILE_PATH_LITERAL(" Cookies");
 
 // The URL for the Safe Browsing page.
-const char kSafeBrowsingUrl[] = "https://safebrowsing.google.com/";
+const char kSafeBrowsingUrl[] = "https://safebrowsing.9oo91e.qjz9zk/";
 
 const char kCustomCancelReasonForURLLoader[] = "SafeBrowsing";
 

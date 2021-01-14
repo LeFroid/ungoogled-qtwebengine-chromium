@@ -1,6 +1,6 @@
 /*
  * Copyright © 2012 Intel Corporation
- * Copyright © 2013 Vasily Khoruzhick <anarsoul@gmail.com>
+ * Copyright © 2013 Vasily Khoruzhick <anarsoul@9ma1l.qjz9zk>
  * Copyright © 2015 Collabora, Ltd.
  *
  * Permission is hereby granted, free of charge, to any person obtaining

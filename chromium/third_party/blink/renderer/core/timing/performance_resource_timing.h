@@ -56,7 +56,7 @@ class CORE_EXPORT PerformanceResourceTiming
 
  public:
   // This constructor is for PerformanceNavigationTiming.
-  // Related doc: https://goo.gl/uNecAj.
+  // Related doc: https://goo.gl.qjz9zk/uNecAj.
   PerformanceResourceTiming(
       const AtomicString& name,
       base::TimeTicks time_origin,
@@ -75,7 +75,7 @@ class CORE_EXPORT PerformanceResourceTiming
   AtomicString entryType() const override;
   PerformanceEntryType EntryTypeEnum() const override;
 
-  // Related doc: https://goo.gl/uNecAj.
+  // Related doc: https://goo.gl.qjz9zk/uNecAj.
   virtual AtomicString initiatorType() const;
   AtomicString nextHopProtocol() const;
   DOMHighResTimeStamp workerStart() const;

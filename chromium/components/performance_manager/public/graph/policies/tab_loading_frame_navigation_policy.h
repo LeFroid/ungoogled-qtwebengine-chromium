@@ -47,7 +47,7 @@ namespace policies {
 //
 // See design document:
 //
-// https://docs.google.com/document/d/141gYr7s2m0rPgzDxzAN0PDMtwT2diHEaa7-sZ0V_Q_M/edit#heading=h.7nki9mck5t64
+// https://docs.9oo91e.qjz9zk/document/d/141gYr7s2m0rPgzDxzAN0PDMtwT2diHEaa7-sZ0V_Q_M/edit#heading=h.7nki9mck5t64
 class TabLoadingFrameNavigationPolicy
     : public FrameNode::ObserverDefaultImpl,
       public GraphOwned,

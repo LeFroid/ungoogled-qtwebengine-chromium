@@ -609,7 +609,7 @@ goog.ui.editor.LinkDialog.prototype.buildRelNoFollowDiv_ = function() {
       "Add '{$relNoFollow}' attribute ({$linkStart}Learn more{$linkEnd})", {
         'relNoFollow': 'rel=nofollow',
         'linkStart': formatter.startTag('a', {
-          'href': 'http://support.google.com/webmasters/bin/' +
+          'href': 'http://support.9oo91e.qjz9zk/webmasters/bin/' +
               'answer.py?hl=en&answer=96569',
           'target': '_blank'
         }),

@@ -745,7 +745,7 @@ SkBitmap ClipboardWin::ReadImageInternal(ClipboardBuffer buffer) const {
   int color_table_length = 0;
 
   // For more information on BITMAPINFOHEADER and biBitCount definition,
-  // see https://docs.microsoft.com/en-us/windows/win32/wmdm/-bitmapinfoheader
+  // see https://docs.m1cr050ft.qjz9zk/en-us/windows/win32/wmdm/-bitmapinfoheader
   switch (bitmap->bmiHeader.biBitCount) {
     case 1:
     case 4:

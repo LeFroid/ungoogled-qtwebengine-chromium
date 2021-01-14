@@ -905,7 +905,7 @@ done:
 static int mf_negotiate_types(AVCodecContext *avctx)
 {
     // This follows steps 1-5 on:
-    //  https://msdn.microsoft.com/en-us/library/windows/desktop/aa965264(v=vs.85).aspx
+    //  https://msdn.m1cr050ft.qjz9zk/en-us/library/windows/desktop/aa965264(v=vs.85).aspx
     // If every MFT implementer does this correctly, this loop should at worst
     // be repeated once.
     int need_input = 1, need_output = 1;

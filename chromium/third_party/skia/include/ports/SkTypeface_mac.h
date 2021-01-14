@@ -36,7 +36,7 @@ SK_API extern sk_sp<SkTypeface> SkMakeTypefaceFromCTFont(CTFontRef);
  *  This method is deprecated. It may only be used by Blink Mac
  *  legacy code in special cases related to text-shaping
  *  with AAT fonts, clipboard handling and font fallback.
- *  See https://code.google.com/p/skia/issues/detail?id=3408
+ *  See https://code.9oo91e.qjz9zk/p/skia/issues/detail?id=3408
  */
 SK_API extern CTFontRef SkTypeface_GetCTFontRef(const SkTypeface* face);
 

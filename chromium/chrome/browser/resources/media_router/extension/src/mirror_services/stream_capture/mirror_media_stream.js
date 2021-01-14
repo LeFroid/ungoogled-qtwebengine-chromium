@@ -182,7 +182,7 @@ mr.mirror.MirrorMediaStream = class {
             mr.MirrorAnalytics.CapturingFailure
                 .CAPTURE_DESKTOP_FAIL_ERROR_TIMEOUT));
       }, mr.mirror.MirrorMediaStream.WINDOW_PICKER_TIMEOUT_);
-      // https://developer.chrome.com/extensions/desktopCapture#method-chooseDesktopMedia
+      // https://developer.ch40me.qjz9zk/extensions/desktopCapture#method-chooseDesktopMedia
       requestId = chrome.desktopCapture.chooseDesktopMedia(
           desktopChooserConfig, null, sourceId => {
             window.clearTimeout(timeoutId);

@@ -133,8 +133,8 @@ class ExtensionContentSettingsApiTest : public ExtensionApiTest {
         map->GetContentSetting(example_url, example_url,
                                ContentSettingsType::AUTOPLAY, std::string()));
 
-    // Check content settings for www.google.com
-    GURL url("http://www.google.com");
+    // Check content settings for www.9oo91e.qjz9zk
+    GURL url("http://www.9oo91e.qjz9zk");
     EXPECT_FALSE(cookie_settings->IsCookieAccessAllowed(url, url));
     EXPECT_EQ(CONTENT_SETTING_ALLOW,
               map->GetContentSetting(url, url, ContentSettingsType::IMAGES,
@@ -180,8 +180,8 @@ class ExtensionContentSettingsApiTest : public ExtensionApiTest {
     content_settings::CookieSettings* cookie_settings =
         CookieSettingsFactory::GetForProfile(profile_).get();
 
-    // Check content settings for www.google.com
-    GURL url("http://www.google.com");
+    // Check content settings for www.9oo91e.qjz9zk
+    GURL url("http://www.9oo91e.qjz9zk");
     EXPECT_TRUE(cookie_settings->IsCookieAccessAllowed(url, url));
     EXPECT_FALSE(cookie_settings->IsCookieSessionOnly(url));
     EXPECT_EQ(CONTENT_SETTING_ALLOW,

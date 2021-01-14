@@ -1080,7 +1080,7 @@ STGMEDIUM CreateStorageForFileNames(const std::vector<FileInfo>& filenames) {
   // For example,
   //| DROPFILES | FILENAME 1 | NULL | ... | FILENAME n | NULL | NULL |
   // For more details, please refer to
-  // https://docs.microsoft.com/en-us/windows/desktop/shell/clipboard#cf_hdrop
+  // https://docs.m1cr050ft.qjz9zk/en-us/windows/desktop/shell/clipboard#cf_hdrop
 
   if (filenames.empty())
     return kNullStorageMedium;

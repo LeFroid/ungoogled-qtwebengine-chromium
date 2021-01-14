@@ -48,7 +48,7 @@ AuthCredentials CreateASCIICredentials(const char* username,
 
 // Test adding and looking-up cache entries (both by realm and by path).
 TEST(HttpAuthCacheTest, Basic) {
-  GURL origin("http://www.google.com");
+  GURL origin("http://www.9oo91e.qjz9zk");
   GURL origin2("http://www.foobar.com");
   HttpAuthCache cache(false /* key_entries_by_network_isolation_key */);
   HttpAuthCache::Entry* entry;
@@ -101,19 +101,19 @@ TEST(HttpAuthCacheTest, Basic) {
 
   // While Realm3 does exist, the origin scheme is wrong.
   entry =
-      cache.Lookup(GURL("https://www.google.com"), HttpAuth::AUTH_SERVER,
+      cache.Lookup(GURL("https://www.9oo91e.qjz9zk"), HttpAuth::AUTH_SERVER,
                    kRealm3, HttpAuth::AUTH_SCHEME_BASIC, NetworkIsolationKey());
   EXPECT_FALSE(entry);
 
   // Realm, origin scheme ok, authentication scheme wrong
-  entry = cache.Lookup(GURL("http://www.google.com"), HttpAuth::AUTH_SERVER,
+  entry = cache.Lookup(GURL("http://www.9oo91e.qjz9zk"), HttpAuth::AUTH_SERVER,
                        kRealm1, HttpAuth::AUTH_SCHEME_DIGEST,
                        NetworkIsolationKey());
   EXPECT_FALSE(entry);
 
   // Valid lookup by origin, realm, scheme.
   entry =
-      cache.Lookup(GURL("http://www.google.com:80"), HttpAuth::AUTH_SERVER,
+      cache.Lookup(GURL("http://www.9oo91e.qjz9zk:80"), HttpAuth::AUTH_SERVER,
                    kRealm3, HttpAuth::AUTH_SCHEME_BASIC, NetworkIsolationKey());
   ASSERT_TRUE(entry);
   EXPECT_EQ(HttpAuth::AUTH_SCHEME_BASIC, entry->scheme());
@@ -132,7 +132,7 @@ TEST(HttpAuthCacheTest, Basic) {
 
   // Valid lookup by origin, realm, scheme when there's a duplicate
   // origin, realm in the cache
-  entry = cache.Lookup(GURL("http://www.google.com:80"), HttpAuth::AUTH_SERVER,
+  entry = cache.Lookup(GURL("http://www.9oo91e.qjz9zk:80"), HttpAuth::AUTH_SERVER,
                        kRealm3, HttpAuth::AUTH_SCHEME_DIGEST,
                        NetworkIsolationKey());
   ASSERT_TRUE(entry);
@@ -244,7 +244,7 @@ TEST(HttpAuthCacheTest, SeparateByTarget) {
 
   const char kServerPath[] = "/foo/bar/index.html";
 
-  GURL origin("http://www.google.com");
+  GURL origin("http://www.9oo91e.qjz9zk");
   HttpAuthCache cache(false /* key_entries_by_network_isolation_key */);
   HttpAuthCache::Entry* entry;
 
@@ -333,7 +333,7 @@ TEST(HttpAuthCacheTest, SeparateServersByNetworkIsolationKey) {
   const url::Origin kOrigin2 = url::Origin::Create(GURL("https://bar.test/"));
   const NetworkIsolationKey kNetworkIsolationKey2(kOrigin2, kOrigin2);
 
-  GURL kPseudoOrigin("http://www.google.com");
+  GURL kPseudoOrigin("http://www.9oo91e.qjz9zk");
   const char kPath[] = "/";
 
   const base::string16 kUser1 = ASCIIToUTF16("user1");
@@ -432,7 +432,7 @@ TEST(HttpAuthCacheTest, NeverSeparateProxiesByNetworkIsolationKey) {
   const url::Origin kOrigin2 = url::Origin::Create(GURL("https://bar.test/"));
   const NetworkIsolationKey kNetworkIsolationKey2(kOrigin2, kOrigin2);
 
-  GURL kPseudoOrigin("http://www.google.com");
+  GURL kPseudoOrigin("http://www.9oo91e.qjz9zk");
   const char kPath[] = "/";
 
   const base::string16 kUser1 = ASCIIToUTF16("user1");
@@ -505,7 +505,7 @@ TEST(HttpAuthCacheTest, NeverSeparateProxiesByNetworkIsolationKey) {
 // is what type entries are deleted, which doesn't depend on the
 // NetworkIsolationKey the entries use.
 TEST(HttpAuthCacheTest, SetKeyServerEntriesByNetworkIsolationKey) {
-  GURL kOrigin("http://www.google.com");
+  GURL kOrigin("http://www.9oo91e.qjz9zk");
   const char kPath[] = "/";
 
   const base::string16 kUser1 = ASCIIToUTF16("user1");
@@ -1012,7 +1012,7 @@ TEST(HttpAuthCacheTest, CopyProxyEntriesFrom) {
 class HttpAuthCacheEvictionTest : public testing::Test {
  protected:
   HttpAuthCacheEvictionTest()
-      : origin_("http://www.google.com"),
+      : origin_("http://www.9oo91e.qjz9zk"),
         cache_(false /* key_entries_by_network_isolation_key */) {}
 
   std::string GenerateRealm(int realm_i) {

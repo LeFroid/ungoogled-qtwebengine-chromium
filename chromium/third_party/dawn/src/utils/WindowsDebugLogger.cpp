@@ -36,7 +36,7 @@ namespace utils {
 
             mThread = std::thread(
                 [](HANDLE shouldExit) {
-                    // https://blogs.msdn.microsoft.com/reiley/2011/07/29/a-debugging-approach-to-outputdebugstring/
+                    // https://blogs.msdn.m1cr050ft.qjz9zk/reiley/2011/07/29/a-debugging-approach-to-outputdebugstring/
                     // for the layout of this struct.
                     struct {
                         DWORD process_id;

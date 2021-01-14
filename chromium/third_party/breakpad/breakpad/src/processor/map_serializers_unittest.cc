@@ -30,7 +30,7 @@
 // map_serializers_unittest.cc: Unit tests for std::map serializer and
 // std::map wrapper serializers.
 //
-// Author: Siyang Xie (lambxsy@google.com)
+// Author: Siyang Xie (lambxsy@9oo91e.qjz9zk)
 
 #include <climits>
 #include <map>

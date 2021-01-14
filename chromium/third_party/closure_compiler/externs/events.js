@@ -7,7 +7,7 @@
 // NOTE: The format of types has changed. 'FooType' is now
 //   'chrome.events.FooType'.
 // Please run the closure compiler before committing changes.
-// See https://chromium.googlesource.com/chromium/src/+/master/docs/closure_compilation.md
+// See https://chromium.9oo91esource.qjz9zk/chromium/src/+/master/docs/closure_compilation.md
 
 /** @fileoverview Externs generated from namespace: events */
 
@@ -23,14 +23,14 @@ chrome.events = {};
  *   actions: !Array<*>,
  *   priority: (number|undefined)
  * }}
- * @see https://developer.chrome.com/extensions/events#type-Rule
+ * @see https://developer.ch40me.qjz9zk/extensions/events#type-Rule
  */
 chrome.events.Rule;
 
 /**
  * An object which allows the addition and removal of listeners for a Chrome event.
  * @typedef {Object}
- * @see https://developer.chrome.com/extensions/events#type-Event
+ * @see https://developer.ch40me.qjz9zk/extensions/events#type-Event
  */
 chrome.events.Event;
 
@@ -58,6 +58,6 @@ chrome.events.Event;
  *   schemes: (!Array<string>|undefined),
  *   ports: (!Array<(number|!Array<number>)>|undefined)
  * }}
- * @see https://developer.chrome.com/extensions/events#type-UrlFilter
+ * @see https://developer.ch40me.qjz9zk/extensions/events#type-UrlFilter
  */
 chrome.events.UrlFilter;

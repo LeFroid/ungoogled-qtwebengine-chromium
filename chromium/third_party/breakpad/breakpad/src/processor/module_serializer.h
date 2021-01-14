@@ -32,7 +32,7 @@
 // chunk of data. The serialized data can be read and loaded by
 // FastSourceLineResolver without CPU & memory-intensive parsing.
 //
-// Author: Siyang Xie (lambxsy@google.com)
+// Author: Siyang Xie (lambxsy@9oo91e.qjz9zk)
 
 #ifndef PROCESSOR_MODULE_SERIALIZER_H__
 #define PROCESSOR_MODULE_SERIALIZER_H__

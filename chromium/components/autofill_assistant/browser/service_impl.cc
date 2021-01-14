@@ -30,7 +30,7 @@ namespace autofill_assistant {
 namespace {
 
 const char* const kDefaultAutofillAssistantServerUrl =
-    "https://automate-pa.googleapis.com";
+    "https://automate-pa.9oo91eapis.qjz9zk";
 const char* const kScriptEndpoint = "/v1/supportsSite2";
 const char* const kActionEndpoint = "/v1/actions2";
 

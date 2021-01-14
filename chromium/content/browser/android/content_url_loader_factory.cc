@@ -210,10 +210,10 @@ class ContentURLLoader : public network::mojom::URLLoader {
       // So we set the MIME type if the file extension is ".wbn" by calling
       // web_bundle_utils::GetWebBundleFileMimeTypeFromFile().
       // [1]
-      // https://android.googlesource.com/platform/frameworks/base/+/1b817f6/core/java/android/content/ContentResolver.java#481
-      // [2] https://android.googlesource.com/platform/external/mime-support/
+      // https://android.9oo91esource.qjz9zk/platform/frameworks/base/+/1b817f6/core/java/android/content/ContentResolver.java#481
+      // [2] https://android.9oo91esource.qjz9zk/platform/external/mime-support/
       // [3]
-      // https://android.googlesource.com/platform/libcore/+/master/luni/src/main/java/libcore/net/android.mime.types
+      // https://android.9oo91esource.qjz9zk/platform/libcore/+/master/luni/src/main/java/libcore/net/android.mime.types
       web_bundle_utils::GetWebBundleFileMimeTypeFromFile(path,
                                                          &head->mime_type);
     }

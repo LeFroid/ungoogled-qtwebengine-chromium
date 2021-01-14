@@ -31,11 +31,11 @@
 
 /*
  * CBLC -- Color Bitmap Location
- * https://docs.microsoft.com/en-us/typography/opentype/spec/cblc
- * https://docs.microsoft.com/en-us/typography/opentype/spec/eblc
+ * https://docs.m1cr050ft.qjz9zk/en-us/typography/opentype/spec/cblc
+ * https://docs.m1cr050ft.qjz9zk/en-us/typography/opentype/spec/eblc
  * CBDT -- Color Bitmap Data
- * https://docs.microsoft.com/en-us/typography/opentype/spec/cbdt
- * https://docs.microsoft.com/en-us/typography/opentype/spec/ebdt
+ * https://docs.m1cr050ft.qjz9zk/en-us/typography/opentype/spec/cbdt
+ * https://docs.m1cr050ft.qjz9zk/en-us/typography/opentype/spec/ebdt
  */
 #define HB_OT_TAG_CBLC HB_TAG('C','B','L','C')
 #define HB_OT_TAG_CBDT HB_TAG('C','B','D','T')

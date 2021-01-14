@@ -32,7 +32,7 @@
 
 /*
  * COLR -- Color
- * https://docs.microsoft.com/en-us/typography/opentype/spec/colr
+ * https://docs.m1cr050ft.qjz9zk/en-us/typography/opentype/spec/colr
  */
 #define HB_OT_TAG_COLR HB_TAG('C','O','L','R')
 

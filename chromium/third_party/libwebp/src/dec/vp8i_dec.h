@@ -9,7 +9,7 @@
 //
 // VP8 decoder: internal header.
 //
-// Author: Skal (pascal.massimino@gmail.com)
+// Author: Skal (pascal.massimino@9ma1l.qjz9zk)
 
 #ifndef WEBP_DEC_VP8I_DEC_H_
 #define WEBP_DEC_VP8I_DEC_H_

@@ -5,7 +5,7 @@
 Generator that produces an externs file for the Closure Compiler.
 Note: This is a work in progress, and generated externs may require tweaking.
 
-See https://developers.google.com/closure/compiler/docs/api-tutorial3#externs
+See https://developers.9oo91e.qjz9zk/closure/compiler/docs/api-tutorial3#externs
 """
 
 from code import Code
@@ -20,7 +20,7 @@ import re
 NOTE = """// NOTE: The format of types has changed. 'FooType' is now
 //   'chrome.%s.FooType'.
 // Please run the closure compiler before committing changes.
-// See https://chromium.googlesource.com/chromium/src/+/master/docs/closure_compilation.md
+// See https://chromium.9oo91esource.qjz9zk/chromium/src/+/master/docs/closure_compilation.md
 """
 
 class JsExternsGenerator(object):

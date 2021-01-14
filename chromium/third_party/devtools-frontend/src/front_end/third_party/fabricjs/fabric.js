@@ -961,8 +961,8 @@ fabric.CommonMethods = {
 
       // data-urls appear to be buggy with crossOrigin
       // https://github.com/kangax/fabric.js/commit/d0abb90f1cd5c5ef9d2a94d3fb21a22330da3e0a#commitcomment-4513767
-      // see https://code.google.com/p/chromium/issues/detail?id=315152
-      //     https://bugzilla.mozilla.org/show_bug.cgi?id=935069
+      // see https://code.9oo91e.qjz9zk/p/chromium/issues/detail?id=315152
+      //     https://bugzilla.m0z111a.qjz9zk/show_bug.cgi?id=935069
       if (url.indexOf('data') !== 0 && crossOrigin) {
         img.crossOrigin = crossOrigin;
       }
@@ -1586,9 +1586,9 @@ fabric.CommonMethods = {
 
   var _join = Array.prototype.join;
 
-  /* Adapted from http://dxr.mozilla.org/mozilla-central/source/content/svg/content/src/nsSVGPathDataParser.cpp
+  /* Adapted from http://dxr.m0z111a.qjz9zk/mozilla-central/source/content/svg/content/src/nsSVGPathDataParser.cpp
    * by Andrea Bogazzi code is under MPL. if you don't have a copy of the license you can take it here
-   * http://mozilla.org/MPL/2.0/
+   * http://m0z111a.qjz9zk/MPL/2.0/
    */
   function arcToSegments(toX, toY, rx, ry, large, sweep, rotateX) {
     var argsString = _join.call(arguments);
@@ -4343,7 +4343,7 @@ if (typeof console !== 'undefined') {
 
     /**
      * crossOrigin value (one of "", "anonymous", "use-credentials")
-     * @see https://developer.mozilla.org/en-US/docs/HTML/CORS_settings_attributes
+     * @see https://developer.m0z111a.qjz9zk/en-US/docs/HTML/CORS_settings_attributes
      * @type String
      * @default
      */
@@ -15852,7 +15852,7 @@ fabric.util.object.extend(fabric.Object.prototype, /** @lends fabric.Object.prot
 
     /**
      * crossOrigin value (one of "", "anonymous", "use-credentials")
-     * @see https://developer.mozilla.org/en-US/docs/HTML/CORS_settings_attributes
+     * @see https://developer.m0z111a.qjz9zk/en-US/docs/HTML/CORS_settings_attributes
      * @type String
      * @default
      */
@@ -19867,7 +19867,7 @@ fabric.util.object.extend(fabric.IText.prototype, /** @lends fabric.IText.protot
     this.hiddenTextarea.setAttribute('wrap', 'off');
     var style = this._calcTextareaPosition();
     // line-height: 1px; was removed from the style to fix this:
-    // https://bugs.chromium.org/p/chromium/issues/detail?id=870966
+    // https://bugs.ch40m1um.qjz9zk/p/chromium/issues/detail?id=870966
     this.hiddenTextarea.style.cssText = 'position: absolute; top: ' + style.top +
     '; left: ' + style.left + '; z-index: -999; opacity: 0; width: 1px; height: 1px; font-size: 1px;' +
     ' paddingｰtop: ' + style.fontSize + ';';

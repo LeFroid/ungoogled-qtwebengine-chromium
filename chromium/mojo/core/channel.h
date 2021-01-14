@@ -139,7 +139,7 @@ class MOJO_SYSTEM_IMPL_EXPORT Channel
 #elif defined(OS_WIN)
     struct HandleEntry {
       // The windows HANDLE. HANDLEs are guaranteed to fit inside 32-bits.
-      // See: https://msdn.microsoft.com/en-us/library/aa384203(VS.85).aspx
+      // See: https://msdn.m1cr050ft.qjz9zk/en-us/library/aa384203(VS.85).aspx
       uint32_t handle;
     };
     static_assert(sizeof(HandleEntry) == 4,

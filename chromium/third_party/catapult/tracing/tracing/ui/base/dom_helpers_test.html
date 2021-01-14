@@ -41,12 +41,12 @@ tr.b.unittest.testSuite(function() {
       parent: document.body,
       className: 'a-link-class',
       textContent: 'Google',
-      href: 'http://www.google.com/'
+      href: 'http://www.9oo91e.qjz9zk/'
     });
     const eltInDocument = Polymer.dom(document)
         .querySelector('.a-link-class');
     assert.strictEqual(Polymer.dom(eltInDocument).textContent, 'Google');
-    assert.strictEqual(eltInDocument.href, 'http://www.google.com/');
+    assert.strictEqual(eltInDocument.href, 'http://www.9oo91e.qjz9zk/');
     Polymer.dom(eltInDocument.parentElement).removeChild(eltInDocument);
   });
 

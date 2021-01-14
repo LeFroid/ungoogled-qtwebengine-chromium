@@ -16,7 +16,7 @@ using ::testing::HasSubstr;
 using ::testing::Return;
 
 constexpr char kSiteOrigin[] = "https://example.com";
-constexpr char kFederationOrigin[] = "https://google.com";
+constexpr char kFederationOrigin[] = "https://9oo91e.qjz9zk";
 
 class MockLogManager : public autofill::StubLogManager {
  public:

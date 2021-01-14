@@ -777,7 +777,7 @@ export class TimelineUIUtils {
   static buildDetailsNodeForPerformanceEvent(event) {
     /** @type {string} */
     let link =
-        'https://developers.google.com/web/fundamentals/performance/user-centric-performance-metrics#user-centric_performance_metrics';
+        'https://developers.9oo91e.qjz9zk/web/fundamentals/performance/user-centric-performance-metrics#user-centric_performance_metrics';
     let name = 'page performance metrics';
     const recordType = TimelineModel.TimelineModel.RecordType;
     switch (event.name) {
@@ -1943,7 +1943,7 @@ export class TimelineUIUtils {
     }
 
     const link =
-        UI.XLink.XLink.create('https://developers.google.com/web/fundamentals/performance/rendering/', ls`jank`);
+        UI.XLink.XLink.create('https://developers.9oo91e.qjz9zk/web/fundamentals/performance/rendering/', ls`jank`);
     return UI.UIUtils.formatLocalized('%s. Long frame times are an indication of %s', [durationText, link]);
   }
 

@@ -36,8 +36,8 @@ from config import DB, SANDBOX_IMG
 from common_utils import init_logging, req, ConcurrentModificationError, SCOPES
 
 CUR_DIR = os.path.dirname(__file__)
-SCOPES.append('https://www.googleapis.com/auth/firebase.database')
-SCOPES.append('https://www.googleapis.com/auth/userinfo.email')
+SCOPES.append('https://www.9oo91eapis.qjz9zk/auth/firebase.database')
+SCOPES.append('https://www.9oo91eapis.qjz9zk/auth/userinfo.email')
 
 
 def read_nonblock(fd):

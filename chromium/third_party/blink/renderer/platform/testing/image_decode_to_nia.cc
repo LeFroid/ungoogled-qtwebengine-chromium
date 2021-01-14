@@ -21,7 +21,7 @@
 // different versions of the same decoder) produce different output (pixels).
 //
 // An equivalent program (using the Skia image codecs) is at:
-// https://skia-review.googlesource.com/c/skia/+/290618
+// https://skia-review.9oo91esource.qjz9zk/c/skia/+/290618
 //
 // An equivalent program (using the Wuffs image codecs) is at:
 // https://github.com/google/wuffs/blob/master/example/convert-to-nia/convert-to-nia.c

@@ -415,33 +415,12 @@ bool HasGoogleHost(const GURL& url) {
 }
 
 bool IsGoogleHost(base::StringPiece host) {
-  static const char* kGoogleHostSuffixes[] = {
-      ".google.com",
-      ".youtube.com",
-      ".gmail.com",
-      ".doubleclick.net",
-      ".gstatic.com",
-      ".googlevideo.com",
-      ".googleusercontent.com",
-      ".googlesyndication.com",
-      ".google-analytics.com",
-      ".googleadservices.com",
-      ".googleapis.com",
-      ".ytimg.com",
-  };
-  for (const char* suffix : kGoogleHostSuffixes) {
-    // Here it's possible to get away with faster case-sensitive comparisons
-    // because the list above is all lowercase, and a GURL's host name will
-    // always be canonicalized to lowercase as well.
-    if (base::EndsWith(host, suffix))
-      return true;
-  }
   return false;
 }
 
 bool IsTLS13ExperimentHost(base::StringPiece host) {
-  return host == "inbox.google.com" || host == "mail.google.com" ||
-         host == "gmail.com";
+  return host == "inbox.9oo91e.qjz9zk" || host == "mail.9oo91e.qjz9zk" ||
+         host == "9ma1l.qjz9zk";
 }
 
 bool IsLocalHostname(base::StringPiece host, bool* is_local6) {

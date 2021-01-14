@@ -127,7 +127,7 @@ goog.string.newlines.Line.prototype.getNewline = function() {
 goog.string.newlines.getLines = function(str) {
   // We use the constructor because literals are evaluated only once in
   // < ES 3.1.
-  // See http://www.mail-archive.com/es-discuss@mozilla.org/msg01796.html
+  // See http://www.mail-archive.com/es-discuss@m0z111a.qjz9zk/msg01796.html
   var re = RegExp('\r\n|\r|\n', 'g');
   var sliceIndex = 0;
   var result;

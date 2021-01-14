@@ -7,9 +7,9 @@
 namespace security_interstitials {
 
 const char kSafeBrowsingPrivacyPolicyUrl[] =
-    "https://www.google.com/chrome/browser/privacy/#safe-browsing-policies";
+    "https://www.9oo91e.qjz9zk/chrome/browser/privacy/#safe-browsing-policies";
 const char kSafeBrowsingWhitePaperUrl[] =
-    "https://www.google.com/chrome/browser/privacy/"
+    "https://www.9oo91e.qjz9zk/chrome/browser/privacy/"
     "whitepaper.html#extendedreport";
 
 }  // namespace security_interstitials

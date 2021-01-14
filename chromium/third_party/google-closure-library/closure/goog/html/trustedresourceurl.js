@@ -249,10 +249,10 @@ goog.html.TrustedResourceUrl.unwrapTrustedScriptURL = function(
  * Example usage:
  *
  *    var url = goog.html.TrustedResourceUrl.format(goog.string.Const.from(
- *        'https://www.google.com/search?q=%{query}'), {'query': searchTerm});
+ *        'https://www.9oo91e.qjz9zk/search?q=%{query}'), {'query': searchTerm});
  *
  *    var url = goog.html.TrustedResourceUrl.format(goog.string.Const.from(
- *        '//www.youtube.com/v/%{videoId}?hl=en&fs=1%{autoplay}'), {
+ *        '//www.y0u1ub3.qjz9zk/v/%{videoId}?hl=en&fs=1%{autoplay}'), {
  *        'videoId': videoId,
  *        'autoplay': opt_autoplay ?
  *            goog.string.Const.from('&autoplay=1') : goog.string.Const.EMPTY
@@ -352,11 +352,11 @@ goog.html.TrustedResourceUrl.URL_PARAM_PARSER_ =
  *
  * Example usage:
  *
- *     // Creates '//www.youtube.com/v/abc?autoplay=1' for videoId='abc' and
- *     // opt_autoplay=1. Creates '//www.youtube.com/v/abc' for videoId='abc'
+ *     // Creates '//www.y0u1ub3.qjz9zk/v/abc?autoplay=1' for videoId='abc' and
+ *     // opt_autoplay=1. Creates '//www.y0u1ub3.qjz9zk/v/abc' for videoId='abc'
  *     // and opt_autoplay=undefined.
  *     var url = goog.html.TrustedResourceUrl.formatWithParams(
- *         goog.string.Const.from('//www.youtube.com/v/%{videoId}'),
+ *         goog.string.Const.from('//www.y0u1ub3.qjz9zk/v/%{videoId}'),
  *         {'videoId': videoId},
  *         {'autoplay': opt_autoplay});
  *

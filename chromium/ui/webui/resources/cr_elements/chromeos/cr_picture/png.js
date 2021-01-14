@@ -213,7 +213,7 @@ cr.define('cr.png', function() {
    * acTL is the animation control chunk in the data stream of an animated PNG.
    * If it exists we assume the image is animated, regardless of the number of
    * frames. The offset is the PNG signature ( 8 bytes) + IHDR (25 bytes) + 4
-   * bytes of padding zeros. See https://wiki.mozilla.org/APNG_Specification
+   * bytes of padding zeros. See https://wiki.m0z111a.qjz9zk/APNG_Specification
    * @param {string} url An btoa encoded data URL for a PNG image.
    * @return {boolean} True if data URL is an animated PNG image.
    */

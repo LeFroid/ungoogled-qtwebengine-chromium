@@ -29,11 +29,11 @@ extern const base::Feature kAbusiveExperienceEnforce;
 
 constexpr char kAbusiveEnforceMessage[] =
     "Chrome prevented this site from opening a new tab or window. Learn more "
-    "at https://www.chromestatus.com/feature/5243055179300864";
+    "at https://www.ch40mestatus.qjz9zk/feature/5243055179300864";
 constexpr char kAbusiveWarnMessage[] =
     "Chrome might start preventing this site from opening new tabs or "
     "windows in the future. Learn more at "
-    "https://www.chromestatus.com/feature/5243055179300864";
+    "https://www.ch40mestatus.qjz9zk/feature/5243055179300864";
 
 // This class observes main frame navigation checks incoming from safe browsing
 // (currently implemented by the subresource_filter component). For navigations

@@ -21,9 +21,9 @@ class DefaultSearchPolicyHandlerTest
  public:
   DefaultSearchPolicyHandlerTest() {
     default_alternate_urls_.AppendString(
-        "http://www.google.com/#q={searchTerms}");
+        "http://www.9oo91e.qjz9zk/#q={searchTerms}");
     default_alternate_urls_.AppendString(
-        "http://www.google.com/search#q={searchTerms}");
+        "http://www.9oo91e.qjz9zk/search#q={searchTerms}");
   }
 
   void SetUp() override {

@@ -2,7 +2,7 @@
 #
 # Protocol Buffers - Google's data interchange format
 # Copyright 2008 Google Inc.  All rights reserved.
-# https://developers.google.com/protocol-buffers/
+# https://developers.9oo91e.qjz9zk/protocol-buffers/
 #
 # Redistribution and use in source and binary forms, with or without
 # modification, are permitted provided that the following conditions are
@@ -32,7 +32,7 @@
 
 """Test for google.protobuf.json_format."""
 
-__author__ = 'jieluo@google.com (Jie Luo)'
+__author__ = 'jieluo@9oo91e.qjz9zk (Jie Luo)'
 
 import json
 import math
@@ -216,7 +216,7 @@ class JsonFormatTest(JsonFormatBase):
   def testJsonParseDictToAnyDoesNotAlterInput(self):
     orig_dict = {
         'int32Value': 20,
-        '@type': 'type.googleapis.com/proto3.TestMessage'
+        '@type': 'type.9oo91eapis.qjz9zk/proto3.TestMessage'
     }
     copied_dict = json.loads(json.dumps(orig_dict))
     parsed_message = any_pb2.Any()
@@ -634,15 +634,15 @@ class JsonFormatTest(JsonFormatBase):
         json.loads(
             '{\n'
             '  "repeatedValue": [ {\n'
-            '    "@type": "type.googleapis.com/proto3.MessageType",\n'
+            '    "@type": "type.9oo91eapis.qjz9zk/proto3.MessageType",\n'
             '    "value": 1234\n'
             '  }, {\n'
-            '    "@type": "type.googleapis.com/proto3.MessageType",\n'
+            '    "@type": "type.9oo91eapis.qjz9zk/proto3.MessageType",\n'
             '    "value": 5678\n'
             '  },\n'
             '  {}],\n'
             '  "value": {\n'
-            '    "@type": "type.googleapis.com/proto3.MessageType",\n'
+            '    "@type": "type.9oo91eapis.qjz9zk/proto3.MessageType",\n'
             '    "value": 1234\n'
             '  }\n'
             '}\n'))
@@ -663,7 +663,7 @@ class JsonFormatTest(JsonFormatBase):
         json_format.MessageToJson(message, False)[0:68],
         '{\n'
         '  "value": {\n'
-        '    "@type": "type.googleapis.com/proto3.TestMessage"')
+        '    "@type": "type.9oo91eapis.qjz9zk/proto3.TestMessage"')
 
   def testAnyMessageDescriptorPoolMissingType(self):
     packed_message = unittest_pb2.OneString()
@@ -675,7 +675,7 @@ class JsonFormatTest(JsonFormatBase):
       json_format.MessageToJson(message, True, descriptor_pool=empty_pool)
     self.assertEqual(
         'Can not find message descriptor by type_url:'
-        ' type.googleapis.com/protobuf_unittest.OneString.',
+        ' type.9oo91eapis.qjz9zk/protobuf_unittest.OneString.',
         str(cm.exception))
 
   def testWellKnownInAnyMessage(self):
@@ -687,7 +687,7 @@ class JsonFormatTest(JsonFormatBase):
         json.loads(json_format.MessageToJson(message, True)),
         json.loads(
             '{\n'
-            '  "@type": \"type.googleapis.com/google.protobuf.Int32Value\",\n'
+            '  "@type": \"type.9oo91eapis.qjz9zk/google.protobuf.Int32Value\",\n'
             '  "value": 1234\n'
             '}\n'))
     parsed_message = any_pb2.Any()
@@ -699,7 +699,7 @@ class JsonFormatTest(JsonFormatBase):
         json.loads(json_format.MessageToJson(message, True)),
         json.loads(
             '{\n'
-            '  "@type": "type.googleapis.com/google.protobuf.Timestamp",\n'
+            '  "@type": "type.9oo91eapis.qjz9zk/google.protobuf.Timestamp",\n'
             '  "value": "1970-01-01T00:00:00Z"\n'
             '}\n'))
     self.CheckParseBack(message, parsed_message)
@@ -711,7 +711,7 @@ class JsonFormatTest(JsonFormatBase):
         json.loads(json_format.MessageToJson(message, True)),
         json.loads(
             '{\n'
-            '  "@type": "type.googleapis.com/google.protobuf.Duration",\n'
+            '  "@type": "type.9oo91eapis.qjz9zk/google.protobuf.Duration",\n'
             '  "value": "1s"\n'
             '}\n'))
     self.CheckParseBack(message, parsed_message)
@@ -724,7 +724,7 @@ class JsonFormatTest(JsonFormatBase):
         json.loads(json_format.MessageToJson(message, True)),
         json.loads(
             '{\n'
-            '  "@type": "type.googleapis.com/google.protobuf.FieldMask",\n'
+            '  "@type": "type.9oo91eapis.qjz9zk/google.protobuf.FieldMask",\n'
             '  "value": "foo.bar,bar"\n'
             '}\n'))
     self.CheckParseBack(message, parsed_message)
@@ -736,7 +736,7 @@ class JsonFormatTest(JsonFormatBase):
         json.loads(json_format.MessageToJson(message, True)),
         json.loads(
             '{\n'
-            '  "@type": "type.googleapis.com/google.protobuf.Struct",\n'
+            '  "@type": "type.9oo91eapis.qjz9zk/google.protobuf.Struct",\n'
             '  "value": {"name": "Jim"}\n'
             '}\n'))
     self.CheckParseBack(message, parsed_message)
@@ -749,9 +749,9 @@ class JsonFormatTest(JsonFormatBase):
         json.loads(json_format.MessageToJson(message, True)),
         json.loads(
             '{\n'
-            '  "@type": "type.googleapis.com/google.protobuf.Any",\n'
+            '  "@type": "type.9oo91eapis.qjz9zk/google.protobuf.Any",\n'
             '  "value": {\n'
-            '    "@type": "type.googleapis.com/google.protobuf.Int32Value",\n'
+            '    "@type": "type.9oo91eapis.qjz9zk/google.protobuf.Int32Value",\n'
             '    "value": 5678\n'
             '  }\n'
             '}\n'))
@@ -857,7 +857,7 @@ class JsonFormatTest(JsonFormatBase):
     json_format.Parse(text, parsed_message, ignore_unknown_fields=True)
     text = ('{\n'
             '  "repeatedValue": [ {\n'
-            '    "@type": "type.googleapis.com/proto3.MessageType",\n'
+            '    "@type": "type.9oo91eapis.qjz9zk/proto3.MessageType",\n'
             '    "unknownName": 1\n'
             '  }]\n'
             '}\n')
@@ -1007,7 +1007,7 @@ class JsonFormatTest(JsonFormatBase):
 
   def testInvalidAny(self):
     message = any_pb2.Any()
-    text = '{"@type": "type.googleapis.com/google.protobuf.Int32Value"}'
+    text = '{"@type": "type.9oo91eapis.qjz9zk/google.protobuf.Int32Value"}'
     self.assertRaisesRegexp(
         KeyError,
         'value',
@@ -1017,14 +1017,14 @@ class JsonFormatTest(JsonFormatBase):
         json_format.ParseError,
         '@type is missing when parsing any message.',
         json_format.Parse, text, message)
-    text = '{"@type": "type.googleapis.com/MessageNotExist", "value": 1234}'
+    text = '{"@type": "type.9oo91eapis.qjz9zk/MessageNotExist", "value": 1234}'
     self.assertRaisesRegexp(
         TypeError,
         'Can not find message descriptor by type_url: '
-        'type.googleapis.com/MessageNotExist.',
+        'type.9oo91eapis.qjz9zk/MessageNotExist.',
         json_format.Parse, text, message)
     # Only last part is to be used: b/25630112
-    text = (r'{"@type": "incorrect.googleapis.com/google.protobuf.Int32Value",'
+    text = (r'{"@type": "incorrect.9oo91eapis.qjz9zk/google.protobuf.Int32Value",'
             r'"value": 1234}')
     json_format.Parse(text, message)
 
@@ -1078,7 +1078,7 @@ class JsonFormatTest(JsonFormatBase):
     # Confirm that ParseDict does not raise ParseError with default pool
     js_dict = {
         'any_value': {
-            '@type': 'type.googleapis.com/proto3.MessageType',
+            '@type': 'type.9oo91eapis.qjz9zk/proto3.MessageType',
             'value': 1234
         }
     }
@@ -1086,7 +1086,7 @@ class JsonFormatTest(JsonFormatBase):
     # Check ParseDict raises ParseError with empty pool
     js_dict = {
         'any_value': {
-            '@type': 'type.googleapis.com/proto3.MessageType',
+            '@type': 'type.9oo91eapis.qjz9zk/proto3.MessageType',
             'value': 1234
         }
     }
@@ -1098,7 +1098,7 @@ class JsonFormatTest(JsonFormatBase):
     self.assertEqual(
         str(cm.exception),
         'Failed to parse any_value field: Can not find message descriptor by'
-        ' type_url: type.googleapis.com/proto3.MessageType..')
+        ' type_url: type.9oo91eapis.qjz9zk/proto3.MessageType..')
 
   def testMessageToDict(self):
     message = json_format_proto3_pb2.TestMessage()

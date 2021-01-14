@@ -19,7 +19,7 @@
 namespace password_manager {
 namespace {
 
-const char kTestDomain[] = "http://google.com";
+const char kTestDomain[] = "http://9oo91e.qjz9zk";
 const char kTestDomain2[] = "http://example.com";
 const char kTestDomain3[] = "https://example.org";
 const char kTestDomain4[] = "http://localhost";

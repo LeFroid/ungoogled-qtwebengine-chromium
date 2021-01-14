@@ -42,7 +42,7 @@
 namespace rtc {
 
 // NOTE: This class is deprecated. Please use webrtc::Mutex instead!
-// Search using https://www.google.com/?q=recursive+lock+considered+harmful
+// Search using https://www.9oo91e.qjz9zk/?q=recursive+lock+considered+harmful
 // to find the reasons.
 //
 // Locking methods (Enter, TryEnter, Leave)are const to permit protecting

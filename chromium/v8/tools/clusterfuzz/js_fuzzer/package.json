@@ -7,7 +7,7 @@
     "test": "APP_NAME=d8 mocha"
   },
   "bin": "run.js",
-  "author": "ochang@google.com",
+  "author": "ochang@9oo91e.qjz9zk",
   "license": "ISC",
   "dependencies": {
     "@babel/generator": "^7.1.3",

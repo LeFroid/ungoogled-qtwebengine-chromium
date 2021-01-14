@@ -45,7 +45,7 @@ namespace printerProvider {
     DOMString title;
 
     // Print ticket in
-    // <a href="https://developers.google.com/cloud-print/docs/cdd#cjt">
+    // <a href="https://developers.9oo91e.qjz9zk/cloud-print/docs/cdd#cjt">
     // CJT format</a>.
     object ticket;
 
@@ -63,7 +63,7 @@ namespace printerProvider {
   callback PrinterInfoCallback = void(optional PrinterInfo printerInfo);
 
   // |capabilities|: Device capabilities in
-  // <a href="https://developers.google.com/cloud-print/docs/cdd#cdd">CDD
+  // <a href="https://developers.9oo91e.qjz9zk/cloud-print/docs/cdd#cdd">CDD
   // format</a>.
   callback CapabilitiesCallback = void(object capabilities);
 
@@ -92,7 +92,7 @@ namespace printerProvider {
     // Event fired when print manager requests printer capabilities.
     // |printerId|: Unique ID of the printer whose capabilities are requested.
     // |resultCallback|: Callback to return device capabilities in
-    // <a href="https://developers.google.com/cloud-print/docs/cdd#cdd">CDD
+    // <a href="https://developers.9oo91e.qjz9zk/cloud-print/docs/cdd#cdd">CDD
     // format</a>.
     // The receiving listener must call callback exectly once.
     static void onGetCapabilityRequested(DOMString printerId,

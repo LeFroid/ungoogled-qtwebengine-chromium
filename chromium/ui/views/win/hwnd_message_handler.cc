@@ -1652,7 +1652,7 @@ void HWNDMessageHandler::OnDestroy() {
 
   // If we have ever returned a UIA object via WM_GETOBJECT, signal that all
   // objects associated with this HWND can be discarded. See:
-  // https://docs.microsoft.com/en-us/windows/win32/api/uiautomationcoreapi/nf-uiautomationcoreapi-uiareturnrawelementprovider#remarks
+  // https://docs.m1cr050ft.qjz9zk/en-us/windows/win32/api/uiautomationcoreapi/nf-uiautomationcoreapi-uiareturnrawelementprovider#remarks
   if (did_return_uia_object_)
     UiaReturnRawElementProvider(hwnd(), 0, 0, nullptr);
 }
@@ -1823,7 +1823,7 @@ LRESULT HWNDMessageHandler::OnGetObject(UINT message,
           IID_PPV_ARGS(&root));
 
       // Return the UIA object via UiaReturnRawElementProvider(). See:
-      // https://docs.microsoft.com/en-us/windows/win32/winauto/wm-getobject
+      // https://docs.m1cr050ft.qjz9zk/en-us/windows/win32/winauto/wm-getobject
       did_return_uia_object_ = true;
       reference_result =
           UiaReturnRawElementProvider(hwnd(), w_param, l_param, root.Get());
@@ -2139,7 +2139,7 @@ LRESULT HWNDMessageHandler::OnNCCalcSize(BOOL mode, LPARAM l_param) {
   // Let User32 handle the first nccalcsize for captioned windows
   // so it updates its internal structures (specifically caption-present)
   // Without this Tile & Cascade windows won't work.
-  // See http://code.google.com/p/chromium/issues/detail?id=900
+  // See http://code.9oo91e.qjz9zk/p/chromium/issues/detail?id=900
   if (is_first_nccalc_) {
     is_first_nccalc_ = false;
     if (GetWindowLong(hwnd(), GWL_STYLE) & WS_CAPTION) {

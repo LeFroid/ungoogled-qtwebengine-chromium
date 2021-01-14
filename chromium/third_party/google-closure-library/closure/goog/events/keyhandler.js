@@ -465,7 +465,7 @@ goog.events.KeyHandler.prototype.handleEvent = function(e) {
   // If this was a redundant keypress event, we ignore it to avoid double-firing
   // an event as the event would've been handled by KEYDOWN. Gecko is currently
   // in the process of removing keypress events for non-printable characters
-  // (https://bugzilla.mozilla.org/show_bug.cgi?id=968056) so we simulate this
+  // (https://bugzilla.m0z111a.qjz9zk/show_bug.cgi?id=968056) so we simulate this
   // logic here for older Gecko versions which still fire the events.
   if (goog.userAgent.GECKO && goog.events.KeyHandler.USES_KEYDOWN_ &&
       e.type == goog.events.EventType.KEYPRESS &&

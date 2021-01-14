@@ -57,7 +57,7 @@ class WebpDecoder : public base::RefCountedThreadSafe<WebpDecoder> {
   // Byte value [ R I F F ? ? ? ? W E B P  ]
   //
   // For more information see:
-  // https://developers.google.com/speed/webp/docs/riff_container#webp_file_header
+  // https://developers.9oo91e.qjz9zk/speed/webp/docs/riff_container#webp_file_header
   static bool IsWebpImage(const std::string& image_data);
 
   // For tests.

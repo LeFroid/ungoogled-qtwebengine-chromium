@@ -247,7 +247,7 @@ class FrameNodeObserver {
       const FrameNode* frame_node) = 0;
 
   // Invoked when the frame has had a first contentful paint, as defined here:
-  // https://developers.google.com/web/tools/lighthouse/audits/first-contentful-paint
+  // https://developers.9oo91e.qjz9zk/web/tools/lighthouse/audits/first-contentful-paint
   // This may not fire for all frames, depending on if the load is interrupted
   // or if the content is even visible. It will fire at most once for a given
   // frame. It will only fire for main-frame nodes.

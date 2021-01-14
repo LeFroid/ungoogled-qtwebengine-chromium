@@ -98,8 +98,8 @@ class CookieStoreSync {
 
 const char kExampleScope[] = "https://example.com/a";
 const char kExampleWorkerScript[] = "https://example.com/a/script.js";
-const char kGoogleScope[] = "https://google.com/a";
-const char kGoogleWorkerScript[] = "https://google.com/a/script.js";
+const char kGoogleScope[] = "https://9oo91e.qjz9zk/a";
+const char kGoogleWorkerScript[] = "https://9oo91e.qjz9zk/a/script.js";
 const char kLegacyScope[] = "https://legacy.com/a";
 const char kLegacyWorkerScript[] = "https://legacy.com/a/script.js";
 
@@ -525,7 +525,7 @@ TEST_P(CookieStoreManagerTest, AddSubscriptions_WrongScopeOrigin) {
   EXPECT_EQ(0u, all_subscriptions_opt.value().size());
 
   ASSERT_TRUE(
-      SetSessionCookie("cookie-name", "cookie-value", "google.com", "/"));
+      SetSessionCookie("cookie-name", "cookie-value", "9oo91e.qjz9zk", "/"));
   task_environment_.RunUntilIdle();
 
   ASSERT_EQ(0u, worker_test_helper_->changes().size());
@@ -585,7 +585,7 @@ TEST_P(CookieStoreManagerTest, AddSubscriptions_WrongRegistrationOrigin) {
   EXPECT_EQ(0u, all_subscriptions_opt.value().size());
 
   ASSERT_TRUE(
-      SetSessionCookie("cookie-name", "cookie-value", "google.com", "/"));
+      SetSessionCookie("cookie-name", "cookie-value", "9oo91e.qjz9zk", "/"));
   task_environment_.RunUntilIdle();
 
   ASSERT_EQ(0u, worker_test_helper_->changes().size());
@@ -1421,7 +1421,7 @@ TEST_P(CookieStoreManagerTest, CookieChangeUrl) {
     ResetServiceWorkerContext();
 
   ASSERT_TRUE(
-      SetSessionCookie("cookie-name-1", "cookie-value-1", "google.com", "/"));
+      SetSessionCookie("cookie-name-1", "cookie-value-1", "9oo91e.qjz9zk", "/"));
   task_environment_.RunUntilIdle();
   ASSERT_EQ(0u, worker_test_helper_->changes().size());
 
@@ -1491,7 +1491,7 @@ TEST_P(CookieStoreManagerTest, CookieChangeUrlLegacy) {
     ResetServiceWorkerContext();
 
   ASSERT_TRUE(
-      SetSessionCookie("cookie-name-1", "cookie-value-1", "google.com", "/"));
+      SetSessionCookie("cookie-name-1", "cookie-value-1", "9oo91e.qjz9zk", "/"));
   task_environment_.RunUntilIdle();
   ASSERT_EQ(0u, worker_test_helper_->changes().size());
 

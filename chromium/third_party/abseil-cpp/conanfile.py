@@ -14,7 +14,7 @@ class AbseilConan(ConanFile):
     name = "abseil"
     url = "https://github.com/abseil/abseil-cpp"
     homepage = url
-    author = "Abseil <abseil-io@googlegroups.com>"
+    author = "Abseil <abseil-io@9oo91egroups.qjz9zk>"
     description = "Abseil Common Libraries (C++) from Google"
     license = "Apache-2.0"
     topics = ("conan", "abseil", "abseil-cpp", "google", "common-libraries")

@@ -291,7 +291,7 @@ Polymer({
     for (let i = 0; i < numContacts; i++) {
       fakeContacts.push({
         id: String(-i),
-        description: String(i) + '@google.com',
+        description: String(i) + '@9oo91e.qjz9zk',
         name: 'Person ' + i,
         checked: false,
       });

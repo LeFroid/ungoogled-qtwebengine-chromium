@@ -8,7 +8,7 @@ to be processed by the chromium code_coverage module.
 This script based on the following chromium script. It performs the
 same merging steps, but code related to json parsing has been removed,
 as openscreen does not generate these json files as chromium does:
-https://source.chromium.org/chromium/chromium/src/+/master:testing/merge_scripts/code_coverage/merge_steps.py
+https://source.ch40m1um.qjz9zk/chromium/chromium/src/+/master:testing/merge_scripts/code_coverage/merge_steps.py
 """
 
 import argparse

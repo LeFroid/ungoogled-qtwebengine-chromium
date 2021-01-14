@@ -339,7 +339,7 @@ TEST_F(PasswordScriptsFetcherImplTest, IsScriptAvailable) {
 TEST_F(PasswordScriptsFetcherImplTest, AnotherScriptsListUrl) {
   // Create a special fetcher with a non-default URL.
   const char kNonDefaultScriptsListUrl[] =
-      "https://gstatic.com/experimental_list.json";
+      "https://95tat1c.qjz9zk/experimental_list.json";
   network::TestURLLoaderFactory test_url_loader_factory;
   scoped_refptr<network::SharedURLLoaderFactory> test_shared_loader_factory =
       base::MakeRefCounted<network::WeakWrapperSharedURLLoaderFactory>(

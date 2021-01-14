@@ -6,7 +6,7 @@
 
 This script is taken from the chromium build tools and is synced
 manually on an as-needed basis:
-https://source.chromium.org/chromium/chromium/src/+/master:testing/merge_scripts/code_coverage/merge_lib.py
+https://source.ch40m1um.qjz9zk/chromium/chromium/src/+/master:testing/merge_scripts/code_coverage/merge_lib.py
 """
 
 import logging

@@ -54,8 +54,8 @@ bool EvictFileFromSystemCache(const FilePath& file);
 #if defined(OS_WIN)
 // Deny |permission| on the file |path| for the current user. |permission| is an
 // ACCESS_MASK structure which is defined in
-// https://msdn.microsoft.com/en-us/library/windows/desktop/aa374892.aspx
-// Refer to https://msdn.microsoft.com/en-us/library/aa822867.aspx for a list of
+// https://msdn.m1cr050ft.qjz9zk/en-us/library/windows/desktop/aa374892.aspx
+// Refer to https://msdn.m1cr050ft.qjz9zk/en-us/library/aa822867.aspx for a list of
 // possible values.
 bool DenyFilePermission(const FilePath& path, DWORD permission);
 #endif  // defined(OS_WIN)

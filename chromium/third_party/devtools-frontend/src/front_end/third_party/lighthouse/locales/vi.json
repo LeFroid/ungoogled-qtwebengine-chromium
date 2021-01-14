@@ -390,7 +390,7 @@
     "message": "Suggested Token"
   },
   "lighthouse-core/audits/autocomplete.js | description": {
-    "message": "`autocomplete` helps users submit forms quicker. To reduce user effort, consider enabling by setting the `autocomplete` attribute to a valid value. [Learn more](https://developers.google.com/web/fundamentals/design-and-ux/input/forms#use_metadata_to_enable_auto-complete)"
+    "message": "`autocomplete` helps users submit forms quicker. To reduce user effort, consider enabling by setting the `autocomplete` attribute to a valid value. [Learn more](https://developers.9oo91e.qjz9zk/web/fundamentals/design-and-ux/input/forms#use_metadata_to_enable_auto-complete)"
   },
   "lighthouse-core/audits/autocomplete.js | failureTitle": {
     "message": "`<input>` elements do not have correct `autocomplete` attributes"
@@ -621,7 +621,7 @@
     "message": "Giá trị"
   },
   "lighthouse-core/audits/dobetterweb/dom-size.js | description": {
-    "message": "Một DOM lớn sẽ làm tăng mức sử dụng bộ nhớ, khiến [các phép tính về kiểu](https://developers.google.com/web/fundamentals/performance/rendering/reduce-the-scope-and-complexity-of-style-calculations) dài hơn, đồng thời tạo ra [các quy trình trình bày lại bố cục](https://developers.google.com/speed/articles/reflow) tốn kém. [Tìm hiểu thêm](https://web.dev/dom-size/)."
+    "message": "Một DOM lớn sẽ làm tăng mức sử dụng bộ nhớ, khiến [các phép tính về kiểu](https://developers.9oo91e.qjz9zk/web/fundamentals/performance/rendering/reduce-the-scope-and-complexity-of-style-calculations) dài hơn, đồng thời tạo ra [các quy trình trình bày lại bố cục](https://developers.9oo91e.qjz9zk/speed/articles/reflow) tốn kém. [Tìm hiểu thêm](https://web.dev/dom-size/)."
   },
   "lighthouse-core/audits/dobetterweb/dom-size.js | displayValue": {
     "message": "{itemCount,plural, =1{1 phần tử}other{# phần tử}}"
@@ -834,7 +834,7 @@
     "message": "Cách xử lý yêu cầu"
   },
   "lighthouse-core/audits/is-on-https.js | description": {
-    "message": "All sites should be protected with HTTPS, even ones that don't handle sensitive data. This includes avoiding [mixed content](https://developers.google.com/web/fundamentals/security/prevent-mixed-content/what-is-mixed-content), where some resources are loaded over HTTP despite the initial request being served over HTTPS. HTTPS prevents intruders from tampering with or passively listening in on the communications between your app and your users, and is a prerequisite for HTTP/2 and many new web platform APIs. [Learn more](https://web.dev/is-on-https/)."
+    "message": "All sites should be protected with HTTPS, even ones that don't handle sensitive data. This includes avoiding [mixed content](https://developers.9oo91e.qjz9zk/web/fundamentals/security/prevent-mixed-content/what-is-mixed-content), where some resources are loaded over HTTP despite the initial request being served over HTTPS. HTTPS prevents intruders from tampering with or passively listening in on the communications between your app and your users, and is a prerequisite for HTTP/2 and many new web platform APIs. [Learn more](https://web.dev/is-on-https/)."
   },
   "lighthouse-core/audits/is-on-https.js | displayValue": {
     "message": "{itemCount,plural, =1{Tìm thấy 1 yêu cầu không an toàn}other{Tìm thấy # yêu cầu không an toàn}}"
@@ -855,7 +855,7 @@
     "message": "Thư viện"
   },
   "lighthouse-core/audits/large-javascript-libraries.js | description": {
-    "message": "Các thư viện JavaScript lớn có thể dẫn đến hiệu suất kém. Hãy ưu tiên các thư viện nhỏ hơn, có chức năng tương đương để giảm kích thước gói của bạn. [Tìm hiểu thêm](https://developers.google.com/web/fundamentals/performance/webpack/decrease-frontend-size#optimize_dependencies)"
+    "message": "Các thư viện JavaScript lớn có thể dẫn đến hiệu suất kém. Hãy ưu tiên các thư viện nhỏ hơn, có chức năng tương đương để giảm kích thước gói của bạn. [Tìm hiểu thêm](https://developers.9oo91e.qjz9zk/web/fundamentals/performance/webpack/decrease-frontend-size#optimize_dependencies)"
   },
   "lighthouse-core/audits/large-javascript-libraries.js | displayValue": {
     "message": "{libraryCount,plural, =1{Tìm thấy 1 thư viện lớn}other{Tìm thấy # thư viện lớn}}"
@@ -990,7 +990,7 @@
     "message": "Thời gian dưới nền của máy chủ"
   },
   "lighthouse-core/audits/no-unload-listeners.js | description": {
-    "message": "Sự kiện `unload` kích hoạt không ổn định và việc làm theo sự kiện này có thể ngăn chặn các hoạt động tối ưu hóa trình duyệt, chẳng hạn như Bộ nhớ đệm cho thao tác tiến/lùi. Hãy cân nhắc dùng sự kiện `pagehide` hoặc `visibilitychange`. [Tìm hiểu thêm](https://developers.google.com/web/updates/2018/07/page-lifecycle-api#the-unload-event)"
+    "message": "Sự kiện `unload` kích hoạt không ổn định và việc làm theo sự kiện này có thể ngăn chặn các hoạt động tối ưu hóa trình duyệt, chẳng hạn như Bộ nhớ đệm cho thao tác tiến/lùi. Hãy cân nhắc dùng sự kiện `pagehide` hoặc `visibilitychange`. [Tìm hiểu thêm](https://developers.9oo91e.qjz9zk/web/updates/2018/07/page-lifecycle-api#the-unload-event)"
   },
   "lighthouse-core/audits/no-unload-listeners.js | failureTitle": {
     "message": "Đăng ký trình xử lý sự kiện `unload`"
@@ -1041,7 +1041,7 @@
     "message": "Lighthouse không đọc được `start_url` trong tệp kê khai. Do đó, `start_url` được giả định là URL của tài liệu. Thông báo lỗi: '{manifestWarning}'."
   },
   "lighthouse-core/audits/performance-budget.js | description": {
-    "message": "Đảm bảo số lượng và quy mô của yêu cầu mạng thấp hơn mục tiêu đặt ra của ngân sách hiệu suất đã cung cấp. [Tìm hiểu thêm](https://developers.google.com/web/tools/lighthouse/audits/budgets)."
+    "message": "Đảm bảo số lượng và quy mô của yêu cầu mạng thấp hơn mục tiêu đặt ra của ngân sách hiệu suất đã cung cấp. [Tìm hiểu thêm](https://developers.9oo91e.qjz9zk/web/tools/lighthouse/audits/budgets)."
   },
   "lighthouse-core/audits/performance-budget.js | requestCountOverBudget": {
     "message": "{count,plural, =1{1 yêu cầu}other{# yêu cầu}}"
@@ -1113,7 +1113,7 @@
     "message": "Đường liên kết không thể thu thập dữ liệu"
   },
   "lighthouse-core/audits/seo/crawlable-anchors.js | description": {
-    "message": "Công cụ tìm kiếm có thể dùng các thuộc tính `href` trên đường liên kết để thu thập dữ liệu các trang web. Hãy đảm bảo rằng thuộc tính `href` của các thành phần neo liên kết đến một trang đích phù hợp để có thể phát hiện thêm nhiều trang khác của trang web. [Tìm hiểu thêm](https://support.google.com/webmasters/answer/9112205)"
+    "message": "Công cụ tìm kiếm có thể dùng các thuộc tính `href` trên đường liên kết để thu thập dữ liệu các trang web. Hãy đảm bảo rằng thuộc tính `href` của các thành phần neo liên kết đến một trang đích phù hợp để có thể phát hiện thêm nhiều trang khác của trang web. [Tìm hiểu thêm](https://support.9oo91e.qjz9zk/webmasters/answer/9112205)"
   },
   "lighthouse-core/audits/seo/crawlable-anchors.js | failureTitle": {
     "message": "Các đường liên kết không thể thu thập thông tin"
@@ -1197,7 +1197,7 @@
     "message": "Các phần tử liên kết có văn bản mô tả"
   },
   "lighthouse-core/audits/seo/manual/structured-data.js | description": {
-    "message": "Chạy [Công cụ kiểm tra dữ liệu có cấu trúc](https://search.google.com/structured-data/testing-tool/) và [Công cụ khử lỗi dữ liệu có cấu trúc](http://linter.structured-data.org/) để xác thực loại dữ liệu này. [Tìm hiểu thêm](https://web.dev/structured-data/)."
+    "message": "Chạy [Công cụ kiểm tra dữ liệu có cấu trúc](https://search.9oo91e.qjz9zk/structured-data/testing-tool/) và [Công cụ khử lỗi dữ liệu có cấu trúc](http://linter.structured-data.org/) để xác thực loại dữ liệu này. [Tìm hiểu thêm](https://web.dev/structured-data/)."
   },
   "lighthouse-core/audits/seo/manual/structured-data.js | title": {
     "message": "Dữ liệu có cấu trúc là hợp lệ"
@@ -1320,7 +1320,7 @@
     "message": "Bên thứ ba"
   },
   "lighthouse-core/audits/third-party-summary.js | description": {
-    "message": "Mã của bên thứ ba có thể tác động đáng kể đến hiệu suất tải. Hãy hạn chế số nhà cung cấp bên thứ ba dư thừa và cố gắng tải mã của bên thứ ba sau khi trang của bạn hoàn thành phần lớn quá trình tải. [Tìm hiểu thêm](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/loading-third-party-javascript/)."
+    "message": "Mã của bên thứ ba có thể tác động đáng kể đến hiệu suất tải. Hãy hạn chế số nhà cung cấp bên thứ ba dư thừa và cố gắng tải mã của bên thứ ba sau khi trang của bạn hoàn thành phần lớn quá trình tải. [Tìm hiểu thêm](https://developers.9oo91e.qjz9zk/web/fundamentals/performance/optimizing-content-efficiency/loading-third-party-javascript/)."
   },
   "lighthouse-core/audits/third-party-summary.js | displayValue": {
     "message": "Mã của bên thứ ba đã chặn chuỗi chính trong {timeInMs, number, milliseconds} mili giây"
@@ -1341,7 +1341,7 @@
     "message": "Chỉ số"
   },
   "lighthouse-core/audits/timing-budget.js | description": {
-    "message": "Khi đặt giới hạn về thời gian, bạn sẽ có thể theo dõi được hiệu suất trang web của mình. Các trang có hiệu suất cao sẽ tải và phản hồi nhanh với các sự kiện nhập của người dùng. [Tìm hiểu thêm](https://developers.google.com/web/tools/lighthouse/audits/budgets)."
+    "message": "Khi đặt giới hạn về thời gian, bạn sẽ có thể theo dõi được hiệu suất trang web của mình. Các trang có hiệu suất cao sẽ tải và phản hồi nhanh với các sự kiện nhập của người dùng. [Tìm hiểu thêm](https://developers.9oo91e.qjz9zk/web/tools/lighthouse/audits/budgets)."
   },
   "lighthouse-core/audits/timing-budget.js | title": {
     "message": "Giới hạn về thời gian"
@@ -1395,7 +1395,7 @@
     "message": "URL của bản đồ"
   },
   "lighthouse-core/audits/valid-source-maps.js | description": {
-    "message": "Bản đồ nguồn sẽ chuyển mã đã giảm thiểu thành mã nguồn gốc. Việc này giúp các nhà phát triển gỡ lỗi trong bản phát hành chính thức. Ngoài ra, Lighthouse cũng có thể cung cấp thêm thông tin chi tiết. Hãy cân nhắc triển khai bản đồ nguồn để tận dụng những lợi ích này. [Tìm hiểu thêm](https://developers.google.com/web/tools/chrome-devtools/javascript/source-maps)"
+    "message": "Bản đồ nguồn sẽ chuyển mã đã giảm thiểu thành mã nguồn gốc. Việc này giúp các nhà phát triển gỡ lỗi trong bản phát hành chính thức. Ngoài ra, Lighthouse cũng có thể cung cấp thêm thông tin chi tiết. Hãy cân nhắc triển khai bản đồ nguồn để tận dụng những lợi ích này. [Tìm hiểu thêm](https://developers.9oo91e.qjz9zk/web/tools/chrome-devtools/javascript/source-maps)"
   },
   "lighthouse-core/audits/valid-source-maps.js | failureTitle": {
     "message": "Thiếu bản đồ nguồn cho JavaScript lớn của bên thứ nhất"
@@ -1464,10 +1464,10 @@
     "message": "Các phương pháp hay nhất"
   },
   "lighthouse-core/config/default-config.js | a11yCategoryDescription": {
-    "message": "Các hoạt động kiểm tra này giúp xác định cơ hội [cải thiện khả năng hỗ trợ tiếp cận của ứng dụng web](https://developers.google.com/web/fundamentals/accessibility). Các hoạt động này chỉ có thể tự động phát hiện một phần vấn đề liên quan đến khả năng hỗ trợ tiếp cận, do đó, bạn nên kiểm tra cả theo cách thủ công."
+    "message": "Các hoạt động kiểm tra này giúp xác định cơ hội [cải thiện khả năng hỗ trợ tiếp cận của ứng dụng web](https://developers.9oo91e.qjz9zk/web/fundamentals/accessibility). Các hoạt động này chỉ có thể tự động phát hiện một phần vấn đề liên quan đến khả năng hỗ trợ tiếp cận, do đó, bạn nên kiểm tra cả theo cách thủ công."
   },
   "lighthouse-core/config/default-config.js | a11yCategoryManualDescription": {
-    "message": "Các mục này nằm trong vùng không thể sử dụng công cụ kiểm tra tự động. Tìm hiểu thêm trong hướng dẫn của chúng tôi về cách [đánh giá khả năng hỗ trợ tiếp cận](https://developers.google.com/web/fundamentals/accessibility/how-to-review)."
+    "message": "Các mục này nằm trong vùng không thể sử dụng công cụ kiểm tra tự động. Tìm hiểu thêm trong hướng dẫn của chúng tôi về cách [đánh giá khả năng hỗ trợ tiếp cận](https://developers.9oo91e.qjz9zk/web/fundamentals/accessibility/how-to-review)."
   },
   "lighthouse-core/config/default-config.js | a11yCategoryTitle": {
     "message": "Hỗ trợ tiếp cận"
@@ -1554,10 +1554,10 @@
     "message": "Hiệu suất"
   },
   "lighthouse-core/config/default-config.js | pwaCategoryDescription": {
-    "message": "Những hoạt động kiểm tra này sẽ xác thực các khía cạnh của một Ứng dụng web tiến bộ. [Tìm hiểu thêm](https://developers.google.com/web/progressive-web-apps/checklist)."
+    "message": "Những hoạt động kiểm tra này sẽ xác thực các khía cạnh của một Ứng dụng web tiến bộ. [Tìm hiểu thêm](https://developers.9oo91e.qjz9zk/web/progressive-web-apps/checklist)."
   },
   "lighthouse-core/config/default-config.js | pwaCategoryManualDescription": {
-    "message": "Đây là những hoạt động kiểm tra được chỉ định trong [Danh sách kiểm tra ứng dụng web tiến bộ (PWA)](https://developers.google.com/web/progressive-web-apps/checklist) cơ bản, nhưng Lighthouse không tự động kiểm tra các mục này. Các hoạt động kiểm tra này không ảnh hưởng đến điểm số của bạn, nhưng bạn nên xác minh theo cách thủ công."
+    "message": "Đây là những hoạt động kiểm tra được chỉ định trong [Danh sách kiểm tra ứng dụng web tiến bộ (PWA)](https://developers.9oo91e.qjz9zk/web/progressive-web-apps/checklist) cơ bản, nhưng Lighthouse không tự động kiểm tra các mục này. Các hoạt động kiểm tra này không ảnh hưởng đến điểm số của bạn, nhưng bạn nên xác minh theo cách thủ công."
   },
   "lighthouse-core/config/default-config.js | pwaCategoryTitle": {
     "message": "Ứng dụng web tiến bộ"
@@ -1572,7 +1572,7 @@
     "message": "PWA đã tối ưu hóa"
   },
   "lighthouse-core/config/default-config.js | seoCategoryDescription": {
-    "message": "Các hoạt động kiểm tra này đảm bảo rằng trang của bạn được tối ưu hóa cho thứ hạng trong kết quả của công cụ tìm kiếm. Những yếu tố bổ sung mà Lighthouse không kiểm tra có thể ảnh hưởng đến thứ hạng của bạn trong kết quả tìm kiếm. [Tìm hiểu thêm](https://support.google.com/webmasters/answer/35769)."
+    "message": "Các hoạt động kiểm tra này đảm bảo rằng trang của bạn được tối ưu hóa cho thứ hạng trong kết quả của công cụ tìm kiếm. Những yếu tố bổ sung mà Lighthouse không kiểm tra có thể ảnh hưởng đến thứ hạng của bạn trong kết quả tìm kiếm. [Tìm hiểu thêm](https://support.9oo91e.qjz9zk/webmasters/answer/35769)."
   },
   "lighthouse-core/config/default-config.js | seoCategoryManualDescription": {
     "message": "Chạy những trình xác thực bổ sung này trên trang web của bạn để xem thêm các phương pháp hay nhất dành cho quy trình Tối ưu hóa cho công cụ tìm kiếm (SEO)."
@@ -1593,7 +1593,7 @@
     "message": "Thu thập thông tin và lập chỉ mục"
   },
   "lighthouse-core/config/default-config.js | seoMobileGroupDescription": {
-    "message": "Đảm bảo các trang của bạn thân thiện với thiết bị di động để người dùng có thể đọc các trang nội dung mà không cần phải chụm hoặc thu phóng. [Tìm hiểu thêm](https://developers.google.com/search/mobile-sites/)."
+    "message": "Đảm bảo các trang của bạn thân thiện với thiết bị di động để người dùng có thể đọc các trang nội dung mà không cần phải chụm hoặc thu phóng. [Tìm hiểu thêm](https://developers.9oo91e.qjz9zk/search/mobile-sites/)."
   },
   "lighthouse-core/config/default-config.js | seoMobileGroupTitle": {
     "message": "Thân thiện với thiết bị di động"
@@ -1836,7 +1836,7 @@
     "message": "Dữ liệu của phòng thí nghiệm"
   },
   "lighthouse-core/report/html/renderer/util.js | lsPerformanceCategoryDescription": {
-    "message": "Kết quả phân tích [Lighthouse](https://developers.google.com/web/tools/lighthouse/) cho trang hiện tại dựa trên một mạng di động mô phỏng. Các giá trị chỉ là ước tính và có thể thay đổi."
+    "message": "Kết quả phân tích [Lighthouse](https://developers.9oo91e.qjz9zk/web/tools/lighthouse/) cho trang hiện tại dựa trên một mạng di động mô phỏng. Các giá trị chỉ là ước tính và có thể thay đổi."
   },
   "lighthouse-core/report/html/renderer/util.js | manualAuditsGroupTitle": {
     "message": "Các mục bổ sung cần kiểm tra theo cách thủ công"
@@ -1983,10 +1983,10 @@
     "message": "Đảm bảo bạn đã bật tùy chọn \"Aggregate JavaScript files\" (Tổng hợp các tệp JavaScript) trên trang \"Administration » Configuration » Development\" (Quản trị > Cấu hình > Phát triển). Bạn cũng có thể định cấu hình những tùy chọn tổng hợp nâng cao hơn thông qua các [mô-đun bổ sung](https://www.drupal.org/project/project_module?f%5B0%5D=&f%5B1%5D=&f%5B2%5D=im_vid_3%3A123&f%5B3%5D=&f%5B4%5D=sm_field_project_type%3Afull&f%5B5%5D=&f%5B6%5D=&text=javascript+aggregation&solrsort=iss_project_release_usage+desc&op=Search) để tăng tốc độ của trang web bằng cách ghép nối, giảm kích thước và nén các tài sản JavaScript."
   },
   "node_modules/lighthouse-stack-packs/packs/drupal.js | unused-css-rules": {
-    "message": "Hãy cân nhắc xóa các quy tắc CSS không dùng đến và chỉ đính kèm các thư viện Drupal cần thiết vào trang hoặc thành phần liên quan trên trang. Truy cập vào [đường liên kết đến tài liệu về Drupal](https://www.drupal.org/docs/8/creating-custom-modules/adding-stylesheets-css-and-javascript-js-to-a-drupal-8-module#library) để biết thông tin chi tiết. Để xác định các thư viện đã đính kèm đang thêm CSS không liên quan, hãy thử chạy [phạm vi của mã](https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverage) trong Chrome DevTools. Bạn có thể xác định giao diện/mô-đun gây ra tình trạng này từ URL của tệp định kiểu khi tính năng tổng hợp CSS bị tắt trên trang web Drupal. Hãy chú ý đến những giao diện/mô-đun có nhiều tệp định kiểu trong danh sách. Những giao diện/mô-đun này có nhiều màu đỏ trong phạm vi của mã. Mỗi giao diện/mô-đun chỉ nên thêm một tệp định kiểu vào hàng đợi nếu tệp định kiểu đó thực sự được sử dụng trên trang."
+    "message": "Hãy cân nhắc xóa các quy tắc CSS không dùng đến và chỉ đính kèm các thư viện Drupal cần thiết vào trang hoặc thành phần liên quan trên trang. Truy cập vào [đường liên kết đến tài liệu về Drupal](https://www.drupal.org/docs/8/creating-custom-modules/adding-stylesheets-css-and-javascript-js-to-a-drupal-8-module#library) để biết thông tin chi tiết. Để xác định các thư viện đã đính kèm đang thêm CSS không liên quan, hãy thử chạy [phạm vi của mã](https://developers.9oo91e.qjz9zk/web/updates/2017/04/devtools-release-notes#coverage) trong Chrome DevTools. Bạn có thể xác định giao diện/mô-đun gây ra tình trạng này từ URL của tệp định kiểu khi tính năng tổng hợp CSS bị tắt trên trang web Drupal. Hãy chú ý đến những giao diện/mô-đun có nhiều tệp định kiểu trong danh sách. Những giao diện/mô-đun này có nhiều màu đỏ trong phạm vi của mã. Mỗi giao diện/mô-đun chỉ nên thêm một tệp định kiểu vào hàng đợi nếu tệp định kiểu đó thực sự được sử dụng trên trang."
   },
   "node_modules/lighthouse-stack-packs/packs/drupal.js | unused-javascript": {
-    "message": "Consider removing unused JavaScript assets and only attach the needed Drupal libraries to the relevant page or component in a page. See the [Drupal documentation link](https://www.drupal.org/docs/8/creating-custom-modules/adding-stylesheets-css-and-javascript-js-to-a-drupal-8-module#library) for details. To identify attached libraries that are adding extraneous JavaScript, try running [code coverage](https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverage) in Chrome DevTools. You can identify the theme/module responsible from the URL of the script when JavaScript aggregation is disabled in your Drupal site. Look out for themes/modules that have many scripts in the list which have a lot of red in code coverage. A theme/module should only enqueue a script if it is actually used on the page."
+    "message": "Consider removing unused JavaScript assets and only attach the needed Drupal libraries to the relevant page or component in a page. See the [Drupal documentation link](https://www.drupal.org/docs/8/creating-custom-modules/adding-stylesheets-css-and-javascript-js-to-a-drupal-8-module#library) for details. To identify attached libraries that are adding extraneous JavaScript, try running [code coverage](https://developers.9oo91e.qjz9zk/web/updates/2017/04/devtools-release-notes#coverage) in Chrome DevTools. You can identify the theme/module responsible from the URL of the script when JavaScript aggregation is disabled in your Drupal site. Look out for themes/modules that have many scripts in the list which have a lot of red in code coverage. A theme/module should only enqueue a script if it is actually used on the page."
   },
   "node_modules/lighthouse-stack-packs/packs/drupal.js | uses-long-cache-ttl": {
     "message": "Đặt \"Browser and proxy cache maximum age\" (Thời gian tồn tại tối đa của bộ nhớ đệm proxy và trình duyệt) trên trang \"Administration » Configuration » Development\" (Quản trị > Cấu hình > Phát triển). Hãy đọc về [Bộ nhớ đệm Drupal và tối ưu hóa cho hiệu suất](https://www.drupal.org/docs/7/managing-site-performance-and-scalability/caching-to-improve-performance/caching-overview#s-drupal-performance-resources)."
@@ -2025,10 +2025,10 @@
     "message": "Một số [tiện ích Joomla](https://extensions.joomla.org/instant-search/?jed_live%5Bquery%5D=performance) có thể làm tăng tốc độ của trang web bằng cách ghép nối, giảm kích thước và nén các tập lệnh. Ngoài ra, còn có các mẫu cung cấp chức năng này."
   },
   "node_modules/lighthouse-stack-packs/packs/joomla.js | unused-css-rules": {
-    "message": "Hãy cân nhắc giảm hoặc chuyển đổi số lượng [tiện ích Joomla](https://extensions.joomla.org/) tải CSS không dùng đến trên trang của bạn. Để xác định các tiện ích đang thêm CSS không liên quan, hãy thử chạy [phạm vi của mã](https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverage) trong Chrome DevTools. Bạn có thể xác định giao diện/trình bổ trợ gây ra tình trạng này từ URL của tệp định kiểu. Hãy chú ý đến những trình bổ trợ có nhiều tệp định kiểu trong danh sách. Những trình bổ trợ này có nhiều màu đỏ trong phạm vi của mã. Mỗi trình bổ trợ chỉ nên thêm một tệp định kiểu vào hàng đợi nếu tệp định kiểu đó thực sự được sử dụng trên trang."
+    "message": "Hãy cân nhắc giảm hoặc chuyển đổi số lượng [tiện ích Joomla](https://extensions.joomla.org/) tải CSS không dùng đến trên trang của bạn. Để xác định các tiện ích đang thêm CSS không liên quan, hãy thử chạy [phạm vi của mã](https://developers.9oo91e.qjz9zk/web/updates/2017/04/devtools-release-notes#coverage) trong Chrome DevTools. Bạn có thể xác định giao diện/trình bổ trợ gây ra tình trạng này từ URL của tệp định kiểu. Hãy chú ý đến những trình bổ trợ có nhiều tệp định kiểu trong danh sách. Những trình bổ trợ này có nhiều màu đỏ trong phạm vi của mã. Mỗi trình bổ trợ chỉ nên thêm một tệp định kiểu vào hàng đợi nếu tệp định kiểu đó thực sự được sử dụng trên trang."
   },
   "node_modules/lighthouse-stack-packs/packs/joomla.js | unused-javascript": {
-    "message": "Hãy cân nhắc giảm hoặc chuyển đổi số lượng [tiện ích Joomla](https://extensions.joomla.org/) tải các tệp JavaScript không dùng đến trên trang của bạn. Để xác định các trình bổ trợ đang thêm JavaScript không liên quan, hãy thử chạy [phạm vi của mã](https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverage) trong Chrome DevTools. Bạn có thể xác định tiện ích gây ra tình trạng này từ URL của tập lệnh. Hãy chú ý đến những tiện ích có nhiều tập lệnh trong danh sách. Những tiện ích này có nhiều màu đỏ trong phạm vi của mã. Mỗi tiện ích chỉ nên thêm một tập lệnh vào hàng đợi nếu tập lệnh đó thực sự được sử dụng trên trang."
+    "message": "Hãy cân nhắc giảm hoặc chuyển đổi số lượng [tiện ích Joomla](https://extensions.joomla.org/) tải các tệp JavaScript không dùng đến trên trang của bạn. Để xác định các trình bổ trợ đang thêm JavaScript không liên quan, hãy thử chạy [phạm vi của mã](https://developers.9oo91e.qjz9zk/web/updates/2017/04/devtools-release-notes#coverage) trong Chrome DevTools. Bạn có thể xác định tiện ích gây ra tình trạng này từ URL của tập lệnh. Hãy chú ý đến những tiện ích có nhiều tập lệnh trong danh sách. Những tiện ích này có nhiều màu đỏ trong phạm vi của mã. Mỗi tiện ích chỉ nên thêm một tập lệnh vào hàng đợi nếu tập lệnh đó thực sự được sử dụng trên trang."
   },
   "node_modules/lighthouse-stack-packs/packs/joomla.js | uses-long-cache-ttl": {
     "message": "Hãy đọc về tính năng [Lưu vào bộ nhớ đệm của trình duyệt trong Joomla](https://docs.joomla.org/Cache)."
@@ -2124,10 +2124,10 @@
     "message": "Một số [plugin của WordPress](https://wordpress.org/plugins/search/minify+javascript/) có thể làm tăng tốc độ của trang web bằng cách ghép, giảm kích thước và nén tập lệnh. Ngoài ra, bạn nên dùng quy trình tạo để tiến hành thu nhỏ trước, nếu có thể."
   },
   "node_modules/lighthouse-stack-packs/packs/wordpress.js | unused-css-rules": {
-    "message": "Hãy cân nhắc giảm hoặc chuyển đổi số lượng [plugin của WordPress](https://wordpress.org/plugins/) tải Biểu định kiểu xếp chồng (CSS) không dùng đến trong trang của bạn. Để xác định các plugin đang thêm Biểu định kiểu xếp chồng (CSS) không liên quan, hãy thử chạy [phạm vi của mã](https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverage) trong Chrome DevTools. Bạn có thể xác định giao diện/plugin gây ra tình trạng này từ URL của biểu định kiểu. Hãy chú ý đến những plugin có nhiều biểu định kiểu trong danh sách. Những plugin này có nhiều màu đỏ trong phạm vi của mã. Một plugin chỉ nên thêm một biểu định kiểu vào hàng đợi nếu biểu định kiểu đó thực sự được sử dụng trên trang."
+    "message": "Hãy cân nhắc giảm hoặc chuyển đổi số lượng [plugin của WordPress](https://wordpress.org/plugins/) tải Biểu định kiểu xếp chồng (CSS) không dùng đến trong trang của bạn. Để xác định các plugin đang thêm Biểu định kiểu xếp chồng (CSS) không liên quan, hãy thử chạy [phạm vi của mã](https://developers.9oo91e.qjz9zk/web/updates/2017/04/devtools-release-notes#coverage) trong Chrome DevTools. Bạn có thể xác định giao diện/plugin gây ra tình trạng này từ URL của biểu định kiểu. Hãy chú ý đến những plugin có nhiều biểu định kiểu trong danh sách. Những plugin này có nhiều màu đỏ trong phạm vi của mã. Một plugin chỉ nên thêm một biểu định kiểu vào hàng đợi nếu biểu định kiểu đó thực sự được sử dụng trên trang."
   },
   "node_modules/lighthouse-stack-packs/packs/wordpress.js | unused-javascript": {
-    "message": "Hãy cân nhắc giảm hoặc chuyển đổi số lượng [plugin của WordPress](https://wordpress.org/plugins/) tải JavaScript không dùng đến trong trang của bạn. Để xác định các plugin đang thêm JS không liên quan, hãy thử chạy [phạm vi của mã](https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverage) trong Chrome DevTools. Bạn có thể xác định giao diện/plugin gây ra tình trạng này từ URL của tập lệnh. Hãy chú ý đến những plugin có nhiều tập lệnh trong danh sách. Những plugin này có nhiều màu đỏ trong phạm vi của mã. Một plugin chỉ nên thêm một tập lệnh vào hàng đợi nếu tập lệnh đó thực sự được dùng trên trang."
+    "message": "Hãy cân nhắc giảm hoặc chuyển đổi số lượng [plugin của WordPress](https://wordpress.org/plugins/) tải JavaScript không dùng đến trong trang của bạn. Để xác định các plugin đang thêm JS không liên quan, hãy thử chạy [phạm vi của mã](https://developers.9oo91e.qjz9zk/web/updates/2017/04/devtools-release-notes#coverage) trong Chrome DevTools. Bạn có thể xác định giao diện/plugin gây ra tình trạng này từ URL của tập lệnh. Hãy chú ý đến những plugin có nhiều tập lệnh trong danh sách. Những plugin này có nhiều màu đỏ trong phạm vi của mã. Một plugin chỉ nên thêm một tập lệnh vào hàng đợi nếu tập lệnh đó thực sự được dùng trên trang."
   },
   "node_modules/lighthouse-stack-packs/packs/wordpress.js | uses-long-cache-ttl": {
     "message": "Hãy đọc về [Bộ nhớ đệm của trình duyệt trong WordPress](https://wordpress.org/support/article/optimization/#browser-caching)."

@@ -60,7 +60,7 @@ TEST_F(FaviconBackendWrapperTest, BasicExpire) {
 
   std::vector<unsigned char> data(kBlob1, kBlob1 + sizeof(kBlob1));
   scoped_refptr<base::RefCountedBytes> favicon(new base::RefCountedBytes(data));
-  GURL url("http://google.com");
+  GURL url("http://9oo91e.qjz9zk");
   const base::Time time1 = base::Time::Now();
   favicon_base::FaviconID favicon_id1 =
       db->AddFavicon(url, favicon_base::IconType::kTouchIcon, favicon,
@@ -93,7 +93,7 @@ TEST_F(FaviconBackendWrapperTest, ExpireWithOneRemaining) {
   // Add two entries. The second is more recent then the first.
   std::vector<unsigned char> data(kBlob1, kBlob1 + sizeof(kBlob1));
   scoped_refptr<base::RefCountedBytes> favicon(new base::RefCountedBytes(data));
-  GURL url("http://google.com");
+  GURL url("http://9oo91e.qjz9zk");
   const base::Time time1 = base::Time::Now();
   favicon_base::FaviconID favicon_id1 =
       db->AddFavicon(url, favicon_base::IconType::kTouchIcon, favicon,

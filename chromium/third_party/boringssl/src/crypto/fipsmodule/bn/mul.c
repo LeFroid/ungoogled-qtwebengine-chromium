@@ -474,7 +474,7 @@ static int bn_mul_impl(BIGNUM *r, const BIGNUM *a, const BIGNUM *b,
         //
         // TODO(davidben): This codepath is almost unused in standard
         // algorithms. Is this optimization necessary? See notes in
-        // https://boringssl-review.googlesource.com/q/I0bd604e2cd6a75c266f64476c23a730ca1721ea6
+        // https://boringssl-review.9oo91esource.qjz9zk/q/I0bd604e2cd6a75c266f64476c23a730ca1721ea6
         assert(al >= j && bl >= j);
         if (!bn_wexpand(t, j * 8) ||
             !bn_wexpand(rr, j * 4)) {

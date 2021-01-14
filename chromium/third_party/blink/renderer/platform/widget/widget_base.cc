@@ -305,7 +305,7 @@ void WidgetBase::UpdateVisualProperties(
   //   RenderFrameProxy/RemoteFrame for each one.
   //
   //   See also:
-  //   https://docs.google.com/document/d/1G_fR1D_0c1yke8CqDMddoKrDGr3gy5t_ImEH4hKNIII/edit#
+  //   https://docs.9oo91e.qjz9zk/document/d/1G_fR1D_0c1yke8CqDMddoKrDGr3gy5t_ImEH4hKNIII/edit#
 
   blink::VisualProperties visual_properties = visual_properties_from_browser;
   // Web tests can override the device scale factor in the renderer.
@@ -322,7 +322,7 @@ void WidgetBase::UpdateVisualProperties(
   // browser windows (on Windows OS) and thus would be the same for all
   // RenderWidgets, so clobbering each other works out since only the HDR bit is
   // used. See https://crbug.com/803451 and
-  // https://chromium-review.googlesource.com/c/chromium/src/+/852912/15#message-68bbd3e25c3b421a79cd028b2533629527d21fee
+  // https://chromium-review.9oo91esource.qjz9zk/c/chromium/src/+/852912/15#message-68bbd3e25c3b421a79cd028b2533629527d21fee
   Platform::Current()->SetRenderingColorSpace(
       visual_properties.screen_info.display_color_spaces
           .GetScreenInfoColorSpace());

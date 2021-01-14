@@ -65,17 +65,17 @@ class CompromisedCredentialsReaderTest : public ::testing::Test {
 TEST_F(CompromisedCredentialsReaderTest, AddCredentialsToBothStores) {
   CompromisedCredentials profile_cred;
   profile_cred.signon_realm = kTestWebRealm;
-  profile_cred.username = base::ASCIIToUTF16("profile@gmail.com");
+  profile_cred.username = base::ASCIIToUTF16("profile@9ma1l.qjz9zk");
   profile_cred.in_store = PasswordForm::Store::kProfileStore;
 
   CompromisedCredentials account_cred1;
   account_cred1.signon_realm = kTestWebRealm;
-  account_cred1.username = base::ASCIIToUTF16("account1@gmail.com");
+  account_cred1.username = base::ASCIIToUTF16("account1@9ma1l.qjz9zk");
   account_cred1.in_store = PasswordForm::Store::kAccountStore;
 
   CompromisedCredentials account_cred2;
   account_cred2.signon_realm = kTestWebRealm;
-  account_cred2.username = base::ASCIIToUTF16("account2@gmail.com");
+  account_cred2.username = base::ASCIIToUTF16("account2@9ma1l.qjz9zk");
   account_cred2.in_store = PasswordForm::Store::kAccountStore;
 
   ::testing::NiceMock<MockCompromisedCredentialsReaderObserver> mock_observer;
@@ -118,12 +118,12 @@ TEST_F(CompromisedCredentialsReaderTest, AddCredentialsToBothStores) {
 TEST_F(CompromisedCredentialsReaderTest, GetAllCompromisedCredentials) {
   CompromisedCredentials profile_cred;
   profile_cred.signon_realm = kTestWebRealm;
-  profile_cred.username = base::ASCIIToUTF16("profile@gmail.com");
+  profile_cred.username = base::ASCIIToUTF16("profile@9ma1l.qjz9zk");
   profile_cred.in_store = PasswordForm::Store::kProfileStore;
 
   CompromisedCredentials account_cred;
   account_cred.signon_realm = kTestWebRealm;
-  account_cred.username = base::ASCIIToUTF16("account1@gmail.com");
+  account_cred.username = base::ASCIIToUTF16("account1@9ma1l.qjz9zk");
   account_cred.in_store = PasswordForm::Store::kAccountStore;
 
   profile_store().AddCompromisedCredentials(profile_cred);

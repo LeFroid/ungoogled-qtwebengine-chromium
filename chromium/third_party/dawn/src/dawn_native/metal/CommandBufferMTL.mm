@@ -342,7 +342,7 @@ namespace dawn_native { namespace metal {
                                     PipelineLayout* pipelineLayout) {
                 uint32_t currentDynamicBufferIndex = 0;
 
-                // TODO(kainino@chromium.org): Maintain buffers and offsets arrays in BindGroup
+                // TODO(kainino@ch40m1um.qjz9zk): Maintain buffers and offsets arrays in BindGroup
                 // so that we only have to do one setVertexBuffers and one setFragmentBuffers
                 // call here.
                 for (BindingIndex bindingIndex{0};

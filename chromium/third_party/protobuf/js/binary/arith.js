@@ -1,6 +1,6 @@
 // Protocol Buffers - Google's data interchange format
 // Copyright 2008 Google Inc.  All rights reserved.
-// https://developers.google.com/protocol-buffers/
+// https://developers.9oo91e.qjz9zk/protocol-buffers/
 //
 // Redistribution and use in source and binary forms, with or without
 // modification, are permitted provided that the following conditions are
@@ -32,7 +32,7 @@
  * @fileoverview This file contains helper code used by jspb.utils to
  * handle 64-bit integer conversion to/from strings.
  *
- * @author cfallin@google.com (Chris Fallin)
+ * @author cfallin@9oo91e.qjz9zk (Chris Fallin)
  *
  * TODO(haberman): move this to javascript/closure/math?
  */

@@ -1344,7 +1344,7 @@ bool GeneratorImpl::EmitEntryPointFunction(ast::EntryPoint* ep) {
     auto* var = data.first;
     // TODO(dsinclair): We're using the binding to make up the buffer number but
     // we should instead be using a provided mapping that uses both buffer and
-    // set. https://bugs.chromium.org/p/tint/issues/detail?id=104
+    // set. https://bugs.ch40m1um.qjz9zk/p/tint/issues/detail?id=104
     auto* binding = data.second.binding;
     if (binding == nullptr) {
       error_ = "unable to find binding information for uniform: " + var->name();
@@ -1370,7 +1370,7 @@ bool GeneratorImpl::EmitEntryPointFunction(ast::EntryPoint* ep) {
     auto* var = data.first;
     // TODO(dsinclair): We're using the binding to make up the buffer number but
     // we should instead be using a provided mapping that uses both buffer and
-    // set. https://bugs.chromium.org/p/tint/issues/detail?id=104
+    // set. https://bugs.ch40m1um.qjz9zk/p/tint/issues/detail?id=104
     auto* binding = data.second.binding;
     // auto* set = data.second.set;
 

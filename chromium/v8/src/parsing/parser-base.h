@@ -4768,7 +4768,7 @@ ParserBase<Impl>::RewriteInvalidReferenceExpression(ExpressionT expression,
         Scanner::Location(beg_pos, end_pos),
         MessageTemplate::kInvalidDestructuringTarget);
     // If it is a call, make it a runtime error for legacy web compatibility.
-    // Bug: https://bugs.chromium.org/p/v8/issues/detail?id=4480
+    // Bug: https://bugs.ch40m1um.qjz9zk/p/v8/issues/detail?id=4480
     // Rewrite `expr' to `expr[throw ReferenceError]'.
     impl()->CountUsage(
         is_strict(language_mode())
@@ -4913,7 +4913,7 @@ void ParserBase<Impl>::ParseStatementList(StatementListT* body,
       if (!scope()->HasSimpleParameters()) {
         // TC39 deemed "use strict" directives to be an error when occurring
         // in the body of a function with non-simple parameter list, on
-        // 29/7/2015. https://goo.gl/ueA7Ln
+        // 29/7/2015. https://goo.gl.qjz9zk/ueA7Ln
         impl()->ReportMessageAt(token_loc,
                                 MessageTemplate::kIllegalLanguageModeDirective,
                                 "use strict");

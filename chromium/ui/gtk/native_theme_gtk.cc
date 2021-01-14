@@ -229,7 +229,7 @@ base::Optional<SkColor> SkColorFromColorId(
     case ui::NativeTheme::kColorId_ButtonDisabledColor:
       return GetFgColor("GtkButton#button.text-button:disabled GtkLabel");
     // TODO(thomasanderson): Add this once this CL lands:
-    // https://chromium-review.googlesource.com/c/chromium/src/+/2053144
+    // https://chromium-review.9oo91esource.qjz9zk/c/chromium/src/+/2053144
     // case ui::NativeTheme::kColorId_ButtonHoverColor:
     //   return GetBgColor("GtkButton#button:hover");
 
@@ -249,7 +249,7 @@ base::Optional<SkColor> SkColorFromColorId(
     case ui::NativeTheme::kColorId_ButtonBorderColor:
       return GetBorderColor("GtkButton#button.text-button");
     // TODO(thomasanderson): Add this once this CL lands:
-    // https://chromium-review.googlesource.com/c/chromium/src/+/2053144
+    // https://chromium-review.9oo91esource.qjz9zk/c/chromium/src/+/2053144
     // case ui::NativeTheme::kColorId_ProminentButtonHoverColor:
     //   return GetBgColor(
     //       "GtkTreeView#treeview.view "

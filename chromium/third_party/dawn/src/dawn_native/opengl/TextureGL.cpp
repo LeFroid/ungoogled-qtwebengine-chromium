@@ -343,7 +343,7 @@ namespace dawn_native { namespace opengl {
             }
 
             // We don't count the lazy clear of srcBuffer because it is an internal buffer.
-            // TODO(natlee@microsoft.com): use Dynamic Uploader here for temp buffer
+            // TODO(natlee@m1cr050ft.qjz9zk): use Dynamic Uploader here for temp buffer
             Ref<Buffer> srcBuffer;
             DAWN_TRY_ASSIGN(srcBuffer, Buffer::CreateInternalBuffer(device, &descriptor, false));
 

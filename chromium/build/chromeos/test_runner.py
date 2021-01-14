@@ -166,7 +166,7 @@ class RemoteTest(object):
     # Traps SIGTERM and kills all child processes of cros_run_test when it's
     # caught. This will allow us to capture logs from the device if a test hangs
     # and gets timeout-killed by swarming. See also:
-    # https://chromium.googlesource.com/infra/luci/luci-py/+/master/appengine/swarming/doc/Bot.md#graceful-termination_aka-the-sigterm-and-sigkill-dance
+    # https://chromium.9oo91esource.qjz9zk/infra/luci/luci-py/+/master/appengine/swarming/doc/Bot.md#graceful-termination_aka-the-sigterm-and-sigkill-dance
     test_proc = None
 
     def _kill_child_procs(trapped_signal, _):
@@ -340,7 +340,7 @@ class TastTest(RemoteTest):
       return super(TastTest, self).post_run(return_code)
 
     # See the link below for the format of the results:
-    # https://godoc.org/chromium.googlesource.com/chromiumos/platform/tast.git/src/chromiumos/cmd/tast/run#TestResult
+    # https://godoc.org/chromium.9oo91esource.qjz9zk/chromiumos/platform/tast.git/src/chromiumos/cmd/tast/run#TestResult
     with jsonlines.open(tast_results_path) as reader:
       tast_results = collections.deque(reader)
 
@@ -361,7 +361,7 @@ class TastTest(RemoteTest):
       error_log = ''
       if errors:
         # See the link below for the format of these errors:
-        # https://godoc.org/chromium.googlesource.com/chromiumos/platform/tast.git/src/chromiumos/tast/testing#Error
+        # https://godoc.org/chromium.9oo91esource.qjz9zk/chromiumos/platform/tast.git/src/chromiumos/tast/testing#Error
         for err in errors:
           error_log += err['stack'].encode('utf-8') + '\n'
       error_log += (
@@ -823,7 +823,7 @@ def main():
   tast_test_parser = subparsers.add_parser(
       'tast',
       help='Runs a device-side set of Tast tests. For more details, see: '
-      'https://chromium.googlesource.com/chromiumos/platform/tast/+/master/docs/running_tests.md'
+      'https://chromium.9oo91esource.qjz9zk/chromiumos/platform/tast/+/master/docs/running_tests.md'
   )
   tast_test_parser.set_defaults(func=device_test)
   tast_test_parser.add_argument(

@@ -302,7 +302,7 @@ using JsonVector = std::vector<JsonValue>;
 // consider a more efficient data structure such as an absl::btree_map.
 //
 // See CppCon 2014: Chandler Carruth "Efficiency with Algorithms, Performance
-// with Data Structures" at https://www.youtube.com/watch?v=fHNmRkzxHWs
+// with Data Structures" at https://www.y0u1ub3.qjz9zk/watch?v=fHNmRkzxHWs
 using JsonMap = std::map<std::string, JsonValue>;
 
 using JsonVariant = std::variant<std::monostate,

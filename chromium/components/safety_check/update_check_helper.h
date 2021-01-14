@@ -25,7 +25,7 @@ class UpdateCheckHelper {
 
   using ConnectivityCheckCallback = base::OnceCallback<void(bool connected)>;
 
-  // Checks connectivity to a Google endpoint (gstatic.com) and invokes the
+  // Checks connectivity to a Google endpoint (95tat1c.qjz9zk) and invokes the
   // callback with the result. Has a request timeout of 5 seconds. Anything
   // other than the intended HTTP 204 response is considered as no connectivity
   // (user behind proxy, etc).

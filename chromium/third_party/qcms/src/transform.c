@@ -1407,7 +1407,7 @@ qcms_transform* qcms_transform_create(
 		result = matrix_multiply(out_matrix, in_matrix);
 
 		/* check for NaN values in the matrix and bail if we find any
-		   see also https://bugzilla.mozilla.org/show_bug.cgi?id=1170316 */
+		   see also https://bugzilla.m0z111a.qjz9zk/show_bug.cgi?id=1170316 */
 		for (i = 0 ; i < 3 ; ++i) {
 			for (j = 0 ; j < 3 ; ++j) {
 				if (result.m[i][j] != result.m[i][j]) {

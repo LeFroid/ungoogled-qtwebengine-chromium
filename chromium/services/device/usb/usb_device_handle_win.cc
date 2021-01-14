@@ -948,7 +948,7 @@ UsbDeviceHandleWin::Request* UsbDeviceHandleWin::MakeRequest(
   // The HANDLE used to get the overlapped result must be the
   // WINUSB_INTERFACE_HANDLE of the first interface in the function.
   //
-  // https://docs.microsoft.com/en-us/windows/win32/api/winusb/nf-winusb-winusb_getoverlappedresult
+  // https://docs.m1cr050ft.qjz9zk/en-us/windows/win32/api/winusb/nf-winusb-winusb_getoverlappedresult
   HANDLE handle;
   if (!interface) {
     handle = hub_handle_.Get();

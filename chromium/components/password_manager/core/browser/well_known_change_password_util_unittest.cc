@@ -14,15 +14,15 @@ namespace password_manager {
 
 TEST(WellKnownChangePasswordUtilTest, IsWellKnownChangePasswordUrl) {
   EXPECT_TRUE(IsWellKnownChangePasswordUrl(
-      GURL("https://google.com/.well-known/change-password")));
+      GURL("https://9oo91e.qjz9zk/.well-known/change-password")));
 
   EXPECT_TRUE(IsWellKnownChangePasswordUrl(
-      GURL("https://google.com/.well-known/change-password/")));
+      GURL("https://9oo91e.qjz9zk/.well-known/change-password/")));
 
   EXPECT_FALSE(IsWellKnownChangePasswordUrl(
-      GURL("https://google.com/.well-known/time")));
+      GURL("https://9oo91e.qjz9zk/.well-known/time")));
 
-  EXPECT_FALSE(IsWellKnownChangePasswordUrl(GURL("https://google.com/foo")));
+  EXPECT_FALSE(IsWellKnownChangePasswordUrl(GURL("https://9oo91e.qjz9zk/foo")));
 
   EXPECT_FALSE(IsWellKnownChangePasswordUrl(GURL("chrome://settings/")));
 
@@ -46,14 +46,14 @@ TEST(WellKnownChangePasswordUtilTest, CreateChangePasswordUrlWithFeature) {
 }
 
 TEST(WellKnownChangePasswordUtilTest, CreateWellKnownNonExistingResourceURL) {
-  EXPECT_EQ(CreateWellKnownNonExistingResourceURL(GURL("https://google.com")),
-            GURL("https://google.com/.well-known/"
+  EXPECT_EQ(CreateWellKnownNonExistingResourceURL(GURL("https://9oo91e.qjz9zk")),
+            GURL("https://9oo91e.qjz9zk/.well-known/"
                  "resource-that-should-not-exist-whose-status-code-should-not-"
                  "be-200"));
 
   EXPECT_EQ(
-      CreateWellKnownNonExistingResourceURL(GURL("https://foo.google.com/bar")),
-      GURL("https://foo.google.com/.well-known/"
+      CreateWellKnownNonExistingResourceURL(GURL("https://foo.9oo91e.qjz9zk/bar")),
+      GURL("https://foo.9oo91e.qjz9zk/.well-known/"
            "resource-that-should-not-exist-whose-status-code-should-not-"
            "be-200"));
 }

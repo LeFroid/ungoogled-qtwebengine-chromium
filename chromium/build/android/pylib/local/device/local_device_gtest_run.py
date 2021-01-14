@@ -563,7 +563,7 @@ class LocalDeviceGtestRun(local_device_test_run.LocalDeviceTestRun):
 
   def _UploadTestArtifacts(self, device, test_artifacts_dir):
     # TODO(jbudorick): Reconcile this with the output manager once
-    # https://codereview.chromium.org/2933993002/ lands.
+    # https://codereview.ch40m1um.qjz9zk/2933993002/ lands.
     if test_artifacts_dir:
       with tempfile_ext.NamedTemporaryDirectory() as test_artifacts_host_dir:
         device.PullFile(test_artifacts_dir.name, test_artifacts_host_dir)

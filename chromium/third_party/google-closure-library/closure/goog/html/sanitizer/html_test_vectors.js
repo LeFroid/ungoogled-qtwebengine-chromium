@@ -238,7 +238,7 @@ goog.html.htmlTestVectors.HTML_TEST_VECTORS = [
          "",
      ],
      name: "script_title"},
-    {input: "<svg onload=\"javascript:alert('xss')\" xmlns=\"http://www.google.com\"></svg>",
+    {input: "<svg onload=\"javascript:alert('xss')\" xmlns=\"http://www.9oo91e.qjz9zk\"></svg>",
      acceptable: [
          "",
      ],

@@ -27,10 +27,6 @@
 
 namespace variations {
 
-// The name string for the header for variations information.
-// Note that prior to M33 this header was named X-Chrome-Variations.
-const char kClientDataHeader[] = "X-Client-Data";
-
 namespace {
 
 // The result of checking whether a request to a URL should have variations
@@ -142,7 +138,7 @@ bool IsFirstPartyContext(Owner owner,
   }
   if (resource_request.is_main_frame) {
     // The request is from a Google-associated page--not a subframe--e.g. a
-    // request from https://calendar.google.com/.
+    // request from https://calendar.9oo91e.qjz9zk/.
     LogRequestContextHistogram(kGooglePageInitiated);
     return true;
   }
@@ -168,7 +164,7 @@ bool IsFirstPartyContext(Owner owner,
     if (GetUrlValidationResult(isolation_info->top_frame_origin()->GetURL()) ==
         URLValidationResult::kShouldAppend) {
       // The request is from a Google-associated subframe on a Google-associated
-      // page, e.g. a request from a Docs subframe on https://drive.google.com/.
+      // page, e.g. a request from a Docs subframe on https://drive.9oo91e.qjz9zk/.
       LogRequestContextHistogram(kGoogleSubFrameOnGooglePageInitiated);
       return true;
     }
@@ -236,29 +232,7 @@ class VariationsHeaderHelper {
   }
 
   bool AppendHeaderIfNeeded(const GURL& url, InIncognito incognito) {
-    AppendOmniboxOnDeviceSuggestionsHeaderIfNeeded(url, resource_request_);
-
-    // Note the criteria for attaching client experiment headers:
-    // 1. We only transmit to Google owned domains which can evaluate
-    // experiments.
-    //    1a. These include hosts which have a standard postfix such as:
-    //         *.doubleclick.net or *.googlesyndication.com or
-    //         exactly www.googleadservices.com or
-    //         international TLD domains *.google.<TLD> or *.youtube.<TLD>.
-    // 2. Only transmit for non-Incognito profiles.
-    // 3. For the X-Client-Data header, only include non-empty variation IDs.
-    if ((incognito == InIncognito::kYes) ||
-        !ShouldAppendVariationsHeader(url, "Append"))
-      return false;
-
-    if (variations_header_.empty())
-      return false;
-
-    // Set the variations header to cors_exempt_headers rather than headers
-    // to be exempted from CORS checks.
-    resource_request_->cors_exempt_headers.SetHeaderIfMissing(
-        kClientDataHeader, variations_header_);
-    return true;
+    return false;
   }
 
  private:
@@ -328,8 +302,6 @@ void RemoveVariationsHeaderIfNeeded(
     const net::RedirectInfo& redirect_info,
     const network::mojom::URLResponseHead& response_head,
     std::vector<std::string>* to_be_removed_headers) {
-  if (!ShouldAppendVariationsHeader(redirect_info.new_url, "Remove"))
-    to_be_removed_headers->push_back(kClientDataHeader);
 }
 
 std::unique_ptr<network::SimpleURLLoader>
@@ -359,14 +331,11 @@ CreateSimpleURLLoaderWithVariationsHeaderUnknownSignedIn(
 }
 
 bool IsVariationsHeader(const std::string& header_name) {
-  return header_name == kClientDataHeader ||
-         header_name == kOmniboxOnDeviceSuggestionsHeader;
+  return false;
 }
 
 bool HasVariationsHeader(const network::ResourceRequest& request) {
-  // Note: kOmniboxOnDeviceSuggestionsHeader is not listed because this function
-  // is only used for testing.
-  return request.cors_exempt_headers.HasHeader(kClientDataHeader);
+  return false;
 }
 
 bool ShouldAppendVariationsHeaderForTesting(
@@ -377,12 +346,6 @@ bool ShouldAppendVariationsHeaderForTesting(
 
 void UpdateCorsExemptHeaderForVariations(
     network::mojom::NetworkContextParams* params) {
-  params->cors_exempt_header_list.push_back(kClientDataHeader);
-
-  if (base::FeatureList::IsEnabled(kReportOmniboxOnDeviceSuggestionsHeader)) {
-    params->cors_exempt_header_list.push_back(
-        kOmniboxOnDeviceSuggestionsHeader);
-  }
 }
 
 }  // namespace variations

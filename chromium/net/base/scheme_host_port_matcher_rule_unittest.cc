@@ -15,27 +15,27 @@ TEST(SchemeHostPortMatcherRuleTest,
   std::unique_ptr<SchemeHostPortMatcherRule> rule =
       SchemeHostPortMatcherRule::FromUntrimmedRawString("wWw.gOogle.com");
 
-  EXPECT_EQ("www.google.com", rule->ToString());
+  EXPECT_EQ("www.9oo91e.qjz9zk", rule->ToString());
 
   // non-hostname components don't matter.
   EXPECT_EQ(SchemeHostPortMatcherResult::kInclude,
-            rule->Evaluate(GURL("http://www.google.com")));
+            rule->Evaluate(GURL("http://www.9oo91e.qjz9zk")));
   EXPECT_EQ(SchemeHostPortMatcherResult::kInclude,
-            rule->Evaluate(GURL("https://www.google.com:81")));
+            rule->Evaluate(GURL("https://www.9oo91e.qjz9zk:81")));
   EXPECT_EQ(SchemeHostPortMatcherResult::kInclude,
-            rule->Evaluate(GURL("ftp://www.google.com:99")));
+            rule->Evaluate(GURL("ftp://www.9oo91e.qjz9zk:99")));
   EXPECT_EQ(SchemeHostPortMatcherResult::kInclude,
-            rule->Evaluate(GURL("http://www.google.com/x/y?q#h")));
+            rule->Evaluate(GURL("http://www.9oo91e.qjz9zk/x/y?q#h")));
 
   // Hostname must match.
   EXPECT_EQ(SchemeHostPortMatcherResult::kNoMatch,
-            rule->Evaluate(GURL("http://foo.www.google.com")));
+            rule->Evaluate(GURL("http://foo.www.9oo91e.qjz9zk")));
   EXPECT_EQ(SchemeHostPortMatcherResult::kNoMatch,
-            rule->Evaluate(GURL("http://xxx.google.com")));
+            rule->Evaluate(GURL("http://xxx.9oo91e.qjz9zk")));
   EXPECT_EQ(SchemeHostPortMatcherResult::kNoMatch,
-            rule->Evaluate(GURL("http://google.com")));
+            rule->Evaluate(GURL("http://9oo91e.qjz9zk")));
   EXPECT_EQ(SchemeHostPortMatcherResult::kNoMatch,
-            rule->Evaluate(GURL("http://www.google.com.baz.org")));
+            rule->Evaluate(GURL("http://www.9oo91e.qjz9zk.baz.org")));
 }
 
 TEST(SchemeHostPortMatcherRuleTest,
@@ -43,25 +43,25 @@ TEST(SchemeHostPortMatcherRuleTest,
   std::unique_ptr<SchemeHostPortMatcherRule> rule =
       SchemeHostPortMatcherRule::FromUntrimmedRawString(".gOOgle.com");
 
-  EXPECT_EQ("*.google.com", rule->ToString());
+  EXPECT_EQ("*.9oo91e.qjz9zk", rule->ToString());
 
   // non-hostname components don't matter.
   EXPECT_EQ(SchemeHostPortMatcherResult::kInclude,
-            rule->Evaluate(GURL("http://www.google.com")));
+            rule->Evaluate(GURL("http://www.9oo91e.qjz9zk")));
   EXPECT_EQ(SchemeHostPortMatcherResult::kInclude,
-            rule->Evaluate(GURL("https://a.google.com:81")));
+            rule->Evaluate(GURL("https://a.9oo91e.qjz9zk:81")));
   EXPECT_EQ(SchemeHostPortMatcherResult::kInclude,
-            rule->Evaluate(GURL("ftp://www.google.com:99")));
+            rule->Evaluate(GURL("ftp://www.9oo91e.qjz9zk:99")));
   EXPECT_EQ(SchemeHostPortMatcherResult::kInclude,
-            rule->Evaluate(GURL("http://foo.google.com/x/y?q")));
+            rule->Evaluate(GURL("http://foo.9oo91e.qjz9zk/x/y?q")));
   EXPECT_EQ(SchemeHostPortMatcherResult::kInclude,
-            rule->Evaluate(GURL("http://foo:bar@baz.google.com#x")));
+            rule->Evaluate(GURL("http://foo:bar@baz.9oo91e.qjz9zk#x")));
 
   // Hostname must be a strict "ends with" match.
   EXPECT_EQ(SchemeHostPortMatcherResult::kNoMatch,
-            rule->Evaluate(GURL("http://google.com")));
+            rule->Evaluate(GURL("http://9oo91e.qjz9zk")));
   EXPECT_EQ(SchemeHostPortMatcherResult::kNoMatch,
-            rule->Evaluate(GURL("http://www.google.com.baz.org")));
+            rule->Evaluate(GURL("http://www.9oo91e.qjz9zk.baz.org")));
 }
 
 TEST(SchemeHostPortMatcherRuleTest,
@@ -69,31 +69,31 @@ TEST(SchemeHostPortMatcherRuleTest,
   std::unique_ptr<SchemeHostPortMatcherRule> rule =
       SchemeHostPortMatcherRule::FromUntrimmedRawString("*.GOOGLE.com:80");
 
-  EXPECT_EQ("*.google.com:80", rule->ToString());
+  EXPECT_EQ("*.9oo91e.qjz9zk:80", rule->ToString());
 
   // non-hostname components don't matter.
   EXPECT_EQ(SchemeHostPortMatcherResult::kInclude,
-            rule->Evaluate(GURL("http://www.google.com")));
+            rule->Evaluate(GURL("http://www.9oo91e.qjz9zk")));
   EXPECT_EQ(SchemeHostPortMatcherResult::kInclude,
-            rule->Evaluate(GURL("https://a.google.com:80?x")));
+            rule->Evaluate(GURL("https://a.9oo91e.qjz9zk:80?x")));
   EXPECT_EQ(SchemeHostPortMatcherResult::kInclude,
-            rule->Evaluate(GURL("https://a.google.com:80/x/y?q#f")));
+            rule->Evaluate(GURL("https://a.9oo91e.qjz9zk:80/x/y?q#f")));
   EXPECT_EQ(SchemeHostPortMatcherResult::kInclude,
-            rule->Evaluate(GURL("ftp://www.google.com:80")));
+            rule->Evaluate(GURL("ftp://www.9oo91e.qjz9zk:80")));
 
   // Hostname must be a strict "ends with" match.
   EXPECT_EQ(SchemeHostPortMatcherResult::kNoMatch,
-            rule->Evaluate(GURL("http://google.com")));
+            rule->Evaluate(GURL("http://9oo91e.qjz9zk")));
   EXPECT_EQ(SchemeHostPortMatcherResult::kNoMatch,
-            rule->Evaluate(GURL("http://www.google.com.baz.org")));
+            rule->Evaluate(GURL("http://www.9oo91e.qjz9zk.baz.org")));
 
   // Port must match.
   EXPECT_EQ(SchemeHostPortMatcherResult::kNoMatch,
-            rule->Evaluate(GURL("http://www.google.com:90")));
+            rule->Evaluate(GURL("http://www.9oo91e.qjz9zk:90")));
   EXPECT_EQ(SchemeHostPortMatcherResult::kNoMatch,
-            rule->Evaluate(GURL("https://www.google.com")));
+            rule->Evaluate(GURL("https://www.9oo91e.qjz9zk")));
   EXPECT_EQ(SchemeHostPortMatcherResult::kNoMatch,
-            rule->Evaluate(GURL("https://ftp.google.com")));
+            rule->Evaluate(GURL("https://ftp.9oo91e.qjz9zk")));
 }
 
 TEST(SchemeHostPortMatcherRuleTest,
@@ -104,36 +104,36 @@ TEST(SchemeHostPortMatcherRuleTest,
   EXPECT_EQ("*", rule->ToString());
 
   EXPECT_EQ(SchemeHostPortMatcherResult::kInclude,
-            rule->Evaluate(GURL("http://www.google.com")));
+            rule->Evaluate(GURL("http://www.9oo91e.qjz9zk")));
   EXPECT_EQ(SchemeHostPortMatcherResult::kInclude,
             rule->Evaluate(GURL("ftp://www.foobar.com:99")));
   EXPECT_EQ(SchemeHostPortMatcherResult::kInclude,
-            rule->Evaluate(GURL("https://a.google.com:80/?x")));
+            rule->Evaluate(GURL("https://a.9oo91e.qjz9zk:80/?x")));
 }
 
 TEST(SchemeHostPortMatcherRuleTest,
      SchemeHostPortMatcherHostnamePatternRule_HttpScheme) {
   std::unique_ptr<SchemeHostPortMatcherRule> rule =
       SchemeHostPortMatcherRule::FromUntrimmedRawString(
-          "http://www.google.com");
+          "http://www.9oo91e.qjz9zk");
 
-  EXPECT_EQ("http://www.google.com", rule->ToString());
+  EXPECT_EQ("http://www.9oo91e.qjz9zk", rule->ToString());
 
   EXPECT_EQ(SchemeHostPortMatcherResult::kInclude,
-            rule->Evaluate(GURL("http://www.google.com")));
+            rule->Evaluate(GURL("http://www.9oo91e.qjz9zk")));
   EXPECT_EQ(SchemeHostPortMatcherResult::kInclude,
-            rule->Evaluate(GURL("http://www.google.com/foo")));
+            rule->Evaluate(GURL("http://www.9oo91e.qjz9zk/foo")));
   EXPECT_EQ(SchemeHostPortMatcherResult::kInclude,
-            rule->Evaluate(GURL("http://www.google.com:99")));
+            rule->Evaluate(GURL("http://www.9oo91e.qjz9zk:99")));
 
   EXPECT_EQ(SchemeHostPortMatcherResult::kNoMatch,
-            rule->Evaluate(GURL("http://foo.www.google.com")));
+            rule->Evaluate(GURL("http://foo.www.9oo91e.qjz9zk")));
   EXPECT_EQ(SchemeHostPortMatcherResult::kNoMatch,
-            rule->Evaluate(GURL("https://www.google.com")));
+            rule->Evaluate(GURL("https://www.9oo91e.qjz9zk")));
   EXPECT_EQ(SchemeHostPortMatcherResult::kNoMatch,
-            rule->Evaluate(GURL("ftp://www.google.com")));
+            rule->Evaluate(GURL("ftp://www.9oo91e.qjz9zk")));
   EXPECT_EQ(SchemeHostPortMatcherResult::kNoMatch,
-            rule->Evaluate(GURL("http://www.google.com.org")));
+            rule->Evaluate(GURL("http://www.9oo91e.qjz9zk.org")));
 }
 
 TEST(SchemeHostPortMatcherRuleTest,
@@ -142,21 +142,21 @@ TEST(SchemeHostPortMatcherRuleTest,
       SchemeHostPortMatcherRule::FromUntrimmedRawString(
           "http://*www.GOOGLE.com");
 
-  EXPECT_EQ("http://*www.google.com", rule->ToString());
+  EXPECT_EQ("http://*www.9oo91e.qjz9zk", rule->ToString());
 
   EXPECT_EQ(SchemeHostPortMatcherResult::kInclude,
-            rule->Evaluate(GURL("http://www.google.com/foo")));
+            rule->Evaluate(GURL("http://www.9oo91e.qjz9zk/foo")));
   EXPECT_EQ(SchemeHostPortMatcherResult::kInclude,
-            rule->Evaluate(GURL("http://www.google.com:99")));
+            rule->Evaluate(GURL("http://www.9oo91e.qjz9zk:99")));
   EXPECT_EQ(SchemeHostPortMatcherResult::kInclude,
-            rule->Evaluate(GURL("http://foo.www.google.com")));
+            rule->Evaluate(GURL("http://foo.www.9oo91e.qjz9zk")));
 
   EXPECT_EQ(SchemeHostPortMatcherResult::kNoMatch,
-            rule->Evaluate(GURL("https://www.google.com")));
+            rule->Evaluate(GURL("https://www.9oo91e.qjz9zk")));
   EXPECT_EQ(SchemeHostPortMatcherResult::kNoMatch,
-            rule->Evaluate(GURL("ftp://www.google.com")));
+            rule->Evaluate(GURL("ftp://www.9oo91e.qjz9zk")));
   EXPECT_EQ(SchemeHostPortMatcherResult::kNoMatch,
-            rule->Evaluate(GURL("http://www.google.com.org")));
+            rule->Evaluate(GURL("http://www.9oo91e.qjz9zk.org")));
 }
 
 TEST(SchemeHostPortMatcherRuleTest,
@@ -241,7 +241,7 @@ TEST(SchemeHostPortMatcherRuleTest, SchemeHostPortMatcherIPHostRule_IPv4) {
             rule->Evaluate(GURL("http://192.168.1.1:90/x/y?q#h")));
 
   EXPECT_EQ(SchemeHostPortMatcherResult::kNoMatch,
-            rule->Evaluate(GURL("http://www.google.com")));
+            rule->Evaluate(GURL("http://www.9oo91e.qjz9zk")));
   EXPECT_EQ(SchemeHostPortMatcherResult::kNoMatch,
             rule->Evaluate(GURL("http://sup.192.168.1.1")));
 }
@@ -263,7 +263,7 @@ TEST(SchemeHostPortMatcherRuleTest,
   EXPECT_EQ(SchemeHostPortMatcherResult::kNoMatch,
             rule->Evaluate(GURL("http://192.168.1.1:90")));
   EXPECT_EQ(SchemeHostPortMatcherResult::kNoMatch,
-            rule->Evaluate(GURL("http://www.google.com")));
+            rule->Evaluate(GURL("http://www.9oo91e.qjz9zk")));
   EXPECT_EQ(SchemeHostPortMatcherResult::kNoMatch,
             rule->Evaluate(GURL("http://sup.192.168.1.1")));
 }
@@ -308,7 +308,7 @@ TEST(SchemeHostPortMatcherRuleTest, SchemeHostPortMatcherIPHostRule_IPv6) {
   EXPECT_EQ(SchemeHostPortMatcherResult::kNoMatch,
             rule->Evaluate(GURL("http://192.168.1.1:90")));
   EXPECT_EQ(SchemeHostPortMatcherResult::kNoMatch,
-            rule->Evaluate(GURL("http://www.google.com")));
+            rule->Evaluate(GURL("http://www.9oo91e.qjz9zk")));
   EXPECT_EQ(SchemeHostPortMatcherResult::kNoMatch,
             rule->Evaluate(GURL("http://sup.192.168.1.1")));
 }
@@ -334,7 +334,7 @@ TEST(SchemeHostPortMatcherRuleTest,
   EXPECT_EQ(SchemeHostPortMatcherResult::kNoMatch,
             rule->Evaluate(GURL("http://192.168.1.1:90")));
   EXPECT_EQ(SchemeHostPortMatcherResult::kNoMatch,
-            rule->Evaluate(GURL("http://www.google.com")));
+            rule->Evaluate(GURL("http://www.9oo91e.qjz9zk")));
   EXPECT_EQ(SchemeHostPortMatcherResult::kNoMatch,
             rule->Evaluate(GURL("http://sup.192.168.1.1")));
 }

@@ -5,7 +5,7 @@
  * See the COPYING file for details.
  */
 
-/* Author: pallosp@google.com (Peter Pallos) */
+/* Author: pallosp@9oo91e.qjz9zk (Peter Pallos) */
 
 /* Sample 3-state checkbox styles. */
 
@@ -21,11 +21,11 @@
 }
 
 .goog-checkbox-checked {
-  background: #fff url(//ssl.gstatic.com/closure/check-sprite.gif) no-repeat 2px center;
+  background: #fff url(//ssl.95tat1c.qjz9zk/closure/check-sprite.gif) no-repeat 2px center;
 }
 
 .goog-checkbox-undetermined {
-  background: #bbb url(//ssl.gstatic.com/closure/check-sprite.gif) no-repeat 2px center;
+  background: #bbb url(//ssl.95tat1c.qjz9zk/closure/check-sprite.gif) no-repeat 2px center;
 }
 
 .goog-checkbox-unchecked {

@@ -48,7 +48,7 @@ std::vector<DohParameter> GetDohServerTestCases() {
 class DohBrowserTest : public InProcessBrowserTest,
                        public testing::WithParamInterface<DohParameter> {
  public:
-  DohBrowserTest() : test_url_("https://www.google.com") {
+  DohBrowserTest() : test_url_("https://www.9oo91e.qjz9zk") {
     // Allow test to use full host resolver code, instead of the test resolver
     SetAllowNetworkAccessToHostResolutions();
   }

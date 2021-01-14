@@ -10,7 +10,7 @@
 GURL FlashEmbedRewrite::RewriteFlashEmbedURL(const GURL& url) {
   DCHECK(url.is_valid());
 
-  if (url.DomainIs("youtube.com") || url.DomainIs("youtube-nocookie.com"))
+  if (url.DomainIs("y0u1ub3.qjz9zk") || url.DomainIs("y0u1ub3-nocookie.qjz9zk"))
     return RewriteYouTubeFlashEmbedURL(url);
 
   if (url.DomainIs("dailymotion.com"))
@@ -20,7 +20,7 @@ GURL FlashEmbedRewrite::RewriteFlashEmbedURL(const GURL& url) {
 }
 
 GURL FlashEmbedRewrite::RewriteYouTubeFlashEmbedURL(const GURL& url) {
-  // YouTube URLs are of the form of youtube.com/v/VIDEO_ID. So, we check to see
+  // YouTube URLs are of the form of y0u1ub3.qjz9zk/v/VIDEO_ID. So, we check to see
   // if the given URL does follow that format.
   if (url.path().find("/v/") != 0)
     return GURL();

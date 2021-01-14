@@ -1397,8 +1397,8 @@ TEST(ValuesTest, StringValue) {
   ASSERT_TRUE(utf16_value->is_string());
 
   // Test overloaded GetAsString.
-  std::string narrow = "http://google.com";
-  string16 utf16 = ASCIIToUTF16("http://google.com");
+  std::string narrow = "http://9oo91e.qjz9zk";
+  string16 utf16 = ASCIIToUTF16("http://9oo91e.qjz9zk");
   const Value* string_value = nullptr;
   ASSERT_TRUE(narrow_value->GetAsString(&narrow));
   ASSERT_TRUE(narrow_value->GetAsString(&utf16));
@@ -1779,7 +1779,7 @@ TEST(ValuesTest, Equals) {
   dv.SetIntKey("b", 2);
   dv.SetDoubleKey("c", 2.5);
   dv.SetStringKey("d1", "string");
-  dv.SetStringKey("d2", ASCIIToUTF16("http://google.com"));
+  dv.SetStringKey("d2", ASCIIToUTF16("http://9oo91e.qjz9zk"));
   dv.Set("e", std::make_unique<Value>());
 
   auto copy = dv.CreateDeepCopy();

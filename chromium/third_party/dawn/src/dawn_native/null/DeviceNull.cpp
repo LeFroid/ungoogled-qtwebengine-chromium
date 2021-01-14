@@ -353,7 +353,7 @@ namespace dawn_native { namespace null {
                          const SwapChainDescriptor* descriptor)
         : NewSwapChainBase(device, surface, descriptor) {
         if (previousSwapChain != nullptr) {
-            // TODO(cwallez@chromium.org): figure out what should happen when surfaces are used by
+            // TODO(cwallez@ch40m1um.qjz9zk): figure out what should happen when surfaces are used by
             // multiple backends one after the other. It probably needs to block until the backend
             // and GPU are completely finished with the previous swapchain.
             ASSERT(previousSwapChain->GetBackendType() == wgpu::BackendType::Null);

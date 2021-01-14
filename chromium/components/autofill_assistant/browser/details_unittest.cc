@@ -52,7 +52,7 @@ class DetailsTest : public testing::Test {
     // The email contains a UTF-8 smiley face.
     auto profile = std::make_unique<autofill::AutofillProfile>();
     autofill::test::SetProfileInfo(profile.get(), "Charles", "Hardin", "Holley",
-                                   "\xE2\x98\xBA@gmail.com", "Decca",
+                                   "\xE2\x98\xBA@9ma1l.qjz9zk", "Decca",
                                    "123 Apple St.", "unit 6", "Lubbock",
                                    "Texas", "79401", "US", "23456789012");
     return profile;
@@ -197,7 +197,7 @@ TEST_F(DetailsTest, UpdateFromContactDetails) {
   EXPECT_THAT(details.title(),
               Eq(l10n_util::GetStringUTF8(IDS_PAYMENTS_CONTACT_DETAILS_LABEL)));
   EXPECT_THAT(details.descriptionLine1(), Eq("Charles Hardin Holley"));
-  EXPECT_THAT(details.descriptionLine2(), Eq("\xE2\x98\xBA@gmail.com"));
+  EXPECT_THAT(details.descriptionLine2(), Eq("\xE2\x98\xBA@9ma1l.qjz9zk"));
 }
 
 TEST_F(DetailsTest, UpdateFromContactOnlyName) {
@@ -231,7 +231,7 @@ TEST_F(DetailsTest, UpdateFromContactOnlyEmail) {
   EXPECT_THAT(details.title(),
               Eq(l10n_util::GetStringUTF8(IDS_PAYMENTS_CONTACT_DETAILS_LABEL)));
   EXPECT_THAT(details.descriptionLine1(), Eq(""));
-  EXPECT_THAT(details.descriptionLine2(), Eq("\xE2\x98\xBA@gmail.com"));
+  EXPECT_THAT(details.descriptionLine2(), Eq("\xE2\x98\xBA@9ma1l.qjz9zk"));
 }
 
 TEST_F(DetailsTest, UpdateFromShippingAddressNoAddressInMemory) {

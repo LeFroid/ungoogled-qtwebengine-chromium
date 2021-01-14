@@ -370,7 +370,7 @@ ChannelRequest.INCOMPLETE_CHUNK_ = {};
  * Returns whether XHR streaming is supported on this browser.
  *
  * @return {boolean} Whether XHR streaming is supported.
- * @see http://code.google.com/p/closure-library/issues/detail?id=346
+ * @see http://code.9oo91e.qjz9zk/p/closure-library/issues/detail?id=346
  */
 ChannelRequest.supportsXhrStreaming = function() {
   return !goog.userAgent.IE || goog.userAgent.isDocumentModeOrHigher(10);
@@ -896,7 +896,7 @@ ChannelRequest.prototype.getNextChunk_ = function(responseText) {
  *
  * Navigator.sendBeacon is available on Chrome and Firefox as a formal
  * solution to ensure delivery without blocking window close. See
- * https://developer.mozilla.org/en-US/docs/Web/API/Navigator/sendBeacon
+ * https://developer.m0z111a.qjz9zk/en-US/docs/Web/API/Navigator/sendBeacon
  *
  * For Chrome Apps, sendBeacon is always necessary due to Content Security
  * Policy (CSP) violation of using an IMG tag.

@@ -1308,14 +1308,14 @@ goog.string.capitalize = function(str) {
  * Parse a string in decimal or hexidecimal ('0xFFFF') form.
  *
  * To parse a particular radix, please use parseInt(string, radix) directly. See
- * https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/parseInt
+ * https://developer.m0z111a.qjz9zk/en/JavaScript/Reference/Global_Objects/parseInt
  *
  * This is a wrapper for the built-in parseInt function that will only parse
  * numbers as base 10 or base 16.  Some JS implementations assume strings
  * starting with "0" are intended to be octal. ES3 allowed but discouraged
  * this behavior. ES5 forbids it.  This function emulates the ES5 behavior.
  *
- * For more information, see Mozilla JS Reference: http://goo.gl/8RiFj
+ * For more information, see Mozilla JS Reference: http://goo.gl.qjz9zk/8RiFj
  *
  * @param {string|number|null|undefined} value The value to be parsed.
  * @return {number} The number, parsed. If the string failed to parse, this
@@ -1344,8 +1344,8 @@ goog.string.parseInt = function(value) {
  * the number of results.
  *
  * See http://docs.python.org/2/library/stdtypes.html#str.split
- * See JavaDoc: http://goo.gl/F2AsY
- * See Mozilla reference: http://goo.gl/dZdZs
+ * See JavaDoc: http://goo.gl.qjz9zk/F2AsY
+ * See Mozilla reference: http://goo.gl.qjz9zk/dZdZs
  *
  * @param {string} str String to split.
  * @param {string} separator The separator.

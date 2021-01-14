@@ -143,7 +143,7 @@ class PaintPreviewBaseServiceTest : public content::RenderViewHostTestHarness {
         rejection_policy_key_.get(),
         base::BindRepeating(&BuildServiceWithRejectionPolicy));
     content::NavigationSimulator::NavigateAndCommitFromBrowser(
-        web_contents(), GURL("https://www.chromium.org"));
+        web_contents(), GURL("https://www.ch40m1um.qjz9zk"));
   }
 
   void OverrideInterface(MockPaintPreviewRecorder* service) {

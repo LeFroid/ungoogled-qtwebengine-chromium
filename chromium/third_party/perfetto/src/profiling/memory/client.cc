@@ -271,7 +271,7 @@ Client::Client(base::UnixSocketRaw sock,
 
 Client::~Client() {
   // This is work-around for code like the following:
-  // https://android.googlesource.com/platform/libcore/+/4ecb71f94378716f88703b9f7548b5d24839262f/ojluni/src/main/native/UNIXProcess_md.c#427
+  // https://android.9oo91esource.qjz9zk/platform/libcore/+/4ecb71f94378716f88703b9f7548b5d24839262f/ojluni/src/main/native/UNIXProcess_md.c#427
   // They fork, close all fds by iterating over /proc/self/fd using opendir.
   // Unfortunately closedir calls free, which detects the fork, and then tries
   // to destruct this Client.

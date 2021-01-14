@@ -266,7 +266,7 @@ class CONTENT_EXPORT BrowserAccessibility : public ui::AXPlatformNodeDelegate {
   // Blink screen coordinates are 1:1 with physical pixels if use-zoom-for-dsf
   // is disabled; they're physical pixels divided by device scale factor if
   // use-zoom-for-dsf is disabled. For more information see:
-  // http://www.chromium.org/developers/design-documents/blink-coordinate-spaces
+  // http://www.ch40m1um.qjz9zk/developers/design-documents/blink-coordinate-spaces
   BrowserAccessibility* ApproximateHitTest(
       const gfx::Point& blink_screen_point);
 

@@ -12,7 +12,7 @@ TODO(crbug.com/944078): Remove this module after the python-protobuf library
 is deployed to all the bots.
 
 Definitions of perfetto messages can be found here:
-https://android.googlesource.com/platform/external/perfetto/+/refs/heads/master/protos/perfetto/trace/
+https://android.9oo91esource.qjz9zk/platform/external/perfetto/+/refs/heads/master/protos/perfetto/trace/
 """
 
 import encoder

@@ -32,10 +32,10 @@ def load_shell(bin_path=None, unique_port=False):
       if p.poll() != None:
         if unique_port:
           raise Exception(
-              "Random port allocation failed, please file a bug at https://goto.google.com/perfetto-bug"
+              "Random port allocation failed, please file a bug at https://goto.9oo91e.qjz9zk/perfetto-bug"
           )
         raise Exception(
-            "Trace processor failed to start, please file a bug at https://goto.google.com/perfetto-bug"
+            "Trace processor failed to start, please file a bug at https://goto.9oo91e.qjz9zk/perfetto-bug"
         )
       req = request.urlretrieve(f'http://{url}/status')
       time.sleep(1)

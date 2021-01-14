@@ -39,14 +39,14 @@ using Store = password_manager::PasswordForm::Store;
 namespace password_manager {
 namespace {
 
-constexpr char kPreferredUsername[] = "test@gmail.com";
+constexpr char kPreferredUsername[] = "test@9ma1l.qjz9zk";
 constexpr char kPreferredPassword[] = "password";
 constexpr char kPreferredAlternatePassword[] = "new_password";
 
-constexpr char kDuplicateLocalUsername[] = "local@gmail.com";
+constexpr char kDuplicateLocalUsername[] = "local@9ma1l.qjz9zk";
 constexpr char kDuplicateLocalPassword[] = "local_password";
 
-constexpr char kSyncedUsername[] = "synced@gmail.com";
+constexpr char kSyncedUsername[] = "synced@9ma1l.qjz9zk";
 constexpr char kSyncedPassword[] = "password";
 
 class MockPasswordManagerDriver : public StubPasswordManagerDriver {
@@ -103,8 +103,8 @@ class PasswordFormFillingTest : public testing::Test {
   PasswordFormFillingTest() {
     ON_CALL(client_, IsCommittedMainFrameSecure()).WillByDefault(Return(true));
 
-    observed_form_.url = GURL("https://accounts.google.com/a/LoginAuth");
-    observed_form_.action = GURL("https://accounts.google.com/a/Login");
+    observed_form_.url = GURL("https://accounts.9oo91e.qjz9zk/a/LoginAuth");
+    observed_form_.action = GURL("https://accounts.9oo91e.qjz9zk/a/Login");
     observed_form_.username_element = ASCIIToUTF16("Email");
     observed_form_.username_element_renderer_id =
         autofill::FieldRendererId(100);
@@ -112,21 +112,21 @@ class PasswordFormFillingTest : public testing::Test {
     observed_form_.password_element_renderer_id =
         autofill::FieldRendererId(101);
     observed_form_.submit_element = ASCIIToUTF16("signIn");
-    observed_form_.signon_realm = "https://accounts.google.com";
+    observed_form_.signon_realm = "https://accounts.9oo91e.qjz9zk";
     observed_form_.form_data.name = ASCIIToUTF16("the-form-name");
 
     saved_match_ = observed_form_;
-    saved_match_.url = GURL("https://accounts.google.com/a/ServiceLoginAuth");
-    saved_match_.action = GURL("https://accounts.google.com/a/ServiceLogin");
-    saved_match_.username_value = ASCIIToUTF16("test@gmail.com");
+    saved_match_.url = GURL("https://accounts.9oo91e.qjz9zk/a/ServiceLoginAuth");
+    saved_match_.action = GURL("https://accounts.9oo91e.qjz9zk/a/ServiceLogin");
+    saved_match_.username_value = ASCIIToUTF16("test@9ma1l.qjz9zk");
     saved_match_.password_value = ASCIIToUTF16("test1");
 
     psl_saved_match_ = saved_match_;
     psl_saved_match_.is_public_suffix_match = true;
     psl_saved_match_.url =
-        GURL("https://m.accounts.google.com/a/ServiceLoginAuth");
-    psl_saved_match_.action = GURL("https://m.accounts.google.com/a/Login");
-    psl_saved_match_.signon_realm = "https://m.accounts.google.com";
+        GURL("https://m.accounts.9oo91e.qjz9zk/a/ServiceLoginAuth");
+    psl_saved_match_.action = GURL("https://m.accounts.9oo91e.qjz9zk/a/Login");
+    psl_saved_match_.signon_realm = "https://m.accounts.9oo91e.qjz9zk";
 
     metrics_recorder_ = base::MakeRefCounted<PasswordFormMetricsRecorder>(
         true, client_.GetUkmSourceId(), /*pref_service=*/nullptr);
@@ -347,14 +347,14 @@ TEST_F(PasswordFormFillingTest, AutofillPSLMatch) {
 
 TEST_F(PasswordFormFillingTest, NoAutofillOnHttp) {
   PasswordForm observed_http_form = observed_form_;
-  observed_http_form.url = GURL("http://accounts.google.com/a/LoginAuth");
-  observed_http_form.action = GURL("http://accounts.google.com/a/Login");
-  observed_http_form.signon_realm = "http://accounts.google.com";
+  observed_http_form.url = GURL("http://accounts.9oo91e.qjz9zk/a/LoginAuth");
+  observed_http_form.action = GURL("http://accounts.9oo91e.qjz9zk/a/Login");
+  observed_http_form.signon_realm = "http://accounts.9oo91e.qjz9zk";
 
   PasswordForm saved_http_match = saved_match_;
-  saved_http_match.url = GURL("http://accounts.google.com/a/ServiceLoginAuth");
-  saved_http_match.action = GURL("http://accounts.google.com/a/ServiceLogin");
-  saved_http_match.signon_realm = "http://accounts.google.com";
+  saved_http_match.url = GURL("http://accounts.9oo91e.qjz9zk/a/ServiceLoginAuth");
+  saved_http_match.action = GURL("http://accounts.9oo91e.qjz9zk/a/ServiceLogin");
+  saved_http_match.signon_realm = "http://accounts.9oo91e.qjz9zk";
 
   ASSERT_FALSE(GURL(saved_http_match.signon_realm).SchemeIsCryptographic());
   std::vector<const PasswordForm*> best_matches = {&saved_http_match};
@@ -470,7 +470,7 @@ TEST(PasswordFormFillDataTest, TestPublicSuffixDomainMatching) {
   exact_match.url = GURL("https://foo.com/");
   exact_match.action = GURL("https://foo.com/login");
   exact_match.username_element = ASCIIToUTF16("username");
-  exact_match.username_value = ASCIIToUTF16("test1@gmail.com");
+  exact_match.username_value = ASCIIToUTF16("test1@9ma1l.qjz9zk");
   exact_match.password_element = ASCIIToUTF16("password");
   exact_match.password_value = ASCIIToUTF16(kPreferredPassword);
   exact_match.submit_element = ASCIIToUTF16("");
@@ -483,7 +483,7 @@ TEST(PasswordFormFillDataTest, TestPublicSuffixDomainMatching) {
   public_suffix_match.url = GURL("https://foo.com/");
   public_suffix_match.action = GURL("https://foo.com/login");
   public_suffix_match.username_element = ASCIIToUTF16("username");
-  public_suffix_match.username_value = ASCIIToUTF16("test2@gmail.com");
+  public_suffix_match.username_value = ASCIIToUTF16("test2@9ma1l.qjz9zk");
   public_suffix_match.password_element = ASCIIToUTF16("password");
   public_suffix_match.password_value = ASCIIToUTF16(kPreferredPassword);
   public_suffix_match.submit_element = ASCIIToUTF16("");
@@ -546,7 +546,7 @@ TEST(PasswordFormFillDataTest, TestAffiliationMatch) {
   exact_match.url = GURL("https://foo.com/");
   exact_match.action = GURL("https://foo.com/login");
   exact_match.username_element = ASCIIToUTF16("username");
-  exact_match.username_value = ASCIIToUTF16("test1@gmail.com");
+  exact_match.username_value = ASCIIToUTF16("test1@9ma1l.qjz9zk");
   exact_match.password_element = ASCIIToUTF16("password");
   exact_match.password_value = ASCIIToUTF16(kPreferredPassword);
   exact_match.submit_element = ASCIIToUTF16("");
@@ -557,7 +557,7 @@ TEST(PasswordFormFillDataTest, TestAffiliationMatch) {
   // |is_public_suffix_match| == true.
   PasswordForm affiliated_match;
   affiliated_match.url = GURL("android://hash@foo1.com/");
-  affiliated_match.username_value = ASCIIToUTF16("test2@gmail.com");
+  affiliated_match.username_value = ASCIIToUTF16("test2@9ma1l.qjz9zk");
   affiliated_match.password_value = ASCIIToUTF16(kPreferredPassword);
   affiliated_match.is_affiliation_based_match = true;
   affiliated_match.signon_realm = "https://foo1.com/";

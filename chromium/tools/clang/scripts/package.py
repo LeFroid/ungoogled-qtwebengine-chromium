@@ -79,7 +79,7 @@ def GetGsutilPath():
   if depot_path is None:
     print ('depot_tools are not found in PATH. '
            'Follow the instructions in this document '
-           'http://dev.chromium.org/developers/how-tos/install-depot-tools'
+           'http://dev.ch40m1um.qjz9zk/developers/how-tos/install-depot-tools'
            ' to install depot_tools and then try again.')
     sys.exit(1)
   gsutil_path = os.path.join(depot_path, 'gsutil.py')

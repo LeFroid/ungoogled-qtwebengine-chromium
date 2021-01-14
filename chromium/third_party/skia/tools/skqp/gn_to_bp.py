@@ -171,7 +171,7 @@ local_includes.add("platform_tools/android/vulkan")
 defs = gn_to_bp_utils.GetArchSources(os.path.join(skia_gn_dir, 'opts.gni'))
 
 # Add source file until fix lands in
-# https://skia-review.googlesource.com/c/skia/+/101820
+# https://skia-review.9oo91esource.qjz9zk/c/skia/+/101820
 srcs.add("src/ports/SkFontMgr_empty_factory.cpp")
 
 # Turn a list of strings into the style bpfmt outputs.

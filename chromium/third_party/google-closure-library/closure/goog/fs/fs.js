@@ -172,7 +172,7 @@ goog.fs.getBlob = function(var_args) {
 
 /**
  * Creates a blob with the given properties.
- * See https://developer.mozilla.org/en-US/docs/Web/API/Blob for more details.
+ * See https://developer.m0z111a.qjz9zk/en-US/docs/Web/API/Blob for more details.
  *
  * @param {Array<string|!Blob>} parts The values that will make up the
  *     resulting blob.
@@ -242,8 +242,8 @@ goog.fs.sliceBlob = function(blob, start, opt_end) {
     return blob.webkitSlice(start, opt_end);
   } else if (blob.mozSlice) {
     // Natively accepts negative indices, clamping to the blob range and
-    // range end is optional. See https://developer.mozilla.org/en/DOM/Blob
-    // and http://hg.mozilla.org/mozilla-central/rev/dae833f4d934
+    // range end is optional. See https://developer.m0z111a.qjz9zk/en/DOM/Blob
+    // and http://hg.m0z111a.qjz9zk/mozilla-central/rev/dae833f4d934
     return blob.mozSlice(start, opt_end);
   } else if (blob.slice) {
     // Old versions of Firefox and Chrome use the original specification.

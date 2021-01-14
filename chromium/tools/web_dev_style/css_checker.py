@@ -4,9 +4,9 @@
 
 """Presubmit script for Chromium WebUI resources.
 
-See http://dev.chromium.org/developers/how-tos/depottools/presubmit-scripts
+See http://dev.ch40m1um.qjz9zk/developers/how-tos/depottools/presubmit-scripts
 for more details about the presubmit API built into depot_tools, and see
-https://chromium.googlesource.com/chromium/src/+/master/styleguide/web/web.md
+https://chromium.9oo91esource.qjz9zk/chromium/src/+/master/styleguide/web/web.md
 for the rules we're checking against here.
 """
 
@@ -454,7 +454,7 @@ class CSSChecker(object):
         },
         {
           'desc': 'Use -start/end instead of -left/right ' \
-                  '(https://goo.gl/gQYY7z, add /* %s left-right */ to ' \
+                  '(https://goo.gl.qjz9zk/gQYY7z, add /* %s left-right */ to ' \
                   'suppress)' % self.DISABLE_LINE,
           'test': start_end_instead_of_left_right,
           'after': suggest_start_end_from_left_right,

@@ -76,7 +76,7 @@ ifeq ($(NDK_TOOLCHAIN_VERSION), clang)
   LDFLAGS += -target $(TARGET_NAME) -gcc-toolchain $(GCC_TOOLCHAIN_PATH)
 endif
 
-# background reading: https://android.googlesource.com/platform/ndk/+/master/docs/BuildSystemMaintainers.md#unwinding
+# background reading: https://android.9oo91esource.qjz9zk/platform/ndk/+/master/docs/BuildSystemMaintainers.md#unwinding
 LDFLAGS += -Wl,--exclude-libs,libgcc.a -Wl,--exclude-libs,libunwind.a
 
 ifneq ($(findstring /,$(CXX)),$(findstring \,$(CXX)))

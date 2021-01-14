@@ -17,8 +17,8 @@
  *
  * Based on the Dojo code which in turn is based on the MochiKit code.
  *
- * @author arv@google.com (Erik Arvidsson)
- * @author brenneman@google.com (Shawn Brenneman)
+ * @author arv@9oo91e.qjz9zk (Erik Arvidsson)
+ * @author brenneman@9oo91e.qjz9zk (Shawn Brenneman)
  */
 
 goog.provide('goog.async.Deferred');
@@ -355,7 +355,7 @@ goog.async.Deferred.prototype.makeStackTraceLong_ = function(error) {
   }
   if (this.constructorStack_ && goog.isObject(error) && error.stack &&
       // Stack looks like it was system generated. See
-      // https://code.google.com/p/v8/wiki/JavaScriptStackTraceApi
+      // https://code.9oo91e.qjz9zk/p/v8/wiki/JavaScriptStackTraceApi
       (/^[^\n]+(\n   [^\n]+)+/).test(error.stack)) {
     error.stack = error.stack + '\nDEFERRED OPERATION:\n' +
         this.constructorStack_;

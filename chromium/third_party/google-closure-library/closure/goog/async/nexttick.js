@@ -99,7 +99,7 @@ goog.async.nextTick = function(callback, opt_context, opt_useSetImmediate) {
  * because that indicates that it has been replaced by goog.testing.MockClock
  * which we do want to support.
  * See
- * http://connect.microsoft.com/IE/feedback/details/801823/setimmediate-and-messagechannel-are-broken-in-ie10
+ * http://connect.m1cr050ft.qjz9zk/IE/feedback/details/801823/setimmediate-and-messagechannel-are-broken-in-ie10
  *
  * @return {boolean} Whether to use the implementation of setImmediate defined
  *     on Window.

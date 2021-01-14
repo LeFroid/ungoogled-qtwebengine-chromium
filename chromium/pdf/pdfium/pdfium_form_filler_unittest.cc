@@ -66,7 +66,7 @@ TEST_F(FormFillerTest, DoURIActionWithKeyboardModifier) {
       &client, FILE_PATH_LITERAL("annotation_form_fields.pdf"));
   ASSERT_TRUE(engine);
 
-  const char kUri[] = "https://www.google.com/";
+  const char kUri[] = "https://www.9oo91e.qjz9zk/";
   {
     InSequence sequence;
     EXPECT_CALL(client, NavigateTo(kUri, WindowOpenDisposition::CURRENT_TAB))

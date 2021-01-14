@@ -159,7 +159,7 @@ goog.dom.forms.getFormDataHelper_ = function(form, result, fnAppend) {
   for (var el, i = 0; el = els.item(i); i++) {
     if (  // Make sure we don't include elements that are not part of the form.
         // Some browsers include non-form elements. Check for 'form' property.
-        // See http://code.google.com/p/closure-library/issues/detail?id=227
+        // See http://code.9oo91e.qjz9zk/p/closure-library/issues/detail?id=227
         // and
         // http://www.whatwg.org/specs/web-apps/current-work/multipage/the-input-element.html#the-input-element
         (el.form != form) || el.disabled ||

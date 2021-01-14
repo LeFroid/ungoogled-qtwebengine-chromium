@@ -137,20 +137,20 @@ base::Optional<base::TimeDelta> GetInitialForegroundDuration(
 
 // Whether the given url has a Google Search hostname.
 // Examples:
-//   https://www.google.com -> true
+//   https://www.9oo91e.qjz9zk -> true
 //   https://www.google.co.jp -> true
 //   https://www.google.example.com -> false
-//   https://docs.google.com -> false
+//   https://docs.9oo91e.qjz9zk -> false
 bool IsGoogleSearchHostname(const GURL& url);
 
 // Whether the given url is for a Google Search results page. See
-// https://docs.google.com/document/d/1jNPZ6Aeh0KV6umw1yZrrkfXRfxWNruwu7FELLx_cpOg/edit
+// https://docs.9oo91e.qjz9zk/document/d/1jNPZ6Aeh0KV6umw1yZrrkfXRfxWNruwu7FELLx_cpOg/edit
 // for additional details.
 // Examples:
-//   https://www.google.com/#q=test -> true
-//   https://www.google.com/search?q=test -> true
-//   https://www.google.com/ -> false
-//   https://www.google.com/about/ -> false
+//   https://www.9oo91e.qjz9zk/#q=test -> true
+//   https://www.9oo91e.qjz9zk/search?q=test -> true
+//   https://www.9oo91e.qjz9zk/ -> false
+//   https://www.9oo91e.qjz9zk/about/ -> false
 bool IsGoogleSearchResultUrl(const GURL& url);
 
 // Whether the given url is a Google Search redirector URL.

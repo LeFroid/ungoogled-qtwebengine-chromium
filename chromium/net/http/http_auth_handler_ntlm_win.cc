@@ -3,9 +3,9 @@
 // found in the LICENSE file.
 
 // See "SSPI Sample Application" at
-// http://msdn.microsoft.com/en-us/library/aa918273.aspx
+// http://msdn.m1cr050ft.qjz9zk/en-us/library/aa918273.aspx
 // and "NTLM Security Support Provider" at
-// http://msdn.microsoft.com/en-us/library/aa923611.aspx.
+// http://msdn.m1cr050ft.qjz9zk/en-us/library/aa923611.aspx.
 
 #include "net/http/http_auth_handler_ntlm.h"
 

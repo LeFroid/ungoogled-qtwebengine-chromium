@@ -36,7 +36,7 @@ bool SharedWorkerContentSettingsProxy::AllowStorageAccessSync(
       break;
     }
     default: {
-      // TODO(shuagga@microsoft.com): Revisit this default in the future.
+      // TODO(shuagga@m1cr050ft.qjz9zk): Revisit this default in the future.
       return true;
     }
   }

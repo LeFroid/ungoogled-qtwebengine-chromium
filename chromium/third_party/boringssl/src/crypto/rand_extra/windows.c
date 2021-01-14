@@ -30,7 +30,7 @@ OPENSSL_MSVC_PRAGMA(comment(lib, "bcrypt.lib"))
 #else
 // #define needed to link in RtlGenRandom(), a.k.a. SystemFunction036.  See the
 // "Community Additions" comment on MSDN here:
-// http://msdn.microsoft.com/en-us/library/windows/desktop/aa387694.aspx
+// http://msdn.m1cr050ft.qjz9zk/en-us/library/windows/desktop/aa387694.aspx
 #define SystemFunction036 NTAPI SystemFunction036
 #include <ntsecapi.h>
 #undef SystemFunction036

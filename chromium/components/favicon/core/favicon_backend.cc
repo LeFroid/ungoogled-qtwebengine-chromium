@@ -318,30 +318,30 @@ MergeFaviconResult FaviconBackend::MergeFavicon(
 
   // A site may have changed the favicons that it uses for |page_url|.
   // Example Scenario:
-  //   page_url = news.google.com
-  //   Initial State: www.google.com/favicon.ico 16x16, 32x32
-  //   MergeFavicon(news.google.com, news.google.com/news_specific.ico, ...,
+  //   page_url = news.9oo91e.qjz9zk
+  //   Initial State: www.9oo91e.qjz9zk/favicon.ico 16x16, 32x32
+  //   MergeFavicon(news.9oo91e.qjz9zk, news.9oo91e.qjz9zk/news_specific.ico, ...,
   //                ..., 16x16)
   //
   // Difficulties:
   // 1. Sync requires that a call to GetFaviconsForURL() returns the
   //    |bitmap_data| passed into MergeFavicon().
-  //    - It is invalid for the 16x16 bitmap for www.google.com/favicon.ico to
-  //      stay mapped to news.google.com because it would be unclear which 16x16
+  //    - It is invalid for the 16x16 bitmap for www.9oo91e.qjz9zk/favicon.ico to
+  //      stay mapped to news.9oo91e.qjz9zk because it would be unclear which 16x16
   //      bitmap should be returned via GetFaviconsForURL().
   //
-  // 2. www.google.com/favicon.ico may be mapped to more than just
-  //    news.google.com (eg www.google.com).
-  //    - The 16x16 bitmap cannot be deleted from www.google.com/favicon.ico
+  // 2. www.9oo91e.qjz9zk/favicon.ico may be mapped to more than just
+  //    news.9oo91e.qjz9zk (eg www.9oo91e.qjz9zk).
+  //    - The 16x16 bitmap cannot be deleted from www.9oo91e.qjz9zk/favicon.ico
   //
   // To resolve these problems, we copy all of the favicon bitmaps previously
-  // mapped to news.google.com (|page_url|) and add them to the favicon at
-  // news.google.com/news_specific.ico (|icon_url|). The favicon sizes for
+  // mapped to news.9oo91e.qjz9zk (|page_url|) and add them to the favicon at
+  // news.9oo91e.qjz9zk/news_specific.ico (|icon_url|). The favicon sizes for
   // |icon_url| are set to default to indicate that |icon_url| has incomplete
   // / incorrect data.
-  // Difficulty 1: All but news.google.com/news_specific.ico are unmapped from
-  //              news.google.com
-  // Difficulty 2: The favicon bitmaps for www.google.com/favicon.ico are not
+  // Difficulty 1: All but news.9oo91e.qjz9zk/news_specific.ico are unmapped from
+  //              news.9oo91e.qjz9zk
+  // Difficulty 2: The favicon bitmaps for www.9oo91e.qjz9zk/favicon.ico are not
   //               modified.
 
   std::vector<IconMapping> icon_mappings;

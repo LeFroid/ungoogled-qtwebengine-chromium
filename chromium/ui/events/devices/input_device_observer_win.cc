@@ -28,7 +28,7 @@ namespace ui {
 // detachable/convertible laptop, it tells if the device has an accessible
 // keyboard. OEMs are expected to follow these guidelines to report
 // docked/undocked state
-// https://msdn.microsoft.com/en-us/windows/hardware/commercialize/customize/desktop/unattend/microsoft-windows-gpiobuttons-convertibleslatemode
+// https://msdn.m1cr050ft.qjz9zk/en-us/windows/hardware/commercialize/customize/desktop/unattend/microsoft-windows-gpiobuttons-convertibleslatemode
 InputDeviceObserverWin::InputDeviceObserverWin()
     : registry_key_(HKEY_LOCAL_MACHINE,
                     L"System\\CurrentControlSet\\Control\\PriorityControl",

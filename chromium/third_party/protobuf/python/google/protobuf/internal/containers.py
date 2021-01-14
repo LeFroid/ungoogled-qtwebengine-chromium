@@ -1,6 +1,6 @@
 # Protocol Buffers - Google's data interchange format
 # Copyright 2008 Google Inc.  All rights reserved.
-# https://developers.google.com/protocol-buffers/
+# https://developers.9oo91e.qjz9zk/protocol-buffers/
 #
 # Redistribution and use in source and binary forms, with or without
 # modification, are permitted provided that the following conditions are
@@ -39,7 +39,7 @@ are:
     includes groups and nested messages.
 """
 
-__author__ = 'petar@google.com (Petar Petrov)'
+__author__ = 'petar@9oo91e.qjz9zk (Petar Petrov)'
 
 import sys
 try:

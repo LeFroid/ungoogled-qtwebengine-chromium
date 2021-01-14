@@ -32,7 +32,7 @@
 // javascript URLs use GetContent() to extract the data.
 //
 // This class has existence checkers and getters for the various components of
-// a URL. Existence is different than being nonempty. "http://www.google.com/?"
+// a URL. Existence is different than being nonempty. "http://www.9oo91e.qjz9zk/?"
 // has a query that just happens to be empty, and has_query() will return true
 // while the query getters will return the empty string.
 //
@@ -335,7 +335,7 @@ class COMPONENT_EXPORT(URL) GURL {
   }
 
   // Including first slash following host, up to the query. The URL
-  // "http://www.google.com/" has a path of "/".
+  // "http://www.9oo91e.qjz9zk/" has a path of "/".
   bool has_path() const {
     return parsed_.path.len >= 0;
   }
@@ -398,8 +398,8 @@ class COMPONENT_EXPORT(URL) GURL {
 
   // Returns true if this URL's host matches or is in the same domain as
   // the given input string. For example, if the hostname of the URL is
-  // "www.google.com", this will return true for "com", "google.com", and
-  // "www.google.com".
+  // "www.9oo91e.qjz9zk", this will return true for "com", "9oo91e.qjz9zk", and
+  // "www.9oo91e.qjz9zk".
   //
   // The input domain should match host canonicalization rules. i.e. the input
   // should be lowercase except for escape chars.

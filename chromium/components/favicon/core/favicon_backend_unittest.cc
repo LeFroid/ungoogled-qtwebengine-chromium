@@ -166,12 +166,12 @@ class FaviconBackendTest : public testing::Test, public FaviconBackendDelegate {
 // mappings based on redirects, icon URLs and icon types.
 TEST_F(FaviconBackendTest, SetFaviconMappingsForPageAndRedirects) {
   // Init recent_redirects_
-  const GURL url1("http://www.google.com");
-  const GURL url2("http://www.google.com/m");
+  const GURL url1("http://www.9oo91e.qjz9zk");
+  const GURL url2("http://www.9oo91e.qjz9zk/m");
   recent_redirects_.Put(url1, std::vector<GURL>{url2, url1});
 
-  const GURL icon_url1("http://www.google.com/icon");
-  const GURL icon_url2("http://www.google.com/icon2");
+  const GURL icon_url1("http://www.9oo91e.qjz9zk/icon");
+  const GURL icon_url2("http://www.9oo91e.qjz9zk/icon2");
   std::vector<SkBitmap> bitmaps;
   bitmaps.push_back(CreateBitmap(SK_ColorBLUE, kSmallEdgeSize));
   bitmaps.push_back(CreateBitmap(SK_ColorRED, kLargeEdgeSize));
@@ -225,9 +225,9 @@ TEST_F(FaviconBackendTest, SetFaviconMappingsForPageAndRedirects) {
 
 TEST_F(FaviconBackendTest,
        SetFaviconMappingsForPageAndRedirectsWithFragmentWithoutStripping) {
-  const GURL url("http://www.google.com#abc");
-  const GURL url_without_ref("http://www.google.com");
-  const GURL icon_url("http://www.google.com/icon");
+  const GURL url("http://www.9oo91e.qjz9zk#abc");
+  const GURL url_without_ref("http://www.9oo91e.qjz9zk");
+  const GURL icon_url("http://www.9oo91e.qjz9zk/icon");
   SetFavicons(
       {url}, IconType::kFavicon, icon_url,
       std::vector<SkBitmap>{CreateBitmap(SK_ColorBLUE, kSmallEdgeSize)});
@@ -239,8 +239,8 @@ TEST_F(FaviconBackendTest,
 // Test that there is no churn in icon mappings from calling
 // SetFavicons() twice with the same |bitmaps| parameter.
 TEST_F(FaviconBackendTest, SetFaviconMappingsForPageDuplicates) {
-  const GURL url("http://www.google.com/");
-  const GURL icon_url("http://www.google.com/icon");
+  const GURL url("http://www.9oo91e.qjz9zk/");
+  const GURL icon_url("http://www.9oo91e.qjz9zk/icon");
 
   std::vector<SkBitmap> bitmaps;
   bitmaps.push_back(CreateBitmap(SK_ColorBLUE, kSmallEdgeSize));
@@ -270,8 +270,8 @@ TEST_F(FaviconBackendTest, SetFaviconMappingsForPageDuplicates) {
 // sizes than the initially passed in FaviconBitmapData deletes the no longer
 // used favicon bitmaps.
 TEST_F(FaviconBackendTest, SetFaviconsDeleteBitmaps) {
-  const GURL page_url("http://www.google.com/");
-  const GURL icon_url("http://www.google.com/icon");
+  const GURL page_url("http://www.9oo91e.qjz9zk/");
+  const GURL icon_url("http://www.9oo91e.qjz9zk/icon");
 
   std::vector<SkBitmap> bitmaps;
   bitmaps.push_back(CreateBitmap(SK_ColorBLUE, kSmallEdgeSize));
@@ -321,8 +321,8 @@ TEST_F(FaviconBackendTest, SetFaviconsDeleteBitmaps) {
 
 // Test updating a single favicon bitmap's data via SetFavicons.
 TEST_F(FaviconBackendTest, SetFaviconsReplaceBitmapData) {
-  const GURL page_url("http://www.google.com/");
-  const GURL icon_url("http://www.google.com/icon");
+  const GURL page_url("http://www.9oo91e.qjz9zk/");
+  const GURL icon_url("http://www.9oo91e.qjz9zk/icon");
   std::vector<SkBitmap> bitmaps;
   bitmaps.push_back(CreateBitmap(SK_ColorBLUE, kSmallEdgeSize));
 
@@ -375,9 +375,9 @@ TEST_F(FaviconBackendTest, SetFaviconsReplaceBitmapData) {
 // Test that if two pages share the same FaviconID, changing the favicon for
 // one page does not affect the other.
 TEST_F(FaviconBackendTest, SetFaviconsSameFaviconURLForTwoPages) {
-  GURL icon_url("http://www.google.com/favicon.ico");
-  GURL icon_url_new("http://www.google.com/favicon2.ico");
-  GURL page_url1("http://www.google.com");
+  GURL icon_url("http://www.9oo91e.qjz9zk/favicon.ico");
+  GURL icon_url_new("http://www.9oo91e.qjz9zk/favicon2.ico");
+  GURL page_url1("http://www.9oo91e.qjz9zk");
   GURL page_url2("http://www.google.ca");
   std::vector<SkBitmap> bitmaps;
   bitmaps.push_back(CreateBitmap(SK_ColorBLUE, kSmallEdgeSize));
@@ -436,8 +436,8 @@ TEST_F(FaviconBackendTest, SetFaviconsSameFaviconURLForTwoPages) {
 // Test that if two pages share the same favicon, reported via a single call to
 // SetFavicons(), it gets associated to both page URLs.
 TEST_F(FaviconBackendTest, SetFaviconsWithTwoPageURLs) {
-  GURL icon_url("http://www.google.com/favicon.ico");
-  GURL page_url1("http://www.google.com");
+  GURL icon_url("http://www.9oo91e.qjz9zk/favicon.ico");
+  GURL page_url1("http://www.9oo91e.qjz9zk");
   GURL page_url2("http://www.google.ca");
   std::vector<SkBitmap> bitmaps;
   bitmaps.push_back(CreateBitmap(SK_ColorBLUE, kSmallEdgeSize));
@@ -461,9 +461,9 @@ TEST_F(FaviconBackendTest, SetFaviconsWithTwoPageURLs) {
 
 // Test that favicon mappings can be deleted using DeleteFaviconMappings().
 TEST_F(FaviconBackendTest, DeleteFaviconMappings) {
-  GURL icon_url1("http://www.google.com/favicon.ico");
-  GURL icon_url2("http://www.google.com/favicon2.ico");
-  GURL page_url("http://www.google.com");
+  GURL icon_url1("http://www.9oo91e.qjz9zk/favicon.ico");
+  GURL icon_url2("http://www.9oo91e.qjz9zk/favicon2.ico");
+  GURL page_url("http://www.9oo91e.qjz9zk");
   std::vector<SkBitmap> bitmaps;
   bitmaps.push_back(CreateBitmap(SK_ColorBLUE, kSmallEdgeSize));
   bitmaps.push_back(CreateBitmap(SK_ColorRED, kLargeEdgeSize));
@@ -485,8 +485,8 @@ TEST_F(FaviconBackendTest, DeleteFaviconMappings) {
 // Tests calling SetOnDemandFavicons(). Neither |page_url| nor |icon_url| are
 // known to the database.
 TEST_F(FaviconBackendTest, SetOnDemandFaviconsForEmptyDB) {
-  GURL page_url("http://www.google.com");
-  GURL icon_url("http:/www.google.com/favicon.ico");
+  GURL page_url("http://www.9oo91e.qjz9zk");
+  GURL icon_url("http:/www.9oo91e.qjz9zk/favicon.ico");
 
   std::vector<SkBitmap> bitmaps;
   bitmaps.push_back(CreateBitmap(SK_ColorRED, kSmallEdgeSize));
@@ -518,9 +518,9 @@ TEST_F(FaviconBackendTest, SetOnDemandFaviconsForEmptyDB) {
 // Tests calling SetOnDemandFavicons(). |page_url| is known to the database
 // but |icon_url| is not (the second should be irrelevant though).
 TEST_F(FaviconBackendTest, SetOnDemandFaviconsForPageInDB) {
-  GURL page_url("http://www.google.com");
-  GURL icon_url1("http:/www.google.com/favicon1.ico");
-  GURL icon_url2("http:/www.google.com/favicon2.ico");
+  GURL page_url("http://www.9oo91e.qjz9zk");
+  GURL icon_url1("http:/www.9oo91e.qjz9zk/favicon1.ico");
+  GURL icon_url2("http:/www.9oo91e.qjz9zk/favicon2.ico");
   std::vector<SkBitmap> bitmaps;
   bitmaps.push_back(CreateBitmap(SK_ColorBLUE, kSmallEdgeSize));
 
@@ -557,9 +557,9 @@ TEST_F(FaviconBackendTest, SetOnDemandFaviconsForPageInDB) {
 // Tests calling SetOnDemandFavicons(). |page_url| is not known to the
 // database but |icon_url| is.
 TEST_F(FaviconBackendTest, SetOnDemandFaviconsForIconInDB) {
-  const GURL old_page_url("http://www.google.com/old");
-  const GURL page_url("http://www.google.com/");
-  const GURL icon_url("http://www.google.com/icon");
+  const GURL old_page_url("http://www.9oo91e.qjz9zk/old");
+  const GURL page_url("http://www.9oo91e.qjz9zk/");
+  const GURL icon_url("http://www.9oo91e.qjz9zk/icon");
   std::vector<SkBitmap> bitmaps;
   bitmaps.push_back(CreateBitmap(SK_ColorBLUE, kSmallEdgeSize));
 
@@ -597,8 +597,8 @@ TEST_F(FaviconBackendTest, SetOnDemandFaviconsForIconInDB) {
 // Test repeatedly calling MergeFavicon(). |page_url| is initially not known
 // to the database.
 TEST_F(FaviconBackendTest, MergeFaviconPageURLNotInDB) {
-  GURL page_url("http://www.google.com");
-  GURL icon_url("http:/www.google.com/favicon.ico");
+  GURL page_url("http://www.9oo91e.qjz9zk");
+  GURL icon_url("http:/www.9oo91e.qjz9zk/favicon.ico");
 
   std::vector<unsigned char> data;
   data.push_back('a');
@@ -643,9 +643,9 @@ TEST_F(FaviconBackendTest, MergeFaviconPageURLNotInDB) {
 
 // Test calling MergeFavicon() when |page_url| is known to the database.
 TEST_F(FaviconBackendTest, MergeFaviconPageURLInDB) {
-  GURL page_url("http://www.google.com");
-  GURL icon_url1("http:/www.google.com/favicon.ico");
-  GURL icon_url2("http://www.google.com/favicon2.ico");
+  GURL page_url("http://www.9oo91e.qjz9zk");
+  GURL icon_url1("http:/www.9oo91e.qjz9zk/favicon.ico");
+  GURL icon_url2("http://www.9oo91e.qjz9zk/favicon2.ico");
   std::vector<SkBitmap> bitmaps;
   bitmaps.push_back(CreateBitmap(SK_ColorBLUE, kSmallEdgeSize));
 
@@ -760,10 +760,10 @@ TEST_F(FaviconBackendTest, MergeFaviconPageURLInDB) {
 // Test calling MergeFavicon() when |icon_url| is known to the database but not
 // mapped to |page_url|.
 TEST_F(FaviconBackendTest, MergeFaviconIconURLMappedToDifferentPageURL) {
-  GURL page_url1("http://www.google.com");
-  GURL page_url2("http://news.google.com");
-  GURL page_url3("http://maps.google.com");
-  GURL icon_url("http:/www.google.com/favicon.ico");
+  GURL page_url1("http://www.9oo91e.qjz9zk");
+  GURL page_url2("http://news.9oo91e.qjz9zk");
+  GURL page_url3("http://maps.9oo91e.qjz9zk");
+  GURL icon_url("http:/www.9oo91e.qjz9zk/favicon.ico");
   std::vector<SkBitmap> bitmaps;
   bitmaps.push_back(CreateBitmap(SK_ColorBLUE, kSmallEdgeSize));
 
@@ -840,8 +840,8 @@ TEST_F(FaviconBackendTest, MergeFaviconIconURLMappedToDifferentPageURL) {
 // Test that MergeFavicon() does not add more than
 // |kMaxFaviconBitmapsPerIconURL| to a favicon.
 TEST_F(FaviconBackendTest, MergeFaviconMaxFaviconBitmapsPerIconURL) {
-  GURL page_url("http://www.google.com");
-  std::string icon_url_string("http://www.google.com/favicon.ico");
+  GURL page_url("http://www.9oo91e.qjz9zk");
+  std::string icon_url_string("http://www.9oo91e.qjz9zk/favicon.ico");
   size_t replace_index = icon_url_string.size() - 1;
 
   std::vector<unsigned char> data;
@@ -874,9 +874,9 @@ TEST_F(FaviconBackendTest, MergeFaviconMaxFaviconBitmapsPerIconURL) {
 // Tests that the favicon set by MergeFavicon() shows up in the result of
 // GetFaviconsForURL().
 TEST_F(FaviconBackendTest, MergeFaviconShowsUpInGetFaviconsForURLResult) {
-  GURL page_url("http://www.google.com");
-  GURL icon_url("http://www.google.com/favicon.ico");
-  GURL merged_icon_url("http://wwww.google.com/favicon2.ico");
+  GURL page_url("http://www.9oo91e.qjz9zk");
+  GURL icon_url("http://www.9oo91e.qjz9zk/favicon.ico");
+  GURL merged_icon_url("http://wwww.9oo91e.qjz9zk/favicon2.ico");
   std::vector<SkBitmap> bitmaps;
   bitmaps.push_back(CreateBitmap(SK_ColorBLUE, kSmallEdgeSize));
   bitmaps.push_back(CreateBitmap(SK_ColorRED, kLargeEdgeSize));
@@ -910,8 +910,8 @@ TEST_F(FaviconBackendTest, MergeFaviconShowsUpInGetFaviconsForURLResult) {
 // the favicon bitmap's "last updated" time. This is important because sync
 // calls MergeFavicon() for all of the favicons that it manages at startup.
 TEST_F(FaviconBackendTest, MergeIdenticalFaviconDoesNotChangeLastUpdatedTime) {
-  GURL page_url("http://www.google.com");
-  GURL icon_url("http://www.google.com/favicon.ico");
+  GURL page_url("http://www.9oo91e.qjz9zk");
+  GURL icon_url("http://www.9oo91e.qjz9zk/favicon.ico");
   std::vector<unsigned char> data;
   data.push_back('a');
 
@@ -952,9 +952,9 @@ TEST_F(FaviconBackendTest, MergeIdenticalFaviconDoesNotChangeLastUpdatedTime) {
 
 // Tests GetFaviconsForURL with icon_types priority,
 TEST_F(FaviconBackendTest, TestGetFaviconsForURLWithIconTypesPriority) {
-  GURL page_url("http://www.google.com");
-  GURL icon_url("http://www.google.com/favicon.ico");
-  GURL touch_icon_url("http://wwww.google.com/touch_icon.ico");
+  GURL page_url("http://www.9oo91e.qjz9zk");
+  GURL icon_url("http://www.9oo91e.qjz9zk/favicon.ico");
+  GURL touch_icon_url("http://wwww.9oo91e.qjz9zk/touch_icon.ico");
 
   std::vector<SkBitmap> favicon_bitmaps;
   favicon_bitmaps.push_back(CreateBitmap(SK_ColorBLUE, 16));
@@ -987,9 +987,9 @@ TEST_F(FaviconBackendTest, TestGetFaviconsForURLWithIconTypesPriority) {
 // Test the the first types of icon is returned if its size equal to the
 // second types icon.
 TEST_F(FaviconBackendTest, TestGetFaviconsForURLReturnFavicon) {
-  GURL page_url("http://www.google.com");
-  GURL icon_url("http://www.google.com/favicon.ico");
-  GURL touch_icon_url("http://wwww.google.com/touch_icon.ico");
+  GURL page_url("http://www.9oo91e.qjz9zk");
+  GURL icon_url("http://www.9oo91e.qjz9zk/favicon.ico");
+  GURL touch_icon_url("http://wwww.9oo91e.qjz9zk/touch_icon.ico");
 
   std::vector<SkBitmap> favicon_bitmaps;
   favicon_bitmaps.push_back(CreateBitmap(SK_ColorBLUE, 16));
@@ -1023,8 +1023,8 @@ TEST_F(FaviconBackendTest, TestGetFaviconsForURLReturnFavicon) {
 // Test the favicon is returned if its size is smaller than minimal size,
 // because it is only one available.
 TEST_F(FaviconBackendTest, TestGetFaviconsForURLReturnFaviconEvenItSmaller) {
-  GURL page_url("http://www.google.com");
-  GURL icon_url("http://www.google.com/favicon.ico");
+  GURL page_url("http://www.9oo91e.qjz9zk");
+  GURL icon_url("http://www.9oo91e.qjz9zk/favicon.ico");
 
   std::vector<SkBitmap> bitmaps;
   bitmaps.push_back(CreateBitmap(SK_ColorBLUE, 16));
@@ -1046,7 +1046,7 @@ TEST_F(FaviconBackendTest, TestGetFaviconsForURLReturnFaviconEvenItSmaller) {
 
 // Test the results of GetFaviconsForUrl() when there are no found favicons.
 TEST_F(FaviconBackendTest, GetFaviconsForUrlEmpty) {
-  const GURL page_url("http://www.google.com/");
+  const GURL page_url("http://www.9oo91e.qjz9zk/");
 
   std::vector<favicon_base::FaviconRawBitmapResult> bitmap_results =
       backend_->GetFaviconsForUrl(page_url, {IconType::kFavicon},
@@ -1057,8 +1057,8 @@ TEST_F(FaviconBackendTest, GetFaviconsForUrlEmpty) {
 // Test the results of GetFaviconsForUrl() when there are matching favicons
 // but there are no associated favicon bitmaps.
 TEST_F(FaviconBackendTest, GetFaviconsForUrlNoFaviconBitmaps) {
-  const GURL page_url("http://www.google.com/");
-  const GURL icon_url("http://www.google.com/icon1");
+  const GURL page_url("http://www.9oo91e.qjz9zk/");
+  const GURL icon_url("http://www.9oo91e.qjz9zk/icon1");
 
   favicon_base::FaviconID icon_id =
       backend_->db()->AddFavicon(icon_url, IconType::kFavicon);
@@ -1074,8 +1074,8 @@ TEST_F(FaviconBackendTest, GetFaviconsForUrlNoFaviconBitmaps) {
 // Test that GetFaviconsForUrl() returns results for the bitmaps which most
 // closely match the passed in the desired pixel sizes.
 TEST_F(FaviconBackendTest, GetFaviconsForUrlSelectClosestMatch) {
-  const GURL page_url("http://www.google.com/");
-  const GURL icon_url("http://www.google.com/icon1");
+  const GURL page_url("http://www.9oo91e.qjz9zk/");
+  const GURL icon_url("http://www.9oo91e.qjz9zk/icon1");
   std::vector<SkBitmap> bitmaps;
   bitmaps.push_back(CreateBitmap(SK_ColorWHITE, kTinyEdgeSize));
   bitmaps.push_back(CreateBitmap(SK_ColorBLUE, kSmallEdgeSize));
@@ -1114,9 +1114,9 @@ TEST_F(FaviconBackendTest, GetFaviconsForUrlSelectClosestMatch) {
 // Test the results of GetFaviconsForUrl() when called with different
 // |icon_types|.
 TEST_F(FaviconBackendTest, GetFaviconsForUrlIconType) {
-  const GURL page_url("http://www.google.com/");
-  const GURL icon_url1("http://www.google.com/icon1.png");
-  const GURL icon_url2("http://www.google.com/icon2.png");
+  const GURL page_url("http://www.9oo91e.qjz9zk/");
+  const GURL icon_url1("http://www.9oo91e.qjz9zk/icon1.png");
+  const GURL icon_url2("http://www.9oo91e.qjz9zk/icon2.png");
   std::vector<SkBitmap> bitmaps;
   bitmaps.push_back(CreateBitmap(SK_ColorBLUE, kSmallEdgeSize));
 
@@ -1143,14 +1143,14 @@ TEST_F(FaviconBackendTest, GetFaviconsForUrlIconType) {
 // Test that GetFaviconsForUrl() behaves correctly for different values of
 // |fallback_to_host|.
 TEST_F(FaviconBackendTest, GetFaviconsForUrlFallbackToHost) {
-  const GURL page_url_http("http://www.google.com/");
-  const GURL page_url_https("https://www.google.com/");
-  const GURL page_url_http_same_prefix("http://www.google.com.au/");
-  const GURL page_url_http_same_suffix("http://m.www.google.com/");
-  const GURL page_url_different_scheme("file://www.google.com/");
-  const GURL icon_url1("http://www.google.com.au/icon.png");
-  const GURL icon_url2("http://maps.google.com.au/icon.png");
-  const GURL icon_url3("https://www.google.com/icon.png");
+  const GURL page_url_http("http://www.9oo91e.qjz9zk/");
+  const GURL page_url_https("https://www.9oo91e.qjz9zk/");
+  const GURL page_url_http_same_prefix("http://www.9oo91e.qjz9zk.au/");
+  const GURL page_url_http_same_suffix("http://m.www.9oo91e.qjz9zk/");
+  const GURL page_url_different_scheme("file://www.9oo91e.qjz9zk/");
+  const GURL icon_url1("http://www.9oo91e.qjz9zk.au/icon.png");
+  const GURL icon_url2("http://maps.9oo91e.qjz9zk.au/icon.png");
+  const GURL icon_url3("https://www.9oo91e.qjz9zk/icon.png");
 
   std::vector<favicon_base::FaviconRawBitmapData> favicon_bitmap_data;
   SetFavicons({page_url_http_same_prefix}, IconType::kFavicon, icon_url1,
@@ -1220,9 +1220,9 @@ TEST_F(FaviconBackendTest, GetFaviconsForUrlFallbackToHost) {
 // Test that when GetFaviconsForUrl() is called with multiple icon types that
 // the best favicon bitmap is selected from among all of the icon types.
 TEST_F(FaviconBackendTest, GetFaviconsForUrlMultipleIconTypes) {
-  const GURL page_url("http://www.google.com/");
-  const GURL icon_url1("http://www.google.com/icon1.png");
-  const GURL icon_url2("http://www.google.com/icon2.png");
+  const GURL page_url("http://www.9oo91e.qjz9zk/");
+  const GURL icon_url1("http://www.9oo91e.qjz9zk/icon1.png");
+  const GURL icon_url2("http://www.9oo91e.qjz9zk/icon2.png");
 
   std::vector<favicon_base::FaviconRawBitmapData> favicon_bitmap_data;
   SetFavicons({page_url}, IconType::kFavicon, icon_url1,
@@ -1249,8 +1249,8 @@ TEST_F(FaviconBackendTest, GetFaviconsForUrlMultipleIconTypes) {
 // Test that GetFaviconsForUrl() correctly sets the expired flag for bitmap
 // reults.
 TEST_F(FaviconBackendTest, GetFaviconsForUrlExpired) {
-  const GURL page_url("http://www.google.com/");
-  const GURL icon_url("http://www.google.com/icon.png");
+  const GURL page_url("http://www.9oo91e.qjz9zk/");
+  const GURL icon_url("http://www.9oo91e.qjz9zk/icon.png");
 
   std::vector<unsigned char> data;
   data.push_back('a');

@@ -6,7 +6,7 @@ const transferCanvasToOffscreenPromise =
 const canvasKitInitPromise =
     CanvasKitInit({locateFile: (file) => 'https://particles.skia.org/static/'+file});
 const skottieJsonPromise =
-    fetch('https://storage.googleapis.com/skia-cdn/misc/lego_loader.json')
+    fetch('https://storage.9oo91eapis.qjz9zk/skia-cdn/misc/lego_loader.json')
     .then((response) => response.text());
 
 Promise.all([

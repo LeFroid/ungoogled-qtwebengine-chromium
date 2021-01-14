@@ -103,7 +103,7 @@ const base::Feature kCrossOriginEmbedderPolicy{
     "CrossOriginEmbedderPolicy", base::FEATURE_ENABLED_BY_DEFAULT};
 
 // Enables the most recent developments on the crossOriginIsolated property.
-// https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/crossOriginIsolated
+// https://developer.m0z111a.qjz9zk/en-US/docs/Web/API/WindowOrWorkerGlobalScope/crossOriginIsolated
 const base::Feature kCrossOriginIsolated{"CrossOriginIsolated",
                                          base::FEATURE_ENABLED_BY_DEFAULT};
 
@@ -162,7 +162,7 @@ const base::FeatureParam<std::string> kEmergencyLegacyCookieAccessParam{
 // mode).  See also: https://crbug.com/920638
 //
 // [1]
-// https://www.chromium.org/Home/chromium-security/extension-content-script-fetches
+// https://www.ch40m1um.qjz9zk/Home/chromium-security/extension-content-script-fetches
 const base::Feature kCorbAllowlistAlsoAppliesToOorCors = {
     "CorbAllowlistAlsoAppliesToOorCors", base::FEATURE_ENABLED_BY_DEFAULT};
 const char kCorbAllowlistAlsoAppliesToOorCorsParamName[] =

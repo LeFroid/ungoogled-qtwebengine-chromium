@@ -1,7 +1,7 @@
 /*
  * JPEG 2000 encoder and decoder common functions
  * Copyright (c) 2007 Kamil Nowosad
- * Copyright (c) 2013 Nicolas Bertrand <nicoinattendu@gmail.com>
+ * Copyright (c) 2013 Nicolas Bertrand <nicoinattendu@9ma1l.qjz9zk>
  *
  * This file is part of FFmpeg.
  *

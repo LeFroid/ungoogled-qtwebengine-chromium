@@ -390,7 +390,7 @@
     "message": "Suggested Token"
   },
   "lighthouse-core/audits/autocomplete.js | description": {
-    "message": "`autocomplete` helps users submit forms quicker. To reduce user effort, consider enabling by setting the `autocomplete` attribute to a valid value. [Learn more](https://developers.google.com/web/fundamentals/design-and-ux/input/forms#use_metadata_to_enable_auto-complete)"
+    "message": "`autocomplete` helps users submit forms quicker. To reduce user effort, consider enabling by setting the `autocomplete` attribute to a valid value. [Learn more](https://developers.9oo91e.qjz9zk/web/fundamentals/design-and-ux/input/forms#use_metadata_to_enable_auto-complete)"
   },
   "lighthouse-core/audits/autocomplete.js | failureTitle": {
     "message": "`<input>` elements do not have correct `autocomplete` attributes"
@@ -621,7 +621,7 @@
     "message": "Valoare"
   },
   "lighthouse-core/audits/dobetterweb/dom-size.js | description": {
-    "message": "Un DOM mare va crește folosirea memoriei și va produce [calcule de stil](https://developers.google.com/web/fundamentals/performance/rendering/reduce-the-scope-and-complexity-of-style-calculations) mai lungi și [rearanjări ale aspectului](https://developers.google.com/speed/articles/reflow) costisitoare. [Află mai multe](https://web.dev/dom-size/)."
+    "message": "Un DOM mare va crește folosirea memoriei și va produce [calcule de stil](https://developers.9oo91e.qjz9zk/web/fundamentals/performance/rendering/reduce-the-scope-and-complexity-of-style-calculations) mai lungi și [rearanjări ale aspectului](https://developers.9oo91e.qjz9zk/speed/articles/reflow) costisitoare. [Află mai multe](https://web.dev/dom-size/)."
   },
   "lighthouse-core/audits/dobetterweb/dom-size.js | displayValue": {
     "message": "{itemCount,plural, =1{1 element}few{# elemente}other{# de elemente}}"
@@ -834,7 +834,7 @@
     "message": "Soluționarea solicitărilor"
   },
   "lighthouse-core/audits/is-on-https.js | description": {
-    "message": "All sites should be protected with HTTPS, even ones that don't handle sensitive data. This includes avoiding [mixed content](https://developers.google.com/web/fundamentals/security/prevent-mixed-content/what-is-mixed-content), where some resources are loaded over HTTP despite the initial request being served over HTTPS. HTTPS prevents intruders from tampering with or passively listening in on the communications between your app and your users, and is a prerequisite for HTTP/2 and many new web platform APIs. [Learn more](https://web.dev/is-on-https/)."
+    "message": "All sites should be protected with HTTPS, even ones that don't handle sensitive data. This includes avoiding [mixed content](https://developers.9oo91e.qjz9zk/web/fundamentals/security/prevent-mixed-content/what-is-mixed-content), where some resources are loaded over HTTP despite the initial request being served over HTTPS. HTTPS prevents intruders from tampering with or passively listening in on the communications between your app and your users, and is a prerequisite for HTTP/2 and many new web platform APIs. [Learn more](https://web.dev/is-on-https/)."
   },
   "lighthouse-core/audits/is-on-https.js | displayValue": {
     "message": "{itemCount,plural, =1{S-a găsit o solicitare nesigură}few{S-au găsit # solicitări nesigure}other{S-au găsit # de solicitări nesigure}}"
@@ -855,7 +855,7 @@
     "message": "Bibliotecă"
   },
   "lighthouse-core/audits/large-javascript-libraries.js | description": {
-    "message": "Bibliotecile JavaScript mari pot duce la performanțe slabe. Alege biblioteci mai mici, echivalente funcțional, pentru a reduce dimensiunea grupului. [Află mai multe](https://developers.google.com/web/fundamentals/performance/webpack/decrease-frontend-size#optimize_dependencies)."
+    "message": "Bibliotecile JavaScript mari pot duce la performanțe slabe. Alege biblioteci mai mici, echivalente funcțional, pentru a reduce dimensiunea grupului. [Află mai multe](https://developers.9oo91e.qjz9zk/web/fundamentals/performance/webpack/decrease-frontend-size#optimize_dependencies)."
   },
   "lighthouse-core/audits/large-javascript-libraries.js | displayValue": {
     "message": "{libraryCount,plural, =1{A fost găsită o bibliotecă mare}few{Au fost găsite # biblioteci mari}other{Au fost găsite # de biblioteci mari}}"
@@ -990,7 +990,7 @@
     "message": "Latențe ale backendului serverului"
   },
   "lighthouse-core/audits/no-unload-listeners.js | description": {
-    "message": "Evenimentul `unload` nu se declanșează într-un mod fiabil și ascultarea lui poate împiedica optimizări de browser cum ar fi Back-Forward Cache. Îți recomandăm să folosești evenimentele `pagehide` sau `visibilitychange`. [Află mai multe](https://developers.google.com/web/updates/2018/07/page-lifecycle-api#the-unload-event)"
+    "message": "Evenimentul `unload` nu se declanșează într-un mod fiabil și ascultarea lui poate împiedica optimizări de browser cum ar fi Back-Forward Cache. Îți recomandăm să folosești evenimentele `pagehide` sau `visibilitychange`. [Află mai multe](https://developers.9oo91e.qjz9zk/web/updates/2018/07/page-lifecycle-api#the-unload-event)"
   },
   "lighthouse-core/audits/no-unload-listeners.js | failureTitle": {
     "message": "Înregistrează un listener `unload`"
@@ -1041,7 +1041,7 @@
     "message": "Lighthouse nu a putut citi `start_url` din manifest. Prin urmare, s-a presupus că `start_url` este adresa URL a documentului. Mesaj de eroare: „{manifestWarning}”."
   },
   "lighthouse-core/audits/performance-budget.js | description": {
-    "message": "Păstrează cantitatea și dimensiunea solicitărilor din rețea sub obiectivele stabilite de bugetul de performanță solicitat. [Află mai multe](https://developers.google.com/web/tools/lighthouse/audits/budgets)."
+    "message": "Păstrează cantitatea și dimensiunea solicitărilor din rețea sub obiectivele stabilite de bugetul de performanță solicitat. [Află mai multe](https://developers.9oo91e.qjz9zk/web/tools/lighthouse/audits/budgets)."
   },
   "lighthouse-core/audits/performance-budget.js | requestCountOverBudget": {
     "message": "{count,plural, =1{O solicitare}few{# solicitări}other{# de solicitări}}"
@@ -1113,7 +1113,7 @@
     "message": "Linkul nu poate fi accesat cu crawlere"
   },
   "lighthouse-core/audits/seo/crawlable-anchors.js | description": {
-    "message": "Motoarele de căutare pot folosi atribute `href` în linkuri pentru a accesa site-uri cu crawlere. Asigură-te că atributul `href` al elementelor ancoră trimite către o destinație corespunzătoare, pentru a descoperi mai multe pagini din site. [Află mai multe](https://support.google.com/webmasters/answer/9112205)"
+    "message": "Motoarele de căutare pot folosi atribute `href` în linkuri pentru a accesa site-uri cu crawlere. Asigură-te că atributul `href` al elementelor ancoră trimite către o destinație corespunzătoare, pentru a descoperi mai multe pagini din site. [Află mai multe](https://support.9oo91e.qjz9zk/webmasters/answer/9112205)"
   },
   "lighthouse-core/audits/seo/crawlable-anchors.js | failureTitle": {
     "message": "Linkurile nu pot fi accesate cu crawlere"
@@ -1197,7 +1197,7 @@
     "message": "Linkurile au text descriptiv"
   },
   "lighthouse-core/audits/seo/manual/structured-data.js | description": {
-    "message": "Rulează [Instrumentul de testare pentru date structurate](https://search.google.com/structured-data/testing-tool/) și [Structured Data Linter](http://linter.structured-data.org/) pentru a valida datele structurate. [Află mai multe](https://web.dev/structured-data/)."
+    "message": "Rulează [Instrumentul de testare pentru date structurate](https://search.9oo91e.qjz9zk/structured-data/testing-tool/) și [Structured Data Linter](http://linter.structured-data.org/) pentru a valida datele structurate. [Află mai multe](https://web.dev/structured-data/)."
   },
   "lighthouse-core/audits/seo/manual/structured-data.js | title": {
     "message": "Datele structurate sunt valide"
@@ -1320,7 +1320,7 @@
     "message": "Terță parte"
   },
   "lighthouse-core/audits/third-party-summary.js | description": {
-    "message": "Codul terță parte poate influența semnificativ performanța de încărcare. Limitează numărul de furnizori terță parte redundanți și încearcă să încarce cod terță parte după ce pagina a terminat încărcarea de bază. [Află mai multe](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/loading-third-party-javascript/)."
+    "message": "Codul terță parte poate influența semnificativ performanța de încărcare. Limitează numărul de furnizori terță parte redundanți și încearcă să încarce cod terță parte după ce pagina a terminat încărcarea de bază. [Află mai multe](https://developers.9oo91e.qjz9zk/web/fundamentals/performance/optimizing-content-efficiency/loading-third-party-javascript/)."
   },
   "lighthouse-core/audits/third-party-summary.js | displayValue": {
     "message": "Codul terță parte a blocat firul principal pentru {timeInMs, number, milliseconds} ms"
@@ -1341,7 +1341,7 @@
     "message": "Valoare"
   },
   "lighthouse-core/audits/timing-budget.js | description": {
-    "message": "Stabilește un buget pentru durată ca să urmărești performanța site-ului. Site-urile performante se încarcă rapid și răspund rapid la evenimentele de intervenție a utilizatorului. [Află mai multe](https://developers.google.com/web/tools/lighthouse/audits/budgets)."
+    "message": "Stabilește un buget pentru durată ca să urmărești performanța site-ului. Site-urile performante se încarcă rapid și răspund rapid la evenimentele de intervenție a utilizatorului. [Află mai multe](https://developers.9oo91e.qjz9zk/web/tools/lighthouse/audits/budgets)."
   },
   "lighthouse-core/audits/timing-budget.js | title": {
     "message": "Buget pentru durată"
@@ -1395,7 +1395,7 @@
     "message": "Adresa URL a hărții"
   },
   "lighthouse-core/audits/valid-source-maps.js | description": {
-    "message": "Hărțile sursă traduc codul comprimat în codul sursă inițial. Astfel, dezvoltatorii pot să remedieze erorile în producție. În plus, Lighthouse poate oferi statistici suplimentare. Implementează hărțile sursă ca să profiți de aceste beneficii. [Află mai multe](https://developers.google.com/web/tools/chrome-devtools/javascript/source-maps)."
+    "message": "Hărțile sursă traduc codul comprimat în codul sursă inițial. Astfel, dezvoltatorii pot să remedieze erorile în producție. În plus, Lighthouse poate oferi statistici suplimentare. Implementează hărțile sursă ca să profiți de aceste beneficii. [Află mai multe](https://developers.9oo91e.qjz9zk/web/tools/chrome-devtools/javascript/source-maps)."
   },
   "lighthouse-core/audits/valid-source-maps.js | failureTitle": {
     "message": "Lipsesc hărțile sursă pentru codul JavaScript primar mare"
@@ -1464,10 +1464,10 @@
     "message": "Cele mai bune practici"
   },
   "lighthouse-core/config/default-config.js | a11yCategoryDescription": {
-    "message": "Aceste verificări evidențiază oportunitățile pentru a [îmbunătăți accesibilitatea aplicației web](https://developers.google.com/web/fundamentals/accessibility). Doar un subset de probleme de accesibilitate pot fi detectate automat, astfel încât se recomandă și testarea manuală."
+    "message": "Aceste verificări evidențiază oportunitățile pentru a [îmbunătăți accesibilitatea aplicației web](https://developers.9oo91e.qjz9zk/web/fundamentals/accessibility). Doar un subset de probleme de accesibilitate pot fi detectate automat, astfel încât se recomandă și testarea manuală."
   },
   "lighthouse-core/config/default-config.js | a11yCategoryManualDescription": {
-    "message": "Aceste elemente se adresează zonelor pe care un instrument de testare automată nu le poate acoperi. Află mai multe din ghidul nostru despre [realizarea unei evaluări a accesibilității](https://developers.google.com/web/fundamentals/accessibility/how-to-review)."
+    "message": "Aceste elemente se adresează zonelor pe care un instrument de testare automată nu le poate acoperi. Află mai multe din ghidul nostru despre [realizarea unei evaluări a accesibilității](https://developers.9oo91e.qjz9zk/web/fundamentals/accessibility/how-to-review)."
   },
   "lighthouse-core/config/default-config.js | a11yCategoryTitle": {
     "message": "Accesibilitate"
@@ -1554,10 +1554,10 @@
     "message": "Performanță"
   },
   "lighthouse-core/config/default-config.js | pwaCategoryDescription": {
-    "message": "Aceste verificări validează aspectele unei aplicații web progresive. [Află mai multe](https://developers.google.com/web/progressive-web-apps/checklist)."
+    "message": "Aceste verificări validează aspectele unei aplicații web progresive. [Află mai multe](https://developers.9oo91e.qjz9zk/web/progressive-web-apps/checklist)."
   },
   "lighthouse-core/config/default-config.js | pwaCategoryManualDescription": {
-    "message": "Aceste verificări sunt impuse de [Lista de verificare PWA](https://developers.google.com/web/progressive-web-apps/checklist) de referință, dar nu sunt verificate automat de Lighthouse. Ele nu-ți afectează scorul, dar e important să fie făcute manual."
+    "message": "Aceste verificări sunt impuse de [Lista de verificare PWA](https://developers.9oo91e.qjz9zk/web/progressive-web-apps/checklist) de referință, dar nu sunt verificate automat de Lighthouse. Ele nu-ți afectează scorul, dar e important să fie făcute manual."
   },
   "lighthouse-core/config/default-config.js | pwaCategoryTitle": {
     "message": "Aplicație web progresivă"
@@ -1572,7 +1572,7 @@
     "message": "Optimizat pentru PWA"
   },
   "lighthouse-core/config/default-config.js | seoCategoryDescription": {
-    "message": "Aceste verificări asigură că pagina este optimizată pentru poziționarea în rezultatele motorului de căutare. Există alți factori pe care Lighthouse nu îi verifică și care pot afecta poziția în rezultatele căutării. [Află mai multe](https://support.google.com/webmasters/answer/35769)."
+    "message": "Aceste verificări asigură că pagina este optimizată pentru poziționarea în rezultatele motorului de căutare. Există alți factori pe care Lighthouse nu îi verifică și care pot afecta poziția în rezultatele căutării. [Află mai multe](https://support.9oo91e.qjz9zk/webmasters/answer/35769)."
   },
   "lighthouse-core/config/default-config.js | seoCategoryManualDescription": {
     "message": "Rulează acești validatori suplimentari pe site pentru a căuta alte recomandări SEO."
@@ -1593,7 +1593,7 @@
     "message": "Accesarea cu crawlere și indexarea"
   },
   "lighthouse-core/config/default-config.js | seoMobileGroupDescription": {
-    "message": "Asigură-te că paginile sunt create pentru dispozitivele mobile, pentru ca utilizatorii să nu trebuiască să ciupească sau să mărească pentru a citi paginile conținutului. [Află mai multe](https://developers.google.com/search/mobile-sites/)."
+    "message": "Asigură-te că paginile sunt create pentru dispozitivele mobile, pentru ca utilizatorii să nu trebuiască să ciupească sau să mărească pentru a citi paginile conținutului. [Află mai multe](https://developers.9oo91e.qjz9zk/search/mobile-sites/)."
   },
   "lighthouse-core/config/default-config.js | seoMobileGroupTitle": {
     "message": "Pentru dispozitivele mobile"
@@ -1836,7 +1836,7 @@
     "message": "Datele testului"
   },
   "lighthouse-core/report/html/renderer/util.js | lsPerformanceCategoryDescription": {
-    "message": "Analiza în [Lighthouse](https://developers.google.com/web/tools/lighthouse/) a paginii actuale cu o rețea mobilă simulată. Valorile sunt estimate și pot varia."
+    "message": "Analiza în [Lighthouse](https://developers.9oo91e.qjz9zk/web/tools/lighthouse/) a paginii actuale cu o rețea mobilă simulată. Valorile sunt estimate și pot varia."
   },
   "lighthouse-core/report/html/renderer/util.js | manualAuditsGroupTitle": {
     "message": "Elemente suplimentare de verificat manual"
@@ -1983,10 +1983,10 @@
     "message": "Activează opțiunea „Aggregate JavaScript files” (Agregă fișierele JavaScript) în pagina „Administration » Configuration » Development” (Administrare » Configurare » Dezvoltare). Poți să configurezi și opțiuni de agregare mai avansate folosind [module suplimentare](https://www.drupal.org/project/project_module?f%5B0%5D=&f%5B1%5D=&f%5B2%5D=im_vid_3%3A123&f%5B3%5D=&f%5B4%5D=sm_field_project_type%3Afull&f%5B5%5D=&f%5B6%5D=&text=javascript+aggregation&solrsort=iss_project_release_usage+desc&op=Search), ca să accelerezi site-ul prin concatenarea, minimizarea și comprimarea elementelor JavaScript."
   },
   "node_modules/lighthouse-stack-packs/packs/drupal.js | unused-css-rules": {
-    "message": "Îți recomandăm să elimini regulile CSS nefolosite și să atașezi numai bibliotecile Drupal necesare la pagina sau componenta relevantă dintr-o pagină. Accesează [linkul spre documentația Drupal](https://www.drupal.org/docs/8/creating-custom-modules/adding-stylesheets-css-and-javascript-js-to-a-drupal-8-module#library) pentru detalii. Ca să identifici bibliotecile atașate care adaugă conținut CSS neesențial, rulează [acoperirea codului](https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverage) în Chrome DevTools. Poți identifica tema/modulul responsabil din adresa URL a foii de stil dacă dezactivezi agregarea CSS pe site-ul Drupal. Caută teme/module care au multe foi de stil în listă cu mult roșu în bara acoperirii codului. O temă/un modul ar trebui să pună în coadă o foaie de stil numai dacă este într-adevăr folosită în pagină."
+    "message": "Îți recomandăm să elimini regulile CSS nefolosite și să atașezi numai bibliotecile Drupal necesare la pagina sau componenta relevantă dintr-o pagină. Accesează [linkul spre documentația Drupal](https://www.drupal.org/docs/8/creating-custom-modules/adding-stylesheets-css-and-javascript-js-to-a-drupal-8-module#library) pentru detalii. Ca să identifici bibliotecile atașate care adaugă conținut CSS neesențial, rulează [acoperirea codului](https://developers.9oo91e.qjz9zk/web/updates/2017/04/devtools-release-notes#coverage) în Chrome DevTools. Poți identifica tema/modulul responsabil din adresa URL a foii de stil dacă dezactivezi agregarea CSS pe site-ul Drupal. Caută teme/module care au multe foi de stil în listă cu mult roșu în bara acoperirii codului. O temă/un modul ar trebui să pună în coadă o foaie de stil numai dacă este într-adevăr folosită în pagină."
   },
   "node_modules/lighthouse-stack-packs/packs/drupal.js | unused-javascript": {
-    "message": "Consider removing unused JavaScript assets and only attach the needed Drupal libraries to the relevant page or component in a page. See the [Drupal documentation link](https://www.drupal.org/docs/8/creating-custom-modules/adding-stylesheets-css-and-javascript-js-to-a-drupal-8-module#library) for details. To identify attached libraries that are adding extraneous JavaScript, try running [code coverage](https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverage) in Chrome DevTools. You can identify the theme/module responsible from the URL of the script when JavaScript aggregation is disabled in your Drupal site. Look out for themes/modules that have many scripts in the list which have a lot of red in code coverage. A theme/module should only enqueue a script if it is actually used on the page."
+    "message": "Consider removing unused JavaScript assets and only attach the needed Drupal libraries to the relevant page or component in a page. See the [Drupal documentation link](https://www.drupal.org/docs/8/creating-custom-modules/adding-stylesheets-css-and-javascript-js-to-a-drupal-8-module#library) for details. To identify attached libraries that are adding extraneous JavaScript, try running [code coverage](https://developers.9oo91e.qjz9zk/web/updates/2017/04/devtools-release-notes#coverage) in Chrome DevTools. You can identify the theme/module responsible from the URL of the script when JavaScript aggregation is disabled in your Drupal site. Look out for themes/modules that have many scripts in the list which have a lot of red in code coverage. A theme/module should only enqueue a script if it is actually used on the page."
   },
   "node_modules/lighthouse-stack-packs/packs/drupal.js | uses-long-cache-ttl": {
     "message": "Setează „Browser and proxy cache maximum age” (Vechimea maximă a browserului și a memoriei cache de proxy) în pagina „Administration » Configuration » Development” (Administrare » Configurare » Dezvoltare). Citește despre [memoria cache Drupal și optimizarea pentru performanță](https://www.drupal.org/docs/7/managing-site-performance-and-scalability/caching-to-improve-performance/caching-overview#s-drupal-performance-resources)."
@@ -2025,10 +2025,10 @@
     "message": "Mai multe [extensii Joomla](https://extensions.joomla.org/instant-search/?jed_live%5Bquery%5D=performance) îți pot accelera site-ul prin concatenarea, minimizarea și comprimarea scripturilor. Există și șabloane care oferă această funcție."
   },
   "node_modules/lighthouse-stack-packs/packs/joomla.js | unused-css-rules": {
-    "message": "Îți recomandăm să reduci sau să schimbi numărul de [extensii Joomla](https://extensions.joomla.org/) care încarcă CSS nefolosit în pagină. Ca să identifici extensiile care adaugă conținut CSS neesențial, rulează [acoperirea codului](https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverage) în Chrome DevTools. Poți identifica tema/pluginul responsabil din adresa URL a foii de stil. Caută pluginuri care au multe foi de stil în listă cu mult roșu în bara acoperirii codului. Un plugin ar trebui să pună în coadă o foaie de stil numai dacă este într-adevăr folosită în pagină."
+    "message": "Îți recomandăm să reduci sau să schimbi numărul de [extensii Joomla](https://extensions.joomla.org/) care încarcă CSS nefolosit în pagină. Ca să identifici extensiile care adaugă conținut CSS neesențial, rulează [acoperirea codului](https://developers.9oo91e.qjz9zk/web/updates/2017/04/devtools-release-notes#coverage) în Chrome DevTools. Poți identifica tema/pluginul responsabil din adresa URL a foii de stil. Caută pluginuri care au multe foi de stil în listă cu mult roșu în bara acoperirii codului. Un plugin ar trebui să pună în coadă o foaie de stil numai dacă este într-adevăr folosită în pagină."
   },
   "node_modules/lighthouse-stack-packs/packs/joomla.js | unused-javascript": {
-    "message": "Îți recomandăm să reduci sau să schimbi numărul de [extensii Joomla](https://extensions.joomla.org/) care încarcă JavaScript nefolosit în pagină. Ca să identifici pluginurile care adaugă conținut JS neesențial, rulează [acoperirea codului](https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverage) în Chrome DevTools. Poți identifica extensia responsabilă din adresa URL a scriptului. Caută extensii care au multe scripturi în listă cu mult roșu în bara acoperirii codului. O extensie ar trebui să pună în coadă un script numai dacă este într-adevăr folosit în pagină."
+    "message": "Îți recomandăm să reduci sau să schimbi numărul de [extensii Joomla](https://extensions.joomla.org/) care încarcă JavaScript nefolosit în pagină. Ca să identifici pluginurile care adaugă conținut JS neesențial, rulează [acoperirea codului](https://developers.9oo91e.qjz9zk/web/updates/2017/04/devtools-release-notes#coverage) în Chrome DevTools. Poți identifica extensia responsabilă din adresa URL a scriptului. Caută extensii care au multe scripturi în listă cu mult roșu în bara acoperirii codului. O extensie ar trebui să pună în coadă un script numai dacă este într-adevăr folosit în pagină."
   },
   "node_modules/lighthouse-stack-packs/packs/joomla.js | uses-long-cache-ttl": {
     "message": "Citește despre [stocarea în memoria cache a browserului în Joomla](https://docs.joomla.org/Cache)."
@@ -2124,10 +2124,10 @@
     "message": "Mai multe [pluginuri WordPress](https://wordpress.org/plugins/search/minify+javascript/) îți pot accelera site-ul prin concatenarea, minimizarea și comprimarea scripturilor. Ai putea să folosești și un proces de design pentru a face minimizarea în avans, dacă este posibil."
   },
   "node_modules/lighthouse-stack-packs/packs/wordpress.js | unused-css-rules": {
-    "message": "Îți recomandăm să reduci sau să schimbi numărul de [pluginuri WordPress](https://wordpress.org/plugins/) care încarcă CSS nefolosit în pagină. Ca să identifici pluginurile care adaugă conținut CSS neesențial, încearcă să rulezi [acoperirea codului](https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverage) în Chrome DevTools. Poți identifica tema/pluginul responsabil din adresa URL a foii de stil. Caută pluginuri care au multe foi de stil în listă cu mult roșu în bara acoperirii codului. Un plugin ar trebui să pună în coadă o foaie de stil numai dacă este într-adevăr folosită în pagină."
+    "message": "Îți recomandăm să reduci sau să schimbi numărul de [pluginuri WordPress](https://wordpress.org/plugins/) care încarcă CSS nefolosit în pagină. Ca să identifici pluginurile care adaugă conținut CSS neesențial, încearcă să rulezi [acoperirea codului](https://developers.9oo91e.qjz9zk/web/updates/2017/04/devtools-release-notes#coverage) în Chrome DevTools. Poți identifica tema/pluginul responsabil din adresa URL a foii de stil. Caută pluginuri care au multe foi de stil în listă cu mult roșu în bara acoperirii codului. Un plugin ar trebui să pună în coadă o foaie de stil numai dacă este într-adevăr folosită în pagină."
   },
   "node_modules/lighthouse-stack-packs/packs/wordpress.js | unused-javascript": {
-    "message": "Îți recomandăm să reduci sau să schimbi numărul de [pluginuri WordPress](https://wordpress.org/plugins/) care încarcă JavaScript nefolosit în pagină. Ca să identifici pluginurile care adaugă conținut JS neesențial, încearcă să rulezi [acoperirea codului](https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverage) în Chrome DevTools. Poți identifica tema/pluginul responsabil din adresa URL a scriptului. Caută pluginuri care au multe scripturi în listă cu mult roșu în bara acoperirii codului. Un plugin ar trebui să pună în coadă un script numai dacă este într-adevăr folosit în pagină."
+    "message": "Îți recomandăm să reduci sau să schimbi numărul de [pluginuri WordPress](https://wordpress.org/plugins/) care încarcă JavaScript nefolosit în pagină. Ca să identifici pluginurile care adaugă conținut JS neesențial, încearcă să rulezi [acoperirea codului](https://developers.9oo91e.qjz9zk/web/updates/2017/04/devtools-release-notes#coverage) în Chrome DevTools. Poți identifica tema/pluginul responsabil din adresa URL a scriptului. Caută pluginuri care au multe scripturi în listă cu mult roșu în bara acoperirii codului. Un plugin ar trebui să pună în coadă un script numai dacă este într-adevăr folosit în pagină."
   },
   "node_modules/lighthouse-stack-packs/packs/wordpress.js | uses-long-cache-ttl": {
     "message": "Citește despre [stocarea în memoria cache a browserului în WordPress](https://wordpress.org/support/article/optimization/#browser-caching)."

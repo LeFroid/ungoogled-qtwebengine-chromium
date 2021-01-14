@@ -85,16 +85,16 @@ class SmsProviderGmsVerificationTest : public RenderViewHostTestHarness {
 }  // namespace
 
 TEST_F(SmsProviderGmsVerificationTest, Retrieve) {
-  std::string test_url = "https://google.com";
+  std::string test_url = "https://9oo91e.qjz9zk";
 
   EXPECT_CALL(*observer(), OnReceive(Origin::Create(GURL(test_url)), "ABC123"));
   provider()->Retrieve(main_rfh());
-  TriggerSmsVerificationSms("Hi\n@google.com #ABC123");
+  TriggerSmsVerificationSms("Hi\n@9oo91e.qjz9zk #ABC123");
 }
 
 TEST_F(SmsProviderGmsVerificationTest, IgnoreBadSms) {
-  std::string test_url = "https://google.com";
-  std::string good_sms = "Hi\n@google.com #ABC123";
+  std::string test_url = "https://9oo91e.qjz9zk";
+  std::string good_sms = "Hi\n@9oo91e.qjz9zk #ABC123";
   std::string bad_sms = "Hi\n@b.com";
 
   EXPECT_CALL(*observer(), OnReceive(Origin::Create(GURL(test_url)), "ABC123"));
@@ -111,7 +111,7 @@ TEST_F(SmsProviderGmsVerificationTest, TaskTimedOut) {
 }
 
 TEST_F(SmsProviderGmsVerificationTest, OneObserverTwoTasks) {
-  std::string test_url = "https://google.com";
+  std::string test_url = "https://9oo91e.qjz9zk";
 
   EXPECT_CALL(*observer(), OnReceive(Origin::Create(GURL(test_url)), "ABC123"));
 
@@ -121,7 +121,7 @@ TEST_F(SmsProviderGmsVerificationTest, OneObserverTwoTasks) {
 
   // First timeout should be ignored.
   TriggerTimeout();
-  TriggerSmsVerificationSms("Hi\n@google.com #ABC123");
+  TriggerSmsVerificationSms("Hi\n@9oo91e.qjz9zk #ABC123");
 }
 
 }  // namespace content

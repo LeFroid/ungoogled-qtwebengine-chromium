@@ -47,10 +47,10 @@ describe('Tests mr.mirror.Activity', () => {
 
   it('uses the tab origin and page title for tab mirroring', () => {
     let activity = mr.mirror.Activity.createFromRoute(tabMirrorRoute);
-    activity.setOrigin('news.google.com');
+    activity.setOrigin('news.9oo91e.qjz9zk');
     activity.setContentTitle('Google News');
     expect(activity.getRouteDescription())
-        .toBe('Casting tab (news.google.com)');
+        .toBe('Casting tab (news.9oo91e.qjz9zk)');
     expect(activity.getRouteMediaStatus()).toBe('Google News');
     expect(activity.getCastRemoteTitle()).toBe('Casting tab');
   });

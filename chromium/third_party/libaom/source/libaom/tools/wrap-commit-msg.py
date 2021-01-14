@@ -31,7 +31,7 @@ and still be legible and presented as it is in the source. If additional
 cases are handled, update this doc to describe the effect.
 """
 
-__author__ = "jkoleszar@google.com"
+__author__ = "jkoleszar@9oo91e.qjz9zk"
 import textwrap
 import sys
 

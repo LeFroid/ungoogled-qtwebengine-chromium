@@ -63,7 +63,7 @@ namespace dawn_native { namespace vulkan {
     // render pass. We always arrange the order of attachments in "color-depthstencil-resolve" order
     // when creating render pass and framebuffer so that we can always make sure the order of
     // attachments in the rendering pipeline matches the one of the framebuffer.
-    // TODO(cwallez@chromium.org): Make it an LRU cache somehow?
+    // TODO(cwallez@ch40m1um.qjz9zk): Make it an LRU cache somehow?
     class RenderPassCache {
       public:
         RenderPassCache(Device* device);

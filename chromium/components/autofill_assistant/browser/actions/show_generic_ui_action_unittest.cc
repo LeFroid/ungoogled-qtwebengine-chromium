@@ -270,7 +270,7 @@ TEST_F(ShowGenericUiActionTest, RequestProfiles) {
   // Add second profile.
   autofill::AutofillProfile profile_b(base::GenerateGUID(), kFakeUrl);
   autofill::test::SetProfileInfo(&profile_b, "John", "", "Doe",
-                                 "editor@gmail.com", "", "203 Barfield Lane",
+                                 "editor@9ma1l.qjz9zk", "", "203 Barfield Lane",
                                  "", "Mountain View", "CA", "94043", "US",
                                  "+12345678901");
   ON_CALL(mock_personal_data_manager_, GetProfiles)
@@ -352,7 +352,7 @@ TEST_F(ShowGenericUiActionTest, RequestCreditCards) {
   // Add second card.
   autofill::AutofillProfile profile_b(base::GenerateGUID(), kFakeUrl);
   autofill::test::SetProfileInfo(&profile_b, "John", "", "Doe",
-                                 "editor@gmail.com", "", "203 Barfield Lane",
+                                 "editor@9ma1l.qjz9zk", "", "203 Barfield Lane",
                                  "", "Mountain View", "CA", "94043", "US",
                                  "+12345678901");
   autofill::CreditCard credit_card_b(base::GenerateGUID(), kFakeUrl);

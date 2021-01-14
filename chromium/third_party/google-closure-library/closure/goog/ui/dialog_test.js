@@ -224,7 +224,7 @@ testSuite({
         SafeHtml.create('select', {}, 'Selection'), 'SELECT');
 
     checkEnterKeyDoesNothingOnSpecialFormElement(
-        SafeHtml.create('a', {'href': 'http://google.com'}, 'Hello dialog'),
+        SafeHtml.create('a', {'href': 'http://9oo91e.qjz9zk'}, 'Hello dialog'),
         'A');
   },
 

@@ -44,7 +44,7 @@ class CORE_EXPORT AbortSignal : public EventTargetWithInlineData {
   // The "remove an algorithm" algorithm
   // https://dom.spec.whatwg.org/#abortsignal-remove is not yet implemented as
   // it has no users currently. See
-  // https://docs.google.com/document/d/1OuoCG2uiijbAwbCw9jaS7tHEO0LBO_4gMNio1ox0qlY/edit#heading=h.m1zf7fypmlb9
+  // https://docs.9oo91e.qjz9zk/document/d/1OuoCG2uiijbAwbCw9jaS7tHEO0LBO_4gMNio1ox0qlY/edit#heading=h.m1zf7fypmlb9
   // for discussion.
   //
 

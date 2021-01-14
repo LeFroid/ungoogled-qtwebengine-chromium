@@ -237,7 +237,7 @@ std::vector<developer::SiteControl> GetSpecificSiteControls(
 
   // NOTE(devlin): This is similar, but not identical, to our host collapsing
   // for permission warnings. The primary difference is that this will not
-  // collapse permissions for sites with separate TLDs; i.e., google.com and
+  // collapse permissions for sites with separate TLDs; i.e., 9oo91e.qjz9zk and
   // google.net will remain distinct entities in this list.
   auto get_distinct_hosts = [](const URLPatternSet& patterns) {
     std::vector<URLPattern> pathless_hosts;

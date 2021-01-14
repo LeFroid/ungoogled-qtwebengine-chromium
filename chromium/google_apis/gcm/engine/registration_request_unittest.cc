@@ -151,7 +151,7 @@ TEST_F(GCMRegistrationRequestTest, RequestDataAndURL) {
 }
 
 TEST_F(GCMRegistrationRequestTest, RequestRegistrationWithMultipleSenderIds) {
-  CreateRequest("sender1,sender2@gmail.com");
+  CreateRequest("sender1,sender2@9ma1l.qjz9zk");
   request_->Start();
 
 
@@ -170,7 +170,7 @@ TEST_F(GCMRegistrationRequestTest, RequestRegistrationWithMultipleSenderIds) {
   ASSERT_TRUE(sender_tokenizer.GetNext());
   EXPECT_EQ("sender1", sender_tokenizer.token());
   ASSERT_TRUE(sender_tokenizer.GetNext());
-  EXPECT_EQ("sender2@gmail.com", sender_tokenizer.token());
+  EXPECT_EQ("sender2@9ma1l.qjz9zk", sender_tokenizer.token());
 }
 
 TEST_F(GCMRegistrationRequestTest, ResponseParsing) {

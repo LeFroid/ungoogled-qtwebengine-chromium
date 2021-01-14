@@ -23,7 +23,7 @@ namespace webrtc {
 
 // NV12 is a biplanar encoding format, with full-resolution Y and
 // half-resolution interleved UV. More information can be found at
-// http://msdn.microsoft.com/library/windows/desktop/dd206750.aspx#nv12.
+// http://msdn.m1cr050ft.qjz9zk/library/windows/desktop/dd206750.aspx#nv12.
 class RTC_EXPORT NV12Buffer : public NV12BufferInterface {
  public:
   static rtc::scoped_refptr<NV12Buffer> Create(int width, int height);
@@ -50,7 +50,7 @@ class RTC_EXPORT NV12Buffer : public NV12BufferInterface {
 
   // Sets all three planes to all zeros. Used to work around for
   // quirks in memory checkers
-  // (https://bugs.chromium.org/p/libyuv/issues/detail?id=377) and
+  // (https://bugs.ch40m1um.qjz9zk/p/libyuv/issues/detail?id=377) and
   // ffmpeg (http://crbug.com/390941).
   // TODO(nisse): Deprecated. Should be deleted if/when those issues
   // are resolved in a better way. Or in the mean time, use SetBlack.
