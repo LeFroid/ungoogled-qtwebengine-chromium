@@ -55,6 +55,24 @@ TextMetrics::TextMetrics(const Font& font,
   Update(font, direction, baseline, align, text);
 }
 
+void TextMetrics::Shuffle(const double factor) {
+  // x-direction
+  width_ *= factor;
+  actual_bounding_box_left_ *= factor;
+  actual_bounding_box_right_ *= factor;
+
+  // y-direction
+  font_bounding_box_ascent_ *= factor;
+  font_bounding_box_descent_ *= factor;
+  actual_bounding_box_ascent_ *= factor;
+  actual_bounding_box_descent_ *= factor;
+  em_height_ascent_ *= factor;
+  em_height_descent_ *= factor;
+  baselines_->setAlphabetic(baselines_->alphabetic() * factor);
+  baselines_->setHanging(baselines_->hanging() * factor);
+  baselines_->setIdeographic(baselines_->ideographic() * factor);
+}
+
 void TextMetrics::Update(const Font& font,
                          const TextDirection& direction,
                          const TextBaseline& baseline,

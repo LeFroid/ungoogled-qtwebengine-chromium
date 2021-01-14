@@ -447,6 +447,10 @@ class CORE_EXPORT Document : public ContainerNode,
     has_xml_declaration_ = has_xml_declaration ? 1 : 0;
   }
 
+  // Values for get*ClientRect fingerprint deception
+  double GetNoiseFactorX();
+  double GetNoiseFactorY();
+
   AtomicString visibilityState() const;
   bool IsPageVisible() const;
   bool hidden() const;
@@ -1965,6 +1969,9 @@ class CORE_EXPORT Document : public ContainerNode,
   bool is_freezing_in_progress_;
 
   base::ElapsedTimer start_time_;
+
+  double noise_factor_x_;
+  double noise_factor_y_;
 
   Member<ScriptRunner> script_runner_;
 

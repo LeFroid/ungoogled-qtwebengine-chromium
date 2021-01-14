@@ -1615,11 +1615,17 @@ DOMRectList* Range::getClientRects() const {
   Vector<FloatQuad> quads;
   GetBorderAndTextQuads(quads);
 
+  for (FloatQuad& quad : quads) {
+    quad.Scale(owner_document_->GetNoiseFactorX(), owner_document_->GetNoiseFactorY());
+  }
+
   return MakeGarbageCollected<DOMRectList>(quads);
 }
 
 DOMRect* Range::getBoundingClientRect() const {
-  return DOMRect::FromFloatRect(BoundingRect());
+  auto rect = BoundingRect();
+  rect.Scale(owner_document_->GetNoiseFactorX(), owner_document_->GetNoiseFactorY());
+  return DOMRect::FromFloatRect(rect);
 }
 
 // TODO(editing-dev): We should make

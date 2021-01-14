@@ -64,6 +64,8 @@ class CORE_EXPORT TextMetrics final : public ScriptWrappable {
 
   void Trace(Visitor*) const override;
 
+  void Shuffle(const double factor);
+
  private:
   void Update(const Font&,
               const TextDirection&,

@@ -36,6 +36,8 @@
 
 #include "base/compiler_specific.h"
 #include "base/memory/ptr_util.h"
+#include "base/rand_util.h"
+#include "base/logging.h"
 #include "third_party/blink/renderer/platform/graphics/static_bitmap_image.h"
 #include "third_party/blink/renderer/platform/image-encoders/image_encoder.h"
 #include "third_party/blink/renderer/platform/runtime_enabled_features.h"
@@ -144,6 +146,9 @@ bool ImageDataBuffer::EncodeImageInternal(const ImageEncodingMimeType mime_type,
                                           Vector<unsigned char>* encoded_image,
                                           const SkPixmap& pixmap) const {
   DCHECK(is_valid_);
+
+  // shuffle subchannel color data within the pixmap
+  StaticBitmapImage::ShuffleSubchannelColorData(pixmap_.writable_addr(), pixmap_.info(), 0, 0);
 
   if (mime_type == kMimeTypeJpeg) {
     SkJpegEncoder::Options options;

@@ -838,9 +838,11 @@ TextMetrics* CanvasRenderingContext2D::measureText(const String& text) {
   else
     direction = ToTextDirection(GetState().GetDirection(), canvas());
 
-  return MakeGarbageCollected<TextMetrics>(font, direction,
+  TextMetrics* text_metrics = MakeGarbageCollected<TextMetrics>(font, direction,
                                            GetState().GetTextBaseline(),
                                            GetState().GetTextAlign(), text);
+  text_metrics->Shuffle(canvas()->GetDocument().GetNoiseFactorX());
+  return text_metrics;
 }
 
 void CanvasRenderingContext2D::DrawTextInternal(

@@ -41,6 +41,7 @@
 #include "base/auto_reset.h"
 #include "base/macros.h"
 #include "base/optional.h"
+#include "base/rand_util.h"
 #include "base/time/time.h"
 #include "cc/input/overscroll_behavior.h"
 #include "cc/input/scroll_snap_data.h"
@@ -905,6 +906,14 @@ Range* Document::CreateRangeAdjustedToTreeScope(const TreeScope& tree_scope,
   return MakeGarbageCollected<Range>(tree_scope.GetDocument(),
                                      Position::BeforeNode(*shadow_host),
                                      Position::BeforeNode(*shadow_host));
+}
+
+double Document::GetNoiseFactorX() {
+  return noise_factor_x_;
+}
+
+double Document::GetNoiseFactorY() {
+  return noise_factor_y_;
 }
 
 SelectorQueryCache& Document::GetSelectorQueryCache() {
@@ -2486,6 +2495,10 @@ void Document::UpdateStyleAndLayoutTree() {
 #if DCHECK_IS_ON()
   AssertLayoutTreeUpdated(*this);
 #endif
+
+  // Precompute -0.0003% to 0.0003% noise factor for get*ClientRect*() fingerprinting
+  noise_factor_x_ = 1 + (base::RandDouble() - 0.5) * 0.000003;
+  noise_factor_y_ = 1 + (base::RandDouble() - 0.5) * 0.000003;
 }
 
 void Document::InvalidateStyleAndLayoutForFontUpdates() {

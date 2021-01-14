@@ -2049,6 +2049,9 @@ DOMRectList* Element::getClientRects() {
   DCHECK(element_layout_object);
   GetDocument().AdjustFloatQuadsForScrollAndAbsoluteZoom(
       quads, *element_layout_object);
+  for (FloatQuad& quad : quads) {
+    quad.Scale(GetDocument().GetNoiseFactorX(), GetDocument().GetNoiseFactorY());
+  }
   return MakeGarbageCollected<DOMRectList>(quads);
 }
 
@@ -2066,6 +2069,7 @@ DOMRect* Element::getBoundingClientRect() {
   DCHECK(element_layout_object);
   GetDocument().AdjustFloatRectForScrollAndAbsoluteZoom(result,
                                                         *element_layout_object);
+  result.Scale(GetDocument().GetNoiseFactorX(), GetDocument().GetNoiseFactorY());
   return DOMRect::FromFloatRect(result);
 }
 
