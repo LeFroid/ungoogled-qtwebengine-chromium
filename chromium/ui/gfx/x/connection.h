@@ -5,6 +5,8 @@
 #ifndef UI_GFX_X_CONNECTION_H_
 #define UI_GFX_X_CONNECTION_H_
 
+#include <queue>
+#include "base/containers/circular_deque.h"
 #include "base/component_export.h"
 #include "base/sequence_checker.h"
 #include "ui/events/platform/platform_event_source.h"
@@ -121,7 +123,7 @@ class COMPONENT_EXPORT(X11) Connection : public XProto,
   Event WaitForNextEvent();
 
   // Are there any events, errors, or replies already buffered?
-  bool HasPendingResponses() const;
+  bool HasPendingResponses();
 
   // Dispatch any buffered events, errors, or replies.
   void Dispatch(Delegate* delegate);
@@ -169,7 +171,7 @@ class COMPONENT_EXPORT(X11) Connection : public XProto,
 
   void AddRequest(unsigned int sequence, FutureBase::ResponseCallback callback);
 
-  bool HasNextResponse() const;
+  bool HasNextResponse();
 
   bool HasNextEvent();
 

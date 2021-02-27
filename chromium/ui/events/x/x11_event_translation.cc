@@ -4,6 +4,7 @@
 
 #include "ui/events/x/x11_event_translation.h"
 
+#include <queue>
 #include <vector>
 
 #include "base/check.h"

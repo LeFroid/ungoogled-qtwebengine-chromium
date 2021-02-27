@@ -2,6 +2,8 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
+#include <queue>
+#include "base/containers/circular_deque.h"
 #include "media/gpu/gles2_decoder_helper.h"
 
 #include <memory>

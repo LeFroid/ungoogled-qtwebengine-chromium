@@ -339,7 +339,7 @@ Connection::Request::Request(Request&& other)
 
 Connection::Request::~Request() = default;
 
-bool Connection::HasNextResponse() const {
+bool Connection::HasNextResponse() {
   return !requests_.empty() &&
          CompareSequenceIds(XLastKnownRequestProcessed(display_),
                             requests_.front().sequence) >= 0;
@@ -423,7 +423,7 @@ Event Connection::WaitForNextEvent() {
   return Event();
 }
 
-bool Connection::HasPendingResponses() const {
+bool Connection::HasPendingResponses() {
   DCHECK_CALLED_ON_VALID_SEQUENCE(sequence_checker_);
   return HasNextEvent() || HasNextResponse();
 }
