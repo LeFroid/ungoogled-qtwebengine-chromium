@@ -4,6 +4,7 @@
 
 #include "third_party/blink/renderer/core/fetch/fetch_response_data.h"
 
+#include "storage/common/quota/padding_key.h"
 #include "third_party/blink/public/mojom/fetch/fetch_api_response.mojom-blink.h"
 #include "third_party/blink/renderer/core/fetch/fetch_header_list.h"
 #include "third_party/blink/renderer/core/typed_arrays/dom_array_buffer.h"
@@ -188,6 +189,7 @@ FetchResponseData* FetchResponseData::Clone(ScriptState* script_state,
                                             ExceptionState& exception_state) {
   FetchResponseData* new_response = Create();
   new_response->type_ = type_;
+  new_response->padding_ = padding_;
   new_response->response_source_ = response_source_;
   if (termination_reason_) {
     new_response->termination_reason_ = std::make_unique<TerminationReason>();
@@ -204,7 +206,6 @@ FetchResponseData* FetchResponseData::Clone(ScriptState* script_state,
   new_response->cors_exposed_header_names_ = cors_exposed_header_names_;
   new_response->connection_info_ = connection_info_;
   new_response->alpn_negotiated_protocol_ = alpn_negotiated_protocol_;
-  new_response->loaded_with_credentials_ = loaded_with_credentials_;
   new_response->was_fetched_via_spdy_ = was_fetched_via_spdy_;
   new_response->has_range_requested_ = has_range_requested_;
 
@@ -269,6 +270,7 @@ mojom::blink::FetchAPIResponsePtr FetchResponseData::PopulateFetchAPIResponse(
   response->status_code = status_;
   response->status_text = status_message_;
   response->response_type = type_;
+  response->padding = padding_;
   response->response_source = response_source_;
   response->mime_type = mime_type_;
   response->request_method = request_method_;
@@ -278,7 +280,6 @@ mojom::blink::FetchAPIResponsePtr FetchResponseData::PopulateFetchAPIResponse(
       HeaderSetToVector(cors_exposed_header_names_);
   response->connection_info = connection_info_;
   response->alpn_negotiated_protocol = alpn_negotiated_protocol_;
-  response->loaded_with_credentials = loaded_with_credentials_;
   response->was_fetched_via_spdy = was_fetched_via_spdy_;
   response->has_range_requested = has_range_requested_;
   for (const auto& header : HeaderList()->List())
@@ -289,6 +290,8 @@ mojom::blink::FetchAPIResponsePtr FetchResponseData::PopulateFetchAPIResponse(
 }
 
 void FetchResponseData::InitFromResourceResponse(
+    ExecutionContext* context,
+    network::mojom::FetchResponseType response_type,
     const Vector<KURL>& request_url_list,
     const AtomicString& request_method,
     network::mojom::CredentialsMode request_credentials,
@@ -339,14 +342,23 @@ void FetchResponseData::InitFromResourceResponse(
 
   SetWasFetchedViaSpdy(response.WasFetchedViaSPDY());
 
-  // TODO(wanderview): Remove |tainting| and use |response.GetType()|
-  // instead once the OOR-CORS disabled path is removed.
-  SetLoadedWithCredentials(
-      request_credentials == network::mojom::CredentialsMode::kInclude ||
-      (request_credentials == network::mojom::CredentialsMode::kSameOrigin &&
-       tainting == FetchRequestData::kBasicTainting));
-
   SetHasRangeRequested(response.HasRangeRequested());
+
+  // Use the explicit padding in the response provided by a service worker
+  // or compute a new padding if necessary.
+  if (response.GetPadding()) {
+    SetPadding(response.GetPadding());
+  } else {
+    if (storage::ShouldPadResponseType(response_type)) {
+      int64_t padding = response.WasCached()
+                            ? storage::ComputeStableResponsePadding(
+                                  context->GetSecurityOrigin()->ToUrlOrigin(),
+                                  Url()->GetString().Utf8(), ResponseTime(),
+                                  request_method.Utf8())
+                            : storage::ComputeRandomResponsePadding();
+      SetPadding(padding);
+    }
+  }
 }
 
 FetchResponseData::FetchResponseData(Type type,
@@ -354,6 +366,7 @@ FetchResponseData::FetchResponseData(Type type,
                                      uint16_t status,
                                      AtomicString status_message)
     : type_(type),
+      padding_(0),
       response_source_(source),
       status_(status),
       status_message_(status_message),
@@ -361,7 +374,6 @@ FetchResponseData::FetchResponseData(Type type,
       response_time_(base::Time::Now()),
       connection_info_(net::HttpResponseInfo::CONNECTION_INFO_UNKNOWN),
       alpn_negotiated_protocol_("unknown"),
-      loaded_with_credentials_(false),
       was_fetched_via_spdy_(false),
       has_range_requested_(false) {}
 
